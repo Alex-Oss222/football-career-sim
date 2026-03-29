@@ -1,11 +1,10 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '1999-07-08'
-  career_turn: 8
-  sim_phase: Offseason — One Week Before Training Camp
-  source_note: Assistant-generated merge-ready update because the original repo file
-    was not directly editable in this environment.
+  date: '1999-08-30'
+  career_turn: 9
+  sim_phase: Preseason Week 4 — One Week Before Regular Season
+  source_note: Assistant-generated merge-ready update because the original repo file was not directly editable in this environment.
 relationships:
 - name: Don Coryell
   role: Former HC, Chargers
@@ -35,8 +34,7 @@ relationships:
   trend: stable
   status: moderate_network
   notes:
-  - Helpful background support but below strong-reference threshold in the interview
-    module.
+  - Helpful background support but below strong-reference threshold in the interview module.
 - name: University of Miami Connections
   role: College network
   score: 55
@@ -48,71 +46,61 @@ relationships:
   - No direct impact on the Eagles process so far.
 - name: Andy Reid
   role: Head Coach, Philadelphia Eagles
-  score: 48
-  previous_score: 41
-  delta_this_turn: 4
+  score: 53
+  previous_score: 48
+  delta_this_turn: 5
   trend: rising
   status: trusted_entry_level_assistant
   notes:
-  - Stone survived the entire first offseason without becoming a friction point.
-  - Reid increasingly sees Stone as reliable infrastructure who learns quickly and
-    stays in role.
-  - Trust is real but still bounded by Stone's entry-level status.
-  delta: 7
+  - Stone survived his first full camp without becoming a hierarchy or ego problem.
+  - Reid increasingly views Stone as dependable background infrastructure who understands how the staff tree works.
+  - Trust is rising, but Stone is still support staff rather than a featured voice.
+  delta: 5
 - name: Rod Dowhower
   role: Offensive Coordinator, Philadelphia Eagles
-  score: 72
-  previous_score: 61
-  delta_this_turn: 9
+  score: 79
+  previous_score: 72
+  delta_this_turn: 7
   trend: rising
   status: key_supervisor_and_development_bridge
   notes:
-  - Stone became meaningfully more useful during combine prep, draft support, OTAs,
-    and minicamp.
-  - Dowhower now trusts Stone with more first-pass organization, revision work, and
-    playbook-support tasks.
-  - This remains a demanding boss-subordinate relationship; accuracy and timing still
-    decide everything.
-  delta: 11
+  - Camp and preseason work strengthened the boss-subordinate relationship because Stone became more useful on install sheets, revisions, and cut-up support.
+  - Dowhower now trusts Stone with more first-pass offensive organization and quicker turnaround work.
+  - The relationship is strong but still conditional on precision and staying ahead of deadlines.
+  delta: 7
 - name: Brad Childress
   role: Quarterbacks Coach, Philadelphia Eagles
-  score: 29
-  previous_score: 22
-  delta_this_turn: 4
+  score: 35
+  previous_score: 29
+  delta_this_turn: 6
   trend: rising
   status: improving_coworker
   notes:
-  - Stone's cleaner terminology and lower-noise work made him easier for detail-heavy
-    assistants to trust.
-  - Childress still sees Stone as support staff, but a more competent one than in
-    January.
-  delta: 7
+  - McNabb's rookie integration and QB-install support gave Stone more chances to help Childress with clean, relevant packets.
+  - Childress still sees Stone as support staff, but no longer as an unknown one.
+  delta: 6
 - name: Pat Shurmur
   role: Tight Ends Coach, Philadelphia Eagles
-  score: 39
-  previous_score: 27
+  score: 44
+  previous_score: 39
   delta_this_turn: 5
   trend: rising
   status: positive_but_hierarchy_sensitive
   notes:
-  - Stone's player background became a quiet asset once it was channeled through Shurmur
-    rather than around him.
-  - Pre-camp TE playbook translation and cut-up support improved the working relationship.
-  - Hierarchy is healthier because Stone kept helping without trying to own the room.
-  delta: 12
+  - Camp TE support, edge-run-game notes, and player-perspective translation improved the working relationship.
+  - Hierarchy remains healthy because Stone kept his help inside Shurmur's room structure instead of around it.
+  delta: 5
 relationship_events:
 - turn: 7
   date: '1999-02-05'
-  event: Advanced to one week before the combine/free agency while continuing Eagles
-    QC routine.
+  event: Advanced to one week before the combine/free agency while continuing Eagles QC routine.
   effects:
   - name: Andy Reid
     delta: 4
     note: Reliability and restraint improved weekly trust.
   - name: Rod Dowhower
     delta: 9
-    note: Formatting, timing, and terminology discipline improved through repeated
-      work cycles.
+    note: Formatting, timing, and terminology discipline improved through repeated work cycles.
   - name: Brad Childress
     delta: 4
     note: Cleaner details and less noise improved coworker view.
@@ -121,21 +109,33 @@ relationship_events:
     note: Steady TE support within hierarchy improved comfort.
 - turn: 8
   date: '1999-07-08'
-  event: Advanced from pre-combine through draft, OTAs, minicamp, and offseason break
-    to one week before training camp while continuing the Eagles QC routine.
+  event: Advanced from pre-combine through draft, OTAs, minicamp, and offseason break to one week before training camp while continuing the Eagles QC routine.
   effects:
   - name: Andy Reid
     delta: 7
     note: Months of low-ego reliability improved baseline head-coach trust.
   - name: Rod Dowhower
     delta: 11
-    note: Stone became more useful on playbook support, charting, revisions, and terminology
-      translation.
+    note: Stone became more useful on playbook support, charting, revisions, and terminology translation.
   - name: Brad Childress
     delta: 7
-    note: Cleaner system language and more precise support work improved coworker
-      confidence.
+    note: Cleaner system language and more precise support work improved coworker confidence.
   - name: Pat Shurmur
     delta: 12
-    note: TE-room support and playbook translation became a real asset when delivered
-      through the proper chain of command.
+    note: TE-room support and playbook translation became a real asset when delivered through the proper chain of command.
+- turn: 9
+  date: '1999-08-30'
+  event: Advanced through training camp and the first three preseason weeks to preseason Week 4, one week before the regular season opener, while continuing the Eagles QC routine and system study.
+  effects:
+  - name: Andy Reid
+    delta: 5
+    note: A full camp of dependable, low-ego work improved baseline trust.
+  - name: Rod Dowhower
+    delta: 7
+    note: Stone became more useful on install support, revisions, cut-ups, and camp workflow.
+  - name: Brad Childress
+    delta: 6
+    note: Rookie-QB support work and cleaner terminology increased confidence in Stone's usefulness.
+  - name: Pat Shurmur
+    delta: 5
+    note: TE/edge and player-perspective help stayed useful without becoming an authority problem.
