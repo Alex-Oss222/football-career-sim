@@ -5,6 +5,18 @@
 # NOT a narrative file. This is the source of truth for
 # time progression, turn anchoring, and compression support.
 #
+# IMPORTANT: This file contains NO results, NO scores, NO
+# draft selections, NO win/loss records. Those are determined
+# by the simulation engine during play. This file provides
+# ONLY the structural skeleton of the season — dates, opponents,
+# locations, and phase labels.
+#
+# GAME WEEK STRUCTURE:
+#   start / end  = the full work-week window around the game
+#   game_date    = the actual day the game is played
+#   The engine uses start/end for the turn boundary and
+#   game_date to know when the game itself falls.
+#
 # Place in: teams/philadelphia_eagles/philadelphia_eagles_calendar_1999.yaml
 # ============================================================
 
@@ -35,27 +47,17 @@ meta:
       role: Tight Ends / Offensive Line
     - name: Steve Spagnuolo
       role: Defensive Assistant / Quality Control
-  final_record: 5-11-0
+  prior_season_record: 3-13
   division: NFC East
-  division_finish: 5th
-  playoffs: false
-  points_for: 272
-  points_against: 357
+  draft_position: 2nd overall pick
+  points_for: null
+  points_against: null
+  final_record: null
+  division_finish: null
+  playoffs: null
 
 # ============================================================
 # CALENDAR NODES
-# ============================================================
-# Each node has:
-#   id          — unique slug for engine reference
-#   label       — human-readable name
-#   start/end   — date range (inclusive)
-#   phase       — engine phase tag
-#   sub_phase   — optional granular tag
-#   opponent    — if applicable
-#   location    — Home / Away / Neutral (if applicable)
-#   result      — W/L/T and score (filled post-game; null pre-game)
-#   record      — cumulative record after this game
-#   notes       — context for narrative engine
 # ============================================================
 
 calendar:
@@ -71,9 +73,9 @@ calendar:
     phase: STAFF_BUILDING
     sub_phase: HEAD_COACH_HIRE
     notes: >
-      Reid hired away from Green Bay Packers. Local media criticized
-      the hire, citing availability of candidates with prior HC experience.
-      Eagles coming off 3-13 season under Ray Rhodes.
+      Reid hired away from Green Bay Packers. Eagles coming off
+      3-13 season under Ray Rhodes. Local media skeptical of the
+      hire. Staff assembly begins immediately.
 
   - id: staff_build_01
     label: Staff Assembly — January
@@ -82,11 +84,9 @@ calendar:
     phase: STAFF_BUILDING
     sub_phase: COORDINATOR_AND_POSITION_HIRES
     notes: >
-      Reid assembling coaching staff. Key hires: Jim Johnson (DC),
-      Rod Dowhower (OC), John Harbaugh (ST), Ron Rivera (LBs),
-      Brad Childress (QBs), Leslie Frazier (DBs), Juan Castillo (OL),
-      David Culley (WRs), Pat Shurmur (TEs/OL), Sean McDermott
-      (Scouting Coordinator), Steve Spagnuolo (Defensive Asst/QC).
+      Reid assembling coaching staff. Key hires include coordinators
+      and position coaches. Scheme discussions begin. Evaluation of
+      inherited 3-13 roster underway.
 
   - id: staff_build_02
     label: Staff Assembly — Early February
@@ -95,9 +95,9 @@ calendar:
     phase: STAFF_BUILDING
     sub_phase: SCHEME_INSTALLATION_PREP
     notes: >
-      Final staff hires. Initial scheme discussions. Roster evaluation
-      of inherited 3-13 roster. Scouting department prep for Combine.
-      Eagles hold 2nd overall pick in upcoming draft.
+      Final staff hires. Scouting department prep for Combine.
+      Eagles hold 2nd overall pick in upcoming draft. Roster
+      evaluation continues.
 
   # ----------------------------------------------------------
   # FREE AGENCY
@@ -110,10 +110,9 @@ calendar:
     phase: FREE_AGENCY
     sub_phase: UFA_SIGNING_PERIOD
     notes: >
-      Unrestricted free agency opens February 12 per CBA. UFA signing
-      period runs through July 15. Eagles among most active teams —
-      will ultimately sign 9 UFAs from other teams (tied for 3rd-most
-      in league behind expansion Browns at 14 and Panthers at 11).
+      Unrestricted free agency opens February 12 per CBA. UFA
+      signing period runs through July 15. Eagles among teams
+      with significant roster needs after 3-13 season.
 
   # ----------------------------------------------------------
   # NFL COMBINE
@@ -127,9 +126,8 @@ calendar:
     sub_phase: PROSPECT_EVALUATION
     notes: >
       Combine held at RCA Dome, Indianapolis. First year electronic
-      timing used. Eagles hold #2 overall pick — heavy focus on
-      QB evaluation (McNabb, Akili Smith, Cade McNown, Tim Couch,
-      Daunte Culpepper). Sean McDermott coordinating scouting reports.
+      timing used. Eagles hold #2 overall pick — prospect evaluation
+      is critical. Deep QB class available.
 
   # ----------------------------------------------------------
   # PRE-DRAFT PERIOD
@@ -143,8 +141,8 @@ calendar:
     sub_phase: PRO_DAYS_AND_VISITS
     notes: >
       Continued free agent signings. Pro day visits for top draft
-      prospects. Private workouts. Scheme installation planning
-      for new acquisitions. Restricted free agent deadline April 12.
+      prospects. Private workouts. Scheme installation planning.
+      Restricted free agent deadline April 12.
 
   - id: pre_draft_april
     label: Pre-Draft Final Prep
@@ -154,8 +152,8 @@ calendar:
     sub_phase: DRAFT_BOARD_FINALIZATION
     notes: >
       Final draft board construction. Medical re-checks. Last
-      private workouts. Reid and staff finalizing pick strategy
-      for #2 overall. RFA signing deadline April 12.
+      private workouts. Staff finalizing pick strategy for #2
+      overall. RFA signing deadline April 12.
 
   # ----------------------------------------------------------
   # NFL DRAFT
@@ -168,9 +166,8 @@ calendar:
     phase: DRAFT
     sub_phase: DAY_ONE
     notes: >
-      Draft held April 17-18. Eagles select Donovan McNabb (QB,
-      Syracuse) with #2 overall pick. Cleveland takes Tim Couch #1.
-      Philly fans at draft in NYC loudly boo the McNabb pick.
+      Draft held April 17-18. Eagles pick 2nd overall. Cleveland
+      picks 1st. Selections determined by simulation.
 
   - id: draft_02
     label: NFL Draft — Day 2 (Rounds 4-7)
@@ -204,8 +201,8 @@ calendar:
     sub_phase: VOLUNTARY_WORKOUTS
     notes: >
       Voluntary OTAs. First on-field work with new coaching staff
-      and Reid's offensive/defensive schemes. McNabb's first NFL
-      practices. Non-contact drills only per CBA.
+      and offensive/defensive schemes. Non-contact drills only
+      per CBA.
 
   - id: minicamp_01
     label: Mandatory Minicamp
@@ -215,7 +212,8 @@ calendar:
     sub_phase: MANDATORY
     notes: >
       Mandatory three-day minicamp. All players required to attend
-      or face fines. Last organized team activity before training camp.
+      or face fines. Last organized team activity before training
+      camp.
 
   - id: offseason_break
     label: Offseason Break
@@ -224,7 +222,8 @@ calendar:
     phase: OFFSEASON_BREAK
     notes: >
       No organized team activities. Players on their own for
-      conditioning. Coaches continue game-planning and playbook work.
+      conditioning. Coaches continue game-planning and playbook
+      work.
 
   # ----------------------------------------------------------
   # TRAINING CAMP
@@ -239,8 +238,7 @@ calendar:
     notes: >
       Training camp at Lehigh University, Bethlehem, PA. Two-a-day
       practices. Full pads. Roster cuts throughout. QB competition
-      between Doug Pederson and Donovan McNabb. 80-man roster
-      must be trimmed to 53 by final cutdown.
+      ongoing. 80-man roster must be trimmed to 53 by final cutdown.
 
   # ----------------------------------------------------------
   # PRESEASON
@@ -248,50 +246,61 @@ calendar:
 
   - id: pre_wk1
     label: Preseason Week 1
-    start: 1999-08-12
-    end: 1999-08-12
+    start: 1999-08-09
+    end: 1999-08-14
+    game_date: 1999-08-12
+    game_day: Thursday
     phase: PRESEASON
     sub_phase: PRESEASON_GAME
     opponent: Baltimore Ravens
     location: Home
     result: null
     notes: >
-      Thu 8/12. First game under Andy Reid. Veterans Stadium.
+      Thu 8/12 at Veterans Stadium.
 
   - id: pre_wk2
     label: Preseason Week 2
-    start: 1999-08-20
-    end: 1999-08-20
+    start: 1999-08-16
+    end: 1999-08-21
+    game_date: 1999-08-20
+    game_day: Friday
     phase: PRESEASON
     sub_phase: PRESEASON_GAME
     opponent: New York Jets
     location: Away
+    result: null
     notes: >
       Fri 8/20 at Giants Stadium.
 
   - id: pre_wk3
     label: Preseason Week 3
-    start: 1999-08-26
-    end: 1999-08-26
+    start: 1999-08-23
+    end: 1999-08-28
+    game_date: 1999-08-26
+    game_day: Thursday
     phase: PRESEASON
     sub_phase: PRESEASON_GAME
     opponent: Minnesota Vikings
     location: Away
+    result: null
     notes: >
       Thu 8/26 at Mall of America Field. Traditionally the
-      "dress rehearsal" game — starters play most of first half.
+      dress rehearsal game — starters play most of first half.
 
   - id: pre_wk4
     label: Preseason Week 4
-    start: 1999-09-02
-    end: 1999-09-02
+    start: 1999-08-30
+    end: 1999-09-04
+    game_date: 1999-09-02
+    game_day: Thursday
     phase: PRESEASON
     sub_phase: PRESEASON_GAME
     opponent: Cleveland Browns
     location: Home
+    result: null
     notes: >
-      Thu 9/2. Final preseason game. Starters typically rest.
-      Final roster cuts to 53 due by end of this week.
+      Thu 9/2 at Veterans Stadium. Final preseason game. Starters
+      typically rest. Final roster cuts to 53 due by end of week.
 
   - id: roster_cutdown
     label: Final Roster Cutdown to 53
@@ -300,7 +309,7 @@ calendar:
     phase: ROSTER_CUTDOWN
     notes: >
       53-man roster finalized. Practice squad assembled (5 players).
-      Pederson named starter over McNabb for Week 1.
+      Starting QB determined by coaching staff.
 
   # ----------------------------------------------------------
   # REGULAR SEASON
@@ -308,248 +317,242 @@ calendar:
 
   - id: reg_wk01
     label: Week 1
-    start: 1999-09-12
+    start: 1999-09-06
     end: 1999-09-12
+    game_date: 1999-09-12
+    game_day: Sunday
     phase: REGULAR_SEASON
     sub_phase: GAME_WEEK
     opponent: Arizona Cardinals
     location: Home
-    result: "L 24-25"
-    record: "0-1"
+    result: null
+    record: null
     notes: >
-      Sun 9/12. Season opener at Veterans Stadium. Eagles blew
-      24-6 halftime lead. Cardinals rally for 13 4th-quarter points.
-      Chris Jacke GW 31-yard FG as time expires. Pederson 12/26,
-      91 yds, 2 TD, 2 INT. Duce Staley 111 rush yds. Eagles led
-      21-0 in 1st quarter. Devastating collapse.
+      Season opener at Veterans Stadium.
 
   - id: reg_wk02
     label: Week 2
-    start: 1999-09-19
+    start: 1999-09-13
     end: 1999-09-19
+    game_date: 1999-09-19
+    game_day: Sunday
     phase: REGULAR_SEASON
     sub_phase: GAME_WEEK
     opponent: Tampa Bay Buccaneers
     location: Home
-    result: "L 5-19"
-    record: "0-2"
+    result: null
+    record: null
     notes: >
-      Sun 9/19. Pederson benched at halftime (12/19, 100 yds, 1 INT).
-      McNabb NFL debut in 2nd half (4/11, 26 yds). Bucs D records
-      9 sacks. McNabb's first completion: 7 yds to Kevin Turner.
-      Dawkins and Troy Vincent each intercept Dilfer.
+      Veterans Stadium.
 
   - id: reg_wk03
     label: Week 3
-    start: 1999-09-26
+    start: 1999-09-20
     end: 1999-09-26
+    game_date: 1999-09-26
+    game_day: Sunday
     phase: REGULAR_SEASON
     sub_phase: GAME_WEEK
     opponent: Buffalo Bills
     location: Away
-    result: "L 0-26"
-    record: "0-3"
-    notes: >
-      Sun 9/26. Shutout. Eagles managed 3 offensive points over
-      prior 10 quarters. Pederson 14/26, 137 yds. McNabb enters
-      in 4th (6/11, 34 yds). Philly RBs: 22 total rush yards.
-      Dawkins INT for 3rd straight game.
+    result: null
+    record: null
 
   - id: reg_wk04
     label: Week 4
-    start: 1999-10-03
+    start: 1999-09-27
     end: 1999-10-03
+    game_date: 1999-10-03
+    game_day: Sunday
     phase: REGULAR_SEASON
     sub_phase: GAME_WEEK
     opponent: New York Giants
     location: Away
-    result: "L 15-16"
-    record: "0-4"
-    notes: >
-      Sun 10/3. One-point loss at Giants. 0-4 start.
+    result: null
+    record: null
 
   - id: reg_wk05
     label: Week 5
-    start: 1999-10-10
+    start: 1999-10-04
     end: 1999-10-10
+    game_date: 1999-10-10
+    game_day: Sunday
     phase: REGULAR_SEASON
     sub_phase: GAME_WEEK
     opponent: Dallas Cowboys
     location: Home
-    result: "W 13-10"
-    record: "1-4"
+    result: null
+    record: null
     notes: >
-      Sun 10/10 at Veterans Stadium. First win under Andy Reid.
-      Eagles trailed 10-0 entering 4th quarter, scored 13
-      unanswered to win.
+      Veterans Stadium.
 
   - id: reg_wk06
     label: Week 6
-    start: 1999-10-17
+    start: 1999-10-11
     end: 1999-10-17
+    game_date: 1999-10-17
+    game_day: Sunday
     phase: REGULAR_SEASON
     sub_phase: GAME_WEEK
     opponent: Chicago Bears
     location: Away
-    result: "W 20-16"
-    record: "2-4"
-    notes: >
-      Sun 10/17. First road win in 19 games for the franchise.
-      First Eagles road win over Bears since 1933.
+    result: null
+    record: null
 
   - id: reg_wk07
     label: Week 7
-    start: 1999-10-24
+    start: 1999-10-18
     end: 1999-10-24
+    game_date: 1999-10-24
+    game_day: Sunday
     phase: REGULAR_SEASON
     sub_phase: GAME_WEEK
     opponent: Miami Dolphins
     location: Away
-    result: "L 13-16"
-    record: "2-5"
-    notes: >
-      Sun 10/24. Three-point road loss.
+    result: null
+    record: null
 
   - id: reg_wk08
     label: Week 8
-    start: 1999-10-31
+    start: 1999-10-25
     end: 1999-10-31
+    game_date: 1999-10-31
+    game_day: Sunday
     phase: REGULAR_SEASON
     sub_phase: GAME_WEEK
     opponent: New York Giants
     location: Home
-    result: "L 17-23 OT"
-    record: "2-6"
+    result: null
+    record: null
     notes: >
-      Sun 10/31. Overtime loss at home. Eagles led 17-3 at half,
-      Giants scored 14 in 4th quarter to force OT, then won 23-17.
+      Veterans Stadium.
 
   - id: reg_wk09
     label: Week 9
-    start: 1999-11-07
+    start: 1999-11-01
     end: 1999-11-07
+    game_date: 1999-11-07
+    game_day: Sunday
     phase: REGULAR_SEASON
     sub_phase: GAME_WEEK
     opponent: Carolina Panthers
     location: Away
-    result: "L 7-33"
-    record: "2-7"
-    notes: >
-      Sun 11/7. Blowout loss at Carolina. Eagles scoreless
-      through 3 quarters.
+    result: null
+    record: null
 
   - id: reg_wk10
     label: Week 10
-    start: 1999-11-14
+    start: 1999-11-08
     end: 1999-11-14
+    game_date: 1999-11-14
+    game_day: Sunday
     phase: REGULAR_SEASON
     sub_phase: GAME_WEEK
     opponent: Washington Redskins
     location: Home
-    result: "W 35-28"
-    record: "3-7"
+    result: null
+    record: null
     notes: >
-      Sun 11/14. McNabb's first career start. 8/21, 60 yds,
-      9 carries for 49 rush yds. Led two successful 2-point
-      conversions. First Eagles rookie QB to win first start
-      since Mike Boryla (Dec 1974).
+      Veterans Stadium.
 
   - id: reg_wk11
     label: Week 11
-    start: 1999-11-21
+    start: 1999-11-15
     end: 1999-11-21
+    game_date: 1999-11-21
+    game_day: Sunday
     phase: REGULAR_SEASON
     sub_phase: GAME_WEEK
     opponent: Indianapolis Colts
     location: Home
-    result: "L 17-44"
-    record: "3-8"
+    result: null
+    record: null
     notes: >
-      Sun 11/21. Blowout home loss to Peyton Manning's Colts.
-      McNabb threw first career TD pass (6 yds to TE Chad Lewis).
+      Veterans Stadium.
 
   - id: reg_wk12
     label: Week 12
-    start: 1999-11-28
+    start: 1999-11-22
     end: 1999-11-28
+    game_date: 1999-11-28
+    game_day: Sunday
     phase: REGULAR_SEASON
     sub_phase: GAME_WEEK
     opponent: Washington Redskins
     location: Away
-    result: "L 17-20 OT"
-    record: "3-9"
-    notes: >
-      Sun 11/28. Second OT loss of the season. Eagles 0-2 in OT.
+    result: null
+    record: null
 
   - id: reg_wk13
     label: Week 13
-    start: 1999-12-05
+    start: 1999-11-29
     end: 1999-12-05
+    game_date: 1999-12-05
+    game_day: Sunday
     phase: REGULAR_SEASON
     sub_phase: GAME_WEEK
     opponent: Arizona Cardinals
     location: Away
-    result: "L 17-21"
-    record: "3-10"
-    notes: >
-      Sun 12/5. Four-point loss at Arizona.
+    result: null
+    record: null
 
   - id: reg_wk14
     label: Week 14
-    start: 1999-12-12
+    start: 1999-12-06
     end: 1999-12-12
+    game_date: 1999-12-12
+    game_day: Sunday
     phase: REGULAR_SEASON
     sub_phase: GAME_WEEK
     opponent: Dallas Cowboys
     location: Away
-    result: "L 10-20"
-    record: "3-11"
-    notes: >
-      Sun 12/12. Loss at Dallas.
+    result: null
+    record: null
 
   - id: reg_wk15
     label: Week 15
-    start: 1999-12-19
+    start: 1999-12-13
     end: 1999-12-19
+    game_date: 1999-12-19
+    game_day: Sunday
     phase: REGULAR_SEASON
     sub_phase: GAME_WEEK
     opponent: New England Patriots
     location: Home
-    result: "W 24-9"
-    record: "4-11"
+    result: null
+    record: null
     notes: >
-      Sun 12/19. McNabb out with injury. Pederson starts and
-      Eagles win 24-9. Only game of McNabb's final 7-game
-      stretch that he missed.
+      Veterans Stadium.
 
   - id: reg_wk16
     label: Week 16 — BYE
-    start: 1999-12-26
+    start: 1999-12-20
     end: 1999-12-26
+    game_date: null
+    game_day: null
     phase: REGULAR_SEASON
     sub_phase: BYE_WEEK
     opponent: null
     location: null
     result: null
-    record: "4-11"
+    record: null
     notes: >
       Bye week. Late-season bye (Week 16 of 17).
 
   - id: reg_wk17
     label: Week 17
-    start: 2000-01-02
+    start: 1999-12-27
     end: 2000-01-02
+    game_date: 2000-01-02
+    game_day: Sunday
     phase: REGULAR_SEASON
     sub_phase: GAME_WEEK
     opponent: St. Louis Rams
     location: Home
-    result: "W 38-31"
-    record: "5-11"
+    result: null
+    record: null
     notes: >
-      Sun 1/2/00. Season finale. Eagles upset the 13-3 Rams
-      (who would go on to win Super Bowl XXXIV) 38-31 at
-      Veterans Stadium. Meaningless for playoff standings
-      but a statement win for the rebuild.
+      Season finale at Veterans Stadium.
 
   # ----------------------------------------------------------
   # SEASON END
@@ -564,22 +567,9 @@ calendar:
     notes: >
       Player exit interviews. Coaching staff evaluations.
       Season review. Begin planning for 2000 offseason.
-      Eagles finished 5-11, 5th in NFC East. Did not qualify
-      for playoffs. This would be the last year they missed
-      the playoffs until 2005.
 
 # ============================================================
 # RUNTIME STATE (for engine sync)
-# ============================================================
-# The engine reads and writes these fields to track progression.
-# On each turn, the engine advances current_node forward by
-# the appropriate number of nodes based on role-tier time rules:
-#   - HC / Coordinator: 1 node per turn (weekly)
-#   - Position Coach: multiple nodes per turn (monthly)
-#   - QC / GA: multiple nodes per turn (monthly, compressed)
-#
-# The engine should never skip nodes — only consume them faster
-# or slower depending on role tier.
 # ============================================================
 
 runtime:
@@ -591,12 +581,6 @@ runtime:
 # ============================================================
 # COMPRESSION MAP (for monthly-turn roles)
 # ============================================================
-# Maps each calendar month to the node IDs contained within it.
-# Used by the engine when a QC/GA/Position Coach turn covers
-# an entire month — the engine reads which nodes fall inside
-# the month, identifies the biggest event, and decides what
-# to summarize vs. zoom into.
-# ============================================================
 
 compression_map:
 
@@ -607,8 +591,8 @@ compression_map:
       - staff_build_01
     primary_event: reid_hired
     summary_hint: >
-      Reid hired Jan 11. Staff assembly begins. Scheme discussions.
-      Inherited 3-13 roster under evaluation.
+      New head coach hired. Staff assembly begins. Inherited
+      3-13 roster under evaluation.
 
   - month: 1999-02
     label: February 1999
@@ -619,8 +603,8 @@ compression_map:
     primary_event: combine_01
     summary_hint: >
       Final staff hires. Free agency opens Feb 12. NFL Combine
-      mid-February. Eagles hold #2 overall pick — QB evaluation
-      is primary focus. Active in early FA market.
+      mid-February. Eagles hold #2 overall pick — prospect
+      evaluation is primary focus.
 
   - month: 1999-03
     label: March 1999
@@ -628,7 +612,7 @@ compression_map:
       - fa_march
     primary_event: fa_march
     summary_hint: >
-      Continued free agent signings. Pro day visits. Private
+      Continued free agent activity. Pro day visits. Private
       workouts with draft prospects. Scheme installation planning.
 
   - month: 1999-04
@@ -641,8 +625,8 @@ compression_map:
     primary_event: draft_01
     summary_hint: >
       Draft board finalization. NFL Draft April 17-18 — Eagles
-      select Donovan McNabb #2 overall. UDFA signings begin.
-      RFA deadline April 12.
+      pick 2nd overall. Selections determined by simulation.
+      UDFA signings begin post-draft.
 
   - month: 1999-05
     label: May 1999
@@ -652,8 +636,7 @@ compression_map:
     primary_event: ota_01
     summary_hint: >
       UDFA signings wrap up. OTAs begin May 10. First on-field
-      work under new staff. McNabb's first NFL practices.
-      Non-contact only.
+      work under new coaching staff. Non-contact only.
 
   - month: 1999-06
     label: June 1999
@@ -664,7 +647,7 @@ compression_map:
     primary_event: minicamp_01
     summary_hint: >
       OTAs continue through June 11. Mandatory minicamp June 14-17.
-      Offseason break begins June 18. June 1 roster/cap considerations.
+      Offseason break begins June 18.
 
   - month: 1999-07
     label: July 1999
@@ -674,8 +657,8 @@ compression_map:
     primary_event: camp_01
     summary_hint: >
       Offseason break ends. Training camp opens mid-July at Lehigh
-      University. Two-a-days. Pederson vs McNabb QB competition.
-      Roster at 80, must cut to 53.
+      University. Two-a-days. Full pads. QB competition. 80-man
+      roster must cut to 53.
 
   - month: 1999-08
     label: August 1999
@@ -687,9 +670,9 @@ compression_map:
       - pre_wk4
     primary_event: pre_wk1
     summary_hint: >
-      Training camp continues. Four preseason games: vs Ravens (8/12),
-      at Jets (8/20), at Vikings (8/26), vs Browns (9/2). Roster cuts
-      throughout. Pederson likely named Week 1 starter.
+      Training camp continues. Four preseason games: vs Ravens
+      (8/12), at Jets (8/20), at Vikings (8/26), vs Browns (9/2).
+      Roster cuts throughout.
 
   - month: 1999-09
     label: September 1999
@@ -702,9 +685,8 @@ compression_map:
     primary_event: reg_wk01
     summary_hint: >
       Final preseason game and roster cutdown. Regular season opens.
-      0-3 start: blown lead vs Cardinals (L 24-25), Pederson benched
-      vs Bucs — McNabb debut (L 5-19), shutout at Buffalo (L 0-26).
-      Disastrous month.
+      Three regular season games: vs Cardinals (Home), vs Buccaneers
+      (Home), at Bills (Away).
 
   - month: 1999-10
     label: October 1999
@@ -716,10 +698,8 @@ compression_map:
       - reg_wk08
     primary_event: reg_wk05
     summary_hint: >
-      Five games. 2-3 record for the month. First win under Reid
-      (W 13-10 vs Dallas, Wk5). Historic road win at Chicago
-      (W 20-16, Wk6). Losses at Giants, at Dolphins, and home
-      OT collapse vs Giants. Record moves from 0-4 to 2-6.
+      Five games. at Giants, vs Cowboys (Home), at Bears, at Dolphins,
+      vs Giants (Home).
 
   - month: 1999-11
     label: November 1999
@@ -730,10 +710,8 @@ compression_map:
       - reg_wk12
     primary_event: reg_wk10
     summary_hint: >
-      Four games. 1-3 record. Blowout at Carolina (L 7-33).
-      McNabb's first start — win vs Washington (W 35-28).
-      McNabb's first career TD pass vs Colts (L 17-44).
-      OT loss at Washington (L 17-20). Record: 3-9.
+      Four games. at Panthers, vs Redskins (Home), vs Colts (Home),
+      at Redskins.
 
   - month: 1999-12
     label: December 1999
@@ -744,10 +722,8 @@ compression_map:
       - reg_wk16
     primary_event: reg_wk15
     summary_hint: >
-      Four entries (3 games + bye). 1-2 for the month. Losses at
-      Arizona (L 17-21) and at Dallas (L 10-20). Win vs Patriots
-      with Pederson starting due to McNabb injury (W 24-9).
-      Bye Week 16. Record: 4-11 entering finale.
+      Three games plus bye. at Cardinals, at Cowboys, vs Patriots
+      (Home). Bye Week 16.
 
   - month: 2000-01
     label: January 2000
@@ -756,9 +732,8 @@ compression_map:
       - season_end
     primary_event: reg_wk17
     summary_hint: >
-      Season finale Jan 2 — upset of 13-3 Super Bowl-bound Rams
-      (W 38-31). Season ends at 5-11. Exit meetings and 2000
-      offseason planning begin.
+      Season finale vs Rams (Home). Exit meetings and offseason
+      planning begin.
 
 # ============================================================
 # STATE BLOCK FIELDS (add these to your coaching state file)
@@ -790,4 +765,14 @@ compression_map:
 #    - previous_node updates
 #    - next_node updates
 #    - completed_nodes appends consumed node IDs
+# 7. Game results (result, record) are WRITTEN by the engine
+#    AFTER simulation resolves each game. They are null until
+#    played.
+# 8. Draft selections are determined by the simulation during
+#    the DRAFT phase nodes. The calendar only provides the
+#    date and pick position, not the selection.
+# 9. start/end define the FULL WEEK WINDOW for the node.
+#    game_date is the actual game day within that window.
+#    The engine uses start/end for turn boundaries and
+#    game_date for event timing within the turn.
 # ============================================================
