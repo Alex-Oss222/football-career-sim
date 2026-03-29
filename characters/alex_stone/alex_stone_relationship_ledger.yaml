@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '1999-10-25'
-  career_turn: 10
-  sim_phase: Regular Season Week 8 — Game Prep
+  date: '2000-01-03'
+  career_turn: 11
+  sim_phase: Season End — Immediate Aftermath
   source_note: Assistant-generated merge-ready update because the original repo file
     was not directly editable in this environment.
 relationships:
@@ -15,8 +15,9 @@ relationships:
   trend: stable
   status: strong_reference
   notes:
-  - Strong Eagles final-round reference.
-  - Coryell lineage remains a credibility anchor for Stone.
+  - Strong reference history remains part of Stone's professional credibility.
+  - No new direct interaction this stretch.
+  delta: 0
 - name: Bobby Ross
   role: Former HC, Chargers
   score: 75
@@ -25,8 +26,9 @@ relationships:
   trend: stable
   status: strong_reference
   notes:
-  - Strong Eagles final-round reference.
-  - Character and professionalism reference remains active.
+  - Strong character/work-habit reference remains intact.
+  - No new direct interaction this stretch.
+  delta: 0
 - name: Chargers Position Coaches
   role: Former colleagues
   score: 65
@@ -35,8 +37,8 @@ relationships:
   trend: stable
   status: moderate_network
   notes:
-  - Helpful background support but below strong-reference threshold in the interview
-    module.
+  - Background network remains available but did not drive late-season Eagles outcomes.
+  delta: 0
 - name: University of Miami Connections
   role: College network
   score: 55
@@ -45,59 +47,60 @@ relationships:
   trend: stable
   status: dormant
   notes:
-  - No direct impact on the Eagles process so far.
+  - No direct impact on the 1999 Eagles regular-season stretch.
+  delta: 0
 - name: Andy Reid
   role: Head Coach, Philadelphia Eagles
-  score: 60
-  previous_score: 53
-  delta_this_turn: 7
+  score: 69
+  previous_score: 60
+  delta_this_turn: 9
   trend: rising
-  status: trusted_low_level_offensive_support
+  status: trusted_qc_infrastructure
   notes:
-  - Stone is no longer just surviving the workflow; Reid sees him as dependable offensive
-    support who understands the building and the staff tree.
-  - Trust has risen because Stone stays low-ego, communicates cleanly, and rarely
-    forces rework upward.
-  delta: 7
+  - Stone finished the year as a dependable part of the offensive weekly machine,
+    not just a novelty ex-player hire.
+  - Reid now trusts Stone to stay low-ego, understand the workflow, and reduce friction
+    during game-week prep.
+  delta: 9
 - name: Rod Dowhower
   role: Offensive Coordinator, Philadelphia Eagles
-  score: 86
-  previous_score: 79
-  delta_this_turn: 7
+  score: 91
+  previous_score: 86
+  delta_this_turn: 5
   trend: rising
-  status: high_trust_direct_supervisor
+  status: near_core_workflow_support
   notes:
-  - Dowhower now treats Stone as a trusted first-pass worker on offensive prep, corrections,
-    and weekly packaging.
-  - The relationship is strong because Stone learned Dowhower's timing, preferred
-    formats, and tolerance for unnecessary noise.
-  delta: 7
+  - Dowhower views Stone as a highly reliable first-pass offensive support coach who
+    can anticipate format, timing, and correction needs.
+  - The relationship is strong because Stone learned how Dowhower wants information
+    packaged and stopped making expensive mistakes.
+  delta: 5
 - name: Brad Childress
   role: Quarterbacks Coach, Philadelphia Eagles
-  score: 45
-  previous_score: 35
-  delta_this_turn: 10
+  score: 58
+  previous_score: 45
+  delta_this_turn: 13
   trend: rising
-  status: meaningful_qb_support_connection
+  status: trusted_qb_support_resource
   notes:
-  - Regular-season quarterback prep and rookie support work gave Stone more real value
-    in Childress's world.
-  - Childress now trusts Stone enough to use his packets as part of the weekly quarterback
-    support flow, even if Stone remains well below decision-making authority.
-  delta: 10
+  - McNabb/Pederson weekly support work made Stone materially more useful to Childress
+    down the stretch.
+  - Stone is still outside decision authority, but his quarterback-facing cut-ups
+    and translation work became genuinely trusted.
+  delta: 13
 - name: Pat Shurmur
   role: Tight Ends Coach, Philadelphia Eagles
-  score: 51
-  previous_score: 44
-  delta_this_turn: 7
+  score: 61
+  previous_score: 51
+  delta_this_turn: 10
   trend: rising
-  status: stable_positive_working_relationship
+  status: solid_te_support_relationship
   notes:
-  - Stone has become a useful TE/edge/run-game support presence without creating room-authority
-    friction.
-  - Shurmur is more comfortable because Stone's former-player eye now arrives as usable
-    notes instead of ex-player commentary.
-  delta: 7
+  - Stone finished the year as a useful TE/edge/run-game support voice without confusing
+    room authority.
+  - Shurmur is comfortable with Stone because the former-player perspective now arrives
+    as useful prep detail rather than ego.
+  delta: 10
 relationship_events:
 - turn: 7
   date: '1999-02-05'
@@ -179,3 +182,25 @@ relationship_events:
     delta: 7
     note: TE and edge-structure support stayed helpful and hierarchy-safe through
       real game weeks.
+- turn: 11
+  date: '2000-01-03'
+  event: Advanced from Week 8 through the remainder of the 1999 regular season to
+    the immediate aftermath of the final game while continuing the Eagles QC routine
+    and deepening functional command of the offensive weekly workflow.
+  effects:
+  - name: Andy Reid
+    delta: 9
+    note: Stone finished the year as reliable offensive infrastructure who could be
+      trusted to handle his slice of the weekly process.
+  - name: Rod Dowhower
+    delta: 5
+    note: Late-season game-planning, corrections, and packaging work further cemented
+      Stone as a trusted direct-report QC.
+  - name: Brad Childress
+    delta: 13
+    note: Quarterback support work intensified as the season evolved, making Stone
+      much more useful in Childress’s world.
+  - name: Pat Shurmur
+    delta: 10
+    note: TE/edge translation and low-ego support improved the working relationship
+      through the grind of the season.
