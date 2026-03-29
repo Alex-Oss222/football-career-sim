@@ -1,507 +1,133 @@
 meta:
-  character: Alex Stone
-  file_purpose: Persistent relationship tracking for coaching and career progression
-  update_rule: >
-    Update scores and statuses when a meaningful interaction, conflict, favor,
-    trust gain, trust loss, authority change, or career-impacting moment occurs.
-    Do not rewrite history; append major events to relationship_history.
-  created: 1999-01-15
-  last_updated: 1999-01-15
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: "1999-01-15"
+  career_turn: 4
+  sim_phase: "Offseason — Coaching Carousel / Final Round"
+  source_note: "Assistant-generated merge-ready update because the original repo file was not directly editable in this environment."
 
-summary:
-  current_team: None
-  current_role: Unemployed Coach Candidate
-  relationship_environment: Coaching Carousel
-  notes:
-    - No active team staff relationships yet
-    - Initial relationships are baseline reputation, references, and target-job connections
+relationships:
+  - name: Don Coryell
+    role: Former HC, Chargers
+    score: 80
+    previous_score: 80
+    delta_this_turn: 0
+    trend: stable
+    status: strong_reference
+    notes:
+      - "Strong Eagles final-round reference."
+      - "Coryell lineage remains a credibility anchor for Stone."
 
-scoring_system:
-  scale:
-    0_10: hostile_or_broken
-    11_25: severe_distrust
-    26_40: guarded_negative
-    41_55: neutral_or_uncertain
-    56_70: functional_positive
-    71_85: trusted
-    86_100: strong_bond
-  trend_values:
-    up: relationship improving
-    flat: stable
-    down: relationship deteriorating
-  interaction_weight:
-    minor: small update
-    moderate: meaningful update
-    major: large update
-    career_altering: extreme update
+  - name: Bobby Ross
+    role: Former HC, Chargers
+    score: 75
+    previous_score: 75
+    delta_this_turn: 0
+    trend: stable
+    status: strong_reference
+    notes:
+      - "Strong Eagles final-round reference."
+      - "Character and professionalism reference remains active."
 
-relationship_categories:
-  - supervisor
-  - head_coach
-  - coordinator
-  - position_coach
-  - executive
-  - owner
-  - teammate
-  - player
-  - peer_staff
-  - mentor
-  - reference
-  - media
-  - rival
-  - family
-  - friend
-  - agent
-  - recruiter
+  - name: Chargers Position Coaches
+    role: Former colleagues
+    score: 65
+    previous_score: 65
+    delta_this_turn: 0
+    trend: stable
+    status: moderate_network
+    notes:
+      - "Helpful background support but below strong-reference threshold in the interview module."
 
-active_relationships:
+  - name: University of Miami Connections
+    role: College network
+    score: 55
+    previous_score: 55
+    delta_this_turn: 0
+    trend: stable
+    status: dormant
+    notes:
+      - "No direct impact on the Eagles process so far."
 
-  - id: rel_0001
-    name: Andy Reid
-    category: head_coach
-    team: Philadelphia Eagles
-    role_context: Target Head Coach
-    status: prospective
-    relationship_score: 50
-    trend: flat
-    trust_level: uncertain
-    influence_level: very_high
-    reports_to_chain: none_yet
-    current_dynamic: >
-      Reid is the most important gatekeeper for Stone's preferred entry path.
-      No personal relationship exists yet. Interest depends entirely on fit,
-      humility, and interview impression.
-    how_they_see_stone: >
-      Potentially interesting non-traditional candidate: elite football mind,
-      Hall of Fame playing credibility, zero coaching experience, unknown ego fit.
-    how_stone_sees_them: >
-      Best philosophical fit in the 1999 market. High-value developmental coach.
-    opportunity: >
-      If Stone proves he wants to teach and truly start at the beginning, Reid
-      is one of the few coaches likely to consider him seriously.
-    risk: >
-      If Stone sounds entitled, overplays his playing career, or signals that QC
-      work is beneath him, Reid will shut the door quickly.
-    last_meaningful_event:
-      date: 1999-01-15
-      type: target_identified
-      impact: moderate
-      note: Reid selected as primary coaching target
-    tags: [eagles, head_coach, target_job, reid_tree]
+  - name: Andy Reid
+    role: Head Coach, Philadelphia Eagles
+    score: 32
+    previous_score: 18
+    delta_this_turn: 14
+    trend: rising
+    status: offer_extended_pending_decision
+    notes:
+      - "Strong cultural fit confirmed in final round."
+      - "Still aware of Stone's zero coaching experience and WCO learning curve."
+      - "Confidence increased after references and closing argument."
 
-  - id: rel_0002
-    name: Rod Dowhower
-    category: coordinator
-    team: Philadelphia Eagles
-    role_context: Prospective direct supervisor if hired as Offensive QC
-    status: prospective
-    relationship_score: 48
-    trend: flat
-    trust_level: uncertain
-    influence_level: high
-    reports_to_chain: andy_reid
-    current_dynamic: >
-      Dowhower is the practical gatekeeper for the Eagles QC role. He is more
-      likely than Reid to judge Stone on actual usefulness: film quality,
-      organization, chain-of-command behavior, and operational reliability.
-    how_they_see_stone: >
-      Unknown. Former player with possible football intelligence but no proven
-      coaching utility.
-    how_stone_sees_them: >
-      The bridge between his Coryell playing background and Reid's WCO structure.
-      Important to win professionally, not theatrically.
-    opportunity: >
-      Strong work could turn Dowhower into Stone's first real mentor in NFL coaching.
-    risk: >
-      Going around Dowhower, being sloppy, or acting like a celebrity instead of
-      a support coach would kill trust quickly.
-    last_meaningful_event:
-      date: 1999-01-15
-      type: target_supervisor_identified
-      impact: moderate
-      note: Recognized as likely direct evaluator in Eagles path
-    tags: [eagles, oc, supervisor, coryell_bridge]
+  - name: Rod Dowhower
+    role: Offensive Coordinator, Philadelphia Eagles
+    score: 40
+    previous_score: 24
+    delta_this_turn: 16
+    trend: rising
+    status: primary_internal_sponsor
+    notes:
+      - "Operational competence and tone landed well in final round."
+      - "Coryell-to-WCO bridge remains Stone's biggest hidden asset."
+      - "Dowhower is the strongest early believer inside the Eagles process."
 
-  - id: rel_0003
-    name: Pat Shurmur
-    category: position_coach
-    team: Philadelphia Eagles
-    role_context: Prospective TE Coach if Stone joins Eagles staff
-    status: prospective
-    relationship_score: 46
-    trend: flat
-    trust_level: fragile_unknown
-    influence_level: medium
-    reports_to_chain: rod_dowhower
-    current_dynamic: >
-      This would be the most delicate staff relationship if Stone joins the Eagles.
-      Shurmur is a first-time NFL position coach; Stone is a Hall of Fame TE with
-      zero coaching experience. Stone could help or threaten him depending on how
-      he carries himself.
-    how_they_see_stone: >
-      Potential support asset or authority problem.
-    how_stone_sees_them: >
-      A possible mentor in room management and day-to-day coaching structure.
-    opportunity: >
-      If Stone supports Shurmur without undermining him, the relationship could
-      become one of the most valuable on the staff.
-    risk: >
-      If Stone flexes TE expertise in a way that makes Shurmur look small, the
-      relationship could freeze early and never recover.
-    last_meaningful_event:
-      date: 1999-01-15
-      type: role_conflict_awareness
-      impact: moderate
-      note: Identified as most delicate possible Eagles staff relationship
-    tags: [eagles, te_room, shurmur, fragile_authority]
+  - name: Brad Childress
+    role: Quarterbacks Coach, Philadelphia Eagles
+    score: 14
+    previous_score: 8
+    delta_this_turn: 6
+    trend: mildly_rising
+    status: cautious_positive
+    notes:
+      - "Still skeptical about terminology depth."
+      - "No major red flags on preparation or professionalism."
 
-  - id: rel_0004
-    name: Ron Rivera
-    category: peer_staff
-    team: Philadelphia Eagles
-    role_context: Prospective peer ally if hired by Eagles
-    status: prospective
-    relationship_score: 55
-    trend: flat
-    trust_level: neutral_positive
-    influence_level: medium
-    reports_to_chain: jim_johnson
-    current_dynamic: >
-      Rivera is the most natural peer comparison: former high-level player making
-      the coaching transition with a thin coaching résumé. He is not on Stone's
-      side of the ball, which lowers competitive tension.
-    how_they_see_stone: >
-      Likely to understand Stone's transition challenges instinctively.
-    how_stone_sees_them: >
-      A possible early ally who understands how ex-players get judged differently.
-    opportunity: >
-      Could become Stone's best internal translator for player-to-coach identity shift.
-    risk: >
-      Limited formal influence on Stone's offensive path.
-    last_meaningful_event:
-      date: 1999-01-15
-      type: peer_ally_identified
-      impact: minor
-      note: Flagged as natural ally if Eagles hire happens
-    tags: [eagles, peer, former_player, ally]
+  - name: Pat Shurmur
+    role: Tight Ends Coach, Philadelphia Eagles
+    score: 16
+    previous_score: 10
+    delta_this_turn: 6
+    trend: mildly_rising
+    status: cautious_positive
+    notes:
+      - "Stone has stayed in lane and avoided undermining the TE room."
+      - "Trust remains fragile because Stone's playing credibility can distort authority."
 
-  - id: rel_0005
-    name: Jeffrey Lurie
-    category: owner
-    team: Philadelphia Eagles
-    role_context: Organizational authority if hired
-    status: distant_prospective
-    relationship_score: 50
-    trend: flat
-    trust_level: neutral
-    influence_level: very_high
-    reports_to_chain: none
-    current_dynamic: >
-      Lurie is not a direct day-to-day relationship for a QC coach, but his trust
-      in Reid matters because it creates staff stability. Stone benefits indirectly
-      from Lurie's patience and process orientation.
-    how_they_see_stone: >
-      Not personally relevant yet.
-    how_stone_sees_them: >
-      Important mostly because he supports Reid long enough for development to matter.
-    opportunity: >
-      Stable ownership helps early-career coaches survive losing seasons.
-    risk: >
-      Minimal direct influence at QC level unless Stone becomes a public story.
-    last_meaningful_event:
-      date: 1999-01-15
-      type: org_context_noted
-      impact: minor
-      note: Ownership stability identified as positive environmental factor
-    tags: [eagles, owner, stability]
+relationship_events:
+  - turn: 1
+    date: "1999-01-15"
+    event: "Applied for Philadelphia Eagles Offensive Quality Control."
+    effects:
+      - { name: Andy Reid, delta: 0, note: "Application entered pool; no relationship established yet." }
+      - { name: Rod Dowhower, delta: 0, note: "No direct contact yet." }
 
-  - id: rel_0006
-    name: Joe Banner
-    category: executive
-    team: Philadelphia Eagles
-    role_context: President / football operations
-    status: distant_prospective
-    relationship_score: 50
-    trend: flat
-    trust_level: neutral
-    influence_level: high
-    reports_to_chain: jeffrey_lurie
-    current_dynamic: >
-      Banner matters at the organizational level, not the daily coaching level.
-      His trust in Reid creates long-run stability for the staff.
-    how_they_see_stone: >
-      Not yet relevant unless hiring process elevates Stone's visibility.
-    how_stone_sees_them: >
-      Organizational architecture, not daily relationship.
-    opportunity: >
-      Strong front-office/HC alignment can protect young assistants from chaos.
-    risk: >
-      Minimal direct relationship value at entry level.
-    last_meaningful_event:
-      date: 1999-01-15
-      type: org_context_noted
-      impact: minor
-      note: Banner identified as strategic but indirect influence
-    tags: [eagles, executive, stability]
+  - turn: 2
+    date: "1999-01-15"
+    event: "Advanced through Eagles phone interview."
+    effects:
+      - { name: Andy Reid, delta: 8, note: "Positive first impression on humility and role fit." }
+      - { name: Rod Dowhower, delta: 12, note: "Operational answer quality registered positively." }
+      - { name: Brad Childress, delta: 5, note: "Neutral-skeptical but engaged." }
+      - { name: Pat Shurmur, delta: 4, note: "No threat signal created." }
 
-  - id: rel_0007
-    name: Mike Riley
-    category: head_coach
-    team: San Diego Chargers
-    role_context: Alternate NFL QC path
-    status: alternate_target
-    relationship_score: 50
-    trend: flat
-    trust_level: uncertain
-    influence_level: high
-    reports_to_chain: none_yet
-    current_dynamic: >
-      San Diego is a realistic backup path. Familiarity with the franchise helps,
-      but Riley may see Stone as either useful credibility or an awkward legacy presence.
-    how_they_see_stone: >
-      Former franchise icon with no coaching experience. Possible asset, possible threat.
-    how_stone_sees_them: >
-      Safer path than some jobs, but less attractive than Eagles for long-term development.
-    opportunity: >
-      Familiar building and lower barrier to entry.
-    risk: >
-      Returning to former playing home could muddy authority and identity.
-    last_meaningful_event:
-      date: 1999-01-15
-      type: backup_option_identified
-      impact: minor
-      note: Marked as viable fallback if Eagles path fails
-    tags: [chargers, backup_path, former_team]
+  - turn: 3
+    date: "1999-01-15"
+    event: "Became Eagles finalist after campus interview."
+    effects:
+      - { name: Andy Reid, delta: 10, note: "Cultural fit and teaching posture improved standing." }
+      - { name: Rod Dowhower, delta: 12, note: "Tactical presentation strengthened confidence." }
+      - { name: Brad Childress, delta: 3, note: "Terminology concern remains, but no disqualifier." }
+      - { name: Pat Shurmur, delta: 6, note: "Respectful TE-lane framing helped." }
 
-  - id: rel_0008
-    name: Chris Palmer
-    category: head_coach
-    team: Cleveland Browns
-    role_context: Alternate NFL QC path
-    status: alternate_target
-    relationship_score: 50
-    trend: flat
-    trust_level: uncertain
-    influence_level: high
-    reports_to_chain: none_yet
-    current_dynamic: >
-      Cleveland offers easier entry because the expansion staff is open and chaotic.
-      The path is realistic, but the environment is poor for clean development.
-    how_they_see_stone: >
-      Potentially credible outsider with football reputation and no coaching background.
-    how_stone_sees_them: >
-      Realistic entry point, but not preferred.
-    opportunity: >
-      Lower barrier and more immediate opportunity.
-    risk: >
-      Expansion chaos and short-term instability could stunt development.
-    last_meaningful_event:
-      date: 1999-01-15
-      type: backup_option_identified
-      impact: minor
-      note: Marked as realistic but lower-priority path
-    tags: [browns, backup_path, expansion]
-
-  - id: rel_0009
-    name: Former Coach Reference Placeholder
-    category: reference
-    team: None
-    role_context: Reference source
-    status: active_reference
-    relationship_score: 75
-    trend: flat
-    trust_level: strong
-    influence_level: medium
-    reports_to_chain: none
-    current_dynamic: >
-      Placeholder for a former coach who can speak credibly about Stone's character,
-      teaching instinct, humility, and football intelligence.
-    how_they_see_stone: >
-      Trusted former player with leadership and teaching value.
-    how_stone_sees_them: >
-      A key bridge into coaching legitimacy.
-    opportunity: >
-      Strong references may offset the zero-experience problem.
-    risk: >
-      Placeholder should be replaced with real person once finalized.
-    last_meaningful_event:
-      date: 1999-01-15
-      type: reference_pool_defined
-      impact: moderate
-      note: Reference category identified as essential to coaching entry
-    tags: [reference, credibility, coaching_entry]
-
-  - id: rel_0010
-    name: Former Teammate Reference Placeholder
-    category: reference
-    team: None
-    role_context: Peer reference
-    status: active_reference
-    relationship_score: 72
-    trend: flat
-    trust_level: trusted
-    influence_level: medium
-    reports_to_chain: none
-    current_dynamic: >
-      Placeholder for a former teammate who can verify that Stone informally taught,
-      led, and helped others during his playing career.
-    how_they_see_stone: >
-      Serious football mind who helped teammates behind the scenes.
-    how_stone_sees_them: >
-      Useful proof that teaching existed before formal coaching.
-    opportunity: >
-      Can convert playing legacy into coaching credibility.
-    risk: >
-      Placeholder should become a real named reference later.
-    last_meaningful_event:
-      date: 1999-01-15
-      type: reference_pool_defined
-      impact: moderate
-      note: Teammate reference identified as high-value support
-    tags: [reference, teammate, teaching]
-
-  - id: rel_0011
-    name: Inbar Zsela
-    category: family
-    team: None
-    role_context: Personal life
-    status: active
-    relationship_score: 60
-    trend: flat
-    trust_level: positive
-    influence_level: medium
-    reports_to_chain: none
-    current_dynamic: >
-      Optional personal relationship slot. Use only if active in this version of Stone.
-      If not active in this continuity, delete or replace this entry before sim start.
-    how_they_see_stone: >
-      Supportive but affected by career instability and football obsession.
-    how_stone_sees_them: >
-      Emotional anchor outside football.
-    opportunity: >
-      Stability outside football can soften internal stress accumulation.
-    risk: >
-      If personal life is not part of this continuity, this entry must be removed.
-    last_meaningful_event:
-      date: 1999-01-15
-      type: placeholder_personal
-      impact: minor
-      note: Keep only if active in current character canon
-    tags: [family, optional, personal]
-
-relationship_history:
-
-  - id: rel_hist_0001
-    date: 1999-01-15
-    relationship_id: rel_0001
-    name: Andy Reid
-    event_type: target_identified
-    impact: moderate
-    score_change: 0
-    summary: >
-      Stone identified Reid as the most desirable coaching target because of the
-      teaching philosophy, staff-building style, and long-term development value.
-
-  - id: rel_hist_0002
-    date: 1999-01-15
-    relationship_id: rel_0002
-    name: Rod Dowhower
-    event_type: gatekeeper_identified
-    impact: moderate
-    score_change: 0
-    summary: >
-      Dowhower was recognized as the likely practical evaluator for any Eagles QC path.
-
-  - id: rel_hist_0003
-    date: 1999-01-15
-    relationship_id: rel_0003
-    name: Pat Shurmur
-    event_type: dynamic_flagged
-    impact: moderate
-    score_change: 0
-    summary: >
-      Shurmur flagged as the most delicate potential future relationship due to the
-      tension between Stone's TE expertise and Shurmur's room authority.
-
-rules:
-  valid_status_values:
-    - prospective
-    - distant_prospective
-    - alternate_target
-    - active
-    - active_reference
-    - inactive
-    - strained
-    - broken
-    - mentor_active
-    - supervisor_active
-    - peer_active
-    - rival_active
-
-  valid_categories:
-    - supervisor
-    - head_coach
-    - coordinator
-    - position_coach
-    - executive
-    - owner
-    - teammate
-    - player
-    - peer_staff
-    - mentor
-    - reference
-    - media
-    - rival
-    - family
-    - friend
-    - agent
-    - recruiter
-
-  update_rules:
-    score_change_guidelines:
-      minor_positive: +1_to_+3
-      moderate_positive: +4_to_+8
-      major_positive: +9_to_+15
-      minor_negative: -1_to_-3
-      moderate_negative: -4_to_-8
-      major_negative: -9_to_-15
-
-    when_to_update: >
-      Update a relationship when a direct interaction, clear trust movement,
-      public/private conflict, favor, recommendation, promotion, criticism, or
-      authority change meaningfully affects the relationship.
-
-    when_not_to_update: >
-      Do not update for normal background existence, routine weekly contact, or
-      every conversation unless something actually shifted.
-
-    write_rule: >
-      When a relationship changes meaningfully:
-        1. Update the active relationship entry
-        2. Append one new item to relationship_history
-        3. Update last_updated in meta
-
-maintenance_instructions:
-  start_of_new_job:
-    - Update current_team in summary
-    - Add or activate new supervisor and staff entries
-    - Demote old job relationships from active to inactive or distant if needed
-
-  promotion:
-    - Update role_context for current staff relationships
-    - Add new direct reports or new supervisor if role changes
-    - Reclassify peers who now become subordinates or evaluators
-
-  team_change:
-    - Keep old relationships unless fully broken
-    - Change old team staff to inactive, distant, or former colleague
-    - Add new team staff as prospective or active depending on move
-
-  firing_or_conflict:
-    - Reduce relationship scores only if the firing/conflict clearly damages trust
-    - Log the event in relationship_history
-    - Update status to strained or broken if appropriate
-
-  placeholders:
-    - Replace placeholder references with real names when finalized
-    - Remove optional personal entries that are not active in this continuity
+  - turn: 4
+    date: "1999-01-15"
+    event: "Won Eagles final round; offer pending acceptance or negotiation."
+    effects:
+      - { name: Don Coryell, delta: 0, note: "Reference used successfully." }
+      - { name: Bobby Ross, delta: 0, note: "Reference used successfully." }
+      - { name: Andy Reid, delta: 14, note: "Offer-level trust formed, though not yet employment trust." }
+      - { name: Rod Dowhower, delta: 16, note: "Primary advocate inside the building." }
+      - { name: Brad Childress, delta: 6, note: "More comfortable with Stone as a support coach than as a direct teacher." }
+      - { name: Pat Shurmur, delta: 6, note: "Final round confirmed Stone intends to support, not compete." }
