@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '1999-01-16'
-  career_turn: 6
-  sim_phase: Offseason — Initial Staff Integration
+  date: '1999-02-05'
+  career_turn: 7
+  sim_phase: Offseason — Pre-Combine / Pre-Free Agency Build-Up
   source_note: Assistant-generated merge-ready update because the original repo file
     was not directly editable in this environment.
 relationships:
@@ -48,146 +48,69 @@ relationships:
   - No direct impact on the Eagles process so far.
 - name: Andy Reid
   role: Head Coach, Philadelphia Eagles
-  score: 37
-  previous_score: 36
-  delta_this_turn: 1
-  trend: mildly_rising
+  score: 41
+  previous_score: 37
+  delta_this_turn: 4
+  trend: rising
   status: new_boss
   notes:
-  - Stone made a quiet, professional first-day impression.
-  - Reid noticed reliability and restraint more than football brilliance.
-  - Trust remains shallow; Stone is still being evaluated as a support coach, not
-    a teacher.
+  - Stone stayed early, useful, and low-maintenance through the run-up to combine/free
+    agency.
+  - Reid's view improved because Stone did not create friction and steadily became
+    more reliable.
+  - Trust is still role-limited; Stone is infrastructure, not inner-circle staff.
 - name: Rod Dowhower
   role: Offensive Coordinator, Philadelphia Eagles
-  score: 52
-  previous_score: 46
-  delta_this_turn: 6
+  score: 61
+  previous_score: 52
+  delta_this_turn: 9
   trend: rising
   status: direct_supervisor
   notes:
-  - Stone arrived early, took formatting correction without defensiveness, and delivered
-    a usable revised cut-up packet.
-  - Dowhower's confidence rose because Stone behaved like a QC and adjusted fast.
-  - This is the key relationship in Stone's first month on staff.
+  - Stone produced several weeks of accurate support work and showed visible improvement
+    in formatting, timing, and terminology discipline.
+  - Dowhower increasingly trusts Stone with first-pass film prep, chart organization,
+    and overnight revision work.
+  - This is still a boss-subordinate relationship; one sloppy week would still cost
+    trust quickly.
 - name: Brad Childress
   role: Quarterbacks Coach, Philadelphia Eagles
-  score: 18
-  previous_score: 16
-  delta_this_turn: 2
+  score: 22
+  previous_score: 18
+  delta_this_turn: 4
   trend: mildly_rising
   status: cautious_coworker
   notes:
-  - Childress remains detail-oriented and skeptical, but Stone did not waste his time.
-  - A terminology/labeling correction reinforced that precision is still Stone's weak
-    spot.
+  - Stone became less noisy and more precise, which matters to a detail-driven assistant
+    like Childress.
+  - Terminology is improving, though still not fully natural.
 - name: Pat Shurmur
   role: Tight Ends Coach, Philadelphia Eagles
-  score: 22
-  previous_score: 20
-  delta_this_turn: 2
+  score: 27
+  previous_score: 22
+  delta_this_turn: 5
   trend: mildly_rising
   status: delicate_coworker_positive
   notes:
-  - Stone provided TE-relevant film support only when asked and stayed inside the
-    role.
-  - Lane discipline kept the relationship stable.
+  - Stone continued to support TE-related cut-ups and notes without trying to own
+    the room.
+  - Respecting hierarchy kept the relationship moving in a healthy direction.
 relationship_events:
-- turn: 1
-  date: '1999-01-15'
-  event: Applied for Philadelphia Eagles Offensive Quality Control.
+- turn: 7
+  date: '1999-02-05'
+  event: Advanced to one week before the combine/free agency while continuing Eagles
+    QC routine.
   effects:
   - name: Andy Reid
-    delta: 0
-    note: Application entered pool; no relationship established yet.
+    delta: 4
+    note: Reliability and restraint improved weekly trust.
   - name: Rod Dowhower
-    delta: 0
-    note: No direct contact yet.
-- turn: 2
-  date: '1999-01-15'
-  event: Advanced through Eagles phone interview.
-  effects:
-  - name: Andy Reid
-    delta: 8
-    note: Positive first impression on humility and role fit.
-  - name: Rod Dowhower
-    delta: 12
-    note: Operational answer quality registered positively.
+    delta: 9
+    note: Formatting, timing, and terminology discipline improved through repeated
+      work cycles.
   - name: Brad Childress
+    delta: 4
+    note: Cleaner details and less noise improved coworker view.
+  - name: Pat Shurmur
     delta: 5
-    note: Neutral-skeptical but engaged.
-  - name: Pat Shurmur
-    delta: 4
-    note: No threat signal created.
-- turn: 3
-  date: '1999-01-15'
-  event: Became Eagles finalist after campus interview.
-  effects:
-  - name: Andy Reid
-    delta: 10
-    note: Cultural fit and teaching posture improved standing.
-  - name: Rod Dowhower
-    delta: 12
-    note: Tactical presentation strengthened confidence.
-  - name: Brad Childress
-    delta: 3
-    note: Terminology concern remains, but no disqualifier.
-  - name: Pat Shurmur
-    delta: 6
-    note: Respectful TE-lane framing helped.
-- turn: 4
-  date: '1999-01-15'
-  event: Won Eagles final round; offer pending acceptance or negotiation.
-  effects:
-  - name: Don Coryell
-    delta: 0
-    note: Reference used successfully.
-  - name: Bobby Ross
-    delta: 0
-    note: Reference used successfully.
-  - name: Andy Reid
-    delta: 14
-    note: Offer-level trust formed, though not yet employment trust.
-  - name: Rod Dowhower
-    delta: 16
-    note: Primary advocate inside the building.
-  - name: Brad Childress
-    delta: 6
-    note: More comfortable with Stone as a support coach than as a direct teacher.
-  - name: Pat Shurmur
-    delta: 6
-    note: Final round confirmed Stone intends to support, not compete.
-- turn: 5
-  date: '1999-01-15'
-  event: Accepted Philadelphia Eagles Offensive Quality Control offer and joined staff.
-  effects:
-  - name: Andy Reid
-    delta: 4
-    note: Offer acceptance converted interview trust into initial employment trust.
-  - name: Rod Dowhower
-    delta: 6
-    note: Dowhower became direct supervisor rather than internal advocate only.
-  - name: Brad Childress
-    delta: 2
-    note: Coworker comfort increased slightly once Stone accepted the hierarchy.
-  - name: Pat Shurmur
-    delta: 4
-    note: Relationship improved because roles are now explicit and Stone entered at
-      QC rather than TE coach.
-- turn: 6
-  date: '1999-01-16'
-  event: Completed first full Eagles workday during staff integration.
-  effects:
-  - name: Andy Reid
-    delta: 1
-    note: Quiet professionalism and early arrival registered positively.
-  - name: Rod Dowhower
-    delta: 6
-    note: Accepted correction, reformatted work quickly, and delivered a usable packet
-      on time.
-  - name: Brad Childress
-    delta: 2
-    note: Did not overtalk and handled detail correction professionally.
-  - name: Pat Shurmur
-    delta: 2
-    note: Supported the TE room without stepping on authority.
+    note: Steady TE support within hierarchy improved comfort.
