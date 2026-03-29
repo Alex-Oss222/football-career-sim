@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '1999-01-15'
-  career_turn: 5
-  sim_phase: Offseason — Coaching Transition / Accepted Offer
+  date: '1999-01-16'
+  career_turn: 6
+  sim_phase: Offseason — Initial Staff Integration
   source_note: Assistant-generated merge-ready update because the original repo file
     was not directly editable in this environment.
 relationships:
@@ -48,50 +48,50 @@ relationships:
   - No direct impact on the Eagles process so far.
 - name: Andy Reid
   role: Head Coach, Philadelphia Eagles
-  score: 36
-  previous_score: 32
-  delta_this_turn: 4
-  trend: rising
+  score: 37
+  previous_score: 36
+  delta_this_turn: 1
+  trend: mildly_rising
   status: new_boss
   notes:
-  - Stone accepted the Eagles QC role and is now formally on Reid's staff.
-  - Trust is positive but still probationary; QC work quality will determine access.
-  - Reid's main concern remains whether Stone can learn the WCO fast enough without
-    ego leakage.
+  - Stone made a quiet, professional first-day impression.
+  - Reid noticed reliability and restraint more than football brilliance.
+  - Trust remains shallow; Stone is still being evaluated as a support coach, not
+    a teacher.
 - name: Rod Dowhower
   role: Offensive Coordinator, Philadelphia Eagles
-  score: 46
-  previous_score: 40
+  score: 52
+  previous_score: 46
   delta_this_turn: 6
   trend: rising
-  status: primary_supervisor
+  status: direct_supervisor
   notes:
-  - Acceptance turns Dowhower from sponsor into day-to-day boss.
-  - Stone now works directly under Dowhower on film, cut-ups, and offensive prep.
-  - The relationship is promising, but one chain-of-command mistake would damage it
-    quickly.
+  - Stone arrived early, took formatting correction without defensiveness, and delivered
+    a usable revised cut-up packet.
+  - Dowhower's confidence rose because Stone behaved like a QC and adjusted fast.
+  - This is the key relationship in Stone's first month on staff.
 - name: Brad Childress
   role: Quarterbacks Coach, Philadelphia Eagles
-  score: 16
-  previous_score: 14
+  score: 18
+  previous_score: 16
   delta_this_turn: 2
   trend: mildly_rising
   status: cautious_coworker
   notes:
-  - Stone is now a real coworker rather than a finalist under review.
-  - Childress still sees the terminology gap and will judge Stone by precision, not
-    résumé.
+  - Childress remains detail-oriented and skeptical, but Stone did not waste his time.
+  - A terminology/labeling correction reinforced that precision is still Stone's weak
+    spot.
 - name: Pat Shurmur
   role: Tight Ends Coach, Philadelphia Eagles
-  score: 20
-  previous_score: 16
-  delta_this_turn: 4
+  score: 22
+  previous_score: 20
+  delta_this_turn: 2
   trend: mildly_rising
   status: delicate_coworker_positive
   notes:
-  - Formal employment lowers some uncertainty because the hierarchy is now explicit.
-  - 'The TE authority dynamic is still delicate: Stone can help the room only from
-    inside his lane.'
+  - Stone provided TE-relevant film support only when asked and stayed inside the
+    role.
+  - Lane discipline kept the relationship stable.
 relationship_events:
 - turn: 1
   date: '1999-01-15'
@@ -174,3 +174,20 @@ relationship_events:
     delta: 4
     note: Relationship improved because roles are now explicit and Stone entered at
       QC rather than TE coach.
+- turn: 6
+  date: '1999-01-16'
+  event: Completed first full Eagles workday during staff integration.
+  effects:
+  - name: Andy Reid
+    delta: 1
+    note: Quiet professionalism and early arrival registered positively.
+  - name: Rod Dowhower
+    delta: 6
+    note: Accepted correction, reformatted work quickly, and delivered a usable packet
+      on time.
+  - name: Brad Childress
+    delta: 2
+    note: Did not overtalk and handled detail correction professionally.
+  - name: Pat Shurmur
+    delta: 2
+    note: Supported the TE room without stepping on authority.
