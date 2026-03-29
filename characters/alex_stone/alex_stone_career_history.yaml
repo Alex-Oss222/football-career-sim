@@ -1,129 +1,197 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: "1999-01-15"
-  career_turn: 4
-  source_note: "Assistant-generated merge-ready update because the original repo file was not directly editable in this environment."
-
+  date: '1999-01-15'
+  career_turn: 5
+  source_note: Assistant-generated merge-ready update because the original repo file
+    was not directly editable in this environment.
 current_status:
-  employment_status: unemployed_offer_pending
-  current_role: "Unemployed (Philadelphia Eagles Offensive QC offer pending)"
+  employment_status: employed
+  current_role: Philadelphia Eagles Offensive Quality Control
   coaching_level: 0
-  team: null
-  active_offer:
+  team: Philadelphia Eagles
+  active_offer: null
+  interview_module:
+    active: false
+    calendar_frozen: false
+    stage: null
+    next_event: Initial Eagles staff integration
+  signed_contract:
     team: Philadelphia Eagles
     role: Offensive Quality Control
     side_of_ball: offense
-    offer_status: pending
-    negotiation_status: not_started
-    salary_offer_usd: 32500
+    salary_usd: 32500
     contract_years: 1
     bonuses: []
     moving_expenses: standard_relocation
-    next_decision: accept_decline_or_negotiate
-  interview_module:
-    active: true
-    calendar_frozen: true
-    stage: 5
-    next_event: "Decision and transition"
-
+    signed_date: '1999-01-15'
+    status: active
 turn_history:
-  - turn: 1
-    phase: "Offseason — Coaching Carousel / Interview Stage 1"
-    date: "1999-01-15"
-    event: "Applied to Philadelphia Eagles for Offensive Quality Control."
-    outcome: advanced_to_phone_interview
-    application_score:
-      resume_strength: 78
-      skill_match: 73
-      cover_letter_quality: 80
-      references: 78
-      weighted_total: 76.65
-    state_changes:
-      stress: { from: 15, to: 19 }
-      applications_active: { from: 0, to: 1 }
-    notes:
-      - "Correctly targeted Level 0 QC role rather than a position-coach reach."
-      - "Main live risk remained zero coaching experience and WCO knowledge gap."
-
-  - turn: 2
-    phase: "Offseason — Coaching Carousel / Interview Stage 2"
-    date: "1999-01-15"
-    event: "Completed Eagles phone interview."
-    outcome: advanced_to_campus_interview
-    phone_interview:
-      q1_philosophy: 9
-      q2_experience_skills: 8
-      q3_situational: 8
-      communication_anchor: 42
-      communication_bonus: 21
-      total: 46
-    state_changes:
-      stress: { from: 19, to: 23 }
-    notes:
-      - "Role-fit and humility screened well."
-      - "Still did not sound like a native WCO coach."
-
-  - turn: 3
-    phase: "Offseason — Coaching Carousel / Interview Stage 3"
-    date: "1999-01-15"
-    event: "Completed Eagles campus / in-person interview."
-    outcome: became_finalist
-    campus_interview:
-      vision_score: 8
-      room_trust_score: 8
-      tactical_presentation_score: 9
-      final_panel_score: 8
-      relevant_skills_bonus: 27.5
-      total: 60.5
-    supporting_materials:
-      - "Alex Stone — Campus Interview Answers - Eagles OQC.md"
-    state_changes:
-      stress: { from: 23, to: 29 }
-    notes:
-      - "Tactical presentation was the strongest portion of the day."
-      - "Finalist status earned, but WCO terminology remained the clearest weakness."
-
-  - turn: 4
-    phase: "Offseason — Coaching Carousel / Interview Stage 4"
-    date: "1999-01-15"
-    event: "Resolved Eagles final round: references, closing case, offer decision."
-    outcome: won_final_round_offer_pending
-    finalists:
-      generated_field_size: 3
-      best_other_candidate_profile: "Safer conventional WCO candidate with more coaching reps but less upside and weaker fit."
-    final_round_math:
-      interview_scores_carried_forward: 60.5
-      references_bonus: 10
-      fit_bonus: 8
-      final_statement_bonus: 8
-      total: 86.5
-      best_other_candidate_total: 83.0
-      margin: 3.5
-    references_used:
-      - Don Coryell
-      - Bobby Ross
-    closing_argument_note: "Engine-generated from Stone's prior interview voice because no user-written final statement was separately provided."
-    offer_generated:
-      team: Philadelphia Eagles
-      role: Offensive Quality Control
-      salary_offer_usd: 32500
-      contract_years: 1
-      status: pending
-    state_changes:
-      stress: { from: 29, to: 34 }
-      applications_active: { from: 1, to: 0 }
-      offers_pending: { from: 0, to: 1 }
-    notes:
-      - "Stone won narrowly, not overwhelmingly."
-      - "References and role fit mattered more than system fluency."
-      - "Decision still required; employment does not begin until the offer is accepted."
-
+- turn: 1
+  phase: Offseason — Coaching Carousel / Interview Stage 1
+  date: '1999-01-15'
+  event: Applied to Philadelphia Eagles for Offensive Quality Control.
+  outcome: advanced_to_phone_interview
+  application_score:
+    resume_strength: 78
+    skill_match: 73
+    cover_letter_quality: 80
+    references: 78
+    weighted_total: 76.65
+  state_changes:
+    stress:
+      from: 15
+      to: 19
+    applications_active:
+      from: 0
+      to: 1
+  notes:
+  - Correctly targeted Level 0 QC role rather than a position-coach reach.
+  - Main live risk remained zero coaching experience and WCO knowledge gap.
+- turn: 2
+  phase: Offseason — Coaching Carousel / Interview Stage 2
+  date: '1999-01-15'
+  event: Completed Eagles phone interview.
+  outcome: advanced_to_campus_interview
+  phone_interview:
+    q1_philosophy: 9
+    q2_experience_skills: 8
+    q3_situational: 8
+    communication_anchor: 42
+    communication_bonus: 21
+    total: 46
+  state_changes:
+    stress:
+      from: 19
+      to: 23
+  notes:
+  - Role-fit and humility screened well.
+  - Still did not sound like a native WCO coach.
+- turn: 3
+  phase: Offseason — Coaching Carousel / Interview Stage 3
+  date: '1999-01-15'
+  event: Completed Eagles campus / in-person interview.
+  outcome: became_finalist
+  campus_interview:
+    vision_score: 8
+    room_trust_score: 8
+    tactical_presentation_score: 9
+    final_panel_score: 8
+    relevant_skills_bonus: 27.5
+    total: 60.5
+  supporting_materials:
+  - Alex Stone — Campus Interview Answers - Eagles OQC.md
+  state_changes:
+    stress:
+      from: 23
+      to: 29
+  notes:
+  - Tactical presentation was the strongest portion of the day.
+  - Finalist status earned, but WCO terminology remained the clearest weakness.
+- turn: 4
+  phase: Offseason — Coaching Carousel / Interview Stage 4
+  date: '1999-01-15'
+  event: 'Resolved Eagles final round: references, closing case, offer decision.'
+  outcome: won_final_round_offer_pending
+  finalists:
+    generated_field_size: 3
+    best_other_candidate_profile: Safer conventional WCO candidate with more coaching
+      reps but less upside and weaker fit.
+  final_round_math:
+    interview_scores_carried_forward: 60.5
+    references_bonus: 10
+    fit_bonus: 8
+    final_statement_bonus: 8
+    total: 86.5
+    best_other_candidate_total: 83.0
+    margin: 3.5
+  references_used:
+  - Don Coryell
+  - Bobby Ross
+  closing_argument_note: Engine-generated from Stone's prior interview voice because
+    no user-written final statement was separately provided.
+  offer_generated:
+    team: Philadelphia Eagles
+    role: Offensive Quality Control
+    salary_offer_usd: 32500
+    contract_years: 1
+    status: pending
+  state_changes:
+    stress:
+      from: 29
+      to: 34
+    applications_active:
+      from: 1
+      to: 0
+    offers_pending:
+      from: 0
+      to: 1
+  notes:
+  - Stone won narrowly, not overwhelmingly.
+  - References and role fit mattered more than system fluency.
+  - Decision still required; employment does not begin until the offer is accepted.
+- turn: 5
+  phase: Offseason — Coaching Transition / Decision Stage
+  date: '1999-01-15'
+  event: Accepted Philadelphia Eagles Offensive Quality Control offer and entered
+    the building as a first-year QC coach.
+  outcome: hired_began_transition
+  contract_signed:
+    team: Philadelphia Eagles
+    role: Offensive Quality Control
+    salary_usd: 32500
+    contract_years: 1
+    moving_expenses: standard_relocation
+  transition_notes:
+  - Interview Module deactivated upon hire; calendar resumed from the paused date.
+  - Stone entered a true apprenticeship role reporting primarily to Rod Dowhower within
+    Andy Reid's offensive staff.
+  - The WCO terminology gap changed from interview liability to day-one operational
+    problem.
+  state_changes:
+    stress:
+      from: 34
+      to: 31
+    salary:
+      from: 0
+      to: 32500
+    offers_pending:
+      from: 1
+      to: 0
+    employment_status:
+      from: unemployed_offer_pending
+      to: employed
+    interview_module_active:
+      from: true
+      to: false
+    calendar_frozen:
+      from: true
+      to: false
+    job_security:
+      from: null
+      to: 52
+  notes:
+  - Stone accepted without negotiation, prioritizing entry into Reid's staff over
+    a marginal salary increase.
+  - Financially the job is insignificant relative to Stone's annual expenses and net
+    worth, but strategically it is career-defining.
+  - He is now judged on deliverables, chain of command, and WCO learning speed rather
+    than interview posture.
 career_totals:
-  coaching_record: "0-0"
+  coaching_record: 0-0
   career_earnings_from_coaching_usd: 0
-  jobs_held: []
+  jobs_held:
+  - team: Philadelphia Eagles
+    role: Offensive Quality Control
+    level: 0
+    start_date: '1999-01-15'
+    end_date: null
+    status: current
   active_consequences:
-    - "No coaching experience still defines Stone's baseline until he actually starts the job."
-    - "West Coast terminology gap remains live even after winning the offer."
-    - "Hall of Fame status continues to create scrutiny around ego and media attention."
+  - No coaching experience is no longer a hiring barrier; it is now a daily performance
+    risk inside the building.
+  - West Coast terminology gap is the primary immediate obstacle in Stone's first
+    Eagles weeks.
+  - Hall of Fame status still creates scrutiny around ego, hierarchy, and media perception.
+  - Salary is far below Stone's annual expenses, but financial pressure remains low
+    because of accumulated wealth.
