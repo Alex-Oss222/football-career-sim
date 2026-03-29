@@ -1,4 +1,4 @@
-# TURN OUTPUT TEMPLATE
+# COACH 3.0 — TURN OUTPUT TEMPLATE
 
 > Default runtime output for coaching turns.
 > Goal: compact, readable, role-sensitive, under 800 words.
@@ -14,12 +14,14 @@
 - Do **not** repeat static profile material already known from the Character Profile.
 - Do **not** repeat full roster, full staff, full cap table, or full relationship table in the default turn.
 - If a section has no meaningful update, omit it.
-- Narrative should be direct, specific, and natural. No filler. No “AI recap voice.”
+- Narrative should be direct, specific, and natural. No filler. No "AI recap voice."
 - Character effects should appear through **behavior, trust, access, conflict, tone, and opportunity** — not forced instant stat jumps.
 
 ---
 
 ## ROLE-SENSITIVE RULE
+
+The turn output adapts to the character's current role. Each role has a **base focus** and a **role add-on** section that maps directly to the role payload in the State Block. The data model is shared: what the State Block tracks, the turn surfaces. What the State Block does not track, the turn does not invent.
 
 ### If current role is GA / QC
 Focus on:
@@ -83,7 +85,11 @@ Examples:
 
 ## DEFAULT TURN STRUCTURE
 
-### 1. STATE SNAPSHOT
+The turn uses a **base structure** (always present) plus a **role add-on** (one of four, matching the active State Block role payload). Sections that have no meaningful update are omitted.
+
+### BASE SECTIONS
+
+#### 1. STATE SNAPSHOT
 **40-60 words max**
 - Date
 - Phase
@@ -91,17 +97,32 @@ Examples:
 - Team
 - Record or current job-search stage
 - Job security/stress only if relevant
+- Reporting structure (who the character reports to)
 
-### 2. THE WEEK / THE BUILDING
+#### 2. SCHEME & CONTROL
+**30-50 words max**
+Only include if scheme, control level, or delegation changed this turn.
+- Current scheme philosophy
+- Control level
+- Any delegated authority granted or revoked
+
+#### 3. STAFF CHAIN
+**30-50 words max**
+Only include if staff dynamics shifted.
+- Who matters in the chain this turn
+- Trust movement with direct supervisor
+- Staff friction or alignment
+
+#### 4. THE BUILDING
 **80-120 words max**
 One tight scene that tells the reader what this turn felt like.
 This is the atmosphere section.
 Use one concrete observation, one tension point, and one signal of where things are moving.
 
-### 3. WHAT HAPPENED
+#### 5. WHAT HAPPENED
 **140-180 words max**
 The core of the turn.
-What actually happened in Stone’s job this turn:
+What actually happened in the character's job this turn:
 - film assignment
 - interview stage
 - meetings
@@ -115,19 +136,19 @@ Instead cover:
 - one decisive stretch
 - one coaching truth about why it went that way
 
-### 4. FOOTBALL WORK
+#### 6. FOOTBALL WORK
 **100-130 words max**
 Only the football substance that mattered this turn:
 - install progress
 - what the offense/defense/special teams struggled with
-- what assignment Stone handled
-- where he helped
-- where he was out of his depth
+- what assignment the character handled
+- where they helped
+- where they were out of their depth
 
 This is where role matters most.
 A QC turn should feel like support work and learning, not command.
 
-### 5. PEOPLE & POWER
+#### 7. PEOPLE & POWER
 **90-120 words max**
 Only the human and political shifts that matter now:
 - trust movement with supervisor
@@ -139,7 +160,7 @@ Only the human and political shifts that matter now:
 No big relationship table.
 Just what changed and why it matters.
 
-### 6. WHAT CHANGED
+#### 8. WHAT CHANGED
 **60-90 words max**
 Compact numeric or state summary only.
 Use bullets.
@@ -151,7 +172,7 @@ Include only real changes such as:
 - applications advanced / rejected
 - playbook familiarity improved
 
-### 7. NEXT DECISION(S)
+#### 9. NEXT DECISION(S)
 **100-140 words max**
 Only the decisions that actually matter before the next turn.
 Usually:
@@ -161,6 +182,61 @@ Usually:
 
 Each choice should be concrete.
 Do not bury the user in five layers of menus.
+
+---
+
+### ROLE ADD-ON BLOCKS
+
+One of these is appended based on Current Role. Each maps directly to its State Block role payload. Include only the fields that changed or matter this turn — not the full payload dump.
+
+#### GA / QC ADD-ON
+
+Include when relevant:
+- Supervisor / reporting chain update
+- Current assignment status (new, completed, ongoing)
+- System familiarity movement (+/- with number)
+- Building knowledge movement (+/- with number)
+- Staff trust footprint movement (+/- with number)
+- Access level changes (invited to new meetings, new film access, practice authority shift)
+- Promotion readiness status if close to a threshold
+
+Do not include: roster data, scheme control notes, unit performance stats, media exposure.
+
+#### POSITION COACH ADD-ON
+
+Include when relevant:
+- Room snapshot: starters and key rotation players with this month/game's stats
+- Developmental player note (one player, one sentence)
+- Room health change
+- Room trust movement with specific players
+- Teaching focus update
+- Room priorities shift
+- Room politics (coordinator friction, player complaints, positional competition)
+
+Do not include: full team roster, other position groups, play-calling data, organizational pressure.
+
+#### COORDINATOR ADD-ON
+
+Include when relevant:
+- Unit performance snapshot (points, yards, efficiency, third down, red zone, turnovers — compact line)
+- Key unit player stat lines (2-4 players, one line each)
+- Play-calling access status or change
+- Adjustment grade if a game occurred
+- HC alignment movement (+/-)
+- Media exposure level if it shifted
+- Call-influence notes if delegation changed
+
+Do not include: other unit's stats, full roster, recruiting, organizational finance.
+
+#### HEAD COACH ADD-ON
+
+Include when relevant:
+- Team snapshot (OVR, record, expectation band position, playoff status)
+- Coordinator trust and status (one line each, OC/DC/STC)
+- Roster snapshot: strongest/weakest unit, key injuries
+- Organization pressure: owner/AD/GM patience, booster/media summary
+- Full control vs delegated areas if changed
+- Recruiting class rank (college) or cap space (NFL) if relevant
 
 ---
 
@@ -177,12 +253,13 @@ These belong in `Audit turn`, `Full report`, or `Save` only:
 - full injury report unless directly relevant
 - quarter-by-quarter game script
 - repeated coach profile / ratings table every turn
+- full role payload data dump (only changes belong in the default turn)
 
 ---
 
 ## GAME WEEK COMPRESSION RULE
 
-If a game occurs, compress it into this format inside Sections 3 and 4:
+If a game occurs, compress it into this format inside Sections 5 and 6:
 
 - **Result:** one line
 - **Why it turned:** one short paragraph
@@ -194,13 +271,27 @@ Detailed stats are for `Full report`.
 
 ---
 
+## MONTHLY TURN COMPRESSION RULE
+
+For GA / QC / Position Coach roles operating on monthly turns (per Master Engine §5.2):
+
+- Summarize 3–5 meaningful work blocks within the month.
+- Aggregate game outcomes (e.g., "Team went 3-1 in October").
+- Show stats as month-to-date or season-to-date, not week-by-week.
+- Surface only one or two standout weekly incidents in prose.
+- The Building section covers the month's tone, not a single week.
+- What Happened covers the month's arc, not a single event.
+- Do not write with weekly granularity when the clock is monthly.
+
+---
+
 ## JOB SEARCH / INTERVIEW RULE
 
 If the Interview Module is active, the turn centers on the interview process.
 Default coaching sections still apply, but adapt them:
 
 - State Snapshot = application stage / active jobs
-- The Week / The Building = travel, interview room, hiring contact vibe
+- The Building = travel, interview room, hiring contact vibe
 - What Happened = cover letter, phone interview, campus stage, callback, rejection, negotiation
 - Football Work = only what was discussed or tested in the interview
 - People & Power = who liked you, who hesitated, who now matters
@@ -229,9 +320,9 @@ The turn should read like a sharp football sim update written by someone who und
 **January 15, 1999 — Offseason / Coaching Carousel**
 Stone is 33, unemployed, and chasing entry-level work for the first time in his life. No team yet. Stress is manageable. The Eagles QC job is open.
 
-The week felt smaller than his playing career and heavier than he expected. He is not choosing plays or talking to media. He is trying to get in the room. The important shift came in how he framed that to himself: not “starting at the bottom,” but starting at the beginning.
+The week felt smaller than his playing career and heavier than he expected. He is not choosing plays or talking to media. He is trying to get in the room. The important shift came in how he framed that to himself: not "starting at the bottom," but starting at the beginning.
 
-His focus this turn was the Eagles. Reid’s profile, staff makeup, and system demands clarified the gap. Stone fits the culture better than the résumé. Teaching helps him. Humility helps him more. The real problem is not football intelligence; it is whether Reid believes a Hall of Fame player can do QC work without turning the room awkward.
+His focus this turn was the Eagles. Reid's profile, staff makeup, and system demands clarified the gap. Stone fits the culture better than the résumé. Teaching helps him. Humility helps him more. The real problem is not football intelligence; it is whether Reid believes a Hall of Fame player can do QC work without turning the room awkward.
 
 Football-wise, the biggest task is obvious now: learn enough WCO language to sound serious without pretending mastery. Stone does not need to sell himself as a future TE coach. He needs to sound like a future good assistant.
 
@@ -242,6 +333,12 @@ People matter more than credentials here. Reid is the ultimate yes, but Dowhower
 - Job-fit confidence: up
 - Awareness of WCO gap: up sharply
 - Application framing clarified
+
+**QC add-on**
+- System Familiarity: 12/100 (WCO base concepts only)
+- Building Knowledge: 0/100 (not yet inside)
+- Staff Trust Footprint: 0/100 (not yet inside)
+- Access: none — external applicant
 
 **Next decisions**
 1. Apply to Eagles Offensive QC now or send one fallback application first.
@@ -254,3 +351,4 @@ People matter more than credentials here. Reid is the ultimate yes, but Dowhower
 
 Use this template for the default runtime turn.
 Keep `Audit turn`, `Full report`, and `Save` as separate output modes.
+The role add-on block in the turn output must always reflect the same data model as the active role payload in the State Block. If the State Block tracks it, the turn can surface it. If the State Block does not track it, the turn does not invent it.
