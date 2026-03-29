@@ -1,206 +1,113 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '2000-01-03'
-  career_turn: 11
-  sim_phase: Season End — Immediate Aftermath
-  source_note: Assistant-generated merge-ready update because the original repo file
-    was not directly editable in this environment.
+  date: '2000-01-14'
+  career_turn: 12
+  sim_phase: Season End — Exit Meetings / Offseason Evaluation
+  source_note: Assistant-generated merge-ready update because the original repo file was not directly editable in this environment.
 relationships:
-- name: Don Coryell
-  role: Former HC, Chargers
-  score: 80
-  previous_score: 80
-  delta_this_turn: 0
-  trend: stable
-  status: strong_reference
-  notes:
-  - Strong reference history remains part of Stone's professional credibility.
-  - No new direct interaction this stretch.
-  delta: 0
-- name: Bobby Ross
-  role: Former HC, Chargers
-  score: 75
-  previous_score: 75
-  delta_this_turn: 0
-  trend: stable
-  status: strong_reference
-  notes:
-  - Strong character/work-habit reference remains intact.
-  - No new direct interaction this stretch.
-  delta: 0
-- name: Chargers Position Coaches
-  role: Former colleagues
-  score: 65
-  previous_score: 65
-  delta_this_turn: 0
-  trend: stable
-  status: moderate_network
-  notes:
-  - Background network remains available but did not drive late-season Eagles outcomes.
-  delta: 0
-- name: University of Miami Connections
-  role: College network
-  score: 55
-  previous_score: 55
-  delta_this_turn: 0
-  trend: stable
-  status: dormant
-  notes:
-  - No direct impact on the 1999 Eagles regular-season stretch.
-  delta: 0
-- name: Andy Reid
-  role: Head Coach, Philadelphia Eagles
-  score: 69
-  previous_score: 60
-  delta_this_turn: 9
-  trend: rising
-  status: trusted_qc_infrastructure
-  notes:
-  - Stone finished the year as a dependable part of the offensive weekly machine,
-    not just a novelty ex-player hire.
-  - Reid now trusts Stone to stay low-ego, understand the workflow, and reduce friction
-    during game-week prep.
-  delta: 9
-- name: Rod Dowhower
-  role: Offensive Coordinator, Philadelphia Eagles
-  score: 91
-  previous_score: 86
-  delta_this_turn: 5
-  trend: rising
-  status: near_core_workflow_support
-  notes:
-  - Dowhower views Stone as a highly reliable first-pass offensive support coach who
-    can anticipate format, timing, and correction needs.
-  - The relationship is strong because Stone learned how Dowhower wants information
-    packaged and stopped making expensive mistakes.
-  delta: 5
-- name: Brad Childress
-  role: Quarterbacks Coach, Philadelphia Eagles
-  score: 58
-  previous_score: 45
-  delta_this_turn: 13
-  trend: rising
-  status: trusted_qb_support_resource
-  notes:
-  - McNabb/Pederson weekly support work made Stone materially more useful to Childress
-    down the stretch.
-  - Stone is still outside decision authority, but his quarterback-facing cut-ups
-    and translation work became genuinely trusted.
-  delta: 13
-- name: Pat Shurmur
-  role: Tight Ends Coach, Philadelphia Eagles
-  score: 61
-  previous_score: 51
-  delta_this_turn: 10
-  trend: rising
-  status: solid_te_support_relationship
-  notes:
-  - Stone finished the year as a useful TE/edge/run-game support voice without confusing
-    room authority.
-  - Shurmur is comfortable with Stone because the former-player perspective now arrives
-    as useful prep detail rather than ego.
-  delta: 10
-relationship_events:
-- turn: 7
-  date: '1999-02-05'
-  event: Advanced to one week before the combine/free agency while continuing Eagles
-    QC routine.
-  effects:
+  - name: Don Coryell
+    role: Former HC, Chargers
+    score: 80
+    previous_score: 80
+    delta_this_turn: 0
+    trend: stable
+    status: strong_reference
+    notes:
+      - Strong legacy reference remains intact.
+      - No direct new offseason interaction during Eagles exit-meeting window.
+    delta: 0
+  - name: Bobby Ross
+    role: Former HC, Chargers
+    score: 75
+    previous_score: 75
+    delta_this_turn: 0
+    trend: stable
+    status: strong_reference
+    notes:
+      - Strong character and work-habit reference remains intact.
+      - No direct new offseason interaction during Eagles exit-meeting window.
+    delta: 0
+  - name: Chargers Position Coaches
+    role: Former colleagues
+    score: 65
+    previous_score: 65
+    delta_this_turn: 0
+    trend: stable
+    status: moderate_network
+    notes:
+      - Background network remains available but did not materially affect the Eagles exit-meeting phase.
+    delta: 0
+  - name: University of Miami Connections
+    role: College network
+    score: 55
+    previous_score: 55
+    delta_this_turn: 0
+    trend: stable
+    status: dormant
+    notes:
+      - No direct impact during the Eagles season-end evaluation window.
+    delta: 0
   - name: Andy Reid
-    delta: 4
-    note: Reliability and restraint improved weekly trust.
-  - name: Rod Dowhower
-    delta: 9
-    note: Formatting, timing, and terminology discipline improved through repeated
-      work cycles.
-  - name: Brad Childress
-    delta: 4
-    note: Cleaner details and less noise improved coworker view.
-  - name: Pat Shurmur
-    delta: 5
-    note: Steady TE support within hierarchy improved comfort.
-- turn: 8
-  date: '1999-07-08'
-  event: Advanced from pre-combine through draft, OTAs, minicamp, and offseason break
-    to one week before training camp while continuing the Eagles QC routine.
-  effects:
-  - name: Andy Reid
-    delta: 7
-    note: Months of low-ego reliability improved baseline head-coach trust.
-  - name: Rod Dowhower
+    role: Head Coach, Philadelphia Eagles
+    score: 80
+    previous_score: 69
+    delta_this_turn: 11
+    trend: rising
+    status: trusted_year_two_holdover
+    notes:
+      - Reid's exit-meeting view is that Stone proved he belongs in the building as real low-level offensive infrastructure, not as a ceremonial ex-player hire.
+      - Reid wants more initiative and sharper visible intellectual curiosity in year two so Stone does not become merely competent and invisible.
+      - Reid supports Stone's return for 2000 and sees him as a viable internal development piece under the Eagles offensive tree.
     delta: 11
-    note: Stone became more useful on playbook support, charting, revisions, and terminology
-      translation.
-  - name: Brad Childress
-    delta: 7
-    note: Cleaner system language and more precise support work improved coworker
-      confidence.
-  - name: Pat Shurmur
-    delta: 12
-    note: TE-room support and playbook translation became a real asset when delivered
-      through the proper chain of command.
-- turn: 9
-  date: '1999-08-30'
-  event: Advanced through training camp and the first three preseason weeks to preseason
-    Week 4, one week before the regular season opener, while continuing the Eagles
-    QC routine and system study.
-  effects:
-  - name: Andy Reid
-    delta: 5
-    note: A full camp of dependable, low-ego work improved baseline trust.
   - name: Rod Dowhower
-    delta: 7
-    note: Stone became more useful on install support, revisions, cut-ups, and camp
-      workflow.
+    role: Offensive Coordinator, Philadelphia Eagles
+    score: 95
+    previous_score: 91
+    delta_this_turn: 4
+    trend: rising
+    status: primary_mentor_and_sponsor
+    notes:
+      - Dowhower gave Stone the strongest internal endorsement during exit meetings.
+      - Stone is now trusted to handle more first-pass offensive support work and to enter the 2000 offseason as a dependable direct-report QC.
+      - Dowhower is the key superior recommendation behind Stone's future promotion viability.
+    delta: 4
   - name: Brad Childress
-    delta: 6
-    note: Rookie-QB support work and cleaner terminology increased confidence in Stone's
-      usefulness.
-  - name: Pat Shurmur
-    delta: 5
-    note: TE/edge and player-perspective help stayed useful without becoming an authority
-      problem.
-- turn: 10
-  date: '1999-10-25'
-  event: Advanced from preseason Week 4 through final cutdown and the first seven
-    regular-season weeks to Week 8 while continuing the Eagles QC routine and adapting
-    to the weekly game-planning rhythm.
-  effects:
-  - name: Andy Reid
+    role: Quarterbacks Coach, Philadelphia Eagles
+    score: 65
+    previous_score: 58
+    delta_this_turn: 7
+    trend: rising
+    status: useful_qb_support_link
+    notes:
+      - Childress now views Stone as materially helpful in quarterback prep translation, especially around coverage recognition and packet clarity.
+      - Remaining growth area is speed and precision when the weekly workload compresses.
     delta: 7
-    note: Regular-season reliability, restraint, and anticipation improved head-coach
-      trust.
-  - name: Rod Dowhower
-    delta: 7
-    note: Stone became a trusted first-pass offensive support worker at weekly speed.
-  - name: Brad Childress
-    delta: 10
-    note: Quarterback prep, rookie packet work, and terminology translation made Stone
-      materially more useful.
   - name: Pat Shurmur
+    role: Tight Ends Coach, Philadelphia Eagles
+    score: 68
+    previous_score: 61
+    delta_this_turn: 7
+    trend: rising
+    status: positive_hierarchy_safe_relationship
+    notes:
+      - Shurmur is comfortable with Stone's former-player perspective because it now arrives as subordinate support rather than room-threatening authority.
+      - Stone's TE and edge-structure help is viewed as useful enough to matter without blurring ownership of the room.
     delta: 7
-    note: TE and edge-structure support stayed helpful and hierarchy-safe through
-      real game weeks.
-- turn: 11
-  date: '2000-01-03'
-  event: Advanced from Week 8 through the remainder of the 1999 regular season to
-    the immediate aftermath of the final game while continuing the Eagles QC routine
-    and deepening functional command of the offensive weekly workflow.
-  effects:
-  - name: Andy Reid
-    delta: 9
-    note: Stone finished the year as reliable offensive infrastructure who could be
-      trusted to handle his slice of the weekly process.
-  - name: Rod Dowhower
-    delta: 5
-    note: Late-season game-planning, corrections, and packaging work further cemented
-      Stone as a trusted direct-report QC.
-  - name: Brad Childress
-    delta: 13
-    note: Quarterback support work intensified as the season evolved, making Stone
-      much more useful in Childress’s world.
-  - name: Pat Shurmur
-    delta: 10
-    note: TE/edge translation and low-ego support improved the working relationship
-      through the grind of the season.
+relationship_events:
+  - turn: 12
+    date: '2000-01-14'
+    event: Resolved the season_end node through exit meetings and offseason evaluation after the Eagles finished 8-8 in Stone's first coaching year and retained him on a new one-year QC deal.
+    effects:
+      - name: Andy Reid
+        delta: 11
+        note: Strong season-end evaluation and a clear year-two retention decision materially improved trust.
+      - name: Rod Dowhower
+        delta: 4
+        note: Dowhower's endorsement turned Stone from a trusted worker into a real developmental holdover.
+      - name: Brad Childress
+        delta: 7
+        note: Quarterback-support usefulness was explicitly recognized in exit evaluation.
+      - name: Pat Shurmur
+        delta: 7
+        note: The hierarchy-safe TE support relationship was affirmed as a positive offseason asset.
