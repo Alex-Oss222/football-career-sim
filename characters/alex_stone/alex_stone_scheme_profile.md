@@ -46,7 +46,7 @@ FROM PLAYING CAREER:
 
 ```
   Air Coryell (from playing):        7/10 — knows concepts as a player
-  West Coast:                        3/10 — played against it, never ran it
+  West Coast:                        6/10 — played against it, played in it
   Erhardt-Perkins:                   2/10 — aware it exists
   Spread:                            2/10 — college concept, minimal NFL use in '98
   Zone Run Schemes:                  4/10 — blocked in zone schemes
@@ -58,7 +58,7 @@ FROM PLAYING CAREER:
 > **Post-hire patch:** Once Stone joins a team, add a `SYSTEM LEARNING CONTEXT` subsection
 > here reflecting the specific system he's learning, his learning milestones, and his
 > current proficiency. For Eagles: reference `eagles_wco_install_basics_1999.md` and update
-> WCO familiarity rating as the sim progresses (3/10 → higher as Stone masters terminology).
+> WCO familiarity rating as the sim progresses (6/10 → higher as Stone masters terminology).
 
 ### Primary Job
 
