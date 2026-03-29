@@ -225,6 +225,10 @@ Access Level:
   Film Access: [What cutups / who assigns]
 Promotion Readiness:
   [What is being evaluated next — e.g., "Needs 70+ system familiarity and supervisor trust 65+ for position coach consideration"]
+season_evaluation:
+  last_score: [X]
+  trajectory: [up/stable/down]
+  outcome: [retained/promoted/etc]
 ```
 
 ### 3.3 Role Payload: Position Coach
@@ -255,6 +259,10 @@ Room Trust:
   [Player]: [X]/100
   [Player]: [X]/100
   [Player]: [X]/100
+season_evaluation:
+  last_score: [X]
+  trajectory: [up/stable/down]
+  outcome: [retained/promoted/etc]
 ```
 
 ### 3.4 Role Payload: Coordinator
@@ -285,6 +293,10 @@ HC Alignment:
   [X]/100
 Media Exposure:
   [Low / Moderate / High]
+season_evaluation:
+  last_score: [X]
+  trajectory: [up/stable/down]
+  outcome: [retained/promoted/etc]
 ```
 
 ### 3.5 Role Payload: Head Coach
@@ -311,6 +323,10 @@ Full Control Areas:
   [List — e.g., "Scheme direction, staff hires, roster cuts, game management, media"]
 Delegated Areas:
   [List — e.g., "Play-calling to OC, defensive scheme detail to DC"]
+season_evaluation:
+  last_score: [X]
+  trajectory: [up/stable/down]
+  outcome: [retained/promoted/etc]
 ```
 
 ### 3.6 Closing Tag
