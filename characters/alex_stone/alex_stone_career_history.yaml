@@ -1,21 +1,29 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '1999-08-30'
-  career_turn: 9
-  sim_phase: Preseason Week 4 — One Week Before Regular Season
-  source_note: Assistant-generated merge-ready update because the original repo file was not directly editable in this environment.
+  date: '1999-10-25'
+  career_turn: 10
+  sim_phase: Regular Season Week 8 — Game Prep
+  source_note: Assistant-generated merge-ready update because the original repo file
+    was not directly editable in this environment.
 career_history:
 - turn: 7
   date_range: 1999-01-16 to 1999-02-05
   team: Philadelphia Eagles
   role: Offensive Quality Control
   phase: Pre-Combine / Pre-Free Agency Build-Up
-  summary: Stone advanced to one week before the NFL Combine and veteran free agency while continuing his daily QC routine. He arrived early, stayed inside the chain of command, completed repetitive film/chart/cut-up work, improved terminology and formatting discipline, and became more trusted by Dowhower without changing his role authority.
+  summary: Stone advanced to one week before the NFL Combine and veteran free agency
+    while continuing his daily QC routine. He arrived early, stayed inside the chain
+    of command, completed repetitive film/chart/cut-up work, improved terminology
+    and formatting discipline, and became more trusted by Dowhower without changing
+    his role authority.
   results:
-  - Became a more reliable offensive QC support coach during several weeks of staff build-up work.
-  - Improved first-pass film prep, chart organization, overnight revisions, and WCO terminology familiarity.
-  - Reached February 5, 1999 — one week before the combine and free agency open on February 12.
+  - Became a more reliable offensive QC support coach during several weeks of staff
+    build-up work.
+  - Improved first-pass film prep, chart organization, overnight revisions, and WCO
+    terminology familiarity.
+  - Reached February 5, 1999 — one week before the combine and free agency open on
+    February 12.
   state_changes:
     stress:
       from: 36
@@ -40,11 +48,18 @@ career_history:
   team: Philadelphia Eagles
   role: Offensive Quality Control
   phase: One Week Before Training Camp
-  summary: Stone advanced through the combine, free agency, pro days, the draft, UDFA signings, OTAs, minicamp, and the early offseason break. He stayed on his routine, learned more of the Eagles' West Coast terminology, helped translate playbook concepts from player language into usable QC support work, and became a much more trusted low-level offensive assistant.
+  summary: Stone advanced through the combine, free agency, pro days, the draft, UDFA
+    signings, OTAs, minicamp, and the early offseason break. He stayed on his routine,
+    learned more of the Eagles' West Coast terminology, helped translate playbook
+    concepts from player language into usable QC support work, and became a much more
+    trusted low-level offensive assistant.
   results:
-  - Supported combine and draft-prep work from an offensive/TE perspective without overstepping his role.
-  - Adjusted more naturally to Eagles formatting, terminology, and playbook organization during OTAs and minicamp.
-  - Used his former-player experience to translate route concepts, landmarks, and teaching points into better cut-ups and support packets.
+  - Supported combine and draft-prep work from an offensive/TE perspective without
+    overstepping his role.
+  - Adjusted more naturally to Eagles formatting, terminology, and playbook organization
+    during OTAs and minicamp.
+  - Used his former-player experience to translate route concepts, landmarks, and
+    teaching points into better cut-ups and support packets.
   - Arrived at July 8, 1999 — one week before training camp opens on July 15.
   draft_headliners_engine_resolved:
   - Donovan McNabb — QB, Syracuse
@@ -94,12 +109,21 @@ career_history:
   team: Philadelphia Eagles
   role: Offensive Quality Control
   phase: Preseason Week 4 — One Week Before Regular Season
-  summary: Stone advanced through training camp, the first three preseason games, and the camp-to-preseason transition while continuing his QC routine. He learned the staff hierarchy more concretely, improved his grasp of Eagles terminology and playbook structure, used his former-player eye to translate route, leverage, and coverage details into better support work, and entered the final preseason week as a trusted low-level offensive assistant.
+  summary: Stone advanced through training camp, the first three preseason games,
+    and the camp-to-preseason transition while continuing his QC routine. He learned
+    the staff hierarchy more concretely, improved his grasp of Eagles terminology
+    and playbook structure, used his former-player eye to translate route, leverage,
+    and coverage details into better support work, and entered the final preseason
+    week as a trusted low-level offensive assistant.
   results:
-  - Survived his first NFL training camp as a coach without creating hierarchy friction or overstepping his role.
-  - Improved at translating the Eagles playbook from player recognition into usable QC deliverables for Dowhower, Childress, and Shurmur.
-  - Supported rookie integration, especially for Donovan McNabb and the young offensive skill group, through cleaner install notes and cut-ups.
-  - Reached August 30, 1999 — preseason Week 4, one week before regular-season Week 1 begins on September 6.
+  - Survived his first NFL training camp as a coach without creating hierarchy friction
+    or overstepping his role.
+  - Improved at translating the Eagles playbook from player recognition into usable
+    QC deliverables for Dowhower, Childress, and Shurmur.
+  - Supported rookie integration, especially for Donovan McNabb and the young offensive
+    skill group, through cleaner install notes and cut-ups.
+  - Reached August 30, 1999 — preseason Week 4, one week before regular-season Week
+    1 begins on September 6.
   state_changes:
     stress:
       from: 49
@@ -147,3 +171,94 @@ career_history:
     game_1_vs_baltimore_ravens: L 13-17
     game_2_at_new_york_jets: W 20-16
     game_3_at_minnesota_vikings: L 10-24
+- turn: 10
+  date_range: 1999-08-30 to 1999-10-25
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Regular Season Week 8 — Game Prep
+  summary: Stone advanced from the final preseason week through roster cutdown and
+    the first seven regular-season weeks to Week 8. He kept his QC routine, handled
+    the human side of cutdown, adapted to the weekly offensive game-planning cycle,
+    learned the Reid/Dowhower/Childress/Shurmur coaching tree more concretely, and
+    turned more of his former-player recognition into fast, usable offensive support
+    work.
+  results:
+  - Helped finish preseason and supported final cutdown work without becoming a hierarchy
+    problem during a stressful roster week.
+  - 'Adapted to the regular-season weekly rhythm: early-down prep, third-down work,
+    red-zone packets, situational cut-ups, and late-week corrections.'
+  - Learned the offensive language well enough to think faster in Eagles terms rather
+    than translating every concept from scratch.
+  - Became more useful to Childress and Dowhower through quarterback-support packets
+    tied to Doug Pederson/McNabb weekly prep.
+  - Reached October 25, 1999 — Regular Season Week 8 vs. New York Giants at home.
+  engine_resolved_results:
+    preseason_week_4_vs_cleveland_browns: W 17-13
+    final_preseason_record: 2-2
+    roster_cutdown_note: Doug Pederson opens the season as starting QB; Donovan McNabb
+      remains heavily integrated into developmental weekly prep.
+    regular_season_through_week_7:
+      week_1_vs_arizona_cardinals: W 20-13
+      week_2_vs_tampa_bay_buccaneers: L 10-19
+      week_3_at_buffalo_bills: L 17-24
+      week_4_at_new_york_giants: L 16-27
+      week_5_vs_dallas_cowboys: W 24-21
+      week_6_at_chicago_bears: W 23-14
+      week_7_at_miami_dolphins: L 13-20
+      record_entering_week_8: 3-4
+  ongoing_draft_class_note:
+  - Donovan McNabb — QB, Syracuse
+  - Barry Gardner — LB, Northwestern
+  - John Welbourn — OT, California
+  - Na Brown — WR, North Carolina
+  state_changes:
+    stress:
+      from: 57
+      to: 67
+    job_security:
+      from: 73
+      to: 80
+    andy_reid:
+      from: 53
+      to: 60
+    rod_dowhower:
+      from: 79
+      to: 86
+    brad_childress:
+      from: 35
+      to: 45
+    pat_shurmur:
+      from: 44
+      to: 51
+  calendar_state:
+    calendar_file: teams/philadelphia_eagles/philadelphia_eagles_calendar_1999.yaml
+    current_node: reg_wk08
+    previous_node: reg_wk07
+    next_node: reg_wk09
+    completed_nodes:
+    - reid_hired
+    - staff_build_01
+    - staff_build_02
+    - fa_opens
+    - combine_01
+    - fa_march
+    - pre_draft_april
+    - draft_01
+    - draft_02
+    - post_draft
+    - ota_01
+    - minicamp_01
+    - offseason_break
+    - camp_01
+    - pre_wk1
+    - pre_wk2
+    - pre_wk3
+    - pre_wk4
+    - roster_cutdown
+    - reg_wk01
+    - reg_wk02
+    - reg_wk03
+    - reg_wk04
+    - reg_wk05
+    - reg_wk06
+    - reg_wk07
