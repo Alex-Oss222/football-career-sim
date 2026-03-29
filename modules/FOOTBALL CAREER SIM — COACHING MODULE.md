@@ -824,6 +824,28 @@ Consideration requires:
 "Rival coaches"             — See your coaching rivals and their status
 ```
 
+### OFFSEASON ROLE OUTCOME RULE
+
+A coach cannot:
+- self-promote
+- skip levels
+- retain a job automatically
+
+All offseason outcomes must be:
+- evaluated
+- justified
+- tied to performance + trust + context
+
+Promotion requires:
+- evaluation score ≥ 75
+- supervisor support ≥ 65
+- role vacancy OR organizational need
+
+Retention requires:
+- evaluation score ≥ 60
+
+Below 60:
+- job becomes unstable or lost
 ---
 
 *Coaching Module — Complete. References Master Engine for realism rules, turn processing, randomness, and output modes. Interview Module loads separately when job searching.*
