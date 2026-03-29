@@ -125,19 +125,67 @@ The band is a win-loss range (e.g., 7-10 wins to 4-7 wins). The team's actual se
 
 ## 5. TURN STRUCTURE
 
-### 5.1 Phase-Variable Turn Length
+### 5.1 Role-Variable Turn Length
 
-| Phase | Turn Length | Applies To |
-|---|---|---|
-| Offseason (post-season through spring) | 2 weeks | All levels |
-| Summer / Camp | 2 weeks | All levels |
-| Regular Season | 1 week | All levels |
-| Playoffs / Postseason | 1 game | All levels |
-| Combine / Pro Day / Draft Week | Event-based | College → NFL transition |
-| Job Search / Interview | Event-based | Coaching module |
-| Bye Week | 1 week (recovery/development focus) | NFL, College |
+Turn length depends on BOTH phase and current role.
 
-### 5.2 Turn Processing Order
+#### A. PLAYER CAREER
+
+| Phase | Turn Length |
+|---|---|
+| Offseason (post-season through spring) | 2 weeks |
+| Summer / Camp | 2 weeks |
+| Regular Season | 1 week |
+| Playoffs / Postseason | 1 game |
+| Combine / Pro Day / Draft Week | Event-based |
+| Bye Week | 1 week (recovery/development focus) |
+
+#### B. COACHING CAREER — ENTRY & ROOM LEVEL
+Applies to: GA / QC / Position Coach
+
+| Phase | Turn Length |
+|---|---|
+| Staff Building / Hiring Cycle | Event-based |
+| Offseason / Spring / Summer | 1 month |
+| Camp | 1 month |
+| Regular Season | 1 month |
+| Playoffs / Bowl Prep / Postseason | 1 round / 1 game block |
+| Emergency / high-stakes situation | Zoom-in turn if triggered |
+
+**Design rule:**
+These roles advance in larger time blocks because their authority is limited and their work is repetitive by week. The engine summarizes the month through assignments, learning, room development, trust shifts, player progress, and any standout events.
+
+The engine may temporarily zoom in to a shorter turn when:
+- A promotion race intensifies
+- A firing/hiring event happens
+- A conflict erupts
+- A major game creates direct pressure on the character
+- The user explicitly requests a closer view
+
+#### C. COACHING CAREER — UNIT / ORGANIZATION LEVEL
+Applies to: Coordinator / Head Coach
+
+| Phase | Turn Length |
+|---|---|
+| Offseason | 2 weeks |
+| Camp | 2 weeks |
+| Regular Season | 1 week |
+| Playoffs | 1 game |
+| Job Search / Interview | Event-based |
+
+**Design rule:**
+These roles stay on normal football time because they own weekly planning, game adjustments, and public accountability.
+
+### 5.2 Role Compression Rule
+
+For GA / QC / Position Coach monthly turns:
+- The engine summarizes 3–5 meaningful work blocks within the month.
+- Game outcomes are aggregated, not narrated week-by-week.
+- Player stats shown for the role must be month-to-date or season-to-date.
+- Only one or two standout weekly incidents are surfaced in prose.
+- The engine does not write with weekly granularity when the clock is monthly.
+
+### 5.3 Turn Processing Order
 Every turn is processed in this order, regardless of module:
 
 ```
@@ -154,7 +202,7 @@ Every turn is processed in this order, regardless of module:
 
 **Critical rule:** Step 8 (Narrative) must never influence Steps 1–7 (Mechanics). The story follows the math. The math does not follow the story.
 
-### 5.3 Turn Counter
+### 5.4 Turn Counter
 ```
 Career Turn: Cumulative count from simulation start. Never resets.
 Season Turn: Resets each year. Count within current season.
@@ -314,7 +362,7 @@ Only relevant modules are active at any time:
 ```
 
 ### Module-Specific Commands
-Defined within each module document. The Master Engine does not restrict what commands a module can define, but all module commands must respect the turn processing order (§5.2) and realism rules (§2).
+Defined within each module document. The Master Engine does not restrict what commands a module can define, but all module commands must respect the turn processing order (§5.3) and realism rules (§2).
 
 ---
 
@@ -351,4 +399,45 @@ These override everything else in the simulation:
 
 ---
 
-*Master Engine — Complete. Awaiting module drafts: Player Module, Coaching Module, Interview Module, State Block.*
+## 12A. ROLE AUTHORITY & CHAIN OF COMMAND
+
+The character acts only within the authority of the current role unless temporary or permanent extra authority is explicitly granted in the State Block.
+
+### Authority Bands
+
+| Role | Authority Scope |
+|---|---|
+| GA / QC | Support work, film, scout team, errands, learning, internal observations |
+| Position Coach | Room teaching, drills, room evaluation, player development, limited input upward |
+| Coordinator | Unit installation, game plan, adjustment recommendations, play-calling if assigned |
+| Head Coach | Full staff direction, roster authority within org structure, public accountability |
+
+### Chain of Command
+The engine must track:
+- Who the character reports to
+- Whose system the character is serving
+- Whether the character has delegated authority beyond the base role
+
+### Hard Boundary Rule
+The character does not:
+- Make decisions above role level
+- Speak with authority above role level
+- Receive media/platform power above role level
+- Change scheme above role level
+
+...unless the State Block explicitly says extra authority has been granted.
+
+### Delegated Authority Rule
+If extra authority is granted, it must appear in the State Block under:
+
+```
+Delegated Authority: [specific area]
+Source: [who granted it]
+Duration: [turn-limited / ongoing]
+```
+
+This field is blank by default. Extra authority is the exception, not the norm.
+
+---
+
+*Master Engine — Complete. Governs Player Module, Coaching Module, Interview Module, and State Block.*
