@@ -1,168 +1,129 @@
 meta:
-  character: Alex Stone
-  file_purpose: Permanent career history (append-only log)
-  update_rule: >
-    Append new entries for major career events only.
-    Do not overwrite past entries except for corrections.
-  created: 1999-01-15
-  last_updated: 1999-01-15
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: "1999-01-15"
+  career_turn: 4
+  source_note: "Assistant-generated merge-ready update because the original repo file was not directly editable in this environment."
 
-career_summary:
-  current_phase: Coaching
-  current_role: Unemployed Coach Candidate
-  current_level: 0
-  current_team: None
-  reports_to: None
-  delegated_authority: None
-  career_start_type: Coach-first
-  first_recorded_event: 1999-01-15
-  latest_recorded_event: 1999-01-15
-
-history:
-
-  - id: stone_hist_0001
-    date: 1999-01-15
-    category: career_start
-    event: Entered coaching carousel
-    role: Unemployed Coach Candidate
-    level: 0
-    team: None
-    reports_to: None
-    source_context: Coach-first start
-    significance: major
-
-    summary: >
-      Stone begins his coaching career by entering the January 1999 coaching
-      market with no prior coaching experience, targeting entry-level NFL roles
-      such as Offensive Quality Control.
-
-    consequences:
-      immediate:
-        - Interview Module may activate
-        - Only Level 0 roles are realistically available
-        - Must prove coaching viability from zero experience
-      long_term:
-        - First job determines initial coaching tree and system exposure
-        - Early reputation will define future opportunities
-
-    tags: [coaching, entry_point, carousel]
-
-  - id: stone_hist_0002
-    date: 1999-01-15
-    category: application
-    event: Targeted Philadelphia Eagles Offensive QC role
-    role: Offensive Quality Control Applicant
-    level: 0
+current_status:
+  employment_status: unemployed_offer_pending
+  current_role: "Unemployed (Philadelphia Eagles Offensive QC offer pending)"
+  coaching_level: 0
+  team: null
+  active_offer:
     team: Philadelphia Eagles
-    reports_to_if_hired: Rod Dowhower
-    source_context: 1999 NFL coaching cycle
-    significance: major
+    role: Offensive Quality Control
+    side_of_ball: offense
+    offer_status: pending
+    negotiation_status: not_started
+    salary_offer_usd: 32500
+    contract_years: 1
+    bonuses: []
+    moving_expenses: standard_relocation
+    next_decision: accept_decline_or_negotiate
+  interview_module:
+    active: true
+    calendar_frozen: true
+    stage: 5
+    next_event: "Decision and transition"
 
-    summary: >
-      Stone identifies the Eagles QC role under Andy Reid as the optimal entry
-      point due to philosophical alignment, teaching emphasis, and long-term
-      system value despite a steeper learning curve.
+turn_history:
+  - turn: 1
+    phase: "Offseason — Coaching Carousel / Interview Stage 1"
+    date: "1999-01-15"
+    event: "Applied to Philadelphia Eagles for Offensive Quality Control."
+    outcome: advanced_to_phone_interview
+    application_score:
+      resume_strength: 78
+      skill_match: 73
+      cover_letter_quality: 80
+      references: 78
+      weighted_total: 76.65
+    state_changes:
+      stress: { from: 15, to: 19 }
+      applications_active: { from: 0, to: 1 }
+    notes:
+      - "Correctly targeted Level 0 QC role rather than a position-coach reach."
+      - "Main live risk remained zero coaching experience and WCO knowledge gap."
 
-    consequences:
-      immediate:
-        - Eagles become primary job target
-        - Focus shifts to WCO preparation and interview framing
-      long_term:
-        - Potential entry into Reid coaching tree
-        - WCO learning path becomes dominant career trajectory
+  - turn: 2
+    phase: "Offseason — Coaching Carousel / Interview Stage 2"
+    date: "1999-01-15"
+    event: "Completed Eagles phone interview."
+    outcome: advanced_to_campus_interview
+    phone_interview:
+      q1_philosophy: 9
+      q2_experience_skills: 8
+      q3_situational: 8
+      communication_anchor: 42
+      communication_bonus: 21
+      total: 46
+    state_changes:
+      stress: { from: 19, to: 23 }
+    notes:
+      - "Role-fit and humility screened well."
+      - "Still did not sound like a native WCO coach."
 
-    tags: [application, eagles, qc, andy_reid, wco]
+  - turn: 3
+    phase: "Offseason — Coaching Carousel / Interview Stage 3"
+    date: "1999-01-15"
+    event: "Completed Eagles campus / in-person interview."
+    outcome: became_finalist
+    campus_interview:
+      vision_score: 8
+      room_trust_score: 8
+      tactical_presentation_score: 9
+      final_panel_score: 8
+      relevant_skills_bonus: 27.5
+      total: 60.5
+    supporting_materials:
+      - "Alex Stone — Campus Interview Answers - Eagles OQC.md"
+    state_changes:
+      stress: { from: 23, to: 29 }
+    notes:
+      - "Tactical presentation was the strongest portion of the day."
+      - "Finalist status earned, but WCO terminology remained the clearest weakness."
 
-milestones:
-  hires: 0
-  promotions: 0
-  demotions: 0
-  firings: 0
-  team_changes: 0
-  authority_changes: 0
-  playoff_appearances_as_coach: 0
-  championships_as_coach: 0
+  - turn: 4
+    phase: "Offseason — Coaching Carousel / Interview Stage 4"
+    date: "1999-01-15"
+    event: "Resolved Eagles final round: references, closing case, offer decision."
+    outcome: won_final_round_offer_pending
+    finalists:
+      generated_field_size: 3
+      best_other_candidate_profile: "Safer conventional WCO candidate with more coaching reps but less upside and weaker fit."
+    final_round_math:
+      interview_scores_carried_forward: 60.5
+      references_bonus: 10
+      fit_bonus: 8
+      final_statement_bonus: 8
+      total: 86.5
+      best_other_candidate_total: 83.0
+      margin: 3.5
+    references_used:
+      - Don Coryell
+      - Bobby Ross
+    closing_argument_note: "Engine-generated from Stone's prior interview voice because no user-written final statement was separately provided."
+    offer_generated:
+      team: Philadelphia Eagles
+      role: Offensive Quality Control
+      salary_offer_usd: 32500
+      contract_years: 1
+      status: pending
+    state_changes:
+      stress: { from: 29, to: 34 }
+      applications_active: { from: 1, to: 0 }
+      offers_pending: { from: 0, to: 1 }
+    notes:
+      - "Stone won narrowly, not overwhelmingly."
+      - "References and role fit mattered more than system fluency."
+      - "Decision still required; employment does not begin until the offer is accepted."
 
-reputation_flags:
-  external_reputation: >
-    Hall of Fame player entering coaching with elite football intelligence but
-    zero coaching experience.
-  internal_reputation: >
-    Unproven coaching candidate with strong teaching instincts and unknown
-    adaptability to subordinate roles.
-  risk_flags:
-    - ego_transition_risk
-    - no_coaching_experience
-  strengths:
-    - teaching_instinct
-    - film_intelligence
-    - positional_expertise_TE
-  notes:
-    - Must prove ability to operate within strict chain of command
-    - Must adapt from player authority to coaching hierarchy
-
-rules:
-
-  valid_categories:
-    - career_start
-    - application
-    - interview
-    - hire
-    - promotion
-    - demotion
-    - resignation
-    - firing
-    - team_change
-    - authority_change
-    - achievement
-    - failure
-    - relationship_shift
-    - injury
-    - legacy
-
-  valid_significance:
-    - minor
-    - moderate
-    - major
-    - career_altering
-
-update_instructions:
-
-  when_to_add_entry: >
-    Add a new entry when any of the following occur:
-      - Job application with real impact
-      - Interview stage advancement
-      - Hire or rejection that changes path
-      - Promotion or demotion
-      - Team change
-      - Authority change
-      - Major achievement or failure
-      - Relationship shift affecting career trajectory
-
-  when_not_to_add_entry: >
-    Do NOT add entries for:
-      - Normal weekly or monthly turns
-      - Routine assignments
-      - Minor trust changes
-      - Standard game results
-      - Small stat changes
-
-  how_to_write_entry: >
-    Each entry must clearly define:
-      - What happened
-      - When it happened
-      - What role/team was involved
-      - Why it matters
-      - Immediate consequences
-      - Long-term implications
-
-  formatting_rules:
-    - Keep entries concise and structured
-    - Avoid narrative fluff
-    - Use tags consistently
-    - Do not duplicate information from State Block
-    - Do not rewrite past entries after new events
-
-  ordering_rule: >
-    Entries must be chronological.
-    New entries are always appended to the end of the history list.
+career_totals:
+  coaching_record: "0-0"
+  career_earnings_from_coaching_usd: 0
+  jobs_held: []
+  active_consequences:
+    - "No coaching experience still defines Stone's baseline until he actually starts the job."
+    - "West Coast terminology gap remains live even after winning the offer."
+    - "Hall of Fame status continues to create scrutiny around ego and media attention."
