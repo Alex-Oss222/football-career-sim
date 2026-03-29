@@ -1,4 +1,4 @@
-# COACH 3.0 — TURN OUTPUT TEMPLATE
+# TURN OUTPUT TEMPLATE
 
 > Default runtime output for coaching turns.
 > Goal: compact, readable, role-sensitive, under 800 words.
