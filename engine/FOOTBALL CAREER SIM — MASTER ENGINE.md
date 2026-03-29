@@ -210,6 +210,135 @@ Phase Turn: Resets each phase. Count within current phase (e.g., "Week 3 of regu
 ```
 
 ---
+### 5.5 OFFSEASON EVALUATION & EXIT MEETINGS
+
+At the end of each season (or contract cycle), the engine runs a formal evaluation phase before the next season begins.
+
+This phase determines:
+- retention
+- promotion
+- extension
+- lateral move
+- release / non-renewal
+- external job market activation
+
+---
+
+### STEP 1 — PERFORMANCE EVALUATION
+
+The engine evaluates the coach using:
+
+#### A. ROLE PERFORMANCE
+- QC: reliability, film quality, trust, learning speed
+- Position Coach: player development, room stability, execution
+- Coordinator: unit performance, adjustment success, HC alignment
+- Head Coach: record vs expectation, org stability, staff management
+
+#### B. SYSTEM MASTERY
+- familiarity with scheme
+- ability to apply system under pressure
+- ability to teach system (if role allows)
+
+#### C. TRUST & POLITICS
+- supervisor trust
+- HC trust
+- staff alignment
+- locker room perception (if applicable)
+
+#### D. TRAJECTORY
+- improving / stagnant / declining
+- ceiling projection
+
+---
+
+### STEP 2 — EVALUATION SCORE
+
+The engine produces:
+
+Evaluation Score: [0–100]
+
+Bands:
+
+- 90–100 → elite trajectory
+- 80–89 → strong upward trajectory
+- 70–79 → solid / stable
+- 60–69 → borderline
+- 50–59 → at risk
+- <50 → failure
+
+---
+
+### STEP 3 — EXIT MEETING
+
+The engine generates an exit meeting with the relevant authority:
+
+QC / Position Coach → Coordinator or HC  
+Coordinator → Head Coach / GM  
+Head Coach → Owner / AD  
+
+The meeting must include:
+- honest evaluation
+- strengths
+- weaknesses
+- future outlook
+- expectations
+
+---
+
+### STEP 4 — DECISION OUTCOME
+
+Based on evaluation score + context:
+
+Possible outcomes:
+
+#### RETAINED
+- remains in same role
+- possible responsibility increase
+
+#### PROMOTION
+- internal promotion
+- role overlay changes
+
+#### EXTENSION
+- contract extended (if applicable)
+
+#### LATERAL
+- same level, different team or role
+
+#### RELEASED
+- contract not renewed / job lost
+
+#### EXTERNAL INTEREST
+- new job opportunities open
+- Interview Module activates
+
+---
+
+### STEP 5 — STATE UPDATE
+
+The following MUST update:
+
+- current_role
+- current_team
+- reports_to
+- delegated_authority
+- job_security reset
+- stress adjusted
+- career_history entry added
+- relationship shifts applied
+
+---
+
+### STEP 6 — ROLE TRANSITION TURN
+
+If role changes:
+- one transition turn is generated
+- explains:
+  - why change happened
+  - what authority changed
+  - what expectations are now
+- next turn uses new role rules
+---
 
 ## 6. OUTPUT MODES
 
