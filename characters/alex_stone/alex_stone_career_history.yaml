@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '1999-02-05'
-  career_turn: 7
-  sim_phase: Offseason — Pre-Combine / Pre-Free Agency Build-Up
+  date: '1999-07-08'
+  career_turn: 8
+  sim_phase: Offseason — One Week Before Training Camp
   source_note: Assistant-generated merge-ready update because the original repo file
     was not directly editable in this environment.
 career_history:
@@ -43,3 +43,64 @@ career_history:
     pat_shurmur:
       from: 22
       to: 27
+- turn: 8
+  date_range: 1999-02-06 to 1999-07-08
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: One Week Before Training Camp
+  summary: Stone advanced through the combine, free agency, pro days, the draft, UDFA
+    signings, OTAs, minicamp, and the early offseason break. He stayed on his routine,
+    learned more of the Eagles' West Coast terminology, helped translate playbook
+    concepts from player language into usable QC support work, and became a much more
+    trusted low-level offensive assistant.
+  results:
+  - Supported combine and draft-prep work from an offensive/TE perspective without
+    overstepping his role.
+  - Adjusted more naturally to Eagles formatting, terminology, and playbook organization
+    during OTAs and minicamp.
+  - Used his former-player experience to translate route concepts, landmarks, and
+    teaching points into better cut-ups and support packets.
+  - Arrived at July 8, 1999 — one week before training camp opens on July 15.
+  draft_headliners_engine_resolved:
+  - Donovan McNabb — QB, Syracuse
+  - Barry Gardner — LB, Northwestern
+  - John Welbourn — OT, California
+  - Na Brown — WR, North Carolina
+  - 'Later-round depth emphasis: tight end / special teams / linebacker competition'
+  state_changes:
+    stress:
+      from: 43
+      to: 49
+    job_security:
+      from: 58
+      to: 67
+    andy_reid:
+      from: 41
+      to: 48
+    rod_dowhower:
+      from: 61
+      to: 72
+    brad_childress:
+      from: 22
+      to: 29
+    pat_shurmur:
+      from: 27
+      to: 39
+  calendar_state:
+    calendar_file: teams/philadelphia_eagles/philadelphia_eagles_calendar_1999.yaml
+    current_node: offseason_break
+    previous_node: minicamp_01
+    next_node: camp_01
+    completed_nodes:
+    - reid_hired
+    - staff_build_01
+    - staff_build_02
+    - fa_opens
+    - combine_01
+    - fa_march
+    - pre_draft_april
+    - draft_01
+    - draft_02
+    - post_draft
+    - ota_01
+    - minicamp_01
