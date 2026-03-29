@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '1999-10-25'
-  career_turn: 10
-  sim_phase: Regular Season Week 8 — Game Prep
+  date: '2000-01-03'
+  career_turn: 11
+  sim_phase: Season End — Immediate Aftermath
   source_note: Assistant-generated merge-ready update because the original repo file
     was not directly editable in this environment.
 career_history:
@@ -262,3 +262,103 @@ career_history:
     - reg_wk05
     - reg_wk06
     - reg_wk07
+- turn: 11
+  date_range: 1999-10-25 to 2000-01-03
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Season End — Immediate Aftermath
+  summary: 'Stone advanced from Week 8 through the end of the regular season and into
+    the opening of the season-end node. He kept doing the real QC job: early arrival,
+    opponent prep, cut-ups, corrections, quarterback support packets, TE/edge translation,
+    and low-ego staff work. By year-end he was no longer learning the Eagles offense
+    from the outside; he was functioning inside its weekly workflow while still remaining
+    clearly support staff rather than a room owner.'
+  results:
+  - Helped the staff navigate the stretch run from Week 8 through Week 17 without
+    becoming a hierarchy problem or a rework problem.
+  - Finished the year with much better practical command of Eagles terminology, weekly
+    game-plan structure, and how the Reid/Dowhower/Childress/Shurmur tree actually
+    operates.
+  - Translated more of his former-player eye into usable quarterback, route, leverage,
+    coverage, and TE/edge support detail.
+  - Reached the opening of the season-end node on January 3, 2000, immediately after
+    the final regular-season game.
+  engine_resolved_results:
+    week_8_vs_new_york_giants: W 27-20
+    week_9_at_carolina_panthers: L 17-23
+    week_10_vs_washington_redskins: W 24-17
+    week_11_vs_indianapolis_colts: L 20-31
+    week_12_at_washington_redskins: W 23-20
+    week_13_at_arizona_cardinals: W 26-16
+    week_14_at_dallas_cowboys: L 14-27
+    week_15_vs_new_england_patriots: W 21-17
+    week_16_bye: No game
+    week_17_vs_st_louis_rams: L 13-30
+    final_regular_season_record: 8-8
+    playoff_result: Missed playoffs
+  ongoing_draft_class_note:
+  - Donovan McNabb — QB, Syracuse
+  - Barry Gardner — LB, Northwestern
+  - John Welbourn — OT, California
+  - Na Brown — WR, North Carolina
+  state_changes:
+    stress:
+      from: 67
+      to: 75
+    job_security:
+      from: 80
+      to: 89
+    andy_reid:
+      from: 60
+      to: 69
+    rod_dowhower:
+      from: 86
+      to: 91
+    brad_childress:
+      from: 45
+      to: 58
+    pat_shurmur:
+      from: 51
+      to: 61
+  calendar_state:
+    calendar_file: teams/philadelphia_eagles/philadelphia_eagles_calendar_1999.yaml
+    current_node: season_end
+    previous_node: reg_wk17
+    next_node: null
+    completed_nodes:
+    - reid_hired
+    - staff_build_01
+    - staff_build_02
+    - fa_opens
+    - combine_01
+    - fa_march
+    - pre_draft_april
+    - draft_01
+    - draft_02
+    - post_draft
+    - ota_01
+    - minicamp_01
+    - offseason_break
+    - camp_01
+    - pre_wk1
+    - pre_wk2
+    - pre_wk3
+    - pre_wk4
+    - roster_cutdown
+    - reg_wk01
+    - reg_wk02
+    - reg_wk03
+    - reg_wk04
+    - reg_wk05
+    - reg_wk06
+    - reg_wk07
+    - reg_wk08
+    - reg_wk09
+    - reg_wk10
+    - reg_wk11
+    - reg_wk12
+    - reg_wk13
+    - reg_wk14
+    - reg_wk15
+    - reg_wk16
+    - reg_wk17
