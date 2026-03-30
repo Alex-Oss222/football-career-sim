@@ -1,0 +1,441 @@
+# PHILADELPHIA EAGLES — 2000 COACHING STAFF MAP
+# Sim Reference: NPC coach profiles for runtime staff politics, chain of command, and relationship tracking
+# Sim Rule: No actual future outcomes. All assessments reflect January 2000 context.
+# Sim Divergence: 1999 Eagles went 8-8 in sim (vs. 5-11 in real history).
+# Note: Stone's trust levels reflect one year of Offensive QC performance.
+
+---
+
+team: Philadelphia Eagles
+season: 2000
+head_coach: Andy Reid
+staff_build_status: YEAR_2_CONTINUITY
+holdovers_from_rhodes: [John Harbaugh, Juan Castillo]
+staff_culture: teaching_first, low_ego, collaborative, process_oriented
+year_2_note: >
+  The 8-8 season validated Reid's process. The staff culture is no longer
+  aspirational — it is established. Coaches have survived a full season
+  together. The "we're all learning together" dynamic of 1999 has matured
+  into earned confidence. Year 1 forgave mistakes. Year 2 expects competence.
+
+---
+
+staff:
+
+  - name: Andy Reid
+    title: Head Coach
+    side: offense
+    reports_to: Jeffrey Lurie (owner), Joe Banner (president)
+    authority_level: total
+    age: 41
+    background: >
+      Second-year HC. Seven years as Packers assistant (TE/OL 1992-96, QB coach
+      1997-98). Coached Brett Favre. Won Super Bowl XXXI. Bill Walsh tree via
+      Holmgren. College OL coach for 10 years before NFL. Year 1 record of 8-8
+      exceeded all expectations and validated his hiring.
+    teaching_style: >
+      Unchanged from Year 1: structured, patient, detail-oriented. Now informed
+      by a full season of game experience. Film sessions reference their own
+      games — "remember when we ran this against Dallas" — which makes the
+      teaching more effective. Expects the same standard from his staff.
+    personality: >
+      Warm but demanding. Calm authority. Treats people with dignity. Quick to
+      take blame, slow to assign it publicly. Privately direct. The 8-8 season
+      added quiet confidence — Reid believed in his process before it worked;
+      now he has evidence. More convicted, not more arrogant.
+    what_he_cares_about:
+      - continued development of the WCO system (year 2 expansion)
+      - McNabb's development as a franchise QB (organizational priority)
+      - staff growth — coaches improving, not just maintaining
+      - roster improvement through the draft and free agency
+      - building on 8-8, not coasting on it
+      - maintaining culture as expectations rise
+    what_annoys_him:
+      - complacency from the 8-8 season
+      - ego, disloyalty, inconsistency, cynicism (same as Year 1)
+      - regression in effort or preparation
+      - any coach who thinks "we've arrived" after one .500 year
+    openness_to_stone: ESTABLISHED_POSITIVE
+    openness_notes: >
+      Stone survived Year 1 and was retained. Reid has a year of data on
+      Stone's work ethic, character, and system absorption. The initial ego
+      concern has been tested and resolved. Reid now evaluates Stone on
+      performance trajectory, not potential risk.
+    trust_baseline_with_stone: MODERATE
+    trust_notes: >
+      One full year of working together. Trust is based on observed behavior.
+      Year 2 question: does Stone demonstrate growth beyond baseline QC
+      competence — teaching instincts, system mastery, readiness for more?
+    role_relative_to_stone: ULTIMATE_EVALUATOR
+    role_notes: >
+      Reid sets the culture and evaluates everyone. Year 2 evaluation shifts
+      from "can he do the job?" to "is he ready for more?"
+
+  - name: Rod Dowhower
+    title: Offensive Coordinator
+    side: offense
+    reports_to: Andy Reid
+    authority_level: high (offensive scheme execution, but Reid calls plays and controls the system)
+    age: 56
+    background: >
+      37-year coaching career. Started under Don Coryell at San Diego State
+      (1966-72). Later worked under Bill Walsh at Stanford (QB coach 1977-78).
+      Head coach at Stanford (1979), Indianapolis Colts (1985-86, 5-24),
+      Vanderbilt (1995-96, 4-18). OC/QB coach for Denver, Atlanta, Washington
+      (Super Bowl XXVI ring), Cleveland (under Belichick), NY Giants (QB coach
+      1997-98). 15 jobs in 27 years. Journeyman with deep system knowledge
+      across both Coryell and Walsh lineages. Second year as Eagles OC.
+    teaching_style: >
+      Old-school, professional, system-oriented. Experienced enough to install
+      any offense. Not charismatic — workmanlike. Runs efficient meetings.
+      Values precision in terminology and execution. More relaxed in Year 2 —
+      trusts the staff more, delegates more now that the base system is in.
+    personality: >
+      Quiet professional. Has seen everything. Not bitter, not ambitious. Near
+      the end of his career and comfortable with it. Steady hand who provides
+      Reid with institutional knowledge. Not competitive with Reid — serves
+      the HC. Content with his role.
+    what_he_cares_about:
+      - year 2 offensive improvement — the system should look better
+      - QC work quality increasing (should need less supervision)
+      - playbook expansion done correctly
+      - McNabb's development in the passing game
+      - accurate, on-time deliverables from QC coaches
+    what_annoys_him:
+      - sloppy film work
+      - QC coaches who need to be managed
+      - people who skip steps or cut corners
+      - staff who go around him to Reid
+      - Year 2 regression in deliverable quality
+    openness_to_stone: MODERATE_TO_HIGH
+    openness_notes: >
+      One full year of working together. The Coryell bridge — Dowhower's
+      ability to translate between Stone's playing background and Reid's
+      WCO — is an established dynamic. If Stone's Year 1 work was reliable,
+      Dowhower's trust has grown. May begin relying on Stone for more complex
+      film assignments.
+    trust_baseline_with_stone: MODERATE
+    trust_notes: >
+      Trust earned through a year of deliverables. Year 2 trust growth
+      comes from Stone demonstrating system mastery — anticipating needs,
+      identifying patterns, adding analytical value beyond basic QC.
+    role_relative_to_stone: PRIMARY_EVALUATOR
+    role_notes: >
+      Stone's direct supervisor. His assessment of Stone's reliability and
+      growth is Reid's primary data point.
+    sim_note: >
+      Dowhower is 56 with 37 years in coaching. His potential retirement
+      after 2000 is the most likely trigger for an offensive staff reshuffle
+      that could create promotion opportunities. This is not certain, but
+      it is the most probable internal mechanism.
+
+  - name: Brad Childress
+    title: Quarterbacks Coach
+    side: offense
+    reports_to: Rod Dowhower, Andy Reid
+    authority_level: moderate_to_high (QB room authority; increased importance with McNabb's development)
+    age: 43
+    background: >
+      One year of NFL coaching experience before Eagles (Colts QB coach, 1985).
+      13 years as OC at Wisconsin under Barry Alvarez. Second year as Eagles
+      QB coach. McNabb's development is Childress's primary responsibility
+      and the organization's highest priority.
+    teaching_style: >
+      Organized, detail-oriented, system-focused. More assertive in Year 2.
+      Established teaching relationship with McNabb. Intense in meetings.
+    personality: >
+      Serious, focused, ambitious. Year 2 ambition more visible — sees himself
+      as a future coordinator candidate. Professional relationship with the
+      offensive staff. Not threatening to anyone yet.
+    what_he_cares_about:
+      - McNabb's Year 2 development above all else
+      - film preparation quality from QC (matters more now — QB room work is more complex)
+      - being recognized as a key driver of McNabb's growth
+    what_annoys_him:
+      - film cut-ups that are disorganized or missing clips
+      - people who don't know the system terminology
+      - QC work that doesn't reflect Year 2 complexity
+    openness_to_stone: NEUTRAL_POSITIVE
+    openness_notes: >
+      A year to evaluate Stone's film work. If reliable, Childress views Stone
+      as a functional asset. Professional, not warm. May assign more QB-specific
+      film tasks in Year 2.
+    trust_baseline_with_stone: LOW_MODERATE
+    role_relative_to_stone: EVALUATOR_SECONDARY
+    role_notes: >
+      Childress's opinion feeds to Reid but is secondary to Dowhower's.
+      If Childress assigns QB-specific film work and Stone delivers well,
+      Childress becomes a positive voice in staff discussions.
+
+  - name: Pat Shurmur
+    title: Tight Ends Coach / Offensive Line Assistant
+    side: offense
+    reports_to: Rod Dowhower, Andy Reid
+    authority_level: moderate (TE room authority)
+    age: 34
+    background: >
+      Never coached in the NFL before 1999. Eight years at Michigan (TEs, OL,
+      special teams). One year at Stanford as OL coach. Reid hired him based on
+      teaching ability and character. Entering Year 2 — has survived his first
+      NFL season and has a body of work.
+    teaching_style: >
+      More polished than Year 1. Meetings are tighter, more organized. Developed
+      NFL-caliber teaching instincts. Still fundamentals-focused but with better
+      schematic depth. No longer learning the system alongside the players —
+      teaching it with authority.
+    personality: >
+      More confident, less defensive. The fragile authority of Year 1 has
+      hardened into earned authority through experience. Owns his room now.
+      Still aware of the Stone dynamic — Stone knows more about playing TE —
+      but less likely to feel threatened because he has proven himself as a
+      coach. Ambitious — wants to move up eventually.
+    what_he_cares_about:
+      - TE room continued improvement
+      - year 2 TE play measurably better than year 1
+      - his own development as a coach
+      - QC support quality for his room
+    what_annoys_him:
+      - being corrected in front of players (less sensitive but still aware)
+      - feeling undermined by someone with more football credibility
+      - sloppy preparation in materials he depends on
+    openness_to_stone: CAUTIOUS_TO_MODERATE
+    openness_notes: >
+      A full year to calibrate the Stone relationship. If Stone managed the
+      dynamic well in Year 1 — supporting without undermining, sharing
+      observations as data rather than corrections — Shurmur's trust has
+      grown. The relationship should be functional and potentially collaborative
+      by Year 2. If Year 1 had friction, the damage carries forward.
+    trust_baseline_with_stone: LOW_MODERATE_TO_MODERATE
+    trust_notes: >
+      Depends on Year 1 dynamics. If Stone respected the chain of command,
+      Shurmur's trust has grown meaningfully. May begin to actively seek
+      Stone's input on TE technique questions — privately, not in front
+      of players. A significant trust signal if it happens.
+    role_relative_to_stone: MENTOR_POTENTIAL_AND_OBSTACLE_POTENTIAL
+    role_notes: >
+      Year 2 shift: Shurmur is now a gateway more than an obstacle. If
+      Shurmur advances (to QB coach or OC role in a future year), the TE
+      coach job opens. Shurmur's success creates Stone's opportunity.
+      Stone's best strategy is to make Shurmur look as good as possible.
+
+  - name: David Culley
+    title: Wide Receivers Coach
+    side: offense
+    reports_to: Rod Dowhower, Andy Reid
+    authority_level: moderate (WR room authority)
+    age: 44
+    background: >
+      Four years as NFL WR coach (three with Steelers, one with Eagles).
+      Most NFL-experienced offensive position coach hire. Steady, reliable.
+      Coached Yancey Thigpen to a Pro Bowl in Pittsburgh.
+    teaching_style: player-development focused, technique-oriented, professional
+    personality: >
+      Quiet, steady, professional. Not flashy. Does his job well. Loyal —
+      will stay with Reid longer than any other assistant.
+    what_he_cares_about:
+      - WR development and getting better players to develop
+      - good film preparation from QC staff
+      - professional environment
+    what_annoys_him:
+      - disorganization
+      - people who don't do their homework
+    openness_to_stone: NEUTRAL_POSITIVE
+    openness_notes: >
+      Year 2 relationship is established and stable. Functional working
+      dynamic. Low-drama, professional.
+    trust_baseline_with_stone: NEUTRAL_TO_LOW_MODERATE
+    role_relative_to_stone: NEUTRAL_COLLEAGUE
+
+  - name: Juan Castillo
+    title: Offensive Line Coach
+    side: offense
+    reports_to: Rod Dowhower, Andy Reid
+    authority_level: moderate (OL room authority)
+    age: 40
+    background: >
+      Rhodes holdover. Third year as Eagles OL coach (one under Rhodes, two
+      under Reid). Reid kept him based on personal evaluation. Has proven
+      his value. OL was a weakness in Year 1 and remains a roster priority.
+    teaching_style: physical, hands-on, intense, technique-driven
+    personality: intense, passionate, grateful, loyal to Reid
+    openness_to_stone: NEUTRAL
+    trust_baseline_with_stone: NEUTRAL
+    role_relative_to_stone: NEUTRAL_COLLEAGUE
+
+  - name: Tom Melvin
+    title: Offensive Assistant
+    side: offense
+    reports_to: Rod Dowhower, Andy Reid
+    authority_level: low (support role, similar level to QC)
+    age: unknown (mid-career)
+    background: >
+      Never coached in the NFL before 1999. Eight years as OC at Division III
+      Occidental College. Reid hired him for teaching ability and character.
+      Entering Year 2 alongside Stone as a peer-level newcomer.
+    teaching_style: fundamentals-oriented, improving, gaining NFL confidence
+    personality: humble, hardworking, still learning, adapted to NFL pace
+    what_he_cares_about:
+      - continued learning and growth
+      - doing good work
+      - building on Year 1 relationships
+    openness_to_stone: POSITIVE
+    openness_notes: >
+      Year 1 peers. Bond from shared newcomer experience is established.
+      Genuine professional friendship — mutual support, no competitive tension.
+    trust_baseline_with_stone: MODERATE
+    role_relative_to_stone: PEER_ALLY
+    role_notes: >
+      Melvin's trajectory is relevant: if Shurmur moves up and the TE
+      coach job opens, Melvin is a potential competitor for the role.
+
+  # --- DEFENSIVE STAFF ---
+
+  - name: Jim Johnson
+    title: Defensive Coordinator
+    side: defense
+    reports_to: Andy Reid
+    authority_level: high (near-total defensive autonomy)
+    age: 58
+    background: >
+      Eight years as Cardinals LB coach. Two years as Colts DC (ranked 18th
+      and 26th in points allowed). Second year as Eagles DC. Year 1
+      demonstrated his blitz-heavy, aggressive scheme. Reid's trust in
+      Johnson is fully established. Johnson runs his own kingdom.
+    teaching_style: intense, aggressive, creative, high-energy, high-detail
+    personality: >
+      Fiery, competitive, passionate about defense. Not involved in offensive
+      staff dynamics. Respected by defensive players.
+    what_he_cares_about:
+      - his defense
+      - defensive film preparation (from defensive QC, not Stone)
+      - Reid giving him autonomy
+    openness_to_stone: IRRELEVANT
+    openness_notes: >
+      Minimal interaction with offensive QC. Runs the defense.
+    trust_baseline_with_stone: N/A
+    role_relative_to_stone: NEUTRAL_SEPARATE_DOMAIN
+
+  - name: John Harbaugh
+    title: Special Teams Coordinator
+    side: special_teams
+    reports_to: Andy Reid
+    authority_level: moderate (full special teams authority)
+    age: 37
+    background: >
+      Rhodes holdover. Third year with Eagles. Prior career: special teams
+      coaching at five colleges. Reid kept him based on personal evaluation.
+      Has established himself as a competent ST coordinator.
+    teaching_style: energetic, organized, demanding, classroom-intensity
+    personality: >
+      Intense, competitive, principled. Faith-oriented (like Reid). Ambitious —
+      wants more eventually. Loyal to Reid for keeping him.
+    what_he_cares_about:
+      - special teams excellence
+      - being respected as an established member of the staff
+      - staff members who contribute to special teams prep
+    openness_to_stone: NEUTRAL_POSITIVE
+    openness_notes: >
+      Respects playing pedigree and professionalism. If Stone contributes
+      to special teams prep, Harbaugh has mild positive impression.
+    trust_baseline_with_stone: NEUTRAL_TO_LOW_MODERATE
+    role_relative_to_stone: NEUTRAL_COLLEAGUE
+
+  - name: Ron Rivera
+    title: Linebackers Coach
+    side: defense
+    reports_to: Jim Johnson
+    authority_level: moderate (LB room authority)
+    age: 38
+    background: >
+      Former NFL player (LB, 1985 Bears — Super Bowl XX). Third year as NFL
+      coach (two years QC with Bears, one year LB coach with Eagles). The
+      closest analogue to Stone on the staff — a former star player making
+      the coaching transition with minimal experience.
+    teaching_style: >
+      Developing but improving. Uses playing experience to connect with
+      players. Learning the coaching craft. More comfortable in Year 2.
+    personality: >
+      Professional, respectful, hard-working. Understands the player-to-coach
+      transition intimately. Earned respect from players and staff through
+      a full season.
+    what_he_cares_about:
+      - earning respect as a coach, not just a former player
+      - developing his LB room
+      - proving he belongs
+    openness_to_stone: HIGH
+    openness_notes: >
+      The Year 1 bond should be solid. Both understand the player-to-coach
+      transition. Genuine professional friendship. Different side of the ball
+      eliminates competitive tension.
+    trust_baseline_with_stone: MODERATE_TO_HIGH
+    role_relative_to_stone: PEER_ALLY_ESTABLISHED
+    role_notes: >
+      Stone's strongest peer relationship. Cross-pollination of coaching
+      insights — Rivera can share observations about how the defensive
+      staff operates and how the organization evaluates position coaches.
+
+  - name: Leslie Frazier
+    title: Secondary Coach
+    side: defense
+    reports_to: Jim Johnson
+    authority_level: moderate (secondary room authority)
+    age: 41
+    background: >
+      Started the football program at NAIA Trinity International. Two years
+      as secondary coach at Illinois. Second year as Eagles secondary coach.
+    teaching_style: fundamentals, developing, calm
+    personality: calm, professional, humble, learning
+    openness_to_stone: NEUTRAL
+    trust_baseline_with_stone: NEUTRAL
+    role_relative_to_stone: NEUTRAL_COLLEAGUE
+
+  - name: Steve Spagnuolo
+    title: Defensive Assistant / Quality Control
+    side: defense
+    reports_to: Jim Johnson
+    authority_level: low (QC level — same tier as Stone)
+    age: 40
+    background: >
+      Position coach at multiple colleges (Lafayette, Maine, Rutgers). One
+      year in the World League. Second year as Eagles defensive QC.
+      Structural peer to Stone on opposite side of the ball.
+    teaching_style: developing, detail-oriented, intense
+    personality: >
+      Intense, ambitious, eager to prove himself. Adapted to the NFL.
+      Johnson trusts him more in Year 2.
+    openness_to_stone: POSITIVE
+    openness_notes: >
+      Fellow Year 1 survivors. Peer bond established. Both QC-level with
+      ambitions for advancement. Different sides of ball keeps it supportive.
+    trust_baseline_with_stone: MODERATE
+    role_relative_to_stone: PEER_ALLY_ESTABLISHED
+
+  - name: Sean McDermott
+    title: Defensive Quality Control
+    side: defense_scouting
+    reports_to: Jim Johnson, Andy Reid
+    authority_level: low (defensive QC / scouting support)
+    age: 25
+    background: >
+      Former player at William & Mary (1994-97). Graduate assistant 1998.
+      Eagles scouting administrative coordinator 1998. Second year — shifting
+      from scouting-administrative role toward defensive quality control under
+      Johnson's wing. Youngest staff member by a significant margin.
+    teaching_style: N/A (still in development)
+    personality: young, driven, detail-oriented, ambitious, learning fast
+    openness_to_stone: POSITIVE
+    trust_baseline_with_stone: NEUTRAL_TO_LOW_MODERATE
+    role_relative_to_stone: NEUTRAL_JUNIOR_PEER
+
+# --- SUMMARY: STONE'S RELATIONSHIP MAP ---
+
+relationship_map:
+  ultimate_evaluator: Andy Reid
+  primary_evaluator: Rod Dowhower
+  secondary_evaluators: [Brad Childress, Pat Shurmur]
+  most_complex_relationship: Pat Shurmur (less volatile in Year 2 but still layered)
+  established_allies: [Ron Rivera, Tom Melvin, Steve Spagnuolo]
+  potential_mentor: Rod Dowhower (Coryell bridge established; functional mentoring relationship)
+  hidden_asset: Dowhower nearing retirement — departure would trigger staff reshuffle and promotion opportunities
+  biggest_relationship_risk: Shurmur dynamic — support without undermining remains critical
+  irrelevant_relationships: [Jim Johnson, Leslie Frazier]
