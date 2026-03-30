@@ -50,21 +50,41 @@ The simulation persists through structured state files rather than chat memory.
 
 ## Persistence & Progression
 
-This simulation does not restart between sessions.
+This simulation persists across sessions using a structured file system.  
+State is separated into **core runtime files** and **supporting evolution files**.
 
-It uses three core files:
+### Core Runtime Files (Required)
+
+These define the current reality of the simulation:
 
 - `alex_stone_current_state.yaml` → current live state (single source of truth)  
 - `alex_stone_career_history.yaml` → long-term career log (append-only)  
 - `alex_stone_relationship_ledger.yaml` → trust, politics, and relationships  
 
-Only **one active state file exists at a time**.
+Only **one active state file exists at any time**.
 
-Seasons are played across multiple chat sessions:
-- each chat typically represents one season
-- progression continues using the latest state file
-- major milestones are archived
+---
 
+### Supporting Evolution Files
+
+These files evolve with the character but do not drive the simulation directly.  
+They provide context for behavior, communication, and football understanding.
+
+- `alex_stone_profile.md` → character identity and career-phase development  
+- `alex_stone_voice.md` → communication style and behavioral tone (role-dependent)  
+- `alex_stone_scheme_profile.md` → system knowledge, scheme mastery, and coaching-tree adaptation  
+
+These files are updated **periodically**, not every turn.
+
+---
+
+### Usage Model
+
+- Core runtime files are used to run the simulation  
+- Supporting files shape how the character behaves within it  
+- Archive folders store snapshots of all files at key career points  
+
+The system remains **state-driven**, with personality and knowledge layered on top.
 ---
 
 ## Archive System
