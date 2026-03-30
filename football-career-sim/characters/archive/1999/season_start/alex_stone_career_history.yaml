@@ -1,0 +1,168 @@
+meta:
+  character: Alex Stone
+  file_purpose: Permanent career history (append-only log)
+  update_rule: >
+    Append new entries for major career events only.
+    Do not overwrite past entries except for corrections.
+  created: 1999-01-15
+  last_updated: 1999-01-15
+
+career_summary:
+  current_phase: Coaching
+  current_role: Unemployed Coach Candidate
+  current_level: 0
+  current_team: None
+  reports_to: None
+  delegated_authority: None
+  career_start_type: Coach-first
+  first_recorded_event: 1999-01-15
+  latest_recorded_event: 1999-01-15
+
+history:
+
+  - id: stone_hist_0001
+    date: 1999-01-15
+    category: career_start
+    event: Entered coaching carousel
+    role: Unemployed Coach Candidate
+    level: 0
+    team: None
+    reports_to: None
+    source_context: Coach-first start
+    significance: major
+
+    summary: >
+      Stone begins his coaching career by entering the January 1999 coaching
+      market with no prior coaching experience, targeting entry-level NFL roles
+      such as Offensive Quality Control.
+
+    consequences:
+      immediate:
+        - Interview Module may activate
+        - Only Level 0 roles are realistically available
+        - Must prove coaching viability from zero experience
+      long_term:
+        - First job determines initial coaching tree and system exposure
+        - Early reputation will define future opportunities
+
+    tags: [coaching, entry_point, carousel]
+
+  - id: stone_hist_0002
+    date: 1999-01-15
+    category: application
+    event: Targeted Philadelphia Eagles Offensive QC role
+    role: Offensive Quality Control Applicant
+    level: 0
+    team: Philadelphia Eagles
+    reports_to_if_hired: Rod Dowhower
+    source_context: 1999 NFL coaching cycle
+    significance: major
+
+    summary: >
+      Stone identifies the Eagles QC role under Andy Reid as the optimal entry
+      point due to philosophical alignment, teaching emphasis, and long-term
+      system value despite a steeper learning curve.
+
+    consequences:
+      immediate:
+        - Eagles become primary job target
+        - Focus shifts to WCO preparation and interview framing
+      long_term:
+        - Potential entry into Reid coaching tree
+        - WCO learning path becomes dominant career trajectory
+
+    tags: [application, eagles, qc, andy_reid, wco]
+
+milestones:
+  hires: 0
+  promotions: 0
+  demotions: 0
+  firings: 0
+  team_changes: 0
+  authority_changes: 0
+  playoff_appearances_as_coach: 0
+  championships_as_coach: 0
+
+reputation_flags:
+  external_reputation: >
+    Hall of Fame player entering coaching with elite football intelligence but
+    zero coaching experience.
+  internal_reputation: >
+    Unproven coaching candidate with strong teaching instincts and unknown
+    adaptability to subordinate roles.
+  risk_flags:
+    - ego_transition_risk
+    - no_coaching_experience
+  strengths:
+    - teaching_instinct
+    - film_intelligence
+    - positional_expertise_TE
+  notes:
+    - Must prove ability to operate within strict chain of command
+    - Must adapt from player authority to coaching hierarchy
+
+rules:
+
+  valid_categories:
+    - career_start
+    - application
+    - interview
+    - hire
+    - promotion
+    - demotion
+    - resignation
+    - firing
+    - team_change
+    - authority_change
+    - achievement
+    - failure
+    - relationship_shift
+    - injury
+    - legacy
+
+  valid_significance:
+    - minor
+    - moderate
+    - major
+    - career_altering
+
+update_instructions:
+
+  when_to_add_entry: >
+    Add a new entry when any of the following occur:
+      - Job application with real impact
+      - Interview stage advancement
+      - Hire or rejection that changes path
+      - Promotion or demotion
+      - Team change
+      - Authority change
+      - Major achievement or failure
+      - Relationship shift affecting career trajectory
+
+  when_not_to_add_entry: >
+    Do NOT add entries for:
+      - Normal weekly or monthly turns
+      - Routine assignments
+      - Minor trust changes
+      - Standard game results
+      - Small stat changes
+
+  how_to_write_entry: >
+    Each entry must clearly define:
+      - What happened
+      - When it happened
+      - What role/team was involved
+      - Why it matters
+      - Immediate consequences
+      - Long-term implications
+
+  formatting_rules:
+    - Keep entries concise and structured
+    - Avoid narrative fluff
+    - Use tags consistently
+    - Do not duplicate information from State Block
+    - Do not rewrite past entries after new events
+
+  ordering_rule: >
+    Entries must be chronological.
+    New entries are always appended to the end of the history list.

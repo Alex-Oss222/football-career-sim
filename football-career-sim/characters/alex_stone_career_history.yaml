@@ -1,0 +1,109 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2000-01-14'
+  career_turn: 12
+  sim_phase: Season End — Exit Meetings / Offseason Evaluation
+  source_note: Assistant-generated merge-ready update because the original repo file was not directly editable in this environment.
+career_history:
+  - turn: 12
+    date_range: 2000-01-03 to 2000-01-14
+    team: Philadelphia Eagles
+    role: Offensive Quality Control
+    phase: Season End — Exit Meetings / Offseason Evaluation
+    summary: Stone resolved the season_end node through Eagles exit meetings and offseason evaluation after an 8-8 season. The organizational verdict was strongly positive: he learned the system fast enough, became a reliable weekly offensive support coach, handled hierarchy correctly, and earned a return for 2000. He was not promoted, but he exited Year 1 as a legitimate internal development candidate rather than a novelty former star.
+    results:
+      - Received a strong year-one internal evaluation from Reid and an especially strong endorsement from Dowhower.
+      - Retained by Philadelphia for the 2000 cycle as Offensive Quality Control.
+      - Renegotiated and accepted a one-year renewal at $40,000.
+      - Left the season-end node with improved promotion viability but no automatic title change because no opening forced the issue.
+      - Reduced stress somewhat after the season grind, though burnout risk remains real.
+    evaluation_patch:
+      record_context:
+        final_record: 8-8
+        expectation_band_reference: 'Year 1 expectation band in the Eagles dossier was 3-13 to 6-10; this run finished above that band.'
+      retention_decision:
+        status: retained
+        year: 2000
+        title: Offensive Quality Control
+        contract: 1 year | $40,000 | accepted
+      promotion_readiness:
+        level_1_internal_candidate_status: true
+        note: Stone is now viewed as position-coach viable if an opening appears, but remains in QC because stability and further reps are still preferred.
+      personal_update:
+        system_familiarity: 'Reid West Coast offense — learned under one year; functional at weekly speed, not yet fully instinctive under total-chaos pace.'
+        what_hes_building:
+          - Weekly offensive workflow fluency under the Reid/Dowhower structure.
+          - Strong translation from former-player feel into coach-usable packets and cut-ups.
+          - Hierarchy-safe value to the TE and QB support lanes without overstepping room ownership.
+          - Early foundations for Level 1 position-coach readiness inside the Eagles tree.
+    draft_class_carried_forward:
+      - Donovan McNabb — QB, Syracuse
+      - Barry Gardner — LB, Northwestern
+      - John Welbourn — OT, California
+      - Na Brown — WR, North Carolina
+    state_changes:
+      stress:
+        from: 75
+        to: 66
+      job_security:
+        from: 89
+        to: 95
+      salary:
+        from: 32500
+        to: 40000
+      andy_reid:
+        from: 69
+        to: 80
+      rod_dowhower:
+        from: 91
+        to: 95
+      brad_childress:
+        from: 58
+        to: 65
+      pat_shurmur:
+        from: 61
+        to: 68
+    calendar_state:
+      calendar_file: teams/philadelphia_eagles/philadelphia_eagles_calendar_1999.yaml
+      current_node: season_end_completed
+      previous_node: season_end
+      next_node: null
+      completed_nodes:
+        - reid_hired
+        - staff_build_01
+        - staff_build_02
+        - fa_opens
+        - combine_01
+        - fa_march
+        - pre_draft_april
+        - draft_01
+        - draft_02
+        - post_draft
+        - ota_01
+        - minicamp_01
+        - offseason_break
+        - camp_01
+        - pre_wk1
+        - pre_wk2
+        - pre_wk3
+        - pre_wk4
+        - roster_cutdown
+        - reg_wk01
+        - reg_wk02
+        - reg_wk03
+        - reg_wk04
+        - reg_wk05
+        - reg_wk06
+        - reg_wk07
+        - reg_wk08
+        - reg_wk09
+        - reg_wk10
+        - reg_wk11
+        - reg_wk12
+        - reg_wk13
+        - reg_wk14
+        - reg_wk15
+        - reg_wk16
+        - reg_wk17
+        - season_end
