@@ -1,0 +1,1003 @@
+# ============================================================
+# 2012 JACKSONVILLE JAGUARS — SEASON CALENDAR
+# ============================================================
+# World-state support file for coaching simulation engine.
+# NOT a narrative file. This is the source of truth for
+# time progression, turn anchoring, and compression support.
+#
+# IMPORTANT: This file contains NO results, NO scores, NO
+# draft selections (player names), NO win/loss records. Those
+# are determined by the simulation engine during play. This
+# file provides ONLY the structural skeleton of the season —
+# dates, opponents, locations, draft pick slots, and phase
+# labels.
+#
+# PRIOR SEASON NOTE: The 2011 Jaguars went 5-11 under Jack
+# Del Rio (fired Nov 29, 2011) and interim HC Mel Tucker.
+# The 2012 season is the first under new owner Shahid Khan
+# (purchased team from Wayne Weaver) and head coach Mike
+# Mularkey (hired January 10, 2012). Gene Smith remains as GM.
+#
+# GAME WEEK STRUCTURE:
+#   start / end  = the full work-week window around the game
+#   game_date    = the actual day the game is played
+#   The engine uses start/end for the turn boundary and
+#   game_date to know when the game itself falls.
+#
+# Place in: teams/jacksonville_jaguars/jacksonville_jaguars_calendar_2012.yaml
+# ============================================================
+
+meta:
+  team: Jacksonville Jaguars
+  season: 2012
+  level: NFL
+  stadium: EverBank Field
+  training_camp: Florida Blue Health & Wellness Practice Fields, Jacksonville, Florida
+  head_coach: Mike Mularkey
+  offensive_coordinator: Bob Bratkowski
+  defensive_coordinator: Mel Tucker
+  special_teams_coordinator: Joe DeCamillis
+  notable_assistants:
+    - name: Greg Olson
+      role: Assistant Head Coach / Quarterbacks
+    - name: Sylvester Croom
+      role: Running Backs
+    - name: Joe Cullen
+      role: Defensive Line
+    - name: Mark Duffner
+      role: Linebackers
+    - name: Mike Sheppard
+      role: Wide Receivers
+    - name: Jerry Sullivan
+      role: Wide Receivers
+  general_manager: Gene Smith
+  owner: Shahid Khan
+  prior_season_record: 5-11
+  prior_season_record_note: >
+    Jack Del Rio fired November 29, 2011 after going 3-8.
+    Mel Tucker served as interim HC for final 5 games (2-3).
+    Wayne Weaver sold the team to Shahid Khan, with the sale
+    finalized January 4, 2012.
+  division: AFC South
+  draft_position: 7th overall (traded up to 5th)
+  points_for: null
+  points_against: null
+  final_record: null
+  division_finish: null
+  playoffs: null
+
+# ============================================================
+# DRAFT PICKS — ROUND AND NUMBER ONLY (no player names)
+# ============================================================
+
+draft_picks:
+  - round: 1
+    pick: 5
+    notes: >
+      Originally held the 7th overall pick. Traded up to #5
+      with Tampa Bay Buccaneers, sending the 1st-round (#7)
+      and 4th-round (#102) picks to TB.
+  - round: 2
+    pick: 38
+    notes: null
+  - round: 3
+    pick: 70
+    notes: null
+  - round: 5
+    pick: 142
+    notes: null
+  - round: 6
+    pick: 176
+    notes: null
+  - round: 7
+    pick: 228
+    notes: >
+      Acquired from Cincinnati Bengals in trade for S Reggie
+      Nelson.
+  # NOTE: Jaguars had NO 4th-round pick (traded to TB in the
+  # move up to #5) and traded their original 7th-round (#214)
+  # to the New York Jets for FS Dwight Lowery.
+
+# ============================================================
+# CALENDAR NODES
+# ============================================================
+
+calendar:
+
+  # ----------------------------------------------------------
+  # SEASON END / TRANSITION (from 2011)
+  # ----------------------------------------------------------
+
+  - id: season_end_11
+    label: 2011 Season End / Ownership Transition
+    start: 2012-01-02
+    end: 2012-01-09
+    phase: SEASON_END
+    sub_phase: EXIT_INTERVIEWS
+    notes: >
+      Player exit interviews. 5-11 season review. January 4:
+      Shahid Khan's purchase of the team from Wayne Weaver
+      officially closes. New ownership begins evaluating the
+      organization top to bottom. Gene Smith retained as GM
+      (for now). Del Rio already fired; HC search underway.
+
+  # ----------------------------------------------------------
+  # HEAD COACH HIRING
+  # ----------------------------------------------------------
+
+  - id: hc_hire
+    label: Mike Mularkey Hired as Head Coach
+    start: 2012-01-10
+    end: 2012-01-31
+    phase: OFFSEASON
+    sub_phase: COACHING_SEARCH
+    notes: >
+      January 10: Mike Mularkey hired as head coach. Former
+      Atlanta Falcons OC. Staff assembly begins — Bob
+      Bratkowski named OC, Mel Tucker retained as DC. Greg
+      Olson named assistant head coach / QB coach.
+
+  # ----------------------------------------------------------
+  # OFFSEASON STAFF / PLANNING
+  # ----------------------------------------------------------
+
+  - id: staff_assembly
+    label: Staff Assembly / Offseason Planning — February
+    start: 2012-02-01
+    end: 2012-02-21
+    phase: OFFSEASON
+    sub_phase: STAFF_RETENTION_AND_PLANNING
+    notes: >
+      Coaching staff finalized. Roster evaluation begins.
+      Draft board construction starts. Key roster needs
+      include WR, pass rush, secondary depth, punter.
+      Blaine Gabbert entering Year 2 as starting QB.
+
+  # ----------------------------------------------------------
+  # NFL COMBINE
+  # ----------------------------------------------------------
+
+  - id: combine_01
+    label: NFL Scouting Combine
+    start: 2012-02-22
+    end: 2012-02-28
+    phase: COMBINE
+    sub_phase: PROSPECT_EVALUATION
+    notes: >
+      Combine held at Lucas Oil Stadium, Indianapolis.
+      Jaguars hold the 7th overall pick. Primary needs:
+      WR, pass rush, secondary.
+
+  # ----------------------------------------------------------
+  # FREE AGENCY
+  # ----------------------------------------------------------
+
+  - id: fa_pre
+    label: Pre-Free Agency Planning
+    start: 2012-03-01
+    end: 2012-03-12
+    phase: FREE_AGENCY
+    sub_phase: PRE_FREE_AGENCY
+    notes: >
+      Final free agency strategy. Key departures: QB Luke
+      McCown, DT Leger Douzable, WR Kassim Osgood, DE Matt
+      Roth among those departing.
+
+  - id: fa_opens
+    label: Free Agency Opens
+    start: 2012-03-13
+    end: 2012-03-24
+    phase: FREE_AGENCY
+    sub_phase: UFA_SIGNING_PERIOD
+    notes: >
+      March 13: 2012 NFL League Year and free agency begin.
+      Key signings: WR Laurent Robinson (March 14), QB Chad
+      Henne (March 15), CB Aaron Ross (March 20).
+
+  # ----------------------------------------------------------
+  # NFL ANNUAL MEETING
+  # ----------------------------------------------------------
+
+  - id: annual_meeting
+    label: NFL Annual Owner's Meeting
+    start: 2012-03-25
+    end: 2012-03-28
+    phase: LEAGUE_BUSINESS
+    sub_phase: ANNUAL_MEETING
+    notes: >
+      NFL Annual Meeting, Palm Beach, Florida. March 25-28.
+      Shahid Khan's first owners meeting as Jaguars owner.
+
+  # ----------------------------------------------------------
+  # PRE-DRAFT PERIOD
+  # ----------------------------------------------------------
+
+  - id: fa_march_april
+    label: Free Agency / Pro Days — Late March/April
+    start: 2012-03-29
+    end: 2012-04-15
+    phase: FREE_AGENCY
+    sub_phase: PRO_DAYS_AND_VISITS
+    notes: >
+      Continued free agent signings. WR Lee Evans signed
+      April 16 (later released Aug 12). Pro day visits.
+      Private workouts with draft prospects.
+
+  - id: pre_draft_april
+    label: Pre-Draft Final Prep
+    start: 2012-04-16
+    end: 2012-04-25
+    phase: PRE_DRAFT
+    sub_phase: DRAFT_BOARD_FINALIZATION
+    notes: >
+      Final draft board construction. Medical re-checks.
+      Last private workouts. Jaguars evaluating whether
+      to trade up from #7 for a premium target.
+
+  # ----------------------------------------------------------
+  # NFL DRAFT
+  # ----------------------------------------------------------
+
+  - id: draft_01
+    label: NFL Draft — Day 1 (Round 1)
+    start: 2012-04-26
+    end: 2012-04-26
+    phase: DRAFT
+    sub_phase: DAY_ONE
+    notes: >
+      Draft held April 26-28 at Radio City Music Hall, New
+      York City. Jaguars trade up from #7 to #5 with Tampa
+      Bay (sending #7 and #102 to TB). Round 1 only on Day 1.
+      Selections determined by simulation.
+    picks_available:
+      - round: 1
+        pick: 5
+
+  - id: draft_02
+    label: NFL Draft — Day 2 (Rounds 2-3)
+    start: 2012-04-27
+    end: 2012-04-27
+    phase: DRAFT
+    sub_phase: DAY_TWO
+    notes: >
+      Rounds 2-3. Jaguars hold picks #38 and #70.
+      Selections determined by simulation.
+    picks_available:
+      - round: 2
+        pick: 38
+      - round: 3
+        pick: 70
+
+  - id: draft_03
+    label: NFL Draft — Day 3 (Rounds 4-7)
+    start: 2012-04-28
+    end: 2012-04-28
+    phase: DRAFT
+    sub_phase: DAY_THREE
+    notes: >
+      Rounds 4-7. Jaguars have NO 4th-round pick (traded to
+      TB). Picks: #142 (R5), #176 (R6), #228 (R7 from CIN).
+      Original 7th-round (#214) traded to NYJ for Dwight
+      Lowery. UDFA signing period opens immediately after
+      draft.
+    picks_available:
+      - round: 5
+        pick: 142
+      - round: 6
+        pick: 176
+      - round: 7
+        pick: 228
+
+  # ----------------------------------------------------------
+  # POST-DRAFT / OFFSEASON PROGRAM
+  # ----------------------------------------------------------
+
+  - id: post_draft
+    label: Post-Draft / UDFA Signings
+    start: 2012-04-29
+    end: 2012-05-18
+    phase: POST_DRAFT
+    sub_phase: UDFA_AND_ROSTER_BUILDING
+    notes: >
+      UDFA signings (Antwon Blake, Mike Brewster, Kevin
+      Elliott, Julian Stanford among those making roster).
+      Rookie orientation. Voluntary veteran workouts begin.
+      Year 1 under Mularkey — new offensive system
+      installation.
+
+  - id: ota_01
+    label: OTAs / Organized Team Activities
+    start: 2012-05-21
+    end: 2012-06-08
+    phase: OTAS
+    sub_phase: VOLUNTARY_WORKOUTS
+    notes: >
+      Voluntary OTAs. Year 1 install under Mularkey and
+      Bratkowski. Gabbert working on mechanics and
+      confidence. Non-contact only.
+
+  - id: minicamp_01
+    label: Mandatory Minicamp
+    start: 2012-06-12
+    end: 2012-06-14
+    phase: MINICAMP
+    sub_phase: MANDATORY
+    notes: >
+      Mandatory three-day minicamp at Florida Blue Health &
+      Wellness Practice Fields. All players required to
+      attend. MJD holdout situation developing — wants new
+      contract.
+
+  - id: offseason_break
+    label: Offseason Break
+    start: 2012-06-15
+    end: 2012-07-25
+    phase: OFFSEASON_BREAK
+    notes: >
+      No organized team activities. Players conditioning on
+      their own. Maurice Jones-Drew holdout continues —
+      wants a new contract. Coaches continue game-planning
+      and playbook development.
+
+  # ----------------------------------------------------------
+  # TRAINING CAMP
+  # ----------------------------------------------------------
+
+  - id: camp_01
+    label: Training Camp Opens
+    start: 2012-07-26
+    end: 2012-08-09
+    phase: CAMP
+    sub_phase: FULL_PADS
+    notes: >
+      Training camp at Florida Blue Health & Wellness Practice
+      Fields, Jacksonville. Players report July 26, first
+      practice July 27. MJD holdout ongoing — eventually
+      reports. Gabbert competing with Chad Henne. 90-man
+      roster must be trimmed to 53.
+
+  # ----------------------------------------------------------
+  # PRESEASON
+  # ----------------------------------------------------------
+
+  - id: pre_wk1
+    label: Preseason Week 1
+    start: 2012-08-06
+    end: 2012-08-10
+    game_date: 2012-08-10
+    game_day: Friday
+    phase: PRESEASON
+    sub_phase: PRESEASON_GAME
+    opponent: New York Giants
+    location: Home
+    result: null
+    notes: >
+      EverBank Field.
+
+  - id: pre_wk2
+    label: Preseason Week 2
+    start: 2012-08-13
+    end: 2012-08-17
+    game_date: 2012-08-17
+    game_day: Friday
+    phase: PRESEASON
+    sub_phase: PRESEASON_GAME
+    opponent: New Orleans Saints
+    location: Away
+    result: null
+    notes: >
+      at Mercedes-Benz Superdome, New Orleans.
+
+  - id: pre_wk3
+    label: Preseason Week 3
+    start: 2012-08-20
+    end: 2012-08-23
+    game_date: 2012-08-23
+    game_day: Thursday
+    phase: PRESEASON
+    sub_phase: PRESEASON_GAME
+    opponent: Baltimore Ravens
+    location: Away
+    result: null
+    notes: >
+      at M&T Bank Stadium, Baltimore.
+
+  - id: pre_wk4
+    label: Preseason Week 4
+    start: 2012-08-27
+    end: 2012-08-30
+    game_date: 2012-08-30
+    game_day: Thursday
+    phase: PRESEASON
+    sub_phase: PRESEASON_GAME
+    opponent: Atlanta Falcons
+    location: Home
+    result: null
+    notes: >
+      EverBank Field. Final preseason game.
+
+  # ----------------------------------------------------------
+  # ROSTER CUTDOWN
+  # ----------------------------------------------------------
+
+  - id: roster_cutdown
+    label: Roster Cutdown to 53
+    start: 2012-08-31
+    end: 2012-09-01
+    phase: ROSTER_CUTDOWN
+    sub_phase: FINAL_CUTS
+    notes: >
+      Final roster cuts. 90-man to 53. Practice squad
+      formation. Waiver wire. Final game-plan prep for Week 1.
+
+  # ----------------------------------------------------------
+  # REGULAR SEASON
+  # ----------------------------------------------------------
+
+  - id: reg_wk01
+    label: Week 1
+    start: 2012-09-03
+    end: 2012-09-09
+    game_date: 2012-09-09
+    game_day: Sunday
+    phase: REGULAR_SEASON
+    sub_phase: GAME_WEEK
+    opponent: Minnesota Vikings
+    location: Away
+    result: null
+    record: null
+    notes: >
+      Season opener at Mall of America Field (Metrodome),
+      Minneapolis.
+
+  - id: reg_wk02
+    label: Week 2
+    start: 2012-09-10
+    end: 2012-09-16
+    game_date: 2012-09-16
+    game_day: Sunday
+    phase: REGULAR_SEASON
+    sub_phase: GAME_WEEK
+    opponent: Houston Texans
+    location: Home
+    result: null
+    record: null
+    notes: >
+      EverBank Field. AFC South divisional game.
+
+  - id: reg_wk03
+    label: Week 3
+    start: 2012-09-17
+    end: 2012-09-23
+    game_date: 2012-09-23
+    game_day: Sunday
+    phase: REGULAR_SEASON
+    sub_phase: GAME_WEEK
+    opponent: Indianapolis Colts
+    location: Away
+    result: null
+    record: null
+    notes: >
+      at Lucas Oil Stadium. AFC South divisional game.
+
+  - id: reg_wk04
+    label: Week 4
+    start: 2012-09-24
+    end: 2012-09-30
+    game_date: 2012-09-30
+    game_day: Sunday
+    phase: REGULAR_SEASON
+    sub_phase: GAME_WEEK
+    opponent: Cincinnati Bengals
+    location: Home
+    result: null
+    record: null
+    notes: >
+      EverBank Field.
+
+  - id: reg_wk05
+    label: Week 5
+    start: 2012-10-01
+    end: 2012-10-07
+    game_date: 2012-10-07
+    game_day: Sunday
+    phase: REGULAR_SEASON
+    sub_phase: GAME_WEEK
+    opponent: Chicago Bears
+    location: Home
+    result: null
+    record: null
+    notes: >
+      EverBank Field.
+
+  - id: reg_wk06
+    label: Week 6 — BYE
+    start: 2012-10-08
+    end: 2012-10-14
+    game_date: null
+    game_day: null
+    phase: REGULAR_SEASON
+    sub_phase: BYE_WEEK
+    opponent: null
+    location: null
+    result: null
+    record: null
+    notes: >
+      Bye week. Mid-season bye (Week 6 of 17).
+
+  - id: reg_wk07
+    label: Week 7
+    start: 2012-10-15
+    end: 2012-10-21
+    game_date: 2012-10-21
+    game_day: Sunday
+    phase: REGULAR_SEASON
+    sub_phase: GAME_WEEK
+    opponent: Oakland Raiders
+    location: Away
+    result: null
+    record: null
+    notes: >
+      at O.co Coliseum, Oakland.
+
+  - id: reg_wk08
+    label: Week 8
+    start: 2012-10-22
+    end: 2012-10-28
+    game_date: 2012-10-28
+    game_day: Sunday
+    phase: REGULAR_SEASON
+    sub_phase: GAME_WEEK
+    opponent: Green Bay Packers
+    location: Away
+    result: null
+    record: null
+    notes: >
+      at Lambeau Field, Green Bay.
+
+  - id: reg_wk09
+    label: Week 9
+    start: 2012-10-29
+    end: 2012-11-04
+    game_date: 2012-11-04
+    game_day: Sunday
+    phase: REGULAR_SEASON
+    sub_phase: GAME_WEEK
+    opponent: Detroit Lions
+    location: Home
+    result: null
+    record: null
+    notes: >
+      EverBank Field.
+
+  - id: reg_wk10
+    label: Week 10
+    start: 2012-11-05
+    end: 2012-11-08
+    game_date: 2012-11-08
+    game_day: Thursday
+    phase: REGULAR_SEASON
+    sub_phase: GAME_WEEK
+    opponent: Indianapolis Colts
+    location: Home
+    result: null
+    record: null
+    notes: >
+      EverBank Field. Thursday Night Football (NFL Network).
+      AFC South divisional game. Short week.
+
+  - id: reg_wk11
+    label: Week 11
+    start: 2012-11-12
+    end: 2012-11-18
+    game_date: 2012-11-18
+    game_day: Sunday
+    phase: REGULAR_SEASON
+    sub_phase: GAME_WEEK
+    opponent: Houston Texans
+    location: Away
+    result: null
+    record: null
+    notes: >
+      at Reliant Stadium, Houston. AFC South divisional game.
+
+  - id: reg_wk12
+    label: Week 12
+    start: 2012-11-19
+    end: 2012-11-25
+    game_date: 2012-11-25
+    game_day: Sunday
+    phase: REGULAR_SEASON
+    sub_phase: GAME_WEEK
+    opponent: Tennessee Titans
+    location: Home
+    result: null
+    record: null
+    notes: >
+      EverBank Field. AFC South divisional game.
+
+  - id: reg_wk13
+    label: Week 13
+    start: 2012-11-26
+    end: 2012-12-02
+    game_date: 2012-12-02
+    game_day: Sunday
+    phase: REGULAR_SEASON
+    sub_phase: GAME_WEEK
+    opponent: Buffalo Bills
+    location: Away
+    result: null
+    record: null
+    notes: >
+      at Ralph Wilson Stadium, Orchard Park, NY.
+
+  - id: reg_wk14
+    label: Week 14
+    start: 2012-12-03
+    end: 2012-12-09
+    game_date: 2012-12-09
+    game_day: Sunday
+    phase: REGULAR_SEASON
+    sub_phase: GAME_WEEK
+    opponent: New York Jets
+    location: Home
+    result: null
+    record: null
+    notes: >
+      EverBank Field.
+
+  - id: reg_wk15
+    label: Week 15
+    start: 2012-12-10
+    end: 2012-12-16
+    game_date: 2012-12-16
+    game_day: Sunday
+    phase: REGULAR_SEASON
+    sub_phase: GAME_WEEK
+    opponent: Miami Dolphins
+    location: Away
+    result: null
+    record: null
+    notes: >
+      at Sun Life Stadium, Miami Gardens.
+
+  - id: reg_wk16
+    label: Week 16
+    start: 2012-12-17
+    end: 2012-12-23
+    game_date: 2012-12-23
+    game_day: Sunday
+    phase: REGULAR_SEASON
+    sub_phase: GAME_WEEK
+    opponent: New England Patriots
+    location: Home
+    result: null
+    record: null
+    notes: >
+      EverBank Field.
+
+  - id: reg_wk17
+    label: Week 17
+    start: 2012-12-24
+    end: 2012-12-30
+    game_date: 2012-12-30
+    game_day: Sunday
+    phase: REGULAR_SEASON
+    sub_phase: GAME_WEEK
+    opponent: Tennessee Titans
+    location: Away
+    result: null
+    record: null
+    notes: >
+      Season finale at LP Field, Nashville. AFC South
+      divisional game.
+
+  # ----------------------------------------------------------
+  # PLAYOFFS (if applicable — determined by engine)
+  # ----------------------------------------------------------
+
+  - id: playoff_wildcard
+    label: Wild Card Round
+    start: 2013-01-05
+    end: 2013-01-06
+    game_date: null
+    game_day: null
+    phase: PLAYOFFS
+    sub_phase: WILD_CARD
+    opponent: null
+    location: null
+    result: null
+    record: null
+    notes: >
+      Wild Card round January 5-6, 2013. Activates only
+      if Jaguars qualify. Engine sets all fields.
+
+  - id: playoff_divisional
+    label: Divisional Round
+    start: 2013-01-12
+    end: 2013-01-13
+    game_date: null
+    game_day: null
+    phase: PLAYOFFS
+    sub_phase: DIVISIONAL
+    opponent: null
+    location: null
+    result: null
+    record: null
+    notes: >
+      Divisional round January 12-13, 2013. Activates only
+      if Jaguars win Wild Card.
+
+  - id: playoff_championship
+    label: AFC Championship
+    start: 2013-01-20
+    end: 2013-01-20
+    game_date: null
+    game_day: null
+    phase: PLAYOFFS
+    sub_phase: CONFERENCE_CHAMPIONSHIP
+    opponent: null
+    location: null
+    result: null
+    record: null
+    notes: >
+      AFC Championship January 20, 2013. Activates only
+      if Jaguars win Divisional.
+
+  - id: super_bowl
+    label: Super Bowl XLVII
+    start: 2013-02-03
+    end: 2013-02-03
+    game_date: 2013-02-03
+    game_day: Sunday
+    phase: PLAYOFFS
+    sub_phase: SUPER_BOWL
+    opponent: null
+    location: Mercedes-Benz Superdome, New Orleans
+    result: null
+    record: null
+    notes: >
+      Super Bowl XLVII, February 3, 2013, New Orleans.
+      Activates only if Jaguars win AFC Championship.
+
+  # ----------------------------------------------------------
+  # SEASON END
+  # ----------------------------------------------------------
+
+  - id: season_end
+    label: Season End / Exit Meetings
+    start: 2013-01-07
+    end: 2013-01-18
+    phase: SEASON_END
+    sub_phase: EXIT_INTERVIEWS
+    notes: >
+      Player exit interviews. Coaching staff evaluations.
+      Season review. Begin planning for 2013 offseason.
+      Start date adjusts based on playoff elimination.
+      NOTE: In real history, Mularkey was fired January 10,
+      2013 and Gene Smith was fired January 8, 2013.
+
+# ============================================================
+# RUNTIME STATE (for engine sync)
+# ============================================================
+
+runtime:
+  current_node: season_end_11
+  previous_node: null
+  next_node: hc_hire
+  completed_nodes: []
+
+# ============================================================
+# COMPRESSION MAP (for monthly-turn roles)
+# ============================================================
+
+compression_map:
+
+  - month: 2012-01
+    label: January 2012
+    contained_nodes:
+      - season_end_11
+      - hc_hire
+    primary_event: hc_hire
+    summary_hint: >
+      2011 season ends at 5-11. Khan ownership finalized
+      Jan 4. Mularkey hired as HC Jan 10. Staff assembly
+      begins.
+
+  - month: 2012-02
+    label: February 2012
+    contained_nodes:
+      - staff_assembly
+      - combine_01
+    primary_event: combine_01
+    summary_hint: >
+      Staff finalized. NFL Combine Feb 22-28 at Lucas Oil
+      Stadium. Jaguars hold #7 overall pick. Key needs:
+      WR, pass rush, secondary.
+
+  - month: 2012-03
+    label: March 2012
+    contained_nodes:
+      - fa_pre
+      - fa_opens
+      - annual_meeting
+      - fa_march_april
+    primary_event: fa_opens
+    summary_hint: >
+      Free agency opens March 13. Key signings: Laurent
+      Robinson, Chad Henne, Aaron Ross. NFL Annual Meeting
+      March 25-28 in Palm Beach. Khan's first owners meeting.
+
+  - month: 2012-04
+    label: April 2012
+    contained_nodes:
+      - fa_march_april
+      - pre_draft_april
+      - draft_01
+      - draft_02
+      - draft_03
+      - post_draft
+    primary_event: draft_01
+    summary_hint: >
+      Draft board finalized. NFL Draft April 26-28 at Radio
+      City Music Hall. Jaguars trade up from #7 to #5 (send
+      #7 and #102 to TB). Picks: R1 #5, R2 #38, R3 #70,
+      R5 #142, R6 #176, R7 #228. No R4 pick (traded to TB).
+      UDFA signings begin post-draft.
+
+  - month: 2012-05
+    label: May 2012
+    contained_nodes:
+      - post_draft
+      - ota_01
+    primary_event: ota_01
+    summary_hint: >
+      UDFA signings wrap up. OTAs begin. Year 1 install under
+      Mularkey and Bratkowski. Gabbert entering Year 2 as
+      starter.
+
+  - month: 2012-06
+    label: June 2012
+    contained_nodes:
+      - ota_01
+      - minicamp_01
+      - offseason_break
+    primary_event: minicamp_01
+    summary_hint: >
+      OTAs continue. Mandatory minicamp June 12-14.
+      MJD holdout developing. Offseason break begins June 15.
+
+  - month: 2012-07
+    label: July 2012
+    contained_nodes:
+      - offseason_break
+      - camp_01
+    primary_event: camp_01
+    summary_hint: >
+      Offseason break ends. Training camp opens July 26
+      at Florida Blue Practice Fields, Jacksonville. MJD
+      holdout continues. Gabbert vs. Henne QB competition.
+
+  - month: 2012-08
+    label: August 2012
+    contained_nodes:
+      - camp_01
+      - pre_wk1
+      - pre_wk2
+      - pre_wk3
+      - pre_wk4
+      - roster_cutdown
+    primary_event: roster_cutdown
+    summary_hint: >
+      Preseason: vs Giants (8/10), at Saints (8/17), at
+      Ravens (8/23), vs Falcons (8/30). Final roster cutdown
+      to 53. Practice squad formation.
+
+  - month: 2012-09
+    label: September 2012
+    contained_nodes:
+      - roster_cutdown
+      - reg_wk01
+      - reg_wk02
+      - reg_wk03
+      - reg_wk04
+    primary_event: reg_wk01
+    summary_hint: >
+      Regular season opens. Four games: at Vikings (9/9),
+      vs Texans (9/16), at Colts (9/23), vs Bengals (9/30).
+
+  - month: 2012-10
+    label: October 2012
+    contained_nodes:
+      - reg_wk05
+      - reg_wk06
+      - reg_wk07
+      - reg_wk08
+    primary_event: reg_wk05
+    summary_hint: >
+      Three games plus bye: vs Bears (10/7), Bye Week 6,
+      at Raiders (10/21), at Packers (10/28).
+
+  - month: 2012-11
+    label: November 2012
+    contained_nodes:
+      - reg_wk09
+      - reg_wk10
+      - reg_wk11
+      - reg_wk12
+    primary_event: reg_wk10
+    summary_hint: >
+      Four games: vs Lions (11/4), vs Colts (11/8, Thu),
+      at Texans (11/18), vs Titans (11/25).
+
+  - month: 2012-12
+    label: December 2012
+    contained_nodes:
+      - reg_wk13
+      - reg_wk14
+      - reg_wk15
+      - reg_wk16
+      - reg_wk17
+    primary_event: reg_wk17
+    summary_hint: >
+      Five games: at Bills (12/2), vs Jets (12/9), at
+      Dolphins (12/16), vs Patriots (12/23), at Titans
+      (12/30).
+
+  - month: 2013-01
+    label: January 2013
+    contained_nodes:
+      - playoff_wildcard
+      - playoff_divisional
+      - playoff_championship
+      - season_end
+    primary_event: season_end
+    summary_hint: >
+      Playoffs (if qualified). Wild Card Jan 5-6. Divisional
+      Jan 12-13. AFC Championship Jan 20. Season-end exit
+      meetings after elimination.
+
+  - month: 2013-02
+    label: February 2013
+    contained_nodes:
+      - super_bowl
+    primary_event: super_bowl
+    summary_hint: >
+      Super Bowl XLVII, February 3, 2013, New Orleans.
+      Activates only if Jaguars win AFC Championship.
+
+# ============================================================
+# ENGINE RULES (patch into Master Engine)
+# ============================================================
+# 1. If a calendar file exists, it is the SOURCE OF TRUTH
+#    for time progression. The engine stops inferring dates.
+# 2. Turn advancement moves by calendar node(s), not by
+#    guessed date jumps.
+# 3. Weekly-turn roles (HC, Coordinator) consume ONE node
+#    per turn.
+# 4. Monthly-turn roles (Position Coach, QC, GA) consume
+#    ALL nodes within the current month per turn, using
+#    the compression_map to identify primary_event and
+#    summary_hint.
+# 5. Zoom-in turns can temporarily isolate ONE node inside
+#    a monthly block for detailed narration.
+# 6. The engine must update runtime fields after every turn:
+#    - current_node advances
+#    - previous_node updates
+#    - next_node updates
+#    - completed_nodes appends consumed node IDs
+# 7. Game results (result, record) are WRITTEN by the engine
+#    AFTER simulation resolves each game. They are null until
+#    played.
+# 8. Draft selections are determined by the simulation during
+#    the DRAFT phase nodes. The calendar only provides the
+#    date, pick round/number, NOT the player selected.
+# 9. start/end define the FULL WEEK WINDOW for the node.
+#    game_date is the actual game day within that window.
+#    The engine uses start/end for turn boundaries and
+#    game_date for event timing within the turn.
+# 10. Playoff nodes activate ONLY if the Jaguars qualify.
+#     The engine must check regular season results before
+#     advancing into playoff nodes. Inactive playoff nodes
+#     are skipped and the engine advances to season_end.
+# ============================================================
