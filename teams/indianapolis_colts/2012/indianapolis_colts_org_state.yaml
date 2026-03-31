@@ -1,0 +1,338 @@
+# INDIANAPOLIS COLTS — ORGANIZATIONAL STATE
+# Runtime state file: updates per sim turn.
+# Sim Rule: Real-history baseline through end of 2011 season. No actual future outcomes.
+# Date: January 2012 (HC search active)
+
+---
+
+meta:
+  team: Indianapolis Colts
+  date: 2012-01-17
+  phase: OFFSEASON
+  sub_phase: HC_SEARCH
+  sim_status: ACTIVE
+
+---
+
+# CURRENT PHASE
+
+phase_detail:
+  name: Head Coach Search — Post-Manning Reset
+  description: >
+    2011 season complete (2-14, worst in NFL). Bill Polian and Chris Polian fired
+    January 2, 2012. Ryan Grigson hired as new GM January 11, 2012. Jim Caldwell
+    fired as HC January 17, 2012. HC search is active. Peyton Manning's release
+    expected in March (before $28M bonus). Colts hold #1 overall pick — Andrew Luck
+    is the expected selection. Complete organizational reset underway.
+  next_phase: HC_HIRE_AND_STAFF_BUILD
+  key_dates:
+    polians_fired: 2012-01-02
+    grigson_hired: 2012-01-11
+    caldwell_fired: 2012-01-17
+    hc_interviews_window: 2012-01-18 through ~2012-02-01
+    expected_hc_hire: ~2012-01-25 to 2012-02-05
+    manning_bonus_deadline: 2012-03-08
+    expected_manning_release: ~2012-03-07
+    free_agency_opens: ~2012-03-13
+    nfl_combine: 2012-02-22 through 2012-02-28
+    nfl_draft: 2012-04-26 through 2012-04-28
+    otas_begin: ~2012-05-21
+    training_camp: ~2012-07-25
+    season_opener: ~2012-09-09
+
+---
+
+# RECORD & EXPECTATIONS
+
+record:
+  previous_season: 2-14
+  previous_season_context: >
+    Worst record in Colts' Indianapolis era. Started 0-13. Won 2 of final 3 games
+    (under backup QB Dan Orlovsky). Peyton Manning missed entire season with neck
+    surgery. The 2-14 record exposed the roster as Manning-dependent — without him,
+    the team had no competitive identity. SRS of -11.29 (dead last in NFL).
+  previous_decade_context: >
+    2000-2010: The Manning Decade. 115-45 regular season record. Nine consecutive
+    playoff appearances (2002-2010). Two Super Bowl appearances (won XLI in 2006,
+    lost XLIV in 2009). The most successful era in franchise history. All of it
+    built around Peyton Manning.
+  year_1_hc_expectation_band: 4-12 to 8-8
+  year_1_evaluation_criteria: luck_development_and_process
+  patience_level: MODERATE_TO_HIGH
+  patience_notes: >
+    Irsay understands a rebuild is necessary. He fired the Polians and Caldwell,
+    which signals willingness to start over. But Irsay is emotionally invested and
+    has experienced winning for a decade. His patience has limits. The HC gets a
+    Year 1 grace period but must show tangible progress. If Year 2 does not show
+    significant improvement, the seat warms quickly. Irsay is capable of decisive
+    action (he fired the Polians one day after the season ended).
+  playoff_expectation_year_1: NONE
+  playoff_expectation_year_2: REALISTIC_HOPE
+
+---
+
+# OWNERSHIP
+
+ownership:
+  owner: Jim Irsay
+  title: Owner and CEO
+  age: 52
+  tenure: Owner since 1997 (inherited from father Robert Irsay)
+  irsay_profile:
+    background: >
+      Inherited the Colts from his father Robert Irsay, who controversially moved
+      the franchise from Baltimore to Indianapolis in 1984. Jim became majority owner
+      in 1997. Presided over the Peyton Manning era — the most successful period in
+      franchise history. Deeply emotional, publicly passionate, and heavily involved
+      in football operations. Known for social media presence (Twitter). Has stated
+      willingness to spend whatever is necessary to win.
+    management_style: >
+      Hands-on. Emotional. Makes public statements that sometimes create headlines.
+      Capable of bold, decisive action (firing the Polians). Wants to feel connected
+      to the football operation — expects regular communication from the HC and GM.
+      Not content to be a silent owner. Values loyalty and emotional connection.
+    what_irsay_wants_in_hc:
+      - "Someone who can develop Andrew Luck into a franchise QB"
+      - "A strong leader who can rebuild the culture post-Manning"
+      - "A teacher and developer — not just a game-day tactician"
+      - "Someone who can handle the Manning transition respectfully"
+      - "An HC who communicates openly and keeps Irsay informed"
+      - "A winner — Irsay has tasted winning and wants it back"
+    what_irsay_fears:
+      - "Hiring the wrong guy and wasting the Luck opportunity"
+      - "A Manning-like departure becoming ugly or damaging"
+      - "Years of losing eroding the franchise's standing in the league"
+      - "Public perception that the organization has lost its way"
+    risk_factors:
+      - Emotional volatility in public statements
+      - High expectations from a decade of winning
+      - May not be fully patient with a rebuild timeline
+      - Personal issues (substance abuse history has surfaced in media)
+
+---
+
+# GM STATUS
+
+gm:
+  name: Ryan Grigson
+  title: General Manager
+  hired: 2012-01-11
+  previous_role: VP of Player Personnel, Philadelphia Eagles (2004-2011)
+  background: >
+    Former offensive lineman at Purdue. Entered NFL scouting with the St. Louis Rams
+    (1999-2003). Joined the Philadelphia Eagles in 2004 as a scout. Rose through the
+    Eagles' personnel department to VP of Player Personnel. First GM job. His scouting
+    philosophy was shaped by the Eagles' organization under Andy Reid and Tom Heckert/
+    Howie Roseman.
+  eagles_connection_to_stone: >
+    Grigson joined the Eagles in 2004. Stone was on the Eagles coaching staff from
+    1999-2004 (QC 1999-2001, TE coach 2002-2004). Grigson and Stone overlapped in
+    the Eagles organization for at least one year (2004). The exact nature of their
+    interaction is unknown — coaching staff and scouting department operate in adjacent
+    but separate worlds. However, shared Eagles organizational experience provides
+    common reference points, shared language, and mutual acquaintances.
+  grigson_priorities:
+    - "Draft Andrew Luck #1 overall"
+    - "Navigate the Manning release"
+    - "Begin defensive roster rebuild through draft and free agency"
+    - "Hire an HC who can develop Luck and rebuild the program"
+    - "Establish credibility as a first-time GM"
+  grigson_strengths:
+    - Deep scouting experience across two organizations
+    - Understanding of roster construction from the Eagles' model
+    - Fresh perspective — not tied to the Polian era
+  grigson_weaknesses:
+    - First-time GM with no proven track record
+    - Must learn to manage cap, contracts, and organizational politics simultaneously
+    - Will be evaluated immediately — the Manning release and Luck draft are high-stakes decisions
+
+---
+
+# QB SITUATION
+
+quarterback:
+  franchise_qb_departing: Peyton Manning
+  manning_status: >
+    Will almost certainly be released before March 8, 2012 ($28M bonus deadline).
+    Manning has had multiple neck surgeries. His ability to play at an elite level
+    is uncertain. At 36, even if healthy, his window is limited. The Colts cannot
+    justify paying $28M to a QB with an uncertain medical outlook when Andrew Luck
+    is available at #1. The Manning release will be one of the most significant
+    personnel decisions in NFL history.
+  incoming_franchise_qb: Andrew Luck (projected #1 overall pick)
+  luck_profile: >
+    Stanford QB. 6'4", 235 lbs. Consensus #1 prospect. Considered the best QB
+    prospect since Peyton Manning (or John Elway). Elite football intelligence,
+    arm talent, mobility, toughness, and leadership. Pro-ready by college standards
+    but still a rookie who must learn NFL speed, complexity, and physicality. The
+    HC who develops Luck inherits the most valuable asset in the NFL — a generational
+    QB on a rookie contract.
+  backup_options: Curtis Painter (not viable), Dan Orlovsky (journeyman, 2-3 as starter in 2011)
+  year_1_qb_priorities:
+    - "Draft Andrew Luck #1 overall"
+    - "Release Manning respectfully and decisively before bonus deadline"
+    - "Design an offensive system tailored to Luck's strengths"
+    - "Protect Luck — OL improvement is critical"
+    - "Balance winning now against long-term QB development"
+    - "Manage expectations — Luck is not Manning on Day 1"
+
+---
+
+# STAFF STATUS
+
+staff:
+  status: FULLY_OPEN
+  note: >
+    Caldwell fired January 17, 2012. Entire coaching staff is available for
+    replacement. The new HC builds from scratch. Same dynamic as Jacksonville —
+    total control but massive organizational task.
+  previous_staff_of_note:
+    - { name: Clyde Christensen, title: Offensive Coordinator, note: "Manning-era OC. Fired with Caldwell." }
+    - { name: Larry Coyer, title: Defensive Coordinator, note: "Defense was poor. Fired." }
+    - { name: Ray Rychleski, title: Special Teams Coordinator, note: "Available." }
+    - { name: Ron Turner, title: Quarterbacks Coach, note: "Available." }
+    - { name: Frank Reich, title: Wide Receivers Coach, note: "Notable — future HC candidate. Available." }
+    - { name: Pete Metzelaars, title: Offensive Line Coach, note: "Available." }
+    - { name: Jim Bob Cooter, title: Offensive Assistant, note: "Notable — future coordinator. Young, developing." }
+    - { name: John Teerlinck, title: Defensive Line Coach, note: "Longtime coach. Available." }
+    - { name: Alan Williams, title: Defensive Backs Coach, note: "Available." }
+    - { name: Mike Murphy, title: Linebackers Coach / Interim DC, note: "Available." }
+  open_positions:
+    - Head Coach
+    - Offensive Coordinator
+    - Defensive Coordinator
+    - Special Teams Coordinator
+    - All position coaches
+    - All quality control positions
+
+---
+
+# KEY ROSTER NOTES
+
+roster:
+  overall_talent: POOR_WITHOUT_MANNING
+  roster_status: >
+    The 2-14 record is the roster's true talent level without a franchise QB. The
+    Polian era prioritized offensive skill positions around Manning at the expense
+    of defense, depth, and the running game. The roster needs comprehensive rebuilding
+    on defense, OL, and at most skill positions. The one saving grace is the #1 pick
+    and the expectation that Andrew Luck will be a franchise QB within 1-2 years.
+  notable_current_players:
+    - { name: Reggie Wayne, pos: WR, age: 33, note: "Still productive. Veteran presence. Will mentor Luck." }
+    - { name: Pierre Garçon, pos: WR, age: 25, note: "Talented. FA after 2012. May leave." }
+    - { name: Robert Mathis, pos: OLB/DE, age: 31, note: "9.5 sacks in 2011. Heart of the defense." }
+    - { name: Dwight Freeney, pos: DE, age: 32, note: "8.5 sacks. Declining. Expensive. May be released." }
+    - { name: Antoine Bethea, pos: S, age: 27, note: "Solid safety. 96 tackles. Reliable." }
+    - { name: Pat Angerer, pos: LB, age: 25, note: "138 tackles in 2011. Emerging." }
+    - { name: Anthony Castonzo, pos: OT, age: 23, note: "2011 1st rounder. Future LT." }
+    - { name: Adam Vinatieri, pos: K, age: 39, note: "Elite kicker. Ageless." }
+    - { name: Pat McAfee, pos: P, age: 24, note: "Strong punter." }
+    - { name: Jeff Saturday, pos: C, age: 36, note: "Legendary center. Aging out. Community icon." }
+    - { name: Donald Brown, pos: RB, age: 24, note: "2009 1st rounder. Underperformed. Has ability." }
+  roster_weakness_areas:
+    - defense_overall: "Under-invested for years. Freeney/Mathis aging. Secondary thin. LB corps thin. Multi-year rebuild."
+    - offensive_line_interior: "Saturday aging. Guards inconsistent. Must rebuild around Castonzo."
+    - running_game: "No feature back. Pass-first roster for a decade. RB room needs talent."
+    - depth: "2-14 exposed complete lack of depth at every position. One injury away from collapse at most spots."
+    - tight_end: "Dallas Clark aging and declining. Need a new TE."
+  roster_strength_areas:
+    - draft_position: "#1 overall pick. Andrew Luck. The single most valuable asset in the NFL."
+    - wide_receiver_near_term: "Wayne is still productive. Garçon is talented (but may leave)."
+    - kicking: "Vinatieri + McAfee = best specialist duo in the NFL."
+    - facility: "Lucas Oil Stadium is top-tier."
+    - cap_flexibility: "Manning's release frees significant cap space for 2012 free agency."
+
+---
+
+# MAJOR ORG PRESSURE POINTS
+
+pressure_points:
+  - id: manning_release
+    description: >
+      Peyton Manning must be released before March 8 ($28M bonus). This is the most
+      emotionally charged personnel decision in franchise history. The HC must handle
+      it with dignity, respect, and decisiveness. Mishandling this creates a media
+      firestorm and alienates the fanbase.
+    severity: CRITICAL
+    timeline: MARCH_2012
+
+  - id: luck_development
+    description: >
+      Developing Andrew Luck is the HC's primary job. Everything else is secondary.
+      If Luck develops, the franchise is set for a decade. If Luck is mishandled —
+      poor scheme, inadequate protection, too much pressure too fast — the franchise
+      loses a generational opportunity.
+    severity: CRITICAL
+    timeline: FULL_2012_AND_BEYOND
+
+  - id: defensive_rebuild
+    description: >
+      The defense was 28th in points allowed in 2011. Freeney and Mathis are aging.
+      The secondary is thin. The defensive roster needs a comprehensive rebuild through
+      draft and free agency over 2-3 years. The HC's DC hire is the most important
+      staff decision.
+    severity: HIGH
+    timeline: MULTI_YEAR
+
+  - id: irsay_management
+    description: >
+      Irsay is emotionally invested, publicly opinionated, and accustomed to winning.
+      Managing the owner relationship requires transparency, confidence, and the
+      ability to educate without condescending. Losing Irsay's confidence is career-ending.
+    severity: HIGH
+    timeline: ONGOING
+
+  - id: manning_shadow
+    description: >
+      Every decision, every loss, every Luck mistake will be compared to the Manning era.
+      The media and fanbase will make this comparison constantly. The HC must have the
+      psychological resilience to operate under this shadow without being defined by it.
+    severity: MODERATE
+    timeline: YEARS_1_THROUGH_3
+
+  - id: gm_alignment
+    description: >
+      Both the HC and GM are new. They must build alignment on roster construction,
+      draft philosophy, and free agency strategy from scratch. Early misalignment
+      creates friction that compounds over time.
+    severity: MODERATE
+    timeline: IMMEDIATE
+
+---
+
+# OFFSEASON OPERATIONAL PRIORITIES
+
+offseason_priorities:
+  - priority: Hire Head Coach
+    detail: >
+      Grigson is now GM. The HC hire is the next critical decision. Grigson and Irsay
+      are both involved in the search. The hire will define the post-Manning era.
+  - priority: Build coaching staff
+    detail: >
+      Once HC is hired, he must build an entire staff. OC and DC hires are most
+      critical. The OC must design a Luck-centric offense. The DC must begin the
+      defensive rebuild. Staff must be assembled by late February.
+  - priority: Navigate Manning release
+    detail: >
+      Manning must be released before March 8 bonus deadline. The HC must be part
+      of the transition — publicly respectful, privately decisive. The handling of
+      Manning's departure sets the tone for the new era.
+  - priority: Draft Andrew Luck
+    detail: >
+      #1 overall pick. Luck is the consensus selection. The HC must be prepared to
+      develop Luck from Day 1.
+  - priority: Address defensive roster
+    detail: >
+      Use free agency and remaining draft picks to begin defensive rebuild. Priority
+      areas: secondary, linebacker depth, and young edge rushers to complement/replace
+      aging Freeney and Mathis.
+  - priority: Offensive line improvement
+    detail: >
+      Luck must be protected. Interior OL needs investment. Castonzo at LT is the
+      foundation — build around him.
+
+---
+
+*Document Status: Complete*
+*World State: January 2012*
+*Sim Rule: Real-history baseline. No actual future outcomes from this point forward.*
