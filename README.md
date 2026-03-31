@@ -27,7 +27,7 @@ The simulation is currently in the **2011 NFL offseason hiring cycle**.
 
 Alex Stone is:
 
-- A **43-year-old coach**
+- A **45-year-old coach**
 - Former **NFL Passing Game Coordinator (San Diego Chargers)**
 - Former **College Head Coach (Memphis)**
 - Former **NFL Position Coach and QC (Philadelphia Eagles)**
