@@ -1,0 +1,32 @@
+down_distance_logic:
+
+  1st_10:
+    primary:
+      - run_game.zone
+      - pass_game.quick
+    secondary:
+      - play_action
+    aggression: low
+
+  3rd_5:
+    primary:
+      - pass_game.intermediate
+    backup:
+      - quick_game
+    aggression: medium
+
+  red_zone:
+    primary:
+      - pass_game.condensed
+      - run_game.power
+    aggression: high
+
+game_state_modifiers:
+
+  trailing:
+    shift_to:
+      - pass_heavy
+
+  leading:
+    shift_to:
+      - run_control
