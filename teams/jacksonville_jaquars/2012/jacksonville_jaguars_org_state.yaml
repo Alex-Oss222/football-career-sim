@@ -1,0 +1,332 @@
+# JACKSONVILLE JAGUARS — ORGANIZATIONAL STATE
+# Runtime state file: updates per sim turn.
+# Sim Rule: Real-history baseline through end of 2011 season. No actual future outcomes.
+# Date: January 2012 (HC search active)
+
+---
+
+meta:
+  team: Jacksonville Jaguars
+  date: 2012-01-10
+  phase: OFFSEASON
+  sub_phase: HC_SEARCH
+  sim_status: ACTIVE
+
+---
+
+# CURRENT PHASE
+
+phase_detail:
+  name: Head Coach Search — New Ownership Transition
+  description: >
+    2011 season complete (5-11). Jack Del Rio fired November 29, 2011 (at 3-8).
+    Mel Tucker served as interim HC (2-3). Wayne Weaver sold franchise to Shad Khan
+    (approved December 14, 2011; official takeover January 4, 2012). Gene Smith
+    retained as GM with three-year extension. HC search is active — Khan's first
+    major football decision as NFL owner. Entire coaching staff is open for replacement.
+  next_phase: HC_HIRE_AND_STAFF_BUILD
+  key_dates:
+    del_rio_fired: 2011-11-29
+    weaver_sale_announced: 2011-11-29
+    nfl_ownership_approval: 2011-12-14
+    khan_official_takeover: 2012-01-04
+    hc_interviews_window: 2012-01-05 through ~2012-01-25
+    expected_hc_hire: ~2012-01-15 to 2012-01-31
+    free_agency_opens: ~2012-03-13
+    nfl_combine: 2012-02-22 through 2012-02-28
+    nfl_draft: 2012-04-26 through 2012-04-28
+    otas_begin: ~2012-05-21
+    training_camp: ~2012-07-25
+    season_opener: ~2012-09-09
+
+---
+
+# RECORD & EXPECTATIONS
+
+record:
+  previous_season: 5-11
+  previous_season_coaches: Jack Del Rio (3-8), Mel Tucker interim (2-3)
+  previous_season_offense_rank: 32nd (total yards), 32nd (passing yards), 28th (scoring)
+  previous_season_defense_rank: 6th (total defense)
+  year_1_hc_expectation_band: 5-11 to 8-8
+  year_1_evaluation_criteria: process_and_development
+  patience_level: UNCERTAIN
+  patience_notes: >
+    Khan is a first-time NFL owner. His patience level is unknown. He has stated
+    commitment to winning and to Jacksonville, but he has no track record of managing
+    an NFL rebuild timeline. The HC must set realistic expectations during the interview
+    process and then deliver visible progress — not necessarily wins, but evidence that
+    the program is moving in the right direction. If Khan's patience is shorter than
+    the rebuild requires, the HC is vulnerable by Year 2.
+  playoff_expectation_year_1: NONE
+
+---
+
+# OWNERSHIP TRANSITION STATUS
+
+ownership:
+  outgoing_owner: Wayne Weaver
+  incoming_owner: Shahid "Shad" Khan
+  transition_date: 2012-01-04
+  transition_status: COMPLETE
+  khan_profile:
+    age: 61
+    background: >
+      Pakistani-American billionaire. Owner of Flex-N-Gate Corporation (auto parts
+      manufacturing, $3B+ revenue, 12,000+ employees). Born in Lahore, Pakistan.
+      Moved to US at age 16 to attend University of Illinois. Self-made wealth.
+      Attempted to purchase St. Louis Rams in 2010 — deal fell through when minority
+      owner Stan Kroenke matched the bid. Purchased Jaguars for approximately
+      $770 million. Committed to keeping team in Jacksonville.
+    nfl_experience: NONE
+    management_style: >
+      Unknown in NFL context. In business, known as a decisive, results-oriented
+      leader who delegates to competent people and holds them accountable. Will likely
+      apply similar approach to NFL — hire strong football people and give them room
+      to operate, but expect results within a reasonable timeframe.
+    stated_priorities:
+      - Keep team in Jacksonville permanently
+      - Build a winning franchise
+      - Modernize the brand and operations
+      - Engage the Jacksonville community
+    risk_factors:
+      - No NFL operational experience
+      - May not understand NFL rebuild timelines
+      - Inherited a GM he did not select
+      - First major decision (HC hire) defines his ownership identity
+      - Relocation rumors will persist until winning silences them
+
+---
+
+# GM STATUS
+
+gm:
+  name: Gene Smith
+  title: General Manager
+  contract: Extended through 2014 (by Weaver before sale)
+  tenure: GM since 2009 (with organization as scout since 1994)
+  gm_record: 22-42 (.344)
+  status: RETAINED_BUT_VULNERABLE
+  smith_profile:
+    strengths:
+      - Deep organizational knowledge (with Jaguars since 1994)
+      - Scouting background — understands talent evaluation process
+      - Loyal to the organization
+    weaknesses:
+      - Poor drafting record at premium positions (Gabbert, Alualu)
+      - Over-reliance on small-school talent with inconsistent results
+      - Conservative free agency approach that has left roster thin
+      - 22-42 record as GM speaks for itself
+    relationship_to_new_hc: >
+      The HC must work with Smith but should not assume Smith will be the long-term
+      GM. Smith's contract runs through 2014, but Khan could buy him out at any time.
+      The HC should build a direct relationship with Khan that survives a potential
+      GM change. The HC should be professional and collaborative with Smith while
+      understanding that the GM situation is inherently unstable.
+    sim_note: >
+      In real history, Khan retained Smith for the 2012 season but fired him after
+      the Jaguars went 2-14 in 2012. The sim may diverge, but the structural
+      instability of the GM position is a real factor regardless.
+
+---
+
+# QB SITUATION
+
+quarterback:
+  current_starter: Blaine Gabbert
+  gabbert_context: >
+    Second-year QB. Drafted 10th overall in 2011 (traded up from 16th — cost included
+    a 2nd round pick to Washington). Rookie year was one of the worst by a starting
+    QB in 2011: last in passer rating among qualifiers, 2,214 passing yards,
+    12 TD / 11 INT, sacked 40 times. Looked overwhelmed by NFL speed, indecisive
+    in the pocket, unable to process defenses quickly. The question is whether his
+    struggles are developmental (fixable with coaching and better talent around him)
+    or fundamental (limited ceiling regardless of environment). The new HC's assessment
+    of Gabbert is the most consequential football evaluation in this job.
+  backup: Luke McCown
+  mccown_context: >
+    Veteran backup. Started first two games of 2011 before being replaced by Gabbert.
+    Career journeyman. Not a long-term answer.
+  year_1_qb_priorities:
+    - "Evaluate Gabbert honestly — is he developable or a sunk cost?"
+    - "Design an offensive system that maximizes Gabbert's limited strengths (if retained)"
+    - "Identify QB contingency — if Gabbert fails, what is the plan?"
+    - "Protect Gabbert better — OL improvement is mandatory"
+    - "Give Gabbert weapons — WR talent acquisition is critical"
+
+---
+
+# STAFF STATUS
+
+staff:
+  status: FULLY_OPEN
+  note: >
+    The entire coaching staff is available for replacement. Del Rio's staff was fired
+    or released with him. Mel Tucker's interim status does not carry over. The new HC
+    builds from scratch. This is both an opportunity (total control) and a burden
+    (building an entire NFL coaching staff in January/February is a massive task).
+  previous_staff_of_note:
+    - { name: Dirk Koetter, title: Offensive Coordinator, note: "Fired. Offense was worst in NFL. Not retained." }
+    - { name: Mel Tucker, title: Defensive Coordinator / Interim HC, note: "Defense improved to 6th. Not expected to be retained as DC by new HC." }
+    - { name: Russ Purnell, title: Special Teams Coordinator, note: "Available if new HC wants continuity." }
+    - { name: Andy Heck, title: Offensive Line Coach, note: "Former NFL player. Could be retained." }
+    - { name: Earnest Byner, title: Running Backs Coach, note: "Former NFL player. Could be retained." }
+    - { name: Mike Sheppard, title: Quarterbacks Coach, note: "Available." }
+    - { name: Rob Boras, title: Tight Ends Coach, note: "Available." }
+    - { name: Joe Cullen, title: Defensive Line Coach, note: "Available." }
+    - { name: Mark Duffner, title: Linebackers Coach, note: "Available." }
+    - { name: Cory Undlin, title: Defensive Backs Coach, note: "Available." }
+  open_positions:
+    - Head Coach
+    - Offensive Coordinator
+    - Defensive Coordinator
+    - Special Teams Coordinator
+    - All position coaches
+    - All quality control positions
+
+---
+
+# KEY ROSTER NOTES
+
+roster:
+  overall_talent: BELOW_AVERAGE
+  roster_status: >
+    The roster is the product of Gene Smith's drafting and free agency decisions.
+    The defense improved significantly in 2011 through smart veteran acquisitions
+    and player development. The offense is among the worst in the NFL — thin at WR,
+    inconsistent OL, and a QB whose viability is in serious question. The roster
+    needs significant talent infusion on offense to be competitive.
+  notable_current_players:
+    - { name: Maurice Jones-Drew, pos: RB, age: 27, note: "NFL rushing champion (1,606 yards). Best player on the team. Contract situation looming." }
+    - { name: Marcedes Lewis, pos: TE, age: 27, note: "Pro Bowl 2010. Reliable blocker and receiver. Underutilized in 2011." }
+    - { name: Paul Posluszny, pos: LB, age: 27, note: "Signed as FA in 2011. Immediate defensive impact. Team tackle leader." }
+    - { name: Rashean Mathis, pos: CB, age: 31, note: "Veteran corner. Aging but experienced. Torn ACL in 2011 — recovery TBD." }
+    - { name: Terrance Knighton, pos: DT, age: 25, note: "Developing interior presence. Part of 2011 defensive improvement." }
+    - { name: Eugene Monroe, pos: OT, age: 25, note: "2009 1st round pick. Adequate left tackle." }
+    - { name: Jeremy Mincey, pos: DE, age: 27, note: "Team sack leader (8.0). Best pass rusher on the roster." }
+    - { name: Dawan Landry, pos: S, age: 29, note: "Veteran safety. 2 INTs in 2011." }
+    - { name: Dwight Lowery, pos: S, age: 25, note: "Acquired in 2011. Contributed immediately." }
+    - { name: Blaine Gabbert, pos: QB, age: 22, note: "2011 1st round pick (#10). Terrible rookie year. Evaluation ongoing." }
+    - { name: Cecil Shorts III, pos: WR, age: 24, note: "2011 4th round pick. Showed some promise late in season. Best WR prospect on roster." }
+    - { name: Mike Thomas, pos: WR, age: 26, note: "Led team in receptions (44). Not a #1 receiver." }
+  roster_weakness_areas:
+    - quarterback: "Gabbert's viability is the critical unknown. If he cannot develop, the franchise needs a new QB plan."
+    - wide_receivers: "Worst WR corps in the NFL. No #1 receiver. Must be addressed in draft and/or free agency."
+    - offensive_line: "Inconsistent. Cannot protect QB consistently. Monroe is adequate at LT but interior is weak."
+    - pass_rush: "Improved but not elite. Need a true difference-maker off the edge."
+  roster_strength_areas:
+    - running_back: "MJD is elite. One of the best backs in the league."
+    - defense_overall: "6th in total defense in 2011. Real talent and scheme competence on this side."
+    - tight_end: "Lewis is a solid, versatile TE."
+    - linebacker: "Posluszny is a legitimate starter. Session and others provide depth."
+
+---
+
+# MAJOR ORG PRESSURE POINTS
+
+pressure_points:
+  - id: ownership_transition
+    description: >
+      First-time NFL owner taking over. Khan must learn the business while making
+      his first major hire. The HC must manage up — educating Khan on NFL realities
+      without being condescending or manipulative.
+    severity: HIGH
+    timeline: IMMEDIATE
+
+  - id: gm_instability
+    description: >
+      Gene Smith is retained but his track record is poor. The HC must work with
+      Smith while preparing for the possibility that Smith is replaced within 1-2
+      years. The HC-GM relationship is structurally pre-loaded with tension.
+    severity: HIGH
+    timeline: ONGOING
+
+  - id: gabbert_evaluation
+    description: >
+      The most important football question facing the franchise: can Blaine Gabbert
+      develop into a viable NFL starter? The answer determines the entire roster-building
+      timeline. If yes, the rebuild is faster. If no, a new QB must be found, which
+      could take years.
+    severity: CRITICAL
+    timeline: 2012_SEASON
+
+  - id: wr_talent_void
+    description: >
+      The WR corps is among the worst in the NFL. No #1 receiver exists on the roster.
+      The 2012 draft and free agency must address this. Without receiving weapons,
+      no QB — Gabbert or otherwise — can succeed.
+    severity: HIGH
+    timeline: OFFSEASON_PRIORITY
+
+  - id: market_viability
+    description: >
+      Jacksonville's small market, attendance concerns, and persistent relocation
+      rumors create background pressure. Winning is the best answer, but the HC must
+      also be a public-facing figure who sells the franchise to the community.
+    severity: MODERATE
+    timeline: ONGOING
+
+  - id: mjd_contract
+    description: >
+      Maurice Jones-Drew is the team's best player and entering the final years of
+      his contract. He will want a new deal. If negotiations become contentious, the
+      locker room dynamic is affected. The HC must manage the star player while the
+      front office handles the business.
+    severity: MODERATE
+    timeline: 2012_OFFSEASON
+
+---
+
+# DRAFT CAPITAL — 2012
+
+draft:
+  first_round_pick: 7th overall
+  draft_class_headline: >
+    2012 draft headlined by Andrew Luck (#1 — Colts) and Robert Griffin III (#2 — Commanders/Redskins).
+    At #7, the Jaguars are positioned for a premium non-QB talent addition. The draft is deep at
+    WR (Justin Blackmon, Michael Floyd, Kendall Wright), OL, and defense. The HC's input on draft
+    strategy will be important but Gene Smith controls the final board.
+  draft_needs:
+    - "WR — absolute priority"
+    - "OL — interior upgrade"
+    - "Edge rusher — complement to Mincey"
+    - "Secondary depth — Mathis aging and coming off ACL"
+  draft_note: >
+    In real history, the Jaguars traded UP from #7 to #5 to draft WR Justin Blackmon.
+    Sim may diverge. The HC's schematic preferences should influence draft strategy.
+
+---
+
+# OFFSEASON OPERATIONAL PRIORITIES
+
+offseason_priorities:
+  - priority: Hire Head Coach
+    detail: >
+      Khan's first and most important decision. The HC defines the franchise direction.
+      Interview process is active. Multiple candidates expected. Decision likely by
+      late January.
+  - priority: Build coaching staff
+    detail: >
+      Once HC is hired, he must build an entire staff from scratch. OC, DC, STC, all
+      position coaches. This must happen quickly — the offseason calendar does not wait.
+      Free agency opens in March, the Combine is in late February. The staff must be
+      assembled and functional by late February at the latest.
+  - priority: Evaluate Gabbert
+    detail: >
+      The HC and new offensive staff must develop an honest evaluation framework for
+      Gabbert. Film study of 2011 season, assessment of his mechanics, decision-making,
+      and coachability. This evaluation begins before OTAs and continues through camp.
+  - priority: Address WR and OL through draft and free agency
+    detail: >
+      The offense cannot function without better weapons and protection. Draft capital
+      (#7 overall) and free agency must be used aggressively on offense.
+  - priority: Maintain defensive foundation
+    detail: >
+      The 2011 defense was the team's strength. The new DC must build on this, not
+      tear it down. Defensive personnel should be retained where possible.
+
+---
+
+*Document Status: Complete*
+*World State: January 2012*
+*Sim Rule: Real-history baseline. No actual future outcomes from this point forward.*
