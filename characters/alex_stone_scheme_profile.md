@@ -4,10 +4,9 @@
 > **Runtime loading rule:** The sim engine loads ONLY the section matching Stone's current level.
 > Stone's completed levels: 0 (QC), 1 (Position Coach), 2 (Coordinator).
 > Stone's partially completed level: 3–5 (Head Coach — college HC lived, NFL HC not yet earned).
-> Stone is currently seeking an OC role in the 2011 hiring cycle. Load Level 2 as active reference.
+> Stone is currently Arizona's offensive coordinator entering the 2012 head coaching interview window. Load Level 2 as active reference.
 > 
-> **Post-hire update rule:** Once Stone is hired at a specific team, the Level 2 section
-> must be patched to reflect that team's system, terminology, and scheme context.
+> **Current-team update rule:** The Level 2 section below is already patched to Arizona's 2010–2011 system context. Future team changes should patch this section again.
 
 ---
 
@@ -159,13 +158,13 @@ UNIQUE COACHING VALUE DISCOVERED:
 
 ---
 
-## LEVEL 2: COORDINATOR (COMPLETED — 2006–2010)
+## LEVEL 2: COORDINATOR (COMPLETED — 2006–2011)
 
 ### Head Coach (College), University of Memphis (2006–2008)
 
-> Stone's coordinator-level scheme development happened inside a college head coaching role
+> Stone's coordinator-level scheme development began inside a college head coaching role
 > rather than a traditional NFL coordinator role. He called plays, designed game plans, and
-> owned the full offensive scheme for three years. This section captures that scheme development.
+> owned the full offensive scheme for three years. This section captures that foundation.
 
 **Scheme Authority:** Full. Stone set the offensive identity, called plays, designed the game plan, and owned both sides of the ball through his coordinators.
 
@@ -200,7 +199,7 @@ DEVELOPED THROUGH 3 YEARS OF COLLEGE HC PLAY-CALLING:
     21 personnel: ~15%
     Heavy (13/22): ~5%
     Light (10/01): ~5%
-  
+
   NOTE: Personnel splits reflect Memphis roster limitations, not Stone's ideal NFL
   distribution. He lacked the TE talent to run his preferred 12-personnel packages
   at the rate he wanted.
@@ -218,7 +217,7 @@ DEVELOPED THROUGH 3 YEARS OF COLLEGE HC PLAY-CALLING:
     alignment and motion to create mismatches and force defensive adjustments.
   - Play-action efficiency. When the run game was established, play-action generated
     explosive plays at a rate disproportionate to the talent level.
-  
+
   WHAT DIDN'T WORK AT MEMPHIS:
   - Full-field WCO progressions required more QB processing speed than Memphis QBs
     consistently delivered. Stone simplified progressions by Year 2.
@@ -238,19 +237,19 @@ DEVELOPED THROUGH 3 YEARS OF COLLEGE HC PLAY-CALLING:
     direct defensive strategy at the program level."
 ```
 
-### Passing Game Coordinator, San Diego Chargers (2009–2010)
+### Passing Game Coordinator, San Diego Chargers (2009)
 
 **Scheme Authority:** Owned the passing game segment within Turner's Coryell offense. Designed passing concepts, installed them with the skill-position players and QB, and managed the passing game section of the weekly game plan. Did not have full play-calling authority.
 
 ### What Stone Learned — NFL Coordinator-Level Concept Design
 
 ```
-DEVELOPED THROUGH 2 YEARS OF NFL PGC WORK:
+DEVELOPED THROUGH 1 YEAR OF NFL PGC WORK:
 
   DUAL-SYSTEM MASTERY COMPLETION:
   - Stone now has deep functional knowledge of both the Reid/Holmgren West Coast
     Offense (6 years in Philadelphia) and the Turner/Coryell vertical passing system
-    (2 years coaching + 12 years playing).
+    (1 year coaching + 12 years playing).
   - He can design, install, and troubleshoot concepts from both trees.
   - His offensive philosophy integrates WCO timing concepts with Coryell vertical
     aggression. This is not theoretical — he has designed NFL passing concepts that
@@ -265,16 +264,8 @@ DEVELOPED THROUGH 2 YEARS OF NFL PGC WORK:
   - Contributed to self-scout and tendency management for the passing game.
 
   2009 PRODUCTION (13-3 season):
-  - Contributed to a top-tier NFL passing offense. Rivers threw for 4,254 yards,
-    28 TDs, and a 104.4 passer rating (career-best marks at the time).
+  - Contributed to a top-tier NFL passing offense.
   - The passing game was a primary driver of the team's success.
-
-  2010 PRODUCTION (9-7, missed playoffs):
-  - Team regressed. Passing game maintained productivity despite overall decline.
-  - Rivers threw for 4,710 yards. The passing game was not the problem.
-  - Stone demonstrated the ability to sustain offensive output when the team
-    around him was failing — a form of coaching evidence that doesn't show up
-    in the win column but matters in evaluation.
 
   WHAT HE REFINED AT THE NFL LEVEL:
   - Speed of game-plan installation. NFL weekly cycles move faster than college.
@@ -289,17 +280,76 @@ DEVELOPED THROUGH 2 YEARS OF NFL PGC WORK:
     against NFL-caliber DBs.
 ```
 
-### Stone's Offensive Philosophy (Current — January 2011)
+### Offensive Coordinator, Arizona Cardinals (2010–2011)
 
-This is no longer a projection. It is assembled from 12 years of coaching experience across two NFL systems, a college head coaching tenure, and a Hall of Fame playing career.
+**Scheme Authority:** Full offensive ownership at the NFL coordinator level. Stone organized weekly structure, shaped personnel usage, handled installation, drove the game-plan process, and called or functionally controlled the offense on game day.
+
+### What Stone Learned — Full NFL OC Ownership
+
+```
+DEVELOPED THROUGH 2 YEARS OF NFL OC WORK:
+
+  2010 FOUNDATION (7-9):
+  - First season running a full NFL offense.
+  - Established language, sequencing, teaching rhythm, and weekly offensive
+    structure on a normal roster rather than an elite offensive machine.
+  - Learned where his ideal philosophy had to bend to personnel reality.
+
+  2011 VALIDATION (9-7):
+  - Arizona started 1-6, then finished 8-1.
+  - The offense became the clearest positive driver of the turnaround.
+  - Stone proved he could diagnose what was broken, simplify where necessary,
+    and rebuild player confidence through structure rather than speeches.
+
+  WHAT ARIZONA TAUGHT HIM:
+  - Adaptation without identity loss. He leaned somewhat heavier on 11 personnel
+    than his ideal TE-heavier build because roster reality demanded it, but the
+    core remained motion, coverage diagnosis, layered passing, and TE usefulness.
+  - Weekly self-scout discipline. An offense on a non-elite roster cannot survive
+    on static tendencies. Arizona sharpened his tendency management.
+  - Corrections over reinvention. The 1-6 to 8-1 finish came from sequence fixes,
+    clarity, and role definition — not wholesale scheme replacement.
+  - Full NFL game-day responsibility. Problems belonged to him now. So did fixes.
+
+  PERSONNEL USAGE (ARIZONA — actual adaptation, not ideal projection):
+    11 personnel: ~52%
+    12 personnel: ~24%
+    21 personnel: ~11%
+    Heavy (13/22): ~7%
+    Light (10/01): ~6%
+
+  NOTE: Arizona nudged Stone toward more 11 personnel than his ideal because the
+  roster supported it better. That changed the surface, not the core philosophy.
+
+  RUN/PASS BALANCE (ARIZONA):
+    Run: ~44% | Pass: ~56%
+
+  WHAT WORKED IN ARIZONA:
+  - Motion-driven coverage diagnosis remained the offense's organizing principle.
+  - The intermediate passing game became the engine when vertical shots were not there.
+  - TE and formation versatility still mattered, even without a perfect TE room.
+  - Late-season sequencing improved dramatically during the 2011 8-1 close.
+
+  WHAT DIDN'T WORK IN ARIZONA:
+  - When pass protection slipped, the offense could bog down because the system still
+    depends on the QB having a stable platform to process and throw on time.
+  - Without ideal TE talent, some of Stone's preferred 12-personnel stress packages
+    were less dangerous than they would be in a better-fitted roster.
+  - The offense improved from credible to dangerous late in 2011, but it was never a
+    unit that could live on pure talent and erase structural mistakes.
+```
+
+### Stone's Offensive Philosophy (Current — January 2012)
+
+This is no longer a projection. It is assembled from 13 years of coaching experience across two NFL systems, a college head coaching tenure, real NFL offensive coordinator ownership in Arizona, and a Hall of Fame playing career.
 
 ```
 CORE OFFENSIVE IDENTITY:
 
   System Base: WCO timing and progression structure + Coryell vertical aggression
-  
-  Foundation: Motion-heavy, TE-versatile, run-influenced passing offense
-  
+
+  Foundation: Motion-heavy, TE-aware, run-influenced passing offense
+
   The offense is built on pre-snap diagnosis. Motion reveals the defense before
   the snap. The QB uses that information to confirm or adjust the play. The
   system rewards intelligence and preparation — for the QB, for the receivers,
@@ -328,29 +378,27 @@ OPERATING PRINCIPLES:
      Architecture, not checkdown. The outlet route is designed into the concept,
      not an emergency option. The QB always has somewhere to go with the ball.
 
-  5. 12 PERSONNEL AS A MATCHUP WEAPON
-     Stone's playing career and TE coaching background make 12 personnel
-     (1 RB, 2 TE) a foundational grouping. TEs flex, split, motion, and block
-     from the same personnel package. This creates identification problems for
-     the defense — is it a run look or a pass look? The answer is both.
+  5. TE VERSATILITY MATTERS EVEN WHEN 12 PERSONNEL ISN'T THE BASE
+     Stone's playing career and TE coaching background still shape the offense.
+     In an ideal roster, 12 personnel is a foundational grouping. In a less ideal
+     roster, he still uses TE alignment, flex, split, motion, and blocking value
+     to create identification problems for the defense.
 
   6. QB OWNS THE OFFENSE AT THE LINE
      The QB reads the defense, adjusts protections, changes play calls, and
      manipulates the snap count. This system requires a smart QB. It does not
      work with a processor who needs the sideline to make decisions.
 
-PERSONNEL TENDENCIES (NFL — projected for OC role):
+PERSONNEL TENDENCIES (NFL — current best estimate from Arizona tape):
 
-  11 personnel (1 RB, 1 TE, 3 WR):    ~45%
-  12 personnel (1 RB, 2 TE, 2 WR):    ~28%
-  21 personnel (2 RB, 1 TE, 2 WR):    ~12%
-  Heavy (13/22):                        ~8%
+  11 personnel (1 RB, 1 TE, 3 WR):    ~50%
+  12 personnel (1 RB, 2 TE, 2 WR):    ~25%
+  21 personnel (2 RB, 1 TE, 2 WR):    ~11%
+  Heavy (13/22):                        ~7%
   Light (10/01):                        ~7%
 
-  NOTE: Stone's ideal NFL personnel distribution leans heavier on 12 personnel
-  than most 2011 NFL offenses. This is a deliberate philosophical choice — he
-  believes TE versatility creates more schematic advantage than a third WR in
-  most situations. Actual distribution will depend on roster talent.
+  NOTE: Stone still prefers more TE-driven stress than most modern offenses,
+  but Arizona proved he can live in 11 personnel more often without losing his identity.
 
 RUN GAME PHILOSOPHY:
 
@@ -365,8 +413,8 @@ RUN GAME PHILOSOPHY:
 PASS GAME PHILOSOPHY:
 
   Quick game / screens: ~25%
-  Intermediate concepts (WCO timing routes, crossers, digs): ~35%
-  Deep shots (Coryell vertical concepts, shot plays off play-action): ~20%
+  Intermediate concepts (WCO timing routes, crossers, digs): ~37%
+  Deep shots (Coryell vertical concepts, shot plays off play-action): ~18%
   Play-action: ~20%
 
   The intermediate game is the engine. Quick game creates rhythm and keeps
@@ -375,26 +423,27 @@ PASS GAME PHILOSOPHY:
 
 WHAT MAKES IT WORK:
   - Motion forces defensive declaration before the snap
-  - TE versatility creates personnel mismatches every series
+  - TE usefulness creates personnel flexibility every series
   - QB intelligence required — the system rewards processing speed
   - Dual-system design: opponents can't scout one tree because concepts come
     from both the WCO and Coryell families
   - Play-action creates explosive-play opportunities against aggressive defenses
+  - The offense can bend to roster reality without abandoning its core logic
 
 WHAT BREAKS IT:
   - Dumb QB. System requires pre-snap reads, post-snap progressions, and
     protection adjustments. A QB who can't process kills it.
   - Bad OL. Motion and scheme can't fix five guys who can't block. The
     intermediate passing game needs time. The run game needs execution.
-  - No versatile TE. Without a TE who can block AND catch, 12 personnel
-    loses its edge and becomes a predictable run-game indicator.
-  - Predictable play-caller. Stone's tendency toward motion and 12 personnel
-    can become a tell if he doesn't manage his own tendencies aggressively.
-  - Talent-poor roster. This is not a system that manufactures production
-    from inferior players. It optimizes good talent. It doesn't replace it.
+  - No useful TE. Without a TE who can at least threaten both jobs, the offense
+    loses one of its easiest ways to disguise intent.
+  - Predictable play-caller. Stone's tendency toward motion and TE usage can
+    become a tell if he doesn't manage his own tendencies aggressively.
+  - Talent-poor roster. This is not a system that manufactures production from
+    inferior players. It optimizes good talent. It doesn't replace it.
 ```
 
-### Defensive Knowledge (Current — January 2011)
+### Defensive Knowledge (Current — January 2012)
 
 ```
 Stone is NOT a defensive coordinator. He is a head-coach-level evaluator of defense.
@@ -415,21 +464,21 @@ WHAT HE DOESN'T KNOW:
   - Linebacker scheme responsibility at a teaching level
   - How to build a full defensive game plan from scratch
 
-DEFENSIVE KNOWLEDGE IS AN OC ASSET, NOT AN OC CREDENTIAL:
+DEFENSIVE KNOWLEDGE IS AN OC/HC ASSET, NOT A DEFENSIVE CREDENTIAL:
   It makes him a better offensive coach because he understands what the defense
   is trying to do. It makes him a better HC candidate eventually because he can
   communicate with a DC. It does not qualify him to coordinate a defense.
 ```
 
-### System Familiarity (Current — January 2011)
+### System Familiarity (Current — January 2012)
 
 ```
-  Air Coryell (playing + coaching):    9/10 — 12 years as a player, 2 years as PGC in Turner system
+  Air Coryell (playing + coaching):    9/10 — 12 years as a player, 1 year as PGC in Turner system
   West Coast (Reid tree):              9/10 — 6 years immersion (3 QC + 3 position coach)
   Erhardt-Perkins:                     3/10 — aware of structure, no direct experience
-  Spread:                              5/10 — college exposure, adapted some spread concepts at Memphis
-  Zone Run Schemes:                    7/10 — improved through HC play-calling and PGC run-game coordination
-  Gap/Power Run Schemes:               7/10 — same
+  Spread:                              5/10 — college exposure, adapted some spread concepts at Memphis and Arizona
+  Zone Run Schemes:                    8/10 — improved through HC play-calling and NFL OC coordination
+  Gap/Power Run Schemes:               8/10 — same
   Defensive Systems:                   8/10 — DB coaching + HC oversight + offensive-side recognition
   Special Teams:                       3/10 — HC oversight only, not a specialty
 ```
@@ -502,11 +551,11 @@ PROGRAM IDENTITY (Proven at College HC Level — NFL HC translation required):
 |---|---|---|---|
 | GA/QC | **COMPLETED** (1999–2001) | None — executed staff directives | How coaching staffs operate, WCO system, film breakdown, weekly cycle |
 | Position Coach | **COMPLETED** (2002–2005) | TE technique (3 yrs) + DB technique (1 yr) | Teaching, player development, meeting management, defensive perspective |
-| Coordinator | **COMPLETED** (2006–2010) | Full offense (HC, 3 yrs) + Passing game (PGC, 2 yrs) | Play-calling, scheme design, game management, dual-system mastery |
+| Coordinator | **COMPLETED** (2006–2011) | Full offense (HC, 3 yrs) + Passing game (PGC, 1 yr) + NFL OC ownership (2 yrs) | Play-calling, scheme design, game management, dual-system mastery, full NFL coordinator proof |
 | Head Coach | **PARTIALLY COMPLETED** | Program identity (college HC, 3 yrs — lived) / NFL HC (projected) | Program building, staff hiring, media, culture — proven at college level. NFL-specific gaps: roster/cap management, draft/FA, ownership dynamics |
 
-Stone's offensive identity is clear in the tape and in the structure of the system. He wants a multiple spread offense built on 11 personnel, formation variation, constant motion, and situational flexibility. The offense uses tight ends as real matchup pieces, carries answers in the quick game, dropback game, RPOs, play-action, and screen game, and adjusts personnel and tempo to game situation rather than forcing one static style. The play-calling framework is organized, coverage-aware, pressure-aware, and built to identify defensive rules early and attack them as the game moves on. This is not a generic system. It is a defined offensive approach with real structure, real sequencing, and clear game-day intent. It is ready for an NFL HC/OC role.
+Stone's offensive identity is clear in the tape and in the structure of the system. It is a motion-heavy, TE-aware, coverage-diagnosis offense built from WCO timing and Coryell vertical stress, then adapted to roster reality without losing its center. Arizona proved he can lean into more 11 personnel when the roster demands it while keeping the same underlying sequencing, spacing, and adjustment logic. The play-calling framework is organized, coverage-aware, pressure-aware, and built to identify defensive rules early and attack them as the game moves on. This is not a generic system. It is a defined offensive approach with real structure, real sequencing, and clear game-day intent. It is ready for an NFL HC/OC role.
 
 ---
 
-*Single canonical scheme profile. Evolves dynamically based on Stone's career path. Post-hire patch required for team-specific system context when Stone is placed in the 2011 OC cycle.*
+*Single canonical scheme profile. Evolves dynamically based on Stone's career path. Current team-specific patch reflects Arizona's 2010–2011 OC context at the opening of the 2012 HC interview window.*
