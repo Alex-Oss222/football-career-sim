@@ -1,7 +1,7 @@
 # TURN OUTPUT TEMPLATE
 
 > Default runtime output for coaching turns.
-> Goal: compact, readable, role-sensitive, under 800 words.
+> Goal: compact, readable, role-sensitive, under 1300 words.
 > The turn should feel like football, not a dashboard dump.
 > Full state, audit math, and long reports live elsewhere.
 
@@ -9,7 +9,7 @@
 
 ## OUTPUT RULES
 
-- Hard cap: **800 words maximum** for the default turn.
+- Hard cap: **1300 words maximum** for the default turn.
 - Use **only the sections that matter** this turn.
 - Do **not** repeat static profile material already known from the Character Profile.
 - Do **not** repeat full roster, full staff, full cap table, or full relationship table in the default turn.
@@ -17,6 +17,12 @@
 - Narrative should be direct, specific, and natural. No filler. No "AI recap voice."
 - Character effects should appear through **behavior, trust, access, conflict, tone, and opportunity** — not forced instant stat jumps.
 
+Default: 1300 words  
+Extended: up to 2500 only for:
+- offseason evaluation
+- job changes
+- promotions
+- major transitions
 ---
 
 ## ROLE-SENSITIVE RULE
