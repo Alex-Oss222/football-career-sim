@@ -2,24 +2,24 @@
 ## Single canonical file. Replaces both `scheme_level0.md` and `SCHEME PROFILE BY CAREER LEVEL.md`.
 
 > **Runtime loading rule:** The sim engine loads ONLY the section matching Stone's current level.
-> At GA/QC: load Level 0 only. At Position Coach: load Level 1 only. And so on.
-> Future levels exist here for promotion logic but are NOT injected into runtime context until earned.
+> Stone's completed levels: 0 (QC), 1 (Position Coach), 2 (Coordinator).
+> Stone's partially completed level: 3–5 (Head Coach — college HC lived, NFL HC not yet earned).
+> Stone is currently seeking an OC role in the 2011 hiring cycle. Load Level 2 as active reference.
 > 
-> **Post-hire update rule:** Once Stone is hired at a specific team, the Level 0 section
-> must be patched to reflect that team's system, terminology, and learning context.
-> See `eagles_wco_install_year2_2000.md` for Eagles-specific WCO learning sequence.
+> **Post-hire update rule:** Once Stone is hired at a specific team, the Level 2 section
+> must be patched to reflect that team's system, terminology, and scheme context.
 
 ---
 
-## LEVEL 0: GRADUATE ASSISTANT / QUALITY CONTROL
+## LEVEL 0: GRADUATE ASSISTANT / QUALITY CONTROL (COMPLETED — 1999–2001)
 
-### Current Scheme Authority
+### Scheme Authority
 
-**None.** Stone executes whatever the coaching staff tells him to do.
+**None.** Stone executed whatever the coaching staff told him to do.
 
-### What Stone Knows (January 2000 — Post Year 1)
+### What Stone Learned (Three Years, Philadelphia Eagles)
 
-Stone entered coaching knowing football from the **player's perspective** — specifically as a tight end in a Coryell-influenced vertical passing offense. After a full year inside the Reid/Dowhower Eagles offensive staff, his knowledge base has materially expanded.
+Stone entered coaching knowing football from the **player's perspective** — specifically as a tight end in a Coryell-influenced vertical passing offense. Three years inside the Reid/Dowhower Eagles offensive staff transformed his knowledge base from player-side to coaching-side.
 
 ```
 FROM PLAYING CAREER (carried forward):
@@ -29,353 +29,484 @@ FROM PLAYING CAREER (carried forward):
   - How to study film to prepare for a game (as a player, not as a coach)
   - What good coaching felt like from the receiving end
 
-ADDED THROUGH YEAR 1 IN EAGLES WCO:
-  - Eagles WCO terminology: internalized. He thinks, works, and communicates in the
-    language. It is his coaching language now, not a second language he translates into.
+DEVELOPED THROUGH 3 YEARS IN EAGLES WCO:
+  - Eagles WCO terminology: fully internalized. Native coaching language.
   - How the offensive positions fit together inside the Reid tree — not just his own
     position, but how TE/WR route combinations interact, how formations and personnel
     groupings create the spacing the system depends on, and how the run game sets up
     play-action within WCO structure.
   - TE/WR route structure from the coaching side: stems, breaks, landmarks, spacing
-    rules, and how route combinations are designed to stress specific coverages. He
-    understands why routes are paired, not just how to run them.
-  - Defensive coverage recognition from the coaching side: he can identify and
-    articulate Cover 1/2/3/4/6 and common zone-match variations as a coach diagnosing
-    structure, leverage, rotation triggers, and technique breakdowns on film. He knows
-    what the defense is trying to take away and how the Eagles offense attacks each
-    coverage family.
-  - How the weekly game-plan cycle works end to end: self-scout, opponent study,
-    early-down install, third-down install, red-zone install, situational cleanup,
-    and final packet delivery.
-  - How to package the same football concept differently for Reid, Dowhower,
-    Childress, and Shurmur based on what each coach needs from support staff.
-  - How to break down film for other coaches (not players yet) — opponent tendencies,
-    formation/personnel keys, coverage/pressure indicators, and TE/edge structure.
+    rules, and how route combinations are designed to stress specific coverages.
+  - Defensive coverage recognition from the coaching side: Cover 1/2/3/4/6 and common
+    zone-match variations — identification, rotation triggers, leverage indicators,
+    pre-snap/post-snap disguise tells.
+  - Full weekly game-plan cycle operation: self-scout, opponent study, install sequence,
+    situational cleanup, and final packet delivery.
+  - Film breakdown for coaches (not players): opponent tendencies, formation/personnel
+    keys, coverage/pressure indicators, TE/edge structure.
 ```
 
-### What Stone Doesn't Know
+### What Stone Didn't Know at QC Exit
 
 ```
-  - How to teach players directly in a room he owns (has supported teaching, never led it)
+  - How to teach players directly in a room he owned
   - How to design a practice plan for a position group
-  - How to install a scheme segment to players from scratch (has helped install to coaches)
-  - Full OL assignment picture (improved but still not his world)
-  - Defensive scheme design from the coaching side (reads coverage well,
-    still cannot build or install a defensive scheme)
+  - How to install a scheme segment to players from scratch
+  - Full OL assignment picture
+  - Defensive scheme design from the coaching side
   - Special teams beyond participation
-  - How to manage a room's discipline, tempo, and development arc over a full season
 ```
 
-### System Familiarity
+### System Familiarity (End of QC — January 2002)
 
 ```
-  Air Coryell (from playing):        7/10 — knows concepts as a player; still his native football language
-  West Coast (Reid tree):            7/10 — speaks the system; it is his coaching language now
-  Erhardt-Perkins:                   2/10 — aware it exists
-  Spread:                            2/10 — college concept, minimal NFL use in '99
-  Zone Run Schemes:                  5/10 — improved through Eagles run-game support work
-  Gap/Power Run Schemes:             5/10 — primary blocking scheme he played in
-  Defensive Systems:                 7/10 — reads coverage structure from the coaching side;
-                                              can diagnose leverage, rotation, and technique on film
-  Special Teams:                     1/10 — played on coverage units, that's it
-```
-
-> **Post-hire patch applied.** System learning context below reflects Stone's placement
-> inside the Eagles WCO after one full season. Reference `eagles_wco_install_year2_2000.md`
-> for detailed WCO learning sequence milestones.
->
-> **Team:** Philadelphia Eagles
-> **System:** Reid/Holmgren West Coast Offense
-> **Time in System:** 1 full season (January 1999 – January 2000)
-> **Primary Teacher:** Rod Dowhower (OC / direct supervisor)
-> **Secondary Exposure:** Brad Childress (QB coach), Pat Shurmur (TE coach)
->
-> **Terminology Status:** Stone speaks the Eagles WCO. Play names, formation tags,
-> protection calls, route-tree labels, and situational language are internalized. He
-> thinks and works in WCO natively. This is his coaching language now.
->
-> **Positional Integration:**
-> - TE/WR route combinations: understands how the Eagles pair routes to create high-low
->   reads, spacing conflicts, and coverage-stress triangles. Knows landmarks, stem rules,
->   and break points. Can articulate why a combo attacks a specific coverage.
-> - TE role in the run game: understands how TE alignment, motion, and blocking assignments
->   set up play-action and create formation-strength declarations that feed the passing game.
-> - How offensive positions fit together: understands how OL protection, RB responsibility,
->   TE/WR route structure, and QB progression are designed as a single integrated concept
->   per play call.
->
-> **Defensive Coverage Recognition (coaching-side upgrade):**
-> - Can identify and teach-back Cover 1, 2, 3, 4, 6, and common zone-match shells from film.
-> - Understands rotation triggers, leverage indicators, and pre-snap/post-snap disguise tells.
-> - Knows how the Eagles offense is specifically designed to attack each coverage family.
-> - Can diagnose defensive technique breakdowns on film and articulate them in coaching language.
-
-### Primary Job
-
-```
-  - Build weekly opponent tendency reports, formation/personnel breakdowns, and
-    coverage/pressure identification packets for the offensive staff
-  - Prepare TE/WR route-combination and edge-structure cut-ups tailored to each
-    coach's preferences (Dowhower, Childress, Shurmur)
-  - Support quarterback weekly prep through film organization and situational packets
-  - Handle self-scout contributions, red-zone and third-down support charting,
-    and late-week correction packaging
-  - Continue learning how coaches teach — especially watching Dowhower install,
-    Childress run QB meetings, and Shurmur manage the TE room
-```
-
-### What He's Building
-
-```
-  - Teaching confidence: moving from packaging information for coaches toward
-    eventually presenting it to players
-  - Practice and meeting support habits that look like early room-ownership reps
-  - Maintaining translation value (player feel → coach-usable detail) as his primary
-    differentiation from other QCs
-```
-
-### Film Perspective Shift (Substantially Complete)
-
-Stone now watches film as a **coach**, not a player:
-- ~~Player perspective: "What's the coverage? Where's my window?"~~
-- Coach perspective: "Why did the coverage break down? What technique failed? How do I fix it?"
-
-The foundational reframe is done. He is better at diagnosing and packaging for other coaches than at teaching corrections directly to players. The next stage is turning film diagnosis into teachable moments he can deliver himself.
-
-### System Exposure
-
-Stone has spent a full year inside the Reid/Holmgren West Coast tree and it is now his primary coaching frame of reference. His Air Coryell playing background still informs his instincts — especially around vertical concepts, TE versatility, and route spacing — but his coaching language and weekly workflow are WCO. He is beginning to develop opinions about what works inside this system, though those opinions are still observations, not authority.
-
----
-
-## LEVEL 1: POSITION COACH (DEVELOPING)
-
-> **Not loaded until promotion. Exists for engine reference only.**
-
-### What Stone Would Need to Have Learned
-
-By the time Stone earns a position coach role, he would need to demonstrate:
-
-- How to break down film and present it to players
-- How to write a practice plan for a position group
-- How meetings run and how much information players can absorb
-- The full offensive or defensive system of his employer
-- How to communicate corrections without losing the player
-
-### Scheme Role (Developing)
-
-Stone would own **one position group's technique and development** within someone else's system. He would not design plays. He would not call plays. He teaches players to execute the coordinator's scheme.
-
-```
-If TE/WR Coach (Offensive):
-  Would Teach:
-  - Route running technique (stems, breaks, releases, spatial awareness)
-  - Blocking assignments within the run game
-  - Pass protection responsibilities
-  - Pre-snap alignment and motion execution
-  - Film study habits specific to the position
-
-  Scheme Input (Developing):
-  - Could suggest route adjustments based on what he sees on tape
-  - Could recommend personnel usage (which TE/WR fits which concept)
-  - Cannot change play design or formation structure
-  - Influence earned through quality of suggestions, not authority
-
-If DB Coach (Defensive):
-  Would Teach:
-  - Man coverage technique (press, off, trail)
-  - Zone coverage responsibility (landmark, eye discipline, pattern reading)
-  - Tackling fundamentals
-  - Communication and pre-snap alignment
-  - Film study: route recognition, formation tendencies
-
-  Scheme Input (Developing):
-  - Could suggest coverage adjustments based on opponent tendencies
-  - Could recommend matchup assignments
-  - Cannot change defensive play calls or scheme structure
-```
-
-### System Development (Developing)
-
-Stone would begin forming coaching opinions based on what he's seen work and fail:
-
-```
-Potential Developing Beliefs:
-- "Tight ends should be used as versatile weapons, not just blockers"
-  (From his playing career — he WAS this player)
-- "Players learn faster when they understand WHY, not just WHAT"
-  (From watching coaches succeed and fail at teaching)
-- "Film study is the foundation — if a player can see it on tape, he can do it on the field"
-  (From his own playing habits)
-- "Motion helps the QB and gives us answers before the snap"
-  (Observation — teams that use motion are harder to defend)
-
-These would be instincts, not a system. He couldn't install them.
-He could apply them within his position group IF he earns this level.
+  Air Coryell (from playing):        7/10
+  West Coast (Reid tree):            8/10 — three years immersion, native coaching language
+  Erhardt-Perkins:                   2/10
+  Spread:                            2/10
+  Zone Run Schemes:                  5/10
+  Gap/Power Run Schemes:             5/10
+  Defensive Systems:                 7/10 — coaching-side coverage recognition
+  Special Teams:                     1/10
 ```
 
 ---
 
-## LEVEL 2: COORDINATOR — OC / DC / STC (DEVELOPING)
+## LEVEL 1: POSITION COACH (COMPLETED — 2002–2005)
 
-> **Not loaded until promotion. Exists for engine reference only.**
+### Tight Ends Coach, Philadelphia Eagles (2002–2004)
 
-### What Stone Would Need to Have Learned
+**Scheme Authority:** Owned TE position group technique and development within Reid's WCO. Did not design plays. Did not call plays. Taught players to execute the coordinator's scheme.
 
-By coordinator level, Stone would need to have:
-
-- Developed multiple players with measurable improvement
-- Mastered at least one offensive or defensive system from the inside
-- Built a network of coaching contacts and player relationships
-- Formed strong opinions about what works schematically
-- Learned to manage a position group's schedule, practice time, and meeting structure
-
-### Scheme Role (Developing)
-
-Stone would **design the scheme, call the plays, and own one side of the ball.**
-
-This is where a coaching identity would take shape. His scheme would not be invented from scratch — it would be assembled from everything he absorbed as a player, GA, and position coach, filtered through what he saw succeed.
+### What Stone Learned
 
 ```
-IF OFFENSIVE COORDINATOR (Developing):
+TAUGHT THROUGH 3 YEARS OF TE ROOM OWNERSHIP:
+  - Route running technique from the teaching side: stems, breaks, releases, spatial
+    awareness. Knew this as a player at 92/100. Now coached it — closed the gap between
+    knowing and teaching.
+  - Blocking assignments within the run game: inline blocking, combo blocks, reach
+    blocks, pass protection responsibilities from the TE position.
+  - Pre-snap alignment and motion execution: where TEs line up, how motion affects
+    defensive declaration, how alignment creates blocking angles and route leverage.
+  - Film study habits taught to players: how to watch cut-ups, what to look for,
+    how to self-correct between reps.
+  - Player development arcs over multiple seasons: technique progression, route-tree
+    expansion, blocking refinement tracked across years rather than weeks.
+  - Meeting room management: how much information players absorb per session, how to
+    sequence corrections, how to modulate pace, when to push and when to release.
 
-  Likely Direction (pre-career projection):
-  Motion-Heavy, Run-Influenced Spread — based on playing background and TE versatility.
-  
-  NOTE: A Stone who spends formative years in Reid's WCO may develop a WCO-descended
-  identity instead. The projection below assumes a non-WCO path. If Stone's career path
-  goes through the Walsh/Holmgren tree, his OC identity will likely emphasize:
-  - WCO timing and progression structure
-  - TE-centric personnel (12 personnel as base, not spread 11)
-  - Horizontal stretches before vertical shots
-  - Play-action off WCO run-action fakes
-  The sim should generate his actual OC identity from accumulated experience, not this projection.
+SCHEME INPUT (developed through position-coach reps):
+  - Suggested route adjustments based on film diagnosis — what worked, what didn't,
+    what the defense was taking away.
+  - Recommended personnel usage — which TE fits which concept based on skill set.
+  - Contributed to formation and personnel-grouping discussions in offensive staff meetings.
+  - Influence earned through quality of suggestions, not authority. Still operated
+    within Reid's scheme framework — didn't redesign concepts.
 
-  Pre-Career Developing Principles:
-  1. Motion on most plays — diagnose coverage pre-snap, create blocking angles
-  2. Run game exists to manipulate the defense, not as the default call
-  3. Every pass concept has a built-in outlet route (architecture, not checkdown)
-  4. Three-level passing: short chains, intermediate control, deep shots when earned
-  5. 12 personnel as a matchup weapon — TEs flex, split, motion, block
-  6. QB owns the offense at the line — reads, adjustments, audibles expected
+COORDINATOR-LEVEL INSTINCTS (forming, not yet applied):
+  - Developed opinions about personnel groupings — 12 personnel as a matchup weapon.
+  - Developed opinions about route-combination design — what stress patterns work
+    against specific coverages.
+  - Developed opinions about TE versatility as a schematic advantage — flex, split,
+    motion, block from the same personnel.
+  - These were observations from a position-coach seat, not coordinator authority.
+```
 
-  Personnel Tendency (Projected):
-    11 personnel: ~50%
-    12 personnel: ~24%
-    21 personnel: ~12%
-    Heavy (13/22): ~9%
+### Defensive Backs Coach, University of Memphis (2005)
+
+**Scheme Authority:** Owned DB position group technique and development within the Memphis defensive scheme.
+
+### What Stone Learned
+
+```
+TAUGHT THROUGH 1 YEAR OF DB COACHING:
+  - Man coverage technique: press, off, trail, bail. Taught from a unique perspective —
+    he spent a career beating DBs and knew what good technique looks like from the
+    offensive side.
+  - Zone coverage responsibility: landmark discipline, eye progression, pattern reading,
+    passing off receivers in zone-match concepts.
+  - Tackling fundamentals and pursuit angles.
+  - Communication and pre-snap alignment in the secondary.
+  - Film study from the defensive perspective: route recognition, formation tendencies,
+    identifying offensive tells.
+
+SCHEME INPUT (developing in new domain):
+  - Suggested coverage adjustments based on offensive tendency film — leveraged his
+    offensive background to identify what the defense should take away.
+  - Recommended matchup assignments based on receiver skill sets he understood intimately.
+  - Did not change defensive play calls or scheme structure — one year, new domain,
+    learning not leading at the scheme level.
+
+UNIQUE COACHING VALUE DISCOVERED:
+  - "When I was running this route, here's what I wanted you to do wrong." No pure
+    defensive coach can offer this perspective. This became a teaching tool that players
+    responded to.
+```
+
+### System Familiarity (End of Position Coach — January 2006)
+
+```
+  Air Coryell (from playing):        7/10
+  West Coast (Reid tree):            9/10 — six years immersion (3 QC + 3 position coach)
+  Erhardt-Perkins:                   2/10
+  Spread:                            3/10 — college exposure at Memphis
+  Zone Run Schemes:                  6/10 — improved through position-coach participation in run game
+  Gap/Power Run Schemes:             6/10 — same
+  Defensive Systems:                 8/10 — upgraded from coaching-side recognition to DB teaching
+  Special Teams:                     2/10 — marginal college exposure
+```
+
+---
+
+## LEVEL 2: COORDINATOR (COMPLETED — 2006–2010)
+
+### Head Coach (College), University of Memphis (2006–2008)
+
+> Stone's coordinator-level scheme development happened inside a college head coaching role
+> rather than a traditional NFL coordinator role. He called plays, designed game plans, and
+> owned the full offensive scheme for three years. This section captures that scheme development.
+
+**Scheme Authority:** Full. Stone set the offensive identity, called plays, designed the game plan, and owned both sides of the ball through his coordinators.
+
+### What Stone Learned — Play-Calling and Scheme Design
+
+```
+DEVELOPED THROUGH 3 YEARS OF COLLEGE HC PLAY-CALLING:
+
+  OFFENSIVE PHILOSOPHY FORMATION:
+  - Built his first full offensive system from the pieces he absorbed across six
+    years in Reid's WCO and twelve years playing in the Coryell tree.
+  - The Memphis offense was a hybrid: WCO timing and progression structure married
+    to Coryell vertical aggression. Adapted for college talent — simpler reads,
+    more designed runs, fewer full-field progressions.
+  - Learned that philosophy matters less than execution. A good play called with
+    conviction beats a perfect play called with hesitation.
+
+  PLAY-CALLING REPS:
+  - Three years of live play-calling across 37 games (20-17 record).
+  - Situational calling: early-down rhythm, third-down conversion design, red-zone
+    strategy, two-minute offense, clock management.
+  - Halftime adjustments: diagnosed what the defense was taking away, adjusted
+    concepts and personnel for the second half.
+  - Game management: when to be aggressive, when to protect, when to take the points,
+    when to go for it. Learned this through wins AND losses.
+  - Tendency management: self-scouted to avoid predictability, varied personnel
+    groupings to create identification problems for the defense.
+
+  PERSONNEL USAGE (COLLEGE — adapted for available talent):
+    11 personnel: ~55%
+    12 personnel: ~20%
+    21 personnel: ~15%
+    Heavy (13/22): ~5%
     Light (10/01): ~5%
+  
+  NOTE: Personnel splits reflect Memphis roster limitations, not Stone's ideal NFL
+  distribution. He lacked the TE talent to run his preferred 12-personnel packages
+  at the rate he wanted.
 
-  Run Game (Projected):
-    Zone concepts: 55% of runs
-    Gap concepts: 40% of runs
-    Designed QB runs/options: 5%
+  RUN/PASS BALANCE (COLLEGE):
+    Run: ~52% | Pass: ~48%
+    More run-heavy than his eventual NFL philosophy — college talent and OL
+    limitations made the run game a necessary foundation rather than a setup tool.
 
-  Pass Game (Projected):
-    Quick game / screens: 30%
-    Intermediate concepts: 40%
-    Deep shots: 15%
-    Play-action: 15%
+  WHAT WORKED AT MEMPHIS:
+  - Motion-based pre-snap diagnosis. Stone used motion on 40%+ of offensive plays
+    to identify coverage before the snap. This was his strongest schematic identity
+    at the college level.
+  - TE versatility as a formation weapon. Even with lesser talent, he used TE
+    alignment and motion to create mismatches and force defensive adjustments.
+  - Play-action efficiency. When the run game was established, play-action generated
+    explosive plays at a rate disproportionate to the talent level.
+  
+  WHAT DIDN'T WORK AT MEMPHIS:
+  - Full-field WCO progressions required more QB processing speed than Memphis QBs
+    consistently delivered. Stone simplified progressions by Year 2.
+  - Vertical Coryell shots required a level of OL pass protection and receiver
+    talent that Memphis rarely had. Deep shots were situational, not foundational.
+  - Red-zone efficiency was inconsistent. Stone's concepts were sometimes too
+    complex for the talent level in compressed space.
 
-  What Would Make It Work:
-  - Motion forces the defense to declare before the snap
+  DEFENSIVE OVERSIGHT (as HC):
+  - Hired and managed a defensive coordinator. Did not design the defense.
+  - Oversaw defensive game-planning: reviewed film, challenged assumptions,
+    demanded adjustments when opponents exploited tendencies.
+  - Studied defensive film weekly — not at coordinator depth, but at HC decision-
+    making depth. Could evaluate whether the DC's plan was sound and identify
+    when adjustments were needed.
+  - Defensive knowledge moved from "can coach DB technique" to "can evaluate and
+    direct defensive strategy at the program level."
+```
+
+### Passing Game Coordinator, San Diego Chargers (2009–2010)
+
+**Scheme Authority:** Owned the passing game segment within Turner's Coryell offense. Designed passing concepts, installed them with the skill-position players and QB, and managed the passing game section of the weekly game plan. Did not have full play-calling authority.
+
+### What Stone Learned — NFL Coordinator-Level Concept Design
+
+```
+DEVELOPED THROUGH 2 YEARS OF NFL PGC WORK:
+
+  DUAL-SYSTEM MASTERY COMPLETION:
+  - Stone now has deep functional knowledge of both the Reid/Holmgren West Coast
+    Offense (6 years in Philadelphia) and the Turner/Coryell vertical passing system
+    (2 years coaching + 12 years playing).
+  - He can design, install, and troubleshoot concepts from both trees.
+  - His offensive philosophy integrates WCO timing concepts with Coryell vertical
+    aggression. This is not theoretical — he has designed NFL passing concepts that
+    blend both systems.
+
+  NFL-LEVEL CONCEPT DESIGN:
+  - Designed passing game segments for an offense featuring Philip Rivers, Antonio
+    Gates, and Vincent Jackson. Elite talent at every skill position.
+  - Built route combinations that attacked specific defensive coverages using
+    both WCO spacing principles and Coryell vertical stretches.
+  - Designed red-zone and third-down passing packages within Turner's system.
+  - Contributed to self-scout and tendency management for the passing game.
+
+  2009 PRODUCTION (13-3 season):
+  - Contributed to a top-tier NFL passing offense. Rivers threw for 4,254 yards,
+    28 TDs, and a 104.4 passer rating (career-best marks at the time).
+  - The passing game was a primary driver of the team's success.
+
+  2010 PRODUCTION (9-7, missed playoffs):
+  - Team regressed. Passing game maintained productivity despite overall decline.
+  - Rivers threw for 4,710 yards. The passing game was not the problem.
+  - Stone demonstrated the ability to sustain offensive output when the team
+    around him was failing — a form of coaching evidence that doesn't show up
+    in the win column but matters in evaluation.
+
+  WHAT HE REFINED AT THE NFL LEVEL:
+  - Speed of game-plan installation. NFL weekly cycles move faster than college.
+  - Complexity of route design against NFL-caliber defensive schemes (more
+    disguise, more pattern-match, more exotic pressure packages).
+  - Communication with an elite NFL quarterback. Rivers processes information
+    differently than a college QB. Stone learned to present concepts at that
+    level — less teaching, more collaborating.
+  - Personnel optimization at the NFL level — how to use Antonio Gates' skill
+    set differently from a college TE, how to scheme Vincent Jackson's size
+    advantage, how to create favorable matchups through formation and motion
+    against NFL-caliber DBs.
+```
+
+### Stone's Offensive Philosophy (Current — January 2011)
+
+This is no longer a projection. It is assembled from 12 years of coaching experience across two NFL systems, a college head coaching tenure, and a Hall of Fame playing career.
+
+```
+CORE OFFENSIVE IDENTITY:
+
+  System Base: WCO timing and progression structure + Coryell vertical aggression
+  
+  Foundation: Motion-heavy, TE-versatile, run-influenced passing offense
+  
+  The offense is built on pre-snap diagnosis. Motion reveals the defense before
+  the snap. The QB uses that information to confirm or adjust the play. The
+  system rewards intelligence and preparation — for the QB, for the receivers,
+  and for the offensive line.
+
+OPERATING PRINCIPLES:
+
+  1. MOTION ON MOST PLAYS
+     Motion diagnoses coverage pre-snap and creates blocking angles. It forces
+     the defense to communicate and adjust, which creates errors. Stone uses
+     motion on 40%+ of offensive plays. This is his schematic signature.
+
+  2. RUN GAME EXISTS TO SET UP THE PASS
+     Stone is not a run-first coach. He uses the run game to manipulate
+     defensive structure — force safeties into the box, create play-action
+     opportunities, establish down-and-distance advantages. The run game is
+     a tool, not an identity.
+
+  3. THREE-LEVEL PASSING
+     Every passing concept attacks three levels: short chains for rhythm and
+     completions, intermediate control routes for conversion and movement,
+     deep shots when the defense gives them. The vertical element comes from
+     the Coryell tree. The timing and progression structure come from the WCO.
+
+  4. EVERY CONCEPT HAS A BUILT-IN OUTLET
+     Architecture, not checkdown. The outlet route is designed into the concept,
+     not an emergency option. The QB always has somewhere to go with the ball.
+
+  5. 12 PERSONNEL AS A MATCHUP WEAPON
+     Stone's playing career and TE coaching background make 12 personnel
+     (1 RB, 2 TE) a foundational grouping. TEs flex, split, motion, and block
+     from the same personnel package. This creates identification problems for
+     the defense — is it a run look or a pass look? The answer is both.
+
+  6. QB OWNS THE OFFENSE AT THE LINE
+     The QB reads the defense, adjusts protections, changes play calls, and
+     manipulates the snap count. This system requires a smart QB. It does not
+     work with a processor who needs the sideline to make decisions.
+
+PERSONNEL TENDENCIES (NFL — projected for OC role):
+
+  11 personnel (1 RB, 1 TE, 3 WR):    ~45%
+  12 personnel (1 RB, 2 TE, 2 WR):    ~28%
+  21 personnel (2 RB, 1 TE, 2 WR):    ~12%
+  Heavy (13/22):                        ~8%
+  Light (10/01):                        ~7%
+
+  NOTE: Stone's ideal NFL personnel distribution leans heavier on 12 personnel
+  than most 2011 NFL offenses. This is a deliberate philosophical choice — he
+  believes TE versatility creates more schematic advantage than a third WR in
+  most situations. Actual distribution will depend on roster talent.
+
+RUN GAME PHILOSOPHY:
+
+  Zone concepts: ~55% of designed runs
+  Gap/Power concepts: ~40% of designed runs
+  Designed QB runs/options: ~5%
+
+  Run game is zone-based with gap-scheme supplements. Not a zone-exclusive
+  system. Uses gap/power to punish defenses that over-adjust to zone action.
+  Minimal designed QB runs — Stone's system protects the quarterback.
+
+PASS GAME PHILOSOPHY:
+
+  Quick game / screens: ~25%
+  Intermediate concepts (WCO timing routes, crossers, digs): ~35%
+  Deep shots (Coryell vertical concepts, shot plays off play-action): ~20%
+  Play-action: ~20%
+
+  The intermediate game is the engine. Quick game creates rhythm and keeps
+  the defense honest underneath. Deep shots punish single-high coverage and
+  aggressive run-support. Play-action ties the run game to the passing game.
+
+WHAT MAKES IT WORK:
+  - Motion forces defensive declaration before the snap
   - TE versatility creates personnel mismatches every series
-  - QB intelligence required — not a "just throw it" system
+  - QB intelligence required — the system rewards processing speed
+  - Dual-system design: opponents can't scout one tree because concepts come
+    from both the WCO and Coryell families
+  - Play-action creates explosive-play opportunities against aggressive defenses
 
-  What Would Break It:
-  - Dumb QB. System requires processing speed.
-  - Bad OL. Motion and scheme can't fix five guys who can't block.
-  - No versatile TE. Without a TE who can block AND catch, 12 personnel loses its edge.
-  - Predictable play-caller.
+WHAT BREAKS IT:
+  - Dumb QB. System requires pre-snap reads, post-snap progressions, and
+    protection adjustments. A QB who can't process kills it.
+  - Bad OL. Motion and scheme can't fix five guys who can't block. The
+    intermediate passing game needs time. The run game needs execution.
+  - No versatile TE. Without a TE who can block AND catch, 12 personnel
+    loses its edge and becomes a predictable run-game indicator.
+  - Predictable play-caller. Stone's tendency toward motion and 12 personnel
+    can become a tell if he doesn't manage his own tendencies aggressively.
+  - Talent-poor roster. This is not a system that manufactures production
+    from inferior players. It optimizes good talent. It doesn't replace it.
+```
 
+### Defensive Knowledge (Current — January 2011)
 
-IF DEFENSIVE COORDINATOR (Developing):
+```
+Stone is NOT a defensive coordinator. He is a head-coach-level evaluator of defense.
 
-  Likely Direction: Aggressive Man-Match with Disguise
+WHAT HE KNOWS:
+  - Man coverage technique (taught DBs for one year)
+  - Zone coverage concepts (landmarks, eye discipline, pattern-match principles)
+  - How defensive coverages are structured and what they're trying to take away
+  - How to evaluate a defensive game plan as a head coach (three years of HC oversight)
+  - How to identify when defensive adjustments are needed at halftime
+  - What offensive concepts stress specific defensive structures (from both
+    offensive and defensive coaching perspectives)
 
-  Developing Principles:
-  1. Generate pressure with four — blitzes create confusion, not compensation
-  2. Disguise everything pre-snap
-  3. Man-coverage foundation with pattern-matching zone principles
-  4. Take away their best player first
-  5. Force the QB to hold the ball
+WHAT HE DOESN'T KNOW:
+  - Defensive scheme design at coordinator depth
+  - Pressure package installation
+  - Defensive line technique at a teaching level
+  - Linebacker scheme responsibility at a teaching level
+  - How to build a full defensive game plan from scratch
 
-  Personnel Tendency (Projected):
-    Base 4-3: ~25% | Base 3-4: ~18% | Nickel: ~35% | Dime: ~8% | Other: ~14%
+DEFENSIVE KNOWLEDGE IS AN OC ASSET, NOT AN OC CREDENTIAL:
+  It makes him a better offensive coach because he understands what the defense
+  is trying to do. It makes him a better HC candidate eventually because he can
+  communicate with a DC. It does not qualify him to coordinate a defense.
+```
 
-  Blitz rate: 25-30% of passing downs
+### System Familiarity (Current — January 2011)
 
-  NOTE: DC path is less natural given offensive playing background.
-  Would require significant defensive coaching experience during GA/position coach years.
-
-
-IF SPECIAL TEAMS COORDINATOR (Developing):
-
-  Likely Direction: Win the Field Position Battle
-  NOTE: Unusual path. STC is typically a stepping stone, not Stone's destination.
+```
+  Air Coryell (playing + coaching):    9/10 — 12 years as a player, 2 years as PGC in Turner system
+  West Coast (Reid tree):              9/10 — 6 years immersion (3 QC + 3 position coach)
+  Erhardt-Perkins:                     3/10 — aware of structure, no direct experience
+  Spread:                              5/10 — college exposure, adapted some spread concepts at Memphis
+  Zone Run Schemes:                    7/10 — improved through HC play-calling and PGC run-game coordination
+  Gap/Power Run Schemes:               7/10 — same
+  Defensive Systems:                   8/10 — DB coaching + HC oversight + offensive-side recognition
+  Special Teams:                       3/10 — HC oversight only, not a specialty
 ```
 
 ---
 
-## LEVEL 3–5: HEAD COACH — HS / COLLEGE / NFL (DEVELOPING)
+## LEVEL 3–5: HEAD COACH — NFL (PARTIALLY COMPLETED — college HC experience earned, NFL HC not yet earned)
 
-> **Not loaded until promotion. Exists for engine reference only.**
+> Stone has lived head coaching experience (Memphis, 2006–2008, 20-17, Conference USA
+> division title). He has run a program — hired staff, called plays, managed both sides
+> of the ball, handled media, built culture, recruited, dealt with administration and
+> boosters. That experience is real and completed.
+> 
+> What remains untested is NFL head coaching specifically: 53-man roster management,
+> salary cap navigation, NFL draft/free agency personnel acquisition, NFL-level media
+> scrutiny, ownership dynamics, and the speed/stakes differential between college and
+> the NFL. The college HC tenure is the foundation. The NFL translation is the gap.
 
-### Scheme Role (Developing)
+### Scheme Role (Partially Completed — college HC lived, NFL HC projected)
 
 Stone would **set the organizational identity** for all three phases. Play-calling delegation depends on his skills vs. his coordinators' skills per Coaching Module §6.1.
 
 ```
-PROGRAM IDENTITY (Projected):
+PROGRAM IDENTITY (Proven at College HC Level — NFL HC translation required):
 
   Offensive Philosophy:
-  - Retained from coordinator tenure OR adapted based on hired OC
-  - Stone's likely preference: stay involved in offensive design,
-    delegate play-calling only if OC's skills exceed his own
+  - Would retain his OC offensive identity (motion-heavy, TE-versatile, dual-system)
+  - Play-calling delegation depends on whether his OC's skills exceed his own
+  - Strong preference to remain involved in offensive design even if delegating play-calling
 
   Defensive Philosophy:
-  - If Stone was an OC: hires DC and trusts the scheme
-  - If Stone was a DC: retains defensive identity, hires OC
+  - Hires DC and trusts the scheme. Does not pretend to be a defensive mind.
+  - Can evaluate defensive game plans and demand adjustments. Cannot design them.
+  - Wants a DC who communicates — he needs to understand the defensive plan even
+    if he doesn't build it.
 
-  Culture Layer (Projected):
+  Culture Layer (Proven — built and sustained over 3 years at Memphis):
   - Daily improvement standard
   - Competition at every position, every practice
   - Film study is coached, not just assigned
   - Standards enforced equally — stars and backups same rules
   - Players fight for each other
 
-  Program Building (Projected):
-  - Recruits players who fit the scheme AND the culture
+  Program Building (Proven at College Level — NFL personnel acquisition untested):
   - Hires coaches who can teach, not just draw plays
   - Prioritizes player development over roster turnover
   - Builds from the lines out (OL/DL first, skill positions second)
+  - Personnel acquisition philosophy integrates scouting, draft, and free agency
+    (untested at NFL level)
 
   What Would Make It Work:
   - Consistency. Same standard every day.
   - Teaching culture. Players improve because coaching improves.
-  - Patience. Builds programs, not quick fixes.
+  - Strong staff hires — especially DC and OL coach.
+  - Patience from ownership to build rather than quick-fix.
 
   What Would Break It:
-  - Impatient ownership/AD.
-  - Bad staff hires.
-  - Ego — micromanaging the side he didn't coordinate.
-  - Media pressure with low Media Relations skill.
+  - Impatient ownership.
+  - Bad staff hires — especially DC (his weakest side of the ball).
+  - Ego — micromanaging the defense he doesn't fully understand.
+  - Media pressure exceeding his tolerance for adversarial scrutiny.
+  - A QB who can't run his system. His offense requires intelligence at the position.
 ```
 
 ---
 
 ## SCHEME EVOLUTION SUMMARY
 
-| Level | Status | Scheme Authority | What He's Learning |
+| Level | Status | Scheme Authority | What He Learned |
 |---|---|---|---|
-| GA/QC | **ACTIVE** | None — executes staff directives | How coaching staffs operate, film breakdown, practice structure |
-| Position Coach | LOCKED | Position technique within someone else's system | Teaching, player development, how schemes are built |
-| Coordinator | LOCKED | Would own full side of the ball | Play-calling, game management, staff coordination |
-| Head Coach | LOCKED | Would set program identity | Hiring, program building, media, administration |
+| GA/QC | **COMPLETED** (1999–2001) | None — executed staff directives | How coaching staffs operate, WCO system, film breakdown, weekly cycle |
+| Position Coach | **COMPLETED** (2002–2005) | TE technique (3 yrs) + DB technique (1 yr) | Teaching, player development, meeting management, defensive perspective |
+| Coordinator | **COMPLETED** (2006–2010) | Full offense (HC, 3 yrs) + Passing game (PGC, 2 yrs) | Play-calling, scheme design, game management, dual-system mastery |
+| Head Coach | **PARTIALLY COMPLETED** | Program identity (college HC, 3 yrs — lived) / NFL HC (projected) | Program building, staff hiring, media, culture — proven at college level. NFL-specific gaps: roster/cap management, draft/FA, ownership dynamics |
 
-Everything beyond GA/QC is **projected based on Stone's playing background and early instincts**. His actual coaching identity will be shaped by his career path — mentors, systems learned, players coached, games won and lost. Nothing is locked in until he lives it.
+Stone's offensive identity is clear in the tape and in the structure of the system. He wants a multiple spread offense built on 11 personnel, formation variation, constant motion, and situational flexibility. The offense uses tight ends as real matchup pieces, carries answers in the quick game, dropback game, RPOs, play-action, and screen game, and adjusts personnel and tempo to game situation rather than forcing one static style. The play-calling framework is organized, coverage-aware, pressure-aware, and built to identify defensive rules early and attack them as the game moves on. This is not a generic system. It is a defined offensive approach with real structure, real sequencing, and clear game-day intent. It is ready for an NFL HC/OC role.
 
 ---
 
-*Single canonical scheme profile. Delete `scheme_level0.md` and `SCHEME PROFILE BY CAREER LEVEL.md` from repo.*
-*Evolves dynamically based on Stone's career path. Post-hire patch required for team-specific system context.*
+*Single canonical scheme profile. Evolves dynamically based on Stone's career path. Post-hire patch required for team-specific system context when Stone is placed in the 2011 OC cycle.*
