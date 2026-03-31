@@ -2,105 +2,105 @@ mode: COACHING
 tape: MODE B (engine-generated; archived snapshot)
 identity:
   name: Alex-Lamar Stone
-  age: 43
-  current_role: Pending — 2011 Job Cycle
+  age: 46
+  current_role: Arizona Cardinals — Offensive Coordinator
   previous_role: San Diego Chargers — Passing Game Coordinator
   level: 2
-  level_label: Coordinator (pending placement)
+  level_label: Coordinator (established NFL OC)
 timeline:
-  career_turn: 126
+  career_turn: 136
   season_turn: 1
-  phase: Offseason — 2011 Job Cycle Active
-  previous_phase: 2010 Season End — Exit Meetings
-  last_resolved_date: '2011-01-10'
-  date: '2011-01-11'
-  next_event: 2011 OC hiring cycle resolution
+  phase: Offseason — 2012 HC Interview Window Active
+  previous_phase: 2011 Season End — Exit Meetings
+  last_resolved_date: '2012-01-14'
+  date: '2012-01-15'
+  next_event: 2012 head coaching interview cycle resolution
   calendar_frozen: true
   resume_anchor:
-    exact_pickup_date: '2011-01-11'
-    reason: Stone is in the 2011 hiring cycle. His contract with San Diego expired. OC candidacy is active. Placement pending.
+    exact_pickup_date: '2012-01-15'
+    reason: Stone completed his second season as Arizona Cardinals offensive coordinator and is now in the 2012 head coaching interview window. Arizona finished 9-7 after a 1-6 start and a late 8-1 surge.
 calendar_state:
   calendar_file: null
-  previous_node: season_end_2010
-  current_node: job_cycle_2011
-  current_week_label: 2011 Job Cycle Active
+  previous_node: season_end_2011
+  current_node: hc_interview_cycle_2012
+  current_week_label: 2012 HC Interview Window Active
   next_node: null
-  continuation_note: Stone is between jobs. The 2011 OC hiring cycle is active. This snapshot captures his state at the moment of job search.
+  continuation_note: Stone is employed as Arizona's offensive coordinator. The 2011 season is over. This snapshot captures his state at the opening of the 2012 head coaching interview window.
 record:
   regular_season_record: 9-7
   postseason_record: N/A
-  division_finish: 2nd AFC West
-  playoffs: Missed
-  team: San Diego Chargers
+  division_finish: 2nd NFC West
+  playoffs: Missed on tiebreaker
+  team: Arizona Cardinals
   team_ovr: N/A
-  note: Previous year record.
+  note: Arizona started 1-6, finished 8-1, and became one of the league's strongest late-season offenses.
 job_status:
-  job_security: N/A
-  stress: 82
+  job_security: 74
+  stress: 69
   contract:
-    status: Expired
-    team: None
-    title: Free agent coach
-    term_years: 0
-    cycle: 2011
-    salary: 0
-    accepted: false
-    note: Stone is between jobs. OC interviews expected.
-  applications_active: 3
+    status: Active
+    team: Arizona Cardinals
+    title: Offensive Coordinator
+    term_years: 3
+    cycle: 2010
+    salary: 700000
+    accepted: true
+    note: Stone is under contract as Arizona's offensive coordinator. HC interview interest is active because the season has ended.
+  applications_active: 0
   offers_pending: 0
-  retention_status: Free agent coach
+  retention_status: Employed — Arizona Cardinals OC
   evaluation_projection:
     likely_score: N/A
     trajectory: Rising
-    scheme_mastery: 74
-    promotion_readiness: Ready for OC role
-    risk_flag: Between jobs; must land a role
+    scheme_mastery: 83
+    promotion_readiness: Ready for NFL head coaching interviews
+    risk_flag: Must choose next opportunity carefully; wrong HC landing spot could stall momentum
 offseason_status:
   time_bubble_active: true
-  bubble_stage: Job Cycle
-  era_ruleset: NFL_2010
+  bubble_stage: HC Interview Window
+  era_ruleset: NFL_2011
   evaluation_score: N/A
   trajectory: Rising
-  club_decision: Pending
-  outside_interest: Active — multiple OC-level conversations
-  interview_access: Open
-  transition_pending: true
+  club_decision: Retained by Arizona; outside interest active
+  outside_interest: Active — head coaching interview interest
+  interview_access: Open — season ended
+  transition_pending: false
 coaching_attributes:
   cap: 87
   core:
-    TAC: 82
-    TCH: 86
-    LDR: 84
+    TAC: 84
+    TCH: 87
+    LDR: 85
     REC: 82
-    MAN: 80
-    MOT: 82
+    MAN: 82
+    MOT: 83
   scheme:
-    SDN: 79
-    GMG: 85
-    PEV: 77
-    MED: 81
+    SDN: 82
+    GMG: 86
+    PEV: 79
+    MED: 82
     STF: 84
     ADM: 84
   advanced:
-    DEV: 82
+    DEV: 84
     INV: 87
-    CNT: 81
+    CNT: 82
     CMB: 81
     TRD: 83
   traits:
-    Disciplinarian: 30
-    Players_Coach: 42
-    Innovator: 40
-    Traditionalist: 14
+    Disciplinarian: 31
+    Players_Coach: 44
+    Innovator: 42
+    Traditionalist: 13
 finances:
-  net_worth: 11650000
-  annual_expenses: 590000
-  salary: 0
+  net_worth: 13050000
+  annual_expenses: 620000
+  salary: 700000
   financial_pressure: None — deep net worth cushion
 team_context:
-  team: None (free agent coach)
-  head_coach: N/A
-  role_context_note: Stone is in the 2011 OC hiring cycle. His full résumé is the strongest it has ever been.
+  team: Arizona Cardinals
+  head_coach: Ken Whisenhunt
+  role_context_note: Stone has completed two full NFL OC seasons in Arizona. His full résumé is now backed by actual NFL coordinator proof rather than projection.
 full_resume_at_time_of_hire:
   playing_career: Hall of Fame Tight End (San Diego Chargers, 1987-1998)
   coaching_career:
@@ -108,24 +108,28 @@ full_resume_at_time_of_hire:
   - Tight Ends Coach, Philadelphia Eagles (2002-2004, 3 years — includes NFC Championship appearances and Super Bowl XXXIX run)
   - Defensive Backs Coach, University of Memphis (2005, 1 year — learned secondary concepts, built defensive foundation)
   - Head Coach, University of Memphis (2006-2008, 3 years — record 20-17; 4-8, 7-5, 9-4 with Conference USA division title)
-  - Passing Game Coordinator, San Diego Chargers (2009-2010, 2 years under Norv Turner — 13-3 and 9-7 seasons)
-  age: 43
-  total_coaching_experience: 12 years across offense, defense, and head coaching
-  system_exposure: Reid West Coast Offense (deep, 6 years), Turner Coryell vertical passing (functional, 2 years + 12 years as a player), defensive secondary concepts (1 year), full college offensive/defensive program management (3 years)
-  play_calling_experience: 3 years as college HC
+  - Passing Game Coordinator, San Diego Chargers (2009, 1 year under Norv Turner — 13-3 season)
+  - Offensive Coordinator, Arizona Cardinals (2010-2011, 2 years — 7-9 then 9-7; 2011 team started 1-6 and finished 8-1)
+  age: 46
+  total_coaching_experience: 13 years across offense, defense, and head coaching
+  system_exposure: Reid West Coast Offense (deep, 6 years), Turner Coryell vertical passing (functional, 1 year coaching + 12 years as a player), Arizona OC hybrid offense (2 years of full NFL coordinator ownership), defensive secondary concepts (1 year), full college offensive/defensive program management (3 years)
+  play_calling_experience: 5 years total — 3 years as college HC and 2 years as NFL OC
   defensive_knowledge: Functional — hired and managed a DC, oversaw game-planning on both sides, studied defensive film as HC for three years, coached DBs for one year
   key_references:
   - Andy Reid (Eagles HC)
   - Rod Dowhower (former Eagles OC, primary mentor)
   - Norv Turner (Chargers HC)
+  - Ken Whisenhunt (Cardinals HC)
   - Don Coryell (former Chargers HC, legacy reference)
   - Bobby Ross (former Chargers HC)
   unique_selling_points:
   - Dual-system offensive mastery (Reid WCO + Turner Coryell)
+  - Real NFL OC experience (2 years in Arizona)
   - College HC play-calling experience (3 years, 20-17 record, division title)
   - Defensive exposure (DB coaching + HC oversight)
   - HOF playing career provides instant credibility with players
   - Proven program builder (4-8 to 9-4 at Memphis)
+  - Built a credible Arizona offense that improved from 7-9 to 9-7 and finished 8-1 in 2011
   - Super Bowl staff experience (Eagles, XXXIX)
 relationships:
   Don_Coryell:
@@ -142,7 +146,10 @@ relationships:
     status: Former mentor; primary coaching reference
   Norv_Turner:
     score: 72
-    status: Recent HC; endorsement-level trust
+    status: Recent NFL superior; endorsement-level trust
+  Ken_Whisenhunt:
+    score: 76
+    status: Current head coach; strong current reference
   Antonio_Gates:
     score: 68
     status: Strong player-coach relationship; player reference
@@ -154,24 +161,25 @@ relationships:
     status: Long-term colleague; external reference
 personal_development:
   system_familiarity:
-    system: Dual-system mastery (Reid WCO + Turner Coryell)
-    time_in_system_completed: 6 years Reid WCO + 2 years Turner Coryell + 3 years college HC system adaptation
-    status: Stone is ready for an OC role. His offensive philosophy integrates WCO timing concepts with Coryell vertical aggression. His play-calling experience from Memphis gives him confidence. His defensive exposure gives him broader football intelligence.
-  what_he_brings_to_an_oc_role:
+    system: Dual-system mastery refined through Arizona OC ownership
+    time_in_system_completed: 6 years Reid WCO + 1 year Turner Coryell coaching + 12 years Turner-family playing background + 3 years college HC adaptation + 2 years Arizona NFL OC ownership
+    status: Stone is no longer merely ready for an OC role. He has already proven he can run an NFL offense. His philosophy integrates WCO timing concepts with Coryell vertical aggression, then adapts those ideas to roster reality. The Arizona turnaround sharpened his confidence, sequencing, and in-season adjustment process.
+  what_he_brings_to_a_hc_interview:
   - A coherent offensive philosophy blending two major NFL offensive trees
-  - Three years of live play-calling experience (college HC)
-  - Two years of NFL coordinator-level concept design
+  - Five years of live play-calling experience across college and the NFL
+  - Two full years of NFL offensive coordinator proof on a normal roster
   - Understanding of both sides of the ball
   - HOF-caliber player credibility with current NFL players
   - Program-building experience that translates to culture-setting
-  - Deep references from Reid, Dowhower, Turner, and the Chargers organization
+  - A visible turnaround story: Arizona started 1-6 in 2011 and finished 8-1
+  - Deep references from Reid, Dowhower, Turner, Whisenhunt, and the Chargers/Eagles trees
 active_consequences:
-- Stone is at the critical inflection point of his coaching career. The next hire determines whether he reaches OC and eventually HC, or stalls.
-- His résumé is uniquely broad but that cuts both ways — some teams want a specialist, not a generalist.
-- The 9-7 regression year at San Diego may make some teams hesitant, even though the passing game stayed productive.
+- Stone is past the "can he become an OC" stage of his career. The next decision is whether the right HC opportunity exists, not whether he can run an offense.
+- His résumé is still uniquely broad, which remains a strength and a risk — some owners will see a future head coach, while some offensive purists may still want a narrower specialist.
+- The Arizona turnaround gave him real late-season credibility, but the lack of a playoff berth keeps his profile just below the obvious top tier.
 - His financial cushion means he can be selective rather than desperate.
-- The 2011 hiring cycle will determine his trajectory for the next 3-5 years.
+- The 2012 interview cycle will determine whether his path accelerates toward NFL head coaching or stays on the OC track another few years.
 last_3_turns_summary:
-- 'Turn 122: Chargers'' playoff hopes faded in the stretch run.'
-- 'Turn 123: San Diego finished 9-7 and missed the playoffs.'
-- 'Turn 124: Stone''s contract expired. OC candidacy active in the 2011 hiring cycle.'
+- 'Turn 132: Arizona fell to 1-6 and the offense came under pressure to adapt.'
+- 'Turn 134: Arizona finished 9-7 after an 8-1 closing run and narrowly missed the playoffs on tiebreakers.'
+- 'Turn 136: Stone entered the 2012 HC interview window as Arizona''s offensive coordinator.'
