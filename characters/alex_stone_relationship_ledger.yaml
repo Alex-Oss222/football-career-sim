@@ -1,10 +1,10 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '2011-01-11'
-  career_turn: 126
-  sim_phase: Offseason — 2011 Job Cycle Active
-  archive_note: 2011 season_start snapshot
+  date: '2012-01-15'
+  career_turn: 136
+  sim_phase: Offseason — 2012 HC Interview Window Active
+  archive_note: 2012 interview-window snapshot
 relationships:
 - name: Don Coryell
   role: Former HC, Chargers
@@ -30,7 +30,7 @@ relationships:
   trend: stable
   status: strong_external_reference
   notes:
-  - Reid remains a powerful reference for OC interviews.
+  - Reid remains a powerful reference for head coaching interviews.
   delta: 0
 - name: Rod Dowhower
   role: Former Offensive Coordinator
@@ -40,7 +40,7 @@ relationships:
   trend: stable
   status: former_mentor
   notes:
-  - Primary coaching reference for OC candidacy.
+  - Primary coaching reference for the OC-to-HC jump.
   delta: 0
 - name: Norv Turner
   role: Head Coach, San Diego Chargers
@@ -50,17 +50,28 @@ relationships:
   trend: stable
   status: endorsement_ready
   notes:
-  - Most recent HC; endorsement-level trust for OC candidacy.
+  - Recent NFL superior and system mentor; useful reference for HC credibility.
   delta: 0
+- name: Ken Whisenhunt
+  role: Head Coach, Arizona Cardinals
+  score: 76
+  previous_score: 70
+  delta_this_turn: 6
+  trend: rising
+  status: current_head_coach_reference
+  notes:
+  - Two seasons of direct OC-HC work built real trust.
+  - Whisenhunt can validate Stone's in-season adjustments during Arizona's 8-1 finish.
+  delta: 6
 - name: Pat Shurmur
-  role: NFL assistant (HC candidate, Cleveland Browns)
+  role: NFL head coach / long-term colleague
   score: 73
   previous_score: 73
   delta_this_turn: 0
   trend: stable
   status: long_term_colleague
   notes:
-  - Shurmur is in the HC hiring cycle himself (hired as Browns HC in 2011). Long-term colleague and mutual reference.
+  - Long-term colleague and mutual reference inside the Eagles coaching tree.
   delta: 0
 - name: Antonio Gates
   role: Tight End, San Diego Chargers
@@ -79,30 +90,37 @@ relationships:
   status: player_reference
   delta: 0
 - name: Brad Childress
-  role: Former HC, Minnesota Vikings (fired 2010)
+  role: Former HC, Minnesota Vikings
   score: 78
   previous_score: 78
   delta_this_turn: 0
   trend: stable
   status: external_reference
   notes:
-  - Childress was fired from the Vikings midseason in 2010. Still a reference from the Eagles years.
+  - Still a useful Eagles-years reference.
   delta: 0
 - name: Memphis Administration
   role: University administration
-  score: 60
-  previous_score: 65
-  delta_this_turn: -5
+  score: 58
+  previous_score: 60
+  delta_this_turn: -2
   trend: cooling
   status: former_employer
   notes:
-  - Further distance decay. Good terms but increasingly distant.
-  delta: -5
+  - Good terms remain intact, but distance decay continues.
+  delta: -2
 relationship_events:
-- turn: 125
-  date: '2011-01-05'
-  event: Stone entered the 2011 OC hiring cycle as a free agent coach with an active candidacy.
+- turn: 134
+  date: '2012-01-08'
+  event: Arizona finished 9-7 after a 1-6 start and 8-1 close, pushing Stone into the 2012 HC interview conversation.
+  effects:
+  - name: Ken Whisenhunt
+    delta: 6
+    note: Arizona turnaround increased Whisenhunt's trust and endorsement value.
+- turn: 136
+  date: '2012-01-15'
+  event: Stone entered the 2012 HC interview window as Arizona's offensive coordinator.
   effects:
   - name: Memphis Administration
-    delta: -5
+    delta: -2
     note: Continued distance decay from former employer.
