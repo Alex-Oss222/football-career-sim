@@ -341,53 +341,176 @@ DEVELOPED THROUGH 2 YEARS OF NFL OC WORK:
 
 ### Stone's Offensive Philosophy (Current — January 2012)
 
-This is no longer a projection. It is assembled from 13 years of coaching experience across two NFL systems, a college head coaching tenure, real NFL offensive coordinator ownership in Arizona, and a Hall of Fame playing career.
+This is no longer a projection. It is assembled from 13 years of coaching experience across two NFL systems, a college head coaching tenure, real NFL offensive coordinator ownership in Arizona, and a Hall of Fame playing career. The important development is not just that Stone can coach offense. It is that his offensive identity widened. Early in his career, the easiest way to describe him was as a tight-end-centric passing-game thinker — a former Hall of Fame tight end who saw the field through route craft, leverage, coverage recognition, and matchup stress. That was real, and it still matters. But it is not the full picture anymore.
+
+Arizona forced the expansion. Running a full NFL offense on a normal roster, then stabilizing it through a 1-6 start and an 8-1 finish, pushed Stone beyond the comfort zone of "good pass-game designer with TE answers." He had to build a complete unit. He had to carry the pass game, the run game, the sequencing, the protection answers, the weekly self-scout, the teaching rhythm, and the adjustment layer. The result is a broader coach than the old label suggests.
+
+He still believes the passing game is where intelligence shows up most clearly. He still believes the tight end is one of the easiest ways to distort defensive rules. But by January 2012, his offense is not built around one position room or one family of concepts. It is a multiple, structurally coherent offense built from timing, motion, physical run-game structure, and coverage manipulation.
 
 ```
 CORE OFFENSIVE IDENTITY:
 
-  System Base: WCO timing and progression structure + Coryell vertical aggression
+  System Base: WCO timing and progression structure + Coryell vertical stress
 
-  Foundation: Motion-heavy, TE-aware, run-influenced passing offense
+  Foundation: Multiple offense built on timing, motion, layered route concepts,
+  and a zone-and-gap run game that ties directly into play-action, boot, and
+  the constraint layer.
 
-  The offense is built on pre-snap diagnosis. Motion reveals the defense before
-  the snap. The QB uses that information to confirm or adjust the play. The
-  system rewards intelligence and preparation — for the QB, for the receivers,
-  and for the offensive line.
+  The offense is built to make the defense declare. Motion reveals structure.
+  Formations create angles. Alignments change fits. The QB gets cleaner pictures,
+  the back gets clearer reads, and the coverage is forced to show its rules.
+  Stone wants the offense to feel organized to his own players and unstable to
+  the defense.
 
-OPERATING PRINCIPLES:
+HOW THE OFFENSE EVOLVED:
 
-  1. MOTION ON MOST PLAYS
-     Motion diagnoses coverage pre-snap and creates blocking angles. It forces
-     the defense to communicate and adjust, which creates errors. Stone uses
-     motion on 40%+ of offensive plays. This is his schematic signature.
+  EARLY STONE:
+  - Tight-end-driven thinker.
+  - Coverage-aware pass-game coach.
+  - Heavy emphasis on route craft, leverage, timing, and using TE versatility
+    to create matchup problems.
+  - The pass game was the entry point because that was his playing background
+    and his fastest route to high-level schematic value.
 
-  2. RUN GAME EXISTS TO SET UP THE PASS
-     Stone is not a run-first coach. He uses the run game to manipulate
-     defensive structure — force safeties into the box, create play-action
-     opportunities, establish down-and-distance advantages. The run game is
-     a tool, not an identity.
+  EXPANDED STONE:
+  - Still values TE versatility, but no longer needs the offense to orbit the TE.
+  - Built out a real zone-and-gap run game identity instead of treating the run
+    game as a placeholder between pass calls.
+  - Thinks in full offensive structure now: front mechanics, linebacker fits,
+    sequencing, complementary calls, protection answers, play-action, boot, and
+    constraint football.
+  - Understands that the offense works best when the defense is stressed by the
+    whole architecture, not by one star position or one favorite concept family.
 
-  3. THREE-LEVEL PASSING
-     Every passing concept attacks three levels: short chains for rhythm and
-     completions, intermediate control routes for conversion and movement,
-     deep shots when the defense gives them. The vertical element comes from
-     the Coryell tree. The timing and progression structure come from the WCO.
+PASSING GAME PHILOSOPHY:
 
-  4. EVERY CONCEPT HAS A BUILT-IN OUTLET
-     Architecture, not checkdown. The outlet route is designed into the concept,
-     not an emergency option. The QB always has somewhere to go with the ball.
+  Stone's passing game is a timing-and-rhythm passing attack with layered route
+  concepts, pre-snap motion, and built-in answers versus coverage. It wants to
+  stress all three levels, get the ball out on time, create clean reads for the
+  quarterback, and still carry enough vertical push to punish safeties when they
+  get too aggressive.
 
-  5. TE VERSATILITY MATTERS EVEN WHEN 12 PERSONNEL ISN'T THE BASE
-     Stone's playing career and TE coaching background still shape the offense.
-     In an ideal roster, 12 personnel is a foundational grouping. In a less ideal
-     roster, he still uses TE alignment, flex, split, motion, and blocking value
-     to create identification problems for the defense.
+  What that means in practice:
+  - Routes are taught as part of a concept family, not as isolated assignments.
+    The point is spacing, leverage, sequencing, and what one route is doing for
+    the route next to it.
+  - Motion is used to clarify coverage, force communication, widen or tighten
+    defenders, and create cleaner pictures for the QB before the snap.
+  - The progression structure is meant to be coachable. Stone wants the QB playing
+    fast because the picture was clarified early, not because the offense asked
+    him to guess.
+  - Built-in answers matter. Hot access, outlet structure, coverage tags, and
+    concept-adjustment rules are part of the architecture, not emergency patches.
+  - Vertical shots stay in the offense even when the weekly plan leans rhythm.
+    Stone does not want safeties sitting downhill and shrinking the field.
 
-  6. QB OWNS THE OFFENSE AT THE LINE
-     The QB reads the defense, adjusts protections, changes play calls, and
-     manipulates the snap count. This system requires a smart QB. It does not
-     work with a processor who needs the sideline to make decisions.
+  THREE-LEVEL STRUCTURE:
+  - Short level: rhythm throws, hitches, quick outs, stick answers, screens,
+    access throws, and spacing concepts that keep the offense on schedule.
+  - Intermediate level: digs, crossers, sail structures, layered flood concepts,
+    dagger-type stress, and timing routes that move chains and control the game.
+  - Deep level: posts, corners, seams, double-moves, and play-action shots that
+    punish single-high safety play, overaggressive support, or corners sitting
+    on underneath rhythm.
+
+  WHAT STONE WANTS FROM THE QB:
+  - Pre-snap coverage recognition.
+  - Post-snap confirmation discipline.
+  - Protection ownership.
+  - Willingness to take the profitable throw on time rather than hunt a hero ball.
+  - Enough arm and confidence to punish the defense vertically when the structure
+    gives it to him.
+
+  WHAT STONE WANTS FROM THE SKILL PLAYERS:
+  - Precision in landmarks and timing.
+  - Understanding of spacing, not just route memorization.
+  - Ability to adjust speed and body language without destroying concept timing.
+  - After-catch discipline: get vertical, finish, stay on schedule.
+
+RUN GAME PHILOSOPHY:
+
+  Stone's run game is zone and gap. Inside zone, outside zone, duo, counter, and
+  power. It is built to create movement up front, force linebackers to declare,
+  and give the back clear reads with both cutback lanes and downhill entry points.
+
+  This is a meaningful evolution in his identity. Early Stone leaned naturally
+  toward the passing game because that was where his lived expertise was richest.
+  Current Stone still values the pass game more than a pure run-first coach would,
+  but he no longer sees the run game as mere setup dressing. He sees it as a
+  structural weapon. It changes box counts, changes second-level flow, creates
+  play-action credibility, and gives the offense a physical answer when the game
+  needs one.
+
+  ZONE SIDE OF THE RUN GAME:
+  - Inside zone gives the back interior read structure and cutback access.
+  - Outside zone stretches the front, tests edge discipline, and forces linebackers
+    to run and declare.
+  - The zone game makes defenders wrong slowly first, then all at once. It widens
+    fits, creates hesitation, and sets up boots, keeps, split-flow action, and
+    backside constraint answers.
+
+  GAP SIDE OF THE RUN GAME:
+  - Duo gives the offense downhill double-team force without always looking like
+    old-school power.
+  - Counter and power create defined entry points, puller stress, and eye candy
+    for second-level defenders.
+  - Gap schemes punish fronts that start flowing too fast to zone action or
+    overplaying horizontal stretch.
+
+  WHAT THE RUN GAME IS TRYING TO DO:
+  - Move the front.
+  - Force linebackers to commit.
+  - Create clean, disciplined reads for the back.
+  - Build physical confidence in the offensive line.
+  - Tie directly into the pass game so run looks and pass looks speak the same language.
+
+UNDER THE RUNNING GAME — STRUCTURE AND COMPLEMENTS:
+
+  Under the running game, Stone is multiple. The offense uses formations, motion,
+  and alignment to create angles, change fits, and keep the front from settling in.
+  The run game is physical, but it also ties directly into the play-action, boot,
+  and constraint game.
+
+  MULTIPLE STRUCTURE MEANS:
+  - Same core runs from different personnel.
+  - Same presentation producing different backfield actions.
+  - Same run action attached to different pass layers.
+  - Enough variation in alignment and motion that the defense cannot get comfortable
+    keying one surface or one strength call.
+
+  WHY THIS MATTERS:
+  - Fronts hate certainty disruption. If the surface keeps changing, the fit picture
+    slows down.
+  - Linebackers declare faster when motion threatens their rules.
+  - Safeties get more aggressive against a credible run structure, which is exactly
+    when Stone wants to hit play-action over the top or behind them.
+  - The best form of physicality is not just moving a man; it is moving him while
+    making him think.
+
+  PLAY-ACTION / BOOT / CONSTRAINT LAYER:
+  - Play-action is not decorative. It is the reward for building a believable run picture.
+  - Boot action punishes hard-flow linebackers and overreactive edges.
+  - Constraint calls punish defenses that start cheating alignments, overloading
+    numbers, or jumping tendency tells.
+  - Stone wants the defense to feel like every adjustment solves one problem and
+    creates another.
+
+PERSONNEL PHILOSOPHY:
+
+  Stone is still TE-aware because that is part of who he is. He still sees the tight
+  end as one of the easiest tools for changing defensive math without substituting.
+  But Arizona proved he is no longer dependent on 12 personnel as the center of the
+  offense. He can live in 11 personnel more often, spread the field when roster reality
+  asks for it, and still keep the same underlying sequencing and coverage logic.
+
+  11 personnel is a usable base.
+  12 personnel is a strategic weapon.
+  21 personnel is a changeup with purpose.
+  Heavy personnel is for force and finishing, not for decoration.
+
+  The growth point is important: Stone used to look like a coach who started with the
+  tight end and built outward. Now he looks like a coach who starts with offensive
+  structure and then decides how the tight end fits inside it.
 
 PERSONNEL TENDENCIES (NFL — current best estimate from Arizona tape):
 
@@ -397,77 +520,116 @@ PERSONNEL TENDENCIES (NFL — current best estimate from Arizona tape):
   Heavy (13/22):                        ~7%
   Light (10/01):                        ~7%
 
-  NOTE: Stone still prefers more TE-driven stress than most modern offenses,
-  but Arizona proved he can live in 11 personnel more often without losing his identity.
+  NOTE: Arizona pushed Stone into a slightly more 11-personnel surface than his ideal.
+  That did not change the offense's center. It changed how the center was expressed.
 
-RUN GAME PHILOSOPHY:
+RUN/PASS SHAPE (CURRENT):
 
-  Zone concepts: ~55% of designed runs
-  Gap/Power concepts: ~40% of designed runs
-  Designed QB runs/options: ~5%
+  Run: ~45%
+  Pass: ~55%
 
-  Run game is zone-based with gap-scheme supplements. Not a zone-exclusive
-  system. Uses gap/power to punish defenses that over-adjust to zone action.
-  Minimal designed QB runs — Stone's system protects the quarterback.
+  Stone is not trying to hit a philosophical 50/50 number for its own sake.
+  He wants the offense to be balanced enough that the defense has to honor both
+  sides, but tilted enough toward the pass that the quarterback and concept structure
+  can decide the game when necessary.
 
-PASS GAME PHILOSOPHY:
+PASS GAME DISTRIBUTION (CURRENT BEST FIT):
 
-  Quick game / screens: ~25%
-  Intermediate concepts (WCO timing routes, crossers, digs): ~37%
-  Deep shots (Coryell vertical concepts, shot plays off play-action): ~18%
-  Play-action: ~20%
+  Quick game / screens / access:                     ~24%
+  Intermediate rhythm and layered control routes:   ~38%
+  Play-action / boot / movement answers:            ~20%
+  Deep shots / vertical stress:                     ~18%
 
-  The intermediate game is the engine. Quick game creates rhythm and keeps
-  the defense honest underneath. Deep shots punish single-high coverage and
-  aggressive run-support. Play-action ties the run game to the passing game.
+  The intermediate game is the engine. It is where Stone lives when he wants control.
+  Quick game keeps the picture honest and cleans up bad down-and-distance situations.
+  Play-action and boot marry the run structure to the pass structure. Vertical shots
+  keep the safeties from playing like extra linebackers.
 
 WHAT MAKES IT WORK:
-  - Motion forces defensive declaration before the snap
-  - TE usefulness creates personnel flexibility every series
-  - QB intelligence required — the system rewards processing speed
-  - Dual-system design: opponents can't scout one tree because concepts come
-    from both the WCO and Coryell families
-  - Play-action creates explosive-play opportunities against aggressive defenses
-  - The offense can bend to roster reality without abandoning its core logic
+  - QB intelligence and discipline.
+  - Motion that reveals rather than motions for its own sake.
+  - Offensive line cohesion in both zone and gap rules.
+  - Route spacing that preserves timing.
+  - A credible run game that earns the play-action layer.
+  - Weekly self-scout so the structure does not become a tell.
+  - Skill players who understand concept football, not just isolated assignments.
 
 WHAT BREAKS IT:
-  - Dumb QB. System requires pre-snap reads, post-snap progressions, and
-    protection adjustments. A QB who can't process kills it.
-  - Bad OL. Motion and scheme can't fix five guys who can't block. The
-    intermediate passing game needs time. The run game needs execution.
-  - No useful TE. Without a TE who can at least threaten both jobs, the offense
-    loses one of its easiest ways to disguise intent.
-  - Predictable play-caller. Stone's tendency toward motion and TE usage can
-    become a tell if he doesn't manage his own tendencies aggressively.
-  - Talent-poor roster. This is not a system that manufactures production from
-    inferior players. It optimizes good talent. It doesn't replace it.
+  - QB who cannot process or own the line of scrimmage.
+  - Bad OL play. Stone's structure helps; it does not erase losing one-on-ones up front.
+  - No trustworthy answers on early downs, which leaves the offense living in long-yardage.
+  - Play-caller drift — calling motion without purpose, variety without sequencing,
+    or explosives without earning them.
+  - Roster poverty. The system can organize good players and sharpen functional players.
+    It cannot manufacture elite offense out of bad football.
+
+DEFENSIVE PHILOSOPHY (HOW STONE SEES THE OTHER SIDE OF THE BALL):
+
+  On defense, Stone believes in an aggressive, structurally sound unit built on
+  tight coverage, disguised intentions, and fast run support. It wants to muddy
+  the quarterback's picture, close space quickly, and make the offense work through
+  pressure, contested throws, and disciplined pursuit.
+
+  That does not make him a defensive play-caller. It tells you what kind of defense
+  he respects, what kind of defense he would want attached to his team, and why his
+  offensive philosophy is shaped the way it is.
+
+  WHAT HE WANTS A DEFENSE TO LOOK LIKE:
+  - Tight coverage structure that compresses easy windows.
+  - Disguise without chaos. The picture should be muddy for the offense and clear
+    for the defenders.
+  - Fast, disciplined run support. No soft edges. No lazy fits.
+  - Pressure that feels connected to coverage, not pressure for its own sake.
+  - Pursuit that finishes plays and shortens explosives into manageable gains.
+
+  WHY THIS MATTERS TO HIS OFFENSE:
+  - Stone has coached enough defense and studied enough defensive structure to know
+    what gives quarterbacks trouble.
+  - His offense is built to attack exactly those problems: cloudy pictures, tight
+    windows, aggressive safeties, fast second-level flow, and pressure married to coverage.
+  - The better he understands what a sound defense is trying to do, the more precise
+    his offensive answers become.
 ```
 
 ### Defensive Knowledge (Current — January 2012)
 
 ```
-Stone is NOT a defensive coordinator. He is a head-coach-level evaluator of defense.
+Stone is NOT a defensive coordinator. He is a head-coach-level evaluator of defense
+with enough lived exposure to know what he wants, what works structurally, and what
+questions to ask.
 
 WHAT HE KNOWS:
-  - Man coverage technique (taught DBs for one year)
-  - Zone coverage concepts (landmarks, eye discipline, pattern-match principles)
-  - How defensive coverages are structured and what they're trying to take away
-  - How to evaluate a defensive game plan as a head coach (three years of HC oversight)
-  - How to identify when defensive adjustments are needed at halftime
-  - What offensive concepts stress specific defensive structures (from both
-    offensive and defensive coaching perspectives)
+  - Man coverage technique at the teaching level from his DB coaching year.
+  - Zone coverage structure: landmarks, leverage, eye discipline, pattern reading,
+    route distribution, and how coverage rules change with formation and motion.
+  - How defensive disguises are built to muddy the quarterback's picture.
+  - How run-support structure fits together from the secondary and second level.
+  - How pressure and coverage should marry. He is not designing full pressure systems,
+    but he knows the difference between connected aggression and reckless call sheet noise.
+  - How to evaluate a defensive game plan as a head coach and offensive opponent.
+  - What offensive structures stress specific defensive rules because he has now seen
+    the problem from both sides.
 
 WHAT HE DOESN'T KNOW:
-  - Defensive scheme design at coordinator depth
-  - Pressure package installation
-  - Defensive line technique at a teaching level
-  - Linebacker scheme responsibility at a teaching level
-  - How to build a full defensive game plan from scratch
+  - Defensive scheme design at coordinator depth.
+  - Full pressure-package installation and week-to-week pressure menu construction.
+  - Defensive line technique at a room-owning teaching level.
+  - Linebacker play at a coordinator-level teaching depth.
+  - How to build an entire NFL defensive call system from scratch.
+
+WHAT HIS DEFENSIVE KNOWLEDGE IS GOOD FOR:
+  - Hiring the right DC profile eventually.
+  - Asking the right questions in staff meetings.
+  - Diagnosing what the defense is trying to take away from his offense.
+  - Making halftime offensive adjustments against structurally sound defenses.
+  - Building an overall team identity that does not put the offense and defense at war
+    with each other philosophically.
 
 DEFENSIVE KNOWLEDGE IS AN OC/HC ASSET, NOT A DEFENSIVE CREDENTIAL:
-  It makes him a better offensive coach because he understands what the defense
-  is trying to do. It makes him a better HC candidate eventually because he can
-  communicate with a DC. It does not qualify him to coordinate a defense.
+  It makes him a better offensive coach because he understands how defenses are trying
+  to distort reads, steal numbers, and close space. It makes him a more credible future
+  head coach because he can evaluate a defense without pretending to be a defensive
+  mastermind. It does not qualify him to coordinate a defense.
 ```
 
 ### System Familiarity (Current — January 2012)
@@ -476,9 +638,9 @@ DEFENSIVE KNOWLEDGE IS AN OC/HC ASSET, NOT A DEFENSIVE CREDENTIAL:
   Air Coryell (playing + coaching):    9/10 — 12 years as a player, 1 year as PGC in Turner system
   West Coast (Reid tree):              9/10 — 6 years immersion (3 QC + 3 position coach)
   Erhardt-Perkins:                     3/10 — aware of structure, no direct experience
-  Spread:                              5/10 — college exposure, adapted some spread concepts at Memphis and Arizona
-  Zone Run Schemes:                    8/10 — improved through HC play-calling and NFL OC coordination
-  Gap/Power Run Schemes:               8/10 — same
+  Spread:                              5/10 — college exposure, adapted some spread spacing and surface ideas at Memphis and Arizona
+  Zone Run Schemes:                    8/10 — improved from support knowledge to real coordinator-level ownership
+  Gap/Power Run Schemes:               8/10 — same; now part of the core offensive structure rather than a complement he borrows
   Defensive Systems:                   8/10 — DB coaching + HC oversight + offensive-side recognition
   Special Teams:                       3/10 — HC oversight only, not a specialty
 ```
@@ -499,48 +661,86 @@ DEFENSIVE KNOWLEDGE IS AN OC/HC ASSET, NOT A DEFENSIVE CREDENTIAL:
 
 ### Scheme Role (Partially Completed — college HC lived, NFL HC projected)
 
-Stone would **set the organizational identity** for all three phases. Play-calling delegation depends on his skills vs. his coordinators' skills per Coaching Module §6.1.
+Stone would **set the organizational identity** for all three phases. He would not want
+an offense, defense, and special teams operation that feel unrelated to one another.
+His team would be built to look coherent: offensive structure that stresses rules,
+defensive structure that hides rules, and a coaching culture that values teaching over
+theatrics. Play-calling delegation depends on his skills vs. his coordinators' skills
+per Coaching Module §6.1, but the identity layer would be his.
 
 ```
 PROGRAM IDENTITY (Proven at College HC Level — NFL HC translation required):
 
-  Offensive Philosophy:
-  - Would retain his OC offensive identity (motion-heavy, TE-versatile, dual-system)
-  - Play-calling delegation depends on whether his OC's skills exceed his own
-  - Strong preference to remain involved in offensive design even if delegating play-calling
+  OFFENSIVE IDENTITY AS A HEAD COACH:
+  - Would retain his current offensive identity: timing-and-rhythm pass game,
+    layered route concepts, pre-snap motion, zone-and-gap run structure, and a
+    strong play-action / boot / constraint layer.
+  - Would want an offense that can play from multiple personnel surfaces without
+    changing its core logic.
+  - Would remain heavily involved in offensive design even if he delegated the
+    play sheet to an OC. Stone is too fully formed on offense to be a ceremonial
+    overseer on that side of the ball.
+  - Would demand that the offense be teachable first. If players cannot process it,
+    he does not consider it good design no matter how pretty it looks on paper.
 
-  Defensive Philosophy:
-  - Hires DC and trusts the scheme. Does not pretend to be a defensive mind.
-  - Can evaluate defensive game plans and demand adjustments. Cannot design them.
-  - Wants a DC who communicates — he needs to understand the defensive plan even
-    if he doesn't build it.
+  WHAT HIS OFFENSE WOULD TRY TO BE:
+  - Organized before it is explosive.
+  - Physical without becoming static.
+  - Flexible without becoming identity-less.
+  - Coverage-aware and pressure-aware every week.
+  - Capable of winning through rhythm, through the run game, or through explosives,
+    depending on roster and opponent.
 
-  Culture Layer (Proven — built and sustained over 3 years at Memphis):
-  - Daily improvement standard
-  - Competition at every position, every practice
-  - Film study is coached, not just assigned
-  - Standards enforced equally — stars and backups same rules
-  - Players fight for each other
+  DEFENSIVE IDENTITY AS A HEAD COACH:
+  - Wants an aggressive, structurally sound defense built on tight coverage,
+    disguised intentions, fast run support, and pursuit that closes space.
+  - Would hire a DC whose pressure package is married to coverage and whose players
+    understand the difference between aggression and recklessness.
+  - Does not want a defense that lives on gimmicks. He wants one that makes the
+    quarterback uncomfortable snap after snap because the picture is never fully clean.
+  - Can evaluate whether the defensive structure is sound. Cannot and should not
+    micromanage every call.
 
-  Program Building (Proven at College Level — NFL personnel acquisition untested):
-  - Hires coaches who can teach, not just draw plays
-  - Prioritizes player development over roster turnover
-  - Builds from the lines out (OL/DL first, skill positions second)
-  - Personnel acquisition philosophy integrates scouting, draft, and free agency
-    (untested at NFL level)
+  WHAT KIND OF DC FITS STONE:
+  - Communicator, not lone-wolf savant.
+  - Coverage-discipline coach first, pressure artist second.
+  - Someone who can teach the back end and the front end as one problem.
+  - Someone comfortable being challenged on structure without taking it personally.
 
-  What Would Make It Work:
-  - Consistency. Same standard every day.
-  - Teaching culture. Players improve because coaching improves.
-  - Strong staff hires — especially DC and OL coach.
-  - Patience from ownership to build rather than quick-fix.
+  CULTURE LAYER (PROVEN — built and sustained over 3 years at Memphis):
+  - Daily improvement standard.
+  - Competition at every position, every practice.
+  - Film study is coached, not just assigned.
+  - Standards enforced equally — stars and backups same rules.
+  - Players fight for each other because the structure is consistent and the coaching is honest.
 
-  What Would Break It:
-  - Impatient ownership.
-  - Bad staff hires — especially DC (his weakest side of the ball).
-  - Ego — micromanaging the defense he doesn't fully understand.
-  - Media pressure exceeding his tolerance for adversarial scrutiny.
-  - A QB who can't run his system. His offense requires intelligence at the position.
+  PROGRAM BUILDING (PROVEN AT COLLEGE LEVEL — NFL PERSONNEL ACQUISITION UNTESTED):
+  - Hires coaches who can teach, not just draw plays.
+  - Values positional detail and room ownership.
+  - Builds from the lines outward because structure dies when the fronts are weak.
+  - Wants personnel that fit the system's thinking demands, not just raw athletic profiles.
+  - Believes roster construction, coaching style, and scheme must agree with each other.
+
+  WHAT WOULD MAKE IT WORK:
+  - Ownership that understands build quality matters more than splashy first impressions.
+  - Strong staff hires, especially DC and OL coach.
+  - A quarterback who can own the offense mentally.
+  - Alignment between front office and coaching staff on player type and developmental timeline.
+  - Patience to let structure take hold before demanding stylistic fireworks.
+
+  WHAT WOULD BREAK IT:
+  - Impatient ownership chasing shortcuts.
+  - Bad staff hires, especially on defense or the offensive line.
+  - A QB who cannot process quickly enough for the offense Stone wants to run.
+  - Ego drift — either Stone overreaching on defense or a coordinator refusing structural accountability.
+  - Front-office/coaching disconnect on roster type.
+  - Media or ownership pressure forcing cosmetic change instead of real correction.
+
+  BOTTOM LINE:
+  - Stone's head-coach projection is no longer just "former player with offensive upside."
+  - He now projects as a full-team identity coach whose offensive background is still
+    the clearest credential, but whose understanding of structure, sequencing, teaching,
+    and defensive stress has widened enough to support an NFL HC profile.
 ```
 
 ---
