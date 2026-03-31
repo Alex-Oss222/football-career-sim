@@ -219,7 +219,7 @@ Stone can interview for HC jobs while also being considered for OC roles.
 
 ## AFTER-2012 PREVIEW (PLANNING PURPOSES ONLY)
 
-These changes happen AFTER the 2012 season — relevant for Stone's long-term planning:
+These changes happen AFTER the 2012 season — relevant for Stone's long-term planning: IF STONE IS HIRED, HE TAKES THE PLACE OF THE CHARACTER FOR THE 2012 SEASON, HIS TEAM IS may diverge
 
 | Team | What Happens | Significance |
 |------|-------------|-------------|
