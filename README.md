@@ -36,6 +36,7 @@ Current status:
 
 - **Free agent coach**
 - **Active OC candidate**
+- **Active HC candidate**
 - Résumé at its strongest point  
 - Entering a critical career inflection point  
 
