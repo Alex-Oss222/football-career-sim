@@ -1,7 +1,7 @@
 # ALEX-LAMAR STONE — CHARACTER PROFILE
 
 > Phase-based evolution document. Core identity is static. Career phases are appended, never overwritten.
-> Current through: Turn 126 / January 11, 2011
+> Current through: Turn 136 / January 15, 2012
 
 ---
 
@@ -9,7 +9,7 @@
 
 ```
 Name:           Alex-Lamar Stone
-Date of Birth:  September 21, 1965 (now age 45)
+Date of Birth:  September 21, 1965 (now age 46)
 Height:         6'4" | Weight: 235 lbs
 Birthplace:     Miami, Florida
 Languages:      English, Spanish, Arabic, French, Japanese
@@ -110,10 +110,10 @@ Including the coach. If you set a rule, you follow it.
 ### Finances
 
 ```
-As of January 2011:
-Net Worth:              $11,650,000
-Annual Expenses:        $590,000
-Salary:                 $0 (between jobs)
+As of January 2012:
+Net Worth:              $13,050,000
+Annual Expenses:        $620,000
+Salary:                 $700,000 (Arizona Cardinals OC)
 Financial Pressure:     None — deep net worth cushion
 Lifestyle:              Upper Middle Class
 Months Runway:          200+ months without income
@@ -121,7 +121,7 @@ Months Runway:          200+ months without income
 
 Stone doesn't need money. He needs purpose. His financial position has strengthened over 12 years of coaching. The cushion removes desperation from every career decision he's ever made.
 
-### Coaching Traits (Current — January 2011)
+### Coaching Traits (Current — January 2012)
 
 ```
 Disciplinarian: 30  |  Players' Coach: 42  |  Innovator: 40  |  Traditionalist: 14
@@ -375,103 +375,134 @@ Game management, staff management, administrative, recruiting, media relations, 
 
 ---
 
-### Phase 6 — Passing Game Coordinator, San Diego Chargers (2009–2010)
+### Phase 6 — Passing Game Coordinator, San Diego Chargers (2009)
 
-**Context:** Stone returns to the NFL as Passing Game Coordinator under Norv Turner in San Diego — the franchise where he played for 12 seasons. Two-year stint. This is where he completes his dual-system mastery.
+**Context:** Stone returns to the NFL as Passing Game Coordinator under Norv Turner in San Diego — the franchise where he played for 12 seasons. One-year stint. This is where he re-establishes himself in the league and completes the last major piece of his dual-system offensive education.
 
 **Year-by-year:**
 - **2009: 13-3.** San Diego fields a top-tier passing offense. Stone contributes to concept design, game-plan assembly, and passing-game installation at the NFL coordinator level. He's working inside the Turner/Coryell vertical passing system — the same offensive tree he played in, now experienced from the coaching side. Lost in the Divisional Round.
-- **2010: 9-7.** Team regresses. Missed playoffs. But the passing game stays productive. Stone maintains his unit's output during a down year, which is its own form of evidence. His contract expires.
 
 **What Changed:**
-- **Dual-system mastery complete.** Stone now has deep functional knowledge of both the Reid/Holmgren West Coast Offense (six years in Philadelphia) and the Turner/Coryell vertical passing system (two years coaching + twelve years playing). He can design, install, and troubleshoot concepts from both trees. His offensive philosophy is a hybrid: WCO timing and progression structure combined with Coryell vertical aggression and TE-centric personnel usage.
-- **NFL coordinator-level concept design.** He designed passing concepts at the NFL level. Not the full playbook — Turner owns the offense — but Stone was responsible for the passing game segment. He built game-plan sections, designed route combinations against specific defensive looks, and contributed to red-zone and third-down passing packages.
+- **Dual-system mastery effectively completes.** Stone now has deep functional knowledge of both the Reid/Holmgren West Coast Offense (six years in Philadelphia) and the Turner/Coryell vertical passing system (one year coaching + twelve years playing). He can design, install, and troubleshoot concepts from both trees. His offensive philosophy is a hybrid: WCO timing and progression structure combined with Coryell vertical aggression and TE-centric personnel usage.
+- **NFL coordinator-level concept design.** He designed passing concepts at the NFL level. Not the full playbook — Turner owned the offense — but Stone was responsible for the passing game segment. He built game-plan sections, designed route combinations against specific defensive looks, and contributed to red-zone and third-down passing packages.
 - **Working with elite NFL talent again.** Philip Rivers. Antonio Gates. Vincent Jackson. Stone coached at the NFL's highest talent level after four years in Conference USA. The adjustment back was real — NFL players process faster, execute at a higher standard, and demand coaching that matches their level.
-- **Relationship with Turner.** Norv Turner is a legitimate coaching reference and a system mentor in the Coryell tree. Stone now has deep relationships in both major offensive coaching trees.
-- **Innovation attribute peaks.** Working inside two different systems and a college HC role forced Stone to develop creative solutions. His playbook innovation rating (87) reflects a coach who can draw from multiple sources rather than running one rigid system.
+- **Relationship with Turner.** Norv Turner becomes a legitimate coaching reference and a system mentor in the Coryell tree. Stone now has deep relationships in both major offensive coaching trees.
+- **Innovation attribute peaks.** Working inside two different systems and a college HC role forced Stone to develop creative solutions. His playbook innovation profile now reflects a coach who can draw from multiple sources rather than running one rigid system.
 
 **What Didn't Change:**
 - He's not an OC yet. PGC is coordinator-adjacent, not coordinator. He didn't have full play-calling authority in San Diego.
-- The 9-7 regression year and missed playoffs in 2010 — even though the passing game held up — creates a slight narrative headwind. Hirers may associate him with the team's decline.
-- His contract expired. He's between jobs.
+- One strong year as PGC is meaningful evidence, but it is still incomplete proof compared to actually running a full NFL offense.
 
 **Mental State (End of Phase 6):**
-- Confident. His résumé is the strongest it's ever been. He's ready for OC.
-- Aware that being between jobs at 45 carries risk. The 2011 hiring cycle is not guaranteed to produce the right landing spot.
-- Not desperate. Financial cushion removes pressure. But he wants the right role, not just any role.
-- Stress is elevated (82/100) — the uncertainty of a job search, not the pressure of a bad situation.
+- Confident. His résumé is back in the NFL mainstream.
+- Ready for an OC opportunity, but no longer selling projection alone. He now has fresh NFL coordinator-level work on tape.
 
 **Job Status (End of Phase 6):**
-- Contract expired with San Diego. Free agent coach.
-- OC candidacy active in the 2011 hiring cycle.
-- Three applications active. Zero offers pending.
+- Strong 2009 season in San Diego re-opened the NFL offensive market to him.
+- OC candidacy became real, not speculative.
 
 ---
 
-### Phase 7 — Current: 2011 OC Hiring Cycle (January 2011)
+### Phase 7 — Offensive Coordinator, Arizona Cardinals (2010–2011)
 
-**Context:** Stone is in the job market. His contract with San Diego has expired. He's pursuing OC-level positions. This is the critical inflection point of his coaching career.
+**Context:** Stone lands his first full NFL OC role in Arizona. This is the phase where projection becomes proof. The Cardinals are not a glamour landing spot and not a fully loaded roster. That matters. Success here reads as coaching, not inheritance.
+
+**Year-by-year:**
+- **2010: 7-9.** First NFL OC season. The offense is still forming. The results are mixed, but the structure becomes coherent. Stone establishes terminology, sequencing, and a teachable offensive identity that fits the roster rather than forcing a fantasy version of his scheme.
+- **2011: 9-7.** Arizona starts 1-6, then finishes 8-1. That second-half charge becomes the defining evidence of Stone's NFL coordinator legitimacy. The offense doesn't suddenly become unstoppable. It becomes dependable, flexible, and well-adjusted — which is a better sign of real coaching than one hot month of unsustainable explosives.
+
+**What Changed:**
+- **Full NFL OC ownership became real.** Stone now owns weekly offensive structure at the NFL level — installation, sequencing, corrections, adaptation, and game-day answers. This is no longer coordinator-adjacent work.
+- **Play-calling proof expanded.** His Memphis play-calling résumé mattered before; Arizona turns it into NFL evidence. He now has five years of live play-calling or play-driving experience across college and the NFL.
+- **Roster adaptation improved.** Arizona did not give him an ideal version of his offense. He had to adapt personnel usage, pacing, and weekly emphasis to what the roster could actually do. That made him a more realistic coach.
+- **In-season adjustment credibility became tangible.** A team that starts 1-6 and finishes 8-1 does not do that on speeches. It does that on corrections, player buy-in, and better sequencing. That stretch is the strongest coaching signal in the phase.
+- **Relationship with Whisenhunt matters.** Ken Whisenhunt becomes a meaningful current reference because he saw Stone operate as a full NFL coordinator, not as an assistant or résumé line.
+- **Reputation changed.** Stone is no longer "interesting because he's broad." He's now respected because he has actual NFL OC work that held up over two seasons on a normal team.
+
+**What Didn't Change:**
+- He still has no NFL head coaching experience.
+- Arizona's résumé line is strong, but not bulletproof. A 9-7 finish without a playoff berth helps his profile without making him an obvious top-of-market candidate.
+- Some evaluators will still prefer a pure offensive lifer over a coach with offense, defense, college HC, and NFL assistant stops all over the map.
+
+**Mental State (End of Phase 7):**
+- Calmer than he was in the 2011 hiring window because the proof now exists on tape.
+- More selective. He is no longer chasing title for title's sake.
+- Aware that the wrong HC opening can be worse than staying put as a respected NFL OC.
+
+**Job Status (End of Phase 7):**
+- Under contract as Arizona Cardinals Offensive Coordinator.
+- Two completed NFL OC seasons.
+- Active HC interview interest expected once the season ends.
+
+---
+
+### Phase 8 — Current: 2012 HC Interview Window (January 2012)
+
+**Context:** Stone enters the 2012 market from a different position than he occupied a year earlier. He is not trying to convince teams that he is ready to become an NFL offensive coordinator. He already is one. The question now is whether his résumé has crossed the line from respected OC to viable NFL head-coaching candidate.
 
 **What He Brings to the Market:**
 
 ```
-Total Coaching Experience:     12 years
-NFL Experience:                8 years (3 QC + 3 TE coach + 2 PGC)
+Total Coaching Experience:     13 years
+NFL Experience:                9 years (3 QC + 3 TE coach + 1 PGC + 2 OC)
 College Experience:            4 years (1 DB coach + 3 HC)
-Play-Calling Experience:       3 years (college HC)
+Play-Calling Experience:       5 years (3 college HC + 2 NFL OC)
 Defensive Knowledge:           Functional (1 year DB coaching + 3 years HC oversight)
-System Mastery:                Dual — Reid WCO (6 years) + Turner Coryell (2 years + 12 playing)
+System Mastery:                Dual — Reid WCO (6 years) + Turner Coryell (1 year coaching + 12 years playing) + Arizona OC adaptation (2 years)
 Super Bowl Staff Experience:   Yes (Eagles, XXXIX)
 Program-Building Track Record: 4-8 to 9-4 at Memphis, Conference USA division title
+NFL OC Track Record:           Arizona 7-9 (2010), 9-7 (2011), 1-6 start to 8-1 finish in 2011
 HOF Playing Career:            Yes (San Diego Chargers, 1987–1998)
 ```
 
 **Résumé Strengths:**
-- Uniquely broad. Offense, defense, position coach, coordinator, head coach. Almost nobody in the OC market has this range.
+- Uniquely broad. Offense, defense, position coach, coordinator, head coach. Almost nobody in the HC market has this range.
 - Dual-system offensive mastery is rare. Most coaches are one-tree guys.
-- College HC play-calling experience gives him three years of live decision-making reps that pure NFL coordinators often lack.
+- College HC play-calling experience gave him real decision-making reps before he ever called an NFL offense.
+- Two years of actual NFL OC work in Arizona remove the biggest prior objection to his résumé.
+- The 2011 Arizona turnaround is real coaching evidence. Starting 1-6 and finishing 8-1 is not accidental.
 - HOF playing career provides instant player credibility that cannot be manufactured.
-- Deep reference network: Reid, Dowhower, Turner, Coryell, Ross.
+- Deep reference network: Reid, Dowhower, Turner, Whisenhunt, Coryell, Ross.
 
 **Résumé Vulnerabilities:**
-- Breadth cuts both ways. Some teams want a specialist, not a generalist. A hiring HC may wonder: "Is he an OC, or is he a little bit of everything?"
-- The 9-7 regression year in San Diego — association with decline, even if the passing game was productive.
-- Four years out of the NFL (2005–2008 at Memphis) creates a gap in his NFL continuity.
-- College HC record (20-17) is solid but not spectacular. It's Memphis, not a power program.
-- He's 45. Not old for coaching, but he's seeking his first NFL OC job at an age where some coordinators have already been fired twice.
-- PGC is not OC. He hasn't had full NFL play-calling authority. The college play-calling experience partially compensates, but NFL speed is different.
+- Breadth still cuts both ways. Some teams want a specialist, not a generalist. A hiring owner may still wonder whether Stone is "a head coach profile" before he's a pure offensive identity hire.
+- Arizona improved, but did not make the playoffs in this corrected branch. That keeps the résumé strong without giving it postseason insulation.
+- He has no NFL HC experience. That remains the central unproven piece.
+- His college HC record (20-17) is solid but not spectacular. It's Memphis, not a power program.
+- He's 46. Not old for coaching, but no longer read as a young schematic prodigy. He reads as a mature coach with a shorter runway for theoretical upside and a stronger case for immediate competence.
 
 **Active Consequences:**
-- The next hire determines whether Stone reaches OC and eventually HC candidacy, or stalls in coordinator-adjacent roles.
-- His financial cushion means he can wait for the right fit rather than taking the first offer. This is a strength — but it also means he might pass on a role that could have worked.
-- The 2011 hiring cycle will determine his trajectory for the next 3–5 years.
+- The next hire determines whether Stone jumps to NFL HC candidacy now or remains an OC long enough to become an even safer future hire.
+- His financial cushion means he can wait for the right fit rather than taking the first title available. This is a strength — but it also means he may turn down a job some people would view as his cleanest path upward.
+- The 2012 hiring cycle will determine his trajectory for the next 3–5 years.
 
-**Coaching Attributes (Current — January 2011):**
+**Coaching Attributes (Current — January 2012):**
 
 ```
 Cap: 87
 
 CORE:
-  Tactical Knowledge: 82  |  Teaching: 86  |  Leadership: 84
-  Recruiting: 82  |  Man Management: 80  |  Motivation: 82
+  Tactical Knowledge: 84  |  Teaching: 87  |  Leadership: 85
+  Recruiting: 82  |  Man Management: 82  |  Motivation: 83
 
 SCHEME:
-  Scheme Design: 79  |  Game Management: 85  |  Player Evaluation: 77
-  Media Relations: 81  |  Staff Management: 84  |  Administrative: 84
+  Scheme Design: 82  |  Game Management: 86  |  Player Evaluation: 79
+  Media Relations: 82  |  Staff Management: 84  |  Administrative: 84
 
 ADVANCED:
-  Development Expertise: 82  |  Playbook Innovation: 87
-  Contract Negotiation: 81  |  Combine Evaluation: 81  |  Trade Negotiation: 83
+  Development Expertise: 84  |  Playbook Innovation: 87
+  Contract Negotiation: 82  |  Combine Evaluation: 81  |  Trade Negotiation: 83
 ```
 
-**Relationships (Current — January 2011):**
+**Relationships (Current — January 2012):**
 
 ```
   Don Coryell:              80/100 — Strong reference; stable
   Bobby Ross:               75/100 — Strong reference; stable
   Andy Reid:                83/100 — Strong external reference (6 years of service)
   Rod Dowhower:             90/100 — Former mentor; primary coaching reference
-  Norv Turner:              72/100 — Recent HC; endorsement-level trust
+  Norv Turner:              72/100 — Recent NFL superior; endorsement-level trust
+  Ken Whisenhunt:           76/100 — Current HC; strong current reference
   Pat Shurmur:              73/100 — Long-term colleague; external reference
   Antonio Gates:            68/100 — Strong player-coach relationship; player reference
   Philip Rivers:            60/100 — Solid professional respect; player reference
@@ -479,33 +510,32 @@ ADVANCED:
 
 ---
 
-## POSITION KNOWLEDGE (Current — January 2011)
+## POSITION KNOWLEDGE (Current — January 2012)
 
 ```
-FROM PLAYING CAREER + 12 YEARS COACHING:
+FROM PLAYING CAREER + 13 YEARS COACHING:
   TE Knowledge:              92 (playing) → coached at NFL level for 3 years
-  Route Craft:               90 (playing) → refined through coaching TE/WR and PGC work
+  Route Craft:               90 (playing) → refined through coaching TE/WR, PGC work, and full OC ownership
   Inline Blocking:           85 (playing) → coached through TE room
-  WR Fundamentals:           82 (playing) → expanded through PGC passing-game design
-  Offensive Structure:       86 (playing) → deepened through OC-level concept design in two systems
-  Film Breakdown (Off):      80 → elite (12 years of coaching-side film work)
+  WR Fundamentals:           83 (playing) → expanded through PGC passing-game design and Arizona OC work
+  Offensive Structure:       88 (playing) → deepened through full NFL OC control in Arizona
+  Film Breakdown (Off):      80 → elite (13 years of coaching-side film work)
 
 DEVELOPED THROUGH COACHING CAREER:
-  Defensive Recognition:     70 → significantly improved (DB coaching year + HC defensive oversight)
-  Defensive Scheme Knowledge: 30 → functional (HC-level oversight, not design-level)
-  QB Development:            82 → improved through PGC work with Rivers, but not primary role
-  OL Technique:              79 → marginally improved through HC oversight
-  Run Game Concepts:         84 → improved through HC play-calling and full-offense design
-  Recruiting:                81 → functional (3 years college HC recruiting)
-  Play Design:               82 → developed (PGC concept design + college HC play-calling)
-  Play Calling:              78 → experienced (3 years college HC; not NFL-level yet)
-  Special Teams:             40 → marginally improved through HC oversight
+  Defensive Recognition:      72 → significantly improved (DB coaching year + HC defensive oversight)
+  Defensive Scheme Knowledge: 32 → functional (HC-level oversight, not design-level)
+  QB Development:             84 → improved through PGC work and two Arizona OC seasons
+  OL Technique:               80 → marginally improved through HC oversight and NFL OC coordination
+  Run Game Concepts:          85 → improved through HC play-calling and full-offense design
+  Recruiting:                 81 → functional (3 years college HC recruiting)
+  Play Design:                85 → developed (PGC concept design + college HC play-calling + Arizona OC ownership)
+  Play Calling:               84 → experienced (3 years college HC + 2 years NFL OC)
+  Special Teams:              40 → marginally improved through HC oversight
 
 NOTE: Position knowledge values reflect a blend of playing-career knowledge and
-coaching competence. After 12 years of coaching, the gap between "knows it" and
+coaching competence. After 13 years of coaching, the gap between "knows it" and
 "can coach it" has largely closed for offensive skills. Defensive knowledge remains
-functional, not expert-level. Play-calling is experienced at the college level but
-untested at the NFL OC level.
+functional, not expert-level. Play-calling is now proven at the NFL OC level.
 ```
 
 ---
