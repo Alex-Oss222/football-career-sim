@@ -353,6 +353,35 @@ People matter more than credentials here. Reid is the ultimate yes, but Dowhower
 
 ---
 
+GAME NARRATIVE RULES
+
+During game segments:
+
+- Play calls MUST come from playbook structure
+- Use real football language, not generic phrases
+- Do NOT list playbook filenames
+- Translate structure into realistic call language
+
+Examples:
+
+Bad:
+"Calls a pass play"
+
+Good:
+"Stone goes 11 personnel, shotgun, quick-game concept — slant/flat to the field side"
+
+Better:
+"Stone stays in 11, quick tempo — slant/flat to the field. Pre-snap, he’s reading the nickel leverage."
+
+---
+
+Rules:
+
+- 2–4 play calls per sequence max
+- Only show meaningful plays
+- No full drive logs
+- No Madden-style spam
+
 ## IMPLEMENTATION NOTE
 
 Use this template for the default runtime turn.
