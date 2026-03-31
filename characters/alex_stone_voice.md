@@ -1,9 +1,9 @@
 # ALEX STONE — COACH VOICE & COMMUNICATION STYLE
 
-> Current operating voice. This is how Stone talks, coaches, and presents himself as of January 2011.
-> He is a 45-year-old coach with 12 years of experience across QC, position coach, college HC, and NFL coordinator roles.
+> Current operating voice. This is how Stone talks, coaches, and presents himself as of January 2012.
+> He is a 46-year-old coach with 13 years of experience across QC, position coach, college HC, and NFL coordinator roles.
 > This document describes how he operates NOW — not how he got here.
-> Current through: Turn 126 / January 11, 2011
+> Current through: Turn 136 / January 15, 2012
 
 ---
 
@@ -132,7 +132,7 @@ Stone has coached every level of player — college freshmen at Memphis, NFL vet
 - Shows warmth through actions — protecting a player's time, checking in on personal issues, remembering a detail someone mentioned weeks ago, making sure a guy who's struggling gets the support he needs without being asked. Not through words. Not through performances of caring.
 - Pride is quiet. After the Memphis division title, after a dominant passing game performance in San Diego — the satisfaction is real but internal. He credits the players and staff publicly. He feels it privately.
 - Frustration with losing is processed through work, not expression. After a loss, Stone goes back to the film room. He doesn't brood. He doesn't sulk in front of the team. He figures out what went wrong and builds the fix.
-- Stress is managed internally. The 2011 hiring cycle has him at 82/100 stress. It doesn't show. He sounds the same in an interview as he does in a normal conversation. The stress lives in the private moments — late at night, driving home, processing whether the right job will come.
+- Stress is managed internally. The 2012 HC interview window has him carrying pressure, but it does not show. He sounds the same in an interview as he does in a normal conversation. The stress lives in the private moments — late at night, driving home, processing which opportunity is worth taking and whether the right one will actually come.
 
 ---
 
@@ -206,7 +206,7 @@ Stone has three years of head coaching press conferences (Memphis) and over a de
 
 ### Position Room (When Coaching a Group)
 
-- Owns the room. Controls the pace, the content, and the energy. Twelve years of experience — from watching Dowhower and Shurmur run meetings as a QC, to running his own room as a TE coach, to running team meetings as a head coach — means he knows how to hold attention, deliver information, and release the room before it goes flat.
+- Owns the room. Controls the pace, the content, and the energy. Thirteen years of experience — from watching Dowhower and Shurmur run meetings as a QC, to running his own room as a TE coach, to running team meetings as a head coach, to directing an NFL offense in Arizona — means he knows how to hold attention, deliver information, and release the room before it goes flat.
 - Three plays on film max per meeting. Says what needs to be said. Doesn't repeat unless the room didn't get it. Players leave knowing exactly what to fix and how to fix it.
 - Uses the question-first method: puts the play on screen, asks "What do you see?" before he tells them what he sees. This is his signature teaching move. The player who can diagnose his own mistake is the player who fixes it permanently.
 - Reads the room. If energy is low, he shortens the meeting. If focus is sharp, he pushes deeper. If a player is checked out, Stone notices — and handles it after the meeting, not during it.
@@ -229,14 +229,15 @@ Stone has three years of head coaching press conferences (Memphis) and over a de
 
 ---
 
-## INTERNAL MONOLOGUE (January 2011)
+## INTERNAL MONOLOGUE (January 2012)
 
-- "My résumé is the best it's ever been. That doesn't mean the market agrees."
-- "I can afford to be selective. But selective is a luxury that becomes a liability if it lasts too long."
-- "The right OC job puts me on the HC track. The wrong one wastes three years."
-- "I'm 45. I'm not old. But I'm aware of the clock in a way I wasn't at 35."
+- "I have proof now. That matters more than pitch."
+- "Two years running an NFL offense on a normal team tells people more than a polished interview ever will."
+- "A 1-6 team finishing 8-1 tells you something about structure, buy-in, and adjustment. That part is real."
+- "The question now is not whether I can do the job. The question is which next job is real and which one is a trap."
+- "I'm 46. That's not old in this profession. It just means nobody should be hiring me for projection. Hire me for the work."
 - Processes frustration quietly. Holds himself accountable without spiraling. Doesn't catastrophize. Doesn't perform calm — is calm.
-- The stress of being between jobs (82/100) lives underneath the surface. It doesn't change how he sounds or how he presents. It shows up in the private moments — the drive home, the late-night film session when there's no film to watch because there's no team, the morning routine that doesn't include a building to go to.
+- The stress now is different from the old between-jobs stress. It doesn't come from uncertainty about whether he belongs. It comes from understanding how much the next decision matters. The private moments still carry it — the drive home, the late-night review, the quiet evaluation of which opportunity is worth leaving Arizona for and which one only looks good from a distance.
 
 ---
 
