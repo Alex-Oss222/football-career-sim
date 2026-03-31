@@ -104,4 +104,4 @@ These are updated at **major career phases**, not every turn.
 ```text
 Phase: Offseason — 2011 Job Cycle Active
 Date: January 1, 2011
-Status: Free Agent Coach (OC Candidate)
+Status: Free Agent Coach (HC and OC Candidate)
