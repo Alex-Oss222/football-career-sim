@@ -1,0 +1,177 @@
+mode: COACHING
+tape: MODE B (engine-generated; archived snapshot)
+identity:
+  name: Alex-Lamar Stone
+  age: 42
+  current_role: San Diego Chargers — Passing Game Coordinator
+  previous_role: University of Memphis — Head Coach
+  level: 2
+  level_label: Coordinator
+timeline:
+  career_turn: 106
+  season_turn: 1
+  phase: Offseason — 2009 Cycle Start
+  previous_phase: Offseason — 2009 Job Cycle Resolved
+  last_resolved_date: '2009-02-10'
+  date: '2009-02-11'
+  next_event: 2009 offseason program and Chargers passing game installation
+  calendar_frozen: false
+  resume_anchor:
+    exact_pickup_date: '2009-02-11'
+    reason: Stone left Memphis after the 9-4 season and accepted the Chargers Passing Game Coordinator role under Norv Turner. Returns to the franchise where he spent his entire playing career, now on the coaching side inside a Coryell-influenced vertical passing offense.
+calendar_state:
+  calendar_file: teams/san_diego_chargers/2009/san_diego_chargers_calendar_2009.yaml
+  previous_node: offseason_hiring
+  current_node: offseason_2009_cycle_start
+  current_week_label: 2009 Offseason Cycle Start
+  next_node: null
+  continuation_note: Stone returns to the NFL and to the Chargers franchise in a coordinator-level role.
+record:
+  regular_season_record: N/A
+  postseason_record: N/A
+  division_finish: N/A
+  playoffs: N/A
+  team: San Diego Chargers
+  team_ovr: N/A
+  note: Previous year — Memphis went 9-4 with a Conference USA division title.
+job_status:
+  job_security: 75
+  stress: 78
+  contract:
+    status: Active
+    team: San Diego Chargers
+    title: Passing Game Coordinator
+    term_years: 2
+    cycle: 2009-2010
+    salary: 300000
+    accepted: true
+    origin: Hired by Norv Turner based on Stone's combination of Reid WCO knowledge, Coryell playing experience, and college HC play-calling background.
+  applications_active: 0
+  offers_pending: 0
+  retention_status: New hire for 2009
+offseason_status:
+  time_bubble_active: false
+  bubble_stage: Resolved
+  era_ruleset: NFL_2000
+  evaluation_score: N/A
+  trajectory: Resetting at a higher NFL level
+  scheme_mastery: 55
+  trust_position_direct_evaluator: 55
+  promotion_readiness: N/A — learning a new offensive system
+  risk_flag: First-year coordinator; returning to NFL after four years away
+  club_decision: Hired
+  outside_interest: None
+  interview_access: Closed
+  transition_pending: false
+coaching_attributes:
+  cap: 85
+  core:
+    TAC: 68
+    TCH: 70
+    LDR: 78
+    REC: 65
+    MAN: 78
+    MOT: 77
+  scheme:
+    SDN: 62
+    GMG: 64
+    PEV: 64
+    MED: 62
+    STF: 68
+    ADM: 75
+  advanced:
+    DEV: 70
+    INV: 68
+    CNT: 56
+    CMB: 70
+    TRD: 52
+  traits:
+    Disciplinarian: 30
+    Players_Coach: 38
+    Innovator: 36
+    Traditionalist: 18
+  note: TAC and TCH reflect Stone's offensive coaching maturity from his Eagles and Memphis years. SDN improved through college HC play-calling. The Coryell vertical passing concepts are new to him as a coach — he played in them but has never designed or coached them at this level.
+finances:
+  net_worth: 11200000
+  annual_expenses: 570000
+  salary: 300000
+  financial_pressure: None
+team_context:
+  team: San Diego Chargers
+  head_coach: Norv Turner
+  offensive_coordinator: Norv Turner (calls plays; Stone coordinates the passing game)
+  quarterbacks_coach: TBD
+  offensive_line_coach: TBD
+  wide_receivers_coach: TBD
+  tight_ends_coach: TBD
+  role_context_note: Turner runs a Coryell-influenced vertical passing offense — the system Stone played in for 12 years. Stone returns to the franchise where he spent his entire playing career, now on the coaching side. Turner needs passing game coordination help and Stone's combination of Reid WCO knowledge + Coryell playing experience + college HC play-calling makes him uniquely qualified.
+room_context:
+  room: Passing Game (Coordinator role — not a single position room)
+  room_status: Stone coordinates passing concepts, route distribution, and TE/WR route combinations within Turner's Coryell framework. He does not call plays — Turner does — but he designs concepts and packages.
+  what_stone_owns_now:
+  - Passing concept design and route distribution in collaboration with Turner
+  - TE/WR route combination coordination and spacing within the Coryell framework
+  - Third-down, red-zone, and two-minute passing packages
+  - Bridge between the TE room and the full passing game
+  - Study of run-game integration with play-action in the Coryell system
+  what_he_still_shares:
+  - Play-calling belongs to Turner
+  - Defensive game-plan interaction is Turner's domain
+  - Run-game scheme is managed by the run-game coordinator and OL coach
+  key_players:
+  - Philip Rivers (QB) — elite NFL quarterback
+  - Antonio Gates (TE) — HOF-caliber tight end; the position Stone knows best
+  - Vincent Jackson (WR) — elite vertical threat
+  - LaDainian Tomlinson (RB) — declining but still productive
+relationships:
+  Don_Coryell:
+    score: 80
+    status: Strong reference; Stone's return to the Chargers carries Coryell legacy weight
+  Bobby_Ross:
+    score: 75
+    status: Strong reference; stable
+  University_of_Miami_Connections:
+    score: 60
+    status: College network; less relevant now that Stone is back in the NFL
+  Andy_Reid:
+    score: 84
+    status: Strong external reference; reconnection possible now that Stone is back in NFL coaching circles
+  Rod_Dowhower:
+    score: 92
+    status: Former mentor; proud of Stone's progression to NFL coordinator level
+  Brad_Childress:
+    score: 80
+    status: External reference; Vikings HC
+  Norv_Turner:
+    score: 55
+    status: New head coach; initial professional relationship based on Stone's playing background and coaching résumé
+  Chargers_Offensive_Staff:
+    score: 45
+    status: New colleagues; trust must be built from scratch
+  Memphis_Administration:
+    score: 65
+    status: Disappointed to lose Stone but understanding; parted on good terms
+  Memphis_Staff:
+    score: 60
+    status: Former colleagues; loyalty remains but daily relationship ended
+personal_development:
+  system_familiarity:
+    system: Turner Coryell vertical passing offense
+    time_in_system_completed: None — first day as a coach in this system (though he played in it for 12 years)
+    status: Stone played in the Coryell offense for his entire career. He knows the concepts as a player. Now he must learn to design, teach, and coordinate them as a coach — a fundamentally different skill set. The Reid WCO he spent six years coaching is timing-based and horizontal; Turner's Coryell descendant is vertical and aggressive. Learning both makes Stone's eventual OC playbook significantly more complete.
+  what_hes_building:
+  - Coryell vertical passing concepts — deep crossers, seam stretches, vertical option routes
+  - Play-action design off a power run game (different from Reid's play-action off zone runs)
+  - How an aggressive, risk-taking offense operates versus Reid's controlled WCO
+  - Working under a coaching tree completely different from Reid's
+  - Coordination-level NFL experience for a future OC candidacy
+active_consequences:
+- Stone returns to the NFL after four years away. The league has changed and he must re-acclimate to NFL speed, talent, and game-planning.
+- He is coaching alongside Antonio Gates — a HOF-caliber TE — mirroring the kind of elite TE coaching opportunity he never had in Philadelphia.
+- The Coryell vertical concepts are new to him as a coach. His player knowledge of the system gives him a head start but does not replace coaching knowledge.
+- His college HC experience gives him credibility that a typical first-year coordinator would not have, but he is still new to the NFL coordinator role.
+- The two-year deal gives him time to learn the system and prove his coordinator-level value.
+last_3_turns_summary:
+- 'Turn 102: Memphis clinched the Conference USA East Division title.'
+- 'Turn 103: Bowl game concluded the 9-4 season.'
+- 'Turn 104: Stone left Memphis and accepted the Chargers Passing Game Coordinator role under Norv Turner.'

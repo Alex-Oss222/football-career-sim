@@ -1,0 +1,155 @@
+mode: COACHING
+tape: MODE B (engine-generated; archived snapshot)
+identity:
+  name: Alex-Lamar Stone
+  age: 39
+  current_role: University of Memphis — Head Coach
+  previous_role: University of Memphis — Head Coach
+  level: 3
+  level_label: Head Coach (College)
+timeline:
+  career_turn: 84
+  season_turn: 9
+  phase: Season End — Exit Meetings / Offseason Evaluation
+  previous_phase: Regular Season — Final Week
+  last_resolved_date: '2006-11-25'
+  date: '2006-11-26'
+  next_event: Season-end evaluation and offseason planning
+  calendar_frozen: true
+  resume_anchor:
+    exact_pickup_date: '2006-11-26'
+    reason: Snapshot captured after the 2006 regular season concluded. Stone's first year as HC finished 4-8.
+calendar_state:
+  calendar_file: teams/memphis/2006/memphis_calendar_2006.yaml
+  previous_node: reg_wk12
+  current_node: season_end
+  current_week_label: 2006 Season End
+  next_node: null
+  continuation_note: Year 1 of the rebuild is complete. The 4-8 record was expected given the roster and the transition.
+record:
+  regular_season_record: 4-8
+  postseason_record: N/A
+  division_finish: Lower half Conference USA
+  playoffs: Not eligible
+  team: University of Memphis
+  team_ovr: N/A
+job_status:
+  job_security: 68
+  stress: 90
+  contract:
+    status: Active
+    team: University of Memphis
+    title: Head Coach
+    term_years: 4
+    cycle: 2006-2009
+    salary: 450000
+    accepted: true
+    note: Year 1 of 4 completed. The record was poor but expected. Year 2 must show tangible improvement.
+  applications_active: 0
+  offers_pending: 0
+  retention_status: Under contract; Year 2 must show progress
+  evaluation_projection:
+    likely_score: 65
+    trajectory: Building
+    scheme_mastery: 60
+    promotion_readiness: N/A — HC role
+    risk_flag: First-year HC losing record; must improve in Year 2
+offseason_status:
+  time_bubble_active: true
+  bubble_stage: Season Close
+  era_ruleset: NCAA_2000
+  evaluation_score: Pending
+  trajectory: Pending
+  club_decision: Under contract
+  outside_interest: None
+  transition_pending: false
+coaching_attributes:
+  cap: 82
+  core:
+    TAC: 60
+    TCH: 64
+    LDR: 74
+    REC: 68
+    MAN: 74
+    MOT: 73
+  scheme:
+    SDN: 52
+    GMG: 54
+    PEV: 55
+    MED: 57
+    STF: 62
+    ADM: 73
+  advanced:
+    DEV: 64
+    INV: 64
+    CNT: 52
+    CMB: 67
+    TRD: 48
+  traits:
+    Disciplinarian: 30
+    Players_Coach: 36
+    Innovator: 32
+    Traditionalist: 18
+finances:
+  net_worth: 9900000
+  annual_expenses: 540000
+  salary: 450000
+  financial_pressure: None
+team_context:
+  team: University of Memphis
+  head_coach: Alex-Lamar Stone
+  offensive_coordinator: Staff retained
+  defensive_coordinator: Staff retained
+  role_context_note: Stone completed Year 1 as HC. The 4-8 record was poor but the program showed signs of cultural change — better practice habits, more disciplined play, and a recruiting class that pointed upward.
+room_context:
+  room: Full Program
+  room_summary: The program is still in rebuild mode. Roster talent is thin, especially on defense. The offense showed flashes of Stone's adapted WCO concepts, but execution was inconsistent with the available talent.
+relationships:
+  Don_Coryell:
+    score: 80
+    status: Strong reference; stable
+  Bobby_Ross:
+    score: 75
+    status: Strong reference; stable
+  University_of_Miami_Connections:
+    score: 63
+    status: Active college network
+  Andy_Reid:
+    score: 86
+    status: Strong external reference; continued natural decay
+  Rod_Dowhower:
+    score: 95
+    status: Former mentor; provided periodic offensive consulting
+  Brad_Childress:
+    score: 83
+    status: Strong external reference
+  Memphis_Administration:
+    score: 55
+    status: Patient but watching; Year 2 must show tangible improvement
+  Memphis_Staff:
+    score: 60
+    status: First year together built working trust; staff retained for Year 2
+personal_development:
+  system_familiarity:
+    system: Stone's adapted WCO / DC-managed defense
+    time_in_system_completed: One year of play-calling and program management completed
+    status: Stone's offensive play-calling improved over the season. His game management and in-game adjustments were the weakest part of his HC performance.
+  what_he_handled_well:
+  - Establishing program culture and practice standards
+  - Offensive scheme installation adapted for college talent
+  - Staff management and delegation to his DC
+  - Recruiting — signed a class that pointed the program upward
+  what_stretched_him:
+  - In-game adjustments and clock management
+  - Managing a losing season as the head coach for the first time
+  - Keeping the staff and players motivated through a 4-8 grind
+  - Media and alumni relations during a losing year
+active_consequences:
+- Year 1 at 4-8 was expected but still painful. The program showed cultural improvement without wins to prove it.
+- Year 2 must show tangible improvement or institutional patience will thin.
+- The recruiting class is the first real proof that Stone can build something.
+- His play-calling improved but remains a development area.
+last_3_turns_summary:
+- 'Turn 82: Memphis lost two close games in the stretch run that could have gone either way with better execution.'
+- 'Turn 83: The season ended at 4-8 with no bowl eligibility.'
+- 'Turn 84: Stone began offseason evaluation focused on what Year 1 revealed about his staff, roster, and schemes.'

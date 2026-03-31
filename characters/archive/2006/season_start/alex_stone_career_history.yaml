@@ -1,0 +1,85 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2006-01-11'
+  career_turn: 76
+  sim_phase: Offseason — 2006 Cycle Start
+  archive_note: 2006 season_start snapshot
+career_history:
+- turn: 12
+  date_range: 2000-01-03 to 2000-01-14
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Season End — Exit Meetings / Offseason Evaluation
+  summary: Retained for 2000 as QC at $40,000 after strong year-one evaluation.
+  results:
+  - Strong endorsement from Reid and Dowhower.
+- turn: 36
+  date_range: 2002-01-28 to 2002-02-05
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: Offseason — Internal Promotion / 2002 Cycle Start
+  summary: Promoted internally to Tight Ends Coach at $140,000.
+  results:
+  - Inherited his first NFL room.
+- turn: 64
+  date_range: 2004-02-10 to 2005-02-07
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: 2004 Season End — Pre-Exit Snapshot
+  summary: Philadelphia went 13-3, lost Super Bowl XXXIX. Completed Year 3 as TE coach.
+  results:
+  - Super Bowl appearance on his résumé. Contract expired.
+- turn: 74
+  date_range: 2005-03-02 to 2005-11-27
+  team: University of Memphis
+  role: Defensive Backs Coach
+  phase: 2005 Season End — Pre-Exit Snapshot
+  summary: Memphis went 5-6 under Tommy West (fired). Stone completed one year learning defense and college recruiting.
+  results:
+  - Gained functional defensive knowledge and college recruiting experience.
+  - Tommy West's firing created HC opening.
+- turn: 76
+  date_range: 2005-11-27 to 2006-01-11
+  team: University of Memphis
+  role: Head Coach
+  phase: Offseason — 2006 Cycle Start
+  summary: Stone was hired as Memphis head coach on a four-year deal at $450,000. His full résumé — HOF playing career, six years of NFL coaching on a Super Bowl staff, willingness to learn defense — convinced the administration. He begins building a program from scratch.
+  results:
+  - First head coaching job at any level.
+  - Four-year contract provides runway for a rebuild.
+  - Must hire an entire staff, install schemes, and build recruiting infrastructure.
+  state_changes:
+    stress:
+      from: 80
+      to: 88
+    job_security:
+      from: 70
+      to: 72
+    salary:
+      from: 95000
+      to: 450000
+    level:
+      from: 1
+      to: 3
+    cap:
+      from: 80
+      to: 82
+    leadership:
+      from: 71
+      to: 73
+    man_management:
+      from: 71
+      to: 73
+    motivation:
+      from: 70
+      to: 72
+    staff_management:
+      from: 55
+      to: 58
+    administrative:
+      from: 69
+      to: 71
+    media_relations:
+      from: 52
+      to: 55

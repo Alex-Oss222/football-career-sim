@@ -1,0 +1,58 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2004-02-10'
+  career_turn: 56
+  sim_phase: Offseason — 2004 Cycle Start
+  archive_note: 2004 season_start snapshot
+career_history:
+- turn: 12
+  date_range: 2000-01-03 to 2000-01-14
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Season End — Exit Meetings / Offseason Evaluation
+  summary: Retained for 2000 as QC at $40,000 after strong year-one evaluation.
+  results:
+  - Strong endorsement from Reid and Dowhower.
+- turn: 29
+  date_range: 2001-01-20 to 2001-01-23
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Offseason — 2001 Cycle Start
+  summary: Re-signed on a two-year deal at $50,000.
+  results:
+  - Chose continuity over the lateral market.
+- turn: 36
+  date_range: 2002-01-28 to 2002-02-05
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: Offseason — Internal Promotion / 2002 Cycle Start
+  summary: Promoted internally to Tight Ends Coach at $140,000.
+  results:
+  - Inherited his first NFL room.
+- turn: 44
+  date_range: 2002-02-05 to 2003-01-20
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: 2002 Season End — Pre-Exit Snapshot
+  summary: Philadelphia went 12-4, lost NFC Championship to Tampa Bay. Credible Year 1 as position coach.
+  results:
+  - Established himself as a legitimate NFL position coach.
+- turn: 54
+  date_range: 2003-02-11 to 2004-01-19
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: 2003 Season End — Pre-Exit Snapshot
+  summary: Philadelphia went 12-4 again, lost NFC Championship to Carolina. Stronger Year 2 with deeper room command and early coordinator-track conversations.
+  results:
+  - Deepened coaching identity beyond survival mode.
+  - Early coordinator-track conversations emerged internally.
+- turn: 56
+  date_range: 2004-01-19 to 2004-02-10
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: Offseason — 2004 Cycle Start
+  summary: Stone enters Year 3 as TE coach under the final year of his two-year deal. No job cycle needed. The T.O. acquisition changes the offensive skill landscape.
+  results:
+  - Under contract for 2004 at $175,000.
+  - No external market activity.

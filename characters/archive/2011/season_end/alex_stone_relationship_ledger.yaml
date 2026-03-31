@@ -1,0 +1,50 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2012-01-09'
+  career_turn: 134
+  sim_phase: 2011 Season End — Unresolved
+  archive_note: 2011 season_end placeholder — all values frozen at 2011 season_start pending sim resolution
+relationships:
+- name: Don Coryell
+  role: Former HC, Chargers
+  score: 80
+  status: strong_reference
+  note: Frozen — 2011 season unresolved
+- name: Bobby Ross
+  role: Former HC, Chargers
+  score: 75
+  status: strong_reference
+  note: Frozen — 2011 season unresolved
+- name: Andy Reid
+  role: Head Coach, Philadelphia Eagles
+  score: 83
+  status: strong_external_reference
+  note: Frozen — 2011 season unresolved
+- name: Rod Dowhower
+  role: Former Offensive Coordinator
+  score: 90
+  status: former_mentor
+  note: Frozen — 2011 season unresolved
+- name: Norv Turner
+  role: Head Coach, San Diego Chargers
+  score: 72
+  status: endorsement_ready
+  note: Frozen — 2011 season unresolved
+- name: Pat Shurmur
+  role: Head Coach, Cleveland Browns
+  score: 73
+  status: long_term_colleague
+  note: Frozen — 2011 season unresolved
+- name: Antonio Gates
+  role: Tight End, San Diego Chargers
+  score: 68
+  status: strong_player_reference
+  note: Frozen — 2011 season unresolved
+- name: Philip Rivers
+  role: Quarterback, San Diego Chargers
+  score: 60
+  status: player_reference
+  note: Frozen — 2011 season unresolved
+relationship_events:
+- note: No relationship events recorded — 2011 season unresolved. This file is a structural placeholder.

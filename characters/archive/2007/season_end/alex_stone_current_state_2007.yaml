@@ -1,0 +1,158 @@
+mode: COACHING
+tape: MODE B (engine-generated; archived snapshot)
+identity:
+  name: Alex-Lamar Stone
+  age: 40
+  current_role: University of Memphis — Head Coach
+  previous_role: University of Memphis — Head Coach
+  level: 3
+  level_label: Head Coach (College)
+timeline:
+  career_turn: 94
+  season_turn: 9
+  phase: Season End — Bowl Preparation
+  previous_phase: Regular Season — Final Week
+  last_resolved_date: '2007-11-24'
+  date: '2007-11-25'
+  next_event: Bowl game preparation and offseason evaluation
+  calendar_frozen: true
+  resume_anchor:
+    exact_pickup_date: '2007-11-25'
+    reason: Snapshot captured after the 2007 regular season. Memphis earned bowl eligibility at 7-5.
+calendar_state:
+  calendar_file: teams/memphis/2007/memphis_calendar_2007.yaml
+  previous_node: reg_wk12
+  current_node: season_end
+  current_week_label: 2007 Season End / Bowl Prep
+  next_node: bowl_game
+  continuation_note: Memphis is bowl-eligible for the first time under Stone. Bowl game pending.
+record:
+  regular_season_record: 7-5
+  postseason_record: Pending (bowl game)
+  division_finish: Upper half Conference USA
+  playoffs: Bowl eligible
+  team: University of Memphis
+  team_ovr: N/A
+job_status:
+  job_security: 78
+  stress: 75
+  contract:
+    status: Active
+    team: University of Memphis
+    title: Head Coach
+    term_years: 4
+    cycle: 2006-2009
+    salary: 450000
+    accepted: true
+    note: Year 2 of 4 completed. The three-win improvement validated the rebuild timeline.
+  applications_active: 0
+  offers_pending: 0
+  retention_status: Under contract; rebuild validated
+  evaluation_projection:
+    likely_score: 76
+    trajectory: Rising
+    scheme_mastery: 68
+    promotion_readiness: N/A
+    risk_flag: None — Year 2 improvement was significant
+offseason_status:
+  time_bubble_active: true
+  bubble_stage: Season Close / Bowl Prep
+  era_ruleset: NCAA_2000
+  evaluation_score: Pending
+  trajectory: Rising
+  club_decision: Under contract
+  outside_interest: Quiet — but NFL scouts and coaches are noticing
+  transition_pending: false
+coaching_attributes:
+  cap: 83
+  core:
+    TAC: 63
+    TCH: 66
+    LDR: 76
+    REC: 70
+    MAN: 76
+    MOT: 75
+  scheme:
+    SDN: 56
+    GMG: 58
+    PEV: 58
+    MED: 59
+    STF: 65
+    ADM: 75
+  advanced:
+    DEV: 67
+    INV: 66
+    CNT: 54
+    CMB: 68
+    TRD: 50
+  traits:
+    Disciplinarian: 32
+    Players_Coach: 36
+    Innovator: 34
+    Traditionalist: 16
+finances:
+  net_worth: 10400000
+  annual_expenses: 545000
+  salary: 450000
+  financial_pressure: None
+team_context:
+  team: University of Memphis
+  head_coach: Alex-Lamar Stone
+  offensive_coordinator: Staff retained
+  defensive_coordinator: Staff retained
+  role_context_note: The three-win improvement (4-8 to 7-5) validated Stone's rebuild approach. Bowl eligibility is a tangible milestone.
+room_context:
+  room: Full Program
+  room_summary: The program showed real improvement. Stone's recruits contributed, the offense was more consistent, and the defense improved enough to complement a productive offense.
+relationships:
+  Don_Coryell:
+    score: 80
+    status: Strong reference; stable
+  Bobby_Ross:
+    score: 75
+    status: Strong reference; stable
+  University_of_Miami_Connections:
+    score: 65
+    status: Active college network; recruiting relationships deepening
+  Andy_Reid:
+    score: 85
+    status: Strong external reference
+  Rod_Dowhower:
+    score: 94
+    status: Former mentor
+  Brad_Childress:
+    score: 82
+    status: External reference; Vikings HC
+  Memphis_Administration:
+    score: 68
+    status: Encouraged by the improvement; institutional trust rebuilding
+  Memphis_Staff:
+    score: 70
+    status: Two years together; strong working trust and shared investment in the rebuild
+  Conference_USA_Network:
+    score: 45
+    status: Emerging — Stone's name is becoming known in the conference coaching circles
+personal_development:
+  system_familiarity:
+    system: Stone's adapted WCO / DC-managed defense
+    time_in_system_completed: Two years of HC play-calling completed
+    status: Stone's play-calling is more decisive and his game management improved significantly from Year 1 to Year 2. The offense is beginning to look like something that could work at a higher level.
+  what_he_handled_well:
+  - A three-win improvement from Year 1 to Year 2
+  - More confident and decisive play-calling
+  - Better in-game adjustments than Year 1
+  - Recruiting continued to improve — the pipeline is building
+  - Staff management matured; delegation to DC remained effective
+  what_stretched_him:
+  - Close losses early in the season that could have pushed the record to 8-4 or 9-3
+  - Managing expectations now that the program is winning — boosters and media want more, faster
+  - Beginning to think about Year 3 ambitions without getting ahead of himself
+active_consequences:
+- The 7-5 record and bowl eligibility validated Stone's rebuild timeline.
+- Institutional trust is rebuilding. A contract extension conversation could emerge after Year 3.
+- Stone's name is beginning to circulate in coaching circles as a rising college HC.
+- The bowl game is a chance to add another win and finish the season with momentum.
+last_3_turns_summary:
+- 'Turn 92: Memphis won two of its last three regular-season games to clinch bowl eligibility.'
+- 'Turn 93: The season ended at 7-5 — a three-win improvement over Year 1.'
+- 'Turn 94: Bowl preparation began with Stone managing the program''s first postseason under his leadership.'

@@ -1,0 +1,104 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2011-01-03'
+  career_turn: 124
+  sim_phase: 2010 Season End — Pre-Exit Snapshot
+  archive_note: 2010 season_end snapshot
+career_history:
+- turn: 12
+  date_range: 2000-01-03 to 2000-01-14
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Season End — Exit Meetings / Offseason Evaluation
+  summary: Retained for 2000 as QC at $40,000.
+  results:
+  - Strong endorsement from Reid and Dowhower.
+- turn: 36
+  date_range: 2002-01-28 to 2002-02-05
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: Offseason — Internal Promotion / 2002 Cycle Start
+  summary: Promoted internally to Tight Ends Coach at $140,000.
+  results:
+  - Inherited his first NFL room.
+- turn: 64
+  date_range: 2004-02-10 to 2005-02-07
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: 2004 Season End — Pre-Exit Snapshot
+  summary: Philadelphia went 13-3, lost Super Bowl XXXIX.
+  results:
+  - Super Bowl appearance on his résumé.
+- turn: 74
+  date_range: 2005-03-02 to 2005-11-27
+  team: University of Memphis
+  role: Defensive Backs Coach
+  phase: 2005 Season End — Pre-Exit Snapshot
+  summary: Memphis went 5-6. Stone learned defense.
+  results:
+  - Gained functional defensive knowledge.
+- turn: 104
+  date_range: 2008-01-16 to 2008-12-29
+  team: University of Memphis
+  role: Head Coach
+  phase: 2008 Season End — Pre-Exit Snapshot
+  summary: Memphis went 9-4 with a Conference USA East Division title. Three-year HC record 20-17.
+  results:
+  - Best season in recent Memphis history.
+- turn: 114
+  date_range: 2009-02-11 to 2010-01-18
+  team: San Diego Chargers
+  role: Passing Game Coordinator
+  phase: 2009 Season End — Pre-Exit Snapshot
+  summary: San Diego went 13-3, lost Divisional Round. Strong Year 1.
+  results:
+  - Contributed to a top-tier NFL passing offense.
+- turn: 124
+  date_range: 2010-02-09 to 2011-01-03
+  team: San Diego Chargers
+  role: Passing Game Coordinator
+  phase: 2010 Season End — Pre-Exit Snapshot
+  summary: San Diego went 9-7 and missed the playoffs — a regression from Year 1's 13-3. The passing game remained productive (Rivers threw for over 4,700 yards) despite the team's decline. Stone's coordination matured in Year 2 with more creative blending of WCO and Coryell concepts. His contract expired and his OC candidacy is active.
+  results:
+  - Maintained passing game productivity during a team regression year.
+  - Deepened dual-system mastery (Reid WCO + Turner Coryell).
+  - Built strong relationships with Turner, Rivers, and Gates.
+  - Contract expired. OC market active.
+  state_changes:
+    stress:
+      from: 72
+      to: 78
+    job_security:
+      from: 82
+      to: 75
+    tactical_knowledge:
+      from: 70
+      to: 72
+    teaching:
+      from: 72
+      to: 74
+    leadership:
+      from: 79
+      to: 80
+    scheme_design:
+      from: 66
+      to: 69
+    game_management:
+      from: 67
+      to: 70
+    player_evaluation:
+      from: 67
+      to: 69
+    staff_management:
+      from: 70
+      to: 72
+    media_relations:
+      from: 64
+      to: 66
+  evaluation_patch:
+    likely_score: 77
+    trajectory: Stable
+    scheme_mastery: 74
+    promotion_readiness: Ready for OC role
+    risk_flag: Regression year may dampen some interest

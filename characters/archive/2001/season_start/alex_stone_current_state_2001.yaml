@@ -1,0 +1,199 @@
+mode: COACHING
+tape: MODE B (engine-generated; archived snapshot)
+identity:
+  name: Alex-Lamar Stone
+  age: 33
+  current_role: Philadelphia Eagles — Offensive Quality Control
+  previous_role: NFL Tight End, San Diego Chargers (1987–1998)
+  level: 0
+  level_label: GA/QC
+timeline:
+  career_turn: 29
+  season_turn: 1
+  phase: Offseason — 2001 Cycle Start
+  previous_phase: Offseason — 2001 Job Cycle Resolved
+  last_resolved_date: '2001-01-22'
+  date: '2001-01-23'
+  next_event: 2001 offseason planning opens
+  calendar_frozen: false
+  resume_anchor:
+    exact_pickup_date: '2001-01-23'
+    reason: Stone accepted a two-year continuity deal with Philadelphia after the 2000 season and re-enters the cycle as a Year 3 Eagles QC.
+calendar_state:
+  calendar_file: teams/philadelphia_eagles/2001/philadelphia_eagles_calendar_2001.yaml
+  previous_node: season_end
+  current_node: offseason_2001_cycle_start
+  current_week_label: 2001 Offseason Cycle Start
+  next_node: null
+  completed_nodes:
+  - season_end_99
+  - staff_continuity
+  - fa_opens
+  - combine_01
+  - fa_march
+  - annual_meeting
+  - pre_draft_april
+  - draft_01
+  - draft_02
+  - post_draft
+  - ota_01
+  - minicamp_01
+  - offseason_break
+  - camp_01
+  - pre_wk1
+  - pre_wk2
+  - pre_wk3
+  - pre_wk4
+  - roster_cutdown
+  - reg_wk01
+  - reg_wk02
+  - reg_wk03
+  - reg_wk04
+  - reg_wk05
+  - reg_wk06
+  - reg_wk07
+  - reg_wk08
+  - reg_wk09
+  - reg_wk10
+  - reg_wk11
+  - reg_wk12
+  - reg_wk13
+  - reg_wk14
+  - reg_wk15
+  - reg_wk16
+  - reg_wk17
+  - playoff_wildcard
+  - playoff_divisional
+  - season_end
+  continuation_note: The 2000 season and job-cycle bubble are resolved. The 2001 archive snapshot is anchored at the opening of the new Eagles cycle with Stone returned on a two-year continuity deal.
+record:
+  regular_season_record: 11-5
+  postseason_record: 1-1
+  playoffs: Eliminated — Divisional Round
+  team: Philadelphia Eagles
+  team_ovr: N/A
+job_status:
+  job_security: 98
+  stress: 66
+  contract:
+    status: Active
+    team: Philadelphia Eagles
+    title: Offensive Quality Control
+    term_years: 2
+    cycle_start: 2001
+    cycle_end: 2002
+    salary: 50000
+    future_salary_if_role_unchanged: 55000
+    accepted: true
+    note: Continuity deal, not title inflation. Role change would reopen compensation.
+  applications_active: 0
+  offers_pending: 0
+  retention_status: Re-signed through 2002 as Offensive Quality Control
+offseason_status:
+  time_bubble_active: false
+  bubble_stage: Resolved
+  era_ruleset: NFL_2000
+  evaluation_score: 86
+  trajectory: Rising
+  scheme_mastery: 84
+  trust_position_direct_evaluator: 97
+  promotion_readiness: Real
+  risk_flag: Structural
+  club_decision: Renewed (two-year negotiated continuity deal)
+  outside_interest: Quiet
+  interview_access: Closed after return decision
+  transition_pending: false
+coaching_attributes:
+  cap: 60
+  core:
+    TAC: 60
+    TCH: 60
+    LDR: 60
+    REC: 48
+    MAN: 60
+    MOT: 60
+  scheme:
+    SDN: 60
+    GMG: 60
+    PEV: 60
+    MED: 42
+    STF: 50
+    ADM: 60
+  advanced:
+    DEV: 60
+    INV: 52
+    CNT: 40
+    CMB: 58
+    TRD: 38
+  traits:
+    Disciplinarian: 20
+    Players_Coach: 35
+    Innovator: 25
+    Traditionalist: 20
+finances:
+  net_worth: 8700000
+  annual_expenses: 418000
+  salary: 50000
+  financial_pressure: None
+relationships:
+  Don_Coryell:
+    score: 80
+    status: Strong reference; stable
+  Bobby_Ross:
+    score: 75
+    status: Strong reference; stable
+  Chargers_Position_Coaches:
+    score: 65
+    status: Moderate network support
+  University_of_Miami_Connections:
+    score: 55
+    status: Dormant college network
+  Andy_Reid:
+    score: 86
+    status: Quietly trusted year-three QC infrastructure
+  Rod_Dowhower:
+    score: 97
+    status: Primary mentor and strongest sponsor in the building
+  Brad_Childress:
+    score: 77
+    status: Established QB-prep trust
+  Pat_Shurmur:
+    score: 68
+    status: Stable hierarchy-safe TE support relationship
+  David_Culley:
+    score: 60
+    status: Established WR-spacing and route-structure support link
+  Juan_Castillo:
+    score: 66
+    status: Established protection/front-ID support link
+personal_development:
+  system_familiarity:
+    system: Reid West Coast offense
+    time_in_system_completed: Full Year 2 season completed
+    status: Operationally native at weekly support speed; no longer translating the system, only refining how quickly he can serve it.
+  what_hes_building:
+  - Cleaner first-pass film, self-scout, and correction work that needs minimal revision
+  - Broader offensive usefulness that can still narrow by staff need and matchup
+  - Better translation of leverage, pressure, spacing, route compression, and coverage stress into coach-usable support
+  - A real Level 1 candidacy if an actual opening appears
+  level_1_position_coach_developing:
+    status: Not yet promoted
+    readiness: Real internal and external candidate if a true opening appears
+    missing_pieces:
+    - Full room ownership
+    - Independent meeting command
+    - Direct player-development responsibility
+    - Proof he can teach and manage structure rather than only support it
+active_consequences:
+- Stone chose continuity in Philadelphia instead of forcing an external move from the QC chair.
+- The title stayed the same, but the deal length and modest raise show the staff views him as real offensive infrastructure, not a disposable low-level assistant.
+- Year 3 pressure is about proving his strong Year 2 was repeatable on an ascending team.
+- Promotion remains possible only if performance, trust, and an actual opening align.
+engine_resolved_2000_run_snapshot:
+  final_regular_season_record: 11-5
+  playoffs: Lost Divisional Round
+  season_outcome: Winning season and playoff berth validated the offensive staff structure
+last_3_turns_summary:
+- 'Turn 27: Divisional-round loss to the Giants ended the 2000 season and moved the sim into the evaluation bubble.'
+- 'Turn 28: Exit meetings, internal evaluation, renewal check, and outside access were resolved; Philly renewed, true outside promotion exploration was allowed.'
+- 'Turn 29: Stone chose continuity and signed a two-year Eagles deal, returning for the 2001 cycle as a stronger but still role-correct QC.'

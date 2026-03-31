@@ -1,0 +1,216 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2002-01-28'
+  career_turn: 35
+  sim_phase: 2001 Season End — Pre-Exit Snapshot
+  archive_note: 2001 season_end snapshot
+relationships:
+- name: Don Coryell
+  role: Former HC, Chargers
+  score: 80
+  previous_score: 80
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  notes:
+  - Strong legacy reference remains intact.
+  delta: 0
+- name: Bobby Ross
+  role: Former HC, Chargers
+  score: 75
+  previous_score: 75
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  notes:
+  - Strong character and work-habit reference remains intact.
+  delta: 0
+- name: Chargers Position Coaches
+  role: Former colleagues
+  score: 65
+  previous_score: 65
+  delta_this_turn: 0
+  trend: stable
+  status: moderate_network
+  notes:
+  - Background network remains available but is not driving the Eagles building.
+  delta: 0
+- name: University of Miami Connections
+  role: College network
+  score: 55
+  previous_score: 55
+  delta_this_turn: 0
+  trend: stable
+  status: dormant
+  notes:
+  - The Miami link remains dormant.
+  delta: 0
+- name: Andy Reid
+  role: Head Coach, Philadelphia Eagles
+  score: 87
+  previous_score: 86
+  delta_this_turn: 1
+  trend: rising
+  status: quietly_trusted_qc_infrastructure
+  notes:
+  - Reid’s trust deepened quietly as Stone held quality through a conference-title run.
+  delta: 1
+- name: Rod Dowhower
+  role: Offensive Coordinator, Philadelphia Eagles
+  score: 97
+  previous_score: 97
+  delta_this_turn: 0
+  trend: stable
+  status: primary_mentor_and_sponsor
+  notes:
+  - Dowhower remains the anchor relationship and strongest sponsor.
+  delta: 0
+- name: Brad Childress
+  role: Quarterbacks Coach, Philadelphia Eagles
+  score: 80
+  previous_score: 77
+  delta_this_turn: 3
+  trend: rising
+  status: established_qb_prep_link
+  notes:
+  - Childress now treats Stone’s quarterback-support lane as a true part of the weekly process.
+  delta: 3
+- name: Pat Shurmur
+  role: Tight Ends Coach, Philadelphia Eagles
+  score: 72
+  previous_score: 68
+  delta_this_turn: 4
+  trend: rising
+  status: more_collaborative_te_support_link
+  notes:
+  - TE-side detail became more collaborative and less merely supportive over the course of 2001.
+  delta: 4
+- name: David Culley
+  role: Wide Receivers Coach, Philadelphia Eagles
+  score: 64
+  previous_score: 60
+  delta_this_turn: 4
+  trend: rising
+  status: established_wr_support_link
+  notes:
+  - WR spacing and correction support became routine.
+  delta: 4
+- name: Juan Castillo
+  role: Offensive Line Coach, Philadelphia Eagles
+  score: 68
+  previous_score: 66
+  delta_this_turn: 2
+  trend: rising
+  status: established_protection_support_link
+  notes:
+  - Protection/front-ID support stayed useful on a deeper offensive staff.
+  delta: 2
+relationship_events:
+- turn: 12
+  date: '2000-01-14'
+  event: Resolved the 1999 season-end node through exit meetings and offseason evaluation after the Eagles finished 8-8 and retained Stone on a new one-year QC deal.
+  effects:
+  - name: Andy Reid
+    delta: 11
+    note: Strong season-end evaluation and a clear year-two retention decision materially improved trust.
+  - name: Rod Dowhower
+    delta: 4
+    note: Dowhower’s endorsement turned Stone from a trusted worker into a real developmental holdover.
+  - name: Brad Childress
+    delta: 7
+    note: Quarterback-support usefulness was explicitly recognized.
+  - name: Pat Shurmur
+    delta: 7
+    note: The hierarchy-safe TE support relationship was affirmed as a positive asset.
+- turn: 17
+  date: '2000-06-09'
+  event: During Year 2 OTAs, Stone broadened his offensive support load beyond the TE/QB lanes into WR spacing and OL/protection self-scout work.
+  effects:
+  - name: David Culley
+    delta: 3
+    note: WR spacing and route-support work created Stone’s first meaningful working value in Culley’s lane.
+  - name: Juan Castillo
+    delta: 3
+    note: Protection-fit study and self-scout detail created Stone’s first meaningful functional link with Castillo.
+- turn: 22
+  date: '2000-10-22'
+  event: Through camp, preseason, and the first eight regular-season games, Stone’s broader weekly support became established across QB prep, WR spacing, and protection cleanup while he remained fully inside the QC role.
+  effects:
+  - name: Brad Childress
+    delta: 4
+    note: Stone’s third-down and hot-answer prep for McNabb became reliable weekly support.
+  - name: David Culley
+    delta: 5
+    note: WR spacing and route-structure packaging became a regular part of Culley’s workflow.
+  - name: Juan Castillo
+    delta: 5
+    note: Protection and front-ID correction work made Stone a real first-pass helper in Castillo’s lane.
+- turn: 25
+  date: '2000-12-24'
+  event: Through the 2000 stretch run, Philadelphia finished 11-5 and reached the NFC Wild Card round while Stone held late-season quality under heavier workload and strengthened his place in the weekly offensive workflow.
+  effects:
+  - name: Andy Reid
+    delta: 2
+    note: Reid quietly registered Stone’s dependability under playoff-level pressure without changing his role.
+  - name: Brad Childress
+    delta: 4
+    note: McNabb support work became fully embedded in Childress’s weekly prep process.
+  - name: David Culley
+    delta: 3
+    note: WR spacing and correction packaging matured from useful help into established support.
+  - name: Juan Castillo
+    delta: 4
+    note: Protection and front-ID cleanup became a stable late-season value lane.
+- turn: 26
+  date: '2000-12-31'
+  event: Philadelphia won the NFC Wild Card game over Tampa Bay, and Stone’s playoff-week workload narrowed toward protection structure and third-down support without any role change.
+  effects:
+  - name: Brad Childress
+    delta: 2
+    note: Playoff-week hot-answer and third-down support proved trustworthy under compressed deadlines.
+  - name: Juan Castillo
+    delta: 2
+    note: Protection and front-ID support gained value because the matchup demanded precise first-pass work.
+- turn: 27
+  date: '2001-01-07'
+  event: Philadelphia lost 20-10 at New York in the Divisional round, ending the 2000 season while Stone completed another clean postseason support week inside the QC role.
+  effects:
+  - name: Andy Reid
+    delta: 2
+    note: Stone’s strong Year 2 finish and role-discipline improved quiet internal trust.
+  - name: Brad Childress
+    delta: 2
+    note: Third-down and hot-answer support remained reliable under another compressed playoff prep week.
+  - name: Juan Castillo
+    delta: 2
+    note: Protection and front-ID help continued to prove useful in high-pressure game-planning.
+- turn: 28
+  date: '2001-01-19'
+  event: Exit meetings and internal evaluation concluded. Philadelphia offered Stone a Year 3 QC renewal and approved true outside promotion interviews rather than block him.
+  effects:
+  - name: Andy Reid
+    delta: 2
+    note: Reid’s season-end evaluation confirmed Stone belongs in the building as real offensive infrastructure.
+  - name: Rod Dowhower
+    delta: 2
+    note: Dowhower’s endorsement pushed Stone from emerging internal candidate to a real external Level 1 interview candidate.
+- turn: 35
+  date: '2002-01-27'
+  event: Through the 2001 season, Philadelphia reached the NFC Championship and Stone completed the best QC year of his career, becoming routine offensive infrastructure across several support lanes while staying fully inside the role.
+  effects:
+  - name: Andy Reid
+    delta: 1
+    note: Reid’s quiet trust deepened because Stone’s strong work held through a conference-title run.
+  - name: Brad Childress
+    delta: 3
+    note: Quarterback and coverage-related support became a true part of Childress’s weekly process.
+  - name: Pat Shurmur
+    delta: 4
+    note: Stone’s TE-side detail became more collaborative and less merely supportive as the season progressed.
+  - name: David Culley
+    delta: 4
+    note: WR spacing and correction work matured into a stable cross-room support lane.
+  - name: Juan Castillo
+    delta: 2
+    note: Protection and front-ID work stayed useful on a deeper offensive staff.

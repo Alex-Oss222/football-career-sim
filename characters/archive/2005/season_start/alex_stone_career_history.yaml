@@ -1,0 +1,64 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2005-03-02'
+  career_turn: 66
+  sim_phase: Offseason — 2005 Cycle Start
+  archive_note: 2005 season_start snapshot
+career_history:
+- turn: 12
+  date_range: 2000-01-03 to 2000-01-14
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Season End — Exit Meetings / Offseason Evaluation
+  summary: Retained for 2000 as QC at $40,000 after strong year-one evaluation.
+  results:
+  - Strong endorsement from Reid and Dowhower.
+- turn: 36
+  date_range: 2002-01-28 to 2002-02-05
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: Offseason — Internal Promotion / 2002 Cycle Start
+  summary: Promoted internally to Tight Ends Coach at $140,000.
+  results:
+  - Inherited his first NFL room.
+- turn: 64
+  date_range: 2004-02-10 to 2005-02-07
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: 2004 Season End — Pre-Exit Snapshot
+  summary: Philadelphia went 13-3, lost Super Bowl XXXIX to New England. Stone completed Year 3 as TE coach and his sixth year in the Eagles building.
+  results:
+  - Super Bowl appearance on his coaching résumé.
+  - Three years of steady improvement as a room owner.
+  - Contract expired; career inflection point reached.
+- turn: 66
+  date_range: 2005-02-07 to 2005-03-02
+  team: University of Memphis
+  role: Defensive Backs Coach
+  phase: Offseason — 2005 Cycle Start
+  summary: Stone accepted the Memphis DB coach position at $95,000 — a deliberate lateral move to a lower level of football on the opposite side of the ball. The bet is that learning defense will make him a viable HC candidate within a few years, which staying as an NFL TE coach would not accomplish.
+  results:
+  - Left the NFL for college football.
+  - Took a significant pay cut ($175,000 to $95,000).
+  - Began learning defensive coaching from scratch.
+  - NFL references (Reid, Dowhower, Childress) remain strong but become external.
+  state_changes:
+    stress:
+      from: 85
+      to: 72
+    job_security:
+      from: 96
+      to: 80
+    salary:
+      from: 175000
+      to: 95000
+    tactical_knowledge:
+      from: 71
+      to: 52
+    teaching:
+      from: 73
+      to: 58
+    scheme_design:
+      from: 66
+      to: 35

@@ -1,0 +1,196 @@
+mode: COACHING
+tape: MODE B (engine-generated; user 3d20 override applied for Turn 27)
+identity:
+  name: Alex-Lamar Stone
+  age: 33
+  current_role: Philadelphia Eagles — Offensive Quality Control
+  previous_role: NFL Tight End, San Diego Chargers (1987–1998)
+  level: 0
+  level_label: GA/QC
+
+timeline:
+  career_turn: 27
+  season_turn: 23
+  phase: Season End — Exit Meetings / Offseason Evaluation
+  previous_phase: Playoffs — Divisional Round
+  last_resolved_date: '2001-01-07'
+  date: '2001-01-08'
+  next_event: 2000 season exit meetings and internal evaluation
+  calendar_frozen: false
+  resume_anchor:
+    exact_pickup_date: '2001-01-08'
+    reason: Day after the Eagles were eliminated in the Divisional round at New York.
+
+calendar_state:
+  calendar_file: teams/philadelphia_eagles/2000/philadelphia_eagles_calendar_2000.yaml
+  previous_node: playoff_divisional
+  current_node: season_end
+  current_week_label: Season End / Exit Meetings
+  next_node: null
+  completed_nodes:
+    - season_end_99
+    - staff_continuity
+    - fa_opens
+    - combine_01
+    - fa_march
+    - annual_meeting
+    - pre_draft_april
+    - draft_01
+    - draft_02
+    - post_draft
+    - ota_01
+    - minicamp_01
+    - offseason_break
+    - camp_01
+    - pre_wk1
+    - pre_wk2
+    - pre_wk3
+    - pre_wk4
+    - roster_cutdown
+    - reg_wk01
+    - reg_wk02
+    - reg_wk03
+    - reg_wk04
+    - reg_wk05
+    - reg_wk06
+    - reg_wk07
+    - reg_wk08
+    - reg_wk09
+    - reg_wk10
+    - reg_wk11
+    - reg_wk12
+    - reg_wk13
+    - reg_wk14
+    - reg_wk15
+    - reg_wk16
+    - reg_wk17
+    - playoff_wildcard
+    - playoff_divisional
+  continuation_note: Divisional-round loss at New York ended the playoff run; playoff_championship and super_bowl nodes are inactive and skipped.
+
+record:
+  preseason_record: 2-2
+  regular_season_record: 11-5
+  postseason_record: 1-1
+  career_coaching_record: 0-0
+  playoffs: Eliminated — Divisional Round
+  team: Philadelphia Eagles
+  team_ovr: N/A
+
+job_status:
+  job_security: 99
+  stress: 74
+  contract:
+    status: Expiring
+    team: Philadelphia Eagles
+    title: Offensive Quality Control
+    term_years: 1
+    cycle: 2000
+    salary: 40000
+    accepted: true
+  applications_active: 0
+  offers_pending: 0
+  retention_status: 2001 offseason evaluation pending
+
+coaching_attributes:
+  cap: 60
+  core:
+    TAC: 60
+    TCH: 60
+    LDR: 60
+    REC: 48
+    MAN: 60
+    MOT: 60
+  scheme:
+    SDN: 60
+    GMG: 60
+    PEV: 60
+    MED: 42
+    STF: 50
+    ADM: 60
+  advanced:
+    DEV: 60
+    INV: 52
+    CNT: 40
+    CMB: 58
+    TRD: 38
+  traits:
+    Disciplinarian: 20
+    Players_Coach: 35
+    Innovator: 25
+    Traditionalist: 20
+
+finances:
+  net_worth: 8700000
+  annual_expenses: 418000
+  salary: 40000
+  financial_pressure: None
+
+relationships:
+  Don_Coryell:
+    score: 80
+    status: Strong reference; stable
+  Bobby_Ross:
+    score: 75
+    status: Strong reference; stable
+  Chargers_Position_Coaches:
+    score: 65
+    status: Moderate network support
+  Andy_Reid:
+    score: 84
+    status: Quietly trusted year-two QC infrastructure; postseason dependability noticed, authority unchanged
+  Rod_Dowhower:
+    score: 95
+    status: Primary mentor and highest-trust supervisor; Stone's first-pass prep work remains dependable
+  Brad_Childress:
+    score: 77
+    status: Established playoff-capable QB-prep trust, especially on third-down and hot-answer support
+  Pat_Shurmur:
+    score: 68
+    status: Stable hierarchy-safe TE support relationship
+  David_Culley:
+    score: 60
+    status: Established WR-spacing and route-structure support link
+  Juan_Castillo:
+    score: 66
+    status: Established protection/front-ID support link that strengthened again in the Divisional prep week
+
+personal_development:
+  system_familiarity:
+    system: Reid West Coast offense
+    time_in_system_completed: Full Year 2 season completed
+    status: Operationally native at weekly support speed; postseason confirmed he can narrow cleanly by matchup without losing quality
+  what_hes_building:
+    - Cleaner postseason first-pass film and correction work that needs minimal revision
+    - Broader offensive usefulness that can still narrow by staff need and matchup
+    - Better translation of leverage, pressure, spacing, route compression, and coverage stress into coach-usable support
+    - A stronger internal case for eventual Level 1 consideration if direct teaching reps and a real opening ever appear
+  level_1_position_coach_developing:
+    status: Not yet promoted
+    readiness: Emerging
+    missing_pieces:
+      - Full room ownership
+      - Independent meeting command
+      - Direct player-development responsibility
+      - Proof he can teach and manage structure rather than only support it
+
+active_consequences:
+  - Stone completed Year 2 as a more broadly trusted QC without any title or authority jump.
+  - The Divisional-round loss ends the season and pushes the sim into the offseason evaluation bubble.
+  - Postseason weeks showed he could narrow effectively into the most urgent support lanes without role drift.
+  - Internal trust is stronger than it was at the start of the season, but 2001 status is still formally unresolved.
+  - Promotion remains possible only if offseason evaluation, staff movement, and organizational need all align.
+
+engine_resolved_1999_run_snapshot:
+  final_regular_season_record: 8-8
+  playoffs: Missed
+  draft_class_carried_forward:
+    - Donovan McNabb — QB, Syracuse
+    - Barry Gardner — LB, Northwestern
+    - John Welbourn — OT, California
+    - Na Brown — WR, North Carolina
+
+last_3_turns_summary:
+  - 'Turn 25: Resolved December and the end of the regular season; Philadelphia finished 11-5 and reached the Wild Card round while Stone held late-season quality inside the same QC role.'
+  - 'Turn 26: Resolved the NFC Wild Card; Philadelphia beat Tampa Bay 17-9 and Stone narrowed effectively into pressure/protection and third-down support without any role change.'
+  - 'Turn 27: Resolved the Divisional Round at New York; Philadelphia lost 20-10, and Stone exits Year 2 as a stronger postseason-capable QC entering offseason evaluation.'

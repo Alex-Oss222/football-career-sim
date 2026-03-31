@@ -1,0 +1,125 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2005-11-27'
+  career_turn: 74
+  sim_phase: 2005 Season End — Pre-Exit Snapshot
+  archive_note: 2005 season_end snapshot
+relationships:
+- name: Don Coryell
+  role: Former HC, Chargers
+  score: 80
+  previous_score: 80
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  delta: 0
+- name: Bobby Ross
+  role: Former HC, Chargers
+  score: 75
+  previous_score: 75
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  delta: 0
+- name: Chargers Position Coaches
+  role: Former colleagues
+  score: 63
+  previous_score: 65
+  delta_this_turn: -2
+  trend: cooling
+  status: moderate_network
+  notes:
+  - Natural decay from distance and time.
+  delta: -2
+- name: University of Miami Connections
+  role: College network
+  score: 60
+  previous_score: 58
+  delta_this_turn: 2
+  trend: rising
+  status: active_college_network
+  notes:
+  - College coaching and recruiting made the Miami network more relevant.
+  delta: 2
+- name: Andy Reid
+  role: Head Coach, Philadelphia Eagles
+  score: 88
+  previous_score: 89
+  delta_this_turn: -1
+  trend: cooling
+  status: strong_external_reference
+  notes:
+  - Slight natural decay from distance but still a powerful reference.
+  delta: -1
+- name: Rod Dowhower
+  role: Former Offensive Coordinator
+  score: 97
+  previous_score: 97
+  delta_this_turn: 0
+  trend: stable
+  status: former_primary_mentor_and_reference
+  delta: 0
+- name: Brad Childress
+  role: Offensive Coordinator, Philadelphia Eagles
+  score: 85
+  previous_score: 86
+  delta_this_turn: -1
+  trend: cooling
+  status: strong_external_reference
+  delta: -1
+- name: Pat Shurmur
+  role: Quarterbacks Coach, Philadelphia Eagles
+  score: 80
+  previous_score: 81
+  delta_this_turn: -1
+  trend: cooling
+  status: external_reference
+  delta: -1
+- name: Tommy West
+  role: Former Head Coach, Memphis (fired)
+  score: 62
+  previous_score: 55
+  delta_this_turn: 7
+  trend: rising
+  status: fired_hc_mutual_respect
+  notes:
+  - Stone earned West's professional respect by grinding through the year without complaining.
+  delta: 7
+- name: Memphis Defensive Staff
+  role: Defensive colleagues, Memphis
+  score: 58
+  previous_score: 45
+  delta_this_turn: 13
+  trend: rising
+  status: earned_respect
+  notes:
+  - Stone earned credibility by working through his defensive knowledge gap openly.
+  delta: 13
+- name: Memphis Administration
+  role: University administration
+  score: 50
+  previous_score: N/A
+  delta_this_turn: N/A
+  trend: new
+  status: hc_search_evaluator
+  notes:
+  - Stone's HC candidacy depends on how the AD evaluates his full résumé.
+  delta: 0
+relationship_events:
+- turn: 74
+  date: '2005-11-26'
+  event: Memphis finished 5-6 and Tommy West was fired. Stone's name entered the HC search conversation.
+  effects:
+  - name: Tommy West
+    delta: 7
+    note: West respected Stone's work ethic and attitude during a losing season.
+  - name: Memphis Defensive Staff
+    delta: 13
+    note: Colleagues saw Stone grind through a hard learning year without ego.
+  - name: Andy Reid
+    delta: -1
+    note: Natural distance decay continues.
+  - name: Brad Childress
+    delta: -1
+    note: Natural distance decay continues.

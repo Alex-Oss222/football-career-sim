@@ -1,0 +1,102 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2007-11-25'
+  career_turn: 94
+  sim_phase: 2007 Season End — Pre-Exit Snapshot
+  archive_note: 2007 season_end snapshot
+relationships:
+- name: Don Coryell
+  role: Former HC, Chargers
+  score: 80
+  previous_score: 80
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  delta: 0
+- name: Bobby Ross
+  role: Former HC, Chargers
+  score: 75
+  previous_score: 75
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  delta: 0
+- name: University of Miami Connections
+  role: College network
+  score: 65
+  previous_score: 63
+  delta_this_turn: 2
+  trend: rising
+  status: active_college_network
+  notes:
+  - Winning seasons and recruiting success deepened college network ties.
+  delta: 2
+- name: Andy Reid
+  role: Head Coach, Philadelphia Eagles
+  score: 85
+  previous_score: 86
+  delta_this_turn: -1
+  trend: cooling
+  status: strong_external_reference
+  delta: -1
+- name: Rod Dowhower
+  role: Former Offensive Coordinator
+  score: 94
+  previous_score: 95
+  delta_this_turn: -1
+  trend: cooling
+  status: former_mentor
+  delta: -1
+- name: Brad Childress
+  role: Head Coach, Minnesota Vikings
+  score: 82
+  previous_score: 83
+  delta_this_turn: -1
+  trend: cooling
+  status: external_reference
+  delta: -1
+- name: Memphis Administration
+  role: University administration
+  score: 68
+  previous_score: 55
+  delta_this_turn: 13
+  trend: rising
+  status: encouraged
+  notes:
+  - The three-win improvement and bowl eligibility significantly rebuilt institutional trust.
+  delta: 13
+- name: Memphis Staff
+  role: Coaching staff
+  score: 70
+  previous_score: 60
+  delta_this_turn: 10
+  trend: rising
+  status: strong_working_trust
+  notes:
+  - Two years together with tangible on-field improvement deepened staff trust.
+  delta: 10
+- name: Conference USA Network
+  role: Conference coaching circles
+  score: 45
+  previous_score: N/A
+  delta_this_turn: N/A
+  trend: new
+  status: emerging
+  notes:
+  - Stone's name is becoming known in the conference.
+  delta: 0
+relationship_events:
+- turn: 94
+  date: '2007-11-24'
+  event: Memphis finished 7-5 and earned bowl eligibility in Stone's second year as HC.
+  effects:
+  - name: Memphis Administration
+    delta: 13
+    note: Bowl eligibility and a three-win improvement significantly rebuilt institutional trust.
+  - name: Memphis Staff
+    delta: 10
+    note: Shared success deepened staff trust and investment.
+  - name: University of Miami Connections
+    delta: 2
+    note: Winning record and recruiting success continued to strengthen college network.

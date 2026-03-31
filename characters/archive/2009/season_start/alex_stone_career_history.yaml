@@ -1,0 +1,103 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2009-02-11'
+  career_turn: 106
+  sim_phase: Offseason — 2009 Cycle Start
+  archive_note: 2009 season_start snapshot
+career_history:
+- turn: 12
+  date_range: 2000-01-03 to 2000-01-14
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Season End — Exit Meetings / Offseason Evaluation
+  summary: Retained for 2000 as QC at $40,000.
+  results:
+  - Strong endorsement from Reid and Dowhower.
+- turn: 36
+  date_range: 2002-01-28 to 2002-02-05
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: Offseason — Internal Promotion / 2002 Cycle Start
+  summary: Promoted internally to Tight Ends Coach at $140,000.
+  results:
+  - Inherited his first NFL room.
+- turn: 64
+  date_range: 2004-02-10 to 2005-02-07
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: 2004 Season End — Pre-Exit Snapshot
+  summary: Philadelphia went 13-3, lost Super Bowl XXXIX.
+  results:
+  - Super Bowl appearance on his résumé.
+- turn: 74
+  date_range: 2005-03-02 to 2005-11-27
+  team: University of Memphis
+  role: Defensive Backs Coach
+  phase: 2005 Season End — Pre-Exit Snapshot
+  summary: Memphis went 5-6. Stone learned defense. West fired.
+  results:
+  - Gained functional defensive knowledge.
+- turn: 84
+  date_range: 2006-01-11 to 2006-11-26
+  team: University of Memphis
+  role: Head Coach
+  phase: 2006 Season End — Pre-Exit Snapshot
+  summary: Memphis went 4-8 in Year 1.
+  results:
+  - Cultural improvement without wins.
+- turn: 94
+  date_range: 2007-01-16 to 2007-11-25
+  team: University of Memphis
+  role: Head Coach
+  phase: 2007 Season End — Pre-Exit Snapshot
+  summary: Memphis went 7-5 in Year 2. Bowl eligible.
+  results:
+  - Three-win improvement. Institutional trust rebuilt.
+- turn: 104
+  date_range: 2008-01-16 to 2008-12-29
+  team: University of Memphis
+  role: Head Coach
+  phase: 2008 Season End — Pre-Exit Snapshot
+  summary: Memphis went 9-4 with a Conference USA East Division title.
+  results:
+  - Best season in recent Memphis history. NFL interest emerged.
+- turn: 106
+  date_range: 2008-12-29 to 2009-02-11
+  team: San Diego Chargers
+  role: Passing Game Coordinator
+  phase: Offseason — 2009 Cycle Start
+  summary: Stone left Memphis and accepted the Chargers Passing Game Coordinator role under Norv Turner on a two-year deal at $300,000. Returns to the franchise where he played for 12 years, now coaching inside a Coryell-influenced vertical passing offense with elite talent (Rivers, Gates, Jackson).
+  results:
+  - Returned to the NFL after four years in college coaching.
+  - First coordinator-level NFL role.
+  - Reunited with the Chargers franchise.
+  - Must learn Coryell vertical concepts as a coach after playing in them for a career.
+  state_changes:
+    stress:
+      from: 72
+      to: 78
+    job_security:
+      from: 90
+      to: 75
+    salary:
+      from: 500000
+      to: 300000
+    level:
+      from: 3
+      to: 2
+    tactical_knowledge:
+      from: 66
+      to: 68
+    teaching:
+      from: 69
+      to: 70
+    scheme_design:
+      from: 60
+      to: 62
+    game_management:
+      from: 62
+      to: 64
+    recruiting:
+      from: 72
+      to: 65

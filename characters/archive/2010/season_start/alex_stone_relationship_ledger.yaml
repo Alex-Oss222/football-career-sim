@@ -1,0 +1,73 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2010-02-09'
+  career_turn: 116
+  sim_phase: Offseason — 2010 Cycle Start
+  archive_note: 2010 season_start snapshot
+relationships:
+- name: Don Coryell
+  role: Former HC, Chargers
+  score: 80
+  previous_score: 80
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  delta: 0
+- name: Bobby Ross
+  role: Former HC, Chargers
+  score: 75
+  previous_score: 75
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  delta: 0
+- name: Andy Reid
+  role: Head Coach, Philadelphia Eagles
+  score: 84
+  previous_score: 84
+  delta_this_turn: 0
+  trend: stable
+  status: strong_external_reference
+  delta: 0
+- name: Rod Dowhower
+  role: Former Offensive Coordinator
+  score: 91
+  previous_score: 91
+  delta_this_turn: 0
+  trend: stable
+  status: former_mentor
+  delta: 0
+- name: Norv Turner
+  role: Head Coach, San Diego Chargers
+  score: 68
+  previous_score: 68
+  delta_this_turn: 0
+  trend: stable
+  status: growing_trust
+  delta: 0
+- name: Chargers Offensive Staff
+  role: Offensive colleagues, San Diego
+  score: 60
+  previous_score: 60
+  delta_this_turn: 0
+  trend: stable
+  status: working_trust
+  delta: 0
+- name: Antonio Gates
+  role: Tight End, San Diego Chargers
+  score: 62
+  previous_score: 62
+  delta_this_turn: 0
+  trend: stable
+  status: player_coach_respect
+  delta: 0
+- name: Philip Rivers
+  role: Quarterback, San Diego Chargers
+  score: 55
+  previous_score: 55
+  delta_this_turn: 0
+  trend: stable
+  status: professional_respect
+  delta: 0
+relationship_events: []

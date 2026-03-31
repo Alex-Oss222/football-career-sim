@@ -1,0 +1,176 @@
+mode: COACHING
+tape: MODE B (engine-generated; archived snapshot)
+identity:
+  name: Alex-Lamar Stone
+  age: 37
+  current_role: Philadelphia Eagles — Tight Ends Coach
+  previous_role: Philadelphia Eagles — Tight Ends Coach
+  level: 1
+  level_label: Position Coach
+timeline:
+  career_turn: 64
+  season_turn: 9
+  phase: Season End — Exit Meetings / Offseason Evaluation
+  previous_phase: Super Bowl XXXIX
+  last_resolved_date: '2005-02-06'
+  date: '2005-02-07'
+  next_event: 2004 season exit meetings and job cycle
+  calendar_frozen: true
+  resume_anchor:
+    exact_pickup_date: '2005-02-07'
+    reason: Snapshot captured immediately after the Super Bowl XXXIX loss to New England and before the 2004 exit bubble resolves.
+calendar_state:
+  calendar_file: teams/philadelphia_eagles/2004/philadelphia_eagles_calendar_2004.yaml
+  previous_node: super_bowl
+  current_node: season_end
+  current_week_label: 2004 Season End / Exit Meetings
+  next_node: null
+  continuation_note: The 2004 season is complete. Stone's contract has expired. Exit meetings and the 2005 job cycle are pending.
+record:
+  regular_season_record: 13-3
+  postseason_record: 2-1
+  division_finish: 1st NFC East
+  playoff_seed: NFC No. 1
+  playoffs: Lost Super Bowl XXXIX
+  team: Philadelphia Eagles
+  team_ovr: N/A
+job_status:
+  job_security: 96
+  stress: 85
+  contract:
+    status: Expiring
+    team: Philadelphia Eagles
+    title: Tight Ends Coach
+    term_years: 2
+    cycle: 2003-2004
+    salary: 175000
+    accepted: true
+    note: Deal expired at the conclusion of the 2004 season. 2005 status pending.
+  applications_active: 0
+  offers_pending: 0
+  retention_status: 2005 status pending exit meetings
+  evaluation_projection:
+    likely_score: 86
+    trajectory: Rising
+    scheme_mastery: 93
+    promotion_readiness: Ready for expanded NFL role or college coordinator/HC opportunity
+    risk_flag: Contract expiration and career inflection point
+offseason_status:
+  time_bubble_active: true
+  bubble_stage: Season Close
+  era_ruleset: NFL_2000
+  evaluation_score: Pending
+  trajectory: Pending
+  scheme_mastery: Pending
+  trust_position_direct_evaluator: Pending
+  promotion_readiness: Pending
+  risk_flag: Pending
+  club_decision: Pending
+  outside_interest: Active — college opportunities emerging
+  interview_access: Open
+  transition_pending: true
+coaching_attributes:
+  cap: 80
+  core:
+    TAC: 71
+    TCH: 73
+    LDR: 69
+    REC: 60
+    MAN: 69
+    MOT: 68
+  scheme:
+    SDN: 66
+    GMG: 64
+    PEV: 65
+    MED: 49
+    STF: 64
+    ADM: 67
+  advanced:
+    DEV: 73
+    INV: 60
+    CNT: 45
+    CMB: 64
+    TRD: 42
+  traits:
+    Disciplinarian: 24
+    Players_Coach: 38
+    Innovator: 28
+    Traditionalist: 20
+finances:
+  net_worth: 9850000
+  annual_expenses: 540000
+  salary: 175000
+  financial_pressure: None
+team_context:
+  team: Philadelphia Eagles
+  head_coach: Andy Reid
+  offensive_coordinator: Brad Childress
+  quarterbacks_coach: Pat Shurmur
+  offensive_line_coach: Juan Castillo
+  role_context_note: Stone completed Year 3 as TE coach on the Eagles' first Super Bowl run of the Reid era. The T.O. drama dominated the season's narrative, but Stone's TE room stayed clean and functional throughout.
+room_context:
+  room: Tight Ends
+  room_summary: The room did its job inside a Super Bowl offense. Not the headline, but quietly effective in the run game, red zone, and as a pressure-answer resource.
+  what_stone_owned:
+  - Full TE room ownership for three years running
+  - All technique, development, and weekly correction responsibilities
+  - Run-game integration with OL
+  - Passing-game detail through a season dominated by T.O.'s presence and absence
+  what_he_still_shared:
+  - QB timing with Shurmur and Childress
+  - Protection structure
+  - Offensive self-scout
+relationships:
+  Don_Coryell:
+    score: 80
+    status: Strong reference; stable
+  Bobby_Ross:
+    score: 75
+    status: Strong reference; stable
+  Chargers_Position_Coaches:
+    score: 65
+    status: Moderate network support
+  University_of_Miami_Connections:
+    score: 55
+    status: Dormant college network
+  Andy_Reid:
+    score: 91
+    status: Strong trust; would endorse Stone for expanded opportunities
+  Rod_Dowhower:
+    score: 97
+    status: Former mentor and durable external reference
+  Brad_Childress:
+    score: 88
+    status: Strong OC trust built over three years of room ownership on a Super Bowl staff
+  Pat_Shurmur:
+    score: 83
+    status: Trusted internal ally
+  David_Culley:
+    score: 68
+    status: Stable cross-room relationship
+  Juan_Castillo:
+    score: 77
+    status: Important structural ally; three years of TE/OL coordination
+personal_development:
+  system_familiarity:
+    system: Reid West Coast offense
+    time_in_system_completed: Six years in the building completed
+    status: Complete mastery. Stone has coached the TE room through three NFC Championship games and a Super Bowl. He is thinking about the offense at a level beyond his room.
+  what_he_handled_well:
+  - Kept the TE room productive and integrated during a T.O.-dominated season
+  - Managed the room through a Super Bowl run without any drama or role inflation
+  - Three years of steady improvement as a room owner
+  - Earned genuine coordinator-level trust from the offensive staff
+  what_stretched_him:
+  - The Super Bowl loss and T.O. fallout created organizational strain that will reshape the 2005 staff
+  - Stone is at a career inflection point — return as a position coach or pursue something bigger
+  - His contract expired and the decision is no longer about survival but about trajectory
+active_consequences:
+- Stone has six years of Eagles experience, three as TE coach on a perennial contender including a Super Bowl run.
+- His contract is expiring and he is at a genuine career inflection point.
+- College opportunities are emerging, including a chance to learn the defensive side of the ball — something no NFL OC candidate would normally consider, but Stone's long-term trajectory makes it strategically viable.
+- The T.O. fallout and potential staff turnover create uncertainty about what the 2005 Eagles will look like.
+last_3_turns_summary:
+- 'Turn 62: Stone''s room stayed clean through the T.O. drama and the regular-season stretch run.'
+- 'Turn 63: Philadelphia beat Atlanta in the NFC Championship to reach Super Bowl XXXIX.'
+- 'Turn 64: The Eagles lost Super Bowl XXXIX to New England 24-21. Stone exits with a Super Bowl appearance on his résumé and an expiring contract.'

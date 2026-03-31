@@ -1,0 +1,117 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2006-01-11'
+  career_turn: 76
+  sim_phase: Offseason — 2006 Cycle Start
+  archive_note: 2006 season_start snapshot
+relationships:
+- name: Don Coryell
+  role: Former HC, Chargers
+  score: 80
+  previous_score: 80
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  delta: 0
+- name: Bobby Ross
+  role: Former HC, Chargers
+  score: 75
+  previous_score: 75
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  delta: 0
+- name: University of Miami Connections
+  role: College network
+  score: 62
+  previous_score: 60
+  delta_this_turn: 2
+  trend: rising
+  status: active_college_network
+  notes:
+  - HC hire and recruiting responsibilities further activate the college network.
+  delta: 2
+- name: Andy Reid
+  role: Head Coach, Philadelphia Eagles
+  score: 87
+  previous_score: 88
+  delta_this_turn: -1
+  trend: cooling
+  status: strong_external_reference
+  notes:
+  - Reid's endorsement helped with the HC hire. Continued natural distance decay.
+  delta: -1
+- name: Rod Dowhower
+  role: Former Offensive Coordinator
+  score: 96
+  previous_score: 97
+  delta_this_turn: -1
+  trend: cooling
+  status: former_mentor_scheme_consultant
+  notes:
+  - Dowhower provided offensive scheme consulting during the staff build. Slight natural decay from distance.
+  delta: -1
+- name: Brad Childress
+  role: Offensive Coordinator, Philadelphia Eagles
+  score: 84
+  previous_score: 85
+  delta_this_turn: -1
+  trend: cooling
+  status: strong_external_reference
+  delta: -1
+- name: Pat Shurmur
+  role: Quarterbacks Coach, Philadelphia Eagles
+  score: 79
+  previous_score: 80
+  delta_this_turn: -1
+  trend: cooling
+  status: external_reference
+  delta: -1
+- name: Memphis Administration
+  role: University administration
+  score: 58
+  previous_score: 50
+  delta_this_turn: 8
+  trend: rising
+  status: cautiously_optimistic
+  notes:
+  - Hiring process built initial institutional trust. Expectations are for patience in Year 1 and progress by Year 2-3.
+  delta: 8
+- name: Memphis Staff (New)
+  role: Newly hired coaching staff
+  score: 50
+  previous_score: N/A
+  delta_this_turn: N/A
+  trend: new
+  status: new_staff
+  notes:
+  - Stone hired his own staff. Trust must be built through the first season together.
+  delta: 0
+- name: Tommy West
+  role: Former HC, Memphis (fired)
+  score: 62
+  previous_score: 62
+  delta_this_turn: 0
+  trend: stable
+  status: professional_respect
+  notes:
+  - West departed. Relationship is dormant but respectful.
+  delta: 0
+relationship_events:
+- turn: 75
+  date: '2006-01-05'
+  event: Stone was hired as Memphis head coach and began assembling his staff.
+  effects:
+  - name: Memphis Administration
+    delta: 8
+    note: Hiring process built initial trust.
+  - name: University of Miami Connections
+    delta: 2
+    note: HC role and recruiting responsibilities further activated the college network.
+  - name: Rod Dowhower
+    delta: -1
+    note: Provided consulting but natural distance decay continues.
+  - name: Andy Reid
+    delta: -1
+    note: Endorsement helped but daily relationship remains distant.

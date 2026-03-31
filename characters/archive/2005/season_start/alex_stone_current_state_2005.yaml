@@ -1,0 +1,173 @@
+mode: COACHING
+tape: MODE B (engine-generated; archived snapshot)
+identity:
+  name: Alex-Lamar Stone
+  age: 37
+  current_role: University of Memphis — Defensive Backs Coach
+  previous_role: Philadelphia Eagles — Tight Ends Coach
+  level: 1
+  level_label: Position Coach (College)
+timeline:
+  career_turn: 66
+  season_turn: 1
+  phase: Offseason — 2005 Cycle Start
+  previous_phase: Offseason — 2005 Job Cycle Resolved
+  last_resolved_date: '2005-03-01'
+  date: '2005-03-02'
+  next_event: 2005 spring practice and recruiting cycle begin
+  calendar_frozen: false
+  resume_anchor:
+    exact_pickup_date: '2005-03-02'
+    reason: Stone accepted the Memphis DB coach position after leaving Philadelphia. A deliberate move to build defensive knowledge for a long-term HC trajectory.
+calendar_state:
+  calendar_file: teams/memphis/2005/memphis_calendar_2005.yaml
+  previous_node: offseason_hiring
+  current_node: offseason_2005_cycle_start
+  current_week_label: 2005 Offseason Cycle Start
+  next_node: null
+  continuation_note: Stone begins at Memphis in a new role, new level of football, and on the opposite side of the ball.
+record:
+  regular_season_record: N/A
+  postseason_record: N/A
+  division_finish: N/A
+  playoffs: N/A
+  team: University of Memphis
+  team_ovr: N/A
+  note: Previous year — Philadelphia Eagles went 13-3 and lost Super Bowl XXXIX.
+job_status:
+  job_security: 80
+  stress: 72
+  contract:
+    status: Active
+    team: University of Memphis
+    title: Defensive Backs Coach
+    term_years: 1
+    cycle: 2005
+    salary: 95000
+    accepted: true
+    origin: Accepted a college position-coach role at a significant pay cut to learn the defensive side of the ball.
+  applications_active: 0
+  offers_pending: 0
+  retention_status: New hire for 2005
+offseason_status:
+  time_bubble_active: false
+  bubble_stage: Resolved
+  era_ruleset: NCAA_2000
+  evaluation_score: N/A
+  trajectory: Resetting
+  scheme_mastery: 30
+  trust_position_direct_evaluator: 55
+  promotion_readiness: Not applicable — learning a new side of the ball
+  risk_flag: First-year defensive coach with zero defensive coaching experience
+  club_decision: Hired
+  outside_interest: None
+  interview_access: Closed
+  transition_pending: false
+coaching_attributes:
+  cap: 80
+  core:
+    TAC: 52
+    TCH: 58
+    LDR: 69
+    REC: 60
+    MAN: 69
+    MOT: 68
+  scheme:
+    SDN: 35
+    GMG: 40
+    PEV: 45
+    MED: 49
+    STF: 50
+    ADM: 67
+  advanced:
+    DEV: 55
+    INV: 60
+    CNT: 45
+    CMB: 64
+    TRD: 42
+  traits:
+    Disciplinarian: 24
+    Players_Coach: 38
+    Innovator: 28
+    Traditionalist: 20
+  note: TAC and TCH dropped significantly because Stone is coaching a position group he has never coached before. SDN reflects near-zero scheme design ability on defense. His leadership, management, and motivational attributes carry over.
+finances:
+  net_worth: 9900000
+  annual_expenses: 480000
+  salary: 95000
+  financial_pressure: Low — net worth provides a deep cushion despite the pay cut
+team_context:
+  team: University of Memphis
+  head_coach: Tommy West
+  defensive_coordinator: TBD
+  role_context_note: Stone is the lowest-ranking defensive position coach on a mid-tier Conference USA staff. He chose this deliberately.
+room_context:
+  room: Defensive Backs
+  room_status: Stone is learning defensive technique, coverage structure, and secondary coaching from scratch. His playing and coaching career was entirely offensive.
+  what_stone_owns_now:
+  - DB meetings and daily technique work
+  - Individual drill sequencing for corners and safeties
+  - Film study and weekly correction packaging for the secondary
+  what_hes_learning:
+  - Coverage leverage and landmark technique
+  - Zone and man-coverage footwork and eye discipline
+  - How defensive game-planning works from the inside
+  - How a defensive staff communicates and coordinates
+  - Recruiting at the college level
+relationships:
+  Don_Coryell:
+    score: 80
+    status: Strong reference; stable
+  Bobby_Ross:
+    score: 75
+    status: Strong reference; stable
+  Chargers_Position_Coaches:
+    score: 65
+    status: Moderate network support
+  University_of_Miami_Connections:
+    score: 58
+    status: Reactivating — college coaching makes the Miami network slightly more relevant
+  Andy_Reid:
+    score: 89
+    status: Former HC; strong external reference
+  Rod_Dowhower:
+    score: 97
+    status: Former mentor and durable external reference
+  Brad_Childress:
+    score: 86
+    status: Former OC; strong external reference
+  Pat_Shurmur:
+    score: 81
+    status: Former colleague; external reference
+  David_Culley:
+    score: 66
+    status: Former colleague; dormant
+  Juan_Castillo:
+    score: 75
+    status: Former colleague; dormant
+  Tommy_West:
+    score: 55
+    status: New head coach; initial professional relationship
+  Memphis_Defensive_Staff:
+    score: 45
+    status: New colleagues; trust must be built from scratch
+personal_development:
+  system_familiarity:
+    system: Memphis defensive scheme
+    time_in_system_completed: None — first day
+    status: Stone is starting from zero on defense. His offensive intelligence helps him understand what defenses are trying to take away, but the technical coaching knowledge is absent.
+  what_hes_building:
+  - Defensive coaching vocabulary and technique knowledge
+  - Secondary-specific teaching ability
+  - College recruiting skills
+  - Credibility on the defensive side of the ball
+  - Long-term HC candidacy by becoming a two-sided coach
+active_consequences:
+- Stone took a massive pay cut and a lateral title move to a lower level of football.
+- The bet is that learning defense will make him a viable HC candidate in 2-3 years, which staying as an NFL TE coach would not.
+- He has zero defensive coaching credibility and must earn it the hard way.
+- His NFL references (Reid, Dowhower, Childress) remain strong but become external rather than daily.
+last_3_turns_summary:
+- 'Turn 62: Stone completed Year 3 as Eagles TE coach on a Super Bowl roster.'
+- 'Turn 63: The Eagles reached Super Bowl XXXIX.'
+- 'Turn 64: Lost Super Bowl XXXIX to New England. Stone''s contract expired and he chose the Memphis DB coach job over returning to the NFL.'

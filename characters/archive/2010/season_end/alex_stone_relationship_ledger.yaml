@@ -1,0 +1,121 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2011-01-03'
+  career_turn: 124
+  sim_phase: 2010 Season End — Pre-Exit Snapshot
+  archive_note: 2010 season_end snapshot
+relationships:
+- name: Don Coryell
+  role: Former HC, Chargers
+  score: 80
+  previous_score: 80
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  delta: 0
+- name: Bobby Ross
+  role: Former HC, Chargers
+  score: 75
+  previous_score: 75
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  delta: 0
+- name: Andy Reid
+  role: Head Coach, Philadelphia Eagles
+  score: 83
+  previous_score: 84
+  delta_this_turn: -1
+  trend: cooling
+  status: strong_external_reference
+  delta: -1
+- name: Rod Dowhower
+  role: Former Offensive Coordinator
+  score: 90
+  previous_score: 91
+  delta_this_turn: -1
+  trend: cooling
+  status: former_mentor
+  delta: -1
+- name: Norv Turner
+  role: Head Coach, San Diego Chargers
+  score: 72
+  previous_score: 68
+  delta_this_turn: 4
+  trend: rising
+  status: solid_trust_endorsement_ready
+  notes:
+  - Two years of working together built solid trust. Turner would endorse Stone for OC opportunities.
+  delta: 4
+- name: Chargers Offensive Staff
+  role: Offensive colleagues, San Diego
+  score: 66
+  previous_score: 60
+  delta_this_turn: 6
+  trend: rising
+  status: strong_working_trust
+  notes:
+  - Two years of shared work built meaningful trust despite the regression year.
+  delta: 6
+- name: Antonio Gates
+  role: Tight End, San Diego Chargers
+  score: 68
+  previous_score: 62
+  delta_this_turn: 6
+  trend: rising
+  status: strong_player_coach_relationship
+  notes:
+  - Two years of direct TE work built a strong professional bond.
+  delta: 6
+- name: Philip Rivers
+  role: Quarterback, San Diego Chargers
+  score: 60
+  previous_score: 55
+  delta_this_turn: 5
+  trend: rising
+  status: solid_professional_respect
+  notes:
+  - Rivers valued Stone's passing concepts and coordination over two years.
+  delta: 5
+- name: Pat Shurmur
+  role: NFL assistant
+  score: 73
+  previous_score: 74
+  delta_this_turn: -1
+  trend: cooling
+  status: dormant_external
+  delta: -1
+- name: Brad Childress
+  role: Former HC, Minnesota Vikings (fired mid-2010)
+  score: 78
+  previous_score: 79
+  delta_this_turn: -1
+  trend: cooling
+  status: external_reference
+  notes:
+  - Childress was fired from the Vikings midseason in 2010. Relationship continues to cool with distance.
+  delta: -1
+relationship_events:
+- turn: 124
+  date: '2011-01-02'
+  event: Stone completed Year 2 as Chargers PGC on a 9-7 team that missed the playoffs. Contract expired. OC candidacy active.
+  effects:
+  - name: Norv Turner
+    delta: 4
+    note: Two years together built endorsement-level trust.
+  - name: Chargers Offensive Staff
+    delta: 6
+    note: Shared work over two years built meaningful trust.
+  - name: Antonio Gates
+    delta: 6
+    note: Two years of direct TE work created a strong player-coach bond.
+  - name: Philip Rivers
+    delta: 5
+    note: Rivers valued Stone's passing concepts over the full two-year period.
+  - name: Andy Reid
+    delta: -1
+    note: Natural distance decay.
+  - name: Rod Dowhower
+    delta: -1
+    note: Natural distance decay.

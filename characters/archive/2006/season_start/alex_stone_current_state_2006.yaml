@@ -1,0 +1,168 @@
+mode: COACHING
+tape: MODE B (engine-generated; archived snapshot)
+identity:
+  name: Alex-Lamar Stone
+  age: 38
+  current_role: University of Memphis — Head Coach
+  previous_role: University of Memphis — Defensive Backs Coach
+  level: 3
+  level_label: Head Coach (College)
+timeline:
+  career_turn: 76
+  season_turn: 1
+  phase: Offseason — 2006 Cycle Start
+  previous_phase: Offseason — 2006 Job Cycle Resolved
+  last_resolved_date: '2006-01-10'
+  date: '2006-01-11'
+  next_event: Staff hiring, recruiting cycle, and spring practice
+  calendar_frozen: false
+  resume_anchor:
+    exact_pickup_date: '2006-01-11'
+    reason: Stone was hired as Memphis head coach after the Tommy West firing. His full résumé — HOF playing career, six years of NFL coaching including a Super Bowl staff, and willingness to learn defense — convinced the administration.
+calendar_state:
+  calendar_file: teams/memphis/2006/memphis_calendar_2006.yaml
+  previous_node: hc_hiring
+  current_node: offseason_2006_cycle_start
+  current_week_label: 2006 Offseason Cycle Start
+  next_node: null
+  continuation_note: Stone begins building a program from scratch as a first-year college head coach.
+record:
+  regular_season_record: N/A
+  postseason_record: N/A
+  division_finish: N/A
+  playoffs: N/A
+  team: University of Memphis
+  team_ovr: N/A
+  note: Previous year — Memphis went 5-6 under Tommy West (fired).
+job_status:
+  job_security: 72
+  stress: 88
+  contract:
+    status: Active
+    team: University of Memphis
+    title: Head Coach
+    term_years: 4
+    cycle: 2006-2009
+    salary: 450000
+    accepted: true
+    origin: Hired as head coach after HC search. Four-year deal reflects institutional commitment to a rebuild.
+  applications_active: 0
+  offers_pending: 0
+  retention_status: New hire — Year 1 of 4
+offseason_status:
+  time_bubble_active: false
+  bubble_stage: Resolved
+  era_ruleset: NCAA_2000
+  evaluation_score: N/A
+  trajectory: Building
+  scheme_mastery: 55
+  trust_position_direct_evaluator: 60
+  promotion_readiness: N/A — already HC
+  risk_flag: First-year HC with no college HC experience and a program that needs rebuilding
+  club_decision: Hired
+  outside_interest: None
+  interview_access: Closed
+  transition_pending: false
+coaching_attributes:
+  cap: 82
+  core:
+    TAC: 58
+    TCH: 63
+    LDR: 73
+    REC: 66
+    MAN: 73
+    MOT: 72
+  scheme:
+    SDN: 48
+    GMG: 50
+    PEV: 52
+    MED: 55
+    STF: 58
+    ADM: 71
+  advanced:
+    DEV: 62
+    INV: 63
+    CNT: 50
+    CMB: 66
+    TRD: 46
+  traits:
+    Disciplinarian: 28
+    Players_Coach: 36
+    Innovator: 30
+    Traditionalist: 20
+  note: TAC and TCH reflect Stone calling his own offense but still developing as a play-caller. LDR, MAN, and MOT are his strongest attributes — leadership and people skills from his playing career and NFL coaching. SDN still reflects a gap in full scheme design authority.
+finances:
+  net_worth: 9800000
+  annual_expenses: 520000
+  salary: 450000
+  financial_pressure: None
+team_context:
+  team: University of Memphis
+  head_coach: Alex-Lamar Stone
+  offensive_coordinator: TBD — Stone will hire his own staff
+  defensive_coordinator: TBD — Stone will hire his own staff
+  role_context_note: Stone must hire an entire staff, install his offensive and defensive schemes, rebuild recruiting, and establish program culture from Day 1.
+room_context:
+  room: Full Program
+  room_status: Stone now owns everything — offense, defense, special teams, recruiting, culture, discipline, media, alumni relations, and administration.
+  what_stone_owns_now:
+  - Full program authority and responsibility
+  - Offensive play-calling (calling his own offense based on Reid WCO principles adapted for college)
+  - Staff hiring and management
+  - Recruiting strategy and execution
+  - Program culture and discipline
+  - Media and alumni relations
+  - Budget management within university constraints
+  what_he_delegates:
+  - Defensive scheme design and game-planning to his DC
+  - Position-specific technique work to his position coaches
+  - Recruiting area coverage to assistants
+relationships:
+  Don_Coryell:
+    score: 80
+    status: Strong reference; stable
+  Bobby_Ross:
+    score: 75
+    status: Strong reference; stable
+  University_of_Miami_Connections:
+    score: 62
+    status: Active college network; recruiting value
+  Andy_Reid:
+    score: 87
+    status: Strong external reference; endorsement helped with HC hire
+  Rod_Dowhower:
+    score: 96
+    status: Former mentor; provided offensive scheme consulting during staff build
+  Brad_Childress:
+    score: 84
+    status: Strong external reference
+  Pat_Shurmur:
+    score: 79
+    status: External reference
+  Memphis_Administration:
+    score: 58
+    status: Cautiously optimistic about the hire; expecting Year 1 patience but Year 2-3 progress
+  Memphis_Staff_New:
+    score: 50
+    status: Newly hired staff; trust must be built through the first season together
+personal_development:
+  system_familiarity:
+    system: Stone's adapted WCO (offense) / DC-managed defense
+    time_in_system_completed: Installing his own system for the first time
+    status: Stone is adapting Reid's WCO principles for college talent and adding elements from his year learning defense. The offensive installation is his primary focus; he delegates defensive scheme authority to his DC.
+  what_hes_building:
+  - Program identity and culture from scratch
+  - Play-calling ability in live game situations
+  - Staff management and delegation skills
+  - Recruiting infrastructure
+  - Ability to manage both sides of the ball as a HC
+active_consequences:
+- Stone is a first-year college HC with no college HC experience. The learning curve is steep.
+- He has NFL-caliber offensive knowledge but must adapt it for college talent levels.
+- His defensive knowledge is functional but thin — he is heavily dependent on his DC.
+- The four-year deal gives him runway, but a terrible Year 1 could erode institutional patience.
+- His financial cushion means he can focus on coaching without financial anxiety.
+last_3_turns_summary:
+- 'Turn 72: The Memphis secondary showed marginal improvement under Stone''s coaching.'
+- 'Turn 73: Memphis finished 5-6 and Tommy West was fired.'
+- 'Turn 74: Stone was hired as Memphis head coach based on his full career résumé.'

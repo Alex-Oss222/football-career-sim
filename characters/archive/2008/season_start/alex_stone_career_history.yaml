@@ -1,0 +1,66 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2008-01-16'
+  career_turn: 96
+  sim_phase: Offseason — 2008 Cycle Start
+  archive_note: 2008 season_start snapshot
+career_history:
+- turn: 12
+  date_range: 2000-01-03 to 2000-01-14
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Season End — Exit Meetings / Offseason Evaluation
+  summary: Retained for 2000 as QC at $40,000.
+  results:
+  - Strong endorsement from Reid and Dowhower.
+- turn: 36
+  date_range: 2002-01-28 to 2002-02-05
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: Offseason — Internal Promotion / 2002 Cycle Start
+  summary: Promoted internally to Tight Ends Coach at $140,000.
+  results:
+  - Inherited his first NFL room.
+- turn: 64
+  date_range: 2004-02-10 to 2005-02-07
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: 2004 Season End — Pre-Exit Snapshot
+  summary: Philadelphia went 13-3, lost Super Bowl XXXIX.
+  results:
+  - Super Bowl appearance on his résumé.
+- turn: 74
+  date_range: 2005-03-02 to 2005-11-27
+  team: University of Memphis
+  role: Defensive Backs Coach
+  phase: 2005 Season End — Pre-Exit Snapshot
+  summary: Memphis went 5-6. Stone learned defense. West fired.
+  results:
+  - Gained functional defensive knowledge.
+- turn: 84
+  date_range: 2006-01-11 to 2006-11-26
+  team: University of Memphis
+  role: Head Coach
+  phase: 2006 Season End — Pre-Exit Snapshot
+  summary: Memphis went 4-8 in Year 1.
+  results:
+  - Cultural improvement without wins.
+- turn: 94
+  date_range: 2007-01-16 to 2007-11-25
+  team: University of Memphis
+  role: Head Coach
+  phase: 2007 Season End — Pre-Exit Snapshot
+  summary: Memphis went 7-5 in Year 2 — a three-win improvement.
+  results:
+  - Bowl eligibility earned. Institutional trust rebuilt.
+- turn: 96
+  date_range: 2007-11-25 to 2008-01-16
+  team: University of Memphis
+  role: Head Coach
+  phase: Offseason — 2008 Cycle Start
+  summary: Stone enters Year 3 with momentum. Contract renegotiated to $500,000. Extension conversations emerging. Stone's recruits now form the roster core.
+  results:
+  - Salary raised from $450,000 to $500,000.
+  - Staff retained for Year 3.
+  - Program positioned to compete for Conference USA titles.

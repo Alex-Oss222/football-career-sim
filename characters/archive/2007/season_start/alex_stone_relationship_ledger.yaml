@@ -1,0 +1,73 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2007-01-16'
+  career_turn: 86
+  sim_phase: Offseason — 2007 Cycle Start
+  archive_note: 2007 season_start snapshot
+relationships:
+- name: Don Coryell
+  role: Former HC, Chargers
+  score: 80
+  previous_score: 80
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  delta: 0
+- name: Bobby Ross
+  role: Former HC, Chargers
+  score: 75
+  previous_score: 75
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  delta: 0
+- name: University of Miami Connections
+  role: College network
+  score: 63
+  previous_score: 63
+  delta_this_turn: 0
+  trend: stable
+  status: active_college_network
+  delta: 0
+- name: Andy Reid
+  role: Head Coach, Philadelphia Eagles
+  score: 86
+  previous_score: 86
+  delta_this_turn: 0
+  trend: stable
+  status: strong_external_reference
+  delta: 0
+- name: Rod Dowhower
+  role: Former Offensive Coordinator
+  score: 95
+  previous_score: 95
+  delta_this_turn: 0
+  trend: stable
+  status: former_mentor
+  delta: 0
+- name: Brad Childress
+  role: Head Coach, Minnesota Vikings
+  score: 83
+  previous_score: 83
+  delta_this_turn: 0
+  trend: stable
+  status: external_reference
+  delta: 0
+- name: Memphis Administration
+  role: University administration
+  score: 55
+  previous_score: 55
+  delta_this_turn: 0
+  trend: stable
+  status: patient_but_watching
+  delta: 0
+- name: Memphis Staff
+  role: Coaching staff
+  score: 60
+  previous_score: 60
+  delta_this_turn: 0
+  trend: stable
+  status: year_two_trust
+  delta: 0
+relationship_events: []

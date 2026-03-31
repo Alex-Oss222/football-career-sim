@@ -1,0 +1,96 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2012-01-09'
+  career_turn: 134
+  sim_phase: 2011 Season End — Unresolved
+  archive_note: 2011 season_end placeholder — career history frozen at 2011 season_start pending sim resolution
+career_history:
+- turn: 12
+  date_range: 2000-01-03 to 2000-01-14
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Season End — Exit Meetings / Offseason Evaluation
+  summary: Retained for 2000 as QC at $40,000.
+  results:
+  - Strong endorsement from Reid and Dowhower.
+- turn: 36
+  date_range: 2002-01-28 to 2002-02-05
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: Offseason — Internal Promotion / 2002 Cycle Start
+  summary: Promoted internally to Tight Ends Coach at $140,000.
+  results:
+  - Inherited his first NFL room.
+- turn: 64
+  date_range: 2004-02-10 to 2005-02-07
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: 2004 Season End — Pre-Exit Snapshot
+  summary: Philadelphia went 13-3, lost Super Bowl XXXIX.
+  results:
+  - Super Bowl appearance on his résumé.
+- turn: 74
+  date_range: 2005-03-02 to 2005-11-27
+  team: University of Memphis
+  role: Defensive Backs Coach
+  phase: 2005 Season End — Pre-Exit Snapshot
+  summary: Memphis went 5-6. Stone learned defense.
+  results:
+  - Gained functional defensive knowledge.
+- turn: 84
+  date_range: 2006-01-11 to 2006-11-26
+  team: University of Memphis
+  role: Head Coach
+  phase: 2006 Season End — Pre-Exit Snapshot
+  summary: Memphis went 4-8 in Year 1.
+  results:
+  - Cultural improvement without wins.
+- turn: 94
+  date_range: 2007-01-16 to 2007-11-25
+  team: University of Memphis
+  role: Head Coach
+  phase: 2007 Season End — Pre-Exit Snapshot
+  summary: Memphis went 7-5 in Year 2. Bowl eligible.
+  results:
+  - Three-win improvement.
+- turn: 104
+  date_range: 2008-01-16 to 2008-12-29
+  team: University of Memphis
+  role: Head Coach
+  phase: 2008 Season End — Pre-Exit Snapshot
+  summary: Memphis went 9-4. Conference USA East Division title. Three-year HC record 20-17.
+  results:
+  - Best season in recent Memphis history.
+- turn: 114
+  date_range: 2009-02-11 to 2010-01-18
+  team: San Diego Chargers
+  role: Passing Game Coordinator
+  phase: 2009 Season End — Pre-Exit Snapshot
+  summary: San Diego went 13-3, lost Divisional Round.
+  results:
+  - Contributed to a top-tier NFL passing offense.
+- turn: 124
+  date_range: 2010-02-09 to 2011-01-03
+  team: San Diego Chargers
+  role: Passing Game Coordinator
+  phase: 2010 Season End — Pre-Exit Snapshot
+  summary: San Diego went 9-7, missed playoffs. Contract expired.
+  results:
+  - Dual-system mastery complete. OC candidacy active.
+- turn: 126
+  date_range: 2011-01-03 to 2011-01-11
+  team: None (free agent coach)
+  role: OC Candidate
+  phase: Offseason — 2011 Job Cycle Active
+  summary: Stone entered the 2011 OC hiring cycle as a free agent coach.
+  results:
+  - Active in the OC market with the strongest résumé of his career.
+- turn: 134
+  date_range: 2011-01-11 to 2012-01-09
+  team: Unresolved
+  role: Unresolved
+  phase: 2011 Season End — Unresolved
+  summary: PLACEHOLDER — The 2011 job cycle, season, and exit bubble are all unresolved. This entry exists as a structural placeholder for sim continuation.
+  results:
+  - Unresolved — 2011 season not yet played.

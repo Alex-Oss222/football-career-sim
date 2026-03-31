@@ -1,0 +1,99 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2006-11-26'
+  career_turn: 84
+  sim_phase: 2006 Season End — Pre-Exit Snapshot
+  archive_note: 2006 season_end snapshot
+relationships:
+- name: Don Coryell
+  role: Former HC, Chargers
+  score: 80
+  previous_score: 80
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  delta: 0
+- name: Bobby Ross
+  role: Former HC, Chargers
+  score: 75
+  previous_score: 75
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  delta: 0
+- name: University of Miami Connections
+  role: College network
+  score: 63
+  previous_score: 62
+  delta_this_turn: 1
+  trend: rising
+  status: active_college_network
+  notes:
+  - Recruiting activity continued to strengthen college network ties.
+  delta: 1
+- name: Andy Reid
+  role: Head Coach, Philadelphia Eagles
+  score: 86
+  previous_score: 87
+  delta_this_turn: -1
+  trend: cooling
+  status: strong_external_reference
+  delta: -1
+- name: Rod Dowhower
+  role: Former Offensive Coordinator
+  score: 95
+  previous_score: 96
+  delta_this_turn: -1
+  trend: cooling
+  status: former_mentor_scheme_consultant
+  notes:
+  - Provided periodic offensive consulting during Year 1. Natural distance decay continues.
+  delta: -1
+- name: Brad Childress
+  role: Head Coach, Minnesota Vikings
+  score: 83
+  previous_score: 84
+  delta_this_turn: -1
+  trend: cooling
+  status: external_reference
+  notes:
+  - Childress left Philadelphia after 2005 to become Vikings HC. Relationship stays strong but distant.
+  delta: -1
+- name: Memphis Administration
+  role: University administration
+  score: 55
+  previous_score: 58
+  delta_this_turn: -3
+  trend: cooling
+  status: patient_but_watching
+  notes:
+  - The 4-8 record eroded some initial goodwill. Year 2 must show tangible improvement.
+  delta: -3
+- name: Memphis Staff
+  role: Coaching staff
+  score: 60
+  previous_score: 50
+  delta_this_turn: 10
+  trend: rising
+  status: first_year_trust_built
+  notes:
+  - A full season together built working trust. Staff retained for Year 2.
+  delta: 10
+relationship_events:
+- turn: 84
+  date: '2006-11-25'
+  event: Memphis finished 4-8 in Stone's first year as HC. The record was expected but institutional patience is finite.
+  effects:
+  - name: Memphis Administration
+    delta: -3
+    note: Losing record eroded some initial goodwill despite expected rebuilding timeline.
+  - name: Memphis Staff
+    delta: 10
+    note: A full season together built genuine working trust.
+  - name: Andy Reid
+    delta: -1
+    note: Natural distance decay.
+  - name: Rod Dowhower
+    delta: -1
+    note: Natural distance decay despite periodic consulting.

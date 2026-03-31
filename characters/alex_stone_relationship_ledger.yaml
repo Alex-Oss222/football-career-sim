@@ -1,0 +1,108 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2011-01-11'
+  career_turn: 126
+  sim_phase: Offseason — 2011 Job Cycle Active
+  archive_note: 2011 season_start snapshot
+relationships:
+- name: Don Coryell
+  role: Former HC, Chargers
+  score: 80
+  previous_score: 80
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  delta: 0
+- name: Bobby Ross
+  role: Former HC, Chargers
+  score: 75
+  previous_score: 75
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  delta: 0
+- name: Andy Reid
+  role: Head Coach, Philadelphia Eagles
+  score: 83
+  previous_score: 83
+  delta_this_turn: 0
+  trend: stable
+  status: strong_external_reference
+  notes:
+  - Reid remains a powerful reference for OC interviews.
+  delta: 0
+- name: Rod Dowhower
+  role: Former Offensive Coordinator
+  score: 90
+  previous_score: 90
+  delta_this_turn: 0
+  trend: stable
+  status: former_mentor
+  notes:
+  - Primary coaching reference for OC candidacy.
+  delta: 0
+- name: Norv Turner
+  role: Head Coach, San Diego Chargers
+  score: 72
+  previous_score: 72
+  delta_this_turn: 0
+  trend: stable
+  status: endorsement_ready
+  notes:
+  - Most recent HC; endorsement-level trust for OC candidacy.
+  delta: 0
+- name: Pat Shurmur
+  role: NFL assistant (HC candidate, Cleveland Browns)
+  score: 73
+  previous_score: 73
+  delta_this_turn: 0
+  trend: stable
+  status: long_term_colleague
+  notes:
+  - Shurmur is in the HC hiring cycle himself (hired as Browns HC in 2011). Long-term colleague and mutual reference.
+  delta: 0
+- name: Antonio Gates
+  role: Tight End, San Diego Chargers
+  score: 68
+  previous_score: 68
+  delta_this_turn: 0
+  trend: stable
+  status: strong_player_reference
+  delta: 0
+- name: Philip Rivers
+  role: Quarterback, San Diego Chargers
+  score: 60
+  previous_score: 60
+  delta_this_turn: 0
+  trend: stable
+  status: player_reference
+  delta: 0
+- name: Brad Childress
+  role: Former HC, Minnesota Vikings (fired 2010)
+  score: 78
+  previous_score: 78
+  delta_this_turn: 0
+  trend: stable
+  status: external_reference
+  notes:
+  - Childress was fired from the Vikings midseason in 2010. Still a reference from the Eagles years.
+  delta: 0
+- name: Memphis Administration
+  role: University administration
+  score: 60
+  previous_score: 65
+  delta_this_turn: -5
+  trend: cooling
+  status: former_employer
+  notes:
+  - Further distance decay. Good terms but increasingly distant.
+  delta: -5
+relationship_events:
+- turn: 125
+  date: '2011-01-05'
+  event: Stone entered the 2011 OC hiring cycle as a free agent coach with an active candidacy.
+  effects:
+  - name: Memphis Administration
+    delta: -5
+    note: Continued distance decay from former employer.

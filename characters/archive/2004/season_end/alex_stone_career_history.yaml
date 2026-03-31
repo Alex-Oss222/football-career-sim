@@ -1,0 +1,117 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2005-02-07'
+  career_turn: 64
+  sim_phase: 2004 Season End — Pre-Exit Snapshot
+  archive_note: 2004 season_end snapshot
+career_history:
+- turn: 12
+  date_range: 2000-01-03 to 2000-01-14
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Season End — Exit Meetings / Offseason Evaluation
+  summary: Retained for 2000 as QC at $40,000 after strong year-one evaluation.
+  results:
+  - Strong endorsement from Reid and Dowhower.
+- turn: 29
+  date_range: 2001-01-20 to 2001-01-23
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Offseason — 2001 Cycle Start
+  summary: Re-signed on a two-year deal at $50,000.
+  results:
+  - Chose continuity over the lateral market.
+- turn: 36
+  date_range: 2002-01-28 to 2002-02-05
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: Offseason — Internal Promotion / 2002 Cycle Start
+  summary: Promoted internally to Tight Ends Coach at $140,000.
+  results:
+  - Inherited his first NFL room.
+- turn: 46
+  date_range: 2003-01-20 to 2003-02-11
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: Offseason — 2003 Cycle Start
+  summary: Re-signed on a two-year deal at $175,000 after strong Year 1 evaluation.
+  results:
+  - Secured multi-year stability at the position-coach level.
+- turn: 54
+  date_range: 2003-02-11 to 2004-01-19
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: 2003 Season End — Pre-Exit Snapshot
+  summary: Philadelphia went 12-4, lost NFC Championship to Carolina. Stronger Year 2 with deeper room command.
+  results:
+  - Deepened coaching identity. Early coordinator-track conversations emerged.
+- turn: 64
+  date_range: 2004-02-10 to 2005-02-07
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: 2004 Season End — Pre-Exit Snapshot
+  summary: Philadelphia went 13-3, won the NFC Championship over Atlanta, and lost Super Bowl XXXIX to New England 24-21. Stone completed Year 3 as TE coach and his sixth year in the Eagles building. The T.O. drama dominated the season's narrative, but Stone's room stayed clean and functional throughout. His contract expired at season's end.
+  results:
+  - Super Bowl appearance on his coaching résumé.
+  - Three years of steady improvement as a room owner on a perennial contender.
+  - Earned coordinator-level trust from the offensive staff.
+  - Contract expired; career inflection point reached.
+  state_changes:
+    stress:
+      from: 60
+      to: 85
+    job_security:
+      from: 95
+      to: 96
+    tactical_knowledge:
+      from: 69
+      to: 71
+    teaching:
+      from: 71
+      to: 73
+    leadership:
+      from: 67
+      to: 69
+    recruiting:
+      from: 58
+      to: 60
+    man_management:
+      from: 67
+      to: 69
+    motivation:
+      from: 66
+      to: 68
+    scheme_design:
+      from: 64
+      to: 66
+    player_evaluation:
+      from: 63
+      to: 65
+    development_expertise:
+      from: 71
+      to: 73
+    investigation_detail:
+      from: 56
+      to: 60
+    combine_eval:
+      from: 60
+      to: 64
+    andy_reid:
+      from: 90
+      to: 91
+    brad_childress:
+      from: 86
+      to: 88
+    pat_shurmur:
+      from: 82
+      to: 83
+    juan_castillo:
+      from: 75
+      to: 77
+  evaluation_patch:
+    likely_score: 86
+    trajectory: Rising
+    scheme_mastery: 93
+    promotion_readiness: Ready for expanded NFL role or college coordinator/HC opportunity
+    risk_flag: Contract expiration and career inflection point

@@ -1,0 +1,148 @@
+mode: COACHING
+tape: MODE B (engine-generated; archived snapshot)
+identity:
+  name: Alex-Lamar Stone
+  age: 39
+  current_role: University of Memphis — Head Coach
+  previous_role: University of Memphis — Head Coach
+  level: 3
+  level_label: Head Coach (College)
+timeline:
+  career_turn: 86
+  season_turn: 1
+  phase: Offseason — 2007 Cycle Start
+  previous_phase: Offseason — 2007 Evaluation Resolved
+  last_resolved_date: '2007-01-15'
+  date: '2007-01-16'
+  next_event: 2007 recruiting cycle and spring practice
+  calendar_frozen: false
+  resume_anchor:
+    exact_pickup_date: '2007-01-16'
+    reason: Stone enters Year 2 as Memphis HC after a 4-8 debut. Year 2 must show tangible improvement.
+calendar_state:
+  calendar_file: teams/memphis/2007/memphis_calendar_2007.yaml
+  previous_node: season_end_2006
+  current_node: offseason_2007_cycle_start
+  current_week_label: 2007 Offseason Cycle Start
+  next_node: null
+  continuation_note: Year 2 of the rebuild. The first recruiting class is arriving and the roster should be stronger.
+record:
+  regular_season_record: 4-8
+  postseason_record: N/A
+  division_finish: Lower half Conference USA
+  playoffs: Not eligible
+  team: University of Memphis
+  team_ovr: N/A
+  note: Previous year record.
+job_status:
+  job_security: 68
+  stress: 82
+  contract:
+    status: Active
+    team: University of Memphis
+    title: Head Coach
+    term_years: 4
+    cycle: 2006-2009
+    salary: 450000
+    accepted: true
+    note: Year 2 of 4. Must show tangible improvement or institutional patience will thin further.
+  applications_active: 0
+  offers_pending: 0
+  retention_status: Under contract; Year 2 is a proving year
+offseason_status:
+  time_bubble_active: false
+  bubble_stage: Resolved
+  era_ruleset: NCAA_2000
+  evaluation_score: 65
+  trajectory: Building
+  scheme_mastery: 60
+  trust_position_direct_evaluator: 55
+  promotion_readiness: N/A
+  risk_flag: Must win more games in Year 2
+  club_decision: Under contract
+  outside_interest: None
+  transition_pending: false
+coaching_attributes:
+  cap: 82
+  core:
+    TAC: 60
+    TCH: 64
+    LDR: 74
+    REC: 68
+    MAN: 74
+    MOT: 73
+  scheme:
+    SDN: 52
+    GMG: 54
+    PEV: 55
+    MED: 57
+    STF: 62
+    ADM: 73
+  advanced:
+    DEV: 64
+    INV: 64
+    CNT: 52
+    CMB: 67
+    TRD: 48
+  traits:
+    Disciplinarian: 30
+    Players_Coach: 36
+    Innovator: 32
+    Traditionalist: 18
+finances:
+  net_worth: 10100000
+  annual_expenses: 540000
+  salary: 450000
+  financial_pressure: None
+team_context:
+  team: University of Memphis
+  head_coach: Alex-Lamar Stone
+  offensive_coordinator: Staff retained
+  defensive_coordinator: Staff retained
+  role_context_note: Year 2 with the same staff. The first recruiting class is arriving. Roster should be stronger.
+room_context:
+  room: Full Program
+  room_status: The program is transitioning from rebuild to competition. Stone's recruits are arriving and the scheme installation is more mature.
+relationships:
+  Don_Coryell:
+    score: 80
+    status: Strong reference; stable
+  Bobby_Ross:
+    score: 75
+    status: Strong reference; stable
+  University_of_Miami_Connections:
+    score: 63
+    status: Active college network
+  Andy_Reid:
+    score: 86
+    status: Strong external reference
+  Rod_Dowhower:
+    score: 95
+    status: Former mentor
+  Brad_Childress:
+    score: 83
+    status: External reference; now Minnesota Vikings HC
+  Memphis_Administration:
+    score: 55
+    status: Patient but watching closely
+  Memphis_Staff:
+    score: 60
+    status: Year 2 together; working trust established
+personal_development:
+  system_familiarity:
+    system: Stone's adapted WCO / DC-managed defense
+    time_in_system_completed: One year of HC play-calling completed
+    status: The offense should be more fluid in Year 2. Stone's play-calling is still developing but he has a year of live reps.
+  what_hes_building:
+  - More confident and decisive play-calling
+  - Better in-game adjustments
+  - Deeper recruiting relationships
+  - Program identity that translates to wins
+active_consequences:
+- Year 2 is the proving year. A significant win improvement is expected.
+- The first recruiting class gives Stone better talent to work with.
+- If the team reaches bowl eligibility (6 wins), it validates the rebuild timeline.
+last_3_turns_summary:
+- 'Turn 82: Memphis lost close games in the stretch run.'
+- 'Turn 83: Season ended at 4-8.'
+- 'Turn 84: Offseason evaluation focused on Year 1 lessons and Year 2 preparation.'

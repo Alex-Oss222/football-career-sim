@@ -1,0 +1,167 @@
+mode: COACHING
+tape: MODE B (engine-generated; archived snapshot)
+identity:
+  name: Alex-Lamar Stone
+  age: 42
+  current_role: San Diego Chargers — Passing Game Coordinator
+  previous_role: San Diego Chargers — Passing Game Coordinator
+  level: 2
+  level_label: Coordinator
+timeline:
+  career_turn: 114
+  season_turn: 9
+  phase: Season End — Exit Meetings / Offseason Evaluation
+  previous_phase: Playoffs — Divisional Round
+  last_resolved_date: '2010-01-17'
+  date: '2010-01-18'
+  next_event: 2009 season exit meetings and internal evaluation
+  calendar_frozen: true
+  resume_anchor:
+    exact_pickup_date: '2010-01-18'
+    reason: Snapshot captured after the Chargers' Divisional Round playoff loss. Stone completed Year 1 as Passing Game Coordinator on a 13-3 team.
+calendar_state:
+  calendar_file: teams/san_diego_chargers/2009/san_diego_chargers_calendar_2009.yaml
+  previous_node: playoff_divisional
+  current_node: season_end
+  current_week_label: 2009 Season End / Exit Meetings
+  next_node: null
+  continuation_note: The 2009 season is complete. Stone has one year remaining on his deal.
+record:
+  regular_season_record: 13-3
+  postseason_record: 0-1
+  division_finish: 1st AFC West
+  playoff_seed: AFC No. 2
+  playoffs: Eliminated — Divisional Round
+  team: San Diego Chargers
+  team_ovr: N/A
+job_status:
+  job_security: 82
+  stress: 76
+  contract:
+    status: Active
+    team: San Diego Chargers
+    title: Passing Game Coordinator
+    term_years: 2
+    cycle: 2009-2010
+    salary: 300000
+    accepted: true
+    note: Year 1 of 2 completed. Strong regular-season contribution; playoff loss was not attributed to the passing game.
+  applications_active: 0
+  offers_pending: 0
+  retention_status: Under contract for 2010
+  evaluation_projection:
+    likely_score: 80
+    trajectory: Rising
+    scheme_mastery: 68
+    promotion_readiness: Emerging OC candidate within 1-2 years
+    risk_flag: None — strong Year 1 contribution
+offseason_status:
+  time_bubble_active: true
+  bubble_stage: Season Close
+  era_ruleset: NFL_2000
+  evaluation_score: Pending
+  trajectory: Rising
+  club_decision: Under contract
+  outside_interest: Quiet — OC-level whispers emerging
+  transition_pending: false
+coaching_attributes:
+  cap: 86
+  core:
+    TAC: 70
+    TCH: 72
+    LDR: 79
+    REC: 66
+    MAN: 79
+    MOT: 78
+  scheme:
+    SDN: 66
+    GMG: 67
+    PEV: 67
+    MED: 64
+    STF: 70
+    ADM: 76
+  advanced:
+    DEV: 72
+    INV: 70
+    CNT: 58
+    CMB: 72
+    TRD: 54
+  traits:
+    Disciplinarian: 30
+    Players_Coach: 40
+    Innovator: 38
+    Traditionalist: 16
+finances:
+  net_worth: 11350000
+  annual_expenses: 580000
+  salary: 300000
+  financial_pressure: None
+team_context:
+  team: San Diego Chargers
+  head_coach: Norv Turner
+  role_context_note: Stone completed Year 1 on a 13-3 team with one of the NFL's most talented offenses. He worked directly with Rivers, Gates, and Jackson, designing passing concepts within Turner's Coryell framework.
+room_context:
+  room: Passing Game (Coordinator role)
+  room_summary: The passing game was among the NFL's most productive. Stone's concept design, route distribution, and TE/WR coordination contributed to the unit's success. Working with Antonio Gates gave Stone the elite TE coaching experience he never had in Philadelphia.
+  what_stone_contributed:
+  - Passing concept design and route distribution within Turner's Coryell framework
+  - TE/WR route combination coordination and spacing
+  - Third-down, red-zone, and two-minute passing packages
+  - Bridge between Reid WCO timing concepts and Turner's vertical Coryell concepts
+  - Direct work with Antonio Gates on route stems, leverage, and option-route detail
+  what_he_learned:
+  - Coryell vertical passing concepts — deep crossers, seam stretches, vertical option routes
+  - Play-action design off a power run game versus Reid's play-action off zone runs
+  - How Turner's aggressive, risk-taking offense operates versus Reid's controlled WCO
+  - Turner's philosophy, meeting structure, game-plan process, and in-game adjustments
+  - How elite NFL talent (Rivers, Gates, Jackson) operates within a vertical scheme
+relationships:
+  Don_Coryell:
+    score: 80
+    status: Strong reference; the Chargers return carries legacy weight
+  Bobby_Ross:
+    score: 75
+    status: Strong reference; stable
+  Andy_Reid:
+    score: 84
+    status: Strong external reference
+  Rod_Dowhower:
+    score: 91
+    status: Former mentor
+  Norv_Turner:
+    score: 68
+    status: Growing professional trust; Turner saw Stone contribute meaningfully to the passing game
+  Chargers_Offensive_Staff:
+    score: 60
+    status: Working trust established after a successful first season together
+  Antonio_Gates:
+    score: 62
+    status: Player-coach relationship built on shared positional expertise and mutual respect
+  Philip_Rivers:
+    score: 55
+    status: Professional respect; Rivers saw Stone's passing concept contributions
+personal_development:
+  system_familiarity:
+    system: Turner Coryell vertical passing offense
+    time_in_system_completed: One year completed
+    status: Stone now has functional mastery of both Reid's WCO timing concepts and Turner's Coryell vertical concepts. His eventual OC playbook will be dramatically more complete because of this dual exposure.
+  what_he_handled_well:
+  - Adapted quickly to the Coryell vertical concepts he played in but had never coached
+  - Designed creative passing concepts that blended Reid WCO timing with Coryell vertical principles
+  - Worked effectively with elite NFL talent after four years coaching college players
+  - Earned Turner's trust through quality work and appropriate deference
+  - Built a productive working relationship with Antonio Gates
+  what_stretched_him:
+  - Re-acclimating to NFL speed, talent, and game-planning after four years in college
+  - Working under a HC who calls his own plays — Stone designs concepts but does not control when they are called
+  - The playoff loss was frustrating and exposed areas where the passing game coordination could have been sharper
+  - Managing the ego adjustment from being a college HC with full authority to a coordinator under someone else
+active_consequences:
+- Stone now has dual-system exposure (Reid WCO + Turner Coryell) that makes his eventual OC playbook uniquely complete.
+- His Year 1 contribution to a 13-3 team validates his NFL coordinator-level ability.
+- OC-level whispers are emerging in coaching circles — his full résumé (HOF player, Eagles Super Bowl staff, Memphis HC, Chargers coordinator) is attracting attention.
+- Year 2 with the Chargers will either lead to an OC promotion somewhere or deepen his coordinator résumé for 2011.
+last_3_turns_summary:
+- 'Turn 112: The Chargers clinched the AFC West title and the No. 2 seed.'
+- 'Turn 113: San Diego lost in the Divisional Round despite a dominant regular season.'
+- 'Turn 114: Stone exits Year 1 as PGC with strong internal reviews and emerging external interest.'

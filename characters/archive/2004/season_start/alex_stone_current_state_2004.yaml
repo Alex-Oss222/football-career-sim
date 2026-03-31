@@ -1,0 +1,164 @@
+mode: COACHING
+tape: MODE B (engine-generated; archived snapshot)
+identity:
+  name: Alex-Lamar Stone
+  age: 36
+  current_role: Philadelphia Eagles — Tight Ends Coach
+  previous_role: Philadelphia Eagles — Tight Ends Coach
+  level: 1
+  level_label: Position Coach
+timeline:
+  career_turn: 56
+  season_turn: 1
+  phase: Offseason — 2004 Cycle Start
+  previous_phase: Offseason — 2004 Job Cycle Resolved
+  last_resolved_date: '2004-02-09'
+  date: '2004-02-10'
+  next_event: 2004 offseason planning begins; T.O. acquisition reshapes the offensive skill landscape
+  calendar_frozen: false
+  resume_anchor:
+    exact_pickup_date: '2004-02-10'
+    reason: Stone enters Year 3 as TE coach under the second year of his existing deal. The Eagles are retooling for another Super Bowl push.
+calendar_state:
+  calendar_file: teams/philadelphia_eagles/2004/philadelphia_eagles_calendar_2004.yaml
+  previous_node: season_end_2003
+  current_node: offseason_2004_cycle_start
+  current_week_label: 2004 Offseason Cycle Start
+  next_node: null
+  continuation_note: Stone enters 2004 under contract. No job cycle needed.
+record:
+  regular_season_record: 12-4
+  postseason_record: 1-1
+  division_finish: 1st NFC East
+  playoff_seed: NFC No. 1
+  playoffs: Eliminated — NFC Championship
+  team: Philadelphia Eagles
+  team_ovr: N/A
+job_status:
+  job_security: 95
+  stress: 60
+  contract:
+    status: Active
+    team: Philadelphia Eagles
+    title: Tight Ends Coach
+    term_years: 2
+    cycle: 2003-2004
+    salary: 175000
+    accepted: true
+    note: Year 2 of the two-year deal. Contract expires after 2004.
+  applications_active: 0
+  offers_pending: 0
+  retention_status: Under contract for 2004
+offseason_status:
+  time_bubble_active: false
+  bubble_stage: Resolved
+  era_ruleset: NFL_2000
+  evaluation_score: 84
+  trajectory: Rising
+  scheme_mastery: 91
+  trust_position_direct_evaluator: 90
+  promotion_readiness: Strong Level 1 coach; coordinator conversations emerging
+  risk_flag: None
+  club_decision: Under contract
+  outside_interest: Quiet
+  interview_access: Not pursued
+  transition_pending: false
+coaching_attributes:
+  cap: 78
+  core:
+    TAC: 69
+    TCH: 71
+    LDR: 67
+    REC: 58
+    MAN: 67
+    MOT: 66
+  scheme:
+    SDN: 64
+    GMG: 62
+    PEV: 63
+    MED: 47
+    STF: 62
+    ADM: 65
+  advanced:
+    DEV: 71
+    INV: 58
+    CNT: 43
+    CMB: 62
+    TRD: 40
+  traits:
+    Disciplinarian: 22
+    Players_Coach: 37
+    Innovator: 26
+    Traditionalist: 20
+finances:
+  net_worth: 9600000
+  annual_expenses: 530000
+  salary: 175000
+  financial_pressure: None
+team_context:
+  team: Philadelphia Eagles
+  head_coach: Andy Reid
+  offensive_coordinator: Brad Childress
+  quarterbacks_coach: Pat Shurmur
+  offensive_line_coach: Juan Castillo
+  role_context_note: The Terrell Owens acquisition reshapes the offensive skill landscape. The TE room's role in the passing game may shift as T.O. demands targets.
+room_context:
+  room: Tight Ends
+  room_status: The TE room remains stable, but the T.O. acquisition changes how targets distribute. Stone must keep his room productive and integrated even as the WR room becomes the primary weapon.
+  what_stone_owns_now:
+  - Full TE room ownership entering Year 3
+  - All technique, development, and weekly correction responsibilities
+  - Run-game integration with OL
+  - Passing-game detail including red-zone and third-down TE packages
+  what_he_still_shares:
+  - QB timing with Shurmur and Childress
+  - Protection structure
+  - Offensive self-scout
+relationships:
+  Don_Coryell:
+    score: 80
+    status: Strong reference; stable
+  Bobby_Ross:
+    score: 75
+    status: Strong reference; stable
+  Chargers_Position_Coaches:
+    score: 65
+    status: Moderate network support
+  University_of_Miami_Connections:
+    score: 55
+    status: Dormant college network
+  Andy_Reid:
+    score: 90
+    status: Strong internal trust
+  Rod_Dowhower:
+    score: 97
+    status: Former mentor and durable external reference
+  Brad_Childress:
+    score: 86
+    status: Strong OC trust
+  Pat_Shurmur:
+    score: 82
+    status: Trusted internal ally
+  David_Culley:
+    score: 67
+    status: Stable cross-room relationship
+  Juan_Castillo:
+    score: 75
+    status: Important structural ally
+personal_development:
+  system_familiarity:
+    system: Reid West Coast offense
+    time_in_system_completed: Five years completed; entering sixth
+    status: Deep mastery. Stone is beginning to think about the offense at a coordination level, not just a room level.
+  what_hes_building:
+  - Coordination-level thinking about how the TE room fits the broader offensive structure
+  - Ability to adapt room teaching when offensive priorities shift around a new weapon
+  - Longer developmental arcs for younger TEs
+active_consequences:
+- Stone is in the final year of his contract and his third year owning the TE room.
+- The T.O. acquisition will test whether Stone can keep his room productive when the offensive spotlight moves elsewhere.
+- Coordinator-track conversations are emerging but nothing formal exists yet.
+last_3_turns_summary:
+- 'Turn 52: Stone''s room command deepened through the stretch run.'
+- 'Turn 53: Philadelphia earned the NFC No. 1 seed again.'
+- 'Turn 54: The Eagles lost the NFC Championship to Carolina; Year 2 ended stronger than Year 1.'

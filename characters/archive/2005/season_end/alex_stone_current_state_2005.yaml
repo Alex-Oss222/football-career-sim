@@ -1,0 +1,174 @@
+mode: COACHING
+tape: MODE B (engine-generated; archived snapshot)
+identity:
+  name: Alex-Lamar Stone
+  age: 38
+  current_role: University of Memphis — Defensive Backs Coach
+  previous_role: University of Memphis — Defensive Backs Coach
+  level: 1
+  level_label: Position Coach (College)
+timeline:
+  career_turn: 74
+  season_turn: 9
+  phase: Season End — Exit Meetings / Offseason Evaluation
+  previous_phase: Regular Season — Final Week
+  last_resolved_date: '2005-11-26'
+  date: '2005-11-27'
+  next_event: Season-end evaluation and HC search — Tommy West fired
+  calendar_frozen: true
+  resume_anchor:
+    exact_pickup_date: '2005-11-27'
+    reason: Snapshot captured after the 2005 season concluded and Tommy West was fired. HC search underway.
+calendar_state:
+  calendar_file: teams/memphis/2005/memphis_calendar_2005.yaml
+  previous_node: reg_wk12
+  current_node: season_end
+  current_week_label: 2005 Season End
+  next_node: null
+  continuation_note: Tommy West has been fired. The HC search creates a potential opening for Stone.
+record:
+  regular_season_record: 5-6
+  postseason_record: N/A
+  division_finish: Mid-table Conference USA
+  playoffs: Not eligible
+  team: University of Memphis
+  team_ovr: N/A
+job_status:
+  job_security: 70
+  stress: 80
+  contract:
+    status: Expiring
+    team: University of Memphis
+    title: Defensive Backs Coach
+    term_years: 1
+    cycle: 2005
+    salary: 95000
+    accepted: true
+    note: Contract expires with the coaching change. Stone's future depends on the HC search outcome.
+  applications_active: 1
+  offers_pending: 0
+  retention_status: Dependent on new HC hire — unless Stone is the new HC
+  evaluation_projection:
+    likely_score: 72
+    trajectory: Learning
+    scheme_mastery: 48
+    promotion_readiness: HC candidate if the institution values his full résumé over his one-year defensive record
+    risk_flag: One-year defensive coach with a losing season record
+offseason_status:
+  time_bubble_active: true
+  bubble_stage: Season Close / HC Search
+  era_ruleset: NCAA_2000
+  evaluation_score: Pending
+  trajectory: Pending
+  scheme_mastery: Pending
+  trust_position_direct_evaluator: Pending
+  promotion_readiness: HC candidate
+  risk_flag: Thin defensive résumé
+  club_decision: Pending — HC search
+  outside_interest: Internal HC candidacy
+  interview_access: Open
+  transition_pending: true
+coaching_attributes:
+  cap: 80
+  core:
+    TAC: 56
+    TCH: 62
+    LDR: 71
+    REC: 64
+    MAN: 71
+    MOT: 70
+  scheme:
+    SDN: 42
+    GMG: 46
+    PEV: 50
+    MED: 52
+    STF: 55
+    ADM: 69
+  advanced:
+    DEV: 60
+    INV: 62
+    CNT: 48
+    CMB: 66
+    TRD: 44
+  traits:
+    Disciplinarian: 26
+    Players_Coach: 38
+    Innovator: 28
+    Traditionalist: 20
+finances:
+  net_worth: 9850000
+  annual_expenses: 480000
+  salary: 95000
+  financial_pressure: None — net worth provides deep cushion
+team_context:
+  team: University of Memphis
+  head_coach: Tommy West (fired)
+  defensive_coordinator: TBD
+  role_context_note: Tommy West was fired after a 5-6 season. Stone is an internal HC candidate based on his full coaching résumé, not just his one year as a DB coach.
+room_context:
+  room: Defensive Backs
+  room_summary: Stone survived a year coaching the secondary at a losing program. His technique teaching improved but remained below NFL-caliber offensive coaching. The real value was learning how defense works from the inside.
+  what_stone_learned:
+  - Coverage structure and secondary communication
+  - How defensive game-planning works from the position-coach level
+  - College recruiting — evaluating high school talent, managing official visits, building relationships with high school coaches
+  - How a college program operates day-to-day versus an NFL franchise
+  - The gap between his offensive coaching mastery and his defensive coaching novice status
+relationships:
+  Don_Coryell:
+    score: 80
+    status: Strong reference; stable
+  Bobby_Ross:
+    score: 75
+    status: Strong reference; stable
+  Chargers_Position_Coaches:
+    score: 63
+    status: Moderate network support; slight decay
+  University_of_Miami_Connections:
+    score: 60
+    status: Active college network
+  Andy_Reid:
+    score: 88
+    status: Strong external reference
+  Rod_Dowhower:
+    score: 97
+    status: Former mentor and durable external reference
+  Brad_Childress:
+    score: 85
+    status: Strong external reference
+  Pat_Shurmur:
+    score: 80
+    status: External reference
+  Tommy_West:
+    score: 62
+    status: Fired HC; mutual professional respect despite the losing season
+  Memphis_Defensive_Staff:
+    score: 58
+    status: Colleagues who saw Stone grind through a hard learning year
+  Memphis_Administration:
+    score: 50
+    status: New relationship — Stone's HC candidacy depends on how the AD evaluates his full résumé
+personal_development:
+  system_familiarity:
+    system: Memphis defensive scheme
+    time_in_system_completed: One year completed
+    status: Stone has functional defensive knowledge now. He understands coverage structure, secondary technique, and how the defensive side of the ball game-plans. He is not a defensive expert, but he is no longer ignorant.
+  what_he_handled_well:
+  - Survived a losing season as a first-year defensive coach without ego problems
+  - Learned college recruiting basics and made genuine connections with high school coaches
+  - Earned respect from defensive colleagues by putting in the work instead of coasting on his NFL name
+  - Built a foundation of defensive knowledge that will serve him as a future HC
+  what_stretched_him:
+  - The losing season was personally difficult after six years on an NFL contender
+  - DB technique coaching was the hardest skill gap he has faced in his coaching career
+  - College recruiting demanded time and relational skills that NFL coaching did not
+  - Managing the ego adjustment from Super Bowl staff to 5-6 college program
+active_consequences:
+- Tommy West's firing creates a potential HC opening for Stone.
+- Stone's HC candidacy rests on his full résumé (HOF player, 6 years NFL coaching, Super Bowl staff) rather than his one-year defensive record.
+- The risk is that the administration hires an outside candidate and Stone is left without a job.
+- If hired as HC, Stone will need to build an entire staff and program from scratch at a mid-tier Conference USA school.
+last_3_turns_summary:
+- 'Turn 72: The secondary showed marginal improvement in coverage technique but the overall defensive record remained poor.'
+- 'Turn 73: Memphis limped to the finish at 5-6 with no bowl eligibility.'
+- 'Turn 74: Tommy West was fired. Stone''s name entered the HC search conversation based on his full career résumé.'

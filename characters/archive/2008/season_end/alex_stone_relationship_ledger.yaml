@@ -1,0 +1,117 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2008-12-29'
+  career_turn: 104
+  sim_phase: 2008 Season End — Pre-Exit Snapshot
+  archive_note: 2008 season_end snapshot
+relationships:
+- name: Don Coryell
+  role: Former HC, Chargers
+  score: 80
+  previous_score: 80
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  delta: 0
+- name: Bobby Ross
+  role: Former HC, Chargers
+  score: 75
+  previous_score: 75
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  delta: 0
+- name: University of Miami Connections
+  role: College network
+  score: 67
+  previous_score: 65
+  delta_this_turn: 2
+  trend: rising
+  status: strong_college_network
+  delta: 2
+- name: Andy Reid
+  role: Head Coach, Philadelphia Eagles
+  score: 85
+  previous_score: 85
+  delta_this_turn: 0
+  trend: stable
+  status: strong_external_reference
+  notes:
+  - Potential reconnection if Stone pursues NFL return.
+  delta: 0
+- name: Rod Dowhower
+  role: Former Offensive Coordinator
+  score: 93
+  previous_score: 94
+  delta_this_turn: -1
+  trend: cooling
+  status: former_mentor
+  notes:
+  - Proud of Stone's HC development. Natural distance decay.
+  delta: -1
+- name: Brad Childress
+  role: Head Coach, Minnesota Vikings
+  score: 81
+  previous_score: 82
+  delta_this_turn: -1
+  trend: cooling
+  status: external_reference
+  delta: -1
+- name: Memphis Administration
+  role: University administration
+  score: 80
+  previous_score: 68
+  delta_this_turn: 12
+  trend: rising
+  status: very_strong_trust
+  notes:
+  - Division title and 9-4 season cemented institutional trust. Extension offered. Worried about losing Stone to NFL.
+  delta: 12
+- name: Memphis Staff
+  role: Coaching staff
+  score: 78
+  previous_score: 70
+  delta_this_turn: 8
+  trend: rising
+  status: deep_loyalty
+  notes:
+  - Three years of shared success from 4-8 to 9-4 built deep loyalty.
+  delta: 8
+- name: Conference USA Network
+  role: Conference coaching circles
+  score: 55
+  previous_score: 45
+  delta_this_turn: 10
+  trend: rising
+  status: established
+  notes:
+  - Division title and winning record made Stone a respected name in the conference.
+  delta: 10
+- name: NFL Coaching Network
+  role: NFL coaching circles
+  score: 40
+  previous_score: N/A
+  delta_this_turn: N/A
+  trend: new
+  status: re_emerging
+  notes:
+  - Stone's Memphis success reactivated NFL circles' awareness of him as a coordinator candidate.
+  delta: 0
+relationship_events:
+- turn: 104
+  date: '2008-12-28'
+  event: Memphis finished 9-4 with a Conference USA East Division title in Stone's Year 3 as HC.
+  effects:
+  - name: Memphis Administration
+    delta: 12
+    note: Division title cemented trust. Extension offered.
+  - name: Memphis Staff
+    delta: 8
+    note: Three years of program-building success built deep staff loyalty.
+  - name: Conference USA Network
+    delta: 10
+    note: Division title elevated Stone's profile in conference coaching circles.
+  - name: University of Miami Connections
+    delta: 2
+    note: Continued recruiting success strengthened college network.

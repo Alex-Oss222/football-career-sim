@@ -1,0 +1,205 @@
+mode: COACHING
+tape: MODE B (engine-generated; archived snapshot)
+identity:
+  name: Alex-Lamar Stone
+  age: 34
+  current_role: Philadelphia Eagles — Tight Ends Coach
+  previous_role: Philadelphia Eagles — Offensive Quality Control
+  level: 1
+  level_label: Position Coach
+timeline:
+  career_turn: 36
+  season_turn: 1
+  phase: Offseason — 2002 Cycle Start
+  previous_phase: Offseason — 2002 Job Cycle Resolved
+  last_resolved_date: '2002-02-04'
+  date: '2002-02-05'
+  next_event: 2002 offseason planning and room transition begin
+  calendar_frozen: false
+  resume_anchor:
+    exact_pickup_date: '2002-02-05'
+    reason: After the 2001 exit bubble resolved, Stone was promoted internally to tight ends coach during the Childress/Shurmur staff reshuffle.
+calendar_state:
+  calendar_file: teams/philadelphia_eagles/2002/philadelphia_eagles_calendar_2002.yaml
+  previous_node: season_end_2001
+  current_node: offseason_2002_cycle_start
+  current_week_label: 2002 Offseason Cycle Start
+  next_node: null
+  completed_nodes:
+  - offseason_2001_cycle_start
+  - fa_2001
+  - draft_2001
+  - otas_2001
+  - camp_2001
+  - preseason_2001
+  - reg_wk01
+  - reg_wk02
+  - reg_wk03
+  - reg_wk04
+  - reg_wk05
+  - reg_wk06
+  - reg_wk07
+  - reg_wk08
+  - reg_wk09
+  - reg_wk10
+  - reg_wk11
+  - reg_wk12
+  - reg_wk13
+  - reg_wk14
+  - reg_wk15
+  - reg_wk16
+  - reg_wk17
+  - playoff_wildcard
+  - playoff_divisional
+  - playoff_championship
+  - season_end_2001
+  continuation_note: The 2001 season and exit bubble are resolved. Stone begins 2002 in a new role inside the same building.
+record:
+  regular_season_record: 11-5
+  postseason_record: 2-1
+  division_finish: 1st NFC East
+  playoffs: Eliminated — NFC Championship
+  team: Philadelphia Eagles
+  team_ovr: N/A
+job_status:
+  job_security: 96
+  stress: 71
+  contract:
+    status: Active
+    team: Philadelphia Eagles
+    title: Tight Ends Coach
+    term_years: 1
+    cycle: 2002
+    salary: 140000
+    accepted: true
+    origin: Promoted internally; compensation reopened and the second year of the continuity deal was amended upward.
+  applications_active: 0
+  offers_pending: 0
+  retention_status: Promoted internally for 2002
+offseason_status:
+  time_bubble_active: false
+  bubble_stage: Resolved
+  era_ruleset: NFL_2000
+  evaluation_score: 89
+  trajectory: Rising
+  scheme_mastery: 86
+  trust_position_direct_evaluator: 97
+  promotion_readiness: Strong
+  risk_flag: First-year room leader
+  club_decision: Promoted
+  outside_interest: Quiet
+  interview_access: Closed after internal promotion
+  transition_pending: false
+coaching_attributes:
+  cap: 75
+  core:
+    TAC: 62
+    TCH: 64
+    LDR: 61
+    REC: 54
+    MAN: 61
+    MOT: 61
+  scheme:
+    SDN: 61
+    GMG: 60
+    PEV: 60
+    MED: 44
+    STF: 56
+    ADM: 61
+  advanced:
+    DEV: 64
+    INV: 55
+    CNT: 41
+    CMB: 60
+    TRD: 38
+  traits:
+    Disciplinarian: 20
+    Players_Coach: 35
+    Innovator: 25
+    Traditionalist: 20
+finances:
+  net_worth: 8850000
+  annual_expenses: 455000
+  salary: 140000
+  financial_pressure: None
+team_context:
+  team: Philadelphia Eagles
+  head_coach: Andy Reid
+  offensive_coordinator: Brad Childress
+  quarterbacks_coach: Pat Shurmur
+  offensive_line_coach: Juan Castillo
+  role_change_note: Rod Dowhower is gone from the day-to-day chain; Childress moves to coordinator, Shurmur slides to quarterbacks, and Stone inherits the TE room.
+room_context:
+  room: Tight Ends
+  room_status: Functional veteran room inside a stable contender; the job is to keep it reliable and integrated, not turn it into a star vehicle.
+  what_stone_owns_now:
+  - Tight ends meetings and weekly grading
+  - Individual drill sequencing and technique detail
+  - Run-game edge technique and fit with Castillo’s line rules
+  - TE stems, leverage, spacing, motion, trade, and red-zone detail inside Reid’s passing game
+  - Day-to-day discipline and developmental management of the TE room
+  what_he_still_shares:
+  - Quarterback timing conversations with Childress and Shurmur
+  - Protection language when TE assignments cross into pressure answers
+  - Broader offensive self-scout when TE usage exposes spacing or red-zone tells
+relationships:
+  Don_Coryell:
+    score: 80
+    status: Strong reference; stable
+  Bobby_Ross:
+    score: 75
+    status: Strong reference; stable
+  Chargers_Position_Coaches:
+    score: 65
+    status: Moderate network support
+  University_of_Miami_Connections:
+    score: 55
+    status: Dormant college network
+  Andy_Reid:
+    score: 88
+    status: Head coach who promoted Stone internally but still expects a role-correct first year
+  Rod_Dowhower:
+    score: 97
+    status: Former OC and primary mentor; now a strong external reference rather than a daily supervisor
+  Brad_Childress:
+    score: 82
+    status: New offensive coordinator; trusts Stone’s football processing and now expects room ownership from him
+  Pat_Shurmur:
+    score: 78
+    status: Former TE coach now in the QB room; major internal sponsor and resource for Stone’s transition
+  David_Culley:
+    score: 65
+    status: Useful cross-room relationship remains intact
+  Juan_Castillo:
+    score: 70
+    status: Key ally because TE run-game detail must mesh with OL structure
+personal_development:
+  system_familiarity:
+    system: Reid West Coast offense
+    time_in_system_completed: Three years in the building completed
+    status: Stone knows the offense cold enough that the challenge is no longer system fluency but room command.
+  what_hes_building:
+  - Meeting command in a room he now owns
+  - Direct player development instead of indirect support influence
+  - A room-first mindset after years of broad QC usefulness
+  - Practical technique teaching rooted in the same offensive language he already knows cold
+  level_2_development_context:
+    status: First-year Level 1 coach
+    biggest_adjustments:
+    - Owning the room every week instead of serving every room a little
+    - Balancing long-term development with immediate game-plan demands
+    - Carrying the consequences when TE teaching or discipline slips
+    - Learning when to stay in his room rather than reverting to all-over-the-offense QC habits
+active_consequences:
+- Stone is no longer boxed into support work; he has crossed into real room ownership.
+- 'The promotion did not make him a finished coach. It made the next layer of learning visible: command, sequencing, discipline, and player development over a full season.'
+- Because the opening exists inside a staff that already trusts him, the first year is difficult but structurally fair.
+engine_resolved_2001_run_snapshot:
+  final_regular_season_record: 11-5
+  division_finish: 1st NFC East
+  playoffs: Lost NFC Championship
+  season_outcome: Deep playoff run accelerated internal staff reshuffle and opened a real Level 1 opportunity
+last_3_turns_summary:
+- 'Turn 34: The late-season and playoff run established that Stone could serve a contender at a high QC level without role drift.'
+- 'Turn 35: The 2001 season ended at the NFC Championship with Stone’s best QC evaluation yet.'
+- 'Turn 36: The Childress/Shurmur reshuffle created a real TE opening and Stone was promoted internally into his first NFL room.'

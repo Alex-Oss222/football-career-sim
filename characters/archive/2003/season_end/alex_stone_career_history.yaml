@@ -1,0 +1,113 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2004-01-19'
+  career_turn: 54
+  sim_phase: 2003 Season End — Pre-Exit Snapshot
+  archive_note: 2003 season_end snapshot
+career_history:
+- turn: 12
+  date_range: 2000-01-03 to 2000-01-14
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Season End — Exit Meetings / Offseason Evaluation
+  summary: Stone resolved the season_end node through Eagles exit meetings and offseason evaluation after an 8-8 season. Retained for 2000 as QC at $40,000.
+  results:
+  - Received a strong year-one internal evaluation from Reid and an especially strong endorsement from Dowhower.
+  - Retained by Philadelphia for the 2000 cycle as Offensive Quality Control.
+- turn: 29
+  date_range: 2001-01-20 to 2001-01-23
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Offseason — 2001 Cycle Start
+  summary: Re-signed with Philadelphia on a two-year staff deal at $50,000 after choosing continuity over the lateral market.
+  results:
+  - Stayed in Reid's offensive tree.
+  - Entered Year 3 with higher internal trust.
+- turn: 36
+  date_range: 2002-01-28 to 2002-02-05
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: Offseason — Internal Promotion / 2002 Cycle Start
+  summary: Promoted internally from Offensive QC to Tight Ends Coach after the Childress/Shurmur reshuffle. Salary amended to $140,000.
+  results:
+  - Inherited his first NFL room inside a system he already knew cold.
+- turn: 44
+  date_range: 2002-02-05 to 2003-01-20
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: 2002 Season End — Pre-Exit Snapshot
+  summary: Philadelphia went 12-4, earned the NFC's top seed, and lost to Tampa Bay in the NFC Championship. Stone's first season as a position coach was credible and competent.
+  results:
+  - Established himself as a legitimate NFL position coach.
+  - Handled full room ownership on a contender without role inflation.
+- turn: 46
+  date_range: 2003-01-20 to 2003-02-11
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: Offseason — 2003 Cycle Start
+  summary: Re-signed on a two-year deal at $175,000 reflecting established position-coach standing.
+  results:
+  - Secured multi-year stability at the position-coach level.
+- turn: 54
+  date_range: 2003-02-11 to 2004-01-19
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: 2003 Season End — Pre-Exit Snapshot
+  summary: Philadelphia went 12-4 again, earned the NFC's top seed for the second straight year, and lost to Carolina in the NFC Championship. Stone's Year 2 as TE coach was stronger than Year 1 — more confident teaching, better development, more natural room command.
+  results:
+  - Deepened his coaching identity beyond survival mode into genuine room mastery.
+  - Early coordinator-track conversations emerged internally.
+  - Back-to-back NFC Championship losses created organizational frustration.
+  state_changes:
+    stress:
+      from: 65
+      to: 78
+    job_security:
+      from: 94
+      to: 97
+    tactical_knowledge:
+      from: 66
+      to: 69
+    teaching:
+      from: 68
+      to: 71
+    leadership:
+      from: 64
+      to: 67
+    recruiting:
+      from: 56
+      to: 58
+    man_management:
+      from: 64
+      to: 67
+    motivation:
+      from: 63
+      to: 66
+    scheme_design:
+      from: 62
+      to: 64
+    player_evaluation:
+      from: 61
+      to: 63
+    development_expertise:
+      from: 68
+      to: 71
+    andy_reid:
+      from: 89
+      to: 90
+    brad_childress:
+      from: 84
+      to: 86
+    pat_shurmur:
+      from: 80
+      to: 82
+    juan_castillo:
+      from: 73
+      to: 75
+  evaluation_patch:
+    likely_score: 84
+    trajectory: Rising
+    scheme_mastery: 91
+    promotion_readiness: Strong Level 1 coach; early coordinator-track conversation emerging
+    risk_flag: None

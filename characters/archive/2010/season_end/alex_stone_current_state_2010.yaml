@@ -1,0 +1,166 @@
+mode: COACHING
+tape: MODE B (engine-generated; archived snapshot)
+identity:
+  name: Alex-Lamar Stone
+  age: 43
+  current_role: San Diego Chargers — Passing Game Coordinator
+  previous_role: San Diego Chargers — Passing Game Coordinator
+  level: 2
+  level_label: Coordinator
+timeline:
+  career_turn: 124
+  season_turn: 9
+  phase: Season End — Exit Meetings / Offseason Evaluation
+  previous_phase: Regular Season — Final Week
+  last_resolved_date: '2011-01-02'
+  date: '2011-01-03'
+  next_event: 2010 season exit meetings and 2011 job cycle — OC candidacy active
+  calendar_frozen: true
+  resume_anchor:
+    exact_pickup_date: '2011-01-03'
+    reason: Snapshot captured after the 2010 regular season concluded. Chargers went 9-7 and missed the playoffs. Stone's contract expires and his OC candidacy is active.
+calendar_state:
+  calendar_file: teams/san_diego_chargers/2010/san_diego_chargers_calendar_2010.yaml
+  previous_node: reg_wk17
+  current_node: season_end
+  current_week_label: 2010 Season End / Exit Meetings
+  next_node: null
+  continuation_note: The 2010 season is complete. Stone's contract expires. OC-level opportunities are expected during the 2011 hiring cycle.
+record:
+  regular_season_record: 9-7
+  postseason_record: N/A
+  division_finish: 2nd AFC West
+  playoffs: Missed
+  team: San Diego Chargers
+  team_ovr: N/A
+job_status:
+  job_security: 75
+  stress: 78
+  contract:
+    status: Expiring
+    team: San Diego Chargers
+    title: Passing Game Coordinator
+    term_years: 2
+    cycle: 2009-2010
+    salary: 325000
+    accepted: true
+    note: Deal expired. Stone is a free agent in the coaching market. OC candidacy is active.
+  applications_active: 0
+  offers_pending: 0
+  retention_status: Contract expired; OC market active
+  evaluation_projection:
+    likely_score: 77
+    trajectory: Stable
+    scheme_mastery: 74
+    promotion_readiness: Ready for OC role
+    risk_flag: Regression year (13-3 to 9-7) may dampen some interest
+offseason_status:
+  time_bubble_active: true
+  bubble_stage: Season Close / Job Cycle
+  era_ruleset: NFL_2000
+  evaluation_score: Pending
+  trajectory: Pending
+  club_decision: Contract expired
+  outside_interest: Active — OC candidacy real
+  interview_access: Open
+  transition_pending: true
+coaching_attributes:
+  cap: 87
+  core:
+    TAC: 72
+    TCH: 74
+    LDR: 80
+    REC: 67
+    MAN: 80
+    MOT: 79
+  scheme:
+    SDN: 69
+    GMG: 70
+    PEV: 69
+    MED: 66
+    STF: 72
+    ADM: 77
+  advanced:
+    DEV: 74
+    INV: 72
+    CNT: 60
+    CMB: 73
+    TRD: 56
+  traits:
+    Disciplinarian: 30
+    Players_Coach: 42
+    Innovator: 40
+    Traditionalist: 14
+finances:
+  net_worth: 11650000
+  annual_expenses: 590000
+  salary: 325000
+  financial_pressure: None
+team_context:
+  team: San Diego Chargers
+  head_coach: Norv Turner
+  role_context_note: The Chargers regressed from 13-3 to 9-7 and missed the playoffs. The passing game remained productive but the overall team performance dropped. Stone's passing game contribution was not the problem, but the regression may dampen some external interest.
+room_context:
+  room: Passing Game (Coordinator role)
+  room_summary: The passing game remained effective despite the team's regression. Rivers threw for over 4,700 yards. Stone's concept design and coordination matured significantly in Year 2, blending Reid WCO timing with Coryell vertical aggression into a cohesive approach.
+  what_stone_contributed:
+  - More creative and integrated passing concept design in Year 2
+  - Stronger blending of WCO timing concepts with Coryell vertical principles
+  - Deeper work with Gates on route stems and leverage
+  - More confident coordination role within Turner's offensive structure
+  what_he_learned:
+  - How a regression season tests coaching relationships and scheme execution
+  - The difference between coordinating in a winning environment versus a losing one
+  - How to maintain passing game productivity when the run game and defense decline
+  - Turner's adjustments (or lack thereof) in a regression year — useful context for Stone's future OC approach
+relationships:
+  Don_Coryell:
+    score: 80
+    status: Strong reference; stable
+  Bobby_Ross:
+    score: 75
+    status: Strong reference; stable
+  Andy_Reid:
+    score: 83
+    status: Strong external reference
+  Rod_Dowhower:
+    score: 90
+    status: Former mentor
+  Norv_Turner:
+    score: 72
+    status: Solid professional trust; Turner would endorse Stone for OC opportunities
+  Chargers_Offensive_Staff:
+    score: 66
+    status: Strong working trust built over two years together
+  Antonio_Gates:
+    score: 68
+    status: Strong player-coach relationship built over two years of direct work
+  Philip_Rivers:
+    score: 60
+    status: Solid professional respect; Rivers valued Stone's passing concepts
+personal_development:
+  system_familiarity:
+    system: Turner Coryell vertical passing offense
+    time_in_system_completed: Two years completed
+    status: Stone has genuine dual-system mastery. His playbook now integrates Reid WCO timing concepts and Turner Coryell vertical principles into a coherent offensive philosophy. He is ready for an OC role.
+  what_he_handled_well:
+  - Maintained passing game productivity during a team regression year
+  - Deepened his Coryell vertical concept mastery in Year 2
+  - More creative blending of two offensive philosophies
+  - Managed the stress of a regression season without losing confidence or credibility
+  - Strengthened relationships with Rivers and Gates over the second year
+  what_stretched_him:
+  - The 9-7 regression was personally frustrating after a 13-3 Year 1
+  - The missed playoffs created organizational tension that filtered into the offensive staff
+  - Balancing OC job-search preparation with current-year responsibilities
+  - Knowing when to advocate for passing game concepts versus deferring to Turner's play-calling authority
+active_consequences:
+- Stone's contract has expired. He is a free agent in the coaching market.
+- His OC candidacy is real. The full résumé reads: HOF player, 6 years NFL coaching (Eagles Super Bowl staff), 1 year learning defense, 3 years college HC (4-8 to 9-4), 2 years NFL PGC (13-3 and 9-7 seasons with top-tier passing production).
+- The 9-7 regression may dampen some interest, but the passing game's sustained productivity insulates Stone's individual evaluation.
+- Turner would endorse Stone for OC opportunities. Reid's reference remains strong.
+- The 2011 hiring cycle will determine Stone's next step — likely an OC role if the right opportunity emerges.
+last_3_turns_summary:
+- 'Turn 122: The Chargers' playoff hopes faded in the stretch run.'
+- 'Turn 123: San Diego finished 9-7 and missed the playoffs.'
+- 'Turn 124: Stone exits Year 2 with strong individual reviews but on a regression team. Contract expired. OC market active.'

@@ -1,0 +1,190 @@
+mode: COACHING
+tape: MODE B (engine-generated)
+identity:
+  name: Alex-Lamar Stone
+  age: 33
+  current_role: Philadelphia Eagles — Offensive Quality Control
+  previous_role: NFL Tight End, San Diego Chargers (1987–1998)
+  level: 0
+  level_label: GA/QC
+timeline:
+  career_turn: 12
+  season_turn: 8
+  phase: Offseason — 2000 Cycle Start
+  previous_phase: Season End — Exit Meetings / Offseason Evaluation
+  last_resolved_date: '2000-01-14'
+  date: '2000-01-15'
+  next_event: 2000 offseason planning opens
+  calendar_frozen: false
+  resume_anchor:
+    exact_pickup_date: '2000-01-15'
+    reason: Day after the 1999 season_end node ends in the Eagles 1999 calendar.
+calendar_state:
+  calendar_file: teams/philadelphia_eagles/philadelphia_eagles_calendar_1999.yaml
+  previous_node: season_end
+  current_node: offseason_2000_cycle_start
+  current_week_label: 2000 Offseason Cycle Start
+  next_node: null
+  completed_nodes:
+  - reid_hired
+  - staff_build_01
+  - staff_build_02
+  - fa_opens
+  - combine_01
+  - fa_march
+  - pre_draft_april
+  - draft_01
+  - draft_02
+  - post_draft
+  - ota_01
+  - minicamp_01
+  - offseason_break
+  - camp_01
+  - pre_wk1
+  - pre_wk2
+  - pre_wk3
+  - pre_wk4
+  - roster_cutdown
+  - reg_wk01
+  - reg_wk02
+  - reg_wk03
+  - reg_wk04
+  - reg_wk05
+  - reg_wk06
+  - reg_wk07
+  - reg_wk08
+  - reg_wk09
+  - reg_wk10
+  - reg_wk11
+  - reg_wk12
+  - reg_wk13
+  - reg_wk14
+  - reg_wk15
+  - reg_wk16
+  - reg_wk17
+  - season_end
+  continuation_note: The 1999 calendar is complete; this state is anchored to the
+    exact day after season_end so the 2000 offseason cycle can begin from a fixed
+    date.
+record:
+  preseason_record: 2-2
+  regular_season_record: 8-8
+  career_coaching_record: 0-0
+  playoffs: Missed
+  team: Philadelphia Eagles
+  team_ovr: N/A
+job_status:
+  job_security: 95
+  stress: 66
+  contract:
+    status: Active
+    team: Philadelphia Eagles
+    title: Offensive Quality Control
+    term_years: 1
+    cycle: 2000
+    salary: 40000
+    accepted: true
+  applications_active: 0
+  offers_pending: 0
+  retention_status: Retained for 2000
+coaching_attributes:
+  cap: 60
+  core:
+    TAC: 60
+    TCH: 60
+    LDR: 60
+    REC: 48
+    MAN: 60
+    MOT: 60
+  scheme:
+    SDN: 55
+    GMG: 58
+    PEV: 60
+    MED: 42
+    STF: 50
+    ADM: 56
+  advanced:
+    DEV: 60
+    INV: 52
+    CNT: 40
+    CMB: 58
+    TRD: 38
+  traits:
+    Disciplinarian: 20
+    Players_Coach: 35
+    Innovator: 25
+    Traditionalist: 20
+finances:
+  net_worth: 8700000
+  annual_expenses: 418000
+  salary: 40000
+  financial_pressure: None
+relationships:
+  Don_Coryell:
+    score: 80
+    status: Strong reference; stable
+  Bobby_Ross:
+    score: 75
+    status: Strong reference; stable
+  Chargers_Position_Coaches:
+    score: 65
+    status: Moderate network support
+  Andy_Reid:
+    score: 80
+    status: Retained Stone as trusted year-two offensive QC infrastructure
+  Rod_Dowhower:
+    score: 95
+    status: Primary mentor, strongest internal sponsor, highest-trust supervisor
+  Brad_Childress:
+    score: 65
+    status: Real working trust built through weekly QB-support translation
+  Pat_Shurmur:
+    score: 68
+    status: Positive hierarchy-safe TE/edge support relationship
+personal_development:
+  system_familiarity:
+    system: Reid West Coast offense
+    time_in_system_completed: Under one year
+    status: Functional at weekly speed; no longer purely memorized; still not fully
+      instinctive under maximum-chaos pace
+  what_hes_building:
+  - Weekly operational fluency inside the Reid/Dowhower offensive workflow
+  - Reliable translation of player-feel football into coach-usable packets and cut-ups
+  - Coach-specific tailoring for Reid, Dowhower, Childress, and Shurmur
+  - Year-two foundation for eventual Level 1 position-coach viability without skipping
+    steps
+  level_1_position_coach_developing:
+    status: Not yet promoted
+    readiness: Developing, real internal candidate if an opening appears
+    missing_pieces:
+    - Full room ownership
+    - Independent meeting command
+    - More direct teaching reps
+    - More experience creating structure rather than only supporting it
+active_consequences:
+- Stone finished Year 1 as a legitimate internal development piece, not a novelty
+  ex-player hire.
+- He now understands the Eagles offensive terminology and workflow well enough to
+  function naturally most weeks.
+- His former-player background has been converted into useful QC value without becoming
+  a hierarchy problem.
+- Year 2 pressure changes from proving he belongs to proving he can keep growing.
+- Promotion path is real but still conditional on openings, reps, and stronger teaching
+  ownership.
+engine_resolved_1999_run_snapshot:
+  final_regular_season_record: 8-8
+  playoffs: Missed
+  draft_class_carried_forward:
+  - Donovan McNabb — QB, Syracuse
+  - Barry Gardner — LB, Northwestern
+  - John Welbourn — OT, California
+  - Na Brown — WR, North Carolina
+last_3_turns_summary:
+- 'Turn 10: Advanced through final preseason week, cutdown, and the first seven regular-season
+  weeks to Week 8; became a more trusted offensive QC in the Eagles workflow.'
+- 'Turn 11: Advanced through the remainder of the regular season to the opening of
+  season_end; the Eagles finished 8-8 and Stone finished the year as a trusted part
+  of the weekly offensive operation.'
+- 'Turn 12: Resolved exit meetings and offseason evaluation; Stone was retained on
+  a new one-year Eagles QC deal and exits Year 1 as a real internal development candidate
+  under the Reid tree.'

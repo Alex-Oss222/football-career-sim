@@ -1,0 +1,193 @@
+mode: COACHING
+tape: MODE B (engine-generated; archived snapshot)
+identity:
+  name: Alex-Lamar Stone
+  age: 35
+  current_role: Philadelphia Eagles — Tight Ends Coach
+  previous_role: Philadelphia Eagles — Tight Ends Coach
+  level: 1
+  level_label: Position Coach
+timeline:
+  career_turn: 46
+  season_turn: 1
+  phase: Offseason — 2003 Cycle Start
+  previous_phase: Offseason — 2003 Job Cycle Resolved
+  last_resolved_date: '2003-02-10'
+  date: '2003-02-11'
+  next_event: 2003 offseason planning and roster evaluation begin
+  calendar_frozen: false
+  resume_anchor:
+    exact_pickup_date: '2003-02-11'
+    reason: After the 2002 exit bubble resolved, Stone was retained as tight ends coach on a new two-year deal reflecting his strong first year owning the room.
+calendar_state:
+  calendar_file: teams/philadelphia_eagles/2003/philadelphia_eagles_calendar_2003.yaml
+  previous_node: season_end_2002
+  current_node: offseason_2003_cycle_start
+  current_week_label: 2003 Offseason Cycle Start
+  next_node: null
+  completed_nodes:
+  - offseason_2002_cycle_start
+  - fa_2002
+  - draft_2002
+  - otas_2002
+  - camp_2002
+  - preseason_2002
+  - reg_wk01
+  - reg_wk02
+  - reg_wk03
+  - reg_wk04
+  - reg_wk05
+  - reg_wk06
+  - reg_wk07
+  - reg_wk08
+  - reg_wk09
+  - reg_wk10
+  - reg_wk11
+  - reg_wk12
+  - reg_wk13
+  - reg_wk14
+  - reg_wk15
+  - reg_wk16
+  - reg_wk17
+  - playoff_divisional
+  - playoff_championship
+  - season_end_2002
+  continuation_note: The 2002 season and exit bubble are resolved. Stone returns to the TE room for Year 2 with a new deal and stronger internal standing.
+record:
+  regular_season_record: 12-4
+  postseason_record: 1-1
+  division_finish: 1st NFC East
+  playoff_seed: NFC No. 1
+  playoffs: Eliminated — NFC Championship
+  team: Philadelphia Eagles
+  team_ovr: N/A
+job_status:
+  job_security: 94
+  stress: 65
+  contract:
+    status: Active
+    team: Philadelphia Eagles
+    title: Tight Ends Coach
+    term_years: 2
+    cycle: 2003-2004
+    salary: 175000
+    accepted: true
+    origin: Re-signed after strong Year 1 evaluation; two-year deal reflecting established position-coach standing.
+  applications_active: 0
+  offers_pending: 0
+  retention_status: Re-signed for 2003-2004
+offseason_status:
+  time_bubble_active: false
+  bubble_stage: Resolved
+  era_ruleset: NFL_2000
+  evaluation_score: 81
+  trajectory: Rising
+  scheme_mastery: 89
+  trust_position_direct_evaluator: 89
+  promotion_readiness: Established Level 1 coach; not yet a coordinator candidate
+  risk_flag: None
+  club_decision: Retained
+  outside_interest: Quiet
+  interview_access: Not pursued
+  transition_pending: false
+coaching_attributes:
+  cap: 75
+  core:
+    TAC: 66
+    TCH: 68
+    LDR: 64
+    REC: 56
+    MAN: 64
+    MOT: 63
+  scheme:
+    SDN: 62
+    GMG: 60
+    PEV: 61
+    MED: 45
+    STF: 60
+    ADM: 63
+  advanced:
+    DEV: 68
+    INV: 56
+    CNT: 41
+    CMB: 60
+    TRD: 38
+  traits:
+    Disciplinarian: 20
+    Players_Coach: 35
+    Innovator: 25
+    Traditionalist: 20
+finances:
+  net_worth: 9200000
+  annual_expenses: 510000
+  salary: 175000
+  financial_pressure: None
+team_context:
+  team: Philadelphia Eagles
+  head_coach: Andy Reid
+  offensive_coordinator: Brad Childress
+  quarterbacks_coach: Pat Shurmur
+  offensive_line_coach: Juan Castillo
+  role_context_note: Stone enters Year 2 as TE coach with a stronger internal foundation and a clearer sense of what the room demands week to week.
+room_context:
+  room: Tight Ends
+  room_status: Stable veteran room on a perennial contender. Stone's Year 1 proved he could own it; Year 2 is about deepening the work and developing younger players.
+  what_stone_owns_now:
+  - Tight ends meetings and weekly grading
+  - Individual drill sequencing and technique detail
+  - Run-game edge technique and fit with Castillo's line rules
+  - TE stems, leverage, spacing, motion, trade, and red-zone detail inside Reid's passing game
+  - Day-to-day discipline and developmental management of the TE room
+  what_he_still_shares:
+  - Quarterback timing conversations with Childress and Shurmur
+  - Protection language when TE assignments cross into pressure answers
+  - Broader offensive self-scout when TE usage exposes spacing or red-zone tells
+relationships:
+  Don_Coryell:
+    score: 80
+    status: Strong reference; stable
+  Bobby_Ross:
+    score: 75
+    status: Strong reference; stable
+  Chargers_Position_Coaches:
+    score: 65
+    status: Moderate network support
+  University_of_Miami_Connections:
+    score: 55
+    status: Dormant college network
+  Andy_Reid:
+    score: 89
+    status: Sees Stone as a legitimate NFL position coach in the tree
+  Rod_Dowhower:
+    score: 97
+    status: Former mentor and durable external reference
+  Brad_Childress:
+    score: 84
+    status: Strong OC trust after a full year of room ownership
+  Pat_Shurmur:
+    score: 80
+    status: Trusted internal ally between the TE and QB rooms
+  David_Culley:
+    score: 66
+    status: Stable cross-room relationship
+  Juan_Castillo:
+    score: 73
+    status: Important structural ally for TE/OL run-game fit
+personal_development:
+  system_familiarity:
+    system: Reid West Coast offense
+    time_in_system_completed: Four years in the building completed
+    status: System mastery is deep. The growth edge is now coaching craft — teaching, developing, and commanding the room at a higher level.
+  what_hes_building:
+  - Deeper player development over a multi-year arc instead of single-season survival
+  - More confident meeting command and weekly discipline
+  - Better integration of younger developmental TEs alongside the veterans
+  - A longer-term coaching identity beyond QC-turned-position-coach
+active_consequences:
+- Stone is now an established Level 1 coach, not a first-year project.
+- 'Year 2 is about deepening the work: stronger teaching, better development, and more confident room management.'
+- The two-year deal gives him stability to focus on coaching rather than job security.
+last_3_turns_summary:
+- 'Turn 42: Midseason ownership of the TE room became more natural and less effortful.'
+- 'Turn 43: Philadelphia earned the NFC No. 1 seed with Stone''s room staying credible and integrated.'
+- 'Turn 44: The Eagles lost the NFC Championship to Tampa Bay; Stone''s Year 1 ended as a solid foundation, not a finished product.'

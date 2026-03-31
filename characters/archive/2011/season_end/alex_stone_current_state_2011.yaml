@@ -1,0 +1,126 @@
+mode: COACHING
+tape: MODE B (engine-generated; placeholder for sim continuation)
+identity:
+  name: Alex-Lamar Stone
+  age: 44
+  current_role: Pending — 2011 Season Unresolved
+  previous_role: San Diego Chargers — Passing Game Coordinator
+  level: 2
+  level_label: Coordinator (pending resolution)
+timeline:
+  career_turn: 134
+  season_turn: 9
+  phase: Season End — 2011 Unresolved
+  previous_phase: 2011 Season (unresolved)
+  last_resolved_date: '2011-01-11'
+  date: '2012-01-09'
+  next_event: 2011 season resolution and 2012 job cycle
+  calendar_frozen: true
+  resume_anchor:
+    exact_pickup_date: '2012-01-09'
+    reason: Placeholder snapshot. Stone's 2011 placement, season results, and exit bubble are all unresolved. This file exists as a structural placeholder for sim continuation.
+calendar_state:
+  calendar_file: null
+  previous_node: null
+  current_node: season_end_2011_unresolved
+  current_week_label: 2011 Season End — Unresolved
+  next_node: null
+  continuation_note: This snapshot is a placeholder. The 2011 job cycle, season, and exit bubble must be resolved by the user or engine before this file becomes authoritative.
+record:
+  regular_season_record: Unresolved
+  postseason_record: Unresolved
+  division_finish: Unresolved
+  playoffs: Unresolved
+  team: Unresolved
+  team_ovr: N/A
+job_status:
+  job_security: Unresolved
+  stress: Unresolved
+  contract:
+    status: Unresolved
+    team: Unresolved
+    title: Unresolved
+    term_years: Unresolved
+    cycle: 2011
+    salary: Unresolved
+    accepted: Unresolved
+    note: The 2011 placement and season must be resolved before this file is authoritative.
+  applications_active: Unresolved
+  offers_pending: Unresolved
+  retention_status: Unresolved
+offseason_status:
+  time_bubble_active: true
+  bubble_stage: Unresolved
+  era_ruleset: NFL_2010
+  evaluation_score: Unresolved
+  trajectory: Unresolved
+  club_decision: Unresolved
+  outside_interest: Unresolved
+  transition_pending: true
+coaching_attributes:
+  cap: 87
+  core:
+    TAC: 72
+    TCH: 74
+    LDR: 80
+    REC: 67
+    MAN: 80
+    MOT: 79
+  scheme:
+    SDN: 69
+    GMG: 70
+    PEV: 69
+    MED: 66
+    STF: 72
+    ADM: 77
+  advanced:
+    DEV: 74
+    INV: 72
+    CNT: 60
+    CMB: 73
+    TRD: 56
+  traits:
+    Disciplinarian: 30
+    Players_Coach: 42
+    Innovator: 40
+    Traditionalist: 14
+  note: Attributes frozen at 2010 season_end values. Any 2011 season changes are unresolved.
+finances:
+  net_worth: 11650000
+  annual_expenses: 590000
+  salary: Unresolved
+  financial_pressure: None
+relationships:
+  note: Relationships frozen at 2011 season_start values. Any 2011 season changes are unresolved.
+  Don_Coryell:
+    score: 80
+    status: Strong reference; stable
+  Bobby_Ross:
+    score: 75
+    status: Strong reference; stable
+  Andy_Reid:
+    score: 83
+    status: Strong external reference
+  Rod_Dowhower:
+    score: 90
+    status: Former mentor
+  Norv_Turner:
+    score: 72
+    status: Endorsement-level trust
+  Antonio_Gates:
+    score: 68
+    status: Strong player-coach relationship
+  Philip_Rivers:
+    score: 60
+    status: Solid professional respect
+personal_development:
+  system_familiarity:
+    system: Dual-system mastery (Reid WCO + Turner Coryell)
+    time_in_system_completed: Unresolved for 2011
+    status: Frozen at 2010 season_end state. Any 2011 system exposure is unresolved.
+active_consequences:
+- This file is a structural placeholder. All 2011 data is unresolved.
+- The user or engine must resolve the 2011 job cycle, season, and exit bubble before this file becomes authoritative.
+- Stone's coaching attributes, relationships, and career state are frozen at their 2010 season_end / 2011 season_start values pending resolution.
+last_3_turns_summary:
+- Unresolved — 2011 season not yet played.

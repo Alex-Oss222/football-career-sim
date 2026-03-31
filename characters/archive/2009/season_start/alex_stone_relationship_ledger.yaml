@@ -1,0 +1,131 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2009-02-11'
+  career_turn: 106
+  sim_phase: Offseason — 2009 Cycle Start
+  archive_note: 2009 season_start snapshot
+relationships:
+- name: Don Coryell
+  role: Former HC, Chargers
+  score: 80
+  previous_score: 80
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  notes:
+  - Stone's return to the Chargers carries Coryell legacy weight.
+  delta: 0
+- name: Bobby Ross
+  role: Former HC, Chargers
+  score: 75
+  previous_score: 75
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  delta: 0
+- name: University of Miami Connections
+  role: College network
+  score: 60
+  previous_score: 67
+  delta_this_turn: -7
+  trend: cooling
+  status: college_network_dormant
+  notes:
+  - NFL return makes the college network less relevant. Natural decay from leaving Memphis.
+  delta: -7
+- name: Andy Reid
+  role: Head Coach, Philadelphia Eagles
+  score: 84
+  previous_score: 85
+  delta_this_turn: -1
+  trend: cooling
+  status: strong_external_reference
+  notes:
+  - Reconnection possible now that Stone is back in NFL circles.
+  delta: -1
+- name: Rod Dowhower
+  role: Former Offensive Coordinator
+  score: 92
+  previous_score: 93
+  delta_this_turn: -1
+  trend: cooling
+  status: former_mentor
+  notes:
+  - Proud of Stone's progression. Natural distance decay continues.
+  delta: -1
+- name: Brad Childress
+  role: Head Coach, Minnesota Vikings
+  score: 80
+  previous_score: 81
+  delta_this_turn: -1
+  trend: cooling
+  status: external_reference
+  delta: -1
+- name: Pat Shurmur
+  role: NFL assistant (various)
+  score: 75
+  previous_score: 80
+  delta_this_turn: -5
+  trend: cooling
+  status: dormant_external
+  notes:
+  - Years of distance eroded the daily relationship significantly, though mutual respect remains.
+  delta: -5
+- name: Norv Turner
+  role: Head Coach, San Diego Chargers
+  score: 55
+  previous_score: N/A
+  delta_this_turn: N/A
+  trend: new
+  status: new_head_coach
+  notes:
+  - Initial professional relationship. Turner hired Stone based on his playing background and coaching résumé. Trust must be built through work.
+  delta: 0
+- name: Chargers Offensive Staff
+  role: Offensive colleagues, San Diego
+  score: 45
+  previous_score: N/A
+  delta_this_turn: N/A
+  trend: new
+  status: new_colleagues
+  notes:
+  - Trust must be built from scratch. Stone is the new coordinator in a staff that has been working together.
+  delta: 0
+- name: Memphis Administration
+  role: University administration
+  score: 65
+  previous_score: 80
+  delta_this_turn: -15
+  trend: cooling
+  status: former_employer_good_terms
+  notes:
+  - Disappointed to lose Stone but parted on good terms.
+  delta: -15
+- name: Memphis Staff
+  role: Former coaching staff
+  score: 60
+  previous_score: 78
+  delta_this_turn: -18
+  trend: cooling
+  status: former_colleagues_loyal
+  notes:
+  - Loyalty remains but daily relationship ended.
+  delta: -18
+relationship_events:
+- turn: 105
+  date: '2009-01-20'
+  event: Stone left Memphis and accepted the Chargers Passing Game Coordinator role under Norv Turner.
+  effects:
+  - name: Memphis Administration
+    delta: -15
+    note: Parted on good terms but the departure itself creates a significant relationship gap.
+  - name: Memphis Staff
+    delta: -18
+    note: Daily relationships ended. Loyalty remains but distance is real.
+  - name: University of Miami Connections
+    delta: -7
+    note: College network becomes less relevant in the NFL.
+  - name: Pat Shurmur
+    delta: -5
+    note: Years of distance finally took a meaningful toll.

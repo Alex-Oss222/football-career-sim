@@ -1,0 +1,190 @@
+mode: COACHING
+tape: MODE B (engine-generated; archived snapshot)
+identity:
+  name: Alex-Lamar Stone
+  age: 34
+  current_role: Philadelphia Eagles — Offensive Quality Control
+  previous_role: Philadelphia Eagles — Offensive Quality Control
+  level: 0
+  level_label: GA/QC
+timeline:
+  career_turn: 35
+  season_turn: 7
+  phase: Season End — Exit Meetings / Offseason Evaluation
+  previous_phase: Playoffs — NFC Championship
+  last_resolved_date: '2002-01-27'
+  date: '2002-01-28'
+  next_event: 2001 season exit meetings and internal evaluation
+  calendar_frozen: true
+  resume_anchor:
+    exact_pickup_date: '2002-01-28'
+    reason: Snapshot captured immediately after the NFC Championship loss and before the 2001 offseason exit bubble resolves.
+calendar_state:
+  calendar_file: teams/philadelphia_eagles/2001/philadelphia_eagles_calendar_2001.yaml
+  previous_node: playoff_championship
+  current_node: season_end
+  current_week_label: 2001 Season End / Exit Meetings
+  next_node: null
+  completed_nodes:
+  - offseason_2001_cycle_start
+  - fa_2001
+  - draft_2001
+  - otas_2001
+  - camp_2001
+  - preseason_2001
+  - reg_wk01
+  - reg_wk02
+  - reg_wk03
+  - reg_wk04
+  - reg_wk05
+  - reg_wk06
+  - reg_wk07
+  - reg_wk08
+  - reg_wk09
+  - reg_wk10
+  - reg_wk11
+  - reg_wk12
+  - reg_wk13
+  - reg_wk14
+  - reg_wk15
+  - reg_wk16
+  - reg_wk17
+  - playoff_wildcard
+  - playoff_divisional
+  - playoff_championship
+  continuation_note: The 2001 season is complete on the field. Exit meetings and role outcome remain unresolved.
+record:
+  regular_season_record: 11-5
+  postseason_record: 2-1
+  division_finish: 1st NFC East
+  playoffs: Eliminated — NFC Championship
+  team: Philadelphia Eagles
+  team_ovr: N/A
+job_status:
+  job_security: 99
+  stress: 78
+  contract:
+    status: Active
+    team: Philadelphia Eagles
+    title: Offensive Quality Control
+    term_years: 2
+    cycle_start: 2001
+    cycle_end: 2002
+    year_in_term: 1
+    years_remaining_after_snapshot: 1
+    salary: 50000
+    accepted: true
+  applications_active: 0
+  offers_pending: 0
+  retention_status: 2002 role and standing pending exit meetings
+  evaluation_projection:
+    likely_score: 89
+    trajectory: Rising
+    scheme_mastery: 86
+    promotion_readiness: Real
+    risk_flag: Structural
+offseason_status:
+  time_bubble_active: true
+  bubble_stage: Season Close
+  era_ruleset: NFL_2000
+  evaluation_score: Pending
+  trajectory: Pending
+  scheme_mastery: Pending
+  trust_position_direct_evaluator: Pending
+  promotion_readiness: Pending
+  risk_flag: Pending
+  club_decision: Pending
+  outside_interest: Quiet
+  interview_access: Undetermined
+  transition_pending: false
+coaching_attributes:
+  cap: 60
+  core:
+    TAC: 60
+    TCH: 60
+    LDR: 60
+    REC: 52
+    MAN: 60
+    MOT: 60
+  scheme:
+    SDN: 60
+    GMG: 60
+    PEV: 60
+    MED: 44
+    STF: 52
+    ADM: 60
+  advanced:
+    DEV: 60
+    INV: 54
+    CNT: 40
+    CMB: 60
+    TRD: 38
+  traits:
+    Disciplinarian: 20
+    Players_Coach: 35
+    Innovator: 25
+    Traditionalist: 20
+finances:
+  net_worth: 8760000
+  annual_expenses: 425000
+  salary: 50000
+  financial_pressure: None
+relationships:
+  Don_Coryell:
+    score: 80
+    status: Strong reference; stable
+  Bobby_Ross:
+    score: 75
+    status: Strong reference; stable
+  Chargers_Position_Coaches:
+    score: 65
+    status: Moderate network support
+  University_of_Miami_Connections:
+    score: 55
+    status: Dormant college network
+  Andy_Reid:
+    score: 87
+    status: Quiet internal trust; sees Stone as real offensive infrastructure
+  Rod_Dowhower:
+    score: 97
+    status: Primary mentor and strongest sponsor
+  Brad_Childress:
+    score: 80
+    status: Established playoff-capable QB-prep trust
+  Pat_Shurmur:
+    score: 72
+    status: More comfortable and collaborative TE-side support relationship
+  David_Culley:
+    score: 64
+    status: Working WR support link is now routine
+  Juan_Castillo:
+    score: 68
+    status: Protection/front-ID support link is established and useful
+personal_development:
+  system_familiarity:
+    system: Reid West Coast offense
+    time_in_system_completed: Three seasons in the building complete
+    status: Stone now works natively at Eagles staff speed and is trusted to narrow cleanly under playoff compression.
+  what_hes_building:
+  - High-volume weekly support work with very little supervision
+  - Analytical self-scout that goes beyond raw charting
+  - Protection and pressure support at a useful first-pass level
+  - Cross-room offensive detail work when the staff needs a cleaner picture fast
+  - Playoff-week narrowing without losing quality
+  what_he_still_has_not_proven:
+  - Full room ownership
+  - Independent meeting command
+  - A full season of direct player-development responsibility
+  - Day-to-day discipline and developmental management of a position room
+active_consequences:
+- 2001 was the year Stone stopped looking like a developmental novelty and started looking like real offensive infrastructure.
+- His work widened because the building trusted it, not because anyone pretended he had already become a position coach.
+- 'By season end, the only real barrier between Stone and a Level 1 shot is structural: an opening and the club’s willingness to give him room command.'
+engine_resolved_2001_run_snapshot:
+  final_regular_season_record: 11-5
+  division_finish: 1st NFC East
+  playoffs: Won Wild Card and Divisional; lost NFC Championship
+last_3_turns_summary:
+- 'Turn 33: Stone’s Year 3 workload widened across self-scout, pressure support, and correction packaging as the Eagles matured into a contender.'
+- 'Turn 34: The late-season run reinforced that his best trait was disciplined narrowing — doing the most important support work cleaner, not touching every lane.'
+- 'Turn 35: Philadelphia reached the NFC Championship and lost at St. Louis; Stone exits his strongest QC season with a real Level 1 case if an opening appears.'

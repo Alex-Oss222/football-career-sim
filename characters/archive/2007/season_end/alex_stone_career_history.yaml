@@ -1,0 +1,103 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2007-11-25'
+  career_turn: 94
+  sim_phase: 2007 Season End — Pre-Exit Snapshot
+  archive_note: 2007 season_end snapshot
+career_history:
+- turn: 12
+  date_range: 2000-01-03 to 2000-01-14
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Season End — Exit Meetings / Offseason Evaluation
+  summary: Retained for 2000 as QC at $40,000.
+  results:
+  - Strong endorsement from Reid and Dowhower.
+- turn: 36
+  date_range: 2002-01-28 to 2002-02-05
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: Offseason — Internal Promotion / 2002 Cycle Start
+  summary: Promoted internally to Tight Ends Coach at $140,000.
+  results:
+  - Inherited his first NFL room.
+- turn: 64
+  date_range: 2004-02-10 to 2005-02-07
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: 2004 Season End — Pre-Exit Snapshot
+  summary: Philadelphia went 13-3, lost Super Bowl XXXIX.
+  results:
+  - Super Bowl appearance on his résumé.
+- turn: 74
+  date_range: 2005-03-02 to 2005-11-27
+  team: University of Memphis
+  role: Defensive Backs Coach
+  phase: 2005 Season End — Pre-Exit Snapshot
+  summary: Memphis went 5-6. Stone learned defense. West fired.
+  results:
+  - Gained functional defensive knowledge.
+- turn: 84
+  date_range: 2006-01-11 to 2006-11-26
+  team: University of Memphis
+  role: Head Coach
+  phase: 2006 Season End — Pre-Exit Snapshot
+  summary: Memphis went 4-8 in Stone's Year 1 as HC.
+  results:
+  - Cultural improvement visible but wins did not follow yet.
+- turn: 94
+  date_range: 2007-01-16 to 2007-11-25
+  team: University of Memphis
+  role: Head Coach
+  phase: 2007 Season End — Pre-Exit Snapshot
+  summary: Memphis went 7-5 in Stone's Year 2 as HC — a three-win improvement that validated the rebuild timeline and earned the program's first bowl appearance under Stone. The offense was more consistent, the defense improved, and Stone's play-calling and game management matured significantly.
+  results:
+  - Three-win improvement from Year 1 (4-8 to 7-5).
+  - Bowl eligibility earned.
+  - Institutional trust significantly rebuilt.
+  - Stone's play-calling and in-game adjustments improved materially.
+  - Recruiting pipeline continued to strengthen.
+  state_changes:
+    stress:
+      from: 82
+      to: 75
+    job_security:
+      from: 68
+      to: 78
+    tactical_knowledge:
+      from: 60
+      to: 63
+    teaching:
+      from: 64
+      to: 66
+    leadership:
+      from: 74
+      to: 76
+    recruiting:
+      from: 68
+      to: 70
+    man_management:
+      from: 74
+      to: 76
+    motivation:
+      from: 73
+      to: 75
+    scheme_design:
+      from: 52
+      to: 56
+    game_management:
+      from: 54
+      to: 58
+    staff_management:
+      from: 62
+      to: 65
+    media_relations:
+      from: 57
+      to: 59
+  evaluation_patch:
+    likely_score: 76
+    trajectory: Rising
+    scheme_mastery: 68
+    promotion_readiness: N/A
+    risk_flag: None

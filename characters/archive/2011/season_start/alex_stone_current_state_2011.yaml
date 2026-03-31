@@ -1,0 +1,177 @@
+mode: COACHING
+tape: MODE B (engine-generated; archived snapshot)
+identity:
+  name: Alex-Lamar Stone
+  age: 43
+  current_role: Pending — 2011 Job Cycle
+  previous_role: San Diego Chargers — Passing Game Coordinator
+  level: 2
+  level_label: Coordinator (pending placement)
+timeline:
+  career_turn: 126
+  season_turn: 1
+  phase: Offseason — 2011 Job Cycle Active
+  previous_phase: 2010 Season End — Exit Meetings
+  last_resolved_date: '2011-01-10'
+  date: '2011-01-11'
+  next_event: 2011 OC hiring cycle resolution
+  calendar_frozen: true
+  resume_anchor:
+    exact_pickup_date: '2011-01-11'
+    reason: Stone is in the 2011 hiring cycle. His contract with San Diego expired. OC candidacy is active. Placement pending.
+calendar_state:
+  calendar_file: null
+  previous_node: season_end_2010
+  current_node: job_cycle_2011
+  current_week_label: 2011 Job Cycle Active
+  next_node: null
+  continuation_note: Stone is between jobs. The 2011 OC hiring cycle is active. This snapshot captures his state at the moment of job search.
+record:
+  regular_season_record: 9-7
+  postseason_record: N/A
+  division_finish: 2nd AFC West
+  playoffs: Missed
+  team: San Diego Chargers
+  team_ovr: N/A
+  note: Previous year record.
+job_status:
+  job_security: N/A
+  stress: 82
+  contract:
+    status: Expired
+    team: None
+    title: Free agent coach
+    term_years: 0
+    cycle: 2011
+    salary: 0
+    accepted: false
+    note: Stone is between jobs. OC interviews expected.
+  applications_active: 3
+  offers_pending: 0
+  retention_status: Free agent coach
+  evaluation_projection:
+    likely_score: N/A
+    trajectory: Rising
+    scheme_mastery: 74
+    promotion_readiness: Ready for OC role
+    risk_flag: Between jobs; must land a role
+offseason_status:
+  time_bubble_active: true
+  bubble_stage: Job Cycle
+  era_ruleset: NFL_2010
+  evaluation_score: N/A
+  trajectory: Rising
+  club_decision: Pending
+  outside_interest: Active — multiple OC-level conversations
+  interview_access: Open
+  transition_pending: true
+coaching_attributes:
+  cap: 87
+  core:
+    TAC: 72
+    TCH: 74
+    LDR: 80
+    REC: 67
+    MAN: 80
+    MOT: 79
+  scheme:
+    SDN: 69
+    GMG: 70
+    PEV: 69
+    MED: 66
+    STF: 72
+    ADM: 77
+  advanced:
+    DEV: 74
+    INV: 72
+    CNT: 60
+    CMB: 73
+    TRD: 56
+  traits:
+    Disciplinarian: 30
+    Players_Coach: 42
+    Innovator: 40
+    Traditionalist: 14
+finances:
+  net_worth: 11650000
+  annual_expenses: 590000
+  salary: 0
+  financial_pressure: None — deep net worth cushion
+team_context:
+  team: None (free agent coach)
+  head_coach: N/A
+  role_context_note: Stone is in the 2011 OC hiring cycle. His full résumé is the strongest it has ever been.
+full_resume_at_time_of_hire:
+  playing_career: Hall of Fame Tight End (San Diego Chargers, 1987-1998)
+  coaching_career:
+  - Offensive Quality Control, Philadelphia Eagles (1999-2001, 3 years under Andy Reid)
+  - Tight Ends Coach, Philadelphia Eagles (2002-2004, 3 years — includes NFC Championship appearances and Super Bowl XXXIX run)
+  - Defensive Backs Coach, University of Memphis (2005, 1 year — learned secondary concepts, built defensive foundation)
+  - Head Coach, University of Memphis (2006-2008, 3 years — record 20-17; 4-8, 7-5, 9-4 with Conference USA division title)
+  - Passing Game Coordinator, San Diego Chargers (2009-2010, 2 years under Norv Turner — 13-3 and 9-7 seasons)
+  age: 43
+  total_coaching_experience: 12 years across offense, defense, and head coaching
+  system_exposure: Reid West Coast Offense (deep, 6 years), Turner Coryell vertical passing (functional, 2 years + 12 years as a player), defensive secondary concepts (1 year), full college offensive/defensive program management (3 years)
+  play_calling_experience: 3 years as college HC
+  defensive_knowledge: Functional — hired and managed a DC, oversaw game-planning on both sides, studied defensive film as HC for three years, coached DBs for one year
+  key_references:
+  - Andy Reid (Eagles HC)
+  - Rod Dowhower (former Eagles OC, primary mentor)
+  - Norv Turner (Chargers HC)
+  - Don Coryell (former Chargers HC, legacy reference)
+  - Bobby Ross (former Chargers HC)
+  unique_selling_points:
+  - Dual-system offensive mastery (Reid WCO + Turner Coryell)
+  - College HC play-calling experience (3 years, 20-17 record, division title)
+  - Defensive exposure (DB coaching + HC oversight)
+  - HOF playing career provides instant credibility with players
+  - Proven program builder (4-8 to 9-4 at Memphis)
+  - Super Bowl staff experience (Eagles, XXXIX)
+relationships:
+  Don_Coryell:
+    score: 80
+    status: Strong reference; stable
+  Bobby_Ross:
+    score: 75
+    status: Strong reference; stable
+  Andy_Reid:
+    score: 83
+    status: Strong external reference
+  Rod_Dowhower:
+    score: 90
+    status: Former mentor; primary coaching reference
+  Norv_Turner:
+    score: 72
+    status: Recent HC; endorsement-level trust
+  Antonio_Gates:
+    score: 68
+    status: Strong player-coach relationship; player reference
+  Philip_Rivers:
+    score: 60
+    status: Solid professional respect; player reference
+  Pat_Shurmur:
+    score: 73
+    status: Long-term colleague; external reference
+personal_development:
+  system_familiarity:
+    system: Dual-system mastery (Reid WCO + Turner Coryell)
+    time_in_system_completed: 6 years Reid WCO + 2 years Turner Coryell + 3 years college HC system adaptation
+    status: Stone is ready for an OC role. His offensive philosophy integrates WCO timing concepts with Coryell vertical aggression. His play-calling experience from Memphis gives him confidence. His defensive exposure gives him broader football intelligence.
+  what_he_brings_to_an_oc_role:
+  - A coherent offensive philosophy blending two major NFL offensive trees
+  - Three years of live play-calling experience (college HC)
+  - Two years of NFL coordinator-level concept design
+  - Understanding of both sides of the ball
+  - HOF-caliber player credibility with current NFL players
+  - Program-building experience that translates to culture-setting
+  - Deep references from Reid, Dowhower, Turner, and the Chargers organization
+active_consequences:
+- Stone is at the critical inflection point of his coaching career. The next hire determines whether he reaches OC and eventually HC, or stalls.
+- His résumé is uniquely broad but that cuts both ways — some teams want a specialist, not a generalist.
+- The 9-7 regression year at San Diego may make some teams hesitant, even though the passing game stayed productive.
+- His financial cushion means he can be selective rather than desperate.
+- The 2011 hiring cycle will determine his trajectory for the next 3-5 years.
+last_3_turns_summary:
+- 'Turn 122: Chargers'' playoff hopes faded in the stretch run.'
+- 'Turn 123: San Diego finished 9-7 and missed the playoffs.'
+- 'Turn 124: Stone''s contract expired. OC candidacy active in the 2011 hiring cycle.'

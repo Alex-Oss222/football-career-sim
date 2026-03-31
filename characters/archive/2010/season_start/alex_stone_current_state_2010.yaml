@@ -1,0 +1,146 @@
+mode: COACHING
+tape: MODE B (engine-generated; archived snapshot)
+identity:
+  name: Alex-Lamar Stone
+  age: 42
+  current_role: San Diego Chargers — Passing Game Coordinator
+  previous_role: San Diego Chargers — Passing Game Coordinator
+  level: 2
+  level_label: Coordinator
+timeline:
+  career_turn: 116
+  season_turn: 1
+  phase: Offseason — 2010 Cycle Start
+  previous_phase: Offseason — 2010 Evaluation Resolved
+  last_resolved_date: '2010-02-08'
+  date: '2010-02-09'
+  next_event: 2010 offseason program
+  calendar_frozen: false
+  resume_anchor:
+    exact_pickup_date: '2010-02-09'
+    reason: Stone enters Year 2 as PGC under Turner. Final year of his two-year deal. OC-level interest is real.
+calendar_state:
+  calendar_file: teams/san_diego_chargers/2010/san_diego_chargers_calendar_2010.yaml
+  previous_node: season_end_2009
+  current_node: offseason_2010_cycle_start
+  current_week_label: 2010 Offseason Cycle Start
+  next_node: null
+  continuation_note: Year 2 with the Chargers. Contract expires after 2010. OC candidacy is the next career milestone.
+record:
+  regular_season_record: 13-3
+  postseason_record: 0-1
+  division_finish: 1st AFC West
+  playoffs: Eliminated — Divisional Round
+  team: San Diego Chargers
+  team_ovr: N/A
+  note: Previous year record.
+job_status:
+  job_security: 82
+  stress: 72
+  contract:
+    status: Active
+    team: San Diego Chargers
+    title: Passing Game Coordinator
+    term_years: 2
+    cycle: 2009-2010
+    salary: 325000
+    accepted: true
+    origin: Year 2 of original deal; salary adjusted upward after strong Year 1.
+  applications_active: 0
+  offers_pending: 0
+  retention_status: Under contract for 2010; final year of deal
+offseason_status:
+  time_bubble_active: false
+  bubble_stage: Resolved
+  era_ruleset: NFL_2000
+  evaluation_score: 80
+  trajectory: Rising
+  scheme_mastery: 68
+  trust_position_direct_evaluator: 68
+  promotion_readiness: Emerging OC candidate
+  risk_flag: Contract year; potential departure
+  club_decision: Under contract
+  outside_interest: OC-level whispers active
+  transition_pending: false
+coaching_attributes:
+  cap: 86
+  core:
+    TAC: 70
+    TCH: 72
+    LDR: 79
+    REC: 66
+    MAN: 79
+    MOT: 78
+  scheme:
+    SDN: 66
+    GMG: 67
+    PEV: 67
+    MED: 64
+    STF: 70
+    ADM: 76
+  advanced:
+    DEV: 72
+    INV: 70
+    CNT: 58
+    CMB: 72
+    TRD: 54
+  traits:
+    Disciplinarian: 30
+    Players_Coach: 40
+    Innovator: 38
+    Traditionalist: 16
+finances:
+  net_worth: 11500000
+  annual_expenses: 585000
+  salary: 325000
+  financial_pressure: None
+team_context:
+  team: San Diego Chargers
+  head_coach: Norv Turner
+  role_context_note: Year 2 with Turner. The offensive system is familiar now. Stone's focus is on refining his coordination and positioning himself for an OC role.
+room_context:
+  room: Passing Game (Coordinator role)
+  room_status: Year 2 continuation. Stone is more confident in Turner's system and his concept design is more integrated with the full offensive structure.
+relationships:
+  Don_Coryell:
+    score: 80
+    status: Strong reference; stable
+  Bobby_Ross:
+    score: 75
+    status: Strong reference; stable
+  Andy_Reid:
+    score: 84
+    status: Strong external reference
+  Rod_Dowhower:
+    score: 91
+    status: Former mentor
+  Norv_Turner:
+    score: 68
+    status: Growing professional trust
+  Chargers_Offensive_Staff:
+    score: 60
+    status: Working trust established
+  Antonio_Gates:
+    score: 62
+    status: Player-coach respect
+  Philip_Rivers:
+    score: 55
+    status: Professional respect
+personal_development:
+  system_familiarity:
+    system: Turner Coryell vertical passing offense
+    time_in_system_completed: One year completed
+    status: Stone has functional dual-system mastery (Reid WCO + Turner Coryell). Year 2 is about deepening and refining.
+  what_hes_building:
+  - Deeper Coryell vertical concept mastery
+  - More creative blending of WCO and Coryell principles
+  - OC-level readiness through broader offensive involvement
+  - Positioning for the 2011 OC hiring cycle
+active_consequences:
+- Contract year. Stone needs a strong Year 2 to cement his OC candidacy.
+- The 13-3 Year 1 gave him credibility; Year 2 must show consistency.
+- OC-level interest is real and will intensify if the passing game stays productive.
+last_3_turns_summary:
+- 'Turn 112: Chargers clinched the AFC West.'
+- 'Turn 113: Lost in the Divisional Round.'
+- 'Turn 114: Strong Year 1 reviews and emerging OC interest.'

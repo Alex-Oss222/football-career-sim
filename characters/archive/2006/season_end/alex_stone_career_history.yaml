@@ -1,0 +1,106 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2006-11-26'
+  career_turn: 84
+  sim_phase: 2006 Season End — Pre-Exit Snapshot
+  archive_note: 2006 season_end snapshot
+career_history:
+- turn: 12
+  date_range: 2000-01-03 to 2000-01-14
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Season End — Exit Meetings / Offseason Evaluation
+  summary: Retained for 2000 as QC at $40,000 after strong year-one evaluation.
+  results:
+  - Strong endorsement from Reid and Dowhower.
+- turn: 36
+  date_range: 2002-01-28 to 2002-02-05
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: Offseason — Internal Promotion / 2002 Cycle Start
+  summary: Promoted internally to Tight Ends Coach at $140,000.
+  results:
+  - Inherited his first NFL room.
+- turn: 64
+  date_range: 2004-02-10 to 2005-02-07
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: 2004 Season End — Pre-Exit Snapshot
+  summary: Philadelphia went 13-3, lost Super Bowl XXXIX. Completed Year 3 as TE coach.
+  results:
+  - Super Bowl appearance on his résumé. Contract expired.
+- turn: 74
+  date_range: 2005-03-02 to 2005-11-27
+  team: University of Memphis
+  role: Defensive Backs Coach
+  phase: 2005 Season End — Pre-Exit Snapshot
+  summary: Memphis went 5-6. Stone learned defense and college recruiting.
+  results:
+  - Gained functional defensive knowledge. Tommy West fired.
+- turn: 76
+  date_range: 2005-11-27 to 2006-01-11
+  team: University of Memphis
+  role: Head Coach
+  phase: Offseason — 2006 Cycle Start
+  summary: Hired as Memphis HC on a four-year deal at $450,000.
+  results:
+  - First head coaching job at any level.
+- turn: 84
+  date_range: 2006-01-11 to 2006-11-26
+  team: University of Memphis
+  role: Head Coach
+  phase: 2006 Season End — Pre-Exit Snapshot
+  summary: Memphis went 4-8 in Stone's first year as head coach. The record was poor but expected given the roster transition and program rebuild. The offense showed flashes of Stone's adapted WCO but execution was inconsistent. The program showed cultural improvement — better practice habits, more disciplined play, and a recruiting class that pointed upward.
+  results:
+  - Completed first year as a head coach at any level.
+  - Offensive play-calling improved over the season.
+  - In-game adjustments and clock management were the weakest areas.
+  - Signed a recruiting class that represented the first real evidence of program-building.
+  - Staff retained for Year 2.
+  state_changes:
+    stress:
+      from: 88
+      to: 90
+    job_security:
+      from: 72
+      to: 68
+    tactical_knowledge:
+      from: 58
+      to: 60
+    teaching:
+      from: 63
+      to: 64
+    leadership:
+      from: 73
+      to: 74
+    recruiting:
+      from: 66
+      to: 68
+    man_management:
+      from: 73
+      to: 74
+    motivation:
+      from: 72
+      to: 73
+    scheme_design:
+      from: 48
+      to: 52
+    game_management:
+      from: 50
+      to: 54
+    staff_management:
+      from: 58
+      to: 62
+    administrative:
+      from: 71
+      to: 73
+    media_relations:
+      from: 55
+      to: 57
+  evaluation_patch:
+    likely_score: 65
+    trajectory: Building
+    scheme_mastery: 60
+    promotion_readiness: N/A
+    risk_flag: Year 1 losing record; must improve in Year 2

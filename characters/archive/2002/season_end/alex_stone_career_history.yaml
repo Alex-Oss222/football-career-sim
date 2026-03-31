@@ -1,0 +1,253 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2003-01-20'
+  career_turn: 44
+  sim_phase: 2002 Season End — Pre-Exit Snapshot
+  archive_note: 2002 season_end snapshot
+career_history:
+- turn: 12
+  date_range: 2000-01-03 to 2000-01-14
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Season End — Exit Meetings / Offseason Evaluation
+  summary: 'Stone resolved the season_end node through Eagles exit meetings and offseason evaluation after an 8-8 season. The organizational verdict was strongly positive: he learned the system fast enough, became a reliable weekly offensive support coach, handled hierarchy correctly, and earned a return for 2000. He was not promoted, but he exited Year 1 as a legitimate internal development candidate rather than a novelty former star.'
+  results:
+  - Received a strong year-one internal evaluation from Reid and an especially strong endorsement from Dowhower.
+  - Retained by Philadelphia for the 2000 cycle as Offensive Quality Control.
+  - Renegotiated and accepted a one-year renewal at $40,000.
+  - Left the season-end node with improved promotion viability but no automatic title change because no opening forced the issue.
+- turn: 25
+  date_range: 2000-10-23 to 2000-12-24
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Regular Season — Stretch Run / Playoff Qualification
+  summary: Philadelphia finished the 2000 regular season at 11-5 and qualified for the NFC Wild Card round. Stone completed the stretch run as a more broadly trusted Year 2 offensive QC whose first-pass support work was useful across self-scout, QB prep, WR spacing, and protection cleanup. He stayed fully inside the QC role the entire time.
+  results:
+  - Eagles went 6-2 over the final eight games and reached the playoffs at 11-5.
+  - Stone’s weekly support footprint widened in a believable way across the offensive workflow without changing his title.
+  - Late-season stress rose under the heavier weekly grind, but work quality held.
+- turn: 26
+  date_range: 2000-12-30 to 2000-12-31
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Playoffs — NFC Wild Card
+  summary: 'Philadelphia beat Tampa Bay 17-9 in the NFC Wild Card round and advanced to the Divisional round. Stone remained fully inside the QC role, but his playoff-week work was among the cleanest of his season: tighter pressure packets, cleaner protection support, sharper third-down help, and better narrowing under compressed time.'
+  results:
+  - First playoff win of Stone’s coaching career.
+  - Eagles advanced to the Divisional round.
+  - Stone handled playoff prep without any authority jump, but with stronger proof that his first-pass support could hold up under postseason pressure.
+- turn: 27
+  date_range: 2001-01-06 to 2001-01-08
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Playoffs — Divisional Round / Season End Transition
+  summary: 'Philadelphia lost 20-10 at New York in the NFC Divisional round, ending the 2000 season. Stone remained fully inside the QC role, but the week reinforced that his Year 2 growth was real: better self-scout cleanup, cleaner pressure and protection support, sharper third-down help, and steadier output under playoff compression.'
+  results:
+  - Eagles were eliminated in the Divisional round after an 11-5 season and one playoff win.
+  - Stone completed his second coaching season as a more trusted, more versatile QC without crossing role boundaries.
+- turn: 28
+  date_range: 2001-01-08 to 2001-01-20
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Offseason Evaluation & 2001 Job Cycle
+  summary: Philadelphia evaluated Stone strictly on the QC role and the support work he actually handled. He scored 86/100, the Eagles offered a Year 3 QC renewal at $50,000, and Reid and Dowhower approved true outside promotion interviews rather than block him.
+  results:
+  - Internal promotion denied because no clear Level 1 opening existed and staff continuity was favored.
+  - Philly renewal offered with a raise but no title inflation.
+  - Stone entered the market with a real floor and a narrow, legitimate TE-coach promotion market.
+- turn: 29
+  date_range: 2001-01-20 to 2001-01-23
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Offseason — 2001 Cycle Start
+  summary: After weighing the promotion market, Stone chose continuity and re-signed with Philadelphia on a negotiated two-year staff deal. The title stayed Offensive QC, but the deal length and raise reflected that the Eagles saw him as real offensive infrastructure rather than a disposable low-level assistant.
+  results:
+  - Accepted a two-year Eagles continuity deal worth $50,000 in 2001 with a built-in 2002 raise if the role stayed unchanged.
+  - Stayed in Reid’s offensive tree rather than take a lateral QC job elsewhere.
+  - Entered Year 3 with higher internal trust and a clearer path to a future Level 1 opening if one emerged.
+  state_changes:
+    stress:
+      from: 68
+      to: 66
+    job_security:
+      from: 97
+      to: 98
+    salary:
+      from: 40000
+      to: 50000
+- turn: 35
+  date_range: 2001-02-01 to 2002-01-28
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: 2001 Season End — Pre-Exit Snapshot
+  summary: 'Philadelphia went 11-5, won the NFC East, reached the NFC Championship, and Stone completed the strongest QC season of his career. He was still doing the ordinary labor of the job, but the way he did it had changed: cleaner first-pass packets, stronger self-scout detail, broader cross-room usefulness, better playoff-week narrowing, and more trust from the offensive staff without any fake authority jump.'
+  results:
+  - Remained fully inside the QC role on a conference-title contender.
+  - Became real offensive infrastructure rather than a developmental novelty.
+  - Exited the season with a strong Level 1 case if a true internal opening appeared.
+  state_changes:
+    stress:
+      from: 66
+      to: 78
+    job_security:
+      from: 98
+      to: 99
+    recruiting_network:
+      from: 48
+      to: 52
+    media_relations:
+      from: 42
+      to: 44
+    staff_management:
+      from: 50
+      to: 52
+    investigation_detail:
+      from: 52
+      to: 54
+    combine_eval:
+      from: 58
+      to: 60
+    andy_reid:
+      from: 86
+      to: 87
+    brad_childress:
+      from: 77
+      to: 80
+    pat_shurmur:
+      from: 68
+      to: 72
+    david_culley:
+      from: 60
+      to: 64
+    juan_castillo:
+      from: 66
+      to: 68
+  evaluation_patch:
+    likely_score: 89
+    trajectory: Rising
+    scheme_mastery: 86
+    promotion_readiness: Real
+    risk_flag: Structural
+    note: Stone was still evaluated only as a QC and on the extra duties he was actually given, not as a pretend position coach.
+- turn: 36
+  date_range: 2002-01-28 to 2002-02-05
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: Offseason — Internal Promotion / 2002 Cycle Start
+  summary: After the 2001 season, Rod Dowhower left the offensive coordinator role, Brad Childress was elevated to coordinator, Pat Shurmur moved from the TE room to quarterbacks, and Stone was promoted internally to tight ends coach. The promotion was not a pity award; it happened because a real Level 1 opening finally existed inside a staff that already trusted him and because his three-year QC evaluation had crossed from emerging to real.
+  results:
+  - Promoted internally from Offensive QC to Tight Ends Coach for the 2002 season.
+  - Compensation reopened and the final year of his continuity deal was amended to position-coach money.
+  - Inherited his first NFL room inside a system he already knew cold.
+  state_changes:
+    stress:
+      from: 78
+      to: 71
+    job_security:
+      from: 99
+      to: 96
+    salary:
+      from: 50000
+      to: 140000
+    level:
+      from: 0
+      to: 1
+    cap:
+      from: 60
+      to: 75
+    teaching:
+      from: 60
+      to: 64
+    tactical_knowledge:
+      from: 60
+      to: 62
+    andy_reid:
+      from: 87
+      to: 88
+    brad_childress:
+      from: 80
+      to: 82
+    pat_shurmur:
+      from: 72
+      to: 78
+    juan_castillo:
+      from: 68
+      to: 70
+- turn: 44
+  date_range: 2002-02-05 to 2003-01-20
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: 2002 Season End — Pre-Exit Snapshot
+  summary: Philadelphia went 12-4, earned the NFC’s top seed, beat Atlanta in the Divisional round, and lost to Tampa Bay in the NFC Championship game. Stone’s first season as a position coach was credible, useful, and believable. He owned meetings, grading, room detail, and weekly corrections, and he kept the TE room integrated with the larger offensive structure instead of coaching it in isolation.
+  results:
+  - Established himself as a legitimate NFL position coach rather than a QC project.
+  - Handled full room ownership on a contender without role inflation or savior storytelling.
+  - Exited Year 1 as a position coach with a solid internal future, though not yet as any kind of coordinator candidate.
+  state_changes:
+    stress:
+      from: 71
+      to: 83
+    job_security:
+      from: 96
+      to: 98
+    tactical_knowledge:
+      from: 62
+      to: 66
+    teaching:
+      from: 64
+      to: 68
+    leadership:
+      from: 61
+      to: 64
+    recruiting:
+      from: 54
+      to: 56
+    man_management:
+      from: 61
+      to: 64
+    motivation:
+      from: 61
+      to: 63
+    scheme_design:
+      from: 61
+      to: 62
+    player_evaluation:
+      from: 60
+      to: 61
+    media_relations:
+      from: 44
+      to: 45
+    staff_management:
+      from: 56
+      to: 60
+    administrative:
+      from: 61
+      to: 63
+    development_expertise:
+      from: 64
+      to: 68
+    investigation_detail:
+      from: 55
+      to: 56
+    andy_reid:
+      from: 88
+      to: 89
+    brad_childress:
+      from: 82
+      to: 84
+    pat_shurmur:
+      from: 78
+      to: 80
+    david_culley:
+      from: 65
+      to: 66
+    juan_castillo:
+      from: 70
+      to: 73
+  evaluation_patch:
+    likely_score: 81
+    trajectory: Rising
+    scheme_mastery: 89
+    promotion_readiness: Established Level 1 coach; not yet a coordinator candidate
+    risk_flag: First-year room leader

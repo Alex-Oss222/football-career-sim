@@ -1,0 +1,164 @@
+mode: COACHING
+tape: MODE B (engine-generated; archived snapshot)
+identity:
+  name: Alex-Lamar Stone
+  age: 41
+  current_role: University of Memphis — Head Coach
+  previous_role: University of Memphis — Head Coach
+  level: 3
+  level_label: Head Coach (College)
+timeline:
+  career_turn: 104
+  season_turn: 9
+  phase: Season End — Postseason / Offseason Evaluation
+  previous_phase: Conference USA Championship Game / Bowl Game
+  last_resolved_date: '2008-12-28'
+  date: '2008-12-29'
+  next_event: Offseason evaluation and job cycle — NFL interest expected
+  calendar_frozen: true
+  resume_anchor:
+    exact_pickup_date: '2008-12-29'
+    reason: Snapshot captured after the 2008 season concluded. Memphis went 9-4 with a Conference USA division title. Stone's best year as HC and a potential springboard to the NFL.
+calendar_state:
+  calendar_file: teams/memphis/2008/memphis_calendar_2008.yaml
+  previous_node: bowl_game
+  current_node: season_end
+  current_week_label: 2008 Season End
+  next_node: null
+  continuation_note: The 2008 season is complete. Stone's NFL return is a real possibility during the 2009 coaching cycle.
+record:
+  regular_season_record: 9-4
+  postseason_record: Included in overall record (conference championship game + bowl)
+  division_finish: 1st — Conference USA East Division
+  playoffs: Conference USA Division Champion
+  team: University of Memphis
+  team_ovr: N/A
+job_status:
+  job_security: 90
+  stress: 72
+  contract:
+    status: Active
+    team: University of Memphis
+    title: Head Coach
+    term_years: 4
+    cycle: 2006-2009
+    salary: 500000
+    accepted: true
+    note: Year 3 of 4 completed. The 9-4 season and division title will generate NFL interest and potential extension offers.
+  applications_active: 0
+  offers_pending: 0
+  retention_status: Under contract for 2009; NFL interest expected
+  evaluation_projection:
+    likely_score: 84
+    trajectory: Rising
+    scheme_mastery: 74
+    promotion_readiness: Ready for NFL coordinator role
+    risk_flag: Potential departure to NFL
+offseason_status:
+  time_bubble_active: true
+  bubble_stage: Season Close / Job Cycle
+  era_ruleset: NCAA_2000
+  evaluation_score: Pending
+  trajectory: Rising
+  club_decision: Under contract; extension offered
+  outside_interest: Active — NFL coordinator-level interest
+  interview_access: Open to NFL opportunities
+  transition_pending: true
+coaching_attributes:
+  cap: 85
+  core:
+    TAC: 66
+    TCH: 69
+    LDR: 78
+    REC: 72
+    MAN: 78
+    MOT: 77
+  scheme:
+    SDN: 60
+    GMG: 62
+    PEV: 62
+    MED: 62
+    STF: 68
+    ADM: 77
+  advanced:
+    DEV: 70
+    INV: 68
+    CNT: 56
+    CMB: 70
+    TRD: 52
+  traits:
+    Disciplinarian: 34
+    Players_Coach: 36
+    Innovator: 36
+    Traditionalist: 14
+finances:
+  net_worth: 10950000
+  annual_expenses: 555000
+  salary: 500000
+  financial_pressure: None
+team_context:
+  team: University of Memphis
+  head_coach: Alex-Lamar Stone
+  offensive_coordinator: Staff retained
+  defensive_coordinator: Staff retained
+  role_context_note: Stone's best season as HC — 9-4 with a division title. The program has been fully rebuilt from the 4-8 Year 1 to a conference contender.
+room_context:
+  room: Full Program
+  room_summary: The program peaked under Stone. His recruits dominate the roster, the offense is productive and well-designed, and the defense is competent. The division title validates three years of program-building.
+relationships:
+  Don_Coryell:
+    score: 80
+    status: Strong reference; stable
+  Bobby_Ross:
+    score: 75
+    status: Strong reference; stable
+  University_of_Miami_Connections:
+    score: 67
+    status: Strong college network
+  Andy_Reid:
+    score: 85
+    status: Strong external reference; may reconnect if Stone pursues NFL return
+  Rod_Dowhower:
+    score: 93
+    status: Former mentor; proud of Stone's HC development
+  Brad_Childress:
+    score: 81
+    status: External reference; Vikings HC
+  Memphis_Administration:
+    score: 80
+    status: Very strong trust; extension offered; worried about losing Stone to NFL
+  Memphis_Staff:
+    score: 78
+    status: Three years of shared success built deep loyalty and trust
+  Conference_USA_Network:
+    score: 55
+    status: Established — Stone is a known and respected name in the conference
+  NFL_Coaching_Network:
+    score: 40
+    status: Re-emerging — Stone's Memphis success has reactivated NFL coaching circles' awareness of him
+personal_development:
+  system_familiarity:
+    system: Stone's adapted WCO / DC-managed defense
+    time_in_system_completed: Three years of HC play-calling completed
+    status: Stone's offensive system is mature and competitive. His play-calling is decisive, creative, and game-plan specific. His game management has improved significantly since Year 1.
+  what_he_handled_well:
+  - Built a program from 4-8 to 9-4 in three years
+  - Won a Conference USA division title
+  - Play-calling reached a competitive level with creative concepts adapted from Reid's WCO
+  - Staff management and delegation matured — the DC ran a competent defense with Stone's oversight
+  - Recruiting pipeline produced real talent
+  - Managed the increased expectations and media attention of a winning program
+  what_stretched_him:
+  - The conference championship game exposed some in-game management gaps under the highest-pressure situations
+  - Managing the tension between staying at Memphis and pursuing NFL opportunities
+  - Keeping the staff together when success creates outside interest in his assistants
+active_consequences:
+- The 9-4 season and division title validate Stone's program-building and create a genuine NFL re-entry path.
+- His résumé now reads: HOF player, 6 years NFL coaching (Super Bowl staff), 1 year learning defense, 3 years building a college program from 4-8 to 9-4.
+- NFL coordinator-level interest is real — his combination of Reid WCO mastery, college HC play-calling experience, and defensive exposure makes him attractive.
+- The Chargers' passing game coordinator opening under Norv Turner is a natural fit given Stone's Coryell playing background.
+- Memphis will offer an extension, but Stone's trajectory points toward returning to the NFL at a coordinator level.
+last_3_turns_summary:
+- 'Turn 102: Memphis clinched the Conference USA East Division title with a dominant stretch run.'
+- 'Turn 103: The conference championship game and bowl game concluded the 9-4 season.'
+- 'Turn 104: Stone''s best year as HC validated his program-building and created real NFL interest.'
