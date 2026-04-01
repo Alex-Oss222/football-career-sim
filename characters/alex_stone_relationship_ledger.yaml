@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '2012-01-16'
-  career_turn: 143
-  sim_phase: Offseason — Staff Hiring & Transition
+  date: '2012-02-21'
+  career_turn: 145
+  sim_phase: Offseason — 2012 Roster Evaluation & Draft Board Alignment
   archive_note: 2012 interview-window snapshot
 relationships:
 - name: Don Coryell
@@ -111,24 +111,26 @@ relationships:
   delta: -2
  - name: Shad Khan
    role: Owner, Jacksonville Jaguars
-   score: 75
-   previous_score: 70
-   delta_this_turn: 5
+   score: 78
+   previous_score: 75
+   delta_this_turn: 3
    trend: building
    status: team_owner
    notes:
    - Khan hired Stone as his first head coach and has placed initial trust in him. After seeing Stone assemble a competent staff, his confidence grew.
-   delta: 75
+   - The series of February roster‑evaluation meetings aligned Khan with Stone’s foundation‑first philosophy, further increasing his trust.
+   delta: 78
  - name: Gene Smith
    role: General Manager, Jacksonville Jaguars
-   score: 68
-   previous_score: 65
-   delta_this_turn: 3
+   score: 70
+   previous_score: 68
+   delta_this_turn: 2
    trend: building
    status: general_manager
    notes:
    - Smith collaborated with Stone during the interview process and supported his staff assembly efforts.  Confidence in Stone increased after seeing the staff come together.
-   delta: 68
+   - Smith appreciated Stone’s willingness to revise the offseason plan toward a foundation‑first philosophy and felt more aligned with the new strategy.
+   delta: 70
  - name: Doug Pederson
    role: Assistant Head Coach / Offensive Coordinator, Jacksonville Jaguars
    score: 70
@@ -326,3 +328,13 @@ relationship_events:
   - name: Rich Bisaccia
     delta: 70
     note: New relationship established as special teams coordinator.
+ - turn: 145
+   date: '2012-02-21'
+   event: Stone convened roster‑evaluation meetings with his staff, GM Gene Smith, owner Shad Khan, scouts and finance officials to refine the offseason plan.  The group shifted from a win‑now offensive splash to a foundation‑first philosophy, agreeing to invest in the offensive line and secondary, re‑sign key veterans and pursue a moderate veteran receiver while using the draft to secure a long‑term No. 1 wideout.
+   effects:
+   - name: Shad Khan
+     delta: 3
+     note: Alignment on the foundation‑first philosophy strengthened Khan’s trust.
+   - name: Gene Smith
+     delta: 2
+     note: Collaborative planning improved Smith’s confidence in Stone’s strategic vision.
