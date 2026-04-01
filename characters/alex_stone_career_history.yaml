@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '2012-04-28'
-  career_turn: 148
-  sim_phase: Offseason — 2012 NFL Draft & Rookie Integration
+  date: '2012-09-01'
+  career_turn: 150
+  sim_phase: Preseason — 2012 Training Camp & Roster Cutdown
   archive_note: 2012 interview-window snapshot
 career_history:
 - turn: 12
@@ -244,6 +244,50 @@ career_history:
       job_security:
         from: 80
         to: 82
+      salary:
+        from: 3375000
+        to: 3375000
+
+  - turn: 149
+    date_range: 2012-04-28 to 2012-05-05
+    team: Jacksonville Jaguars
+    role: Head Coach
+    phase: Offseason — 2012 Rookie Orientation & UDFA Signings
+    summary: After the draft Stone and the Jaguars front office focused on undrafted free agents and rookie orientation.  They signed punter Johnny Hekker, safety Tashaun Gipson, defensive back Michael Thomas, cornerback Chase Minnifield, receivers Kevin Elliott and Derek Moye, safety Antonio Allen and interior lineman George Bryan to low‑cost three‑year contracts.  Stone led rookie orientation and minicamp sessions to install the playbook, set cultural expectations and evaluate developmental talent.
+    results:
+    - Signed Johnny Hekker (P), Tashaun Gipson (S), Michael Thomas (DB), Chase Minnifield (CB), Kevin Elliott (WR), Antonio Allen (S), Derek Moye (WR) and George Bryan (IOL) as priority undrafted free agents.
+    - Conducted rookie orientation and minicamp to teach the offensive and defensive systems and establish team standards.
+    - Ensured all draft picks and UDFA signings were under contract and ready for OTAs.
+    state_changes:
+      stress:
+        from: 80
+        to: 82
+      job_security:
+        from: 82
+        to: 82
+      salary:
+        from: 3375000
+        to: 3375000
+
+  - turn: 150
+    date_range: 2012-05-06 to 2012-09-01
+    team: Jacksonville Jaguars
+    role: Head Coach
+    phase: Preseason — 2012 Training Camp & Roster Cutdown
+    summary: Over the course of OTAs, minicamp and training camp Stone installed his dual‑system offense and Todd Bowles’s defense, instituted rigorous conditioning tests and accountability standards, and evaluated veterans and rookies across four preseason games.  He balanced teaching with discipline, refined Blaine Gabbert’s mechanics, integrated rookies Luke Kuechly, Bobby Wagner and T.Y. Hilton into starting roles, and made difficult cutdown decisions.  The Jaguars finished the preseason 2–2 and finalised a 53‑man roster ready for the regular season.
+    results:
+    - Oversaw OTAs and minicamp, focusing on playbook installation, conditioning and cultural standards.
+    - Managed a physical training camp with full‑padded practices, establishing tone and accountability.
+    - Evaluated players in four preseason games (2–2 record) and refined the depth chart accordingly.
+    - Finalised the 53‑man roster on September 1: kept Blaine Gabbert as the starting quarterback with Chad Henne and Kirk Cousins behind him; Maurice Jones‑Drew and Alfred Morris as the running back tandem; Braylon Edwards, Cecil Shorts, T.Y. Hilton, Mike Thomas, Kevin Elliott and Derek Moye at receiver; Marcedes Lewis and Zach Potter at tight end; a starting offensive line of Eugene Monroe, Will Rackley, Brad Meester, Uche Nwaneri and Eric Winston with backups Cameron Bradfield, Mike Brewster, George Bryan and Eben Britton; a defensive front featuring Jeremy Mincey, Olivier Vernon, Tyson Alualu and Terrance Knighton with depth from John Abraham, Andre Carter, Scott Solomon, C.J. Mosley and D’Anthony Smith; a linebacking corps of Luke Kuechly, Bobby Wagner and Daryl Smith with backups Russell Allen, Julian Stanford and Kyle Bosworth; a secondary led by Aaron Ross, Derek Cox and Josh Norman at corner with Rashean Mathis and Chase Minnifield in reserve, and safeties Reggie Nelson, Dawan Landry, Dwight Lowery, Tashaun Gipson and Antonio Allen; and specialists Josh Scobee (K), Johnny Hekker (P) and Jeremy Cain (LS) with T.Y. Hilton handling returns.
+    - Entered the regular season with a cohesive roster and a defined identity on both sides of the ball.
+    state_changes:
+      stress:
+        from: 82
+        to: 83
+      job_security:
+        from: 82
+        to: 83
       salary:
         from: 3375000
         to: 3375000
