@@ -1,0 +1,382 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2012-09-30'
+  career_turn: 154
+  sim_phase: Regular Season — 2012 Week 4 Completed
+  archive_note: 2012 interview-window snapshot
+career_history:
+- turn: 12
+  date_range: 2000-01-03 to 2000-01-14
+  team: Philadelphia Eagles
+  role: Offensive Quality Control
+  phase: Season End — Exit Meetings / Offseason Evaluation
+  summary: Retained for 2000 as QC at $40,000.
+  results:
+  - Strong endorsement from Reid and Dowhower.
+- turn: 36
+  date_range: 2002-01-28 to 2002-02-05
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: Offseason — Internal Promotion / 2002 Cycle Start
+  summary: Promoted internally to Tight Ends Coach at $140,000.
+  results:
+  - Inherited his first NFL room.
+- turn: 64
+  date_range: 2004-02-10 to 2005-02-07
+  team: Philadelphia Eagles
+  role: Tight Ends Coach
+  phase: 2004 Season End — Pre-Exit Snapshot
+  summary: Philadelphia went 13-3, lost Super Bowl XXXIX.
+  results:
+  - Super Bowl appearance on his résumé.
+- turn: 74
+  date_range: 2005-03-02 to 2005-11-27
+  team: University of Memphis
+  role: Defensive Backs Coach
+  phase: 2005 Season End — Pre-Exit Snapshot
+  summary: Memphis went 5-6. Stone learned defense.
+  results:
+  - Gained functional defensive knowledge.
+- turn: 84
+  date_range: 2006-01-11 to 2006-11-26
+  team: University of Memphis
+  role: Head Coach
+  phase: 2006 Season End — Pre-Exit Snapshot
+  summary: Memphis went 4-8 in Year 1.
+  results:
+  - Cultural improvement without wins.
+- turn: 94
+  date_range: 2007-01-16 to 2007-11-25
+  team: University of Memphis
+  role: Head Coach
+  phase: 2007 Season End — Pre-Exit Snapshot
+  summary: Memphis went 7-5 in Year 2. Bowl eligible.
+  results:
+  - Three-win improvement.
+- turn: 104
+  date_range: 2008-01-16 to 2008-12-29
+  team: University of Memphis
+  role: Head Coach
+  phase: 2008 Season End — Pre-Exit Snapshot
+  summary: Memphis went 9-4. Conference USA East Division title. Three-year HC record 20-17.
+  results:
+  - Best season in recent Memphis history.
+- turn: 114
+  date_range: 2009-02-11 to 2010-01-18
+  team: San Diego Chargers
+  role: Passing Game Coordinator
+  phase: 2009 Season End — Pre-Exit Snapshot
+  summary: San Diego went 13-3, lost Divisional Round.
+  results:
+  - Contributed to a top-tier NFL passing offense.
+- turn: 124
+  date_range: 2010-02-09 to 2011-01-09
+  team: Arizona Cardinals
+  role: Offensive Coordinator
+  phase: 2010 Season End — Pre-Exit Snapshot
+  summary: Arizona went 7-9 in Stone's first full NFL OC season. The offense was still forming, but the structure and identity took hold.
+  results:
+  - Completed his first full NFL offensive coordinator season.
+  - Established a coherent NFL offensive identity on a normal roster.
+  - Shifted from coordinator candidate to actual NFL OC proof.
+- turn: 134
+  date_range: 2011-01-10 to 2012-01-08
+  team: Arizona Cardinals
+  role: Offensive Coordinator
+  phase: 2011 Season End — Pre-Exit Snapshot
+  summary: Arizona went 9-7 after a 1-6 start, closing 8-1. Stone's offense became the clearest positive driver of the turnaround.
+  results:
+  - Completed his second NFL OC season.
+  - Late-season surge established real offensive credibility.
+  - Entered the HC conversation as a serious candidate.
+- turn: 136
+  date_range: 2012-01-09 to 2012-01-15
+  team: Arizona Cardinals
+  role: Offensive Coordinator
+  phase: Offseason — 2012 HC Interview Window Active
+  summary: Stone remains Arizona's offensive coordinator after back-to-back credible seasons and is now drawing head coaching interview attention.
+  results:
+  - Employed, not free agent.
+  - Active in the HC interview market.
+  - Résumé at its strongest point: dual-system mastery, real NFL OC proof, play-calling experience, defensive exposure, and program-building track record.
+  state_changes:
+    stress:
+      from: 74
+      to: 69
+    job_security:
+      from: 71
+      to: 74
+    salary:
+      from: 700000
+      to: 700000
+  - turn: 142
+   date_range: 2012-01-15 to 2012-01-16
+   team: Jacksonville Jaguars
+   role: Head Coach
+   phase: Offseason — 2012 HC Contract Resolution & Staff Hiring
+   summary: Stone negotiated and accepted the Jacksonville Jaguars head‑coaching job. He signed a four‑year, $13.6 million contract (average $3.4 million per year) with years one and two fully guaranteed ($6.8 million) and performance escalators in years three and four tied to wins and playoff berths. He secured full authority to hire coordinators and withdrew from the Indianapolis waitlist.
+   results:
+   - Signed first NFL head‑coaching contract.
+   - Secured coordinator hiring authority and full control over staff assembly.
+   - Transitioned from offensive coordinator to head coach.
+   - Concluded the 2012 head‑coaching interview cycle.
+   state_changes:
+     stress:
+       from: 69
+       to: 74
+     job_security:
+       from: 74
+       to: 78
+     salary:
+       from: 700000
+       to: 3375000
+  - turn: 143
+    date_range: 2012-01-16 to 2012-02-01
+    team: Jacksonville Jaguars
+    role: Head Coach
+    phase: Offseason — 2012 Staff Hiring & Transition
+    summary: Stone assembled his inaugural Jacksonville coaching staff and prepared to implement his 100‑day plan.
+    results:
+    - Hired assistant head coach/offensive coordinator Doug Pederson on a three‑year, $1.9M contract.
+    - Hired defensive coordinator Todd Bowles on a three‑year, $2.1M contract.
+    - Signed Matt LaFleur (quarterbacks), Chris Foerster (run game/OL), Eric Bieniemy (running backs), Ike Hilliard (wide receivers), Freddie Kitchens (tight ends), Luke Getsy (offensive assistant), Andre Patterson (defensive line), Matt Eberflus (linebackers), Ed Donatell (defensive backs) and Rich Bisaccia (special teams) to multi-year deals.
+    - Conducted a full staff alignment meeting on January 29 and introduced the staff to the media on February 1.
+    - Completed the staff assembly phase and moved into roster evaluation and free agency planning.
+    state_changes:
+      stress:
+        from: 74
+        to: 77
+      job_security:
+        from: 78
+        to: 79
+      salary:
+        from: 3375000
+        to: 3375000
+  - turn: 144
+    date_range: 2012-02-01 to 2012-02-21
+    team: Jacksonville Jaguars
+    role: Head Coach
+    phase: Offseason — 2012 Roster Evaluation & Draft Board Alignment
+    summary: Stone led an extensive roster‑evaluation and strategic planning cycle.  Working with his newly assembled staff, general manager Gene Smith, owner Shad Khan and the club’s scouting and finance departments, he reassessed the initial free‑agency plan and draft board to ensure alignment with a foundation‑first philosophy.
+    results:
+    - Conducted daily meetings to critique the win‑now offensive plan and refocus on building the offensive line, secondary and long‑term offensive structure rather than paying a premium for marquee receivers and defenders.【372985519218166†L211-L217】【372985519218166†L241-L252】
+    - Shifted free‑agency priorities toward mid‑tier veterans (Reggie Wayne, Ben Grubbs, Brandon Carr) and re‑signing key contributors like Jeremy Mincey, while preserving cap flexibility.
+    - Finalised the offensive and defensive schemes, cultural standards and expectations with the staff.
+    - Confirmed the draft board anchored by wide receiver Justin Blackmon and established the rule that Jacksonville’s selections will swap with the players historically chosen in those slots.
+    - Produced a consensus foundation‑first plan by February 21, positioning the Jaguars for the scouting combine and free‑agency negotiations.
+    state_changes:
+      stress:
+        from: 77
+        to: 77
+      job_security:
+        from: 79
+        to: 79
+      salary:
+        from: 3375000
+        to: 3375000
+  - turn: 146
+    date_range: 2012-02-22 to 2012-02-28
+    team: Jacksonville Jaguars
+    role: Head Coach
+    phase: Offseason — 2012 Scouting Combine & Draft Board Finalisation
+    summary: Stone and his coaching staff attended the NFL scouting combine, evaluated targeted prospects and finalised the Jaguars’ draft board under the foundation‑first philosophy.
+    results:
+    - Evaluated top prospects including linebacker Luke Kuechly (4.58‑second 40, 38‑inch vertical, 11.43‑second 60‑yard shuttle)【459036554289166†L97-L104】, linebacker Bobby Wagner (4.45‑second 40, 39.5‑inch vertical, 11‑foot broad jump)【600181430595093†L165-L173】 and receiver T.Y. Hilton (4.34‑second 40, game‑breaking speed)【777471514394376†L417-L423】.
+    - Debated mid‑round candidates such as edge rusher Olivier Vernon【881419948871879†L1045-L1047】, guard Brandon Brooks【968355876953202†L101-L110】, defensive tackle Akiem Hicks【600181430595093†L1398-L1407】 and center Ben Jones【881419948871879†L699-L700】, weighing athleticism versus power and scheme fit.
+    - Finalised a new draft board: Kuechly at pick 5, Wagner at 38, Hilton at 69/70, Vernon at 90 (if acquired), Kirk Cousins at 101, Josh Norman at 142, Alfred Morris via trade up (165–173), and Scott Solomon at 214.
+    - Reinforced consensus on the foundation‑first roster strategy and prepared Jacksonville for free‑agency negotiations.
+    state_changes:
+      stress:
+        from: 77
+        to: 78
+      job_security:
+        from: 79
+        to: 79
+      salary:
+        from: 3375000
+        to: 3375000
+  - turn: 147
+    date_range: 2012-02-28 to 2012-04-26
+    team: Jacksonville Jaguars
+    role: Head Coach
+    phase: Offseason — 2012 Free Agency & Draft Preparation
+    summary: Over the six weeks leading up to the 2012 NFL draft, Stone managed free‑agency negotiations, trades and roster cuts to align Jacksonville’s roster with his foundation‑first philosophy.
+    results:
+    - Traded middle linebacker Paul Posluszny to the Chicago Bears for a 2012 fourth‑ and sixth‑round pick, keeping veteran Daryl Smith to mentor rookies Luke Kuechly and Bobby Wagner.
+    - Dealt backup quarterback Luke McCown to the Kansas City Chiefs for a 2013 seventh‑round pick.
+    - Cut eight veteran players (Greg Jones, Bryan Anger, Jordan Palmer, Isaiah Stanback, Quan Cosby, Chris Harris, Jason Spitz and Guy Whimper) to free cap space.
+    - Signed right tackle Eric Winston to a four‑year, $20M contract, a value deal compared to the four‑year, $22M contract he received from Kansas City in 2012【900258649864444†L325-L329】.
+    - Added veteran pass rushers Andre Carter (one‑year, $2M) and John Abraham (one‑year, $3M) and re‑signed Jeremy Mincey (four‑year, $20M), ensuring depth and continuity on the defensive line.
+    - Signed wide receiver Braylon Edwards (one‑year, $1.5M), quarterback Chad Henne (two‑year, $2.5M) and safety Reggie Nelson (three‑year, $15M) to address offensive and defensive needs without compromising future flexibility.
+    - Prepared a targeted undrafted free agent class headlined by punter Johnny Hekker and safety Tashaun Gipson, along with Michael Thomas, Chase Minnifield, Kevin Elliott, Antonio Allen and George Bryan, to be signed after the draft.
+    - Maintained alignment with GM Gene Smith and owner Shad Khan by executing disciplined roster moves that balanced immediate competitiveness with long‑term team building.
+    state_changes:
+      stress:
+        from: 78
+        to: 79
+      job_security:
+        from: 79
+        to: 80
+      salary:
+        from: 3375000
+        to: 3375000
+  - turn: 148
+    date_range: 2012-04-26 to 2012-04-28
+    team: Jacksonville Jaguars
+    role: Head Coach
+    phase: Offseason — 2012 NFL Draft & Rookie Integration
+    summary: During the 2012 NFL draft Stone executed the foundation‑first board and swap rule.  The Jaguars selected Luke Kuechly (LB) at pick 5, Bobby Wagner (LB) at 38, T.Y. Hilton (WR) at 70, Kirk Cousins (QB) at 101, traded up for Olivier Vernon (DE) using picks 115 and 180, drafted Josh Norman (CB) at 142, traded up to secure Alfred Morris (RB) in the mid‑sixth round and closed with Scott Solomon (DE) at 214.  Per the draft swap rule, Justin Blackmon went to Carolina, Andre Branch to Seattle, Bryan Anger to Indianapolis, linebacker Brandon Marshall to Carolina and defensive back Mike Harris to Washington.  The class aligned with the foundation‑first philosophy and added cornerstone players across the roster.
+    results:
+    - Selected Luke Kuechly (LB) at pick 5 and swapped Justin Blackmon to the Carolina Panthers.
+    - Selected Bobby Wagner (LB) at pick 38 and swapped Andre Branch to the Seattle Seahawks.
+    - Selected T.Y. Hilton (WR) at pick 70 and swapped Bryan Anger to the Indianapolis Colts.
+    - Combined picks 115 and 180 to trade up into the mid‑90s and select Olivier Vernon (DE).
+    - Drafted Kirk Cousins (QB) at pick 101 and swapped the historical Jaguars pick to Washington.
+    - Drafted Josh Norman (CB) at pick 142 and swapped linebacker Brandon Marshall to Carolina.
+    - Traded pick 176 and a 2013 seventh‑round pick to move into the 165–170 range and draft Alfred Morris (RB), sending defensive back Mike Harris to Washington.
+    - Selected Scott Solomon (DE) at pick 214.
+    - Finalised a strong draft class that balanced immediate contributors with long‑term building blocks and prepared for undrafted free agent signings.
+    state_changes:
+      stress:
+        from: 79
+        to: 80
+      job_security:
+        from: 80
+        to: 82
+      salary:
+        from: 3375000
+        to: 3375000
+
+  - turn: 149
+    date_range: 2012-04-28 to 2012-05-05
+    team: Jacksonville Jaguars
+    role: Head Coach
+    phase: Offseason — 2012 Rookie Orientation & UDFA Signings
+    summary: After the draft Stone and the Jaguars front office focused on undrafted free agents and rookie orientation.  They signed punter Johnny Hekker, safety Tashaun Gipson, defensive back Michael Thomas, cornerback Chase Minnifield, receivers Kevin Elliott and Derek Moye, safety Antonio Allen and interior lineman George Bryan to low‑cost three‑year contracts.  Stone led rookie orientation and minicamp sessions to install the playbook, set cultural expectations and evaluate developmental talent.
+    results:
+    - Signed Johnny Hekker (P), Tashaun Gipson (S), Michael Thomas (DB), Chase Minnifield (CB), Kevin Elliott (WR), Antonio Allen (S), Derek Moye (WR) and George Bryan (IOL) as priority undrafted free agents.
+    - Conducted rookie orientation and minicamp to teach the offensive and defensive systems and establish team standards.
+    - Ensured all draft picks and UDFA signings were under contract and ready for OTAs.
+    state_changes:
+      stress:
+        from: 80
+        to: 82
+      job_security:
+        from: 82
+        to: 82
+      salary:
+        from: 3375000
+        to: 3375000
+
+  - turn: 150
+    date_range: 2012-05-06 to 2012-09-01
+    team: Jacksonville Jaguars
+    role: Head Coach
+    phase: Preseason — 2012 Training Camp & Roster Cutdown
+    summary: Over the course of OTAs, minicamp and training camp Stone installed his dual‑system offense and Todd Bowles’s defense, instituted rigorous conditioning tests and accountability standards, and evaluated veterans and rookies across four preseason games.  He balanced teaching with discipline, refined Blaine Gabbert’s mechanics, integrated rookies Luke Kuechly, Bobby Wagner and T.Y. Hilton into starting roles, and made difficult cutdown decisions.  The Jaguars finished the preseason 2–2 and finalised a 53‑man roster ready for the regular season.
+    results:
+    - Oversaw OTAs and minicamp, focusing on playbook installation, conditioning and cultural standards.
+    - Managed a physical training camp with full‑padded practices, establishing tone and accountability.
+    - Evaluated players in four preseason games (2–2 record) and refined the depth chart accordingly.
+    - Finalised the 53‑man roster on September 1: kept Blaine Gabbert as the starting quarterback with Chad Henne and Kirk Cousins behind him; Maurice Jones‑Drew and Alfred Morris as the running back tandem; Braylon Edwards, Cecil Shorts, T.Y. Hilton, Mike Thomas, Kevin Elliott and Derek Moye at receiver; Marcedes Lewis and Zach Potter at tight end; a starting offensive line of Eugene Monroe, Will Rackley, Brad Meester, Uche Nwaneri and Eric Winston with backups Cameron Bradfield, Mike Brewster, George Bryan and Eben Britton; a defensive front featuring Jeremy Mincey, Olivier Vernon, Tyson Alualu and Terrance Knighton with depth from John Abraham, Andre Carter, Scott Solomon, C.J. Mosley and D’Anthony Smith; a linebacking corps of Luke Kuechly, Bobby Wagner and Daryl Smith with backups Russell Allen, Julian Stanford and Kyle Bosworth; a secondary led by Aaron Ross, Derek Cox and Josh Norman at corner with Rashean Mathis and Chase Minnifield in reserve, and safeties Reggie Nelson, Dawan Landry, Dwight Lowery, Tashaun Gipson and Antonio Allen; and specialists Josh Scobee (K), Johnny Hekker (P) and Jeremy Cain (LS) with T.Y. Hilton handling returns.
+    - Entered the regular season with a cohesive roster and a defined identity on both sides of the ball.
+    state_changes:
+      stress:
+        from: 82
+        to: 83
+      job_security:
+        from: 82
+        to: 83
+      salary:
+        from: 3375000
+        to: 3375000
+
+  - turn: 151
+    date_range: 2012-09-02 to 2012-09-10
+    team: Jacksonville Jaguars
+    role: Head Coach
+    phase: Regular Season — Week 1 Completed
+    summary: In Week 1 of the 2012 regular season Stone guided the Jaguars to a 23–17 road win at the Minnesota Vikings.  He emphasised a run‑first offense and quick‑game passing while the defense played fast and opportunistic.  The victory validated his foundation‑first approach and gave Jacksonville a 1–0 start.
+    results:
+    - Called a balanced game plan that produced more than 150 rushing yards between Maurice Jones‑Drew and Alfred Morris and efficient passing from Blaine Gabbert.
+    - Coordinated a defensive performance that held Adrian Peterson under 90 yards and forced two turnovers.
+    - Controlled field position and points through Johnny Hekker’s punts and Josh Scobee’s three field goals.
+    state_changes:
+      stress:
+        from: 83
+        to: 84
+      job_security:
+        from: 83
+        to: 84
+      salary:
+        from: 3375000
+        to: 3375000
+
+  - turn: 152
+    date_range: 2012-09-11 to 2012-09-17
+    team: Jacksonville Jaguars
+    role: Head Coach
+    phase: Regular Season — Week 2 Completed
+    summary: In Week 2 Jacksonville hosted the Houston Texans and suffered a 21–13 loss.  Stone stuck to his foundation‑first plan with inside zone, duo and stretch runs and quick‑game passes, but the Texans’ stout defensive front disrupted the offense and a fourth‑quarter strip‑sack set up the decisive touchdown.  The defeat dropped the Jaguars to 1–1 and highlighted the need for improved pass protection and more explosive plays.
+    results:
+    - Opened the game with inside and outside zone runs and quick passes to Braylon Edwards, Cecil Shorts and Marcedes Lewis, setting up two Josh Scobee field goals to keep pace early.
+    - Adjusted at halftime by incorporating play‑action passes and using T.Y. Hilton on deep crossing routes, resulting in a 20‑yard touchdown catch that brought Jacksonville within one point.
+    - Despite holding Arian Foster under 100 yards and forcing a turnover, the defense conceded two key scoring drives to Matt Schaub and Andre Johnson.
+    - A strip‑sack by J.J. Watt late in the fourth quarter set up Houston’s final touchdown, sealing a 21–13 loss and emphasising the need to shore up pass protection and generate offensive explosives.
+    state_changes:
+      stress:
+        from: 84
+        to: 85
+      job_security:
+        from: 84
+        to: 83
+      salary:
+        from: 3375000
+        to: 3375000
+
+  - turn: 153
+    date_range: 2012-09-18 to 2012-09-24
+    team: Jacksonville Jaguars
+    role: Head Coach
+    phase: Regular Season — Week 3 Completed
+    summary: In Week 3 the Jaguars traveled to Indianapolis and defeated the Colts 28–21.  Stone started rookie quarterback Kirk Cousins and called an aggressive, adaptable game plan featuring tempo, play‑action and intermediate passing.  Cousins connected with T.Y. Hilton for a 40‑yard touchdown, spread the ball to Braylon Edwards and Cecil Shorts, and delivered two fourth‑quarter scoring drives, while the defense intercepted Andrew Luck and pressured him into hurried throws.  The victory lifted Jacksonville to 2–1 and demonstrated the offense’s ability to win without leaning on a run‑heavy script.
+    results:
+    - Inserted rookie Kirk Cousins as the starting quarterback and leveraged quick‑game, bootleg and play‑action concepts to neutralise Indianapolis’s pass rush.
+    - Hit T.Y. Hilton on a deep crossing route for a 40‑yard touchdown and later found Marcedes Lewis twice in the red zone, including the go‑ahead score late in the fourth quarter.
+    - Mixed draws and misdirection runs to Maurice Jones‑Drew and Alfred Morris to keep the defense honest, though the emphasis was on the passing game.
+    - Bowles’s defense forced an early interception by Josh Norman and limited Andrew Luck’s explosives with disciplined rush lanes and coverage disguises.
+    - Improved to 2–1 on the season and boosted locker‑room confidence in Stone’s adaptability and Cousins’s readiness.
+    state_changes:
+      stress:
+        from: 85
+        to: 85
+      job_security:
+        from: 83
+        to: 84
+      salary:
+        from: 3375000
+        to: 3375000
+
+  - turn: 154
+    date_range: 2012-09-25 to 2012-09-30
+    team: Jacksonville Jaguars
+    role: Head Coach
+    phase: Regular Season — Week 4 Completed
+    summary: In Week 4 Jacksonville hosted the Cincinnati Bengals and suffered a narrow 24–20 loss.  Stone kept Kirk Cousins at quarterback and built a pass‑oriented game plan featuring stick, spacing and dagger concepts to exploit Cincinnati’s zone looks.  The Jaguars scored early on a deep post to T.Y. Hilton and used draws and delays to Maurice Jones‑Drew and Alfred Morris when the defense widened, but pressure from Geno Atkins and Carlos Dunlap forced a costly interception that Andy Dalton converted into an A.J. Green touchdown.  A late scoring drive highlighted by a bootleg flood to Marcedes Lewis and a jump‑ball touchdown to Braylon Edwards cut the deficit to four, yet the defense couldn’t regain possession.  The defeat dropped Jacksonville to 2–2 and underscored the need to protect the quarterback and finish drives.
+    results:
+    - Maintained Kirk Cousins as the starting quarterback and employed a wide array of passing concepts to attack Cincinnati’s defense across the field.
+    - Connected with T.Y. Hilton on a deep post for the opening touchdown and kept the Bengals off balance with draws and delayed handoffs.
+    - Struggled in the red zone, settling for two field goals and allowing a second‑half interception that was returned for a touchdown.
+    - Allowed two touchdowns to A.J. Green despite mixing cover 3 and match zone coverage schemes.
+    - Engineered a late touchdown drive but failed to secure a final stop, resulting in a 24–20 loss and a 2–2 record heading into Week 5 against Chicago.
+    state_changes:
+      stress:
+        from: 85
+        to: 86
+      job_security:
+        from: 84
+        to: 83
+      salary:
+        from: 3375000
+        to: 3375000

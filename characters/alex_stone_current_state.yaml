@@ -1,0 +1,646 @@
+mode: COACHING
+tape: MODE B (engine-generated; archived snapshot)
+identity:
+  name: Alex-Lamar Stone
+  age: 46
+  current_role: Jacksonville Jaguars — Head Coach
+  previous_role: San Diego Chargers — Passing Game Coordinator
+  level: 2
+  level_label: Coordinator (established NFL OC)
+timeline:
+  career_turn: 156
+  season_turn: 15
+  phase: Regular Season — 2012 Bye Week Completed
+  previous_phase: Regular Season — 2012 Week 5 Completed
+  last_resolved_date: '2012-10-21'
+  date: '2012-10-22'
+  next_event: 2012 Week 7 at Oakland Raiders
+  calendar_frozen: false
+  resume_anchor:
+    exact_pickup_date: '2012-10-22'
+    reason: >-
+      The Jaguars’ Week 6 bye provided a critical pause for recovery and self‑scouting.  Over the two‑week window from October 8 to October 21, Alex Stone met daily with his staff to analyse every snap from the first five games, focusing on protection calls, pre‑snap organisation, Kirk Cousins’s coverage recognition, third‑down execution and red‑zone efficiency.  He reduced practice volume to emphasise fundamentals and individual corrections while keeping conditioning sharp.  Offensively the staff trimmed slow‑developing concepts, expanded quick‑game and man‑beater packages, and built in more line‑of‑scrimmage answers.  Defensively Todd Bowles prioritised communication, tackling angles, third‑down disguise and pass‑rush rotation.  Special teams coordinator Rich Bisaccia evaluated return decisions and coverage lanes, ensuring hidden yardage wasn’t squandered.  Stone addressed the team, stressing accountability and improvement rather than rest, and reinforced cultural standards.  The bye week ended with a light competitive practice and an install preview for the Week 7 trip to Oakland.  Jacksonville emerges from the bye at 3–2 with clearer identity, sharper execution and renewed health.
+calendar_state:
+  calendar_file: null
+  previous_node: season_end_2011
+  current_node: hc_interview_cycle_2012
+  current_week_label: 2012 HC Interview Window Active
+  next_node: null
+  continuation_note: Stone is employed as Arizona's offensive coordinator. The 2011 season is over. This snapshot captures his state at the opening of the 2012 head coaching interview window.
+record:
+  regular_season_record: 9-7
+  postseason_record: N/A
+  division_finish: 2nd NFC West
+  playoffs: Missed on tiebreaker
+  team: Arizona Cardinals
+  team_ovr: N/A
+  note: Arizona started 1-6, finished 8-1, and became one of the league's strongest late-season offenses.
+job_status:
+  job_security: 84
+  stress: 85
+  contract:
+    status: Active
+    team: Jacksonville Jaguars
+    title: Head Coach
+    term_years: 4
+    cycle: 2012
+    salary: 3375000
+    accepted: true
+    note: Stone signed a four‑year contract worth $13.6 million (average $3.4 million annually) with the first two years fully guaranteed ($6.8 million). The deal includes performance escalators in years three and four tied to win totals and playoff berths and grants him full authority to hire his coordinators.
+  applications_active: 0
+  offers_pending: 0
+  retention_status: Employed — Jacksonville Jaguars HC
+  evaluation_projection:
+    likely_score: N/A
+    trajectory: Rising
+    scheme_mastery: 83
+    promotion_readiness: Ready for NFL head coaching interviews
+    risk_flag: Must choose next opportunity carefully; wrong HC landing spot could stall momentum
+offseason_status:
+  time_bubble_active: false
+  bubble_stage: In-Season — Week 7 Preparation
+  era_ruleset: NFL_2012
+  evaluation_score: N/A
+  trajectory: Rising
+  club_decision: Retained by Jacksonville; preparing for 2012 season
+  outside_interest: None — focused on Week 7 at Oakland preparation
+  interview_access: None — head coach contract active
+  transition_pending: false
+coaching_attributes:
+  cap: 87
+  core:
+    TAC: 84
+    TCH: 87
+    LDR: 85
+    REC: 82
+    MAN: 82
+    MOT: 83
+  scheme:
+    SDN: 82
+    GMG: 86
+    PEV: 79
+    MED: 82
+    STF: 84
+    ADM: 84
+  advanced:
+    DEV: 84
+    INV: 87
+    CNT: 82
+    CMB: 81
+    TRD: 83
+  traits:
+    Disciplinarian: 31
+    Players_Coach: 44
+    Innovator: 42
+    Traditionalist: 13
+finances:
+  net_worth: 13050000
+  annual_expenses: 620000
+  salary: 3375000
+  financial_pressure: None — deep net worth cushion
+team_context:
+  team: Jacksonville Jaguars
+  head_coach: Alex Stone
+  role_context_note: Stone accepted the Jacksonville head‑coaching job. He has hired his inaugural staff, will install his dual‑system offense and new defensive scheme, and will oversee roster building and cultural change.
+  coaching_staff:
+    assistant_head_coach_offensive_coordinator:
+      name: Doug Pederson
+      contract_years: 3
+      salary: 1900000
+      responsibilities: >-
+        Serves as assistant head coach and offensive coordinator.  Organises the weekly plan, supports quarterback development and game‑planning, and manages offensive meetings without taking play‑calling away from Stone.
+      background: >-
+        Former Philadelphia Eagles quarterbacks coach under Andy Reid.  Brings Reid‑tree structure and QB development expertise while fitting Stone’s system and respecting his play‑calling authority.
+    quarterbacks_coach:
+      name: Matt LaFleur
+      contract_years: 2
+      salary: 500000
+      responsibilities: >-
+        Works closely with quarterbacks on footwork, timing, play‑action mechanics and reading progressions within Stone’s rhythm‑and‑layered passing system.
+      background: >-
+        Young offensive coach with experience in the Shanahan and West Coast systems.  Offers high upside teaching and an excellent fit with Stone’s QB development philosophy.
+    run_game_coordinator_offensive_line:
+      name: Chris Foerster
+      contract_years: 3
+      salary: 850000
+      responsibilities: >-
+        Designs the run game and coaches the offensive line.  Emphasises both zone and gap concepts to make Stone’s offense physically real and balanced.
+      background: >-
+        Veteran offensive line coach with successful stops in Washington and San Francisco.  Known for adaptable run‑game schemes and detailed line teaching.
+    running_backs_coach:
+      name: Eric Bieniemy
+      contract_years: 2
+      salary: 450000
+      responsibilities: >-
+        Coaches running backs on rushing, receiving, and blitz pickup.  Ensures Maurice Jones‑Drew and backups are utilised in multiple ways.
+      background: >-
+        Former NFL running back and respected position coach.  Brings energy and developmental acumen to Jacksonville’s backfield.
+    wide_receivers_coach:
+      name: Ike Hilliard
+      contract_years: 2
+      salary: 450000
+      responsibilities: >-
+        Teaches route precision, spacing and timing to receivers.  Works to integrate young wideouts into Stone’s rhythm offense.
+      background: >-
+        Former NFL receiver and Buffalo Bills receivers coach.  Known for connecting with players and emphasising fundamentals.
+    tight_ends_coach:
+      name: Freddie Kitchens
+      contract_years: 2
+      salary: 400000
+      responsibilities: >-
+        Oversees tight end development, blocking and receiving.  Utilises Marcedes Lewis as a versatile focal point and ensures backups are prepared.
+      background: >-
+        Former Arizona Cardinals tight ends coach.  Familiar with Stone’s offense and provides continuity from their shared time in Arizona.
+    offensive_assistant:
+      name: Luke Getsy
+      contract_years: 2
+      salary: 300000
+      responsibilities: >-
+        Serves as a developmental assistant and quality control coach.  Assists with installation, scouting and game preparation across the offense.
+      background: >-
+        Young coach with a quarterback background and teaching skill.  Offers fresh ideas and supports long‑term coaching pipeline.
+    defensive_coordinator:
+      name: Todd Bowles
+      contract_years: 3
+      salary: 2100000
+      responsibilities: >-
+        Holds full ownership of the defense.  Designs the scheme, calls plays and manages defensive staff.  Provides a disciplined, aggressive identity to complement Stone’s offense.
+      background: >-
+        Respected defensive coach with experience in secondary play and interim defensive coordinator roles.  Balances aggression with structure.
+    defensive_line_coach:
+      name: Andre Patterson
+      contract_years: 2
+      salary: 500000
+      responsibilities: >-
+        Coaches the defensive line, emphasising technique, gap discipline and fundamental handwork.
+      background: >-
+        Veteran defensive line coach with numerous NFL and collegiate stops.  Known for developing Pro Bowl–caliber linemen through detailed teaching.
+    linebackers_coach:
+      name: Matt Eberflus
+      contract_years: 2
+      salary: 500000
+      responsibilities: >-
+        Develops linebackers with a focus on fundamentals, tackling and coverage discipline.  Bridges the front and back end of Bowles’s defense.
+      background: >-
+        Former Dallas Cowboys linebackers coach.  Respected teacher with a calm, disciplined approach.
+    defensive_backs_coach:
+      name: Ed Donatell
+      contract_years: 2
+      salary: 550000
+      responsibilities: >-
+        Oversees the secondary.  Installs coverage schemes, emphasises eye discipline and takeaway drills, and ensures alignment with Bowles’s system.
+      background: >-
+        Long‑time NFL defensive backs coach and defensive coordinator.  Brings veteran stability and coverage expertise.
+    special_teams_coordinator:
+      name: Rich Bisaccia
+      contract_years: 3
+      salary: 750000
+      responsibilities: >-
+        Leads special teams with an emphasis on discipline, field position and situational awareness.  Coordinates all phases and develops returners.
+      background: >-
+        Former Tampa Bay Buccaneers special teams coordinator and assistant head coach.  Highly respected special teams leader with a proven track record.
+
+  draft_board:
+    round_1_pick_5:
+      player: Luke Kuechly
+      position: Linebacker
+      college: Boston College
+      rationale: >-
+        Kuechly’s instinctive play and elite range were validated at the combine with a 4.58‑second 40‑yard dash, 38‑inch vertical and class‑best 11.43‑second 60‑yard shuttle【459036554289166†L97-L104】.  Drafting him at pick 5 adds a foundational leader to Jacksonville’s defense and swaps him with the historical selection.
+    round_2_pick_38:
+      player: Bobby Wagner
+      position: Linebacker
+      college: Utah State
+      rationale: >-
+        Wagner missed the combine due to pneumonia but posted a 4.45‑second 40, 39.5‑inch vertical and 11‑foot broad jump at his pro day【600181430595093†L165-L173】.  His sideline‑to‑sideline speed and tackling ability make him a perfect pairing with Kuechly.
+    round_3_pick_70:
+      player: T.Y. Hilton
+      position: Wide Receiver
+      college: Florida International
+      rationale: >-
+        Hilton ran a blazing 4.34‑second 40 at the combine and showcased game‑breaking ability and elusiveness in space【777471514394376†L417-L423】.  He offers a vertical and slot threat to complement the existing receiving corps.
+    round_4_pick_90:
+      player: Olivier Vernon
+      position: Defensive End
+      college: Miami (Florida)
+      rationale: >-
+        With a 4.73‑second 40‑yard dash, 34.5‑inch vertical and 31 bench‑press reps【881419948871879†L1045-L1047】, Vernon provides a high‑upside edge rusher who fits Todd Bowles’s scheme.  He is prioritised if Jacksonville acquires a pick in the 72–99 range.
+    round_4_pick_101:
+      player: Kirk Cousins
+      position: Quarterback
+      college: Michigan State
+      rationale: >-
+        Cousins’s 4.84‑second 40, 28.5‑inch vertical and 109‑inch broad jump【881419948871879†L465-L467】, combined with his leadership and accuracy, make him an ideal developmental backup to Blaine Gabbert.
+    round_5_pick_142:
+      player: Josh Norman
+      position: Cornerback
+      college: Coastal Carolina
+      rationale: >-
+        Norman’s size, ball skills and competitive edge provide depth at cornerback.  His 4.61‑second 40 and 33‑inch vertical translate to press coverage ability.
+    round_6_pick_173:
+      player: Alfred Morris
+      position: Running Back
+      college: Florida Atlantic
+      rationale: >-
+        Morris’s 4.64‑second 40, 35.5‑inch vertical and 9‑foot‑9 broad jump【792714866377261†L501-L516】 suit the zone‑run game and give Jacksonville a late‑round steal.  The team will trade up into the 165–173 range to secure him.
+    round_7_pick_214:
+      player: Scott Solomon
+      position: Defensive End
+      college: Rice
+      rationale: >-
+        Solomon’s 6‑foot‑3, 262‑pound frame and strong combine numbers (4.88‑second 40, 35‑inch vertical, 34 bench reps and 124‑inch broad jump) provide late‑round depth and special‑teams value.
+
+  free_agency_targets:
+    wide_receiver:
+      primary: Reggie Wayne
+      terms: 'Target a two‑year contract in the $12–15M range with moderate guarantees; focus on leadership and mentorship for a rookie No. 1.'
+      rationale: >-
+        Rather than paying a premium for Vincent Jackson, the Jaguars will pursue veteran Reggie Wayne.  Wayne’s precise route running, professionalism and experience in a timing offense complement Blackmon’s development and come at a manageable cost.  If Wayne returns to Indianapolis, the fallback plan is to sign Laurent Robinson.
+    guard:
+      primary: Ben Grubbs
+      terms: 'Aim for a 5‑year deal worth around $36–40M; cap the annual value at $8M to maintain flexibility.'
+      rationale: >-
+        Investing in the offensive line is a core pillar of the foundation‑first approach.  Grubbs provides immediate improvement in both run blocking and pass protection without the record‑setting cost of Carl Nicks.
+    cornerback:
+      primary: Brandon Carr
+      terms: 'Pursue a 5‑year contract worth $45–50M with front‑loaded guarantees; consider Cortland Finnegan if Carr signs elsewhere.'
+      rationale: >-
+        Carr’s press coverage ability and durability fit Bowles’s defense.  However, the organisation will not engage in a bidding war that compromises cap health.
+    pass_rusher:
+      primary: Jeremy Mincey (re‑sign)
+      terms: 'Offer a 4‑year, $20M extension with incentives to retain continuity; explore a one‑year deal for John Abraham as a rotational rusher.'
+      rationale: >-
+        Re‑signing Mincey preserves a key contributor at a reasonable price.  Adding a veteran like John Abraham provides mentorship and situational pass‑rush help without a long‑term commitment.
+    quarterback:
+      primary: Chad Henne
+      terms: 'One‑year, $2M contract with incentives to compete for the backup role.'
+      rationale: >-
+        A veteran backup protects against a Blaine Gabbert setback and does not preclude drafting a quarterback in later years.
+    secondary_depth:
+      primary: Reggie Nelson
+      terms: 'Three‑year, $15M contract; bring him back if the Bengals let him walk.'
+      rationale: >-
+        Nelson’s experience in Jacksonville and improved play in Cincinnati make him a stabilising force for a young secondary.
+  roster_moves:
+    trades:
+      - description: >-
+          Traded middle linebacker Paul Posluszny to the Chicago Bears for a 2012 fourth‑round pick (No. 115) and a 2012 sixth‑round pick (No. 180), freeing salary and creating draft capital to move up for Olivier Vernon and Alfred Morris.
+      - description: >-
+          Dealt backup quarterback Luke McCown to the Kansas City Chiefs for a 2013 seventh‑round pick, clearing room for Chad Henne and Kirk Cousins.
+    cuts:
+      - Greg Jones (FB)
+      - Bryan Anger (P)
+      - Jordan Palmer (QB)
+      - Isaiah Stanback (WR)
+      - Quan Cosby (WR)
+      - Chris Harris (S)
+      - Jason Spitz (G/C)
+      - Guy Whimper (OT)
+    signings:
+      - Eric Winston — Right Tackle — four‑year, $20M contract with $8M guaranteed.  A value deal compared to the four‑year, $22M contract he previously received from Kansas City in 2012【900258649864444†L325-L329】.
+      - Andre Carter — Defensive End/Edge — one‑year, $2M contract with incentives.  Adds veteran pass‑rush help and stabilises the edge rotation.
+      - Braylon Edwards — Wide Receiver — one‑year, $1.5M contract with incentives.  Provides a bigger outside body to complement Hilton, Robinson and Shorts.
+      - Jeremy Mincey — Defensive End — re‑signed to a four‑year, $20M extension with performance incentives to retain a key contributor.
+      - John Abraham — Defensive End — one‑year, $3M contract.  Serves as a rotational pass rusher and mentor for younger linemen.
+      - Chad Henne — Quarterback — two‑year, $2.5M contract with incentives to compete for the backup job.
+      - Reggie Nelson — Safety — three‑year, $15M contract.  Brings back an experienced safety to stabilise the secondary.
+    udfa_signings:
+      - Johnny Hekker — Punter — three‑year, $1.2M contract (low guarantees) to replace the cut punter Bryan Anger.
+      - Tashaun Gipson — Safety — three‑year, $1.8M contract as a developmental safety with upside.
+      - Michael Thomas — Defensive Back — three‑year, $1.5M contract providing versatile depth if available.
+      - Chase Minnifield — Cornerback — three‑year, $1.5M contract as a priority UDFA corner.
+      - Kevin Elliott — Wide Receiver — three‑year, $1.4M contract adding competition to the receiver room.
+      - Antonio Allen — Safety — three‑year, $1.5M contract to bolster depth in the defensive backfield.
+      - Derek Moye — Wide Receiver — three‑year, $1.4M contract providing a 6′5″ target with contested‑catch ability.
+      - George Bryan — Interior Offensive Lineman — three‑year, $1.3M contract as a developmental lineman.
+  draft_results:
+    picks:
+      - pick: 5
+        round: 1
+        player: Luke Kuechly
+        position: Linebacker
+        college: Boston College
+        swapped_player: Justin Blackmon
+        swapped_team: Carolina Panthers
+        rationale: >-
+          Kuechly’s elite range and instincts were confirmed at the combine with a 4.58‑second 40, 38‑inch vertical and 11.43‑second 60‑yard shuttle【459036554289166†L97-L104】.  Selecting him at five anchors Jacksonville’s defense for the next decade.
+      - pick: 38
+        round: 2
+        player: Bobby Wagner
+        position: Linebacker
+        college: Utah State
+        swapped_player: Andre Branch
+        swapped_team: Seattle Seahawks
+        rationale: >-
+          Wagner’s 4.45‑second 40‑yard dash and 39.5‑inch vertical from his pro day【600181430595093†L165-L173】 demonstrate the sideline‑to‑sideline speed and power that complement Kuechly.
+      - pick: 70
+        round: 3
+        player: T.Y. Hilton
+        position: Wide Receiver
+        college: Florida International
+        swapped_player: Bryan Anger
+        swapped_team: Indianapolis Colts
+        rationale: >-
+          Hilton ran a 4.34‑second 40 and showcased game‑breaking quickness and elusiveness【777471514394376†L417-L423】, providing a vertical and slot threat in Stone’s offense.
+      - pick: 101
+        round: 4
+        player: Kirk Cousins
+        position: Quarterback
+        college: Michigan State
+        swapped_player: Historical Jaguars pick at 101
+        swapped_team: Washington
+        rationale: >-
+          Cousins’s solid athleticism (4.84‑second 40, 28.5‑inch vertical)【881419948871879†L465-L467】 and leadership make him a reliable developmental quarterback behind Blaine Gabbert.
+      - pick: 90
+        round: 4 (via trade)
+        player: Olivier Vernon
+        position: Defensive End
+        college: Miami (Florida)
+        swapped_player: None
+        swapped_team: None
+        rationale: >-
+          With a 4.73‑second 40, 34.5‑inch vertical and 31 bench reps【881419948871879†L1045-L1047】, Vernon offers explosive edge potential.  Jacksonville traded picks 115 and 180 to move up and secure him.
+      - pick: 142
+        round: 5
+        player: Josh Norman
+        position: Cornerback
+        college: Coastal Carolina
+        swapped_player: Brandon Marshall (LB)
+        swapped_team: Carolina Panthers
+        rationale: >-
+          Norman’s size and ball skills bolster the secondary.  His 4.61‑second 40 and 33‑inch vertical translate to press coverage ability.
+      - pick: 168
+        round: 6 (via trade)
+        player: Alfred Morris
+        position: Running Back
+        college: Florida Atlantic
+        swapped_player: Mike Harris
+        swapped_team: Washington
+        rationale: >-
+          Morris’s 4.64‑second 40, 35.5‑inch vertical and 9‑foot‑9 broad jump【792714866377261†L501-L516】 suit the zone‑run game.  Jacksonville traded pick 176 and a 2013 seventh‑rounder to move up for him.
+      - pick: 214
+        round: 7
+        player: Scott Solomon
+        position: Defensive End
+        college: Rice
+        swapped_player: None
+        swapped_team: None
+        rationale: >-
+          Solomon’s 4.88‑second 40, 35‑inch vertical and 34 bench reps provide late‑round depth and special‑teams value.
+    trades:
+      - description: >-
+          Packaged picks 115 and 180 to move up into the mid‑90s and select Olivier Vernon, a high‑upside defensive end whose athletic profile fit Todd Bowles’s scheme.  With no prior Jaguars pick at that slot, no swap was required.
+      - description: >-
+          Traded pick 176 and a 2013 seventh‑round pick to move up into the 165–170 range for running back Alfred Morris, then sent cornerback Mike Harris (the historical pick at 176) to Washington under the swap rule.
+    udfa_signings:
+      - Johnny Hekker — P
+      - Tashaun Gipson — S
+      - Michael Thomas — DB
+      - Chase Minnifield — CB
+      - Kevin Elliott — WR
+      - Antonio Allen — S
+      - George Bryan — IOL
+    swap_summary: >-
+      Because Jacksonville selected players originally drafted by other teams, the swap rule reassigned their historical picks to those players’ original franchises: Justin Blackmon went to the Carolina Panthers, Andre Branch to the Seattle Seahawks, punter Bryan Anger to the Indianapolis Colts, linebacker Brandon Marshall to the Panthers, and defensive back Mike Harris to Washington.  Picks acquired via trade (e.g., for Olivier Vernon and Scott Solomon) had no prior Jaguars selections and thus required no swaps.
+
+  season_record:
+    wins: 3
+    losses: 2
+  game_results:
+    - week: 1
+      date: '2012-09-09'
+      opponent: Minnesota Vikings
+      site: Mall of America Field, Minneapolis
+      result: Win 23-17
+      summary: >-
+        Jacksonville executed a run-first game plan that controlled the ball, limited turnovers and created explosive play-action opportunities.  Maurice Jones‑Drew and Alfred Morris combined for over 150 rushing yards, while Blaine Gabbert completed high-percentage throws to Braylon Edwards and Cecil Shorts.  The defense, led by Luke Kuechly and Bobby Wagner, forced two turnovers and kept Adrian Peterson under 90 yards.  The special teams unit, keyed by punter Johnny Hekker and kicker Josh Scobee, won the field-position battle.  The victory opened the Stone era with a balanced, disciplined performance.
+
+    - week: 2
+      date: '2012-09-16'
+      opponent: Houston Texans
+      site: EverBank Field, Jacksonville
+      result: Loss 13-21
+      summary: >-
+        Jacksonville stuck to its foundation‑first philosophy by opening with inside zone, duo and stretch runs and using quick-game passes to Braylon Edwards, Cecil Shorts and Marcedes Lewis.  Josh Scobee’s field goals kept the game close, but Houston’s defensive front, led by J.J. Watt and Brian Cushing, disrupted the run game and recorded a decisive strip‑sack in the fourth quarter.  The defense held Arian Foster under 100 yards and forced one turnover, yet Matt Schaub and Andre Johnson capitalised on coverage lapses for two touchdowns.  A final Jaguars drive stalled near midfield.  The 21–13 loss dropped Jacksonville to 1–1 but reinforced the need for improved pass protection and explosive plays.
+
+    - week: 3
+      date: '2012-09-23'
+      opponent: Indianapolis Colts
+      site: Lucas Oil Stadium, Indianapolis
+      result: Win 28-21
+      summary: >-
+        With rookie quarterback Kirk Cousins making his first start, Stone abandoned a run‑first script in favour of tempo, formation diversity and intermediate passing.  Cousins executed quick‑game concepts to Braylon Edwards and Cecil Shorts and used play‑action to free T.Y. Hilton for a 40‑yard touchdown.  Maurice Jones‑Drew and Alfred Morris complemented the air attack with draws and misdirection runs to keep Indianapolis honest.  Jacksonville’s defense limited Andrew Luck with disciplined rush lanes and intercepted him once.  In the fourth quarter, with the score tied 21–21, Stone engineered a 12‑play drive featuring a balanced mix of bootlegs and option routes, culminating in a Marcedes Lewis touchdown catch.  The Jaguars sealed a 28–21 road win and improved to 2–1.
+
+    - week: 4
+      date: '2012-09-30'
+      opponent: Cincinnati Bengals
+      site: EverBank Field, Jacksonville
+      result: Loss 20-24
+      summary: >-
+        Stone kept Kirk Cousins at quarterback and called a pass‑oriented game plan designed to attack Cincinnati across the field.  Cousins moved the offense efficiently early with stick, spacing and dagger concepts, connecting with Braylon Edwards and Cecil Shorts to set up a T.Y. Hilton post for a touchdown.  The Bengals adjusted with pressure from Geno Atkins and Carlos Dunlap, forcing an interception that Andy Dalton turned into an A.J. Green touchdown.  Jacksonville mixed draws and delays to Maurice Jones‑Drew and Alfred Morris when the front widened but struggled to finish in the red zone, settling for two field goals.  Trailing 24–13 late, Stone engineered a 75‑yard drive featuring a bootleg flood to Marcedes Lewis and a jump‑ball touchdown to Braylon Edwards, pulling within four.  The defense could not get the ball back, and the Jaguars fell 24–20 to drop to 2–2.
+
+    - week: 5
+      date: '2012-10-07'
+      opponent: Chicago Bears
+      site: EverBank Field, Jacksonville
+      result: Win 27-17
+      summary: >-
+        Stone kept rookie quarterback Kirk Cousins in the lineup and tailored the game plan to neutralise Chicago’s pass rush while leveraging his full skill group.  Jacksonville opened with a no‑huddle series using quick-game throws, screens and a corner route to T.Y. Hilton for a 25‑yard touchdown.  Throughout the game Stone mixed three‑step drops, sprint‑outs and play‑action bootlegs to get Braylon Edwards, Cecil Shorts and Marcedes Lewis involved while calling trap runs and draws to Maurice Jones‑Drew and Alfred Morris against light boxes.  The Bears returned an interception for a touchdown to tie the score 10–10 at halftime, but in the third quarter Luke Kuechly intercepted Jay Cutler to set up a short scoring drive capped by a Morris run.  A late sequence of play‑action passes produced a touchdown to Lewis, giving Jacksonville a 27–17 cushion.  The defense contained Matt Forte and created two takeaways, allowing the Jaguars to control possession and improve to 3–2 heading into their Week 6 bye.
+
+  final_depth_chart:
+    offense:
+      quarterback:
+        starter: Blaine Gabbert
+        backups:
+        - Chad Henne
+        - Kirk Cousins
+      running_back:
+        starter: Maurice Jones-Drew
+        backups:
+        - Alfred Morris
+      fullback:
+        starter: Montell Owens
+      wide_receiver:
+        starters:
+        - Braylon Edwards
+        - Cecil Shorts
+        - T.Y. Hilton
+        backups:
+        - Mike Thomas
+        - Kevin Elliott
+        - Derek Moye
+      tight_end:
+        starters:
+        - Marcedes Lewis
+        backups:
+        - Zach Potter
+      offensive_line:
+        left_tackle:
+          starter: Eugene Monroe
+          backup: Cameron Bradfield
+        left_guard:
+          starter: Will Rackley
+          backup: Mike Brewster
+        center:
+          starter: Brad Meester
+          backup: Mike Brewster
+        right_guard:
+          starter: Uche Nwaneri
+          backup: George Bryan
+        right_tackle:
+          starter: Eric Winston
+          backup: Eben Britton
+    defense:
+      defensive_end:
+        starters:
+        - Jeremy Mincey
+        - Olivier Vernon
+        backups:
+        - John Abraham
+        - Andre Carter
+        - Scott Solomon
+      defensive_tackle:
+        starters:
+        - Tyson Alualu
+        - Terrance Knighton
+        backups:
+        - C.J. Mosley
+        - D’Anthony Smith
+      linebacker:
+        starters:
+        - Luke Kuechly
+        - Bobby Wagner
+        - Daryl Smith
+        backups:
+        - Russell Allen
+        - Julian Stanford
+        - Kyle Bosworth
+      cornerback:
+        starters:
+        - Aaron Ross
+        - Derek Cox
+        - Josh Norman
+        backups:
+        - Rashean Mathis
+        - Chase Minnifield
+      safety:
+        starters:
+        - Reggie Nelson
+        - Dawan Landry
+        backups:
+        - Dwight Lowery
+        - Tashaun Gipson
+        - Antonio Allen
+    special_teams:
+      kicker: Josh Scobee
+      punter: Johnny Hekker
+      long_snapper: Jeremy Cain
+      kick_returner:
+        starters:
+        - T.Y. Hilton
+        backups:
+        - Deji Karim
+      punt_returner:
+        starters:
+        - T.Y. Hilton
+        backups:
+        - Kevin Elliott
+full_resume_at_time_of_hire:
+  playing_career: Hall of Fame Tight End (San Diego Chargers, 1987-1998)
+  coaching_career:
+  - Offensive Quality Control, Philadelphia Eagles (1999-2001, 3 years under Andy Reid)
+  - Tight Ends Coach, Philadelphia Eagles (2002-2004, 3 years — includes NFC Championship appearances and Super Bowl XXXIX run)
+  - Defensive Backs Coach, University of Memphis (2005, 1 year — learned secondary concepts, built defensive foundation)
+  - Head Coach, University of Memphis (2006-2008, 3 years — record 20-17; 4-8, 7-5, 9-4 with Conference USA division title)
+  - Passing Game Coordinator, San Diego Chargers (2009, 1 year under Norv Turner — 13-3 season)
+  - Offensive Coordinator, Arizona Cardinals (2010-2011, 2 years — 7-9 then 9-7; 2011 team started 1-6 and finished 8-1)
+  age: 46
+  total_coaching_experience: 13 years across offense, defense, and head coaching
+  system_exposure: Reid West Coast Offense (deep, 6 years), Turner Coryell vertical passing (functional, 1 year coaching + 12 years as a player), Arizona OC hybrid offense (2 years of full NFL coordinator ownership), defensive secondary concepts (1 year), full college offensive/defensive program management (3 years)
+  play_calling_experience: 5 years total — 3 years as college HC and 2 years as NFL OC
+  defensive_knowledge: Functional — hired and managed a DC, oversaw game-planning on both sides, studied defensive film as HC for three years, coached DBs for one year
+  key_references:
+  - Andy Reid (Eagles HC)
+  - Rod Dowhower (former Eagles OC, primary mentor)
+  - Norv Turner (Chargers HC)
+  - Ken Whisenhunt (Cardinals HC)
+  - Don Coryell (former Chargers HC, legacy reference)
+  - Bobby Ross (former Chargers HC)
+  unique_selling_points:
+  - Dual-system offensive mastery (Reid WCO + Turner Coryell)
+  - Real NFL OC experience (2 years in Arizona)
+  - College HC play-calling experience (3 years, 20-17 record, division title)
+  - Defensive exposure (DB coaching + HC oversight)
+  - HOF playing career provides instant credibility with players
+  - Proven program builder (4-8 to 9-4 at Memphis)
+  - Built a credible Arizona offense that improved from 7-9 to 9-7 and finished 8-1 in 2011
+  - Super Bowl staff experience (Eagles, XXXIX)
+relationships:
+  Don_Coryell:
+    score: 80
+    status: Strong reference; stable
+  Bobby_Ross:
+    score: 75
+    status: Strong reference; stable
+  Andy_Reid:
+    score: 83
+    status: Strong external reference
+  Rod_Dowhower:
+    score: 90
+    status: Former mentor; primary coaching reference
+  Norv_Turner:
+    score: 72
+    status: Recent NFL superior; endorsement-level trust
+  Ken_Whisenhunt:
+    score: 76
+    status: Current head coach; strong current reference
+  Antonio_Gates:
+    score: 68
+    status: Strong player-coach relationship; player reference
+  Philip_Rivers:
+    score: 60
+    status: Solid professional respect; player reference
+  Pat_Shurmur:
+    score: 73
+    status: Long-term colleague; external reference
+personal_development:
+  system_familiarity:
+    system: Dual-system mastery refined through Arizona OC ownership
+    time_in_system_completed: 6 years Reid WCO + 1 year Turner Coryell coaching + 12 years Turner-family playing background + 3 years college HC adaptation + 2 years Arizona NFL OC ownership
+    status: Stone is no longer merely ready for an OC role. He has already proven he can run an NFL offense. His philosophy integrates WCO timing concepts with Coryell vertical aggression, then adapts those ideas to roster reality. The Arizona turnaround sharpened his confidence, sequencing, and in-season adjustment process.
+  what_he_brings_to_a_hc_interview:
+  - A coherent offensive philosophy blending two major NFL offensive trees
+  - Five years of live play-calling experience across college and the NFL
+  - Two full years of NFL offensive coordinator proof on a normal roster
+  - Understanding of both sides of the ball
+  - HOF-caliber player credibility with current NFL players
+  - Program-building experience that translates to culture-setting
+  - A visible turnaround story: Arizona started 1-6 in 2011 and finished 8-1
+  - Deep references from Reid, Dowhower, Turner, Whisenhunt, and the Chargers/Eagles trees
+active_consequences: |-
+  - Stone is past the "can he become an OC" stage of his career. The next decision is whether the right HC opportunity exists, not whether he can run an offense.
+  - His résumé is still uniquely broad, which remains a strength and a risk — some owners will see a future head coach, while some offensive purists may still want a narrower specialist.
+  - The Arizona turnaround gave him real late-season credibility, but the lack of a playoff berth keeps his profile just below the obvious top tier.
+  - His financial cushion means he can be selective rather than desperate.
+  - The 2012 interview cycle will determine whether his path accelerates toward NFL head coaching or stays on the OC track another few years.
+  - Stone submitted head‑coaching applications to Jacksonville, Indianapolis, and Miami. The Jaguars responded by scheduling a phone interview, the Colts placed him on a waitlist, and the Dolphins declined. This reduced his active applications from three to two and signaled that the market was narrowing.
+  - He completed the Jacksonville phone interview on January 15. He delivered detailed, evidence-backed responses about building a sustainable culture, installing a multiple offense tailored to Maurice Jones‑Drew and Marcedes Lewis, and developing Blaine Gabbert while considering the draft. His answers were scored 9/10, 9/10, and 8/10. Combined with his high communication-equivalent skill rating (12.75 points), his phone interview total of 38.75 exceeded the 35-point threshold and advanced him to a campus interview. Jacksonville immediately scheduled the next stage. Stone prepared his itinerary, drafted questions for owner Shad Khan and GM Gene Smith, and began outlining his 100-day plan. Indianapolis remains a waitlist possibility; Miami is closed.
+  - He traveled to Jacksonville for the campus interview. Over five stages, he met with owner Shad Khan and GM Gene Smith to present his three-year vision, met the current staff to discuss evaluations and hires, spoke with players about culture and continuity, delivered a detailed 100‑day operational and scheme presentation tailored to Maurice Jones‑Drew, Marcedes Lewis, and the Jaguars roster, and answered rapid-fire panel questions about his candidacy, weaknesses, and queries for the organization. His stage scores (9/10, 9/10, 9/10, 9/10, 8/10) combined with his relevant skills average (85 × 0.5 = 42.5) produced a total of 86.5. This score placed him in the finalist category and advanced him to the final interview round. Jacksonville scheduled the final interview. Indianapolis remains a waitlist possibility; Miami is closed.
+  - In the final interview, Stone sat for an extended dinner and conversation with owner Shad Khan and general manager Gene Smith. He delivered a succinct, 100‑plus‑word final statement that synthesised his Hall of Fame credibility, dual‑system offensive philosophy, program‑building experience, and commitment to hiring a seasoned defensive coordinator. He candidly acknowledged his lack of prior NFL head‑coaching experience, explained how he would rely on his staff to fill gaps, and asked pointed questions about organizational alignment, draft control, and resource allocation. Khan conducted reference calls with Andy Reid, Rod Dowhower, and Ken Whisenhunt, each of whom offered glowing endorsements of Stone’s leadership, adaptability, and honesty. The reference check added fifteen points to his dossier, a fit bonus of five points reflected the perfect match between his scheme and Jacksonville’s roster【366879180517951†L378-L410】, and a fourteen‑point final statement score propelled his total to 120.5. This outpaced other finalists such as Mike Mularkey and Dirk Koetter and persuaded Khan to offer Stone the head‑coaching position. Negotiations now begin while Indianapolis remains on the waitlist and Miami is closed.
+  - Between March 1 and April 26, Stone, Gene Smith, Shad Khan, the coaching staff and the finance department executed a series of disciplined roster moves that balanced immediate needs with long‑term flexibility.  They traded away Paul Posluszny for mid‑round draft capital while retaining Daryl Smith, dealt Luke McCown for a future pick, and cut eight veterans to free cap space.  In free agency they signed right tackle Eric Winston to a below‑market four‑year deal【900258649864444†L325-L329】, added veteran pass rushers Andre Carter and John Abraham, re‑signed Jeremy Mincey, and signed Braylon Edwards, Chad Henne and Reggie Nelson.  These moves aligned with the foundation‑first philosophy by strengthening the trenches, adding depth and preserving cap flexibility.  The staff also prepared a targeted undrafted free agent class headlined by punter Johnny Hekker and safety Tashaun Gipson.  As a result, Jacksonville entered the draft with a stable roster, additional picks and increased organisational confidence.
+  - Following the offer, Stone and his agent entered negotiations with Shad Khan. They aimed for a contract in the $13–14 million range over four years with the first two years guaranteed and clauses ensuring control over staff hires. Khan’s opening offer mirrored the Greg Schiano baseline at roughly $12 million. Stone countered with $14 million and guaranteed coordinator authority. The parties agreed on a four‑year, $13.6 million deal with $6.8 million guaranteed in years one and two and performance escalators in years three and four based on win totals and playoff berths. Coordinator hiring input and final say over staff were guaranteed. Accepting the deal officially made Stone the head coach of the Jacksonville Jaguars, ended his application with Indianapolis, and triggered the transition into staff hiring and roster evaluation.
+  - Over the next two weeks Stone built his coaching staff.  He targeted a mix of veteran teachers and rising coordinators, interviewing Doug Pederson, Matt LaFleur, Chris Foerster, Eric Bieniemy, Ike Hilliard, Freddie Kitchens, Luke Getsy, Todd Bowles, Andre Patterson, Matt Eberflus, Ed Donatell and Rich Bisaccia.  Top targets like Aaron Kromer, Bill Callahan, Pep Hamilton and Vic Fangio declined due to existing commitments or preferred roles.  After negotiating contracts within typical 2012 salary ranges, he hired Pederson (3 years, $1.9M), LaFleur (2 years, $0.5M), Foerster (3 years, $0.85M), Bieniemy (2 years, $0.45M), Hilliard (2 years, $0.45M), Kitchens (2 years, $0.4M), Getsy (2 years, $0.3M), Bowles (3 years, $2.1M), Patterson (2 years, $0.5M), Eberflus (2 years, $0.5M), Donatell (2 years, $0.55M) and Bisaccia (3 years, $0.75M).  The staff met on January 29 to align on culture, scheme and operations, then were introduced to the media on February 1.  Stone now moves to roster evaluation and free agency planning with a fully built staff.
+  - Between February 7 and February 21, Stone convened a series of intensive meetings with his coaching staff, general manager Gene Smith, owner Shad Khan, the scouting department and the club’s finance team.  The group debated the initial free‑agency proposal and draft board that had prioritised a No. 1 receiver and quick offensive jump.  While they recognised that upgrading the passing game was important, they agreed that paying premium prices for a receiver like Vincent Jackson would misalign with Stone’s builder mandate and eat cap space needed elsewhere.  They acknowledged the market context: top free agents such as guard Carl Nicks and defensive end Mario Williams would command record‑setting contracts【372985519218166†L211-L217】【372985519218166†L241-L252】, and wide receiver Vincent Jackson’s combination of size, speed and contested‑catch ability came at a premium【372985519218166†L267-L276】.  Instead, they shifted toward a foundation‑first philosophy, investing in the offensive line with targets like Ben Grubbs【372985519218166†L337-L343】, re‑signing Jeremy Mincey rather than chasing splashy edge rushers, and seeking a reliable veteran receiver such as Reggie Wayne while using the draft to land their long‑term No. 1 in Justin Blackmon.  The meetings also finalised offensive and defensive schemes, set cultural standards and expectations, and confirmed that the draft board would operate under the “swap” rule—whoever Jacksonville selects is swapped with that player’s historical slot, keeping draft history intact.  By February 21, consensus was reached on the foundation‑first plan, leaving the organisation aligned and ready for the scouting combine.
+  - From February 22 through February 28 Stone and his staff attended the NFL scouting combine and evaluated their targeted prospects.  They confirmed Luke Kuechly’s elite range with a 4.58‑second 40‑yard dash, 38‑inch vertical and 11.43‑second 60‑yard shuttle【459036554289166†L97-L104】, and validated Bobby Wagner’s sideline‑to‑sideline speed via his pro‑day 4.45‑second 40 and 39.5‑inch vertical【600181430595093†L165-L173】.  They were impressed by T.Y. Hilton’s 4.34‑second 40 and game‑breaking quickness【777471514394376†L417-L423】.  Mid‑round debates weighed Olivier Vernon’s explosive 4.73‑second 40 and 34.5‑inch vertical【881419948871879†L1045-L1047】 against the power of Brandon Brooks【968355876953202†L101-L110】, Akiem Hicks【600181430595093†L1398-L1407】 and Ben Jones【881419948871879†L699-L700】.  Ultimately the Jaguars finalised their draft board with Kuechly, Wagner, Hilton, Vernon, Kirk Cousins, Josh Norman, Alfred Morris and Scott Solomon.  This combine evaluation phase reinforced internal alignment on the foundation‑first strategy and strengthened Shad Khan’s confidence in Stone’s roster vision.
+  - Over the three‑day 2012 NFL draft Stone executed the foundation‑first plan.  He used pick 5 on Luke Kuechly, pick 38 on Bobby Wagner, pick 70 on T.Y. Hilton, traded up for Olivier Vernon using picks 115 and 180, selected Kirk Cousins at 101, Josh Norman at 142, traded up to secure Alfred Morris in the sixth round and finished with Scott Solomon at 214.  In accordance with the swap rule, Justin Blackmon went to Carolina, Andre Branch to Seattle, punter Bryan Anger to Indianapolis, linebacker Brandon Marshall to Carolina and defensive back Mike Harris to Washington.  The class added cornerstone players at linebacker, edge, receiver, quarterback, corner and running back while preserving cap flexibility.  Shad Khan and Gene Smith praised the disciplined draft and increased their confidence in Stone’s long‑term vision.
+  - In the weeks following the draft Stone signed a priority UDFA class (Johnny Hekker, Tashaun Gipson, Michael Thomas, Chase Minnifield, Kevin Elliott, Antonio Allen, Derek Moye and George Bryan) and ran rookie orientation and minicamp.  These moves deepened the roster at minimal cost and reinforced the foundation‑first philosophy.
+  - From May through August he led OTAs, minicamp and a demanding training camp.  Stone installed his dual‑system offense and Todd Bowles’s defense, enforced conditioning standards and accountability, and evaluated players across four preseason games.  He finalised a 53‑man roster on September 1, retaining Blaine Gabbert with backups Chad Henne and Kirk Cousins, pairing Maurice Jones‑Drew with rookie Alfred Morris, and assembling a balanced defense anchored by Luke Kuechly and Bobby Wagner.  The Jaguars exited camp with a clear identity and cautious optimism for the regular season.
+  - After a 23–17 opening win over Minnesota, Stone’s Jaguars began the 2012 season 1–0.  The disciplined, run‑first game plan validated his foundation‑first philosophy and slightly increased his job security.  The team now turns its focus to a Week 2 home game against the Houston Texans.
+  - The Week 2 home loss to Houston dropped the Jaguars to 1–1.  Despite sticking to a balanced, run‑heavy script and forcing Houston to earn its yards, Jacksonville’s offense struggled to generate explosives and surrendered a critical strip‑sack.  The result underscored the need for improved pass protection and a more dynamic passing attack while reaffirming Stone’s commitment to physical football.  Preparation shifts to a Week 3 road game at Indianapolis.
+  - The Week 4 home loss to Cincinnati dropped Jacksonville to 2–2.  Stone’s pass‑heavy plan produced early points, but pressure and turnovers allowed the Bengals to steal the lead.  The result underscored the need to protect Kirk Cousins, finish drives and refine red‑zone execution ahead of the Week 5 clash with Chicago.
+  - The Week 5 victory over Chicago improved Jacksonville to 3–2 and restored momentum.  Stone’s adaptable game plan blended quick passes, screens, draws and bootlegs to neutralise the Bears’ pass rush while still generating explosives.  Luke Kuechly’s interception and a balanced offensive attack reinforced confidence in Stone’s approach heading into the Week 6 bye.
+  - The Week 6 bye week served as a reset and self‑scout period.  Stone and his staff analysed protections, pre‑snap operations, quarterback reads, third‑down and red‑zone efficiency, and defensive communication.  They trimmed the playbook, emphasised fundamentals and situational work, and reinforced cultural standards.  Coming out of the bye the Jaguars are healthier, sharper and aligned on a clearer offensive and defensive identity for the Week 7 trip to Oakland.
+last_3_turns_summary:
+  - 'Turn 154: In Week 4 Jacksonville hosted the Cincinnati Bengals and fell 24–20.  Stone called a pass‑oriented game plan featuring stick, spacing and dagger concepts to attack Cincinnati’s zones, and Kirk Cousins connected early with Braylon Edwards, Cecil Shorts and T.Y. Hilton for a touchdown.  The Bengals responded with pressure from Geno Atkins and Carlos Dunlap, and an ill‑timed interception turned into an A.J. Green touchdown.  Jacksonville rallied with a late touchdown to Braylon Edwards but couldn’t get the ball back, dropping to 2–2 and underscoring the need to protect the quarterback and finish drives ahead of a Week 5 meeting with Chicago.'
+  - 'Turn 155: In Week 5 Jacksonville faced the Chicago Bears and won 27–17.  Stone retained Kirk Cousins and crafted a balanced game plan featuring quick passes, screens, draws and play‑action bootlegs to neutralise Chicago’s pass rush.  A no‑huddle opening drive ended with a touchdown to T.Y. Hilton, and the offense responded to a pick‑six with two second‑half scoring drives.  Luke Kuechly’s interception set up a short touchdown, and the defense limited Matt Forte while generating two takeaways.  The Jaguars improved to 3–2 heading into their Week 6 bye and restored momentum after the previous week’s loss.'
+  - 'Turn 156: During the Week 6 bye Jacksonville focused on recovery, self‑scouting and correcting issues.  Stone and his staff analysed protection schemes, pre‑snap operations, Cousins’s coverage identification, third‑down and red‑zone efficiency, and defensive communication.  Practices emphasised fundamentals, individual corrections, and situational drills while reducing volume.  The offensive playbook was streamlined to enhance quick‑game, man‑beaters and zone answers, while Todd Bowles’s defense worked on tackling angles, disguise on third down and pass‑rush rotation.  Special teams reviewed return decisions and lane integrity.  Stone reinforced accountability and cultural standards, and the team emerged from the bye healthier, sharper and aligned for the Week 7 trip to Oakland.'
