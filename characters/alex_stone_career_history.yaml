@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '2012-09-01'
-  career_turn: 150
-  sim_phase: Preseason — 2012 Training Camp & Roster Cutdown
+  date: '2012-09-09'
+  career_turn: 151
+  sim_phase: Regular Season — 2012 Week 1 Completed
   archive_note: 2012 interview-window snapshot
 career_history:
 - turn: 12
@@ -110,7 +110,7 @@ career_history:
     salary:
       from: 700000
       to: 700000
- - turn: 142
+  - turn: 142
    date_range: 2012-01-15 to 2012-01-16
    team: Jacksonville Jaguars
    role: Head Coach
@@ -288,6 +288,27 @@ career_history:
       job_security:
         from: 82
         to: 83
+      salary:
+        from: 3375000
+        to: 3375000
+
+  - turn: 151
+    date_range: 2012-09-02 to 2012-09-10
+    team: Jacksonville Jaguars
+    role: Head Coach
+    phase: Regular Season — Week 1 Completed
+    summary: In Week 1 of the 2012 regular season Stone guided the Jaguars to a 23–17 road win at the Minnesota Vikings.  He emphasised a run‑first offense and quick‑game passing while the defense played fast and opportunistic.  The victory validated his foundation‑first approach and gave Jacksonville a 1–0 start.
+    results:
+    - Called a balanced game plan that produced more than 150 rushing yards between Maurice Jones‑Drew and Alfred Morris and efficient passing from Blaine Gabbert.
+    - Coordinated a defensive performance that held Adrian Peterson under 90 yards and forced two turnovers.
+    - Controlled field position and points through Johnny Hekker’s punts and Josh Scobee’s three field goals.
+    state_changes:
+      stress:
+        from: 83
+        to: 84
+      job_security:
+        from: 83
+        to: 84
       salary:
         from: 3375000
         to: 3375000
