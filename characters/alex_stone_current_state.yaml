@@ -8,18 +8,18 @@ identity:
   level: 2
   level_label: Coordinator (established NFL OC)
 timeline:
-  career_turn: 148
-  season_turn: 7
-  phase: Offseason — 2012 NFL Draft & Rookie Integration
-  previous_phase: Offseason — 2012 Free Agency & Draft Preparation
-  last_resolved_date: '2012-04-28'
-  date: '2012-04-28'
-  next_event: 2012 Rookie Minicamp & OTA
+  career_turn: 150
+  season_turn: 9
+  phase: Preseason — 2012 Training Camp & Roster Cutdown
+  previous_phase: Offseason — 2012 NFL Draft & Rookie Integration
+  last_resolved_date: '2012-09-01'
+  date: '2012-09-01'
+  next_event: 2012 Regular Season Kickoff
   calendar_frozen: false
   resume_anchor:
-    exact_pickup_date: '2012-04-28'
+    exact_pickup_date: '2012-09-01'
     reason: >-
-      From April 26 through April 28 Stone and the Jaguars front office executed the 2012 NFL Draft.  They selected linebacker Luke Kuechly at pick 5 and swapped the historically drafted Justin Blackmon to the Carolina Panthers under the draft swap rule.  At pick 38 they chose linebacker Bobby Wagner, sending Andre Branch to the Seattle Seahawks.  In the third round (70) they drafted receiver T.Y. Hilton and moved punter Bryan Anger to the Indianapolis Colts.  Stone packaged picks 115 and 180 to trade up into the mid‑90s and select edge rusher Olivier Vernon; with no prior Jaguars pick at that slot there was no swap required.  At pick 101 they took quarterback Kirk Cousins, swapping the historically selected player at that slot to Washington.  In the fifth round (142) they drafted cornerback Josh Norman, trading linebacker Brandon Marshall to Carolina.  Late on day two they used pick 176 and a 2013 seventh‑rounder to move up into the 165–170 range to draft running back Alfred Morris, sending defensive back Mike Harris to Washington.  They finished the draft by taking defensive end Scott Solomon at pick 214.  These moves yielded a draft class of Kuechly, Wagner, Hilton, Cousins, Vernon, Norman, Morris and Solomon while honouring the swap rule, and further cemented the foundation‑first roster build.
+      From early May through late August Stone led the Jaguars through organised team activities, minicamp and a gruelling training camp.  He and his coaching staff installed the dual‑system offense and Todd Bowles’s multiple defense, set strict physical and cultural standards, and demanded mastery of the playbook from veterans and rookies alike.  Conditioning tests and full‑padded practices established the tone, while classroom sessions emphasised situational football.  Stone balanced accountability with teaching: he pushed Blaine Gabbert to refine his footwork and decision‑making, urged Maurice Jones‑Drew and rookie Alfred Morris to share the workload, and nurtured Luke Kuechly and Bobby Wagner into vocal leaders of the defense.  The preseason featured four exhibition games in which the Jaguars went 2–2, highlighted by T.Y. Hilton’s explosive plays and a stout run defense.  Difficult roster decisions followed; veterans like Andre Carter and Deji Karim were released to make room for younger talent, while undrafted rookies Johnny Hekker, Tashaun Gipson and Derek Moye earned spots.  On September 1 Stone finalised the 53‑man roster, committing to Blaine Gabbert as the starter with Chad Henne and Kirk Cousins behind him, keeping a balanced running back room led by Maurice Jones‑Drew and Alfred Morris, and building a deep defense anchored by Kuechly, Wagner and Daryl Smith.  The team emerged from camp with a clear identity and optimism heading into the regular season.
 calendar_state:
   calendar_file: null
   previous_node: season_end_2011
@@ -36,8 +36,8 @@ record:
   team_ovr: N/A
   note: Arizona started 1-6, finished 8-1, and became one of the league's strongest late-season offenses.
 job_status:
-  job_security: 82
-  stress: 80
+  job_security: 83
+  stress: 83
   contract:
     status: Active
     team: Jacksonville Jaguars
@@ -58,12 +58,12 @@ job_status:
     risk_flag: Must choose next opportunity carefully; wrong HC landing spot could stall momentum
 offseason_status:
   time_bubble_active: false
-  bubble_stage: Post-Draft Integration & Rookie Orientation
+  bubble_stage: Preseason & Training Camp
   era_ruleset: NFL_2012
   evaluation_score: N/A
   trajectory: Rising
-  club_decision: Retained by Arizona; outside interest active
-  outside_interest: None — draft completed; focus shifts to rookie integration and minicamp
+  club_decision: Retained by Jacksonville; preparing for 2012 season
+  outside_interest: None — prepping for 2012 season
   interview_access: None — head coach contract active
   transition_pending: false
 coaching_attributes:
@@ -304,13 +304,14 @@ team_context:
       - John Abraham — Defensive End — one‑year, $3M contract.  Serves as a rotational pass rusher and mentor for younger linemen.
       - Chad Henne — Quarterback — two‑year, $2.5M contract with incentives to compete for the backup job.
       - Reggie Nelson — Safety — three‑year, $15M contract.  Brings back an experienced safety to stabilise the secondary.
-    udafa_signings:
+    udfa_signings:
       - Johnny Hekker — Punter — three‑year, $1.2M contract (low guarantees) to replace the cut punter Bryan Anger.
       - Tashaun Gipson — Safety — three‑year, $1.8M contract as a developmental safety with upside.
       - Michael Thomas — Defensive Back — three‑year, $1.5M contract providing versatile depth if available.
       - Chase Minnifield — Cornerback — three‑year, $1.5M contract as a priority UDFA corner.
       - Kevin Elliott — Wide Receiver — three‑year, $1.4M contract adding competition to the receiver room.
       - Antonio Allen — Safety — three‑year, $1.5M contract to bolster depth in the defensive backfield.
+      - Derek Moye — Wide Receiver — three‑year, $1.4M contract providing a 6′5″ target with contested‑catch ability.
       - George Bryan — Interior Offensive Lineman — three‑year, $1.3M contract as a developmental lineman.
   draft_results:
     picks:
@@ -401,6 +402,105 @@ team_context:
       - George Bryan — IOL
     swap_summary: >-
       Because Jacksonville selected players originally drafted by other teams, the swap rule reassigned their historical picks to those players’ original franchises: Justin Blackmon went to the Carolina Panthers, Andre Branch to the Seattle Seahawks, punter Bryan Anger to the Indianapolis Colts, linebacker Brandon Marshall to the Panthers, and defensive back Mike Harris to Washington.  Picks acquired via trade (e.g., for Olivier Vernon and Scott Solomon) had no prior Jaguars selections and thus required no swaps.
+
+  final_depth_chart:
+    offense:
+      quarterback:
+        starter: Blaine Gabbert
+        backups:
+        - Chad Henne
+        - Kirk Cousins
+      running_back:
+        starter: Maurice Jones-Drew
+        backups:
+        - Alfred Morris
+      fullback:
+        starter: Montell Owens
+      wide_receiver:
+        starters:
+        - Braylon Edwards
+        - Cecil Shorts
+        - T.Y. Hilton
+        backups:
+        - Mike Thomas
+        - Kevin Elliott
+        - Derek Moye
+      tight_end:
+        starters:
+        - Marcedes Lewis
+        backups:
+        - Zach Potter
+      offensive_line:
+        left_tackle:
+          starter: Eugene Monroe
+          backup: Cameron Bradfield
+        left_guard:
+          starter: Will Rackley
+          backup: Mike Brewster
+        center:
+          starter: Brad Meester
+          backup: Mike Brewster
+        right_guard:
+          starter: Uche Nwaneri
+          backup: George Bryan
+        right_tackle:
+          starter: Eric Winston
+          backup: Eben Britton
+    defense:
+      defensive_end:
+        starters:
+        - Jeremy Mincey
+        - Olivier Vernon
+        backups:
+        - John Abraham
+        - Andre Carter
+        - Scott Solomon
+      defensive_tackle:
+        starters:
+        - Tyson Alualu
+        - Terrance Knighton
+        backups:
+        - C.J. Mosley
+        - D’Anthony Smith
+      linebacker:
+        starters:
+        - Luke Kuechly
+        - Bobby Wagner
+        - Daryl Smith
+        backups:
+        - Russell Allen
+        - Julian Stanford
+        - Kyle Bosworth
+      cornerback:
+        starters:
+        - Aaron Ross
+        - Derek Cox
+        - Josh Norman
+        backups:
+        - Rashean Mathis
+        - Chase Minnifield
+      safety:
+        starters:
+        - Reggie Nelson
+        - Dawan Landry
+        backups:
+        - Dwight Lowery
+        - Tashaun Gipson
+        - Antonio Allen
+    special_teams:
+      kicker: Josh Scobee
+      punter: Johnny Hekker
+      long_snapper: Jeremy Cain
+      kick_returner:
+        starters:
+        - T.Y. Hilton
+        backups:
+        - Deji Karim
+      punt_returner:
+        starters:
+        - T.Y. Hilton
+        backups:
+        - Kevin Elliott
 full_resume_at_time_of_hire:
   playing_career: Hall of Fame Tight End (San Diego Chargers, 1987-1998)
   coaching_career:
@@ -489,7 +589,9 @@ active_consequences: |-
   - Between February 7 and February 21, Stone convened a series of intensive meetings with his coaching staff, general manager Gene Smith, owner Shad Khan, the scouting department and the club’s finance team.  The group debated the initial free‑agency proposal and draft board that had prioritised a No. 1 receiver and quick offensive jump.  While they recognised that upgrading the passing game was important, they agreed that paying premium prices for a receiver like Vincent Jackson would misalign with Stone’s builder mandate and eat cap space needed elsewhere.  They acknowledged the market context: top free agents such as guard Carl Nicks and defensive end Mario Williams would command record‑setting contracts【372985519218166†L211-L217】【372985519218166†L241-L252】, and wide receiver Vincent Jackson’s combination of size, speed and contested‑catch ability came at a premium【372985519218166†L267-L276】.  Instead, they shifted toward a foundation‑first philosophy, investing in the offensive line with targets like Ben Grubbs【372985519218166†L337-L343】, re‑signing Jeremy Mincey rather than chasing splashy edge rushers, and seeking a reliable veteran receiver such as Reggie Wayne while using the draft to land their long‑term No. 1 in Justin Blackmon.  The meetings also finalised offensive and defensive schemes, set cultural standards and expectations, and confirmed that the draft board would operate under the “swap” rule—whoever Jacksonville selects is swapped with that player’s historical slot, keeping draft history intact.  By February 21, consensus was reached on the foundation‑first plan, leaving the organisation aligned and ready for the scouting combine.
   - From February 22 through February 28 Stone and his staff attended the NFL scouting combine and evaluated their targeted prospects.  They confirmed Luke Kuechly’s elite range with a 4.58‑second 40‑yard dash, 38‑inch vertical and 11.43‑second 60‑yard shuttle【459036554289166†L97-L104】, and validated Bobby Wagner’s sideline‑to‑sideline speed via his pro‑day 4.45‑second 40 and 39.5‑inch vertical【600181430595093†L165-L173】.  They were impressed by T.Y. Hilton’s 4.34‑second 40 and game‑breaking quickness【777471514394376†L417-L423】.  Mid‑round debates weighed Olivier Vernon’s explosive 4.73‑second 40 and 34.5‑inch vertical【881419948871879†L1045-L1047】 against the power of Brandon Brooks【968355876953202†L101-L110】, Akiem Hicks【600181430595093†L1398-L1407】 and Ben Jones【881419948871879†L699-L700】.  Ultimately the Jaguars finalised their draft board with Kuechly, Wagner, Hilton, Vernon, Kirk Cousins, Josh Norman, Alfred Morris and Scott Solomon.  This combine evaluation phase reinforced internal alignment on the foundation‑first strategy and strengthened Shad Khan’s confidence in Stone’s roster vision.
   - Over the three‑day 2012 NFL draft Stone executed the foundation‑first plan.  He used pick 5 on Luke Kuechly, pick 38 on Bobby Wagner, pick 70 on T.Y. Hilton, traded up for Olivier Vernon using picks 115 and 180, selected Kirk Cousins at 101, Josh Norman at 142, traded up to secure Alfred Morris in the sixth round and finished with Scott Solomon at 214.  In accordance with the swap rule, Justin Blackmon went to Carolina, Andre Branch to Seattle, punter Bryan Anger to Indianapolis, linebacker Brandon Marshall to Carolina and defensive back Mike Harris to Washington.  The class added cornerstone players at linebacker, edge, receiver, quarterback, corner and running back while preserving cap flexibility.  Shad Khan and Gene Smith praised the disciplined draft and increased their confidence in Stone’s long‑term vision.
+  - In the weeks following the draft Stone signed a priority UDFA class (Johnny Hekker, Tashaun Gipson, Michael Thomas, Chase Minnifield, Kevin Elliott, Antonio Allen, Derek Moye and George Bryan) and ran rookie orientation and minicamp.  These moves deepened the roster at minimal cost and reinforced the foundation‑first philosophy.
+  - From May through August he led OTAs, minicamp and a demanding training camp.  Stone installed his dual‑system offense and Todd Bowles’s defense, enforced conditioning standards and accountability, and evaluated players across four preseason games.  He finalised a 53‑man roster on September 1, retaining Blaine Gabbert with backups Chad Henne and Kirk Cousins, pairing Maurice Jones‑Drew with rookie Alfred Morris, and assembling a balanced defense anchored by Luke Kuechly and Bobby Wagner.  The Jaguars exited camp with a clear identity and cautious optimism for the regular season.
 last_3_turns_summary:
-  - 'Turn 146: During the scouting combine from February 22 to February 28, Stone and his staff evaluated targeted prospects and finalised their draft board.  They were impressed by Luke Kuechly’s combine numbers (4.58‑second 40, 38‑inch vertical, 11.43‑second 60‑yard shuttle)【459036554289166†L97-L104】 and Bobby Wagner’s pro‑day athleticism (4.45‑second 40, 39.5‑inch vertical, 11‑foot broad jump)【600181430595093†L165-L173】.  Receiver T.Y. Hilton showcased his 4.34‑second speed【777471514394376†L417-L423】.  Debates over mid‑round prospects weighed Olivier Vernon【881419948871879†L1045-L1047】 against Brandon Brooks【968355876953202†L101-L110】, Akiem Hicks【600181430595093†L1398-L1407】 and Ben Jones【881419948871879†L699-L700】.  The final board selected Kuechly, Wagner, Hilton, Vernon, Kirk Cousins, Josh Norman, Alfred Morris and Scott Solomon.  The combine phase reinforced the foundation‑first strategy.'
-  - 'Turn 147: From March 1 through April 26, Stone, Gene Smith, Shad Khan, the coaching staff and the finance department executed disciplined roster moves.  They traded Paul Posluszny for mid‑round picks, dealt Luke McCown for a future pick, cut eight veterans to free cap space, and signed Eric Winston, Andre Carter, John Abraham, Braylon Edwards, Chad Henne and Reggie Nelson while re‑signing Jeremy Mincey.  These moves embodied the foundation‑first philosophy by strengthening the trenches, adding depth and preserving flexibility ahead of the draft.'
   - 'Turn 148: During the 2012 NFL draft from April 26 to April 28, Stone executed the foundation‑first draft plan.  Jacksonville selected Luke Kuechly at pick 5 (swapping Justin Blackmon to Carolina), Bobby Wagner at 38 (sending Andre Branch to Seattle), T.Y. Hilton at 70 (sending punter Bryan Anger to Indianapolis), and packaged picks 115 and 180 to trade up for Olivier Vernon.  They then drafted Kirk Cousins at 101 (swapping the historical Jaguars pick to Washington), Josh Norman at 142 (sending linebacker Brandon Marshall to Carolina), traded up from 176 to pick Alfred Morris in the sixth round (sending Mike Harris to Washington) and finished with Scott Solomon at 214.  The class balanced immediate contributors with long‑term building blocks and further strengthened owner Shad Khan and GM Gene Smith’s trust in Stone’s vision.'
+  - 'Turn 149: After the draft, Stone, his staff and the front office focused on signing undrafted free agents and orienting the rookie class.  They secured punter Johnny Hekker, safety Tashaun Gipson, defensive back Michael Thomas, cornerback Chase Minnifield, receivers Kevin Elliott and Derek Moye, safety Antonio Allen and interior lineman George Bryan on low‑cost three‑year deals.  Stone led rookie orientation and minicamp sessions that installed the playbook, taught cultural standards and set expectations, deepening the roster while reinforcing the foundation‑first philosophy.'
+  - 'Turn 150: From early May through September 1 Stone guided the Jaguars through OTAs, minicamp and a physical training camp.  He installed his dual‑system offense and Todd Bowles’s defense, enforced conditioning tests and accountability standards, and evaluated players across four preseason games (2–2 record).  Stone retained Blaine Gabbert as starting quarterback with Chad Henne and rookie Kirk Cousins behind him; he kept Maurice Jones‑Drew and rookie Alfred Morris as a one‑two punch; and he finalised a 53‑man roster featuring balanced depth on the offensive line, a revamped receiving corps and a youthful, aggressive defense.  The team exited camp disciplined and optimistic for the regular season.'
