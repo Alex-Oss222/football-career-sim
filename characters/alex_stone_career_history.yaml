@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '2012-02-01'
-  career_turn: 144
-  sim_phase: Offseason — 2012 Staff Assembly & Roster Evaluation
+  date: '2012-02-21'
+  career_turn: 145
+  sim_phase: Offseason — 2012 Roster Evaluation & Draft Board Alignment
   archive_note: 2012 interview-window snapshot
 career_history:
 - turn: 12
@@ -149,6 +149,28 @@ career_history:
         to: 77
       job_security:
         from: 78
+        to: 79
+      salary:
+        from: 3375000
+        to: 3375000
+  - turn: 144
+    date_range: 2012-02-01 to 2012-02-21
+    team: Jacksonville Jaguars
+    role: Head Coach
+    phase: Offseason — 2012 Roster Evaluation & Draft Board Alignment
+    summary: Stone led an extensive roster‑evaluation and strategic planning cycle.  Working with his newly assembled staff, general manager Gene Smith, owner Shad Khan and the club’s scouting and finance departments, he reassessed the initial free‑agency plan and draft board to ensure alignment with a foundation‑first philosophy.
+    results:
+    - Conducted daily meetings to critique the win‑now offensive plan and refocus on building the offensive line, secondary and long‑term offensive structure rather than paying a premium for marquee receivers and defenders.【372985519218166†L211-L217】【372985519218166†L241-L252】
+    - Shifted free‑agency priorities toward mid‑tier veterans (Reggie Wayne, Ben Grubbs, Brandon Carr) and re‑signing key contributors like Jeremy Mincey, while preserving cap flexibility.
+    - Finalised the offensive and defensive schemes, cultural standards and expectations with the staff.
+    - Confirmed the draft board anchored by wide receiver Justin Blackmon and established the rule that Jacksonville’s selections will swap with the players historically chosen in those slots.
+    - Produced a consensus foundation‑first plan by February 21, positioning the Jaguars for the scouting combine and free‑agency negotiations.
+    state_changes:
+      stress:
+        from: 77
+        to: 77
+      job_security:
+        from: 79
         to: 79
       salary:
         from: 3375000
