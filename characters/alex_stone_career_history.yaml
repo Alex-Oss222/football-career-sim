@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '2012-09-09'
-  career_turn: 151
-  sim_phase: Regular Season — 2012 Week 1 Completed
+  date: '2012-09-16'
+  career_turn: 152
+  sim_phase: Regular Season — 2012 Week 2 Completed
   archive_note: 2012 interview-window snapshot
 career_history:
 - turn: 12
@@ -309,6 +309,28 @@ career_history:
       job_security:
         from: 83
         to: 84
+      salary:
+        from: 3375000
+        to: 3375000
+
+  - turn: 152
+    date_range: 2012-09-11 to 2012-09-17
+    team: Jacksonville Jaguars
+    role: Head Coach
+    phase: Regular Season — Week 2 Completed
+    summary: In Week 2 Jacksonville hosted the Houston Texans and suffered a 21–13 loss.  Stone stuck to his foundation‑first plan with inside zone, duo and stretch runs and quick‑game passes, but the Texans’ stout defensive front disrupted the offense and a fourth‑quarter strip‑sack set up the decisive touchdown.  The defeat dropped the Jaguars to 1–1 and highlighted the need for improved pass protection and more explosive plays.
+    results:
+    - Opened the game with inside and outside zone runs and quick passes to Braylon Edwards, Cecil Shorts and Marcedes Lewis, setting up two Josh Scobee field goals to keep pace early.
+    - Adjusted at halftime by incorporating play‑action passes and using T.Y. Hilton on deep crossing routes, resulting in a 20‑yard touchdown catch that brought Jacksonville within one point.
+    - Despite holding Arian Foster under 100 yards and forcing a turnover, the defense conceded two key scoring drives to Matt Schaub and Andre Johnson.
+    - A strip‑sack by J.J. Watt late in the fourth quarter set up Houston’s final touchdown, sealing a 21–13 loss and emphasising the need to shore up pass protection and generate offensive explosives.
+    state_changes:
+      stress:
+        from: 84
+        to: 85
+      job_security:
+        from: 84
+        to: 83
       salary:
         from: 3375000
         to: 3375000
