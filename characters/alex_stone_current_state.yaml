@@ -8,18 +8,18 @@ identity:
   level: 2
   level_label: Coordinator (established NFL OC)
 timeline:
-  career_turn: 153
-  season_turn: 12
-  phase: Regular Season — 2012 Week 3 Completed
-  previous_phase: Regular Season — 2012 Week 2 Completed
-  last_resolved_date: '2012-09-23'
-  date: '2012-09-24'
-  next_event: 2012 Week 4 vs Cincinnati Bengals
+  career_turn: 154
+  season_turn: 13
+  phase: Regular Season — 2012 Week 4 Completed
+  previous_phase: Regular Season — 2012 Week 3 Completed
+  last_resolved_date: '2012-09-30'
+  date: '2012-10-01'
+  next_event: 2012 Week 5 vs Chicago Bears
   calendar_frozen: false
   resume_anchor:
-    exact_pickup_date: '2012-09-24'
+    exact_pickup_date: '2012-10-01'
     reason: >-
-      On September 23 the Jaguars travelled to Lucas Oil Stadium for their first road divisional test against Indianapolis and started rookie quarterback Kirk Cousins.  Stone emphasised an aggressive, adaptable plan built around quick passes, formation variety and selective runs rather than a stubborn ground attack.  Cousins opened hot, completing rhythm throws to Braylon Edwards and Cecil Shorts and hitting T.Y. Hilton on a deep cross for a first‑quarter touchdown.  Maurice Jones‑Drew and Alfred Morris contributed on draws and misdirection, but the offense leaned on play‑action and intermediate concepts.  Defensively, Luke Kuechly and Bobby Wagner contained Andrew Luck and forced an interception, while the pass rush generated consistent pressure.  Despite a second‑half surge from Luck to Reggie Wayne, Stone’s offense answered with a clutch fourth‑quarter drive capped by a Marcedes Lewis red‑zone catch.  The Jaguars secured a 28–21 road win to move to 2–1 and head into Week 4 with renewed momentum and confidence in Cousins’s command of the offense.
+      On September 30 Jacksonville hosted the Cincinnati Bengals at EverBank Field with Kirk Cousins again under center.  The game plan emphasised tempo and using every skill player rather than forcing runs into bad pictures.  Cousins opened with rhythm throws to Braylon Edwards and Cecil Shorts and later hit T.Y. Hilton on a deep post off play‑action.  Maurice Jones‑Drew and Alfred Morris contributed on draws and delays when the Bengals widened for the pass, but Stone kept the ball in Cousins’s hands on third downs and in the red zone.  Defensively the Jaguars mixed cover 3 and match zone to contain A.J. Green, yet Green’s size and Andy Dalton’s accuracy produced two touchdowns.  A second‑half interception from Cousins and several untimely pressures by Geno Atkins shifted momentum.  Despite a late drive that ended with a field goal, Jacksonville fell 24–20, dropping to 2–2 and highlighting the need to protect the quarterback and finish drives.  Stone now turns his focus to a Week 5 home game against the Chicago Bears.
 calendar_state:
   calendar_file: null
   previous_node: season_end_2011
@@ -36,8 +36,8 @@ record:
   team_ovr: N/A
   note: Arizona started 1-6, finished 8-1, and became one of the league's strongest late-season offenses.
 job_status:
-  job_security: 84
-  stress: 85
+  job_security: 83
+  stress: 86
   contract:
     status: Active
     team: Jacksonville Jaguars
@@ -58,12 +58,12 @@ job_status:
     risk_flag: Must choose next opportunity carefully; wrong HC landing spot could stall momentum
 offseason_status:
   time_bubble_active: false
-  bubble_stage: In-Season — Week 4 Preparation
+  bubble_stage: In-Season — Week 5 Preparation
   era_ruleset: NFL_2012
   evaluation_score: N/A
   trajectory: Rising
   club_decision: Retained by Jacksonville; preparing for 2012 season
-  outside_interest: None — focused on Week 3 preparation
+  outside_interest: None — focused on Week 5 preparation
   interview_access: None — head coach contract active
   transition_pending: false
 coaching_attributes:
@@ -405,7 +405,7 @@ team_context:
 
   season_record:
     wins: 2
-    losses: 1
+    losses: 2
   game_results:
     - week: 1
       date: '2012-09-09'
@@ -430,6 +430,14 @@ team_context:
       result: Win 28-21
       summary: >-
         With rookie quarterback Kirk Cousins making his first start, Stone abandoned a run‑first script in favour of tempo, formation diversity and intermediate passing.  Cousins executed quick‑game concepts to Braylon Edwards and Cecil Shorts and used play‑action to free T.Y. Hilton for a 40‑yard touchdown.  Maurice Jones‑Drew and Alfred Morris complemented the air attack with draws and misdirection runs to keep Indianapolis honest.  Jacksonville’s defense limited Andrew Luck with disciplined rush lanes and intercepted him once.  In the fourth quarter, with the score tied 21–21, Stone engineered a 12‑play drive featuring a balanced mix of bootlegs and option routes, culminating in a Marcedes Lewis touchdown catch.  The Jaguars sealed a 28–21 road win and improved to 2–1.
+
+    - week: 4
+      date: '2012-09-30'
+      opponent: Cincinnati Bengals
+      site: EverBank Field, Jacksonville
+      result: Loss 20-24
+      summary: >-
+        Stone kept Kirk Cousins at quarterback and called a pass‑oriented game plan designed to attack Cincinnati across the field.  Cousins moved the offense efficiently early with stick, spacing and dagger concepts, connecting with Braylon Edwards and Cecil Shorts to set up a T.Y. Hilton post for a touchdown.  The Bengals adjusted with pressure from Geno Atkins and Carlos Dunlap, forcing an interception that Andy Dalton turned into an A.J. Green touchdown.  Jacksonville mixed draws and delays to Maurice Jones‑Drew and Alfred Morris when the front widened but struggled to finish in the red zone, settling for two field goals.  Trailing 24–13 late, Stone engineered a 75‑yard drive featuring a bootleg flood to Marcedes Lewis and a jump‑ball touchdown to Braylon Edwards, pulling within four.  The defense could not get the ball back, and the Jaguars fell 24–20 to drop to 2–2.
 
   final_depth_chart:
     offense:
@@ -621,7 +629,8 @@ active_consequences: |-
   - From May through August he led OTAs, minicamp and a demanding training camp.  Stone installed his dual‑system offense and Todd Bowles’s defense, enforced conditioning standards and accountability, and evaluated players across four preseason games.  He finalised a 53‑man roster on September 1, retaining Blaine Gabbert with backups Chad Henne and Kirk Cousins, pairing Maurice Jones‑Drew with rookie Alfred Morris, and assembling a balanced defense anchored by Luke Kuechly and Bobby Wagner.  The Jaguars exited camp with a clear identity and cautious optimism for the regular season.
   - After a 23–17 opening win over Minnesota, Stone’s Jaguars began the 2012 season 1–0.  The disciplined, run‑first game plan validated his foundation‑first philosophy and slightly increased his job security.  The team now turns its focus to a Week 2 home game against the Houston Texans.
   - The Week 2 home loss to Houston dropped the Jaguars to 1–1.  Despite sticking to a balanced, run‑heavy script and forcing Houston to earn its yards, Jacksonville’s offense struggled to generate explosives and surrendered a critical strip‑sack.  The result underscored the need for improved pass protection and a more dynamic passing attack while reaffirming Stone’s commitment to physical football.  Preparation shifts to a Week 3 road game at Indianapolis.
+  - The Week 4 home loss to Cincinnati dropped Jacksonville to 2–2.  Stone’s pass‑heavy plan produced early points, but pressure and turnovers allowed the Bengals to steal the lead.  The result underscored the need to protect Kirk Cousins, finish drives and refine red‑zone execution ahead of the Week 5 clash with Chicago.
 last_3_turns_summary:
-  - 'Turn 151: In Week 1 of the 2012 regular season Jacksonville travelled to Minnesota and defeated the Vikings 23–17.  Stone’s play‑calling leaned on the run game with Maurice Jones‑Drew and Alfred Morris, used quick passes to Braylon Edwards and Cecil Shorts, and picked timely play‑action shots to T.Y. Hilton.  The defense, led by Luke Kuechly and Bobby Wagner, forced two turnovers and contained Adrian Peterson.  The win gave Stone a 1–0 start and validated his foundation‑first identity heading into Week 2.'
   - 'Turn 152: In Week 2 Jacksonville hosted Houston and suffered a 21–13 defeat.  Stone stuck to his run‑first script, mixing inside zone, power and stretch calls and using quick‑game passes, but Houston’s J.J. Watt stripped Blaine Gabbert in the fourth quarter to set up the decisive touchdown.  The defense limited Arian Foster but surrendered two scoring plays to Matt Schaub and Andre Johnson.  The Jaguars fell to 1–1 and refocused on pass protection and explosive plays for their Week 3 trip to Indianapolis.'
   - 'Turn 153: In Week 3 Jacksonville traveled to Indianapolis and defeated the Colts 28–21.  Making his first start, rookie quarterback Kirk Cousins executed an aggressive game plan built around quick passes, play‑action and formation diversity.  He connected with T.Y. Hilton for a deep touchdown and guided a balanced late drive culminating in a Marcedes Lewis score.  The defense intercepted Andrew Luck and generated steady pressure.  The victory improved the Jaguars to 2–1 and boosted confidence in the offense’s versatility heading into a Week 4 home game against Cincinnati.'
+  - 'Turn 154: In Week 4 Jacksonville hosted the Cincinnati Bengals and fell 24–20.  Stone called a pass‑oriented game plan featuring stick, spacing and dagger concepts to attack Cincinnati’s zones, and Kirk Cousins connected early with Braylon Edwards, Cecil Shorts and T.Y. Hilton for a touchdown.  The Bengals responded with pressure from Geno Atkins and Carlos Dunlap, and an ill‑timed interception turned into an A.J. Green touchdown.  Jacksonville rallied with a late touchdown to Braylon Edwards but couldn’t get the ball back, dropping to 2–2 and underscoring the need to protect the quarterback and finish drives ahead of a Week 5 meeting with Chicago.'
