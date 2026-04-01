@@ -8,17 +8,17 @@ identity:
   level: 2
   level_label: Coordinator (established NFL OC)
 timeline:
-  career_turn: 136
+  career_turn: 142
   season_turn: 1
   phase: Offseason — 2012 HC Interview Window Active
   previous_phase: 2011 Season End — Exit Meetings
-  last_resolved_date: '2012-01-14'
+  last_resolved_date: '2012-01-15'
   date: '2012-01-15'
-  next_event: 2012 head coaching interview cycle resolution
+  next_event: 2012 head coaching interview cycle — Jacksonville contract negotiation and final decision; Indianapolis waitlist unresolved
   calendar_frozen: true
   resume_anchor:
     exact_pickup_date: '2012-01-15'
-    reason: Stone completed his second season as Arizona Cardinals offensive coordinator and is now in the 2012 head coaching interview window. Arizona finished 9-7 after a 1-6 start and a late 8-1 surge.
+    reason: Stone submitted head‑coaching applications to the Jacksonville Jaguars, Indianapolis Colts, and Miami Dolphins and moved into the 2012 head coaching interview window. After waiting for responses, Jacksonville offered a phone interview, Indianapolis wait‑listed him, and Miami declined. He completed the Jacksonville phone interview on January 15 and advanced to a campus interview. On January 15, he traveled to Jacksonville for the campus interview, met with owner Shad Khan, general manager Gene Smith, staff, and players, presented his 100‑day plan, and answered rapid‑fire questions. His stage scores and skills average produced a total of 86.5, which advanced him to the final round. During the final interview, Stone delivered a 100‑plus‑word final statement summarising his program‑building philosophy, dual‑system offensive vision, and readiness to hire a strong defensive coordinator while asking pointed questions about organizational autonomy and resources. Reference checks with Andy Reid, Rod Dowhower, and Ken Whisenhunt were unanimously positive. Combining his earlier scores with a 15‑point reference bonus, a 5‑point fit bonus, and a 14‑point final statement lifted his total to 120.5 and eclipsed other candidates. Shad Khan offered Stone the Jacksonville head‑coaching job and invited him to negotiate terms. Indianapolis remains on the waitlist; Miami is closed.
 calendar_state:
   calendar_file: null
   previous_node: season_end_2011
@@ -46,8 +46,8 @@ job_status:
     salary: 700000
     accepted: true
     note: Stone is under contract as Arizona's offensive coordinator. HC interview interest is active because the season has ended.
-  applications_active: 0
-  offers_pending: 0
+  applications_active: 1
+  offers_pending: 1
   retention_status: Employed — Arizona Cardinals OC
   evaluation_projection:
     likely_score: N/A
@@ -62,9 +62,9 @@ offseason_status:
   evaluation_score: N/A
   trajectory: Rising
   club_decision: Retained by Arizona; outside interest active
-  outside_interest: Active — head coaching interview interest
-  interview_access: Open — season ended
-  transition_pending: false
+  outside_interest: Offer from Jacksonville; waitlist with Indianapolis; Miami closed
+  interview_access: Jacksonville contract negotiation; Indianapolis waitlist; Miami closed
+  transition_pending: true
 coaching_attributes:
   cap: 87
   core:
@@ -174,12 +174,16 @@ personal_development:
   - A visible turnaround story: Arizona started 1-6 in 2011 and finished 8-1
   - Deep references from Reid, Dowhower, Turner, Whisenhunt, and the Chargers/Eagles trees
 active_consequences:
-- Stone is past the "can he become an OC" stage of his career. The next decision is whether the right HC opportunity exists, not whether he can run an offense.
-- His résumé is still uniquely broad, which remains a strength and a risk — some owners will see a future head coach, while some offensive purists may still want a narrower specialist.
-- The Arizona turnaround gave him real late-season credibility, but the lack of a playoff berth keeps his profile just below the obvious top tier.
-- His financial cushion means he can be selective rather than desperate.
-- The 2012 interview cycle will determine whether his path accelerates toward NFL head coaching or stays on the OC track another few years.
+ - Stone is past the "can he become an OC" stage of his career. The next decision is whether the right HC opportunity exists, not whether he can run an offense.
+ - His résumé is still uniquely broad, which remains a strength and a risk — some owners will see a future head coach, while some offensive purists may still want a narrower specialist.
+ - The Arizona turnaround gave him real late-season credibility, but the lack of a playoff berth keeps his profile just below the obvious top tier.
+ - His financial cushion means he can be selective rather than desperate.
+ - The 2012 interview cycle will determine whether his path accelerates toward NFL head coaching or stays on the OC track another few years.
+ - Stone submitted head‑coaching applications to Jacksonville, Indianapolis, and Miami. The Jaguars responded by scheduling a phone interview, the Colts placed him on a waitlist, and the Dolphins declined. This reduced his active applications from three to two and signaled that the market was narrowing.
+ - He completed the Jacksonville phone interview on January 15. He delivered detailed, evidence-backed responses about building a sustainable culture, installing a multiple offense tailored to Maurice Jones‑Drew and Marcedes Lewis, and developing Blaine Gabbert while considering the draft. His answers were scored 9/10, 9/10, and 8/10. Combined with his high communication-equivalent skill rating (12.75 points), his phone interview total of 38.75 exceeded the 35-point threshold and advanced him to a campus interview. Jacksonville immediately scheduled the next stage. Stone prepared his itinerary, drafted questions for owner Shad Khan and GM Gene Smith, and began outlining his 100-day plan. Indianapolis remains a waitlist possibility; Miami is closed.
+ - He traveled to Jacksonville for the campus interview. Over five stages, he met with owner Shad Khan and GM Gene Smith to present his three-year vision, met the current staff to discuss evaluations and hires, spoke with players about culture and continuity, delivered a detailed 100‑day operational and scheme presentation tailored to Maurice Jones‑Drew, Marcedes Lewis, and the Jaguars roster, and answered rapid-fire panel questions about his candidacy, weaknesses, and queries for the organization. His stage scores (9/10, 9/10, 9/10, 9/10, 8/10) combined with his relevant skills average (85 × 0.5 = 42.5) produced a total of 86.5. This score placed him in the finalist category and advanced him to the final interview round. Jacksonville scheduled the final interview. Indianapolis remains a waitlist possibility; Miami is closed.
+ - In the final interview, Stone sat for an extended dinner and conversation with owner Shad Khan and general manager Gene Smith. He delivered a succinct, 100‑plus‑word final statement that synthesised his Hall of Fame credibility, dual‑system offensive philosophy, program‑building experience, and commitment to hiring a seasoned defensive coordinator. He candidly acknowledged his lack of prior NFL head‑coaching experience, explained how he would rely on his staff to fill gaps, and asked pointed questions about organizational alignment, draft control, and resource allocation. Khan conducted reference calls with Andy Reid, Rod Dowhower, and Ken Whisenhunt, each of whom offered glowing endorsements of Stone’s leadership, adaptability, and honesty. The reference check added fifteen points to his dossier, a fit bonus of five points reflected the perfect match between his scheme and Jacksonville’s roster【366879180517951†L378-L410】, and a fourteen‑point final statement score propelled his total to 120.5. This outpaced other finalists such as Mike Mularkey and Dirk Koetter and persuaded Khan to offer Stone the head‑coaching position. Negotiations now begin while Indianapolis remains on the waitlist and Miami is closed.
 last_3_turns_summary:
-- 'Turn 132: Arizona fell to 1-6 and the offense came under pressure to adapt.'
-- 'Turn 134: Arizona finished 9-7 after an 8-1 closing run and narrowly missed the playoffs on tiebreakers.'
-- 'Turn 136: Stone entered the 2012 HC interview window as Arizona''s offensive coordinator.'
+ - 'Turn 139: Stone completed the Jacksonville phone interview. He delivered detailed answers about building a sustainable culture, installing a multiple offense for Maurice Jones‑Drew and Marcedes Lewis, and developing the quarterback position. His score of 38.75 advanced him to a campus interview. Indianapolis remains on the waitlist; Miami is closed.'
+ - 'Turn 140: Stone traveled to Jacksonville for the campus interview. He met with owner Shad Khan and GM Gene Smith, evaluated the staff, engaged with players, presented his 100-day plan, and answered rapid-fire panel questions. The combination of high stage scores and his skill average yielded a total of 86.5, making him a finalist and advancing him to the final round with Jacksonville.'
+ - 'Turn 141: Stone returned to Jacksonville for the final interview. Over dinner with owner Shad Khan and GM Gene Smith, he delivered a 100-plus-word final statement emphasising his Hall of Fame credibility, dual-system offense, program-building track record, and commitment to hiring a strong defensive coordinator. He asked pointed questions about autonomy and resources and candidly acknowledged his inexperience as a head coach. Reference calls to Andy Reid, Rod Dowhower, and Ken Whisenhunt were unanimously positive. The cumulative effect—a 15-point reference bonus, 5-point fit bonus, and 14-point statement score—raised his total to 120.5, exceeding rival scores and prompting Jacksonville to extend him a head-coaching offer. Negotiations now begin; Indianapolis remains on the waitlist and Miami is closed.'
