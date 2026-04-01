@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '2012-01-16'
-  career_turn: 143
-  sim_phase: Offseason — Staff Hiring & Transition
+  date: '2012-02-01'
+  career_turn: 144
+  sim_phase: Offseason — 2012 Staff Assembly & Roster Evaluation
   archive_note: 2012 interview-window snapshot
 career_history:
 - turn: 12
@@ -131,3 +131,25 @@ career_history:
      salary:
        from: 700000
        to: 3375000
+  - turn: 143
+    date_range: 2012-01-16 to 2012-02-01
+    team: Jacksonville Jaguars
+    role: Head Coach
+    phase: Offseason — 2012 Staff Hiring & Transition
+    summary: Stone assembled his inaugural Jacksonville coaching staff and prepared to implement his 100‑day plan.
+    results:
+    - Hired assistant head coach/offensive coordinator Doug Pederson on a three‑year, $1.9M contract.
+    - Hired defensive coordinator Todd Bowles on a three‑year, $2.1M contract.
+    - Signed Matt LaFleur (quarterbacks), Chris Foerster (run game/OL), Eric Bieniemy (running backs), Ike Hilliard (wide receivers), Freddie Kitchens (tight ends), Luke Getsy (offensive assistant), Andre Patterson (defensive line), Matt Eberflus (linebackers), Ed Donatell (defensive backs) and Rich Bisaccia (special teams) to multi-year deals.
+    - Conducted a full staff alignment meeting on January 29 and introduced the staff to the media on February 1.
+    - Completed the staff assembly phase and moved into roster evaluation and free agency planning.
+    state_changes:
+      stress:
+        from: 74
+        to: 77
+      job_security:
+        from: 78
+        to: 79
+      salary:
+        from: 3375000
+        to: 3375000
