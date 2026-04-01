@@ -1,0 +1,139 @@
+meta:
+  character: Alex-Lamar Stone
+  mode: COACHING
+  date: '2012-01-15'
+  career_turn: 137
+  sim_phase: Offseason — 2012 HC Interview Window Active
+  archive_note: 2012 interview-window snapshot
+relationships:
+- name: Don Coryell
+  role: Former HC, Chargers
+  score: 80
+  previous_score: 80
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  delta: 0
+- name: Bobby Ross
+  role: Former HC, Chargers
+  score: 75
+  previous_score: 75
+  delta_this_turn: 0
+  trend: stable
+  status: strong_reference
+  delta: 0
+- name: Andy Reid
+  role: Head Coach, Philadelphia Eagles
+  score: 84
+  previous_score: 83
+  delta_this_turn: 1
+  trend: rising
+  status: strong_external_reference
+  notes:
+  - Reid remains a powerful reference for head coaching interviews.
+  delta: 1
+- name: Rod Dowhower
+  role: Former Offensive Coordinator
+  score: 90
+  previous_score: 90
+  delta_this_turn: 0
+  trend: stable
+  status: former_mentor
+  notes:
+  - Primary coaching reference for the OC-to-HC jump.
+  delta: 0
+- name: Norv Turner
+  role: Head Coach, San Diego Chargers
+  score: 73
+  previous_score: 72
+  delta_this_turn: 1
+  trend: rising
+  status: endorsement_ready
+  notes:
+  - Recent NFL superior and system mentor; useful reference for HC credibility.
+  delta: 1
+- name: Ken Whisenhunt
+  role: Head Coach, Arizona Cardinals
+  score: 78
+  previous_score: 76
+  delta_this_turn: 2
+  trend: rising
+  status: current_head_coach_reference
+  notes:
+  - Two seasons of direct OC-HC work built real trust.
+  - Whisenhunt can validate Stone's in-season adjustments during Arizona's 8-1 finish.
+  delta: 8
+- name: Pat Shurmur
+  role: NFL head coach / long-term colleague
+  score: 73
+  previous_score: 73
+  delta_this_turn: 0
+  trend: stable
+  status: long_term_colleague
+  notes:
+  - Long-term colleague and mutual reference inside the Eagles coaching tree.
+  delta: 0
+- name: Antonio Gates
+  role: Tight End, San Diego Chargers
+  score: 68
+  previous_score: 68
+  delta_this_turn: 0
+  trend: stable
+  status: strong_player_reference
+  delta: 0
+- name: Philip Rivers
+  role: Quarterback, San Diego Chargers
+  score: 60
+  previous_score: 60
+  delta_this_turn: 0
+  trend: stable
+  status: player_reference
+  delta: 0
+- name: Brad Childress
+  role: Former HC, Minnesota Vikings
+  score: 78
+  previous_score: 78
+  delta_this_turn: 0
+  trend: stable
+  status: external_reference
+  notes:
+  - Still a useful Eagles-years reference.
+  delta: 0
+- name: Memphis Administration
+  role: University administration
+  score: 58
+  previous_score: 60
+  delta_this_turn: -2
+  trend: cooling
+  status: former_employer
+  notes:
+  - Good terms remain intact, but distance decay continues.
+  delta: -2
+relationship_events:
+- turn: 134
+  date: '2012-01-08'
+  event: Arizona finished 9-7 after a 1-6 start and 8-1 close, pushing Stone into the 2012 HC interview conversation.
+  effects:
+  - name: Ken Whisenhunt
+    delta: 6
+    note: Arizona turnaround increased Whisenhunt's trust and endorsement value.
+- turn: 136
+  date: '2012-01-15'
+  event: Stone entered the 2012 HC interview window as Arizona's offensive coordinator.
+  effects:
+  - name: Memphis Administration
+    delta: -2
+    note: Continued distance decay from former employer.
+  - turn: 137
+    date: '2012-01-15'
+    event: Stone requested permission from the Cardinals to interview for head coaching positions and reached out to his top references for guidance.
+    effects:
+    - name: Ken Whisenhunt
+      delta: 2
+      note: Stone's professionalism and courtesy in seeking permission strengthened trust.
+    - name: Norv Turner
+      delta: 1
+      note: A candid phone call reinforced mutual respect and mentorship.
+    - name: Andy Reid
+      delta: 1
+      note: Stone's proactive call for guidance underscored their ongoing connection.
