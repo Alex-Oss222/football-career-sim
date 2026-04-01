@@ -8,18 +8,18 @@ identity:
   level: 2
   level_label: Coordinator (established NFL OC)
 timeline:
-  career_turn: 151
-  season_turn: 10
-  phase: Regular Season — 2012 Week 1 Completed
-  previous_phase: Preseason — 2012 Training Camp & Roster Cutdown
-  last_resolved_date: '2012-09-09'
-  date: '2012-09-10'
-  next_event: 2012 Week 2 vs Houston Texans
+  career_turn: 152
+  season_turn: 11
+  phase: Regular Season — 2012 Week 2 Completed
+  previous_phase: Regular Season — 2012 Week 1 Completed
+  last_resolved_date: '2012-09-16'
+  date: '2012-09-17'
+  next_event: 2012 Week 3 at Indianapolis Colts
   calendar_frozen: false
   resume_anchor:
-    exact_pickup_date: '2012-09-10'
+    exact_pickup_date: '2012-09-17'
     reason: >-
-      On September 9, Stone coached his first regular‑season game as Jacksonville’s head coach.  Following a disciplined offseason and a focused training camp, the Jaguars travelled to Minnesota and executed a run‑first, mistake‑free game plan.  Stone opened with zone and power runs to Maurice Jones‑Drew and Alfred Morris, used quick‑game throws to Braylon Edwards and Cecil Shorts to keep the sticks moving, and picked his moments for play‑action shots to T.Y. Hilton.  The defense played fast and fundamental, holding Adrian Peterson in check and forcing two turnovers.  Johnny Hekker flipped the field with precision punts, and Josh Scobee hit three field goals.  Jacksonville controlled time of possession and emerged with a 23–17 road win.  Stone’s calm demeanour on the sideline and decisive play‑calling validated the foundation‑first identity.  He now turns the team’s attention to a Week 2 home game against the Houston Texans.
+      On September 16, Jacksonville hosted division rival Houston for Stone’s first game at EverBank Field.  The Jaguars entered with confidence after a Week 1 win, but the Texans’ powerful defensive front and balanced offense posed a new challenge.  Stone stuck to his plan: run inside and outside, move Blaine Gabbert’s launch point and protect the football.  Early drives produced field goals but stalled as J.J. Watt and Brian Cushing blew up runs and pressured Gabbert.  Defensively the Jaguars contained Arian Foster for stretches, yet Matt Schaub connected with Andre Johnson in key moments.  Trailing 14–13 in the fourth quarter, Stone attempted to mount a go‑ahead drive but a strip‑sack by Watt set up a short-field touchdown for Houston.  The Jaguars fell 21–13 despite a disciplined effort, dropping to 1–1.  Stone now prepares the team for a Week 3 trip to Indianapolis, preaching correction and resilience while continuing to build on the foundation‑first identity.
 calendar_state:
   calendar_file: null
   previous_node: season_end_2011
@@ -36,8 +36,8 @@ record:
   team_ovr: N/A
   note: Arizona started 1-6, finished 8-1, and became one of the league's strongest late-season offenses.
 job_status:
-  job_security: 84
-  stress: 84
+  job_security: 83
+  stress: 85
   contract:
     status: Active
     team: Jacksonville Jaguars
@@ -58,12 +58,12 @@ job_status:
     risk_flag: Must choose next opportunity carefully; wrong HC landing spot could stall momentum
 offseason_status:
   time_bubble_active: false
-  bubble_stage: In-Season — Week 2 Preparation
+  bubble_stage: In-Season — Week 3 Preparation
   era_ruleset: NFL_2012
   evaluation_score: N/A
   trajectory: Rising
   club_decision: Retained by Jacksonville; preparing for 2012 season
-  outside_interest: None — focused on in-season preparation
+  outside_interest: None — focused on Week 3 preparation
   interview_access: None — head coach contract active
   transition_pending: false
 coaching_attributes:
@@ -405,7 +405,7 @@ team_context:
 
   season_record:
     wins: 1
-    losses: 0
+    losses: 1
   game_results:
     - week: 1
       date: '2012-09-09'
@@ -414,6 +414,14 @@ team_context:
       result: Win 23-17
       summary: >-
         Jacksonville executed a run-first game plan that controlled the ball, limited turnovers and created explosive play-action opportunities.  Maurice Jones‑Drew and Alfred Morris combined for over 150 rushing yards, while Blaine Gabbert completed high-percentage throws to Braylon Edwards and Cecil Shorts.  The defense, led by Luke Kuechly and Bobby Wagner, forced two turnovers and kept Adrian Peterson under 90 yards.  The special teams unit, keyed by punter Johnny Hekker and kicker Josh Scobee, won the field-position battle.  The victory opened the Stone era with a balanced, disciplined performance.
+
+    - week: 2
+      date: '2012-09-16'
+      opponent: Houston Texans
+      site: EverBank Field, Jacksonville
+      result: Loss 13-21
+      summary: >-
+        Jacksonville stuck to its foundation‑first philosophy by opening with inside zone, duo and stretch runs and using quick-game passes to Braylon Edwards, Cecil Shorts and Marcedes Lewis.  Josh Scobee’s field goals kept the game close, but Houston’s defensive front, led by J.J. Watt and Brian Cushing, disrupted the run game and recorded a decisive strip‑sack in the fourth quarter.  The defense held Arian Foster under 100 yards and forced one turnover, yet Matt Schaub and Andre Johnson capitalised on coverage lapses for two touchdowns.  A final Jaguars drive stalled near midfield.  The 21–13 loss dropped Jacksonville to 1–1 but reinforced the need for improved pass protection and explosive plays.
 
   final_depth_chart:
     offense:
@@ -604,7 +612,8 @@ active_consequences: |-
   - In the weeks following the draft Stone signed a priority UDFA class (Johnny Hekker, Tashaun Gipson, Michael Thomas, Chase Minnifield, Kevin Elliott, Antonio Allen, Derek Moye and George Bryan) and ran rookie orientation and minicamp.  These moves deepened the roster at minimal cost and reinforced the foundation‑first philosophy.
   - From May through August he led OTAs, minicamp and a demanding training camp.  Stone installed his dual‑system offense and Todd Bowles’s defense, enforced conditioning standards and accountability, and evaluated players across four preseason games.  He finalised a 53‑man roster on September 1, retaining Blaine Gabbert with backups Chad Henne and Kirk Cousins, pairing Maurice Jones‑Drew with rookie Alfred Morris, and assembling a balanced defense anchored by Luke Kuechly and Bobby Wagner.  The Jaguars exited camp with a clear identity and cautious optimism for the regular season.
   - After a 23–17 opening win over Minnesota, Stone’s Jaguars began the 2012 season 1–0.  The disciplined, run‑first game plan validated his foundation‑first philosophy and slightly increased his job security.  The team now turns its focus to a Week 2 home game against the Houston Texans.
+  - The Week 2 home loss to Houston dropped the Jaguars to 1–1.  Despite sticking to a balanced, run‑heavy script and forcing Houston to earn its yards, Jacksonville’s offense struggled to generate explosives and surrendered a critical strip‑sack.  The result underscored the need for improved pass protection and a more dynamic passing attack while reaffirming Stone’s commitment to physical football.  Preparation shifts to a Week 3 road game at Indianapolis.
 last_3_turns_summary:
-  - 'Turn 149: After the draft, Stone, his staff and the front office focused on signing undrafted free agents and orienting the rookie class.  They secured punter Johnny Hekker, safety Tashaun Gipson, defensive back Michael Thomas, cornerback Chase Minnifield, receivers Kevin Elliott and Derek Moye, safety Antonio Allen and interior lineman George Bryan on low‑cost three‑year deals.  Stone led rookie orientation and minicamp sessions that installed the playbook, taught cultural standards and set expectations, deepening the roster while reinforcing the foundation‑first philosophy.'
   - 'Turn 150: From early May through September 1 Stone guided the Jaguars through OTAs, minicamp and a physical training camp.  He installed his dual‑system offense and Todd Bowles’s defense, enforced conditioning tests and accountability standards, and evaluated players across four preseason games (2–2 record).  Stone retained Blaine Gabbert as starting quarterback with Chad Henne and rookie Kirk Cousins behind him; he kept Maurice Jones‑Drew and rookie Alfred Morris as a one‑two punch; and he finalised a 53‑man roster featuring balanced depth on the offensive line, a revamped receiving corps and a youthful, aggressive defense.  The team exited camp disciplined and optimistic for the regular season.'
   - 'Turn 151: In Week 1 of the 2012 regular season, Jacksonville travelled to Minnesota and defeated the Vikings 23–17.  Stone’s play‑calling leaned on the run game with Maurice Jones‑Drew and Alfred Morris, used quick passes to Braylon Edwards and Cecil Shorts, and picked timely play‑action shots to T.Y. Hilton.  The defense, led by Luke Kuechly and Bobby Wagner, forced two turnovers and contained Adrian Peterson.  Special teams won field position thanks to Johnny Hekker and Josh Scobee.  The win gave Stone a 1–0 start and validated his foundation‑first identity heading into a Week 2 home game against Houston.'
+  - 'Turn 152: In Week 2 Jacksonville hosted the Houston Texans and suffered a 21–13 defeat.  Stone adhered to his run‑first plan, mixing inside zone, power and stretch calls and using quick‑game passes to Braylon Edwards, Cecil Shorts and Marcedes Lewis.  However, Houston’s J.J. Watt and Brian Cushing disrupted the pocket and recorded a strip‑sack that set up the decisive touchdown.  The defense limited Arian Foster and forced a turnover but couldn’t prevent two scoring strikes from Matt Schaub to Andre Johnson.  The Jaguars fell to 1–1 and must address pass protection and explosive plays before their Week 3 trip to Indianapolis.'
