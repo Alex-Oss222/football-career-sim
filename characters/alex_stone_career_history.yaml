@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '2012-09-23'
-  career_turn: 153
-  sim_phase: Regular Season — 2012 Week 3 Completed
+  date: '2012-09-30'
+  career_turn: 154
+  sim_phase: Regular Season — 2012 Week 4 Completed
   archive_note: 2012 interview-window snapshot
 career_history:
 - turn: 12
@@ -354,6 +354,29 @@ career_history:
       job_security:
         from: 83
         to: 84
+      salary:
+        from: 3375000
+        to: 3375000
+
+  - turn: 154
+    date_range: 2012-09-25 to 2012-09-30
+    team: Jacksonville Jaguars
+    role: Head Coach
+    phase: Regular Season — Week 4 Completed
+    summary: In Week 4 Jacksonville hosted the Cincinnati Bengals and suffered a narrow 24–20 loss.  Stone kept Kirk Cousins at quarterback and built a pass‑oriented game plan featuring stick, spacing and dagger concepts to exploit Cincinnati’s zone looks.  The Jaguars scored early on a deep post to T.Y. Hilton and used draws and delays to Maurice Jones‑Drew and Alfred Morris when the defense widened, but pressure from Geno Atkins and Carlos Dunlap forced a costly interception that Andy Dalton converted into an A.J. Green touchdown.  A late scoring drive highlighted by a bootleg flood to Marcedes Lewis and a jump‑ball touchdown to Braylon Edwards cut the deficit to four, yet the defense couldn’t regain possession.  The defeat dropped Jacksonville to 2–2 and underscored the need to protect the quarterback and finish drives.
+    results:
+    - Maintained Kirk Cousins as the starting quarterback and employed a wide array of passing concepts to attack Cincinnati’s defense across the field.
+    - Connected with T.Y. Hilton on a deep post for the opening touchdown and kept the Bengals off balance with draws and delayed handoffs.
+    - Struggled in the red zone, settling for two field goals and allowing a second‑half interception that was returned for a touchdown.
+    - Allowed two touchdowns to A.J. Green despite mixing cover 3 and match zone coverage schemes.
+    - Engineered a late touchdown drive but failed to secure a final stop, resulting in a 24–20 loss and a 2–2 record heading into Week 5 against Chicago.
+    state_changes:
+      stress:
+        from: 85
+        to: 86
+      job_security:
+        from: 84
+        to: 83
       salary:
         from: 3375000
         to: 3375000
