@@ -54,15 +54,15 @@ relationships:
   delta: 0
  - name: Ken Whisenhunt
   role: Head Coach, Arizona Cardinals
-  score: 70
-  previous_score: 76
-  delta_this_turn: -6
+  score: 68
+  previous_score: 70
+  delta_this_turn: -2
   trend: cooling
   status: former_head_coach_reference
   notes:
-  - Two seasons of direct OC–HC work built real trust, but Stone’s departure from Arizona creates distance and disappointment.
+  - Two seasons of direct OC–HC work built real trust, but Stone’s departure from Arizona continues to create distance and disappointment.
   - Whisenhunt remains supportive but naturally loses daily contact.
-  delta: -6
+  delta: -8
 - name: Pat Shurmur
   role: NFL head coach / long-term colleague
   score: 73
@@ -111,24 +111,144 @@ relationships:
   delta: -2
  - name: Shad Khan
    role: Owner, Jacksonville Jaguars
+   score: 75
+   previous_score: 70
+   delta_this_turn: 5
+   trend: building
+   status: team_owner
+   notes:
+   - Khan hired Stone as his first head coach and has placed initial trust in him. After seeing Stone assemble a competent staff, his confidence grew.
+   delta: 75
+ - name: Gene Smith
+   role: General Manager, Jacksonville Jaguars
+   score: 68
+   previous_score: 65
+   delta_this_turn: 3
+   trend: building
+   status: general_manager
+   notes:
+   - Smith collaborated with Stone during the interview process and supported his staff assembly efforts.  Confidence in Stone increased after seeing the staff come together.
+   delta: 68
+ - name: Doug Pederson
+   role: Assistant Head Coach / Offensive Coordinator, Jacksonville Jaguars
    score: 70
    previous_score: 0
    delta_this_turn: 70
    trend: new
-   status: team_owner
+   status: assistant_head_coach
    notes:
-   - Khan hired Stone as his first head coach and has placed initial trust in him.
+   - Joined Stone’s staff as assistant head coach and offensive coordinator.
    delta: 70
- - name: Gene Smith
-   role: General Manager, Jacksonville Jaguars
+ - name: Matt LaFleur
+   role: Quarterbacks Coach, Jacksonville Jaguars
    score: 65
    previous_score: 0
    delta_this_turn: 65
    trend: new
-   status: general_manager
+   status: position_coach
    notes:
-   - Smith collaborated with Stone during the interview process and will work closely on roster building.
+   - Young QB coach hired to develop Jacksonville’s quarterbacks.
    delta: 65
+ - name: Chris Foerster
+   role: Run Game Coordinator / Offensive Line Coach, Jacksonville Jaguars
+   score: 65
+   previous_score: 0
+   delta_this_turn: 65
+   trend: new
+   status: position_coach
+   notes:
+   - Veteran OL coach tasked with building a balanced run game.
+   delta: 65
+ - name: Eric Bieniemy
+   role: Running Backs Coach, Jacksonville Jaguars
+   score: 67
+   previous_score: 0
+   delta_this_turn: 67
+   trend: new
+   status: position_coach
+   notes:
+   - Energetic RB coach signed to maximise Maurice Jones‑Drew and backups.
+   delta: 67
+ - name: Ike Hilliard
+   role: Wide Receivers Coach, Jacksonville Jaguars
+   score: 65
+   previous_score: 0
+   delta_this_turn: 65
+   trend: new
+   status: position_coach
+   notes:
+   - Former NFL receiver hired to teach route precision and spacing.
+   delta: 65
+ - name: Freddie Kitchens
+   role: Tight Ends Coach, Jacksonville Jaguars
+   score: 69
+   previous_score: 0
+   delta_this_turn: 69
+   trend: new
+   status: position_coach
+   notes:
+   - Former Arizona colleague brought to guide Marcedes Lewis and the tight end room.
+   delta: 69
+ - name: Luke Getsy
+   role: Offensive Assistant, Jacksonville Jaguars
+   score: 60
+   previous_score: 0
+   delta_this_turn: 60
+   trend: new
+   status: position_coach
+   notes:
+   - Developmental assistant signed for installation and prep support.
+   delta: 60
+ - name: Todd Bowles
+   role: Defensive Coordinator, Jacksonville Jaguars
+   score: 72
+   previous_score: 0
+   delta_this_turn: 72
+   trend: new
+   status: coordinator
+   notes:
+   - Veteran defensive coach given full control of the defense.
+   delta: 72
+ - name: Andre Patterson
+   role: Defensive Line Coach, Jacksonville Jaguars
+   score: 68
+   previous_score: 0
+   delta_this_turn: 68
+   trend: new
+   status: position_coach
+   notes:
+   - Trusted DL teacher hired to develop technique and fundamentals.
+   delta: 68
+ - name: Matt Eberflus
+   role: Linebackers Coach, Jacksonville Jaguars
+   score: 66
+   previous_score: 0
+   delta_this_turn: 66
+   trend: new
+   status: position_coach
+   notes:
+   - Discipline-driven LB coach signed to strengthen second-level play.
+   delta: 66
+ - name: Ed Donatell
+   role: Defensive Backs Coach, Jacksonville Jaguars
+   score: 67
+   previous_score: 0
+   delta_this_turn: 67
+   trend: new
+   status: position_coach
+   notes:
+   - Veteran DB coach hired to stabilise the secondary and coordinate with Bowles.
+   delta: 67
+ - name: Rich Bisaccia
+   role: Special Teams Coordinator, Jacksonville Jaguars
+   score: 70
+   previous_score: 0
+   delta_this_turn: 70
+   trend: new
+   status: coordinator
+   notes:
+   - Well-regarded special teams leader brought in to overhaul the third phase.
+   delta: 70
 relationship_events:
 - turn: 134
   date: '2012-01-08'
@@ -157,3 +277,52 @@ relationship_events:
    - name: Ken Whisenhunt
      delta: -6
      note: Relationship cooled as Stone left Arizona for Jacksonville.
+ - turn: 143
+  date: '2012-02-01'
+  event: Stone assembled his inaugural Jacksonville coaching staff and began the roster evaluation phase.
+  effects:
+  - name: Shad Khan
+    delta: 5
+    note: Confidence in Stone increased after seeing the staff come together.
+  - name: Gene Smith
+    delta: 3
+    note: Added trust due to the successful staff assembly process.
+  - name: Ken Whisenhunt
+    delta: -2
+    note: Relationship cooled further as Stone’s focus shifted to Jacksonville and time passed without direct contact.
+  - name: Doug Pederson
+    delta: 70
+    note: New relationship established as assistant head coach and offensive coordinator.
+  - name: Matt LaFleur
+    delta: 65
+    note: New relationship established as quarterbacks coach.
+  - name: Chris Foerster
+    delta: 65
+    note: New relationship established as run game coordinator and offensive line coach.
+  - name: Eric Bieniemy
+    delta: 67
+    note: New relationship established as running backs coach.
+  - name: Ike Hilliard
+    delta: 65
+    note: New relationship established as wide receivers coach.
+  - name: Freddie Kitchens
+    delta: 69
+    note: New relationship established as tight ends coach.
+  - name: Luke Getsy
+    delta: 60
+    note: New relationship established as offensive assistant.
+  - name: Todd Bowles
+    delta: 72
+    note: New relationship established as defensive coordinator.
+  - name: Andre Patterson
+    delta: 68
+    note: New relationship established as defensive line coach.
+  - name: Matt Eberflus
+    delta: 66
+    note: New relationship established as linebackers coach.
+  - name: Ed Donatell
+    delta: 67
+    note: New relationship established as defensive backs coach.
+  - name: Rich Bisaccia
+    delta: 70
+    note: New relationship established as special teams coordinator.
