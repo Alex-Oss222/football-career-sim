@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '2012-02-28'
-  career_turn: 146
-  sim_phase: Offseason — 2012 Scouting Combine & Draft Board Finalisation
+  date: '2012-04-28'
+  career_turn: 148
+  sim_phase: Offseason — 2012 NFL Draft & Rookie Integration
   archive_note: 2012 interview-window snapshot
 relationships:
 - name: Don Coryell
@@ -111,28 +111,30 @@ relationships:
   delta: -2
  - name: Shad Khan
    role: Owner, Jacksonville Jaguars
-   score: 80
-   previous_score: 78
-   delta_this_turn: 2
+   score: 83
+   previous_score: 82
+   delta_this_turn: 1
    trend: building
    status: team_owner
    notes:
    - Khan hired Stone as his first head coach and has placed initial trust in him. After seeing Stone assemble a competent staff, his confidence grew.
    - February roster‑evaluation meetings aligned Khan with Stone’s foundation‑first philosophy.
    - The thorough scouting‑combine evaluation and finalised draft board further increased Khan’s trust in Stone’s long‑term roster vision.
-   delta: 80
+    - The disciplined free‑agency and trade period reinforced Khan’s confidence that Stone could build a balanced roster while managing the cap and draft assets.
+   delta: 83
  - name: Gene Smith
    role: General Manager, Jacksonville Jaguars
-   score: 72
-   previous_score: 70
-   delta_this_turn: 2
+   score: 74
+   previous_score: 73
+   delta_this_turn: 1
    trend: building
    status: general_manager
    notes:
    - Smith collaborated with Stone during the interview process and supported his staff assembly efforts.  Confidence in Stone increased after seeing the staff come together.
    - Smith appreciated Stone’s willingness to revise the offseason plan toward a foundation‑first philosophy and felt more aligned with the new strategy.
    - The combine evaluation and finalised draft board reinforced Smith’s confidence in Stone’s player evaluation process.
-   delta: 72
+    - Working through free agency and trades strengthened the partnership; Smith valued Stone’s disciplined approach to balancing immediate needs with long‑term flexibility.
+   delta: 74
  - name: Doug Pederson
    role: Assistant Head Coach / Offensive Coordinator, Jacksonville Jaguars
    score: 70
@@ -253,6 +255,94 @@ relationships:
    notes:
    - Well-regarded special teams leader brought in to overhaul the third phase.
    delta: 70
+
+  - name: Luke Kuechly
+    role: Linebacker, Jacksonville Jaguars
+    score: 68
+    previous_score: 0
+    delta_this_turn: 68
+    trend: new
+    status: rookie_player
+    notes:
+    - Drafted at pick 5 to anchor Jacksonville’s defense.  Early interactions show high football IQ and professionalism.
+    delta: 68
+
+  - name: Bobby Wagner
+    role: Linebacker, Jacksonville Jaguars
+    score: 65
+    previous_score: 0
+    delta_this_turn: 65
+    trend: new
+    status: rookie_player
+    notes:
+    - Drafted at pick 38.  Brings sideline‑to‑sideline speed and tackling ability to complement Kuechly.
+    delta: 65
+
+  - name: T.Y. Hilton
+    role: Wide Receiver, Jacksonville Jaguars
+    score: 63
+    previous_score: 0
+    delta_this_turn: 63
+    trend: new
+    status: rookie_player
+    notes:
+    - Third‑round pick with 4.34‑second speed and return ability.  Expected to stretch the field and thrive in Stone’s offense.
+    delta: 63
+
+  - name: Olivier Vernon
+    role: Defensive End, Jacksonville Jaguars
+    score: 60
+    previous_score: 0
+    delta_this_turn: 60
+    trend: new
+    status: rookie_player
+    notes:
+    - High‑upside edge rusher drafted via trade up.  Raw but explosive; Stone views him as a developmental cornerstone.
+    delta: 60
+
+  - name: Kirk Cousins
+    role: Quarterback, Jacksonville Jaguars
+    score: 60
+    previous_score: 0
+    delta_this_turn: 60
+    trend: new
+    status: rookie_player
+    notes:
+    - Drafted as a developmental backup.  Regarded for leadership and accuracy; will compete with Chad Henne behind Blaine Gabbert.
+    delta: 60
+
+  - name: Josh Norman
+    role: Cornerback, Jacksonville Jaguars
+    score: 60
+    previous_score: 0
+    delta_this_turn: 60
+    trend: new
+    status: rookie_player
+    notes:
+    - Fifth‑round pick with size and ball skills.  Expected to push for a rotational role at cornerback.
+    delta: 60
+
+  - name: Alfred Morris
+    role: Running Back, Jacksonville Jaguars
+    score: 60
+    previous_score: 0
+    delta_this_turn: 60
+    trend: new
+    status: rookie_player
+    notes:
+    - Late‑round running back drafted via trade up.  One‑cut style fits Stone’s zone scheme and offers depth behind Maurice Jones‑Drew.
+    delta: 60
+
+  - name: Scott Solomon
+    role: Defensive End, Jacksonville Jaguars
+    score: 58
+    previous_score: 0
+    delta_this_turn: 58
+    trend: new
+    status: rookie_player
+    notes:
+    - Seventh‑round pick with strong motor and special‑teams upside.  Provides depth on the defensive line.
+    delta: 58
 relationship_events:
 - turn: 134
   date: '2012-01-08'
@@ -350,3 +440,49 @@ relationship_events:
    - name: Gene Smith
      delta: 2
      note: Smith’s trust increased due to the collaborative evaluation process and the balanced final board.
+
+- turn: 147
+  date: '2012-04-26'
+  event: Stone, Gene Smith, Shad Khan and the finance team executed free‑agency signings, trades and roster cuts to set up the Jaguars for the draft.  They traded Paul Posluszny to the Chicago Bears for mid‑round picks, dealt Luke McCown for a future pick, cut several veterans to free cap space, signed right tackle Eric Winston, pass rushers Andre Carter and John Abraham, re‑signed Jeremy Mincey, added receiver Braylon Edwards, quarterback Chad Henne and safety Reggie Nelson, and prepared a targeted undrafted free agent class.  These disciplined moves aligned with the foundation‑first philosophy and bolstered confidence within the organisation.
+  effects:
+  - name: Shad Khan
+    delta: 2
+    note: Khan’s trust increased as he witnessed Stone manage free agency and trades prudently while strengthening the roster.
+  - name: Gene Smith
+    delta: 1
+    note: Smith appreciated Stone’s balanced approach to roster construction, which reinforced their partnership.
+
+ - turn: 148
+   date: '2012-04-28'
+   event: Stone and the Jaguars front office executed the 2012 NFL Draft.  They selected Luke Kuechly, Bobby Wagner, T.Y. Hilton, Kirk Cousins, Olivier Vernon, Josh Norman, Alfred Morris and Scott Solomon while adhering to the draft swap rule.  Each Jaguars selection resulted in the player originally chosen in that slot being reassigned to the new player’s historical team (Blackmon to Carolina, Branch to Seattle, Anger to Indianapolis, Brandon Marshall to Carolina, and Mike Harris to Washington).  The draft class added cornerstone talents on both sides of the ball and solidified the foundation‑first roster build.
+   effects:
+     - name: Shad Khan
+       delta: 1
+       note: Khan’s confidence in Stone grew further after watching him execute a disciplined draft and honour the swap rule.
+     - name: Gene Smith
+       delta: 1
+       note: Smith valued Stone’s draft management and felt increasingly aligned with his vision.
+     - name: Luke Kuechly
+       delta: 68
+       note: New relationship created; initial trust based on Kuechly’s leadership and fit.
+     - name: Bobby Wagner
+       delta: 65
+       note: New relationship created; initial trust based on Wagner’s speed and tackling.
+     - name: T.Y. Hilton
+       delta: 63
+       note: New relationship created; initial trust based on Hilton’s speed and big‑play ability.
+     - name: Olivier Vernon
+       delta: 60
+       note: New relationship created; initial trust based on Vernon’s upside as an edge rusher.
+     - name: Kirk Cousins
+       delta: 60
+       note: New relationship created; initial trust based on Cousins’s leadership and developmental potential.
+     - name: Josh Norman
+       delta: 60
+       note: New relationship created; initial trust based on Norman’s press coverage traits.
+     - name: Alfred Morris
+       delta: 60
+       note: New relationship created; initial trust based on Morris’s scheme fit and toughness.
+     - name: Scott Solomon
+       delta: 58
+       note: New relationship created; initial trust based on Solomon’s motor and special‑teams value.
