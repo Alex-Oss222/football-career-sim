@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '2012-09-16'
-  career_turn: 152
-  sim_phase: Regular Season — 2012 Week 2 Completed
+  date: '2012-09-23'
+  career_turn: 153
+  sim_phase: Regular Season — 2012 Week 3 Completed
   archive_note: 2012 interview-window snapshot
 relationships:
 - name: Don Coryell
@@ -111,8 +111,8 @@ relationships:
   delta: -2
  - name: Shad Khan
    role: Owner, Jacksonville Jaguars
-   score: 86
-   previous_score: 85
+   score: 87
+   previous_score: 86
    delta_this_turn: 1
    trend: building
    status: team_owner
@@ -126,8 +126,8 @@ relationships:
    delta: 84
  - name: Gene Smith
    role: General Manager, Jacksonville Jaguars
-   score: 77
-   previous_score: 76
+   score: 78
+   previous_score: 77
    delta_this_turn: 1
    trend: building
    status: general_manager
