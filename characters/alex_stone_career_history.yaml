@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '2012-02-21'
-  career_turn: 145
-  sim_phase: Offseason — 2012 Roster Evaluation & Draft Board Alignment
+  date: '2012-02-28'
+  career_turn: 146
+  sim_phase: Offseason — 2012 Scouting Combine & Draft Board Finalisation
   archive_note: 2012 interview-window snapshot
 career_history:
 - turn: 12
@@ -169,6 +169,27 @@ career_history:
       stress:
         from: 77
         to: 77
+      job_security:
+        from: 79
+        to: 79
+      salary:
+        from: 3375000
+        to: 3375000
+  - turn: 146
+    date_range: 2012-02-22 to 2012-02-28
+    team: Jacksonville Jaguars
+    role: Head Coach
+    phase: Offseason — 2012 Scouting Combine & Draft Board Finalisation
+    summary: Stone and his coaching staff attended the NFL scouting combine, evaluated targeted prospects and finalised the Jaguars’ draft board under the foundation‑first philosophy.
+    results:
+    - Evaluated top prospects including linebacker Luke Kuechly (4.58‑second 40, 38‑inch vertical, 11.43‑second 60‑yard shuttle)【459036554289166†L97-L104】, linebacker Bobby Wagner (4.45‑second 40, 39.5‑inch vertical, 11‑foot broad jump)【600181430595093†L165-L173】 and receiver T.Y. Hilton (4.34‑second 40, game‑breaking speed)【777471514394376†L417-L423】.
+    - Debated mid‑round candidates such as edge rusher Olivier Vernon【881419948871879†L1045-L1047】, guard Brandon Brooks【968355876953202†L101-L110】, defensive tackle Akiem Hicks【600181430595093†L1398-L1407】 and center Ben Jones【881419948871879†L699-L700】, weighing athleticism versus power and scheme fit.
+    - Finalised a new draft board: Kuechly at pick 5, Wagner at 38, Hilton at 69/70, Vernon at 90 (if acquired), Kirk Cousins at 101, Josh Norman at 142, Alfred Morris via trade up (165–173), and Scott Solomon at 214.
+    - Reinforced consensus on the foundation‑first roster strategy and prepared Jacksonville for free‑agency negotiations.
+    state_changes:
+      stress:
+        from: 77
+        to: 78
       job_security:
         from: 79
         to: 79
