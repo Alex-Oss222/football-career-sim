@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '2012-09-23'
-  career_turn: 153
-  sim_phase: Regular Season — 2012 Week 3 Completed
+  date: '2012-09-30'
+  career_turn: 154
+  sim_phase: Regular Season — 2012 Week 4 Completed
   archive_note: 2012 interview-window snapshot
 relationships:
 - name: Don Coryell
@@ -111,34 +111,36 @@ relationships:
   delta: -2
  - name: Shad Khan
    role: Owner, Jacksonville Jaguars
-   score: 87
-   previous_score: 86
-   delta_this_turn: 1
-   trend: building
+   score: 86
+   previous_score: 87
+   delta_this_turn: -1
+   trend: cautious
    status: team_owner
    notes:
    - Khan hired Stone as his first head coach and has placed initial trust in him. After seeing Stone assemble a competent staff, his confidence grew.
    - February roster‑evaluation meetings aligned Khan with Stone’s foundation‑first philosophy.
    - The thorough scouting‑combine evaluation and finalised draft board further increased Khan’s trust in Stone’s long‑term roster vision.
-    - The disciplined free‑agency and trade period reinforced Khan’s confidence that Stone could build a balanced roster while managing the cap and draft assets.
-    - Successfully signing priority UDFAs and orienting the rookie class after the draft showed operational efficiency and attention to detail.
-    - A well‑run training camp and preseason, culminating in a balanced 53‑man roster, solidified Khan’s belief that Stone can lead a program.
-   delta: 84
+   - The disciplined free‑agency and trade period reinforced Khan’s confidence that Stone could build a balanced roster while managing the cap and draft assets.
+   - Successfully signing priority UDFAs and orienting the rookie class after the draft showed operational efficiency and attention to detail.
+   - A well‑run training camp and preseason, culminating in a balanced 53‑man roster, solidified Khan’s belief that Stone can lead a program.
+   - The Week 4 loss to Cincinnati prompted a slight dip in trust, highlighting the need to protect Kirk Cousins and finish drives.
+   delta: 83
  - name: Gene Smith
    role: General Manager, Jacksonville Jaguars
-   score: 78
-   previous_score: 77
-   delta_this_turn: 1
-   trend: building
+   score: 77
+   previous_score: 78
+   delta_this_turn: -1
+   trend: cautious
    status: general_manager
    notes:
    - Smith collaborated with Stone during the interview process and supported his staff assembly efforts.  Confidence in Stone increased after seeing the staff come together.
    - Smith appreciated Stone’s willingness to revise the offseason plan toward a foundation‑first philosophy and felt more aligned with the new strategy.
    - The combine evaluation and finalised draft board reinforced Smith’s confidence in Stone’s player evaluation process.
-    - Working through free agency and trades strengthened the partnership; Smith valued Stone’s disciplined approach to balancing immediate needs with long‑term flexibility.
-    - The successful UDFA signing period and rookie orientation demonstrated that Stone could handle logistical details and talent evaluation beyond the draft.
-    - A productive training camp and clear depth chart reinforced Smith’s comfort with Stone’s decision‑making as roster cuts loomed.
-   delta: 75
+   - Working through free agency and trades strengthened the partnership; Smith valued Stone’s disciplined approach to balancing immediate needs with long‑term flexibility.
+   - The successful UDFA signing period and rookie orientation demonstrated that Stone could handle logistical details and talent evaluation beyond the draft.
+   - A productive training camp and clear depth chart reinforced Smith’s comfort with Stone’s decision‑making as roster cuts loomed.
+   - The Week 4 loss to Cincinnati reminded Smith that the roster remains a work in progress, leading to a slight dip in trust.
+   delta: 74
  - name: Doug Pederson
    role: Assistant Head Coach / Offensive Coordinator, Jacksonville Jaguars
    score: 70
@@ -651,3 +653,14 @@ relationship_events:
       - name: Derek Moye
         delta: 1
         note: Moye’s contested catches in preseason earned Stone’s trust and secured his roster spot.
+
+  - turn: 154
+    date: '2012-09-30'
+    event: In Week 4 Jacksonville hosted the Cincinnati Bengals and fell 24–20, dropping to 2–2.  The pass‑heavy game plan produced early success but turnovers and protection breakdowns shifted momentum and tempered organisational enthusiasm.
+    effects:
+      - name: Shad Khan
+        delta: -1
+        note: The home loss caused a slight dip in trust and highlighted the need to protect the quarterback and finish drives.
+      - name: Gene Smith
+        delta: -1
+        note: Smith’s confidence dipped slightly as pass protection issues resurfaced.
