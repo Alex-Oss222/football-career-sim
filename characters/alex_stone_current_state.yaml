@@ -8,17 +8,18 @@ identity:
   level: 2
   level_label: Coordinator (established NFL OC)
 timeline:
-  career_turn: 146
-  season_turn: 5
-  phase: Offseason — 2012 Scouting Combine & Draft Board Finalisation
-  previous_phase: Offseason — 2012 Roster Evaluation & Draft Board Alignment
-  last_resolved_date: '2012-02-28'
-  date: '2012-02-28'
-  next_event: 2012 offseason — free‑agency negotiations and roster moves
+  career_turn: 148
+  season_turn: 7
+  phase: Offseason — 2012 NFL Draft & Rookie Integration
+  previous_phase: Offseason — 2012 Free Agency & Draft Preparation
+  last_resolved_date: '2012-04-28'
+  date: '2012-04-28'
+  next_event: 2012 Rookie Minicamp & OTA
   calendar_frozen: false
   resume_anchor:
-    exact_pickup_date: '2012-02-28'
-    reason: From February 22 through February 28 Stone and his staff attended the NFL scouting combine in Indianapolis.  Each position coach presented his preferred prospects while Stone evaluated his own targets.  Linebacker Luke Kuechly impressed with a 4.58‑second 40‑yard dash, a 38‑inch vertical and a best‑in‑class 60‑yard shuttle【459036554289166†L97-L104】, confirming his sideline‑to‑sideline speed and football IQ.  Utah State linebacker Bobby Wagner, who missed the combine due to pneumonia, validated his selection with a blistering 4.45‑second 40, 39.5‑inch vertical and 11‑foot broad jump at his pro day【600181430595093†L165-L173】.  Receiver T.Y. Hilton ran a 4.34 40 and showcased game‑breaking quickness【777471514394376†L417-L423】.  In the mid rounds the staff debated edge rusher Olivier Vernon’s 4.73 speed and 34.5‑inch vertical【881419948871879†L1045-L1047】, guard Brandon Brooks’s 36 bench reps and sub‑5.0 40【968355876953202†L101-L110】, defensive tackle Akiem Hicks’s 33‑inch vertical and 27 bench reps【600181430595093†L1398-L1407】 and center Ben Jones’s 5.35‑second 40 and 30.5‑inch vertical【881419948871879†L699-L700】.  After extensive discussion the Jaguars finalised their draft board around a foundation‑first philosophy: Kuechly at pick 5, Wagner at 38, Hilton at 69/70, Vernon as the priority target if a pick between 72 and 99 is acquired, Kirk Cousins at 101, Josh Norman at 142, Alfred Morris via trade up around 165–173 and Scott Solomon at 214.  This evaluation phase reinforced internal consensus on player priorities and prepared the club for free‑agency decisions.
+    exact_pickup_date: '2012-04-28'
+    reason: >-
+      From April 26 through April 28 Stone and the Jaguars front office executed the 2012 NFL Draft.  They selected linebacker Luke Kuechly at pick 5 and swapped the historically drafted Justin Blackmon to the Carolina Panthers under the draft swap rule.  At pick 38 they chose linebacker Bobby Wagner, sending Andre Branch to the Seattle Seahawks.  In the third round (70) they drafted receiver T.Y. Hilton and moved punter Bryan Anger to the Indianapolis Colts.  Stone packaged picks 115 and 180 to trade up into the mid‑90s and select edge rusher Olivier Vernon; with no prior Jaguars pick at that slot there was no swap required.  At pick 101 they took quarterback Kirk Cousins, swapping the historically selected player at that slot to Washington.  In the fifth round (142) they drafted cornerback Josh Norman, trading linebacker Brandon Marshall to Carolina.  Late on day two they used pick 176 and a 2013 seventh‑rounder to move up into the 165–170 range to draft running back Alfred Morris, sending defensive back Mike Harris to Washington.  They finished the draft by taking defensive end Scott Solomon at pick 214.  These moves yielded a draft class of Kuechly, Wagner, Hilton, Cousins, Vernon, Norman, Morris and Solomon while honouring the swap rule, and further cemented the foundation‑first roster build.
 calendar_state:
   calendar_file: null
   previous_node: season_end_2011
@@ -35,8 +36,8 @@ record:
   team_ovr: N/A
   note: Arizona started 1-6, finished 8-1, and became one of the league's strongest late-season offenses.
 job_status:
-  job_security: 79
-  stress: 77
+  job_security: 82
+  stress: 80
   contract:
     status: Active
     team: Jacksonville Jaguars
@@ -57,12 +58,12 @@ job_status:
     risk_flag: Must choose next opportunity carefully; wrong HC landing spot could stall momentum
 offseason_status:
   time_bubble_active: false
-  bubble_stage: Roster Evaluation & 100‑Day Plan Implementation
+  bubble_stage: Post-Draft Integration & Rookie Orientation
   era_ruleset: NFL_2012
   evaluation_score: N/A
   trajectory: Rising
   club_decision: Retained by Arizona; outside interest active
-  outside_interest: None — staff assembled; focus shifts to team building
+  outside_interest: None — draft completed; focus shifts to rookie integration and minicamp
   interview_access: None — head coach contract active
   transition_pending: false
 coaching_attributes:
@@ -280,6 +281,126 @@ team_context:
       terms: 'Three‑year, $15M contract; bring him back if the Bengals let him walk.'
       rationale: >-
         Nelson’s experience in Jacksonville and improved play in Cincinnati make him a stabilising force for a young secondary.
+  roster_moves:
+    trades:
+      - description: >-
+          Traded middle linebacker Paul Posluszny to the Chicago Bears for a 2012 fourth‑round pick (No. 115) and a 2012 sixth‑round pick (No. 180), freeing salary and creating draft capital to move up for Olivier Vernon and Alfred Morris.
+      - description: >-
+          Dealt backup quarterback Luke McCown to the Kansas City Chiefs for a 2013 seventh‑round pick, clearing room for Chad Henne and Kirk Cousins.
+    cuts:
+      - Greg Jones (FB)
+      - Bryan Anger (P)
+      - Jordan Palmer (QB)
+      - Isaiah Stanback (WR)
+      - Quan Cosby (WR)
+      - Chris Harris (S)
+      - Jason Spitz (G/C)
+      - Guy Whimper (OT)
+    signings:
+      - Eric Winston — Right Tackle — four‑year, $20M contract with $8M guaranteed.  A value deal compared to the four‑year, $22M contract he previously received from Kansas City in 2012【900258649864444†L325-L329】.
+      - Andre Carter — Defensive End/Edge — one‑year, $2M contract with incentives.  Adds veteran pass‑rush help and stabilises the edge rotation.
+      - Braylon Edwards — Wide Receiver — one‑year, $1.5M contract with incentives.  Provides a bigger outside body to complement Hilton, Robinson and Shorts.
+      - Jeremy Mincey — Defensive End — re‑signed to a four‑year, $20M extension with performance incentives to retain a key contributor.
+      - John Abraham — Defensive End — one‑year, $3M contract.  Serves as a rotational pass rusher and mentor for younger linemen.
+      - Chad Henne — Quarterback — two‑year, $2.5M contract with incentives to compete for the backup job.
+      - Reggie Nelson — Safety — three‑year, $15M contract.  Brings back an experienced safety to stabilise the secondary.
+    udafa_signings:
+      - Johnny Hekker — Punter — three‑year, $1.2M contract (low guarantees) to replace the cut punter Bryan Anger.
+      - Tashaun Gipson — Safety — three‑year, $1.8M contract as a developmental safety with upside.
+      - Michael Thomas — Defensive Back — three‑year, $1.5M contract providing versatile depth if available.
+      - Chase Minnifield — Cornerback — three‑year, $1.5M contract as a priority UDFA corner.
+      - Kevin Elliott — Wide Receiver — three‑year, $1.4M contract adding competition to the receiver room.
+      - Antonio Allen — Safety — three‑year, $1.5M contract to bolster depth in the defensive backfield.
+      - George Bryan — Interior Offensive Lineman — three‑year, $1.3M contract as a developmental lineman.
+  draft_results:
+    picks:
+      - pick: 5
+        round: 1
+        player: Luke Kuechly
+        position: Linebacker
+        college: Boston College
+        swapped_player: Justin Blackmon
+        swapped_team: Carolina Panthers
+        rationale: >-
+          Kuechly’s elite range and instincts were confirmed at the combine with a 4.58‑second 40, 38‑inch vertical and 11.43‑second 60‑yard shuttle【459036554289166†L97-L104】.  Selecting him at five anchors Jacksonville’s defense for the next decade.
+      - pick: 38
+        round: 2
+        player: Bobby Wagner
+        position: Linebacker
+        college: Utah State
+        swapped_player: Andre Branch
+        swapped_team: Seattle Seahawks
+        rationale: >-
+          Wagner’s 4.45‑second 40‑yard dash and 39.5‑inch vertical from his pro day【600181430595093†L165-L173】 demonstrate the sideline‑to‑sideline speed and power that complement Kuechly.
+      - pick: 70
+        round: 3
+        player: T.Y. Hilton
+        position: Wide Receiver
+        college: Florida International
+        swapped_player: Bryan Anger
+        swapped_team: Indianapolis Colts
+        rationale: >-
+          Hilton ran a 4.34‑second 40 and showcased game‑breaking quickness and elusiveness【777471514394376†L417-L423】, providing a vertical and slot threat in Stone’s offense.
+      - pick: 101
+        round: 4
+        player: Kirk Cousins
+        position: Quarterback
+        college: Michigan State
+        swapped_player: Historical Jaguars pick at 101
+        swapped_team: Washington
+        rationale: >-
+          Cousins’s solid athleticism (4.84‑second 40, 28.5‑inch vertical)【881419948871879†L465-L467】 and leadership make him a reliable developmental quarterback behind Blaine Gabbert.
+      - pick: 90
+        round: 4 (via trade)
+        player: Olivier Vernon
+        position: Defensive End
+        college: Miami (Florida)
+        swapped_player: None
+        swapped_team: None
+        rationale: >-
+          With a 4.73‑second 40, 34.5‑inch vertical and 31 bench reps【881419948871879†L1045-L1047】, Vernon offers explosive edge potential.  Jacksonville traded picks 115 and 180 to move up and secure him.
+      - pick: 142
+        round: 5
+        player: Josh Norman
+        position: Cornerback
+        college: Coastal Carolina
+        swapped_player: Brandon Marshall (LB)
+        swapped_team: Carolina Panthers
+        rationale: >-
+          Norman’s size and ball skills bolster the secondary.  His 4.61‑second 40 and 33‑inch vertical translate to press coverage ability.
+      - pick: 168
+        round: 6 (via trade)
+        player: Alfred Morris
+        position: Running Back
+        college: Florida Atlantic
+        swapped_player: Mike Harris
+        swapped_team: Washington
+        rationale: >-
+          Morris’s 4.64‑second 40, 35.5‑inch vertical and 9‑foot‑9 broad jump【792714866377261†L501-L516】 suit the zone‑run game.  Jacksonville traded pick 176 and a 2013 seventh‑rounder to move up for him.
+      - pick: 214
+        round: 7
+        player: Scott Solomon
+        position: Defensive End
+        college: Rice
+        swapped_player: None
+        swapped_team: None
+        rationale: >-
+          Solomon’s 4.88‑second 40, 35‑inch vertical and 34 bench reps provide late‑round depth and special‑teams value.
+    trades:
+      - description: >-
+          Packaged picks 115 and 180 to move up into the mid‑90s and select Olivier Vernon, a high‑upside defensive end whose athletic profile fit Todd Bowles’s scheme.  With no prior Jaguars pick at that slot, no swap was required.
+      - description: >-
+          Traded pick 176 and a 2013 seventh‑round pick to move up into the 165–170 range for running back Alfred Morris, then sent cornerback Mike Harris (the historical pick at 176) to Washington under the swap rule.
+    udfa_signings:
+      - Johnny Hekker — P
+      - Tashaun Gipson — S
+      - Michael Thomas — DB
+      - Chase Minnifield — CB
+      - Kevin Elliott — WR
+      - Antonio Allen — S
+      - George Bryan — IOL
+    swap_summary: >-
+      Because Jacksonville selected players originally drafted by other teams, the swap rule reassigned their historical picks to those players’ original franchises: Justin Blackmon went to the Carolina Panthers, Andre Branch to the Seattle Seahawks, punter Bryan Anger to the Indianapolis Colts, linebacker Brandon Marshall to the Panthers, and defensive back Mike Harris to Washington.  Picks acquired via trade (e.g., for Olivier Vernon and Scott Solomon) had no prior Jaguars selections and thus required no swaps.
 full_resume_at_time_of_hire:
   playing_career: Hall of Fame Tight End (San Diego Chargers, 1987-1998)
   coaching_career:
@@ -352,21 +473,23 @@ personal_development:
   - Program-building experience that translates to culture-setting
   - A visible turnaround story: Arizona started 1-6 in 2011 and finished 8-1
   - Deep references from Reid, Dowhower, Turner, Whisenhunt, and the Chargers/Eagles trees
-active_consequences:
- - Stone is past the "can he become an OC" stage of his career. The next decision is whether the right HC opportunity exists, not whether he can run an offense.
- - His résumé is still uniquely broad, which remains a strength and a risk — some owners will see a future head coach, while some offensive purists may still want a narrower specialist.
- - The Arizona turnaround gave him real late-season credibility, but the lack of a playoff berth keeps his profile just below the obvious top tier.
- - His financial cushion means he can be selective rather than desperate.
- - The 2012 interview cycle will determine whether his path accelerates toward NFL head coaching or stays on the OC track another few years.
- - Stone submitted head‑coaching applications to Jacksonville, Indianapolis, and Miami. The Jaguars responded by scheduling a phone interview, the Colts placed him on a waitlist, and the Dolphins declined. This reduced his active applications from three to two and signaled that the market was narrowing.
- - He completed the Jacksonville phone interview on January 15. He delivered detailed, evidence-backed responses about building a sustainable culture, installing a multiple offense tailored to Maurice Jones‑Drew and Marcedes Lewis, and developing Blaine Gabbert while considering the draft. His answers were scored 9/10, 9/10, and 8/10. Combined with his high communication-equivalent skill rating (12.75 points), his phone interview total of 38.75 exceeded the 35-point threshold and advanced him to a campus interview. Jacksonville immediately scheduled the next stage. Stone prepared his itinerary, drafted questions for owner Shad Khan and GM Gene Smith, and began outlining his 100-day plan. Indianapolis remains a waitlist possibility; Miami is closed.
- - He traveled to Jacksonville for the campus interview. Over five stages, he met with owner Shad Khan and GM Gene Smith to present his three-year vision, met the current staff to discuss evaluations and hires, spoke with players about culture and continuity, delivered a detailed 100‑day operational and scheme presentation tailored to Maurice Jones‑Drew, Marcedes Lewis, and the Jaguars roster, and answered rapid-fire panel questions about his candidacy, weaknesses, and queries for the organization. His stage scores (9/10, 9/10, 9/10, 9/10, 8/10) combined with his relevant skills average (85 × 0.5 = 42.5) produced a total of 86.5. This score placed him in the finalist category and advanced him to the final interview round. Jacksonville scheduled the final interview. Indianapolis remains a waitlist possibility; Miami is closed.
- - In the final interview, Stone sat for an extended dinner and conversation with owner Shad Khan and general manager Gene Smith. He delivered a succinct, 100‑plus‑word final statement that synthesised his Hall of Fame credibility, dual‑system offensive philosophy, program‑building experience, and commitment to hiring a seasoned defensive coordinator. He candidly acknowledged his lack of prior NFL head‑coaching experience, explained how he would rely on his staff to fill gaps, and asked pointed questions about organizational alignment, draft control, and resource allocation. Khan conducted reference calls with Andy Reid, Rod Dowhower, and Ken Whisenhunt, each of whom offered glowing endorsements of Stone’s leadership, adaptability, and honesty. The reference check added fifteen points to his dossier, a fit bonus of five points reflected the perfect match between his scheme and Jacksonville’s roster【366879180517951†L378-L410】, and a fourteen‑point final statement score propelled his total to 120.5. This outpaced other finalists such as Mike Mularkey and Dirk Koetter and persuaded Khan to offer Stone the head‑coaching position. Negotiations now begin while Indianapolis remains on the waitlist and Miami is closed.
- - Following the offer, Stone and his agent entered negotiations with Shad Khan. They aimed for a contract in the $13–14 million range over four years with the first two years guaranteed and clauses ensuring control over staff hires. Khan’s opening offer mirrored the Greg Schiano baseline at roughly $12 million. Stone countered with $14 million and guaranteed coordinator authority. The parties agreed on a four‑year, $13.6 million deal with $6.8 million guaranteed in years one and two and performance escalators in years three and four based on win totals and playoff berths. Coordinator hiring input and final say over staff were guaranteed. Accepting the deal officially made Stone the head coach of the Jacksonville Jaguars, ended his application with Indianapolis, and triggered the transition into staff hiring and roster evaluation.
+active_consequences: |-
+  - Stone is past the "can he become an OC" stage of his career. The next decision is whether the right HC opportunity exists, not whether he can run an offense.
+  - His résumé is still uniquely broad, which remains a strength and a risk — some owners will see a future head coach, while some offensive purists may still want a narrower specialist.
+  - The Arizona turnaround gave him real late-season credibility, but the lack of a playoff berth keeps his profile just below the obvious top tier.
+  - His financial cushion means he can be selective rather than desperate.
+  - The 2012 interview cycle will determine whether his path accelerates toward NFL head coaching or stays on the OC track another few years.
+  - Stone submitted head‑coaching applications to Jacksonville, Indianapolis, and Miami. The Jaguars responded by scheduling a phone interview, the Colts placed him on a waitlist, and the Dolphins declined. This reduced his active applications from three to two and signaled that the market was narrowing.
+  - He completed the Jacksonville phone interview on January 15. He delivered detailed, evidence-backed responses about building a sustainable culture, installing a multiple offense tailored to Maurice Jones‑Drew and Marcedes Lewis, and developing Blaine Gabbert while considering the draft. His answers were scored 9/10, 9/10, and 8/10. Combined with his high communication-equivalent skill rating (12.75 points), his phone interview total of 38.75 exceeded the 35-point threshold and advanced him to a campus interview. Jacksonville immediately scheduled the next stage. Stone prepared his itinerary, drafted questions for owner Shad Khan and GM Gene Smith, and began outlining his 100-day plan. Indianapolis remains a waitlist possibility; Miami is closed.
+  - He traveled to Jacksonville for the campus interview. Over five stages, he met with owner Shad Khan and GM Gene Smith to present his three-year vision, met the current staff to discuss evaluations and hires, spoke with players about culture and continuity, delivered a detailed 100‑day operational and scheme presentation tailored to Maurice Jones‑Drew, Marcedes Lewis, and the Jaguars roster, and answered rapid-fire panel questions about his candidacy, weaknesses, and queries for the organization. His stage scores (9/10, 9/10, 9/10, 9/10, 8/10) combined with his relevant skills average (85 × 0.5 = 42.5) produced a total of 86.5. This score placed him in the finalist category and advanced him to the final interview round. Jacksonville scheduled the final interview. Indianapolis remains a waitlist possibility; Miami is closed.
+  - In the final interview, Stone sat for an extended dinner and conversation with owner Shad Khan and general manager Gene Smith. He delivered a succinct, 100‑plus‑word final statement that synthesised his Hall of Fame credibility, dual‑system offensive philosophy, program‑building experience, and commitment to hiring a seasoned defensive coordinator. He candidly acknowledged his lack of prior NFL head‑coaching experience, explained how he would rely on his staff to fill gaps, and asked pointed questions about organizational alignment, draft control, and resource allocation. Khan conducted reference calls with Andy Reid, Rod Dowhower, and Ken Whisenhunt, each of whom offered glowing endorsements of Stone’s leadership, adaptability, and honesty. The reference check added fifteen points to his dossier, a fit bonus of five points reflected the perfect match between his scheme and Jacksonville’s roster【366879180517951†L378-L410】, and a fourteen‑point final statement score propelled his total to 120.5. This outpaced other finalists such as Mike Mularkey and Dirk Koetter and persuaded Khan to offer Stone the head‑coaching position. Negotiations now begin while Indianapolis remains on the waitlist and Miami is closed.
+  - Between March 1 and April 26, Stone, Gene Smith, Shad Khan, the coaching staff and the finance department executed a series of disciplined roster moves that balanced immediate needs with long‑term flexibility.  They traded away Paul Posluszny for mid‑round draft capital while retaining Daryl Smith, dealt Luke McCown for a future pick, and cut eight veterans to free cap space.  In free agency they signed right tackle Eric Winston to a below‑market four‑year deal【900258649864444†L325-L329】, added veteran pass rushers Andre Carter and John Abraham, re‑signed Jeremy Mincey, and signed Braylon Edwards, Chad Henne and Reggie Nelson.  These moves aligned with the foundation‑first philosophy by strengthening the trenches, adding depth and preserving cap flexibility.  The staff also prepared a targeted undrafted free agent class headlined by punter Johnny Hekker and safety Tashaun Gipson.  As a result, Jacksonville entered the draft with a stable roster, additional picks and increased organisational confidence.
+  - Following the offer, Stone and his agent entered negotiations with Shad Khan. They aimed for a contract in the $13–14 million range over four years with the first two years guaranteed and clauses ensuring control over staff hires. Khan’s opening offer mirrored the Greg Schiano baseline at roughly $12 million. Stone countered with $14 million and guaranteed coordinator authority. The parties agreed on a four‑year, $13.6 million deal with $6.8 million guaranteed in years one and two and performance escalators in years three and four based on win totals and playoff berths. Coordinator hiring input and final say over staff were guaranteed. Accepting the deal officially made Stone the head coach of the Jacksonville Jaguars, ended his application with Indianapolis, and triggered the transition into staff hiring and roster evaluation.
   - Over the next two weeks Stone built his coaching staff.  He targeted a mix of veteran teachers and rising coordinators, interviewing Doug Pederson, Matt LaFleur, Chris Foerster, Eric Bieniemy, Ike Hilliard, Freddie Kitchens, Luke Getsy, Todd Bowles, Andre Patterson, Matt Eberflus, Ed Donatell and Rich Bisaccia.  Top targets like Aaron Kromer, Bill Callahan, Pep Hamilton and Vic Fangio declined due to existing commitments or preferred roles.  After negotiating contracts within typical 2012 salary ranges, he hired Pederson (3 years, $1.9M), LaFleur (2 years, $0.5M), Foerster (3 years, $0.85M), Bieniemy (2 years, $0.45M), Hilliard (2 years, $0.45M), Kitchens (2 years, $0.4M), Getsy (2 years, $0.3M), Bowles (3 years, $2.1M), Patterson (2 years, $0.5M), Eberflus (2 years, $0.5M), Donatell (2 years, $0.55M) and Bisaccia (3 years, $0.75M).  The staff met on January 29 to align on culture, scheme and operations, then were introduced to the media on February 1.  Stone now moves to roster evaluation and free agency planning with a fully built staff.
- - Between February 7 and February 21, Stone convened a series of intensive meetings with his coaching staff, general manager Gene Smith, owner Shad Khan, the scouting department and the club’s finance team.  The group debated the initial free‑agency proposal and draft board that had prioritised a No. 1 receiver and quick offensive jump.  While they recognised that upgrading the passing game was important, they agreed that paying premium prices for a receiver like Vincent Jackson would misalign with Stone’s builder mandate and eat cap space needed elsewhere.  They acknowledged the market context: top free agents such as guard Carl Nicks and defensive end Mario Williams would command record‑setting contracts【372985519218166†L211-L217】【372985519218166†L241-L252】, and wide receiver Vincent Jackson’s combination of size, speed and contested‑catch ability came at a premium【372985519218166†L267-L276】.  Instead, they shifted toward a foundation‑first philosophy, investing in the offensive line with targets like Ben Grubbs【372985519218166†L337-L343】, re‑signing Jeremy Mincey rather than chasing splashy edge rushers, and seeking a reliable veteran receiver such as Reggie Wayne while using the draft to land their long‑term No. 1 in Justin Blackmon.  The meetings also finalised offensive and defensive schemes, set cultural standards and expectations, and confirmed that the draft board would operate under the “swap” rule—whoever Jacksonville selects is swapped with that player’s historical slot, keeping draft history intact.  By February 21, consensus was reached on the foundation‑first plan, leaving the organisation aligned and ready for the scouting combine.
+  - Between February 7 and February 21, Stone convened a series of intensive meetings with his coaching staff, general manager Gene Smith, owner Shad Khan, the scouting department and the club’s finance team.  The group debated the initial free‑agency proposal and draft board that had prioritised a No. 1 receiver and quick offensive jump.  While they recognised that upgrading the passing game was important, they agreed that paying premium prices for a receiver like Vincent Jackson would misalign with Stone’s builder mandate and eat cap space needed elsewhere.  They acknowledged the market context: top free agents such as guard Carl Nicks and defensive end Mario Williams would command record‑setting contracts【372985519218166†L211-L217】【372985519218166†L241-L252】, and wide receiver Vincent Jackson’s combination of size, speed and contested‑catch ability came at a premium【372985519218166†L267-L276】.  Instead, they shifted toward a foundation‑first philosophy, investing in the offensive line with targets like Ben Grubbs【372985519218166†L337-L343】, re‑signing Jeremy Mincey rather than chasing splashy edge rushers, and seeking a reliable veteran receiver such as Reggie Wayne while using the draft to land their long‑term No. 1 in Justin Blackmon.  The meetings also finalised offensive and defensive schemes, set cultural standards and expectations, and confirmed that the draft board would operate under the “swap” rule—whoever Jacksonville selects is swapped with that player’s historical slot, keeping draft history intact.  By February 21, consensus was reached on the foundation‑first plan, leaving the organisation aligned and ready for the scouting combine.
   - From February 22 through February 28 Stone and his staff attended the NFL scouting combine and evaluated their targeted prospects.  They confirmed Luke Kuechly’s elite range with a 4.58‑second 40‑yard dash, 38‑inch vertical and 11.43‑second 60‑yard shuttle【459036554289166†L97-L104】, and validated Bobby Wagner’s sideline‑to‑sideline speed via his pro‑day 4.45‑second 40 and 39.5‑inch vertical【600181430595093†L165-L173】.  They were impressed by T.Y. Hilton’s 4.34‑second 40 and game‑breaking quickness【777471514394376†L417-L423】.  Mid‑round debates weighed Olivier Vernon’s explosive 4.73‑second 40 and 34.5‑inch vertical【881419948871879†L1045-L1047】 against the power of Brandon Brooks【968355876953202†L101-L110】, Akiem Hicks【600181430595093†L1398-L1407】 and Ben Jones【881419948871879†L699-L700】.  Ultimately the Jaguars finalised their draft board with Kuechly, Wagner, Hilton, Vernon, Kirk Cousins, Josh Norman, Alfred Morris and Scott Solomon.  This combine evaluation phase reinforced internal alignment on the foundation‑first strategy and strengthened Shad Khan’s confidence in Stone’s roster vision.
+  - Over the three‑day 2012 NFL draft Stone executed the foundation‑first plan.  He used pick 5 on Luke Kuechly, pick 38 on Bobby Wagner, pick 70 on T.Y. Hilton, traded up for Olivier Vernon using picks 115 and 180, selected Kirk Cousins at 101, Josh Norman at 142, traded up to secure Alfred Morris in the sixth round and finished with Scott Solomon at 214.  In accordance with the swap rule, Justin Blackmon went to Carolina, Andre Branch to Seattle, punter Bryan Anger to Indianapolis, linebacker Brandon Marshall to Carolina and defensive back Mike Harris to Washington.  The class added cornerstone players at linebacker, edge, receiver, quarterback, corner and running back while preserving cap flexibility.  Shad Khan and Gene Smith praised the disciplined draft and increased their confidence in Stone’s long‑term vision.
 last_3_turns_summary:
- - 'Turn 144: In the first phase of roster evaluation, Stone and his staff compiled a draft board and free‑agency target list that balanced short‑term competitiveness with long‑term team building.  They identified Justin Blackmon, Janoris Jenkins and Brandon Brooks as their top three draft picks and targeted mid‑tier veterans like Reggie Wayne, Ben Grubbs, Brandon Carr, Jeremy Mincey and Chad Henne in free agency.  The plan moved away from expensive big‑name signings such as Carl Nicks and Mario Williams【372985519218166†L211-L217】【372985519218166†L241-L252】 and instead emphasised building a strong offensive line and secondary while preserving cap flexibility.  This strategy signaled a shift from win‑now aggression to a foundation‑first approach.'
- - 'Turn 145: Between February 7 and February 21, Stone convened daily meetings with his coaching staff, GM Gene Smith, owner Shad Khan, scouts and finance staff to critique and refine the initial offseason plan.  They acknowledged that the first draft of the free‑agency plan prioritised a No. 1 receiver and quick offensive jump—moves more consistent with an “accelerate now” strategy than a long‑term rebuild.  After debating the merits of acquiring a premium receiver like Vincent Jackson【372985519218166†L267-L276】 versus investing in trench play and draft capital, the group agreed to pivot firmly toward a foundation‑first philosophy.  They agreed to target value players such as guard Ben Grubbs【372985519218166†L337-L343】, re‑sign end Jeremy Mincey and sign a veteran receiver like Reggie Wayne while using the draft to secure their No. 1 receiver.  The meetings also finalised offensive and defensive schemes, set cultural standards, and confirmed the draft “swap” rule.  By February 21, the organisation was aligned on this more disciplined plan and ready for the scouting combine.'
- - 'Turn 146: During the scouting combine from February 22 to February 28, Stone and his staff evaluated targeted prospects and finalised their draft board.  They were impressed by linebacker Luke Kuechly’s combine numbers (4.58‑second 40, 38‑inch vertical, 11.43‑second 60‑yard shuttle)【459036554289166†L97-L104】 and linebacker Bobby Wagner’s pro‑day athleticism (4.45‑second 40, 39.5‑inch vertical, 11‑foot broad jump)【600181430595093†L165-L173】.  Receiver T.Y. Hilton showcased his 4.34‑second speed and big‑play ability【777471514394376†L417-L423】.  Debates over mid‑round prospects considered Olivier Vernon’s 4.73‑second 40 and 34.5‑inch vertical【881419948871879†L1045-L1047】, Brandon Brooks’s 36 bench reps【968355876953202†L101-L110】, Akiem Hicks’s 33‑inch vertical【600181430595093†L1398-L1407】 and Ben Jones’s 30.5‑inch vertical【881419948871879†L699-L700】.  The final draft board swapped the historical picks for Stone’s selections: Kuechly at 5, Wagner at 38, Hilton at 69/70, Vernon at 90, Cousins at 101, Norman at 142, Morris at 173 (via trade up) and Solomon at 214.  This evaluation phase reinforced the foundation‑first strategy and prepared Jacksonville for free agency.'
+  - 'Turn 146: During the scouting combine from February 22 to February 28, Stone and his staff evaluated targeted prospects and finalised their draft board.  They were impressed by Luke Kuechly’s combine numbers (4.58‑second 40, 38‑inch vertical, 11.43‑second 60‑yard shuttle)【459036554289166†L97-L104】 and Bobby Wagner’s pro‑day athleticism (4.45‑second 40, 39.5‑inch vertical, 11‑foot broad jump)【600181430595093†L165-L173】.  Receiver T.Y. Hilton showcased his 4.34‑second speed【777471514394376†L417-L423】.  Debates over mid‑round prospects weighed Olivier Vernon【881419948871879†L1045-L1047】 against Brandon Brooks【968355876953202†L101-L110】, Akiem Hicks【600181430595093†L1398-L1407】 and Ben Jones【881419948871879†L699-L700】.  The final board selected Kuechly, Wagner, Hilton, Vernon, Kirk Cousins, Josh Norman, Alfred Morris and Scott Solomon.  The combine phase reinforced the foundation‑first strategy.'
+  - 'Turn 147: From March 1 through April 26, Stone, Gene Smith, Shad Khan, the coaching staff and the finance department executed disciplined roster moves.  They traded Paul Posluszny for mid‑round picks, dealt Luke McCown for a future pick, cut eight veterans to free cap space, and signed Eric Winston, Andre Carter, John Abraham, Braylon Edwards, Chad Henne and Reggie Nelson while re‑signing Jeremy Mincey.  These moves embodied the foundation‑first philosophy by strengthening the trenches, adding depth and preserving flexibility ahead of the draft.'
+  - 'Turn 148: During the 2012 NFL draft from April 26 to April 28, Stone executed the foundation‑first draft plan.  Jacksonville selected Luke Kuechly at pick 5 (swapping Justin Blackmon to Carolina), Bobby Wagner at 38 (sending Andre Branch to Seattle), T.Y. Hilton at 70 (sending punter Bryan Anger to Indianapolis), and packaged picks 115 and 180 to trade up for Olivier Vernon.  They then drafted Kirk Cousins at 101 (swapping the historical Jaguars pick to Washington), Josh Norman at 142 (sending linebacker Brandon Marshall to Carolina), traded up from 176 to pick Alfred Morris in the sixth round (sending Mike Harris to Washington) and finished with Scott Solomon at 214.  The class balanced immediate contributors with long‑term building blocks and further strengthened owner Shad Khan and GM Gene Smith’s trust in Stone’s vision.'
