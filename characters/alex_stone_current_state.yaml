@@ -8,17 +8,17 @@ identity:
   level: 2
   level_label: Coordinator (established NFL OC)
 timeline:
-  career_turn: 144
-  season_turn: 3
-  phase: Offseason — 2012 Staff Hiring & Transition
+  career_turn: 145
+  season_turn: 4
+  phase: Offseason — 2012 Roster Evaluation & Draft Board Alignment
   previous_phase: 2011 Season End — Exit Meetings
-  last_resolved_date: '2012-02-01'
-  date: '2012-02-01'
-  next_event: 2012 offseason — roster evaluation, free agency preparation, and 100‑day plan implementation
+  last_resolved_date: '2012-02-21'
+  date: '2012-02-21'
+  next_event: 2012 offseason — pre‑combine meetings and finalised free‑agency/draft strategy
   calendar_frozen: false
   resume_anchor:
-    exact_pickup_date: '2012-02-01'
-    reason: After two weeks of negotiations and outreach, Stone assembled his inaugural Jacksonville coaching staff and prepared to implement his 100‑day plan. He secured contracts with a mix of veteran coordinators and rising position coaches, ensuring continuity in his offensive system and full autonomy for his defensive leader. The staff met formally on January 29 to align philosophies and schedule installations, and a press conference introducing the group occurred on February 1. With his staff in place, Stone shifts his focus to roster evaluation, free agency preparation and finalizing draft priorities.
+    exact_pickup_date: '2012-02-21'
+    reason: Between February 7 and February 21, Stone convened daily meetings with his coaching staff, general manager Gene Smith, owner Shad Khan, the scouting department and the club’s finance team.  They reviewed the roster, debated the initial free‑agency plan and draft board, and adjusted their approach to prioritise foundational building over a win‑now offensive splash.  The group agreed to reallocate cap resources toward the offensive line and to pursue a mid‑tier veteran receiver rather than a premium option.  They retained their draft board, anchored by Justin Blackmon at pick 5, but acknowledged that the board could be revisited after the combine.  By February 21, consensus had been reached on standards, schemes and the free‑agency strategy, and the organisation was ready for the scouting combine.
 calendar_state:
   calendar_file: null
   previous_node: season_end_2011
@@ -198,6 +198,76 @@ team_context:
         Leads special teams with an emphasis on discipline, field position and situational awareness.  Coordinates all phases and develops returners.
       background: >-
         Former Tampa Bay Buccaneers special teams coordinator and assistant head coach.  Highly respected special teams leader with a proven track record.
+
+  draft_board:
+    round_1_pick_5:
+      player: Justin Blackmon
+      position: Wide Receiver
+      college: Oklahoma State
+      rationale: >-
+        The Jaguars believe Blackmon’s contested‑catch toughness and run‑after‑catch ability provide the long‑term No. 1 receiver they need without paying premium free‑agent dollars.  Selecting him at pick 5 will swap him with the player taken there in reality.
+    round_2_pick_38:
+      player: Janoris Jenkins
+      position: Cornerback
+      college: North Alabama
+      rationale: >-
+        Jenkins offers rare press‑man coverage skills and first‑round talent.  The staff trusts its locker‑room culture to keep him focused.
+    round_3_pick_70:
+      player: Brandon Brooks
+      position: Guard
+      college: Miami (Ohio)
+      rationale: >-
+        Brooks’s combination of size and athleticism fits the interior power run game Stone wants.  Developing him on a rookie deal aligns with the foundation‑first philosophy.
+    round_5_pick_142:
+      player: Alfred Morris
+      position: Running Back
+      college: Florida Atlantic
+      rationale: >-
+        A downhill runner who thrives in zone concepts, Morris provides depth behind Maurice Jones‑Drew and allows for long‑term succession planning.
+    round_6_pick_176:
+      player: Danny Trevathan
+      position: Linebacker
+      college: Kentucky
+      rationale: >-
+        Trevathan’s coverage range and special‑teams value make him an ideal mid‑round pick for Bowles’s defense.
+    round_7_pick_228:
+      player: Tashaun Gipson
+      position: Safety
+      college: Wyoming
+      rationale: >-
+        Gipson’s versatility across free safety and nickel positions offers low‑cost depth with upside.
+
+  free_agency_targets:
+    wide_receiver:
+      primary: Reggie Wayne
+      terms: 'Target a two‑year contract in the $12–15M range with moderate guarantees; focus on leadership and mentorship for a rookie No. 1.'
+      rationale: >-
+        Rather than paying a premium for Vincent Jackson, the Jaguars will pursue veteran Reggie Wayne.  Wayne’s precise route running, professionalism and experience in a timing offense complement Blackmon’s development and come at a manageable cost.  If Wayne returns to Indianapolis, the fallback plan is to sign Laurent Robinson.
+    guard:
+      primary: Ben Grubbs
+      terms: 'Aim for a 5‑year deal worth around $36–40M; cap the annual value at $8M to maintain flexibility.'
+      rationale: >-
+        Investing in the offensive line is a core pillar of the foundation‑first approach.  Grubbs provides immediate improvement in both run blocking and pass protection without the record‑setting cost of Carl Nicks.
+    cornerback:
+      primary: Brandon Carr
+      terms: 'Pursue a 5‑year contract worth $45–50M with front‑loaded guarantees; consider Cortland Finnegan if Carr signs elsewhere.'
+      rationale: >-
+        Carr’s press coverage ability and durability fit Bowles’s defense.  However, the organisation will not engage in a bidding war that compromises cap health.
+    pass_rusher:
+      primary: Jeremy Mincey (re‑sign)
+      terms: 'Offer a 4‑year, $20M extension with incentives to retain continuity; explore a one‑year deal for John Abraham as a rotational rusher.'
+      rationale: >-
+        Re‑signing Mincey preserves a key contributor at a reasonable price.  Adding a veteran like John Abraham provides mentorship and situational pass‑rush help without a long‑term commitment.
+    quarterback:
+      primary: Chad Henne
+      terms: 'One‑year, $2M contract with incentives to compete for the backup role.'
+      rationale: >-
+        A veteran backup protects against a Blaine Gabbert setback and does not preclude drafting a quarterback in later years.
+    secondary_depth:
+      primary: Reggie Nelson
+      terms: 'Three‑year, $15M contract; bring him back if the Bengals let him walk.'
+      rationale: >-
+        Nelson’s experience in Jacksonville and improved play in Cincinnati make him a stabilising force for a young secondary.
 full_resume_at_time_of_hire:
   playing_career: Hall of Fame Tight End (San Diego Chargers, 1987-1998)
   coaching_career:
@@ -282,9 +352,8 @@ active_consequences:
  - In the final interview, Stone sat for an extended dinner and conversation with owner Shad Khan and general manager Gene Smith. He delivered a succinct, 100‑plus‑word final statement that synthesised his Hall of Fame credibility, dual‑system offensive philosophy, program‑building experience, and commitment to hiring a seasoned defensive coordinator. He candidly acknowledged his lack of prior NFL head‑coaching experience, explained how he would rely on his staff to fill gaps, and asked pointed questions about organizational alignment, draft control, and resource allocation. Khan conducted reference calls with Andy Reid, Rod Dowhower, and Ken Whisenhunt, each of whom offered glowing endorsements of Stone’s leadership, adaptability, and honesty. The reference check added fifteen points to his dossier, a fit bonus of five points reflected the perfect match between his scheme and Jacksonville’s roster【366879180517951†L378-L410】, and a fourteen‑point final statement score propelled his total to 120.5. This outpaced other finalists such as Mike Mularkey and Dirk Koetter and persuaded Khan to offer Stone the head‑coaching position. Negotiations now begin while Indianapolis remains on the waitlist and Miami is closed.
  - Following the offer, Stone and his agent entered negotiations with Shad Khan. They aimed for a contract in the $13–14 million range over four years with the first two years guaranteed and clauses ensuring control over staff hires. Khan’s opening offer mirrored the Greg Schiano baseline at roughly $12 million. Stone countered with $14 million and guaranteed coordinator authority. The parties agreed on a four‑year, $13.6 million deal with $6.8 million guaranteed in years one and two and performance escalators in years three and four based on win totals and playoff berths. Coordinator hiring input and final say over staff were guaranteed. Accepting the deal officially made Stone the head coach of the Jacksonville Jaguars, ended his application with Indianapolis, and triggered the transition into staff hiring and roster evaluation.
   - Over the next two weeks Stone built his coaching staff.  He targeted a mix of veteran teachers and rising coordinators, interviewing Doug Pederson, Matt LaFleur, Chris Foerster, Eric Bieniemy, Ike Hilliard, Freddie Kitchens, Luke Getsy, Todd Bowles, Andre Patterson, Matt Eberflus, Ed Donatell and Rich Bisaccia.  Top targets like Aaron Kromer, Bill Callahan, Pep Hamilton and Vic Fangio declined due to existing commitments or preferred roles.  After negotiating contracts within typical 2012 salary ranges, he hired Pederson (3 years, $1.9M), LaFleur (2 years, $0.5M), Foerster (3 years, $0.85M), Bieniemy (2 years, $0.45M), Hilliard (2 years, $0.45M), Kitchens (2 years, $0.4M), Getsy (2 years, $0.3M), Bowles (3 years, $2.1M), Patterson (2 years, $0.5M), Eberflus (2 years, $0.5M), Donatell (2 years, $0.55M) and Bisaccia (3 years, $0.75M).  The staff met on January 29 to align on culture, scheme and operations, then were introduced to the media on February 1.  Stone now moves to roster evaluation and free agency planning with a fully built staff.
+ - Between February 7 and February 21, Stone convened a series of intensive meetings with his coaching staff, general manager Gene Smith, owner Shad Khan, the scouting department and the club’s finance team.  The group debated the initial free‑agency proposal and draft board that had prioritised a No. 1 receiver and quick offensive jump.  While they recognised that upgrading the passing game was important, they agreed that paying premium prices for a receiver like Vincent Jackson would misalign with Stone’s builder mandate and eat cap space needed elsewhere.  They acknowledged the market context: top free agents such as guard Carl Nicks and defensive end Mario Williams would command record‑setting contracts【372985519218166†L211-L217】【372985519218166†L241-L252】, and wide receiver Vincent Jackson’s combination of size, speed and contested‑catch ability came at a premium【372985519218166†L267-L276】.  Instead, they shifted toward a foundation‑first philosophy, investing in the offensive line with targets like Ben Grubbs【372985519218166†L337-L343】, re‑signing Jeremy Mincey rather than chasing splashy edge rushers, and seeking a reliable veteran receiver such as Reggie Wayne while using the draft to land their long‑term No. 1 in Justin Blackmon.  The meetings also finalised offensive and defensive schemes, set cultural standards and expectations, and confirmed that the draft board would operate under the “swap” rule—whoever Jacksonville selects is swapped with that player’s historical slot, keeping draft history intact.  By February 21, consensus was reached on the foundation‑first plan, leaving the organisation aligned and ready for the scouting combine.
 last_3_turns_summary:
- - 'Turn 139: Stone completed the Jacksonville phone interview. He delivered detailed answers about building a sustainable culture, installing a multiple offense for Maurice Jones‑Drew and Marcedes Lewis, and developing the quarterback position. His score of 38.75 advanced him to a campus interview. Indianapolis remains on the waitlist; Miami is closed.'
- - 'Turn 140: Stone traveled to Jacksonville for the campus interview. He met with owner Shad Khan and GM Gene Smith, evaluated the staff, engaged with players, presented his 100-day plan, and answered rapid-fire panel questions. The combination of high stage scores and his skill average yielded a total of 86.5, making him a finalist and advancing him to the final round with Jacksonville.'
- - 'Turn 141: Stone returned to Jacksonville for the final interview. Over dinner with owner Shad Khan and GM Gene Smith, he delivered a 100-plus-word final statement emphasising his Hall of Fame credibility, dual-system offense, program-building track record, and commitment to hiring a strong defensive coordinator. He asked pointed questions about autonomy and resources and candidly acknowledged his inexperience as a head coach. Reference calls to Andy Reid, Rod Dowhower, and Ken Whisenhunt were unanimously positive. The cumulative effect—a 15-point reference bonus, 5-point fit bonus, and 14-point statement score—raised his total to 120.5, exceeding rival scores and prompting Jacksonville to extend him a head-coaching offer. Negotiations now begin; Indianapolis remains on the waitlist and Miami is closed.'
- - 'Turn 142: Stone negotiated and accepted the Jacksonville head‑coaching job. Starting from Shad Khan’s baseline offer, he pushed for a four‑year deal with a salary in the $13–14 million range, two years fully guaranteed, and explicit authority over coordinator hires. The sides agreed on a four‑year, $13.6 million contract with $6.8 million guaranteed and performance escalators in years three and four. Stone secured control over staff hiring and formally accepted. He withdrew from Indianapolis’s waitlist and transitioned into planning his staff and offseason program as Jacksonville’s new head coach.'
  - 'Turn 143: Over the two weeks following his contract signing, Stone focused on building his staff.  He prioritised a collaborative culture that complemented his dual‑system offense and delegated full defensive control.  Top targets like Aaron Kromer, Bill Callahan, Pep Hamilton and Vic Fangio declined due to existing commitments, but Stone successfully negotiated contracts with Doug Pederson (assistant head coach/OC), Matt LaFleur (quarterbacks), Chris Foerster (run game/OL), Eric Bieniemy (running backs), Ike Hilliard (wide receivers), Freddie Kitchens (tight ends), Luke Getsy (offensive assistant), Todd Bowles (defensive coordinator), Andre Patterson (defensive line), Matt Eberflus (linebackers), Ed Donatell (defensive backs) and Rich Bisaccia (special teams).  He balanced market salaries with budget constraints and emphasised staff chemistry.  The full staff met on January 29 to align on the 100‑day plan and were introduced to the public on February 1.  With his staff assembled, Stone turned his attention to roster evaluation and free agency preparation.'
+ - 'Turn 144: In the first phase of roster evaluation, Stone and his staff compiled a draft board and free‑agency target list that balanced short‑term competitiveness with long‑term team building.  They identified Justin Blackmon, Janoris Jenkins and Brandon Brooks as their top three draft picks and targeted mid‑tier veterans like Reggie Wayne, Ben Grubbs, Brandon Carr, Jeremy Mincey and Chad Henne in free agency.  The plan moved away from expensive big‑name signings such as Carl Nicks and Mario Williams【372985519218166†L211-L217】【372985519218166†L241-L252】 and instead emphasised building a strong offensive line and secondary while preserving cap flexibility.  This strategy signaled a shift from win‑now aggression to a foundation‑first approach.'
+ - 'Turn 145: Between February 7 and February 21, Stone convened daily meetings with his coaching staff, GM Gene Smith, owner Shad Khan, scouts and finance staff to critique and refine the initial offseason plan.  They acknowledged that the first draft of the free‑agency plan prioritised a No. 1 receiver and quick offensive jump—moves more consistent with an “accelerate now” strategy than a long‑term rebuild.  After debating the merits of acquiring a premium receiver like Vincent Jackson【372985519218166†L267-L276】 versus investing in trench play and draft capital, the group agreed to pivot firmly toward a foundation‑first philosophy.  They agreed to target value players such as guard Ben Grubbs【372985519218166†L337-L343】, re‑sign end Jeremy Mincey and sign a veteran receiver like Reggie Wayne while using the draft to secure their No. 1 receiver.  The meetings also finalised offensive and defensive schemes, set cultural standards, and confirmed the draft “swap” rule.  By February 21, the organisation was aligned on this more disciplined plan and ready for the scouting combine.'
