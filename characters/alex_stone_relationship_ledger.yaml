@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '2012-04-28'
-  career_turn: 148
-  sim_phase: Offseason — 2012 NFL Draft & Rookie Integration
+  date: '2012-09-01'
+  career_turn: 150
+  sim_phase: Preseason — 2012 Training Camp & Roster Cutdown
   archive_note: 2012 interview-window snapshot
 relationships:
 - name: Don Coryell
@@ -111,9 +111,9 @@ relationships:
   delta: -2
  - name: Shad Khan
    role: Owner, Jacksonville Jaguars
-   score: 83
-   previous_score: 82
-   delta_this_turn: 1
+   score: 85
+   previous_score: 83
+   delta_this_turn: 2
    trend: building
    status: team_owner
    notes:
@@ -121,12 +121,14 @@ relationships:
    - February roster‑evaluation meetings aligned Khan with Stone’s foundation‑first philosophy.
    - The thorough scouting‑combine evaluation and finalised draft board further increased Khan’s trust in Stone’s long‑term roster vision.
     - The disciplined free‑agency and trade period reinforced Khan’s confidence that Stone could build a balanced roster while managing the cap and draft assets.
+    - Successfully signing priority UDFAs and orienting the rookie class after the draft showed operational efficiency and attention to detail.
+    - A well‑run training camp and preseason, culminating in a balanced 53‑man roster, solidified Khan’s belief that Stone can lead a program.
    delta: 83
  - name: Gene Smith
    role: General Manager, Jacksonville Jaguars
-   score: 74
-   previous_score: 73
-   delta_this_turn: 1
+   score: 76
+   previous_score: 74
+   delta_this_turn: 2
    trend: building
    status: general_manager
    notes:
@@ -134,6 +136,8 @@ relationships:
    - Smith appreciated Stone’s willingness to revise the offseason plan toward a foundation‑first philosophy and felt more aligned with the new strategy.
    - The combine evaluation and finalised draft board reinforced Smith’s confidence in Stone’s player evaluation process.
     - Working through free agency and trades strengthened the partnership; Smith valued Stone’s disciplined approach to balancing immediate needs with long‑term flexibility.
+    - The successful UDFA signing period and rookie orientation demonstrated that Stone could handle logistical details and talent evaluation beyond the draft.
+    - A productive training camp and clear depth chart reinforced Smith’s comfort with Stone’s decision‑making as roster cuts loomed.
    delta: 74
  - name: Doug Pederson
    role: Assistant Head Coach / Offensive Coordinator, Jacksonville Jaguars
@@ -256,7 +260,7 @@ relationships:
    - Well-regarded special teams leader brought in to overhaul the third phase.
    delta: 70
 
-  - name: Luke Kuechly
+ - name: Luke Kuechly
     role: Linebacker, Jacksonville Jaguars
     score: 68
     previous_score: 0
@@ -267,7 +271,7 @@ relationships:
     - Drafted at pick 5 to anchor Jacksonville’s defense.  Early interactions show high football IQ and professionalism.
     delta: 68
 
-  - name: Bobby Wagner
+ - name: Bobby Wagner
     role: Linebacker, Jacksonville Jaguars
     score: 65
     previous_score: 0
@@ -278,7 +282,7 @@ relationships:
     - Drafted at pick 38.  Brings sideline‑to‑sideline speed and tackling ability to complement Kuechly.
     delta: 65
 
-  - name: T.Y. Hilton
+ - name: T.Y. Hilton
     role: Wide Receiver, Jacksonville Jaguars
     score: 63
     previous_score: 0
@@ -289,7 +293,7 @@ relationships:
     - Third‑round pick with 4.34‑second speed and return ability.  Expected to stretch the field and thrive in Stone’s offense.
     delta: 63
 
-  - name: Olivier Vernon
+ - name: Olivier Vernon
     role: Defensive End, Jacksonville Jaguars
     score: 60
     previous_score: 0
@@ -300,7 +304,7 @@ relationships:
     - High‑upside edge rusher drafted via trade up.  Raw but explosive; Stone views him as a developmental cornerstone.
     delta: 60
 
-  - name: Kirk Cousins
+ - name: Kirk Cousins
     role: Quarterback, Jacksonville Jaguars
     score: 60
     previous_score: 0
@@ -311,7 +315,7 @@ relationships:
     - Drafted as a developmental backup.  Regarded for leadership and accuracy; will compete with Chad Henne behind Blaine Gabbert.
     delta: 60
 
-  - name: Josh Norman
+ - name: Josh Norman
     role: Cornerback, Jacksonville Jaguars
     score: 60
     previous_score: 0
@@ -322,7 +326,7 @@ relationships:
     - Fifth‑round pick with size and ball skills.  Expected to push for a rotational role at cornerback.
     delta: 60
 
-  - name: Alfred Morris
+ - name: Alfred Morris
     role: Running Back, Jacksonville Jaguars
     score: 60
     previous_score: 0
@@ -333,7 +337,7 @@ relationships:
     - Late‑round running back drafted via trade up.  One‑cut style fits Stone’s zone scheme and offers depth behind Maurice Jones‑Drew.
     delta: 60
 
-  - name: Scott Solomon
+ - name: Scott Solomon
     role: Defensive End, Jacksonville Jaguars
     score: 58
     previous_score: 0
@@ -343,6 +347,94 @@ relationships:
     notes:
     - Seventh‑round pick with strong motor and special‑teams upside.  Provides depth on the defensive line.
     delta: 58
+
+ - name: Johnny Hekker
+    role: Punter, Jacksonville Jaguars
+    score: 55
+    previous_score: 0
+    delta_this_turn: 55
+    trend: new
+    status: rookie_udfa
+    notes:
+    - Signed as a priority undrafted free agent.  Demonstrated strong leg strength and directional kicking during camp.
+    delta: 55
+
+ - name: Tashaun Gipson
+    role: Safety, Jacksonville Jaguars
+    score: 55
+    previous_score: 0
+    delta_this_turn: 55
+    trend: new
+    status: rookie_udfa
+    notes:
+    - Developmental safety signed after the draft.  Showed ball-hawking instincts in OTAs and earned a roster spot.
+    delta: 55
+
+ - name: Michael Thomas
+    role: Defensive Back, Jacksonville Jaguars
+    score: 55
+    previous_score: 0
+    delta_this_turn: 55
+    trend: new
+    status: rookie_udfa
+    notes:
+    - Versatile defensive back signed as a UDFA.  Offers nickel and safety depth and impressed coaches with his football IQ.
+    delta: 55
+
+ - name: Chase Minnifield
+    role: Cornerback, Jacksonville Jaguars
+    score: 54
+    previous_score: 0
+    delta_this_turn: 54
+    trend: new
+    status: rookie_udfa
+    notes:
+    - Priority UDFA cornerback with good instincts and ball skills.  Slipped due to injury concerns but earned a roster spot.
+    delta: 54
+
+ - name: Kevin Elliott
+    role: Wide Receiver, Jacksonville Jaguars
+    score: 53
+    previous_score: 0
+    delta_this_turn: 53
+    trend: new
+    status: rookie_udfa
+    notes:
+    - Undrafted receiver who impressed with toughness and special-teams contributions during camp.
+    delta: 53
+
+ - name: Antonio Allen
+    role: Safety, Jacksonville Jaguars
+    score: 53
+    previous_score: 0
+    delta_this_turn: 53
+    trend: new
+    status: rookie_udfa
+    notes:
+    - Physical safety signed after the draft.  Provides depth and special-teams value.
+    delta: 53
+
+ - name: Derek Moye
+    role: Wide Receiver, Jacksonville Jaguars
+    score: 52
+    previous_score: 0
+    delta_this_turn: 52
+    trend: new
+    status: rookie_udfa
+    notes:
+    - Big-bodied receiver brought in as a UDFA.  His contested-catch ability earned him a spot on the roster.
+    delta: 52
+
+ - name: George Bryan
+    role: Interior Offensive Lineman, Jacksonville Jaguars
+    score: 53
+    previous_score: 0
+    delta_this_turn: 53
+    trend: new
+    status: rookie_udfa
+    notes:
+    - Developmental guard/center signed after the draft.  Provides depth and potential versatility on the interior line.
+    delta: 53
 relationship_events:
 - turn: 134
   date: '2012-01-08'
@@ -375,49 +467,49 @@ relationship_events:
   date: '2012-02-01'
   event: Stone assembled his inaugural Jacksonville coaching staff and began the roster evaluation phase.
   effects:
-  - name: Shad Khan
+ - name: Shad Khan
     delta: 5
     note: Confidence in Stone increased after seeing the staff come together.
-  - name: Gene Smith
+ - name: Gene Smith
     delta: 3
     note: Added trust due to the successful staff assembly process.
   - name: Ken Whisenhunt
     delta: -2
     note: Relationship cooled further as Stone’s focus shifted to Jacksonville and time passed without direct contact.
-  - name: Doug Pederson
+ - name: Doug Pederson
     delta: 70
     note: New relationship established as assistant head coach and offensive coordinator.
-  - name: Matt LaFleur
+ - name: Matt LaFleur
     delta: 65
     note: New relationship established as quarterbacks coach.
-  - name: Chris Foerster
+ - name: Chris Foerster
     delta: 65
     note: New relationship established as run game coordinator and offensive line coach.
-  - name: Eric Bieniemy
+ - name: Eric Bieniemy
     delta: 67
     note: New relationship established as running backs coach.
-  - name: Ike Hilliard
+ - name: Ike Hilliard
     delta: 65
     note: New relationship established as wide receivers coach.
-  - name: Freddie Kitchens
+ - name: Freddie Kitchens
     delta: 69
     note: New relationship established as tight ends coach.
-  - name: Luke Getsy
+ - name: Luke Getsy
     delta: 60
     note: New relationship established as offensive assistant.
-  - name: Todd Bowles
+ - name: Todd Bowles
     delta: 72
     note: New relationship established as defensive coordinator.
-  - name: Andre Patterson
+ - name: Andre Patterson
     delta: 68
     note: New relationship established as defensive line coach.
-  - name: Matt Eberflus
+ - name: Matt Eberflus
     delta: 66
     note: New relationship established as linebackers coach.
-  - name: Ed Donatell
+ - name: Ed Donatell
     delta: 67
     note: New relationship established as defensive backs coach.
-  - name: Rich Bisaccia
+ - name: Rich Bisaccia
     delta: 70
     note: New relationship established as special teams coordinator.
  - turn: 145
@@ -486,3 +578,76 @@ relationship_events:
      - name: Scott Solomon
        delta: 58
        note: New relationship created; initial trust based on Solomon’s motor and special‑teams value.
+
+  - turn: 149
+    date: '2012-05-05'
+    event: After the draft Stone, Gene Smith and Shad Khan focused on signing undrafted free agents and orienting the rookie class.  The Jaguars signed punter Johnny Hekker, safety Tashaun Gipson, defensive back Michael Thomas, cornerback Chase Minnifield, receivers Kevin Elliott and Derek Moye, safety Antonio Allen and interior lineman George Bryan to low‑cost three‑year contracts.  Stone led rookie orientation and minicamp sessions to install the playbook, teach cultural standards and set expectations, deepening the roster while reinforcing the foundation‑first philosophy.
+    effects:
+      - name: Shad Khan
+        delta: 1
+        note: Khan’s confidence grew as Stone smoothly transitioned into post‑draft operations and filled the roster with low‑cost talent.
+      - name: Gene Smith
+        delta: 1
+        note: Smith appreciated Stone’s ability to find value in the UDFA market and conduct an efficient orientation program.
+      - name: Johnny Hekker
+        delta: 55
+        note: New relationship created; initial trust based on signing and early performance.
+      - name: Tashaun Gipson
+        delta: 55
+        note: New relationship created; initial trust based on signing and early performance.
+      - name: Michael Thomas
+        delta: 55
+        note: New relationship created; initial trust based on signing and early performance.
+      - name: Chase Minnifield
+        delta: 54
+        note: New relationship created; initial trust based on signing and early performance.
+      - name: Kevin Elliott
+        delta: 53
+        note: New relationship created; initial trust based on signing and early performance.
+      - name: Antonio Allen
+        delta: 53
+        note: New relationship created; initial trust based on signing and early performance.
+      - name: Derek Moye
+        delta: 52
+        note: New relationship created; initial trust based on signing and early performance.
+      - name: George Bryan
+        delta: 53
+        note: New relationship created; initial trust based on signing and early performance.
+
+  - turn: 150
+    date: '2012-09-01'
+    event: Stone led the Jaguars through OTAs, minicamp and a demanding training camp, installing his dual‑system offense and Todd Bowles’s defense, enforcing conditioning standards, and evaluating players across four preseason games.  The team finished 2–2 in the preseason, and Stone finalised a 53‑man roster with Blaine Gabbert as starter, Maurice Jones‑Drew and Alfred Morris as the running back duo, a revamped receiving corps, and a youthful defense anchored by Luke Kuechly and Bobby Wagner.
+    effects:
+      - name: Shad Khan
+        delta: 1
+        note: Khan continued to gain confidence as Stone managed training camp decisively and built a cohesive roster.
+      - name: Gene Smith
+        delta: 1
+        note: Smith’s trust increased thanks to Stone’s transparent roster decisions and collaboration during cutdown.
+      - name: Luke Kuechly
+        delta: 2
+        note: Kuechly’s leadership in camp strengthened his bond with Stone.
+      - name: Bobby Wagner
+        delta: 2
+        note: Wagner’s rapid development increased mutual trust with Stone.
+      - name: T.Y. Hilton
+        delta: 2
+        note: Hilton’s explosive plays in preseason built Stone’s confidence in him as a starting receiver and returner.
+      - name: Olivier Vernon
+        delta: 1
+        note: Vernon’s progress impressed Stone despite rookie growing pains.
+      - name: Kirk Cousins
+        delta: 1
+        note: Cousins’ steady improvement solidified Stone’s trust in him as a developmental backup.
+      - name: Alfred Morris
+        delta: 2
+        note: Morris emerged as a reliable secondary back during camp and preseason.
+      - name: Johnny Hekker
+        delta: 1
+        note: Hekker won the punting job and validated Stone’s UDFA investment.
+      - name: Tashaun Gipson
+        delta: 1
+        note: Gipson’s contributions on special teams and defense increased Stone’s confidence in him.
+      - name: Derek Moye
+        delta: 1
+        note: Moye’s contested catches in preseason earned Stone’s trust and secured his roster spot.
