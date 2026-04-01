@@ -3,22 +3,22 @@ tape: MODE B (engine-generated; archived snapshot)
 identity:
   name: Alex-Lamar Stone
   age: 46
-  current_role: Arizona Cardinals — Offensive Coordinator
+  current_role: Jacksonville Jaguars — Head Coach
   previous_role: San Diego Chargers — Passing Game Coordinator
   level: 2
   level_label: Coordinator (established NFL OC)
 timeline:
-  career_turn: 142
-  season_turn: 1
-  phase: Offseason — 2012 HC Interview Window Active
+  career_turn: 143
+  season_turn: 2
+  phase: Offseason — 2012 Staff Hiring & Transition
   previous_phase: 2011 Season End — Exit Meetings
-  last_resolved_date: '2012-01-15'
-  date: '2012-01-15'
-  next_event: 2012 head coaching interview cycle — Jacksonville contract negotiation and final decision; Indianapolis waitlist unresolved
-  calendar_frozen: true
+  last_resolved_date: '2012-01-16'
+  date: '2012-01-16'
+  next_event: 2012 offseason — assemble coaching staff, implement 100‑day plan, and evaluate roster
+  calendar_frozen: false
   resume_anchor:
-    exact_pickup_date: '2012-01-15'
-    reason: Stone submitted head‑coaching applications to the Jacksonville Jaguars, Indianapolis Colts, and Miami Dolphins and moved into the 2012 head coaching interview window. After waiting for responses, Jacksonville offered a phone interview, Indianapolis wait‑listed him, and Miami declined. He completed the Jacksonville phone interview on January 15 and advanced to a campus interview. On January 15, he traveled to Jacksonville for the campus interview, met with owner Shad Khan, general manager Gene Smith, staff, and players, presented his 100‑day plan, and answered rapid‑fire questions. His stage scores and skills average produced a total of 86.5, which advanced him to the final round. During the final interview, Stone delivered a 100‑plus‑word final statement summarising his program‑building philosophy, dual‑system offensive vision, and readiness to hire a strong defensive coordinator while asking pointed questions about organizational autonomy and resources. Reference checks with Andy Reid, Rod Dowhower, and Ken Whisenhunt were unanimously positive. Combining his earlier scores with a 15‑point reference bonus, a 5‑point fit bonus, and a 14‑point final statement lifted his total to 120.5 and eclipsed other candidates. Shad Khan offered Stone the Jacksonville head‑coaching job and invited him to negotiate terms. Indianapolis remains on the waitlist; Miami is closed.
+    exact_pickup_date: '2012-01-16'
+    reason: Stone accepted the Jacksonville Jaguars head‑coaching job following successful contract negotiations. After receiving an offer at the final interview, he negotiated a four‑year contract worth $13.6 million (averaging $3.4 million annually) with the first two years fully guaranteed ($6.8 million) and performance escalators in years three and four tied to win totals and playoff berths. He also secured full authority to hire his coordinators and staff. Accepting the offer ended the 2012 interview cycle; Indianapolis withdrew their waitlist candidacy after learning he had accepted Jacksonville. Stone now enters the staff‑hiring and roster evaluation phase as the Jaguars’ head coach.
 calendar_state:
   calendar_file: null
   previous_node: season_end_2011
@@ -39,16 +39,16 @@ job_status:
   stress: 69
   contract:
     status: Active
-    team: Arizona Cardinals
-    title: Offensive Coordinator
-    term_years: 3
-    cycle: 2010
-    salary: 700000
+    team: Jacksonville Jaguars
+    title: Head Coach
+    term_years: 4
+    cycle: 2012
+    salary: 3375000
     accepted: true
-    note: Stone is under contract as Arizona's offensive coordinator. HC interview interest is active because the season has ended.
-  applications_active: 1
-  offers_pending: 1
-  retention_status: Employed — Arizona Cardinals OC
+    note: Stone signed a four‑year contract worth $13.6 million (average $3.4 million annually) with the first two years fully guaranteed ($6.8 million). The deal includes performance escalators in years three and four tied to win totals and playoff berths and grants him full authority to hire his coordinators.
+  applications_active: 0
+  offers_pending: 0
+  retention_status: Employed — Jacksonville Jaguars HC
   evaluation_projection:
     likely_score: N/A
     trajectory: Rising
@@ -56,15 +56,15 @@ job_status:
     promotion_readiness: Ready for NFL head coaching interviews
     risk_flag: Must choose next opportunity carefully; wrong HC landing spot could stall momentum
 offseason_status:
-  time_bubble_active: true
-  bubble_stage: HC Interview Window
-  era_ruleset: NFL_2011
+  time_bubble_active: false
+  bubble_stage: Staff Hiring & Transition
+  era_ruleset: NFL_2012
   evaluation_score: N/A
   trajectory: Rising
   club_decision: Retained by Arizona; outside interest active
-  outside_interest: Offer from Jacksonville; waitlist with Indianapolis; Miami closed
-  interview_access: Jacksonville contract negotiation; Indianapolis waitlist; Miami closed
-  transition_pending: true
+  outside_interest: Resolved — accepted Jacksonville head coaching job; no active market
+  interview_access: None — contract signed
+  transition_pending: false
 coaching_attributes:
   cap: 87
   core:
@@ -95,12 +95,12 @@ coaching_attributes:
 finances:
   net_worth: 13050000
   annual_expenses: 620000
-  salary: 700000
+  salary: 3375000
   financial_pressure: None — deep net worth cushion
 team_context:
-  team: Arizona Cardinals
-  head_coach: Ken Whisenhunt
-  role_context_note: Stone has completed two full NFL OC seasons in Arizona. His full résumé is now backed by actual NFL coordinator proof rather than projection.
+  team: Jacksonville Jaguars
+  head_coach: Alex Stone
+  role_context_note: Stone accepted the Jacksonville head‑coaching job. He now leads a young roster and must assemble his staff, install his offense, and oversee the entire program.
 full_resume_at_time_of_hire:
   playing_career: Hall of Fame Tight End (San Diego Chargers, 1987-1998)
   coaching_career:
@@ -183,7 +183,9 @@ active_consequences:
  - He completed the Jacksonville phone interview on January 15. He delivered detailed, evidence-backed responses about building a sustainable culture, installing a multiple offense tailored to Maurice Jones‑Drew and Marcedes Lewis, and developing Blaine Gabbert while considering the draft. His answers were scored 9/10, 9/10, and 8/10. Combined with his high communication-equivalent skill rating (12.75 points), his phone interview total of 38.75 exceeded the 35-point threshold and advanced him to a campus interview. Jacksonville immediately scheduled the next stage. Stone prepared his itinerary, drafted questions for owner Shad Khan and GM Gene Smith, and began outlining his 100-day plan. Indianapolis remains a waitlist possibility; Miami is closed.
  - He traveled to Jacksonville for the campus interview. Over five stages, he met with owner Shad Khan and GM Gene Smith to present his three-year vision, met the current staff to discuss evaluations and hires, spoke with players about culture and continuity, delivered a detailed 100‑day operational and scheme presentation tailored to Maurice Jones‑Drew, Marcedes Lewis, and the Jaguars roster, and answered rapid-fire panel questions about his candidacy, weaknesses, and queries for the organization. His stage scores (9/10, 9/10, 9/10, 9/10, 8/10) combined with his relevant skills average (85 × 0.5 = 42.5) produced a total of 86.5. This score placed him in the finalist category and advanced him to the final interview round. Jacksonville scheduled the final interview. Indianapolis remains a waitlist possibility; Miami is closed.
  - In the final interview, Stone sat for an extended dinner and conversation with owner Shad Khan and general manager Gene Smith. He delivered a succinct, 100‑plus‑word final statement that synthesised his Hall of Fame credibility, dual‑system offensive philosophy, program‑building experience, and commitment to hiring a seasoned defensive coordinator. He candidly acknowledged his lack of prior NFL head‑coaching experience, explained how he would rely on his staff to fill gaps, and asked pointed questions about organizational alignment, draft control, and resource allocation. Khan conducted reference calls with Andy Reid, Rod Dowhower, and Ken Whisenhunt, each of whom offered glowing endorsements of Stone’s leadership, adaptability, and honesty. The reference check added fifteen points to his dossier, a fit bonus of five points reflected the perfect match between his scheme and Jacksonville’s roster【366879180517951†L378-L410】, and a fourteen‑point final statement score propelled his total to 120.5. This outpaced other finalists such as Mike Mularkey and Dirk Koetter and persuaded Khan to offer Stone the head‑coaching position. Negotiations now begin while Indianapolis remains on the waitlist and Miami is closed.
+ - Following the offer, Stone and his agent entered negotiations with Shad Khan. They aimed for a contract in the $13–14 million range over four years with the first two years guaranteed and clauses ensuring control over staff hires. Khan’s opening offer mirrored the Greg Schiano baseline at roughly $12 million. Stone countered with $14 million and guaranteed coordinator authority. The parties agreed on a four‑year, $13.6 million deal with $6.8 million guaranteed in years one and two and performance escalators in years three and four based on win totals and playoff berths. Coordinator hiring input and final say over staff were guaranteed. Accepting the deal officially made Stone the head coach of the Jacksonville Jaguars, ended his application with Indianapolis, and triggered the transition into staff hiring and roster evaluation.
 last_3_turns_summary:
  - 'Turn 139: Stone completed the Jacksonville phone interview. He delivered detailed answers about building a sustainable culture, installing a multiple offense for Maurice Jones‑Drew and Marcedes Lewis, and developing the quarterback position. His score of 38.75 advanced him to a campus interview. Indianapolis remains on the waitlist; Miami is closed.'
  - 'Turn 140: Stone traveled to Jacksonville for the campus interview. He met with owner Shad Khan and GM Gene Smith, evaluated the staff, engaged with players, presented his 100-day plan, and answered rapid-fire panel questions. The combination of high stage scores and his skill average yielded a total of 86.5, making him a finalist and advancing him to the final round with Jacksonville.'
  - 'Turn 141: Stone returned to Jacksonville for the final interview. Over dinner with owner Shad Khan and GM Gene Smith, he delivered a 100-plus-word final statement emphasising his Hall of Fame credibility, dual-system offense, program-building track record, and commitment to hiring a strong defensive coordinator. He asked pointed questions about autonomy and resources and candidly acknowledged his inexperience as a head coach. Reference calls to Andy Reid, Rod Dowhower, and Ken Whisenhunt were unanimously positive. The cumulative effect—a 15-point reference bonus, 5-point fit bonus, and 14-point statement score—raised his total to 120.5, exceeding rival scores and prompting Jacksonville to extend him a head-coaching offer. Negotiations now begin; Indianapolis remains on the waitlist and Miami is closed.'
+ - 'Turn 142: Stone negotiated and accepted the Jacksonville head‑coaching job. Starting from Shad Khan’s baseline offer, he pushed for a four‑year deal with a salary in the $13–14 million range, two years fully guaranteed, and explicit authority over coordinator hires. The sides agreed on a four‑year, $13.6 million contract with $6.8 million guaranteed and performance escalators in years three and four. Stone secured control over staff hiring and formally accepted. He withdrew from Indianapolis’s waitlist and transitioned into planning his staff and offseason program as Jacksonville’s new head coach.'
