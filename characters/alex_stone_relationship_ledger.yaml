@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '2012-02-21'
-  career_turn: 145
-  sim_phase: Offseason — 2012 Roster Evaluation & Draft Board Alignment
+  date: '2012-02-28'
+  career_turn: 146
+  sim_phase: Offseason — 2012 Scouting Combine & Draft Board Finalisation
   archive_note: 2012 interview-window snapshot
 relationships:
 - name: Don Coryell
@@ -111,26 +111,28 @@ relationships:
   delta: -2
  - name: Shad Khan
    role: Owner, Jacksonville Jaguars
-   score: 78
-   previous_score: 75
-   delta_this_turn: 3
+   score: 80
+   previous_score: 78
+   delta_this_turn: 2
    trend: building
    status: team_owner
    notes:
    - Khan hired Stone as his first head coach and has placed initial trust in him. After seeing Stone assemble a competent staff, his confidence grew.
-   - The series of February roster‑evaluation meetings aligned Khan with Stone’s foundation‑first philosophy, further increasing his trust.
-   delta: 78
+   - February roster‑evaluation meetings aligned Khan with Stone’s foundation‑first philosophy.
+   - The thorough scouting‑combine evaluation and finalised draft board further increased Khan’s trust in Stone’s long‑term roster vision.
+   delta: 80
  - name: Gene Smith
    role: General Manager, Jacksonville Jaguars
-   score: 70
-   previous_score: 68
+   score: 72
+   previous_score: 70
    delta_this_turn: 2
    trend: building
    status: general_manager
    notes:
    - Smith collaborated with Stone during the interview process and supported his staff assembly efforts.  Confidence in Stone increased after seeing the staff come together.
    - Smith appreciated Stone’s willingness to revise the offseason plan toward a foundation‑first philosophy and felt more aligned with the new strategy.
-   delta: 70
+   - The combine evaluation and finalised draft board reinforced Smith’s confidence in Stone’s player evaluation process.
+   delta: 72
  - name: Doug Pederson
    role: Assistant Head Coach / Offensive Coordinator, Jacksonville Jaguars
    score: 70
@@ -338,3 +340,13 @@ relationship_events:
    - name: Gene Smith
      delta: 2
      note: Collaborative planning improved Smith’s confidence in Stone’s strategic vision.
+ - turn: 146
+   date: '2012-02-28'
+   event: Stone and his staff attended the 2012 scouting combine in Indianapolis, evaluated targeted prospects and finalised the draft board with Luke Kuechly, Bobby Wagner, T.Y. Hilton, Olivier Vernon, Kirk Cousins, Josh Norman, Alfred Morris and Scott Solomon.  The thorough evaluation process demonstrated Stone’s commitment to the foundation‑first philosophy.
+   effects:
+   - name: Shad Khan
+     delta: 2
+     note: Khan’s confidence grew as he saw Stone’s meticulous approach to the combine and the thoughtful construction of the draft board.
+   - name: Gene Smith
+     delta: 2
+     note: Smith’s trust increased due to the collaborative evaluation process and the balanced final board.
