@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '2012-01-15'
-  career_turn: 136
-  sim_phase: Offseason — 2012 HC Interview Window Active
+  date: '2012-01-16'
+  career_turn: 143
+  sim_phase: Offseason — Staff Hiring & Transition
   archive_note: 2012 interview-window snapshot
 relationships:
 - name: Don Coryell
@@ -52,17 +52,17 @@ relationships:
   notes:
   - Recent NFL superior and system mentor; useful reference for HC credibility.
   delta: 0
-- name: Ken Whisenhunt
+ - name: Ken Whisenhunt
   role: Head Coach, Arizona Cardinals
-  score: 76
-  previous_score: 70
-  delta_this_turn: 6
-  trend: rising
-  status: current_head_coach_reference
+  score: 70
+  previous_score: 76
+  delta_this_turn: -6
+  trend: cooling
+  status: former_head_coach_reference
   notes:
-  - Two seasons of direct OC-HC work built real trust.
-  - Whisenhunt can validate Stone's in-season adjustments during Arizona's 8-1 finish.
-  delta: 6
+  - Two seasons of direct OC–HC work built real trust, but Stone’s departure from Arizona creates distance and disappointment.
+  - Whisenhunt remains supportive but naturally loses daily contact.
+  delta: -6
 - name: Pat Shurmur
   role: NFL head coach / long-term colleague
   score: 73
@@ -109,6 +109,26 @@ relationships:
   notes:
   - Good terms remain intact, but distance decay continues.
   delta: -2
+ - name: Shad Khan
+   role: Owner, Jacksonville Jaguars
+   score: 70
+   previous_score: 0
+   delta_this_turn: 70
+   trend: new
+   status: team_owner
+   notes:
+   - Khan hired Stone as his first head coach and has placed initial trust in him.
+   delta: 70
+ - name: Gene Smith
+   role: General Manager, Jacksonville Jaguars
+   score: 65
+   previous_score: 0
+   delta_this_turn: 65
+   trend: new
+   status: general_manager
+   notes:
+   - Smith collaborated with Stone during the interview process and will work closely on roster building.
+   delta: 65
 relationship_events:
 - turn: 134
   date: '2012-01-08'
@@ -124,3 +144,16 @@ relationship_events:
   - name: Memphis Administration
     delta: -2
     note: Continued distance decay from former employer.
+ - turn: 142
+   date: '2012-01-16'
+   event: Stone accepted the Jacksonville head‑coaching job and signed a four‑year contract.
+   effects:
+   - name: Shad Khan
+     delta: 70
+     note: New relationship established with the owner who hired Stone.
+   - name: Gene Smith
+     delta: 65
+     note: New working relationship with Jacksonville’s general manager.
+   - name: Ken Whisenhunt
+     delta: -6
+     note: Relationship cooled as Stone left Arizona for Jacksonville.
