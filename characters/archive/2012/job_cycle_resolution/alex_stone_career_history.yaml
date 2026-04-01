@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '2012-01-15'
-  career_turn: 136
-  sim_phase: Offseason — 2012 HC Interview Window Active
+  date: '2012-01-16'
+  career_turn: 143
+  sim_phase: Offseason — Staff Hiring & Transition
   archive_note: 2012 interview-window snapshot
 career_history:
 - turn: 12
@@ -110,3 +110,24 @@ career_history:
     salary:
       from: 700000
       to: 700000
+ - turn: 142
+   date_range: 2012-01-15 to 2012-01-16
+   team: Jacksonville Jaguars
+   role: Head Coach
+   phase: Offseason — 2012 HC Contract Resolution & Staff Hiring
+   summary: Stone negotiated and accepted the Jacksonville Jaguars head‑coaching job. He signed a four‑year, $13.6 million contract (average $3.4 million per year) with years one and two fully guaranteed ($6.8 million) and performance escalators in years three and four tied to wins and playoff berths. He secured full authority to hire coordinators and withdrew from the Indianapolis waitlist.
+   results:
+   - Signed first NFL head‑coaching contract.
+   - Secured coordinator hiring authority and full control over staff assembly.
+   - Transitioned from offensive coordinator to head coach.
+   - Concluded the 2012 head‑coaching interview cycle.
+   state_changes:
+     stress:
+       from: 69
+       to: 74
+     job_security:
+       from: 74
+       to: 78
+     salary:
+       from: 700000
+       to: 3375000
