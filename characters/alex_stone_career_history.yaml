@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '2012-09-16'
-  career_turn: 152
-  sim_phase: Regular Season — 2012 Week 2 Completed
+  date: '2012-09-23'
+  career_turn: 153
+  sim_phase: Regular Season — 2012 Week 3 Completed
   archive_note: 2012 interview-window snapshot
 career_history:
 - turn: 12
@@ -331,6 +331,29 @@ career_history:
       job_security:
         from: 84
         to: 83
+      salary:
+        from: 3375000
+        to: 3375000
+
+  - turn: 153
+    date_range: 2012-09-18 to 2012-09-24
+    team: Jacksonville Jaguars
+    role: Head Coach
+    phase: Regular Season — Week 3 Completed
+    summary: In Week 3 the Jaguars traveled to Indianapolis and defeated the Colts 28–21.  Stone started rookie quarterback Kirk Cousins and called an aggressive, adaptable game plan featuring tempo, play‑action and intermediate passing.  Cousins connected with T.Y. Hilton for a 40‑yard touchdown, spread the ball to Braylon Edwards and Cecil Shorts, and delivered two fourth‑quarter scoring drives, while the defense intercepted Andrew Luck and pressured him into hurried throws.  The victory lifted Jacksonville to 2–1 and demonstrated the offense’s ability to win without leaning on a run‑heavy script.
+    results:
+    - Inserted rookie Kirk Cousins as the starting quarterback and leveraged quick‑game, bootleg and play‑action concepts to neutralise Indianapolis’s pass rush.
+    - Hit T.Y. Hilton on a deep crossing route for a 40‑yard touchdown and later found Marcedes Lewis twice in the red zone, including the go‑ahead score late in the fourth quarter.
+    - Mixed draws and misdirection runs to Maurice Jones‑Drew and Alfred Morris to keep the defense honest, though the emphasis was on the passing game.
+    - Bowles’s defense forced an early interception by Josh Norman and limited Andrew Luck’s explosives with disciplined rush lanes and coverage disguises.
+    - Improved to 2–1 on the season and boosted locker‑room confidence in Stone’s adaptability and Cousins’s readiness.
+    state_changes:
+      stress:
+        from: 85
+        to: 85
+      job_security:
+        from: 83
+        to: 84
       salary:
         from: 3375000
         to: 3375000
