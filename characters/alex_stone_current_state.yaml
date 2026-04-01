@@ -8,17 +8,17 @@ identity:
   level: 2
   level_label: Coordinator (established NFL OC)
 timeline:
-  career_turn: 143
-  season_turn: 2
+  career_turn: 144
+  season_turn: 3
   phase: Offseason — 2012 Staff Hiring & Transition
   previous_phase: 2011 Season End — Exit Meetings
-  last_resolved_date: '2012-01-16'
-  date: '2012-01-16'
-  next_event: 2012 offseason — assemble coaching staff, implement 100‑day plan, and evaluate roster
+  last_resolved_date: '2012-02-01'
+  date: '2012-02-01'
+  next_event: 2012 offseason — roster evaluation, free agency preparation, and 100‑day plan implementation
   calendar_frozen: false
   resume_anchor:
-    exact_pickup_date: '2012-01-16'
-    reason: Stone accepted the Jacksonville Jaguars head‑coaching job following successful contract negotiations. After receiving an offer at the final interview, he negotiated a four‑year contract worth $13.6 million (averaging $3.4 million annually) with the first two years fully guaranteed ($6.8 million) and performance escalators in years three and four tied to win totals and playoff berths. He also secured full authority to hire his coordinators and staff. Accepting the offer ended the 2012 interview cycle; Indianapolis withdrew their waitlist candidacy after learning he had accepted Jacksonville. Stone now enters the staff‑hiring and roster evaluation phase as the Jaguars’ head coach.
+    exact_pickup_date: '2012-02-01'
+    reason: After two weeks of negotiations and outreach, Stone assembled his inaugural Jacksonville coaching staff and prepared to implement his 100‑day plan. He secured contracts with a mix of veteran coordinators and rising position coaches, ensuring continuity in his offensive system and full autonomy for his defensive leader. The staff met formally on January 29 to align philosophies and schedule installations, and a press conference introducing the group occurred on February 1. With his staff in place, Stone shifts his focus to roster evaluation, free agency preparation and finalizing draft priorities.
 calendar_state:
   calendar_file: null
   previous_node: season_end_2011
@@ -35,8 +35,8 @@ record:
   team_ovr: N/A
   note: Arizona started 1-6, finished 8-1, and became one of the league's strongest late-season offenses.
 job_status:
-  job_security: 74
-  stress: 69
+  job_security: 79
+  stress: 77
   contract:
     status: Active
     team: Jacksonville Jaguars
@@ -57,13 +57,13 @@ job_status:
     risk_flag: Must choose next opportunity carefully; wrong HC landing spot could stall momentum
 offseason_status:
   time_bubble_active: false
-  bubble_stage: Staff Hiring & Transition
+  bubble_stage: Roster Evaluation & 100‑Day Plan Implementation
   era_ruleset: NFL_2012
   evaluation_score: N/A
   trajectory: Rising
   club_decision: Retained by Arizona; outside interest active
-  outside_interest: Resolved — accepted Jacksonville head coaching job; no active market
-  interview_access: None — contract signed
+  outside_interest: None — staff assembled; focus shifts to team building
+  interview_access: None — head coach contract active
   transition_pending: false
 coaching_attributes:
   cap: 87
@@ -100,7 +100,104 @@ finances:
 team_context:
   team: Jacksonville Jaguars
   head_coach: Alex Stone
-  role_context_note: Stone accepted the Jacksonville head‑coaching job. He now leads a young roster and must assemble his staff, install his offense, and oversee the entire program.
+  role_context_note: Stone accepted the Jacksonville head‑coaching job. He has hired his inaugural staff, will install his dual‑system offense and new defensive scheme, and will oversee roster building and cultural change.
+  coaching_staff:
+    assistant_head_coach_offensive_coordinator:
+      name: Doug Pederson
+      contract_years: 3
+      salary: 1900000
+      responsibilities: >-
+        Serves as assistant head coach and offensive coordinator.  Organises the weekly plan, supports quarterback development and game‑planning, and manages offensive meetings without taking play‑calling away from Stone.
+      background: >-
+        Former Philadelphia Eagles quarterbacks coach under Andy Reid.  Brings Reid‑tree structure and QB development expertise while fitting Stone’s system and respecting his play‑calling authority.
+    quarterbacks_coach:
+      name: Matt LaFleur
+      contract_years: 2
+      salary: 500000
+      responsibilities: >-
+        Works closely with quarterbacks on footwork, timing, play‑action mechanics and reading progressions within Stone’s rhythm‑and‑layered passing system.
+      background: >-
+        Young offensive coach with experience in the Shanahan and West Coast systems.  Offers high upside teaching and an excellent fit with Stone’s QB development philosophy.
+    run_game_coordinator_offensive_line:
+      name: Chris Foerster
+      contract_years: 3
+      salary: 850000
+      responsibilities: >-
+        Designs the run game and coaches the offensive line.  Emphasises both zone and gap concepts to make Stone’s offense physically real and balanced.
+      background: >-
+        Veteran offensive line coach with successful stops in Washington and San Francisco.  Known for adaptable run‑game schemes and detailed line teaching.
+    running_backs_coach:
+      name: Eric Bieniemy
+      contract_years: 2
+      salary: 450000
+      responsibilities: >-
+        Coaches running backs on rushing, receiving, and blitz pickup.  Ensures Maurice Jones‑Drew and backups are utilised in multiple ways.
+      background: >-
+        Former NFL running back and respected position coach.  Brings energy and developmental acumen to Jacksonville’s backfield.
+    wide_receivers_coach:
+      name: Ike Hilliard
+      contract_years: 2
+      salary: 450000
+      responsibilities: >-
+        Teaches route precision, spacing and timing to receivers.  Works to integrate young wideouts into Stone’s rhythm offense.
+      background: >-
+        Former NFL receiver and Buffalo Bills receivers coach.  Known for connecting with players and emphasising fundamentals.
+    tight_ends_coach:
+      name: Freddie Kitchens
+      contract_years: 2
+      salary: 400000
+      responsibilities: >-
+        Oversees tight end development, blocking and receiving.  Utilises Marcedes Lewis as a versatile focal point and ensures backups are prepared.
+      background: >-
+        Former Arizona Cardinals tight ends coach.  Familiar with Stone’s offense and provides continuity from their shared time in Arizona.
+    offensive_assistant:
+      name: Luke Getsy
+      contract_years: 2
+      salary: 300000
+      responsibilities: >-
+        Serves as a developmental assistant and quality control coach.  Assists with installation, scouting and game preparation across the offense.
+      background: >-
+        Young coach with a quarterback background and teaching skill.  Offers fresh ideas and supports long‑term coaching pipeline.
+    defensive_coordinator:
+      name: Todd Bowles
+      contract_years: 3
+      salary: 2100000
+      responsibilities: >-
+        Holds full ownership of the defense.  Designs the scheme, calls plays and manages defensive staff.  Provides a disciplined, aggressive identity to complement Stone’s offense.
+      background: >-
+        Respected defensive coach with experience in secondary play and interim defensive coordinator roles.  Balances aggression with structure.
+    defensive_line_coach:
+      name: Andre Patterson
+      contract_years: 2
+      salary: 500000
+      responsibilities: >-
+        Coaches the defensive line, emphasising technique, gap discipline and fundamental handwork.
+      background: >-
+        Veteran defensive line coach with numerous NFL and collegiate stops.  Known for developing Pro Bowl–caliber linemen through detailed teaching.
+    linebackers_coach:
+      name: Matt Eberflus
+      contract_years: 2
+      salary: 500000
+      responsibilities: >-
+        Develops linebackers with a focus on fundamentals, tackling and coverage discipline.  Bridges the front and back end of Bowles’s defense.
+      background: >-
+        Former Dallas Cowboys linebackers coach.  Respected teacher with a calm, disciplined approach.
+    defensive_backs_coach:
+      name: Ed Donatell
+      contract_years: 2
+      salary: 550000
+      responsibilities: >-
+        Oversees the secondary.  Installs coverage schemes, emphasises eye discipline and takeaway drills, and ensures alignment with Bowles’s system.
+      background: >-
+        Long‑time NFL defensive backs coach and defensive coordinator.  Brings veteran stability and coverage expertise.
+    special_teams_coordinator:
+      name: Rich Bisaccia
+      contract_years: 3
+      salary: 750000
+      responsibilities: >-
+        Leads special teams with an emphasis on discipline, field position and situational awareness.  Coordinates all phases and develops returners.
+      background: >-
+        Former Tampa Bay Buccaneers special teams coordinator and assistant head coach.  Highly respected special teams leader with a proven track record.
 full_resume_at_time_of_hire:
   playing_career: Hall of Fame Tight End (San Diego Chargers, 1987-1998)
   coaching_career:
@@ -184,8 +281,10 @@ active_consequences:
  - He traveled to Jacksonville for the campus interview. Over five stages, he met with owner Shad Khan and GM Gene Smith to present his three-year vision, met the current staff to discuss evaluations and hires, spoke with players about culture and continuity, delivered a detailed 100‑day operational and scheme presentation tailored to Maurice Jones‑Drew, Marcedes Lewis, and the Jaguars roster, and answered rapid-fire panel questions about his candidacy, weaknesses, and queries for the organization. His stage scores (9/10, 9/10, 9/10, 9/10, 8/10) combined with his relevant skills average (85 × 0.5 = 42.5) produced a total of 86.5. This score placed him in the finalist category and advanced him to the final interview round. Jacksonville scheduled the final interview. Indianapolis remains a waitlist possibility; Miami is closed.
  - In the final interview, Stone sat for an extended dinner and conversation with owner Shad Khan and general manager Gene Smith. He delivered a succinct, 100‑plus‑word final statement that synthesised his Hall of Fame credibility, dual‑system offensive philosophy, program‑building experience, and commitment to hiring a seasoned defensive coordinator. He candidly acknowledged his lack of prior NFL head‑coaching experience, explained how he would rely on his staff to fill gaps, and asked pointed questions about organizational alignment, draft control, and resource allocation. Khan conducted reference calls with Andy Reid, Rod Dowhower, and Ken Whisenhunt, each of whom offered glowing endorsements of Stone’s leadership, adaptability, and honesty. The reference check added fifteen points to his dossier, a fit bonus of five points reflected the perfect match between his scheme and Jacksonville’s roster【366879180517951†L378-L410】, and a fourteen‑point final statement score propelled his total to 120.5. This outpaced other finalists such as Mike Mularkey and Dirk Koetter and persuaded Khan to offer Stone the head‑coaching position. Negotiations now begin while Indianapolis remains on the waitlist and Miami is closed.
  - Following the offer, Stone and his agent entered negotiations with Shad Khan. They aimed for a contract in the $13–14 million range over four years with the first two years guaranteed and clauses ensuring control over staff hires. Khan’s opening offer mirrored the Greg Schiano baseline at roughly $12 million. Stone countered with $14 million and guaranteed coordinator authority. The parties agreed on a four‑year, $13.6 million deal with $6.8 million guaranteed in years one and two and performance escalators in years three and four based on win totals and playoff berths. Coordinator hiring input and final say over staff were guaranteed. Accepting the deal officially made Stone the head coach of the Jacksonville Jaguars, ended his application with Indianapolis, and triggered the transition into staff hiring and roster evaluation.
+  - Over the next two weeks Stone built his coaching staff.  He targeted a mix of veteran teachers and rising coordinators, interviewing Doug Pederson, Matt LaFleur, Chris Foerster, Eric Bieniemy, Ike Hilliard, Freddie Kitchens, Luke Getsy, Todd Bowles, Andre Patterson, Matt Eberflus, Ed Donatell and Rich Bisaccia.  Top targets like Aaron Kromer, Bill Callahan, Pep Hamilton and Vic Fangio declined due to existing commitments or preferred roles.  After negotiating contracts within typical 2012 salary ranges, he hired Pederson (3 years, $1.9M), LaFleur (2 years, $0.5M), Foerster (3 years, $0.85M), Bieniemy (2 years, $0.45M), Hilliard (2 years, $0.45M), Kitchens (2 years, $0.4M), Getsy (2 years, $0.3M), Bowles (3 years, $2.1M), Patterson (2 years, $0.5M), Eberflus (2 years, $0.5M), Donatell (2 years, $0.55M) and Bisaccia (3 years, $0.75M).  The staff met on January 29 to align on culture, scheme and operations, then were introduced to the media on February 1.  Stone now moves to roster evaluation and free agency planning with a fully built staff.
 last_3_turns_summary:
  - 'Turn 139: Stone completed the Jacksonville phone interview. He delivered detailed answers about building a sustainable culture, installing a multiple offense for Maurice Jones‑Drew and Marcedes Lewis, and developing the quarterback position. His score of 38.75 advanced him to a campus interview. Indianapolis remains on the waitlist; Miami is closed.'
  - 'Turn 140: Stone traveled to Jacksonville for the campus interview. He met with owner Shad Khan and GM Gene Smith, evaluated the staff, engaged with players, presented his 100-day plan, and answered rapid-fire panel questions. The combination of high stage scores and his skill average yielded a total of 86.5, making him a finalist and advancing him to the final round with Jacksonville.'
  - 'Turn 141: Stone returned to Jacksonville for the final interview. Over dinner with owner Shad Khan and GM Gene Smith, he delivered a 100-plus-word final statement emphasising his Hall of Fame credibility, dual-system offense, program-building track record, and commitment to hiring a strong defensive coordinator. He asked pointed questions about autonomy and resources and candidly acknowledged his inexperience as a head coach. Reference calls to Andy Reid, Rod Dowhower, and Ken Whisenhunt were unanimously positive. The cumulative effect—a 15-point reference bonus, 5-point fit bonus, and 14-point statement score—raised his total to 120.5, exceeding rival scores and prompting Jacksonville to extend him a head-coaching offer. Negotiations now begin; Indianapolis remains on the waitlist and Miami is closed.'
  - 'Turn 142: Stone negotiated and accepted the Jacksonville head‑coaching job. Starting from Shad Khan’s baseline offer, he pushed for a four‑year deal with a salary in the $13–14 million range, two years fully guaranteed, and explicit authority over coordinator hires. The sides agreed on a four‑year, $13.6 million contract with $6.8 million guaranteed and performance escalators in years three and four. Stone secured control over staff hiring and formally accepted. He withdrew from Indianapolis’s waitlist and transitioned into planning his staff and offseason program as Jacksonville’s new head coach.'
+ - 'Turn 143: Over the two weeks following his contract signing, Stone focused on building his staff.  He prioritised a collaborative culture that complemented his dual‑system offense and delegated full defensive control.  Top targets like Aaron Kromer, Bill Callahan, Pep Hamilton and Vic Fangio declined due to existing commitments, but Stone successfully negotiated contracts with Doug Pederson (assistant head coach/OC), Matt LaFleur (quarterbacks), Chris Foerster (run game/OL), Eric Bieniemy (running backs), Ike Hilliard (wide receivers), Freddie Kitchens (tight ends), Luke Getsy (offensive assistant), Todd Bowles (defensive coordinator), Andre Patterson (defensive line), Matt Eberflus (linebackers), Ed Donatell (defensive backs) and Rich Bisaccia (special teams).  He balanced market salaries with budget constraints and emphasised staff chemistry.  The full staff met on January 29 to align on the 100‑day plan and were introduced to the public on February 1.  With his staff assembled, Stone turned his attention to roster evaluation and free agency preparation.'
