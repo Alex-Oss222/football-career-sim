@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '2012-02-28'
-  career_turn: 146
-  sim_phase: Offseason — 2012 Scouting Combine & Draft Board Finalisation
+  date: '2012-04-28'
+  career_turn: 148
+  sim_phase: Offseason — 2012 NFL Draft & Rookie Integration
   archive_note: 2012 interview-window snapshot
 career_history:
 - turn: 12
@@ -193,6 +193,57 @@ career_history:
       job_security:
         from: 79
         to: 79
+      salary:
+        from: 3375000
+        to: 3375000
+  - turn: 147
+    date_range: 2012-02-28 to 2012-04-26
+    team: Jacksonville Jaguars
+    role: Head Coach
+    phase: Offseason — 2012 Free Agency & Draft Preparation
+    summary: Over the six weeks leading up to the 2012 NFL draft, Stone managed free‑agency negotiations, trades and roster cuts to align Jacksonville’s roster with his foundation‑first philosophy.
+    results:
+    - Traded middle linebacker Paul Posluszny to the Chicago Bears for a 2012 fourth‑ and sixth‑round pick, keeping veteran Daryl Smith to mentor rookies Luke Kuechly and Bobby Wagner.
+    - Dealt backup quarterback Luke McCown to the Kansas City Chiefs for a 2013 seventh‑round pick.
+    - Cut eight veteran players (Greg Jones, Bryan Anger, Jordan Palmer, Isaiah Stanback, Quan Cosby, Chris Harris, Jason Spitz and Guy Whimper) to free cap space.
+    - Signed right tackle Eric Winston to a four‑year, $20M contract, a value deal compared to the four‑year, $22M contract he received from Kansas City in 2012【900258649864444†L325-L329】.
+    - Added veteran pass rushers Andre Carter (one‑year, $2M) and John Abraham (one‑year, $3M) and re‑signed Jeremy Mincey (four‑year, $20M), ensuring depth and continuity on the defensive line.
+    - Signed wide receiver Braylon Edwards (one‑year, $1.5M), quarterback Chad Henne (two‑year, $2.5M) and safety Reggie Nelson (three‑year, $15M) to address offensive and defensive needs without compromising future flexibility.
+    - Prepared a targeted undrafted free agent class headlined by punter Johnny Hekker and safety Tashaun Gipson, along with Michael Thomas, Chase Minnifield, Kevin Elliott, Antonio Allen and George Bryan, to be signed after the draft.
+    - Maintained alignment with GM Gene Smith and owner Shad Khan by executing disciplined roster moves that balanced immediate competitiveness with long‑term team building.
+    state_changes:
+      stress:
+        from: 78
+        to: 79
+      job_security:
+        from: 79
+        to: 80
+      salary:
+        from: 3375000
+        to: 3375000
+  - turn: 148
+    date_range: 2012-04-26 to 2012-04-28
+    team: Jacksonville Jaguars
+    role: Head Coach
+    phase: Offseason — 2012 NFL Draft & Rookie Integration
+    summary: During the 2012 NFL draft Stone executed the foundation‑first board and swap rule.  The Jaguars selected Luke Kuechly (LB) at pick 5, Bobby Wagner (LB) at 38, T.Y. Hilton (WR) at 70, Kirk Cousins (QB) at 101, traded up for Olivier Vernon (DE) using picks 115 and 180, drafted Josh Norman (CB) at 142, traded up to secure Alfred Morris (RB) in the mid‑sixth round and closed with Scott Solomon (DE) at 214.  Per the draft swap rule, Justin Blackmon went to Carolina, Andre Branch to Seattle, Bryan Anger to Indianapolis, linebacker Brandon Marshall to Carolina and defensive back Mike Harris to Washington.  The class aligned with the foundation‑first philosophy and added cornerstone players across the roster.
+    results:
+    - Selected Luke Kuechly (LB) at pick 5 and swapped Justin Blackmon to the Carolina Panthers.
+    - Selected Bobby Wagner (LB) at pick 38 and swapped Andre Branch to the Seattle Seahawks.
+    - Selected T.Y. Hilton (WR) at pick 70 and swapped Bryan Anger to the Indianapolis Colts.
+    - Combined picks 115 and 180 to trade up into the mid‑90s and select Olivier Vernon (DE).
+    - Drafted Kirk Cousins (QB) at pick 101 and swapped the historical Jaguars pick to Washington.
+    - Drafted Josh Norman (CB) at pick 142 and swapped linebacker Brandon Marshall to Carolina.
+    - Traded pick 176 and a 2013 seventh‑round pick to move into the 165–170 range and draft Alfred Morris (RB), sending defensive back Mike Harris to Washington.
+    - Selected Scott Solomon (DE) at pick 214.
+    - Finalised a strong draft class that balanced immediate contributors with long‑term building blocks and prepared for undrafted free agent signings.
+    state_changes:
+      stress:
+        from: 79
+        to: 80
+      job_security:
+        from: 80
+        to: 82
       salary:
         from: 3375000
         to: 3375000
