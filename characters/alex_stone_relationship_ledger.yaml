@@ -1,9 +1,9 @@
 meta:
   character: Alex-Lamar Stone
   mode: COACHING
-  date: '2012-09-01'
-  career_turn: 150
-  sim_phase: Preseason — 2012 Training Camp & Roster Cutdown
+  date: '2012-09-09'
+  career_turn: 151
+  sim_phase: Regular Season — 2012 Week 1 Completed
   archive_note: 2012 interview-window snapshot
 relationships:
 - name: Don Coryell
@@ -111,9 +111,9 @@ relationships:
   delta: -2
  - name: Shad Khan
    role: Owner, Jacksonville Jaguars
-   score: 85
-   previous_score: 83
-   delta_this_turn: 2
+   score: 86
+   previous_score: 85
+   delta_this_turn: 1
    trend: building
    status: team_owner
    notes:
@@ -123,12 +123,12 @@ relationships:
     - The disciplined free‑agency and trade period reinforced Khan’s confidence that Stone could build a balanced roster while managing the cap and draft assets.
     - Successfully signing priority UDFAs and orienting the rookie class after the draft showed operational efficiency and attention to detail.
     - A well‑run training camp and preseason, culminating in a balanced 53‑man roster, solidified Khan’s belief that Stone can lead a program.
-   delta: 83
+   delta: 84
  - name: Gene Smith
    role: General Manager, Jacksonville Jaguars
-   score: 76
-   previous_score: 74
-   delta_this_turn: 2
+   score: 77
+   previous_score: 76
+   delta_this_turn: 1
    trend: building
    status: general_manager
    notes:
@@ -138,7 +138,7 @@ relationships:
     - Working through free agency and trades strengthened the partnership; Smith valued Stone’s disciplined approach to balancing immediate needs with long‑term flexibility.
     - The successful UDFA signing period and rookie orientation demonstrated that Stone could handle logistical details and talent evaluation beyond the draft.
     - A productive training camp and clear depth chart reinforced Smith’s comfort with Stone’s decision‑making as roster cuts loomed.
-   delta: 74
+   delta: 75
  - name: Doug Pederson
    role: Assistant Head Coach / Offensive Coordinator, Jacksonville Jaguars
    score: 70
