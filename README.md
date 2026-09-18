@@ -62,7 +62,9 @@ Runtime tasks must read only the library files permitted for their phase.
 - **`library/2013_coaching_market_pre_hire.md`** — clean January 14 hiring-market view used by the search resolver.
 - **`library/2013_coaching_market.md`** — quarantined hindsight/comparator research. It contains actual future outcomes and must not be loaded while resolving Stone's 2013 search.
 - **`library/2013_league_calendar_and_financial_rules.md`** — sourced 2013 calendar/CBA/cap research.
-- **`library/2013_draft_class.md`** — 2013 draft research maintained separately from this cleanup.
+- **`library/2013_draft_class.md`** — final pre-selection scouting snapshot, loadable in full only at the April 25 pre-draft cutoff.
+- **`library/2013_draft_information_gates.md`** — controls when declarations, combine information, pro days, medical/workout updates, and final boards become available in-world.
+- **`library/2013_draft_pool_registry.md`** — eligibility/pool coverage, including the NFL's complete 73-player special-eligibility list and the conservative senior-pool rule.
 
 Library files do not override canonical ownership in `foundation/` or `state/`.
 
