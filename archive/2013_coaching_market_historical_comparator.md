@@ -295,7 +295,8 @@ Real-world January reporting connected Carmichael, the real Saints offensive coo
 
 Stone's branch changes that résumé:
 - Stone holds the Saints OC role before becoming 2012 interim HC;
-- Carmichael works under/alongside Stone and handles substantial weekday offense during Stone's interim season;
+- Carmichael works under/alongside Stone and handles substantial weekday passing-game/offensive work during Stone's interim season without holding the OC title;
+- user canon establishes that Carmichael becomes Saints offensive coordinator only after Stone leaves New Orleans;
 - simulated New Orleans reaches the Divisional Round.
 
 Therefore the real Carmichael candidacy is not fixed branch history.
