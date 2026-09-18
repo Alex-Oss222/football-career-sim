@@ -28,6 +28,9 @@ career/
       championship.md          <- only the rounds actually reached
     offseason/
       closeout.md               <- offseason_output_template.md's format, front-office + self-assessment
+      hiring_search.md          <- the search ledger described above; see hiring_search_brief/README.md for what it needs from you before Codex can run it
+      hiring_search_brief/
+        README.md                <- what to put here: priorities, terms, walk-away conditions, per team
       draft/
         draft_board.md
         results.md
@@ -37,6 +40,8 @@ career/
   2014/
     ...
 ```
+
+**2026-09-18 update:** the interactive hiring search was restarted at the user's request, to run instead as a Codex batch task (`AGENTS.md`'s "Run the [year] hiring search"), mirroring the SCOTUS pattern of pointing an agent at a folder of pre-written positions rather than resolving decisions turn-by-turn in chat. `hiring_search.md` was reset to a clean, empty template; `hiring_search_brief/` is new and holds the user's own priorities/terms for Codex to read. `library/alex_stone_character_dossier_pre_hire.md` (a clean, pre-hire-only extraction of Stone's character/history) and `library/2013_coaching_market.md` supply the rest of what Codex needs.
 
 Why per-season, not one continuously growing file: the same reason SCOTUS splits per term instead of one file for the whole Court's history — a multi-year coaching career's week-by-week record would otherwise become one unmanageable file. `state/04_Roster_and_Staff_Register.md` and `state/05_Current_Season_State.md` always hold only the CURRENT snapshot (updated in place, per Document 7 §6.3); this folder holds the full history those snapshots were built from.
 

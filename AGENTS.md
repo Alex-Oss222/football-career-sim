@@ -44,6 +44,33 @@ You are Codex, running a bounded batch task against this repository. You have no
 
 ---
 
+## Task: "Run the [year] hiring search."
+
+**This restarts an interactive search that was already partway run, then reset for a clean Codex pass.** `career/[year]/offseason/hiring_search.md` was wiped back to an empty template on 2026-09-18 at the user's explicit instruction — do not treat any prior turn as still in effect. You are resolving this search from a cold start, using only the brief below and the library files, not any memory of an earlier attempt (you have none).
+
+**Prerequisite — check before doing anything else.** `career/[year]/offseason/hiring_search_brief/` must exist and contain the user's own pre-written material: which teams to pursue and in what order, the specific terms/non-negotiables for each, and walk-away conditions. This is the one thing in this task only the user gets to set (Document 1 §3) — if the folder is missing, empty, or doesn't cover a team you need to resolve, **stop and report exactly what's missing** rather than inventing his priorities or negotiating position for him.
+
+**Read, in order:**
+1. `foundation/03_Head_Coach_Organization_and_Authority_Canon.md` §10 in full, especially §10.2 (compressed-turn procedure) and §10.4 (candidate evaluation and its criteria-freeze rule).
+2. `foundation/templates/hiring_search_output_template.md` — the three turn shapes (opportunity, market-update, offer) this task's output must use.
+3. `library/alex_stone_character_dossier_pre_hire.md` — Stone's actual character, interview approach, and honestly-stated evidence gaps. Section 12 especially: real organizations should evaluate him against these actual strengths and gaps, not a flattering or a punishing rewrite of them.
+4. `library/2013_coaching_market.md` — the real situational picture (why each job opened, real decision-makers, real cap position, real roster context) for every team in play.
+5. Everything in `career/[year]/offseason/hiring_search_brief/`.
+
+**Procedure — criteria freeze comes before the pitch, every time (Document 3 §10.4, Document 1 §9.1):**
+
+1. **Before** looking at what the user's brief asks for from a given team, write into the ledger that team's real needs, constraints, and decision-makers' actual priorities, sourced only from `library/2013_coaching_market.md` — never inferred backward from Stone's pitch. Do this for every team in the brief's scope before evaluating any of them against Stone's terms. This frozen record is what makes the eventual result checkable rather than a vibe.
+2. Run Document 3 §10.2's compressed-turn structure against those frozen criteria: an opportunity summary (the brief mostly supplies this already), market-update turns only for genuine developments, an offer turn for any real offer.
+3. Apply Document 1 §9.1 throughout: reduce the user's brief to its concrete terms before it affects any outcome. A persuasively written pitch and a terse one specifying the identical terms must produce the identical result. A team's yes, no, or counter must trace back to the frozen criteria from step 1 — if you can't point to which frozen fact drove the result, don't narrate a result yet.
+4. Real market pressure is live, not guaranteed history: the real hires (Bruce Arians at Arizona, Chip Kelly at Philadelphia, Marc Trestman at Chicago, Gus Bradley at Jacksonville, Mike McCoy at San Diego) are comparators only, per this project's divergence rules — any of them, none of them, or a team choosing Stone instead is all genuinely open. A team may end up hiring someone else entirely if Stone's actual terms don't clear its frozen bar.
+5. A small, genuinely unanticipated wrinkle the brief doesn't cover (an odd but minor negotiating question) may be resolved with realistic judgment, noted as such. A fundamental gap — an entire team's terms missing, or no priority order given — is not a wrinkle; stop and report per the prerequisite above.
+
+**Write to:** `career/[year]/offseason/hiring_search.md`, in the same turn-by-turn format the file's template header describes. Update the turn log table as you go. Once the search concludes (a hire, or every team in scope resolved without one), leave the file's status line reflecting that outcome clearly rather than mid-search.
+
+**Do not** touch `foundation/03_...` §1.4's biography table or Document 6 — updating Stone's canon with the concluded hiring outcome is a separate step for whoever is running the interactive side of this project to close out, not yours to do.
+
+---
+
 ## Task: "Run the [year] offseason cycle." (not yet enabled — placeholder)
 
 This task is not fully specified yet. Do not attempt it until this repo's owner has added a dated brief (draft-board priorities in order, free-agency budget and targets, own-free-agent re-signing priorities) — check `career/[year]/offseason/` for a file named `team_building_brief.md` or similar before proceeding. If it doesn't exist, stop and report that back rather than improvising a philosophy on the user's behalf; team-building priorities are the one thing in this project only the user gets to set (Document 1 §3).
