@@ -1,66 +1,34 @@
-# Library: 2013 NFL Head-Coaching Market — Pre-Hire Runtime Reconstruction
+# Library: 2013 NFL Head-Coaching Market — January 14 Snapshot
 
-**Runtime status:** ACTIVE PRE-HIRE REFERENCE  
-**Snapshot:** opening of January 14, 2013.  
-**Event cutoff:** 11:59 PM ET, January 13, 2013.  
-**Simulation purpose:** give the hiring resolver a deep, dated picture of the five organizations in Alex Stone's established search scope, the competing coaching market, candidate availability, and public organizational criteria without importing any later hiring result.  
-**Research status:** rebuilt 2026-09-18 from contemporaneous team and NFL reporting, followed by a separate skeptical verification pass.
+**Snapshot:** opening of January 14, 2013  
+**Event cutoff:** 11:59 PM ET, January 13, 2013  
+**Research status:** rebuilt 2026-09-18 from contemporaneous team, league, and major-media reporting, followed by a separate verification pass.
 
-> **HARD QUARANTINE — NO HIRING HINDSIGHT:** The resolver may not load, infer from, or reverse-engineer from the eventual real head-coach hire, later finalist list, later coordinator staff, later contract, later draft choice, later free-agent move, later season result, or later coaching career. The historical comparator is library/2013_coaching_market.md and is forbidden during runtime search resolution.
+This is a period-accurate picture of the NFL head-coaching market at the moment Alex Stone enters the 2013 search. It covers the five open jobs already established in his search pool, the people making those decisions, the problems each club was trying to solve, the candidate field known by the cutoff, and the availability changes created by the Divisional Round.
 
-The cutoff is deliberately expressed as an **opening-of-January-14 snapshot** because Stone's simulated 2012 Saints season ended in the Divisional Round on January 13. Facts that became true during the January 12-13 playoff weekend, such as the end of Denver's and Seattle's seasons, are therefore visible at this snapshot. Search actions occurring on January 14 or later are not.
+Later real-world hires are intentionally absent. So are later finalist lists, coordinator staffs, draft choices, free-agent moves, and later coaching results. Those facts belong to historical hindsight, not to this January 14 market snapshot.
 
-## 1. Evidence model and runtime treatment
+Stone's New Orleans branch is part of the world described here. His 2012 Saints season ended on January 13, so Denver's and Seattle's eliminations that weekend are known, while search actions occurring on January 14 or later are not.
 
-This file distinguishes four kinds of information.
+## 1. How to read this snapshot
 
-| Label | Meaning | Runtime treatment |
-|---|---|---|
-| **Structural pre-cutoff fact** | Public fact already true by the event cutoff: vacancy, owner/GM, 2012 record, roster/contract context, completed playoff elimination, league interview restriction | May be used directly |
-| **Public organization criterion** | Criterion or process stated by an owner, GM, president, or team source before the cutoff | May be frozen as organization-side evidence; do not secretly add weighting the source did not state |
-| **Attributed market report** | Contemporaneous report about interest, planned interview, or perceived preference | Evidence that the report existed; not automatic proof of the organization's private ranking |
-| **Historical market baseline** | A real-world post-divergence interview, permission request, or candidate connection that helps reconstruct the 2013 market | Use as a plausible baseline candidate field, not as immutable simulation canon when Stone's existence or another branch divergence could have changed the sequence |
+Three kinds of information appear in the report:
 
-### 1.1 The criteria-freeze rule
+- **Established public facts:** vacancies, records, decision-makers, roster context, completed interviews, playoff eliminations, and public statements already known by the cutoff.
+- **Attributed market reports:** contemporaneous reports about planned interviews, interest, or preferences. These show what was being reported at the time, not necessarily a club's private ranking.
+- **Branch-specific facts:** Alex Stone's established career and the altered New Orleans staff history. These come from the Stone dossier and Document 3 rather than from real 2013 history.
 
-Before Stone's pitch, preferences, interview answers, contract terms, or hiring-search brief are evaluated, the resolver must freeze each organization's criteria from this file.
+Where a club publicly described what it wanted in a head coach, that language is included. Where it did not, this report stays with the visible football and organizational problems rather than inventing a private wish list.
 
-The freeze may contain:
-- documented decision-makers;
-- publicly stated criteria;
-- roster/organizational problems already visible by the cutoff;
-- legal/calendar constraints;
-- candidate availability;
-- labeled inference that follows from those facts.
+Real candidate activity after the divergence is useful for reconstructing who was genuinely in the market, but it is not treated as destiny. Stone's presence and the altered New Orleans timeline can change what happens once the search starts.
 
-The freeze may **not** contain:
-- "Stone fits because..." reasoning;
-- a weighting chosen after reading Stone's pitch;
-- the eventual real hire as a model for what the organization "really wanted";
-- the eventual coordinator staff as evidence of an earlier hidden scheme mandate;
-- a later draft pick or free-agent signing as evidence of a January preference;
-- invented owner/GM motives;
-- a numerical candidate score.
-
-After the freeze closes, Stone and every comparator candidate are evaluated against the same relevant dimensions. A detailed Stone dossier never earns more credit merely because it contains more prose than a real candidate's packet.
-
-### 1.2 Public fact versus simulated event
-
-Alex Stone has existed in this alternate history for decades, so real January 2013 search actions are not automatically immutable history. The safest treatment is:
-
-- **organizational conditions and public criteria** that are not plausibly changed by Stone remain strong baseline evidence;
-- **real candidate fields and interview activity** reconstruct who was genuinely in the market and what was plausible, but the simulation may alter the sequence when Stone's candidacy or another branch fact would reasonably change it;
-- once the simulated search itself begins, its dated events control.
-
-This distinction is especially important for New Orleans staff, because the simulated Saints reached the 2012 Divisional Round while the real Saints did not.
-
-## 2. Leaguewide state at the cutoff
+## 2. Leaguewide state at the cutoff## 2. Leaguewide state at the cutoff
 
 ### 2.1 Eight vacancies opened; three were already closed
 
 Eight NFL head-coaching jobs changed hands in the January 2013 cycle. By the close of January 13, three real vacancies had already been filled and therefore those coaches were no longer part of the open market:
 
-| Club | Status by cutoff | Runtime consequence |
+| Club | Status by cutoff | Market position |
 |---|---|---|
 | Kansas City | Andy Reid had accepted the Chiefs job in the first week of January | Reid unavailable |
 | Buffalo | Doug Marrone had accepted the Bills job | Marrone unavailable |
@@ -73,7 +41,7 @@ Eight NFL head-coaching jobs changed hands in the January 2013 cycle. By the clo
 
 Sources: CLOSED-KC, CLOSED-BUF, CLOSED-CLE.
 
-The five open jobs above are exactly the five organizations Document 3 establishes as Stone's starting search scope. Their real later outcomes are not known to the runtime resolver.
+The five open jobs above are exactly the five organizations Document 3 establishes as Stone's starting search pool. This snapshot stops before any of those five clubs makes its later real-world hire.
 
 ### 2.2 Playoff availability changed during January 12-13
 
@@ -89,9 +57,9 @@ A Philadelphia team article published shortly after midnight on January 14 is us
 ### 2.3 Already-public candidate withdrawals or commitments
 
 By the event cutoff:
-- Chip Kelly had publicly decided to remain at Oregon after interviewing with Philadelphia and Cleveland. His later real-world reversal is quarantined and does not exist in runtime. [CAND-CHIP-KELLY]
+- Chip Kelly had publicly decided to remain at Oregon after interviewing with Philadelphia and Cleveland. His later real-world reversal is outside this snapshot. [CAND-CHIP-KELLY]
 - Brian Kelly had publicly announced on January 12 that he would remain at Notre Dame after speaking with Philadelphia. [CAND-BRIAN-KELLY]
-- Bill O'Brien had publicly recommitted to Penn State on January 3 after NFL interest. Treat him as unavailable unless a new simulation event changes that fact before the cutoff, which none has. [CAND-OBRIEN-STAY]
+- Bill O'Brien had publicly recommitted to Penn State on January 3 after NFL interest. Treat him as unavailable unless a new branch event changes that fact before the cutoff, which none has. [CAND-OBRIEN-STAY]
 
 ## 3. Jacksonville Jaguars
 
@@ -104,7 +72,7 @@ By the event cutoff:
 - The quarterback position was unsettled around 2011 first-round pick Blaine Gabbert.
 - The roster was coming off the worst record in franchise history to that point.
 - Maurice Jones-Drew entered the offseason after the publicly documented 2012 holdout and an injury-shortened season.
-- Precise March cap-space figures do not belong in this January snapshot. The resolver should use only financial data independently established as of the cutoff.
+- Precise March cap-space figures do not belong in this January snapshot; only financial information independently established by the cutoff is relevant here.
 
 ### 3.2 Decision structure
 
@@ -125,7 +93,7 @@ This supports a broad search. It does **not** establish a private offensive or d
 
 ### 3.4 Football and organizational problems visible at the cutoff
 
-Evidence-supported criteria for a freeze:
+The job, based on the public record, called for:
 1. Ability to establish a functional working relationship with a newly hired GM.
 2. Whole-program leadership appropriate to a 2-14 roster, not merely one schematic repair.
 3. Credible quarterback evaluation and development plan.
@@ -147,16 +115,13 @@ A January 13 Jaguars report said no interviews had yet been reported as complete
 
 Caldwell had also publicly discussed Greg Roman, Brian Schottenheimer, Vic Fangio, and Jay Gruden when asked about the search on January 10. [JAX-CRITERIA]
 
-Runtime treatment:
-- these names form a historically grounded candidate pool;
-- a reported plan is not a completed simulated interview;
-- Roman and Armstrong were still attached to teams alive in the postseason;
-- McCoy had just become fully available after Denver's elimination;
-- Stone's presence may change scheduling/order, but not the baseline fact that Jacksonville had a broad coordinator-heavy market available.
+**Alex Stone:** in this branch Stone enters Jacksonville's pool after the Saints' January 13 elimination. He brings one full season of interim NFL head-coaching experience, three Saints seasons as offensive coordinator before that, Patriots passing-game/tight-end and defensive-assistant experience, and prior quarterback-room work. His complete résumé appears in §8.
 
-### 3.6 Unknown and prohibited
+At this snapshot, these names form a historically grounded candidate pool. A reported plan is not the same thing as a completed interview. Roman and Armstrong were still attached to teams alive in the postseason, while McCoy had just become fully available after Denver's elimination. Stone joins an already broad coordinator-heavy market.
 
-Remain unknown unless established in the simulation:
+### 3.6 What was not publicly established
+
+The public record did not establish:
 - private candidate ranking;
 - exact contract budget;
 - exact personnel-control offer;
@@ -164,16 +129,6 @@ Remain unknown unless established in the simulation:
 - willingness to retain staff;
 - whether Caldwell's prior relationships create any actual preference;
 - any eventual real hiring result.
-
-### 3.7 Criteria-freeze template
-
-A valid Jacksonville freeze should resemble:
-
-**Documented criteria:** broad search; prior HC experience not required; new GM-HC partnership; leadership and roster/QB reconstruction.  
-**Structural constraints:** 2-14 baseline, high draft position, unsettled QB, new GM.  
-**Candidate-market constraints:** several coordinators in market; some playoff availability restrictions.  
-**Private weighting:** unknown.  
-**Stone-specific fit:** not evaluated until after freeze closes.
 
 ## 4. Arizona Cardinals
 
@@ -185,7 +140,7 @@ A valid Jacksonville freeze should resemble:
 - Quarterback instability was a central football problem after the club used four starters during 2012.
 - Offensive-line/run-game stability was also publicly discussed when Keim took over.
 - Larry Fitzgerald remained the offense's established centerpiece.
-- Later releases, restructures, and March cap figures are outside this runtime snapshot.
+- Later releases, restructures, and March cap figures are outside this January 14 snapshot.
 
 ### 4.2 Decision structure
 
@@ -215,11 +170,13 @@ The Cardinals publicly identified or interviewed:
 - **Todd Haley**, Steelers offensive coordinator; permission was reported, but as of January 8 no completed interview was established.
 - **Andy Reid** was an initial target, but he left the market for Kansas City before the cutoff. [AZ-OPENING] [AZ-KEIM] [AZ-GRUDEN]
 
-On January 13 NFL Network reported, citing informed sources, that Arizona planned a strong push for McCoy now that Denver had been eliminated and described Horton as an alternative. That is **attributed market reporting**, not an objective statement of Arizona's hidden ranking. [AZ-MCCOY-REPORT]
+On January 13 NFL Network reported, citing informed sources, that Arizona planned a strong push for McCoy now that Denver had been eliminated and described Horton as an alternative. That is attributed market reporting, not an objective statement of Arizona's private ranking. [AZ-MCCOY-REPORT]
+
+**Alex Stone:** Stone is also in Arizona's branch search pool. His relevant established record includes a 12-4 interim-HC season, long offensive/QB/passing-game work, experience supervising coordinators, and participation in personnel evaluation without final GM authority. His complete résumé appears in §8.
 
 ### 4.5 Unknown and prohibited
 
-Do not infer:
+The public record did not establish:
 - that the January 13 report fixes the simulated preferred candidate;
 - that an offensive background is mandatory;
 - that Horton is guaranteed retention;
@@ -227,14 +184,6 @@ Do not infer:
 - exact salary/term;
 - later interview additions;
 - eventual real hire.
-
-### 4.6 Criteria-freeze template
-
-**Documented criteria:** coach-GM fit, quarterback/offensive stabilization, whole-program credibility, no fixed timetable.  
-**Structural constraints:** 5-11 season, dramatic collapse, new GM, QB instability, offensive-line/run-game issues.  
-**Attributed reports:** McCoy interest was strong according to NFL Network sources; keep as report, not secret fact.  
-**Private weighting:** unknown.  
-**Stone-specific fit:** evaluated only after freeze.
 
 ## 5. Chicago Bears
 
@@ -268,7 +217,7 @@ Emery publicly said he wanted:
 7. a staff package that added to the candidate's case;
 8. ultimately, consistent playoff/championship contention. [CHI-CRITERIA] [CHI-PROCESS]
 
-This is strong enough to create a real criteria freeze without inventing hidden motives.
+These public comments give Chicago one of the clearest stated search profiles in the league.
 
 ### 5.4 Market baseline through the cutoff
 
@@ -286,7 +235,9 @@ Publicly reported Chicago candidates/interest included:
 
 Brian Kelly was reported not to be part of the Chicago search by January 10. [CHI-MARKET]
 
-A real-history report also listed Saints offensive coordinator Pete Carmichael Jr. That specific candidate fact is **not portable into this simulation** because Stone's branch changed Carmichael's role, the Saints' 2012 record, and New Orleans' playoff availability. See §11.
+A real-history report also listed Saints offensive coordinator Pete Carmichael Jr. That specific candidate fact does not carry over cleanly because Stone's branch changed Carmichael's role, the Saints' 2012 record, and New Orleans' playoff availability. See §11.
+
+**Alex Stone:** Stone joins Chicago's branch search with a full 2012 interim-HC season, extensive offensive and passing-game work, three Super Bowl wins as an assistant, team-level coordinator supervision and a prior 2012 permanent-HC interview cycle. His complete résumé appears in §8.
 
 ### 5.5 Availability at the snapshot
 
@@ -307,14 +258,6 @@ Do not infer:
 - any later staff construction;
 - that a candidate's eventual Bears performance validates or invalidates the ex-ante choice.
 
-### 5.7 Criteria-freeze template
-
-**Documented criteria:** demonstrated excellence, leadership, organization/admin, building-wide cohesion, staff quality, public representation, consistency, sustainable contention.  
-**Structural football issues:** offense/protection and Cutler are relevant but not a published exclusive scheme mandate.  
-**Candidate pool:** deliberately broad by Emery's own public statements.  
-**Private weighting:** unknown.  
-**Stone-specific fit:** evaluated only after freeze.
-
 ## 6. Philadelphia Eagles
 
 ### 6.1 Structural situation
@@ -325,7 +268,7 @@ Do not infer:
 - Michael Vick remained under a major existing 2013 contract obligation at the cutoff.
 - Nick Foles had completed his rookie season.
 - LeSean McCoy and DeSean Jackson were major offensive pieces.
-- Any later Vick restructure, later draft choice, or later roster move is prohibited as search evidence.
+- Any later Vick restructure, later draft choice, or later roster move falls outside this snapshot.
 
 ### 6.2 Decision structure
 
@@ -363,32 +306,22 @@ These criteria are usable directly. They do not establish one required offensive
 - Brian Kelly spoke with Philadelphia, then announced January 12 that he would stay at Notre Dame;
 - Brian Billick was reported on January 13 to have interviewed earlier in the week;
 - Gus Bradley was reported on January 13 to have interviewed on Saturday, though Philadelphia had not formally confirmed that meeting;
-- Jay Gruden was publicly in the pipeline, but his Philadelphia interview occurred after this event cutoff and is not loaded as a completed event. [PHI-ARIANS-BRADLEY] [PHI-LOVIE] [PHI-BILLICK]
+- Jay Gruden was publicly in the pipeline, but his Philadelphia interview occurred after this event cutoff and is not included as a completed event. [PHI-ARIANS-BRADLEY] [PHI-LOVIE] [PHI-BILLICK]
+
+**Alex Stone:** Stone is part of Philadelphia's branch candidate pool at this cutoff. His record combines a full interim-HC season, offensive coordination and play-calling, Patriots and Saints championship experience, defensive-assistant work, and prior permanent-HC interviews. His complete résumé appears in §8.
 
 ### 6.5 Candidates no longer available at the cutoff
 
-- Chip Kelly had told Philadelphia he was staying at Oregon. In this runtime snapshot he is unavailable. His later historical reversal is forbidden. [CAND-CHIP-KELLY]
+- Chip Kelly had told Philadelphia he was staying at Oregon, so he is unavailable in this January 14 snapshot. His later real-world reversal falls outside the cutoff. [CAND-CHIP-KELLY]
 - Brian Kelly had officially announced he was staying at Notre Dame. [CAND-BRIAN-KELLY]
 - Bill O'Brien had recommitted to Penn State before the cutoff.
 
 ### 6.6 Market implications
 
-Philadelphia had the broadest clearly documented search among Stone's five target teams. That matters mechanically in only one legitimate way: the organization has a **deep comparator field**, so Stone is not evaluated against an anonymous placeholder.
+Philadelphia had the broadest clearly documented search among Stone's five target teams. The practical point is simply that Stone enters a deep, varied candidate field rather than a two-man search.
 
 It does **not** mean:
-- that more interviews make Stone less likely by fiat;
-- that the resolver can choose a favorite from hindsight;
-- that the eventual real hire reveals the hidden ideal;
-- that innovation automatically outweighs leadership, staff, discipline, or organizational management.
-
-### 6.7 Criteria-freeze template
-
-**Documented criteria:** leadership, multi-horizon strategy, innovation, detail, staff construction, discipline, organizational/city fit.  
-**Structural constraints:** 4-12 reset after 14-year coach, unresolved QB direction, existing offensive skill talent.  
-**Market:** unusually broad and competitive.  
-**Unavailable real candidates:** Chip Kelly, Brian Kelly, Bill O'Brien at this snapshot unless simulation changes a prior fact.  
-**Private ranking:** unknown.  
-**Stone-specific fit:** evaluated only after freeze.
+The breadth of the search does not reveal a hidden favorite, and the eventual real-world hire tells us nothing about what Philadelphia had already decided by this cutoff. Lurie's own published criteria remained broader than any one scheme label.
 
 ## 7. San Diego Chargers
 
@@ -413,15 +346,15 @@ Before Telesco was hired, the coaching-search committee was described as:
 
 After January 9, Telesco joined the coaching search. [SD-TELESCO]
 
-### 7.3 Evidence-supported criteria
+### 7.3 What the job appeared to require
 
-Unlike Chicago and Philadelphia, San Diego did not publish an equally detailed written candidate rubric before the cutoff. A valid freeze should therefore remain narrower:
+Unlike Chicago and Philadelphia, San Diego did not publish an equally detailed written candidate profile before the cutoff. The visible needs were narrower:
 
 1. Functional partnership with the newly hired GM.
 2. Ability to reverse a multi-year decline without pretending the roster is equivalent to a bottom-two team.
 3. Quarterback/offensive-line plan around Rivers is a material football issue.
 4. Leadership and staff construction are necessarily relevant head-coach functions, but no exact private weighting is established.
-5. Do **not** turn the offense-heavy real candidate pool into a secret rule that only offensive coaches can win the job.
+5. The offense-heavy public candidate field does not, by itself, prove that San Diego had an offense-only mandate.
 
 ### 7.4 Market baseline through the cutoff
 
@@ -436,19 +369,15 @@ Publicly reported San Diego activity included:
 
 Media described the field as heavy on offensive coaches. That is an observation about the visible field, not proof of a private offensive-only mandate. [SD-GRUDEN]
 
-### 7.5 Stone-specific boundary
+**Alex Stone:** Stone is part of San Diego's branch candidate pool after New Orleans' season ends. Beyond his recent Saints résumé, he played tight end for the Chargers from 1986 through 1995, earning five Pro Bowls and two first-team All-Pro selections in this branch. His complete coaching résumé appears in §8.
 
-Stone's established playing career with the Chargers is a candidate résumé fact from library/alex_stone_character_dossier_pre_hire.md.
+### 7.5 Alex Stone and San Diego
 
-It may affect an interview only through a plausible evaluator response generated **after** San Diego's organization criteria are frozen. Do not:
-- assign automatic loyalty or nostalgia;
-- assume ownership remembers him favorably;
-- grant an interview advantage merely because the user controls him;
-- treat his former-player status as irrelevant if a simulated decision-maker legitimately brings it up.
+Stone's 1986-95 Chargers playing career is an established part of his résumé. It gives him a long history with the franchise and the San Diego market, but the available record does not establish how Dean Spanos, Tom Telesco or the rest of the search group privately viewed that connection.
 
-The same rule would apply to any real candidate with prior organization history.
+It is fair to describe him as a former Charger returning to the organization's coaching search. It is not fair to assume that the history automatically produces loyalty, nostalgia, an interview advantage, or a negative reaction.
 
-### 7.6 Unknown and prohibited
+### 7.6 What was not publicly established
 
 Remain unknown:
 - exact candidate ordering;
@@ -458,19 +387,36 @@ Remain unknown:
 - exact salary/term;
 - eventual real hire.
 
-## 8. Standardized candidate evidence packets
+## 8. Candidate résumé snapshots
 
-These packets exist to prevent an asymmetry where Stone has a detailed dossier and everyone else is an unnamed "other candidate." They summarize what was publicly established by the cutoff. They are not rankings.
+The summaries below put Stone and the major real candidates on comparable résumé footing. They describe what each candidate had actually demonstrated by the cutoff; they are not rankings.
 
-### Alex Stone — simulation candidate
+### Alex Stone — New Orleans interim head coach
 
-**Current status:** Saints 2012 interim head coach whose simulated season ended January 13.  
-**Record/experience:** use library/alex_stone_character_dossier_pre_hire.md and Document 3 only.  
-**Important established evidence:** 12-4 simulated 2012 regular season, 1-1 postseason; prior NFL offensive-coordinator/play-calling work; prior Patriots/Saints experience; one full simulated season of team-level interim HC authority.  
-**Open questions:** permanent staff construction, post-hire philosophy, requested authority, contract terms, interview answers.  
-**Rule:** do not expand Stone's evidence beyond the permitted dossier before comparing him to others.
+**Age:** 49.  
+**Current status:** New Orleans' 2012 season ended in the Divisional Round on January 13. Stone enters the permanent head-coaching market after serving the full 2012 playing season as the Saints' interim head coach.
 
-### Mike McCoy — Denver offensive coordinator
+**Playing résumé:** University of Miami tight end, 1982-85, including the 1983 national-championship team; San Diego Chargers tight end, 1986-95. His branch career totals are 150 games, 488 receptions, 5,912 yards and 44 touchdowns, with five Pro Bowls and two first-team All-Pro selections. He played in Super Bowl XXIX.
+
+**Coaching résumé:** Miami graduate assistant, 1996-97; Miami Dolphins offensive quality control / assistant quarterbacks, 1999; University of San Diego offensive coordinator / quarterbacks in 2000 and assistant head coach / offensive coordinator / quarterbacks in 2001; New England defensive coaching assistant, 2002-04; Patriots tight ends coach, 2005-06; Patriots passing game coordinator / tight ends, 2007-08; New Orleans offensive coordinator, January 2009 through April 2012; Saints interim head coach for the 2012 season.
+
+**NFL experience:** 12 NFL coaching seasons through 2012, plus four college coaching seasons. His background crosses offense, quarterback work, tight ends, passing-game coordination, three seasons of defensive-assistant work, and one full season of team-level head-coaching responsibility.
+
+**New Orleans record:** the Saints went 37-11 in the regular season and 4-2 in the postseason during Stone's 2009-11 offensive-coordinator tenure, winning Super Bowl XLIV. Payton remained the principal game-day caller through the first part of 2011; Stone took over the offensive calls during Payton's Week 6 injury and remained the primary caller through the rest of the 2011 season and postseason. In 2012, Stone went 12-4 in the regular season and 1-1 in the postseason as interim head coach while retaining primary offensive play-calling.
+
+**2012 head-coach responsibilities:** final day-to-day football authority over meetings, practice structure, depth chart, playing time, team discipline and game management; supervision of the offensive, defensive and special-teams coordinators at the team level; substantial participation in roster evaluation, draft preparation, free-agent discussion and role definition. Final acquisition, contract and draft authority remained with the personnel operation.
+
+**Prior permanent-HC search:** after the 2011 season Stone had two substantive meetings with Oakland, including a second-stage meeting, and one interview with Indianapolis. His interest was communicated to Tampa Bay and Miami without a club interview being established. He received no permanent head-coaching offer.
+
+**Education:** BS from Miami, MBA from the University of San Diego, and a PhD in Exercise Physiology from Miami focused on motor learning.
+
+**What is established:** extensive offensive planning and play-calling work; long NFL tight-end/passing-game background; defensive-assistant experience; coordinator supervision; a full season of interim head-coach authority; postseason head-coaching experience; personnel-process participation.
+
+**What remains unproven or undecided:** he has never assembled a permanent NFL staff of his own; he has not held final GM/draft/contract authority; his deepest NFL quarterback work has been with veteran quarterbacks, especially Drew Brees; no future coordinator choices, permanent play-calling arrangement, requested personnel authority, contract terms, interview answers or post-hire coaching philosophy are established.
+
+**San Diego connection:** Stone played his entire ten-year NFL career for the Chargers. That is part of his résumé, not evidence that the current San Diego decision-makers favor or oppose him.
+
+### Mike McCoy — Denver offensive coordinator### Mike McCoy — Denver offensive coordinator
 
 **Age/current role at the time:** 40, Broncos offensive coordinator.  
 **Public résumé:** 13 NFL coaching seasons, four as Denver OC; gained attention for adapting the offense from Kyle Orton to Tim Tebow in 2011 and then to Peyton Manning in 2012. [CAND-MCCOY]  
@@ -555,7 +501,7 @@ These packets exist to prevent an asymmetry where Stone has a detailed dossier a
 **Public résumé:** long NFL special-teams coaching career.  
 **Market:** Philadelphia confirmed interview; Jacksonville baseline interest. [PHI-FIRST-WAVE] [JAX-MARKET]  
 **Availability:** Atlanta remained alive; postseason restrictions apply.  
-**Important anti-bias point:** special-teams background is not inherently lesser than offense/defense where the hiring organization's own public criteria are role-agnostic.
+Armstrong's special-teams background made him a different kind of candidate, not automatically a lesser one, particularly for clubs that publicly emphasized leadership and organization over coordinator side of the ball.
 
 ### Brian Schottenheimer — St. Louis offensive coordinator
 
@@ -576,7 +522,7 @@ These packets exist to prevent an asymmetry where Stone has a detailed dossier a
 **Current role:** 49ers offensive coordinator.  
 **Public connection:** Jacksonville baseline interest; Caldwell knew him professionally/personally from prior history. [JAX-CRITERIA]  
 **Availability:** San Francisco remained in the postseason.  
-**Rule:** prior relationship is evidence of familiarity, not evidence of a promised preference.
+Caldwell's prior relationship with Roman establishes familiarity, not a promised preference.
 
 ### Brian Billick — former Baltimore head coach
 
@@ -601,20 +547,20 @@ These packets exist to prevent an asymmetry where Stone has a detailed dossier a
 
 ### Other Chicago baseline candidates
 
-Chicago reporting also connected Mike Sullivan, Joe DeCamillis, Tom Clements, Rick Dennison, and Mike Singletary to the broad search. Their inclusion is evidence of the width of Emery's search, not evidence that every name must receive an identical simulated interview. [CHI-TRESTMAN] [CHI-MARKET]
+Chicago reporting also connected Mike Sullivan, Joe DeCamillis, Tom Clements, Rick Dennison, and Mike Singletary to the broad search. Their inclusion is evidence of the width of Emery's search, not evidence that every name must receive an identical branch interview. [CHI-TRESTMAN] [CHI-MARKET]
 
-## 9. Candidate availability / market topology at the snapshot
+## 9. Candidate availability across the five searches
 
-Legend:
-- **Interviewed** = completed real-historical interview publicly established by cutoff; use as market baseline, not immutable sim canon.
-- **Planned/reported** = public plan, permission, or credible contemporaneous report.
-- **Unavailable/closed** = no longer reasonably in open market at cutoff.
-- **Playoff-restricted** = active team still playing.
-- **Divergence-sensitive** = real-history action cannot simply be imported because Stone's branch directly changed the candidate's role/availability.
+Status terms:
+- **Interviewed** means a completed interview was publicly established by the cutoff.
+- **Planned/reported** means a public plan, permission request or credible contemporaneous report existed.
+- **Unavailable/closed** means the candidate was no longer reasonably in the open market at the cutoff.
+- **Playoff-restricted** means the candidate's current team was still playing.
+- **Branch-sensitive** means Stone's alternate New Orleans history materially changed the candidate's role or availability.
 
 | Candidate | Jacksonville | Arizona | Chicago | Philadelphia | San Diego | Snapshot status |
 |---|---|---|---|---|---|---|
-| Alex Stone | Scope opportunity | Scope opportunity | Scope opportunity | Scope opportunity | Scope opportunity | Sim candidate; no interview result assumed |
+| Alex Stone | In search pool | In search pool | In search pool | In search pool | In search pool | Available after New Orleans' Jan. 13 elimination; no interview result yet |
 | Mike McCoy | Planned/reported | Interview/talk baseline + attributed strong interest | Reported interest | Interviewed baseline | Jan. 14 scheduled | Available after Denver elimination |
 | Ray Horton | — | Interviewed baseline | — | — | — | Available; incumbent AZ DC |
 | Jay Gruden | Planned/reported | Interviewed baseline | — | Planned; interview after cutoff | Jan. 13 scheduled/reported | Available |
@@ -638,63 +584,21 @@ Legend:
 | Andy Reid | — | Initial target, then market closed | — | — | — | Unavailable: accepted KC job |
 | Doug Marrone | — | — | — | Earlier market connection | — | Unavailable: accepted BUF job |
 | Rob Chudzinski | — | — | — | — | — | Unavailable: accepted CLE job |
-| Pete Carmichael Jr. | — | — | **Divergence-sensitive** | — | — | Do not import real-history candidacy |
+| Pete Carmichael Jr. | — | — | **Branch-sensitive** | — | — | Do not import real-history candidacy |
 
 A dash means no relevant connection was established in this research pass by the cutoff. It does not prove there was no private contact.
 
-## 10. How a hiring organization should evaluate the field
+## 10. Reading the candidate field
 
-### 10.1 Normalize evidence before comparison
+This was not a market with one obvious head-coach archetype. Offensive coordinators, defensive coordinators, special-teams coaches, sitting college/CFL head coaches, former NFL head coaches, and recent interim head coaches were all receiving legitimate attention.
 
-For every candidate actually considered in the simulation, reduce evidence to comparable categories:
+The meaningful differences were résumé and fit: prior head-coaching work, coordinator authority, play-calling experience, quarterback development, whole-team management, staff-building evidence, familiarity with a particular organization, and availability around the playoffs. Each club emphasized those things differently in public.
 
-- current role and authority;
-- demonstrated head-coaching experience;
-- coordinator/play-calling experience;
-- whole-team operational experience;
-- staff-building evidence;
-- quarterback/player-development evidence where relevant;
-- scheme/roster fit where the organization's **frozen** criteria make it relevant;
-- prior organizational relationship where documented;
-- current availability;
-- public competing-market demand where known;
-- material documented uncertainty.
+Stone belongs in that same field. His 2012 interim season gives him more whole-team NFL evidence than first-time coordinator candidates, while candidates such as Lovie Smith, Ken Whisenhunt, Brian Billick, Marc Trestman and Bruce Arians brought forms of prior head-coaching experience Stone did not. McCoy, Gruden, Bevell and others carried different quarterback/offensive résumés. Horton, Bradley, Nolan, Zimmer and Tucker brought defensive leadership backgrounds. Armstrong and DeCamillis represented the special-teams route.
 
-Do not create one global weighted score. Different organizations may care about different evidence, but the criteria and any weighting must be established before Stone-specific material is considered.
+Nothing in the January 14 public record turns those differences into a universal ranking. Clubs still had to decide what mattered most to their own situation.
 
-### 10.2 Equal-evidence rule
-
-If Stone and another candidate possess the same relevant evidence on a criterion, they receive the same treatment.
-
-Stone does not get:
-- an "interim HC" bonus larger than a comparable interim HC merely because his season is user-authored;
-- a communication bonus because his interview answer is longer;
-- an innovation bonus because the user describes his football ideas in more detail;
-- a relationship bonus from professional overlap unless an actual communicated relationship is established.
-
-Real candidates do not get:
-- an authority bonus from later jobs;
-- a success bonus from later careers;
-- a scheme bonus inferred from the staff they eventually built;
-- a prestige penalty or bonus from hindsight labels.
-
-### 10.3 Search actions are not predetermined
-
-An organization's next action may be:
-- request interview;
-- defer because of availability;
-- decline;
-- conduct first interview;
-- request second-stage meeting;
-- ask for staff/authority detail;
-- discuss compensation/term;
-- make an offer;
-- choose another candidate;
-- continue searching.
-
-Those actions arise from the frozen criteria, current field, new simulation interactions, and bounded uncertainty. They do not arise because the historical calendar says a real hire happened on a certain date.
-
-## 11. Divergence adjustments specific to this simulation
+## 11. New Orleans branch notes## 11. New Orleans branch notes
 
 ### 11.1 New Orleans staff cannot be copied from real 2013 history
 
@@ -717,7 +621,7 @@ In this simulation:
 - he therefore does **not** possess the identical real-world résumé;
 - the simulated Saints remained alive through January 13.
 
-Result: the real Chicago-Carmichael candidacy is a **historical comparator only**. Do not insert it as a completed or required simulated interview. If Chicago becomes interested in Carmichael inside the branch, that must arise as a simulation event from his branch résumé and availability.
+Result: the real Chicago-Carmichael candidacy is a **historical comparator only**. Do not insert it as a completed or required branch interview. If Chicago becomes interested in Carmichael inside the branch, that must arise as a branch event from his branch résumé and availability.
 
 ### 11.3 Aaron Kromer
 
@@ -726,7 +630,7 @@ Real history gave Kromer interim-HC duties during part of the Saints' suspension
 Therefore:
 - Kromer's branch résumé is offensive-line/running-game coach, not real-history interim head coach;
 - any later real coaching-market action that depended on his interim title cannot be imported as if the résumé were unchanged;
-- his later real staff destinations are prohibited runtime evidence.
+- his later real staff destinations are outside this snapshot.
 
 ### 11.4 Stone's Chargers playing history
 
@@ -739,7 +643,7 @@ Treat:
 
 ## 12. Research-source register
 
-These are the sources permitted to support the runtime reconstruction. A source published after the cutoff may be used only where explicitly identified as retrospective verification of a fact already true by the cutoff; it may not contribute a later search action or outcome.
+These sources support the January 14 snapshot. A source published after the cutoff is used only where explicitly identified as verification of a fact that was already true by the close of January 13; it does not supply a later search action or outcome.
 
 ### Jacksonville
 - **JAX-CRITERIA:** Jaguars, "No timetable on coaching search," Jan. 10, 2013.  
@@ -768,7 +672,7 @@ These are the sources permitted to support the runtime reconstruction. A source 
   https://www.chicagobears.com/news/bears-management-has-faith-in-emery-to-pick-right-coach-9301623
 - **CHI-TRESTMAN:** NFL.com, "Chicago Bears to interview CFL coach Marc Trestman," Jan. 5, 2013.  
   https://www.nfl.com/news/chicago-bears-to-interview-cfl-coach-marc-trestman-0ap1000000122420
-- **CHI-MARKET:** NFL.com, "Brian Kelly reportedly not in mix for Bears coach job," Jan. 10, 2013. The Pete Carmichael item in this article is divergence-sensitive and is not imported as runtime fact.  
+- **CHI-MARKET:** NFL.com, "Brian Kelly reportedly not in mix for Bears coach job," Jan. 10, 2013. The Pete Carmichael item in this article is divergence-sensitive and is not imported as snapshot fact.  
   https://www.nfl.com/news/brian-kelly-reportedly-not-in-mix-for-bears-coach-job-0ap1000000124524
 
 ### Philadelphia
@@ -847,7 +751,7 @@ A second pass specifically challenged the first:
 
 ## 14. Explicit exclusions
 
-The runtime resolver must never add or consult:
+This January 14 snapshot intentionally excludes:
 - the actual real hire by any of the five target teams after this cutoff;
 - a real later finalist list as if it were already known;
 - January 14-or-later interviews as completed cutoff events;
@@ -860,4 +764,4 @@ The runtime resolver must never add or consult:
 - retrospective rankings of the 2013 coaching hires;
 - private motives reconstructed from later outcomes.
 
-The simulator is allowed to know the market that existed. It is not allowed to know how that market turned out.
+The point is to preserve the market that existed without importing how it later turned out.
