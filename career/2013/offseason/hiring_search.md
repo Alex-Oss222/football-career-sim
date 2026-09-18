@@ -4,8 +4,8 @@
 **Phase:** PRE-HIRE SEARCH
 **Search snapshot:** Opening of January 14, 2013
 **Event cutoff at freeze:** 11:59 PM ET, January 13, 2013
-**Current status:** ACTIVE — INTERVIEW POSITION REQUIRED
-**Career initialization:** NOT INITIALIZED
+**Current status:** HIRED — INITIALIZATION BUILD REQUIRED
+**Career initialization:** INITIALIZATION BUILD REQUIRED
 
 This is the authorized ex-ante ledger for the bounded hiring search. It records organization criteria before Stone's user-authored pitch, priorities, or negotiating instructions are opened. The freeze uses only `library/2013_coaching_market_pre_hire.md`; no later real hiring outcome or hindsight comparator is a resolution input.
 
@@ -400,3 +400,67 @@ Does Stone accept Jacksonville's offer, decline it, or negotiate—and, if he ne
 |---|---|---|---|
 | 5 | After bounty answer received | Market update | Due diligence completed; Jacksonville moved to an offer, Arizona and Philadelphia remained active, and Chicago advanced to its ownership stage |
 | 6 | First offer after completed interviews | Offer | Jacksonville offer pending; Stone decision required because no automatic disposition exists and the proposed quarterback authority differs from his request |
+
+## Entry 7 — Jacksonville counter resolved; offer accepted
+
+**Recorded:** After receipt of `career/2013/offseason/hiring_search_brief/07_jacksonville_counter_offer.md`
+**Turn type:** Offer resolution
+**Team:** Jacksonville Jaguars
+**Resolution state:** CLOSED — ORIGINAL OFFER ACCEPTED
+**Current controlling status:** HIRED — INITIALIZATION BUILD REQUIRED
+
+### User instruction reduced to concrete terms
+
+Stone authorizes exactly one negotiation pass and leaves every part of Jacksonville's offer except the franchise-quarterback decision structure unchanged. He offers to replace the unconditional guarantees in Years 3 and 4 with performance vesting in exchange for a limited concurrence right covering only:
+
+- use of Jacksonville's first-round pick on a quarterback;
+- a trade of premium draft capital for a quarterback;
+- a major multiyear financial commitment to a quarterback as the intended starter; or
+- a major disposition of Jacksonville's starting quarterback over Stone's football objection.
+
+Caldwell would retain final authority over the roster, contracts, salary cap, scouting, acquisitions, and the draft generally. The requested concurrence would not be a general personnel veto or a transfer of general-manager authority.
+
+Under the proposed guarantee concession, Years 1 and 2 would remain fully guaranteed. After the 2014 regular season, the four agreed benchmarks would be:
+
+1. at least 10 total regular-season wins across 2013 and 2014;
+2. at least 6 regular-season wins in 2014;
+3. a 2014 point differential of minus-114 or better, which is at least 75 points better than Jacksonville's established 2012 baseline of minus-189; and
+4. an average of at least 20.0 points per regular-season game in 2014, or a finish of 24th or better in NFL scoring offense.
+
+Year 3 would become fully guaranteed if Jacksonville satisfied any one benchmark; Year 4 would become fully guaranteed if it satisfied any two. If Jacksonville terminated Stone without cause before completion of the 2014 season, or materially removed his agreed play-calling, staff-selection, depth-chart, or quarterback-concurrence authority, Years 3 and 4 would become fully guaranteed automatically.
+
+The brief expressly authorizes acceptance if Jacksonville grants that exact exchange. If Jacksonville does not grant the concurrence right, it authorizes acceptance of the original offer as written; rejection and withdrawal are prohibited in either branch. No broader renegotiation is authorized.
+
+### Jacksonville's response
+
+Caldwell declines the proposed exchange and leaves the original offer open without adding or changing a term. The reduced guarantee exposure is meaningful to ownership, but it does not resolve Caldwell's central operating objection: the requested concurrence would allow the head coach to block the general manager in the quarterback decisions most consequential to the rebuild. Jacksonville's offer already requires Stone's written football projection and a meeting to resolve disagreement before a leading quarterback commitment, and Caldwell is unwilling to trade final authority in that narrow but franchise-defining category for contract protection.
+
+This response follows the position established in Entries 5 and 6: Jacksonville was prepared to hire Stone only with final personnel authority remaining in the general manager's office after required coaching consultation. The decision does not treat the counter's tone, Stone's preference for the job, or his status as protagonist as resolution inputs. Jacksonville neither withdraws the job nor introduces a new term.
+
+### Authorized acceptance and contract record
+
+Because Jacksonville did not grant the concurrence right and returned the unchanged original offer, the brief's exact fallback applies. Stone accepts Jacksonville's four-year, fully guaranteed offer as recorded in Entry 6.
+
+The accepted operating terms are:
+
+- Stone selects the coaching staff, calls the offensive plays, controls the depth chart and game-day decisions, and receives the funded assistant-coach budget stated in the offer;
+- Caldwell retains final authority over contracts, the salary cap, scouting administration, acquisitions, and draft selections;
+- before a leading quarterback acquisition, disposition, or draft commitment, Caldwell must obtain and consider Stone's written football projection and meet with him to resolve disagreement, but Stone does not hold a concurrence or veto right and Caldwell retains the final call;
+- neither Blaine Gabbert nor a quarterback at the second selection is mandated before the post-hire evaluation process; and
+- the first-season standard remains installation of a functional program, credible player development, dependable preparation and communication, and an evidence-based direction at quarterback, not an immediate playoff requirement.
+
+No salary figure, start date, or additional contractual provision is inferred beyond the offer already recorded. The hire closes the bounded pre-hire search and moves the project only to initialization build; no roster, staff appointment, game, press conference, or other active-career event begins here.
+
+### Other pursued clubs closed without simulated outcomes
+
+- **Arizona:** no longer pursued because Stone accepted Jacksonville's offer. The ledger records no later result for Arizona's search.
+- **Philadelphia:** no longer pursued because Stone accepted Jacksonville's offer. The ledger records no later result for Philadelphia's search.
+- **Chicago:** no longer pursued because Stone accepted Jacksonville's offer. The ledger records no later result for Chicago's search.
+
+San Diego remains outside Stone's pursued search as previously recorded. No eventual hire, later staff choice, or later organizational action is invented for any of the four other clubs.
+
+## Turn log — search closure
+
+| Entry | Date/sequence | Type | Status |
+|---|---|---|---|
+| 7 | After Jacksonville counter instruction received | Offer resolution | Jacksonville declined the authority-for-guarantees exchange; Stone accepted the unchanged original offer under the pre-authorized fallback; search closed as `HIRED — INITIALIZATION BUILD REQUIRED` |
