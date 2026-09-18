@@ -4,7 +4,7 @@
 
 **Input contract (applies to every turn in this project, not just hiring):** there is no form to fill out. Document 1 §6.3/§16 bans closed-choice menus. At each decision point below, the output asks one specific, answerable question — you respond in your own words, and that answer is the input. Nothing is parsed against a rigid schema.
 
-**Persistence — added 2026-09-17, at the user's explicit instruction.** Every turn under this template gets appended to `career/<year>/offseason/hiring_search.md` (see `career/README.md`'s exception to "empty until initialization"), not left to live only in the chat transcript. This mirrors the SCOTUS project's own rule that nothing real exists only in conversation scrollback — a chat can end or restart; the file is what a future session reads to know where the search actually stands.
+**Persistence and ex-ante record.** During PRE-HIRE SEARCH, `career/<year>/offseason/hiring_search.md` is the authorized decision ledger. The criteria freeze is written there before Stone's pitch is evaluated, and every material development, offer, user instruction relied on, and unresolved Stone decision is appended there. Document 6 remains free of simulated hiring events until the initialization build.
 
 **The three turn types**, per Document 3 §10.2 — a full search should resolve in roughly 3-5 of these total, not one per team:
 
@@ -54,9 +54,9 @@ Contract terms, authority/staffing commitments made or implied, timeline to resp
 
 ## Your call
 
-Accept, negotiate (state what you want changed), or decline. If declined or if talks fail, the search continues with whatever teams remain in play.
+Accept, negotiate (state what you want changed), or decline. This remains a user-controlled Stone decision unless an exact standing instruction in the user-authored hiring brief already covers the offer as written. If no such instruction exists, stop here. If declined or talks fail, the search continues with whatever teams remain in play.
 ```
 
 ---
 
-Once an offer is accepted, the next turn is the season/offseason template pair, not this one — Document 3 §12's initialization gate becomes live at that point.
+Once an offer is accepted, set the search status to `HIRED — INITIALIZATION BUILD REQUIRED`. Do not jump directly into season/offseason play. Documents 2–7 must first be reconciled and made READY under Document 3 §12; ACTIVE CAREER begins only after the user's separate initialization instruction.
