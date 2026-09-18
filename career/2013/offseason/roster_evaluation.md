@@ -40,3 +40,26 @@ Stone's stated intent for what each phase is actually for — an evaluation plan
 **Preseason:** Game 1 evaluates operational competence, not box scores. Game 2 increases the starting offense's workload. Game 3 is the dress rehearsal, with the presumptive starting quarterback getting extended run. Game 4 protects established starters and is used for bottom-of-roster and rookie/UDFA evaluation.
 
 **Week 1 objectives (season opener):** not "make the playoffs or fail." Offensively: install the system, reduce sacks, build a functional third-down offense, and develop the season's rookies and any new quarterback. Defensively: generate real pressure and stop being one of the league's easiest rushing defenses to face, while developing the rookie class. Organizationally, Stone's stated single biggest question for the organization to answer by December: do we have our quarterback.
+
+## Late January 2013 — initial Caldwell alignment
+
+Stone presented the roster buckets, proposed February-March contract clearing, evaluation calendar, and March free-agent board to David Caldwell in one consolidated meeting. The conversation produced alignment on direction, not authorization for an early transaction.
+
+### Areas of alignment
+
+- Caldwell agrees that Jacksonville should preserve a real quarterback competition and should not release Chad Henne before the club knows whether a credible addition can be made. Neither incumbent is declared the starter.
+- Caldwell accepts pass rush, interior run defense, secondary competition, running-back insurance, and a possible short Brad Meester return as legitimate areas for the personnel department to prepare. He also agrees that retaining Eugene Monroe while adding tackle talent is not inherently redundant.
+- Caldwell supports using the offseason program, preseason, and camp as distinct evaluation stages rather than turning January roster labels into a final depth chart.
+- Stone's preference for one premium free-agent pursuit, rather than several loosely bounded bids, gives Caldwell a usable planning framework. It does not constitute approval of an offer.
+
+### Caldwell's pushback and retained decisions
+
+- Caldwell will not pre-approve the proposed releases from the coaching evaluation alone. He wants the personnel staff to establish trade interest, contractual consequences, replacement options, and — for Laurent Robinson — the medical information properly available to the club before he decides. Dawan Landry will be shopped only if Caldwell concludes a credible market exists; Aaron Ross and Guy Whimper remain evaluation subjects until the same review is complete.
+- Michael Bennett may remain Stone's leading recommendation, but Caldwell treats every stated price as a planning ceiling rather than a commitment. He will refresh the market and cap work near the March 12 opening and retains authority to decline the pursuit even below Stone's ceiling if the full contract structure or competing needs do not justify it.
+- Caldwell rejects the categorical link between signing Justin Forsett and taking running back off the meaningful-draft-pick board. A veteran insurance signing may reduce urgency, but draft value, medical information, and the rest of the roster can still support selecting the position.
+- Caldwell will explore a short Daryl Smith return without treating prior service as an obligation. Stone's willingness to walk away for greater security elsewhere is noted, but Caldwell retains the contract decision and will compare Smith's market with Jacksonville's linebacker plan.
+- The Brent Grimes contingency remains conditional on losing the preferred premium pursuit. Caldwell does not authorize simultaneous premium bids or any contact before the league calendar permits it.
+
+### Closed scope
+
+The meeting authorizes personnel, cap, medical, and market preparation only. It does **not** execute a release, trade, signing, offer, draft choice, starting decision, or depth-chart change. Caldwell retains the final authorities assigned to him in Authority Map rows 3, 5, 6, and 7; Stone's evaluations and recommendations remain attributed to Stone rather than silently rewritten as club decisions.
