@@ -34,7 +34,7 @@ You are Codex, running a bounded batch task against this repository. You have no
 
 ## Task: "Expand the real-data library: [specific target, e.g., 'the 2014 NFL draft class' or '2014-2016 salary cap and CBA figures']."
 
-**Model this on the existing library files** (`library/2013_league_calendar_and_financial_rules.md`, `library/2013_coaching_market.md`, `library/2013_draft_class.md`) — same structure, same sourcing discipline, same honesty about what couldn't be confirmed.
+**Model this on the existing library files** (`library/2013_league_calendar_and_financial_rules.md`, `library/2013_coaching_market_pre_hire.md`, `library/2013_draft_class.md`) — same structure, same sourcing discipline, same honesty about what couldn't be confirmed.
 
 **Two-pass discipline, not one:**
 1. **Research pass.** Find the facts, cite a specific real source (a named outlet and a URL where possible) for every claim.
@@ -61,7 +61,7 @@ This is the bounded pre-hire phase that may run before full career initializatio
 4. `library/2013_coaching_market_pre_hire.md`.
 5. Only after the criteria freeze described below is written, read `career/[year]/offseason/hiring_search_brief/`.
 
-**Do not load `library/2013_coaching_market.md` while resolving this search.** That file contains quarantined actual-future outcomes and is for research/audit only.
+**Do not load `archive/2013_coaching_market_historical_comparator.md` while resolving this search.** It contains the real later outcomes and is retained only for paused audit or historical fact-checking.
 
 **Criteria freeze before the brief.** Before opening the user's brief, write a `Criteria freeze` entry into `career/[year]/offseason/hiring_search.md` for every organization already established in Document 3's search scope. Use only the pre-hire market file. Record documented needs and constraints, identify any labeled inference, and leave unsupported private weighting unknown. This entry is the pre-hire equivalent of Document 1 §9.4's ex-ante record and must close before Stone's pitch or terms are evaluated.
 
