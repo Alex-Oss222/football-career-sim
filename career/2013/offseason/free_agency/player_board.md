@@ -8,6 +8,29 @@
 
 **Critical rule:** projected price is Jacksonville's estimate, not hidden knowledge of the player's eventual contract. Other clubs' interest, agent demands and the player's willingness to join Jacksonville remain unknown until communicated.
 
+## Runtime status — March 12 opening requested, resolution blocked
+
+**No target status has changed and no market outcome has been sampled.** The
+March 12 batch cannot become effective while the canonical career snapshot is
+still pre-hire/uninitialized, the 2013 career ledger is unopened, and the
+initial cap sheet leaves club commitments, adjustments, remaining room, and
+the four contemplated releases' cap consequences unknown. See `signings.md`
+for the blocking-reconciliation record.
+
+| Target | Requested March 12 disposition | Current status |
+|---|---|---|
+| Michael Bennett | Priority pursuit | **Unresolved — batch blocked before market generation** |
+| Sen'Derrick Marks | Value pursuit | **Unresolved — batch blocked before market generation** |
+| Roy Miller | Value pursuit | **Unresolved — batch blocked before market generation** |
+| Alan Ball | Value/competition pursuit | **Unresolved — batch blocked before market generation** |
+| Justin Forsett | Value-depth pursuit | **Unresolved — batch blocked before market generation** |
+| Brad Meester | Own-player negotiation | **Unresolved — batch blocked before market generation** |
+| Daryl Smith | Own-player negotiation | **Unresolved — batch blocked before market generation** |
+| Brent Grimes | Conditional premium contingency | **Unresolved — triggering Bennett outcome does not yet exist** |
+
+This status record does not create an offer, rejection, lost bid, signing, or
+future destination for any real player.
+
 ## Information labels
 
 - **PUBLIC FACT** — contract status, 2012 role, public injury information and other ordinary league information.

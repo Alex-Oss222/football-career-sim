@@ -63,3 +63,25 @@ Stone presented the roster buckets, proposed February-March contract clearing, e
 ### Closed scope
 
 The meeting authorizes personnel, cap, medical, and market preparation only. It does **not** execute a release, trade, signing, offer, draft choice, starting decision, or depth-chart change. Caldwell retains the final authorities assigned to him in Authority Map rows 3, 5, 6, and 7; Stone's evaluations and recommendations remain attributed to Stone rather than silently rewritten as club decisions.
+
+## March 12 release-review trigger — blocked before decision
+
+The requested March 12 review was reached as a batch instruction but could not
+be made effective in canon. Caldwell has made **no release decision** on Guy
+Whimper, Aaron Ross, Dawan Landry, or Laurent Robinson, and none of the four has
+been released or retained by this entry.
+
+| Player | Due-diligence status | Actual outcome |
+|---|---|---|
+| Guy Whimper | Exact annual contract ledger and release cap effect remain unavailable | **No action — unresolved** |
+| Aaron Ross | Exact annual contract ledger and release cap effect remain unavailable | **No action — unresolved** |
+| Dawan Landry | Exact annual contract ledger/release effect is unavailable; no simulated trade market may be run while the career ledger is unopened | **No action — unresolved** |
+| Laurent Robinson | Exact annual contract ledger/release effect and a reconciled club medical baseline remain unavailable | **No action — unresolved** |
+
+This is an administrative stop, not Caldwell declining the releases. The
+career snapshot still predates Stone's hire, Document 4 remains unreconciled,
+the season ledger has not opened, and the initial cap sheet expressly declines
+to calculate cap room or dead money from missing annual figures. Because a
+release changes both roster and financial state immediately, recording one in
+this file alone would create a partial, non-atomic transaction. The review
+remains pending until the initialization package and club cap ledger close.
