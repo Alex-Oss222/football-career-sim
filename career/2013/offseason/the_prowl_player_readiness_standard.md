@@ -2,7 +2,7 @@
 
 **Team:** Jacksonville Jaguars (the club Stone was hired by January 15, 2013 — `hiring_search.md` Entry 7)
 
-**Status:** User-established canon, 2026-09-18, companion to `the_prowl_program_identity.md`. Full text preserved verbatim below; Document 3 §2.1 carries the summary and points here.
+**Status:** User-established canon, 2026-09-18; implementation revised 2026-09-18 for 2013 NFL/CBA, medical, privacy and technology realism. Companion to `the_prowl_program_identity.md`. The core readiness idea remains user canon; the procedures below are the operative version.
 
 ---
 
@@ -136,31 +136,32 @@ Stone does not treat legitimate injury as a character failure.
 
 He does distinguish injury from repeatedly ignoring basic professional maintenance.
 
-### 6. Availability
+### 6. Availability and Medical Honesty
 
-The best physical profile is useless if the player cannot practice or play.
+Availability matters to football, but injury is not a character grade.
 
-Availability is not completely controllable.
+Football creates injuries that a player cannot prevent or control.
 
-Football creates injuries.
+Stone's standard concerns the controllable professional behaviors around health:
 
-The standard concerns the controllable portion:
+* report symptoms and injuries promptly;
+* give medical staff accurate information;
+* attend required treatment and rehabilitation;
+* complete medically permitted conditioning work;
+* communicate when a prescribed plan is not tolerable or is making a problem worse;
+* do not conceal an injury merely to protect a roster role.
 
-prepare properly;
+Medical diagnosis, participation restrictions and return-to-play clearance belong to qualified medical personnel, not Stone, a position coach or the strength staff.
 
-report problems early;
-
-complete treatment;
-
-maintain conditioning;
-
-do not conceal something until it becomes worse.
+A player who is medically unavailable is unavailable. The staff may plan around that fact. It may not convert the diagnosis itself into an effort or toughness judgment.
 
 ## Camp Conditioning
 
-Stone uses a position-adjusted conditioning test at the beginning of camp.
+Stone uses a medically cleared, position-adjusted conditioning test at the beginning of camp.
 
-It is an entry standard.
+The test and passing standard are written before the player takes it and are applied consistently to players performing comparable football jobs.
+
+It is an entry-readiness standard.
 
 It answers one question:
 
@@ -168,11 +169,11 @@ It answers one question:
 
 It does not determine the depth chart.
 
-Players who fail receive additional conditioning work appropriate to their position until they demonstrate readiness.
+Players who fail receive an individualized conditioning and retest plan from the strength/performance staff, subject to medical restrictions.
 
 They do not perform random punishment running.
 
-The conditioning work is corrective.
+Failure does not automatically determine the depth chart. It establishes that the player is not yet physically ready for the full football workload the club expects at camp entry. Football participation then follows the ordinary medical, practice and coaching process.
 
 ## In-Season Standard
 
@@ -180,316 +181,351 @@ There is no monthly combine.
 
 Stone does not repeatedly test forties, vertical jumps and maximum lifts simply to generate numbers.
 
-The performance staff instead tracks whether the player is maintaining:
+The performance staff instead evaluates whether the player is maintaining:
 
 * playing weight;
-* acceleration;
-* movement quality;
-* strength;
+* short-area acceleration and movement quality;
+* functional strength;
 * recovery;
-* practice output;
+* practice tolerance and technique under fatigue;
 * football conditioning;
-* availability.
+* medical availability.
 
-If those deteriorate, the staff intervenes.
+In 2013 this does **not** imply a modern continuous GPS or Next Gen Stats workload system.
+
+Unless Jacksonville later establishes specific equipment in canon, the staff works from period-appropriate tools: timed runs and position tests, weight-room records, body measurements, practice/game film, manual rep logs, trainer and strength-staff observation, and player-reported recovery information.
+
+If performance materially deteriorates, the staff first identifies the likely cause rather than treating every decline as a conditioning failure.
 
 The intervention can involve training, nutrition, recovery, workload or medical evaluation depending on the cause.
 
-# 2. WEEKLY SPORTS-PSYCHOLOGY SESSION
+# 2. MENTAL PERFORMANCE AND BEHAVIORAL-HEALTH SUPPORT
 
-Every player has one individual sports-psychology or mental-performance appointment each week during the season.
+Stone wants mental preparation treated as a normal part of professional football.
 
-Normal length:
+He does **not** require every player to attend private individual therapy every week.
 
-**20 to 30 minutes.**
+That distinction matters.
 
-This is built into the club schedule.
+In 2012 the NFL launched Total Wellness and the independent, confidential NFL Life Line. In 2013, Jacksonville can realistically make mental-performance education and confidential support readily available without pretending that every club already has a later-era mandatory on-site clinician model.
 
-It is not presented as punishment.
+## Team-Level Mental-Performance Work
 
-It is not reserved for players who are struggling.
+The club may schedule football/performance education inside periods where such work is permitted.
 
-Starters go.
+Subjects can include:
 
-Backups go.
+* concentration and attentional control;
+* pregame and in-game routines;
+* response after a mistake;
+* visualization and rehearsal;
+* communication under pressure;
+* sleep and travel habits;
+* handling role changes;
+* injury-rehabilitation mindset;
+* dealing with criticism and public attention.
 
-Rookies go.
+This material is performance education, not diagnosis.
 
-Stone goes too.
+A coach may discuss football concentration and routines.
 
-Coaches are encouraged to use the same resource.
+A coach does not diagnose depression, anxiety, trauma, addiction or another mental-health condition.
 
-## What The Session Can Cover
+## Individual Mental-Performance Sessions
 
-The player decides what actually needs attention.
+Individual sessions with a qualified mental-performance professional are available and encouraged.
 
-Possible subjects include:
+A player may use them regularly, occasionally or not at all.
 
-* concentration;
-* confidence;
-* performance anxiety;
-* response to mistakes;
-* sleep habits;
-* frustration;
-* role changes;
-* injury rehabilitation;
-* visualization;
-* communication;
-* family pressure;
-* transition to professional football;
-* dealing with criticism;
-* maintaining routines;
-* retirement or career uncertainty;
-* problems separating football performance from personal identity.
+Stone does not receive a personnel report saying which players voluntarily used the service or what they discussed.
 
-A player can also arrive and say he is doing well.
+If a player affirmatively asks for football staff to participate in a performance plan, only the information the player authorizes and that is appropriate for football operations is shared.
 
-The meeting still has value as a routine check.
+## Clinical Mental-Health Care
 
-## Privacy Rule
+Clinical counseling and treatment are separate from coaching.
 
-Stone does not receive therapy notes.
+The club provides players with clear access to period-appropriate confidential resources, including benefits and league resources available in 2013.
 
-The coordinator does not receive therapy notes.
+Private clinical use is not a depth-chart category.
 
-Personnel does not receive therapy notes.
+The coaching staff does not receive therapy notes, diagnoses, treatment details or attendance reports from confidential clinical services except where disclosure is legally or ethically required for an immediate safety issue or where the player authorizes a limited disclosure.
 
-The psychologist is not another scout.
+If a player needs a football absence or accommodation, Stone receives only what he needs to administer the football consequence.
 
-Football staff may know that the club resource exists and that appointments are scheduled, but the substance remains confidential except where law, immediate safety concerns or professional ethical obligations require otherwise.
+The NFL Life Line remains an independent confidential option.
 
-The psychologist can provide the organization with broad anonymous trends.
+## No Hidden Toughness Test
 
-Example:
+Seeking psychological help does not count against a player's role.
 
-Players are reporting difficulty sleeping after night games.
+Declining optional counseling does not count against a player's role.
 
-That may lead the club to examine scheduling or recovery practices.
+Stone may evaluate football preparation, communication and conduct that are actually observable.
 
-The report is not:
+He does not infer a player's mental state from whether the player uses a confidential service.
 
-Player 27 told me this private thing Tuesday.
+# 3. FINANCIAL EDUCATION AND ACCESS
 
-Stone considers that distinction essential.
+Stone wants players to have competent financial information because NFL income can arrive quickly and NFL careers can end quickly.
 
-If players believe the psychologist is secretly reporting to the depth-chart meeting, the program is useless.
+The club does not manage players' money.
 
-# 3. MONTHLY FINANCIAL CHECK-IN
+## Required Education
 
-Every player receives one private financial-development meeting each month.
+Jacksonville provides:
 
-Stone does not want the Jaguars managing players' money.
+* rookie financial orientation;
+* preseason or annual team financial-literacy education;
+* league or jointly required financial/player-development programming;
+* targeted education when a rules or benefits change makes it necessary.
 
-That creates the wrong relationship.
+Subjects may include:
 
-Instead, the club provides qualified financial education and access to vetted independent professional advice.
-
-The standard meeting is approximately:
-
-**30 to 45 minutes once per month.**
-
-## Subjects
-
-The meeting can cover:
-
-* cash-flow planning;
-* budgeting;
+* budgeting and cash-flow planning;
 * taxes;
 * agent fees;
 * offseason expenses;
-* housing;
-* vehicle purchases;
 * insurance;
-* credit;
-* debt;
-* retirement accounts;
+* credit and debt;
+* retirement planning;
 * investment basics;
-* family support;
-* requests for loans;
+* family-support requests;
+* loan requests;
 * business proposals;
-* fraud risk;
-* preparing financially for a short NFL career.
+* fraud and affinity-scam risk;
+* preparing for an uncertain career length.
 
-Rookies receive additional education during their first season.
+Rookies and young players may receive additional structured education because their transition into NFL income is new.
 
-## What The Team Does Not Receive
+## Individual Advice
 
-Stone does not see:
+Private one-on-one financial-development appointments are available throughout the year.
+
+They are **not** mandatory monthly meetings for every veteran.
+
+Players who want help can be referred to qualified independent professionals.
+
+The club may maintain a vetted referral process, but it does not guarantee an adviser, investment or product.
+
+## Financial Privacy
+
+Stone and the coaching staff do not receive:
 
 * bank balances;
 * brokerage statements;
 * credit-card purchases;
-* individual investments;
 * tax returns;
-* debts;
+* debt balances;
+* investment positions;
 * family transfers.
 
-The player's finances remain his finances.
+A player's voluntary use of financial education is not a personnel grade.
 
-The club provides education and access.
+If a financial issue creates a concrete football problem, such as a legal proceeding, missed required duty or an absence, the club deals with the actual football/administrative consequence rather than attempting to inspect the player's finances.
 
-It does not turn financial information into personnel information.
+# 4. FAMILY AND LIFE SUPPORT
 
-## Stone's Reason
+Jacksonville makes family and life-support resources easy to find and easy to request.
 
-NFL money arrives quickly.
+It does **not** require every player to submit a family-status form every two weeks.
 
-NFL careers can end quickly.
+## Onboarding
 
-Young players can suddenly become the highest earners in their families.
+At signing, reporting or the beginning of the program, Player Development gives each player a clear resource map covering areas such as:
 
-Stone does not consider financial education unrelated to football.
-
-A player spending every week dealing with unpaid bills, bad investments, tax surprises or constant requests for money is carrying another problem into the building.
-
-The club cannot solve every problem.
-
-It can make competent help available before the problem becomes a crisis.
-
-# 4. THE TWO-WEEK FAMILY PLAN
-
-Every two weeks, each player submits a short family-support plan to Player Development and Family Services.
-
-The coaching staff does not receive the private document.
-
-A player may submit:
-
-**No assistance needed this period.**
-
-That counts as a completed plan.
-
-Nobody is required to manufacture a family problem.
-
-## Purpose
-
-The question is simple:
-
-**Is there something happening during the next two weeks that the organization can reasonably help you prepare for?**
-
-The form looks forward rather than waiting for problems to explode.
-
-## Possible Items
-
-A player may identify:
-
-* spouse or partner travel;
-* children visiting;
-* child-care needs;
-* school enrollment questions;
-* relocation issues;
-* visiting parents;
-* eldercare concerns;
-* family tickets;
-* transportation;
-* temporary housing;
-* partner employment resources;
-* pregnancy or new-child logistics;
-* scheduled family events;
-* legal-resource referrals;
+* relocation and temporary housing;
+* schools and child-care information;
+* spouse or partner employment resources;
+* family travel;
+* eldercare referrals;
 * immigration-resource referrals where appropriate;
-* financial-education needs;
 * counseling resources;
-* emergency travel possibilities;
-* community or educational resources.
+* legal-resource referrals;
+* financial education;
+* emergency travel;
+* community and educational resources;
+* player and family benefits.
 
-The team then identifies where it can legitimately help.
+The purpose is to make the player know where to go before a problem becomes urgent.
 
-Sometimes that means money from an approved player-development program.
+## Ongoing Support
 
-Sometimes it means arranging information.
+Players and families may contact Player Development when help is needed.
 
-Sometimes it means introducing the family to an appropriate professional.
+Player Development may proactively check in when there is an obvious transition already known to the organization, such as:
 
-Sometimes the answer is that the club cannot solve the problem.
+* a rookie entering the league;
+* a newly signed player relocating;
+* a player joining during the season;
+* an extended injury/rehabilitation period;
+* a known family emergency;
+* a major life transition the player has chosen to share.
 
-The player receives that answer clearly.
+The check-in asks whether the organization can help.
 
-## What Players Do Not Have To Submit
+It does not demand private details.
 
-The form does not require:
+## Privacy
+
+Players are not required to disclose:
 
 * intimate relationship details;
 * diagnoses;
 * therapy content;
 * bank information;
 * arguments within the family;
-* information unrelated to a legitimate support request.
+* private information unrelated to a legitimate support request.
 
-Stone wants planning.
+A player can request logistical help without turning the coaching staff into a family counselor.
 
-He does not want surveillance.
+# 5. PLAYER DEVELOPMENT OPERATING REVIEW
 
-# 5. EVERY TWO WEEKS: PLAYER-SUPPORT REVIEW
+Player Development may periodically give Stone an operational summary of support demand.
 
-Player Development consolidates the family plans without unnecessarily circulating personal details.
+The summary is de-identified unless a player has authorized disclosure or a named operational fact is necessary for football administration.
 
-Stone receives an operational summary.
+A realistic summary might say:
 
-Example:
+* several players need relocation help;
+* two families need school-placement assistance;
+* rookies requested another tax session;
+* one player has an approved family-related absence;
+* no support issue currently affects practice availability.
 
-* three players need school-placement assistance;
-* two families require upcoming travel coordination;
-* one player needs an immigration referral;
-* several rookies want additional tax education;
-* no issue currently affects practice availability.
+Stone does not need the private story behind each request.
 
-Stone does not need the private story behind every request.
+If a player must miss football for an approved emergency, Stone receives the scheduling fact and whatever limited information is necessary to administer the absence.
 
-If something directly affects football availability, he receives the information necessary to plan football.
+# 6. MEDICAL, PERFORMANCE AND COACHING AUTHORITY
 
-If a player must miss an approved period for a family emergency, Stone needs to know that.
+The Prowl does not blur professional roles.
 
-He does not automatically need every detail of the emergency.
+## Medical Staff
 
-# 6. HOW THE FOUR SYSTEMS CONNECT
+Qualified medical personnel control:
 
-Stone does not treat these as four unrelated programs.
+* diagnosis;
+* treatment restrictions;
+* medical rehabilitation parameters;
+* participation clearance;
+* return-to-play decisions within their authority.
 
-They answer four different questions.
+Stone cannot order a player medically cleared.
+
+## Athletic Training / Rehabilitation
+
+Athletic trainers and rehabilitation professionals execute the medical plan, monitor response and communicate participation restrictions.
+
+The coaching staff receives football-relevant status, not unnecessary private medical detail.
+
+## Strength and Performance Staff
+
+The strength/performance staff controls training design within:
+
+* medical restrictions;
+* CBA limits;
+* the football calendar;
+* Stone's team-level practice priorities.
+
+It may recommend that workload rise or fall.
+
+It does not independently decide a medically restricted player is cleared.
+
+## Coaching Staff
+
+Stone and his coaches decide football usage inside the constraints already established by:
+
+1. medical clearance/restriction;
+2. CBA and league rules;
+3. the scheduled practice inventory;
+4. the player's demonstrated football readiness.
+
+This separation prevents "The Prowl" from becoming a justification for coaches overruling medicine.
+
+# 7. OFFSEASON CBA BOUNDARY
+
+Jacksonville has a new head coach in 2013, so Article 21 permits a nine-week official offseason program within the new-head-coach calendar and Article 22 permits the additional voluntary veteran minicamp available to a club with a new head coach.
+
+Those opportunities are not mandatory participation authority.
+
+Except for the permitted mandatory veteran minicamp and other specifically authorized obligations, offseason workouts and classroom instruction are strictly voluntary under the 2011 CBA.
+
+Stone, his assistants, the performance staff and personnel department may not tell or imply to a player that declining voluntary offseason participation will:
+
+* cost him a roster spot;
+* reduce his depth-chart standing;
+* reduce his role;
+* damage his working conditions;
+* establish that he is not committed to The Prowl.
+
+The club may use lawful workout bonuses and participation agreements where the CBA and player contract permit them.
+
+The Prowl does not become a backdoor attendance rule.
+
+## Offseason Phases
+
+The program respects the three-phase structure:
+
+**Phase One:** strength, conditioning and physical rehabilitation, with the CBA's restrictions on football coaching and field activity.
+
+**Phase Two:** permitted individual/group football instruction and walkthrough-speed work, without live contact or ordinary offense-versus-defense competition.
+
+**Phase Three:** OTAs and permitted team work, still without live contact, within the CBA's OTA/day/hour limitations.
+
+Stone's solution to insufficient preparation time is better prioritization, not illegal extra practice.
+
+# 8. READINESS ACCOUNTABILITY
+
+Professional responsibility is evaluated through conduct the player is actually obligated to perform.
+
+A player is expected to:
+
+* attend mandatory football meetings, practices and club obligations;
+* meet lawful reporting requirements;
+* give medical personnel accurate injury information;
+* follow required medical/rehabilitation obligations;
+* arrive at training camp reasonably prepared for his football job;
+* learn the assignments he has been given;
+* communicate early when a known problem will affect required work.
+
+A player is **not** required to prove professionalism by:
+
+* attending optional therapy;
+* disclosing therapy use;
+* opening his financial records;
+* meeting monthly with a financial adviser;
+* submitting recurring family-status reports;
+* revealing private family problems;
+* attending voluntary offseason work that the CBA makes voluntary.
+
+The club can insist on professional football behavior without claiming ownership over the player's private life.
+
+# 9. HOW THE SUPPORT SYSTEM FITS TOGETHER
+
+The readiness system asks four practical questions.
 
 ### Physical
 
-Can you perform your football job repeatedly?
+Can the player perform his football job, and are medical/performance roles being handled by the correct professionals?
 
-### Psychological
+### Mental
 
-Can you manage the mental demands attached to doing that job?
+Does the player know how to access performance coaching and confidential behavioral-health support when useful or necessary?
 
 ### Financial
 
-Are preventable money problems beginning to control your life?
+Does the player have competent education and access to help without making private finances a personnel tool?
 
-### Family
+### Family / Life
 
-Is something outside the building becoming a problem the organization could reasonably help address before it reaches Sunday?
+Does the player know where to request legitimate support without compulsory disclosure?
 
-None of them guarantee performance.
+None of these systems guarantees performance.
 
-They remove avoidable obstacles.
+They reduce avoidable obstacles while keeping the football staff inside its proper authority.
 
-# 7. ACCOUNTABILITY
-
-Using the resources is part of being a professional.
-
-Disclosing private information is not.
-
-A player is expected to attend scheduled required development meetings.
-
-He is not required to tell Stone what he discussed with the psychologist.
-
-He is expected to complete the two-week family-support check.
-
-He may write that no assistance is needed.
-
-He is expected to attend financial education.
-
-He does not surrender control of his accounts.
-
-Stone cares about participation because the organization is spending time and money to make competent help available.
-
-He does not use private content as leverage.
-
-# 8. STONE'S MESSAGE TO THE TEAM
+# 10. STONE'S MESSAGE TO THE TEAM
 
 "You're responsible for being ready to play football. We're responsible for giving you a professional environment that makes that possible.
 
@@ -499,16 +535,25 @@ It also means we're not going to pretend the other twenty hours of your day disa
 
 If something is affecting your work and we can help solve it, tell us early.
 
-If you need a psychologist, use the psychologist.
+If you want mental-performance work or confidential counseling, the resources are there. Using them is not going on a personnel report.
 
-If you don't understand your finances, use the financial people.
+If you don't understand your finances, we'll make competent education and independent help available. I don't need to know your bank balance.
 
-If your family needs something the organization can reasonably help with, put it on the plan.
+If your family needs something the organization can reasonably help with, Player Development will help you find the right resource. You don't owe me the private story.
 
-None of that makes you less of a football player.
-
-Ignoring a manageable problem until it becomes a crisis doesn't make you tougher.
+And when the CBA says a workout is voluntary, it's voluntary. I'm not going to call something voluntary and punish you for treating it that way.
 
 Good. Better. Best.
 
 That applies to the organization too."
+
+# 11. IMPLEMENTATION SOURCES AND PERIOD BOUNDARY
+
+This standard is intentionally limited to what Jacksonville could realistically operate in 2013.
+
+- 2011 NFL CBA Article 21 — offseason workout voluntariness, new-head-coach program, phases and practice restrictions: https://overthecap.com/collective-bargaining-agreement/article/21
+- 2011 NFL CBA Article 22 — mandatory veteran minicamp and additional voluntary minicamp for a new head coach: https://overthecap.com/collective-bargaining-agreement/article/22
+- NFL Total Wellness launched in 2012 with independent confidential support and the NFL Life Line: https://www.nfl.com/news/nfl-total-wellness-program-launched-to-improve-player-health-09000d5d82ad2ab4
+- NFL Total Wellness history: https://totalwellness.nfl.com/who-we-are/
+- NFL's broader player-tracking experiments began during 2013; leaguewide RFID/Next Gen-style deployment followed later. The simulator must not assume modern continuous tracking outputs for Jacksonville: https://www.nfl.com/news/nfl-to-use-tracking-devices-during-games-practices-0ap1000000229778
+
