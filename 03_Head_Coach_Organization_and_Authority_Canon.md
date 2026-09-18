@@ -5,9 +5,9 @@
 | Field | Canonical entry |
 |---|---|
 | Document status | `NOT READY` — rebuilt template; career not initialized. After every substantive Section 12 gate and companion-document readiness check is satisfied, set this field to `READY` as the administrative close. The separate final instruction to initialize remains outstanding and does not prevent readiness. |
-| Document version | Rebuild draft 1.3 |
-| Supersedes | Rebuild draft 1.2 template. No initialized career canon or in-world event is superseded. |
-| Last Document 3 content-changing update | 2026-09-17 — resolved all §1.1-§1.6 biographical conflicts (name, playing career, education, coaching history, family, geographic constraint) by explicit user instruction; see §1.6 for the resolution record. Prior update: added §10, External hiring market and search-cycle procedure, and renumbered former §§10-11 to §§11-12. No initialized career canon or in-world event is superseded. |
+| Document version | Rebuild draft 1.4 |
+| Supersedes | Rebuild draft 1.3 template. No initialized career canon or in-world event is superseded. |
+| Last Document 3 content-changing update | 2026-09-17 — revised §1.1-§1.6 and §7.1 a second time the same day, after a fuller alternate source surfaced Stone's real divergence-point service as Saints interim head coach during Sean Payton's 2012 suspension; the user then confirmed adopting that source's full timeline (10-season playing career, PhD, Patriots-to-Saints-to-interim-HC coaching path) and rejected the earlier "soft preference" geographic-constraint resolution as unrealistic. See §1.6 for the before/after resolution record. Prior update: added §10, External hiring market and search-cycle procedure, and renumbered former §§10-11 to §§11-12. No initialized career canon or in-world event is superseded. |
 | Canonical as-of date | [UNSET] |
 | Competition, season, and team | [DERIVED DOCUMENT 2 REFERENCE; UNSET] |
 | Simulation mode | [DERIVED DOCUMENT 2 MODE-LOCK REFERENCE; UNSET] |
@@ -51,9 +51,9 @@ Ordinary clearly fictional post-divergence professional events involving real pe
 |---|---|---|
 | Full legal name | Alex-Lamar Stone | User-confirmed, 2026-09-17 |
 | Ordinary professional name | Alex Stone | User-confirmed, 2026-09-17 |
-| Date of birth | September 21, 1968 | User-confirmed, 2026-09-17 |
+| Date of birth | September 21, 1963 | User-confirmed, 2026-09-17 (revised) |
 | Birthplace | Miami, Florida | User-confirmed, 2026-09-17 |
-| Pronouns and form of address | [UNSET] | Unknown or undetermined |
+| Pronouns and form of address | He/him | Inferred consistently from all adopted source material; not separately confirmed by the user |
 | Languages and working proficiency | English (native); Spanish (conversational); Arabic, French, and Japanese (limited/basic working knowledge, retained for color, not relied on for any decision requiring fluency) | User-confirmed, 2026-09-17 |
 | Other identity details material to the career | [UNSET] | Unknown or undetermined |
 
@@ -63,13 +63,13 @@ Age, residence, family location, health, finances, and employment status are dat
 
 | Field | Canonical entry | Provenance |
 |---|---|---|
-| Team or teams | San Diego Chargers | User-confirmed, 2026-09-17 |
+| Team or teams | San Diego Chargers | User-confirmed, 2026-09-17 (revised) |
 | Primary position | Tight end | User-confirmed, 2026-09-17 |
-| Playing seasons | 1988-1997 | User-confirmed, 2026-09-17 |
-| Entry route, draft status, and acquisition date | [UNSET. Required if a real historical league is used.] | Unknown or undetermined |
-| Demonstrated career record | Ordinary role/depth-level NFL career; no Pro Bowl or All-Pro recognition, no historically notable statistical totals. Deliberately unspectacular by user choice so the career requires no alteration of real NFL history, records, or awards. | User-confirmed, 2026-09-17 |
-| Retirement date and cause | After the 1997 season; exact date and cause undetermined | User-confirmed, 2026-09-17 (partial) |
-| Historical effect | None. The confirmed modest career requires no change to real team, league, award, record, or Hall of Fame history. | User-confirmed, 2026-09-17 |
+| Playing seasons | 1986-1995 (10 seasons) | User-confirmed, 2026-09-17 (revised) |
+| Entry route, draft status, and acquisition date | [UNSET. No adopted source specifies a draft round, pick, or exact acquisition date. Do not infer one.] | Unknown or undetermined |
+| Demonstrated career record | 150 games played, 488 receptions, 5,912 yards, 44 touchdowns, 5 Pro Bowl selections, 2 first-team All-Pro selections. Played in Super Bowl XXIX (January 29, 1995), which the Chargers lost 49-26 to San Francisco; that real result is unchanged. Never won a championship as a player. | User-confirmed, 2026-09-17 (revised) |
+| Retirement date and cause | After the 1995 season, at age 32; exact cause undetermined | User-confirmed, 2026-09-17 (revised, partial) |
+| Historical effect | Minor. Stone is a fictional addition to the Chargers' real 1986-1995 rosters; his statistics and honors are his own and do not overwrite or reduce any real player's documented totals, awards, or Hall of Fame status. The real Super Bowl XXIX result, and every other real game outcome and award in this window, stands unchanged. | User-confirmed, 2026-09-17 (revised) |
 
 Do not use the supplied playing statistics, reputation, or position to resolve an interview, relationship, scheme choice, or career opportunity beyond what is confirmed above.
 
@@ -77,21 +77,27 @@ Do not use the supplied playing statistics, reputation, or position to resolve a
 
 | Field | Canonical entry | Provenance |
 |---|---|---|
-| Undergraduate education | BS in Sociology/Psychology, University of Miami, 1990; completed early in his playing career (1988-1997), consistent with an offseason/extended completion schedule | User-confirmed, 2026-09-17 |
-| Graduate business education | MBA, University of San Diego, sports-management focus, completed approximately 1998-2000 after retirement. Replaces the supplied 1997 UC San Diego MBA claim, which is impossible because UC San Diego's management school and MBA cohorts did not yet exist. | User-confirmed, 2026-09-17 |
-| Doctoral education | None. The supplied 2008 UC San Diego PhD in Neuropsychology is dropped entirely; it is not compatible with a full-time coaching career and is not load-bearing for anything else in canon. | User-confirmed, 2026-09-17 |
+| Undergraduate education | BS, University of Miami, 1986 (GPA 3.89). Enrolled circa 1981-82; played on Miami's 1983 national championship team as a sophomore. Some coursework/years overlapped the start of his playing career; treat 1986 as the confirmed conferral date. | User-confirmed, 2026-09-17 (revised) |
+| Graduate business education | MBA, University of San Diego (a private university; not UC San Diego), 1996 — an evening/offseason program completed in the final years of his playing career, conferred the year he retired. This corrects the earlier finding that a 1997 UC San Diego MBA is impossible, by using the correct institution (University of San Diego) rather than dropping the degree. | User-confirmed, 2026-09-17 (revised) |
+| Doctoral education | PhD, Exercise Physiology, University of Miami, Department of Exercise and Sport Sciences, conferred 2002. In residence 1996-1997 as a football graduate assistant while a doctoral student; 1998 devoted to qualifying exams and dissertation proposal; the dissertation itself ("Motor Learning Acquisition and Retention in High-Performance Athletes") was completed part-time across his early coaching years and defended in 2002. In-world reporters and bios sometimes mislabel the field as neuropsychology; the confirmed field is exercise physiology / motor learning. Stone does not lead with the degree in ordinary conversation. Reinstated; the earlier decision to drop the doctorate entirely is superseded. | User-confirmed, 2026-09-17 (revised) |
 | Licensure or protected professional credentials | [UNSET. Do not infer from a degree.] | Unknown or undetermined |
 | Clinics, fellowships, or continuing education | [UNSET] | Unknown or undetermined |
 
 ### 1.4 Coaching history
 
-| Period | Organization and title | Canonical status and unresolved issue | Provenance |
+| Period | Organization and title | Canonical status and notes | Provenance |
 |---|---|---|---|
-| 1999 | Miami Dolphins, defensive quality control | Confirmed as background; ordinary entry-level role, no real-staff collision. | User-confirmed, 2026-09-17 |
-| 2000-2001 | Miami Dolphins, offensive quality control | Confirmed as background; ordinary entry-level role, no real-staff collision. | User-confirmed, 2026-09-17 |
-| 2002 onward | Not fixed. The supplied New England Patriots stint (defensive backs coach, then TE/WR or wide receivers coach, plus a claimed 2007-2008 play-calling role) is dropped entirely. | Keeping real-team dates that collide with documented real historical assistants would require an early intentional divergence point the user does not want just to support a resume line. | User-confirmed, 2026-09-17 |
-| Contract end / January 2009 status | Not fixed. The supplied December 31, 2008 contract-end date and the associated January 2009 unemployed-applicant snapshot are dropped entirely, along with any claimed offensive-coordinator or head-coach role tied to that snapshot. | This was an artifact of the discarded Patriots-tenure claim and the incompatible legacy "job-search profile" layer the rebuild audit already flagged. | User-confirmed, 2026-09-17 |
-| Later positions | [UNSET] | The coaching path from 2002 forward is undetermined and will be established fresh at actual career initialization, per Document 1's initialization gate — not migrated from any legacy source. | Unknown or undetermined, by design |
+| 1996-1997 | University of Miami, graduate assistant (offense) | Confirmed; concurrent with doctoral coursework. Ordinary entry-level role, no real-staff collision. | User-confirmed, 2026-09-17 (revised) |
+| 1998 | No coaching title | Doctoral qualifying exams and dissertation proposal; not employed in football this year. | User-confirmed, 2026-09-17 (revised) |
+| 1999 | Miami Dolphins, offensive quality control / assistant quarterbacks | Confirmed; Jimmy Johnson's final season as Dolphins head coach. Ordinary entry-level role, no real-staff collision. | User-confirmed, 2026-09-17 (revised) |
+| 2000 | University of San Diego, offensive coordinator / quarterbacks, under head coach Kevin McGarry | Confirmed college stint (Division I-AA / Pioneer Football League). Primary offensive play-caller. | User-confirmed, 2026-09-17 (revised) |
+| 2001 | University of San Diego, assistant head coach / offensive coordinator / quarterbacks | Confirmed; same program, expanded title. Resolves the user's own uncertain recollection ("either I was HC or OC") as assistant head coach plus offensive coordinator — in charge of the offense, but not the program's head coach. | User-confirmed, 2026-09-17 (revised) |
+| 2002-2004 | New England Patriots, defensive coaching assistant (secondary), under defensive backs coach Eric Mangini | Confirmed; reinstates the Patriots tenure the earlier resolution had dropped. New England won the Super Bowl for the 2003 and 2004 seasons during this window. | User-confirmed, 2026-09-17 (revised) |
+| 2005-2006 | New England Patriots, tight ends coach | Confirmed. | User-confirmed, 2026-09-17 (revised) |
+| 2007-2008 | New England Patriots, passing game coordinator / tight ends, alongside offensive coordinator Josh McDaniels | Confirmed. New England went 16-0 in the 2007 regular season and lost Super Bowl XLII; finished 11-5 in 2008. | User-confirmed, 2026-09-17 (revised) |
+| January 2009 - April 15, 2012 | New Orleans Saints, offensive coordinator, under head coach Sean Payton | Confirmed. This is a divergence from real history, in which Pete Carmichael Jr. held this role; Stone holds it instead. Includes the Super Bowl XLIV win (2009 season) and a mid-2011 in-season play-calling takeover; three-season OC record 37-11 (regular season). | User-confirmed, 2026-09-17 (revised) |
+| April 16, 2012 - January 17, 2013 | New Orleans Saints, interim head coach, during Sean Payton's real 2012 Bountygate suspension | Confirmed; this is the specific missing piece the user identified. Sim-specific divergence: Stone holds the full interim-head-coach role for the entire season, rather than the real Joe Vitt/Aaron Kromer split. Went 12-4, second in the NFC South; won the Wild Card round and lost the Divisional Round on January 13, 2013. Real Bountygate discipline (Sean Payton, Gregg Williams, Mickey Loomis, Joe Vitt) is unchanged; Stone's own advance knowledge of the bounty program, if any, is deliberately left unresolved rather than decided either way. | User-confirmed, 2026-09-17 (revised) |
+| January 2013 | Head-coaching candidate: interviews with Jacksonville, Arizona, Chicago, Philadelphia, and San Diego | Confirmed as the new starting point. Stone is an HC candidate; **no hire has been made**. Do not import any hire, team, or outcome beyond this point from any source — that remains open for initialization. | User-confirmed, 2026-09-17 (revised) |
 
 ### 1.5 Family and relocation facts
 
@@ -99,39 +105,37 @@ Do not use the supplied playing statistics, reputation, or position to resolve a
 |---|---|---|
 | Marital status | Married | User-confirmed, 2026-09-17 |
 | Spouse's name | Inbar Zsela-Stone | User-confirmed, 2026-09-17 |
-| Spouse's program and institution | Columbia University, doctoral candidate in Clinical Psychology; exact specialization, expected completion date, and location requirements remain to be set at initialization if material | User-confirmed, 2026-09-17 (partial) |
-| Children and dependents | No children. Not tied to any specific dated snapshot; the discarded January 2009 anchor is no longer used for this fact. | User-confirmed, 2026-09-17 |
-| Stable family-location or relocation baseline | [UNSET. Store only an enduring user-confirmed constraint or baseline here; the current dated family location belongs exclusively in Document 5.] | Unknown or undetermined |
-| Geographic constraint | Soft preference only; no hard constraint on any region. Maximizes flexibility for team selection at initialization. | User-confirmed, 2026-09-17 |
+| Spouse's program and institution | Columbia University (Teachers College), doctoral candidate in Clinical Psychology, with a research interest in trauma; exact completion date and post-degree plans remain open | User-confirmed, 2026-09-17 (partial) |
+| Children and dependents | No children. | User-confirmed, 2026-09-17 |
+| Stable family-location or relocation baseline | New York City is Inbar's base for her doctoral program; every coaching stop since at least 2002 (Foxborough, then New Orleans) has required Stone to live away from her for large parts of the year. This is an enduring fact of the marriage, not a one-time snapshot. | User-confirmed, 2026-09-17 (revised) |
+| Geographic constraint | A real, unresolved problem, not a soft preference and not something either of them has made peace with. Years of living apart — Stone in Foxborough and then New Orleans, Inbar in New York finishing her doctorate — have cost the marriage real strain: missed stretches of time, resentment that surfaces and gets managed rather than resolved, and an open question neither of them has answered about whose career bends next. Taking the Saints OC job in 2009, and then staying through the interim-HC year, were each their own bet against that cost. Any new head-coaching job's location is a live source of friction for this marriage, to be played out at the table, not a constraint the sim is permitted to wave away as flexible or cost-free. | User-confirmed, 2026-09-17 (revised) |
 | Family and relocation detail level | [DERIVED FROM DOCUMENT 2 MODE-LOCK FIELD; UNSET] | Document 2 reference pending |
 
-Do not assign thoughts, patience, relationship quality, family priorities, or willingness to relocate to the spouse or the head coach. Record only communicated positions and user-established coach decisions.
+Do not assign thoughts, patience, relationship quality, family priorities, or willingness to relocate to the spouse or the head coach beyond what is confirmed above. In particular, do not resolve the geographic tension in §1.5 toward any specific outcome (staying together in one city, continuing to live apart, divorce, Inbar relocating or abandoning her program) without a user decision — the strain is confirmed; its resolution is not.
 
-### 1.6 Supplied background conflicts that block migration — resolved 2026-09-17
+### 1.6 Supplied background conflicts — resolved 2026-09-17, revised same day after a second source
 
-Every row below was resolved by explicit user instruction on 2026-09-17, before any career was initialized, so no Document 6 correction entry exists or is needed. Each resolution is carried into the active field in §1.1-§1.5 above; this table is retained only as a record of what the conflict was and how it was closed.
+Every row in §1.1-§1.5 above reflects a *second* round of resolution, completed on 2026-09-17 after the first. The first round (same date) resolved the original supplied conflicts by dropping the Patriots tenure, the doctorate, and the elite playing statistics, and by treating the geographic constraint as a soft preference. Later the same day, the user surfaced a fuller, self-consistent alternate source (a richer character dossier) that restored a specific missing piece — Stone's real divergence-point service as New Orleans interim head coach during Sean Payton's 2012 suspension — and the user then confirmed adopting that source's broader timeline (the ~10-year playing career, the PhD, and the full Patriots-to-Saints-to-interim-HC coaching path) rather than the first round's drop-everything resolution. Both rounds happened before any career was initialized, so no Document 6 correction entry exists or is needed; this table records what changed and why, since the second round reverses several first-round calls.
 
-| Conflict | Canonical resolution |
-|---|---|
-| Tight end versus receiver | Tight end. See §1.2. |
-| 1988-1997 versus 1989-1998 playing years | 1988-1997. See §1.2. |
-| Historically elite supplied statistics versus "not spectacular" description | Resolved to the modest/unspectacular description; the elite stat line is dropped. See §1.2. |
-| Earliest divergence required by the playing career | None required; the modest career needs no alteration of real NFL history. See §1.2. |
-| Patriots tenure beginning in 2002 versus 2003 | Moot; the entire Patriots stint is dropped. See §1.4. |
-| Patriots DB, TE/WR, and WR titles versus documented real staff | Moot; dropped for the same reason. See §1.4. |
-| One year of play-calling versus a 2007-2008 range | Moot; dropped along with the Patriots stint. See §1.4. |
-| Unsupported play-call totals and success definitions | Moot; dropped along with the Patriots stint. See §1.4. |
-| Impossible 1997 UC San Diego MBA | Replaced with a University of San Diego MBA, sports-management focus, completed after retirement. See §1.3. |
-| Doctoral degree title and attendance feasibility | Resolved by dropping the doctorate entirely. See §1.3. |
-| Inbar Zsela-Stone versus Inbar Kedem | Inbar Zsela-Stone. See §1.5. |
-| Trauma Psychology versus Clinical Psychology | Clinical Psychology. See §1.5. |
-| East Coast preference versus hard constraint or relocation exception | Resolved to a soft preference with no hard constraint. See §1.5. |
-| January 2009 unemployed state versus any selected 2010 team and start date | Dropped entirely; no pre-initialization employment scenario is fixed. See §1.4. |
-| Unemployed applicant versus Detroit offensive coordinator versus protagonist head coach | Dropped entirely along with the January 2009 scenario. See §1.4. |
-| File 16's treatment of Stone as an offensive subordinate presenting to another head coach versus Stone as the protagonist head coach | Discarded reference material; not retained as canon in any form. |
-| Stone calls offense, defense, both, or neither | Not a background conflict — this is a live coaching-scheme choice belonging to Sections 2 and 4, to be set when the user defines coaching identity at initialization. Not blocking. |
-| "2008 playoff loss" anecdote versus the Patriots missing the 2008-season playoffs | Dropped entirely along with the Patriots stint. |
-| Claimed private relationships and reference commitments from real coaches | Dropped entirely; no claimed relationships with real coaches are retained. See Section 7. |
+| Conflict | First-round resolution (2026-09-17) | Second-round resolution (2026-09-17, same day) |
+|---|---|---|
+| Playing career length and quality | Modest 1988-1997 career, no accolades, no real-history alteration required. | Reversed. Chargers TE, 1986-1995 (10 seasons), 5 Pro Bowls, 2 All-Pro, played in Super Bowl XXIX. See §1.2. |
+| Undergraduate year | 1990, completed during the playing career. | Reversed to be consistent with the earlier playing window: University of Miami, 1986. See §1.3. |
+| MBA institution and timing | University of San Diego, sports-management focus, completed ~1998-2000 after retirement. | Institution kept (University of San Diego, correcting the impossible UC San Diego claim); timing revised to 1996, during the last playing years. Sports-management focus dropped as unconfirmed. See §1.3. |
+| Doctoral education | Dropped entirely as incompatible with a coaching career. | Reversed. PhD, Exercise Physiology, University of Miami, 2002; in residence 1996-1997, dissertation completed part-time across early coaching years. See §1.3. |
+| Coaching path from 2002 forward | Left entirely unset, to be established fresh at initialization. | Reversed. Full path adopted: University of Miami GA (1996-1997) -> Dolphins (1999) -> University of San Diego OC then AHC/OC (2000-2001) -> Patriots (2002-2008) -> Saints OC (2009-2012) -> Saints interim head coach (April 2012-January 2013) -> HC candidate, not yet hired (January 2013). See §1.4. |
+| Patriots tenure and titles | Dropped entirely to avoid colliding with documented real assistants. | Reversed. Reinstated as defensive coaching assistant (secondary) under Eric Mangini (2002-2004), tight ends coach (2005-2006), then passing game coordinator/tight ends alongside Josh McDaniels (2007-2008). See §1.4 and Section 7.1. |
+| The missing interim-head-coach year | Not identified; no such role existed in the first-round resolution. | Added. Saints interim head coach, April 16, 2012-January 17, 2013, during Sean Payton's real Bountygate suspension — the specific piece the user recalled and asked to have restored. See §1.4. |
+| January 2009 employment snapshot / any hire before initialization | Dropped entirely. | Superseded rather than restored: the new starting point is January 2013, as an HC candidate with no hire yet. The original January 2009 unemployed-applicant snapshot stays dropped; it is not the same moment. |
+| Geographic constraint | Soft preference only, no hard constraint, to maximize placement flexibility. | Reversed by explicit user objection that a frictionless resolution is unrealistic. Now a real, unresolved marital strain with no easy answer. See §1.5. |
+| Tight end versus receiver | Tight end. | Unchanged. See §1.2. |
+| Inbar Zsela-Stone versus Inbar Kedem | Inbar Zsela-Stone. | Unchanged. See §1.5. |
+| Trauma Psychology versus Clinical Psychology | Clinical Psychology (with a trauma research interest, per the second source). | Unchanged; trauma noted as a research interest within clinical psychology, not a separate specialization. See §1.5. |
+| File 16's treatment of Stone as an offensive subordinate presenting to another head coach versus Stone as the protagonist head coach | Discarded reference material; not retained as canon in any form. | Unchanged. |
+| Stone calls offense, defense, both, or neither | Not a background conflict — a live coaching-scheme choice for Sections 2 and 4 at initialization. | Unchanged; not blocking. |
+| Claimed private relationships and reference commitments from real coaches | Dropped entirely. | Revised for the coaches now professionally connected to Stone by the reinstated Patriots and Saints history; see Section 7.1 for the current, still-conservative treatment (professional overlap confirmed, private trust/reference commitments are not). |
+
+Any field not listed in this table (name, birthplace, languages, marital status, spouse's name, children) was not affected by either round and remains as stated in §1.1-§1.5.
 
 ## 2. User-established coaching identity
 
@@ -353,15 +357,25 @@ This document stores only a user-confirmed durable relationship baseline, standi
 
 ### 7.1 Unresolved real-person relationship claims
 
-The following supplied claims inherit `Supplied claim pending confirmation`; their source is the supplied coach-profile material identified in the audit. They have no canonical effect until a reliable source establishes the observable fact or the user establishes a permissible, clearly fictional, observable professional history. Private trust, motive, rivalry, or willingness never becomes objective fact merely through professional overlap; a reference commitment is known only if actually communicated.
+The following claims inherit `Supplied claim pending confirmation`. Professional overlap (shared organization and years, per §1.4) is confirmed where stated; private trust, motive, rivalry, or a willingness to provide a reference is never objective fact merely because of that overlap, and becomes canon only if the user actually establishes it or a reliable source documents it as communicated.
 
-| Real person | Supplied claim | Canonical treatment |
+| Real person | Confirmed professional overlap | Canonical treatment |
 |---|---|---|
-| Bill Belichick | Former boss or mentor, high trust, would provide a reference | Dropped, 2026-09-17. This claim depended entirely on the Patriots tenure, which §1.4 resolved by dropping entirely. No professional overlap or relationship with Belichick is retained. |
-| Charlie Weis | Former colleague, would provide a reference | Dropped, 2026-09-17, for the same reason. |
-| Romeo Crennel | Former colleague, would provide a reference | Dropped, 2026-09-17, for the same reason. |
-| Josh McDaniels | Former colleague or competition, would not provide a reference | Dropped, 2026-09-17, for the same reason. |
-| Eric Mangini | Former colleague or rival, would not provide a reference | Dropped, 2026-09-17, for the same reason. |
+| Bill Belichick | New England Patriots head coach throughout Stone's 2002-2008 tenure there. | Reinstated, 2026-09-17 (revised), because §1.4 reinstated the Patriots tenure. Overlap as head coach and staff member is confirmed; any personal trust, mentorship, or standing reference commitment is not established and requires a user decision or in-world communication. |
+| Charlie Weis | New England offensive coordinator for part of Stone's Patriots tenure. | Overlap confirmed for the years it applies; no claimed reference commitment or personal relationship beyond professional overlap. |
+| Romeo Crennel | New England defensive coordinator for part of Stone's Patriots tenure. | Overlap confirmed for the years it applies; no claimed reference commitment or personal relationship beyond professional overlap. |
+| Josh McDaniels | New England offensive coordinator, working alongside Stone as passing game coordinator/tight ends, 2007-2008. | Overlap confirmed; no claimed reference commitment, rivalry, or personal relationship beyond professional overlap. |
+| Eric Mangini | New England defensive backs coach, directly supervising Stone as a defensive coaching assistant, 2002-2004. | Overlap confirmed as direct supervisor; no claimed reference commitment or personal relationship beyond professional overlap. |
+| Sean Payton | New Orleans head coach, Stone's direct supervisor as offensive coordinator (2009-April 2012); real-world suspended for Bountygate April 2012-January 2013, the period during which Stone served as interim head coach in his place. | Confirmed, 2026-09-17 (added). Direct supervisor relationship and the suspension/interim-succession fact are canon per §1.4. Payton's private opinion of Stone, and whether Payton knew or approved of Stone's advance knowledge (if any) of the bounty program, are not established. |
+| Mickey Loomis | New Orleans general manager; real-world suspended 8 games for Bountygate. | Confirmed, 2026-09-17 (added). Professional overlap as GM during Stone's OC and interim-HC tenure is canon; no personal relationship beyond that is established. |
+| Drew Brees | New Orleans starting quarterback throughout Stone's OC and interim-HC tenure. | Confirmed, 2026-09-17 (added). Professional overlap (play-caller and starting QB) is canon; personal relationship quality is not established. |
+| Pete Carmichael Jr. | Real-world Saints offensive coordinator (2009 onward); in this sim's divergence, Stone holds that role instead, with Carmichael serving under him and becoming interim OC during Stone's interim-HC year. | Confirmed, 2026-09-17 (added), as the specific real person displaced by Stone's divergence. Any personal friction or goodwill from being passed over is not established. |
+| Joe Vitt | New Orleans assistant head coach/linebackers coach; real-world suspended 6 games for Bountygate, then returned to that role rather than becoming interim head coach (the sim's divergence gives that role to Stone alone). | Confirmed, 2026-09-17 (added). |
+| Steve Spagnuolo, Greg McMahon, Aaron Kromer | New Orleans defensive coordinator, special-teams coordinator, and offensive-line coach respectively during Stone's interim-HC season. | Confirmed, 2026-09-17 (added), as staff overlap only. |
+| Kevin McGarry | University of San Diego head coach, Stone's direct supervisor as OC/QB coach in 2000. | Confirmed, 2026-09-17 (added). |
+| Jimmy Johnson | Miami Dolphins head coach, Stone's direct supervisor in his 1999 entry-level season; also Stone's University of Miami head coach for part of his playing career. | Confirmed, 2026-09-17 (added). |
+
+Gregg Williams (Saints defensive coordinator, the figure most directly tied to the real Bountygate scheme) has confirmed professional overlap with Stone during 2009-2011 by the same logic; whether Stone had any advance knowledge of, involvement in, or private view of the bounty program is deliberately left unresolved per §1.4 and must not be decided in either direction without a user decision.
 
 ### 7.2 Career reputation by audience
 
