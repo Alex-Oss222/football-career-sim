@@ -248,3 +248,70 @@ Team-specific emphasis follows the frozen criteria: Jacksonville will press on b
 | 1 | Before brief review | Criteria freeze | Closed for all five scope organizations |
 | 2 | After freeze closure | User-instruction record | Four pursuits authorized; San Diego excluded; no automatic offer disposition |
 | 3 | Current turn | Market update | Four interview requests; awaiting Stone's consolidated interview positions |
+
+## Entry 4 — Interviews opened; bounty due-diligence follow-up unresolved
+
+**Recorded:** After receipt of `career/2013/offseason/hiring_search_brief/05_interview_positions.md`
+**Turn type:** Market update
+**Resolution state:** STOPPED AT A CONSEQUENTIAL STONE DECISION
+**Current controlling status:** ACTIVE — INTERVIEWS OPEN; BOUNTY KNOWLEDGE TIMELINE REQUIRED
+
+### Interview-position reduction
+
+The supplied positions are interview-only statements, not permanent post-hire coaching canon. The clubs evaluate only their concrete substance; the length, confidence, phrasing, and Stone's preference order have no effect on their reactions.
+
+Across the four interviews, Stone proposes to retain offensive play-calling while assigning substantial weekday offensive administration to an offensive coordinator, leaving the defensive coordinator in actual charge of the defense, and leaving technical special-teams work to that coordinator. He would set whole-team priorities, the practice schedule, situational preparation, the depth chart, and game-management decisions. His offense would keep a common language and concept core but change its distribution after evaluating the available quarterback, protection, and skill personnel. He does not preselect a defensive front or offensive system before the roster is evaluated.
+
+His common operating proposal is situational practice without contact for appearance's sake; specific, tape-based development work led by position coaches; use of research for fourth downs, clock, tendencies, self-scout, personnel, and protection without delegating the decision itself; understandable rules applied without depth-chart favoritism; direct media handling without public blame or disclosure of internal personnel disputes; and advance preparation of game-management responsibilities and communication contingencies.
+
+No named assistant is represented as committed. Aaron Kromer, Pat Shurmur, Steve Spagnuolo, Romeo Crennel, Ray Horton, and Rod Marinelli are discussion or contingency targets only where identified below, subject to interest, fit, availability, and any applicable contractual circumstances.
+
+### Jacksonville interview
+
+Stone tells David Caldwell that the program would begin with honest roster evaluation, consistent teaching, complementary three-phase football, and dependable situational execution rather than a scheme label chosen in advance. He would evaluate Blaine Gabbert, the rest of the quarterback room, the draft, and other legitimate avenues without promising Gabbert the job or predetermining the second selection. His first-year standard is evidence of a functioning program, player development, fewer preparation and communication failures, a candid quarterback evaluation, and a clearer long-term roster direction—not a promised playoff appearance.
+
+For staff construction, Stone identifies Kromer as the first offensive conversation because he could carry line, run-game, and weekday operating work while Stone calls plays; he identifies Spagnuolo and Crennel as defensive conversations, not appointments. He accepts Caldwell's control of scouting, contracts, the cap, and draft administration, while proposing that major decisions—especially quarterback—require both the personnel evaluation and the coaching projection, with neither side forcing a commitment the other fundamentally rejects.
+
+**Club reaction from the frozen criteria:** The adaptable scheme answer, explicit delegation, developmental first-year measures, and separation of GM and coaching functions give Caldwell concrete material on program construction. The staff board is credible enough to remain under consideration but is not a completed staff, and the mutual-block proposal on quarterback is a material authority request rather than ordinary collaboration. Caldwell therefore continues the interview rather than accepting the operating model in advance.
+
+### Arizona interview
+
+Stone frames Arizona as an operational repair rather than Jacksonville's longer rebuild. He proposes making protection an organizational priority through some combination of personnel, coaching, and scheme; evaluating Kevin Kolb rather than guaranteeing or eliminating him; and declining to predetermine the seventh selection. The offense would be built around the quarterback who wins the job and the protection unit Arizona can construct, with the call distribution chosen only after that evaluation.
+
+Stone's first defensive conversation would be with Horton, without assuming Horton would remain after having interviewed for the head job. Continuity would depend on mutual willingness and football fit; Crennel is a contingency. Kromer and Shurmur are offensive conversations, with Stone remaining the game-day caller. Stone proposes separate GM and coaching responsibilities, reciprocal consideration of scouting cost and coaching fit, and a first-year agenda of stabilizing quarterback conditions, improving the line, preserving defensive strengths, and establishing a coach–GM relationship that can withstand disagreement.
+
+**Club reaction from the frozen criteria:** Bidwill and Keim regard the protection and quarterback plan as directly responsive to the visible football problems, and the Horton answer avoids assuming that continuity can simply be ordered. The proposal gives them a workable basis for further coach–GM discussion, but it neither resolves Horton's willingness nor converts Stone's requested substantive authority and line-investment priority into club commitments.
+
+### Philadelphia interview
+
+Stone proposes one offensive language whose call distribution can fit either Michael Vick or Nick Foles, rather than two unrelated systems. Both quarterbacks would receive genuine evaluation; neither receives the job or is removed through the interview, and the fourth selection is not predetermined. Stone describes the objective as becoming difficult for opponents to prepare for without overloading Philadelphia's own players, using the roster's useful existing pieces rather than rebuilding for appearance's sake.
+
+He identifies Shurmur as an offensive-coordinator conversation with substantial meeting, planning, quarterback, and installation duties while Stone calls plays, and Spagnuolo as a defensive conversation. He accepts Roseman's control of contracts, cap mechanics, scouting administration, and transactions while requiring a real coaching projection in major football decisions. His first-year standard is to answer the quarterback and roster-fit questions promptly, establish a durable offensive language, and prove that the operation does not depend on Stone personally controlling every detail.
+
+**Club reaction from the frozen criteria:** Lurie, Roseman, and Smolenski find concrete evidence of adaptability, multi-horizon planning, and delegation in the one-language/tailored-call-sheet model. The named staff conversations make the proposal testable without being treated as secured hires. Philadelphia continues to test whether Stone's play-calling role, requested personnel voice, and still-contingent staff can meet its leadership, detail, discipline, and full-program demands; no authority or contract point is conceded by the interview itself.
+
+### Chicago interview
+
+Stone treats Chicago as an immediate competitive assignment: preserve the functioning defensive foundation, repair protection and offensive operation, and use the coming season to evaluate Jay Cutler before a long-term decision. Matt Forte and Brandon Marshall are established parts of the evaluation, but Stone does not claim they determine a complete scheme before the line and full roster are studied.
+
+Kromer is Stone's leading offensive-coordinator conversation for complementary line, run-game, and weekday administrative work. Marinelli would receive the first defensive call, but retention depends on his willingness and a workable relationship; Crennel is an outside contingency. Stone explains that he would keep the offensive call sheet while coordinators run their weekday areas, and that he would set the full practice schedule, situational work, depth chart, weekly priorities, and game-management structure. His first-year objectives are immediate contention, continued defensive function, better protection and offensive consistency, and direct evidence for the next quarterback-contract decision—not a promise to exceed the prior win total by a specified amount.
+
+**Club reaction from the frozen criteria:** Emery receives the detailed division of labor and staff logic his published process called for. The preserve-and-repair plan fits the club's competitive posture, while the contingent coordinator board and the demand to defer a Cutler extension remain matters for ownership-stage evaluation rather than settled terms. Chicago keeps the initial interview open; it does not yet advance Stone to the reserved ownership-stage finalist meeting.
+
+### Common bounty due diligence and stop point
+
+In each interview, Stone gives only the user-authorized answer: he was New Orleans' offensive coordinator during the investigated period; Gregg Williams ran the defense; the league did not discipline Stone in connection with the matter; Stone will not supply another person's account; and, in a program he leads, payments for injuring opponents are prohibited and conduct that violates league rules or crosses that line is stopped regardless of staff status.
+
+Because Stone held a senior role on that staff and is seeking authority over an entire football operation, each club follows with the unresolved factual question: **When did Stone personally first know?** That follow-up is grounded in ordinary leadership and due-diligence review, not in a new private criterion and not in any inference about the answer.
+
+The interview-position file expressly withholds that fact and forbids an invented denial, admission, confrontation, report, concealment, or evasive substitute. Answering it would establish consequential Stone knowledge and conduct not covered by the brief. The interviews therefore stop at that question. No club's finalist decision, negotiation position, deadline, rejection, or offer is resolved while the material due-diligence answer remains absent.
+
+## Your call
+
+What does Stone answer when each club asks when he personally first learned of the Saints bounty program, including any club-specific difference in the answer?
+
+## Turn log — appended continuation
+
+| Entry | Date/sequence | Type | Status |
+|---|---|---|---|
+| 4 | After interview positions received | Market update | Four interviews opened; all stopped at the unresolved bounty-knowledge timeline; no offer generated |
