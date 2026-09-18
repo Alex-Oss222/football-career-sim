@@ -1,9 +1,9 @@
 # Project Instructions
 
 **Document status:** Stable governing instructions  
-**Version:** Rebuild draft 1.4  
-**Supersedes:** Rebuild draft 1.3  
-**Last Document 1 content-changing revision:** 2026-09-18 - added §9.1, Protagonist-blind resolution and anti-favoritism, as the highest-governing-level version of an enforceable (not merely stated) anti-favoritism invariant, after a detailed user-supplied review found the existing "does not exist to reward, punish, teach, or dramatize the protagonist" language correct in principle but operationally unenforceable; renumbered the rest of §9 into §9.2-§9.4 accordingly. Also clarified §6.3 to distinguish a banned hidden bespoke rating from Document 7 §2's permitted mechanical tier anchors. Prior update (2026-09-17): §12.1's normal-response shape marked superseded for actual output by the two confirmed templates in `foundation/templates/` (Document 7 §5.2); this file itself moved from the repo root into `foundation/` as part of the SCOTUS-style layout reorganization (Document 7 §12).  
+**Version:** Rebuild draft 1.5  
+**Supersedes:** Rebuild draft 1.4  
+**Last Document 1 content-changing revision:** 2026-09-18 - defined the explicit PRE-HIRE SEARCH lifecycle, authorized `career/<year>/offseason/hiring_search.md` as the ex-ante decision ledger before full career initialization, reconciled that exception with Document 6, and updated response-format language for the three active templates.
 **Change rule:** Amend only by an explicit user instruction or a documented canon correction. Do not use this file for changing season state.
 
 ## 1. Purpose and honest limits
@@ -16,7 +16,7 @@ The world does not exist to reward, punish, teach, or dramatize the protagonist.
 
 ## 2. Initialization gate
 
-**Exception: the hiring search itself is not gated by this section.** Document 3 §10's compressed-turn hiring-search procedure runs first, from Stone's current "HC candidate, not yet hired" status — it is the mechanism that produces the team, contract, and start date this gate requires, so it cannot itself wait on them. This gate governs season/career play, which begins only once that search concludes in a hire. See Document 3 §12 for the full explanation.
+**Lifecycle exception: PRE-HIRE SEARCH.** The January 2013 head-coaching search is a limited simulation phase that runs before full career initialization because team, contract, and start date are outputs of that search. During PRE-HIRE SEARCH, only hiring-market events and the user's authorized career decisions may advance. They are recorded in `career/<year>/offseason/hiring_search.md`, not in Document 6. Games, roster moves, staff construction, press conferences, practices, player decisions, and other team-career events remain blocked. After an offer is accepted, the project enters **HIRED / INITIALIZATION BUILD**; Documents 2-7 are then reconciled, followed by **READY**, and only a later explicit user instruction begins **ACTIVE CAREER** play. See Document 3 §12.
 
 Do not generate a game, roster move, player decision, press conference, or other season/career in-world development until all of the following are recorded and reconciled across Documents 2 through 7 and the user explicitly says to initialize the career:
 
@@ -171,6 +171,8 @@ Resolve football and career outcomes from established conditions and independent
 
 Before resolving every consequential head-coach decision, record the situation, information, advice, uncertainty, user choice, plausible alternatives, and ex-ante assessment in Document 6. This is mandatory even when decision and result will appear in one response. Retrospective assessment is allowed only for explicitly migrated past events and must be labeled as reconstruction. Per Document 7 §3.2's resolution-packet procedure, this ex-ante record must be closed before the result is generated, not narrated first and reconciled afterward — an assessment written in the same pass as its own result is not actually ex-ante, regardless of word order on the page.
 
+**PRE-HIRE SEARCH exception.** Before full career initialization, Document 6 may not contain simulated events. Therefore the hiring search uses `career/<year>/offseason/hiring_search.md` as its authorized ex-ante decision ledger. Criteria freezes, user instructions relied on, organization-side developments, offers, and unresolved user decisions are closed there before resolution. When a hire is accepted, the initialization build imports a concise, audited search closure into the first Document 6 baseline; it does not retroactively rewrite the pre-hire ledger.
+
 Do not reward the moral, aggressive, conservative, clever, conventional, or analytics-endorsed choice. Do not force close games, comebacks, injuries, turnovers, penalties, controversy, losing streaks, balanced records, or proportional costs after success.
 
 Evaluate a decision from information available at the time, separately from its result. Analytics are evidence with assumptions and uncertainty, not certainty or narrative authority.
@@ -214,7 +216,7 @@ After the final play, verify the final score against the scoring chronology, pos
 
 ### 12.1 Normal response
 
-Superseded for actual in-world output by the two user-authored templates in `foundation/templates/` (`season_output_template.md` in-season, `offseason_output_template.md` in the offseason), confirmed 2026-09-17 per Document 7 §5.2. The field-by-field layout below is kept only as the underlying communication-style guidance those templates were built to satisfy, not as a competing format — never generate a third shape from this section once the templates exist.
+Superseded for actual in-world output by the three templates in `foundation/templates/`: `hiring_search_output_template.md` during PRE-HIRE SEARCH, `season_output_template.md` in-season, and `offseason_output_template.md` in the offseason. The field-by-field layout below is underlying communication guidance, not a competing fourth format.
 
 Use a concise header with exact date or range, team, competition and season, phase and week, record, next opponent or event, and current focus.
 
