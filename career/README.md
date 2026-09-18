@@ -1,48 +1,62 @@
 # Career instance data
 
-Holds the actual played career — one subfolder per year, exactly the way the SCOTUS project's `terms/OT<year>/` holds one folder per term. `foundation/` and `state/` never accumulate season-by-season instance data; this folder is where it lives.
+This directory holds dated simulation history. The project has one deliberate pre-initialization exception: the head-coaching search that determines Stone's first permanent job.
 
-**Exception to "empty until initialization": the hiring search itself is tracked here too, starting immediately.** Document 1 §2 and Document 3 §12 already carve the hiring search out from the season/career initialization gate — it's the process that produces the team the gate needs, so it can't wait on it. The same logic applies to file-keeping: the search is a real, dated, multi-turn process, and per the lesson of the SCOTUS project, nothing real should live only in chat scrollback — it needs an actual file that survives the conversation, gets appended to turn by turn, and is still there if this project picks up in a new chat. That file is `career/2013/offseason/hiring_search.md` (2013 because that's the real year, known before the team is), updated in place as each turn happens. Once a team hire is finalized, `career/2013/` stops being just the hiring-search folder and becomes that team's actual 2013 folder per the layout below — the hiring-search file stays exactly where it is, now as that team's offseason record, and Document 3 §1.4 / Document 6 get updated with the concluded outcome.
+## Lifecycle
 
-## Layout, once initialized
+1. **PRE-HIRE SEARCH** — career is not initialized. Only `career/<year>/offseason/hiring_search.md` and its user-authored brief may contain dated simulated search activity.
+2. **HIRED / INITIALIZATION BUILD** — an offer has been accepted by the user or by an exact pre-authorized standing instruction. The accepted search result is reconciled into Documents 2–6, the roster/staff baseline is built, and the engine is made ready.
+3. **READY** — all initialization gates reconcile, but season play has not begun.
+4. **ACTIVE CAREER** — the user explicitly initializes the career. Normal roster, staff, transaction, media, practice, and game events may begin.
+
+The pre-hire search ledger exists because team, contract, and start date are outputs of the search and therefore cannot be prerequisites to it. This does not authorize other season or career events before initialization.
+
+## Pre-hire files
 
 ```
 career/
   2013/
-    ledger.md                  <- this season's slice of the Document 6 append-only ledger (schema/format defined in foundation/06_..., not here)
+    offseason/
+      hiring_search.md
+      hiring_search_brief/
+        README.md
+        [user-authored team/strategy files]
+```
+
+During PRE-HIRE SEARCH, `hiring_search.md` is the authorized ex-ante decision ledger for the search. It records frozen organization criteria, the user's relevant standing instructions, organization-side developments, offers, unresolved user decisions, and the final search status. Document 6 remains free of simulated events until the initialization build.
+
+## Layout after initialization
+
+```
+career/
+  <year>/
+    ledger.md
     league_results/
-      week_01.md                <- background-league results (every game NOT involving the protagonist), highlights only, per AGENTS.md's "Simulate background league" Codex task
-      week_02.md
+      week_01.md
       ...
     preseason/
-      bulk_report.md           <- the single bulk turn per Document 7 §5.1
+      bulk_report.md
     regular_season/
       weeks/
-        week_01.md              <- one file per week, in season_output_template.md's format
-        week_02.md
+        week_01.md
         ...
     postseason/
       wild_card.md
       divisional.md
       conference.md
-      championship.md          <- only the rounds actually reached
+      championship.md
     offseason/
-      closeout.md               <- offseason_output_template.md's format, front-office + self-assessment
-      hiring_search.md          <- the search ledger described above; see hiring_search_brief/README.md for what it needs from you before Codex can run it
+      closeout.md
+      hiring_search.md
       hiring_search_brief/
-        README.md                <- what to put here: priorities, terms, walk-away conditions, per team
       draft/
         draft_board.md
         results.md
       free_agency/
         plan.md
         results.md
-  2014/
-    ...
 ```
 
-**2026-09-18 update:** the interactive hiring search was restarted at the user's request, to run instead as a Codex batch task (`AGENTS.md`'s "Run the [year] hiring search"), mirroring the SCOTUS pattern of pointing an agent at a folder of pre-written positions rather than resolving decisions turn-by-turn in chat. `hiring_search.md` was reset to a clean, empty template; `hiring_search_brief/` is new and holds the user's own priorities/terms for Codex to read. `library/alex_stone_character_dossier_pre_hire.md` (a clean, pre-hire-only extraction of Stone's character/history) and `library/2013_coaching_market.md` supply the rest of what Codex needs.
+Only rounds and phase files actually reached in play should be created. Do not pre-build future seasons.
 
-Why per-season, not one continuously growing file: the same reason SCOTUS splits per term instead of one file for the whole Court's history — a multi-year coaching career's week-by-week record would otherwise become one unmanageable file. `state/04_Roster_and_Staff_Register.md` and `state/05_Current_Season_State.md` always hold only the CURRENT snapshot (updated in place, per Document 7 §6.3); this folder holds the full history those snapshots were built from.
-
-A season folder is otherwise created only when that season is actually reached in play — never pre-built in advance, and never for a season with no career events yet. The hiring search is the one deliberate exception, per above.
+`state/04_Roster_and_Staff_Register.md` and `state/05_Current_Season_State.md` hold the current snapshot. `career/` holds dated history. `foundation/` holds stable rules and canon structure, not accumulating season history.
