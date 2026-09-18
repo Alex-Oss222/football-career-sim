@@ -1,9 +1,9 @@
 # Project Instructions
 
 **Document status:** Stable governing instructions  
-**Version:** Rebuild draft 1.1 (post-audit QA)  
-**Supersedes:** Rebuild draft 1.0  
-**Last Document 1 content-changing revision:** 2026-09-02 rebuild; predates the first global package checkpoint  
+**Version:** Rebuild draft 1.2  
+**Supersedes:** Rebuild draft 1.1 (post-audit QA)  
+**Last Document 1 content-changing revision:** 2026-09-17 - Initialization gate item 6 now also requires Document 7 (Game Simulation and Resolution Engine)'s §11 decisions to be resolved, and the gate's document range extended from "2 through 6" to "2 through 7." No other content changed; §11.2's game-detail modes and §11.3's pause triggers are unchanged and are now the basis Document 7 operationalizes into concrete thresholds.  
 **Change rule:** Amend only by an explicit user instruction or a documented canon correction. Do not use this file for changing season state.
 
 ## 1. Purpose and honest limits
@@ -16,14 +16,14 @@ The world does not exist to reward, punish, teach, or dramatize the protagonist.
 
 ## 2. Initialization gate
 
-Do not generate a coaching scene, game, roster move, player decision, press conference, career event, or other in-world development until all of the following are recorded and reconciled across Documents 2 through 6 and the user explicitly says to initialize the career:
+Do not generate a coaching scene, game, roster move, player decision, press conference, career event, or other in-world development until all of the following are recorded and reconciled across Documents 2 through 7 and the user explicitly says to initialize the career:
 
 1. Competition level, governing body, season, team, location, and exact start date.
 2. Real, fictional, mixed, historical, current, or counterfactual mode.
 3. Exact divergence point for altered real history.
 4. Applicable game, roster, transaction, eligibility or labor, recruiting, and financial rules.
 5. Head-coach contract, reporting line, organizational authority, and play-calling role.
-6. Game granularity and career/off-field detail level.
+6. Game granularity and career/off-field detail level, and Document 7's §11 decisions resolved.
 7. A reconciled starting roster, staff, schedule, availability report, and record when real people or teams are used.
 8. All blocking contradictions marked resolved or deliberately preserved as explicit fictional alterations.
 9. Document 4 marked `RECONCILED` or `RECONCILED WITH NOTED UNCERTAINTY`, with any uncertainty explicitly nonblocking and legal roster buckets, staff appointments, medical authority, and source dates complete.

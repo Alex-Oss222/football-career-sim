@@ -5,8 +5,8 @@
 | Field | Canonical entry |
 |---|---|
 | Document status | `NOT READY` — rebuilt template; career not initialized. After every substantive Section 12 gate and companion-document readiness check is satisfied, set this field to `READY` as the administrative close. The separate final instruction to initialize remains outstanding and does not prevent readiness. |
-| Document version | Rebuild draft 1.5 |
-| Supersedes | Rebuild draft 1.4 template. No initialized career canon or in-world event is superseded. |
+| Document version | Rebuild draft 1.6 |
+| Supersedes | Rebuild draft 1.5 template. No initialized career canon or in-world event is superseded. |
 | Last Document 3 content-changing update | 2026-09-17 — revised §1.1-§1.6 and §7.1 a third time the same day. Second round adopted a fuller alternate source's timeline (10-season playing career, PhD, Patriots-to-Saints-to-interim-HC coaching path) after it surfaced Stone's real divergence-point service as Saints interim head coach during Sean Payton's 2012 suspension. Third round reverted the geographic-constraint field: the user clarified that the objection to "doesn't matter" was about it reading as hollow AI hedging, not a request to manufacture marital strain — Inbar remains background color only, and the field is now simply "no constraint," not an invented problem. See §1.6 for the full resolution record. Prior update: added §10, External hiring market and search-cycle procedure, and renumbered former §§10-11 to §§11-12. No initialized career canon or in-world event is superseded. |
 | Canonical as-of date | [UNSET] |
 | Competition, season, and team | [DERIVED DOCUMENT 2 REFERENCE; UNSET] |
@@ -548,5 +548,6 @@ Career initialization remains blocked until all of the following are resolved an
 - [ ] The complete candidate Document 5 is ready for the exact starting date and reconciled to Documents 2, 3, 4, and 6.
 - [ ] Candidate Document 6 includes accepted pre-start chronology, correction references, a full audit, and the first bounded handoff without any unapproved in-world event.
 - [ ] Documents 2–6 have matching mode, date, team, divergence point, authority, staff, roster, and schedule, with compatible readiness states: Document 2 locked, Document 3 candidate ready, Document 4 reconciled with no blocking uncertainty, and Documents 5/6 candidate ready.
+- [ ] Document 7 (Game Simulation and Resolution Engine)'s §11 outstanding decisions are resolved and the document is locked; its era-calibration placeholders (§8) are populated for the exact starting season.
 
 After every checklist item above is satisfied, close candidate Documents 3, 5, and 6 together under one pre-initialization global checkpoint and set all three readiness/status fields to `READY`. Readiness does not initialize play. Until the user later gives a separate explicit instruction to initialize the head-coaching career, this file remains a reconciled pre-start canon rather than an active career state.

@@ -1,0 +1,192 @@
+# Document 7: Game Simulation and Resolution Engine
+
+**Document status:** Reusable authoring template. Not yet blessed as active canon — see §11, Outstanding user decisions.
+
+**Lock status:** `UNLOCKED UNTIL THE §11 DECISIONS ARE CONFIRMED`
+
+**Runtime status:** `AUTHORING MASTER - DO NOT LOAD DURING PLAY UNTIL LOCKED`
+
+**Document version:** `0.1-authoring`
+
+**Last verified:** `2026-09-17`
+
+**Last Document 7 content-changing update:** `2026-09-17 - created. Answers the question of whether the six-document, SCOTUS-derived architecture is the wrong shape for a live football sim: it is not. Documents 1-6 already define the surrounding philosophy (division of control, fog-of-war, real-person protection, evidence/provenance labeling, the autonomy-of-others rule, the hiring-search compressed-turn pattern) in detail. What they never defined is the one thing a live sim cannot run without: an actual mechanism that turns personnel and matchups into a game result. This document is that mechanism. It was drafted from a judged, three-way design competition (narrative-first, ratings-and-dice, and a drive-level hybrid) run against the user's own stated priorities; the hybrid won unanimously and this document is that design, synthesized with the strongest ideas from the other two.`
+
+**Supersedes:** Nothing. This is an addition to the existing package, not a replacement of any of Documents 1-6.
+
+## 0. Why this document exists, and why it is not a rebuild
+
+Documents 1 through 6 were modeled on a separate legal-simulation project's document architecture: stable rules, a world/era sourcebook, a protagonist canon, a live-state register, a current snapshot, and an append-only event ledger, all governed by an evidence-labeling system and an atomic staged-commit protocol. That shape is not wrong for this project. Re-reading all six documents in full turned up a large amount of already-built, directly reusable machinery for a live, turn-by-turn simulation:
+
+- Document 1 §3 already separates user-controlled decisions from routine implementation the simulator may carry out on its own.
+- Document 1 §7 already defines a layered fog-of-war so the coach only ever learns what a plausible in-world channel would tell him.
+- Document 1 §9 already states the *philosophy* of bounded randomness and decision-quality-independent-of-outcome, and Document 1 §11 already defines pregame/live-game/postgame structure, four game-detail modes (Executive, Play-Calling, Critical-Decision, Full Tactical), and a list of pause triggers.
+- Document 2 §12 already defines full autonomy for transactions between two non-protagonist clubs, and a real-draft-class-then-procedural-generation rule.
+- Document 3 §10 already defines a compressed-turn procedure (batch the whole decision, don't narrate every step) for hiring searches — directly reusable for game weeks.
+- Document 6 §6 already defines the bookkeeping format for a game ledger (drive summaries, scoring ledger, per-snap deltas) down to the last reconciliation check.
+
+What none of the six documents ever supplied is an actual **algorithm**: something that takes "this team's pass protection is good, that team's pass rush is elite, it's 3rd and 8 in the fourth quarter" and produces a result. "Bounded randomness within a plausible range" was asserted as a constraint on outcomes, never implemented as a procedure. That gap — not the document shape — is what made the existing six documents unable to actually run a game. This document closes it, and only it.
+
+Documents 1-6 are unchanged by this document except for the small cross-reference additions in §9 below. Nothing here overrides an existing rule; §1 explains the one place this document adds something Documents 1-6 did not already contain.
+
+## 1. The one addition: a non-coach-facing Engine State store
+
+Document 2 §1 already says: *"This document never contains hidden simulator facts... If the platform supports private state, essential hidden state remains there. Otherwise, leave the matter undetermined until a plausible event resolves it."* This document is that private state.
+
+To compare a pass offense to a pass defense, weight a fourth-and-two, or decide whether a hit produces a fumble, the engine needs *some* internal, quantitative handle on player and unit quality. Documents 1 and 3 forbid ever showing the user a number, grade, tier score, or hidden rating — and that rule is unchanged. The resolution is the same one Document 2 already anticipated: the numbers live in a separate store the coach-facing documents (1-6) never reference and the user never sees. The user only ever sees the same five-tier qualitative language (elite / plus / average / below-average / replacement-level) already used elsewhere in this package for evaluation, plus narrated football outcomes. No probability, percentage, delta, or roll may ever appear in coach-facing text. This is a hard rule, not a style preference — a leak of a bare number here is the one failure mode every design reviewer flagged as the real risk of this whole document, and it is the one thing to check for in any output this engine produces.
+
+**Governance.** The Engine State store keeps its own append-only correction ledger, mirroring Document 6's discipline but stored separately: every calibration change, anchor correction, or formula revision is appended with what changed and why, nothing is silently overwritten, and a staged change becomes canon only on an explicit "commit closed" line — the same atomic-commit habit Document 1 §13.2 already uses for coach-facing canon. Unlike Documents 1-6, the Engine Ledger is never coach-facing and is never quoted to the user, even in summarized form.
+
+**Scope discipline (cost and consistency control).** Running the full mechanic below on all 32 teams' games every week is unnecessary and expensive. The full drive-level engine (§3-§5) is used for:
+
+1. Every game the protagonist's own team plays.
+2. Marquee, rivalry, and every postseason game leaguewide, so league history retains real texture.
+
+Every other background game between two non-protagonist teams resolves through a cheaper narrative-judgment pass: football-literate prose applied consistently to the same hidden unit tiers, with the same "variance compresses as sample size grows" discipline as §3.6, but no per-drive dice chain. Both paths write to the same schedule/results register in Document 6; a background game's simpler resolution is never mentioned to the user as lower-fidelity.
+
+## 2. Rating anchors
+
+### 2.1 Player attributes
+
+Attributes are grouped by position and used only inside the Engine State store; none of these names or values ever appear in coach-facing text, where the same information is expressed only as the qualitative dimensions Document 4 already defines (game performance, physical tools, technique, processing, fit, reliability, projection, confidence).
+
+| Position group | Attributes |
+|---|---|
+| Quarterback | Arm strength/velocity; accuracy by depth (short/intermediate/deep); pre-snap read and processing speed; pocket mobility/escapability; decision-making and turnover avoidance under pressure; deep-ball touch; play-action/RPO sell; two-minute composure |
+| Running back | Vision/patience reading blocks; contact balance; breakaway speed; pass-protection recognition and technique; receiving hands and route running |
+| Wide receiver / tight end | Release versus press; route precision and separation quickness; contested-catch ability; yards-after-catch ability; run-blocking (in-line for TE, perimeter for WR) |
+| Offensive tackle | Pass-set/anchor versus speed rush; hand technique; run-blocking drive/reach; stunt and blitz recognition |
+| Interior offensive line | Anchor versus bull rush; zone/gap run-blocking athleticism; snap-exchange and shotgun/RPO timing (center); blitz-pickup communication |
+| Defensive line | Run-gap discipline and anchor strength; pass-rush plan (bend/power/hand usage); motor/pursuit; one-gap versus two-gap fit |
+| Linebacker | Downhill run-fit instincts; man coverage; zone coverage and spatial reading; blitz timing and disguise |
+| Cornerback / safety | Man coverage technique; zone instincts and range; tackling in space; ball skills/turnover creation; run support (safety) |
+| Specialists | Leg strength (kickoff distance/field-goal range); placekicking accuracy under pressure; punt hang time and directional control; long-snap consistency; return vision and burst |
+| Cross-position modifiers (never a raw attribute) | Durability/injury-exposure tendency (bounded, historically informed, not a fixed health-point stat); scheme fit (recomputed per scheme, never global); development-trajectory archetype (early/on-time/late bloomer, sampled once and then adjusted by evidence, not a fixed age curve); discipline/penalty tendency; competitive toughness/composure |
+
+### 2.2 Deriving an anchor without inventing a secret "true rating" for a real person
+
+Document 3 §1.6 and Document 1 §8 prohibit treating a real person's actual, undocumented ability as a knowable fact. The conversion below is mechanical and evidence-bounded specifically so it never becomes that:
+
+1. Assign the player's demonstrated, publicly documented performance (through the divergence point, or through the most recent verified evidence for a fictional or post-divergence player) to one of the five existing qualitative tiers, per relevant attribute, exactly as an evaluator would in Document 4's existing evaluation format.
+2. Convert each tier to a fixed anchor value on a bounded internal scale via one static lookup table (elite / plus / average / below-average / replacement-level -> five fixed points), identical for every player at that position. The lookup table is the only place a number is chosen; no player ever receives a bespoke, evaluator's-discretion number.
+3. Where evidence is thin, contested, or unavailable, the anchor is set to `average` for that attribute and flagged low-confidence in the Engine Ledger — never guessed toward "probably good because he made the league" or any other inference the coach-facing documents would not themselves make.
+4. The anchor is a simulation input, not a claim about the real person's actual life; it is never described to the user in these terms and never appears outside the Engine State store.
+
+### 2.3 Team and unit ratings
+
+There is no team-overall number, stored or shown, ever — that would recreate exactly the "single true talent value" Document 1 §6.3 prohibits. A unit rating (pass protection, pass rush, coverage, run game, run defense, special teams, coaching/scheme fit) is instead assembled fresh each week as a snap-weighted composite of the currently available starters' relevant anchors, so it moves the moment a starter is ruled out or returns. Two modifiers layer on top:
+
+- **Continuity bonus:** an offensive line or secondary that has started together multiple consecutive games gets a small additive bonus, reflecting real chemistry effects.
+- **Scheme-fit multiplier:** an anchor counts for more or less depending on whether the specific playbook in use (not a global scheme label) plays to that attribute.
+
+### 2.4 Development drift
+
+Anchors drift slowly across a season and offseason through a bounded, sticky update: demonstrated evidence nudges an anchor toward what has actually been shown, but no single game or week swings it sharply, and a real player's own actual future career results are never imported as the answer key for where the drift should land (Document 1 §8's rule, applied to this mechanism specifically). Recalculation happens at the start of each week from the live depth chart and injury report, so a rating layer never goes stale mid-season.
+
+## 3. Game and drive resolution
+
+### 3.1 Unit of resolution
+
+Games resolve at the **drive/possession level**, not down-by-down, except where §3.5 escalates a specific sequence. This is a deliberate middle point: down-by-down resolution for all 32 teams every week was rejected as expensive and repetitive in exactly the games the user watches most closely, while a single whole-game judgment call was rejected as unauditable and prone to drifting toward whatever result reads best. A drive is granular enough to carry real fatigue, injury, and field-position consequences forward, and coarse enough to keep a season's worth of games playable.
+
+### 3.2 Per-drive procedure
+
+1. **Context.** Down/distance, field position, personnel, tempo, weather, and the current injury-adjusted lineup are established — set by the user at the game-plan/tactical level for the protagonist's own team, or by the opposing coaching staff's sampled tendency profile (§7) for every other snap in the league.
+2. **Matchup deltas.** For each relevant phase of the drive (run block vs. run front, pass protection vs. pass rush, route/separation vs. coverage, QB processing vs. pressure, special-teams phase), compute the net delta between the offense's and defense's unit ratings (§2.3), folding in situational modifiers: score/time pressure, fatigue accumulated so far in this game, weather, and any real scheme mismatch the week's game plan actually identified.
+3. **Drive shape.** Draw one outcome from a fixed set of drive shapes — three-and-out, stalled/punt, methodical drive into field-goal range, explosive scoring drive, turnover-ended drive, clock-eating grind — from a categorical distribution whose weights the deltas shift. This is never a flat coin flip and never a single team-overall comparison.
+4. **Featured beats.** Within the chosen shape, two to five representative beats (a completion, a stuffed run, a sack) are narrated. The player featured in each beat is chosen by usage-share weighting (depth-chart slot, package assignment, recent workload) — not uniform-random, so stars produce star-shaped box scores without simulating every snap. A periodic variance-injection check lets a depth player produce a signature outlier beat even when usage share alone would never select him, so a full season of box scores does not become formulaic.
+5. **Carry-forward state.** Score, clock, field position, and per-position-group snap load carry into the next drive and feed its fatigue modifier.
+6. **Reconciliation.** Stats and the narrative are generated together from the same drive outcomes and usage shares, then sanity-checked so yardage, scores, and turnovers sum correctly — the same reconciliation discipline Document 6 §7 already requires, run against a generative pass instead of manual entry.
+
+### 3.3 Turnovers, penalties, and injuries
+
+Each carries its own low-probability bounded check per drive, calibrated to real, era-accurate base rates (§8 placeholder tables) and further conditioned by the same matchup and fatigue context — a badly overmatched pass-protection matchup raises strip-sack odds, heavy late-season workload raises soft-tissue injury odds. Injury severity and return timeline are then handed to the medical-authority mechanic in §7; the coach never learns more than a plausible in-world channel would tell him, per Document 1 §7.
+
+### 3.4 Randomness model
+
+Bounded, matchup-weighted, seeded, and fully logged in the Engine Ledger (condition plus draw, never a bare "roll"). A plus unit can still have a quiet drive without its underlying anchor changing; a lopsided matchup has a narrow plausible outcome range, a close matchup has a wide one, which is where most real in-game chaos actually lives. Seeding makes a result reproducible and auditable/correctable later without silently rewriting unrelated history, matching the append-only correction culture already established in Document 6.
+
+### 3.5 Granularity dial and manual escalation
+
+Document 1 §11.2 already defines four game-detail modes (Executive, Play-Calling, Critical-Decision, Full Tactical). That existing dial sets the user's default narration depth for their own games. Independently of the dial, any sequence automatically escalates to denser, near-play-by-play narration at flagged spotlight moments (money downs, the two-minute drill, goal-to-go, trick plays, a live 4th-down call) or whenever the user names a sequence and asks to "go under the hood" on it — this escalation is prose density only, never an extra user turn, and never a deviation from the underlying drive-level mechanic that actually produced the result.
+
+### 3.6 Long-run consistency check
+
+Variance compresses as sample size grows: a single game can upset, but a season-long arc must still track underlying unit quality. This is checked the same way Document 6 §7 already checks statistical legality (completions never exceed attempts, turnovers reconcile) — as a standing postgame and end-of-season audit step, not a one-time design promise.
+
+## 4. Turn economy: the leverage gate
+
+This is the direct fix for the standing rule against wasting turns on routine decisions (the same principle Document 3 §10.2 already applies to hiring searches, extended here to game weeks and game days). Effort scales with actual stakes: a blowout can resolve in a single exchange with no in-game pauses; a one-score fourth quarter naturally produces several.
+
+The gate does not introduce a new, separately-computed "win probability" number. It operationalizes Document 1 §11.3's existing pause-trigger list into concrete situational thresholds, so the trigger is auditable without exposing any new hidden statistic:
+
+| Trigger (from Document 1 §11.3) | Concrete threshold for this engine |
+|---|---|
+| Important fourth down | Any 4th down where the protagonist's own team is on offense or defense, inside the opponent's territory, or in the final 5 minutes of either half regardless of field position |
+| End-of-half / endgame management | Final 2 minutes of either half, or any point where a single score changes the leader, in a game involving the protagonist's team |
+| Two-point attempts | Every one, always, for the protagonist's team |
+| Material injury substitution | Any injury to a starter or a player in a featured role for either team in a game involving the protagonist |
+| Major tactical departure | Any point the protagonist's staff would plausibly recommend deviating from the approved game plan |
+| Timeouts, replay/challenge choices, unusual special teams, serious sideline conflicts | As Document 1 §11.3 already states, unchanged |
+
+Outside these triggers, the drive resolves and narrates automatically under the play-calling delegation the coach already set. The threshold table above is a starting default and is explicitly user-adjustable — tighten it for more control, loosen it for faster games — without requiring a different engine.
+
+## 5. Weekly turn structure
+
+Adapted directly from Document 3 §10.2's compressed-turn procedure, extended from hiring searches to an ordinary game week:
+
+1. **Week Brief (one user turn).** Last week's league-wide results and standings shift, this week's opponent scouting summary, both teams' injury/availability report, any item genuinely needing the coach's response, and a single consolidated game-plan/practice-priority decision — presented together, never as a string of separate questions.
+2. **Practice week (auto-resolved).** Practice days, walkthroughs, and travel run in the background and are narrated only if something material happened (an injury, a standout practice, a staff disagreement). A decision point is raised only when a real complication earns one — never on a fixed schedule. This is Document 3 §10.2's own rule, applied here verbatim.
+3. **Pregame lock (optional, foldable into step 1).** Inactive/game-day designations and final situational stances, raised as its own turn only when genuinely borderline.
+4. **Game day.** Resolves per §3-§4 above; the other 31 teams' games resolve in parallel via the cheap path from §1, consuming no user turn.
+5. **Postgame Report (one user turn).** Final result, a decision-quality log entry only for moments the coach actually decided, updated standings/stats/injury report, and next week's preview.
+
+A full week costs roughly three to five user-facing exchanges when nothing unusual happens, growing only when the game or the week actually earns it.
+
+## 6. Draft and scouting classes
+
+Reuses Document 2 §12's existing procedure without modification: real classes are used with pre-selection data only, real post-selection outcomes are quarantined, and once real documented classes are exhausted, later classes are generated by sampling real historical position/round distributions and bust/hit base rates. Every generated or real prospect receives an anchor through the identical §2.2 conversion used for rostered players, so draft evaluation runs under the same uncertainty framework as everything else in this engine.
+
+## 7. World-agent roster
+
+Extends Document 1 §3.3, Document 2 §12, and Document 3 §10.3, rather than replacing any of them. Every entry below defaults to full autonomy; the "becomes user-facing when" column is the only trigger that pulls the user in.
+
+| Agent | Scope | Autonomy rule | Becomes user-facing when |
+|---|---|---|---|
+| Opposing front offices | Trades, signings, extensions, releases, draft selections for all non-protagonist clubs | Fully autonomous, zero confirmation, reported as a transaction digest | The protagonist's own organization is a party |
+| Opposing coaching staffs | Play-calling and weekly game-planning for every team the user doesn't control, including games between two non-protagonist teams | Fully autonomous, driven by a coaching-tendency profile (aggressiveness, pace, scheme identity) sampled once per staff and applied consistently, not re-rolled each week | Never, for games not involving the protagonist |
+| Protagonist's own coordinators/assistants | Detailed install and play-calling within the philosophy the coach set | Autonomous within delegated scope; may push back or deviate under pressure for a stated reason | The coach's plan conflicts with new information, or the coach chooses to override (tracked as a qualitative relationship note, never a number) |
+| Players, leaguewide | On-field performance (resolved by §3, not narrated per player), development, morale, contract stance, trade requests | Fully autonomous internal state; the coach learns about it only through a plausible in-world channel | A player's situation specifically requires the coach's or front office's response |
+| Medical staff | Injury occurrence, diagnosis, clearance, and return timeline | Independent medical authority; cannot be overridden by the coach, per Document 1 §4 | Never for the medical decision itself; the resulting availability change is always communicated |
+| Ownership/front office (protagonist's own org) | Cap management outside the coach's authority-map rows, and season mandate/pressure | Acts and evaluates independently | A move changes the roster the coach must plan with, or ownership initiates a genuine mandate conversation |
+| Media | Coverage, storylines, coaching-search and contract rumors | Fully autonomous, grounded strictly in actual results and known context; never fabricates private misconduct and never a hidden lever for manufacturing drama the user didn't ask for | The user chooses to respond directly (a press conference, a statement) |
+| Locker room / team chemistry | Ambient player-to-player and player-to-coach climate | Fully autonomous, but fires only from events already logged elsewhere (a benching, a trade, a stat-leader emergence) — it never invents conflict to fill a quiet week | A specific conflict rises to needing the coach's actual response |
+| League office / officiating | Rule enforcement, discipline, scheduling, in-game officiating | Fully autonomous and impartial; may plausibly err, as in real football, never targeted at the protagonist | Never directly; the coach reacts to a ruling like any other game event |
+| Agents/contract representatives | Contract negotiation and free-agency demands leaguewide | Fully autonomous for every other roster | The player is the protagonist's own free agent — then compressed into a single 1-2 turn decision, never a back-and-forth haggle loop |
+
+## 8. Era-calibration placeholders
+
+The following require real, era-specific values once a target season is chosen (Document 2's existing mode-lock convention — these stay bracketed until initialization, exactly like Document 2's own calendar and cap tables):
+
+- League-average yards per attempt/carry, completion rate, and explosive-play rate for the chosen era: `[PENDING SEASON SELECTION]`
+- League-average sack rate, interception rate, and fumble rate: `[PENDING SEASON SELECTION]`
+- Position-group injury-exposure rates per snap, and typical return timelines by severity tier: `[PENDING SEASON SELECTION]`
+- Any rule differences affecting drive outcomes (overtime format, replay/challenge rules, kickoff/onside-kick rules) for the chosen era: cross-reference Document 2's own playing-rules tables rather than duplicating them here.
+
+## 9. Cross-references added to Documents 1-6
+
+Only these pointers are added; no existing rule in Documents 1-6 is changed:
+
+- Document 1 §2 (Initialization gate), item 6, "Game granularity and career/off-field detail level," now also requires this document's §11 decisions to be resolved.
+- Document 3 §12 (Initialization gate) gains a line: "Document 7 (Game Simulation and Resolution Engine) reconciled and locked."
+- Document 6 §6 (game ledger format) is the ledger this engine's outputs are written into; no change to its schema was needed.
+
+## 10. What this document deliberately does not change
+
+The evidence-labeling system, the real-person protections, the append-only ledger discipline, the anti-stock-character rule, the authority map, and the qualitative-only coach-facing evaluation system all carry over unmodified. This document adds a resolution mechanism and a private data layer underneath the existing package; it does not relitigate any of the philosophy Documents 1-6 already settled.
+
+## 11. Outstanding decisions — batched, not sequential
+
+1. **Sign off on the hidden Engine State layer.** Recommended: yes. It is invisible to the user, structurally walled off from every coach-facing document, and is the specific thing Document 2 §1 already anticipated ("if the platform supports private state, essential hidden state remains there"). Without it there is no way to compute a game result at all.
+2. **Default granularity dial.** Recommended: Document 1 §11.2's existing "Executive head-coach mode" as the default, with the leverage gate in §4 forcing a pause regardless of mode at the listed triggers. Changeable at any time without a redesign.
+3. **Target season/era for calibration.** Still open — the football-career-sim project's own working assumption is January 2013 (Alex Stone, HC candidate, not yet hired), but this has not been explicitly confirmed as the initialization target. Nothing in this document needs that answer yet; §8's placeholders simply wait for it, the same way Document 2's calendar and cap tables already do.
