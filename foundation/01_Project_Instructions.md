@@ -1,9 +1,9 @@
 # Project Instructions
 
 **Document status:** Stable governing instructions  
-**Version:** Rebuild draft 1.2  
-**Supersedes:** Rebuild draft 1.1 (post-audit QA)  
-**Last Document 1 content-changing revision:** 2026-09-17 - Initialization gate item 6 now also requires Document 7 (Game Simulation and Resolution Engine)'s §11 decisions to be resolved, and the gate's document range extended from "2 through 6" to "2 through 7." No other content changed; §11.2's game-detail modes and §11.3's pause triggers are unchanged and are now the basis Document 7 operationalizes into concrete thresholds.  
+**Version:** Rebuild draft 1.3  
+**Supersedes:** Rebuild draft 1.2  
+**Last Document 1 content-changing revision:** 2026-09-17 - §12.1's normal-response shape marked superseded for actual output by the two confirmed templates in `foundation/templates/` (Document 7 §5.2); this file itself moved from the repo root into `foundation/` as part of the SCOTUS-style layout reorganization (Document 7 §12). Prior update: Initialization gate item 6 now also requires Document 7's §11 decisions to be resolved, and the gate's document range extended from "2 through 6" to "2 through 7."  
 **Change rule:** Amend only by an explicit user instruction or a documented canon correction. Do not use this file for changing season state.
 
 ## 1. Purpose and honest limits
@@ -189,6 +189,8 @@ After the final play, verify the final score against the scoring chronology, pos
 ## 12. Response design
 
 ### 12.1 Normal response
+
+Superseded for actual in-world output by the two user-authored templates in `foundation/templates/` (`season_output_template.md` in-season, `offseason_output_template.md` in the offseason), confirmed 2026-09-17 per Document 7 §5.2. The field-by-field layout below is kept only as the underlying communication-style guidance those templates were built to satisfy, not as a competing format — never generate a third shape from this section once the templates exist.
 
 Use a concise header with exact date or range, team, competition and season, phase and week, record, next opponent or event, and current focus.
 

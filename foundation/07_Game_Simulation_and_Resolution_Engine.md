@@ -6,11 +6,11 @@
 
 **Runtime status:** `AUTHORING MASTER - DO NOT LOAD DURING PLAY UNTIL §8 IS POPULATED`
 
-**Document version:** `0.3-authoring`
+**Document version:** `0.4-authoring`
 
 **Last verified:** `2026-09-17`
 
-**Last Document 7 content-changing update:** `2026-09-17 - created and locked the same day (design confirmed, hidden-layer sign-off given, January 2013 confirmed as era-calibration target), then extended the same day with the user's own week-to-week walkthrough: §5.1 preseason resolves as one bulk turn, not week by week; §5.2 flags the two output formats (in-season/offseason) as user-authored, not engine-invented; §5.3 states season length always follows Document 2's real rules-by-year rather than a hardcoded week count; §6 split into §6.1 Draft (unchanged) and §6.2 Free agency and other-team signings (new: real/generated market, one consolidated coach turn, autonomous competing offers, immediate cap accounting); §6.3 states the roster/cap-immediate vs. standings-weekly update cadence explicitly; §6.4 names the three existing rules that already guarantee precise, non-fudged cap numbers, tying them to the pending real-data library. No prior section's substance changed, and nothing in Documents 1-6 changed beyond the two cross-references already added.`
+**Last Document 7 content-changing update:** `2026-09-17 - created and locked the same day (design confirmed, hidden-layer sign-off given, January 2013 confirmed as era-calibration target), extended with the week-to-week walkthrough (§5.1-§5.3, §6.1-§6.4), then extended again the same day once the user supplied both output-format drafts and asked for a SCOTUS-style folder layout: §5.2 now points to the finalized foundation/templates/ files; §11 items 4-5 marked resolved; new §12 documents the foundation/state/career/archive reorganization. No prior section's substance changed.`
 
 **Supersedes:** Nothing. This is an addition to the existing package, not a replacement of any of Documents 1-6.
 
@@ -147,9 +147,9 @@ A full week costs roughly three to five user-facing exchanges when nothing unusu
 
 Per explicit user instruction, the preseason period (Document 2 §6.1's training-camp/preseason window) does not run the weekly loop above at all. It resolves as a single bulk turn: one consolidated brief covering roster-cut decisions, the preseason-game slate's results and notable performances, and camp-battle outcomes, presented once at the transition into the regular season rather than week by week. A preseason event escalates out of the bulk summary only for something that would already force a decision under Document 1's ordinary rules regardless of period — a season-ending injury to a projected starter, for instance — never merely because a preseason week occurred.
 
-### 5.2 Two output formats — user-authored, not engine-authored
+### 5.2 Two output formats — user-authored, confirmed 2026-09-17
 
-Per explicit user instruction, the actual presentation format of a response differs by whether the sim is in-season or in the offseason, and the user wants to design both formats rather than have this engine invent them. Document 1 §12.1 already defines a normal-response shape (dated header, then three parts: team/period consequences, current focus, head-coach decision) that is the closest existing analog to an in-season template, but it was written before this document existed and has not been confirmed as the final in-season format. No offseason-specific format exists yet at all. This document deliberately leaves both open: do not invent either template; ask the user for the exact shape they want, once, and record the result in Document 1 §12 rather than here.
+Resolved. The user supplied both formats as drafts and they were refined together: `foundation/templates/season_output_template.md` (every in-season turn, preseason bulk report through the last postseason game) and `foundation/templates/offseason_output_template.md` (season end through the next preseason). Document 1 §12.1's normal-response shape is superseded by these two for anything in-world; §12.1 remains accurate as a general communication-style guide but the actual field-by-field layout lives in the two template files. Do not invent a third format or silently deviate from either template's structure.
 
 ### 5.3 Regular-season length is a real, not hardcoded, fact
 
@@ -227,4 +227,16 @@ The evidence-labeling system, the real-person protections, the append-only ledge
 1. **Hidden Engine State layer.** Confirmed by the user 2026-09-17. Built as described in §1: invisible to the user, structurally walled off from every coach-facing document.
 2. **Default granularity dial.** Not separately asked; adopted as recommended — Document 1 §11.2's existing "Executive head-coach mode" as the default, with the leverage gate in §4 forcing a pause regardless of mode at the listed triggers. Changeable at any time without a redesign; revisit if the user objects.
 3. **Target season/era for calibration.** Confirmed by the user 2026-09-17: January 2013 forward (Alex Stone, HC candidate, not yet hired), matching Document 3's starting canon. §8's placeholders now wait on the real-data library build rather than on this decision.
-4. **Two output formats (in-season / offseason).** Open, per §5.2. The user wants to author both; this document does not invent them.
+4. **Two output formats (in-season / offseason).** Resolved 2026-09-17, per §5.2 — see `foundation/templates/`.
+5. **Repository folder structure.** Resolved 2026-09-17: the flat 8-file layout was reorganized to mirror the SCOTUS project's `foundation/` + `state/` + `terms/` pattern, at the user's explicit request. See §12 below.
+
+## 12. Repository layout
+
+Resolved 2026-09-17, mirroring the SCOTUS project's proven layout at the user's request:
+
+- **`foundation/`** — the stable rulebook: Documents 00, 01, 02, 03, 06, 07, and `foundation/templates/` (the two output-format templates). Never holds a dated instance record.
+- **`state/`** — the always-current, in-place-updated snapshot: Documents 04 (Roster and Staff Register) and 05 (Current Season State). Rewritten as events happen, per §6.3; never append-only.
+- **`career/`** — the actual played history, one folder per season, created only once a season is reached in play. See `career/README.md` for the exact per-season layout (preseason, regular-season weeks, postseason rounds, offseason draft/free-agency records, and that season's slice of the Document 6 ledger).
+- **`archive/`** — superseded or quarantined material kept for reference only, never active canon. See `archive/README.md`.
+
+This mirrors SCOTUS's `foundation/` (stable rulebook) + `state/` (current trackers) + `terms/OT<year>/` (per-term instance folders) + `archive/` almost exactly. No document's internal numbering or content changed because of this move — only where each file physically lives.

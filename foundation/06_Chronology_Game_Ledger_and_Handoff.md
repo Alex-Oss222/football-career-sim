@@ -11,6 +11,8 @@ This document is the durable historical record of the simulation. It preserves w
 
 The protocol sections are stable. Dated records and archives are append-only. Document 5, Current Season State, remains the compact mutable snapshot reread before every response; this document supplies the evidence behind that snapshot.
 
+**Where the actual entries live.** This document (in `foundation/`) defines the ledger's rules and record formats; it is never itself the place where a multi-year career's dated entries pile up. Once a career is initialized, the actual append-only entries for a given season live in `career/<year>/ledger.md`, one file per season, exactly mirroring how every rule in this document still applies. `career/README.md` describes that layout. Nothing about the rules below changes based on where the file physically lives.
+
 Do not use turn numbers as dates. Do not use ratings, morale meters, trust scores, or opaque event codes. Use exact dates, plain-language labels, named people or groups, and stated uncertainty.
 
 ## 1. Canonical record rules
