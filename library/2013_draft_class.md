@@ -402,7 +402,14 @@ All sources below were published or represented information available before the
 
 ### League-personnel survey cross-checks
 
-The Milwaukee Journal Sentinel's Bob McGinn published a position-by-position series in the final week using interviews with NFL scouts, personnel directors and executives. Some original legacy archive URLs are unstable. Where the original archive is unavailable, the following contemporaneous NFL.com reports preserve and identify the McGinn survey being referenced:
+The Milwaukee Journal Sentinel's Bob McGinn published a position-by-position series in the final week using interviews with NFL scouts, personnel directors and executives. Direct archived copies are used where available; where an original archive is unavailable, the contemporaneous NFL.com cross-checks below preserve and identify the survey being referenced.
+
+- **MCGINN-OL — Bob McGinn, "Rating the NFL draft prospects: Offensive linemen," Milwaukee Journal Sentinel, April 19, 2013.**  
+  https://archive.jsonline.com/sports/draft19g-rt9i5uh-203726121.html
+- **MCGINN-DL — Bob McGinn, "Rating the NFL draft prospects: Defensive linemen," Milwaukee Journal Sentinel, April 21, 2013.**  
+  https://archive.jsonline.com/sports/top-defensive-linemen-in-nfl-draft-rt9i5la-204028711.html
+
+For other position groups where a stable original archive was not located, use the following contemporaneous NFL.com reports as cross-checks:
 
 - **MCGINN-QB cross-check — "Report: NFL evaluator describes draft QBs as 'crappy'," NFL.com, April 20, 2013.** Preserves the survey totals showing strong but not unanimous support for Geno Smith and the league's unusually negative overall view of the quarterback class.
 - **MCGINN-WR cross-check — "Cordarrelle Patterson reportedly seen as a 'project'," NFL.com, April 18, 2013.** Preserves personnel-source concern about Patterson's route/system development.
