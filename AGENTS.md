@@ -101,6 +101,33 @@ This is the bounded pre-hire phase that may run before full career initializatio
 
 ---
 
-## Task: "Run the [year] offseason cycle." (not yet enabled — placeholder)
+## Task: "Run Jacksonville's staff-building phase."
 
-This task is not fully specified yet. Do not attempt it until this repo's owner has added a dated brief (draft-board priorities in order, free-agency budget and targets, own-free-agent re-signing priorities) — check `career/[year]/offseason/` for a file named `team_building_brief.md` or similar before proceeding. If it doesn't exist, stop and report that back rather than improvising a philosophy on the user's behalf; team-building priorities are the one thing in this project only the user gets to set (Document 1 §3).
+**Prerequisite.** `career/[year]/offseason/hiring_search.md` must show `HIRED`, and `career/[year]/offseason/staff_building/staff_plan.md` must exist with the user's own candidate targets. If either is missing, stop and report rather than inventing candidates or a philosophy — staff-hiring priorities and the roster/team-building plan are the user's to set (Document 1 §3), not yours.
+
+**Read, in this order:**
+1. `career/[year]/offseason/staff_building/staff_plan.md` — Stone's actual candidate targets, in priority order, with each candidate's real contemporaneous availability window.
+2. `career/[year]/offseason/the_prowl_program_identity.md` and `the_prowl_player_readiness_standard.md` — Stone's actual established coaching identity (Document 3 §2.1). This governs how he'd frame the job to a candidate and what he'd actually want from a hire; it is not a script to recite verbatim.
+3. `career/[year]/offseason/roster_evaluation.md` and `career/[year]/offseason/free_agency/player_board.md` — Stone's own roster evaluation and free-agency priorities, which this task also brings to Caldwell for an initial alignment conversation (see below).
+4. Document 3 §5 (Authority Map): row 2 gives Stone final hiring authority over his own staff; rows 3, 5, 6, and 7 keep acquisition, contract, cap, and roster-cut authority with Caldwell.
+
+**Staff hiring — resolve genuine acceptance, not automatic yes.**
+1. For each open position, contact candidates in the stated priority order. A candidate's real, dated availability window in `staff_plan.md` is a hard constraint: if the in-world date this task runs on is past when a candidate's window closed (he already accepted a real job elsewhere, per the real dates already recorded there), that candidate is gone — move to the next call. Do not extend a window past what's already documented.
+2. Whether an available candidate actually accepts is a genuine, resolvable question — weigh the real fit (role, authority, scheme, staff-funding trade Stone is offering) the same way any other autonomous person in this project is evaluated, never simply defaulting to yes because he's Stone's first choice.
+3. A rejection or a candidate taking another job first is a normal, expected outcome for some fraction of these calls — do not manufacture uniform success across every position.
+4. Record every actual hire — name, role, effective date — in `staff_building/hires.md`. Record a real decline or lost-to-competition outcome there too, briefly, so the ledger reflects what actually happened rather than only the successes.
+
+**GM alignment conversation — Caldwell reacts, he doesn't rubber-stamp.**
+1. Present Stone's roster evaluation (`roster_evaluation.md`) and free-agency priorities (`free_agency/player_board.md`) to Caldwell as one consolidated conversation, per Document 3 §10.2's compressed-turn discipline.
+2. Caldwell's reaction is resolved from his own retained authority and the club's actual situation (library/2013_coaching_market_pre_hire.md §3), not assumed to agree with Stone on every point. A genuine, football-grounded pushback (a release Caldwell wants to revisit, a free-agent price he thinks is too rich, a roster call he weighs differently) is a normal and expected outcome, not something to avoid.
+3. Record this exchange as a dated, appended entry in `roster_evaluation.md` — do not silently rewrite Stone's own original evaluation to match Caldwell's response.
+
+**Do not** resolve any actual free-agency signing or draft selection in this task — free agency does not open until March 12 and the draft runs April 25-27 (`library/2013_league_calendar_and_financial_rules.md`); this phase is staff hiring and initial GM alignment on the broader plan only, not executing it early.
+
+**Do not** invent Stone's coaching philosophy or personal positions beyond what's already established in The Prowl documents, the interview positions, and the accepted contract — if a candidate conversation would require a stance nothing on record covers, stop and report what's missing rather than inventing it.
+
+---
+
+## Task: "Run the [year] offseason cycle." (free agency, draft, and trades — not yet enabled)
+
+Gated on the real calendar, not just a brief. Do not attempt free agency before March 12 or the draft before April 25 for the 2013 cycle (`library/2013_league_calendar_and_financial_rules.md`; check the equivalent library file for other years). When that window is actually reached, this task resolves `career/[year]/offseason/free_agency/player_board.md`, `career/[year]/offseason/draft/player_draft_board.md`, and `career/[year]/trades/trade_targets.md` the same way the staff-building task above resolves staff hiring: real market pressure, genuine possible rejection or lost competition, Caldwell's retained authority over the actual signing/pick/trade decision, and a written result (never a locked-in outcome assumed from what actually happened in real history). If any of those three files doesn't exist yet for the year in question, stop and report rather than improvising the user's priorities.
