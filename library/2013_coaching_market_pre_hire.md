@@ -91,7 +91,7 @@ A Philadelphia team article published shortly after midnight on January 14 is us
 By the event cutoff:
 - Chip Kelly had publicly decided to remain at Oregon after interviewing with Philadelphia and Cleveland. His later real-world reversal is quarantined and does not exist in runtime. [CAND-CHIP-KELLY]
 - Brian Kelly had publicly announced on January 12 that he would remain at Notre Dame after speaking with Philadelphia. [CAND-BRIAN-KELLY]
-- Bill O'Brien had publicly recommitted to Penn State earlier in the search after NFL interest. Treat him as unavailable unless a new simulation event changes that fact before the cutoff, which none has. [CAND-OBRIEN]
+- Bill O'Brien had publicly recommitted to Penn State on January 3 after NFL interest. Treat him as unavailable unless a new simulation event changes that fact before the cutoff, which none has. [CAND-OBRIEN-STAY]
 
 ## 3. Jacksonville Jaguars
 
@@ -359,7 +359,7 @@ These criteria are usable directly. They do not establish one required offensive
 
 **Additional known activity:**
 - permission had been granted to speak with Bruce Arians and Gus Bradley;
-- Lovie Smith was scheduled and subsequently publicly reported/confirmed as meeting with Philadelphia during the week;
+- Lovie Smith was scheduled and subsequently publicly confirmed as meeting with Philadelphia during the week; [PHI-LOVIE] [PHI-LOVIE-COMPLETE]
 - Brian Kelly spoke with Philadelphia, then announced January 12 that he would stay at Notre Dame;
 - Brian Billick was reported on January 13 to have interviewed earlier in the week;
 - Gus Bradley was reported on January 13 to have interviewed on Saturday, though Philadelphia had not formally confirmed that meeting;
@@ -782,6 +782,8 @@ These are the sources permitted to support the runtime reconstruction. A source 
   https://www.philadelphiaeagles.com/news/eagles-wrap-up-weekend-interviews-9295939
 - **PHI-LOVIE:** Eagles, "Eagles To Interview Lovie Smith," Jan. 8, 2013.  
   https://www.philadelphiaeagles.com/news/eagles-to-interview-lovie-smith-9310014
+- **PHI-LOVIE-COMPLETE:** Eagles, Jan. 10 article confirming the club met with Smith that Thursday.  
+  https://www.philadelphiaeagles.com/news/tony-dungy-lovie-a-fit-in-philly-9324544
 - **PHI-BILLICK:** Eagles, "Report: Eagles Interviewed Billick," Jan. 13, 2013. The Bradley interview is explicitly reported, not treated as team-confirmed.  
   https://www.philadelphiaeagles.com/news/report-eagles-interviewed-billick-9352945
 - **PHI-PLAYOFF-PROCEDURE:** Eagles, "How This Weekend Affected The Search," published Jan. 14, 2013 at 1:34 AM. Permitted only to verify playoff results/availability and interview procedure already fixed by the close of Jan. 13. Do not import later Jan. 14 search actions.  
@@ -800,8 +802,10 @@ These are the sources permitted to support the runtime reconstruction. A source 
   https://www.nfl.com/news/jay-gruden-san-diego-chargers-to-meet-sunday-0ap1000000125661
 
 ### Candidate-market / closed-job sources
-- **CAND-MCCOY / CAND-HORTON / CAND-OBRIEN:** NFL.com, "Chip Kelly, Perry Fewell among top NFL head coach candidates," 2012 candidate overview.  
+- **CAND-MCCOY / CAND-HORTON:** NFL.com, "Chip Kelly, Perry Fewell among top NFL head coach candidates," 2012 candidate overview.  
   https://www.nfl.com/news/chip-kelly-perry-fewell-among-top-nfl-head-coach-candidates-0ap1000000084807
+- **CAND-OBRIEN-STAY:** NFL.com, "Bill O'Brien will stay at Penn State after NFL flirtation," Jan. 3, 2013.  
+  https://www.nfl.com/news/bill-o-brien-will-stay-at-penn-state-after-nfl-flirtation-0ap1000000121829
 - **CAND-CHIP-KELLY:** NFL.com, "Chip Kelly will stay at Oregon, not make jump to NFL," Jan. 6, 2013.  
   https://www.nfl.com/news/chip-kelly-will-stay-at-oregon-not-make-jump-to-nfl-0ap1000000123320
 - **CAND-BRIAN-KELLY:** Notre Dame, "Brian Kelly To Continue As University Of Notre Dame Football Coach," Jan. 12, 2013.  
