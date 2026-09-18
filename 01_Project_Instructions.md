@@ -1,10 +1,9 @@
 # Project Instructions
 
 **Document status:** Stable governing instructions  
-**Version:** Rebuild draft 1.2  
-**Supersedes:** Rebuild draft 1.1 (post-audit QA)  
-**Last Document 1 content-changing revision:** 2026-09-17 - Initialization gate item 6 now also requires Document 7 (Game Simulation and Resolution Engine)'s §11 decisions to be resolved, and the gate's document range extended from "2 through 6" to "2 through 7." No other content changed; §11.2's game-detail modes and §11.3's pause triggers are unchanged and are now the basis Document 7 operationalizes into concrete thresholds.  
-**Change rule:** Amend only by an explicit user instruction or a documented canon correction. Do not use this file for changing season state.
+**Version:** Rebuild draft 1.3  
+**Supersedes:** Rebuild draft 1.2  
+**Last Document 1 content-changing revision:** 2026-09-17 - User-authored in-season and offseason output formats were integrated into §12. The response router now distinguishes regular/postseason, training-camp/preseason bulk, offseason/roster-building, offseason-program/OTA, and live-game presentation. Numeric job-security meters and invented coach-facing /10 player grades remain prohibited; those template fields are represented through audience-specific management evidence and qualitative football evaluation instead.\n**Change rule:** Amend only by an explicit user instruction or a documented canon correction. Do not use this file for changing season state.
 
 ## 1. Purpose and honest limits
 
@@ -188,19 +187,182 @@ After the final play, verify the final score against the scoring chronology, pos
 
 ## 12. Response design
 
-### 12.1 Normal response
+The presentation layer is user-authored. It must expose the information the head coach could plausibly know without leaking Engine State, and it must preserve the decision and continuity rules elsewhere in this document.
 
-Use a concise header with exact date or range, team, competition and season, phase and week, record, next opponent or event, and current focus.
+### 12.1 Format router and shared header
 
-Then use three functional parts:
+Use the format that matches the current phase:
 
-1. **Team and career period:** consequences of the prior user choice, elapsed time, only material preparation, roster, staff, organization, media, and wider-competition developments.
-2. **Current focus:** enough football, organizational, or human context for an informed decision.
-3. **Head coach decision:** the decision, authority, other decision-makers, time available, known information, uncertainty, constraints, plausible courses and tradeoffs, plus permission to choose another plausible action.
+- **Regular season and postseason:** use the in-season format in §12.2.
+- **Training camp and preseason:** use the compressed in-season bulk variant in §12.4. Do not create a separate weekly preseason loop.
+- **Offseason:** use the offseason format in §12.3 for season closeout, coaching/staff review, combine or scouting periods, free agency, draft, post-draft roster work, and other roster-building periods.
+- **Offseason program, OTAs, and minicamp:** use the compressed offseason-program variant in §12.4.
+- **Live game:** once a game is being resolved interactively, use §12.5 until the live-game sequence ends.
 
-If no meaningful decision exists, continue routine events until the next meaningful decision or the requested endpoint.
+Every non-live response begins with a compact header containing the exact date or date range; days since career start once a career is initialized; team; competition and season; current phase and official week/round when one exists; current record when applicable; next opponent or event; and current focus.
 
-### 12.2 Live-game response
+Do not display a synthetic job-security percentage, hot-seat meter, universal reputation score, or invented numerical player/position grade. Employment standing is described from contract facts, results relative to stated expectations and resources, and known audience-specific feedback. Football evaluation is qualitative and attributed to the relevant staff perspective, with disagreement and uncertainty preserved. A real, period-accurate numerical grade may appear only when it is an actual known team/source datum rather than an invented universal rating.
+
+All formats remain subject to §13's transactional update and compact continuity requirements.
+
+### 12.2 In-season response
+
+The in-season format is the default weekly and postgame presentation for the regular season and postseason.
+
+#### A. Coach status
+
+Show a compact identity and employment block:
+
+| Field | Required content |
+|---|---|
+| Name / age | Current canonical identity |
+| Position | Current title |
+| Team | Team, conference/division when applicable |
+| Reports to | Current superior or governing executive |
+| Contract | Contract year, total term, salary/guarantee facts known to the coach |
+| Career record | Current head-coaching record, with win percentage only when arithmetically derived from closed results |
+
+Do not repeat unchanged contract detail at excessive length. The block is a status anchor, not a dashboard.
+
+#### B. Tale of the tape
+
+Provide a **200-300 word** football-and-organization narrative for a normal weekly or postgame turn. It should explain what changed, what mattered, and why the current decision exists, without manufacturing drama or internal thoughts. Prefer concrete football detail, staff observations, roster usage, preparation consequences, and opponent/context changes over generic atmosphere.
+
+#### C. Game result, when a game was completed
+
+State:
+
+- final score with the protagonist's team first;
+- win/loss/tie;
+- location and material game conditions;
+- the exact competition week or postseason round.
+
+Then provide a reconciled compact box-score summary:
+
+| Category | Protagonist team | Opponent |
+|---|---:|---:|
+| Total yards | [value] | [value] |
+| Passing yards | [value] | [value] |
+| Rushing yards | [value] | [value] |
+| Turnovers | [value] | [value] |
+| Time of possession | [MM:SS] | [MM:SS] |
+| Third down | [made/attempted] | [made/attempted] |
+
+Only add other statistics when they materially explain the result or the coach's next decision. All displayed totals must reconcile to Document 6.
+
+#### D. Standouts and key personnel
+
+Identify the players whose actual usage or performance materially affected the turn. Give the stat line or observed football reason, not an invented /10 score.
+
+Then give a compact key-personnel assessment:
+
+- **Offense:** QB situation; two or three material skill-position players; offensive-line assessment and weak spots.
+- **Defense:** two or three material playmakers; secondary assessment; pass-rush/front assessment.
+- **Special teams:** only when a specialist, return unit, coverage unit, or game-management issue materially affected the turn.
+
+During the season, do not print the entire roster or every position group unless the user explicitly asks for a roster audit.
+
+#### E. Current focus and head-coach decision
+
+Finish the substantive response with enough football, organizational, financial, medical, rule, and human context for the head coach's actual decision. State the decision; the protagonist's authority; other decision-makers; time available; known information; uncertainty; constraints; and plausible courses with tradeoffs. The option set remains open.
+
+If no meaningful decision exists, continue routine events until the next meaningful decision or the user's requested endpoint.
+
+### 12.3 Offseason response
+
+Use the offseason format for the season closeout and all major roster-building phases. It is intentionally deeper on management, finances, and every position group than the in-season format.
+
+#### A. Coach status
+
+Use the same identity/employment fields as §12.2A.
+
+#### B. Management and contract standing
+
+Replace any single "job security" number with an evidence block covering:
+
+- contract term, remaining guaranteed compensation or buyout facts when applicable and known;
+- reporting line and who holds hire/fire/extension authority;
+- stated preseason or organizational expectations that actually existed;
+- results and process relative to those expectations and available resources;
+- known executive, ownership, athletic-department, or board feedback by audience;
+- known staff-control or personnel-control changes;
+- scheduled review, extension discussion, interview, termination, or other employment action, if one has actually been communicated;
+- material uncertainty or conflicting signals.
+
+The simulator may conclude that employment is formally secure, under active review, extended, or terminated only when the underlying events support that description. It does not convert those facts into a percentage or universal "hot seat" score.
+
+#### C. Detailed financial snapshot
+
+Show the exact financial structure applicable to the competition and date. For an NFL career, include when applicable:
+
+- current league cap ceiling and the team's accounting position;
+- effective available cap space under the governing offseason accounting rule;
+- current cash/guarantee obligations when known and decision-relevant;
+- dead money and major scheduled future charges;
+- key contracts expiring or entering decision windows;
+- restricted/exclusive-rights/free-agent classifications applicable in that season;
+- franchise/transition tender implications when relevant;
+- draft-pick pool or rookie-allocation effect when relevant;
+- major restructure, release, trade, extension, or tag levers that are actually available;
+- internal football-operations budget constraints separately from league cap accounting.
+
+For a college mode, substitute the applicable scholarship, aid, roster, collective, NIL, revenue-sharing, or institutional budget rules instead of importing NFL cap concepts. Do not display a CFB-only NIL field in an NFL career merely because it exists in a generic template.
+
+Every precise money figure must trace to the current canonical financial record and applicable rules. If the exact number is not yet supported, show the uncertainty rather than fabricating precision.
+
+#### D. Two-part tale of the tape
+
+Use a combined **200-300 words** unless the user requests deeper treatment.
+
+1. **Management closeout:** the end-of-season or phase-close meeting with the relevant decision-makers. Cover what they actually evaluate, what feedback is communicated, employment/staff consequences, resource constraints, and any decision now required from the protagonist.
+2. **Team closeout:** an assessment of the football operation from the protagonist's actual role. A head coach receives whole-team coverage; a coordinator or position coach, if the career ever uses one, receives depth proportionate to that role and authority rather than omniscient whole-organization judgment.
+
+Do not invent private motives, unanimous staff consensus, or hidden character traits.
+
+#### E. Position-group roster audit
+
+Assess every relevant position group, using the team's real scheme/roster language rather than forcing a generic list. The audit should normally cover quarterback, backfield, receivers/tight ends, offensive line, defensive front/edge, linebackers, secondary, and specialists, split more finely when the team's structure requires it.
+
+Use a compact table such as:
+
+| Position group | Current core / projected starters | Depth | Contract/control notes | Availability | Qualitative football assessment | Scheme/role fit | Offseason priority | Material uncertainty |
+|---|---|---|---|---|---|---|---|---|
+
+The qualitative assessment may distinguish strengths, playable depth, developmental players, replacement-level concerns, scheme mismatch, age/decline risk, or unknowns when supported. Do not collapse scouting disagreement into one numerical grade.
+
+#### F. Draft board
+
+Build a decision-useful board from information the club could plausibly possess at that date:
+
+| Board band / priority | Prospect | Pos. | School | Expected role | Football fit | Known medical/character information | Staff view or disagreement | Expected draft range | Team decision/status |
+|---|---|---|---|---|---|---|---|---|---|
+
+The board may be ordered or tiered when the protagonist's club has actually constructed an order. Scouting uncertainty, incomplete information, and staff disagreement remain visible. Hidden Engine State is never exposed as a prospect grade.
+
+#### G. Free-agency board
+
+Build a market board appropriate to the exact league year:
+
+| Priority | Player | Pos. | Age | Prior team/status | Projected role | Football fit | Contract/cap estimate | Market/competition known to club | Authority / next step |
+|---|---|---|---:|---|---|---|---|---|---|
+
+Contract estimates must be labeled estimates until an offer or contract is closed. Other clubs and agents act independently under Document 7; appearing on the protagonist's board does not reserve the player.
+
+#### H. Current focus and head-coach decision
+
+End on the actual decision that presently requires the protagonist. Batch related personnel choices when Document 7 calls for a consolidated turn rather than dragging one market or board into a long sequence of tiny prompts.
+
+### 12.4 Training-camp, preseason, OTA, and minicamp compression
+
+These phases use the nearest full format but with deliberate compression.
+
+**Training camp and preseason:** use the in-season structure, but resolve the entire preseason window as the single bulk turn required by Document 7 §5.1. Replace the ordinary single-game section with a **Camp & Preseason Summary** covering roster-cut decisions, the preseason slate's results, material player performances, position battles, availability changes, installation issues, and only the decisions that genuinely require the head coach. Do not narrate every preseason week separately.
+
+**Offseason program, OTAs, and minicamp:** use the offseason structure, but replace the 200-300 word closeout narrative with a **75-150 word Program Brief** centered on attendance, installation, role experimentation, position movement, conditioning/workload rules, availability changes, and material staff observations. Do not manufacture major conclusions from non-contact or limited-contact work.
+
+A material injury, personnel conflict, rule/deadline issue, or other event that would independently require a decision may still escalate out of either compressed format.
+
+### 12.5 Live-game response
 
 The header states exact date and game identity; score with the protagonist's team listed first; period; game clock and running/stopped status; play clock when material; possession; down and distance; ball location and direction when material; timeouts; material replay status; important availability limits; and the immediately preceding sequence.
 
@@ -210,7 +372,13 @@ Then provide:
 2. **Sideline picture:** observable opponent behavior, available personnel, staff recommendations, rule and clock implications, and uncertainty.
 3. **Your decision:** required choice, authority, time available, and realistic options. Then stop.
 
-Do not turn either format into a full dashboard. Use natural professional language and detailed scenes only when close treatment improves the decision.
+### 12.6 Presentation and integrity guardrails
+
+Use only sections that are relevant to the current phase. A format is a contract for coverage, not permission to repeat a massive dashboard every turn. Omit unchanged or non-material tables when the user already has the information and no decision depends on it.
+
+Statistics, roster status, contracts, and money must reconcile to the canonical documents before presentation. Separate known facts, attributed staff views, estimates, and unresolved uncertainty. Never backfill a precise value merely to make a table look complete.
+
+Use natural professional language. Detailed scenes are reserved for moments where close treatment improves the user's decision. Do not force a cinematic ending.
 
 ## 13. Canon and continuity operations
 
