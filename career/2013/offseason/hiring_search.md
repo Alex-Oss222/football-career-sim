@@ -315,3 +315,88 @@ What does Stone answer when each club asks when he personally first learned of t
 | Entry | Date/sequence | Type | Status |
 |---|---|---|---|
 | 4 | After interview positions received | Market update | Four interviews opened; all stopped at the unresolved bounty-knowledge timeline; no offer generated |
+
+## Entry 5 — Due diligence completed; clubs resolve the interview stage
+
+**Recorded:** After receipt of `career/2013/offseason/hiring_search_brief/06_bountygate_answer.md`
+**Turn type:** Market update
+**Resolution state:** COMPLETED; ONE OFFER DEVELOPMENT FOLLOWS IN ENTRY 6
+**Current controlling status:** ACTIVE — JACKSONVILLE OFFER PENDING STONE'S DECISION
+
+### Bounty-answer reduction and delivery
+
+Stone gives the same factual answer to all four clubs. Its concrete substance is:
+
+- He knew in early 2010 that the league was asking about alleged improper incentives on the defensive side of the Saints. He did not independently investigate because, as offensive coordinator, he treated the matter as being handled by the head coach, general manager, defensive staff, and league.
+- Before the league findings became known, he did not know that the program described by the league existed, that players were being paid for knockouts or cart-offs, or that particular opponents carried bounties.
+- He did not participate in or administer a pool and did not contribute money.
+- He understood from the league's March 2012 findings that a prohibited pay-for-performance program had existed and included injury-related payments.
+- He does not assign another person's responsibility. He acknowledges that he did not do more in 2010 and distinguishes his then-limited offensive-coordinator remit from the building-wide responsibility he would hold as a head coach.
+- His proposed head-coach response to a comparable allegation is to stop the conduct, establish the facts, involve the general manager and ownership as appropriate, and deal honestly with the league. He does not promise that no subordinate will ever offend; he promises that player or staff importance will not protect one after the matter reaches him.
+
+These statements establish Stone's private knowledge and conduct for this search. They do not establish unmentioned acts, corroborating evidence, or another person's account. The clubs assess the admission that Stone knew of an inquiry but did not investigate alongside the denials of specific advance knowledge and participation; the answer's length and phrasing receive no weight.
+
+### Jacksonville reaction
+
+Caldwell treats the answer as candid but not exculpatory proof of ideal judgment. Stone's failure to look beyond the offensive side after learning of a league inquiry is a leadership concern for a candidate seeking responsibility for a full rebuild. Against that, Stone identifies the limitation rather than inventing intervention after the fact, states a concrete head-coach escalation process, denies participation and specific advance knowledge, and was not disciplined in the matter. Jacksonville therefore closes the due-diligence question without treating it as a disqualifier.
+
+The completed interview gives Caldwell a coherent whole-program structure, a credible if contingent staff board, relevant quarterback and offensive experience, and an explicit account of how Stone would divide work with a general manager. The principal unresolved fit issue is not the bounty answer but Stone's requested ability to block a leading quarterback decision. Caldwell is prepared to make an offer only with final personnel authority remaining in the general manager's office after a required coaching consultation. That organization-side position produces the offer recorded in Entry 6.
+
+### Arizona reaction
+
+Bidwill and Keim regard the 2010 non-investigation as a real limitation in Stone's demonstrated cross-building oversight. They also credit the factual distinction between awareness of an allegation and knowledge of the later-described program, the absence of claimed participation, and the specific escalation rule Stone says he would apply as head coach. The answer keeps Stone eligible rather than resolving coach–GM fit in his favor.
+
+Arizona advances Stone for final comparative consideration. The club remains interested in his quarterback/protection plan and his willingness to approach Horton rather than promise defensive continuity, but Keim has not accepted a head-coach veto over quarterback personnel or converted the offensive-line priority into an enforceable commitment. Arizona makes no offer or counter in this turn and remains in play.
+
+### Philadelphia reaction
+
+Lurie, Roseman, and Smolenski press the difference between Stone's senior title and his decision not to investigate. They treat that choice as adverse evidence relevant to leadership and building-wide attention, while treating his direct acknowledgment and proposed reporting process as more useful than an evasive or falsely expansive account would have been. His denials of participation and specific advance knowledge are recorded as Stone's answers, not independently proven facts.
+
+Philadelphia keeps Stone in its active comparison. His adaptable quarterback plan, operational delegation, and multi-horizon program answer remain responsive to the frozen criteria, but the club continues its broader process and reference work rather than making an offer. No staffing, personnel, play-calling, or contract term has been conceded.
+
+### Chicago reaction
+
+Emery treats the failure to investigate in 2010 as relevant to his published requirements for building-wide administration, operational detail, and consistency under adversity. Stone's refusal to rewrite his conduct, coupled with a specific head-coach escalation process and no claimed participation, is sufficient for the candidacy to continue but does not erase the concern.
+
+Chicago advances Stone from the initial interview to the small ownership-stage group. The next meeting may test the same oversight issue with McCaskey and Phillips and will continue to examine staff feasibility and the division between play-calling and whole-team management. Advancement is not an offer, and Chicago has not accepted Stone's Cutler, staffing, authority, or contract positions.
+
+### Batched market state
+
+- **Jacksonville:** interview and due diligence complete; offer issued in Entry 6.
+- **Arizona:** active in final comparative consideration; no offer.
+- **Philadelphia:** active while the broader process and reference work continue; no offer.
+- **Chicago:** advanced to the ownership-stage group; no offer.
+- **San Diego:** outside Stone's pursued search, unchanged.
+
+Routine reference work and administrative scheduling may continue under the existing authorization. No club's actual later-2013 hire, staff, roster decision, or career result was used to resolve these reactions.
+
+## Entry 6 — Jacksonville offer
+
+**Turn type:** Offer
+**Team:** Jacksonville Jaguars
+**Offer status:** PENDING — USER DECISION REQUIRED
+
+### The offer
+
+Jacksonville offers Stone its head-coaching position on these material terms:
+
+- a four-year contract, fully guaranteed for all four years;
+- Stone selects the coaching staff, calls the offensive plays, controls the depth chart and game-day decisions, and receives a funded assistant-coach budget consistent with the strong staff he proposed, including the contemplated trade of head-coach compensation for assistant resources;
+- Caldwell retains final authority over contracts, the salary cap, scouting administration, acquisitions, and draft selections;
+- before any leading quarterback acquisition, disposition, or draft commitment, Caldwell must obtain and consider Stone's written football projection and meet with him to resolve disagreement, but Stone does **not** receive the requested unilateral ability to block the final personnel decision;
+- neither Blaine Gabbert nor a quarterback at the second selection is mandated in advance; both remain subject to the club's post-hire evaluation process;
+- the agreed first-season standard is installation of a functional program, credible player development, dependable preparation and communication, and a resolved evidence-based direction at quarterback—not an immediate playoff requirement; and
+- Stone may continue the other live interview processes before answering, but Jacksonville requires a decision before it will close its search.
+
+The offer satisfies the requested guaranteed term, play-calling, staffing, staff-funding, depth-chart, quarterback-evaluation, and first-season-expectation conditions. It does not satisfy Stone's proposed substantive veto over a leading quarterback decision: Caldwell offers mandatory consultation and a documented coaching voice, while retaining the final call. The brief contains no authority to accept that difference, counter on it, reject the offer, or choose Jacksonville over the three still-active processes.
+
+### Your call
+
+Does Stone accept Jacksonville's offer, decline it, or negotiate—and, if he negotiates, what exact change does he request?
+
+## Turn log — appended continuation
+
+| Entry | Date/sequence | Type | Status |
+|---|---|---|---|
+| 5 | After bounty answer received | Market update | Due diligence completed; Jacksonville moved to an offer, Arizona and Philadelphia remained active, and Chicago advanced to its ownership stage |
+| 6 | First offer after completed interviews | Offer | Jacksonville offer pending; Stone decision required because no automatic disposition exists and the proposed quarterback authority differs from his request |
