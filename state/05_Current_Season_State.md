@@ -3,12 +3,12 @@
 **Document status:** Mutable canonical snapshot; replace rather than append  
 **Version:** Pre-hire snapshot 1.1  
 **Supersedes:** Uninitialized snapshot 1.0  
-**Readiness:** NOT READY FOR ACTIVE CAREER  
+**Readiness:** NOT READY FOR ACTIVE CAREER — HIRED / INITIALIZATION BUILD IN PROGRESS  
 **Must be read:** In full before every simulation response  
-**Simulation status:** PRE-HIRE SEARCH — CAREER NOT INITIALIZED  
-**Snapshot effective:** `2013-01-14; time not material`  
-**Last reconciled against Documents 1, 3, 6, and 7:** `2026-09-18 pre-hire lifecycle cleanup`  
-**Global package checkpoint:** `[NONE — must equal Document 6's latest closed register row]`  
+**Simulation status:** HIRED / INITIALIZATION BUILD — team, contract, and staff are resolved; career is not yet READY because the 2013 cap reconciliation in `career/2013/offseason/initial_cap_sheet.md` remains genuinely unresolved (real per-player annual cap-charge data was not available in the sources used to build that sheet — this is a sourcing gap, not a paperwork gap). No game, transaction requiring cap-legality, or ACTIVE CAREER event may proceed until that gap closes.  
+**Snapshot effective:** `2013-01-15; time not material`  
+**Last reconciled against Documents 1, 3, 6, and 7:** `2026-09-18 hire closed, staff hired, free-agency attempt blocked on cap data`  
+**Global package checkpoint:** `PRE-HIRE SEARCH CLOSURE, career/2013/ledger.md, 2026-09-18`  
 **Preceding global package checkpoint:** `[NONE]`
 
 > This document answers one question: what must be true at the instant the next response begins? It is not a narrative, archive, sourcebook, or hidden-rating sheet. Replace resolved and obsolete material; preserve history in Document 6.
@@ -20,28 +20,28 @@ These are the exact content versions reconciled at the global package checkpoint
 | Canonical document | Effective version/content date | Last content-changing update | Validation note |
 |---|---|---|---|
 | Document 1 | `Rebuild draft 1.5` | `2026-09-18` | Pre-hire lifecycle and decision ledger reconciled |
-| Document 2 | `0.5-authoring; active-only edition not yet possible because team is unset` | `2026-09-17` | Authoring/pre-hire reference only; not game runtime |
-| Document 3 | `Rebuild draft 2.0` | `2026-09-18` | Search scope and lifecycle reconciled |
-| Document 4 | `[UNINITIALIZED TEMPLATE]` | `[UNSET]` | Correctly blocked until a team is hired |
+| Document 2 | `0.6-authoring; team/season known (Jacksonville Jaguars, 2013) but formal active-only edition/mode-lock procedure not yet run` | `2026-09-18` | Team and season are real facts now; §1.1's mode-lock/branch-pruning ceremony remains a separate, not-yet-done administrative step |
+| Document 3 | `Rebuild draft 2.3` | `2026-09-18` | Contract, Authority Map, and coaching identity (The Prowl) reconciled |
+| Document 4 | `Populated with real sourced roster; INITIALIZATION BLOCKED — 2013 per-player annual cap charges unavailable in the sources used, so cap-legality cannot yet be verified` | `2026-09-18` | See `career/2013/offseason/initial_cap_sheet.md`'s financial decision gate |
 
 ## 1. Master clock and competition position
 
 | Field | Current canonical value | Status/source |
 |---|---|---|
-| Exact master date | `2013-01-14` | Pre-hire reference date |
-| Local time/time zone | `not material yet` | No team/local venue selected |
-| League or academic year | `NFL, 2013 hiring cycle` | Pre-hire scope |
-| Season | `2013 destination pending` | Team not yet selected |
-| Season phase | `PRE-HIRE SEARCH` | Limited pre-initialization phase |
-| Competition week/round | `N/A` | Hiring market, not game competition |
-| Team | `None — head-coaching candidate` | Team is an output of the search |
-| Team record | `N/A` | Stone has no current team; 2012 interim record is historical background |
-| Division/conference standing | `N/A` | No current team |
-| Postseason position/tiebreak relevance | `N/A` | 2012 season has ended for Stone |
-| Last completed event | `2013-01-13 — New Orleans Divisional Round loss; Stone's 2012 season ends` | Established pre-hire baseline |
-| Next scheduled event | `2013-01-14 — criteria freeze and hiring-search opportunity turn, once user brief is ready` | Pre-hire ledger |
+| Exact master date | `2013-01-15 (staff hiring closed); free-agency clock has not advanced to March 12 pending the cap-data gap below` | Hire and staff building are closed |
+| Local time/time zone | `America/New_York (Jacksonville, FL)` | Team now selected |
+| League or academic year | `NFL, 2013 league year (2012 league year until March 12, 2013)` | Per Document 2 §11 |
+| Season | `2013 NFL season` | Team hired January 15, 2013 |
+| Season phase | `HIRED / INITIALIZATION BUILD` | Not yet READY; not yet ACTIVE CAREER |
+| Competition week/round | `N/A — offseason` | No games scheduled yet |
+| Team | `Jacksonville Jaguars` | `hiring_search.md` Entry 7; Document 3 §1.4 |
+| Team record | `N/A — 2013 season not begun` | Inherited 2012 record (2-14) is historical background only |
+| Division/conference standing | `N/A — offseason` | No current-season standings exist yet |
+| Postseason position/tiebreak relevance | `N/A` | Offseason |
+| Last completed event | `Late January 2013 — full coaching staff hired (career/2013/coaching_staff.md); initial GM alignment meeting held (roster_evaluation.md)` | Staff-building phase complete |
+| Next scheduled event | `March 12, 2013 — free agency opening, BLOCKED pending cap-data reconciliation (see career/2013/offseason/free_agency/signings.md's blocker record)` | Real 2013 calendar |
 | Time until next event | `current phase; no separate clock deadline established` | Never use turn count |
-| Current focus | `Complete hiring-search criteria freeze and user brief; do not begin post-hire team activity` | PRE-HIRE SEARCH |
+| Current focus | `Resolve the 2013 cap-charge data gap in initial_cap_sheet.md so free agency and the four pending release reviews (Whimper, Ross, Landry, Robinson) can proceed on a real, non-fabricated cap picture` | HIRED / INITIALIZATION BUILD |
 | Latest full continuity audit | `[UNSET]` | Document 6 audit entry |
 | Substantive non-game responses since that audit | `0` | Increment only when a non-game response advances date or materially changes state; audit and reset at four |
 
