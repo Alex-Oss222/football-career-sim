@@ -5,9 +5,9 @@
 **Supersedes:** Uninitialized snapshot 1.0  
 **Readiness:** NOT READY FOR ACTIVE CAREER — HIRED / INITIALIZATION BUILD IN PROGRESS  
 **Must be read:** In full before every simulation response  
-**Simulation status:** HIRED / INITIALIZATION BUILD — team, contract, and staff are resolved; career is not yet READY because the 2013 cap reconciliation in `career/2013/offseason/initial_cap_sheet.md` remains genuinely unresolved (real per-player annual cap-charge data was not available in the sources used to build that sheet — this is a sourcing gap, not a paperwork gap). No game, transaction requiring cap-legality, or ACTIVE CAREER event may proceed until that gap closes.  
+**Simulation status:** HIRED / INITIALIZATION BUILD — team, contract, and staff are resolved. The cap-data blocker that stopped the first free-agency attempt is now cleared: `career/2013/offseason/initial_cap_sheet.md` is `DECISION-USABLE INITIALIZATION BASELINE` (20 exact 2013 player cap rows plus a dated, pre-hire, real January 9, 2013 club planning estimate of ~$22.1M projected room). Free agency and the four pending release reviews may now proceed using that sheet's stated planning figures and operating rule; a fully penny-exact Top-51 club worksheet remains a separate, lower-priority reconciliation, not a blocker.  
 **Snapshot effective:** `2013-01-15; time not material`  
-**Last reconciled against Documents 1, 3, 6, and 7:** `2026-09-18 hire closed, staff hired, free-agency attempt blocked on cap data`  
+**Last reconciled against Documents 1, 3, 6, and 7:** `2026-09-18 hire closed, staff hired, cap-data gap resolved`  
 **Global package checkpoint:** `PRE-HIRE SEARCH CLOSURE, career/2013/ledger.md, 2026-09-18`  
 **Preceding global package checkpoint:** `[NONE]`
 
@@ -39,9 +39,9 @@ These are the exact content versions reconciled at the global package checkpoint
 | Division/conference standing | `N/A — offseason` | No current-season standings exist yet |
 | Postseason position/tiebreak relevance | `N/A` | Offseason |
 | Last completed event | `Late January 2013 — full coaching staff hired (career/2013/coaching_staff.md); initial GM alignment meeting held (roster_evaluation.md)` | Staff-building phase complete |
-| Next scheduled event | `March 12, 2013 — free agency opening, BLOCKED pending cap-data reconciliation (see career/2013/offseason/free_agency/signings.md's blocker record)` | Real 2013 calendar |
+| Next scheduled event | `March 12, 2013 — free agency opening, ready to run using the ~$22.1M planning estimate in initial_cap_sheet.md` | Real 2013 calendar |
 | Time until next event | `current phase; no separate clock deadline established` | Never use turn count |
-| Current focus | `Resolve the 2013 cap-charge data gap in initial_cap_sheet.md so free agency and the four pending release reviews (Whimper, Ross, Landry, Robinson) can proceed on a real, non-fabricated cap picture` | HIRED / INITIALIZATION BUILD |
+| Current focus | `Run 2013 free agency and the four pending release reviews (Whimper, Ross, Landry, Robinson) against the decision-usable cap sheet` | HIRED / INITIALIZATION BUILD |
 | Latest full continuity audit | `[UNSET]` | Document 6 audit entry |
 | Substantive non-game responses since that audit | `0` | Increment only when a non-game response advances date or materially changes state; audit and reset at four |
 
