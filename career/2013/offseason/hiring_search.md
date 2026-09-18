@@ -1,13 +1,32 @@
 # 2013 hiring search — Alex Stone
 
-**Status:** NOT STARTED (reset 2026-09-18). This search was previously run interactively through Turn 2 (a full priority-order brief and Jacksonville's initial response); at the user's explicit instruction it has been wiped for a clean restart via Codex, per `AGENTS.md`'s "Run the [year] hiring search" task. The prior interactive turns are recoverable from git history if ever needed, but are not in effect for this run.
+**Lifecycle:** PRE-HIRE SEARCH  
+**Status:** NOT STARTED  
+**Reference date:** January 14, 2013  
+**Career initialization:** NOT INITIALIZED
 
-Governed by `foundation/03_Head_Coach_Organization_and_Authority_Canon.md` §10.2 (compressed-turn procedure) and §10.4 (criteria-freeze rule), using `foundation/templates/hiring_search_output_template.md` for turn shape. Every turn is appended below as it happens — nothing about this search exists only in a chat transcript, per the same discipline the SCOTUS project uses.
+This file is the authorized pre-initialization decision ledger for Stone's head-coaching search. It is governed by Document 1 §9, Document 3 §10, and `foundation/templates/hiring_search_output_template.md`.
 
-**Context carried forward from established canon (not reset — these are facts, not turns):** New Orleans' 2012 season ended for Stone at the Divisional Round, January 13, 2013, as interim head coach (12-4 regular season, one playoff win). Sean Payton returns from suspension for 2013 and reclaims the Saints' HC job — Stone is a free-standing external candidate as of January 14, 2013.
+Established starting facts:
+
+- New Orleans' 2012 season ended for Stone with the Divisional Round loss on January 13, 2013.
+- Stone's 2012 head-coaching record is 12-4 in the regular season and 1-1 in the postseason.
+- Stone is in the January 2013 permanent head-coaching market.
+- No 2013 hiring result, contract, future staff, or administrative transition date is assumed here.
+- The permitted runtime market source is `library/2013_coaching_market_pre_hire.md`. The full historical `library/2013_coaching_market.md` is quarantined from resolution.
+
+Before the user's search brief is read, the resolver must append and close a criteria-freeze entry for every team in the established search scope. Every consequential Stone choice must either cite an exact user instruction already covering it or stop unresolved for the user.
+
+## Criteria freeze
+
+[NOT YET CREATED]
 
 ## Turn log
 
 | Turn | Date | Type | Status |
 |---|---|---|---|
-| — | — | — | Awaiting `career/2013/offseason/hiring_search_brief/` and a Codex run |
+| — | — | — | Awaiting criteria freeze and user search brief |
+
+## Search record
+
+[No simulated search events yet]
