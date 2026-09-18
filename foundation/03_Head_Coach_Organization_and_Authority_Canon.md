@@ -5,8 +5,8 @@
 | Field | Canonical entry |
 |---|---|
 | Document status | `NOT READY` — rebuilt template; career not initialized. After every substantive Section 12 gate and companion-document readiness check is satisfied, set this field to `READY` as the administrative close. The separate final instruction to initialize remains outstanding and does not prevent readiness. |
-| Document version | Rebuild draft 1.6 |
-| Supersedes | Rebuild draft 1.5 template. No initialized career canon or in-world event is superseded. |
+| Document version | Rebuild draft 1.7 |
+| Supersedes | Rebuild draft 1.6 template. No initialized career canon or in-world event is superseded. |
 | Last Document 3 content-changing update | 2026-09-17 — revised §1.1-§1.6 and §7.1 a third time the same day. Second round adopted a fuller alternate source's timeline (10-season playing career, PhD, Patriots-to-Saints-to-interim-HC coaching path) after it surfaced Stone's real divergence-point service as Saints interim head coach during Sean Payton's 2012 suspension. Third round reverted the geographic-constraint field: the user clarified that the objection to "doesn't matter" was about it reading as hollow AI hedging, not a request to manufacture marital strain — Inbar remains background color only, and the field is now simply "no constraint," not an invented problem. See §1.6 for the full resolution record. Prior update: added §10, External hiring market and search-cycle procedure, and renumbered former §§10-11 to §§11-12. No initialized career canon or in-world event is superseded. |
 | Canonical as-of date | [UNSET] |
 | Competition, season, and team | [DERIVED DOCUMENT 2 REFERENCE; UNSET] |
@@ -464,6 +464,8 @@ A search is resolved in a small, fixed set of user-facing decision points, never
 3. **Routine steps proceed without a turn.** Initial outreach, permission requests, scheduling, reference and background calls, and other implementation directly following from the user's choice in step 2 are carried out and only summarized, under Document 1 §3.2; the user is not asked to approve each call.
 4. **User decision points are limited to genuine branches**: which candidates to pursue, who to interview first, who to offer, how to respond to a competing bid or a candidate's counteroffer, and whether to accept or reject when the protagonist himself is the candidate. Each such branch is one turn.
 5. **Absent a genuine complication** (a leak, a rival bid, a scandal, a rescinded permission), a full search — from vacancy to hire — should resolve in roughly three to five user-facing turns, not twenty. A complication earns its own turn because it is itself a consequential decision point, not because the search is inherently long.
+6. **Output format:** `foundation/templates/hiring_search_output_template.md` (added 2026-09-17) gives this procedure's three turn types (opportunity, market-update, offer) a concrete shape, the same way the season/offseason templates do for post-hire play.
+7. **Input contract:** there is no form or menu to fill out, per Document 1 §6.3/§16's ban on closed-choice menus. Each turn's "Your call" section asks one specific question; the user answers in their own words, and that answer is the input — never a rigid schema to satisfy.
 
 ### 10.3 Autonomy for searches not involving the protagonist
 
