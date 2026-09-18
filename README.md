@@ -13,7 +13,7 @@ foundation/     the stable rulebook: Documents 00-03, 06, 07, and foundation/tem
 state/          the always-current, in-place-updated snapshot: Documents 04 and 05. Rewritten as events happen; never append-only.
 career/         the actual played history, one folder per season, created only once that season is reached. Empty until initialization. See career/README.md.
 archive/        superseded/quarantined material kept for reference only, never active canon. See archive/README.md.
-library/        real-world reference data with no dedicated slot elsewhere: era-specific research (team/coaching-market dossiers, draft-class data). Load-bearing values are copied into foundation/02's real tables; these files keep them traceable to a source.
+library/        supporting reference material with no dedicated canonical slot: era-specific real-world research plus non-authoritative pre-hire character reference. Load-bearing rules and canon remain in foundation/ and state/; library material never overrides them.
 ```
 
 - **`foundation/00_Audit_Migration_and_Stress_Test_Report.md`** — the audit that produced this rebuild. Historical/reference; not itself a runtime rule source.
@@ -26,6 +26,7 @@ library/        real-world reference data with no dedicated slot elsewhere: era-
 - **`state/04_Roster_and_Staff_Register.md`** — the active roster and staff register once a career is initialized.
 - **`state/05_Current_Season_State.md`** — the current in-world date, season, and status; the initialization gate lives here.
 - **`library/2013_league_calendar_and_financial_rules.md`, `library/2013_coaching_market.md`, `library/2013_draft_class.md`** — the first real-data library build (added 2026-09-17): verified 2013 NFL calendar/cap/CBA figures, the real situational picture for all five of Stone's established candidate teams plus the full coordinator-hiring carousel, and the real 2013 draft class's pre-selection-only prospect pool. Every fact is independently cross-checked, with anything that couldn't be confirmed precisely flagged rather than silently presented as exact.
+- **`library/alex_stone_character_dossier_pre_hire.md`** — supporting pre-hire character reference at a January 14, 2013 cutoff. It contains established background and demonstrated experience only, assumes no 2013 hiring result, and never overrides Document 3 on canon or Document 5 on the active master clock.
 - **`AGENTS.md`** (added 2026-09-17) — the Codex-facing task file for bounded, low-interactivity batch work only (simulating a background-league week, expanding the real-data library). The interactive side of this project (the protagonist's own career, every turn requiring a live decision) is never delegated here — see Document 7 §1 and §12 for why that split exists.
 
 Everything remains **authoring templates; no career is initialized.** Document 3's biographical fields are resolved, but team, contract, season, and coaching-identity fields stay open by design until the user completes Document 1's initialization gate.
