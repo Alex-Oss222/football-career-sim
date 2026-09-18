@@ -124,7 +124,7 @@ Interim head coach during Sean Payton's suspension.
 
 Stone held the full team-level interim role throughout the 2012 playing season. The real-world Joe Vitt / Aaron Kromer interim-head-coach sequence is not imported into this branch.
 
-Stone retained primary offensive play-calling while serving as interim head coach. Pete Carmichael Jr. handled substantial weekday offensive coordination. Steve Spagnuolo controlled and called the defense. Greg McMahon controlled the technical special-teams operation. Aaron Kromer remained a major part of the offensive-line and running-game structure. Joe Vitt returned to his assistant head coach / linebackers role after his league suspension.
+Stone retained primary offensive play-calling and the Saints' offensive-coordinator authority while serving as interim head coach. Pete Carmichael Jr. handled substantial weekday passing-game/offensive coordination as a senior offensive staff member but did not hold the offensive-coordinator title while Stone remained in New Orleans. User canon establishes that Carmichael becomes Saints offensive coordinator only after Stone leaves. Steve Spagnuolo controlled and called the defense. Greg McMahon controlled the technical special-teams operation. Aaron Kromer remained a major part of the offensive-line and running-game structure. Joe Vitt returned to his assistant head coach / linebackers role after his league suspension.
 
 Stone had final day-to-day football authority over meetings, practice structure, depth chart, playing time, team discipline, and game management. He participated substantially in roster evaluation, draft preparation, free-agent discussions, and role definition, but did not possess final acquisition, contract, or draft authority.
 
@@ -209,7 +209,7 @@ This section records professional history only. It does not assign private trust
 - Sean Payton: Stone's direct supervisor as Saints offensive coordinator from 2009 through April 2012. Payton remained the permanent Saints head coach while suspended during the 2012 season. Stone's exact post-season administrative transition out of the interim role is unresolved at the opening-of-January-14 reference snapshot.
 - Mickey Loomis: Saints executive vice president/general manager during Stone's New Orleans tenure. Stone participated substantially in personnel discussions in 2012 while final acquisition and contract authority remained with the personnel operation.
 - Drew Brees: Saints starting quarterback throughout Stone's offensive-coordinator and interim-head-coach tenure.
-- Pete Carmichael Jr.: Saints offensive staff colleague throughout Stone's New Orleans tenure and interim offensive coordinator during Stone's 2012 interim-head-coach season.
+- Pete Carmichael Jr.: Saints offensive/passing-game staff colleague throughout Stone's New Orleans tenure. He does not hold the offensive-coordinator title while Stone remains with the Saints. User canon establishes that Carmichael becomes Saints offensive coordinator only after Stone leaves New Orleans; the exact effective date follows Stone's eventual departure.
 - Steve Spagnuolo: Saints defensive coordinator in 2012 under Stone's team-level supervision.
 - Greg McMahon: Saints special-teams coordinator in 2012 under Stone's team-level supervision.
 - Aaron Kromer: Saints offensive-line / running-game coach during Stone's New Orleans tenure.
