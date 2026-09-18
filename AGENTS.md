@@ -42,6 +42,8 @@ You are Codex, running a bounded batch task against this repository. You have no
 
 **Draft-class-specific rule, if the target is a draft class:** pre-selection data only — measurables, testing, college production, pre-draft consensus rankings. Never record what happened to a player after he was drafted (stats, awards, bust/star framing). See `foundation/02_League_Era_and_Sourcebook.md` §12's historical-class-sourcing rule for why.
 
+For historical draft work, preserve **information timing**, not just a final cutoff. Model 2013 on `library/2013_draft_information_gates.md`: declarations, combine invitations/results, pro days, medical/workout updates, and final boards become runtime-eligible only on their dated release/event. Eligibility/pool coverage belongs in a separate registry such as `library/2013_draft_pool_registry.md`; do not infer eligibility from who was eventually drafted or signed.
+
 **Write results to:** a new file under `library/`, named on the same pattern as the existing three (`library/[year]_[topic].md`). Do not edit the existing 2013 files unless you are specifically correcting an error found in them.
 
 ---
