@@ -1,4 +1,6 @@
-# THE PROWL
+# THE PROWL — Jacksonville Jaguars
+
+**Team:** Jacksonville Jaguars (the club Stone was hired by January 15, 2013 — `hiring_search.md` Entry 7)
 
 **Status:** User-established canon, 2026-09-18. This is Stone's actual adopted program identity for Jacksonville, entered into Document 3 §2.1 per §2.2's instruction that coaching identity is resolved directly into canon once the user decides it — not a discarded or legacy candidate. Full text preserved verbatim below; Document 3 §2.1 carries the summary and points here.
 

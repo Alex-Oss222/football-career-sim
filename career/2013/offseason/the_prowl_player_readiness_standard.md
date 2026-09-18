@@ -1,4 +1,6 @@
-# THE PROWL: PLAYER READINESS STANDARD
+# THE PROWL: PLAYER READINESS STANDARD — Jacksonville Jaguars
+
+**Team:** Jacksonville Jaguars (the club Stone was hired by January 15, 2013 — `hiring_search.md` Entry 7)
 
 **Status:** User-established canon, 2026-09-18, companion to `the_prowl_program_identity.md`. Full text preserved verbatim below; Document 3 §2.1 carries the summary and points here.
 
