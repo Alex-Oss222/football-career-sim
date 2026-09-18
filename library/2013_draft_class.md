@@ -135,3 +135,85 @@ The order moved significantly during the process. Mayock's pre-combine board had
 | Stedman Bailey | West Virginia | 5'10 1/4", 193; 32 3/4" arms; 9 7/8" hands; 4.52 40; 34.5" vertical | Mayock #73; Norris WR8 | Productive route/catch player with strong red-zone timing despite average size and testing. |
 | Markus Wheaton | Oregon State | ~5'11", ~189; low-4.4s 40 range | Mayock #88; Brandt #67; Norris WR6 | Vertical speed plus enough route versatility to work underneath. Frame and contested-catch profile kept him in the next tier. |
 
+## 6. Tight ends
+
+### Consensus shape
+
+Tyler Eifert was the cleanest positional No. 1 in the offensive skill groups. The argument began behind him. Mayock finished Zach Ertz second, Gavin Escobar third, Travis Kelce fourth and Vance McDonald fifth. Josh Norris was more aggressive on Kelce and McDonald, placing them second and third, with Jordan Reed fourth and Ertz fifth. That split matters because evaluators were answering different questions: best detached receiver, best true Y tight end, best movement blocker/receiver blend, or best developmental traits. [MAYOCK-POS] [NORRIS-TE]
+
+| Prospect | School | Combine / pre-draft measurables | Late-board evidence | Contemporary football read |
+|---|---|---|---|---|
+| Tyler Eifert | Notre Dame | 6'5 1/2", 250; 33 1/8" arms; 9 1/8" hands; official 4.68 40; 22 bench; 35.5" vertical | Mayock TE1 / M100 #13; Brandt #16; SI TE1 | The most complete receiving projection in the group: catch radius, body control, ability to align detached or inline, and enough movement skill to threaten seams. Blocking was viewed as functional and improving rather than the primary reason to draft him. |
+| Zach Ertz | Stanford | 6'5", 249; 31 3/4" arms; 9 3/4" hands; official 4.76 40; 24 bench; 30.5" vertical | Mayock TE2 / #46; Brandt #35; SI TE2 | Polished route feel and production from an NFL-style offensive structure. He projected readily as a move tight end or large slot, while evaluators differed on how much inline blocking value he would provide. |
+| Gavin Escobar | San Diego State | 6'5 7/8", 254; 33 5/8" arms; 9 3/4" hands; 4.84 40 | Mayock TE3 / #76; Brandt #63; SI TE3 | Length, hands and red-zone receiving potential stood out. The central questions were play strength and whether his blocking would become sturdy enough for extensive inline use. |
+| Travis Kelce | Cincinnati | 6'4 7/8", 255; 33 3/4" arms; 9 5/8" hands; DNP combine drills | Mayock TE4 / #80; Norris TE2 | Powerful after the catch, competitive as a blocker and capable of working from several alignments. The pre-draft file also included his 2010 season-long team suspension, which evaluators investigated as an availability/decision-making issue rather than a hidden personality score. |
+| Vance McDonald | Rice | 6'4 1/8", 267; 34 3/8" arms; 10 1/8" hands; 4.69 40; 31 bench; 33.5" vertical | Mayock TE5 / #96; Brandt #46; Norris TE3 | Outstanding size/length/testing profile with experience flexed from the formation. Evaluators liked his blocking temperament and athletic ceiling but noted inconsistent hands and a less conventional college role. |
+| Jordan Reed | Florida | 6'2 1/2", 236; 33" arms; 10" hands; 4.72 40; 16 bench | Norris TE4 | Undersized for a traditional Y but quick and fluid as a receiver. Projection depended on whether a team viewed him as an H-back/move piece rather than forcing him into a full-time inline role. |
+
+## 7. Offensive tackles
+
+### Consensus shape
+
+This was the strongest and most stable top-end position group. Eric Fisher and Luke Joeckel formed the top pair, with the exact order unsettled. Mayock and Norris preferred Fisher by the end of the process; Brandt and several personnel-source surveys still preferred Joeckel. Lane Johnson was the clear third member of the premium tier and the best pure tester. D.J. Fluker offered a very different power/length profile, followed by a second tier including Justin Pugh, Menelik Watson and Terron Armstead. [MAYOCK-POS] [MAYOCK-100] [BRANDT-125] [NORRIS-OL] [MCGINN-OL]
+
+| Prospect | School | Combine measurables | Late-board evidence | Contemporary football read |
+|---|---|---|---|---|
+| Eric Fisher | Central Michigan | 6'7 1/4", 306; 34 1/2" arms; 5.05 40; 27 bench; 28.5" vertical; 9'8" broad; 4.44 shuttle; 7.59 three-cone | Mayock OT1 / M100 #1; Brandt #5; Norris OT1 | Long, light-footed and unusually fluid for his size. Supporters preferred his movement ceiling and recovery ability; the recurring question was the jump in weekly competition from the MAC. |
+| Luke Joeckel | Texas A&M | 6'6", 306; 34 1/4" arms; 5.30 40; 27 bench; 28.5" vertical; 7.40 three-cone | Mayock OT2 / #3; Brandt #1; McGinn's personnel survey OT1 | The safer/high-floor projection for many evaluators: extensive left-tackle tape, balance, hand placement and consistency against high-level SEC competition. He tested less explosively than Fisher or Johnson but was viewed as more technically complete. |
+| Lane Johnson | Oklahoma | 6'6", 303; 35 1/4" arms; 4.72 40; 28 bench; 34" vertical; 9'10" broad; 4.52 shuttle; 7.31 three-cone | Mayock OT3 / #6; Brandt #8; Norris OT3 | Rare athletic profile produced by a former quarterback/tight end who had comparatively little time on the offensive line. Movement, length and recovery tools were elite for the class; technique and experience were the developmental questions. |
+| D.J. Fluker | Alabama | 6'4 5/8", 339; 36 3/4" arms; 5.31 40; 21 bench | Mayock OT4 / #15; Brandt #15 | Massive frame, extraordinary length and clear displacement power in the run game. Evaluators debated whether speed rushers would force him inside or whether his reach and strength were sufficient to remain at tackle. |
+| Justin Pugh | Syracuse | 6'4 1/2", 307; 32" arms; 5.14 40 | Mayock T-OT5 / #24; Brandt #57 | Technically sound, balanced and versatile. Shorter-than-ideal tackle arms were the dominant measurable concern and led some evaluators to project guard flexibility. |
+| Menelik Watson | Florida State | 6'5 1/8", 310; 34" arms; 5.29 40 | Mayock T-OT5 / #31; Brandt #23 | Very limited football background but high-end movement and power traits. One of the class's clearest experience-versus-upside projections. |
+| Terron Armstead | Arkansas-Pine Bluff | 6'4 3/4", 306; 34" arms; 4.71 40; 31 bench; 34.5" vertical | Mayock #61; Brandt #55; Norris OT4 | Historic-level tackle athleticism and legitimate developmental left-tackle tools. Level of competition, hand technique and translating rare testing into consistent pass protection drove the risk. |
+
+## 8. Interior offensive line
+
+### Consensus shape
+
+Chance Warmack and Jonathan Cooper were treated as unusually valuable guards despite the era's normal positional discount. Warmack represented power, leverage and finishing ability; Cooper represented movement, range and space athleticism. Kyle Long was a traits-heavy developmental projection. Larry Warford was the massive power alternative. Center was much less settled: Mayock preferred Brian Schwenke, then Barrett Jones and Travis Frederick, while other boards ordered those three differently. [MAYOCK-POS] [MAYOCK-100] [BRANDT-125] [MCGINN-OL]
+
+| Prospect | School | Combine measurables | Late-board evidence | Contemporary football read |
+|---|---|---|---|---|
+| Chance Warmack | Alabama | 6'2", 317; 34 3/4" arms; 5.49 40 | Mayock G1 / #4; Brandt #11; SI G1 | Dense, powerful and technically advanced. He generated movement in the run game and handled interior power, with the main debate less about ability than whether a guard should carry top-of-board value. |
+| Jonathan Cooper | North Carolina | 6'2 1/8", 311; 33" arms; 5.07 40; 35 bench; 27" vertical | Mayock G2 / #8; Brandt #12; SI G2 | Rare lateral movement and second-level range for an interior lineman. Particularly attractive to teams asking guards to pull, reach and block in space. Warmack was the power comparison; Cooper was the movement comparison. |
+| Kyle Long | Oregon | 6'6 1/8", 313; 33 3/8" arms; 4.94 40 | Mayock G3 / #29; Brandt #40 | Excellent size/athleticism with positional flexibility, but a comparatively short major-college football résumé. Projection leaned heavily on physical tools and developmental runway. |
+| Larry Warford | Kentucky | 6'3", 332; 33 3/8" arms; 5.58 40; 28 bench | Mayock G4 / #47; Brandt #82 | Heavy-handed, wide-bodied power guard with extensive SEC experience. Space movement and scheme fit separated his valuation from Cooper's. |
+| Brian Winters | Kent State | About 6'4", 320; tackle/guard experience | Mayock G5 / #70; Brandt #58 | Physical, experienced and position-flexible. Many evaluators projected him inside because of his build and movement profile. |
+| Brian Schwenke | California | 6'3", 314; 32" arms; 4.99 40; 31 bench; 26.5" vertical; 7.31 three-cone | Mayock C1 / #55 | Athletic center/guard with quick feet and enough anchor. His movement testing helped separate him on zone-oriented boards. |
+| Barrett Jones | Alabama | 6'4", 306; DNP athletic drills while recovering from foot surgery | Mayock C2 / #91; Brandt #69 | Extensive high-level experience at tackle, guard and center plus strong assignment reputation. Medical recovery and ordinary power/athletic traits relative to elite prospects were the questions. |
+| Travis Frederick | Wisconsin | 6'3 5/8", 312; 33" arms; 5.58 40; 21 bench; 28.5" vertical | Mayock C3 / #92; Brandt #49 | Powerful, intelligent center/guard with Wisconsin's run-game résumé. Slow testing created a wide gap between evaluators who prioritized play strength/processing and those who prioritized movement. |
+
+## 9. Edge defenders
+
+### Consensus shape
+
+There was no single edge archetype in this class. Ezekiel Ansah was the explosive, low-experience 4-3 end; Dion Jordan the long, fluid hybrid; Barkevious Mingo the lighter speed rusher; Bjoern Werner the more conventional end; Tank Carradine the recovering high-motor end; and Datone Jones a heavier inside/outside piece. Scheme labels materially changed rankings, which is why Mayock maintained separate 4-3 defensive-end and 3-4 outside-linebacker lists. [MAYOCK-POS] [MAYOCK-100] [SI-DEF] [NORRIS-DL] [MCGINN-DL]
+
+| Prospect | School | Combine / workout measurables | Late-board evidence | Contemporary football read |
+|---|---|---|---|---|
+| Ezekiel Ansah | BYU | 6'5 1/4", 271; 35 1/8" arms; official 4.63 40; 21 bench; 34.5" vertical; 7.11 three-cone | Mayock 4-3 DE1 / #9; Brandt #2; Norris edge1 | Exceptional length, acceleration and closing tools with very little football experience. Evaluators were projecting what he could become once technique and recognition caught up with the physical profile. |
+| Dion Jordan | Oregon | 6'6 1/4", 248; 33 7/8" arms; official 4.60 40; 32.5" vertical; 7.02 three-cone | Mayock 3-4 OLB1 / #5; Brandt #3 | Unusual length and movement allowed him to rush, drop and cover space. The questions were edge power, bulk and whether a team would maximize the versatility rather than ask him to play as a conventional every-down hand-down end. |
+| Barkevious Mingo | LSU | About 6'4", 241; 33 3/4" arms; official 4.58 40; 37" vertical; 10'8" broad | Mayock 3-4 OLB2 / #10; Brandt #9 | Elite first-step and pursuit speed. The divide was straightforward: rare burst and range versus modest college sack production and concerns about holding an NFL edge against power. |
+| Bjoern Werner | Florida State | 6'3 1/4", 266; 33 1/4" arms; 4.83 40; 25 bench; 31" vertical | Mayock 4-3 DE2 / #26; Brandt #26 | Productive, technically developed and strong enough to play a conventional end role. Less fluid testing than the top hybrid athletes limited some projections. |
+| Damontre Moore | Texas A&M | 6'4 1/2", 250; 34 3/4" arms; 4.95 40; 12 bench; 35.5" vertical | Mayock 4-3 DE3 / #33; Brandt #39 | Productive, long and active on tape. Poor combine strength/speed testing complicated a profile that had been discussed much higher earlier in the process. |
+| Tank Carradine | Florida State | About 6'4", 276; 34 3/4" arms; DNP combine while rehabbing ACL; reported 4.75 at April 20 workout, 135 days after surgery | Mayock 4-3 DE4 / #56; Brandt #41 | Strong 2012 tape, motor and length gave him substantial support. His actual 2013 availability timeline was the unavoidable pre-draft uncertainty because the ACL repair was recent. |
+| Datone Jones | UCLA | 6'3 7/8", 283; 32 3/4" arms; 4.80 40; 29 bench; 31.5" vertical | Mayock #27 overall; Brandt #78 | Powerful, versatile front player who could reduce inside on passing downs or play a heavier edge. Exact role drove the spread in board value. |
+| Margus Hunt | SMU | 6'8 1/8", 277; 33 3/4" arms; official 4.60 40; 38 bench; 34.5" vertical; 7.07 three-cone | Mayock #39; Brandt #32 | Extraordinary height, strength and testing with a late start in football. Projection centered on pad level, recognition and whether unusual traits would become consistent down-to-down technique. |
+
+## 10. Interior defensive line
+
+### Consensus shape
+
+Sharrif Floyd, Sheldon Richardson and Star Lotulelei formed the premier interior trio, but they were not interchangeable. Floyd was the explosive penetrating three-technique, Richardson the mobile disruptive penetrator with unusual pursuit range, and Lotulelei the power player capable of occupying and moving blockers. Sylvester Williams, Kawann Short, Johnathan Hankins, Jesse Williams and John Jenkins supplied several different second-tier body/role profiles. [MAYOCK-POS] [MAYOCK-100] [SI-DEF] [NORRIS-DL] [MCGINN-DL]
+
+| Prospect | School | Combine / workout measurables | Late-board evidence | Contemporary football read |
+|---|---|---|---|---|
+| Sharrif Floyd | Florida | 6'2 5/8", 297; 31 3/4" arms; official 4.92 40; 30" vertical | Mayock DT1 / #2; Brandt #4; SI DT1 | Explosive first step, strong hands and the movement to penetrate or chase. The shorter-arm measurement was noted, but most top boards treated his disruption as a premier trait. |
+| Sheldon Richardson | Missouri | About 6'2 1/2", 294; roughly 34 1/2" arms; 5.02 40; 30 bench; 32" vertical | Mayock DT2 / #7; Brandt #13 | Outstanding range and motor for an interior player, with the ability to penetrate and pursue laterally. Evaluators wanted more consistent anchor and gap discipline against direct power. |
+| Star Lotulelei | Utah | About 6'3", 311; 33 5/8" arms; DNP combine drills after a heart-function concern was flagged; subsequently medically cleared; pro-day testing included 38 bench, 4.65 shuttle, 7.66 three-cone | Mayock 3-4 DE1 / #11; Brandt #14; Norris interior DL1 | Powerful hands, anchor and block displacement made him attractive to both one- and two-gap fronts. The combine medical interruption was a real pre-draft information event and belongs here; later career health information does not. |
+| Sylvester Williams | North Carolina | About 6'3", 313 | Mayock DT3 / #22; Brandt #18 | Strong, mature interior defender with enough quickness to penetrate. Generally seen as below the top trio but among the safest second-tier interior projections. |
+| Kawann Short | Purdue | About 6'3", 299 | Mayock DT4 / #40; Brandt #29 | Length, hand use and disruptive flashes were evident. Evaluators differed over motor/consistency and how often the best snaps would appear. |
+| Johnathan Hankins | Ohio State | 6'2 7/8", 320; 33" arms; 5.31 40 | Mayock DT5 / #58; Brandt #47 | Large, powerful run defender with enough movement for his size. Conditioning, snap-to-snap consistency and pass-rush ceiling shaped the projection. |
+| Jesse Williams | Alabama | 6'3", 323; 32" arms; 27 bench | Mayock #97; Brandt #68 | Strong nose/two-gap profile with experience in Alabama's front. Knee/medical evaluation and limited pass-rush upside affected his range. |
+| John Jenkins | Georgia | About 6'4", 359; 34" arms; 18 bench | Mayock #71; Brandt #38 | True space-eating nose-tackle body type with surprising movement for the weight. Conditioning and three-down utility were the central questions. |
+
