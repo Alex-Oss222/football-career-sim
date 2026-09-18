@@ -1,6 +1,6 @@
-# Staff building — actual hires
+# Staff Hiring Process — Jacksonville Jaguars
 
-**Status:** PARTIALLY COMPLETE — offensive-line/run-game position remains open
+**Status:** COMPLETE. Every position in `staff_plan.md` is resolved, across two rounds of calls. This file is the process record — who was called, in what order, and why each call closed the way it did. For a clean current staff list with no process narrative, see `../../coaching_staff.md`.
 
 **Sequence:** Late January 2013. The source record does not establish an exact day for this simulated staff-building sequence, so no more precise effective date is asserted below.
 

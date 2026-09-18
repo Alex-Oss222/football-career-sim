@@ -33,6 +33,7 @@ Adopted 2026-09-18, replacing an earlier, flatter version of this layout. The ch
 career/
   <year>/
     ledger.md
+    coaching_staff.md          <- clean current staff list, no process narrative; the hiring process itself lives in offseason/staff_building/hires.md
     league_results/
       week_01.md
       ...
