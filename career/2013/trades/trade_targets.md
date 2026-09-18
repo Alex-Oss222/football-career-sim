@@ -1,66 +1,266 @@
-# Trade targets — Stone's plan
+# Trade exploration board — Alex Stone / Jacksonville Jaguars
 
-**Status:** Dated when actually proposed, never rewritten to match the eventual outcome. Caldwell holds final trade authority (Authority Map row 20); Stone's role is recommending the target and the acceptable framework. Washington's actual response is genuinely open — in real history Washington did not trade Kirk Cousins in this window, so a decline is at least as realistic an outcome as an acceptance, and neither should be assumed here.
+**Purpose:** Stone's decision-facing trade notebook. This file contains what Stone can legitimately know from public information, Jacksonville's own football operation, conversations actually relayed to him, and his own football judgment. It is **not** the simulator's hidden truth about another club.
 
-## Kirk Cousins (QB), via trade with Washington
+**Authority:** Stone recommends targets, football value, role and acceptable trade framework. General manager David Caldwell holds final trade authority under Document 3.
 
-**Approach:** first call asks only whether Cousins is available — not an ultimatum. A plausible answer is that Washington says it needs him while Robert Griffin III rehabilitates; that response would not by itself change Jacksonville's draft plan.
+**Status:** PRE-TRANSACTION PLANNING. No trade below is assumed to happen. No other club's willingness, minimum price or private board is known until Jacksonville actually contacts that club and receives a response.
 
-**Proposed offer:** Jacksonville's 2013 seventh-round pick (#208) plus Jacksonville's 2014 third-round pick, with the 2014 third escalating to a 2014 second if Cousins reaches either 10 regular-season starts in 2013 or 65% of Jacksonville's offensive snaps.
+## Information labels
 
-**Rationale for the structure:** #208 gives Washington something immediately in the 2013 draft without Jacksonville giving up any pick earlier than the seventh round (#33, #64, #98, #135, #169 all stay). The real value to Washington is the conditional 2014 pick.
+- **PUBLIC FACT:** available through ordinary league/public information by the relevant date.
+- **JAX STAFF / SCOUTING:** a Jacksonville football evaluation communicated to Stone.
+- **STONE JUDGMENT:** Stone's own coaching recommendation or valuation.
+- **MARKET UNKNOWN:** information Jacksonville does not possess until another club/agent communicates it.
+- **BRANCH EVENT:** information created only when an actual simulated call, counter, acceptance or rejection occurs.
 
-**Maximum:** if Washington rejects the condition and asks for a 2014 second-round pick outright, that is the ceiling Stone is willing to go to — but #208 comes out of the deal at that point; the two are not additive.
+Later real trades, later career performance and the eventual real value another team paid are prohibited as valuation inputs.
 
-**Hard limits — never offer:** a 2014 first-round pick, either #64 or #98 in the current draft, or a flat 2014 second-round pick *plus* #208 together.
+---
 
-**Timing:** a final call, repeating the offer, happens before Jacksonville is actually on the clock for #208 (per `offseason/draft/player_draft_board.md`). If Washington declines, #208 is used on the best available player at that point in the simulated draft — this does not close the door on reopening Cousins talks later in the year.
+# 1. Kirk Cousins — QB, Washington
 
-## Blaine Gabbert or Chad Henne (QB), contingent on the Cousins trade actually closing
+## What Stone actually knows
 
-**This entire section activates only if the Cousins trade above is accepted.** If Washington declines, `roster_evaluation.md`'s existing plan (keep both Gabbert and Henne, resolve the competition live) stays in effect unchanged, and nothing below applies.
+### PUBLIC FACT
 
-**Stone's judgment, if Cousins arrives:** carrying Cousins, Gabbert, and Henne all season wastes roster and cap value — one of the other two should move. Default preference is trading Gabbert and keeping Henne, on the reasoning that pairing an inexperienced Cousins with a second reclamation project (Gabbert) leaves no veteran insurance, while Henne is a real emergency-starter option. This is Stone's recommendation to Caldwell, not a unilateral roster move — Caldwell holds final trade authority (Authority Map row 20).
+- Washington selected Cousins in the fourth round of the 2012 draft despite already selecting Robert Griffin III.
+- Cousins produced credible rookie tape when called upon, including a start against Cleveland.
+- Griffin underwent major knee surgery in January 2013.
+- Public trade speculation existed around Cousins after his rookie season, but Griffin's rehabilitation materially increased Washington's reason to keep a capable second quarterback.
+- Cousins remains on an inexpensive rookie contract.
 
-**Market-value comps used to set price expectations (real, dated facts — not a prediction that the same trade recurs here):** Henne's 2013 cap number was roughly $4.65M against Gabbert's roughly $3.27M remaining salary; 2013 veteran backup quarterbacks (Cassel, Hasselbeck, Fitzpatrick) were commanding $3M+ deals, suggesting real value in a proven QB2. Separately, in the real, unrelated branch of history, Jacksonville later traded Gabbert to San Francisco (March 2014) for a sixth-round pick with a conditional 2015 pick — used here only as a value benchmark for what a similar player in a similar situation might fetch, not as an assumption that the same trade happens in this branch.
+Contemporaneous reporting later summarized the same market reality: trade speculation existed before Griffin's injury, but the January surgery largely suppressed it because Washington might need Cousins to run the first-team offense while Griffin rehabilitated.
 
-### Primary plan: trade Gabbert, keep Henne
+Period source:
+- Washington Post, May 24, 2013, describing the earlier trade speculation and how Griffin's January surgery changed Washington's incentive to deal Cousins:  
+  https://www.washingtonpost.com/news/football-insider/wp/2013/05/24/even-before-griffins-injury-cousins-expected-to-be-back-for-second-year-with-redskins/
 
-**Sequencing:** only start shopping Gabbert after the Cousins trade is officially completed — never risk ending up with just Gabbert and Henne because a trade closed out of order.
+This source may verify the **pre-existing January fact pattern**. It may not be used to import any later Washington decision as branch truth.
 
-**Asking price:** a 2014 fifth-round pick, or a 2014 sixth that escalates to a fifth on a playing-time/starts threshold (e.g., 40% of offensive snaps, or 6 starts).
+### JAX STAFF / SCOUTING
 
-**Realistic settlement Stone would accept:** a 2014 sixth-round pick, possibly plus a conditional 2015 seventh tied to starts or roster status.
+Jacksonville's football case for making the call is based on Cousins' 2012 NFL tape and college profile, not on later career outcomes.
 
-**Floor:** a plain seventh-round pick is not enough — hold Gabbert rather than take that, and revisit the market later (camp injuries elsewhere are a real, recurring source of movement in this trade market).
+The staff sees a quarterback worth investigating because he has already shown:
 
-**Plausible call list, with the real, documented situational reasoning behind each (none of this assumes any of them actually completes a trade):**
-- **Green Bay** — real, publicly documented backup-QB instability behind Aaron Rodgers in this period makes them a plausible reclamation-project destination. Ask a 2014 fifth; a 2014 sixth is acceptable.
-- **Atlanta** — real analyst commentary at the time identified their QB2 room behind Matt Ryan as one of the league's weaker ones. Same price structure. (Atlanta is also the most plausible destination if Henne is traded instead — see below.)
-- **Cincinnati** — a real, documented shallow QB2 situation behind an established starter (Andy Dalton), which lowers the risk of an immediate quarterback controversy for them. Same price structure.
-- **Chicago** — worth a call given Stone's own hiring-process familiarity with their decision-makers, but expect a lesser return; a conditional 2014 sixth is the realistic ceiling.
+- NFL game exposure;
+- enough functional processing to execute a professional passing game in limited duty;
+- experience in a structured play-action / movement-passing environment;
+- rookie-contract cost control.
 
-**Patience clause:** if nobody meets even the floor by the draft, carry three quarterbacks through OTAs rather than force a bad trade — that is not the same as carrying three all season. The real trade deadline for this decision is final 53-man roster construction in late August, not the draft; in-camp injuries around the league routinely move backup-QB markets later in the summer.
+The staff does **not** treat the limited rookie sample as proof that Cousins is a future franchise quarterback.
 
-### Alternative branch: trade Henne instead
+### STONE JUDGMENT
 
-**Triggers only if** a clearly better offer for Henne appears (e.g., a 2014 fifth from a contender with an immediate QB2 need, most plausibly Atlanta) while the best available Gabbert offer sits at or below a conditional seventh.
+Stone wants Caldwell to test the market.
 
-**Henne asking price:** a 2014 fifth; a 2014 sixth, or a conditional sixth escalating to a fifth on starts, is acceptable. A conditional seventh is below the floor — Henne is worth more to Jacksonville as its own insurance than that.
+His position is:
 
-**If this branch is taken:** the QB room becomes Cousins/Gabbert, and Gabbert's role resets explicitly to a developmental QB2 with no promise of future starts — the position coach's program for him covers lower-body mechanics, pocket movement, pressure response, progression discipline, intermediate accuracy, and getting the ball out on schedule.
+> Cousins is worth acquiring at a controlled price because Jacksonville can create a real quarterback competition without spending the second overall pick merely to force a quarterback solution.
 
-### Decision tree
+This is a football valuation, not a prediction that Cousins will win the job.
 
-| Situation | Move |
+## What Stone does not know
+
+### MARKET UNKNOWN
+
+Until Caldwell speaks to Washington, Jacksonville does **not** know:
+
+- whether Washington will discuss Cousins at all;
+- whether Griffin's rehabilitation makes Cousins effectively unavailable;
+- Washington's minimum acceptable compensation;
+- whether Washington values a 2013 pick, a future pick, or no trade;
+- whether another team has made an offer;
+- whether Washington would entertain a conditional structure.
+
+The board must not convert public trade speculation into "Cousins is available."
+
+## Jacksonville opening framework
+
+### STONE JUDGMENT
+
+**Opening offer:**
+
+- Jacksonville 2013 seventh-round pick **#208**; plus
+- Jacksonville 2014 third-round pick;
+- the 2014 third escalates to a 2014 second if Cousins reaches either:
+  - 10 regular-season starts in 2013; or
+  - 65% of Jacksonville's offensive snaps.
+
+### Why Stone prefers this structure
+
+- Washington receives immediate 2013 compensation.
+- Jacksonville protects its premium 2013 selections.
+- Washington receives materially greater value if Cousins becomes Jacksonville's primary quarterback.
+- The condition prices uncertainty rather than pretending Jacksonville already knows what Cousins will become.
+
+## Stone's trade ceiling
+
+Stone recommends **no more than a 2014 second-round pick outright**.
+
+If Washington demands the future second outright:
+
+- #208 comes out;
+- Jacksonville does not add #64 or #98;
+- Jacksonville does not offer a 2014 first;
+- Jacksonville does not combine the flat 2014 second with #208.
+
+This is Stone's internal football ceiling. It is not an assertion that Washington would accept it.
+
+## Process
+
+1. Caldwell asks whether Washington is willing to discuss Cousins.
+2. If Washington says no, the inquiry closes unless a later branch event changes the market.
+3. If Washington gives a price, Caldwell reports the actual response.
+4. Stone may compare that price with this board and recommend whether to proceed.
+5. Caldwell retains final trade authority.
+
+A historical future fact such as whether Washington ultimately did or did not trade Cousins is not consulted.
+
+---
+
+# 2. Quarterback-room consequences if Cousins is acquired
+
+This section activates **only after a Cousins trade actually closes**.
+
+Acquiring Cousins does **not** name him the starter.
+
+The quarterback room becomes a live football evaluation among:
+
+- Kirk Cousins;
+- Blaine Gabbert;
+- Chad Henne.
+
+Jeremy Bates, Mike Tice and Stone evaluate the room through installation, meetings, practice and preseason evidence.
+
+## STONE JUDGMENT — roster construction
+
+Stone does not want to enter the regular season carrying three quarterbacks merely because Jacksonville traded for one.
+
+His preferred roster logic is:
+
+- acquire Cousins first;
+- run a real competition;
+- explore trade interest in Gabbert and Henne;
+- move one only if the return is worth more than the depth being surrendered.
+
+The trade market does not dictate the depth chart, and the depth chart does not automatically dictate the trade market.
+
+---
+
+# 3. Blaine Gabbert — possible outbound market after a Cousins acquisition
+
+## What Jacksonville knows
+
+### PUBLIC / CLUB FACT
+
+- Gabbert remains under his rookie contract.
+- His 2012 season ended on injured reserve.
+- He has starting NFL tape available for other clubs to evaluate.
+- Jacksonville has not guaranteed him the 2013 starting job.
+
+### STONE JUDGMENT
+
+If Cousins is acquired, Stone's initial preference is to **explore Gabbert's market first** while retaining Henne's veteran experience.
+
+That is a roster preference, not a declaration that Gabbert cannot improve.
+
+## Internal asking framework
+
+**Opening ask:** 2014 fifth-round pick.
+
+Acceptable structures for Stone to recommend:
+
+- 2014 fifth; or
+- 2014 sixth escalating to a fifth on a meaningful playing-time / start threshold.
+
+A plain seventh-round pick is below Stone's initial valuation.
+
+If that is the best market available, Stone prefers to retain the player through at least the next evaluation period rather than force a low-value trade.
+
+## MARKET UNKNOWN
+
+Jacksonville does not know that Green Bay, Atlanta, Cincinnati, Chicago or any other club actually wants Gabbert.
+
+Those clubs can be **call hypotheses** based on publicly visible backup-quarterback depth, but they are not interested parties until they communicate interest.
+
+### Possible call hypotheses
+
+| Club | Why Jacksonville might test the market | What is actually known |
+|---|---|---|
+| Green Bay | Thin/uncertain reserve-QB structure behind Aaron Rodgers | Need hypothesis only; no interest established |
+| Atlanta | Established starter makes developmental QB2 acquisition structurally plausible | Need hypothesis only |
+| Cincinnati | Established starter and limited proven depth | Need hypothesis only |
+| Chicago | Stone has recent search familiarity with club leadership, but that creates access rather than preference | No player interest established |
+
+No later real Gabbert trade may be used as a value comp. That event had not happened and cannot exist in Stone's 2013 information set.
+
+---
+
+# 4. Chad Henne — alternative outbound market after a Cousins acquisition
+
+## What Jacksonville knows
+
+### PUBLIC / CLUB FACT
+
+- Henne has substantial NFL starting experience.
+- His contract represents materially more 2013 cash/cap than Gabbert's rookie deal.
+- He provides veteran insurance if Jacksonville starts a younger quarterback.
+
+### STONE JUDGMENT
+
+Stone prefers keeping Henne if the return for both players is comparable because veteran QB2 insurance has football value.
+
+He is still willing to recommend trading Henne if another club offers materially more for Henne than Jacksonville can obtain for Gabbert.
+
+## Internal asking framework
+
+**Opening ask:** 2014 fifth-round pick.
+
+Acceptable football-return range for Stone to consider:
+
+- 2014 fifth;
+- 2014 sixth;
+- conditional sixth escalating to a fifth.
+
+Anything lower requires reassessment of whether retaining Henne is more useful.
+
+Again, these are Jacksonville's internal values, not known market bids.
+
+---
+
+# 5. Decision matrix after a Cousins acquisition
+
+| Situation actually observed | Stone's current recommendation |
 |---|---|
-| Cousins acquired; best Gabbert offer is a 2014 fifth or sixth | Trade Gabbert |
-| Best Gabbert offer is only a seventh in May | Hold through camp, revisit later |
-| A 2014 fifth appears for Henne while the Gabbert market is dead | Trade Henne instead |
-| Both markets bottom out at conditional sevenths | Hold all three temporarily; wait for camp-injury movement elsewhere |
-| Cousins struggles in camp | Do not panic — this is exactly why Henne (not Gabbert) is the intended keeper |
-| Cousins clearly wins the job | Complete whichever QB trade is pending before final roster cuts |
+| Strong Gabbert offer; Henne market modest | Trade Gabbert, retain Henne |
+| Strong Henne offer; Gabbert market materially weaker | Consider trading Henne |
+| Both markets weak | Carry three temporarily and continue evaluation |
+| Camp/preseason materially changes the QB ranking | Re-evaluate the trade preference from the new football evidence |
+| Cousins does not separate from the room | Do not force a trade merely to justify acquiring him |
+| One quarterback clearly wins and another club develops an injury need | Reopen market using the new information |
 
-### Preferred final outcome, if everything above plays out as hoped
+No row guarantees who wins the quarterback job.
 
-Cousins acquired per the framework above; Gabbert traded for a 2014 sixth (possibly plus a conditional 2015 seventh); final QB room is Cousins (QB1) and Henne (QB2) — a quarterback Stone is deliberately developing, plus a veteran capable of running the offense if needed. None of this is guaranteed; every step above depends on the prior one actually closing, and Caldwell's own authority over any real signing, trade, or cap move still controls.
+---
+
+# 6. Timing and information discipline
+
+The #208 pick may be included in the Cousins framework only while Jacksonville still owns it.
+
+If Washington has not accepted a trade before Jacksonville must use that selection:
+
+- the pick returns to the live draft process;
+- the Cousins inquiry may continue later using a different structure;
+- Jacksonville does not reserve the pick indefinitely.
+
+The board updates only from:
+
+- actual Jacksonville scouting;
+- current public facts;
+- an actual club response;
+- new branch performance;
+- a new user-controlled Stone decision.
+
+It never updates from hindsight.
