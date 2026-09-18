@@ -802,7 +802,9 @@ These are the sources permitted to support the runtime reconstruction. A source 
   https://www.nfl.com/news/jay-gruden-san-diego-chargers-to-meet-sunday-0ap1000000125661
 
 ### Candidate-market / closed-job sources
-- **CAND-MCCOY / CAND-HORTON:** NFL.com, "Chip Kelly, Perry Fewell among top NFL head coach candidates," 2012 candidate overview.  
+- **CAND-MCCOY:** NFL.com, "Chip Kelly, Perry Fewell among top NFL head coach candidates," 2012 candidate overview; Mike McCoy profile.  
+  https://www.nfl.com/news/chip-kelly-perry-fewell-among-top-nfl-head-coach-candidates-0ap1000000084807
+- **CAND-HORTON:** Same contemporaneous NFL.com candidate overview; Ray Horton profile.  
   https://www.nfl.com/news/chip-kelly-perry-fewell-among-top-nfl-head-coach-candidates-0ap1000000084807
 - **CAND-OBRIEN-STAY:** NFL.com, "Bill O'Brien will stay at Penn State after NFL flirtation," Jan. 3, 2013.  
   https://www.nfl.com/news/bill-o-brien-will-stay-at-penn-state-after-nfl-flirtation-0ap1000000121829
