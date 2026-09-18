@@ -10,7 +10,7 @@ Every inherited player sorted into one of five categories: core, useful, competi
 
 **Defensive core/development:** Paul Posluszny, Tyson Alualu, Andre Branch, Mike Harris, Dwight Lowery (if healthy).
 
-**Quarterbacks:** Keep both Blaine Gabbert and Chad Henne temporarily. Neither receives the starting job outright. Stone's stated reasoning: dumping Henne before knowing whether Kirk Cousins is obtainable would be a mistake — see `trades/trade_targets.md`.
+**Quarterbacks:** Keep both Blaine Gabbert and Chad Henne temporarily. Neither receives the starting job outright. Stone's stated reasoning: dumping Henne before knowing whether Kirk Cousins is obtainable would be a mistake. If the Cousins trade actually closes, a further contingent plan activates — see `trades/trade_targets.md`'s "Blaine Gabbert or Chad Henne" section for the full framework (default: trade Gabbert, keep Henne as QB2). Until Cousins is actually acquired, this three-man room stands as written here.
 
 ## Contract-clearing recommendations (February-March)
 
