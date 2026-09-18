@@ -162,7 +162,7 @@ Only the user may establish the protagonist's beliefs, motives, philosophy, prom
 
 ### 2.2 Legacy philosophy material
 
-Legacy coaching-philosophy candidates are intentionally excluded from active canon while Stone is an unhired candidate. No external desktop file, archived list, prior test-career philosophy, or named framework is a runtime dependency.
+Legacy coaching-philosophy candidates are intentionally excluded from active canon while Stone is an unhired candidate. No external working file, archived list, prior test-career philosophy, or named framework is a runtime dependency.
 
 If the user chooses to establish coaching identity after a hire, it is entered directly into §2.1 from the user's current decision. Earlier discarded material has no automatic authority and is not loaded merely because it once existed.
 
