@@ -1,13 +1,13 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append  
-**Version:** Uninitialized snapshot 1.0  
-**Supersedes:** None; rebuilt pre-initialization template  
-**Readiness:** NOT READY  
+**Version:** Pre-hire snapshot 1.1  
+**Supersedes:** Uninitialized snapshot 1.0  
+**Readiness:** NOT READY FOR ACTIVE CAREER  
 **Must be read:** In full before every simulation response  
-**Simulation status:** NOT INITIALIZED  
-**Snapshot effective:** `[YYYY-MM-DD, local time if material — UNSET]`  
-**Last reconciled against Documents 2, 3, 4, and 6:** `[UNSET]`  
+**Simulation status:** PRE-HIRE SEARCH — CAREER NOT INITIALIZED  
+**Snapshot effective:** `2013-01-14; time not material`  
+**Last reconciled against Documents 1, 3, 6, and 7:** `2026-09-18 pre-hire lifecycle cleanup`  
 **Global package checkpoint:** `[NONE — must equal Document 6's latest closed register row]`  
 **Preceding global package checkpoint:** `[NONE]`
 
@@ -19,29 +19,29 @@ These are the exact content versions reconciled at the global package checkpoint
 
 | Canonical document | Effective version/content date | Last content-changing update | Validation note |
 |---|---|---|---|
-| Document 1 | `Rebuild draft 1.1 (post-audit QA)` | `2026-09-02 rebuild; predates first global checkpoint` | `[UNSET]` |
-| Document 2 | `[ACTIVE-ONLY VERSION UNSET]` | `[UNSET]` | `[UNSET]` |
-| Document 3 | `[VERSION UNSET]` | `[UNSET]` | `[UNSET]` |
-| Document 4 | `[REGISTER VERSION UNSET]` | `[UNSET]` | `[UNSET]` |
+| Document 1 | `Rebuild draft 1.5` | `2026-09-18` | Pre-hire lifecycle and decision ledger reconciled |
+| Document 2 | `0.5-authoring; active-only edition not yet possible because team is unset` | `2026-09-17` | Authoring/pre-hire reference only; not game runtime |
+| Document 3 | `Rebuild draft 2.0` | `2026-09-18` | Search scope and lifecycle reconciled |
+| Document 4 | `[UNINITIALIZED TEMPLATE]` | `[UNSET]` | Correctly blocked until a team is hired |
 
 ## 1. Master clock and competition position
 
 | Field | Current canonical value | Status/source |
 |---|---|---|
-| Exact master date | `[UNSET]` | Blocking initialization variable |
-| Local time/time zone | `[UNSET / not material]` | — |
-| League or academic year | `[UNSET]` | Document 2 |
-| Season | `[UNSET]` | Document 2 |
-| Season phase | `[preseason / regular season / postseason / offseason / recruiting period — UNSET]` | — |
-| Competition week/round | `[UNSET]` | Use official label where one exists |
-| Team | `[UNSET]` | Blocking initialization variable |
-| Team record | `[UNSET]` | Must reconcile to completed results |
-| Division/conference standing | `[UNSET]` | As of exact date |
-| Postseason position/tiebreak relevance | `[UNSET / not yet material]` | No premature certainty |
-| Last completed event | `[date, event, result — UNSET]` | Document 6 entry |
-| Next scheduled event | `[date/time, event, location — UNSET]` | Official or simulation schedule |
-| Time until next event | `[derived from master clock]` | Never use turn count |
-| Current focus | `Resolve initialization variables; do not begin play` | — |
+| Exact master date | `2013-01-14` | Pre-hire reference date |
+| Local time/time zone | `not material yet` | No team/local venue selected |
+| League or academic year | `NFL, 2013 hiring cycle` | Pre-hire scope |
+| Season | `2013 destination pending` | Team not yet selected |
+| Season phase | `PRE-HIRE SEARCH` | Limited pre-initialization phase |
+| Competition week/round | `N/A` | Hiring market, not game competition |
+| Team | `None — head-coaching candidate` | Team is an output of the search |
+| Team record | `N/A` | Stone has no current team; 2012 interim record is historical background |
+| Division/conference standing | `N/A` | No current team |
+| Postseason position/tiebreak relevance | `N/A` | 2012 season has ended for Stone |
+| Last completed event | `2013-01-13 — New Orleans Divisional Round loss; Stone's 2012 season ends` | Established pre-hire baseline |
+| Next scheduled event | `2013-01-14 — criteria freeze and hiring-search opportunity turn, once user brief is ready` | Pre-hire ledger |
+| Time until next event | `current phase; no separate clock deadline established` | Never use turn count |
+| Current focus | `Complete hiring-search criteria freeze and user brief; do not begin post-hire team activity` | PRE-HIRE SEARCH |
 | Latest full continuity audit | `[UNSET]` | Document 6 audit entry |
 | Substantive non-game responses since that audit | `0` | Increment only when a non-game response advances date or materially changes state; audit and reset at four |
 
@@ -51,7 +51,8 @@ Record only the previous completed event, the current week or active period, and
 
 | Date/time | Event/opponent | Location | Status | Preparation/travel consequence |
 |---|---|---|---|---|
-| `[UNSET]` | `[UNSET]` | `[UNSET]` | `[completed/current/next]` | `[UNSET]` |
+| `2013-01-13` | New Orleans Divisional Round; Stone's 2012 season ends | — | completed | Historical/counterfactual baseline only |
+| `2013-01-14` | Head-coaching search | — | current | No team activity permitted before hire and initialization |
 
 ### Material deadlines
 
@@ -176,7 +177,7 @@ List only choices still controlling present action. Quote or closely paraphrase 
 
 | Simulation date made | User decision or instruction | Scope and duration | Implementation status | Ledger reference |
 |---|---|---|---|---|
-| `[none; world date unset]` | `[No in-world decision established]` | — | — | — |
+| `2013-01-14` | `[No Stone hiring-search choice recorded yet]` | PRE-HIRE SEARCH | Awaiting user brief | `career/2013/offseason/hiring_search.md` |
 
 Project-level instruction, outside world chronology: do not begin the simulation before audit/rebuild and a later explicit initialization instruction.
 
@@ -192,7 +193,9 @@ This is the interface boundary, not the complete objective world state.
 
 ### Known to the head coach through a plausible channel
 
-- `[No in-world knowledge state exists before initialization.]`
+- Stone knows his own established career history and 2012 interim-head-coaching record.
+- Public January 14 team context may be drawn only from `library/2013_coaching_market_pre_hire.md` during the hiring search.
+- Later real hiring outcomes and other post-cutoff comparator facts are not part of Stone's runtime knowledge merely because they exist in research files.
 
 ### Reports, scouting judgments, and recommendations
 
@@ -216,13 +219,13 @@ Hidden content never appears in this document or any handoff. If the platform su
 
 ### Current focus
 
-Complete the document rebuild and obtain user confirmation of the remaining variables. No career event is active.
+Complete the hiring-search criteria freeze and the user's search brief, then run the bounded PRE-HIRE SEARCH. Do not begin roster, staff, media, practice, or game activity.
 
 ### Pending decisions
 
 | Decision | Does the head coach have final authority? | Other authority/influence | Deadline/time available | Known constraints | What remains uncertain |
 |---|---|---|---|---|---|
-| Confirm simulation setup variables | User has final canon authority | Applicable real rules constrain mode | Before initialization | Active unresolved fields in Documents 2 and 3 | User's selected resolution |
+| Set Stone's hiring-search priorities, terms, concessions, and walk-away conditions | Yes | Organizations independently control their own search decisions | Before Stone's pitch is evaluated | User-authored brief; clean pre-hire market source | Exact user choices not yet recorded |
 
 Do not list routine implementation as a pending user decision. Do not convert this table into a closed menu.
 
@@ -284,16 +287,16 @@ Every resolved contradiction must be entered as a Document 6 supersession/correc
 
 ## 12. Last continuity update
 
-- **Time advanced:** None; simulation not initialized.
-- **User decisions:** Audit and rebuild all supplied documents; do not begin the career without explicit instruction.
-- **Important resulting events:** None in-world.
-- **Roster or availability changes:** None.
-- **Staff or organizational changes:** None.
+- **Time advanced:** Pre-hire baseline fixed at January 14, 2013; ACTIVE CAREER has not begun.
+- **User decisions:** Clean restart of the 2013 hiring search; no hiring preference or offer decision is recorded in this snapshot.
+- **Important resulting events:** No simulated hiring event yet.
+- **Roster or availability changes:** None; no team selected.
+- **Staff or organizational changes:** None; no employing organization selected.
 - **Record or standings changes:** None.
-- **Current focus:** Complete rebuild and confirm setup variables.
-- **Pending decisions:** The remaining variables listed in the audit report.
-- **Next scheduled event:** User confirmation; no in-world event scheduled.
-- **Canon corrections:** None adopted yet; source conflicts are quarantined.
+- **Current focus:** Complete criteria freeze and user hiring brief.
+- **Pending decisions:** Stone's search priorities, terms, concessions, walk-away conditions, and any optional standing acceptance/rejection instructions.
+- **Next scheduled event:** Hiring-search opportunity turn after the criteria freeze and brief are complete.
+- **Canon corrections:** Pre-hire lifecycle reconciled; full hindsight coaching-market file quarantined from runtime resolution.
 
 ## 13. Pre-initialization readiness
 
