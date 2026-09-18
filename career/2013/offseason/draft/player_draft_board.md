@@ -367,7 +367,7 @@ Decision rule:
 
 ## Pick #208
 
-This selection is first eligible to be included in the active Cousins trade framework described in `../../../trades/trade_targets.md`.
+This selection is first eligible to be included in the active Cousins trade framework described in `../../trades/trade_targets.md`.
 
 If no trade closes before Jacksonville must use the pick:
 
