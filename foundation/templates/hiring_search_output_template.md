@@ -4,6 +4,8 @@
 
 **Input contract (applies to every turn in this project, not just hiring):** there is no form to fill out. Document 1 §6.3/§16 bans closed-choice menus. At each decision point below, the output asks one specific, answerable question — you respond in your own words, and that answer is the input. Nothing is parsed against a rigid schema.
 
+**Persistence — added 2026-09-17, at the user's explicit instruction.** Every turn under this template gets appended to `career/<year>/offseason/hiring_search.md` (see `career/README.md`'s exception to "empty until initialization"), not left to live only in the chat transcript. This mirrors the SCOTUS project's own rule that nothing real exists only in conversation scrollback — a chat can end or restart; the file is what a future session reads to know where the search actually stands.
+
 **The three turn types**, per Document 3 §10.2 — a full search should resolve in roughly 3-5 of these total, not one per team:
 
 ---
