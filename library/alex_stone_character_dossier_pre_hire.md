@@ -2,7 +2,7 @@
 
 **Status:** Supporting reference for the January 2013 head-coaching search. This file summarizes established background and demonstrated experience through the end of Stone's 2012 season. It does not establish a 2013 hiring outcome, future staff, future roster, or post-hire coaching philosophy. Where this file overlaps with Document 3, Document 3 controls.
 
-**Reference cutoff:** January 14, 2013. This is a dossier cutoff, not the simulation master clock. The career remains uninitialized until the project initialization gate is completed.
+**Reference snapshot:** opening of January 14, 2013, using an event cutoff of 11:59 PM ET on January 13, 2013. This is a dossier information boundary, not the simulation master clock. Stone's simulated Divisional Round loss on January 13 is included; no January 14-or-later hiring action is. The career remains uninitialized until the project initialization gate is completed.
 
 ## 1. Snapshot
 
@@ -206,7 +206,7 @@ No private comparative feedback from those organizations is established beyond t
 
 This section records professional history only. It does not assign private trust, friendship, mentorship, loyalty, resentment, endorsement, reference commitments, or willingness to join a future staff.
 
-- Sean Payton: Stone's direct supervisor as Saints offensive coordinator from 2009 through April 2012. Payton remained the permanent Saints head coach while suspended during the 2012 season. Stone's exact post-season administrative transition out of the interim role is unresolved at the January 14 reference cutoff.
+- Sean Payton: Stone's direct supervisor as Saints offensive coordinator from 2009 through April 2012. Payton remained the permanent Saints head coach while suspended during the 2012 season. Stone's exact post-season administrative transition out of the interim role is unresolved at the opening-of-January-14 reference snapshot.
 - Mickey Loomis: Saints executive vice president/general manager during Stone's New Orleans tenure. Stone participated substantially in personnel discussions in 2012 while final acquisition and contract authority remained with the personnel operation.
 - Drew Brees: Saints starting quarterback throughout Stone's offensive-coordinator and interim-head-coach tenure.
 - Pete Carmichael Jr.: Saints offensive staff colleague throughout Stone's New Orleans tenure and interim offensive coordinator during Stone's 2012 interim-head-coach season.
@@ -316,3 +316,20 @@ Document 3 establishes Stone as a head-coaching candidate with the following fiv
 Those candidacies are starting conditions only. No interview result, offer, ranking, negotiation outcome, staff package, contract, or hire is assumed by this dossier.
 
 The purpose of this file is to supply the candidate's established record before those organizations evaluate him, not to decide what they should conclude.
+
+## 13. Candidate-comparison symmetry
+
+This dossier is intentionally more detailed than the short public biographies available for many real 2013 candidates. That extra prose is **not** extra evidence and must never create a protagonist advantage.
+
+For hiring resolution:
+
+- freeze each organization's criteria from library/2013_coaching_market_pre_hire.md before evaluating this dossier against them;
+- reduce Stone's record to the same relevant evidence categories used for real candidates: current role, demonstrated HC/coordinator authority, play-calling, staff/organizational work, player/QB development evidence where applicable, personnel experience, availability, and material uncertainty;
+- do not reward degrees, biography length, narrative detail, prior fame, or user-authored specificity unless the frozen organization criteria make a concrete part of that background causally relevant;
+- do not infer endorsements, private relationships, staff commitments, philosophy, negotiation preferences, or interview answers from professional overlap;
+- compare a Stone claim and an equivalent real-candidate claim identically;
+- never consult the eventual real hire or later coaching career as a tie-breaker.
+
+Stone's Chargers playing history is a documented résumé fact for San Diego. It is not an automatic homecoming advantage, loyalty signal, ownership preference, or relationship bonus. Any organization-side reaction to that history must arise after the San Diego criteria freeze through a plausible simulated evaluator response.
+
+The market file supplies the comparator field. This dossier supplies Stone's evidence. Neither file decides the result.
