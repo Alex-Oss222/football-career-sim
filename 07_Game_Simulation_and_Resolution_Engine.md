@@ -6,12 +6,11 @@
 
 **Runtime status:** `AUTHORING MASTER - DO NOT LOAD DURING PLAY UNTIL §8 IS POPULATED`
 
-**Document version:** `0.3-authoring`
+**Document version:** `0.4-authoring`
 
 **Last verified:** `2026-09-17`
 
-**Last Document 7 content-changing update:** `2026-09-17 - created and locked the same day (design confirmed, hidden-layer sign-off given, January 2013 confirmed as era-calibration target), then extended the same day with the user's own week-to-week walkthrough: §5.1 preseason resolves as one bulk turn, not week by week; §5.2 flags the two output formats (in-season/offseason) as user-authored, not engine-invented; §5.3 states season length always follows Document 2's real rules-by-year rather than a hardcoded week count; §6 split into §6.1 Draft (unchanged) and §6.2 Free agency and other-team signings (new: real/generated market, one consolidated coach turn, autonomous competing offers, immediate cap accounting); §6.3 states the roster/cap-immediate vs. standings-weekly update cadence explicitly; §6.4 names the three existing rules that already guarantee precise, non-fudged cap numbers, tying them to the pending real-data library. No prior section's substance changed, and nothing in Documents 1-6 changed beyond the two cross-references already added.`
-
+**Last Document 7 content-changing update:** `2026-09-17 - §5.2 is now resolved from the user's supplied in-season and offseason output designs. Document 1 §12 is the presentation source of truth: regular/postseason uses the in-season format; training camp/preseason uses its bulk variant; offseason roster-building uses the offseason format; OTAs/minicamp use its compressed program variant; live games retain the dedicated live-game format. §11 item 4 is marked confirmed. No simulation-resolution mechanics changed.`\n
 **Supersedes:** Nothing. This is an addition to the existing package, not a replacement of any of Documents 1-6.
 
 ## 0. Why this document exists, and why it is not a rebuild
@@ -147,9 +146,19 @@ A full week costs roughly three to five user-facing exchanges when nothing unusu
 
 Per explicit user instruction, the preseason period (Document 2 §6.1's training-camp/preseason window) does not run the weekly loop above at all. It resolves as a single bulk turn: one consolidated brief covering roster-cut decisions, the preseason-game slate's results and notable performances, and camp-battle outcomes, presented once at the transition into the regular season rather than week by week. A preseason event escalates out of the bulk summary only for something that would already force a decision under Document 1's ordinary rules regardless of period — a season-ending injury to a projected starter, for instance — never merely because a preseason week occurred.
 
-### 5.2 Two output formats — user-authored, not engine-authored
+### 5.2 Two output formats — resolved by the user
 
-Per explicit user instruction, the actual presentation format of a response differs by whether the sim is in-season or in the offseason, and the user wants to design both formats rather than have this engine invent them. Document 1 §12.1 already defines a normal-response shape (dated header, then three parts: team/period consequences, current focus, head-coach decision) that is the closest existing analog to an in-season template, but it was written before this document existed and has not been confirmed as the final in-season format. No offseason-specific format exists yet at all. This document deliberately leaves both open: do not invent either template; ask the user for the exact shape they want, once, and record the result in Document 1 §12 rather than here.
+The user supplied the in-season and offseason presentation designs on 2026-09-17. Document 1 §12 is now the sole presentation source of truth and this engine must not invent a competing format.
+
+The routing is:
+
+- regular season and postseason -> Document 1 §12.2 in-season format;
+- training camp and preseason -> Document 1 §12.4 compressed in-season bulk variant, preserving §5.1's one-turn preseason rule;
+- season closeout, free agency, draft, and other offseason roster-building -> Document 1 §12.3 offseason format;
+- offseason program, OTAs, and minicamp -> Document 1 §12.4 compressed offseason-program variant;
+- live interactive game state -> Document 1 §12.5 live-game format.
+
+The engine supplies reconciled outcomes, usage, statistics, injuries/availability consequences, market actions, and decision triggers. Document 1 controls how those facts are shown to the user. Coach-facing output continues to obey the package's qualitative-evaluation and anti-meter rules; hidden Engine State is never reformatted into visible /10 grades, job-security percentages, or other universal scores.
 
 ### 5.3 Regular-season length is a real, not hardcoded, fact
 
@@ -227,4 +236,4 @@ The evidence-labeling system, the real-person protections, the append-only ledge
 1. **Hidden Engine State layer.** Confirmed by the user 2026-09-17. Built as described in §1: invisible to the user, structurally walled off from every coach-facing document.
 2. **Default granularity dial.** Not separately asked; adopted as recommended — Document 1 §11.2's existing "Executive head-coach mode" as the default, with the leverage gate in §4 forcing a pause regardless of mode at the listed triggers. Changeable at any time without a redesign; revisit if the user objects.
 3. **Target season/era for calibration.** Confirmed by the user 2026-09-17: January 2013 forward (Alex Stone, HC candidate, not yet hired), matching Document 3's starting canon. §8's placeholders now wait on the real-data library build rather than on this decision.
-4. **Two output formats (in-season / offseason).** Open, per §5.2. The user wants to author both; this document does not invent them.
+4. **Two output formats (in-season / offseason).** Confirmed by the user 2026-09-17 and recorded in Document 1 §12; routing and engine/presentation separation are stated in §5.2.
