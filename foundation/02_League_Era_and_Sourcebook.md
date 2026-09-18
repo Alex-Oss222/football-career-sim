@@ -6,13 +6,13 @@
 
 **Runtime status:** `AUTHORING MASTER - DO NOT LOAD DURING PLAY`
 
-**Document version:** `0.4-authoring`
+**Document version:** `0.5-authoring`
 
 **Mode-lock revision:** `UNLOCKED`
 
 **Last verified:** `2026-09-17`
 
-**Last Document 2 content-changing update:** `2026-09-17 - added §6.1, the annual period register supporting Document 3 §10's hiring-search calendar gating, per explicit user instruction. Prior update: added the Historical class sourcing, simulated order, and post-selection continuation rule under §12.`
+**Last Document 2 content-changing update:** `2026-09-17 - populated §6 (calendar), §11 (financial rules, including the full 2013 franchise/transition tag tables), and §12's factual/structural draft fields (dates, venue, rounds, eligibility) with verified real 2013 NFL data, per the first real-data library build (library/2013_league_calendar_and_financial_rules.md, library/2013_coaching_market.md, library/2013_draft_class.md). §12's pick-inventory table itself was deliberately left empty with an explanatory note -- per this document's own Historical class sourcing rule, the simulation's own draft order must be computed from its own standings and never copied from the real 2013 order, which stays in the library file as a comparator only. Prior update: added §6.1, the annual period register supporting Document 3 §10's hiring-search calendar gating.`
 
 **Applies from:** `Not applicable until mode lock`
 
@@ -225,22 +225,26 @@ Also record:
 
 This section fixes league and institutional dates. Document 5 tracks which date is current.
 
+**Partially populated 2026-09-17 with verified real 2013 NFL league-year dates** (sourced and independently cross-checked; see `library/2013_league_calendar_and_financial_rules.md` for full sourcing and verification notes). Rows not yet researched remain bracketed rather than guessed, per this section's own rule below.
+
 | Event | Exact date/time | Time zone | Rule effect | Source |
 |---|---|---|---|---|
-| League or academic year begins | `[DATE/TIME]` | `[ZONE]` | `[EFFECT]` | `[SOURCE]` |
-| Free agency or recruiting contact opens | `[DATE/TIME]` | `[ZONE]` | `[EFFECT]` | `[SOURCE]` |
-| Draft, signing day, or allocation event | `[DATE/TIME]` | `[ZONE]` | `[EFFECT]` | `[SOURCE]` |
-| Offseason program begins | `[DATE/TIME]` | `[ZONE]` | `[EFFECT]` | `[SOURCE]` |
-| Mandatory reporting date | `[DATE/TIME]` | `[ZONE]` | `[EFFECT]` | `[SOURCE]` |
-| First practice | `[DATE/TIME]` | `[ZONE]` | `[EFFECT]` | `[SOURCE]` |
-| Roster reduction or eligibility deadline | `[DATE/TIME]` | `[ZONE]` | `[EFFECT]` | `[SOURCE]` |
-| Regular season begins | `[DATE/TIME]` | `[ZONE]` | `[EFFECT]` | `[SOURCE]` |
-| Trade, transfer, or recruiting deadline | `[DATE/TIME]` | `[ZONE]` | `[EFFECT]` | `[SOURCE]` |
-| Postseason begins | `[DATE/TIME]` | `[ZONE]` | `[EFFECT]` | `[SOURCE]` |
-| Championship | `[DATE/TIME]` | `[ZONE]` | `[EFFECT]` | `[SOURCE]` |
-| Contract, staff, or retention deadline | `[DATE/TIME]` | `[ZONE]` | `[EFFECT]` | `[SOURCE]` |
+| League year begins / free agency opens | March 12, 2013, 4:00 PM | ET | Start of the 2013 league year; free-agent signings become executable. A new "legal tampering" negotiating window (agents only, not players) ran March 9-11, 2013 — the first year this pre-window existed. | NFL team-site PR (Saints, Jaguars, Jets, Steelers, Eagles, Buccaneers); confirmed independently across multiple outlets, see library file |
+| Franchise/transition tag deadline | March 4, 2013, 4:00 PM | ET | Deadline for clubs to designate a franchise or transition player for 2013. | National Football Post; confirmed |
+| Scouting combine | February 20-26, 2013 | ET (Indianapolis) | Public evaluation window opens for the 2013 draft class; 333 prospects invited, Lucas Oil Stadium. | ESPN, NFL.com, multiple team sites; confirmed |
+| Free agency or recruiting contact opens | See "League year begins" row above (same event in the NFL) | ET | `[N/A — same event]` | `[N/A]` |
+| Draft, signing day, or allocation event | April 25-27, 2013 (Round 1: Thu 8:00 PM ET; Rounds 2-3: Fri 6:30 PM ET; Rounds 4-7: Sat) | ET | Radio City Music Hall, New York. | ESPN, NFL.com, Wikipedia; confirmed |
+| Offseason program begins | `[PENDING FURTHER RESEARCH]` | `[ZONE]` | `[EFFECT]` | `[SOURCE]` |
+| Mandatory reporting date | `[PENDING FURTHER RESEARCH]` | `[ZONE]` | `[EFFECT]` | `[SOURCE]` |
+| First practice | `[PENDING FURTHER RESEARCH]` | `[ZONE]` | `[EFFECT]` | `[SOURCE]` |
+| Roster reduction or eligibility deadline | `[PENDING FURTHER RESEARCH — the 53-man final cutdown date]` | `[ZONE]` | 53-man active-roster limit confirmed (see §11 below); exact 2013 cutdown date not yet researched | `[SOURCE]` |
+| Regular season begins | `[PENDING FURTHER RESEARCH]` | `[ZONE]` | `[EFFECT]` | `[SOURCE]` |
+| Trade, transfer, or recruiting deadline | `[PENDING FURTHER RESEARCH]` | `[ZONE]` | `[EFFECT]` | `[SOURCE]` |
+| Postseason begins | `[PENDING FURTHER RESEARCH]` | `[ZONE]` | `[EFFECT]` | `[SOURCE]` |
+| Championship | `[PENDING FURTHER RESEARCH]` | `[ZONE]` | `[EFFECT]` | `[SOURCE]` |
+| Contract, staff, or retention deadline | `[PENDING FURTHER RESEARCH]` | `[ZONE]` | `[EFFECT]` | `[SOURCE]` |
 
-If an exact date is not yet published or cannot be verified, enter `UNDETERMINED` and the earliest plausible verification point. Do not fabricate a deadline.
+If an exact date is not yet published or cannot be verified, enter `UNDETERMINED` and the earliest plausible verification point. Do not fabricate a deadline. The `[PENDING FURTHER RESEARCH]` rows above were simply not part of the 2026-09-17 research pass's scope (which focused on the coaching-search-relevant dates); they are not harder to verify than the rows already filled in.
 
 ### 6.1 Period register
 
@@ -496,15 +500,23 @@ Do not invent misconduct to activate a disciplinary system.
 
 ### 11.1 Competitive financial rules
 
-- Salary cap or roster-cost limit: `[AMOUNT / NONE / FORMULA]`
-- Salary floor or minimum team salary: `[AMOUNT / NONE / FORMULA]`
-- Accounting period: `[DATES]`
-- Cap treatment of bonuses: `[RULE]`
-- Dead money or termination accounting: `[RULE]`
-- Incentive treatment: `[RULE]`
-- Rookie or entering-player pool: `[RULE]`
-- Luxury tax or revenue sharing: `[RULE OR NONE]`
-- Special spending restrictions: `[RULE]`
+**Populated 2026-09-17 with verified 2013 NFL figures** (2011 CBA era). Full sourcing and independent verification notes in `library/2013_league_calendar_and_financial_rules.md`.
+
+- Salary cap or roster-cost limit: $123,000,000 per team for the 2013 league year (up from $120.6M in 2012). Confirmed independently across NFL.com, ESPN, CBS Sports, and NFL Network's own year-by-year cap history.
+- Salary floor or minimum team salary: No single-season per-team floor. Under the 2011 CBA, each team must spend at least 89% of the aggregate salary cap in cash, measured as an aggregate over the four-year period 2013-2016 (and again 2017-2020) — not a single-season requirement. Falling short in any one season is not itself a violation; any shortfall at the end of the four-year window is paid directly to players. There is no separate single-year 95% league-wide requirement specific to 2013 alone (an earlier draft of this entry stated one; it was corrected during verification — the closest such figure, a 99% league-wide cash floor, applied only to 2011-2012, a different rule and different years).
+- Accounting period: League year runs from the 2013 league-year start (March 12, 2013, 4:00 PM ET) through the following year's league-year start.
+- Cap treatment of bonuses: Signing bonuses are prorated straight-line over the life of the contract, to a maximum of 4 years, regardless of actual contract length.
+- Dead money or termination accounting: On release or trade, all remaining prorated signing-bonus money accelerates immediately onto the team's current-year cap as dead money. A team may designate up to two players per league year as "post-June 1" cuts: for those, only the current year's proration counts immediately and the remainder is pushed to the following league year instead of hitting all at once.
+- Incentive treatment: `[PENDING FURTHER RESEARCH — likely-attained vs. not-likely-attained incentive cap treatment was not part of this research pass]`
+- Rookie or entering-player pool: 2011 CBA rookie wage scale. All drafted rookies receive fixed, unalterable 4-year contracts (undrafted rookies get 3 years); only first-round picks carry a club option for a 5th year. Compensation is slotted via a Rookie Compensation Pool tied to exact draft position. Signing bonuses are prorated straight-line over a maximum of 4 years. A club cannot raise a drafted rookie's annual salary by more than 25% of his Year-One Rookie Salary (the "25% Rule").
+- Luxury tax or revenue sharing: `[PENDING FURTHER RESEARCH]`
+- Special spending restrictions: `[PENDING FURTHER RESEARCH]`
+
+**2013 franchise tag values by position** (final, confirmed exact against two independent itemized tables): QB $14.896M; DE $11.175M; CB $10.854M; WR $10.537M; OL $9.828M; LB $9.619M; DT $8.450M; RB $8.219M; S $6.916M; TE $6.066M; P/K $2.977M.
+
+**2013 transition tag values by position** (final, confirmed exact): QB $13.068M; DE $9.151M; CB $9.095M; WR $8.867M; OL $8.709M; LB $8.358M; DT $7.039M; RB $6.970M; S $6.002M; TE $5.194M; P/K $2.700M.
+
+**Roster rules, 2013:** 53-man active roster; 46 players may dress on game day (7 inactive), a rule in place since 2011; practice squad capped at 8 players (expanded to 10 only starting in 2014 — do not apply the 10-player rule to a 2013 date).
 
 ### 11.2 Organization-specific resources
 
@@ -525,26 +537,28 @@ Never present a fictional management budget as a league salary cap. Never calcul
 
 ## 12. Draft, allocation, or recruiting order
 
-- Event name: `[NAME]`
-- Dates and times: `[EXACT SCHEDULE]`
-- Location or format: `[DETAILS]`
-- Number of rounds: `[NUMBER]`
-- Selection time by round: `[RULE]`
-- Base ordering: `[RULE]`
-- Postseason grouping: `[RULE]`
-- Tie resolution: `[RULE]`
-- Rotation of tied clubs: `[RULE]`
-- Compensatory selections: `[RULE AND INSERTION POINTS]`
-- Supplemental process: `[RULE OR NONE]`
-- Eligibility: `[RULE]`
-- Trading selections: `[RULE]`
+- Event name: 2013 NFL Draft (populated 2026-09-17, verified)
+- Dates and times: April 25-27, 2013. Round 1: Thursday April 25, 8:00 PM ET. Rounds 2-3: Friday April 26, 6:30 PM ET. Rounds 4-7: Saturday April 27.
+- Location or format: Radio City Music Hall, New York City.
+- Number of rounds: 7.
+- Selection time by round: `[PENDING FURTHER RESEARCH — the per-pick clock length by round]`
+- Base ordering: Inverse order of the prior season's standings, with ties broken per the sequence below; identical to the general NFL rule, not counterfactual in itself.
+- Postseason grouping: `[PENDING FURTHER RESEARCH]`
+- Tie resolution: Strength of schedule (aggregate opponents' winning percentage) for the 2013 draft specifically — confirmed via the real Chiefs (1st) vs. Jaguars (2nd) and Raiders/Eagles/Lions (3rd/4th/5th, all 4-12) tiebreak groupings. `[General ordered tiebreaker sequence beyond strength-of-schedule PENDING FURTHER RESEARCH]`
+- Rotation of tied clubs: `[PENDING FURTHER RESEARCH]`
+- Compensatory selections: `[PENDING FURTHER RESEARCH]`
+- Supplemental process: `[PENDING FURTHER RESEARCH]`
+- Eligibility: Players become draft-eligible per NFL underclassman-declaration rules; for 2013 a record 73 underclassmen forfeited remaining NCAA eligibility to declare (confirmed via the NFL's own Jan. 19, 2013 announcement, reported independently by the New York Times, NBC Sports, and others), breaking the prior record of 65 set in 2012.
+- Trading selections: Picks may be traded before or during the draft; see the pick inventory rule below.
 
 ### Pick inventory rule
 
 Document owned selections by original club and round until the exact official or counterfactual order is computed. Do not infer an overall number by adding the league size to a prior-round slot. Tied clubs can rotate and compensatory selections can shift later rounds.
 
+**Important: this table is never populated with the real 2013 draft order as if it were the simulation's own order.** Per the Historical class sourcing rule immediately below, the actual 2013 NFL draft order (Chiefs 1st, Jaguars 2nd, etc.) is a real, verified fact about the real world, but the simulation's OWN selection order must be computed fresh from the simulation's own standings and can diverge from it the moment any simulated team's record differs from history (which becomes likely the moment the protagonist's presence changes any team's season). The real 2013 order is preserved as a comparator in `library/2013_draft_class.md`, not written into this table. This table stays empty until the simulation actually reaches a draft with its own computed standings.
+
 | Round | Original club | Ownership basis | Exact overall | Verification status | Source or canon event |
-|---:|---|---|---:|---|---|
+|---:|---|---|---|---|---|
 | `[ROUND]` | `[CLUB]` | `[OWN / TRADE / COMPENSATORY]` | `[NUMBER OR UNDETERMINED]` | `[VERIFIED / REQUIRES FULL ORDER]` | `[SOURCE]` |
 
 ### Historical class sourcing, simulated order, and post-selection continuation
