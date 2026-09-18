@@ -46,6 +46,7 @@ career/
       hiring_search_brief/
       initial_roster.md          <- built once, right after a hire closes: the real inherited roster, sourced -- players/positions/experience only, no contract figures
       initial_cap_sheet.md       <- the full financial breakdown for that same roster: contract terms, cap hits, dead money, cap space (AGENTS.md's roster/cap-sheet task); both kept here rather than library/ so they're found with the rest of that year's record
+      roster_evaluation.md       <- Stone's own dated evaluation of the inherited roster and his approach across the offseason calendar -- his recommendation; actual roster cuts/outcomes are not assumed from it
       staff_building/
         staff_plan.md          <- who Stone is pursuing/considering, and why
         hires.md               <- who actually signed on, in what role, when
