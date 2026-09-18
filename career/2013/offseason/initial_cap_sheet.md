@@ -21,7 +21,7 @@ The OverTheCap historical-contract export was matched against the roster invento
 
 ### Pass 2 — skeptical re-check
 
-Contract matches were re-checked against player identity, signing year and nominal term. The export does not provide annual base salaries, bonus-proration schedules, individual 2013 cap charges, release offsets, or a January 15 club ledger. Therefore this sheet does not reverse-engineer them from total value, does not divide guarantees evenly, and does not present a made-up cap-space total. Every unavailable field is marked unknown. This is a deliberate validation stop, not an estimate.
+The original historical-contract export was re-checked against player identity, signing year and nominal term and was confirmed to be insufficient by itself for annual cap accounting. A second research layer then used player-specific historical contract records and contemporaneous Jaguars/NFL cap reporting to recover major 2013 charges and a defensible club planning range. Exact figures are shown only where a source provides them or where a pre-existing obligation can be reconstructed transparently; approximations are labeled. The remaining low-value contracts, dead-money adjustments and league worksheet items stay open rather than being forced into a false penny-accurate total.
 
 ## Governing 2013 controls
 
