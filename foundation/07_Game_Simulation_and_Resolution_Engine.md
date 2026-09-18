@@ -6,11 +6,11 @@
 
 **Runtime status:** `AUTHORING MASTER - DO NOT LOAD DURING PLAY UNTIL §8 IS POPULATED`
 
-**Document version:** `0.5-authoring`
+**Document version:** `0.6-authoring`
 
-**Last verified:** `2026-09-17`
+**Last verified:** `2026-09-18`
 
-**Last Document 7 content-changing update:** `2026-09-17 - created and locked the same day (design confirmed, hidden-layer sign-off given, January 2013 confirmed as era-calibration target), extended with the week-to-week walkthrough (§5.1-§5.3, §6.1-§6.4), extended again for the SCOTUS-style folder layout (§12) and the finalized output templates (§5.2), then extended three more times the same day: a third output template and file-persistence rule for the hiring search itself (§11 item 7), §3.7's hook for the user's own external real-world playbook (kept out of this repo entirely, looked up one play at a time, its "expected yards" treated as a situational modifier never a lookup result) (§11 item 6), and a versioning addendum to §3.7 once the user noted the playbook will evolve in iterations across a career -- playbook content stays external and unversioned by this project, but the DATE each iteration began is recorded per Document 6's existing dated-supersession discipline, so an earlier game always resolves against the scheme that existed then. No prior section's substance changed.`
+**Last Document 7 content-changing update:** `2026-09-18 - added a Codex delegation note to §1's scope-discipline rule and a corresponding note to §12, pointing at the new repository-root AGENTS.md (background-league weeks and real-data-library expansion delegated there; the interactive career is never delegated). Prior update (2026-09-17): created and locked the same day, extended with the week-to-week walkthrough (§5.1-§5.3, §6.1-§6.4), the SCOTUS-style folder layout (§12), the finalized output templates (§5.2), a third output template and file-persistence rule for the hiring search (§11 item 7), §3.7's playbook hook and its versioning addendum (§11 item 6). No prior section's substance changed.`
 
 **Supersedes:** Nothing. This is an addition to the existing package, not a replacement of any of Documents 1-6.
 
@@ -43,6 +43,8 @@ To compare a pass offense to a pass defense, weight a fourth-and-two, or decide 
 2. Marquee, rivalry, and every postseason game leaguewide, so league history retains real texture.
 
 Every other background game between two non-protagonist teams resolves through a cheaper narrative-judgment pass: football-literate prose applied consistently to the same hidden unit tiers, with the same "variance compresses as sample size grows" discipline as §3.6, but no per-drive dice chain. Both paths write to the same schedule/results register in Document 6; a background game's simpler resolution is never mentioned to the user as lower-fidelity.
+
+**Delegated to Codex, added 2026-09-17.** Per the repo's `AGENTS.md` (root level, added the same day), background-league weeks are run as a separate batch task rather than by whoever is running the interactive side of this project — highlights only (final score, 2-4 sentences, standout performers, never play-by-play), written to `career/[year]/league_results/week_[NN].md`. Reactive events (a trade demand, a coaching hot seat) are allowed but must fire from an already-logged mechanical trigger, never manufactured to fill a quiet week, per §7's Locker Room/Media agent rule below — this is a hard bound on frequency, not a ban on the events themselves; the user has explicitly said unpredictable, consequential events are welcome as long as they're not happening to someone every single week.
 
 ## 2. Rating anchors
 
@@ -253,3 +255,5 @@ Resolved 2026-09-17, mirroring the SCOTUS project's proven layout at the user's 
 - **`library/`** — real-world reference data with no dedicated slot elsewhere in Documents 1-7: era-specific research (team/coaching-market dossiers, draft-class pre-selection data) that supports the coach-facing documents but isn't itself a rule (that's `foundation/`), a live snapshot (`state/`), played history (`career/`), or quarantined material (`archive/`). Added 2026-09-17 with the first real-data library build (January 2013 forward); see `library/2013_league_calendar_and_financial_rules.md`, `library/2013_coaching_market.md`, and `library/2013_draft_class.md`. Load-bearing rule values sourced from here (the 2013 cap number, calendar dates, tag tables) are copied into their proper home in Document 2 §6/§11/§12 as canon; the library files exist so those numbers stay traceable to a source and a verification note.
 
 This mirrors SCOTUS's `foundation/` (stable rulebook) + `state/` (current trackers) + `terms/OT<year>/` (per-term instance folders) + `archive/` almost exactly, plus one addition (`library/`) for real-world reference data the SCOTUS project didn't need in the same way. No document's internal numbering or content changed because of this move — only where each file physically lives.
+
+**`AGENTS.md`** (repository root, added 2026-09-17) — the Codex-facing task file, mirroring the SCOTUS project's own AGENTS.md. Currently defines two live tasks (simulate a background-league week; expand the real-data library) and one placeholder (run an offseason cycle, gated on the user first supplying a team-building brief). Only bounded, low-interactivity work is delegated there — see §1's scope-discipline note above for why background-league weeks specifically are a Codex task rather than something the interactive side of this project runs itself.

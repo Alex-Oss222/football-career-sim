@@ -10,6 +10,10 @@ Holds the actual played career — one subfolder per year, exactly the way the S
 career/
   2013/
     ledger.md                  <- this season's slice of the Document 6 append-only ledger (schema/format defined in foundation/06_..., not here)
+    league_results/
+      week_01.md                <- background-league results (every game NOT involving the protagonist), highlights only, per AGENTS.md's "Simulate background league" Codex task
+      week_02.md
+      ...
     preseason/
       bulk_report.md           <- the single bulk turn per Document 7 §5.1
     regular_season/
