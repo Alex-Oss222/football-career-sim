@@ -59,7 +59,7 @@ After a hire, `career/2013/` becomes the normal season-history directory and gai
 Runtime tasks must read only the library files permitted for their phase.
 
 - **`library/alex_stone_character_dossier_pre_hire.md`** — factual pre-hire Stone reference. It does not decide his philosophy, motives, future staff, interview answers, or 2013 outcome.
-- **`library/2013_coaching_market_pre_hire.md`** — clean January 14 hiring-market view used by the search resolver.
+- **`library/2013_coaching_market_pre_hire.md`** — clean opening-of-January-14 hiring-market view used by the search resolver, with events cut off at 11:59 PM ET on January 13 so later hiring outcomes cannot leak backward.
 - **`library/2013_coaching_market.md`** — quarantined hindsight/comparator research. It contains actual future outcomes and must not be loaded while resolving Stone's 2013 search.
 - **`library/2013_league_calendar_and_financial_rules.md`** — sourced 2013 calendar/CBA/cap research.
 - **`library/2013_draft_class.md`** — final pre-selection scouting snapshot, loadable in full only at the April 25 pre-draft cutoff.
