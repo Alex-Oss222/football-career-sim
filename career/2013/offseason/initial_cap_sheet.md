@@ -2,7 +2,7 @@
 
 **Accounting date:** January 15, 2013  
 **League-year distinction:** the 2013 league year and its $123,000,000 cap do not begin until March 12, 2013 at 4:00 p.m. ET.  
-**Status:** `PARTIALLY RECONCILED — 2013 BASE-SALARY PASS ADDED; BONUS PRORATION AND GROSS CLUB LEDGER STILL UNSOURCEABLE`
+**Status:** `PARTIALLY RECONCILED — DIRECT 2013 JACKSONVILLE CAP-SPACE SEARCH COMPLETED; NO TEAM-SPECIFIC FIGURE INDEPENDENTLY CONFIRMED`
 
 ## Sources and evidence boundary
 
@@ -142,8 +142,8 @@ These totals are useful obligations, but **not substitutes for annual cap accoun
 | Rookie pool/set-aside | **Not yet fixed in this snapshot** | Draft contracts do not exist on January 15 |
 | Carryover/other adjustments | **Unknown** | Requires league notice/club ledger |
 | Adjusted team cap | **Unknown** | $123,000,000 league ceiling alone is not the adjusted club cap |
-| Remaining cap space | **Not calculated** | Any precise figure would be fabricated |
+| Remaining cap space | **Confirmed unavailable from the completed search** | A first-pass search located contemporaneous cap-space coverage, but a separate second-pass search did not produce two independent, dated sources agreeing on a Jacksonville-specific figure. No amount is adopted, and the incomplete player table is not summed or used to estimate one. |
 
 ### Financial decision gate
 
-No signing, release, restructuring or trade may be represented as cap-legal from this sheet alone. Before the first transaction, obtain a dated club ledger or a source containing every 2013 cap charge, dead-money item, carryover and adjustment; then reconcile the sum to the reported club total.
+No signing, release, restructuring or trade may be represented as cap-legal from this sheet alone. The direct top-down search is closed without a confirmed Jacksonville figure: contemporaneous February–March 2013 league-wide and team-specific cap-space coverage was searched in a first pass, then re-searched independently by outlet and figure in a skeptical second pass, but no Jacksonville amount could be verified across two dated sources. Do not reopen a bottom-up estimate from the incomplete player table and do not substitute an approximation; this gate can clear only if a real, dated Jacksonville total is later located and independently confirmed.
