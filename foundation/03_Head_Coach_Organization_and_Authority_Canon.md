@@ -141,6 +141,8 @@ Any field not listed in this table (name, birthplace, languages, marital status,
 
 Only the user may establish the protagonist's beliefs, motives, philosophy, promises, emotional responses, career goals, or relationship decisions. Supplied language may be offered for confirmation but is not automatically adopted.
 
+**Deliberately deferred, 2026-09-17.** Every field in §2.1 and every candidate line in §2.2 is intentionally left open, not overlooked — the user has chosen not to decide Stone's coaching identity while he is still an unhired candidate. This gets resolved after he is actually hired somewhere, not before. Do not treat the blank fields below as a blocking gap in the meantime, and do not infer a philosophy from the interview process itself; an interview may ask him questions, but his actual answers still require the user's input when that scene is played.
+
 ### 2.1 Canonical football identity
 
 | Dimension | User-confirmed canon | Evidence or source | Last confirmed |
