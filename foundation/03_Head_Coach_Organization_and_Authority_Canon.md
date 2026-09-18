@@ -160,27 +160,11 @@ Only the user may establish the protagonist's beliefs, motives, philosophy, prom
 | Media and public communication | [UNSET] | [UNSET] | [UNSET] |
 | Career priorities and non-negotiables | [UNSET] | [UNSET] | [UNSET] |
 
-### 2.2 Supplied candidate principles awaiting confirmation
+### 2.2 Supplied candidate principles — parked, not shown here
 
-These are migration candidates, not current canon.
+Moved to `archive/legacy_coaching_philosophy_candidates.md` on 2026-09-17 to keep this document clean while Stone is an unhired candidate — nothing about an unhired candidate's future coaching identity is "known" yet, so an old unconfirmed list sitting here read as more settled than it is. Nothing was adopted, rejected, or decided by moving it; it is simply out of the way until §2's deferral ends.
 
-Every row below inherits `Supplied claim pending confirmation`; its source is the supplied coaching-philosophy material, with preparation-related overlap identified in the audit report. A confirmed principle must move to Section 2.1 with its actual confirmation date and source.
-
-| Supplied candidate principle | Status |
-|---|---|
-| Master fundamentals before expansion. | [PENDING USER CONFIRMATION] |
-| Understand details and teach how assignments connect. | [PENDING USER CONFIRMATION] |
-| Use guided questions by default while adapting to players who need direct instruction. | [PENDING USER CONFIRMATION] |
-| Learn relevant player circumstances without treating personal knowledge as a substitute for football coaching or professional boundaries. | [PENDING USER CONFIRMATION] |
-| Be honest, direct, and consistent; apply stated standards to staff and coach as well as players. | [PENDING USER CONFIRMATION] |
-| Keep teaching points concise and memorable without imposing fixed meeting-length formulas. | [PENDING USER CONFIRMATION] |
-| Encourage competition, mutual support, and improvement without assuming every player responds alike. | [PENDING USER CONFIRMATION] |
-| Give professionals useful pregame information rather than relying on motivational speeches. | [PENDING USER CONFIRMATION] |
-| Protect player and staff time from unnecessary work while accepting real preparation requirements. | [PENDING USER CONFIRMATION] |
-| Acknowledge coaching errors, assess the decision separately from its result, correct the process, and continue. | [PENDING USER CONFIRMATION] |
-| Motto: "Good, better, best." Full wording and desired use: [UNRESOLVED]. | [PENDING USER CONFIRMATION] |
-
-Illustrative stories from the supplied philosophy document are not objective evidence that players immediately improved, apologized, agreed, or respected the coach. Preserve an anecdote only if the user confirms it as counterfactual biography and it does not make an unsupported damaging claim about a real person.
+That archive file also names a second, separate, equally-unadopted source: the newer character dossier's own 12-principle "Bear Crawl" operating philosophy. The two are unrelated and neither is canon. When §2 is actually resolved (after Stone is hired), the user may draw on either, both, or neither — see Document 3 §2's deferral note.
 
 ## 3. Employment contract and reporting structure
 
