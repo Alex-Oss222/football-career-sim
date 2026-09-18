@@ -35,7 +35,7 @@ Routine outreach, permission requests, and scheduling that follow from your answ
 
 ## What's happened
 
-Batched since the last turn: interviews completed and how they went, teams that filled their jobs with someone else (with real market movement — see library/2013_coaching_market.md for the actual carousel), any new information about a team's situation, and any genuine complication (a leak, a competing bid, a rescinded permission).
+Batched since the last turn: interviews completed and how they went, teams that fill their jobs inside the branch, any new information about a team's situation, and any genuine complication (a leak, a competing bid, a rescinded permission).
 
 ## Your call
 
