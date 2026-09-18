@@ -5,9 +5,9 @@
 | Field | Canonical entry |
 |---|---|
 | Document status | `NOT READY` — rebuilt template; career not initialized. After every substantive Section 12 gate and companion-document readiness check is satisfied, set this field to `READY` as the administrative close. The separate final instruction to initialize remains outstanding and does not prevent readiness. |
-| Document version | Rebuild draft 1.8 |
-| Supersedes | Rebuild draft 1.7 template. No initialized career canon or in-world event is superseded. |
-| Last Document 3 content-changing update | 2026-09-17 — revised §1.1-§1.6 and §7.1 a third time the same day. Second round adopted a fuller alternate source's timeline (10-season playing career, PhD, Patriots-to-Saints-to-interim-HC coaching path) after it surfaced Stone's real divergence-point service as Saints interim head coach during Sean Payton's 2012 suspension. Third round reverted the geographic-constraint field: the user clarified that the objection to "doesn't matter" was about it reading as hollow AI hedging, not a request to manufacture marital strain — Inbar remains background color only, and the field is now simply "no constraint," not an invented problem. See §1.6 for the full resolution record. Prior update: added §10, External hiring market and search-cycle procedure, and renumbered former §§10-11 to §§11-12. No initialized career canon or in-world event is superseded. |
+| Document version | Rebuild draft 1.9 |
+| Supersedes | Rebuild draft 1.8 template. No initialized career canon or in-world event is superseded. |
+| Last Document 3 content-changing update | 2026-09-18 — added a criteria-freeze rule to §10.4 (Candidate evaluation) per new Document 1 §9.1: when the protagonist is a candidate, a hiring organization's needs/constraints/weighting must be fixed from real evidence before his pitch is read, never reshaped around it afterward. Prior update (2026-09-17): revised §1.1-§1.6 and §7.1 a third time the same day — see §1.6 for the full biography resolution record. Prior update: added §10, External hiring market and search-cycle procedure, and renumbered former §§10-11 to §§11-12. No initialized career canon or in-world event is superseded. |
 | Canonical as-of date | [UNSET] |
 | Competition, season, and team | [DERIVED DOCUMENT 2 REFERENCE; UNSET] |
 | Simulation mode | [DERIVED DOCUMENT 2 MODE-LOCK REFERENCE; UNSET] |
@@ -475,6 +475,8 @@ A search conducted by any organization other than the protagonist's, in which th
 ### 10.4 Candidate evaluation
 
 Evaluate every candidate — real or simulation-generated, for the protagonist's own openings or as comparators for his own candidacy — under the same demonstrated-record/fit/projection framework Document 1 §6.3 uses for players, never a hidden true rating. A real person's known public career record is fair evaluation material; his real future career after the simulation's divergence point is not and must not be used as a hidden answer key.
+
+**Criteria freeze, added 2026-09-18 per Document 1 §9.1.** When the protagonist is himself a candidate, the hiring organization's actual needs, constraints, and evaluation weighting must be established from the real, already-known evidence about that organization (its real front-office situation, cap position, roster needs, ownership priorities — see `library/` where it exists) *before* his specific pitch is read against them. Do not derive or adjust what an organization is "really looking for" from having just seen what the protagonist is offering — that is exactly the failure mode this rule exists to prevent, an organization's fit criteria quietly reshaping themselves around the candidate instead of the other way around. Where a genuine negotiation produces a real concession or counter, it must trace to the organization's pre-established constraints (e.g., a new owner's real caution about guaranteeing money to an unproven head coach), not to narrative convenience.
 
 ## 11. Revision and contradiction controls
 

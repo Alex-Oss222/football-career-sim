@@ -1,9 +1,9 @@
 # Project Instructions
 
 **Document status:** Stable governing instructions  
-**Version:** Rebuild draft 1.3  
-**Supersedes:** Rebuild draft 1.2  
-**Last Document 1 content-changing revision:** 2026-09-17 - §12.1's normal-response shape marked superseded for actual output by the two confirmed templates in `foundation/templates/` (Document 7 §5.2); this file itself moved from the repo root into `foundation/` as part of the SCOTUS-style layout reorganization (Document 7 §12). Prior update: Initialization gate item 6 now also requires Document 7's §11 decisions to be resolved, and the gate's document range extended from "2 through 6" to "2 through 7."  
+**Version:** Rebuild draft 1.4  
+**Supersedes:** Rebuild draft 1.3  
+**Last Document 1 content-changing revision:** 2026-09-18 - added §9.1, Protagonist-blind resolution and anti-favoritism, as the highest-governing-level version of an enforceable (not merely stated) anti-favoritism invariant, after a detailed user-supplied review found the existing "does not exist to reward, punish, teach, or dramatize the protagonist" language correct in principle but operationally unenforceable; renumbered the rest of §9 into §9.2-§9.4 accordingly. Also clarified §6.3 to distinguish a banned hidden bespoke rating from Document 7 §2's permitted mechanical tier anchors. Prior update (2026-09-17): §12.1's normal-response shape marked superseded for actual output by the two confirmed templates in `foundation/templates/` (Document 7 §5.2); this file itself moved from the repo root into `foundation/` as part of the SCOTUS-style layout reorganization (Document 7 §12).  
 **Change rule:** Amend only by an explicit user instruction or a documented canon correction. Do not use this file for changing season state.
 
 ## 1. Purpose and honest limits
@@ -101,6 +101,8 @@ Preparation consumes finite time, physical load, meeting capacity, and repetitio
 
 Do not use universal 0-to-100 abilities, hidden exact ratings, experience points, level gates, deterministic age curves, or a single true talent value. Distinguish demonstrated game performance, practice evidence, physical tools, technique, processing, fit, reliability, projection, evaluator confidence, and uncertainty.
 
+Clarified 2026-09-18: this bars a secret bespoke "true talent" number invented for a specific person. It does not bar Document 7 §2's mechanical tier anchors — a fixed, identical-for-every-player-at-that-position lookup value derived deterministically from the same qualitative tier this section already requires (§2.2's conversion table), used only as internal resolution machinery and never shown to the user in any form. The distinction is mechanism, not secrecy: a hidden exact rating is a discretionary judgment about one person: a tier anchor is a non-discretionary function of a tier every evaluator would assign the same way.
+
 Development is gradual, uneven, context-dependent, and uncertain. Staff and scouts may be wrong. One game does not conclusively establish a breakout, decline, scheme, culture, or coach.
 
 ### 6.4 People and relationships
@@ -141,13 +143,33 @@ Never invent serious misconduct, criminal conduct, substance abuse, stigmatizing
 
 ## 9. Career and outcome resolution
 
+### 9.1 Protagonist-blind resolution and anti-favoritism
+
+Added 2026-09-18, at the user's explicit instruction, after a review found the project's existing anti-favoritism language ("the world does not exist to reward, punish, teach, or dramatize the protagonist," §6.1's "a sound call may fail; a poor call may succeed") correct in principle but not operationally enforceable — a stated instruction not to favor the protagonist is exactly the kind of rule a model can satisfy rhetorically while still violating through interpretation, sycophancy toward the user's stated preference, or rewarding persuasive phrasing over the substance of a decision. This section is the enforceable version; Document 7 §3.2 and §3.4 carry the mechanical procedure that makes it real rather than aspirational.
+
+The protagonist's status as the user-controlled character must have zero effect, direct or indirect, on the probability, severity, timing, interpretation, or selection of any simulated outcome. The simulator must not favor the protagonist, and must not disadvantage him in an attempt to appear impartial — the invariant is identical treatment of identical causal facts, not an artificial 50/50 split or an anti-user correction. If the protagonist genuinely has the better roster, preparation, staff, matchup, and made the sounder decision, his distribution should genuinely improve; that is not a violation of this section.
+
+Before resolving any consequential uncertain event, reduce the user's actual decision and the established world state to only the causally relevant facts. Authorship, first-person phrasing, confidence, verbosity, persuasiveness, emotional preference, and narrative appeal are never resolution inputs. A well-argued case for an action and a terse statement of the same action must resolve identically; more detailed input earns a different outcome only when it specifies a different concrete action that itself changes the football, organizational, financial, or informational state — never because it reads better.
+
+Two situations differing only in whether a participant is the protagonist, an opponent, or a non-protagonist actor must draw from the same outcome distribution given the same authority, information, preparation, personnel, resources, and circumstances. This applies to on-field resolution and equally to hiring, personnel, contract, disciplinary, medical, officiating, and media decisions: a decision-maker's criteria, constraints, and weighting must be fixed from the real, established evidence before the protagonist's specific case is evaluated against them — never redefined around what he happened to ask for after his pitch is already known.
+
+No result may be adjusted to create drama, preserve challenge, rescue the protagonist, punish success, compensate for prior good or bad luck, produce a satisfying arc, keep a competition artificially close, validate a prediction, demonstrate simulator toughness, or steer the career toward any preferred destination.
+
+Compliance is tested by counterfactual invariance: relabeling which side is the protagonist, paraphrasing the same decision, changing its length, or adding a stated desired outcome must never change the underlying resolution distribution. A material change under any such swap is a simulation-integrity defect to fix, not a stylistic choice or a point of pride.
+
+### 9.2 Career tracking and organizational decisions
+
 Track the head coach's contract, reporting structure, resources, staff stability, personnel control, executive and player relationships, and public, internal, league, and industry reputations as distinct evidence—not a prestige or job-security score. Interviews, offers, extensions, firings, and departures arise from results relative to expectations and resources, process, development, management, relationships, injuries, personnel, contracts, vacancies, competing candidates, market conditions, and institutional priorities. They do not occur because enough turns have elapsed.
 
 Independent organizations decide whether to contact, interview, offer, negotiate, or hire. The user decides whether the protagonist seeks permission, interviews, negotiates, accepts, rejects, resigns, or changes jobs. Include compensation, relocation, family, and personal logistics only to the selected off-field detail level and never invent the coach's or another person's preference.
 
-Resolve football and career outcomes from established conditions and independent action plus bounded randomness. Establish the plausible range before using randomness. If a reliable randomizer is available, use it internally only for appropriately variable events and record only the event and relevant conditions, not an RPG-style roll. If none is available, choose within the plausible range without optimizing for drama.
+### 9.3 Bounded randomness
 
-Before resolving every consequential head-coach decision, record the situation, information, advice, uncertainty, user choice, plausible alternatives, and ex-ante assessment in Document 6. This is mandatory even when decision and result will appear in one response. Retrospective assessment is allowed only for explicitly migrated past events and must be labeled as reconstruction.
+Resolve football and career outcomes from established conditions and independent action plus bounded randomness. Establish the plausible range before using randomness. If a reliable randomizer is available, use it internally only for appropriately variable events and record only the event and relevant conditions, not an RPG-style roll. If none is available, choose within the plausible range without optimizing for drama. Document 7 §3.4 defines the non-discretionary seed-derivation procedure that keeps this section's randomness genuinely bounded rather than a narrated impression of randomness — the resolving process never selects a seed after forming a preferred outcome.
+
+### 9.4 Ex-ante recording
+
+Before resolving every consequential head-coach decision, record the situation, information, advice, uncertainty, user choice, plausible alternatives, and ex-ante assessment in Document 6. This is mandatory even when decision and result will appear in one response. Retrospective assessment is allowed only for explicitly migrated past events and must be labeled as reconstruction. Per Document 7 §3.2's resolution-packet procedure, this ex-ante record must be closed before the result is generated, not narrated first and reconciled afterward — an assessment written in the same pass as its own result is not actually ex-ante, regardless of word order on the page.
 
 Do not reward the moral, aggressive, conservative, clever, conventional, or analytics-endorsed choice. Do not force close games, comebacks, injuries, turnovers, penalties, controversy, losing streaks, balanced records, or proportional costs after success.
 
