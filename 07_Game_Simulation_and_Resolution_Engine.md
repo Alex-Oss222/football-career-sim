@@ -1,16 +1,16 @@
 # Document 7: Game Simulation and Resolution Engine
 
-**Document status:** Reusable authoring template. Not yet blessed as active canon — see §11, Outstanding user decisions.
+**Document status:** Reusable authoring template. Design and the §1 hidden-layer approach are locked by explicit user confirmation on 2026-09-17; only the §8 era-calibration placeholders remain to be populated before this document is fully `READY`.
 
-**Lock status:** `UNLOCKED UNTIL THE §11 DECISIONS ARE CONFIRMED`
+**Lock status:** `DESIGN LOCKED; ERA CALIBRATION PENDING`
 
-**Runtime status:** `AUTHORING MASTER - DO NOT LOAD DURING PLAY UNTIL LOCKED`
+**Runtime status:** `AUTHORING MASTER - DO NOT LOAD DURING PLAY UNTIL §8 IS POPULATED`
 
-**Document version:** `0.1-authoring`
+**Document version:** `0.3-authoring`
 
 **Last verified:** `2026-09-17`
 
-**Last Document 7 content-changing update:** `2026-09-17 - created. Answers the question of whether the six-document, SCOTUS-derived architecture is the wrong shape for a live football sim: it is not. Documents 1-6 already define the surrounding philosophy (division of control, fog-of-war, real-person protection, evidence/provenance labeling, the autonomy-of-others rule, the hiring-search compressed-turn pattern) in detail. What they never defined is the one thing a live sim cannot run without: an actual mechanism that turns personnel and matchups into a game result. This document is that mechanism. It was drafted from a judged, three-way design competition (narrative-first, ratings-and-dice, and a drive-level hybrid) run against the user's own stated priorities; the hybrid won unanimously and this document is that design, synthesized with the strongest ideas from the other two.`
+**Last Document 7 content-changing update:** `2026-09-17 - created and locked the same day (design confirmed, hidden-layer sign-off given, January 2013 confirmed as era-calibration target), then extended the same day with the user's own week-to-week walkthrough: §5.1 preseason resolves as one bulk turn, not week by week; §5.2 flags the two output formats (in-season/offseason) as user-authored, not engine-invented; §5.3 states season length always follows Document 2's real rules-by-year rather than a hardcoded week count; §6 split into §6.1 Draft (unchanged) and §6.2 Free agency and other-team signings (new: real/generated market, one consolidated coach turn, autonomous competing offers, immediate cap accounting); §6.3 states the roster/cap-immediate vs. standings-weekly update cadence explicitly; §6.4 names the three existing rules that already guarantee precise, non-fudged cap numbers, tying them to the pending real-data library. No prior section's substance changed, and nothing in Documents 1-6 changed beyond the two cross-references already added.`
 
 **Supersedes:** Nothing. This is an addition to the existing package, not a replacement of any of Documents 1-6.
 
@@ -143,9 +143,45 @@ Adapted directly from Document 3 §10.2's compressed-turn procedure, extended fr
 
 A full week costs roughly three to five user-facing exchanges when nothing unusual happens, growing only when the game or the week actually earns it.
 
-## 6. Draft and scouting classes
+### 5.1 Preseason exception
+
+Per explicit user instruction, the preseason period (Document 2 §6.1's training-camp/preseason window) does not run the weekly loop above at all. It resolves as a single bulk turn: one consolidated brief covering roster-cut decisions, the preseason-game slate's results and notable performances, and camp-battle outcomes, presented once at the transition into the regular season rather than week by week. A preseason event escalates out of the bulk summary only for something that would already force a decision under Document 1's ordinary rules regardless of period — a season-ending injury to a projected starter, for instance — never merely because a preseason week occurred.
+
+### 5.2 Two output formats — user-authored, not engine-authored
+
+Per explicit user instruction, the actual presentation format of a response differs by whether the sim is in-season or in the offseason, and the user wants to design both formats rather than have this engine invent them. Document 1 §12.1 already defines a normal-response shape (dated header, then three parts: team/period consequences, current focus, head-coach decision) that is the closest existing analog to an in-season template, but it was written before this document existed and has not been confirmed as the final in-season format. No offseason-specific format exists yet at all. This document deliberately leaves both open: do not invent either template; ask the user for the exact shape they want, once, and record the result in Document 1 §12 rather than here.
+
+### 5.3 Regular-season length is a real, not hardcoded, fact
+
+The number of regular-season weeks and games, and how postseason rounds are structured, always follows Document 2's real rules-by-year for the season actually in play (for example, 17 weeks/16 games before the 2021 realignment, 18 weeks/17 games from 2021 onward) rather than any fixed assumption in this document. Document 2 §5 and §6 are the source of truth; this document only consumes whatever season length Document 2 states for the current year.
+
+## 6. Draft, scouting classes, and the free-agent market
+
+### 6.1 Draft
 
 Reuses Document 2 §12's existing procedure without modification: real classes are used with pre-selection data only, real post-selection outcomes are quarantined, and once real documented classes are exhausted, later classes are generated by sampling real historical position/round distributions and bust/hit base rates. Every generated or real prospect receives an anchor through the identical §2.2 conversion used for rostered players, so draft evaluation runs under the same uncertainty framework as everything else in this engine.
+
+### 6.2 Free agency and other-team signings
+
+Document 2 §9.3 defines the rules of free agency (movement categories, tender levels, negotiating windows); this section defines how the protagonist actually participates in that market, mirroring the draft's real-market-plus-simulated-behavior pattern and Document 3 §10.2's compressed-turn discipline.
+
+1. **Market generation.** At the open of a free-agency period, the available player pool is the real historical set of scheduled free agents for that real year and league (if using real personnel) or the simulation's own generated set (once real documented markets are exhausted or personnel have diverged), each carrying the same qualitative evaluation fields as a rostered player, never a real player's actual post-departure destination or outcome as a hidden answer.
+2. **Coach's plan, one consolidated turn.** The coach states priorities and constraints once — target need(s), acceptable cost range against actual available cap space (§8, sourced from real numbers, never invented), and any hard limits — rather than being walked through one candidate at a time.
+3. **Other clubs' pursuit resolves autonomously.** Every non-protagonist club's free-agent pursuit, offer, and signing resolves in the background per Document 2 §12's autonomy rule, extended here from draft-day trades to free agency generally; competing offers from other teams are a real market pressure the coach can lose to, not a scripted obstacle.
+4. **Outcome report.** The coach receives one consolidated result per plan (signed at what terms; lost the market to a named or generic competing offer and why, e.g. outbid, scheme fit elsewhere, term length; or unsigned/still available) — never a play-by-play negotiation transcript unless the coach specifically wants to negotiate a live offer, which is then its own single compressed exchange, not a haggling loop.
+5. **Cap accounting is immediate.** The instant a signing closes, Document 4's cap/cash reconciliation updates in the same turn — never deferred to the next weekly cycle — per §6.3 below.
+
+### 6.3 State update cadence
+
+Per explicit user instruction: roster and cap/cash state update the moment the triggering event happens, not on any batch or weekly delay — a signing updates cap space immediately, a draft pick or trade updates the roster immediately, and a coach's own lineup/depth-chart call updates immediately. Standings, by contrast, update once per week, after that week's full slate of games (protagonist's and background) has resolved, never mid-week. This is not a new rule so much as a restatement of what Document 4 (current reconciliation) and Document 6 (dated event ledger) already require — every state change is written when it happens, per Document 1 §13.2's atomic-commit discipline — stated here explicitly because it is a specific point the user flagged as a past failure elsewhere (see §6.4).
+
+### 6.4 Financial precision commitment
+
+The user's stated top priority for building this engine at all is not repeating a prior experience where salary-cap numbers were vague or inconsistent ("fudged"). Three existing rules already exist specifically to prevent that, and this document adds no new ones, only names them together:
+
+- Document 2 §11.1/§11.2 already requires the season's actual real financial rules and forbids ever presenting a fictional budget as a league cap, or calculating cap room in an uncapped season.
+- Document 4's financial/contract/eligibility reconciliation table is the sole detailed owner of cap, cash, and internal-budget numbers, and Document 6 §7 already requires numeric totals to reconcile exactly at every update — a cap error is a validation failure, not a narrative choice.
+- The real-data library effort (separate from this document, tracking the user's own "build the library" request) is what actually supplies precise, sourced, per-year CBA numbers — cap ceiling/floor, bonus proration rules, dead-money accounting — for the confirmed January 2013 baseline and forward. Document 2 §17's source-provenance schema (exact source, publication date, scope, applicability through divergence) is the mechanism that keeps those numbers traceable rather than approximate.
 
 ## 7. World-agent roster
 
@@ -166,12 +202,13 @@ Extends Document 1 §3.3, Document 2 §12, and Document 3 §10.3, rather than re
 
 ## 8. Era-calibration placeholders
 
-The following require real, era-specific values once a target season is chosen (Document 2's existing mode-lock convention — these stay bracketed until initialization, exactly like Document 2's own calendar and cap tables):
+Target season confirmed by the user on 2026-09-17: **January 2013 forward**, matching Document 3's HC-candidate starting point. The following still require real, sourced values before this document can leave `AUTHORING MASTER` status — populating them is the job of the real-data library effort (player/draft-class data, team/league rules-by-year, coaching/front-office market data) the user separately requested, not a re-derivation here:
 
-- League-average yards per attempt/carry, completion rate, and explosive-play rate for the chosen era: `[PENDING SEASON SELECTION]`
-- League-average sack rate, interception rate, and fumble rate: `[PENDING SEASON SELECTION]`
-- Position-group injury-exposure rates per snap, and typical return timelines by severity tier: `[PENDING SEASON SELECTION]`
-- Any rule differences affecting drive outcomes (overtime format, replay/challenge rules, kickoff/onside-kick rules) for the chosen era: cross-reference Document 2's own playing-rules tables rather than duplicating them here.
+- League-average yards per attempt/carry, completion rate, and explosive-play rate for the 2012-2013 NFL season and forward: `[PENDING LIBRARY BUILD]`
+- League-average sack rate, interception rate, and fumble rate for the same window: `[PENDING LIBRARY BUILD]`
+- Position-group injury-exposure rates per snap, and typical return timelines by severity tier: `[PENDING LIBRARY BUILD]`
+- Real 2013-era-forward salary-cap ceiling/floor, bonus-proration rule, and dead-money accounting, sourced and cited per Document 2 §17's provenance schema: `[PENDING LIBRARY BUILD]`
+- Any rule differences affecting drive outcomes (overtime format, replay/challenge rules, kickoff/onside-kick rules, and — per §5.3 — the 2021 season-length change) for the years actually played: cross-reference Document 2's own playing-rules tables rather than duplicating them here.
 
 ## 9. Cross-references added to Documents 1-6
 
@@ -185,8 +222,9 @@ Only these pointers are added; no existing rule in Documents 1-6 is changed:
 
 The evidence-labeling system, the real-person protections, the append-only ledger discipline, the anti-stock-character rule, the authority map, and the qualitative-only coach-facing evaluation system all carry over unmodified. This document adds a resolution mechanism and a private data layer underneath the existing package; it does not relitigate any of the philosophy Documents 1-6 already settled.
 
-## 11. Outstanding decisions — batched, not sequential
+## 11. Outstanding decisions
 
-1. **Sign off on the hidden Engine State layer.** Recommended: yes. It is invisible to the user, structurally walled off from every coach-facing document, and is the specific thing Document 2 §1 already anticipated ("if the platform supports private state, essential hidden state remains there"). Without it there is no way to compute a game result at all.
-2. **Default granularity dial.** Recommended: Document 1 §11.2's existing "Executive head-coach mode" as the default, with the leverage gate in §4 forcing a pause regardless of mode at the listed triggers. Changeable at any time without a redesign.
-3. **Target season/era for calibration.** Still open — the football-career-sim project's own working assumption is January 2013 (Alex Stone, HC candidate, not yet hired), but this has not been explicitly confirmed as the initialization target. Nothing in this document needs that answer yet; §8's placeholders simply wait for it, the same way Document 2's calendar and cap tables already do.
+1. **Hidden Engine State layer.** Confirmed by the user 2026-09-17. Built as described in §1: invisible to the user, structurally walled off from every coach-facing document.
+2. **Default granularity dial.** Not separately asked; adopted as recommended — Document 1 §11.2's existing "Executive head-coach mode" as the default, with the leverage gate in §4 forcing a pause regardless of mode at the listed triggers. Changeable at any time without a redesign; revisit if the user objects.
+3. **Target season/era for calibration.** Confirmed by the user 2026-09-17: January 2013 forward (Alex Stone, HC candidate, not yet hired), matching Document 3's starting canon. §8's placeholders now wait on the real-data library build rather than on this decision.
+4. **Two output formats (in-season / offseason).** Open, per §5.2. The user wants to author both; this document does not invent them.
