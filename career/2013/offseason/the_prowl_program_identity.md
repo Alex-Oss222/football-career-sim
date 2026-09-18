@@ -2,7 +2,7 @@
 
 **Team:** Jacksonville Jaguars (the club Stone was hired by January 15, 2013 — `hiring_search.md` Entry 7)
 
-**Status:** User-established canon, 2026-09-18. This is Stone's actual adopted program identity for Jacksonville, entered into Document 3 §2.1 per §2.2's instruction that coaching identity is resolved directly into canon once the user decides it — not a discarded or legacy candidate. Full text preserved verbatim below; Document 3 §2.1 carries the summary and points here.
+**Status:** User-established canon, 2026-09-18; implementation rules revised 2026-09-18 for 2013 NFL/CBA realism. This is Stone's adopted Jacksonville program identity. The football values remain user canon; the implementation boundaries below prevent those values from being applied in ways the 2011 CBA, medical authority, or 2013 technology would not permit. Document 3 §2.1 carries the summary and points here.
 
 ---
 
@@ -231,6 +231,73 @@ Authority increases accountability.
 
 It does not remove it.
 
+# IMPLEMENTATION BOUNDARIES
+
+The Prowl is a football standard, not an exception to NFL rules, medical authority or the limits of the 2013 work environment.
+
+## Use the Practice Inventory You Actually Have
+
+"Practice the Problem" does not mean Jacksonville adds field work whenever something is wrong.
+
+Stone and the staff must solve problems inside the practice, meeting and walkthrough inventory permitted by the CBA and league rules.
+
+During the offseason, ordinary club workouts and classroom work are governed by the 2011 CBA. Except for the permitted mandatory veteran minicamp, ordinary offseason participation is voluntary. Jacksonville may not threaten a player's roster position, role or working conditions because he declines voluntary offseason work.
+
+Stone's first offseason as a new head coach may use the additional time and voluntary minicamp available to a club with a new head coach, but only within the CBA's permitted phases, hours, drill types and contact limits.
+
+If field repetitions are unavailable, the staff uses lawful alternatives:
+
+* better meeting-room teaching;
+* individual correction within permitted periods;
+* film;
+* permitted walkthrough work;
+* clearer installation;
+* better sequencing of the next available practice;
+* fewer calls if volume is causing execution failure.
+
+More work is not automatically better work.
+
+## Medical Authority Is Not Coaching Authority
+
+Stone decides football roles.
+
+He does not diagnose injuries or clear players for participation.
+
+Team physicians and athletic-training/medical personnel control medical diagnosis, treatment restrictions and return-to-play clearance within their professional authority. Strength and conditioning staff work inside those restrictions. Coaches determine football workload only after medical restrictions and CBA limits are applied.
+
+A medically unavailable player has a medical status, not a character grade.
+
+Stone may expect honest symptom reporting, attendance at required treatment or rehabilitation, and professional effort within a prescribed plan. He may not punish a player for being injured or pressure medical personnel to clear a player.
+
+## Readiness Evidence Must Be Period-Accurate
+
+Jacksonville can use the tools actually available to an NFL club in 2013.
+
+That can include:
+
+* body weight and body-composition measurements;
+* strength-room records;
+* timed position-specific runs, short sprints and change-of-direction work;
+* conditioning-test times;
+* practice and game film;
+* manual rep and workload logs;
+* athletic-trainer and strength-staff observations;
+* player-reported soreness, sleep and recovery information when voluntarily provided;
+* heart-rate or other performance equipment the club has actually acquired and lawfully uses.
+
+The simulator must not silently give Jacksonville modern Next Gen Stats, universal GPS workload dashboards or later-era tracking outputs.
+
+The NFL began broader experiments with player tracking during 2013 and expanded RFID use later. Unless a specific Jacksonville system is established in canon, The Prowl operates from the ordinary period-appropriate evidence above.
+
+## Confidential Support Is Not Personnel Scouting
+
+Mental-health, financial and family-support resources exist to help players, not to create hidden personnel grades.
+
+Coaches may receive only the information legitimately necessary to administer football availability, scheduling or a requested accommodation.
+
+Confidential clinical content, personal finances and private family information do not become depth-chart evidence merely because the club helped provide access to the resource.
+
+
 # DEFENSIVE PHILOSOPHY
 
 Stone does not hire a defensive coordinator to operate Alex Stone's defense.
@@ -283,7 +350,7 @@ The coordinator can use:
 * late safety movement;
 * disguise;
 * simulated pressure;
-* creepers;
+* zone pressures and exchange pressures;
 * overloaded presentations;
 * four-man rushes from changing locations;
 * man coverage;
@@ -637,3 +704,12 @@ Winning does not suspend coaching.
 Losing does not send the organization searching for a new identity every Monday.
 
 That is when The Prowl has become real.
+
+# 2013 IMPLEMENTATION SOURCES
+
+The implementation boundaries above are grounded in period rules rather than later NFL practice:
+
+- 2011 NFL CBA Article 21, offseason workouts and strict voluntariness: https://overthecap.com/collective-bargaining-agreement/article/21
+- 2011 NFL CBA Article 22, veteran minicamps and the additional voluntary minicamp available to a new head coach: https://overthecap.com/collective-bargaining-agreement/article/22
+- NFL Total Wellness launched in 2012 with independent confidential support: https://www.nfl.com/news/nfl-total-wellness-program-launched-to-improve-player-health-09000d5d82ad2ab4
+- NFL's leaguewide RFID/Next Gen tracking deployment came later; 2013 involved limited experiments rather than ordinary club access to modern tracking outputs: https://www.nfl.com/news/nfl-to-use-tracking-devices-during-games-practices-0ap1000000229778
