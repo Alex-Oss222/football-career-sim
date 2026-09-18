@@ -2,7 +2,7 @@
 
 **As of:** January 15, 2013  
 **Mode:** real pre-divergence facts; counterfactual personnel decisions begin after this snapshot  
-**Status:** `POPULATED WITH NOTED SOURCE LIMITATIONS — TRANSACTION-LEDGER RECONCILIATION STILL REQUIRED`
+**Status:** `OPERATING INITIALIZATION SNAPSHOT — ACTIVE/RESERVE SPINE VERIFIED; MARCH 12 CONTRACT-RIGHTS LAYER ADDED; FUTURES/PRACTICE-SQUAD EDGE CASES STILL OPEN`
 
 ## Sources and evidence boundary
 
@@ -22,6 +22,97 @@ The NFL weekly export supplied the 53 unique names carrying an `ACT` row at Week
 ### Pass 2 — skeptical re-check
 
 Every active-roster name was re-matched by name against the independent PFR roster; every games/starts entry comes from that second dataset. Ten season-ending reserve/injured cases visible in the season roster were added as a separate, expressly provisional bucket rather than silently counted as active. This pass does **not** claim an exact January 15 reserve/futures inventory: a dated official transaction ledger was not available in the environment. That omission is stated, not estimated.
+
+## How to read the January roster
+
+Three different concepts must not be collapsed into one list:
+
+1. **Week 17 active roster:** the 53-player game-roster spine at the end of the 2012 regular season.
+2. **Reserve/injured and other reserve control:** players still tied to Jacksonville but absent from that Week 17 active slice.
+3. **2013 contractual rights:** whether a player's existing contract continues into the 2013 league year or expires March 12 as UFA/RFA/ERFA.
+
+A player can be on Jacksonville's January football-control list and still be scheduled for free agency in March. Conversely, a final-week active player is not automatically under contract for 2013.
+
+No actual post-January-15 release, signing, waiver claim, re-signing or draft result is imported.
+
+## March 12, 2013 expiring-rights board
+
+Jacksonville's own February 5 offseason preview published the players scheduled to become free agents March 12. That article postdates Stone's hire, but it verifies **contract expiration terms that were already fixed on January 15**. It is used only for the pre-existing rights status, never for what the real Jaguars later chose to do.
+
+Source: https://www.jaguars.com/news/the-offseason-begins-9537328
+
+| Player | Position | March 12 status | January 15 treatment |
+|---|---|---|---|
+| Kyle Bosworth | LB | Scheduled free agent | Club may negotiate before expiration; no 2013 contract assumed |
+| Eben Britton | OL | Scheduled free agent | Same |
+| John Chick | DE | **ERFA** | Jacksonville can retain rights with qualifying tender; no tender assumed yet |
+| Derek Cox | CB | Scheduled free agent | No re-signing or departure assumed |
+| John Estes | C | **RFA** | Not in the Week 17 active spine below; still part of the contract-rights board |
+| Rashad Jennings | RB | Scheduled free agent | Not in the Week 17 active spine below; still part of the contract-rights board |
+| Greg Jones | FB | Scheduled free agent | No re-signing or departure assumed |
+| Terrance Knighton | DT | Scheduled free agent | No re-signing or departure assumed |
+| Rashean Mathis | CB | Scheduled free agent | No re-signing or departure assumed |
+| Brad Meester | C | Scheduled free agent | No re-signing or departure assumed |
+| William Middleton | CB | Scheduled free agent | Not in the Week 17 active spine below; still part of the contract-rights board |
+| Antwaun Molden | CB | Scheduled free agent | No re-signing or departure assumed |
+| Jordan Palmer | QB | Scheduled free agent | No re-signing or departure assumed |
+| Jalen Parmele | RB | Scheduled free agent | Reserve/injured season-end evidence does not create a 2013 contract |
+| Zach Potter | TE | **RFA** | Jacksonville can tender or allow market process; no tender assumed |
+| George Selvie | DE | **RFA** | Same |
+| Jordan Shipley | WR | **RFA** | Same |
+| Daryl Smith | LB | Scheduled free agent | No re-signing or departure assumed |
+| Keith Toston | RB | **ERFA** | Jacksonville can retain rights with qualifying tender; no tender assumed |
+| Steve Vallos | C | Scheduled free agent | No re-signing or departure assumed |
+
+**Important:** "scheduled free agent" above follows the Jaguars' own article. Where the article explicitly identifies RFA or ERFA status, that classification controls. No tender, franchise tag, re-signing or market result has happened in this branch yet.
+
+## Continuing-contract core entering 2013 planning
+
+The following prominent players have source-backed contracts that continue into the 2013 league year unless Jacksonville later makes a branch transaction:
+
+| Player | Pos. | 2013 contractual position at initialization |
+|---|---|---|
+| Blaine Gabbert | QB | Under rookie contract; 2013 scheduled cap $3.273M; starting job **not guaranteed** |
+| Chad Henne | QB | Under 2012 two-year veteran contract; 2013 scheduled cap $4.650M |
+| Maurice Jones-Drew | RB | Under veteran extension through 2013; scheduled cap $6.800M |
+| Cecil Shorts | WR | Under rookie contract; scheduled cap $0.729M |
+| Justin Blackmon | WR | Under rookie contract; scheduled cap $3.266M |
+| Laurent Robinson | WR | Under 2012 five-year agreement at the cutoff; no later real release imported |
+| Marcedes Lewis | TE | Under veteran contract; scheduled cap $5.750M |
+| Eugene Monroe | OT | Final year of rookie contract; scheduled opening cap about $5.748M |
+| Uche Nwaneri | G | Under veteran extension; scheduled cap $5.895M |
+| Will Rackley | G | Under rookie contract; scheduled cap $0.795M |
+| Andre Branch | DE | Under rookie contract; scheduled cap $1.157M |
+| Jason Babin | DE | Existing waiver/contract obligation continues into 2013 at the cutoff |
+| Tyson Alualu | DL | Under rookie contract; scheduled cap $3.615M |
+| Paul Posluszny | LB | Under veteran contract; scheduled cap $8.500M |
+| Russell Allen | LB | Under veteran contract; scheduled cap $2.817M |
+| Mike Harris | CB | Under rookie contract; scheduled cap $0.509M |
+| Chris Prosinski | S | Under rookie contract; scheduled cap $0.720M |
+| Dawan Landry | S | Under veteran contract at cutoff; later real release is not imported |
+| Dwight Lowery | S | Under veteran contract; scheduled obligation about $3.875M |
+| Josh Scobee | K | Under veteran contract; scheduled cap $3.288M |
+| Bryan Anger | P | Under rookie contract; scheduled cap $0.676M |
+
+This is not a keep/cut recommendation. It is the contractual starting condition. Player evaluation occurs after initialization under the ordinary roster process.
+
+## Position-group inventory at the snapshot
+
+The table below is an administrative count of the names in this file, not a depth-chart quality judgment.
+
+| Group | Active-spine / reserve names visible here | Immediate contract-planning issue |
+|---|---:|---|
+| Quarterback | 3 | Gabbert and Henne under contract; Palmer scheduled free agent |
+| Running back / fullback | 7 | Jones, Parmele and Toston among March expirations; Jones-Drew under contract |
+| Wide receiver | 7 | Shipley scheduled RFA; Robinson/Blackmon/Shorts under continuing deals |
+| Tight end | 4 | Potter scheduled RFA; Lewis under major veteran contract |
+| Offensive line | 11 | Monroe/Nwaneri/Rackley continuing; Britton/Meester/Vallos plus Estes rights require March decisions |
+| Defensive line / edge | 11 | Knighton, Chick, Selvie among expirations; several continuing rookie/veteran deals |
+| Linebacker | 6 | Daryl Smith/Bosworth expirations; Posluszny/Allen continuing |
+| Defensive back | 11 | Cox/Mathis/Molden/Middleton expirations; multiple continuing veteran contracts |
+| Specialists | 3 | Scobee, Anger and Cain in snapshot |
+
+Counts reflect the listed active/reserve register and the separately noted expiring-rights players. They are not asserted as the exact 90-man offseason roster.
 
 ## Player register
 
@@ -93,7 +184,22 @@ This is an administrative roster inventory, **not a depth chart or talent evalua
 | Bryan Anger | P | 19 | 2012 final active roster | 0 | 2012: 16 games, 0 starts | 00-0029692 |
 | Jeremy Cain | LS | 48 | 2012 final active roster | 8 | 2012: 16 games, 0 starts | 00-0022502 |
 
-**Inventory counts:** 53 final-week active names; 10 separately identified reserve/injured cases; 63 total listed persons. These are disjoint in this file. The latter two totals are not asserted to equal the club’s complete January 15 offseason control list because practice-squad expirations and reserve/future contracts require a dated transaction source.
+**Inventory counts:** 53 final-week active names; 10 separately identified reserve/injured cases; 63 total listed persons in the active/reserve evidence spine. The March 12 rights board additionally identifies John Estes, Rashad Jennings and William Middleton, who are not present in that 63-name spine but whose expiring Jacksonville contract rights are independently documented. None of these totals is asserted to equal the exact January 15 90-man offseason control list because reserve/future and practice-squad contract activity still requires a dated transaction ledger.
+
+## Roster decisions reserved for the branch
+
+At initialization, the following are **questions**, not answers:
+
+- whether to tender or re-sign any March 12 free agent;
+- whether to retain, release, trade or restructure any player already under contract;
+- whether Gabbert or Henne begins the offseason as the leading quarterback;
+- whether Jones-Drew's final contract year is retained, extended or otherwise addressed;
+- whether expensive veteran contracts fit the new program;
+- which reserve/injured players are medically available when offseason work begins;
+- which reserve/future players occupy offseason roster spots;
+- how the No. 2 draft position or free agency changes any position room.
+
+The actual 2013 Jaguars subsequently made many of these decisions. Those outcomes are quarantined. Stone and Caldwell make them fresh in this branch under their agreed authority split.
 
 ## Staff and football-operations baseline
 
