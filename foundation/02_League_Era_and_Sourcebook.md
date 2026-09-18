@@ -6,13 +6,13 @@
 
 **Runtime status:** `AUTHORING MASTER - DO NOT LOAD DURING PLAY`
 
-**Document version:** `0.5-authoring`
+**Document version:** `0.6-authoring`
 
 **Mode-lock revision:** `UNLOCKED`
 
-**Last verified:** `2026-09-17`
+**Last verified:** `2026-09-18`
 
-**Last Document 2 content-changing update:** `2026-09-17 - populated §6 (calendar), §11 (financial rules, including the full 2013 franchise/transition tag tables), and §12's factual/structural draft fields (dates, venue, rounds, eligibility) with verified real 2013 NFL data, per the first real-data library build (library/2013_league_calendar_and_financial_rules.md, library/2013_coaching_market.md, library/2013_draft_class.md). §12's pick-inventory table itself was deliberately left empty with an explanatory note -- per this document's own Historical class sourcing rule, the simulation's own draft order must be computed from its own standings and never copied from the real 2013 order, which stays in the library file as a comparator only. Prior update: added §6.1, the annual period register supporting Document 3 §10's hiring-search calendar gating.`
+**Last Document 2 content-changing update:** `2026-09-18 - reconciled §12 with the rebuilt no-hindsight draft library: removed the stale claim that the real 2013 draft order remains in the active draft-class file, added date-gated prospect information, and replaced the impossible "complete class by hindsight database" rule with a contemporaneously verified operational eligibility pool. Prior 2026-09-17 work populated 2013 calendar, financial, and draft-structure research.`
 
 **Applies from:** `Not applicable until mode lock`
 
@@ -555,7 +555,7 @@ Never present a fictional management budget as a league salary cap. Never calcul
 
 Document owned selections by original club and round until the exact official or counterfactual order is computed. Do not infer an overall number by adding the league size to a prior-round slot. Tied clubs can rotate and compensatory selections can shift later rounds.
 
-**Important: this table is never populated with the real 2013 draft order as if it were the simulation's own order.** Per the Historical class sourcing rule immediately below, the actual 2013 NFL draft order (Chiefs 1st, Jaguars 2nd, etc.) is a real, verified fact about the real world, but the simulation's OWN selection order must be computed fresh from the simulation's own standings and can diverge from it the moment any simulated team's record differs from history (which becomes likely the moment the protagonist's presence changes any team's season). The real 2013 order is preserved as a comparator in `library/2013_draft_class.md`, not written into this table. This table stays empty until the simulation actually reaches a draft with its own computed standings.
+**Important: this table is never populated with the real 2013 draft order as if it were the simulation's own order.** The simulation's selection order is computed fresh from simulation standings, postseason results, tiebreakers, trades, forfeitures, and compensatory-pick rules. `library/2013_draft_class.md` deliberately contains no real selection order or team destinations. Any actual historical order is quarantined outside runtime prospect evaluation and must not be loaded as a comparator while resolving the simulated draft. This table stays empty until the simulation reaches a draft with its own computed order.
 
 | Round | Original club | Ownership basis | Exact overall | Verification status | Source or canon event |
 |---:|---|---|---|---|---|
@@ -567,8 +567,9 @@ This governing rule applies to every draft or equivalent selection event, in eve
 
 **Historical class sourcing, through the last real year with a documented class.**
 
-- Prospect pool: the full real draft-eligible class for the corresponding real year, including players who went undrafted, unless Document 4 records a specific and approved fictional alteration to that class.
-- Permitted prospect data: real name, position, school, physical measurables, pre-draft testing, and pre-draft scouting consensus (mock drafts, published big boards, combine grades) as of the real event date.
+- Prospect pool: use a **contemporaneously verified operational eligibility pool**, not a hindsight list of who was eventually drafted or signed. For 2013, `library/2013_draft_pool_registry.md` contains the NFL's complete 73-player special-eligibility list and defines conservative senior-pool coverage. Absence from the registry never proves ineligibility; before an unlisted player can be selected, verify his eligibility from a pre-selection source and add that evidence.
+- Information timing: `library/2013_draft_information_gates.md` controls when declarations, combine invitations/results, pro-day results, medical/workout updates, and final boards become available. A final April snapshot may not leak backward into January or February.
+- Permitted prospect data: real name, position, school, verified eligibility, physical measurables, pre-draft testing, and dated pre-draft scouting opinion available by the current simulation date.
 - Prohibited prospect data: any real post-selection outcome — career statistics, awards, injuries, bust or star status, and any later real-world team change. This is an actual-future comparator quarantined under §4.3 and must never be used to select, grade, or narrate a prospect, including indirectly through an evaluator's uncannily accurate hunch.
 
 **Simulated order, every simulated year.**
@@ -579,7 +580,7 @@ This governing rule applies to every draft or equivalent selection event, in eve
 **Selecting club behavior.**
 
 - Each club evaluates the real (or, once applicable, procedurally generated) prospect pool against its own simulated need, cap or resource situation under §11, and its documented draft philosophy (best-player-available versus need-based, risk tolerance, positional-value model).
-- A club's evaluation of a prospect may depart from the real pre-draft consensus only where that club's own documented philosophy or scouting department gives it a stated reason to; absent a stated reason, the real pre-draft consensus is that club's baseline evaluation.
+- Public pre-draft boards are evidence about contemporary perception, not a universal baseline every club must copy. A club may differ where scheme, role, medical comfort, interview evidence, scouting access, or documented organizational priorities provide a football reason. Unsupported private certainty remains unknown rather than being invented.
 
 **Autonomy for organizations other than the protagonist's.**
 
