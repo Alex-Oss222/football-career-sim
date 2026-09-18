@@ -1,36 +1,90 @@
 # Football Career Simulation
 
-An LLM-first, choice-driven American-football head-coaching simulation. The user creates and controls one protagonist head coach, Alex-Lamar Stone (ordinary name: Alex Stone); the simulator represents the football world, its people, its institutions, and the consequences of the head coach's choices.
+An LLM-first, choice-driven NFL head-coaching career simulation centered on Alex-Lamar Stone. The user controls Stone's consequential choices. The simulator controls the football world, independent organizations and people, and the consequences of those choices under the repository's evidence, authority, and anti-favoritism rules.
 
-## Where things stand
+## Current status
 
-This repository was rebuilt from scratch on 2026-09-17. The prior structure (`engine/`, `modules/`, `teams/`, `world/`, `characters/`) was a set of incompatible legacy layers — a January 2009 job-search profile, a counterfactual 2009-10 Detroit world, a structurally wrong 2010 cap model, a mismatched late-2010s offensive catalogue, and an unrelated 2024 high-school RPG mode, among others — that could not be run reliably as written. `00_Audit_Migration_and_Stress_Test_Report.md` documents that audit in full. The prior structure has been removed entirely; nothing from it is active canon.
+The project is in **PRE-HIRE SEARCH** at a January 14, 2013 reference date.
 
-The repository is organized to mirror a separate SCOTUS-simulation project's proven layout — a stable rulebook, an always-current snapshot, and per-season instance history — rather than one flat pile of files:
+- Alex Stone's established biography and demonstrated coaching record are resolved.
+- No 2013 head-coaching hire has occurred.
+- The hiring search has not started yet.
+- Full career initialization has not occurred.
+- Team, contract, staff, active roster, and post-hire coaching identity remain unset.
+- The game engine design is approved but is not runtime-ready until its era calibration is completed and a private Engine State store is instantiated for the hired team.
+
+The lifecycle is:
+
+`PRE-HIRE SEARCH -> HIRED / INITIALIZATION BUILD -> READY -> ACTIVE CAREER`
+
+The hiring search is the one permitted simulated phase before full career initialization because team, contract, and starting organization are outputs of that search. No games, roster moves, staff construction, practices, press conferences, or other post-hire team events begin until the later initialization build is complete and the user explicitly starts ACTIVE CAREER play.
+
+## Repository structure
 
 ```
-foundation/     the stable rulebook: Documents 00-03, 06, 07, and foundation/templates/ (output formats). Never holds a dated instance record.
-state/          the always-current, in-place-updated snapshot: Documents 04 and 05. Rewritten as events happen; never append-only.
-career/         the actual played history, one folder per season, created only once that season is reached. Empty until initialization. See career/README.md.
-archive/        superseded/quarantined material kept for reference only, never active canon. See archive/README.md.
-library/        supporting reference material with no dedicated canonical slot: era-specific real-world research plus non-authoritative pre-hire character reference. Load-bearing rules and canon remain in foundation/ and state/; library material never overrides them.
+foundation/   stable runtime rules, canon structure, engine design, and output templates
+state/        mutable current snapshots
+career/       dated simulation history, including the one pre-initialization hiring-search ledger
+library/      supporting research and non-authoritative reference
+archive/      historical, superseded, or quarantined material that is never runtime authority
 ```
 
-- **`foundation/00_Audit_Migration_and_Stress_Test_Report.md`** — the audit that produced this rebuild. Historical/reference; not itself a runtime rule source.
-- **`foundation/01_Project_Instructions.md`** — stable governing instructions: user/simulator division of control, authority boundaries, football-reasoning rules, fog-of-war, real-person and divergence handling, career/outcome resolution, response design (§12, superseded for actual output by the templates below).
-- **`foundation/02_League_Era_and_Sourcebook.md`** — the league, era, and rules the simulation runs under: divergence register, competition identity, calendar and period register, playing rules, roster/transaction/labor/financial rules, the historical-draft-class and hiring-search procedures, source provenance.
-- **`foundation/03_Head_Coach_Organization_and_Authority_Canon.md`** — Alex Stone's identity/background canon (resolved 2026-09-17, see §1.6 for the full resolution record), his contract and authority map, staff and organization structure, the external hiring-market and search-cycle procedure (§10), and revision controls.
-- **`foundation/06_Chronology_Game_Ledger_and_Handoff.md`** — the ledger's rules and record formats. The actual dated entries live in `career/<year>/ledger.md`, not here.
-- **`foundation/07_Game_Simulation_and_Resolution_Engine.md`** — the actual game/drive resolution mechanism, hidden rating-anchor system, turn-economy leverage gate, weekly turn structure, free-agency/draft procedures, and world-agent autonomy rules that the other documents assumed but never implemented. Added and locked 2026-09-17 after a judged three-way design competition; see its §0 for why the document shape didn't need to be rebuilt, only extended, and its §12 for the layout this README describes.
-- **`foundation/templates/season_output_template.md`**, **`foundation/templates/offseason_output_template.md`**, and **`foundation/templates/hiring_search_output_template.md`** — the three confirmed output formats: in-season, offseason, and pre-hire candidacy turns respectively. There is no input template or form — every turn asks one specific question and the user answers in their own words (Document 1 bans closed-choice menus).
-- **`state/04_Roster_and_Staff_Register.md`** — the active roster and staff register once a career is initialized.
-- **`state/05_Current_Season_State.md`** — the current in-world date, season, and status; the initialization gate lives here.
-- **`library/2013_league_calendar_and_financial_rules.md`, `library/2013_coaching_market.md`, `library/2013_draft_class.md`** — the first real-data library build (added 2026-09-17): verified 2013 NFL calendar/cap/CBA figures, the real situational picture for all five of Stone's established candidate teams plus the full coordinator-hiring carousel, and the real 2013 draft class's pre-selection-only prospect pool. Every fact is independently cross-checked, with anything that couldn't be confirmed precisely flagged rather than silently presented as exact.
-- **`library/alex_stone_character_dossier_pre_hire.md`** — supporting pre-hire character reference at a January 14, 2013 cutoff. It contains established background and demonstrated experience only, assumes no 2013 hiring result, and never overrides Document 3 on canon or Document 5 on the active master clock.
-- **`AGENTS.md`** (added 2026-09-17) — the Codex-facing task file for bounded, low-interactivity batch work only (simulating a background-league week, expanding the real-data library). The interactive side of this project (the protagonist's own career, every turn requiring a live decision) is never delegated here — see Document 7 §1 and §12 for why that split exists.
+### Foundation
 
-Everything remains **authoring templates; no career is initialized.** Document 3's biographical fields are resolved, but team, contract, season, and coaching-identity fields stay open by design until the user completes Document 1's initialization gate.
+- **`foundation/01_Project_Instructions.md`** — highest-level operating rules: user control, authority boundaries, evidence, fog of war, real-person handling, protagonist-blind resolution, lifecycle, and continuity procedure.
+- **`foundation/02_League_Era_and_Sourcebook.md`** — authoring sourcebook for league, era, calendar, rules, labor, roster, financial, and draft structure. It remains an authoring master until a team is hired and an active-only edition can be built.
+- **`foundation/03_Head_Coach_Organization_and_Authority_Canon.md`** — Stone's stable background, the hiring-search procedure, contract/authority structure, and initialization gate.
+- **`foundation/06_Chronology_Game_Ledger_and_Handoff.md`** — ledger, audit, correction, and handoff protocol. During PRE-HIRE SEARCH, simulated search events stay in the dedicated hiring ledger rather than Document 6.
+- **`foundation/07_Game_Simulation_and_Resolution_Engine.md`** — game-resolution design and private Engine State contract. Design approved, runtime not ready until initialization/calibration requirements are satisfied.
+- **`foundation/templates/hiring_search_output_template.md`** — pre-hire search turns.
+- **`foundation/templates/offseason_output_template.md`** — post-hire offseason turns.
+- **`foundation/templates/season_output_template.md`** — in-season turns.
 
-## How to use this repo
+The rebuild audit is historical reference and lives at **`archive/00_Audit_Migration_and_Stress_Test_Report.md`**, not in the runtime rulebook.
 
-Read `foundation/01_Project_Instructions.md` first, then the rest of `foundation/` in number order, then `state/`. Do not generate any in-world event until the initialization gate (Document 1 §2, cross-checked against Document 3 §12 and Document 5) is satisfied and the user explicitly says to initialize the career. Once initialized, actual play is written into `career/<year>/`, never into `foundation/` or as a competing format outside the two templates.
+### State
+
+- **`state/04_Roster_and_Staff_Register.md`** — remains uninitialized until a team is hired.
+- **`state/05_Current_Season_State.md`** — current PRE-HIRE SEARCH snapshot at January 14, 2013. It tracks the current lifecycle/date without pretending a team, roster, or active career already exists.
+
+### Career
+
+- **`career/2013/offseason/hiring_search.md`** — authorized pre-initialization decision ledger for the 2013 search. It stores organization criteria freezes, user instructions relied on, search developments, offers, and unresolved user decisions.
+- **`career/2013/offseason/hiring_search_brief/`** — user-authored priorities, terms, concessions, walk-away conditions, and any exact standing acceptance/rejection rules.
+
+After a hire, `career/2013/` becomes the normal season-history directory and gains the season ledger and only the phase files actually reached.
+
+### Library
+
+Runtime tasks must read only the library files permitted for their phase.
+
+- **`library/alex_stone_character_dossier_pre_hire.md`** — factual pre-hire Stone reference. It does not decide his philosophy, motives, future staff, interview answers, or 2013 outcome.
+- **`library/2013_coaching_market_pre_hire.md`** — clean January 14 hiring-market view used by the search resolver.
+- **`library/2013_coaching_market.md`** — quarantined hindsight/comparator research. It contains actual future outcomes and must not be loaded while resolving Stone's 2013 search.
+- **`library/2013_league_calendar_and_financial_rules.md`** — sourced 2013 calendar/CBA/cap research.
+- **`library/2013_draft_class.md`** — 2013 draft research maintained separately from this cleanup.
+
+Library files do not override canonical ownership in `foundation/` or `state/`.
+
+### Archive
+
+`archive/` contains historical or discarded material that normal runtime tasks do not load. Nothing there is active canon.
+
+## How to run the project
+
+For the current pre-hire phase:
+
+1. Read Document 1.
+2. Read Document 3 §10 and the hiring-search template.
+3. Use `library/alex_stone_character_dossier_pre_hire.md` for Stone's established record.
+4. Use only `library/2013_coaching_market_pre_hire.md` for team-side January 14 context.
+5. Freeze all in-scope organizations' documented criteria before reading Stone's user-authored search brief.
+6. Resolve organization-side actions without using real future hires as an answer key.
+7. Stop for any consequential Stone choice not already covered by an exact user standing instruction.
+8. Persist the search in `career/2013/offseason/hiring_search.md`.
+
+If an offer is accepted, stop at **HIRED / INITIALIZATION BUILD**. Reconcile Documents 2–7, roster/staff state, contract/authority, engine state, and the audited search closure. Only after the package reaches READY and the user explicitly initializes the career does normal season/offseason play begin.
+
+## Batch tasks
+
+`AGENTS.md` defines bounded tasks for external coding/agent workflows. The 2013 hiring resolver is allowed only within the pre-hire control rules above. Background-game simulation is disabled until Document 7 is runtime-ready. Agents may never invent an uncovered consequential choice for Stone.
