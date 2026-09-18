@@ -129,8 +129,8 @@ Historical contract pages are used only for terms that were already fixed before
 
 | Player | Contract-control finding at snapshot | 2013 financial fields |
 |---|---|---|
-| Blaine Gabbert | Verified 2011 contract summary above | 2013: $3,273,176 cap; | Blaine Gabbert | Verified 2011 contract summary above | ,466,058 base; guaranteed rookie salary |
-| Chad Henne | Verified 2012 contract summary above | 2013: $4,650,000 cap;  |,625,000 base; $3,650,000 scheduled cash |
+| Blaine Gabbert | Verified 2011 contract summary above | 2013: $3,273,176 cap; $1,466,058 base; guaranteed rookie salary |
+| Chad Henne | Verified 2012 contract summary above | 2013: $4,650,000 cap; $2,625,000 base; $3,650,000 scheduled cash |
 | Jordan Palmer | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
 | Jalen Parmele | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
 | Jonathan Grimes | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
@@ -142,8 +142,8 @@ Historical contract pages are used only for terms that were already fixed before
 | Cecil Shorts | Verified 2011 contract summary above | 2013: $728,767 cap; $617,922 base |
 | Jerrell Jackson | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
 | Jordan Shipley | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
-| Justin Blackmon | Verified 2012 contract summary above | 2013: $3,265,572 cap; | Justin Blackmon | Verified 2012 contract summary above | ,231,455 base; | Justin Blackmon | Verified 2012 contract summary above | ,989,754 scheduled cash |
-| Laurent Robinson | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
+| Justin Blackmon | Verified 2012 contract summary above | 2013: $3,265,572 cap; $1,231,455 base; $1,989,754 scheduled cash |
+| Laurent Robinson | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | 2013 scheduled obligation approximately $4.2M; later real release/grievance not imported |
 | Mike Brown | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
 | Toney Clemons | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
 | Allen Reisner | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
@@ -161,10 +161,10 @@ Historical contract pages are used only for terms that were already fixed before
 | Brad Meester | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
 | Mike Brewster | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
 | Steve Vallos | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
-| Andre Branch | Verified 2012 contract summary above | 2013: | Andre Branch | Verified 2012 contract summary above | ,156,803 cap; $621,361 base |
+| Andre Branch | Verified 2012 contract summary above | 2013: $1,156,803 cap; $621,361 base |
 | Austen Lane | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
 | George Selvie | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
-| Jason Babin | Verified 2011 contract summary above | 2013: $4,325,000 cap; $4,225,000 base + | Jason Babin | Verified 2011 contract summary above | 00,000 workout |
+| Jason Babin | Verified 2011 contract summary above | 2013: $4,325,000 cap; $4,225,000 base + $100,000 workout |
 | Jeremy Mincey | Verified 2012 contract summary above | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
 | John Chick | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
 | C.J. Mosley | Verified 2012 contract summary above | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
@@ -172,14 +172,14 @@ Historical contract pages are used only for terms that were already fixed before
 | Jeris Pendleton | Verified 2012 contract summary above | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
 | Jerome Long | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
 | Terrance Knighton | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
-| Tyson Alualu | Verified 2010 contract summary above | 2013: $3,615,000 cap; | Tyson Alualu | Verified 2010 contract summary above | ,922,500 base;  |,072,500 cash |
+| Tyson Alualu | Verified 2010 contract summary above | 2013: $3,615,000 cap; $1,922,500 base; $2,072,500 cash |
 | Kyle Bosworth | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
 | Paul Posluszny | Verified 2011 contract summary above | 2013: $8,500,000 cap; $6,450,000 base; $6,500,000 cash |
 | Brandon Marshall | Verified 2012 contract summary above | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
 | Daryl Smith | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
 | Julian Stanford | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
-| Russell Allen | Verified 2012 contract summary above | 2013:  |,816,666 cap; | Russell Allen | Verified 2012 contract summary above | ,375,000 base; | Russell Allen | Verified 2012 contract summary above | ,900,000 cash |
-| Aaron Ross | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
+| Russell Allen | Verified 2012 contract summary above | 2013: $2,816,666 cap; $1,375,000 base; $1,900,000 cash |
+| Aaron Ross | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | 2013 opening obligation approximately $3.7M; later real release not imported |
 | Antwaun Molden | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
 | Derek Cox | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
 | Kevin Rutland | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
@@ -187,9 +187,9 @@ Historical contract pages are used only for terms that were already fixed before
 | Rashean Mathis | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
 | Chris Prosinski | Verified 2011 contract summary above | 2013: $720,039 cap; $615,012 base |
 | Antwon Blake | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
-| Dawan Landry | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
+| Dawan Landry | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | 2013 opening obligation approximately $6.7M; later real release not imported |
 | Dwight Lowery | Verified 2012 contract summary above | 2013 scheduled obligation approximately $3,875,000 |
-| Josh Scobee | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | 2013: $3,287,500 cap;  |,325,000 base;  |,350,000 cash |
+| Josh Scobee | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | 2013: $3,287,500 cap; $2,325,000 base; $2,350,000 cash |
 | Bryan Anger | Verified 2012 contract summary above | 2013: $675,538 cap; $509,913 base |
 | Jeremy Cain | Player appears on sourced roster; exact contract term not independently confirmed in available contract export | Base, bonus/proration, cash and cap charge unknown pending club-level ledger |
 
