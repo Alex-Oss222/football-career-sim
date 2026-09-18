@@ -5,7 +5,7 @@
 **When this template is used:** from the moment the coach's season ends (elimination, or the offseason clock starting after a Super Bowl loss/win) through the day before the next league year's preseason bulk report. In-season turns use `season_output_template.md` instead.
 
 **Design notes carried over from the draft, resolved:**
-- **Job Security %.** The draft's numeric ("20% = Hot Seat") would otherwise conflict with Document 3's ban on a single job-security score, so it is framed here as the coach's own gut read, self-attributed and explicitly capable of being wrong — not an omniscient hidden number the engine secretly tracks (Document 1 §6.4's "coach self-description" provenance label covers exactly this). Ownership's actual position is a separate, real, attributed statement, not derived from the percentage.
+- **Job Security %.** Removed at the user's explicit instruction, not just reframed. The draft's numeric ("20% = Hot Seat") conflicts with Document 3's ban on a single job-security score, and a percentage — even one labeled as "just a gut read" — still functions as a hidden number in practice. §1 below carries only a plain qualitative label (Confident / Uneasy / On notice / Expects to be fired), stated as the coach's own fallible opinion (Document 1 §6.4's "coach self-description" provenance label), with no number attached anywhere. Ownership's actual position is a separate, real, attributed statement, never derived from the coach's own label.
 - **Narrative:** the draft asked for two mini-scenes — a front-office closeout meeting (can I get fired) and the coach's own team assessment by position, top to bottom. Built as §3A and §3B below.
 - **Depth chart -> "every position group has a relative assessment."** Replaced the old "key personnel only" abbreviated list with a full position-group grading table, §4.
 - **Financial Snapshot -> "in-depth and detailed."** Expanded well past the 4-row draft into §2, matching Document 4's financial schema and Document 7 §6.4's precision commitment (real, sourced numbers — never invented "cap room").
@@ -29,7 +29,7 @@
 | Reports to | [Superior name, title] |
 | Contract | Year [X] of [Y] @ $[salary] |
 | Career record | [W-L] ([win %]) |
-| Coach's own read on job security | [X]% ([OK / Warning / Critical / Hot Seat]) — the coach's personal gut read, not a confirmed front-office position |
+| Coach's own read on job security | [Confident / Uneasy / On notice / Expects to be fired] — the coach's personal gut read, not a confirmed front-office position, and no number attached |
 | Ownership/GM's actual stated position, if communicated | [Quote or paraphrase of what was actually said, with who said it and when — or "not yet communicated"] |
 
 ## 2. Financial snapshot (in-depth)
