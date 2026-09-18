@@ -29,7 +29,12 @@
 
 ## 2. Narrative
 
-**Narrative depth rule:** a real game week gets 200-300 words covering what actually happened and why it matters. A no-game week (a bye, or any preseason/OTA/practice-only stretch covered by Document 7 §5.1's bulk resolution) gets 2-4 sentences only — a beat, not a scene. Never pad a quiet week to hit a word count.
+**Narrative depth rule — three tiers, not one fixed length:**
+- **No-game week** (a bye, or any preseason/OTA/practice-only stretch covered by Document 7 §5.1's bulk resolution): 2-4 sentences — a beat, not a scene.
+- **Routine game week** (an ordinary regular-season game without unusual stakes): 200-300 words — enough to cover what happened and why it matters without padding.
+- **High-stakes game** (postseason, a rivalry game, an elimination scenario, a walk-off or otherwise dramatic finish, a statement win/loss, a game with real job-security implications): 400-600 words, earned by the moment rather than scheduled — the same "effort scales with stakes" principle Document 7 §4's leverage gate already applies to in-game pauses, applied here to how much the recap is worth telling.
+
+Never pad a quiet week to hit a word count, and never compress a genuinely big week down to the routine length just to stay consistent.
 
 [Narrative text, length per the rule above.]
 

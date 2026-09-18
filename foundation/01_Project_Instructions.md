@@ -16,7 +16,9 @@ The world does not exist to reward, punish, teach, or dramatize the protagonist.
 
 ## 2. Initialization gate
 
-Do not generate a coaching scene, game, roster move, player decision, press conference, career event, or other in-world development until all of the following are recorded and reconciled across Documents 2 through 7 and the user explicitly says to initialize the career:
+**Exception: the hiring search itself is not gated by this section.** Document 3 §10's compressed-turn hiring-search procedure runs first, from Stone's current "HC candidate, not yet hired" status — it is the mechanism that produces the team, contract, and start date this gate requires, so it cannot itself wait on them. This gate governs season/career play, which begins only once that search concludes in a hire. See Document 3 §12 for the full explanation.
+
+Do not generate a game, roster move, player decision, press conference, or other season/career in-world development until all of the following are recorded and reconciled across Documents 2 through 7 and the user explicitly says to initialize the career:
 
 1. Competition level, governing body, season, team, location, and exact start date.
 2. Real, fictional, mixed, historical, current, or counterfactual mode.

@@ -162,9 +162,9 @@ Only the user may establish the protagonist's beliefs, motives, philosophy, prom
 
 ### 2.2 Supplied candidate principles — parked, not shown here
 
-Moved to `archive/legacy_coaching_philosophy_candidates.md` on 2026-09-17 to keep this document clean while Stone is an unhired candidate — nothing about an unhired candidate's future coaching identity is "known" yet, so an old unconfirmed list sitting here read as more settled than it is. Nothing was adopted, rejected, or decided by moving it; it is simply out of the way until §2's deferral ends.
+Moved out of this document, and out of this repository entirely, on 2026-09-17, to the user's own Desktop (`legacy_coaching_philosophy_candidates.md`) — kept as the user's personal reference, not repo-tracked, and not repeated here so this document stays clean while Stone is an unhired candidate. Nothing about an unhired candidate's future coaching identity is "known" yet, so an old unconfirmed list sitting live in this document read as more settled than it is. Nothing was adopted, rejected, or decided by moving it.
 
-That archive file also names a second, separate, equally-unadopted source: the newer character dossier's own 12-principle "Bear Crawl" operating philosophy. The two are unrelated and neither is canon. When §2 is actually resolved (after Stone is hired), the user may draw on either, both, or neither — see Document 3 §2's deferral note.
+A second, separate, equally-unadopted source exists: the newer character dossier's own 12-principle "Bear Crawl" operating philosophy. The two are unrelated and neither is canon. When §2 is actually resolved (after Stone is hired), the user may draw on either, both, or neither — see Document 3 §2's deferral note.
 
 ## 3. Employment contract and reporting structure
 
@@ -510,6 +510,8 @@ This is a generated lookup index, not a revision log and not an independent sour
 Audit this document after a coaching contract change, supervisor or general-manager change, material assistant-staff change, play-calling reassignment, authority dispute, team change, season-phase transition affecting authority, contradiction discovery, and before or after a new-chat handoff when any of those subjects remain active.
 
 ## 12. Initialization gate
+
+**This gate is for season/career play, not for the hiring search itself.** Several of its own items (team, contract, authority map, roster) cannot exist before Stone is hired, so reading this gate as blocking the hiring search too would make starting the simulation impossible. The correct order is: (1) Section 10's compressed-turn hiring-search procedure runs first, entirely on its own, starting from Stone's current canon status ("HC candidate, not yet hired," per §1.4) — this is not itself an in-world "career event" the way a game or roster move is, it is the mechanism that produces the team/contract/start-date this gate needs; (2) only once Section 10 concludes in a hire does this gate's checklist actually become satisfiable, and only then does full season/career play begin. To start, tell the simulator to begin the January 2013 hiring search — that alone does not require any item below to already be resolved.
 
 Career initialization remains blocked until all of the following are resolved and recorded:
 
