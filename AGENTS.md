@@ -81,6 +81,24 @@ This is the bounded pre-hire phase that may run before full career initializatio
 
 ---
 
+## Task: "Build the initial roster and cap sheet for [Team]." (fires once a hire closes)
+
+**Prerequisite.** `career/[year]/offseason/hiring_search.md` must show status `HIRED — INITIALIZATION BUILD REQUIRED` (or later), with the accepted team and contract terms already recorded. If no hire has closed, stop and report rather than guessing a team.
+
+**Two-pass research discipline, same standard as the real-data library task.**
+1. **Research pass.** The real team's actual roster as of the hire date — every player under contract, position, and real contract terms (length, bonus structure, real cap hit where sourceable) — the team's real 2013 salary-cap position, and its real coaching/front-office staff below the head-coach level. Cite a specific real source for every claim.
+2. **Verification pass, genuinely separate and skeptical of the first.** Re-check every figure from scratch. This exact discipline caught real errors (a wrong hire date, a wrong draft slot, a cap-floor rule that didn't exist as first described) when the original 2013 library was built — do not skip it here either. Mark anything unconfirmable as approximate rather than presenting an estimate as fact.
+
+**Write the sourced research to a new file:** `library/[team]_2013_opening_roster_and_cap.md`, modeled on the existing library files.
+
+**Then, and only for this task, populate `state/04_Roster_and_Staff_Register.md`** from that sourced research, following the register's own already-written field definitions and evidence rules exactly as they stand in that file. This is the one task in this document authorized to write to a state file directly — populating the initial roster/cap baseline is exactly what Document 3 §12 and `career/README.md`'s HIRED / INITIALIZATION BUILD phase require before the career can reach READY. Copy load-bearing cap figures into Document 2 §11's real financial tables the same way the original 2013 library build did.
+
+**Do not** invent a depth chart, a scheme fit, or any coach's evaluation of a player — this task supplies real, sourced facts (contract, position, real prior-season role/statistics) only. Stone's own evaluation of these players is a separate, later, interactive step, not something to pre-decide here.
+
+**Do not** touch Document 3, Document 5, or Document 6 — reconciling the new roster baseline into the rest of the package is a separate step for whoever runs the interactive side of this project to close out.
+
+---
+
 ## Task: "Run the [year] offseason cycle." (not yet enabled — placeholder)
 
 This task is not fully specified yet. Do not attempt it until this repo's owner has added a dated brief (draft-board priorities in order, free-agency budget and targets, own-free-agent re-signing priorities) — check `career/[year]/offseason/` for a file named `team_building_brief.md` or similar before proceeding. If it doesn't exist, stop and report that back rather than improvising a philosophy on the user's behalf; team-building priorities are the one thing in this project only the user gets to set (Document 1 §3).
