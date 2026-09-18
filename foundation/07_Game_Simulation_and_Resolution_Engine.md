@@ -252,7 +252,7 @@ The evidence-labeling system, the real-person protections, the append-only ledge
 4. **Three output formats.** Resolved: pre-hire hiring search, in-season, and offseason — see `foundation/templates/`.
 5. **Repository folder structure.** Resolved 2026-09-17: the flat 8-file layout was reorganized to mirror the SCOTUS project's `foundation/` + `state/` + `terms/` pattern, at the user's explicit request. See §12 below.
 6. **The coach's own real-world playbook.** Resolved 2026-09-17, per §3.7: kept entirely external, referenced by file path, and looked up one play at a time only when actually called in-game — never ingested wholesale. Its "expected yards" annotations are a situational modifier into the existing matchup-delta calculation, never a lookup result.
-7. **Hiring-search output format and persistence.** Resolved 2026-09-17: `foundation/templates/hiring_search_output_template.md` gives the pre-hire candidacy phase the same concrete shape the season/offseason templates give post-hire play, and every turn is appended to `career/<year>/offseason/hiring_search.md` rather than existing only in chat — see Document 3 §10.2 items 6-8 and `career/README.md`'s exception to "empty until initialization."
+7. **Hiring-search output format and persistence.** Resolved 2026-09-17: `foundation/templates/hiring_search_output_template.md` gives the pre-hire candidacy phase the same concrete shape the season/offseason templates give post-hire play, and every turn is appended to `career/<year>/offseason/hiring_search.md` rather than existing only in chat — see Document 3 §10.2 items 6-8 and `career/README.md`'s PRE-HIRE SEARCH lifecycle.
 
 ## 12. Repository layout
 
