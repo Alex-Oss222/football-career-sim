@@ -1,7 +1,7 @@
 # Library: 2013 NFL Draft Class — Pre-Selection Scouting Snapshot
 
 **Status:** Research rebuild completed 2026-09-18 with a separate verification pass.  
-**Hard cutoff:** **2013-04-25, before the first selection of the 2013 NFL Draft.**  
+**Hard cutoff:** **2013-04-25 at 8:00 PM ET, immediately before Round 1 begins.**  
 **Runtime purpose:** preserve what evaluators could reasonably have known and argued before the draft, not what later happened.
 
 > **HARD QUARANTINE — NO HINDSIGHT:** This file contains no actual 2013 selection order, no team destinations, no post-draft transactions, no NFL statistics, no awards, no later injuries, no later reputation, and no bust/star framing. Nothing that happened after the draft began may be used to rank, grade, narrate, or secretly calibrate a prospect. A later database may not be used as a hidden answer key. If a claim cannot be supported from evidence available before the first selection, it does not belong here.
@@ -16,7 +16,9 @@ This is a **historical pre-draft information library**, not a list of true talen
 - The Steelers Depot combine tables are a contemporaneous live-results log and explicitly warn that their figures, especially early 40 times, should not all be treated as official. Where NFL.com published an official time for a major prospect, the NFL.com figure controls.
 - Scheme projection matters. A prospect may rank differently as a 4-3 end, 3-4 outside linebacker, nose tackle, three-technique, slot receiver, boundary corner, etc.
 - Medical, availability, and off-field matters appear only when they were publicly documented before the draft and materially affected contemporary evaluation. They are not converted into hidden character or durability scores.
-- **Date gate:** during the simulation, information only becomes available when it existed in-world. January 2013 does not know February combine results, March pro-day results, or an April final board. By the morning of April 25, 2013, the full snapshot below is eligible knowledge.
+- **Attribution rule for subjective scouting language:** traits such as leadership, motor, competitiveness, coachability, maturity, work habits, or character are never objective simulator facts merely because a scouting source used them. Preserve the named evaluator/source when such a claim matters, or restate the underlying observable evidence. Do not turn a pre-draft concern into a permanent personality label.
+- **Pool coverage:** `library/2013_draft_pool_registry.md` owns eligibility/pool coverage. This file is the detailed scouting snapshot for notable prospects, not proof that every eligible senior is listed here.
+- **Date gate:** during the simulation, information only becomes available when it existed in-world. January 2013 does not know February combine results, March pro-day results, or an April final board. Use `library/2013_draft_information_gates.md` to determine what may be loaded on the current simulation date. The full snapshot below is eligible only on April 25, 2013 before the 8:00 PM ET start of Round 1.
 
 ### Source-key legend
 
@@ -114,7 +116,7 @@ Eddie Lacy was the clearest common RB1, but this was not viewed as a class with 
 | Giovani Bernard | North Carolina | 5'8 3/8", 202; 4.53 40; 19 bench; 33.5" vertical | Mayock RB3 / #63; Brandt #109; Norris RB2; PFW RB2 | Natural receiving/return dimension, quick feet and change of direction. Size and ability to consistently finish through heavier contact were the main limits discussed. |
 | Andre Ellington | Clemson | 5'9 1/4", 199; 4.61 40; 34" vertical | Mayock RB4 / #75; Brandt #79; Norris RB3 | One-cut runner with useful receiving ability and enough long speed on tape. Evaluators wanted more certainty about inside finishing and every-down workload. |
 | Le'Veon Bell | Michigan State | 6'1 3/8", 230; 4.60 40; 24 bench; 31.5" vertical | Mayock T-RB5 / #94; Brandt #59 | Large back with patience, contact balance and receiving value. Debate centered on whether he had enough initial burst for his size and which run concepts best fit his tempo. |
-| Christine Michael | Texas A&M | 5'10", 220; 4.54 40; 27 bench; 43" vertical; 10'5" broad; 6.69 three-cone | Mayock T-RB5 / #87; Brandt #60; Norris RB5 | Among the class's best pure athletic profiles at the position, with violent acceleration and finishing ability. College availability and coachability questions made projection substantially less certain than the testing alone suggested. |
+| Christine Michael | Texas A&M | 5'10", 220; 4.54 40; 27 bench; 43" vertical; 10'5" broad; 6.69 three-cone | Mayock T-RB5 / #87; Brandt #60; Norris RB5 | Among the class's best pure athletic profiles at the position, with violent acceleration and finishing ability. Missed time and publicly reported friction with the Texas A&M staff created an additional team-specific evaluation question beyond the testing. Treat any broader claim about coachability as an attributed pre-draft assessment, not an objective personality fact. |
 | Marcus Lattimore | South Carolina | 5'11 1/4", 221; 9 7/8" hands; DNP combine athletic drills while rehabbing major right-knee injury | Mayock pre-combine RB5; active April medical debate rather than a stable final-board slot | Before the October 2012 injury, his vision, contact balance and power had placed him in the top-back discussion. By draft week the evaluation was dominated by a legitimate medical/timeline question: how much function would return, and when. Contemporary scouts themselves disagreed sharply. No later recovery or NFL availability information belongs in this assessment. |
 | Johnathan Franklin | UCLA | 5'10", 205; 4.49 40; 18 bench | Mayock #100; Brandt #85 | Vision, quickness and open-field ability appealed to zone-oriented teams; size and pass-protection translation were common areas to investigate. |
 
@@ -315,7 +317,7 @@ These are not "risk scores." They identify where a 2013 evaluator had to make a 
 | Xavier Rhodes | Elite size/length/testing and press tape | Change of direction/off-coverage flexibility across schemes |
 | Alec Ogletree | Rare linebacker range and coverage athleticism | Block handling, positional fit and how teams weighted documented off-field incidents |
 | Manti Te'o | Productive, instinctive multi-year résumé | Athletic ceiling in space and how teams separated football evaluation from extraordinary public scrutiny |
-| Christine Michael | Exceptional testing and powerful run traits | Durability/availability record and team confidence in his college coachability history |
+| Christine Michael | Exceptional testing and powerful run traits | Durability/availability record and how teams interpreted the documented college staff/role history |
 | Tank Carradine | High-level 2012 edge tape | ACL recovery timetable and how quickly pre-injury explosion would return |
 
 ## 16. Runtime rules for using this class
@@ -326,7 +328,7 @@ These are not "risk scores." They identify where a 2013 evaluator had to make a 
 4. **Preserve evaluator disagreement.** If Mayock, Brandt, Norris, Sports Illustrated and personnel-source surveys disagree, that disagreement should widen the range of plausible team opinions. Do not average it into a fake objective number.
 5. **Build team boards by football fit.** A press-heavy defense may value Rhodes differently from an off-zone defense. A movement-heavy offensive line may value Cooper differently from a power team. A vertical passing offense may order quarterbacks or receivers differently from a rhythm/West Coast structure.
 6. **Testing modifies the evaluation; it does not replace tape.** The combine and pro day establish verified physical dimensions and athletic evidence. They are not a deterministic talent oracle.
-7. **Respect the information date.** Do not show April final-board information in January. Combine information becomes available after the relevant February workout. Pro-day information becomes available on its actual March/April date. The final April boards represent the state of public evaluation immediately before the draft.
+7. **Respect the information date.** `library/2013_draft_information_gates.md` is the controlling runtime gate. Do not show April final-board information in January. Combine information becomes available after the relevant February workout. Pro-day information becomes available on its actual March/April date. The final April boards become available only on their publication dates, and this complete file may be loaded only on April 25 before 8:00 PM ET.
 8. **Do not manufacture unanimity.** A club can reasonably disagree with the public consensus if its own scheme, evidence and risk tolerance explain why.
 9. **Do not pre-script development.** There is no hidden future label saying a player will become a star, starter, backup or failure. Once selected in the simulation, development follows the simulation's own evidence and engine.
 10. **Any future addition to this file must pass the cutoff test.** If the source or fact depends on knowing what happened after the first selection began on April 25, 2013, quarantine it outside active prospect evaluation.
@@ -362,7 +364,9 @@ A second pass checked the first reconstruction against independent contemporary 
 
 ## 18. Core contemporary source register
 
-All sources below were published or represented information available before the first selection on April 25, 2013. Later pages that merely reproduce actual selection results are intentionally excluded.
+All sources below were published or represented information available before the first selection at 8:00 PM ET on April 25, 2013. Later pages that merely reproduce actual selection results are intentionally excluded.
+
+**Eligibility/date companions:** `library/2013_draft_pool_registry.md` records the official 73-player special-eligibility list and the conservative senior-pool rule. `library/2013_draft_information_gates.md` controls when declarations, combine information, workouts, medical updates, and final boards enter runtime knowledge.
 
 ### Final national boards
 
