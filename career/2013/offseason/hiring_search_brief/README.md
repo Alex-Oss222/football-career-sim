@@ -23,4 +23,4 @@ Priority alone is not permission to accept an offer. A general preference is not
 - `library/alex_stone_character_dossier_pre_hire.md` — established biography, demonstrated experience, and evidence boundaries. It does not provide Stone's philosophy, motives, or interview answers.
 - `library/2013_coaching_market_pre_hire.md` — public team context available at the January 14 cutoff.
 
-The resolver must not use `library/2013_coaching_market.md` during the search because it contains quarantined actual-future outcomes.
+The archived historical comparator at `archive/2013_coaching_market_historical_comparator.md` is not a hiring-search source because it contains later real-world outcomes.
