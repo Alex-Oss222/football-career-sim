@@ -614,7 +614,7 @@ That changes:
 
 Real-history reporting connected Saints offensive coordinator Pete Carmichael Jr. to Chicago's search.
 
-In Stone's branch, Stone held the Saints offensive-coordinator role from 2009 through April 2012, Carmichael remained a major passing-game staff member, and Carmichael handled substantial weekday offensive coordination during Stone's 2012 interim season. The Saints also remained alive through January 13. Carmichael therefore does not enter this market with the same résumé or availability he had in real history.
+In Stone's branch, Stone holds the Saints offensive-coordinator role throughout his New Orleans tenure, including the 2012 interim-HC season. Carmichael remains a major passing-game/offensive staff member and handles substantial weekday offensive coordination, but he does not hold the OC title while Stone remains with the Saints. User canon establishes that Carmichael becomes Saints offensive coordinator only after Stone leaves New Orleans; at this pre-hire snapshot that succession has not happened. The Saints also remained alive through January 13. Carmichael therefore does not enter this market with the same résumé or availability he had in real history.
 
 For that reason, the real Chicago-Carmichael interview is not treated as something that already happened here. Chicago can still become interested in him, but that would develop from the résumé and availability he actually has in this branch.
 
