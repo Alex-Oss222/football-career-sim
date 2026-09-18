@@ -8,6 +8,7 @@
 - "Build something format that's not in-depth for training camp and OTAs" -> see §2's Narrative Depth Rule below: the narrative section scales down to 2-4 sentences on a no-game week and back up to 200-300 words on a game week, rather than being one fixed length.
 - The draft's depth chart used a `[Grade]/10` numeric. Document 1 §6.3 and Document 3 bar a numeric rating ever reaching coach-facing text, so this template uses the same five-tier qualitative language the rest of the canon already uses (Elite / Plus / Average / Below-Average / Replacement-Level), attributed to the coaching staff's evaluation, not a hidden true score.
 - "Job Security %" (offseason draft) is addressed there, not here — an in-season turn only surfaces job security if something material actually made it a live topic (a losing streak, a front-office comment), per Document 1 §7's fog-of-war; it is never a running header stat in-season.
+- **Added 2026-09-17, at the user's request:** pregame and postgame media sessions for the coach, scaled by the same stakes principle as the narrative section rather than one fixed length — see §3 below.
 
 ---
 
@@ -44,6 +45,8 @@ Present once per game actually played this turn (usually one; a preseason bulk r
 
 ### [Week X] vs [Opponent] — [Result context, e.g. Wild Card Round]
 
+**Pregame comments** (optional — include only when there's actually something a reporter would ask about: an opponent storyline, an injury question, a revenge/reunion angle, a hot-seat question. Skip entirely for a routine week with nothing to address.) 50-100 words routine, up to 150 for a game already flagged high-stakes by §2's rule. [Coach's actual quoted/paraphrased answers, in his voice — not a press release summary.]
+
 **Final:** [Team] [Score] – [Opponent] [Score] | [W/L]
 **Location:** [Stadium], [conditions]
 
@@ -59,6 +62,8 @@ Present once per game actually played this turn (usually one; a preseason bulk r
 | 3rd down | [X/Y] | [X/Y] |
 
 **Standout performances:** [2-4 named players and what they did, drawn from Document 7 §3.2's featured beats — never every player, only who the drive resolution actually featured.]
+
+**Postgame press conference.** Same three-tier stakes rule as §2's narrative, applied to the presser itself: 100-150 words for a routine result, 150-250 for a high-stakes one (a bad loss that invites hard questions, a signature win, an elimination game, anything with real job-security or storyline weight). Actual Q&A texture, not a recap restated in quotes — what the coach actually said when asked the hard question, praised a player, or deflected. [Coach's press-conference content.]
 
 ## 4. Roster snapshot — key personnel only
 
