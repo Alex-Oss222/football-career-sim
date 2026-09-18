@@ -635,7 +635,7 @@ Legend:
 | Chip Kelly | — | — | — | Interviewed, then declined/stayed Oregon | — | Unavailable at cutoff |
 | Brian Kelly | — | — | Not in Bears field | Interviewed, then stayed Notre Dame | — | Unavailable at cutoff |
 | Bill O'Brien | — | — | — | Interviewed, then stayed Penn State | — | Unavailable at cutoff |
-| Andy Reid | Initial AZ target only | Initial target, then market closed | — | — | — | Unavailable: accepted KC job |
+| Andy Reid | — | Initial target, then market closed | — | — | — | Unavailable: accepted KC job |
 | Doug Marrone | — | — | — | Earlier market connection | — | Unavailable: accepted BUF job |
 | Rob Chudzinski | — | — | — | — | — | Unavailable: accepted CLE job |
 | Pete Carmichael Jr. | — | — | **Divergence-sensitive** | — | — | Do not import real-history candidacy |
