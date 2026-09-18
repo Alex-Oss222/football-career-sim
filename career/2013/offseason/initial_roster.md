@@ -98,21 +98,22 @@ This is not a keep/cut recommendation. It is the contractual starting condition.
 
 ## Position-group inventory at the snapshot
 
-The table below is an administrative count of the names in this file, not a depth-chart quality judgment.
+The table below separates the **63-name active/reserve evidence spine** from players who appear only on the independently sourced March-expiration rights board. It is an administrative inventory, not a depth-chart or talent judgment.
 
-| Group | Active-spine / reserve names visible here | Immediate contract-planning issue |
-|---|---:|---|
-| Quarterback | 3 | Gabbert and Henne under contract; Palmer scheduled free agent |
-| Running back / fullback | 7 | Jones, Parmele and Toston among March expirations; Jones-Drew under contract |
-| Wide receiver | 7 | Shipley scheduled RFA; Robinson/Blackmon/Shorts under continuing deals |
-| Tight end | 4 | Potter scheduled RFA; Lewis under major veteran contract |
-| Offensive line | 11 | Monroe/Nwaneri/Rackley continuing; Britton/Meester/Vallos plus Estes rights require March decisions |
-| Defensive line / edge | 11 | Knighton, Chick, Selvie among expirations; several continuing rookie/veteran deals |
-| Linebacker | 6 | Daryl Smith/Bosworth expirations; Posluszny/Allen continuing |
-| Defensive back | 11 | Cox/Mathis/Molden/Middleton expirations; multiple continuing veteran contracts |
-| Specialists | 3 | Scobee, Anger and Cain in snapshot |
+| Group | Names in 63-player evidence spine | Additional rights-only names | Immediate contract-planning issue |
+|---|---:|---|---|
+| Quarterback | 3 | 0 | Gabbert and Henne under contract; Palmer scheduled free agent |
+| Running back / fullback | 7 | 1 — Rashad Jennings | Jones, Parmele and Toston among March expirations; Jones-Drew under contract |
+| Wide receiver | 7 | 0 | Shipley scheduled RFA; Robinson/Blackmon/Shorts under continuing deals |
+| Tight end | 4 | 0 | Potter scheduled RFA; Lewis under major veteran contract |
+| Offensive line | 11 | 1 — John Estes | Monroe/Nwaneri/Rackley continuing; Britton/Meester/Vallos plus Estes rights require March decisions |
+| Defensive line / edge | 12 | 0 | Knighton, Chick and Selvie among expirations; several continuing rookie/veteran deals |
+| Linebacker | 6 | 0 | Daryl Smith/Bosworth expirations; Posluszny/Allen continuing |
+| Defensive back | 10 | 1 — William Middleton | Cox/Mathis/Molden/Middleton expirations; multiple continuing veteran contracts |
+| Specialists | 3 | 0 | Scobee, Anger and Cain in snapshot |
+| **Total** | **63** | **3** | The 66 named people are still not asserted to equal the exact 90-man January offseason list |
 
-Counts reflect the listed active/reserve register and the separately noted expiring-rights players. They are not asserted as the exact 90-man offseason roster.
+The rights-only names are included because Jacksonville's contract rights or expiring contracts were independently documented even though those players were absent from the Week-17-active/reserve evidence spine used to build the main register.
 
 ## Player register
 
