@@ -316,3 +316,148 @@ These are not "risk scores." They identify where a 2013 evaluator had to make a 
 | Christine Michael | Exceptional testing and powerful run traits | Durability/availability record and team confidence in his college coachability history |
 | Tank Carradine | High-level 2012 edge tape | ACL recovery timetable and how quickly pre-injury explosion would return |
 
+## 16. Runtime rules for using this class
+
+1. **Never load the real 2013 draft order.** The simulation's order comes only from the simulation's standings, postseason results, tiebreakers, trades, forfeitures and compensatory-pick process.
+2. **Never use an actual 2013 selection slot or selecting club as evidence of prospect quality.** Selection itself is after the cutoff.
+3. **Never import an NFL career outcome.** Professional statistics, awards, starting history, later injuries, trades, contracts, suspensions, team changes, public reputation and retrospective "hit/bust/steal/reach" language are prohibited inputs.
+4. **Preserve evaluator disagreement.** If Mayock, Brandt, Norris, Sports Illustrated and personnel-source surveys disagree, that disagreement should widen the range of plausible team opinions. Do not average it into a fake objective number.
+5. **Build team boards by football fit.** A press-heavy defense may value Rhodes differently from an off-zone defense. A movement-heavy offensive line may value Cooper differently from a power team. A vertical passing offense may order quarterbacks or receivers differently from a rhythm/West Coast structure.
+6. **Testing modifies the evaluation; it does not replace tape.** The combine and pro day establish verified physical dimensions and athletic evidence. They are not a deterministic talent oracle.
+7. **Respect the information date.** Do not show April final-board information in January. Combine information becomes available after the relevant February workout. Pro-day information becomes available on its actual March/April date. The final April boards represent the state of public evaluation immediately before the draft.
+8. **Do not manufacture unanimity.** A club can reasonably disagree with the public consensus if its own scheme, evidence and risk tolerance explain why.
+9. **Do not pre-script development.** There is no hidden future label saying a player will become a star, starter, backup or failure. Once selected in the simulation, development follows the simulation's own evidence and engine.
+10. **Any future addition to this file must pass the cutoff test.** If the source or fact depends on knowing what happened after the first selection began on April 25, 2013, quarantine it outside active prospect evaluation.
+
+## 17. Verification record
+
+### Pass 1 — research reconstruction
+
+The class was rebuilt from the final weeks of the actual 2013 pre-draft process rather than from a modern retrospective database.
+
+- Mayock's April 18 final position rankings supplied one consistent late-process positional board.
+- Mayock's April 19 Top 100 supplied a same-evaluator overall cross-check.
+- Brandt's April 24 Hot 100 + 25 supplied a second independent late overall board.
+- Sports Illustrated's March 26 offensive and defensive position rankings supplied a separate national-board comparison before the final week.
+- Josh Norris' April position series supplied an independent tape-based ordering that frequently disagreed with Mayock, especially at quarterback, tight end and linebacker.
+- Bob McGinn's contemporaneous Milwaukee Journal Sentinel position series and the NFL.com articles quoting/summarizing its personnel surveys supplied league-scout disagreement rather than only media-board agreement.
+- Combine dimensions and drill results were reconstructed from the contemporaneous Steelers Depot live result tables, with the source's own warning preserved that those live figures were not all official.
+- Major prospect workout/medical events were separately checked against dated NFL.com reports rather than inferred from later biographies.
+- Specialist ordering was checked across contemporaneous April 2013 specialist boards instead of inferred from eventual selection.
+
+### Pass 2 — skeptical verification
+
+A second pass checked the first reconstruction against independent contemporary material.
+
+- Final Mayock position ordering was cross-checked against his next-day Top 100; apparent differences were treated as role/overall-value differences rather than silently "corrected."
+- Mayock's overall ordering was cross-checked against Brandt and Sports Illustrated. Large disagreements, such as Hayden/Milliner, Bernard, Datone Jones and some quarterbacks, were deliberately retained.
+- Major combine numbers were checked against NFL.com reporting where an official or event-specific report was available. Where only a live combine table was available, this file avoids presenting the number as uniquely authoritative.
+- Special workout claims were checked individually: Lacy (April 11), Allen (April 9), Hayden (March 18), Lotulelei (March 20), Jones (March 21) and Carradine (April 20).
+- Medical or conduct information was included only when publicly documented before the draft and clearly relevant to contemporary evaluation. It was not transformed into speculative private motives, diagnoses beyond the public record or permanent character labels.
+- No actual first-round order, actual selection, selecting team or NFL-career result was used to resolve a disagreement.
+
+**Known limitation:** there was no single official public NFL master table in 2013 that cleanly exposed every combine measurement exactly as modern databases do. The detailed tables here therefore preserve source provenance and use "about," "roughly," or a source-dependent range when records conflict. Precision is not invented to make the file look cleaner.
+
+## 18. Core contemporary source register
+
+All sources below were published or represented information available before the first selection on April 25, 2013. Later pages that merely reproduce actual selection results are intentionally excluded.
+
+### Final national boards
+
+- **MAYOCK-POS — Mike Mayock, "Mike Mayock lifts D.J. Hayden in draft prospect rankings," NFL.com, April 18, 2013.**  
+  https://www.nfl.com/news/mike-mayock-lifts-d-j-hayden-in-draft-prospect-rankings-0ap1000000161631
+- **MAYOCK-100 — Mike Mayock, "2013 NFL Draft: Mike Mayock's top 100 prospects," NFL.com, April 19, 2013.**  
+  https://www.nfl.com/news/2013-nfl-draft-mike-mayock-s-top-100-prospects-0ap1000000161676
+- **BRANDT-125 — Gil Brandt, "Hot 100 + 25: Luke Joeckel, Ziggy Ansah still top 2013 draft class," NFL.com, April 24, 2013.**  
+  https://www.nfl.com/news/hot-100-25-luke-joeckel-ziggy-ansah-still-top-2013-draft-class-0ap1000000162920
+- **SI-OFF — Chris Burke, "2013 NFL Draft Position Rankings: Offense," Sports Illustrated, March 26, 2013.**  
+  https://www.si.com/nfl/2013/03/26/2013-nfl-draft-position-rankings-offense
+- **SI-DEF — Chris Burke, "2013 NFL Draft Position Rankings: Defense," Sports Illustrated, March 26, 2013.**  
+  https://www.si.com/nfl/2013/03/26/2013-nfl-draft-position-rankings-defense
+
+### Josh Norris position series, NFL.com
+
+- **NORRIS-QB — "2013 NFL Draft: Tyler Wilson tops Geno Smith in QB rankings," April 2013.**  
+  https://www.nfl.com/news/2013-nfl-draft-tyler-wilson-tops-geno-smith-in-qb-rankings-0ap1000000158147
+- **NORRIS-RB — "2013 NFL Draft: Eddie Lacy sits atop running back rankings," April 9, 2013.**  
+  https://www.nfl.com/news/2013-nfl-draft-eddie-lacy-sits-atop-running-back-rankings-0ap1000000158587
+- **NORRIS-WR — "2013 NFL Draft: Tavon Austin headlines wide receiver rankings," April 10, 2013.**  
+  https://www.nfl.com/news/2013-nfl-draft-tavon-austin-headlines-wide-receiver-rankings-0ap1000000158865
+- **NORRIS-TE — "2013 NFL Draft: Tyler Eifert, Travis Kelce top tight end rankings," April 2013.**  
+  https://www.nfl.com/news/2013-nfl-draft-tyler-eifert-travis-kelce-top-tight-end-rankings-0ap1000000159180
+- **NORRIS-OL — "2013 NFL Draft: Eric Fisher edges Luke Joeckel in O-line rankings," April 12, 2013.**  
+  https://www.nfl.com/news/2013-nfl-draft-eric-fisher-edges-luke-joeckel-in-o-line-ranking-0ap1000000159380
+- **NORRIS-LB — "2013 NFL Draft: Alec Ogletree, Arthur Brown headline linebackers," April 2013.**  
+  https://www.nfl.com/news/2013-nfl-draft-alec-ogletree-arthur-brown-headline-linebackers-0ap1000000157879
+- **NORRIS-S — "2013 NFL Draft: Kenny Vaccaro, John Cyprien head safety class," April 5, 2013.**  
+  https://www.nfl.com/news/2013-nfl-draft-kenny-vaccaro-john-cyprien-head-safety-class-0ap1000000157863
+- **NORRIS INDEX — "2013 NFL Draft: Ranking top prospects available at every position," April 2013.**  
+  https://www.nfl.com/news/2013-nfl-draft-ranking-top-prospects-available-at-every-positio-0ap1000000157008
+
+### League-personnel survey cross-checks
+
+The Milwaukee Journal Sentinel's Bob McGinn published a position-by-position series in the final week using interviews with NFL scouts, personnel directors and executives. Some original legacy archive URLs are unstable. Where the original archive is unavailable, the following contemporaneous NFL.com reports preserve and identify the McGinn survey being referenced:
+
+- **MCGINN-QB cross-check — "Report: NFL evaluator describes draft QBs as 'crappy'," NFL.com, April 20, 2013.** Preserves the survey totals showing strong but not unanimous support for Geno Smith and the league's unusually negative overall view of the quarterback class.
+- **MCGINN-WR cross-check — "Cordarrelle Patterson reportedly seen as a 'project'," NFL.com, April 18, 2013.** Preserves personnel-source concern about Patterson's route/system development.
+- **MCGINN-LB cross-check — "Manti Te'o falls off one team's board for 2013 NFL Draft," NFL.com, April 23, 2013.** Preserves the wide range of team opinion and scheme-specific middle-linebacker ordering.
+- **MCGINN-DB cross-check — "2013 NFL Draft has depth, big question marks at CB," NFL.com, April 24, 2013.** Describes McGinn's personnel polling and the late Hayden/Milliner disruption.
+- The original Journal Sentinel series titles used in the research pass were "Rating the NFL draft prospects" for quarterbacks, receivers/tight ends, offensive linemen, defensive linemen, linebackers and defensive backs, published April 18-23, 2013.
+
+### Combine measurement tables
+
+- **COMBINE MASTER — Steelers Depot, "2013 NFL Combine Results," February 21, 2013 and live updates during combine week.** The page explicitly says the compiled figures should not all be considered official, especially 40 times.  
+  https://steelersdepot.com/2013/02/2013-nfl-combine-results/
+- Position result tables used:  
+  https://steelersdepot.com/2013-nfl-combine-results-quarterbacks/  
+  https://steelersdepot.com/2013-nfl-combine-results-running-backs/  
+  https://steelersdepot.com/2013-nfl-combine-results-wide-receivers/  
+  https://steelersdepot.com/2013-nfl-combine-results-tight-ends/  
+  https://steelersdepot.com/2013-nfl-combine-results-offensive-linemen/  
+  https://steelersdepot.com/2013-nfl-combine-results-defensive-linemen/  
+  https://steelersdepot.com/2013-nfl-combine-results-linebackers/  
+  https://steelersdepot.com/2013-nfl-combine-results-defensive-backs/
+
+### Dated pro-day / medical-event checks
+
+- Eddie Lacy workout, NFL.com, April 11, 2013:  
+  https://www.nfl.com/news/alabama-s-eddie-lacy-has-mixed-results-at-workout-0ap1000000159186
+- Keenan Allen workout, NFL.com, April 9, 2013:  
+  https://www.nfl.com/news/keenan-allen-clocks-4-71-in-40-mayock-doesn-t-care-0ap1000000158580
+- D.J. Hayden Houston pro day, NFL.com, March 18, 2013:  
+  https://www.nfl.com/news/d-j-hayden-posts-blazing-40-time-at-houston-pro-day-0ap1000000151589
+- Star Lotulelei pro day, NFL.com, March 20, 2013:  
+  https://www.nfl.com/news/star-lotulelei-helps-2013-nfl-draft-stock-at-pro-day-0ap1000000152283
+- Jarvis Jones Georgia pro day, NFL.com, March 21, 2013:  
+  https://www.nfl.com/news/jarvis-jones-lackluster-during-georgia-pro-day-0ap1000000152723
+- Tank Carradine recovery workout, NFL.com, April 20, 2013:  
+  https://www.nfl.com/news/tank-carradine-impresses-with-4-75-40-in-pre-draft-run-0ap1000000162142
+
+### Specialists
+
+- WalterFootball, "2013 NFL Draft: Kicker Rankings," last updated April 23, 2013.  
+  https://walterfootball.com/draft2013K.php
+- WalterFootball, "2013 NFL Draft: Punter Rankings," last updated April 23, 2013.  
+  https://walterfootball.com/draft2013pu.php
+
+## 19. Explicit exclusions
+
+The previous version of this library file included the actual real-world first-round order as a "comparator." That table has been removed. Under the stricter pre-selection rule, knowing the order means knowing the result of the selection process, so it is not valid prospect-evaluation evidence.
+
+The following must never be added back into active 2013 prospect research:
+
+- actual round or pick number;
+- actual selecting club or actual draft-day trade that produced a selection;
+- actual rookie depth-chart result or training-camp outcome;
+- NFL regular-season or postseason statistics;
+- Pro Bowls, All-Pro selections, championships or later awards;
+- later injuries, diagnoses, suspensions or availability;
+- later contracts, trades, releases or team changes;
+- later coaching comments or retrospective scouting quotes informed by NFL performance;
+- redrafts and "what teams should have done" articles;
+- retrospective "bust," "hit," "steal," "reach," "star," "late bloomer" or similar outcome labels;
+- any hidden engine rating calibrated to the player's eventual NFL career.
+
+The simulation is allowed to know what scouts knew. It is not allowed to know which scouts turned out to be right.
+
+**The only future that exists for this draft class is the future the simulation creates.**
