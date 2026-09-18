@@ -3,7 +3,7 @@
 ## Purpose and status
 
 **Document status:** Durable protocol and append-only ledger  
-**Protocol version:** Rebuild draft 1.1 (post-audit QA)  
+**Protocol version:** Rebuild draft 1.2  
 **Readiness:** `NOT READY` — no audited starting baseline and handoff have been closed  
 **Global package checkpoint:** `NONE`
 
@@ -815,9 +815,14 @@ Carry automatically only the head coach's established background, user-confirmed
 Do not treat silence after departure as resolution. Close each matter with a dated fulfillment, transfer, expiration, waiver, rejection, or supersession entry.
 Mirror every still decision-relevant obligation and deadline in Document 5 until it closes, even though the coach no longer has former-team authority.
 
+## 12.5 Pre-hire search ledger boundary
+
+Before full career initialization, the January 2013 hiring search is the one authorized simulated phase that does **not** write event-by-event records into Document 6. Its ex-ante decision record lives in `career/<year>/offseason/hiring_search.md` under Documents 1 §9.4 and 3 §10.
+
+Document 6 must not independently generate, resolve, or duplicate hiring-search turns during PRE-HIRE SEARCH. After a user-authorized offer is accepted and the project enters HIRED / INITIALIZATION BUILD, the initialization baseline may import one concise `PRE-HIRE SEARCH CLOSURE` summarizing the already-resolved search: date range, teams pursued, material user decisions, offers/counters, accepted result, and the exact hiring-search ledger reference. That import is a continuity bridge, not a second resolution of the search.
 ## 13. Canonical record area
 
-Before career initialization, this area may contain only:
+Before ACTIVE CAREER initialization, this area may contain only the items below plus, during HIRED / INITIALIZATION BUILD, the single audited PRE-HIRE SEARCH CLOSURE permitted by §12.5:
 
 - verified historical facts that form the proposed starting baseline;
 - explicit user-confirmed coach or alternate-history canon;
@@ -826,7 +831,7 @@ Before career initialization, this area may contain only:
 - source, rules, roster, staff, schedule, or authority reconciliation records;
 - pre-initialization audits, continuity checkpoints, and handoffs.
 
-Label each such entry `PRE-INITIALIZATION RECORD — NOT A SIMULATED EVENT`. It may document what was verified, migrated, rejected, corrected, or left unresolved, but it may not create a game, practice, conversation, transaction, injury, hiring result, player choice, press event, career development, or other post-start simulated occurrence. After explicit initialization, append simulation records under the same closed-update protocol.
+Label ordinary entries `PRE-INITIALIZATION RECORD — NOT A SIMULATED EVENT`. They may document what was verified, migrated, rejected, corrected, or left unresolved, but they may not independently create a game, practice, conversation, transaction, injury, hiring result, player choice, press event, career development, or other post-start simulated occurrence. The sole exception is the `PRE-HIRE SEARCH CLOSURE` imported from the separately authorized hiring-search ledger after an offer has already been accepted; Document 6 records that completed pre-hire history without re-resolving it. After explicit ACTIVE CAREER initialization, append simulation records under the normal closed-update protocol.
 
 Keep protocol text above unchanged unless the user approves a system revision. Document 6 remains the sole complete correction history; Documents 2-5 retain only current values and pointers to entries below.
 
@@ -834,7 +839,7 @@ Keep protocol text above unchanged unless the user approves a system revision. D
 
 Set this document's `Readiness` to `READY` only in the same closed pre-initialization global checkpoint that:
 
-1. records the accepted starting baseline, migration corrections, and source/canon classifications without creating an in-world event;
+1. records the accepted starting baseline, migration corrections, and source/canon classifications; if a pre-hire search concluded in a hire, includes the audited PRE-HIRE SEARCH CLOSURE from §12.5 without re-resolving it;
 2. confirms a locked active-only Document 2, a substantively complete candidate `READY` Document 3, and a `RECONCILED` or nonblocking `RECONCILED WITH NOTED UNCERTAINTY` Document 4 for the exact same mode, team, date, and divergence point;
 3. validates the complete candidate Document 5 snapshot and sets its `Readiness` to `READY`;
 4. includes a full continuity audit and bounded first handoff;
