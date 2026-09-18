@@ -22,7 +22,7 @@ Where a club publicly described what it wanted in a head coach, that language is
 
 Real candidate activity after the divergence is useful for reconstructing who was genuinely in the market, but it is not treated as destiny. Stone's presence and the altered New Orleans timeline can change what happens once the search starts.
 
-## 2. Leaguewide state at the cutoff## 2. Leaguewide state at the cutoff
+## 2. Leaguewide state at the cutoff
 
 ### 2.1 Eight vacancies opened; three were already closed
 
@@ -584,7 +584,7 @@ Status terms:
 | Andy Reid | — | Initial target, then market closed | — | — | — | Unavailable: accepted KC job |
 | Doug Marrone | — | — | — | Earlier market connection | — | Unavailable: accepted BUF job |
 | Rob Chudzinski | — | — | — | — | — | Unavailable: accepted CLE job |
-| Pete Carmichael Jr. | — | — | **Branch-sensitive** | — | — | Do not import real-history candidacy |
+| Pete Carmichael Jr. | — | — | **Branch-sensitive** | — | — | Branch role differs from real 2012; real candidacy is not carried over automatically |
 
 A dash means no relevant connection was established in this research pass by the cutoff. It does not prove there was no private contact.
 
@@ -598,7 +598,7 @@ Stone belongs in that same field. His 2012 interim season gives him more whole-t
 
 Nothing in the January 14 public record turns those differences into a universal ranking. Clubs still had to decide what mattered most to their own situation.
 
-## 11. New Orleans branch notes## 11. New Orleans branch notes
+## 11. New Orleans branch notes
 
 ### 11.1 New Orleans staff cannot be copied from real 2013 history
 
@@ -614,14 +614,9 @@ That changes:
 
 Real-history reporting connected Saints offensive coordinator Pete Carmichael Jr. to Chicago's search.
 
-In this simulation:
-- Stone held the Saints offensive-coordinator role from 2009 through April 2012;
-- Carmichael remained a major passing-game staff member;
-- during Stone's 2012 interim-HC season, Carmichael handled substantial weekday offensive coordination / interim OC duties;
-- he therefore does **not** possess the identical real-world résumé;
-- the simulated Saints remained alive through January 13.
+In Stone's branch, Stone held the Saints offensive-coordinator role from 2009 through April 2012, Carmichael remained a major passing-game staff member, and Carmichael handled substantial weekday offensive coordination during Stone's 2012 interim season. The Saints also remained alive through January 13. Carmichael therefore does not enter this market with the same résumé or availability he had in real history.
 
-Result: the real Chicago-Carmichael candidacy is a **historical comparator only**. Do not insert it as a completed or required branch interview. If Chicago becomes interested in Carmichael inside the branch, that must arise as a branch event from his branch résumé and availability.
+For that reason, the real Chicago-Carmichael interview is not treated as something that already happened here. Chicago can still become interested in him, but that would develop from the résumé and availability he actually has in this branch.
 
 ### 11.3 Aaron Kromer
 
@@ -634,12 +629,7 @@ Therefore:
 
 ### 11.4 Stone's Chargers playing history
 
-Stone's 1986-95 Chargers playing career is branch canon. It makes him a known former Charger, but it does not pre-write San Diego's feelings about him.
-
-Treat:
-- playing history = fact;
-- organizational familiarity = possible factual channel if documented/generated;
-- affection, loyalty, nostalgia, resentment, "homecoming" preference = unknown unless expressed in simulation.
+Stone's 1986-95 Chargers playing career is part of his established history. It makes him a well-known former Charger and gives the San Diego search a genuine franchise connection that the other four jobs do not have. The record does not establish whether the current decision-makers view that connection positively, negatively, or neutrally. Any "homecoming" sentiment would have to come from something they actually say or do.
 
 ## 12. Research-source register
 
@@ -749,19 +739,8 @@ A second pass specifically challenged the first:
 - **Stone neutrality check:** no team criterion in this file was written from Stone's biography, interview pitch, preferred destination, or desired contract.
 - **Hindsight scan:** no eventual target-team hire, later coordinator staff, later draft selection, later free-agent move, or later coaching success/failure appears as a resolution input.
 
-## 14. Explicit exclusions
+## 14. What this snapshot leaves out
 
-This January 14 snapshot intentionally excludes:
-- the actual real hire by any of the five target teams after this cutoff;
-- a real later finalist list as if it were already known;
-- January 14-or-later interviews as completed cutoff events;
-- later coordinator or assistant staffs;
-- later staff retention or firing choices;
-- later player restructures/releases/signings;
-- actual 2013 draft selections as evidence of January priorities;
-- later team records;
-- later coach firings, awards, championships, reputations, or career trajectories;
-- retrospective rankings of the 2013 coaching hires;
-- private motives reconstructed from later outcomes.
+This report stops at the close of January 13. It therefore leaves out the eventual hires by the five open clubs, later finalist lists, January 14-or-later interview activity, later coordinator staffs, staff retention decisions, player restructures and signings, actual 2013 draft selections, later team records, later coaching careers, and retrospective rankings of the 2013 hires.
 
-The point is to preserve the market that existed without importing how it later turned out.
+That separation is deliberate. The file describes the market that existed when Stone entered it, not the answer history eventually produced.
