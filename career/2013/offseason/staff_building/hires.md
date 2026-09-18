@@ -36,3 +36,25 @@ Stone made the calls in the order fixed in `staff_plan.md`. Candidate availabili
 The offensive-line/run-game job remains vacant. Every candidate Stone authorized for that position is now unavailable, declined, or ineligible under the plan's own condition. Selecting another candidate is a consequential Stone staffing choice and requires a new user instruction; the simulator will not invent a fourth target.
 
 No player was signed, released, traded, promised a role, or selected in the draft during this phase.
+
+## Second-round calls — late January 2013
+
+**Updated status:** COMPLETE for the positions authorized in `staff_plan.md`.
+
+The second-round candidate order and its conditions were applied as written. George Yarno was available for the offensive-line/run-game opening and received the first call; Jack Bicknell Jr. therefore was not contacted. Ben Johnson remained under contract to Miami, so Jacksonville first sought permission rather than treating him as a free candidate. Miami declined permission for the lateral assistant-quarterbacks interview, objectively activating the plan's Charlie Skalaski fallback.
+
+### Closed appointments
+
+| Coach | Role | Effective date | Resolution |
+|---|---|---|---|
+| George Yarno | Offensive line / run-game coach | Late January 2013; exact day not established | Accepted direct responsibility for the offensive line and a substantial role in constructing the run game under Mike Tice's broader offensive coordination. The role gives Yarno a defined teaching and planning domain while Stone retains final offensive play-calling authority; no scheme, starter, or acquisition was promised. |
+| Charlie Skalaski | Offensive assistant / assistant quarterbacks coach | Late January 2013; exact day not established | Accepted the fallback offer after Miami blocked the Johnson interview. The assignment supports Jeremy Bates in quarterback-room preparation, opponent study, and offensive quality control; it carries no promise of independent play-calling authority or a predetermined quarterback decision. |
+
+### Calls that did not close
+
+| Position | Candidate | Outcome |
+|---|---|---|
+| Offensive line / run game | Jack Bicknell Jr. | Not called. Yarno accepted the primary offer, so the plan's second call was unnecessary. |
+| Offensive assistant / assistant quarterbacks | Ben Johnson | No interview: Miami exercised its right to deny permission for an assistant under contract to discuss a lateral role. This was a club permission decision, not a Johnson acceptance or decline. |
+
+These calls complete the candidate branches the user authorized. No free-agent, draft, trade, release, depth-chart, or player-role decision was made.
