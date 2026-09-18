@@ -1,26 +1,26 @@
-# Hiring search brief — what goes here
+# Hiring search brief
 
-This folder is what `AGENTS.md`'s "Run the [year] hiring search" task reads before doing anything else. If it's empty or incomplete, Codex is instructed to stop and report back rather than invent your priorities — team-building and negotiating positions are the one thing in this project only you get to set.
+This folder contains only the user's instructions for Alex Stone's side of the 2013 head-coaching search. It must not contain invented team preferences, assumed offers, prior discarded search results, or hindsight from the real 2013 hiring outcomes.
 
-**You've already written almost all of this once**, in the interactive version of this search (recoverable from git history, commit around `f00312a` if you want to see the original wording) — it doesn't need to be reinvented, just dropped into files here. One file per team is the simplest structure, but any organization works as long as it's readable.
+If the brief does not cover a consequential Stone decision, the resolver stops and asks for that decision rather than filling it in.
 
-## What each team's file needs
+## What to record
 
-For every team you want in scope, cover:
+For each team Stone is willing to pursue, record only what the user actually wants established:
 
-1. **Priority rank** relative to the other teams (or note it's not currently a priority but still worth a floor position).
-2. **The pitch** — what you're selling them, in a sentence or two.
-3. **Non-negotiables** — play-calling, staff control, contract length, QB/draft freedom, whatever's actually load-bearing for you.
-4. **What you'd concede, and what you wouldn't** — e.g., contract structure flexibility vs. play-calling authority.
-5. **Walk-away conditions** — the specific things that end the conversation.
+1. **Priority or ordering**, if any.
+2. **What Stone wants to communicate in the interview**, if the user wants a standing interview position rather than handling the interview live.
+3. **Non-negotiables**, such as staff authority, play-calling, personnel process, contract term, or reporting structure.
+4. **Negotiable points and permitted concessions.**
+5. **Walk-away conditions.**
+6. **Automatic acceptance conditions**, only if the user wants an offer accepted without another stop. These must be exact enough to determine whether a particular offer satisfies them.
+7. **Automatic rejection conditions**, if desired.
 
-## One more thing worth adding this time
+Priority alone is not permission to accept an offer. A general preference is not permission to make a new promise or concession.
 
-The prior interactive run surfaced a real sticking point at Jacksonville (a new owner unwilling to fully guarantee 4 years for a coach whose only HC experience is one interim half-season) and it was left as an open question. If you already know how you'd respond to that kind of contract-structure counter — not just at Jacksonville, but as a general position — say so here. That's exactly the kind of pre-committed answer that lets Codex run the whole thing without guessing at your negotiating floor.
+## Sources the resolver uses separately
 
-## Where the source material already lives (Codex reads these automatically, you don't need to duplicate them here)
+- `library/alex_stone_character_dossier_pre_hire.md` — established biography, demonstrated experience, and evidence boundaries. It does not provide Stone's philosophy, motives, or interview answers.
+- `library/2013_coaching_market_pre_hire.md` — public team context available at the January 14 cutoff.
 
-- `library/alex_stone_character_dossier_pre_hire.md` — Stone's actual character/interview approach.
-- `library/2013_coaching_market.md` — the real situational picture for each team.
-
-This folder is only for *your* decisions — priorities, terms, walk-away lines — not for restating facts that already live elsewhere in the project.
+The resolver must not use `library/2013_coaching_market.md` during the search because it contains quarantined actual-future outcomes.
