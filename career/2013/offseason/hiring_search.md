@@ -13,7 +13,7 @@ Established starting facts:
 - Stone's 2012 head-coaching record is 12-4 in the regular season and 1-1 in the postseason.
 - Stone is in the January 2013 permanent head-coaching market.
 - No 2013 hiring result, contract, future staff, or administrative transition date is assumed here.
-- The permitted runtime market source is `library/2013_coaching_market_pre_hire.md`. The full historical `library/2013_coaching_market.md` is quarantined from resolution.
+- The permitted runtime market source is `library/2013_coaching_market_pre_hire.md`. The full historical hindsight record is archived at `archive/2013_coaching_market_historical_comparator.md` and is not part of the search.
 
 Before the user's search brief is read, the resolver must append and close a criteria-freeze entry for every team in the established search scope. Every consequential Stone choice must either cite an exact user instruction already covering it or stop unresolved for the user.
 
