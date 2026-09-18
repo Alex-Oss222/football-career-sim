@@ -16,6 +16,8 @@ You are Codex, running a bounded batch task against this repository. You have no
 
 ## Task: "Simulate background league, Week [N], [Year]."
 
+**Availability gate:** this task is disabled until `foundation/07_Game_Simulation_and_Resolution_Engine.md` is marked runtime-ready, its §8 era calibration is complete for the season being played, and the private Engine State store has been instantiated. If any of those conditions is missing, stop without generating scores.
+
 **Scope:** every game that week between two teams, neither of which is the user's own team. Never touch a game involving the protagonist's team — that is played interactively elsewhere and is not your job.
 
 **Method — read `foundation/07_Game_Simulation_and_Resolution_Engine.md` §1's scope-discipline rule first, and §3.4's resolution-packet/seed rule.** Corrected 2026-09-18: there is only one outcome kernel in this project. Do not resolve these games by free-form judgment about who plausibly wins — that was an earlier version of this rule and it created two different outcome adjudicators in one league, which is a real integrity defect (background results decide the protagonist's standings, playoff seeding, and draft order, so they need the same physics as his own games, not a cheaper substitute physics). Actually sample from the §2 rating anchors and §3.2 matchup-delta mechanism, at a coarser granularity (whole-game or a few aggregated segments, not per-drive) to control cost — then narrate only the result. The savings versus the interactive path is in narration depth and sampling granularity, never in swapping the mechanism for a subjective call.
@@ -46,28 +48,34 @@ You are Codex, running a bounded batch task against this repository. You have no
 
 ## Task: "Run the [year] hiring search."
 
-**This restarts an interactive search that was already partway run, then reset for a clean Codex pass.** `career/[year]/offseason/hiring_search.md` was wiped back to an empty template on 2026-09-18 at the user's explicit instruction — do not treat any prior turn as still in effect. You are resolving this search from a cold start, using only the brief below and the library files, not any memory of an earlier attempt (you have none).
+This is the bounded pre-hire phase that may run before full career initialization. It produces organization-side developments and records the user's own already-authorized career choices, but it never invents a choice for Alex Stone.
 
-**Prerequisite — check before doing anything else.** `career/[year]/offseason/hiring_search_brief/` must exist and contain the user's own pre-written material: which teams to pursue and in what order, the specific terms/non-negotiables for each, and walk-away conditions. This is the one thing in this task only the user gets to set (Document 1 §3) — if the folder is missing, empty, or doesn't cover a team you need to resolve, **stop and report exactly what's missing** rather than inventing his priorities or negotiating position for him.
+**Prerequisite.** `career/[year]/offseason/hiring_search_brief/` must contain the user's own instructions covering the teams to pursue, priority/order, material terms or non-negotiables, concessions, and walk-away conditions. If a material choice is not covered, stop at that branch and report what decision is needed.
 
-**Read, in order:**
-1. `foundation/03_Head_Coach_Organization_and_Authority_Canon.md` §10 in full, especially §10.2 (compressed-turn procedure) and §10.4 (candidate evaluation and its criteria-freeze rule).
-2. `foundation/templates/hiring_search_output_template.md` — the three turn shapes (opportunity, market-update, offer) this task's output must use.
-3. `library/alex_stone_character_dossier_pre_hire.md` — Stone's actual character, interview approach, and honestly-stated evidence gaps. Section 12 especially: real organizations should evaluate him against these actual strengths and gaps, not a flattering or a punishing rewrite of them.
-4. `library/2013_coaching_market.md` — the real situational picture (why each job opened, real decision-makers, real cap position, real roster context) for every team in play.
-5. Everything in `career/[year]/offseason/hiring_search_brief/`.
+**Read, in this order:**
+1. `foundation/03_Head_Coach_Organization_and_Authority_Canon.md` §10.
+2. `foundation/templates/hiring_search_output_template.md`.
+3. `library/alex_stone_character_dossier_pre_hire.md`, using its factual record and §11 evidence boundaries only. It does not supply Stone's interview answers, motives, philosophy, or negotiating preferences.
+4. `library/2013_coaching_market_pre_hire.md`.
+5. Only after the criteria freeze described below is written, read `career/[year]/offseason/hiring_search_brief/`.
 
-**Procedure — criteria freeze comes before the pitch, every time (Document 3 §10.4, Document 1 §9.1):**
+**Do not load `library/2013_coaching_market.md` while resolving this search.** That file contains quarantined actual-future outcomes and is for research/audit only.
 
-1. **Before** looking at what the user's brief asks for from a given team, write into the ledger that team's real needs, constraints, and decision-makers' actual priorities, sourced only from `library/2013_coaching_market.md` — never inferred backward from Stone's pitch. Do this for every team in the brief's scope before evaluating any of them against Stone's terms. This frozen record is what makes the eventual result checkable rather than a vibe.
-2. Run Document 3 §10.2's compressed-turn structure against those frozen criteria: an opportunity summary (the brief mostly supplies this already), market-update turns only for genuine developments, an offer turn for any real offer.
-3. Apply Document 1 §9.1 throughout: reduce the user's brief to its concrete terms before it affects any outcome. A persuasively written pitch and a terse one specifying the identical terms must produce the identical result. A team's yes, no, or counter must trace back to the frozen criteria from step 1 — if you can't point to which frozen fact drove the result, don't narrate a result yet.
-4. Real market pressure is live, not guaranteed history: the real hires (Bruce Arians at Arizona, Chip Kelly at Philadelphia, Marc Trestman at Chicago, Gus Bradley at Jacksonville, Mike McCoy at San Diego) are comparators only, per this project's divergence rules — any of them, none of them, or a team choosing Stone instead is all genuinely open. A team may end up hiring someone else entirely if Stone's actual terms don't clear its frozen bar.
-5. A small, genuinely unanticipated wrinkle the brief doesn't cover (an odd but minor negotiating question) may be resolved with realistic judgment, noted as such. A fundamental gap — an entire team's terms missing, or no priority order given — is not a wrinkle; stop and report per the prerequisite above.
+**Criteria freeze before the brief.** Before opening the user's brief, write a `Criteria freeze` entry into `career/[year]/offseason/hiring_search.md` for every organization already established in Document 3's search scope. Use only the pre-hire market file. Record documented needs and constraints, identify any labeled inference, and leave unsupported private weighting unknown. This entry is the pre-hire equivalent of Document 1 §9.4's ex-ante record and must close before Stone's pitch or terms are evaluated.
 
-**Write to:** `career/[year]/offseason/hiring_search.md`, in the same turn-by-turn format the file's template header describes. Update the turn log table as you go. Once the search concludes (a hire, or every team in scope resolved without one), leave the file's status line reflecting that outcome clearly rather than mid-search.
+**Procedure:**
+1. Reduce the user's brief to concrete terms. Persuasiveness, length, confidence, and desired outcome are not resolution inputs.
+2. Resolve organization-side actions from the frozen criteria: interest, interview requests, rejection, second-stage requests, negotiation positions, counters, deadlines, and offers.
+3. Routine scheduling and administrative implementation may proceed without another user turn when directly authorized by the brief.
+4. A consequential Alex Stone choice remains user-controlled unless the brief contains an explicit standing instruction that covers the exact branch. Examples that require user control unless expressly pre-authorized: agreeing to a materially new interview condition, changing a non-negotiable, making a new promise, accepting a counter outside the stated range, accepting an offer, declining an offer, or choosing between simultaneous offers.
+5. A walk-away rule in the brief may be executed automatically only when the triggering condition is objectively satisfied as written.
+6. An acceptance rule may be executed automatically only when the exact offered terms satisfy an explicit pre-written acceptance condition. "Team is my first choice" is not by itself authorization to accept any contract.
+7. Never use the eventual real hire, later coordinator staff, later roster move, or later career outcome as an answer key.
+8. If every team resolves without a hire, close the search as `NO HIRE`. If a user-authorized acceptance occurs, close it as `HIRED — INITIALIZATION BUILD REQUIRED`. Do not begin roster, staff, game, press-conference, or season play.
 
-**Do not** touch `foundation/03_...` §1.4's biography table or Document 6 — updating Stone's canon with the concluded hiring outcome is a separate step for whoever is running the interactive side of this project to close out, not yours to do.
+**Persistence and ex-ante discipline.** Write every criteria freeze, user instruction relied on, material organization-side development, unresolved user decision, offer, and final search status to `career/[year]/offseason/hiring_search.md`. During this pre-hire phase that file is the authorized decision ledger. Do not write simulated hiring events into Document 6 before career initialization.
+
+**Do not** edit Document 3, Document 6, or the state files as part of this batch task. After the search concludes, the interactive initialization build reconciles the accepted outcome into Documents 2–6 before active career play.
 
 ---
 
