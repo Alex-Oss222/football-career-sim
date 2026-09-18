@@ -617,7 +617,8 @@ Real-history reporting connected Saints offensive coordinator Pete Carmichael Jr
 In this simulation:
 - Stone held the Saints offensive-coordinator role from 2009 through April 2012;
 - Carmichael remained a major passing-game staff member;
-- during Stone's 2012 interim-HC season, Carmichael handled substantial weekday offensive coordination / interim OC duties;
+- during Stone's 2012 interim-HC season, Carmichael handled substantial weekday passing-game/offensive coordination as a senior offensive staff member but did **not** hold the OC title;
+- user canon establishes that he becomes Saints offensive coordinator only after Stone leaves New Orleans; at this pre-hire cutoff that promotion has not happened;
 - he therefore does **not** possess the identical real-world résumé;
 - the simulated Saints remained alive through January 13.
 
