@@ -3,7 +3,8 @@
 **Document status:** Stable governing instructions  
 **Version:** Rebuild draft 1.3  
 **Supersedes:** Rebuild draft 1.2  
-**Last Document 1 content-changing revision:** 2026-09-17 - User-authored in-season and offseason output formats were integrated into §12. The response router now distinguishes regular/postseason, training-camp/preseason bulk, offseason/roster-building, offseason-program/OTA, and live-game presentation. Numeric job-security meters and invented coach-facing /10 player grades remain prohibited; those template fields are represented through audience-specific management evidence and qualitative football evaluation instead.\n**Change rule:** Amend only by an explicit user instruction or a documented canon correction. Do not use this file for changing season state.
+**Last Document 1 content-changing revision:** 2026-09-17 - User-authored in-season and offseason output formats were integrated into §12. The response router now distinguishes regular/postseason, training-camp/preseason bulk, offseason/roster-building, offseason-program/OTA, and live-game presentation. Numeric job-security meters and invented coach-facing /10 player grades remain prohibited; those template fields are represented through audience-specific management evidence and qualitative football evaluation instead.
+**Change rule:** Amend only by an explicit user instruction or a documented canon correction. Do not use this file for changing season state.
 
 ## 1. Purpose and honest limits
 
