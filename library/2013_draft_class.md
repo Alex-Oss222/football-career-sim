@@ -217,3 +217,102 @@ Sharrif Floyd, Sheldon Richardson and Star Lotulelei formed the premier interior
 | Jesse Williams | Alabama | 6'3", 323; 32" arms; 27 bench | Mayock #97; Brandt #68 | Strong nose/two-gap profile with experience in Alabama's front. Knee/medical evaluation and limited pass-rush upside affected his range. |
 | John Jenkins | Georgia | About 6'4", 359; 34" arms; 18 bench | Mayock #71; Brandt #38 | True space-eating nose-tackle body type with surprising movement for the weight. Conditioning and three-down utility were the central questions. |
 
+## 11. Off-ball linebackers
+
+### Consensus shape
+
+This group was unusually sensitive to role. Alec Ogletree could be ranked as an outside linebacker or an inside linebacker depending on scheme. Arthur Brown was smaller but exceptionally instinctive and mobile. Kevin Minter and Manti Te'o were more conventional inside-linebacker projections. Sio Moore, Khaseem Greene and Jon Bostic brought different coverage/blitz/space profiles. Kiko Alonso remained an athletic projection with limited combine testing. [MAYOCK-POS] [SI-DEF] [NORRIS-LB] [MCGINN-LB]
+
+| Prospect | School | Combine measurables | Late-board evidence | Contemporary football read |
+|---|---|---|---|---|
+| Alec Ogletree | Georgia | About 6'2 1/2", 242; 33 1/2" arms; official 4.70 40; 20 bench; 33.5" vertical | Mayock ILB3 / #44; Brandt #19; SI ILB1; Norris OLB1 | Exceptional pursuit range and coverage movement for the position, with experience at safety earlier in his career. Taking on and separating from blockers was less consistent. His publicly documented February DUI arrest and earlier Georgia suspension were active pre-draft evaluation issues and should be treated as specific documented risk information, not generalized personality scoring. |
+| Arthur Brown | Kansas State | About 6'0", 241; roughly 32 1/2" arms; limited combine work | Mayock 4-3 OLB2 / #36; Brandt #74; SI ILB2; Norris ILB1 | Fast processor, reliable tackler and strong coverage projection despite being smaller than the classic inside linebacker. Boards that prioritized instincts and space play valued him substantially more than boards that prioritized take-on mass. |
+| Kevin Minter | LSU | About 5'11 3/4", 246; 32" arms; official 4.81 40; 25 bench; 33" vertical | Mayock ILB2 / #34; Brandt #61; SI ILB3; Norris ILB2 | Compact, physical inside linebacker with downhill instincts and SEC production. Range and man-coverage ceiling were the main questions compared with Ogletree/Brown. |
+| Manti Te'o | Notre Dame | About 6'1 1/4", 241; 32 1/2" arms; official 4.82 40; 33" vertical | Mayock ILB1 / #23; Brandt #20; SI ILB4; Norris ILB3 | Highly productive, experienced inside linebacker with instincts and zone awareness. Average timed speed and the very public January 2013 hoax story created unusual scrutiny; the simulation may represent that documented pre-draft scrutiny but must not invent private mental-state conclusions. |
+| Sio Moore | Connecticut | 6'0 3/4", 245; 33 5/8" arms; 4.65 40; 29 bench; 38" vertical | Mayock 4-3 OLB3 / #64; Brandt #100 | Explosive tester with blitz and coverage versatility. Attractive to aggressive fronts that valued linebackers who could pressure or run in space. |
+| Khaseem Greene | Rutgers | 6'0 3/4", 241; 32 5/8" arms; 4.71 40; 17 bench | Mayock 4-3 OLB4 / #69; Brandt #72 | Former safety with pursuit skill and ball production, projected primarily to a space/WILL role. Block deconstruction and size against power were the constraints. |
+| Jon Bostic | Florida | About 6'0 7/8", 245; 33" arms; official 4.61 40; 22 bench; 32.5" vertical | Mayock ILB4 / #65 | Fast, physical and experienced in an SEC defense. Could run and strike, with evaluators debating whether his processing/coverage feel matched the testing. |
+| Kiko Alonso | Oregon | 6'3", 238; 32 1/8" arms; DNP combine athletic drills | Mayock ILB5; Brandt #73; SI ILB5 | Long, athletic linebacker with coverage and pursuit upside. His college résumé also contained documented suspensions/arrests, so teams had a real pre-draft availability/decision-making evaluation to make. |
+| Jamie Collins | Southern Mississippi | 6'3 1/2", 250; 33 3/4" arms; 4.64 40; 41.5" vertical; 11'7" broad | Mayock 3-4 OLB3 / #49 | One of the best pure testing profiles in the linebacker group and capable of rushing or dropping. Projection depended on whether teams saw an edge player, space linebacker, or hybrid. |
+
+**Role note:** Jordan, Mingo, Collins and several college defensive ends belong on some teams' linebacker boards and other teams' edge boards. Preserve that ambiguity rather than forcing one universal position.
+
+## 12. Cornerbacks
+
+### Consensus shape
+
+For most of the process Dee Milliner was the safest answer to "CB1." The last week disrupted that. On April 18, Mayock moved D.J. Hayden to No. 1 at corner after medical progress and a strong Houston pro day, while Brandt's April 24 overall board still had Milliner sixth overall and Hayden 43rd. Xavier Rhodes was the premier long press-corner projection, and Desmond Trufant's Senior Bowl/combine work strengthened a technically sound cover profile. The position was deep enough that meaningful board disagreement continued well beyond the top four. [MAYOCK-POS] [MAYOCK-100] [BRANDT-125] [SI-DEF] [MCGINN-DB]
+
+| Prospect | School | Combine / workout measurables | Late-board evidence | Contemporary football read |
+|---|---|---|---|---|
+| D.J. Hayden | Houston | About 5'11", 191; 31 1/8" arms; DNP combine physical testing; Houston pro-day 40 reported at 4.33 by local coverage and 4.42 by Gil Brandt | Mayock CB1 / #14; Brandt #43 | Quick feet, closing burst and aggressive cover play became a late-process story after he returned from a November 2012 tear of the inferior vena cava suffered in practice. The injury and surgical recovery were public pre-draft medical facts. Mayock's late rise shows how strongly some evaluators responded to the recovery/workout; Brandt's lower rank shows the lack of universal agreement. |
+| Dee Milliner | Alabama | 5'11 7/8", 201; 32" arms; official 4.37 40; 36" vertical | Mayock CB2 / #16; Brandt #6; SI CB1; McGinn CB1 | Physical press-man experience, recovery speed, tackling willingness and Alabama's complex coverage background made him the most conventional top-corner projection. Pre-draft reports also documented multiple prior surgeries, which teams had to clear medically. |
+| Xavier Rhodes | Florida State | 6'1 1/2", 210; 33 3/4" arms; official 4.43 40; 40.5" vertical; 11' broad | Mayock CB3 / #20; Brandt #10; SI CB2; McGinn CB2 | Rare size/length with strong press ability and enough long speed. Best fit was often projected in press-man or physical boundary coverage; change of direction and playing extensive off coverage were more debated. |
+| Desmond Trufant | Washington | 5'11 5/8", 190; 31 1/4" arms; official 4.38 40; 16 bench; 37.5" vertical; 10'5" broad; 3.85 shuttle | Mayock CB4 / #35; Brandt #30; SI CB3 | Experienced, competitive cover corner with excellent movement testing and a strong Senior Bowl week. Less size/length than Rhodes but cleaner short-area movement for many schemes. |
+| Johnthan Banks | Mississippi State | About 6'2", 185; 33 7/8" arms; combine 40 around 4.61, with a faster pro-day figure reported later in the process | Mayock CB5 / #48; Brandt #37 | Long, instinctive and productive on the ball. Timed speed was the central issue for teams deciding whether he was a boundary man corner, zone corner or possible safety conversion. |
+| Jamar Taylor | Boise State | 5'10 5/8", 192; 30 3/4" arms; official 4.39 40; 22 bench; 35" vertical; 6.82 three-cone | Mayock #51; SI CB4 | Strong, fast and experienced in press technique. The main evaluation question was whether his aggressive style and smaller frame would translate against larger NFL receivers. |
+| Darius Slay | Mississippi State | 5'11 7/8", 192; 32 1/4" arms; official 4.36 40; 35.5" vertical | Mayock #59; Brandt #31 | Top-end speed and length pushed him up boards late. He had less starting experience than teammate Banks, leaving more projection in the evaluation. |
+| Blidi Wreh-Wilson | Connecticut | About 6'1", 195; long frame | Mayock #66; Brandt #51 | Size, length and zone awareness appealed to teams that valued bigger corners. Short-area transition quickness was more mixed. |
+| Jordan Poyer | Oregon State | About 5'11 7/8", 191; 4.54 40 | Mayock #85; SI CB5 | Instinctive, productive and technically sound, with average testing compared with the fastest corners in the class. |
+| Tyrann Mathieu | LSU | 5'8 3/4", 186; 31 1/8" arms; 4.50 40; 34" vertical; 6.87 three-cone | Mayock #98; Brandt #66 | Elite short-area instincts, turnover production and return value at LSU, but undersized for an outside corner. His 2012 dismissal from LSU and subsequent documented issues were central pre-draft availability/risk information. Use only those public pre-draft facts, never later outcomes or generalized character labels. |
+
+## 13. Safeties
+
+### Consensus shape
+
+Kenny Vaccaro was the most common S1 because evaluators believed he could cover slots and tight ends as well as play traditional safety assignments. Matt Elam brought a compact, aggressive downhill profile. Eric Reid supplied size/explosion and major-program experience. Jonathan Cyprien rose through the Senior Bowl/pre-draft process from a smaller program. D.J. Swearinger was the versatile, physical South Carolina option. Norris differed from Mayock by placing Cyprien second and Swearinger third. [MAYOCK-POS] [MAYOCK-100] [BRANDT-125] [SI-DEF] [NORRIS-S] [MCGINN-DB]
+
+| Prospect | School | Combine measurables | Late-board evidence | Contemporary football read |
+|---|---|---|---|---|
+| Kenny Vaccaro | Texas | 6'0", 214; 32 3/4" arms; 4.63 40; 15 bench; 38" vertical; 6.78 three-cone | Mayock S1 / #17; Brandt #24; SI S1; Norris S1 | Coverage versatility was the selling point: slot receivers, tight ends and traditional safety responsibilities. His 40 was ordinary, but short-area movement and tape carried more weight for supporters. |
+| Matt Elam | Florida | About 5'9 7/8", 208; 32 5/8" arms; 4.54 40; 17 bench; 35.5" vertical | Mayock S2 / #25; Brandt #53; SI S2 | Explosive downhill player with range and turnover production. Size and overaggressive angles were the primary concerns. |
+| Eric Reid | LSU | 6'1 1/4", 213; 33 5/8" arms; 4.53 40; 17 bench; 40.5" vertical; 11'2" broad | Mayock S3 / #28; Brandt #36; SI S4 | Prototypical size and excellent explosion with extensive SEC experience. Evaluators differed on open-field consistency and how much man coverage they wanted him to play. |
+| Jonathan Cyprien | Florida International | About 6'0", 217; roughly 31 3/4" arms; DNP combine 40 because of hamstring issue; 38.5" vertical | Mayock S4 / #38; Brandt #56; SI S3; Norris S2 | Physical, energetic and productive with the range to play multiple safety assignments. Level-of-competition questions were partly answered by a strong Senior Bowl week. |
+| D.J. Swearinger | South Carolina | 5'10 1/2", 208; 32 3/8" arms; 4.67 40; 17 bench; 37" vertical; 6.70 three-cone | Mayock S5 / #57; Brandt #80; Norris S3 | Versatile, aggressive and experienced across safety/nickel responsibilities. Timed long speed was less impressive than his play speed and short-area competitiveness. |
+| J.J. Wilcox | Georgia Southern | About 6'0", 213 | Mayock #68; Brandt #105; Norris S5 | Converted offensive player with only one season at safety, leaving a large developmental projection but useful size/athletic tools. |
+| Bacarri Rambo | Georgia | About 6'0", 211 | Brandt #86; Norris S4 | Ball skills and range stood out on tape. Tackling consistency and a documented 2012 suspension affected the evaluation. |
+
+## 14. Specialists
+
+### Consensus shape
+
+Specialists did not have the same stable national board coverage as the major positions, so this section deliberately uses several contemporaneous specialist lists instead of pretending there was one consensus.
+
+**Kickers:** Caleb Sturgis and Dustin Hopkins were the clear top pair on the April specialist boards reviewed. WalterFootball's April 23 final ranking called the choice between them essentially a coin flip, while other lists reversed their order. Sturgis had made 24 of 28 field goals in 2012; Hopkins had made 25 of 30. Both had demonstrated NFL-range legs in college. [SPECIALISTS]
+
+**Punters:** Ryan Allen and Jeff Locke were the leading pair, with the order varying by source. WalterFootball had Allen first and Locke close behind; the Milwaukee Journal Sentinel personnel survey preferred Locke. Quinn Sharp was another frequently listed draftable punter. [SPECIALISTS]
+
+| Prospect | Pos | School | Pre-draft evidence | Contemporary read |
+|---|---|---|---|---|
+| Caleb Sturgis | K | Florida | 24-of-28 FGs in 2012; strong long-range résumé | Accurate, experienced SEC kicker with enough leg for kickoffs/long attempts. |
+| Dustin Hopkins | K | Florida State | 25-of-30 FGs in 2012; major-college scoring/long-kick résumé | Powerful leg and extensive pressure/volume experience; generally paired with Sturgis at the top. |
+| Ryan Allen | P | Louisiana Tech | Two-time Ray Guy Award winner entering the draft | Hang time, directional work and sustained college production supported the top-punter case. |
+| Jeff Locke | P | UCLA | Four-year punting/kickoff résumé | Strong leg, placement and kickoff experience; some personnel evaluators preferred him to Allen. |
+| Quinn Sharp | P/K | Oklahoma State | Handled both punting and placekicking in college | Versatility and leg strength were the attraction, though NFL role projection varied. |
+
+## 15. High-uncertainty evaluation map
+
+These are not "risk scores." They identify where a 2013 evaluator had to make a real projection with incomplete information.
+
+| Prospect / question | What was known by April 25 | What remained legitimately uncertain |
+|---|---|---|
+| Geno Smith | High production, adequate-plus arm, 4.59 speed, extensive spread experience | Full-field progression translation, pocket response and whether his value justified a premium QB investment |
+| EJ Manuel | Prototype frame, strong arm, movement ability, extensive starts | Passing consistency, anticipation and processing under NFL pressure |
+| Tavon Austin | Exceptional 4.34 speed, open-field production, slot/backfield/return versatility | Sustainable workload and role at 174 pounds |
+| Cordarrelle Patterson | Rare size/speed/open-field ability | Route-tree development, release detail and speed of NFL passing-game assimilation |
+| Keenan Allen | Strong route/catch tape and size; knee injury recovery still ongoing | Whether April timed speed represented permanent athletic limitation or temporary incomplete recovery |
+| Fisher vs. Joeckel | Both had premium tackle tape and NFL dimensions | Whether Fisher's higher movement ceiling outweighed Joeckel's SEC résumé and polish |
+| Lane Johnson | Rare athleticism and length | Technical ceiling after limited offensive-line experience |
+| Ezekiel Ansah | Elite size/length/speed tools and late collegiate emergence | Recognition, hand technique and rate of development after very limited football experience |
+| Dion Jordan | Rare length, movement and coverage versatility | Best NFL role, edge power and ability to handle every-down run-game demands |
+| Barkevious Mingo | Elite burst and movement | Translating athleticism into consistent pass-rush production and edge strength |
+| Star Lotulelei | Premier power/anchor tape; subsequent clearance after combine heart concern | Team-specific medical comfort and exact scheme value |
+| Jarvis Jones | Elite college production and rush instincts | Spinal medical evaluation, average testing and whether burst/power translated the same way |
+| D.J. Hayden | High-level cover movement; medically returned from a severe vascular injury; strong pro day | Team-specific medical confidence and how aggressively to price a rare medical history |
+| Dee Milliner | Strong Alabama tape, 4.37 speed, physical coverage | Team-specific medical evaluation of prior surgeries and ceiling versus Hayden/Rhodes |
+| Xavier Rhodes | Elite size/length/testing and press tape | Change of direction/off-coverage flexibility across schemes |
+| Alec Ogletree | Rare linebacker range and coverage athleticism | Block handling, positional fit and how teams weighted documented off-field incidents |
+| Manti Te'o | Productive, instinctive multi-year résumé | Athletic ceiling in space and how teams separated football evaluation from extraordinary public scrutiny |
+| Christine Michael | Exceptional testing and powerful run traits | Durability/availability record and team confidence in his college coachability history |
+| Tank Carradine | High-level 2012 edge tape | ACL recovery timetable and how quickly pre-injury explosion would return |
+
