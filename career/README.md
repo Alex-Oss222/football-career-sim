@@ -44,6 +44,7 @@ career/
     offseason/
       hiring_search.md
       hiring_search_brief/
+      initial_roster_and_cap_sheet.md  <- built once, right after a hire closes: the real inherited roster and cap position, sourced (AGENTS.md's roster/cap-sheet task); kept here rather than library/ so it's found with the rest of that year's record
       staff_building/
         staff_plan.md          <- who Stone is pursuing/considering, and why
         hires.md               <- who actually signed on, in what role, when
