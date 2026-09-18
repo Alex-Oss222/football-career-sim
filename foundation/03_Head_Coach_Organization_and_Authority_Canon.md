@@ -5,9 +5,9 @@
 | Field | Canonical entry |
 |---|---|
 | Document status | `NOT READY` — rebuilt template; career not initialized. After every substantive Section 12 gate and companion-document readiness check is satisfied, set this field to `READY` as the administrative close. The separate final instruction to initialize remains outstanding and does not prevent readiness. |
-| Document version | Rebuild draft 1.9 |
-| Supersedes | Rebuild draft 1.8 template. No initialized career canon or in-world event is superseded. |
-| Last Document 3 content-changing update | 2026-09-18 — corrected the 2012 interim-HC chronology so January 13, 2013 is the established season-end operational cutoff while the exact post-season administrative end date remains unresolved; also added a criteria-freeze rule to §10.4 (Candidate evaluation) per new Document 1 §9.1: when the protagonist is a candidate, a hiring organization's needs/constraints/weighting must be fixed from real evidence before his pitch is read, never reshaped around it afterward. Prior update (2026-09-17): revised §1.1-§1.6 and §7.1 a third time the same day — see §1.6 for the full biography resolution record. Prior update: added §10, External hiring market and search-cycle procedure, and renumbered former §§10-11 to §§11-12. No initialized career canon or in-world event is superseded. |
+| Document version | Rebuild draft 2.0 |
+| Supersedes | Rebuild draft 1.9. No initialized career canon is superseded. |
+| Last Document 3 content-changing update | 2026-09-18 — reconciled the PRE-HIRE SEARCH lifecycle, removed legacy philosophy pointers from active canon, corrected the January 2013 five-team entry from completed interviews to search scope, and bound hiring resolution to the clean pre-hire market source. |
 | Canonical as-of date | [UNSET] |
 | Competition, season, and team | [DERIVED DOCUMENT 2 REFERENCE; UNSET] |
 | Simulation mode | [DERIVED DOCUMENT 2 MODE-LOCK REFERENCE; UNSET] |
@@ -97,7 +97,7 @@ Do not use the supplied playing statistics, reputation, or position to resolve a
 | 2007-2008 | New England Patriots, passing game coordinator / tight ends, alongside offensive coordinator Josh McDaniels | Confirmed. New England went 16-0 in the 2007 regular season and lost Super Bowl XLII; finished 11-5 in 2008. | User-confirmed, 2026-09-17 (revised) |
 | January 2009 - April 15, 2012 | New Orleans Saints, offensive coordinator, under head coach Sean Payton | Confirmed. This is a divergence from real history, in which Pete Carmichael Jr. held this role; Stone holds it instead. Includes the Super Bowl XLIV win (2009 season) and a mid-2011 in-season play-calling takeover; three-season OC record 37-11 (regular season). | User-confirmed, 2026-09-17 (revised) |
 | April 16, 2012 - January 13, 2013 (2012 season operational tenure; exact administrative end date unresolved) | New Orleans Saints, interim head coach, during Sean Payton's real 2012 Bountygate suspension | Confirmed; this is the specific missing piece the user identified. Sim-specific divergence: Stone holds the full interim-head-coach role for the entire season, rather than the real Joe Vitt/Aaron Kromer split. Went 12-4, second in the NFC South; won the Wild Card round and lost the Divisional Round on January 13, 2013. Real Bountygate discipline (Sean Payton, Gregg Williams, Mickey Loomis, Joe Vitt) is unchanged; Stone's own advance knowledge of the bounty program, if any, is deliberately left unresolved rather than decided either way. | User-confirmed, 2026-09-17 (revised) |
-| January 2013 | Head-coaching candidate: interviews with Jacksonville, Arizona, Chicago, Philadelphia, and San Diego | Confirmed as the new starting point. Stone is an HC candidate; **no hire has been made**. Do not import any hire, team, or outcome beyond this point from any source — that remains open for initialization. | User-confirmed, 2026-09-17 (revised) |
+| January 2013 | Head-coaching search scope: Jacksonville, Arizona, Chicago, Philadelphia, and San Diego | Confirmed as the new starting search pool. This establishes opportunities in scope, **not that an interview has already occurred**. Stone is an HC candidate; no hire has been made. | User-confirmed, 2026-09-17; wording reconciled 2026-09-18 |
 
 ### 1.5 Family and relocation facts
 
@@ -160,11 +160,11 @@ Only the user may establish the protagonist's beliefs, motives, philosophy, prom
 | Media and public communication | [UNSET] | [UNSET] | [UNSET] |
 | Career priorities and non-negotiables | [UNSET] | [UNSET] | [UNSET] |
 
-### 2.2 Supplied candidate principles — parked, not shown here
+### 2.2 Legacy philosophy material
 
-Moved out of this document, and out of this repository entirely, on 2026-09-17, to the user's own Desktop (`legacy_coaching_philosophy_candidates.md`) — kept as the user's personal reference, not repo-tracked, and not repeated here so this document stays clean while Stone is an unhired candidate. Nothing about an unhired candidate's future coaching identity is "known" yet, so an old unconfirmed list sitting live in this document read as more settled than it is. Nothing was adopted, rejected, or decided by moving it.
+Legacy coaching-philosophy candidates are intentionally excluded from active canon while Stone is an unhired candidate. No external desktop file, archived list, prior test-career philosophy, or named framework is a runtime dependency.
 
-A second, separate, equally-unadopted source exists: the newer character dossier's own 12-principle "Bear Crawl" operating philosophy. The two are unrelated and neither is canon. When §2 is actually resolved (after Stone is hired), the user may draw on either, both, or neither — see Document 3 §2's deferral note.
+If the user chooses to establish coaching identity after a hire, it is entered directly into §2.1 from the user's current decision. Earlier discarded material has no automatic authority and is not loaded merely because it once existed.
 
 ## 3. Employment contract and reporting structure
 
@@ -466,7 +466,7 @@ A search is resolved in a small, fixed set of user-facing decision points, never
 5. **Absent a genuine complication** (a leak, a rival bid, a scandal, a rescinded permission), a full search — from vacancy to hire — should resolve in roughly three to five user-facing turns, not twenty. A complication earns its own turn because it is itself a consequential decision point, not because the search is inherently long.
 6. **Output format:** `foundation/templates/hiring_search_output_template.md` (added 2026-09-17) gives this procedure's three turn types (opportunity, market-update, offer) a concrete shape, the same way the season/offseason templates do for post-hire play.
 7. **Input contract:** there is no form or menu to fill out, per Document 1 §6.3/§16's ban on closed-choice menus. Each turn's "Your call" section asks one specific question; the user answers in their own words, and that answer is the input — never a rigid schema to satisfy.
-8. **Persistence:** every turn is appended to `career/<year>/offseason/hiring_search.md`, added 2026-09-17 at the user's explicit instruction — nothing about the search exists only in a chat transcript. See `career/README.md`'s exception to "empty until initialization."
+8. **Persistence and ex-ante record:** every criteria freeze, user instruction relied on, material development, offer, and unresolved Stone decision is appended to `career/<year>/offseason/hiring_search.md`. During PRE-HIRE SEARCH that file is the authorized decision ledger required by Document 1 §9.4; Document 6 does not carry simulated search events until the initialization build.
 
 ### 10.3 Autonomy for searches not involving the protagonist
 
@@ -476,7 +476,7 @@ A search conducted by any organization other than the protagonist's, in which th
 
 Evaluate every candidate — real or simulation-generated, for the protagonist's own openings or as comparators for his own candidacy — under the same demonstrated-record/fit/projection framework Document 1 §6.3 uses for players, never a hidden true rating. A real person's known public career record is fair evaluation material; his real future career after the simulation's divergence point is not and must not be used as a hidden answer key.
 
-**Criteria freeze, added 2026-09-18 per Document 1 §9.1.** When the protagonist is himself a candidate, the hiring organization's actual needs, constraints, and evaluation weighting must be established from the real, already-known evidence about that organization (its real front-office situation, cap position, roster needs, ownership priorities — see `library/` where it exists) *before* his specific pitch is read against them. Do not derive or adjust what an organization is "really looking for" from having just seen what the protagonist is offering — that is exactly the failure mode this rule exists to prevent, an organization's fit criteria quietly reshaping themselves around the candidate instead of the other way around. Where a genuine negotiation produces a real concession or counter, it must trace to the organization's pre-established constraints (e.g., a new owner's real caution about guaranteeing money to an unproven head coach), not to narrative convenience.
+**Criteria freeze, added 2026-09-18 per Document 1 §9.1.** When the protagonist is himself a candidate, the hiring organization's documented needs and constraints must be frozen from information available at the simulation cutoff *before* Stone's pitch or negotiating terms are read. For the 2013 starting search, the permitted runtime source is `library/2013_coaching_market_pre_hire.md`. `library/2013_coaching_market.md` contains quarantined actual-future outcomes and must not be loaded by the resolver. Unsupported private weighting remains unknown rather than being reverse-engineered from Stone's pitch or from what the club later did in reality. Genuine negotiation may create new simulation-side preferences or concessions, but they must arise from already-established organizational facts or from a dated simulation interaction.
 
 ## 11. Revision and contradiction controls
 
@@ -516,8 +516,14 @@ Audit this document after a coaching contract change, supervisor or general-mana
 
 ## 12. Initialization gate
 
-**This gate is for season/career play, not for the hiring search itself.** Several of its own items (team, contract, authority map, roster) cannot exist before Stone is hired, so reading this gate as blocking the hiring search too would make starting the simulation impossible. The correct order is: (1) Section 10's compressed-turn hiring-search procedure runs first, entirely on its own, starting from Stone's current canon status ("HC candidate, not yet hired," per §1.4) — this is not itself an in-world "career event" the way a game or roster move is, it is the mechanism that produces the team/contract/start-date this gate needs; (2) only once Section 10 concludes in a hire does this gate's checklist actually become satisfiable, and only then does full season/career play begin. To start, tell the simulator to begin the January 2013 hiring search — that alone does not require any item below to already be resolved.
+The project uses one explicit lifecycle:
 
+1. **PRE-HIRE SEARCH** — Stone is an unhired candidate. Document 3 §10 governs the search; `career/<year>/offseason/hiring_search.md` is the pre-hire decision ledger. Full career initialization is still blocked.
+2. **HIRED / INITIALIZATION BUILD** — a user-authorized offer has been accepted. The accepted team, contract, authority, roster/staff baseline, ruleset, state snapshot, engine setup, and audited search closure are reconciled into Documents 2–7.
+3. **READY** — all initialization checks reconcile, but no team-career event has begun.
+4. **ACTIVE CAREER** — the user gives the separate explicit instruction to initialize play.
+
+The hiring search may therefore run before the checklist below is satisfiable. It may not generate games, roster moves, staff construction, practices, press conferences, player decisions, or other post-hire team events. An accepted offer moves the project to HIRED / INITIALIZATION BUILD, not directly to ACTIVE CAREER.
 Career initialization remains blocked until all of the following are resolved and recorded:
 
 - [ ] Competition level, governing body, exact season, team, location, and exact starting date.
