@@ -258,10 +258,10 @@ The evidence-labeling system, the real-person protections, the append-only ledge
 
 Resolved 2026-09-17, mirroring the SCOTUS project's proven layout at the user's request:
 
-- **`foundation/`** — the stable rulebook: Documents 00, 01, 02, 03, 06, 07, and `foundation/templates/` (three output templates: pre-hire search, in-season, offseason). Never holds a dated instance record.
+- **`foundation/`** — the stable rulebook: Documents 01, 02, 03, 06, 07, and `foundation/templates/` (three output templates: pre-hire search, in-season, offseason). Never holds a dated instance record.
 - **`state/`** — the always-current, in-place-updated snapshot: Documents 04 (Roster and Staff Register) and 05 (Current Season State). Rewritten as events happen, per §6.3; never append-only.
 - **`career/`** — the actual played history, one folder per season, created only once a season is reached in play. See `career/README.md` for the exact per-season layout (preseason, regular-season weeks, postseason rounds, offseason draft/free-agency records, and that season's slice of the Document 6 ledger).
-- **`archive/`** — superseded or quarantined material kept for reference only, never active canon. See `archive/README.md`.
+- **`archive/`** — superseded, quarantined, and historical audit material kept for reference only, never active canon. The rebuild audit lives here rather than in the runtime rulebook. See `archive/README.md`.
 - **`library/`** — supporting reference material that is not itself canonical authority: sourced era research, clean runtime views, quarantined actual-future comparators, and non-authoritative character reference. Runtime tasks must read only the files explicitly permitted for their phase. For the 2013 hiring search, use `library/2013_coaching_market_pre_hire.md` and do not load the hindsight comparator `library/2013_coaching_market.md`. Load-bearing rules still belong in Document 2.
 
 This mirrors SCOTUS's `foundation/` (stable rulebook) + `state/` (current trackers) + `terms/OT<year>/` (per-term instance folders) + `archive/` almost exactly, plus one addition (`library/`) for supporting reference material the SCOTUS project did not need in the same way. No document's internal numbering or content changed because of this move — only where each file physically lives.
