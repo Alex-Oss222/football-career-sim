@@ -5,9 +5,9 @@
 | Field | Canonical entry |
 |---|---|
 | Document status | `NOT READY` — rebuilt template; career not initialized. After every substantive Section 12 gate and companion-document readiness check is satisfied, set this field to `READY` as the administrative close. The separate final instruction to initialize remains outstanding and does not prevent readiness. |
-| Document version | Rebuild draft 2.2 |
-| Supersedes | Rebuild draft 2.1. No initialized career canon is superseded. |
-| Last Document 3 content-changing update | 2026-09-18 — hiring search closed: Stone hired as Jacksonville Jaguars head coach (`hiring_search.md` Entry 7). Reconciled the accepted contract into Section 1.4, Section 3.1, and the Authority Map's negotiated rows; rows never covered by the negotiation (defensive/special-teams delegation specifics, discipline philosophy, media voice) are left explicitly open pending Section 2's coaching-identity decision and the staff-building process, not silently filled in. Exact contract execution/effective date pending user confirmation. Prior update: Pete Carmichael Jr. succession correction. |
+| Document version | Rebuild draft 2.3 |
+| Supersedes | Rebuild draft 2.2. No initialized career canon is superseded. |
+| Last Document 3 content-changing update | 2026-09-18 — Section 2 resolved: the user established Stone's coaching identity as "The Prowl" (defensive philosophy, staff leadership, discipline/accountability, media voice, and a four-part player-readiness system), entered into Section 2.1 with pointers to `career/2013/offseason/the_prowl_program_identity.md` and its player-readiness companion file. Offensive philosophy, evidence/analytics use, special-teams philosophy, and game-management philosophy remain open — not covered by the supplied material. Prior update: hiring search closed, contract/Authority Map reconciled, execution/effective date confirmed as January 15, 2013. |
 | Canonical as-of date | [UNSET] |
 | Competition, season, and team | [DERIVED DOCUMENT 2 REFERENCE; UNSET] |
 | Simulation mode | [DERIVED DOCUMENT 2 MODE-LOCK REFERENCE; UNSET] |
@@ -142,30 +142,28 @@ Any field not listed in this table (name, birthplace, languages, marital status,
 
 Only the user may establish the protagonist's beliefs, motives, philosophy, promises, emotional responses, career goals, or relationship decisions. Supplied language may be offered for confirmation but is not automatically adopted.
 
-**Deliberately deferred, 2026-09-17.** Every field in §2.1 and every candidate line in §2.2 is intentionally left open, not overlooked — the user has chosen not to decide Stone's coaching identity while he is still an unhired candidate. This gets resolved after he is actually hired somewhere, not before. Do not treat the blank fields below as a blocking gap in the meantime, and do not infer a philosophy from the interview process itself; an interview may ask him questions, but his actual answers still require the user's input when that scene is played.
+**Resolved, 2026-09-18.** Deferred while Stone was an unhired candidate (2026-09-17); now established directly by the user following his hire, per §2.2's own instruction. "The Prowl" — Stone's actual adopted Jacksonville program identity — is the user's current decision, not inferred from the interview process or carried over from any earlier discarded candidate. Full text lives in `career/2013/offseason/the_prowl_program_identity.md` and its companion `the_prowl_player_readiness_standard.md`; the table below is a summary and pointer, not a restatement — if a summary here ever conflicts with those files, the files control.
 
 ### 2.1 Canonical football identity
 
 | Dimension | User-confirmed canon | Evidence or source | Last confirmed |
 |---|---|---|---|
-| Overall coaching purpose | [UNSET] | [UNSET] | [UNSET] |
-| Offensive philosophy | [UNSET] | [UNSET] | [UNSET] |
-| Defensive philosophy | [UNSET] | [UNSET] | [UNSET] |
-| Special-teams philosophy | [UNSET] | [UNSET] | [UNSET] |
-| Player-development philosophy | [UNSET] | [UNSET] | [UNSET] |
-| Practice and preparation philosophy | [UNSET] | [UNSET] | [UNSET] |
-| Game-management philosophy | [UNSET] | [UNSET] | [UNSET] |
-| Evidence and analytics use | [UNSET] | [UNSET] | [UNSET] |
-| Staff leadership and delegation | [UNSET] | [UNSET] | [UNSET] |
-| Discipline and accountability | [UNSET] | [UNSET] | [UNSET] |
-| Media and public communication | [UNSET] | [UNSET] | [UNSET] |
-| Career priorities and non-negotiables | [UNSET] | [UNSET] | [UNSET] |
+| Overall coaching purpose | "The Prowl": a program-wide standard of continuous improvement — "Good, Better, Best" — applied upward to Stone and his staff as much as to players. Not a slogan repeated for media; introduced once, then lived rather than restated. | `the_prowl_program_identity.md` | 2026-09-18 |
+| Offensive philosophy | Not established by The Prowl documents. Still governed by Stone's earlier interview-only positions (`hiring_search_brief/05_interview_positions.md`) — evaluate personnel first, adapt distribution to what the roster provides, keep one core language rather than switching systems weekly. Not yet promoted to permanent canon. | `hiring_search_brief/05_interview_positions.md` (interview-only) | [UNSET as permanent canon] |
+| Defensive philosophy | Non-negotiable team principles a hired coordinator builds within, not around: eliminate free/self-inflicted offense first; sound run-fits without over-committing resources; make the quarterback confirm the picture post-snap rather than relying on pre-snap confusion; pressure only for an identified reason, no blitz quota; tackling/leverage as part of the scheme, not incidental; situational defense (3rd down, red zone, 2-minute, etc.) practiced and called deliberately. | `the_prowl_program_identity.md`, "Defensive Philosophy" and "The Defensive Personality" | 2026-09-18 |
+| Special-teams philosophy | Not established beyond "special teams receive real practice time" (an outcome description, not a scheme philosophy). | `the_prowl_program_identity.md` | [UNSET beyond practice-time priority] |
+| Player-development philosophy | Fundamentals-first, situational-repetition-based development ("Practice the Problem," "Fundamentals Travel," "Earn Responsibility" — roles move on football evidence, not tenure or draft status). Extended by a formal four-part player-readiness system: individualized physical standards (not one body type), a weekly sports-psychology session for every player with strict confidentiality, a monthly financial-education meeting the club never uses to access personal finances, and a two-week family-support check the coaching staff doesn't see in detail. | `the_prowl_program_identity.md`; `the_prowl_player_readiness_standard.md` in full | 2026-09-18 |
+| Practice and preparation philosophy | Practice is built around recognizable, difficult in-game situations rather than generic toughness; a position-adjusted conditioning test opens camp as an entry standard (not a depth-chart determinant); in-season monitoring tracks weight/movement/strength/recovery/availability continuously, not via a periodic combine. | `the_prowl_program_identity.md`, "Practice the Problem"; `the_prowl_player_readiness_standard.md` §1 | 2026-09-18 |
+| Game-management philosophy | Not separately established by The Prowl documents beyond the general accountability rule that Stone owns his own game-management decisions publicly (see Media and public communication below). | `the_prowl_program_identity.md` | [UNSET beyond public-accountability rule] |
+| Evidence and analytics use | Not established by The Prowl documents. Still governed by Stone's earlier interview-only position (fourth-down/clock/tendency/self-scout information informs the decision; the staff supplies it, Stone makes the call) — not yet promoted to permanent canon. | `hiring_search_brief/05_interview_positions.md` (interview-only) | [UNSET as permanent canon] |
+| Staff leadership and delegation | Stone hires a coordinator to build a Jacksonville unit within his non-negotiable principles, not to run "Alex Stone's" scheme by proxy. The standard applies upward: if players must prepare, the staff's own plan must be prepared; if players accept correction, so do coaches; authority increases accountability rather than removing it — Stone owns his own game-management decisions publicly rather than displacing them onto staff or players. | `the_prowl_program_identity.md`, "The Standard Goes Upward"; "DEFENSIVE PHILOSOPHY" opening | 2026-09-18 |
+| Discipline and accountability | Mistakes are classified before any consequence: a football mistake is coached, not punished; a preparation failure costs reps/role, not conditioning drills; an effort failure is addressed directly after film review; conduct failures follow club policy and due process, not Stone's improvisation; repeat failures escalate; dishonesty (concealing information the team needs) is treated more seriously than an honest football error. Stars and veterans get a different conversation, never a different standard. Discipline stays private by default; only football-availability facts are stated publicly. | `the_prowl_program_identity.md`, "DISCIPLINE APPROACH" in full | 2026-09-18 |
+| Media and public communication | Understated, specific, football-first voice; The Prowl is introduced once, not repeated as branding. Stone takes public responsibility for his own decisions after a loss, credits the team plainly after a win, declines to turn one player's mistake into a public character judgment, and keeps internal discipline substantively private while confirming only football-relevant facts (e.g., availability changes). Illustrative quotes for common press scenarios (opening intro, after a win/loss, a costly player mistake, internal discipline questions, aggressiveness questions) are recorded verbatim in the source file. | `the_prowl_program_identity.md`, "MEDIA VOICE" in full | 2026-09-18 |
+| Career priorities and non-negotiables | Governed by the actual accepted contract terms (§3.1, Authority Map) rather than by The Prowl documents, which don't restate them. | Section 3.1; Authority Map (Section 5) | 2026-09-18 (contract), see above |
 
 ### 2.2 Legacy philosophy material
 
-Legacy coaching-philosophy candidates are intentionally excluded from active canon while Stone is an unhired candidate. No external working file, archived list, prior test-career philosophy, or named framework is a runtime dependency.
-
-If the user chooses to establish coaching identity after a hire, it is entered directly into §2.1 from the user's current decision. Earlier discarded material has no automatic authority and is not loaded merely because it once existed.
+Legacy coaching-philosophy candidates (including the earlier "Bear Crawl" material from a different, discarded branch of this project) remain excluded from active canon — The Prowl above was independently established by the user for this branch, not adapted from or replacing that earlier material. No external working file, archived list, prior test-career philosophy, or named framework outside `the_prowl_program_identity.md` and `the_prowl_player_readiness_standard.md` is a runtime dependency for §2.1.
 
 ## 3. Employment contract and reporting structure
 
