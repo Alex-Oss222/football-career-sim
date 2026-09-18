@@ -239,69 +239,229 @@ Stone's employment with the Saints is not evidence by itself that he funded, adm
 
 ## 10. Demonstrated football and organizational experience
 
-The following are experience claims supported by Stone's established work history. They are not a fixed post-hire philosophy.
+This section records what Stone's established résumé actually demonstrates. It does not convert titles, team success, playing honors, academic credentials, or proximity to successful coaches into hidden competence scores.
 
-### Offense and quarterbacks
+A responsibility is evidence that Stone performed that responsibility. A result is evidence that the result occurred while he held the stated role. Neither, by itself, proves how much of the result was caused by Stone or how well the same responsibility would transfer to a different organization.
 
-Stone has substantial NFL experience in:
+### 10.1 Offensive planning and play-calling
 
-- weekly offensive planning;
+Stone's established work history supports direct NFL experience with:
+
+- weekly offensive game-plan construction;
 - opponent coverage and tendency study;
-- passing-game construction;
+- passing-game planning;
 - route combinations involving tight ends and backs;
 - protection and coverage-identification work;
-- motion and personnel usage;
+- motion and personnel recommendations;
 - opening-script preparation;
-- red-zone and short-yardage planning;
-- situational offense;
+- red-zone, short-yardage, and situational planning;
 - quarterback-room work;
 - regular-season and postseason offensive play-calling.
 
-His deepest position-specific playing and coaching background is at tight end.
+The depth of that experience changes across his career.
 
-### Whole-team head-coaching work
+In New England, Stone contributed to the passing game and called selected preseason quarters and halves, while Josh McDaniels remained the regular-season play-caller.
 
-The 2012 season gives Stone direct experience with:
+In New Orleans from 2009 through the opening portion of 2011, Sean Payton remained the principal offensive authority and game-day caller. Stone coordinated weekly offensive planning inside an established Payton offense with substantial contributions from Drew Brees, Aaron Kromer, Pete Carmichael Jr., and the rest of the offensive staff.
 
-- full-team weekly scheduling;
-- team meetings;
-- practice allocation;
-- depth-chart and playing-time decisions;
-- discipline;
-- coordinator supervision;
-- game management;
-- offensive play-calling while serving as head coach;
-- postseason head-coaching responsibility;
-- collaboration with a personnel department.
+Stone's strongest independent NFL play-calling evidence begins with the 2011 in-season takeover and continues through the rest of that season, its postseason, and the 2012 season while he served as interim head coach.
 
-### Defense and special teams
+The Saints' offensive production during Stone's tenure is relevant evidence. It is not treated as Stone's individual production. Personnel quality, Payton's system and input, Brees's quarterback play, the other offensive coaches, injuries, opponents, and execution remain part of the causal record.
+
+Stone's deepest position-specific playing and coaching background is at tight end.
+
+### 10.2 Quarterback work
+
+Stone has extensive exposure to NFL quarterback preparation, protection identification, coverage study, passing-game construction, and game planning.
+
+His most substantial NFL quarterback work has been around veteran quarterbacks, especially Drew Brees. His résumé does not establish a long record as the primary developer of a young NFL quarterback from entry into the league through maturation.
+
+That is a legitimate evidentiary limitation, not proof that he cannot develop a young quarterback. An organization for which young-quarterback development is a major criterion may reasonably investigate and weigh that question.
+
+Stone's earlier college work as offensive coordinator / quarterbacks coach is relevant experience but is not treated as equivalent to independently developing an NFL rookie quarterback.
+
+### 10.3 Whole-team head-coaching evidence
+
+Stone's 2012 interim season establishes direct experience performing NFL head-coach functions, including:
+
+- setting and administering the weekly team schedule;
+- leading team and staff meetings;
+- allocating practice time;
+- making depth-chart and playing-time decisions within his authority;
+- handling ordinary team discipline within his authority;
+- supervising offensive, defensive, and special-teams coordinators;
+- making game-management decisions;
+- calling the offense while serving as head coach;
+- managing a full regular season and postseason;
+- working with the personnel department on roster evaluation and role decisions.
+
+The 12-4 regular-season record and 1-1 postseason record are material evidence that the team functioned successfully during his interim tenure.
+
+They do not by themselves prove that Stone can reproduce that record elsewhere. He inherited an established roster, much of an established staff, an established offensive system, and an existing organizational infrastructure. The interim appointment tested his ability to operate and lead that organization under unusual circumstances; it did not test every task involved in building a permanent program from scratch.
+
+Stone has one season of NFL team-level head-coaching authority in the established record. Do not silently treat that as either equivalent to many years as a permanent head coach or as meaningless because the title was interim.
+
+### 10.4 Staff leadership versus staff construction
+
+Stone has demonstrated experience supervising an NFL coaching staff.
+
+He has not yet demonstrated that he can build a complete permanent NFL staff of his own choosing.
+
+The résumé does not establish that Stone has:
+
+- selected and hired his own offensive, defensive, and special-teams coordinators for a permanent program;
+- recruited a full position-coach staff in a competitive market;
+- obtained commitments from any future assistant;
+- replaced one of his own unsuccessful hires;
+- managed a multi-year staff succession plan.
+
+Those are real head-coaching evaluation questions.
+
+Professional overlap with a coach does not establish that the coach would join Stone, endorse him, accept a particular role, or remain available. Any proposed staff named during an interview is a plan to investigate, not a pre-existing commitment unless a later authorized simulation event establishes one.
+
+### 10.5 Program design versus inherited operation
+
+Stone has demonstrated that he can operate an existing NFL program at head-coach level for a season.
+
+He has not yet demonstrated the separate task of installing a permanent program from the ground up for a new employer.
+
+A hiring organization may reasonably ask Stone to establish, in the interview process:
+
+- staff structure and delegation;
+- offensive and defensive identity;
+- play-calling responsibilities;
+- meeting and practice organization;
+- player-development process;
+- discipline and accountability procedures;
+- game-management process;
+- communication with ownership and the personnel department;
+- offseason and training-camp priorities;
+- approach to analytics and football research;
+- media and public-communication expectations.
+
+Those answers belong to the user-controlled candidate interview. They are not inferred from Stone's résumé and are not treated as weaknesses merely because they have not yet been supplied.
+
+### 10.6 Defense and special teams
 
 Stone spent three seasons as a Patriots defensive coaching assistant working with the secondary.
 
 As 2012 interim head coach, he supervised the defensive and special-teams coordinators at the team level while those coordinators retained technical control of their phases.
 
-That experience establishes exposure and oversight. It does not make Stone a defensive coordinator or special-teams coordinator.
+That establishes defensive exposure, secondary-room experience, and whole-team oversight. It does not establish the technical résumé of a defensive coordinator, defensive play-caller, or special-teams coordinator.
 
-### Personnel
+A club comparing Stone with a candidate such as an established defensive coordinator may legitimately distinguish their depth of technical defensive experience. It may not treat Stone as having no defensive exposure at all.
 
-Stone has participated in roster evaluation, role projection, draft preparation, free-agent discussion, and end-of-roster decisions.
+### 10.7 Personnel and roster collaboration
 
-He has not held final general-manager, contract, acquisition, or draft authority.
+Stone has participated from the coaching side in:
 
-## 11. Evidence boundaries
+- roster evaluation;
+- player role projection;
+- draft preparation;
+- free-agent discussion;
+- depth-chart decisions;
+- end-of-roster decisions.
 
-The following remain open and must not be filled by assumption:
+He did not hold final general-manager, contract, acquisition, or draft authority in New Orleans.
 
-- Stone has not yet signed a permanent NFL head-coaching contract.
-- He inherited most of the 2012 Saints staff rather than assembling a full staff for his own permanent job.
-- No future coordinator, assistant, or staff commitment is established.
-- No post-hire offensive, defensive, special-teams, practice, analytics, discipline, media, or game-management philosophy is established.
-- No future play-calling arrangement is established.
-- No private opinion by a real coach, player, executive, or owner about Stone is established unless specifically recorded elsewhere as communicated.
-- Stone's most extensive NFL quarterback work is with veteran quarterbacks, especially Drew Brees. No conclusion about future rookie-quarterback development is predetermined in either direction.
-- Stone did not possess final personnel authority in New Orleans.
-- Stone's exact private knowledge of the Saints bounty program remains unresolved.
-- No 2013 hiring result is established.
+His résumé therefore establishes familiarity with the personnel process and experience communicating coaching needs to a personnel department. It does not establish a record of independently running a front office, negotiating player contracts, controlling the salary cap, or making final acquisition decisions.
+
+An organization considering substantial personnel authority for its head coach may reasonably treat that as an untested area.
+
+### 10.8 Context that is relevant but not a separate coaching competency
+
+The following facts may matter to an employer as background, credibility, communication context, or organization-specific fit, but they are not automatically converted into coaching ability:
+
+- Stone's NFL playing career and playing honors;
+- his Super Bowl appearances or championships as a player or assistant;
+- his academic degrees;
+- his years spent around successful coaches, quarterbacks, and organizations;
+- his familiarity with a city or franchise from prior employment or playing history;
+- the aggregate win-loss records of teams on which he served.
+
+Do not double-count one underlying fact through several labels. For example, membership on a championship staff may support evidence that Stone worked inside a championship organization; it does not independently prove leadership, scheme mastery, staff construction, player development, and personnel judgment all at once.
+
+## 11. Evaluation boundaries, open questions, and due diligence
+
+This section distinguishes actual résumé limitations from candidate positions that have not yet been supplied and from facts the simulator is not allowed to invent.
+
+### 11.1 Material areas not yet demonstrated
+
+The following are legitimate unanswered questions in Stone's pre-hire résumé:
+
+- He has not yet served as the permanent head coach of an NFL organization.
+- His full-season NFL head-coaching evidence consists of the 2012 interim season.
+- He inherited most of the 2012 Saints staff rather than assembling a complete permanent staff.
+- He has supervised an inherited NFL program but has not yet demonstrated a multi-year program built around his own hires, systems, and organizational structure.
+- He has extensive veteran-quarterback experience but no established long NFL record as the primary developer of a young quarterback.
+- He has participated in personnel work but has not held final acquisition, contract, cap, general-manager, or draft authority.
+- He has not yet demonstrated how he would respond over multiple years to replacing his own assistants, changing systems after failure, rebuilding a roster, or managing sustained organizational decline.
+
+These gaps may be weighed by a hiring organization when relevant to its frozen criteria. Lack of demonstrated experience is evidence of uncertainty, not proof of inability.
+
+### 11.2 Candidate positions that must be established in the interview
+
+The dossier does not pre-author Stone's:
+
+- proposed offensive system;
+- proposed defensive structure;
+- special-teams philosophy;
+- coordinator and assistant targets;
+- staff delegation model;
+- permanent play-calling arrangement;
+- practice and player-development model;
+- analytics approach;
+- discipline process;
+- media approach;
+- game-management philosophy;
+- requested personnel authority;
+- contract demands;
+- promises to ownership, executives, coaches, or players.
+
+A serious hiring process may ask for any of these.
+
+Stone's answer is controlled by the user when the question becomes material. The fact that an answer has not yet been supplied is not itself a negative mark, and the simulator may not silently invent the answer to make Stone fit or fail an organization.
+
+### 11.3 Staff availability and references
+
+No future coordinator, assistant, or staff commitment is established before an actual contact or authorized simulation event.
+
+Stone may identify coaches he would want to pursue. The simulator then resolves availability, interest, contractual constraints, competing opportunities, and willingness independently.
+
+Likewise, professional overlap with Sean Payton, Bill Belichick, Drew Brees, Mickey Loomis, Jimmy Johnson, or any other real person does not create an assumed endorsement, reference, friendship, loyalty, or negative view.
+
+If a hiring organization conducts a reference check, the response is a separate in-world event. Only communicated information becomes available to Stone.
+
+### 11.4 Saints bounty investigation due diligence
+
+The public record and branch canon establish that the Saints bounty investigation affected the organization during Stone's New Orleans tenure and that Stone was not disciplined in connection with the program.
+
+Stone's exact private knowledge before the matter became organizationally and publicly known remains unresolved.
+
+A hiring organization may reasonably ask Stone what he knew, when he knew it, and how he handled the issue. Stone's answer is user-controlled.
+
+The simulator may not invent secret participation, concealment, whistleblowing, exonerating conduct, or private testimony merely to strengthen or weaken his candidacy.
+
+### 11.5 No predetermined hiring conclusion
+
+No 2013 interview result, candidate ranking, second interview, offer, contract, negotiation outcome, or hire is established by this dossier.
+
+Organizations may reasonably reach different conclusions from the same résumé because their documented needs, authority structure, candidate field, and tolerance for untested areas differ.
+
+The dossier supplies evidence. It does not supply the verdict.
+
+### 11.6 Attribution and anti-inflation rules
+
+When Stone is evaluated:
+
+1. **Responsibility is evidence of experience, not automatic proof of excellence.**
+2. **Results are relevant evidence, not automatic individual attribution.**
+3. **An inherited success is still evidence, but the inherited roster, staff, system, and institutional context remain part of the evaluation.**
+4. **A missing demonstration is a legitimate uncertainty, not proof of inability.**
+5. **Playing honors, academic credentials, championships, famous professional contacts, and biography length do not become hidden competence bonuses.**
+6. **The same underlying accomplishment may not be counted repeatedly under different labels.**
+7. **Stone receives the same evidentiary treatment that a real comparator candidate would receive for equivalent facts.**
+8. **No later real hiring result or later coaching career may be used to decide whether the pre-hire evidence was 'actually' good or bad.**
 
 ## 12. January 2013 starting search
 
