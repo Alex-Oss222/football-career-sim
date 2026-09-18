@@ -6,11 +6,11 @@
 
 **Runtime status:** `AUTHORING MASTER - DO NOT LOAD DURING PLAY UNTIL §8 IS POPULATED`
 
-**Document version:** `0.4-authoring`
+**Document version:** `0.5-authoring`
 
 **Last verified:** `2026-09-17`
 
-**Last Document 7 content-changing update:** `2026-09-17 - created and locked the same day (design confirmed, hidden-layer sign-off given, January 2013 confirmed as era-calibration target), extended with the week-to-week walkthrough (§5.1-§5.3, §6.1-§6.4), then extended again the same day once the user supplied both output-format drafts and asked for a SCOTUS-style folder layout: §5.2 now points to the finalized foundation/templates/ files; §11 items 4-5 marked resolved; new §12 documents the foundation/state/career/archive reorganization. No prior section's substance changed.`
+**Last Document 7 content-changing update:** `2026-09-17 - created and locked the same day (design confirmed, hidden-layer sign-off given, January 2013 confirmed as era-calibration target), extended with the week-to-week walkthrough (§5.1-§5.3, §6.1-§6.4), extended again for the SCOTUS-style folder layout (§12) and the finalized output templates (§5.2), then extended twice more the same day: a third output template and file-persistence rule for the hiring search itself (§11 items 7), and §3.7, a hook for the user's own external real-world playbook (kept out of this repo entirely, looked up one play at a time, its "expected yards" treated as a situational modifier never a lookup result) (§11 item 6). No prior section's substance changed.`
 
 **Supersedes:** Nothing. This is an addition to the existing package, not a replacement of any of Documents 1-6.
 
@@ -113,6 +113,16 @@ Document 1 §11.2 already defines four game-detail modes (Executive, Play-Callin
 ### 3.6 Long-run consistency check
 
 Variance compresses as sample size grows: a single game can upset, but a season-long arc must still track underlying unit quality. This is checked the same way Document 6 §7 already checks statistical legality (completions never exceed attempts, turnovers reconcile) — as a standing postgame and end-of-season audit step, not a one-time design promise.
+
+### 3.7 Named plays from the coach's own playbook
+
+The user has a large personal playbook (real play concepts, each with design characteristics and a self-described "expected yards" figure) that they explicitly do not want ingested into this project wholesale — it is a token-cost concern, and more importantly an "expected yards" annotation in a real playbook is design intent, not a promised outcome, which is exactly consistent with this engine's own bounded-randomness philosophy.
+
+**Storage:** the playbook stays wherever the user already keeps it, referenced by file path. It is never pasted into a conversation or read in bulk, and no version of it is embedded in this document or any other canon file.
+
+**When it actually gets touched:** only at the moment the user, in Play-Calling or Full Tactical mode (Document 1 §11.2), names a specific play during an actual game. At that point, only that one play's entry is looked up (a targeted search by name, not a read of the whole document) — the same way a real coordinator's own call sheet is a huge document of which exactly one line matters per call.
+
+**How a named play enters resolution:** the play's design characteristics (concept type, target depth/area, run or pass, personnel grouping) become one more situational modifier feeding §3.2 step 2's matchup-delta calculation, in the same slot "a real scheme mismatch the week's game plan identified" already occupies. The play's own "expected yards" figure is never used as a lookup result and never overrides the drive-shape/variance mechanic in §3.2-§3.4 — a well-designed call against a bad matchup can still produce nothing, exactly as in real football. This is flavor and situational color, not a second resolution system.
 
 ## 4. Turn economy: the leverage gate
 
@@ -229,6 +239,8 @@ The evidence-labeling system, the real-person protections, the append-only ledge
 3. **Target season/era for calibration.** Confirmed by the user 2026-09-17: January 2013 forward (Alex Stone, HC candidate, not yet hired), matching Document 3's starting canon. §8's placeholders now wait on the real-data library build rather than on this decision.
 4. **Two output formats (in-season / offseason).** Resolved 2026-09-17, per §5.2 — see `foundation/templates/`.
 5. **Repository folder structure.** Resolved 2026-09-17: the flat 8-file layout was reorganized to mirror the SCOTUS project's `foundation/` + `state/` + `terms/` pattern, at the user's explicit request. See §12 below.
+6. **The coach's own real-world playbook.** Resolved 2026-09-17, per §3.7: kept entirely external, referenced by file path, and looked up one play at a time only when actually called in-game — never ingested wholesale. Its "expected yards" annotations are a situational modifier into the existing matchup-delta calculation, never a lookup result.
+7. **Hiring-search output format and persistence.** Resolved 2026-09-17: `foundation/templates/hiring_search_output_template.md` gives the pre-hire candidacy phase the same concrete shape the season/offseason templates give post-hire play, and every turn is appended to `career/<year>/offseason/hiring_search.md` rather than existing only in chat — see Document 3 §10.2 items 6-8 and `career/README.md`'s exception to "empty until initialization."
 
 ## 12. Repository layout
 
