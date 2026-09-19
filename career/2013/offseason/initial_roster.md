@@ -4,7 +4,7 @@
 
 **As of:** January 15, 2013  
 **Mode:** real pre-divergence facts; counterfactual personnel decisions begin after this snapshot  
-**Status:** `POPULATED WITH NOTED SOURCE LIMITATIONS — TRANSACTION-LEDGER RECONCILIATION STILL REQUIRED`
+**Status:** `CORRECTED JANUARY 15 CONTROL SNAPSHOT — 67 CONTROLLED PERSONS`
 
 ## Sources and evidence boundary
 
@@ -13,7 +13,7 @@
 - **Contract cross-check:** OverTheCap historical-contract export, used only for contract totals that can be matched unambiguously. [NFLverse contracts release](https://github.com/nflverse/nflverse-data/releases/tag/contracts)
 - **Rules:** the $123,000,000 league cap and 2013 roster/accounting rules are already independently sourced in `foundation/02_League_Era_and_Sourcebook.md` §11 and `library/2013_league_calendar_and_financial_rules.md`.
 
-**Cutoff:** January 15, 2013, the counterfactual Stone hire date. The final 2012 active roster is the last clean NFL roster snapshot available in the archived weekly feed. Reserve/injured designations are separately labeled because the export does not retain every reserve-list player in its Week 17 active slice. No actual transaction, release, re-signing, draft choice, staff hire, or player outcome after the divergence point was imported.
+**Cutoff:** January 15, 2013, the counterfactual Stone hire date. The weekly-roster spine is supplemented by Jacksonville's official 2012 transaction ledger. That ledger establishes four reserve/future contracts signed December 30, 2012, before the divergence. No actual transaction, release, re-signing, draft choice, staff hire, or player outcome after January 15 is imported.
 
 ## Two-pass verification record
 
@@ -23,7 +23,7 @@ The NFL weekly export supplied the 53 unique names carrying an `ACT` row at Week
 
 ### Pass 2 — skeptical re-check
 
-Every active-roster name was re-matched by name against the independent PFR roster; every games/starts entry comes from that second dataset. Ten season-ending reserve/injured cases visible in the season roster were added as a separate, expressly provisional bucket rather than silently counted as active. This pass does **not** claim an exact January 15 reserve/futures inventory: a dated official transaction ledger was not available in the environment. That omission is stated, not estimated.
+Every active-roster name was re-matched by name against the independent PFR roster; every games/starts entry comes from that second dataset. Ten season-ending reserve/injured cases visible in the season roster were added separately. A later audit recovered Jacksonville's official 2012 transaction ledger and corrected the remaining January control gap: on December 30 the club signed John Parker Wilson, Ryan Davis, Brandon King and Will Ta'ufo'ou to reserve/future contracts. Those four contracts predate Stone's January 15 hire and therefore belong to the inherited branch state.
 
 ## Player register
 
@@ -95,7 +95,24 @@ This is an administrative roster inventory, **not a depth chart or talent evalua
 | Bryan Anger | P | 19 | 2012 final active roster | 0 | 2012: 16 games, 0 starts | 00-0029692 |
 | Jeremy Cain | LS | 48 | 2012 final active roster | 8 | 2012: 16 games, 0 starts | 00-0022502 |
 
-**Inventory counts:** 53 final-week active names; 10 separately identified reserve/injured cases; 63 total listed persons. These are disjoint in this file. The latter two totals are not asserted to equal the club’s complete January 15 offseason control list because practice-squad expirations and reserve/future contracts require a dated transaction source.
+## January 15 reserve/future contract correction
+
+The official Jacksonville transaction ledger records these contracts on **December 30, 2012**:
+
+| Player | Pos. | Jan. 15 control basis | 2013 contract note |
+|---|---|---|---|
+| John Parker Wilson | QB | Reserve/future contract signed Dec. 30 | Controlled entering divergence; later real February release is quarantined |
+| Ryan Davis | DE | Reserve/future contract signed Dec. 30 | Controlled entering divergence; 2013 minimum-level contract |
+| Brandon King | DB | Reserve/future contract signed Dec. 30 | Controlled entering divergence; later real February release is quarantined |
+| Will Ta'ufo'ou | FB | Reserve/future contract signed Dec. 30 | Controlled entering divergence; 2013 base $480,000 |
+
+These contracts existed before the January 15 divergence. The real-world February 26 releases of Wilson and King occurred **after** divergence and are not branch facts.
+
+**Corrected January 15 inventory:** 53 final-week active names + 10 separately identified reserve/injured cases + 4 reserve/future contracts = **67 controlled persons**.
+
+The original 63-row player table below remains the sourced 2012 active/reserve spine. The four-row correction above completes the January 15 control list.
+
+**Inventory counts:** 53 final-week active names; 10 separately identified reserve/injured cases; 63 persons in the original active/reserve spine. The four reserve/future rows above complete the corrected 67-person January 15 control inventory.
 
 ## Staff and football-operations baseline
 
