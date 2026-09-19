@@ -43,6 +43,17 @@ A progression commit is incomplete if its event file says one thing while a depe
 - **Human-player access rule.** Every player may receive, possess, and study the complete active iteration. The active book is a football playbook, not a software unlock tree. Players may read ahead and ask questions about any page. "Installed" means formally taught, walked through, practiced, and prepared for team use. Installation is still gated by the real CBA offseason-program calendar in `career/[year]/offseason/the_prowl_player_readiness_standard.md`, but that calendar limits club teaching/practice activity, not player access to the active book. Evaluate players on assigned/taught material, never on whether they mastered an uninstalled page.
 
 
+### Career calendar control rule
+
+For any task that advances a season clock, opens/closes a camp or practice phase, executes a roster deadline, runs a transaction window, or plays/simulates a game, first read `career/[year]/calendar.md` when that file exists.
+
+- The career calendar is the branch-facing schedule authority for team dates, opponents, reporting dates, camp windows, roster deadlines, trade deadlines, bye weeks and conditional postseason gates.
+- Its historical sourcing belongs in the corresponding `library/[year]_*calendar*.md` file. For Jacksonville 2013, the full source is `library/2013_jacksonville_master_calendar.md`.
+- Do not substitute an older phase-local date if the master calendar contains a later verified correction.
+- Historical dates/opponents are rails only. Never import the real score, injury, transaction, attendance, depth chart or season result.
+- If a previously missed phase is already behind the latest closed checkpoint, preserve the chronology gap unless the user expressly authorizes a retroactive simulation. Do not fabricate attendance or performance to make the calendar look complete.
+- Before closing a date-sensitive event, check the next deadline/event in the career calendar and carry it into Document 5.
+
 ### Offseason onboarding and phase-plan execution rule
 
 For any task that **starts, advances, runs, simulates, or closes** Jacksonville's rookie minicamp, offseason program/OTAs, a separately scheduled new-head-coach voluntary veteran minicamp, mandatory veteran minicamp, training camp, or the preseason work embedded in training camp, the durable development plans are mandatory inputs. Do not improvise a generic camp because the user said "advance to camp."
