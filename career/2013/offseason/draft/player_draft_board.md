@@ -1,472 +1,232 @@
-# 2013 draft board — Alex Stone's decision view
+# 2013 draft board: Stone and the coaching staff's recommendation to Caldwell
 
-**Purpose:** Jacksonville's decision-facing draft board as Stone sees it through the college-scouting department, coaching staff, public pre-draft information and his own football judgment.
+**To:** David Caldwell, general manager
 
-**Authority:** Stone recommends grades, roles, priorities and trade/draft strategy. David Caldwell retains final draft authority.
+**From:** Alex Stone, head coach; position and coordinator responsibilities below
 
-**Final-board information date:** **April 24, 2013**, the day before Round 1. This file is the final pre-draft version. It does **not** authorize April information to appear in January, February or March; earlier simulation dates must obey `library/2013_draft_information_gates.md`.
+**Purpose:** Recommend players, prices and development plans that improve the whole Jacksonville team.
 
-**Critical rule:** this is a grade board, not a prophecy of who will be available at each Jacksonville pick. No actual 2013 draft destination, actual selection number or later NFL career may be used as an input.
+**Status:** A recommendation memo, not a completed draft meeting or an approved acquisition list. The first-person recommendation below is authored in Stone's voice from his established preferences. Staff work listed as required remains pending unless separately recorded; assigning a coach a question does not invent his answer.
 
-## Information labels
+**Information ceiling:** April 24, 2013. This final pre-draft edition does not advance the simulation clock. Earlier dates use only information released by then under the [draft information gates](../../../../library/2013_draft_information_gates.md). Caldwell retains final authority over scouting, selections, trades and contracts; Stone owns the coaching plan and earned playing roles.
 
-- **VERIFIED PRE-DRAFT FACT** — eligibility, measurements, testing, college production, public injury/update and other information available by April 24.
-- **JAX SCOUTING** — Jacksonville's football evaluation communicated to Stone.
-- **POSITION COACH / COORDINATOR** — role-specific coaching projection communicated to Stone.
-- **STONE GRADE** — Stone's own football grade or preference.
-- **PUBLIC RANGE** — contemporary external-board context, not Jacksonville's answer key.
-- **AVAILABILITY UNKNOWN** — whether the player reaches a Jacksonville selection.
-- **FOLLOW ONLY** — player Jacksonville wants to track without yet carrying a full actionable draft grade.
+## 1. Stone's recommendation
 
-## How Stone reads this board
+Dave,
 
-A player can be:
+My first recommendation is Lane Johnson within the top tackle group, with Eugene Monroe staying at left tackle. I want a right side we can trust without continually taking a receiver out of the pattern to help it. Movement matters because it gives us more ways to attack; it only helps if the player can finish his assignment against an NFL opponent.
 
-- graded highly but unavailable;
-- graded lower by the public than by Jacksonville;
-- graded highly by the public but a poor Jacksonville fit;
-- medically uncertain;
-- a good player at the wrong price;
-- a player Stone likes but Caldwell ultimately passes on.
+Kelce is my strongest disagreement with the public board. I would discuss him seriously at #33. The case is what Lewis and Kelce could let us do together: keep a credible run threat on the field and create receiving answers from the same personnel. Zernhelt and Tice need to test that case. If we need to hide his blocking or cannot teach the responsibilities we are projecting, my price is too high.
 
-The board must preserve those distinctions.
+I also have to account for the defense. Crennel needs players who can hold their responsibility, tackle and affect the quarterback without making everyone behind them cover a mistake. An offensive player I like does not automatically outrank a defender who solves a larger problem at the same grade.
 
----
+Every recommendation must name a first job, a coach responsible for teaching it and the evidence needed to expand it. My background helps me ask questions about tight ends, coverage and the passing game. It does not make the answers certain. If our evaluation is wrong, the staff has to correct it.
 
-# 1. Top-of-board cluster — Jacksonville selection #2
+### What makes this Stone's board
 
-Jacksonville should not reduce the second overall decision to "take Stone's favorite name."
+These are applications of the established [Prowl identity](../the_prowl_program_identity.md) and [readiness standard](../the_prowl_player_readiness_standard.md), not a new permanent offensive system.
 
-Contemporary evaluation made the top of the 2013 class unusually trench-heavy.
-
-## Lane Johnson — OT, Oklahoma
-
-### VERIFIED PRE-DRAFT FACT
-
-The final public scouting picture treated Johnson as one of the three elite offensive tackles.
-
-The project draft-class research records:
-
-- Eric Fisher / Luke Joeckel / Lane Johnson as the consensus top tackle tier;
-- Johnson as the premier athlete of that group;
-- substantial movement ability and developmental upside.
-
-### JAX SCOUTING / TICE-YARNO
-
-Jacksonville's football case is built around:
-
-- movement skill;
-- space blocking;
-- recovery athleticism;
-- ability to function in protection without requiring the offense to become static;
-- potential to play right tackle immediately while Eugene Monroe remains at left tackle.
-
-### STONE GRADE
-
-**Stone preference within the top-tackle tier: Lane Johnson.**
-
-Stone values Johnson's movement profile for the offense he expects to build.
-
-That is a legitimate scheme/traits preference.
-
-It is **not** a claim that Johnson is objectively better than Fisher or Joeckel or that Jacksonville knows his future career.
-
-### Immediate role if selected
-
-Stone's proposed development plan:
-
-- Eugene Monroe remains at LT initially;
-- Johnson begins primarily at RT;
-- cross-training is possible, but Jacksonville does not force an immediate blind-side transition;
-- the pick gives the club two tackles to evaluate independently of Monroe's future contract decision.
-
-No later Monroe transaction is assumed.
-
-## Other legitimate #2-cluster names Stone sees
-
-| Prospect | Position | Public/pre-draft context | Stone/JAX treatment |
-|---|---|---|---|
-| Eric Fisher | OT | Top-of-class tackle candidate | Full comparison required |
-| Luke Joeckel | OT | Top-of-class tackle candidate | Full comparison required |
-| Lane Johnson | OT | Elite athlete, top tackle tier | **Stone preference** |
-| Dion Jordan | EDGE | High-end movement/coverage/rush traits | Defensive alternative |
-| Ezekiel Ansah | EDGE | Rare tools, less experience | Defensive alternative |
-| Sharrif Floyd | DT | Top interior defensive talent on major boards | Defensive alternative |
-
-Caldwell's final decision remains open until Jacksonville is actually on the clock.
-
----
-
-# 2. Tight-end board — Travis Kelce is a Stone overgrade
-
-## Travis Kelce — TE, Cincinnati
-
-### VERIFIED PRE-DRAFT FACT
-
-The public market was not treating Kelce as a clear top-35 prospect.
-
-The project's research records:
-
-- Mike Mayock: **TE4 / overall #80**;
-- Josh Norris: **TE2**;
-- strong size, blocking competitiveness and yards-after-catch ability;
-- multi-alignment potential;
-- a documented 2010 season-long team suspension that evaluators had to investigate.
-
-### STONE GRADE
-
-Stone carries Kelce **materially above public consensus** because of his own tight-end background and how he projects the player into Jacksonville's offense.
-
-Stone's football case:
-
-- in-line credibility;
-- movement alignment;
-- seam/over route utility;
-- underneath run-after-catch value;
-- ability to make 12 personnel threaten the defense rather than merely add a blocker.
-
-### Stone range
-
-**Stone grade: late Round 1 / early Round 2 value.**
-
-That makes Kelce a legitimate consideration around #33.
-
-It does **not** make #33 his predetermined destination.
-
-### Risk / uncertainty
-
-Stone sees:
-
-- limited national consensus at his grade;
-- disciplinary/background diligence that must be completed from actual pre-draft information;
-- uncertainty in translating the receiving projection;
-- opportunity cost of taking a TE over defensive/OL/WR talent.
-
-### Role if selected
-
-Kelce would not automatically replace Marcedes Lewis.
-
-Stone's preferred usage would explore:
-
-- 12 personnel;
-- slot/motion alignments;
-- seam and intermediate routes;
-- movement blocking;
-- matchup packages.
-
-Lewis' role remains determined by football evidence, not by Kelce's draft status.
-
----
-
-# 3. Wide-receiver value board
-
-## Keenan Allen — WR, California
-
-### VERIFIED PRE-DRAFT FACT
-
-Allen's tape was widely respected, but his knee recovery complicated the process.
-
-By the final April board:
-
-- Mayock had him around **#37 overall**;
-- Brandt around **#45**;
-- his April workout was slow while he was still recovering from a PCL injury;
-- route tempo, hands and run-after-catch ability remained major positives.
-
-The April workout belongs only in this April 24 final board. It may not leak into earlier dates.
-
-### STONE / DRAKE VIEW
-
-Jacksonville likes Allen because he can win through:
-
-- route detail;
-- body control;
-- hands;
-- intermediate separation;
-- run-after-catch toughness.
-
-The staff does not need him to immediately be WR1 if Justin Blackmon and Cecil Shorts remain available.
-
-### Stone range
-
-**Stone grade: Round 2 value, subject to medical confidence.**
-
-If Allen reaches #64, Jacksonville should treat that as a value event relative to this grade.
-
-The board must **not assume he will reach #64**.
-
-### If unavailable
-
-Jacksonville moves to the next player on its actual live board. It does not reach backward through real history to find "the player who should have fallen."
-
----
-
-# 4. Offensive-line second-day / early-Day-3 board
-
-## David Bakhtiari — OL, Colorado
-
-### VERIFIED PRE-DRAFT FACT
-
-The final public evaluation did not treat Bakhtiari as a sixth-round sleeper.
-
-Contemporary NFL material projected him as a possible **late second-day** player, with:
-
-- starting experience at tackle;
-- toughness/finish;
-- questions about size/power;
-- some expectation he might move inside in the NFL.
-
-Mike Mayock's final board placed him around **#82 overall**.
-
-Sources:
-- NFL.com final prospect analysis: https://www.nfl.com/draft/tracker/2013/rounds/4
-- Mayock Top 100: https://www.nfl.com/news/2013-nfl-draft-mike-mayock-s-top-100-prospects-0ap1000000161676
-
-### JAX SCOUTING / YARNO-TICE
-
-Jacksonville values the flexibility to evaluate him at:
-
-- left guard;
-- swing tackle;
-- developmental tackle.
-
-### Stone range
-
-**Stone grade: late Round 3 / Round 4.**
-
-At #98 he is a reasonable target **if still available**.
-
-Jacksonville does not pencil him into the starting lineup before he is drafted and wins the role.
-
----
-
-# 5. Mid-round defensive-line board
-
-## Lavar Edwards — DE, LSU
-
-### VERIFIED PRE-DRAFT FACT
-
-Public evaluation treated Edwards as a mid-round defensive-end prospect with:
-
-- size/length;
-- athletic tools;
-- limited starting volume behind a talented LSU front;
-- ability to play on either side.
-
-NFL.com's pre-draft evaluation described him as a mid-round 4-3 end / swing end.
-
-### CRENNEL / PLEASANT VIEW
-
-Jacksonville's role projection:
-
-- rotational end;
-- base-down competition;
-- inside/outside rush experiments on passing downs;
-- special-teams contribution if he earns the role.
-
-### Stone range
-
-**Stone grade: Round 4–5.**
-
-At #135, he is a reasonable live-board candidate if still available.
-
-He is not projected for a specific sack total.
-
----
-
-# 6. Defensive-back board
-
-## Jordan Poyer — CB, Oregon State
-
-### VERIFIED PRE-DRAFT FACT
-
-Poyer was **not** broadly viewed as a sixth-round prospect.
-
-The project's pre-draft research records approximately:
-
-- Mayock overall **#85**;
-- solid technical/instinctive evaluation;
-- average athletic testing relative to the fastest corners.
-
-### ODEN / CRENNEL VIEW
-
-Jacksonville sees potential value in:
-
-- outside corner;
-- nickel work;
-- selected safety/cross-training concepts;
-- return/special-teams evaluation.
-
-### Stone range
-
-**Stone grade: Round 3–4.**
-
-If Poyer somehow remains available at #169, Jacksonville should treat that as a major fall relative to its grade.
-
-The board must not plan on that happening.
-
-This corrects the old structure that effectively assumed an 80-pick slide in advance.
-
----
-
-# 7. Pick-by-pick decision framework
-
-This section records **decision priorities**, not predetermined names.
-
-## Pick #2
-
-Primary decision cluster:
-
-- Lane Johnson
-- Eric Fisher
-- Luke Joeckel
-- top defensive-front alternatives if Caldwell's overall board prefers them
-
-**Stone recommendation:** Lane Johnson within the tackle group.
-
-## Pick #33
-
-Decision rule:
-
-- take the highest Jacksonville grade available;
-- Travis Kelce is eligible because Stone's internal grade is much higher than public consensus;
-- do not draft him simply because this file once named him.
-
-Other available Round 1/2-grade talent must be compared live.
-
-## Pick #64
-
-Decision rule:
-
-- Keenan Allen is a priority **if he is still available and medical confidence is adequate**;
-- otherwise use the live board.
-
-Do not assume Allen falls.
-
-## Pick #98
-
-Decision rule:
-
-- David Bakhtiari is a strong target if available near Jacksonville's Round 3/4 grade;
-- do not force the pick if another higher-graded player remains.
-
-## Pick #135
-
-Decision rule:
-
-- Lavar Edwards is an appropriate mid-round edge/front candidate if available;
-- compare him with the rest of the live defensive board.
-
-## Pick #169
-
-Decision rule:
-
-- if Jordan Poyer is still available, his presence represents value relative to Jacksonville's grade;
-- do not assume that fall;
-- otherwise prioritize the live DB/edge/special-teams board.
-
-## Pick #208
-
-This selection is first eligible to be included in the active Cousins trade framework described in `../../trades/trade_targets.md`.
-
-If no trade closes before Jacksonville must use the pick:
-
-- return #208 to the live board;
-- prioritize the best remaining Jacksonville grade;
-- likely roster areas include DB, edge/front depth and special-teams-capable players;
-- no prospect is predetermined.
-
----
-
-# 8. Late-round / priority-free-agent follow list
-
-A player may be on Jacksonville's follow list without Stone knowing whether he will be drafted.
-
-## A.J. Bouye — CB, UCF
-
-**Status:** **FOLLOW ONLY / late-round or priority-free-agent contingency if still available.**
-
-The old board incorrectly labeled Bouye a future "UDFA" before the draft had happened.
-
-Correct treatment:
-
-- Jacksonville may carry a late-round or post-draft follow grade;
-- if he is selected by another club, the follow closes;
-- if he goes undrafted, Caldwell/pro personnel can decide whether Jacksonville should compete for him as a priority free agent.
-
-Before offering a significant UDFA guarantee, Jacksonville should have an actual internal scouting packet.
-
-The board does not use Bouye's later NFL career as evidence.
-
-## Adam Thielen — WR, Minnesota State
-
-**Status:** **LOW-CONFIDENCE REGIONAL FOLLOW, not a drafted-grade target.**
-
-Thielen was outside the main national combine pipeline and pursued exposure through the regional-combine route.
-
-Jacksonville may keep him on a regional/small-school follow list if its scouting department has actually received the relevant workout information.
-
-The old board incorrectly jumped directly to:
-
-> rookie-minicamp tryout
-
-before Jacksonville knew he would remain available after the draft.
-
-Correct process:
-
-1. keep him on the low-cost follow list;
-2. see whether he is drafted or signed;
-3. if still available and Jacksonville's regional report supports it, consider:
-   - priority-free-agent call;
-   - or rookie-minicamp tryout.
-
-No roster contract is promised.
-
-A later retrospective may be used only to reconstruct that he was a regional-combine, non-combine prospect; it may not import his later career success.
-
----
-
-# 9. Staff-source layer
-
-Stone does not personally generate every grade.
-
-The board is supposed to reach him through the football operation.
-
-| Area | Primary football input Stone should receive |
+| Established part of Stone's background or standard | Consequence for this draft |
 |---|---|
-| Overall college board | Caldwell / college scouting department |
-| Offensive line | Mike Tice / George Yarno |
-| Quarterback | Jeremy Bates / Tice / Stone |
-| Tight end | John Zernhelt / Tice / Stone |
-| Wide receiver | Darryl Drake |
-| Running back | Tim Spencer |
-| Defensive front | Romeo Crennel / Anthony Pleasant |
-| Linebacker | Crennel / Frank Bush |
-| Defensive back | Crennel / Tony Oden |
-| Special-teams utility | Alan Lowry |
-| Medical availability | Medical staff; coaches receive only appropriate football-relevant clearance/risk information |
+| Former NFL tight end; tight-end and passing-game coaching experience | Evaluate blocking, route detail, protection and coverage understanding together. A second tight end must add useful answers alongside Lewis, not merely fit Stone's old position. |
+| Secondary work in New England and whole-team responsibility in New Orleans | Ask what the offense forces a defense to declare, and what a defensive prospect lets Crennel defend without exposing another position. |
+| Fundamentals, recognition and earned responsibility | Prefer a teachable, repeatable football action to an unexplained athletic projection. Do not infer learning ability or effort from an interview impression or a test time. |
+| Motor-learning background and staff accountability | Specify the correction, practice opportunity and retest. Adding positions is a teaching cost; "versatile" is not permission to give a rookie several unfinished jobs. |
+| Individualized physical readiness | Judge whether the body can do the job. A powerful guard is not a bad fit merely because he differs from an athletic tackle. Doctors own medical conclusions and clearance. |
+| Players and staff held to the same standard | Record the best objection to Stone's preferred player. A coach who recommends a project must explain how the staff can develop him within the available practice time. |
 
-Stone can disagree with the scouts.
+Stone's experience around veteran quarterbacks does not establish that he can reproduce that result with a rookie. A quarterback recommendation needs an actual development plan from Stone, Bates and Tice.
 
-The scouts can disagree with Stone.
+## 2. Build the team around the roster we actually have
 
-The file should preserve the disagreement rather than silently converge everyone on the player who later succeeds.
+Start from the [roster evaluation](../roster_evaluation.md), then update for completed transactions. A name on the [free-agent board](../free_agency/player_board.md) or [trade board](../../trades/trade_targets.md) is not a filled roster position. This memo records no signing, release or trade.
 
----
+| Football problem | Coaching recommendation | What changes the priority |
+|---|---|---|
+| Edge protection and evaluating the quarterback fairly | Keep Monroe; seek credible RT competition. Improve protection communication as well as individual blocking. Protection improvement does not excuse a quarterback's late decisions. | A completed acquisition or a clearly superior live-board grade elsewhere. Do not sell Monroe merely because we draft a tackle. |
+| Pressure, run fits and defensive depth | Give Crennel and Pleasant real front-seven options. Judge the ability to execute the intended assignment, including contain and rush-lane discipline. | Actual additions to the front. A hoped-for free-agent signing cannot justify passing on a needed defender. |
+| Coverage, tackling and communication | Give Oden competition with a defined coverage role. Recognition must lead to correct leverage and a secure tackle. | Actual corner/safety acquisitions and the remaining board; no predetermined defensive-back conversion. |
+| Interior protection and center continuity | Keep guard competition and a center succession plan in the discussion even if RT is addressed. | Meester's actual contract decision and the current interior group. Re-signing a veteran changes urgency, not long-term evaluation. |
+| Dependable receiving answers | Consider Kelce and Allen at their football value, with Lewis, Shorts and Blackmon's actual availability accounted for. | Medical information, stronger defensive alternatives and the roles already acquired. Two receiving picks must justify their combined cost to the rest of the roster. |
+| Running-back insurance | Keep Spencer's protection, receiving and workload evaluation on the board. MJD is a near-term part of the plan, not a reason to stop evaluating successors. | A completed Forsett signing reduces urgency. Caldwell's recorded objection still stands: it does not remove running backs from meaningful draft consideration. |
+| Game-day depth and special teams | Lowry identifies a real coverage, return or protection assignment for reserve candidates. | Whether a player can earn a game-day role. "Can play special teams" requires evidence and practice time. |
 
-# 10. Anti-hindsight rules for this board
+### Quarterback remains an independent decision
 
-1. **No real draft slot or team destination is an input.**
-2. **No later NFL production, awards, injuries or career reputation is an input.**
-3. **A player cannot be labeled "UDFA" until the draft actually ends undrafted.**
-4. **A player cannot be labeled a rookie-minicamp tryout until Jacksonville actually has the opportunity and chooses to invite him.**
-5. **Public consensus is context, not a universal Jacksonville grade.**
-6. **Stone may overgrade or undergrade a player for football reasons, but the reason must be stated.**
-7. **Availability at a future Jacksonville pick remains unknown until prior simulated selections occur.**
-8. **Medical information is date-gated and limited to what Jacksonville legitimately receives.**
-9. **The board must contain alternatives; it may not be a disguised list of later NFL hits.**
-10. **Caldwell retains final draft authority.**
+The Cousins inquiry must not substitute for grading this class. Bates, Tice and Stone should compare Geno Smith, EJ Manuel, Matt Barkley and Ryan Nassib, and retain the wider class where scouting supports it. These are evaluation assignments, not a newly approved quarterback order.
 
-The goal is not to reproduce the real 2013 draft better than history did.
+For each serious candidate, ask: What does he recognize before and after the snap? What happens to his feet and decision when the first answer closes? What can we ask him to execute initially, and which incumbent practice reps would that require? Distinguish a likely starter recommendation from a developmental reserve recommendation.
 
-The goal is to let Stone and Jacksonville make a plausible 2013 decision with only the information they could actually have.
+There is no instruction to force a quarterback at #2. There is also no automatic veto if Caldwell's scouting work establishes a quarterback worth the investment after consultation with Stone. Public disagreement in this class remains visible in the [draft-class research](../../../../library/2013_draft_class.md).
+
+Cousins is not acquired until a trade closes, and acquisition would not name him the starter. Preserve the [existing trade ceiling and quarterback-room conditions](../../trades/trade_targets.md); do not quietly spend extra picks to make this draft plan work.
+
+## 3. Primary recommendations and their costs
+
+**Reading the cards:** The named Stone preferences and round-value ranges below carry forward the existing board. Round ranges describe willingness to spend a pick, not invented numerical player ratings. Public rankings are external context. Role plans and comparison requests are coaching recommendations; completed Jacksonville scouting, medical clearance and staff agreement are not presumed.
+
+### Lane Johnson, OT, Oklahoma
+
+**Stone recommendation:** Preferred within the Fisher / Joeckel / Johnson tackle group at #2, subject to the full-board comparison.
+
+**Football case:** Movement, recovery and space blocking support the existing preference. The proposed benefit is a more dependable right edge and fewer protection compromises while Monroe remains at LT. Johnson's athleticism must translate into assignment execution; it cannot stand in for technique.
+
+**First job and teaching owner:** Prepare to compete at RT. Yarno owns the stance, set, hands and balance work; Tice owns its fit within the protection and run plan. Test inside counters, speed-to-power, combination-block timing and communication. Win the position on the field before expanding the job.
+
+**Best objection:** We could pay a premium price for a tackle who still needs substantial technical work while leaving the defensive front short. Fisher and Joeckel must receive the same comparison, including how much immediate help each would require.
+
+**Change the recommendation if:** Tice/Yarno cannot support the readiness projection, medical information changes the evaluation, or Caldwell's best available defender provides clearly better value. Drafting Johnson does not authorize a Monroe trade.
+
+| Other member of the existing #2 cluster | Question the staff must answer before recommending him instead |
+|---|---|
+| Eric Fisher / Luke Joeckel | Does either offer a better combination of current protection reliability and development potential for the actual price? Apply the same RT transition and teaching questions. |
+| Dion Jordan | What is Crennel's first assignment for him, and how much value comes from pressure versus coverage? Avoid paying for several roles before establishing one. |
+| Ezekiel Ansah | Which down-to-down edge responsibilities can Pleasant teach first, and what makes the developmental cost acceptable at #2? |
+| Sharrif Floyd | How would his interior role improve both the run fits and the rush? Crennel must define the assignment within Jacksonville's front. |
+
+A trade down is worth considering only against a real offer. Caldwell should compare the compensation with the risk of losing the remaining acceptable top-tier options. No buyer, return package or later availability is assumed.
+
+### Travis Kelce, TE, Cincinnati
+
+**Stone value:** Late Round 1 / early Round 2. A legitimate #33 discussion, not an automatic selection.
+
+**Public context:** Mayock ranked Kelce #80 overall. Norris ranked him TE2 but projected Round 3. That supports the existence of differing evaluations; it does not make Stone's earlier price a consensus. [Mayock board][mayock] [Norris tight ends][norris-te]
+
+**Football case:** The existing projection combines in-line work, receiving movement and run-after-catch ability. Alongside Lewis, a credible second blocker could make 12 personnel useful on both run and pass downs. Stone's case must show where the extra receiver can align, how the quarterback identifies the answer, and what happens when the defense stays in its normal personnel.
+
+**First job and teaching owner:** Zernhelt teaches a bounded TE2 assignment: selected base blocks, releases and a small route menu alongside Lewis. Tice checks protection and run-game compatibility. Stone owns the calls that use the package. Motion, slot work and additional adjustments expand only after the initial job is dependable.
+
+**Best objection:** #33 may buy a more urgent defensive starter or a better overall prospect. A receiving package alone does not justify this price. Stone's familiarity with the position cannot serve as evidence that Kelce will learn quickly.
+
+**Required before the recommendation is actionable:** Finish medical and background diligence. Verify the existing board's suspension flag against a dated pre-draft source; do not infer an explanation, recurrence or clearance. Show the blocking case and compare Kelce directly with the strongest remaining defender and receiving alternative.
+
+**If the price is wrong:** Compare Zach Ertz's role and blocking requirements if available, or address another position and accept that Kelce may be gone later. A trade back requires acceptable compensation and willingness to lose him. Lewis keeps an earned role; this is not a prewritten replacement plan.
+
+### Keenan Allen, WR, California
+
+**Stone value:** Round 2, subject to medical confidence. Consider him in that round; #64 is a contingency if he remains available.
+
+**Public context:** Mayock #37 and Brandt #45. Allen's April workout followed a knee injury; medical uncertainty remained. [Mayock board][mayock] [Brandt board][brandt] [April workout report][allen-workout]
+
+**Football case:** The established preference is for route detail, body control, hands and intermediate separation. The proposed value is a dependable answer within the progression. Shorts and Blackmon remain part of the receiving plan subject to actual availability; Allen is not promised WR1 duties.
+
+**First job and teaching owner:** Drake chooses an initial alignment and a limited set of releases and route adjustments that fit the quarterback's reads. Evaluate timing, contested catches, blocking and ball security. Add alignments when the original work holds up.
+
+**Best objection:** The desired separation and movement must be usable at NFL speed. Medical uncertainty cannot be converted into a bargain by optimism, and adding Allen after Kelce means spending two early picks away from the defensive needs.
+
+**Change the recommendation if:** The medical assessment or functional projection does not support the price. Compare Robert Woods for the receiving job, and Quinton Patton later if appropriate; their Jacksonville grades remain open. If Allen is gone, reassess the whole board instead of forcing the next receiver.
+
+### Jordan Poyer, CB, Oregon State
+
+**Stone value:** Round 3–4. Put him into the live discussion at #64 and #98; #169 is only an unexpected-availability contingency.
+
+**Public context:** Mayock #85; the [class research](../../../../library/2013_draft_class.md) preserves the favorable recognition/technique assessment and athletic questions.
+
+**Football case:** The existing interest is in recognition and technique that might reduce coverage mistakes. Oden must show how those traits survive the actual coverage assignment. An instinctive player still needs enough movement and recovery ability for the job.
+
+**First job and teaching owner:** Begin the evaluation at corner. Oden and Crennel decide whether outside or nickel is the better initial assignment. Lowry separately evaluates return and coverage work. Safety remains a conditional cross-training idea, not the reason for the pick or a known future destination.
+
+**Best objection:** A player can understand a route and still lack the recovery margin to defend it. Do not answer that concern by assigning him another position without evidence.
+
+**Decision discipline:** Compare Poyer with the best remaining OL/front prospect during his graded range. If Stone chooses someone else, record that tradeoff and accept that Poyer may be gone. The plan must work without an assumed fall to Round 6.
+
+### David Bakhtiari, OL, Colorado
+
+**Stone value:** Late Round 3 / Round 4; a #98 candidate if available.
+
+**Public context:** Mayock #82. This supports keeping him in the Day 2 / early Day 3 conversation; it does not predict his selection. [Mayock board][mayock]
+
+**Football case:** The existing interest is guard competition with possible tackle depth. Yarno and Tice must test that projection instead of treating positional flexibility as already established.
+
+**First job and teaching owner:** Make left guard the first evaluation priority within this proposed plan; Yarno determines the initial practice position with Tice after assessment. Check anchor, hand placement, balance and protection exchanges. Retain a tackle-development option, with cross-training limited by readiness and available reps.
+
+**Best objection:** Moving inside does not automatically solve a strength or anchor concern. Teaching guard and both tackle spots at once could leave us without a dependable reserve anywhere.
+
+**If another player fits better:** Compare Larry Warford for the guard job and Brian Schwenke for the interior/center plan, at their own live-board values. Their inclusion here requests a comparison; it does not assign them Stone grades or promise availability.
+
+### Lavar Edwards, DE, LSU
+
+**Stone value:** Round 4–5; a #135 candidate if available.
+
+**Public context:** Billy Gomila's April 17 evaluation described useful size and length but raised consistency and pad-level concerns. Those are one evaluator's observations to investigate, not a Jacksonville finding about his character. [Contemporary Edwards evaluation][edwards]
+
+**Football case:** The existing projection is rotational end and base-down competition. Jacksonville needs useful snaps that preserve the run fit and rush lanes. That role has value without projecting a sack total.
+
+**First job and teaching owner:** Pleasant teaches the initial end assignment within Crennel's chosen front: leverage, block separation, edge responsibility and rush-lane control. Passing-down interior work is a later experiment if the matchup and physical assessment justify it.
+
+**Best objection:** A versatile description can conceal the absence of a dependable first role. Crennel's background does not automatically make Edwards a fit for every front or a replacement for the whole pass-rush need.
+
+**Change the recommendation if:** The film review cannot support consistent execution of the proposed job, or a better remaining front/DB prospect offers greater value. Lowry must identify any special-teams contribution separately.
+
+## 4. Live-pick decisions
+
+The selection labels below are retained from the existing planning board. Before use, Caldwell's personnel staff must verify ownership and exact slots against the branch's draft order, tie rotations, compensatory selections and completed trades. This memo is not a second pick ledger.
+
+At every pick, compare the best available football value with the actual roster, medical status and teaching capacity. Within comparable grades, prefer the role that helps this roster more. Need alone does not promote a lower grade.
+
+| Planning selection | Stone's recommendation | Alternative decision if the target is absent or the case fails |
+|---|---|---|
+| #2 | Johnson within the top-tackle group; keep Monroe at LT. | Compare Fisher/Joeckel and the defensive-front cluster. Consider only real trade offers; retain the independent QB review. |
+| #33 | Hear the Kelce case against the strongest remaining overall grade. Allen belongs in the Round 2 discussion if medically supportable. | Consider front/secondary help, or another offensive prospect whose grade and role justify the cost. Compare Ertz only on his own merits. |
+| #64 | Allen if available and supportable. Begin Poyer's graded-range discussion. | Compare remaining front/DB and interior-OL value. Do not make this an obligatory receiver pick. |
+| #98 | Compare Bakhtiari and Poyer if available, with current roster needs visible. | Use the remaining board. Revisit center continuity, front depth and other graded players rather than assuming both targets can be collected. |
+| #135 | Edwards if his first role is convincing and the grade holds. | Compare DB/front depth and Spencer's remaining RB values. Reassess which reserves can contribute on game day. |
+| #169 | Poyer only if unexpectedly still available; investigate why the evaluation or market differs. | Best remaining supported grade, with DB/front depth and special-teams roles considered. |
+| #208 | Use only if still owned. It appears in the conditional Cousins opening framework. | If no trade closes before the selection, use the live board. Do not draft a named follow-list player without an actionable evaluation. |
+
+The [Cousins framework](../../trades/trade_targets.md) permits #208 in the opening conditional package. At Stone's alternative ceiling of a flat 2014 second, #208 comes out. This board does not increase either offer.
+
+### Comparisons the staff must bring, beyond Stone's favorites
+
+These are candidates from the existing [class research](../../../../library/2013_draft_class.md), not a new ranked Jacksonville board or a prediction that they will reach a given pick.
+
+| Decision | Additional comparison | Required coaching answer |
+|---|---|---|
+| Receiving value | Zach Ertz; Robert Woods; Quinton Patton | Which receiving job is actually missing, what blocking/protection duty accompanies it, and what would we stop doing to give this player reps? |
+| Interior protection | Larry Warford; Brian Schwenke | Is the greater need a guard who can hold the pocket, center continuity, or reserve flexibility? Judge functional movement and anchor for that job. |
+| Front-seven value | Kawann Short; Arthur Brown; Sio Moore | Which run-fit, rush or coverage assignment improves, and is the player supplementing or competing with an incumbent? Crennel, Pleasant and Bush supply the role case. |
+| Secondary value | Jamar Taylor; Blidi Wreh-Wilson; John Cyprien | Which coverage and tackling requirements justify the grade? Oden and Crennel compare the actual role with Poyer's rather than treating all defensive backs as interchangeable. |
+
+If the live board presents a clearly better player outside these names, Caldwell's scouting board remains controlling. This memo is a coaching recommendation subset, not the complete eligible pool.
+
+## 5. Follow list and staff deliverables
+
+| Player | Current status | What would make the next action reasonable |
+|---|---|---|
+| A.J. Bouye, CB, UCF | **FOLLOW ONLY.** Existing late-round / priority-free-agent contingency; no new actionable grade established here. | Scouting supplies an eligible, dated packet; Oden identifies an initial coverage role and Lowry evaluates game-day utility. A post-draft approach requires him to be undrafted and available. |
+| Adam Thielen, WR, Minnesota State | **LOW-CONFIDENCE REGIONAL FOLLOW.** No actionable draft grade. | Obtain the actual regional/workout report available to Jacksonville at the time. Drake and Lowry assess a football role. Consider a post-draft contract or tryout only if he remains available and the evidence supports it. |
+
+Neither player is a predetermined signing or roster success.
+
+Before Caldwell is asked to act, each serious recommendation needs the following contributions. These are requested deliverables, not invented reports or unanimous endorsements.
+
+| Owner | Deliverable to Stone and Caldwell |
+|---|---|
+| Caldwell / college scouting | Eligibility, overall grade, source dates, actual pick inventory and strongest remaining alternatives. Keep public ranking separate from the club's evaluation. |
+| Tice / Yarno | OL first position, protection and run-game fit, most important technical correction, likely need for help and realistic cross-training load. |
+| Bates / Tice / Stone | QB translation and development plan; incumbent rep allocation; evidence that would distinguish a starter investment from a reserve investment. |
+| Zernhelt / Tice / Stone | Kelce-versus-alternative role comparison, Lewis coexistence, blocking burden and whether the proposed receiving package warrants the price. |
+| Drake | Initial WR alignment and assignments, route/coverage adjustments, and how the player complements the available receivers. |
+| Spencer | RB protection, receiving and workload role; why a veteran addition changes urgency without closing the board. |
+| Crennel / Pleasant / Bush / Oden | The relevant defender's first assignment, effect on the other defenders, failure modes and teaching plan. Crennel owns the defensive structure. |
+| Lowry | Specific special-teams assignment, evidence for it and the practice time needed. Reserve value is not established by writing "teams" beside a name. |
+| Medical staff | Medical assessment and permitted limitations through authorized channels. Coaches do not supply a diagnosis or waive a restriction. |
+| Stone | Final coaching recommendation, strongest objection, opportunity cost and the development work the staff accepts. State where he differs from scouting or an assistant. |
+
+A useful disagreement must be specific: readiness, role, medical uncertainty, grade, price or opportunity cost. Do not invent dissent for drama or erase it to make the staff appear aligned.
+
+## 6. Evidence and use boundaries
+
+The [authority canon](../../../../foundation/03_Head_Coach_Organization_and_Authority_Canon.md), [Stone dossier](../../../../library/alex_stone_character_dossier_pre_hire.md), [staff responsibilities](../../coaching_staff.md), Prowl documents and roster evaluation govern the coaching interpretation. This memo does not promote an interview-only offensive preference into permanent canon or claim access to an unprovided playbook.
+
+The [draft-class library](../../../../library/2013_draft_class.md), [eligibility registry](../../../../library/2013_draft_pool_registry.md) and [information gates](../../../../library/2013_draft_information_gates.md) govern historical inputs. Public ranks are attributed opinions; they are not pick forecasts, Jacksonville grades or proof of medical clearance. A listed diligence item stays open until the relevant packet is recorded.
+
+Contemporary checks retain the disagreement between Mayock's Kelce ranking and Norris's position ranking/round projection, and verify the listed Mayock ranks against the pre-draft board. The Edwards source is a single contemporary assessment, not independently established consensus. The old Bakhtiari results-tracker citation has been removed; its unsupported precise projection is not carried forward as verified fact.
+
+Do not use actual 2013 selections, later destinations or later NFL performance to select, downgrade or convert a player. Do not borrow later information from sidebars or updated player pages. Coaches may recommend; Caldwell may disagree. Editing this board executes no transaction and promises no depth-chart position.
+
+[mayock]: https://www.nfl.com/news/2013-nfl-draft-mike-mayock-s-top-100-prospects-0ap1000000161676
+[brandt]: https://www.nfl.com/news/hot-100-25-luke-joeckel-ziggy-ansah-still-top-2013-draft-class-0ap1000000162920
+[norris-te]: https://www.nfl.com/news/2013-nfl-draft-tyler-eifert-travis-kelce-top-tight-end-rankings-0ap1000000159180
+[allen-workout]: https://www.nfl.com/news/keenan-allen-clocks-4-71-in-40-mayock-doesn-t-care-0ap1000000158580
+[edwards]: https://www.andthevalleyshook.com/2013/4/17/4229008/lsu-football-2013-nfl-draft-profiles-lavar-edwards
