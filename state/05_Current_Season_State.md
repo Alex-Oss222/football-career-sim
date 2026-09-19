@@ -18,7 +18,7 @@
 | Document 1 | `697208640886f9f63581f4b865f917f16007f036` | Project instructions unchanged |
 | Document 2 | `4dcdaa9bb3812ffe47b1bc7007dda73204cbc170` | 2013 rules/sourcebook unchanged by this correction |
 | Document 3 | `9538b8e4831eba1a407c394a37c21972f8b8e290` | Stone/Jacksonville authority map unchanged |
-| Document 4 | `JAX-2013-MAY05-CONTROL-RECON-2`; branch content `ce2bb7dbcd1dc27e2970c78ef9491a908c3b320d` | 64-player current control, contracts and cap reconciliation |
+| Document 4 | `JAX-2013-MAY05-CONTROL-RECON-2`; branch content `027f793aca2a90400f53302473888e7b8601fc58` | 64-player current control, contracts and cap reconciliation |
 | Document 6 | 2013 ledger through Entry 9 | Correction/supersession authority |
 
 ## 1. Master clock and competition position
