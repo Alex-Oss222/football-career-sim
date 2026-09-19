@@ -8,6 +8,13 @@
 **Offensive scheme authority:** `../../../playbook/alex_stone_2013_offensive_playbook_iteration_i.md` only.  
 **Calendar boundary:** Jacksonville's exact 2013 offseason-program and OTA dates must be researched before the simulation advances through them.
 
+## Player playbook access and evidence rule
+
+Every participant may possess and study the **complete active 2013 Iteration I playbook**. The phase plan controls what the staff formally installs, practices, and evaluates together; it does not ration access to pages. A player may read ahead and ask about later material. He is evaluated on what has actually been assigned and taught for the phase.
+
+No preset personnel percentage, snap share, rep quota, touch quota, or depth-chart probability determines the result of this phase. Reps and roles are adjusted from football evidence: assignment, communication, technique, physical execution, health, correction retention, matchup, special teams, and what the player demonstrates in practices and games. The plan creates opportunities to evaluate; it does not manufacture the answer.
+
+
 This plan covers the progression from the official offseason program into OTAs. If Jacksonville separately uses the additional veteran minicamp available to a new-head-coach club, its work is governed by the same teaching framework and the applicable CBA restrictions. Do not invent a date or treat an optional window as mandatory.
 
 ## 1. Purpose of the offseason program
