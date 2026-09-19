@@ -8,11 +8,28 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
 from . import KERNEL_VERSION, SCHEMA_VERSION
+from .packets import canonical
 
 DEFAULT_URL="http://127.0.0.1:8765"
 DEFAULT_TOKEN_FILE="/run/secrets/football-career-sim-engine-token"
+READINESS_CLOSE_CANARY_CONTRACT="event-close-canary-v2"
 
 class PrivateRuntimeUnavailable(RuntimeError): pass
+
+def _readiness_close_packet(snapshot,kernel):
+    """Build a versioned administrative closure canary.
+
+    The event identity is derived from the canonical canary payload itself, so a
+    future canary schema/contract change cannot collide with an older frozen
+    administrative event in the persistent journal.
+    """
+    body={"administrative":True,
+          "contract":READINESS_CLOSE_CANARY_CONTRACT,
+          "kernel":kernel,
+          "snapshot":snapshot,
+          "type":"readiness-close-probe"}
+    event_id="__readiness_close_probe__:"+hashlib.sha256(canonical(body)).hexdigest()
+    return {"event_id":event_id,**body}
 
 class Client:
     def __init__(self,url=None,token=None,token_file=None,snapshot=None):
@@ -34,7 +51,20 @@ class Client:
         if body is not None: data=json.dumps(body,separators=(",",":")).encode(); headers["Content-Type"]="application/json"
         try:
             with urlopen(Request(self.url+path,data=data,headers=headers),timeout=3) as r: return json.load(r)
-        except (OSError,HTTPError,URLError,json.JSONDecodeError) as e: raise PrivateRuntimeUnavailable("private runtime probe failed closed") from e
+        except HTTPError as e:
+            detail=None
+            try:
+                payload=json.loads(e.read().decode("utf-8"))
+                if isinstance(payload,dict) and isinstance(payload.get("error"),str):
+                    detail=payload["error"].strip()
+            except (OSError,UnicodeDecodeError,json.JSONDecodeError):
+                pass
+            suffix=f": {detail}" if detail else ""
+            raise PrivateRuntimeUnavailable(
+                f"private runtime {path} failed closed (HTTP {e.code}{suffix})"
+            ) from e
+        except (OSError,URLError,json.JSONDecodeError) as e:
+            raise PrivateRuntimeUnavailable(f"private runtime {path} failed closed") from e
     def readiness(self):
         health=self._request("/health")
         if health.get("schema")!=SCHEMA_VERSION or health.get("kernel")!=KERNEL_VERSION:
@@ -49,14 +79,9 @@ class Client:
                 first.get("journal_fingerprint")==second.get("journal_fingerprint")):
             raise PrivateRuntimeUnavailable("private runtime administrative probe is not idempotent")
         # Exercise the same authenticated transport and immutable event journal
-        # used by a real game.  The reserved identity is private administration,
-        # not a career event, and is stable for a snapshot/kernel pair.
-        probe_id="__readiness_close_probe__:"+hashlib.sha256(
-            (data["snapshot"]+":"+data["kernel"]).encode()
-        ).hexdigest()
-        packet={"administrative":True,"event_id":probe_id,
-                "kernel":data["kernel"],"snapshot":data["snapshot"],
-                "type":"readiness-close-probe"}
+        # used by a real game. The reserved identity is derived from the whole
+        # versioned canary payload, so older frozen canaries cannot conflict.
+        packet=_readiness_close_packet(data["snapshot"],data["kernel"])
         close_first=self.close_event(packet)
         close_second=self.close_event(packet)
         if not (isinstance(close_first,str) and close_first and close_first==close_second):
