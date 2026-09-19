@@ -4,7 +4,7 @@
 
 **Status:** IN PROGRESS through the end of the August 8 final walkthrough; camp continues after Preseason Game 1.
 **Evidence summary:** [Standouts](standouts.md).
-**Current boundary:** Miami at Jacksonville on August 9 remains NOT STARTED.
+**Current boundary:** Training camp and the complete four-game preseason evaluation block are closed through September 4.
 
 ## July 22-24 — rookie and quarterback report/acclimation
 
@@ -88,7 +88,21 @@ The quarterback usage plan for Miami is evaluative: Cousins opens, Henne follows
 
 The staff knows what it needs from Miami: Cousins/Henne operation under unscripted pressure; right-guard and tackle physical/communication transfer; Anderson's protection and special teams; Kelce's bounded role; Thielen's receiver/ST portability; Moore's fit/pressure discipline; Poyer's nickel/outside communication; Rambo's safety/teams operation; and emergency substitutions across all units. Players whose menu was narrowed will be judged on the assigned work rather than on material withheld from them.
 
-Training camp remains in progress after this checkpoint. The controlled roster is 64; no transaction or cap event occurred. All 64 are currently available for assigned football work, subject to fresh game-day medical communication. The May 5 Top-51 planning authority remains approximately $7.0M-$7.4M.
+At the August 8 checkpoint, training camp remained in progress, the controlled roster was 64 and no transaction or cap event had occurred. All 64 were then available for assigned football work, subject to fresh game-day medical communication. The May 5 Top-51 planning authority then remained approximately $7.0M-$7.4M.
 
 **Last completed event:** August 8 final walkthrough.
-**Next event:** August 9 Preseason Game 1 vs Miami. **The game has NOT STARTED.**
+**Next event at that checkpoint:** August 9 Preseason Game 1 vs Miami; the game had not started.
+
+## August 9-September 4 — preseason integration and camp closeout
+
+Jacksonville completed the four privately committed production-runtime games at **2-2**: Miami 17 at Jacksonville 33; Jacksonville 17 at the Jets 24; Philadelphia 31 at Jacksonville 20; and Jacksonville 33 at Atlanta 27. The scores and evidence were generated in this branch and were not historical imports.
+
+The August 12 padded practice used the Miami protection and turnover cutups: Explain → Show → Walk → Rep → Correct → Rep again. August 13 retested substitution, huddle and coverage exchange; August 14 added lawful physical pressure only after the corrections held; August 15 reduced to walkthrough speed and closed camp. Quality-control and graduate-assistant support isolated quarterback decisions, protection leverage, route spacing, run fits, coverage exchanges and special-teams substitutions into targeted teaching segments. Recovery and voluntary family/personal time remained ungraded.
+
+Cousins' Game 1 turnover was corrected; his clean operation in Games 2-3, combined with the full camp record, earned the regular-season QB1 role after Game 3. Henne is QB2. Wilson's clean final-game work earned QB3 over Bray; Bray's late Game 4 turnover did not erase his development but did not overcome Wilson's cumulative operation.
+
+Johnson earned right tackle and Rackley right guard, with Bradfield the swing tackle and Pasztor retained as interior reserve while independently medically held. Thielen's repeated assignment-correct routes and multi-unit coverage communication earned WR3/teams work. Kelce earned TE2 movement/route and teams work behind Lewis; Anderson and Grimes earned complementary back/teams roles behind Jones-Drew.
+
+Crennel retained Miller/Marks inside, Babin on the edge, Posluszny/Smith at linebacker, Grimes/Ball outside, Poyer at nickel and Lowery/Rambo at safety. Ryan Davis earned rotational rush work. Mosley remained on the active roster but medically unavailable after the Atlanta injury; Smith cleared his short restriction before September 4. Lowry retained Trawick, Rambo, Thielen, Anderson, Poyer, Prosinski, Allen and Bouye in defined core/backup coverage responsibilities.
+
+No Aug. 27 cut was required because Jacksonville controlled 64 players. Caldwell accepted Stone's football recommendations and reduced the roster to 53 on Aug. 31. Waivers and an eight-player practice squad closed Sept. 1; regular-season accounting closed Sept. 4.

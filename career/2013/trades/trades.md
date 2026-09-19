@@ -35,6 +35,6 @@ No Jacksonville draft-day trade closed. All seven 2013 selections remained with 
 
 ## Accounting reconciliation pointer, entered September 19, 2026
 
-The unresolved accounting statements above describe the trade-close record at that time. [Season-ledger Entry 9](../ledger.md#entry-9--may-5-roster-contract-cap-and-calendar-correction) subsequently reconciled Jacksonville's planning treatment. Use the [current Top-51 worksheet](../offseason/current_cap_worksheet.md#5-pre-draft-trades) for the Cousins transfer, Gabbert acceleration and incoming C.J. Wilson charge. The initial cap sheet is a historical baseline.
+The unresolved accounting statements above describe the trade-close record at that time. [Season-ledger Entry 9](../ledger.md#entry-9--may-5-roster-contract-cap-and-calendar-correction) subsequently reconciled Jacksonville's planning treatment. Use the [current Top-51 worksheet](../offseason/current_cap_worksheet.md) for the Cousins transfer, Gabbert acceleration and incoming C.J. Wilson charge. The initial cap sheet is a historical baseline.
 
 This pointer does not invent either trade's exact execution timestamp or Washington's and Green Bay's complete private accounting. Jacksonville's 2014 second-round selection remains transferred to Washington. No transaction is rerun by this administrative correction.
