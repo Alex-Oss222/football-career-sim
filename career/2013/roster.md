@@ -1,8 +1,8 @@
-# Jacksonville Jaguars: roster through the 2013 NFL Draft
+# Jacksonville Jaguars: roster through the post-draft 2013 signing wave
 
-**As of:** April 27, 2013, after selection #208.
-**Sources:** [Completed signings and releases](offseason/free_agency/signings.md); [2013 draftees](offseason/draft/draftees.md); [season ledger](ledger.md).
-**Register:** [Canonical player records](../../state/04_Roster_and_Staff_Register.md), version `JAX-2013-FA-ROSTER-1`.
+**As of:** Post-draft 2013, after the four-player UDFA signing wave and before rookie minicamp.
+**Sources:** [Completed signings and releases](offseason/free_agency/signings.md); [completed trades](trades/trades.md); [2013 draftees](offseason/draft/draftees.md); [UDFA signings](offseason/draft/udfa_signings.md); [season ledger](ledger.md).
+**Register:** [Canonical player records](../../state/04_Roster_and_Staff_Register.md), version `JAX-2013-POSTDRAFT-ROSTER-1`.
 
 ## What changed
 
@@ -32,7 +32,7 @@ Re-signing Meester and Smith does not add two more people. **63 is a working inv
 
 The batch adds $13.75M of scheduled 2013 cap charges and $6.75M for 2014. Remaining planning room is approximately $8.35M before unresolved baseline, Top-51 and release adjustments. Full cash, guarantees and exit exposure are in the [signing ledger](offseason/free_agency/signings.md).
 
-## Working inventory by position
+## March 12 working inventory by position (historical baseline)
 
 Alphabetical within each position; this ordering assigns no depth, starter or package role. **Confirmed** refers only to an executed agreement in this batch. **Carry-forward** means January inventory only, with current rights/contract control awaiting reconciliation.
 
@@ -124,11 +124,21 @@ Bennett and Forsett are declined pursuits, not departures from Jacksonville. The
 
 Miller and Marks add interior options; Ball and Grimes add secondary competition; Meester and Smith return on new deals. Those transaction effects do not certify a solved position need or guarantee a starting job. Caldwell retains personnel and contract authority; Stone controls football roles within medical and eligibility limits.
 
-The [coaching staff](coaching_staff.md) remains the already-hired staff. This preserved March 12 subsection records no practice, installation, or later transaction; the April 27 draft-rights update follows.
+The [coaching staff](coaching_staff.md) remains the already-hired staff. This preserved March 12 subsection is the transaction-reconciled veteran baseline; the later pre-draft trades, draft additions, and post-draft signings follow.
+
+## Pre-draft quarterback/front transactions
+
+| Pos. | Player | Transaction | Current control / football limit |
+|---|---|---|---|
+| QB | Kirk Cousins | Acquired from Washington for Jacksonville's 2014 second | Jacksonville contract rights transferred; open QB competition, no starting guarantee |
+| QB | Blaine Gabbert | Traded to Green Bay | Removed from Jacksonville working inventory |
+| DE | C.J. Wilson | Acquired from Green Bay for Gabbert | Jacksonville contract rights transferred; defensive-front rotation competition, no starting guarantee |
+
+The March 12 working inventory of 63 moves to **64** after the pre-draft transactions: Cousins adds one player, while the Gabbert/Wilson exchange is net zero. All seven 2013 selections remain Jacksonville property. The 2014 second is no longer Jacksonville draft capital.
 
 ## April 27 draft-rights additions
 
-The March 12 inventory above remains the transaction-reconciled veteran baseline. Jacksonville subsequently exercised all seven selections; no pre-draft or draft-day trade changed the veteran inventory. These players are additions by draft rights, not claims that rookie contracts have been signed.
+Jacksonville exercised all seven selections. These players are additions by draft rights, not claims that rookie contracts have been signed.
 
 | Pos. | Player | Acquisition | Current control / football limit |
 |---|---|---|---|
@@ -140,10 +150,23 @@ The March 12 inventory above remains the transaction-reconciled veteran baseline
 | S | Bacarri Rambo | Selected #169 | Jacksonville draft rights; unsigned. Begins with one safety role plus special-teams evaluation. |
 | QB | Tyler Bray | Selected #208 | Jacksonville draft rights; unsigned. Developmental competition entry; no depth position promised. |
 
-| April 27 working reconciliation | Count |
+The working inventory moves from **64 to 71** after the seven draft-rights additions.
+
+## Post-draft UDFA signings
+
+| Pos. | Player | School | Current control / football limit |
+|---|---|---|---|
+| S | Brynden Trawick | Troy | Signed as an undrafted rookie; safety/special-teams competition, no roster guarantee |
+| CB | A.J. Bouye | UCF | Signed as an undrafted rookie; corner/special-teams competition, no starting guarantee |
+| WR | Adam Thielen | Minnesota State | Signed as an undrafted rookie; receiver/special-teams competition, no roster guarantee |
+| RB | C.J. Anderson | California | Signed as an undrafted rookie; running-back competition, no workload guarantee |
+
+| Post-draft working reconciliation | Count |
 |---|---:|
 | March 12 working inventory | 63 |
+| Net pre-draft trade activity | +1 |
 | Draft-rights additions | +7 |
-| Current working inventory | **70** |
+| UDFA signings | +4 |
+| Current working inventory | **75** |
 
-The **70** figure is not an active-roster declaration and does not cure the veteran control gaps described above. The draft additions carry no booked salary-cap charge until their contracts execute. Gabbert and Henne remain after the unsuccessful market check; Cousins was not acquired.
+The **75** figure is an offseason working inventory, not an active-roster declaration. Exact Cousins/Wilson/Gabbert trade accounting, draft contracts, UDFA bonuses/guarantees, Top-51 displacement, and inherited release effects remain unresolved. The approximately $8.35M figure is therefore only the pre-trade post-free-agency planning reference, not a certified current cap-space figure.

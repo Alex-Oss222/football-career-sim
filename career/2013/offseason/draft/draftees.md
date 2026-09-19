@@ -15,7 +15,7 @@
 | April 27 | #98 | Sio Moore | OLB | Connecticut | David Bakhtiari was selected before Jacksonville returned to the clock. Caldwell preferred Moore's supported blitz/coverage range to forcing the next offensive lineman. Romeo Crennel and Melvin Pleasant must give him one initial linebacker assignment before expanding his rush or coverage menu. |
 | April 27 | #135 | Lavar Edwards | DE | LSU | Caldwell accepted Stone's rotational-end case at the planned price. Pleasant owns leverage, block separation, edge responsibility, and rush-lane work; an interior passing-down role is only a later experiment. |
 | April 27 | #169 | Bacarri Rambo | S | Georgia | Caldwell used the best remaining supported secondary value after the front and offensive-line comparisons thinned. Oden begins with one safety role and Lowry evaluates special-teams use. Rambo's documented college suspension stays in the availability/accountability review and is not generalized into a private personality judgment. |
-| April 27 | #208 | Tyler Bray | QB | Tennessee | Caldwell used the final selection on a developmental quarterback rather than manufacture a veteran trade. Bray's arm talent justified a late evaluation opportunity; his footwork, decisions, and consistency remain open football questions. Greg Bates establishes the baseline under the same standards as Gabbert and Henne. No roster spot, depth position, or future starting role is promised. |
+| April 27 | #208 | Tyler Bray | QB | Tennessee | Caldwell used the final selection on a developmental quarterback behind the newly acquired Cousins competition and Henne's veteran insurance. Bray's arm talent justified a late evaluation opportunity; his footwork, decisions, and consistency remain open football questions. Greg Bates establishes the baseline under the same standards as Cousins and Henne. No roster spot, depth position, or future starting role is promised. |
 
 ## Live-board availability and autonomous league action
 
@@ -33,10 +33,15 @@ This is the availability record needed to adjudicate Jacksonville's choices, not
 
 ## Draft-day trade record
 
-No Jacksonville draft-day trade closed. Caldwell heard the market at each turn, but no proposal compensated the club for leaving the best available choice on its own board. Jacksonville neither acquired nor surrendered a player or selection.
+No Jacksonville draft-day trade closed. The Cousins and Gabbert/Wilson transactions were completed before the draft and did not use a 2013 selection. Caldwell heard the draft-day market at each turn, but no proposal compensated the club for leaving the best available choice on its own board. Jacksonville therefore exercised all seven selections.
 
 ## Contract, roster, and medical limits
 
 These selections add exclusive negotiating rights and rookie roster entries; they do not invent signed contract terms, guarantees, cap charges, medical clearance, or depth-chart wins. Exact rookie contracts and Top-51 displacement are booked only when agreements execute. Public pre-draft medical or conduct information remains a diligence input; Jacksonville's private medical conclusions are not invented here.
 
 **Contemporaneous evidence:** `library/2013_draft_class.md` (April 24 pre-selection snapshot), `library/2013_draft_pool_registry.md` (eligibility), and `library/2013_draft_information_gates.md` (release-date controls). **Jacksonville recommendation:** `player_draft_board.md`. **Ex-ante packet:** `career/2013/ledger.md`, Entry 4.
+
+
+## Post-draft rookie free agents
+
+Jacksonville's user-authorized undrafted signing class is recorded separately in udfa_signings.md. Those signings do not retroactively change the seven selections above.

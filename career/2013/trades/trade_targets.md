@@ -173,36 +173,28 @@ Evidence treatment:
 
 ## 8. Pre-draft market check (March 12-April 24 window) — resolved
 
-**Decision record:** The terms and uncertainty were frozen before these calls in `career/2013/ledger.md`, Entry 4. Caldwell made every authorized inquiry. The responses below are simulation events, not claims about conversations that occurred in real life.
+**Decision record:** The terms and uncertainty were frozen before the calls in career/2013/ledger.md, Entry 4. The accepted outcomes below are simulation canon. They are not claims about conversations that occurred in real life.
 
 ### Washington — Kirk Cousins
 
-Washington would discuss Cousins, but it rejected both authorized structures. Its response was that a 2013 Day 2 selection had to lead any package; it would not substitute a future second or accept the conditional #208-plus-future-pick construction while Griffin's availability remained uncertain. Washington did not grant Jacksonville permission to speak with Cousins.
+Washington accepted Jacksonville's already-authorized **2014 second-round selection outright** for Kirk Cousins. Jacksonville did not add #33, #64, #98, #208, a 2014 first, or any other compensation. Because the outright structure contains no playing-time condition, the 2014 second transfers to Washington without a snap or start trigger.
 
-Caldwell declined to add #33 or #64, ended the inquiry, and kept the 2014 second. Stone's required franchise-quarterback consultation occurred: he maintained that the development case did not justify breaking the written ceiling and agreed that a current premium selection would take too much from the roster build. **Result: no offer accepted and no Cousins trade.**
+Caldwell completed the franchise-quarterback consultation required by the authority map before execution. Stone maintained the development case recorded above and accepted the opportunity cost of the future second while preserving every 2013 selection. **Result: Kirk Cousins is acquired; Jacksonville's 2014 second is transferred to Washington.**
 
-### Blaine Gabbert market
+### Blaine Gabbert — Green Bay counter
 
-| Club called | Actual response in this branch | Jacksonville disposition |
+After Cousins was acquired, Caldwell continued the Gabbert market check. Green Bay would not meet Jacksonville's preferred future-pick return but offered defensive end **C.J. Wilson** as a direct player-for-player exchange. Caldwell and Stone treated Wilson as comparable defensive-front depth rather than as a guaranteed starter. Jacksonville accepted the roster-value swap.
+
+| Jacksonville sends | Jacksonville receives | Draft-capital effect |
 |---|---|---|
-| Green Bay | No bid. The club would review veteran depth later but would not assume Gabbert's contract for the requested compensation. | Inquiry closed. |
-| Atlanta | No bid; it did not see enough need behind its established starter to spend a future selection and take on the contract. | Inquiry closed. |
-| Cincinnati | No bid. It preferred to preserve its existing quarterback plan rather than pay Jacksonville's price. | Inquiry closed. |
-| Chicago | Expressed only conditional interest if Jacksonville absorbed value through a pick swap; it offered no standalone future selection. | Caldwell declined to develop a structure outside the authorized board. |
+| QB Blaine Gabbert | DE C.J. Wilson | None |
 
-No club offered the requested 2014 fifth or the permitted conditional sixth-to-fifth. **Result: Gabbert remains a Jaguar.**
+**Result: Gabbert becomes Green Bay property and Wilson becomes Jacksonville property.** Exact transferred-contract and cap effects remain subject to the cap ledger rather than being inferred from listed cap hits.
 
-### Chad Henne market
+### Chad Henne
 
-| Club called | Actual response in this branch | Jacksonville disposition |
-|---|---|---|
-| Green Bay | Offered a conditional 2014 seventh, payable only if Henne met an agreed playing-time threshold. | Below the board's permitted range; declined. |
-| Atlanta | No bid. | Inquiry closed. |
-| Cincinnati | No bid; it would not spend a selection for the veteran contract. | Inquiry closed. |
-| Chicago | Would revisit after the draft but made no present offer. | Logged as no bid, not as an agreement or promise. |
-
-The lone proposal was weaker than a sixth and did not compensate Jacksonville for surrendering its preferred veteran insurance. **Result: Henne remains a Jaguar.**
+With Cousins acquired and Gabbert moved, Caldwell closed the outbound Henne market and retained Henne as veteran quarterback insurance. No Henne trade is completed and no future pick is booked from the earlier exploratory calls.
 
 ### Closed Phase 1 result
 
-Jacksonville carries Gabbert and Henne into the draft. Cousins remains under Washington's control. No player, selection, contract, or cap charge changed, so `trades.md` records no completed transaction and the roster/cap ledgers require no Phase 1 numerical adjustment. A future call requires a new football or market event; these declined inquiries are not standing offers.
+Jacksonville enters the draft with Cousins, Henne, and Jordan Palmer in the veteran quarterback room, plus C.J. Wilson added to the defensive front. Gabbert is no longer a Jaguar. Jacksonville still owns all seven 2013 selections, while its 2014 second belongs to Washington. Completed transactions are recorded in trades.md; contract and cap uncertainty remains in offseason/initial_cap_sheet.md.
