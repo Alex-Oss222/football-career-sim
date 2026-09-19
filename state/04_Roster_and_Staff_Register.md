@@ -5,7 +5,7 @@
 - Function: Canonical register for current Jacksonville player control, staff operating authority, roster legality, contract/cap reconciliation, availability boundaries and football-role state.
 - Current status: **RECONCILED THROUGH MAY 23 OTA DAY**.
 - Effective through: **May 23, 2013, after OTA Day 6**.
-- Progression authority: `career/2013/ledger.md`, Entry 12.
+- Progression authority: `career/2013/ledger.md`, Entry 13 administrative reconciliation; Entry 12 remains the latest football event.
 - Detailed readable roster: `career/2013/roster.md`.
 - Current cap worksheet: `career/2013/offseason/current_cap_worksheet.md`.
 - Current calendar: `career/2013/calendar.md`.
@@ -23,10 +23,10 @@
 | Divergence point | January 15, 2013 — Alex Stone accepts Jacksonville head-coach offer |
 | Season phase | Offseason; May 23 OTA Day 6 complete; June 4-7 OTA block 3 not begun |
 | Owned content effective | May 23, 2013 |
-| Document 4 register version | `JAX-2013-MAY23-OTA6-STATE-5` |
-| Supersedes | `JAX-2013-MAY21-OTA2-STATE-4` |
-| Last content-changing checkpoint | `Canonical update - May 23, 2013 - OTA Day 6 closed` |
-| Latest Document 6 event | 2013 season ledger Entry 12 |
+| Document 4 register version | `JAX-2013-MAY23-ADMIN-STATE-6` |
+| Supersedes | `JAX-2013-MAY23-OTA6-STATE-5` |
+| Last content-changing checkpoint | `Canonical correction - May 23, 2013 - repository continuity and readiness reconciled` |
+| Latest Document 6 event | Entry 13 administrative correction; Entry 12 last football event |
 | Current controlled players | **64** |
 | Current offseason open places | **26 of 90** |
 | Current May 5 Top-51 planning room | **~$7.0M-$7.4M** |
@@ -111,7 +111,7 @@ These rules apply to every real player, staff member, executive, candidate, oppo
 | Persons under team control | **64** | Corrected Jan. 15 control 67; rights expirations; branch releases/additions/trades; seven drafted contracts; four UDFA contracts |
 | Open offseason roster places | **26** | 90 - 64 |
 
-No game-day active/inactive subset applies at the current May 5 offseason checkpoint.
+No game-day active/inactive subset applies at the current offseason checkpoint.
 
 ### Financial, contract and eligibility reconciliation
 
@@ -150,7 +150,7 @@ Staff remains unchanged from the closed late-January hiring phase. `career/2013/
 
 ## Jacksonville current transaction reconciliation
 
-**Current progression source:** [Season ledger, Entry 12](../career/2013/ledger.md), checkpoint `Canonical update - May 23, 2013 - OTA Day 6 closed`.
+**Current progression source:** [Season ledger, Entry 13](../career/2013/ledger.md#entry-13--repository-continuity-and-readiness-reconciliation), checkpoint `Canonical correction - May 23, 2013 - repository continuity and readiness reconciled`. Entry 12 remains the source of the latest football evidence.
 **Readable roster:** [career/2013/roster.md](../career/2013/roster.md).
 **Current cap worksheet:** [career/2013/offseason/current_cap_worksheet.md](../career/2013/offseason/current_cap_worksheet.md).
 **Current calendar:** [career/2013/calendar.md](../career/2013/calendar.md).
@@ -697,7 +697,7 @@ This table is generated from Document 6 and is only a navigation aid. Active unr
 ## End-of-update control block
 
 - Effective through: May 23, 2013, OTA Day 6 closed; June 4-7 OTA block 3 not begun.
-- Document 4 register version: `JAX-2013-MAY23-OTA6-STATE-5`.
+- Document 4 register version: `JAX-2013-MAY23-ADMIN-STATE-6`.
 - Last content-changing update / global package checkpoint: `Canonical update - May 23, 2013 - OTA Day 6 closed`.
 - Latest source event: season-ledger Entry 12.
 - Current controlled-player count: **64**.

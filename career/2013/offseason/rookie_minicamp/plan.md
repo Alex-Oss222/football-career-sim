@@ -1,6 +1,6 @@
 # Jacksonville Jaguars — 2013 Rookie Minicamp Plan
 
-**Status:** DURABLE PLAN — EXECUTED MAY 3-5, 2013; retained unchanged as the governing plan for the completed event.  
+**Status:** DURABLE PLAN. Execution status and observations belong in [output.md](output.md) and [standouts.md](standouts.md).
 **Event owner when run:** `career/2013/offseason/rookie_minicamp/output.md`.  
 **Framework:** `../player_onboarding_and_development_framework.md`.  
 **Readiness/CBA authority:** `../the_prowl_player_readiness_standard.md`.  

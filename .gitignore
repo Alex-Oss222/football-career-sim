@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
+.coverage
+
+# Defense in depth only. Ignoring a file does not make it private.
+engine_state/
+*.secret

@@ -1,6 +1,6 @@
 # Document 7: Game Simulation and Resolution Engine
 
-**Document status:** Design approved, runtime NOT READY. The engine architecture and hidden-layer approach are locked, but the private Engine State store has not yet been instantiated for an active team and §8 era calibration remains incomplete. No game, including a background game, may be resolved from this document until both are complete.
+**Document status:** Design approved; runtime NOT READY. [Game readiness](../state/game_readiness.md) and the executable readiness check track the missing calibrated kernel, period rules and verified private Engine State deployment. Deterministic packet support is implemented under `runtime/`; it is not a complete football engine. No game, including a background game, may be resolved until all prerequisites are verified.
 
 **Lock status:** `DESIGN LOCKED; ERA CALIBRATION PENDING`
 
@@ -126,17 +126,13 @@ Variance compresses as sample size grows: a single game can upset, but a season-
 
 ### 3.7 Named plays from the coach's own playbook
 
-The user has a large personal playbook (real play concepts, each with design characteristics and a self-described "expected yards" figure) that they explicitly do not want ingested into this project wholesale — it is a token-cost concern, and more importantly an "expected yards" annotation in a real playbook is design intent, not a promised outcome, which is exactly consistent with this engine's own bounded-randomness philosophy.
+The repository's [playbook index](../career/playbook/README.md) controls the active offensive and defensive iterations. Read only iterations eligible for the current in-simulation year. For 2013, both Iteration I books are active; future iterations remain locked. The earlier external-only storage description is superseded by the established repository organization.
 
-**Storage:** the playbook stays wherever the user already keeps it, referenced by file path. It is never pasted into a conversation or read in bulk, and no version of it is embedded in this document or any other canon file.
+For a named in-game call, look up the relevant entry in the active book. Use its concrete concept, assignments, personnel and intended stresses as matchup inputs. Design annotations, expected yards, preset usage percentages and persuasive wording never determine an outcome or override the shared kernel. Practice installation and player study access follow AGENTS.md and the phase plans. The DC calls the defense; author credit in the defensive book does not change operational authority.
 
-**When it actually gets touched:** only at the moment the user, in Play-Calling or Full Tactical mode (Document 1 §11.2), names a specific play during an actual game. At that point, only that one play's entry is looked up (a targeted search by name, not a read of the whole document) — the same way a real coordinator's own call sheet is a huge document of which exactly one line matters per call.
+Record an actual iteration transition in the season ledger on its effective date. A replay uses the iteration and installed menu effective at that event, not a later book. The governing no-hindsight, no-quota and user-control rules override incompatible embedded design notes.
 
-**How a named play enters resolution:** the play's design characteristics (concept type, target depth/area, run or pass, personnel grouping) become one more situational modifier feeding §3.2 step 2's matchup-delta calculation, in the same slot "a real scheme mismatch the week's game plan identified" already occupies. The play's own "expected yards" figure is never used as a lookup result and never overrides the drive-shape/variance mechanic in §3.2-§3.4 — a well-designed call against a bad matchup can still produce nothing, exactly as in real football. This is flavor and situational color, not a second resolution system.
-
-**Versioning across a career.** The user expects this to be a living, modern scheme that evolves in iterations across a multi-year career, not a document frozen at hire date. The playbook's actual content stays entirely external and version management is the user's own (a version note in their file, separate files per iteration, whatever they prefer) — this project does not track playbook content. What this project DOES track, per Document 6 §1's existing dated-supersession discipline, is *when* an iteration happened: the first time the user calls a play from a new iteration, or explicitly says the scheme changed, that transition date is recorded as a dated entry in the relevant `career/<year>/` file (an offseason note, or a same-season entry if the change happens mid-year), never silently assumed. This matters because a play lookup always uses whatever iteration was actually in effect on the in-world date being played — if the story ever revisits an earlier game, that earlier game resolves against the scheme that existed then, not against whatever the user's file currently says, exactly as Document 6 already insists real chronology never gets rewritten by later facts.
-
-**The playbook's own embedded simulation rules govern, not a restatement here.** Inspected 2026-09-18: the user's actual playbook files each already contain a dedicated section written for exactly this purpose (in the two iterations checked, titled "Simulation Rules" and "Simulation Directives for [years]" respectively) — call-generation priority, personnel/motion/rotation rules, and explicit boundaries against importing a later era's tendencies into an earlier one. Where a playbook file's own directives are more specific than this document's general rule, follow the playbook's directive; this document does not duplicate or override it. Each iteration file also carries its own dated change log against the prior iteration (promoted/added/reduced concepts) — when a new iteration is confirmed in effect, that changelog is what actually explains what's different, not an assumption.
+## 4. Mandatory decision pauses
 
 This is the direct fix for the standing rule against wasting turns on routine decisions (the same principle Document 3 §10.2 already applies to hiring searches, extended here to game weeks and game days). Effort scales with actual stakes: a blowout can resolve in a single exchange with no in-game pauses; a one-score fourth quarter naturally produces several.
 
@@ -205,7 +201,9 @@ Extends §6.2's pattern to trades rather than restating it. A trade is not confi
 
 ### 6.3 State update cadence
 
-Per explicit user instruction: roster and cap/cash state update the moment the triggering event happens, not on any batch or weekly delay — a signing updates cap space immediately, a draft pick or trade updates the roster immediately, and a coach's own lineup/depth-chart call updates immediately. Standings, by contrast, update once per week, after that week's full slate of games (protagonist's and background) has resolved, never mid-week. This is not a new rule so much as a restatement of what Document 4 (current reconciliation) and Document 6 (dated event ledger) already require — every state change is written when it happens, per Document 1 §13.2's atomic-commit discipline — stated here explicitly because it is a specific point the user flagged as a past failure elsewhere (see §6.4).
+Update each affected current view in the same commit as its closed source event, following AGENTS.md's atomic progression rule and [the update workflow](../docs/update_workflow.md). Roster, cap, medical status, staff and role changes have no weekly delay.
+
+A final regular-season result updates the canonical standings immediately, labeled through the actually completed games. A complete weekly roundup is published after the full slate closes. This resolves the older weekly-only wording against the newer requirement that every final score and all affected club records reconcile together. Preseason scores and bye weeks do not change regular-season standings; never count the same game twice. Weekly snapshots remain history after later games close.
 
 ### 6.4 Financial precision commitment
 
@@ -232,15 +230,21 @@ Extends Document 1 §3.3, Document 2 §12, and Document 3 §10.3, rather than re
 | League office / officiating | Rule enforcement, discipline, scheduling, in-game officiating | Fully autonomous and impartial; may plausibly err, as in real football, never targeted at the protagonist | Never directly; the coach reacts to a ruling like any other game event |
 | Agents/contract representatives | Contract negotiation and free-agency demands leaguewide | Fully autonomous for every other roster | The player is the protagonist's own free agent — then compressed into a single 1-2 turn decision, never a back-and-forth haggle loop |
 
-## 8. Era-calibration placeholders
+## 8. Era calibration and execution prerequisites
 
-Target season confirmed by the user on 2026-09-17: **January 2013 forward**, matching Document 3's HC-candidate starting point. The following still require real, sourced values before this document can leave `AUTHORING MASTER` status — populating them is the job of the real-data library effort (player/draft-class data, team/league rules-by-year, coaching/front-office market data) the user separately requested, not a re-derivation here:
+The current clock is May 2013. [2012 calibration research](../library/2012_game_calibration.md) supplies sourced league aggregate passing/rushing, completion, explosive, sack and interception inputs with explicit denominators. Offense/defense table reconciliation is a same-publisher cross-check, not independent confirmation. These research inputs have not yet calibrated a drive distribution.
 
-- League-average yards per attempt/carry, completion rate, and explosive-play rate for the 2012-2013 NFL season and forward: `[PENDING LIBRARY BUILD]`
-- League-average sack rate, interception rate, and fumble rate for the same window: `[PENDING LIBRARY BUILD]`
-- Position-group injury-exposure rates per snap, and typical return timelines by severity tier: `[PENDING LIBRARY BUILD]`
-- Real 2013-era-forward salary-cap ceiling/floor, bonus-proration rule, and dead-money accounting, sourced and cited per Document 2 §17's provenance schema: `[PENDING LIBRARY BUILD]`
-- Any rule differences affecting drive outcomes (overtime format, replay/challenge rules, kickoff/onside-kick rules, and — per §5.3 — the 2021 season-length change) for the years actually played: cross-reference Document 2's own playing-rules tables rather than duplicating them here.
+Still required before game execution:
+
+- Independent verification of the aggregate baseline and complete fumble/penalty/special-teams inputs.
+- Position/exposure injury rates and severity/return distributions with applicable sources; rushing fumbles cannot stand in for all fumbles or fumbles lost.
+- Verified 2013 playing rules and ordered postseason tiebreaks under Document 2.
+- One implemented and calibrated football kernel for interactive and background games, including clock/score/stat reconciliation, mandatory pauses and regression/simulation validation.
+- A deployed private Engine State service with access isolation, frozen packets, reproducible draws, append-only closure and recovery, initialized with the current branch inputs.
+
+The existing [financial research](../library/2013_league_calendar_and_financial_rules.md) and [current worksheet](../career/2013/offseason/current_cap_worksheet.md) already supply the established financial rules and known branch accounting. Preserve their stated uncertainty.
+
+Run `python scripts/check_game_readiness.py` before either game path. Missing evidence fails closed. Passing repository consistency tests does not satisfy these game gates.
 
 ## 9. Cross-references added to Documents 1-6
 
@@ -256,12 +260,12 @@ The evidence-labeling system, the real-person protections, the append-only ledge
 
 ## 11. Outstanding decisions
 
-1. **Hidden Engine State layer.** Design confirmed by the user 2026-09-17. The storage contract is defined in §1, but the runtime store is not instantiated until a team is hired and the initialization build creates the active roster, staff, and season inputs.
+1. **Hidden Engine State layer.** Design confirmed by the user 2026-09-17. The storage contract is defined in §1. A team and current roster/staff records now exist, but an isolated deployed private store has not been verified. See the readiness record.
 2. **Default granularity dial.** Not separately asked; adopted as recommended — Document 1 §11.2's existing "Executive head-coach mode" as the default, with the leverage gate in §4 forcing a pause regardless of mode at the listed triggers. Changeable at any time without a redesign; revisit if the user objects.
-3. **Target season/era for calibration.** Confirmed by the user 2026-09-17: January 2013 forward (Alex Stone, HC candidate, not yet hired), matching Document 3's starting canon. §8's placeholders now wait on the real-data library build rather than on this decision.
+3. **Target season/era for calibration.** Confirmed by the user 2026-09-17: January 2013 forward (the original candidate starting point; the hire is now closed history), matching Document 3's starting canon. §8's placeholders now wait on the real-data library build rather than on this decision.
 4. **Three output formats.** Resolved: pre-hire hiring search, in-season, and offseason — see `foundation/templates/`.
 5. **Repository folder structure.** Resolved 2026-09-17: the flat 8-file layout was reorganized to mirror the SCOTUS project's `foundation/` + `state/` + `terms/` pattern, at the user's explicit request. See §12 below.
-6. **The coach's own real-world playbook.** Resolved 2026-09-17, per §3.7: kept entirely external, referenced by file path, and looked up one play at a time only when actually called in-game — never ingested wholesale. Its "expected yards" annotations are a situational modifier into the existing matchup-delta calculation, never a lookup result.
+6. **The coach's own real-world playbook.** Resolved 2026-09-17, per §3.7: maintained in the repository as dated iterations under `career/playbook/`; the active-iteration lock and targeted named-play lookup in §3.7 control use. Its "expected yards" annotations are a situational modifier into the existing matchup-delta calculation, never a lookup result.
 7. **Hiring-search output format and persistence.** Resolved 2026-09-17: `foundation/templates/hiring_search_output_template.md` gives the pre-hire candidacy phase the same concrete shape the season/offseason templates give post-hire play, and every turn is appended to `career/<year>/offseason/hiring_search.md` rather than existing only in chat — see Document 3 §10.2 items 6-8 and `career/README.md`'s PRE-HIRE SEARCH lifecycle.
 
 ## 12. Repository layout
@@ -277,3 +281,5 @@ Resolved 2026-09-17, mirroring the SCOTUS project's proven layout at the user's 
 This mirrors SCOTUS's `foundation/` (stable rulebook) + `state/` (current trackers) + `terms/OT<year>/` (per-term instance folders) + `archive/` almost exactly, plus one addition (`library/`) for supporting reference material the SCOTUS project did not need in the same way. No document's internal numbering or content changed because of this move — only where each file physically lives.
 
 **`AGENTS.md`** — the bounded batch-task contract. It defines the pre-hire search resolver, research-library expansion, a background-league task that remains disabled until this engine is runtime-ready, and a gated offseason placeholder. Any protagonist choice not explicitly covered by a user-authored standing instruction returns to the user rather than being invented by the agent.
+
+Implementation and validation ownership: [runtime support](../runtime/README.md), [dependency workflow](../docs/update_workflow.md), and [readiness record](../state/game_readiness.md). Private state is not stored in any of these public files.

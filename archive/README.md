@@ -7,4 +7,6 @@ This directory holds superseded, historical, or quarantined material that must n
 - The abandoned earlier Chicago test career is not imported into active canon or `career/`. Git history and external user records may preserve it, but normal simulation tasks do not load it.
 - Discarded coaching-philosophy drafts and other external personal working files are not runtime dependencies and are not referenced by local machine paths.
 
+- `02_League_Era_and_Sourcebook_authoring_0.6.md` preserves the superseded authoring master, including unused templates and the Detroit candidate. Do not load it during normal play.
+
 Nothing in `archive/` overrides `foundation/`, `state/`, the active pre-hire ledger, or closed career history.

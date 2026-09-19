@@ -1,0 +1,181 @@
+{
+  "season": 2012,
+  "season_type": "regular",
+  "accessed": "2026-09-19",
+  "information_boundary": "Pre-2013-season aggregate baseline only",
+  "verification": "Same-publisher offense/defense table agreement; independent publisher confirmation remains unresolved",
+  "sources": {
+    "passing": "https://www.nfl.com/stats/team-stats/offense/passing/2012/reg/all",
+    "rushing": "https://www.nfl.com/stats/team-stats/offense/rushing/2012/reg/all",
+    "passing_defense": "https://www.nfl.com/stats/team-stats/defense/passing/2012/reg/all",
+    "rushing_defense": "https://www.nfl.com/stats/team-stats/defense/rushing/2012/reg/all"
+  },
+  "tables": {
+    "passing": {
+      "headers": [
+        "Team",
+        "Att",
+        "Cmp",
+        "Cmp %",
+        "Yds/Att",
+        "Pass Yds",
+        "TD",
+        "INT",
+        "Rate",
+        "1st",
+        "1st%",
+        "20+",
+        "40+",
+        "Lng",
+        "Sck",
+        "SckY"
+      ],
+      "teams": 32,
+      "totals": {
+        "Att": 17788,
+        "Cmp": 10833,
+        "Pass Yds": 125951,
+        "TD": 757,
+        "INT": 468,
+        "20+": 1580,
+        "40+": 261,
+        "Sck": 1169,
+        "SckY": 7533
+      }
+    },
+    "rushing": {
+      "headers": [
+        "Team",
+        "Att",
+        "Rush Yds",
+        "YPC",
+        "TD",
+        "20+",
+        "40+",
+        "Lng",
+        "Rush 1st",
+        "Rush 1st%",
+        "Rush FUM"
+      ],
+      "teams": 32,
+      "totals": {
+        "Att": 13925,
+        "Rush Yds": 59349,
+        "TD": 401,
+        "20+": 355,
+        "40+": 74,
+        "Rush FUM": 222
+      }
+    },
+    "passing_defense": {
+      "headers": [
+        "Team",
+        "Att",
+        "Cmp",
+        "Cmp %",
+        "Yds/Att",
+        "Yds",
+        "TD",
+        "INT",
+        "Rate",
+        "1st",
+        "1st%",
+        "20+",
+        "40+",
+        "Lng",
+        "Sck"
+      ],
+      "teams": 32,
+      "totals": {
+        "Att": 17788,
+        "Cmp": 10833,
+        "Yds": 125951,
+        "TD": 757,
+        "INT": 468,
+        "20+": 1580,
+        "40+": 261,
+        "Sck": 1169
+      }
+    },
+    "rushing_defense": {
+      "headers": [
+        "Team",
+        "Att",
+        "Rush Yds",
+        "YPC",
+        "TD",
+        "20+",
+        "40+",
+        "Lng",
+        "Rush 1st",
+        "Rush 1st%",
+        "Rush FUM"
+      ],
+      "teams": 32,
+      "totals": {
+        "Att": 13925,
+        "Rush Yds": 59349,
+        "TD": 401,
+        "20+": 355,
+        "40+": 74,
+        "Rush FUM": 222
+      }
+    }
+  },
+  "derived": {
+    "completion_rate": {
+      "numerator": 10833,
+      "denominator": 17788,
+      "definition": "Completions per pass attempt",
+      "value": 0.6090060715088824
+    },
+    "gross_yards_per_pass_attempt": {
+      "numerator": 125951,
+      "denominator": 17788,
+      "definition": "Gross passing yards per attempt; sacks excluded",
+      "value": 7.08067236339105
+    },
+    "net_yards_per_dropback": {
+      "numerator": 118418,
+      "denominator": 18957,
+      "definition": "Passing yards less sack yards, per attempts plus sacks; scrambles excluded",
+      "value": 6.2466635016089045
+    },
+    "yards_per_carry": {
+      "numerator": 59349,
+      "denominator": 13925,
+      "definition": "Rushing yards per recorded rush attempt; includes recorded QB runs/kneels",
+      "value": 4.2620466786355475
+    },
+    "sack_rate": {
+      "numerator": 1169,
+      "denominator": 18957,
+      "definition": "Sacks per pass attempts plus sacks",
+      "value": 0.06166587540222609
+    },
+    "interception_rate": {
+      "numerator": 468,
+      "denominator": 17788,
+      "definition": "Interceptions per pass attempt",
+      "value": 0.026309871823701373
+    },
+    "passing_explosive_20_rate": {
+      "numerator": 1580,
+      "denominator": 17788,
+      "definition": "Pass gains of at least 20 yards per pass attempt",
+      "value": 0.08882392624241062
+    },
+    "rushing_explosive_20_rate": {
+      "numerator": 355,
+      "denominator": 13925,
+      "definition": "Rush gains of at least 20 yards per rushing attempt",
+      "value": 0.02549371633752244
+    },
+    "rushing_fumble_rate_only": {
+      "numerator": 222,
+      "denominator": 13925,
+      "definition": "Recorded rushing fumbles per rushing attempt; not total fumbles or fumbles lost",
+      "value": 0.015942549371633752
+    }
+  }
+}

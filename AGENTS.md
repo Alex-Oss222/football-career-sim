@@ -35,6 +35,8 @@ Any task that **completes an event, advances the career clock, changes roster/co
 
 A progression commit is incomplete if its event file says one thing while a dependent current-state file still says another.
 
+Use [the dependency workflow](docs/update_workflow.md) and `docs/repository_map.json`. Run `python scripts/validate_repository.py` before closing a change; refresh a phase summary receipt only after reviewing the summary against its updated output. Both game paths must also pass `python scripts/check_game_readiness.py`. A green repository check is not game authorization.
+
 ### Playbook (offense and defense): active-iteration lock
 
 `career/playbook/` holds Stone's authored, team-neutral offensive and defensive systems across the whole career, in two parallel series of dated iterations — see `career/playbook/README.md` for the full index and effective-season tables. The lock below applies to the offensive and defensive series independently.
@@ -186,7 +188,7 @@ This is the bounded pre-hire phase that may run before full career initializatio
 - `career/[year]/offseason/initial_roster.md` — the roster itself: every player under contract, position, jersey number if known, and real prior-season role/experience. No contract or cap figures here.
 - `career/[year]/offseason/initial_cap_sheet.md` — the full financial breakdown: every player's contract terms (length, base salary by year, bonus/proration, real 2013 cap hit where sourceable), dead-money entries, total cap usage, and remaining cap space against the real 2013 cap number. Cite sources the same way the library files do, in both files.
 
-**Then, and only for this task, populate `state/04_Roster_and_Staff_Register.md`** from that sourced research, following the register's own already-written field definitions and evidence rules exactly as they stand in that file. This is the one task in this document authorized to write to a state file directly — populating the initial roster/cap baseline is exactly what Document 3 §12 and `career/README.md`'s HIRED / INITIALIZATION BUILD phase require before the career can reach READY. Copy load-bearing cap figures into Document 2 §11's real financial tables the same way the original 2013 library build did.
+**Then, and only for this task, populate `state/04_Roster_and_Staff_Register.md`** from that sourced research, following the register's own already-written field definitions and evidence rules exactly as they stand in that file. This task authorizes the initial baseline write. Later canon-changing tasks also authorize affected state writes under the atomic progression rule above; baseline-only research still must not advance the career. Copy load-bearing cap figures into Document 2 §11's real financial tables the same way the original 2013 library build did.
 
 **Do not** invent a depth chart, a scheme fit, or any coach's evaluation of a player — this task supplies real, sourced facts (contract, position, real prior-season role/statistics) only. Stone's own evaluation of these players is a separate, later, interactive step, not something to pre-decide here.
 

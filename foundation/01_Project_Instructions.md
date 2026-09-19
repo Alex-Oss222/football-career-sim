@@ -1,9 +1,9 @@
 # Project Instructions
 
 **Document status:** Stable governing instructions  
-**Version:** Rebuild draft 1.5  
-**Supersedes:** Rebuild draft 1.4  
-**Last Document 1 content-changing revision:** 2026-09-18 - defined the explicit PRE-HIRE SEARCH lifecycle, authorized `career/<year>/offseason/hiring_search.md` as the ex-ante decision ledger before full career initialization, reconciled that exception with Document 6, and updated response-format language for the three active templates.
+**Version:** Rebuild draft 1.6
+**Supersedes:** Rebuild draft 1.5
+**Last Document 1 content-changing revision:** 2026-09-19 - Entry 13 reconciles readiness pointers to the established career without advancing time. Previous revision: 2026-09-18 - defined the explicit PRE-HIRE SEARCH lifecycle, authorized `career/<year>/offseason/hiring_search.md` as the ex-ante decision ledger before full career initialization, reconciled that exception with Document 6, and updated response-format language for the three active templates.
 **Change rule:** Amend only by an explicit user instruction or a documented canon correction. Do not use this file for changing season state.
 
 ## 1. Purpose and honest limits
@@ -316,4 +316,4 @@ The priority order is: user control; applicable rules; canon; physical, temporal
 
 ## 17. Readiness status
 
-This document is complete as an operating specification. The career remains uninitialized until the unresolved variables in the audit report are confirmed and the user explicitly instructs initialization.
+This document is the governing operating specification. The established career and its latest closed checkpoint are owned by [Document 5](../state/05_Current_Season_State.md) and [the season ledger](../career/2013/ledger.md), not by an archived rebuild checklist. Existing closed events remain canon. [Game readiness](../state/game_readiness.md) separately tracks Document 7 requirements; an administrative reconciliation does not authorize game resolution or create missing historical events.

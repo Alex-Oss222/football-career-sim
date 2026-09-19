@@ -1,6 +1,6 @@
 <!-- sim-meta: {"event_entry": null, "kind": "phase_output", "status": "NOT_STARTED", "through": null} -->
 
-# Mandatory veteran minicamp output
+# Training camp output
 
 **Status:** NOT STARTED.
 **Plan:** [Durable phase plan](plan.md).

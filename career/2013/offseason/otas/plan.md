@@ -1,6 +1,6 @@
 # Jacksonville Jaguars — 2013 Offseason Program and OTA Plan
 
-**Status:** DURABLE PLAN — NOT YET EXECUTED; first OTA block is May 13-15, 2013.  
+**Status:** DURABLE PLAN. Execution status and observations belong in [output.md](output.md) and [standouts.md](standouts.md).
 **Event owner when run:** `career/2013/offseason/otas/output.md`.  
 **Framework:** `../player_onboarding_and_development_framework.md`.  
 **Readiness/CBA authority:** `../the_prowl_player_readiness_standard.md`.  

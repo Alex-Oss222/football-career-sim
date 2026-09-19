@@ -2,10 +2,10 @@
 
 ## Purpose and status
 
-**Document status:** Durable protocol and append-only ledger  
-**Protocol version:** Rebuild draft 1.2  
-**Readiness:** `NOT READY` — no audited starting baseline and handoff have been closed  
-**Global package checkpoint:** `NONE`
+**Document status:** Durable protocol; dated ledger entries live under `career/<year>/`
+**Protocol version:** Rebuild draft 1.3
+**Readiness:** Active ledger protocol. Current continuity is recorded in [Document 5](../state/05_Current_Season_State.md); game readiness is a separate engine gate.
+**Global package checkpoint:** Read the latest closed entry in [the 2013 season ledger](../career/2013/ledger.md). This stable protocol does not duplicate the changing checkpoint.
 
 This document is the durable historical record of the simulation. It preserves what happened, when it happened, what the head coach decided, how games progressed, and what remains unresolved. It also defines the procedures for corrections, continuity audits, phase archives, atomic updates, and resuming in a new chat.
 
@@ -850,7 +850,9 @@ This simultaneous administrative transition avoids a circular prerequisite: each
 
 ### Closed canonical update register
 
-Append one row for each closed update. The final valid row is Document 6's global package checkpoint and must equal active Document 5; never rewrite an earlier row.
+**Template only:** instantiate these records in the applicable `career/<year>/ledger.md`. The blank tables below are not current career state. For this career, read the latest closed [2013 ledger entry](../career/2013/ledger.md).
+
+Append one row for each closed update in that season's ledger. The final valid row is Document 6's global package checkpoint and must equal active Document 5; never rewrite an earlier row.
 
 | Global package checkpoint label | Canonical through | Preceding global checkpoint | Content versions changed | Closed continuity baseline created | Non-game cadence count after closure |
 |---|---|---|---|---|---:|

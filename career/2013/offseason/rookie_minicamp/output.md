@@ -1,6 +1,9 @@
+<!-- sim-meta: {"event_entry": 8, "kind": "phase_output", "status": "COMPLETE", "through": "2013-05-05"} -->
+
 # Jacksonville Jaguars — 2013 Rookie Minicamp Output
 
 **Event status:** COMPLETE.
+**Evidence summary:** [Rookie-minicamp standouts](standouts.md).
 **Verified dates:** May 3-5, 2013.
 **Calendar source:** [`library/2013_jacksonville_master_calendar.md`](../../../../library/2013_jacksonville_master_calendar.md).
 **Controlling plan:** [`plan.md`](plan.md), executed without rewriting it.

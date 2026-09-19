@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "requirements": [
+    {
+      "id": "calibration",
+      "label": "Era calibration",
+      "status": "PARTIAL",
+      "evidence": [
+        "library/2012_game_calibration.md",
+        "library/data/2012_nfl_aggregate_baseline.json"
+      ],
+      "remaining": "Independent confirmation, full turnover/penalty/special-teams inputs and fitted drive distributions are incomplete."
+    },
+    {
+      "id": "playing_rules",
+      "label": "2013 game rules",
+      "status": "BLOCKED",
+      "evidence": [
+        "foundation/02_League_Era_and_Sourcebook.md"
+      ],
+      "remaining": "Period game, overtime, replay, activation and ordered tiebreak procedures are not fully verified."
+    },
+    {
+      "id": "injury_model",
+      "label": "Injury calibration",
+      "status": "BLOCKED",
+      "evidence": [
+        "foundation/07_Game_Simulation_and_Resolution_Engine.md"
+      ],
+      "remaining": "Position/exposure incidence and severity/return distributions are not sourced."
+    },
+    {
+      "id": "football_kernel",
+      "label": "Shared football kernel",
+      "status": "PARTIAL",
+      "evidence": [
+        "runtime/packets.py",
+        "runtime/README.md"
+      ],
+      "remaining": "Packet support exists; complete drive/game mechanics, pause integration and calibrated validation do not."
+    },
+    {
+      "id": "private_runtime",
+      "label": "Private Engine State",
+      "status": "BLOCKED",
+      "evidence": [
+        "runtime/README.md"
+      ],
+      "remaining": "No deployed isolated service, live readiness probe or initialized private career state is verified."
+    }
+  ]
+}

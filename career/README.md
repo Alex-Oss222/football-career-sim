@@ -1,6 +1,6 @@
 # Career instance data
 
-This directory holds dated simulation history. The project has one deliberate pre-initialization exception: the head-coaching search that determines Stone's first permanent job.
+This directory holds dated simulation history and explicitly identified current views. Start with the [2013 career index](2013/README.md) and [current state](../state/05_Current_Season_State.md). The lifecycle below describes transitions; it does not declare the present phase.
 
 ## Lifecycle
 
@@ -62,19 +62,24 @@ career/
         player_draft_board.md  <- evolves as scouting information becomes legally available (date-gated, per library/2013_draft_information_gates.md's pattern)
         draftees.md            <- the simulation's own actual selections; never a real 2013 destination (Document 2 SS12)
       rookie_minicamp/
+        plan.md
         output.md
+        standouts.md
       otas/
+        plan.md
         output.md
         standouts.md           <- who stood out and why, with evidence -- practice performance is evidence, never a hidden true-ability reveal (Document 1 SS6.3)
       mandatory_minicamp/
+        plan.md
         output.md
         standouts.md
-    training_camp/
-      camp_output.md
-      standouts.md
-      position_battles.md      <- each open competition, tracked on evidence, not a secret score
-      roster_decisions.md      <- why a roster/depth-chart change happened; state/04 holds only the current result
-    standings.md                <- the single current league / conference / division standings file (all 32 clubs); rewritten in place after every regular-season week, with each week's snapshot kept in league_results/week_NN.md
+      training_camp/
+        plan.md
+        output.md
+        standouts.md
+        position_battles.md    <- evidence-based open competitions
+        roster_decisions.md   <- dated decisions; state/04 holds the current result
+    standings.md                <- the single current league / conference / division standings file (all 32 clubs); updated after each final regular-season result; a closed weekly snapshot is kept in league_results/week_NN.md
     preseason/
       README.md                 <- game index (date, kickoff, matchup, home/away)
       game_1_miami_at_jacksonville/output.md      <- one folder per game, named game_N_<away>_at_<home>; resolved as one bulk turn per Document 7 SS5.1
@@ -105,7 +110,7 @@ career/
       season_closeout.md       <- short administrative bridge: final ledger checkpoint, roster/contract/cap snapshot, next phase
 ```
 
-Only phases and rounds actually reached in play get created — never pre-built ahead of when the career actually gets there, and never for a season with no career events yet. **Exception, at the user's request (2026-09-19):** the 2013 `standings.md`, `preseason/` game folders and `regular_season/` week folders were pre-built as `NOT STARTED` stubs from the verified master calendar so the schedule and standings are easy to find; the conditional `postseason/` folders and `league_results/` files are still created only when reached. Detailed field-by-field formats for a new file type (e.g. `draftees.md`, `standouts.md`, a closeout file) get written as a dedicated template in `foundation/templates/` the same way the three current templates were, when that phase is actually about to be reached — not invented in advance of need.
+Only phases and rounds actually reached in play get created — never pre-built ahead of when the career actually gets there, and never for a season with no career events yet. **Exception, at the user's request (2026-09-19):** the 2013 `standings.md`, `preseason/` game folders and `regular_season/` week folders were pre-built as `NOT STARTED` stubs from the verified master calendar so the schedule and standings are easy to find; the approved repository repair also creates training-camp record stubs, explicitly `NOT STARTED`. The conditional `postseason/` folders and `league_results/` files are still created only when reached. Detailed field-by-field formats for a new file type (e.g. `draftees.md`, `standouts.md`, a closeout file) get written as a dedicated template in `foundation/templates/` the same way the three current templates were, when that phase is actually about to be reached — not invented in advance of need.
 
 **A year folder is the NFL season being built and played, not a calendar year.** `career/2013/postseason/` holds the playoffs that conclude the 2013 season even though they're played in January/February 2014; `career/2013/closeouts/` closes out the 2013 season before `career/2014/offseason/` opens. This resolves what would otherwise be a real ambiguity once the league year and the calendar year diverge.
 
@@ -116,3 +121,7 @@ Only phases and rounds actually reached in play get created — never pre-built 
 **A new head coach's voluntary veteran minicamp** (a real, separate 2013 offseason-program allowance beyond the standard OTA/mandatory-minicamp structure) is covered inside `otas/output.md` unless something in it is material enough to earn its own record — it doesn't need a dedicated folder.
 
 `state/04_Roster_and_Staff_Register.md` and `state/05_Current_Season_State.md` hold the current snapshot. `career/` holds dated history — the plan file for a phase is never rewritten to match its own outcome after the fact. `foundation/` holds stable rules and canon structure, not accumulating season history.
+
+## Dependency checks
+
+[Update workflow](../docs/update_workflow.md) and [file map](../docs/repository_map.json) define the closure requirements. Run `python scripts/validate_repository.py` before committing. Calendar links, source hashes, summaries and current-state checkpoints are checked; an unchanged financial record may retain its last financial-event date.

@@ -1,5 +1,8 @@
 # Jacksonville Jaguars — Initial 2013 Cap and Contract Sheet
 
+> Historical starting research. For current Jacksonville planning room and post-hire transaction accounting, use [current_cap_worksheet.md](current_cap_worksheet.md). Later corrections are recorded in the [season ledger](../ledger.md).
+
+
 > **Historical starting finances:** The tables below remain the January initialization baseline. They are **not** the current club cap balance. For the reconciled May 5 branch accounting, use [current_cap_worksheet.md](current_cap_worksheet.md), which supersedes the stale ~$8.35M shortcut and carries the current Top-51 planning range.
 
 **Accounting date:** January 15, 2013  
