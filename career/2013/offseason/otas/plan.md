@@ -6,7 +6,7 @@
 **Readiness/CBA authority:** `../the_prowl_player_readiness_standard.md`.  
 **Program identity:** `../the_prowl_program_identity.md`.  
 **Offensive scheme authority:** `../../../playbook/alex_stone_2013_offensive_playbook_iteration_i.md` only.  
-**Calendar:** verified OTA dates are May 13-15, May 20-21, May 23, and June 4-7; see `../../../calendar.md` and `../../../../library/2013_jacksonville_master_calendar.md`.
+**Calendar:** verified OTA dates are May 13-15, May 20-21, May 23, and June 4-7; see `../../calendar.md` and `../../../../library/2013_jacksonville_master_calendar.md`.
 
 ## Player playbook access and evidence rule
 
