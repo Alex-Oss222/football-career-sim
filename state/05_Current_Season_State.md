@@ -70,7 +70,10 @@ The controlling Jacksonville calendar is now built through the entire 2013 seaso
 | Jul. 23-24 | Rookie/QB preparation before full-team report |
 | **Jul. 25** | Full team / veterans report to training camp |
 | Jul. 26-Aug. 3 | Published opening full-team training-camp practice sequence and Aug. 3 stadium scrimmage |
+| Aug. 5-8 | Verified post-scrimmage camp practice/walkthrough sequence |
 | **Aug. 9, 7:30 p.m.** | Preseason 1 vs Miami |
+| Aug. 12-14 | Verified training-camp practices |
+| **Aug. 15** | Walkthrough; 2013 training camp concludes |
 | **Aug. 17, 7:30 p.m.** | Preseason 2 at New York Jets |
 | **Aug. 24, 7:30 p.m.** | Preseason 3 vs Philadelphia |
 | **Aug. 27, 4:00 p.m.** | Reduce roster to 75 maximum |
