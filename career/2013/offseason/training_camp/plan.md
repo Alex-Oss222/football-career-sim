@@ -6,7 +6,7 @@
 **Readiness/CBA authority:** `../the_prowl_player_readiness_standard.md`.  
 **Program identity:** `../the_prowl_program_identity.md`.  
 **Offensive scheme authority:** `../../../playbook/alex_stone_2013_offensive_playbook_iteration_i.md` only.  
-**Calendar:** verified in `../../../calendar.md` and `../../../../library/2013_jacksonville_master_calendar.md`, including the published opening camp sequence, four preseason games, Aug. 27/Aug. 31 roster cuts, and Sep. 4 regular-season cap transition.
+**Calendar:** verified in `../../calendar.md` and `../../../../library/2013_jacksonville_master_calendar.md`, including the published opening camp sequence, four preseason games, Aug. 27/Aug. 31 roster cuts, and Sep. 4 regular-season cap transition.
 
 ## Player playbook access and evidence rule
 
