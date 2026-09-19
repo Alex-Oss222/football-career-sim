@@ -10,7 +10,7 @@
 
 **Last verified:** `2026-09-19`
 
-**Last Document 7 content-changing update:** `2026-09-19 - activated the verified 2013 calibration, shared kernel, period rules and authenticated private Engine State runtime while retaining mandatory fail-closed preflight.`
+**Last Document 7 content-changing update:** `2026-09-19 - retained the verified 2013 runtime while defining the private pre-draw freeze as an immutable event-ID + canonical packet SHA-256 commitment, with reconstruction required to match that commitment for replay/correction.`
 
 **Supersedes:** Nothing. This is an addition to the existing package, not a replacement of any of Documents 1-6.
 
