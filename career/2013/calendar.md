@@ -2,16 +2,15 @@
 
 **Function:** Branch-facing schedule and phase control.
 **Historical source:** `../../library/2013_jacksonville_master_calendar.md`.
-**Current branch checkpoint:** August 8, 2013, final walkthrough closed; Entry 19 is the latest event.
+**Current branch checkpoint:** September 4, 2013, regular-season cap compliance closed; Entry 29 is latest.
 **Rule:** Dates/opponents/deadlines are historical rails. Attendance, transactions, performance and game results are branch events.
 
 ## Current checkpoint
 
-- Completed through: **August 8 final walkthrough**.
-- Next scheduled event: **August 9 Preseason Game 1 vs Miami, 7:30 p.m.** The game is **NOT STARTED**.
-- Preserved continuity gap: April 16-18 voluntary veteran minicamp was not run and was not backfilled.
-- Roster control remains 64. All players were available for assigned August 8 work, subject to fresh game-day medical communication.
-- No transaction changed the May 5 Top-51 worksheet.
+- Completed through: **September 4 regular-season cap compliance**.
+- Active roster 53; practice squad 8; preseason record 2-2; regular-season record 0-0.
+- Next competitive event: **September 8 Week 1 vs Kansas City, 1:00 p.m. — NOT SIMULATED**.
+- Pasztor remains on independent medical hold; Mosley is medically unavailable; Smith cleared.
 
 ## 2013 branch schedule
 
@@ -39,19 +38,19 @@
 | Aug. 5 | Full-padded camp practice; afternoon walkthrough scheduled | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | **Complete** |
 | Aug. 6 | Full-padded camp practice | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | **Complete** |
 | Aug. 7 | Training-camp practice | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | **Complete** |
-| Aug. 8 | Final walkthrough before preseason opener | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | **Complete — latest event** |
-| **Aug. 9** | Preseason 1 vs Miami, 7:30 p.m. | [preseason game index](preseason/README.md) | **Next — NOT STARTED** |
-| Aug. 12 | Full-padded camp practice | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Future |
-| Aug. 13 | Training-camp practice | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Future |
-| Aug. 14 | Full-padded camp practice | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Future |
-| **Aug. 15** | Walkthrough; 2013 training camp concludes | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Future |
-| **Aug. 17** | Preseason 2 at NY Jets, 7:30 p.m. | [preseason game index](preseason/README.md) | Future |
-| **Aug. 24** | Preseason 3 vs Philadelphia, 7:30 p.m. | [preseason game index](preseason/README.md) | Future |
-| **Aug. 27, 4 p.m.** | Cut to 75 | roster/cap/state atomic update | Future |
-| **Aug. 29** | Preseason 4 at Atlanta, 7:30 p.m. | [preseason game index](preseason/README.md) | Future |
-| **Aug. 31, 6 p.m.** | Cut to 53 | roster/cap/state atomic update | Future |
-| **Sep. 1, noon** | Waiver claims expire; 8-player practice squad formation begins | roster/state | Future |
-| **Sep. 4** | Regular-season cap compliance; Top-51 ends | cap worksheet/state | Future |
+| Aug. 8 | Final walkthrough before preseason opener | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | **Complete** |
+| **Aug. 9** | Preseason 1 vs Miami, 7:30 p.m. | [preseason game index](preseason/README.md) | **Complete — Jacksonville won 33-17** |
+| Aug. 12 | Full-padded camp practice | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Complete |
+| Aug. 13 | Training-camp practice | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Complete |
+| Aug. 14 | Full-padded camp practice | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Complete |
+| **Aug. 15** | Walkthrough; 2013 training camp concludes | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Complete |
+| **Aug. 17** | Preseason 2 at NY Jets, 7:30 p.m. | [preseason game index](preseason/README.md) | Complete |
+| **Aug. 24** | Preseason 3 vs Philadelphia, 7:30 p.m. | [preseason game index](preseason/README.md) | Complete |
+| **Aug. 27, 4 p.m.** | Cut to 75 | roster/cap/state atomic update | Complete |
+| **Aug. 29** | Preseason 4 at Atlanta, 7:30 p.m. | [preseason game index](preseason/README.md) | Complete |
+| **Aug. 31, 6 p.m.** | Cut to 53 | roster/cap/state atomic update | Complete |
+| **Sep. 1, noon** | Waiver claims expire; 8-player practice squad formation begins | roster/state | Complete |
+| **Sep. 4** | Regular-season cap compliance; Top-51 ends | cap worksheet/state | Complete |
 | **Sep. 8** | Week 1 vs Kansas City, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
 | Sep. 15 | W2 at Oakland, 4:25 p.m. | [regular-season week index](regular_season/README.md) | Future |
 | Sep. 22 | W3 at Seattle, 4:25 p.m. | [regular-season week index](regular_season/README.md) | Future |

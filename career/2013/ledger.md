@@ -547,3 +547,75 @@ Current practice roles are synchronized in the camp battle/decision records: Joh
 **Next event:** August 9 Preseason Game 1 vs Miami. **The game is NOT STARTED.**
 
 **Commit closed — Canonical update - August 8, 2013 - final Miami walkthrough closed — canonical through August 8, after the final walkthrough and before Preseason Game 1**
+
+## Entry 20 — August 9 preseason opener closed
+
+**Effective date:** August 9, 2013
+**Checkpoint:** `Canonical update - September 4, 2013 - preseason, roster and cap block closed`
+
+Jacksonville beat Miami 33-17 in the first privately closed production-runtime result. Cousins opened and threw the sole Jacksonville interception; later quarterbacks produced no turnover. Protection allowed six sacks despite identified assignments and continued effort. No Jacksonville injury occurred.
+
+## Entry 21 — August 12-15 training camp closed
+
+**Effective date:** August 15, 2013
+**Checkpoint:** `Canonical update - September 4, 2013 - preseason, roster and cap block closed`
+
+Stone used targeted Miami cutups and the established teaching cycle across three verified practices and the final walkthrough. Protection, quarterback decision, substitution, coverage-exchange and teams responsibilities were retested. Training camp concluded; recovery and voluntary personal/family time stayed ungraded.
+
+## Entry 22 — Preseason Game 2 closed
+
+**Effective date:** August 17, 2013
+**Checkpoint:** `Canonical update - September 4, 2013 - preseason, roster and cap block closed`
+
+The Jets beat Jacksonville 24-17. Jacksonville protected the ball and reduced sacks but failed to finish enough possessions. Pasztor sustained a simulated head/neck injury and entered an independent medical hold.
+
+## Entry 23 — Preseason Game 3 and QB decision closed
+
+**Effective date:** August 24, 2013
+**Checkpoint:** `Canonical update - September 4, 2013 - preseason, roster and cap block closed`
+
+Philadelphia beat Jacksonville 31-20. After cumulative camp and three-game evidence, Stone named Cousins QB1 and Henne QB2; Johnson/Rackley, Thielen and Kelce received settled regular-season roles. Pasztor remained unavailable.
+
+## Entry 24 — 75-player deadline compliance
+
+**Effective date:** August 27, 2013
+**Checkpoint:** `Canonical update - September 4, 2013 - preseason, roster and cap block closed`
+
+Jacksonville controlled 64 players and required no release to satisfy the 75-player deadline.
+
+## Entry 25 — Preseason Game 4 closed
+
+**Effective date:** August 29, 2013
+**Checkpoint:** `Canonical update - September 4, 2013 - preseason, roster and cap block closed`
+
+Jacksonville beat Atlanta 33-27 and finished preseason 2-2. Wilson supplied the cleaner final quarterback operation; Bray threw the only turnover. Mosley became medically unavailable with an upper-extremity injury; Smith received a short medical restriction.
+
+## Entry 26 — Final 53 closed
+
+**Effective date:** August 31, 2013
+**Checkpoint:** `Canonical update - September 4, 2013 - preseason, roster and cap block closed`
+
+Caldwell approved the cumulative-evidence reduction from 64 to 53. Eleven players were waived/released. Pasztor and Mosley remained active despite medical limitations; availability was not treated as effort.
+
+## Entry 27 — Waivers and practice squad closed
+
+**Effective date:** September 1, 2013
+**Checkpoint:** `Canonical update - September 4, 2013 - preseason, roster and cap block closed`
+
+Lane, Marshall and Stanback were claimed by autonomous clubs. Eight other waived players cleared and signed to Jacksonville’s separate practice squad. Wilson remained QB3; Bray moved to the practice squad.
+
+## Entry 28 — Medical transition reconciled
+
+**Effective date:** September 4, 2013
+**Checkpoint:** `Canonical update - September 4, 2013 - preseason, roster and cap block closed`
+
+Smith cleared his short restriction. Pasztor remained on independent medical hold and Mosley remained unavailable. No reserve-list move was invented.
+
+## Entry 29 — Regular-season cap compliance closed
+
+**Effective date:** September 4, 2013
+**Checkpoint:** `Canonical update - September 4, 2013 - preseason, roster and cap block closed`
+
+Top-51 accounting ended. The active roster is 53, the practice squad is eight, and source-bounded working room is approximately $6.2M-$6.6M before weekly practice-squad charges, or $5.4M-$5.8M if the opening eight remain all season. Regular-season record remains 0-0; September 8 Kansas City is next and has not been simulated.
+
+**Commit closed — Canonical update - September 4, 2013 - preseason, roster and cap block closed — canonical through September 4, after regular-season cap compliance and before Week 1**
