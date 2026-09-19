@@ -9,8 +9,30 @@ You are Codex, running a bounded batch task against this repository. You have no
 - Never invent a numeric rating, grade, or score anywhere in output that a human reads. Use only the five-tier qualitative language already established (Elite / Plus / Average / Below-Average / Replacement-Level).
 - Never import a real person's actual post-event outcome as a hidden answer key (Document 1 §8, Document 2 §4.3). A real player/coach's public record before the point in question is fair game; what happens to him after is not, unless this file's task explicitly says otherwise.
 - Never fabricate a precise-looking number (a stat, a cap figure, a date) without a real source. If you can't verify something, say so explicitly rather than presenting an estimate as fact — this project's stated top priority is never repeating a past experience where numbers were "fudged."
-- Write to the specific file path each task names. Never edit `foundation/` — that is the stable rulebook, not yours to change. Never touch `state/04_...` or `state/05_...` directly unless a task explicitly says to.
+- Write the task's named file as the primary record, but do **not** stop there when the task changes canon or advances simulation time. Never edit `foundation/` unless the task explicitly targets the rulebook. Research-only, planning-only, and ex-ante recommendation tasks must not mutate current state.
 - Commit with a clear message describing what changed. Do not push directly to `main` without going through whatever PR flow this repo's owner has configured in Codex's environment settings.
+
+### Atomic progression and dependency rule
+
+Any task that **completes an event, advances the career clock, changes roster/control, changes staff, changes draft capital, changes financial obligations, changes medical/availability state, changes a depth-chart or role decision, or otherwise changes canon** is an atomic progression task. For those tasks:
+
+1. **Update the event/history owner first.** Write the completed result to the appropriate dated career file such as the season ledger, trades ledger, signing ledger, draftees file, practice/game output, roster-decision file, or other phase result.
+2. **Update every dependent current-state view in the same commit.** At minimum inspect and update, when affected:
+   - `career/[year]/ledger.md`;
+   - the applicable transaction/result file under `career/[year]/`;
+   - `career/[year]/roster.md`;
+   - the applicable cap/contract/draft-capital accounting file;
+   - `state/04_Roster_and_Staff_Register.md`;
+   - `state/05_Current_Season_State.md`.
+   Add other files when they directly derive from the changed fact, such as a quarterback development plan after a quarterback acquisition.
+3. **The user does not need to name every dependent file.** A request like "make this trade," "sign this player," "run the draft," "advance to rookie minicamp," or "play the week" implicitly authorizes the dependent state updates required to keep canon internally consistent.
+4. **Preserve ex-ante records.** Do not rewrite a planning/recommendation file merely to make the plan look like the result unless the user explicitly asks to replace that historical outcome. Normally preserve the original plan and append or write the resolved outcome in the proper result/history file.
+5. **Unknown accounting is not a reason to leave state stale.** Update ownership, roster count, draft capital, and known contract/control effects immediately. If an exact cap, cash, guarantee, medical, or Top-51 figure is not verified, mark that field unresolved and identify the missing reconciliation instead of inventing a number.
+6. **Advance checkpoints together.** When Document 4 or Document 5 changes, update their version/checkpoint/source pointers so both represent the same latest closed event.
+7. **Run a contradiction pass before committing.** Search the affected year and state files for stale versions of the changed fact, including old player-team ownership, "no trade" or "not acquired" language, obsolete roster counts, stale draft-pick ownership, old season-phase text, and prior checkpoint/version labels. Resolve contradictions that are downstream of the event in the same commit.
+8. **Do not create unrelated changes.** Dependency closure is required, but it is bounded to facts changed by the event. Library research, stable foundation rules, unrelated seasons, and unrelated player records stay untouched.
+
+A progression commit is incomplete if its event file says one thing while a dependent current-state file still says another.
 
 ---
 
