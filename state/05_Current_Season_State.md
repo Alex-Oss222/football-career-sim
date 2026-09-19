@@ -65,9 +65,11 @@ The controlling Jacksonville calendar is now built through the entire 2013 seaso
 | **May 23** | OTA day |
 | **Jun. 4-7** | OTA block 3 |
 | **Jun. 11-13** | Mandatory veteran minicamp |
-| Jun. 14-Jul. 24 | Pre-camp individual preparation / no invented club practice |
-| **Jul. 25** | All contracted players report to training camp |
-| Jul. 26-Aug. 3 | Published opening training-camp practice sequence and Aug. 3 stadium scrimmage |
+| Jun. 14-Jul. 21 | Pre-camp individual preparation / no invented club practice |
+| **Jul. 22** | Rookies and quarterbacks report; acclimation/physical/conditioning preparation |
+| Jul. 23-24 | Rookie/QB preparation before full-team report |
+| **Jul. 25** | Full team / veterans report to training camp |
+| Jul. 26-Aug. 3 | Published opening full-team training-camp practice sequence and Aug. 3 stadium scrimmage |
 | **Aug. 9, 7:30 p.m.** | Preseason 1 vs Miami |
 | **Aug. 17, 7:30 p.m.** | Preseason 2 at New York Jets |
 | **Aug. 24, 7:30 p.m.** | Preseason 3 vs Philadelphia |
