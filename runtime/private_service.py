@@ -131,7 +131,6 @@ def health():
             "procedure_version": PROCEDURE_VERSION,
             "snapshot": SNAPSHOT,
             "backend": "postgres",
-            "seed_fingerprint": seed_fingerprint() if seeded else None,
             "journal_idempotent": journal_ok,
         }), 200 if seeded and journal_ok else 503
     except Exception:
