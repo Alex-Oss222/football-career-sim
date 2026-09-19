@@ -134,14 +134,25 @@ def handler(store,token,snapshot=None):
                 n=int(self.headers.get("Content-Length","0")); body=json.loads(self.rfile.read(n) or b"{}")
                 if not isinstance(body,dict): raise ValueError("request body must be a JSON object")
                 if self.path=="/events/close":
-                    packet=body.get("packet")
+                    # Canonical production wire format is the packet object itself.
+                    # Backward compatibility: accept the previous {"packet": {...}}
+                    # wrapper, and accept a JSON-string packet only by parsing it
+                    # back into an object before validation.
+                    legacy_outer_id=None
+                    if "packet" in body:
+                        legacy_outer_id=body.get("event_id")
+                        packet=body["packet"]
+                        if isinstance(packet,str):
+                            try: packet=json.loads(packet)
+                            except json.JSONDecodeError as exc:
+                                raise ValueError("packet JSON string is invalid") from exc
+                    else:
+                        packet=body
                     if not isinstance(packet,dict): raise ValueError("packet must be a JSON object")
                     event_id=packet.get("event_id")
                     if not isinstance(event_id,str) or not event_id.strip():
                         raise ValueError("packet event_id must be a nonempty string")
-                    # A transition client may still send the old outer field, but
-                    # it can never override packet identity.
-                    if "event_id" in body and body["event_id"]!=event_id:
+                    if legacy_outer_id is not None and legacy_outer_id!=event_id:
                         raise ValueError("outer event_id does not match packet event_id")
                     return self.send(200,{"result_ref":store.close(event_id,canonical(packet))})
                 if self.path=="/admin/probe": return self.send(200,store.probe())

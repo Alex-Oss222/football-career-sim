@@ -73,22 +73,27 @@ class PrivateRuntimeTests(unittest.TestCase):
 
     def test_single_source_event_id_contract_and_legacy_match(self):
         packet={'event_id':'single-source','fact':'same'}
-        self.assertEqual(self.post('/events/close',{'packet':packet}),
-                         self.post('/events/close',{'event_id':'single-source','packet':packet}))
+        flat=self.post('/events/close',packet)
+        wrapped=self.post('/events/close',{'packet':packet})
+        wrapped_string=self.post('/events/close',{'event_id':'single-source',
+                                                  'packet':json.dumps(packet)})
+        self.assertEqual(flat,wrapped)
+        self.assertEqual(flat,wrapped_string)
         with self.assertRaises(HTTPError) as error:
             self.post('/events/close',{'event_id':'other','packet':packet})
         self.assertEqual(error.exception.code,409)
-        for bad in ({'packet':[]},{'packet':{}},{'packet':{'event_id':'  '}}):
+        for bad in ([],{}, {'event_id':'  '},
+                    {'packet':[]},{'packet':{}},{'packet':'not-json'}):
             with self.assertRaises(HTTPError): self.post('/events/close',bad)
 
-    def test_client_validates_packet_before_network_io_and_sends_no_outer_id(self):
+    def test_client_validates_packet_before_network_io_and_sends_flat_packet(self):
         client=Client(self.url,token=self.token,snapshot='snapshot')
         with self.assertRaises(ValueError): client.close_event([])
         with self.assertRaises(ValueError): client.close_event({})
         calls=[]
         client._request=lambda path,body: calls.append((path,body)) or {'result_ref':'opaque'}
         self.assertEqual(client.close_event({'event_id':'one'}),'opaque')
-        self.assertEqual(calls,[('/events/close',{'packet':{'event_id':'one'}})])
+        self.assertEqual(calls,[('/events/close',{'event_id':'one'})])
         self.assertEqual(list(inspect.signature(Client.close_event).parameters),['self','packet'])
 
     def test_readiness_fails_when_real_close_transport_is_broken(self):

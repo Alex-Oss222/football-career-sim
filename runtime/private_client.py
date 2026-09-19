@@ -12,7 +12,7 @@ from .packets import canonical
 
 DEFAULT_URL="http://127.0.0.1:8765"
 DEFAULT_TOKEN_FILE="/run/secrets/football-career-sim-engine-token"
-READINESS_CLOSE_CANARY_CONTRACT="event-close-canary-v2"
+READINESS_CLOSE_CANARY_CONTRACT="event-close-canary-v3"
 
 class PrivateRuntimeUnavailable(RuntimeError): pass
 
@@ -48,7 +48,7 @@ class Client:
         if not token: raise PrivateRuntimeUnavailable("private credentials unavailable")
         headers={"Authorization":f"Bearer {token}"}
         data=None
-        if body is not None: data=json.dumps(body,separators=(",",":")).encode(); headers["Content-Type"]="application/json"
+        if body is not None: data=canonical(body); headers["Content-Type"]="application/json"
         try:
             with urlopen(Request(self.url+path,data=data,headers=headers),timeout=3) as r: return json.load(r)
         except HTTPError as e:
@@ -97,7 +97,7 @@ class Client:
         event_id=packet.get("event_id")
         if not isinstance(event_id,str) or not event_id.strip():
             raise ValueError("packet event_id must be a nonempty string")
-        data=self._request("/events/close",{"packet":packet})
+        data=self._request("/events/close",packet)
         result_ref=data.get("result_ref")
         if not isinstance(result_ref,str) or not result_ref:
             raise PrivateRuntimeUnavailable("private runtime returned invalid event reference")
