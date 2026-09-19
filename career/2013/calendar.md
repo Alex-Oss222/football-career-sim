@@ -30,9 +30,11 @@
 | **May 23** | OTA day | same | Future |
 | **Jun. 4-7** | OTA block 3 | same | Future |
 | **Jun. 11-13** | Mandatory veteran minicamp | `offseason/mandatory_minicamp/plan.md`, `output.md` | Future |
-| Jun. 14-Jul. 24 | Pre-camp individual preparation | readiness standard | Future |
-| **Jul. 25** | All contracted players report | `offseason/training_camp/plan.md` | Future |
-| Jul. 26-Aug. 3 | Published opening camp/practice sequence | `training_camp/plan.md`, future `output.md` | Future |
+| Jun. 14-Jul. 21 | Pre-camp individual preparation | readiness standard | Future |
+| **Jul. 22** | Rookies and quarterbacks report | `offseason/training_camp/plan.md` | Future |
+| Jul. 23-24 | Rookie/QB acclimation and preparation | training-camp plan / medical-performance process | Future |
+| **Jul. 25** | Full team / veterans report | `offseason/training_camp/plan.md` | Future |
+| Jul. 26-Aug. 3 | Published opening full-team camp/practice sequence | `offseason/training_camp/plan.md`, future `output.md` | Future |
 | **Aug. 9** | Preseason 1 vs Miami, 7:30 p.m. | future preseason/game output | Future |
 | **Aug. 17** | Preseason 2 at NY Jets, 7:30 p.m. | future preseason/game output | Future |
 | **Aug. 24** | Preseason 3 vs Philadelphia, 7:30 p.m. | future preseason/game output | Future |
@@ -68,8 +70,9 @@
 
 | Date | Published Jacksonville activity |
 |---|---|
-| Thu. Jul. 25 | All contracted players report |
-| Fri. Jul. 26, 9:55 a.m. | Practice |
+| Mon. Jul. 22 | Rookies and quarterbacks report; rookie acclimation/physical/conditioning preparation |
+| Thu. Jul. 25 | Full team / veterans report |
+| Fri. Jul. 26, 9:55 a.m. | First full-team practice |
 | Sat. Jul. 27, 9:55 a.m. | Practice |
 | Sun. Jul. 28, 9:55 a.m. | Practice |
 | Mon. Jul. 29, 9:55 a.m. | Practice |
