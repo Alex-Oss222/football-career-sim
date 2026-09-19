@@ -1,15 +1,15 @@
 # Current Season State
 
-**Document status:** Mutable canonical snapshot; replace rather than append  
-**Version:** `JAX-2013-MAY05-RECONCILED-STATE-2`  
-**Supersedes:** `JAX-2013-ROOKIE-MINICAMP-SNAPSHOT-1`  
-**Readiness:** Roster control, current contracts, May 5 Top-51 planning room and the full 2013 calendar are reconciled. Current OTA participation still requires ordinary medical communication.  
-**Must be read:** In full before every simulation response.  
-**Simulation status:** Jacksonville has completed free agency, two pre-draft trades, the seven-pick draft, four UDFA signings, all seven drafted-rookie contracts, and May 3-5 rookie minicamp. OTAs have not begun.  
-**Snapshot effective:** May 5, 2013, after rookie minicamp and before the May 13 OTA opening.  
-**Last reconciled:** September 19, 2026; season-ledger Entry 9.  
-**Global package checkpoint:** `Canonical correction - May 5, 2013 - roster/cap/calendar reconciled`.  
-**Preceding global package checkpoint:** `Canonical update - May 5, 2013 - rookie minicamp closed`.
+**Document status:** Mutable canonical snapshot; replace rather than append
+**Version:** `JAX-2013-MAY15-OTA1-STATE-3`
+**Supersedes:** `JAX-2013-MAY05-RECONCILED-STATE-2`
+**Readiness:** OTA block 1 is closed with roster control, participation, provisional football evidence and availability synchronized. The unchanged May 5 Top-51 worksheet remains the financial authority.
+**Must be read:** In full before every simulation response.
+**Simulation status:** Jacksonville has completed all prior closed events plus May 13-15 OTA block 1. OTA block 2 has not begun.
+**Snapshot effective:** May 15, 2013, after OTA block 1 and before the May 20 OTA opening.
+**Last reconciled:** September 19, 2026; season-ledger Entry 10.
+**Global package checkpoint:** `Canonical update - May 15, 2013 - OTA block 1 closed`.
+**Preceding global package checkpoint:** `Canonical correction - May 5, 2013 - roster/cap/calendar reconciled`.
 
 ## Effective source-version manifest
 
@@ -18,24 +18,24 @@
 | Document 1 | `697208640886f9f63581f4b865f917f16007f036` | Project instructions unchanged |
 | Document 2 | `4dcdaa9bb3812ffe47b1bc7007dda73204cbc170` | 2013 rules/sourcebook unchanged by this correction |
 | Document 3 | `9538b8e4831eba1a407c394a37c21972f8b8e290` | Stone/Jacksonville authority map unchanged |
-| Document 4 | `JAX-2013-MAY05-CONTROL-RECON-2`; branch content `027f793aca2a90400f53302473888e7b8601fc58` | 64-player current control, contracts and cap reconciliation |
-| Document 6 | 2013 ledger through Entry 9 | Correction/supersession authority |
+| Document 4 | `JAX-2013-MAY15-OTA1-STATE-3`; branch content closed by Entry 10 | 64-player control, OTA participation/availability and provisional role evidence |
+| Document 6 | 2013 ledger through Entry 10 | OTA block 1 progression authority |
 
 ## 1. Master clock and competition position
 
 | Field | Current canonical value |
 |---|---|
-| Master date/time | May 5, 2013, after rookie minicamp close |
+| Master date/time | May 15, 2013, after OTA block 1 close |
 | Time zone | America/New_York |
 | League/season | NFL, 2013 |
 | Team | Jacksonville Jaguars |
 | Head coach | Alex Stone |
-| Season phase | Offseason; rookie minicamp complete; OTAs not begun |
+| Season phase | Offseason; OTA block 1 complete; OTA block 2 not begun |
 | Record | 0-0; regular season not begun |
-| Last football event | May 3-5 rookie minicamp |
-| Last canonical update | Entry 9 roster/cap/calendar correction; no new football event |
-| Next football event | **May 13-15 OTA block** |
-| Current football focus | Verify current medical participation status, complete onboarding for the corrected 64-player roster, then execute `offseason/otas/plan.md` |
+| Last football event | May 13-15 OTA block 1 |
+| Last canonical update | Entry 10 OTA block 1 close |
+| Next football event | **May 20-21 OTA block 2** |
+| Current football focus | Refresh next-event medical communication, retain/re-teach OTA block 1 corrections, then execute only the May 20-21 portion of `offseason/otas/plan.md` |
 | Current calendar | `career/2013/calendar.md` |
 | Historical calendar source | `library/2013_jacksonville_master_calendar.md` |
 
@@ -55,12 +55,12 @@ The controlling Jacksonville calendar is now built through the entire 2013 seaso
 | Apr. 25-27 | NFL Draft | Complete |
 | May 2 | Seven drafted-rookie contracts executed | Complete |
 | May 3-5 | Rookie minicamp | Complete |
+| May 13-15 | OTA block 1 | Complete |
 
 ### Remaining offseason and preseason
 
 | Date/window | Event |
 |---|---|
-| **May 13-15** | OTA block 1 |
 | **May 20-21** | OTA block 2 |
 | **May 23** | OTA day |
 | **Jun. 4-7** | OTA block 3 |
@@ -112,7 +112,7 @@ Historical schedule dates/opponents are rails only. No real 2013 Jaguars score o
 
 ## 3. Current roster control
 
-Authoritative current player detail: `state/04_Roster_and_Staff_Register.md`.  
+Authoritative current player detail: `state/04_Roster_and_Staff_Register.md`.
 Readable roster: `career/2013/roster.md`.
 
 | Reconciliation step | Count |
@@ -227,24 +227,19 @@ No staff authority or contract changed in Entry 9.
 
 ## 6. Football development state
 
-- Every current Jacksonville player may receive and study the complete active 2013 Iteration I playbook.
-- "Installed" means formally taught/repped team football, not hidden pages.
-- Rookie minicamp installed only the bounded work recorded in its output.
-- OTAs must use `career/2013/offseason/otas/plan.md`.
-- Personnel use, reps, touches, roles and eventual roster outcomes are determined by football evidence, health, matchup and coaching judgment, never by preset playbook percentages.
-- Family-inclusive team events follow the established phase plans and remain non-evaluative.
+- Every controlled player has received the established welcome/standards material and complete active 2013 Iteration I playbook; required individual follow-up for veterans without a prior closed onboarding record was completed before participation.
+- May 13-15 teaching was limited to common operation; Power, Inside Zone, Stick and Drive; base protection communication; base defensive fits/coverage exchange; and core special-teams language.
+- Cousins, Meester, Shorts and Posluszny supplied the clearest unit-operation evidence. Johnson, Poyer and Moore carried useful rookie evidence into veteran work. Trawick and Thielen added provisional multi-unit special-teams evidence.
+- Open corrections remain for Kelce's run-block fit, Bray's cadence/progression timing, Henne's changed-picture reset, Rambo's substitution call and the interior line's changed-presentation combinations. Tice simplified the relevant language; Crennel postponed added pressure disguise.
+- No depth chart, quarterback order, workload/target share, package place, final special-teams assignment or roster outcome was awarded.
+- The full-team OTA family dinner occurred May 15 under voluntary, private and non-evaluative rules.
 
-## 7. Medical / availability boundary before OTAs
+## 7. Medical / availability boundary after OTA block 1
 
-The eleven drafted/UDFA rookies completed May 3-5 rookie minicamp without a new communicated restriction. That event-specific status is not permanent clearance.
-
-Before May 13 OTA participation:
-- medical staff communicate current football-use status for the controlled roster;
-- Smith's signing medical review is not practice clearance;
-- Grimes retains Achilles uncertainty and requires current participation status;
-- no coach can override medical restrictions.
-
-This is the remaining immediate operational gate. It is not a roster-control or cap-legality gap.
+- Qualified staff cleared Daryl Smith for the May 13-15 assigned work; he completed it without a communicated restriction.
+- Brent Grimes attended meetings and medically directed rehabilitation/individual work but was withheld from team periods. No new diagnosis or return date was communicated. Reassessment is due before the next block.
+- Every other controlled player was cleared for assigned May 13-15 work and participated. No new injury or restriction was communicated.
+- All participation clearance remains event-bounded; ordinary medical communication precedes May 20 work, and no coach may override it.
 
 ## 8. Controlling decisions
 
@@ -259,6 +254,7 @@ This is the remaining immediate operational gate. It is not a roster-control or 
 | Four UDFAs | All four under three-year minimum contracts |
 | May 3-5 rookie minicamp | Event results preserved; no depth job awarded |
 | Entry 9 correction | Calendar, roster control, rookie contracts and May 5 cap state corrected without rerunning football |
+| May 13-15 OTA block 1 | Participation/availability and provisional football evidence closed; no transaction, permanent depth decision or cap change |
 
 ## 9. Live-game checkpoint
 
@@ -268,9 +264,9 @@ There is no score, possession, game clock, timeout, challenge, game-day active l
 
 ## 10. Immediate next step
 
-The simulation is positioned to enter the **May 13-15 OTA block** after current medical participation communication and normal onboarding/contact for the corrected 64-player controlled roster.
+The simulation is positioned to enter the **May 20-21 OTA block 2** after ordinary next-event medical communication. May 20-21 has not been run.
 
-No roster-control or cap-accounting uncertainty now blocks onboarding or OTA planning.
+No roster-control or cap-accounting uncertainty blocks the next OTA block.
 
 ## 11. Snapshot replacement rule
 

@@ -1,9 +1,9 @@
 # Jacksonville Jaguars — Current Roster
 
-**As of:** May 5, 2013, after rookie minicamp and before OTAs.  
-**Canonical controlled-player count:** **64**.  
-**Status:** Contract/control reconciliation complete for the current roster. Veteran practice availability still requires normal current medical communication.  
-**Cap:** See [May 5 Top-51 worksheet](offseason/current_cap_worksheet.md).  
+**As of:** May 15, 2013, after OTA block 1.
+**Canonical controlled-player count:** **64**.
+**Status:** Contract/control remains reconciled. May 13-15 participation and football evidence are closed at Ledger Entry 10; next-event availability requires ordinary current medical communication.
+**Cap:** See [May 5 Top-51 worksheet](offseason/current_cap_worksheet.md).
 **Calendar:** See [active 2013 career calendar](calendar.md).
 
 ## 1. Why the old 75-player count was wrong
@@ -235,7 +235,7 @@ These are not releases and do not create new release dead money. Their prior Jac
 
 All seven signed May 2. Full schedules: [draftees.md](offseason/draft/draftees.md).
 
-Gross 2013 rookie cap: **$7,269,102**.  
+Gross 2013 rookie cap: **$7,269,102**.
 Net May 5 Top-51 effect: **$4,134,102**.
 
 ### Undrafted rookies
@@ -252,19 +252,17 @@ The stale `~$8.35M` post-free-agency shortcut is retired.
 
 See [current_cap_worksheet.md](offseason/current_cap_worksheet.md) for the complete transaction math, source limitations and required recalculation triggers.
 
-## 7. Medical and football-role boundary
+## 7. May 13-15 OTA availability and football-role boundary
 
-- The eleven drafted/UDFA rookies were cleared for and completed May 3-5 rookie minicamp. That event-specific clearance does not automatically carry into every later date.
-- Daryl Smith's contract review does not create practice clearance.
-- Brent Grimes' contract review retains Achilles uncertainty.
-- Other veterans require ordinary current medical communication before OTA participation.
-- No contract, acquisition or roster-control correction in this file awards a starting job, rep share, target share, package share or final 53-man roster spot.
+- Qualified medical personnel supplied a current status before participation. Daryl Smith was cleared for and completed assigned OTA work without a communicated restriction.
+- Brent Grimes attended meetings and medically directed rehabilitation/individual work but was withheld from team periods throughout the block. No new diagnosis or return date was communicated; reassessment remains due before the next block.
+- Every other controlled player was cleared for the work assigned and participated. No new injury or restriction was communicated May 13-15. Clearance remains event-bounded and must be refreshed through the normal process for later work.
+- Cousins led the cleanest huddle/protection operation; Meester stabilized line calls; Shorts preserved route landmarks; Posluszny stabilized defensive communication. Johnson, Poyer and Moore carried useful rookie evidence into veteran work. Trawick and Thielen added provisional multi-unit special-teams evidence.
+- Kelce's run-block fit, Bray's cadence-to-progression timing, Henne's reset against changed pictures, Rambo's substitution communication and the interior line's changed-presentation combination timing remain specific teaching points.
+- Grimes' temporary team-period absence caused a secondary rotation experiment only. No starter, quarterback order, target/workload share, special-teams place or final roster role was awarded.
 
-## 8. Next roster checkpoint
+## 8. Current cap and next event
 
-Before May 13 OTA work begins:
+No signing, release, trade, waiver move, amendment, verified bonus consequence, guarantee change or Top-51 change occurred during OTA block 1. The May 5 worksheet remains the latest financial checkpoint and its approximately **$7.0M-$7.4M** planning range remains current.
 
-1. confirm coach-facing medical participation status for the controlled veteran roster;
-2. use the 64-player list for onboarding/contact;
-3. do not contact the 15 expired former Jaguars as though they remain under contract;
-4. update this file atomically if any transaction occurs.
+**Next scheduled football event:** May 20-21 OTA block 2; not yet run.

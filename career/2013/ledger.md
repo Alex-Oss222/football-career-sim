@@ -382,3 +382,22 @@ The May 3-5 rookie-minicamp teaching/evaluation record remains intact.
 
 **Commit closed — Canonical correction - May 5, 2013 - roster/cap/calendar reconciled — canonical through May 5, before May 13 OTAs**
 
+## Entry 10 — May 13-15 OTA block 1
+
+**Effective checkpoint:** May 15, 2013, after OTA block 1.
+**Global package checkpoint:** `Canonical update - May 15, 2013 - OTA block 1 closed`.
+**Preceding global package checkpoint:** `Canonical correction - May 5, 2013 - roster/cap/calendar reconciled`.
+
+Jacksonville confirmed the reconciled 64-player control list, completed the established welcome/package/playbook and individual follow-up process for controlled veterans without a closed onboarding record, and obtained qualified medical participation communication before team work. Daryl Smith was cleared for and completed assigned OTA work without a communicated restriction. Brent Grimes remained in meetings and medically directed rehabilitation/individual work but was withheld from team periods; no new diagnosis or return date was communicated. Every other controlled player was cleared for assigned work and participated. No new injury or restriction was communicated during the block.
+
+The May 13-15 work followed Explain -> Show -> Walk -> Rep -> Correct -> Rep again -> Retain -> Add complexity. The offense taught common operation, Power, Inside Zone, Stick, Drive, protection communication and limited purposeful motion. The defense worked base alignment, fits, coverage distribution and a limited pressure presentation; special teams installed core substitution, lane, leverage and operation language.
+
+Cousins produced the cleanest huddle/protection communication; Meester stabilized line calls; Shorts preserved taught route landmarks; and Posluszny stabilized defensive communication. Johnson, Poyer and Moore added useful evidence without winning jobs. Trawick and Thielen added provisional multi-unit special-teams evidence. Specific open teaching points remain for Kelce, Bray, Henne, Rambo and the interior line. Tice simplified combination/protection vocabulary, and Crennel postponed an added pressure disguise until the base coverage exchange is stable. No permanent depth chart or roster role was awarded.
+
+The full-team offseason/OTA family dinner occurred May 15 under voluntary, non-evaluative and privacy boundaries. No attendance or family circumstance became personnel evidence.
+
+No signing, release, trade, waiver move, contract change, verified workout-bonus consequence or Top-51 change occurred. The 64-player count and May 5 approximately $7.0M-$7.4M Top-51 planning range remain current; the cap worksheet is unchanged.
+
+The April 16-18 voluntary veteran-minicamp gap remains unfilled. The May 20-21 OTA block has **not** been run and is the next scheduled football event.
+
+**Commit closed — Canonical update - May 15, 2013 - OTA block 1 closed — canonical through May 15, before May 20 OTAs**
