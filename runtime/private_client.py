@@ -42,9 +42,8 @@ class Client:
         data=self._request("/ready")
         required=(data.get("ready") and data.get("schema")==SCHEMA_VERSION and data.get("kernel")==KERNEL_VERSION and data.get("procedure")==KERNEL_VERSION and data.get("snapshot")==self.snapshot and data.get("career_initialized") and data.get("private_seed_exists") and data.get("journal_persistent") and data.get("recovery")=="verified")
         if not required: raise PrivateRuntimeUnavailable("private runtime identity or recovery mismatch")
-        probe_id=hashlib.sha256((self.snapshot+":"+KERNEL_VERSION).encode()).hexdigest()
-        first=self._request("/admin/probe",{"probe_id":probe_id})
-        second=self._request("/admin/probe",{"probe_id":probe_id})
+        first=self._request("/admin/probe",{})
+        second=self._request("/admin/probe",{})
         if not (first.get("idempotent") and second.get("idempotent") and
                 first.get("journal_fingerprint") and
                 first.get("journal_fingerprint")==second.get("journal_fingerprint")):
