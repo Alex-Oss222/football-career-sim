@@ -38,9 +38,11 @@ The counterfactual simulation had already advanced past the April 16-18 voluntar
 | **May 23** | OTA day | Future |
 | **Jun. 4-7** | OTA block 3 | Future |
 | **Jun. 11-13** | Mandatory veteran minicamp | Future |
-| Jun. 14-Jul. 24 | Pre-camp break / individual preparation, subject to CBA and contract obligations | No club practice invented |
-| **Jul. 25** | All contracted players report to training camp | Future |
-| **Jul. 26, 9:55 a.m. ET** | First training-camp practice | Future |
+| Jun. 14-Jul. 21 | Pre-camp break / individual preparation, subject to CBA and contract obligations | No club practice invented |
+| **Jul. 22** | Rookies and quarterbacks report to training camp; rookie acclimation/physical/conditioning work begins | Future |
+| Jul. 23-24 | Rookie/QB preparation before full-team report | Future; no full-team practice invented |
+| **Jul. 25** | Full team / veterans report to training camp | Future |
+| **Jul. 26, 9:55 a.m. ET** | First full-team training-camp practice | Future |
 | Jul. 27, 9:55 a.m. | Practice | Future |
 | Jul. 28, 9:55 a.m. | Practice | Future |
 | Jul. 29, 9:55 a.m. | Practice | Future |
@@ -50,7 +52,7 @@ The counterfactual simulation had already advanced past the April 16-18 voluntar
 | Aug. 2, 9:55 a.m. | Practice | Future |
 | **Aug. 3, 6:45 p.m.** | Stadium scrimmage; last practice announced as open to public | Future |
 
-The published public-practice list does not establish every closed practice after August 3. The simulation may schedule later camp work only inside the governing CBA/preseason calendar and its own training-camp plan; it must not invent public-practice dates as historical facts.
+Later Jaguars reporting clarified the reporting sequence beyond the July 2 public-practice announcement: rookies and quarterbacks reported Monday, July 22; veterans/full team reported Thursday, July 25; the first full-team practice was Friday, July 26. The published public-practice list does not establish every closed practice after August 3. The simulation may schedule later camp work only inside the governing CBA/preseason calendar and its own training-camp plan; it must not invent public-practice dates as historical facts.
 
 ## 3. Preseason
 
@@ -117,6 +119,7 @@ These dates are league calendar facts. Jacksonville reaches them only if branch 
 - Jacksonville Jaguars, "Ready to get started," Apr. 1, 2013: https://www.jaguars.com/news/ready-to-get-started-9812800
 - Jacksonville Jaguars, rookie-minicamp coverage, May 3-5, 2013.
 - Jacksonville Jaguars, "Jaguars to Open Eight Training Camp Practices to Public," Jul. 2, 2013: https://www.jaguars.com/news/jaguars-to-open-eight-training-camp-practices-to-public-10423279
+- Jacksonville Jaguars, "Rookies report: Training camp prep begins," Jul. 22, 2013: https://www.jaguars.com/news/rookies-report-training-camp-prep-begins-10517090
 
 ### Games
 - Jacksonville Jaguars, "Jacksonville Jaguars 2013 Schedule," Apr. 18, 2013: https://www.jaguars.com/news/jacksonville-jaguars-2013-schedule-9909213
