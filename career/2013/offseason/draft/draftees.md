@@ -45,3 +45,21 @@ These selections add exclusive negotiating rights and rookie roster entries; the
 ## Post-draft rookie free agents
 
 Jacksonville's user-authorized undrafted signing class is recorded separately in udfa_signings.md. Those signings do not retroactively change the seven selections above.
+
+## Rookie contracts — executed May 2, 2013
+
+Caldwell completed all seven slot-based rookie contracts before the verified May 3 rookie-minicamp opening. This is a post-divergence simulation event under the 2011 CBA wage scale, not adoption of any player's real signing date or real club outcome. The slot values are tied to Jacksonville's simulated selections.
+
+| Pick | Player | Term | Verified slot total | Verified signing bonus | Computed 2013 gross charge before Top-51 displacement |
+|---:|---|---:|---:|---:|---:|
+| #2 | Lane Johnson | 4 years plus first-round club option | $21,201,243 | $13,799,344 | $3,854,836 |
+| #33 | Travis Kelce | 4 years | $5,220,018 | $2,356,280 | $994,070 |
+| #64 | Jordan Poyer | 4 years | $3,102,200 | $942,200 | $640,550 |
+| #98 | Sio Moore | 4 years | $2,641,000 | $481,000 | $525,250 |
+| #135 | Lavar Edwards | 4 years | $2,371,672 | $211,672 | $457,918 |
+| #169 | Bacarri Rambo | 4 years | $2,286,504 | $126,504 | $436,626 |
+| #208 | Tyler Bray | 4 years | $2,207,680 | $47,680 | $416,920 |
+
+The 2013 gross figures use the verified $405,000 rookie minimum plus one-fourth of each verified signing bonus. Total gross 2013 scheduled charge is **$7,326,170**. Exact net Top-51 impact and current club room remain unresolved because the displaced counted contracts and complete club worksheet are not verified. Later-year base allocations and first-round option economics remain unresolved rather than reconstructed from later actual player pages.
+
+**Two-pass slot verification:** first pass used [Spotrac's 2013 NFL Draft contract tracker](https://www.spotrac.com/nfl/draft/_/year/2013) by exact pick; a separate check used [Over The Cap's 2013 rookie-pool estimates and signed-contract archive](https://overthecap.com/draft/2013) and the 2011 CBA Article 7 structure. Where a later-year allocation could not be independently matched, it remains unresolved. Unsigned drafted players could have participated under the CBA's rookie participation/injury-protection framework, but that contingency did not become necessary because these seven agreements executed before camp.

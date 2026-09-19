@@ -1,15 +1,15 @@
 # Current Season State
 
-**Document status:** Mutable canonical snapshot; replace rather than append  
-**Version:** `JAX-2013-POSTDRAFT-SNAPSHOT-1`  
-**Supersedes:** `JAX-2013-FA-SNAPSHOT-1`  
-**Readiness:** Post-draft personnel package reconciled with noted financial/medical uncertainty; full game-readiness not certified  
-**Must be read:** In full before every simulation response  
-**Simulation status:** Jacksonville has completed the March free-agency batch, acquired Kirk Cousins for its 2014 second, exchanged Blaine Gabbert for C.J. Wilson, exercised all seven 2013 selections, and signed Brynden Trawick, A.J. Bouye, Adam Thielen, and C.J. Anderson as undrafted rookies.  
-**Snapshot effective:** Post-draft 2013, after the UDFA signing wave and before rookie minicamp; exact individual trade/UDFA execution times are not separately fixed  
-**Last reconciled:** September 19, 2026 post-draft reconciliation; [season ledger, Entries 5-7](../career/2013/ledger.md)  
-**Global package checkpoint:** `Canonical update - post-draft 2013 roster build`  
-**Preceding global package checkpoint:** `Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency`
+**Document status:** Mutable canonical snapshot; replace rather than append
+**Version:** `JAX-2013-ROOKIE-MINICAMP-SNAPSHOT-1`
+**Supersedes:** `JAX-2013-POSTDRAFT-SNAPSHOT-1`
+**Readiness:** Rookie minicamp closed with noted financial/control uncertainty; full game-readiness not certified
+**Must be read:** In full before every simulation response
+**Simulation status:** Jacksonville has signed all seven draftees to slot-based rookie contracts and completed the May 3-5 rookie minicamp for those seven and four signed UDFAs. No depth chart was fixed and OTAs have not begun.
+**Snapshot effective:** May 5, 2013, after rookie minicamp closed; exact individual trade/UDFA execution times remain unfixed
+**Last reconciled:** September 19, 2026 rookie-contract/minicamp reconciliation; [season ledger, Entry 8](../career/2013/ledger.md)
+**Global package checkpoint:** `Canonical update - May 5, 2013 - rookie minicamp closed`
+**Preceding global package checkpoint:** `Canonical update - post-draft 2013 roster build`
 
 ## Effective source-version manifest
 
@@ -20,35 +20,39 @@ Documents 1-3 are unchanged. Git blob identifiers name their exact content witho
 | Document 1 | `697208640886f9f63581f4b865f917f16007f036` | Existing September 18 rebuild retained | Project rules unchanged |
 | Document 2 | `4dcdaa9bb3812ffe47b1bc7007dda73204cbc170` | Existing September 18 sourcebook retained | 2013 NFL; formal active-only lock not asserted |
 | Document 3 | `9538b8e4831eba1a407c394a37c21972f8b8e290` | Existing September 18 canon retained | Stone contract and final authority unchanged |
-| Document 4 | `JAX-2013-POSTDRAFT-ROSTER-1` | Canonical update - post-draft 2013 roster build | Trades, draft rights and UDFA signings reconciled; transferred-contract/rookie/cap/medical gaps retained |
+| Document 4 | `JAX-2013-ROOKIE-MINICAMP-ROSTER-1` | Canonical update - May 5, 2013 - rookie minicamp closed | Rookie contracts and May 3-5 camp reconciled; transferred-contract/Top-51/inherited-control gaps retained |
 
 ## 1. Master clock and competition position
 
 | Field | Current canonical value |
 |---|---|
-| Master date/time | March 12, 2013, 4:00 p.m. ET, batch-level operative timestamp |
+| Master date/time | May 5, 2013, end of rookie minicamp |
 | Local time zone | America/New_York |
 | League/season | NFL; 2013 league year and 2013 season |
 | Team | Jacksonville Jaguars; Stone accepted the head-coach contract January 15 |
-| Season phase | Offseason; draft and initial post-draft UDFA signing wave complete |
+| Season phase | Offseason; rookie minicamp complete, OTAs not begun |
 | Record/standing/postseason | 2013 season not begun; no current standings or game result |
-| Last completed event | Four post-draft UDFA signings after the Cousins/Wilson trades and seven-pick Jacksonville draft |
-| Next scheduled event | Rookie minicamp is the next football phase; exact simulated start is not fixed by this personnel update |
-| Current focus | Integrate Cousins, C.J. Wilson, the seven draftees and four UDFAs while reconciling transferred/rookie contracts before football work advances |
+| Last completed event | May 3-5 rookie minicamp after May 2 execution of all seven drafted-rookie contracts |
+| Next scheduled event | First OTA is May 13, 2013; do not run it without executing the OTA plan |
+| Current focus | Carry rookie corrections into the veteran-group teaching plan while preserving the May 13 OTA calendar gate |
 | Latest full continuity audit | Not yet established; Entry 3 is a bounded transaction/document reconciliation |
 | Substantive non-game responses since full audit | Prior counter 0 retained; retrospective documentation migration is excluded from cadence |
 
-The clock now reflects the completed source batch. This correction neither resimulates January-March nor advances beyond the recorded March 12 event.
+The clock advances through the verified May 3-5 rookie-minicamp window. It does not retroactively simulate the missed April 16-18 voluntary veteran minicamp and does not begin OTAs.
 
 ## 2. Schedule window and deadlines
 
 | Period/date | Established event | Status | Consequence |
 |---|---|---|---|
-| Late January 2013 | Coaching staff hired | Complete, ledger Entry 2 | Existing assignments continue |
-| March 12, 2013, 4:00 p.m. ET | League year opens; recorded FA batch | Complete, ledger Entry 3 | Update current roster and contractual obligations |
-| Next activity | Not selected in this batch | Unscheduled here | No practice, negotiation or other event assumed |
+| April 1, 2013 | New-head-coach offseason program early start | Calendar verified; not retroactively simulated | No invented attendance or performance |
+| April 16-18, 2013 | Extra voluntary veteran minicamp | Calendar discrepancy: fell inside an already-closed ledger window and was not run | Preserve discrepancy; do not rewrite closed entries |
+| May 2, 2013 | Seven drafted-rookie contracts executed | Complete, ledger Entry 8 | Draft rights converted to signed contracts |
+| May 3-5, 2013 | Rookie minicamp | Complete, ledger Entry 8 | Teaching evidence and event-bounded availability recorded |
+| May 13, 2013 | First scheduled OTA | Next football event; not started | Must execute `offseason/otas/plan.md` before advancing |
+| June 11-13, 2013 | Mandatory veteran minicamp | Future | Do not advance here in this task |
+| July 22 / July 25, 2013 | Rookie / veteran training-camp reporting | Future | Separate report dates; no one-date shorthand |
 
-No new offer deadline, mandatory workout, medical review date or club decision deadline is supplied by this update. Apply the dated 2013 calendar in Document 2 when scheduling a later action.
+Calendar authority: `library/2013_offseason_program_calendar.md`.
 
 ## 3. Current roster and availability summary
 
@@ -68,14 +72,14 @@ Authoritative person records: [Document 4](04_Roster_and_Staff_Register.md). Rea
 | Game-day active/inactive and emergency designations | Not applicable in this offseason phase |
 | Depth-chart approval | No starting job or roster spot is guaranteed by these transactions |
 
-Current quarterback control includes Cousins, Henne, Jordan Palmer, and Jacksonville's draft rights to Tyler Bray; Gabbert is no longer a Jaguar. The defensive front adds C.J. Wilson and Lavar Edwards. Jordan Poyer remains Jacksonville's #64 selection.
+Current quarterback control includes Cousins, Henne, Jordan Palmer, and signed rookie Tyler Bray; Gabbert is no longer a Jaguar. The defensive front adds C.J. Wilson and Lavar Edwards. Jordan Poyer remains Jacksonville's #64 selection.
 
 | Player/group | Coach-facing medical evidence | Current limit |
 |---|---|---|
 | Daryl Smith | Club review satisfactory for a short return | No practice clearance, workload or return-to-play date established |
 | Brent Grimes | Club review completed; Achilles uncertainty remains | No guaranteed recovery, effectiveness or practice clearance |
 | Cousins / C.J. Wilson | Completed trade control only | No new medical clearance, starting role or workload inferred |
-| Draft class / UDFAs | Acquisition/control established | Rookie medical clearance, contracts where unsigned, and practice roles remain separate decisions |
+| Draft class / UDFAs | Acquisition/control established | All eleven cleared for and completed rookie minicamp; later availability and roles remain separate decisions |
 | Other inherited players | No new finding in this update | Current availability requires appropriate medical communication |
 
 ## 4. Staff, organization, authority and resources
@@ -112,7 +116,7 @@ Personal/family logistics create no new functional constraint. Stone's four-year
 
 The Prowl identity and readiness standard remain the source of established coaching principles under Document 3 §2.1. Existing personnel boards supply recommendations within their information dates, not executed acquisitions.
 
-- No new installed concept, practice, film session, rep allocation, depth chart or special-teams assignment is recorded.
+- Rookie minicamp installed only the narrow language/core menu recorded in its output. No veteran install, OTA work, depth chart, package share, or permanent special-teams assignment is recorded.
 - The six signed players receive the opportunities stated in the signing record; no additional playing-time promise is inferred.
 - Medical and CBA limits remain controlling. A contract medical review does not allocate practice work.
 - The legacy play catalogue is not treated as an installed offense.
@@ -144,11 +148,11 @@ No private diagnosis, hidden player evaluation, uncommunicated motive or unsuppo
 | Matter | Responsible role | Current limit |
 |---|---|---|
 | Reconcile Cousins/Wilson/Gabbert contract transfers | Caldwell/cap administration | Exact Jacksonville cap/Top-51 effects not yet established |
-| Reconcile draft and UDFA contracts | Caldwell/contract administration | Draftees are unsigned rights; UDFA signings lack exact bonus/guarantee detail in canon |
+| Reconcile remaining rookie details | Caldwell/contract administration | Seven drafted contracts are booked; later-year allocations/Top-51 effect and UDFA bonus/guarantee detail remain unresolved |
 | Complete inherited current-control list | Caldwell/personnel administration | 56 historical carry-forwards still require rights/contract verification |
 | Reconcile actual remaining cap | Caldwell/cap administration | Pre-trade $8.35M reference cannot be treated as current exact room |
-| Establish practice availability | Qualified medical personnel | No clearance inferred from acquisition |
-| Prepare rookie minicamp evaluation | Stone and staff within CBA/medical limits | No rep, role, or depth outcome pre-awarded |
+| Establish next-phase availability | Qualified medical personnel | Rookie-event clearance does not automatically carry into OTAs; veterans require current communication |
+| Prepare May 13 OTA phase | Stone and staff within CBA/medical limits | Execute the OTA plan; rookie-minicamp evidence awards no role or preset rep share |
 
 These are open records and future decision inputs. The completed trades, draft, and UDFA signings are not reopened by the unresolved accounting work.
 
@@ -176,13 +180,11 @@ The established Stone biography and lack of a functional family/geographic const
 
 ## 12. Last continuity update
 
-- Preserved the March 12 free-agency baseline.
-- Added Kirk Cousins for Jacksonville's 2014 second-round selection without surrendering a 2013 pick.
-- Exchanged Blaine Gabbert for Green Bay DE C.J. Wilson with no draft pick attached.
-- Preserved all seven Jacksonville 2013 selections, including Jordan Poyer at #64, and added the complete draft-rights class.
-- Added post-draft UDFA signings Brynden Trawick, A.J. Bouye, Adam Thielen, and C.J. Anderson.
-- Reconciled the working inventory to 75 and advanced Document 4/5 to the post-draft checkpoint.
-- Kept transferred-contract, rookie-contract, Top-51, release, and medical uncertainties explicit rather than inventing precise figures.
+- Executed all seven four-year drafted-rookie contracts on May 2; gross scheduled 2013 charges are $7,326,170 before unresolved Top-51 displacement.
+- Completed onboarding and the May 3-5 rookie camp for seven draftees and four UDFAs using only Iteration I.
+- Preserved individual next corrections and event-bounded medical clearance without fixing any depth chart or roster result.
+- Logged the missed April 16-18 voluntary-veteran-minicamp calendar discrepancy without rewriting or retroactively simulating closed history.
+- Stopped before the May 13 OTA opening.
 
 ## 13. Readiness boundary
 

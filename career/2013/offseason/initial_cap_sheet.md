@@ -323,3 +323,20 @@ Jacksonville then selected Lane Johnson, Travis Kelce, Jordan Poyer, Sio Moore, 
 After the draft, Jacksonville signed Brynden Trawick, A.J. Bouye, Adam Thielen, and C.J. Anderson as undrafted rookie free agents. The signings are completed roster-control events, but exact signing bonuses, guarantees, base-salary schedules, and Top-51 displacement are not established in canon and therefore are not assigned precise dollar values here.
 
 **Draft-capital state:** Jacksonville retains every 2013 selection it exercised. Its 2014 second-round selection belongs to Washington. Recompute the current planning room when the transferred veteran contracts, executed rookie deals, and full counted-roster worksheet are reconciled.
+
+## May 2 rookie-contract booking
+
+Caldwell executed the seven drafted-rookie contracts on May 2, 2013, using the fixed four-year slot structure (plus Lane Johnson's first-round club option). Exact pick-slot totals and signing bonuses were checked first against [Spotrac's 2013 draft tracker](https://www.spotrac.com/nfl/draft/_/year/2013) and separately against [Over The Cap's 2013 draft archive](https://overthecap.com/draft/2013). This branch does not use the players' real signing dates or destinations as an answer key.
+
+| Player | Pick | Total | Signing bonus | 2013 base used | 2013 bonus proration | 2013 gross cap charge |
+|---|---:|---:|---:|---:|---:|---:|
+| Lane Johnson | #2 | $21,201,243 | $13,799,344 | $405,000 | $3,449,836 | $3,854,836 |
+| Travis Kelce | #33 | $5,220,018 | $2,356,280 | $405,000 | $589,070 | $994,070 |
+| Jordan Poyer | #64 | $3,102,200 | $942,200 | $405,000 | $235,550 | $640,550 |
+| Sio Moore | #98 | $2,641,000 | $481,000 | $405,000 | $120,250 | $525,250 |
+| Lavar Edwards | #135 | $2,371,672 | $211,672 | $405,000 | $52,918 | $457,918 |
+| Bacarri Rambo | #169 | $2,286,504 | $126,504 | $405,000 | $31,626 | $436,626 |
+| Tyler Bray | #208 | $2,207,680 | $47,680 | $405,000 | $11,920 | $416,920 |
+| **Total** |  | **$39,030,317** | **$17,964,680** | **$2,835,000** | **$4,491,170** | **$7,326,170** |
+
+The $405,000 base is the sourced 2013 rookie minimum; signing bonuses prorate over four years under Article 7. The table books the seven individual gross obligations. It does **not** claim a $7,326,170 net reduction in club room: exact Top-51 displacement is unresolved, as are the transferred-veteran and prior-release items already listed above. Later-year base allocations, guarantees beyond the verified bonus treatment, payment timing, and Johnson's option economics remain unresolved where the two-pass evidence did not establish them.
