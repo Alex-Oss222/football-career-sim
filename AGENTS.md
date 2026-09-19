@@ -34,11 +34,12 @@ Any task that **completes an event, advances the career clock, changes roster/co
 
 A progression commit is incomplete if its event file says one thing while a dependent current-state file still says another.
 
-### Offensive playbook: active-iteration lock
+### Playbook (offense and defense): active-iteration lock
 
-`career/playbook/` holds Stone's authored, team-neutral offensive system across the whole career, in dated iterations — see `career/playbook/README.md` for the full index and effective-season table.
+`career/playbook/` holds Stone's authored, team-neutral offensive and defensive systems across the whole career, in two parallel series of dated iterations — see `career/playbook/README.md` for the full index and effective-season tables. The lock below applies to the offensive and defensive series independently.
 
-- **Read only the iteration whose effective-season range (its own frontmatter) covers the current in-sim year**, per `state/05_Current_Season_State.md`'s master clock. Never open, quote, or draw a concept, personnel grouping, protection name, or term from an iteration whose range starts after the current in-sim year — that book is offense Stone has not developed yet inside the story. This is the no-hindsight rule (Document 2 §12) applied to the user's own pre-written future material, not just real-world fact.
+- **Read only the offensive and defensive iterations whose effective-season ranges (their own frontmatter) cover the current in-sim year**, per `state/05_Current_Season_State.md`'s master clock. Never open, quote, or draw a concept, personnel grouping, protection name, front, coverage, pressure label, or term from an iteration whose range starts after the current in-sim year — that book is offense or defense Stone has not developed yet inside the story. This is the no-hindsight rule (Document 2 §12) applied to the user's own pre-written future material, not just real-world fact.
+- **The authority map controls who calls plays, not a book's frontmatter.** The defensive books name Stone as "primary play-caller"; for Jacksonville in 2013, Document 3 and `career/2013/coaching_staff.md` make Romeo Crennel the defensive caller. The defensive book is Stone's issued system; how much Crennel installs or adapts is a staff-resolved football question, never assumed (see `career/playbook/README.md`).
 - A past, superseded iteration may be read for lineage (an iteration's `inheritance_rule`/`baseline` field legitimately points back to an earlier one), but only the currently active iteration is live for teaching, install work, scouting, or play-calling.
 - **Human-player access rule.** Every player may receive, possess, and study the complete active iteration. The active book is a football playbook, not a software unlock tree. Players may read ahead and ask questions about any page. "Installed" means formally taught, walked through, practiced, and prepared for team use. Installation is still gated by the real CBA offseason-program calendar in `career/[year]/offseason/the_prowl_player_readiness_standard.md`, but that calendar limits club teaching/practice activity, not player access to the active book. Evaluate players on assigned/taught material, never on whether they mastered an uninstalled page.
 
@@ -64,7 +65,7 @@ For any task that **starts, advances, runs, simulates, or closes** Jacksonville'
 2. `career/[year]/offseason/player_onboarding_and_development_framework.md` — welcome-package process, Day-2 Stone/position-coach calls, learning cycle, Good/Better/Best standard, physical progression, and family-dinner policy.
 3. `career/[year]/offseason/the_prowl_player_readiness_standard.md` — medical, physical, support, privacy, offseason-voluntariness, and CBA boundaries.
 4. `career/[year]/offseason/the_prowl_program_identity.md` — program expectations and team-level football principles.
-5. `career/playbook/README.md`, then **only** the active offensive iteration permitted by the active-iteration lock above.
+5. `career/playbook/README.md`, then **only** the active offensive iteration and the active defensive iteration permitted by the active-iteration lock above.
 6. The phase plan listed below.
 7. The current roster/staff files and only the additional player/medical/transaction records needed for that event.
 
