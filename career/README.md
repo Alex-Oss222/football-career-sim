@@ -33,6 +33,7 @@ Adopted 2026-09-18, replacing an earlier, flatter version of this layout. The ch
 career/
   <year>/
     ledger.md
+    calendar.md                 <- branch-facing full-season calendar: camps, preseason, games, roster/cap deadlines and conditional postseason gates
     coaching_staff.md          <- clean current staff list, no process narrative; the hiring process itself lives in offseason/staff_building/hires.md
     league_results/
       week_01.md
@@ -46,7 +47,8 @@ career/
       hiring_search.md
       hiring_search_brief/
       initial_roster.md          <- built once, right after a hire closes: the real inherited roster, sourced -- players/positions/experience only, no contract figures
-      initial_cap_sheet.md       <- the full financial breakdown for that same roster: contract terms, cap hits, dead money, cap space (AGENTS.md's roster/cap-sheet task); both kept here rather than library/ so they're found with the rest of that year's record
+      initial_cap_sheet.md       <- historical starting financial baseline for that inherited roster
+      current_cap_worksheet.md   <- current branch accounting after transactions; Top-51/full-roster effects and current planning room
       roster_evaluation.md       <- Stone's own dated evaluation of the inherited roster and his approach across the offseason calendar -- his recommendation; actual roster cuts/outcomes are not assumed from it
       the_prowl_program_identity.md            <- Stone's user-established coaching identity ("The Prowl"), full text; Document 3 SS2.1 carries only the summary and points here
       the_prowl_player_readiness_standard.md   <- companion file: the physical/psychological/financial/family player-readiness system
