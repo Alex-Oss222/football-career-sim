@@ -1,166 +1,380 @@
-# 2013 quarterback development plan: Stone, Bates and Tice
+# 2013 quarterback development plan
 
-Status: Proposed coaching plan derived from the user's *Kirk Cousins Quarterback Development Plan, 2013*. Cousins-specific work is conditional on his acquisition. Common standards apply to the quarterbacks actually on the roster; no practice, improvement or starting decision has occurred in this document.
+This file defines Jacksonville's quarterback teaching, evaluation, and competition framework for the 2013 offseason and preseason.
 
-The [trade board](../trades/trade_targets.md) owns acquisition prices and roster contingencies. The [Prowl identity](the_prowl_program_identity.md), [readiness standard](the_prowl_player_readiness_standard.md) and [staff register](../coaching_staff.md) govern implementation.
+It is a football plan, not a transaction ledger or current-roster snapshot. Player acquisitions, departures, draft results, contract status, and the current quarterback room belong in `career/2013/roster.md`, the transaction files, the season ledger, and Documents 4-5.
 
-## 1. The job Stone wants developed
+The [Prowl identity](the_prowl_program_identity.md), [player readiness standard](the_prowl_player_readiness_standard.md), and [coaching staff register](../coaching_staff.md) govern implementation.
 
-Develop a quarterback who can execute the call on time and continue operating when the first picture changes. Preserve useful preparation, under-center work, play action, a functional release and the willingness to take the appropriate completion. Build a more dependable process without requiring the player to become a different kind of athlete.
+## 1. Development standard
 
-The supplied pack's descriptions of Cousins' base, stride, first-read behavior and pressure response are starting hypotheses. Bates must establish which appear in eligible film and permitted practice. Do not label every miss a mechanical defect or every bad decision a character failure.
+The objective is a quarterback who can execute the call on time, understand the protection, and continue operating when the first picture changes.
 
-Stone's playing and coaching background makes the timing between protection, quarterback and receiving routes central. His defensive experience informs the changed-picture work. His learning emphasis requires a correction that survives a retest. His head-coach responsibility requires enough practice for the defense, kicking game and other offensive players as well.
+The staff is looking for:
 
-Stone's experience around successful veteran quarterbacks does not prove an independent record of developing a young NFL starter. Bates and Tice must be able to challenge his diagnosis. The plan can succeed in part, stall or prove unsuitable.
+- repeatable footwork tied to the concept;
+- accurate decisions before and after the snap;
+- functional pocket movement without unnecessary drift;
+- protection communication and recognition of pressure responsibility;
+- timing with route landmarks and receiver adjustments;
+- ball security and sound situational judgment;
+- the ability to accept a correction and reproduce it against a changed look;
+- enough command to expand the offense only when the earlier work is stable.
 
-## 2. Ownership and lawful practice
+Do not force every quarterback into the same mechanical model. Preserve what already functions. Change mechanics only when the observed action creates a football problem.
 
-Bates owns daily quarterback instruction. Tice coordinates the offensive install, protection and run-pass integration. Stone sets priorities, approves the usable menu, calls the offense and decides playing roles. Skalaski prepares cutups, scripts and manual rep records under Bates and Tice.
+A correction is successful only when it transfers to a later rep, a changed defensive picture, and eventually game-speed work.
 
-Yarno connects quarterback landmarks to line assignments. Spencer handles the backs' protection, release and mesh responsibilities; Drake and Zernhelt handle receiver/TE timing, sight adjustments and route landmarks. Crennel determines the defensive work used to test the offense within Stone's team schedule. Lowry's practice allocation is a real team requirement.
+## 2. Staff ownership
 
-The [readiness standard's offseason rules](the_prowl_player_readiness_standard.md) control activity. The stages below are skill stages, not the CBA's named phases. An individual drill, classroom exercise, walkthrough and offense-versus-defense period are not interchangeable permissions. Use only the activity permitted on the actual date; team pressure periods wait until that kind of work is allowed, and offseason team work does not become live contact.
+### Greg Bates, quarterbacks
 
-Ordinary voluntary participation remains voluntary. No player loses standing for declining it. Medical staff set medical restrictions; coaches work within them. Additional throwing and post-practice corrections count within the permitted workload rather than creating a second practice. Use film, manual logs and ordinary coaching observation; assume no modern tracking system.
+Bates owns daily quarterback instruction.
 
-## 3. Establish a baseline before changing mechanics
+He is responsible for:
 
-Bates and Skalaski assemble representative throws from the available evidence, including misses, sacks, checkdowns and abandoned plays. Record the concept where known, protection, apparent progression, pressure source, movement, release and placement. Mark uncertain assignments rather than guessing.
+- baseline evaluation;
+- footwork and throwing-sequence corrections;
+- pocket movement;
+- progression teaching;
+- individual correction and retest;
+- quarterback meeting preparation;
+- tracking whether teaching transfers from drill work to team work.
 
-The supplied brief favors preserving the compact release. Keep it when functional. Test base width, stride and sequencing only where the observed problem warrants a change. A shorter stride is an intervention to evaluate, not a universal instruction on every throw.
+### Mike Tice, offensive coordinator
 
-The practical test is whether the player can arrive ready, move when required and deliver accurately without unnecessary effort or delay. Retain a correction only if it improves the football action and remains usable at game speed. Do not promise additional arm strength, a particular velocity or a permanent fix.
+Tice connects quarterback development to the offense.
 
-Select the most consequential correction first. Give a clear cue, use permitted repetitions, then revisit the problem later without prompting. If the correction disrupts previously dependable work, reassess it before adding another.
+He owns:
 
-## 4. Teaching stages and advancement
+- protection structure;
+- run-action timing;
+- concept sequencing;
+- line-quarterback communication;
+- the relationship between the quarterback's feet and the route structure;
+- determining whether an added check, tag, or packaged decision is worth carrying.
 
-Work on the core operation can overlap across stages. Do not withhold basic protection or a small playable passing menu until the quarterback's mechanics are perfect. Advance a specific responsibility when it holds up; keep a useful limited role while other work continues.
+### Alex Stone, head coach and offensive caller
 
-| Stage | Main work | Evidence for more responsibility | If the evidence is missing |
+Stone sets the football priorities, chooses the game-day menu, allocates opportunities, and makes the depth-chart decision.
+
+He should not use his authority to protect a preferred diagnosis. Bates and Tice are expected to challenge a correction, concept, or workload that is not producing usable football.
+
+### Connected position groups
+
+- Offensive line coaches connect protection rules and quarterback landmarks.
+- Running backs coach protection, release, mesh, and check responsibilities.
+- Receiver and tight-end coaches own route landmarks, sight adjustments, spacing, and timing.
+- Defensive staff provides realistic changing pictures during permitted team periods.
+- Special teams remains part of the team practice budget. Quarterback development does not consume unlimited team time.
+
+Medical restrictions and offseason-work rules remain controlling.
+
+## 3. Establish the baseline before changing the player
+
+Begin with representative evidence, not highlights.
+
+Review successful and unsuccessful snaps, including:
+
+- normal completions;
+- misses;
+- sacks;
+- checkdowns;
+- pressured throws;
+- abandoned plays;
+- turnover-worthy decisions;
+- plays where the assignment itself is uncertain.
+
+For each rep, identify as much of the following as the evidence supports:
+
+1. concept and route structure;
+2. protection;
+3. expected quarterback responsibility;
+4. defensive picture;
+5. pressure source;
+6. footwork and movement;
+7. decision;
+8. delivery and placement;
+9. result.
+
+If the assignment is uncertain, mark it uncertain. Do not diagnose a quarterback error from an unknown play rule.
+
+### Mechanical correction
+
+Start with the most consequential problem.
+
+Examples include:
+
+- base width that delays or destabilizes the throw;
+- an unnecessarily long stride;
+- movement that pulls the quarterback away from the intended launch point;
+- a reset that arrives after the route window;
+- ball carriage that delays readiness;
+- a repeatable sequencing problem affecting placement.
+
+Use one clear correction, give enough repetitions to test it, then revisit the same problem later without prompting.
+
+If the correction damages previously functional work, change the intervention.
+
+Do not chase cosmetic mechanics when the quarterback is already producing the required football action.
+
+## 4. Teaching progression
+
+The stages below are skill progressions, not calendar phases. Work can overlap when the player is ready.
+
+| Stage | Primary work | Evidence to expand | If the evidence is missing |
 |---|---|---|---|
-| Functional movement and core operation | Concept-linked feet, base/stride where needed, ball carriage, normal launch point, climb/reset and the core passing calls | Arrives ready and preserves timing and placement through a modest disruption | Reduce the movement or concept load; retest the suspected cause |
-| Protection and progression | Identify who is accounted for, communicate the protection, distinguish hot responsibility and leave a closed first answer | Repeats correct decisions against changed looks without a coach supplying the answer | Keep adjustments narrow and correct the recognition or communication failure |
-| Simple run-pass choices | Pre-snap access, run/perimeter choice and an isolated-receiver answer with defined leverage | Makes the intended decision on time with compatible line and receiver execution | Return to the simpler call; do not add reads to solve confusion |
-| Selective post-snap reads | One conflict defender, a defined give/throw decision and any separately justified keep element | Secure mesh, clear read, timely decision and correct surrounding assignments | Remove the failing tag; maintain the established passing/run menu |
-| Expanded command | Broader checks, cadence, tempo and, if justified, an ordered three-answer package | The whole unit can operate it against changing pictures and situational demands | Retain the mastered subset; completing the full menu is not a 2013 requirement |
+| Core operation | Concept-linked feet, launch point, ball carriage, basic movement, routine passing menu | Timing and placement remain functional through modest disruption | Reduce movement or concept load and retest |
+| Protection and progression | Protection communication, hot responsibility, leaving a closed first answer | Correct decisions repeat against changed looks | Narrow the adjustment menu and correct the recognition problem |
+| Simple packaged choices | Pre-snap access throws and clearly defined run/perimeter choices | Decision is timely and surrounding assignments remain clean | Return to the base call |
+| Selective post-snap reads | One clearly identified conflict defender | Secure mesh, clear read, timely decision | Remove the tag and keep the established menu |
+| Expanded command | Broader checks, cadence, tempo, multi-answer concepts | Quarterback and unit operate the responsibility consistently under situational pressure | Carry the mastered subset |
 
-A clean rehearsal is insufficient. Revisit the skill against a changed look and later after other material has been practiced. Stone authorizes a larger game-day role from recorded evidence, not the number of install pages completed.
+A large install is not evidence of progress. A smaller menu executed correctly is more valuable than a larger menu that creates hesitation.
 
-## 5. Pocket and pressure work
+## 5. Pocket movement, feet, eyes, and timing
 
-Use the pack's five reference locations: original launch point, a small climb, a left reset, a right reset and an escape lane. Adapt the actual spacing to the protection and drill. They are teaching landmarks, not mandatory destinations.
+### Pocket movement
 
-In a permitted controlled period, give the quarterback a concept, close a lane with bags or the authorized simulation of rush movement, and require an appropriate response without prescribing the escape direction. He should move enough to regain a usable throw, keep the ball available and return to the progression.
+Teach movement relative to the protection.
 
-Evaluate the movement, coverage awareness, platform, timing and placement separately from the completion. A completed pass can still expose unnecessary movement that created pressure. A technically neat reset can still be too late.
+Useful reference locations include:
 
-Keep the pressure problems distinct:
+- the intended launch point;
+- a small climb;
+- a left reset;
+- a right reset;
+- an escape lane when the pocket is no longer usable.
 
-- **Edge:** Understand where the tackle is taking the rusher. Climb when that restores space; do not automatically retreat or climb into interior penetration.
-- **Interior:** Identify the closed lane, move off the spot and reestablish a usable platform where possible. Some throws will remain imperfect; distinguish a necessary off-platform delivery from habitual retreat.
-- **Free rusher:** Determine whether the protection accounts for him, the quarterback owns him through the ball, or the play must be ended. Recognition can matter more than escape ability.
-- **Broken pocket:** Preserve the chance to throw where reasonable, then run, slide or end the play when appropriate. Avoid both automatic escape and automatic extension.
+These are landmarks, not mandatory destinations.
 
-Controlled drills do not establish live-pressure performance. Treat later permitted team work and preseason/game evidence as separate tests.
+The quarterback should move only enough to restore a usable throwing position or end the play correctly.
 
-## 6. Feet, eyes and route timing
+Evaluate different pressure problems separately:
 
-Attach the drop and reset to the installed concept. Do not accumulate generic drops as a development target.
+- **Edge pressure:** understand where the tackle is taking the rusher and whether climbing restores space.
+- **Interior pressure:** move off the blocked throwing lane and rebuild a usable platform where possible.
+- **Free rusher:** identify whether the protection accounts for him, whether the quarterback owns him through the ball, or whether the play must be ended.
+- **Broken pocket:** preserve a throw when reasonable, then run, slide, throw away, or accept the end of the play according to the situation.
 
-Use a small set from the pack first: stick or spacing, slant-flat, drive or shallow, and an intermediate combination such as dagger or levels when the surrounding assignments support it. These are proposed families from the supplied brief, not a claim that Jacksonville already has a finished playbook. Tice, Bates, Drake and Zernhelt must agree on the terminology, route landmarks and timing.
+Do not grade pocket movement only by whether the pass was completed.
 
-Distinguish quick game, intermediate dropback work and selected deeper/play-action concepts. A hitch belongs where the progression and route window permit it. Additional drop depth does not buy unlimited time.
+### Feet and route timing
 
-For progression work, identify whether the call is an access throw, leverage read, defender read, half-field or full-field progression. Change which answer is available during permitted periods. Grade when the quarterback leaves a closed route and whether he reaches the next answer on schedule. Do not force a full-field scan onto a call designed to be decided quickly.
+Attach the drop, hitch, reset, and movement to the concept.
 
-Eye work should affect a relevant defender while preserving route timing. Holding a safety or hook defender has a purpose; arbitrary look-off counts do not. Pump fakes belong to calls that support them.
+The quarterback should arrive ready when the route is available. Extra depth or extra hitches do not create extra time.
 
-Practice intermediate and boundary throws with their actual anticipation and placement requirements. A late far-side throw is not repaired by demanding more arm effort. Deep-ball work addresses release timing, trajectory and receiver landmarks; it does not lengthen the motion merely to chase distance.
+Use a small core menu first. Suitable families include:
 
-## 7. Protection, run action and packaged decisions
+- stick or spacing;
+- slant-flat;
+- drive or shallow;
+- levels or dagger where the personnel and protection support it;
+- selected play-action concepts.
 
-Protection instruction covers the front, declaration, protection direction, potential extra rusher, hot responsibility and receiver adjustment. Tice selects the initial structures from the pack's five-, six- and seven-man, slide and movement-protection ideas. Install only what the unit can communicate and execute.
+The staff may use different terminology, but the teaching point is the same: feet must match the route window.
 
-At permitted stages, present fronts, overloads, walked-up pressure and late movement, then vary who rushes. Distinguish a correct assignment lost physically from a protection error or a quarterback holding the ball beyond its answer. Evaluate the back, line and receiver responsibilities alongside the quarterback's.
+### Eyes and progression
 
-Keep under-center footwork and play action in the plan. Reacquire the coverage picture after the fake and arrive on time. Start with run actions Jacksonville actually teaches rather than installing every zone, split-flow, power, counter, pistol and keeper variation at once. The fake must influence the defense without making the pass late.
+Identify what type of decision the call actually requires:
 
-For the packaged game:
+- access throw;
+- leverage read;
+- isolated defender read;
+- half-field progression;
+- full progression.
 
-1. Start with one pre-snap access throw attached to a run, such as an available hitch or perimeter throw. If the specified access is absent, execute the called run.
-2. Add a clearly defined run/perimeter decision or isolated-receiver leverage answer. One-on-one coverage alone does not guarantee a good throw.
-3. Consider one post-snap conflict read only after the surrounding assignments and decision timing are dependable.
-4. Consider an ordered run/keep/pass package only if it solves a specific defensive problem and the quarterback and unit can execute it.
+Do not force a full-field scan onto a concept designed to be decided quickly.
 
-Each package requires a defined read, protection/blocking rule, eligible receiver assignment and decision deadline. Tice and football operations must check the actual design against the 2013 forward-pass and ineligible-downfield rules before installation. A late pass cannot be rescued by calling it a run-pass option. This document does not certify a particular package's legality or import a later NFL menu.
+Eye manipulation should serve a real purpose, such as affecting a safety or underneath defender, while preserving timing.
 
-Pistol and shotgun mesh work is proposed where the chosen offense requires it. Teach ball security, a clean give or pull and immediate throwing readiness after the pull. If a keep read is installed, it must be credible; a narrow keeper, draw or scramble opportunity does not create a designed-running workload. Remove a keep element that the player cannot execute usefully and securely.
+## 6. Protection, run action, and packaged decisions
 
-Designed boot/keeper passing and an unscheduled escape are different jobs. Teach the run action, edge responsibility and progression for the former; coverage awareness and the decision to end the play for the latter.
+Protection teaching should establish:
 
-## 8. Command and situational work
+- the front;
+- the protection direction;
+- who is accounted for;
+- potential extra rushers;
+- hot responsibility;
+- receiver adjustments;
+- the quarterback's responsibility when the defense brings one more than the protection can block.
 
-Cadence and tempo are operational tools. Teach the normal call and count, then add hard count, freeze, silent operation or a quick snap for identified purposes. Reaching the line quickly and holding for information is different from snapping quickly. Communication must remain accurate before the pace increases.
+When pressure appears, separate:
 
-Choose a situational problem for the available practice, rather than squeezing every category into every day:
+- a physically lost block;
+- a protection communication error;
+- a quarterback identification error;
+- a late decision;
+- a receiver adjustment problem;
+- a call that did not give the unit a workable answer.
 
-- **Third down:** Separate short, intermediate and long yardage. Evaluate protection, man-coverage answers, the sticks and whether a checkdown retains a realistic conversion chance.
-- **Red zone:** Work leverage, compressed windows, TE/receiver matchups, pressure answers and the throwaway. A fade requires the right matchup and receiver, not just field position.
-- **Two minute:** Include the clock, timeouts, sideline access, substitutions, protection and spike decisions. A scoring drive can still contain serious operational errors.
-- **Backed up and four minute:** Account for field position, ball security, the clock and the consequence of a sack or turnover.
-- **Broken play:** Recognize when the available run, completion or legal throwaway is the sound outcome. Avoid turning every failed concept into an extended scramble.
+Do not automatically charge the quarterback with every sack.
 
-Stone and the staff prepare the problem clearly enough to distinguish a player error from an impossible or contradictory assignment.
+### Run action
 
-## 9. Evaluation, correction and competition
+Keep under-center and play-action work connected to runs Jacksonville actually carries.
 
-Use the [roster evaluation's](roster_evaluation.md) emphasis on decisions, accuracy and third-down execution. The same football standards apply to Gabbert and Henne; individual corrections may differ.
+The quarterback must:
 
-Bates proposes meaningful comparable opportunities, and Stone allocates them within team needs. Log concept, personnel, protection and defensive difficulty so that completions against different conditions are not treated as equivalent. As the competition develops, distribute work according to observed readiness and the need for a decision. Neither trade compensation nor veteran status guarantees reps or the starting job.
+1. execute the mesh or fake cleanly;
+2. reacquire the coverage picture;
+3. arrive at the throwing point on time;
+4. preserve ball security.
 
-For each material rep, record:
+Do not install multiple run-action families merely for variety.
 
-- date and permitted practice/game context;
-- concept and expected responsibility, including uncertainty;
-- defensive picture and what changed;
-- decision, movement, delivery and result;
-- likely cause, including shared or staff responsibility;
-- correction and the next retest.
+### Packaged decisions
 
-Do not invent numerical ratings or a composite quarterback score. Film-supported observations can use the project's qualitative evaluation language where appropriate; this plan assigns no player a new grade.
+Build packaged football in order:
 
-Classify interceptions and near-turnovers by cause: identification, progression, late decision, unseen defender, placement, pressure/mechanics, receiver error, deflection or justified end-game risk. More than one cause may apply, and the cause can remain uncertain. Also review dangerous throws that were dropped and sacks caused by passing up an available answer.
+1. pre-snap access attached to a run;
+2. simple run/perimeter or isolated-receiver leverage choice;
+3. one post-snap conflict read;
+4. broader run/keep/pass structures only if they solve a specific problem and the unit can execute them.
 
-No conditioning punishment for interceptions. Correct the football error. If an instruction was unclear, a receiver adjustment conflicted with the quarterback's rule or the protection could not support the call, correct the staff's work too.
+Every package needs a clear read, blocking rule, receiver assignment, and decision deadline.
 
-A useful practice can include individual work, a selected pocket/protection problem, route timing, permitted team work and one situation. These are categories to budget, not mandatory extra periods. Post-practice correction uses a small amount of the permitted workload. Self-scout, opponent study and concept study are separate film tasks.
+If the package makes the quarterback or surrounding unit slower and less certain, remove it.
 
-## 10. Decision checkpoints
+Designed movement and unscheduled scrambling are separate jobs. Teach them separately.
 
-At entry, record the baseline, usable calls, open hypotheses and the first correction. After a retest, record whether the change transferred, remained inconsistent or created another problem. Reduce the menu or change the intervention when evidence warrants it.
+## 7. Situational command
 
-During camp and preseason, use the existing roster plan's starter decision checkpoint: no later than after the third preseason game unless the competition is still unresolved. If it is unresolved, Stone must state the evidence gap and interim football plan; the trade does not decide the answer.
+Situational work should test football decisions, not create artificial complexity.
 
-If the player can operate a limited menu dependably, he can compete with that menu. If his current limitations leave another quarterback better able to run the offense, retain the development work without promising the starting role. Medical unavailability is not a failed learning test.
+### Third down
 
-The December review should distinguish a supportable continuing starter investment, a useful reserve/development role, or the need for another acquisition. Continued uncertainty is possible and should be explained from the available exposure. Installing all the packages is not the definition of success.
+Separate short, medium, and long yardage.
 
-### Source treatment
+Evaluate:
 
-This file adapts the user's supplied development pack as a coaching proposal. Stray transcription words are omitted; the damaged opening sentence is not reconstructed as a new player diagnosis. The clean later progression section supplies the first-read teaching idea.
+- protection;
+- route timing;
+- man and zone answers;
+- awareness of the sticks;
+- whether a checkdown has a realistic conversion path;
+- when the play should be ended rather than extended.
 
-Mechanical benefits, progression through stages and future playing quality remain to be demonstrated. Historical facts, private medical findings, completed practices and fictional staff endorsements are not created by this plan. The existing Prowl documents control CBA, medical and practice implementation.
+### Red zone
 
-## 11. Pre-draft personnel update (March 12-April 24 window)
+Emphasize:
 
-Caldwell acquired Kirk Cousins from Washington for Jacksonville's 2014 second-round selection, using the outright structure already authorized on the trade board. No 2013 pick moved. The required Stone consultation occurred before execution. The Cousins-specific teaching and evaluation plan in this file is now active when the offseason calendar permits the relevant work; acquisition alone does not award Cousins the starting job.
+- compressed spacing;
+- leverage;
+- pressure answers;
+- tight-window placement;
+- matchup selection;
+- when the correct result is a throwaway.
 
-After the Cousins deal, Green Bay offered DE C.J. Wilson for Blaine Gabbert. Caldwell accepted the player-for-player trade to convert quarterback surplus into defensive-front competition. Henne remains as veteran insurance. Gabbert is no longer part of Jacksonville's quarterback evaluation.
+### Two minute
 
-## 12. April 27 draft and quarterback-room update
+Include:
 
-Caldwell selected Tyler Bray at #208 as a developmental quarterback behind Cousins and Henne. This is not a second franchise-level commitment and does not declare Bray ahead of either veteran. Bates will establish Bray's baseline for feet, decisions, pressure response, and functional command under the same evidence rules already written here.
+- clock;
+- timeouts;
+- sideline access;
+- substitution mechanics;
+- protection;
+- spike decisions;
+- communication under pace.
 
-The working quarterback room now contains Cousins, Henne, Jordan Palmer, and Jacksonville's unsigned draft rights to Bray pending later contract and roster decisions. Cousins-specific work is active, but rep allocation, medical availability, rookie contract execution, and the eventual depth order remain unresolved. No player receives a starting or roster guarantee from these transactions.
+A scoring drive does not erase operational errors.
+
+### Backed up and four minute
+
+Account for field position, ball security, clock, and the cost of a sack or turnover.
+
+### Broken play
+
+The quarterback must recognize when the best available result is a completion, scramble, legal throwaway, or acceptance of the end of the play.
+
+Do not turn every failed concept into an improvisation exercise.
+
+## 8. Competition and evaluation
+
+The quarterback competition should emphasize:
+
+1. decision quality;
+2. accuracy and placement;
+3. third-down operation;
+4. protection and situational command;
+5. the ability to execute the offense under pressure and changing pictures.
+
+Practice statistics without context carry limited value.
+
+Create comparable opportunities where possible. Record differences in concept, personnel, protection, and defensive difficulty when the reps are not equivalent.
+
+For a material rep, the coaching record should contain:
+
+- context;
+- concept;
+- expected responsibility;
+- defensive picture;
+- decision;
+- movement and delivery;
+- result;
+- likely cause;
+- correction;
+- next retest.
+
+Do not create a composite numerical quarterback score.
+
+Interceptions and dangerous throws should be classified by cause when the evidence permits, including:
+
+- identification;
+- progression;
+- late decision;
+- unseen defender;
+- placement;
+- pressure or mechanics;
+- receiver error;
+- deflection;
+- justified end-game risk.
+
+More than one cause may apply.
+
+Correct the football error. Do not use conditioning as punishment for an interception.
+
+If the staff created the problem through a contradictory assignment, poor protection structure, or unclear receiver rule, correct the staff's work too.
+
+## 9. Decision checkpoints
+
+### Entry checkpoint
+
+For each quarterback, establish:
+
+- usable calls;
+- current strengths;
+- open questions;
+- first correction;
+- responsibilities not yet ready for expansion.
+
+### Retest checkpoint
+
+After a correction, determine whether it:
+
+- transferred;
+- remains inconsistent;
+- solved the original problem but created another;
+- should be abandoned.
+
+### Camp and preseason checkpoint
+
+The existing roster plan targets a starter decision no later than after the third preseason game unless the evidence remains genuinely unresolved.
+
+If the competition is still unresolved, document the evidence gap and set an interim plan rather than forcing certainty.
+
+Trade cost, draft position, veteran status, and staff preference do not decide the competition.
+
+### December checkpoint
+
+By December, determine whether the observed play supports:
+
+- continued starter investment;
+- a reserve/development role;
+- another acquisition;
+- continued uncertainty because the available evidence remains incomplete.
+
+The purpose of the plan is better quarterback play and better decision-making, not completion of every install item.
