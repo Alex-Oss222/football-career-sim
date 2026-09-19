@@ -81,23 +81,19 @@ class ContinuityTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             check(self.root)
 
-    def test_status_flags_cannot_enable_missing_execution_runtime(self):
+    def test_status_flags_cannot_enable_noncanonical_private_runtime(self):
         manifest = self.root/'runtime/readiness.json'
         data = json.loads(manifest.read_text())
         for item in data['requirements']:
             item['status'] = 'VERIFIED'
         manifest.write_text(json.dumps(data))
-        self.assertTrue(any('Execution integration' in blocker for blocker in check(self.root)))
+        self.assertTrue(any('Private runtime probe' in blocker for blocker in check(self.root)))
 
     def test_structured_readiness_assessment_is_fail_closed(self):
         result = assess(self.root)
         self.assertFalse(result['ready'])
         ids = {blocker['id'] for blocker in result['blockers']}
-        self.assertEqual(
-            ids,
-            {'calibration', 'playing_rules', 'injury_model', 'football_kernel',
-             'private_runtime', 'execution_integration'},
-        )
+        self.assertEqual(ids, {'private_probe'})
         self.assertNotIn('seed', json.dumps(result).lower())
 
     def test_missing_remaining_work_statement_is_invalid(self):

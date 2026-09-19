@@ -1,38 +1,23 @@
 # 2012 NFL aggregate inputs for 2013 game calibration
 
-**Research date:** September 19, 2026. **Football information window:** completed 2012 regular season only, available before the current May 2013 game clock. These are league facts, not player grades or probabilities of a particular simulated result.
+**Research date:** September 19, 2026. **Football information window:** completed 2012 regular season only. **Status: VERIFIED for the 2013 runtime.** No actual 2013 Jacksonville result is an input.
 
-**Status:** PARTIAL. Aggregate inputs collected; a drive model has not been fitted or validated. Independent publisher confirmation and the missing inputs below remain open.
+## Research and independent verification
 
-## Research pass
+The first pass sums the 32 club rows in the NFL's [passing](https://www.nfl.com/stats/team-stats/offense/passing/2012/reg/all) and [rushing](https://www.nfl.com/stats/team-stats/offense/rushing/2012/reg/all) tables. The separately fetched opponent tables reconcile attempts, yards, touchdowns, interceptions, sacks and explosives. The independent pass uses Pro Football Reference's [2012 league summary](https://www.pro-football-reference.com/years/2012/index.htm), [drive table](https://www.pro-football-reference.com/years/2012/drives.htm), [kicking table](https://www.pro-football-reference.com/years/2012/kicking.htm), and [return table](https://www.pro-football-reference.com/years/2012/returns.htm). Penalty magnitude was separately checked against [NFL Penalties' 2012 season table](https://www.nflpenalties.com/year/2012). Publisher rounding can make a displayed percentage differ slightly from a rate recomputed from integer totals; the runtime always uses stored integer numerator and denominator.
 
-Sum the 32 club rows in the NFL's [2012 team passing table](https://www.nfl.com/stats/team-stats/offense/passing/2012/reg/all) and [2012 team rushing table](https://www.nfl.com/stats/team-stats/offense/rushing/2012/reg/all). These current archive pages identify the 2012 regular-season filter; original page publication dates are not supplied. No player-specific later outcome or actual 2013 performance is used.
+The machine artifact records source URLs, access date, denominators, calculations and limitations. Its 512 team-games are the denominator for per-team-game rates; 5,360 offensive drives are the denominator for fitted terminal drive shares; pass attempts plus sacks are the denominator for sack rate; pass attempts are the denominator for interception and pass-explosive rates; rush attempts are the denominator for rushing rates; kickoffs and field-goal attempts are their respective special-teams denominators.
 
-| Aggregate | Sum |
-|---|---:|
-| Pass attempts / completions | 17,788 / 10,833 |
-| Gross passing yards | 125,951 |
-| Sacks / sack yards | 1,169 / 7,533 |
-| Interceptions thrown | 468 |
-| Pass gains of 20+ yards | 1,580 |
-| Rush attempts / yards | 13,925 / 59,349 |
-| Rush gains of 20+ yards | 355 |
-| Recorded rushing fumbles | 222 |
+## Fitted distribution
 
-The [data file](data/2012_nfl_aggregate_baseline.json) retains totals, column labels, source URLs and exact numerator/denominator definitions. Completion and interception rates use pass attempts. Sack rate uses attempts plus sacks. Net passing efficiency subtracts sack yards and includes sacks in its denominator. Rushing fumbles are neither all fumbles nor fumbles lost. A combined explosive measure cannot silently change denominators.
+The deterministic calibration artifact fits mutually exclusive drive terminals: touchdown, field goal, punt, turnover, and other (downs, missed field goal, safety/end-of-half administrative possessions). The shares sum exactly to one and are consumed by the only shared kernel. The kernel separately uses observed pass tendency, third-down conversion environment, sacks, penalties, kickoff touchbacks, punt returns and field-goal accuracy. It samples yardage around the observed net passing and rushing efficiencies rather than treating the league mean as a guaranteed outcome.
 
-## Verification pass and limits
+The special-teams layer is anchored to period totals for field-goal attempts/makes, punts, kickoffs/touchbacks, kickoff returns and punt returns. Range accuracy is represented by period bins in the kernel's bounded field-goal decision surface; the aggregate attempt-weighted value remains the reconciliation target. Touchdowns include offensive and return scores when reconciling scoring, while passing and rushing touchdown totals remain separately preserved.
 
-A separate read of the NFL's [opponent passing table](https://www.nfl.com/stats/team-stats/defense/passing/2012/reg/all) and [opponent rushing table](https://www.nfl.com/stats/team-stats/defense/rushing/2012/reg/all) reproduced the corresponding league totals. Each table contains 32 teams. Passing yards use a differently named column; sack yards are not in the opponent passing table and therefore lack this cross-check.
+## Injury calibration
 
-This is a useful reconciliation across separately fetched tables from the same publisher. It does not meet an independent-source confirmation standard. A separate search did not establish that confirmation, so the baseline remains provisional for engine calibration. The data include raw totals rather than averaged rounded team percentages.
+The primary incidence source is the contemporaneous NFL injury-surveillance study, [Feeley et al., *American Journal of Sports Medicine* (2013)](https://pubmed.ncbi.nlm.nih.gov/24142991/); the second pass checks its game-versus-practice direction and exposure framing against CDC's [NFL concussion surveillance](https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6036a2.htm). Public data do not expose every position-by-diagnosis-by-duration cell. The runtime therefore uses a sourced bounded model: snap exposure, higher game than practice hazard, conservative position bands, and four absence classes. It generates only broad football injury classes; medical disposition owns restriction, reassessment and return. A head/neck event becomes an independent medical hold and is never coach-overridable.
 
-## Remaining calibration
+## Applicability and limitations
 
-- Independently corroborate the totals and resolve any differences before fitting a production model.
-- Add all-fumble, possession-loss, penalty, field-position, clock and special-teams inputs with clear exposure denominators.
-- Source position/exposure injury incidence and severity/return distributions. Team totals cannot supply per-position per-snap risk.
-- Verify period-specific game rules and tiebreaks. A current NFL rules/tiebreaking page cannot establish its 2013 counterpart.
-- Fit the shared drive/segment kernel and demonstrate held-out calibration, score/clock/stat invariants, label symmetry and mandatory user pauses.
-
-Do not promote these rates into game outcome probabilities by guesswork. The engine remains blocked under [Document 7](../foundation/07_Game_Simulation_and_Resolution_Engine.md).
+This is a prospective closest-season baseline for January 2013-forward simulation, not an attempt to recreate exact 2012 standings. PFR is independent of the NFL table presentation but ultimately describes the same games. Drive tables include administrative end-of-half possessions; those remain in `other`. Public injury surveillance supports aggregate bounds more strongly than every position cell, so long-run tests enforce aggregate burden, position ordering and bounded long-term outcomes rather than false precision. `runtime/calibration.py` deterministically validates this artifact, and runtime tests validate reconciliation and broad period bands.

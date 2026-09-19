@@ -1,21 +1,7 @@
-# Runtime preparation
+# Football runtime
 
-`packets.py` implements deterministic event seed derivation, immutable canonical packets, journal-before-draw ordering, idempotent result closure, and refusal of altered event replays. It accepts an already-calibrated distribution. It does not compute football matchups, drives, scores, injuries, pauses or statistics and cannot run a game.
+`kernel.py` is the one calibrated possession kernel used by interactive and background paths. `calibration.py`, `rules.py`, `injuries.py`, and `anchors.py` supply deterministic period inputs, medical events, and private evidence conversion. `packets.py` retains canonical journal-before-draw sampling support.
 
-`python scripts/check_game_readiness.py --json` emits the same fail-closed gate
-assessment in a machine-readable form for deployment tooling. The diagnostic
-contains only public gate identifiers, labels and remaining-work statements; it
-does not probe, print or accept private state. A non-ready assessment exits with
-status 1, just like the human-readable form.
+`private_service.py` is the authenticated localhost-only Engine State deployment. Its SQLite database lives at `/var/lib/football-career-sim-engine/engine.sqlite3`; its bearer credential lives at `/run/secrets/football-career-sim-engine-token`. Neither is in or beneath the repository. The database seeds the career once, binds the current branch snapshot and kernel/schema identity, journals immutable event identifiers before closure, refuses altered packets, supports idempotent replay, records corrections append-only, and exercises a recovery digest during readiness. The API exposes health/readiness and opaque result references, never the seed or journal.
 
-The `PrivateJournal` interface defines the boundary for a future private service. Unit tests use synthetic data and an in-memory fake. That fake is not a persistent or private deployment. No real seed, hidden rating, opponent plan or engine journal is written into this repository or printed by the commands.
-
-## Complete the runtime
-
-1. Finish the sourced calibration and period-rule requirements listed in [game readiness](../state/game_readiness.md).
-2. Implement the shared football kernel and both orchestration paths. Freeze concrete normalized inputs before resolving; do not pass protagonist labels or persuasive prose into the kernel. Validate clock, field position, scores, statistics, medical consequences and user-decision pauses.
-3. Provide an access-isolated private service outside the shared workspace and public Git repository. Its adapter must implement durable atomic event uniqueness, packet closure, idempotent results, append-only corrections, backup/recovery and secret handling. Seed once per career, never per preferred outcome.
-4. Verify recovery after interrupted writes and restarts, unauthorized-read denial, altered-packet refusal, and replay identity. Bind the verification evidence to a specific deployment and current branch input snapshot without publishing private contents.
-5. Integrate a live private-service readiness probe and kernel entry point with the common readiness gate. Until that integration exists, the command fails closed even if someone changes a manifest status to `VERIFIED`.
-
-Corrections need an explicit private correction record referencing the original packet. Do not work around `PacketConflict` by changing the event ID or seed. The public repository owns specifications and code; the private service owns hidden runtime data.
+Run `python scripts/deploy_private_runtime.py` to install/start it. The public adapter honors `FCS_ENGINE_URL` and `FCS_ENGINE_TOKEN_FILE` but stores no secret. `python scripts/check_game_readiness.py` validates repository continuity, artifacts, shared-kernel identity and the authenticated live deployment. It fails closed on missing credentials, service loss, schema/kernel mismatch, uninitialized career, snapshot mismatch or failed recovery.

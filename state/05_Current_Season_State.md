@@ -16,7 +16,7 @@
 | Canonical document | Effective version | Current pointer |
 |---|---|---|
 | Document 1 | `358ccf4feac40830055bae5e4cbd84151536ab9e` | Active foundation source |
-| Document 2 | `8574a71d699779082247c3c3f40eb08700ed3a15` | Active foundation source |
+| Document 2 | `ab790f6e935c99a901a6d39cf3bee5183cf4da3e` | Active foundation source |
 | Document 3 | `38e0ce21e9cf1b62f8d4b9c281955facdaf07b57` | Active foundation source |
 | Document 4 | `JAX-2013-AUG08-WALKTHROUGH-STATE-7`; closed by Entry 19 | 64-player control, Aug. 8 availability and provisional role evidence |
 | Document 6 | 2013 ledger through Entry 19 | August 8 final walkthrough closure |
