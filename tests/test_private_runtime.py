@@ -44,6 +44,47 @@ class PrivateRuntimeTests(unittest.TestCase):
         self.assertTrue(first['administrative_probe_idempotent'])
         self.assertEqual(first,second)
 
+    def post_probe(self, body, token=None):
+        request=Request(self.url+'/admin/probe',data=json.dumps(body).encode(),
+                        headers={'Authorization':f'Bearer {token or self.token}',
+                                 'Content-Type':'application/json'})
+        with urlopen(request) as response: return json.load(response)
+
+    def test_two_administrative_probes_are_identical(self):
+        first=self.post_probe({})
+        second=self.post_probe({})
+        self.assertTrue(first['idempotent'])
+        self.assertTrue(first['journal_fingerprint'])
+        self.assertEqual(first,second)
+
+    def test_administrative_probe_persists_across_store_restart(self):
+        first=self.store.probe()
+        restarted=Store(Path(self.tmp.name)/'state.sqlite3')
+        self.assertEqual(first,restarted.probe())
+
+    def test_unauthorized_administrative_probe_is_rejected(self):
+        with self.assertRaises(HTTPError) as error:
+            self.post_probe({},token='wrong-token')
+        self.assertEqual(error.exception.code,401)
+
+    def test_caller_cannot_select_administrative_probe_identity(self):
+        first=self.post_probe({'probe_id':'a'*64})
+        second=self.post_probe({'probe_id':'b'*64})
+        self.assertEqual(first,second)
+        with self.store.connect() as connection:
+            identities=connection.execute('select probe_id from admin_probes').fetchall()
+        self.assertEqual(len(identities),1)
+
+    def test_bad_auth_snapshot_and_kernel_fail_readiness_closed(self):
+        with self.assertRaises(PrivateRuntimeUnavailable):
+            Client(self.url,token='wrong-token',snapshot='snapshot').readiness()
+        with self.assertRaises(PrivateRuntimeUnavailable):
+            Client(self.url,token=self.token,snapshot='wrong').readiness()
+        with self.store.connect() as connection:
+            connection.execute("update meta set value=? where key='kernel'",(b'wrong-kernel',))
+        with self.assertRaises(PrivateRuntimeUnavailable):
+            Client(self.url,token=self.token,snapshot='snapshot').readiness()
+
     def test_no_seed_or_private_journal_in_repository(self):
         root=Path(__file__).resolve().parents[1]
         import subprocess

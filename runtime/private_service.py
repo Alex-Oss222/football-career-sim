@@ -46,10 +46,11 @@ class Store:
             digest=hashlib.sha256(backup_path.read_bytes()).hexdigest()
             c.execute("INSERT INTO backups(digest,created) VALUES(?,?)",(digest,int(time.time())))
             return bool(seed and len(seed)>=32 and snapshot==expected_snapshot and m.get('kernel',b'').decode()==KERNEL and m.get('schema',b'').decode()==SCHEMA)
-    def probe(self,probe_id):
+    def probe(self):
         """Persist an opaque canary once and return only a stability fingerprint."""
-        if not isinstance(probe_id,str) or len(probe_id)!=64: raise ValueError("invalid probe identity")
         with self.lock, closing(self.connect()) as c, c:
+            snapshot=c.execute("SELECT value FROM meta WHERE key='snapshot'").fetchone()[0].decode()
+            probe_id=hashlib.sha256((snapshot+":"+KERNEL).encode()).hexdigest()
             c.execute("INSERT OR IGNORE INTO admin_probes VALUES(?,?)",(probe_id,int(time.time())))
             row=c.execute("SELECT probe_id,created FROM admin_probes WHERE probe_id=?",(probe_id,)).fetchone()
             seed=c.execute("SELECT value FROM meta WHERE key='seed'").fetchone()[0]
@@ -94,7 +95,7 @@ def handler(store,token,snapshot):
             n=int(self.headers.get("Content-Length","0")); body=json.loads(self.rfile.read(n) or b"{}")
             try:
                 if self.path=="/events/close": return self.send(200,{"result_ref":store.close(body["event_id"],json.dumps(body["packet"],sort_keys=True,separators=(",",":")).encode())})
-                if self.path=="/admin/probe": return self.send(200,store.probe(body["probe_id"]))
+                if self.path=="/admin/probe": return self.send(200,store.probe())
                 if self.path=="/corrections": store.correct(body["event_id"],body["reason"]); return self.send(201,{"recorded":True})
                 self.send(404,{"error":"not found"})
             except (KeyError,ValueError) as e: self.send(409,{"error":str(e)})
