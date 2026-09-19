@@ -1,10 +1,13 @@
-import inspect, json, tempfile, threading, unittest
+import hashlib, inspect, json, tempfile, threading, unittest
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError
 from http.server import ThreadingHTTPServer
+from runtime import KERNEL_VERSION
+from runtime.packets import canonical
 from runtime.private_service import Store, handler
-from runtime.private_client import Client, PrivateRuntimeUnavailable
+from runtime.private_client import (Client, PrivateRuntimeUnavailable,
+                                    _readiness_close_packet)
 
 class PrivateRuntimeTests(unittest.TestCase):
     def setUp(self):
@@ -23,7 +26,7 @@ class PrivateRuntimeTests(unittest.TestCase):
         packet={'event_id':'event-1','fact':'original'}
         first=c.close_event(packet); self.assertEqual(first,c.close_event(packet))
         restarted=Store(Path(self.tmp.name)/'state.sqlite3'); self.assertTrue(restarted.ready())
-        with self.assertRaises(PrivateRuntimeUnavailable):
+        with self.assertRaisesRegex(PrivateRuntimeUnavailable,'altered packet refused'):
             c.close_event({'event_id':'event-1','fact':'changed'})
         self.assertEqual(restarted.close('event-1',b'{"event_id":"event-1","fact":"original"}'),first)
     def test_seed_once_and_correction_is_explicit(self):
@@ -46,6 +49,18 @@ class PrivateRuntimeTests(unittest.TestCase):
         self.assertTrue(first['administrative_probe_idempotent'])
         self.assertEqual(first,second)
         self.assertTrue(first['event_closure_probe_idempotent'])
+
+    def test_readiness_close_canary_avoids_legacy_frozen_identity(self):
+        legacy_id="__readiness_close_probe__:"+hashlib.sha256(
+            ("snapshot:"+KERNEL_VERSION).encode()).hexdigest()
+        legacy_packet={"administrative":True,"event_id":legacy_id,
+                       "kernel":KERNEL_VERSION,"snapshot":"snapshot",
+                       "type":"legacy-readiness-close-probe"}
+        self.store.close(legacy_id,canonical(legacy_packet))
+        current_packet=_readiness_close_packet('snapshot',KERNEL_VERSION)
+        self.assertNotEqual(current_packet['event_id'],legacy_id)
+        client=Client(self.url,token=self.token,snapshot='snapshot')
+        self.assertTrue(client.readiness()['event_closure_probe_idempotent'])
 
     def post(self,path,body,token=None):
         request=Request(self.url+path,data=json.dumps(body).encode(),
