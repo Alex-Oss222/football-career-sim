@@ -41,9 +41,21 @@ def initialize():
                 created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
             )""")
             cur.execute("SELECT value FROM engine_meta WHERE key='career_seed'")
-            if cur.fetchone() is None:
+            row = cur.fetchone()
+            if row is None:
+                career_seed = secrets.token_bytes(32)
                 cur.execute("INSERT INTO engine_meta(key,value) VALUES('career_seed',%s)",
-                            (secrets.token_bytes(32),))
+                            (career_seed,))
+            else:
+                career_seed = bytes(row["value"])
+            fingerprint = hashlib.sha256(career_seed).hexdigest()[:16].encode()
+            cur.execute("SELECT value FROM engine_meta WHERE key='seed_fingerprint'")
+            fp_row = cur.fetchone()
+            if fp_row is None:
+                cur.execute("INSERT INTO engine_meta(key,value) VALUES('seed_fingerprint',%s)",
+                            (fingerprint,))
+            elif bytes(fp_row["value"]) != fingerprint:
+                raise RuntimeError("persisted career seed fingerprint mismatch")
             cur.execute("INSERT INTO engine_meta(key,value) VALUES('snapshot',%s) ON CONFLICT (key) DO UPDATE SET value=EXCLUDED.value",
                         (SNAPSHOT.encode(),))
         conn.commit()
