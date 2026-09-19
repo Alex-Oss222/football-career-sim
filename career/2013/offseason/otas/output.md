@@ -57,3 +57,56 @@ The full-team offseason/OTA family dinner occurred after the May 15 work. Every 
 OTA block 1 closed at the end of May 15 with **64 controlled players**, no transaction, no new injury, no permanent depth-chart award and no financial consequence. The current Top-51 planning room therefore remains the May 5 reconciled **approximately $7.0M-$7.4M** range.
 
 **Next scheduled football event:** May 20-21 OTA block 2. **That block has not been run.**
+
+## May 20-21 — OTA block 2
+
+**Event status:** COMPLETE through the end of May 21, 2013.
+**Event boundary:** This record closes only the May 20-21 voluntary OTA block. May 23 has **not** been run. The missed April 16-18 voluntary veteran minicamp remains a continuity gap and was not backfilled.
+
+### Medical and participation gate
+
+Qualified medical personnel issued fresh football-use instructions before May 20 work rather than carrying the prior block's clearance forward. Daryl Smith was cleared for the assigned work and completed both days without a communicated restriction. Brent Grimes remained in meetings and medically directed rehabilitation/individual work on May 20. Following the next qualified reassessment, he was cleared May 21 for a limited set of controlled, non-contact team-period repetitions, with the medical staff retaining control of the volume and excluding extended or pressure-period work. He completed that assignment without a communicated setback. The staff supplied no new diagnosis and no unrestricted-return date.
+
+Every other controlled player was cleared for the work assigned during the block and participated. No new injury or restriction was communicated. Participation remained voluntary; attendance, rehabilitation placement and optional activity were not used as commitment or character evidence.
+
+### Stone's practice structure and install decisions
+
+Stone made retention under changed presentation the block's first test. Both days followed **Explain -> Show -> Walk -> Rep -> Correct -> Rep again -> Retain -> Add complexity**. May 20 began with unprompted recall of huddle, cadence, formation, protection point, run-combination, coverage-exchange and special-teams substitution language. Only after the applicable unit carried its base job did the staff change alignment, motion, front or distribution.
+
+Offensively, Stone kept Power, Inside Zone, Stick and Drive at the center. He accepted Tice's simplified one-point/one-combination presentation for the interior line, then changed the defensive front without changing the offensive job. The line handled the base declaration more independently, but interior combinations again became late when the front moved after the initial picture. Stone stopped the presentation expansion, returned to the common call and assigned another walk-through/rep-again cycle rather than installing another run family.
+
+The huddle, skill group and protection operation retained enough of Stick and Drive for Stone to introduce **Mesh only as a narrow concept progression**: route-job explanation and walk-through on May 20, then group work and selected team repetitions on May 21. Mesh remained an early install, not a game-ready package. Y-Cross, Counter, Outside Zone, broader protection variation, PRESS tempo and a larger motion menu were deferred. Previously taught purposeful motion remained available only where the underlying job stayed unchanged.
+
+Defensively, Crennel kept the opening emphasis on base alignment, fit, coverage distribution and exchange. The front and linebackers carried the base fit calls without Posluszny having to rescue every alignment, and the secondary handled the original coverage exchange through changed receiver distribution. That earned one return to the previously postponed pressure presentation late May 21. The first look produced a late secondary exchange; Crennel removed the disguise, re-walked rush and coverage ownership, and the group executed the same presentation cleanly when it returned. Stone and Crennel retained that single presentation for recall but did not expand the pressure menu.
+
+Lowry removed some coach placement from core substitution and alignment periods. The units operated the taught punt/kickoff lane and leverage language with greater independence, but hands, onside and broader situational material remained deferred.
+
+### Player and unit evidence
+
+**Quarterbacks.** Kirk Cousins retained the cleanest huddle, cadence and protection-point communication, then carried those jobs through the changed presentation and the first Mesh work. His advantage in this block was operation and processing; the non-contact OTA work did not establish a permanent starting result. Chad Henne retained the simplified reset language and corrected his prior changed-picture delay often enough for Stone to give him continued higher-difficulty presentation work. One late reset remained, so the correction is improved rather than closed. John Parker Wilson stayed assignment-sound in the retained menu without separating his role. Tyler Bray improved the cadence-to-footwork connection after the rep-again cycle, but his progression timing became late when presentation changed; Stone kept him on the core menu rather than burying the correction under Mesh volume.
+
+At the close, Stone established a **provisional practice sequence**, not a depth chart: Cousins will receive the first May 23 exposure to the changed-presentation core, Henne will continue in the same competitive band, Wilson remains in the working rotation, and Bray receives concentrated core-operation work before added concept volume. No QB1 or starter was named.
+
+**Offensive line and skill positions.** Meester again stabilized the point and made fewer coach-dependent corrections. Johnson retained his tackle assignment through the front change and earned continued work with the more demanding presentation; that remains developmental evidence, not a starting award. The interior line improved its base Power/Inside Zone combinations, but late transfer against a changed front remains open and controls the decision to defer another run family.
+
+Shorts retained the Stick and Drive landmarks and transferred his route job through limited motion. Kelce's assignment was sound, and his run-block fit improved when the surface stayed constant; his hand placement and base became inconsistent again when his alignment changed, so Zernhelt kept the correction open and reduced the number of simultaneous variables. C.J. Anderson retained the taught back track and check responsibility. No target or workload share was created.
+
+**Defense.** Posluszny continued to lead communication, but the linebackers increasingly completed the base alignment before his confirmation. Sio Moore retained his corrected coverage landmark against repeated backfield action and received a harder changed-distribution rep; he was late passing the new route relationship once, then corrected it on the return. Poyer retained leverage and communicated the base exchange cleanly. Rambo's prior substitution-call correction held in special-teams work, while his late call on the first pressure-disguise repetition became a separate defense-to-secondary timing correction rather than a repeat of the substitution error. Grimes' limited May 21 team work was medical progression only; it produced no depth-chart conclusion.
+
+**Special teams.** Trawick and Thielen retained multiple taught alignment and lane jobs with less sideline prompting, earning continued cross-unit exposure. Rambo retained the corrected substitution language. Lowry did not award a final unit place or roster outcome.
+
+### May 21 staff close and May 23 carry-forward
+
+- **Participation/availability:** 64 controlled players; Smith completed assigned work without restriction. Grimes advanced only to medically limited May 21 team repetitions and remains subject to fresh May 23 instruction. All others completed assigned work without a new communicated restriction.
+- **Offensive retention:** the core huddle, cadence, point, Power, Inside Zone, Stick and Drive jobs survived the week. Mesh entered only as a narrow early install. Interior changed-front combinations remain the unit-level constraint.
+- **Defensive retention:** base fits and coverage exchange improved enough to retest one pressure presentation. The corrected return rep permits recall on May 23, not broader disguise installation.
+- **Special-teams retention:** core substitution, alignment, lane and leverage work operated with less coach placement. Trawick and Thielen earned continued multi-unit exposure; Rambo's substitution correction held.
+- **Open individual corrections:** Henne must make the changed-picture reset consistently; Bray must keep cadence/footwork connected when the progression picture changes; Kelce must carry block fit and base across alignment changes; Moore must speed the changed-distribution handoff; Rambo must communicate the defensive exchange earlier. The interior line's changed-front combination timing remains open.
+- **Provisional football movement:** Cousins earned first exposure to the harder May 23 quarterback work, with Henne kept in the same live competition; Johnson keeps the more demanding right-tackle presentation; Trawick and Thielen retain cross-unit special-teams exposure. None is a permanent depth, workload, package, roster or game-day award.
+- **May 23 plan:** refresh medical instructions; recall the core without coach prompts; retest the interior combination and the single defensive pressure presentation; continue the narrow Mesh installation only if operation holds; keep Bray's work concentrated on core timing; and give Grimes only the work qualified medical personnel authorize.
+
+### Phase close
+
+OTA block 2 closed at the end of May 21 with **64 controlled players**, no transaction, no new injury, no permanent depth-chart award and no financial consequence. The May 5 Top-51 planning-room authority remains **approximately $7.0M-$7.4M**, and the cap worksheet is unchanged.
+
+**Next scheduled football event:** May 23 OTA day. **May 23 has not been run.**
