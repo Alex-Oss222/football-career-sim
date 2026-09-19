@@ -1,15 +1,15 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2013-MAY21-OTA2-STATE-4`
-**Supersedes:** `JAX-2013-MAY15-OTA1-STATE-3`
-**Readiness:** OTA block 2 is closed with roster control, participation, provisional football evidence and availability synchronized. The unchanged May 5 Top-51 worksheet remains the financial authority.
+**Version:** `JAX-2013-MAY23-OTA6-STATE-5`
+**Supersedes:** `JAX-2013-MAY21-OTA2-STATE-4`
+**Readiness:** May 23 OTA Day 6 is closed with roster control, participation, provisional football evidence and availability synchronized. The unchanged May 5 Top-51 worksheet remains the financial authority.
 **Must be read:** In full before every simulation response.
-**Simulation status:** Jacksonville has completed all prior closed events plus May 20-21 OTA block 2. May 23 has not begun.
-**Snapshot effective:** May 21, 2013, after OTA block 2 and before the May 23 OTA day.
-**Last reconciled:** September 19, 2026; season-ledger Entry 11.
-**Global package checkpoint:** `Canonical update - May 21, 2013 - OTA block 2 closed`.
-**Preceding global package checkpoint:** `Canonical update - May 15, 2013 - OTA block 1 closed`.
+**Simulation status:** Jacksonville has completed all prior closed events plus May 23 OTA Day 6. June 4-7 has not begun.
+**Snapshot effective:** May 23, 2013, after OTA Day 6 and before June 4 OTA work.
+**Last reconciled:** September 19, 2026; season-ledger Entry 12.
+**Global package checkpoint:** `Canonical update - May 23, 2013 - OTA Day 6 closed`.
+**Preceding global package checkpoint:** `Canonical update - May 21, 2013 - OTA block 2 closed`.
 
 ## Effective source-version manifest
 
@@ -18,24 +18,24 @@
 | Document 1 | `697208640886f9f63581f4b865f917f16007f036` | Project instructions unchanged |
 | Document 2 | `4dcdaa9bb3812ffe47b1bc7007dda73204cbc170` | 2013 rules/sourcebook unchanged by this correction |
 | Document 3 | `9538b8e4831eba1a407c394a37c21972f8b8e290` | Stone/Jacksonville authority map unchanged |
-| Document 4 | `JAX-2013-MAY21-OTA2-STATE-4`; branch content closed by Entry 11 | 64-player control, OTA participation/availability and provisional role evidence |
-| Document 6 | 2013 ledger through Entry 11 | OTA block 2 progression authority |
+| Document 4 | `JAX-2013-MAY23-OTA6-STATE-5`; branch content closed by Entry 12 | 64-player control, May 23 participation/availability and provisional role evidence |
+| Document 6 | 2013 ledger through Entry 12 | May 23 OTA progression authority |
 
 ## 1. Master clock and competition position
 
 | Field | Current canonical value |
 |---|---|
-| Master date/time | May 21, 2013, after OTA block 2 close |
+| Master date/time | May 23, 2013, after OTA Day 6 close |
 | Time zone | America/New_York |
 | League/season | NFL, 2013 |
 | Team | Jacksonville Jaguars |
 | Head coach | Alex Stone |
-| Season phase | Offseason; OTA block 2 complete; May 23 OTA day not begun |
+| Season phase | Offseason; May 23 OTA Day 6 complete; June 4-7 OTA block 3 not begun |
 | Record | 0-0; regular season not begun |
-| Last football event | May 20-21 OTA block 2 |
-| Last canonical update | Entry 11 OTA block 2 close |
-| Next football event | **May 23 OTA day** |
-| Current football focus | Refresh May 23 medical communication; recall the retained core, interior combination and single defensive pressure presentation; continue narrow Mesh work only if operation holds |
+| Last football event | May 23 OTA Day 6 |
+| Last canonical update | Entry 12 May 23 OTA close |
+| Next football event | **June 4-7 OTA block 3** |
+| Current football focus | Use the break lawfully; open June 4 with fresh medical communication and unprompted recall of the changed-front combination, narrow Mesh spacing, base defensive exchange and the single pressure presentation |
 | Current calendar | `career/2013/calendar.md` |
 | Historical calendar source | `library/2013_jacksonville_master_calendar.md` |
 
@@ -57,12 +57,12 @@ The controlling Jacksonville calendar is now built through the entire 2013 seaso
 | May 3-5 | Rookie minicamp | Complete |
 | May 13-15 | OTA block 1 | Complete |
 | May 20-21 | OTA block 2 | Complete |
+| May 23 | OTA day | Complete |
 
 ### Remaining offseason and preseason
 
 | Date/window | Event |
 |---|---|
-| **May 23** | OTA day |
 | **Jun. 4-7** | OTA block 3 |
 | **Jun. 11-13** | Mandatory veteran minicamp |
 | Jun. 14-Jul. 21 | Pre-camp individual preparation / no invented club practice |
@@ -223,25 +223,24 @@ Current staff register: `career/2013/coaching_staff.md`.
 | Depth chart / football roles | Stone within eligibility and medical limits |
 | Medical diagnosis and clearance | Qualified medical personnel |
 
-No staff authority or contract changed in Entry 11.
+No staff authority or contract changed in Entry 12.
 
 ## 6. Football development state
 
 - Every controlled player has the established standards material and complete active 2013 Iteration I playbook; OTA evaluation remains limited to taught and assigned work.
-- The offense retained huddle/cadence/formation operation, Power, Inside Zone, Stick, Drive and base protection communication through changed presentation. Narrow Mesh work began, while Y-Cross, Counter, Outside Zone, broader protection/motion work and PRESS tempo remain deferred.
-- Cousins retained the cleanest operation and receives first May 23 exposure to the harder changed-presentation core; Henne improved his reset and remains in the same live competition. Wilson remains in the rotation. Bray stays concentrated on core cadence/footwork/progression timing. No QB1 was named.
-- Meester continued to stabilize line calls; Johnson retained his assignment through the changed front; Shorts transferred landmarks through limited motion. The interior line's changed-front combinations, Kelce's fit across alignment changes, Moore's changed-distribution timing and Rambo's defensive exchange timing remain open corrections.
-- Base defense improved enough to retain one corrected pressure presentation for recall, not broader disguise expansion. Posluszny's unit needed less rescue; Poyer retained leverage/exchange communication.
-- Trawick and Thielen retain provisional cross-unit special-teams exposure. Rambo's prior substitution-call correction held.
+- The offense retained huddle/cadence/formation operation, Power, Inside Zone, Stick, Drive, base protection communication, limited purposeful motion and the narrow Mesh version after its spacing was re-taught. Broader Mesh, Y-Cross, Counter, Outside Zone, broader protection/motion work and PRESS remain uninstalled.
+- Cousins remains first in the provisional practice sequence on cumulative operation evidence. Henne's clean comparable May 23 work narrowed the gap and earned immediate harder work behind Cousins on June 4. Wilson remains in the rotation. Bray stays concentrated on core cadence/footwork/progression timing after another late changed-distribution progression. No QB1 was named.
+- Meester stabilized the line's correction cycle; Johnson retained his assignment through harder presentation; Shorts and Anderson retained taught jobs. The interior changed-front combination improved after a repeat but remains a June 4 opening test. Kelce's fit traveled farther across alignment change but remains open after a later technique loss.
+- Base defense and exactly one pressure presentation survived recall without broader disguise expansion. Posluszny's unit needed less rescue. Moore's changed-distribution handoff, Poyer's leverage/exchange and Rambo's defensive exchange held on May 23.
+- Trawick earned first June 4 exposure to another already-taught cross-unit sequence. Thielen retains provisional cross-unit exposure after one corrected communication rep. Rambo's substitution language remained clean.
 - No permanent depth chart, starting role, workload/target share, package place, final special-teams assignment or roster outcome was awarded.
 - The full-team OTA family dinner occurred May 15 under voluntary, private and non-evaluative rules; no second dinner was invented for this block.
 
-## 7. Medical / availability boundary after OTA block 2
+## 7. Medical / availability boundary after May 23 OTA Day 6
 
-- Qualified staff cleared Daryl Smith for May 20-21 assigned work; he completed it without a communicated restriction.
-- Brent Grimes remained in meetings and medically directed rehabilitation/individual work May 20. Following qualified reassessment, he completed limited controlled, non-contact team repetitions May 21, excluding extended and pressure-period work, without a communicated setback. No new diagnosis or unrestricted-return date was supplied.
-- Every other controlled player completed assigned May 20-21 work without a new communicated restriction.
-- All clearance remains event-bounded. Fresh ordinary medical communication precedes May 23 work, and no coach may override it.
+- Qualified staff cleared Daryl Smith and every controlled player other than Grimes for assigned May 23 work; each completed it without a newly communicated restriction.
+- Grimes completed medically controlled meetings, rehabilitation/individual work and selected group/base team repetitions. He remained excluded from extended team and pressure-recall work and completed the assignment without a communicated setback. No new diagnosis, unrestricted clearance or return date was supplied.
+- All clearance remains event-bounded. Fresh ordinary medical communication precedes June 4 work, and no coach may override it.
 
 ## 8. Controlling decisions
 
@@ -258,6 +257,7 @@ No staff authority or contract changed in Entry 11.
 | Entry 9 correction | Calendar, roster control, rookie contracts and May 5 cap state corrected without rerunning football |
 | May 13-15 OTA block 1 | Participation/availability and provisional football evidence closed; no transaction, permanent depth decision or cap change |
 | May 20-21 OTA block 2 | Retention/transfer block closed; Grimes advanced to limited team work; provisional practice sequence/install changes recorded; no transaction or permanent depth decision |
+| May 23 OTA Day 6 | Retained core and narrow Mesh survived correction; one defensive pressure survived recall; Grimes remained medically limited; provisional June 4 responsibilities recorded; no transaction or permanent depth decision |
 
 ## 9. Live-game checkpoint
 
@@ -267,9 +267,9 @@ There is no score, possession, game clock, timeout, challenge, game-day active l
 
 ## 10. Immediate next step
 
-The simulation is positioned to enter the **May 23 OTA day** after fresh ordinary medical communication. May 23 has not been run.
+The simulation is positioned to enter the **June 4-7 OTA block 3** after the lawful break and fresh ordinary medical communication. June 4 has not been run.
 
-No roster-control or cap-accounting uncertainty blocks the next OTA day.
+No roster-control or cap-accounting uncertainty blocks the next OTA block.
 
 ## 11. Snapshot replacement rule
 

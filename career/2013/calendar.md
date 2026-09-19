@@ -2,15 +2,15 @@
 
 **Function:** Branch-facing schedule and phase control.
 **Historical source:** `../../library/2013_jacksonville_master_calendar.md`.
-**Current branch checkpoint:** May 21, 2013, OTA block 2 closed.
+**Current branch checkpoint:** May 23, 2013, OTA Day 6 closed.
 **Rule:** Dates/opponents/deadlines are historical rails. Attendance, transactions, performance and game results are branch events.
 
 ## Current checkpoint
 
-- Completed through: May 21, OTA block 2.
-- Next scheduled football work: **OTA day, May 23**.
+- Completed through: May 23, OTA Day 6.
+- Next scheduled football work: **OTA block 3, June 4-7**.
 - Preserved continuity gap: April 16-18 voluntary veteran minicamp was not run before the simulation advanced. Do not retroactively create attendance, install or player evidence.
-- Roster control remains 64. Entry 11 closes May 20-21 participation, medical communication and football work. No transaction changed the May 5 Top-51 worksheet. May 23 has not been run.
+- Roster control remains 64. Entry 12 closes May 23 participation, medical communication and football work. No transaction changed the May 5 Top-51 worksheet. June 4-7 has not been run.
 
 ## 2013 branch schedule
 
@@ -27,8 +27,8 @@
 | May 3-5 | Rookie minicamp | `offseason/rookie_minicamp/plan.md`, `output.md` | Complete |
 | **May 13-15** | OTA block 1 | `offseason/otas/plan.md`, `output.md` | **Complete** |
 | **May 20-21** | OTA block 2 | same | **Complete** |
-| **May 23** | OTA day | same | **Next** |
-| **Jun. 4-7** | OTA block 3 | same | Future |
+| **May 23** | OTA day | same | **Complete** |
+| **Jun. 4-7** | OTA block 3 | same | **Next** |
 | **Jun. 11-13** | Mandatory veteran minicamp | `offseason/mandatory_minicamp/plan.md`, `output.md` | Future |
 | Jun. 14-Jul. 21 | Pre-camp individual preparation | readiness standard | Future |
 | **Jul. 22** | Rookies and quarterbacks report | `offseason/training_camp/plan.md` | Future |

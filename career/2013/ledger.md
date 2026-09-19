@@ -423,3 +423,29 @@ No signing, release, trade, waiver move, contract change, verified bonus consequ
 The next football event is the **May 23 OTA day**. Medical instructions, core recall, the interior combination, the single defensive pressure presentation and the narrow Mesh progression are carry-forward items. **May 23 has not been run.**
 
 **Commit closed — Canonical update - May 21, 2013 - OTA block 2 closed — canonical through May 21, before May 23 OTA work**
+
+## Entry 12 — May 23 OTA day
+
+**Effective checkpoint:** May 23, 2013, after OTA Day 6.
+**Global package checkpoint:** `Canonical update - May 23, 2013 - OTA Day 6 closed`.
+**Preceding global package checkpoint:** `Canonical update - May 21, 2013 - OTA block 2 closed`.
+
+Jacksonville obtained fresh qualified medical instructions before work. Daryl Smith and every controlled player other than Brent Grimes were available for and completed assigned non-contact work without a newly communicated restriction. Grimes again received a medically controlled assignment of meetings, rehabilitation, individual work and selected group/base team repetitions; he remained excluded from the extended team and pressure-recall periods. He completed the assignment without a communicated setback, but no new diagnosis, unrestricted clearance or return date was supplied.
+
+Stone ran May 23 as a retention checkpoint. Meetings and walkthrough preceded individual, group, special-teams, legal 7-on-7/9-on-7 and selected 11-on-11 work. When the interior line's changed-front combination echo was late, Stone and Tice returned to point, echo and confirmation, repeated the period and obtained correct return work. The correction improved but remains a June 4 opening test, so Counter, Outside Zone and broader protection expansion stayed deferred.
+
+The retained offensive core survived: huddle/cadence/formation operation, protection point, Power, Inside Zone, Stick, Drive and limited purposeful motion. Narrow Mesh spacing compressed on its first team sequence; after Tice re-taught the stagger, the return work held for Cousins, Henne and Wilson. Stone retained only that narrow version. He did not install broader Mesh, Y-Cross, Counter, Outside Zone, PRESS, expanded protection or a larger motion package.
+
+Cousins handled the opening harder operation cleanly, corrected one late movement to the underneath Mesh window and remains first in the provisional practice sequence on cumulative evidence. Henne handled comparable changed-picture work cleanly, narrowing the operational gap and earning immediate comparable harder work behind Cousins on June 4. Wilson remained assignment-sound without separating. Bray retained cadence-to-footwork improvement but was again late in progression timing after a coverage change, so Stone narrowed his remaining work to correct core timing. No QB1 or permanent depth order was named.
+
+Meester remained the line's communication stabilizer; Johnson retained his assignment through harder presentation and keeps that developmental exposure without a starting award. Shorts and Anderson retained taught jobs. Kelce's hand placement/base traveled through multiple alignments before widening on a later group rep, leaving the correction improved but open.
+
+Crennel called and sequenced the defense. Base fronts, fits and coverage exchange held with less Posluszny rescue. Moore's changed-distribution handoff, Poyer's leverage/exchange and Rambo's defensive exchange communication held in the assigned work. The single retained pressure presentation operated with correct rush/replacement and secondary ownership, including on the return against permitted motion. Crennel retained exactly that presentation and added no broader pressure/disguise menu. Grimes did not take pressure-period work.
+
+Lowry's core special-teams substitution, alignment and lane/leverage work survived with reduced coach placement. Trawick earned first June 4 exposure to another already-taught cross-unit sequence. Thielen retained cross-unit work after correcting one unnecessary wait for confirmation; Rambo's substitution language remained clean. No final unit or roster job was awarded.
+
+Stone closed the day by directing lawful voluntary conditioning, recovery, treatment and individual study during the break, with no unscheduled club practice and no attendance-based role judgment. June 4 begins with fresh medical communication, unprompted core recall, the changed-front combination, narrow Mesh spacing, base defensive exchange and the one pressure presentation. No injury, transaction, staff change, permanent role award or financial event occurred. The roster remains 64 and the unchanged May 5 Top-51 worksheet remains authority at approximately $7.0M-$7.4M.
+
+The next football event is **June 4-7 OTA block 3**. **June 4 has not been simulated.**
+
+**Commit closed — Canonical update - May 23, 2013 - OTA Day 6 closed — canonical through May 23, before June 4 OTA work**
