@@ -1,5 +1,7 @@
 # Jacksonville Jaguars — Initial 2013 Cap and Contract Sheet
 
+> **Historical starting finances:** The tables below remain the January initialization baseline. The [March 12 signing and cap ledger](free_agency/signings.md) now carries the completed batch's annual charges, cash, guarantees, release-accounting gaps and approximately $8.35M remaining planning room. This pointer does not revise the baseline figures.
+
 **Accounting date:** January 15, 2013  
 **League-year distinction:** the 2013 league year and its $123,000,000 cap do not begin until March 12, 2013 at 4:00 p.m. ET.  
 **Status:** `DECISION-USABLE PLANNING BASELINE; 20 TRANSCRIBED 2013 PLAYER CAP ROWS; JANUARY ROOM APPROXIMATE; FULL TOP-51 LEDGER STILL OPEN`

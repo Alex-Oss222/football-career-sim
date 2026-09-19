@@ -1,5 +1,7 @@
 # Jacksonville Jaguars — Initial Roster Snapshot
 
+> **Historical snapshot:** This file preserves the January 15 starting inventory. For the completed March 12 signings, re-signings and releases, use the [current roster](../roster.md) and [signing ledger](free_agency/signings.md). Historical active/IR labels below do not establish current status.
+
 **As of:** January 15, 2013  
 **Mode:** real pre-divergence facts; counterfactual personnel decisions begin after this snapshot  
 **Status:** `POPULATED WITH NOTED SOURCE LIMITATIONS — TRANSACTION-LEDGER RECONCILIATION STILL REQUIRED`

@@ -11,7 +11,7 @@
 - Medical-state ownership: A dated, coach-facing Document 6 medical or availability event is the source event. The individual player record in this document is the latest canonical current state derived from it. The player index, medical control table, and Document 5 are derived summaries.
 - Correction authority: Document 6 is the sole append-only correction and supersession ledger. This document stores current corrected values and generated pointers only.
 - Information boundary: All six principal canonical documents are coach-facing. Information not plausibly known to the head coach must not appear in this package. Any supported private simulator state must live outside the six-document package and outside every handoff.
-- Initialization status: **POPULATED, NOT RECONCILED.** The January 15, 2013 Jacksonville baseline is entered below, but exact reserve/futures status, medical clearance, individual annual cap charges, dead money, adjusted cap, and active staff appointments remain blocking. Unused template fields remain bracketed and are not simulation facts.
+- Initialization status: **COMPLETED FREE-AGENCY BATCH RECONCILED WITH NOTED UNCERTAINTY.** The March 12 outcomes are applied below. Full offseason contract-control, medical and club cap reconciliation remains incomplete; this is not a game-readiness certification. Unused templates are schemas, not simulation facts.
 
 ## Registry identity
 
@@ -20,21 +20,21 @@
 | Team | Jacksonville Jaguars |
 | Competition and governing body | National Football League |
 | Season | 2013 |
-| Owned content last changed/effective | January 15, 2013; exact time not established |
-| Season phase and week | Offseason — initialization build |
-| Real, fictional, or mixed personnel | Mixed: real January 15 personnel baseline; counterfactual Alex Stone hire |
+| Owned content last changed/effective | March 12, 2013, 4:00 p.m. ET (recorded batch time) |
+| Season phase and week | 2013 offseason; opening free-agency batch complete |
+| Real, fictional, or mixed personnel | Real player identities; accepted counterfactual hires and transactions |
 | Divergence point | January 15, 2013 — Alex Stone accepts Jacksonville head-coach offer |
-| Applicable roster rule source | Document 2 §11.1; 2013 NFL 53-man / 46 game-day / 8-player practice-squad rules |
+| Applicable roster rule source | Document 2 §11.1; use the offseason rules, not an in-season active-list count |
 | Applicable contract, eligibility, or scholarship rule source | Document 2 §11.1 and `career/2013/offseason/initial_cap_sheet.md` |
-| Document 2 locked version | Rebuild draft 1.5 (current repository version) |
+| Document 2 locked version | Current source blob `4dcdaa9bb3812ffe47b1bc7007dda73204cbc170`; formal active-only lock not asserted |
 | Document 3 authority-map version | Reconciled January 15, 2013 Stone/Jacksonville version |
-| Document 4 register version | JAX-2013-INIT-STAGED-1 |
-| Supersedes Document 4 version/content-changing update | `[NONE]` |
-| Last Document 4 content-changing update | 2013-INIT-ROSTER (staged; not closed) |
-| Latest Document 6 source event applied to Document 4 content | No closed initialization event yet |
-| Last registry-wide reconciliation | September 18, 2026 research build; blocking gaps remain |
+| Document 4 register version | JAX-2013-FA-ROSTER-1 |
+| Supersedes Document 4 version/content-changing update | JAX-2013-INIT-STAGED-1 / 2013-INIT-ROSTER |
+| Last Document 4 content-changing update | Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency |
+| Latest Document 6 source event applied to Document 4 content | career/2013/ledger.md, Entry 3; preserved March 12 batch |
+| Last registry-wide reconciliation | September 19, 2026 documentation reconciliation of the March 12 batch; limits below |
 | Last full continuity audit | `[NOT YET PERFORMED]` |
-| Unresolved registry conflicts | No contradictory facts identified; blocking source gaps listed below |
+| Unresolved registry conflicts | Inherited contract-control gaps, release accounting, complete Top-51 worksheet and medical availability |
 
 ## Canon and evidence conventions
 
@@ -178,112 +178,222 @@ Career initialization remains blocked until:
 - no blocking roster, staff, medical, rights, authority, or real-person conflict remains; and
 - the starting snapshot is linked to a closed Document 6 canonical update.
 
-## Jacksonville initialization snapshot (staged)
+## Jacksonville current transaction reconciliation
 
-**Source files:** `career/2013/offseason/initial_roster.md` and `career/2013/offseason/initial_cap_sheet.md`. This is a coach-facing factual inventory, not a depth chart or evaluation.
+**Source:** [Season ledger, Entry 3](../career/2013/ledger.md), checkpoint `Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency`. [Readable roster](../career/2013/roster.md). The [January inventory](../career/2013/offseason/initial_roster.md) and [starting cap sheet](../career/2013/offseason/initial_cap_sheet.md) remain historical baselines.
 
-### Staged roster-status reconciliation
+### Roster reconciliation
 
-| Exact primary status | Player population | Current count | Governing treatment | Reconciled |
-|---|---|---:|---|---|
-| Final 2012 Week 17 active roster | See player index below | 53 | Historical snapshot only; 2013 offseason status requires dated transaction verification | No — staged |
-| Season-ending reserve/injured cases separately identified | Gabbert, Jones-Drew, Robinson, Shorts, Lowery, Branch, Brewster, Parmele, D’Anthony Smith, Rackley | 10 | Exact January 15 designation must be verified from an official transaction ledger | No — staged |
-| Practice squad / reserve-future / other offseason control | Unknown | Unknown | Must be established from a dated January 15 transaction ledger | No — blocking |
+| Population | Count | Current interpretation |
+|---|---:|---|
+| January research inventory | 63 | Historical starting names, not a verified March control list |
+| Completed releases | 4 | Removed from working inventory; financial obligations stay open |
+| Outside additions | 4 | Marks, Miller, Ball, Grimes |
+| Working inventory | 63 | 63 - 4 + 4; no double-count for re-signings |
+| Confirmed batch agreements within that inventory | 6 | Four outside additions plus Meester and Smith |
+| Historical carry-forwards within that inventory | 57 | Current contract, rights and exact primary status still unverified |
+| Official offseason controlled-player count / open slots | Unknown | Requires expiring-contract, tender and reserve/futures reconciliation |
 
-The 63 listed players are disjoint between the first two research buckets. They are not asserted to be the complete NFL offseason control list.
+Historical research buckets in the index are provenance only. No old active/IR label is promoted to current primary status or medical clearance. Bennett and Forsett were not acquired.
 
-### Staged financial reconciliation
+### Financial reconciliation
 
-| Control | Current position | Governing condition | Reconciled |
-|---|---|---|---|
-| League salary-cap legality | 2013 league ceiling: $123,000,000 | 2013 league year begins March 12 at 4:00 p.m. ET | Rule confirmed; club position not reconciled |
-| League accounting liability | Unknown | Requires every annual player charge, dead money, carryover and adjustment | No — blocking |
-| Cash and guarantees | Partial summaries only | Contract totals do not establish annual cash | No — blocking |
-| Internal owner/staff budget | Funded assistant budget exists; dollars unknown | Never relabeled as league cap | Supported qualitative term only |
-| Open roster places | Unknown | Complete offseason control list required | No — blocking |
+| Control | Current value | Evidence limit |
+|---|---|---|
+| Six-deal total contract value | $20.50M | Recorded agreements |
+| Scheduled 2013 cap / 2014 cap | $13.75M / $6.75M | Derived salary plus bonus proration |
+| 2013 salary + signing bonus / 2014 salary if retained | $15.00M / $5.50M | Full salary earned; bonus payment installments unrecorded |
+| Bonuses plus expressly guaranteed salary | At least $9.10M | Marks/Ball/Meester base guarantees unspecified |
+| Remaining planning room | Approximately $8.35M | Starting ~$22.10M less gross $13.75M; not certified net room |
+| Four releases | Completed; cap/dead-money effects unresolved | No savings booked; unknown is not zero |
+| Club cap legality / total liabilities | Not fully reconciled | Adjusted cap, full counted roster and surviving obligations needed |
+| Staff operating expense | Existing assistant contract register | Separate from player cap; no salary terms changed |
 
-### Staged staff reconciliation
+Exact player schedules, future exposure and the reconciliation formula are maintained in [signings.md](../career/2013/offseason/free_agency/signings.md). Do not double-count carryover, a re-signed player's prior obligation, or signing-bonus cash as additional cap.
 
-| Role | Current operating result | Evidence/status | Reconciled |
-|---|---|---|---|
-| Head coach | Alex Stone | Accepted counterfactual contract; protagonist contract belongs in Document 3 | Yes as hiring fact |
-| General manager | David Caldwell | Verified pre-divergence appointment | Yes |
-| Offensive, defensive and special-teams coaches | Not appointed under Stone | 2012 incumbents are prior-staff facts only; no retention inferred | No — blocking before play |
-| Ordinary offensive play caller | Alex Stone under accepted contract | Document 3 authority map | Authority established; operating staff not complete |
+### Staff and authority reconciliation
 
-### Initialization result
+The [current coaching staff](../career/2013/coaching_staff.md) and season-ledger Entry 2 establish completed staff hiring. Stone calls the offense; Mike Tice coordinates it; Romeo Crennel calls the defense; Alan Lowry directs special teams. Caldwell remains the personnel/contract/cap authority. These are existing operating assignments under Document 3 §5, not new grants of authority. Staff contracts remain in the current staff register and outside the NFL player cap.
 
-- Register status: **NOT INITIALIZED — POPULATED WITH BLOCKING SOURCE GAPS**.
-- Blocking items: exact January 15 controlled-player/list inventory; individual 2013 cap ledger and club adjustments; coach-facing medical clearance baseline; Stone staff appointments; closed Document 6 initialization event and matching Document 5 snapshot.
-- No depth chart, scheme fit, player evaluation, health inference, or actual post-divergence transaction has been created.
+### Scope of closure
 
-## Populated player index — January 15 research baseline
+The completed transaction batch and its derived roster/cap summaries are reconciled. The whole club is not certified game-ready: exact offseason control, full cap accounting and coach-facing medical availability remain incomplete. No additional personnel result, medical clearance, installed scheme or depth-chart assignment is created.
 
-| Player | Stable player ID | Position group | Research status bucket | Contract status | Current football role | Derived availability | Latest Document 6 source event | Last closed checkpoint affecting player |
+## Current working player index
+
+Batch agreements have current transaction evidence. Other rows retain historical person records and explicitly unresolved March control. They are not asserted to be current signed players.
+
+| Player | Stable player ID | Position group | Historical source or batch evidence | Contract status | Current football role | Derived availability | Latest Document 6 source event | Last closed checkpoint affecting player |
 |---|---|---|---|---|---|---|---|---|
-| Blaine Gabbert | JAX-BLAINEGABBERT | QB | Reserve/injured at season close — exact Jan. 15 list designation requires transaction-ledger confirmation | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Chad Henne | JAX-CHADHENNE | QB | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Jordan Palmer | JAX-JORDANPALMER | QB | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Jalen Parmele | JAX-JALENPARMELE | RB | Reserve/injured at season close — exact Jan. 15 list designation requires transaction-ledger confirmation | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Jonathan Grimes | JAX-JONATHANGRIMES | RB | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Keith Toston | JAX-KEITHTOSTON | RB | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Maurice Jones-Drew | JAX-MAURICEJONESDREW | RB | Reserve/injured at season close — exact Jan. 15 list designation requires transaction-ledger confirmation | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Richard Murphy | JAX-RICHARDMURPHY | RB | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Greg Jones | JAX-GREGJONES | FB | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Montell Owens | JAX-MONTELLOWENS | FB | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Cecil Shorts | JAX-CECILSHORTS | WR | Reserve/injured at season close — exact Jan. 15 list designation requires transaction-ledger confirmation | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Jerrell Jackson | JAX-JERRELLJACKSON | WR | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Jordan Shipley | JAX-JORDANSHIPLEY | WR | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Justin Blackmon | JAX-JUSTINBLACKMON | WR | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Laurent Robinson | JAX-LAURENTROBINSON | WR | Reserve/injured at season close — exact Jan. 15 list designation requires transaction-ledger confirmation | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Mike Brown | JAX-MIKEBROWN | WR | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Toney Clemons | JAX-TONEYCLEMONS | WR | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Allen Reisner | JAX-ALLENREISNER | TE | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Isaiah Stanback | JAX-ISAIAHSTANBACK | TE | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Marcedes Lewis | JAX-MARCEDESLEWIS | TE | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Zach Potter | JAX-ZACHPOTTER | TE | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Cameron Bradfield | JAX-CAMERONBRADFIELD | T | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Eugene Monroe | JAX-EUGENEMONROE | T | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Guy Whimper | JAX-GUYWHIMPER | T | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Austin Pasztor | JAX-AUSTINPASZTOR | G | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Eben Britton | JAX-EBENBRITTON | G | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Mark Asper | JAX-MARKASPER | G | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Uche Nwaneri | JAX-UCHENWANERI | G | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Will Rackley | JAX-WILLRACKLEY | G | Reserve/injured at season close — exact Jan. 15 list designation requires transaction-ledger confirmation | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Brad Meester | JAX-BRADMEESTER | C | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Mike Brewster | JAX-MIKEBREWSTER | C | Reserve/injured at season close — exact Jan. 15 list designation requires transaction-ledger confirmation | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Steve Vallos | JAX-STEVEVALLOS | C | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Andre Branch | JAX-ANDREBRANCH | DE | Reserve/injured at season close — exact Jan. 15 list designation requires transaction-ledger confirmation | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Austen Lane | JAX-AUSTENLANE | DE | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| George Selvie | JAX-GEORGESELVIE | DE | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Jason Babin | JAX-JASONBABIN | DE | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Jeremy Mincey | JAX-JEREMYMINCEY | DE | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| John Chick | JAX-JOHNCHICK | DE | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| C.J. Mosley | JAX-CJMOSLEY | DT | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| D'Anthony Smith | JAX-DANTHONYSMITH | DT | Reserve/injured at season close — exact Jan. 15 list designation requires transaction-ledger confirmation | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Jeris Pendleton | JAX-JERISPENDLETON | DT | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Jerome Long | JAX-JEROMELONG | DT | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Terrance Knighton | JAX-TERRANCEKNIGHTON | DT | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Tyson Alualu | JAX-TYSONALUALU | DT | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Kyle Bosworth | JAX-KYLEBOSWORTH | MLB | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Paul Posluszny | JAX-PAULPOSLUSZNY | MLB | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Brandon Marshall | JAX-BRANDONMARSHALL | OLB | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Daryl Smith | JAX-DARYLSMITH | OLB | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Julian Stanford | JAX-JULIANSTANFORD | OLB | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Russell Allen | JAX-RUSSELLALLEN | OLB | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Aaron Ross | JAX-AARONROSS | CB | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Antwaun Molden | JAX-ANTWAUNMOLDEN | CB | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Derek Cox | JAX-DEREKCOX | CB | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Kevin Rutland | JAX-KEVINRUTLAND | CB | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Mike Harris | JAX-MIKEHARRIS | CB | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Rashean Mathis | JAX-RASHEANMATHIS | CB | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Chris Prosinski | JAX-CHRISPROSINSKI | FS | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Antwon Blake | JAX-ANTWONBLAKE | SS | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Dawan Landry | JAX-DAWANLANDRY | SS | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Dwight Lowery | JAX-DWIGHTLOWERY | S | Reserve/injured at season close — exact Jan. 15 list designation requires transaction-ledger confirmation | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Josh Scobee | JAX-JOSHSCOBEE | K | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Bryan Anger | JAX-BRYANANGER | P | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
-| Jeremy Cain | JAX-JEREMYCAIN | LS | 2012 final active roster | Contract detail: see initial cap sheet | Not assigned | Availability requires medical reconciliation | 2013-INIT-ROSTER | INITIALIZATION-STAGED |
+| Blaine Gabbert | JAX-BLAINEGABBERT | QB | Reserve/injured at season close — exact Jan. 15 list designation requires transaction-ledger confirmation | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Chad Henne | JAX-CHADHENNE | QB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Jordan Palmer | JAX-JORDANPALMER | QB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Jalen Parmele | JAX-JALENPARMELE | RB | Reserve/injured at season close — exact Jan. 15 list designation requires transaction-ledger confirmation | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Jonathan Grimes | JAX-JONATHANGRIMES | RB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Keith Toston | JAX-KEITHTOSTON | RB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Maurice Jones-Drew | JAX-MAURICEJONESDREW | RB | Reserve/injured at season close — exact Jan. 15 list designation requires transaction-ledger confirmation | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Richard Murphy | JAX-RICHARDMURPHY | RB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Greg Jones | JAX-GREGJONES | FB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Montell Owens | JAX-MONTELLOWENS | FB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Cecil Shorts | JAX-CECILSHORTS | WR | Reserve/injured at season close — exact Jan. 15 list designation requires transaction-ledger confirmation | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Jerrell Jackson | JAX-JERRELLJACKSON | WR | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Jordan Shipley | JAX-JORDANSHIPLEY | WR | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Justin Blackmon | JAX-JUSTINBLACKMON | WR | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Mike Brown | JAX-MIKEBROWN | WR | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Toney Clemons | JAX-TONEYCLEMONS | WR | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Allen Reisner | JAX-ALLENREISNER | TE | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Isaiah Stanback | JAX-ISAIAHSTANBACK | TE | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Marcedes Lewis | JAX-MARCEDESLEWIS | TE | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Zach Potter | JAX-ZACHPOTTER | TE | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Cameron Bradfield | JAX-CAMERONBRADFIELD | T | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Eugene Monroe | JAX-EUGENEMONROE | T | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Austin Pasztor | JAX-AUSTINPASZTOR | G | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Eben Britton | JAX-EBENBRITTON | G | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Mark Asper | JAX-MARKASPER | G | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Uche Nwaneri | JAX-UCHENWANERI | G | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Will Rackley | JAX-WILLRACKLEY | G | Reserve/injured at season close — exact Jan. 15 list designation requires transaction-ledger confirmation | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Brad Meester | JAX-BRADMEESTER | C | Re-signed March 12 | 1 year(s), $1.50M; record below | Not assigned | No new clearance finding recorded | 2013 ledger Entry 3 | JAX-2013-FA-ROSTER-1 |
+| Mike Brewster | JAX-MIKEBREWSTER | C | Reserve/injured at season close — exact Jan. 15 list designation requires transaction-ledger confirmation | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Steve Vallos | JAX-STEVEVALLOS | C | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Andre Branch | JAX-ANDREBRANCH | DE | Reserve/injured at season close — exact Jan. 15 list designation requires transaction-ledger confirmation | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Austen Lane | JAX-AUSTENLANE | DE | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| George Selvie | JAX-GEORGESELVIE | DE | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Jason Babin | JAX-JASONBABIN | DE | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Jeremy Mincey | JAX-JEREMYMINCEY | DE | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| John Chick | JAX-JOHNCHICK | DE | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| C.J. Mosley | JAX-CJMOSLEY | DT | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| D'Anthony Smith | JAX-DANTHONYSMITH | DT | Reserve/injured at season close — exact Jan. 15 list designation requires transaction-ledger confirmation | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Jeris Pendleton | JAX-JERISPENDLETON | DT | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Jerome Long | JAX-JEROMELONG | DT | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Roy Miller | JAX-ROYMILLER | DT | Signed March 12 | 2 year(s), $5.00M; record below | Not assigned | No new clearance finding recorded | 2013 ledger Entry 3 | JAX-2013-FA-ROSTER-1 |
+| Sen'Derrick Marks | JAX-SENDERRICKMARKS | DT | Signed March 12 | 1 year(s), $1.50M; record below | Not assigned | No new clearance finding recorded | 2013 ledger Entry 3 | JAX-2013-FA-ROSTER-1 |
+| Terrance Knighton | JAX-TERRANCEKNIGHTON | DT | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Tyson Alualu | JAX-TYSONALUALU | DT | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Kyle Bosworth | JAX-KYLEBOSWORTH | MLB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Paul Posluszny | JAX-PAULPOSLUSZNY | MLB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Brandon Marshall | JAX-BRANDONMARSHALL | OLB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Daryl Smith | JAX-DARYLSMITH | OLB | Re-signed March 12 | 2 year(s), $6.00M; record below | Not assigned | Club medical review satisfactory for the short return; no practice clearance or workload specified | 2013 ledger Entry 3 | JAX-2013-FA-ROSTER-1 |
+| Julian Stanford | JAX-JULIANSTANFORD | OLB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Russell Allen | JAX-RUSSELLALLEN | OLB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Alan Ball | JAX-ALANBALL | CB | Signed March 12 | 1 year(s), $1.00M; record below | Not assigned | No new clearance finding recorded | 2013 ledger Entry 3 | JAX-2013-FA-ROSTER-1 |
+| Antwaun Molden | JAX-ANTWAUNMOLDEN | CB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Brent Grimes | JAX-BRENTGRIMES | CB | Signed March 12 | 1 year(s), $5.50M; record below | Not assigned | Club medical review completed; Achilles uncertainty retained; no guaranteed recovery or practice clearance | 2013 ledger Entry 3 | JAX-2013-FA-ROSTER-1 |
+| Derek Cox | JAX-DEREKCOX | CB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Kevin Rutland | JAX-KEVINRUTLAND | CB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Mike Harris | JAX-MIKEHARRIS | CB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Rashean Mathis | JAX-RASHEANMATHIS | CB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Chris Prosinski | JAX-CHRISPROSINSKI | FS | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Antwon Blake | JAX-ANTWONBLAKE | SS | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Dwight Lowery | JAX-DWIGHTLOWERY | S | Reserve/injured at season close — exact Jan. 15 list designation requires transaction-ledger confirmation | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Josh Scobee | JAX-JOSHSCOBEE | K | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Bryan Anger | JAX-BRYANANGER | P | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Jeremy Cain | JAX-JEREMYCAIN | LS | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+
+## Departed player index
+
+| Player | Stable player ID | Position | Current status | Financial record | Source |
+|---|---|---|---|---|---|
+| Laurent Robinson | JAX-LAURENTROBINSON | WR | Released; outside working inventory | Surviving liabilities unresolved | 2013 ledger Entry 3 |
+| Guy Whimper | JAX-GUYWHIMPER | T | Released; outside working inventory | Surviving liabilities unresolved | 2013 ledger Entry 3 |
+| Aaron Ross | JAX-AARONROSS | CB | Released; outside working inventory | Surviving liabilities unresolved | 2013 ledger Entry 3 |
+| Dawan Landry | JAX-DAWANLANDRY | SS | Released; outside working inventory | Surviving liabilities unresolved | 2013 ledger Entry 3 |
+
+## Material player records for this batch
+
+Each record below is **Post-divergence simulation event / Confirmed** for the recorded outcome, with arithmetic derived from its terms. Source: original completed batch, reconciled in season-ledger Entry 3 at `Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency`. Caldwell executes contracts and releases under Document 3 §5 rows 3, 5-7 and 20. Stone retains role/depth authority under rows 8-10; medical authority remains with clinicians under rows 15-17. Exact offseason list filing is not separately supplied.
+
+### Sen'Derrick Marks (`JAX-SENDERRICKMARKS`)
+
+- Transaction/control: Signed; DT; 2013 agreement, $1.50M total.
+- Compensation: $0.40M signing bonus; 2013 base $1.10M.
+- Cap schedule: $1.50M in 2013; $0.00M in 2014.
+- Guarantee: $0.4M signing bonus; any base-salary guarantee is unspecified.
+- Recorded football opportunity: Interior-rotation opportunity; no starting guarantee. Current depth, workload and package assignment remain unassigned.
+- Medical communication: No new clearance finding recorded. No official injury designation or next-review date is added.
+- Source/control: season-ledger Entry 3; latest person transaction checkpoint JAX-2013-FA-ROSTER-1; no jersey number or new evaluation inferred.
+
+### Alan Ball (`JAX-ALANBALL`)
+
+- Transaction/control: Signed; CB; 2013 agreement, $1.00M total.
+- Compensation: $0.20M signing bonus; 2013 base $0.80M.
+- Cap schedule: $1.00M in 2013; $0.00M in 2014.
+- Guarantee: $0.2M signing bonus; any base-salary guarantee is unspecified.
+- Recorded football opportunity: Secondary/special-teams competition; no starting or CB1 guarantee. Current depth, workload and package assignment remain unassigned.
+- Medical communication: No new clearance finding recorded. No official injury designation or next-review date is added.
+- Source/control: season-ledger Entry 3; latest person transaction checkpoint JAX-2013-FA-ROSTER-1; no jersey number or new evaluation inferred.
+
+### Brad Meester (`JAX-BRADMEESTER`)
+
+- Transaction/control: Re-signed; C; 2013 agreement, $1.50M total.
+- Compensation: $0.50M signing bonus; 2013 base $1.00M.
+- Cap schedule: $1.50M in 2013; $0.00M in 2014.
+- Guarantee: $0.5M signing bonus; any base-salary guarantee is unspecified.
+- Recorded football opportunity: Veteran communication/transition value; center job remains open. Current depth, workload and package assignment remain unassigned.
+- Medical communication: No new clearance finding recorded. No official injury designation or next-review date is added.
+- Source/control: season-ledger Entry 3; latest person transaction checkpoint JAX-2013-FA-ROSTER-1; no jersey number or new evaluation inferred.
+
+### Roy Miller (`JAX-ROYMILLER`)
+
+- Transaction/control: Signed; DT; 2013-2014 agreement, $5.00M total.
+- Compensation: $1.50M signing bonus; 2013 base $1.00M; 2014 base $2.50M.
+- Cap schedule: $1.75M in 2013; $3.25M in 2014.
+- Guarantee: Only the $1.5M signing bonus guaranteed.
+- Recorded football opportunity: Defined early-down interior opportunity; no depth-chart assignment recorded. Current depth, workload and package assignment remain unassigned.
+- Medical communication: No new clearance finding recorded. No official injury designation or next-review date is added.
+- Source/control: season-ledger Entry 3; latest person transaction checkpoint JAX-2013-FA-ROSTER-1; no jersey number or new evaluation inferred.
+
+### Daryl Smith (`JAX-DARYLSMITH`)
+
+- Transaction/control: Re-signed; OLB; 2013-2014 agreement, $6.00M total.
+- Compensation: $1.00M signing bonus; 2013 base $2.00M; 2014 base $3.00M.
+- Cap schedule: $2.50M in 2013; $3.50M in 2014.
+- Guarantee: Only the $1.0M signing bonus guaranteed.
+- Recorded football opportunity: Linebacker return; no starting guarantee. Current depth, workload and package assignment remain unassigned.
+- Medical communication: Club medical review satisfactory for the short return; no practice clearance or workload specified. No official injury designation or next-review date is added.
+- Source/control: season-ledger Entry 3; latest person transaction checkpoint JAX-2013-FA-ROSTER-1; no jersey number or new evaluation inferred.
+
+### Brent Grimes (`JAX-BRENTGRIMES`)
+
+- Transaction/control: Signed after Bennett declined; CB; 2013 agreement, $5.50M total.
+- Compensation: $2.00M signing bonus; 2013 base $3.50M.
+- Cap schedule: $5.50M in 2013; $0.00M in 2014.
+- Guarantee: Full $5.5M guaranteed.
+- Recorded football opportunity: Opportunity to compete for a major role; no starting assignment. Current depth, workload and package assignment remain unassigned.
+- Medical communication: Club medical review completed; Achilles uncertainty retained; no guaranteed recovery or practice clearance. No official injury designation or next-review date is added.
+- Source/control: season-ledger Entry 3; latest person transaction checkpoint JAX-2013-FA-ROSTER-1; no jersey number or new evaluation inferred.
+
+### Laurent Robinson (`JAX-LAURENTROBINSON`)
+
+- Transaction/control: completed release in the March 12 batch; WR; removed from current working inventory.
+- Basis: Caldwell's recorded ordinary roster/role/contract-value decision; no trade solicited or resolved.
+- Finances: scheduled charge removed, accelerated bonus, surviving guarantees and net room change remain unresolved. No adjustment booked.
+- Availability/role: no Jacksonville assignment; release is not a medical finding. Historical records remain in the January baseline.
+- Source/control: season-ledger Entry 3; latest person transaction checkpoint JAX-2013-FA-ROSTER-1.
+
+### Guy Whimper (`JAX-GUYWHIMPER`)
+
+- Transaction/control: completed release in the March 12 batch; T; removed from current working inventory.
+- Basis: Caldwell's recorded ordinary roster/role/contract-value decision; no trade solicited or resolved.
+- Finances: scheduled charge removed, accelerated bonus, surviving guarantees and net room change remain unresolved. No adjustment booked.
+- Availability/role: no Jacksonville assignment; release is not a medical finding. Historical records remain in the January baseline.
+- Source/control: season-ledger Entry 3; latest person transaction checkpoint JAX-2013-FA-ROSTER-1.
+
+### Aaron Ross (`JAX-AARONROSS`)
+
+- Transaction/control: completed release in the March 12 batch; CB; removed from current working inventory.
+- Basis: Caldwell's recorded ordinary roster/role/contract-value decision; no trade solicited or resolved.
+- Finances: scheduled charge removed, accelerated bonus, surviving guarantees and net room change remain unresolved. No adjustment booked.
+- Availability/role: no Jacksonville assignment; release is not a medical finding. Historical records remain in the January baseline.
+- Source/control: season-ledger Entry 3; latest person transaction checkpoint JAX-2013-FA-ROSTER-1.
+
+### Dawan Landry (`JAX-DAWANLANDRY`)
+
+- Transaction/control: completed release in the March 12 batch; SS; removed from current working inventory.
+- Basis: Caldwell's recorded ordinary roster/role/contract-value decision; no trade solicited or resolved.
+- Finances: scheduled charge removed, accelerated bonus, surviving guarantees and net room change remain unresolved. No adjustment booked.
+- Availability/role: no Jacksonville assignment; release is not a medical finding. Historical records remain in the January baseline.
+- Source/control: season-ledger Entry 3; latest person transaction checkpoint JAX-2013-FA-ROSTER-1.
+
 
 ## Player index (template retained for closed reconciliation)
 
@@ -658,34 +768,28 @@ Use the project's canon authority order. Document 6 is the sole authoritative co
 
 | Affected current field | Document 6 correction or supersession label | Effective date | Current corrected value | Last reconciled |
 |---|---|---|---|---|
-| `[FIELD OR RECORD]` | `[DOCUMENT 6 LABEL]` | `[DATE]` | `[CURRENT VALUE]` | `[DATE, CLOSED UPDATE LABEL]` |
+| Current roster, contracts, batch accounting and staff-status summary | 2013 season ledger, Entry 3 | March 12, 2013, 4:00 p.m. ET (batch) | Completed FA outcomes applied; inherited control and cap gaps explicit | September 19, 2026 documentation reconciliation; Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency |
 
 This table is generated from Document 6 and is only a navigation aid. Active unresolved conflicts remain in the reconciliation block and Document 5; resolved history, controlling authority, notification, and superseded values remain only in Document 6.
 
 ## End-of-update control block
 
-- Owned content last changed/effective: January 15, 2013 baseline (research entered September 18, 2026; exact in-world time unknown)
-- Document 2 locked version: `[VERSION]`
-- Document 3 authority-map version: `[VERSION]`
-- Document 4 register version: `JAX-2013-INIT-STAGED-1`
-- Supersedes Document 4 version/content-changing update: `[VERSION AND LABEL / NONE]`
-- Last Document 4 content-changing update: `[LABEL]`
-- Latest Document 6 source event applied to Document 4 content: `[EVENT, DATE, TIME]`
-- Document 4 initialization status: `NOT INITIALIZED — POPULATED WITH BLOCKING SOURCE GAPS`
-- Player counts reconciled: `NO — final active 53 verified; full offseason control list incomplete`
-- Primary roster statuses disjoint and exact limits reconciled: `[YES / NO, WITH ISSUE]`
-- Game-day designation subsets reconciled without nested counting: `[YES / NO / NOT APPLICABLE, WITH ISSUE]`
-- League cap or floor legality reconciled: `NO — league rule verified; club ledger unavailable`
-- League accounting liability reconciled: `[YES / NO / NOT APPLICABLE, WITH ISSUE]`
-- Cash and guarantees reconciled: `[YES / NO / NOT APPLICABLE, WITH ISSUE]`
-- Internal budget reconciled: `[YES / NO / NOT APPLICABLE, WITH ISSUE]`
-- Scholarship or aid reconciled: `[YES / NO / NOT APPLICABLE, WITH ISSUE]`
-- Contract, eligibility, and rights controls reconciled: `[YES / NO / NOT APPLICABLE, WITH ISSUE]`
-- Depth, packages, and special teams reconciled: `[YES / NO, WITH ISSUE]`
-- Medical and availability table reconciled: `[YES / NO, WITH ISSUE]`
-- Coach-facing information boundary checked: `[YES / NO, WITH ISSUE]`
-- Document 3 authority cross-references and play calling reconciled: `[YES / NO, WITH ISSUE]`
-- Current Season State updated: `[YES / NO]`
-- Document 6 update closed: `NO`
-- Generated Document 6 correction pointers or unresolved conflicts: `[LABELS OR NONE]`
-- Next required registry update: `[EVENT]`
+- Effective through: March 12, 2013, 4:00 p.m. ET, batch time; no additional elapsed time.
+- Document 2/3 source versions: see Document 5 source-version manifest; no rule or authority edits.
+- Document 4 register version: `JAX-2013-FA-ROSTER-1`; supersedes `JAX-2013-INIT-STAGED-1`.
+- Last content-changing update / global package checkpoint: `Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency`.
+- Latest source event: 2013 season-ledger Entry 3, reconciling the already-completed batch.
+- Batch player-count check: 63 historical names - 4 departures + 4 additions = 63 working names; 6 confirmed agreements and 57 unresolved carry-forwards.
+- Complete primary-status counts / offseason roster legality: not yet verified; working inventory is not a legal count.
+- Game-day subsets: not applicable in this offseason batch.
+- League cap legality / complete accounting liabilities: not certified; $8.35M remains approximate planning room.
+- Batch cash and guarantees: schedules reconciled; payment timing and three base-guarantee terms unspecified.
+- Internal operating budget: staff commitments remain in current staff register; no budget headroom invented.
+- Contract/rights controls: six batch agreements confirmed; inherited control gaps and four release liabilities remain open.
+- Depth/packages/special teams: no new assignment made.
+- Medical: recorded Smith/Grimes reviews preserved; no practice clearance inferred for anyone.
+- Coach-facing boundary and existing operating authority: checked; no private state or authority change.
+- Current Season State updated: yes, `JAX-2013-FA-SNAPSHOT-1`, same checkpoint.
+- Document 6 closure: season-ledger Entry 3 close line and closed-register row; bundle takes effect only when all files are promoted together.
+- Full initialization/game-readiness audit: not asserted.
+- Next update: next documented transaction, current-control reconciliation or coach-facing medical event.
