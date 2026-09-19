@@ -87,8 +87,8 @@ class Client:
                   data.get("recovery")=="verified")
         if not required:
             raise PrivateRuntimeUnavailable("private runtime identity or recovery mismatch")
-        first=self._request("/admin/probe",{},method="POST")
-        second=self._request("/admin/probe",{},method="POST")
+        first=self._request("/admin/probe",method="POST")
+        second=self._request("/admin/probe",method="POST")
         if not (first.get("idempotent") and second.get("idempotent") and
                 first.get("journal_fingerprint") and
                 first.get("journal_fingerprint")==second.get("journal_fingerprint")):
@@ -130,8 +130,18 @@ class Client:
                            ("next_snapshot",next_snapshot),("checkpoint",checkpoint)):
             if not isinstance(value,str) or not value.strip():
                 raise ValueError(f"{name} must be a nonempty string")
-        data=self._request("/admin/snapshot/advance",{
-            "previous_snapshot":previous_snapshot,
-            "next_snapshot":next_snapshot,
-            "checkpoint":checkpoint},method="POST")
+        query=urlencode({"previous_snapshot":previous_snapshot,
+                         "next_snapshot":next_snapshot,
+                         "checkpoint":checkpoint})
+        data=self._request("/admin/snapshot/advance?"+query,method="POST")
         return data["snapshot"]
+
+    def record_correction(self,event_id,reason):
+        for name,value in (("event_id",event_id),("reason",reason)):
+            if not isinstance(value,str) or not value.strip():
+                raise ValueError(f"{name} must be a nonempty string")
+        query=urlencode({"event_id":event_id,"reason":reason})
+        data=self._request("/corrections?"+query,method="POST")
+        if data.get("recorded") is not True:
+            raise PrivateRuntimeUnavailable("private runtime did not record correction")
+        return True

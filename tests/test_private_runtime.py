@@ -161,6 +161,58 @@ class PrivateRuntimeTests(unittest.TestCase):
         self.assertEqual(history,[('snapshot','next','checkpoint-1')])
         self.assertTrue(client.readiness()['ready'])
 
+    def test_bodyless_administrative_probe_is_idempotent(self):
+        first=self.post_empty('/admin/probe')
+        second=self.post_empty('/admin/probe')
+        self.assertTrue(first['idempotent'])
+        self.assertTrue(first['journal_fingerprint'])
+        self.assertEqual(first,second)
+
+    def test_snapshot_and_correction_clients_send_bodyless_queries(self):
+        client=Client(self.url,token=self.token,snapshot='snapshot')
+        calls=[]
+        client._request=lambda path,body=None,method=None: (
+            calls.append((path,body,method)) or
+            ({'snapshot':'next value'} if path.startswith('/admin/snapshot/advance?')
+             else {'recorded':True})
+        )
+        self.assertEqual(
+            client.advance_snapshot('old value','next value','checkpoint: one / two'),
+            'next value')
+        self.assertTrue(client.record_correction('event: 1 / home','reason with spaces & punctuation'))
+        self.assertEqual(len(calls),2)
+        for path,body,method in calls:
+            self.assertIsNone(body)
+            self.assertEqual(method,'POST')
+            self.assertIn('?',path)
+        self.assertIn('previous_snapshot=old+value',calls[0][0])
+        self.assertIn('next_snapshot=next+value',calls[0][0])
+        self.assertIn('checkpoint=checkpoint%3A+one+%2F+two',calls[0][0])
+        self.assertIn('event_id=event%3A+1+%2F+home',calls[1][0])
+        self.assertIn('reason=reason+with+spaces+%26+punctuation',calls[1][0])
+
+    def test_bodyless_correction_records_known_event(self):
+        self.store.close('correction-target',b'original')
+        client=Client(self.url,token=self.token,snapshot='snapshot')
+        self.assertTrue(client.record_correction('correction-target','bounded source correction'))
+        with self.store.connect() as connection:
+            row=connection.execute(
+                'select event_id,reason from corrections order by id desc limit 1'
+            ).fetchone()
+        self.assertEqual(row,('correction-target','bounded source correction'))
+
+    def test_legacy_snapshot_and_correction_bodies_remain_compatible(self):
+        self.store.close('legacy-correction',b'original')
+        correction=self.post('/corrections',{
+            'event_id':'legacy-correction','reason':'legacy reason'})
+        self.assertTrue(correction['recorded'])
+        advanced=self.post('/admin/snapshot/advance',{
+            'previous_snapshot':'snapshot',
+            'next_snapshot':'legacy-next',
+            'checkpoint':'legacy checkpoint'})
+        self.assertEqual(advanced['snapshot'],'legacy-next')
+        self.assertEqual(self.store.current_snapshot(),'legacy-next')
+
     def test_two_administrative_probes_are_identical(self):
         first=self.post_probe({})
         second=self.post_probe({})

@@ -185,18 +185,43 @@ def handler(store,token,snapshot=None):
                         raise ValueError("outer event_id does not match packet event_id")
                     return self.send(200,{"result_ref":store.close(event_id,canonical(packet))})
 
-                n=int(self.headers.get("Content-Length","0"))
-                body=json.loads(self.rfile.read(n) or b"{}")
-                if not isinstance(body,dict):
-                    raise ValueError("request body must be a JSON object")
+                # Current administrative writes are also bodyless. This keeps
+                # every authenticated mutation independent of proxy/body rewriting.
                 if parsed.path=="/admin/probe":
                     return self.send(200,store.probe())
+
+                query=parse_qs(parsed.query,keep_blank_values=True)
                 if parsed.path=="/admin/snapshot/advance":
-                    current=store.advance_snapshot(body["previous_snapshot"],body["next_snapshot"],body["checkpoint"])
-                    return self.send(200,{"advanced":True,"snapshot":current})
+                    previous=(query.get("previous_snapshot") or [None])[0]
+                    next_snapshot=(query.get("next_snapshot") or [None])[0]
+                    checkpoint=(query.get("checkpoint") or [None])[0]
+                    if any(value is not None for value in (previous,next_snapshot,checkpoint)):
+                        if any(value is None for value in (previous,next_snapshot,checkpoint)):
+                            raise ValueError("previous_snapshot, next_snapshot and checkpoint are all required")
+                        current=store.advance_snapshot(previous,next_snapshot,checkpoint)
+                        return self.send(200,{"advanced":True,"snapshot":current})
+
                 if parsed.path=="/corrections":
+                    event_id=(query.get("event_id") or [None])[0]
+                    reason=(query.get("reason") or [None])[0]
+                    if event_id is not None or reason is not None:
+                        if event_id is None or reason is None:
+                            raise ValueError("event_id and reason are both required")
+                        store.correct(event_id,reason)
+                        return self.send(201,{"recorded":True})
+
+                # Compatibility-only body parser for old snapshot/correction clients.
+                if parsed.path in {"/admin/snapshot/advance","/corrections"}:
+                    n=int(self.headers.get("Content-Length","0"))
+                    body=json.loads(self.rfile.read(n) or b"{}")
+                    if not isinstance(body,dict):
+                        raise ValueError("request body must be a JSON object")
+                    if parsed.path=="/admin/snapshot/advance":
+                        current=store.advance_snapshot(body["previous_snapshot"],body["next_snapshot"],body["checkpoint"])
+                        return self.send(200,{"advanced":True,"snapshot":current})
                     store.correct(body["event_id"],body["reason"])
                     return self.send(201,{"recorded":True})
+
                 self.send(404,{"error":"not found"})
             except (json.JSONDecodeError,KeyError,TypeError,ValueError) as e:
                 self.send(409,{"error":str(e)})
