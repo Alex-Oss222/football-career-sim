@@ -1,7 +1,7 @@
-# Jacksonville Jaguars: roster after the March 12 free-agency batch
+# Jacksonville Jaguars: roster through the 2013 NFL Draft
 
-**As of:** March 12, 2013, 4:00 p.m. ET, the batch's recorded operative time.  
-**Sources:** [Completed signings and releases](offseason/free_agency/signings.md); [season ledger, Entry 3](ledger.md).  
+**As of:** April 27, 2013, after selection #208.
+**Sources:** [Completed signings and releases](offseason/free_agency/signings.md); [2013 draftees](offseason/draft/draftees.md); [season ledger](ledger.md).
 **Register:** [Canonical player records](../../state/04_Roster_and_Staff_Register.md), version `JAX-2013-FA-ROSTER-1`.
 
 ## What changed
@@ -124,4 +124,26 @@ Bennett and Forsett are declined pursuits, not departures from Jacksonville. The
 
 Miller and Marks add interior options; Ball and Grimes add secondary competition; Meester and Smith return on new deals. Those transaction effects do not certify a solved position need or guarantee a starting job. Caldwell retains personnel and contract authority; Stone controls football roles within medical and eligibility limits.
 
-The [coaching staff](coaching_staff.md) remains the already-hired staff. No practice, installation, new signing, trade or draft selection is executed by this roster update.
+The [coaching staff](coaching_staff.md) remains the already-hired staff. This preserved March 12 subsection records no practice, installation, or later transaction; the April 27 draft-rights update follows.
+
+## April 27 draft-rights additions
+
+The March 12 inventory above remains the transaction-reconciled veteran baseline. Jacksonville subsequently exercised all seven selections; no pre-draft or draft-day trade changed the veteran inventory. These players are additions by draft rights, not claims that rookie contracts have been signed.
+
+| Pos. | Player | Acquisition | Current control / football limit |
+|---|---|---|---|
+| OT | Lane Johnson | Selected #2 | Jacksonville draft rights; unsigned. Opens at RT; no starting job awarded. |
+| TE | Travis Kelce | Selected #33 | Jacksonville draft rights; unsigned. Bounded TE2 teaching role; no roster role guaranteed. |
+| CB | Jordan Poyer | Selected #64 | Jacksonville draft rights; unsigned. Begins evaluation at corner. |
+| OLB | Sio Moore | Selected #98 | Jacksonville draft rights; unsigned. Initial linebacker assignment to be set by the defensive staff. |
+| DE | Lavar Edwards | Selected #135 | Jacksonville draft rights; unsigned. Rotational-end evaluation only. |
+| S | Bacarri Rambo | Selected #169 | Jacksonville draft rights; unsigned. Begins with one safety role plus special-teams evaluation. |
+| QB | Tyler Bray | Selected #208 | Jacksonville draft rights; unsigned. Developmental competition entry; no depth position promised. |
+
+| April 27 working reconciliation | Count |
+|---|---:|
+| March 12 working inventory | 63 |
+| Draft-rights additions | +7 |
+| Current working inventory | **70** |
+
+The **70** figure is not an active-roster declaration and does not cure the veteran control gaps described above. The draft additions carry no booked salary-cap charge until their contracts execute. Gabbert and Henne remain after the unsuccessful market check; Cousins was not acquired.

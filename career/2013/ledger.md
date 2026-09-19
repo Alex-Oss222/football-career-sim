@@ -28,10 +28,10 @@ Free agency (real opening: March 12, 2013) cannot be resolved as a simulated eve
 
 ## Entry 3: completed free-agency batch reconciled
 
-**Global package checkpoint:** `Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency`  
-**Preceding global package checkpoint:** `PRE-HIRE SEARCH CLOSURE, career/2013/ledger.md, 2026-09-18`  
-**Canonical through:** March 12, 2013, 4:00 p.m. ET, the existing batch's operative timestamp; individual execution times are not supplied.  
-**Documentation date:** September 19, 2026.  
+**Global package checkpoint:** `Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency`
+**Preceding global package checkpoint:** `PRE-HIRE SEARCH CLOSURE, career/2013/ledger.md, 2026-09-18`
+**Canonical through:** March 12, 2013, 4:00 p.m. ET, the existing batch's operative timestamp; individual execution times are not supplied.
+**Documentation date:** September 19, 2026.
 **Record type:** Retrospective reconciliation of accepted post-divergence simulation outcomes; no new resolution or elapsed time.
 
 ### Controlling source and supersession
@@ -102,3 +102,63 @@ No game or statistics require reconciliation. No actual future result or new pri
 Commit closed — Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency — canonical through March 12, 2013, 4:00 p.m. ET
 
 Closure applies when this complete candidate bundle is promoted together. Intermediate file commits on the review branch do not replace the preceding active package.
+
+## Entry 4 — PRE-DRAFT TRANSACTION AND SELECTION PACKET (closed ex ante)
+
+**Packet closed:** Before the quarterback calls during the March 12-April 24, 2013 window; April 24, 2013 for the draft decisions.
+**Information ceiling:** April 24, 2013.
+**Status at closure:** Outcomes unresolved. This entry records the decision inputs before any response, selection, or draft-day trade is generated; results follow in later entries and transaction files.
+
+### Authorized Jacksonville actions
+
+- Caldwell will ask Washington whether Kirk Cousins is available. Jacksonville may offer either (a) selection #208 plus its 2014 third, escalating in place of that third to a 2014 second if Cousins makes 10 regular-season starts or plays 65% of Jacksonville's 2013 regular-season offensive snaps, or (b) Jacksonville's 2014 second by itself. No other compensation is authorized.
+- Caldwell will check Blaine Gabbert's market with Green Bay, Atlanta, Cincinnati, and Chicago, opening at a 2014 fifth and permitted to consider a 2014 sixth escalating to a fifth on a defined playing-time condition. A plain seventh is below Stone's recommendation.
+- Caldwell will check Chad Henne's market with the same four clubs, opening at a 2014 fifth and permitted to consider a fifth, sixth, or conditional sixth escalating to a fifth. Jacksonville may retain both incumbents; no sale is required.
+- Caldwell has final transaction authority. Stone's documented quarterback projection and consultation right apply to a premium-capital quarterback acquisition. Stone's football preference is evidence, not a veto and not an instruction to force a deal.
+
+### Frozen trade conditions and uncertainty
+
+Washington has a concrete reason to value inexpensive quarterback insurance while Robert Griffin III rehabilitates, but its private valuation and willingness to trade are unknown. The four clubs on Jacksonville's outbound call list may value veteran depth, yet none has an established need or bid in this branch. Gabbert's remaining guaranteed contract and both incumbents' value to Jacksonville are real frictions. Plausible outcomes include no discussion, a counter beyond authority, an acceptable structure, a weak outbound offer, or no bid. Carrying Gabbert and Henne is inside the plausible range.
+
+### Frozen draft conditions
+
+- Jacksonville enters with selections #2, #33, #64, #98, #135, #169, and #208, subject to any trade actually completed before or during the draft.
+- Stone recommends Lane Johnson within the top tackle cluster at #2; a serious Travis Kelce comparison at #33; Keenan Allen and Jordan Poyer in their stated ranges; David Bakhtiari around #98; and Lavar Edwards around #135. The full comparison set and role objections remain those in `offseason/draft/player_draft_board.md`.
+- Caldwell retains final selection and draft-trade authority. He may deviate where the contemporaneous scouting/value case supports it. A first-round quarterback would trigger Stone's consultation right; no quarterback is mandated or barred.
+- Other clubs choose autonomously from dated pre-selection evidence, roster need, value, and bounded uncertainty. Their real 2013 selections and every post-April-24 outcome are quarantined. Jacksonville receives no protection from another club selecting one of Stone's preferred players.
+
+### Resolution discipline
+
+The packet is reduced to terms, authority, roster needs, contemporaneous public evaluations, and known contract/medical uncertainty. Authorship, protagonist status, persuasiveness, desired outcome, and later player success are excluded. The label-swap test applies. Any bounded random draw is derived only after this packet closes; no seed may be changed to obtain a preferred result.
+
+## Entry 5 — Quarterback trade inquiries closed
+
+**Date:** March 12-April 24, 2013 pre-draft window; an exact call date is not established.
+**Ex-ante authority:** Entry 4; `trades/trade_targets.md`.
+**Result:** No trade.
+
+Washington rejected both authorized Cousins structures and required a current Day 2 selection to continue. Caldwell declined to add #33 or #64 after the required consultation with Stone. Washington did not authorize contact with Cousins.
+
+Green Bay, Atlanta, Cincinnati, and Chicago made no acceptable offer for Gabbert. Green Bay offered only a conditional 2014 seventh for Henne; Jacksonville declined it as below the authorized range. The other Henne calls produced no present bid. Gabbert and Henne remain Jaguars, Cousins remains under Washington's control, and no player, pick, contract, or cap entry changed. Complete response ledger: `trades/trade_targets.md`, §8. Completed-trade ledger: `trades/trades.md`.
+
+## Entry 6 — 2013 NFL Draft completed
+
+**Dates:** April 25-27, 2013.
+**Ex-ante authority and information ceiling:** Entry 4; `offseason/draft/player_draft_board.md`; pre-selection library through April 24.
+**Result:** Seven Jacksonville selections; no Jacksonville draft-day trade.
+
+| Selection | Player | Position | School |
+|---:|---|---|---|
+| #2 | Lane Johnson | OT | Oklahoma |
+| #33 | Travis Kelce | TE | Cincinnati |
+| #64 | Jordan Poyer | CB | Oregon State |
+| #98 | Sio Moore | OLB | Connecticut |
+| #135 | Lavar Edwards | DE | LSU |
+| #169 | Bacarri Rambo | S | Georgia |
+| #208 | Tyler Bray | QB | Tennessee |
+
+Kansas City selected Eric Fisher before Jacksonville's first turn. Keenan Allen was unavailable by #64, and David Bakhtiari was unavailable by #98. Other clubs' intervening selections were resolved autonomously from contemporaneous information; actual 2013 selections and later careers were not used. The Jacksonville availability record, Caldwell's decisions, Stone's initial role plans, and evidence limits are in `offseason/draft/draftees.md`.
+
+All seven players enter the working roster as unsigned draft-rights additions. The working inventory moves from 63 to 70 without asserting an active-roster count. No rookie compensation is invented or booked before contract execution. With no trade, the approximately $8.35M gross post-free-agency planning reference is unchanged before the already-recorded baseline, Top-51, release, and future rookie-contract adjustments.
+
+The final selection adds Bray to the developmental quarterback competition without awarding him a roster or depth-chart position. It is not a premium-capital franchise-quarterback commitment. The common teaching/evaluation standards and updated room are recorded in `offseason/quarterback_development_plan.md`.

@@ -170,3 +170,39 @@ Evidence treatment:
 - The old [Washington Post article, May 24, 2013](https://www.washingtonpost.com/news/football-insider/wp/2013/05/24/even-before-griffins-injury-cousins-expected-to-be-back-for-second-year-with-redskins/) is retained as an audit reference for earlier background only. It is not a January or pre-draft market report; its later quotes, practices and Washington intentions do not enter this recommendation.
 - No fresh independent source verification of the inherited contract or medical background is claimed by this coaching rewrite. The relevant acquisition packet must supply the dated records before action.
 - The [authority canon](../../../foundation/03_Head_Coach_Organization_and_Authority_Canon.md), current branch state and dated football evidence control. No later real trade, selection, career result or private club valuation is imported.
+
+## 8. Pre-draft market check (March 12-April 24 window) — resolved
+
+**Decision record:** The terms and uncertainty were frozen before these calls in `career/2013/ledger.md`, Entry 4. Caldwell made every authorized inquiry. The responses below are simulation events, not claims about conversations that occurred in real life.
+
+### Washington — Kirk Cousins
+
+Washington would discuss Cousins, but it rejected both authorized structures. Its response was that a 2013 Day 2 selection had to lead any package; it would not substitute a future second or accept the conditional #208-plus-future-pick construction while Griffin's availability remained uncertain. Washington did not grant Jacksonville permission to speak with Cousins.
+
+Caldwell declined to add #33 or #64, ended the inquiry, and kept the 2014 second. Stone's required franchise-quarterback consultation occurred: he maintained that the development case did not justify breaking the written ceiling and agreed that a current premium selection would take too much from the roster build. **Result: no offer accepted and no Cousins trade.**
+
+### Blaine Gabbert market
+
+| Club called | Actual response in this branch | Jacksonville disposition |
+|---|---|---|
+| Green Bay | No bid. The club would review veteran depth later but would not assume Gabbert's contract for the requested compensation. | Inquiry closed. |
+| Atlanta | No bid; it did not see enough need behind its established starter to spend a future selection and take on the contract. | Inquiry closed. |
+| Cincinnati | No bid. It preferred to preserve its existing quarterback plan rather than pay Jacksonville's price. | Inquiry closed. |
+| Chicago | Expressed only conditional interest if Jacksonville absorbed value through a pick swap; it offered no standalone future selection. | Caldwell declined to develop a structure outside the authorized board. |
+
+No club offered the requested 2014 fifth or the permitted conditional sixth-to-fifth. **Result: Gabbert remains a Jaguar.**
+
+### Chad Henne market
+
+| Club called | Actual response in this branch | Jacksonville disposition |
+|---|---|---|
+| Green Bay | Offered a conditional 2014 seventh, payable only if Henne met an agreed playing-time threshold. | Below the board's permitted range; declined. |
+| Atlanta | No bid. | Inquiry closed. |
+| Cincinnati | No bid; it would not spend a selection for the veteran contract. | Inquiry closed. |
+| Chicago | Would revisit after the draft but made no present offer. | Logged as no bid, not as an agreement or promise. |
+
+The lone proposal was weaker than a sixth and did not compensate Jacksonville for surrendering its preferred veteran insurance. **Result: Henne remains a Jaguar.**
+
+### Closed Phase 1 result
+
+Jacksonville carries Gabbert and Henne into the draft. Cousins remains under Washington's control. No player, selection, contract, or cap charge changed, so `trades.md` records no completed transaction and the roster/cap ledgers require no Phase 1 numerical adjustment. A future call requires a new football or market event; these declined inquiries are not standing offers.
