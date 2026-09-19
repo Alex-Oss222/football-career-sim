@@ -139,12 +139,47 @@ This creates a legitimate progression rather than using every camp as a smaller 
 
 ## 6. Team culture: family dinners
 
-At intervals across the camps and minicamps — not a single one-off event — Jacksonville holds a team dinner that includes players' families. This sits alongside the family-support pillar already established in `the_prowl_player_readiness_standard.md` rather than replacing it; the standard's confidentiality boundary still controls (a family's private circumstances are not turned into a personnel note because a coach met them at dinner).
+Family inclusion is a recurring part of the offseason program, not a one-off event.
 
-- **Purpose:** ordinary team-culture and relationship-building, not an evaluation event. No attendance, non-attendance, or family circumstance observed at a dinner feeds a roster, depth-chart, or competition decision.
-- **Timing:** the specific dates are a scheduling detail resolved when each camp/minicamp's actual event is run, not fixed in this durable framework. A reasonable cadence is at least one during training camp and one during another camp/minicamp window across the offseason, but the exact count and placement is decided against the real calendar once it's established.
-- **Voluntariness:** attendance follows the same voluntary/mandatory status as the surrounding camp period itself — a dinner during a voluntary window does not become mandatory by virtue of being a team event.
-- **Record-keeping:** like every other actual event, a dinner that happens gets logged in that phase's own output file (e.g., `rookie_minicamp/output.md`, or training camp's future output structure) and, if notable, a closing mention in `career/2013/ledger.md` — not in this framework document.
+**Default cadence:** schedule one family-inclusive team dinner in each major football-development phase — rookie-minicamp window, offseason/OTA window, mandatory veteran-minicamp window, and training camp. Because training camp is longer, schedule an opening dinner and a mid-camp family night/dinner when the verified calendar and logistics permit.
+
+The invitation standard is broad:
+
+- every current Jacksonville player under verified club control is invited, even if the football work in that particular window is limited to a subgroup such as rookies;
+- coaches and appropriate football/support staff are invited;
+- each player or staff member may bring family or another meaningful guest;
+- the club does not require one definition of "family";
+- family/guest attendance is always voluntary;
+- a voluntary football window does not become mandatory because a dinner is scheduled inside it;
+- an excused football absence does not create a separate punitive dinner-attendance issue.
+
+The dinners serve four purposes:
+
+1. give families a real relationship with the organization rather than meeting it only during a problem;
+2. let players, coaches, staff, partners, children, parents, and other guests know one another as people;
+3. make Player Development and support resources easy to find;
+4. give the team normal shared time that is not another meeting.
+
+The dinners are deliberately **not** football evaluation events:
+
+- no install presentation;
+- no playbook quiz;
+- no depth-chart announcement;
+- no personnel meeting;
+- no attendance grade;
+- no conclusion drawn from a player's guest choice or family circumstance;
+- no private family, financial, medical, or counseling information turned into a personnel note.
+
+Stone may give a short welcome or thank-you. Coordinators and position coaches may introduce themselves. Player Development may provide contact information and quietly arrange follow-up support. The social event must stay social.
+
+The phase-specific plans own the practical execution:
+
+- `rookie_minicamp/plan.md` — Rookie Welcome Family Dinner, open to the full current team and families while keeping veteran involvement social/voluntary.
+- `otas/plan.md` — full-team offseason/OTA family dinner.
+- `mandatory_minicamp/plan.md` — Veteran Minicamp Family Dinner.
+- `training_camp/plan.md` — Camp Opening Family Dinner plus a Mid-Camp Family Night/Dinner when logistics permit.
+
+When any dinner actually occurs, record it in that phase's output file and, if materially relevant to the season chronology, the season ledger. Do not rewrite this durable framework to record attendance or anecdotes.
 
 ---
 
