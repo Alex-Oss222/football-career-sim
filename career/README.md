@@ -74,14 +74,20 @@ career/
       standouts.md
       position_battles.md      <- each open competition, tracked on evidence, not a secret score
       roster_decisions.md      <- why a roster/depth-chart change happened; state/04 holds only the current result
+    standings.md                <- the single current league / conference / division standings file (all 32 clubs); rewritten in place after every regular-season week, with each week's snapshot kept in league_results/week_NN.md
     preseason/
-      preseason_output.md      <- all preseason games in one bulk report, per Document 7 SS5.1's exception
+      README.md                 <- game index (date, kickoff, matchup, home/away)
+      game_1_miami_at_jacksonville/output.md      <- one folder per game, named game_N_<away>_at_<home>; resolved as one bulk turn per Document 7 SS5.1
+      game_2_jacksonville_at_ny_jets/output.md
+      game_3_philadelphia_at_jacksonville/output.md
+      game_4_jacksonville_at_atlanta/output.md
       final_roster_cuts.md
     regular_season/
-      week_01/
+      README.md                 <- week index (date, kickoff, matchup, home/away)
+      week_01_kansas_city_at_jacksonville/
         output.md               <- season_output_template.md; a bye week uses the same slot with no game, per SS below
-      ...
-      week_17/
+      ...                       <- folders are named week_NN_<away>_at_<home>; Week 9 is week_09_bye
+      week_17_jacksonville_at_indianapolis/
         output.md
     postseason/
       wild_card/
@@ -99,11 +105,11 @@ career/
       season_closeout.md       <- short administrative bridge: final ledger checkpoint, roster/contract/cap snapshot, next phase
 ```
 
-Only phases and rounds actually reached in play get created — never pre-built ahead of when the career actually gets there, and never for a season with no career events yet. Detailed field-by-field formats for a new file type (e.g. `draftees.md`, `standouts.md`, a closeout file) get written as a dedicated template in `foundation/templates/` the same way the three current templates were, when that phase is actually about to be reached — not invented in advance of need.
+Only phases and rounds actually reached in play get created — never pre-built ahead of when the career actually gets there, and never for a season with no career events yet. **Exception, at the user's request (2026-09-19):** the 2013 `standings.md`, `preseason/` game folders and `regular_season/` week folders were pre-built as `NOT STARTED` stubs from the verified master calendar so the schedule and standings are easy to find; the conditional `postseason/` folders and `league_results/` files are still created only when reached. Detailed field-by-field formats for a new file type (e.g. `draftees.md`, `standouts.md`, a closeout file) get written as a dedicated template in `foundation/templates/` the same way the three current templates were, when that phase is actually about to be reached — not invented in advance of need.
 
 **A year folder is the NFL season being built and played, not a calendar year.** `career/2013/postseason/` holds the playoffs that conclude the 2013 season even though they're played in January/February 2014; `career/2013/closeouts/` closes out the 2013 season before `career/2014/offseason/` opens. This resolves what would otherwise be a real ambiguity once the league year and the calendar year diverge.
 
-**Bye week:** still gets its own `regular_season/week_NN/output.md`, so the week numbering stays one continuous sequence — it just carries no game, and covers practice, recovery, self-scout, and anything material that happened instead.
+**Bye week:** still gets its own `regular_season/week_NN_bye/output.md`, so the week numbering stays one continuous sequence — it just carries no game, and covers practice, recovery, self-scout, and anything material that happened instead.
 
 **Trades aren't confined to one phase** — they can happen at the draft, in free agency, or around the real in-season trade deadline — so `trades/` sits at the year level rather than nested under `offseason/`, and gets a dated entry in `trades.md` whenever one actually closes, whatever the calendar says. The procedure is Document 7 SS6.2's free-agency pattern (coach's plan, autonomous market pressure from other clubs, one consolidated outcome report, immediate cap/roster accounting), applied to trades — see Document 7 SS6.2a.
 

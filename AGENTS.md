@@ -21,6 +21,7 @@ Any task that **completes an event, advances the career clock, changes roster/co
    - `career/[year]/ledger.md`;
    - the applicable transaction/result file under `career/[year]/`;
    - `career/[year]/roster.md`;
+   - `career/[year]/standings.md` whenever a final score changes any club's record (league, conference and division tables);
    - the applicable cap/contract/draft-capital accounting file;
    - `state/04_Roster_and_Staff_Register.md`;
    - `state/05_Current_Season_State.md`.
@@ -118,7 +119,7 @@ The simulation engine may still use its hidden stochastic resolution machinery t
 
 **Reactive events — allowed, but bounded.** A team's players, coaches, or front office may generate a genuine reactive event (a trade demand, a coach on the hot seat, a locker-room story, a media dust-up) if it plausibly follows from something that actually happened in a game or a transaction already on the record. Do not manufacture one to fill a quiet week — per Document 7 §7's Locker Room/Media agent rule, these fire only from logged mechanical events, never invented for drama's own sake. Across a full week's slate, most games should have none; a handful having one is normal, all of them having one is a sign you're manufacturing rather than reacting.
 
-**Write results to:** `career/[year]/league_results/week_[NN].md` (create the file/folder if it doesn't exist yet this season). One entry per game. Also update the running league standings in the same file's header table.
+**Write results to:** `career/[year]/league_results/week_[NN].md` (create the file/folder if it doesn't exist yet this season). One entry per game. Also update the running league standings in the same file's header table, and update the single current standings file `career/[year]/standings.md` (division, conference and league-wide tables, ties broken only by Document 2 §5.3) in the same commit.
 
 **Do not** write anything into the protagonist's own weekly turn file — that's assembled separately by whoever is running the interactive side of this project, which reads your results file as one of its own inputs.
 
