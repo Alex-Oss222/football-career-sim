@@ -2,6 +2,12 @@
 
 `packets.py` implements deterministic event seed derivation, immutable canonical packets, journal-before-draw ordering, idempotent result closure, and refusal of altered event replays. It accepts an already-calibrated distribution. It does not compute football matchups, drives, scores, injuries, pauses or statistics and cannot run a game.
 
+`python scripts/check_game_readiness.py --json` emits the same fail-closed gate
+assessment in a machine-readable form for deployment tooling. The diagnostic
+contains only public gate identifiers, labels and remaining-work statements; it
+does not probe, print or accept private state. A non-ready assessment exits with
+status 1, just like the human-readable form.
+
 The `PrivateJournal` interface defines the boundary for a future private service. Unit tests use synthetic data and an in-memory fake. That fake is not a persistent or private deployment. No real seed, hidden rating, opponent plan or engine journal is written into this repository or printed by the commands.
 
 ## Complete the runtime

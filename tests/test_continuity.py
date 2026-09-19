@@ -8,7 +8,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT/'scripts'))
 from validate_repository import validate
-from check_game_readiness import check
+from check_game_readiness import assess, check
 
 
 class ContinuityTests(unittest.TestCase):
@@ -88,6 +88,25 @@ class ContinuityTests(unittest.TestCase):
             item['status'] = 'VERIFIED'
         manifest.write_text(json.dumps(data))
         self.assertTrue(any('Execution integration' in blocker for blocker in check(self.root)))
+
+    def test_structured_readiness_assessment_is_fail_closed(self):
+        result = assess(self.root)
+        self.assertFalse(result['ready'])
+        ids = {blocker['id'] for blocker in result['blockers']}
+        self.assertEqual(
+            ids,
+            {'calibration', 'playing_rules', 'injury_model', 'football_kernel',
+             'private_runtime', 'execution_integration'},
+        )
+        self.assertNotIn('seed', json.dumps(result).lower())
+
+    def test_missing_remaining_work_statement_is_invalid(self):
+        manifest = self.root/'runtime/readiness.json'
+        data = json.loads(manifest.read_text())
+        data['requirements'][0]['remaining'] = ''
+        manifest.write_text(json.dumps(data))
+        with self.assertRaises(ValueError):
+            assess(self.root)
 
 
 if __name__ == '__main__':
