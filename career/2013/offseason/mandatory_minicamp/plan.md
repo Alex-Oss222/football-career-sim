@@ -1,12 +1,12 @@
 # Jacksonville Jaguars — 2013 Mandatory Veteran Minicamp Plan
 
-**Status:** DURABLE PLAN — NOT YET EXECUTED.  
+**Status:** DURABLE PLAN — NOT YET EXECUTED; mandatory veteran minicamp is June 11-13, 2013.  
 **Event owner when run:** `career/2013/offseason/mandatory_minicamp/output.md`.  
 **Framework:** `../player_onboarding_and_development_framework.md`.  
 **Readiness/CBA authority:** `../the_prowl_player_readiness_standard.md`.  
 **Program identity:** `../the_prowl_program_identity.md`.  
 **Offensive scheme authority:** `../../../playbook/alex_stone_2013_offensive_playbook_iteration_i.md` only.  
-**Calendar boundary:** verify Jacksonville's real 2013 mandatory-minicamp dates and applicable work/contact limits before execution.
+**Calendar:** verified June 11-13, 2013; governing work/contact limits still come from the CBA/readiness standard.
 
 ## Player playbook access and evidence rule
 
