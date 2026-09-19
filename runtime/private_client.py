@@ -48,7 +48,7 @@ class Client:
         if not token: raise PrivateRuntimeUnavailable("private credentials unavailable")
         headers={"Authorization":f"Bearer {token}"}
         data=None
-        if body is not None: data=json.dumps(body,separators=(",",":")).encode(); headers["Content-Type"]="application/json"
+        if body is not None: data=canonical(body); headers["Content-Type"]="application/json"
         try:
             with urlopen(Request(self.url+path,data=data,headers=headers),timeout=3) as r: return json.load(r)
         except HTTPError as e:
