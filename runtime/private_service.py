@@ -7,6 +7,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import argparse, hashlib, hmac, json, os, secrets, sqlite3, threading, time
 from pathlib import Path
 from contextlib import closing
+from urllib.parse import urlsplit, parse_qs
 from .packets import canonical
 
 SCHEMA="1"; KERNEL="2013.2"
@@ -92,20 +93,35 @@ class Store:
             seed=c.execute("SELECT value FROM meta WHERE key='seed'").fetchone()[0]
             fingerprint=hmac.new(seed,(row[0]+":"+str(row[1])).encode(),hashlib.sha256).hexdigest()
             return {"idempotent":True,"journal_fingerprint":fingerprint}
-    def close(self,event_id,packet):
-        packet_hash=hashlib.sha256(packet).hexdigest()
+    def close_digest(self,event_id,packet_hash):
+        if not isinstance(event_id,str) or not event_id.strip():
+            raise ValueError("event_id must be a nonempty string")
+        if not isinstance(packet_hash,str) or len(packet_hash)!=64:
+            raise ValueError("packet_sha256 must be a 64-character hex digest")
+        try:
+            bytes.fromhex(packet_hash)
+        except ValueError as exc:
+            raise ValueError("packet_sha256 must be hexadecimal") from exc
         with self.lock, closing(self.connect()) as c, c:
             c.execute("BEGIN IMMEDIATE")
             row=c.execute("SELECT packet_hash,result FROM events WHERE event_id=?",(event_id,)).fetchone()
             if row:
-                if row[0]!=packet_hash: raise ValueError("altered packet refused")
+                if row[0]!=packet_hash:
+                    raise ValueError("altered packet refused")
                 return row[1]
-            # Journal packet identity before deriving/drawing the result.
-            c.execute("INSERT INTO events VALUES(?,?,NULL,?,NULL)",(event_id,packet_hash,int(time.time())))
+            # Persist the immutable packet identity before deriving any entropy.
+            c.execute("INSERT INTO events VALUES(?,?,NULL,?,NULL)",
+                      (event_id,packet_hash,int(time.time())))
             seed=c.execute("SELECT value FROM meta WHERE key='seed'").fetchone()[0]
-            result=hashlib.sha256(hmac.new(seed,packet,hashlib.sha256).digest()).hexdigest()
-            c.execute("UPDATE events SET result=?,closed=? WHERE event_id=?",(result,int(time.time()),event_id))
+            context=canonical(["event-close-digest-v1",event_id,packet_hash])
+            result=hashlib.sha256(hmac.new(seed,context,hashlib.sha256).digest()).hexdigest()
+            c.execute("UPDATE events SET result=?,closed=? WHERE event_id=?",
+                      (result,int(time.time()),event_id))
             return result
+
+    def close(self,event_id,packet):
+        """Compatibility wrapper for local tests and legacy body callers."""
+        return self.close_digest(event_id,hashlib.sha256(packet).hexdigest())
     def correct(self,event_id,reason):
         if not reason.strip(): raise ValueError("correction reason required")
         with closing(self.connect()) as c, c:
@@ -131,37 +147,59 @@ def handler(store,token,snapshot=None):
         def do_POST(self):
             if not self.auth(): return
             try:
-                n=int(self.headers.get("Content-Length","0")); body=json.loads(self.rfile.read(n) or b"{}")
-                if not isinstance(body,dict): raise ValueError("request body must be a JSON object")
-                if self.path=="/events/close":
-                    # Canonical production wire format is the packet object itself.
-                    # Backward compatibility: accept the previous {"packet": {...}}
-                    # wrapper, and accept a JSON-string packet only by parsing it
-                    # back into an object before validation.
+                parsed=urlsplit(self.path)
+                if parsed.path=="/events/close":
+                    # Canonical production contract: event identity and the
+                    # SHA-256 identity of the canonical packet travel in the
+                    # authenticated URL; no request body is required.
+                    query=parse_qs(parsed.query,keep_blank_values=True)
+                    event_id=(query.get("event_id") or [None])[0]
+                    packet_hash=(query.get("packet_sha256") or [None])[0]
+                    if event_id is not None or packet_hash is not None:
+                        if event_id is None or packet_hash is None:
+                            raise ValueError("event_id and packet_sha256 are both required")
+                        return self.send(200,{"result_ref":store.close_digest(event_id,packet_hash)})
+
+                    # Backward compatibility for pre-digest clients.
+                    n=int(self.headers.get("Content-Length","0"))
+                    body=json.loads(self.rfile.read(n) or b"{}")
+                    if not isinstance(body,dict):
+                        raise ValueError("request body must be a JSON object")
                     legacy_outer_id=None
                     if "packet" in body:
                         legacy_outer_id=body.get("event_id")
                         packet=body["packet"]
                         if isinstance(packet,str):
-                            try: packet=json.loads(packet)
+                            try:
+                                packet=json.loads(packet)
                             except json.JSONDecodeError as exc:
                                 raise ValueError("packet JSON string is invalid") from exc
                     else:
                         packet=body
-                    if not isinstance(packet,dict): raise ValueError("packet must be a JSON object")
+                    if not isinstance(packet,dict):
+                        raise ValueError("packet must be a JSON object")
                     event_id=packet.get("event_id")
                     if not isinstance(event_id,str) or not event_id.strip():
                         raise ValueError("packet event_id must be a nonempty string")
                     if legacy_outer_id is not None and legacy_outer_id!=event_id:
                         raise ValueError("outer event_id does not match packet event_id")
                     return self.send(200,{"result_ref":store.close(event_id,canonical(packet))})
-                if self.path=="/admin/probe": return self.send(200,store.probe())
-                if self.path=="/admin/snapshot/advance":
+
+                n=int(self.headers.get("Content-Length","0"))
+                body=json.loads(self.rfile.read(n) or b"{}")
+                if not isinstance(body,dict):
+                    raise ValueError("request body must be a JSON object")
+                if parsed.path=="/admin/probe":
+                    return self.send(200,store.probe())
+                if parsed.path=="/admin/snapshot/advance":
                     current=store.advance_snapshot(body["previous_snapshot"],body["next_snapshot"],body["checkpoint"])
                     return self.send(200,{"advanced":True,"snapshot":current})
-                if self.path=="/corrections": store.correct(body["event_id"],body["reason"]); return self.send(201,{"recorded":True})
+                if parsed.path=="/corrections":
+                    store.correct(body["event_id"],body["reason"])
+                    return self.send(201,{"recorded":True})
                 self.send(404,{"error":"not found"})
-            except (json.JSONDecodeError,KeyError,TypeError,ValueError) as e: self.send(409,{"error":str(e)})
+            except (json.JSONDecodeError,KeyError,TypeError,ValueError) as e:
+                self.send(409,{"error":str(e)})
     return Handler
 
 def main():
