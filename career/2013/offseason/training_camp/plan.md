@@ -1,6 +1,6 @@
 # Jacksonville Jaguars — 2013 Training Camp Plan
 
-**Status:** DURABLE PLAN — NOT YET EXECUTED; contracted players report July 25 and the first practice is July 26, 2013.  
+**Status:** DURABLE PLAN — NOT YET EXECUTED; rookies and quarterbacks report July 22, the full team reports July 25, and the first full-team practice is July 26, 2013.  
 **Future event owner when run:** `career/2013/offseason/training_camp/output.md` (create when the verified calendar reaches camp).  
 **Framework:** `../player_onboarding_and_development_framework.md`.  
 **Readiness/CBA authority:** `../the_prowl_player_readiness_standard.md`.  
