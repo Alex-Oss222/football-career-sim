@@ -266,8 +266,9 @@ Correct Jacksonville football calendar through mandatory minicamp:
 - May 23 — OTA day;
 - June 4-7 — OTA block;
 - June 11-13 — mandatory veteran minicamp;
-- July 25 — all contracted players report to training camp;
-- July 26 — first training-camp practice.
+- July 22 — rookies and quarterbacks report to training camp;
+- July 25 — full team / veterans report;
+- July 26 — first full-team training-camp practice.
 
 The full preseason, regular-season, roster-deadline and conditional postseason calendar is now in `career/2013/calendar.md`, sourced by `library/2013_jacksonville_master_calendar.md`.
 
