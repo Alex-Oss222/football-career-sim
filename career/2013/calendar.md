@@ -10,7 +10,7 @@
 - Completed through: May 5 rookie minicamp.
 - Next scheduled football work: **OTA block, May 13-15**.
 - Preserved continuity gap: April 16-18 voluntary veteran minicamp was not run before the simulation advanced. Do not retroactively create attendance, install or player evidence.
-- Before OTAs: current roster control and the Top-51 cap worksheet must be reconciled.
+- Roster control and the May 5 Top-51 worksheet are reconciled at Ledger Entry 9. Before OTAs, the remaining operational gate is current medical participation communication for the controlled roster.
 
 ## 2013 branch schedule
 
@@ -35,7 +35,15 @@
 | Jul. 23-24 | Rookie/QB acclimation and preparation | training-camp plan / medical-performance process | Future |
 | **Jul. 25** | Full team / veterans report | `offseason/training_camp/plan.md` | Future |
 | Jul. 26-Aug. 3 | Published opening full-team camp/practice sequence | `offseason/training_camp/plan.md`, future `output.md` | Future |
+| Aug. 5 | Full-padded camp practice; afternoon walkthrough scheduled | training-camp plan / future output | Future |
+| Aug. 6 | Full-padded camp practice | training-camp plan / future output | Future |
+| Aug. 7 | Training-camp practice | training-camp plan / future output | Future |
+| Aug. 8 | Final walkthrough before preseason opener | training-camp plan / future output | Future |
 | **Aug. 9** | Preseason 1 vs Miami, 7:30 p.m. | future preseason/game output | Future |
+| Aug. 12 | Full-padded camp practice | training-camp plan / future output | Future |
+| Aug. 13 | Training-camp practice | training-camp plan / future output | Future |
+| Aug. 14 | Full-padded camp practice | training-camp plan / future output | Future |
+| **Aug. 15** | Walkthrough; 2013 training camp concludes | training-camp plan / future output | Future |
 | **Aug. 17** | Preseason 2 at NY Jets, 7:30 p.m. | future preseason/game output | Future |
 | **Aug. 24** | Preseason 3 vs Philadelphia, 7:30 p.m. | future preseason/game output | Future |
 | **Aug. 27, 4 p.m.** | Cut to 75 | roster/cap/state atomic update | Future |
@@ -82,7 +90,22 @@
 | Fri. Aug. 2, 9:55 a.m. | Practice |
 | Sat. Aug. 3, 6:45 p.m. | Stadium scrimmage |
 
-After August 3, use the verified preseason/cutdown calendar plus the training-camp plan. Do not invent public-practice dates that the historical source does not establish.
+### Verified training-camp continuation
+
+Jacksonville's contemporaneous daily coverage verifies the following team work after the August 3 stadium scrimmage. These are schedule rails only; the branch must generate its own attendance, health, reps, performance and roster consequences.
+
+| Date | Verified activity |
+|---|---|
+| Aug. 5 | Full-padded practice; afternoon walkthrough scheduled |
+| Aug. 6 | Full-padded practice |
+| Aug. 7 | Practice |
+| Aug. 8 | Final walkthrough before Miami |
+| Aug. 12 | Full-padded practice |
+| Aug. 13 | Practice |
+| Aug. 14 | Full-padded practice |
+| Aug. 15 | Walkthrough; training camp concludes |
+
+No unverified August 4 or August 10-11 practice is inserted. After August 15, use the verified preseason games, cutdown deadlines and the training-camp/preseason plan. Do not invent a historical daily practice when the source establishes only a broader preparation window.
 
 ## Calendar invariants
 
