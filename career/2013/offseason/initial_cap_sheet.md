@@ -1,6 +1,6 @@
 # Jacksonville Jaguars — Initial 2013 Cap and Contract Sheet
 
-> **Historical starting finances:** The tables below remain the January initialization baseline. The [March 12 signing and cap ledger](free_agency/signings.md) now carries the completed batch's annual charges, cash, guarantees, release-accounting gaps and approximately $8.35M remaining planning room. This pointer does not revise the baseline figures.
+> **Historical starting finances:** The tables below remain the January initialization baseline. They are **not** the current club cap balance. For the reconciled May 5 branch accounting, use [current_cap_worksheet.md](current_cap_worksheet.md), which supersedes the stale ~$8.35M shortcut and carries the current Top-51 planning range.
 
 **Accounting date:** January 15, 2013  
 **League-year distinction:** the 2013 league year and its $123,000,000 cap do not begin until March 12, 2013 at 4:00 p.m. ET.  
@@ -309,34 +309,48 @@ Use the identity **change in room = change in adjusted cap minus change in total
 
 This keeps the simulation financially disciplined without pretending an NFL club becomes incapable of acting until every historical accounting line has been reconstructed.
 
-## Post-draft 2013 transaction and running-room update
+## Current branch reconciliation pointer — May 5, 2013
 
-Jacksonville completed two pre-draft trades before exercising all seven 2013 selections:
+This file remains the January 15 research/baseline sheet. Current branch accounting is now closed in [current_cap_worksheet.md](current_cap_worksheet.md).
 
-- Washington receives Jacksonville's **2014 second-round selection**; Jacksonville receives QB Kirk Cousins.
-- Green Bay receives QB Blaine Gabbert; Jacksonville receives DE C.J. Wilson. No pick is attached to this player-for-player trade.
+That worksheet reconciles:
 
-The approximately **$8.35M** post-free-agency figure remains a **pre-trade gross planning reference only**. It is not carried forward as current room because the repository has not yet reconciled Cousins' assigned contract charge, Wilson's incoming contract charge, Gabbert's outgoing/accelerated treatment, Top-51 displacement, or the unresolved veteran-release effects already identified above. Do not infer savings merely because Gabbert left or import Washington/Green Bay's published team cap hits as Jacksonville's accounting.
+- the corrected January control inventory;
+- March 12 contract expirations/rights that were not retained;
+- the four branch releases;
+- the six branch free-agent/re-signing agreements;
+- Cousins' incoming contract;
+- Gabbert's pre-June-1 outgoing bonus acceleration;
+- C.J. Wilson's incoming 2013 base obligation;
+- all seven May 2 drafted-rookie contracts;
+- all four UDFA minimum contracts;
+- Top-51 displacement.
 
-Jacksonville then selected Lane Johnson, Travis Kelce, Jordan Poyer, Sio Moore, Lavar Edwards, Bacarri Rambo, and Tyler Bray. They remain draft-rights additions until rookie contracts execute; no invented rookie cap charge is booked.
+### Current May 5 planning result
 
-After the draft, Jacksonville signed Brynden Trawick, A.J. Bouye, Adam Thielen, and C.J. Anderson as undrafted rookie free agents. The signings are completed roster-control events, but exact signing bonuses, guarantees, base-salary schedules, and Top-51 displacement are not established in canon and therefore are not assigned precise dollar values here.
+**Approximately $7.0M-$7.4M of Top-51 cap room.**
 
-**Draft-capital state:** Jacksonville retains every 2013 selection it exercised. Its 2014 second-round selection belongs to Washington. Recompute the current planning room when the transferred veteran contracts, executed rookie deals, and full counted-roster worksheet are reconciled.
+That range is the strongest supportable current planning answer. It is deliberately not converted into a fake exact dollar because the public historical starting team-room figure was itself approximate and Aaron Ross's exact execution timing inside the branch's compressed release batch is not separately fixed.
 
-## May 2 rookie-contract booking
+### Corrected rookie contract totals
 
-Caldwell executed the seven drafted-rookie contracts on May 2, 2013, using the fixed four-year slot structure (plus Lane Johnson's first-round club option). Exact pick-slot totals and signing bonuses were checked first against [Spotrac's 2013 draft tracker](https://www.spotrac.com/nfl/draft/_/year/2013) and separately against [Over The Cap's 2013 draft archive](https://overthecap.com/draft/2013). This branch does not use the players' real signing dates or destinations as an answer key.
+The prior May 2 table in this file was superseded after a slot-by-slot audit. Correct gross totals are:
 
-| Player | Pick | Total | Signing bonus | 2013 base used | 2013 bonus proration | 2013 gross cap charge |
-|---|---:|---:|---:|---:|---:|---:|
-| Lane Johnson | #2 | $21,201,243 | $13,799,344 | $405,000 | $3,449,836 | $3,854,836 |
-| Travis Kelce | #33 | $5,220,018 | $2,356,280 | $405,000 | $589,070 | $994,070 |
-| Jordan Poyer | #64 | $3,102,200 | $942,200 | $405,000 | $235,550 | $640,550 |
-| Sio Moore | #98 | $2,641,000 | $481,000 | $405,000 | $120,250 | $525,250 |
-| Lavar Edwards | #135 | $2,371,672 | $211,672 | $405,000 | $52,918 | $457,918 |
-| Bacarri Rambo | #169 | $2,286,504 | $126,504 | $405,000 | $31,626 | $436,626 |
-| Tyler Bray | #208 | $2,207,680 | $47,680 | $405,000 | $11,920 | $416,920 |
-| **Total** |  | **$39,030,317** | **$17,964,680** | **$2,835,000** | **$4,491,170** | **$7,326,170** |
+- signing bonuses: **$17,736,408**
+- 2013 gross cap: **$7,269,102**
+- 2014 scheduled cap: **$8,980,407**
+- 2015 scheduled cap: **$10,666,712**
+- 2016 scheduled cap: **$12,403,517**
+- four-year contract totals: **$39,319,738**
 
-The $405,000 base is the sourced 2013 rookie minimum; signing bonuses prorate over four years under Article 7. The table books the seven individual gross obligations. It does **not** claim a $7,326,170 net reduction in club room: exact Top-51 displacement is unresolved, as are the transferred-veteran and prior-release items already listed above. Later-year base allocations, guarantees beyond the verified bonus treatment, payment timing, and Johnson's option economics remain unresolved where the two-pass evidence did not establish them.
+The drafted-rookie **net May 5 Top-51 effect is $4,134,102**, not the $7.269M gross figure.
+
+Full player-by-player schedules live in `draft/draftees.md`.
+
+### UDFA treatment
+
+Brynden Trawick, A.J. Bouye, Adam Thielen and C.J. Anderson are each on a three-year rookie minimum contract ($405,000 / $495,000 / $585,000) with zero signing bonus and no additional guarantee. Their current May 5 Top-51 effect is $0 because their $405,000 bases sit below the counted 51 and carry no bonus proration.
+
+### Recalculation rule
+
+Do not carry the May 5 range past a new transaction or major roster-accounting checkpoint. Recalculate after signings/releases/trades, at the 75/53 cutdowns, and again at the September 4 transition from offseason Top-51 to regular-season accounting.

@@ -10,12 +10,12 @@
 | Date | Selection | Player | Pos. | School | Caldwell's decision and Stone's football role |
 |---|---:|---|---|---|---|
 | April 25 | #2 | Lane Johnson | OT | Oklahoma | Caldwell accepted Stone's preference within the available premium tackle group after Kansas City opened with Eric Fisher. Johnson begins at right tackle under George Yarno, with Mike Tice integrating his protection and run assignments; Eugene Monroe remains at left tackle. |
-| April 26 | #33 | Travis Kelce | TE | Cincinnati | Caldwell accepted Stone's higher-than-public valuation after weighing the remaining defensive and receiving alternatives. Kelce starts with a bounded TE2 job alongside Marcedes Lewis; Bobby Zernhelt owns the initial blocks, releases, and route menu. His documented 2010 team suspension remains a diligence and accountability matter, not a permanent character label. |
-| April 26 | #64 | Jordan Poyer | CB | Oregon State | Keenan Allen was no longer available. Caldwell chose Poyer over the remaining comparable line/front options because Jacksonville's board supported his recognition and technique for the secondary need. Melvin Oden begins him at corner; any safety cross-training must be earned rather than presumed. |
-| April 27 | #98 | Sio Moore | OLB | Connecticut | David Bakhtiari was selected before Jacksonville returned to the clock. Caldwell preferred Moore's supported blitz/coverage range to forcing the next offensive lineman. Romeo Crennel and Melvin Pleasant must give him one initial linebacker assignment before expanding his rush or coverage menu. |
-| April 27 | #135 | Lavar Edwards | DE | LSU | Caldwell accepted Stone's rotational-end case at the planned price. Pleasant owns leverage, block separation, edge responsibility, and rush-lane work; an interior passing-down role is only a later experiment. |
+| April 26 | #33 | Travis Kelce | TE | Cincinnati | Caldwell accepted Stone's higher-than-public valuation after weighing the remaining defensive and receiving alternatives. Kelce starts with a bounded TE2 job alongside Marcedes Lewis; John Zernhelt owns the initial blocks, releases, and route menu. His documented 2010 team suspension remains a diligence and accountability matter, not a permanent character label. |
+| April 26 | #64 | Jordan Poyer | CB | Oregon State | Keenan Allen was no longer available. Caldwell chose Poyer over the remaining comparable line/front options because Jacksonville's board supported his recognition and technique for the secondary need. Tony Oden begins him at corner; any safety cross-training must be earned rather than presumed. |
+| April 27 | #98 | Sio Moore | OLB | Connecticut | David Bakhtiari was selected before Jacksonville returned to the clock. Caldwell preferred Moore's supported blitz/coverage range to forcing the next offensive lineman. Romeo Crennel and Anthony Pleasant must give him one initial linebacker assignment before expanding his rush or coverage menu. |
+| April 27 | #135 | Lavar Edwards | DE | LSU | Caldwell accepted Stone's rotational-end case at the planned price. Anthony Pleasant owns leverage, block separation, edge responsibility, and rush-lane work; an interior passing-down role is only a later experiment. |
 | April 27 | #169 | Bacarri Rambo | S | Georgia | Caldwell used the best remaining supported secondary value after the front and offensive-line comparisons thinned. Oden begins with one safety role and Lowry evaluates special-teams use. Rambo's documented college suspension stays in the availability/accountability review and is not generalized into a private personality judgment. |
-| April 27 | #208 | Tyler Bray | QB | Tennessee | Caldwell used the final selection on a developmental quarterback behind the newly acquired Cousins competition and Henne's veteran insurance. Bray's arm talent justified a late evaluation opportunity; his footwork, decisions, and consistency remain open football questions. Greg Bates establishes the baseline under the same standards as Cousins and Henne. No roster spot, depth position, or future starting role is promised. |
+| April 27 | #208 | Tyler Bray | QB | Tennessee | Caldwell used the final selection on a developmental quarterback behind the newly acquired Cousins competition and Henne's veteran insurance. Bray's arm talent justified a late evaluation opportunity; his footwork, decisions, and consistency remain open football questions. Jeremy Bates establishes the baseline under the same standards as Cousins and Henne. No roster spot, depth position, or future starting role is promised. |
 
 ## Live-board availability and autonomous league action
 
@@ -37,10 +37,9 @@ No Jacksonville draft-day trade closed. The Cousins and Gabbert/Wilson transacti
 
 ## Contract, roster, and medical limits
 
-These selections add exclusive negotiating rights and rookie roster entries; they do not invent signed contract terms, guarantees, cap charges, medical clearance, or depth-chart wins. Exact rookie contracts and Top-51 displacement are booked only when agreements execute. Public pre-draft medical or conduct information remains a diligence input; Jacksonville's private medical conclusions are not invented here.
+The seven selections initially created exclusive negotiating rights. Caldwell converted all seven into signed rookie contracts on **May 2, 2013**, before rookie minicamp. Signing does not guarantee a starting job, workload, medical clearance beyond the event-specific record, or final roster place.
 
-**Contemporaneous evidence:** `library/2013_draft_class.md` (April 24 pre-selection snapshot), `library/2013_draft_pool_registry.md` (eligibility), and `library/2013_draft_information_gates.md` (release-date controls). **Jacksonville recommendation:** `player_draft_board.md`. **Ex-ante packet:** `career/2013/ledger.md`, Entry 4.
-
+**Contemporaneous evidence:** `library/2013_draft_class.md` (April 24 pre-selection snapshot), `library/2013_draft_pool_registry.md` (eligibility), `library/2013_draft_information_gates.md` (release-date controls), and the 2013 rookie-pool estimates in the current cap worksheet. **Jacksonville recommendation:** `player_draft_board.md`. **Ex-ante packet:** `career/2013/ledger.md`, Entry 4.
 
 ## Post-draft rookie free agents
 
@@ -48,18 +47,19 @@ Jacksonville's user-authorized undrafted signing class is recorded separately in
 
 ## Rookie contracts — executed May 2, 2013
 
-Caldwell completed all seven slot-based rookie contracts before the verified May 3 rookie-minicamp opening. This is a post-divergence simulation event under the 2011 CBA wage scale, not adoption of any player's real signing date or real club outcome. The slot values are tied to Jacksonville's simulated selections.
+Caldwell completed all seven four-year rookie contracts before the verified May 3 rookie-minicamp opening. These are branch contracts tied to Jacksonville's simulated draft slots under the 2011 CBA rookie wage scale, not imports of the players' real club destinations.
 
-| Pick | Player | Term | Verified slot total | Verified signing bonus | Computed 2013 gross charge before Top-51 displacement |
-|---:|---|---:|---:|---:|---:|
-| #2 | Lane Johnson | 4 years plus first-round club option | $21,201,243 | $13,799,344 | $3,854,836 |
-| #33 | Travis Kelce | 4 years | $5,220,018 | $2,356,280 | $994,070 |
-| #64 | Jordan Poyer | 4 years | $3,102,200 | $942,200 | $640,550 |
-| #98 | Sio Moore | 4 years | $2,641,000 | $481,000 | $525,250 |
-| #135 | Lavar Edwards | 4 years | $2,371,672 | $211,672 | $457,918 |
-| #169 | Bacarri Rambo | 4 years | $2,286,504 | $126,504 | $436,626 |
-| #208 | Tyler Bray | 4 years | $2,207,680 | $47,680 | $416,920 |
+| Pick | Player | Term | Signing bonus | 2013 cap | 2014 cap | 2015 cap | 2016 cap | Total |
+|---:|---|---|---:|---:|---:|---:|---:|---:|
+| #2 | Lane Johnson | 4 years + first-round club option | $13,799,344 | $3,854,836 | $4,818,545 | $5,782,254 | $6,745,963 | $21,201,598 |
+| #33 | Travis Kelce | 4 years | $2,357,528 | $994,382 | $1,242,978 | $1,491,574 | $1,740,170 | $5,469,104 |
+| #64 | Jordan Poyer | 4 years | $671,176 | $572,794 | $711,794 | $825,794 | $990,294 | $3,100,676 |
+| #98 | Sio Moore | 4 years | $497,028 | $529,257 | $619,257 | $709,257 | $799,257 | $2,657,028 |
+| #135 | Lavar Edwards | 4 years | $213,612 | $458,403 | $548,403 | $638,403 | $728,403 | $2,373,612 |
+| #169 | Bacarri Rambo | 4 years | $128,820 | $437,205 | $527,205 | $617,205 | $707,205 | $2,288,820 |
+| #208 | Tyler Bray | 4 years | $68,900 | $422,225 | $512,225 | $602,225 | $692,225 | $2,228,900 |
+| **Total** | | | **$17,736,408** | **$7,269,102** | **$8,980,407** | **$10,666,712** | **$12,403,517** | **$39,319,738** |
 
-The 2013 gross figures use the verified $405,000 rookie minimum plus one-fourth of each verified signing bonus. Total gross 2013 scheduled charge is **$7,326,170**. Exact net Top-51 impact and current club room remain unresolved because the displaced counted contracts and complete club worksheet are not verified. Later-year base allocations and first-round option economics remain unresolved rather than reconstructed from later actual player pages.
+The prior branch total of **$7,326,170** for 2013 was incorrect and is superseded. Gross rookie charges are also not the same as net Top-51 effect. The reconciled current worksheet calculates the drafted-rookie Top-51 effect at **$4,134,102** as of May 5. See `../current_cap_worksheet.md`.
 
-**Two-pass slot verification:** first pass used [Spotrac's 2013 NFL Draft contract tracker](https://www.spotrac.com/nfl/draft/_/year/2013) by exact pick; a separate check used [Over The Cap's 2013 rookie-pool estimates and signed-contract archive](https://overthecap.com/draft/2013) and the 2011 CBA Article 7 structure. Where a later-year allocation could not be independently matched, it remains unresolved. Unsigned drafted players could have participated under the CBA's rookie participation/injury-protection framework, but that contingency did not become necessary because these seven agreements executed before camp.
+**Slot source:** OverTheCap's contemporaneous February 2013 Jacksonville rookie-pool estimate, cross-checked to the 2011 CBA Article 7 structure. The project uses the pick-slot economics because Jacksonville selected these players at those branch draft positions.

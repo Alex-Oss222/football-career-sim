@@ -18,12 +18,21 @@ The four players were not selected in this simulation's seven-round draft and ar
 
 ## Contract and cap treatment
 
-Jacksonville records all four rookie-free-agent contracts as executed. Exact signing bonuses, guarantees, base-salary schedules, and Top-51 displacement are not established in the current repository evidence and are therefore not invented in this file. career/2013/offseason/initial_cap_sheet.md records the unresolved financial treatment.
+Caldwell completed all four contracts before May 3 rookie minicamp. Each is a standard three-year undrafted rookie minimum contract under the 2011 CBA:
 
-Signing these players creates roster control and an offseason evaluation opportunity only. It does not establish medical clearance, a final roster spot, a depth-chart rank, a package assignment, or future performance.
+| Player | 2013 base | 2014 base | 2015 base | Signing bonus | Additional guarantee |
+|---|---:|---:|---:|---:|---:|
+| Brynden Trawick | $405,000 | $495,000 | $585,000 | $0 | $0 |
+| A.J. Bouye | $405,000 | $495,000 | $585,000 | $0 | $0 |
+| Adam Thielen | $405,000 | $495,000 | $585,000 | $0 | $0 |
+| C.J. Anderson | $405,000 | $495,000 | $585,000 | $0 | $0 |
+
+These are branch contract terms, not the players' later real NFL deals. At the May 5 64-player roster count, the four $405,000 bases sit below the Top-51 cutoff and have no signing-bonus proration, so their current **net Top-51 effect is $0**. They remain signed, controlled players.
+
+Signing creates roster control and an evaluation opportunity only. It does not establish medical clearance beyond the event-specific record, a final roster spot, depth rank, package assignment, workload, target share, or future performance.
 
 ## Roster effect
 
-The working inventory was 71 after the pre-draft trades and seven Jacksonville draft selections. These four signings move the post-draft working inventory to **75**. This remains an offseason working inventory, not an active-roster declaration.
+The corrected controlled roster was **60** after the pre-draft trades and seven Jacksonville draft additions. These four contracts move the May 5 controlled roster to **64**. The old 75-person working count incorrectly carried expired 2012 contracts and omitted four pre-divergence reserve/future contracts.
 
 **Canonical references:** career/2013/ledger.md, Entry 7; career/2013/roster.md; state/04_Roster_and_Staff_Register.md.

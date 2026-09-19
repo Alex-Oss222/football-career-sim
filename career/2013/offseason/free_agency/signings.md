@@ -2,11 +2,13 @@
 
 Status: MARCH 12 OPENING BATCH COMPLETE
 
+> **Current-state supersession:** This file preserves the March batch and its original gross running arithmetic. Its `~$8.35M` figures are **historical unreconciled planning shortcuts, not current cap room**. Season-ledger Entry 9 and `../current_cap_worksheet.md` supersede them for current state. May 5 Top-51 planning room is approximately **$7.0M-$7.4M**.
+
 Operative date: March 12, 2013, 4:00 p.m. ET, as recorded for the batch. Separate execution times are not supplied.
 
 These are completed simulation outcomes. The contracts, accepted/declined offers, contingency sequence and four releases are unchanged. Amounts below are calculated from those branch agreements, not from the players' real later contracts.
 
-Current roster: [March 12 roster view](../../roster.md). Source-event reconciliation: [season ledger, Entry 3](../../ledger.md). Historical starting finances: [January cap sheet](../initial_cap_sheet.md).
+Current roster now: [reconciled May 5 roster](../../roster.md). Historical event source: [season ledger, Entry 3](../../ledger.md). Historical starting finances: [January cap sheet](../initial_cap_sheet.md). Current cap accounting: [May 5 Top-51 worksheet](../current_cap_worksheet.md).
 
 ## 1. Completed outcomes
 
@@ -21,7 +23,7 @@ Current roster: [March 12 roster view](../../roster.md). Source-event reconcilia
 | Daryl Smith | Re-signed | 2 years, $6.0M; $1.0M guaranteed | Existing linebacker retained on new deal |
 | Brent Grimes | Signed after Bennett declined | 1 year, $5.5M, fully guaranteed | Added at CB |
 
-Six executed agreements total **$20.50M**, with **$13.75M** of scheduled 2013 cap charges and **$6.75M** in 2014. The unchanged running estimate closes at **approximately $8.35M**. The two declined offers create no contract charge.
+Six executed agreements total **$20.50M**, with **$13.75M** of scheduled 2013 cap charges and **$6.75M** in 2014. The batch's original gross shortcut closed at **approximately $8.35M**, but that number did not include the subsequently reconciled release, transfer and Top-51 effects and is not current room. The two declined offers create no contract charge.
 
 ## 2. Contract breakdown
 
@@ -76,7 +78,7 @@ For an actual reconciliation, calculate counted team salary before and after eac
 
 **Reconciled room = ~$8.35M + baseline/adjusted-cap correction + verified signing-count adjustments + verified net release adjustments + other documented changes.**
 
-Each correction may affect the result; unknown release liabilities can reduce room. Thus $8.35M is a usable unchanged planning estimate, not a certified balance or a guaranteed lower bound. The conservative treatment applies to the signing debits, not to every unknown elsewhere in the ledger.
+This historical section explains how the original $8.35M shortcut was produced. It is superseded for current decision-making by the May 5 Top-51 worksheet and must not be used as current room.
 
 Before allocating all remaining room, establish any still-unbooked rookie/tender costs, offseason adjustments, the later transition from Top-51 to full-roster counting, practice-squad/in-season replacement costs and a club-selected operating reserve. No reserve amount or exact future cap space is invented here. The four-year cash-spending test is separate from cap room.
 

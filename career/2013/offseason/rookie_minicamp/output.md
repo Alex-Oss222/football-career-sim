@@ -2,18 +2,18 @@
 
 **Event status:** COMPLETE.
 **Verified dates:** May 3-5, 2013.
-**Calendar source:** [`library/2013_offseason_program_calendar.md`](../../../../library/2013_offseason_program_calendar.md).
+**Calendar source:** [`library/2013_jacksonville_master_calendar.md`](../../../../library/2013_jacksonville_master_calendar.md).
 **Controlling plan:** [`plan.md`](plan.md), executed without rewriting it.
 **Active offensive book:** `career/playbook/alex_stone_2013_offensive_playbook_iteration_i.md` only.
 **Participants resolved here:** seven signed draftees and four signed rookie free agents. No tryout player or unresolved inherited name was invented.
 
 ## Calendar and continuity note
 
-Jacksonville's real 2013 schedule gave a new-head-coach club an April 1 early program start and an April 16-18 extra voluntary veteran minicamp. That minicamp occurred after the March 12 free-agency opening and before the April 25 draft, but the already-closed branch ledger did not run it. Per the user's instruction, no closed entry is rewritten and no retroactive attendance, install, or performance is manufactured. The discrepancy is preserved in the new calendar library and here; this event advances only through rookie minicamp and does **not** run OTAs.
+Jacksonville's real 2013 schedule gave a new-head-coach club an April 2 official offseason-program start and an April 16-18 extra voluntary veteran minicamp. That minicamp occurred after the March 12 free-agency opening and before the April 25 draft, but the already-closed branch ledger did not run it. Per the user's instruction, no closed entry is rewritten and no retroactive attendance, install, or performance is manufactured. The discrepancy is preserved in the new calendar library and here; this event advances only through rookie minicamp and does **not** run OTAs.
 
 ## Control, contracts, medical and onboarding gate
 
-Caldwell executed all seven slot-based drafted-rookie contracts on May 2. The exact slot totals, signing bonuses, and gross 2013 charges are in `draft/draftees.md` and `initial_cap_sheet.md`; net Top-51 treatment remains unresolved. The four UDFAs already had executed rookie-free-agent agreements, although their precise bonuses and guarantees remain unresolved. All eleven therefore entered camp under established Jacksonville control.
+Caldwell executed all seven slot-based drafted-rookie contracts on May 2. Current contract and Top-51 accounting is controlled by `draft/draftees.md`, `draft/udfa_signings.md`, `current_cap_worksheet.md`, and ledger Entry 9; those later accounting corrections do not change this camp's football result. All eleven therefore entered camp under established Jacksonville control.
 
 The normal onboarding sequence was compressed honestly into the short post-draft window:
 

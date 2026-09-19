@@ -14,7 +14,7 @@
 | NFL Scouting Combine | February 20-26, 2013, Lucas Oil Stadium, Indianapolis, 333 prospects invited | Confirmed via NFL.com, Philadelphia Eagles' and Pittsburgh Steelers' official sites, NBC Sports/ProFootballTalk. |
 | 2013 NFL Draft | April 25-27, 2013, Radio City Music Hall, NYC. Round 1: Thu 8:00 PM ET. Rounds 2-3: Fri 6:30 PM ET. Rounds 4-7: Sat. | Confirmed via ESPN Press Room's official broadcast release, NFL.com, Raiders.com. |
 
-Jacksonville's 2013 offseason-program calendar has now been researched and separately re-verified: see [`2013_offseason_program_calendar.md`](2013_offseason_program_calendar.md) for the April 1 early start, April 16-18 new-head-coach voluntary minicamp, May 3-5 rookie minicamp, Phase Two/OTA windows, June 11-13 mandatory minicamp, and split rookie/veteran training-camp reporting dates. Still not researched here (do not treat as established): the 53-man cutdown deadline, regular-season opener date, in-season trade deadline, postseason start date, Super Bowl date, and contract/staff retention deadline.
+Jacksonville's full 2013 team calendar has now been researched and separately re-verified. Use [`2013_jacksonville_master_calendar.md`](2013_jacksonville_master_calendar.md) for the corrected **April 2** offseason-program start, April 16-18 new-head-coach voluntary minicamp, May 3-5 rookie minicamp, all OTA dates, June 11-13 mandatory minicamp, training camp, four preseason games, roster/cap cutdown deadlines, all 17 regular-season weeks, the trade deadline, and conditional postseason dates. [`2013_offseason_program_calendar.md`](2013_offseason_program_calendar.md) remains an offseason-only compatibility path and carries the same corrected dates.
 
 ## Salary cap and financial rules
 

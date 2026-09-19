@@ -1,177 +1,270 @@
-# Jacksonville Jaguars: roster after 2013 rookie minicamp
+# Jacksonville Jaguars — Current Roster
 
-**As of:** May 5, 2013, after rookie minicamp closed; OTAs have not begun.
-**Sources:** [Completed signings and releases](offseason/free_agency/signings.md); [completed trades](trades/trades.md); [2013 draftees](offseason/draft/draftees.md); [UDFA signings](offseason/draft/udfa_signings.md); [season ledger](ledger.md).
-**Register:** [Canonical player records](../../state/04_Roster_and_Staff_Register.md), version `JAX-2013-ROOKIE-MINICAMP-ROSTER-1`.
+**As of:** May 5, 2013, after rookie minicamp and before OTAs.  
+**Canonical controlled-player count:** **64**.  
+**Status:** Contract/control reconciliation complete for the current roster. Veteran practice availability still requires normal current medical communication.  
+**Cap:** See [May 5 Top-51 worksheet](offseason/current_cap_worksheet.md).  
+**Calendar:** See [active 2013 career calendar](calendar.md).
 
-## What changed
+## 1. Why the old 75-player count was wrong
 
-Four outside players joined: Sen'Derrick Marks, Roy Miller, Alan Ball and Brent Grimes. Brad Meester and Daryl Smith re-signed. Guy Whimper, Aaron Ross, Dawan Landry and Laurent Robinson were released. Michael Bennett and Justin Forsett declined and were not acquired.
+The old working roster treated almost every 2012 Week 17 name as if Jacksonville still controlled him in May 2013. Jacksonville's contemporaneous free-agent list proves otherwise.
 
-| Inventory reconciliation | Names |
+Seventeen names from that old inventory were scheduled to become free agents March 12. This branch re-signed **Brad Meester** and **Daryl Smith** only. The other fifteen left Jacksonville control when their prior contracts/rights expired because no branch tender or new contract was recorded:
+
+- Kyle Bosworth
+- Eben Britton
+- John Chick
+- Derek Cox
+- Greg Jones
+- Terrance Knighton
+- Rashean Mathis
+- Antwaun Molden
+- Jordan Palmer
+- Jalen Parmele
+- Zach Potter
+- George Selvie
+- Jordan Shipley
+- Keith Toston
+- Steve Vallos
+
+Conversely, the old January snapshot omitted four **December 30, 2012 reserve/future contracts** that predate Stone's January 15 divergence:
+
+- QB John Parker Wilson
+- DE Ryan Davis
+- DB Brandon King
+- FB Will Ta'ufo'ou
+
+Their actual later real-world releases are post-divergence and therefore are not imported. In this branch they remain Jacksonville-controlled unless and until a branch transaction changes that.
+
+## 2. Control reconciliation
+
+| Step | Count |
 |---|---:|
-| January research inventory | 63 |
-| Released in this batch | -4 |
-| Outside additions | +4 |
-| Working inventory below | **63** |
-| Of those: confirmed agreements in this batch | **6** |
-| Of those: historical carry-forwards awaiting current control verification | **57** |
+| Old January research inventory | 63 |
+| Omitted Dec. 30 reserve/future contracts | +4 |
+| Corrected Jan. 15 controlled inventory | **67** |
+| March 12 old-contract expirations not retained | -15 |
+| Branch releases: Whimper, Ross, Landry, Robinson | -4 |
+| Branch outside FA additions | +4 |
+| Post-FA controlled roster | **52** |
+| Cousins acquisition | +1 |
+| Gabbert-for-C.J. Wilson swap | 0 net |
+| Pre-draft controlled roster | **53** |
+| Seven drafted players | +7 |
+| Four signed UDFAs | +4 |
+| **Current controlled roster** | **64** |
 
-Re-signing Meester and Smith does not add two more people. **63 is a working inventory, not a certified under-contract count or an active-roster declaration.** The January source was incomplete for tenders, expiring contracts and reserve/futures. An inherited name below is not an unrecorded re-signing. Old 2012 active/IR designations do not establish March 2013 status or medical clearance.
+The 64-person count is below the offseason 90-player maximum. It is a control count, not a depth chart.
 
-## Six confirmed agreements
+## 3. Current controlled players
 
-| Player | Pos. | Transaction | Term/value | 2013 cap | 2014 cap |
-|---|---|---|---|---|---|
-| Sen'Derrick Marks | DT | Signed | 1 year(s), $1.50M | $1.50M | $0.00M |
-| Alan Ball | CB | Signed | 1 year(s), $1.00M | $1.00M | $0.00M |
-| Brad Meester | C | Re-signed | 1 year(s), $1.50M | $1.50M | $0.00M |
-| Roy Miller | DT | Signed | 2 year(s), $5.00M | $1.75M | $3.25M |
-| Daryl Smith | OLB | Re-signed | 2 year(s), $6.00M | $2.50M | $3.50M |
-| Brent Grimes | CB | Signed after Bennett declined | 1 year(s), $5.50M | $5.50M | $0.00M |
+Alphabetical within position. No ordering implies depth.
 
-The batch adds $13.75M of scheduled 2013 cap charges and $6.75M for 2014. Remaining planning room is approximately $8.35M before unresolved baseline, Top-51 and release adjustments. Full cash, guarantees and exit exposure are in the [signing ledger](offseason/free_agency/signings.md).
+### Quarterbacks — 4
 
-## March 12 working inventory by position (historical baseline)
-
-Alphabetical within each position; this ordering assigns no depth, starter or package role. **Confirmed** refers only to an executed agreement in this batch. **Carry-forward** means January inventory only, with current rights/contract control awaiting reconciliation.
-
-| Pos. | Player | March 12 control evidence |
+| Player | Control basis | Current football limit |
 |---|---|---|
-| QB | Blaine Gabbert | Carry-forward; current status unverified |
-| QB | Chad Henne | Carry-forward; current status unverified |
-| QB | Jordan Palmer | Carry-forward; current status unverified |
-| RB | Jalen Parmele | Carry-forward; current status unverified |
-| RB | Jonathan Grimes | Carry-forward; current status unverified |
-| RB | Keith Toston | Carry-forward; current status unverified |
-| RB | Maurice Jones-Drew | Carry-forward; current status unverified |
-| RB | Richard Murphy | Carry-forward; current status unverified |
-| FB | Greg Jones | Carry-forward; current status unverified |
-| FB | Montell Owens | Carry-forward; current status unverified |
-| WR | Cecil Shorts | Carry-forward; current status unverified |
-| WR | Jerrell Jackson | Carry-forward; current status unverified |
-| WR | Jordan Shipley | Carry-forward; current status unverified |
-| WR | Justin Blackmon | Carry-forward; current status unverified |
-| WR | Mike Brown | Carry-forward; current status unverified |
-| WR | Toney Clemons | Carry-forward; current status unverified |
-| TE | Allen Reisner | Carry-forward; current status unverified |
-| TE | Isaiah Stanback | Carry-forward; current status unverified |
-| TE | Marcedes Lewis | Carry-forward; current status unverified |
-| TE | Zach Potter | Carry-forward; current status unverified |
-| T | Cameron Bradfield | Carry-forward; current status unverified |
-| T | Eugene Monroe | Carry-forward; current status unverified |
-| G | Austin Pasztor | Carry-forward; current status unverified |
-| G | Eben Britton | Carry-forward; current status unverified |
-| G | Mark Asper | Carry-forward; current status unverified |
-| G | Uche Nwaneri | Carry-forward; current status unverified |
-| G | Will Rackley | Carry-forward; current status unverified |
-| C | Brad Meester | Confirmed: Re-signed |
-| C | Mike Brewster | Carry-forward; current status unverified |
-| C | Steve Vallos | Carry-forward; current status unverified |
-| DE | Andre Branch | Carry-forward; current status unverified |
-| DE | Austen Lane | Carry-forward; current status unverified |
-| DE | George Selvie | Carry-forward; current status unverified |
-| DE | Jason Babin | Carry-forward; current status unverified |
-| DE | Jeremy Mincey | Carry-forward; current status unverified |
-| DE | John Chick | Carry-forward; current status unverified |
-| DT | C.J. Mosley | Carry-forward; current status unverified |
-| DT | D'Anthony Smith | Carry-forward; current status unverified |
-| DT | Jeris Pendleton | Carry-forward; current status unverified |
-| DT | Jerome Long | Carry-forward; current status unverified |
-| DT | Roy Miller | Confirmed: Signed |
-| DT | Sen'Derrick Marks | Confirmed: Signed |
-| DT | Terrance Knighton | Carry-forward; current status unverified |
-| DT | Tyson Alualu | Carry-forward; current status unverified |
-| MLB | Kyle Bosworth | Carry-forward; current status unverified |
-| MLB | Paul Posluszny | Carry-forward; current status unverified |
-| OLB | Brandon Marshall | Carry-forward; current status unverified |
-| OLB | Daryl Smith | Confirmed: Re-signed |
-| OLB | Julian Stanford | Carry-forward; current status unverified |
-| OLB | Russell Allen | Carry-forward; current status unverified |
-| CB | Alan Ball | Confirmed: Signed |
-| CB | Antwaun Molden | Carry-forward; current status unverified |
-| CB | Brent Grimes | Confirmed: Signed after Bennett declined |
-| CB | Derek Cox | Carry-forward; current status unverified |
-| CB | Kevin Rutland | Carry-forward; current status unverified |
-| CB | Mike Harris | Carry-forward; current status unverified |
-| CB | Rashean Mathis | Carry-forward; current status unverified |
-| FS | Chris Prosinski | Carry-forward; current status unverified |
-| SS | Antwon Blake | Carry-forward; current status unverified |
-| S | Dwight Lowery | Carry-forward; current status unverified |
-| K | Josh Scobee | Carry-forward; current status unverified |
-| P | Bryan Anger | Carry-forward; current status unverified |
-| LS | Jeremy Cain | Carry-forward; current status unverified |
+| Kirk Cousins | Acquired from Washington for Jacksonville's 2014 second; 2013 base obligation transferred | Open competition; no starting guarantee |
+| Chad Henne | Existing contract continues into 2013 | No role guaranteed |
+| John Parker Wilson | Dec. 30, 2012 reserve/future contract; pre-divergence | No role guaranteed |
+| Tyler Bray | #208; four-year rookie contract executed May 2 | Developmental competition; no depth position promised |
 
-## Departures and declined offers
+### Running backs — 4
 
-| Player | Pos. | Recorded result | Remaining accounting item |
-|---|---|---|---|
-| Laurent Robinson | WR | Released in the completed batch | Dead money, surviving guarantees and net room effect unresolved |
-| Guy Whimper | T | Released in the completed batch | Dead money, surviving guarantees and net room effect unresolved |
-| Aaron Ross | CB | Released in the completed batch | Dead money, surviving guarantees and net room effect unresolved |
-| Dawan Landry | SS | Released in the completed batch | Dead money, surviving guarantees and net room effect unresolved |
-
-Bennett and Forsett are declined pursuits, not departures from Jacksonville. Their offers create no contract charge. No trade was solicited or resolved for the four released veterans in this batch.
-
-## Medical and football-use limits
-
-| Player/group | What the completed record establishes | What remains open |
+| Player | Control basis | Current football limit |
 |---|---|---|
-| Daryl Smith | Club medical review satisfactory for the short return | Practice clearance, workload and starting assignment |
-| Brent Grimes | Club medical review completed; Achilles uncertainty retained | Recovery, practice clearance, workload and starting assignment |
-| Marks, Miller, Ball, Meester | Signed or re-signed on the recorded terms | No new medical clearance or depth-chart assignment recorded |
-| Historical carry-forwards | January source evidence only | Current contractual control, exact list status and coach-facing medical availability |
+| C.J. Anderson | Three-year UDFA minimum contract | Competition; no workload guarantee |
+| Jonathan Grimes | Existing contract/control; not on March 12 FA list | No role guaranteed |
+| Maurice Jones-Drew | Existing contract/control | No role guaranteed |
+| Richard Murphy | Existing contract/control; not on March 12 FA list | No role guaranteed |
 
-Miller and Marks add interior options; Ball and Grimes add secondary competition; Meester and Smith return on new deals. Those transaction effects do not certify a solved position need or guarantee a starting job. Caldwell retains personnel and contract authority; Stone controls football roles within medical and eligibility limits.
+### Fullbacks — 2
 
-The [coaching staff](coaching_staff.md) remains the already-hired staff. This preserved March 12 subsection is the transaction-reconciled veteran baseline; the later pre-draft trades, draft additions, and post-draft signings follow.
+| Player | Control basis | Current football limit |
+|---|---|---|
+| Montell Owens | Existing contract/control | No role guaranteed |
+| Will Ta'ufo'ou | Dec. 30, 2012 reserve/future contract | No role guaranteed |
 
-## Pre-draft quarterback/front transactions
+### Wide receivers — 6
 
-| Pos. | Player | Transaction | Current control / football limit |
-|---|---|---|---|
-| QB | Kirk Cousins | Acquired from Washington for Jacksonville's 2014 second | Jacksonville contract rights transferred; open QB competition, no starting guarantee |
-| QB | Blaine Gabbert | Traded to Green Bay | Removed from Jacksonville working inventory |
-| DE | C.J. Wilson | Acquired from Green Bay for Gabbert | Jacksonville contract rights transferred; defensive-front rotation competition, no starting guarantee |
+| Player | Control basis | Current football limit |
+|---|---|---|
+| Justin Blackmon | Existing rookie contract | No role guarantee added here |
+| Mike Brown | Existing contract/control | Competition |
+| Toney Clemons | Existing contract/control | Competition |
+| Jerrell Jackson | Existing contract/control | Competition |
+| Cecil Shorts | Existing rookie contract | No role guarantee added here |
+| Adam Thielen | Three-year UDFA minimum contract | Receiver/ST competition; no target or roster guarantee |
 
-The March 12 working inventory of 63 moves to **64** after the pre-draft transactions: Cousins adds one player, while the Gabbert/Wilson exchange is net zero. All seven 2013 selections remain Jacksonville property. The 2014 second is no longer Jacksonville draft capital.
+### Tight ends — 4
 
-## April 27 draft-rights additions
+| Player | Control basis | Current football limit |
+|---|---|---|
+| Allen Reisner | Existing contract/control | Competition |
+| Marcedes Lewis | Existing contract/control | No role guarantee added here |
+| Isaiah Stanback | Existing contract/control | Competition |
+| Travis Kelce | #33; four-year rookie contract executed May 2 | Teaching/evaluation role; no final roster role guaranteed |
 
-Jacksonville exercised all seven selections. These players first entered by draft rights. Caldwell executed all seven four-year slot contracts on May 2, before rookie minicamp; Lane Johnson also carries the first-round club-option mechanism. Exact net Top-51 treatment remains unresolved.
+### Offensive tackles — 3
 
-| Pos. | Player | Acquisition | Current control / football limit |
-|---|---|---|---|
-| OT | Lane Johnson | Selected #2 | Signed rookie contract May 2. Opens at RT; no starting job awarded. |
-| TE | Travis Kelce | Selected #33 | Signed rookie contract May 2. Bounded TE2 teaching role; no roster role guaranteed. |
-| CB | Jordan Poyer | Selected #64 | Signed rookie contract May 2. Begins evaluation at corner. |
-| OLB | Sio Moore | Selected #98 | Signed rookie contract May 2. Initial linebacker assignment to be set by the defensive staff. |
-| DE | Lavar Edwards | Selected #135 | Signed rookie contract May 2. Rotational-end evaluation only. |
-| S | Bacarri Rambo | Selected #169 | Signed rookie contract May 2. Begins with one safety role plus special-teams evaluation. |
-| QB | Tyler Bray | Selected #208 | Signed rookie contract May 2. Developmental competition entry; no depth position promised. |
+| Player | Control basis | Current football limit |
+|---|---|---|
+| Cameron Bradfield | Existing contract/control | Competition |
+| Lane Johnson | #2; four-year rookie contract + first-round option mechanism, executed May 2 | Opens evaluation at RT; no starting guarantee |
+| Eugene Monroe | Existing contract/control | No role change created here |
 
-The working inventory moves from **64 to 71** after the seven draft-rights additions.
+### Offensive guards — 4
 
-## Post-draft UDFA signings
+| Player | Control basis | Current football limit |
+|---|---|---|
+| Mark Asper | Existing contract/control | Competition |
+| Uche Nwaneri | Existing contract/control | Competition |
+| Austin Pasztor | Existing contract/control | Competition |
+| Will Rackley | Existing rookie contract/control | Competition |
 
-| Pos. | Player | School | Current control / football limit |
-|---|---|---|---|
-| S | Brynden Trawick | Troy | Signed as an undrafted rookie; safety/special-teams competition, no roster guarantee |
-| CB | A.J. Bouye | UCF | Signed as an undrafted rookie; corner/special-teams competition, no starting guarantee |
-| WR | Adam Thielen | Minnesota State | Signed as an undrafted rookie; receiver/special-teams competition, no roster guarantee |
-| RB | C.J. Anderson | California | Signed as an undrafted rookie; running-back competition, no workload guarantee |
+### Centers — 2
 
-| Post-draft working reconciliation | Count |
-|---|---:|
-| March 12 working inventory | 63 |
-| Net pre-draft trade activity | +1 |
-| Draft-rights additions | +7 |
-| UDFA signings | +4 |
-| Current working inventory | **75** |
+| Player | Control basis | Current football limit |
+|---|---|---|
+| Mike Brewster | Existing contract/control | Competition |
+| Brad Meester | Branch re-signing: one year, $1.50M | No starting guarantee created by contract |
 
-The **75** figure is an offseason working inventory, not an active-roster declaration. Exact Cousins/Wilson/Gabbert trade accounting, draft contracts, UDFA bonuses/guarantees, Top-51 displacement, and inherited release effects remain unresolved. The approximately $8.35M figure is therefore only the pre-trade post-free-agency planning reference, not a certified current cap-space figure.
+### Defensive ends / edge — 7
 
+| Player | Control basis | Current football limit |
+|---|---|---|
+| Jason Babin | Existing contract/control | Competition |
+| Andre Branch | Existing rookie contract | Competition |
+| Ryan Davis | Dec. 30, 2012 reserve/future contract | Competition |
+| Austen Lane | Existing contract/control | Competition |
+| Lavar Edwards | #135; four-year rookie contract executed May 2 | Rotational evaluation only |
+| Jeremy Mincey | Existing contract/control | Competition |
+| C.J. Wilson | Acquired from Green Bay for Blaine Gabbert; 2013 base obligation transferred | Defensive-front competition; no starting guarantee |
 
-## May 3-5 rookie-minicamp close
+### Defensive tackles — 7
 
-The seven draftees and four signed UDFAs completed Jacksonville's verified May 3-5 rookie minicamp. Event-specific teaching evidence and next corrections are recorded in [`offseason/rookie_minicamp/output.md`](offseason/rookie_minicamp/output.md). No depth-chart placement or final roster spot was awarded, no new medical restriction was communicated, and OTAs have not begun. The seven drafted contracts carry $7,326,170 in gross scheduled 2013 charges before unresolved Top-51 displacement; the complete club balance remains unresolved.
+| Player | Control basis | Current football limit |
+|---|---|---|
+| Tyson Alualu | Existing rookie contract | Competition |
+| Jerome Long | Existing contract/control | Competition |
+| Sen'Derrick Marks | Branch signing: one year, $1.50M | Competition |
+| Roy Miller | Branch signing: two years, $5.00M | Competition |
+| C.J. Mosley | Existing contract/control | Competition |
+| Jeris Pendleton | Existing rookie contract | Competition |
+| D'Anthony Smith | Existing contract/control | Competition |
+
+### Linebackers — 6
+
+| Player | Control basis | Current football limit |
+|---|---|---|
+| Russell Allen | Existing contract/control | Competition |
+| Brandon Marshall | Existing rookie contract/control | Competition |
+| Sio Moore | #98; four-year rookie contract executed May 2 | Initial assignment determined through staff evaluation |
+| Paul Posluszny | Existing contract/control | No role guarantee added here |
+| Daryl Smith | Branch re-signing: two years, $6.00M | Contract does not supply practice clearance or starting guarantee |
+| Julian Stanford | Existing contract/control | Competition |
+
+### Cornerbacks / defensive backs — 7
+
+| Player | Control basis | Current football limit |
+|---|---|---|
+| Alan Ball | Branch signing: one year, $1.00M | Secondary/ST competition |
+| A.J. Bouye | Three-year UDFA minimum contract | CB/ST competition; no starting guarantee |
+| Brent Grimes | Branch signing: one year, $5.50M | Achilles uncertainty remains; no starting guarantee |
+| Mike Harris | Existing rookie contract | Competition |
+| Brandon King | Dec. 30, 2012 reserve/future contract | DB/ST competition |
+| Jordan Poyer | #64; four-year rookie contract executed May 2 | Corner evaluation; no role guaranteed |
+| Kevin Rutland | Existing contract/control | Competition |
+
+### Safeties — 5
+
+| Player | Control basis | Current football limit |
+|---|---|---|
+| Antwon Blake | Existing contract/control | Competition |
+| Dwight Lowery | Existing contract/control | Competition subject to current medical status |
+| Chris Prosinski | Existing contract/control | Competition |
+| Bacarri Rambo | #169; four-year rookie contract executed May 2 | Safety/ST evaluation |
+| Brynden Trawick | Three-year UDFA minimum contract | Safety/ST competition |
+
+### Specialists — 3
+
+| Player | Pos. | Control basis |
+|---|---|---|
+| Josh Scobee | K | Existing contract/control |
+| Bryan Anger | P | Existing rookie contract |
+| Jeremy Cain | LS | Existing contract/control |
+
+## 4. Completed branch departures
+
+### Expired / rights lapsed March 12, no branch retention contract
+
+Kyle Bosworth, Eben Britton, John Chick, Derek Cox, Greg Jones, Terrance Knighton, Rashean Mathis, Antwaun Molden, Jordan Palmer, Jalen Parmele, Zach Potter, George Selvie, Jordan Shipley, Keith Toston, Steve Vallos.
+
+These are not releases and do not create new release dead money. Their prior Jacksonville control ended because the branch recorded no tender/re-signing before the applicable rights expired.
+
+### Released by branch
+
+| Player | Branch result | Cap treatment |
+|---|---|---|
+| Guy Whimper | Released | Reconciled in current cap worksheet |
+| Aaron Ross | Released | Reconciled with timing range in cap worksheet |
+| Dawan Landry | Released | Reconciled in cap worksheet |
+| Laurent Robinson | Released | Contemporaneous contract/release treatment used; later real grievance resolution excluded |
+
+### Traded by branch
+
+| Player | Result |
+|---|---|
+| Blaine Gabbert | Traded to Green Bay for DE C.J. Wilson |
+
+## 5. Confirmed branch acquisitions and contracts
+
+### Veteran free agents/re-signings
+
+| Player | Transaction | Term | 2013 cap |
+|---|---|---:|---:|
+| Sen'Derrick Marks | Signed | 1 year, $1.50M | $1.50M |
+| Alan Ball | Signed | 1 year, $1.00M | $1.00M |
+| Brad Meester | Re-signed | 1 year, $1.50M | $1.50M |
+| Roy Miller | Signed | 2 years, $5.00M | $1.75M |
+| Daryl Smith | Re-signed | 2 years, $6.00M | $2.50M |
+| Brent Grimes | Signed | 1 year, $5.50M | $5.50M |
+
+### Drafted rookies
+
+All seven signed May 2. Full schedules: [draftees.md](offseason/draft/draftees.md).
+
+Gross 2013 rookie cap: **$7,269,102**.  
+Net May 5 Top-51 effect: **$4,134,102**.
+
+### Undrafted rookies
+
+All four are on three-year minimum contracts with $405,000 / $495,000 / $585,000 bases and no signing bonus/additional guarantee. Full terms: [udfa_signings.md](offseason/draft/udfa_signings.md).
+
+Current May 5 Top-51 effect: **$0**.
+
+## 6. Cap summary
+
+The stale `~$8.35M` post-free-agency shortcut is retired.
+
+**Current May 5 planning room: approximately $7.0M-$7.4M under Top-51 accounting.**
+
+See [current_cap_worksheet.md](offseason/current_cap_worksheet.md) for the complete transaction math, source limitations and required recalculation triggers.
+
+## 7. Medical and football-role boundary
+
+- The eleven drafted/UDFA rookies were cleared for and completed May 3-5 rookie minicamp. That event-specific clearance does not automatically carry into every later date.
+- Daryl Smith's contract review does not create practice clearance.
+- Brent Grimes' contract review retains Achilles uncertainty.
+- Other veterans require ordinary current medical communication before OTA participation.
+- No contract, acquisition or roster-control correction in this file awards a starting job, rep share, target share, package share or final 53-man roster spot.
+
+## 8. Next roster checkpoint
+
+Before May 13 OTA work begins:
+
+1. confirm coach-facing medical participation status for the controlled veteran roster;
+2. use the 64-player list for onboarding/contact;
+3. do not contact the 15 expired former Jaguars as though they remain under contract;
+4. update this file atomically if any transaction occurs.

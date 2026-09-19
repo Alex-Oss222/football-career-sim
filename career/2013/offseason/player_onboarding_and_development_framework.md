@@ -6,7 +6,7 @@
 
 **Playbook rule, restated from `career/playbook/README.md`:** the only book issued in 2013 is Iteration I. The 2016-and-later evolution files stay locked — no later terminology, motion system, or answer leaks backward into 2013 teaching. Every Jacksonville player receives the **complete active Iteration I playbook** and may study any part of it, take notes, ask questions, and read ahead. This is ordinary football preparation, not a software unlock system. "Installed" means the staff has formally taught and repped a concept together; it does not mean the rest of the active book is hidden. Players are evaluated on material actually assigned and taught, not punished for not mastering an uninstalled section.
 
-**Who this applies to:** every player Jacksonville actually controls at the time a phase runs. The current working inventory is 75, but the inherited roster still has unresolved control status on many names — reconciling that control status determines the actual mailing/call list for each step below, not the raw inventory count.
+**Who this applies to:** every player Jacksonville actually controls at the time a phase runs. Do not hard-code a roster count into this durable framework; use `career/2013/roster.md` and Document 4 for the current controlled-player list. As of the May 5 correction checkpoint that list is reconciled, and future acquisitions/departures update the current records rather than this plan.
 
 ---
 
