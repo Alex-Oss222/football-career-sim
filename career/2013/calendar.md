@@ -1,16 +1,16 @@
 # Jacksonville Jaguars — Active 2013 Career Calendar
 
-**Function:** Branch-facing schedule and phase control.  
-**Historical source:** `../../library/2013_jacksonville_master_calendar.md`.  
-**Current branch checkpoint:** May 5, 2013, rookie minicamp closed.  
+**Function:** Branch-facing schedule and phase control.
+**Historical source:** `../../library/2013_jacksonville_master_calendar.md`.
+**Current branch checkpoint:** May 15, 2013, OTA block 1 closed.
 **Rule:** Dates/opponents/deadlines are historical rails. Attendance, transactions, performance and game results are branch events.
 
 ## Current checkpoint
 
-- Completed through: May 5 rookie minicamp.
-- Next scheduled football work: **OTA block, May 13-15**.
+- Completed through: May 15, OTA block 1.
+- Next scheduled football work: **OTA block 2, May 20-21**.
 - Preserved continuity gap: April 16-18 voluntary veteran minicamp was not run before the simulation advanced. Do not retroactively create attendance, install or player evidence.
-- Roster control and the May 5 Top-51 worksheet are reconciled at Ledger Entry 9. Before OTAs, the remaining operational gate is current medical participation communication for the controlled roster.
+- Roster control remains 64. Entry 10 closes May 13-15 participation, medical communication and football work. No transaction changed the May 5 Top-51 worksheet.
 
 ## 2013 branch schedule
 
@@ -25,8 +25,8 @@
 | Post-draft | UDFA signings | `offseason/draft/udfa_signings.md` | Complete |
 | May 2 | Seven drafted-rookie contracts executed | draftee contract table | Complete |
 | May 3-5 | Rookie minicamp | `offseason/rookie_minicamp/plan.md`, `output.md` | Complete |
-| **May 13-15** | OTA block 1 | `offseason/otas/plan.md`, `output.md` | Next |
-| **May 20-21** | OTA block 2 | same | Future |
+| **May 13-15** | OTA block 1 | `offseason/otas/plan.md`, `output.md` | **Complete** |
+| **May 20-21** | OTA block 2 | same | **Next** |
 | **May 23** | OTA day | same | Future |
 | **Jun. 4-7** | OTA block 3 | same | Future |
 | **Jun. 11-13** | Mandatory veteran minicamp | `offseason/mandatory_minicamp/plan.md`, `output.md` | Future |
