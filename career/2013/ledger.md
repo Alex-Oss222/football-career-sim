@@ -25,3 +25,80 @@ Full coaching staff closed across two rounds of calls, late January 2013. Record
 ## Open item blocking further entries
 
 Free agency (real opening: March 12, 2013) cannot be resolved as a simulated event until `offseason/initial_cap_sheet.md`'s per-player 2013 cap-charge gap is closed — see `offseason/free_agency/signings.md` for the blocking record from the attempted March 12 batch. No game, transaction requiring cap-legality, or further dated event may be entered here until that reconciliation closes and `state/05_Current_Season_State.md` reflects it.
+
+## Entry 3: completed free-agency batch reconciled
+
+**Global package checkpoint:** `Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency`  
+**Preceding global package checkpoint:** `PRE-HIRE SEARCH CLOSURE, career/2013/ledger.md, 2026-09-18`  
+**Canonical through:** March 12, 2013, 4:00 p.m. ET, the existing batch's operative timestamp; individual execution times are not supplied.  
+**Documentation date:** September 19, 2026.  
+**Record type:** Retrospective reconciliation of accepted post-divergence simulation outcomes; no new resolution or elapsed time.
+
+### Controlling source and supersession
+
+The user expressly identified these as simulated signings to preserve and requested improved layout, full cap ramifications and a roster update. The controlling completed record is [signings.md at commit 9493ead](https://github.com/Alex-Oss222/football-career-sim/blob/9493ead88a40c58aaddebb38db2990a717c279ce/career/2013/offseason/free_agency/signings.md), merged into main by PR #26. Its outcomes and contract terms are unchanged.
+
+This entry supersedes the old **Open item blocking further entries** paragraph above for the accepted March 12 batch, and the obsolete January/pre-hire current-state fields in Documents 4-5. That earlier text remains as append-only history. Current state becomes “opening FA batch complete, with accounting/control uncertainties,” not “FA still unrun.” Missing financial data remain open; no release decision is reopened. January source tables remain historical snapshots.
+
+This reconciliation does not reconstruct a prior ex-ante decision packet, reroll outcomes or certify full game readiness. It records the user's controlling preservation instruction and aligns the dependent records to the completed source.
+
+### Preserved transactions
+
+| Player | Recorded outcome | Terms or effect |
+|---|---|---|
+| Sen'Derrick Marks | Signed | 1 year, $1.50M; $0.40M bonus, $1.10M 2013 base |
+| Alan Ball | Signed | 1 year, $1.00M; $0.20M bonus, $0.80M 2013 base |
+| Brad Meester | Re-signed | 1 year, $1.50M; $0.50M bonus, $1.00M 2013 base |
+| Roy Miller | Signed | 2 years, $5.00M; $1.50M bonus; bases $1.00M/$2.50M; only bonus guaranteed |
+| Daryl Smith | Re-signed | 2 years, $6.00M; $1.00M bonus; bases $2.00M/$3.00M; only bonus guaranteed |
+| Brent Grimes | Signed after Bennett declined | 1 year, $5.50M; $2.00M bonus, $3.50M base; full amount guaranteed |
+| Michael Bennett | Declined | Offered 1 year, $6.25M, $4.00M guaranteed; activates Grimes contingency; no charge |
+| Justin Forsett | Declined | Offered 1 year, $1.10M, $0.30M guaranteed; no charge |
+| Guy Whimper | Released | Removed from working roster; financial effects unresolved |
+| Aaron Ross | Released | Removed from working roster; financial effects unresolved |
+| Dawan Landry | Released | Removed from working roster; financial effects unresolved |
+| Laurent Robinson | Released | Removed from working roster; financial effects unresolved |
+
+Caldwell executed the recorded player decisions under the existing authority map. No trade was solicited or resolved for the released veterans. Bennett and Forsett's actual later destinations remain unknown in branch canon. Marks, Ball and Meester's base-salary guarantees are unspecified.
+
+Smith's medical review remains satisfactory for the short return; Grimes' review remains completed with Achilles uncertainty. Neither supplies practice clearance, a return date or guaranteed performance. No starter, workload or package assignment is added. Original pursuit explanations remain verbatim in the reformatted signing file.
+
+### Accounting and roster delta
+
+- Six-deal value: $20.50M. Signing bonuses: $5.60M. Scheduled cap: $13.75M in 2013 and $6.75M in 2014.
+- 2013 salary plus signing bonus: $15.00M if all salary is earned; payment installments unrecorded. 2014 salary if retained: $5.50M.
+- Bonuses plus expressly guaranteed salary: at least $9.10M; not a claim that all other base salary is unguaranteed.
+- Existing planning arithmetic: approximately $22.10M less $13.75M = approximately $8.35M. The full gross charges remain provisional debits; no unsupported Top-51 displacement credit or release saving is added.
+- Full adjusted cap, inherited obligations, release dead money and exact net counted changes remain unreconciled. Unknown release exposure may reduce available room.
+- Working inventory: 63 historical names - 4 departures + 4 outside additions = 63. Two re-signings update existing people. Six current batch agreements plus 57 carry-forwards are evidence categories, not exact official roster statuses.
+- Staff appointments and operating assignments come from Entry 2 and the existing coaching-staff register. No staff term, acquisition authority or medical authority changes.
+
+### Candidate-bundle manifest
+
+Target and preceding checkpoints in every row below are the exact labels defined above. Documents 1-3 retain their pre-existing content and pointers; their git blobs identify the exact versions used.
+
+| Candidate file | Candidate/current version | Target checkpoint | Preceding checkpoint | Preceding content-changing update | Owned content changes? |
+|---|---|---|---|---|---|
+| Document 1 | `697208640886f9f63581f4b865f917f16007f036` | Entry 3 target above | Entry 3 preceding above | Existing September 18 rebuild | No |
+| Document 2 | `4dcdaa9bb3812ffe47b1bc7007dda73204cbc170` | Entry 3 target above | Entry 3 preceding above | Existing September 18 sourcebook | No |
+| Document 3 | `9538b8e4831eba1a407c394a37c21972f8b8e290` | Entry 3 target above | Entry 3 preceding above | Existing September 18 canon | No |
+| Document 4 | `JAX-2013-FA-ROSTER-1` | Entry 3 target above | Entry 3 preceding above | JAX-2013-INIT-STAGED-1 / 2013-INIT-ROSTER | Yes; supersedes that staged register |
+| Document 5 | `JAX-2013-FA-SNAPSHOT-1` | Entry 3 target above | Entry 3 preceding above | Pre-hire snapshot 1.1 / preceding checkpoint above | Yes; replacement snapshot |
+
+Supporting files in the same bundle: reformatted `offseason/free_agency/signings.md`; new `roster.md`; navigation-only additions to `offseason/initial_roster.md` and `offseason/initial_cap_sheet.md`. Both historical source tables remain unchanged.
+
+### Bounded reconciliation audit
+
+The original pursuit narratives and twelve outcomes are preserved; agreement arithmetic, annual cap/cash splits, unique player IDs, additions/departures, re-signing counts, medical limitations, relative links and cross-file checkpoint/version references are checked. The roster view and Documents 4-5 share the same six confirmed agreements and four departures. Unresolved inherited people are not newly signed.
+
+No game or statistics require reconciliation. No actual future result or new private-state claim is introduced. This is a bounded documentation audit, not the first full initialization or game-readiness audit. The prior cadence counter remains 0 because retrospective migration does not count as a substantive simulated turn.
+
+### Closed canonical update register
+
+| Global package checkpoint label | Canonical through | Preceding global checkpoint | Content versions changed | Closed continuity baseline created | Non-game cadence count after closure |
+|---|---|---|---|---|---:|
+| Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency | March 12, 2013, 4:00 p.m. ET, batch time | PRE-HIRE SEARCH CLOSURE, career/2013/ledger.md, 2026-09-18 | Document 4: JAX-2013-FA-ROSTER-1; Document 5: JAX-2013-FA-SNAPSHOT-1; this season ledger and supporting files | Completed-FA transaction reconciliation only | 0 |
+
+Commit closed — Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency — canonical through March 12, 2013, 4:00 p.m. ET
+
+Closure applies when this complete candidate bundle is promoted together. Intermediate file commits on the review branch do not replace the preceding active package.
