@@ -13,7 +13,7 @@ Jacksonville's real 2013 schedule gave a new-head-coach club an April 2 official
 
 ## Control, contracts, medical and onboarding gate
 
-Caldwell executed all seven slot-based drafted-rookie contracts on May 2. The exact slot totals, signing bonuses, and gross 2013 charges are in `draft/draftees.md` and `initial_cap_sheet.md`; net Top-51 treatment remains unresolved. The four UDFAs already had executed rookie-free-agent agreements, although their precise bonuses and guarantees remain unresolved. All eleven therefore entered camp under established Jacksonville control.
+Caldwell executed all seven slot-based drafted-rookie contracts on May 2. Current contract and Top-51 accounting is controlled by `draft/draftees.md`, `draft/udfa_signings.md`, `current_cap_worksheet.md`, and ledger Entry 9; those later accounting corrections do not change this camp's football result. All eleven therefore entered camp under established Jacksonville control.
 
 The normal onboarding sequence was compressed honestly into the short post-draft window:
 
