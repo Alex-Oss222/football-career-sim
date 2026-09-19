@@ -17,7 +17,8 @@ class PrivateRuntimeUnavailable(RuntimeError): pass
 class Client:
     def __init__(self,url=None,token=None,token_file=None,snapshot=None):
         self.url=(url or os.getenv("ENGINE_RUNTIME_URL") or os.getenv("FCS_ENGINE_URL") or DEFAULT_URL).rstrip("/")
-        self.token=token or os.getenv("ENGINE_API_TOKEN")
+        # An explicit test token file must not be shadowed by production env.
+        self.token=token if token is not None else (None if token_file is not None else os.getenv("ENGINE_API_TOKEN"))
         self.token_file=Path(token_file or os.getenv("FCS_ENGINE_TOKEN_FILE") or DEFAULT_TOKEN_FILE)
         self.snapshot=snapshot or hashlib.sha256(
             (Path(__file__).resolve().parents[1]/"state/05_Current_Season_State.md").read_bytes()
