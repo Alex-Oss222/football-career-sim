@@ -1,308 +1,184 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append  
-**Version:** Pre-hire snapshot 1.1  
-**Supersedes:** Uninitialized snapshot 1.0  
-**Readiness:** NOT READY FOR ACTIVE CAREER — HIRED / INITIALIZATION BUILD IN PROGRESS  
+**Version:** `JAX-2013-FA-SNAPSHOT-1`  
+**Supersedes:** Pre-hire snapshot 1.1  
+**Readiness:** Completed free-agency batch reconciled with noted uncertainty; full game-readiness not certified  
 **Must be read:** In full before every simulation response  
-**Simulation status:** HIRED / INITIALIZATION BUILD — team, contract, and staff are resolved. The cap-data blocker that stopped the first free-agency attempt is now cleared: `career/2013/offseason/initial_cap_sheet.md` is `DECISION-USABLE INITIALIZATION BASELINE` (20 exact 2013 player cap rows plus a dated, pre-hire, real January 9, 2013 club planning estimate of ~$22.1M projected room). Free agency and the four pending release reviews may now proceed using that sheet's stated planning figures and operating rule; a fully penny-exact Top-51 club worksheet remains a separate, lower-priority reconciliation, not a blocker.  
-**Snapshot effective:** `2013-01-15; time not material`  
-**Last reconciled against Documents 1, 3, 6, and 7:** `2026-09-18 hire closed, staff hired, cap-data gap resolved`  
-**Global package checkpoint:** `PRE-HIRE SEARCH CLOSURE, career/2013/ledger.md, 2026-09-18`  
-**Preceding global package checkpoint:** `[NONE]`
+**Simulation status:** Jacksonville's March 12 opening free-agency batch is complete. Its six agreements, two declined offers and four releases are preserved. Current records now reflect that accepted result; no new event is resolved by this documentation update.  
+**Snapshot effective:** March 12, 2013, 4:00 p.m. ET, the recorded batch time; individual execution times unspecified  
+**Last reconciled:** September 19, 2026 documentation review; [season ledger, Entry 3](../career/2013/ledger.md)  
+**Global package checkpoint:** `Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency`  
+**Preceding global package checkpoint:** `PRE-HIRE SEARCH CLOSURE, career/2013/ledger.md, 2026-09-18`
 
-> This document answers one question: what must be true at the instant the next response begins? It is not a narrative, archive, sourcebook, or hidden-rating sheet. Replace resolved and obsolete material; preserve history in Document 6.
+## Effective source-version manifest
 
-### Effective source-version manifest
+Documents 1-3 are unchanged. Git blob identifiers name their exact content without falsely asserting that the formal active-only mode-lock procedure has been completed.
 
-These are the exact content versions reconciled at the global package checkpoint. Their individual content-changing pointers may be older than the package checkpoint when their owned content did not change.
-
-| Canonical document | Effective version/content date | Last content-changing update | Validation note |
+| Canonical document | Exact effective content version | Content-changing pointer | Validation note |
 |---|---|---|---|
-| Document 1 | `Rebuild draft 1.5` | `2026-09-18` | Pre-hire lifecycle and decision ledger reconciled |
-| Document 2 | `0.6-authoring; team/season known (Jacksonville Jaguars, 2013) but formal active-only edition/mode-lock procedure not yet run` | `2026-09-18` | Team and season are real facts now; §1.1's mode-lock/branch-pruning ceremony remains a separate, not-yet-done administrative step |
-| Document 3 | `Rebuild draft 2.3` | `2026-09-18` | Contract, Authority Map, and coaching identity (The Prowl) reconciled |
-| Document 4 | `Populated with real sourced roster; INITIALIZATION BLOCKED — 2013 per-player annual cap charges unavailable in the sources used, so cap-legality cannot yet be verified` | `2026-09-18` | See `career/2013/offseason/initial_cap_sheet.md`'s financial decision gate |
+| Document 1 | `697208640886f9f63581f4b865f917f16007f036` | Existing September 18 rebuild retained | Project rules unchanged |
+| Document 2 | `4dcdaa9bb3812ffe47b1bc7007dda73204cbc170` | Existing September 18 sourcebook retained | 2013 NFL; formal active-only lock not asserted |
+| Document 3 | `9538b8e4831eba1a407c394a37c21972f8b8e290` | Existing September 18 canon retained | Stone contract and final authority unchanged |
+| Document 4 | `JAX-2013-FA-ROSTER-1` | Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency | Batch transactions reconciled; whole-club control/cap/medical gaps retained |
 
 ## 1. Master clock and competition position
 
-| Field | Current canonical value | Status/source |
-|---|---|---|
-| Exact master date | `2013-01-15 (staff hiring closed); free-agency clock has not advanced to March 12 pending the cap-data gap below` | Hire and staff building are closed |
-| Local time/time zone | `America/New_York (Jacksonville, FL)` | Team now selected |
-| League or academic year | `NFL, 2013 league year (2012 league year until March 12, 2013)` | Per Document 2 §11 |
-| Season | `2013 NFL season` | Team hired January 15, 2013 |
-| Season phase | `HIRED / INITIALIZATION BUILD` | Not yet READY; not yet ACTIVE CAREER |
-| Competition week/round | `N/A — offseason` | No games scheduled yet |
-| Team | `Jacksonville Jaguars` | `hiring_search.md` Entry 7; Document 3 §1.4 |
-| Team record | `N/A — 2013 season not begun` | Inherited 2012 record (2-14) is historical background only |
-| Division/conference standing | `N/A — offseason` | No current-season standings exist yet |
-| Postseason position/tiebreak relevance | `N/A` | Offseason |
-| Last completed event | `Late January 2013 — full coaching staff hired (career/2013/coaching_staff.md); initial GM alignment meeting held (roster_evaluation.md)` | Staff-building phase complete |
-| Next scheduled event | `March 12, 2013 — free agency opening, ready to run using the ~$22.1M planning estimate in initial_cap_sheet.md` | Real 2013 calendar |
-| Time until next event | `current phase; no separate clock deadline established` | Never use turn count |
-| Current focus | `Run 2013 free agency and the four pending release reviews (Whimper, Ross, Landry, Robinson) against the decision-usable cap sheet` | HIRED / INITIALIZATION BUILD |
-| Latest full continuity audit | `[UNSET]` | Document 6 audit entry |
-| Substantive non-game responses since that audit | `0` | Increment only when a non-game response advances date or materially changes state; audit and reset at four |
+| Field | Current canonical value |
+|---|---|
+| Master date/time | March 12, 2013, 4:00 p.m. ET, batch-level operative timestamp |
+| Local time zone | America/New_York |
+| League/season | NFL; 2013 league year and 2013 season |
+| Team | Jacksonville Jaguars; Stone accepted the head-coach contract January 15 |
+| Season phase | Offseason; opening free-agency batch complete |
+| Record/standing/postseason | 2013 season not begun; no current standings or game result |
+| Last completed event | Six FA agreements, Bennett/Forsett declines, four veteran releases |
+| Next scheduled event | No additional club event assigned a date by this batch |
+| Current focus | Read the updated roster and accounting limits before the next authorized personnel decision |
+| Latest full continuity audit | Not yet established; Entry 3 is a bounded transaction/document reconciliation |
+| Substantive non-game responses since full audit | Prior counter 0 retained; retrospective documentation migration is excluded from cadence |
 
-## 2. Schedule window
+The clock now reflects the completed source batch. This correction neither resimulates January-March nor advances beyond the recorded March 12 event.
 
-Record only the previous completed event, the current week or active period, and the next events needed for decisions. The full schedule and results belong in Document 6.
+## 2. Schedule window and deadlines
 
-| Date/time | Event/opponent | Location | Status | Preparation/travel consequence |
-|---|---|---|---|---|
-| `2013-01-13` | New Orleans Divisional Round; Stone's 2012 season ends | — | completed | Historical/counterfactual baseline only |
-| `2013-01-14` | Head-coaching search | — | current | No team activity permitted before hire and initialization |
+| Period/date | Established event | Status | Consequence |
+|---|---|---|---|
+| Late January 2013 | Coaching staff hired | Complete, ledger Entry 2 | Existing assignments continue |
+| March 12, 2013, 4:00 p.m. ET | League year opens; recorded FA batch | Complete, ledger Entry 3 | Update current roster and contractual obligations |
+| Next activity | Not selected in this batch | Unscheduled here | No practice, negotiation or other event assumed |
 
-### Material deadlines
-
-| Exact deadline | Rule or obligation | Authority/owner | What is pending | Source |
-|---|---|---|---|---|
-| `[none recorded; initialization incomplete]` | — | — | — | Document 2/3/6 |
+No new offer deadline, mandatory workout, medical review date or club decision deadline is supplied by this update. Apply the dated 2013 calendar in Document 2 when scheduling a later action.
 
 ## 3. Current roster and availability summary
 
-The authoritative person records are in Document 4. This section carries only decision-relevant availability and reconciliation totals.
+Authoritative person records: [Document 4](04_Roster_and_Staff_Register.md). Readable [current roster](../career/2013/roster.md).
 
-### Disjoint primary-status reconciliation
+| Reconciliation | Count/status |
+|---|---|
+| Starting historical inventory | 63 names |
+| Four completed releases | Whimper, Ross, Landry, Robinson removed |
+| Four outside additions | Marks, Miller, Ball, Brent Grimes added |
+| Re-signings | Meester and Daryl Smith retained as existing people |
+| Working inventory | 63 = 63 - 4 + 4 |
+| Confirmed agreements in this batch | 6 |
+| Other historical carry-forwards | 57; current contractual control not certified |
+| Exact offseason primary-status counts / open slots | Unknown pending inherited rights, tenders and reserve/futures reconciliation |
+| Game-day active/inactive and emergency designations | Not applicable to this offseason batch |
+| Depth-chart approval | No new approval or guaranteed starting job recorded |
 
-Use one row per exact competition-defined primary status. Each player appears in exactly one disjoint primary bucket unless a cited rule expressly creates an exception. Do not sum nested designations.
+These populations describe transaction evidence, not NFL roster-status buckets. Historical 2012 active/IR labels establish neither March control nor present medical availability.
 
-| Exact primary status | Current count | Counts toward which limit | Applicable limit | Document 4 source |
-|---|---:|---|---:|---|
-| `[UNSET: e.g., active roster]` | `[UNSET]` | `[EXACT LIMIT]` | `[UNSET]` | `[REGISTER VERSION/DATE]` |
-| `[UNSET: e.g., practice/development roster]` | `[UNSET]` | `[EXACT LIMIT]` | `[UNSET]` | `[REGISTER VERSION/DATE]` |
-| `[UNSET: each reserve/exempt category separately]` | `[UNSET]` | `[EXACT LIMIT OR NONE]` | `[UNSET]` | `[REGISTER VERSION/DATE]` |
-
-### Game-day subset
-
-Game-day active/inactive is a subset or designation under the selected competition's rules, not automatically a separate primary roster bucket.
-
-| Register check | Current value | Required comparison |
+| Player/group | Coach-facing medical evidence | Current limit |
 |---|---|---|
-| Eligible primary-status pool | `[UNSET]` | Document 2 exact rule |
-| Game-day active/dressed | `[UNSET]` | Must be drawn from eligible pool, subject only to cited exception |
-| Game-day inactive/not dressed | `[UNSET]` | Must reconcile to eligible pool and exact rule |
-| Special emergency designation | `[UNSET / not applicable]` | Exact season rule |
-| Depth chart last approved | `[UNSET]` | Document 4 |
-| Game-day declaration last approved | `[UNSET / not yet due]` | Document 3 authority-row reference |
+| Daryl Smith | Club review satisfactory for a short return | No practice clearance, workload or return-to-play date established |
+| Brent Grimes | Club review completed; Achilles uncertainty remains | No guaranteed recovery, effectiveness or practice clearance |
+| Other signings / inherited players | No new finding in this batch | Current availability requires appropriate medical communication |
 
-### Decision-relevant availability
+## 4. Staff, organization, authority and resources
 
-| Person | Position/role | Clearance authority/process and time | Public injury designation | Limitation communicated to football staff | Expected effectiveness and football evaluator | Next update |
-|---|---|---|---|---|---|---|
-| `[none established]` | — | — | — | — | — | — |
+The [current staff register](../career/2013/coaching_staff.md) supplies the already-executed operating assignments and assistant contracts. Document 3 §5 remains the final-authority source.
 
-Do not infer a diagnosis, clearance, or recovery date from this table. Medical detail remains limited to information plausibly communicated to the head coach.
+| Item | Current state | Authority/source |
+|---|---|---|
+| Head coach / employer | Alex Stone; Khan/Caldwell employer authority | Document 3 §3.1 and §5 row 1 |
+| Offensive caller / coordinator | Stone / Mike Tice | Row 12; current staff §1 |
+| Defensive caller | Romeo Crennel under Stone's retained team authority | Row 13; current staff §1 and §5 |
+| Special-teams lead | Alan Lowry | Row 14; current staff §1 and §6 |
+| Personnel, contracts, cap, draft | David Caldwell; Stone evaluates/recommends | Rows 3-7 and 20; franchise-QB consultation under row 3a |
+| Depth chart / game-day roles | Stone, subject to eligibility and medical availability | Rows 8-10 |
+| Medical diagnosis and clearance | Qualified medical personnel; no coach override | Rows 15-17 |
+| Media | Communications controls official policy; Stone handles football media | Row 19; no public statement issued here |
 
-### Immediate depth/package effects
+| Financial resource | Current amount or status |
+|---|---|
+| FA batch total value | $20.50M |
+| Scheduled batch cap | $13.75M in 2013; $6.75M in 2014 |
+| Batch salary + signing bonus in signing year | $15.00M if full 2013 salaries earned; payment installments unspecified |
+| 2014 batch salary if retained | $5.50M |
+| Bonuses and expressly guaranteed salary | At least $9.10M; three base-guarantee terms unspecified |
+| Remaining planning room | Approximately $8.35M; complete adjusted cap/Top-51/release reconciliation still open |
+| Four release liabilities | Unresolved, not zero; no savings booked |
+| Assistant payroll / owner operating budget | Existing staff contract register; separate from player cap; no budget headroom invented |
+| Club-wide cash floor, cap legality and total liabilities | Not fully reconciled |
 
-- `[No initialized depth chart or package effects.]`
-
-## 4. Staff, organization, and authority now
-
-This is a derived operational summary. Document 3's authority map is the sole source of final authority; every row below must cite it and cannot originate an authority change.
-
-| Item | Current state | Decision relevance | Canon source |
-|---|---|---|---|
-| Head coach reporting line | `[UNSET]` | Blocking | Document 3 section/row `[UNSET]` |
-| Offensive play caller | `[UNSET]` | Blocking | Document 3 authority row 12 and delegation table |
-| Defensive play caller | `[UNSET]` | Blocking | Document 3 authority row 13 and delegation table |
-| Special-teams operating lead | `[UNSET]` | Blocking | Document 3 authority row 14 and delegation table |
-| Personnel operating counterpart | `[UNSET]` | Blocking | Document 3 applicable authority rows |
-| Medical clearance authority/process | `[UNSET]` | Blocking | Document 3 authority row 16 |
-| Media/communications boundary | `[UNSET]` | Blocking before public statements | Document 3 authority row 19 |
-| Current vacancy or acting duty | `[none established]` | — | Document 4/6 |
-
-### Active staff or organizational matters
-
-| Matter | Observable facts | Participants/authority | Deadline | Status/uncertainty |
-|---|---|---|---|---|
-| `[none; career not initialized]` | — | — | — | — |
-
-### Optional coach and material logistics
-
-Complete only to the user-selected career/off-field detail level. These are dated current facts, not motives or future choices.
-
-| Field | Current coach-known state | Material consequence | Source/last update |
-|---|---|---|---|
-| Employment status and effective date | `[UNSET]` | `[UNSET]` | Document 3/6 |
-| Current residence | `[EXCLUDED OR UNSET]` | `[commute/relocation effect, if material]` | `[USER CANON OR COMMUNICATED FACT]` |
-| Family base and known logistics | `[EXCLUDED OR UNSET]` | `[travel/relocation constraint, if material]` | `[USER-AUTHORIZED FACT]` |
-| Relocation preference or hard constraint | `[EXCLUDED OR UNSET]` | `[which actions it limits]` | Derived from Document 3 durable geographic canon and dated Document 6 changes |
-| Compensation/contract pressure | `[EXCLUDED OR UNSET]` | `[deadline or choice affected]` | Document 3/6 |
-| League cap/floor legality | `[UNSET]` | `[transaction consequence]` | Derived from Document 4 reconciliation applying Document 2 rules |
-| Current accounting liabilities | `[UNSET / not material]` | `[transaction consequence]` | Derived from exact Document 4 version |
-| Current cash payroll/guarantee commitments | `[UNSET / not material]` | `[ownership/resource consequence]` | Derived from exact Document 4 version |
-| Internal owner/program budget currently available | `[UNSET / not material]` | `[approval/resource consequence]` | Derived from exact Document 4 version; authority in Document 3 |
-| Other material resource or facility constraint | `[UNSET / none]` | `[preparation/personnel consequence]` | Current Document 5-owned logistics from Document 3 baseline/authority and dated Document 6 changes |
+Personal/family logistics create no new functional constraint. Stone's four-year guaranteed employment agreement remains in Document 3.
 
 ## 5. Approved football strategy and preparation
 
-### Standing plan in force
+The Prowl identity and readiness standard remain the source of established coaching principles under Document 3 §2.1. Existing personnel boards supply recommendations within their information dates, not executed acquisitions.
 
-- Offensive identity and current installed core: `[UNSET; do not import the legacy 704-play catalogue]`
-- Defensive identity and current installed core: `[UNSET]`
-- Special-teams priorities: `[UNSET]`
-- Head coach's game-management instructions: `[UNSET]`
-- Concepts or actions expressly excluded: `[UNSET]`
-- Last user-approved material change: `[none]`
+- No new installed concept, practice, film session, rep allocation, depth chart or special-teams assignment is recorded.
+- The six signed players receive the opportunities stated in the signing record; no additional playing-time promise is inferred.
+- Medical and CBA limits remain controlling. A contract medical review does not allocate practice work.
+- The legacy play catalogue is not treated as an installed offense.
 
-### Current opponent or period plan
+## 6. Controlling decisions and instructions
 
-| Area | User-approved priority | Ordinary implementation delegated to | Evidence/constraint | Status |
-|---|---|---|---|---|
-| Offense | `[UNSET]` | `[UNSET]` | `[UNSET]` | `[not installed]` |
-| Defense | `[UNSET]` | `[UNSET]` | `[UNSET]` | `[not installed]` |
-| Special teams | `[UNSET]` | `[UNSET]` | `[UNSET]` | `[not installed]` |
-| Situational football | `[UNSET]` | `[UNSET]` | `[UNSET]` | `[not installed]` |
-
-### Finite preparation state
-
-| Resource | Current allocation/evidence | Opportunity cost or limitation |
+| Source | Standing instruction / completed decision | Current effect |
 |---|---|---|
-| Recovery/treatment | `[UNSET]` | `[UNSET]` |
-| Film/self-scout/opponent study | `[UNSET]` | `[UNSET]` |
-| Installation and review | `[UNSET]` | `[UNSET]` |
-| First-team repetitions | `[UNSET]` | `[UNSET]` |
-| Situational work | `[UNSET]` | `[UNSET]` |
-| Special teams | `[UNSET]` | `[UNSET]` |
-| Travel/media/administration | `[UNSET]` | `[UNSET]` |
+| Hiring ledger Entry 1 | Stone accepted the original Jacksonville offer | Contract/authority unchanged |
+| Staff ledger Entry 2 and staff register | Staff hired and operating assignments recorded | Continue existing staff |
+| Completed FA batch | Six agreements; Bennett/Forsett declined; four releases | Apply these exact outcomes |
+| User's current documentation request | Preserve simulated signings; improve layout/cap ramifications and roster | Reconcile accounting and records without changing results |
 
-Do not treat a generic weekly schedule as completed work. Update this section only from dated activity or an approved plan.
-
-## 6. Recent user decisions and standing instructions
-
-List only choices still controlling present action. Quote or closely paraphrase the user's scope; do not infer motives.
-
-| Simulation date made | User decision or instruction | Scope and duration | Implementation status | Ledger reference |
-|---|---|---|---|---|
-| `2013-01-14` | `[No Stone hiring-search choice recorded yet]` | PRE-HIRE SEARCH | Awaiting user brief | `career/2013/offseason/hiring_search.md` |
-
-Project-level instruction, outside world chronology: do not begin the simulation before audit/rebuild and a later explicit initialization instruction.
-
-### Unresolved commitments and promises
-
-| Commitment | Who made it | To whom | Exact substance | Due/trigger | Status |
-|---|---|---|---|---|---|
-| `[none established]` | — | — | — | — | — |
+No new personnel or football choice is made for Stone. Unsupplied guarantee mechanics, roster promises and release liabilities remain unresolved rather than negotiated by this update.
 
 ## 7. Head-coach knowledge picture
 
-This is the interface boundary, not the complete objective world state.
+Stone can use the completed pursuit communications, the recorded contract terms and the limited Smith/Grimes medical-review information in the signing record. He has the current staff and the existing approximate financial baseline.
 
-### Known to the head coach through a plausible channel
+The wider destination of Bennett or Forsett is not recorded. Actual later careers, transactions and injuries are not evidence for this branch. Draft research remains gated by when each fact became available; later board material is not automatically known on March 12.
 
-- Stone knows his own established career history and 2012 interim-head-coaching record.
-- Public January 14 team context may be drawn only from `library/2013_coaching_market_pre_hire.md` during the hiring search.
-- Later real hiring outcomes and other post-cutoff comparator facts are not part of Stone's runtime knowledge merely because they exist in research files.
+No private diagnosis, hidden player evaluation, uncommunicated motive or unsupported exact figure is added.
 
-### Reports, scouting judgments, and recommendations
+## 8. Current focus and pending matters
 
-| Source | Date/time | Claim or recommendation | Supporting evidence | Confidence/limitations |
-|---|---|---|---|---|
-| `[none]` | — | — | — | — |
+| Matter | Responsible role | Current limit |
+|---|---|---|
+| Complete current contract-control list | Caldwell/personnel administration | 57 carry-forwards require rights/contract verification; no new retention decision inferred |
+| Reconcile actual remaining cap | Caldwell/cap administration | Full Top-51, baseline adjustments and four release liabilities missing |
+| Specify missing recorded contract details | Contract administration | Marks/Ball/Meester base guarantees and payment timing remain unknown |
+| Establish practice availability when needed | Qualified medical personnel | No clearance inferred from signing |
+| Next material personnel or football decision | Existing authority map and user instructions | No new choice or deadline imposed here |
 
-### Public information and media claims that matter now
-
-- `[none]`
-
-### Rumors or unresolved reports available to the head coach
-
-- `[none]`
-
-### Private-state boundary
-
-Hidden content never appears in this document or any handoff. If the platform supports a genuinely separate private simulator store, that store may preserve the minimum continuity-critical hidden fact under Document 1's rules. Otherwise the matter remains undetermined. Do not record even a revealing summary or placeholder for a specific hidden fact here.
-
-## 8. Current focus and pending head-coach decisions
-
-### Current focus
-
-Complete the hiring-search criteria freeze and the user's search brief, then run the bounded PRE-HIRE SEARCH. Do not begin roster, staff, media, practice, or game activity.
-
-### Pending decisions
-
-| Decision | Does the head coach have final authority? | Other authority/influence | Deadline/time available | Known constraints | What remains uncertain |
-|---|---|---|---|---|---|
-| Set Stone's hiring-search priorities, terms, concessions, and walk-away conditions | Yes | Organizations independently control their own search decisions | Before Stone's pitch is evaluated | User-authored brief; clean pre-hire market source | Exact user choices not yet recorded |
-
-Do not list routine implementation as a pending user decision. Do not convert this table into a closed menu.
+These are open records and future decision inputs, not a request to redo the completed batch. No additional signing, trade, draft pick or release is authorized by this snapshot.
 
 ## 9. Live-game checkpoint
 
-**Game underway:** No.  
-**If no, this entire section remains inactive. If yes, every field is mandatory and must reconcile to Document 6 before the next response.**
-
-| Field | Exact state |
-|---|---|
-| Date, venue, opponent | `[inactive]` |
-| Score, user's team listed first | `[inactive]` |
-| Quarter/overtime and game clock | `[inactive]` |
-| Game-clock status and restart condition | `[inactive: running/stopped; starts on snap/referee signal/other exact rule]` |
-| Play clock and status, if material | `[inactive: exact value/running/stopped]` |
-| Possession | `[inactive]` |
-| Opening or overtime toss choice; next-half/next-period possession entitlement | `[inactive]` |
-| Possession source and current-drive aggregate | `[inactive: how obtained; start; plays; yards; elapsed time]` |
-| Down and distance | `[inactive]` |
-| Ball location and direction, if material | `[inactive]` |
-| User-team timeouts | `[inactive]` |
-| Opponent timeouts | `[inactive]` |
-| Challenge/replay status | `[inactive]` |
-| Important availability/snap limits | `[inactive]` |
-| Current personnel/package | `[inactive]` |
-| Formation, alignment, substitutions, eligibility reports, and defensive matching opportunity, when required by selected granularity | `[inactive]` |
-| Immediately preceding play or sequence | `[inactive]` |
-| Administrative state | `[inactive: pending try, kickoff/free kick, untimed down, penalty, measurement, review, medical stoppage, or none]` |
-| Next decision and decision clock | `[inactive]` |
-| Last committed game-ledger event | `[inactive]` |
-| Cumulative in-game statistical checkpoint | `[inactive: team and material player totals through last committed event]` |
-
-### Live-game invariants before resumption
-
-- Score equals recorded scoring events.
-- Clock status/restart, possession, entitlement, down, distance, ball location, and any administrative phase follow legally from the last event.
-- Timeout use and challenge eligibility reconcile to the ledger and applicable rules.
-- Active personnel are drawn from a legal eligible status, are medically available, and satisfy substitution, eligibility-reporting, formation, and matching rules.
-- No unresolved penalty, review, or user decision has been skipped.
-- Cumulative individual and team statistics reconcile to the event ledger or complete compressed-sequence deltas at the selected granularity.
+**Game underway:** No. The entire live-game checkpoint is inactive: no opponent, score, possession, clocks, timeout, challenge, personnel or statistical state exists to resume. A later live-game update must populate all Document 6 checkpoint fields and pass its invariants.
 
 ## 10. Wider competition view
 
-Include only material standing changes, relevant injuries or transactions, upcoming opponents, postseason effects, career/roster effects, or significant rule developments.
+No new league result, standings change or other club transaction is recorded. Bennett/Forsett's communicated alternatives remain bounded pursuit information; their destinations remain unknown.
 
-- `[No competition initialized.]`
+## 11. Provisional items and source conflicts
 
-## 11. Contradictions and provisional items
+| Item | Current treatment | Resolution needed |
+|---|---|---|
+| Former January/pre-hire snapshot text and old ledger blocker | Superseded for the accepted batch by ledger Entry 3 | No re-resolution of completed events |
+| Full roster control and official primary statuses | Unknown where inherited evidence is incomplete | Dated rights/contract/list reconciliation |
+| Exact club cap balance and release effects | Approximate $8.35M planning figure only | Complete obligations and counted-roster worksheet |
+| Three base guarantees and bonus payment timing | Unspecified | Source terms, not invented amendments |
+| Medical and game readiness | Not certified | Dated medical/eligibility/preparation records and full initialization audit |
+| Formal active-only Document 2 lock | Not asserted by this task | Existing initialization procedure |
+| Legacy alternative teams, seasons, staff and schemes | Quarantined; not active Jacksonville facts | No permission to import them |
 
-| Item | Conflicting records or missing fact | Governing authority | Current treatment | Required resolution |
-|---|---|---|---|---|
-| Simulation setting | Legacy files point variously to Jan. 2009, Aug./Sep./Dec. 2009, a fictional 9–7 Detroit 2009 season, 2010 offseason, and an unrelated 2024 player mode | User mode choice, then Document 2 | Uninitialized | Confirm exact season and date |
-| Alex Stone biography | *Resolved 2026-09-17, before career initialization, then revised twice more the same day. Second round: a fuller source restored Stone's Saints interim-head-coach year (Sean Payton's 2012 suspension); user confirmed adopting that source's full timeline (10-season playing career, PhD, Patriots-to-Saints-to-interim-HC path). Third round: the geographic constraint, briefly rewritten as marital strain, was reverted to no constraint at all — the user clarified Inbar is background color only, not a functional element, and did not want invented conflict either.* | User canon choice | Active canon; see Document 3 §1.1-§1.6 (revised) | None remaining |
-| Legacy Detroit history | Claimed 2009 record and Culpepper/Tampa draft-pick trade are counterfactual and arithmetically incomplete | User canon plus exact divergence | Quarantined, not active | Confirm or reject; rebuild draft order if kept |
-| Legacy staff files | Several real-person jobs, availability claims, references, and evaluations are false or unverified | Verified pre-divergence history | Quarantined, not active | Choose divergence and conduct any post-divergence hiring in play |
-| Legacy scheme | Large playbook and play-calling documents mix era, terminology, personnel, and responsibilities | User strategy choice plus roster/era fit | Not installed | Select compact era-compatible core after roster is fixed |
-
-Every resolved contradiction must be entered as a Document 6 supersession/correction and removed from this table in the next fresh snapshot. After mode lock, delete unchosen legacy alternatives and retain only active, decision-relevant conflicts; the audit report is not a runtime source.
+The established Stone biography and lack of a functional family/geographic constraint remain unchanged in Document 3.
 
 ## 12. Last continuity update
 
-- **Time advanced:** Pre-hire baseline fixed at January 14, 2013; ACTIVE CAREER has not begun.
-- **User decisions:** Clean restart of the 2013 hiring search; no hiring preference or offer decision is recorded in this snapshot.
-- **Important resulting events:** No simulated hiring event yet.
-- **Roster or availability changes:** None; no team selected.
-- **Staff or organizational changes:** None; no employing organization selected.
-- **Record or standings changes:** None.
-- **Current focus:** Complete criteria freeze and user hiring brief.
-- **Pending decisions:** Stone's search priorities, terms, concessions, walk-away conditions, and any optional standing acceptance/rejection instructions.
-- **Next scheduled event:** Hiring-search opportunity turn after the criteria freeze and brief are complete.
-- **Canon corrections:** Pre-hire lifecycle reconciled; full hindsight coaching-market file quarantined from runtime resolution.
+- Reconciled the already-completed March 12 FA result; no additional in-world time elapsed.
+- Added four outside players, updated two existing contracts, and moved four released players to departed records.
+- Preserved all accepted/declined terms, pursuit sequence and medical limits.
+- Derived the two-year cap/cash schedule and separated unknown release/counting effects.
+- Replaced obsolete pre-hire/current-focus text. Staff assignments were carried from the existing staff register, not newly hired.
+- No game, draft choice, trade, installed play, medical clearance or depth-chart outcome changed.
+- Source/supersession proof: [season ledger, Entry 3](../career/2013/ledger.md), same global checkpoint.
 
-## 13. Pre-initialization readiness
+## 13. Readiness boundary
 
-Prepare this snapshot as candidate `READY` only after it contains an exact start date, team, season phase, schedule window, record/standings baseline, current roster and availability summary, authority/play-calling summary, material resources, current knowledge picture, pending decisions, and no blocking contradiction. It must use a locked active-only Document 2, a substantively complete candidate `READY` Document 3, a `RECONCILED` or nonblocking `RECONCILED WITH NOTED UNCERTAINTY` Document 4, and a candidate Document 6 containing the audited starting baseline and first bounded handoff.
-
-Set this document's `Readiness` to `READY` only when candidate Documents 3, 5, and 6 are validated and promoted together under the same pre-initialization global package checkpoint. Keep `Simulation status` as `NOT INITIALIZED` until the user's later explicit command. Readiness is therefore not circular and is not an in-world event.
+This checkpoint closes the documentation reconciliation of accepted events. It does not certify the full package `READY`, retroactively manufacture a missing ex-ante resolution record, or waive requirements for later game play. Follow the existing initialization and resolution procedures before any activity whose prerequisites remain incomplete. Those requirements do not undo the batch the user explicitly instructed us to preserve.
 
 ## 14. Snapshot replacement procedure
 
