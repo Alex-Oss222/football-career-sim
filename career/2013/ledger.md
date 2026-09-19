@@ -236,10 +236,10 @@ All eleven rookie participants remain in open competition. The working inventory
 
 ## Entry 9 — May 5 roster, contract, cap and calendar correction
 
-**Effective checkpoint:** May 5, 2013, after rookie minicamp and before OTAs.  
-**Correction recorded:** September 19, 2026.  
-**Target global package checkpoint:** `Canonical correction - May 5, 2013 - roster/cap/calendar reconciled`.  
-**Preceding global package checkpoint:** `Canonical update - May 5, 2013 - rookie minicamp closed`.  
+**Effective checkpoint:** May 5, 2013, after rookie minicamp and before OTAs.
+**Correction recorded:** September 19, 2026.
+**Target global package checkpoint:** `Canonical correction - May 5, 2013 - roster/cap/calendar reconciled`.
+**Preceding global package checkpoint:** `Canonical update - May 5, 2013 - rookie minicamp closed`.
 **Nature:** Research-backed correction and dependency reconciliation. No football event is rerun and no new practice/player result is generated.
 
 ### Why a correction was required
@@ -401,3 +401,25 @@ No signing, release, trade, waiver move, contract change, verified workout-bonus
 The April 16-18 voluntary veteran-minicamp gap remains unfilled. The May 20-21 OTA block has **not** been run and is the next scheduled football event.
 
 **Commit closed — Canonical update - May 15, 2013 - OTA block 1 closed — canonical through May 15, before May 20 OTAs**
+
+## Entry 11 — May 20-21 OTA block 2
+
+**Effective checkpoint:** May 21, 2013, after OTA block 2.
+**Global package checkpoint:** `Canonical update - May 21, 2013 - OTA block 2 closed`.
+**Preceding global package checkpoint:** `Canonical update - May 15, 2013 - OTA block 1 closed`.
+
+Jacksonville obtained fresh qualified medical instructions before May 20 work. Daryl Smith completed both days without a communicated restriction. Brent Grimes remained in meetings and medically directed rehabilitation/individual work May 20, then was cleared after reassessment for a limited set of controlled, non-contact team repetitions May 21. Medical staff controlled the assignment and excluded extended and pressure-period work; he completed it without a communicated setback. No new diagnosis or unrestricted-return date was supplied. Every other controlled player completed assigned work without a new communicated restriction.
+
+Stone made retention and transfer the block's governing test. The offense retained huddle, cadence, point, Power, Inside Zone, Stick and Drive, while the interior line's combination timing remained late when the front changed. Stone and Tice therefore deferred another run family and broader protection/motion expansion. The unit earned only a narrow early Mesh install, moving from explanation and walk-through to selected May 21 team repetitions. Y-Cross, Counter, Outside Zone and PRESS tempo were not installed.
+
+Cousins again supplied the cleanest operation and carried it into the harder presentation. Henne improved, but did not fully close, his changed-picture reset correction. Wilson remained assignment-sound without separating his role. Bray improved cadence-to-footwork connection, while progression timing under a changed picture remained open. Stone set a provisional May 23 practice sequence—Cousins first into the harder changed-presentation core, Henne continuing in the same competitive band, Wilson in the working rotation and Bray concentrated on core timing—but named no QB1 or permanent depth order.
+
+Meester continued to stabilize line communication; Johnson retained his assignment through the harder front presentation; Shorts transferred taught landmarks through limited motion. Kelce improved his run-block fit on a constant surface but did not yet carry it consistently across an alignment change. Posluszny's unit needed less rescue on base alignment, Moore retained his prior landmark correction before taking a new changed-distribution correction, and Poyer retained leverage and exchange communication.
+
+Base defensive exchange improved enough for Crennel to retest one previously postponed pressure presentation. A late first exchange was re-walked and the return rep was clean, so that single presentation remains available for recall without expanding the disguise menu. Rambo's earlier special-teams substitution correction held; a late defensive exchange call became a separate open correction. Trawick and Thielen retained multiple special-teams jobs with less coach placement and earned continued cross-unit exposure, not final-unit awards.
+
+No signing, release, trade, waiver move, contract change, verified bonus consequence or Top-51 change occurred. The roster remains 64 and the unchanged May 5 worksheet remains financial authority at approximately $7.0M-$7.4M planning room. The April 16-18 continuity gap remains unfilled.
+
+The next football event is the **May 23 OTA day**. Medical instructions, core recall, the interior combination, the single defensive pressure presentation and the narrow Mesh progression are carry-forward items. **May 23 has not been run.**
+
+**Commit closed — Canonical update - May 21, 2013 - OTA block 2 closed — canonical through May 21, before May 23 OTA work**

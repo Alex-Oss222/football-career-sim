@@ -1,8 +1,8 @@
 # Jacksonville Jaguars — Current Roster
 
-**As of:** May 15, 2013, after OTA block 1.
+**As of:** May 21, 2013, after OTA block 2.
 **Canonical controlled-player count:** **64**.
-**Status:** Contract/control remains reconciled. May 13-15 participation and football evidence are closed at Ledger Entry 10; next-event availability requires ordinary current medical communication.
+**Status:** Contract/control remains reconciled. May 20-21 participation and football evidence are closed at Ledger Entry 11; May 23 availability requires fresh ordinary medical communication.
 **Cap:** See [May 5 Top-51 worksheet](offseason/current_cap_worksheet.md).
 **Calendar:** See [active 2013 career calendar](calendar.md).
 
@@ -252,17 +252,18 @@ The stale `~$8.35M` post-free-agency shortcut is retired.
 
 See [current_cap_worksheet.md](offseason/current_cap_worksheet.md) for the complete transaction math, source limitations and required recalculation triggers.
 
-## 7. May 13-15 OTA availability and football-role boundary
+## 7. May 20-21 OTA availability and football-role boundary
 
-- Qualified medical personnel supplied a current status before participation. Daryl Smith was cleared for and completed assigned OTA work without a communicated restriction.
-- Brent Grimes attended meetings and medically directed rehabilitation/individual work but was withheld from team periods throughout the block. No new diagnosis or return date was communicated; reassessment remains due before the next block.
-- Every other controlled player was cleared for the work assigned and participated. No new injury or restriction was communicated May 13-15. Clearance remains event-bounded and must be refreshed through the normal process for later work.
-- Cousins led the cleanest huddle/protection operation; Meester stabilized line calls; Shorts preserved route landmarks; Posluszny stabilized defensive communication. Johnson, Poyer and Moore carried useful rookie evidence into veteran work. Trawick and Thielen added provisional multi-unit special-teams evidence.
-- Kelce's run-block fit, Bray's cadence-to-progression timing, Henne's reset against changed pictures, Rambo's substitution communication and the interior line's changed-presentation combination timing remain specific teaching points.
-- Grimes' temporary team-period absence caused a secondary rotation experiment only. No starter, quarterback order, target/workload share, special-teams place or final roster role was awarded.
+- Qualified medical personnel supplied fresh status before May 20 participation. Daryl Smith completed assigned work on both days without a communicated restriction.
+- Brent Grimes remained in meetings and medically directed rehabilitation/individual work May 20. After qualified reassessment, he was cleared for limited controlled, non-contact team repetitions May 21, excluding extended and pressure-period work. He completed that assignment without a communicated setback; no new diagnosis or unrestricted-return date was supplied. May 23 work requires fresh medical instruction.
+- Every other controlled player completed assigned May 20-21 work without a new communicated restriction. Clearance remains event-bounded.
+- Cousins retained the cleanest operation and earned first May 23 exposure to the harder changed-presentation core; Henne remains in the same live competition after improving his reset. Wilson remains in the working rotation, while Bray receives concentrated core-timing work. This is a provisional practice sequence, not a QB1 or permanent depth order.
+- Meester continued to stabilize calls; Johnson retained his job through the harder front presentation; Shorts transferred his landmarks through limited motion. Kelce's block fit improved on a constant surface but remains open across alignment changes. The interior line's changed-front combination timing remains an install constraint.
+- Posluszny's unit operated the base with less rescue. Moore retained the earlier landmark correction but added a changed-distribution timing correction; Poyer retained leverage/exchange evidence. Rambo's special-teams substitution correction held, while a separate defensive exchange call remains open.
+- Trawick and Thielen earned continued multi-unit special-teams exposure. No final unit, workload, target, package, roster or starting award was made.
 
 ## 8. Current cap and next event
 
-No signing, release, trade, waiver move, amendment, verified bonus consequence, guarantee change or Top-51 change occurred during OTA block 1. The May 5 worksheet remains the latest financial checkpoint and its approximately **$7.0M-$7.4M** planning range remains current.
+No signing, release, trade, waiver move, amendment, verified bonus consequence, guarantee change or Top-51 change occurred during OTA block 2. The May 5 worksheet remains the latest financial checkpoint and its approximately **$7.0M-$7.4M** planning range remains current.
 
-**Next scheduled football event:** May 20-21 OTA block 2; not yet run.
+**Next scheduled football event:** May 23 OTA day; not yet run.
