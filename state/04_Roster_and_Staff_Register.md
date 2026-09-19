@@ -3,9 +3,9 @@
 ## Document status
 
 - Function: Canonical register for current Jacksonville player control, staff operating authority, roster legality, contract/cap reconciliation, availability boundaries and football-role state.
-- Current status: **RECONCILED THROUGH MAY 23 OTA DAY**.
-- Effective through: **May 23, 2013, after OTA Day 6**.
-- Progression authority: `career/2013/ledger.md`, Entry 13 administrative reconciliation; Entry 12 remains the latest football event.
+- Current status: **RECONCILED THROUGH AUGUST 8 FINAL WALKTHROUGH**.
+- Effective through: **August 8, 2013, after the final walkthrough**.
+- Progression authority: `career/2013/ledger.md`, Entry 19.
 - Detailed readable roster: `career/2013/roster.md`.
 - Current cap worksheet: `career/2013/offseason/current_cap_worksheet.md`.
 - Current calendar: `career/2013/calendar.md`.
@@ -21,17 +21,17 @@
 | Competition | NFL |
 | Season | 2013 |
 | Divergence point | January 15, 2013 — Alex Stone accepts Jacksonville head-coach offer |
-| Season phase | Offseason; May 23 OTA Day 6 complete; June 4-7 OTA block 3 not begun |
-| Owned content effective | May 23, 2013 |
-| Document 4 register version | `JAX-2013-MAY23-ADMIN-STATE-6` |
-| Supersedes | `JAX-2013-MAY23-OTA6-STATE-5` |
-| Last content-changing checkpoint | `Canonical correction - May 23, 2013 - repository continuity and readiness reconciled` |
-| Latest Document 6 event | Entry 13 administrative correction; Entry 12 last football event |
+| Season phase | Training camp / preseason preparation; August 8 final walkthrough complete |
+| Owned content effective | August 8, 2013 |
+| Document 4 register version | `JAX-2013-AUG08-WALKTHROUGH-STATE-7` |
+| Supersedes | `JAX-2013-MAY23-ADMIN-STATE-6` |
+| Last content-changing checkpoint | `Canonical update - August 8, 2013 - final Miami walkthrough closed` |
+| Latest Document 6 event | Entry 19 — August 8 final walkthrough |
 | Current controlled players | **64** |
 | Current offseason open places | **26 of 90** |
 | Current May 5 Top-51 planning room | **~$7.0M-$7.4M** |
-| Next scheduled football event | June 4-7 OTA block 3 |
-| Unresolved matter before participation | Fresh ordinary medical communication before June 4; Grimes remains limited unless qualified staff change the instruction |
+| Next scheduled football event | August 9 Preseason Game 1 vs Miami — NOT STARTED |
+| Unresolved matter before participation | Fresh game-day medical communication; no current football restriction |
 
 ## Canon and evidence conventions
 
@@ -104,14 +104,14 @@ These rules apply to every real player, staff member, executive, candidate, oppo
 
 | Exact primary status | Current count | Governing limit | Reconciled |
 |---|---:|---:|---|
-| Offseason roster under Jacksonville contract/control | **64** | 90-player offseason maximum | May 23, 2013 OTA Day 6 checkpoint |
+| Offseason roster under Jacksonville contract/control | **64** | 90-player offseason maximum | August 8, 2013 final-walkthrough checkpoint |
 
 | Primary-status total | Current value | Derivation |
 |---|---:|---|
 | Persons under team control | **64** | Corrected Jan. 15 control 67; rights expirations; branch releases/additions/trades; seven drafted contracts; four UDFA contracts |
 | Open offseason roster places | **26** | 90 - 64 |
 
-No game-day active/inactive subset applies at the current offseason checkpoint.
+No game-day active/inactive subset has been set; the preseason game has not started.
 
 ### Financial, contract and eligibility reconciliation
 
@@ -142,15 +142,16 @@ Staff remains unchanged from the closed late-January hiring phase. `career/2013/
 
 ### Reconciliation result
 
-- Register status: **RECONCILED THROUGH MAY 23 OTA DAY**.
-- Blocking roster-control conflict: **None**.
-- Blocking May 5 cap-legality conflict: **None; club has approximately $7.0M-$7.4M planning room under Top-51**.
-- Medical state through May 23: Smith and all players other than Grimes completed assigned work without a new restriction; Grimes completed medically controlled group/base team work but remained excluded from extended and pressure periods, without a communicated setback or unrestricted clearance.
-- Next mandatory reconciliation trigger: June 4 OTA opening or any earlier transaction/medical event.
+- Register status: **RECONCILED THROUGH AUGUST 8 FINAL WALKTHROUGH**.
+- Roster/control: **64 controlled players; no transaction in the progressed span**.
+- Cap: unchanged May 5 Top-51 authority, approximately **$7.0M-$7.4M** planning room.
+- Medical: all 64 available for assigned August 8 work; fresh game-day communication required.
+- Football: provisional practice hierarchy and Miami evaluation roles are synchronized to the camp records.
+- Next event: August 9 Preseason Game 1 vs Miami; **NOT STARTED**.
 
 ## Jacksonville current transaction reconciliation
 
-**Current progression source:** [Season ledger, Entry 13](../career/2013/ledger.md#entry-13--repository-continuity-and-readiness-reconciliation), checkpoint `Canonical correction - May 23, 2013 - repository continuity and readiness reconciled`. Entry 12 remains the source of the latest football evidence.
+**Current progression source:** [Season ledger, Entry 19](../career/2013/ledger.md#entry-19--august-5-8-miami-preparation-and-final-walkthrough-closed), checkpoint `Canonical update - August 8, 2013 - final Miami walkthrough closed`.
 **Readable roster:** [career/2013/roster.md](../career/2013/roster.md).
 **Current cap worksheet:** [career/2013/offseason/current_cap_worksheet.md](../career/2013/offseason/current_cap_worksheet.md).
 **Current calendar:** [career/2013/calendar.md](../career/2013/calendar.md).
@@ -177,70 +178,71 @@ The old 75-person working count and the old unresolved inherited-control bucket 
 
 | Player | Stable ID | Pos. | Primary status | Current control basis | Current availability boundary | Current source |
 |---|---|---|---|---|---|---|
-| Kirk Cousins | JAX-KIRKCOUSINS | QB | Offseason roster under contract/control | Acquired from Washington; 2014 second transferred | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Chad Henne | JAX-CHADHENNE | QB | Offseason roster under contract/control | Existing 2013 contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| John Parker Wilson | JAX-JOHNPARKERWILSON | QB | Offseason roster under contract/control | Dec. 30, 2012 reserve/future contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Tyler Bray | JAX-TYLERBRAY | QB | Offseason roster under contract/control | #208; rookie contract signed May 2 | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| C.J. Anderson | JAX-CJANDERSON | RB | Offseason roster under contract/control | Three-year UDFA minimum contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Jonathan Grimes | JAX-JONATHANGRIMES | RB | Offseason roster under contract/control | Existing contract/control; not a March 12 free agent | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Maurice Jones-Drew | JAX-MAURICEJONESDREW | RB | Offseason roster under contract/control | Existing 2013 contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Richard Murphy | JAX-RICHARDMURPHY | RB | Offseason roster under contract/control | Existing contract/control; not a March 12 free agent | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Montell Owens | JAX-MONTELLOWENS | FB | Offseason roster under contract/control | Existing contract/control | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Will Ta'ufo'ou | JAX-WILLTAUFOOU | FB | Offseason roster under contract/control | Dec. 30, 2012 reserve/future contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Justin Blackmon | JAX-JUSTINBLACKMON | WR | Offseason roster under contract/control | Existing rookie contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Mike Brown | JAX-MIKEBROWN | WR | Offseason roster under contract/control | Existing contract/control | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Toney Clemons | JAX-TONEYCLEMONS | WR | Offseason roster under contract/control | Existing contract/control | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Jerrell Jackson | JAX-JERRELLJACKSON | WR | Offseason roster under contract/control | Existing contract/control | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Cecil Shorts | JAX-CECILSHORTS | WR | Offseason roster under contract/control | Existing rookie contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Adam Thielen | JAX-ADAMTHIELEN | WR | Offseason roster under contract/control | Three-year UDFA minimum contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Allen Reisner | JAX-ALLENREISNER | TE | Offseason roster under contract/control | Existing contract/control | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Marcedes Lewis | JAX-MARCEDESLEWIS | TE | Offseason roster under contract/control | Existing contract/control | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Isaiah Stanback | JAX-ISAIAHSTANBACK | TE | Offseason roster under contract/control | Existing contract/control | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Travis Kelce | JAX-TRAVISKELCE | TE | Offseason roster under contract/control | #33; rookie contract signed May 2 | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Cameron Bradfield | JAX-CAMERONBRADFIELD | OT | Offseason roster under contract/control | Existing contract/control | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Lane Johnson | JAX-LANEJOHNSON | OT | Offseason roster under contract/control | #2; rookie contract signed May 2; first-round option mechanism | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Eugene Monroe | JAX-EUGENEMONROE | OT | Offseason roster under contract/control | Existing 2013 contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Mark Asper | JAX-MARKASPER | G | Offseason roster under contract/control | Existing contract/control | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Uche Nwaneri | JAX-UCHENWANERI | G | Offseason roster under contract/control | Existing 2013 contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Austin Pasztor | JAX-AUSTINPASZTOR | G | Offseason roster under contract/control | Existing contract/control | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Will Rackley | JAX-WILLRACKLEY | G | Offseason roster under contract/control | Existing rookie contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Mike Brewster | JAX-MIKEBREWSTER | C | Offseason roster under contract/control | Existing contract/control | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Brad Meester | JAX-BRADMEESTER | C | Offseason roster under contract/control | Branch re-signing; one year, $1.50M | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Jason Babin | JAX-JASONBABIN | DE | Offseason roster under contract/control | Existing 2013 contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Andre Branch | JAX-ANDREBRANCH | DE | Offseason roster under contract/control | Existing rookie contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Ryan Davis | JAX-RYANDAVIS | DE | Offseason roster under contract/control | Dec. 30, 2012 reserve/future contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Austen Lane | JAX-AUSTENLANE | DE | Offseason roster under contract/control | Existing contract/control | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Lavar Edwards | JAX-LAVAREDWARDS | DE | Offseason roster under contract/control | #135; rookie contract signed May 2 | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Jeremy Mincey | JAX-JEREMYMINCEY | DE | Offseason roster under contract/control | Existing 2013 contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| C.J. Wilson | JAX-CJWILSON | DE | Offseason roster under contract/control | Acquired from Green Bay for Blaine Gabbert | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Tyson Alualu | JAX-TYSONALUALU | DT | Offseason roster under contract/control | Existing 2013 contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Jerome Long | JAX-JEROMELONG | DT | Offseason roster under contract/control | Existing contract/control | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Sen'Derrick Marks | JAX-SENDERRICKMARKS | DT | Offseason roster under contract/control | Branch signing; one year, $1.50M | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Roy Miller | JAX-ROYMILLER | DT | Offseason roster under contract/control | Branch signing; two years, $5.00M | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| C.J. Mosley | JAX-CJMOSLEY | DT | Offseason roster under contract/control | Existing contract/control | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Jeris Pendleton | JAX-JERISPENDLETON | DT | Offseason roster under contract/control | Existing rookie contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| D'Anthony Smith | JAX-DANTHONYSMITH | DT | Offseason roster under contract/control | Existing contract/control | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Russell Allen | JAX-RUSSELLALLEN | LB | Offseason roster under contract/control | Existing 2013 contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Brandon Marshall | JAX-BRANDONMARSHALL | LB | Offseason roster under contract/control | Existing rookie contract/control | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Sio Moore | JAX-SIOMOORE | LB | Offseason roster under contract/control | #98; rookie contract signed May 2 | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Paul Posluszny | JAX-PAULPOSLUSZNY | LB | Offseason roster under contract/control | Existing 2013 contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Daryl Smith | JAX-DARYLSMITH | LB | Offseason roster under contract/control | Branch re-signing; two years, $6.00M | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Julian Stanford | JAX-JULIANSTANFORD | LB | Offseason roster under contract/control | Existing contract/control | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Alan Ball | JAX-ALANBALL | CB | Offseason roster under contract/control | Branch signing; one year, $1.00M | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| A.J. Bouye | JAX-AJBOUYE | CB | Offseason roster under contract/control | Three-year UDFA minimum contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Brent Grimes | JAX-BRENTGRIMES | CB | Offseason roster under contract/control | Branch signing; one year, $5.50M fully guaranteed | Medically limited May 23: meetings, rehab/individual and controlled group/base team reps; excluded from extended/pressure work; no setback, new diagnosis or unrestricted timetable; reassess for June 4 | Entry 12 / OTA output |
-| Mike Harris | JAX-MIKEHARRIS | CB | Offseason roster under contract/control | Existing rookie contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Brandon King | JAX-BRANDONKING | DB | Offseason roster under contract/control | Dec. 30, 2012 reserve/future contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Jordan Poyer | JAX-JORDANPOYER | CB | Offseason roster under contract/control | #64; rookie contract signed May 2 | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Kevin Rutland | JAX-KEVINRUTLAND | CB | Offseason roster under contract/control | Existing contract/control | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Antwon Blake | JAX-ANTWONBLAKE | S | Offseason roster under contract/control | Existing contract/control | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Dwight Lowery | JAX-DWIGHTLOWERY | S | Offseason roster under contract/control | Existing 2013 contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Chris Prosinski | JAX-CHRISPROSINSKI | S | Offseason roster under contract/control | Existing rookie contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Bacarri Rambo | JAX-BACARRIRAMBO | S | Offseason roster under contract/control | #169; rookie contract signed May 2 | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Brynden Trawick | JAX-BRYNDENTRAWICK | S | Offseason roster under contract/control | Three-year UDFA minimum contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Josh Scobee | JAX-JOSHSCOBEE | K | Offseason roster under contract/control | Existing 2013 contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Bryan Anger | JAX-BRYANANGER | P | Offseason roster under contract/control | Existing rookie contract | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
-| Jeremy Cain | JAX-JEREMYCAIN | LS | Offseason roster under contract/control | Existing contract/control | Completed assigned May 23 OTA work without a newly communicated restriction; June 4 status requires ordinary medical communication | Entry 12 / OTA output |
+| Kirk Cousins | JAX-KIRKCOUSINS | QB | Offseason roster under contract/control | Acquired from Washington; 2014 second transferred | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Chad Henne | JAX-CHADHENNE | QB | Offseason roster under contract/control | Existing 2013 contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| John Parker Wilson | JAX-JOHNPARKERWILSON | QB | Offseason roster under contract/control | Dec. 30, 2012 reserve/future contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Tyler Bray | JAX-TYLERBRAY | QB | Offseason roster under contract/control | #208; rookie contract signed May 2 | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| C.J. Anderson | JAX-CJANDERSON | RB | Offseason roster under contract/control | Three-year UDFA minimum contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Jonathan Grimes | JAX-JONATHANGRIMES | RB | Offseason roster under contract/control | Existing contract/control; not a March 12 free agent | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Maurice Jones-Drew | JAX-MAURICEJONESDREW | RB | Offseason roster under contract/control | Existing 2013 contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Richard Murphy | JAX-RICHARDMURPHY | RB | Offseason roster under contract/control | Existing contract/control; not a March 12 free agent | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Montell Owens | JAX-MONTELLOWENS | FB | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Will Ta'ufo'ou | JAX-WILLTAUFOOU | FB | Offseason roster under contract/control | Dec. 30, 2012 reserve/future contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Justin Blackmon | JAX-JUSTINBLACKMON | WR | Offseason roster under contract/control | Existing rookie contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Mike Brown | JAX-MIKEBROWN | WR | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Toney Clemons | JAX-TONEYCLEMONS | WR | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Jerrell Jackson | JAX-JERRELLJACKSON | WR | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Cecil Shorts | JAX-CECILSHORTS | WR | Offseason roster under contract/control | Existing rookie contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Adam Thielen | JAX-ADAMTHIELEN | WR | Offseason roster under contract/control | Three-year UDFA minimum contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Allen Reisner | JAX-ALLENREISNER | TE | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Marcedes Lewis | JAX-MARCEDESLEWIS | TE | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Isaiah Stanback | JAX-ISAIAHSTANBACK | TE | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Travis Kelce | JAX-TRAVISKELCE | TE | Offseason roster under contract/control | #33; rookie contract signed May 2 | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Cameron Bradfield | JAX-CAMERONBRADFIELD | OT | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Lane Johnson | JAX-LANEJOHNSON | OT | Offseason roster under contract/control | #2; rookie contract signed May 2; first-round option mechanism | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Eugene Monroe | JAX-EUGENEMONROE | OT | Offseason roster under contract/control | Existing 2013 contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Mark Asper | JAX-MARKASPER | G | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Uche Nwaneri | JAX-UCHENWANERI | G | Offseason roster under contract/control | Existing 2013 contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Austin Pasztor | JAX-AUSTINPASZTOR | G | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Will Rackley | JAX-WILLRACKLEY | G | Offseason roster under contract/control | Existing rookie contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Mike Brewster | JAX-MIKEBREWSTER | C | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Brad Meester | JAX-BRADMEESTER | C | Offseason roster under contract/control | Branch re-signing; one year, $1.50M | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Jason Babin | JAX-JASONBABIN | DE | Offseason roster under contract/control | Existing 2013 contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Andre Branch | JAX-ANDREBRANCH | DE | Offseason roster under contract/control | Existing rookie contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Ryan Davis | JAX-RYANDAVIS | DE | Offseason roster under contract/control | Dec. 30, 2012 reserve/future contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Austen Lane | JAX-AUSTENLANE | DE | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Lavar Edwards | JAX-LAVAREDWARDS | DE | Offseason roster under contract/control | #135; rookie contract signed May 2 | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Jeremy Mincey | JAX-JEREMYMINCEY | DE | Offseason roster under contract/control | Existing 2013 contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| C.J. Wilson | JAX-CJWILSON | DE | Offseason roster under contract/control | Acquired from Green Bay for Blaine Gabbert | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Tyson Alualu | JAX-TYSONALUALU | DT | Offseason roster under contract/control | Existing 2013 contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Jerome Long | JAX-JEROMELONG | DT | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Sen'Derrick Marks | JAX-SENDERRICKMARKS | DT | Offseason roster under contract/control | Branch signing; one year, $1.50M | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Roy Miller | JAX-ROYMILLER | DT | Offseason roster under contract/control | Branch signing; two years, $5.00M | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| C.J. Mosley | JAX-CJMOSLEY | DT | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Jeris Pendleton | JAX-JERISPENDLETON | DT | Offseason roster under contract/control | Existing rookie contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| D'Anthony Smith | JAX-DANTHONYSMITH | DT | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Russell Allen | JAX-RUSSELLALLEN | LB | Offseason roster under contract/control | Existing 2013 contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Brandon Marshall | JAX-BRANDONMARSHALL | LB | Offseason roster under contract/control | Existing rookie contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Sio Moore | JAX-SIOMOORE | LB | Offseason roster under contract/control | #98; rookie contract signed May 2 | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Paul Posluszny | JAX-PAULPOSLUSZNY | LB | Offseason roster under contract/control | Existing 2013 contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Daryl Smith | JAX-DARYLSMITH | LB | Offseason roster under contract/control | Branch re-signing; two years, $6.00M | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Julian Stanford | JAX-JULIANSTANFORD | LB | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Alan Ball | JAX-ALANBALL | CB | Offseason roster under contract/control | Branch signing; one year, $1.00M | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| A.J. Bouye | JAX-AJBOUYE | CB | Offseason roster under contract/control | Three-year UDFA minimum contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Brent Grimes | JAX-BRENTGRIMES | CB | Offseason roster under contract/control | Branch signing; one year, $5.50M fully guaranteed | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Mike Harris | JAX-MIKEHARRIS | CB | Offseason roster under contract/control | Existing rookie contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Brandon King | JAX-BRANDONKING | DB | Offseason roster under contract/control | Dec. 30, 2012 reserve/future contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Jordan Poyer | JAX-JORDANPOYER | CB | Offseason roster under contract/control | #64; rookie contract signed May 2 | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Kevin Rutland | JAX-KEVINRUTLAND | CB | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Antwon Blake | JAX-ANTWONBLAKE | S | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Dwight Lowery | JAX-DWIGHTLOWERY | S | Offseason roster under contract/control | Existing 2013 contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Chris Prosinski | JAX-CHRISPROSINSKI | S | Offseason roster under contract/control | Existing rookie contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Bacarri Rambo | JAX-BACARRIRAMBO | S | Offseason roster under contract/control | #169; rookie contract signed May 2 | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Brynden Trawick | JAX-BRYNDENTRAWICK | S | Offseason roster under contract/control | Three-year UDFA minimum contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Josh Scobee | JAX-JOSHSCOBEE | K | Offseason roster under contract/control | Existing 2013 contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Bryan Anger | JAX-BRYANANGER | P | Offseason roster under contract/control | Existing rookie contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+| Jeremy Cain | JAX-JEREMYCAIN | LS | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 19 / training-camp output |
+
 
 ### Players no longer under Jacksonville control
 
@@ -287,32 +289,18 @@ These fifteen departures are rights expirations, not new releases. No later real
 
 ## Material current player records
 
-### Daryl Smith (`JAX-DARYLSMITH`)
+### Current August 8 availability
 
-- Current status: Jacksonville-controlled; branch re-signing, two years / $6.0M.
-- Contract source: March branch free-agency record.
-- Medical/availability: qualified staff cleared him for May 23 work; he completed assigned non-contact work without a newly communicated restriction.
-- Football evidence: executed assigned base-fit and coverage work; no starting job or rep share is guaranteed.
-- Next update: ordinary qualified medical communication before June 4 participation.
+All 64 controlled players were available for assigned walkthrough work. Qualified medical personnel cleared Brent Grimes for full football participation at July 25 report, with ordinary workload monitoring and no football restriction; he completed camp work through August 8 without a communicated setback. No player has a current communicated football restriction. Fresh game-day communication remains required.
 
-### Brent Grimes (`JAX-BRENTGRIMES`)
+## Material August 8 football evidence
 
-- Current status: Jacksonville-controlled; branch signing, one year / $5.5M fully guaranteed.
-- Contract source: March branch free-agency record.
-- Medical/availability: Achilles uncertainty remains bounded. On May 23 he completed medically controlled meetings, rehabilitation/individual work and selected group/base team repetitions, excluding extended and pressure-period work. No setback, new diagnosis, unrestricted clearance or return date was communicated.
-- Football role: the limited May 23 work is availability progression only; no starting job or rep share is guaranteed.
-- Next update: qualified medical instruction before June 4 participation.
-
-## Material May 23 OTA football evidence
-
-- Cousins remains first in the provisional practice sequence on cumulative operation evidence. Henne's clean comparable changed-picture work narrowed the gap and earned immediate harder work behind Cousins on June 4. Wilson remains in the working rotation; Bray remains concentrated on core timing after another late changed-distribution progression. No QB1 was named.
-- Meester stabilized the corrected point/echo/confirmation cycle. Johnson retained his assignment through harder presentation. The interior line handled return work after a late first echo, but changed-front transfer remains a June 4 opening test.
-- Shorts and Anderson retained taught jobs. Kelce's hand placement/base traveled through multiple alignments before widening on a later group rep. Narrow Mesh survived after a spacing re-teach; broader concept, run-family, protection, motion and tempo expansion remains deferred.
-- Posluszny's unit operated the base with less rescue. Moore's changed-distribution handoff, Poyer's leverage/exchange and Rambo's defensive exchange communication held. One pressure presentation survived recall and remains available without broader expansion.
-- Trawick earned first June 4 exposure to another already-taught cross-unit sequence. Thielen retained multi-unit work after one communication repeat. Rambo's substitution language remained clean. No final special-teams job was awarded.
-- Grimes' medically limited May 23 work is availability progression, not role evidence.
-
-All evidence is limited to non-contact voluntary OTA work on taught material. It creates no permanent depth, workload, target, package, special-teams or roster entitlement.
+- Quarterback: Cousins holds the provisional first practice/Miami exposure place; Henne remains meaningfully competitive and follows; Wilson is next; Bray's fair evaluation uses a reduced core. No regular-season QB1 is declared.
+- Offensive line: Johnson is provisional first at right tackle over Bradfield; Rackley is provisional first at right guard with Pasztor the immediate challenger. Physical/game transfer remains open.
+- Skill positions: Jones-Drew leads the backs; Shorts/Blackmon lead receivers; Lewis leads tight ends. Anderson, Thielen and Kelce earned bounded Miami opportunities described in the camp decision record.
+- Defense: Miller/Marks, Posluszny/Smith, Grimes/Ball and Lowery/Rambo lead their current working groups. Moore has selected first-group/sub-package work; Poyer has nickel/outside work.
+- Special teams: Trawick, Rambo and Thielen have broad multi-unit opportunities; Anderson has coverage-unit work. Backup/emergency communication has been assigned.
+- All roles are current football evidence, subject to medical status and further camp/preseason results; none completes a Caldwell-owned roster transaction.
 
 ## Player index (template retained for closed reconciliation)
 
@@ -441,27 +429,17 @@ Record only material, person-specific issues. Do not create a locker-room morale
 
 ## Depth chart, personnel packages, and special teams
 
-These are current football-use records, not permanent player rankings. Preserve both the nominal role and any temporary availability replacement. Document 3 alone supplies decision authority; this section records the resulting assignment and its authority-map reference.
-
 ### Base depth chart
 
-| Unit and position | Starter or first unit | Next available | Additional depth | Unavailable nominal player | Decision date and Document 3 cross-reference |
-|---|---|---|---|---|---|
-| `[UNIT / POSITION]` | `[PLAYER]` | `[PLAYER]` | `[PLAYERS]` | `[PLAYER OR NONE]` | `[DATE, AUTHORITY-MAP ROW OR DELEGATION]` |
+Current working hierarchy is recorded in `career/2013/offseason/training_camp/position_battles.md` and the dated decisions in `roster_decisions.md`. It is provisional through August 8 and must not be treated as the final 53-player chart.
 
 ### Personnel and situational packages
 
-| Package | Purpose and trigger | Eligible available players | Primary assignments | Communication owner | Last practiced | Last changed and Document 3 cross-reference |
-|---|---|---|---|---|---|---|
-| `[PACKAGE]` | `[USE]` | `[PLAYERS]` | `[ASSIGNMENTS]` | `[COACH OR PLAYER]` | `[DATE]` | `[DATE, AUTHORITY-MAP ROW OR DELEGATION]` |
+The Miami evaluation menu uses the dependable core only. Offensive roles are evidence-driven and have no preset shares. Crennel carries base defense, one trusted pressure and selected situations; the failed extra pressure is not carried. Stone calls offense and Crennel calls defense.
 
 ### Special-teams assignments
 
-| Unit | Primary players and roles | Alternates | Availability issue | Operating coach | Last changed and Document 3 cross-reference |
-|---|---|---|---|---|---|
-| `[UNIT]` | `[PLAYERS AND ROLES]` | `[PLAYERS]` | `[DETAIL OR NONE]` | `[COACH]` | `[DATE, AUTHORITY-MAP ROW OR DELEGATION]` |
-
-A player named in a planned package may remain as a nominal reference while unavailable only if a current replacement is explicit. A player actually used in a game must belong to an eligible primary roster status, carry the required game-day active, dressed, or equivalent designation under the locked rule, and not be medically unavailable. No depth, package, or special-teams assignment can override suspension, ineligibility, roster status, or medical clearance.
+Lowry has current primary, backup and emergency communication for all carried units. Trawick, Rambo and Thielen earned multi-unit exposure; Anderson earned coverage exposure. These are preseason opportunities rather than final jobs.
 
 ## Staff index
 
@@ -691,21 +669,18 @@ Use the project's canon authority order. Document 6 is the sole authoritative co
 | OTA block 1 participation, availability, football evidence and calendar checkpoint | 2013 season ledger, Entry 10 | May 15, 2013 | Smith unrestricted; Grimes withheld from team periods; no new injury; no permanent depth decision; next event May 20-21 | September 19, 2026; Canonical update - May 15, 2013 - OTA block 1 closed |
 | OTA block 2 participation, availability, football evidence and calendar checkpoint | 2013 season ledger, Entry 11 | May 21, 2013 | Grimes advanced to limited team work; provisional practice sequence and install changes recorded; no transaction or permanent depth decision; next event May 23 | September 19, 2026; Canonical update - May 21, 2013 - OTA block 2 closed |
 | May 23 OTA participation, availability, football evidence and calendar checkpoint | 2013 season ledger, Entry 12 | May 23, 2013 | Grimes remained medically limited; retained core and narrow Mesh survived correction; single defensive pressure retained; provisional practice responsibilities updated; no transaction or permanent depth decision; next event June 4-7 | September 19, 2026; Canonical update - May 23, 2013 - OTA Day 6 closed |
+| August 8 current role, availability and walkthrough checkpoint | 2013 season ledger, Entry 19 | August 8, 2013 | 64 controlled; all available for assigned work; provisional Miami roles; no transaction/cap change; game not started | September 19, 2026; Canonical update - August 8, 2013 - final Miami walkthrough closed |
 
 This table is generated from Document 6 and is only a navigation aid. Active unresolved conflicts remain in the reconciliation block and Document 5; resolved history, controlling authority, notification, and superseded values remain only in Document 6.
 
 ## End-of-update control block
 
-- Effective through: May 23, 2013, OTA Day 6 closed; June 4-7 OTA block 3 not begun.
-- Document 4 register version: `JAX-2013-MAY23-ADMIN-STATE-6`.
-- Last content-changing update / global package checkpoint: `Canonical update - May 23, 2013 - OTA Day 6 closed`.
-- Latest source event: season-ledger Entry 12.
-- Current controlled-player count: **64**.
-- Offseason roster legality: **64 / 90; 26 open places**.
-- League cap legality: planning-compliant under May 5 Top-51; current room **~$7.0M-$7.4M**.
-- Drafted rookies: seven signed May 2; corrected gross 2013 $7,269,102; net May 5 Top-51 $4,134,102.
-- UDFAs: four signed three-year minimum contracts; current Top-51 effect $0.
-- Depth/packages: OTA evidence remains provisional; Cousins leads the practice sequence, Henne narrowed the operational gap, and no permanent role, final-roster decision or QB1 award was made.
-- Medical: Smith and all players other than Grimes completed assigned May 23 work without a new restriction; Grimes remained medically limited to controlled work and excluded from extended/pressure periods; June 4 status requires ordinary communication.
-- Current Season State: must name this exact Document 4 version and Entry 12 checkpoint.
-- Next update: June 4 OTA opening or earlier transaction/medical event.
+- Effective through: August 8, 2013, final walkthrough closed.
+- Document 4 register version: `JAX-2013-AUG08-WALKTHROUGH-STATE-7`.
+- Last content-changing checkpoint: `Canonical update - August 8, 2013 - final Miami walkthrough closed`.
+- Latest source event: season-ledger Entry 19.
+- Current controlled-player count: **64**; offseason legality **64 / 90; 26 open places**.
+- Cap: unchanged May 5 Top-51 authority, **~$7.0M-$7.4M** planning room.
+- Depth/packages: provisional camp hierarchy and reduced Miami menu; no final roster or regular-season QB1 decision.
+- Medical: all 64 available for assigned August 8 work, subject to fresh game-day communication.
+- Next event: August 9 Preseason Game 1 vs Miami; **NOT STARTED**.

@@ -1,286 +1,111 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2013-MAY23-ADMIN-STATE-6`
-**Supersedes:** `JAX-2013-MAY23-OTA6-STATE-5`
-**Readiness:** May 23 OTA Day 6 is closed with roster control, participation, provisional football evidence and availability synchronized. The unchanged May 5 Top-51 worksheet remains the financial authority.
+**Version:** `JAX-2013-AUG08-WALKTHROUGH-STATE-7`
+**Supersedes:** `JAX-2013-MAY23-ADMIN-STATE-6`
+**Readiness:** August 8 final walkthrough is closed; Miami Preseason Game 1 has not started.
 **Must be read:** In full before every simulation response.
-**Simulation status:** Jacksonville has completed all prior closed events plus May 23 OTA Day 6. June 4-7 has not begun.
-**Snapshot effective:** May 23, 2013, after OTA Day 6 and before June 4 OTA work.
-**Last reconciled:** September 19, 2026; season-ledger Entry 13 administrative correction. Entry 12 remains the last football event.
-**Global package checkpoint:** `Canonical correction - May 23, 2013 - repository continuity and readiness reconciled`.
-**Preceding global package checkpoint:** `Canonical update - May 23, 2013 - OTA Day 6 closed`.
+**Simulation status:** Jacksonville has completed OTAs, mandatory minicamp, the protected break, camp reporting, opening camp, the August 3 stadium scrimmage and August 5-8 preparation.
+**Snapshot effective:** August 8, 2013, after the final walkthrough.
+**Last reconciled:** September 19, 2026; season-ledger Entry 19.
+**Global package checkpoint:** `Canonical update - August 8, 2013 - final Miami walkthrough closed`
+**Preceding global package checkpoint:** `Canonical update - August 3, 2013 - stadium scrimmage closed`
 
 ## Effective source-version manifest
 
 | Canonical document | Effective version | Current pointer |
 |---|---|---|
-| Document 1 | `358ccf4feac40830055bae5e4cbd84151536ab9e` | Entry 13 active-source reconciliation |
-| Document 2 | `8574a71d699779082247c3c3f40eb08700ed3a15` | Entry 13 active-source reconciliation |
-| Document 3 | `38e0ce21e9cf1b62f8d4b9c281955facdaf07b57` | Entry 13 active-source reconciliation |
-| Document 4 | `JAX-2013-MAY23-ADMIN-STATE-6`; administrative reconciliation closed by Entry 13 | 64-player control, May 23 participation/availability and provisional role evidence |
-| Document 6 | 2013 ledger through Entry 13 | Administrative reconciliation; Entry 12 remains May 23 football authority |
+| Document 1 | `358ccf4feac40830055bae5e4cbd84151536ab9e` | Active foundation source |
+| Document 2 | `8574a71d699779082247c3c3f40eb08700ed3a15` | Active foundation source |
+| Document 3 | `38e0ce21e9cf1b62f8d4b9c281955facdaf07b57` | Active foundation source |
+| Document 4 | `JAX-2013-AUG08-WALKTHROUGH-STATE-7`; closed by Entry 19 | 64-player control, Aug. 8 availability and provisional role evidence |
+| Document 6 | 2013 ledger through Entry 19 | August 8 final walkthrough closure |
 
 ## 1. Master clock and competition position
 
 | Field | Current canonical value |
 |---|---|
-| Master date/time | May 23, 2013, after OTA Day 6 close |
+| Master date/time | August 8, 2013, after final walkthrough |
 | Time zone | America/New_York |
 | League/season | NFL, 2013 |
 | Team | Jacksonville Jaguars |
 | Head coach | Alex Stone |
-| Season phase | Offseason; May 23 OTA Day 6 complete; June 4-7 OTA block 3 not begun |
-| Record | 0-0; regular season not begun |
-| Last football event | May 23 OTA Day 6 |
-| Last canonical update | Entry 13 repository continuity and readiness correction; no time advanced |
-| Next football event | **June 4-7 OTA block 3** |
-| Current football focus | Use the break lawfully; open June 4 with fresh medical communication and unprompted recall of the changed-front combination, narrow Mesh spacing, base defensive exchange and the single pressure presentation |
-| Current calendar | `career/2013/calendar.md` |
-| Historical calendar source | `library/2013_jacksonville_master_calendar.md` |
-
-## 2. Calendar control
-
-The controlling Jacksonville calendar is now built through the entire 2013 season and conditional postseason.
-
-### Completed / historical checkpoints
-
-| Date | Event | Branch status |
-|---|---|---|
-| Jan. 15 | Stone accepts Jacksonville job | Complete |
-| Late Jan. | Staff build | Complete |
-| Mar. 12 | League year / branch FA batch | Complete |
-| **Apr. 2** | Official offseason program begins | Historical date corrected; phase was not separately simulated |
-| Apr. 16-18 | Additional voluntary veteran minicamp | **Missed branch phase; do not retroactively simulate** |
-| Apr. 25-27 | NFL Draft | Complete |
-| May 2 | Seven drafted-rookie contracts executed | Complete |
-| May 3-5 | Rookie minicamp | Complete |
-| May 13-15 | OTA block 1 | Complete |
-| May 20-21 | OTA block 2 | Complete |
-| May 23 | OTA day | Complete |
-
-### Remaining offseason and preseason
-
-| Date/window | Event |
-|---|---|
-| **Jun. 4-7** | OTA block 3 |
-| **Jun. 11-13** | Mandatory veteran minicamp |
-| Jun. 14-Jul. 21 | Pre-camp individual preparation / no invented club practice |
-| **Jul. 22** | Rookies and quarterbacks report; acclimation/physical/conditioning preparation |
-| Jul. 23-24 | Rookie/QB preparation before full-team report |
-| **Jul. 25** | Full team / veterans report to training camp |
-| Jul. 26-Aug. 3 | Published opening full-team training-camp practice sequence and Aug. 3 stadium scrimmage |
-| Aug. 5-8 | Verified post-scrimmage camp practice/walkthrough sequence |
-| **Aug. 9, 7:30 p.m.** | Preseason 1 vs Miami |
-| Aug. 12-14 | Verified training-camp practices |
-| **Aug. 15** | Walkthrough; 2013 training camp concludes |
-| **Aug. 17, 7:30 p.m.** | Preseason 2 at New York Jets |
-| **Aug. 24, 7:30 p.m.** | Preseason 3 vs Philadelphia |
-| **Aug. 27, 4:00 p.m.** | Reduce roster to 75 maximum |
-| **Aug. 29, 7:30 p.m.** | Preseason 4 at Atlanta |
-| **Aug. 31, 6:00 p.m.** | Reduce Active/Inactive list to 53 |
-| **Sep. 1, noon** | Waiver-claim window closes; eight-player practice squads may begin |
-| **Sep. 4** | Regular-season cap compliance; offseason Top-51 treatment ends |
-
-### Regular season
-
-| Week | Date/time | Jacksonville game |
-|---:|---|---|
-| 1 | Sep. 8, 1:00 p.m. | vs Kansas City |
-| 2 | Sep. 15, 4:25 p.m. | at Oakland |
-| 3 | Sep. 22, 4:25 p.m. | at Seattle |
-| 4 | Sep. 29, 1:00 p.m. | vs Indianapolis |
-| 5 | Oct. 6, 1:00 p.m. | at St. Louis |
-| 6 | Oct. 13, 4:05 p.m. | at Denver |
-| 7 | Oct. 20, 1:00 p.m. | vs San Diego |
-| 8 | Oct. 27, 1:00 p.m. ET | vs San Francisco, Wembley Stadium |
-| 9 | Nov. 3 | BYE |
-| 10 | Nov. 10, 1:00 p.m. | at Tennessee |
-| 11 | Nov. 17, 1:00 p.m. | vs Arizona |
-| 12 | Nov. 24, 1:00 p.m. | at Houston |
-| 13 | Dec. 1, 1:00 p.m. | at Cleveland |
-| 14 | Dec. 5, 8:25 p.m. | vs Houston |
-| 15 | Dec. 15, 1:00 p.m. | vs Buffalo |
-| 16 | Dec. 22, 1:00 p.m. | vs Tennessee |
-| 17 | Dec. 29, 1:00 p.m. | at Indianapolis |
-
-**Trade deadline:** Oct. 29, 4:00 p.m. ET.
-
-Conditional postseason dates are Jan. 4-5, Jan. 11-12, Jan. 19 and Feb. 2, 2014. Jacksonville reaches them only if branch results qualify the club.
-
-Historical schedule dates/opponents are rails only. No real 2013 Jaguars score or outcome is imported.
-
-## 3. Current roster control
-
-Authoritative current player detail: `state/04_Roster_and_Staff_Register.md`.
-Readable roster: `career/2013/roster.md`.
-
-| Reconciliation step | Count |
-|---|---:|
-| Correct Jan. 15 inherited control | 67 |
-| March 12 free agents not retained | -15 |
-| Branch releases | -4 |
-| Branch outside FA additions | +4 |
-| Post-FA controlled roster | **52** |
-| Cousins acquisition | +1 |
-| Gabbert-for-C.J. Wilson | 0 net |
-| Pre-draft controlled roster | **53** |
-| Seven draftees | +7 |
-| Four UDFAs | +4 |
-| **Current May 5 controlled roster** | **64** |
-| Offseason maximum | 90 |
-| **Open offseason places** | **26** |
-
-The old 75-player working count and the old inherited-control uncertainty bucket are superseded.
-
-### Contract/right corrections
-
-Four pre-divergence December 30 reserve/future contracts are included in inherited control:
-John Parker Wilson, Ryan Davis, Brandon King and Will Ta'ufo'ou.
-
-Fifteen old 2012 roster names are no longer Jacksonville-controlled because their prior rights/contracts expired March 12 and this branch did not tender or re-sign them:
-Kyle Bosworth, Eben Britton, John Chick, Derek Cox, Greg Jones, Terrance Knighton, Rashean Mathis, Antwaun Molden, Jordan Palmer, Jalen Parmele, Zach Potter, George Selvie, Jordan Shipley, Keith Toston and Steve Vallos.
-
-No later real destination is imported.
-
-## 4. Current contracts and cap
-
-### Branch veteran agreements
-
-The six March agreements remain:
-
-- Sen'Derrick Marks: 1 year, $1.50M.
-- Alan Ball: 1 year, $1.00M.
-- Brad Meester: 1 year, $1.50M.
-- Roy Miller: 2 years, $5.00M.
-- Daryl Smith: 2 years, $6.00M.
-- Brent Grimes: 1 year, $5.50M fully guaranteed.
-
-Gross scheduled 2013 cap for those six: **$13.75M**.
-
-### Drafted rookies
-
-All seven signed May 2.
-
-| Player | Pick | 2013 cap |
-|---|---:|---:|
-| Lane Johnson | #2 | $3,854,836 |
-| Travis Kelce | #33 | $994,382 |
-| Jordan Poyer | #64 | $572,794 |
-| Sio Moore | #98 | $529,257 |
-| Lavar Edwards | #135 | $458,403 |
-| Bacarri Rambo | #169 | $437,205 |
-| Tyler Bray | #208 | $422,225 |
-| **Gross** | | **$7,269,102** |
-
-Net May 5 drafted-rookie Top-51 effect: **$4,134,102**.
-
-### UDFAs
-
-Brynden Trawick, A.J. Bouye, Adam Thielen and C.J. Anderson each have a three-year minimum contract:
-
-- 2013: $405,000;
-- 2014: $495,000;
-- 2015: $585,000;
-- signing bonus: $0;
-- additional guarantee: $0.
-
-Current Top-51 effect: **$0**.
-
-### Current room
-
-The current transaction-aware worksheet includes:
-
-- final 2013 league cap normalization;
-- March free-agent contracts and Top-51 displacement;
-- four branch releases;
-- Cousins;
-- Gabbert bonus acceleration;
-- C.J. Wilson;
-- all seven drafted contracts;
-- four UDFA contracts.
-
-**May 5 Top-51 planning room: approximately $7.0M-$7.4M.**
-
-The old `~$8.35M` figure is stale and must not be used as current room.
-
-The range is the correct precision. Do not invent an exact dollar where the historical starting club-room source and Aaron Ross branch timing do not support it.
-
-Recalculate on any transaction and at the August 27, August 31 and September 4 accounting checkpoints.
-
-## 5. Staff and authority
-
-Current staff register: `career/2013/coaching_staff.md`.
-
-| Function | Current owner |
-|---|---|
-| Head coach / team football authority | Alex Stone |
-| Offensive coordinator | Mike Tice |
-| Offensive play caller | Alex Stone |
+| Offensive caller | Alex Stone |
 | Defensive coordinator / caller | Romeo Crennel |
-| Special teams coordinator | Alan Lowry |
-| Personnel / contracts / cap / draft | David Caldwell, with Stone consultation as established in Document 3 |
-| Depth chart / football roles | Stone within eligibility and medical limits |
-| Medical diagnosis and clearance | Qualified medical personnel |
+| Special-teams coordinator | Alan Lowry |
+| Season phase | Training camp / preseason preparation; final walkthrough complete |
+| Record | 0-0; no preseason or regular-season game completed |
+| Last football event | August 8 final walkthrough |
+| Next event | **August 9 Preseason Game 1 vs Miami, 7:30 p.m.; NOT STARTED** |
+| Historical continuity | April 16-18 voluntary minicamp remains a preserved gap; it was not backfilled |
 
-No staff authority or contract changed in Entry 12.
+## 2. Current roster, finance and authority
 
-## 6. Football development state
-
-- Every controlled player has the established standards material and complete active 2013 Iteration I playbook; OTA evaluation remains limited to taught and assigned work.
-- The offense retained huddle/cadence/formation operation, Power, Inside Zone, Stick, Drive, base protection communication, limited purposeful motion and the narrow Mesh version after its spacing was re-taught. Broader Mesh, Y-Cross, Counter, Outside Zone, broader protection/motion work and PRESS remain uninstalled.
-- Cousins remains first in the provisional practice sequence on cumulative operation evidence. Henne's clean comparable May 23 work narrowed the gap and earned immediate harder work behind Cousins on June 4. Wilson remains in the rotation. Bray stays concentrated on core cadence/footwork/progression timing after another late changed-distribution progression. No QB1 was named.
-- Meester stabilized the line's correction cycle; Johnson retained his assignment through harder presentation; Shorts and Anderson retained taught jobs. The interior changed-front combination improved after a repeat but remains a June 4 opening test. Kelce's fit traveled farther across alignment change but remains open after a later technique loss.
-- Base defense and exactly one pressure presentation survived recall without broader disguise expansion. Posluszny's unit needed less rescue. Moore's changed-distribution handoff, Poyer's leverage/exchange and Rambo's defensive exchange held on May 23.
-- Trawick earned first June 4 exposure to another already-taught cross-unit sequence. Thielen retains provisional cross-unit exposure after one corrected communication rep. Rambo's substitution language remained clean.
-- No permanent depth chart, starting role, workload/target share, package place, final special-teams assignment or roster outcome was awarded.
-- The full-team OTA family dinner occurred May 15 under voluntary, private and non-evaluative rules; no second dinner was invented for this block.
-
-## 7. Medical / availability boundary after May 23 OTA Day 6
-
-- Qualified staff cleared Daryl Smith and every controlled player other than Grimes for assigned May 23 work; each completed it without a newly communicated restriction.
-- Grimes completed medically controlled meetings, rehabilitation/individual work and selected group/base team repetitions. He remained excluded from extended team and pressure-recall work and completed the assignment without a communicated setback. No new diagnosis, unrestricted clearance or return date was supplied.
-- All clearance remains event-bounded. Fresh ordinary medical communication precedes June 4 work, and no coach may override it.
-
-## 8. Controlling decisions
-
-| Decision/event | Current effect |
+| Field | Current value |
 |---|---|
-| Stone accepts Jacksonville offer | Head coach / authority unchanged |
-| Staff hired | Current operating staff continues |
-| March FA batch | Six agreements, two declines, four releases |
-| Cousins acquisition | Cousins controlled; 2014 second belongs to Washington |
-| Gabbert/Wilson trade | Gabbert out, C.J. Wilson in |
-| Seven-pick 2013 draft | All seven selected players signed May 2 |
-| Four UDFAs | All four under three-year minimum contracts |
-| May 3-5 rookie minicamp | Event results preserved; no depth job awarded |
-| Entry 9 correction | Calendar, roster control, rookie contracts and May 5 cap state corrected without rerunning football |
-| May 13-15 OTA block 1 | Participation/availability and provisional football evidence closed; no transaction, permanent depth decision or cap change |
-| May 20-21 OTA block 2 | Retention/transfer block closed; Grimes advanced to limited team work; provisional practice sequence/install changes recorded; no transaction or permanent depth decision |
-| May 23 OTA Day 6 | Retained core and narrow Mesh survived correction; one defensive pressure survived recall; Grimes remained medically limited; provisional June 4 responsibilities recorded; no transaction or permanent depth decision |
+| **Current Jacksonville controlled roster** | **64** |
+| Offseason maximum / open places | 90 / 26 |
+| Transaction change since May 5 | None |
+| Financial authority | May 5 Top-51 worksheet; approximately **$7.0M-$7.4M** planning room |
+| Personnel/contracts/cap | David Caldwell |
+| Football roles | Stone within eligibility and medical limits |
+| Medical diagnosis/restriction/clearance | Qualified medical personnel |
 
-## 9. Live-game checkpoint
+No signing, release, trade, waiver or contract amendment occurred in the progressed span, so the cap worksheet was not rewritten merely to make it newer.
+
+## 3. Current availability
+
+Qualified medical personnel made all 64 controlled players available for assigned August 8 work. Grimes received full football clearance at July 25 report with ordinary workload monitoring and no football restriction; he completed the progression without a communicated setback. No current player has a communicated football restriction. Every status remains event-bounded and requires fresh game-day medical communication.
+
+## 4. Current depth and role picture
+
+- **Quarterback:** Cousins holds the provisional first practice/Miami exposure place; Henne follows with meaningful work and remains competitive; Wilson is next; Bray may receive a later reduced-core segment. This is not a permanent regular-season QB1 declaration and carries no promised snap percentage.
+- **Offensive line:** Johnson is provisional first at right tackle over Bradfield. Rackley is provisional first at right guard, with Pasztor the immediate challenger. Meester stabilizes center communication; remaining interior work stays competitive.
+- **Backs/receivers/tight ends:** Jones-Drew leads the backs; Anderson earned later protection and teams evaluation. Shorts and Blackmon lead receiver work; Thielen earned meaningful later receiver/teams exposure. Lewis leads tight ends; Kelce has a bounded movement/route and teams evaluation while inline consistency remains open.
+- **Defensive front/linebacker:** Miller/Marks lead the interior working rotation; Babin leads edge work. Posluszny/Smith lead linebacker operation; Moore receives selected first-group/sub-package and teams work.
+- **Secondary:** Grimes/Ball lead outside-corner work; Poyer holds nickel/outside evaluation; Harris follows. Lowery/Rambo take first safety work with Prosinski in immediate rotation.
+- **Special teams:** Lowry has primary, backup and emergency communication assigned. Trawick, Rambo and Thielen earned broad multi-unit opportunity; Anderson earned coverage-unit work.
+
+Every listed role is provisional camp/preseason evidence, not a final roster guarantee or Caldwell-owned transaction.
+
+## 5. Current executable football
+
+### Offense
+
+Stone will call a reduced Miami evaluation menu: Power, Inside Zone, simple Counter, Stick, Drive, narrow Mesh, selected Boot Flood, a small screen/change-up element, base protection answers and NORMAL/ROTATE operation. Y-Cross is an evaluation call rather than a foundation. Outside Zone, broad Mesh, PRESS and unnecessary formation volume are not carried for this opener.
+
+### Defense
+
+Crennel will call sound base fronts/coverages, the single trusted pressure and selected third-down/red-zone adjustments with a small presentation change. The failed second pressure was removed. Communication governs expansion.
+
+### Special teams
+
+Lowry's core units, specialist operation, substitutions and emergency replacements were walked through. Backup communication was re-tested after the scrimmage correction.
+
+## 6. Teaching, standards and program state
+
+Stone's standard remains: know the job; communicate it; execute technique; play with effort; accept and retain correction; understand the situation; help the unit operate; prepare like the responsibility matters. Camp intensity rose through recognition, picture difficulty, lawful physical work, situation and football consequence without removing recovery or overriding medicine.
+
+Individualized support is now durable method: Bates/Skalaski used short quarterback cutups and teaching sheets; Yarno, Zernhelt, Drake and Crennel's defensive staff used targeted position/video support for exact corrections and re-tested them. The supplement did not replace complete active Iteration I access or import future concepts.
+
+The Veteran Minicamp Family Dinner, Camp Opening Family Dinner and Mid-Camp Family Night/Dinner occurred under voluntary, private, non-evaluative rules. July 30 remained a true players' day off; the protected pre-camp interval and camp recovery/decompression windows created no hidden football grade.
+
+## 7. Current Miami evaluation plan
+
+- Cousins opens; Henne follows meaningfully; Wilson is prepared next; Bray is limited to demonstrated core work if conditions permit.
+- Evaluate offensive operation, right-side line communication/physical transfer, Anderson's protection/teams work, Kelce's bounded role and Thielen's receiver/teams portability.
+- Evaluate Moore's fit/pressure discipline, Poyer's nickel/outside communication, Rambo's safety/teams operation and all emergency substitutions.
+- Stone calls offense, Crennel calls defense and Lowry controls special teams.
+- No outcome, game statistic, injury, active list or performance has been pre-written.
+
+## 8. Live-game checkpoint
 
 **Game underway:** No.
+**Miami output status:** NOT STARTED.
+**Game execution readiness:** Repository game-engine readiness remains separately gated. This camp progression does not authorize or simulate kickoff.
 
-**Game execution readiness:** [BLOCKED pending the verified prerequisites](game_readiness.md). This does not change the existing next OTA step.
+There is no score, possession, game clock, timeout, challenge or game statistic to resume.
 
-There is no score, possession, game clock, timeout, challenge, game-day active list or cumulative 2013 game statistic to resume.
+## 9. Immediate next step
 
-## 10. Immediate next step
-
-The simulation is positioned to enter the **June 4-7 OTA block 3** after the lawful break and fresh ordinary medical communication. June 4 has not been run.
-
-No roster-control or cap-accounting uncertainty blocks the next OTA block.
-
-## 11. Snapshot replacement rule
-
-After any state-advancing transaction, medical event, OTA/camp event, roster decision or game:
-
-1. write the event/result to its owning career file and season ledger;
-2. update roster/control/cap/availability records affected by it;
-3. recalculate Document 4;
-4. replace this snapshot;
-5. reconcile calendar and deadlines;
-6. keep plan files durable rather than appending results to them;
-7. run a contradiction scan before closing the new global checkpoint.
+The next event is **August 9, 2013 Preseason Game 1 vs Miami**. This snapshot stops after all August 8 football work and staff review.
