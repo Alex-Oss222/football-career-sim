@@ -285,6 +285,24 @@ These fifteen departures are rights expirations, not new releases. No later real
 - Jacksonville's 2014 second-round selection belongs to Washington.
 - No current contract guarantees a depth-chart position, rep share, target share, package share or final roster place.
 
+## Material current player records
+
+### Daryl Smith (`JAX-DARYLSMITH`)
+
+- Current status: Jacksonville-controlled; branch re-signing, two years / $6.0M.
+- Contract source: March branch free-agency record.
+- Medical boundary: the club's signing review was satisfactory for executing the contract, but that review is **not** current OTA participation clearance.
+- Football role: no starting job or rep share is guaranteed by the contract.
+- Next update: qualified medical communication before May 13 participation, plus ordinary football evaluation.
+
+### Brent Grimes (`JAX-BRENTGRIMES`)
+
+- Current status: Jacksonville-controlled; branch signing, one year / $5.5M fully guaranteed.
+- Contract source: March branch free-agency record.
+- Medical boundary: Achilles recovery uncertainty remains; the contract review is not a permanent practice clearance.
+- Football role: no starting job or rep share is guaranteed by the contract.
+- Next update: qualified medical communication before May 13 participation, plus ordinary football evaluation.
+
 ## Player index (template retained for closed reconciliation)
 
 Maintain one row per player under team control. Do not create duplicate records for a position change, list move, name variant, or jersey change. Availability here is a derived display: it must match the player's individual current-state record and the same latest closed Document 6 medical or availability event.
@@ -658,7 +676,7 @@ Use the project's canon authority order. Document 6 is the sole authoritative co
 
 | Affected current field | Document 6 correction or supersession label | Effective date | Current corrected value | Last reconciled |
 |---|---|---|---|---|
-| Current roster, contracts, batch accounting and staff-status summary | 2013 season ledger, Entry 3 | March 12, 2013, 4:00 p.m. ET (batch) | Completed FA outcomes applied; inherited control and cap gaps explicit | September 19, 2026 documentation reconciliation; Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency |
+| Current roster control, rookie contracts, Top-51 cap state and calendar checkpoint | 2013 season ledger, Entry 9 | May 5, 2013 | 64 controlled players; corrected rookie contracts; ~$7.0M-$7.4M Top-51 room; next event May 13-15 OTAs | September 19, 2026; Canonical correction - May 5, 2013 - roster/cap/calendar reconciled |
 
 This table is generated from Document 6 and is only a navigation aid. Active unresolved conflicts remain in the reconciliation block and Document 5; resolved history, controlling authority, notification, and superseded values remain only in Document 6.
 
