@@ -308,3 +308,9 @@ Use the identity **change in room = change in adjusted cap minus change in total
 - If affordability depends on unresolved charges, unverified savings or complicated guarantees/dead money, reconcile those specific inputs before execution. No numerical uncertainty band has been established; do not invent one.
 
 This keeps the simulation financially disciplined without pretending an NFL club becomes incapable of acting until every historical accounting line has been reconstructed.
+
+## April 27, 2013 running-room update
+
+The pre-draft quarterback market check and the April 25-27 draft produced **no completed trade**, so they create no veteran contract, dead-money, or draft-capital accounting change. Jacksonville retained Gabbert and Henne and did not acquire Cousins. The approximately **$8.35M** post-free-agency planning-room figure therefore remains the current gross planning reference before the unresolved baseline, Top-51, and release adjustments already identified in this sheet.
+
+Jacksonville selected Lane Johnson, Travis Kelce, Jordan Poyer, Sio Moore, Lavar Edwards, Bacarri Rambo, and Tyler Bray. As of the close of this record, they are unsigned draft-rights additions. No rookie base salary, signing bonus, guarantee, cap charge, or Top-51 displacement is booked because no executed rookie contract terms are yet in canon. The club must reserve room to sign the class, but this repository does not contain a verified Jacksonville rookie-pool allocation; no precise reserve is invented. Recompute the running room as each rookie agreement executes.

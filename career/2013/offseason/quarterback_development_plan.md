@@ -152,3 +152,15 @@ The December review should distinguish a supportable continuing starter investme
 This file adapts the user's supplied development pack as a coaching proposal. Stray transcription words are omitted; the damaged opening sentence is not reconstructed as a new player diagnosis. The clean later progression section supplies the first-read teaching idea.
 
 Mechanical benefits, progression through stages and future playing quality remain to be demonstrated. Historical facts, private medical findings, completed practices and fictional staff endorsements are not created by this plan. The existing Prowl documents control CBA, medical and practice implementation.
+
+## 11. Pre-draft personnel update (March 12-April 24 window)
+
+Caldwell completed the authorized market check. Washington would discuss Kirk Cousins only if a current Day 2 selection led the return; it rejected Jacksonville's two authorized structures, and Caldwell would not add #33 or #64. No permission to contact Cousins was granted. The Cousins-specific teaching plan therefore remains inactive.
+
+Green Bay, Atlanta, Cincinnati, and Chicago produced no acceptable Gabbert offer. Green Bay's conditional 2014 seventh for Henne was below the authorized range; the other calls produced no present Henne bid. Jacksonville will carry Gabbert and Henne through the draft and continue applying the common evaluation standards in this plan. This result awards neither player a role or a rep guarantee, and it does not convert an unsuccessful Cousins inquiry into a reason to force a rookie selection.
+
+## 12. April 27 draft update
+
+Caldwell selected Tyler Bray at #208 after the premium rounds passed without a quarterback investment. This is a developmental acquisition, not the franchise-level move contemplated by the Cousins proposal and not a declaration that Bray has displaced Gabbert or Henne. Stone was consulted on the football use: Bates will establish Bray's baseline for feet, decisions, pressure response, and functional command under the same evidence rules already written here.
+
+The room now contains Gabbert and Henne plus Jacksonville's unsigned rights to Bray; Cousins-specific work remains inactive. Rep allocation, contract execution, medical clearance, and any later roster reduction remain unresolved. Bray's pre-draft arm-strength case earns an evaluation opportunity only; it does not erase the documented questions about footwork, decision-making, or consistency.
