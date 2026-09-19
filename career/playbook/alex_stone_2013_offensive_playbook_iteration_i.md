@@ -7,6 +7,8 @@
 
 This is the first canonical version of Stone's offense. It is built to stand on its own in 2013. Later iterations may add, remove, rename, or reshape material, but this book does not assume knowledge of those future changes.
 
+**Player-copy rule:** every Jacksonville player receives the complete active 2013 Iteration I playbook. This is a football playbook for human players and coaches, not a software unlock tree. A player may read, study, take notes on, and ask about any page in the active book at any time after it is issued. The staff's install schedule controls what the team has formally taught, walked through, practiced, and is prepared to call together; it does **not** restrict which pages a player is allowed to see. Players are evaluated on work actually taught and assigned to them, not punished for failing to master material that has not been installed.
+
 ## Document Control
 
 | **Item**             | **2013 Rule**                                                                                                                                                                  |
@@ -15,7 +17,7 @@ This is the first canonical version of Stone's offense. It is built to stand on 
 | Play-caller          | Stone is the primary game-day play-caller. The call sheet is built around sequencing, not isolated "best plays."                                                               |
 | Quarterback model    | Pocket-oriented, semi-mobile. Movement throws, pocket escape, and selective keepers are part of the offense; designed QB running is a change-up, not the foundation.           |
 | Primary identity     | Concept-based passing, formation and personnel multiplicity, vertical aggression, physical downhill run game, controlled access throws, extensive but purposeful substitution. |
-| Non-negotiable field | Every concept carries an Expected Yardage profile. It is a planning band, not a promise.                                                                                       |
+| Non-negotiable field | Every concept carries a clear football purpose, assignment structure, and situational use. No preset percentage, snap share, or computer-generated usage quota controls the call. |
 | Historical boundary  | The 2013 book may be ahead of the league, but it does not contain later-era answers merely because they will eventually become popular.                                        |
 
 ## Table of Contents
@@ -180,17 +182,17 @@ Route depth can move a yard or two for field position, hash, and defensive lever
 
 The 2013 offense is deliberately more personnel-diverse than a typical one-grouping offense, but it does not substitute merely to look clever. Each grouping must carry enough of the core menu that the defense cannot identify the call from the package.
 
-The percentages below are planning centers, not quotas. A weekly plan may move substantially when the opponent, injuries, or available skill sets demand it.
+There is no preset personnel percentage. The roster, opponent, health, game state, and what the team has actually executed in practice and games determine how often a grouping appears. The table defines each grouping's football purpose, not a snap allocation.
 
-| **Personnel**         | **Typical Planning Center** | **Primary Function**                                                            | **Must Be Able To**                                                              |
-|-----------------------|-----------------------------|---------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| 11 (1 RB, 1 TE, 3 WR) | 40%                         | Base multiplicity. Best balance of space, run numbers, and concept portability. | Run Power/Inside/Outside; execute full quick and dropback menu; motion to empty. |
-| 12 (1 RB, 2 TE, 2 WR) | 22%                         | Force base personnel or create TE mismatches.                                   | Run downhill; spread into 2x2/3x1; carry Cross, Sail, Mesh, shots, screens.      |
-| 21 (2 RB, 1 TE, 2 WR) | 13%                         | Under-center physical game, split-flow, lead and play-action.                   | Run Power/Counter/Lead/Outside; motion FB/H; throw from Pro and empty-out looks. |
-| 20 (2 RB, 0 TE, 3 WR) | 7%                          | Two-runner space package.                                                       | Run Inside/Power/Draw; flex one back; screen and angle game; motion to empty.    |
-| 10 (1 RB, 0 TE, 4 WR) | 8%                          | Space, two-minute, pressure identification.                                     | Quick game, Mesh/Drive/Vert, Draw, limited Inside, screens.                      |
-| 13 (1 RB, 3 TE, 1 WR) | 6%                          | Heavy without surrendering pass threat.                                         | Power/Counter/Duo, boot, Cross, Sail, TE leak, max-protect shot.                 |
-| 22 (2 RB, 2 TE, 1 WR) | 4%                          | Short yardage, goal line, four-minute; occasional tendency breaker.             | Lead/Power/Counter, play-action flat/cross, boot, selected shot.                 |
+| **Personnel**         | **Football Role**                                           | **Must Be Able To**                                                              |
+|-----------------------|-------------------------------------------------------------|----------------------------------------------------------------------------------|
+| 11 (1 RB, 1 TE, 3 WR) | Base multiplicity: space, run numbers, concept portability. | Run Power/Inside/Outside; execute full quick and dropback menu; motion to empty. |
+| 12 (1 RB, 2 TE, 2 WR) | Multiple-TE structure that can play heavy or spread.        | Run downhill; spread into 2x2/3x1; carry Cross, Sail, Mesh, shots, screens.      |
+| 21 (2 RB, 1 TE, 2 WR) | Under-center physical game, split-flow, lead and play-action.| Run Power/Counter/Lead/Outside; motion FB/H; throw from Pro and empty-out looks. |
+| 20 (2 RB, 0 TE, 3 WR) | Two-runner space and matchup package.                       | Run Inside/Power/Draw; flex one back; screen and angle game; motion to empty.    |
+| 10 (1 RB, 0 TE, 4 WR) | Space, two-minute, and pressure-identification structure.   | Quick game, Mesh/Drive/Vert, Draw, limited Inside, screens.                      |
+| 13 (1 RB, 3 TE, 1 WR) | Heavy surface without surrendering pass threat.             | Power/Counter/Duo, boot, Cross, Sail, TE leak, max-protect shot.                 |
+| 22 (2 RB, 2 TE, 1 WR) | Short yardage, goal line, four-minute, tendency breaker.    | Lead/Power/Counter, play-action flat/cross, boot, selected shot.                 |
 
 ## 3.1 Running Back Room Rule
 
@@ -1667,7 +1669,7 @@ The first installation teaches the language in layers. Do not install the format
 | Install 7   | All core families      | Trap/Wham change-ups     | Texas, Levels                | Review               | Access packages                              |
 | Install 8   | Situational formations | Goal-line / sneak        | Red-zone menu                | Situation-specific   | Two-minute / four-minute                     |
 | Install 9   | Portability day        | Same runs, new personnel | Same concepts, new personnel | Protection checks    | ROTATE/HOLD/PRESS                            |
-| Install 10  | Game simulation        | Call-sheet menu only     | Call-sheet menu only         | Full operation       | Opening script + halftime adjustment process |
+| Install 10  | Game-operation rehearsal | Call-sheet menu only     | Call-sheet menu only         | Full operation       | Opening script + halftime adjustment process |
 
 ## 19.1 Mastery Test
 
@@ -1788,7 +1790,7 @@ This is an example of how the large playbook is reduced for one game. It is deli
 
 **Access:** Inside + Bubble, Power + Smoke. Zone + Slant inactive.
 
-**Personnel emphasis:** 11 and 12 base; 21 for first/second down and four-minute; 20 for six to ten snaps; 6OL active with five-call menu.
+**Personnel emphasis:** 11 and 12 are the opening base structures; 21 is available for physical and four-minute work; 20 is a matchup package used when its players and the defensive response justify it; 6OL is active with a five-call menu. Actual usage follows the game, not a preset snap target.
 
 **PRESS menu:** Inside, Draw, Stick, Spacing, Mesh, Drive, Vert, Smoke, RB Screen, one shot alert.
 
@@ -1812,7 +1814,7 @@ A sequence might read: `S Ace Power -> A Counter -> ! Power Pass`, with a separa
 
 # APPENDIX A. EXPECTED YARDAGE INDEX
 
-Expected Yardage is a simulation and planning field. It expresses the normal result band when the concept is executed cleanly against the type of look it is intended to attack. It is not a statistical forecast for every snap.
+Expected Yardage is a coaching planning note. It describes the type of gain a concept is designed to create when the assignment is executed against a favorable look. It is not a computer output, a player grade, a promised result, or a rule for deciding whether the call succeeds. Actual practice and game execution determine the result.
 
 | **Concept**        | **Class**   | **Expected Yardage** |
 |--------------------|-------------|----------------------|
@@ -1989,26 +1991,27 @@ A change-up that does not get practiced does not get called merely because it ap
 
 ## E.4 Why There Are No Play Numbers 1-735
 
-The offense is not improved by assigning a new number to Mesh from Bunch, Mesh from Trips, Mesh from 12, and Mesh from 21. Those are presentations of one family. Numbering every presentation encourages players and the simulator to treat window dressing as a new play, which defeats the Erhardt-Perkins concept foundation.
+The offense is not improved by assigning a new number to Mesh from Bunch, Mesh from Trips, Mesh from 12, and Mesh from 21. Those are presentations of one family. Numbering every presentation encourages players and coaches to treat window dressing as a new play, which defeats the Erhardt-Perkins concept foundation.
 
-The simulation should generate legal presentations from:
+The staff can build legal presentations from:
 
-**Personnel x Formation x Motion/Shift x Concept x Tag x Protection**, subject to the compatibility matrices and weekly active menu.
+**Personnel x Formation x Motion/Shift x Concept x Tag x Protection**, subject to the compatibility matrices and the week's practiced call menu.
 
 That gives the offense genuine multiplicity while keeping the human teaching load realistic.
 
-## E.5 Simulation Rules
+## E.5 Coaching and Game-Day Rules
 
-1. Do not select concepts marked inactive in the weekly plan unless a game-state emergency expands the menu.
-2. Do not generate a personnel presentation that the compatibility matrix marks - without an explicit roster-specific package.
-3. Use expected yardage as a planning distribution band, not guaranteed output.
-4. Player ability modifies the result and may remove a presentation entirely.
-5. Formation and motion can alter defensive response without changing the concept identity.
-6. Repeated success increases the chance Stone calls the same simple family again; the AI should not force novelty for novelty's sake.
+1. The entire active playbook remains available for study, but Stone calls from what the team has actually prepared unless a game-state emergency requires a simple expansion.
+2. Do not use a personnel presentation that the compatibility matrix marks incompatible without an explicit roster-specific package.
+3. Expected-yardage bands are coaching notes only. They never determine the result of a snap.
+4. Player ability, health, execution, matchup, and demonstrated practice/game performance determine whether a presentation is useful.
+5. Formation and motion can alter the defensive response without changing the concept identity.
+6. Repeated success is a reason to return to the same simple family. The offense does not chase novelty for its own sake.
 7. Stone may abandon a planned shot if its trigger never appears.
 8. Rotation changes playing time, not automatically touch share.
-9. A hot player can override the planned rotation.
+9. A hot player can override a planned rotation.
 10. If the offense substitutes, the defense receives its normal opportunity to match; HOLD/PRESS is the mechanism for exploiting the resulting matchup without another offensive substitution.
+11. No personnel percentage, preset snap share, touch quota, or depth-chart probability decides who plays. Camps, practices, preseason, games, health, matchup, and coaching judgment establish the real roles.
 
 # STONE 2013 OFFENSE: ONE-PAGE CARD
 
