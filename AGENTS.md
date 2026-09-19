@@ -34,6 +34,14 @@ Any task that **completes an event, advances the career clock, changes roster/co
 
 A progression commit is incomplete if its event file says one thing while a dependent current-state file still says another.
 
+### Offensive playbook: active-iteration lock
+
+`career/playbook/` holds Stone's authored, team-neutral offensive system across the whole career, in dated iterations — see `career/playbook/README.md` for the full index and effective-season table.
+
+- **Read only the iteration whose effective-season range (its own frontmatter) covers the current in-sim year**, per `state/05_Current_Season_State.md`'s master clock. Never open, quote, or draw a concept, personnel grouping, protection name, or term from an iteration whose range starts after the current in-sim year — that book is offense Stone has not developed yet inside the story. This is the no-hindsight rule (Document 2 §12) applied to the user's own pre-written future material, not just real-world fact.
+- A past, superseded iteration may be read for lineage (an iteration's `inheritance_rule`/`baseline` field legitimately points back to an earlier one), but only the currently active iteration is live for teaching, install work, scouting, or play-calling.
+- A concept existing in the active book does not make it installed. Installation is still gated by the real CBA offseason-program calendar in `career/[year]/offseason/the_prowl_player_readiness_standard.md` — individual work, then OTAs, then mandatory minicamp, then training camp, each unlocking more of the book only on its actual permitted date.
+
 ---
 
 ## Task: "Simulate background league, Week [N], [Year]."
