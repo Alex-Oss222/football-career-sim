@@ -233,3 +233,151 @@ Jacksonville ran the durable rookie-minicamp plan May 3-5. Teaching stayed narro
 All eleven rookie participants remain in open competition. The working inventory remains 75: draft-rights status converted to signed-contract status for seven players, with no player added or removed. No depth chart or role hierarchy was fixed. Rookie minicamp closed May 5; OTAs have not begun. The next verified football date is May 13.
 
 **Commit closed — Canonical update - May 5, 2013 - rookie minicamp closed — canonical through rookie minicamp, before OTAs**
+
+## Entry 9 — May 5 roster, contract, cap and calendar correction
+
+**Effective checkpoint:** May 5, 2013, after rookie minicamp and before OTAs.  
+**Correction recorded:** September 19, 2026.  
+**Target global package checkpoint:** `Canonical correction - May 5, 2013 - roster/cap/calendar reconciled`.  
+**Preceding global package checkpoint:** `Canonical update - May 5, 2013 - rookie minicamp closed`.  
+**Nature:** Research-backed correction and dependency reconciliation. No football event is rerun and no new practice/player result is generated.
+
+### Why a correction was required
+
+Entry 8 correctly preserved the already-simulated May 3-5 rookie minicamp, but three supporting assumptions were wrong or incomplete:
+
+1. the Jacksonville offseason-program calendar listed an April 1 start and incorrect OTA clusters;
+2. the working roster carried expired 2012 contracts as unresolved Jacksonville-controlled players and omitted four pre-divergence reserve/future contracts;
+3. the May 2 drafted-rookie contract table overstated gross 2013 charges and the club still lacked a transaction-aware Top-51 worksheet.
+
+This entry supersedes only those factual/current-state fields. It does not erase Entries 3-8 or rewrite the decisions/results they document.
+
+### Calendar correction
+
+Jacksonville's official new-head-coach offseason program began **Tuesday, April 2, 2013**, not April 1.
+
+Correct Jacksonville football calendar through mandatory minicamp:
+
+- April 2 — official offseason program begins;
+- April 16-18 — additional voluntary veteran minicamp;
+- May 3-5 — rookie minicamp;
+- May 13-15 — OTA block;
+- May 20-21 — OTA block;
+- May 23 — OTA day;
+- June 4-7 — OTA block;
+- June 11-13 — mandatory veteran minicamp;
+- July 25 — all contracted players report to training camp;
+- July 26 — first training-camp practice.
+
+The full preseason, regular-season, roster-deadline and conditional postseason calendar is now in `career/2013/calendar.md`, sourced by `library/2013_jacksonville_master_calendar.md`.
+
+The **April 16-18 voluntary veteran minicamp remains missed in the branch**. Entries 3-7 had already closed without running it. No veteran attendance, install, rep, evaluation, injury, medical clearance or performance is retroactively invented.
+
+### January 15 control correction
+
+The old January research spine contained 63 active/reserve names but omitted four reserve/future contracts Jacksonville executed on December 30, 2012:
+
+- John Parker Wilson, QB;
+- Ryan Davis, DE;
+- Brandon King, DB;
+- Will Ta'ufo'ou, FB.
+
+Those contracts predate Stone's January 15 hire. Correct January 15 inherited control is therefore **67 players**.
+
+Actual later real-world releases of any of those players occurred after divergence and are not imported into branch canon.
+
+### March 12 rights correction
+
+Jacksonville's contemporaneous own-free-agent list establishes that 17 names in the old research inventory reached free agency on March 12. This branch re-signed Brad Meester and Daryl Smith. It did **not** record a tender or new Jacksonville contract for the remaining fifteen:
+
+Kyle Bosworth, Eben Britton, John Chick, Derek Cox, Greg Jones, Terrance Knighton, Rashean Mathis, Antwaun Molden, Jordan Palmer, Jalen Parmele, Zach Potter, George Selvie, Jordan Shipley, Keith Toston and Steve Vallos.
+
+Their prior Jacksonville control therefore expired. This is not a new release event and does not import their later destinations.
+
+### Correct current roster count
+
+| Reconciliation | Players |
+|---|---:|
+| Correct Jan. 15 inherited control | 67 |
+| March free agents not retained | -15 |
+| Branch releases | -4 |
+| Branch outside FA additions | +4 |
+| Post-FA controlled roster | **52** |
+| Cousins acquisition | +1 |
+| Gabbert-for-C.J. Wilson swap | 0 net |
+| Pre-draft controlled roster | **53** |
+| Seven drafted players | +7 |
+| Four signed UDFAs | +4 |
+| **May 5 controlled roster** | **64** |
+
+The prior working count of 75 is superseded for current state. The complete 64-player control list is in `career/2013/roster.md`.
+
+### Drafted-rookie contract correction
+
+All seven branch draftees remain signed May 2 on four-year CBA rookie-scale contracts, with Lane Johnson also carrying the first-round fifth-year option mechanism.
+
+The corrected schedules are:
+
+| Pick | Player | 2013 cap | Four-year total |
+|---:|---|---:|---:|
+| #2 | Lane Johnson | $3,854,836 | $21,201,598 |
+| #33 | Travis Kelce | $994,382 | $5,469,104 |
+| #64 | Jordan Poyer | $572,794 | $3,100,676 |
+| #98 | Sio Moore | $529,257 | $2,657,028 |
+| #135 | Lavar Edwards | $458,403 | $2,373,612 |
+| #169 | Bacarri Rambo | $437,205 | $2,288,820 |
+| #208 | Tyler Bray | $422,225 | $2,228,900 |
+| **Total** | | **$7,269,102** | **$39,319,738** |
+
+The prior **$7,326,170** gross 2013 total is corrected. Full annual schedules and signing bonuses are in `offseason/draft/draftees.md`.
+
+Under the May 5 Top-51 worksheet, the seven drafted contracts create a **$4,134,102 net Top-51 effect**, not a $7.269M net reduction in room.
+
+### UDFA contracts closed
+
+Brynden Trawick, A.J. Bouye, Adam Thielen and C.J. Anderson are each under a three-year rookie minimum contract:
+
+- 2013 base: $405,000;
+- 2014 base: $495,000;
+- 2015 base: $585,000;
+- signing bonus: $0;
+- additional guarantee: $0.
+
+At the current 64-player roster, those four salaries are below the Top-51 cutoff and carry no bonus proration. Their May 5 net Top-51 effect is therefore **$0**.
+
+### Transferred contracts and releases reconciled for planning
+
+The current worksheet now includes:
+
+- Kirk Cousins' incoming 2013 base obligation, with Washington retaining prior signing-bonus proration;
+- Gabbert's pre-June-1 trade acceleration;
+- C.J. Wilson's incoming 2013 base obligation, with Green Bay retaining its prior bonus proration;
+- the four branch releases;
+- Top-51 displacement from the six March agreements and seven drafted-rookie contracts.
+
+The old `~$8.35M` figure was a gross post-free-agency shortcut and is no longer current.
+
+**May 5 Top-51 planning room: approximately $7.0M-$7.4M.**
+
+The range is deliberate. The recovered historical starting club-room figure was itself approximate, and Aaron Ross's exact execution timing within the compressed branch release batch is not separately fixed. Do not manufacture penny precision.
+
+Jacksonville is cap-compliant at the current checkpoint. Recalculate after any new transaction and at the August 27, August 31 and September 4 roster/accounting checkpoints.
+
+### Football state unchanged by this correction
+
+The May 3-5 rookie-minicamp teaching/evaluation record remains intact.
+
+- no depth chart is awarded by this correction;
+- no veteran medical clearance is inferred;
+- no April minicamp is backfilled;
+- no later real career outcome is imported;
+- next scheduled team football work is the **May 13-15 OTA block**.
+
+### Closed correction register
+
+| Global package checkpoint | Canonical through | Corrected current facts |
+|---|---|---|
+| `Canonical correction - May 5, 2013 - roster/cap/calendar reconciled` | May 5, after rookie minicamp, before OTAs | Apr. 2 program start; full 2013 calendar; 67 Jan. 15 controls; 64 May 5 controls; corrected rookie contracts; closed UDFA terms; ~$7.0M-$7.4M Top-51 room |
+
+**Commit closed — Canonical correction - May 5, 2013 - roster/cap/calendar reconciled — canonical through May 5, before May 13 OTAs**
+
