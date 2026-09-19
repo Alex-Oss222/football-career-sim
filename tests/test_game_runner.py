@@ -40,7 +40,7 @@ class ProductionGameRunnerTests(unittest.TestCase):
         order=[]
         class JournalClient:
             snapshot="snapshot"
-            def close_event(self,event_id,packet): order.append("closed"); return "ab"*32
+            def close_event(self,packet): order.append("closed"); return "ab"*32
         fake={"value":None}
         def kernel(*args,**kwargs):
             order.append("kernel"); return fake
@@ -51,7 +51,7 @@ class ProductionGameRunnerTests(unittest.TestCase):
     def test_private_replay_restart_conflict_and_no_seed_exposure(self):
         first=run_game(self.home,self.away,event_id="game-1",snapshot="snapshot",client=self.client)
         self.assertEqual(first,run_game(self.home,self.away,event_id="game-1",snapshot="snapshot",client=self.client))
-        restarted=Store(self.db); self.assertTrue(restarted.ready("snapshot"))
+        restarted=Store(self.db); self.assertTrue(restarted.ready())
         replay_client=Client(self.client.url,token=self.token,snapshot="snapshot")
         self.assertEqual(first,run_game(self.home,self.away,event_id="game-1",snapshot="snapshot",client=replay_client))
         changed=TeamInput("A",self.home.active_players,scheme="spread",roster=self.home.roster)
