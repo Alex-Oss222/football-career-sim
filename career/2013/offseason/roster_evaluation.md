@@ -64,24 +64,15 @@ Stone presented the roster buckets, proposed February-March contract clearing, e
 
 The meeting authorizes personnel, cap, medical, and market preparation only. It does **not** execute a release, trade, signing, offer, draft choice, starting decision, or depth-chart change. Caldwell retains the final authorities assigned to him in Authority Map rows 3, 5, 6, and 7; Stone's evaluations and recommendations remain attributed to Stone rather than silently rewritten as club decisions.
 
-## March 12 release-review trigger — blocked before decision
+## March 12 release review — Caldwell decisions
 
-The requested March 12 review was reached as a batch instruction but could not
-be made effective in canon. Caldwell has made **no release decision** on Guy
-Whimper, Aaron Ross, Dawan Landry, or Laurent Robinson, and none of the four has
-been released or retained by this entry.
+Caldwell completed the four reviews at the opening of the league year. These are front-office decisions made on roster, scheme, health information available to the club and contract-value grounds; they do not depend on a claimed cap-savings figure.
 
-| Player | Due-diligence status | Actual outcome |
-|---|---|---|
-| Guy Whimper | Exact annual contract ledger and release cap effect remain unavailable | **No action — unresolved** |
-| Aaron Ross | Exact annual contract ledger and release cap effect remain unavailable | **No action — unresolved** |
-| Dawan Landry | Exact annual contract ledger/release effect is unavailable; no simulated trade market may be run while the career ledger is unopened | **No action — unresolved** |
-| Laurent Robinson | Exact annual contract ledger/release effect and a reconciled club medical baseline remain unavailable | **No action — unresolved** |
+| Player | Caldwell decision | Football / roster basis | Financial treatment |
+|---|---|---|---|
+| Guy Whimper | **Released** | The staff is moving to new tackle competition and does not reserve a role for him. | **Unresolved.** No cap savings or dead-money figure booked. |
+| Aaron Ross | **Released** | Jacksonville is rebuilding the corner room through open competition; the Grimes and Ball agreements remove the case for carrying Ross on presumed veteran status. | **Unresolved.** No cap savings or dead-money figure booked. |
+| Dawan Landry | **Released** | The defense is changing its secondary plan and Caldwell does not retain him merely because no trade may be explored in this task. | **Unresolved.** No cap savings or dead-money figure booked. |
+| Laurent Robinson | **Released** | His concussion history, role uncertainty and the club's roster-value review do not support continuing the commitment. This is not a prediction about recovery. | **Unresolved.** No cap savings, dead-money or grievance figure booked. |
 
-This is an administrative stop, not Caldwell declining the releases. The
-career snapshot still predates Stone's hire, Document 4 remains unreconciled,
-the season ledger has not opened, and the initial cap sheet expressly declines
-to calculate cap room or dead money from missing annual figures. Because a
-release changes both roster and financial state immediately, recording one in
-this file alone would create a partial, non-atomic transaction. The review
-remains pending until the initialization package and club cap ledger close.
+No trade was contacted, solicited or resolved. The cap sheet's veteran-reconstruction leads for all four players remain explicitly unverified; accordingly, these releases add **$0 of booked relief** to the free-agency planning ledger—not because their true effect is known to be zero, but because it is unknown. The detailed signing ledger therefore remains at approximately **$8.35M** of planning room until reliable release accounting permits a later reconciliation.

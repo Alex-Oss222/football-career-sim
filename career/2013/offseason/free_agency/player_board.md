@@ -8,28 +8,22 @@
 
 **Critical rule:** projected price is Jacksonville's estimate, not hidden knowledge of the player's eventual contract. Other clubs' interest, agent demands and the player's willingness to join Jacksonville remain unknown until communicated.
 
-## Runtime status — March 12 opening requested, resolution blocked
+## Runtime status — March 12 opening batch complete
 
-**No target status has changed and no market outcome has been sampled.** The
-March 12 batch cannot become effective while the canonical career snapshot is
-still pre-hire/uninitialized, the 2013 career ledger is unopened, and the
-initial cap sheet leaves club commitments, adjustments, remaining room, and
-the four contemplated releases' cap consequences unknown. See `signings.md`
-for the blocking-reconciliation record.
+The March 12 branch has resolved every authorized target. Contract figures below are simulated branch agreements, not imported real-world outcomes. The detailed negotiation record and sequential cap accounting are in `signings.md`.
 
-| Target | Requested March 12 disposition | Current status |
+| Target | Authorized disposition | Final branch status |
 |---|---|---|
-| Michael Bennett | Priority pursuit | **Unresolved — batch blocked before market generation** |
-| Sen'Derrick Marks | Value pursuit | **Unresolved — batch blocked before market generation** |
-| Roy Miller | Value pursuit | **Unresolved — batch blocked before market generation** |
-| Alan Ball | Value/competition pursuit | **Unresolved — batch blocked before market generation** |
-| Justin Forsett | Value-depth pursuit | **Unresolved — batch blocked before market generation** |
-| Brad Meester | Own-player negotiation | **Unresolved — batch blocked before market generation** |
-| Daryl Smith | Own-player negotiation | **Unresolved — batch blocked before market generation** |
-| Brent Grimes | Conditional premium contingency | **Unresolved — triggering Bennett outcome does not yet exist** |
+| Michael Bennett | Priority pursuit | **DECLINED JACKSONVILLE — one-year $6.25M offer with $4.0M guaranteed; player chose greater multi-year security elsewhere; destination not imported** |
+| Sen'Derrick Marks | Value pursuit | **SIGNED — 1 year, $1.5M; $1.5M 2013 counted planning effect** |
+| Roy Miller | Value pursuit | **SIGNED — 2 years, $5.0M; $1.75M 2013 counted planning effect** |
+| Alan Ball | Value/competition pursuit | **SIGNED — 1 year, $1.0M; $1.0M 2013 counted planning effect** |
+| Justin Forsett | Value-depth pursuit | **DECLINED JACKSONVILLE — one-year $1.1M offer with $0.3M guaranteed; chose a clearer role elsewhere; destination not imported** |
+| Brad Meester | Own-player negotiation | **RE-SIGNED — 1 year, $1.5M; no starting promise; $1.5M 2013 counted planning effect** |
+| Daryl Smith | Own-player negotiation | **RE-SIGNED — 2 years, $6.0M; $2.5M 2013 counted planning effect** |
+| Brent Grimes | Conditional premium contingency | **SIGNED AFTER BENNETT DECLINED — 1 year, $5.5M fully guaranteed; $5.5M 2013 counted planning effect** |
 
-This status record does not create an offer, rejection, lost bid, signing, or
-future destination for any real player.
+Jacksonville moved from approximately **$22.1M** of planning room to approximately **$8.35M** after the six completed contracts. The reported carryover was not added again. No Top-51 displacement credit and no savings from the four releases were booked because those figures are unresolved.
 
 ## Information labels
 
@@ -379,3 +373,10 @@ It is:
 > Is this player worth this role, this guarantee, this cap/cash commitment and the alternatives Jacksonville gives up to sign him?
 
 That is the board Stone sees.
+
+
+---
+
+# March 12 branch closure
+
+The active decision board is closed for this batch. Bennett and Forsett are no longer Jacksonville pursuits after declining the recorded offers. Marks, Miller, Ball, Meester, Smith and Grimes move from estimates to the simulated contract terms recorded above and in `signings.md`. No player's real 2013 destination or later performance supplies the result.
