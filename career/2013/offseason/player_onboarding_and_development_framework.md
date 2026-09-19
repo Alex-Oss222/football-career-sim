@@ -4,7 +4,7 @@
 
 **Authority and scope:** Governs how Jacksonville onboards and develops every player it controls, from first contact through training camp. Connects two existing documents without rewriting either: `the_prowl_player_readiness_standard.md` remains the medical, physical, support, and CBA authority; `career/playbook/alex_stone_2013_offensive_playbook_iteration_i.md` remains the scheme authority. This file supplies the process and teaching philosophy that sits between them.
 
-**Playbook rule, restated from `career/playbook/README.md`:** the only book issued in 2013 is Iteration I. The 2016-and-later evolution files stay locked — no later terminology, motion system, or answer leaks backward into 2013 teaching. The full Iteration I book is a reference manual handed to every player; it is not a demand that a player memorize it before his first practice, and possession of it does not mean the whole book is installed or testable.
+**Playbook rule, restated from `career/playbook/README.md`:** the only book issued in 2013 is Iteration I. The 2016-and-later evolution files stay locked — no later terminology, motion system, or answer leaks backward into 2013 teaching. Every Jacksonville player receives the **complete active Iteration I playbook** and may study any part of it, take notes, ask questions, and read ahead. This is ordinary football preparation, not a software unlock system. "Installed" means the staff has formally taught and repped a concept together; it does not mean the rest of the active book is hidden. Players are evaluated on material actually assigned and taught, not punished for not mastering an uninstalled section.
 
 **Who this applies to:** every player Jacksonville actually controls at the time a phase runs. The current working inventory is 75, but the inherited roster still has unresolved control status on many names — reconciling that control status determines the actual mailing/call list for each step below, not the raw inventory count.
 
@@ -67,6 +67,8 @@ Stone's playbook already supports this. Calls are modular. Concepts are taught a
 
 One rule applies across the whole building: **do not install the next layer because the calendar says you can; install it because the previous layer is usable.** More plays installed is not automatically progress.
 
+A second rule is equally important: **football evidence controls football roles.** No preset percentage, snap-share formula, touch quota, or depth-chart probability decides who plays or what Jacksonville becomes. The staff learns from meetings, walkthroughs, practice, minicamps, training camp, preseason, regular-season games, health, matchup, correction retention, and actual execution. A player can study the entire active playbook from Day 0, but his role grows because he demonstrates that he can perform the job, not because a table says his personnel group should receive a certain share.
+
 ### Good, Better, Best as an evaluation scale
 
 | Level | What it means |
@@ -95,7 +97,7 @@ Rookie minicamp expects **Good**, not Best. A rookie can make a physical mistake
 
 ### Offensive install progression
 
-Rookie minicamp deliberately does not dump the entire Iteration I menu onto the field. Players first need call order, formations, strength, position labels, splits, cadence, core communication, and the idea that concepts consist of jobs — the **language before the library.** Then they get a narrow core package.
+Rookie minicamp deliberately does not try to **practice** the entire Iteration I menu at once. The players already possess the whole active book and are free to study ahead. The staff's field menu starts with call order, formations, strength, position labels, splits, cadence, core communication, and the idea that concepts consist of jobs — the **language before the library.** Then the practiced menu expands from a narrow core package as execution earns more work.
 
 The playbook's long-term 2013 core is Power, Counter, Inside Zone, Outside Zone, Stick, Mesh, Drive, Y-Cross, Four Verticals, Boot Flood, and the RB slow screen. That is the backbone; it does not mean every rookie must execute every variant immediately.
 
@@ -106,6 +108,27 @@ Veteran minicamp asks whether the offense can **communicate and transform**: sam
 Training camp opens the real toolbox. CORE concepts must become dependable, WEEKLY concepts can compete for game-plan space, and CHANGE-UP calls earn their place only if the roster can execute them.
 
 The future Stone offense does not leak backward. No later terminology, motion system, or answer from Iterations II through the 2025-2026 Mature System enters 2013 teaching (`career/playbook/README.md`'s active-iteration lock).
+
+### Evidence-driven personnel and play use
+
+Personnel groups and concepts are football tools, not percentages to be satisfied. Jacksonville does not enter camp or a game owing 11, 12, 21, 20, heavy personnel, a particular back, or a particular receiver a predetermined share.
+
+The staff decides usage from:
+
+- who is healthy and available;
+- who has actually learned and executed the assignment;
+- protection and blocking reliability;
+- ball security;
+- special-teams value where relevant;
+- matchup;
+- opponent response;
+- game situation;
+- repeated success or failure;
+- correction retention;
+- the best current combination of eleven players.
+
+Practice and games are allowed to change the plan. If a package is excellent, it can expand. If it is poor, it can shrink or disappear. If a player is hot, he can stay on the field. If another player proves he can handle more, his role can grow. No percentage is owed simply because it appeared in a planning document.
+
 
 ---
 

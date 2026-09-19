@@ -8,6 +8,13 @@
 **Offensive scheme authority:** `../../../playbook/alex_stone_2013_offensive_playbook_iteration_i.md` only.  
 **Calendar boundary:** verify Jacksonville's real 2013 mandatory-minicamp dates and applicable work/contact limits before execution.
 
+## Player playbook access and evidence rule
+
+Every participant may possess and study the **complete active 2013 Iteration I playbook**. The phase plan controls what the staff formally installs, practices, and evaluates together; it does not ration access to pages. A player may read ahead and ask about later material. He is evaluated on what has actually been assigned and taught for the phase.
+
+No preset personnel percentage, snap share, rep quota, touch quota, or depth-chart probability determines the result of this phase. Reps and roles are adjusted from football evidence: assignment, communication, technique, physical execution, health, correction retention, matchup, special teams, and what the player demonstrates in practices and games. The plan creates opportunities to evaluate; it does not manufacture the answer.
+
+
 This is the first planned checkpoint where Jacksonville expects the veteran roster and young-player group to operate the same football language together under a mandatory club phase, subject to medical, excused-absence, and CBA rules.
 
 The target is **Better**. Players should not merely know isolated assignments. Units should begin solving ordinary football problems without a coach manually arranging every answer.

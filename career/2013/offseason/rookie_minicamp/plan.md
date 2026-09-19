@@ -8,6 +8,13 @@
 **Offensive scheme authority:** `../../../playbook/alex_stone_2013_offensive_playbook_iteration_i.md` only.  
 **Calendar boundary:** do not invent the 2013 Jacksonville rookie-minicamp date. Verify the real date before advancing the simulation.
 
+## Player playbook access and evidence rule
+
+Every participant may possess and study the **complete active 2013 Iteration I playbook**. The phase plan controls what the staff formally installs, practices, and evaluates together; it does not ration access to pages. A player may read ahead and ask about later material. He is evaluated on what has actually been assigned and taught for the phase.
+
+No preset personnel percentage, snap share, rep quota, touch quota, or depth-chart probability determines the result of this phase. Reps and roles are adjusted from football evidence: assignment, communication, technique, physical execution, health, correction retention, matchup, special teams, and what the player demonstrates in practices and games. The plan creates opportunities to evaluate; it does not manufacture the answer.
+
+
 This plan answers one question: **what does Jacksonville intend to teach, train, observe, and learn during rookie minicamp?** It does not pre-decide who succeeds, who earns a role, or who makes the roster.
 
 The standard for this phase is **Good**, not perfect. A rookie is allowed to be new. He is not allowed to stay confused without communicating after the staff has taught and corrected the issue.

@@ -8,6 +8,13 @@
 **Offensive scheme authority:** `../../../playbook/alex_stone_2013_offensive_playbook_iteration_i.md` only.  
 **Calendar boundary:** research and verify the actual 2013 Jacksonville training-camp reporting/practice dates, preseason schedule dependencies, roster deadlines, and governing practice/contact rules before execution.
 
+## Player playbook access and evidence rule
+
+Every participant may possess and study the **complete active 2013 Iteration I playbook**. The phase plan controls what the staff formally installs, practices, and evaluates together; it does not ration access to pages. A player may read ahead and ask about later material. He is evaluated on what has actually been assigned and taught for the phase.
+
+No preset personnel percentage, snap share, rep quota, touch quota, or depth-chart probability determines the result of this phase. Reps and roles are adjusted from football evidence: assignment, communication, technique, physical execution, health, correction retention, matchup, special teams, and what the player demonstrates in practices and games. The plan creates opportunities to evaluate; it does not manufacture the answer.
+
+
 Training camp converts offseason teaching into competitive NFL football.
 
 The question changes from "Can we teach this?" to:
@@ -245,7 +252,7 @@ Questions:
 - Does heavy personnel still threaten pass?
 - Which backs/TEs/receivers allow HOLD/PRESS without substitution?
 
-Planning centers in the playbook are not quotas.
+There are no controlling personnel planning percentages. The current roster, opponent, practice evidence, health, and game performance determine which packages actually earn use.
 
 ### Tempo
 
