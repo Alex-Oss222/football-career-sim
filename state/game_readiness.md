@@ -1,8 +1,8 @@
 # Game readiness
 
-**Status: READY / VERIFIED for preseason, regular-season and background game resolution, subject to the mandatory live preflight before each execution.**
+**Status: BLOCKED in this checkout until the mandatory authenticated live preflight succeeds.**
 
-This is an administrative readiness assessment, not a simulated event. The career remains August 8, 2013 after the final walkthrough; Miami remains NOT STARTED.
+The public implementation and evidence gates are verified, but readiness is fail-closed: this environment does not currently provide the Railway URL and token, so it cannot certify the external service. This is an administrative readiness assessment, not a simulated event. The career remains August 8, 2013 after the final walkthrough; Miami remains NOT STARTED.
 
 | Requirement | Verified evidence | Executable proof |
 |---|---|---|
@@ -11,6 +11,6 @@ This is an administrative readiness assessment, not a simulated event. The caree
 | Period rules | 2013 structure, overtime, replay, roster, scoring, kicking, enforcement and ordered tiebreaks | Period-specific rule tests and sourcebook marker probe |
 | Injury model | Sourced exposure model with position bands and medical severity/disposition | Deterministic replay, burden, ordering, duration and long-term bounds |
 | Resolution implementation | One shared possession kernel with score/clock/stat/participation accounting and pause continuation | Kernel identity, invariant, symmetry and matchup-movement tests |
-| Private state | Authenticated localhost-only service with storage under `/var/lib/football-career-sim-engine` and credential under `/run/secrets` | Live authenticated schema/kernel/snapshot/recovery probe; security/restart/idempotence tests |
+| Private state | Authenticated external Engine State service with deployment secrets and persistent storage outside Git | Live authenticated schema/procedure/kernel/snapshot/seed-presence/recovery probe plus a repeatable persistent-journal canary; security/restart/idempotence tests |
 
-`python scripts/check_game_readiness.py` is authoritative and fails closed. Manifest labels cannot override failed artifact, implementation, repository or private-service probes. No private seed, ratings, journal packet or opponent plan is returned by the service or stored in Git.
+`python scripts/check_game_readiness.py` is authoritative and fails closed, including when `ENGINE_RUNTIME_URL` or `ENGINE_API_TOKEN` is absent. Manifest labels cannot override failed artifact, implementation, repository or private-service probes. No private seed, ratings, journal packet or opponent plan is returned by the service or stored in Git.

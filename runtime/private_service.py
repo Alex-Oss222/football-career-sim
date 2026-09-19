@@ -21,7 +21,8 @@ class Store:
             CREATE TABLE IF NOT EXISTS meta(key TEXT PRIMARY KEY,value BLOB NOT NULL);
             CREATE TABLE IF NOT EXISTS events(event_id TEXT PRIMARY KEY,packet_hash TEXT NOT NULL,result TEXT,created INTEGER NOT NULL,closed INTEGER);
             CREATE TABLE IF NOT EXISTS corrections(id INTEGER PRIMARY KEY AUTOINCREMENT,event_id TEXT NOT NULL,reason TEXT NOT NULL,created INTEGER NOT NULL);
-            CREATE TABLE IF NOT EXISTS backups(id INTEGER PRIMARY KEY AUTOINCREMENT,digest TEXT NOT NULL,created INTEGER NOT NULL);""")
+            CREATE TABLE IF NOT EXISTS backups(id INTEGER PRIMARY KEY AUTOINCREMENT,digest TEXT NOT NULL,created INTEGER NOT NULL);
+            CREATE TABLE IF NOT EXISTS admin_probes(probe_id TEXT PRIMARY KEY,created INTEGER NOT NULL);""")
     def initialize(self,snapshot):
         with self.lock, closing(self.connect()) as c, c:
             c.execute("BEGIN IMMEDIATE")
@@ -45,6 +46,15 @@ class Store:
             digest=hashlib.sha256(backup_path.read_bytes()).hexdigest()
             c.execute("INSERT INTO backups(digest,created) VALUES(?,?)",(digest,int(time.time())))
             return bool(seed and len(seed)>=32 and snapshot==expected_snapshot and m.get('kernel',b'').decode()==KERNEL and m.get('schema',b'').decode()==SCHEMA)
+    def probe(self,probe_id):
+        """Persist an opaque canary once and return only a stability fingerprint."""
+        if not isinstance(probe_id,str) or len(probe_id)!=64: raise ValueError("invalid probe identity")
+        with self.lock, closing(self.connect()) as c, c:
+            c.execute("INSERT OR IGNORE INTO admin_probes VALUES(?,?)",(probe_id,int(time.time())))
+            row=c.execute("SELECT probe_id,created FROM admin_probes WHERE probe_id=?",(probe_id,)).fetchone()
+            seed=c.execute("SELECT value FROM meta WHERE key='seed'").fetchone()[0]
+            fingerprint=hmac.new(seed,(row[0]+":"+str(row[1])).encode(),hashlib.sha256).hexdigest()
+            return {"idempotent":True,"journal_fingerprint":fingerprint}
     def close(self,event_id,packet):
         packet_hash=hashlib.sha256(packet).hexdigest()
         with self.lock, closing(self.connect()) as c, c:
@@ -77,20 +87,21 @@ def handler(store,token,snapshot):
         def do_GET(self):
             if self.path=="/health": return self.send(200,{"service":"engine-state","schema":SCHEMA,"kernel":KERNEL})
             if not self.auth(): return
-            if self.path=="/ready": return self.send(200,{"ready":store.ready(snapshot),"schema":SCHEMA,"kernel":KERNEL,"career_initialized":True,"snapshot_initialized":True,"recovery":"verified"})
+            if self.path=="/ready": return self.send(200,{"ready":store.ready(snapshot),"schema":SCHEMA,"kernel":KERNEL,"procedure":KERNEL,"snapshot":snapshot,"career_initialized":True,"private_seed_exists":True,"journal_persistent":True,"recovery":"verified"})
             self.send(404,{"error":"not found"})
         def do_POST(self):
             if not self.auth(): return
             n=int(self.headers.get("Content-Length","0")); body=json.loads(self.rfile.read(n) or b"{}")
             try:
                 if self.path=="/events/close": return self.send(200,{"result_ref":store.close(body["event_id"],json.dumps(body["packet"],sort_keys=True,separators=(",",":")).encode())})
+                if self.path=="/admin/probe": return self.send(200,store.probe(body["probe_id"]))
                 if self.path=="/corrections": store.correct(body["event_id"],body["reason"]); return self.send(201,{"recorded":True})
                 self.send(404,{"error":"not found"})
             except (KeyError,ValueError) as e: self.send(409,{"error":str(e)})
     return Handler
 
 def main():
-    p=argparse.ArgumentParser(); p.add_argument("--db",required=True); p.add_argument("--token-file",required=True); p.add_argument("--snapshot",required=True); p.add_argument("--port",type=int,default=8765); a=p.parse_args()
+    p=argparse.ArgumentParser(); p.add_argument("--db",required=True); p.add_argument("--token-file",required=True); p.add_argument("--snapshot",required=True); p.add_argument("--port",type=int,default=int(os.getenv("PORT","8765"))); p.add_argument("--host",default=os.getenv("ENGINE_BIND_HOST","127.0.0.1")); a=p.parse_args()
     token=Path(a.token_file).read_text().strip(); store=Store(a.db); store.initialize(a.snapshot)
-    ThreadingHTTPServer(("127.0.0.1",a.port),handler(store,token,a.snapshot)).serve_forever()
+    ThreadingHTTPServer((a.host,a.port),handler(store,token,a.snapshot)).serve_forever()
 if __name__=="__main__": main()

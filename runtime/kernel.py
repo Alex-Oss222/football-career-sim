@@ -63,11 +63,50 @@ def resolve_game(home, away, *, seed, event_id, venue="home", weather="normal",
         elif outcome=="punt": s["punts"]+=1; s["punt_returns"]+=rng.random()<.52
         elif outcome=="turnover": s["turnovers"]+=1
         s["points"]+=points; s["time_of_possession"]+=seconds
+        if points and rng.random() > cal["model"]["kickoff_touchback_rate"]:
+            stats[defense.team_id]["kick_returns"] += 1
         featured=team.active_players[drive_no%len(team.active_players)]; s["players"][featured]["scrimmage_yards"]+=pass_yards+rush_yards
         possessions.append({"number":drive_no,"team":offense,"start_clock":clock+seconds,
                             "end_clock":clock,"seconds":seconds,"outcome":outcome,"points":points})
         offense=defense.team_id
     total=RULES.quarter_seconds*4
+    overtime_seconds=0
+    if stats[home.team_id]["points"] == stats[away.team_id]["points"]:
+        ot_limit=RULES.postseason_ot_seconds if game_type=="postseason" else RULES.regular_ot_seconds
+        ot_offense=offense; possessions_in_ot=0
+        while True:
+            seconds=min(ot_limit-overtime_seconds,rng.randint(75,190))
+            if seconds <= 0:
+                if game_type=="postseason": ot_limit += RULES.postseason_ot_seconds; continue
+                break
+            overtime_seconds += seconds; possessions_in_ot += 1
+            team=teams[ot_offense]; defense=away if ot_offense==home.team_id else home
+            draw=rng.random(); cumulative=0
+            for outcome,chance in probs.items():
+                cumulative += chance
+                if draw <= cumulative: break
+            points=7 if outcome=="touchdown" else 3 if outcome=="field_goal" else 0
+            plays=rng.randint(3,9); pass_plays=sum(rng.random()<cal["model"]["pass_play_share"] for _ in range(plays))
+            sacks=sum(rng.random()<cal["derived"]["sack_rate"]["value"] for _ in range(pass_plays))
+            pass_yards=max(-sacks*6,round(rng.gauss((pass_plays-sacks)*6.55,max(6,pass_plays*3))))
+            rush_yards=max(-5,round(rng.gauss((plays-pass_plays)*4.26,max(4,(plays-pass_plays)*2))))
+            s=stats[ot_offense]; s["passing_yards"]+=pass_yards; s["rushing_yards"]+=rush_yards; s["sacks_allowed"]+=sacks
+            if outcome=="touchdown": s["touchdowns"]+=1
+            elif outcome=="field_goal": s["field_goals"]+=1
+            elif outcome=="punt": s["punts"]+=1
+            elif outcome=="turnover": s["turnovers"]+=1
+            s["points"]+=points; s["time_of_possession"]+=seconds
+            featured=team.active_players[(drive_no+possessions_in_ot)%len(team.active_players)]
+            s["players"][featured]["scrimmage_yards"]+=pass_yards+rush_yards
+            possessions.append({"number":drive_no+possessions_in_ot,"team":ot_offense,"period":"OT",
+                                "start_clock":ot_limit-(overtime_seconds-seconds),"end_clock":ot_limit-overtime_seconds,
+                                "seconds":seconds,"outcome":outcome,"points":points})
+            lead=stats[home.team_id]["points"]!=stats[away.team_id]["points"]
+            # Opening TD/defensive score ends play; an opening FG allows a reply.
+            if lead and (points==7 or possessions_in_ot>=2): break
+            ot_offense=defense.team_id
+            if overtime_seconds>=ot_limit and game_type!="postseason": break
+        total += overtime_seconds
     # Allocate rounding/administrative time to the final possessing team.
     used=sum(v["time_of_possession"] for v in stats.values()); stats[offense]["time_of_possession"]+=total-used
     injuries=[]
@@ -91,6 +130,7 @@ def validate_result(result):
         s=result["team_stats"][team]
         if score != s["touchdowns"]*7+s["field_goals"]*3: errors.append("score ledger mismatch")
         if sum(p["scrimmage_yards"] for p in s["players"].values()) != s["passing_yards"]+s["rushing_yards"]: errors.append("yardage mismatch")
-    if sum(s["time_of_possession"] for s in result["team_stats"].values()) != 3600: errors.append("clock mismatch")
+    elapsed=sum(p["seconds"] for p in result["possessions"])
+    if sum(s["time_of_possession"] for s in result["team_stats"].values()) != elapsed: errors.append("clock mismatch")
     if any(p["end_clock"]<0 or p["start_clock"]<p["end_clock"] for p in result["possessions"]): errors.append("invalid clock")
     return errors

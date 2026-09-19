@@ -19,7 +19,7 @@ class PrivateRuntimeTests(unittest.TestCase):
         with self.assertRaises(HTTPError) as e: urlopen(self.url+'/ready')
         self.assertEqual(e.exception.code,401)
     def test_restart_persistence_idempotence_and_altered_refusal(self):
-        c=Client(self.url,self.token_file); self.assertTrue(c.readiness()['ready'])
+        c=Client(self.url,token_file=self.token_file,snapshot='snapshot'); self.assertTrue(c.readiness()['ready'])
         first=c.close_event('event-1',{'fact':'original'}); self.assertEqual(first,c.close_event('event-1',{'fact':'original'}))
         restarted=Store(Path(self.tmp.name)/'state.sqlite3'); self.assertTrue(restarted.ready('snapshot'))
         with self.assertRaises(PrivateRuntimeUnavailable): c.close_event('event-1',{'fact':'changed'})
@@ -32,7 +32,17 @@ class PrivateRuntimeTests(unittest.TestCase):
         self.store.close('event-2',b'x'); self.store.correct('event-2','source correction')
         with self.store.connect() as c: self.assertEqual(c.execute('select count(*) from corrections').fetchone()[0],1)
     def test_missing_credentials_fails_closed(self):
-        with self.assertRaises(PrivateRuntimeUnavailable): Client(self.url,Path(self.tmp.name)/'missing').readiness()
+        with self.assertRaises(PrivateRuntimeUnavailable): Client(self.url,token_file=Path(self.tmp.name)/'missing',snapshot='snapshot').readiness()
+
+    def test_wrong_snapshot_fails_closed(self):
+        with self.assertRaises(PrivateRuntimeUnavailable):
+            Client(self.url,token=self.token,snapshot='wrong').readiness()
+
+    def test_administrative_probe_is_idempotent(self):
+        client=Client(self.url,token=self.token,snapshot='snapshot')
+        first=client.readiness(); second=client.readiness()
+        self.assertTrue(first['administrative_probe_idempotent'])
+        self.assertEqual(first,second)
 
     def test_no_seed_or_private_journal_in_repository(self):
         root=Path(__file__).resolve().parents[1]

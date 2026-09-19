@@ -22,6 +22,14 @@ class Rules2013:
 
 RULES = Rules2013()
 
+DIVISION_TIEBREAKERS=("head_to_head","division_record","common_games","conference_record",
+    "strength_of_victory","strength_of_schedule","conference_combined_rank",
+    "league_combined_rank","net_common_points","net_all_points","net_touchdowns","coin_toss")
+WILD_CARD_TIEBREAKERS=("head_to_head_if_applicable","conference_record","common_games_minimum_four",
+    "strength_of_victory","strength_of_schedule","conference_combined_rank","league_combined_rank",
+    "net_conference_points","net_all_points","net_touchdowns","coin_toss")
+PLAYOFF_SEEDS={"division_champions":(1,2,3,4),"wild_cards":(5,6)}
+
 def overtime_ends(scores, possession_complete, game_type="regular"):
     """2012-forward modified sudden death; postseason cannot end tied."""
     home, away = scores

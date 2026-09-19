@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Fail-closed game preflight: validate evidence, implementation and live state."""
-import argparse, json, sys
+import argparse, json, os, sys
 from pathlib import Path
 from validate_repository import ROOT, validate
 sys.path.insert(0,str(ROOT))
@@ -33,6 +33,12 @@ def assess(root=ROOT):
     # Only the canonical checkout may bind to the deployed branch snapshot.
     if root.resolve()!=ROOT.resolve(): blockers.append(dict(id='private_probe',label='Private runtime probe',detail='noncanonical checkout is not snapshot-bound'))
     else:
+        if not os.getenv('ENGINE_RUNTIME_URL'):
+            blockers.append(dict(id='private_probe',label='Private runtime probe',detail='ENGINE_RUNTIME_URL is not set'))
+        if not os.getenv('ENGINE_API_TOKEN'):
+            blockers.append(dict(id='private_probe',label='Private runtime probe',detail='ENGINE_API_TOKEN is not set'))
+        if blockers and any(x['id']=='private_probe' for x in blockers):
+            return {'ready':False,'blockers':blockers}
         try: Client().readiness()
         except PrivateRuntimeUnavailable as e: blockers.append(dict(id='private_probe',label='Private runtime probe',detail=str(e)))
     return {'ready':not blockers,'blockers':blockers}
