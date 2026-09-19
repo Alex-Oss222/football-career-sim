@@ -1,8 +1,8 @@
-# Jacksonville Jaguars: roster through the post-draft 2013 signing wave
+# Jacksonville Jaguars: roster after 2013 rookie minicamp
 
-**As of:** Post-draft 2013, after the four-player UDFA signing wave and before rookie minicamp.
+**As of:** May 5, 2013, after rookie minicamp closed; OTAs have not begun.
 **Sources:** [Completed signings and releases](offseason/free_agency/signings.md); [completed trades](trades/trades.md); [2013 draftees](offseason/draft/draftees.md); [UDFA signings](offseason/draft/udfa_signings.md); [season ledger](ledger.md).
-**Register:** [Canonical player records](../../state/04_Roster_and_Staff_Register.md), version `JAX-2013-POSTDRAFT-ROSTER-1`.
+**Register:** [Canonical player records](../../state/04_Roster_and_Staff_Register.md), version `JAX-2013-ROOKIE-MINICAMP-ROSTER-1`.
 
 ## What changed
 
@@ -138,17 +138,17 @@ The March 12 working inventory of 63 moves to **64** after the pre-draft transac
 
 ## April 27 draft-rights additions
 
-Jacksonville exercised all seven selections. These players are additions by draft rights, not claims that rookie contracts have been signed.
+Jacksonville exercised all seven selections. These players first entered by draft rights. Caldwell executed all seven four-year slot contracts on May 2, before rookie minicamp; Lane Johnson also carries the first-round club-option mechanism. Exact net Top-51 treatment remains unresolved.
 
 | Pos. | Player | Acquisition | Current control / football limit |
 |---|---|---|---|
-| OT | Lane Johnson | Selected #2 | Jacksonville draft rights; unsigned. Opens at RT; no starting job awarded. |
-| TE | Travis Kelce | Selected #33 | Jacksonville draft rights; unsigned. Bounded TE2 teaching role; no roster role guaranteed. |
-| CB | Jordan Poyer | Selected #64 | Jacksonville draft rights; unsigned. Begins evaluation at corner. |
-| OLB | Sio Moore | Selected #98 | Jacksonville draft rights; unsigned. Initial linebacker assignment to be set by the defensive staff. |
-| DE | Lavar Edwards | Selected #135 | Jacksonville draft rights; unsigned. Rotational-end evaluation only. |
-| S | Bacarri Rambo | Selected #169 | Jacksonville draft rights; unsigned. Begins with one safety role plus special-teams evaluation. |
-| QB | Tyler Bray | Selected #208 | Jacksonville draft rights; unsigned. Developmental competition entry; no depth position promised. |
+| OT | Lane Johnson | Selected #2 | Signed rookie contract May 2. Opens at RT; no starting job awarded. |
+| TE | Travis Kelce | Selected #33 | Signed rookie contract May 2. Bounded TE2 teaching role; no roster role guaranteed. |
+| CB | Jordan Poyer | Selected #64 | Signed rookie contract May 2. Begins evaluation at corner. |
+| OLB | Sio Moore | Selected #98 | Signed rookie contract May 2. Initial linebacker assignment to be set by the defensive staff. |
+| DE | Lavar Edwards | Selected #135 | Signed rookie contract May 2. Rotational-end evaluation only. |
+| S | Bacarri Rambo | Selected #169 | Signed rookie contract May 2. Begins with one safety role plus special-teams evaluation. |
+| QB | Tyler Bray | Selected #208 | Signed rookie contract May 2. Developmental competition entry; no depth position promised. |
 
 The working inventory moves from **64 to 71** after the seven draft-rights additions.
 
@@ -170,3 +170,8 @@ The working inventory moves from **64 to 71** after the seven draft-rights addit
 | Current working inventory | **75** |
 
 The **75** figure is an offseason working inventory, not an active-roster declaration. Exact Cousins/Wilson/Gabbert trade accounting, draft contracts, UDFA bonuses/guarantees, Top-51 displacement, and inherited release effects remain unresolved. The approximately $8.35M figure is therefore only the pre-trade post-free-agency planning reference, not a certified current cap-space figure.
+
+
+## May 3-5 rookie-minicamp close
+
+The seven draftees and four signed UDFAs completed Jacksonville's verified May 3-5 rookie minicamp. Event-specific teaching evidence and next corrections are recorded in [`offseason/rookie_minicamp/output.md`](offseason/rookie_minicamp/output.md). No depth-chart placement or final roster spot was awarded, no new medical restriction was communicated, and OTAs have not begun. The seven drafted contracts carry $7,326,170 in gross scheduled 2013 charges before unresolved Top-51 displacement; the complete club balance remains unresolved.

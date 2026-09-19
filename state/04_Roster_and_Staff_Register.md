@@ -11,7 +11,7 @@
 - Medical-state ownership: A dated, coach-facing Document 6 medical or availability event is the source event. The individual player record in this document is the latest canonical current state derived from it. The player index, medical control table, and Document 5 are derived summaries.
 - Correction authority: Document 6 is the sole append-only correction and supersession ledger. This document stores current corrected values and generated pointers only.
 - Information boundary: All six principal canonical documents are coach-facing. Information not plausibly known to the head coach must not appear in this package. Any supported private simulator state must live outside the six-document package and outside every handoff.
-- Initialization status: **POST-DRAFT PERSONNEL PACKAGE RECONCILED WITH NOTED FINANCIAL UNCERTAINTY.** The March 12 free-agency baseline, two pre-draft trades, seven draft-rights additions, and four post-draft UDFA signings are applied below. Full transferred-contract, rookie-contract, Top-51, inherited control, and medical reconciliation remains incomplete; this is not a game-readiness certification.
+- Initialization status: **ROOKIE MINICAMP CLOSED WITH NOTED FINANCIAL/CONTROL UNCERTAINTY.** Seven drafted-rookie contracts and the May 3-5 rookie-minicamp evidence are applied below. Full transferred-contract, Top-51, inherited control, UDFA-detail, and broader medical reconciliation remains incomplete; this is not a game-readiness certification.
 
 ## Registry identity
 
@@ -20,21 +20,21 @@
 | Team | Jacksonville Jaguars |
 | Competition and governing body | National Football League |
 | Season | 2013 |
-| Owned content last changed/effective | Post-draft 2013, after April 27 and before rookie minicamp; exact UDFA execution times not separately fixed |
-| Season phase and week | 2013 offseason; draft and initial post-draft UDFA signing wave complete |
+| Owned content last changed/effective | May 5, 2013, after rookie minicamp closed; exact UDFA execution times remain unfixed |
+| Season phase and week | 2013 offseason; rookie minicamp complete, OTAs not begun |
 | Real, fictional, or mixed personnel | Real player identities; accepted counterfactual hires and transactions |
 | Divergence point | January 15, 2013 — Alex Stone accepts Jacksonville head-coach offer |
 | Applicable roster rule source | Document 2 §11.1; use the offseason rules, not an in-season active-list count |
 | Applicable contract, eligibility, or scholarship rule source | Document 2 §11.1 and `career/2013/offseason/initial_cap_sheet.md` |
 | Document 2 locked version | Current source blob `4dcdaa9bb3812ffe47b1bc7007dda73204cbc170`; formal active-only lock not asserted |
 | Document 3 authority-map version | Reconciled January 15, 2013 Stone/Jacksonville version |
-| Document 4 register version | JAX-2013-POSTDRAFT-ROSTER-1 |
-| Supersedes Document 4 version/content-changing update | JAX-2013-FA-ROSTER-1 |
-| Last Document 4 content-changing update | Canonical update - post-draft 2013 roster build |
-| Latest Document 6 source event applied to Document 4 content | career/2013/ledger.md, Entries 5-7; trades, draft, and UDFA signings |
-| Last registry-wide reconciliation | September 19, 2026 post-draft transaction/draft/UDFA reconciliation; limits below |
+| Document 4 register version | JAX-2013-ROOKIE-MINICAMP-ROSTER-1 |
+| Supersedes Document 4 version/content-changing update | JAX-2013-POSTDRAFT-ROSTER-1 |
+| Last Document 4 content-changing update | Canonical update - May 5, 2013 - rookie minicamp closed |
+| Latest Document 6 source event applied to Document 4 content | career/2013/ledger.md, Entry 8; rookie contracts and rookie minicamp |
+| Last registry-wide reconciliation | September 19, 2026 rookie-contract/minicamp reconciliation; limits below |
 | Last full continuity audit | `[NOT YET PERFORMED]` |
-| Unresolved registry conflicts | Inherited contract-control gaps, transferred veteran contract accounting, rookie contract details, release accounting, complete Top-51 worksheet, and medical availability |
+| Unresolved registry conflicts | Inherited contract-control gaps, transferred veteran accounting, UDFA contract details, later-year rookie allocations, release accounting, complete Top-51 worksheet, and veteran medical availability |
 
 ## Canon and evidence conventions
 
@@ -217,18 +217,18 @@ The [current coaching staff](../career/2013/coaching_staff.md) and season-ledger
 
 ### Scope of closure
 
-The March 12 batch plus the completed pre-draft trades, draft rights, and four post-draft UDFA signings are reconciled. The whole club is not certified game-ready: inherited control, transferred-contract accounting, rookie contract accounting, full Top-51 treatment, and coach-facing medical availability remain incomplete. No medical clearance, installed scheme, or depth-chart win is created by these personnel events.
+The March 12 batch, pre-draft trades, draft/UDFA acquisitions, seven rookie contracts, and May 3-5 rookie minicamp are reconciled. The whole club is not certified game-ready: inherited control, transferred-contract accounting, later-year rookie detail, full Top-51 treatment, and veteran medical availability remain incomplete. Camp clearance for the eleven rookie participants is event-bounded; no depth-chart win follows.
 
 ## Current working player index
 
-Completed March agreements, trades, draft rights, and UDFA signings have current transaction evidence. Other rows retain historical person records and explicitly unresolved inherited control; those carry-forward rows are not silently treated as newly re-signed players.
+Completed March agreements, trades, signed rookie contracts, and UDFA signings have current transaction evidence. Other rows retain historical person records and explicitly unresolved inherited control; those carry-forward rows are not silently treated as newly re-signed players.
 
 | Player | Stable player ID | Position group | Historical source or batch evidence | Contract status | Current football role | Derived availability | Latest Document 6 source event | Last closed checkpoint affecting player |
 |---|---|---|---|---|---|---|---|---|
 | Chad Henne | JAX-CHADHENNE | QB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
 | Jordan Palmer | JAX-JORDANPALMER | QB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
 | Kirk Cousins | JAX-KIRKCOUSINS | QB | Acquired from Washington for Jacksonville's 2014 second | Contract rights transferred; exact Jacksonville cap treatment pending reconciliation | Open quarterback competition; no starting guarantee | No new medical restriction or clearance is invented | 2013 ledger Entry 5 | JAX-2013-POSTDRAFT-ROSTER-1 |
-| Tyler Bray | JAX-TYLERBRAY | QB | Selected #208 | Jacksonville draft rights; unsigned | Developmental quarterback competition; no depth position promised | Rookie medical/participation status not invented | 2013 ledger Entry 6 | JAX-2013-POSTDRAFT-ROSTER-1 |
+| Tyler Bray | JAX-TYLERBRAY | QB | Selected #208 | Four-year rookie contract executed May 2, 2013 | Developmental quarterback competition; no depth position promised | Cleared for and completed May 3-5 rookie minicamp; no new restriction communicated | 2013 ledger Entry 8 | JAX-2013-ROOKIE-MINICAMP-ROSTER-1 |
 | Jalen Parmele | JAX-JALENPARMELE | RB | Reserve/injured at season close — exact Jan. 15 list designation requires transaction-ledger confirmation | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
 | Jonathan Grimes | JAX-JONATHANGRIMES | RB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
 | Keith Toston | JAX-KEITHTOSTON | RB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
@@ -290,17 +290,17 @@ Completed March agreements, trades, draft rights, and UDFA signings have current
 | Bryan Anger | JAX-BRYANANGER | P | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
 | Jeremy Cain | JAX-JEREMYCAIN | LS | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
 
-| C.J. Anderson | JAX-CJANDERSON | RB | User-authorized post-draft UDFA signing; California | Rookie free-agent contract executed; exact financial terms pending reconciliation | Running-back competition; no workload guarantee | No new medical restriction or clearance is invented | 2013 ledger Entry 7 | JAX-2013-POSTDRAFT-ROSTER-1 |
-| Adam Thielen | JAX-ADAMTHIELEN | WR | User-authorized post-draft UDFA signing; Minnesota State | Rookie free-agent contract executed; exact financial terms pending reconciliation | Receiver/special-teams competition; no roster role promised | No new medical restriction or clearance is invented | 2013 ledger Entry 7 | JAX-2013-POSTDRAFT-ROSTER-1 |
-| Travis Kelce | JAX-TRAVISKELCE | TE | Selected #33 | Jacksonville draft rights; unsigned | Bounded TE teaching role; no roster role guaranteed | Rookie medical/participation status not invented | 2013 ledger Entry 6 | JAX-2013-POSTDRAFT-ROSTER-1 |
-| Lane Johnson | JAX-LANEJOHNSON | T | Selected #2 | Jacksonville draft rights; unsigned | Opens evaluation at RT; no starting guarantee | Rookie medical/participation status not invented | 2013 ledger Entry 6 | JAX-2013-POSTDRAFT-ROSTER-1 |
+| C.J. Anderson | JAX-CJANDERSON | RB | User-authorized post-draft UDFA signing; California | Rookie free-agent contract executed; exact financial terms pending reconciliation | Running-back competition; no workload guarantee | Cleared for and completed May 3-5 rookie minicamp; no new restriction communicated | 2013 ledger Entry 8 | JAX-2013-ROOKIE-MINICAMP-ROSTER-1 |
+| Adam Thielen | JAX-ADAMTHIELEN | WR | User-authorized post-draft UDFA signing; Minnesota State | Rookie free-agent contract executed; exact financial terms pending reconciliation | Receiver/special-teams competition; no roster role promised | Cleared for and completed May 3-5 rookie minicamp; no new restriction communicated | 2013 ledger Entry 8 | JAX-2013-ROOKIE-MINICAMP-ROSTER-1 |
+| Travis Kelce | JAX-TRAVISKELCE | TE | Selected #33 | Four-year rookie contract executed May 2, 2013 | Bounded TE teaching role; no roster role guaranteed | Cleared for and completed May 3-5 rookie minicamp; no new restriction communicated | 2013 ledger Entry 8 | JAX-2013-ROOKIE-MINICAMP-ROSTER-1 |
+| Lane Johnson | JAX-LANEJOHNSON | T | Selected #2 | Four-year rookie contract executed May 2, 2013 | Opens evaluation at RT; no starting guarantee | Cleared for and completed May 3-5 rookie minicamp; no new restriction communicated | 2013 ledger Entry 8 | JAX-2013-ROOKIE-MINICAMP-ROSTER-1 |
 | C.J. Wilson | JAX-CJWILSON | DE | Acquired from Green Bay for Blaine Gabbert | Contract rights transferred; exact Jacksonville cap treatment pending reconciliation | Defensive-front rotation competition; no starting guarantee | No new medical restriction or clearance is invented | 2013 ledger Entry 5 | JAX-2013-POSTDRAFT-ROSTER-1 |
-| Lavar Edwards | JAX-LAVAREDWARDS | DE | Selected #135 | Jacksonville draft rights; unsigned | Rotational-end evaluation only | Rookie medical/participation status not invented | 2013 ledger Entry 6 | JAX-2013-POSTDRAFT-ROSTER-1 |
-| Sio Moore | JAX-SIOMOORE | OLB | Selected #98 | Jacksonville draft rights; unsigned | Initial linebacker assignment pending staff evaluation | Rookie medical/participation status not invented | 2013 ledger Entry 6 | JAX-2013-POSTDRAFT-ROSTER-1 |
-| A.J. Bouye | JAX-AJBOUYE | CB | User-authorized post-draft UDFA signing; UCF | Rookie free-agent contract executed; exact financial terms pending reconciliation | Corner/special-teams competition; no starting guarantee | No new medical restriction or clearance is invented | 2013 ledger Entry 7 | JAX-2013-POSTDRAFT-ROSTER-1 |
-| Jordan Poyer | JAX-JORDANPOYER | CB | Selected #64 | Jacksonville draft rights; unsigned | Begins evaluation at corner | Rookie medical/participation status not invented | 2013 ledger Entry 6 | JAX-2013-POSTDRAFT-ROSTER-1 |
-| Brynden Trawick | JAX-BRYNDENTRAWICK | S | User-authorized post-draft UDFA signing; Troy | Rookie free-agent contract executed; exact financial terms pending reconciliation | Safety/special-teams competition; no depth position promised | No new medical restriction or clearance is invented | 2013 ledger Entry 7 | JAX-2013-POSTDRAFT-ROSTER-1 |
-| Bacarri Rambo | JAX-BACARRIRAMBO | S | Selected #169 | Jacksonville draft rights; unsigned | Safety/special-teams evaluation; no depth position promised | Rookie medical/participation status not invented | 2013 ledger Entry 6 | JAX-2013-POSTDRAFT-ROSTER-1 |
+| Lavar Edwards | JAX-LAVAREDWARDS | DE | Selected #135 | Four-year rookie contract executed May 2, 2013 | Rotational-end evaluation only | Cleared for and completed May 3-5 rookie minicamp; no new restriction communicated | 2013 ledger Entry 8 | JAX-2013-ROOKIE-MINICAMP-ROSTER-1 |
+| Sio Moore | JAX-SIOMOORE | OLB | Selected #98 | Four-year rookie contract executed May 2, 2013 | Initial linebacker assignment pending staff evaluation | Cleared for and completed May 3-5 rookie minicamp; no new restriction communicated | 2013 ledger Entry 8 | JAX-2013-ROOKIE-MINICAMP-ROSTER-1 |
+| A.J. Bouye | JAX-AJBOUYE | CB | User-authorized post-draft UDFA signing; UCF | Rookie free-agent contract executed; exact financial terms pending reconciliation | Corner/special-teams competition; no starting guarantee | Cleared for and completed May 3-5 rookie minicamp; no new restriction communicated | 2013 ledger Entry 8 | JAX-2013-ROOKIE-MINICAMP-ROSTER-1 |
+| Jordan Poyer | JAX-JORDANPOYER | CB | Selected #64 | Four-year rookie contract executed May 2, 2013 | Begins evaluation at corner | Cleared for and completed May 3-5 rookie minicamp; no new restriction communicated | 2013 ledger Entry 8 | JAX-2013-ROOKIE-MINICAMP-ROSTER-1 |
+| Brynden Trawick | JAX-BRYNDENTRAWICK | S | User-authorized post-draft UDFA signing; Troy | Rookie free-agent contract executed; exact financial terms pending reconciliation | Safety/special-teams competition; no depth position promised | Cleared for and completed May 3-5 rookie minicamp; no new restriction communicated | 2013 ledger Entry 8 | JAX-2013-ROOKIE-MINICAMP-ROSTER-1 |
+| Bacarri Rambo | JAX-BACARRIRAMBO | S | Selected #169 | Four-year rookie contract executed May 2, 2013 | Safety/special-teams evaluation; no depth position promised | Cleared for and completed May 3-5 rookie minicamp; no new restriction communicated | 2013 ledger Entry 8 | JAX-2013-ROOKIE-MINICAMP-ROSTER-1 |
 ## Departed player index
 
 | Player | Stable player ID | Position | Current status | Financial record | Source |
@@ -323,9 +323,15 @@ Completed March agreements, trades, draft rights, and UDFA signings have current
 | Four post-draft UDFA signings | +4 |
 | Current working inventory | **75** |
 
-Jacksonville transferred its **2014 second-round selection** to Washington for Cousins. No 2013 selection was surrendered. The Gabbert/Wilson trade carries no draft pick. Exact transferred-contract, rookie-contract, Top-51, and release accounting remains open, so the old approximately $8.35M post-free-agency planning figure is not a certified current cap-space figure.
+Jacksonville transferred its **2014 second-round selection** to Washington for Cousins. No 2013 selection was surrendered. The Gabbert/Wilson trade carries no draft pick. Exact transferred-contract, net rookie Top-51, and release accounting remains open, so the old approximately $8.35M post-free-agency planning figure is not a certified current cap-space figure.
 
 The four UDFA signings are Brynden Trawick (S, Troy), A.J. Bouye (CB, UCF), Adam Thielen (WR, Minnesota State), and C.J. Anderson (RB, California). Their later real careers are outside active simulation evidence; only the user-authorized Jacksonville signings and current competition roles are canon here.
+
+## Rookie-contract and minicamp addendum
+
+On May 2 Caldwell converted all seven Jacksonville draft-rights entries into signed four-year rookie contracts; Lane Johnson also carries the first-round option mechanism. Verified slot totals and bonuses produce $7,326,170 in gross scheduled 2013 charges before unresolved Top-51 displacement. The working player inventory remains 75 because rights converted to contracts without adding people.
+
+All seven draftees and the four signed UDFAs completed May 3-5 rookie minicamp after the compressed onboarding process. Current evaluation is bounded to the teaching evidence in `career/2013/offseason/rookie_minicamp/output.md`; no depth chart, roster guarantee, package share, or permanent role follows. Medical staff communicated no new restriction for these eleven during the event. Johnson, Poyer, and Moore were phase standouts only, with the next corrections preserved in the output. OTAs have not begun.
 
 ## Material player records for this batch
 
@@ -803,22 +809,19 @@ This table is generated from Document 6 and is only a navigation aid. Active unr
 
 ## End-of-update control block
 
-- Effective through: March 12, 2013, 4:00 p.m. ET, batch time; no additional elapsed time.
+- Effective through: May 5, 2013, rookie minicamp close; OTAs not begun.
 - Document 2/3 source versions: see Document 5 source-version manifest; no rule or authority edits.
-- Document 4 register version: `JAX-2013-FA-ROSTER-1`; supersedes `JAX-2013-INIT-STAGED-1`.
-- Last content-changing update / global package checkpoint: `Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency`.
-- Latest source event: 2013 season-ledger Entry 3, reconciling the already-completed batch.
-- Batch player-count check: 63 historical names - 4 departures + 4 additions = 63 working names; 6 confirmed agreements and 57 unresolved carry-forwards.
+- Document 4 register version: `JAX-2013-ROOKIE-MINICAMP-ROSTER-1`; supersedes `JAX-2013-POSTDRAFT-ROSTER-1`.
+- Last content-changing update / global package checkpoint: `Canonical update - May 5, 2013 - rookie minicamp closed`.
+- Latest source event: 2013 season-ledger Entry 8.
+- Working player count: 75; seven draft-rights entries converted to signed contracts with no count change.
 - Complete primary-status counts / offseason roster legality: not yet verified; working inventory is not a legal count.
-- Game-day subsets: not applicable in this offseason batch.
-- League cap legality / complete accounting liabilities: not certified; $8.35M remains approximate planning room.
-- Batch cash and guarantees: schedules reconciled; payment timing and three base-guarantee terms unspecified.
-- Internal operating budget: staff commitments remain in current staff register; no budget headroom invented.
-- Contract/rights controls: six batch agreements confirmed; inherited control gaps and four release liabilities remain open.
-- Depth/packages/special teams: no new assignment made.
-- Medical: recorded Smith/Grimes reviews preserved; no practice clearance inferred for anyone.
-- Coach-facing boundary and existing operating authority: checked; no private state or authority change.
-- Current Season State updated: yes, `JAX-2013-FA-SNAPSHOT-1`, same checkpoint.
-- Document 6 closure: season-ledger Entry 3 close line and closed-register row; bundle takes effect only when all files are promoted together.
+- Game-day subsets: not applicable.
+- League cap legality / complete accounting liabilities: not certified; seven drafted contracts add $7,326,170 gross scheduled 2013 charges before unresolved Top-51 displacement.
+- Contract/rights controls: seven drafted rookies signed; four UDFA financial details, transferred contracts, inherited control gaps, and release liabilities remain open.
+- Depth/packages/special teams: rookie teaching evidence recorded; no depth position, package share, or final roster place awarded.
+- Medical: eleven rookie participants cleared for and completed this event with no new restriction communicated; no broader or future clearance inferred.
+- Current Season State updated: yes, `JAX-2013-ROOKIE-MINICAMP-SNAPSHOT-1`, same checkpoint.
+- Document 6 closure: season-ledger Entry 8.
 - Full initialization/game-readiness audit: not asserted.
-- Next update: next documented transaction, current-control reconciliation or coach-facing medical event.
+- Next update: May 13 OTA opening or an earlier documented transaction/medical/control event.
