@@ -1,0 +1,9 @@
+# 2013 NFL playing-rule verification
+
+**Research and verification date:** September 19, 2026. This file supports the authoritative summary in Document 2; it is not a second rule authority.
+
+The first pass used the NFL's [2013 Official Playing Rules](https://operations.nfl.com/media/2141/2013-nfl-rulebook.pdf): Rules 4 (clock), 11 (scoring), 14 (enforcement), 15 (replay), and 16 (overtime). The second pass independently checked game structure and overtime against the [2013 NFL Record & Fact Book](https://archive.org/details/officialnflrecor0000unse_z8d4), and roster limits against the 2011 CBA, Articles 25 and 33. The NFL's archived [2012 playoff tiebreaking procedures](https://www.nfl.com/news/nfl-tiebreaking-procedures-09000d5d81ae0a31) were used only as a second check on the unchanged 2013 six-team-field order; the dated Record & Fact Book is controlling.
+
+The source passages establish 15-minute quarters, 12-minute halftime, 40/25-second play clocks, three timeouts per half, two-minute/booth jurisdiction, the 15-minute modified-sudden-death overtime formats, two challenges plus an earned third after two successes, automatic scoring/turnover review, 53 controlled and 46 game-day active players, eight practice-squad players, 2013 scoring values, the two-yard try, kickoff from the 35, kickoff touchback to the 20, and Rule 14's basic enforcement structure. The old third-quarterback game-day exemption ended when the 46-player active rule began in 2011; there is no separate emergency-quarterback exemption to add in 2013.
+
+Limitations: the kernel does not attempt to encode every rare Rule 14 case. It encodes the aggregate penalty event plus the enforcement classes it can reconcile; an unsupported material case fails to a pause. It never substitutes a current rule. Exact tiebreak facts still must come from simulated records, not historical outcomes.

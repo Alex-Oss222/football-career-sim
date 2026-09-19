@@ -1,16 +1,16 @@
 # Document 7: Game Simulation and Resolution Engine
 
-**Document status:** Design approved; runtime NOT READY. [Game readiness](../state/game_readiness.md) and the executable readiness check track the missing calibrated kernel, period rules and verified private Engine State deployment. Deterministic packet support is implemented under `runtime/`; it is not a complete football engine. No game, including a background game, may be resolved until all prerequisites are verified.
+**Document status:** ACTIVE — RUNTIME READY. [Game readiness](../state/game_readiness.md) and the executable readiness check verify the calibrated shared kernel, period rules and authenticated private Engine State deployment before every game path.
 
-**Lock status:** `DESIGN LOCKED; ERA CALIBRATION PENDING`
+**Lock status:** `DESIGN AND 2013 ERA CALIBRATION LOCKED`
 
-**Runtime status:** `AUTHORING MASTER - DO NOT LOAD DURING PLAY UNTIL §8 IS POPULATED`
+**Runtime status:** `READY — LIVE PREFLIGHT STILL REQUIRED`
 
-**Document version:** `0.8-authoring`
+**Document version:** `1.0-runtime`
 
-**Last verified:** `2026-09-18`
+**Last verified:** `2026-09-19`
 
-**Last Document 7 content-changing update:** `2026-09-18 - clarified that engine design is approved but runtime state is not yet instantiated, disabled game resolution until §8 calibration and Engine State initialization are complete, reconciled the three output templates, and updated repository/library task descriptions.`
+**Last Document 7 content-changing update:** `2026-09-19 - activated the verified 2013 calibration, shared kernel, period rules and authenticated private Engine State runtime while retaining mandatory fail-closed preflight.`
 
 **Supersedes:** Nothing. This is an addition to the existing package, not a replacement of any of Documents 1-6.
 
@@ -232,15 +232,9 @@ Extends Document 1 §3.3, Document 2 §12, and Document 3 §10.3, rather than re
 
 ## 8. Era calibration and execution prerequisites
 
-The current clock is May 2013. [2012 calibration research](../library/2012_game_calibration.md) supplies sourced league aggregate passing/rushing, completion, explosive, sack and interception inputs with explicit denominators. Offense/defense table reconciliation is a same-publisher cross-check, not independent confirmation. These research inputs have not yet calibrated a drive distribution.
+The current clock is August 8, 2013. [2012 calibration research](../library/2012_game_calibration.md) and its deterministic data artifact supply independently checked drive, scoring, pass/rush, turnover, sack, penalty, explosive and special-teams inputs. They also define the sourced bounded injury model. Document 2 owns the verified 2013 playing rules and ordered postseason tiebreaks.
 
-Still required before game execution:
-
-- Independent verification of the aggregate baseline and complete fumble/penalty/special-teams inputs.
-- Position/exposure injury rates and severity/return distributions with applicable sources; rushing fumbles cannot stand in for all fumbles or fumbles lost.
-- Verified 2013 playing rules and ordered postseason tiebreaks under Document 2.
-- One implemented and calibrated football kernel for interactive and background games, including clock/score/stat reconciliation, mandatory pauses and regression/simulation validation.
-- A deployed private Engine State service with access isolation, frozen packets, reproducible draws, append-only closure and recovery, initialized with the current branch inputs.
+The single `runtime.kernel` entry point powers interactive and background games; the two public path names are aliases, not alternate adjudicators. It validates score, clock, yardage, participation and turnover accounting and supports autonomous routine management plus resumable material-decision pauses. The authenticated localhost-only Engine State service persists outside the repository, seeds a career once, freezes immutable event identities before a draw, refuses altered packets, records explicit append-only corrections and performs live recovery/readiness checks. `python scripts/check_game_readiness.py` revalidates artifacts, runtime tests, current snapshot binding and the live service and fails closed before either game path.
 
 The existing [financial research](../library/2013_league_calendar_and_financial_rules.md) and [current worksheet](../career/2013/offseason/current_cap_worksheet.md) already supply the established financial rules and known branch accounting. Preserve their stated uncertainty.
 

@@ -82,7 +82,7 @@ The sourced Jacksonville calendar controls this season's opponent/date rails, in
 
 ### 5.3 Postseason qualification and tiebreakers
 
-**UNRESOLVED FOR EXECUTION:** the exact ordered 2013 division, wild-card and multi-club restart procedures need period-specific verification. The modern NFL tiebreaking page includes a different wild-card field and is not a sufficient 2013 authority. Until verified, display equal records as tied and do not fabricate a seed, playoff berth or draft-order tiebreak. See the game-readiness checklist.
+**2013 order, verified from the 2013 NFL Record & Fact Book and independently checked against the NFL's archived 2012 playoff procedures.** Division: head-to-head; division record; common games; conference record; strength of victory; strength of schedule; combined conference ranking in points scored/allowed; combined league ranking in points scored/allowed; net points in common games; net points in all games; net touchdowns; coin toss. Wild card (two clubs): head-to-head if applicable; conference record; common games (minimum four); strength of victory; strength of schedule; the two combined-ranking steps; net conference points; net all-game points; net touchdowns; coin toss. For three or more clubs, first reduce each division to its highest-ranked club, apply head-to-head sweep, then conference record and the remaining wild-card sequence; after a club qualifies, restart with step one for the remaining berth. Division champions seed 1-4 by the wild-card procedure; wild cards seed 5-6 by that procedure. Apply head-to-head only when its stated game/sweep condition exists; never manufacture a tiebreak fact.
 
 ## 6. Master calendar
 
@@ -90,7 +90,11 @@ Read [the active career calendar](../career/2013/calendar.md) before advancing t
 
 ## 7. Playing rules
 
-**UNRESOLVED FOR GAME EXECUTION:** verify the applicable 2013 scoring, clock, overtime, replay/challenge, kickoff/onside, enforcement and roster-activation rules from period sources. Do not substitute today's rulebook. Document 7's pause gate applies independently of which game-detail mode is used. A verified calendar alone does not close this rules requirement.
+**2013 playing rules, verified:** four 15-minute quarters; 12-minute halftime; three charged timeouts per half; ordinary 40-second play clock and 25 seconds after specified administrative stoppages. Inside two minutes of either half, replay authority rests with the replay official and clock/runoff rules are enforced by the executable rules layer. Regular-season and preseason overtime use one 15-minute modified-sudden-death period: an opening-possession field goal permits a reply; an opening touchdown or defensive score ends the game; after both teams possess, the next score wins, and a regular/preseason tie may stand when the period expires. Postseason uses successive 15-minute periods and cannot end tied.
+
+Each club starts with two coach challenges and earns a third only after two successful challenges. A coach cannot challenge after the two-minute warning or in overtime; the replay official initiates those reviews. Every scoring play and turnover is automatically reviewable by the booth, and an improper coach challenge cannot replace booth authority. Field goals are three points, a safety two, and the 2013 try is snapped at the two-yard line (kick or scrimmage play; successful kick one point, successful run/pass two). Kickoffs are from the 35 and an untouched end-zone kickoff touchback comes to the 20.
+
+Penalty execution uses the 2013 Rule 14 structure: enforce from the applicable basic/previous/succeeding/dead-ball spot, distinguish live-ball from dead-ball fouls, offset qualifying simultaneous live-ball fouls, apply automatic first down/loss of down only where the foul specifies it, and allow decline where permitted. The runtime models the period aggregate foul/yardage burden; any rare enforcement case that it cannot represent must pause rather than improvise a modern rule.
 
 ## 8. Roster, reserve and availability
 
@@ -193,7 +197,7 @@ The 2011 CBA boundaries and phase-specific permissions are documented in [The Pr
 
 ## 14. Medical and player-safety environment
 
-Qualified medical personnel independently control diagnosis, clearance and restrictions. Coaches receive only plausible communicated information. Unknown medical facts stay unknown; the absence of a diagnosis does not imply clearance. Game injury occurrence and return timelines require the era-specific calibration in Document 7 §8, currently incomplete.
+Qualified medical personnel independently control diagnosis, clearance and restrictions. Coaches receive only plausible communicated information. Unknown medical facts stay unknown; the absence of a diagnosis does not imply clearance. The era-specific injury occurrence and severity model is documented in the 2012 calibration record. Under the 2013 NFL concussion protocol, a suspected concussion triggers removal and evaluation; return requires the staged medical process and independent neurological clearance. A coach cannot waive, shorten or override that hold.
 
 ## 15. Technology, data and communication
 

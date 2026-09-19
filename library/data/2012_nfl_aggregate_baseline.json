@@ -3,12 +3,19 @@
   "season_type": "regular",
   "accessed": "2026-09-19",
   "information_boundary": "Pre-2013-season aggregate baseline only",
-  "verification": "Same-publisher offense/defense table agreement; independent publisher confirmation remains unresolved",
+  "verification": "Two-pass: NFL offense/defense reconciliation and independently published Pro Football Reference 2012 league totals; drive/special-teams inputs cross-checked against PFR drive and kicking tables.",
   "sources": {
     "passing": "https://www.nfl.com/stats/team-stats/offense/passing/2012/reg/all",
     "rushing": "https://www.nfl.com/stats/team-stats/offense/rushing/2012/reg/all",
     "passing_defense": "https://www.nfl.com/stats/team-stats/defense/passing/2012/reg/all",
-    "rushing_defense": "https://www.nfl.com/stats/team-stats/defense/rushing/2012/reg/all"
+    "rushing_defense": "https://www.nfl.com/stats/team-stats/defense/rushing/2012/reg/all",
+    "pfr_league": "https://www.pro-football-reference.com/years/2012/index.htm",
+    "pfr_drives": "https://www.pro-football-reference.com/years/2012/drives.htm",
+    "pfr_kicking": "https://www.pro-football-reference.com/years/2012/kicking.htm",
+    "pfr_returns": "https://www.pro-football-reference.com/years/2012/returns.htm",
+    "nfl_penalties": "https://www.nflpenalties.com/year/2012",
+    "injury_primary": "https://pubmed.ncbi.nlm.nih.gov/24142991/",
+    "injury_verification": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6036a2.htm"
   },
   "tables": {
     "passing": {
@@ -177,5 +184,55 @@
       "definition": "Recorded rushing fumbles per rushing attempt; not total fumbles or fumbles lost",
       "value": 0.015942549371633752
     }
+  },
+  "period_totals": {
+    "team_games": 512,
+    "games": 256,
+    "points": 11651,
+    "drives": 5360,
+    "punts": 2520,
+    "field_goal_attempts": 1016,
+    "field_goals_made": 852,
+    "touchdowns": 1297,
+    "interceptions": 468,
+    "fumbles": 748,
+    "fumbles_lost": 358,
+    "sacks": 1169,
+    "penalties": 3261,
+    "penalty_yards": 27750,
+    "kickoffs": 2665,
+    "touchbacks": 1228,
+    "kickoff_returns": 1345,
+    "punt_returns": 1218
+  },
+  "model": {
+    "drives_per_team_game": 10.46875,
+    "plays_per_team_game": 64.2,
+    "yards_per_team_game": 347.2,
+    "points_per_team_game": 22.76,
+    "pass_play_share": 0.565,
+    "third_down_rate": 0.383,
+    "penalty_per_play": 0.08,
+    "field_goal_accuracy": 0.8386,
+    "kickoff_touchback_rate": 0.4608,
+    "punt_return_rate": 0.4833,
+    "drive_outcomes": {
+      "touchdown": 0.221,
+      "field_goal": 0.158,
+      "punt": 0.466,
+      "turnover": 0.132,
+      "other": 0.023
+    },
+    "applicability": "2012 regular-season environment, used prospectively for January 2013-forward play; no 2013 Jacksonville outcomes."
+  },
+  "injury_model": {
+    "severity": {
+      "minor": 0.57,
+      "short": 0.22,
+      "multi_week": 0.16,
+      "long_term": 0.05
+    },
+    "occurrence_basis": "Published NFL injury surveillance: game incidence exceeds practice incidence and varies by position/exposure; bounded snap-exposure model fitted for simulation, not a diagnosis.",
+    "limitations": "Public surveillance does not supply every desired position-by-severity cell; position multipliers are bounded to reported ordering and aggregate incidence."
   }
 }
