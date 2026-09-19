@@ -473,3 +473,77 @@ The current count remains 64 controlled players with 26 open offseason places. E
 | `Canonical correction - May 23, 2013 - repository continuity and readiness reconciled` | May 23, 2013, after OTA Day 6 | Active foundation references, phase views, repository dependencies and Documents 4/5 |
 
 **Commit closed — Canonical correction - May 23, 2013 - repository continuity and readiness reconciled — canonical through May 23, before June 4 OTA work**
+
+## Entry 14 — June 4-7 OTA block 3 and OTA phase closed
+
+**Effective date:** June 7, 2013
+**Checkpoint:** `Canonical update - June 7, 2013 - OTA phase closed`
+
+Jacksonville completed the verified voluntary, non-contact OTA block with the frozen recall/communication test. All 64 controlled players completed assigned work; Grimes advanced to broader medically controlled non-contact repetitions but remained restricted from the longest competitive period, with no setback, new diagnosis or unrestricted clearance. No other new restriction was communicated.
+
+Power, Inside Zone, Stick, Drive, narrow Mesh, base protection/changed-front communication, base defense, one pressure presentation and core special-teams substitution survived the close. Broader Mesh, Y-Cross, Outside Zone, PRESS, broad protection/motion and extra defensive disguise were deferred. Cousins retained a narrow first practice sequence over a closing Henne; no QB1 was named. Individualized cutups/teaching sheets were assigned through existing staff for Bray, the interior line, Kelce and the defensive exchange. There was no transaction, permanent depth award or cap change.
+
+**Primary record:** `offseason/otas/output.md`; reviewed summary: `offseason/otas/standouts.md`.
+**Next event:** June 11-13 mandatory veteran minicamp.
+
+## Entry 15 — June 11-13 mandatory veteran minicamp closed
+
+**Effective date:** June 13, 2013
+**Checkpoint:** `Canonical update - June 13, 2013 - mandatory minicamp closed`
+
+Stone froze the three-day exam before work and ran common-floor, changed-picture, situational and retention periods without moving the test. The offense carried the retained core plus simple Counter and selected Boot Flood; Counter remained presentation-limited, while broader Mesh, Y-Cross, Outside Zone and PRESS stayed out of the dependable camp-entry menu. Crennel carried sound base defense and one pressure but removed added disguise when communication cost exceeded its benefit. Lowry's core units became more independent, with emergency replacement still open.
+
+All 64 controlled players completed assigned work. Grimes remained medically limited from the longest competitive period; no new injury or restriction was communicated. Cousins entered camp narrowly first in practice order, Henne immediately competitive, Wilson steady and Bray on a reduced core. Johnson led provisional right-tackle work; right guard remained open. Moore, Poyer, Rambo, Trawick and Thielen earned harder camp work, not permanent jobs. The Veteran Minicamp Family Dinner occurred under voluntary, private and non-evaluative rules.
+
+The staff issued lawful individual conditioning, recovery, treatment, study and correction priorities for the June 14-July 21 break. No transaction, final roster decision or cap change occurred.
+
+**Primary record:** `offseason/mandatory_minicamp/output.md`; reviewed summary: `offseason/mandatory_minicamp/standouts.md`.
+**Next event:** July 22 rookie and quarterback report.
+
+## Entry 16 — June 14-July 21 protected pre-camp interval closed
+
+**Effective date:** July 21, 2013
+**Checkpoint:** `Canonical update - July 21, 2013 - protected pre-camp interval closed`
+
+Jacksonville held no invented club practice during the verified break. Players retained lawful individual conditioning, recovery, treatment/rehab, active-playbook study, support communication and personal/family time. Staff prepared camp scripts, competition structure and individualized 2013-era teaching materials. No player practice performance, attendance grade, transaction, injury, role award or cap change was manufactured during the interval.
+
+**Next event:** July 22 rookie and quarterback report.
+
+## Entry 17 — July 22-25 camp reporting and acclimation closed
+
+**Effective date:** July 25, 2013
+**Checkpoint:** `Canonical update - July 25, 2013 - full training-camp report closed`
+
+Rookies and quarterbacks completed reporting, medical communication, equipment/administrative work, conditioning preparation, meetings and lawful acclimation July 22-24; no full-team veteran practice occurred. All 64 controlled players reported by July 25 and completed assigned entry work. Medical staff cleared Grimes for full football participation with ordinary workload monitoring and no football restriction. No new injury or limitation was communicated.
+
+Stone communicated the common standard, medical honesty, intelligent recovery and evidence-based competition rules, then froze the opening football goals before practice. The Camp Opening Family Dinner occurred under voluntary, private and non-evaluative rules. No job was awarded from reporting, no transaction occurred and the May 5 cap worksheet remained unchanged.
+
+**Primary record:** `offseason/training_camp/output.md`.
+**Next event:** July 26 opening full-team practice.
+
+## Entry 18 — July 26-August 3 opening camp and stadium scrimmage closed
+
+**Effective date:** August 3, 2013
+**Checkpoint:** `Canonical update - August 3, 2013 - stadium scrimmage closed`
+
+Jacksonville completed the verified opening sequence, preserved July 30 as a players' day off and progressed from recall to lawful padded execution, situation and stadium operation. Cousins earned the provisional first quarterback hierarchy with Henne second and still competitive; Wilson remained steady and Bray stayed on assigned core work. Johnson led right tackle; Rackley moved provisionally first at right guard; Jones-Drew, Shorts/Blackmon and Lewis led their working groups. Crennel kept base defense plus one trusted pressure, with Moore, Poyer and Rambo earning defined harder work. Lowry expanded multi-unit opportunities for Trawick, Rambo and Thielen.
+
+The August 3 scrimmage confirmed improved huddle/sideline operation while exposing corrections in red-zone decision-making, protection/substitution, second punt-return emergency procedure and selected defensive force/fit communication. The Mid-Camp Family Night/Dinner and a light voluntary recreation period occurred without football evaluation. All 64 remained controlled and available; no new restriction, transaction or cap change occurred.
+
+**Primary record:** `offseason/training_camp/output.md`; role details: `position_battles.md` and `roster_decisions.md`.
+**Next event:** August 5 post-scrimmage practice.
+
+## Entry 19 — August 5-8 Miami preparation and final walkthrough closed
+
+**Effective date:** August 8, 2013
+**Checkpoint:** `Canonical update - August 8, 2013 - final Miami walkthrough closed`
+
+Stone converted the scrimmage corrections into a reduced, executable preseason menu and closed the August 8 walkthrough without adding a large package. Cousins opens the Miami evaluation, Henne follows with meaningful work, Wilson is prepared next and Bray may receive a later reduced-core segment; this is a preseason exposure plan, not a permanent QB1 declaration or promised snap distribution. Stone remains offensive caller, Crennel defensive caller and Lowry special-teams coordinator.
+
+Current practice roles are synchronized in the camp battle/decision records: Johnson and Rackley are provisional firsts on the right side; Jones-Drew leads the backs; Shorts/Blackmon lead the receivers; Lewis leads the tight ends; Grimes/Ball lead outside corners with Poyer in nickel/outside evaluation; Lowery/Rambo take first safety work; and Moore receives selected first-group/sub-package work. The roster remains 64. Qualified medical staff communicated all 64 available for assigned work through the walkthrough, subject to fresh game-day communication. No transaction or cap event occurred; May 5 Top-51 planning room remains approximately $7.0M-$7.4M.
+
+**Primary record:** `offseason/training_camp/output.md`; reviewed summary: `offseason/training_camp/standouts.md`.
+**Last completed event:** August 8 final walkthrough.
+**Next event:** August 9 Preseason Game 1 vs Miami. **The game is NOT STARTED.**
+
+**Commit closed — Canonical update - August 8, 2013 - final Miami walkthrough closed — canonical through August 8, after the final walkthrough and before Preseason Game 1**

@@ -1,36 +1,21 @@
-<!-- sim-meta: {"event_entry": 12, "kind": "evidence_summary", "source": "career/2013/offseason/otas/output.md", "source_sha256": "fd3db10a6053d19d1df143f4137b9becb05cba7dbba36c5b6a0f3a818b190a5e", "status": "IN_PROGRESS", "through": "2013-05-23"} -->
+<!-- sim-meta: {"event_entry": 14, "kind": "evidence_summary", "source": "career/2013/offseason/otas/output.md", "source_sha256": "27c0f0095a9fa81abcc478563e26fb5d10af0da6dd2410e6ae35c30cd428b8cb", "status": "COMPLETE", "through": "2013-06-07"} -->
 
 # OTA standouts and open teaching points
 
-**Status:** IN PROGRESS, evidence through May 23, 2013.
-**Source:** [OTA output](output.md), May 13-15, May 20-21 and May 23; season-ledger Entries 10-12.
+**Status:** COMPLETE, evidence through June 7, 2013.
+**Source:** [OTA output](output.md). This is an evidence summary, not a second event ledger or permanent depth chart.
 
-These are summaries of observed, taught, non-contact work. They establish neither a permanent tier nor a starting, roster, package or workload award. New evidence may change the assessment.
-
-| Player or unit | Evidence through the latest completed work | Carry-forward limit |
+| Player/unit | Closed OTA evidence | Carry-forward |
 |---|---|---|
-| Kirk Cousins | Led cumulative huddle, cadence and protection communication. Corrected one late May 23 move to the underneath Mesh window. | First in the provisional June 4 practice sequence; no QB1 decision. |
-| Chad Henne | Improved changed-picture resets in the first two blocks and handled comparable May 23 work cleanly, narrowing the operational gap. | Comparable harder work immediately behind Cousins; competition remains open. |
-| Brad Meester | Stabilized point declarations and the shared correction cycle across all three blocks. | The interior combination echo still requires an unprompted June 4 test. |
-| Lane Johnson | Retained tackle assignments through harder fronts and carried earlier corrections into veteran work. | Continued demanding developmental work; no starting award. |
-| Cecil Shorts | Preserved taught Stick/Drive landmarks through leverage changes and limited motion. | Evidence is confined to the taught menu. |
-| C.J. Anderson | Retained the taught back track and check responsibility. | No workload or roster guarantee. |
-| Paul Posluszny and base defense | Base alignment and exchange increasingly operated without his rescue. The one retained pressure presentation survived May 23 recall. | No wider pressure or disguise installation. |
-| Jordan Poyer | Retained leverage and base exchange communication through changed distributions. | Corner evaluation remains provisional. |
-| Sio Moore | Retained the original landmark correction; his later changed-distribution handoff was on time May 23. | Retest after the break before treating transfer as settled. |
-| Brynden Trawick | Retained multiple taught special-teams jobs with less placement and no May 23 placement correction. | Earned first June 4 exposure to another already-taught cross-unit sequence, not a final job. |
-| Adam Thielen | Retained cross-unit work; corrected one unnecessary confirmation wait May 23. | Continued provisional exposure. |
-| Bacarri Rambo | Retained substitution language; the distinct defensive exchange correction held May 23. | Recall test remains appropriate after the break. |
-| Travis Kelce | Alignment-transfer block fit improved, but a later May 23 group rep lost the required base. | Technique remains an open teaching point. |
-| Tyler Bray | Core cadence-to-footwork work improved; progression timing remained late after a changed coverage picture. | Concentrated core timing work before additional concept volume. |
-| Interior offensive line | Correct return work followed a May 23 changed-front communication reset. | Improved, not yet stable enough to justify another run family. |
+| Kirk Cousins | Most consistent cumulative huddle, protection and situational operation; corrected the changed Mesh outlet. | Narrow first position in the camp practice sequence; no QB1 award. |
+| Chad Henne | Closed the changed-picture gap and earned/handled first exposure, but needed one situational prompt. | Comparable camp competition immediately behind Cousins. |
+| Brad Meester / offensive line | Meester stabilized point language; the unit finally retained a changed-front correction without coach rescue. | Physical combinations and right guard remain open for padded evidence. |
+| Lane Johnson | Retained assignments and communication through the harder changed front. | Leading right-tackle work remains provisional pending physical camp evidence. |
+| Cecil Shorts | Most dependable receiver landmarks across the taught core. | Broader camp presentation earned; no target promise. |
+| Travis Kelce | Alignment knowledge traveled; movement-fit base remained inconsistent. | Individual cutup, teaching sheet and padded re-test. |
+| Paul Posluszny / base defense | Unit needed less rescue on front, fit and exchange. | Base menu advances; disguise remains deliberately narrow. |
+| Sio Moore, Jordan Poyer and Bacarri Rambo | Retained corrected distribution, leverage/exchange and substitution language. | Harder camp work, not awarded jobs. |
+| Brynden Trawick and Adam Thielen | Cross-unit communication held after correction and without constant sideline placement. | Continued special-teams competition. |
+| Tyler Bray | Base cadence/footwork improved; changed distribution still required a reduced picture and re-test. | Concentrated core development with Bates/Skalaski cutups. |
 
-John Parker Wilson remained assignment-sound without separating his role. Brent Grimes' controlled participation is a medical-availability record, not proof of a football role or unrestricted clearance.
-
-## Dated evidence
-
-- [May 13-15 block](output.md#may-13-15--ota-block-1): initial retention, named positives and open corrections.
-- [May 20-21 block](output.md#may-20-21--ota-block-2): transfer work and the provisional practice sequence.
-- [May 23 day](output.md#may-23--ota-day): latest comparable quarterback work, retained corrections and June 4 responsibilities.
-
-Update this summary whenever new OTA evidence closes. Preserve earlier dated outputs. The June block has not been simulated.
+Brent Grimes' broader controlled non-contact participation was medical progression only. Every final role and roster question remains subject to later football and medical evidence.

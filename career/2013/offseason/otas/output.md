@@ -1,8 +1,8 @@
-<!-- sim-meta: {"event_entry": 12, "kind": "phase_output", "status": "IN_PROGRESS", "through": "2013-05-23"} -->
+<!-- sim-meta: {"event_entry": 14, "kind": "phase_output", "status": "COMPLETE", "through": "2013-06-07"} -->
 
 # Jacksonville Jaguars — 2013 OTAs Output
 
-**Overall status:** IN PROGRESS; completed through May 23, 2013. June 4-7 has not begun.
+**Overall status:** COMPLETE through June 7, 2013.
 **Evidence summary:** [OTA standouts](standouts.md).
 **History rule:** Each dated block retains its own then-current next-event statement. Read the latest block and [current state](../../../../state/05_Current_Season_State.md) to resume.
 
@@ -175,3 +175,43 @@ Stone told the team that the break did not create unscheduled club practice. Pla
 The staff's June 4 opening order is fresh medical communication, unprompted core recall, the changed-front combination rule, the narrow Mesh spacing, base defensive exchange and the single pressure presentation. Cousins receives the first harder quarterback presentation, with Henne immediately receiving comparable work; Wilson remains in rotation and Bray begins with concentrated core timing. Trawick receives the earned first cross-unit sequence, while Kelce, Moore and Rambo are retested on the named corrections rather than assigned unrelated complexity.
 
 **Next scheduled football event:** June 4-7 OTA block 3. **June 4-7 has not been run.**
+
+## June 4-7 — OTA block 3 and phase close
+
+**Event status:** COMPLETE through June 7, 2013.
+**Event boundary:** Jacksonville closed the verified voluntary OTA schedule without contact. The April 16-18 gap remains preserved. Mandatory minicamp had not begun during this work.
+
+### Medical, participation and frozen test
+
+Qualified medical personnel refreshed football-use instructions before June 4 and each later workday. All 64 controlled players participated in the work assigned to them. Brent Grimes advanced to a broader but still medically controlled non-contact team assignment; he remained out of the longest competitive segment and had no unrestricted camp clearance. No new diagnosis, injury or restriction was communicated. Voluntary participation and medical placement supplied no personnel grade.
+
+Before the first field period, Stone, Tice, Crennel and Lowry froze the block's test: unprompted core recall; changed-front protection and combination calls; narrow Mesh spacing; base defensive exchange plus the single retained pressure; and special-teams substitution without sideline placement. The staff did not move that test after seeing results and did not disguise camp intensity as OTA work.
+
+### June 4-5 — recall, correction and transfer
+
+Cousins opened the harder quarterback sequence and communicated the huddle, cadence and protection point cleanly, but held the ball once when the changed picture moved the Mesh outlet. Henne correctly reset the same protection picture and delivered on time; his clean work earned the next first exposure rather than an immediate role award. Cousins corrected the outlet decision on its return. Wilson remained assignment-sound. Bray's cadence and footwork held in the base presentation, then his eyes and feet separated when the coverage distribution changed. Bates and Skalaski isolated those two reps, paired them with the corrected base example, walked the progression and re-tested it; Bray then operated the reduced picture correctly.
+
+Meester's declaration and Johnson's echo stabilized the first changed-front series. Rackley and Nwaneri were late once transferring the interior combination, but the line corrected without a coach supplying the second answer. Tice therefore retained Power and Inside Zone as dependable OTA material, kept Counter for minicamp teaching and left Outside Zone out of the examination menu. Narrow Mesh survived from more than one formation when Shorts and Kelce held their landmarks. Broader Mesh and Y-Cross remained too expensive for the current non-contact block.
+
+Crennel's base unit communicated the front, fit and coverage exchange with less rescue. Posluszny organized the front; Moore passed a changed distribution on time after an earlier reminder; Poyer and Rambo completed the secondary exchange. The retained pressure presentation failed once when the force call came late, then operated correctly after Crennel stripped away the disguise and re-tested the ownership. He carried the pressure to minicamp but declined to add another one.
+
+Lowry deliberately inserted an unexpected substitute into each core unit. Trawick and Rambo communicated the replacement cleanly; Thielen initially repeated the outgoing player's landmark rather than his own, accepted Drake's and Lowry's correction, and handled the return. Specialist operation stayed clean. No final unit place was awarded.
+
+### June 6-7 — independence and staff close
+
+Henne's earned first exposure was orderly until a two-minute clock prompt, when he needed Bates to restate the situation. Cousins subsequently handled the same reduced-menu situation without a prompt but missed one placement outside the receiver's frame. Stone distinguished command from throw execution: Cousins retained a narrow operational lead, Henne remained close and earned comparable camp work, and neither was named QB1. Wilson remained the steady third sequence. Bray retained the simplified progression but was not advanced to the entire situational menu.
+
+The offensive line carried the changed front on the final recall, though the right guard competition remained open and the staff wanted padded evidence before trusting the physical combinations. Kelce retained his alignment assignment but lost his base on one movement fit; the correction became an individual camp-entry priority. Anderson again handled track and check responsibility. Shorts remained the receiver most dependable at preserving the taught landmarks, while Thielen earned continued receiver/special-teams competition through his corrected communication rather than one isolated catch.
+
+The defense finished with base front, fit and coverage exchange dependable enough for mandatory-minicamp variation. The single pressure could be carried only from its clean presentation; disguise would wait. Moore earned harder distribution work, Poyer earned broader outside/inside evaluation, and Rambo retained both defensive and special-teams substitution language. Grimes' work remained a medical progression, not a depth award.
+
+### OTA close decisions
+
+- **Retained:** huddle/cadence/formation operation; Power, Inside Zone, Stick, Drive and narrow Mesh; base protection point and changed-front communication; base defense and one clean pressure presentation; core punt, kickoff and return substitution language.
+- **Simplified/deferred:** broader Mesh, Y-Cross, Outside Zone, broad motion/protection variation, PRESS tempo and added defensive disguise. Counter enters minicamp as taught work, not as a presumed dependable call.
+- **Individual support:** Bates and Skalaski will continue Bray's short progression cutups; Yarno will prepare the interior line's changed-front comparison; Zernhelt will isolate Kelce's alignment-to-base correction; Crennel's video support will pair the late force/exchange with its corrected rep. These supplements do not replace the complete playbook.
+- **Provisional camp bands:** Cousins narrowly first and Henne immediately behind in the quarterback sequence; Wilson steady behind them; Bray on concentrated core work. Johnson continues the leading right-tackle work, with physical proof deferred to camp. Poyer, Moore, Rambo, Trawick and Thielen earned harder or broader work, not jobs.
+
+OTAs closed with 64 controlled players, no transaction, no permanent depth decision and no cap change. The May 5 Top-51 planning range remains approximately $7.0M-$7.4M.
+
+**Next scheduled football event:** June 11-13 mandatory veteran minicamp.

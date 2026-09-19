@@ -2,15 +2,16 @@
 
 **Function:** Branch-facing schedule and phase control.
 **Historical source:** `../../library/2013_jacksonville_master_calendar.md`.
-**Current branch checkpoint:** May 23, 2013, OTA Day 6 closed; Entry 13 administrative reconciliation preserves that clock.
+**Current branch checkpoint:** August 8, 2013, final walkthrough closed; Entry 19 is the latest event.
 **Rule:** Dates/opponents/deadlines are historical rails. Attendance, transactions, performance and game results are branch events.
 
 ## Current checkpoint
 
-- Completed through: May 23, OTA Day 6.
-- Next scheduled football work: **OTA block 3, June 4-7**.
-- Preserved continuity gap: April 16-18 voluntary veteran minicamp was not run before the simulation advanced. Do not retroactively create attendance, install or player evidence.
-- Roster control remains 64. Entry 12 closes May 23 participation, medical communication and football work. No transaction changed the May 5 Top-51 worksheet. June 4-7 has not been run.
+- Completed through: **August 8 final walkthrough**.
+- Next scheduled event: **August 9 Preseason Game 1 vs Miami, 7:30 p.m.** The game is **NOT STARTED**.
+- Preserved continuity gap: April 16-18 voluntary veteran minicamp was not run and was not backfilled.
+- Roster control remains 64. All players were available for assigned August 8 work, subject to fresh game-day medical communication.
+- No transaction changed the May 5 Top-51 worksheet.
 
 ## 2013 branch schedule
 
@@ -28,18 +29,18 @@
 | **May 13-15** | OTA block 1 | `offseason/otas/plan.md`, `output.md` | **Complete** |
 | **May 20-21** | OTA block 2 | same | **Complete** |
 | **May 23** | OTA day | same | **Complete** |
-| **Jun. 4-7** | OTA block 3 | same | **Next** |
-| **Jun. 11-13** | Mandatory veteran minicamp | `offseason/mandatory_minicamp/plan.md`, `output.md` | Future |
-| Jun. 14-Jul. 21 | Pre-camp individual preparation | readiness standard | Future |
-| **Jul. 22** | Rookies and quarterbacks report | `offseason/training_camp/plan.md` | Future |
-| Jul. 23-24 | Rookie/QB acclimation and preparation | training-camp plan / medical-performance process | Future |
-| **Jul. 25** | Full team / veterans report | `offseason/training_camp/plan.md` | Future |
-| Jul. 26-Aug. 3 | Published opening full-team camp/practice sequence | `offseason/training_camp/plan.md`, [output.md](offseason/training_camp/output.md) | Future |
-| Aug. 5 | Full-padded camp practice; afternoon walkthrough scheduled | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Future |
-| Aug. 6 | Full-padded camp practice | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Future |
-| Aug. 7 | Training-camp practice | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Future |
-| Aug. 8 | Final walkthrough before preseason opener | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Future |
-| **Aug. 9** | Preseason 1 vs Miami, 7:30 p.m. | [preseason game index](preseason/README.md) | Future |
+| **Jun. 4-7** | OTA block 3 | same | **Complete** |
+| **Jun. 11-13** | Mandatory veteran minicamp | `offseason/mandatory_minicamp/plan.md`, `output.md` | **Complete** |
+| Jun. 14-Jul. 21 | Pre-camp individual preparation | readiness standard | **Complete; no club practice invented** |
+| **Jul. 22** | Rookies and quarterbacks report | `offseason/training_camp/plan.md` | **Complete** |
+| Jul. 23-24 | Rookie/QB acclimation and preparation | training-camp plan / medical-performance process | **Complete** |
+| **Jul. 25** | Full team / veterans report | `offseason/training_camp/plan.md` | **Complete** |
+| Jul. 26-Aug. 3 | Published opening full-team camp/practice sequence and Aug. 3 stadium scrimmage | `offseason/training_camp/plan.md`, [output.md](offseason/training_camp/output.md) | **Complete; July 30 day off preserved** |
+| Aug. 5 | Full-padded camp practice; afternoon walkthrough scheduled | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | **Complete** |
+| Aug. 6 | Full-padded camp practice | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | **Complete** |
+| Aug. 7 | Training-camp practice | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | **Complete** |
+| Aug. 8 | Final walkthrough before preseason opener | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | **Complete — latest event** |
+| **Aug. 9** | Preseason 1 vs Miami, 7:30 p.m. | [preseason game index](preseason/README.md) | **Next — NOT STARTED** |
 | Aug. 12 | Full-padded camp practice | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Future |
 | Aug. 13 | Training-camp practice | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Future |
 | Aug. 14 | Full-padded camp practice | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Future |

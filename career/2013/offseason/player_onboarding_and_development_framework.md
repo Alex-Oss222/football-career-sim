@@ -63,6 +63,8 @@ Every phase uses the same basic teaching cycle:
 
 **Explain → Show → Walk → Rep → Correct → Rep again → Retain → Add complexity.**
 
+When a player needs a narrower teaching bridge, the position coach may use the club's existing assistant, quality-control and video-support structure to prepare a short player-specific practice-film cutup and a position-specific Iteration I teaching sheet. The supplement isolates the correction, pairs the unclear rep with a corrected example when available, diagrams useful adjacent responsibilities, and is followed by a walkthrough or re-test. It simplifies the explanation without changing the assignment or replacing the player's access to the complete active playbook; Bates owns quarterback cutups with Skalaski supporting under Tice, while Crennel and the defensive position coaches direct defensive requests.
+
 Stone's playbook already supports this. Calls are modular. Concepts are taught as jobs rather than making players memorize isolated routes — the quarterback sees a stable concept even when a TE, WR, RB, or FB fills a different job within it.
 
 One rule applies across the whole building: **do not install the next layer because the calendar says you can; install it because the previous layer is usable.** More plays installed is not automatically progress.
