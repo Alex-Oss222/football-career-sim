@@ -1,124 +1,152 @@
 # Jacksonville Jaguars — May 5, 2013 Top-51 Cap Reconciliation
 
-**Status:** RECONCILED PLANNING WORKSHEET WITH SOURCE-BOUNDED RANGE.  
+**Status:** RECONCILED SOURCE-BOUNDED PLANNING RANGE.  
 **Effective date:** May 5, 2013, after rookie minicamp and before OTAs.  
-**Purpose:** Replace the stale post-free-agency `~$8.35M` shortcut with a transaction-aware Top-51 calculation.  
-**Important precision boundary:** A public, audited NFL club cap ledger for this counterfactual branch does not exist. The correct output is therefore a sourced planning range, not fake penny precision.
+**Canonical controlled roster:** **70 players**.  
+**Planning room:** **approximately $16M-$19M** under offseason Top-51 accounting.  
+**Purpose:** Replace both the stale post-free-agency `~$8.35M` shortcut and the later incorrect `~$7.0M-$7.4M` worksheet.
 
-## 1. Governing 2013 inputs
+The range is intentional. Public sources support the transaction structure and a strong external cap-room anchor, but they do not expose the league's private Jacksonville May 5 ledger or every branch-specific low-end Top-51 contract to the dollar. The project therefore carries a defensible range rather than false penny precision.
 
-- 2013 league salary cap: **$123.0M**.
-- Offseason accounting: Top-51 rule applies until the regular-season accounting transition.
-- Jacksonville carried approximately **$19.4M** of unused 2012 room into 2013.
-- A February 6 contemporaneous OverTheCap estimate put Jacksonville at **about $23M of room** using the then-projected league cap.
-- The final league cap came in at $123M, approximately $1.9M above the $121.1M working projection used in that period.
-- Every club received a **$504,000 downward cap adjustment on March 12** for minimum workout payments.
+## 1. Corrections made in this audit
 
-Normalizing the February planning estimate to the final cap and March 12 workout charge gives an approximate branch starting-room anchor of:
+The previous May 5 worksheet had four material defects:
 
-`$23.0M + $1.9M - $0.504M = ~$24.396M`
+1. **Roster control was understated.** January 15 inherited control is 76, not 67. Nine season-ending reserve/injured players were omitted. After March expirations and branch moves, May 5 control is 70, not 64.
+2. **The March free-agent displacement was understated.** With more than 51 controlled contracts, multiple higher branch signings displace low-end salaries. The prior worksheet credited only one $405,000 displacement across six agreements.
+3. **The Laurent Robinson release was mis-modeled.** The prior worksheet converted a reported dead-money figure into a `-$4.8M` room effect. Contemporary reporting instead describes Robinson as still counting roughly $4.5M after release and later reporting records $8.4M of 2013 dead money plus a grievance reserve. Those facts do not support the old mechanical `$4.2M scheduled minus $9.0M dead` calculation.
+4. **The result failed an external reasonableness check.** On March 14, contemporaneous Jacksonville reporting put the real club at approximately **$31M of adjusted cap room**. On July 17, the NFLPA report showed the real Jaguars with 90 contracts and **$22,937,051** of cap room. A branch estimate near $7M before OTAs was not credible without far larger branch commitments than actually existed.
 
-This remains a planning anchor, not an official club certificate. OverTheCap itself described period team estimates as ballpark rather than 100% exact.
+The current method therefore uses the dated March 14 public club-room figure as an **audit anchor**, then bridges from the real-club transaction set to this branch and applies later branch trades and rookie contracts.
 
-## 2. Roster-control correction before cap accounting
+## 2. Governing 2013 rules and fixed inputs
 
-The old worksheet treated the 2012 Week 17 inventory as though almost every name remained under Jacksonville control. That was wrong.
+- Unadjusted 2013 league salary cap: **$123,000,000**.
+- Offseason accounting uses the Top-51 rule, with applicable bonus proration and other Article 13 charges still counting even when a base salary sits below the Top 51.
+- Jacksonville carried substantial unused 2012 room into 2013.
+- The 2013 rookie minimum base is **$405,000**; low-end veteran salaries around the current cutoff are in the roughly **$405,000-$555,000** band.
+- On September 4 the club must transition from offseason Top-51 treatment to regular-season accounting.
 
-Jacksonville's contemporaneous own-free-agent list identifies 20 players scheduled to become free agents March 12. Of the inherited names carried into the old working roster, the following 17 reached the market:
+Rules source: 2011 NFL-NFLPA CBA, Articles 7 and 13, plus `foundation/02_League_Era_and_Sourcebook.md`.
 
-- Kyle Bosworth
-- Eben Britton
-- John Chick
-- Derek Cox
-- Greg Jones
-- Terrance Knighton
-- Rashean Mathis
-- Brad Meester
-- Antwaun Molden
-- Jordan Palmer
-- Jalen Parmele
-- Zach Potter
-- George Selvie
-- Jordan Shipley
-- Daryl Smith
-- Keith Toston
-- Steve Vallos
+## 3. Correct roster-control basis
 
-Branch decisions retained only **Brad Meester** and **Daryl Smith** on new contracts. The other **15** are not Jacksonville-controlled players after March 12 unless a later branch transaction re-acquires them.
+Jacksonville's official 2012 transaction ledger shows 19 season-ending reserve/injured players, not 10. The nine omitted January-controlled players were:
 
-The original January roster also omitted four reserve/future contracts executed December 30, 2012, before the January 15 divergence:
+- Jordan Todman
+- Brett Brackett
+- Jason Spitz
+- John Estes
+- Drew Nowak
+- Matt Veldman
+- Greg Jones (LB)
+- Rashad Jennings
+- William Middleton
 
-- QB John Parker Wilson
-- DE Ryan Davis
-- DB Brandon King
-- FB Will Ta'ufo'ou
+Jacksonville's own 2013 free-agent preview lists 20 players scheduled to reach free agency March 12. The branch retained Brad Meester and Daryl Smith, so 18 expired without branch retention.
 
-Those four are inherited branch contracts. Their actual February 2013 releases in real history occurred after the divergence and are **not imported**.
-
-Correct branch player-control reconciliation:
-
-| Step | Controlled persons |
+| Reconciliation step | Controlled persons |
 |---|---:|
-| Old January research inventory | 63 |
-| Omitted Dec. 30 reserve/future contracts | +4 |
-| Corrected Jan. 15 inherited control | **67** |
-| March 12 free agents not retained in branch | -15 |
+| Correct Jan. 15 inherited control | **76** |
+| March 12 free agents not retained | -18 |
 | Branch releases: Whimper, Ross, Landry, Robinson | -4 |
-| Branch outside FA additions: Marks, Miller, Ball, Grimes | +4 |
-| Post-FA controlled roster | **52** |
-| Cousins acquired | +1 |
-| Gabbert-for-C.J. Wilson | 0 net |
-| Pre-draft controlled roster | **53** |
+| Branch outside FA additions | +4 |
+| Post-FA controlled roster | **58** |
+| Kirk Cousins acquired | +1 |
+| Gabbert-for-C.J. Wilson swap | 0 net |
+| Pre-draft controlled roster | **59** |
 | Seven drafted players | +7 |
-| Four UDFAs | +4 |
-| **May 5 controlled roster** | **64** |
+| Four signed UDFAs | +4 |
+| **May 5 controlled roster** | **70** |
 
-## 3. Branch free-agency contracts
+Primary roster sources:
+- Jacksonville 2012 transactions: https://www.jaguars.com/team/transactions/2012
+- Jacksonville 2013 free-agent list: https://www.jaguars.com/news/the-offseason-begins-9537328
+- Jacksonville 2013 transactions: https://www.jaguars.com/team/transactions/2013
 
-The six March agreements schedule **$13.750M** of gross 2013 cap charges.
+## 4. Signed branch veteran contracts
 
-Because Jacksonville had enough controlled contracts to cross the Top-51 threshold after these additions, one minimum-level counted salary is displaced. The conservative worksheet uses a $405,000 displacement at the bottom.
+All six March branch agreements remain executed and unchanged.
 
-| Item | Gross 2013 charge | Top-51 displacement | Net planning effect |
-|---|---:|---:|---:|
-| Six branch FA agreements | $13,750,000 | -$405,000 | **$13,345,000** |
+| Player | Term | Gross 2013 cap |
+|---|---|---:|
+| Sen'Derrick Marks | 1 year, $1.50M | $1,500,000 |
+| Alan Ball | 1 year, $1.00M | $1,000,000 |
+| Brad Meester | 1 year, $1.50M | $1,500,000 |
+| Roy Miller | 2 years, $5.00M | $1,750,000 |
+| Daryl Smith | 2 years, $6.00M | $2,500,000 |
+| Brent Grimes | 1 year, $5.50M fully guaranteed | $5,500,000 |
+| **Total** | | **$13,750,000** |
 
-## 4. Branch release effects
+Gross contract cap is not the same as net Top-51 debit. By the time these agreements are counted, Jacksonville has enough controlled contracts that higher charges replace low-end counted salaries.
 
-These are evaluated from the contracts that existed before the branch release. They are not imported future roster decisions.
+## 5. External March 14 audit anchor
 
-| Player | Pre-release 2013 obligation / source treatment | Post-release 2013 treatment | Approx. room effect |
-|---|---|---|---:|
-| Guy Whimper | $1.825M scheduled cap | $0.500M dead money | **+$1.325M** |
-| Aaron Ross | approximately $3.7M scheduled; timing of roster bonus inside the branch batch is not separately fixed | $0.667M dead money; period sources describe roughly $3.0M to $3.416M savings depending timing | **+$3.038M to +$3.416M** |
-| Dawan Landry | $5.35M cash due; contemporaneous report states $3.9M dead money | $3.9M dead | **+$1.450M** |
-| Laurent Robinson | reconstructed $4.2M scheduled cap from $2.6M 2013 base + $1.6M annual signing-bonus proration | contemporaneous release accounting placed the branch-equivalent dead obligation around $9.0M | **-$4.800M** |
+A contemporaneous March 14 Jacksonville cap explainer reported the real Jaguars at **approximately $31M in adjusted cap room**:
+https://www.bigcatcountry.com/2013/3/14/4104920/explaining-the-salary-cap-spending-and-cap-room
 
-**Net release effect:** approximately **+$1.013M to +$1.391M**.
+That figure is not imported as branch canon. It is a dated public accounting snapshot used to avoid reconstructing the same four releases from contradictory secondary dead-money descriptions.
 
-Robinson's later real-world grievance resolution is outside this branch and is not used as an answer key. The worksheet uses the contemporaneous contract/release treatment available at the branch date.
+At that snapshot, the real club had:
+- released John Parker Wilson and Brandon King, while this branch retains them;
+- made the same Whimper, Landry, Ross and Robinson releases as this branch;
+- signed Geno Hayes, Antwaun Molden, Alan Ball, Roy Miller and Justin Forsett;
+- not yet completed the real later Marks and Meester signings.
 
-## 5. Pre-draft trades
+The branch instead has Ball and Miller on branch terms, retains Wilson and King, omits Hayes/Molden/Forsett, and adds Marks, Meester, Daryl Smith and Brent Grimes.
+
+### Branch bridge from the $31M anchor
+
+The public anchor is rounded, so the worksheet uses **$30.5M-$31.5M** as its input band.
+
+Four high branch agreements absent from the March 14 real snapshot total **$11.0M gross** in 2013 cap:
+Marks $1.5M, Meester $1.5M, Daryl Smith $2.5M, Grimes $5.5M.
+
+Each replaces a low-end Top-51 contract. Using the $405,000-$555,000 cutoff band, their net combined debit is approximately:
+
+`$11.0M - (4 × $0.405M to $0.555M) = $8.78M-$9.38M`.
+
+Other bridge items:
+
+| Difference from real Mar. 14 snapshot | Planning treatment |
+|---|---:|
+| Branch Alan Ball $1.000M vs real 2013 Ball cap $0.765M | -$0.235M room |
+| Roy Miller | No material bridge; real 2013 cap also $1.750M |
+| Remove real Geno Hayes $0.9375M and Justin Forsett $1.050M | +~$0.88M to +~$1.18M after low-contracts re-enter Top 51 |
+| Real Antwaun Molden absent from branch | Positive credit exists, but omitted from the numeric bridge because exact dated 2013 cap was not recovered |
+| Branch retains John Parker Wilson and Brandon King | Expected at/below low Top-51 boundary; carry **$0-$0.15M** conservative incremental debit |
+
+This yields an approximate **branch post-free-agency room of $21.6M-$23.7M** before the two pre-draft trades.
+
+Real Ball/Miller/Hayes/Forsett cap sources:
+- https://overthecap.com/player/alan-ball/1841/
+- https://overthecap.com/player/roy-miller/914/
+- https://ftp.overthecap.com/player/geno-hayes/1105
+- https://server.overthecap.com/player/justin-forsett/1291
+
+## 6. Pre-draft trades
 
 ### Kirk Cousins
 
-Washington retains its existing signing-bonus proration after a trade. Jacksonville inherits Cousins' 2013 base salary, **$480,000**.
+Washington retains its old signing-bonus proration after the trade. Jacksonville inherits Cousins' 2013 base obligation of **$480,000**.
 
-At the current Top-51 boundary, that salary replaces another bottom-level salary of approximately the same amount, so the incremental Top-51 effect is approximately **$0**. His acquisition still creates the full contractual cash obligation and transfers Jacksonville's 2014 second-round pick.
+At the branch's low Top-51 boundary, his incremental effect is approximately **$0-$75,000**.
 
 ### Blaine Gabbert for C.J. Wilson
 
-Gabbert's scheduled Jacksonville 2013 cap was $3,273,176: $1,466,058 base plus $1,807,118 proration.
+Gabbert's scheduled Jacksonville 2013 cap was **$3,273,176**. A pre-June-1 trade accelerates his two remaining bonus prorations to **$3,614,236**.
 
-Because this branch trades him before June 1, the remaining unamortized signing bonus accelerates under the CBA. Two remaining prorations total **$3,614,236**. Compared with keeping his scheduled 2013 hit, the outgoing side worsens 2013 cap by **$341,060**.
+C.J. Wilson brings a **$630,000** 2013 base obligation.
 
-C.J. Wilson brings a **$630,000** 2013 base obligation to Jacksonville; Green Bay retains his prior bonus proration.
+Because this is a one-player-out/one-player-in swap and both sides are above the relevant low-end cutoff, the approximate branch change is:
 
-**Net 2013 branch effect of the swap:** approximately **-$971,060 of room**.
+`$3,614,236 + $630,000 - $3,273,176 = $971,060`
 
-## 6. Drafted-rookie contracts executed May 2
+or **-$0.971M of room**.
 
-The earlier branch gross total of $7,326,170 was arithmetically wrong. The contemporaneous 2013 Jacksonville slot table produces **$7,269,102** of gross 2013 cap charges.
+## 7. Drafted-rookie contracts executed May 2
+
+All seven drafted players remain signed on May 2. The earlier $7,326,170 gross total was wrong; the corrected gross 2013 total is **$7,269,102**.
 
 | Pick | Player | Signing bonus | 2013 cap | 2014 cap | 2015 cap | 2016 cap | Four-year total |
 |---:|---|---:|---:|---:|---:|---:|---:|
@@ -131,28 +159,17 @@ The earlier branch gross total of $7,326,170 was arithmetically wrong. The conte
 | 208 | Tyler Bray | $68,900 | $422,225 | $512,225 | $602,225 | $692,225 | $2,228,900 |
 | **Total** | | **$17,736,408** | **$7,269,102** | **$8,980,407** | **$10,666,712** | **$12,403,517** | **$39,319,738** |
 
-Lane Johnson's contract also carries the CBA first-round fifth-year club-option mechanism.
+### Rookie Top-51 effect
 
-### Top-51 rookie impact
+The exact bottom-of-51 salary is not independently reconstructed for this counterfactual 70-player roster. Across a plausible $405,000-$555,000 cutoff, the seven drafted contracts produce approximately **$3.98M-$4.43M** of net 2013 Top-51 effect.
 
-The first four rookie cap charges enter the Top 51 and displace $480,000-level salaries. The final three rookies' $405,000 bases sit below the Top-51 line, but their signing-bonus prorations still count.
+At a $480,000 cutoff, the previously computed **$4,134,102** remains the point estimate. The range, not the point estimate, controls the team-room result.
 
-| Component | Net 2013 effect |
-|---|---:|
-| Johnson: $3,854,836 less $480,000 displacement | $3,374,836 |
-| Kelce: $994,382 less $480,000 | $514,382 |
-| Poyer: $572,794 less $480,000 | $92,794 |
-| Moore: $529,257 less $480,000 | $49,257 |
-| Edwards bonus proration only | $53,403 |
-| Rambo bonus proration only | $32,205 |
-| Bray bonus proration only | $17,225 |
-| **Net drafted-rookie Top-51 effect** | **$4,134,102** |
+Slot economics source: contemporaneous OverTheCap Jacksonville rookie-pool estimates, cross-checked to the 2011 CBA Article 7 rookie rules.
 
-Thus **$7.269M gross is not a $7.269M reduction in room**.
+## 8. Undrafted rookie contracts
 
-## 7. Undrafted rookie contracts
-
-The four user-authorized UDFAs are now completed on three-year minimum rookie contracts, executed before May 3 rookie minicamp:
+All four user-authorized UDFAs are signed before rookie minicamp on three-year minimum contracts:
 
 | Player | 2013 base | 2014 base | 2015 base | Signing bonus | Additional guarantee |
 |---|---:|---:|---:|---:|---:|
@@ -161,57 +178,59 @@ The four user-authorized UDFAs are now completed on three-year minimum rookie co
 | Adam Thielen | $405,000 | $495,000 | $585,000 | $0 | $0 |
 | C.J. Anderson | $405,000 | $495,000 | $585,000 | $0 | $0 |
 
-At a 64-player offseason roster, these four $405,000 bases are below the Top-51 cutoff and carry no bonus proration. **Current Top-51 effect: $0.** They remain real contracts and count for cash/roster-control purposes.
+At a 70-player offseason roster, these $405,000 bases sit at or below the relevant Top-51 boundary and have no bonus proration. **Current incremental Top-51 effect: $0.**
 
-## 8. May 5 cap-room calculation
+## 9. May 5 cap-room result
 
-Starting normalized planning anchor: **~$24.396M**
+Starting branch post-free-agency range from the March 14 audit bridge:
 
-Then:
+**$21.6M-$23.7M**
 
-- releases: **+~$1.013M to +~$1.391M**
-- six FA contracts after Top-51 displacement: **-$13.345M**
-- Cousins: **approximately $0 net Top-51**
-- Gabbert/C.J. Wilson swap: **-$0.971M**
-- seven drafted rookies, net Top-51: **-$4.134M**
-- four minimum/zero-bonus UDFAs: **$0 current Top-51**
+Then apply:
+- Cousins: **-$0.000M to -$0.075M**
+- Gabbert/C.J. Wilson trade: **-$0.971M**
+- drafted rookies: **-$3.98M to -$4.43M**
+- four UDFAs: **$0 current Top-51**
 
-Result:
+Raw modeled output is roughly **$16.1M-$18.7M**.
 
-| Scenario | May 5 room |
-|---|---:|
-| Conservative Ross/release timing | **~$6.96M** |
-| More favorable documented Ross timing | **~$7.34M** |
+Because the March 14 source itself reports a rounded $31M, Antwaun Molden's exact dated cap is not recovered, and the branch's exact 51st contract is not privately auditable, the canonical planning presentation is:
 
-### Canonical planning answer
+# **Approximately $16M-$19M of May 5, 2013 Top-51 cap room**
 
-**Jacksonville's May 5, 2013 Top-51 planning room is approximately $7.0M-$7.4M.**
+This range supersedes both:
+- the stale **~$8.35M** post-free-agency shortcut; and
+- the incorrect **~$7.0M-$7.4M** May 5 worksheet.
 
-The club is planning-cap compliant at the current checkpoint. This range supersedes the stale **~$8.35M** figure.
+### Independent reasonableness check
 
-Do **not** turn the range into a false exact number. The remaining spread reflects:
-- the period source itself describing the starting club cap figure as approximate;
-- Aaron Ross's precise branch execution timing not being separately fixed;
-- ordinary public-source limitations in reconstructing a private NFL club ledger.
+NFLPA reporting on July 17 showed the real Jaguars with **90 contracts** and **$22,937,051** in cap room. OverTheCap reported $22.9M again on July 19 after a rookie signing. The branch differs materially from the real roster, especially through Daryl Smith, Brent Grimes and the two pre-draft trades, so the real figure is not adopted. It does, however, confirm that a May 5 branch number in the high teens is financially plausible while a ~$7M figure was not.
 
-## 9. Next required cap checkpoints
+Sources:
+- https://www.cincyjungle.com/2013/7/17/4532968/following-dunlap-extension-bengals-have-15-5-million-under-the-cap
+- https://overthecap.com/nfl-cap-space-update-july-19
 
-Recalculate rather than carry this range forward blindly when any of the following occurs:
+## 10. Release-accounting note
 
-1. a new signing, release, waiver claim, trade, extension or restructure;
-2. an earned/not-earned workout adjustment changes;
-3. the 75-player cut;
-4. the 53-player cut;
-5. September 4 regular-season cap compliance, when Top-51 treatment ends;
+Do not resurrect the old transaction-by-transaction release subtotal without a full dated club ledger.
+
+Verified individual facts include:
+- Dawan Landry release: contemporaneous OverTheCap reporting says **$2.8M** cap savings and **$3.9M** dead money.
+- Laurent Robinson: contemporaneous reporting says the release left roughly **$4.5M** counting against the cap; later dead-money reporting records **$8.4M** plus a grievance reserve issue.
+- Aaron Ross and Guy Whimper have separate dead-money/savings evidence.
+
+Those facts are useful for transaction history, but mixing gross scheduled charges, total guarantees, grievance reserves and dead money from different dates created the prior $7M error. The dated team-room anchor avoids double counting.
+
+## 11. Required recalculation checkpoints
+
+Recalculate this range rather than carrying it forward blindly after:
+
+1. any signing, release, waiver claim, trade, extension or restructure;
+2. an earned/not-earned workout adjustment;
+3. the August 27 cut to 75;
+4. the August 31 cut to 53;
+5. the September 4 regular-season accounting transition;
 6. practice-squad formation;
-7. any grievance, injury settlement or guaranteed-salary event that changes counted obligations.
+7. any grievance, injury settlement or guaranteed-salary event.
 
-## 10. Sources
-
-- OverTheCap, "An Offseason Look at the Jacksonville Jaguars," Feb. 6, 2013, including ~$23M room estimate, carryover context, Ross release savings and Jacksonville rookie-pool table: https://overthecap.com/tag/salary-cap/page/5
-- OverTheCap, "Salary Cap Set at 123 Million; Cap Estimates Now Updated," Mar. 1, 2013: https://overthecap.com/salary-cap-set-at-123-million-cap-estimates-now-updated
-- 2011 NFL-NFLPA CBA, Article 13 cap accounting and Article 7 rookie-contract rules.
-- NBC/PFT, Mar. 8, 2013 Dawan Landry release accounting.
-- Big Cat Country / contemporaneous Jacksonville reporting for Whimper, Ross and Robinson pre-release/termination figures.
-- OverTheCap historical player-contract records for Cousins, Gabbert, C.J. Wilson, Whimper and Ross.
-- Jacksonville Jaguars 2012 transaction ledger for inherited reserve/future contracts.
+The branch is comfortably planning-cap compliant on May 5. That does not eliminate the need for a fresh regular-season worksheet before Week 1.
