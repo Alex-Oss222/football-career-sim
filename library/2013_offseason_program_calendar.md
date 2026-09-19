@@ -17,8 +17,9 @@ The following dates remain verified:
 | Rookie minicamp | **May 3-5** |
 | OTAs | **May 13-15; May 20-21; May 23; June 4-7** |
 | Mandatory veteran minicamp | **June 11-13** |
-| All contracted players report to training camp | **July 25** |
-| First training-camp practice | **July 26, 9:55 a.m. ET** |
+| Rookies and quarterbacks report to training camp | **July 22** |
+| Full team / veterans report | **July 25** |
+| First full-team training-camp practice | **July 26, 9:55 a.m. ET** |
 
 ## Branch treatment of the missed April minicamp
 
