@@ -52,7 +52,22 @@ The counterfactual simulation had already advanced past the April 16-18 voluntar
 | Aug. 2, 9:55 a.m. | Practice | Future |
 | **Aug. 3, 6:45 p.m.** | Stadium scrimmage; last practice announced as open to public | Future |
 
-Later Jaguars reporting clarified the reporting sequence beyond the July 2 public-practice announcement: rookies and quarterbacks reported Monday, July 22; veterans/full team reported Thursday, July 25; the first full-team practice was Friday, July 26. The published public-practice list does not establish every closed practice after August 3. The simulation may schedule later camp work only inside the governing CBA/preseason calendar and its own training-camp plan; it must not invent public-practice dates as historical facts.
+Later Jaguars reporting clarified the reporting sequence beyond the July 2 public-practice announcement: rookies and quarterbacks reported Monday, July 22; veterans/full team reported Thursday, July 25; the first full-team practice was Friday, July 26.
+
+Jacksonville's own daily camp coverage also verifies additional team work after the August 3 stadium scrimmage without requiring the simulation to import any real player result:
+
+| Date | Verified team activity |
+|---|---|
+| Aug. 5 | Full-padded morning practice; afternoon walkthrough scheduled |
+| Aug. 6 | Full-padded practice |
+| Aug. 7 | Training-camp practice |
+| Aug. 8 | Final walkthrough before the preseason opener |
+| Aug. 12 | Full-padded practice |
+| Aug. 13 | Training-camp practice |
+| Aug. 14 | Full-padded practice |
+| Aug. 15 | Walkthrough; contemporaneous Jaguars coverage identifies this as the conclusion of 2013 training camp |
+
+No unverified August 4 or August 10-11 practice is inserted. After August 15, use the verified preseason/cutdown calendar plus the training-camp/preseason development plan; do not invent a historical practice date when the source establishes only a game, deadline, or broader preparation window.
 
 ## 3. Preseason
 
@@ -120,6 +135,15 @@ These dates are league calendar facts. Jacksonville reaches them only if branch 
 - Jacksonville Jaguars, rookie-minicamp coverage, May 3-5, 2013.
 - Jacksonville Jaguars, "Jaguars to Open Eight Training Camp Practices to Public," Jul. 2, 2013: https://www.jaguars.com/news/jaguars-to-open-eight-training-camp-practices-to-public-10423279
 - Jacksonville Jaguars, "Rookies report: Training camp prep begins," Jul. 22, 2013: https://www.jaguars.com/news/rookies-report-training-camp-prep-begins-10517090
+- Jacksonville Jaguars, "First Off the Field: 8/5," Aug. 5, 2013: https://www.jaguars.com/news/first-off-the-field-8-5-10700945
+- Jacksonville Jaguars, "First Off the Field: 8/6," Aug. 6, 2013: https://www.jaguars.com/news/first-off-the-field-8-6-10714737
+- Jacksonville Jaguars, "First Off the Field: 8/7," Aug. 7, 2013: https://www.jaguars.com/news/first-off-the-field-8-7-10726840
+- Jacksonville Jaguars, "First Off the Field: 8/8," Aug. 8, 2013: https://www.jaguars.com/news/first-off-the-field-8-8-10738055
+- Jacksonville Jaguars, "First Off the Field: 8/12," Aug. 12, 2013: https://www.jaguars.com/news/first-off-the-field-8-12-10794820
+- Jacksonville Jaguars, "Inside the Jaguars: Reynolds gets great opportunity," Aug. 13, 2013: https://www.jaguars.com/news/inside-the-jaguars-reynolds-gets-great-opportunity-10812390
+- Jacksonville Jaguars, "First Off the Field: 8/14," Aug. 14, 2013: https://www.jaguars.com/news/first-off-the-field-8-14-10820387
+- Jacksonville Jaguars, "First Off the Field: 8/15," Aug. 15, 2013: https://www.jaguars.com/news/first-off-the-field-8-15-10830308
+- Jacksonville Jaguars, "Inside the Jaguars: Marks believed Jaguars would be a fit," Aug. 14, 2013: https://www.jaguars.com/news/inside-the-jaguars-marks-believed-jaguars-would-be-a-fit-10822242
 
 ### Games
 - Jacksonville Jaguars, "Jacksonville Jaguars 2013 Schedule," Apr. 18, 2013: https://www.jaguars.com/news/jacksonville-jaguars-2013-schedule-9909213
