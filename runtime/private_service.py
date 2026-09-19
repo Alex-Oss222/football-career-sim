@@ -7,6 +7,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import argparse, hashlib, hmac, json, os, secrets, sqlite3, threading, time
 from pathlib import Path
 from contextlib import closing
+from .packets import canonical
 
 SCHEMA="1"; KERNEL="2013.2"
 
@@ -22,7 +23,14 @@ class Store:
             CREATE TABLE IF NOT EXISTS events(event_id TEXT PRIMARY KEY,packet_hash TEXT NOT NULL,result TEXT,created INTEGER NOT NULL,closed INTEGER);
             CREATE TABLE IF NOT EXISTS corrections(id INTEGER PRIMARY KEY AUTOINCREMENT,event_id TEXT NOT NULL,reason TEXT NOT NULL,created INTEGER NOT NULL);
             CREATE TABLE IF NOT EXISTS backups(id INTEGER PRIMARY KEY AUTOINCREMENT,digest TEXT NOT NULL,created INTEGER NOT NULL);
-            CREATE TABLE IF NOT EXISTS admin_probes(probe_id TEXT PRIMARY KEY,created INTEGER NOT NULL);""")
+            CREATE TABLE IF NOT EXISTS admin_probes(probe_id TEXT PRIMARY KEY,created INTEGER NOT NULL);
+            CREATE TABLE IF NOT EXISTS snapshot_history(
+                previous_snapshot TEXT NOT NULL,
+                next_snapshot TEXT NOT NULL,
+                checkpoint TEXT NOT NULL,
+                created INTEGER NOT NULL,
+                UNIQUE(previous_snapshot),
+                UNIQUE(next_snapshot));""")
     def initialize(self,snapshot):
         with self.lock, closing(self.connect()) as c, c:
             c.execute("BEGIN IMMEDIATE")
@@ -33,7 +41,12 @@ class Store:
             c.execute("INSERT OR IGNORE INTO meta VALUES('snapshot',?)",(snapshot.encode(),))
             c.execute("INSERT OR REPLACE INTO meta VALUES('kernel',?)",(KERNEL.encode(),))
             c.execute("INSERT OR REPLACE INTO meta VALUES('schema',?)",(SCHEMA.encode(),))
-    def ready(self,expected_snapshot):
+    def current_snapshot(self):
+        with closing(self.connect()) as c:
+            row=c.execute("SELECT value FROM meta WHERE key='snapshot'").fetchone()
+            if not row: raise ValueError("snapshot is not initialized")
+            return row[0].decode()
+    def ready(self):
         with closing(self.connect()) as c, c:
             m=dict(c.execute("SELECT key,value FROM meta"))
             seed=m.get('seed'); snapshot=m.get('snapshot',b'').decode()
@@ -42,10 +55,33 @@ class Store:
                 c.backup(backup)
             with closing(sqlite3.connect(f'file:{backup_path}?mode=ro',uri=True)) as recovered:
                 if recovered.execute('PRAGMA integrity_check').fetchone()[0] != 'ok': return False
-                if recovered.execute("SELECT value FROM meta WHERE key='snapshot'").fetchone()[0].decode()!=expected_snapshot: return False
+                if recovered.execute("SELECT value FROM meta WHERE key='snapshot'").fetchone()[0].decode()!=snapshot: return False
             digest=hashlib.sha256(backup_path.read_bytes()).hexdigest()
             c.execute("INSERT INTO backups(digest,created) VALUES(?,?)",(digest,int(time.time())))
-            return bool(seed and len(seed)>=32 and snapshot==expected_snapshot and m.get('kernel',b'').decode()==KERNEL and m.get('schema',b'').decode()==SCHEMA)
+            return bool(seed and len(seed)>=32 and m.get('kernel',b'').decode()==KERNEL and m.get('schema',b'').decode()==SCHEMA)
+    def advance_snapshot(self,previous_snapshot,next_snapshot,checkpoint):
+        values=(previous_snapshot,next_snapshot,checkpoint)
+        if any(not isinstance(value,str) or not value.strip() for value in values):
+            raise ValueError("snapshot transition fields must be nonempty strings")
+        if previous_snapshot==next_snapshot:
+            raise ValueError("snapshot transition must change the snapshot")
+        with self.lock, closing(self.connect()) as c, c:
+            c.execute("BEGIN IMMEDIATE")
+            current=c.execute("SELECT value FROM meta WHERE key='snapshot'").fetchone()[0].decode()
+            existing=c.execute("SELECT next_snapshot,checkpoint FROM snapshot_history WHERE previous_snapshot=?",
+                               (previous_snapshot,)).fetchone()
+            if existing:
+                if existing==(next_snapshot,checkpoint) and current==next_snapshot:
+                    return current
+                raise ValueError("conflicting snapshot transition refused")
+            if current!=previous_snapshot:
+                raise ValueError("previous snapshot does not match current snapshot")
+            if c.execute("SELECT 1 FROM snapshot_history WHERE next_snapshot=?",(next_snapshot,)).fetchone():
+                raise ValueError("conflicting snapshot transition refused")
+            c.execute("INSERT INTO snapshot_history VALUES(?,?,?,?)",
+                      (previous_snapshot,next_snapshot,checkpoint,int(time.time())))
+            c.execute("UPDATE meta SET value=? WHERE key='snapshot'",(next_snapshot.encode(),))
+            return next_snapshot
     def probe(self):
         """Persist an opaque canary once and return only a stability fingerprint."""
         with self.lock, closing(self.connect()) as c, c:
@@ -76,7 +112,7 @@ class Store:
             if not c.execute("SELECT 1 FROM events WHERE event_id=?",(event_id,)).fetchone(): raise ValueError("unknown event")
             c.execute("INSERT INTO corrections(event_id,reason,created) VALUES(?,?,?)",(event_id,reason,int(time.time())))
 
-def handler(store,token,snapshot):
+def handler(store,token,snapshot=None):
     class Handler(BaseHTTPRequestHandler):
         def log_message(self,fmt,*args): pass
         def send(self,status,body):
@@ -88,21 +124,37 @@ def handler(store,token,snapshot):
         def do_GET(self):
             if self.path=="/health": return self.send(200,{"service":"engine-state","schema":SCHEMA,"kernel":KERNEL})
             if not self.auth(): return
-            if self.path=="/ready": return self.send(200,{"ready":store.ready(snapshot),"schema":SCHEMA,"kernel":KERNEL,"procedure":KERNEL,"snapshot":snapshot,"career_initialized":True,"private_seed_exists":True,"journal_persistent":True,"recovery":"verified"})
+            if self.path=="/ready":
+                current=store.current_snapshot()
+                return self.send(200,{"ready":store.ready(),"schema":SCHEMA,"kernel":KERNEL,"procedure":KERNEL,"snapshot":current,"career_initialized":True,"private_seed_exists":True,"journal_persistent":True,"recovery":"verified"})
             self.send(404,{"error":"not found"})
         def do_POST(self):
             if not self.auth(): return
-            n=int(self.headers.get("Content-Length","0")); body=json.loads(self.rfile.read(n) or b"{}")
             try:
-                if self.path=="/events/close": return self.send(200,{"result_ref":store.close(body["event_id"],json.dumps(body["packet"],sort_keys=True,separators=(",",":")).encode())})
+                n=int(self.headers.get("Content-Length","0")); body=json.loads(self.rfile.read(n) or b"{}")
+                if not isinstance(body,dict): raise ValueError("request body must be a JSON object")
+                if self.path=="/events/close":
+                    packet=body.get("packet")
+                    if not isinstance(packet,dict): raise ValueError("packet must be a JSON object")
+                    event_id=packet.get("event_id")
+                    if not isinstance(event_id,str) or not event_id.strip():
+                        raise ValueError("packet event_id must be a nonempty string")
+                    # A transition client may still send the old outer field, but
+                    # it can never override packet identity.
+                    if "event_id" in body and body["event_id"]!=event_id:
+                        raise ValueError("outer event_id does not match packet event_id")
+                    return self.send(200,{"result_ref":store.close(event_id,canonical(packet))})
                 if self.path=="/admin/probe": return self.send(200,store.probe())
+                if self.path=="/admin/snapshot/advance":
+                    current=store.advance_snapshot(body["previous_snapshot"],body["next_snapshot"],body["checkpoint"])
+                    return self.send(200,{"advanced":True,"snapshot":current})
                 if self.path=="/corrections": store.correct(body["event_id"],body["reason"]); return self.send(201,{"recorded":True})
                 self.send(404,{"error":"not found"})
-            except (KeyError,ValueError) as e: self.send(409,{"error":str(e)})
+            except (json.JSONDecodeError,KeyError,TypeError,ValueError) as e: self.send(409,{"error":str(e)})
     return Handler
 
 def main():
     p=argparse.ArgumentParser(); p.add_argument("--db",required=True); p.add_argument("--token-file",required=True); p.add_argument("--snapshot",required=True); p.add_argument("--port",type=int,default=int(os.getenv("PORT","8765"))); p.add_argument("--host",default=os.getenv("ENGINE_BIND_HOST","127.0.0.1")); a=p.parse_args()
     token=Path(a.token_file).read_text().strip(); store=Store(a.db); store.initialize(a.snapshot)
-    ThreadingHTTPServer((a.host,a.port),handler(store,token,a.snapshot)).serve_forever()
+    ThreadingHTTPServer((a.host,a.port),handler(store,token)).serve_forever()
 if __name__=="__main__": main()

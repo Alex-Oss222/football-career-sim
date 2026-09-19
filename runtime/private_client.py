@@ -48,8 +48,47 @@ class Client:
                 first.get("journal_fingerprint") and
                 first.get("journal_fingerprint")==second.get("journal_fingerprint")):
             raise PrivateRuntimeUnavailable("private runtime administrative probe is not idempotent")
+        # Exercise the same authenticated transport and immutable event journal
+        # used by a real game.  The reserved identity is private administration,
+        # not a career event, and is stable for a snapshot/kernel pair.
+        probe_id="__readiness_close_probe__:"+hashlib.sha256(
+            (data["snapshot"]+":"+data["kernel"]).encode()
+        ).hexdigest()
+        packet={"administrative":True,"event_id":probe_id,
+                "kernel":data["kernel"],"snapshot":data["snapshot"],
+                "type":"readiness-close-probe"}
+        close_first=self.close_event(packet)
+        close_second=self.close_event(packet)
+        if not (isinstance(close_first,str) and close_first and close_first==close_second):
+            raise PrivateRuntimeUnavailable("private runtime event closure probe is not idempotent")
         return {"authenticated":True,"ready":True,"schema":data["schema"],
                 "kernel":data["kernel"],"snapshot":data["snapshot"],
                 "recovery":data["recovery"],"journal_persistent":True,
-                "administrative_probe_idempotent":True}
-    def close_event(self,event_id,packet): return self._request("/events/close",{"event_id":event_id,"packet":packet})["result_ref"]
+                "administrative_probe_idempotent":True,
+                "event_closure_probe_idempotent":True}
+    def close_event(self,packet):
+        if not isinstance(packet,dict):
+            raise ValueError("packet must be a JSON object")
+        event_id=packet.get("event_id")
+        if not isinstance(event_id,str) or not event_id.strip():
+            raise ValueError("packet event_id must be a nonempty string")
+        data=self._request("/events/close",{"packet":packet})
+        result_ref=data.get("result_ref")
+        if not isinstance(result_ref,str) or not result_ref:
+            raise PrivateRuntimeUnavailable("private runtime returned invalid event reference")
+        return result_ref
+    def current_snapshot(self):
+        data=self._request("/ready")
+        snapshot=data.get("snapshot")
+        if not isinstance(snapshot,str) or not snapshot:
+            raise PrivateRuntimeUnavailable("private runtime returned invalid snapshot")
+        return snapshot
+    def advance_snapshot(self,previous_snapshot,next_snapshot,checkpoint):
+        for name,value in (("previous_snapshot",previous_snapshot),
+                           ("next_snapshot",next_snapshot),("checkpoint",checkpoint)):
+            if not isinstance(value,str) or not value.strip():
+                raise ValueError(f"{name} must be a nonempty string")
+        data=self._request("/admin/snapshot/advance",{
+            "previous_snapshot":previous_snapshot,"next_snapshot":next_snapshot,
+            "checkpoint":checkpoint})
+        return data["snapshot"]

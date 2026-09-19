@@ -60,7 +60,7 @@ def run_game(home: TeamInput, away: TeamInput, *, event_id, snapshot,
     packet = build_game_packet(event_id, snapshot, home, away, venue=venue,
                                weather=weather, game_type=game_type,
                                management_mode=management_mode)
-    result_ref = client.close_event(event_id, packet)  # durable closure precedes draw
+    result_ref = client.close_event(packet)  # durable closure precedes draw
     entropy = _entropy_from_ref(result_ref)
     result = resolve_game(home, away, seed=entropy, event_id=event_id, venue=venue,
                           weather=weather, game_type=game_type,
