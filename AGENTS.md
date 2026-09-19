@@ -42,6 +42,52 @@ A progression commit is incomplete if its event file says one thing while a depe
 - A past, superseded iteration may be read for lineage (an iteration's `inheritance_rule`/`baseline` field legitimately points back to an earlier one), but only the currently active iteration is live for teaching, install work, scouting, or play-calling.
 - A concept existing in the active book does not make it installed. Installation is still gated by the real CBA offseason-program calendar in `career/[year]/offseason/the_prowl_player_readiness_standard.md` — individual work, then OTAs, then mandatory minicamp, then training camp, each unlocking more of the book only on its actual permitted date.
 
+
+### Offseason onboarding and phase-plan execution rule
+
+For any task that **starts, advances, runs, simulates, or closes** Jacksonville's rookie minicamp, offseason program/OTAs, a separately scheduled new-head-coach voluntary veteran minicamp, mandatory veteran minicamp, training camp, or the preseason work embedded in training camp, the durable development plans are mandatory inputs. Do not improvise a generic camp because the user said "advance to camp."
+
+**Read these common files before resolving the phase:**
+
+1. `state/05_Current_Season_State.md` — current clock, phase, roster-control caveats, and current checkpoint.
+2. `career/[year]/offseason/player_onboarding_and_development_framework.md` — welcome-package process, Day-2 Stone/position-coach calls, learning cycle, Good/Better/Best standard, physical progression, and family-dinner policy.
+3. `career/[year]/offseason/the_prowl_player_readiness_standard.md` — medical, physical, support, privacy, offseason-voluntariness, and CBA boundaries.
+4. `career/[year]/offseason/the_prowl_program_identity.md` — program expectations and team-level football principles.
+5. `career/playbook/README.md`, then **only** the active offensive iteration permitted by the active-iteration lock above.
+6. The phase plan listed below.
+7. The current roster/staff files and only the additional player/medical/transaction records needed for that event.
+
+**Phase-plan map:**
+
+- Rookie minicamp -> `career/[year]/offseason/rookie_minicamp/plan.md`
+- Offseason program / Phase One / Phase Two / OTAs -> `career/[year]/offseason/otas/plan.md`
+- Any separately scheduled new-head-coach voluntary veteran minicamp -> use `otas/plan.md` plus the exact voluntary-minicamp CBA/calendar rules; do not convert it into the mandatory event.
+- Mandatory veteran minicamp -> `career/[year]/offseason/mandatory_minicamp/plan.md`
+- Training camp and its integrated preseason-development process -> `career/[year]/offseason/training_camp/plan.md`
+
+**Plan versus history is a hard boundary.** A `plan.md` says what Jacksonville intends to teach, train, evaluate, and provide. The corresponding `output.md`, season ledger, roster/register, and current-state files say what actually happened. Never write results, standouts, attendance lists, depth-chart outcomes, injuries, or performance history back into a durable plan merely because the event occurred.
+
+**Calendar gate.** If the exact 2013 Jacksonville date/window needed to execute a phase is still unresolved in the repository, research and verify it under the project's two-pass sourcing discipline before advancing the career clock. Do not invent a convenient date, practice count, reporting day, or roster deadline.
+
+**Onboarding gate.**
+
+- Before a player's first Jacksonville football-development phase, verify club control and execute the welcome-package / playbook-distribution / follow-up-call process to the extent the calendar legally and practically allows.
+- Contact only players whose Jacksonville control or invitation status is actually established. An unresolved inherited name is not a license to invent a call or letter.
+- A late acquisition gets the same onboarding process on a compressed honest timeline; record the compression rather than backdating calls.
+- The full active playbook may be issued as a reference manual, but only the phase-appropriate installed subset is teachable/testable.
+- During voluntary periods, an optional Stone/position-coach call, workout, meeting, or social event cannot become a hidden roster/role/commitment grade.
+
+**Teaching and evaluation rule.** Execute the phase plan's Explain -> Show -> Walk -> Rep -> Correct -> Rep again -> Retain -> Add complexity cycle. Keep assignment, communication, technique, physical loss, processing delay, medical limit, and coaching/teaching failure analytically separate. Do not manufacture a flaw when a rep was correct. Do not add complexity simply because the calendar advanced. The phase plan's Good/Better/Best descriptions are teaching states, not numeric ratings and not permanent player labels.
+
+**Family-dinner rule.** The phase-specific family dinners are part of the established program. When the verified schedule permits, execute the dinner described by the phase plan. Invite the current team, appropriate staff, and invited family/meaningful guests under the framework's rules. Family/guest attendance is voluntary, the dinner is not a football meeting, and attendance, guest choice, family structure, finances, health, counseling use, or private conversation never becomes personnel evidence. Log an actual dinner in the phase output, not the durable plan.
+
+**Resolution discipline.** The plans define opportunities and evaluation questions, not outcomes. Resolve actual player performance from the information legally available at that date, the work actually performed, the game/practice resolution rules, and the protagonist-blind standard. Never use future real-life player success/failure as proof that a rookie, veteran, signing, or draft pick must stand out or struggle.
+
+**Closing the phase.** Once actual football work occurs, this becomes an atomic progression task. Write the phase output/standouts first, append the season ledger as appropriate, then update every genuinely affected roster, role, medical/availability, financial/control, Document 4, and Document 5 view in the same progression commit. If no current fact changed, do not manufacture a state edit merely to touch every file.
+
+**Do not rewrite the plans after every practice.** Change a durable plan only when the user changes the teaching method, install philosophy, physical standard, evaluation standard, family-program policy, or operational responsibility.
+
+
 ---
 
 ## Task: "Simulate background league, Week [N], [Year]."
