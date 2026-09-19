@@ -97,6 +97,14 @@ class PrivateRuntimeTests(unittest.TestCase):
             with self.assertRaises(HTTPError):
                 self.post_empty('/events/close'+bad_query)
 
+    def test_digest_close_url_encodes_event_identity(self):
+        client=Client(self.url,token=self.token,snapshot='snapshot')
+        packet={'event_id':'preseason:1 / home','fact':'same'}
+        first=client.close_event(packet)
+        second=client.close_event(packet)
+        self.assertEqual(first,second)
+        self.assertTrue(first)
+
     def test_legacy_body_contract_remains_compatible(self):
         packet={'event_id':'legacy-source','fact':'same'}
         flat=self.post('/events/close',packet)
