@@ -1,18 +1,18 @@
 # Season (in-season) output template
 
-**Status:** Confirmed in-season format, refined 2026-09-19 from the user's original \`Season Output.txt\` structure and hardened for narrative quality on 2026-09-19.
+**Status:** Confirmed in-season format, refined 2026-09-19 from the user's original `Season Output.txt` structure and hardened for narrative quality on 2026-09-19.
 **Authority:** This is the required coach-facing format for every in-season turn per Document 7 §5.2. Document 7 governs simulation; this template governs presentation.
-**When used:** From the preseason bulk report through the last postseason game. The offseason uses \`offseason_output_template.md\`.
+**When used:** From the preseason bulk report through the last postseason game. The offseason uses `offseason_output_template.md`.
 
 ## Storage rule
 
 For a regular-season or postseason week, the complete protagonist-team turn is stored in that week's existing:
 
-\`career/[year]/regular_season/week_NN_<away>_at_<home>/output.md\`
+`career/[year]/regular_season/week_NN_<away>_at_<home>/output.md`
 
-or the equivalent postseason \`output.md\`.
+or the equivalent postseason `output.md`.
 
-That single \`output.md\` owns the week's coach-facing package:
+That single `output.md` owns the week's coach-facing package:
 
 - opponent/week setup;
 - Stone's game preparation;
@@ -25,9 +25,9 @@ That single \`output.md\` owns the week's coach-facing package:
 - coaching corrections and carry-forward priorities;
 - material roster and availability changes.
 
-Do **not** create separate \`prep.md\`, \`pregame_press.md\`, \`game_recap.md\`, \`highlights.md\`, or \`postgame_press.md\` files. Supporting evidence remains in its existing canonical owners: ledger, roster, standings, medical/current-state files, playbook, game-event ledger, and league-results files.
+Do **not** create separate `prep.md`, `pregame_press.md`, `game_recap.md`, `highlights.md`, or `postgame_press.md` files. Supporting evidence remains in its existing canonical owners: ledger, roster, standings, medical/current-state files, playbook, game-event ledger, and league-results files.
 
-Background games remain in \`career/[year]/league_results/week_NN.md\`; they are not expanded into this protagonist-team format.
+Background games remain in `career/[year]/league_results/week_NN.md`; they are not expanded into this protagonist-team format.
 
 ## Depth and word-count rule
 
@@ -161,7 +161,7 @@ Questions must arise from plausible public context available at that point. The 
 
 Reporter questions should vary in length and construction. Avoid a row of polished, two-part questions that all ask Stone to summarize the same issue. Ask about concrete choices, availability, matchup problems, game management, role changes, or public consequences.
 
-Stone's established media voice from \`career/2013/offseason/the_prowl_program_identity.md\` controls:
+Stone's established media voice from `career/2013/offseason/the_prowl_program_identity.md` controls:
 
 - understated;
 - specific;
@@ -263,19 +263,63 @@ A routine pregame session normally uses **2-3 substantive questions**. A routine
 
 **Next-week carry-forward:** [What Stone/staff will retain, reduce, correct, or investigate. Do not pre-resolve next week's outcome.]
 
-## 7. Roster / availability snapshot: changes and key personnel only
+## 7. Weekly personnel and availability snapshot
 
-**Offense**
-- QB1: [Name] ([tier]) | Status: [Healthy / Limited / Out]
-- Top skill players: [2-3 names with qualitative evaluation where useful]
-- OL assessment: [overall qualitative assessment and specific issue if material]
+This is a **complete unit-level weekly view**, not a second copy of the full roster. Every functional position group gets a current line, but name only the starters, primary rotational players, specialists, and anyone whose role or availability is material to the week.
 
-**Defense**
-- Key playmakers: [2-3 names]
-- Secondary assessment: [qualitative]
-- Pass rush: [qualitative]
+Keep four different questions separate:
 
-**Availability changes this week only:** [New injuries, returns, activations, elevations, or role changes. Do not repeat the full roster; Document 4 / roster.md owns it.]
+1. **Role:** what the player is currently being asked to do.
+2. **Availability:** whether and how the player can participate, using only the canonical medical/game-status information actually established.
+3. **Evaluation:** the staff's current qualitative football read, using the established five-tier language only where it adds value.
+4. **This week's evidence:** what changed, held up, or became a concern in this specific week.
+
+A strong game does not automatically raise a player's underlying tier, and a bad game does not automatically lower it. Weekly production is evidence. Role, health, matchup, assignment quality, and the broader body of work still control the current evaluation.
+
+### Offense
+
+| Group | Primary personnel / current role | Availability | Current qualitative read | This week's evidence / issue |
+|---|---|---|---|---|
+| QB | QB1: [Name] ([tier if useful]); QB2: [Name only when role/availability is material] | [Canonical status / limitation] | [Processing, accuracy, ball security, pocket management, movement, command, or other supported read] | [What the week actually showed; distinguish player execution from protection, receiver, play-call, or teaching issues] |
+| RB / FB | [Lead runner, third-down back, short-yardage back, FB or other materially used roles] | [Status] | [Vision, contact balance, pass protection, receiving, ball security, short-yardage value, etc.] | [Role change, workload issue, protection result, explosive runs, missed assignment, or no material change] |
+| WR | [Primary outside receivers, slot, and any material rotational/return role] | [Status] | [Separation, releases, route detail, catch-point work, blocking, communication, etc.] | [Who actually affected the week and how; do not rank the whole room from raw receiving totals] |
+| TE | [Inline, move, receiving, blocking, or hybrid roles actually in use] | [Status] | [Blocking, route value, hands, assignment reliability, versatility, etc.] | [Material contribution/problem, role change, or no material change] |
+| OL | LT: [Name]; LG: [Name]; C: [Name]; RG: [Name]; RT: [Name] | [Any individual limitation or lineup contingency] | [Run blocking, pass protection, communication, stunt/pickup handling, short-yardage movement, overall cohesion] | [Identify the exact edge/interior issue, pressure source, communication problem, lineup change, or strength when supported] |
+
+**Offensive role changes:** [New starter, rotation change, package change, reduced/increased responsibility, backup promotion, or "none." Do not manufacture a change because one player had a productive game.]
+
+### Defense
+
+| Group | Primary personnel / current role | Availability | Current qualitative read | This week's evidence / issue |
+|---|---|---|---|---|
+| Interior DL | [Primary interior starters/rotation and role if material] | [Status] | [Run fits, anchor, penetration, gap discipline, rush contribution, rotation quality] | [What held up or failed this week] |
+| Edge | [Primary edge defenders / rush or contain roles] | [Status] | [Pressure quality, edge setting, rush plan, finish, discipline] | [Pressure source, lost edge, containment issue, matchup win, or no material change] |
+| LB | [Primary off-ball linebackers and subpackage roles] | [Status] | [Run fits, coverage, communication, tackling, pressure responsibility] | [Assignment/communication/physical result from the week] |
+| CB | [Outside corners and any material matchup assignment] | [Status] | [Coverage, leverage, ball production, tackling, penalty/technique issues] | [Targeted matchup result, role change, or no material change] |
+| Nickel / dime | [Primary slot/subpackage defenders if used] | [Status] | [Coverage, pressure, fit, communication, versatility] | [Subpackage-specific evidence or issue] |
+| S | [Primary safeties and deep/box/matchup roles] | [Status] | [Range, angles, tackling, communication, coverage responsibility] | [Material play, bust, support strength, rotation change, or no material change] |
+
+**Defensive role changes:** [New starter, package/rotation change, matchup role, reduced/increased responsibility, or "none."]
+
+### Special teams
+
+| Unit | Primary personnel / role | Availability | Current qualitative read | This week's evidence / issue |
+|---|---|---|---|---|
+| K | [Name] | [Status] | [Range/consistency only from established evidence; do not invent precision] | [Makes/misses or operation issue that mattered] |
+| P | [Name] | [Status] | [Placement, hang-time/field-position value only when supported] | [Material punt/field-position evidence] |
+| LS / operation | [Name(s) only if material] | [Status] | [Snap/hold/operation reliability if evidenced] | [Only note when the operation materially affected a play or availability] |
+| Kick return | [Primary returner(s)] | [Status] | [Decision-making, ball security, field-position value] | [Material return or decision] |
+| Punt return | [Primary returner(s)] | [Status] | [Decision-making, security, return value] | [Material return/fair-catch/ball-security issue] |
+| Coverage units | [Core coverage players only when material] | [Status] | [Lane integrity, leverage, tackling, discipline] | [Breakdown, strong field-position work, penalty, or no material change] |
+
+### Material personnel changes this week
+
+- **Injuries / limitations:** [New injury, worsening/improving limitation, return, or no material change.]
+- **Activations / elevations / transactions:** [Only changes that actually occurred.]
+- **Depth-chart / rotation changes:** [Only decisions actually made. An open competition remains open until Stone/staff resolve it.]
+- **Role consequences for next week:** [Who may need a larger/smaller role, what remains unresolved, or no material change. Do not pre-resolve the next game.]
+
+Do not repeat the entire roster or every unchanged backup. `career/[year]/roster.md` and Document 4 remain authoritative for full personnel ownership and status. This section exists to show the coach the **current functional shape of the team** entering the next football decision.
 
 ## 8. Week closure
 
