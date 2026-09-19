@@ -4,7 +4,7 @@
 
 **As of:** January 15, 2013  
 **Mode:** real pre-divergence facts; counterfactual personnel decisions begin after this snapshot  
-**Status:** `CORRECTED JANUARY 15 CONTROL SNAPSHOT — 67 CONTROLLED PERSONS`
+**Status:** `CORRECTED JANUARY 15 CONTROL SNAPSHOT — 76 CONTROLLED PERSONS`
 
 ## Sources and evidence boundary
 
@@ -13,7 +13,7 @@
 - **Contract cross-check:** OverTheCap historical-contract export, used only for contract totals that can be matched unambiguously. [NFLverse contracts release](https://github.com/nflverse/nflverse-data/releases/tag/contracts)
 - **Rules:** the $123,000,000 league cap and 2013 roster/accounting rules are already independently sourced in `foundation/02_League_Era_and_Sourcebook.md` §11 and `library/2013_league_calendar_and_financial_rules.md`.
 
-**Cutoff:** January 15, 2013, the counterfactual Stone hire date. The weekly-roster spine is supplemented by Jacksonville's official 2012 transaction ledger. That ledger establishes four reserve/future contracts signed December 30, 2012, before the divergence. No actual transaction, release, re-signing, draft choice, staff hire, or player outcome after January 15 is imported.
+**Cutoff:** January 15, 2013, the counterfactual Stone hire date. The weekly-roster spine is supplemented by Jacksonville's official 2012 transaction ledger: https://www.jaguars.com/team/transactions/2012. That ledger establishes both the four reserve/future contracts signed December 30, 2012 and nine additional season-ending reserve/injured players omitted from the prior 63-person active/reserve spine. No actual transaction, release, re-signing, draft choice, staff hire, or player outcome after January 15 is imported; later real releases are used only as corroboration that a pre-divergence contract/control relationship continued until the branch chooses otherwise.
 
 ## Two-pass verification record
 
@@ -23,7 +23,7 @@ The NFL weekly export supplied the 53 unique names carrying an `ACT` row at Week
 
 ### Pass 2 — skeptical re-check
 
-Every active-roster name was re-matched by name against the independent PFR roster; every games/starts entry comes from that second dataset. Ten season-ending reserve/injured cases visible in the season roster were added separately. A later audit recovered Jacksonville's official 2012 transaction ledger and corrected the remaining January control gap: on December 30 the club signed John Parker Wilson, Ryan Davis, Brandon King and Will Ta'ufo'ou to reserve/future contracts. Those four contracts predate Stone's January 15 hire and therefore belong to the inherited branch state.
+Every active-roster name was re-matched by name against the independent PFR roster; every games/starts entry comes from that second dataset. The earlier pass recovered ten season-ending reserve/injured cases, but the club transaction ledger shows **nineteen** players on season-ending reserve/injured status by year-end. The nine omitted controlled players were Jordan Todman, Brett Brackett, Jason Spitz, John Estes, Drew Nowak, Matt Veldman, Greg Jones (linebacker), Rashad Jennings and William Middleton. The same official ledger also records December 30 reserve/future contracts for John Parker Wilson, Ryan Davis, Brandon King and Will Ta'ufo'ou. All thirteen corrections predate Stone's January 15 hire and therefore belong to inherited branch state.
 
 ## Player register
 
@@ -108,11 +108,29 @@ The official Jacksonville transaction ledger records these contracts on **Decemb
 
 These contracts existed before the January 15 divergence. The real-world February 26 releases of Wilson and King occurred **after** divergence and are not branch facts.
 
-**Corrected January 15 inventory:** 53 final-week active names + 10 separately identified reserve/injured cases + 4 reserve/future contracts = **67 controlled persons**.
+## January 15 reserve/injured completeness correction
 
-The original 63-row player table below remains the sourced 2012 active/reserve spine. The four-row correction above completes the January 15 control list.
+Jacksonville's official 2012 transaction ledger establishes nine additional players who remained on season-ending reserve/injured status but were absent from the prior 63-person research spine:
 
-**Inventory counts:** 53 final-week active names; 10 separately identified reserve/injured cases; 63 persons in the original active/reserve spine. The four reserve/future rows above complete the corrected 67-person January 15 control inventory.
+| Player | Pos. | Pre-divergence control evidence | Branch treatment |
+|---|---|---|---|
+| Jordan Todman | RB | Signed from Minnesota practice squad Nov. 26; placed on injured reserve Dec. 17 | Controlled; later real 2013 participation is not imported |
+| Brett Brackett | TE | Claimed Aug. 31; placed on injured reserve Sep. 3 | Controlled; later real Aug. 31, 2013 waiver is quarantined |
+| Jason Spitz | G/C | Existing Jacksonville veteran contract; placed on injured reserve Aug. 26 | Controlled; later real Aug. 18, 2013 release is quarantined |
+| John Estes | C | Placed on injured reserve Aug. 26 | Controlled on Jan. 15; scheduled 2013 restricted free agent |
+| Drew Nowak | G | Signed May 2; placed on injured reserve Aug. 26 | Controlled; later real Aug. 29, 2013 release is quarantined |
+| Matt Veldman | TE | Signed May 2; placed on injured reserve Aug. 26 | Controlled; later real 2013 release is quarantined |
+| Greg Jones | LB | Signed Nov. 11; placed on injured reserve Dec. 23 | Controlled; this is **not** veteran fullback Greg Jones |
+| Rashad Jennings | RB | Placed on injured reserve Dec. 23 | Controlled on Jan. 15; scheduled 2013 unrestricted free agent |
+| William Middleton | DB | Placed on injured reserve Nov. 26 | Controlled on Jan. 15; scheduled 2013 unrestricted free agent |
+
+Primary evidence: Jacksonville Jaguars 2012 transactions, https://www.jaguars.com/team/transactions/2012. The later 2013 club transaction ledger independently shows Spitz, Brackett and Nowak surviving into 2013 before later real-world releases, but those post-divergence releases are not branch events.
+
+**Corrected January 15 inventory:** 53 final-week active names + 19 season-ending reserve/injured cases + 4 reserve/future contracts = **76 controlled persons**.
+
+The original 63-row player table remains the sourced 53-active-plus-10-reserve research spine. The nine-row reserve/injured correction and four-row reserve/future correction above complete the January 15 control list.
+
+**Inventory counts:** 53 final-week active names; 19 season-ending reserve/injured cases; 4 reserve/future contracts; **76 controlled persons**.
 
 ## Staff and football-operations baseline
 
