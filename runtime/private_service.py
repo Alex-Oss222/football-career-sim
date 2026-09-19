@@ -85,6 +85,19 @@ def seed():
 def seed_fingerprint():
     return hashlib.sha256(seed()).hexdigest()[:16]
 
+def self_test():
+    journal = PostgresJournal()
+    packet = Packet.freeze(
+        "runtime-probe-v1", PROCEDURE_VERSION,
+        snapshot=SNAPSHOT,
+        inputs={"kind": "readiness-probe"},
+        modifiers={},
+        weights={"ok": 1},
+    )
+    first = resolve(packet, seed(), journal)
+    second = resolve(packet, seed(), journal)
+    return first == second == "ok"
+
 def authorized():
     header = request.headers.get("Authorization", "")
     return header.startswith("Bearer ") and secrets.compare_digest(header[7:], API_TOKEN)
@@ -99,13 +112,16 @@ def health():
                 cur.fetchone()
                 cur.execute("SELECT COUNT(*) AS n FROM engine_meta WHERE key='career_seed'")
                 seeded = cur.fetchone()["n"] == 1
+        journal_ok = self_test() if seeded else False
         return jsonify({
-            "ready": bool(seeded),
+            "ready": bool(seeded and journal_ok),
             "schema_version": SCHEMA_VERSION,
             "procedure_version": PROCEDURE_VERSION,
             "snapshot": SNAPSHOT,
             "backend": "postgres",
-        }), 200 if seeded else 503
+            "seed_fingerprint": seed_fingerprint() if seeded else None,
+            "journal_idempotent": journal_ok,
+        }), 200 if seeded and journal_ok else 503
     except Exception:
         return jsonify({"ready": False, "schema_version": SCHEMA_VERSION}), 503
 
@@ -115,24 +131,14 @@ def probe():
         return jsonify({"error": "unauthorized"}), 401
     try:
         initialize()
-        journal = PostgresJournal()
-        # Probe uses a reserved administrative event outside the career ledger.
-        packet = Packet.freeze(
-            "runtime-probe-v1", PROCEDURE_VERSION,
-            snapshot=SNAPSHOT,
-            inputs={"kind": "readiness-probe"},
-            modifiers={},
-            weights={"ok": 1},
-        )
-        first = resolve(packet, seed(), journal)
-        second = resolve(packet, seed(), journal)
+        ok = self_test()
         return jsonify({
-            "ready": first == second == "ok",
+            "ready": ok,
             "schema_version": SCHEMA_VERSION,
             "procedure_version": PROCEDURE_VERSION,
             "snapshot": SNAPSHOT,
             "seed_fingerprint": seed_fingerprint(),
-            "journal_idempotent": first == second,
+            "journal_idempotent": ok,
         })
     except Exception:
         return jsonify({"ready": False, "schema_version": SCHEMA_VERSION}), 503
