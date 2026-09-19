@@ -1,24 +1,29 @@
 # Jacksonville Jaguars — Current Roster
 
 **As of:** May 5, 2013, after rookie minicamp and before OTAs.  
-**Canonical controlled-player count:** **64**.  
-**Status:** Contract/control reconciliation complete for the current roster. Veteran practice availability still requires normal current medical communication.  
+**Canonical controlled-player count:** **70**.  
+**Status:** Contract/control reconciliation complete for the current roster after reserve/injured audit. Veteran practice availability still requires normal current medical communication.  
 **Cap:** See [May 5 Top-51 worksheet](offseason/current_cap_worksheet.md).  
 **Calendar:** See [active 2013 career calendar](calendar.md).
 
-## 1. Why the old 75-player count was wrong
+## 1. Why the old 75-player count and the later 64-player correction were wrong
 
-The old working roster treated almost every 2012 Week 17 name as if Jacksonville still controlled him in May 2013. Jacksonville's contemporaneous free-agent list proves otherwise.
+The old working roster treated almost every 2012 Week 17 name as if Jacksonville still controlled him in May 2013. The later 64-player correction fixed many expirations, but it still used an incomplete January reserve/injured inventory.
 
-Seventeen names from that old inventory were scheduled to become free agents March 12. This branch re-signed **Brad Meester** and **Daryl Smith** only. The other fifteen left Jacksonville control when their prior contracts/rights expired because no branch tender or new contract was recorded:
+Jacksonville's official 2012 transaction ledger shows **19** season-ending reserve/injured players, not 10. Nine were absent from the prior January spine: Jordan Todman, Brett Brackett, Jason Spitz, John Estes, Drew Nowak, Matt Veldman, Greg Jones (LB), Rashad Jennings and William Middleton. The same ledger confirms the four December 30 reserve/future contracts for John Parker Wilson, Ryan Davis, Brandon King and Will Ta'ufo'ou.
+
+Jacksonville's contemporaneous own-free-agent list identifies **20** players scheduled to reach free agency March 12. This branch re-signed **Brad Meester** and **Daryl Smith** only. The other **18** left Jacksonville control when their prior contracts/rights expired because no branch tender or new contract was recorded:
 
 - Kyle Bosworth
 - Eben Britton
 - John Chick
 - Derek Cox
-- Greg Jones
+- John Estes
+- Rashad Jennings
+- Greg Jones (FB)
 - Terrance Knighton
 - Rashean Mathis
+- William Middleton
 - Antwaun Molden
 - Jordan Palmer
 - Jalen Parmele
@@ -28,34 +33,28 @@ Seventeen names from that old inventory were scheduled to become free agents Mar
 - Keith Toston
 - Steve Vallos
 
-Conversely, the old January snapshot omitted four **December 30, 2012 reserve/future contracts** that predate Stone's January 15 divergence:
-
-- QB John Parker Wilson
-- DE Ryan Davis
-- DB Brandon King
-- FB Will Ta'ufo'ou
-
-Their actual later real-world releases are post-divergence and therefore are not imported. In this branch they remain Jacksonville-controlled unless and until a branch transaction changes that.
+The six newly recovered January players who remain controlled on May 5 are **Jordan Todman, Brett Brackett, Jason Spitz, Drew Nowak, Matt Veldman and Greg Jones (LB)**. Their later real 2013 releases or roster outcomes occurred after the January 15 divergence and are not imported into this branch.
 
 ## 2. Control reconciliation
 
 | Step | Count |
 |---|---:|
-| Old January research inventory | 63 |
+| Prior January research inventory | 63 |
+| Omitted season-ending reserve/injured players | +9 |
 | Omitted Dec. 30 reserve/future contracts | +4 |
-| Corrected Jan. 15 controlled inventory | **67** |
-| March 12 old-contract expirations not retained | -15 |
+| Corrected Jan. 15 controlled inventory | **76** |
+| March 12 free agents not retained | -18 |
 | Branch releases: Whimper, Ross, Landry, Robinson | -4 |
 | Branch outside FA additions | +4 |
-| Post-FA controlled roster | **52** |
+| Post-FA controlled roster | **58** |
 | Cousins acquisition | +1 |
 | Gabbert-for-C.J. Wilson swap | 0 net |
-| Pre-draft controlled roster | **53** |
+| Pre-draft controlled roster | **59** |
 | Seven drafted players | +7 |
 | Four signed UDFAs | +4 |
-| **Current controlled roster** | **64** |
+| **Current controlled roster** | **70** |
 
-The 64-person count is below the offseason 90-player maximum. It is a control count, not a depth chart.
+The 70-person count is below the offseason 90-player maximum. It is a control count, not a depth chart.
 
 ## 3. Current controlled players
 
@@ -70,12 +69,13 @@ Alphabetical within position. No ordering implies depth.
 | John Parker Wilson | Dec. 30, 2012 reserve/future contract; pre-divergence | No role guaranteed |
 | Tyler Bray | #208; four-year rookie contract executed May 2 | Developmental competition; no depth position promised |
 
-### Running backs — 4
+### Running backs — 5
 
 | Player | Control basis | Current football limit |
 |---|---|---|
 | C.J. Anderson | Three-year UDFA minimum contract | Competition; no workload guarantee |
 | Jonathan Grimes | Existing contract/control; not on March 12 FA list | No role guaranteed |
+| Jordan Todman | Signed from Minnesota practice squad Nov. 26, 2012; placed on IR Dec. 17; inherited control | Competition; later real 2013 role is not imported |
 | Maurice Jones-Drew | Existing contract/control | No role guaranteed |
 | Richard Murphy | Existing contract/control; not on March 12 FA list | No role guaranteed |
 
@@ -97,13 +97,15 @@ Alphabetical within position. No ordering implies depth.
 | Cecil Shorts | Existing rookie contract | No role guarantee added here |
 | Adam Thielen | Three-year UDFA minimum contract | Receiver/ST competition; no target or roster guarantee |
 
-### Tight ends — 4
+### Tight ends — 6
 
 | Player | Control basis | Current football limit |
 |---|---|---|
 | Allen Reisner | Existing contract/control | Competition |
+| Brett Brackett | Claimed Aug. 31, 2012; placed on IR Sep. 3; inherited control | Competition; later real 2013 waiver is quarantined |
 | Marcedes Lewis | Existing contract/control | No role guarantee added here |
 | Isaiah Stanback | Existing contract/control | Competition |
+| Matt Veldman | 2012 rookie contract; placed on IR Aug. 26; inherited control | Competition; later real 2013 release is quarantined |
 | Travis Kelce | #33; four-year rookie contract executed May 2 | Teaching/evaluation role; no final roster role guaranteed |
 
 ### Offensive tackles — 3
@@ -114,10 +116,12 @@ Alphabetical within position. No ordering implies depth.
 | Lane Johnson | #2; four-year rookie contract + first-round option mechanism, executed May 2 | Opens evaluation at RT; no starting guarantee |
 | Eugene Monroe | Existing contract/control | No role change created here |
 
-### Offensive guards — 4
+### Offensive guards — 6
 
 | Player | Control basis | Current football limit |
 |---|---|---|
+| Drew Nowak | 2012 rookie contract; placed on IR Aug. 26; inherited control | G/C competition; later real 2013 release is quarantined |
+| Jason Spitz | Existing Jacksonville veteran contract; placed on IR Aug. 26 | G/C competition; later real Aug. 2013 release is quarantined |
 | Mark Asper | Existing contract/control | Competition |
 | Uche Nwaneri | Existing contract/control | Competition |
 | Austin Pasztor | Existing contract/control | Competition |
@@ -154,12 +158,13 @@ Alphabetical within position. No ordering implies depth.
 | Jeris Pendleton | Existing rookie contract | Competition |
 | D'Anthony Smith | Existing contract/control | Competition |
 
-### Linebackers — 6
+### Linebackers — 7
 
 | Player | Control basis | Current football limit |
 |---|---|---|
 | Russell Allen | Existing contract/control | Competition |
 | Brandon Marshall | Existing rookie contract/control | Competition |
+| Greg Jones (LB) | Signed Nov. 11, 2012; placed on IR Dec. 23; inherited control | Competition; distinct from former FB Greg Jones |
 | Sio Moore | #98; four-year rookie contract executed May 2 | Initial assignment determined through staff evaluation |
 | Paul Posluszny | Existing contract/control | No role guarantee added here |
 | Daryl Smith | Branch re-signing: two years, $6.00M | Contract does not supply practice clearance or starting guarantee |
@@ -199,7 +204,7 @@ Alphabetical within position. No ordering implies depth.
 
 ### Expired / rights lapsed March 12, no branch retention contract
 
-Kyle Bosworth, Eben Britton, John Chick, Derek Cox, Greg Jones, Terrance Knighton, Rashean Mathis, Antwaun Molden, Jordan Palmer, Jalen Parmele, Zach Potter, George Selvie, Jordan Shipley, Keith Toston, Steve Vallos.
+Kyle Bosworth, Eben Britton, John Chick, Derek Cox, John Estes, Rashad Jennings, Greg Jones (FB), Terrance Knighton, Rashean Mathis, William Middleton, Antwaun Molden, Jordan Palmer, Jalen Parmele, Zach Potter, George Selvie, Jordan Shipley, Keith Toston, Steve Vallos.
 
 These are not releases and do not create new release dead money. Their prior Jacksonville control ended because the branch recorded no tender/re-signing before the applicable rights expired.
 
@@ -248,7 +253,7 @@ Current May 5 Top-51 effect: **$0**.
 
 The stale `~$8.35M` post-free-agency shortcut is retired.
 
-**Current May 5 planning room: approximately $7.0M-$7.4M under Top-51 accounting.**
+**Current May 5 source-bounded planning room: approximately $16.5M-$18.5M under Top-51 accounting.**
 
 See [current_cap_worksheet.md](offseason/current_cap_worksheet.md) for the complete transaction math, source limitations and required recalculation triggers.
 
@@ -265,6 +270,6 @@ See [current_cap_worksheet.md](offseason/current_cap_worksheet.md) for the compl
 Before May 13 OTA work begins:
 
 1. confirm coach-facing medical participation status for the controlled veteran roster;
-2. use the 64-player list for onboarding/contact;
-3. do not contact the 15 expired former Jaguars as though they remain under contract;
+2. use the 70-player list for onboarding/contact;
+3. do not contact the 18 expired former Jaguars as though they remain under contract;
 4. update this file atomically if any transaction occurs.
