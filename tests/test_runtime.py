@@ -3,7 +3,8 @@ from pathlib import Path
 from runtime.anchors import evidence_anchor, initialize_team
 from runtime.calibration import load, validate
 from runtime.injuries import maybe_injury
-from runtime.kernel import TeamInput, resolve_game, resolve_background_game, resolve_protagonist_game, validate_result
+from runtime.kernel import TeamInput, resolve_game, validate_result
+from runtime.game_runner import resolve_background_game, resolve_protagonist_game
 from runtime.rules import RULES, DIVISION_TIEBREAKERS, WILD_CARD_TIEBREAKERS, PLAYOFF_SEEDS, review_authority
 
 class RuntimeTests(unittest.TestCase):
@@ -30,6 +31,14 @@ class RuntimeTests(unittest.TestCase):
         a,b=self.teams(); r=resolve_game(a,b,seed=self.seed,event_id='synthetic-1')
         self.assertEqual(r,resolve_game(a,b,seed=self.seed,event_id='synthetic-1')); self.assertEqual(validate_result(r),[])
         self.assertTrue(all(p in a.active_players for p in r['team_stats']['A']['players']))
+        self.assertTrue(r['player_evidence'])
+        for item in r['player_evidence']:
+            self.assertNotIn('grade',item)
+            self.assertFalse('observable_effort' in item and item['observable_effort'] in {'bad','lazy','low'})
+        for team in ('A','B'):
+            player_stats=r['team_stats'][team]['players'].values()
+            self.assertEqual(sum(p['passing_yards'] for p in player_stats),r['team_stats'][team]['passing_yards'])
+            self.assertEqual(sum(p['rushing_yards'] for p in player_stats),r['team_stats'][team]['rushing_yards'])
     def test_pause_and_continuation(self):
         a,b=self.teams(); paused=resolve_game(a,b,seed=self.seed,event_id='pause',management_mode='user_controlled')
         self.assertEqual(len(paused['pauses']),1)

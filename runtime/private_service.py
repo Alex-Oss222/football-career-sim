@@ -8,7 +8,7 @@ import argparse, hashlib, hmac, json, os, secrets, sqlite3, threading, time
 from pathlib import Path
 from contextlib import closing
 
-SCHEMA="1"; KERNEL="2013.1"
+SCHEMA="1"; KERNEL="2013.2"
 
 class Store:
     def __init__(self,path):

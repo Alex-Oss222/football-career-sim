@@ -5,7 +5,8 @@ from pathlib import Path
 from validate_repository import ROOT, validate
 sys.path.insert(0,str(ROOT))
 from runtime.calibration import load, validate as validate_calibration
-from runtime.kernel import resolve_background_game, resolve_protagonist_game
+from runtime.game_runner import (architecture_errors, resolve_background_game,
+                                 resolve_protagonist_game, run_game)
 from runtime.private_client import Client, PrivateRuntimeUnavailable
 from runtime.rules import RULES
 
@@ -29,7 +30,11 @@ def assess(root=ROOT):
     except Exception as e: blockers.append(dict(id='calibration_probe',label='Calibration probe',detail=str(e)))
     rule_doc=(root/'foundation/02_League_Era_and_Sourcebook.md').read_text()
     if RULES.active_limit!=46 or '2013 playing rules, verified' not in rule_doc: blockers.append(dict(id='rules_probe',label='Rules probe',detail='2013 executable/source rules mismatch'))
-    if resolve_background_game is not resolve_protagonist_game: blockers.append(dict(id='kernel_probe',label='Kernel probe',detail='game paths do not share one kernel'))
+    runner_errors=architecture_errors()
+    if resolve_background_game is not run_game or resolve_protagonist_game is not run_game:
+        runner_errors.append('protagonist/background entry points differ')
+    if runner_errors:
+        blockers.append(dict(id='kernel_probe',label='Production game-path probe',detail='; '.join(runner_errors)))
     # Only the canonical checkout may bind to the deployed branch snapshot.
     if root.resolve()!=ROOT.resolve(): blockers.append(dict(id='private_probe',label='Private runtime probe',detail='noncanonical checkout is not snapshot-bound'))
     else:
