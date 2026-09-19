@@ -1,266 +1,172 @@
-# Trade exploration board — Alex Stone / Jacksonville Jaguars
+# Quarterback trade board: Stone's recommendation to Caldwell
 
-**Purpose:** Stone's decision-facing trade notebook. This file contains what Stone can legitimately know from public information, Jacksonville's own football operation, conversations actually relayed to him, and his own football judgment. It is **not** the simulator's hidden truth about another club.
+To: David Caldwell, general manager
 
-**Authority:** Stone recommends targets, football value, role and acceptable trade framework. General manager David Caldwell holds final trade authority under Document 3.
+From: Alex Stone, head coach
 
-**Status:** PRE-TRANSACTION PLANNING. No trade below is assumed to happen. No other club's willingness, minimum price or private board is known until Jacksonville actually contacts that club and receives a response.
+Status: Pre-transaction planning. Cousins is a target, not a Jaguar. This document recommends football value and terms; Caldwell retains final acquisition, contract and cap authority. Stone controls the coaching plan and earned playing roles.
 
-## Information labels
+Basis: The user's supplied *Kirk Cousins Quarterback Development Plan, 2013*, the [Prowl identity](../offseason/the_prowl_program_identity.md), [readiness standard](../offseason/the_prowl_player_readiness_standard.md), [roster evaluation](../offseason/roster_evaluation.md) and [staff responsibilities](../coaching_staff.md). The accompanying [quarterback development plan](../offseason/quarterback_development_plan.md) turns that brief into proposed teaching work. It records no completed practice, private conversation or player improvement.
 
-- **PUBLIC FACT:** available through ordinary league/public information by the relevant date.
-- **JAX STAFF / SCOUTING:** a Jacksonville football evaluation communicated to Stone.
-- **STONE JUDGMENT:** Stone's own coaching recommendation or valuation.
-- **MARKET UNKNOWN:** information Jacksonville does not possess until another club/agent communicates it.
-- **BRANCH EVENT:** information created only when an actual simulated call, counter, acceptance or rejection occurs.
+## 1. Stone's case to Caldwell
 
-Later real trades, later career performance and the eventual real value another team paid are prohibited as valuation inputs.
+Dave,
 
----
+I want us to find out whether Cousins is obtainable at the price below. The case is a young quarterback we can evaluate in a real competition while preserving our premium picks in this draft. I am not asking you to pay for what I hope he becomes.
 
-# 1. Kirk Cousins — QB, Washington
+I want the quarterback to know what the protection gives him, reach the top of his drop ready to throw and move to the next answer when the defense takes the first one away. He needs enough movement to preserve the play and enough judgment to end it. A clean pocket should not become pressure because he drifts. A covered receiver should not become the target because that was the answer before the snap.
 
-## What Stone actually knows
+The development idea is to make his normal process survive a disrupted play. Keep what works. Correct the base, movement or decision that actually costs us a throw. Bates owns the daily quarterback work. Tice must make the protection and route timing agree. I own the menu we ask the quarterback to execute and the calls we make with it.
 
-### PUBLIC FACT
+We also have to keep building the team. A future second is a meaningful cost, and developing a quarterback takes reps from other work. If the film does not support the proposed corrections, or Washington's price exceeds these packages, we keep evaluating the position. My confidence in a plan cannot create a player or a market.
 
-- Washington selected Cousins in the fourth round of the 2012 draft despite already selecting Robert Griffin III.
-- Cousins produced credible rookie tape when called upon, including a start against Cleveland.
-- Griffin underwent major knee surgery in January 2013.
-- Public trade speculation existed around Cousins after his rookie season, but Griffin's rehabilitation materially increased Washington's reason to keep a capable second quarterback.
-- Cousins remains on an inexpensive rookie contract.
+This is an authored recommendation in Stone's voice, not a transcript of a meeting already held.
 
-Contemporaneous reporting later summarized the same market reality: trade speculation existed before Griffin's injury, but the January surgery largely suppressed it because Washington might need Cousins to run the first-team offense while Griffin rehabilitated.
+## 2. What Stone is looking for in a quarterback
 
-Period source:
-- Washington Post, May 24, 2013, describing the earlier trade speculation and how Griffin's January surgery changed Washington's incentive to deal Cousins:  
-  https://www.washingtonpost.com/news/football-insider/wp/2013/05/24/even-before-griffins-injury-cousins-expected-to-be-back-for-second-year-with-redskins/
+These criteria apply to Cousins, Gabbert, Henne and draft alternatives. They establish the football job, not a requirement that every candidate resemble Cousins.
 
-This source may verify the **pre-existing January fact pattern**. It may not be used to import any later Washington decision as branch truth.
+- **Preparation that appears on the field.** Communicate the call, recognize the protection responsibility and make the appropriate adjustment. Classroom fluency needs confirmation against a changing defense.
+- **Feet attached to the concept.** Be ready at the route's window; reset without wasting the next one. Preserve a functional release unless a specific defect appears.
+- **Post-snap confirmation.** Separate an available access throw from a progression that still requires reading a defender. Leave a covered first answer on time without mechanically scanning receivers a concept does not require.
+- **Useful pocket movement.** Know the intended launch point, climb or reset when appropriate, and keep the ball available. Escape when the pocket is gone rather than manufacturing a broken play.
+- **Functional passing range.** Make the routine and intermediate throws on schedule and threaten enough of the field to keep the defense honest. Do not build the offense around late throws that require an arm the player has not demonstrated.
+- **Situational judgment.** Understand the sticks, clock, field position and turnover cost. A checkdown, throwaway or safe scramble can be correct; it depends on the situation.
+- **Earned command.** Increase protection, cadence, tempo and run-pass authority as decisions become reliable. Designed quarterback running is a selective tool, not a rushing quota.
+- **Response to correction.** Explain the error, apply the correction and carry it into a different look. Do not confuse public confidence, a polished interview or voluntary-workout attendance with football competence.
 
-### JAX STAFF / SCOUTING
+Stone's tight-end and passing-game background makes receiver spacing, leverage, protection and timing central to this evaluation. His secondary experience makes the changed post-snap picture equally important. His motor-learning background informs the correction and retest process, not a promise that every fault is coachable.
 
-Jacksonville's football case for making the call is based on Cousins' 2012 NFL tape and college profile, not on later career outcomes.
+The head-coach perspective is broader than the passing menu: avoidable sacks and turnovers affect the defense, field position and the rest of the roster. Stone must also reject a poor call, overloaded install or unclear instruction when the staff caused the problem.
 
-The staff sees a quarterback worth investigating because he has already shown:
+## 3. Cousins: acquisition case and evidence limits
 
-- NFL game exposure;
-- enough functional processing to execute a professional passing game in limited duty;
-- experience in a structured play-action / movement-passing environment;
-- rookie-contract cost control.
+### What carries forward
 
-The staff does **not** treat the limited rookie sample as proof that Cousins is a future franchise quarterback.
+The inherited board records Cousins' 2012 fourth-round entry, limited rookie NFL work including a Cleveland start, his rookie contract, and Griffin's January 2013 knee surgery. These background facts make an inquiry reasonable. They establish neither sustained starting quality nor Washington's willingness to sell.
 
-### STONE JUDGMENT
+The supplied development pack describes a structured passer and targets pressure response, base, stride, progression timing and protection command. That is Stone's working evaluation and proposed direction. Each specific mechanical tendency still needs support from eligible film; the pack is not a completed Jacksonville scouting or medical report.
 
-Stone wants Caldwell to test the market.
+The football case is a potentially useful fit at a controlled price: build on timing, under-center/play-action experience and structured passing while testing whether the process survives a closed first window. No later Cousins season, contract, award or reputation belongs in the valuation.
 
-His position is:
+### What the staff must establish before recommending a purchase
 
-> Cousins is worth acquiring at a controlled price because Jacksonville can create a real quarterback competition without spending the second overall pick merely to force a quarterback solution.
+Scouting, Bates and Tice should bring the relevant college and 2012 NFL cutups, including unsuccessful plays and adverse situations, to Stone. No clip-level findings are invented here.
 
-This is a football valuation, not a prediction that Cousins will win the job.
+1. Identify what the call reasonably appears to ask. Mark the assignment uncertain when public film cannot establish it.
+2. Compare clean-pocket execution with interior pressure, edge pressure and an unblocked rusher. Do not combine them into one pressure grade.
+3. Test the pack's hypotheses: excessive base width, an overlong stride, rushed resets, falling away, ball carriage and remaining on the first read. Reject a diagnosis the film does not support.
+4. Separate protection identification, a physically lost block, a receiver error, a late quarterback decision and a coaching/structure problem.
+5. Present a plausible first playing role, the development work required and the strongest evidence against paying the proposed price.
+6. Compare the same questions with Gabbert and Henne, accounting for personnel and sample differences. Identify the improvement Jacksonville would be buying and what remains uncertain.
 
-## What Stone does not know
+The recommendation weakens if the desired job requires a wholesale mechanical rebuild, throwing capacity not demonstrated, or decisions that remain unreliable when the first answer closes. A correctable hypothesis is not an established correction.
 
-### MARKET UNKNOWN
+### Washington's side remains unknown
 
-Until Caldwell speaks to Washington, Jacksonville does **not** know:
+Griffin's rehabilitation gives Washington a reason to value backup insurance. That is a football inference, not knowledge of its internal price, medical timetable or roster decision.
 
-- whether Washington will discuss Cousins at all;
-- whether Griffin's rehabilitation makes Cousins effectively unavailable;
-- Washington's minimum acceptable compensation;
-- whether Washington values a 2013 pick, a future pick, or no trade;
-- whether another team has made an offer;
-- whether Washington would entertain a conditional structure.
+Until an actual response reaches Caldwell, availability, rival bids, preferred compensation and willingness to accept conditions remain unknown. Cousins' private wishes are also unknown. Jacksonville does not coach, recruit or promise a job to another club's contracted player without the required permission.
 
-The board must not convert public trade speculation into "Cousins is available."
+## 4. Price, conditions and opportunity cost
 
-## Jacksonville opening framework
+The existing board contains two acceptable structures for Stone to recommend. They are preserved here with their different maximum costs made explicit.
 
-### STONE JUDGMENT
+1. **Opening conditional package:** Jacksonville's 2013 seventh, currently labeled #208, plus its 2014 third. If the trigger is met, the second replaces the third, so the total becomes the 2013 seventh plus the 2014 second. No additional pick is attached.
+2. **Alternative outright package:** Jacksonville's 2014 second alone, with no performance condition. #208 comes out; no additional selection is included.
 
-**Opening offer:**
+**Existing trigger, unchanged:** The 2014 third becomes a 2014 second if Cousins makes **10 regular-season starts in 2013 OR plays 65% of Jacksonville's offensive snaps**.
 
-- Jacksonville 2013 seventh-round pick **#208**; plus
-- Jacksonville 2014 third-round pick;
-- the 2014 third escalates to a 2014 second if Cousins reaches either:
-  - 10 regular-season starts in 2013; or
-  - 65% of Jacksonville's offensive snaps.
+For the proposed term sheet, define the snap denominator as Jacksonville's full 2013 regular-season offensive snaps, identify the official counting source and resolve corrections before acceptance. The second replaces the third; it is not paid in addition to it. Personnel must confirm ownership and availability of every potentially owed pick and record the conditional obligation.
 
-### Why Stone prefers this structure
+The conditional package can cost **#208 plus a 2014 second**. Therefore, the old phrase "no more than a 2014 second outright" describes the alternative outright offer, not the maximum cost of both packages. This clarification does not increase either existing offer.
 
-- Washington receives immediate 2013 compensation.
-- Jacksonville protects its premium 2013 selections.
-- Washington receives materially greater value if Cousins becomes Jacksonville's primary quarterback.
-- The condition prices uncertainty rather than pretending Jacksonville already knows what Cousins will become.
+Stone does not recommend adding #64 or #98, offering a 2014 first, or attaching #208 to the outright second. A counter outside these structures requires a new valuation and decision; the attractiveness of the development plan does not silently expand the ceiling.
 
-## Stone's trade ceiling
+### Why the limit matters
 
-Stone recommends **no more than a 2014 second-round pick outright**.
+The opening package preserves premium 2013 picks and makes the larger future payment depend on playing time. Playing time is not proof of quality: injury elsewhere in the room or a weak alternative could trigger the second even if Cousins disappoints. A poor Jacksonville season could also make the future pick especially valuable.
 
-If Washington demands the future second outright:
+Caldwell must compare the full cost with retaining the current room, another credible acquisition and the live draft board. Do not assume an outgoing Gabbert or Henne pick will reimburse the purchase. No outgoing return is booked until a separate trade closes.
 
-- #208 comes out;
-- Jacksonville does not add #64 or #98;
-- Jacksonville does not offer a 2014 first;
-- Jacksonville does not combine the flat 2014 second with #208.
+Football deployment remains a football decision. Do not withhold earned starts or snaps merely to avoid the condition.
 
-This is Stone's internal football ceiling. It is not an assertion that Washington would accept it.
+### Contract and calendar review
 
-## Process
+Cousins' rookie-contract status supports cost-control interest, but no precise incoming cap charge is established here. Personnel must verify remaining salary, guarantees, bonuses and assignment terms, then calculate Jacksonville's net obligations. Apply the [cap sheet's transaction method](../offseason/initial_cap_sheet.md), including timing and Top-51 displacement where applicable. Do not transfer Washington's entire published cap hit to Jacksonville or treat an outgoing player's listed cap hit as automatic savings.
 
-1. Caldwell asks whether Washington is willing to discuss Cousins.
-2. If Washington says no, the inquiry closes unless a later branch event changes the market.
-3. If Washington gives a price, Caldwell reports the actual response.
-4. Stone may compare that price with this board and recommend whether to proceed.
-5. Caldwell retains final trade authority.
+The #208 label is retained from the planning board. Verify its exact slot and ownership against the branch's draft inventory before including it. If no trade closes before Jacksonville must select, use the pick through the [draft board](../offseason/draft/player_draft_board.md); a later inquiry needs a revised framework.
 
-A historical future fact such as whether Washington ultimately did or did not trade Cousins is not consulted.
+All calls, agreements and effective transactions follow the active branch date and league calendar. This edit advances neither.
 
----
+## 5. Coaching commitment if Cousins is acquired
 
-# 2. Quarterback-room consequences if Cousins is acquired
+The [development plan](../offseason/quarterback_development_plan.md) activates for Cousins only after acquisition and when the relevant football work is permitted. Its common evaluation standards can be applied to the current quarterbacks.
 
-This section activates **only after a Cousins trade actually closes**.
+The first job is to compete for the starting position with a manageable core menu. Stone is not buying an automatic starter, a mandatory option package or an immediate full-field audible system.
 
-Acquiring Cousins does **not** name him the starter.
+- Bates establishes the baseline and leads mechanics, pocket movement and progression teaching.
+- Tice integrates protection, run action and route timing. Yarno, Spencer, Drake and Zernhelt teach the connected assignments in their rooms.
+- Skalaski prepares cutups and keeps the rep record under Bates and Tice.
+- Crennel controls the defensive contribution to permitted team periods; Stone balances the practice needs of offense, defense and special teams.
+- Stone chooses the usable game-day menu, allocates opportunities and makes the depth-chart decision from evidence.
 
-The quarterback room becomes a live football evaluation among:
+Begin with repeatable movement and the core passing operation; add protection/progression demands and simple access choices; expand into post-snap conflict reads and broader command only when demonstrated readiness supports them. These are teaching stages, not CBA calendar phases or guaranteed dates.
 
-- Kirk Cousins;
-- Blaine Gabbert;
-- Chad Henne.
+The original [roster evaluation](../offseason/roster_evaluation.md) gives decision-making, accuracy and third-down execution the greatest weight. Keep that standard. Give each competing quarterback meaningful work with comparable concepts, personnel and defensive problems; log context when conditions differ. Do not invent a fixed rep percentage or declare the job won from a few practices.
 
-Jeremy Bates, Mike Tice and Stone evaluate the room through installation, meetings, practice and preseason evidence.
+Aim to resolve the starter by the existing preseason checkpoint, after the third preseason game unless no one has clearly earned it. State what remains unresolved if the evidence is insufficient. By December, the question is whether the observed quarterback play warrants continued starter investment, not whether every item in the development pack was installed.
 
-## STONE JUDGMENT — roster construction
+## 6. Blaine Gabbert or Chad Henne after an acquisition
 
-Stone does not want to enter the regular season carrying three quarterbacks merely because Jacksonville traded for one.
+Until Cousins is acquired, Gabbert and Henne remain the incumbent competition. There is no three-man room created by this notebook. After acquisition, evaluate all three before surrendering useful depth.
 
-His preferred roster logic is:
+Stone's initial preference remains to explore Gabbert's market first and retain Henne's veteran insurance. This is a roster preference that can change with performance, contract consequences and an actual offer.
 
-- acquire Cousins first;
-- run a real competition;
-- explore trade interest in Gabbert and Henne;
-- move one only if the return is worth more than the depth being surrendered.
+### Blaine Gabbert
 
-The trade market does not dictate the depth chart, and the depth chart does not automatically dictate the trade market.
+The inherited board records a rookie contract, starting NFL tape and a 2012 season ending on injured reserve. Current medical clearance and contract consequences need their own review; no diagnosis or guaranteed availability is inferred.
 
----
+**Opening ask:** A 2014 fifth.
 
-# 3. Blaine Gabbert — possible outbound market after a Cousins acquisition
+Stone can recommend a 2014 fifth, or a 2014 sixth escalating to a fifth on an agreed meaningful playing-time/start condition. That outgoing trigger is not yet defined; personnel must bring the actual proposed terms before acceptance.
 
-## What Jacksonville knows
+A plain seventh remains below the initial valuation. If that is the best offer, Stone prefers retaining Gabbert through the next evaluation period rather than forcing a trade.
 
-### PUBLIC / CLUB FACT
+Green Bay, Atlanta, Cincinnati and Chicago remain inherited call hypotheses only. Personnel should recheck their then-current depth charts before making a case for contact. Neither Stone's hiring-search familiarity nor a plausible backup need establishes interest, a relationship advantage or a bid.
 
-- Gabbert remains under his rookie contract.
-- His 2012 season ended on injured reserve.
-- He has starting NFL tape available for other clubs to evaluate.
-- Jacksonville has not guaranteed him the 2013 starting job.
+### Chad Henne
 
-### STONE JUDGMENT
+Henne's veteran experience has insurance value. It does not award him QB2 irrespective of performance.
 
-If Cousins is acquired, Stone's initial preference is to **explore Gabbert's market first** while retaining Henne's veteran experience.
+**Opening ask:** A 2014 fifth.
 
-That is a roster preference, not a declaration that Gabbert cannot improve.
+Stone can consider a fifth, a sixth, or a conditional sixth escalating to a fifth. Anything lower calls for reassessing the value of retaining him. A materially stronger Henne offer can justify changing the initial preference to keep him, provided the remaining room is credible.
 
-## Internal asking framework
+The [cap sheet](../offseason/initial_cap_sheet.md) holds the contract evidence and its limitations. Compare actual trade effects; do not reuse hypothetical release math or assume a large saving from moving either quarterback.
 
-**Opening ask:** 2014 fifth-round pick.
+### Decision after actual evaluation and offers
 
-Acceptable structures for Stone to recommend:
+- If Gabbert draws a worthwhile offer and the remaining room supports it, recommend moving him and keeping Henne.
+- If Henne draws materially more and Gabbert provides credible retained depth, consider moving Henne.
+- If both markets are weak, carry three temporarily and continue evaluation.
+- If camp or preseason changes the football order, revisit the trade preference.
+- If Cousins does not separate, do not clear the room to justify the acquisition.
+- If an actual injury or other branch event changes a club's need, refresh the market without assuming that it produces an offer.
 
-- 2014 fifth; or
-- 2014 sixth escalating to a fifth on a meaningful playing-time / start threshold.
+Caldwell decides the transaction. Stone must explain the depth and development cost. Carrying three indefinitely is not the preferred outcome, but reducing the room to two is not a reason to accept an inadequate return.
 
-A plain seventh-round pick is below Stone's initial valuation.
+## 7. Next decision and evidence record
 
-If that is the best market available, Stone prefers to retain the player through at least the next evaluation period rather than force a low-value trade.
+Caldwell's next action, when permitted, is an availability inquiry. No call or offer is marked completed by this revision.
 
-## MARKET UNKNOWN
+If Washington declines to discuss a trade, stop the inquiry until new information changes the case. If it responds with terms, record the actual response and compare it with the two packages, verified contract effects and the coaching evaluation. Caldwell can decline a deal even within Stone's limit.
 
-Jacksonville does not know that Green Bay, Atlanta, Cincinnati, Chicago or any other club actually wants Gabbert.
+For each material update, record the branch date, source, what was actually said or observed, remaining uncertainty, Stone's recommendation and Caldwell's decision. Keep an unanswered inquiry distinct from a rejection and a recommendation distinct from a submitted offer.
 
-Those clubs can be **call hypotheses** based on publicly visible backup-quarterback depth, but they are not interested parties until they communicate interest.
+Evidence treatment:
 
-### Possible call hypotheses
-
-| Club | Why Jacksonville might test the market | What is actually known |
-|---|---|---|
-| Green Bay | Thin/uncertain reserve-QB structure behind Aaron Rodgers | Need hypothesis only; no interest established |
-| Atlanta | Established starter makes developmental QB2 acquisition structurally plausible | Need hypothesis only |
-| Cincinnati | Established starter and limited proven depth | Need hypothesis only |
-| Chicago | Stone has recent search familiarity with club leadership, but that creates access rather than preference | No player interest established |
-
-No later real Gabbert trade may be used as a value comp. That event had not happened and cannot exist in Stone's 2013 information set.
-
----
-
-# 4. Chad Henne — alternative outbound market after a Cousins acquisition
-
-## What Jacksonville knows
-
-### PUBLIC / CLUB FACT
-
-- Henne has substantial NFL starting experience.
-- His contract represents materially more 2013 cash/cap than Gabbert's rookie deal.
-- He provides veteran insurance if Jacksonville starts a younger quarterback.
-
-### STONE JUDGMENT
-
-Stone prefers keeping Henne if the return for both players is comparable because veteran QB2 insurance has football value.
-
-He is still willing to recommend trading Henne if another club offers materially more for Henne than Jacksonville can obtain for Gabbert.
-
-## Internal asking framework
-
-**Opening ask:** 2014 fifth-round pick.
-
-Acceptable football-return range for Stone to consider:
-
-- 2014 fifth;
-- 2014 sixth;
-- conditional sixth escalating to a fifth.
-
-Anything lower requires reassessment of whether retaining Henne is more useful.
-
-Again, these are Jacksonville's internal values, not known market bids.
-
----
-
-# 5. Decision matrix after a Cousins acquisition
-
-| Situation actually observed | Stone's current recommendation |
-|---|---|
-| Strong Gabbert offer; Henne market modest | Trade Gabbert, retain Henne |
-| Strong Henne offer; Gabbert market materially weaker | Consider trading Henne |
-| Both markets weak | Carry three temporarily and continue evaluation |
-| Camp/preseason materially changes the QB ranking | Re-evaluate the trade preference from the new football evidence |
-| Cousins does not separate from the room | Do not force a trade merely to justify acquiring him |
-| One quarterback clearly wins and another club develops an injury need | Reopen market using the new information |
-
-No row guarantees who wins the quarterback job.
-
----
-
-# 6. Timing and information discipline
-
-The #208 pick may be included in the Cousins framework only while Jacksonville still owns it.
-
-If Washington has not accepted a trade before Jacksonville must use that selection:
-
-- the pick returns to the live draft process;
-- the Cousins inquiry may continue later using a different structure;
-- Jacksonville does not reserve the pick indefinitely.
-
-The board updates only from:
-
-- actual Jacksonville scouting;
-- current public facts;
-- an actual club response;
-- new branch performance;
-- a new user-controlled Stone decision.
-
-It never updates from hindsight.
+- The supplied development pack is a user-provided coaching brief. Its player descriptions are working hypotheses until supported by eligible film.
+- The old [Washington Post article, May 24, 2013](https://www.washingtonpost.com/news/football-insider/wp/2013/05/24/even-before-griffins-injury-cousins-expected-to-be-back-for-second-year-with-redskins/) is retained as an audit reference for earlier background only. It is not a January or pre-draft market report; its later quotes, practices and Washington intentions do not enter this recommendation.
+- No fresh independent source verification of the inherited contract or medical background is claimed by this coaching rewrite. The relevant acquisition packet must supply the dated records before action.
+- The [authority canon](../../../foundation/03_Head_Coach_Organization_and_Authority_Canon.md), current branch state and dated football evidence control. No later real trade, selection, career result or private club valuation is imported.
