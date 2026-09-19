@@ -1,15 +1,15 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append  
-**Version:** `JAX-2013-FA-SNAPSHOT-1`  
-**Supersedes:** Pre-hire snapshot 1.1  
-**Readiness:** Completed free-agency batch reconciled with noted uncertainty; full game-readiness not certified  
+**Version:** `JAX-2013-POSTDRAFT-SNAPSHOT-1`  
+**Supersedes:** `JAX-2013-FA-SNAPSHOT-1`  
+**Readiness:** Post-draft personnel package reconciled with noted financial/medical uncertainty; full game-readiness not certified  
 **Must be read:** In full before every simulation response  
-**Simulation status:** Jacksonville's March 12 opening free-agency batch is complete. Its six agreements, two declined offers and four releases are preserved. Current records now reflect that accepted result; no new event is resolved by this documentation update.  
-**Snapshot effective:** March 12, 2013, 4:00 p.m. ET, the recorded batch time; individual execution times unspecified  
-**Last reconciled:** September 19, 2026 documentation review; [season ledger, Entry 3](../career/2013/ledger.md)  
-**Global package checkpoint:** `Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency`  
-**Preceding global package checkpoint:** `PRE-HIRE SEARCH CLOSURE, career/2013/ledger.md, 2026-09-18`
+**Simulation status:** Jacksonville has completed the March free-agency batch, acquired Kirk Cousins for its 2014 second, exchanged Blaine Gabbert for C.J. Wilson, exercised all seven 2013 selections, and signed Brynden Trawick, A.J. Bouye, Adam Thielen, and C.J. Anderson as undrafted rookies.  
+**Snapshot effective:** Post-draft 2013, after the UDFA signing wave and before rookie minicamp; exact individual trade/UDFA execution times are not separately fixed  
+**Last reconciled:** September 19, 2026 post-draft reconciliation; [season ledger, Entries 5-7](../career/2013/ledger.md)  
+**Global package checkpoint:** `Canonical update - post-draft 2013 roster build`  
+**Preceding global package checkpoint:** `Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency`
 
 ## Effective source-version manifest
 
@@ -20,7 +20,7 @@ Documents 1-3 are unchanged. Git blob identifiers name their exact content witho
 | Document 1 | `697208640886f9f63581f4b865f917f16007f036` | Existing September 18 rebuild retained | Project rules unchanged |
 | Document 2 | `4dcdaa9bb3812ffe47b1bc7007dda73204cbc170` | Existing September 18 sourcebook retained | 2013 NFL; formal active-only lock not asserted |
 | Document 3 | `9538b8e4831eba1a407c394a37c21972f8b8e290` | Existing September 18 canon retained | Stone contract and final authority unchanged |
-| Document 4 | `JAX-2013-FA-ROSTER-1` | Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency | Batch transactions reconciled; whole-club control/cap/medical gaps retained |
+| Document 4 | `JAX-2013-POSTDRAFT-ROSTER-1` | Canonical update - post-draft 2013 roster build | Trades, draft rights and UDFA signings reconciled; transferred-contract/rookie/cap/medical gaps retained |
 
 ## 1. Master clock and competition position
 
@@ -30,11 +30,11 @@ Documents 1-3 are unchanged. Git blob identifiers name their exact content witho
 | Local time zone | America/New_York |
 | League/season | NFL; 2013 league year and 2013 season |
 | Team | Jacksonville Jaguars; Stone accepted the head-coach contract January 15 |
-| Season phase | Offseason; opening free-agency batch complete |
+| Season phase | Offseason; draft and initial post-draft UDFA signing wave complete |
 | Record/standing/postseason | 2013 season not begun; no current standings or game result |
-| Last completed event | Six FA agreements, Bennett/Forsett declines, four veteran releases |
-| Next scheduled event | No additional club event assigned a date by this batch |
-| Current focus | Read the updated roster and accounting limits before the next authorized personnel decision |
+| Last completed event | Four post-draft UDFA signings after the Cousins/Wilson trades and seven-pick Jacksonville draft |
+| Next scheduled event | Rookie minicamp is the next football phase; exact simulated start is not fixed by this personnel update |
+| Current focus | Integrate Cousins, C.J. Wilson, the seven draftees and four UDFAs while reconciling transferred/rookie contracts before football work advances |
 | Latest full continuity audit | Not yet established; Entry 3 is a bounded transaction/document reconciliation |
 | Substantive non-game responses since full audit | Prior counter 0 retained; retrospective documentation migration is excluded from cadence |
 
@@ -56,24 +56,27 @@ Authoritative person records: [Document 4](04_Roster_and_Staff_Register.md). Rea
 
 | Reconciliation | Count/status |
 |---|---|
-| Starting historical inventory | 63 names |
-| Four completed releases | Whimper, Ross, Landry, Robinson removed |
-| Four outside additions | Marks, Miller, Ball, Brent Grimes added |
-| Re-signings | Meester and Daryl Smith retained as existing people |
-| Working inventory | 63 = 63 - 4 + 4 |
-| Confirmed agreements in this batch | 6 |
-| Other historical carry-forwards | 57; current contractual control not certified |
-| Exact offseason primary-status counts / open slots | Unknown pending inherited rights, tenders and reserve/futures reconciliation |
-| Game-day active/inactive and emergency designations | Not applicable to this offseason batch |
-| Depth-chart approval | No new approval or guaranteed starting job recorded |
+| March 12 working inventory | 63 |
+| Kirk Cousins acquisition | +1 player; 2014 second transferred to Washington |
+| Blaine Gabbert / C.J. Wilson trade | 0 net players; Gabbert out, Wilson in |
+| Pre-draft working inventory | 64 |
+| 2013 draft-rights additions | +7 |
+| Post-draft UDFA signings | +4 |
+| Current working inventory | **75** |
+| Historical carry-forwards still lacking full current-control certification | 56 |
+| Exact offseason primary-status counts / open slots | Unknown pending inherited rights, transferred contracts, rookie contracts, tenders and reserve/futures reconciliation |
+| Game-day active/inactive and emergency designations | Not applicable in this offseason phase |
+| Depth-chart approval | No starting job or roster spot is guaranteed by these transactions |
 
-These populations describe transaction evidence, not NFL roster-status buckets. Historical 2012 active/IR labels establish neither March control nor present medical availability.
+Current quarterback control includes Cousins, Henne, Jordan Palmer, and Jacksonville's draft rights to Tyler Bray; Gabbert is no longer a Jaguar. The defensive front adds C.J. Wilson and Lavar Edwards. Jordan Poyer remains Jacksonville's #64 selection.
 
 | Player/group | Coach-facing medical evidence | Current limit |
 |---|---|---|
 | Daryl Smith | Club review satisfactory for a short return | No practice clearance, workload or return-to-play date established |
 | Brent Grimes | Club review completed; Achilles uncertainty remains | No guaranteed recovery, effectiveness or practice clearance |
-| Other signings / inherited players | No new finding in this batch | Current availability requires appropriate medical communication |
+| Cousins / C.J. Wilson | Completed trade control only | No new medical clearance, starting role or workload inferred |
+| Draft class / UDFAs | Acquisition/control established | Rookie medical clearance, contracts where unsigned, and practice roles remain separate decisions |
+| Other inherited players | No new finding in this update | Current availability requires appropriate medical communication |
 
 ## 4. Staff, organization, authority and resources
 
@@ -97,7 +100,8 @@ The [current staff register](../career/2013/coaching_staff.md) supplies the alre
 | Batch salary + signing bonus in signing year | $15.00M if full 2013 salaries earned; payment installments unspecified |
 | 2014 batch salary if retained | $5.50M |
 | Bonuses and expressly guaranteed salary | At least $9.10M; three base-guarantee terms unspecified |
-| Remaining planning room | Approximately $8.35M; complete adjusted cap/Top-51/release reconciliation still open |
+| Remaining planning room | Exact current room unresolved; approximately $8.35M is only the pre-trade post-free-agency reference pending Cousins/Wilson/Gabbert, rookie, Top-51 and release reconciliation |
+| 2014 draft-capital change | Jacksonville's second-round selection transferred to Washington for Kirk Cousins |
 | Four release liabilities | Unresolved, not zero; no savings booked |
 | Assistant payroll / owner operating budget | Existing staff contract register; separate from player cap; no budget headroom invented |
 | Club-wide cash floor, cap legality and total liabilities | Not fully reconciled |
@@ -119,10 +123,13 @@ The Prowl identity and readiness standard remain the source of established coach
 |---|---|---|
 | Hiring ledger Entry 1 | Stone accepted the original Jacksonville offer | Contract/authority unchanged |
 | Staff ledger Entry 2 and staff register | Staff hired and operating assignments recorded | Continue existing staff |
-| Completed FA batch | Six agreements; Bennett/Forsett declined; four releases | Apply these exact outcomes |
-| User's current documentation request | Preserve simulated signings; improve layout/cap ramifications and roster | Reconcile accounting and records without changing results |
+| Completed FA batch | Six agreements; Bennett/Forsett declined; four releases | Preserve those outcomes as the March 12 baseline |
+| User-authorized pre-draft outcome | Acquire Kirk Cousins for Jacksonville's 2014 second | Cousins under Jacksonville control; 2014 second belongs to Washington |
+| User-authorized Gabbert disposition | Trade Blaine Gabbert to Green Bay for DE C.J. Wilson | Gabbert out; Wilson in; no pick attached |
+| Completed 2013 draft | Exercise #2, #33, #64, #98, #135, #169 and #208 | Seven draft-rights additions, including Jordan Poyer at #64 |
+| User-authorized UDFA class | Sign Brynden Trawick, A.J. Bouye, Adam Thielen and C.J. Anderson | Four executed rookie-free-agent additions |
 
-No new personnel or football choice is made for Stone. Unsupplied guarantee mechanics, roster promises and release liabilities remain unresolved rather than negotiated by this update.
+No transaction above guarantees a depth-chart position, workload, medical clearance, or final roster spot.
 
 ## 7. Head-coach knowledge picture
 
@@ -136,13 +143,14 @@ No private diagnosis, hidden player evaluation, uncommunicated motive or unsuppo
 
 | Matter | Responsible role | Current limit |
 |---|---|---|
-| Complete current contract-control list | Caldwell/personnel administration | 57 carry-forwards require rights/contract verification; no new retention decision inferred |
-| Reconcile actual remaining cap | Caldwell/cap administration | Full Top-51, baseline adjustments and four release liabilities missing |
-| Specify missing recorded contract details | Contract administration | Marks/Ball/Meester base guarantees and payment timing remain unknown |
-| Establish practice availability when needed | Qualified medical personnel | No clearance inferred from signing |
-| Next material personnel or football decision | Existing authority map and user instructions | No new choice or deadline imposed here |
+| Reconcile Cousins/Wilson/Gabbert contract transfers | Caldwell/cap administration | Exact Jacksonville cap/Top-51 effects not yet established |
+| Reconcile draft and UDFA contracts | Caldwell/contract administration | Draftees are unsigned rights; UDFA signings lack exact bonus/guarantee detail in canon |
+| Complete inherited current-control list | Caldwell/personnel administration | 56 historical carry-forwards still require rights/contract verification |
+| Reconcile actual remaining cap | Caldwell/cap administration | Pre-trade $8.35M reference cannot be treated as current exact room |
+| Establish practice availability | Qualified medical personnel | No clearance inferred from acquisition |
+| Prepare rookie minicamp evaluation | Stone and staff within CBA/medical limits | No rep, role, or depth outcome pre-awarded |
 
-These are open records and future decision inputs, not a request to redo the completed batch. No additional signing, trade, draft pick or release is authorized by this snapshot.
+These are open records and future decision inputs. The completed trades, draft, and UDFA signings are not reopened by the unresolved accounting work.
 
 ## 9. Live-game checkpoint
 
@@ -158,7 +166,7 @@ No new league result, standings change or other club transaction is recorded. Be
 |---|---|---|
 | Former January/pre-hire snapshot text and old ledger blocker | Superseded for the accepted batch by ledger Entry 3 | No re-resolution of completed events |
 | Full roster control and official primary statuses | Unknown where inherited evidence is incomplete | Dated rights/contract/list reconciliation |
-| Exact club cap balance and release effects | Approximate $8.35M planning figure only | Complete obligations and counted-roster worksheet |
+| Exact club cap balance and release effects | $8.35M retained only as a pre-trade planning reference | Reconcile transferred veteran contracts, rookie deals, release effects and counted-roster worksheet |
 | Three base guarantees and bonus payment timing | Unspecified | Source terms, not invented amendments |
 | Medical and game readiness | Not certified | Dated medical/eligibility/preparation records and full initialization audit |
 | Formal active-only Document 2 lock | Not asserted by this task | Existing initialization procedure |
@@ -168,13 +176,13 @@ The established Stone biography and lack of a functional family/geographic const
 
 ## 12. Last continuity update
 
-- Reconciled the already-completed March 12 FA result; no additional in-world time elapsed.
-- Added four outside players, updated two existing contracts, and moved four released players to departed records.
-- Preserved all accepted/declined terms, pursuit sequence and medical limits.
-- Derived the two-year cap/cash schedule and separated unknown release/counting effects.
-- Replaced obsolete pre-hire/current-focus text. Staff assignments were carried from the existing staff register, not newly hired.
-- No game, draft choice, trade, installed play, medical clearance or depth-chart outcome changed.
-- Source/supersession proof: [season ledger, Entry 3](../career/2013/ledger.md), same global checkpoint.
+- Preserved the March 12 free-agency baseline.
+- Added Kirk Cousins for Jacksonville's 2014 second-round selection without surrendering a 2013 pick.
+- Exchanged Blaine Gabbert for Green Bay DE C.J. Wilson with no draft pick attached.
+- Preserved all seven Jacksonville 2013 selections, including Jordan Poyer at #64, and added the complete draft-rights class.
+- Added post-draft UDFA signings Brynden Trawick, A.J. Bouye, Adam Thielen, and C.J. Anderson.
+- Reconciled the working inventory to 75 and advanced Document 4/5 to the post-draft checkpoint.
+- Kept transferred-contract, rookie-contract, Top-51, release, and medical uncertainties explicit rather than inventing precise figures.
 
 ## 13. Readiness boundary
 

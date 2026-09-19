@@ -309,8 +309,17 @@ Use the identity **change in room = change in adjusted cap minus change in total
 
 This keeps the simulation financially disciplined without pretending an NFL club becomes incapable of acting until every historical accounting line has been reconstructed.
 
-## April 27, 2013 running-room update
+## Post-draft 2013 transaction and running-room update
 
-The pre-draft quarterback market check and the April 25-27 draft produced **no completed trade**, so they create no veteran contract, dead-money, or draft-capital accounting change. Jacksonville retained Gabbert and Henne and did not acquire Cousins. The approximately **$8.35M** post-free-agency planning-room figure therefore remains the current gross planning reference before the unresolved baseline, Top-51, and release adjustments already identified in this sheet.
+Jacksonville completed two pre-draft trades before exercising all seven 2013 selections:
 
-Jacksonville selected Lane Johnson, Travis Kelce, Jordan Poyer, Sio Moore, Lavar Edwards, Bacarri Rambo, and Tyler Bray. As of the close of this record, they are unsigned draft-rights additions. No rookie base salary, signing bonus, guarantee, cap charge, or Top-51 displacement is booked because no executed rookie contract terms are yet in canon. The club must reserve room to sign the class, but this repository does not contain a verified Jacksonville rookie-pool allocation; no precise reserve is invented. Recompute the running room as each rookie agreement executes.
+- Washington receives Jacksonville's **2014 second-round selection**; Jacksonville receives QB Kirk Cousins.
+- Green Bay receives QB Blaine Gabbert; Jacksonville receives DE C.J. Wilson. No pick is attached to this player-for-player trade.
+
+The approximately **$8.35M** post-free-agency figure remains a **pre-trade gross planning reference only**. It is not carried forward as current room because the repository has not yet reconciled Cousins' assigned contract charge, Wilson's incoming contract charge, Gabbert's outgoing/accelerated treatment, Top-51 displacement, or the unresolved veteran-release effects already identified above. Do not infer savings merely because Gabbert left or import Washington/Green Bay's published team cap hits as Jacksonville's accounting.
+
+Jacksonville then selected Lane Johnson, Travis Kelce, Jordan Poyer, Sio Moore, Lavar Edwards, Bacarri Rambo, and Tyler Bray. They remain draft-rights additions until rookie contracts execute; no invented rookie cap charge is booked.
+
+After the draft, Jacksonville signed Brynden Trawick, A.J. Bouye, Adam Thielen, and C.J. Anderson as undrafted rookie free agents. The signings are completed roster-control events, but exact signing bonuses, guarantees, base-salary schedules, and Top-51 displacement are not established in canon and therefore are not assigned precise dollar values here.
+
+**Draft-capital state:** Jacksonville retains every 2013 selection it exercised. Its 2014 second-round selection belongs to Washington. Recompute the current planning room when the transferred veteran contracts, executed rookie deals, and full counted-roster worksheet are reconciled.

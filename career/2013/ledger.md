@@ -112,7 +112,7 @@ Closure applies when this complete candidate bundle is promoted together. Interm
 ### Authorized Jacksonville actions
 
 - Caldwell will ask Washington whether Kirk Cousins is available. Jacksonville may offer either (a) selection #208 plus its 2014 third, escalating in place of that third to a 2014 second if Cousins makes 10 regular-season starts or plays 65% of Jacksonville's 2013 regular-season offensive snaps, or (b) Jacksonville's 2014 second by itself. No other compensation is authorized.
-- Caldwell will check Blaine Gabbert's market with Green Bay, Atlanta, Cincinnati, and Chicago, opening at a 2014 fifth and permitted to consider a 2014 sixth escalating to a fifth on a defined playing-time condition. A plain seventh is below Stone's recommendation.
+- Caldwell will check Blaine Gabbert's market with Green Bay, Atlanta, Cincinnati, and Chicago, opening at a 2014 fifth and permitted to consider a 2014 sixth escalating to a fifth on a defined playing-time condition. If a pick return does not materialize, Caldwell may compare a direct player return that addresses a documented roster need; C.J. Wilson or a comparable defensive-front depth piece is inside the user-authorized alternative.
 - Caldwell will check Chad Henne's market with the same four clubs, opening at a 2014 fifth and permitted to consider a fifth, sixth, or conditional sixth escalating to a fifth. Jacksonville may retain both incumbents; no sale is required.
 - Caldwell has final transaction authority. Stone's documented quarterback projection and consultation right apply to a premium-capital quarterback acquisition. Stone's football preference is evidence, not a veto and not an instruction to force a deal.
 
@@ -131,20 +131,32 @@ Washington has a concrete reason to value inexpensive quarterback insurance whil
 
 The packet is reduced to terms, authority, roster needs, contemporaneous public evaluations, and known contract/medical uncertainty. Authorship, protagonist status, persuasiveness, desired outcome, and later player success are excluded. The label-swap test applies. Any bounded random draw is derived only after this packet closes; no seed may be changed to obtain a preferred result.
 
-## Entry 5 — Quarterback trade inquiries closed
+## Entry 5 — Pre-draft quarterback/front transactions completed
 
-**Date:** March 12-April 24, 2013 pre-draft window; an exact call date is not established.
-**Ex-ante authority:** Entry 4; `trades/trade_targets.md`.
-**Result:** No trade.
+**Date:** March 12-April 24, 2013 pre-draft window; exact execution dates are not separately established.
+**Ex-ante authority:** Entry 4; trades/trade_targets.md.
+**Result:** Two completed trades.
 
-Washington rejected both authorized Cousins structures and required a current Day 2 selection to continue. Caldwell declined to add #33 or #64 after the required consultation with Stone. Washington did not authorize contact with Cousins.
+### Kirk Cousins acquired
 
-Green Bay, Atlanta, Cincinnati, and Chicago made no acceptable offer for Gabbert. Green Bay offered only a conditional 2014 seventh for Henne; Jacksonville declined it as below the authorized range. The other Henne calls produced no present bid. Gabbert and Henne remain Jaguars, Cousins remains under Washington's control, and no player, pick, contract, or cap entry changed. Complete response ledger: `trades/trade_targets.md`, §8. Completed-trade ledger: `trades/trades.md`.
+Washington accepted Jacksonville's 2014 second-round selection outright for Kirk Cousins. The deal uses one of the two structures already authorized in Entry 4. No 2013 selection is included and there is no playing-time escalator. Caldwell completed the required franchise-quarterback consultation with Stone before execution.
+
+**Roster/draft-capital delta:** Cousins joins Jacksonville; Washington receives Jacksonville's 2014 second. All seven 2013 selections remain with Jacksonville.
+
+### Blaine Gabbert exchanged for C.J. Wilson
+
+After the Cousins acquisition, Green Bay offered DE C.J. Wilson instead of Jacksonville's preferred future-pick return for Gabbert. Caldwell accepted the direct roster-value exchange after comparing Jacksonville's defensive-front need with the value of carrying a third veteran quarterback.
+
+**Roster delta:** Gabbert leaves Jacksonville for Green Bay; Wilson joins Jacksonville. No pick changes hands.
+
+Chad Henne remains a Jaguar as veteran quarterback insurance. Exact Gabbert/Wilson contract assignment, acceleration, Top-51 displacement, and Cousins incoming cap treatment remain unresolved pending the financial ledger; no unsupported dollar delta is invented.
+
+Complete transaction record: trades/trades.md. Negotiation record: trades/trade_targets.md, §8.
 
 ## Entry 6 — 2013 NFL Draft completed
 
 **Dates:** April 25-27, 2013.
-**Ex-ante authority and information ceiling:** Entry 4; `offseason/draft/player_draft_board.md`; pre-selection library through April 24.
+**Ex-ante authority and information ceiling:** Entry 4; offseason/draft/player_draft_board.md; pre-selection library through April 24.
 **Result:** Seven Jacksonville selections; no Jacksonville draft-day trade.
 
 | Selection | Player | Position | School |
@@ -157,8 +169,38 @@ Green Bay, Atlanta, Cincinnati, and Chicago made no acceptable offer for Gabbert
 | #169 | Bacarri Rambo | S | Georgia |
 | #208 | Tyler Bray | QB | Tennessee |
 
-Kansas City selected Eric Fisher before Jacksonville's first turn. Keenan Allen was unavailable by #64, and David Bakhtiari was unavailable by #98. Other clubs' intervening selections were resolved autonomously from contemporaneous information; actual 2013 selections and later careers were not used. The Jacksonville availability record, Caldwell's decisions, Stone's initial role plans, and evidence limits are in `offseason/draft/draftees.md`.
+Kansas City selected Eric Fisher before Jacksonville's first turn. Keenan Allen was unavailable by #64, and David Bakhtiari was unavailable by #98. Other clubs' intervening selections were resolved autonomously from contemporaneous information; actual 2013 selections and later careers were not used. The Jacksonville availability record, Caldwell's decisions, Stone's initial role plans, and evidence limits are in offseason/draft/draftees.md.
 
-All seven players enter the working roster as unsigned draft-rights additions. The working inventory moves from 63 to 70 without asserting an active-roster count. No rookie compensation is invented or booked before contract execution. With no trade, the approximately $8.35M gross post-free-agency planning reference is unchanged before the already-recorded baseline, Top-51, release, and future rookie-contract adjustments.
+The pre-draft trades did not consume a 2013 selection, so all seven picks remained live and were exercised. The working inventory moves from the March 12 baseline of 63 to 64 after the net pre-draft trade activity, then to 71 after the seven draft-rights additions. No rookie compensation is invented or booked before contract execution.
 
-The final selection adds Bray to the developmental quarterback competition without awarding him a roster or depth-chart position. It is not a premium-capital franchise-quarterback commitment. The common teaching/evaluation standards and updated room are recorded in `offseason/quarterback_development_plan.md`.
+Tyler Bray enters as a developmental quarterback behind the newly acquired Cousins competition and Henne's veteran insurance; he is not a premium-capital franchise-quarterback commitment and receives no roster or depth-chart guarantee.
+
+## Entry 7 — Post-draft undrafted rookie signings
+
+**Timing:** Post-draft signing wave after April 27, 2013 and before rookie minicamp; exact individual execution times are not separately established.
+**Authority:** User-directed personnel outcome executed by Caldwell under the existing contract/acquisition authority.
+**Result:** Four undrafted rookies signed.
+
+| Player | Position | School | Initial football treatment |
+|---|---|---|---|
+| Brynden Trawick | S | Troy | Safety/special-teams competition; no depth position promised |
+| A.J. Bouye | CB | UCF | Corner/special-teams competition; no starting role promised |
+| Adam Thielen | WR | Minnesota State | Receiver/special-teams competition; no roster role promised |
+| C.J. Anderson | RB | California | Running-back competition; no workload or roster role promised |
+
+These four players are user-authorized simulation additions. Their later real NFL careers, teams, awards, statistics, and reputation are not used as evidence for this branch. Exact rookie-free-agent signing bonuses, guarantees, cap charges, and Top-51 displacement are not invented; the contracts are recorded as executed with detailed financial reconciliation still open in offseason/initial_cap_sheet.md.
+
+**Working inventory:** 71 after the draft plus four UDFA signings = **75**. This is an offseason working inventory, not an active-roster declaration.
+
+Detailed signing record: offseason/draft/udfa_signings.md.
+
+## Closed post-draft canonical update
+
+**Global package checkpoint:** Canonical update - post-draft 2013 roster build
+**Preceding global package checkpoint:** Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency
+**Canonical through:** Post-draft 2013, after the UDFA signing wave and before rookie minicamp.
+**Documentation date:** September 19, 2026.
+
+This checkpoint carries the Cousins acquisition, Gabbert/Wilson trade, unchanged seven-pick Jacksonville draft, four UDFA signings, roster reconciliation, and financial/draft-capital caveats into Documents 4-5 and the supporting career files. No practice, medical clearance, depth-chart win, game, or later-career result is generated by this closure.
+
+Commit closed — Canonical update - post-draft 2013 roster build — canonical through the post-draft signing wave before rookie minicamp

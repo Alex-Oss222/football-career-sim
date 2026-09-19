@@ -11,7 +11,7 @@
 - Medical-state ownership: A dated, coach-facing Document 6 medical or availability event is the source event. The individual player record in this document is the latest canonical current state derived from it. The player index, medical control table, and Document 5 are derived summaries.
 - Correction authority: Document 6 is the sole append-only correction and supersession ledger. This document stores current corrected values and generated pointers only.
 - Information boundary: All six principal canonical documents are coach-facing. Information not plausibly known to the head coach must not appear in this package. Any supported private simulator state must live outside the six-document package and outside every handoff.
-- Initialization status: **COMPLETED FREE-AGENCY BATCH RECONCILED WITH NOTED UNCERTAINTY.** The March 12 outcomes are applied below. Full offseason contract-control, medical and club cap reconciliation remains incomplete; this is not a game-readiness certification. Unused templates are schemas, not simulation facts.
+- Initialization status: **POST-DRAFT PERSONNEL PACKAGE RECONCILED WITH NOTED FINANCIAL UNCERTAINTY.** The March 12 free-agency baseline, two pre-draft trades, seven draft-rights additions, and four post-draft UDFA signings are applied below. Full transferred-contract, rookie-contract, Top-51, inherited control, and medical reconciliation remains incomplete; this is not a game-readiness certification.
 
 ## Registry identity
 
@@ -20,21 +20,21 @@
 | Team | Jacksonville Jaguars |
 | Competition and governing body | National Football League |
 | Season | 2013 |
-| Owned content last changed/effective | March 12, 2013, 4:00 p.m. ET (recorded batch time) |
-| Season phase and week | 2013 offseason; opening free-agency batch complete |
+| Owned content last changed/effective | Post-draft 2013, after April 27 and before rookie minicamp; exact UDFA execution times not separately fixed |
+| Season phase and week | 2013 offseason; draft and initial post-draft UDFA signing wave complete |
 | Real, fictional, or mixed personnel | Real player identities; accepted counterfactual hires and transactions |
 | Divergence point | January 15, 2013 — Alex Stone accepts Jacksonville head-coach offer |
 | Applicable roster rule source | Document 2 §11.1; use the offseason rules, not an in-season active-list count |
 | Applicable contract, eligibility, or scholarship rule source | Document 2 §11.1 and `career/2013/offseason/initial_cap_sheet.md` |
 | Document 2 locked version | Current source blob `4dcdaa9bb3812ffe47b1bc7007dda73204cbc170`; formal active-only lock not asserted |
 | Document 3 authority-map version | Reconciled January 15, 2013 Stone/Jacksonville version |
-| Document 4 register version | JAX-2013-FA-ROSTER-1 |
-| Supersedes Document 4 version/content-changing update | JAX-2013-INIT-STAGED-1 / 2013-INIT-ROSTER |
-| Last Document 4 content-changing update | Canonical update - March 12, 2013, 4:00 p.m. ET - reconcile completed free agency |
-| Latest Document 6 source event applied to Document 4 content | career/2013/ledger.md, Entry 3; preserved March 12 batch |
-| Last registry-wide reconciliation | September 19, 2026 documentation reconciliation of the March 12 batch; limits below |
+| Document 4 register version | JAX-2013-POSTDRAFT-ROSTER-1 |
+| Supersedes Document 4 version/content-changing update | JAX-2013-FA-ROSTER-1 |
+| Last Document 4 content-changing update | Canonical update - post-draft 2013 roster build |
+| Latest Document 6 source event applied to Document 4 content | career/2013/ledger.md, Entries 5-7; trades, draft, and UDFA signings |
+| Last registry-wide reconciliation | September 19, 2026 post-draft transaction/draft/UDFA reconciliation; limits below |
 | Last full continuity audit | `[NOT YET PERFORMED]` |
-| Unresolved registry conflicts | Inherited contract-control gaps, release accounting, complete Top-51 worksheet and medical availability |
+| Unresolved registry conflicts | Inherited contract-control gaps, transferred veteran contract accounting, rookie contract details, release accounting, complete Top-51 worksheet, and medical availability |
 
 ## Canon and evidence conventions
 
@@ -217,17 +217,18 @@ The [current coaching staff](../career/2013/coaching_staff.md) and season-ledger
 
 ### Scope of closure
 
-The completed transaction batch and its derived roster/cap summaries are reconciled. The whole club is not certified game-ready: exact offseason control, full cap accounting and coach-facing medical availability remain incomplete. No additional personnel result, medical clearance, installed scheme or depth-chart assignment is created.
+The March 12 batch plus the completed pre-draft trades, draft rights, and four post-draft UDFA signings are reconciled. The whole club is not certified game-ready: inherited control, transferred-contract accounting, rookie contract accounting, full Top-51 treatment, and coach-facing medical availability remain incomplete. No medical clearance, installed scheme, or depth-chart win is created by these personnel events.
 
 ## Current working player index
 
-Batch agreements have current transaction evidence. Other rows retain historical person records and explicitly unresolved March control. They are not asserted to be current signed players.
+Completed March agreements, trades, draft rights, and UDFA signings have current transaction evidence. Other rows retain historical person records and explicitly unresolved inherited control; those carry-forward rows are not silently treated as newly re-signed players.
 
 | Player | Stable player ID | Position group | Historical source or batch evidence | Contract status | Current football role | Derived availability | Latest Document 6 source event | Last closed checkpoint affecting player |
 |---|---|---|---|---|---|---|---|---|
-| Blaine Gabbert | JAX-BLAINEGABBERT | QB | Reserve/injured at season close — exact Jan. 15 list designation requires transaction-ledger confirmation | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
 | Chad Henne | JAX-CHADHENNE | QB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
 | Jordan Palmer | JAX-JORDANPALMER | QB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
+| Kirk Cousins | JAX-KIRKCOUSINS | QB | Acquired from Washington for Jacksonville's 2014 second | Contract rights transferred; exact Jacksonville cap treatment pending reconciliation | Open quarterback competition; no starting guarantee | No new medical restriction or clearance is invented | 2013 ledger Entry 5 | JAX-2013-POSTDRAFT-ROSTER-1 |
+| Tyler Bray | JAX-TYLERBRAY | QB | Selected #208 | Jacksonville draft rights; unsigned | Developmental quarterback competition; no depth position promised | Rookie medical/participation status not invented | 2013 ledger Entry 6 | JAX-2013-POSTDRAFT-ROSTER-1 |
 | Jalen Parmele | JAX-JALENPARMELE | RB | Reserve/injured at season close — exact Jan. 15 list designation requires transaction-ledger confirmation | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
 | Jonathan Grimes | JAX-JONATHANGRIMES | RB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
 | Keith Toston | JAX-KEITHTOSTON | RB | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
@@ -289,6 +290,17 @@ Batch agreements have current transaction evidence. Other rows retain historical
 | Bryan Anger | JAX-BRYANANGER | P | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
 | Jeremy Cain | JAX-JEREMYCAIN | LS | 2012 final active roster | January carry-forward; March rights/contract unverified | Not assigned | Current availability unverified | 2013-INIT-ROSTER (historical) | INITIALIZATION-STAGED (person unchanged) |
 
+| C.J. Anderson | JAX-CJANDERSON | RB | User-authorized post-draft UDFA signing; California | Rookie free-agent contract executed; exact financial terms pending reconciliation | Running-back competition; no workload guarantee | No new medical restriction or clearance is invented | 2013 ledger Entry 7 | JAX-2013-POSTDRAFT-ROSTER-1 |
+| Adam Thielen | JAX-ADAMTHIELEN | WR | User-authorized post-draft UDFA signing; Minnesota State | Rookie free-agent contract executed; exact financial terms pending reconciliation | Receiver/special-teams competition; no roster role promised | No new medical restriction or clearance is invented | 2013 ledger Entry 7 | JAX-2013-POSTDRAFT-ROSTER-1 |
+| Travis Kelce | JAX-TRAVISKELCE | TE | Selected #33 | Jacksonville draft rights; unsigned | Bounded TE teaching role; no roster role guaranteed | Rookie medical/participation status not invented | 2013 ledger Entry 6 | JAX-2013-POSTDRAFT-ROSTER-1 |
+| Lane Johnson | JAX-LANEJOHNSON | T | Selected #2 | Jacksonville draft rights; unsigned | Opens evaluation at RT; no starting guarantee | Rookie medical/participation status not invented | 2013 ledger Entry 6 | JAX-2013-POSTDRAFT-ROSTER-1 |
+| C.J. Wilson | JAX-CJWILSON | DE | Acquired from Green Bay for Blaine Gabbert | Contract rights transferred; exact Jacksonville cap treatment pending reconciliation | Defensive-front rotation competition; no starting guarantee | No new medical restriction or clearance is invented | 2013 ledger Entry 5 | JAX-2013-POSTDRAFT-ROSTER-1 |
+| Lavar Edwards | JAX-LAVAREDWARDS | DE | Selected #135 | Jacksonville draft rights; unsigned | Rotational-end evaluation only | Rookie medical/participation status not invented | 2013 ledger Entry 6 | JAX-2013-POSTDRAFT-ROSTER-1 |
+| Sio Moore | JAX-SIOMOORE | OLB | Selected #98 | Jacksonville draft rights; unsigned | Initial linebacker assignment pending staff evaluation | Rookie medical/participation status not invented | 2013 ledger Entry 6 | JAX-2013-POSTDRAFT-ROSTER-1 |
+| A.J. Bouye | JAX-AJBOUYE | CB | User-authorized post-draft UDFA signing; UCF | Rookie free-agent contract executed; exact financial terms pending reconciliation | Corner/special-teams competition; no starting guarantee | No new medical restriction or clearance is invented | 2013 ledger Entry 7 | JAX-2013-POSTDRAFT-ROSTER-1 |
+| Jordan Poyer | JAX-JORDANPOYER | CB | Selected #64 | Jacksonville draft rights; unsigned | Begins evaluation at corner | Rookie medical/participation status not invented | 2013 ledger Entry 6 | JAX-2013-POSTDRAFT-ROSTER-1 |
+| Brynden Trawick | JAX-BRYNDENTRAWICK | S | User-authorized post-draft UDFA signing; Troy | Rookie free-agent contract executed; exact financial terms pending reconciliation | Safety/special-teams competition; no depth position promised | No new medical restriction or clearance is invented | 2013 ledger Entry 7 | JAX-2013-POSTDRAFT-ROSTER-1 |
+| Bacarri Rambo | JAX-BACARRIRAMBO | S | Selected #169 | Jacksonville draft rights; unsigned | Safety/special-teams evaluation; no depth position promised | Rookie medical/participation status not invented | 2013 ledger Entry 6 | JAX-2013-POSTDRAFT-ROSTER-1 |
 ## Departed player index
 
 | Player | Stable player ID | Position | Current status | Financial record | Source |
@@ -297,6 +309,23 @@ Batch agreements have current transaction evidence. Other rows retain historical
 | Guy Whimper | JAX-GUYWHIMPER | T | Released; outside working inventory | Surviving liabilities unresolved | 2013 ledger Entry 3 |
 | Aaron Ross | JAX-AARONROSS | CB | Released; outside working inventory | Surviving liabilities unresolved | 2013 ledger Entry 3 |
 | Dawan Landry | JAX-DAWANLANDRY | SS | Released; outside working inventory | Surviving liabilities unresolved | 2013 ledger Entry 3 |
+| Blaine Gabbert | JAX-BLAINEGABBERT | QB | Traded to Green Bay for C.J. Wilson; outside Jacksonville working inventory | Outgoing/accelerated cap effect unresolved | 2013 ledger Entry 5 |
+
+## Post-draft transaction and rookie-control addendum
+
+| Reconciliation step | Working count |
+|---|---:|
+| March 12 working inventory | 63 |
+| Cousins acquired from Washington | +1 |
+| Gabbert-for-Wilson player swap | 0 net |
+| Pre-draft working inventory | **64** |
+| Seven Jacksonville draft-rights additions | +7 |
+| Four post-draft UDFA signings | +4 |
+| Current working inventory | **75** |
+
+Jacksonville transferred its **2014 second-round selection** to Washington for Cousins. No 2013 selection was surrendered. The Gabbert/Wilson trade carries no draft pick. Exact transferred-contract, rookie-contract, Top-51, and release accounting remains open, so the old approximately $8.35M post-free-agency planning figure is not a certified current cap-space figure.
+
+The four UDFA signings are Brynden Trawick (S, Troy), A.J. Bouye (CB, UCF), Adam Thielen (WR, Minnesota State), and C.J. Anderson (RB, California). Their later real careers are outside active simulation evidence; only the user-authorized Jacksonville signings and current competition roles are canon here.
 
 ## Material player records for this batch
 
