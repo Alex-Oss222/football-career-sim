@@ -1,12 +1,12 @@
 # Jacksonville Jaguars — 2013 Rookie Minicamp Plan
 
-**Status:** DURABLE PLAN — NOT YET EXECUTED.  
+**Status:** DURABLE PLAN — EXECUTED MAY 3-5, 2013; retained unchanged as the governing plan for the completed event.  
 **Event owner when run:** `career/2013/offseason/rookie_minicamp/output.md`.  
 **Framework:** `../player_onboarding_and_development_framework.md`.  
 **Readiness/CBA authority:** `../the_prowl_player_readiness_standard.md`.  
 **Program identity:** `../the_prowl_program_identity.md`.  
 **Offensive scheme authority:** `../../../playbook/alex_stone_2013_offensive_playbook_iteration_i.md` only.  
-**Calendar boundary:** do not invent the 2013 Jacksonville rookie-minicamp date. Verify the real date before advancing the simulation.
+**Calendar:** verified May 3-5, 2013; see `../../../calendar.md` and `../../../../library/2013_jacksonville_master_calendar.md`.
 
 ## Player playbook access and evidence rule
 
