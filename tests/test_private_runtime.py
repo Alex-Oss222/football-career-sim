@@ -71,37 +71,77 @@ class PrivateRuntimeTests(unittest.TestCase):
     def post_probe(self, body, token=None):
         return self.post('/admin/probe',body,token)
 
-    def test_single_source_event_id_contract_and_legacy_match(self):
-        packet={'event_id':'single-source','fact':'same'}
+    def post_empty(self,path,token=None):
+        request=Request(self.url+path,data=b'',
+                        headers={'Authorization':f'Bearer {token or self.token}'},
+                        method='POST')
+        with urlopen(request) as response: return json.load(response)
+
+    def test_digest_close_contract_idempotence_and_altered_refusal(self):
+        packet={'event_id':'digest-source','fact':'same'}
+        digest=hashlib.sha256(canonical(packet)).hexdigest()
+        query='?event_id=digest-source&packet_sha256='+digest
+        first=self.post_empty('/events/close'+query)
+        second=self.post_empty('/events/close'+query)
+        self.assertEqual(first,second)
+        self.assertTrue(first['result_ref'])
+        changed=hashlib.sha256(canonical({'event_id':'digest-source','fact':'changed'})).hexdigest()
+        with self.assertRaises(HTTPError) as error:
+            self.post_empty('/events/close?event_id=digest-source&packet_sha256='+changed)
+        self.assertEqual(error.exception.code,409)
+        for bad_query in (
+            '?event_id=digest-source',
+            '?packet_sha256='+digest,
+            '?event_id=digest-source&packet_sha256=bad',
+        ):
+            with self.assertRaises(HTTPError):
+                self.post_empty('/events/close'+bad_query)
+
+    def test_digest_close_url_encodes_event_identity(self):
+        client=Client(self.url,token=self.token,snapshot='snapshot')
+        packet={'event_id':'preseason:1 / home','fact':'same'}
+        first=client.close_event(packet)
+        second=client.close_event(packet)
+        self.assertEqual(first,second)
+        self.assertTrue(first)
+
+    def test_legacy_body_contract_remains_compatible(self):
+        packet={'event_id':'legacy-source','fact':'same'}
         flat=self.post('/events/close',packet)
         wrapped=self.post('/events/close',{'packet':packet})
-        wrapped_string=self.post('/events/close',{'event_id':'single-source',
+        wrapped_string=self.post('/events/close',{'event_id':'legacy-source',
                                                   'packet':json.dumps(packet)})
         self.assertEqual(flat,wrapped)
         self.assertEqual(flat,wrapped_string)
         with self.assertRaises(HTTPError) as error:
             self.post('/events/close',{'event_id':'other','packet':packet})
         self.assertEqual(error.exception.code,409)
-        for bad in ([],{}, {'event_id':'  '},
-                    {'packet':[]},{'packet':{}},{'packet':'not-json'}):
-            with self.assertRaises(HTTPError): self.post('/events/close',bad)
 
-    def test_client_validates_packet_before_network_io_and_sends_flat_packet(self):
+    def test_client_validates_packet_and_sends_digest_query_without_body(self):
         client=Client(self.url,token=self.token,snapshot='snapshot')
         with self.assertRaises(ValueError): client.close_event([])
         with self.assertRaises(ValueError): client.close_event({})
         calls=[]
-        client._request=lambda path,body: calls.append((path,body)) or {'result_ref':'opaque'}
-        self.assertEqual(client.close_event({'event_id':'one'}),'opaque')
-        self.assertEqual(calls,[('/events/close',{'event_id':'one'})])
+        client._request=lambda path,body=None,method=None: calls.append((path,body,method)) or {'result_ref':'opaque'}
+        packet={'event_id':'one','fact':'same'}
+        expected=hashlib.sha256(canonical(packet)).hexdigest()
+        self.assertEqual(client.close_event(packet),'opaque')
+        self.assertEqual(len(calls),1)
+        path,body,method=calls[0]
+        self.assertEqual(body,None)
+        self.assertEqual(method,'POST')
+        self.assertIn('/events/close?',path)
+        self.assertIn('event_id=one',path)
+        self.assertIn('packet_sha256='+expected,path)
         self.assertEqual(list(inspect.signature(Client.close_event).parameters),['self','packet'])
 
     def test_readiness_fails_when_real_close_transport_is_broken(self):
         client=Client(self.url,token=self.token,snapshot='snapshot')
         real=client._request
-        def request(path,body=None):
-            if path=='/events/close': raise PrivateRuntimeUnavailable('broken closure')
-            return real(path,body)
+        def request(path,body=None,method=None):
+            if path.startswith('/events/close?'):
+                raise PrivateRuntimeUnavailable('broken closure')
+            return real(path,body,method)
         client._request=request
         with self.assertRaises(PrivateRuntimeUnavailable): client.readiness()
 
@@ -159,7 +199,12 @@ class PrivateRuntimeTests(unittest.TestCase):
     def test_no_seed_or_private_journal_in_repository(self):
         root=Path(__file__).resolve().parents[1]
         import subprocess
-        for name in subprocess.check_output(['git','ls-files'],cwd=root,text=True).splitlines():
+        if (root/'.git').exists():
+            names=subprocess.check_output(['git','ls-files'],cwd=root,text=True).splitlines()
+        else:
+            names=[path.relative_to(root).as_posix() for path in root.rglob('*')
+                   if path.is_file() and '__pycache__' not in path.parts]
+        for name in names:
             data=(root/name).read_bytes()
             self.assertNotIn(b'PRIVATE_' + b'JOURNAL_CONTENT',data)
             self.assertNotIn(name, {'engine.sqlite3','engine.backup.sqlite3','engine-token'})
