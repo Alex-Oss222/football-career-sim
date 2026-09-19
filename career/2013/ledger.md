@@ -449,3 +449,27 @@ Stone closed the day by directing lawful voluntary conditioning, recovery, treat
 The next football event is **June 4-7 OTA block 3**. **June 4 has not been simulated.**
 
 **Commit closed — Canonical update - May 23, 2013 - OTA Day 6 closed — canonical through May 23, before June 4 OTA work**
+
+## Entry 13 — Repository continuity and readiness reconciliation
+
+**Record class:** Administrative correction authorized September 19, 2026; no simulated football event.
+**Effective checkpoint:** May 23, 2013, after OTA Day 6; the clock does not advance.
+**Global package checkpoint:** `Canonical correction - May 23, 2013 - repository continuity and readiness reconciled`.
+**Preceding global package checkpoint:** `Canonical update - May 23, 2013 - OTA Day 6 closed`.
+
+The owner approved the repository organization plan and requested game-readiness work. This entry reconciles stale presentation and dependencies against events already closed in Entries 1-12.
+
+- Root and season indexes now route to current state and the correct phase folders. Training camp remains under `offseason/training_camp/`; its approved output, standouts, battles and roster-decision placeholders do not imply work has occurred.
+- OTA standouts now summarize the completed May 13-23 evidence. Rookie-minicamp standouts summarize May 3-5. Mandatory minicamp and training camp remain NOT STARTED. Durable teaching plans keep their content and point to separate execution records.
+- Document 2 now has an active 2013 Jacksonville edition. The full superseded authoring master is archived; unused candidate modes do not enter runtime. Known staff/caller assignments are reconciled in Document 3 from the existing operating staff record.
+- Project and ledger-protocol status pointers now refer to the established career. The trade ledger points forward to Entry 9/current cap reconciliation without rewriting the older entries' as-recorded uncertainty.
+- Repository checks now cover file dependencies, evidence-summary receipts, local links, source versions, checkpoints and controlled-player membership. They do not generate new evidence or replace semantic review.
+- Game readiness remains BLOCKED. Pre-2013 league aggregate research and deterministic packet support are added; full verified game rules, calibration, football kernel and a deployed private Engine State service remain incomplete. No game score or secret state is invented.
+
+The current count remains 64 controlled players with 26 open offseason places. Existing staff appointments, provisional football roles, medical restrictions, draft capital, branch contracts and the May 5 approximate $7.0M-$7.4M Top-51 planning range are unchanged. The April 16-18 continuity gap is preserved. Entry 12 remains the last football event; June 4-7 OTAs remain the next scheduled work and have not been simulated.
+
+| Global package checkpoint | Canonical through | Reconciled documents |
+|---|---|---|
+| `Canonical correction - May 23, 2013 - repository continuity and readiness reconciled` | May 23, 2013, after OTA Day 6 | Active foundation references, phase views, repository dependencies and Documents 4/5 |
+
+**Commit closed — Canonical correction - May 23, 2013 - repository continuity and readiness reconciled — canonical through May 23, before June 4 OTA work**

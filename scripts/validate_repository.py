@@ -1,0 +1,160 @@
+#!/usr/bin/env python3
+"""Read-only continuity checks. No future playbook or archive content is read."""
+import argparse
+import hashlib
+import json
+import re
+from pathlib import Path
+from urllib.parse import unquote, urlsplit
+
+ROOT = Path(__file__).resolve().parents[1]
+META = re.compile(r'<!-- sim-meta: (\{[^\n]+\}) -->')
+STATUSES = {'NOT_STARTED', 'IN_PROGRESS', 'COMPLETE'}
+
+
+def metadata(text):
+    matches = META.findall(text)
+    if len(matches) != 1:
+        raise ValueError('expected exactly one sim-meta record')
+    return json.loads(matches[0])
+
+
+def git_blob(data):
+    return hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest()
+
+
+def anchors(text):
+    found, counts = set(), {}
+    for heading in re.findall(r'^#{1,6}\s+(.+?)\s*#*$', text, re.M):
+        slug = re.sub(r'[^\w\- ]', '', heading.lower()).replace(' ', '-')
+        n = counts.get(slug, 0)
+        counts[slug] = n + 1
+        found.add(slug if n == 0 else f'{slug}-{n}')
+    found.update(re.findall(r'<a\s+(?:name|id)="([^"]+)"', text))
+    return found
+
+
+def without_code(text):
+    text = re.sub(r'^```.*?^```\s*$', '', text, flags=re.M | re.S)
+    return re.sub(r'`[^`\n]*`', '', text)
+
+
+def validate(root=ROOT):
+    root = Path(root).resolve()
+    errors = []
+    def require(condition, message):
+        if not condition:
+            errors.append(message)
+    try:
+        mapping = json.loads((root/'docs/repository_map.json').read_text())
+        state = (root/'state/05_Current_Season_State.md').read_text()
+        register = (root/'state/04_Roster_and_Staff_Register.md').read_text()
+        ledger = (root/'career/2013/ledger.md').read_text()
+        roster = (root/'career/2013/roster.md').read_text()
+    except (OSError, ValueError) as exc:
+        return [f'Cannot read required continuity input: {exc}']
+    for path in mapping['required_files']:
+        require((root/path).is_file(), f'Missing required file: {path}')
+
+    entries = {int(n) for n in re.findall(r'^## Entry (\d+)\b', ledger, re.M)}
+    master = re.search(r'\| Master date/time \| (.*?) \|', state)
+    from datetime import datetime, date
+    try:
+        current_date = datetime.strptime(master[1].split(', after')[0], '%B %d, %Y').date()
+    except (TypeError, ValueError):
+        errors.append('Cannot parse master date/time in Document 5')
+        current_date = date.min
+
+    for name, paths in mapping['phases'].items():
+        try:
+            output_bytes = (root/paths['output']).read_bytes()
+            output = metadata(output_bytes.decode())
+            summary = metadata((root/paths['standouts']).read_text())
+            for record, label in [(output, 'output'), (summary, 'summary')]:
+                require({'kind', 'status', 'through', 'event_entry'} <= record.keys(),
+                        f'{name}: {label} lacks required metadata fields')
+            require(output.get('kind') == 'phase_output', f'{name}: incorrect output kind')
+            require(summary.get('kind') == 'evidence_summary', f'{name}: incorrect summary kind')
+            require(output.get('status') in STATUSES, f'{name}: invalid phase status')
+            for field in ('status', 'through', 'event_entry'):
+                require(summary.get(field) == output.get(field), f'{name}: stale summary {field}')
+            require(summary.get('source') == paths['output'], f'{name}: summary points at wrong source')
+            require(summary.get('source_sha256') == hashlib.sha256(output_bytes).hexdigest(),
+                    f'{name}: output changed; review standouts and refresh receipt')
+            if output.get('status') == 'NOT_STARTED':
+                require(output.get('through') is None and output.get('event_entry') is None,
+                        f'{name}: future phase has completed evidence metadata')
+            else:
+                through = date.fromisoformat(output['through'])
+                require(through <= current_date, f'{name}: evidence exceeds master clock')
+                require(output.get('event_entry') in entries, f'{name}: unknown ledger entry')
+            plan = (root/paths['plan']).read_text()
+            require('](output.md)' in plan and '](standouts.md)' in plan,
+                    f'{name}: plan must point to execution records')
+        except (OSError, ValueError, KeyError, TypeError) as exc:
+            errors.append(f'{name}: invalid/missing phase evidence: {exc}')
+
+    try:
+        checkpoint = re.search(r'^\*\*Global package checkpoint:\*\* `([^`]+)`', state, re.M)[1]
+        closed = re.findall(r'^\*\*Commit closed [—-] (.*?) [—-] canonical through ', ledger, re.M)
+        require(bool(closed) and closed[-1] == checkpoint, 'State checkpoint differs from latest closed ledger entry')
+        version = re.search(r'\| Document 4 register version \| `([^`]+)`', register)[1]
+        require(f'| Document 4 | `{version}`' in state, 'Document 5 names a stale Document 4 version')
+        register_checkpoint = re.search(r'\| Last content-changing checkpoint \| `([^`]+)`', register)[1]
+        require(register_checkpoint in closed, 'Document 4 checkpoint is not a closed ledger event')
+        for n, path in mapping['foundation_sources'].items():
+            require(f'| Document {n} | `{git_blob((root/path).read_bytes())}`' in state,
+                    f'Document {n}: stale source-version hash in Document 5')
+        index = register.split('### Current player index', 1)[1].split('### Players no longer', 1)[0]
+        register_names = re.findall(r'^\| ([^|]+?) \| JAX-', index, re.M)
+        body = roster.split('## 3. Current controlled players', 1)[1].split('\n## 4.', 1)[0]
+        roster_names = [m.strip() for m in re.findall(r'^\| ([^|]+?) \|', body, re.M)
+                        if m.strip() != 'Player' and not m.strip().startswith('-')]
+        require(len(register_names) == len(set(register_names)), 'Duplicate player in register')
+        require(len(roster_names) == len(set(roster_names)), 'Duplicate player in readable roster')
+        require(set(register_names) == set(roster_names), 'Controlled-player membership differs between roster and register')
+        count = int(re.search(r'\| Current controlled players \| \*\*(\d+)\*\*', register)[1])
+        require(len(register_names) == count, 'Register controlled count does not match player rows')
+        require(f'**Canonical controlled-player count:** **{count}**' in roster, 'Roster header count is stale')
+        state_counts = re.findall(r'\| \*\*Current [^|]*controlled roster\*\* \| \*\*(\d+)\*\*', state)
+        require(len(state_counts) == 1 and int(state_counts[0]) == count, 'Document 5 controlled count is stale')
+    except (OSError, IndexError, TypeError, ValueError) as exc:
+        errors.append(f'Malformed canonical state: {exc}')
+
+    allowed_books = set(mapping['active_playbooks']) | {'career/playbook/README.md'}
+    def readable(path):
+        rel = path.relative_to(root).as_posix()
+        return not rel.startswith('archive/') and (not rel.startswith('career/playbook/') or rel in allowed_books)
+    for path in sorted(root.rglob('*.md')):
+        if '.git' in path.parts or not readable(path):
+            continue
+        content = without_code(path.read_text())
+        for dest in re.findall(r'(?<!!)\[[^\]\n]+\]\(([^\s)]+)\)', content):
+            parts = urlsplit(dest)
+            if parts.scheme or parts.netloc:
+                continue
+            target = (path.parent/unquote(parts.path)).resolve() if parts.path else path
+            if not target.is_relative_to(root):
+                errors.append(f'{path.relative_to(root)}: link leaves repository: {dest}')
+            elif not target.exists():
+                errors.append(f'{path.relative_to(root)}: missing link target: {dest}')
+            elif parts.fragment and target.suffix == '.md' and readable(target):
+                require(unquote(parts.fragment) in anchors(without_code(target.read_text())),
+                        f'{path.relative_to(root)}: missing heading: {dest}')
+    return errors
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--root', type=Path, default=ROOT)
+    args = parser.parse_args()
+    errors = validate(args.root)
+    if errors:
+        print('\n'.join('ERROR: ' + error for error in errors))
+        return 1
+    print('PASS: repository paths, phase evidence, current-state sources, checkpoint and roster agree.')
+    return 0
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())

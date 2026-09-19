@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "scope": "2013 Jacksonville active records; select a successor map when a later season is opened",
+  "required_files": [
+    "README.md",
+    "AGENTS.md",
+    "career/README.md",
+    "career/2013/README.md",
+    "career/2013/calendar.md",
+    "career/2013/roster.md",
+    "career/2013/ledger.md",
+    "career/2013/standings.md",
+    "career/2013/coaching_staff.md",
+    "career/2013/offseason/head_coach_contract.md",
+    "career/2013/offseason/current_cap_worksheet.md",
+    "career/2013/offseason/training_camp/position_battles.md",
+    "career/2013/offseason/training_camp/roster_decisions.md",
+    "state/04_Roster_and_Staff_Register.md",
+    "state/05_Current_Season_State.md",
+    "state/game_readiness.md",
+    "docs/update_workflow.md",
+    "runtime/readiness.json",
+    "runtime/README.md",
+    "runtime/packets.py",
+    "foundation/01_Project_Instructions.md",
+    "foundation/02_League_Era_and_Sourcebook.md",
+    "foundation/03_Head_Coach_Organization_and_Authority_Canon.md",
+    "career/2013/offseason/rookie_minicamp/plan.md",
+    "career/2013/offseason/rookie_minicamp/output.md",
+    "career/2013/offseason/rookie_minicamp/standouts.md",
+    "career/2013/offseason/otas/plan.md",
+    "career/2013/offseason/otas/output.md",
+    "career/2013/offseason/otas/standouts.md",
+    "career/2013/offseason/mandatory_minicamp/plan.md",
+    "career/2013/offseason/mandatory_minicamp/output.md",
+    "career/2013/offseason/mandatory_minicamp/standouts.md",
+    "career/2013/offseason/training_camp/plan.md",
+    "career/2013/offseason/training_camp/output.md",
+    "career/2013/offseason/training_camp/standouts.md",
+    "career/2013/preseason/README.md",
+    "career/2013/preseason/final_roster_cuts.md",
+    "career/2013/preseason/game_1_miami_at_jacksonville/output.md",
+    "career/2013/preseason/game_2_jacksonville_at_ny_jets/output.md",
+    "career/2013/preseason/game_3_philadelphia_at_jacksonville/output.md",
+    "career/2013/preseason/game_4_jacksonville_at_atlanta/output.md",
+    "career/2013/regular_season/README.md",
+    "career/2013/regular_season/week_01_kansas_city_at_jacksonville/output.md",
+    "career/2013/regular_season/week_02_jacksonville_at_oakland/output.md",
+    "career/2013/regular_season/week_03_jacksonville_at_seattle/output.md",
+    "career/2013/regular_season/week_04_indianapolis_at_jacksonville/output.md",
+    "career/2013/regular_season/week_05_jacksonville_at_st_louis/output.md",
+    "career/2013/regular_season/week_06_jacksonville_at_denver/output.md",
+    "career/2013/regular_season/week_07_san_diego_at_jacksonville/output.md",
+    "career/2013/regular_season/week_08_san_francisco_at_jacksonville/output.md",
+    "career/2013/regular_season/week_09_bye/output.md",
+    "career/2013/regular_season/week_10_jacksonville_at_tennessee/output.md",
+    "career/2013/regular_season/week_11_arizona_at_jacksonville/output.md",
+    "career/2013/regular_season/week_12_jacksonville_at_houston/output.md",
+    "career/2013/regular_season/week_13_jacksonville_at_cleveland/output.md",
+    "career/2013/regular_season/week_14_houston_at_jacksonville/output.md",
+    "career/2013/regular_season/week_15_buffalo_at_jacksonville/output.md",
+    "career/2013/regular_season/week_16_tennessee_at_jacksonville/output.md",
+    "career/2013/regular_season/week_17_jacksonville_at_indianapolis/output.md"
+  ],
+  "foundation_sources": {
+    "1": "foundation/01_Project_Instructions.md",
+    "2": "foundation/02_League_Era_and_Sourcebook.md",
+    "3": "foundation/03_Head_Coach_Organization_and_Authority_Canon.md"
+  },
+  "active_playbooks": [
+    "career/playbook/alex_stone_2013_offensive_playbook_iteration_i.md",
+    "career/playbook/alex_stone_2013_defensive_playbook_iteration_i.md"
+  ],
+  "phases": {
+    "rookie_minicamp": {
+      "plan": "career/2013/offseason/rookie_minicamp/plan.md",
+      "output": "career/2013/offseason/rookie_minicamp/output.md",
+      "standouts": "career/2013/offseason/rookie_minicamp/standouts.md"
+    },
+    "otas": {
+      "plan": "career/2013/offseason/otas/plan.md",
+      "output": "career/2013/offseason/otas/output.md",
+      "standouts": "career/2013/offseason/otas/standouts.md"
+    },
+    "mandatory_minicamp": {
+      "plan": "career/2013/offseason/mandatory_minicamp/plan.md",
+      "output": "career/2013/offseason/mandatory_minicamp/output.md",
+      "standouts": "career/2013/offseason/mandatory_minicamp/standouts.md"
+    },
+    "training_camp": {
+      "plan": "career/2013/offseason/training_camp/plan.md",
+      "output": "career/2013/offseason/training_camp/output.md",
+      "standouts": "career/2013/offseason/training_camp/standouts.md"
+    }
+  }
+}

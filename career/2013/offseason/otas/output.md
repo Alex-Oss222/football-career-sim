@@ -1,4 +1,10 @@
+<!-- sim-meta: {"event_entry": 12, "kind": "phase_output", "status": "IN_PROGRESS", "through": "2013-05-23"} -->
+
 # Jacksonville Jaguars — 2013 OTAs Output
+
+**Overall status:** IN PROGRESS; completed through May 23, 2013. June 4-7 has not begun.
+**Evidence summary:** [OTA standouts](standouts.md).
+**History rule:** Each dated block retains its own then-current next-event statement. Read the latest block and [current state](../../../../state/05_Current_Season_State.md) to resume.
 
 ## May 13-15 — OTA block 1
 

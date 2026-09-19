@@ -1,0 +1,32 @@
+name: Repository continuity
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  continuity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate records and links
+        run: python scripts/validate_repository.py
+      - name: Regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Report the separate game gate
+        shell: bash
+        run: |
+          set +e
+          python scripts/check_game_readiness.py > readiness-report.txt
+          result=$?
+          cat readiness-report.txt
+          cat readiness-report.txt >> "$GITHUB_STEP_SUMMARY"
+          if [ "$result" -eq 1 ]; then
+            echo '::notice::Game execution remains BLOCKED; this workflow validates repository continuity.'
+          elif [ "$result" -ne 0 ]; then
+            exit "$result"
+          fi

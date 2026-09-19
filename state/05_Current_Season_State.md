@@ -1,25 +1,25 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2013-MAY23-OTA6-STATE-5`
-**Supersedes:** `JAX-2013-MAY21-OTA2-STATE-4`
+**Version:** `JAX-2013-MAY23-ADMIN-STATE-6`
+**Supersedes:** `JAX-2013-MAY23-OTA6-STATE-5`
 **Readiness:** May 23 OTA Day 6 is closed with roster control, participation, provisional football evidence and availability synchronized. The unchanged May 5 Top-51 worksheet remains the financial authority.
 **Must be read:** In full before every simulation response.
 **Simulation status:** Jacksonville has completed all prior closed events plus May 23 OTA Day 6. June 4-7 has not begun.
 **Snapshot effective:** May 23, 2013, after OTA Day 6 and before June 4 OTA work.
-**Last reconciled:** September 19, 2026; season-ledger Entry 12.
-**Global package checkpoint:** `Canonical update - May 23, 2013 - OTA Day 6 closed`.
-**Preceding global package checkpoint:** `Canonical update - May 21, 2013 - OTA block 2 closed`.
+**Last reconciled:** September 19, 2026; season-ledger Entry 13 administrative correction. Entry 12 remains the last football event.
+**Global package checkpoint:** `Canonical correction - May 23, 2013 - repository continuity and readiness reconciled`.
+**Preceding global package checkpoint:** `Canonical update - May 23, 2013 - OTA Day 6 closed`.
 
 ## Effective source-version manifest
 
 | Canonical document | Effective version | Current pointer |
 |---|---|---|
-| Document 1 | `697208640886f9f63581f4b865f917f16007f036` | Project instructions unchanged |
-| Document 2 | `4dcdaa9bb3812ffe47b1bc7007dda73204cbc170` | 2013 rules/sourcebook unchanged by this correction |
-| Document 3 | `9538b8e4831eba1a407c394a37c21972f8b8e290` | Stone/Jacksonville authority map unchanged |
-| Document 4 | `JAX-2013-MAY23-OTA6-STATE-5`; branch content closed by Entry 12 | 64-player control, May 23 participation/availability and provisional role evidence |
-| Document 6 | 2013 ledger through Entry 12 | May 23 OTA progression authority |
+| Document 1 | `358ccf4feac40830055bae5e4cbd84151536ab9e` | Entry 13 active-source reconciliation |
+| Document 2 | `8574a71d699779082247c3c3f40eb08700ed3a15` | Entry 13 active-source reconciliation |
+| Document 3 | `38e0ce21e9cf1b62f8d4b9c281955facdaf07b57` | Entry 13 active-source reconciliation |
+| Document 4 | `JAX-2013-MAY23-ADMIN-STATE-6`; administrative reconciliation closed by Entry 13 | 64-player control, May 23 participation/availability and provisional role evidence |
+| Document 6 | 2013 ledger through Entry 13 | Administrative reconciliation; Entry 12 remains May 23 football authority |
 
 ## 1. Master clock and competition position
 
@@ -33,7 +33,7 @@
 | Season phase | Offseason; May 23 OTA Day 6 complete; June 4-7 OTA block 3 not begun |
 | Record | 0-0; regular season not begun |
 | Last football event | May 23 OTA Day 6 |
-| Last canonical update | Entry 12 May 23 OTA close |
+| Last canonical update | Entry 13 repository continuity and readiness correction; no time advanced |
 | Next football event | **June 4-7 OTA block 3** |
 | Current football focus | Use the break lawfully; open June 4 with fresh medical communication and unprompted recall of the changed-front combination, narrow Mesh spacing, base defensive exchange and the single pressure presentation |
 | Current calendar | `career/2013/calendar.md` |
@@ -262,6 +262,8 @@ No staff authority or contract changed in Entry 12.
 ## 9. Live-game checkpoint
 
 **Game underway:** No.
+
+**Game execution readiness:** [BLOCKED pending the verified prerequisites](game_readiness.md). This does not change the existing next OTA step.
 
 There is no score, possession, game clock, timeout, challenge, game-day active list or cumulative 2013 game statistic to resume.
 

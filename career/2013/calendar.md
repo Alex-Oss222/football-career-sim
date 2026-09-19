@@ -2,7 +2,7 @@
 
 **Function:** Branch-facing schedule and phase control.
 **Historical source:** `../../library/2013_jacksonville_master_calendar.md`.
-**Current branch checkpoint:** May 23, 2013, OTA Day 6 closed.
+**Current branch checkpoint:** May 23, 2013, OTA Day 6 closed; Entry 13 administrative reconciliation preserves that clock.
 **Rule:** Dates/opponents/deadlines are historical rails. Attendance, transactions, performance and game results are branch events.
 
 ## Current checkpoint
@@ -34,41 +34,41 @@
 | **Jul. 22** | Rookies and quarterbacks report | `offseason/training_camp/plan.md` | Future |
 | Jul. 23-24 | Rookie/QB acclimation and preparation | training-camp plan / medical-performance process | Future |
 | **Jul. 25** | Full team / veterans report | `offseason/training_camp/plan.md` | Future |
-| Jul. 26-Aug. 3 | Published opening full-team camp/practice sequence | `offseason/training_camp/plan.md`, future `output.md` | Future |
-| Aug. 5 | Full-padded camp practice; afternoon walkthrough scheduled | training-camp plan / future output | Future |
-| Aug. 6 | Full-padded camp practice | training-camp plan / future output | Future |
-| Aug. 7 | Training-camp practice | training-camp plan / future output | Future |
-| Aug. 8 | Final walkthrough before preseason opener | training-camp plan / future output | Future |
-| **Aug. 9** | Preseason 1 vs Miami, 7:30 p.m. | future preseason/game output | Future |
-| Aug. 12 | Full-padded camp practice | training-camp plan / future output | Future |
-| Aug. 13 | Training-camp practice | training-camp plan / future output | Future |
-| Aug. 14 | Full-padded camp practice | training-camp plan / future output | Future |
-| **Aug. 15** | Walkthrough; 2013 training camp concludes | training-camp plan / future output | Future |
-| **Aug. 17** | Preseason 2 at NY Jets, 7:30 p.m. | future preseason/game output | Future |
-| **Aug. 24** | Preseason 3 vs Philadelphia, 7:30 p.m. | future preseason/game output | Future |
+| Jul. 26-Aug. 3 | Published opening full-team camp/practice sequence | `offseason/training_camp/plan.md`, [output.md](offseason/training_camp/output.md) | Future |
+| Aug. 5 | Full-padded camp practice; afternoon walkthrough scheduled | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Future |
+| Aug. 6 | Full-padded camp practice | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Future |
+| Aug. 7 | Training-camp practice | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Future |
+| Aug. 8 | Final walkthrough before preseason opener | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Future |
+| **Aug. 9** | Preseason 1 vs Miami, 7:30 p.m. | [preseason game index](preseason/README.md) | Future |
+| Aug. 12 | Full-padded camp practice | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Future |
+| Aug. 13 | Training-camp practice | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Future |
+| Aug. 14 | Full-padded camp practice | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Future |
+| **Aug. 15** | Walkthrough; 2013 training camp concludes | [training-camp plan](offseason/training_camp/plan.md) / [output](offseason/training_camp/output.md) | Future |
+| **Aug. 17** | Preseason 2 at NY Jets, 7:30 p.m. | [preseason game index](preseason/README.md) | Future |
+| **Aug. 24** | Preseason 3 vs Philadelphia, 7:30 p.m. | [preseason game index](preseason/README.md) | Future |
 | **Aug. 27, 4 p.m.** | Cut to 75 | roster/cap/state atomic update | Future |
-| **Aug. 29** | Preseason 4 at Atlanta, 7:30 p.m. | future preseason/game output | Future |
+| **Aug. 29** | Preseason 4 at Atlanta, 7:30 p.m. | [preseason game index](preseason/README.md) | Future |
 | **Aug. 31, 6 p.m.** | Cut to 53 | roster/cap/state atomic update | Future |
 | **Sep. 1, noon** | Waiver claims expire; 8-player practice squad formation begins | roster/state | Future |
 | **Sep. 4** | Regular-season cap compliance; Top-51 ends | cap worksheet/state | Future |
-| **Sep. 8** | Week 1 vs Kansas City, 1 p.m. | season/game engine | Future |
-| Sep. 15 | W2 at Oakland, 4:25 p.m. | season/game engine | Future |
-| Sep. 22 | W3 at Seattle, 4:25 p.m. | season/game engine | Future |
-| Sep. 29 | W4 vs Indianapolis, 1 p.m. | season/game engine | Future |
-| Oct. 6 | W5 at St. Louis, 1 p.m. | season/game engine | Future |
-| Oct. 13 | W6 at Denver, 4:05 p.m. | season/game engine | Future |
-| Oct. 20 | W7 vs San Diego, 1 p.m. | season/game engine | Future |
-| **Oct. 27** | W8 vs San Francisco at Wembley, 1 p.m. ET | season/game engine | Future |
+| **Sep. 8** | Week 1 vs Kansas City, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
+| Sep. 15 | W2 at Oakland, 4:25 p.m. | [regular-season week index](regular_season/README.md) | Future |
+| Sep. 22 | W3 at Seattle, 4:25 p.m. | [regular-season week index](regular_season/README.md) | Future |
+| Sep. 29 | W4 vs Indianapolis, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
+| Oct. 6 | W5 at St. Louis, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
+| Oct. 13 | W6 at Denver, 4:05 p.m. | [regular-season week index](regular_season/README.md) | Future |
+| Oct. 20 | W7 vs San Diego, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
+| **Oct. 27** | W8 vs San Francisco at Wembley, 1 p.m. ET | [regular-season week index](regular_season/README.md) | Future |
 | **Oct. 29, 4 p.m.** | Trade deadline | transaction gate | Future |
 | Nov. 3 | W9 BYE | self-scout/recovery week | Future |
-| Nov. 10 | W10 at Tennessee, 1 p.m. | season/game engine | Future |
-| Nov. 17 | W11 vs Arizona, 1 p.m. | season/game engine | Future |
-| Nov. 24 | W12 at Houston, 1 p.m. | season/game engine | Future |
-| Dec. 1 | W13 at Cleveland, 1 p.m. | season/game engine | Future |
+| Nov. 10 | W10 at Tennessee, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
+| Nov. 17 | W11 vs Arizona, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
+| Nov. 24 | W12 at Houston, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
+| Dec. 1 | W13 at Cleveland, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
 | **Dec. 5** | W14 vs Houston, 8:25 p.m. | short-week game plan | Future |
-| Dec. 15 | W15 vs Buffalo, 1 p.m. | season/game engine | Future |
-| Dec. 22 | W16 vs Tennessee, 1 p.m. | season/game engine | Future |
-| Dec. 29 | W17 at Indianapolis, 1 p.m. | season/game engine | Future |
+| Dec. 15 | W15 vs Buffalo, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
+| Dec. 22 | W16 vs Tennessee, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
+| Dec. 29 | W17 at Indianapolis, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
 | Jan. 4-5, 2014 | Wild Card Weekend, if qualified | postseason engine | Conditional |
 | Jan. 11-12 | Divisional Playoffs, if qualified | postseason engine | Conditional |
 | Jan. 19 | AFC/NFC Championships, if qualified | postseason engine | Conditional |

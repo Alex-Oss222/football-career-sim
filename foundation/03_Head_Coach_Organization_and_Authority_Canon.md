@@ -4,14 +4,14 @@
 
 | Field | Canonical entry |
 |---|---|
-| Document status | `NOT READY` — rebuilt template; career not initialized. After every substantive Section 12 gate and companion-document readiness check is satisfied, set this field to `READY` as the administrative close. The separate final instruction to initialize remains outstanding and does not prevent readiness. |
-| Document version | Rebuild draft 2.4 |
-| Supersedes | Rebuild draft 2.3. No initialized career canon is superseded. |
-| Last Document 3 content-changing update | 2026-09-18 — The Prowl implementation was reconciled to 2013 NFL reality: offseason voluntariness and practice limits now follow the 2011 CBA; medical clearance is explicitly independent of coaching authority; modern tracking data are not assumed; and the player-readiness system now provides mental-health, financial and family resources without compulsory private counseling, recurring financial surveillance or family-status reporting. The underlying user-established "Good, Better, Best" identity, football-accountability principles and defensive philosophy are unchanged. Prior update: Section 2 resolved and the Prowl files became controlling identity sources. |
-| Canonical as-of date | [UNSET] |
-| Competition, season, and team | [DERIVED DOCUMENT 2 REFERENCE; UNSET] |
-| Simulation mode | [DERIVED DOCUMENT 2 MODE-LOCK REFERENCE; UNSET] |
-| Factual divergence point | [DERIVED DOCUMENT 2 DIVERGENCE REFERENCE; UNSET] |
+| Document status | Active established coach/authority canon. Known assignments are reconciled; unresolved entries remain unknown and game readiness is separately gated. |
+| Document version | Rebuild draft 2.5 |
+| Supersedes | Rebuild draft 2.4; administrative reconciliation, no new hire or delegation. |
+| Last Document 3 content-changing update | 2026-09-19, season-ledger Entry 13: align existing identity and operational callers with the accepted contract and completed staff record. |
+| Canonical as-of date | Established Jacksonville authority through May 23, 2013; current personnel changes belong in Document 4 |
+| Competition, season, and team | NFL, 2013, Jacksonville Jaguars; Document 2 |
+| Simulation mode | Counterfactual Stone career; Document 2 active edition |
+| Factual divergence point | January 15, 2013 accepted Jacksonville offer; hiring-search ledger |
 | Head coach | Alex-Lamar Stone (full legal name); Alex Stone (ordinary professional name). Resolved 2026-09-17; see §1.1. |
 | Document owner | Canon editor |
 | Normal update trigger | Approved change to coach background, head-coach contract, reporting line, authority, play-calling delegation, personnel-interaction granularity, senior staff structure, durable relationship canon, audience-specific career reputation, or standing instruction |
@@ -19,7 +19,7 @@
 
 This document records who the protagonist head coach is, what the coach has explicitly established, how the organization is structured, and who may decide what. It does not contain weekly plans, a live depth chart, current injuries, game state, or an indefinitely growing event summary.
 
-No unresolved entry is canon. No supplied-source claim becomes canon merely because it appears below. Do not initialize the career until the initialization gate at the end of this document is satisfied and the user explicitly instructs initialization.
+No unresolved entry is canon. No supplied-source claim becomes canon merely because it appears below. Section 12 preserves the initialization procedure; it is not a current-status snapshot and does not erase the career events already closed in the season ledger. Remaining game-specific requirements are tracked in `state/game_readiness.md`.
 
 ## Canon provenance
 
@@ -181,13 +181,13 @@ Legacy coaching-philosophy candidates (including the earlier "Bear Crawl" materi
 | Incentives | [UNSET; not addressed in the offer beyond the declined performance-vesting guarantee structure] | — | Unknown or undetermined |
 | Guarantees, offsets, and mitigation | All 4 years fully guaranteed; no offset/mitigation term stated | Coach-known confidential | `hiring_search.md` Entry 7 |
 | Buyout or termination provisions | [UNSET; not addressed] | — | Unknown or undetermined |
-| Contractual staff-compensation entitlement or ceiling promised to the head coach | A funded assistant-coach budget consistent with Stone's proposed staff, including Stone's own compensation-for-budget trade; no specific dollar ceiling stated. Current assistant commitments and spending belong in Document 4 once staff is actually hired. | Coach-known confidential | `hiring_search.md` Entries 4, 6-7 |
+| Contractual staff-compensation entitlement or ceiling promised to the head coach | A funded assistant-coach budget consistent with Stone's proposed staff, including Stone's own compensation-for-budget trade; no specific dollar ceiling stated. Current assistant commitments and spending are recorded in Document 4 and the current coaching-staff register. | Coach-known confidential | `hiring_search.md` Entries 4, 6-7 |
 | Relocation, housing, vehicle, travel, and other material benefits | [UNSET; not addressed] | — | Unknown or undetermined |
 | Outside-income, endorsement, camp, media, or apparel provisions | [UNSET; not addressed] | — | Unknown or undetermined |
 | Conduct, compliance, and disclosure clauses | [UNSET beyond the Authority Map's discipline/media rows; no bespoke clause stated] | — | Unknown or undetermined |
 | Personnel-control clause | Stone selects and hires the coaching staff and controls the depth chart; Caldwell retains final authority over player-personnel acquisition, contracts, cap, scouting, and the draft, including final say on franchise-level quarterback decisions after required consultation with Stone. Do not infer any authority beyond this from the title "head coach." | Public | `hiring_search.md` Entries 6-7; see Authority Map Section 5 |
 | Assistant-hiring clause | Stone selects his own coaching staff | Public | `hiring_search.md` Entries 4, 7 |
-| Play-calling or coordinator commitments | Stone retains offensive play-calling. No coordinator hire is a contractual commitment — see Section 9 and the staff-building process once it actually runs. | Public | `hiring_search.md` Entries 4, 7 |
+| Play-calling or coordinator commitments | Stone retains offensive play-calling. The head-coach contract did not name a coordinator; subsequent appointments and ordinary callers are recorded in Section 4 and the completed staff-building record. | Public | `hiring_search.md` Entries 4, 7 |
 | Performance expectations | Year 1: install a functional program, credible player development, dependable preparation and communication, and a resolved evidence-based direction at quarterback. Not an immediate playoff requirement. | Coach-known confidential | `hiring_search.md` Entries 6-7 |
 | Review and notice dates | [UNSET; not addressed] | — | Unknown or undetermined |
 | Governing law, league, conference, school, or CBA limits | NFL; the applicable 2013 CBA and league rules per Document 2 | Public | Document 2 §11 |
@@ -215,26 +215,26 @@ This section records operational delegation only. The Authority Map in Section 5
 
 | Responsibility | Authority Map reference | Ordinary operator or caller | Head coach's retained operational role | Limits and return-control triggers | Provenance, effective date, and source |
 |---|---|---|---|---|---|
-| Offensive system and weekly plan implementation | Rows 11 and 12; row 22 when resources are required | [UNSET] | [UNSET] | Material changes to the approved strategy, installation load, personnel, or resources return to the user within the authority shown in the cited rows. | [Unknown or undetermined; date/source UNSET] |
-| Offensive play calling | Row 12 | [UNSET: head coach, coordinator, shared, or situational split] | [UNSET] | Define exact situational splits and succession; no caller gains authority beyond row 12. | [Unknown or undetermined; date/source UNSET] |
-| Defensive system and weekly plan implementation | Rows 11 and 13; row 22 when resources are required | [UNSET] | [UNSET] | Material changes to the approved strategy, installation load, personnel, or resources return to the user within the authority shown in the cited rows. | [Unknown or undetermined; date/source UNSET] |
-| Defensive play calling | Row 13 | [UNSET: head coach, coordinator, shared, or situational split] | [UNSET] | Define exact situational splits and succession; no caller gains authority beyond row 13. | [Unknown or undetermined; date/source UNSET] |
-| Special-teams plan implementation | Rows 11 and 14; row 22 when resources are required | [UNSET] | [UNSET] | Material plan or personnel departures return to the user within the authority shown in the cited rows. | [Unknown or undetermined; date/source UNSET] |
-| Special-teams calls | Row 14 | [UNSET] | [UNSET] | Define ordinary calls, unusual calls, and emergency succession. | [Unknown or undetermined; date/source UNSET] |
-| Fourth-down go, field-goal, or punt selection | Rows 12 and 14, as applicable | [UNSET] | [UNSET] | If the cited rows give the head coach the decision, the user decides. Staff may recommend; exact score, clock, field, rules, availability, and uncertainty control. | [Unknown or undetermined; date/source UNSET] |
-| Timeouts and clock management | Rows 12–14, as applicable | [UNSET] | [UNSET] | If the cited rows give the head coach the decision, the user decides every consequential use. | [Unknown or undetermined; date/source UNSET] |
-| Replay challenge or review request | Rows 12–14, as applicable | [UNSET] | [UNSET] | Follow the selected season's exact replay rules and available decision time. | [Unknown or undetermined; date/source UNSET] |
-| Two-point attempt, onside kick, and other unusual strategy | Rows 12 and 14, as applicable | [UNSET] | [UNSET] | If the cited rows give the head coach the decision, return control before commitment. | [Unknown or undetermined; date/source UNSET] |
+| Offensive system and weekly plan implementation | Rows 11 and 12; row 22 when resources are required | Mike Tice coordinates; Stone sets the offensive system | Final menu, plan approval and situational direction | Material departures and Document 7 pause triggers return control; emergency succession remains unassigned. | Established staff-building canon; [current coaching staff](../career/2013/coaching_staff.md), §1; reconciled by Entry 13. |
+| Offensive play calling | Row 12 | Alex Stone | Ordinary offensive caller | Material departures and Document 7 pause triggers return control; emergency succession remains unassigned. | Established staff-building canon; [current coaching staff](../career/2013/coaching_staff.md), §1; reconciled by Entry 13. |
+| Defensive system and weekly plan implementation | Rows 11 and 13; row 22 when resources are required | Romeo Crennel | Team principles and coordinator supervision | Material departures and Document 7 pause triggers return control; emergency succession remains unassigned. | Established staff-building canon; [current coaching staff](../career/2013/coaching_staff.md), §1; reconciled by Entry 13. |
+| Defensive play calling | Row 13 | Romeo Crennel | Team-level game management; no silent snap-by-snap takeover | Material departures and Document 7 pause triggers return control; emergency succession remains unassigned. | Established staff-building canon; [current coaching staff](../career/2013/coaching_staff.md), §1; reconciled by Entry 13. |
+| Special-teams plan implementation | Rows 11 and 14; row 22 when resources are required | Alan Lowry | Team priorities and roster/use decisions within Stone authority | Material departures and Document 7 pause triggers return control; emergency succession remains unassigned. | Established staff-building canon; [current coaching staff](../career/2013/coaching_staff.md), §1; reconciled by Entry 13. |
+| Special-teams calls | Row 14 | Alan Lowry | Consequential game-management decisions return to Stone | Material departures and Document 7 pause triggers return control; emergency succession remains unassigned. | Established staff-building canon; [current coaching staff](../career/2013/coaching_staff.md), §1; reconciled by Entry 13. |
+| Fourth-down go, field-goal, or punt selection | Rows 12 and 14, as applicable | Alex Stone, with staff recommendations | Consequential choices remain user-controlled | Follow exact era rules and Document 7 pause triggers; never infer an unrecorded standing choice. | Executed head-coach contract, game-day authority; current staff §1; reconciled by Entry 13. |
+| Timeouts and clock management | Rows 12–14, as applicable | Alex Stone, with staff recommendations | Consequential choices remain user-controlled | Follow exact era rules and Document 7 pause triggers; never infer an unrecorded standing choice. | Executed head-coach contract, game-day authority; current staff §1; reconciled by Entry 13. |
+| Replay challenge or review request | Rows 12–14, as applicable | Alex Stone, with staff recommendations | Consequential choices remain user-controlled | Follow exact era rules and Document 7 pause triggers; never infer an unrecorded standing choice. | Executed head-coach contract, game-day authority; current staff §1; reconciled by Entry 13. |
+| Two-point attempt, onside kick, and other unusual strategy | Rows 12 and 14, as applicable | Alex Stone, with staff recommendations | Consequential choices remain user-controlled | Follow exact era rules and Document 7 pause triggers; never infer an unrecorded standing choice. | Executed head-coach contract, game-day authority; current staff §1; reconciled by Entry 13. |
 | Emergency succession if a caller is unavailable | Rows 2 and 12–14, as applicable | [UNSET] | [UNSET] | Record only an installed succession plan that complies with staffing and game rules. | [Unknown or undetermined; date/source UNSET] |
 
 The selected game-detail mode is owned by Document 2. This table is a read-only interface summary plus Document 3's operational delegation; it cannot change the mode.
 
 | Game interface setting | Derived or operational entry | Controlling source and last confirmed |
 |---|---|---|
-| Selected game granularity | [DOCUMENT 2 MODE-LOCK VALUE; UNSET] | [Document 2 version/field UNSET] |
-| Side or phases directly called by the user | [UNSET operational delegation] | [Document 3 Section 4 and Authority Map rows 12–14] |
+| Selected game granularity | Executive head-coach mode with mandatory decision pauses | Document 2 §3; Document 7 §11 |
+| Side or phases directly called by the user | Stone retains ordinary offensive calling; Crennel calls defense and Lowry directs special teams. Interface granularity follows the selected mode. | [Document 3 Section 4 and Authority Map rows 12–14] |
 | Routine calls the simulator may implement | [UNSET operational delegation] | [Document 1 plus Document 3 Section 4] |
-| Decisions that always return to the user | [UNSET, subject to Project Instructions] | [Document 1 plus applicable Authority Map rows] |
+| Decisions that always return to the user | Consequential Stone decisions and Document 7 §4 pause triggers | [Document 1 plus applicable Authority Map rows] |
 
 Delegation authorizes routine implementation within the approved plan. It does not authorize the simulator to make a consequential strategic choice for the head coach. A delegated coordinator may recommend, object, and call within the assigned scope. The coordinator does not know hidden user instructions that have not been communicated.
 
@@ -259,8 +259,8 @@ Complete every applicable row before initialization. "Final authority" means the
 | 10 | Starting lineups | Stone | Follows from depth-chart authority (row 9) and game-day authority (row 8). | Coordinators, position coaches, and medical availability | The head coach cannot start a medically unavailable or ineligible player. | `hiring_search.md` Entries 6-7 |
 | 11 | Practice schedule, workload, and repetition allocation | Stone (inferred from his retained head-coach/game-day/depth-chart authority; not itself a separately negotiated line item) | Sets the practice structure. | Medical, performance, coordinator, facilities, and operations input | CBA, governing-body, calendar, travel, and facility limits | Labeled inference — `hiring_search.md` Entries 6-7 |
 | 12 | Offensive play calling | Stone | Explicit contract term. | [UNSET] | Applicable game rules; Section 4 may record operational delegation but cannot change this row | `hiring_search.md` Entries 4, 6-7 |
-| 13 | Defensive play calling | Stone (formal authority of the head-coach role) | [UNSET — specific delegation to a hired defensive coordinator is an operational choice for the staff-building process, not yet made in binding form] | [UNSET pending staff hires] | Applicable game rules; Section 4 may record operational delegation but cannot change this row | Structural default only; not part of the negotiated contract terms |
-| 14 | Special-teams decisions and calls | Stone (formal authority of the head-coach role) | [UNSET — same as row 13, pending staff hires] | [UNSET pending staff hires] | Applicable game rules; Section 4 may record operational delegation but cannot change this row | Structural default only; not part of the negotiated contract terms |
+| 13 | Defensive play calling | Stone (formal authority of the head-coach role) | Romeo Crennel is the established ordinary defensive caller; see Section 4 and current staff record | Current coaching-staff register | Applicable game rules; Section 4 may record operational delegation but cannot change this row | Structural default only; not part of the negotiated contract terms |
+| 14 | Special-teams decisions and calls | Stone (formal authority of the head-coach role) | Alan Lowry directs the kicking game; see Section 4 and current staff record | Current coaching-staff register | Applicable game rules; Section 4 may record operational delegation but cannot change this row | Structural default only; not part of the negotiated contract terms |
 | 15 | Medical diagnosis | Qualified medical personnel (team physician/athletic training staff, per standard NFL practice) | No diagnostic authority. The coach may report observations and request an evaluation. | Player, team physician, athletic trainers, and specialists as applicable | Medical ethics, law, CBA, governing-body policy, and privacy rules | Standard NFL structure, not bespoke to this contract |
 | 16 | Medical clearance and return-to-participation status | Qualified medical personnel (team physician/athletic training staff) | No power to clear or overrule. The coach may decide how to use a medically available player within stated limitations. | Player, physician, athletic training, performance, independent specialists or protocols as applicable | Medical protocol, law, CBA, and governing-body rules | Standard NFL structure, not bespoke to this contract |
 | 17 | Injury reporting and official availability designation | Team medical and communications staff, per the league's official injury-report rules for the season in play | The coach may supply football-use information but cannot alter medical findings. | Medical, communications, legal or compliance, and league personnel | Selected season's exact reporting and privacy rules (Document 2) | Standard NFL structure, not bespoke to this contract |
@@ -304,9 +304,9 @@ List only structural roles necessary to understand reporting, operational delega
 | Football operations and administration | [UNSET] | [UNSET] | Rows 7, 8, 11, 17, 19, 20, and 22 as applicable | [UNSET] | [UNSET] | [Unknown or undetermined; date/source UNSET] |
 | Salary-cap, contracts, budget, or financial aid | [UNSET] | [UNSET] | Rows 5, 6, 20, 21, and 22 as applicable | [UNSET] | [UNSET] | [Unknown or undetermined; date/source UNSET] |
 | Scouting, recruiting, or personnel evaluation | [UNSET] | [UNSET] | Rows 3, 4, 20, and 21 as applicable | [UNSET] | [UNSET] | [Unknown or undetermined; date/source UNSET] |
-| Offensive coordinator | [UNSET] | [UNSET] | Rows 11 and 12 | [UNSET; match Section 4] | [UNSET] | [Unknown or undetermined; date/source UNSET] |
-| Defensive coordinator | [UNSET] | [UNSET] | Rows 11 and 13 | [UNSET; match Section 4] | [UNSET] | [Unknown or undetermined; date/source UNSET] |
-| Special-teams coordinator | [UNSET] | [UNSET] | Rows 11 and 14 | [UNSET; match Section 4] | [UNSET] | [Unknown or undetermined; date/source UNSET] |
+| Offensive coordinator | Mike Tice; generated from [current staff](../career/2013/coaching_staff.md) | Alex Stone | Rows 11 and 12 | Coordinates the unit and weekly process; Stone is the ordinary caller | See Section 4; no independent acquisition authority | Closed staff-building record and current coaching staff §1; Entry 13 reconciliation |
+| Defensive coordinator | Romeo Crennel; generated from [current staff](../career/2013/coaching_staff.md) | Alex Stone | Rows 11 and 13 | Defensive coordinator and ordinary defensive caller | See Section 4; no independent acquisition authority | Closed staff-building record and current coaching staff §1; Entry 13 reconciliation |
+| Special-teams coordinator | Alan Lowry; generated from [current staff](../career/2013/coaching_staff.md) | Alex Stone | Rows 11 and 14 | Directs the kicking game | See Section 4; no independent acquisition authority | Closed staff-building record and current coaching staff §1; Entry 13 reconciliation |
 | Medical director or team physician | [UNSET] | [UNSET] | Rows 15–17 | [UNSET; diagnosis, clearance, reporting, or consultation only as assigned by those rows] | Head coach has no medical override. [Other boundary UNSET] | [Unknown or undetermined; date/source UNSET] |
 | Head athletic trainer or equivalent | [UNSET] | [UNSET] | Rows 15–17 | [UNSET; treatment, communication, reporting, or protocol function] | Head coach has no diagnostic or clearance override. [Other boundary UNSET] | [Unknown or undetermined; date/source UNSET] |
 | Performance, strength, conditioning, and sport science | [UNSET] | [UNSET] | Rows 11, 15, 16, and 22 as applicable | [UNSET] | [UNSET] | [Unknown or undetermined; date/source UNSET] |
@@ -508,13 +508,15 @@ This is a generated lookup index, not a revision log and not an independent sour
 
 | Document 6 entry ID and effective date | Section affected | Current active value or status | Cross-document reconciliation status |
 |---|---|---|---|
-| [NONE] |  |  |  |
+| Season-ledger Entry 13; effective May 23, 2013 | Document control, existing delegation and staff pointers | Established Jacksonville identity and callers reconciled | Current-source manifest updated; no new appointment or authority transfer |
 
 ### 11.4 Mandatory audit triggers
 
 Audit this document after a coaching contract change, supervisor or general-manager change, material assistant-staff change, play-calling reassignment, authority dispute, team change, season-phase transition affecting authority, contradiction discovery, and before or after a new-chat handoff when any of those subjects remain active.
 
 ## 12. Initialization gate
+
+**Procedure, not current status:** The established career is resumed from Document 5 and the latest closed season-ledger entry. The original checklist below is retained as a procedure and a record of fields requiring explicit evidence, not a command to rerun hiring or erase subsequent events. Unrecorded salary terms, emergency succession and other unknowns stay unknown. Game execution still requires Document 7 and the readiness checks.
 
 The project uses one explicit lifecycle:
 
