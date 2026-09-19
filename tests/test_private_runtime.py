@@ -199,7 +199,12 @@ class PrivateRuntimeTests(unittest.TestCase):
     def test_no_seed_or_private_journal_in_repository(self):
         root=Path(__file__).resolve().parents[1]
         import subprocess
-        for name in subprocess.check_output(['git','ls-files'],cwd=root,text=True).splitlines():
+        if (root/'.git').exists():
+            names=subprocess.check_output(['git','ls-files'],cwd=root,text=True).splitlines()
+        else:
+            names=[path.relative_to(root).as_posix() for path in root.rglob('*')
+                   if path.is_file() and '__pycache__' not in path.parts]
+        for name in names:
             data=(root/name).read_bytes()
             self.assertNotIn(b'PRIVATE_' + b'JOURNAL_CONTENT',data)
             self.assertNotIn(name, {'engine.sqlite3','engine.backup.sqlite3','engine-token'})
