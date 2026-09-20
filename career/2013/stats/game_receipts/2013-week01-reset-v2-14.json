@@ -1,1 +1,602 @@
-{"coverage":"complete","detail":"compact_stats","event_id":"2013-week01-reset-v2-14","final_score":{"Philadelphia Eagles":31,"Washington Redskins":17},"kernel_version":"2013.3","matchup":"Philadelphia Eagles at Washington Redskins","schema_version":2,"team_stats":{"Philadelphia Eagles":{"field_goals":1,"first_downs":38,"kick_returns":2,"passing_yards":331,"penalties":11,"penalty_yards":89,"players":{"Alex Henery":{"extra_points_attempted":4,"extra_points_made":4,"field_goals_attempted":1,"field_goals_made":1,"position":"K"},"Bennie Logan":{"position":"DT","solo_tackles":2,"tackles":2},"Bradley Fletcher":{"position":"CB","solo_tackles":4,"tackles":4},"Brandon Boykin":{"passes_defended":2,"position":"CB","solo_tackles":2,"tackles":2},"Brent Celek":{"long_reception":29,"position":"TE","receiving_touchdowns":1,"receiving_yards":61,"receptions":3,"targets":6},"Bryce Brown":{"long_reception":23,"long_rush":6,"position":"RB","receiving_touchdowns":1,"receiving_yards":23,"receptions":1,"rushing_attempts":6,"rushing_yards":24,"targets":2},"Cary Williams":{"passes_defended":1,"position":"CB","solo_tackles":6,"tackles":6},"Cedric Thornton":{"position":"DE","solo_tackles":4,"tackles":4},"Chris Polk":{"long_reception":3,"long_rush":11,"position":"RB","receiving_yards":5,"receptions":2,"rushing_attempts":8,"rushing_touchdowns":1,"rushing_yards":44,"targets":4},"Clifton Geathers":{"position":"DE","pressures":1,"sacks":1,"solo_tackles":3,"tackles":3},"Colt Anderson":{"passes_defended":1,"position":"S","punt_return_yards":15,"punt_returns":1,"return_yards":15,"solo_tackles":5,"tackles":5},"Damaris Johnson":{"long_reception":12,"long_rush":4,"position":"WR","receiving_yards":12,"receptions":1,"rushing_attempts":3,"rushing_yards":5,"targets":3},"Damion Square":{"position":"DE","pressures":2,"solo_tackles":5,"tackles":5},"DeSean Jackson":{"long_reception":29,"long_rush":7,"position":"WR","receiving_yards":37,"receptions":2,"rushing_attempts":4,"rushing_yards":18,"targets":4},"Donnie Jones":{"long_punt":48,"position":"P","punt_yards":162,"punts":4,"punts_inside_20":1},"Earl Wolff":{"position":"S","solo_tackles":5,"tackles":5},"Evan Mathis":{"position":"OG","sacks_allowed":1},"Fletcher Cox":{"position":"DE","pressures":3,"sacks":2,"solo_tackles":10,"tackles":10},"Isaac Sopoaga":{"position":"DT","solo_tackles":3,"tackles":3},"James Casey":{"long_reception":9,"position":"TE","receiving_yards":9,"receptions":1,"targets":1},"Jason Avant":{"kick_return_yards":36,"kick_returns":1,"long_reception":16,"long_rush":6,"position":"WR","receiving_yards":49,"receptions":5,"return_yards":36,"rushing_attempts":6,"rushing_yards":23,"targets":8},"Jeff Maehl":{"long_reception":10,"long_rush":11,"position":"WR","receiving_yards":16,"receptions":2,"rushing_attempts":2,"rushing_yards":13,"targets":3},"Jordan Poyer":{"forced_fumbles":1,"fumble_recoveries":1,"position":"CB","punt_return_yards":15,"punt_returns":1,"return_yards":15,"solo_tackles":6,"tackles":6},"Kurt Coleman":{"passes_defended":1,"position":"S","solo_tackles":1,"tackles":1},"LeSean McCoy":{"kick_return_yards":31,"kick_returns":1,"long_reception":9,"long_rush":11,"position":"RB","receiving_yards":9,"receptions":1,"return_yards":31,"rushing_attempts":10,"rushing_yards":52,"targets":2},"Matt Barkley":{"completions":9,"dropbacks":18,"fumbles":1,"fumbles_lost":1,"interceptions":2,"interceptions_thrown":2,"long_rush":9,"pass_attempts":18,"passing_yards":109,"position":"QB","rushing_attempts":4,"rushing_yards":23},"Michael Vick":{"completions":9,"dropbacks":18,"long_rush":5,"pass_attempts":18,"passing_touchdowns":1,"passing_yards":130,"position":"QB","rushing_attempts":1,"rushing_yards":5},"Nate Allen":{"position":"S","punt_return_yards":19,"punt_returns":1,"return_yards":19,"solo_tackles":4,"tackles":4},"Nick Foles":{"completions":7,"dropbacks":11,"long_rush":11,"pass_attempts":10,"passing_touchdowns":1,"passing_yards":92,"position":"QB","rushing_attempts":7,"rushing_touchdowns":1,"rushing_yards":37,"sack_yards":4,"sacks_taken":1},"Patrick Chung":{"defensive_interceptions":2,"interception_return_yards":36,"passes_defended":3,"position":"S","solo_tackles":3,"tackles":3},"Riley Cooper":{"long_reception":26,"long_rush":5,"position":"WR","receiving_yards":32,"receptions":3,"rushing_attempts":2,"rushing_yards":9,"targets":5},"Shaun Prater":{"position":"CB","solo_tackles":3,"tackles":3},"Vinny Curry":{"position":"DE","pressures":1,"sacks":1,"solo_tackles":5,"tackles":5},"Zach Ertz":{"long_reception":31,"position":"TE","receiving_yards":78,"receptions":4,"targets":8}},"points":31,"punt_returns":3,"punts":4,"rushing_yards":253,"sacks_allowed":1,"third_down_attempts":31,"third_down_conversions":12,"time_of_possession":1860,"touchdowns":4,"turnovers":3},"Washington Redskins":{"field_goals":1,"first_downs":32,"kick_returns":3,"passing_yards":267,"penalties":6,"penalty_yards":43,"players":{"Adam Gettis":{"position":"OG","sacks_allowed":1},"Aldrick Robinson":{"long_reception":15,"long_rush":1,"position":"WR","punt_return_yards":20,"punt_returns":1,"receiving_yards":28,"receptions":4,"return_yards":20,"rushing_attempts":1,"rushing_yards":1,"targets":8},"Alfred Morris":{"long_reception":8,"long_rush":9,"position":"RB","receiving_yards":16,"receptions":2,"rushing_attempts":3,"rushing_yards":15,"targets":2},"Bacarri Rambo":{"passes_defended":1,"position":"S","solo_tackles":8,"tackles":8},"Barry Cofield":{"position":"DT","solo_tackles":6,"tackles":6},"Brandon Meriweather":{"defensive_interceptions":1,"forced_fumbles":1,"fumble_recoveries":1,"interception_return_yards":30,"passes_defended":5,"position":"S","punt_return_yards":18,"punt_returns":1,"return_yards":18,"solo_tackles":5,"tackles":5},"Chris Baker":{"position":"DE","solo_tackles":3,"tackles":3},"Chris Chester":{"position":"OG","sacks_allowed":1},"Chris Neild":{"position":"DT","pressures":2,"solo_tackles":3,"tackles":3},"Darrel Young":{"fumbles":1,"fumbles_lost":1,"long_rush":14,"position":"FB","rushing_attempts":10,"rushing_yards":47,"targets":1},"David Amerson":{"defensive_interceptions":1,"interception_return_yards":30,"kick_return_yards":45,"kick_returns":2,"passes_defended":3,"position":"CB","return_yards":45,"solo_tackles":5,"tackles":5},"DeAngelo Hall":{"position":"CB","solo_tackles":8,"tackles":8},"E.J. Biggers":{"position":"CB","solo_tackles":4,"tackles":4},"Fred Davis":{"position":"TE","targets":1},"Jordan Pugh":{"position":"S","solo_tackles":5,"tackles":5},"Jose Gumbs":{"position":"S","solo_tackles":7,"tackles":7},"Josh Morgan":{"long_reception":26,"long_rush":7,"position":"WR","receiving_yards":65,"receptions":4,"rushing_attempts":5,"rushing_yards":21,"targets":5},"Josh Wilson":{"position":"CB","solo_tackles":5,"tackles":5},"Kai Forbath":{"extra_points_attempted":2,"extra_points_made":2,"field_goals_attempted":1,"field_goals_made":1,"position":"K"},"Kedric Golston":{"position":"DE","pressures":3,"sacks":1,"solo_tackles":5,"tackles":5},"Kirk Cousins":{"completions":4,"dropbacks":9,"long_rush":5,"pass_attempts":9,"passing_yards":73,"position":"QB","rushing_attempts":4,"rushing_yards":13},"Logan Paulsen":{"long_reception":20,"position":"TE","receiving_yards":26,"receptions":3,"targets":7},"Niles Paul":{"long_reception":11,"position":"TE","receiving_touchdowns":1,"receiving_yards":17,"receptions":3,"targets":4},"Pierre Garcon":{"long_reception":19,"long_rush":6,"position":"WR","receiving_touchdowns":1,"receiving_yards":33,"receptions":3,"rushing_attempts":3,"rushing_yards":16,"targets":3},"Reed Doughty":{"passes_defended":2,"position":"S","solo_tackles":11,"tackles":11},"Rex Grossman":{"completions":14,"dropbacks":27,"interceptions":1,"interceptions_thrown":1,"long_rush":7,"pass_attempts":26,"passing_touchdowns":1,"passing_yards":143,"position":"QB","rushing_attempts":2,"rushing_yards":11,"sack_yards":7,"sacks_taken":1},"Robert Griffin":{"completions":7,"dropbacks":12,"interceptions":1,"interceptions_thrown":1,"long_rush":9,"pass_attempts":9,"passing_touchdowns":1,"passing_yards":51,"position":"QB","rushing_attempts":4,"rushing_yards":24,"sack_yards":17,"sacks_taken":3},"Roy Helu":{"long_reception":27,"long_rush":15,"position":"RB","receiving_yards":82,"receptions":6,"rushing_attempts":7,"rushing_yards":38,"targets":8},"Santana Moss":{"kick_return_yards":23,"kick_returns":1,"long_rush":14,"position":"WR","return_yards":23,"rushing_attempts":5,"rushing_yards":34,"targets":5},"Saverio Rocca":{"long_punt":57,"position":"P","punt_yards":250,"punts":5,"punts_inside_20":2},"Trent Williams":{"position":"OT","sacks_allowed":1},"Tyler Polumbus":{"position":"OT","sacks_allowed":1}},"points":17,"punt_returns":2,"punts":5,"rushing_yards":220,"sacks_allowed":4,"third_down_attempts":27,"third_down_conversions":8,"time_of_possession":1740,"touchdowns":2,"turnovers":3}},"week":1}
+{
+  "coverage": "complete",
+  "detail": "compact_stats",
+  "event_id": "2013-week01-reset-v2-14",
+  "final_score": {
+    "Philadelphia Eagles": 31,
+    "Washington Redskins": 17
+  },
+  "kernel_version": "2013.3",
+  "matchup": "Philadelphia Eagles at Washington Redskins",
+  "schema_version": 2,
+  "team_stats": {
+    "Philadelphia Eagles": {
+      "field_goals": 1,
+      "first_downs": 38,
+      "kick_returns": 2,
+      "passing_yards": 331,
+      "penalties": 11,
+      "penalty_yards": 89,
+      "players": {
+        "Alex Henery": {
+          "extra_points_attempted": 4,
+          "extra_points_made": 4,
+          "field_goals_attempted": 1,
+          "field_goals_made": 1,
+          "position": "K"
+        },
+        "Bennie Logan": {
+          "position": "DT",
+          "solo_tackles": 2,
+          "tackles": 2
+        },
+        "Bradley Fletcher": {
+          "position": "CB",
+          "solo_tackles": 4,
+          "tackles": 4
+        },
+        "Brandon Boykin": {
+          "passes_defended": 2,
+          "position": "CB",
+          "solo_tackles": 2,
+          "tackles": 2
+        },
+        "Brent Celek": {
+          "long_reception": 29,
+          "position": "TE",
+          "receiving_touchdowns": 1,
+          "receiving_yards": 61,
+          "receptions": 3,
+          "targets": 6
+        },
+        "Bryce Brown": {
+          "long_reception": 23,
+          "long_rush": 6,
+          "position": "RB",
+          "receiving_touchdowns": 1,
+          "receiving_yards": 23,
+          "receptions": 1,
+          "rushing_attempts": 6,
+          "rushing_yards": 24,
+          "targets": 2
+        },
+        "Cary Williams": {
+          "passes_defended": 1,
+          "position": "CB",
+          "solo_tackles": 6,
+          "tackles": 6
+        },
+        "Cedric Thornton": {
+          "position": "DE",
+          "solo_tackles": 4,
+          "tackles": 4
+        },
+        "Chris Polk": {
+          "long_reception": 3,
+          "long_rush": 11,
+          "position": "RB",
+          "receiving_yards": 5,
+          "receptions": 2,
+          "rushing_attempts": 8,
+          "rushing_touchdowns": 1,
+          "rushing_yards": 44,
+          "targets": 4
+        },
+        "Clifton Geathers": {
+          "position": "DE",
+          "pressures": 1,
+          "sacks": 1,
+          "solo_tackles": 3,
+          "tackles": 3
+        },
+        "Colt Anderson": {
+          "passes_defended": 1,
+          "position": "S",
+          "punt_return_yards": 15,
+          "punt_returns": 1,
+          "return_yards": 15,
+          "solo_tackles": 5,
+          "tackles": 5
+        },
+        "Damaris Johnson": {
+          "long_reception": 12,
+          "long_rush": 4,
+          "position": "WR",
+          "receiving_yards": 12,
+          "receptions": 1,
+          "rushing_attempts": 3,
+          "rushing_yards": 5,
+          "targets": 3
+        },
+        "Damion Square": {
+          "position": "DE",
+          "pressures": 2,
+          "solo_tackles": 5,
+          "tackles": 5
+        },
+        "DeSean Jackson": {
+          "long_reception": 29,
+          "long_rush": 7,
+          "position": "WR",
+          "receiving_yards": 37,
+          "receptions": 2,
+          "rushing_attempts": 4,
+          "rushing_yards": 18,
+          "targets": 4
+        },
+        "Donnie Jones": {
+          "long_punt": 48,
+          "position": "P",
+          "punt_yards": 162,
+          "punts": 4,
+          "punts_inside_20": 1
+        },
+        "Earl Wolff": {
+          "position": "S",
+          "solo_tackles": 5,
+          "tackles": 5
+        },
+        "Evan Mathis": {
+          "position": "OG",
+          "sacks_allowed": 1
+        },
+        "Fletcher Cox": {
+          "position": "DE",
+          "pressures": 3,
+          "sacks": 2,
+          "solo_tackles": 10,
+          "tackles": 10
+        },
+        "Isaac Sopoaga": {
+          "position": "DT",
+          "solo_tackles": 3,
+          "tackles": 3
+        },
+        "James Casey": {
+          "long_reception": 9,
+          "position": "TE",
+          "receiving_yards": 9,
+          "receptions": 1,
+          "targets": 1
+        },
+        "Jason Avant": {
+          "kick_return_yards": 36,
+          "kick_returns": 1,
+          "long_reception": 16,
+          "long_rush": 6,
+          "position": "WR",
+          "receiving_yards": 49,
+          "receptions": 5,
+          "return_yards": 36,
+          "rushing_attempts": 6,
+          "rushing_yards": 23,
+          "targets": 8
+        },
+        "Jeff Maehl": {
+          "long_reception": 10,
+          "long_rush": 11,
+          "position": "WR",
+          "receiving_yards": 16,
+          "receptions": 2,
+          "rushing_attempts": 2,
+          "rushing_yards": 13,
+          "targets": 3
+        },
+        "Kurt Coleman": {
+          "passes_defended": 1,
+          "position": "S",
+          "solo_tackles": 1,
+          "tackles": 1
+        },
+        "LeSean McCoy": {
+          "kick_return_yards": 31,
+          "kick_returns": 1,
+          "long_reception": 9,
+          "long_rush": 11,
+          "position": "RB",
+          "receiving_yards": 9,
+          "receptions": 1,
+          "return_yards": 31,
+          "rushing_attempts": 10,
+          "rushing_yards": 52,
+          "targets": 2
+        },
+        "Matt Barkley": {
+          "completions": 9,
+          "dropbacks": 18,
+          "fumbles": 1,
+          "fumbles_lost": 1,
+          "interceptions": 2,
+          "interceptions_thrown": 2,
+          "long_rush": 9,
+          "pass_attempts": 18,
+          "passing_yards": 109,
+          "position": "QB",
+          "rushing_attempts": 4,
+          "rushing_yards": 23
+        },
+        "Michael Vick": {
+          "completions": 9,
+          "dropbacks": 18,
+          "long_rush": 5,
+          "pass_attempts": 18,
+          "passing_touchdowns": 1,
+          "passing_yards": 130,
+          "position": "QB",
+          "rushing_attempts": 1,
+          "rushing_yards": 5
+        },
+        "Nate Allen": {
+          "position": "S",
+          "punt_return_yards": 19,
+          "punt_returns": 1,
+          "return_yards": 19,
+          "solo_tackles": 4,
+          "tackles": 4
+        },
+        "Nick Foles": {
+          "completions": 7,
+          "dropbacks": 11,
+          "long_rush": 11,
+          "pass_attempts": 10,
+          "passing_touchdowns": 1,
+          "passing_yards": 92,
+          "position": "QB",
+          "rushing_attempts": 7,
+          "rushing_touchdowns": 1,
+          "rushing_yards": 37,
+          "sack_yards": 4,
+          "sacks_taken": 1
+        },
+        "Patrick Chung": {
+          "defensive_interceptions": 2,
+          "interception_return_yards": 36,
+          "passes_defended": 3,
+          "position": "S",
+          "solo_tackles": 3,
+          "tackles": 3
+        },
+        "Riley Cooper": {
+          "long_reception": 26,
+          "long_rush": 5,
+          "position": "WR",
+          "receiving_yards": 32,
+          "receptions": 3,
+          "rushing_attempts": 2,
+          "rushing_yards": 9,
+          "targets": 5
+        },
+        "Shaun Prater": {
+          "position": "CB",
+          "solo_tackles": 3,
+          "tackles": 3
+        },
+        "Vinny Curry": {
+          "position": "DE",
+          "pressures": 1,
+          "sacks": 1,
+          "solo_tackles": 5,
+          "tackles": 5
+        },
+        "Zach Ertz": {
+          "long_reception": 31,
+          "position": "TE",
+          "receiving_yards": 78,
+          "receptions": 4,
+          "targets": 8
+        },
+        "__branch_roster_unattributed__jordan_poyer": {
+          "forced_fumbles": 1,
+          "fumble_recoveries": 1,
+          "position": "CB",
+          "punt_return_yards": 15,
+          "punt_returns": 1,
+          "return_yards": 15,
+          "solo_tackles": 6,
+          "tackles": 6
+        }
+      },
+      "points": 31,
+      "punt_returns": 3,
+      "punts": 4,
+      "rushing_yards": 253,
+      "sacks_allowed": 1,
+      "third_down_attempts": 31,
+      "third_down_conversions": 12,
+      "time_of_possession": 1860,
+      "touchdowns": 4,
+      "turnovers": 3
+    },
+    "Washington Redskins": {
+      "field_goals": 1,
+      "first_downs": 32,
+      "kick_returns": 3,
+      "passing_yards": 267,
+      "penalties": 6,
+      "penalty_yards": 43,
+      "players": {
+        "Adam Gettis": {
+          "position": "OG",
+          "sacks_allowed": 1
+        },
+        "Aldrick Robinson": {
+          "long_reception": 15,
+          "long_rush": 1,
+          "position": "WR",
+          "punt_return_yards": 20,
+          "punt_returns": 1,
+          "receiving_yards": 28,
+          "receptions": 4,
+          "return_yards": 20,
+          "rushing_attempts": 1,
+          "rushing_yards": 1,
+          "targets": 8
+        },
+        "Alfred Morris": {
+          "long_reception": 8,
+          "long_rush": 9,
+          "position": "RB",
+          "receiving_yards": 16,
+          "receptions": 2,
+          "rushing_attempts": 3,
+          "rushing_yards": 15,
+          "targets": 2
+        },
+        "Barry Cofield": {
+          "position": "DT",
+          "solo_tackles": 6,
+          "tackles": 6
+        },
+        "Brandon Meriweather": {
+          "defensive_interceptions": 1,
+          "forced_fumbles": 1,
+          "fumble_recoveries": 1,
+          "interception_return_yards": 30,
+          "passes_defended": 5,
+          "position": "S",
+          "punt_return_yards": 18,
+          "punt_returns": 1,
+          "return_yards": 18,
+          "solo_tackles": 5,
+          "tackles": 5
+        },
+        "Chris Baker": {
+          "position": "DE",
+          "solo_tackles": 3,
+          "tackles": 3
+        },
+        "Chris Chester": {
+          "position": "OG",
+          "sacks_allowed": 1
+        },
+        "Chris Neild": {
+          "position": "DT",
+          "pressures": 2,
+          "solo_tackles": 3,
+          "tackles": 3
+        },
+        "Darrel Young": {
+          "fumbles": 1,
+          "fumbles_lost": 1,
+          "long_rush": 14,
+          "position": "FB",
+          "rushing_attempts": 10,
+          "rushing_yards": 47,
+          "targets": 1
+        },
+        "David Amerson": {
+          "defensive_interceptions": 1,
+          "interception_return_yards": 30,
+          "kick_return_yards": 45,
+          "kick_returns": 2,
+          "passes_defended": 3,
+          "position": "CB",
+          "return_yards": 45,
+          "solo_tackles": 5,
+          "tackles": 5
+        },
+        "DeAngelo Hall": {
+          "position": "CB",
+          "solo_tackles": 8,
+          "tackles": 8
+        },
+        "E.J. Biggers": {
+          "position": "CB",
+          "solo_tackles": 4,
+          "tackles": 4
+        },
+        "Fred Davis": {
+          "position": "TE",
+          "targets": 1
+        },
+        "Jordan Pugh": {
+          "position": "S",
+          "solo_tackles": 5,
+          "tackles": 5
+        },
+        "Jose Gumbs": {
+          "position": "S",
+          "solo_tackles": 7,
+          "tackles": 7
+        },
+        "Josh Morgan": {
+          "long_reception": 26,
+          "long_rush": 7,
+          "position": "WR",
+          "receiving_yards": 65,
+          "receptions": 4,
+          "rushing_attempts": 5,
+          "rushing_yards": 21,
+          "targets": 5
+        },
+        "Josh Wilson": {
+          "position": "CB",
+          "solo_tackles": 5,
+          "tackles": 5
+        },
+        "Kai Forbath": {
+          "extra_points_attempted": 2,
+          "extra_points_made": 2,
+          "field_goals_attempted": 1,
+          "field_goals_made": 1,
+          "position": "K"
+        },
+        "Kedric Golston": {
+          "position": "DE",
+          "pressures": 3,
+          "sacks": 1,
+          "solo_tackles": 5,
+          "tackles": 5
+        },
+        "Logan Paulsen": {
+          "long_reception": 20,
+          "position": "TE",
+          "receiving_yards": 26,
+          "receptions": 3,
+          "targets": 7
+        },
+        "Niles Paul": {
+          "long_reception": 11,
+          "position": "TE",
+          "receiving_touchdowns": 1,
+          "receiving_yards": 17,
+          "receptions": 3,
+          "targets": 4
+        },
+        "Pierre Garcon": {
+          "long_reception": 19,
+          "long_rush": 6,
+          "position": "WR",
+          "receiving_touchdowns": 1,
+          "receiving_yards": 33,
+          "receptions": 3,
+          "rushing_attempts": 3,
+          "rushing_yards": 16,
+          "targets": 3
+        },
+        "Reed Doughty": {
+          "passes_defended": 2,
+          "position": "S",
+          "solo_tackles": 11,
+          "tackles": 11
+        },
+        "Rex Grossman": {
+          "completions": 14,
+          "dropbacks": 27,
+          "interceptions": 1,
+          "interceptions_thrown": 1,
+          "long_rush": 7,
+          "pass_attempts": 26,
+          "passing_touchdowns": 1,
+          "passing_yards": 143,
+          "position": "QB",
+          "rushing_attempts": 2,
+          "rushing_yards": 11,
+          "sack_yards": 7,
+          "sacks_taken": 1
+        },
+        "Robert Griffin": {
+          "completions": 7,
+          "dropbacks": 12,
+          "interceptions": 1,
+          "interceptions_thrown": 1,
+          "long_rush": 9,
+          "pass_attempts": 9,
+          "passing_touchdowns": 1,
+          "passing_yards": 51,
+          "position": "QB",
+          "rushing_attempts": 4,
+          "rushing_yards": 24,
+          "sack_yards": 17,
+          "sacks_taken": 3
+        },
+        "Roy Helu": {
+          "long_reception": 27,
+          "long_rush": 15,
+          "position": "RB",
+          "receiving_yards": 82,
+          "receptions": 6,
+          "rushing_attempts": 7,
+          "rushing_yards": 38,
+          "targets": 8
+        },
+        "Santana Moss": {
+          "kick_return_yards": 23,
+          "kick_returns": 1,
+          "long_rush": 14,
+          "position": "WR",
+          "return_yards": 23,
+          "rushing_attempts": 5,
+          "rushing_yards": 34,
+          "targets": 5
+        },
+        "Saverio Rocca": {
+          "long_punt": 57,
+          "position": "P",
+          "punt_yards": 250,
+          "punts": 5,
+          "punts_inside_20": 2
+        },
+        "Trent Williams": {
+          "position": "OT",
+          "sacks_allowed": 1
+        },
+        "Tyler Polumbus": {
+          "position": "OT",
+          "sacks_allowed": 1
+        },
+        "__branch_roster_unattributed__kirk_cousins": {
+          "completions": 4,
+          "dropbacks": 9,
+          "long_rush": 5,
+          "pass_attempts": 9,
+          "passing_yards": 73,
+          "position": "QB",
+          "rushing_attempts": 4,
+          "rushing_yards": 13
+        },
+        "__branch_roster_unattributed__bacarri_rambo": {
+          "passes_defended": 1,
+          "position": "S",
+          "solo_tackles": 8,
+          "tackles": 8
+        }
+      },
+      "points": 17,
+      "punt_returns": 2,
+      "punts": 5,
+      "rushing_yards": 220,
+      "sacks_allowed": 4,
+      "third_down_attempts": 27,
+      "third_down_conversions": 8,
+      "time_of_possession": 1740,
+      "touchdowns": 2,
+      "turnovers": 3
+    }
+  },
+  "week": 1,
+  "player_attribution_incomplete_teams": [
+    "Philadelphia Eagles",
+    "Washington Redskins"
+  ],
+  "attribution_corrections": [
+    {
+      "team": "Philadelphia Eagles",
+      "invalid_player": "Jordan Poyer",
+      "replacement_attribution": "unattributed",
+      "reason": "player was Jacksonville-controlled in branch canon and could not also belong to this historical-roster team"
+    },
+    {
+      "team": "Washington Redskins",
+      "invalid_player": "Kirk Cousins",
+      "replacement_attribution": "unattributed",
+      "reason": "player was Jacksonville-controlled in branch canon and could not also belong to this historical-roster team"
+    },
+    {
+      "team": "Washington Redskins",
+      "invalid_player": "Bacarri Rambo",
+      "replacement_attribution": "unattributed",
+      "reason": "player was Jacksonville-controlled in branch canon and could not also belong to this historical-roster team"
+    }
+  ]
+}
