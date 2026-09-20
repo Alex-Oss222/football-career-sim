@@ -99,7 +99,7 @@ def _call_sheet(team, play_type):
     raw = tuple(getattr(team, "offensive_call_sheet", ()) or ())
     normalized = [_normalize_call(item, play_type) for item in raw]
     exact = [item for item in normalized if item["type"] in {play_type, "any", "mixed"}]
-    return exact or normalized
+    return exact
 
 
 def _choose_call(rng, team, play_type):
