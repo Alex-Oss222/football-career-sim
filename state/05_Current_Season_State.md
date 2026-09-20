@@ -1,11 +1,11 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2013-SEP04-REGULAR-STATE-8`
-**Supersedes:** `JAX-2013-AUG08-WALKTHROUGH-STATE-7`
-**Snapshot effective:** September 4, 2013, after regular-season cap compliance.
-**Last reconciled:** September 19, 2026; season-ledger Entry 29.
-**Global package checkpoint:** `Canonical update - September 4, 2013 - preseason, roster and cap block closed`
+**Version:** `JAX-2013-SEP09-WEEK1-STATE-9`
+**Supersedes:** `JAX-2013-SEP04-REGULAR-STATE-8`
+**Snapshot effective:** September 9, 2013, after the full Week 1 slate and Jacksonville postgame work.
+**Last reconciled:** September 20, 2026; season-ledger Entry 30.
+**Global package checkpoint:** `Canonical update - September 9, 2013 - Week 1 closed`
 
 ## Effective source-version manifest
 
@@ -14,22 +14,22 @@
 | Document 1 | `358ccf4feac40830055bae5e4cbd84151536ab9e` | Active foundation source |
 | Document 2 | `ab790f6e935c99a901a6d39cf3bee5183cf4da3e` | Active foundation source |
 | Document 3 | `38e0ce21e9cf1b62f8d4b9c281955facdaf07b57` | Active foundation source |
-| Document 4 | `JAX-2013-SEP04-REGULAR-STATE-8`; closed by Entry 29 | Active 53, practice squad, roles and availability |
-| Document 6 | 2013 ledger through Entry 29 | September 4 preseason/cutdown/cap closure |
+| Document 4 | `JAX-2013-SEP09-WEEK1-STATE-9`; closed by Entry 30 | Active 53, practice squad, roles and availability |
+| Document 6 | 2013 ledger through Entry 30 | Week 1 closure |
 
 ## 1. Master clock and competition position
 
 | Field | Current canonical value |
 |---|---|
-| Master date/time | September 4, 2013, after regular-season cap compliance |
+| Master date/time | September 9, 2013, after Week 1 postgame and league closure |
 | League/season | NFL, 2013 |
 | Team / head coach | Jacksonville Jaguars / Alex Stone |
 | Callers | Stone offense; Romeo Crennel defense; Alan Lowry special teams |
-| Season phase | Regular-season preparation |
+| Season phase | Regular season; Week 1 complete |
 | Preseason record | **2-2** |
-| Regular-season record | **0-0** |
-| Last event | September 4 regular-season roster/cap transition |
-| Next competitive event | **September 8 vs Kansas City, 1:00 p.m. — NOT SIMULATED** |
+| Regular-season record | **0-1** |
+| Last event | Kansas City defeated Jacksonville 30-27; full Week 1 slate closed |
+| Next competitive event | **September 15 at Oakland, 4:25 p.m. — NOT SIMULATED** |
 
 ## 2. Roster and finance
 
@@ -42,24 +42,26 @@
 | Personnel/contracts/cap authority | David Caldwell |
 | Football roles | Alex Stone within eligibility and medical limits |
 
+No transaction, contract, reserve-list or cap event occurred in Week 1.
+
 ## 3. Availability
 
-Austin Pasztor remains on an independent medical hold after the August 17 simulated head/neck injury. C.J. Mosley remains medically unavailable after the August 29 simulated upper-extremity injury. Daryl Smith cleared his short restriction before this checkpoint. No other active player has a communicated football restriction; all statuses require fresh Week 1 medical communication.
+The runtime generated no new Jacksonville Week 1 injury. Austin Pasztor remains on independent medical hold and C.J. Mosley remains medically unavailable. Week 1 game-day inactives were Pasztor, Mosley, Mark Asper, Mike Brewster, Ryan Davis, Lavar Edwards and Kevin Rutland; those designations expired after the game. Every Week 2 status requires fresh medical and game-day communication.
 
-## 4. Current football roles
+## 4. Current football roles and Week 1 evidence
 
-- **QB:** Cousins QB1, Henne QB2, Wilson QB3.
-- **OL:** Monroe–Nwaneri–Meester–Rackley–Johnson; Bradfield swing tackle; Brewster/Asper interior depth; Pasztor only when cleared.
-- **Skill:** Jones-Drew leads Anderson/Grimes; Shorts and Blackmon lead with Thielen WR3; Lewis and Kelce lead tight end.
-- **Defense:** Babin edge; Miller/Marks inside; Posluszny/Smith linebacker operation; Grimes/Ball outside, Poyer nickel, Lowery/Rambo safety. Mosley unavailable.
-- **Teams:** Scobee/Anger/Cain specialists. Trawick, Rambo, Thielen, Anderson, Poyer, Prosinski, Allen and Bouye hold defined primary/backup coverage jobs.
+- **QB:** Cousins remains QB1, Henne QB2 and Wilson QB3. The kernel attributed isolated Week 1 series and one interception to each backup without a generated injury; Stone ended that usage and it does not establish a rotation.
+- **OL:** Monroe-Nwaneri-Meester-Rackley-Johnson remains the starting five; Bradfield is swing tackle; Brewster/Asper are interior depth; Pasztor only when cleared. Three generated sacks came with identified assignments and leverage losses.
+- **Skill:** Jones-Drew continues to lead Anderson/Grimes; Shorts and Blackmon lead with Thielen WR3; Lewis and Kelce lead tight end. Clemons' 126 receiving yards are Week 1 production evidence, not an automatic depth-chart change.
+- **Defense:** Babin edge; Miller/Marks inside; Posluszny/Smith linebacker operation; Grimes/Ball outside, Poyer nickel, Lowery/Rambo safety. Mosley remains unavailable. Jacksonville recorded four sacks and two takeaways, but Kansas City's Jamaal Charles produced 335 scrimmage yards.
+- **Teams:** Scobee made both generated field goals; Anger punted four times. Existing unit assignments remain in place.
 
-Execution and observable effort remain separate. Protection losses were technique/physical evidence where assignments were identified; medical limitations are not effort findings.
+Jacksonville produced 475 yards but committed three turnovers. Kansas City scored the deciding touchdown after Jacksonville's final turnover and won 30-27. No one-game result automatically changes an underlying qualitative tier.
 
-## 5. Closed preseason block
+## 5. League position
 
-All four preseason games were generated through `runtime.game_runner.run_game` from privately frozen event commitments. No historical score was imported and no result was rerun. Jacksonville beat Miami 33-17, lost at the Jets 24-17, lost to Philadelphia 31-20 and won at Atlanta 33-27.
+The entire Week 1 slate is closed in `career/2013/league_results/week_01.md`. Jacksonville is 0-1 and tied by record with Houston and Tennessee in the AFC South; Indianapolis is 1-0. `career/2013/standings.md` is authoritative for division, conference and league tables. No unsupported playoff seed is declared after one week.
 
 ## 6. Immediate next step
 
-Begin September 8 Week 1 vs Kansas City preparation/game flow only on a new explicit instruction and after the game-readiness gate. **Kansas City has not been simulated.**
+Begin Week 2 preparation for Oakland only on a new explicit instruction, a new approved weekly plan and a fresh game-readiness gate. **Oakland has not been simulated.**

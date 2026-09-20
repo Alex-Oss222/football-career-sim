@@ -1,17 +1,17 @@
 # Jacksonville Jaguars — Current Roster
 
-**As of:** September 4, 2013, after regular-season cap compliance.
+**As of:** September 8, 2013, after Week 1 vs Kansas City.
 **Canonical controlled-player count:** **53**.
 **Practice squad:** **8, separate from active roster**.
-**Preseason / regular-season records:** **2-2 / 0-0**.
+**Preseason / regular-season records:** **2-2 / 0-1**.
 
 ## 1. Transition summary
 
-Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers and formed a separate eight-player practice squad September 1, and completed regular-season cap compliance September 4.
+Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers and formed a separate eight-player practice squad September 1, completed regular-season cap compliance September 4, and lost the Week 1 opener to Kansas City 30-27. No transaction or roster-control change occurred.
 
 ## 2. Current role and medical summary
 
-Cousins is QB1, Henne QB2 and Wilson QB3. Pasztor remains on an independent medical hold; Mosley is medically unavailable; Smith cleared his short restriction. All other active players have no communicated football restriction, subject to fresh Week 1 communication.
+Cousins remains QB1, Henne QB2 and Wilson QB3. The isolated Week 1 backup series did not create a continuing rotation. Pasztor remains on an independent medical hold and Mosley remains medically unavailable. The game generated no new Jacksonville injury. Week 1 inactives were Pasztor, Mosley, Mark Asper, Mike Brewster, Ryan Davis, Lavar Edwards and Kevin Rutland; these designations expired after the game and do not pre-resolve Week 2.
 
 ## 3. Current controlled players
 
