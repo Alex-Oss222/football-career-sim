@@ -388,6 +388,7 @@ def apply_drive_detail(
         _max(line, "long_punt", punt_yards)
         if rng.random() < 0.35:
             _bump(line, "punts_inside_20")
+        cover = choose(rng, available, {"LB", "CB", "S", "WR", "RB", "TE"}, "punt_coverage")
         returner = None
         return_yards = 0
         if punt_return:
@@ -400,8 +401,8 @@ def apply_drive_detail(
         ledger.append({
             "drive": drive_no, "snap_in_drive": terminal_snap, "period": period,
             "game_clock": game_clock, "offense": team.team_id, "defense": defense.team_id,
-            "play_type": "punt", "punter": punter.player_id, "punt_yards": punt_yards,
-            "returner": returner, "return_yards": return_yards,
+            "play_type": "punt", "punter": punter.player_id, "cover_player": cover.player_id,
+            "punt_yards": punt_yards, "returner": returner, "return_yards": return_yards,
             "result_yards": 0, "touchdown": False, "turnover": False,
         })
 
