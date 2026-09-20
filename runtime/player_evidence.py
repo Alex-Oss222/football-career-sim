@@ -19,10 +19,22 @@ class PlayerInput:
 
 
 STAT_FIELDS = (
-    "pass_attempts", "passing_yards", "rushing_attempts", "rushing_yards",
-    "receptions", "receiving_yards", "sacks_allowed", "sacks", "pressures",
-    "interceptions", "fumbles", "field_goals_made", "punts", "return_yards",
-    "tackles",
+    "dropbacks", "pass_attempts", "completions", "passing_yards",
+    "passing_touchdowns", "interceptions", "interceptions_thrown",
+    "sacks_taken", "sack_yards",
+    "rushing_attempts", "rushing_yards", "rushing_touchdowns", "long_rush",
+    "targets", "receptions", "receiving_yards", "receiving_touchdowns",
+    "long_reception",
+    "fumbles", "fumbles_lost",
+    "sacks_allowed", "sacks", "pressures", "solo_tackles",
+    "assisted_tackles", "tackles", "tackles_for_loss", "passes_defended",
+    "defensive_interceptions", "interception_return_yards",
+    "forced_fumbles", "fumble_recoveries",
+    "field_goals_attempted", "field_goals_made",
+    "extra_points_attempted", "extra_points_made",
+    "punts", "punt_yards", "long_punt", "punts_inside_20", "punt_touchbacks",
+    "kick_returns", "kick_return_yards", "punt_returns", "punt_return_yards",
+    "return_yards",
 )
 
 
