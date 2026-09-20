@@ -9,9 +9,10 @@ from runtime.rules import RULES, DIVISION_TIEBREAKERS, WILD_CARD_TIEBREAKERS, PL
 
 class RuntimeTests(unittest.TestCase):
     seed=b'synthetic-calibration-seed-not-career-state'
-    def teams(self,edge=0):
+    def teams(self,edge=0,calls=()):
         players=tuple(f"WR:p{i}" for i in range(46))
-        return TeamInput('A',players,2+edge,2),TeamInput('B',players,2,2)
+        return (TeamInput('A',players,2+edge,2,offensive_call_sheet=calls),
+                TeamInput('B',players,2,2,offensive_call_sheet=calls))
     def test_calibration_reconciles(self): self.assertEqual(validate(load()),[])
     def test_one_kernel_and_label_blind_anchors(self):
         self.assertIs(resolve_background_game,resolve_protagonist_game)
@@ -39,6 +40,37 @@ class RuntimeTests(unittest.TestCase):
             player_stats=r['team_stats'][team]['players'].values()
             self.assertEqual(sum(p['passing_yards'] for p in player_stats),r['team_stats'][team]['passing_yards'])
             self.assertEqual(sum(p['rushing_yards'] for p in player_stats),r['team_stats'][team]['rushing_yards'])
+        self.assertTrue(r['play_ledger'])
+        self.assertEqual(
+            sum(x.get('scrimmage_plays',0) for x in r['possessions']),
+            sum(p.get('play_type') in {'pass','run'} for p in r['play_ledger'])
+        )
+        self.assertEqual(
+            [p['sequence'] for p in r['play_ledger']],
+            list(range(1,len(r['play_ledger'])+1))
+        )
+
+    def test_named_call_tracking_and_aliases_do_not_change_outcome_stats(self):
+        calls=(
+            {'name':'Mesh','family':'Mesh','type':'pass','personnel':'11','formation':'Bunch'},
+            {'name':'Power','family':'Power','type':'run','personnel':'12','formation':'Ace'},
+        )
+        aliases=(
+            {'name':'Mesh Base','family':'Mesh','type':'pass','personnel':'11','formation':'Bunch'},
+            {'name':'Power Base','family':'Power','type':'run','personnel':'12','formation':'Ace'},
+        )
+        a,b=self.teams(calls=calls)
+        x,y=self.teams(calls=aliases)
+        first=resolve_game(a,b,seed=self.seed,event_id='named-calls')
+        renamed=resolve_game(x,y,seed=self.seed,event_id='named-calls')
+        self.assertEqual(first['final_score'],renamed['final_score'])
+        self.assertEqual(first['team_stats'],renamed['team_stats'])
+        self.assertTrue({'Mesh','Power'} & set(first['play_call_stats']['A']))
+        self.assertEqual(
+            sum(line['snaps'] for line in first['play_call_stats']['A'].values()),
+            sum(p['scrimmage_plays'] for p in first['possessions'] if p['team']=='A')
+        )
+
     def test_pause_and_continuation(self):
         a,b=self.teams(); paused=resolve_game(a,b,seed=self.seed,event_id='pause',management_mode='user_controlled')
         self.assertEqual(len(paused['pauses']),1)
