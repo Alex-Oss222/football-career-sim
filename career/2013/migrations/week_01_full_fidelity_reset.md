@@ -1,6 +1,6 @@
 # Week 1 full-fidelity reset
 
-**Status:** AUTO-RESOLVABLE INTERNAL PREREQUISITE — generation 1 technically aborted; generation 2 closed and pending public merge.
+**Status:** COMPLETE — generation 1 technically aborted; generation 2 published in merge `6658e3c0e8797f0524a9fda25a4624992118815f`; post-publication branch-roster attribution correction applied without changing scores or standings.
 **User authorization:** The user explicitly authorized the full-stat/full-play Week 1 replacement and later instructed that `Run Week 1` must perform all reset preparation automatically without sending setup work back to the user.
 **Source checkpoint:** `Canonical update - September 4, 2013 - preseason, roster and cap block closed`.
 
@@ -56,4 +56,20 @@ If it does not pass, Codex must complete the missing canonical TeamInput reconst
 9. Validate and open the public PR after every dependency reconciles atomically. **Do not advance the private snapshot from the branch.** Merge first; only the merged `main` checkout may advance the private snapshot to the new Document 5 digest.
 10. Do not start Week 2 until the replacement Week 1 package validates.
 
-Generation 2 passed the internal gate and closed all 16 replacements. The committed Week 1 outputs and receipts are the publication package; private snapshot advancement remains pending merge.
+Generation 2 passed the internal gate, closed all 16 replacements and was published to `main` in merge `6658e3c0e8797f0524a9fda25a4624992118815f`.
+
+## Post-publication branch-roster attribution correction
+
+A Week 2 handoff audit found that the historical Week-1 roster reconstruction had retained several players on their real-history clubs even though earlier branch transactions already placed them under Jacksonville control. The defect affected player attribution in five receipts:
+
+- Baltimore-Denver: Brynden Trawick and C.J. Anderson;
+- Miami-Cleveland: Brent Grimes;
+- Green Bay-San Francisco: C.J. Wilson;
+- Philadelphia-Washington: Jordan Poyer, Kirk Cousins and Bacarri Rambo;
+- Kansas City-Jacksonville: Tyler Bray on Kansas City's historical roster rail.
+
+The correction is outcome-preserving. The published Week 1 team scores, standings, team totals and Jacksonville's own player statistics remain unchanged. Each impossible non-Jacksonville player line was moved to an explicit pseudo/unattributed row in the affected receipt so the generated team total is preserved without inventing which eligible teammate would have received the production. Those clubs are therefore marked player-attribution partial and formal league player rankings are withheld until that exact attribution can be established by a canonical source.
+
+This correction does **not** authorize another Week 1 draw. The kernel's team-level matchup anchors and published outcome remain canon; rerolling after the result is known would create outcome-selection risk. Future weekly TeamInput packages must pass `scripts/check_week_input_exclusivity.py` before any event closes, so branch-controlled Jacksonville players cannot reappear on another club.
+
+The separate private-snapshot transition conflict found after publication was a bookkeeping defect caused by the audited generation-1 rollback retaining a legacy unique transition row. Runtime transition history now supports legitimate progression after an audited recovery while retaining the old history append-only.
