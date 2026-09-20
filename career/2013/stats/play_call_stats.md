@@ -2,7 +2,7 @@
 
 **Version:** `2013-W01-PLAY-CALL-STATS-1`
 **Through:** Week 1.
-**Coverage:** complete for every stored game receipt.
+**Coverage:** complete for Jacksonville's stored Week 1 game receipt.
 
 These are generated game-use totals for the named calls supplied in the weekly offensive call sheet. Generic calls appear only when a game packet did not provide a named call menu.
 
