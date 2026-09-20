@@ -14,7 +14,7 @@ class StatbookTests(unittest.TestCase):
             "tackles": 0,
         }
         a = dict(empty)
-        a.update(pass_attempts=30, passing_yards=250, interceptions=1)
+        a.update(pass_attempts=30, passing_yards=250, interceptions=1, targets=7)
         b = dict(empty)
         b.update(position="RB", rushing_attempts=20, rushing_yards=100)
         bench = dict(empty)
@@ -48,6 +48,9 @@ class StatbookTests(unittest.TestCase):
         self.assertIn("bench-a", book["teams"]["A"]["players"])
         self.assertIn("bench-a", book["players"])
         self.assertEqual(book["players"]["bench-a"]["receiving_yards"], 0)
+        self.assertIn("targets", book["player_stat_fields"])
+        self.assertEqual(book["players"]["qb-a"]["targets"], 14)
+        self.assertEqual(leaders(book, "targets")[0]["value"], 14)
         self.assertEqual(leaders(book, "passing_yards")[0]["value"], 500)
         self.assertTrue(book["coverage_complete"])
 
