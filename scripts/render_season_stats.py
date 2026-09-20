@@ -132,6 +132,35 @@ def league_markdown(year, book):
 
 
 def all_players_markdown(year, book):
+    fields = list(book.get("player_stat_fields", ()))
+    preferred_order = [
+        "pass_attempts", "passing_yards", "interceptions",
+        "rushing_attempts", "rushing_yards",
+        "receptions", "receiving_yards",
+        "sacks_allowed", "sacks", "pressures", "fumbles",
+        "field_goals_made", "punts", "return_yards", "tackles",
+    ]
+    ordered = [field for field in preferred_order if field in fields]
+    ordered += sorted(field for field in fields if field not in ordered)
+
+    labels = {
+        "pass_attempts": "Pass Att",
+        "passing_yards": "Pass Yds",
+        "interceptions": "INT thrown",
+        "rushing_attempts": "Rush Att",
+        "rushing_yards": "Rush Yds",
+        "receptions": "Rec",
+        "receiving_yards": "Rec Yds",
+        "sacks_allowed": "Sacks allowed",
+        "sacks": "Sacks",
+        "pressures": "Pressures",
+        "fumbles": "Fumbles",
+        "field_goals_made": "FGM",
+        "punts": "Punts",
+        "return_yards": "Return Yds",
+        "tackles": "Tackles",
+    }
+
     lines = [
         "# %s NFL all-player stat ledger" % year,
         "",
@@ -141,38 +170,25 @@ def all_players_markdown(year, book):
         "",
         "This is the comprehensive supported-field ledger. It retains every non-pseudo player record present in the closed-game receipts, including players whose supported counters are all zero. A zero here means the stored stat counter is zero; it does not by itself prove snap participation.",
         "",
-        "| Player | Team(s) | Pos | Pass Att | Pass Yds | INT thrown | Rush Att | Rush Yds | Rec | Rec Yds | Sacks allowed | Sacks | Pressures | Fumbles | FGM | Punts | Return Yds | Tackles |",
-        "|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|",
     ]
+    header = ["Player", "Team(s)", "Pos"] + [labels.get(field, field.replace("_", " ").title()) for field in ordered]
+    lines.append("| " + " | ".join(header) + " |")
+    lines.append("|" + "|".join(["---", "---", "---"] + ["---:"] * len(ordered)) + "|")
+
     rows = []
     for player_id, line in book.get("players", {}).items():
         if str(player_id).startswith("__"):
             continue
         rows.append((player_id, line))
     rows.sort(key=lambda item: (", ".join(item[1].get("teams", ())), item[1].get("position", ""), item[0]))
+
     for player, line in rows:
-        lines.append(
-            "| %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s |" % (
-                player,
-                ", ".join(line.get("teams", ())),
-                line.get("position", ""),
-                line["pass_attempts"],
-                line["passing_yards"],
-                line["interceptions"],
-                line["rushing_attempts"],
-                line["rushing_yards"],
-                line["receptions"],
-                line["receiving_yards"],
-                line["sacks_allowed"],
-                line["sacks"],
-                line["pressures"],
-                line["fumbles"],
-                line["field_goals_made"],
-                line["punts"],
-                line["return_yards"],
-                line["tackles"],
-            )
-        )
+        values = [
+            player,
+            ", ".join(line.get("teams", ())),
+            line.get("position", ""),
+        ] + [str(line.get(field, 0)) for field in ordered]
+        lines.append("| " + " | ".join(values) + " |")
     lines.append("")
     return "\n".join(lines)
 
