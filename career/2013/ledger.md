@@ -636,3 +636,19 @@ All fifteen non-Jacksonville games were closed once through the same production 
 **Next competitive event:** September 15 Week 2 at Oakland, 4:25 p.m. ET. **Week 2 has not been simulated.**
 
 **Commit closed — Canonical update - September 9, 2013 - Week 1 closed — canonical through the full Week 1 slate and Jacksonville postgame work**
+
+## Entry 31 — Regular Season Week 1 full-fidelity reset closed
+
+**Effective date:** September 9, 2013, after the full generation-2 Week 1 slate and Jacksonville postgame work.
+**Checkpoint:** `Canonical update - September 9, 2013 - Week 1 full-fidelity reset closed`
+
+The generation-2 replacement supersedes Entry 30's legacy Week 1 results and all 16 associated scores, statistics, injuries and standings. All 32 TeamInputs were frozen before any replacement draw. Jacksonville defeated Kansas City 34-13, produced 431 yards and five defensive interceptions, and is 1-0. Cousins remains QB1; isolated Henne and Wilson series do not establish a continuing rotation.
+
+Montell Owens sustained a generated minor trunk injury and is out pending reassessment. Bacarri Rambo sustained a generated short-term trunk injury and is medically unavailable. Pasztor remains on medical hold and Mosley remains medically unavailable. No transaction, contract, cap, controlled-player or practice-squad change occurred.
+
+All 16 games were closed through the shared production runner. The Jacksonville receipt is full detail; the other 15 receipts use `compact_stats`. Standings and every season-stat view were rebuilt from those receipts. Entry 30 remains an audit record only and is not active Week 1 canon.
+
+**Primary records:** `regular_season/week_01_kansas_city_at_jacksonville/output.md`; `league_results/week_01.md`; `stats/game_receipts/`.
+**Next competitive event:** September 15 Week 2 at Oakland, 4:25 p.m. ET. **Week 2 has not been simulated.**
+
+**Commit closed — Canonical update - September 9, 2013 - Week 1 full-fidelity reset closed — canonical through the full Week 1 slate and Jacksonville postgame work**

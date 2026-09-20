@@ -5,7 +5,7 @@
 - Function: Canonical register for current Jacksonville player control, staff operating authority, roster legality, contract/cap reconciliation, availability boundaries and football-role state.
 - Current status: **RECONCILED THROUGH REGULAR SEASON WEEK 1**.
 - Effective through: **September 9, 2013, after Week 1 and postgame closure**.
-- Progression authority: `career/2013/ledger.md`, Entry 30.
+- Progression authority: `career/2013/ledger.md`, Entry 31.
 - Detailed readable roster: `career/2013/roster.md`.
 - Current cap worksheet: `career/2013/offseason/current_cap_worksheet.md`.
 - Current calendar: `career/2013/calendar.md`.
@@ -23,15 +23,15 @@
 | Divergence point | January 15, 2013 — Alex Stone accepts Jacksonville head-coach offer |
 | Season phase | Regular season; Week 1 complete |
 | Owned content effective | September 9, 2013 |
-| Document 4 register version | `JAX-2013-SEP09-WEEK1-STATE-9` |
+| Document 4 register version | `JAX-2013-SEP09-WEEK1-RESET-STATE-10` |
 | Supersedes | `JAX-2013-SEP04-REGULAR-STATE-8` |
-| Last content-changing checkpoint | `Canonical update - September 9, 2013 - Week 1 closed` |
-| Latest Document 6 event | Entry 30 — Regular Season Week 1 closed |
+| Last content-changing checkpoint | `Canonical update - September 9, 2013 - Week 1 full-fidelity reset closed` |
+| Latest Document 6 event | Entry 31 — Regular Season Week 1 closed |
 | Current controlled players | **53** |
 | Current practice squad | **8; separate from active 53** |
 | Current regular-season planning room | **~$6.2M-$6.6M before weekly practice-squad charges** |
 | Next scheduled football event | September 15 Week 2 at Oakland — NOT SIMULATED |
-| Unresolved matter before participation | Fresh Week 2 medical communication; Pasztor on medical hold and Mosley medically unavailable |
+| Unresolved matter before participation | Fresh Week 2 medical communication; Pasztor on medical hold; Mosley and Rambo medically unavailable; Owens out pending reassessment |
 
 ## Canon and evidence conventions
 
@@ -145,13 +145,13 @@ Staff remains unchanged from the closed late-January hiring phase. `career/2013/
 - Register status: **RECONCILED THROUGH REGULAR SEASON WEEK 1**.
 - Roster/control: **53 active players; eight-player practice squad separate**.
 - Cap: regular-season accounting; approximately **$6.2M-$6.6M** before weekly practice-squad charges.
-- Medical: no new Jacksonville Week 1 injury; Pasztor remains on medical hold and Mosley remains medically unavailable.
+- Medical: Owens is out pending reassessment after a minor trunk injury; Rambo is medically unavailable after a short-term trunk injury; Pasztor remains on medical hold and Mosley remains medically unavailable.
 - Football: Cousins remains QB1; isolated backup series in Week 1 do not create a continuing rotation. Week 1 evidence is synchronized to the game output.
 - Next event: September 15 Week 2 at Oakland; **NOT SIMULATED**.
 
 ## Jacksonville current transaction reconciliation
 
-**Current progression source:** [Season ledger, Entry 30](../career/2013/ledger.md#entry-30--regular-season-week-1-closed), checkpoint `Canonical update - September 9, 2013 - Week 1 closed`.
+**Current progression source:** [Season ledger, Entry 31](../career/2013/ledger.md#entry-30--regular-season-week-1-closed), checkpoint `Canonical update - September 9, 2013 - Week 1 full-fidelity reset closed`.
 **Readable roster:** [career/2013/roster.md](../career/2013/roster.md).
 **Current cap worksheet:** [career/2013/offseason/current_cap_worksheet.md](../career/2013/offseason/current_cap_worksheet.md).
 **Current calendar:** [career/2013/calendar.md](../career/2013/calendar.md).
@@ -178,59 +178,59 @@ The old 75-person working count and the old unresolved inherited-control bucket 
 
 | Player | Stable ID | Pos. | Primary status | Current control basis | Current availability boundary | Current source |
 |---|---|---|---|---|---|---|
-| Kirk Cousins | JAX-KIRKCOUSINS | QB | Offseason roster under contract/control | Acquired from Washington; 2014 second transferred | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Chad Henne | JAX-CHADHENNE | QB | Offseason roster under contract/control | Existing 2013 contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| John Parker Wilson | JAX-JOHNPARKERWILSON | QB | Offseason roster under contract/control | Dec. 30, 2012 reserve/future contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| C.J. Anderson | JAX-CJANDERSON | RB | Offseason roster under contract/control | Three-year UDFA minimum contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Jonathan Grimes | JAX-JONATHANGRIMES | RB | Offseason roster under contract/control | Existing contract/control; not a March 12 free agent | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Maurice Jones-Drew | JAX-MAURICEJONESDREW | RB | Offseason roster under contract/control | Existing 2013 contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Montell Owens | JAX-MONTELLOWENS | FB | Offseason roster under contract/control | Existing contract/control | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Justin Blackmon | JAX-JUSTINBLACKMON | WR | Offseason roster under contract/control | Existing rookie contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Mike Brown | JAX-MIKEBROWN | WR | Offseason roster under contract/control | Existing contract/control | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Toney Clemons | JAX-TONEYCLEMONS | WR | Offseason roster under contract/control | Existing contract/control | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Cecil Shorts | JAX-CECILSHORTS | WR | Offseason roster under contract/control | Existing rookie contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Adam Thielen | JAX-ADAMTHIELEN | WR | Offseason roster under contract/control | Three-year UDFA minimum contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Allen Reisner | JAX-ALLENREISNER | TE | Offseason roster under contract/control | Existing contract/control | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Marcedes Lewis | JAX-MARCEDESLEWIS | TE | Offseason roster under contract/control | Existing contract/control | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Travis Kelce | JAX-TRAVISKELCE | TE | Offseason roster under contract/control | #33; rookie contract signed May 2 | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Cameron Bradfield | JAX-CAMERONBRADFIELD | OT | Offseason roster under contract/control | Existing contract/control | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Lane Johnson | JAX-LANEJOHNSON | OT | Offseason roster under contract/control | #2; rookie contract signed May 2; first-round option mechanism | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Eugene Monroe | JAX-EUGENEMONROE | OT | Offseason roster under contract/control | Existing 2013 contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Mark Asper | JAX-MARKASPER | G | Offseason roster under contract/control | Existing contract/control | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Uche Nwaneri | JAX-UCHENWANERI | G | Offseason roster under contract/control | Existing 2013 contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Austin Pasztor | JAX-AUSTINPASZTOR | G | Offseason roster under contract/control | Existing contract/control | Independent medical hold; unavailable in Week 1; fresh medical communication required | Entry 30 / Week 1 output |
-| Will Rackley | JAX-WILLRACKLEY | G | Offseason roster under contract/control | Existing rookie contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Mike Brewster | JAX-MIKEBREWSTER | C | Offseason roster under contract/control | Existing contract/control | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Brad Meester | JAX-BRADMEESTER | C | Offseason roster under contract/control | Branch re-signing; one year, $1.50M | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Jason Babin | JAX-JASONBABIN | DE | Offseason roster under contract/control | Existing 2013 contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Andre Branch | JAX-ANDREBRANCH | DE | Offseason roster under contract/control | Existing rookie contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Ryan Davis | JAX-RYANDAVIS | DE | Offseason roster under contract/control | Dec. 30, 2012 reserve/future contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Lavar Edwards | JAX-LAVAREDWARDS | DE | Offseason roster under contract/control | #135; rookie contract signed May 2 | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Jeremy Mincey | JAX-JEREMYMINCEY | DE | Offseason roster under contract/control | Existing 2013 contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| C.J. Wilson | JAX-CJWILSON | DE | Offseason roster under contract/control | Acquired from Green Bay for Blaine Gabbert | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Tyson Alualu | JAX-TYSONALUALU | DT | Offseason roster under contract/control | Existing 2013 contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Sen'Derrick Marks | JAX-SENDERRICKMARKS | DT | Offseason roster under contract/control | Branch signing; one year, $1.50M | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Roy Miller | JAX-ROYMILLER | DT | Offseason roster under contract/control | Branch signing; two years, $5.00M | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| C.J. Mosley | JAX-CJMOSLEY | DT | Offseason roster under contract/control | Existing contract/control | Medically unavailable in Week 1; fresh medical communication required | Entry 30 / Week 1 output |
-| Jeris Pendleton | JAX-JERISPENDLETON | DT | Offseason roster under contract/control | Existing rookie contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Russell Allen | JAX-RUSSELLALLEN | LB | Offseason roster under contract/control | Existing 2013 contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Sio Moore | JAX-SIOMOORE | LB | Offseason roster under contract/control | #98; rookie contract signed May 2 | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Paul Posluszny | JAX-PAULPOSLUSZNY | LB | Offseason roster under contract/control | Existing 2013 contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Daryl Smith | JAX-DARYLSMITH | LB | Offseason roster under contract/control | Branch re-signing; two years, $6.00M | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Julian Stanford | JAX-JULIANSTANFORD | LB | Offseason roster under contract/control | Existing contract/control | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Alan Ball | JAX-ALANBALL | CB | Offseason roster under contract/control | Branch signing; one year, $1.00M | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| A.J. Bouye | JAX-AJBOUYE | CB | Offseason roster under contract/control | Three-year UDFA minimum contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Brent Grimes | JAX-BRENTGRIMES | CB | Offseason roster under contract/control | Branch signing; one year, $5.50M fully guaranteed | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Mike Harris | JAX-MIKEHARRIS | CB | Offseason roster under contract/control | Existing rookie contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Jordan Poyer | JAX-JORDANPOYER | CB | Offseason roster under contract/control | #64; rookie contract signed May 2 | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Kevin Rutland | JAX-KEVINRUTLAND | CB | Offseason roster under contract/control | Existing contract/control | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Dwight Lowery | JAX-DWIGHTLOWERY | S | Offseason roster under contract/control | Existing 2013 contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Chris Prosinski | JAX-CHRISPROSINSKI | S | Offseason roster under contract/control | Existing rookie contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Bacarri Rambo | JAX-BACARRIRAMBO | S | Offseason roster under contract/control | #169; rookie contract signed May 2 | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Brynden Trawick | JAX-BRYNDENTRAWICK | S | Offseason roster under contract/control | Three-year UDFA minimum contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Josh Scobee | JAX-JOSHSCOBEE | K | Offseason roster under contract/control | Existing 2013 contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Bryan Anger | JAX-BRYANANGER | P | Offseason roster under contract/control | Existing rookie contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
-| Jeremy Cain | JAX-JEREMYCAIN | LS | Offseason roster under contract/control | Existing contract/control | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 30 / Week 1 output |
+| Kirk Cousins | JAX-KIRKCOUSINS | QB | Offseason roster under contract/control | Acquired from Washington; 2014 second transferred | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Chad Henne | JAX-CHADHENNE | QB | Offseason roster under contract/control | Existing 2013 contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| John Parker Wilson | JAX-JOHNPARKERWILSON | QB | Offseason roster under contract/control | Dec. 30, 2012 reserve/future contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| C.J. Anderson | JAX-CJANDERSON | RB | Offseason roster under contract/control | Three-year UDFA minimum contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Jonathan Grimes | JAX-JONATHANGRIMES | RB | Offseason roster under contract/control | Existing contract/control; not a March 12 free agent | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Maurice Jones-Drew | JAX-MAURICEJONESDREW | RB | Offseason roster under contract/control | Existing 2013 contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Montell Owens | JAX-MONTELLOWENS | FB | Offseason roster under contract/control | Existing contract/control | Out pending reassessment after a generated minor trunk injury | Entry 31 / Week 1 output |
+| Justin Blackmon | JAX-JUSTINBLACKMON | WR | Offseason roster under contract/control | Existing rookie contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Mike Brown | JAX-MIKEBROWN | WR | Offseason roster under contract/control | Existing contract/control | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Toney Clemons | JAX-TONEYCLEMONS | WR | Offseason roster under contract/control | Existing contract/control | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Cecil Shorts | JAX-CECILSHORTS | WR | Offseason roster under contract/control | Existing rookie contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Adam Thielen | JAX-ADAMTHIELEN | WR | Offseason roster under contract/control | Three-year UDFA minimum contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Allen Reisner | JAX-ALLENREISNER | TE | Offseason roster under contract/control | Existing contract/control | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Marcedes Lewis | JAX-MARCEDESLEWIS | TE | Offseason roster under contract/control | Existing contract/control | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Travis Kelce | JAX-TRAVISKELCE | TE | Offseason roster under contract/control | #33; rookie contract signed May 2 | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Cameron Bradfield | JAX-CAMERONBRADFIELD | OT | Offseason roster under contract/control | Existing contract/control | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Lane Johnson | JAX-LANEJOHNSON | OT | Offseason roster under contract/control | #2; rookie contract signed May 2; first-round option mechanism | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Eugene Monroe | JAX-EUGENEMONROE | OT | Offseason roster under contract/control | Existing 2013 contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Mark Asper | JAX-MARKASPER | G | Offseason roster under contract/control | Existing contract/control | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Uche Nwaneri | JAX-UCHENWANERI | G | Offseason roster under contract/control | Existing 2013 contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Austin Pasztor | JAX-AUSTINPASZTOR | G | Offseason roster under contract/control | Existing contract/control | Independent medical hold; unavailable in Week 1; fresh medical communication required | Entry 31 / Week 1 output |
+| Will Rackley | JAX-WILLRACKLEY | G | Offseason roster under contract/control | Existing rookie contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Mike Brewster | JAX-MIKEBREWSTER | C | Offseason roster under contract/control | Existing contract/control | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Brad Meester | JAX-BRADMEESTER | C | Offseason roster under contract/control | Branch re-signing; one year, $1.50M | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Jason Babin | JAX-JASONBABIN | DE | Offseason roster under contract/control | Existing 2013 contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Andre Branch | JAX-ANDREBRANCH | DE | Offseason roster under contract/control | Existing rookie contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Ryan Davis | JAX-RYANDAVIS | DE | Offseason roster under contract/control | Dec. 30, 2012 reserve/future contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Lavar Edwards | JAX-LAVAREDWARDS | DE | Offseason roster under contract/control | #135; rookie contract signed May 2 | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Jeremy Mincey | JAX-JEREMYMINCEY | DE | Offseason roster under contract/control | Existing 2013 contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| C.J. Wilson | JAX-CJWILSON | DE | Offseason roster under contract/control | Acquired from Green Bay for Blaine Gabbert | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Tyson Alualu | JAX-TYSONALUALU | DT | Offseason roster under contract/control | Existing 2013 contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Sen'Derrick Marks | JAX-SENDERRICKMARKS | DT | Offseason roster under contract/control | Branch signing; one year, $1.50M | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Roy Miller | JAX-ROYMILLER | DT | Offseason roster under contract/control | Branch signing; two years, $5.00M | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| C.J. Mosley | JAX-CJMOSLEY | DT | Offseason roster under contract/control | Existing contract/control | Medically unavailable in Week 1; fresh medical communication required | Entry 31 / Week 1 output |
+| Jeris Pendleton | JAX-JERISPENDLETON | DT | Offseason roster under contract/control | Existing rookie contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Russell Allen | JAX-RUSSELLALLEN | LB | Offseason roster under contract/control | Existing 2013 contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Sio Moore | JAX-SIOMOORE | LB | Offseason roster under contract/control | #98; rookie contract signed May 2 | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Paul Posluszny | JAX-PAULPOSLUSZNY | LB | Offseason roster under contract/control | Existing 2013 contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Daryl Smith | JAX-DARYLSMITH | LB | Offseason roster under contract/control | Branch re-signing; two years, $6.00M | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Julian Stanford | JAX-JULIANSTANFORD | LB | Offseason roster under contract/control | Existing contract/control | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Alan Ball | JAX-ALANBALL | CB | Offseason roster under contract/control | Branch signing; one year, $1.00M | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| A.J. Bouye | JAX-AJBOUYE | CB | Offseason roster under contract/control | Three-year UDFA minimum contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Brent Grimes | JAX-BRENTGRIMES | CB | Offseason roster under contract/control | Branch signing; one year, $5.50M fully guaranteed | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Mike Harris | JAX-MIKEHARRIS | CB | Offseason roster under contract/control | Existing rookie contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Jordan Poyer | JAX-JORDANPOYER | CB | Offseason roster under contract/control | #64; rookie contract signed May 2 | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Kevin Rutland | JAX-KEVINRUTLAND | CB | Offseason roster under contract/control | Existing contract/control | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Dwight Lowery | JAX-DWIGHTLOWERY | S | Offseason roster under contract/control | Existing 2013 contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Chris Prosinski | JAX-CHRISPROSINSKI | S | Offseason roster under contract/control | Existing rookie contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Bacarri Rambo | JAX-BACARRIRAMBO | S | Offseason roster under contract/control | #169; rookie contract signed May 2 | Medically unavailable after a generated short-term trunk injury; reassessment due | Entry 31 / Week 1 output |
+| Brynden Trawick | JAX-BRYNDENTRAWICK | S | Offseason roster under contract/control | Three-year UDFA minimum contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Josh Scobee | JAX-JOSHSCOBEE | K | Offseason roster under contract/control | Existing 2013 contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Bryan Anger | JAX-BRYANANGER | P | Offseason roster under contract/control | Existing rookie contract | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
+| Jeremy Cain | JAX-JEREMYCAIN | LS | Offseason roster under contract/control | Existing contract/control | Available after Week 1 with no new communicated restriction; fresh Week 2 communication required | Entry 31 / Week 1 output |
 
 
 ### Players no longer under Jacksonville control
@@ -293,7 +293,7 @@ All 64 controlled players were available for assigned walkthrough work. Qualifie
 
 ## September 9 availability and role reconciliation
 
-The Week 1 runtime generated no new Jacksonville injury. Pasztor remains on an independent medical hold and Mosley is medically unavailable. Cousins remains QB1, Henne QB2 and Wilson QB3; isolated backup series did not create a continuing rotation. Johnson/Rackley start on the right side; Thielen is WR3 and Kelce TE2. The detailed roster owns the complete active 53 and separate practice squad.
+The replacement Week 1 runtime generated trunk injuries to Montell Owens and Bacarri Rambo. Owens is out pending reassessment; Rambo is medically unavailable. Pasztor remains on an independent medical hold and Mosley is medically unavailable. Cousins remains QB1, Henne QB2 and Wilson QB3; isolated backup series did not create a continuing rotation. Johnson/Rackley start on the right side; Thielen is WR3 and Kelce TE2. The detailed roster owns the complete active 53 and separate practice squad.
 
 ## Player index (template retained for closed reconciliation)
 
@@ -663,18 +663,18 @@ Use the project's canon authority order. Document 6 is the sole authoritative co
 | OTA block 2 participation, availability, football evidence and calendar checkpoint | 2013 season ledger, Entry 11 | May 21, 2013 | Grimes advanced to limited team work; provisional practice sequence and install changes recorded; no transaction or permanent depth decision; next event May 23 | September 19, 2026; Canonical update - May 21, 2013 - OTA block 2 closed |
 | May 23 OTA participation, availability, football evidence and calendar checkpoint | 2013 season ledger, Entry 12 | May 23, 2013 | Grimes remained medically limited; retained core and narrow Mesh survived correction; single defensive pressure retained; provisional practice responsibilities updated; no transaction or permanent depth decision; next event June 4-7 | September 19, 2026; Canonical update - May 23, 2013 - OTA Day 6 closed |
 | August 8 current role, availability and walkthrough checkpoint | 2013 season ledger, Entry 29 | September 4, 2013 | 64 controlled; all available for assigned work; provisional Miami roles; no transaction/cap change; game not started | September 19, 2026; Canonical update - September 4, 2013 - preseason, roster and cap block closed |
-| Week 1 game, availability, roles and next checkpoint | 2013 season ledger, Entry 30 | September 9, 2013 | Kansas City won 30-27; Jacksonville 0-1; no new injury or transaction; Cousins remains QB1; Oakland next | September 20, 2026; Canonical update - September 9, 2013 - Week 1 closed |
+| Week 1 game, availability, roles and next checkpoint | 2013 season ledger, Entry 31 | September 9, 2013 | Jacksonville won 34-13 and is 1-0; Owens and Rambo sustained generated trunk injuries; no transaction; Cousins remains QB1; Oakland next | September 20, 2026; Canonical update - September 9, 2013 - Week 1 full-fidelity reset closed |
 
 This table is generated from Document 6 and is only a navigation aid. Active unresolved conflicts remain in the reconciliation block and Document 5; resolved history, controlling authority, notification, and superseded values remain only in Document 6.
 
 ## End-of-update control block
 
 - Effective through: September 9, 2013, Week 1 and postgame work closed.
-- Document 4 register version: `JAX-2013-SEP09-WEEK1-STATE-9`.
-- Last content-changing checkpoint: `Canonical update - September 9, 2013 - Week 1 closed`.
-- Latest source event: season-ledger Entry 30.
+- Document 4 register version: `JAX-2013-SEP09-WEEK1-RESET-STATE-10`.
+- Last content-changing checkpoint: `Canonical update - September 9, 2013 - Week 1 full-fidelity reset closed`.
+- Latest source event: season-ledger Entry 31.
 - Current active-player count: **53**; practice squad **8**, separate from the active roster.
 - Cap: regular-season accounting, **~$6.2M-$6.6M before weekly practice-squad charges**.
 - Depth/packages: Cousins remains QB1; Henne QB2; Wilson QB3. Week 1 backup series do not continue as a rotation.
-- Medical: no new Week 1 injury; Pasztor remains on medical hold and Mosley medically unavailable.
+- Medical: Owens is out pending reassessment; Rambo, Pasztor and Mosley remain medically unavailable.
 - Next event: September 15 Week 2 at Oakland; **NOT SIMULATED**.
