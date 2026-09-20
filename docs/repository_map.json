@@ -68,7 +68,9 @@
     "career/2013/stats/game_receipts/README.md",
     "runtime/statbook.py",
     "scripts/render_season_stats.py",
-    "tests/test_statbook.py"
+    "tests/test_statbook.py",
+    "career/2013/statbook.md",
+    "career/2013/stats/all_player_stats.md"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",
