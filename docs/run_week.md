@@ -15,7 +15,7 @@ Plan:
 Run Week [N] only and stop before Week [N+1].
 ```
 
-For the currently authorized 2013 Week 1 full-fidelity reset, `Run Week 1` means: autonomously prepare the missing 32 pre-Week-1 TeamInputs, pass the internal reset gate, replace all 16 Week 1 games under the active kernel, rebuild receipts/stats/standings/state, validate, advance the private snapshot and close the normal PR flow. The user does not perform a separate reset-prep step.
+For the currently authorized 2013 Week 1 full-fidelity reset, `Run Week 1` means: autonomously prepare the missing 32 pre-Week-1 TeamInputs, pass the internal reset gate, mark the technically aborted v1 events, replace all 16 Week 1 games under the active generation, rebuild receipts/stats/standings/state, validate, and close the normal PR flow. The private snapshot must remain on the last merged canonical state until the public PR is actually merged; only a merged `main` checkout may advance it. The user does not perform a separate reset-prep step.
 
 ## Generated-data rule
 

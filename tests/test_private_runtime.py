@@ -34,8 +34,11 @@ class PrivateRuntimeTests(unittest.TestCase):
         self.store.initialize('snapshot')
         with self.store.connect() as c: after=c.execute("select value from meta where key='seed'").fetchone()[0]
         self.assertEqual(before,after)
-        self.store.close('event-2',b'x'); self.store.correct('event-2','source correction')
-        with self.store.connect() as c: self.assertEqual(c.execute('select count(*) from corrections').fetchone()[0],1)
+        self.store.close('event-2',b'x')
+        self.store.correct('event-2','source correction')
+        self.store.correct('event-2','source correction')
+        with self.store.connect() as c:
+            self.assertEqual(c.execute('select count(*) from corrections').fetchone()[0],1)
     def test_missing_credentials_fails_closed(self):
         with self.assertRaises(PrivateRuntimeUnavailable): Client(self.url,token_file=Path(self.tmp.name)/'missing',snapshot='snapshot').readiness()
 
@@ -144,6 +147,29 @@ class PrivateRuntimeTests(unittest.TestCase):
             return real(path,body,method)
         client._request=request
         with self.assertRaises(PrivateRuntimeUnavailable): client.readiness()
+
+    def test_audited_snapshot_recovery_restores_checked_in_binding(self):
+        client=Client(self.url,token=self.token,snapshot='next')
+        self.assertEqual(client.advance_snapshot('snapshot','next','uncommitted-branch'),'next')
+        self.assertEqual(self.store.current_snapshot(),'next')
+        self.assertEqual(
+            self.store.recover_snapshot('snapshot','uncommitted public transaction failed'),
+            'snapshot')
+        self.store.initialize('snapshot')
+        with self.store.connect() as connection:
+            rows=connection.execute(
+                'select from_snapshot,to_snapshot,reason from snapshot_recoveries'
+            ).fetchall()
+        self.assertEqual(
+            rows,
+            [('next','snapshot','uncommitted public transaction failed')])
+        restarted=Store(Path(self.tmp.name)/'state.sqlite3')
+        restarted.initialize('snapshot')
+        self.assertEqual(restarted.current_snapshot(),'snapshot')
+
+    def test_snapshot_recovery_requires_explicit_reason(self):
+        with self.assertRaises(ValueError):
+            self.store.recover_snapshot('other','')
 
     def test_snapshot_advance_cas_idempotence_conflict_and_restart(self):
         client=Client(self.url,token=self.token,snapshot='next')

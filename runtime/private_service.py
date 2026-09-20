@@ -31,7 +31,13 @@ class Store:
                 checkpoint TEXT NOT NULL,
                 created INTEGER NOT NULL,
                 UNIQUE(previous_snapshot),
-                UNIQUE(next_snapshot));""")
+                UNIQUE(next_snapshot));
+            CREATE TABLE IF NOT EXISTS snapshot_recoveries(
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                from_snapshot TEXT NOT NULL,
+                to_snapshot TEXT NOT NULL,
+                reason TEXT NOT NULL,
+                created INTEGER NOT NULL);""")
     def initialize(self,snapshot):
         with self.lock, closing(self.connect()) as c, c:
             c.execute("BEGIN IMMEDIATE")
@@ -83,6 +89,33 @@ class Store:
                       (previous_snapshot,next_snapshot,checkpoint,int(time.time())))
             c.execute("UPDATE meta SET value=? WHERE key='snapshot'",(next_snapshot.encode(),))
             return next_snapshot
+    def recover_snapshot(self,target_snapshot,reason):
+        """Auditably restore the binding after an uncommitted public transaction.
+
+        This is not a normal progression path. The caller supplies the checked-in
+        deployment snapshot; the previous private binding is retained in the
+        append-only recovery ledger.
+        """
+        if not isinstance(target_snapshot,str) or not target_snapshot.strip():
+            raise ValueError("recovery target must be a nonempty string")
+        if not isinstance(reason,str) or not reason.strip():
+            raise ValueError("recovery reason must be a nonempty string")
+        with self.lock, closing(self.connect()) as c, c:
+            c.execute("BEGIN IMMEDIATE")
+            row=c.execute("SELECT value FROM meta WHERE key='snapshot'").fetchone()
+            if not row:
+                raise ValueError("snapshot is not initialized")
+            current=row[0].decode()
+            if current==target_snapshot:
+                return current
+            c.execute(
+                "INSERT INTO snapshot_recoveries(from_snapshot,to_snapshot,reason,created) "
+                "VALUES(?,?,?,?)",
+                (current,target_snapshot,reason.strip(),int(time.time())))
+            c.execute("UPDATE meta SET value=? WHERE key='snapshot'",
+                      (target_snapshot.encode(),))
+            return target_snapshot
+
     def probe(self):
         """Persist an opaque canary once and return only a stability fingerprint."""
         with self.lock, closing(self.connect()) as c, c:
@@ -123,10 +156,18 @@ class Store:
         """Compatibility wrapper for local tests and legacy body callers."""
         return self.close_digest(event_id,hashlib.sha256(packet).hexdigest())
     def correct(self,event_id,reason):
-        if not reason.strip(): raise ValueError("correction reason required")
+        if not isinstance(reason,str) or not reason.strip():
+            raise ValueError("correction reason required")
+        reason=reason.strip()
         with closing(self.connect()) as c, c:
-            if not c.execute("SELECT 1 FROM events WHERE event_id=?",(event_id,)).fetchone(): raise ValueError("unknown event")
-            c.execute("INSERT INTO corrections(event_id,reason,created) VALUES(?,?,?)",(event_id,reason,int(time.time())))
+            if not c.execute("SELECT 1 FROM events WHERE event_id=?",(event_id,)).fetchone():
+                raise ValueError("unknown event")
+            if not c.execute(
+                    "SELECT 1 FROM corrections WHERE event_id=? AND reason=?",
+                    (event_id,reason)).fetchone():
+                c.execute(
+                    "INSERT INTO corrections(event_id,reason,created) VALUES(?,?,?)",
+                    (event_id,reason,int(time.time())))
 
 def handler(store,token,snapshot=None):
     class Handler(BaseHTTPRequestHandler):
