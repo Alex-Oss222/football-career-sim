@@ -249,70 +249,101 @@ def all_players_markdown(year, book):
         "passing_touchdowns", "interceptions_thrown", "sacks_taken", "sack_yards",
         "rushing_attempts", "rushing_yards", "rushing_touchdowns", "long_rush",
         "targets", "receptions", "receiving_yards", "receiving_touchdowns", "long_reception",
-        "fumbles", "fumbles_lost",
-        "sacks_allowed", "sacks", "pressures", "solo_tackles", "assisted_tackles",
-        "tackles", "tackles_for_loss", "passes_defended", "defensive_interceptions",
-        "interception_return_yards", "forced_fumbles", "fumble_recoveries",
-        "field_goals_attempted", "field_goals_made", "extra_points_attempted",
-        "extra_points_made", "punts", "punt_yards", "long_punt", "punts_inside_20",
+        "fumbles", "fumbles_lost", "sacks_allowed", "sacks", "pressures",
+        "solo_tackles", "assisted_tackles", "tackles", "tackles_for_loss",
+        "passes_defended", "defensive_interceptions", "interception_return_yards",
+        "forced_fumbles", "fumble_recoveries", "field_goals_attempted",
+        "field_goals_made", "extra_points_attempted", "extra_points_made",
+        "punts", "punt_yards", "long_punt", "punts_inside_20",
         "kick_returns", "kick_return_yards", "punt_returns", "punt_return_yards",
         "return_yards",
     ]
     ordered = [field for field in preferred_order if field in fields]
     ordered += sorted(field for field in fields if field not in ordered)
-
     labels = {
-        "dropbacks": "DB",
-        "pass_attempts": "Pass Att",
-        "completions": "Cmp",
-        "passing_yards": "Pass Yds",
-        "passing_touchdowns": "Pass TD",
-        "interceptions_thrown": "INT thrown",
-        "sacks_taken": "Sacks taken",
-        "rushing_attempts": "Rush Att",
-        "rushing_yards": "Rush Yds",
-        "receptions": "Rec",
-        "receiving_yards": "Rec Yds",
-        "sacks_allowed": "Sacks allowed",
-        "sacks": "Sacks",
-        "pressures": "Pressures",
-        "fumbles": "Fumbles",
-        "field_goals_made": "FGM",
-        "punts": "Punts",
-        "return_yards": "Return Yds",
-        "tackles": "Tackles",
+        "dropbacks":"DB", "pass_attempts":"PassAtt", "completions":"Cmp",
+        "passing_yards":"PassYds", "passing_touchdowns":"PassTD",
+        "interceptions_thrown":"INT", "sacks_taken":"SackTaken",
+        "rushing_attempts":"RushAtt", "rushing_yards":"RushYds",
+        "rushing_touchdowns":"RushTD", "targets":"Tgt", "receptions":"Rec",
+        "receiving_yards":"RecYds", "receiving_touchdowns":"RecTD",
+        "sacks_allowed":"SackAllowed", "sacks":"Sack", "pressures":"Press",
+        "tackles":"Tkl", "tackles_for_loss":"TFL", "passes_defended":"PD",
+        "defensive_interceptions":"DefINT", "forced_fumbles":"FF",
+        "fumble_recoveries":"FR", "field_goals_made":"FGM",
+        "field_goals_attempted":"FGA", "extra_points_made":"XPM",
+        "extra_points_attempted":"XPA", "punts":"Punt", "punt_yards":"PuntYds",
+        "kick_returns":"KR", "kick_return_yards":"KRYds", "punt_returns":"PR",
+        "punt_return_yards":"PRYds", "return_yards":"RetYds",
     }
-
     lines = [
-        "# %s NFL all-player stat ledger" % year,
-        "",
-        "**Version:** `%s-W%02d-ALL-PLAYER-STATS-1`" % (year, book["through_week"]),
+        "# %s NFL all-player stat ledger" % year, "",
+        "**Version:** `%s-W%02d-ALL-PLAYER-STATS-2`" % (year, book["through_week"]),
         "**Through:** Week %d." % book["through_week"],
-        coverage_line(book),
-        "",
-        "This is the comprehensive supported-field ledger. It retains every non-pseudo player record present in the closed-game receipts, including players whose supported counters are all zero. A zero here means the stored stat counter is zero; it does not by itself prove snap participation.",
-        "",
+        coverage_line(book), "",
+        "Compact comprehensive ledger of every nonzero supported player counter "
+        "preserved by the closed-game receipts. Zero-only rows are omitted from "
+        "this readable view; absence does not prove non-participation.", "",
+        "| Player | Team(s) | Pos | Nonzero stored statistics |",
+        "|---|---|---|---|",
     ]
-    header = ["Player", "Team(s)", "Pos"] + [labels.get(field, field.replace("_", " ").title()) for field in ordered]
-    lines.append("| " + " | ".join(header) + " |")
-    lines.append("|" + "|".join(["---", "---", "---"] + ["---:"] * len(ordered)) + "|")
-
-    rows = []
-    for player_id, line in book.get("players", {}).items():
+    rows=[]
+    for player_id,line in book.get("players",{}).items():
         if str(player_id).startswith("__"):
             continue
-        rows.append((player_id, line))
-    rows.sort(key=lambda item: (", ".join(item[1].get("teams", ())), item[1].get("position", ""), item[0]))
-
-    for player, line in rows:
-        values = [
-            player,
-            ", ".join(line.get("teams", ())),
-            line.get("position", ""),
-        ] + [str(line.get(field, 0)) for field in ordered]
-        lines.append("| " + " | ".join(values) + " |")
+        nonzero=[
+            (field,line.get(field,0)) for field in ordered
+            if isinstance(line.get(field,0),(int,float))
+            and not isinstance(line.get(field,0),bool)
+            and line.get(field,0)!=0
+        ]
+        if nonzero:
+            rows.append((player_id,line,nonzero))
+    rows.sort(key=lambda item:(
+        ", ".join(item[1].get("teams",())),
+        item[1].get("position",""), item[0]))
+    for player,line,nonzero in rows:
+        stats="; ".join(
+            "%s=%s" % (labels.get(field,field),value)
+            for field,value in nonzero)
+        lines.append("| %s | %s | %s | %s |" % (
+            player, ", ".join(line.get("teams",())),
+            line.get("position",""), stats))
     lines.append("")
     return "\n".join(lines)
+
+
+def compact_book_for_storage(book):
+    """Remove mechanically implied zero fields from the generated JSON cache."""
+    compact = {
+        key: value for key,value in book.items()
+        if key not in {"teams","players"}
+    }
+    compact["teams"]={}
+    for team_id,team in book.get("teams",{}).items():
+        row={"games":team.get("games",0),"team_stats":dict(team.get("team_stats",{})),"players":{}}
+        for player_id,line in team.get("players",{}).items():
+            kept={"position":line.get("position","")}
+            kept.update({
+                key:value for key,value in line.items()
+                if key!="position" and isinstance(value,(int,float))
+                and not isinstance(value,bool) and value!=0
+            })
+            if len(kept)>1 or str(player_id).startswith("__"):
+                row["players"][player_id]=kept
+        compact["teams"][team_id]=row
+    compact["players"]={}
+    for player_id,line in book.get("players",{}).items():
+        kept={"position":line.get("position",""),"teams":list(line.get("teams",()))}
+        kept.update({
+            key:value for key,value in line.items()
+            if key not in {"position","teams"} and isinstance(value,(int,float))
+            and not isinstance(value,bool) and value!=0
+        })
+        if len(kept)>2:
+            compact["players"][player_id]=kept
+    return compact
+
 
 def leaders_markdown(year, book):
     lines = [
@@ -390,7 +421,7 @@ def main():
     book = aggregate_receipts(receipts)
     stats_dir.mkdir(parents=True, exist_ok=True)
     (stats_dir / "season_totals.json").write_text(
-        json.dumps(book, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+        json.dumps(compact_book_for_storage(book), indent=2, sort_keys=True) + "\n", encoding="utf-8"
     )
     (stats_dir / "team_player_stats.md").write_text(
         team_markdown(args.year, args.team, book), encoding="utf-8"
