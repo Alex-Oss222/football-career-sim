@@ -34,8 +34,11 @@ class PrivateRuntimeTests(unittest.TestCase):
         self.store.initialize('snapshot')
         with self.store.connect() as c: after=c.execute("select value from meta where key='seed'").fetchone()[0]
         self.assertEqual(before,after)
-        self.store.close('event-2',b'x'); self.store.correct('event-2','source correction')
-        with self.store.connect() as c: self.assertEqual(c.execute('select count(*) from corrections').fetchone()[0],1)
+        self.store.close('event-2',b'x')
+        self.store.correct('event-2','source correction')
+        self.store.correct('event-2','source correction')
+        with self.store.connect() as c:
+            self.assertEqual(c.execute('select count(*) from corrections').fetchone()[0],1)
     def test_missing_credentials_fails_closed(self):
         with self.assertRaises(PrivateRuntimeUnavailable): Client(self.url,token_file=Path(self.tmp.name)/'missing',snapshot='snapshot').readiness()
 
