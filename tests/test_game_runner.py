@@ -48,6 +48,18 @@ class ProductionGameRunnerTests(unittest.TestCase):
             self.assertIs(run_game(self.home,self.away,event_id="order",snapshot="snapshot",client=JournalClient()),fake)
         self.assertEqual(order,["closed","kernel"])
 
+
+    def test_call_sheet_packet_uses_football_substance_not_display_alias(self):
+        calls=({'name':'Mesh Base','family':'Mesh','type':'pass','personnel':'11','formation':'Bunch'},)
+        renamed=({'name':'MESH!!!','family':'Mesh','type':'pass','personnel':'11','formation':'Bunch'},)
+        one=TeamInput("C",self.home.active_players,roster=self.home.roster,offensive_call_sheet=calls)
+        two=TeamInput("C",self.home.active_players,roster=self.home.roster,offensive_call_sheet=renamed)
+        p1=build_game_packet("calls","snapshot",one,self.away)
+        p2=build_game_packet("calls","snapshot",two,self.away)
+        self.assertEqual(p1,p2)
+        self.assertNotIn("Mesh Base",str(p1))
+        self.assertIn("Mesh",str(p1))
+
     def test_private_replay_restart_conflict_and_no_seed_exposure(self):
         first=run_game(self.home,self.away,event_id="game-1",snapshot="snapshot",client=self.client)
         self.assertEqual(first,run_game(self.home,self.away,event_id="game-1",snapshot="snapshot",client=self.client))
