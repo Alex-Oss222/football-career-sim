@@ -6,3 +6,6 @@ __pycache__/
 # Defense in depth only. Ignoring a file does not make it private.
 engine_state/
 *.secret
+
+# Large transient simulation inputs/results used only during a run.
+.sim_cache/
