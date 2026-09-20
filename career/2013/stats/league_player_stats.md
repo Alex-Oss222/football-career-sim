@@ -56,8 +56,8 @@
 | Ryan Mathews | San Diego | N/A | 119 |
 | A.J. Green | Cincinnati | N/A | 116 |
 | Trent Richardson | Cleveland | N/A | 104 |
-| C.J. Spiller | Buffalo | N/A | 93 |
 | Alfred Morris | Washington | N/A | 94 |
+| C.J. Spiller | Buffalo | N/A | 93 |
 | Maurice Jones-Drew | Jacksonville | 5 | 71 |
 | Matt Forte | Chicago | N/A | 66 |
 
