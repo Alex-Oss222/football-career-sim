@@ -80,6 +80,13 @@ career/
         position_battles.md    <- evidence-based open competitions
         roster_decisions.md   <- dated decisions; state/04 holds the current result
     standings.md                <- the single current league / conference / division standings file (all 32 clubs); updated after each final regular-season result; a closed weekly snapshot is kept in league_results/week_NN.md
+    stats/
+      README.md                  <- statbook ownership, coverage and rebuild rules
+      game_receipts/             <- one public stat-only JSON receipt per closed game
+      season_totals.json         <- generated cumulative arithmetic when receipt coverage exists
+      team_player_stats.md       <- current protagonist-team season-to-date player stats
+      league_player_stats.md     <- current all-club season-to-date player stats
+      league_leaders.md          <- derived league leaders; withheld when coverage is incomplete
     preseason/
       README.md                 <- game index (date, kickoff, matchup, home/away)
       game_1_miami_at_jacksonville/output.md      <- one folder per game, named game_N_<away>_at_<home>; resolved as one bulk turn per Document 7 SS5.1
@@ -125,3 +132,8 @@ Only phases and rounds actually reached in play get created — never pre-built 
 ## Dependency checks
 
 [Update workflow](../docs/update_workflow.md) and [file map](../docs/repository_map.json) define the closure requirements. Run `python scripts/validate_repository.py` before committing. Calendar links, source hashes, summaries and current-state checkpoints are checked; an unchanged financial record may retain its last financial-event date.
+
+
+## Season statbook
+
+Season statistics are current derived views, parallel to standings. Every closed game should preserve a public stat receipt and the cumulative views should be rebuilt from those receipts rather than hand-added week to week. Statistical totals do not alter roster evaluation tiers, standings tiebreaks, or game resolution. A legacy coverage gap must remain labeled until canonically backfilled.
