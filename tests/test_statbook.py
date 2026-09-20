@@ -93,6 +93,17 @@ class StatbookTests(unittest.TestCase):
                 detail="giant",
             )
 
+    def test_player_attribution_completeness_is_team_scoped(self):
+        receipt = make_receipt(
+            self.result("attrib"), week=1, matchup="B at A",
+            player_attribution_incomplete_teams=("B",),
+        )
+        book = aggregate_receipts([receipt])
+        self.assertTrue(book["coverage_complete"])
+        self.assertFalse(book["player_attribution_complete"])
+        self.assertTrue(book["team_player_attribution_complete"]["A"])
+        self.assertFalse(book["team_player_attribution_complete"]["B"])
+
     def test_partial_coverage_propagates(self):
         receipt = make_receipt(
             self.result("legacy"), week=1, matchup="B at A",
