@@ -153,6 +153,39 @@ Before the week closes, perform this pass:
 5. **Voice:** narration sounds like a football report; Stone sounds like Stone; reporters do not all sound like the same writer.
 6. **Compression:** remove any sentence whose only job is to announce that the previous sentence mattered.
 
+## Box-score presentation rule
+
+Every played game gets a **full statistical box score for both teams**. Do not use "selected offense," "selected defense," or a hand-picked stat list.
+
+The presentation target is the same basic information hierarchy used by major football box-score pages such as ESPN: a compact team comparison first, then each team separated into **Passing, Rushing, Receiving, Defense, and Special Teams**. This is a structural reference, not a requirement to copy ESPN branding or wording.
+
+### Coverage rules
+
+- Show **both teams**, even when one side is the protagonist.
+- Within each category, show every player with a nonzero generated statistic in that category. A low-volume player is still part of the box score.
+- Keep offense and defense separate. Do not combine a player's rushing and receiving into one compressed cell.
+- Use a **Team total** row wherever the canonical totals exist and reconcile.
+- If a team-level statistic exists but the runtime did not preserve player attribution, use a clearly labeled **Team / unattributed** row. Never guess the player.
+- A blank or dash means "not applicable." It must not mean "unknown." If a statistic was not generated, remove that column or explicitly mark the field as not generated.
+- Derived rate stats are allowed only when they are simple arithmetic from canonical counts, such as yards per carry or yards per reception. Do not invent completion percentage, passer rating, longest gain, YAC, targets, tackle splits, or similar fields unless the underlying data exists.
+- Box-score tables contain football statistics, not qualitative tiers or coaching judgments.
+- Never import the real historical game's player statistics to make the table look complete.
+
+### Preferred category columns
+
+Use the fullest supported subset of these columns:
+
+- **Passing:** CMP/ATT, YDS, AVG, TD, INT, SACK, RTG.
+- **Rushing:** CAR, YDS, AVG, TD, LNG.
+- **Receiving:** REC, TGTS, YDS, AVG, TD, LNG.
+- **Defense:** SOLO, AST, TOT, SACK, TFL, PD, INT, INT YDS, FF, FR.
+- **Kicking:** FGM/FGA, XPM/XPA, PTS.
+- **Punting:** NO, YDS, AVG, TB, IN20, LNG.
+- **Returns:** KR, KR YDS, KR AVG, PR, PR YDS, PR AVG.
+- **Fumbles:** FUM, LOST, REC when generated.
+
+For a single-game box score, do not add season-only columns such as GP or YDS/G unless the user explicitly asks for a season-stat view.
+
 ## Media rule
 
 Pregame and postgame media are actual **question-and-answer texture**, not press-release summaries and not the game recap rewritten inside quotation marks.
@@ -229,14 +262,78 @@ A routine pregame session normally uses **2-3 substantive questions**. A routine
 
 ### Box score
 
-|  | [Your team] | [Opponent] |
+#### Team comparison
+
+| Statistic | [Your team] | [Opponent] |
 |---|---:|---:|
 | Total yards | [X] | [Y] |
-| Passing | [X] | [Y] |
-| Rushing | [X] | [Y] |
+| Passing yards | [X] | [Y] |
+| Rushing yards | [X] | [Y] |
+| First downs | [X] | [Y] |
 | Turnovers | [X] | [Y] |
-| Time of possession | [MM:SS] | [MM:SS] |
+| Sacks allowed | [X] | [Y] |
+| Penalties-yards | [X-Y] | [X-Y] |
 | 3rd down | [X/Y] | [X/Y] |
+| Red zone | [X/Y] | [X/Y] |
+| Time of possession | [MM:SS] | [MM:SS] |
+
+[Remove any team-stat row the canonical result did not generate. Do not fill missing rows with guessed values.]
+
+#### [Your team]
+
+##### Passing
+
+| Player | CMP/ATT* | YDS | AVG* | TD* | INT | SACK* | RTG* |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| [Player] | [X/Y] | [YDS] | [AVG] | [TD] | [INT] | [SACK] | [RTG] |
+| **Team total** | [X/Y] | [YDS] | [AVG] | [TD] | [INT] | [SACK] | [RTG] |
+
+##### Rushing
+
+| Player | CAR | YDS | AVG | TD* | LNG* |
+|---|---:|---:|---:|---:|---:|
+| [Player] | [CAR] | [YDS] | [AVG] | [TD] | [LNG] |
+| **Team total** | [CAR] | [YDS] | [AVG] | [TD] | [LNG] |
+
+##### Receiving
+
+| Player | REC | TGTS* | YDS | AVG | TD* | LNG* |
+|---|---:|---:|---:|---:|---:|---:|
+| [Player] | [REC] | [TGTS] | [YDS] | [AVG] | [TD] | [LNG] |
+| **Team total** | [REC] | [TGTS] | [YDS] | [AVG] | [TD] | [LNG] |
+
+##### Defense
+
+| Player | SOLO* | AST* | TOT* | SACK | TFL* | PD* | INT* | INT YDS* | FF* | FR* |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| [Player] | [SOLO] | [AST] | [TOT] | [SACK] | [TFL] | [PD] | [INT] | [YDS] | [FF] | [FR] |
+| **Team total** | [SOLO] | [AST] | [TOT] | [SACK] | [TFL] | [PD] | [INT] | [YDS] | [FF] | [FR] |
+
+##### Special teams
+
+**Kicking**
+
+| Player | FGM/FGA* | XPM/XPA* | PTS* |
+|---|---:|---:|---:|
+| [Kicker] | [X/Y] | [X/Y] | [PTS] |
+
+**Punting**
+
+| Player | NO | YDS* | AVG* | TB* | IN20* | LNG* |
+|---|---:|---:|---:|---:|---:|---:|
+| [Punter] | [NO] | [YDS] | [AVG] | [TB] | [IN20] | [LNG] |
+
+**Returns**
+
+| Player | KR | KR YDS* | KR AVG* | PR | PR YDS* | PR AVG* |
+|---|---:|---:|---:|---:|---:|---:|
+| [Returner] | [KR] | [YDS] | [AVG] | [PR] | [YDS] | [AVG] |
+
+#### [Opponent]
+
+[Repeat the same Passing, Rushing, Receiving, Defense, and Special Teams tables for the opponent. Do not compress the opponent into a one-line summary.]
+
+\* Remove unsupported columns completely when the canonical game payload does not generate them. Unknown is never zero.
 
 **Standout performances**
 - [Player]: [Specific football evidence and relevant statistics.]

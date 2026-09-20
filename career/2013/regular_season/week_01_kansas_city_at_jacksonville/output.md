@@ -64,43 +64,117 @@ The kernel attributed isolated passing work to Chad Henne and John Parker Wilson
 
 ### Box score
 
-|  | Jacksonville | Kansas City |
+#### Team comparison
+
+| Statistic | Jacksonville | Kansas City |
 |---|---:|---:|
 | Total yards | 475 | 452 |
-| Passing | 327 | 273 |
-| Rushing | 148 | 179 |
+| Passing yards | 327 | 273 |
+| Rushing yards | 148 | 179 |
 | Turnovers | 3 | 2 |
-| Time of possession | 30:35 | 29:25 |
+| Sacks allowed | 3 | 4 |
 | 3rd down | 11/26 | 11/23 |
+| Time of possession | 30:35 | 29:25 |
 
-**Jacksonville passing**
+#### Jacksonville Jaguars
 
-| Player | Att. | Yards | INT |
+##### Passing
+
+| Player | ATT | YDS | AVG | INT |
+|---|---:|---:|---:|---:|
+| Kirk Cousins | 35 | 274 | 7.8 | 1 |
+| Chad Henne | 5 | 25 | 5.0 | 1 |
+| John Parker Wilson | 9 | 28 | 3.1 | 1 |
+| **Team total** | **49** | **327** | **6.7** | **3** |
+
+##### Rushing
+
+| Player | CAR | YDS | AVG |
 |---|---:|---:|---:|
-| Kirk Cousins | 35 | 274 | 1 |
-| Chad Henne | 5 | 25 | 1 |
-| John Parker Wilson | 9 | 28 | 1 |
+| Maurice Jones-Drew | 10 | 50 | 5.0 |
+| C.J. Anderson | 13 | 40 | 3.1 |
+| Jonathan Grimes | 3 | 13 | 4.3 |
+| Team / unattributed remainder | N/A | 45 | N/A |
+| **Team total** | N/A | **148** | N/A |
 
-**Selected Jacksonville offense**
+##### Receiving
 
-| Player | Rushing | Receiving |
+| Player | REC | YDS | AVG |
+|---|---:|---:|---:|
+| Toney Clemons | 9 | 126 | 14.0 |
+| Maurice Jones-Drew | 5 | 71 | 14.2 |
+| Mike Brown | 4 | 57 | 14.3 |
+| Allen Reisner | 4 | 34 | 8.5 |
+| Cecil Shorts | 1 | 17 | 17.0 |
+| C.J. Anderson | 1 | -2 | -2.0 |
+| Team / unattributed remainder | N/A | 24 | N/A |
+| **Team total** | N/A | **327** | N/A |
+
+##### Defense
+
+| Player | SACK | INT |
 |---|---:|---:|
-| Maurice Jones-Drew | 10-50 | 5-71 |
-| C.J. Anderson | 13-40 | 1-(-2) |
-| Jonathan Grimes | 3-13 | — |
-| Toney Clemons | — | 9-126 |
-| Mike Brown | — | 4-57 |
-| Allen Reisner | — | 4-34 |
-| Cecil Shorts | — | 1-17 |
+| Paul Posluszny | 2 | N/A |
+| Russell Allen | 1 | N/A |
+| Jeris Pendleton | 1 | N/A |
+| Team / unattributed interceptions | N/A | 2 |
+| **Team total** | **4** | **2** |
 
-**Selected Kansas City offense**
+##### Special teams
 
-| Player | Passing | Rushing | Receiving |
+**Kicking / punting**
+
+| Player | FGM | PUNTS |
+|---|---:|---:|
+| Josh Scobee | 2 | N/A |
+| Bryan Anger | N/A | 4 |
+
+**Returns**
+
+| Unit | KR | PR |
+|---|---:|---:|
+| Jacksonville team | 3 | 2 |
+
+#### Kansas City Chiefs
+
+##### Passing
+
+| Player | ATT | YDS | AVG | INT |
+|---|---:|---:|---:|---:|
+| Alex Smith | 46 | 273 | 5.9 | 2 |
+| **Team total** | **46** | **273** | **5.9** | **2** |
+
+##### Rushing
+
+| Player | CAR | YDS | AVG |
 |---|---:|---:|---:|
-| Alex Smith | 46-273, 2 INT | 6-8 | — |
-| Jamaal Charles | — | 30-171 | 16-164 |
-| Anthony Fasano | — | — | 7-67 |
-| Dwayne Bowe | — | — | 4-42 |
+| Jamaal Charles | 30 | 171 | 5.7 |
+| Alex Smith | 6 | 8 | 1.3 |
+| **Team total** | **36** | **179** | **5.0** |
+
+##### Receiving
+
+| Player | REC | YDS | AVG |
+|---|---:|---:|---:|
+| Jamaal Charles | 16 | 164 | 10.3 |
+| Anthony Fasano | 7 | 67 | 9.6 |
+| Dwayne Bowe | 4 | 42 | 10.5 |
+| **Team total** | **27** | **273** | **10.1** |
+
+##### Defense
+
+| Player | SACK | INT |
+|---|---:|---:|
+| Tamba Hali | 2 | N/A |
+| Justin Houston | 1 | N/A |
+| Team / unattributed interceptions | N/A | 3 |
+| **Team total** | **3** | **3** |
+
+##### Special teams
+
+The original Week 1 output did not preserve a player-level Kansas City kicking, punting, or return breakdown. Those values are not reconstructed from the real 2013 game and are not guessed here.
+
+**Legacy Week 1 data note:** This game was closed before the full box-score presentation rule existed. Jacksonville's original selected-player tables did not preserve every individual rushing/receiving attribution, and neither defense preserved player attribution for interceptions. The exact team totals remain authoritative; missing player splits are labeled **Team / unattributed** rather than invented.
 
 **Standout performances**
 - Jamaal Charles: 171 rushing yards and 164 receiving yards; Kansas City's offense repeatedly ran through him.
