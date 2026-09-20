@@ -135,6 +135,7 @@ def _append_evidence(evidence, drive_ledger, offense_players, defense_players, o
                         responsibility="execute assigned route",
                         situation=f"{outcome} drive",
                         assignment="assignment held",
+                        observable_effort="sustained route responsibility through the rep",
                     )
                 )
 
