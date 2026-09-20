@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "migration": "2013-week-01-full-fidelity-reset",
+  "status": "BLOCKED_MISSING_CANONICAL_TEAM_INPUTS",
+  "user_authorized": true,
+  "source_checkpoint": "Canonical update - September 4, 2013 - preseason, roster and cap block closed",
+  "purpose": "Replace the legacy Week 1 slate only after all 16 games can be rerun under the full snap/stat receipt contract.",
+  "execution_rule": "All 32 pre-Week-1 TeamInput records must be canonical and complete before any replacement game is closed.",
+  "games": [
+    {
+      "order": 1,
+      "away": "Baltimore Ravens",
+      "home": "Denver Broncos",
+      "event_id": "2013-week01-reset-v1-01",
+      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "away_input": null,
+      "home_input": null
+    },
+    {
+      "order": 2,
+      "away": "New England Patriots",
+      "home": "Buffalo Bills",
+      "event_id": "2013-week01-reset-v1-02",
+      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "away_input": null,
+      "home_input": null
+    },
+    {
+      "order": 3,
+      "away": "Tennessee Titans",
+      "home": "Pittsburgh Steelers",
+      "event_id": "2013-week01-reset-v1-03",
+      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "away_input": null,
+      "home_input": null
+    },
+    {
+      "order": 4,
+      "away": "Atlanta Falcons",
+      "home": "New Orleans Saints",
+      "event_id": "2013-week01-reset-v1-04",
+      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "away_input": null,
+      "home_input": null
+    },
+    {
+      "order": 5,
+      "away": "Tampa Bay Buccaneers",
+      "home": "New York Jets",
+      "event_id": "2013-week01-reset-v1-05",
+      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "away_input": null,
+      "home_input": null
+    },
+    {
+      "order": 6,
+      "away": "Seattle Seahawks",
+      "home": "Carolina Panthers",
+      "event_id": "2013-week01-reset-v1-06",
+      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "away_input": null,
+      "home_input": null
+    },
+    {
+      "order": 7,
+      "away": "Cincinnati Bengals",
+      "home": "Chicago Bears",
+      "event_id": "2013-week01-reset-v1-07",
+      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "away_input": null,
+      "home_input": null
+    },
+    {
+      "order": 8,
+      "away": "Miami Dolphins",
+      "home": "Cleveland Browns",
+      "event_id": "2013-week01-reset-v1-08",
+      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "away_input": null,
+      "home_input": null
+    },
+    {
+      "order": 9,
+      "away": "Minnesota Vikings",
+      "home": "Detroit Lions",
+      "event_id": "2013-week01-reset-v1-09",
+      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "away_input": null,
+      "home_input": null
+    },
+    {
+      "order": 10,
+      "away": "Oakland Raiders",
+      "home": "Indianapolis Colts",
+      "event_id": "2013-week01-reset-v1-10",
+      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "away_input": null,
+      "home_input": null
+    },
+    {
+      "order": 11,
+      "away": "Green Bay Packers",
+      "home": "San Francisco 49ers",
+      "event_id": "2013-week01-reset-v1-11",
+      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "away_input": null,
+      "home_input": null
+    },
+    {
+      "order": 12,
+      "away": "Arizona Cardinals",
+      "home": "St. Louis Rams",
+      "event_id": "2013-week01-reset-v1-12",
+      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "away_input": null,
+      "home_input": null
+    },
+    {
+      "order": 13,
+      "away": "New York Giants",
+      "home": "Dallas Cowboys",
+      "event_id": "2013-week01-reset-v1-13",
+      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "away_input": null,
+      "home_input": null
+    },
+    {
+      "order": 14,
+      "away": "Philadelphia Eagles",
+      "home": "Washington Redskins",
+      "event_id": "2013-week01-reset-v1-14",
+      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "away_input": null,
+      "home_input": null
+    },
+    {
+      "order": 15,
+      "away": "Houston Texans",
+      "home": "San Diego Chargers",
+      "event_id": "2013-week01-reset-v1-15",
+      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "away_input": null,
+      "home_input": null
+    },
+    {
+      "order": 16,
+      "away": "Kansas City Chiefs",
+      "home": "Jacksonville Jaguars",
+      "event_id": "2013-week01-reset-v1-16",
+      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "away_input": null,
+      "home_input": null
+    }
+  ]
+}
