@@ -146,6 +146,7 @@ For the 2013 Week 1 full-fidelity reset specifically:
 
 - Read `career/2013/migrations/week_01_full_fidelity_reset.md` and its JSON manifest.
 - The September 20, 2026 `reset-v1` attempt is an audited technical abort: all 16 private events closed, but the generated Git diff exceeded the Codex extraction limit and no public reset commit/PR landed. Use only the current generation IDs in the manifest; never attempt to publish the abandoned v1 results.
+- Before closing any generation-2 Week 1 event, run `python scripts/mark_week1_v1_aborted.py`; it idempotently records the same technical-abort correction against all 16 stranded v1 event IDs.
 - If `python scripts/check_week1_reset_ready.py` reports missing TeamInputs, **do not stop and ask the user to fill them**.
 - Research and construct all missing pre-Week-1 TeamInputs yourself from date-eligible public sources and branch canon. Write the reconstructed full TeamInput objects to the gitignored .sim_cache/week_01_full_fidelity_inputs.json, not into the committed migration manifest, then rerun the gate. The committed manifest remains small control metadata.
 - Use verified historical Week-1 roster membership/position/availability facts for non-Jacksonville clubs as date-specific roster rails when no earlier branch transaction overrides them. Historical Week-1 scores, statistics, injuries produced by the real games, later depth-chart outcomes and later season/career results are forbidden inputs.
