@@ -66,6 +66,33 @@ class StatbookTests(unittest.TestCase):
         self.assertEqual(leaders(book, "passing_yards")[0]["value"], 500)
         self.assertTrue(book["coverage_complete"])
 
+    def test_compact_receipt_preserves_stats_without_snap_bloat(self):
+        receipt = make_receipt(
+            self.result("compact"), week=1, matchup="B at A",
+            detail="compact_stats",
+        )
+        self.assertEqual(receipt["detail"], "compact_stats")
+        self.assertNotIn("play_ledger", receipt)
+        self.assertNotIn("play_call_stats", receipt)
+        self.assertNotIn("bench-a", receipt["team_stats"]["A"]["players"])
+        self.assertEqual(
+            receipt["team_stats"]["A"]["players"]["qb-a"],
+            {"position": "QB", "pass_attempts": 30,
+             "passing_yards": 250, "interceptions": 1, "targets": 7},
+        )
+        book = aggregate_receipts([receipt])
+        self.assertEqual(book["teams"]["A"]["team_stats"]["passing_yards"], 250)
+        self.assertEqual(book["players"]["qb-a"]["passing_yards"], 250)
+        self.assertEqual(book["plays_recorded"], 0)
+        self.assertTrue(book["coverage_complete"])
+
+    def test_unknown_receipt_detail_fails_closed(self):
+        with self.assertRaises(ValueError):
+            make_receipt(
+                self.result("bad-detail"), week=1, matchup="B at A",
+                detail="giant",
+            )
+
     def test_partial_coverage_propagates(self):
         receipt = make_receipt(
             self.result("legacy"), week=1, matchup="B at A",

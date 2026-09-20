@@ -6,7 +6,7 @@ Naming pattern:
 
 `week_NN_<away>_at_<home>.json`
 
-A receipt is created **after** the game is closed and contains only public game output needed to rebuild season totals and play usage. Under kernel 2013.3 it includes complete public team/player stat dictionaries, the full public snap `play_ledger`, and game `play_call_stats`. It must not contain private Engine State data, seeds, probability distributions, hidden ratings, or matchup deltas.
+A receipt is created **after** the game is closed and contains only public game output needed for durable season accounting. Under kernel 2013.3, Jacksonville/protagonist games use `detail="full"` and retain complete player dictionaries, the public snap `play_ledger`, and `play_call_stats`. Ordinary background games use `detail="compact_stats"`: every nonzero generated team/player statistic is retained, while background snap rows, named-call data, zero-only player rows and zero-valued player fields are omitted to keep weekly Git diffs reviewable. Neither receipt type may contain private Engine State data, seeds, probability distributions, hidden ratings, or matchup deltas.
 
 The receipt schema is produced by `runtime.statbook.make_receipt`. Rebuilding the current stat views is handled by:
 

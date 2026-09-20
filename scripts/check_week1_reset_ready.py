@@ -2,12 +2,14 @@
 """Fail closed until every 2013 Week 1 replacement team input is canonical."""
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "career/2013/migrations/week_01_full_fidelity_reset.json"
+DEFAULT_INPUT_CACHE = ROOT / ".sim_cache/week_01_full_fidelity_inputs.json"
 
 REQUIRED_TEAM_FIELDS = {
     "team_id",
@@ -33,6 +35,25 @@ def team_errors(label, value):
     if not value.get("roster"):
         errors.append(f"{label}: no roster")
     return errors
+
+
+def overlay_cached_inputs(data, cache):
+    if not isinstance(cache, dict):
+        return data
+    cached_games = {
+        game.get("event_id"): game
+        for game in cache.get("games", [])
+        if isinstance(game, dict) and game.get("event_id")
+    }
+    result = json.loads(json.dumps(data))
+    for game in result.get("games", []):
+        cached = cached_games.get(game.get("event_id"))
+        if not cached:
+            continue
+        for key in ("away_input", "home_input"):
+            if game.get(key) is None and cached.get(key) is not None:
+                game[key] = cached[key]
+    return result
 
 
 def check(data):
@@ -61,11 +82,28 @@ def check(data):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--inputs",
+        type=Path,
+        default=DEFAULT_INPUT_CACHE,
+        help="transient generated TeamInput cache; defaults to .sim_cache",
+    )
+    args = parser.parse_args()
+
     data = json.loads(MANIFEST.read_text(encoding="utf-8"))
+    if args.inputs.is_file():
+        cache = json.loads(args.inputs.read_text(encoding="utf-8"))
+        data = overlay_cached_inputs(data, cache)
+
     errors = check(data)
     if errors:
         print("WEEK1_RESET_PREP_REQUIRED")
-        print("- Internal prerequisite: Codex must reconstruct the missing canonical pre-Week-1 TeamInputs; do not ask the user to populate this manifest.")
+        print(
+            "- Internal prerequisite: Codex must reconstruct the missing canonical "
+            "pre-Week-1 TeamInputs into the gitignored input cache; do not ask the user."
+        )
+        print(f"- Expected transient cache: {args.inputs}")
         for error in errors:
             print("- " + error)
         return 1
