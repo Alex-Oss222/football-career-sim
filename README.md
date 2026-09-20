@@ -6,7 +6,7 @@ An evidence-based NFL head-coaching career simulation centered on Alex-Lamar Sto
 
 - [Current season state](state/05_Current_Season_State.md): the controlling current date, closed checkpoint, pending decisions and next event.
 - [2013 Jacksonville career index](career/2013/README.md): phase records, roster, staff, cap, standings and season statistics.
-- [2013 season statbook](career/2013/stats/README.md): team player stats, league player stats, leaderboards and coverage status.
+- [2013 season statbook](career/2013/statbook.md): one front door for standings, Jacksonville stats, the comprehensive all-player ledger, league stats and leaderboards.
 - [Game readiness](state/game_readiness.md): verified preparation and outstanding requirements before any game can be resolved.
 - [Update workflow](docs/update_workflow.md): which records must change together and how to check them.
 - [Agent instructions](AGENTS.md): task-specific execution rules.

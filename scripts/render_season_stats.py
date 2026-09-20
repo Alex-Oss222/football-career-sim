@@ -130,6 +130,68 @@ def league_markdown(year, book):
     return "\n".join(lines)
 
 
+
+def all_players_markdown(year, book):
+    fields = list(book.get("player_stat_fields", ()))
+    preferred_order = [
+        "pass_attempts", "passing_yards", "interceptions",
+        "rushing_attempts", "rushing_yards",
+        "receptions", "receiving_yards",
+        "sacks_allowed", "sacks", "pressures", "fumbles",
+        "field_goals_made", "punts", "return_yards", "tackles",
+    ]
+    ordered = [field for field in preferred_order if field in fields]
+    ordered += sorted(field for field in fields if field not in ordered)
+
+    labels = {
+        "pass_attempts": "Pass Att",
+        "passing_yards": "Pass Yds",
+        "interceptions": "INT thrown",
+        "rushing_attempts": "Rush Att",
+        "rushing_yards": "Rush Yds",
+        "receptions": "Rec",
+        "receiving_yards": "Rec Yds",
+        "sacks_allowed": "Sacks allowed",
+        "sacks": "Sacks",
+        "pressures": "Pressures",
+        "fumbles": "Fumbles",
+        "field_goals_made": "FGM",
+        "punts": "Punts",
+        "return_yards": "Return Yds",
+        "tackles": "Tackles",
+    }
+
+    lines = [
+        "# %s NFL all-player stat ledger" % year,
+        "",
+        "**Version:** `%s-W%02d-ALL-PLAYER-STATS-1`" % (year, book["through_week"]),
+        "**Through:** Week %d." % book["through_week"],
+        coverage_line(book),
+        "",
+        "This is the comprehensive supported-field ledger. It retains every non-pseudo player record present in the closed-game receipts, including players whose supported counters are all zero. A zero here means the stored stat counter is zero; it does not by itself prove snap participation.",
+        "",
+    ]
+    header = ["Player", "Team(s)", "Pos"] + [labels.get(field, field.replace("_", " ").title()) for field in ordered]
+    lines.append("| " + " | ".join(header) + " |")
+    lines.append("|" + "|".join(["---", "---", "---"] + ["---:"] * len(ordered)) + "|")
+
+    rows = []
+    for player_id, line in book.get("players", {}).items():
+        if str(player_id).startswith("__"):
+            continue
+        rows.append((player_id, line))
+    rows.sort(key=lambda item: (", ".join(item[1].get("teams", ())), item[1].get("position", ""), item[0]))
+
+    for player, line in rows:
+        values = [
+            player,
+            ", ".join(line.get("teams", ())),
+            line.get("position", ""),
+        ] + [str(line.get(field, 0)) for field in ordered]
+        lines.append("| " + " | ".join(values) + " |")
+    lines.append("")
+    return "\n".join(lines)
+
 def leaders_markdown(year, book):
     lines = [
         "# %s NFL statistical leaders" % year,
@@ -185,6 +247,9 @@ def main():
     )
     (stats_dir / "league_player_stats.md").write_text(
         league_markdown(args.year, book), encoding="utf-8"
+    )
+    (stats_dir / "all_player_stats.md").write_text(
+        all_players_markdown(args.year, book), encoding="utf-8"
     )
     (stats_dir / "league_leaders.md").write_text(
         leaders_markdown(args.year, book), encoding="utf-8"

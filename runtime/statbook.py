@@ -59,6 +59,15 @@ def _blank_player(position):
     }
 
 
+def _numeric_player_fields(line):
+    return {
+        key for key, value in line.items()
+        if key != "position"
+        and isinstance(value, (int, float))
+        and not isinstance(value, bool)
+    }
+
+
 def aggregate_receipts(receipts):
     """Aggregate game receipts without inferring any missing statistic."""
     receipts = list(receipts)
@@ -67,6 +76,7 @@ def aggregate_receipts(receipts):
     league_players = {}
     through_week = 0
     complete = True
+    player_stat_fields = set(STAT_FIELDS)
 
     for receipt in receipts:
         event_id = receipt.get("event_id")
@@ -88,13 +98,14 @@ def aggregate_receipts(receipts):
 
             for player_id, line in game.get("players", {}).items():
                 position = line.get("position", "")
+                numeric_fields = _numeric_player_fields(line)
+                player_stat_fields.update(numeric_fields)
                 player = team["players"].setdefault(player_id, _blank_player(position))
                 if not player.get("position") and position:
                     player["position"] = position
-                for field in STAT_FIELDS:
-                    value = line.get(field)
-                    if isinstance(value, (int, float)) and not isinstance(value, bool):
-                        player[field] += value
+                for field in numeric_fields:
+                    value = line[field]
+                    player[field] = player.get(field, 0) + value
 
                 # League totals follow the player across teams. Pseudo-player
                 # ids beginning "__" preserve unattributed legacy totals but
@@ -107,10 +118,9 @@ def aggregate_receipts(receipts):
                     league["teams"].add(team_id)
                     if not league.get("position") and position:
                         league["position"] = position
-                    for field in STAT_FIELDS:
-                        value = line.get(field)
-                        if isinstance(value, (int, float)) and not isinstance(value, bool):
-                            league[field] += value
+                    for field in numeric_fields:
+                        value = line[field]
+                        league[field] = league.get(field, 0) + value
 
     for line in league_players.values():
         line["teams"] = sorted(line["teams"])
@@ -120,6 +130,7 @@ def aggregate_receipts(receipts):
         "through_week": through_week,
         "coverage_complete": complete,
         "receipt_count": len(receipts),
+        "player_stat_fields": sorted(player_stat_fields),
         "teams": teams,
         "players": league_players,
     }
@@ -127,7 +138,7 @@ def aggregate_receipts(receipts):
 
 def leaders(book, field, *, limit=10):
     """Return league leaders for one additive player field."""
-    if field not in STAT_FIELDS:
+    if field not in set(book.get("player_stat_fields", STAT_FIELDS)):
         raise ValueError(f"unknown player stat: {field}")
     rows = []
     for player_id, line in book.get("players", {}).items():
