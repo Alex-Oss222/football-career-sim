@@ -13,3 +13,7 @@ The receipt schema is produced by `runtime.statbook.make_receipt`. Rebuilding th
 `python scripts/render_season_stats.py YEAR --team TEAM_ID`
 
 Week 1 predates this storage rule, so a complete Week 1 receipt set is not present. The authorized full-fidelity reset in `../../migrations/week_01_full_fidelity_reset.md` requires 32 canonical pre-Week-1 team inputs before replacement draws, but constructing those inputs is an internal prerequisite of the one-command `Run Week 1` workflow. The user is not responsible for populating the reset manifest.
+
+## Attribution corrections
+
+A receipt may include `player_attribution_incomplete_teams` when a later integrity correction proves that a preserved player identity could not legally belong to that simulated club but the exact eligible replacement attribution is unknowable. In that case the generated statistics move to a pseudo-player id beginning `__`; team totals remain exact, pseudo rows are excluded from player leaderboards, and league player rankings remain withheld. Never invent a replacement player's line merely to restore leaderboard completeness.
