@@ -118,7 +118,7 @@ Bounded, matchup-weighted, seeded, and fully logged in the Engine Ledger (condit
 
 ### 3.5 Granularity dial and manual escalation
 
-Document 1 §11.2 already defines four game-detail modes (Executive, Play-Calling, Critical-Decision, Full Tactical). That existing dial sets the user's default narration depth for their own games. Independently of the dial, any sequence automatically escalates to denser, near-play-by-play narration at flagged spotlight moments (money downs, the two-minute drill, goal-to-go, trick plays, a live 4th-down call) or whenever the user names a sequence and asks to "go under the hood" on it — this escalation is prose density only, never an extra user turn, and never a deviation from the underlying drive-level mechanic that actually produced the result.
+Document 1 §11.2 already defines four game-detail modes (Executive, Play-Calling, Critical-Decision, Full Tactical). That existing dial sets the user's default narration depth for their own games. Independently of the dial, any sequence automatically escalates to denser, near-play-by-play narration at flagged spotlight moments (money downs, the two-minute drill, goal-to-go, trick plays, a live 4th-down call) or whenever the user names a sequence and asks to "go under the hood" on it — this escalation is prose density only, never an extra user turn. The possession kernel still owns score/outcome resolution; kernel 2013.3 then allocates each resolved drive into a deterministic public snap ledger without consuming additional outcome RNG draws.
 
 ### 3.6 Long-run consistency check
 
@@ -131,6 +131,18 @@ The repository's [playbook index](../career/playbook/README.md) controls the act
 For a named in-game call, look up the relevant entry in the active book. Use its concrete concept, assignments, personnel and intended stresses as matchup inputs. Design annotations, expected yards, preset usage percentages and persuasive wording never determine an outcome or override the shared kernel. Practice installation and player study access follow AGENTS.md and the phase plans. The DC calls the defense; author credit in the defensive book does not change operational authority.
 
 Record an actual iteration transition in the season ledger on its effective date. A replay uses the iteration and installed menu effective at that event, not a later book. The governing no-hindsight, no-quota and user-control rules override incompatible embedded design notes.
+
+### 3.8 Canonical snap ledger, full player stats, and named-call accounting
+
+Kernel 2013.3 adds a public post-resolution detail layer to every game. This layer is mandatory for both protagonist and background games even when background narration remains compressed.
+
+1. **Outcome ownership stays at the possession kernel.** Score, possession outcome, drive duration, aggregate pass/rush production and other game-resolution facts are drawn first. Snap detail uses a separate deterministic stream derived from the already-closed game entropy plus event/drive identity. Adding, removing or rendering more snap fields cannot consume extra outcome draws or reroll the game.
+2. **Every generated scrimmage snap is recorded.** Each public `play_ledger` row carries global sequence, drive, snap-in-drive, period/clock, offense/defense, run/pass type, named concept/family when supplied, personnel/formation/motion/protection metadata when supplied, involved passer/runner/target/blocker/tackler when generated, yardage, completion/sack/turnover/touchdown flags, and applicable special-teams terminal plays.
+3. **The weekly Jacksonville call sheet is structured game input.** A call may provide `name`, stable `family`, `type`, `personnel`, `formation`, `motion`, `protection`, and `tags`. Display aliases do not change the outcome commitment; the football substance is canonicalized for the frozen game packet. Named-call usage is tracked only when the structured call was actually supplied. Never infer snap-by-snap usage from narrative prose after the fact.
+4. **Player statistics are exhaustive for fields the runtime actually generates.** The closed game result preserves every active participant's public numeric stat dictionary, including zero counters. Current fields include passing, rushing, receiving, protection, defensive, kicking, punting and return production. When the runtime later adds another public numeric field, the statbook retains it automatically.
+5. **Receipts own durable raw detail.** After every closed regular-season or postseason game, `career/<year>/stats/game_receipts/` stores the public stat receipt containing full team/player stats, `play_ledger`, and game `play_call_stats`. Cumulative player and named-call views are rebuilt from receipts, never hand-added from prior Markdown.
+6. **Compressed narration is not compressed storage.** Background games may still receive only 2-4 sentences of prose, but their complete public player/snap receipt is preserved under the same schema so league statistics do not become protagonist-only data.
+7. **No retroactive invention.** A legacy game without a canonical snap ledger may preserve known totals and unattributed remainders, but named play counts, targets, tackles, completions or other missing details may not be reverse-engineered from prose or imported from the corresponding real historical game.
 
 ## 4. Mandatory decision pauses
 
