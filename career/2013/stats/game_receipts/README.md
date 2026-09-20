@@ -12,4 +12,4 @@ The receipt schema is produced by `runtime.statbook.make_receipt`. Rebuilding th
 
 `python scripts/render_season_stats.py YEAR --team TEAM_ID`
 
-Week 1 predates this storage rule, so a complete Week 1 receipt set is not present. The authorized full-fidelity reset remains blocked by `../../migrations/week_01_full_fidelity_reset.md` until all 32 canonical pre-Week-1 team inputs are available.
+Week 1 predates this storage rule, so a complete Week 1 receipt set is not present. The authorized full-fidelity reset in `../../migrations/week_01_full_fidelity_reset.md` requires 32 canonical pre-Week-1 team inputs before replacement draws, but constructing those inputs is an internal prerequisite of the one-command `Run Week 1` workflow. The user is not responsible for populating the reset manifest.
