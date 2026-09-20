@@ -94,8 +94,8 @@ The kernel attributed isolated passing work to Chad Henne and John Parker Wilson
 | Maurice Jones-Drew | 10 | 50 | 5.0 |
 | C.J. Anderson | 13 | 40 | 3.1 |
 | Jonathan Grimes | 3 | 13 | 4.3 |
-| Team / unattributed remainder | — | 45 | — |
-| **Team total** | — | **148** | — |
+| Team / unattributed remainder | N/A | 45 | N/A |
+| **Team total** | N/A | **148** | N/A |
 
 ##### Receiving
 
@@ -107,17 +107,17 @@ The kernel attributed isolated passing work to Chad Henne and John Parker Wilson
 | Allen Reisner | 4 | 34 | 8.5 |
 | Cecil Shorts | 1 | 17 | 17.0 |
 | C.J. Anderson | 1 | -2 | -2.0 |
-| Team / unattributed remainder | — | 24 | — |
-| **Team total** | — | **327** | — |
+| Team / unattributed remainder | N/A | 24 | N/A |
+| **Team total** | N/A | **327** | N/A |
 
 ##### Defense
 
 | Player | SACK | INT |
 |---|---:|---:|
-| Paul Posluszny | 2 | — |
-| Russell Allen | 1 | — |
-| Jeris Pendleton | 1 | — |
-| Team / unattributed takeaways | — | 2 |
+| Paul Posluszny | 2 | N/A |
+| Russell Allen | 1 | N/A |
+| Jeris Pendleton | 1 | N/A |
+| Team / unattributed interceptions | N/A | 2 |
 | **Team total** | **4** | **2** |
 
 ##### Special teams
@@ -126,8 +126,8 @@ The kernel attributed isolated passing work to Chad Henne and John Parker Wilson
 
 | Player | FGM | PUNTS |
 |---|---:|---:|
-| Josh Scobee | 2 | — |
-| Bryan Anger | — | 4 |
+| Josh Scobee | 2 | N/A |
+| Bryan Anger | N/A | 4 |
 
 **Returns**
 
@@ -165,9 +165,9 @@ The kernel attributed isolated passing work to Chad Henne and John Parker Wilson
 
 | Player | SACK | INT |
 |---|---:|---:|
-| Tamba Hali | 2 | — |
-| Justin Houston | 1 | — |
-| Team / unattributed takeaways | — | 3 |
+| Tamba Hali | 2 | N/A |
+| Justin Houston | 1 | N/A |
+| Team / unattributed interceptions | N/A | 3 |
 | **Team total** | **3** | **3** |
 
 ##### Special teams
