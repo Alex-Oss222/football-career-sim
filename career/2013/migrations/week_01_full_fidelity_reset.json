@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "migration": "2013-week-01-full-fidelity-reset",
-  "status": "GENERATION_2_CLOSED_PENDING_PUBLICATION",
+  "status": "GENERATION_2_PUBLISHED_ATTRIBUTION_CORRECTED",
   "user_authorized": true,
   "source_checkpoint": "Canonical update - September 4, 2013 - preseason, roster and cap block closed",
   "purpose": "Replace the legacy Week 1 slate only after all 16 games can be rerun under the full snap/stat receipt contract.",
@@ -12,7 +12,7 @@
       "away": "Baltimore Ravens",
       "home": "Denver Broncos",
       "event_id": "2013-week01-reset-v2-01",
-      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "input_status": "TRANSIENT_INPUTS_VALIDATED",
       "away_input": null,
       "home_input": null
     },
@@ -21,7 +21,7 @@
       "away": "New England Patriots",
       "home": "Buffalo Bills",
       "event_id": "2013-week01-reset-v2-02",
-      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "input_status": "TRANSIENT_INPUTS_VALIDATED",
       "away_input": null,
       "home_input": null
     },
@@ -30,7 +30,7 @@
       "away": "Tennessee Titans",
       "home": "Pittsburgh Steelers",
       "event_id": "2013-week01-reset-v2-03",
-      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "input_status": "TRANSIENT_INPUTS_VALIDATED",
       "away_input": null,
       "home_input": null
     },
@@ -39,7 +39,7 @@
       "away": "Atlanta Falcons",
       "home": "New Orleans Saints",
       "event_id": "2013-week01-reset-v2-04",
-      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "input_status": "TRANSIENT_INPUTS_VALIDATED",
       "away_input": null,
       "home_input": null
     },
@@ -48,7 +48,7 @@
       "away": "Tampa Bay Buccaneers",
       "home": "New York Jets",
       "event_id": "2013-week01-reset-v2-05",
-      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "input_status": "TRANSIENT_INPUTS_VALIDATED",
       "away_input": null,
       "home_input": null
     },
@@ -57,7 +57,7 @@
       "away": "Seattle Seahawks",
       "home": "Carolina Panthers",
       "event_id": "2013-week01-reset-v2-06",
-      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "input_status": "TRANSIENT_INPUTS_VALIDATED",
       "away_input": null,
       "home_input": null
     },
@@ -66,7 +66,7 @@
       "away": "Cincinnati Bengals",
       "home": "Chicago Bears",
       "event_id": "2013-week01-reset-v2-07",
-      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "input_status": "TRANSIENT_INPUTS_VALIDATED",
       "away_input": null,
       "home_input": null
     },
@@ -75,7 +75,7 @@
       "away": "Miami Dolphins",
       "home": "Cleveland Browns",
       "event_id": "2013-week01-reset-v2-08",
-      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "input_status": "TRANSIENT_INPUTS_VALIDATED",
       "away_input": null,
       "home_input": null
     },
@@ -84,7 +84,7 @@
       "away": "Minnesota Vikings",
       "home": "Detroit Lions",
       "event_id": "2013-week01-reset-v2-09",
-      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "input_status": "TRANSIENT_INPUTS_VALIDATED",
       "away_input": null,
       "home_input": null
     },
@@ -93,7 +93,7 @@
       "away": "Oakland Raiders",
       "home": "Indianapolis Colts",
       "event_id": "2013-week01-reset-v2-10",
-      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "input_status": "TRANSIENT_INPUTS_VALIDATED",
       "away_input": null,
       "home_input": null
     },
@@ -102,7 +102,7 @@
       "away": "Green Bay Packers",
       "home": "San Francisco 49ers",
       "event_id": "2013-week01-reset-v2-11",
-      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "input_status": "TRANSIENT_INPUTS_VALIDATED",
       "away_input": null,
       "home_input": null
     },
@@ -111,7 +111,7 @@
       "away": "Arizona Cardinals",
       "home": "St. Louis Rams",
       "event_id": "2013-week01-reset-v2-12",
-      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "input_status": "TRANSIENT_INPUTS_VALIDATED",
       "away_input": null,
       "home_input": null
     },
@@ -120,7 +120,7 @@
       "away": "New York Giants",
       "home": "Dallas Cowboys",
       "event_id": "2013-week01-reset-v2-13",
-      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "input_status": "TRANSIENT_INPUTS_VALIDATED",
       "away_input": null,
       "home_input": null
     },
@@ -129,7 +129,7 @@
       "away": "Philadelphia Eagles",
       "home": "Washington Redskins",
       "event_id": "2013-week01-reset-v2-14",
-      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "input_status": "TRANSIENT_INPUTS_VALIDATED",
       "away_input": null,
       "home_input": null
     },
@@ -138,7 +138,7 @@
       "away": "Houston Texans",
       "home": "San Diego Chargers",
       "event_id": "2013-week01-reset-v2-15",
-      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "input_status": "TRANSIENT_INPUTS_VALIDATED",
       "away_input": null,
       "home_input": null
     },
@@ -147,7 +147,7 @@
       "away": "Kansas City Chiefs",
       "home": "Jacksonville Jaguars",
       "event_id": "2013-week01-reset-v2-16",
-      "input_status": "MISSING_CANONICAL_TEAM_INPUTS",
+      "input_status": "TRANSIENT_INPUTS_VALIDATED",
       "away_input": null,
       "home_input": null
     }
@@ -157,5 +157,22 @@
     "generation": 1,
     "status": "ABORTED_UNCOMMITTED_TECHNICAL_FAILURE",
     "reason": "Codex generated diff exceeded extraction size after private event closure and an erroneous pre-merge private snapshot advance; no public reset commit or PR landed."
+  },
+  "publication_commit": "6658e3c0e8797f0524a9fda25a4624992118815f",
+  "input_storage": ".sim_cache/week_01_full_fidelity_inputs.json (transient; validated before generation-2 closure, intentionally not committed)",
+  "attribution_correction": {
+    "status": "OUTCOME_PRESERVING_PUBLIC_CORRECTION",
+    "affected_receipts": [
+      "2013-week01-reset-v2-01",
+      "2013-week01-reset-v2-08",
+      "2013-week01-reset-v2-11",
+      "2013-week01-reset-v2-14",
+      "2013-week01-reset-v2-16"
+    ],
+    "reason": "historical Week-1 roster rails incorrectly retained players already controlled by Jacksonville branch canon",
+    "score_effect": "none",
+    "standings_effect": "none",
+    "player_stat_effect": "impossible non-Jacksonville attributions moved to explicit pseudo/unattributed rows; exact replacement player attribution withheld",
+    "league_rankings": "withheld until player attribution coverage is complete"
   }
 }
