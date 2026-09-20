@@ -17,6 +17,8 @@ class StatbookTests(unittest.TestCase):
         a.update(pass_attempts=30, passing_yards=250, interceptions=1)
         b = dict(empty)
         b.update(position="RB", rushing_attempts=20, rushing_yards=100)
+        bench = dict(empty)
+        bench.update(position="WR")
         base = {
             "points": 20, "touchdowns": 2, "field_goals": 2, "punts": 4,
             "turnovers": 1, "sacks_allowed": 2, "penalties": 6,
@@ -30,8 +32,8 @@ class StatbookTests(unittest.TestCase):
             "event_id": event_id,
             "final_score": {"A": 20, "B": 17},
             "team_stats": {
-                "A": {**base, "players": {"qb-a": a, "rb-a": b}},
-                "B": {**base, "points": 17, "players": {"qb-b": a, "rb-b": b}},
+                "A": {**base, "players": {"qb-a": a, "rb-a": b, "bench-a": bench}},
+                "B": {**base, "points": 17, "players": {"qb-b": a, "rb-b": b, "bench-b": bench}},
             },
         }
 
@@ -43,6 +45,9 @@ class StatbookTests(unittest.TestCase):
         self.assertEqual(book["teams"]["A"]["games"], 2)
         self.assertEqual(book["teams"]["A"]["team_stats"]["passing_yards"], 500)
         self.assertEqual(book["teams"]["A"]["players"]["qb-a"]["pass_attempts"], 60)
+        self.assertIn("bench-a", book["teams"]["A"]["players"])
+        self.assertIn("bench-a", book["players"])
+        self.assertEqual(book["players"]["bench-a"]["receiving_yards"], 0)
         self.assertEqual(leaders(book, "passing_yards")[0]["value"], 500)
         self.assertTrue(book["coverage_complete"])
 
