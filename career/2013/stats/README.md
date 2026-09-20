@@ -14,13 +14,13 @@ This directory is the **current season-stat layer**, parallel to but separate fr
 ## Rules
 
 1. **Closed games only.** No projected, expected or future statistics enter the statbook.
-2. **One receipt per game.** The receipt is derived from the already-closed shared-kernel result. It does not rerun or influence the game. The receipt preserves the complete public `team_stats.players` dictionaries from both teams, the complete public `play_ledger`, and game-level `play_call_stats`, not merely leaders or standouts.
+2. **One receipt per game.** The receipt is derived from the already-closed shared-kernel result and never influences resolution. Jacksonville/protagonist games use `detail="full"` and preserve complete public player dictionaries, `play_ledger`, and game-level `play_call_stats`. Ordinary background games use `detail="compact_stats"` and preserve every nonzero generated player/team statistic while omitting the background snap ledger, named-call data, zero-only player rows and zero-valued player fields.
 3. **Public statistics only.** No seed, probability, hidden rating, matchup delta or private Engine State material belongs here.
 4. **Additive arithmetic is automated.** Season totals are rebuilt from game receipts, not hand-carried from the previous week's Markdown.
 5. **No historical backfill from the real NFL game.** If a simulated game did not preserve a player attribution, the missing split stays unknown or team/unattributed.
 6. **Transactions follow the player.** The league view may show multiple teams for a player; a team view contains only production credited to that club.
 7. **All public numeric player counters are retained.** The statbook automatically discovers and accumulates every numeric field present in the public player dictionaries. The current engine includes passing attempts/yards/interceptions thrown, rushing attempts/yards, receptions/receiving yards, sacks allowed, sacks, pressures, fumbles, field goals made, punts, return yards and tackles. If the engine later adds targets, touchdowns, pass defenses, longest gains or another public numeric stat, the comprehensive ledger keeps it without requiring a new hard-coded whitelist. Cleaner category tables may hide irrelevant zero columns, but the underlying record is not discarded.
-8. **Zero counters are preserved in receipts.** A zero-valued player dictionary remains in the cumulative machine record. The human category tables may omit a player with no statistic in that category so they do not falsely imply snap participation.
+8. **Zero counters are preserved only where useful.** Full Jacksonville/protagonist receipts preserve zero counters. Compact background receipts intentionally omit zero-only players and zero-valued fields; this does not remove any generated nonzero statistical production and does not imply non-participation.
 9. **Standings and statistics remain separate authorities.** A statistical ranking never changes a tiebreak or team record.
 
 ## Week 1 bootstrap limitation
@@ -33,5 +33,5 @@ Accordingly:
 - `all_player_stats.md` keeps every Week 1 player/stat line that survived in the committed records and labels all missing legacy fields as unavailable rather than zero.
 - The league player-stat view contains only lines that were actually preserved in the Week 1 records.
 - `league_leaders.md` withholds formal rankings until Week 1 can be idempotently backfilled from the exact closed game packets, or another complete canonical source becomes available.
-- Starting with the first game resolved under kernel 2013.3, the complete public stat/snap receipt must be saved at closure so this gap does not recur.
+- Starting with the first game resolved under kernel 2013.3, Jacksonville keeps a full public stat/snap receipt and ordinary background games keep compact complete-stat receipts, so league statistical coverage remains complete without duplicating every background snap in Git.
 - Week 1 also lacks canonical named-play usage because its old kernel did not generate a snap ledger. No concept usage count may be reconstructed from narrative prose.
