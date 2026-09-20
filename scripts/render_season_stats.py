@@ -74,10 +74,10 @@ def team_markdown(year, team_id, book):
         lines.append("| %s | %s | %s | %s |" % (
             player, line["receptions"], line["receiving_yards"],
             avg(line["receiving_yards"], line["receptions"])))
-    lines += ["", "## Defense", "", "| Player | TKL | SACK | INT |", "|---|---:|---:|---:|"]
-    for player, line in player_rows(players, ("tackles", "sacks", "interceptions"), "tackles"):
-        lines.append("| %s | %s | %s | %s |" % (
-            player, line["tackles"], line["sacks"], line["interceptions"]))
+    lines += ["", "## Defense", "", "| Player | TKL | SACK |", "|---|---:|---:|"]
+    for player, line in player_rows(players, ("tackles", "sacks"), "tackles"):
+        lines.append("| %s | %s | %s |" % (
+            player, line["tackles"], line["sacks"]))
     lines += ["", "## Special teams", "", "| Player | FGM | PUNTS | RET YDS |", "|---|---:|---:|---:|"]
     for player, line in player_rows(players, ("field_goals_made", "punts", "return_yards"), "return_yards"):
         lines.append("| %s | %s | %s | %s |" % (
@@ -103,8 +103,8 @@ def league_markdown(year, book):
          "| Player | Team(s) | CAR | YDS | AVG |", "|---|---|---:|---:|---:|"),
         ("Receiving", ("receptions", "receiving_yards"), "receiving_yards",
          "| Player | Team(s) | REC | YDS | AVG |", "|---|---|---:|---:|---:|"),
-        ("Defense", ("tackles", "sacks", "interceptions"), "tackles",
-         "| Player | Team(s) | TKL | SACK | INT |", "|---|---|---:|---:|---:|"),
+        ("Defense", ("tackles", "sacks"), "tackles",
+         "| Player | Team(s) | TKL | SACK |", "|---|---|---:|---:|"),
     )
     for title, fields, sort_field, header, separator in categories:
         lines += ["## " + title, "", header, separator]
@@ -119,8 +119,11 @@ def league_markdown(year, book):
                 row = (player, teams, line["receptions"], line["receiving_yards"],
                        avg(line["receiving_yards"], line["receptions"]))
             else:
-                row = (player, teams, line["tackles"], line["sacks"], line["interceptions"])
-            lines.append("| %s | %s | %s | %s | %s |" % row)
+                row = (player, teams, line["tackles"], line["sacks"])
+            if title == "Defense":
+                lines.append("| %s | %s | %s | %s |" % row)
+            else:
+                lines.append("| %s | %s | %s | %s | %s |" % row)
         lines.append("")
     return "\n".join(lines)
 
@@ -148,7 +151,6 @@ def leaders_markdown(year, book):
         ("Rushing yards", "rushing_yards"),
         ("Receiving yards", "receiving_yards"),
         ("Sacks", "sacks"),
-        ("Interceptions", "interceptions"),
         ("Tackles", "tackles"),
     ):
         lines += ["## " + title, "", "| Rank | Player | Team(s) | Total |", "|---:|---|---|---:|"]
