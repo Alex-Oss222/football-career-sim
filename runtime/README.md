@@ -11,3 +11,10 @@ The public adapter reads `ENGINE_RUNTIME_URL` and `ENGINE_API_TOKEN`; the older 
 `Dockerfile.engine` runs `scripts/validate_repository.py` and the full unit-test suite in a verification stage before producing the runtime image; a validation or test failure therefore blocks Railway deployment.
 
 Preseason uses the consolidated-block architecture: Document 5 may remain at the block-start snapshot while the four uniquely identified game packets are closed sequentially. Every packet must be rebuilt from the then-current roster, medical, availability, and role inputs. No later game may reuse stale football inputs; the final atomic public closure advances Document 5 once, after which the explicit snapshot helper advances the private binding.
+
+
+## Public season statbook
+
+`runtime/statbook.py` is downstream post-processing for already-closed games. It converts a closed game result into a public stat-only receipt and can aggregate those receipts into season totals. It has no access to the private career seed and does not participate in resolution, packet closure, matchup weighting or outcome selection.
+
+Current Markdown views are rendered from the receipt set with `scripts/render_season_stats.py`. Incomplete legacy receipt coverage must remain labeled and formal league leaderboards are withheld until the gap is reconciled.

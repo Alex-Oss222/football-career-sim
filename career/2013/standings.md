@@ -1,5 +1,6 @@
 # 2013 NFL standings - league, conference and division
 
+**Version:** `NFL-2013-W01-STANDINGS-1`  
 **Status:** WEEK 1 COMPLETE.
 **Through:** Week 1 (September 9, 2013).
 **Scope:** all 32 clubs; regular-season games only.

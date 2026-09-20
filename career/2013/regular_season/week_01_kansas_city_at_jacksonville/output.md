@@ -1,19 +1,24 @@
 # Jacksonville 2013 Regular Season Week 1 — Kansas City at Jacksonville
 
-**Alex Stone | Jacksonville Jaguars (0-1) | 2013 | Regular Season Week 1**
-**Date range:** September 4-8, 2013 | **Days since career start:** 237
-**Phase:** Regular Season Week 1 | **Next:** Week 2 at Oakland, September 15, 4:25 p.m. ET
+**Alex Stone (49) | Head Coach / Offensive Play-Caller | Jacksonville Jaguars (0-1)**
+**2013 | Regular Season Week 1 | September 4-8, 2013 | Final: Kansas City 30, Jacksonville 27**
+**Next:** Week 2 at Oakland, September 15, 4:25 p.m. ET | **Days since career start:** 237
 
 ## 1. Coach status
 
 | Field | Value |
 |---|---|
-| Name / Age | Alex Stone / age not established in canon |
+| Full name | Alex-Lamar Stone |
+| Date of birth | September 21, 1963 |
+| Age on September 8, 2013 | 49 |
 | Position | Head coach and offensive play-caller |
 | Team | Jacksonville Jaguars (AFC South) |
 | Reports to | Owner Shahid Khan; David Caldwell retains the established general-manager authorities |
 | Contract | Year 1 of 4, fully guaranteed; compensation schedule unresolved |
-| Career record | 0-1 (.000) |
+| Jacksonville HC record | 0-1 (.000) |
+| NFL regular-season HC record | 12-5 |
+| NFL postseason HC record | 1-1 |
+| NFL overall HC record | 13-6 |
 
 ## 2. Week setup and game preparation
 
@@ -265,5 +270,8 @@ The original Week 1 output did not preserve a player-level Kansas City kicking, 
 
 **Record after game:** 0-1
 **Division / conference position:** Tied at 0-1 in the AFC South; Jacksonville is not assigned an unsupported playoff seed.
+**Season player stats:** `career/2013/stats/team_player_stats.md` — `JAX-2013-W01-TEAM-STATS-1`
+**League player stats:** `career/2013/stats/league_player_stats.md` — Week 1 coverage partial
+**League leaders:** `career/2013/stats/league_leaders.md` — formal rankings withheld pending Week 1 background-stat backfill
 **Ledger entry:** Entry 30
 **Next event:** Week 2 at Oakland, Sunday, September 15, 2013, 4:25 p.m. ET — not simulated.

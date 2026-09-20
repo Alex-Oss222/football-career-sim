@@ -3,6 +3,7 @@
 **Status:** COMPLETE.
 **Through:** Monday, September 9, 2013.
 **Resolution:** Every non-Jacksonville game was closed once through `runtime.game_runner.run_game`, using the shared kernel and the September 4 private snapshot. Jacksonville-Kansas City is owned by the canonical weekly output and is included only in the standings snapshot below.
+**Statbook migration note:** Week 1 predates the public per-game stat-receipt rule. This file preserved scores, team context and selected standout lines, but not complete player-level background box scores. See `career/2013/stats/README.md`; formal league statistical rankings remain withheld until that legacy gap is backfilled.
 
 ## Running league standings after Week 1
 

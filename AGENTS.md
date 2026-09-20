@@ -22,6 +22,7 @@ Any task that **completes an event, advances the career clock, changes roster/co
    - the applicable transaction/result file under `career/[year]/`;
    - `career/[year]/roster.md`;
    - `career/[year]/standings.md` whenever a final score changes any club's record (league, conference and division tables);
+   - `career/[year]/stats/` whenever a regular-season or postseason game closes: preserve the public stat receipt and refresh the current team/league stat views from receipts rather than hand-adding prior Markdown;
    - the applicable cap/contract/draft-capital accounting file;
    - `state/04_Roster_and_Staff_Register.md`;
    - `state/05_Current_Season_State.md`.
@@ -34,6 +35,8 @@ Any task that **completes an event, advances the career clock, changes roster/co
 8. **Do not create unrelated changes.** Dependency closure is required, but it is bounded to facts changed by the event. Library research, stable foundation rules, unrelated seasons, and unrelated player records stay untouched.
 
 A progression commit is incomplete if its event file says one thing while a dependent current-state file still says another.
+
+**Season-stat closure rule.** A closed regular-season or postseason game is not statistically complete until its public stat-only receipt is preserved under `career/[year]/stats/game_receipts/`. The receipt is downstream of the closed result and may never contain private Engine State material, seeds, hidden ratings, matchup deltas or probability data. Refresh `team_player_stats.md`, `league_player_stats.md` and `league_leaders.md` from the receipt set using the statbook tooling. If receipt coverage is incomplete, label the gap and withhold formal league rankings rather than filling it from real historical results or narrative inference.
 
 Use [the dependency workflow](docs/update_workflow.md) and `docs/repository_map.json`. Run `python scripts/validate_repository.py` before closing a change; refresh a phase summary receipt only after reviewing the summary against its updated output. Both game paths must also pass `python scripts/check_game_readiness.py`. A green repository check is not game authorization.
 
@@ -122,6 +125,8 @@ The simulation engine may still use its hidden stochastic resolution machinery t
 **Reactive events — allowed, but bounded.** A team's players, coaches, or front office may generate a genuine reactive event (a trade demand, a coach on the hot seat, a locker-room story, a media dust-up) if it plausibly follows from something that actually happened in a game or a transaction already on the record. Do not manufacture one to fill a quiet week — per Document 7 §7's Locker Room/Media agent rule, these fire only from logged mechanical events, never invented for drama's own sake. Across a full week's slate, most games should have none; a handful having one is normal, all of them having one is a sign you're manufacturing rather than reacting.
 
 **Write results to:** `career/[year]/league_results/week_[NN].md` (create the file/folder if it doesn't exist yet this season). One entry per game. Also update the running league standings in the same file's header table, and update the single current standings file `career/[year]/standings.md` (division, conference and league-wide tables, ties broken only by Document 2 §5.3) in the same commit.
+
+**Persist league statistics too.** For every closed background game, preserve the public stat receipt under `career/[year]/stats/game_receipts/`. Once the full weekly slate is closed, rebuild the season statbook with `runtime/statbook.py` / `scripts/render_season_stats.py`. The weekly highlights file remains concise; full cumulative player statistics live in `stats/`, not in `league_results/week_NN.md`.
 
 **Do not** write anything into the protagonist's own weekly turn file — that's assembled separately by whoever is running the interactive side of this project, which reads your results file as one of its own inputs.
 
