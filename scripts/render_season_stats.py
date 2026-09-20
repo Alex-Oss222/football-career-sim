@@ -22,7 +22,7 @@ def load_receipts(directory):
 
 
 def coverage_line(book, team_id=None):
-    if not book["coverage_complete"] or not book.get("player_attribution_complete", True):
+    if not book["coverage_complete"]:
         return (
             "**Coverage:** PARTIAL. One or more legacy games lack a complete "
             "stat receipt. Tables show only preserved statistics and must not "
@@ -354,9 +354,9 @@ def leaders_markdown(year, book):
         coverage_line(book),
         "",
     ]
-    if not book["coverage_complete"]:
+    if not book["coverage_complete"] or not book.get("player_attribution_complete", True):
         lines += [
-            "League rankings are withheld while coverage is incomplete. "
+            "League rankings are withheld while player attribution is incomplete. "
             "Known lines remain available in `league_player_stats.md`, but "
             "they are not labeled as league leaders.",
             "",
