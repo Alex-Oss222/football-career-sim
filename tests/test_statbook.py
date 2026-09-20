@@ -29,11 +29,20 @@ class StatbookTests(unittest.TestCase):
         }
         return {
             "terminated": True,
+            "kernel_version": "test",
             "event_id": event_id,
             "final_score": {"A": 20, "B": 17},
             "team_stats": {
                 "A": {**base, "players": {"qb-a": a, "rb-a": b, "bench-a": bench}},
                 "B": {**base, "points": 17, "players": {"qb-b": a, "rb-b": b, "bench-b": bench}},
+            },
+            "play_ledger": [
+                {"sequence":1,"offense":"A","play_type":"pass","concept":"Mesh"},
+                {"sequence":2,"offense":"B","play_type":"run","concept":"Power"},
+            ],
+            "play_call_stats": {
+                "A":{"Mesh":{"family":"Mesh","snaps":1,"dropbacks":1,"pass_attempts":1,"completions":1,"yards":12,"runs":0,"touchdowns":0,"turnovers":0,"sacks":0}},
+                "B":{"Power":{"family":"Power","snaps":1,"runs":1,"dropbacks":0,"pass_attempts":0,"completions":0,"yards":5,"touchdowns":0,"turnovers":0,"sacks":0}},
             },
         }
 
@@ -45,6 +54,9 @@ class StatbookTests(unittest.TestCase):
         self.assertEqual(book["teams"]["A"]["games"], 2)
         self.assertEqual(book["teams"]["A"]["team_stats"]["passing_yards"], 500)
         self.assertEqual(book["teams"]["A"]["players"]["qb-a"]["pass_attempts"], 60)
+        self.assertEqual(book["plays_recorded"], 4)
+        self.assertEqual(book["play_calls"]["A"]["Mesh"]["snaps"], 2)
+        self.assertEqual(book["play_calls"]["A"]["Mesh"]["yards"], 24)
         self.assertIn("bench-a", book["teams"]["A"]["players"])
         self.assertIn("bench-a", book["players"])
         self.assertEqual(book["players"]["bench-a"]["receiving_yards"], 0)
