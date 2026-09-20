@@ -35,3 +35,5 @@ Dates, times and venues are historical schedule facts from `library/2013_jackson
 | 17 | Sun. Dec. 29 | 1:00 p.m. ET | Jacksonville at Indianapolis Colts | Away | `week_17_jacksonville_at_indianapolis/output.md` |
 
 The rest of the league's games each week are recorded in `../league_results/week_NN.md`. The current league, conference and division standings live in `../standings.md`; update that file whenever final scores change records.
+
+Every closed game also feeds the season statbook in `../stats/`. Preserve the public stat receipt at game closure, then refresh the current Jacksonville player stats, league player stats and league-leader view from receipts. Do not hand-carry cumulative totals from one weekly output to the next.
