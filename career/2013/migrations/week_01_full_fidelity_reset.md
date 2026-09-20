@@ -6,7 +6,7 @@
 
 **Technical-abort record (September 20, 2026):** the first full-fidelity reset attempt privately closed all 16 `reset-v1` events, then an older workflow erroneously advanced the private snapshot before public publication. Codex subsequently failed because the generated Git diff exceeded its extraction limit; no reset commit or PR reached `main`, and no v1 result was published to the user as replacement canon. HTTP deployment logs independently show the 16 event closures followed by the premature snapshot-advance call. Under the project's transaction rule this entire v1 batch is an outcome-independent technical abort. Generation 2 uses new event IDs and may run only after the private binding is auditably restored to the checked-in canonical state.
 
-The retry must record a private correction for each known `2013-week01-reset-v1-01` through `...-16` event ID with the same technical-abort reason before closing any generation-2 replacement event. This preserves the private append-only audit trail without exposing the abandoned results.
+The retry must run `python scripts/mark_week1_v1_aborted.py` before closing any generation-2 replacement event. That helper idempotently records the same private correction for each known `2013-week01-reset-v1-01` through `...-16` event ID. This preserves the private append-only audit trail without exposing the abandoned results.
 
 ## Why the reset needs reconstruction
 
