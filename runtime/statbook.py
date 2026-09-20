@@ -8,7 +8,7 @@ from copy import deepcopy
 
 from .player_evidence import STAT_FIELDS
 
-STATBOOK_SCHEMA_VERSION = 1
+STATBOOK_SCHEMA_VERSION = 2
 
 TEAM_STAT_FIELDS = (
     "points", "touchdowns", "field_goals", "punts", "turnovers",
@@ -39,8 +39,11 @@ def make_receipt(result, *, week, matchup, coverage="complete"):
         "week": week,
         "matchup": matchup,
         "coverage": coverage,
+        "kernel_version": result.get("kernel_version"),
         "final_score": deepcopy(result["final_score"]),
         "team_stats": deepcopy(team_stats),
+        "play_ledger": deepcopy(result.get("play_ledger", [])),
+        "play_call_stats": deepcopy(result.get("play_call_stats", {})),
     }
 
 
@@ -74,6 +77,7 @@ def aggregate_receipts(receipts):
     seen = set()
     teams = {}
     league_players = {}
+    play_calls = {}
     through_week = 0
     complete = True
     player_stat_fields = set(STAT_FIELDS)
@@ -87,6 +91,16 @@ def aggregate_receipts(receipts):
             raise ValueError("unsupported statbook schema")
         through_week = max(through_week, int(receipt.get("week", 0)))
         complete = complete and receipt.get("coverage") == "complete"
+
+        for team_id, calls in receipt.get("play_call_stats", {}).items():
+            team_calls = play_calls.setdefault(team_id, {})
+            for name, line in calls.items():
+                row = team_calls.setdefault(name, {"family": line.get("family", name)})
+                for field, value in line.items():
+                    if field == "family":
+                        continue
+                    if isinstance(value, (int, float)) and not isinstance(value, bool):
+                        row[field] = row.get(field, 0) + value
 
         for team_id, game in receipt.get("team_stats", {}).items():
             team = teams.setdefault(team_id, _blank_team())
@@ -130,9 +144,11 @@ def aggregate_receipts(receipts):
         "through_week": through_week,
         "coverage_complete": complete,
         "receipt_count": len(receipts),
+        "plays_recorded": sum(len(receipt.get("play_ledger", [])) for receipt in receipts),
         "player_stat_fields": sorted(player_stat_fields),
         "teams": teams,
         "players": league_players,
+        "play_calls": play_calls,
     }
 
 
