@@ -156,10 +156,18 @@ class Store:
         """Compatibility wrapper for local tests and legacy body callers."""
         return self.close_digest(event_id,hashlib.sha256(packet).hexdigest())
     def correct(self,event_id,reason):
-        if not reason.strip(): raise ValueError("correction reason required")
+        if not isinstance(reason,str) or not reason.strip():
+            raise ValueError("correction reason required")
+        reason=reason.strip()
         with closing(self.connect()) as c, c:
-            if not c.execute("SELECT 1 FROM events WHERE event_id=?",(event_id,)).fetchone(): raise ValueError("unknown event")
-            c.execute("INSERT INTO corrections(event_id,reason,created) VALUES(?,?,?)",(event_id,reason,int(time.time())))
+            if not c.execute("SELECT 1 FROM events WHERE event_id=?",(event_id,)).fetchone():
+                raise ValueError("unknown event")
+            if not c.execute(
+                    "SELECT 1 FROM corrections WHERE event_id=? AND reason=?",
+                    (event_id,reason)).fetchone():
+                c.execute(
+                    "INSERT INTO corrections(event_id,reason,created) VALUES(?,?,?)",
+                    (event_id,reason,int(time.time())))
 
 def handler(store,token,snapshot=None):
     class Handler(BaseHTTPRequestHandler):
