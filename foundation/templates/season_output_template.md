@@ -35,16 +35,34 @@ Every closed regular-season or postseason game also produces a **public stat rec
 
 `career/[year]/stats/game_receipts/`
 
-That receipt is downstream of the already-resolved game. It may contain only public box-score statistics and identifiers needed to rebuild season totals. It must never contain private Engine State material, hidden ratings, matchup deltas, probabilities, or seeds.
+That receipt is downstream of the already-resolved game. Under kernel 2013.3 it contains the complete public player-stat dictionaries, the complete public snap `play_ledger`, game-level named `play_call_stats`, and identifiers needed to rebuild season totals. It must never contain private Engine State material, hidden ratings, matchup deltas, probabilities, or seeds.
 
 The current season-stat views are separate from standings:
 
 - `career/[year]/stats/team_player_stats.md` — protagonist-team season-to-date player production;
 - `career/[year]/stats/league_player_stats.md` — all-club season-to-date player production;
+- `career/[year]/stats/play_call_stats.md` — protagonist offense season-to-date named-call usage and results;
 - `career/[year]/stats/league_leaders.md` — league leaders only when receipt coverage is complete;
 - `career/[year]/standings.md` — team records and tiebreak position only.
 
 Season totals should be rebuilt mechanically from game receipts using the repository statbook tooling rather than hand-added from the prior week's Markdown. A missing legacy attribution remains missing; never import the real historical game's statistic to fill it.
+
+## Structured weekly call-sheet rule
+
+Before a protagonist game is closed under kernel 2013.3, the executable offensive menu used by the simulator must be passed as structured `TeamInput.offensive_call_sheet` data. This is the machine-readable version of the call sheet Stone and staff already approved during preparation.
+
+A call entry may contain:
+
+- `name` — human-readable call label for the snap ledger;
+- `family` — stable concept identity, such as `Mesh`, `Power`, or `Y-Cross`;
+- `type` — `run`, `pass`, `any`, or `mixed`;
+- `personnel`;
+- `formation`;
+- `motion`;
+- `protection`;
+- `tags`.
+
+Do not invent structure that was not actually prepared. If only the family is established, supply only the family/name/type. Human display aliases do not determine the result; football substance is canonicalized in the frozen game packet. A named-call season total may be reported only from the generated snap ledger, never inferred afterward from the prose recap.
 
 ## Depth and word-count rule
 
@@ -446,6 +464,7 @@ Do not repeat the entire roster or every unchanged backup. `career/[year]/roster
 **Division / conference position:** [Only if materially useful; standings.md remains authoritative.]
 **Season player stats:** [`career/[year]/stats/team_player_stats.md` version / through week]
 **League player stats:** [`career/[year]/stats/league_player_stats.md` version / coverage status]
+**Stone play-call stats:** [`career/[year]/stats/play_call_stats.md` version / through week]
 **League leaders:** [`career/[year]/stats/league_leaders.md` version / complete or withheld]
 **Ledger entry:** [Entry N]
 **Next event:** [Exact next football/calendar event]
