@@ -8,6 +8,7 @@ from .kernel import TeamInput, resolve_game, validate_result
 from .packets import canonical
 from .private_client import Client
 from .player_evidence import normalize_players, serialize_roster
+from .play_detail import canonical_call_sheet
 
 ENTROPY_DOMAIN = b"football-career-sim/event-entropy/v1\0"
 
@@ -16,6 +17,7 @@ def _team_packet(team):
     data = asdict(team)
     # Availability and rotation are football inputs; protagonist labels are not.
     data["roster"] = serialize_roster(normalize_players(team))
+    data["offensive_call_sheet"] = canonical_call_sheet(team)
     return data
 
 

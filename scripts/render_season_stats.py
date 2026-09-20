@@ -52,7 +52,7 @@ def team_markdown(year, team_id, book):
     lines = [
         "# %s %s player statistics" % (year, team_id),
         "",
-        "**Version:** `%s-W%02d-TEAM-STATS-1`" % (year, book["through_week"]),
+        "**Version:** `%s-W%02d-TEAM-STATS-2`" % (year, book["through_week"]),
         "**Through:** Week %d." % book["through_week"],
         coverage_line(book),
         "",
@@ -62,31 +62,128 @@ def team_markdown(year, team_id, book):
         return "\n".join(lines)
 
     players = team["players"]
-    lines += ["## Passing", "", "| Player | ATT | YDS | INT |", "|---|---:|---:|---:|"]
-    for player, line in player_rows(players, ("pass_attempts", "passing_yards", "interceptions"), "passing_yards"):
-        lines.append("| %s | %s | %s | %s |" % (
-            player, line["pass_attempts"], line["passing_yards"], line["interceptions"]))
-    lines += ["", "## Rushing", "", "| Player | CAR | YDS | AVG |", "|---|---:|---:|---:|"]
-    for player, line in player_rows(players, ("rushing_attempts", "rushing_yards"), "rushing_yards"):
-        lines.append("| %s | %s | %s | %s |" % (
-            player, line["rushing_attempts"], line["rushing_yards"],
-            avg(line["rushing_yards"], line["rushing_attempts"])))
-    lines += ["", "## Receiving", "", "| Player | REC | YDS | AVG |", "|---|---:|---:|---:|"]
-    for player, line in player_rows(players, ("receptions", "receiving_yards"), "receiving_yards"):
-        lines.append("| %s | %s | %s | %s |" % (
-            player, line["receptions"], line["receiving_yards"],
-            avg(line["receiving_yards"], line["receptions"])))
-    lines += ["", "## Defense", "", "| Player | TKL | SACK |", "|---|---:|---:|"]
-    for player, line in player_rows(players, ("tackles", "sacks"), "tackles"):
-        lines.append("| %s | %s | %s |" % (
-            player, line["tackles"], line["sacks"]))
-    lines += ["", "## Special teams", "", "| Player | FGM | PUNTS | RET YDS |", "|---|---:|---:|---:|"]
-    for player, line in player_rows(players, ("field_goals_made", "punts", "return_yards"), "return_yards"):
-        lines.append("| %s | %s | %s | %s |" % (
-            player, line["field_goals_made"], line["punts"], line["return_yards"]))
+    lines += [
+        "## Passing", "",
+        "| Player | CMP/ATT | YDS | AVG | TD | INT | SACK |",
+        "|---|---:|---:|---:|---:|---:|---:|",
+    ]
+    for player, line in player_rows(
+        players,
+        ("pass_attempts", "passing_yards", "passing_touchdowns", "interceptions"),
+        "passing_yards",
+    ):
+        attempts = line.get("pass_attempts", 0)
+        completions = line.get("completions", 0)
+        lines.append("| %s | %s/%s | %s | %s | %s | %s | %s |" % (
+            player, completions, attempts, line.get("passing_yards", 0),
+            avg(line.get("passing_yards", 0), attempts),
+            line.get("passing_touchdowns", 0), line.get("interceptions_thrown", line.get("interceptions", 0)),
+            line.get("sacks_taken", 0),
+        ))
+
+    lines += [
+        "", "## Rushing", "",
+        "| Player | CAR | YDS | AVG | TD | LNG | FUM |",
+        "|---|---:|---:|---:|---:|---:|---:|",
+    ]
+    for player, line in player_rows(
+        players,
+        ("rushing_attempts", "rushing_yards", "rushing_touchdowns"),
+        "rushing_yards",
+    ):
+        lines.append("| %s | %s | %s | %s | %s | %s | %s |" % (
+            player, line.get("rushing_attempts", 0), line.get("rushing_yards", 0),
+            avg(line.get("rushing_yards", 0), line.get("rushing_attempts", 0)),
+            line.get("rushing_touchdowns", 0), line.get("long_rush", 0),
+            line.get("fumbles", 0),
+        ))
+
+    lines += [
+        "", "## Receiving", "",
+        "| Player | REC | TGTS | YDS | AVG | TD | LNG |",
+        "|---|---:|---:|---:|---:|---:|---:|",
+    ]
+    for player, line in player_rows(
+        players,
+        ("targets", "receptions", "receiving_yards", "receiving_touchdowns"),
+        "receiving_yards",
+    ):
+        lines.append("| %s | %s | %s | %s | %s | %s | %s |" % (
+            player, line.get("receptions", 0), line.get("targets", 0),
+            line.get("receiving_yards", 0),
+            avg(line.get("receiving_yards", 0), line.get("receptions", 0)),
+            line.get("receiving_touchdowns", 0), line.get("long_reception", 0),
+        ))
+
+    lines += [
+        "", "## Defense", "",
+        "| Player | SOLO | AST | TOT | SACK | TFL | PD | INT | INT YDS | FF | FR |",
+        "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|",
+    ]
+    for player, line in player_rows(
+        players,
+        (
+            "tackles", "sacks", "tackles_for_loss", "passes_defended",
+            "defensive_interceptions", "forced_fumbles", "fumble_recoveries",
+        ),
+        "tackles",
+    ):
+        lines.append("| %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s |" % (
+            player, line.get("solo_tackles", 0), line.get("assisted_tackles", 0),
+            line.get("tackles", 0), line.get("sacks", 0),
+            line.get("tackles_for_loss", 0), line.get("passes_defended", 0),
+            line.get("defensive_interceptions", 0),
+            line.get("interception_return_yards", 0),
+            line.get("forced_fumbles", 0), line.get("fumble_recoveries", 0),
+        ))
+
+    lines += [
+        "", "## Kicking", "",
+        "| Player | FGM/FGA | XPM/XPA | PTS |",
+        "|---|---:|---:|---:|",
+    ]
+    for player, line in player_rows(
+        players,
+        ("field_goals_attempted", "field_goals_made", "extra_points_attempted", "extra_points_made"),
+        "field_goals_made",
+    ):
+        points = line.get("field_goals_made", 0) * 3 + line.get("extra_points_made", 0)
+        lines.append("| %s | %s/%s | %s/%s | %s |" % (
+            player, line.get("field_goals_made", 0), line.get("field_goals_attempted", 0),
+            line.get("extra_points_made", 0), line.get("extra_points_attempted", 0), points,
+        ))
+
+    lines += [
+        "", "## Punting", "",
+        "| Player | NO | YDS | AVG | LNG | IN20 |",
+        "|---|---:|---:|---:|---:|---:|",
+    ]
+    for player, line in player_rows(players, ("punts", "punt_yards"), "punt_yards"):
+        lines.append("| %s | %s | %s | %s | %s | %s |" % (
+            player, line.get("punts", 0), line.get("punt_yards", 0),
+            avg(line.get("punt_yards", 0), line.get("punts", 0)),
+            line.get("long_punt", 0), line.get("punts_inside_20", 0),
+        ))
+
+    lines += [
+        "", "## Returns", "",
+        "| Player | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |",
+        "|---|---:|---:|---:|---:|---:|---:|",
+    ]
+    for player, line in player_rows(
+        players,
+        ("kick_returns", "kick_return_yards", "punt_returns", "punt_return_yards"),
+        "return_yards",
+    ):
+        lines.append("| %s | %s | %s | %s | %s | %s | %s |" % (
+            player, line.get("kick_returns", 0), line.get("kick_return_yards", 0),
+            avg(line.get("kick_return_yards", 0), line.get("kick_returns", 0)),
+            line.get("punt_returns", 0), line.get("punt_return_yards", 0),
+            avg(line.get("punt_return_yards", 0), line.get("punt_returns", 0)),
+        ))
+
     lines.append("")
     return "\n".join(lines)
-
 
 def league_markdown(year, book):
     players = book["players"]
@@ -134,19 +231,30 @@ def league_markdown(year, book):
 def all_players_markdown(year, book):
     fields = list(book.get("player_stat_fields", ()))
     preferred_order = [
-        "pass_attempts", "passing_yards", "interceptions",
-        "rushing_attempts", "rushing_yards",
-        "receptions", "receiving_yards",
-        "sacks_allowed", "sacks", "pressures", "fumbles",
-        "field_goals_made", "punts", "return_yards", "tackles",
+        "dropbacks", "pass_attempts", "completions", "passing_yards",
+        "passing_touchdowns", "interceptions_thrown", "sacks_taken", "sack_yards",
+        "rushing_attempts", "rushing_yards", "rushing_touchdowns", "long_rush",
+        "targets", "receptions", "receiving_yards", "receiving_touchdowns", "long_reception",
+        "fumbles", "fumbles_lost",
+        "sacks_allowed", "sacks", "pressures", "solo_tackles", "assisted_tackles",
+        "tackles", "tackles_for_loss", "passes_defended", "defensive_interceptions",
+        "interception_return_yards", "forced_fumbles", "fumble_recoveries",
+        "field_goals_attempted", "field_goals_made", "extra_points_attempted",
+        "extra_points_made", "punts", "punt_yards", "long_punt", "punts_inside_20",
+        "kick_returns", "kick_return_yards", "punt_returns", "punt_return_yards",
+        "return_yards",
     ]
     ordered = [field for field in preferred_order if field in fields]
     ordered += sorted(field for field in fields if field not in ordered)
 
     labels = {
+        "dropbacks": "DB",
         "pass_attempts": "Pass Att",
+        "completions": "Cmp",
         "passing_yards": "Pass Yds",
-        "interceptions": "INT thrown",
+        "passing_touchdowns": "Pass TD",
+        "interceptions_thrown": "INT thrown",
+        "sacks_taken": "Sacks taken",
         "rushing_attempts": "Rush Att",
         "rushing_yards": "Rush Yds",
         "receptions": "Rec",
@@ -225,6 +333,34 @@ def leaders_markdown(year, book):
     return "\n".join(lines)
 
 
+
+def play_calls_markdown(year, team_id, book):
+    calls = book.get("play_calls", {}).get(team_id, {})
+    lines = [
+        "# %s %s offensive play-call statistics" % (year, team_id),
+        "",
+        "**Version:** `%s-W%02d-PLAY-CALL-STATS-1`" % (year, book["through_week"]),
+        "**Through:** Week %d." % book["through_week"],
+        coverage_line(book),
+        "",
+        "These are generated game-use totals for the named calls supplied in the weekly offensive call sheet. Generic calls appear only when a game packet did not provide a named call menu.",
+        "",
+        "| Call | Family | Snaps | Runs | Dropbacks | CMP/ATT | Yards | YPP | TD | TO | Sacks |",
+        "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|",
+    ]
+    rows = sorted(calls.items(), key=lambda item: (-item[1].get("snaps", 0), item[0]))
+    for name, line in rows:
+        snaps = line.get("snaps", 0)
+        lines.append("| %s | %s | %s | %s | %s | %s/%s | %s | %s | %s | %s | %s |" % (
+            name, line.get("family", name), snaps, line.get("runs", 0),
+            line.get("dropbacks", 0), line.get("completions", 0),
+            line.get("pass_attempts", 0), line.get("yards", 0),
+            avg(line.get("yards", 0), snaps), line.get("touchdowns", 0),
+            line.get("turnovers", 0), line.get("sacks", 0),
+        ))
+    lines.append("")
+    return "\n".join(lines)
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("year", type=int)
@@ -253,6 +389,9 @@ def main():
     )
     (stats_dir / "league_leaders.md").write_text(
         leaders_markdown(args.year, book), encoding="utf-8"
+    )
+    (stats_dir / "play_call_stats.md").write_text(
+        play_calls_markdown(args.year, args.team, book), encoding="utf-8"
     )
 
 

@@ -83,11 +83,12 @@ career/
     statbook.md                 <- obvious front door for standings + every current season stat view
     stats/
       README.md                  <- statbook ownership, coverage and rebuild rules
-      game_receipts/             <- one public stat-only JSON receipt per closed game
+      game_receipts/             <- one public stat + full snap-ledger JSON receipt per closed game
       season_totals.json         <- generated cumulative arithmetic when receipt coverage exists
       team_player_stats.md       <- readable protagonist-team season-to-date player stats
       all_player_stats.md        <- comprehensive all-player supported-field ledger
       league_player_stats.md     <- readable all-club season-to-date category stats
+      play_call_stats.md         <- current protagonist offense named-call usage/results
       league_leaders.md          <- derived league leaders; withheld when coverage is incomplete
     preseason/
       README.md                 <- game index (date, kickoff, matchup, home/away)

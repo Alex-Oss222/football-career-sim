@@ -70,7 +70,12 @@
     "scripts/render_season_stats.py",
     "tests/test_statbook.py",
     "career/2013/statbook.md",
-    "career/2013/stats/all_player_stats.md"
+    "career/2013/stats/all_player_stats.md",
+    "career/2013/stats/play_call_stats.md",
+    "career/2013/migrations/week_01_full_fidelity_reset.md",
+    "career/2013/migrations/week_01_full_fidelity_reset.json",
+    "runtime/play_detail.py",
+    "scripts/check_week1_reset_ready.py"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",

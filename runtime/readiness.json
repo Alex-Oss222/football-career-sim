@@ -1,10 +1,69 @@
 {
   "schema_version": 1,
   "requirements": [
-    {"id":"calibration","label":"Era calibration","status":"VERIFIED","evidence":["library/2012_game_calibration.md","library/data/2012_nfl_aggregate_baseline.json","runtime/calibration.py","tests/test_runtime.py"],"remaining":"Verified; no remaining repository blocker."},
-    {"id":"playing_rules","label":"2013 game rules","status":"VERIFIED","evidence":["foundation/02_League_Era_and_Sourcebook.md","library/2013_playing_rules.md","runtime/rules.py","tests/test_runtime.py"],"remaining":"Verified; no remaining repository blocker."},
-    {"id":"injury_model","label":"Injury calibration","status":"VERIFIED","evidence":["library/2012_game_calibration.md","runtime/injuries.py","tests/test_runtime.py"],"remaining":"Verified; no remaining repository blocker."},
-    {"id":"football_kernel","label":"Shared football kernel","status":"VERIFIED","evidence":["runtime/game_runner.py","runtime/kernel.py","runtime/player_evidence.py","runtime/packets.py","tests/test_game_runner.py","tests/test_runtime.py"],"remaining":"Verified; no remaining repository blocker."},
-    {"id":"private_runtime","label":"Private Engine State","status":"VERIFIED","evidence":["runtime/private_service.py","runtime/private_client.py","tests/test_game_runner.py","tests/test_private_runtime.py"],"remaining":"Verified in implementation; every invocation still requires a successful authenticated live probe."}
+    {
+      "id": "calibration",
+      "label": "Era calibration",
+      "status": "VERIFIED",
+      "evidence": [
+        "library/2012_game_calibration.md",
+        "library/data/2012_nfl_aggregate_baseline.json",
+        "runtime/calibration.py",
+        "tests/test_runtime.py"
+      ],
+      "remaining": "Verified; no remaining repository blocker."
+    },
+    {
+      "id": "playing_rules",
+      "label": "2013 game rules",
+      "status": "VERIFIED",
+      "evidence": [
+        "foundation/02_League_Era_and_Sourcebook.md",
+        "library/2013_playing_rules.md",
+        "runtime/rules.py",
+        "tests/test_runtime.py"
+      ],
+      "remaining": "Verified; no remaining repository blocker."
+    },
+    {
+      "id": "injury_model",
+      "label": "Injury calibration",
+      "status": "VERIFIED",
+      "evidence": [
+        "library/2012_game_calibration.md",
+        "runtime/injuries.py",
+        "tests/test_runtime.py"
+      ],
+      "remaining": "Verified; no remaining repository blocker."
+    },
+    {
+      "id": "football_kernel",
+      "label": "Shared football kernel",
+      "status": "VERIFIED",
+      "evidence": [
+        "runtime/game_runner.py",
+        "runtime/kernel.py",
+        "runtime/player_evidence.py",
+        "runtime/packets.py",
+        "tests/test_game_runner.py",
+        "tests/test_runtime.py",
+        "runtime/play_detail.py",
+        "runtime/statbook.py",
+        "tests/test_statbook.py"
+      ],
+      "remaining": "Verified by repository tests for shared kernel, full public snap ledger, player-stat reconciliation and season-stat aggregation."
+    },
+    {
+      "id": "private_runtime",
+      "label": "Private Engine State",
+      "status": "VERIFIED",
+      "evidence": [
+        "runtime/private_service.py",
+        "runtime/private_client.py",
+        "tests/test_game_runner.py",
+        "tests/test_private_runtime.py"
+      ],
+      "remaining": "Verified in implementation; every invocation still requires a successful authenticated live probe."
+    }
   ]
 }
