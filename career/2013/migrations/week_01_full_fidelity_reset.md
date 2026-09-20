@@ -18,9 +18,9 @@ A replacement slate therefore cannot be reconstructed honestly from the existing
 
 ## Internal execution gate
 
-`week_01_full_fidelity_reset.json` lists all 16 Week 1 games. Before any reset game can be closed, each row must contain complete canonical pre-Week-1 `away_input` and `home_input` objects sufficient to construct `runtime.kernel.TeamInput`.
+`week_01_full_fidelity_reset.json` is small committed control metadata listing all 16 Week 1 games and replacement event IDs. The complete reconstructed pre-Week-1 `away_input` and `home_input` objects belong in the gitignored `.sim_cache/week_01_full_fidelity_inputs.json`, where `scripts/check_week1_reset_ready.py` overlays them for the execution gate.
 
-**This is not a user-maintenance gate.** When the user says `Run Week 1`, Codex owns researching, constructing, source-recording and freezing those 32 TeamInputs as part of the same task. A failed first pass of `check_week1_reset_ready.py` means internal preparation remains; it is not grounds to ask the user to edit JSON or run another command.
+**This is not a user-maintenance gate.** When the user says `Run Week 1`, Codex owns researching, constructing, source-recording and freezing those 32 TeamInputs as part of the same task. Codex must write the large reconstructed objects to `.sim_cache/`, never to the committed migration manifest. A failed first pass of `check_week1_reset_ready.py` means internal preparation remains; it is not grounds to ask the user to edit JSON or run another command.
 
 Every replacement input must be dated to the September 4 checkpoint and include, where applicable:
 
@@ -43,7 +43,7 @@ If it does not pass, Codex must complete the missing canonical TeamInput reconst
 
 1. Freeze all 32 team inputs before drawing any replacement game.
 2. Close all 16 replacement events under the same kernel version and same reset batch.
-3. Preserve one full public stat/snap receipt per game.
+3. Preserve one full public stat/snap receipt for Jacksonville-Kansas City and `compact_stats` receipts for the other 15 games. The background compact receipts retain every nonzero generated statistic required for league totals and leaders without committing 15 redundant snap ledgers.
 4. Rebuild standings, Jacksonville player stats, all-player stats, league stats, named-play stats and league leaders from the replacement receipts.
 5. Reconcile all replacement injuries/availability across affected current records.
 6. Rewrite Jacksonville Week 1 using the current season template.
