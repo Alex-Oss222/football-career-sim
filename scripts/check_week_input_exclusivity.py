@@ -13,12 +13,17 @@ ROOT = Path(__file__).resolve().parents[1]
 def controlled_players_from_roster(path: Path) -> set[str]:
     text = path.read_text(encoding="utf-8")
     controlled: set[str] = set()
+    controlled_status = re.compile(
+        r"^(?:Active 53|Practice squad|Injured reserve|IR|Reserve(?:/[^|]+)?|"
+        r"PUP|NFI|Suspended|Commissioner(?:/[^|]+)?)$",
+        re.IGNORECASE,
+    )
     for line in text.splitlines():
-        match = re.match(r"^\|\s*([^|]+?)\s*\|\s*Active 53\s*\|", line)
-        if match:
+        match = re.match(r"^\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|", line)
+        if match and controlled_status.match(match.group(2).strip()):
             controlled.add(match.group(1).strip())
         if line.startswith("**Jacksonville practice squad (not active 53):**"):
-            _, names = line.split("**:", 1)
+            _, names = line.split(":**", 1)
             controlled.update(
                 name.strip().rstrip(".")
                 for name in names.split(",")
