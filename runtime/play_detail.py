@@ -70,6 +70,31 @@ def _normalize_call(raw, default_type):
     return _normalize_call(default_type.title(), default_type)
 
 
+def canonical_call_sheet(team):
+    """Return football-substance-only call metadata for outcome commitment.
+
+    Display aliases and list order are intentionally excluded so rewording a
+    call name cannot change the outcome draw. The current possession kernel does
+    not yet use call-level matchup effects, but it still freezes the structural
+    weekly menu for audit/replay purposes.
+    """
+    raw = tuple(getattr(team, "offensive_call_sheet", ()) or ())
+    rows = []
+    for item in raw:
+        normalized = _normalize_call(item, "any")
+        rows.append({
+            "family": normalized["family"],
+            "type": normalized["type"],
+            "personnel": normalized["personnel"],
+            "formation": normalized["formation"],
+            "motion": normalized["motion"],
+            "protection": normalized["protection"],
+            "tags": list(normalized["tags"]),
+        })
+    rows.sort(key=lambda row: json.dumps(row, sort_keys=True, separators=(",", ":")))
+    return rows
+
+
 def _call_sheet(team, play_type):
     raw = tuple(getattr(team, "offensive_call_sheet", ()) or ())
     normalized = [_normalize_call(item, play_type) for item in raw]
