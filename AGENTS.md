@@ -129,7 +129,7 @@ For the named week, Codex must autonomously:
 7. Write the protagonist weekly `output.md` using the current season-output template and write the background roundup to `league_results/week_NN.md`.
 8. Rebuild standings and season statistics from receipts; never hand-add totals from Markdown.
 9. Reconcile injuries, availability, roles, transactions and other actually changed state.
-10. Close the ledger/current state/calendar atomically, advance the private snapshot after public canon closes, rerun readiness, validate, and use the normal PR flow.
+10. Close the ledger/current state/calendar atomically and validate the branch. Open the normal PR. **Do not advance the private snapshot from an unmerged branch.** If Codex can merge the PR, merge it first, update/check out the merged `main`, then advance the private snapshot to the merged Document 5 digest and rerun readiness. If Codex cannot merge, leave the private snapshot unchanged and report snapshot advancement as pending merge.
 11. Stop before Week N+1.
 
 ### User-plan handling
@@ -145,6 +145,7 @@ A user-authorized migration for the requested week is an **internal prerequisite
 For the 2013 Week 1 full-fidelity reset specifically:
 
 - Read `career/2013/migrations/week_01_full_fidelity_reset.md` and its JSON manifest.
+- The September 20, 2026 `reset-v1` attempt is an audited technical abort: all 16 private events closed, but the generated Git diff exceeded the Codex extraction limit and no public reset commit/PR landed. Use only the current generation IDs in the manifest; never attempt to publish the abandoned v1 results.
 - If `python scripts/check_week1_reset_ready.py` reports missing TeamInputs, **do not stop and ask the user to fill them**.
 - Research and construct all missing pre-Week-1 TeamInputs yourself from date-eligible public sources and branch canon. Write the reconstructed full TeamInput objects to the gitignored .sim_cache/week_01_full_fidelity_inputs.json, not into the committed migration manifest, then rerun the gate. The committed manifest remains small control metadata.
 - Use verified historical Week-1 roster membership/position/availability facts for non-Jacksonville clubs as date-specific roster rails when no earlier branch transaction overrides them. Historical Week-1 scores, statistics, injuries produced by the real games, later depth-chart outcomes and later season/career results are forbidden inputs.
@@ -155,6 +156,17 @@ For the 2013 Week 1 full-fidelity reset specifically:
 - Freeze all 32 reconstructed TeamInputs before any replacement Week 1 draw.
 - Only after the reset gate passes may any replacement event close. Then replace all 16 Week 1 games as one batch. Preserve a full Jacksonville receipt and compact_stats receipts for the other 15 games, rebuild every dependent stat/standings view, append the supersession entry, reconcile injuries/state and validate before Week 2.
 - Never rerun only Jacksonville while leaving the other 15 legacy Week 1 games active.
+
+### Public/private transaction boundary
+
+Private event closure may occur while a week is being generated, but the **private snapshot is a canonical-publication pointer**, not a branch-work pointer.
+
+- Never call `advance_private_snapshot.py` or `/admin/snapshot/advance` for an unmerged branch.
+- A week becomes publishable canon only after its complete public dependency set is committed and merged to `main`.
+- If a Codex task, Git operation, diff extraction, validation, or PR creation fails before merge, the public week transaction is mechanically **aborted** regardless of its simulated outcome. Do not show/select among aborted results.
+- A later retry must use a new migration/event generation identifier when the prior closed packets cannot be reproduced exactly. The reason is the recorded technical abort, never whether the prior result was desirable.
+- Any stranded private snapshot created by an older workflow bug must be restored only through the audited checked-in-snapshot recovery mechanism; never edit the SQLite file or silently overwrite transition history.
+- After merge, update to the merged `main`, then and only then advance the private snapshot and run final readiness.
 
 ### Diff-size / generated-data rule
 
