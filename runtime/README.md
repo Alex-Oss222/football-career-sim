@@ -30,6 +30,6 @@ Kernel 2013.3 keeps score/outcome generation at the possession layer and adds a 
 - `play_ledger` records every generated scrimmage snap plus scoring/punt/kickoff terminal plays.
 - `play_call_stats` aggregates named offensive call usage for the closed game.
 - The player dictionary now supports passing, rushing, receiving, protection, defense, kicking, punting and return counters.
-- `runtime/statbook.py` stores player stats, the full snap ledger and named-call totals in each public game receipt and accumulates them across the season.
+- `runtime/statbook.py` supports `full` receipts for Jacksonville/protagonist games and `compact_stats` receipts for ordinary background games. Both preserve generated statistical production for season accounting; only the full receipt keeps the snap ledger and named-call detail.
 
 The snap-detail layer is public post-resolution accounting. It never receives the private career seed directly outside the kernel call, and it cannot alter the already-resolved drive outcome.
