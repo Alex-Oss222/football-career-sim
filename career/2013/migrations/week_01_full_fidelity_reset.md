@@ -1,10 +1,10 @@
 # Week 1 full-fidelity reset
 
-**Status:** BLOCKED — authorized, not executed.  
-**User authorization:** The user explicitly asked to make the full-stat/full-play changes and redo Week 1.  
+**Status:** AUTO-RESOLVABLE INTERNAL PREREQUISITE — authorized, not executed.  
+**User authorization:** The user explicitly authorized the full-stat/full-play Week 1 replacement and later instructed that `Run Week 1` must perform all reset preparation automatically without sending setup work back to the user.  
 **Source checkpoint:** `Canonical update - September 4, 2013 - preseason, roster and cap block closed`.
 
-## Why this is blocked
+## Why the reset needs reconstruction
 
 The original Week 1 closure did not commit the 16 frozen production game packets or their event IDs. The private Engine State journal intentionally does not expose old packet rows through the public API. The fifteen background games also did not commit complete player-level TeamInput/roster packets.
 
@@ -16,9 +16,11 @@ A replacement slate therefore cannot be reconstructed honestly from the existing
 - invent named play calls for the old Jacksonville game;
 - rerun only Jacksonville while leaving the other 15 games on the legacy data contract.
 
-## Required execution gate
+## Internal execution gate
 
 `week_01_full_fidelity_reset.json` lists all 16 Week 1 games. Before any reset game can be closed, each row must contain complete canonical pre-Week-1 `away_input` and `home_input` objects sufficient to construct `runtime.kernel.TeamInput`.
+
+**This is not a user-maintenance gate.** When the user says `Run Week 1`, Codex owns researching, constructing, source-recording and freezing those 32 TeamInputs as part of the same task. A failed first pass of `check_week1_reset_ready.py` means internal preparation remains; it is not grounds to ask the user to edit JSON or run another command.
 
 Every replacement input must be dated to the September 4 checkpoint and include, where applicable:
 
@@ -31,11 +33,11 @@ Every replacement input must be dated to the September 4 checkpoint and include,
 - Jacksonville's structured weekly offensive call sheet for the protagonist game;
 - any other football input required by the active runtime schema.
 
-Run:
+Codex must run:
 
 `python scripts/check_week1_reset_ready.py`
 
-The command must exit successfully before any Week 1 replacement simulation is attempted.
+If it does not pass, Codex must complete the missing canonical TeamInput reconstruction and rerun it. The command must exit successfully before any Week 1 replacement simulation is attempted.
 
 ## Replacement procedure once ready
 
@@ -50,4 +52,4 @@ The command must exit successfully before any Week 1 replacement simulation is a
 9. Advance current state only after every dependency reconciles atomically.
 10. Do not start Week 2 until the replacement Week 1 package validates.
 
-Until that gate passes, the existing Week 1 result remains the active canon and its statbook coverage remains explicitly partial.
+Until the internal gate passes, the existing Week 1 result remains the active canon and its statbook coverage remains explicitly partial. The user should not be asked to perform any reset-preparation step.
