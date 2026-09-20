@@ -23,15 +23,13 @@ This directory is the **current season-stat layer**, parallel to but separate fr
 8. **Zero counters are preserved only where useful.** Full Jacksonville/protagonist receipts preserve zero counters. Compact background receipts intentionally omit zero-only players and zero-valued fields; this does not remove any generated nonzero statistical production and does not imply non-participation.
 9. **Standings and statistics remain separate authorities.** A statistical ranking never changes a tiebreak or team record.
 
-## Week 1 bootstrap limitation
+## Week 1 full-fidelity coverage
 
-Week 1 was closed before this statbook existed. Jacksonville-Kansas City preserved enough of its player production to build a useful team view, but the fifteen background games saved only scores, highlights and selected standout lines. Their complete player-level result objects were not committed to the repository.
+The authorized generation-2 reset replaced all sixteen legacy Week 1 games under kernel 2013.3. Jacksonville-Kansas City has a full receipt with public snap and named-call detail; the other fifteen games have compact statistical receipts preserving every nonzero generated team and player statistic.
 
 Accordingly:
 
-- Jacksonville's Week 1 file below is exact for the preserved lines, with unattributed remainder called out.
-- `all_player_stats.md` keeps every Week 1 player/stat line that survived in the committed records and labels all missing legacy fields as unavailable rather than zero.
-- The league player-stat view contains only lines that were actually preserved in the Week 1 records.
-- `league_leaders.md` withholds formal rankings until Week 1 can be idempotently backfilled from the exact closed game packets, or another complete canonical source becomes available.
-- Starting with the first game resolved under kernel 2013.3, Jacksonville keeps a full public stat/snap receipt and ordinary background games keep compact complete-stat receipts, so league statistical coverage remains complete without duplicating every background snap in Git.
-- Week 1 also lacks canonical named-play usage because its old kernel did not generate a snap ledger. No concept usage count may be reconstructed from narrative prose.
+- `all_player_stats.md` renders every nonzero Week 1 player statistic from the complete receipt set.
+- `league_player_stats.md` and `league_leaders.md` may publish formal Week 1 rankings.
+- `play_call_stats.md` renders Jacksonville's generated named-call use directly from the full receipt.
+- Background compact receipts omit snap ledgers and zero-only counters only for storage efficiency; statistical coverage is complete.

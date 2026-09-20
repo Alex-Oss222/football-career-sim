@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "migration": "2013-week-01-full-fidelity-reset",
-  "status": "AUTO_PREP_REQUIRED_GENERATION_2",
+  "status": "GENERATION_2_CLOSED_PENDING_PUBLICATION",
   "user_authorized": true,
   "source_checkpoint": "Canonical update - September 4, 2013 - preseason, roster and cap block closed",
   "purpose": "Replace the legacy Week 1 slate only after all 16 games can be rerun under the full snap/stat receipt contract.",
