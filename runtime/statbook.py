@@ -41,7 +41,8 @@ def _compact_team_stats(team_stats):
     return compact
 
 
-def make_receipt(result, *, week, matchup, coverage="complete", detail="full"):
+def make_receipt(result, *, week, matchup, coverage="complete", detail="full",
+                 player_attribution_incomplete_teams=()):
     """Return a public receipt for one already-closed game.
 
     full keeps the snap ledger and all player counters. compact_stats keeps
@@ -59,6 +60,8 @@ def make_receipt(result, *, week, matchup, coverage="complete", detail="full"):
         raise ValueError("unknown stat coverage state")
     if detail not in {"full", "compact_stats"}:
         raise ValueError("unknown receipt detail")
+    if not isinstance(player_attribution_incomplete_teams, (tuple, list, set)):
+        raise ValueError("player attribution teams must be a collection")
     team_stats = result.get("team_stats")
     if not isinstance(team_stats, dict) or len(team_stats) != 2:
         raise ValueError("two-team statistics required")
@@ -77,6 +80,11 @@ def make_receipt(result, *, week, matchup, coverage="complete", detail="full"):
             else _compact_team_stats(team_stats)
         ),
     }
+    incomplete=sorted(set(player_attribution_incomplete_teams))
+    if any(team not in team_stats for team in incomplete):
+        raise ValueError("player attribution team not present in receipt")
+    if incomplete:
+        receipt["player_attribution_incomplete_teams"]=incomplete
     if detail == "full":
         receipt["play_ledger"] = deepcopy(result.get("play_ledger", []))
         receipt["play_call_stats"] = deepcopy(result.get("play_call_stats", {}))
@@ -116,6 +124,8 @@ def aggregate_receipts(receipts):
     play_calls = {}
     through_week = 0
     complete = True
+    player_attribution_complete = True
+    team_player_attribution_complete = {}
     player_stat_fields = set(STAT_FIELDS)
 
     for receipt in receipts:
@@ -127,6 +137,9 @@ def aggregate_receipts(receipts):
             raise ValueError("unsupported statbook schema")
         through_week = max(through_week, int(receipt.get("week", 0)))
         complete = complete and receipt.get("coverage") == "complete"
+        incomplete_teams=set(receipt.get("player_attribution_incomplete_teams", ()))
+        if incomplete_teams:
+            player_attribution_complete=False
 
         for team_id, calls in receipt.get("play_call_stats", {}).items():
             team_calls = play_calls.setdefault(team_id, {})
@@ -139,6 +152,9 @@ def aggregate_receipts(receipts):
                         row[field] = row.get(field, 0) + value
 
         for team_id, game in receipt.get("team_stats", {}).items():
+            team_player_attribution_complete.setdefault(team_id, True)
+            if team_id in incomplete_teams:
+                team_player_attribution_complete[team_id]=False
             team = teams.setdefault(team_id, _blank_team())
             team["games"] += 1
             for field in TEAM_STAT_FIELDS:
@@ -179,6 +195,8 @@ def aggregate_receipts(receipts):
         "schema_version": STATBOOK_SCHEMA_VERSION,
         "through_week": through_week,
         "coverage_complete": complete,
+        "player_attribution_complete": player_attribution_complete,
+        "team_player_attribution_complete": team_player_attribution_complete,
         "receipt_count": len(receipts),
         "plays_recorded": sum(len(receipt.get("play_ledger", [])) for receipt in receipts),
         "player_stat_fields": sorted(player_stat_fields),
