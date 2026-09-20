@@ -29,6 +29,23 @@ Do **not** create separate `prep.md`, `pregame_press.md`, `game_recap.md`, `high
 
 Background games remain in `career/[year]/league_results/week_NN.md`; they are not expanded into this protagonist-team format.
 
+## Season-stat persistence rule
+
+Every closed regular-season or postseason game also produces a **public stat receipt** under:
+
+`career/[year]/stats/game_receipts/`
+
+That receipt is downstream of the already-resolved game. It may contain only public box-score statistics and identifiers needed to rebuild season totals. It must never contain private Engine State material, hidden ratings, matchup deltas, probabilities, or seeds.
+
+The current season-stat views are separate from standings:
+
+- `career/[year]/stats/team_player_stats.md` — protagonist-team season-to-date player production;
+- `career/[year]/stats/league_player_stats.md` — all-club season-to-date player production;
+- `career/[year]/stats/league_leaders.md` — league leaders only when receipt coverage is complete;
+- `career/[year]/standings.md` — team records and tiebreak position only.
+
+Season totals should be rebuilt mechanically from game receipts using the repository statbook tooling rather than hand-added from the prior week's Markdown. A missing legacy attribution remains missing; never import the real historical game's statistic to fill it.
+
 ## Depth and word-count rule
 
 Word counts are planning bands, not quotas. Do not pad a quiet game and do not compress a genuinely major one. High stakes should increase useful evidence and decision context, not adjective density.
@@ -216,20 +233,25 @@ A routine pregame session normally uses **2-3 substantive questions**. A routine
 ---
 
 ~~~
-**[Coach Name] | [Team] ([W]-[L]) | [Season Year] | [Phase label]**
-**Date range:** [Start] - [End]  |  **Days since career start:** [X]
-**Phase:** [Preseason bulk report / Regular Season Week N / Postseason round / Bye Week]  |  **Next:** [Week N+1 vs Opponent / Postseason round / Offseason begins]
+**[Coach Name] ([age]) | [Title] | [Team] ([W]-[L])**
+**[Season Year] | [Phase label] | [Date range] | [Result/current game context]**
+**Next:** [Week N+1 vs Opponent / Postseason round / Offseason begins]  |  **Days since career start:** [X]
 
 ## 1. Coach status
 
 | Field | Value |
 |---|---|
-| Name / Age | [Full name], [age] |
+| Full name | [Full legal name] |
+| Date of birth | [Month Day, Year] |
+| Age on period end date | [Derived from DOB and current date] |
 | Position | [Title] |
 | Team | [Team] ([Conference/Division]) |
 | Reports to | [Superior name, title] |
 | Contract | Year [X] of [Y] @ $[salary] |
-| Career record | [W-L] ([win %]) |
+| Current-team HC record | [W-L] ([win %]) |
+| NFL regular-season HC record | [W-L] |
+| NFL postseason HC record | [W-L] |
+| NFL overall HC record | [W-L, regular + postseason] |
 
 ## 2. Week setup and game preparation
 
@@ -422,6 +444,9 @@ Do not repeat the entire roster or every unchanged backup. `career/[year]/roster
 
 **Record after game:** [W-L]
 **Division / conference position:** [Only if materially useful; standings.md remains authoritative.]
+**Season player stats:** [`career/[year]/stats/team_player_stats.md` version / through week]
+**League player stats:** [`career/[year]/stats/league_player_stats.md` version / coverage status]
+**League leaders:** [`career/[year]/stats/league_leaders.md` version / complete or withheld]
 **Ledger entry:** [Entry N]
 **Next event:** [Exact next football/calendar event]
 ~~~
