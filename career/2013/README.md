@@ -36,6 +36,10 @@ Start with [current state](../../state/05_Current_Season_State.md). The [season 
 
 The preseason and regular-season stubs describe scheduled work only. League results, conditional postseason rounds and closeouts are created when reached. A future folder is never evidence that an event happened.
 
+## Canonical migrations
+
+- [Week 1 full-fidelity reset](migrations/week_01_full_fidelity_reset.md) — user-authorized replacement of the legacy Week 1 slate, currently blocked until all 32 pre-Week-1 TeamInput records are canonical and complete.
+
 ## Durable football inputs
 
 - [Program identity](offseason/the_prowl_program_identity.md)
