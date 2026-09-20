@@ -145,6 +145,29 @@ class PrivateRuntimeTests(unittest.TestCase):
         client._request=request
         with self.assertRaises(PrivateRuntimeUnavailable): client.readiness()
 
+    def test_audited_snapshot_recovery_restores_checked_in_binding(self):
+        client=Client(self.url,token=self.token,snapshot='next')
+        self.assertEqual(client.advance_snapshot('snapshot','next','uncommitted-branch'),'next')
+        self.assertEqual(self.store.current_snapshot(),'next')
+        self.assertEqual(
+            self.store.recover_snapshot('snapshot','uncommitted public transaction failed'),
+            'snapshot')
+        self.store.initialize('snapshot')
+        with self.store.connect() as connection:
+            rows=connection.execute(
+                'select from_snapshot,to_snapshot,reason from snapshot_recoveries'
+            ).fetchall()
+        self.assertEqual(
+            rows,
+            [('next','snapshot','uncommitted public transaction failed')])
+        restarted=Store(Path(self.tmp.name)/'state.sqlite3')
+        restarted.initialize('snapshot')
+        self.assertEqual(restarted.current_snapshot(),'snapshot')
+
+    def test_snapshot_recovery_requires_explicit_reason(self):
+        with self.assertRaises(ValueError):
+            self.store.recover_snapshot('other','')
+
     def test_snapshot_advance_cas_idempotence_conflict_and_restart(self):
         client=Client(self.url,token=self.token,snapshot='next')
         self.assertEqual(client.current_snapshot(),'snapshot')
