@@ -37,6 +37,12 @@ class Store:
                 from_snapshot TEXT NOT NULL,
                 to_snapshot TEXT NOT NULL,
                 reason TEXT NOT NULL,
+                created INTEGER NOT NULL);
+            CREATE TABLE IF NOT EXISTS snapshot_transitions_v2(
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                previous_snapshot TEXT NOT NULL,
+                next_snapshot TEXT NOT NULL,
+                checkpoint TEXT NOT NULL,
                 created INTEGER NOT NULL);""")
     def initialize(self,snapshot):
         with self.lock, closing(self.connect()) as c, c:
@@ -75,19 +81,44 @@ class Store:
         with self.lock, closing(self.connect()) as c, c:
             c.execute("BEGIN IMMEDIATE")
             current=c.execute("SELECT value FROM meta WHERE key='snapshot'").fetchone()[0].decode()
-            existing=c.execute("SELECT next_snapshot,checkpoint FROM snapshot_history WHERE previous_snapshot=?",
-                               (previous_snapshot,)).fetchone()
-            if existing:
-                if existing==(next_snapshot,checkpoint) and current==next_snapshot:
+
+            exact_v2=c.execute(
+                "SELECT 1 FROM snapshot_transitions_v2 "
+                "WHERE previous_snapshot=? AND next_snapshot=? AND checkpoint=? "
+                "ORDER BY id DESC LIMIT 1",
+                (previous_snapshot,next_snapshot,checkpoint)).fetchone()
+            legacy=c.execute(
+                "SELECT next_snapshot,checkpoint FROM snapshot_history "
+                "WHERE previous_snapshot=?",
+                (previous_snapshot,)).fetchone()
+
+            if current==next_snapshot:
+                if exact_v2 or legacy==(next_snapshot,checkpoint):
                     return current
                 raise ValueError("conflicting snapshot transition refused")
             if current!=previous_snapshot:
                 raise ValueError("previous snapshot does not match current snapshot")
-            if c.execute("SELECT 1 FROM snapshot_history WHERE next_snapshot=?",(next_snapshot,)).fetchone():
+
+            # A prior legacy transition from this same previous snapshot may have
+            # been auditably rolled back. The current snapshot comparison above
+            # is the CAS authority; v2 therefore permits a new transition after
+            # recovery while preserving the old append-only history.
+            if c.execute(
+                    "SELECT 1 FROM snapshot_transitions_v2 WHERE next_snapshot=?",
+                    (next_snapshot,)).fetchone():
                 raise ValueError("conflicting snapshot transition refused")
-            c.execute("INSERT INTO snapshot_history VALUES(?,?,?,?)",
-                      (previous_snapshot,next_snapshot,checkpoint,int(time.time())))
-            c.execute("UPDATE meta SET value=? WHERE key='snapshot'",(next_snapshot.encode(),))
+            if c.execute(
+                    "SELECT 1 FROM snapshot_history WHERE next_snapshot=?",
+                    (next_snapshot,)).fetchone():
+                raise ValueError("conflicting snapshot transition refused")
+
+            c.execute(
+                "INSERT INTO snapshot_transitions_v2"
+                "(previous_snapshot,next_snapshot,checkpoint,created) "
+                "VALUES(?,?,?,?)",
+                (previous_snapshot,next_snapshot,checkpoint,int(time.time())))
+            c.execute("UPDATE meta SET value=? WHERE key='snapshot'",
+                      (next_snapshot.encode(),))
             return next_snapshot
     def recover_snapshot(self,target_snapshot,reason):
         """Auditably restore the binding after an uncommitted public transaction.
