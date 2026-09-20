@@ -36,7 +36,7 @@ Any task that **completes an event, advances the career clock, changes roster/co
 
 A progression commit is incomplete if its event file says one thing while a dependent current-state file still says another.
 
-**Season-stat closure rule.** A closed regular-season or postseason game is not statistically complete until its public game receipt is preserved under `career/[year]/stats/game_receipts/`. Under kernel 2013.3 that receipt must retain the complete public player-stat dictionaries, the complete public snap `play_ledger`, and game `play_call_stats`; it may never contain private Engine State material, seeds, hidden ratings, matchup deltas or probability data. Refresh `team_player_stats.md`, `all_player_stats.md`, `league_player_stats.md`, `play_call_stats.md` and `league_leaders.md` from the receipt set using the statbook tooling. If receipt coverage is incomplete, label the gap and withhold formal league rankings rather than filling it from real historical results or narrative inference.
+**Season-stat closure rule.** A closed regular-season or postseason game is not statistically complete until its public game receipt is preserved under career/[year]/stats/game_receipts/. Use runtime.statbook.make_receipt with detail="full" for Jacksonville/protagonist games so the receipt retains the complete public player dictionaries, snap play_ledger, and named-call stats. Use detail="compact_stats" for ordinary background games: it must preserve every nonzero generated team/player statistic needed for league totals and leaders, but it intentionally omits the background snap ledger, named-call data, zero-only player rows and zero-valued player fields. This is storage compression only; it never changes the game result or generated statistics. Refresh team_player_stats.md, all_player_stats.md, league_player_stats.md, play_call_stats.md and league_leaders.md from the receipt set using the statbook tooling. If statistical receipt coverage is incomplete, label the gap and withhold formal league rankings rather than filling it from real historical results or narrative inference.
 
 Use [the dependency workflow](docs/update_workflow.md) and `docs/repository_map.json`. Run `python scripts/validate_repository.py` before closing a change; refresh a phase summary receipt only after reviewing the summary against its updated output. Both game paths must also pass `python scripts/check_game_readiness.py`. A green repository check is not game authorization.
 
@@ -146,15 +146,26 @@ For the 2013 Week 1 full-fidelity reset specifically:
 
 - Read `career/2013/migrations/week_01_full_fidelity_reset.md` and its JSON manifest.
 - If `python scripts/check_week1_reset_ready.py` reports missing TeamInputs, **do not stop and ask the user to fill them**.
-- Research and construct all missing pre-Week-1 TeamInputs yourself from date-eligible public sources and branch canon, then rerun the gate.
+- Research and construct all missing pre-Week-1 TeamInputs yourself from date-eligible public sources and branch canon. Write the reconstructed full TeamInput objects to the gitignored .sim_cache/week_01_full_fidelity_inputs.json, not into the committed migration manifest, then rerun the gate. The committed manifest remains small control metadata.
 - Use verified historical Week-1 roster membership/position/availability facts for non-Jacksonville clubs as date-specific roster rails when no earlier branch transaction overrides them. Historical Week-1 scores, statistics, injuries produced by the real games, later depth-chart outcomes and later season/career results are forbidden inputs.
 - Prefer a week-level roster source with explicit 2013 Week 1 scope; cross-check material ambiguities against an independent period-appropriate source. Record source/provenance for the reconstructed inputs.
 - Jacksonville must use the branch's September 4 roster, medical state, roles and the already-approved Week 1 structured offensive call sheet—not the real historical Jaguars roster/result.
 - For unit evidence anchors, apply Document 7 §2.2. Where pre-Week-1 evidence is thin, use the established `Average` low-confidence default rather than guessing a stronger/weaker secret rating.
 - Background clubs do not need invented named play calls. Use only offensive-call detail supported by their date-eligible input contract; the protagonist's structured call sheet remains mandatory where the active kernel requires it.
 - Freeze all 32 reconstructed TeamInputs before any replacement Week 1 draw.
-- Only after the reset gate passes may any replacement event close. Then replace all 16 Week 1 games as one batch, preserve complete receipts, rebuild every dependent stat/standings view, append the supersession entry, reconcile injuries/state and validate before Week 2.
+- Only after the reset gate passes may any replacement event close. Then replace all 16 Week 1 games as one batch. Preserve a full Jacksonville receipt and compact_stats receipts for the other 15 games, rebuild every dependent stat/standings view, append the supersession entry, reconcile injuries/state and validate before Week 2.
 - Never rerun only Jacksonville while leaving the other 15 legacy Week 1 games active.
+
+### Diff-size / generated-data rule
+
+The one-command week workflow must remain small enough for Codex to return a normal reviewable diff.
+
+- Never commit .sim_cache/ or another transient reconstruction workspace.
+- Never place all 32 reconstructed TeamInputs into a committed migration JSON.
+- Never store full snap ledgers for ordinary background games; use compact_stats receipts.
+- Do not duplicate raw receipt data inside Markdown outputs.
+- If a generated human-readable stat view becomes very large, render only the canonical readable tables defined by the statbook tooling; the compact per-game receipts remain the rebuild source.
+- A Codex diff-size limit is an internal implementation constraint, not a user blocker. Reduce generated storage according to these rules and continue the same Run Week N task.
 
 ### No-user-maintenance rule
 
@@ -192,7 +203,7 @@ Return only the useful week result and closure summary: protagonist score/result
 
 **Write results to:** `career/[year]/league_results/week_[NN].md` (create the file/folder if it doesn't exist yet this season). One entry per game. Also update the running league standings in the same file's header table, and update the single current standings file `career/[year]/standings.md` (division, conference and league-wide tables, ties broken only by Document 2 §5.3) in the same commit.
 
-**Persist league statistics too.** For every closed background game, preserve the public game receipt under `career/[year]/stats/game_receipts/`, including every generated player counter and the full snap ledger even though the prose summary remains short. Once the full weekly slate is closed, rebuild the season statbook with `runtime/statbook.py` / `scripts/render_season_stats.py`. The weekly highlights file remains concise; full cumulative player and play data live in `stats/`, not in `league_results/week_NN.md`.
+**Persist league statistics too.** For every closed background game, preserve a compact_stats public receipt under career/[year]/stats/game_receipts/. It keeps every nonzero generated player/team statistic required for complete league totals and leaders but omits background snap rows and zero-only counters to keep weekly Git diffs bounded. Once the full weekly slate is closed, rebuild the season statbook with runtime/statbook.py / scripts/render_season_stats.py. The weekly highlights file remains concise; Jacksonville retains full play detail in its own receipt.
 
 **Do not** write anything into the protagonist's own weekly turn file — that's assembled separately by whoever is running the interactive side of this project, which reads your results file as one of its own inputs.
 
