@@ -21,14 +21,28 @@ def load_receipts(directory):
     return receipts
 
 
-def coverage_line(book):
-    if book["coverage_complete"]:
-        return "**Coverage:** complete for every stored game receipt."
-    return (
-        "**Coverage:** PARTIAL. One or more legacy games lack a complete "
-        "player-level receipt. Tables show only preserved statistics and must "
-        "not be treated as complete league rankings until the gap is backfilled."
-    )
+def coverage_line(book, team_id=None):
+    if not book["coverage_complete"] or not book.get("player_attribution_complete", True):
+        return (
+            "**Coverage:** PARTIAL. One or more legacy games lack a complete "
+            "stat receipt. Tables show only preserved statistics and must not "
+            "be treated as complete league rankings until the gap is backfilled."
+        )
+    if team_id is not None:
+        if not book.get("team_player_attribution_complete", {}).get(team_id, True):
+            return (
+                "**Coverage:** team totals complete; player attribution PARTIAL "
+                "for this club because a branch-roster correction left exact "
+                "replacement attribution unknowable."
+            )
+        return "**Coverage:** complete for this team's stored game receipts."
+    if not book.get("player_attribution_complete", True):
+        return (
+            "**Coverage:** team totals complete; league player attribution PARTIAL "
+            "for one or more clubs after branch-roster corrections. Known player "
+            "lines are preserved, but formal league rankings are withheld."
+        )
+    return "**Coverage:** complete for every stored game receipt."
 
 
 def avg(yards, opportunities):
@@ -54,7 +68,7 @@ def team_markdown(year, team_id, book):
         "",
         "**Version:** `%s-W%02d-TEAM-STATS-2`" % (year, book["through_week"]),
         "**Through:** Week %d." % book["through_week"],
-        coverage_line(book),
+        coverage_line(book, team_id),
         "",
     ]
     if not team:
@@ -341,7 +355,7 @@ def play_calls_markdown(year, team_id, book):
         "",
         "**Version:** `%s-W%02d-PLAY-CALL-STATS-1`" % (year, book["through_week"]),
         "**Through:** Week %d." % book["through_week"],
-        coverage_line(book),
+        coverage_line(book, team_id),
         "",
         "These are generated game-use totals for the named calls supplied in the weekly offensive call sheet. Generic calls appear only when a game packet did not provide a named call menu.",
         "",
