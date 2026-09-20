@@ -78,6 +78,22 @@ def _append_evidence(evidence, drive_ledger, offense_players, defense_players, o
                         physical_execution="pressure reached quarterback",
                     )
                 )
+        if play.get("play_type") == "punt" and play.get("cover_player"):
+            cover = offense_by_id.get(play["cover_player"])
+            if cover:
+                evidence.append(
+                    observation(
+                        cover,
+                        unit="special teams",
+                        role="punt coverage",
+                        responsibility="maintain coverage lane and leverage",
+                        situation="punt",
+                        assignment="coverage lane held",
+                        communication="substitution responsibility confirmed",
+                        observable_effort="coverage pursuit continued to the finish",
+                        special_teams_responsibility="coverage lane, leverage and tackle finish",
+                    )
+                )
         if play.get("turnover"):
             if play.get("turnover_type") == "interception" and play.get("passer"):
                 passer = offense_by_id.get(play["passer"])
