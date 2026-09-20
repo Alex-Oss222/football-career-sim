@@ -38,7 +38,7 @@ The preseason and regular-season stubs describe scheduled work only. League resu
 
 ## Canonical migrations
 
-- [Week 1 full-fidelity reset](migrations/week_01_full_fidelity_reset.md) — user-authorized replacement of the legacy Week 1 slate, currently blocked until all 32 pre-Week-1 TeamInput records are canonical and complete.
+- [Week 1 full-fidelity reset](migrations/week_01_full_fidelity_reset.md) — user-authorized replacement of the legacy Week 1 slate. Missing 32-team input reconstruction is an internal prerequisite owned by the one-command `Run Week 1` workflow; the user does not populate the manifest by hand.
 
 ## Durable football inputs
 

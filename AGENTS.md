@@ -112,6 +112,72 @@ The simulation engine may still use its hidden stochastic resolution machinery t
 
 ---
 
+## Task: "Run Week [N]" / "Run Week N"
+
+This is the **top-level one-command regular-season workflow**. A user instruction such as `Run Week 1`, `Run Week 2`, or `Run Week 3. Plan: ...` authorizes the complete bounded week task. The user is not responsible for running helper scripts, filling migration JSON, building background-team packets, advancing private snapshots, or repairing internal readiness prerequisites.
+
+### What the one command authorizes
+
+For the named week, Codex must autonomously:
+
+1. Read the current state, calendar, that week's existing `output.md`, the active playbook iterations, the season-output template, current roster/medical state, and any weekly plan supplied by the user.
+2. Run ordinary repository/game readiness checks.
+3. Resolve **internal repository prerequisites** that are already user-authorized, including an explicit migration/reset for that same week.
+4. Build/freeze the protagonist and background TeamInput records required by the active kernel.
+5. Run the protagonist game and every other league game in that week through the shared production runner, exactly once per canonical event.
+6. Preserve the full public game receipts required by the active kernel/statbook contract.
+7. Write the protagonist weekly `output.md` using the current season-output template and write the background roundup to `league_results/week_NN.md`.
+8. Rebuild standings and season statistics from receipts; never hand-add totals from Markdown.
+9. Reconcile injuries, availability, roles, transactions and other actually changed state.
+10. Close the ledger/current state/calendar atomically, advance the private snapshot after public canon closes, rerun readiness, validate, and use the normal PR flow.
+11. Stop before Week N+1.
+
+### User-plan handling
+
+- If the user supplies a Week N plan in the same prompt, that plan controls within Stone's authority.
+- If an already-closed ex-ante Week N plan/call sheet exists because the week is being rerun under an authorized technical migration, **reuse that pre-result plan**. Do not rewrite the plan because the old result is known.
+- Do not manufacture a new consequential Stone commitment merely to avoid asking a real football question. A genuinely new user-controlled choice not covered by the supplied/closed plan may still require the user. Internal tooling, data preparation, migration work, background-team construction and repository bookkeeping never do.
+
+### Internal migration / reset rule
+
+A user-authorized migration for the requested week is an **internal prerequisite**, not a user task.
+
+For the 2013 Week 1 full-fidelity reset specifically:
+
+- Read `career/2013/migrations/week_01_full_fidelity_reset.md` and its JSON manifest.
+- If `python scripts/check_week1_reset_ready.py` reports missing TeamInputs, **do not stop and ask the user to fill them**.
+- Research and construct all missing pre-Week-1 TeamInputs yourself from date-eligible public sources and branch canon, then rerun the gate.
+- Use verified historical Week-1 roster membership/position/availability facts for non-Jacksonville clubs as date-specific roster rails when no earlier branch transaction overrides them. Historical Week-1 scores, statistics, injuries produced by the real games, later depth-chart outcomes and later season/career results are forbidden inputs.
+- Prefer a week-level roster source with explicit 2013 Week 1 scope; cross-check material ambiguities against an independent period-appropriate source. Record source/provenance for the reconstructed inputs.
+- Jacksonville must use the branch's September 4 roster, medical state, roles and the already-approved Week 1 structured offensive call sheet—not the real historical Jaguars roster/result.
+- For unit evidence anchors, apply Document 7 §2.2. Where pre-Week-1 evidence is thin, use the established `Average` low-confidence default rather than guessing a stronger/weaker secret rating.
+- Background clubs do not need invented named play calls. Use only offensive-call detail supported by their date-eligible input contract; the protagonist's structured call sheet remains mandatory where the active kernel requires it.
+- Freeze all 32 reconstructed TeamInputs before any replacement Week 1 draw.
+- Only after the reset gate passes may any replacement event close. Then replace all 16 Week 1 games as one batch, preserve complete receipts, rebuild every dependent stat/standings view, append the supersession entry, reconcile injuries/state and validate before Week 2.
+- Never rerun only Jacksonville while leaving the other 15 legacy Week 1 games active.
+
+### No-user-maintenance rule
+
+For an ordinary `Run Week N` task, do **not** send the user back a checklist telling them to:
+
+- edit or populate a migration manifest;
+- run a readiness/reset helper command;
+- research background rosters;
+- advance the private snapshot;
+- alter Railway;
+- rebuild the statbook;
+- update standings;
+- create/merge intermediate setup PRs.
+
+Those are implementation steps owned by Codex inside the one week task. Report a blocker only when it is genuinely external and cannot be resolved through the repository, available research/tools, or the user's already-authorized migration—not merely because an internal preflight currently exits nonzero.
+
+### Completion report
+
+Return only the useful week result and closure summary: protagonist score/result, major football evidence and Stone decisions, injuries/availability, updated record/standings, stat/receipt coverage, validation/readiness, PR/merge information, and confirmation that the next week was not simulated.
+
+
+---
+
 ## Task: "Simulate background league, Week [N], [Year]."
 
 **Availability gate:** this task is disabled until `foundation/07_Game_Simulation_and_Resolution_Engine.md` is marked runtime-ready, its §8 era calibration is complete for the season being played, and the private Engine State store has been instantiated. If any of those conditions is missing, stop without generating scores.

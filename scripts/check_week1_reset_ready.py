@@ -64,7 +64,8 @@ def main():
     data = json.loads(MANIFEST.read_text(encoding="utf-8"))
     errors = check(data)
     if errors:
-        print("WEEK1_RESET_BLOCKED")
+        print("WEEK1_RESET_PREP_REQUIRED")
+        print("- Internal prerequisite: Codex must reconstruct the missing canonical pre-Week-1 TeamInputs; do not ask the user to populate this manifest.")
         for error in errors:
             print("- " + error)
         return 1

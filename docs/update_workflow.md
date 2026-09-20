@@ -41,6 +41,12 @@ Checks cover required files, local Markdown targets/anchors, current-state sourc
 
 These checks cannot judge football truth, medical evidence, a cap calculation, or whether a summary faithfully captures every observation. Human/agent review against the source remains required. CI does not automatically simulate events or rewrite state.
 
+## One-command regular-season weeks
+
+For regular-season play, `Run Week N` is the top-level workflow defined in `AGENTS.md`. Internal readiness, authorized migration/reset preparation, background-team input construction, receipt/statbook rebuild, standings, snapshot advancement and PR bookkeeping belong to that task; do not hand those implementation steps back to the user. A genuinely new Stone decision may still require user input when no supplied or already-closed plan covers it.
+
+See `docs/run_week.md` for the minimal Codex handoff prompt.
+
 ## Before a game
 
 Read [game readiness](../state/game_readiness.md) and run `python scripts/check_game_readiness.py`. That command fails while any game prerequisite remains unverified. Repository validation, populated schedule folders and deterministic packet tests do not authorize a game. Keep private engine state outside Git, public logs and coach-facing files.
