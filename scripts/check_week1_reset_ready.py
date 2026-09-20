@@ -7,6 +7,8 @@ import json
 from pathlib import Path
 import sys
 
+from check_week_input_exclusivity import check_inputs, controlled_players_from_roster
+
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "career/2013/migrations/week_01_full_fidelity_reset.json"
 DEFAULT_INPUT_CACHE = ROOT / ".sim_cache/week_01_full_fidelity_inputs.json"
@@ -97,6 +99,11 @@ def main():
         data = overlay_cached_inputs(data, cache)
 
     errors = check(data)
+    errors.extend(check_inputs(
+        data,
+        controlled_players_from_roster(ROOT / "career/2013/roster.md"),
+        "Jacksonville Jaguars",
+    ))
     if errors:
         print("WEEK1_RESET_PREP_REQUIRED")
         print(
