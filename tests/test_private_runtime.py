@@ -166,6 +166,13 @@ class PrivateRuntimeTests(unittest.TestCase):
         restarted=Store(Path(self.tmp.name)/'state.sqlite3')
         restarted.initialize('snapshot')
         self.assertEqual(restarted.current_snapshot(),'snapshot')
+        # Recovery must reopen the canonical checkpoint for a later legitimate
+        # publication instead of letting legacy uniqueness dead-end the career.
+        rebound=Client(self.url,token=self.token,snapshot='next-2')
+        self.assertEqual(
+            rebound.advance_snapshot('snapshot','next-2','published-after-recovery'),
+            'next-2')
+        self.assertEqual(self.store.current_snapshot(),'next-2')
 
     def test_snapshot_recovery_requires_explicit_reason(self):
         with self.assertRaises(ValueError):
@@ -183,7 +190,10 @@ class PrivateRuntimeTests(unittest.TestCase):
         restarted=Store(Path(self.tmp.name)/'state.sqlite3')
         self.assertEqual(restarted.current_snapshot(),'next')
         with restarted.connect() as connection:
-            history=connection.execute('select previous_snapshot,next_snapshot,checkpoint from snapshot_history').fetchall()
+            history=connection.execute(
+                'select previous_snapshot,next_snapshot,checkpoint '
+                'from snapshot_transitions_v2 order by id'
+            ).fetchall()
         self.assertEqual(history,[('snapshot','next','checkpoint-1')])
         self.assertTrue(client.readiness()['ready'])
 
