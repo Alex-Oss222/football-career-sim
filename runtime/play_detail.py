@@ -181,7 +181,7 @@ def apply_drive_detail(
     for index in eligible_completions:
         if rng.random() < 0.60:
             completion_slots.append(index)
-    if pass_yards and eligible_completions and not completion_slots:
+    if (pass_yards or outcome == "touchdown") and eligible_completions and not completion_slots:
         completion_slots.append(rng.choice(eligible_completions))
     if turnover_type == "interception" and turnover_slot in completion_slots:
         completion_slots.remove(turnover_slot)
@@ -238,6 +238,7 @@ def apply_drive_detail(
             "passer": None,
             "runner": None,
             "target": None,
+            "blocker": None,
             "tackler": None,
             "result_yards": 0,
             "passing_yards": 0,
@@ -264,6 +265,7 @@ def apply_drive_detail(
                 blocker = choose(rng, available, {"OT", "OG", "C"}, "pass_protection")
                 rusher = choose(rng, defenders, {"DE", "DT", "DL", "LB"}, "pass_rush")
                 _bump(offense_stats["players"][blocker.player_id], "sacks_allowed")
+                record["blocker"] = blocker.player_id
                 _bump(defense_stats["players"][rusher.player_id], "sacks")
                 _bump(defense_stats["players"][rusher.player_id], "pressures")
                 _bump(defense_stats["players"][rusher.player_id], "tackles")
