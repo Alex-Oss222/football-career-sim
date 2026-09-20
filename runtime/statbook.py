@@ -19,8 +19,35 @@ TEAM_STAT_FIELDS = (
 )
 
 
-def make_receipt(result, *, week, matchup, coverage="complete"):
-    """Return the public stat-only receipt for one already-closed game."""
+def _compact_team_stats(team_stats):
+    """Preserve every nonzero public statistic while removing diff-heavy zero rows."""
+    compact = {}
+    for team_id, game in team_stats.items():
+        row = {key: deepcopy(value) for key, value in game.items() if key != "players"}
+        players = {}
+        for player_id, line in game.get("players", {}).items():
+            position = line.get("position", "")
+            numeric = {
+                key: value for key, value in line.items()
+                if key != "position"
+                and isinstance(value, (int, float))
+                and not isinstance(value, bool)
+                and value != 0
+            }
+            if numeric:
+                players[player_id] = {"position": position, **numeric}
+        row["players"] = players
+        compact[team_id] = row
+    return compact
+
+
+def make_receipt(result, *, week, matchup, coverage="complete", detail="full"):
+    """Return a public receipt for one already-closed game.
+
+    full keeps the snap ledger and all player counters. compact_stats keeps
+    every nonzero generated player/team statistic but omits snap rows,
+    named-call data, zero-only player rows, and zero-valued player fields.
+    """
     if not result.get("terminated"):
         raise ValueError("only terminated games may enter the statbook")
     event_id = result.get("event_id")
@@ -30,21 +57,30 @@ def make_receipt(result, *, week, matchup, coverage="complete"):
         raise ValueError("week must be a positive integer")
     if coverage not in {"complete", "legacy_partial"}:
         raise ValueError("unknown stat coverage state")
+    if detail not in {"full", "compact_stats"}:
+        raise ValueError("unknown receipt detail")
     team_stats = result.get("team_stats")
     if not isinstance(team_stats, dict) or len(team_stats) != 2:
         raise ValueError("two-team statistics required")
-    return {
+    receipt = {
         "schema_version": STATBOOK_SCHEMA_VERSION,
         "event_id": event_id,
         "week": week,
         "matchup": matchup,
         "coverage": coverage,
+        "detail": detail,
         "kernel_version": result.get("kernel_version"),
         "final_score": deepcopy(result["final_score"]),
-        "team_stats": deepcopy(team_stats),
-        "play_ledger": deepcopy(result.get("play_ledger", [])),
-        "play_call_stats": deepcopy(result.get("play_call_stats", {})),
+        "team_stats": (
+            deepcopy(team_stats)
+            if detail == "full"
+            else _compact_team_stats(team_stats)
+        ),
     }
+    if detail == "full":
+        receipt["play_ledger"] = deepcopy(result.get("play_ledger", []))
+        receipt["play_call_stats"] = deepcopy(result.get("play_call_stats", {}))
+    return receipt
 
 
 def _blank_team():
