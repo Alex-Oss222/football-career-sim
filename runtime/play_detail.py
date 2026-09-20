@@ -166,7 +166,8 @@ def apply_drive_detail(
     turnover_slot = None
     turnover_type = None
     if outcome == "turnover":
-        if attempt_slots and (not run_slots or rng.random() < 0.8):
+        interception_can_reconcile = len(attempt_slots) > 1 or not pass_yards
+        if attempt_slots and (not run_slots or rng.random() < 0.8) and interception_can_reconcile:
             turnover_slot = rng.choice(attempt_slots)
             turnover_type = "interception"
         elif run_slots:
