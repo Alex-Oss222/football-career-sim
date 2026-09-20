@@ -18,3 +18,18 @@ Preseason uses the consolidated-block architecture: Document 5 may remain at the
 `runtime/statbook.py` is downstream post-processing for already-closed games. It converts a closed game result into a public stat-only receipt and can aggregate those receipts into season totals. It has no access to the private career seed and does not participate in resolution, packet closure, matchup weighting or outcome selection.
 
 Current Markdown views are rendered from the receipt set with `scripts/render_season_stats.py`. Incomplete legacy receipt coverage must remain labeled and formal league leaderboards are withheld until the gap is reconciled.
+
+
+## Kernel 2013.3 snap-detail contract
+
+Kernel 2013.3 keeps score/outcome generation at the possession layer and adds a deterministic public detail stream after each drive is resolved.
+
+- `runtime/play_detail.py` allocates a resolved drive into public snap rows without consuming the possession RNG.
+- `TeamInput.offensive_call_sheet` carries the structured weekly call menu used for named-call accounting.
+- Display aliases are excluded from the football-substance outcome commitment, so rewording a call label does not change the score draw.
+- `play_ledger` records every generated scrimmage snap plus scoring/punt/kickoff terminal plays.
+- `play_call_stats` aggregates named offensive call usage for the closed game.
+- The player dictionary now supports passing, rushing, receiving, protection, defense, kicking, punting and return counters.
+- `runtime/statbook.py` stores player stats, the full snap ledger and named-call totals in each public game receipt and accumulates them across the season.
+
+The snap-detail layer is public post-resolution accounting. It never receives the private career seed directly outside the kernel call, and it cannot alter the already-resolved drive outcome.
