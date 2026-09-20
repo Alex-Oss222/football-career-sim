@@ -2,15 +2,16 @@
 
 **Function:** Branch-facing schedule and phase control.
 **Historical source:** `../../library/2013_jacksonville_master_calendar.md`.
-**Current branch checkpoint:** September 4, 2013, regular-season cap compliance closed; Entry 29 is latest.
+**Current branch checkpoint:** September 9, 2013, Week 1 and postgame closure complete; Entry 30 is latest.
 **Rule:** Dates/opponents/deadlines are historical rails. Attendance, transactions, performance and game results are branch events.
 
 ## Current checkpoint
 
-- Completed through: **September 4 regular-season cap compliance**.
-- Active roster 53; practice squad 8; preseason record 2-2; regular-season record 0-0.
-- Next competitive event: **September 8 Week 1 vs Kansas City, 1:00 p.m. — NOT SIMULATED**.
-- Pasztor remains on independent medical hold; Mosley is medically unavailable; Smith cleared.
+- Completed through: **September 9 Week 1 league and Jacksonville postgame closure**.
+- Active roster 53; practice squad 8; preseason record 2-2; regular-season record 0-1.
+- Week 1: **Kansas City defeated Jacksonville 30-27**.
+- Next competitive event: **September 15 Week 2 at Oakland, 4:25 p.m. — NOT SIMULATED**.
+- Pasztor remains on independent medical hold; Mosley is medically unavailable; no new Jacksonville game injury was generated.
 
 ## 2013 branch schedule
 
@@ -51,7 +52,7 @@
 | **Aug. 31, 6 p.m.** | Cut to 53 | roster/cap/state atomic update | Complete |
 | **Sep. 1, noon** | Waiver claims expire; 8-player practice squad formation begins | roster/state | Complete |
 | **Sep. 4** | Regular-season cap compliance; Top-51 ends | cap worksheet/state | Complete |
-| **Sep. 8** | Week 1 vs Kansas City, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
+| **Sep. 8** | Week 1 vs Kansas City, 1 p.m. | [Week 1 output](regular_season/week_01_kansas_city_at_jacksonville/output.md) | **Complete — Kansas City won 30-27** |
 | Sep. 15 | W2 at Oakland, 4:25 p.m. | [regular-season week index](regular_season/README.md) | Future |
 | Sep. 22 | W3 at Seattle, 4:25 p.m. | [regular-season week index](regular_season/README.md) | Future |
 | Sep. 29 | W4 vs Indianapolis, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |

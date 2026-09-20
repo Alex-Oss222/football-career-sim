@@ -619,3 +619,20 @@ Smith cleared his short restriction. Pasztor remained on independent medical hol
 Top-51 accounting ended. The active roster is 53, the practice squad is eight, and source-bounded working room is approximately $6.2M-$6.6M before weekly practice-squad charges, or $5.4M-$5.8M if the opening eight remain all season. Regular-season record remains 0-0; September 8 Kansas City is next and has not been simulated.
 
 **Commit closed — Canonical update - September 4, 2013 - preseason, roster and cap block closed — canonical through September 4, after regular-season cap compliance and before Week 1**
+
+
+## Entry 30 — Regular Season Week 1 closed
+
+**Effective date:** September 9, 2013, after the full Week 1 slate and Jacksonville postgame work.
+**Checkpoint:** `Canonical update - September 9, 2013 - Week 1 closed`
+
+Kansas City defeated Jacksonville 30-27 in the first privately closed regular-season runtime result. Jacksonville generated 475 yards and led 27-23 in the fourth quarter, but three interceptions and Kansas City's late touchdown decided the game. Kirk Cousins remains QB1. The kernel attributed isolated work and one interception each to Henne and Wilson without a generated injury; Stone ended that usage and carries no quarterback rotation into Week 2. Jacksonville allowed three sacks, with generated evidence separating identified assignments from leverage losses. The defense recorded four sacks and two takeaways but did not control Jamaal Charles, who produced 171 rushing yards and 164 receiving yards.
+
+The runtime generated no new Jacksonville injury. Pasztor remains on independent medical hold and Mosley remains medically unavailable. Week 1 inactives were Pasztor, Mosley, Asper, Brewster, Ryan Davis, Lavar Edwards and Rutland; game-day designations expire after the contest. No transaction, contract, cap, controlled-player or practice-squad change occurred.
+
+All fifteen non-Jacksonville games were closed once through the same production runner. The complete scores and highlights are in `league_results/week_01.md`; `standings.md` is current through Week 1. Jacksonville is 0-1.
+
+**Primary records:** `regular_season/week_01_kansas_city_at_jacksonville/output.md`; `league_results/week_01.md`.
+**Next competitive event:** September 15 Week 2 at Oakland, 4:25 p.m. ET. **Week 2 has not been simulated.**
+
+**Commit closed — Canonical update - September 9, 2013 - Week 1 closed — canonical through the full Week 1 slate and Jacksonville postgame work**
