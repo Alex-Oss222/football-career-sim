@@ -60,7 +60,15 @@
     "career/2013/regular_season/week_14_houston_at_jacksonville/output.md",
     "career/2013/regular_season/week_15_buffalo_at_jacksonville/output.md",
     "career/2013/regular_season/week_16_tennessee_at_jacksonville/output.md",
-    "career/2013/regular_season/week_17_jacksonville_at_indianapolis/output.md"
+    "career/2013/regular_season/week_17_jacksonville_at_indianapolis/output.md",
+    "career/2013/stats/README.md",
+    "career/2013/stats/team_player_stats.md",
+    "career/2013/stats/league_player_stats.md",
+    "career/2013/stats/league_leaders.md",
+    "career/2013/stats/game_receipts/README.md",
+    "runtime/statbook.py",
+    "scripts/render_season_stats.py",
+    "tests/test_statbook.py"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",
