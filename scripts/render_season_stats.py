@@ -130,6 +130,52 @@ def league_markdown(year, book):
     return "\n".join(lines)
 
 
+
+def all_players_markdown(year, book):
+    lines = [
+        "# %s NFL all-player stat ledger" % year,
+        "",
+        "**Version:** `%s-W%02d-ALL-PLAYER-STATS-1`" % (year, book["through_week"]),
+        "**Through:** Week %d." % book["through_week"],
+        coverage_line(book),
+        "",
+        "This is the comprehensive supported-field ledger. It retains every non-pseudo player record present in the closed-game receipts, including players whose supported counters are all zero. A zero here means the stored stat counter is zero; it does not by itself prove snap participation.",
+        "",
+        "| Player | Team(s) | Pos | Pass Att | Pass Yds | INT thrown | Rush Att | Rush Yds | Rec | Rec Yds | Sacks allowed | Sacks | Pressures | Fumbles | FGM | Punts | Return Yds | Tackles |",
+        "|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|",
+    ]
+    rows = []
+    for player_id, line in book.get("players", {}).items():
+        if str(player_id).startswith("__"):
+            continue
+        rows.append((player_id, line))
+    rows.sort(key=lambda item: (", ".join(item[1].get("teams", ())), item[1].get("position", ""), item[0]))
+    for player, line in rows:
+        lines.append(
+            "| %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s | %s |" % (
+                player,
+                ", ".join(line.get("teams", ())),
+                line.get("position", ""),
+                line["pass_attempts"],
+                line["passing_yards"],
+                line["interceptions"],
+                line["rushing_attempts"],
+                line["rushing_yards"],
+                line["receptions"],
+                line["receiving_yards"],
+                line["sacks_allowed"],
+                line["sacks"],
+                line["pressures"],
+                line["fumbles"],
+                line["field_goals_made"],
+                line["punts"],
+                line["return_yards"],
+                line["tackles"],
+            )
+        )
+    lines.append("")
+    return "\n".join(lines)
+
 def leaders_markdown(year, book):
     lines = [
         "# %s NFL statistical leaders" % year,
@@ -185,6 +231,9 @@ def main():
     )
     (stats_dir / "league_player_stats.md").write_text(
         league_markdown(args.year, book), encoding="utf-8"
+    )
+    (stats_dir / "all_player_stats.md").write_text(
+        all_players_markdown(args.year, book), encoding="utf-8"
     )
     (stats_dir / "league_leaders.md").write_text(
         leaders_markdown(args.year, book), encoding="utf-8"
