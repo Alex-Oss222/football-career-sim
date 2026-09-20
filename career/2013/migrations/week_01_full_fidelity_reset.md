@@ -1,8 +1,12 @@
 # Week 1 full-fidelity reset
 
-**Status:** AUTO-RESOLVABLE INTERNAL PREREQUISITE — authorized, not executed.  
+**Status:** AUTO-RESOLVABLE INTERNAL PREREQUISITE — generation 1 technically aborted; generation 2 authorized and not yet published.  
 **User authorization:** The user explicitly authorized the full-stat/full-play Week 1 replacement and later instructed that `Run Week 1` must perform all reset preparation automatically without sending setup work back to the user.  
 **Source checkpoint:** `Canonical update - September 4, 2013 - preseason, roster and cap block closed`.
+
+**Technical-abort record (September 20, 2026):** the first full-fidelity reset attempt privately closed all 16 `reset-v1` events, then an older workflow erroneously advanced the private snapshot before public publication. Codex subsequently failed because the generated Git diff exceeded its extraction limit; no reset commit or PR reached `main`, and no v1 result was published to the user as replacement canon. HTTP deployment logs independently show the 16 event closures followed by the premature snapshot-advance call. Under the project's transaction rule this entire v1 batch is an outcome-independent technical abort. Generation 2 uses new event IDs and may run only after the private binding is auditably restored to the checked-in canonical state.
+
+The retry must record a private correction for each known `2013-week01-reset-v1-01` through `...-16` event ID with the same technical-abort reason before closing any generation-2 replacement event. This preserves the private append-only audit trail without exposing the abandoned results.
 
 ## Why the reset needs reconstruction
 
@@ -42,14 +46,14 @@ If it does not pass, Codex must complete the missing canonical TeamInput reconst
 ## Replacement procedure once ready
 
 1. Freeze all 32 team inputs before drawing any replacement game.
-2. Close all 16 replacement events under the same kernel version and same reset batch.
+2. Confirm the v1 correction records are written, then close all 16 generation-2 replacement events under the same kernel version and same reset batch.
 3. Preserve one full public stat/snap receipt for Jacksonville-Kansas City and `compact_stats` receipts for the other 15 games. The background compact receipts retain every nonzero generated statistic required for league totals and leaders without committing 15 redundant snap ledgers.
 4. Rebuild standings, Jacksonville player stats, all-player stats, league stats, named-play stats and league leaders from the replacement receipts.
 5. Reconcile all replacement injuries/availability across affected current records.
 6. Rewrite Jacksonville Week 1 using the current season template.
 7. Replace the Week 1 background roundup from the new closed results.
 8. Append a Document 6 supersession entry identifying the legacy Week 1 slate as superseded by the full-fidelity reset.
-9. Advance current state only after every dependency reconciles atomically.
+9. Validate and open the public PR after every dependency reconciles atomically. **Do not advance the private snapshot from the branch.** Merge first; only the merged `main` checkout may advance the private snapshot to the new Document 5 digest.
 10. Do not start Week 2 until the replacement Week 1 package validates.
 
 Until the internal gate passes, the existing Week 1 result remains the active canon and its statbook coverage remains explicitly partial. The user should not be asked to perform any reset-preparation step.
