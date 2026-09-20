@@ -7,7 +7,7 @@ from .calibration import load, validate
 from .injuries import maybe_injury
 from .rules import RULES
 from .player_evidence import empty_player_stats, normalize_players, observation
-from .play_detail import apply_drive_detail
+from .play_detail import apply_drive_detail, canonical_call_sheet
 
 
 @dataclass(frozen=True)
@@ -185,10 +185,14 @@ def resolve_game(
     if not home_players or not away_players:
         raise ValueError("active participants required")
 
+    home_outcome = asdict(home)
+    away_outcome = asdict(away)
+    home_outcome["offensive_call_sheet"] = canonical_call_sheet(home)
+    away_outcome["offensive_call_sheet"] = canonical_call_sheet(away)
     packet = {
         "event_id": event_id,
-        "home": asdict(home),
-        "away": asdict(away),
+        "home": home_outcome,
+        "away": away_outcome,
         "venue": venue,
         "weather": weather,
         "game_type": game_type,
