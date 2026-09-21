@@ -1017,7 +1017,6 @@
 | Brandon Taylor | San Diego Chargers | 3 | 0 |
 | Brent Grimes | Jacksonville Jaguars | 3 | 0 |
 | Buster Skrine | Cleveland Browns | 3 | 0 |
-| C.J. Mosley | Detroit Lions | 3 | 0 |
 | C.J. Wilson | Jacksonville Jaguars | 3 | 0 |
 | Cassius Vaughn | Indianapolis Colts | 3 | 0 |
 | Chris Baker | Washington Redskins | 3 | 0 |
