@@ -1,6 +1,7 @@
 import unittest
 
 from runtime.statbook import aggregate_receipts, leaders, make_receipt
+from scripts.render_season_stats import coverage_line, leaders_markdown
 
 
 class StatbookTests(unittest.TestCase):
@@ -92,6 +93,29 @@ class StatbookTests(unittest.TestCase):
                 self.result("bad-detail"), week=1, matchup="B at A",
                 detail="giant",
             )
+
+    def test_player_attribution_completeness_is_team_scoped(self):
+        receipt = make_receipt(
+            self.result("attrib"), week=1, matchup="B at A",
+            player_attribution_incomplete_teams=("B",),
+        )
+        book = aggregate_receipts([receipt])
+        self.assertTrue(book["coverage_complete"])
+        self.assertFalse(book["player_attribution_complete"])
+        self.assertTrue(book["team_player_attribution_complete"]["A"])
+        self.assertFalse(book["team_player_attribution_complete"]["B"])
+
+    def test_partial_player_attribution_withholds_leaders_but_not_team_coverage(self):
+        receipt=make_receipt(
+            self.result("attrib-render"),week=1,matchup="B at A",
+            player_attribution_incomplete_teams=("B",),
+        )
+        book=aggregate_receipts([receipt])
+        self.assertIn("complete for this team's",coverage_line(book,"A"))
+        self.assertIn("player attribution PARTIAL",coverage_line(book))
+        rendered=leaders_markdown(2013,book)
+        self.assertIn("rankings are withheld",rendered)
+        self.assertNotIn("| Rank |",rendered)
 
     def test_partial_coverage_propagates(self):
         receipt = make_receipt(

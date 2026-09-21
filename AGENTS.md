@@ -123,7 +123,7 @@ For the named week, Codex must autonomously:
 1. Read the current state, calendar, that week's existing `output.md`, the active playbook iterations, the season-output template, current roster/medical state, and any weekly plan supplied by the user.
 2. Run ordinary repository/game readiness checks.
 3. Resolve **internal repository prerequisites** that are already user-authorized, including an explicit migration/reset for that same week.
-4. Build/freeze the protagonist and background TeamInput records required by the active kernel.
+4. Build/freeze the protagonist and background TeamInput records required by the active kernel. Before any event closes, run the weekly TeamInput exclusivity gate: current Jacksonville-controlled active-roster and practice-squad players may appear only in Jacksonville's TeamInput, and no player may appear on more than one club in the same weekly slate. Historical roster rails always yield to branch transactions/control.
 5. Run the protagonist game and every other league game in that week through the shared production runner, exactly once per canonical event.
 6. Preserve the full public game receipts required by the active kernel/statbook contract.
 7. Write the protagonist weekly `output.md` using the current season-output template and write the background roundup to `league_results/week_NN.md`.
@@ -131,6 +131,17 @@ For the named week, Codex must autonomously:
 9. Reconcile injuries, availability, roles, transactions and other actually changed state.
 10. Close the ledger/current state/calendar atomically and validate the branch. Open the normal PR. **Do not advance the private snapshot from an unmerged branch.** If Codex can merge the PR, merge it first, update/check out the merged `main`, then advance the private snapshot to the merged Document 5 digest and rerun readiness. If Codex cannot merge, leave the private snapshot unchanged and report snapshot advancement as pending merge.
 11. Stop before Week N+1.
+
+### Weekly TeamInput exclusivity
+
+Before the first game event of any regular-season/postseason weekly slate closes:
+
+- Build the full weekly TeamInput package in the transient workspace.
+- Run `python scripts/check_week_input_exclusivity.py <weekly-input-package.json>`.
+- Derive Jacksonville control from the current branch `career/[year]/roster.md`, including both active roster and practice squad.
+- A Jacksonville-controlled player may not appear in any non-Jacksonville TeamInput, even when a real historical Week-N roster source lists that player for another club.
+- No player identifier may appear on two clubs in the same simulated weekly slate.
+- Treat a failure as an internal data-preparation defect: fix the inputs and rerun the gate. Do not ask the user to reconcile historical rosters.
 
 ### User-plan handling
 

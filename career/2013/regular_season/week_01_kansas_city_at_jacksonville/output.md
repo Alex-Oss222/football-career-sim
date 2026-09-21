@@ -121,8 +121,12 @@ Jacksonville is **1-0** and alone atop the AFC South by record; Indianapolis, Ho
 
 ## 9. League results and news
 
-All 16 Week 1 games were replaced as one generation-2 batch. Jacksonville has a full public receipt; all 15 background games have compact-stat receipts. New England, Baltimore, Pittsburgh, New Orleans, the Jets, Seattle, Chicago, Miami, Minnesota, Oakland, San Francisco, Arizona, Dallas, Philadelphia and San Diego also won. The complete roundup and generated medical digest are in `career/2013/league_results/week_01.md`.
+All 16 Week 1 games were replaced as one generation-2 batch. Jacksonville has a full public receipt; all 15 background games have compact-stat receipts. A post-publication branch-control audit corrected impossible historical-team player credits in five background receipts without changing any score, team total or standing. Exact replacement player attribution is intentionally withheld where unknowable, so formal league player leaderboards are temporarily withheld. New England, Baltimore, Pittsburgh, New Orleans, the Jets, Seattle, Chicago, Miami, Minnesota, Oakland, San Francisco, Arizona, Dallas, Philadelphia and San Diego also won. The complete roundup and generated medical digest are in `career/2013/league_results/week_01.md`.
 
 ## 10. Forward look
 
 Week 2 is at Oakland on September 15 at 4:25 p.m. ET. Before preparation, Jacksonville needs fresh medical communication on Owens, Rambo, Pasztor and Mosley; no Oakland scouting assumption or Week 2 result has been generated.
+
+## 11. Post-publication Week 2 handoff correction
+
+Before Week 2 preparation, the receipt set was checked against Jacksonville's branch player-control history. Eight impossible non-Jacksonville player attributions were found across five receipts because real-history Week 1 roster rails had not yielded to earlier branch transactions. Those lines were moved to explicit unattributed pseudo-rows so the generated team totals remain exact without inventing replacement players. **Jacksonville 34, Kansas City 13 remains the Week 1 result; Jacksonville's own Week 1 player statistics and 1-0 record are unchanged.** Future weekly TeamInput packages must pass the branch-exclusivity gate before any game event closes.

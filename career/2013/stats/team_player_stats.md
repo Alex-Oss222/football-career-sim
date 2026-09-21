@@ -2,7 +2,7 @@
 
 **Version:** `2013-W01-TEAM-STATS-2`
 **Through:** Week 1.
-**Coverage:** complete for every stored game receipt.
+**Coverage:** complete for Jacksonville's stored Week 1 game receipt.
 
 ## Passing
 

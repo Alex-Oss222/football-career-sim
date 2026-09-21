@@ -30,6 +30,10 @@ The authorized generation-2 reset replaced all sixteen legacy Week 1 games under
 Accordingly:
 
 - `all_player_stats.md` renders every nonzero Week 1 player statistic from the complete receipt set.
-- `league_player_stats.md` and `league_leaders.md` may publish formal Week 1 rankings.
+- `league_player_stats.md` preserves known Week 1 player lines, but `league_leaders.md` withholds formal rankings because five corrected background receipts now have intentionally partial player attribution.
 - `play_call_stats.md` renders Jacksonville's generated named-call use directly from the full receipt.
-- Background compact receipts omit snap ledgers and zero-only counters only for storage efficiency; statistical coverage is complete.
+- Background compact receipts omit snap ledgers and zero-only counters only for storage efficiency. Team statistical totals remain complete. A later branch-control audit moved impossible historical-team player credits in five receipts to pseudo/unattributed rows; those receipts now distinguish complete team totals from partial exact player attribution.
+
+## Branch-control attribution correction
+
+Before Week 2, the Week 1 receipt set was checked against Jacksonville's branch-controlled roster. Players already acquired, drafted or signed by Jacksonville may not simultaneously appear on a real-history background roster. The affected impossible attributions were removed without changing any final score or team total. Exact replacement player attribution is intentionally left unknown rather than reassigned by guesswork. Future weekly input slates must pass `scripts/check_week_input_exclusivity.py` before any event closes.

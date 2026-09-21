@@ -21,14 +21,28 @@ def load_receipts(directory):
     return receipts
 
 
-def coverage_line(book):
-    if book["coverage_complete"]:
-        return "**Coverage:** complete for every stored game receipt."
-    return (
-        "**Coverage:** PARTIAL. One or more legacy games lack a complete "
-        "player-level receipt. Tables show only preserved statistics and must "
-        "not be treated as complete league rankings until the gap is backfilled."
-    )
+def coverage_line(book, team_id=None):
+    if not book["coverage_complete"]:
+        return (
+            "**Coverage:** PARTIAL. One or more legacy games lack a complete "
+            "stat receipt. Tables show only preserved statistics and must not "
+            "be treated as complete league rankings until the gap is backfilled."
+        )
+    if team_id is not None:
+        if not book.get("team_player_attribution_complete", {}).get(team_id, True):
+            return (
+                "**Coverage:** team totals complete; player attribution PARTIAL "
+                "for this club because a branch-roster correction left exact "
+                "replacement attribution unknowable."
+            )
+        return "**Coverage:** complete for this team's stored game receipts."
+    if not book.get("player_attribution_complete", True):
+        return (
+            "**Coverage:** team totals complete; league player attribution PARTIAL "
+            "for one or more clubs after branch-roster corrections. Known player "
+            "lines are preserved, but formal league rankings are withheld."
+        )
+    return "**Coverage:** complete for every stored game receipt."
 
 
 def avg(yards, opportunities):
@@ -54,7 +68,7 @@ def team_markdown(year, team_id, book):
         "",
         "**Version:** `%s-W%02d-TEAM-STATS-2`" % (year, book["through_week"]),
         "**Through:** Week %d." % book["through_week"],
-        coverage_line(book),
+        coverage_line(book, team_id),
         "",
     ]
     if not team:
@@ -235,70 +249,101 @@ def all_players_markdown(year, book):
         "passing_touchdowns", "interceptions_thrown", "sacks_taken", "sack_yards",
         "rushing_attempts", "rushing_yards", "rushing_touchdowns", "long_rush",
         "targets", "receptions", "receiving_yards", "receiving_touchdowns", "long_reception",
-        "fumbles", "fumbles_lost",
-        "sacks_allowed", "sacks", "pressures", "solo_tackles", "assisted_tackles",
-        "tackles", "tackles_for_loss", "passes_defended", "defensive_interceptions",
-        "interception_return_yards", "forced_fumbles", "fumble_recoveries",
-        "field_goals_attempted", "field_goals_made", "extra_points_attempted",
-        "extra_points_made", "punts", "punt_yards", "long_punt", "punts_inside_20",
+        "fumbles", "fumbles_lost", "sacks_allowed", "sacks", "pressures",
+        "solo_tackles", "assisted_tackles", "tackles", "tackles_for_loss",
+        "passes_defended", "defensive_interceptions", "interception_return_yards",
+        "forced_fumbles", "fumble_recoveries", "field_goals_attempted",
+        "field_goals_made", "extra_points_attempted", "extra_points_made",
+        "punts", "punt_yards", "long_punt", "punts_inside_20",
         "kick_returns", "kick_return_yards", "punt_returns", "punt_return_yards",
         "return_yards",
     ]
     ordered = [field for field in preferred_order if field in fields]
     ordered += sorted(field for field in fields if field not in ordered)
-
     labels = {
-        "dropbacks": "DB",
-        "pass_attempts": "Pass Att",
-        "completions": "Cmp",
-        "passing_yards": "Pass Yds",
-        "passing_touchdowns": "Pass TD",
-        "interceptions_thrown": "INT thrown",
-        "sacks_taken": "Sacks taken",
-        "rushing_attempts": "Rush Att",
-        "rushing_yards": "Rush Yds",
-        "receptions": "Rec",
-        "receiving_yards": "Rec Yds",
-        "sacks_allowed": "Sacks allowed",
-        "sacks": "Sacks",
-        "pressures": "Pressures",
-        "fumbles": "Fumbles",
-        "field_goals_made": "FGM",
-        "punts": "Punts",
-        "return_yards": "Return Yds",
-        "tackles": "Tackles",
+        "dropbacks":"DB", "pass_attempts":"PassAtt", "completions":"Cmp",
+        "passing_yards":"PassYds", "passing_touchdowns":"PassTD",
+        "interceptions_thrown":"INT", "sacks_taken":"SackTaken",
+        "rushing_attempts":"RushAtt", "rushing_yards":"RushYds",
+        "rushing_touchdowns":"RushTD", "targets":"Tgt", "receptions":"Rec",
+        "receiving_yards":"RecYds", "receiving_touchdowns":"RecTD",
+        "sacks_allowed":"SackAllowed", "sacks":"Sack", "pressures":"Press",
+        "tackles":"Tkl", "tackles_for_loss":"TFL", "passes_defended":"PD",
+        "defensive_interceptions":"DefINT", "forced_fumbles":"FF",
+        "fumble_recoveries":"FR", "field_goals_made":"FGM",
+        "field_goals_attempted":"FGA", "extra_points_made":"XPM",
+        "extra_points_attempted":"XPA", "punts":"Punt", "punt_yards":"PuntYds",
+        "kick_returns":"KR", "kick_return_yards":"KRYds", "punt_returns":"PR",
+        "punt_return_yards":"PRYds", "return_yards":"RetYds",
     }
-
     lines = [
-        "# %s NFL all-player stat ledger" % year,
-        "",
-        "**Version:** `%s-W%02d-ALL-PLAYER-STATS-1`" % (year, book["through_week"]),
+        "# %s NFL all-player stat ledger" % year, "",
+        "**Version:** `%s-W%02d-ALL-PLAYER-STATS-2`" % (year, book["through_week"]),
         "**Through:** Week %d." % book["through_week"],
-        coverage_line(book),
-        "",
-        "This is the comprehensive supported-field ledger. It retains every non-pseudo player record present in the closed-game receipts, including players whose supported counters are all zero. A zero here means the stored stat counter is zero; it does not by itself prove snap participation.",
-        "",
+        coverage_line(book), "",
+        "Compact comprehensive ledger of every nonzero supported player counter "
+        "preserved by the closed-game receipts. Zero-only rows are omitted from "
+        "this readable view; absence does not prove non-participation.", "",
+        "| Player | Team(s) | Pos | Nonzero stored statistics |",
+        "|---|---|---|---|",
     ]
-    header = ["Player", "Team(s)", "Pos"] + [labels.get(field, field.replace("_", " ").title()) for field in ordered]
-    lines.append("| " + " | ".join(header) + " |")
-    lines.append("|" + "|".join(["---", "---", "---"] + ["---:"] * len(ordered)) + "|")
-
-    rows = []
-    for player_id, line in book.get("players", {}).items():
+    rows=[]
+    for player_id,line in book.get("players",{}).items():
         if str(player_id).startswith("__"):
             continue
-        rows.append((player_id, line))
-    rows.sort(key=lambda item: (", ".join(item[1].get("teams", ())), item[1].get("position", ""), item[0]))
-
-    for player, line in rows:
-        values = [
-            player,
-            ", ".join(line.get("teams", ())),
-            line.get("position", ""),
-        ] + [str(line.get(field, 0)) for field in ordered]
-        lines.append("| " + " | ".join(values) + " |")
+        nonzero=[
+            (field,line.get(field,0)) for field in ordered
+            if isinstance(line.get(field,0),(int,float))
+            and not isinstance(line.get(field,0),bool)
+            and line.get(field,0)!=0
+        ]
+        if nonzero:
+            rows.append((player_id,line,nonzero))
+    rows.sort(key=lambda item:(
+        ", ".join(item[1].get("teams",())),
+        item[1].get("position",""), item[0]))
+    for player,line,nonzero in rows:
+        stats="; ".join(
+            "%s=%s" % (labels.get(field,field),value)
+            for field,value in nonzero)
+        lines.append("| %s | %s | %s | %s |" % (
+            player, ", ".join(line.get("teams",())),
+            line.get("position",""), stats))
     lines.append("")
     return "\n".join(lines)
+
+
+def compact_book_for_storage(book):
+    """Remove mechanically implied zero fields from the generated JSON cache."""
+    compact = {
+        key: value for key,value in book.items()
+        if key not in {"teams","players"}
+    }
+    compact["teams"]={}
+    for team_id,team in book.get("teams",{}).items():
+        row={"games":team.get("games",0),"team_stats":dict(team.get("team_stats",{})),"players":{}}
+        for player_id,line in team.get("players",{}).items():
+            kept={"position":line.get("position","")}
+            kept.update({
+                key:value for key,value in line.items()
+                if key!="position" and isinstance(value,(int,float))
+                and not isinstance(value,bool) and value!=0
+            })
+            if len(kept)>1 or str(player_id).startswith("__"):
+                row["players"][player_id]=kept
+        compact["teams"][team_id]=row
+    compact["players"]={}
+    for player_id,line in book.get("players",{}).items():
+        kept={"position":line.get("position",""),"teams":list(line.get("teams",()))}
+        kept.update({
+            key:value for key,value in line.items()
+            if key not in {"position","teams"} and isinstance(value,(int,float))
+            and not isinstance(value,bool) and value!=0
+        })
+        if len(kept)>2:
+            compact["players"][player_id]=kept
+    return compact
+
 
 def leaders_markdown(year, book):
     lines = [
@@ -309,9 +354,9 @@ def leaders_markdown(year, book):
         coverage_line(book),
         "",
     ]
-    if not book["coverage_complete"]:
+    if not book["coverage_complete"] or not book.get("player_attribution_complete", True):
         lines += [
-            "League rankings are withheld while coverage is incomplete. "
+            "League rankings are withheld while player attribution is incomplete. "
             "Known lines remain available in `league_player_stats.md`, but "
             "they are not labeled as league leaders.",
             "",
@@ -341,7 +386,7 @@ def play_calls_markdown(year, team_id, book):
         "",
         "**Version:** `%s-W%02d-PLAY-CALL-STATS-1`" % (year, book["through_week"]),
         "**Through:** Week %d." % book["through_week"],
-        coverage_line(book),
+        coverage_line(book, team_id),
         "",
         "These are generated game-use totals for the named calls supplied in the weekly offensive call sheet. Generic calls appear only when a game packet did not provide a named call menu.",
         "",
@@ -376,7 +421,7 @@ def main():
     book = aggregate_receipts(receipts)
     stats_dir.mkdir(parents=True, exist_ok=True)
     (stats_dir / "season_totals.json").write_text(
-        json.dumps(book, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+        json.dumps(compact_book_for_storage(book), sort_keys=True, separators=(",",":")) + "\n", encoding="utf-8"
     )
     (stats_dir / "team_player_stats.md").write_text(
         team_markdown(args.year, args.team, book), encoding="utf-8"

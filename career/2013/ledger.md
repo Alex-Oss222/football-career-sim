@@ -652,3 +652,22 @@ All 16 games were closed through the shared production runner. The Jacksonville 
 **Next competitive event:** September 15 Week 2 at Oakland, 4:25 p.m. ET. **Week 2 has not been simulated.**
 
 **Commit closed — Canonical update - September 9, 2013 - Week 1 full-fidelity reset closed — canonical through the full Week 1 slate and Jacksonville postgame work**
+
+## Entry 32 — Week 1 attribution and Week 2 handoff correction closed
+
+**Effective date:** September 9, 2013
+**Checkpoint:** `Canonical correction - September 9, 2013 - Week 1 attribution and Week 2 handoff reconciled`
+
+A pre-Week-2 continuity audit found that the generation-2 Week 1 historical-roster reconstruction had retained eight player identities on non-Jacksonville clubs even though earlier branch transactions already placed those players under Jacksonville control. The affected receipts were Baltimore-Denver, Miami-Cleveland, Green Bay-San Francisco, Philadelphia-Washington and Kansas City-Jacksonville.
+
+This is an outcome-preserving administrative/statistical correction. No Week 1 game was rerun. Every published final score, team total, standing and Jacksonville's own Week 1 player line remains unchanged; Jacksonville remains **1-0** after the 34-13 win over Kansas City. The impossible non-Jacksonville player lines were moved to explicit pseudo/unattributed rows in their existing receipts. Because the exact eligible teammate who would have received each generated statistic cannot be reconstructed without inventing a result, those five receipts now mark the affected clubs' exact player attribution as partial. League player views retain known lines, while formal league leaderboards are withheld.
+
+The weekly input contract now requires a branch-exclusivity gate before any future event closes: Jacksonville-controlled active-roster and practice-squad players may appear only in Jacksonville's TeamInput, and no player may appear on two clubs in the same weekly slate. Historical roster rails yield to branch transactions/control.
+
+The audit also identified why the post-merge private snapshot advance for the published generation-2 Week 1 state returned a conflict: the earlier audited generation-1 rollback left a legacy unique transition row. Runtime snapshot history now preserves that old audit record while permitting a later legitimate CAS progression after a documented recovery. This bookkeeping repair does not alter football canon.
+
+**Primary records:** `regular_season/week_01_kansas_city_at_jacksonville/output.md`; corrected `stats/game_receipts/`; `stats/league_player_stats.md`; `stats/all_player_stats.md`; `stats/league_leaders.md`; `migrations/week_01_full_fidelity_reset.md`.
+**Next competitive event:** September 15 Week 2 at Oakland, 4:25 p.m. ET. **Week 2 has not been simulated.**
+
+**Commit closed — Canonical correction - September 9, 2013 - Week 1 attribution and Week 2 handoff reconciled — canonical through September 9, after Week 1 and before Week 2 preparation**
+
