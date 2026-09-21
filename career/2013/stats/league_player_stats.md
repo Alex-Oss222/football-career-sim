@@ -1108,7 +1108,6 @@
 | Allen Bradford | Seattle Seahawks | 2 | 0 |
 | Antonio Johnson | Tennessee Titans | 2 | 0 |
 | Antrel Rolle | New York Giants | 2 | 0 |
-| Antwon Blake | Pittsburgh Steelers | 2 | 0 |
 | Bennie Logan | Philadelphia Eagles | 2 | 0 |
 | Billy Winn | Cleveland Browns | 2 | 0 |
 | Bradley McDougald | Kansas City Chiefs | 2 | 0 |
