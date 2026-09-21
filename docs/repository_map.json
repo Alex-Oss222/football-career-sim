@@ -75,7 +75,9 @@
     "career/2013/migrations/week_01_full_fidelity_reset.md",
     "career/2013/migrations/week_01_full_fidelity_reset.json",
     "runtime/play_detail.py",
-    "scripts/check_week1_reset_ready.py"
+    "scripts/check_week1_reset_ready.py",
+    "scripts/check_week_input_exclusivity.py",
+    "tests/test_week_input_exclusivity.py"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",
