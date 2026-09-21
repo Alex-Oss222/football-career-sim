@@ -16,7 +16,7 @@ This is the front door for season statistics.
 
 ## Current coverage
 
-The generation-2 Week 1 replacement has complete receipt coverage: full snap and named-call detail for Jacksonville-Kansas City and compact statistical receipts for the other fifteen games. Formal league rankings are rendered from those receipts.
+The generation-2 Week 1 replacement has complete receipt coverage: full snap and named-call detail for Jacksonville-Kansas City and compact statistical receipts for the other fifteen games. A completed branch-control audit leaves exact player attribution partial for nine non-Jacksonville clubs across seven receipts. Formal league player rankings are therefore withheld while the known player lines and complete team totals remain available.
 
 From the next closed game forward, every public player-stat dictionary returned by the shared game result is preserved in its game receipt and accumulated into the statbook. The comprehensive all-player ledger is not limited to leaders, starters or standouts.
 
