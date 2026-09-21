@@ -72,6 +72,38 @@ class WeekInputExclusivityTests(unittest.TestCase):
         errors=check_inputs(data,set(),"Jacksonville Jaguars")
         self.assertTrue(any("multiple weekly TeamInputs" in error for error in errors))
 
+
+    def test_expected_game_count_rejects_partial_slate(self):
+        data={
+            "games":[{
+                "away":"Oakland Raiders","home":"Jacksonville Jaguars",
+                "away_input":{"active_players":["QB:Oakland QB"],"roster":[]},
+                "home_input":{"active_players":["QB:Kirk Cousins"],"roster":[]},
+            }]
+        }
+        errors=check_inputs(
+            data,{"Kirk Cousins"},"Jacksonville Jaguars",expected_games=16
+        )
+        self.assertTrue(any("expected 16" in error for error in errors))
+
+    def test_same_team_in_two_weekly_games_fails(self):
+        data={
+            "games":[
+                {
+                    "away":"A","home":"B",
+                    "away_input":{"active_players":["QB:A QB"],"roster":[]},
+                    "home_input":{"active_players":["QB:B QB"],"roster":[]},
+                },
+                {
+                    "away":"A","home":"C",
+                    "away_input":{"active_players":["QB:A QB"],"roster":[]},
+                    "home_input":{"active_players":["QB:C QB"],"roster":[]},
+                },
+            ]
+        }
+        errors=check_inputs(data,set(),"Jacksonville Jaguars")
+        self.assertTrue(any("appears in multiple weekly games" in error for error in errors))
+
     def test_clean_slate_passes(self):
         data={
             "games":[{
