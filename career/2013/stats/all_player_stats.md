@@ -346,7 +346,6 @@ Compact comprehensive ledger of every nonzero supported player counter preserved
 | Devin Taylor | Detroit Lions | DE | solo_tackles=3; Tkl=3 |
 | Ezekiel Ansah | Detroit Lions | DE | solo_tackles=9; Tkl=9 |
 | Willie Young | Detroit Lions | DE | solo_tackles=2; Tkl=2 |
-| C.J. Mosley | Detroit Lions | DT | Press=1; solo_tackles=3; Tkl=3 |
 | Ndamukong Suh | Detroit Lions | DT | Sack=1; Press=1; solo_tackles=2; Tkl=2 |
 | Nick Fairley | Detroit Lions | DT | solo_tackles=2; Tkl=2 |
 | David Akers | Detroit Lions | K | FGA=1; FGM=1; XPA=3; XPM=3 |
