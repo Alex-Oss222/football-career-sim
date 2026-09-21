@@ -185,10 +185,36 @@ def validate(root=ROOT):
             'play_call_stats.md': play_calls_markdown(2013, 'Jacksonville Jaguars', book),
         }
         for name, expected in expected_views.items():
-            require(
-                (stats_dir/name).read_text() == expected,
-                f'{name}: stale generated stat view; run render_season_stats.py',
-            )
+            actual = (stats_dir/name).read_text()
+            if actual != expected:
+                actual_lines = actual.splitlines()
+                expected_lines = expected.splitlines()
+                mismatch = next(
+                    (
+                        index
+                        for index, (left, right) in enumerate(
+                            zip(actual_lines, expected_lines), 1
+                        )
+                        if left != right
+                    ),
+                    min(len(actual_lines), len(expected_lines)) + 1,
+                )
+                actual_line = (
+                    actual_lines[mismatch - 1]
+                    if mismatch <= len(actual_lines)
+                    else '<EOF>'
+                )
+                expected_line = (
+                    expected_lines[mismatch - 1]
+                    if mismatch <= len(expected_lines)
+                    else '<EOF>'
+                )
+                require(
+                    False,
+                    f'{name}: stale generated stat view at line {mismatch}; '
+                    f'actual={actual_line!r}; expected={expected_line!r}; '
+                    'run render_season_stats.py',
+                )
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append(f'Malformed season statbook: {exc}')
 
