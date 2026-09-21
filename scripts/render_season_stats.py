@@ -421,7 +421,7 @@ def main():
     book = aggregate_receipts(receipts)
     stats_dir.mkdir(parents=True, exist_ok=True)
     (stats_dir / "season_totals.json").write_text(
-        json.dumps(compact_book_for_storage(book), indent=2, sort_keys=True) + "\n", encoding="utf-8"
+        json.dumps(compact_book_for_storage(book), sort_keys=True, separators=(",",":")) + "\n", encoding="utf-8"
     )
     (stats_dir / "team_player_stats.md").write_text(
         team_markdown(args.year, args.team, book), encoding="utf-8"
