@@ -10,7 +10,7 @@ This is the front door for season statistics.
 | [All player stats](stats/all_player_stats.md) | Comprehensive supported-field ledger for every player preserved in the stat receipts |
 | [League player stats](stats/league_player_stats.md) | League-wide category tables |
 | [Stone play-call stats](stats/play_call_stats.md) | Season-to-date usage and results by named offensive concept |
-| [League leaders](stats/league_leaders.md) | Formal leaders when league receipt coverage is complete |
+| [League leaders](stats/league_leaders.md) | Formal leaders when league receipt coverage and exact player attribution are complete |
 | [Standings](standings.md) | Team W-L-T, division/conference/league position and tiebreak presentation |
 | [Statbook rules](stats/README.md) | Receipt storage, coverage rules and rebuild procedure |
 
