@@ -204,7 +204,7 @@ def league_markdown(year, book):
     lines = [
         "# %s NFL player statistics" % year,
         "",
-        "**Version:** `%s-W%02d-LEAGUE-PLAYER-STATS-1`" % (year, book["through_week"]),
+        "**Version:** `%s-W%02d-LEAGUE-PLAYER-STATS-2`" % (year, book["through_week"]),
         "**Through:** Week %d." % book["through_week"],
         coverage_line(book),
         "",
@@ -349,7 +349,7 @@ def leaders_markdown(year, book):
     lines = [
         "# %s NFL statistical leaders" % year,
         "",
-        "**Version:** `%s-W%02d-LEADERS-1`" % (year, book["through_week"]),
+        "**Version:** `%s-W%02d-LEADERS-2`" % (year, book["through_week"]),
         "**Through:** Week %d." % book["through_week"],
         coverage_line(book),
         "",

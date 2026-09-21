@@ -1,11 +1,11 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2013-SEP09-WEEK1-HANDOFF-STATE-11`
-**Supersedes:** `JAX-2013-SEP09-WEEK1-RESET-STATE-10`
-**Snapshot effective:** September 9, 2013, after the published generation-2 Week 1 slate, attribution correction and Week 2 handoff reconciliation.
-**Last reconciled:** September 20, 2026; season-ledger Entry 32.
-**Global package checkpoint:** `Canonical correction - September 9, 2013 - Week 1 attribution and Week 2 handoff reconciled`
+**Version:** `JAX-2013-SEP09-WEEK2-READY-STATE-12`
+**Supersedes:** `JAX-2013-SEP09-WEEK1-HANDOFF-STATE-11`
+**Snapshot effective:** September 9, 2013, after the published generation-2 Week 1 slate, completed attribution audit and Week 2 generation-readiness reconciliation.
+**Last reconciled:** September 20, 2026; season-ledger Entry 33.
+**Global package checkpoint:** `Canonical correction - September 9, 2013 - Week 1 attribution audit completed for Week 2 readiness`
 
 ## Effective source-version manifest
 
@@ -14,8 +14,8 @@
 | Document 1 | `358ccf4feac40830055bae5e4cbd84151536ab9e` | Active foundation source |
 | Document 2 | `ab790f6e935c99a901a6d39cf3bee5183cf4da3e` | Active foundation source |
 | Document 3 | `38e0ce21e9cf1b62f8d4b9c281955facdaf07b57` | Active foundation source |
-| Document 4 | `JAX-2013-SEP09-WEEK1-RESET-STATE-10`; closed by Entry 31 | Active 53, practice squad, roles and availability; no owned fact changed in Entry 32 |
-| Document 6 | 2013 ledger through Entry 32 | Week 1 attribution / Week 2 handoff correction |
+| Document 4 | `JAX-2013-SEP09-WEEK1-RESET-STATE-10`; closed by Entry 31 | Active 53, practice squad, roles and availability; no owned fact changed in Entries 32-33 |
+| Document 6 | 2013 ledger through Entry 33 | Week 1 attribution audit completion / Week 2 readiness correction |
 
 ## 1. Master clock and competition position
 
@@ -29,7 +29,7 @@
 | Preseason record | **2-2** |
 | **Current Jacksonville controlled roster** | **53** |
 | Regular-season record | **1-0** |
-| Last event | Jacksonville defeated Kansas City 34-13; Week 1 generation-2 slate published; attribution/handoff correction closed without rerun |
+| Last event | Jacksonville defeated Kansas City 34-13; Week 1 generation-2 slate published; completed attribution/readiness correction closed without rerun |
 | Next competitive event | **September 15 at Oakland, 4:25 p.m. — NOT SIMULATED** |
 
 ## 2. Roster and finance
@@ -52,8 +52,8 @@ Jacksonville gained 431 yards, committed one turnover and won 34-13. No one-game
 
 ## 5. League position
 
-The full Week 1 slate is closed in `career/2013/league_results/week_01.md`. Jacksonville is 1-0 in the AFC South; Indianapolis, Houston and Tennessee are 0-1. `career/2013/standings.md` owns the complete tables. All 16 team-result receipts preserve complete scores and team totals. A branch-control audit corrected impossible historical-team credits in five receipts; Jacksonville's player attribution remains complete, while exact player attribution for the affected background clubs is partial. Formal league player rankings are withheld rather than reassigned by guesswork.
+The full Week 1 slate is closed in `career/2013/league_results/week_01.md`. Jacksonville is 1-0 in the AFC South; Indianapolis, Houston and Tennessee are 0-1. `career/2013/standings.md` owns the complete tables. All 16 team-result receipts preserve complete scores and team totals. The completed branch-control audit corrected ten impossible historical-team player identities across seven receipts; Jacksonville's player attribution remains complete, while exact player attribution for nine affected non-Jacksonville clubs is partial. Formal league player rankings are withheld rather than reassigned by guesswork.
 
 ## 6. Immediate next step
 
-Week 2 at Oakland is ready for a new explicit `Run Week 2` instruction and Stone's weekly plan. Before any Week 2 game event closes, build the full weekly TeamInput package, obtain fresh qualified-medical communication, and pass both ordinary game readiness and the branch-exclusivity gate. Cousins carries forward as QB1 with no ordinary multi-quarterback rotation. **Oakland has not been simulated.**
+The repository/statbook layer has passed the Week 2 generation-readiness audit in `career/2013/migrations/week_02_generation_readiness.md`. Week 2 at Oakland is ready for a new explicit `Run Week 2` instruction and Stone's weekly plan. Before any Week 2 game event closes, build the full weekly TeamInput package, obtain fresh qualified-medical communication, and pass both ordinary game readiness and the branch-exclusivity gate. Cousins carries forward as QB1 with no ordinary multi-quarterback rotation. **Oakland has not been simulated.**

@@ -98,7 +98,7 @@
 | Matt Asiata | Minnesota Vikings | 9 | 43 | 4.8 |
 | Tashard Choice | Buffalo Bills | 9 | 43 | 4.8 |
 | Benny Cunningham | St. Louis Rams | 12 | 42 | 3.5 |
-| Eddie Lacy | Green Bay Packers | 8 | 42 | 5.3 |
+| Eddie Lacy | Green Bay Packers | 8 | 42 | 5.2 |
 | Ronnie Hillman | Denver Broncos | 7 | 42 | 6.0 |
 | Le'Veon Bell | Pittsburgh Steelers | 8 | 40 | 5.0 |
 | Robert Turbin | Seattle Seahawks | 8 | 40 | 5.0 |
@@ -135,7 +135,7 @@
 | Darren Sproles | New Orleans Saints | 7 | 25 | 3.6 |
 | Daryl Richardson | St. Louis Rams | 5 | 25 | 5.0 |
 | Jeremy Stewart | Oakland Raiders | 5 | 25 | 5.0 |
-| Jerrel Jernigan | New York Giants | 4 | 25 | 6.3 |
+| Jerrel Jernigan | New York Giants | 4 | 25 | 6.2 |
 | Will Johnson | Pittsburgh Steelers | 3 | 25 | 8.3 |
 | Alfonso Smith | Arizona Cardinals | 5 | 24 | 4.8 |
 | Bryce Brown | Philadelphia Eagles | 6 | 24 | 4.0 |
@@ -209,8 +209,8 @@
 | Knowshon Moreno | Denver Broncos | 7 | 17 | 2.4 |
 | Landry Jones | Pittsburgh Steelers | 3 | 17 | 5.7 |
 | Marcus Thigpen | Miami Dolphins | 3 | 17 | 5.7 |
-| Mike Tolbert | Carolina Panthers | 4 | 17 | 4.3 |
-| Peyton Manning | Denver Broncos | 4 | 17 | 4.3 |
+| Mike Tolbert | Carolina Panthers | 4 | 17 | 4.2 |
+| Peyton Manning | Denver Broncos | 4 | 17 | 4.2 |
 | Pierre Thomas | New Orleans Saints | 6 | 17 | 2.8 |
 | Zac Dysert | Denver Broncos | 3 | 17 | 5.7 |
 | Brad Sorensen | San Diego Chargers | 2 | 16 | 8.0 |
@@ -256,9 +256,9 @@
 | Justin Hunter | Tennessee Titans | 2 | 13 | 6.5 |
 | Kendall Wright | Tennessee Titans | 3 | 13 | 4.3 |
 | LaMichael James | San Francisco 49ers | 5 | 13 | 2.6 |
-| Michael Bush | Chicago Bears | 4 | 13 | 3.3 |
-| Nick Toon | New Orleans Saints | 4 | 13 | 3.3 |
-| Shane Vereen | New England Patriots | 4 | 13 | 3.3 |
+| Michael Bush | Chicago Bears | 4 | 13 | 3.2 |
+| Nick Toon | New Orleans Saints | 4 | 13 | 3.2 |
+| Shane Vereen | New England Patriots | 4 | 13 | 3.2 |
 | Christian Ponder | Minnesota Vikings | 3 | 12 | 4.0 |
 | Cole Beasley | Dallas Cowboys | 3 | 12 | 4.0 |
 | Cyrus Gray | Kansas City Chiefs | 3 | 12 | 4.0 |
@@ -297,9 +297,9 @@
 | Travaris Cadet | New Orleans Saints | 3 | 10 | 3.3 |
 | A.J. Green | Cincinnati Bengals | 2 | 9 | 4.5 |
 | Andy Dalton | Cincinnati Bengals | 3 | 9 | 3.0 |
-| Chad Henne | Jacksonville Jaguars | 4 | 9 | 2.3 |
+| Chad Henne | Jacksonville Jaguars | 4 | 9 | 2.2 |
 | Chris Hogan | Buffalo Bills | 3 | 9 | 3.0 |
-| Denarius Moore | Oakland Raiders | 4 | 9 | 2.3 |
+| Denarius Moore | Oakland Raiders | 4 | 9 | 2.2 |
 | Greg Jennings | Minnesota Vikings | 3 | 9 | 3.0 |
 | Jacoby Ford | Oakland Raiders | 2 | 9 | 4.5 |
 | Jeff Tuel | Buffalo Bills | 3 | 9 | 3.0 |
@@ -401,7 +401,7 @@
 | Player | Team(s) | REC | YDS | AVG |
 |---|---|---:|---:|---:|
 | DeAndre Hopkins | Houston Texans | 8 | 125 | 15.6 |
-| Will Johnson | Pittsburgh Steelers | 4 | 109 | 27.3 |
+| Will Johnson | Pittsburgh Steelers | 4 | 109 | 27.2 |
 | Andrew Quarless | Green Bay Packers | 4 | 91 | 22.8 |
 | Nate Burleson | Detroit Lions | 7 | 90 | 12.9 |
 | Marshawn Lynch | Seattle Seahawks | 8 | 89 | 11.1 |
@@ -425,14 +425,14 @@
 | Vincent Jackson | Tampa Bay Buccaneers | 6 | 67 | 11.2 |
 | Marcus Thigpen | Miami Dolphins | 6 | 66 | 11.0 |
 | Brian Leonard | Tampa Bay Buccaneers | 6 | 65 | 10.8 |
-| Josh Morgan | Washington Redskins | 4 | 65 | 16.3 |
+| Josh Morgan | Washington Redskins | 4 | 65 | 16.2 |
 | Marquise Goodwin | Buffalo Bills | 5 | 65 | 13.0 |
-| Matt Forte | Chicago Bears | 4 | 65 | 16.3 |
+| Matt Forte | Chicago Bears | 4 | 65 | 16.2 |
 | Jacoby Jones | Baltimore Ravens | 7 | 63 | 9.0 |
 | Jacoby Ford | Oakland Raiders | 3 | 62 | 20.7 |
 | Kevin Cone | Atlanta Falcons | 4 | 62 | 15.5 |
 | Brent Celek | Philadelphia Eagles | 3 | 61 | 20.3 |
-| Jermaine Gresham | Cincinnati Bengals | 4 | 61 | 15.3 |
+| Jermaine Gresham | Cincinnati Bengals | 4 | 61 | 15.2 |
 | Steve Johnson | Buffalo Bills | 3 | 60 | 20.0 |
 | DeAngelo Williams | Carolina Panthers | 4 | 58 | 14.5 |
 | Nick Kasa | Oakland Raiders | 2 | 58 | 29.0 |
@@ -480,10 +480,10 @@
 | Greg Jones | Houston Texans | 2 | 42 | 21.0 |
 | Marcedes Lewis | Jacksonville Jaguars | 4 | 42 | 10.5 |
 | Robert Turbin | Seattle Seahawks | 4 | 42 | 10.5 |
-| Jamaal Charles | Kansas City Chiefs | 4 | 41 | 10.3 |
+| Jamaal Charles | Kansas City Chiefs | 4 | 41 | 10.2 |
 | Joe Webb | Minnesota Vikings | 5 | 41 | 8.2 |
 | Keshawn Martin | Houston Texans | 3 | 41 | 13.7 |
-| Stevan Ridley | New England Patriots | 4 | 41 | 10.3 |
+| Stevan Ridley | New England Patriots | 4 | 41 | 10.2 |
 | Brian Hartline | Miami Dolphins | 4 | 40 | 10.0 |
 | James Hanna | Dallas Cowboys | 2 | 40 | 20.0 |
 | Garrett Celek | San Francisco 49ers | 2 | 39 | 19.5 |
@@ -491,7 +491,7 @@
 | A.J. Green | Cincinnati Bengals | 2 | 38 | 19.0 |
 | Chris Harper | San Francisco 49ers | 2 | 37 | 18.5 |
 | DeSean Jackson | Philadelphia Eagles | 2 | 37 | 18.5 |
-| Trent Richardson | Cleveland Browns | 4 | 37 | 9.3 |
+| Trent Richardson | Cleveland Browns | 4 | 37 | 9.2 |
 | Tyler Clutts | Miami Dolphins | 3 | 37 | 12.3 |
 | Coby Fleener | Indianapolis Colts | 6 | 36 | 6.0 |
 | Eddie Lacy | Green Bay Packers | 3 | 36 | 12.0 |
@@ -527,7 +527,7 @@
 | Demaryius Thomas | Denver Broncos | 3 | 29 | 9.7 |
 | Earl Bennett | Chicago Bears | 3 | 29 | 9.7 |
 | Mike Brown | Jacksonville Jaguars | 2 | 29 | 14.5 |
-| Sean McGrath | Kansas City Chiefs | 4 | 29 | 7.3 |
+| Sean McGrath | Kansas City Chiefs | 4 | 29 | 7.2 |
 | Aldrick Robinson | Washington Redskins | 4 | 28 | 7.0 |
 | Kenbrell Thompkins | New England Patriots | 3 | 28 | 9.3 |
 | Deonte Thompson | Baltimore Ravens | 1 | 27 | 27.0 |
@@ -594,7 +594,7 @@
 | Reggie Bush | Detroit Lions | 3 | 18 | 6.0 |
 | Alshon Jeffery | Chicago Bears | 2 | 17 | 8.5 |
 | Chris Gragg | Buffalo Bills | 2 | 17 | 8.5 |
-| Dallas Clark | Baltimore Ravens | 4 | 17 | 4.3 |
+| Dallas Clark | Baltimore Ravens | 4 | 17 | 4.2 |
 | Michael Egnew | Miami Dolphins | 3 | 17 | 5.7 |
 | Miles Austin | Dallas Cowboys | 1 | 17 | 17.0 |
 | Niles Paul | Washington Redskins | 3 | 17 | 5.7 |
@@ -629,7 +629,7 @@
 | Theo Riddick | Detroit Lions | 1 | 14 | 14.0 |
 | Zac Stacy | St. Louis Rams | 2 | 14 | 7.0 |
 | Anthony Sherman | Kansas City Chiefs | 3 | 13 | 4.3 |
-| Brian Quick | St. Louis Rams | 4 | 13 | 3.3 |
+| Brian Quick | St. Louis Rams | 4 | 13 | 3.2 |
 | Dwayne Harris | Dallas Cowboys | 1 | 13 | 13.0 |
 | Gavin Escobar | Dallas Cowboys | 2 | 13 | 6.5 |
 | Orson Charles | Cincinnati Bengals | 1 | 13 | 13.0 |
@@ -1017,7 +1017,6 @@
 | Brandon Taylor | San Diego Chargers | 3 | 0 |
 | Brent Grimes | Jacksonville Jaguars | 3 | 0 |
 | Buster Skrine | Cleveland Browns | 3 | 0 |
-| C.J. Mosley | Detroit Lions | 3 | 0 |
 | C.J. Wilson | Jacksonville Jaguars | 3 | 0 |
 | Cassius Vaughn | Indianapolis Colts | 3 | 0 |
 | Chris Baker | Washington Redskins | 3 | 0 |
@@ -1074,8 +1073,8 @@
 | Kenrick Ellis | New York Jets | 3 | 1 |
 | Kyle Wilber | Dallas Cowboys | 3 | 0 |
 | Kyle Wilson | New York Jets | 3 | 0 |
-| Lamarr Houston | Oakland Raiders | 3 | 0 |
 | LaRon Landry | Indianapolis Colts | 3 | 0 |
+| Lamarr Houston | Oakland Raiders | 3 | 0 |
 | Mario Addison | Carolina Panthers | 3 | 0 |
 | Matt Elam | Baltimore Ravens | 3 | 0 |
 | Mistral Raymond | Minnesota Vikings | 3 | 0 |
@@ -1108,7 +1107,6 @@
 | Allen Bradford | Seattle Seahawks | 2 | 0 |
 | Antonio Johnson | Tennessee Titans | 2 | 0 |
 | Antrel Rolle | New York Giants | 2 | 0 |
-| Antwon Blake | Pittsburgh Steelers | 2 | 0 |
 | Bennie Logan | Philadelphia Eagles | 2 | 0 |
 | Billy Winn | Cleveland Browns | 2 | 0 |
 | Bradley McDougald | Kansas City Chiefs | 2 | 0 |
