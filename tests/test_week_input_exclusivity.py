@@ -27,6 +27,14 @@ class WeekInputExclusivityTests(unittest.TestCase):
                 {"Kirk Cousins","Brent Grimes","Tyler Bray","Brandon King"},
             )
 
+    def test_current_branch_roster_parser_sees_active_and_practice_squad(self):
+        root=Path(__file__).resolve().parents[1]
+        controlled=controlled_players_from_roster(root/"career/2013/roster.md")
+        self.assertIn("Kirk Cousins",controlled)
+        self.assertIn("Tyler Bray",controlled)
+        self.assertIn("Jordan Poyer",controlled)
+        self.assertIn("C.J. Anderson",controlled)
+
     def test_branch_controlled_player_on_background_team_fails(self):
         data={
             "games":[{
