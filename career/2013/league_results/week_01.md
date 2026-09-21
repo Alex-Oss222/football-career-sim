@@ -46,7 +46,7 @@
 
 ### Baltimore Ravens 20, Denver Broncos 10
 
-Baltimore Ravens converted the generated Week 1 game into a 10-point win. The final reflects the shared kernel's complete team and player accounting rather than the superseded legacy result.
+Baltimore Ravens converted the generated Week 1 game into a 10-point win. The final reflects the shared kernel's complete team accounting and preserved player-stat receipt rather than the superseded legacy result.
 
 **Standouts:**
 - Tyrod Taylor, Baltimore Ravens — 183 passing yards.
@@ -54,7 +54,7 @@ Baltimore Ravens converted the generated Week 1 game into a 10-point win. The fi
 
 ### New England Patriots 43, Buffalo Bills 22
 
-New England Patriots converted the generated Week 1 game into a 21-point win. The final reflects the shared kernel's complete team and player accounting rather than the superseded legacy result.
+New England Patriots converted the generated Week 1 game into a 21-point win. The final reflects the shared kernel's complete team accounting and preserved player-stat receipt rather than the superseded legacy result.
 
 **Standouts:**
 - E.J. Manuel, Buffalo Bills — 251 passing yards, 22 rushing yards.
@@ -62,7 +62,7 @@ New England Patriots converted the generated Week 1 game into a 21-point win. Th
 
 ### Pittsburgh Steelers 35, Tennessee Titans 28
 
-Pittsburgh Steelers converted the generated Week 1 game into a 7-point win. The final reflects the shared kernel's complete team and player accounting rather than the superseded legacy result.
+Pittsburgh Steelers converted the generated Week 1 game into a 7-point win. The final reflects the shared kernel's complete team accounting and preserved player-stat receipt rather than the superseded legacy result.
 
 **Standouts:**
 - Ryan Fitzpatrick, Tennessee Titans — 283 passing yards, 2 rushing yards.
@@ -70,7 +70,7 @@ Pittsburgh Steelers converted the generated Week 1 game into a 7-point win. The 
 
 ### New Orleans Saints 30, Atlanta Falcons 27
 
-New Orleans Saints converted the generated Week 1 game into a 3-point win. The final reflects the shared kernel's complete team and player accounting rather than the superseded legacy result.
+New Orleans Saints converted the generated Week 1 game into a 3-point win. The final reflects the shared kernel's complete team accounting and preserved player-stat receipt rather than the superseded legacy result.
 
 **Standouts:**
 - Matt Ryan, Atlanta Falcons — 182 passing yards, 15 rushing yards.
@@ -78,7 +78,7 @@ New Orleans Saints converted the generated Week 1 game into a 3-point win. The f
 
 ### New York Jets 35, Tampa Bay Buccaneers 26
 
-New York Jets converted the generated Week 1 game into a 9-point win. The final reflects the shared kernel's complete team and player accounting rather than the superseded legacy result.
+New York Jets converted the generated Week 1 game into a 9-point win. The final reflects the shared kernel's complete team accounting and preserved player-stat receipt rather than the superseded legacy result.
 
 **Standouts:**
 - Matt Simms, New York Jets — 176 passing yards, 57 rushing yards.
@@ -86,7 +86,7 @@ New York Jets converted the generated Week 1 game into a 9-point win. The final 
 
 ### Seattle Seahawks 41, Carolina Panthers 17
 
-Seattle Seahawks converted the generated Week 1 game into a 24-point win. The final reflects the shared kernel's complete team and player accounting rather than the superseded legacy result.
+Seattle Seahawks converted the generated Week 1 game into a 24-point win. The final reflects the shared kernel's complete team accounting and preserved player-stat receipt rather than the superseded legacy result.
 
 **Standouts:**
 - Tarvaris Jackson, Seattle Seahawks — 180 passing yards, 29 rushing yards.
@@ -94,7 +94,7 @@ Seattle Seahawks converted the generated Week 1 game into a 24-point win. The fi
 
 ### Chicago Bears 28, Cincinnati Bengals 24
 
-Chicago Bears converted the generated Week 1 game into a 4-point win. The final reflects the shared kernel's complete team and player accounting rather than the superseded legacy result.
+Chicago Bears converted the generated Week 1 game into a 4-point win. The final reflects the shared kernel's complete team accounting and preserved player-stat receipt rather than the superseded legacy result.
 
 **Standouts:**
 - Jay Cutler, Chicago Bears — 225 passing yards, 2 rushing yards.
@@ -102,7 +102,7 @@ Chicago Bears converted the generated Week 1 game into a 4-point win. The final 
 
 ### Miami Dolphins 26, Cleveland Browns 17
 
-Miami Dolphins converted the generated Week 1 game into a 9-point win. The final reflects the shared kernel's complete team and player accounting rather than the superseded legacy result.
+Miami Dolphins converted the generated Week 1 game into a 9-point win. The final reflects the shared kernel's complete team accounting and preserved player-stat receipt rather than the superseded legacy result.
 
 **Standouts:**
 - Jason Campbell, Cleveland Browns — 185 passing yards, 16 rushing yards.
@@ -110,7 +110,7 @@ Miami Dolphins converted the generated Week 1 game into a 9-point win. The final
 
 ### Minnesota Vikings 27, Detroit Lions 24
 
-Minnesota Vikings converted the generated Week 1 game into a 3-point win. The final reflects the shared kernel's complete team and player accounting rather than the superseded legacy result.
+Minnesota Vikings converted the generated Week 1 game into a 3-point win. The final reflects the shared kernel's complete team accounting and preserved player-stat receipt rather than the superseded legacy result.
 
 **Standouts:**
 - Kellen Moore, Detroit Lions — 152 passing yards.
@@ -118,7 +118,7 @@ Minnesota Vikings converted the generated Week 1 game into a 3-point win. The fi
 
 ### Oakland Raiders 31, Indianapolis Colts 21
 
-Oakland Raiders converted the generated Week 1 game into a 10-point win. The final reflects the shared kernel's complete team and player accounting rather than the superseded legacy result.
+Oakland Raiders converted the generated Week 1 game into a 10-point win. The final reflects the shared kernel's complete team accounting and preserved player-stat receipt rather than the superseded legacy result.
 
 **Standouts:**
 - Andrew Luck, Indianapolis Colts — 232 passing yards, 23 rushing yards.
@@ -126,7 +126,7 @@ Oakland Raiders converted the generated Week 1 game into a 10-point win. The fin
 
 ### San Francisco 49ers 27, Green Bay Packers 24
 
-San Francisco 49ers converted the generated Week 1 game into a 3-point win. The final reflects the shared kernel's complete team and player accounting rather than the superseded legacy result.
+San Francisco 49ers converted the generated Week 1 game into a 3-point win. The final reflects the shared kernel's complete team accounting and preserved player-stat receipt rather than the superseded legacy result.
 
 **Standouts:**
 - Aaron Rodgers, Green Bay Packers — 326 passing yards, 20 rushing yards.
@@ -134,7 +134,7 @@ San Francisco 49ers converted the generated Week 1 game into a 3-point win. The 
 
 ### Arizona Cardinals 21, St. Louis Rams 17
 
-Arizona Cardinals converted the generated Week 1 game into a 4-point win. The final reflects the shared kernel's complete team and player accounting rather than the superseded legacy result.
+Arizona Cardinals converted the generated Week 1 game into a 4-point win. The final reflects the shared kernel's complete team accounting and preserved player-stat receipt rather than the superseded legacy result.
 
 **Standouts:**
 - Kellen Clemens, St. Louis Rams — 185 passing yards, 16 rushing yards.
@@ -142,7 +142,7 @@ Arizona Cardinals converted the generated Week 1 game into a 4-point win. The fi
 
 ### Dallas Cowboys 24, New York Giants 20
 
-Dallas Cowboys converted the generated Week 1 game into a 4-point win. The final reflects the shared kernel's complete team and player accounting rather than the superseded legacy result.
+Dallas Cowboys converted the generated Week 1 game into a 4-point win. The final reflects the shared kernel's complete team accounting and preserved player-stat receipt rather than the superseded legacy result.
 
 **Standouts:**
 - Tony Romo, Dallas Cowboys — 174 passing yards, 11 rushing yards.
@@ -150,7 +150,7 @@ Dallas Cowboys converted the generated Week 1 game into a 4-point win. The final
 
 ### Philadelphia Eagles 31, Washington Redskins 17
 
-Philadelphia Eagles converted the generated Week 1 game into a 14-point win. The final reflects the shared kernel's complete team and player accounting rather than the superseded legacy result.
+Philadelphia Eagles converted the generated Week 1 game into a 14-point win. The final reflects the shared kernel's complete team accounting and preserved player-stat receipt rather than the superseded legacy result.
 
 **Standouts:**
 - Rex Grossman, Washington Redskins — 143 passing yards, 11 rushing yards.
@@ -158,7 +158,7 @@ Philadelphia Eagles converted the generated Week 1 game into a 14-point win. The
 
 ### San Diego Chargers 37, Houston Texans 16
 
-San Diego Chargers converted the generated Week 1 game into a 21-point win. The final reflects the shared kernel's complete team and player accounting rather than the superseded legacy result.
+San Diego Chargers converted the generated Week 1 game into a 21-point win. The final reflects the shared kernel's complete team accounting and preserved player-stat receipt rather than the superseded legacy result.
 
 **Standouts:**
 - Case Keenum, Houston Texans — 221 passing yards, 23 rushing yards.
@@ -166,7 +166,7 @@ San Diego Chargers converted the generated Week 1 game into a 21-point win. The 
 
 ### Jacksonville Jaguars 34, Kansas City Chiefs 13
 
-Jacksonville Jaguars converted the generated Week 1 game into a 21-point win. The final reflects the shared kernel's complete team and player accounting rather than the superseded legacy result.
+Jacksonville Jaguars converted the generated Week 1 game into a 21-point win. The final reflects the shared kernel's complete team accounting and preserved player-stat receipt rather than the superseded legacy result.
 
 **Standouts:**
 - Chase Daniel, Kansas City Chiefs — 176 passing yards, 23 rushing yards.
