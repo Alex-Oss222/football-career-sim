@@ -782,7 +782,6 @@ Compact comprehensive ledger of every nonzero supported player counter preserved
 | Jason Avant | Philadelphia Eagles | WR | RushAtt=6; RushYds=23; long_rush=6; Tgt=8; Rec=5; RecYds=49; long_reception=16; KR=1; KRYds=36; RetYds=36 |
 | Jeff Maehl | Philadelphia Eagles | WR | RushAtt=2; RushYds=13; long_rush=11; Tgt=3; Rec=2; RecYds=16; long_reception=10 |
 | Riley Cooper | Philadelphia Eagles | WR | RushAtt=2; RushYds=9; long_rush=5; Tgt=5; Rec=3; RecYds=32; long_reception=26 |
-| Antwon Blake | Pittsburgh Steelers | CB | solo_tackles=2; Tkl=2; PD=1 |
 | Cortez Allen | Pittsburgh Steelers | CB | solo_tackles=4; Tkl=4; PD=1 |
 | Ivan Taylor | Pittsburgh Steelers | CB | solo_tackles=3; Tkl=3; PD=1 |
 | William Gay | Pittsburgh Steelers | CB | solo_tackles=3; Tkl=3 |
