@@ -669,5 +669,5 @@ The audit also identified why the post-merge private snapshot advance for the pu
 **Primary records:** `regular_season/week_01_kansas_city_at_jacksonville/output.md`; corrected `stats/game_receipts/`; `stats/league_player_stats.md`; `stats/all_player_stats.md`; `stats/league_leaders.md`; `migrations/week_01_full_fidelity_reset.md`.
 **Next competitive event:** September 15 Week 2 at Oakland, 4:25 p.m. ET. **Week 2 has not been simulated.**
 
-**Commit closed — Canonical correction - September 9, 2013 - Week 1 attribution and Week 2 handoff reconciled — football clock remains September 9 after Week 1**
+**Commit closed — Canonical correction - September 9, 2013 - Week 1 attribution and Week 2 handoff reconciled — canonical through September 9, after Week 1 and before Week 2 preparation**
 
