@@ -671,3 +671,22 @@ The audit also identified why the post-merge private snapshot advance for the pu
 
 **Commit closed — Canonical correction - September 9, 2013 - Week 1 attribution and Week 2 handoff reconciled — canonical through September 9, after Week 1 and before Week 2 preparation**
 
+## Entry 33 — Week 1 attribution audit completion and Week 2 readiness correction closed
+
+**Effective date:** September 9, 2013
+**Checkpoint:** `Canonical correction - September 9, 2013 - Week 1 attribution audit completed for Week 2 readiness`
+**Preceding global package checkpoint:** `Canonical correction - September 9, 2013 - Week 1 attribution and Week 2 handoff reconciled`
+
+A follow-up pre-Week-2 generation-readiness audit cross-checked all sixteen generation-2 Week 1 receipts against Jacksonville's branch-controlled active roster and practice squad. It found two additional impossible historical-team player credits that Entry 32 had missed: Antwon Blake on Pittsburgh in the Tennessee-Pittsburgh receipt and C.J. Mosley on Detroit in the Minnesota-Detroit receipt. Blake was under Jacksonville control before Week 1 and on the Jacksonville practice squad; Mosley remained on Jacksonville's active roster and was medically unavailable for Jacksonville's Week 1 game.
+
+This follow-up brings the cumulative branch-control correction to ten player identities across seven receipts and nine non-Jacksonville clubs. The two newly identified lines were moved to explicit pseudo/unattributed rows in their existing receipts, and Pittsburgh and Detroit were added to the clubs with partial exact player attribution. No Week 1 game was rerun. Every final score, team total, standing, Jacksonville player line, generated medical event and the Jacksonville 34-13 result remain unchanged.
+
+The season-stat cache and readable player views were regenerated from the corrected receipts. Formal league player rankings remain withheld because exact player attribution is incomplete for the corrected clubs. The stat renderer's correction-aware version labels were reconciled with the checked-in views, and repository validation now rebuilds the generated season-stat cache and Markdown views from the receipt set so future drift fails closed.
+
+This correction does not simulate or authorize Week 2. Oakland remains unplayed. Before any Week 2 event closes, the full weekly TeamInput slate must pass the branch-exclusivity gate and ordinary game readiness, including fresh qualified-medical communication.
+
+**Primary records:** `migrations/week_02_generation_readiness.md`; corrected `stats/game_receipts/2013-week01-reset-v2-03.json` and `2013-week01-reset-v2-09.json`; regenerated `stats/season_totals.json` and stat views.
+**Next competitive event:** September 15 Week 2 at Oakland, 4:25 p.m. ET. **Week 2 has not been simulated.**
+
+**Commit closed — Canonical correction - September 9, 2013 - Week 1 attribution audit completed for Week 2 readiness — canonical through September 9, after Week 1 and before Week 2 preparation**
+
