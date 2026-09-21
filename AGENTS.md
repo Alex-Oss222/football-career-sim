@@ -137,7 +137,7 @@ For the named week, Codex must autonomously:
 Before the first game event of any regular-season/postseason weekly slate closes:
 
 - Build the full weekly TeamInput package in the transient workspace.
-- Run `python scripts/check_week_input_exclusivity.py <weekly-input-package.json>`.
+- Run `python scripts/check_week_input_exclusivity.py <weekly-input-package.json> --expected-games <scheduled-game-count>`. Use the actual week's scheduled game count so a partial package cannot pass.
 - Derive Jacksonville control from the current branch `career/[year]/roster.md`, including both active roster and practice squad.
 - A Jacksonville-controlled player may not appear in any non-Jacksonville TeamInput, even when a real historical Week-N roster source lists that player for another club.
 - No player identifier may appear on two clubs in the same simulated weekly slate.
