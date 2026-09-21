@@ -3,7 +3,7 @@
 **Status:** COMPLETE — full-fidelity generation 2.
 **Through:** Monday, September 9, 2013.
 **Resolution:** All 16 games were frozen before the replacement draw and closed through the shared production runner. Jacksonville-Kansas City is summarized here only for slate completeness; its full record is the weekly output.
-**Stat coverage:** Complete. Jacksonville has a full receipt; the other 15 games have `compact_stats` receipts.
+**Stat coverage:** Complete receipt and team-stat coverage. Jacksonville has a full receipt; the other 15 games have `compact_stats` receipts. Exact player attribution is partial for nine non-Jacksonville clubs across seven corrected receipts, so formal league player rankings are withheld.
 
 ## Running league standings after Week 1
 
