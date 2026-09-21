@@ -60,10 +60,12 @@ Generation 2 passed the internal gate, closed all 16 replacements and was publis
 
 ## Post-publication branch-roster attribution correction
 
-A Week 2 handoff audit found that the historical Week-1 roster reconstruction had retained several players on their real-history clubs even though earlier branch transactions already placed them under Jacksonville control. The defect affected player attribution in five receipts:
+A Week 2 handoff audit, followed by the Week 2 generation-readiness audit, found that the historical Week-1 roster reconstruction had retained players on their real-history clubs even though branch canon already placed them under Jacksonville control. The completed defect scope affected ten player identities across seven receipts:
 
 - Baltimore-Denver: Brynden Trawick and C.J. Anderson;
+- Tennessee-Pittsburgh: Antwon Blake on Pittsburgh;
 - Miami-Cleveland: Brent Grimes;
+- Minnesota-Detroit: C.J. Mosley on Detroit;
 - Green Bay-San Francisco: C.J. Wilson;
 - Philadelphia-Washington: Jordan Poyer, Kirk Cousins and Bacarri Rambo;
 - Kansas City-Jacksonville: Tyler Bray on Kansas City's historical roster rail.
