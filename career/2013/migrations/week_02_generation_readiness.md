@@ -47,7 +47,7 @@ Before any Week 2 event closes:
 
 1. Obtain fresh qualified-medical communication for the existing carry-forward medical cases.
 2. Build the complete Week 2 league TeamInput slate before any game draw.
-3. Run `scripts/check_week_input_exclusivity.py` against that frozen slate and Jacksonville's current controlled roster.
+3. Run `python scripts/check_week_input_exclusivity.py <weekly-input-package.json> --expected-games 16` against that frozen Week 2 slate and Jacksonville's current controlled roster.
 4. Pass ordinary `scripts/check_game_readiness.py` against the canonical merged checkout and private runtime.
 5. Close the week only after those gates pass. Do not import Oakland's real historical Week 2 result or use future roster knowledge.
 
