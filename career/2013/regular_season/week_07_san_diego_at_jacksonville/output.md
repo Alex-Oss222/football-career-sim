@@ -28,7 +28,7 @@
 
 **Opponent context:**
 - **San Diego** came in 4-2.
-- **San Diego defense** It had allowed 19.7 points, 354.5 yards (232.0 passing, 122.5 rushing) and a 40.0% third-down rate a game. It had 10 takeaways and 8 sacks; Derek Cox had an interception, a forced fumble and a recovery against Indianapolis.
+- **San Diego defense** had allowed 19.7 points, 354.5 yards (232.0 passing, 122.5 rushing) and a 40.0% third-down rate a game. It had 10 takeaways and 8 sacks; Derek Cox had an interception, a forced fumble and a recovery against Indianapolis.
 - **San Diego offense** averaged 21.7 points and 362.0 yards and converted 37.5% of third downs, with 13 sacks allowed and 7 turnovers.
 - **Philip Rivers** had a five-touchdown game and a three-interception game.
 - **Malcom Floyd** had topped 90 receiving yards in four of six games.
@@ -83,10 +83,10 @@ Stone's reading: San Diego was an opportunistic defense more than a dominant one
 
 **Second quarter.** San Diego answered with a six-play drive: five runs gained nothing, then Philip Rivers threw an 80-yard touchdown to Ryan Mathews. Jacksonville then drove 85 yards in 12 plays. Lewis gained 21 on a chip-release Stick, Jones-Drew 17 on Sprint Flood, and Shorts scored on a 24-yard Snag, making it 20-7. Two Eddie Royal catches of 27 and 35 yards set up a 39-yard Nick Novak field goal before halftime.
 
-**Third quarter.** San Diego opened with a touchdown: Royal caught a 26-yarder and Mathews ran it in from three, making it 20-17. Jacksonville's answer used the week's new calls:
+**Third quarter.** San Diego opened with a touchdown: Royal caught a 26-yarder and Mathews ran it in from three, making it 20-17. Jacksonville's answer mixed in two of the week's new calls:
 - Cousins was sacked on one Split Leak.
 - Toney Clemons caught 21 yards on the next one.
-- Jones-Drew ran 15 on Counter.
+- Jones-Drew ran 15 on Counter, an existing call.
 - Jonathan Grimes scored from 17 yards on 12 Wing Right Wham R.
 
 It was 27-17.

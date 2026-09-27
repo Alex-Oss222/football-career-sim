@@ -12,7 +12,7 @@ The front door for season statistics and standings. Every page below is generate
 | [All players by club](stats/all_player_stats.md) | Club, then position, then player |
 | [League leaders](stats/league_leaders.md) | Leaders within each position, qualified passer-rate leaders and leaders across positions |
 | [Team stats](stats/team_stats.md) | Per-game offense, defense and special teams for every club |
-| [Stone play-call stats](stats/play_call_stats.md) | Named-call labels on Jacksonville snaps (Weeks 1-5 labels are drawn per run/pass type, not carrier-true; Entry 41) |
+| [Stone play-call stats](stats/play_call_stats.md) | Named-call labels on Jacksonville snaps (Weeks 1-7 labels are drawn per run/pass type, not carrier-true; Entry 41) |
 | [Band audit](stats/calibration_audit.md) | League receipts against the sourced 2012 position and volume shapes |
 | [Statbook rules](stats/README.md) | Columns, qualifiers, receipt rules and rebuild commands |
 
