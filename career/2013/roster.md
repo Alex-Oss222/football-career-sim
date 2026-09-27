@@ -8,7 +8,7 @@
 
 ## 1. How to read this page
 
-Players are grouped by position. **Pos** is the roster position in Document 4. **Status** is Active 53 or a reserve list; a player on Reserve/Suspended stays under Jacksonville control but does not count against the 53. **Availability** is the club's current medical communication; "No communicated restriction" means none has been communicated, and game-week status still requires fresh communication before each game. **Role** lists only assignments already decided in canon (ledger and Document 4); a dash means no assignment has been set, not a demotion. The depth chart below those roles is set by staff decisions and is not implied by the order of this page.
+Players are grouped by position. **Pos** is the roster position in Document 4. **Status** is Active 53 or a reserve list; a player on Reserve/Suspended stays under Jacksonville control but does not count against the 53. **Availability** is the club's current medical communication; "No communicated restriction" means none has been communicated, and game-week status still requires fresh communication before each game. **Role** lists only assignments already decided in canon (ledger, Document 5 §4 and the weekly outputs; depth order in `depth_chart.json`); a dash means no assignment has been set, not a demotion. The depth chart below those roles is set by staff decisions and is not implied by the order of this page.
 
 ## 2. How the roster was formed
 
@@ -28,7 +28,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| C.J. Anderson | RB | Active 53 | No communicated restriction | RB3 |
+| C.J. Anderson | RB | Active 53 | No communicated restriction | RB3; coverage units |
 | Jonathan Grimes | RB | Active 53 | No communicated restriction | RB2 |
 | Maurice Jones-Drew | RB | Active 53 | No communicated restriction | Lead back |
 
@@ -36,7 +36,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| Montell Owens | FB | Active 53 | No communicated restriction | — |
+| Montell Owens | FB | Active 53 | No communicated restriction | FB |
 
 ### Wide receivers (5)
 
@@ -46,14 +46,14 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Mike Brown | WR | Active 53 | No communicated restriction | WR4 |
 | Toney Clemons | WR | Active 53 | No communicated restriction | WR3 |
 | Cecil Shorts | WR | Active 53 | No communicated restriction | WR1 |
-| Adam Thielen | WR | Active 53 | Out, upper extremity (Week 5); projected return October 9 | WR2 |
+| Adam Thielen | WR | Active 53 | Out, upper extremity (Week 5); projected return October 9 | WR2; coverage units |
 
 ### Tight ends (3)
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| Allen Reisner | TE | Active 53 | No communicated restriction | — |
-| Marcedes Lewis | TE | Active 53 | No communicated restriction | — |
+| Allen Reisner | TE | Active 53 | No communicated restriction | TE3 (13 personnel) |
+| Marcedes Lewis | TE | Active 53 | No communicated restriction | Lead TE |
 | Travis Kelce | TE | Active 53 | No communicated restriction | TE2 |
 
 ### Offensive tackles (3)
@@ -62,14 +62,14 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 |---|---|---|---|---|
 | Cameron Bradfield | OT | Active 53 | No communicated restriction | Swing tackle; sixth OL in 6OL |
 | Lane Johnson | OT | Active 53 | No communicated restriction | Starting right tackle |
-| Eugene Monroe | OT | Active 53 | No communicated restriction | — |
+| Eugene Monroe | OT | Active 53 | No communicated restriction | Starting LT |
 
 ### Offensive guards (4)
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| Mark Asper | G | Active 53 | No communicated restriction | — |
-| Uche Nwaneri | G | Active 53 | No communicated restriction | — |
+| Mark Asper | G | Active 53 | No communicated restriction | Interior OL depth |
+| Uche Nwaneri | G | Active 53 | No communicated restriction | Starting LG |
 | Austin Pasztor | G | Active 53 | Independent medical hold (August 17 head/neck injury) | — |
 | Will Rackley | G | Active 53 | Limited, no projected absence (upper extremity, Week 5) | Starting right guard |
 
@@ -84,20 +84,20 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| Jason Babin | DE | Active 53 | No communicated restriction | — |
-| Andre Branch | DE | Active 53 | No communicated restriction | — |
-| Ryan Davis | DE | Active 53 | No communicated restriction | — |
+| Jason Babin | DE | Active 53 | No communicated restriction | Edge 1 |
+| Andre Branch | DE | Active 53 | No communicated restriction | Edge 3 |
+| Ryan Davis | DE | Active 53 | No communicated restriction | Edge 4 |
 | Lavar Edwards | DE | Active 53 | No communicated restriction | — |
-| Jeremy Mincey | DE | Active 53 | No communicated restriction | — |
+| Jeremy Mincey | DE | Active 53 | No communicated restriction | Edge 2 |
 | C.J. Wilson | DE | Active 53 | Out, trunk (Week 2); projected return January 30, 2014 | — |
 
 ### Defensive tackles (5)
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| Tyson Alualu | DT | Active 53 | No communicated restriction | — |
-| Sen'Derrick Marks | DT | Active 53 | No communicated restriction | — |
-| Roy Miller | DT | Active 53 | No communicated restriction | — |
+| Tyson Alualu | DT | Active 53 | No communicated restriction | DT rotation |
+| Sen'Derrick Marks | DT | Active 53 | No communicated restriction | Starting DT |
+| Roy Miller | DT | Active 53 | No communicated restriction | Starting DT |
 | C.J. Mosley | DT | Active 53 | Medically unavailable (August 29 upper-extremity injury) | — |
 | Jeris Pendleton | DT | Active 53 | No communicated restriction | — |
 
@@ -105,39 +105,39 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| Russell Allen | LB | Active 53 | No communicated restriction | — |
-| Sio Moore | LB | Active 53 | No communicated restriction | — |
-| Paul Posluszny | LB | Active 53 | No communicated restriction | Base LB (Smith communication lead) |
-| Daryl Smith | LB | Active 53 | No communicated restriction | — |
-| Julian Stanford | LB | Active 53 | No communicated restriction | — |
+| Russell Allen | LB | Active 53 | No communicated restriction | First LB off the bench; coverage units |
+| Sio Moore | LB | Active 53 | No communicated restriction | Package LB (Crennel's packages) |
+| Paul Posluszny | LB | Active 53 | No communicated restriction | Base LB |
+| Daryl Smith | LB | Active 53 | No communicated restriction | Base LB; defensive communication lead |
+| Julian Stanford | LB | Active 53 | No communicated restriction | LB depth after Allen |
 
 ### Cornerbacks (6)
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| Alan Ball | CB | Active 53 | No communicated restriction | — |
-| A.J. Bouye | CB | Active 53 | No communicated restriction | — |
-| Brent Grimes | CB | Active 53 | No communicated restriction | — |
+| Alan Ball | CB | Active 53 | No communicated restriction | Starting CB |
+| A.J. Bouye | CB | Active 53 | No communicated restriction | Coverage units |
+| Brent Grimes | CB | Active 53 | No communicated restriction | Starting CB |
 | Mike Harris | CB | Active 53 | No communicated restriction | — |
-| Jordan Poyer | CB | Active 53 | No communicated restriction | — |
+| Jordan Poyer | CB | Active 53 | No communicated restriction | Nickel; coverage units |
 | Kevin Rutland | CB | Active 53 | No communicated restriction | — |
 
 ### Safeties (4)
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| Dwight Lowery | S | Active 53 | No communicated restriction | — |
-| Chris Prosinski | S | Active 53 | No communicated restriction | — |
-| Bacarri Rambo | S | Active 53 | No communicated restriction | — |
-| Brynden Trawick | S | Active 53 | No communicated restriction | — |
+| Dwight Lowery | S | Active 53 | No communicated restriction | Starting S |
+| Chris Prosinski | S | Active 53 | No communicated restriction | Coverage units |
+| Bacarri Rambo | S | Active 53 | No communicated restriction | Starting S; coverage units |
+| Brynden Trawick | S | Active 53 | No communicated restriction | Coverage units |
 
 ### Specialists (3)
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| Josh Scobee | K | Active 53 | No communicated restriction | — |
-| Bryan Anger | P | Active 53 | No communicated restriction | — |
-| Jeremy Cain | LS | Active 53 | No communicated restriction | — |
+| Josh Scobee | K | Active 53 | No communicated restriction | K |
+| Bryan Anger | P | Active 53 | No communicated restriction | P |
+| Jeremy Cain | LS | Active 53 | No communicated restriction | LS |
 
 ## 4. Practice squad
 

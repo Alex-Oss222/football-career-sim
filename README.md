@@ -9,6 +9,7 @@ An evidence-based NFL head-coaching career simulation centered on Alex-Lamar Sto
 - [2013 season statbook](career/2013/statbook.md): one front door for standings, Jacksonville stats, the comprehensive all-player ledger, league stats and leaderboards.
 - [Game readiness](state/game_readiness.md): verified preparation and outstanding requirements before any game can be resolved.
 - [Update workflow](docs/update_workflow.md): which records must change together and how to check them.
+- [Run-week prompt](docs/run_week.md): the handoff for a regular-season week and the inputs Stone supplies first.
 - [Agent instructions](AGENTS.md): task-specific execution rules.
 
 Current status is maintained in the linked state files. This index deliberately carries no independent date, roster count, cap balance or readiness declaration.
@@ -23,8 +24,8 @@ Current status is maintained in the linked state files. This index deliberately 
 | [library](library/2013_jacksonville_master_calendar.md) | Sourced research; each file states its permitted information date |
 | [archive](archive/README.md) | Superseded or quarantined material, excluded from ordinary runtime reads |
 | [docs](docs/update_workflow.md) | File ownership, dependencies and maintenance procedure |
-| [scripts](scripts/validate_repository.py) | Repository validation and game-readiness checks |
-| [runtime](runtime/README.md) | Resolution-packet support and private-store interface; no private career state is committed here |
+| [scripts](scripts/validate_repository.py) | Validation, readiness, weekly input build and close, generated views and private-snapshot advance |
+| [runtime](runtime/README.md) | Shared game kernel (2013.x), authenticated private-service interface and public statbook; no private career state is committed here |
 
 ## Work on the repository
 

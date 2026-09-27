@@ -111,3 +111,10 @@ Rebuild after a branch transaction that moves a player onto or off one of these 
 python scripts/research/build_2013_week1_depth_charts.py SOURCE_DIR > library/data/2013_week1_depth_charts.json
 python -m unittest tests.test_depth_library
 ```
+
+## Runtime note (September 27, 2026)
+
+This note scopes statements above; no data value changes and no rebuild is needed.
+
+- **Game-day trimming from Week 3.** From Week 3 (ledger Entry 38), `runtime.week_inputs.game_day_actives` trims each background club's available unit mechanically by depth to at most 46 game-day actives; the weekly gate in `scripts/check_week_input_exclusivity.py` rejects more. The "Inactives" limitation above ("Depth order, not the 46-man limit, decides usage") describes Weeks 1 and 2 only. This library still stores each club's full listed unit; the trim happens when a week's TeamInputs are built.
+- **Kernels served.** The status line names kernel 2013.4; the same units serve kernels 2013.4 through 2013.6.

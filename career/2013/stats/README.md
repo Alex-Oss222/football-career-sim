@@ -11,7 +11,7 @@ Every file in this directory except `README.md` and `game_receipts/README.md` is
 | `all_player_stats.md` | Club by club, then position, then player |
 | `league_leaders.md` | Leaders within each position, qualified passer-rate leaders, then leaders across all positions |
 | `team_stats.md` | Per-game team offense, defense (opponent production) and special teams |
-| `play_call_stats.md` | Jacksonville's named offensive calls: use, completions, yards, explosive and negative plays |
+| `play_call_stats.md` | Named-call labels on Jacksonville snaps: use, completions, yards, explosive and negative plays. Weeks 1-5 labels are drawn per run/pass type, not carrier-true, so they show label assignment, not Stone's call frequencies (Entry 41) |
 | `calibration_audit.md` | League receipts against the sourced 2012 position and volume shapes |
 | `season_totals.json` | Machine cache of the aggregated season |
 
@@ -41,7 +41,7 @@ Players are filed by roster position: quarterbacks, running backs (RB, FB), wide
 
 Kick and punt returners follow in their own table. A counter outside a player's position table, such as a receiver's coverage tackle, appears under **Other statistics**, so no generated statistic is dropped from the readable views.
 
-**G** counts games on the game-day active list: every player in a closed game's result is stamped with one game active. In Weeks 1 and 2 background clubs dressed every available player, up to 53; from Week 3 each dresses 46, chosen from its depth order, so background G counts for deep reserves in those two weeks run higher than a real inactive list would give. RTG is the official NFL passer rating. CMP%, Y/A, AVG, FG% and every other derived column are arithmetic on stored counters. LNG is the longest single play, combined across games by maximum.
+**G** counts games on the game-day active list: every player in a closed game's result is stamped with one game active. In Weeks 1 and 2 background clubs dressed every available player, up to 53; from Week 3 each dresses up to 46, chosen from its depth order (fewer when too few are available: the Jets dressed 44, 44 and 43 in Weeks 3-5), so background G counts for deep reserves in those two weeks run higher than a real inactive list would give. RTG is the official NFL passer rating. CMP%, Y/A, AVG, FG% and every other derived column are arithmetic on stored counters. LNG is the longest single play, combined across games by maximum.
 
 ## Leader qualifiers
 

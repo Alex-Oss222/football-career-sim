@@ -3,7 +3,7 @@
 > Historical starting research. For current Jacksonville planning room and post-hire transaction accounting, use [current_cap_worksheet.md](current_cap_worksheet.md). Later corrections are recorded in the [season ledger](../ledger.md).
 
 
-> **Historical starting finances:** The tables below remain the January initialization baseline. They are **not** the current club cap balance. For the reconciled May 5 branch accounting, use [current_cap_worksheet.md](current_cap_worksheet.md), which supersedes the stale ~$8.35M shortcut and carries the current Top-51 planning range.
+> **Historical starting finances:** The tables below remain the January initialization baseline. They are **not** the current club cap balance. For current regular-season accounting (Top-51 expired September 4), use [current_cap_worksheet.md](current_cap_worksheet.md). The May 5 branch reconciliation that superseded the stale ~$8.35M shortcut is summarized below and preserved in that worksheet's May 5 version (Git `d25c8cf`).
 
 **Accounting date:** January 15, 2013  
 **League-year distinction:** the 2013 league year and its $123,000,000 cap do not begin until March 12, 2013 at 4:00 p.m. ET.  
@@ -312,11 +312,9 @@ Use the identity **change in room = change in adjusted cap minus change in total
 
 This keeps the simulation financially disciplined without pretending an NFL club becomes incapable of acting until every historical accounting line has been reconstructed.
 
-## Current branch reconciliation pointer — May 5, 2013
+## May 5, 2013 branch reconciliation (historical)
 
-This file remains the January 15 research/baseline sheet. Current branch accounting is now closed in [current_cap_worksheet.md](current_cap_worksheet.md).
-
-That worksheet reconciles:
+This file remains the January 15 research/baseline sheet. Current regular-season accounting is in [current_cap_worksheet.md](current_cap_worksheet.md). The May 5 version of that worksheet (Git `d25c8cf`) reconciled:
 
 - the corrected January control inventory;
 - March 12 contract expirations/rights that were not retained;
@@ -329,11 +327,11 @@ That worksheet reconciles:
 - all four UDFA minimum contracts;
 - Top-51 displacement.
 
-### Current May 5 planning result
+### Then-current May 5 planning result
 
 **Approximately $7.0M-$7.4M of Top-51 cap room.**
 
-That range is the strongest supportable current planning answer. It is deliberately not converted into a fake exact dollar because the public historical starting team-room figure was itself approximate and Aaron Ross's exact execution timing inside the branch's compressed release batch is not separately fixed.
+That range was the strongest supportable then-current planning answer. It is deliberately not converted into a fake exact dollar because the public historical starting team-room figure was itself approximate and Aaron Ross's exact execution timing inside the branch's compressed release batch is not separately fixed.
 
 ### Corrected rookie contract totals
 
@@ -352,7 +350,7 @@ Full player-by-player schedules live in `draft/draftees.md`.
 
 ### UDFA treatment
 
-Brynden Trawick, A.J. Bouye, Adam Thielen and C.J. Anderson are each on a three-year rookie minimum contract ($405,000 / $495,000 / $585,000) with zero signing bonus and no additional guarantee. Their current May 5 Top-51 effect is $0 because their $405,000 bases sit below the counted 51 and carry no bonus proration.
+Brynden Trawick, A.J. Bouye, Adam Thielen and C.J. Anderson are each on a three-year rookie minimum contract ($405,000 / $495,000 / $585,000) with zero signing bonus and no additional guarantee. Their May 5 Top-51 effect was $0 because their $405,000 bases sat below the counted 51 and carry no bonus proration.
 
 ### Recalculation rule
 

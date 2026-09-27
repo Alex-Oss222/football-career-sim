@@ -303,7 +303,10 @@ def play_calls_markdown(year, team_id, book):
         "%s-W%02d-PLAY-CALL-STATS" % (year, book["through_week"]), book, team_id,
         "Generated game use of the named calls in the weekly offensive call sheet, "
         "from the snap ledger. Y/P is yards per snap; 20+ counts gains of 20 yards "
-        "or more; NEG counts snaps that lost yardage.",
+        "or more; NEG counts snaps that lost yardage. Kernels 2013.4-2013.6 draw each "
+        "snap's call label at random from the sheet's calls of that run or pass type, "
+        "independent of the ball carrier (ledger Entry 41), so for games closed under "
+        "them these rows show label assignment, not Stone's call frequencies.",
     ) + no_games(book)
     calls = book.get("play_calls", {}).get(team_id, {})
     if not calls:

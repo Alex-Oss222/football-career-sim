@@ -6,12 +6,15 @@ Normal-week naming pattern: `week_NN_<away club>_at_<home club>.json`, for examp
 
 ## Contents (statbook schema 3)
 
+- `schema_version` (the statbook schema, 3) and `kernel_version` (the kernel that resolved the game).
 - `event_id`, `week`, `matchup` (`Away Club at Home Club`), and the designated `home` and `away` clubs.
+- `detail` (`full` or `compact_stats`, below) and `coverage` (`complete`; a `legacy_partial` receipt marks the season's statistical coverage incomplete).
 - `final_score` and each club's team statistics.
 - A player row for every player on each club's game-day active list. Each row carries the player's position, `games: 1`, and his generated statistics.
 - `injuries`: the game's public injury report (club, player, injury class, severity, restriction, projected return and reassessment days). Later weeks read it for availability.
 - Jacksonville and protagonist games use `detail="full"`: player rows keep every counter, including zeros, and the receipt adds the public snap `play_ledger` and named-call `play_call_stats`.
 - Ordinary background games use `detail="compact_stats"`: player rows keep only nonzero counters plus `games`, and there is no snap ledger or named-call data. This keeps weekly diffs reviewable without losing any generated statistic or appearance.
+- From kernel 2013.6 (Week 4 on), every receipt, full or compact, also carries `drives`, the per-game possession summary the ledger-coherence check reads, and `game_type`.
 
 No receipt may contain private Engine State data, seeds, probability distributions, hidden ratings or matchup deltas.
 

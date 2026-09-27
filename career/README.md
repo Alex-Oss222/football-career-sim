@@ -35,6 +35,9 @@ career/
     ledger.md
     calendar.md                 <- branch-facing full-season calendar: camps, preseason, games, roster/cap deadlines and conditional postseason gates
     coaching_staff.md          <- clean current staff list, no process narrative; the hiring process itself lives in offseason/staff_building/hires.md
+    roster.md                   <- current roster view: controlled players, status, availability and decided roles
+    depth_chart.json            <- Stone's depth order, roles and game-day inactives, read by the week-input builder
+    migrations/                 <- audited canonical migrations and their manifests
     league_results/
       week_01.md
       ...
@@ -83,12 +86,14 @@ career/
     statbook.md                 <- obvious front door for standings + every current season stat view
     stats/
       README.md                  <- statbook ownership, coverage and rebuild rules
-      game_receipts/             <- one public stat + full snap-ledger JSON receipt per closed game
+      game_receipts/             <- one public stat receipt per closed game: full (snap play_ledger and named-call stats) for Jacksonville, compact_stats for background games
       season_totals.json         <- generated cumulative arithmetic when receipt coverage exists
       team_player_stats.md       <- readable protagonist-team season-to-date player stats
       all_player_stats.md        <- comprehensive all-player supported-field ledger
       league_player_stats.md     <- readable all-club season-to-date category stats
-      play_call_stats.md         <- current protagonist offense named-call usage/results
+      play_call_stats.md         <- protagonist offense named-call label usage/results; Weeks 1-5 labels are drawn per run/pass type, not carrier-true (Entry 41)
+      team_stats.md              <- generated per-club team statistics
+      calibration_audit.md       <- generated band audit of the receipts against sourced 2012 shapes; an OUTSIDE row is investigated, never grounds to rerun
       league_leaders.md          <- derived league leaders; withheld when coverage is incomplete
     preseason/
       README.md                 <- game index (date, kickoff, matchup, home/away)
@@ -101,6 +106,7 @@ career/
       README.md                 <- week index (date, kickoff, matchup, home/away)
       week_01_kansas_city_at_jacksonville/
         output.md               <- season_output_template.md; a bye week uses the same slot with no game, per SS below
+        call_sheet.json         <- Stone's frozen structured call sheet for the week; scripts/build_week_inputs.py requires it before the draw
       ...                       <- folders are named week_NN_<away>_at_<home>; Week 9 is week_09_bye
       week_17_jacksonville_at_indianapolis/
         output.md

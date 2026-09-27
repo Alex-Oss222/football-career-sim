@@ -1,13 +1,13 @@
 # 2013 preseason - game index
 
-One folder per Jacksonville preseason game, named `game_N_<away>_at_<home>`. Each holds an `output.md` that stays `NOT STARTED` until that game is resolved. Dates, times and venues are historical schedule facts from `library/2013_jacksonville_master_calendar.md` section 3; results belong to the branch and are never imported.
+One folder per Jacksonville preseason game, named `game_N_<away>_at_<home>`. Each holds the game's `output.md`; all four games are resolved and their outputs are `COMPLETE`. Dates, times and venues are historical schedule facts from `library/2013_jacksonville_master_calendar.md` section 3; results belong to the branch and are never imported.
 
-| Game | Date | Kickoff | Matchup | Jacksonville | Folder |
-|---:|---|---|---|---|---|
-| 1 | Fri. Aug. 9 | 7:30 p.m. ET | Miami Dolphins at Jacksonville | Home | `game_1_miami_at_jacksonville/` |
-| 2 | Sat. Aug. 17 | 7:30 p.m. ET | Jacksonville at New York Jets | Away | `game_2_jacksonville_at_ny_jets/` |
-| 3 | Sat. Aug. 24 | 7:30 p.m. ET | Philadelphia Eagles at Jacksonville | Home | `game_3_philadelphia_at_jacksonville/` |
-| 4 | Thu. Aug. 29 | 7:30 p.m. ET | Jacksonville at Atlanta Falcons | Away | `game_4_jacksonville_at_atlanta/` |
+| Game | Date | Kickoff | Matchup | Jacksonville | Result | Output |
+|---:|---|---|---|---|---|---|
+| 1 | Fri. Aug. 9 | 7:30 p.m. ET | Miami Dolphins at Jacksonville | Home | W 33-17 (Entry 20) | [game_1_miami_at_jacksonville/output.md](game_1_miami_at_jacksonville/output.md) |
+| 2 | Sat. Aug. 17 | 7:30 p.m. ET | Jacksonville at New York Jets | Away | L 17-24 (Entry 22) | [game_2_jacksonville_at_ny_jets/output.md](game_2_jacksonville_at_ny_jets/output.md) |
+| 3 | Sat. Aug. 24 | 7:30 p.m. ET | Philadelphia Eagles at Jacksonville | Home | L 20-31 (Entry 23) | [game_3_philadelphia_at_jacksonville/output.md](game_3_philadelphia_at_jacksonville/output.md) |
+| 4 | Thu. Aug. 29 | 7:30 p.m. ET | Jacksonville at Atlanta Falcons | Away | W 33-27 (Entry 25) | [game_4_jacksonville_at_atlanta/output.md](game_4_jacksonville_at_atlanta/output.md) |
 
 ## Resolution and roster cuts
 

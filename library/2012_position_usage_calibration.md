@@ -91,3 +91,11 @@ The play-by-play drive definition counts end-of-half and split possessions that 
 - A synthetic 160-game league built from complete, depth-ordered rosters lands inside every audit band (`tests/test_usage_bands.py`). The kernel runs slightly above the 64.2-play target in that test (about 66.8) because the last possession of a game is cut short by the clock but still counts as a drive.
 - The quarterback model plays one passer all game. It does not generate injury or blowout substitutions; a coach input is required for any change.
 - Tackle shapes combine run and pass plays; the runtime does not yet separate them.
+
+## Kernel 2013.6 note (September 27, 2026)
+
+This note scopes statements above; it changes no stored value, and the JSON artifact is unchanged.
+
+- **Still live.** The position-usage shapes (carries, targets and defensive credits by position group and depth rank) and the one-passer rule remain the kernel's attribution inputs through `runtime/usage.py` in kernel 2013.6.
+- **Kernels 2013.4 and 2013.5 only.** The single plays and clock scaling factors described in the drive-volume section (line 86), and the 160-game synthetic volume result, including the 66.8-play reading (line 91), describe kernels 2013.4/2013.5. Kernel 2013.6 takes plays, net yards and seconds unscaled from resampled real 2012 drives (`runtime/drive_model.py`; `runtime/usage.drive_scales` is kept only so 2013.5 draws stay reproducible). Kernel 2013.6 drive volume and its verification are in [the 2012 drive model calibration](2012_drive_model_calibration.md) (ledger Entry 39).
+- The title's "for kernel 2013.4" reflects the kernel this file was built for; the usage shapes serve kernels 2013.4 through 2013.6.
