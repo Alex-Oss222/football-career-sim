@@ -7,10 +7,10 @@ import re
 import unittest
 from unittest import mock
 
-from runtime import drive_model, play_detail
+from runtime import drive_model, field_position, play_detail
 from runtime.kernel import TeamInput, resolve_game, validate_result, ot_status
-from runtime.play_detail import _period_clock, check_ledger
-from synthetic_games import SEED, sample, team
+from runtime.play_detail import COHERENCE_CLASSES, _period_clock, check_ledger
+from synthetic_games import EVENT_PREFIX, SEED, sample, sample_teams, team
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIMMAGE = {"pass", "run"}
@@ -27,9 +27,14 @@ class KernelCoherenceTests(unittest.TestCase):
         cls.games = sample()
 
     def test_check_ledger_zero_violations(self):
+        self.assertEqual(len(COHERENCE_CLASSES), 32)
         errors = [e for r in self.games for e in check_ledger(r)]
         self.assertEqual(errors, [])
         self.assertTrue(all(validate_result(r) == [] for r in self.games))
+        self.assertTrue(all(play_detail.measurable_classes(r) == set(COHERENCE_CLASSES) for r in self.games))
+        failures = sum(r["diagnostics"].get("prefix_order_failed", 0) for r in self.games)
+        zero = sum(r["diagnostics"].get("fallback_zero_tuple", 0) for r in self.games)
+        self.assertEqual((failures, zero), (0, 0))
 
     def test_terminal_snap_last(self):
         for r in self.games:
@@ -117,13 +122,15 @@ class KernelCoherenceTests(unittest.TestCase):
         for r in self.games:
             for p in r["possessions"]:
                 key = "clock" if p["category"].startswith("end_of_") else p["category"]
-                low, high = drive_model.net_range(key)
-                self.assertTrue(low <= p["net_yards"] <= high)
+                envelope = field_position.load()["envelopes"][key][field_position.start_bin(p["start_spot"])]
+                self.assertIsNotNone(envelope)
+                if key != "touchdown":
+                    self.assertTrue(envelope[0] <= p["net_yards"] <= envelope[1])
                 scrim = [x for x in drive_rows(r, p["number"]) if x["play_type"] in SCRIMMAGE]
                 self.assertEqual(sum(x["result_yards"] for x in scrim), p["net_yards"])
                 long_punts += p["category"] == "punt" and p["net_yards"] > 37
         # Reported, not asserted: punt drives netting over the 2012 p95 (37).
-        print("\n[2013.6 sample] punt drives netting over 37 yards: %d" % long_punts)
+        print("\n[2013.7 sample] punt drives netting over 37 yards: %d" % long_punts)
 
     def test_fg_and_xp_misses_and_score_identity(self):
         fga = fgm = 0
@@ -245,7 +252,8 @@ class KernelCoherenceTests(unittest.TestCase):
         for i in range(6):
             first = resolve_game(*build(calls), seed=SEED + b"-%05d" % i, event_id=f"streams-{i}")
             with mock.patch.object(play_detail, "SNAP_DETAIL_TAG", "public-snap-detail-test"), \
-                    mock.patch.object(play_detail, "KICKOFF_DETAIL_TAG", "public-kickoff-detail-test"):
+                    mock.patch.object(play_detail, "KICKOFF_DETAIL_TAG", "public-kickoff-detail-test"), \
+                    mock.patch.object(play_detail, "LABEL_TAG", "public-call-label-test"):
                 second = resolve_game(*build(renamed), seed=SEED + b"-%05d" % i, event_id=f"streams-{i}")
             self.assertEqual(first["final_score"], second["final_score"])
             self.assertEqual(first["possessions"], second["possessions"])
@@ -255,15 +263,15 @@ class KernelCoherenceTests(unittest.TestCase):
             self.assertEqual(validate_result(second), [])
 
     def test_determinism(self):
-        a, b = team("A"), team("B")
-        one = resolve_game(a, b, seed=SEED + b"-00003", event_id="sample-2013-6-3")
+        a, b = sample_teams()
+        one = resolve_game(a, b, seed=SEED + b"-00003", event_id=f"{EVENT_PREFIX}-3")
         self.assertEqual(one, self.games[3])
         from runtime.statbook import make_receipt
         self.assertEqual(make_receipt(one, week=4, matchup="B at A", detail="compact_stats")["drives"],
                          make_receipt(self.games[3], week=4, matchup="B at A", detail="compact_stats")["drives"])
 
     def test_protagonist_blind(self):
-        for name in ("kernel.py", "drive_model.py", "play_detail.py"):
+        for name in ("kernel.py", "drive_model.py", "field_position.py", "play_detail.py", "call_families.py"):
             text = (ROOT / "runtime" / name).read_text()
             self.assertNotRegex(text, r"team_id\s*[!=]=\s*['\"]")
             self.assertNotRegex(text, r"(?i)jacksonville|jaguars|\bJAX\b|protagonist\s*==")

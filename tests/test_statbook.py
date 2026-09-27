@@ -200,6 +200,9 @@ class StatbookTests(unittest.TestCase):
         legacy = [r for r in receipts if r.get("kernel_version") in ("2013.4", "2013.5")]
         self.assertTrue(legacy)
         self.assertTrue(all("drives" not in r for r in legacy))
+        previous = [r for r in receipts if r.get("kernel_version") == "2013.6"]
+        self.assertTrue(previous)
+        self.assertTrue(all(len(row) == 14 for r in previous for row in r["drives"]))
         book = aggregate_receipts(legacy)
         team = next(iter(book["teams"].values()))
         self.assertNotIn("field_goal_attempts", team["team_stats"])
@@ -216,6 +219,10 @@ class StatbookTests(unittest.TestCase):
             receipt = make_receipt(result, week=4, matchup="B at A", detail=detail)
             self.assertEqual(len(receipt["drives"]), len(result["possessions"]))
             self.assertEqual(receipt["schema_version"], 3)
+            # Kernel 2013.7: 14 kernel 2013.6 fields plus 11 field-position fields.
+            self.assertTrue(all(len(row) == 25 for row in receipt["drives"]))
+        with self.assertRaises(ValueError):
+            aggregate_receipts([{**make_receipt(result, week=4, matchup="B at A"), "schema_version": 4}])
         book = aggregate_receipts([make_receipt(result, week=4, matchup="B at A", detail="compact_stats")])
         self.assertEqual(book["teams"]["A"]["team_stats"]["drives"],
                          sum(1 for p in result["possessions"] if p["team"] == "A"))

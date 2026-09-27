@@ -1,0 +1,1325 @@
+{
+ "week-1": {
+  "kind": "week",
+  "key": "1",
+  "label": "Week 1",
+  "order": 1,
+  "note": "Backfilled on October 27, 2013 (Entry 47) from Week 1 receipts.",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2013-award-week01-afc-offense-v1",
+    "packet_sha256": "65517f4a551dfc2e8449965294b4164d2936d5ef04927afbd301fc8c1e68ec1f",
+    "result_ref": "b86a87ada5ee565ecea5f3a818621fe90eb61ca302625ad371119a2a32079b0d",
+    "shortlist": [
+     {
+      "player": "Reggie Wayne",
+      "team": "Indianapolis Colts",
+      "score": 29.8
+     },
+     {
+      "player": "Ray Rice",
+      "team": "Baltimore Ravens",
+      "score": 26.1
+     },
+     {
+      "player": "Bilal Powell",
+      "team": "New York Jets",
+      "score": 24.1
+     }
+    ],
+    "winner_index": 1
+   },
+   "AFC-defense": {
+    "event_id": "2013-award-week01-afc-defense-v1",
+    "packet_sha256": "c422ce9557662ea70cdc729b3c2db84cba0daee86168970fe6bc1061b4ec8afe",
+    "result_ref": "ae135f1a554cd7ff0be809914eaac8a1810ab5e2cf7d091ef5139deb80e6046d",
+    "shortlist": [
+     {
+      "player": "Buster Skrine",
+      "team": "Cleveland Browns",
+      "score": 22.8
+     },
+     {
+      "player": "Antonio Cromartie",
+      "team": "New York Jets",
+      "score": 22.2
+     },
+     {
+      "player": "Aaron Williams",
+      "team": "Buffalo Bills",
+      "score": 19.3
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-special_teams": {
+    "event_id": "2013-award-week01-afc-special_teams-v1",
+    "packet_sha256": "b9a9841ecbdfca9ba7d7d64d511f5d536b97c4798ff64ad7c2d5f37f6e8f065b",
+    "result_ref": "0eedb63c501df09e7fc1fc5353431e427fdfa16e382f6a508ebc40d33705ef24",
+    "shortlist": [
+     {
+      "player": "Eddie Royal",
+      "team": "San Diego Chargers",
+      "score": 17.1
+     },
+     {
+      "player": "Justin Tucker",
+      "team": "Baltimore Ravens",
+      "score": 14.0
+     },
+     {
+      "player": "Nick Folk",
+      "team": "New York Jets",
+      "score": 13.0
+     }
+    ],
+    "winner_index": 2
+   },
+   "NFC-offense": {
+    "event_id": "2013-award-week01-nfc-offense-v1",
+    "packet_sha256": "c18c31f9b7799ac4ff205c4240f1e3cec51550b0e76e7b1fef8b1cca5f7f11a4",
+    "result_ref": "e5061fd261d99bc8d8b5ae3e1f644011ae7c5e7efa0cd48097bb0660d145b365",
+    "shortlist": [
+     {
+      "player": "Daryl Richardson",
+      "team": "St. Louis Rams",
+      "score": 30.9
+     },
+     {
+      "player": "Reggie Bush",
+      "team": "Detroit Lions",
+      "score": 30.2
+     },
+     {
+      "player": "DeMarco Murray",
+      "team": "Dallas Cowboys",
+      "score": 25.7
+     }
+    ],
+    "winner_index": 2
+   },
+   "NFC-defense": {
+    "event_id": "2013-award-week01-nfc-defense-v1",
+    "packet_sha256": "3bbf0f8b1611ef35289316341d084fd8aefc151898da36be672701456f3d0e5a",
+    "result_ref": "6af3b5cae9eddeeca0b6cffe7df47339ac6ae181ced6ecc7490abf1c30d7da36",
+    "shortlist": [
+     {
+      "player": "Bobby Wagner",
+      "team": "Seattle Seahawks",
+      "score": 30.0
+     },
+     {
+      "player": "Cortland Finnegan",
+      "team": "St. Louis Rams",
+      "score": 25.9
+     },
+     {
+      "player": "Earl Thomas",
+      "team": "Seattle Seahawks",
+      "score": 21.0
+     }
+    ],
+    "winner_index": 1
+   },
+   "NFC-special_teams": {
+    "event_id": "2013-award-week01-nfc-special_teams-v1",
+    "packet_sha256": "5daaaa405d5b0c8d0026ae53e4c4c8f4ed506549973bbcd7215bf1887eaf570a",
+    "result_ref": "18e44f1537c3c6f8770182ba5f366dc56249eca19ff83b213d696b5f7ae5d520",
+    "shortlist": [
+     {
+      "player": "Matt Bryant",
+      "team": "Atlanta Falcons",
+      "score": 13.0
+     },
+     {
+      "player": "Stephen Hauschka",
+      "team": "Seattle Seahawks",
+      "score": 11.0
+     },
+     {
+      "player": "Blair Walsh",
+      "team": "Minnesota Vikings",
+      "score": 10.0
+     }
+    ],
+    "winner_index": 0
+   }
+  }
+ },
+ "week-2": {
+  "kind": "week",
+  "key": "2",
+  "label": "Week 2",
+  "order": 2,
+  "note": "Backfilled on October 27, 2013 (Entry 47) from Week 2 receipts.",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2013-award-week02-afc-offense-v1",
+    "packet_sha256": "2ad30f4d63d7b5b9c7947d28f30aa67c5811547228ffbf85fab52b95b86a7b76",
+    "result_ref": "21ae1638a01222719cd77e4c023a701ee9a0e17849c7303844d67c082348f45d",
+    "shortlist": [
+     {
+      "player": "Isaac Redman",
+      "team": "Pittsburgh Steelers",
+      "score": 37.4
+     },
+     {
+      "player": "Philip Rivers",
+      "team": "San Diego Chargers",
+      "score": 30.52
+     },
+     {
+      "player": "Ronnie Hillman",
+      "team": "Denver Broncos",
+      "score": 29.1
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-defense": {
+    "event_id": "2013-award-week02-afc-defense-v1",
+    "packet_sha256": "bec2feca378594ebd3ea92871f3266bf6014bde0f477c91c22952cd97b4f498d",
+    "result_ref": "d400f9fabe007bf6dd3acffecf0f39a5280901e4b5417a322e151e8decc8aaf4",
+    "shortlist": [
+     {
+      "player": "Buster Skrine",
+      "team": "Cleveland Browns",
+      "score": 30.6
+     },
+     {
+      "player": "Antoine Bethea",
+      "team": "Indianapolis Colts",
+      "score": 28.1
+     },
+     {
+      "player": "Muhammad Wilkerson",
+      "team": "New York Jets",
+      "score": 20.5
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-special_teams": {
+    "event_id": "2013-award-week02-afc-special_teams-v1",
+    "packet_sha256": "99db1d2ce05f5c21ea4fb8ec5b7e184c4f2e24174d6dbe236427d75f9b0c4f5b",
+    "result_ref": "05e7e2ae9e5075bfe63c9127b1a0f0adb89ae0476d736d805d55b0ffe54afa07",
+    "shortlist": [
+     {
+      "player": "Mike Nugent",
+      "team": "Cincinnati Bengals",
+      "score": 13.0
+     },
+     {
+      "player": "Stephen Gostkowski",
+      "team": "New England Patriots",
+      "score": 13.0
+     },
+     {
+      "player": "Marquette King",
+      "team": "Oakland Raiders",
+      "score": 11.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-offense": {
+    "event_id": "2013-award-week02-nfc-offense-v1",
+    "packet_sha256": "c11662b044d0b6e7ebe1cee13066d29ec42024dacab0aa7f7150f263cbab8797",
+    "result_ref": "2175e6d1ed9f6ddc9ff624d08c61eb3db0ab410fd3719ac39d67b7905060a898",
+    "shortlist": [
+     {
+      "player": "Frank Gore",
+      "team": "San Francisco 49ers",
+      "score": 28.0
+     },
+     {
+      "player": "DeAngelo Williams",
+      "team": "Carolina Panthers",
+      "score": 27.7
+     },
+     {
+      "player": "Larry Fitzgerald",
+      "team": "Arizona Cardinals",
+      "score": 26.3
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2013-award-week02-nfc-defense-v1",
+    "packet_sha256": "8993eb63b041b34c073e45a1f7900122fc1f8b4b0547924e7e378251834267e4",
+    "result_ref": "b3ea25d4345eccd0bd707cb26e569ed3ea70d925887399efdb41ec7375e0de3a",
+    "shortlist": [
+     {
+      "player": "Patrick Willis",
+      "team": "San Francisco 49ers",
+      "score": 23.4
+     },
+     {
+      "player": "Lance Briggs",
+      "team": "Chicago Bears",
+      "score": 22.5
+     },
+     {
+      "player": "Osi Umenyiora",
+      "team": "Atlanta Falcons",
+      "score": 21.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-special_teams": {
+    "event_id": "2013-award-week02-nfc-special_teams-v1",
+    "packet_sha256": "629e8a33d5c0f6db6eeaf85ba57bde69f56d6c973f53b2bc9ac6bdd561af107d",
+    "result_ref": "0449564eb8da6621a0ac966db47b2181a5d5a8ddca3d85a9797f8a6c207fb0f4",
+    "shortlist": [
+     {
+      "player": "Damaris Johnson",
+      "team": "Philadelphia Eagles",
+      "score": 16.3
+     },
+     {
+      "player": "Graham Gano",
+      "team": "Carolina Panthers",
+      "score": 12.0
+     },
+     {
+      "player": "Micheal Spurlock",
+      "team": "Detroit Lions",
+      "score": 11.6
+     }
+    ],
+    "winner_index": 1
+   }
+  }
+ },
+ "week-3": {
+  "kind": "week",
+  "key": "3",
+  "label": "Week 3",
+  "order": 3,
+  "note": "Backfilled on October 27, 2013 (Entry 47) from Week 3 receipts.",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2013-award-week03-afc-offense-v1",
+    "packet_sha256": "65f1132ef49e410764e404cf30e8b90cfe9b1363d8e2027475a2ae209ad04a72",
+    "result_ref": "bc3cc528d404e365ca16d8b6b68bb168d5df2f3ce1c516dfed246b9764ebf271",
+    "shortlist": [
+     {
+      "player": "C.J. Spiller",
+      "team": "Buffalo Bills",
+      "score": 27.3
+     },
+     {
+      "player": "Ronnie Hillman",
+      "team": "Denver Broncos",
+      "score": 22.8
+     },
+     {
+      "player": "Andre Johnson",
+      "team": "Houston Texans",
+      "score": 22.3
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-defense": {
+    "event_id": "2013-award-week03-afc-defense-v1",
+    "packet_sha256": "7ad232e4e5e9646bc100a9a7ee4ef4db5027799ce99fe5919b73c3f9707747ea",
+    "result_ref": "9fd39013a7e2ca32eaef8d44e135d4dd350d2f2b6e5c4c4448de31d9a22dd00c",
+    "shortlist": [
+     {
+      "player": "Bernard Pollard",
+      "team": "Tennessee Titans",
+      "score": 29.7
+     },
+     {
+      "player": "Justin Houston",
+      "team": "Kansas City Chiefs",
+      "score": 24.5
+     },
+     {
+      "player": "Michael Huff",
+      "team": "Baltimore Ravens",
+      "score": 23.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-special_teams": {
+    "event_id": "2013-award-week03-afc-special_teams-v1",
+    "packet_sha256": "1185de7f638dbf499d5bc697ef62fb30252bcc8e57a98d104043400ec9f7238b",
+    "result_ref": "4a2115bcb94f5fc68d3e442291df544d8d3440c4bbeb7adc793f2b2bbee2728c",
+    "shortlist": [
+     {
+      "player": "Matt Prater",
+      "team": "Denver Broncos",
+      "score": 14.0
+     },
+     {
+      "player": "Jacoby Ford",
+      "team": "Oakland Raiders",
+      "score": 11.0
+     },
+     {
+      "player": "Keshawn Martin",
+      "team": "Houston Texans",
+      "score": 10.3
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-offense": {
+    "event_id": "2013-award-week03-nfc-offense-v1",
+    "packet_sha256": "297bbd70befd1c1294328a8fd6527b050a937ea24eaed35c39a6c9ea98fafab0",
+    "result_ref": "d483019baf45533b0691b92b3c3d9cf18055989bcb0c54e08f1a82e0754d8823",
+    "shortlist": [
+     {
+      "player": "David Wilson",
+      "team": "New York Giants",
+      "score": 33.5
+     },
+     {
+      "player": "Matt Ryan",
+      "team": "Atlanta Falcons",
+      "score": 28.74
+     },
+     {
+      "player": "Brandon Marshall",
+      "team": "Chicago Bears",
+      "score": 24.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2013-award-week03-nfc-defense-v1",
+    "packet_sha256": "e2000fd9a39aa67018133fd1ec681499de5f0dbc0ee64e78f74bbcf4ccfbc107",
+    "result_ref": "4572f3942f7ad191b723a2e731800fda2821ee0d63d9ba2f3c65991f88ff58e6",
+    "shortlist": [
+     {
+      "player": "Antrel Rolle",
+      "team": "New York Giants",
+      "score": 24.4
+     },
+     {
+      "player": "Navorro Bowman",
+      "team": "San Francisco 49ers",
+      "score": 21.5
+     },
+     {
+      "player": "Mark Barron",
+      "team": "Tampa Bay Buccaneers",
+      "score": 19.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-special_teams": {
+    "event_id": "2013-award-week03-nfc-special_teams-v1",
+    "packet_sha256": "c3a360576480d76514c2008674ed42f2e297251540465eee283e850b325f8ce0",
+    "result_ref": "1ca2cddd0cb5195e3147251e9c0d24b9e5775f48c351517832efc0b1b3531286",
+    "shortlist": [
+     {
+      "player": "Dwayne Harris",
+      "team": "Dallas Cowboys",
+      "score": 14.3
+     },
+     {
+      "player": "Michael Koenen",
+      "team": "Tampa Bay Buccaneers",
+      "score": 12.75
+     },
+     {
+      "player": "Darren Sproles",
+      "team": "New Orleans Saints",
+      "score": 12.1
+     }
+    ],
+    "winner_index": 0
+   }
+  }
+ },
+ "week-4": {
+  "kind": "week",
+  "key": "4",
+  "label": "Week 4",
+  "order": 4,
+  "note": "Backfilled on October 27, 2013 (Entry 47) from Week 4 receipts.",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2013-award-week04-afc-offense-v1",
+    "packet_sha256": "470c374209fc47b70b5134054f5dc62338a7cbcb0324dcaa03180b81c00c245d",
+    "result_ref": "03b769800f60dc4e9f12b2ae20ecc5bd0ad48ef563000c74b6b5e075d29ed408",
+    "shortlist": [
+     {
+      "player": "Arian Foster",
+      "team": "Houston Texans",
+      "score": 40.6
+     },
+     {
+      "player": "Ben Roethlisberger",
+      "team": "Pittsburgh Steelers",
+      "score": 26.8
+     },
+     {
+      "player": "Philip Rivers",
+      "team": "San Diego Chargers",
+      "score": 25.32
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-defense": {
+    "event_id": "2013-award-week04-afc-defense-v1",
+    "packet_sha256": "e74ad9dbf5e55ce6862a86d45fd231f1270a9a6f111949d648629151426dc844",
+    "result_ref": "1da535d0b017133fb32c8baba48f2957b060392c92dd1e35e7c1da6b91842aae",
+    "shortlist": [
+     {
+      "player": "Buster Skrine",
+      "team": "Cleveland Browns",
+      "score": 25.3
+     },
+     {
+      "player": "Cortez Allen",
+      "team": "Pittsburgh Steelers",
+      "score": 22.9
+     },
+     {
+      "player": "Vontaze Burfict",
+      "team": "Cincinnati Bengals",
+      "score": 22.8
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-special_teams": {
+    "event_id": "2013-award-week04-afc-special_teams-v1",
+    "packet_sha256": "dc594192227c79be06034060254bee1e98798726af6dc9ae1a22d7e5961e533f",
+    "result_ref": "97a93a6766a41061140ba62f51014d82abd05d037af48d8cf363f3407dba5fbc",
+    "shortlist": [
+     {
+      "player": "Keshawn Martin",
+      "team": "Houston Texans",
+      "score": 16.9
+     },
+     {
+      "player": "Matt Prater",
+      "team": "Denver Broncos",
+      "score": 12.0
+     },
+     {
+      "player": "Cassius Vaughn",
+      "team": "Indianapolis Colts",
+      "score": 10.3
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-offense": {
+    "event_id": "2013-award-week04-nfc-offense-v1",
+    "packet_sha256": "57e7283482064e4b0b24711d7fa41002a3429e93f783bfde8bf7293a960a6cf6",
+    "result_ref": "e46760bebaec5798c64ff729f2804f80798839de403dc7025448efdecf749c84",
+    "shortlist": [
+     {
+      "player": "Tony Romo",
+      "team": "Dallas Cowboys",
+      "score": 32.54
+     },
+     {
+      "player": "Adrian Peterson",
+      "team": "Minnesota Vikings",
+      "score": 31.1
+     },
+     {
+      "player": "Sam Bradford",
+      "team": "St. Louis Rams",
+      "score": 27.9
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2013-award-week04-nfc-defense-v1",
+    "packet_sha256": "1877ba014d8292b0af72b82ca1f6d99bd75cfaeff56ab7da958164c1894fa386",
+    "result_ref": "79e658e0bdce261a34947833fe3527b306651b73ce60f675de49e5af2a98b47c",
+    "shortlist": [
+     {
+      "player": "Chad Greenway",
+      "team": "Minnesota Vikings",
+      "score": 26.1
+     },
+     {
+      "player": "Dan Connor",
+      "team": "New York Giants",
+      "score": 21.5
+     },
+     {
+      "player": "James Laurinaitis",
+      "team": "St. Louis Rams",
+      "score": 19.0
+     }
+    ],
+    "winner_index": 1
+   },
+   "NFC-special_teams": {
+    "event_id": "2013-award-week04-nfc-special_teams-v1",
+    "packet_sha256": "a371f48d045fdea2af698d18788f47ec9780d1844f7e5eefe77823d84c7215c4",
+    "result_ref": "7905a0c90e8456c4680ffd618b99013d3f59ea6af2ffe7148ec4b737608bee89",
+    "shortlist": [
+     {
+      "player": "Chris Thompson",
+      "team": "Washington Redskins",
+      "score": 17.8
+     },
+     {
+      "player": "Robbie Gould",
+      "team": "Chicago Bears",
+      "score": 17.0
+     },
+     {
+      "player": "Cordarrelle Patterson",
+      "team": "Minnesota Vikings",
+      "score": 15.7
+     }
+    ],
+    "winner_index": 1
+   }
+  }
+ },
+ "week-5": {
+  "kind": "week",
+  "key": "5",
+  "label": "Week 5",
+  "order": 5,
+  "note": "Backfilled on October 27, 2013 (Entry 47) from Week 5 receipts.",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2013-award-week05-afc-offense-v1",
+    "packet_sha256": "effd014fdc1e2299d87727a035ff5cfbd6fb3fd2eaba309999ce9b0fcfcb785f",
+    "result_ref": "a7d402d368b10856ad63c63d03134e1f69423066d518de50590f3c955a95c481",
+    "shortlist": [
+     {
+      "player": "Ronnie Hillman",
+      "team": "Denver Broncos",
+      "score": 31.8
+     },
+     {
+      "player": "Ryan Tannehill",
+      "team": "Miami Dolphins",
+      "score": 23.96
+     },
+     {
+      "player": "Jake Locker",
+      "team": "Tennessee Titans",
+      "score": 20.96
+     }
+    ],
+    "winner_index": 2
+   },
+   "AFC-defense": {
+    "event_id": "2013-award-week05-afc-defense-v1",
+    "packet_sha256": "7ef4c2e76496a675700b70d28b8497269b2f1d8184b810586fcf3a84cf4ada9a",
+    "result_ref": "842b77ddaf29be9b307f6337cc836e94bc26d472b962c31f0867afb327f5dc44",
+    "shortlist": [
+     {
+      "player": "Terrell Suggs",
+      "team": "Baltimore Ravens",
+      "score": 24.5
+     },
+     {
+      "player": "Corey Graham",
+      "team": "Baltimore Ravens",
+      "score": 21.2
+     },
+     {
+      "player": "Dawan Landry",
+      "team": "New York Jets",
+      "score": 20.0
+     }
+    ],
+    "winner_index": 2
+   },
+   "AFC-special_teams": {
+    "event_id": "2013-award-week05-afc-special_teams-v1",
+    "packet_sha256": "eec1960a7931362ac7700e4cb365e2091a1221afc9e5d1b9549c9097d27ca243",
+    "result_ref": "964454ed107cc3125d93c266d133461c3d98617f7e43596957962a935580101c",
+    "shortlist": [
+     {
+      "player": "Spencer Lanning",
+      "team": "Cleveland Browns",
+      "score": 14.25
+     },
+     {
+      "player": "Adam Vinatieri",
+      "team": "Indianapolis Colts",
+      "score": 12.0
+     },
+     {
+      "player": "Eddie Royal",
+      "team": "San Diego Chargers",
+      "score": 10.4
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-offense": {
+    "event_id": "2013-award-week05-nfc-offense-v1",
+    "packet_sha256": "3ba295848825b5abe10ba51dcea016623ae9b0703a1674feeab8d4de47afc8b2",
+    "result_ref": "f3799b5510fef1c9473f7f0903b6781887e50e8a3ca805f746631edc639e7a2b",
+    "shortlist": [
+     {
+      "player": "Reggie Bush",
+      "team": "Detroit Lions",
+      "score": 30.3
+     },
+     {
+      "player": "Calvin Johnson",
+      "team": "Detroit Lions",
+      "score": 28.4
+     },
+     {
+      "player": "Rashard Mendenhall",
+      "team": "Arizona Cardinals",
+      "score": 26.8
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2013-award-week05-nfc-defense-v1",
+    "packet_sha256": "01ff5308d0efa64ef05c3f58357a23091ab85ef42e5403581c35d1483796aab2",
+    "result_ref": "af1ac3c11c4e621bf085b610021bd5fde8d59dc22e85ad1f6ad1cb4103948090",
+    "shortlist": [
+     {
+      "player": "Antrel Rolle",
+      "team": "New York Giants",
+      "score": 26.7
+     },
+     {
+      "player": "Stephen Nicholas",
+      "team": "Atlanta Falcons",
+      "score": 24.7
+     },
+     {
+      "player": "Tarell Brown",
+      "team": "San Francisco 49ers",
+      "score": 20.5
+     }
+    ],
+    "winner_index": 1
+   },
+   "NFC-special_teams": {
+    "event_id": "2013-award-week05-nfc-special_teams-v1",
+    "packet_sha256": "4636bb398606825129ecfd4802ad8ad921b8c9ed746dc8d5d460570bf295fcd6",
+    "result_ref": "c6a9991b51c1c287dd675eb009a64d5b40ceb41eae4cd7012e6f1da42f9d762c",
+    "shortlist": [
+     {
+      "player": "Jeremy Ross",
+      "team": "Green Bay Packers",
+      "score": 13.2
+     },
+     {
+      "player": "Michael Cox",
+      "team": "New York Giants",
+      "score": 12.9
+     },
+     {
+      "player": "Devin Hester",
+      "team": "Chicago Bears",
+      "score": 12.7
+     }
+    ],
+    "winner_index": 0
+   }
+  }
+ },
+ "week-6": {
+  "kind": "week",
+  "key": "6",
+  "label": "Week 6",
+  "order": 6,
+  "note": "Backfilled on October 27, 2013 (Entry 47) from Week 6 receipts.",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2013-award-week06-afc-offense-v1",
+    "packet_sha256": "4855a4c74d54f3e86a5f2b2189fd3f46266f4d2f1ac918d4de03c5ca1409efd9",
+    "result_ref": "fa49ac62cd6797633e32cc8a2a68cebdf0f0ea9a3d64f1909ecb7799975abca0",
+    "shortlist": [
+     {
+      "player": "Stevan Ridley",
+      "team": "New England Patriots",
+      "score": 34.5
+     },
+     {
+      "player": "Jamaal Charles",
+      "team": "Kansas City Chiefs",
+      "score": 31.0
+     },
+     {
+      "player": "Matt Schaub",
+      "team": "Houston Texans",
+      "score": 27.78
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-defense": {
+    "event_id": "2013-award-week06-afc-defense-v1",
+    "packet_sha256": "70585e66e91137784fdb9215de026bd7bc3e0c48662cf1dd68b3a504fa1e0daf",
+    "result_ref": "0f70d3b9057b6d7d848a23f3f71910e27853fa8234cc75bf508f6dd005214f27",
+    "shortlist": [
+     {
+      "player": "Dawan Landry",
+      "team": "New York Jets",
+      "score": 25.2
+     },
+     {
+      "player": "Kevin Burnett",
+      "team": "Oakland Raiders",
+      "score": 20.5
+     },
+     {
+      "player": "Ryan Clark",
+      "team": "Pittsburgh Steelers",
+      "score": 17.9
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-special_teams": {
+    "event_id": "2013-award-week06-afc-special_teams-v1",
+    "packet_sha256": "acefe938f43c9a723031cd8d4b2bd22940679f4384d52747718b695eeffeeaf1",
+    "result_ref": "2108242f487b47eb533514ec0895fb66cdc7dac667b676136fd008856e5b0c56",
+    "shortlist": [
+     {
+      "player": "Darius Reynaud",
+      "team": "Tennessee Titans",
+      "score": 14.6
+     },
+     {
+      "player": "LaRod Stephens-Howling",
+      "team": "Pittsburgh Steelers",
+      "score": 14.2
+     },
+     {
+      "player": "Jacoby Jones",
+      "team": "Baltimore Ravens",
+      "score": 12.2
+     }
+    ],
+    "winner_index": 2
+   },
+   "NFC-offense": {
+    "event_id": "2013-award-week06-nfc-offense-v1",
+    "packet_sha256": "c3d99db97cb5ae767006fa2a9dbefed024e720e5fd77feb1b8fe1014b52ca8a4",
+    "result_ref": "d5311f02c017094c0f087510b4b67b080eda6bd421cbf9c1bfa0eb8d4c88d4ce",
+    "shortlist": [
+     {
+      "player": "Reggie Bush",
+      "team": "Detroit Lions",
+      "score": 41.4
+     },
+     {
+      "player": "Brandon Marshall",
+      "team": "Chicago Bears",
+      "score": 32.1
+     },
+     {
+      "player": "Frank Gore",
+      "team": "San Francisco 49ers",
+      "score": 25.4
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2013-award-week06-nfc-defense-v1",
+    "packet_sha256": "83ae903b6799d4342e05b6dd52cffa78df39a17f2634fc32322b53ffe5153568",
+    "result_ref": "bceae7103e7a634a76f74bd7bf75c1a94923df98e9475e00035635ae779eddd0",
+    "shortlist": [
+     {
+      "player": "Ryan Pickett",
+      "team": "Green Bay Packers",
+      "score": 20.5
+     },
+     {
+      "player": "Morris Claiborne",
+      "team": "Dallas Cowboys",
+      "score": 18.2
+     },
+     {
+      "player": "Antoine Cason",
+      "team": "Arizona Cardinals",
+      "score": 17.3
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-special_teams": {
+    "event_id": "2013-award-week06-nfc-special_teams-v1",
+    "packet_sha256": "13f246558bbd6dc6e3e40db105248b98e9ed19ca5b7f3155e100979b2560e40e",
+    "result_ref": "92094857607e20449e888e4533acd6f2d57e5e3cfa3937947c89656fe9bee090",
+    "shortlist": [
+     {
+      "player": "Michael Cox",
+      "team": "New York Giants",
+      "score": 15.2
+     },
+     {
+      "player": "Robbie Gould",
+      "team": "Chicago Bears",
+      "score": 15.0
+     },
+     {
+      "player": "Rian Lindell",
+      "team": "Tampa Bay Buccaneers",
+      "score": 13.0
+     }
+    ],
+    "winner_index": 1
+   }
+  }
+ },
+ "week-7": {
+  "kind": "week",
+  "key": "7",
+  "label": "Week 7",
+  "order": 7,
+  "note": "Backfilled on October 27, 2013 (Entry 47) from Week 7 receipts.",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2013-award-week07-afc-offense-v1",
+    "packet_sha256": "2fc78bda3b64010b437cce4652643e1058742939a9f075fbe87ffdb55667e6d9",
+    "result_ref": "f3b712983c16a8da8e3411d6ec0391fb755ed7dcc0211fd2a10acf533fb4e053",
+    "shortlist": [
+     {
+      "player": "Emmanuel Sanders",
+      "team": "Pittsburgh Steelers",
+      "score": 50.5
+     },
+     {
+      "player": "Jamaal Charles",
+      "team": "Kansas City Chiefs",
+      "score": 35.3
+     },
+     {
+      "player": "Ben Roethlisberger",
+      "team": "Pittsburgh Steelers",
+      "score": 29.84
+     }
+    ],
+    "winner_index": 1
+   },
+   "AFC-defense": {
+    "event_id": "2013-award-week07-afc-defense-v1",
+    "packet_sha256": "5c20074f1a1d595993a978e713e7c0d7de3a417d0c374acab9600ccda22b8845",
+    "result_ref": "434e861f54787f298318f7ae87d798db29382512633153c8da190dea2f99f7d0",
+    "shortlist": [
+     {
+      "player": "Eric Berry",
+      "team": "Kansas City Chiefs",
+      "score": 25.6
+     },
+     {
+      "player": "Muhammad Wilkerson",
+      "team": "New York Jets",
+      "score": 25.5
+     },
+     {
+      "player": "Craig Robertson",
+      "team": "Cleveland Browns",
+      "score": 24.2
+     }
+    ],
+    "winner_index": 1
+   },
+   "AFC-special_teams": {
+    "event_id": "2013-award-week07-afc-special_teams-v1",
+    "packet_sha256": "093231cb164f8ce3a19566241f280a709d9d22cc063d93f308c4ebf2fd358f89",
+    "result_ref": "35eccbe6ddf0ea9a0a09468de107378a86c3ccc892b50cbeae2b4e31afddda31",
+    "shortlist": [
+     {
+      "player": "Jacoby Jones",
+      "team": "Baltimore Ravens",
+      "score": 17.7
+     },
+     {
+      "player": "Shaun Suisham",
+      "team": "Pittsburgh Steelers",
+      "score": 17.0
+     },
+     {
+      "player": "Keshawn Martin",
+      "team": "Houston Texans",
+      "score": 16.6
+     }
+    ],
+    "winner_index": 2
+   },
+   "NFC-offense": {
+    "event_id": "2013-award-week07-nfc-offense-v1",
+    "packet_sha256": "810a5800ea6fe879341189768ddb27b5de783f21f453e9060409be427a86f456",
+    "result_ref": "d358ff958a792600c4d027b064975026e8c9dc1281db517dc2aaec9437af790e",
+    "shortlist": [
+     {
+      "player": "LeSean McCoy",
+      "team": "Philadelphia Eagles",
+      "score": 28.8
+     },
+     {
+      "player": "Russell Wilson",
+      "team": "Seattle Seahawks",
+      "score": 27.62
+     },
+     {
+      "player": "DeMarco Murray",
+      "team": "Dallas Cowboys",
+      "score": 22.1
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2013-award-week07-nfc-defense-v1",
+    "packet_sha256": "ae8150a085c36d44b05a4ec5989194df928e95e8ddfe63602a31e3f46f6d9722",
+    "result_ref": "7b1b1213665b304367963546bb6e4ae11e5cf3700fa989229c7fe84706384cb7",
+    "shortlist": [
+     {
+      "player": "Earl Thomas",
+      "team": "Seattle Seahawks",
+      "score": 21.2
+     },
+     {
+      "player": "Glover Quin",
+      "team": "Detroit Lions",
+      "score": 19.8
+     },
+     {
+      "player": "Captain Munnerlyn",
+      "team": "Carolina Panthers",
+      "score": 19.7
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-special_teams": {
+    "event_id": "2013-award-week07-nfc-special_teams-v1",
+    "packet_sha256": "a44da12289fd728aef881e9fd1b09b0dbfb50b2a861686486f99606c2c9e5f74",
+    "result_ref": "1d04dc11dbf9140eee5fd62c686d2318a2a1e062a9ad62d2a65fe77ea8410e34",
+    "shortlist": [
+     {
+      "player": "Blair Walsh",
+      "team": "Minnesota Vikings",
+      "score": 15.0
+     },
+     {
+      "player": "Javier Arenas",
+      "team": "Arizona Cardinals",
+      "score": 13.1
+     },
+     {
+      "player": "Chris Thompson",
+      "team": "Washington Redskins",
+      "score": 12.7
+     }
+    ],
+    "winner_index": 1
+   }
+  }
+ },
+ "week-8": {
+  "kind": "week",
+  "key": "8",
+  "label": "Week 8",
+  "order": 8,
+  "note": "Backfilled on October 27, 2013 (Entry 47) from Week 8 receipts.",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2013-award-week08-afc-offense-v1",
+    "packet_sha256": "ee5c2b3891ae7b3a35b3bac3b68c0612dcab3e4f57dcc4d230cde5e46a954f61",
+    "result_ref": "439db984dbb7bb4bdb162e40ce686478d36fb2900b91b0427901a1b3ac10c938",
+    "shortlist": [
+     {
+      "player": "Geno Smith",
+      "team": "New York Jets",
+      "score": 28.52
+     },
+     {
+      "player": "Andy Dalton",
+      "team": "Cincinnati Bengals",
+      "score": 26.98
+     },
+     {
+      "player": "Santonio Holmes",
+      "team": "New York Jets",
+      "score": 26.5
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-defense": {
+    "event_id": "2013-award-week08-afc-defense-v1",
+    "packet_sha256": "f3d4ad63d196257ad6cbc7f0efac90401c648c101f68f796ab907513c8cef4fa",
+    "result_ref": "ffca092aeedd01b705890f515292e1808d9d32dec21a516db4cd7e3791c4bd91",
+    "shortlist": [
+     {
+      "player": "Lawrence Timmons",
+      "team": "Pittsburgh Steelers",
+      "score": 21.0
+     },
+     {
+      "player": "Mike Devito",
+      "team": "Kansas City Chiefs",
+      "score": 20.0
+     },
+     {
+      "player": "Dwight Lowery",
+      "team": "Jacksonville Jaguars",
+      "score": 19.5
+     }
+    ],
+    "winner_index": 1
+   },
+   "AFC-special_teams": {
+    "event_id": "2013-award-week08-afc-special_teams-v1",
+    "packet_sha256": "4979763a9fd1f76be9fa0637a64632cdc9b20b78480cb130ab3e3c4623af10a5",
+    "result_ref": "1c455eb12e77a0b9c0804aca2f504ecd0f399a0e4d7c3d8e38335622f2d8db6f",
+    "shortlist": [
+     {
+      "player": "Matt Prater",
+      "team": "Denver Broncos",
+      "score": 12.0
+     },
+     {
+      "player": "Ryan Succop",
+      "team": "Kansas City Chiefs",
+      "score": 11.0
+     },
+     {
+      "player": "Trindon Holliday",
+      "team": "Denver Broncos",
+      "score": 11.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-offense": {
+    "event_id": "2013-award-week08-nfc-offense-v1",
+    "packet_sha256": "6a165ace8044433ffebe5a534faa3a601eb1c4f3b2315a149a409554ef14257b",
+    "result_ref": "174c23753c29e98cdd19e30ca9906e7189c91030ed7706c404a00154355da582",
+    "shortlist": [
+     {
+      "player": "Luke McCown",
+      "team": "New Orleans Saints",
+      "score": 35.58
+     },
+     {
+      "player": "Alfred Morris",
+      "team": "Washington Redskins",
+      "score": 33.7
+     },
+     {
+      "player": "Adrian Peterson",
+      "team": "Minnesota Vikings",
+      "score": 31.6
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2013-award-week08-nfc-defense-v1",
+    "packet_sha256": "98822c2779a7ec44f190d9d5dc99be16e483d2c0bee848ca808b81c681ce216b",
+    "result_ref": "dccd73921df9a8ed74b7b3653f547aa3ae86a48e3be51be7e158e28757c52605",
+    "shortlist": [
+     {
+      "player": "Luke Kuechly",
+      "team": "Carolina Panthers",
+      "score": 23.0
+     },
+     {
+      "player": "London Fletcher",
+      "team": "Washington Redskins",
+      "score": 21.5
+     },
+     {
+      "player": "Nate Allen",
+      "team": "Philadelphia Eagles",
+      "score": 20.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-special_teams": {
+    "event_id": "2013-award-week08-nfc-special_teams-v1",
+    "packet_sha256": "9fe3547f5f8106728f4500ac929b34c5be000e51b8e1f998592f2bf85917465b",
+    "result_ref": "cea0830a3d809d5d1841bc3089643c13ec525ee41ddb79fffcfd3b0150bced7a",
+    "shortlist": [
+     {
+      "player": "Chris Thompson",
+      "team": "Washington Redskins",
+      "score": 19.7
+     },
+     {
+      "player": "Graham Gano",
+      "team": "Carolina Panthers",
+      "score": 14.0
+     },
+     {
+      "player": "Matt Bryant",
+      "team": "Atlanta Falcons",
+      "score": 13.0
+     }
+    ],
+    "winner_index": 0
+   }
+  }
+ },
+ "month-September": {
+  "kind": "month",
+  "key": "September",
+  "label": "September (Weeks 1-4)",
+  "order": 101,
+  "note": "Backfilled on October 27, 2013 (Entry 47); announced by the league on October 3.",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2013-award-september-afc-offense-v1",
+    "packet_sha256": "9e0e3d8f50ecaaafdcebc11afdbfdc7154d6def1ac284ccd38ec887551057271",
+    "result_ref": "41ca1d0f6876b6c02372904cefceca0856f88ff518676b2b994d17a886536c82",
+    "shortlist": [
+     {
+      "player": "Arian Foster",
+      "team": "Houston Texans",
+      "score": 84.5
+     },
+     {
+      "player": "Ronnie Hillman",
+      "team": "Denver Broncos",
+      "score": 81.3
+     },
+     {
+      "player": "Philip Rivers",
+      "team": "San Diego Chargers",
+      "score": 79.76
+     }
+    ],
+    "winner_index": 2
+   },
+   "AFC-defense": {
+    "event_id": "2013-award-september-afc-defense-v1",
+    "packet_sha256": "e295e6236380d28e6929e1a3f373ccfc10d947cc473b3679f25abd542116ab16",
+    "result_ref": "a93d1106ccb63ddea42b686faef533a90817dec18ea5c7b9c42f4834c5704be4",
+    "shortlist": [
+     {
+      "player": "Buster Skrine",
+      "team": "Cleveland Browns",
+      "score": 86.2
+     },
+     {
+      "player": "Bernard Pollard",
+      "team": "Tennessee Titans",
+      "score": 66.6
+     },
+     {
+      "player": "Ahtyba Rubin",
+      "team": "Cleveland Browns",
+      "score": 59.5
+     }
+    ],
+    "winner_index": 1
+   },
+   "AFC-special_teams": {
+    "event_id": "2013-award-september-afc-special_teams-v1",
+    "packet_sha256": "2405bb3934ff9d3b5384df76a00a65312528451798185d41e5c588c11d55ae60",
+    "result_ref": "5a6c21c9baebc8501a939f62ade1b152dae85e6da8ed42f80c90b649eb57c70e",
+    "shortlist": [
+     {
+      "player": "Keshawn Martin",
+      "team": "Houston Texans",
+      "score": 44.0
+     },
+     {
+      "player": "Mike Nugent",
+      "team": "Cincinnati Bengals",
+      "score": 39.0
+     },
+     {
+      "player": "Matt Prater",
+      "team": "Denver Broncos",
+      "score": 37.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-offense": {
+    "event_id": "2013-award-september-nfc-offense-v1",
+    "packet_sha256": "859afce80e2d721d61ece3959e0768648cfc9c43557f2717ce4c0740b1220b17",
+    "result_ref": "2f8da3a4b103c700251cf2da1e819080f28f2ad243057ce9515d20d9ab97fe1f",
+    "shortlist": [
+     {
+      "player": "Matt Ryan",
+      "team": "Atlanta Falcons",
+      "score": 83.94
+     },
+     {
+      "player": "Tony Romo",
+      "team": "Dallas Cowboys",
+      "score": 80.7
+     },
+     {
+      "player": "David Wilson",
+      "team": "New York Giants",
+      "score": 80.6
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2013-award-september-nfc-defense-v1",
+    "packet_sha256": "7657cc279965384adfaf89f8e9d24051016c43e7948ad63de9a360dcd6179be0",
+    "result_ref": "8185819cbdb44057575fab6d747431b346a8851cb9e436dda9eac308a63400ec",
+    "shortlist": [
+     {
+      "player": "Dan Connor",
+      "team": "New York Giants",
+      "score": 64.0
+     },
+     {
+      "player": "Bobby Wagner",
+      "team": "Seattle Seahawks",
+      "score": 63.0
+     },
+     {
+      "player": "Karlos Dansby",
+      "team": "Arizona Cardinals",
+      "score": 55.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-special_teams": {
+    "event_id": "2013-award-september-nfc-special_teams-v1",
+    "packet_sha256": "939391556ef84eba327d10c700ee27ffa202c95b520deb0efc909e10dd0815cf",
+    "result_ref": "8172bcc15ba003ab8bdaf27f7cbdce882d44fbb20b860b632e4d941bbe62b252",
+    "shortlist": [
+     {
+      "player": "LaMichael James",
+      "team": "San Francisco 49ers",
+      "score": 40.8
+     },
+     {
+      "player": "Robbie Gould",
+      "team": "Chicago Bears",
+      "score": 40.0
+     },
+     {
+      "player": "Chris Thompson",
+      "team": "Washington Redskins",
+      "score": 39.2
+     }
+    ],
+    "winner_index": 0
+   }
+  }
+ }
+}

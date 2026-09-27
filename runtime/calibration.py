@@ -21,7 +21,8 @@ def _int(value):
 
 
 def validate_drive_model(drive, data):
-    """Cross-check the kernel 2013.6 drive model against the aggregate totals."""
+    """Cross-check the 2012 drive model (kernel 2013.6 artifact; its category counts,
+    kick rates and clock scale are reused by kernel 2013.7) against the aggregate totals."""
     from .drive_model import validate as validate_structure
 
     errors = list(validate_structure(drive))

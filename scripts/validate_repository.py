@@ -248,6 +248,17 @@ def validate(root=ROOT):
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append(f'Box score cannot be rebuilt from its receipt: {exc}')
 
+    # Every committed weekly call sheet must be labellable by kernel 2013.7:
+    # each call names who it can describe, explicitly or through the family map.
+    try:
+        from runtime.call_families import sheet_errors
+        for sheet_path in sorted((root/'career/2013/regular_season').glob('*/call_sheet.json')):
+            sheet = json.loads(sheet_path.read_text()).get('offensive_call_sheet', [])
+            for problem in sheet_errors(sheet):
+                require(False, f'{sheet_path.relative_to(root)}: {problem}')
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append(f'Call sheets cannot be checked: {exc}')
+
     allowed_books = set(mapping['active_playbooks']) | {'career/playbook/README.md'}
     def readable(path):
         rel = path.relative_to(root).as_posix()

@@ -63,6 +63,20 @@ class BoxScoreTests(unittest.TestCase):
             output.write_text(output.read_text(encoding="utf-8").replace("| 230 |", "| 231 |", 1), encoding="utf-8")
             self.assertEqual(stale_blocks(output, directory), ["box-test"])
 
+    def test_kernel_2013_7_receipt_adds_a_drive_chart(self):
+        import sys
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from synthetic_games import sample
+        result = sample()[1]
+        text = render(make_receipt(result, week=6, matchup="B at A", detail="full"), "A")
+        chart = text.split("#### Drive chart", 1)[1]
+        self.assertEqual(chart.count("\n| ") - 1, len(result["possessions"]))
+        punts = [p for p in result["possessions"] if p["category"] == "punt"]
+        if punts:
+            fd = punts[0]["fourth_down"]
+            self.assertIn("(4th & %d at " % fd["ydstogo"] if fd["down"] == 4 else "& %d at " % fd["ydstogo"], chart)
+        self.assertNotIn("Drive chart", render(receipt(), "Jacksonville Jaguars"))
+
 
 if __name__ == "__main__":
     unittest.main()

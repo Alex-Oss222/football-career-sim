@@ -1076,3 +1076,51 @@ The Week 8 inactive list, which names both, carries forward for Week 10 unless S
 **Next:** trade deadline Tuesday, October 29, 4 p.m. ET; Week 9 bye; November 10 Week 10 at Tennessee. **Not simulated.**
 
 **Commit closed - Canonical correction - October 27, 2013 - Pasztor and Mosley injury projections recovered - canonical through October 27, after Week 8**
+
+## Entry 47: League awards record created; Weeks 1-8 and September backfilled
+
+**Effective canonical state:** October 27, 2013, after Week 8
+**Recorded:** September 27, 2026
+**Checkpoint:** `Canonical update - October 27, 2013 - League awards backfilled`
+**Preceding global package checkpoint:** `Canonical correction - October 27, 2013 - Pasztor and Mosley injury projections recovered`
+
+**Authority.** On September 27, 2026 the user directed that a league awards record be created, that the missed Weeks 1-8 be backfilled, and that each winner be chosen from a formula shortlist by an audited panel draw.
+
+**Structure.** The award categories and calendar come from `library/2013_nfl_awards_structure.md`, which records no winners. Weekly awards are the AFC and NFC Offensive, Defensive and Special Teams Player of the Week; monthly awards are the same six. Months are assigned by NFL week: September Weeks 1-4, October 5-8, November 9-12, December 13-17. Fan-voted awards are not generated, and Rookie of the Month waits for a sourced 32-club rookie list.
+
+**Method.** `career/2013/awards/methodology.json` fixes one scoring formula per category, applied identically to every player from the receipts, plus a conference top-three shortlist and a 6:3:1 panel pick whose entropy comes from the private service. It was committed and pushed (67a2ea0) before any draw.
+
+**Draws.** Fifty-four awards were drawn through the private service: Weeks 1-8 and September. Every packet digest and result reference is in `awards/results.json`, and the readable record is `awards/weekly_and_monthly.md`. No Jacksonville player won. No game result or statistic changed. October's awards are drawn on the league's announcement date of October 31.
+
+**Commit closed - Canonical update - October 27, 2013 - League awards backfilled - canonical through October 27, after Week 8**
+
+## Entry 48: Kernel 2013.7 adopted
+
+**Effective canonical state:** October 27, 2013, after Week 8
+**Recorded:** September 27, 2026
+**Checkpoint:** `Canonical update - October 27, 2013 - League awards backfilled; kernel 2013.7 adopted`
+**Preceding global package checkpoint:** `Canonical update - October 27, 2013 - League awards backfilled`
+
+**Decision.** On September 27, 2026 the user adopted kernel 2013.7 as documented.
+
+**What 2013.7 adds:**
+- start-bin-conditioned field position with a spot chain;
+- each drive's real 2012 first-down, third-down and sack counts;
+- call labels tied to the ball carrier, with a fail-closed family map;
+- a late-game fourth-down partition.
+
+**User authorization.** Fourth-down calls are user-controlled under Document 1 section 3.1. In autonomous management mode, the league-wide late-game model decides them for every club alike, including Jacksonville's. The user authorized this by adopting the kernel.
+
+**Acceptance.** 54 of 57 graded rows were WITHIN. The three OUTSIDE rows are FGM per team game, drive share ending on the clock, and clock-expired drives per team game, all traced to the first-half end-of-half model. They are registered as known detections in `runtime/bands.py` and are still graded and displayed. No centre, tolerance, coefficient or pool changed.
+
+**Scope.** Every slate closed after Week 8 runs under 2013.7, with its own audit cohort. Weeks 1-8 stand under 2013.4-2013.6 and are never rerun. Their stat views re-render byte-identical.
+
+**Unchanged.** The neutral-site home term (Entry 45) is not changed in 2013.7.
+
+**Call families.** The family map adds "Inside + Smoke", from the active 2013 book's ACCESS, Inside Zone and Smoke rules, so all Week 1-8 sheets resolve. A new family on a later sheet fails closed until it is declared.
+
+**Deployment.** The private service is redeployed at 2013.7 from merged main. Readiness requires that version.
+
+**Next:** trade deadline Tuesday, October 29, 4 p.m. ET; October awards on October 31; Week 9 bye; November 10 Week 10 at Tennessee. **Not simulated.**
+
+**Commit closed - Canonical update - October 27, 2013 - League awards backfilled; kernel 2013.7 adopted - canonical through October 27, after Week 8**

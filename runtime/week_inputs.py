@@ -18,7 +18,7 @@ import re
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
-from . import depth_library
+from . import call_families, depth_library
 from .usage import group, lineup_errors
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -159,6 +159,10 @@ def roster_available(availability, game_day):
 
 
 def jacksonville_input(receipts, game_day, anchors, call_sheet):
+    undeclared = call_families.sheet_errors(call_sheet)
+    if undeclared:
+        # Kernel 2013.7 fails closed on a call no label rule covers.
+        raise ValueError("call sheet cannot be labelled: " + "; ".join(undeclared))
     chart = json.loads(DEPTH_CHART.read_text(encoding="utf-8"))
     depth = {player: rank for players in chart["depth"].values() for rank, player in enumerate(players, 1)}
     injured = injured_out(receipts, game_day)
