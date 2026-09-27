@@ -1356,7 +1356,7 @@ The playbook supplies the menu. Game-management logic determines whether Stone g
 
 # 16. CONCEPT PORTABILITY AND SERIES ARCHITECTURE
 
-Concept portability remains the center of Stone's identity. Evolution IV adds **fit portability**: the same concept can be presented from different bodies until the defense reveals who owns the fit.
+Concept portability remains the center of Stone's identity. Evolution IV adds **fit portability**: the same concept can be presented from different bodies until the defense reveals who owns the fit. Stone can also return to the same offensive picture with a different call after observing how the defense fits or rotates.
 
 ## 16.1 Portability Matrix
 
@@ -1389,9 +1389,11 @@ Every major weekly series should contain:
 5. a pressure answer;
 6. a shot only if the defense creates the trigger.
 
-Not every series needs six different formations. The value comes from shared presentation.
+Not every series needs six different formations. The value comes from shared presentation. Calls that repeat the offensive picture keep personnel, splits, quarterback and back locations, and motion path and timing consistent. The defense's shell and fit response guide the next call; they do not require the offense to announce that answer with a different alignment.
 
 ## 16.3 DUO SHELL SERIES
+
+Duo and its play-action answers can share the same Trey alignment and backfield presentation. Return Toss changes the motion and supplies a companion picture within the series. Each call retains its own protection, route, and decision rules.
 
 Possible sequence:
 
@@ -1999,4 +2001,4 @@ It may simplify or remove any Evolution IV answer that later defensive structure
 
 **Tempo:** ROTATE to test matching, HOLD to keep a favorable shell, PRESS when the current eleven can attack before the defense substitutes.
 
-**Play-caller:** Show -> Stress -> Punish. In Evolution IV, the "Stress" target is often the player who must leave the shell and fit the run.
+**Play-caller:** Show -> Stress -> Punish. In Evolution IV, the "Stress" target is often the player who must leave the shell and fit the run. Return to the same offensive picture with the answer his movement creates.

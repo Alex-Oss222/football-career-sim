@@ -87,7 +87,7 @@ The offense therefore becomes faster before the snap while trying to become simp
 
 1. **Motion needs a football job.** It must change leverage, create speed, move a fit, force communication, declare pressure, or protect another call. If it does none of those things, remove it.
 2. **Motion-at-snap is a timing tool, not a religion.** The offense may snap with a player moving, but it also must be able to win from the same formation while completely still.
-3. **The same motion must produce different outcomes.** A fast receiver cannot always receive the ball, clear the edge, or run the same route. Motion to the right must be able to produce a run right, run left, pass right, pass left, screen, or shot.
+3. **The same motion must produce different outcomes.** A fast receiver cannot always receive the ball, clear the edge, or run the same route. Match the personnel, starting alignment, motion path, and snap timing across the paired calls. Motion to the right must be able to produce a run right, run left, pass right, pass left, screen, or shot.
 4. **Do not confuse travel with man coverage.** Modern defenses can pass motion through zones, switch assignments, top-lock routes, or rotate after the snap. Motion tells the quarterback what rule the defense used, not automatically what coverage was called.
 5. **Speed is useful only when the offense can control the clock.** Late motion that creates delay-of-game risk, illegal motion, or rushed protection communication is a bad trade.
 6. **Static football is the constraint on motion football.** If the defense begins cheating toward the expected movement, line up in the same shell, do not move, and attack the new leverage.
@@ -491,6 +491,8 @@ The quarterback must complete the protection declaration before relying on the E
 ## 5.6 Static Complement
 
 Every major motion shell receives at least one no-motion companion call from the same formation.
+
+The static call presents a companion picture. The moving picture must still carry its own credible run and pass answers.
 
 Examples:
 
@@ -1191,7 +1193,7 @@ A major motion path should connect to at least:
 - one quick/perimeter answer;
 - one static complement.
 
-This prevents the defense from treating motion as an isolated gadget family.
+The moving calls share the same splits, backfield alignment, motion path, and timing wherever their assignments allow. The static complement carries a different presentation from that formation. Together they prevent the defense from treating motion as an isolated gadget family.
 
 ## 11.3 Boot and Slide
 
@@ -1597,13 +1599,13 @@ Every major series should contain:
 
 ## 16.3 FLASH DUO SERIES
 
-Example family:
+Example family, with personnel, splits, backfield alignment, and FLASH path and timing held constant on the moving calls:
 
 - Condensed Trey FLASH Duo;
-- same shell FLASH Choice;
-- same shell FLASH Bubble;
-- same shell static Duo;
-- same shell Duo Dagger;
+- same picture FLASH Choice;
+- same picture FLASH Bubble;
+- same picture FLASH Duo Dagger;
+- same formation without FLASH: Duo;
 - alert Post when safety overdrives fit.
 
 The fast-motion player may be Z, H, Y/F, or a back depending on personnel.
