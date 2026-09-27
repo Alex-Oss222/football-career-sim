@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from runtime.bands import audit
+from runtime.bands import LEGACY_LABEL, audit, audit_drive_model, coherence, cohorts
 from runtime.stat_tables import (
     POSITION_GROUPS, avg, combine, g, pct, position_sections, rating_value,
     time_text,
@@ -277,6 +277,23 @@ def team_stats_markdown(year, book):
             g(s, "kick_returns"), avg(g(s, "kick_return_yards"), g(s, "kick_returns")),
             g(s, "punt_returns"), avg(g(s, "punt_return_yards"), g(s, "punt_returns")))) + " |")
     lines.append("")
+
+    drive_clubs = [(t, d) for t, d in clubs if d.get("drive_model_games")]
+    if drive_clubs:
+        lines += ["## Drives and kicking — Week 4 onward (kernel 2013.6)", "",
+                  "Counted only from games closed under kernel 2013.6; Weeks 1-3 receipts "
+                  "(kernels 2013.4/2013.5) do not carry these counters and are not included. "
+                  "G counts those games only.", "",
+                  "| Team | G | DRIVES | FGA | XPA | XPM | SAF | DOWNS | CLOCK | KO |",
+                  "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|"]
+        for team_id, data in sorted(drive_clubs):
+            t = data["team_stats"]
+            lines.append("| " + " | ".join(str(v) for v in (
+                team_id, data["drive_model_games"], t.get("drives", 0), t.get("field_goal_attempts", 0),
+                t.get("extra_point_attempts", 0), t.get("extra_points_made", 0), t.get("safeties", 0),
+                t.get("turnovers_on_downs", 0), t.get("clock_expired_drives", 0),
+                t.get("kickoffs", 0))) + " |")
+        lines.append("")
     return "\n".join(lines)
 
 
@@ -305,24 +322,71 @@ def play_calls_markdown(year, team_id, book):
     return "\n".join(lines)
 
 
+POINTS_NOTE = (
+    "Points: non-offensive touchdowns, their tries and two-point tries are not "
+    "modelled by design (about 1.7-2.0 points per team game below the 2012 centre); "
+    "the ±5.0 tolerance is deliberately not tightened."
+)
+
+
+def _band_table(rows):
+    fmt = lambda v: "—" if v is None else ("%.3f" % v if abs(v) < 2 else "%.1f" % v)
+    lines = ["| Metric | Observed | 2012 band centre | Tolerance | Status |",
+             "|---|---:|---:|---:|---|"]
+    for metric, observed, band, tolerance, status in rows:
+        spread = "—" if tolerance is None else "±" + fmt(tolerance)
+        lines.append("| %s | %s | %s | %s | %s |" % (metric, fmt(observed), fmt(band), spread, status))
+    return lines
+
+
 def calibration_audit_markdown(year, receipts, book):
-    team_games_audited, rows = audit(receipts)
+    legacy, current = cohorts(receipts)
     lines = [
         "# %s statistical band audit" % year, "",
         "**Version:** `%s-W%02d-BAND-AUDIT`" % (year, book["through_week"]),
-        through_line(book),
-        "**Team-games audited:** %d (grading starts at 16)." % team_games_audited, "",
+        through_line(book), "",
         "League-wide receipts compared with the sourced 2012 shapes in "
-        "`library/data/2012_nfl_aggregate_baseline.json` and "
-        "`library/data/2012_nfl_position_usage_baseline.json`. This is a defect "
+        "`library/data/2012_nfl_aggregate_baseline.json`, "
+        "`library/data/2012_nfl_position_usage_baseline.json` and "
+        "`library/data/2012_nfl_drive_model.json`. This is a defect "
         "detector for engine code and TeamInputs. An OUTSIDE row is investigated; "
-        "it never reruns, selects or edits a closed game.", "",
-        "| Metric | Observed | 2012 band centre | Tolerance | Status |",
-        "|---|---:|---:|---:|---|",
+        "it never reruns, selects or edits a closed game. Receipts are split into "
+        "cohorts by kernel version; grading starts at 16 team-games per cohort.", "",
     ]
-    fmt = lambda v: "—" if v is None else ("%.3f" % v if abs(v) < 2 else "%.1f" % v)
-    for metric, observed, band, tolerance, status in rows:
-        lines.append("| %s | %s | %s | ±%s | %s |" % (metric, fmt(observed), fmt(band), fmt(tolerance), status))
+    team_games, rows = audit(legacy)
+    lines += [
+        "## Legacy cohort: kernels 2013.4/2013.5",
+        "",
+        "**Status:** %s." % LEGACY_LABEL,
+        "**Team-games audited:** %d." % team_games, "",
+    ] + _band_table(rows) + [
+        "",
+        "Drive-model rows and ledger coherence: not measurable for this cohort "
+        "(legacy receipts carry no drives summary or kicking-attempt counters).", "",
+    ]
+    team_games, rows = audit(current)
+    drive_games, drive_rows = audit_drive_model(current)
+    checked, counts = coherence(current)
+    lines += [
+        "## Kernel 2013.6 cohort (Week 4 onward)", "",
+        "**Team-games audited:** %d." % team_games, "",
+    ] + _band_table(rows) + ["", POINTS_NOTE, "",
+        "### Drive model rows", "",
+        "Centres from the 2012 drive model (nflverse drive definition) and period totals; "
+        "tolerance is three standard errors at the observed sample.", "",
+    ] + _band_table(drive_rows) + [
+        "",
+        "### Ledger coherence", "",
+        "Zero-tolerance counts from `runtime.play_detail.check_ledger` over every "
+        "receipt's drives summary plus the full snap ledgers. Games checked: %d." % checked, "",
+        "| Class | Count | Status |",
+        "|---|---:|---|",
+    ]
+    for cls, count in counts:
+        if not checked:
+            lines.append("| %s | — | not measurable |" % cls.replace("_", " "))
+        else:
+            lines.append("| %s | %d | %s |" % (cls.replace("_", " "), count, "OUTSIDE" if count else "WITHIN"))
     lines.append("")
     return "\n".join(lines)
 

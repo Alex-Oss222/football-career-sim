@@ -807,3 +807,34 @@ Game-level efficiency (completion rate, yards per carry, sack rate) was close to
 **Next competitive event:** September 29 Week 4 vs Indianapolis, 1 p.m. ET. **Not simulated.**
 
 **Commit closed - Canonical update - September 22, 2013 - Week 3 at Seattle closed - canonical through September 22, after Week 3**
+
+## Entry 39: Engine correction, kernel 2013.6
+
+**Effective canonical state:** September 22, 2013, after Week 3 and before Week 4
+**Recorded:** September 27, 2026
+**Checkpoint:** `Canonical update - September 22, 2013 - Kernel 2013.6 engine correction`
+**Preceding global package checkpoint:** `Canonical update - September 22, 2013 - Week 3 at Seattle closed`
+
+**Why.** Two engine defects, recorded in Entries 35, 37 and 38 and reported to the user, were corrected at the user's instruction before Week 4:
+- Field goals and extra points were always made.
+- The public snap ledger could contain impossible entries: snaps after a touchdown or turnover in the same drive, drives with no terminal row, possessions across halftime, kickoffs after time expired, and drive yardage unrelated to how the drive ended.
+
+**What changed.** Kernel 2013.6 draws each possession's result from a reproducible 2012 drive model. The model is built from nflverse play-by-play and checked against a second pass on nflscrapR; both come from the same NFL GSIS feed, so the check is not fully independent. It reconciles exactly to the verified 2012 totals of 1,016 field-goal attempts, 852 made and 468 interceptions. Each possession then resamples a real 2012 drive of that outcome for its plays, net yards and time. The changes:
+- Field goals are made at the sourced 2012 rate for their distance, and extra points at 1,229 of 1,237.
+- Safeties, turnovers on downs and clock-expired possessions are explicit.
+- Each half is bounded, and the second half opens with a kickoff to the other team.
+- No kickoff follows a score that ends a half.
+- Overtime follows the 2012 rules.
+- A touchdown or turnover is always the drive's last snap.
+- Every possession ends in exactly one terminal row, and a coherence check runs on every result.
+
+The kernel constants and the private service identity move together to 2013.6. No field position is published; that remains a known gap.
+
+**Verification.** In 250 synthetic games resolved locally with synthetic seeds (never the private service), the coherence check found zero impossible entries. Every graded band read WITHIN except drive-ending punts, which run slightly high because of how drives are redirected at the end of a half; it is disclosed and not tuned. Kickoffs per team-game is informational, because the 2012 count includes kicks the kernel does not model. Scoring runs about 1.3 points per team-game below 2012 because non-offensive touchdowns are not modelled. No coefficient, pool or tolerance was changed after the results were seen.
+
+**Canon.** Weeks 1-3 (Entries 35, 37 and 38) stand as closed under kernels 2013.4 and 2013.5. They were not rerun, redrawn or edited, and the band audit shows them as a legacy cohort. Week 4 has not been simulated.
+
+**Primary records:** `runtime/README.md` (2013.6 contract); `library/2012_drive_model_calibration.md`; `library/data/2012_nfl_drive_model.json`; `scripts/research/build_2012_drive_model.py`.
+**Next competitive event:** September 29 Week 4 vs Indianapolis, 1 p.m. ET. **Not simulated.**
+
+**Commit closed - Canonical update - September 22, 2013 - Kernel 2013.6 engine correction - canonical through September 22, after Week 3**

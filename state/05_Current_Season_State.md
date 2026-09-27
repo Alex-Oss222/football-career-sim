@@ -1,11 +1,11 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2013-SEP22-WEEK3-STATE-16`
-**Supersedes:** `JAX-2013-SEP15-WEEK2-STATE-15`
+**Version:** `JAX-2013-SEP22-KERNEL-2013-6-STATE-17`
+**Supersedes:** `JAX-2013-SEP22-WEEK3-STATE-16`
 **Snapshot effective:** September 22, 2013, after Week 3 (Jacksonville 16, Seattle 13).
-**Last reconciled:** September 27, 2026; season-ledger Entry 38.
-**Global package checkpoint:** `Canonical update - September 22, 2013 - Week 3 at Seattle closed`
+**Last reconciled:** September 27, 2026; season-ledger Entry 39.
+**Global package checkpoint:** `Canonical update - September 22, 2013 - Kernel 2013.6 engine correction`
 
 ## Effective source-version manifest
 
@@ -15,7 +15,7 @@
 | Document 2 | `ab790f6e935c99a901a6d39cf3bee5183cf4da3e` | Active foundation source |
 | Document 3 | `38e0ce21e9cf1b62f8d4b9c281955facdaf07b57` | Active foundation source |
 | Document 4 | `JAX-2013-SEP22-WEEK3-REGISTER-14`; closed by Entry 38 | Controlled 53 (52 active, Blackmon on Reserve/Suspended), practice squad, roles and availability after Week 3 |
-| Document 6 | 2013 ledger through Entry 38 | Week 3 closed |
+| Document 6 | 2013 ledger through Entry 39 | Week 3 closed; engine correction to kernel 2013.6 |
 
 ## 1. Master clock and competition position
 
@@ -67,7 +67,7 @@ Through Week 3, Jacksonville is 2-1, third in the AFC South (Tennessee, Indianap
 
 ## 7. Immediate next step
 
-Play Week 4 vs Indianapolis only on an explicit `Run Week 4` instruction. `python scripts/build_week_inputs.py 4` freezes the slate from canon: background units are carried forward with branch injuries and pre-existing returns, each dressing 46 from its depth order, and Jacksonville is built from the roster, `career/2013/depth_chart.json` and the week's call sheet. The build runs the gate, and `python scripts/close_week.py 4 --close` closes the slate under kernel 2013.5. Stone's inputs needed:
+Play Week 4 vs Indianapolis only on an explicit `Run Week 4` instruction. `python scripts/build_week_inputs.py 4` freezes the slate from canon: background units are carried forward with branch injuries and pre-existing returns, each dressing 46 from its depth order, and Jacksonville is built from the roster, `career/2013/depth_chart.json` and the week's call sheet. The build runs the gate, and `python scripts/close_week.py 4 --close` closes the slate under kernel 2013.6 (Entry 39). Stone's inputs needed:
 
 - the Week 4 plan as a structured call sheet;
 - the center: Meester's projection clears September 27, but he is on the carried-over Week 3 inactive list and Brewster heads the center depth;

@@ -76,11 +76,16 @@ class RuntimeTests(unittest.TestCase):
         self.assertEqual(len(paused['pauses']),1)
         continued=resolve_game(a,b,seed=self.seed,event_id='pause',management_mode='user_controlled',resume=paused['pauses'][0]['continuation_token'])
         self.assertFalse(continued['pauses'])
-    def test_long_run_period_bands_and_matchup_movement(self):
+    # 250 games per test at most: the deploy image runs this whole suite.
+    def neutral_sample(self):
+        cls=type(self)
+        if not hasattr(cls,'_neutral'):
+            a,b=self.teams()
+            cls._neutral=[resolve_game(a,b,seed=self.seed,event_id=f'batch-{i}') for i in range(250)]
+        return cls._neutral
+    def test_long_run_period_bands(self):
         points=[]; drives=[]; yards=[]; punts=[]; turnovers=[]; penalties=[]; injuries=[]; sacks=[]; field_goals=[]; returns=[]
-        a,b=self.teams()
-        for i in range(1200):
-            r=resolve_game(a,b,seed=self.seed,event_id=f'batch-{i}')
+        for r in self.neutral_sample():
             for t in ('A','B'):
                 s=r['team_stats'][t]; points.append(s['points']); drives.append(sum(x['team']==t for x in r['possessions'])); yards.append(s['passing_yards']+s['rushing_yards']); punts.append(s['punts']); turnovers.append(s['turnovers']); penalties.append(s['penalties']); sacks.append(s['sacks_allowed']); field_goals.append(s['field_goals']); returns.append(s['kick_returns']+s['punt_returns'])
             injuries.append(len(r['injuries']))
@@ -88,11 +93,11 @@ class RuntimeTests(unittest.TestCase):
         self.assertTrue(17<mean(points)<29); self.assertTrue(8<mean(drives)<16); self.assertTrue(240<mean(yards)<460)
         self.assertTrue(3<mean(punts)<7); self.assertTrue(.7<mean(turnovers)<2.2); self.assertTrue(4<mean(penalties)<9); self.assertTrue(.2<mean(injuries)<2.5)
         self.assertTrue(1<mean(sacks)<4); self.assertTrue(.8<mean(field_goals)<2.5); self.assertTrue(1<mean(returns)<7)
-        strong=[]; neutral=[]
+    def test_matchup_movement(self):
+        def mean(x): return sum(x)/len(x)
         sa,sb=self.teams(2)
-        for i in range(500):
-            strong.append(resolve_game(sa,sb,seed=self.seed,event_id=f'strong-{i}')['final_score']['A'])
-            neutral.append(resolve_game(a,b,seed=self.seed,event_id=f'neutral-{i}')['final_score']['A'])
+        strong=[resolve_game(sa,sb,seed=self.seed,event_id=f'batch-{i}')['final_score']['A'] for i in range(250)]
+        neutral=[r['final_score']['A'] for r in self.neutral_sample()]
         self.assertGreater(mean(strong),mean(neutral))
     def test_overtime_terminates_and_reconciles(self):
         a,b=self.teams()
