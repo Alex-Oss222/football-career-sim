@@ -12,6 +12,8 @@
 
 `Dockerfile.engine` runs `scripts/validate_repository.py` and the full unit-test suite in a verification stage before producing the runtime image; a validation or test failure therefore blocks Railway deployment.
 
+**Railway auto-deploy prerequisite.** The engine-runtime service deploys from `main` only while the Railway GitHub App is *installed* on this repository (GitHub Settings > Applications > Installed GitHub Apps), not merely authorized for login. Without the installation, Railway shows "Auto deploy unavailable", merges never reach the engine, and `/health` keeps reporting the previous kernel. After a kernel change merges, confirm `/health` reports the new kernel before advancing the snapshot.
+
 Preseason uses the consolidated-block architecture: Document 5 may remain at the block-start snapshot while the four uniquely identified game packets are closed sequentially. Every packet must be rebuilt from the then-current roster, medical, availability, and role inputs. No later game may reuse stale football inputs; the final atomic public closure advances Document 5 once, after which the explicit snapshot helper advances the private binding.
 
 
