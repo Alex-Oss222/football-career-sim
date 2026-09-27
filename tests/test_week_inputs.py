@@ -1,0 +1,81 @@
+import json
+import unittest
+from datetime import date
+from pathlib import Path
+from unittest import mock
+
+from runtime import week_inputs
+from runtime.league import TEAMS
+from scripts.build_week_inputs import AVERAGE_ANCHORS
+from scripts.check_week_input_exclusivity import check_inputs, controlled_players_from_roster
+from scripts.render_season_stats import load_receipts
+
+ROOT = Path(__file__).resolve().parents[1]
+WEEK1_SHEET = ROOT / "career/2013/regular_season/week_01_kansas_city_at_jacksonville/call_sheet.json"
+
+
+def injury_receipt(player, days, restriction="out"):
+    return {"week": 1, "away": "Kansas City Chiefs", "home": "Jacksonville Jaguars",
+            "injuries": [{"team": "Kansas City Chiefs", "player": player, "injury_class": "lower_extremity",
+                          "restriction": restriction, "return_days": days}]}
+
+
+class ScheduleTests(unittest.TestCase):
+    def test_every_club_plays_once_in_week_two(self):
+        games = week_inputs.schedule(2)
+        clubs = [team for g in games for team in (g["away"], g["home"])]
+        self.assertEqual(len(games), 16)
+        self.assertEqual(sorted(clubs), sorted(TEAMS))
+
+    def test_bye_weeks_shrink_the_slate(self):
+        self.assertLess(len(week_inputs.schedule(4)), 16)
+
+    def test_identifiers_are_stable(self):
+        game = next(g for g in week_inputs.schedule(2) if g["home"] == "Oakland Raiders")
+        self.assertEqual(week_inputs.event_id(game), "2013-week02-jacksonville-jaguars-at-oakland-raiders")
+        self.assertEqual(week_inputs.receipt_name(game), "week_02_jacksonville_jaguars_at_oakland_raiders.json")
+
+
+class AvailabilityTests(unittest.TestCase):
+    def test_injury_holds_until_projected_return(self):
+        receipts = [injury_receipt("Eric Kush", 12)]
+        self.assertIn("Eric Kush", week_inputs.injured_out(receipts, date(2013, 9, 15)))
+        self.assertNotIn("Eric Kush", week_inputs.injured_out(receipts, date(2013, 9, 20)))
+
+    def test_limited_without_days_does_not_sit_a_player(self):
+        receipts = [injury_receipt("Matt Kalil", 0, restriction="limited")]
+        self.assertEqual(week_inputs.injured_out(receipts, date(2013, 9, 15)), {})
+
+
+class PackageTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        sheet = json.loads(WEEK1_SHEET.read_text())["offensive_call_sheet"]
+        receipts = [r for r in load_receipts(ROOT / "career/2013/stats/game_receipts") if int(r["week"]) < 2]
+        cls.package = week_inputs.build_package(2, receipts, sheet, AVERAGE_ANCHORS)
+
+    def test_week_two_package_passes_the_weekly_gate(self):
+        controlled = controlled_players_from_roster(ROOT / "career/2013/roster.md")
+        self.assertEqual(check_inputs(self.package, controlled, "Jacksonville Jaguars", expected_games=16), [])
+
+    def test_jacksonville_dresses_its_game_day_unit(self):
+        game = next(g for g in self.package["games"] if g["away"] == "Jacksonville Jaguars")
+        jax = game["away_input"]
+        self.assertEqual(len(jax["active_players"]), 46)
+        self.assertNotIn("Austin Pasztor", jax["active_players"])
+
+    def test_branch_injuries_carry_into_the_next_week(self):
+        game = next(g for g in self.package["games"] if "Carolina Panthers" in (g["away"], g["home"]))
+        side = game["away_input"] if game["away"] == "Carolina Panthers" else game["home_input"]
+        newton = next(p for p in side["roster"] if p["player_id"] == "Cam Newton")
+        self.assertFalse(newton["available"])
+
+    def test_unplaced_jacksonville_player_fails_closed(self):
+        with mock.patch.object(week_inputs, "controlled_active",
+                               return_value=[("Unplaced Player", week_inputs.AVAILABLE_TEXT)]):
+            with self.assertRaises(ValueError):
+                week_inputs.jacksonville_input([], date(2013, 9, 15), AVERAGE_ANCHORS, [])
+
+
+if __name__ == "__main__":
+    unittest.main()

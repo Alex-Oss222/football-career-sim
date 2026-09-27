@@ -27,6 +27,9 @@ Plans own teaching intent. Outputs own what happened. Standouts are evidence sum
 
 ```sh
 python scripts/refresh_summary_receipt.py otas --reviewed
+# A regular-season week: freeze inputs, close the games, then generate every view
+# python scripts/build_week_inputs.py WEEK
+# python scripts/close_week.py WEEK --close
 # After a game, once the complete receipt set for the current coverage window exists:
 # python scripts/render_box_score.py --write career/YEAR/regular_season/week_NN_<away>_at_<home>/output.md
 # python scripts/render_standings.py YEAR

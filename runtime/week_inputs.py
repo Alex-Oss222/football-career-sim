@@ -1,0 +1,147 @@
+"""Weekly TeamInput package for any regular-season week.
+
+- Slate: `library/data/2013_schedule.json` (schedule rails only).
+- Background clubs: the sourced Week 1 units (`runtime.depth_library`),
+  carried forward. Later real depth charts are not read: they reflect real
+  games' injuries and results, which the branch never had. A player already
+  out before Week 1 returns at the library's `return_week`.
+- Availability: every injury in a closed receipt keeps its player out until
+  the injury date plus its projected return days; Jacksonville's own medical
+  holds come from `career/2013/roster.md`.
+- Jacksonville: the controlled active roster, `career/2013/depth_chart.json`
+  (order, roles, inactives) and the week's structured call sheet.
+
+Unit anchors are passed in explicitly (Document 7 section 2.2).
+"""
+import json
+import re
+from datetime import date, timedelta
+from pathlib import Path
+
+from . import depth_library
+from .usage import group
+
+ROOT = Path(__file__).resolve().parents[1]
+SCHEDULE = ROOT / "library" / "data" / "2013_schedule.json"
+ROSTER = ROOT / "career" / "2013" / "roster.md"
+DEPTH_CHART = ROOT / "career" / "2013" / "depth_chart.json"
+PROTAGONIST = "Jacksonville Jaguars"
+AVAILABLE_TEXT = "No communicated restriction"
+UNIT = depth_library.UNIT
+
+
+def slug(team, sep):
+    return re.sub(r"[^a-z0-9]+", sep, team.lower()).strip(sep)
+
+
+def schedule(week):
+    games = [g for g in json.loads(SCHEDULE.read_text(encoding="utf-8"))["games"] if g["week"] == week]
+    if not games:
+        raise ValueError("no 2013 schedule for week %s" % week)
+    return games
+
+
+def event_id(game):
+    return "2013-week%02d-%s-at-%s" % (game["week"], slug(game["away"], "-"), slug(game["home"], "-"))
+
+
+def receipt_name(game):
+    return "week_%02d_%s_at_%s.json" % (game["week"], slug(game["away"], "_"), slug(game["home"], "_"))
+
+
+def _game_dates():
+    games = json.loads(SCHEDULE.read_text(encoding="utf-8"))["games"]
+    return {(g["week"], g["away"], g["home"]): date.fromisoformat(g["date"]) for g in games}
+
+
+def injured_out(receipts, game_day):
+    """{player_id: reason} for players still inside their projected return window."""
+    dates = _game_dates()
+    out = {}
+    for receipt in receipts:
+        played = dates[(int(receipt["week"]), receipt["away"], receipt["home"])]
+        for injury in receipt.get("injuries", ()):
+            days = injury.get("return_days") or 0
+            if injury.get("restriction") == "limited" and not days:
+                continue
+            back = played + timedelta(days=days)
+            if game_day < back:
+                out[injury["player"]] = "%s (%s), projected return %s" % (
+                    injury.get("restriction"), injury.get("injury_class"), back.isoformat())
+    return out
+
+
+def background_input(team, week, receipts, game_day, anchors):
+    team_input = depth_library.team_input(team, week=week, **anchors)
+    out = injured_out(receipts, game_day)
+    for player in team_input["roster"]:
+        if player["player_id"] in out:
+            player["available"] = False
+    team_input["active_players"] = [p["player_id"] for p in team_input["roster"] if p["available"]]
+    return team_input
+
+
+def controlled_active():
+    """(player, availability text) for every Jacksonville active-53 player."""
+    rows = []
+    status_col = avail_col = None
+    for line in ROSTER.read_text(encoding="utf-8").splitlines():
+        if not line.startswith("|"):
+            status_col = None
+            continue
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if "Player" in cells:
+            status_col = cells.index("Status") if "Status" in cells else None
+            avail_col = cells.index("Availability") if "Availability" in cells else None
+            continue
+        if status_col is None or set(cells[0]) <= {"-", ":"}:
+            continue
+        if cells[status_col] == "Active 53":
+            rows.append((cells[0], cells[avail_col] if avail_col is not None else AVAILABLE_TEXT))
+    return rows
+
+
+def jacksonville_input(receipts, game_day, anchors, call_sheet):
+    chart = json.loads(DEPTH_CHART.read_text(encoding="utf-8"))
+    depth = {player: rank for players in chart["depth"].values() for rank, player in enumerate(players, 1)}
+    injured = injured_out(receipts, game_day)
+    inactives = set(chart["game_day_inactives"]["players"])
+    roster, missing = [], []
+    for player, availability in controlled_active():
+        if player not in depth:
+            missing.append(player)
+            continue
+        position = chart["positions"][player]
+        roster.append({
+            "player_id": player, "position": position,
+            "available": availability == AVAILABLE_TEXT and player not in injured,
+            "unit": UNIT[group(position)], "roles": chart["roles"].get(player, []),
+            "depth": depth[player],
+            "medical_limitation": None if availability == AVAILABLE_TEXT else availability,
+        })
+    if missing:
+        raise ValueError("depth_chart.json does not place: " + ", ".join(missing))
+    return {
+        "team_id": PROTAGONIST,
+        "active_players": [p["player_id"] for p in roster if p["available"] and p["player_id"] not in inactives],
+        **anchors, "roster": roster, "offensive_call_sheet": list(call_sheet),
+    }
+
+
+def build_package(week, receipts, call_sheet, anchors):
+    games = []
+    for game in schedule(week):
+        game_day = date.fromisoformat(game["date"])
+
+        def unit(team):
+            if team == PROTAGONIST:
+                return jacksonville_input(receipts, game_day, anchors, call_sheet)
+            return background_input(team, week, receipts, game_day, anchors)
+
+        games.append({
+            "event_id": event_id(game), "receipt": receipt_name(game), "week": week,
+            "date": game["date"], "away": game["away"], "home": game["home"],
+            "venue": "neutral" if game["site"] == "neutral" else "home",
+            "away_input": unit(game["away"]), "home_input": unit(game["home"]),
+        })
+    return {"week": week, "games": games}
