@@ -55,7 +55,7 @@ Brad Meester is out after a Week 2 upper-extremity injury (projected return Sept
 - **Defense:** Babin edge; Miller/Marks inside; Posluszny/Smith linebacker operation; Grimes/Ball outside, Poyer nickel, Lowery/Rambo safety. Mosley and C.J. Wilson unavailable.
 - **Teams:** Scobee/Anger/Cain specialists. Trawick, Rambo, Thielen, Anderson, Poyer, Prosinski, Allen and Bouye hold defined primary/backup coverage jobs.
 
-Execution and observable effort remain separate. Protection losses were technique/physical evidence where assignments were identified; medical limitations are not effort findings. Kernel 2013.4 turns this depth order into game usage, so each weekly TeamInput must carry it as explicit `depth` values.
+Execution and observable effort remain separate. Protection losses were technique/physical evidence where assignments were identified; medical limitations are not effort findings. The kernel (2013.4 onward) turns this depth order into game usage, so each weekly TeamInput must carry it as explicit `depth` values.
 
 ## 5. Closed preseason block
 
@@ -67,4 +67,4 @@ Through Week 2, Jacksonville is 1-1, fourth in the AFC South (Tennessee 2-0; Ind
 
 ## 7. Immediate next step
 
-Play Week 3 at Seattle only on an explicit `Run Week 3` instruction. `python scripts/build_week_inputs.py 3` freezes the slate from canon (background units carried forward with branch injuries and pre-existing returns; Jacksonville from the roster, `career/2013/depth_chart.json` and the week's call sheet) and runs the gate; `python scripts/close_week.py 3 --close` closes it. Stone's inputs needed: the Week 3 plan as a structured call sheet; the starting center with Meester out; the edge rotation without C.J. Wilson; and inactives (the Week 2 list carries over otherwise). Meester's availability in `career/2013/roster.md` must be updated when medical clears him. **Seattle has not been simulated.**
+Play Week 3 at Seattle only on an explicit `Run Week 3` instruction. `python scripts/build_week_inputs.py 3` freezes the slate from canon (background units carried forward with branch injuries and pre-existing returns; Jacksonville from the roster, `career/2013/depth_chart.json` and the week's call sheet) and runs the gate; `python scripts/close_week.py 3 --close` closes it under kernel 2013.5. A roster injury note with a projected return clears on that date for Jacksonville exactly as for every other club, so Meester is available again from September 27; holds without a date (Pasztor, Mosley, Blackmon) change only by decision. Stone's inputs needed: the Week 3 plan as a structured call sheet; a starting center with Meester out (Brewster is the other center and is on the carried-over inactive list); the edge rotation without C.J. Wilson; and the inactive list. **Seattle has not been simulated.**

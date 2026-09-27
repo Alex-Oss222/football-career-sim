@@ -15,7 +15,7 @@ Unit anchors are passed in explicitly (Document 7 section 2.2).
 """
 import json
 import re
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 from . import depth_library
@@ -101,6 +101,26 @@ def controlled_active():
     return rows
 
 
+PROJECTED_RETURN = re.compile(r"projected return ([A-Z][a-z]+ \d{1,2}(?:, \d{4})?)")
+
+
+def roster_available(availability, game_day):
+    """Whether a roster availability note clears a player for `game_day`.
+
+    A game injury recorded with a projected return clears on that date, the
+    rule every background club gets; a hold without a date (a medical hold,
+    a suspension) clears only when the roster entry is changed.
+    """
+    if availability == AVAILABLE_TEXT:
+        return True
+    match = PROJECTED_RETURN.search(availability)
+    if not match:
+        return False
+    text = match.group(1)
+    back = datetime.strptime(text if "," in text else text + ", 2013", "%B %d, %Y").date()
+    return game_day >= back
+
+
 def jacksonville_input(receipts, game_day, anchors, call_sheet):
     chart = json.loads(DEPTH_CHART.read_text(encoding="utf-8"))
     depth = {player: rank for players in chart["depth"].values() for rank, player in enumerate(players, 1)}
@@ -112,12 +132,13 @@ def jacksonville_input(receipts, game_day, anchors, call_sheet):
             missing.append(player)
             continue
         position = chart["positions"][player]
+        cleared = roster_available(availability, game_day)
         roster.append({
             "player_id": player, "position": position,
-            "available": availability == AVAILABLE_TEXT and player not in injured,
+            "available": cleared and player not in injured,
             "unit": UNIT[group(position)], "roles": chart["roles"].get(player, []),
             "depth": depth[player],
-            "medical_limitation": None if availability == AVAILABLE_TEXT else availability,
+            "medical_limitation": None if cleared else availability,
         })
     if missing:
         raise ValueError("depth_chart.json does not place: " + ", ".join(missing))
