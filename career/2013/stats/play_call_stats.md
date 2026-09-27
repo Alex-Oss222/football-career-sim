@@ -1,10 +1,10 @@
-# 2013 Jacksonville Jaguars offensive play-call statistics
+# 2013 Jacksonville Jaguars descriptive call labels
 
 **Version:** `2013-W05-PLAY-CALL-STATS`
 **Through:** Week 5.
 **Coverage:** complete for this club's closed games.
 
-Generated game use of the named calls in the weekly offensive call sheet, from the snap ledger. Y/P is yards per snap; 20+ counts gains of 20 yards or more; NEG counts snaps that lost yardage. Kernels 2013.4-2013.6 draw each snap's call label at random from the sheet's calls of that run or pass type, independent of the ball carrier (ledger Entry 41), so for games closed under them these rows show label assignment, not Stone's call frequencies.
+Descriptive labels on the generated snaps, from the snap ledger. From Week 6 (kernel 2013.7) each label fits that snap's ball carrier or target: it is drawn after the carrier or target is fixed, from the weekly sheet's calls whose declared (or 2013 family-map) groups include him. A label is not Stone's call selection or frequency, and per-label yardage is not evidence of a concept's effectiveness. Generic, kneel, spike and scramble labels are separate rows; a quarterback scramble is counted under the pass label it carries. Kernels 2013.4-2013.6 drew each snap's label at random from the sheet's calls of that run or pass type, independent of the ball carrier (ledger Entry 41), so Weeks 1-5 rows show label assignment only. Y/P is yards per snap; 20+ counts gains of 20 yards or more; NEG counts snaps that lost yardage.
 
 | Call | Family | SNAPS | RUNS | DB | CMP | ATT | CMP% | YDS | Y/P | 20+ | NEG | TD | TO | SCK |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|

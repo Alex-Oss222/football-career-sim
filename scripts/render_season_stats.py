@@ -11,7 +11,9 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from runtime.bands import LEGACY_LABEL, audit, audit_drive_model, coherence, cohorts
+from runtime.bands import (
+    KERNEL_2013_6_LABEL, LEGACY_LABEL, audit, audit_drive_model, audit_field_position, coherence, cohorts,
+)
 from runtime.stat_tables import (
     POSITION_GROUPS, avg, combine, g, pct, position_sections, rating_value,
     time_text,
@@ -212,7 +214,47 @@ def leaders_markdown(year, book):
 
 # ---- team views --------------------------------------------------------------
 
-def team_stats_markdown(year, book):
+def _spot_text(spot):
+    """yardline_100 as a field position: 'own 25', 'opp 40' or 'midfield'."""
+    if spot is None:
+        return "—"
+    spot = round(spot)
+    if spot == 50:
+        return "midfield"
+    return "own %d" % (100 - spot) if spot > 50 else "opp %d" % spot
+
+
+def field_position_rows(receipts):
+    """Per-club field position from kernel 2013.7 receipts (drives summary)."""
+    from runtime.bands import _drives
+    clubs = {}
+    for receipt in receipts:
+        drives = [d for d in _drives(receipt) if d.get("start_spot") is not None]
+        if not drives:
+            continue
+        teams = list(receipt.get("team_stats", {}))
+        for team in teams:
+            row = clubs.setdefault(team, {"games": 0, "drives": 0, "start": 0, "opp_drives": 0, "opp_start": 0,
+                                          "punts": 0, "punt_net": 0, "tb": 0, "kicks": 0, "fourth": [0, 0]})
+            row["games"] += 1
+        for d in drives:
+            own = clubs[d["team"]]
+            own["drives"] += 1
+            own["start"] += d["start_spot"]
+            for team in teams:
+                if team != d["team"]:
+                    clubs[team]["opp_drives"] += 1
+                    clubs[team]["opp_start"] += d["start_spot"]
+            if d["category"] == "punt" and d.get("next_start") is not None:
+                own["punts"] += 1
+                own["punt_net"] += d["end_spot"] - (100 - d["next_start"])
+            if d.get("chains"):
+                own["fourth"][0] += d["chains"][4]
+                own["fourth"][1] += d["chains"][5]
+    return clubs
+
+
+def team_stats_markdown(year, book, receipts=()):
     lines = header(
         "%s NFL team statistics" % year,
         "%s-W%02d-TEAM-STATS" % (year, book["through_week"]), book, None,
@@ -280,10 +322,12 @@ def team_stats_markdown(year, book):
 
     drive_clubs = [(t, d) for t, d in clubs if d.get("drive_model_games")]
     if drive_clubs:
-        lines += ["## Drives and kicking — Week 4 onward (kernel 2013.6)", "",
-                  "Counted only from games closed under kernel 2013.6; Weeks 1-3 receipts "
+        lines += ["## Drives and kicking — Week 4 onward (kernels 2013.6-2013.7)", "",
+                  "Counted only from games closed under kernel 2013.6 or later; Weeks 1-3 receipts "
                   "(kernels 2013.4/2013.5) do not carry these counters and are not included. "
-                  "G counts those games only.", "",
+                  "G counts those games only. From Week 6 (kernel 2013.7) a punt return is a "
+                  "punt whose 2012 play-by-play record was returned (not a fair catch, "
+                  "downed, out-of-bounds or touchback punt).", "",
                   "| Team | G | DRIVES | FGA | XPA | XPM | SAF | DOWNS | CLOCK | KO |",
                   "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|"]
         for team_id, data in sorted(drive_clubs):
@@ -294,19 +338,42 @@ def team_stats_markdown(year, book):
                 t.get("turnovers_on_downs", 0), t.get("clock_expired_drives", 0),
                 t.get("kickoffs", 0))) + " |")
         lines.append("")
+
+    spots = field_position_rows(receipts)
+    if spots:
+        lines += ["## Field position — Week 6 onward (kernel 2013.7)", "",
+                  "Kernel 2013.7 games only: average drive start for the club and for its "
+                  "opponents, realized punt net (line of scrimmage to the receiving start, "
+                  "returns and enforcement included) and fourth-down attempts and conversions "
+                  "inside drives (from the real 2012 drive chains; a failed attempt ending a "
+                  "drive is a turnover on downs). G counts those games only.", "",
+                  "| Team | G | DRIVES | AVG START | OPP AVG START | PUNTS | NET PUNT | 4TH ATT | 4TH CONV |",
+                  "|---|---:|---:|---|---|---:|---:|---:|---:|"]
+        for team_id, row in sorted(spots.items()):
+            lines.append("| " + " | ".join(str(v) for v in (
+                team_id, row["games"], row["drives"],
+                _spot_text(row["start"] / row["drives"]) if row["drives"] else "—",
+                _spot_text(row["opp_start"] / row["opp_drives"]) if row["opp_drives"] else "—",
+                row["punts"], avg(row["punt_net"], row["punts"]), row["fourth"][0], row["fourth"][1])) + " |")
+        lines.append("")
     return "\n".join(lines)
 
 
 def play_calls_markdown(year, team_id, book):
     lines = header(
-        "%s %s offensive play-call statistics" % (year, team_id),
+        "%s %s descriptive call labels" % (year, team_id),
         "%s-W%02d-PLAY-CALL-STATS" % (year, book["through_week"]), book, team_id,
-        "Generated game use of the named calls in the weekly offensive call sheet, "
-        "from the snap ledger. Y/P is yards per snap; 20+ counts gains of 20 yards "
-        "or more; NEG counts snaps that lost yardage. Kernels 2013.4-2013.6 draw each "
-        "snap's call label at random from the sheet's calls of that run or pass type, "
-        "independent of the ball carrier (ledger Entry 41), so for games closed under "
-        "them these rows show label assignment, not Stone's call frequencies.",
+        "Descriptive labels on the generated snaps, from the snap ledger. From Week 6 "
+        "(kernel 2013.7) each label fits that snap's ball carrier or target: it is drawn "
+        "after the carrier or target is fixed, from the weekly sheet's calls whose "
+        "declared (or 2013 family-map) groups include him. A label is not Stone's call "
+        "selection or frequency, and per-label yardage is not evidence of a concept's "
+        "effectiveness. Generic, kneel, spike and scramble labels are separate rows; a "
+        "quarterback scramble is counted under the pass label it carries. Kernels "
+        "2013.4-2013.6 drew each snap's label at random from the sheet's calls of that "
+        "run or pass type, independent of the ball carrier (ledger Entry 41), so Weeks "
+        "1-5 rows show label assignment only. Y/P is yards per snap; 20+ counts gains "
+        "of 20 yards or more; NEG counts snaps that lost yardage.",
     ) + no_games(book)
     calls = book.get("play_calls", {}).get(team_id, {})
     if not calls:
@@ -342,16 +409,27 @@ def _band_table(rows):
     return lines
 
 
+def _coherence_lines(checked, counts):
+    lines = ["| Class | Count | Status |", "|---|---:|---|"]
+    for cls, count, measurable in counts:
+        if not checked or not measurable:
+            lines.append("| %s | — | not measurable |" % cls.replace("_", " "))
+        else:
+            lines.append("| %s | %d | %s |" % (cls.replace("_", " "), count, "OUTSIDE" if count else "WITHIN"))
+    return lines
+
+
 def calibration_audit_markdown(year, receipts, book):
-    legacy, current = cohorts(receipts)
+    legacy, kernel_2013_6, current = cohorts(receipts)
     lines = [
         "# %s statistical band audit" % year, "",
         "**Version:** `%s-W%02d-BAND-AUDIT`" % (year, book["through_week"]),
         through_line(book), "",
         "League-wide receipts compared with the sourced 2012 shapes in "
         "`library/data/2012_nfl_aggregate_baseline.json`, "
-        "`library/data/2012_nfl_position_usage_baseline.json` and "
-        "`library/data/2012_nfl_drive_model.json`. This is a defect "
+        "`library/data/2012_nfl_position_usage_baseline.json`, "
+        "`library/data/2012_nfl_drive_model.json` and "
+        "`library/data/2012_nfl_field_position_model.json`. This is a defect "
         "detector for engine code and TeamInputs. An OUTSIDE row is investigated; "
         "it never reruns, selects or edits a closed game. Receipts are split into "
         "cohorts by kernel version; grading starts at 16 team-games per cohort.", "",
@@ -367,11 +445,12 @@ def calibration_audit_markdown(year, receipts, book):
         "Drive-model rows and ledger coherence: not measurable for this cohort "
         "(legacy receipts carry no drives summary or kicking-attempt counters).", "",
     ]
-    team_games, rows = audit(current)
-    drive_games, drive_rows = audit_drive_model(current)
-    checked, counts = coherence(current)
+    team_games, rows = audit(kernel_2013_6)
+    drive_games, drive_rows = audit_drive_model(kernel_2013_6)
+    checked, counts = coherence(kernel_2013_6)
     lines += [
-        "## Kernel 2013.6 cohort (Week 4 onward)", "",
+        "## Kernel 2013.6 cohort (Weeks 4-5, detection only)", "",
+        "**Status:** %s." % KERNEL_2013_6_LABEL,
         "**Team-games audited:** %d." % team_games, "",
     ] + _band_table(rows) + ["", POINTS_NOTE, "",
         "### Drive model rows", "",
@@ -381,16 +460,35 @@ def calibration_audit_markdown(year, receipts, book):
         "",
         "### Ledger coherence", "",
         "Zero-tolerance counts from `runtime.play_detail.check_ledger` over every "
-        "receipt's drives summary plus the full snap ledgers. Games checked: %d." % checked, "",
-        "| Class | Count | Status |",
-        "|---|---:|---|",
-    ]
-    for cls, count in counts:
-        if not checked:
-            lines.append("| %s | — | not measurable |" % cls.replace("_", " "))
-        else:
-            lines.append("| %s | %d | %s |" % (cls.replace("_", " "), count, "OUTSIDE" if count else "WITHIN"))
-    lines.append("")
+        "receipt's drives summary plus the full snap ledgers. Games checked: %d. The "
+        "kernel 2013.7 spot and label classes are not measurable for this cohort "
+        "(its receipts carry no start spots)." % checked, "",
+    ] + _coherence_lines(checked, counts) + [""]
+    team_games, rows = audit(current)
+    drive_games, drive_rows = audit_drive_model(current)
+    fp_games, fp_rows = audit_field_position(current)
+    checked, counts = coherence(current)
+    lines += [
+        "## Kernel 2013.7 cohort (Week 6 onward)", "",
+        "**Team-games audited:** %d. Carry shares exclude kneels, as in the 2012 "
+        "baseline." % team_games, "",
+    ] + _band_table(rows) + ["", POINTS_NOTE, "",
+        "### Drive model rows", "",
+        "Centres from the 2012 drive model (nflverse drive definition) and period totals; "
+        "tolerance is three standard errors at the observed sample.", "",
+    ] + _band_table(drive_rows) + [
+        "",
+        "### Field-position rows", "",
+        "Centres from the 2012 field-position model's band_centres. Rates use "
+        "3*sqrt(p(1-p)/n) and means 3*sd/sqrt(n) with the 2012 sd; a row reads "
+        "INSUFFICIENT SAMPLE below 30 events. INFORMATIONAL rows are shapes, not grades.", "",
+    ] + _band_table(fp_rows) + [
+        "",
+        "### Ledger coherence", "",
+        "Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and "
+        "17 kernel 2013.7 spot and label classes). Games checked: %d. The kick-row and "
+        "label classes need the full snap ledger." % checked, "",
+    ] + _coherence_lines(checked, counts) + [""]
     return "\n".join(lines)
 
 
@@ -434,7 +532,7 @@ def render_views(year, team, receipts):
         "all_player_stats.md": all_players_markdown(year, book),
         "league_leaders.md": leaders_markdown(year, book),
         "play_call_stats.md": play_calls_markdown(year, team, book),
-        "team_stats.md": team_stats_markdown(year, book),
+        "team_stats.md": team_stats_markdown(year, book, receipts),
         "calibration_audit.md": calibration_audit_markdown(year, receipts, book),
     }
 

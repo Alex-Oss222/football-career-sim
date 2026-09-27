@@ -1,5 +1,7 @@
 # 2012 NFL drive model for kernel 2013.6
 
+> **Kernel 2013.7 note.** This file documents the kernel 2013.6 reference artifact, which is unchanged and still byte-reproducible. Kernel 2013.7 keeps its category list, edge shift, clock scale, field-goal accuracy by distance and kick rates, and draws its drives from the field-position model documented in [2012_field_position_model_calibration.md](2012_field_position_model_calibration.md).
+
 **Research date:** September 27, 2026. **Football information window:** completed 2012 regular season only (256 games, 512 team-games). **Artifact:** `library/data/2012_nfl_drive_model.json`, built by `scripts/research/build_2012_drive_model.py`. **Status:** reconciled to the stored 2012 totals; second pass passed with documented deviations; PFR cross-check unresolved (see Verification). No 2013 or later data is read, and the artifact holds no team or game identifiers.
 
 ## Sources
@@ -89,7 +91,7 @@ The drive denominator for kernel 2013.6 is nflverse's 5,984 drives, 11.6875 per 
 
 - Non-offensive touchdowns (134 in 2012, including 14 kickoff-return touchdowns), their tries, and 2-point tries. Remapped opponent-touchdown drives give the defence no score. Points therefore run below the 2012 centre by design (about 1.7 to 2.0 points per team-game).
 - Onside kicks, fake kicks, and special-teams fumbles lost (358 - 280 = 78 in 2012).
-- Field position, start spots and down-and-distance are not published by kernel 2013.6.
+- Field position, start spots and down-and-distance are not published by kernel 2013.6. Kernel 2013.7 publishes start and end spots from the 2012 field-position model ([2012_field_position_model_calibration.md](2012_field_position_model_calibration.md)); snap-level down and distance remain unpublished.
 
 ## How the kernel uses the model
 

@@ -19,8 +19,9 @@ TEAM_STAT_FIELDS = (
     "rushing_yards", "first_downs", "third_down_attempts",
     "third_down_conversions", "time_of_possession", "kick_returns",
     "punt_returns",
-    # Kernel 2013.6 onward. Older receipts do not carry these fields; they
-    # aggregate as absent (never as zero) and are labelled by the renderers.
+    # Kernel 2013.6 onward (kernel 2013.7 keeps them unchanged). Older
+    # receipts do not carry these fields; they aggregate as absent (never as
+    # zero) and are labelled by the renderers.
     "field_goal_attempts", "extra_point_attempts", "extra_points_made",
     "safeties", "turnovers_on_downs", "clock_expired_drives", "kickoffs",
     "drives",
@@ -28,6 +29,10 @@ TEAM_STAT_FIELDS = (
 LEGACY_TEAM_STAT_FIELDS = TEAM_STAT_FIELDS[:16]
 DRIVE_MODEL_TEAM_STAT_FIELDS = TEAM_STAT_FIELDS[16:]
 DRIVE_MODEL_FROM_KERNEL = (2013, 6)
+# Kernel 2013.7 onward the drives summary also carries start and end spots,
+# the next start, the real drive chains and the fourth-down state (see
+# runtime.play_detail.DRIVE_SUMMARY_FIELDS); no team stat field is added.
+FIELD_POSITION_FROM_KERNEL = (2013, 7)
 
 
 def kernel_at_least(version, minimum=DRIVE_MODEL_FROM_KERNEL):

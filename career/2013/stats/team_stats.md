@@ -119,9 +119,9 @@ Opponent production per game. SCK counts sacks by the defense; TAKE counts takea
 | Tennessee Titans | 5 | 10 | 10 | 100.0 | 9 | 9 | 25 | 42.9 | 8 | 10 | 23.3 | 12 | 10.3 |
 | Washington Redskins | 4 | 8 | 9 | 88.9 | 8 | 8 | 18 | 42.2 | 6 | 9 | 25.3 | 11 | 14.9 |
 
-## Drives and kicking — Week 4 onward (kernel 2013.6)
+## Drives and kicking — Week 4 onward (kernels 2013.6-2013.7)
 
-Counted only from games closed under kernel 2013.6; Weeks 1-3 receipts (kernels 2013.4/2013.5) do not carry these counters and are not included. G counts those games only.
+Counted only from games closed under kernel 2013.6 or later; Weeks 1-3 receipts (kernels 2013.4/2013.5) do not carry these counters and are not included. G counts those games only. From Week 6 (kernel 2013.7) a punt return is a punt whose 2012 play-by-play record was returned (not a fair catch, downed, out-of-bounds or touchback punt).
 
 | Team | G | DRIVES | FGA | XPA | XPM | SAF | DOWNS | CLOCK | KO |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|

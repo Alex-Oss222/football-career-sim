@@ -6,18 +6,19 @@ import unittest
 import copy
 
 from runtime import usage
-from runtime.bands import audit, audit_drive_model, coherence, cohorts
+from runtime.bands import audit, audit_drive_model, audit_field_position, coherence, cohorts
 from runtime.kernel import TeamInput, resolve_game, validate_result
+from runtime.play_detail import DRIVE_SUMMARY_FIELDS, check_ledger
 from runtime.statbook import make_receipt
 from support_rosters import game_day_roster
 from synthetic_games import SAMPLE_SIZE, sample
 
-# Known 2013.6 limitation, not tuned: the interior draw is redirected to the
-# half-final pool whenever a drawn drive would overrun the window, so the
+# Frozen before the kernel 2013.7 acceptance run, not tuned: the first half
+# still ends through the half-final redirect (a drawn interior drive that
+# would overrun the window is replaced by a half-final drive), so the
 # interior drives that survive are skewed short (punt-heavy), adding roughly
-# 0.2-0.3 drive-ending punts per team-game. Follow-up for a later kernel. Any
-# other graded row going OUTSIDE fails, and so does punts beyond centre + 2x
-# tolerance.
+# 0.2-0.3 drive-ending punts per team-game. Any other graded row going
+# OUTSIDE fails, and so does punts beyond centre + 2x tolerance.
 KNOWN_DETECTIONS = {"punts per team game (drive-ending)"}
 
 
@@ -64,6 +65,44 @@ class UsageBandTests(unittest.TestCase):
         checked, counts = coherence(self.receipts)
         self.assertEqual(checked, SAMPLE_SIZE)
         self.assertEqual([c for c in counts if c[1]], [])
+        # Compact receipts audit the ledger-free spot classes; the kick-row
+        # and label classes need the full ledger.
+        measurable = {cls: n for cls, _, n in counts}
+        self.assertEqual(measurable["spot_chain_break"], SAMPLE_SIZE)
+        self.assertEqual(measurable["label_carrier_mismatch"], 0)
+
+    def test_field_position_rows(self):
+        team_games, rows = audit_field_position(self.receipts)
+        self.assertEqual(team_games, 2 * SAMPLE_SIZE)
+        graded = [row for row in rows if row[4] not in ("INFORMATIONAL", "INSUFFICIENT SAMPLE")]
+        self.assertTrue(any(row[0] == "sacks per dropback" for row in graded))
+        self.assertTrue(any(row[0].startswith("punt share of possessions ending") for row in rows))
+        self.assertEqual([row for row in graded if row[4] != "WITHIN"], [])
+        for metric, observed, centre, _, status in rows:
+            print("[2013.7 sample] %s: %s (2012 %s) %s" % (
+                metric, "—" if observed is None else round(observed, 4), round(centre, 4), status))
+
+    def test_doctored_late_punt_is_detected(self):
+        """A punt in a zero-punt late cell (trailing 1-8 inside the last 2:00)
+        cannot pass: its fourth-down state no longer recomputes, or the
+        terminal-state class fires."""
+        doctored = copy.deepcopy(self.receipts)
+        index = DRIVE_SUMMARY_FIELDS.index
+        hits = 0
+        for receipt in doctored:
+            for row in receipt["drives"]:
+                cell = row[index("cell")]
+                if row[index("half")] == 2 and cell in ("le120|trail1_3", "le120|trail4_8") and row[index("category")] != "punt":
+                    row[index("category")] = "punt"
+                    errors = check_ledger(receipt)
+                    self.assertTrue(any(e.split(":")[0] in ("fourth_down_state_missing", "late_terminal_state_mismatch",
+                                                             "spot_chain_break", "score_identity_violations")
+                                        for e in errors))
+                    hits += 1
+                    break
+            if hits >= 5:
+                break
+        self.assertTrue(hits)
 
     def test_doctored_cohort_reads_outside_on_fg_accuracy(self):
         doctored = copy.deepcopy(self.receipts)
@@ -79,10 +118,12 @@ class UsageBandTests(unittest.TestCase):
         for receipt in legacy:
             receipt["kernel_version"] = "2013.5"
             receipt.pop("drives")
-        old, current = cohorts(legacy + self.receipts[20:40])
-        self.assertEqual(len(old), 20)
-        self.assertEqual(len(current), 20)
-        self.assertTrue(all(r["kernel_version"] == "2013.6" for r in current))
+        previous = copy.deepcopy(self.receipts[20:30])
+        for receipt in previous:
+            receipt["kernel_version"] = "2013.6"
+        old, kernel_2013_6, current = cohorts(legacy + previous + self.receipts[30:40])
+        self.assertEqual((len(old), len(kernel_2013_6), len(current)), (20, 10, 10))
+        self.assertTrue(all(r["kernel_version"] == "2013.7" for r in current))
 
     def test_depth_chart_orders_usage(self):
         carries = {}

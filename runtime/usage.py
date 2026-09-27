@@ -1,4 +1,4 @@
-"""Depth-chart-aware player attribution shapes (kernels 2013.4-2013.6).
+"""Depth-chart-aware player attribution shapes (kernels 2013.4-2013.7).
 
 The possession kernel decides team outcomes. This module only decides which
 available player receives an already-resolved carry, target, tackle or

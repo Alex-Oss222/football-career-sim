@@ -7,6 +7,7 @@ from .calibration import load, validate
 from .injuries import maybe_injury
 from .rules import RULES, ot_status
 from . import drive_model
+from . import field_position
 from . import usage
 from .player_evidence import empty_player_stats, normalize_players, observation
 from .play_detail import (
@@ -144,27 +145,6 @@ def _append_evidence(evidence, drive_ledger, offense_players, defense_players, o
                 )
 
 
-def _chains(rng, cal, values, plays, yards, penalties):
-    """Third-down attempts/conversions and first downs for one drive."""
-    per_game_plays = cal["model"]["plays_per_team_game"]
-    third_rate = values["third_down_attempts_per_team_game"] / per_game_plays
-    attempts = sum(rng.random() < third_rate for _ in range(plays))
-    conversions = sum(rng.random() < cal["model"]["third_down_rate"] for _ in range(attempts))
-    yards_per_first_down = (
-        cal["model"]["yards_per_team_game"] / values["scrimmage_first_downs_per_team_game"]
-    )
-    first_downs = 0
-    if yards > 0:
-        whole, part = divmod(yards / yards_per_first_down, 1)
-        first_downs = int(whole) + (rng.random() < part)
-    per_penalty = (
-        values["penalty_first_downs_per_team_game"]
-        / (cal["model"]["penalty_per_play"] * per_game_plays)
-    )
-    first_downs += sum(rng.random() < per_penalty for _ in range(penalties))
-    return attempts, conversions, first_downs
-
-
 def _split_yards(total, weight_pass, weight_rush):
     """Split an integer total by weight with largest-remainder rounding."""
     denom = weight_pass + weight_rush
@@ -178,6 +158,13 @@ def _split_yards(total, weight_pass, weight_rush):
         else:
             rushing += leftover
     return passing, rushing
+
+
+def _start_kind(kick_record):
+    """How a possession began after a kick: free_kick, kickoff or kickoff_touchback."""
+    if kick_record["free_kick"]:
+        return "free_kick"
+    return "kickoff_touchback" if kick_record["touchback"] else "kickoff"
 
 
 def _edge(team, defense, home):
@@ -266,17 +253,14 @@ def resolve_game(
     assert not validate(cal)
     assert not usage.validate()
     drive_model.load()
-    usage_values = usage.load()["values"]
+    field_position.load()
     model = cal["model"]
     gross_per_attempt = cal["derived"]["gross_yards_per_pass_attempt"]
     yards_per_attempt = gross_per_attempt["numerator"] / gross_per_attempt["denominator"]
     carry = cal["derived"]["yards_per_carry"]
     yards_per_carry = carry["numerator"] / carry["denominator"]
     xp_rate = drive_model.rate("extra_point")
-    td_pass_rate = drive_model.rate("td_type_pass")
-    punt_return_rate = model["punt_return_rate"]
-    touchback_rate = model["kickoff_touchback_rate"]
-    interior = drive_model.interior_probs()
+    T = field_position.T
 
     teams = {home.team_id: home, away.team_id: away}
     rosters = {home.team_id: home_players, away.team_id: away_players}
@@ -286,8 +270,10 @@ def resolve_game(
     possessions = []
     play_ledger = []
     kickoffs = []
-    diagnostics = {"yard_split_count_fallback": 0, "net_without_snaps_dropped": 0, "td_split_fitted": 0,
-                   "interior_clock_redirected": 0}
+    diagnostics = {"yard_split_count_fallback": 0, "td_split_fitted": 0, "interior_clock_redirected": 0,
+                   "sack_losses_fitted": 0, "fallback_need_union": 0, "fallback_clock_tuple": 0,
+                   "fallback_zero_tuple": 0, "h2_neutral_into_late": 0, "ot_leading_offense": 0,
+                   "prefix_order_repaired": 0, "prefix_order_failed": 0}
     # Legacy synthetic inputs without a QB keep one deterministic passer.
     passers = {tid: usage.game_passer(players) or players[0] for tid, players in rosters.items()}
 
@@ -300,11 +286,10 @@ def resolve_game(
             play_ledger.append(row)
 
     def kick(kicking, receiving, *, free_kick, half, remaining, ot_label="OT"):
+        """One real 2012 kickoff (or safety free kick) record: one randrange."""
         kick_no = len(kickoffs) + 1
-        if free_kick:
-            returned = rng.random() < drive_model.safety_free_kick_return_rate()
-        else:
-            returned = not rng.random() < touchback_rate
+        drawn = field_position.free_kick(rng) if free_kick else field_position.kickoff(rng)
+        returned = not drawn["touchback"]
         stats[kicking]["kickoffs"] += 1
         if returned:
             stats[receiving]["kick_returns"] += 1
@@ -312,6 +297,9 @@ def resolve_game(
             "kick_no": kick_no, "kicking": kicking, "receiving": receiving,
             "returned": returned, "free_kick": free_kick, "half": half,
             "drive": len(possessions) + 1,
+            "next_start": drawn["next_start"], "touchback": drawn["touchback"],
+            "kick_yards": drawn["kick_yards"], "return_yards": drawn["return_yards"],
+            "enforcement": drawn["enforcement"], "outcome": drawn["outcome"],
         }
         kickoffs.append(record)
         append_rows(apply_kickoff_detail(
@@ -319,107 +307,96 @@ def resolve_game(
             kicking=teams[kicking], receiving=teams[receiving], rosters=rosters,
             stats=stats, returned=returned, free_kick=free_kick,
             remaining=remaining, overtime=ot_label if half == "OT" else False, drive=record["drive"],
+            record=record,
         ))
         return record
 
-    def possess(offense, window, half, ot_history=None, ot_label="OT"):
+    def possess(offense, window, half, spot, start_kind, ot_history=None, ot_label="OT"):
         team = teams[offense]
         defense = teams[other(offense)]
         edge = _edge(team, defense, home)
         drive_no = len(possessions) + 1
+        score_diff = stats[offense]["points"] - stats[other(offense)]["points"]
 
-        # 1-3. Category and a real 2012 drive of that category.
-        category = drive_model.draw_category(rng, drive_model.apply_edge(interior, edge))
-        row = drive_model.sample_tuple(rng, drive_model.pool("interior", category))
-        seconds = drive_model.scaled_seconds(row)
-        half_final = False
-        if category == "clock":
-            diagnostics["interior_clock_redirected"] += 1
-        if category == "clock" or seconds >= window:
-            half_final = True
-            key = drive_model.bucket(window)
-            category = drive_model.draw_category(
-                rng, drive_model.apply_edge(drive_model.half_final_probs(key), edge))
-            row = None
-            if category != "clock":
-                row = drive_model.sample_tuple(
-                    rng, drive_model.pool("half_final", category, key), max_seconds=window)
-            if category == "clock" or row is None:
-                category = "clock"
-                row = drive_model.clock_tuple(rng, key)
-            # The half-final pool holds THE last offensive possession of a
-            # half, so this possession runs out the window: no further
-            # possession and no kickoff follow it in this half (or OT period).
-            # Correction of the double-final defect found by the 2013.6
-            # acceptance audit, where leftover time started another,
-            # almost always clock-expired, possession.
-            seconds = window
-        plays, net = int(row[0]), int(row[1])
-        if plays == 0 and category in {"touchdown", "interception", "fumble_lost", "downs"}:
-            plays = 1
+        # 1-3. Game-state cell, category and a real 2012 drive feasible from
+        # the start spot (runtime/field_position.py, possession stream).
+        drawn = field_position.draw_drive(rng, spot, half, window, score_diff, edge, diagnostics)
+        category, row, seconds = drawn.category, drawn.tuple, drawn.seconds
+        half_final = drawn.consumes_window
+        net, end_spot = field_position.adapt(category, row, spot)
+        plays = int(row[T["plays"]])
+        runs, attempts, sacks = int(row[T["runs"]]), int(row[T["attempts"]]), int(row[T["sacks"]])
+        kneel_yards = list(row[T["kneel_yards"]])
+        spikes = int(row[T["spikes"]])
+        chains = list(row[T["chains"]])
 
-        # 4. Pass/run shape of the drive.
-        pass_plays = sum(rng.random() < model["pass_play_share"] for _ in range(plays))
-        sacks = sum(rng.random() < cal["derived"]["sack_rate"]["value"] for _ in range(pass_plays))
-        if category == "interception" and pass_plays == 0:
-            pass_plays = 1
-        if category in {"touchdown", "interception"} and pass_plays and sacks == pass_plays:
-            sacks -= 1
-        rushes = plays - pass_plays
-        usable = pass_plays - sacks - (1 if category == "interception" else 0)
-        if usable + rushes == 0 and sacks:
-            sacks -= 1
-            usable += 1
-
-        # 5. Touchdown type and turnover type.
-        td_type = None
-        if category == "touchdown":
-            wants_pass = rng.random() < td_pass_rate
-            feasible = [t for t, ok in (("pass", usable > 0), ("rush", rushes > 0)) if ok]
-            td_type = ("pass" if wants_pass else "rush") if len(feasible) == 2 else feasible[0]
+        # 4. Real per-drive snap counts: the drive's own runs, attempts,
+        # sacks, kneels and spikes, and its own scoring kind. No Bernoulli
+        # decides a pass or a sack, so no sack is converted to an attempt.
+        td_type = row[T["td_kind"]] if category == "touchdown" else None
         turnover_type = category if category in drive_model.TURNOVER_CATEGORIES else None
+        free, kneel_sum, terminal_value, open_sacks = field_position.fixed_yardage(category, row)
+        safety_terminal = None
+        if category == "safety":
+            safety_terminal = (row[T["safety_term_kind"]], terminal_value)
 
-        # 6. Sack losses (possession stream).
-        sack_losses = [rng.randint(3, 10) for _ in range(sacks)]
+        # 5. Sack losses (possession stream). With no free snap, the sacks
+        # carry the drive's yardage: their losses are fitted to the net.
+        if free > 0:
+            sack_losses = [rng.randint(3, 10) for _ in range(open_sacks)]
+            if category == "touchdown" and free == 1 and sum(sack_losses) > 99 - spot:
+                # Only fixed snaps precede the scoring snap: their losses must
+                # keep the ball out of the own end zone.
+                while sum(sack_losses) > 99 - spot:
+                    big = max(range(len(sack_losses)), key=lambda i: (sack_losses[i], -i))
+                    sack_losses[big] -= 1
+                diagnostics["sack_losses_fitted"] += 1
+        else:
+            required = kneel_sum + terminal_value - net
+            base, extra = divmod(required, open_sacks) if open_sacks else (0, 0)
+            sack_losses = [base + (1 if i < extra else 0) for i in range(open_sacks)]
+            if open_sacks:
+                diagnostics["sack_losses_fitted"] += 1
+        fixed_sum = kneel_sum - sum(sack_losses) + terminal_value
+        free_total = net - fixed_sum
 
-        # 7. Gross passing/rushing yardage reconciled to the tuple's net.
-        if usable + rushes == 0 and net:
-            diagnostics["net_without_snaps_dropped"] += 1
-            net = 0
-        total = net + sum(sack_losses)
+        # 6. Gross passing/rushing yardage over the free snaps.
+        usable = attempts - (1 if category == "interception" else 0)
+        free_runs = runs - (1 if safety_terminal and safety_terminal[0] == "run" else 0)
         weight_pass = max(0.0, rng.gauss(usable * yards_per_attempt, max(6, usable * 3))) if usable else 0.0
-        weight_rush = max(0.0, rng.gauss(rushes * yards_per_carry, max(4, rushes * 2))) if rushes else 0.0
-        if usable + rushes == 0:
-            pass_yards = rush_yards = 0
+        weight_rush = max(0.0, rng.gauss(free_runs * yards_per_carry, max(4, free_runs * 2))) if free_runs else 0.0
+        if usable + free_runs == 0:
+            pass_yards = rush_free = 0
         elif not usable:
-            pass_yards, rush_yards = 0, total
-        elif not rushes:
-            pass_yards, rush_yards = total, 0
+            pass_yards, rush_free = 0, free_total
+        elif not free_runs:
+            pass_yards, rush_free = free_total, 0
         else:
             if weight_pass + weight_rush <= 0:
                 diagnostics["yard_split_count_fallback"] += 1
-                weight_pass, weight_rush = usable, rushes
-            pass_yards, rush_yards = _split_yards(total, weight_pass, weight_rush)
-        if td_type == "pass" and pass_yards < 1:
-            rush_yards -= 1 - pass_yards
+                weight_pass, weight_rush = usable, free_runs
+            pass_yards, rush_free = _split_yards(free_total, weight_pass, weight_rush)
+        if td_type == "pass" and pass_yards < 1 and free_runs:
+            rush_free -= 1 - pass_yards
             pass_yards = 1
-        elif td_type == "rush" and rush_yards < 1:
-            pass_yards -= 1 - rush_yards
-            rush_yards = 1
-        if td_type and usable and rushes:
-            # Feasibility, not calibration: the non-touchdown type's yards
-            # must fit before the scoring snap without reaching the end zone
-            # (<= net - 1) or backing into the own end zone after the sacks
-            # (>= net - 99 + losses). Any excess moves to the touchdown type,
-            # whose total then lies in [losses + 1, 99].
-            before = rush_yards if td_type == "pass" else pass_yards
-            fitted = min(max(before, net - 99 + sum(sack_losses)), net - 1)
+        elif td_type == "rush" and rush_free < 1 and usable:
+            pass_yards -= 1 - rush_free
+            rush_free = 1
+        if td_type and usable and free_runs:
+            # Feasibility, not calibration: the non-scoring kind's yards plus
+            # the fixed snaps keep the ball in the field before the scoring
+            # snap (running spot in [1, 99]); any excess moves to the scoring
+            # kind, whose total then lies in [1, 99].
+            before = rush_free if td_type == "pass" else pass_yards
+            fitted = min(max(before, spot - 99 - fixed_sum), spot - 1 - fixed_sum)
             if fitted != before:
                 diagnostics["td_split_fitted"] += 1
                 if td_type == "pass":
-                    rush_yards, pass_yards = fitted, pass_yards + before - fitted
+                    rush_free, pass_yards = fitted, pass_yards + before - fitted
                 else:
-                    pass_yards, rush_yards = fitted, rush_yards + before - fitted
+                    pass_yards, rush_free = fitted, rush_free + before - fitted
+        rush_yards = rush_free + kneel_sum + (terminal_value if safety_terminal and safety_terminal[0] == "run" else 0)
+        sack_total = sum(sack_losses) + (-terminal_value if safety_terminal and safety_terminal[0] == "sack" else 0)
 
         s = stats[offense]
         d = stats[defense.team_id]
@@ -427,24 +404,24 @@ def resolve_game(
         s["rushing_yards"] += rush_yards
         s["sacks_allowed"] += sacks
 
-        # 8. Penalties and chains (unchanged mechanism).
+        # 7. Penalties (counters only) and the drive's real chains.
         pens = sum(rng.random() < model["penalty_per_play"] for _ in range(plays))
         s["penalties"] += pens
         s["penalty_yards"] += pens * rng.randint(5, 10) if pens else 0
-        third, converted, firsts = _chains(
-            rng, cal, usage_values, plays, pass_yards + rush_yards, pens
-        )
-        s["first_downs"] += firsts
-        s["third_down_attempts"] += third
-        s["third_down_conversions"] += converted
+        s["first_downs"] += chains[0] + chains[1]
+        s["third_down_attempts"] += chains[2]
+        s["third_down_conversions"] += chains[3]
 
-        # 9. Terminal scoring.
+        # 8. Terminal scoring, then the transition to the next possession.
         points = 0
         score_kind = None
         xp_made = None
         fg_made = None
         fg_distance = None
-        punt_return = False
+        next_start = None
+        next_kind = None
+        punt_record = None
+        turnover_record = None
         if category == "touchdown":
             points = 6
             s["touchdowns"] += 1
@@ -459,26 +436,35 @@ def resolve_game(
                     s["extra_points_made"] += 1
         elif category == "field_goal_attempt":
             s["field_goal_attempts"] += 1
-            fg_distance = int(row[3])
+            fg_distance = int(row[T["fg_distance"]])
             fg_made = rng.random() < drive_model.fg_make_prob(fg_distance)
             if fg_made:
                 points = 3
                 s["field_goals"] += 1
                 score_kind = "field_goal"
+            else:
+                next_start, next_kind = field_position.missed_fg_start(fg_distance), "missed_fg"
         elif category == "punt":
             s["punts"] += 1
-            punt_return = rng.random() < punt_return_rate
-            d["punt_returns"] += int(punt_return)
+            punt_record = field_position.punt(rng, end_spot)
+            d["punt_returns"] += int(punt_record["outcome"] == "returned")
+            next_start, next_kind = punt_record["next_start"], "punt"
         elif category in drive_model.TURNOVER_CATEGORIES:
             s["turnovers"] += 1
+            turnover_record = field_position.turnover(rng, category, end_spot)
+            next_start, next_kind = turnover_record["next_start"], category
         elif category == "downs":
             s["turnovers_on_downs"] += 1
+            next_start, next_kind = field_position.downs_start(end_spot), "downs"
         elif category == "safety":
             d["points"] += 2
             d["safeties"] += 1
             score_kind = "safety"
         elif category == "clock":
             s["clock_expired_drives"] += 1
+            if half == "OT":
+                # A postseason period change keeps the ball where it lies.
+                next_start, next_kind = 100 - end_spot, "period_change"
         s["drives"] += 1
         s["points"] += points
         s["time_of_possession"] += seconds
@@ -490,6 +476,18 @@ def resolve_game(
             base = 1800 if half == 1 else 0
             start_clock, end_clock = base + window, base + window - seconds
 
+        fourth_down = None
+        if category in field_position.FOURTH_DOWN_CATEGORIES:
+            clock_s = window - seconds
+            fourth_down = {
+                "down": row[T["term_down"]], "ydstogo": row[T["term_ydstogo"]], "los": end_spot,
+                "clock_s": clock_s, "clock_bucket": field_position.terminal_bucket(clock_s) if half == 2 else None,
+                "half": half, "score_diff": score_diff, "need": field_position.need(score_diff),
+                "decision_zone": field_position.decision_zone(end_spot), "cell": drawn.cell,
+                "tuple_terminal_bucket": row[T["term_bucket"]],
+                "action": {"punt": "punt", "field_goal_attempt": "field_goal", "downs": "go"}[category],
+            }
+
         drive_ledger, drive_calls = apply_drive_detail(
             seed=seed,
             event_id=event_id,
@@ -500,24 +498,31 @@ def resolve_game(
             defenders=rosters[defense.team_id],
             offense_stats=s,
             defense_stats=d,
-            plays=plays,
-            pass_plays=pass_plays,
+            runs=runs,
+            attempts=attempts,
             sacks=sacks,
+            kneel_yards=kneel_yards,
+            spikes=spikes,
             pass_yards=pass_yards,
-            rush_yards=rush_yards,
+            rush_free=rush_free,
             category=terminal,
             td_type=td_type,
             turnover_type=turnover_type,
             sack_losses=sack_losses,
+            safety_terminal=safety_terminal,
             fg_made=fg_made,
             fg_distance=fg_distance,
             xp_made=xp_made,
             net_yards=net,
+            start_spot=spot,
             start_clock=start_clock,
             end_clock=end_clock,
             overtime=ot_label if half == "OT" else False,
-            punt_return=punt_return,
+            punt_record=punt_record,
+            turnover_record=turnover_record,
+            fourth_down=fourth_down,
             passer=passers[offense],
+            diagnostics=diagnostics,
         )
         append_rows(drive_ledger)
         _merge_call_stats(play_call_stats[offense], drive_calls)
@@ -543,33 +548,55 @@ def resolve_game(
             "td_type": td_type,
             "turnover_type": turnover_type,
             "net_yards": net,
-            "sack_loss_total": sum(sack_losses),
+            "sack_loss_total": sack_total,
             "fg_distance": fg_distance,
             "fg_made": fg_made,
             "xp_made": xp_made,
             "half_final": half_final,
             "kickoff_after": None,
+            # Kernel 2013.7 field position (append-only).
+            "start_spot": spot,
+            "start_kind": start_kind,
+            "end_spot": end_spot,
+            "next_start": next_start,
+            "score_diff": score_diff,
+            "cell": drawn.cell,
+            "tuple_terminal_bucket": row[T["term_bucket"]],
+            "chains": chains,
+            "fourth_down": fourth_down,
+            "kneels": len(kneel_yards),
+            "spikes": spikes,
         }
         if half == "OT":
             record["period"] = "OT"
         possessions.append(record)
-        return record, score_kind
+        return record, score_kind, next_kind
+
+    def kicked_after(record, score_kind, window, half, ot_label="OT"):
+        remaining = window + (1800 if half == 1 else 0)
+        kicked = kick(record["team"], other(record["team"]), free_kick=score_kind == "safety",
+                      half=half, remaining=remaining, ot_label=ot_label)
+        record["kickoff_after"] = {"returned": kicked["returned"], "free_kick": kicked["free_kick"],
+                                   "next_start": kicked["next_start"], "touchback": kicked["touchback"],
+                                   "enforcement": kicked["enforcement"]}
+        record["next_start"] = kicked["next_start"]
+        return kicked["next_start"], _start_kind(kicked)
 
     # Regulation: two clock-bounded halves; a possession never crosses one.
     opening_receiver = away.team_id if rng.random() < 0.5 else home.team_id
     for half in (1, 2):
         offense = opening_receiver if half == 1 else other(opening_receiver)
         window = RULES.quarter_seconds * 2
-        kick(other(offense), offense, free_kick=False, half=half,
-             remaining=window + (1800 if half == 1 else 0))
+        opened = kick(other(offense), offense, free_kick=False, half=half,
+                      remaining=window + (1800 if half == 1 else 0))
+        spot, start_kind = opened["next_start"], _start_kind(opened)
         while window > 0:
-            record, score_kind = possess(offense, window, half)
+            record, score_kind, next_kind = possess(offense, window, half, spot, start_kind)
             window -= record["seconds"]
             if score_kind and window > 0:
-                kicked = kick(offense, other(offense), free_kick=score_kind == "safety",
-                              half=half, remaining=window + (1800 if half == 1 else 0))
-                record["kickoff_after"] = {"returned": kicked["returned"],
-                                           "free_kick": kicked["free_kick"]}
+                spot, start_kind = kicked_after(record, score_kind, window, half)
+            else:
+                spot, start_kind = record["next_start"], next_kind
             offense = other(offense)
 
     total = RULES.quarter_seconds * 4
@@ -583,7 +610,8 @@ def resolve_game(
         window = period_length
         history = []
         ot_period = 1
-        kick(other(offense), offense, free_kick=False, half="OT", remaining=window)
+        opened = kick(other(offense), offense, free_kick=False, half="OT", remaining=window)
+        spot, start_kind = opened["next_start"], _start_kind(opened)
         while True:
             if window <= 0:
                 if ot_status(history, game_type, expired=True) == "end":
@@ -591,17 +619,16 @@ def resolve_game(
                 window = period_length
                 ot_period += 1
             label = "OT" if ot_period == 1 else "OT%d" % ot_period
-            record, score_kind = possess(offense, window, "OT", history, label)
+            record, score_kind, next_kind = possess(offense, window, "OT", spot, start_kind, history, label)
             window -= record["seconds"]
             overtime_seconds += record["seconds"]
             history.append({"team": offense, "score": score_kind})
             if ot_status(history, game_type) == "end":
                 break
             if score_kind and window > 0:
-                kicked = kick(offense, other(offense), free_kick=score_kind == "safety",
-                              half="OT", remaining=window, ot_label=label)
-                record["kickoff_after"] = {"returned": kicked["returned"],
-                                           "free_kick": kicked["free_kick"]}
+                spot, start_kind = kicked_after(record, score_kind, window, "OT", label)
+            else:
+                spot, start_kind = record["next_start"], next_kind
             offense = other(offense)
         total += overtime_seconds
 
@@ -753,6 +780,14 @@ def validate_result(result):
             errors.append("kick return counter mismatch")
         if s["drives"] != sum(1 for p in possessions if p["team"] == team):
             errors.append("drive counter mismatch")
+    if possessions and all(p.get("start_spot") is not None for p in possessions):
+        # Kernel 2013.7: the chain counters are the real drives' own counts.
+        for team, s in result["team_stats"].items():
+            mine = [p["chains"] for p in possessions if p["team"] == team]
+            if (s["first_downs"] != sum(c[0] + c[1] for c in mine)
+                    or s["third_down_attempts"] != sum(c[2] for c in mine)
+                    or s["third_down_conversions"] != sum(c[3] for c in mine)):
+                errors.append("chain counters differ from the drive chains")
     if any(p.get("half_final") and p["end_clock"] != (1800 if p["half"] == 1 else 0) for p in possessions):
         errors.append("half-final possession does not end its window")
     for half in (1, 2):

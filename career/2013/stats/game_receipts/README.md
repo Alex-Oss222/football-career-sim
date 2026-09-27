@@ -15,6 +15,7 @@ Normal-week naming pattern: `week_NN_<away club>_at_<home club>.json`, for examp
 - Jacksonville and protagonist games use `detail="full"`: player rows keep every counter, including zeros, and the receipt adds the public snap `play_ledger` and named-call `play_call_stats`.
 - Ordinary background games use `detail="compact_stats"`: player rows keep only nonzero counters plus `games`, and there is no snap ledger or named-call data. This keeps weekly diffs reviewable without losing any generated statistic or appearance.
 - From kernel 2013.6 (Week 4 on), every receipt, full or compact, also carries `drives`, the per-game possession summary the ledger-coherence check reads, and `game_type`.
+- From kernel 2013.7 (Week 6 on), each `drives` row appends 11 field-position fields after the 14 kernel 2013.6 fields: `start_spot`, `start_kind`, `end_spot`, `next_start`, `score_diff`, `cell`, `tuple_terminal_bucket`, `chains`, `fourth_down`, `kneels`, `spikes` (spots are `yardline_100`). Weeks 4-5 rows stay 14 fields long. A full receipt's snap rows also carry the spot and the descriptive call-label fields (`runtime/README.md`).
 
 No receipt may contain private Engine State data, seeds, probability distributions, hidden ratings or matchup deltas.
 

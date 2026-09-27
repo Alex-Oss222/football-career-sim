@@ -10,6 +10,7 @@ from .private_client import Client
 from .player_evidence import normalize_players, serialize_roster
 from .play_detail import canonical_call_sheet
 from .usage import lineup_errors
+from .call_families import sheet_errors
 
 ENTROPY_DOMAIN = b"football-career-sim/event-entropy/v1\0"
 
@@ -38,6 +39,12 @@ def build_game_packet(event_id, snapshot, home, away, *, venue="home", weather="
             raise ValueError(
                 f"{team.team_id} TeamInput is not a legal game-day unit: " + "; ".join(missing)
             )
+        # Kernel 2013.7 labels follow the ball carrier: every call must name
+        # who it can describe (explicitly or through the 2013 family map).
+        # Fail closed here, before the private event is journaled.
+        undeclared = sheet_errors(getattr(team, "offensive_call_sheet", ()) or ())
+        if undeclared:
+            raise ValueError(f"{team.team_id} call sheet cannot be labelled: " + "; ".join(undeclared))
     return {
         "procedure": KERNEL_VERSION, "event_id": event_id, "snapshot": snapshot,
         "home": _team_packet(home), "away": _team_packet(away), "venue": venue,
