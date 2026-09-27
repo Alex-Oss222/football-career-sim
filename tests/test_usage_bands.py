@@ -70,3 +70,22 @@ class UsageBandTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class EmergencySpecialistTests(unittest.TestCase):
+    def test_punter_covers_a_missing_kicker(self):
+        from types import SimpleNamespace
+        players = [SimpleNamespace(position=pos) for pos in
+                   ["QB", "RB", "WR", "WR", "WR", "TE"] + ["OT"] * 5 + ["DE"] * 3 + ["LB"] * 2 + ["CB"] * 4 + ["P"]]
+        self.assertEqual(usage.lineup_errors(players), [])
+        self.assertTrue(usage.lineup_errors(players[:-1]))
+
+    def test_kernel_kicks_with_the_punter_when_no_kicker_dresses(self):
+        a, b = team("A"), team("B")
+        roster = tuple(p for p in a.roster if p.position != "K")
+        a = TeamInput("A", tuple(p.player_id for p in roster), roster=roster)
+        result = resolve_game(a, b, seed=b"synthetic-calibration-seed-not-career-state", event_id="emergency-k")
+        self.assertEqual(validate_result(result), [])
+        kicks = [p for p in result["play_ledger"] if p["offense"] == "A" and p["play_type"] in {"field_goal", "extra_point"}]
+        punter = next(p.player_id for p in roster if p.position == "P")
+        self.assertTrue(all(p["kicker"] == punter for p in kicks))

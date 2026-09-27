@@ -459,7 +459,7 @@ def apply_drive_detail(
     period, game_clock = _period_clock(end_clock)
 
     if outcome == "field_goal":
-        kicker = usage.specialist(available, "K", "placekicker") or choose(rng, available, {"K"}, "placekicker")
+        kicker = usage.kicking_specialist(available, "K", "placekicker") or choose(rng, available, {"K"}, "placekicker")
         line = offense_stats["players"][kicker.player_id]
         _bump(line, "field_goals_attempted")
         _bump(line, "field_goals_made")
@@ -470,7 +470,7 @@ def apply_drive_detail(
             "result_yards": 0, "touchdown": False, "turnover": False,
         })
     elif outcome == "punt":
-        punter = usage.specialist(available, "P", "punt") or choose(rng, available, {"P"}, "punt")
+        punter = usage.kicking_specialist(available, "P", "punt") or choose(rng, available, {"P"}, "punt")
         line = offense_stats["players"][punter.player_id]
         punt_yards = rng.randint(32, 58)
         _bump(line, "punts")
@@ -497,7 +497,7 @@ def apply_drive_detail(
         })
 
     if outcome == "touchdown":
-        kicker = usage.specialist(available, "K", "placekicker") or choose(rng, available, {"K"}, "placekicker")
+        kicker = usage.kicking_specialist(available, "K", "placekicker") or choose(rng, available, {"K"}, "placekicker")
         line = offense_stats["players"][kicker.player_id]
         _bump(line, "extra_points_attempted")
         _bump(line, "extra_points_made")

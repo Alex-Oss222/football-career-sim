@@ -42,6 +42,14 @@ class AvailabilityTests(unittest.TestCase):
         self.assertIn("Eric Kush", week_inputs.injured_out(receipts, date(2013, 9, 15)))
         self.assertNotIn("Eric Kush", week_inputs.injured_out(receipts, date(2013, 9, 20)))
 
+    def test_roster_note_with_projected_return_clears_on_that_date(self):
+        note = "Out, upper extremity (Week 2); projected return September 27"
+        self.assertFalse(week_inputs.roster_available(note, date(2013, 9, 22)))
+        self.assertTrue(week_inputs.roster_available(note, date(2013, 9, 29)))
+        self.assertTrue(week_inputs.roster_available(
+            "Out, trunk (Week 2); projected return January 30, 2014", date(2014, 2, 1)))
+        self.assertFalse(week_inputs.roster_available("Independent medical hold", date(2013, 12, 1)))
+
     def test_limited_without_days_does_not_sit_a_player(self):
         receipts = [injury_receipt("Matt Kalil", 0, restriction="limited")]
         self.assertEqual(week_inputs.injured_out(receipts, date(2013, 9, 15)), {})

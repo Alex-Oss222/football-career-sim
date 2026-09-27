@@ -1,4 +1,4 @@
-"""Depth-chart-aware player attribution shapes for kernel 2013.4.
+"""Depth-chart-aware player attribution shapes for kernel 2013.5.
 
 The possession kernel decides team outcomes. This module only decides which
 available player receives an already-resolved carry, target, tackle or
@@ -183,6 +183,11 @@ def draw_loss(rng):
     return int(chosen.rstrip("+"))
 
 
+# A club without an available kicker has its punter kick, and without an
+# available punter its kicker punts, as NFL clubs do in an emergency.
+EMERGENCY_SPECIALIST = {"K": "P", "P": "K"}
+
+
 def lineup_errors(players):
     counts = {}
     for p in players:
@@ -193,4 +198,10 @@ def lineup_errors(players):
         f"{grp}: {counts.get(grp, 0)} available, {need} required"
         for grp, need in MINIMUM_GAME_DAY.items()
         if counts.get(grp, 0) < need
+        and not counts.get(EMERGENCY_SPECIALIST.get(grp, ""), 0)
     ]
+
+
+def kicking_specialist(players, grp, role):
+    """The club's own specialist, else its emergency one (punter kicks, kicker punts)."""
+    return specialist(players, grp, role) or specialist(players, EMERGENCY_SPECIALIST[grp], role)
