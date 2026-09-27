@@ -1,0 +1,156 @@
+{
+ "procedure": "league-awards-v1",
+ "procedure_tag": "v1",
+ "authority": "User decisions of September 27, 2026: create a league awards record, backfill Weeks 1-8, and choose winners by a formula shortlist plus an audited panel draw.",
+ "categories": [
+  "offense",
+  "defense",
+  "special_teams"
+ ],
+ "award_names": {
+  "AFC-offense": "AFC Offensive Player",
+  "AFC-defense": "AFC Defensive Player",
+  "AFC-special_teams": "AFC Special Teams Player",
+  "NFC-offense": "NFC Offensive Player",
+  "NFC-defense": "NFC Defensive Player",
+  "NFC-special_teams": "NFC Special Teams Player"
+ },
+ "shortlist_size": 3,
+ "panel_weights": [
+  6,
+  3,
+  1
+ ],
+ "panel_rule": "The top three by formula score in each conference form the shortlist, ordered by score, then player name, then team. The private service commits the award packet (period, shortlist, weights, this file's digest) and supplies the entropy; the panel picks rank 1, 2 or 3 with weights 6:3:1. A shortlist shorter than three uses the leading weights.",
+ "formulas": {
+  "offense": {
+   "positions": [
+    "QB",
+    "RB",
+    "HB",
+    "FB",
+    "WR",
+    "TE"
+   ],
+   "parts": [
+    {
+     "weights": {
+      "passing_yards": 0.04,
+      "passing_touchdowns": 4,
+      "interceptions_thrown": -2,
+      "rushing_yards": 0.1,
+      "rushing_touchdowns": 6,
+      "receiving_yards": 0.1,
+      "receiving_touchdowns": 6,
+      "fumbles_lost": -2
+     }
+    }
+   ]
+  },
+  "defense": {
+   "positions": [
+    "DE",
+    "DT",
+    "NT",
+    "OLB",
+    "ILB",
+    "MLB",
+    "LB",
+    "CB",
+    "S",
+    "SS",
+    "FS"
+   ],
+   "parts": [
+    {
+     "weights": {
+      "solo_tackles": 1,
+      "assisted_tackles": 0.5,
+      "tackles_for_loss": 1,
+      "sacks": 4,
+      "defensive_interceptions": 5,
+      "interception_return_yards": 0.1,
+      "forced_fumbles": 3,
+      "fumble_recoveries": 2,
+      "passes_defended": 1.5
+     }
+    }
+   ]
+  },
+  "special_teams": {
+   "parts": [
+    {
+     "positions": [
+      "K"
+     ],
+     "weights": {
+      "field_goals_made": 3,
+      "fg_missed": -1,
+      "extra_points_made": 1,
+      "xp_missed": -1
+     }
+    },
+    {
+     "positions": [
+      "P"
+     ],
+     "weights": {
+      "punts_inside_20": 1,
+      "punt_yards_over_45": 0.25
+     }
+    },
+    {
+     "weights": {
+      "kick_return_yards": 0.1,
+      "punt_return_yards": 0.1
+     }
+    }
+   ]
+  }
+ },
+ "formula_notes": "Only counters present in every 2013 receipt are used (kernels 2013.4-2013.6), so every week is scored alike. Non-offensive touchdowns are not modelled by the kernel, so none can score. Kick distance is not in every receipt and is not used.",
+ "months": {
+  "September": {
+   "label": "September (Weeks 1-4)",
+   "order": 1,
+   "weeks": [
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  "October": {
+   "label": "October (Weeks 5-8)",
+   "order": 2,
+   "weeks": [
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  "November": {
+   "label": "November (Weeks 9-12)",
+   "order": 3,
+   "weeks": [
+    9,
+    10,
+    11,
+    12
+   ]
+  },
+  "December": {
+   "label": "December (Weeks 13-17)",
+   "order": 4,
+   "weeks": [
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  }
+ },
+ "month_rule": "Months follow the league's 2013 windows in library/2013_nfl_awards_structure.md, assigned by NFL week. How the league placed the October 31 (Week 9) and Thanksgiving (Week 13) games is unverified; assignment by week matches the announcement dates and is an inference."
+}
