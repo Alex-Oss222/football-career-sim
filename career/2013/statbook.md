@@ -20,7 +20,7 @@ Each weekly `output.md` carries its game's box score, generated from the same re
 
 ## Current coverage
 
-Through Week 6: ninety-two of ninety-two game receipts (Weeks 1-2 kernel 2013.4, Week 3 kernel 2013.5, Weeks 4-6 kernel 2013.6); coverage complete. Every graded band-audit row is WITHIN the 2012 bands, and every ledger-coherence count is zero.
+Through Week 7: one hundred seven of one hundred seven game receipts (Weeks 1-2 kernel 2013.4, Week 3 kernel 2013.5, Weeks 4-7 kernel 2013.6); coverage complete. Every graded band-audit row is WITHIN the 2012 bands except field-goal accuracy under 30 yards (investigated, no defect found, ledger Entry 44), and every ledger-coherence count is zero.
 
 ## Rebuild
 
@@ -31,7 +31,7 @@ python scripts/render_standings.py 2013
 
 ## Snap ledger
 
-Every Jacksonville receipt stores the complete public `play_ledger`: each scrimmage snap with its named call, and each scoring or special-teams terminal play. The play-call page, including its explosive (20+ yard) and negative-play counts, is derived from those snap records. The ledger records play type, gain, participants and clock; it does not record down, distance or field position, so red-zone and down-and-distance splits are not generated. Through Week 6 (kernels 2013.4-2013.6) each snap's call label is drawn from the sheet's calls of that run/pass type, independent of the ball carrier (Entry 41), so the play-call page shows label assignment, not Stone's call frequencies.
+Every Jacksonville receipt stores the complete public `play_ledger`: each scrimmage snap with its named call, and each scoring or special-teams terminal play. The play-call page, including its explosive (20+ yard) and negative-play counts, is derived from those snap records. The ledger records play type, gain, participants and clock; it does not record down, distance or field position, so red-zone and down-and-distance splits are not generated. Through Week 7 (kernels 2013.4-2013.6) each snap's call label is drawn from the sheet's calls of that run/pass type, independent of the ball carrier (Entry 41), so the play-call page shows label assignment, not Stone's call frequencies.
 
 ## Player attribution (kernel 2013.4 onward)
 

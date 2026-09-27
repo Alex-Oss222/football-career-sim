@@ -1,0 +1,117 @@
+{
+ "schema_version": 1,
+ "team": "Jacksonville Jaguars",
+ "event": "2013 Regular Season Week 7, San Diego at Jacksonville",
+ "status": "EX_ANTE_CALL_SHEET_FROZEN",
+ "provenance": "Stone's Week 7 game plan, runner-ready call sheet (section 43), frozen verbatim before any Week 7 draw under kernel 2013.6 (kernel 2013.7 was not ready; the user directed that it wait). Every concept on it is in the active 2013 offensive iteration: Wham and Whip/Pivot in the change-up folder, Leak as a Post-Cross/sequencing tag, TURNBACK protection, Smoke, Sprint Flood, Snag, chip-release. The Bubble/Smoke Pump Go alert and Four Verticals alert are in-game options without structured entries. Script order, jump rules, tempo and the Kelce/Thielen development emphasis are coaching guidance the kernel does not condition on; kernel 2013.6 assigns call labels by run/pass type, not by ball carrier.",
+ "offensive_call_sheet": [
+  {
+   "name": "12 Ace Right, Power R",
+   "family": "Power",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace Right"
+  },
+  {
+   "name": "12 Trey Right, Stick, H Chip-Release",
+   "family": "Stick",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey Right"
+  },
+  {
+   "name": "11 Bunch Right, Return, Mesh",
+   "family": "Mesh",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Bunch Right"
+  },
+  {
+   "name": "12 Wing Right, Split L",
+   "family": "Split Zone",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Wing Right"
+  },
+  {
+   "name": "12 Wing Right, Wham R",
+   "family": "Wham",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Wing Right"
+  },
+  {
+   "name": "11 Doubles, Zip, Smoke",
+   "family": "Smoke/Now",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles"
+  },
+  {
+   "name": "21 Pro Left, Counter R",
+   "family": "Counter",
+   "type": "run",
+   "personnel": "21",
+   "formation": "21 Pro Left"
+  },
+  {
+   "name": "12 Wing Right, Split Leak, Turnback",
+   "family": "Split Leak",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Wing Right",
+   "protection": "Turnback"
+  },
+  {
+   "name": "11 Bunch Right, Thielen Whip",
+   "family": "Whip/Pivot",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Bunch Right"
+  },
+  {
+   "name": "12 Doubles, Drive, H Chip-Release, Solid",
+   "family": "Drive",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Doubles",
+   "protection": "Solid"
+  },
+  {
+   "name": "20 Doubles, Draw",
+   "family": "Draw",
+   "type": "run",
+   "personnel": "20",
+   "formation": "20 Doubles"
+  },
+  {
+   "name": "12 Trey Right, Sprint Flood R",
+   "family": "Sprint Flood",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey Right"
+  },
+  {
+   "name": "12 Bunch Right, Snag",
+   "family": "Snag",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Bunch Right"
+  },
+  {
+   "name": "12 Ace Right, Power Pass, Post-Cross, Max",
+   "family": "Power Pass",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Ace Right",
+   "protection": "Max"
+  },
+  {
+   "name": "12 Ace, Shift Empty, Spacing",
+   "family": "Spacing",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Ace Shift Empty"
+  }
+ ]
+}
