@@ -1,4 +1,4 @@
-"""Depth-chart-aware player attribution shapes for kernel 2013.5.
+"""Depth-chart-aware player attribution shapes (kernels 2013.4-2013.6).
 
 The possession kernel decides team outcomes. This module only decides which
 available player receives an already-resolved carry, target, tackle or
@@ -95,7 +95,11 @@ def validate(data=None):
 
 def drive_scales(calibration, data=None):
     """Return (plays_scale, clock_scale) reconciling pbp drive shapes to the
-    verified team-game totals in the aggregate baseline."""
+    verified team-game totals in the aggregate baseline.
+
+    Kernel 2013.5 only. Kernel 2013.6 takes plays and clock unscaled from the
+    resampled 2012 drive tuples (runtime/drive_model.py); this is kept so the
+    2013.5 draws remain reproducible from history."""
     data = data or load()
     model = data["drive_model"]
     outcomes = calibration["model"]["drive_outcomes"]

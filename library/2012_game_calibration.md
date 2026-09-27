@@ -21,3 +21,12 @@ The primary incidence source is the contemporaneous NFL injury-surveillance stud
 ## Applicability and limitations
 
 This is a prospective closest-season baseline for January 2013-forward simulation, not an attempt to recreate exact 2012 standings. PFR is independent of the NFL table presentation but ultimately describes the same games. Drive tables include administrative end-of-half possessions; those remain in `other`. Public injury surveillance supports aggregate bounds more strongly than every position cell, so long-run tests enforce aggregate burden, position ordering and bounded long-term outcomes rather than false precision. `runtime/calibration.py` deterministically validates this artifact, and runtime tests validate reconciliation and broad period bands.
+
+## Error corrections (September 27, 2026; kernel 2013.6)
+
+These notes correct statements above that were found to be inaccurate while building the kernel 2013.6 drive model. They do not change any stored value; `model.drive_outcomes` and `drives_per_team_game` stay in the artifact so kernel 2013.5 remains reproducible from history. The replacement drive inputs and their sourcing are in [the 2012 drive model calibration](2012_drive_model_calibration.md).
+
+- **Lines 7 and 9 (drive shares and their denominator).** The fitted terminal shares (.221/.158/.466/.132/.023) have no stored integer numerators; `other` is a residual of the other four. The PFR drive table they cite could not be re-reached (proxy-blocked), so the shares cannot be re-derived. They are retired from kernel use for 2013.6, not explained.
+- **Line 13 (`other` contents).** `other` cannot hold the 164 missed field goals: 164 / 5,360 = .031, larger than the .023 `other` bucket. The text's list of what `other` contains was therefore wrong.
+- **Lines 13 and 15 (kicking detail).** Kernel 2013.5 did not use field-goal accuracy, range bins or return scores: every field-goal drive scored 3 and every touchdown 7. "Range accuracy is represented by period bins in the kernel's bounded field-goal decision surface" described no implemented mechanism. Kernel 2013.6 uses the sourced accuracy by kick distance.
+- **Line 23 (end-of-half drives).** "Drive tables include administrative end-of-half possessions" contradicts `2012_position_usage_calibration.md` (line 86), which records that the play-by-play definition counts end-of-half and split possessions that the PFR drive table does not. The play-by-play statement is the one the 2013.6 drive model reconciles (5,984 drives, 376 of them clock-expired).

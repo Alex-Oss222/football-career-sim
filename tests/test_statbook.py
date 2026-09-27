@@ -189,6 +189,38 @@ class StatbookTests(unittest.TestCase):
         self.assertIn("| 1 | QB One | AAA | 250 |", qb_leaders)
         self.assertNotIn("CB One", qb_leaders)
 
+    def test_weeks_one_to_three_receipts_still_aggregate_and_render(self):
+        import json
+        from pathlib import Path
+        from runtime.statbook import STATBOOK_SCHEMA_VERSION
+        from scripts.render_season_stats import render_views
+        self.assertEqual(STATBOOK_SCHEMA_VERSION, 3)
+        root = Path(__file__).resolve().parents[1] / "career/2013/stats/game_receipts"
+        receipts = [json.loads(p.read_text()) for p in sorted(root.glob("*.json"))]
+        legacy = [r for r in receipts if r.get("kernel_version") in ("2013.4", "2013.5")]
+        self.assertTrue(legacy)
+        self.assertTrue(all("drives" not in r for r in legacy))
+        book = aggregate_receipts(legacy)
+        team = next(iter(book["teams"].values()))
+        self.assertNotIn("field_goal_attempts", team["team_stats"])
+        views = render_views(2013, "Jacksonville Jaguars", receipts)
+        self.assertIn("Legacy cohort", views["calibration_audit.md"])
+
+    def test_new_receipts_carry_the_drives_summary(self):
+        import sys
+        from pathlib import Path
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from synthetic_games import sample
+        result = sample()[0]
+        for detail in ("full", "compact_stats"):
+            receipt = make_receipt(result, week=4, matchup="B at A", detail=detail)
+            self.assertEqual(len(receipt["drives"]), len(result["possessions"]))
+            self.assertEqual(receipt["schema_version"], 3)
+        book = aggregate_receipts([make_receipt(result, week=4, matchup="B at A", detail="compact_stats")])
+        self.assertEqual(book["teams"]["A"]["team_stats"]["drives"],
+                         sum(1 for p in result["possessions"] if p["team"] == "A"))
+        self.assertEqual(book["teams"]["A"]["drive_model_games"], 1)
+
     def test_passer_rating_matches_nfl_formula(self):
         line = {"completions": 20, "pass_attempts": 30, "passing_yards": 250,
                 "passing_touchdowns": 2, "interceptions_thrown": 1}

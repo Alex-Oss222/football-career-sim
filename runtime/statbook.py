@@ -19,7 +19,24 @@ TEAM_STAT_FIELDS = (
     "rushing_yards", "first_downs", "third_down_attempts",
     "third_down_conversions", "time_of_possession", "kick_returns",
     "punt_returns",
+    # Kernel 2013.6 onward. Older receipts do not carry these fields; they
+    # aggregate as absent (never as zero) and are labelled by the renderers.
+    "field_goal_attempts", "extra_point_attempts", "extra_points_made",
+    "safeties", "turnovers_on_downs", "clock_expired_drives", "kickoffs",
+    "drives",
 )
+LEGACY_TEAM_STAT_FIELDS = TEAM_STAT_FIELDS[:16]
+DRIVE_MODEL_TEAM_STAT_FIELDS = TEAM_STAT_FIELDS[16:]
+DRIVE_MODEL_FROM_KERNEL = (2013, 6)
+
+
+def kernel_at_least(version, minimum=DRIVE_MODEL_FROM_KERNEL):
+    """True when a kernel version string is at or after ``minimum``."""
+    try:
+        parts = tuple(int(v) for v in str(version).split("."))
+    except ValueError:
+        return False
+    return parts >= minimum
 
 
 def _numeric(value):
@@ -112,6 +129,12 @@ def make_receipt(result, *, week, matchup, coverage="complete", detail="full",
     if incomplete:
         receipt["player_attribution_incomplete_teams"]=incomplete
     receipt["injuries"] = [public_injury(i) for i in result.get("injuries", ())]
+    if kernel_at_least(result.get("kernel_version")) and result.get("possessions"):
+        # Compact per-possession summary so coherence can be audited on
+        # every game, including compact_stats background receipts.
+        from .play_detail import drive_summary
+        receipt["game_type"] = result.get("game_type", "regular")
+        receipt["drives"] = drive_summary(result["possessions"])
     if detail == "full":
         receipt["play_ledger"] = deepcopy(result.get("play_ledger", []))
         receipt["play_call_stats"] = deepcopy(result.get("play_call_stats", {}))
@@ -121,8 +144,8 @@ def make_receipt(result, *, week, matchup, coverage="complete", detail="full",
 def _blank_team():
     return {
         "games": 0,
-        "team_stats": {field: 0 for field in TEAM_STAT_FIELDS},
-        "opponent_stats": {field: 0 for field in TEAM_STAT_FIELDS},
+        "team_stats": {field: 0 for field in LEGACY_TEAM_STAT_FIELDS},
+        "opponent_stats": {field: 0 for field in LEGACY_TEAM_STAT_FIELDS},
         "plays": 0,
         "opponent_plays": 0,
         "players": {},
@@ -224,9 +247,11 @@ def aggregate_receipts(receipts):
             team["opponent_plays"] += _scrimmage_plays(opponent)
             for field in TEAM_STAT_FIELDS:
                 if _numeric(game.get(field)):
-                    team["team_stats"][field] += game[field]
+                    team["team_stats"][field] = team["team_stats"].get(field, 0) + game[field]
                 if _numeric(opponent.get(field)):
-                    team["opponent_stats"][field] += opponent[field]
+                    team["opponent_stats"][field] = team["opponent_stats"].get(field, 0) + opponent[field]
+            if _numeric(game.get("drives")):
+                team["drive_model_games"] = team.get("drive_model_games", 0) + 1
 
             for player_id, line in game.get("players", {}).items():
                 position = line.get("position", "")

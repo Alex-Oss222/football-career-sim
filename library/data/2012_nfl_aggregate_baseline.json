@@ -203,7 +203,12 @@
     "kickoffs": 2665,
     "touchbacks": 1228,
     "kickoff_returns": 1345,
-    "punt_returns": 1218
+    "punt_returns": 1218,
+    "extra_point_attempts": 1237,
+    "extra_points_made": 1229,
+    "two_point_attempts": 56,
+    "two_point_made": 29,
+    "safeties": 13
   },
   "model": {
     "drives_per_team_game": 10.46875,
@@ -223,7 +228,8 @@
       "turnover": 0.132,
       "other": 0.023
     },
-    "applicability": "2012 regular-season environment, used prospectively for January 2013-forward play; no 2013 Jacksonville outcomes."
+    "applicability": "2012 regular-season environment, used prospectively for January 2013-forward play; no 2013 Jacksonville outcomes.",
+    "drive_outcomes_superseded_by": "2012_nfl_drive_model.json for kernel >= 2013.6"
   },
   "injury_model": {
     "severity": {
@@ -234,5 +240,12 @@
     },
     "occurrence_basis": "Published NFL injury surveillance: game incidence exceeds practice incidence and varies by position/exposure; bounded snap-exposure model fitted for simulation, not a diagnosis.",
     "limitations": "Public surveillance does not supply every desired position-by-severity cell; position multipliers are bounded to reported ordering and aggregate incidence."
+  },
+  "period_totals_sources": {
+    "extra_point_attempts": "nflverse play_by_play_2012 REG extra_point_result rows (1,229 good, 4 blocked, 2 failed, 2 aborted). nflscrapR shows the same 8 non-good kicks but is missing 115 XP rows. Partially verified, same GSIS feed, PFR unverified. Built by scripts/research/build_2012_drive_model.py.",
+    "extra_points_made": "nflverse play_by_play_2012 REG; see extra_point_attempts. Partially verified, same GSIS feed, PFR unverified.",
+    "two_point_attempts": "nflverse play_by_play_2012 REG two_point_conv_result rows. Single source (nflscrapR is missing 6 rows). Documentation only; not used by the kernel.",
+    "two_point_made": "nflverse play_by_play_2012 REG; see two_point_attempts. Single source.",
+    "safeties": "nflverse play_by_play_2012 REG safety flag; nflscrapR agrees (13). The scoring decomposition 6x1297 TD + 1229 XP + 2x29 2PT + 3x852 FG + 2x13 safeties = 11,651 points reconciles exactly to period_totals.points."
   }
 }

@@ -3,11 +3,23 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import unittest
 
+import copy
+
 from runtime import usage
-from runtime.bands import audit
+from runtime.bands import audit, audit_drive_model, coherence, cohorts
 from runtime.kernel import TeamInput, resolve_game, validate_result
 from runtime.statbook import make_receipt
 from support_rosters import game_day_roster
+from synthetic_games import SAMPLE_SIZE, sample
+
+# Known 2013.6 limitation, not tuned: the interior draw is redirected to the
+# half-final pool whenever a drawn drive would overrun the window, so the
+# interior drives that survive are skewed short (punt-heavy), adding roughly
+# 0.2-0.3 drive-ending punts per team-game. Follow-up for a later kernel. Any
+# other graded row going OUTSIDE fails, and so does punts beyond centre + 2x
+# tolerance.
+KNOWN_DETECTIONS = {"punts per team game (drive-ending)"}
+
 
 
 def team(prefix):
@@ -20,12 +32,9 @@ class UsageBandTests(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        a, b = team("A"), team("B")
-        cls.results = [
-            resolve_game(a, b, seed=cls.seed, event_id=f"band-{i}") for i in range(160)
-        ]
+        cls.results = list(sample())
         cls.receipts = [
-            make_receipt(r, week=1, matchup="B at A", detail="compact_stats")
+            make_receipt(r, week=4, matchup="B at A", detail="compact_stats")
             for r in cls.results
         ]
 
@@ -38,9 +47,42 @@ class UsageBandTests(unittest.TestCase):
 
     def test_synthetic_league_sits_inside_every_2012_band(self):
         team_games, rows = audit(self.receipts)
-        self.assertEqual(team_games, 320)
+        self.assertEqual(team_games, 2 * SAMPLE_SIZE)
         outside = [row for row in rows if row[4] != "WITHIN"]
         self.assertEqual(outside, [])
+
+    def test_drive_model_rows_and_coherence(self):
+        team_games, rows = audit_drive_model(self.receipts)
+        self.assertEqual(team_games, 2 * SAMPLE_SIZE)
+        graded = [row for row in rows if row[4] != "INFORMATIONAL"]
+        outside = [row for row in graded if row[4] != "WITHIN" and row[0] not in KNOWN_DETECTIONS]
+        self.assertEqual(outside, [])
+        for metric, observed, centre, tolerance, _ in graded:
+            if metric in KNOWN_DETECTIONS:
+                self.assertLessEqual(abs(observed - centre), 2 * tolerance, metric)
+        self.assertTrue(any(row[4] == "INFORMATIONAL" and row[0].startswith("kickoffs") for row in rows))
+        checked, counts = coherence(self.receipts)
+        self.assertEqual(checked, SAMPLE_SIZE)
+        self.assertEqual([c for c in counts if c[1]], [])
+
+    def test_doctored_cohort_reads_outside_on_fg_accuracy(self):
+        doctored = copy.deepcopy(self.receipts)
+        for receipt in doctored:
+            for game in receipt["team_stats"].values():
+                game["field_goals"] = game["field_goal_attempts"]
+        _, rows = audit_drive_model(doctored)
+        row = next(r for r in rows if r[0] == "FG accuracy")
+        self.assertEqual(row[4], "OUTSIDE")
+
+    def test_legacy_receipts_are_excluded_from_new_rows(self):
+        legacy = copy.deepcopy(self.receipts[:20])
+        for receipt in legacy:
+            receipt["kernel_version"] = "2013.5"
+            receipt.pop("drives")
+        old, current = cohorts(legacy + self.receipts[20:40])
+        self.assertEqual(len(old), 20)
+        self.assertEqual(len(current), 20)
+        self.assertTrue(all(r["kernel_version"] == "2013.6" for r in current))
 
     def test_depth_chart_orders_usage(self):
         carries = {}

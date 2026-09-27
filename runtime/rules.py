@@ -41,3 +41,38 @@ def review_authority(*, seconds_left, scoring=False, turnover=False):
     if scoring or turnover or seconds_left <= 120:
         return "booth"
     return "coach"
+
+
+def ot_status(history, game_type="regular", expired=False):
+    """2012-forward modified sudden death as a pure function.
+
+    ``history`` lists the overtime possessions in order, each a mapping with
+    ``team`` and ``score`` (None, "touchdown", "field_goal" or "safety").
+    Returns "end" or "continue". A first-possession touchdown or a safety at
+    any time ends the game. A first-possession field goal gives the opponent
+    one possession: its touchdown wins, its field goal leads to sudden death
+    and no score means the field-goal team wins. A scoreless first possession
+    leads to sudden death. When the period expires (``expired``), a regular
+    season game ends (tied or not); a postseason game continues.
+    """
+    scores = [entry.get("score") for entry in history]
+    if "safety" in scores:
+        return "end"
+    rest = None
+    if scores:
+        first = scores[0]
+        if first == "touchdown":
+            return "end"
+        if first == "field_goal":
+            if len(scores) >= 2:
+                second = scores[1]
+                if second != "field_goal":
+                    return "end"
+                rest = scores[2:]
+        else:
+            rest = scores[1:]
+    if rest is not None and any(rest):
+        return "end"
+    if expired and game_type != "postseason":
+        return "end"
+    return "continue"
