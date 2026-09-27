@@ -3,9 +3,9 @@
 ## Document status
 
 - Function: Canonical register for current Jacksonville player control, staff operating authority, roster legality, contract/cap reconciliation, availability boundaries and football-role state.
-- Current status: **RECONCILED THROUGH WEEK 7 (ENTRY 44)**.
-- Effective through: **October 20, 2013, after Week 7 vs San Diego**.
-- Progression authority: `career/2013/ledger.md`, Entry 44 (Week 7 closed), after Entries 42-43 (Blackmon reinstated and activated October 7; Week 6 closed), Entry 41 (Week 5 closed; Posluszny returned; Thielen injured), Entry 40 (Week 4 closed under kernel 2013.6, Entry 39; Meester returned as reserve center), Entry 38 (Week 3 closed; Posluszny injured) and Entries 36-37 (Blackmon to Reserve/Suspended; Week 2 closed with Meester and C.J. Wilson injured).
+- Current status: **RECONCILED THROUGH WEEK 8 (ENTRY 45)**.
+- Effective through: **October 27, 2013, after Week 8 vs San Francisco (Wembley Stadium)**.
+- Progression authority: `career/2013/ledger.md`, Entry 45 (Week 8 closed; Blackmon dressed), Entry 44 (Week 7 closed), after Entries 42-43 (Blackmon reinstated and activated October 7; Week 6 closed), Entry 41 (Week 5 closed; Posluszny returned; Thielen injured), Entry 40 (Week 4 closed under kernel 2013.6, Entry 39; Meester returned as reserve center), Entry 38 (Week 3 closed; Posluszny injured) and Entries 36-37 (Blackmon to Reserve/Suspended; Week 2 closed with Meester and C.J. Wilson injured).
 - Detailed readable roster: `career/2013/roster.md`.
 - Current cap worksheet: `career/2013/offseason/current_cap_worksheet.md`.
 - Current calendar: `career/2013/calendar.md`.
@@ -21,17 +21,17 @@
 | Competition | NFL |
 | Season | 2013 |
 | Divergence point | January 15, 2013 — Alex Stone accepts Jacksonville head-coach offer |
-| Season phase | Regular season; Week 7 closed, Week 8 preparation |
-| Owned content effective | October 20, 2013 |
-| Document 4 register version | `JAX-2013-OCT20-WEEK7-REGISTER-18` |
-| Supersedes | `JAX-2013-OCT13-WEEK6-REGISTER-17` |
-| Last content-changing checkpoint | `Canonical update - October 20, 2013 - Week 7 vs San Diego closed` |
-| Latest Document 6 event | Entry 44: Week 7 closed |
+| Season phase | Regular season; Week 8 closed; Week 9 bye next |
+| Owned content effective | October 27, 2013 |
+| Document 4 register version | `JAX-2013-OCT27-WEEK8-REGISTER-19` |
+| Supersedes | `JAX-2013-OCT20-WEEK7-REGISTER-18` |
+| Last content-changing checkpoint | `Canonical update - October 27, 2013 - Week 8 vs San Francisco closed` |
+| Latest Document 6 event | Entry 45: Week 8 closed |
 | Current controlled players | **53** |
 | Current practice squad | **8; separate from active 53** |
 | Current regular-season planning room | **~$6.2M-$6.6M before weekly practice-squad charges** |
-| Next scheduled football event | October 27 Week 8 vs San Francisco at Wembley Stadium, London: NOT SIMULATED |
-| Unresolved matter before participation | Blackmon is eligible from Week 8; the Week 8 inactives, Blackmon's role and the plan are Stone decisions |
+| Next scheduled football event | November 10 Week 10 at Tennessee: NOT SIMULATED (trade deadline October 29, 4 p.m. ET; Week 9 bye) |
+| Unresolved matter before participation | Pasztor's and Mosley's holds carry no recorded projected return (Entry 45); the Week 10 plan and inactives are Stone decisions |
 
 ## Canon and evidence conventions
 
@@ -112,7 +112,7 @@ These rules apply to every real player, staff member, executive, candidate, oppo
 | Reserve/Suspended | **0** | Blackmon's suspension (Weeks 2-5) ended; reinstated October 7 |
 | Practice-squad players | **8** | Separate from active 53 |
 
-Week 6 and Week 7 inactives were Blackmon, Pasztor, Mosley, C.J. Wilson, Edwards, Rutland and John Parker Wilson (J.P. Wilson remains QB3); Week 8 designations are not yet set.
+Week 8 inactives were Pasztor, Mosley, C.J. Wilson, Edwards, Pendleton, Rutland and John Parker Wilson (J.P. Wilson remains QB3); Blackmon dressed. Weeks 6-7 inactives had included Blackmon in Pendleton's place. Week 10 designations are not yet set; the Week 8 list carries forward unless Stone replaces it.
 
 ### Financial, contract and eligibility reconciliation
 
@@ -143,16 +143,16 @@ Staff remains unchanged from the closed late-January hiring phase. `career/2013/
 
 ### Reconciliation result
 
-- Register status: **RECONCILED THROUGH WEEK 7 (ENTRY 44)**.
+- Register status: **RECONCILED THROUGH WEEK 8 (ENTRY 45)**.
 - Roster/control: **53 controlled, all active (Blackmon activated October 7); eight-player practice squad separate**.
 - Cap: regular-season accounting; approximately **$6.2M-$6.6M** before weekly practice-squad charges.
-- Medical: no Week 7 injury; Rackley minor, limited, no projected absence; C.J. Wilson out (projected return January 30, 2014); Pasztor on independent medical hold; Mosley medically unavailable.
-- Football: Brewster the starting center (confirmed Week 6), Meester reserve center; Posluszny and Smith base linebackers with Smith the communication lead and Allen first off the bench; Bradfield sixth OL; Shorts WR1, Thielen WR2, Clemons WR3, Brown WR4; Blackmon active, eligible from Week 8 after Stone's Weeks 6-7 game-day inactive; edge order Babin, Mincey, Branch, Davis.
-- Next event: October 27 Week 8 vs San Francisco at Wembley Stadium, London; **NOT SIMULATED**.
+- Medical: no Week 8 injury; Rackley minor, limited, no projected absence; C.J. Wilson out (projected return January 30, 2014); Pasztor on independent medical hold; Mosley medically unavailable.
+- Football: Brewster the starting center (confirmed Week 6), Meester reserve center; Posluszny and Smith base linebackers with Smith the communication lead and Allen first off the bench; Bradfield sixth OL; Shorts WR1, Thielen WR2/H, Blackmon WR3/outside Z (dressed from Week 8), Clemons WR4, Brown WR5; edge order Babin, Mincey, Branch, Davis.
+- Next event: trade deadline October 29, 4 p.m. ET; Week 9 bye; November 10 Week 10 at Tennessee; **NOT SIMULATED**.
 
 ## Jacksonville current transaction reconciliation
 
-**Current progression source:** [Season ledger, Entry 44](../career/2013/ledger.md#entry-44-week-7-closed), checkpoint `Canonical update - October 20, 2013 - Week 7 vs San Diego closed`; Blackmon reinstated and activated by Entry 42.
+**Current progression source:** [Season ledger, Entry 45](../career/2013/ledger.md#entry-45-week-8-closed), checkpoint `Canonical update - October 27, 2013 - Week 8 vs San Francisco closed`; Blackmon reinstated and activated by Entry 42.
 **Readable roster:** [career/2013/roster.md](../career/2013/roster.md).
 **Current cap worksheet:** [career/2013/offseason/current_cap_worksheet.md](../career/2013/offseason/current_cap_worksheet.md).
 **Current calendar:** [career/2013/calendar.md](../career/2013/calendar.md).
@@ -186,7 +186,7 @@ The old 75-person working count and the old unresolved inherited-control bucket 
 | Jonathan Grimes | JAX-JONATHANGRIMES | RB | Active 53 | Existing contract/control; not a March 12 free agent | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Maurice Jones-Drew | JAX-MAURICEJONESDREW | RB | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Montell Owens | JAX-MONTELLOWENS | FB | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Justin Blackmon | JAX-JUSTINBLACKMON | WR | Active 53 | Existing rookie contract; 4/17 of 2013 base forfeited for Weeks 2-5, amount unresolved | No communicated restriction; Stone's game-day inactive Weeks 6-7 completed; eligible from Week 8 | Entry 44 |
+| Justin Blackmon | JAX-JUSTINBLACKMON | WR | Active 53 | Existing rookie contract; 4/17 of 2013 base forfeited for Weeks 2-5, amount unresolved | No communicated restriction; WR3 / outside Z, dressed from Week 8 | Entry 45 |
 | Mike Brown | JAX-MIKEBROWN | WR | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Toney Clemons | JAX-TONEYCLEMONS | WR | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Cecil Shorts | JAX-CECILSHORTS | WR | Active 53 | Existing rookie contract | No communicated restriction; fresh game-day communication required | Entry 41 |
@@ -427,11 +427,11 @@ Record only material, person-specific issues. Do not create a locker-room morale
 
 ### Base depth chart
 
-Current depth order is `career/2013/depth_chart.json` (effective October 14, Week 7 preparation; read by `runtime/week_inputs.py`), with decided roles in the Role column of `career/2013/roster.md`. The camp-era hierarchy in `career/2013/offseason/training_camp/position_battles.md` and `roster_decisions.md` is history.
+Current depth order is `career/2013/depth_chart.json` (effective October 21, Week 8 preparation; read by `runtime/week_inputs.py`), with decided roles in the Role column of `career/2013/roster.md`. The camp-era hierarchy in `career/2013/offseason/training_camp/position_battles.md` and `roster_decisions.md` is history.
 
 ### Personnel and situational packages
 
-The offensive menu is the latest weekly structured call sheet (Week 7: `career/2013/regular_season/week_07_san_diego_at_jacksonville/call_sheet.json`; the Week 8 sheet is not yet supplied). Offensive roles are evidence-driven and have no preset shares. Stone calls offense and Crennel calls defense.
+The offensive menu is the latest weekly structured call sheet (Week 8: `career/2013/regular_season/week_08_san_francisco_at_jacksonville/call_sheet.json`; the Week 10 sheet is not yet supplied). Offensive roles are evidence-driven and have no preset shares. Stone calls offense and Crennel calls defense.
 
 ### Special-teams assignments
 
@@ -672,12 +672,12 @@ This table is generated from Document 6 and is only a navigation aid. Active unr
 
 ## End-of-update control block
 
-- Effective through: October 20, 2013, after Week 7.
-- Document 4 register version: `JAX-2013-OCT20-WEEK7-REGISTER-18`.
-- Last content-changing checkpoint: `Canonical update - October 20, 2013 - Week 7 vs San Diego closed`.
-- Latest source event: season-ledger Entry 44.
+- Effective through: October 27, 2013, after Week 8.
+- Document 4 register version: `JAX-2013-OCT27-WEEK8-REGISTER-19`.
+- Last content-changing checkpoint: `Canonical update - October 27, 2013 - Week 8 vs San Francisco closed`.
+- Latest source event: season-ledger Entry 45.
 - Current controlled count: **53**, all active; practice squad **8**, separate from the active roster.
 - Cap: regular-season accounting, **~$6.2M-$6.6M before weekly practice-squad charges**.
-- Depth/packages: Cousins QB1; regular-season roles as in `career/2013/roster.md`; weekly structured call sheet (Week 7 latest; Week 8 sheet not yet supplied).
-- Medical: no Week 7 injury; Rackley limited (minor); C.J. Wilson out; Pasztor on independent medical hold; Mosley medically unavailable.
-- Next event: October 27 Week 8 vs San Francisco at Wembley Stadium, London; **NOT SIMULATED**.
+- Depth/packages: Cousins QB1; regular-season roles as in `career/2013/roster.md`; weekly structured call sheet (Week 8 latest; Week 10 sheet not yet supplied).
+- Medical: no Week 8 injury; Rackley limited (minor); C.J. Wilson out; Pasztor on independent medical hold; Mosley medically unavailable.
+- Next event: trade deadline October 29, 4 p.m. ET; Week 9 bye; November 10 Week 10 at Tennessee; **NOT SIMULATED**.
