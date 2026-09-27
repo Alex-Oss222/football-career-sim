@@ -66,6 +66,15 @@ class ProductionGameRunnerTests(unittest.TestCase):
         self.assertNotIn("Mesh Base",str(p1))
         self.assertIn("Mesh",str(p1))
 
+    def test_unlabelled_call_sheet_fails_closed_before_closure(self):
+        calls=({'name':'Mystery','family':'Mystery Concept','type':'run'},)
+        bad=TeamInput("C",self.home.active_players,roster=self.home.roster,offensive_call_sheet=calls)
+        with self.assertRaisesRegex(ValueError,"Mystery"):
+            build_game_packet("calls","snapshot",bad,self.away)
+        declared=({'name':'Mystery','family':'Mystery Concept','type':'run','carrier':['RB']},)
+        ok=TeamInput("C",self.home.active_players,roster=self.home.roster,offensive_call_sheet=declared)
+        self.assertTrue(build_game_packet("calls","snapshot",ok,self.away))
+
     def test_private_replay_restart_conflict_and_no_seed_exposure(self):
         first=run_game(self.home,self.away,event_id="game-1",snapshot="snapshot",client=self.client)
         self.assertEqual(first,run_game(self.home,self.away,event_id="game-1",snapshot="snapshot",client=self.client))

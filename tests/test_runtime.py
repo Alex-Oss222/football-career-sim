@@ -77,12 +77,13 @@ class RuntimeTests(unittest.TestCase):
         continued=resolve_game(a,b,seed=self.seed,event_id='pause',management_mode='user_controlled',resume=paused['pauses'][0]['continuation_token'])
         self.assertFalse(continued['pauses'])
     # 250 games per test at most: the deploy image runs this whole suite.
+    # The neutral sample is the shared cached 250-game synthetic sample.
     def neutral_sample(self):
-        cls=type(self)
-        if not hasattr(cls,'_neutral'):
-            a,b=self.teams()
-            cls._neutral=[resolve_game(a,b,seed=self.seed,event_id=f'batch-{i}') for i in range(250)]
-        return cls._neutral
+        import sys
+        from pathlib import Path
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from synthetic_games import sample
+        return sample()
     def test_long_run_period_bands(self):
         points=[]; drives=[]; yards=[]; punts=[]; turnovers=[]; penalties=[]; injuries=[]; sacks=[]; field_goals=[]; returns=[]
         for r in self.neutral_sample():

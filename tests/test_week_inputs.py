@@ -64,6 +64,11 @@ class PackageTests(unittest.TestCase):
         receipts = [r for r in load_receipts(ROOT / "career/2013/stats/game_receipts") if int(r["week"]) < 2]
         cls.package = week_inputs.build_package(2, receipts, sheet, AVERAGE_ANCHORS)
 
+    def test_unlabelled_call_fails_the_build(self):
+        with self.assertRaisesRegex(ValueError, "Mystery"):
+            week_inputs.jacksonville_input([], date(2013, 10, 13), AVERAGE_ANCHORS,
+                                           [{"name": "Mystery", "family": "Mystery", "type": "pass"}])
+
     def test_week_two_package_passes_the_weekly_gate(self):
         controlled = controlled_players_from_roster(ROOT / "career/2013/roster.md")
         self.assertEqual(check_inputs(self.package, controlled, "Jacksonville Jaguars", expected_games=16), [])

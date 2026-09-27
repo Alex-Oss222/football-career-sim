@@ -1,4 +1,8 @@
-"""The sourced 2012 offensive-drive model used by kernel 2013.6.
+"""The sourced 2012 offensive-drive model (kernel 2013.6 artifact).
+
+Kernel 2013.7 draws its drives from runtime/field_position.py but still uses
+this module for the category list, the legacy apply_edge shift, category
+draws, the clock scale, field-goal accuracy by distance and the kick rates.
 
 The artifact (library/data/2012_nfl_drive_model.json) is built by
 scripts/research/build_2012_drive_model.py from 2012 regular-season

@@ -10,7 +10,7 @@ from contextlib import closing
 from urllib.parse import urlsplit, parse_qs
 from .packets import canonical
 
-SCHEMA="1"; KERNEL="2013.6"
+SCHEMA="1"; KERNEL="2013.7"
 
 class Store:
     def __init__(self,path):

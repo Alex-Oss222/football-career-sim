@@ -53,7 +53,12 @@ def main():
         return 1
     call_sheet = json.loads(sheet_path.read_text(encoding="utf-8"))["offensive_call_sheet"]
     receipts = [r for r in load_receipts(ROOT / "career/2013/stats/game_receipts") if int(r["week"]) < args.week]
-    package = build_package(args.week, receipts, call_sheet, AVERAGE_ANCHORS)
+    try:
+        package = build_package(args.week, receipts, call_sheet, AVERAGE_ANCHORS)
+    except ValueError as exc:
+        print("WEEK_INPUTS: BLOCKED")
+        print("- %s" % exc)
+        return 1
 
     out.parent.mkdir(exist_ok=True)
     errors = check_inputs(package, controlled_players_from_roster(ROOT / "career/2013/roster.md"),

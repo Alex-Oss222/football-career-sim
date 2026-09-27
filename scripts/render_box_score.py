@@ -121,11 +121,73 @@ def team_box(team_id, players):
     return lines
 
 
+START_KIND = {
+    "kickoff": "kickoff", "kickoff_touchback": "kickoff (touchback)", "free_kick": "free kick",
+    "punt": "punt", "interception": "interception", "fumble_lost": "fumble", "downs": "downs",
+    "missed_fg": "missed FG", "period_change": "period change",
+}
+RESULT = {
+    "touchdown": "Touchdown", "field_goal_attempt": "FG", "punt": "Punt", "interception": "Interception",
+    "fumble_lost": "Fumble lost", "downs": "Downs", "safety": "Safety", "end_of_half": "End of half",
+    "end_of_game": "End of game", "end_of_overtime": "End of overtime",
+}
+
+
+def spot_text(spot):
+    """yardline_100 as a field position: 'own 25', 'opp 40' or 'midfield'."""
+    if spot is None:
+        return "—"
+    if spot == 50:
+        return "midfield"
+    return "own %d" % (100 - spot) if spot > 50 else "opp %d" % spot
+
+
+def clock_text(half, seconds):
+    if half == "OT":
+        return "OT %d:%02d" % (seconds // 60, seconds % 60)
+    left = seconds - 900 if seconds > 900 else seconds
+    quarter = {1: 1 if seconds > 2700 else 2, 2: 3 if seconds > 900 else 4}[half]
+    if half == 1:
+        left = seconds - 2700 if seconds > 2700 else seconds - 1800
+    return "Q%d %d:%02d" % (quarter, left // 60, left % 60)
+
+
+def drive_chart(receipt):
+    """Kernel 2013.7 receipts: every possession's start, end and result."""
+    from runtime.play_detail import DRIVE_SUMMARY_FIELDS
+    drives = [dict(zip(DRIVE_SUMMARY_FIELDS, row)) for row in receipt.get("drives", ())]
+    if not drives or any(d.get("start_spot") is None for d in drives):
+        return []
+    lines = ["#### Drive chart", "",
+             "Start and end are field positions for the offense; a punt, field-goal or "
+             "downs result shows the real 2012 fourth-down state its drive carried.", "",
+             "| # | Team | Start clock | Start | How | Plays | Yds | End | Result |",
+             "|---:|---|---|---|---|---:|---:|---|---|"]
+    for d in drives:
+        result = RESULT.get(d["category"], d["category"])
+        if d["category"] == "field_goal_attempt":
+            result = "FG %s (%d yd)" % ("good" if d.get("fg_made") else "no good", d["fg_distance"])
+        elif d["category"] == "touchdown" and d.get("xp_made") is not None:
+            result += ", XP %s" % ("good" if d["xp_made"] else "no good")
+        fourth = d.get("fourth_down")
+        if fourth and fourth.get("down") and fourth.get("ydstogo") is not None:
+            result += " (%s & %d at %s)" % (
+                {1: "1st", 2: "2nd", 3: "3rd", 4: "4th"}.get(fourth["down"], fourth["down"]),
+                fourth["ydstogo"], spot_text(fourth["los"]))
+        end = "end zone" if d["category"] in ("touchdown", "safety") else spot_text(d.get("end_spot"))
+        lines.append("| %d | %s | %s | %s | %s | %d | %d | %s | %s |" % (
+            d["number"], d["team"], clock_text(d["half"], d["start_clock"]), spot_text(d["start_spot"]),
+            START_KIND.get(d.get("start_kind"), d.get("start_kind") or "—"), d["scrimmage_plays"],
+            d["net_yards"], end, result))
+    return lines + [""]
+
+
 def render(receipt, lead_team):
     clubs = team_order(receipt, lead_team)
     lines = comparison(receipt, clubs)
     for club in clubs:
         lines += team_box(club, receipt["team_stats"][club].get("players", {}))
+    lines += drive_chart(receipt)
     return "\n".join(lines)
 
 
