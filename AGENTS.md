@@ -36,7 +36,7 @@ Any task that **completes an event, advances the career clock, changes roster/co
 
 A progression commit is incomplete if its event file says one thing while a dependent current-state file still says another.
 
-**Season-stat closure rule.** A closed regular-season or postseason game is not statistically complete until its public game receipt is preserved under career/[year]/stats/game_receipts/. Use runtime.statbook.make_receipt with detail="full" for Jacksonville/protagonist games so the receipt retains the complete public player dictionaries, snap play_ledger, and named-call stats. Use detail="compact_stats" for ordinary background games: it must preserve every nonzero generated team/player statistic needed for league totals and leaders, but it intentionally omits the background snap ledger, named-call data, zero-only player rows and zero-valued player fields. This is storage compression only; it never changes the game result or generated statistics. Refresh team_player_stats.md, all_player_stats.md, league_player_stats.md, play_call_stats.md and league_leaders.md from the receipt set using the statbook tooling. If statistical receipt coverage is incomplete, label the gap and withhold formal league rankings rather than filling it from real historical results or narrative inference.
+**Season-stat closure rule.** A closed regular-season or postseason game is not statistically complete until its public game receipt is preserved under career/[year]/stats/game_receipts/. Use runtime.statbook.make_receipt with detail="full" for Jacksonville/protagonist games so the receipt retains the complete public player dictionaries, snap play_ledger, and named-call stats. Use detail="compact_stats" for ordinary background games: it must preserve every nonzero generated team/player statistic needed for league totals and leaders, but it intentionally omits the background snap ledger, named-call data, zero-only player rows and zero-valued player fields. This is storage compression only; it never changes the game result or generated statistics. Refresh team_player_stats.md, all_player_stats.md, league_player_stats.md, play_call_stats.md, league_leaders.md, team_stats.md and calibration_audit.md from the receipt set with `python scripts/render_season_stats.py YEAR --team TEAM_ID`. If statistical receipt coverage is incomplete, label the gap and withhold formal league rankings rather than filling it from real historical results or narrative inference.
 
 Use [the dependency workflow](docs/update_workflow.md) and `docs/repository_map.json`. Run `python scripts/validate_repository.py` before closing a change; refresh a phase summary receipt only after reviewing the summary against its updated output. Both game paths must also pass `python scripts/check_game_readiness.py`. A green repository check is not game authorization.
 
@@ -137,7 +137,7 @@ For the named week, Codex must autonomously:
 Before the first game event of any regular-season/postseason weekly slate closes:
 
 - Build the full weekly TeamInput package in the transient workspace.
-- Run `python scripts/check_week_input_exclusivity.py <weekly-input-package.json>`.
+- Run `python scripts/check_week_input_exclusivity.py <weekly-input-package.json> --expected-games <scheduled-game-count>`. Use the actual week's scheduled game count so a partial package cannot pass.
 - Derive Jacksonville control from the current branch `career/[year]/roster.md`, including both active roster and practice squad.
 - A Jacksonville-controlled player may not appear in any non-Jacksonville TeamInput, even when a real historical Week-N roster source lists that player for another club.
 - No player identifier may appear on two clubs in the same simulated weekly slate.
@@ -153,21 +153,22 @@ Before the first game event of any regular-season/postseason weekly slate closes
 
 A user-authorized migration for the requested week is an **internal prerequisite**, not a user task.
 
-For the 2013 Week 1 full-fidelity reset specifically:
+For the 2013 Week 1 restart specifically (Week 1 voided by ledger Entry 34; replay as event generation 3 under kernel 2013.4):
 
-- Read `career/2013/migrations/week_01_full_fidelity_reset.md` and its JSON manifest.
-- The September 20, 2026 `reset-v1` attempt is an audited technical abort: all 16 private events closed, but the generated Git diff exceeded the Codex extraction limit and no public reset commit/PR landed. Use only the current generation IDs in the manifest; never attempt to publish the abandoned v1 results.
-- Before closing any generation-2 Week 1 event, run `python scripts/mark_week1_v1_aborted.py`; it idempotently records the same technical-abort correction against all 16 stranded v1 event IDs.
+- Read `career/2013/migrations/week_01_kernel_2013_4_restart.md`, then `career/2013/migrations/week_01_full_fidelity_reset.md` (history) and its JSON manifest.
+- The September 20, 2026 `reset-v1` attempt is an audited technical abort: all 16 private events closed, but the generated Git diff exceeded the Codex extraction limit and no public reset commit/PR landed. Generation 2 (`reset-v2`) was published and then voided for verified kernel defects. Use only the current generation IDs in the manifest; never publish, show or compare v1 or v2 results.
+- Before closing any generation-3 Week 1 event, run `python scripts/mark_week1_generations_void.py`; it idempotently records the abort/void correction against all 32 v1 and v2 event IDs.
 - If `python scripts/check_week1_reset_ready.py` reports missing TeamInputs, **do not stop and ask the user to fill them**.
 - Research and construct all missing pre-Week-1 TeamInputs yourself from date-eligible public sources and branch canon. Write the reconstructed full TeamInput objects to the gitignored .sim_cache/week_01_full_fidelity_inputs.json, not into the committed migration manifest, then rerun the gate. The committed manifest remains small control metadata.
 - Use verified historical Week-1 roster membership/position/availability facts for non-Jacksonville clubs as date-specific roster rails when no earlier branch transaction overrides them. Historical Week-1 scores, statistics, injuries produced by the real games, later depth-chart outcomes and later season/career results are forbidden inputs.
-- Prefer a week-level roster source with explicit 2013 Week 1 scope; cross-check material ambiguities against an independent period-appropriate source. Record source/provenance for the reconstructed inputs.
+- Prefer a week-level roster source with explicit 2013 Week 1 scope; cross-check material ambiguities against an independent period-appropriate source. Record source/provenance for the reconstructed inputs. Kernel 2013.4 distributes carries, targets and tackles by the depth order in each TeamInput, so every club needs a complete game-day unit (linebackers included) and explicit `depth` values from a date-eligible pre-Week-1 depth chart; generation-2 inputs lacked whole position groups and must not be reused.
 - Jacksonville must use the branch's September 4 roster, medical state, roles and the already-approved Week 1 structured offensive call sheet—not the real historical Jaguars roster/result.
 - For unit evidence anchors, apply Document 7 §2.2. Where pre-Week-1 evidence is thin, use the established `Average` low-confidence default rather than guessing a stronger/weaker secret rating.
 - Background clubs do not need invented named play calls. Use only offensive-call detail supported by their date-eligible input contract; the protagonist's structured call sheet remains mandatory where the active kernel requires it.
 - Freeze all 32 reconstructed TeamInputs before any replacement Week 1 draw.
 - Only after the reset gate passes may any replacement event close. Then replace all 16 Week 1 games as one batch. Preserve a full Jacksonville receipt and compact_stats receipts for the other 15 games, rebuild every dependent stat/standings view, append the supersession entry, reconcile injuries/state and validate before Week 2.
 - Never rerun only Jacksonville while leaving the other 15 legacy Week 1 games active.
+- After the slate closes, read `career/2013/stats/calibration_audit.md`. An OUTSIDE row is investigated as an input or engine defect; it is never grounds to rerun or select a closed result.
 
 ### Public/private transaction boundary
 

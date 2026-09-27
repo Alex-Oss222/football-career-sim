@@ -1,0 +1,282 @@
+{
+ "accessed": "2026-09-27",
+ "builder": "scripts/research/build_2012_usage_baseline.py",
+ "definitions": {
+  "assisted_tackle_play_rate": "tackled scrimmage plays that carried at least one assist credit, over all tackled scrimmage plays.",
+  "negative_run_loss_distribution": "yards lost on runs that lost yardage; key 6+ pools losses of six or more.",
+  "qb1_attempt_share": "mean over team-games of the leading passer share of that team pass attempts.",
+  "rank_shares": "within one team-game, the position group production ranked by volume: index 0 is the most-used player. These are usage-rank shapes, not depth-chart facts; the runtime maps them onto the coach-supplied depth order.",
+  "rush_share": "share of rushing attempts with an identified rusher, by position group; scrambles count as QB rushes; kneels are excluded (separate play type).",
+  "tackle_share": "share of tackle credits (solo plus each assist credit) on scrimmage run/pass plays, by defensive group; offensive-player tackles after turnovers (about 2 percent) are excluded from the displayed groups.",
+  "target_share": "share of non-sack pass attempts with an identified target, by position group."
+ },
+ "drive_model": {
+  "field_goal": {
+   "drives": 851,
+   "plays_mean": 7.712,
+   "plays_sd": 3.187,
+   "seconds_per_play": 28.63
+  },
+  "other": {
+   "drives": 748,
+   "plays_mean": 5.047,
+   "plays_sd": 3.577,
+   "seconds_per_play": 23.83
+  },
+  "punt": {
+   "drives": 2440,
+   "plays_mean": 4.289,
+   "plays_sd": 1.807,
+   "seconds_per_play": 30.19
+  },
+  "touchdown": {
+   "drives": 1164,
+   "plays_mean": 7.46,
+   "plays_sd": 3.65,
+   "seconds_per_play": 27.6
+  },
+  "turnover": {
+   "drives": 659,
+   "plays_mean": 4.56,
+   "plays_sd": 3.0,
+   "seconds_per_play": 24.79
+  }
+ },
+ "drive_model_note": "Per-result plays and seconds-per-play are observed pbp means. The runtime scales plays and clock by single factors so the expected team-game totals equal the existing verified baseline (64.2 plays and 10.47 drives per team game). The pbp drive definition counts end-of-half and split possessions that the PFR drive table does not; the scale factors absorb that definitional difference and are recomputed from this file at load time, never hand-set.",
+ "information_boundary": "2012 regular-season play-by-play only; no 2013 or later outcome, player line or team result.",
+ "purpose": "League-wide position-group usage shapes and drive-volume shapes for kernel 2013.4 attribution and the statistical band audit. Shapes distribute already-resolved team production across a club depth chart; they never decide who is on the depth chart, never rate a player and never set a Jacksonville quota.",
+ "season": 2012,
+ "season_type": "regular",
+ "sources": {
+  "existing_totals_cross_check": "library/data/2012_nfl_aggregate_baseline.json",
+  "primary_pbp": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2012.csv.gz",
+  "primary_positions": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2012.csv",
+  "verification_pbp": "https://raw.githubusercontent.com/ryurko/nflscrapR-data/master/play_by_play_data/regular_season/reg_pbp_2012.csv"
+ },
+ "values": {
+  "assisted_tackle_play_rate": 0.2041,
+  "interception_share": {
+   "DB": 0.7863,
+   "DL": 0.0192,
+   "LB": 0.1944
+  },
+  "negative_run_loss_distribution": {
+   "1": 0.4301,
+   "2": 0.2524,
+   "3": 0.1434,
+   "4": 0.0849,
+   "5": 0.0417,
+   "6+": 0.0475
+  },
+  "negative_run_rate": 0.1007,
+  "pass_defensed_share": {
+   "DB": 0.6728,
+   "DL": 0.1353,
+   "LB": 0.1919
+  },
+  "passing": {
+   "qb1_attempt_share": 0.9783,
+   "single_passer_team_game_rate": 0.8281
+  },
+  "penalty_first_downs_per_team_game": 1.795,
+  "rank_shares": {
+   "rush_RB": [
+    0.7414,
+    0.2131,
+    0.0437,
+    0.0018
+   ],
+   "tackle_DB": [
+    0.3237,
+    0.2382,
+    0.1789,
+    0.131,
+    0.0847,
+    0.0347,
+    0.0077
+   ],
+   "tackle_DL": [
+    0.3749,
+    0.2391,
+    0.165,
+    0.1134,
+    0.0646,
+    0.0306,
+    0.0106
+   ],
+   "tackle_LB": [
+    0.4397,
+    0.2913,
+    0.1695,
+    0.0679,
+    0.0233,
+    0.0062,
+    0.0016
+   ],
+   "target_RB": [
+    0.7542,
+    0.2107,
+    0.0329
+   ],
+   "target_TE": [
+    0.7923,
+    0.1859,
+    0.0218
+   ],
+   "target_WR": [
+    0.4685,
+    0.2983,
+    0.1657,
+    0.0571,
+    0.01
+   ]
+  },
+  "run_tfl_play_rate": 0.0984,
+  "rush_share": {
+   "FB": 0.0215,
+   "QB": 0.0901,
+   "RB": 0.867,
+   "TE": 0.0004,
+   "WR": 0.019
+  },
+  "sack_share": {
+   "DB": 0.0633,
+   "DL": 0.5994,
+   "LB": 0.3373
+  },
+  "scrimmage_first_downs_per_team_game": 18.049,
+  "tackle_share": {
+   "DB": 0.4012,
+   "DL": 0.2263,
+   "LB": 0.3529
+  },
+  "target_share": {
+   "FB": 0.026,
+   "RB": 0.1552,
+   "TE": 0.2148,
+   "WR": 0.6022
+  },
+  "tfl_share": {
+   "DB": 0.1693,
+   "DL": 0.4559,
+   "LB": 0.3736
+  },
+  "third_down_attempts_per_team_game": 13.309
+ },
+ "verification": {
+  "max_abs_share_difference": 0.0039,
+  "method": "Every share was recomputed from the independently published nflscrapR play-by-play using the same nflverse 2012 roster position map. Values below are the nflverse figures; the verification figures are stored alongside.",
+  "position_map_note": "Both passes share the nflverse 2012 roster position map, so position labelling is not independently verified. In the rusher/target pass, 2 player IDs in the nflscrapR file had no roster position match; tackle credits without a match are excluded from every group.",
+  "single_source_fields": [
+   "sack_share (nflscrapR 2012 file has no sack credit columns)",
+   "drive_model (nflverse fixed-drive fields; totals reconciled against the existing PFR-derived baseline instead)"
+  ],
+  "totals_cross_check": "nflverse sacks 1,169 equal the existing NFL.com baseline sacks 1,169; interception credits 468 equal the baseline interceptions 468; pass attempts 17,753 vs baseline 17,788 (spikes and aborted plays classified differently)."
+ },
+ "verification_values": {
+  "assisted_tackle_play_rate": 0.2047,
+  "interception_share": {
+   "DB": 0.7854,
+   "DL": 0.0205,
+   "LB": 0.1941
+  },
+  "negative_run_loss_distribution": {
+   "1": 0.4302,
+   "2": 0.252,
+   "3": 0.1424,
+   "4": 0.0855,
+   "5": 0.0424,
+   "6+": 0.0475
+  },
+  "negative_run_rate": 0.1009,
+  "pass_defensed_share": {
+   "DB": 0.6732,
+   "DL": 0.1387,
+   "LB": 0.188
+  },
+  "passing": {
+   "qb1_attempt_share": 0.9782,
+   "single_passer_team_game_rate": 0.8281
+  },
+  "penalty_first_downs_per_team_game": 1.795,
+  "rank_shares": {
+   "rush_RB": [
+    0.7413,
+    0.2133,
+    0.0436,
+    0.0018
+   ],
+   "tackle_DB": [
+    0.3239,
+    0.2376,
+    0.179,
+    0.1311,
+    0.0843,
+    0.0353,
+    0.0077
+   ],
+   "tackle_DL": [
+    0.3757,
+    0.2388,
+    0.165,
+    0.1136,
+    0.0647,
+    0.0301,
+    0.0105
+   ],
+   "tackle_LB": [
+    0.4393,
+    0.2907,
+    0.1698,
+    0.068,
+    0.0239,
+    0.0062,
+    0.0016
+   ],
+   "target_RB": [
+    0.7533,
+    0.2113,
+    0.0332
+   ],
+   "target_TE": [
+    0.7916,
+    0.1864,
+    0.022
+   ],
+   "target_WR": [
+    0.4687,
+    0.298,
+    0.166,
+    0.0568,
+    0.0101
+   ]
+  },
+  "run_tfl_play_rate": 0.0981,
+  "rush_share": {
+   "FB": 0.0215,
+   "QB": 0.0905,
+   "RB": 0.8667,
+   "TE": 0.0004,
+   "WR": 0.0189
+  },
+  "sack_share": null,
+  "scrimmage_first_downs_per_team_game": 18.053,
+  "tackle_share": {
+   "DB": 0.4006,
+   "DL": 0.2262,
+   "LB": 0.3519
+  },
+  "target_share": {
+   "FB": 0.0261,
+   "RB": 0.1557,
+   "TE": 0.2143,
+   "WR": 0.6017
+  },
+  "tfl_share": {
+   "DB": 0.1692,
+   "DL": 0.4528,
+   "LB": 0.3742
+  },
+  "third_down_attempts_per_team_game": 13.309
+ }
+}

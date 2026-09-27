@@ -1,0 +1,115 @@
+{
+ "schema_version": 1,
+ "team": "Jacksonville Jaguars",
+ "event": "2013 Regular Season Week 1, Kansas City at Jacksonville",
+ "status": "EX_ANTE_CALL_SHEET_CARRIED_FORWARD",
+ "provenance": "Structured football substance of every Jacksonville offensive call recorded in the voided generation-2 Week 1 snap ledger. Only call definitions are kept; usage counts and results were deleted with the voided receipt.",
+ "limitation": "The original approved sheet was frozen in the transient .sim_cache workspace and was not committed. A call that was on the approved sheet but never drawn in generation 2 cannot be recovered from the ledger. Stone may confirm, add or delete calls before the Week 1 replay; otherwise this sheet is the reused ex-ante plan.",
+ "offensive_call_sheet": [
+  {
+   "name": "10 Empty, Spacing",
+   "family": "Spacing",
+   "type": "pass",
+   "personnel": "10",
+   "formation": "10 Empty"
+  },
+  {
+   "name": "11 Bunch Right, Return, Mesh",
+   "family": "Mesh",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Bunch Right"
+  },
+  {
+   "name": "11 Doubles, RB Slow Screen",
+   "family": "RB Slow Screen",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles"
+  },
+  {
+   "name": "11 Doubles, Vert, Alert X",
+   "family": "Four Verticals",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles"
+  },
+  {
+   "name": "11 Gun Trey, Zip, Stick",
+   "family": "Stick",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Gun Trey"
+  },
+  {
+   "name": "11 Trey Right, Dagger",
+   "family": "Dagger",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Trey Right"
+  },
+  {
+   "name": "12 Wing Left, Boot Flood R",
+   "family": "Outside Boot Flood",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Wing Left"
+  },
+  {
+   "name": "13 Heavy Left, Post-Cross, Max",
+   "family": "Post-Cross",
+   "type": "pass",
+   "personnel": "13",
+   "formation": "13 Heavy Left"
+  },
+  {
+   "name": "20 Doubles, Drive",
+   "family": "Drive",
+   "type": "pass",
+   "personnel": "20",
+   "formation": "20 Doubles"
+  },
+  {
+   "name": "11 Trips Right, Inside L, Access Bubble",
+   "family": "Inside + Bubble",
+   "type": "run",
+   "personnel": "11",
+   "formation": "11 Trips Right"
+  },
+  {
+   "name": "12 Ace Right, Power R",
+   "family": "Power",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace Right"
+  },
+  {
+   "name": "12 Wing Left, Outside L",
+   "family": "Outside Zone",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Wing Left"
+  },
+  {
+   "name": "12 Wing Right, Trade, Split L",
+   "family": "Split Zone",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Wing Right"
+  },
+  {
+   "name": "13 Heavy Right, Power L",
+   "family": "Power",
+   "type": "run",
+   "personnel": "13",
+   "formation": "13 Heavy Right"
+  },
+  {
+   "name": "21 Pro Left, Counter R",
+   "family": "Counter",
+   "type": "run",
+   "personnel": "21",
+   "formation": "21 Pro Left"
+  }
+ ]
+}

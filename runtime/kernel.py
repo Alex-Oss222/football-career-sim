@@ -6,6 +6,7 @@ from . import KERNEL_VERSION
 from .calibration import load, validate
 from .injuries import maybe_injury
 from .rules import RULES
+from . import usage
 from .player_evidence import empty_player_stats, normalize_players, observation
 from .play_detail import apply_drive_detail, canonical_call_sheet
 
@@ -167,6 +168,40 @@ def _drive_team_stats(rng, cal, team, defense, plays, pass_plays, sacks):
     return pass_yards, rush_yards
 
 
+def _draw_plays(rng, drive_model, outcome, scale):
+    """Scrimmage snaps for a resolved drive, shaped by its terminal result."""
+    row = drive_model[outcome]
+    return max(1, min(20, round(rng.gauss(row["plays_mean"] * scale, row["plays_sd"] * scale))))
+
+
+def _draw_seconds(rng, drive_model, outcome, plays, clock_scale):
+    # Only the mean pace per play is sourced; the per-snap spread is a
+    # modelling assumption that leaves that mean unchanged.
+    pace = drive_model[outcome]["seconds_per_play"] * clock_scale
+    return max(1, round(sum(rng.uniform(0.6, 1.4) * pace for _ in range(plays))))
+
+
+def _chains(rng, cal, values, plays, yards, penalties):
+    """Third-down attempts/conversions and first downs for one drive."""
+    per_game_plays = cal["model"]["plays_per_team_game"]
+    third_rate = values["third_down_attempts_per_team_game"] / per_game_plays
+    attempts = sum(rng.random() < third_rate for _ in range(plays))
+    conversions = sum(rng.random() < cal["model"]["third_down_rate"] for _ in range(attempts))
+    yards_per_first_down = (
+        cal["model"]["yards_per_team_game"] / values["scrimmage_first_downs_per_team_game"]
+    )
+    first_downs = 0
+    if yards > 0:
+        whole, part = divmod(yards / yards_per_first_down, 1)
+        first_downs = int(whole) + (rng.random() < part)
+    per_penalty = (
+        values["penalty_first_downs_per_team_game"]
+        / (cal["model"]["penalty_per_play"] * per_game_plays)
+    )
+    first_downs += sum(rng.random() < per_penalty for _ in range(penalties))
+    return attempts, conversions, first_downs
+
+
 def resolve_game(
     home,
     away,
@@ -201,7 +236,11 @@ def resolve_game(
     rng = _rng(seed, packet)
     cal = load()
     assert not validate(cal)
+    assert not usage.validate()
     probs = cal["model"]["drive_outcomes"]
+    usage_values = usage.load()["values"]
+    drive_model = usage.load()["drive_model"]
+    plays_scale, clock_scale = usage.drive_scales(cal)
 
     possessions = []
     play_ledger = []
@@ -231,6 +270,8 @@ def resolve_game(
     }
     play_call_stats = {home.team_id: {}, away.team_id: {}}
     evidence = []
+    # Legacy synthetic inputs without a QB keep one deterministic passer.
+    passers = {tid: usage.game_passer(players) or players[0] for tid, players in rosters.items()}
 
     clock = RULES.quarter_seconds * 4
     offense = away.team_id if rng.random() < 0.5 else home.team_id
@@ -241,8 +282,6 @@ def resolve_game(
         defense = away if offense == home.team_id else home
         drive_no += 1
         start_clock = clock
-        seconds = min(clock, rng.randint(95, 205))
-        clock -= seconds
 
         edge = max(
             -0.06,
@@ -264,7 +303,9 @@ def resolve_game(
             if draw <= cumulative:
                 break
 
-        plays = rng.randint(3, 10)
+        plays = _draw_plays(rng, drive_model, outcome, plays_scale)
+        seconds = min(clock, _draw_seconds(rng, drive_model, outcome, plays, clock_scale))
+        clock -= seconds
         pass_plays = sum(
             rng.random() < cal["model"]["pass_play_share"] for _ in range(plays)
         )
@@ -290,18 +331,17 @@ def resolve_game(
         s["passing_yards"] += pass_yards
         s["rushing_yards"] += rush_yards
         s["sacks_allowed"] += sacks
-        s["first_downs"] += max(0, round((pass_yards + rush_yards) / 15))
-
-        third = max(0, plays // 3)
-        s["third_down_attempts"] += third
-        s["third_down_conversions"] += sum(
-            rng.random() < cal["model"]["third_down_rate"] for _ in range(third)
-        )
         pens = sum(
             rng.random() < cal["model"]["penalty_per_play"] for _ in range(plays)
         )
         s["penalties"] += pens
         s["penalty_yards"] += pens * rng.randint(5, 10) if pens else 0
+        third, converted, firsts = _chains(
+            rng, cal, usage_values, plays, pass_yards + rush_yards, pens
+        )
+        s["first_downs"] += firsts
+        s["third_down_attempts"] += third
+        s["third_down_conversions"] += converted
 
         points = 0
         if outcome == "touchdown":
@@ -348,6 +388,7 @@ def resolve_game(
             end_clock=clock,
             kick_return=kick_return,
             punt_return=punt_return,
+            passer=passers[offense],
         )
         for play in drive_ledger:
             play["sequence"] = len(play_ledger) + 1
@@ -389,14 +430,12 @@ def resolve_game(
 
         while True:
             start_ot_clock = ot_limit - overtime_seconds
-            seconds = min(start_ot_clock, rng.randint(75, 190))
-            if seconds <= 0:
+            if start_ot_clock <= 0:
                 if game_type == "postseason":
                     ot_limit += RULES.postseason_ot_seconds
                     continue
                 break
 
-            overtime_seconds += seconds
             possessions_in_ot += 1
             drive_no += 1
             team = teams[ot_offense]
@@ -409,7 +448,9 @@ def resolve_game(
                 if draw <= cumulative:
                     break
 
-            plays = rng.randint(3, 9)
+            plays = _draw_plays(rng, drive_model, outcome, plays_scale)
+            seconds = min(start_ot_clock, _draw_seconds(rng, drive_model, outcome, plays, clock_scale))
+            overtime_seconds += seconds
             pass_plays = sum(
                 rng.random() < cal["model"]["pass_play_share"] for _ in range(plays)
             )
@@ -435,18 +476,17 @@ def resolve_game(
             s["passing_yards"] += pass_yards
             s["rushing_yards"] += rush_yards
             s["sacks_allowed"] += sacks
-            s["first_downs"] += max(0, round((pass_yards + rush_yards) / 15))
-
-            third = max(0, plays // 3)
-            s["third_down_attempts"] += third
-            s["third_down_conversions"] += sum(
-                rng.random() < cal["model"]["third_down_rate"] for _ in range(third)
-            )
             pens = sum(
                 rng.random() < cal["model"]["penalty_per_play"] for _ in range(plays)
             )
             s["penalties"] += pens
             s["penalty_yards"] += pens * rng.randint(5, 10) if pens else 0
+            third, converted, firsts = _chains(
+                rng, cal, usage_values, plays, pass_yards + rush_yards, pens
+            )
+            s["first_downs"] += firsts
+            s["third_down_attempts"] += third
+            s["third_down_conversions"] += converted
 
             points = 7 if outcome == "touchdown" else 3 if outcome == "field_goal" else 0
             if outcome == "touchdown":
@@ -492,6 +532,7 @@ def resolve_game(
                 end_clock=end_ot_clock,
                 kick_return=kick_return,
                 punt_return=punt_return,
+                passer=passers[ot_offense],
             )
             for play in drive_ledger:
                 play["period"] = "OT"
@@ -580,6 +621,15 @@ def validate_result(result):
             errors.append("receiving yardage mismatch")
         if sum(p["sacks_allowed"] for p in players.values()) != s["sacks_allowed"]:
             errors.append("sack attribution mismatch")
+        if sum(p["receptions"] for p in players.values()) != sum(p["completions"] for p in players.values()):
+            errors.append("reception/completion mismatch")
+        if sum(p["pass_attempts"] > 0 for p in players.values()) > 1:
+            errors.append("more than one passer without a game-passer change")
+        if any(p["tackles"] != p["solo_tackles"] + p["assisted_tackles"] for p in players.values()):
+            errors.append("tackle credit mismatch")
+        opponent = next(t for t in result["team_stats"] if t != team)
+        if sum(p["sacks"] for p in result["team_stats"][opponent]["players"].values()) != s["sacks_allowed"]:
+            errors.append("defensive sack credit mismatch")
         if (
             sum(p["interceptions_thrown"] + p["fumbles_lost"] for p in players.values())
             != s["turnovers"]

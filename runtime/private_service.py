@@ -10,7 +10,7 @@ from contextlib import closing
 from urllib.parse import urlsplit, parse_qs
 from .packets import canonical
 
-SCHEMA="1"; KERNEL="2013.3"
+SCHEMA="1"; KERNEL="2013.4"
 
 class Store:
     def __init__(self,path):
@@ -44,16 +44,25 @@ class Store:
                 next_snapshot TEXT NOT NULL,
                 checkpoint TEXT NOT NULL,
                 created INTEGER NOT NULL);""")
-    def initialize(self,snapshot):
+    def initialize(self,snapshot,allow_pending=False):
+        """Bind the store to the image's Document 5 digest.
+
+        With allow_pending, a stored snapshot that differs from the image is
+        kept (never overwritten) and the service starts locked: event closure
+        is refused until the ordinary CAS advance from merged main catches the
+        store up. Returns True when an advance is pending.
+        """
         with self.lock, closing(self.connect()) as c, c:
             c.execute("BEGIN IMMEDIATE")
             row=c.execute("SELECT value FROM meta WHERE key='seed'").fetchone()
             if not row: c.execute("INSERT INTO meta VALUES('seed',?)",(secrets.token_bytes(32),))
             old=c.execute("SELECT value FROM meta WHERE key='snapshot'").fetchone()
-            if old and old[0].decode()!=snapshot: raise ValueError("branch snapshot mismatch")
+            pending=bool(old and old[0].decode()!=snapshot)
+            if pending and not allow_pending: raise ValueError("branch snapshot mismatch")
             c.execute("INSERT OR IGNORE INTO meta VALUES('snapshot',?)",(snapshot.encode(),))
             c.execute("INSERT OR REPLACE INTO meta VALUES('kernel',?)",(KERNEL.encode(),))
             c.execute("INSERT OR REPLACE INTO meta VALUES('schema',?)",(SCHEMA.encode(),))
+            return pending
     def current_snapshot(self):
         with closing(self.connect()) as c:
             row=c.execute("SELECT value FROM meta WHERE key='snapshot'").fetchone()
@@ -200,7 +209,12 @@ class Store:
                     "INSERT INTO corrections(event_id,reason,created) VALUES(?,?,?)",
                     (event_id,reason,int(time.time())))
 
-def handler(store,token,snapshot=None):
+def handler(store,token,snapshot=None,locked_until=None):
+    # locked_until: set only when an image started behind/ahead of the stored
+    # snapshot. Event closure stays refused until the ordinary CAS advance
+    # makes the stored snapshot equal that image digest.
+    def pending():
+        return locked_until is not None and store.current_snapshot()!=locked_until
     class Handler(BaseHTTPRequestHandler):
         def log_message(self,fmt,*args): pass
         def send(self,status,body):
@@ -214,12 +228,15 @@ def handler(store,token,snapshot=None):
             if not self.auth(): return
             if self.path=="/ready":
                 current=store.current_snapshot()
-                return self.send(200,{"ready":store.ready(),"schema":SCHEMA,"kernel":KERNEL,"procedure":KERNEL,"snapshot":current,"career_initialized":True,"private_seed_exists":True,"journal_persistent":True,"recovery":"verified"})
+                waiting=pending()
+                return self.send(200,{"ready":store.ready() and not waiting,"snapshot_advance_pending":waiting,"schema":SCHEMA,"kernel":KERNEL,"procedure":KERNEL,"snapshot":current,"career_initialized":True,"private_seed_exists":True,"journal_persistent":True,"recovery":"verified"})
             self.send(404,{"error":"not found"})
         def do_POST(self):
             if not self.auth(): return
             try:
                 parsed=urlsplit(self.path)
+                if parsed.path in {"/events/close","/admin/probe"} and pending():
+                    return self.send(409,{"error":"snapshot advance pending; event closure locked"})
                 if parsed.path=="/events/close":
                     # Canonical production contract: event identity and the
                     # SHA-256 identity of the canonical packet travel in the

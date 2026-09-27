@@ -105,5 +105,29 @@ class ContinuityTests(unittest.TestCase):
             assess(self.root)
 
 
+    def test_stale_stat_cache_is_rejected(self):
+        cache = self.root/'career/2013/stats/season_totals.json'
+        data = json.loads(cache.read_text())
+        data['receipt_count'] = 999
+        cache.write_text(json.dumps(data, sort_keys=True, separators=(',', ':'))+'\n')
+        self.assertTrue(any('season_totals.json is stale' in error for error in validate(self.root)))
+
+    def test_stale_generated_stat_view_is_rejected(self):
+        view = self.root/'career/2013/stats/league_leaders.md'
+        view.write_text(view.read_text()+'\nSynthetic stale line.\n')
+        self.assertTrue(any('stale generated stat view' in error for error in validate(self.root)))
+
+    def test_receipt_score_mismatch_is_rejected(self):
+        receipt = self.root/'career/2013/stats/game_receipts/synthetic-score-check.json'
+        data = {
+            'schema_version': 2, 'event_id': 'synthetic-score-check', 'week': 1,
+            'matchup': 'B at A', 'coverage': 'complete', 'detail': 'compact_stats',
+            'final_score': {'A': 8, 'B': 0},
+            'team_stats': {'A': {'points': 7, 'players': {}}, 'B': {'points': 0, 'players': {}}},
+        }
+        receipt.write_text(json.dumps(data, sort_keys=True, separators=(',', ':'))+'\n')
+        self.assertTrue(any('receipt points differ from final score' in error for error in validate(self.root)))
+
+
 if __name__ == '__main__':
     unittest.main()

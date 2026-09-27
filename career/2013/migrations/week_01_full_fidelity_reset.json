@@ -1,178 +1,173 @@
 {
-  "schema_version": 1,
-  "migration": "2013-week-01-full-fidelity-reset",
-  "status": "GENERATION_2_PUBLISHED_ATTRIBUTION_CORRECTED",
-  "user_authorized": true,
-  "source_checkpoint": "Canonical update - September 4, 2013 - preseason, roster and cap block closed",
-  "purpose": "Replace the legacy Week 1 slate only after all 16 games can be rerun under the full snap/stat receipt contract.",
-  "execution_rule": "All 32 pre-Week-1 TeamInput records must be canonical and complete before any replacement game is closed.",
-  "games": [
-    {
-      "order": 1,
-      "away": "Baltimore Ravens",
-      "home": "Denver Broncos",
-      "event_id": "2013-week01-reset-v2-01",
-      "input_status": "TRANSIENT_INPUTS_VALIDATED",
-      "away_input": null,
-      "home_input": null
-    },
-    {
-      "order": 2,
-      "away": "New England Patriots",
-      "home": "Buffalo Bills",
-      "event_id": "2013-week01-reset-v2-02",
-      "input_status": "TRANSIENT_INPUTS_VALIDATED",
-      "away_input": null,
-      "home_input": null
-    },
-    {
-      "order": 3,
-      "away": "Tennessee Titans",
-      "home": "Pittsburgh Steelers",
-      "event_id": "2013-week01-reset-v2-03",
-      "input_status": "TRANSIENT_INPUTS_VALIDATED",
-      "away_input": null,
-      "home_input": null
-    },
-    {
-      "order": 4,
-      "away": "Atlanta Falcons",
-      "home": "New Orleans Saints",
-      "event_id": "2013-week01-reset-v2-04",
-      "input_status": "TRANSIENT_INPUTS_VALIDATED",
-      "away_input": null,
-      "home_input": null
-    },
-    {
-      "order": 5,
-      "away": "Tampa Bay Buccaneers",
-      "home": "New York Jets",
-      "event_id": "2013-week01-reset-v2-05",
-      "input_status": "TRANSIENT_INPUTS_VALIDATED",
-      "away_input": null,
-      "home_input": null
-    },
-    {
-      "order": 6,
-      "away": "Seattle Seahawks",
-      "home": "Carolina Panthers",
-      "event_id": "2013-week01-reset-v2-06",
-      "input_status": "TRANSIENT_INPUTS_VALIDATED",
-      "away_input": null,
-      "home_input": null
-    },
-    {
-      "order": 7,
-      "away": "Cincinnati Bengals",
-      "home": "Chicago Bears",
-      "event_id": "2013-week01-reset-v2-07",
-      "input_status": "TRANSIENT_INPUTS_VALIDATED",
-      "away_input": null,
-      "home_input": null
-    },
-    {
-      "order": 8,
-      "away": "Miami Dolphins",
-      "home": "Cleveland Browns",
-      "event_id": "2013-week01-reset-v2-08",
-      "input_status": "TRANSIENT_INPUTS_VALIDATED",
-      "away_input": null,
-      "home_input": null
-    },
-    {
-      "order": 9,
-      "away": "Minnesota Vikings",
-      "home": "Detroit Lions",
-      "event_id": "2013-week01-reset-v2-09",
-      "input_status": "TRANSIENT_INPUTS_VALIDATED",
-      "away_input": null,
-      "home_input": null
-    },
-    {
-      "order": 10,
-      "away": "Oakland Raiders",
-      "home": "Indianapolis Colts",
-      "event_id": "2013-week01-reset-v2-10",
-      "input_status": "TRANSIENT_INPUTS_VALIDATED",
-      "away_input": null,
-      "home_input": null
-    },
-    {
-      "order": 11,
-      "away": "Green Bay Packers",
-      "home": "San Francisco 49ers",
-      "event_id": "2013-week01-reset-v2-11",
-      "input_status": "TRANSIENT_INPUTS_VALIDATED",
-      "away_input": null,
-      "home_input": null
-    },
-    {
-      "order": 12,
-      "away": "Arizona Cardinals",
-      "home": "St. Louis Rams",
-      "event_id": "2013-week01-reset-v2-12",
-      "input_status": "TRANSIENT_INPUTS_VALIDATED",
-      "away_input": null,
-      "home_input": null
-    },
-    {
-      "order": 13,
-      "away": "New York Giants",
-      "home": "Dallas Cowboys",
-      "event_id": "2013-week01-reset-v2-13",
-      "input_status": "TRANSIENT_INPUTS_VALIDATED",
-      "away_input": null,
-      "home_input": null
-    },
-    {
-      "order": 14,
-      "away": "Philadelphia Eagles",
-      "home": "Washington Redskins",
-      "event_id": "2013-week01-reset-v2-14",
-      "input_status": "TRANSIENT_INPUTS_VALIDATED",
-      "away_input": null,
-      "home_input": null
-    },
-    {
-      "order": 15,
-      "away": "Houston Texans",
-      "home": "San Diego Chargers",
-      "event_id": "2013-week01-reset-v2-15",
-      "input_status": "TRANSIENT_INPUTS_VALIDATED",
-      "away_input": null,
-      "home_input": null
-    },
-    {
-      "order": 16,
-      "away": "Kansas City Chiefs",
-      "home": "Jacksonville Jaguars",
-      "event_id": "2013-week01-reset-v2-16",
-      "input_status": "TRANSIENT_INPUTS_VALIDATED",
-      "away_input": null,
-      "home_input": null
-    }
-  ],
-  "event_generation": 2,
-  "previous_generation": {
-    "generation": 1,
-    "status": "ABORTED_UNCOMMITTED_TECHNICAL_FAILURE",
-    "reason": "Codex generated diff exceeded extraction size after private event closure and an erroneous pre-merge private snapshot advance; no public reset commit or PR landed."
+ "schema_version": 1,
+ "migration": "2013-week-01-full-fidelity-reset",
+ "status": "GENERATION_3_PENDING_KERNEL_2013_4",
+ "user_authorized": true,
+ "source_checkpoint": "Canonical update - September 4, 2013 - preseason, roster and cap block closed",
+ "purpose": "Replace the legacy Week 1 slate only after all 16 games can be rerun under the full snap/stat receipt contract.",
+ "execution_rule": "All 32 pre-Week-1 TeamInput records must be canonical and complete before any replacement game is closed.",
+ "games": [
+  {
+   "order": 1,
+   "away": "Baltimore Ravens",
+   "home": "Denver Broncos",
+   "event_id": "2013-week01-reset-v3-01",
+   "input_status": "INPUTS_REQUIRED",
+   "away_input": null,
+   "home_input": null
   },
-  "publication_commit": "6658e3c0e8797f0524a9fda25a4624992118815f",
-  "input_storage": ".sim_cache/week_01_full_fidelity_inputs.json (transient; validated before generation-2 closure, intentionally not committed)",
-  "attribution_correction": {
-    "status": "OUTCOME_PRESERVING_PUBLIC_CORRECTION",
-    "affected_receipts": [
-      "2013-week01-reset-v2-01",
-      "2013-week01-reset-v2-08",
-      "2013-week01-reset-v2-11",
-      "2013-week01-reset-v2-14",
-      "2013-week01-reset-v2-16"
-    ],
-    "reason": "historical Week-1 roster rails incorrectly retained players already controlled by Jacksonville branch canon",
-    "score_effect": "none",
-    "standings_effect": "none",
-    "player_stat_effect": "impossible non-Jacksonville attributions moved to explicit pseudo/unattributed rows; exact replacement player attribution withheld",
-    "league_rankings": "withheld until player attribution coverage is complete"
+  {
+   "order": 2,
+   "away": "New England Patriots",
+   "home": "Buffalo Bills",
+   "event_id": "2013-week01-reset-v3-02",
+   "input_status": "INPUTS_REQUIRED",
+   "away_input": null,
+   "home_input": null
+  },
+  {
+   "order": 3,
+   "away": "Tennessee Titans",
+   "home": "Pittsburgh Steelers",
+   "event_id": "2013-week01-reset-v3-03",
+   "input_status": "INPUTS_REQUIRED",
+   "away_input": null,
+   "home_input": null
+  },
+  {
+   "order": 4,
+   "away": "Atlanta Falcons",
+   "home": "New Orleans Saints",
+   "event_id": "2013-week01-reset-v3-04",
+   "input_status": "INPUTS_REQUIRED",
+   "away_input": null,
+   "home_input": null
+  },
+  {
+   "order": 5,
+   "away": "Tampa Bay Buccaneers",
+   "home": "New York Jets",
+   "event_id": "2013-week01-reset-v3-05",
+   "input_status": "INPUTS_REQUIRED",
+   "away_input": null,
+   "home_input": null
+  },
+  {
+   "order": 6,
+   "away": "Seattle Seahawks",
+   "home": "Carolina Panthers",
+   "event_id": "2013-week01-reset-v3-06",
+   "input_status": "INPUTS_REQUIRED",
+   "away_input": null,
+   "home_input": null
+  },
+  {
+   "order": 7,
+   "away": "Cincinnati Bengals",
+   "home": "Chicago Bears",
+   "event_id": "2013-week01-reset-v3-07",
+   "input_status": "INPUTS_REQUIRED",
+   "away_input": null,
+   "home_input": null
+  },
+  {
+   "order": 8,
+   "away": "Miami Dolphins",
+   "home": "Cleveland Browns",
+   "event_id": "2013-week01-reset-v3-08",
+   "input_status": "INPUTS_REQUIRED",
+   "away_input": null,
+   "home_input": null
+  },
+  {
+   "order": 9,
+   "away": "Minnesota Vikings",
+   "home": "Detroit Lions",
+   "event_id": "2013-week01-reset-v3-09",
+   "input_status": "INPUTS_REQUIRED",
+   "away_input": null,
+   "home_input": null
+  },
+  {
+   "order": 10,
+   "away": "Oakland Raiders",
+   "home": "Indianapolis Colts",
+   "event_id": "2013-week01-reset-v3-10",
+   "input_status": "INPUTS_REQUIRED",
+   "away_input": null,
+   "home_input": null
+  },
+  {
+   "order": 11,
+   "away": "Green Bay Packers",
+   "home": "San Francisco 49ers",
+   "event_id": "2013-week01-reset-v3-11",
+   "input_status": "INPUTS_REQUIRED",
+   "away_input": null,
+   "home_input": null
+  },
+  {
+   "order": 12,
+   "away": "Arizona Cardinals",
+   "home": "St. Louis Rams",
+   "event_id": "2013-week01-reset-v3-12",
+   "input_status": "INPUTS_REQUIRED",
+   "away_input": null,
+   "home_input": null
+  },
+  {
+   "order": 13,
+   "away": "New York Giants",
+   "home": "Dallas Cowboys",
+   "event_id": "2013-week01-reset-v3-13",
+   "input_status": "INPUTS_REQUIRED",
+   "away_input": null,
+   "home_input": null
+  },
+  {
+   "order": 14,
+   "away": "Philadelphia Eagles",
+   "home": "Washington Redskins",
+   "event_id": "2013-week01-reset-v3-14",
+   "input_status": "INPUTS_REQUIRED",
+   "away_input": null,
+   "home_input": null
+  },
+  {
+   "order": 15,
+   "away": "Houston Texans",
+   "home": "San Diego Chargers",
+   "event_id": "2013-week01-reset-v3-15",
+   "input_status": "INPUTS_REQUIRED",
+   "away_input": null,
+   "home_input": null
+  },
+  {
+   "order": 16,
+   "away": "Kansas City Chiefs",
+   "home": "Jacksonville Jaguars",
+   "event_id": "2013-week01-reset-v3-16",
+   "input_status": "INPUTS_REQUIRED",
+   "away_input": null,
+   "home_input": null
   }
+ ],
+ "event_generation": 3,
+ "input_storage": ".sim_cache/week_01_full_fidelity_inputs.json (transient; must be rebuilt with explicit depth order for kernel 2013.4; never committed)",
+ "kernel_version": "2013.4",
+ "previous_generations": [
+  {
+   "generation": 1,
+   "status": "ABORTED_UNCOMMITTED_TECHNICAL_FAILURE",
+   "reason": "Codex generated diff exceeded extraction size after private event closure and an erroneous pre-merge private snapshot advance; no public reset commit or PR landed."
+  },
+  {
+   "generation": 2,
+   "status": "VOID_KERNEL_DEFECTS",
+   "publication_commit": "6658e3c0e8797f0524a9fda25a4624992118815f",
+   "void_entry": "career/2013/ledger.md Entry 34",
+   "reason": "verified kernel 2013.3 attribution and volume defects and thin background TeamInputs; all 16 games void, receipts deleted"
+  }
+ ],
+ "protagonist_call_sheet": "career/2013/regular_season/week_01_kansas_city_at_jacksonville/call_sheet.json"
 }

@@ -60,6 +60,12 @@ def overlay_cached_inputs(data, cache):
 
 def check(data):
     errors = []
+    sys.path.insert(0, str(ROOT))
+    from runtime import KERNEL_VERSION
+    if data.get("kernel_version") != KERNEL_VERSION:
+        errors.append(
+            f"manifest kernel {data.get('kernel_version')} differs from runtime {KERNEL_VERSION}"
+        )
     if data.get("migration") != "2013-week-01-full-fidelity-reset":
         errors.append("wrong migration manifest")
     if data.get("user_authorized") is not True:

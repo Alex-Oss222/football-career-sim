@@ -72,12 +72,20 @@
     "career/2013/statbook.md",
     "career/2013/stats/all_player_stats.md",
     "career/2013/stats/play_call_stats.md",
+    "career/2013/stats/calibration_audit.md",
+    "career/2013/stats/team_stats.md",
     "career/2013/migrations/week_01_full_fidelity_reset.md",
     "career/2013/migrations/week_01_full_fidelity_reset.json",
     "runtime/play_detail.py",
     "scripts/check_week1_reset_ready.py",
     "scripts/check_week_input_exclusivity.py",
-    "tests/test_week_input_exclusivity.py"
+    "tests/test_week_input_exclusivity.py",
+    "career/2013/migrations/week_01_kernel_2013_4_restart.md",
+    "career/2013/regular_season/week_01_kansas_city_at_jacksonville/call_sheet.json",
+    "library/2012_position_usage_calibration.md",
+    "library/data/2012_nfl_position_usage_baseline.json",
+    "runtime/usage.py",
+    "runtime/bands.py"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",

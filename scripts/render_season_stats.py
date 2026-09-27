@@ -10,6 +10,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
+from runtime.bands import audit
 from runtime.statbook import aggregate_receipts, leaders
 
 
@@ -21,7 +22,15 @@ def load_receipts(directory):
     return receipts
 
 
+def through_line(book):
+    if not book.get("receipt_count"):
+        return "**Through:** no regular-season game has closed."
+    return "**Through:** Week %d." % book["through_week"]
+
+
 def coverage_line(book, team_id=None):
+    if not book.get("receipt_count"):
+        return "**Coverage:** no closed-game receipts yet; every table is empty."
     if not book["coverage_complete"]:
         return (
             "**Coverage:** PARTIAL. One or more legacy games lack a complete "
@@ -67,7 +76,7 @@ def team_markdown(year, team_id, book):
         "# %s %s player statistics" % (year, team_id),
         "",
         "**Version:** `%s-W%02d-TEAM-STATS-2`" % (year, book["through_week"]),
-        "**Through:** Week %d." % book["through_week"],
+        through_line(book),
         coverage_line(book, team_id),
         "",
     ]
@@ -204,40 +213,108 @@ def league_markdown(year, book):
     lines = [
         "# %s NFL player statistics" % year,
         "",
-        "**Version:** `%s-W%02d-LEAGUE-PLAYER-STATS-1`" % (year, book["through_week"]),
-        "**Through:** Week %d." % book["through_week"],
+        "**Version:** `%s-W%02d-LEAGUE-PLAYER-STATS-3`" % (year, book["through_week"]),
+        through_line(book),
         coverage_line(book),
         "",
     ]
     categories = (
-        ("Passing", ("pass_attempts", "passing_yards", "interceptions"), "passing_yards",
-         "| Player | Team(s) | ATT | YDS | INT |", "|---|---|---:|---:|---:|"),
+        ("Passing", ("pass_attempts", "passing_yards"), "passing_yards",
+         "| Player | Team(s) | CMP/ATT | YDS | AVG | TD | INT | SACK |",
+         "|---|---|---:|---:|---:|---:|---:|---:|",
+         lambda l: ("%s/%s" % (l["completions"], l["pass_attempts"]), l["passing_yards"],
+                    avg(l["passing_yards"], l["pass_attempts"]), l["passing_touchdowns"],
+                    l.get("interceptions_thrown", l["interceptions"]), l["sacks_taken"])),
         ("Rushing", ("rushing_attempts", "rushing_yards"), "rushing_yards",
-         "| Player | Team(s) | CAR | YDS | AVG |", "|---|---|---:|---:|---:|"),
-        ("Receiving", ("receptions", "receiving_yards"), "receiving_yards",
-         "| Player | Team(s) | REC | YDS | AVG |", "|---|---|---:|---:|---:|"),
-        ("Defense", ("tackles", "sacks"), "tackles",
-         "| Player | Team(s) | TKL | SACK |", "|---|---|---:|---:|"),
+         "| Player | Team(s) | CAR | YDS | AVG | TD | LNG | FUM |",
+         "|---|---|---:|---:|---:|---:|---:|---:|",
+         lambda l: (l["rushing_attempts"], l["rushing_yards"],
+                    avg(l["rushing_yards"], l["rushing_attempts"]), l["rushing_touchdowns"],
+                    l["long_rush"], l["fumbles"])),
+        ("Receiving", ("targets", "receptions", "receiving_yards"), "receiving_yards",
+         "| Player | Team(s) | REC | TGT | YDS | AVG | TD | LNG |",
+         "|---|---|---:|---:|---:|---:|---:|---:|",
+         lambda l: (l["receptions"], l["targets"], l["receiving_yards"],
+                    avg(l["receiving_yards"], l["receptions"]), l["receiving_touchdowns"],
+                    l["long_reception"])),
+        ("Defense", ("tackles", "sacks", "defensive_interceptions", "passes_defended"), "tackles",
+         "| Player | Team(s) | TKL | SOLO | AST | TFL | SACK | INT | PD | FF |",
+         "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|",
+         lambda l: (l["tackles"], l["solo_tackles"], l["assisted_tackles"], l["tackles_for_loss"],
+                    l["sacks"], l["defensive_interceptions"], l["passes_defended"],
+                    l["forced_fumbles"])),
     )
-    for title, fields, sort_field, header, separator in categories:
+    for title, fields, sort_field, header, separator, cells in categories:
         lines += ["## " + title, "", header, separator]
         for player, line in player_rows(players, fields, sort_field):
-            teams = ", ".join(line.get("teams", ()))
-            if title == "Passing":
-                row = (player, teams, line["pass_attempts"], line["passing_yards"], line["interceptions"])
-            elif title == "Rushing":
-                row = (player, teams, line["rushing_attempts"], line["rushing_yards"],
-                       avg(line["rushing_yards"], line["rushing_attempts"]))
-            elif title == "Receiving":
-                row = (player, teams, line["receptions"], line["receiving_yards"],
-                       avg(line["receiving_yards"], line["receptions"]))
-            else:
-                row = (player, teams, line["tackles"], line["sacks"])
-            if title == "Defense":
-                lines.append("| %s | %s | %s | %s |" % row)
-            else:
-                lines.append("| %s | %s | %s | %s | %s |" % row)
+            row = (player, ", ".join(line.get("teams", ()))) + tuple(cells(line))
+            lines.append("| " + " | ".join(str(value) for value in row) + " |")
         lines.append("")
+    return "\n".join(lines)
+
+
+def team_stats_markdown(year, book):
+    lines = [
+        "# %s NFL team statistics" % year,
+        "",
+        "**Version:** `%s-W%02d-TEAM-TOTALS-1`" % (year, book["through_week"]),
+        through_line(book),
+        "**Coverage:** team totals are complete for every stored receipt; records and tiebreaks live in `../standings.md`.",
+        "",
+        "Per-game averages from closed-game receipts. Plays are rushing attempts plus dropbacks.",
+        "",
+        "| Team | G | PTS/G | YDS/G | PASS/G | RUSH/G | PLAYS/G | 1D/G | 3RD | TO | SACKS ALLOWED | PEN/G | TOP/G |",
+        "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|",
+    ]
+    rows = []
+    for team_id, team in book.get("teams", {}).items():
+        games = team.get("games", 0)
+        if not games:
+            continue
+        t = team["team_stats"]
+        plays = sum(
+            line.get("rushing_attempts", 0) + line.get("dropbacks", 0)
+            for line in team.get("players", {}).values()
+        )
+        per = lambda value: "%.1f" % (value / games)
+        top = t["time_of_possession"] / games
+        rows.append((t["points"] / games, (
+            team_id, games, per(t["points"]), per(t["passing_yards"] + t["rushing_yards"]),
+            per(t["passing_yards"]), per(t["rushing_yards"]), per(plays), per(t["first_downs"]),
+            "%s/%s" % (t["third_down_conversions"], t["third_down_attempts"]),
+            t["turnovers"], t["sacks_allowed"], per(t["penalties"]),
+            "%d:%02d" % (top // 60, top % 60),
+        )))
+    rows.sort(key=lambda item: (-item[0], item[1][0]))
+    for _, row in rows:
+        lines.append("| " + " | ".join(str(value) for value in row) + " |")
+    lines.append("")
+    return "\n".join(lines)
+
+
+def calibration_audit_markdown(year, receipts, book):
+    team_games, rows = audit(receipts)
+    lines = [
+        "# %s statistical band audit" % year,
+        "",
+        "**Version:** `%s-W%02d-BAND-AUDIT-1`" % (year, book["through_week"]),
+        through_line(book),
+        "**Team-games audited:** %d (grading starts at 16)." % team_games,
+        "",
+        "League-wide receipts compared with the sourced 2012 shapes in "
+        "`library/data/2012_nfl_aggregate_baseline.json` and "
+        "`library/data/2012_nfl_position_usage_baseline.json`. This is a defect "
+        "detector for engine code and TeamInputs. An OUTSIDE row is investigated; "
+        "it never reruns, selects or edits a closed game.",
+        "",
+        "| Metric | Observed | 2012 band centre | Tolerance | Status |",
+        "|---|---:|---:|---:|---|",
+    ]
+    fmt = lambda v: "—" if v is None else ("%.3f" % v if abs(v) < 2 else "%.1f" % v)
+    for metric, observed, band, tolerance, status in rows:
+        lines.append("| %s | %s | %s | ±%s | %s |" % (
+            metric, fmt(observed), fmt(band), fmt(tolerance), status))
+    lines.append("")
     return "\n".join(lines)
 
 
@@ -279,7 +356,7 @@ def all_players_markdown(year, book):
     lines = [
         "# %s NFL all-player stat ledger" % year, "",
         "**Version:** `%s-W%02d-ALL-PLAYER-STATS-2`" % (year, book["through_week"]),
-        "**Through:** Week %d." % book["through_week"],
+        through_line(book),
         coverage_line(book), "",
         "Compact comprehensive ledger of every nonzero supported player counter "
         "preserved by the closed-game receipts. Zero-only rows are omitted from "
@@ -349,11 +426,14 @@ def leaders_markdown(year, book):
     lines = [
         "# %s NFL statistical leaders" % year,
         "",
-        "**Version:** `%s-W%02d-LEADERS-1`" % (year, book["through_week"]),
-        "**Through:** Week %d." % book["through_week"],
+        "**Version:** `%s-W%02d-LEADERS-3`" % (year, book["through_week"]),
+        through_line(book),
         coverage_line(book),
         "",
     ]
+    if not book.get("receipt_count"):
+        lines += ["No regular-season game has closed, so no leader exists yet.", ""]
+        return "\n".join(lines)
     if not book["coverage_complete"] or not book.get("player_attribution_complete", True):
         lines += [
             "League rankings are withheld while player attribution is incomplete. "
@@ -365,10 +445,16 @@ def leaders_markdown(year, book):
 
     for title, field in (
         ("Passing yards", "passing_yards"),
+        ("Passing touchdowns", "passing_touchdowns"),
         ("Rushing yards", "rushing_yards"),
+        ("Rushing touchdowns", "rushing_touchdowns"),
+        ("Receptions", "receptions"),
         ("Receiving yards", "receiving_yards"),
-        ("Sacks", "sacks"),
+        ("Receiving touchdowns", "receiving_touchdowns"),
         ("Tackles", "tackles"),
+        ("Tackles for loss", "tackles_for_loss"),
+        ("Sacks", "sacks"),
+        ("Interceptions", "defensive_interceptions"),
     ):
         lines += ["## " + title, "", "| Rank | Player | Team(s) | Total |", "|---:|---|---|---:|"]
         for rank, row in enumerate(leaders(book, field), 1):
@@ -385,7 +471,7 @@ def play_calls_markdown(year, team_id, book):
         "# %s %s offensive play-call statistics" % (year, team_id),
         "",
         "**Version:** `%s-W%02d-PLAY-CALL-STATS-1`" % (year, book["through_week"]),
-        "**Through:** Week %d." % book["through_week"],
+        through_line(book),
         coverage_line(book, team_id),
         "",
         "These are generated game-use totals for the named calls supplied in the weekly offensive call sheet. Generic calls appear only when a game packet did not provide a named call menu.",
@@ -406,6 +492,23 @@ def play_calls_markdown(year, team_id, book):
     lines.append("")
     return "\n".join(lines)
 
+def render_views(year, team, receipts):
+    """Every generated stat file, keyed by file name, from one receipt set."""
+    book = aggregate_receipts(receipts)
+    return {
+        "season_totals.json": json.dumps(
+            compact_book_for_storage(book), sort_keys=True, separators=(",", ":")
+        ) + "\n",
+        "team_player_stats.md": team_markdown(year, team, book),
+        "league_player_stats.md": league_markdown(year, book),
+        "all_player_stats.md": all_players_markdown(year, book),
+        "league_leaders.md": leaders_markdown(year, book),
+        "play_call_stats.md": play_calls_markdown(year, team, book),
+        "team_stats.md": team_stats_markdown(year, book),
+        "calibration_audit.md": calibration_audit_markdown(year, receipts, book),
+    }
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("year", type=int)
@@ -413,31 +516,11 @@ def main():
     args = parser.parse_args()
 
     stats_dir = ROOT / "career" / str(args.year) / "stats"
-    receipts_dir = stats_dir / "game_receipts"
-    receipts = load_receipts(receipts_dir)
-    if not receipts:
-        raise SystemExit("no stat receipts found in %s" % receipts_dir)
-
-    book = aggregate_receipts(receipts)
+    receipts = load_receipts(stats_dir / "game_receipts")
     stats_dir.mkdir(parents=True, exist_ok=True)
-    (stats_dir / "season_totals.json").write_text(
-        json.dumps(compact_book_for_storage(book), sort_keys=True, separators=(",",":")) + "\n", encoding="utf-8"
-    )
-    (stats_dir / "team_player_stats.md").write_text(
-        team_markdown(args.year, args.team, book), encoding="utf-8"
-    )
-    (stats_dir / "league_player_stats.md").write_text(
-        league_markdown(args.year, book), encoding="utf-8"
-    )
-    (stats_dir / "all_player_stats.md").write_text(
-        all_players_markdown(args.year, book), encoding="utf-8"
-    )
-    (stats_dir / "league_leaders.md").write_text(
-        leaders_markdown(args.year, book), encoding="utf-8"
-    )
-    (stats_dir / "play_call_stats.md").write_text(
-        play_calls_markdown(args.year, args.team, book), encoding="utf-8"
-    )
+    for name, text in render_views(args.year, args.team, receipts).items():
+        (stats_dir / name).write_text(text, encoding="utf-8")
+    print("rendered %d stat views from %d receipts" % (8, len(receipts)))
 
 
 if __name__ == "__main__":

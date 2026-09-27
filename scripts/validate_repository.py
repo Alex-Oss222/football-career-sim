@@ -121,6 +121,81 @@ def validate(root=ROOT):
     except (OSError, IndexError, TypeError, ValueError) as exc:
         errors.append(f'Malformed canonical state: {exc}')
 
+    # Season statistics are generated artifacts. Rebuild them from the durable
+    # closed-game receipts so stale caches or hand-edited views fail closed.
+    try:
+        import sys
+        if str(ROOT) not in sys.path:
+            sys.path.insert(0, str(ROOT))
+        from scripts.render_season_stats import render_views
+
+        stats_dir = root/'career/2013/stats'
+        receipt_paths = sorted((stats_dir/'game_receipts').glob('*.json'))
+        # Zero receipts is legitimate before the first regular-season game.
+        receipts = []
+        for receipt_path in receipt_paths:
+            receipt = json.loads(receipt_path.read_text())
+            receipts.append(receipt)
+            event_id = receipt.get('event_id', receipt_path.name)
+            team_stats = receipt.get('team_stats')
+            final_score = receipt.get('final_score')
+            require(
+                isinstance(team_stats, dict) and len(team_stats) == 2,
+                f'{event_id}: receipt must contain exactly two team-stat rows',
+            )
+            require(
+                isinstance(final_score, dict)
+                and isinstance(team_stats, dict)
+                and set(final_score) == set(team_stats),
+                f'{event_id}: final-score teams differ from team-stat teams',
+            )
+            if isinstance(team_stats, dict) and isinstance(final_score, dict):
+                for team_id, game in team_stats.items():
+                    if isinstance(game, dict):
+                        require(
+                            game.get('points') == final_score.get(team_id),
+                            f'{event_id}: {team_id} receipt points differ from final score',
+                        )
+
+        expected_views = render_views(2013, 'Jacksonville Jaguars', receipts)
+        for name, expected in expected_views.items():
+            actual = (stats_dir/name).read_text()
+            if name == 'season_totals.json':
+                require(actual == expected,
+                        'season_totals.json is stale; rebuild season stats from receipts')
+                continue
+            if actual != expected:
+                actual_lines = actual.splitlines()
+                expected_lines = expected.splitlines()
+                mismatch = next(
+                    (
+                        index
+                        for index, (left, right) in enumerate(
+                            zip(actual_lines, expected_lines), 1
+                        )
+                        if left != right
+                    ),
+                    min(len(actual_lines), len(expected_lines)) + 1,
+                )
+                actual_line = (
+                    actual_lines[mismatch - 1]
+                    if mismatch <= len(actual_lines)
+                    else '<EOF>'
+                )
+                expected_line = (
+                    expected_lines[mismatch - 1]
+                    if mismatch <= len(expected_lines)
+                    else '<EOF>'
+                )
+                require(
+                    False,
+                    f'{name}: stale generated stat view at line {mismatch}; '
+                    f'actual={actual_line!r}; expected={expected_line!r}; '
+                    'run render_season_stats.py',
+                )
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append(f'Malformed season statbook: {exc}')
+
     allowed_books = set(mapping['active_playbooks']) | {'career/playbook/README.md'}
     def readable(path):
         rel = path.relative_to(root).as_posix()

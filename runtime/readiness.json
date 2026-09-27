@@ -9,7 +9,11 @@
         "library/2012_game_calibration.md",
         "library/data/2012_nfl_aggregate_baseline.json",
         "runtime/calibration.py",
-        "tests/test_runtime.py"
+        "tests/test_runtime.py",
+        "library/2012_position_usage_calibration.md",
+        "library/data/2012_nfl_position_usage_baseline.json",
+        "runtime/usage.py",
+        "tests/test_usage_bands.py"
       ],
       "remaining": "Verified; no remaining repository blocker."
     },
@@ -49,9 +53,12 @@
         "tests/test_runtime.py",
         "runtime/play_detail.py",
         "runtime/statbook.py",
-        "tests/test_statbook.py"
+        "tests/test_statbook.py",
+        "runtime/usage.py",
+        "runtime/bands.py",
+        "tests/test_usage_bands.py"
       ],
-      "remaining": "Verified by repository tests for shared kernel, full public snap ledger, player-stat reconciliation and season-stat aggregation."
+      "remaining": "Verified by repository tests for shared kernel 2013.4, depth-chart attribution, full public snap ledger, player-stat reconciliation, band audit and season-stat aggregation."
     },
     {
       "id": "private_runtime",
