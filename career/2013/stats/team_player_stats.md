@@ -4,6 +4,6 @@
 **Through:** no regular-season game has closed.
 **Coverage:** no closed-game receipts yet; every table is empty.
 
-Organized by position group. Each table shows the standard statistics for that position; returns and cross-position counters follow.
+Organized by position, then players. Each position table carries that position's standard statistics; returners and cross-position counters follow.
 
 No stored receipt currently matches this team identifier.

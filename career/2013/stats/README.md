@@ -4,10 +4,10 @@ This directory is the **current season-stat layer**, parallel to but separate fr
 
 - `../standings.md` owns team records, points for/against, conference/division position and tiebreak presentation.
 - `team_player_stats.md` owns Jacksonville's readable current season-to-date player production, filed by position group (quarterbacks, running backs, wide receivers, tight ends, offensive line, defensive line, linebackers, defensive backs, kickers, punters) with each group's standard columns, then returns.
-- `all_player_stats.md` is the comprehensive ledger: every player record preserved by the stat receipts and every currently supported generated stat field, filed by position group with each position's standard columns (passing plus rushing for quarterbacks, rushing plus receiving for backs, and so on). Counters outside a player's position table, such as a receiver's special-teams tackle, are listed in a closing table so nothing is dropped.
-- `league_player_stats.md` owns the readable all-club season-to-date category view (passing, rushing, receiving, defense, kicking, punting, returns), each row carrying the player's position.
+- `all_player_stats.md` is the comprehensive ledger: every player record preserved by the stat receipts and every currently supported generated stat field, organized club by club, then by position group with each position's standard columns (passing plus rushing for quarterbacks, rushing plus receiving for backs, and so on). Counters outside a player's position table, such as a receiver's special-teams tackle, are listed in a closing table so nothing is dropped.
+- `league_player_stats.md` owns the readable all-club season-to-date view, organized by position and then players: one league-wide table per position group (quarterbacks through punters) with that position's standard columns, then returners.
 - `play_call_stats.md` owns Jacksonville's season-to-date named offensive call usage and results.
-- `league_leaders.md` is a derived top-of-league view and may only rank players when receipt coverage and exact player attribution are complete.
+- `league_leaders.md` is a derived top-of-league view, organized by position and then category (quarterbacks: passing yards, touchdowns, completions; and so on), followed by overall leaders. It may only rank players when receipt coverage and exact player attribution are complete.
 - `game_receipts/` is the rebuildable source: one public stat-only receipt per closed game.
 - `season_totals.json` is generated from receipts by `python scripts/render_season_stats.py YEAR --team TEAM_ID` when a complete receipt set exists.
 

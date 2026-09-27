@@ -222,10 +222,10 @@ def player_rows(players, fields, sort_field):
     return rows
 
 
-def table(title, rows, columns, *, with_team, with_pos=False):
+def table(title, rows, columns, *, with_team, with_pos=False, level="##"):
     lead = ["Player"] + (["Team"] if with_team else []) + (["Pos"] if with_pos else [])
     headers = lead + [header for header, _, _ in columns]
-    lines = ["## " + title, "",
+    lines = [level + " " + title, "",
              "| " + " | ".join(headers) + " |",
              "|" + "---|" * len(lead) + "---:|" * len(columns)]
     for player_id, line in rows:
@@ -236,19 +236,17 @@ def table(title, rows, columns, *, with_team, with_pos=False):
             cells.append(line.get("position", ""))
         cells += [str(fn(line)) for _, fn, _ in columns]
         lines.append("| " + " | ".join(cells) + " |")
-    if not rows:
-        lines.append("| — |" + " |" * (len(headers) - 1))
     lines.append("")
     return lines
 
 
-def position_sections(players, *, with_team):
-    """Position-group tables, a returns table, and a residual table for any
-    stored counter that falls outside the player's position columns, so the
-    readable view never silently drops a generated statistic."""
+def position_sections(players, *, with_team, level="##"):
+    """Position first, then players: one table per position group that has
+    any player with a stored statistic, then returns, then any counter that
+    falls outside the player's position columns, so the readable view never
+    silently drops a generated statistic."""
     grouped = {index: [] for index in range(len(POSITION_GROUPS))}
-    other = []
-    residuals = []
+    extra_rows = []
     for player_id, line in players.items():
         if str(player_id).startswith("__"):
             continue
@@ -263,34 +261,42 @@ def position_sections(players, *, with_team):
                 grouped[index].append((player_id, line))
         extra = sorted(nonzero - shown, key=lambda f: list(LABELS).index(f) if f in LABELS else 999)
         if extra:
-            (other if index is None else residuals).append((player_id, line, extra))
+            extra_rows.append((player_id, line, extra))
 
     lines = []
     for index, (title, _, columns, sort_field) in enumerate(POSITION_GROUPS):
         rows = grouped[index]
+        if not rows:
+            continue
         rows.sort(key=lambda item: (-g(item[1], sort_field), ", ".join(item[1].get("teams", ())), item[0]))
-        lines += table(title, rows, columns, with_team=with_team)
+        lines += table(title, rows, columns, with_team=with_team, level=level)
 
-    lines += table("Kick and punt returns", player_rows(
-        players, ("kick_returns", "punt_returns"), "return_yards"),
-        RETURN_COLS, with_team=with_team, with_pos=True)
+    returners = player_rows(players, ("kick_returns", "punt_returns"), "return_yards")
+    if returners:
+        lines += table("Kick and punt returners", returners, RETURN_COLS,
+                       with_team=with_team, with_pos=True, level=level)
 
-    extra_rows = sorted(other + residuals, key=lambda item: (
-        ", ".join(item[1].get("teams", ())), item[1].get("position", ""), item[0]))
-    lines += ["## Other statistics outside the player's position table", "",
-              "Special-teams tackles, trick plays and players at positions without "
-              "a dedicated table. Listed so no stored counter is omitted.", "",
-              "| Player | " + ("Team | " if with_team else "") + "Pos | Statistics |",
-              "|---|" + ("---|" if with_team else "") + "---|---|"]
-    for player_id, line, extra in extra_rows:
-        stats = ", ".join("%s %s" % (LABELS.get(f, f), g(line, f)) for f in extra)
-        lines.append("| %s | %s%s | %s |" % (
-            player_id, (", ".join(line.get("teams", ())) + " | ") if with_team else "",
-            line.get("position", ""), stats))
-    if not extra_rows:
-        lines.append("| — |" + (" |" if with_team else "") + " | |")
-    lines.append("")
+    if extra_rows:
+        extra_rows.sort(key=lambda item: (
+            ", ".join(item[1].get("teams", ())), item[1].get("position", ""), item[0]))
+        lines += [level + " Statistics outside a player's position table", "",
+                  "Special-teams tackles, trick plays and positions without a "
+                  "dedicated table, listed so no stored counter is omitted.", "",
+                  "| Player | " + ("Team | " if with_team else "") + "Pos | Statistics |",
+                  "|---|" + ("---|" if with_team else "") + "---|---|"]
+        for player_id, line, extra in extra_rows:
+            stats = ", ".join("%s %s" % (LABELS.get(f, f), g(line, f)) for f in extra)
+            lines.append("| %s | %s%s | %s |" % (
+                player_id, (", ".join(line.get("teams", ())) + " | ") if with_team else "",
+                line.get("position", ""), stats))
+        lines.append("")
     return lines
+
+
+def no_games(book):
+    if book.get("receipt_count"):
+        return []
+    return ["No regular-season game has closed, so no position table has a row yet.", ""]
 
 
 def team_markdown(year, team_id, book):
@@ -302,8 +308,8 @@ def team_markdown(year, team_id, book):
         through_line(book),
         coverage_line(book, team_id),
         "",
-        "Organized by position group. Each table shows the standard statistics "
-        "for that position; returns and cross-position counters follow.",
+        "Organized by position, then players. Each position table carries that "
+        "position's standard statistics; returners and cross-position counters follow.",
         "",
     ]
     if not team:
@@ -312,34 +318,21 @@ def team_markdown(year, team_id, book):
     return "\n".join(lines + position_sections(team["players"], with_team=False))
 
 
-LEAGUE_CATEGORIES = (
-    ("Passing", ("pass_attempts",), "passing_yards", PASSING_COLS),
-    ("Rushing", ("rushing_attempts",), "rushing_yards", RUSHING_COLS + FUMBLE_COLS),
-    ("Receiving", ("targets", "receptions"), "receiving_yards", RECEIVING_COLS),
-    ("Defense", ("tackles", "sacks", "defensive_interceptions", "passes_defended",
-                 "forced_fumbles", "fumble_recoveries"), "tackles", DB_COLS),
-    ("Kicking", ("field_goals_attempted", "extra_points_attempted"), "field_goals_made", KICKING_COLS),
-    ("Punting", ("punts",), "punt_yards", PUNTING_COLS),
-    ("Kick and punt returns", ("kick_returns", "punt_returns"), "return_yards", RETURN_COLS),
-)
-
-
 def league_markdown(year, book):
     lines = [
-        "# %s NFL player statistics" % year,
+        "# %s NFL player statistics by position" % year,
         "",
         "**Version:** `%s-W%02d-LEAGUE-PLAYER-STATS-4`" % (year, book["through_week"]),
         through_line(book),
         coverage_line(book),
         "",
-        "League-wide statistical categories in the NFL.com order. Each table "
-        "lists every player with an opportunity in that category, with position.",
+        "League-wide, organized by position, then players: every quarterback in "
+        "one table, every running back in the next, and so on through punters. "
+        "Each position table carries that position's standard statistics and is "
+        "sorted by its primary production column.",
         "",
-    ]
-    for title, fields, sort_field, columns in LEAGUE_CATEGORIES:
-        lines += table(title, player_rows(book["players"], fields, sort_field),
-                       columns, with_team=True, with_pos=True)
-    return "\n".join(lines)
+    ] + no_games(book)
+    return "\n".join(lines + position_sections(book.get("players", {}), with_team=True))
 
 
 def all_players_markdown(year, book):
@@ -348,15 +341,20 @@ def all_players_markdown(year, book):
         "**Version:** `%s-W%02d-ALL-PLAYER-STATS-3`" % (year, book["through_week"]),
         through_line(book),
         coverage_line(book), "",
-        "Every player with a nonzero stored statistic, filed by position group. "
-        "Each position table carries the standard columns for that position "
-        "(quarterbacks: passing plus rushing; backs: rushing plus receiving; "
-        "receivers and tight ends: receiving plus rushing; defenders: tackles, "
-        "sacks, takeaways; specialists: kicking or punting). Returns and any "
-        "counter outside a player's position table are listed after. Zero-only "
-        "players are omitted; absence does not prove non-participation.", "",
-    ]
-    return "\n".join(lines + position_sections(book.get("players", {}), with_team=True))
+        "Club by club, then position, then players. Each club section lists its "
+        "position groups (quarterbacks, running backs, wide receivers, tight ends, "
+        "offensive line, defensive line, linebackers, defensive backs, kickers, "
+        "punters) with that position's standard statistics, then returners and any "
+        "counter outside a player's position table. Zero-only players are omitted; "
+        "absence does not prove non-participation.", "",
+    ] + no_games(book)
+    for team_id in sorted(book.get("teams", {})):
+        players = book["teams"][team_id].get("players", {})
+        sections = position_sections(players, with_team=False, level="###")
+        if sections:
+            lines += ["## " + team_id, ""] + sections
+    return "\n".join(lines)
+
 
 def team_stats_markdown(year, book):
     lines = [
@@ -456,9 +454,40 @@ def compact_book_for_storage(book):
     return compact
 
 
+LEADER_GROUPS = (
+    ("Quarterbacks", (("Passing yards", "passing_yards"), ("Passing touchdowns", "passing_touchdowns"),
+                      ("Completions", "completions"))),
+    ("Running backs", (("Rushing yards", "rushing_yards"), ("Rushing touchdowns", "rushing_touchdowns"),
+                       ("Receiving yards", "receiving_yards"))),
+    ("Wide receivers", (("Receptions", "receptions"), ("Receiving yards", "receiving_yards"),
+                        ("Receiving touchdowns", "receiving_touchdowns"))),
+    ("Tight ends", (("Receptions", "receptions"), ("Receiving yards", "receiving_yards"),
+                    ("Receiving touchdowns", "receiving_touchdowns"))),
+    ("Defensive line", (("Sacks", "sacks"), ("Tackles for loss", "tackles_for_loss"),
+                        ("Tackles", "tackles"))),
+    ("Linebackers", (("Tackles", "tackles"), ("Sacks", "sacks"),
+                     ("Tackles for loss", "tackles_for_loss"))),
+    ("Defensive backs", (("Interceptions", "defensive_interceptions"),
+                         ("Passes defended", "passes_defended"), ("Tackles", "tackles"))),
+    ("Kickers", (("Field goals made", "field_goals_made"), ("Extra points made", "extra_points_made"))),
+    ("Punters", (("Punt yards", "punt_yards"), ("Punts inside the 20", "punts_inside_20"))),
+)
+
+
+def position_leaders(book, group_title, field, limit=10):
+    positions = next(p for title, p, _, _ in POSITION_GROUPS if title == group_title)
+    rows = [
+        (player_id, line) for player_id, line in book.get("players", {}).items()
+        if not str(player_id).startswith("__")
+        and line.get("position", "") in positions and g(line, field)
+    ]
+    rows.sort(key=lambda item: (-g(item[1], field), item[0]))
+    return rows[:limit]
+
+
 def leaders_markdown(year, book):
     lines = [
-        "# %s NFL statistical leaders" % year,
+        "# %s NFL statistical leaders by position" % year,
         "",
         "**Version:** `%s-W%02d-LEADERS-4`" % (year, book["through_week"]),
         through_line(book),
@@ -477,20 +506,24 @@ def leaders_markdown(year, book):
         ]
         return "\n".join(lines)
 
+    lines += ["Organized by position, then category. Each list ranks only players "
+              "at that position. Overall league leaders follow.", ""]
+    for group_title, categories in LEADER_GROUPS:
+        lines += ["## " + group_title, ""]
+        for title, field in categories:
+            lines += ["### " + title, "", "| Rank | Player | Team | Total |", "|---:|---|---|---:|"]
+            for rank, (player_id, line) in enumerate(position_leaders(book, group_title, field), 1):
+                lines.append("| %d | %s | %s | %s |" % (
+                    rank, player_id, ", ".join(line.get("teams", ())), g(line, field)))
+            lines.append("")
+
+    lines += ["## Overall league leaders", ""]
     for title, field in (
-        ("Passing yards", "passing_yards"),
-        ("Passing touchdowns", "passing_touchdowns"),
-        ("Rushing yards", "rushing_yards"),
-        ("Rushing touchdowns", "rushing_touchdowns"),
-        ("Receptions", "receptions"),
-        ("Receiving yards", "receiving_yards"),
-        ("Receiving touchdowns", "receiving_touchdowns"),
-        ("Tackles", "tackles"),
-        ("Tackles for loss", "tackles_for_loss"),
-        ("Sacks", "sacks"),
-        ("Interceptions", "defensive_interceptions"),
+        ("Passing yards", "passing_yards"), ("Rushing yards", "rushing_yards"),
+        ("Receiving yards", "receiving_yards"), ("Tackles", "tackles"),
+        ("Sacks", "sacks"), ("Interceptions", "defensive_interceptions"),
     ):
-        lines += ["## " + title, "", "| Rank | Player | Team | Pos | Total |", "|---:|---|---|---|---:|"]
+        lines += ["### " + title, "", "| Rank | Player | Team | Pos | Total |", "|---:|---|---|---|---:|"]
         for rank, row in enumerate(leaders(book, field), 1):
             lines.append("| %d | %s | %s | %s | %s |" % (
                 rank, row["player_id"], ", ".join(row["teams"]), row["position"], row["value"]))
