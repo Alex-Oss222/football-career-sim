@@ -1,7 +1,7 @@
-# Jacksonville Jaguars — September 4, 2013 Regular-Season Cap Reconciliation
+# Jacksonville Jaguars — 2013 Regular-Season Cap Reconciliation
 
 **Status:** RECONCILED WITH SOURCE-BOUNDED UNCERTAINTY.
-**Effective date:** September 4, 2013, after the 53-player transition, waivers and practice-squad formation.
+**Effective date:** September 9, 2013, after Justin Blackmon's move to Reserve/Suspended.
 
 ## Governing treatment
 
@@ -20,6 +20,10 @@ The 2013 league cap remains **$123.0M**. Offseason Top-51 treatment has ended. J
 Before week-by-week practice-squad charges, the reconstructed working room is approximately **$6.2M-$6.6M** (`$7.0M-$7.4M` less approximately `$810,000`). If the opening eight remain for all 17 weeks, that full-season exposure would reduce the comparable planning range to approximately **$5.4M-$5.8M** before any later transaction, injury settlement, reserve move or termination-pay election.
 
 This range is the honest current branch answer; an exact club ledger does not exist publicly for the counterfactual roster. The May range is not carried forward unchanged, and Top-51 language is historical only.
+
+## September 9: Blackmon to Reserve/Suspended
+
+Justin Blackmon serves a four-game league suspension (Weeks 2-5) on Reserve/Suspended. He forfeits his base-salary game checks for those four weeks. How the forfeiture is credited against the 2013 cap has not been verified here, and the exact 2013 base salary behind his cap charge is not verified in this worksheet (`initial_cap_sheet.md` carries his total cap charge, not the base/proration split), so the forfeited amount and its cap effect are **unresolved**; no figure is booked. His signing-bonus proration is unaffected by this worksheet; whether any of it is recoverable is also unresolved. The working range above is unchanged until that reconciliation is done. Jacksonville's active roster is 52 with one open spot; no replacement has been signed.
 
 ## Recalculation triggers
 
