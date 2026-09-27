@@ -106,7 +106,7 @@ The 2025 season is treated as a complete historical season. The 2026 portion of 
 
 # 1. SYSTEM IDENTITY AND MATURE COACHING LAWS
 
-Stone's mature offense is multiple in bodies, pictures, width, motion, and tempo, but compact in the rules the offense must actually remember. The defense is asked to solve a new problem every few snaps. The offense is asked to solve familiar concepts from new locations.
+Stone's mature offense is multiple in bodies, pictures, width, motion, and tempo, but compact in the rules the offense must actually remember. The defense is asked to solve a new problem every few snaps. The offense is asked to solve familiar concepts from new locations and carry different calls from the same pre-snap picture.
 
 The system is neither a spread offense that happens to carry heavy packages nor a heavy offense that occasionally spreads out. It can play from 11 with five eligible threats, from 13 with three attached surfaces, from 21 with a movable F, from 20 with two true runners, or from 6OL with an eligible tackle. The point is not to collect formations. The point is to make the defense reveal how it intends to match the people and fit the gaps, then use the same small collection of offensive rules against that answer.
 
@@ -114,7 +114,7 @@ The mature Stone offense also treats protection as an offensive skill rather tha
 
 ## 1.1 The Twelve Mature Laws
 
-1. **Concept survives presentation.** The concept is the offensive answer. Personnel, formation, motion, and protection change the defensive problem without forcing the quarterback to learn a new progression every time.
+1. **Concept survives presentation.** The concept is the offensive answer. Personnel, formation, motion, and protection change the defensive problem without forcing the quarterback to learn a new progression every time. A repeated offensive picture must also carry different credible answers after the snap.
 
 2. **Personnel asks a question.** Heavy personnel asks whether the defense will stay small or substitute size. Spread personnel asks whether it will widen the box or stay condensed. Stone does not assume either answer.
 
@@ -1740,6 +1740,8 @@ The quarterback still reads Drive. The body performing each job changes. That is
 
 A mature series normally contains at least three connected outcomes: a base call, an answer to the expected defensive adjustment, and a punishment if the defense overcorrects.
 
+Calls that repeat a picture hold personnel, splits, quarterback and back locations, and motion path and timing constant. Match initial backfield action where the family permits, while keeping each call's assignments and protection sound. Other calls in the series may change presentation to attack the same defensive rule. READ remains a separately installed post-snap decision.
+
 | **Series**     | **Show**                 | **Stress**               | **Punish**                           |
 |----------------|--------------------------|--------------------------|--------------------------------------|
 | FLASH DUO      | Flash Duo                | Flash Drive / Read Stick | Static Duo or Flash shot away        |
@@ -1749,9 +1751,13 @@ A mature series normally contains at least three connected outcomes: a base call
 | PRESSURE SORT  | Dropback vs sim pressure | Sort + Drive/Dagger      | RB Slip / screen / static quick game |
 | OUTSIDE ACTION | Outside Zone             | Boot Flood               | Counter cutback / throwback          |
 
+FLASH Duo, FLASH Drive, and a FLASH shot can repeat one moving picture. Static Duo changes the movement; Flex or Empty changes the alignment. Those are connected presentations with their own companions. The series must retain both ways to create uncertainty: repeat the picture with a different call, and carry a familiar concept from another compatible picture.
+
 ## 17.4 Self-Scout Constraints
 
-- Motion direction cannot predict run direction.
+- Chart personnel, splits, backfield alignment, and motion together. A formation family with many calls can still contain a picture that reveals one concept.
+
+- Motion path and timing cannot identify the concept or predict run direction.
 
 - Personnel group cannot predict run/pass at a useful rate.
 
@@ -2448,4 +2454,4 @@ Selected historical references used in construction:
 
 **Tempo:** ROTATE to change bodies, HOLD to preserve the defensive matchup, PRESS to exploit it.
 
-**Play-caller:** Ask early. Show -> Stress -> Punish. Return to the picture after the defense reveals its answer. Reduce the Sunday menu until execution is faster than the defense's communication.
+**Play-caller:** Ask early. Show -> Stress -> Punish. Return to the same pre-snap picture with a different call after the defense reveals its answer. Reduce the Sunday menu until execution is faster than the defense's communication.

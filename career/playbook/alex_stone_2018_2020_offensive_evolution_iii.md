@@ -86,7 +86,7 @@ The offense is still concept based. It does not become a catalog of motion plays
 
 1. **Motion needs a job.** Every shift or motion must identify coverage, change leverage, alter the fit, create speed, or protect a later call. Decorative movement is cut.
 2. **The first picture is not necessarily the snap picture.** The offense may align in one structure, force the defense to declare, then shift or motion into another legal structure.
-3. **The same action must carry multiple outcomes.** Jet action cannot mean Jet Sweep. Outside action cannot mean Boot. Counter pull cannot mean Counter. Each major action needs a run, pass, and constraint answer.
+3. **The same action must carry multiple outcomes.** Jet action cannot mean Jet Sweep. Outside action cannot mean Boot. Counter pull cannot mean Counter. Each major action needs a run, pass, and constraint answer. Match the pre-snap picture, then sell the same initial backfield action while preserving each call's blocking, release, and protection rules.
 4. **Do not let a successful shell become a prison.** If the defense builds a front or coverage specifically for one repeated personnel/formation family, change the body structure or the point of attack before adding more window dressing.
 5. **Physical answers remain first-class answers.** When a defense removes space with width, a six-man surface, or aggressive edge play, Stone is willing to run Duo, Power, Counter, Insert, Trap, or Wham directly at the structure.
 6. **READ is a family, not a suffix.** Post-snap run/pass decisions are installed as complete concepts with one conflict defender and a practiced answer. The offense still refuses to attach a throw to every run.
@@ -1508,6 +1508,8 @@ Every major weekly series should contain three categories:
 2. **Constraint:** the call that punishes the defense for overplaying the base.
 3. **Punish:** the explosive or high-value call that attacks the adjustment created by the first two.
 
+Choose a common personnel group, alignment, and motion for the calls that repeat the picture. Carry the same concept from another compatible formation when that changes the defensive problem. The sequence may use both approaches; a change of presentation must have a football reason.
+
 ## 16.3 JET SERIES
 
 **Show:** 11 Nasty, Jet Sweep.
@@ -1518,7 +1520,7 @@ Every major weekly series should contain three categories:
 
 **Constraint:** Jet action, RB Slow Screen opposite.
 
-The series survives in 12 personnel by changing who performs the motion and who owns the crossing role.
+Within the 11-personnel picture, keep the splits, quarterback and back locations, and Jet path and timing consistent across the calls. The series survives in 12 personnel by changing who performs the motion and who owns the crossing role, then matching the calls within that personnel group.
 
 ## 16.4 OUTSIDE SERIES
 
@@ -1760,7 +1762,7 @@ The offense runs three calls from the same action:
 2. movement/READ complement;
 3. shot or screen punishment.
 
-The goal is identical initial presentation, not identical final result.
+Match personnel, splits, backfield alignment, and motion timing, then the initial backfield action appropriate to the family. Check whether stance, release timing, or the exchange gives away the call. The goal is to preserve the disguise until the assignments must separate, with each play's blocking and protection rules intact.
 
 ## 18.4 Puller Period
 

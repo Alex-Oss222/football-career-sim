@@ -61,7 +61,7 @@ Stone's passing structure begins with an Erhardt-Perkins idea: teach complete ro
 2. **Personnel changes the matchup; formation changes the picture.** Do not change the core concept merely because a different athlete performs a job.
 3. **Run downhill before running sideways.** The core run menu must move defenders with angles, double teams, pulls, and insert blocks. Perimeter runs punish overcommitment; they are not the entire identity.
 4. **Make the easy throw expensive to take away.** Quick game and access throws force corners, overhangs, and linebackers to declare leverage. When they cheat, take the shot that the cheat created.
-5. **The same look must carry more than one answer.** Run, play-action, screen, and dropback concepts should share enough pre-snap structure that the defense cannot identify the play from alignment alone.
+5. **The same look must carry more than one answer.** Run, play-action, screen, and dropback concepts should share the same pre-snap picture wherever their assignments allow. The defense sees familiar personnel, alignment, and movement, then has to distinguish different jobs after the snap. Sharing a picture does not add a post-snap run/pass decision to a called play.
 6. **Fresh players are useful only if the defense cannot identify the call from the substitution.** Rotation is aggressive, but roles overlap. A new back does not mean a new run family. A second tight end does not automatically mean run.
 7. **Calls are sequenced.** A call can be correct because of what it sets up three snaps later. Stone's call sheet tracks setup, answer, and shot relationships.
 
@@ -315,6 +315,8 @@ X                 LT LG C RG RT T6 Y
 ## 5.2 Formation Selection Rule
 
 A weekly plan should normally major in six to eight formation families, not the entire book. The remaining families stay available as change-ups. Formation volume is allowed to shrink if the roster is young or the opponent's rules are simple enough that extra pictures add no value.
+
+Within each major formation, pair calls that hold personnel, receiver splits, quarterback and back locations, and any motion path and timing constant. A static call is its own picture. Changing the back offset or adding motion changes what the defense sees even when the formation name stays the same. Carry the core concepts from other compatible formations as well, with the same job language and practiced landmarks.
 
 ## 5.3 Formation Modifiers
 
@@ -1520,6 +1522,8 @@ The concept does not receive a new name in each row. Position ownership changes,
 | Empty shift | Five eligible spread without substituting | Spacing, Stick, Mesh, Vert, Choice         |
 | Heavy/Nub   | Condensed edge and isolated backside      | Duo, Counter, Sail, max-protect shot       |
 
+Within the Ace row, Power, Outside, Smash, and Post-Cross Max can return to the same personnel, splits, under-center alignment, back location, and no motion when the route and protection rules fit. Each call carries its own post-snap assignments. Stone can change the picture while keeping the concept, or repeat the picture while changing the call.
+
 ## 17.3 Personnel Sequence Examples
 
 ### 12 Personnel Sequence
@@ -2021,7 +2025,7 @@ That gives the offense genuine multiplicity while keeping the human teaching loa
 
 **Pass first principles:** Stick for leverage. Mesh for man. Drive for linebackers. Y-Cross for intermediate space. Dagger for the middle. Four Verticals and Post-Cross for explosives.
 
-**Personnel principle:** change the matchup without changing the concept.
+**Personnel principle:** change the matchup without changing the concept. Carry different calls from the same pre-snap picture.
 
 **Rotation principle:** two or three runners can receive real playing time; no equal-share requirement. Fresh players matter only if substitutions do not reveal the play.
 

@@ -74,7 +74,7 @@ The physical run game remains intact. Stone does not respond to a more spread le
 
 1. **The 2013 language survives unless a new rule is necessary.** Do not rename a concept merely because the presentation changed.
 2. **Same people, more jobs.** A second tight end, fullback, or second runner must be able to create a space presentation without forcing a substitution.
-3. **Same picture, different stress.** Repeated formations should carry run, dropback, screen, play-action, and conflict answers.
+3. **Same picture, different stress.** Repeated personnel, alignment, and movement should carry run, dropback, screen, play-action, and conflict answers. Keep the pre-snap picture consistent while the called assignments change after the snap.
 4. **Motion may create the problem.** In Iteration I, motion was often diagnostic. In Iteration II, it is also used to move the force player, widen the box, change the fit, and alter route leverage.
 5. **The run action is an offensive family, not one play.** Inside, Outside, Power, Counter, and Split actions can lead to the run, ACCESS throw, READ throw, screen, boot, or shot.
 6. **Use post-snap reads selectively.** A READ package exists because one defender cannot be right against both parts of the call. It is not permission to attach a throw to every run.
@@ -307,7 +307,9 @@ Compression is not automatic. Wide splits still matter when Stone wants to expan
 
 The weekly game plan now identifies two or three pictures from which Stone wants at least four different categories of call.
 
-Example, 12 Wing Right:
+Specify personnel, receiver splits, quarterback and back locations, and motion path and timing for each picture. Calls with different motion belong to related presentations within the formation family.
+
+Example, 12 Wing Right formation menu:
 
 - Split Zone L;
 - Counter R;
@@ -316,6 +318,8 @@ Example, 12 Wing Right:
 - Split Leak;
 - Jet action Inside;
 - READ Slant if installed.
+
+Split Zone L and Split Leak pair from the same Wing alignment and split action. Counter R and Mesh can return to that pre-snap alignment when their assignments fit. Jet action creates another picture with its own companions. READ Slant retains its separately installed conflict defender and decision rule.
 
 If a formation carries only one answer, it becomes a tendency and either receives complements or loses volume.
 
@@ -1126,7 +1130,7 @@ From 11 Trey Right, the offense can carry:
 9. Jet Boot L;
 10. Four Verticals Switch.
 
-The defense cannot solve Trey by identifying one concept family.
+Inside Zone L, Drive, and Dagger can share one Gun Trey alignment, receiver splits, back offset, and no motion. Jet Sweep R and Jet Boot L repeat a separate picture with the same motion path and timing. READ and ACCESS keep their own decision rules. The defense has to defend different concept families from each practiced picture.
 
 ## 16.3 12 FLEX Sequence
 
