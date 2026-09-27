@@ -8,3 +8,4 @@
 **Format:** `foundation/templates/season_output_template.md`
 
 **Note:** Jacksonville is the designated home team in London. The trade deadline is Tue. Oct. 29, 4:00 p.m. ET.
+**Carry-forward:** Week 7 closed as a 30-24 win over San Diego ([Week 7 output](../week_07_san_diego_at_jacksonville/output.md)). Blackmon's Stone game-day inactive period ended with Week 7; he is eligible from Week 8 and his role is Stone's decision. The Week 7 inactive list in `depth_chart.json`, which still names Blackmon, carries forward unless Stone sets a Week 8 list. No new Jacksonville injury. San Francisco's Bruce Miller and Jon Baldwin were hurt in Week 7 (projected three days each).

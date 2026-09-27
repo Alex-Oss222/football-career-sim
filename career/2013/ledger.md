@@ -960,3 +960,40 @@ Kernel 2013.7 addresses the first three defect classes and the sack rate.
 **Next competitive event:** October 20 Week 7 vs San Diego, 1 p.m. ET. **Not simulated.**
 
 **Commit closed - Canonical update - October 13, 2013 - Week 6 at Denver closed - canonical through October 13, after Week 6**
+
+## Entry 44: Week 7 closed
+
+**Effective canonical state:** October 20, 2013, after Week 7
+**Recorded:** September 27, 2026
+**Checkpoint:** `Canonical update - October 20, 2013 - Week 7 vs San Diego closed`
+**Preceding global package checkpoint:** `Canonical update - October 13, 2013 - Week 6 at Denver closed`
+
+**Result.** Jacksonville 30, San Diego 24 at EverBank Field. Jacksonville is 5-2, first in the AFC South (ahead of 5-2 Tennessee on record in common games) and first in the AFC.
+
+**Batch.** All fifteen Week 7 games closed once each under kernel 2013.6 through `runtime.game_runner.run_game` and the private Engine State service. They closed from the package frozen by `scripts/build_week_inputs.py 7` after the fifteen-game gate passed. New Orleans and Oakland had byes. No event was drawn twice. Kernel 2013.7 was still in development; the user directed that it be finished later and, if not ready, deferred to 2014.
+
+**Inputs.**
+- **Call sheet:** Stone's runner-ready fifteen-call sheet, frozen verbatim. The new calls Wham R, Split Leak with TURNBACK protection and Thielen Whip (Whip/Pivot) all appear in the active 2013 book.
+- **Line and skill groups:** unchanged from Week 6, with Brewster at center, Meester reserve and Bradfield the swing and sixth lineman.
+- **Inactives:** the Week 6 list carried over: Blackmon (his final Stone inactive week), Pasztor, Mosley, C.J. Wilson, Edwards, Rutland and John Parker Wilson.
+- **Development emphasis:** Kelce (Wham, Split Leak) and Thielen (Whip), through assignments rather than quotas.
+- **Background clubs** dressed up to 46 players each, from depth order. Every club carried the Average low-confidence unit anchor.
+
+**Statistics and standings.** A full Jacksonville receipt and fourteen compact receipts are preserved (107 of 107 through Week 7). The box score, standings and statbook were generated from them. Every ledger-coherence count is zero.
+
+**Availability.** Jacksonville generated no injury. Rackley remains limited (minor). Blackmon's Stone game-day inactive period (Weeks 6-7) is complete; he is eligible from Week 8. Background injuries are listed in `league_results/week_07.md`. Among them, San Francisco, the Week 8 opponent, lost Bruce Miller and Jon Baldwin, each projected three days.
+
+**Engine findings (investigated, not grounds to rerun).**
+- **Field position and downs.** San Diego's fourth-quarter touchdown came on a two-play, two-yard drive after a 16-yard kickoff return. In the second quarter, San Diego kept the ball through five runs totalling no gain before an 80-yard touchdown pass. Kernel 2013.6 tracks neither field position nor downs against snap yardage (Entries 39-43).
+- **Call labels.** The Whip and Split Leak labels were attached to throws to Lewis, Shorts, Brown and Clemons because 2013.6 labels are not tied to the receiver. Kelce was not targeted. Under 2013.6, targets follow position-group usage and depth order, so the second tight end draws few; he drew four in Week 5. Entry 43's statement that targets follow the tight-end depth order overstated this: depth order lowers the TE2's share and does not exclude him.
+- **FG accuracy under 30 yards (band audit).** The 2013.6 cohort now reads OUTSIDE: 51 of 57 (0.895) against the sourced 231 of 239 (0.967). The rate rose from Week 6 (0.886); the row flipped because its tolerance narrows as the sample grows. Four of the six misses came at 24 yards, spread over four games and four clubs.
+  - **Investigation:** the make chance is one sourced rate for every attempt under 30 yards, drawn independently of the resampled distance, so no code path can favour a miss at one distance.
+  - **Probability:** six or more misses in 57 at the sourced rate has about a 1.2% chance, among some forty graded rows.
+  - **Conclusion:** no defect found. The row stays under watch, and kernel 2013.7 starts a new cohort.
+
+Kernel 2013.7 adds field position, real per-drive first-down and third-down counts, carrier-true labels and the late-game model.
+
+**Primary records:** `regular_season/week_07_san_diego_at_jacksonville/output.md` and `call_sheet.json`; `league_results/week_07.md`; `stats/game_receipts/week_07_*.json`; `standings.md`; `depth_chart.json`.
+**Next competitive event:** October 27 Week 8 vs San Francisco at Wembley Stadium, London, 1 p.m. ET (Jacksonville designated home). **Not simulated.** Next deadline: trade deadline, October 29, 4 p.m. ET.
+
+**Commit closed - Canonical update - October 20, 2013 - Week 7 vs San Diego closed - canonical through October 20, after Week 7**

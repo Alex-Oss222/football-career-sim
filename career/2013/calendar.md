@@ -2,14 +2,15 @@
 
 **Function:** Branch-facing schedule and phase control.
 **Historical source:** `../../library/2013_jacksonville_master_calendar.md`.
-**Current branch checkpoint:** October 13, 2013, Week 6 closed (Entry 43).
+**Current branch checkpoint:** October 20, 2013, Week 7 closed (Entry 44).
 **Rule:** Dates/opponents/deadlines are historical rails. Attendance, transactions, performance and game results are branch events.
 
 ## Current checkpoint
 
-- Completed through: **October 13, Week 6 at Denver (won 26-10)**.
-- Controlled 53 (53 active; Blackmon reinstated and activated October 7, Entry 42); practice squad 8; preseason record 2-2; regular-season record 4-2.
-- Next competitive event: **October 20 Week 7 vs San Diego, 1 p.m.: NOT SIMULATED**. Blackmon remains Stone's game-day inactive for Week 7; eligible Week 8.
+- Completed through: **October 20, Week 7 vs San Diego (won 30-24)**.
+- Controlled 53 (53 active); practice squad 8; preseason record 2-2; regular-season record 5-2.
+- Next competitive event: **October 27 Week 8 vs San Francisco at Wembley Stadium, London, 1 p.m. ET: NOT SIMULATED**. Blackmon's Stone game-day inactive period ended with Week 7; he is eligible from Week 8, and the Week 8 inactive list is Stone's to set.
+- Next roster deadline: **October 29, 4 p.m. ET trade deadline**.
 - Rackley limited (minor); C.J. Wilson out; Pasztor on independent medical hold; Mosley medically unavailable. Games run under kernel 2013.6 from Week 4 (Entry 39).
 
 ## 2013 branch schedule
@@ -57,7 +58,7 @@
 | **Sep. 29** | W4 vs Indianapolis, 1 p.m. | [Week 4 output](regular_season/week_04_indianapolis_at_jacksonville/output.md) | Complete: won 31-10 |
 | **Oct. 6** | W5 at St. Louis, 1 p.m. | [Week 5 output](regular_season/week_05_jacksonville_at_st_louis/output.md) | Complete: lost 26-24 |
 | **Oct. 13** | W6 at Denver, 4:05 p.m. | [Week 6 output](regular_season/week_06_jacksonville_at_denver/output.md) | Complete: won 26-10 |
-| Oct. 20 | W7 vs San Diego, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
+| **Oct. 20** | W7 vs San Diego, 1 p.m. | [Week 7 output](regular_season/week_07_san_diego_at_jacksonville/output.md) | Complete: won 30-24 |
 | **Oct. 27** | W8 vs San Francisco at Wembley, 1 p.m. ET | [regular-season week index](regular_season/README.md) | Future |
 | **Oct. 29, 4 p.m.** | Trade deadline | transaction gate | Future |
 | Nov. 3 | W9 BYE | self-scout/recovery week | Future |

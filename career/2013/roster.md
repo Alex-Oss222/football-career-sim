@@ -1,10 +1,10 @@
 # Jacksonville Jaguars roster
 
-**As of:** October 13, 2013, after Week 6.
+**As of:** October 20, 2013, after Week 7.
 **Canonical controlled-player count:** **53**.
 **Active roster:** **53**; Justin Blackmon was reinstated from Reserve/Suspended on October 7 and activated to the open spot (ledger Entry 42).
 **Practice squad:** **8**, separate from the active roster.
-**Record:** preseason 2-2; regular season 4-2 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10).
+**Record:** preseason 2-2; regular season 5-2 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24).
 
 ## 1. How to read this page
 
@@ -42,7 +42,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| Justin Blackmon | WR | Active 53 | No communicated restriction | Stone's game-day inactive Weeks 6-7; eligible Week 8 |
+| Justin Blackmon | WR | Active 53 | No communicated restriction | Stone's game-day inactive Weeks 6-7 (completed); eligible from Week 8, role a Stone decision |
 | Mike Brown | WR | Active 53 | No communicated restriction | WR4 |
 | Toney Clemons | WR | Active 53 | No communicated restriction | WR3 |
 | Cecil Shorts | WR | Active 53 | No communicated restriction | WR1 |
