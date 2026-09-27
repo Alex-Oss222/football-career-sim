@@ -1,10 +1,10 @@
 # Jacksonville Jaguars roster
 
-**As of:** September 22, 2013, after Week 3.
+**As of:** September 29, 2013, after Week 4.
 **Canonical controlled-player count:** **53**.
 **Active roster:** **52**; Justin Blackmon is on Reserve/Suspended and does not count against the 53, leaving one open spot.
 **Practice squad:** **8**, separate from the active roster.
-**Record:** preseason 2-2; regular season 2-1 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13).
+**Record:** preseason 2-2; regular season 2-1 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10).
 
 ## 1. How to read this page
 
@@ -77,8 +77,8 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| Mike Brewster | C | Active 53 | No communicated restriction | Center while Meester is out |
-| Brad Meester | C | Active 53 | Out, upper extremity (Week 2); projected return September 27 | Starting center when available |
+| Mike Brewster | C | Active 53 | No communicated restriction | Starting center (Weeks 3-4); evaluated weekly |
+| Brad Meester | C | Active 53 | No communicated restriction | Reserve center (Week 4); evaluated weekly |
 
 ### Defensive ends (6)
 
