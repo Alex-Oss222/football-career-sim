@@ -1,0 +1,110 @@
+{
+ "schema_version": 1,
+ "team": "Jacksonville Jaguars",
+ "event": "2013 Regular Season Week 4, Indianapolis at Jacksonville",
+ "status": "EX_ANTE_CALL_SHEET_FROZEN",
+ "provenance": "Stone's Week 4 game plan, runner-ready call sheet (section 32), frozen before any Week 4 draw under kernel 2013.6. The sheet listed 12 Ace Right, Power R twice (opening calls 1 and 9, the return call); it is frozen once, because the kernel assigns a call label to each snap uniformly from the sheet and a duplicate row would double that label's share, which is a list artifact rather than a football decision. Script order, jump rules and shot triggers are in-game coaching guidance the kernel does not condition on. Menu calls without a structured entry (Texas, Smoke/Now, RB Slip, Dagger, Snag, QB Sneak, Lead/Duo) are not on the sheet.",
+ "offensive_call_sheet": [
+  {
+   "name": "12 Ace Right, Power R",
+   "family": "Power",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace Right"
+  },
+  {
+   "name": "12 Doubles, Stick",
+   "family": "Stick",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Doubles"
+  },
+  {
+   "name": "21 Pro Left, Counter R",
+   "family": "Counter",
+   "type": "run",
+   "personnel": "21",
+   "formation": "21 Pro Left"
+  },
+  {
+   "name": "11 Bunch Right, Return, Mesh",
+   "family": "Mesh",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Bunch Right"
+  },
+  {
+   "name": "11 Trips Right, Inside L, Access Bubble",
+   "family": "Inside + Bubble",
+   "type": "run",
+   "personnel": "11",
+   "formation": "11 Trips Right"
+  },
+  {
+   "name": "12 Wing Right, Trade, Split L",
+   "family": "Split Zone",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Wing Right"
+  },
+  {
+   "name": "12 Trey Right, RB Slow Screen",
+   "family": "RB Slow Screen",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey Right"
+  },
+  {
+   "name": "20 Doubles, Drive",
+   "family": "Drive",
+   "type": "pass",
+   "personnel": "20",
+   "formation": "20 Doubles"
+  },
+  {
+   "name": "12 Ace Right, Power Pass, Post-Cross, Max",
+   "family": "Power Pass",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Ace Right",
+   "protection": "Max"
+  },
+  {
+   "name": "20 Doubles, Draw",
+   "family": "Draw",
+   "type": "run",
+   "personnel": "20",
+   "formation": "20 Doubles"
+  },
+  {
+   "name": "11 Doubles, Slant-Flat",
+   "family": "Slant-Flat",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles"
+  },
+  {
+   "name": "12 Trey Right, Y-Cross, Solid",
+   "family": "Y-Cross",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey Right",
+   "protection": "Solid"
+  },
+  {
+   "name": "12 Doubles, Spacing",
+   "family": "Spacing",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Doubles"
+  },
+  {
+   "name": "12 Ace Left, Mills, Max",
+   "family": "Mills",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Ace Left",
+   "protection": "Max"
+  }
+ ]
+}

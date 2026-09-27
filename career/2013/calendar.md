@@ -2,15 +2,15 @@
 
 **Function:** Branch-facing schedule and phase control.
 **Historical source:** `../../library/2013_jacksonville_master_calendar.md`.
-**Current branch checkpoint:** September 22, 2013, Week 3 closed (Entry 38).
+**Current branch checkpoint:** September 29, 2013, Week 4 closed (Entry 40).
 **Rule:** Dates/opponents/deadlines are historical rails. Attendance, transactions, performance and game results are branch events.
 
 ## Current checkpoint
 
-- Completed through: **September 22, Week 3 at Seattle (won 16-13)**.
-- Controlled 53 (52 active; Blackmon on Reserve/Suspended Weeks 2-5); practice squad 8; preseason record 2-2; regular-season record 2-1.
-- Next competitive event: **September 29 Week 4 vs Indianapolis, 1 p.m.: NOT SIMULATED**.
-- Posluszny out (Week 3; projected return October 2); Meester's projection clears September 27; C.J. Wilson out; Pasztor on independent medical hold; Mosley medically unavailable.
+- Completed through: **September 29, Week 4 vs Indianapolis (won 31-10)**.
+- Controlled 53 (52 active; Blackmon on Reserve/Suspended Weeks 2-5); practice squad 8; preseason record 2-2; regular-season record 3-1.
+- Next competitive event: **October 6 Week 5 at St. Louis, 1 p.m.: NOT SIMULATED**.
+- Posluszny's projection clears October 2; C.J. Wilson out; Pasztor on independent medical hold; Mosley medically unavailable. Games run under kernel 2013.6 from Week 4 (Entry 39).
 
 ## 2013 branch schedule
 
@@ -54,7 +54,7 @@
 | **Sep. 8** | Week 1 vs Kansas City, 1 p.m. | [Week 1 output](regular_season/week_01_kansas_city_at_jacksonville/output.md) | Complete: won 31-13 |
 | **Sep. 15** | W2 at Oakland, 4:25 p.m. | [Week 2 output](regular_season/week_02_jacksonville_at_oakland/output.md) | Complete: lost 17-13 |
 | **Sep. 22** | W3 at Seattle, 4:25 p.m. | [Week 3 output](regular_season/week_03_jacksonville_at_seattle/output.md) | Complete: won 16-13 |
-| Sep. 29 | W4 vs Indianapolis, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
+| **Sep. 29** | W4 vs Indianapolis, 1 p.m. | [Week 4 output](regular_season/week_04_indianapolis_at_jacksonville/output.md) | Complete: won 31-10 |
 | Oct. 6 | W5 at St. Louis, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
 | Oct. 13 | W6 at Denver, 4:05 p.m. | [regular-season week index](regular_season/README.md) | Future |
 | Oct. 20 | W7 vs San Diego, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |

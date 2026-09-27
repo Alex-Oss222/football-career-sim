@@ -838,3 +838,33 @@ The kernel constants and the private service identity move together to 2013.6. N
 **Next competitive event:** September 29 Week 4 vs Indianapolis, 1 p.m. ET. **Not simulated.**
 
 **Commit closed - Canonical update - September 22, 2013 - Kernel 2013.6 engine correction - canonical through September 22, after Week 3**
+
+## Entry 40: Week 4 closed
+
+**Effective canonical state:** September 29, 2013, after Week 4
+**Recorded:** September 27, 2026
+**Checkpoint:** `Canonical update - September 29, 2013 - Week 4 vs Indianapolis closed`
+**Preceding global package checkpoint:** `Canonical update - September 22, 2013 - Kernel 2013.6 engine correction`
+
+**Result.** Jacksonville 31, Indianapolis 10 at EverBank Field. Jacksonville is 3-1 and leads the AFC South.
+
+**Batch.** All fifteen Week 4 games closed once each under kernel 2013.6 (Entry 39) through `runtime.game_runner.run_game` and the private Engine State service. They closed from the package frozen by `scripts/build_week_inputs.py 4` after the fifteen-game exclusivity and game-day gate passed. Carolina and Green Bay had byes. No event was drawn twice.
+
+**Inputs.**
+- **Call sheet:** Stone's runner-ready sheet, with 12 Ace Right, Power R frozen once. It was listed twice, as calls 1 and 9, and a duplicate would have doubled that label's share of snap labels (see `call_sheet.json` provenance).
+- **Line:** Brewster started at center. Meester's projection cleared September 27, and he dressed as reserve center.
+- **Linebackers:** Smith and Allen were the base pair, then Stanford and Moore, with Posluszny out.
+- **Edge:** Babin, Mincey, Branch, Davis.
+- **Inactives:** Pasztor, Mosley, C.J. Wilson, Posluszny, Edwards and Rutland. Blackmon remained on Reserve/Suspended.
+- **Background clubs** dressed 46 players each, from depth order with branch injuries applied. Every club carried the Average low-confidence unit anchor.
+
+**Statistics and standings.** A full Jacksonville receipt and fourteen compact receipts are preserved, all carrying the 2013.6 drives summary. The box score, standings and statbook were generated from them. In the 2013.6 cohort, every band-audit row is WITHIN and every ledger-coherence count is zero. Jacksonville is first in the AFC South and second in the AFC.
+
+**Availability.** Will Rackley had a minor trunk injury, limited with no projected absence. Posluszny's projection clears October 2. C.J. Wilson remains out, Pasztor on medical hold and Mosley unavailable. Background injuries, including Drew Brees on an independent head/neck hold, are listed in `league_results/week_04.md`.
+
+**Engine findings (investigated, not grounds to rerun).** Indianapolis's opening possession is a one-snap, seven-yard touchdown drive after a touchback on the opening kickoff. Kernel 2013.6 resamples real 2012 drives and publishes no field position. It therefore does not link a drive's length to where the previous kick or drive ended, a gap Entry 39 left open deliberately. The ledger check covers what the ledger records, and it passes. The result stands.
+
+**Primary records:** `regular_season/week_04_indianapolis_at_jacksonville/output.md` and `call_sheet.json`; `league_results/week_04.md`; `stats/game_receipts/week_04_*.json`; `standings.md`; `depth_chart.json`.
+**Next competitive event:** October 6 Week 5 at St. Louis, 1 p.m. ET. **Not simulated.**
+
+**Commit closed - Canonical update - September 29, 2013 - Week 4 vs Indianapolis closed - canonical through September 29, after Week 4**
