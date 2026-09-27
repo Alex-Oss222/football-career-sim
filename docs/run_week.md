@@ -1,6 +1,6 @@
 # Run-week prompt
 
-Use this when handing a regular-season week to Codex.
+Use this when handing a regular-season week to the runner (Claude Code; see `CLAUDE.md`).
 
 ```text
 Run Week [N].
