@@ -20,7 +20,7 @@ Each weekly `output.md` carries its game's box score, generated from the same re
 
 ## Current coverage
 
-Through Week 4: sixty-three of sixty-three game receipts (Weeks 1-2 kernel 2013.4, Week 3 kernel 2013.5, Week 4 kernel 2013.6); coverage complete and every band-audit row WITHIN the 2012 bands.
+Through Week 5: seventy-seven of seventy-seven game receipts (Weeks 1-2 kernel 2013.4, Week 3 kernel 2013.5, Weeks 4-5 kernel 2013.6); coverage complete. Every graded band-audit row is WITHIN the 2012 bands except field-goal accuracy under 30 yards (investigated as chance, ledger Entry 41), and every ledger-coherence count is zero.
 
 ## Rebuild
 
