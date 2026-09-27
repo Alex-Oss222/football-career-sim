@@ -1,9 +1,9 @@
 # 2013 NFL player statistics by position
 
-**Version:** `2013-W00-LEAGUE-PLAYER-STATS-4`
+**Version:** `2013-W00-LEAGUE-PLAYER-STATS`
 **Through:** no regular-season game has closed.
 **Coverage:** no closed-game receipts yet; every table is empty.
 
-League-wide, organized by position, then players: every quarterback in one table, every running back in the next, and so on through punters. Each position table carries that position's standard statistics and is sorted by its primary production column.
+Every club's players, one league-wide table per position, each sorted by that position's primary production. G counts games on the game-day active list.
 
-No regular-season game has closed, so no position table has a row yet.
+No regular-season game has closed.

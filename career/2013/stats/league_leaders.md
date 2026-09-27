@@ -1,6 +1,6 @@
-# 2013 NFL statistical leaders by position
+# 2013 NFL statistical leaders
 
-**Version:** `2013-W00-LEADERS-4`
+**Version:** `2013-W00-LEADERS`
 **Through:** no regular-season game has closed.
 **Coverage:** no closed-game receipts yet; every table is empty.
 

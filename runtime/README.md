@@ -21,7 +21,7 @@ Preseason uses the consolidated-block architecture: Document 5 may remain at the
 
 `runtime/statbook.py` is downstream post-processing for already-closed games. It converts a closed game result into a public stat-only receipt and can aggregate those receipts into season totals. It has no access to the private career seed and does not participate in resolution, packet closure, matchup weighting or outcome selection.
 
-Current Markdown views are rendered from the receipt set with `scripts/render_season_stats.py`. Incomplete legacy receipt coverage must remain labeled and formal league leaderboards are withheld until the gap is reconciled.
+Every public statistical page is generated from the receipt set: season views by `scripts/render_season_stats.py` (shared columns in `runtime/stat_tables.py`), standings and tiebreakers by `scripts/render_standings.py` (`runtime/standings.py`, alignment in `runtime/league.py`), and each week's box score by `scripts/render_box_score.py`. Incomplete receipt coverage stays labeled and formal league leaderboards are withheld until the gap is reconciled.
 
 
 ## Kernel 2013.4 attribution and volume contract
@@ -38,6 +38,6 @@ The kernel keeps score/outcome generation at the possession layer and adds a det
 - `play_ledger` records every generated scrimmage snap plus scoring/punt/kickoff terminal plays.
 - `play_call_stats` aggregates named offensive call usage for the closed game.
 - The player dictionary now supports passing, rushing, receiving, protection, defense, kicking, punting and return counters.
-- `runtime/statbook.py` supports `full` receipts for Jacksonville/protagonist games and `compact_stats` receipts for ordinary background games. Both preserve generated statistical production for season accounting; only the full receipt keeps the snap ledger and named-call detail.
+- `runtime/statbook.py` supports `full` receipts for Jacksonville/protagonist games and `compact_stats` receipts for ordinary background games. Both preserve generated statistical production and a games-active row for every game-day player; only the full receipt keeps zero counters, the snap ledger and named-call detail.
 
 The snap-detail layer is public post-resolution accounting. It never receives the private career seed directly outside the kernel call, and it cannot alter the already-resolved drive outcome.

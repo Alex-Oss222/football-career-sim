@@ -1,42 +1,66 @@
 # 2013 season statbook
 
-This directory is the **current season-stat layer**, parallel to but separate from `../standings.md`.
+Every file in this directory except `README.md` and `game_receipts/README.md` is generated from the closed-game receipts in `game_receipts/`. Nothing here is typed by hand, and `python scripts/validate_repository.py` fails if a view drifts from its rebuild.
 
-- `../standings.md` owns team records, points for/against, conference/division position and tiebreak presentation.
-- `team_player_stats.md` owns Jacksonville's readable current season-to-date player production, filed by position group (quarterbacks, running backs, wide receivers, tight ends, offensive line, defensive line, linebackers, defensive backs, kickers, punters) with each group's standard columns, then returns.
-- `all_player_stats.md` is the comprehensive ledger: every player record preserved by the stat receipts and every currently supported generated stat field, organized club by club, then by position group with each position's standard columns (passing plus rushing for quarterbacks, rushing plus receiving for backs, and so on). Counters outside a player's position table, such as a receiver's special-teams tackle, are listed in a closing table so nothing is dropped.
-- `league_player_stats.md` owns the readable all-club season-to-date view, organized by position and then players: one league-wide table per position group (quarterbacks through punters) with that position's standard columns, then returners.
-- `play_call_stats.md` owns Jacksonville's season-to-date named offensive call usage and results.
-- `league_leaders.md` is a derived top-of-league view, organized by position and then category (quarterbacks: passing yards, touchdowns, completions; and so on), followed by overall leaders. It may only rank players when receipt coverage and exact player attribution are complete.
-- `game_receipts/` is the rebuildable source: one public stat-only receipt per closed game.
-- `season_totals.json` is generated from receipts by `python scripts/render_season_stats.py YEAR --team TEAM_ID` when a complete receipt set exists.
+## Views
+
+| File | What it shows |
+|---|---|
+| `team_player_stats.md` | Jacksonville players by position, then player, with each position's standard statistics |
+| `league_player_stats.md` | Every club's players in one league-wide table per position |
+| `all_player_stats.md` | Club by club, then position, then player |
+| `league_leaders.md` | Leaders within each position, qualified passer-rate leaders, then leaders across all positions |
+| `team_stats.md` | Per-game team offense, defense (opponent production) and special teams |
+| `play_call_stats.md` | Jacksonville's named offensive calls: use, completions, yards, explosive and negative plays |
+| `calibration_audit.md` | League receipts against the sourced 2012 position and volume shapes |
+| `season_totals.json` | Machine cache of the aggregated season |
+
+Team records, division order, playoff seeding and tiebreakers live in `../standings.md`, generated from the same receipts.
+
+## Rebuild
+
+```
+python scripts/render_season_stats.py 2013 --team "Jacksonville Jaguars"
+python scripts/render_standings.py 2013
+```
+
+## Position tables
+
+Players are filed by roster position: quarterbacks, running backs (RB, FB), wide receivers, tight ends, offensive line, defensive line, linebackers, defensive backs, kickers, punters and long snappers. Each table carries the statistics that position is measured by:
+
+| Position | Columns |
+|---|---|
+| Quarterbacks | G, CMP, ATT, CMP%, YDS, Y/A, TD, INT, RTG, SCK, SCKY, then rushing and fumbles |
+| Running backs | G, CAR, YDS, AVG, TD, LNG, then receiving and fumbles |
+| Wide receivers, tight ends | G, TGT, REC, YDS, AVG, TD, LNG, then rushing and fumbles |
+| Offensive line | G, SCK ALLOWED |
+| Defensive line, linebackers | G, TOT, SOLO, AST, TFL, SCK, PRESS, PD, INT, FF, FR |
+| Defensive backs | G, TOT, SOLO, AST, TFL, INT, INT YDS, PD, SCK, PRESS, FF, FR |
+| Kickers | G, FGM, FGA, FG%, XPM, XPA, PTS |
+| Punters | G, PUNTS, YDS, AVG, LNG, IN20, TB |
+
+Kick and punt returners follow in their own table. A counter outside a player's position table, such as a receiver's coverage tackle, appears under **Other statistics**, so no generated statistic is dropped from the readable views.
+
+**G** counts games on the game-day active list: every player in a closed game's result is stamped with one game active. RTG is the official NFL passer rating. CMP%, Y/A, AVG, FG% and every other derived column are arithmetic on stored counters. LNG is the longest single play, combined across games by maximum.
+
+## Leader qualifiers
+
+Passer-rate leaders (rating, completion percentage, yards per attempt) require 14 attempts per team game, the NFL passing qualifier. Rushing and receiving average leaders are not published: the NFL's minimums for those categories have not been verified from a dated source.
 
 ## Rules
 
-1. **Closed games only.** No projected, expected or future statistics enter the statbook.
-2. **One receipt per game.** The receipt is derived from the already-closed shared-kernel result and never influences resolution. Jacksonville/protagonist games use `detail="full"` and preserve complete public player dictionaries, `play_ledger`, and game-level `play_call_stats`. Ordinary background games use `detail="compact_stats"` and preserve every nonzero generated player/team statistic while omitting the background snap ledger, named-call data, zero-only player rows and zero-valued player fields.
-3. **Public statistics only.** No seed, probability, hidden rating, matchup delta or private Engine State material belongs here.
-4. **Additive arithmetic is automated.** Season totals are rebuilt from game receipts, not hand-carried from the previous week's Markdown.
-5. **No historical backfill from the real NFL game.** If a simulated game did not preserve a player attribution, the missing split stays unknown or team/unattributed.
-6. **Transactions follow the player.** The league view may show multiple teams for a player; a team view contains only production credited to that club.
-7. **All public numeric player counters are retained.** The statbook automatically discovers and accumulates every numeric field present in the public player dictionaries. The current engine includes passing, rushing and receiving volume, yards and touchdowns, targets, longest gains, sacks allowed, sacks, pressures, fumbles, solo and assisted tackles, tackles for loss, passes defended, interceptions, forced fumbles and recoveries, kicking, punting and returns. A new public numeric stat is kept automatically without a hard-coded whitelist. Cleaner category tables may hide irrelevant zero columns, but the underlying record is not discarded.
-8. **Zero counters are preserved only where useful.** Full Jacksonville/protagonist receipts preserve zero counters. Compact background receipts intentionally omit zero-only players and zero-valued fields; this does not remove any generated nonzero statistical production and does not imply non-participation.
-9. **Standings and statistics remain separate authorities.** A statistical ranking never changes a tiebreak or team record.
+1. **Closed games only.** No projected, expected or future statistic enters the statbook.
+2. **One receipt per game,** derived from the already-closed shared-kernel result. It never influences resolution.
+3. **Public statistics only.** No seed, probability, hidden rating, matchup delta or private Engine State material.
+4. **No historical backfill.** A statistic the simulated game did not attribute stays unattributed; the real NFL game is never consulted.
+5. **Transactions follow the player.** League views may list several clubs for one player; a club view holds only production credited to that club.
+6. **Distinct player ids.** A player id names one player. Two players who share a name need distinct ids (for example `Mike Harris (SD)`); a receipt with the same id on both clubs is rejected.
+7. **Standings and statistics stay separate.** A statistical ranking never changes a record or a tiebreaker.
 
 ## Current coverage
 
-Empty. Week 1 was voided by ledger Entry 34; its generation-2 receipts and every derived view were deleted and regenerated from zero receipts. The views fill again when the replayed Week 1 closes under kernel 2013.4.
-
-## Generated views
-
-`python scripts/render_season_stats.py 2013 --team "Jacksonville Jaguars"` rebuilds every file below from `game_receipts/`, and `python scripts/validate_repository.py` fails if any of them drifts from that rebuild:
-
-- `season_totals.json`: compact machine cache;
-- `team_player_stats.md`, `play_call_stats.md`: Jacksonville;
-- `league_player_stats.md`, `all_player_stats.md`, `league_leaders.md`: every club's players;
-- `team_stats.md`: per-game team totals for every club;
-- `calibration_audit.md`: league receipts against the sourced 2012 position and volume shapes. It detects engine or TeamInput defects and never reruns or selects a game.
+Empty. Week 1 was voided by ledger Entry 34 and its receipts were deleted. The views fill when the replayed Week 1 closes under kernel 2013.4.
 
 ## Branch-control rule
 
-Players already acquired, drafted or signed by Jacksonville may not appear on a real-history background roster. Weekly input slates must pass `scripts/check_week_input_exclusivity.py` with the week's scheduled game count before any event closes. That gate also rejects a TeamInput that is not a legal game-day unit or lacks an explicit QB/RB/WR/TE depth order.
+Players acquired, drafted or signed by Jacksonville may not appear on a real-history background roster. Weekly input slates must pass `scripts/check_week_input_exclusivity.py` with the week's scheduled game count before any event closes. That gate also rejects a TeamInput that is not a legal game-day unit or lacks an explicit QB/RB/WR/TE depth order.

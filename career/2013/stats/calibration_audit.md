@@ -1,6 +1,6 @@
 # 2013 statistical band audit
 
-**Version:** `2013-W00-BAND-AUDIT-1`
+**Version:** `2013-W00-BAND-AUDIT`
 **Through:** no regular-season game has closed.
 **Team-games audited:** 0 (grading starts at 16).
 

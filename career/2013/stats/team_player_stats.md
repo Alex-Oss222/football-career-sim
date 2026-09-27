@@ -1,9 +1,9 @@
 # 2013 Jacksonville Jaguars player statistics
 
-**Version:** `2013-W00-TEAM-STATS-3`
+**Version:** `2013-W00-TEAM-PLAYER-STATS`
 **Through:** no regular-season game has closed.
 **Coverage:** no closed-game receipts yet; every table is empty.
 
-Organized by position, then players. Each position table carries that position's standard statistics; returners and cross-position counters follow.
+By position, then player. G counts games on the game-day active list.
 
-No stored receipt currently matches this team identifier.
+No regular-season game has closed.

@@ -1,9 +1,9 @@
 import unittest
 
 from runtime.statbook import aggregate_receipts, leaders, make_receipt
+from runtime.stat_tables import passer_rating
 from scripts.render_season_stats import (
     all_players_markdown, coverage_line, leaders_markdown, league_markdown,
-    passer_rating,
 )
 
 
@@ -78,17 +78,36 @@ class StatbookTests(unittest.TestCase):
         self.assertEqual(receipt["detail"], "compact_stats")
         self.assertNotIn("play_ledger", receipt)
         self.assertNotIn("play_call_stats", receipt)
-        self.assertNotIn("bench-a", receipt["team_stats"]["A"]["players"])
+        self.assertEqual(receipt["home"], "A")
+        self.assertEqual(receipt["away"], "B")
+        self.assertEqual(
+            receipt["team_stats"]["A"]["players"]["bench-a"],
+            {"position": "WR", "games": 1},
+        )
         self.assertEqual(
             receipt["team_stats"]["A"]["players"]["qb-a"],
             {"position": "QB", "pass_attempts": 30,
-             "passing_yards": 250, "interceptions": 1, "targets": 7},
+             "passing_yards": 250, "interceptions": 1, "targets": 7, "games": 1},
         )
         book = aggregate_receipts([receipt])
         self.assertEqual(book["teams"]["A"]["team_stats"]["passing_yards"], 250)
         self.assertEqual(book["players"]["qb-a"]["passing_yards"], 250)
+        self.assertEqual(book["players"]["bench-a"]["games"], 1)
+        self.assertEqual(book["teams"]["A"]["opponent_stats"]["points"], 17)
         self.assertEqual(book["plays_recorded"], 0)
         self.assertTrue(book["coverage_complete"])
+
+    def test_matchup_must_name_the_receipt_clubs(self):
+        with self.assertRaises(ValueError):
+            make_receipt(self.result("bad-matchup"), week=1, matchup="A vs B")
+
+    def test_same_player_id_on_both_clubs_fails_closed(self):
+        result = self.result("shared-id")
+        players_b = result["team_stats"]["B"]["players"]
+        players_b["qb-a"] = players_b.pop("qb-b")
+        receipt = make_receipt(result, week=1, matchup="B at A", detail="compact_stats")
+        with self.assertRaises(ValueError):
+            aggregate_receipts([receipt])
 
     def test_unknown_receipt_detail_fails_closed(self):
         with self.assertRaises(ValueError):
@@ -114,7 +133,7 @@ class StatbookTests(unittest.TestCase):
             player_attribution_incomplete_teams=("B",),
         )
         book=aggregate_receipts([receipt])
-        self.assertIn("complete for this team's",coverage_line(book,"A"))
+        self.assertIn("complete for this club's",coverage_line(book,"A"))
         self.assertIn("player attribution PARTIAL",coverage_line(book))
         rendered=leaders_markdown(2013,book)
         self.assertIn("rankings are withheld",rendered)
@@ -134,17 +153,17 @@ class StatbookTests(unittest.TestCase):
 
     def test_stat_views_are_position_first(self):
         players = {
-            "QB One": {"position": "QB", "teams": ["AAA"], "completions": 20,
+            "QB One": {"position": "QB", "teams": ["AAA"], "games": 1, "completions": 20,
                        "pass_attempts": 30, "passing_yards": 250,
                        "passing_touchdowns": 2, "interceptions_thrown": 1},
-            "CB One": {"position": "CB", "teams": ["BBB"], "tackles": 5,
+            "CB One": {"position": "CB", "teams": ["BBB"], "games": 1, "tackles": 5,
                        "solo_tackles": 5, "defensive_interceptions": 1},
-            "WR One": {"position": "WR", "teams": ["AAA"], "receptions": 3,
+            "WR One": {"position": "WR", "teams": ["AAA"], "games": 1, "receptions": 3,
                        "targets": 4, "receiving_yards": 40, "tackles": 1},
         }
         teams = {
-            "AAA": {"players": {k: players[k] for k in ("QB One", "WR One")}},
-            "BBB": {"players": {"CB One": players["CB One"]}},
+            "AAA": {"games": 1, "players": {k: players[k] for k in ("QB One", "WR One")}},
+            "BBB": {"games": 1, "players": {"CB One": players["CB One"]}},
         }
         book = {"through_week": 1, "receipt_count": 1, "coverage_complete": True,
                 "player_attribution_complete": True, "players": players, "teams": teams}
@@ -152,11 +171,11 @@ class StatbookTests(unittest.TestCase):
         league = league_markdown(2013, book)
         qb = league.split("## Quarterbacks")[1].split("## ")[0]
         db = league.split("## Defensive backs")[1].split("## ")[0]
-        self.assertIn("| QB One | AAA | 20 | 30 | 66.7 | 250 |", qb)
+        self.assertIn("| QB One | AAA | 1 | 20 | 30 | 66.7 | 250 |", qb)
         self.assertNotIn("CB One", qb)
-        self.assertIn("| CB One | BBB | 5 | 5 |", db)
+        self.assertIn("| CB One | BBB | 1 | 5 | 5 |", db)
         self.assertLess(league.index("## Quarterbacks"), league.index("## Wide receivers"))
-        self.assertIn("| WR One | AAA | WR | Tkl 1 |", league)
+        self.assertIn("| WR One | AAA | WR | TOT 1 |", league)
 
         ledger = all_players_markdown(2013, book)
         aaa = ledger.split("## AAA")[1].split("## BBB")[0]

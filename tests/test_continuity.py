@@ -120,8 +120,9 @@ class ContinuityTests(unittest.TestCase):
     def test_receipt_score_mismatch_is_rejected(self):
         receipt = self.root/'career/2013/stats/game_receipts/synthetic-score-check.json'
         data = {
-            'schema_version': 2, 'event_id': 'synthetic-score-check', 'week': 1,
-            'matchup': 'B at A', 'coverage': 'complete', 'detail': 'compact_stats',
+            'schema_version': 3, 'event_id': 'synthetic-score-check', 'week': 1,
+            'matchup': 'B at A', 'home': 'A', 'away': 'B',
+            'coverage': 'complete', 'detail': 'compact_stats',
             'final_score': {'A': 8, 'B': 0},
             'team_stats': {'A': {'points': 7, 'players': {}}, 'B': {'points': 0, 'players': {}}},
         }

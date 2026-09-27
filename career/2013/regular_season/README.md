@@ -34,6 +34,12 @@ Dates, times and venues are historical schedule facts from `library/2013_jackson
 | 16 | Sun. Dec. 22 | 1:00 p.m. ET | Tennessee Titans at Jacksonville | Home | `week_16_tennessee_at_jacksonville/output.md` |
 | 17 | Sun. Dec. 29 | 1:00 p.m. ET | Jacksonville at Indianapolis Colts | Away | `week_17_jacksonville_at_indianapolis/output.md` |
 
-The rest of the league's games each week are recorded in `../league_results/week_NN.md`. The current league, conference and division standings live in `../standings.md`; update that file whenever final scores change records.
+The rest of the league's games each week are recorded in `../league_results/week_NN.md`.
 
-Every closed game also feeds the season statbook in `../stats/`. Preserve the public stat receipt at game closure, then refresh the current Jacksonville player stats, league player stats and league-leader view from receipts. Do not hand-carry cumulative totals from one weekly output to the next.
+Every closed game preserves a public stat receipt in `../stats/game_receipts/`. From those receipts:
+
+- the week's box score is generated into its `output.md` with `python scripts/render_box_score.py --write <output.md>`;
+- `../standings.md` is regenerated with `python scripts/render_standings.py 2013`;
+- the season statbook in `../stats/` is regenerated with `python scripts/render_season_stats.py 2013 --team "Jacksonville Jaguars"`.
+
+Never hand-carry a statistic or record from one weekly output to the next.
