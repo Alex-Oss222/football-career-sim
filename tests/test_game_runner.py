@@ -1,3 +1,6 @@
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import inspect
 import tempfile
 import threading
@@ -13,6 +16,7 @@ from runtime.kernel import TeamInput
 from runtime.player_evidence import PlayerInput
 from runtime.private_client import Client, PrivateRuntimeUnavailable
 from runtime.private_service import Store, handler
+from support_rosters import game_day_roster
 
 
 class ProductionGameRunnerTests(unittest.TestCase):
@@ -31,6 +35,8 @@ class ProductionGameRunnerTests(unittest.TestCase):
                 PlayerInput("ot","OT",roles=("pass_protection",)),
                 PlayerInput("lb","LB",unit="defense",roles=("punt_coverage",)),
                 PlayerInput("out","WR",available=False))
+        # Complete the legal game-day unit the production runner requires.
+        roster+=tuple(p for p in game_day_roster("fill") if p.position not in {"QB"})
         self.home=TeamInput("A",tuple(p.player_id for p in roster if p.available),roster=roster)
         self.away=TeamInput("B",tuple(p.player_id for p in roster if p.available),roster=roster)
 
@@ -71,6 +77,17 @@ class ProductionGameRunnerTests(unittest.TestCase):
             run_game(changed,self.away,event_id="game-1",snapshot="snapshot",client=self.client)
         self.assertNotIn("seed",inspect.signature(run_game).parameters)
         self.assertFalse(any("seed" in key for key in first))
+
+    def test_incomplete_game_day_unit_fails_closed_before_event_closure(self):
+        thin=TeamInput("T",("qb","rb"),roster=(PlayerInput("qb","QB"),PlayerInput("rb","RB")))
+        with self.assertRaisesRegex(ValueError,"legal game-day unit"):
+            build_game_packet("thin","snapshot",thin,self.away)
+
+    def test_one_passer_and_depth_ordered_usage(self):
+        result=run_game(self.home,self.away,event_id="depth",snapshot="snapshot",client=self.client)
+        players=result["team_stats"]["A"]["players"]
+        self.assertEqual([p for p,v in players.items() if v["pass_attempts"]],["qb"])
+        self.assertTrue(all(v["tackles"]==v["solo_tackles"]+v["assisted_tackles"] for v in players.values()))
 
     def test_labels_paths_participation_and_evidence(self):
         self.assertIs(resolve_background_game,run_game)

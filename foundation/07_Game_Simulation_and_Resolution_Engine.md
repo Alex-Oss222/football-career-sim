@@ -118,7 +118,7 @@ Bounded, matchup-weighted, seeded, and fully logged in the Engine Ledger (condit
 
 ### 3.5 Granularity dial and manual escalation
 
-Document 1 §11.2 already defines four game-detail modes (Executive, Play-Calling, Critical-Decision, Full Tactical). That existing dial sets the user's default narration depth for their own games. Independently of the dial, any sequence automatically escalates to denser, near-play-by-play narration at flagged spotlight moments (money downs, the two-minute drill, goal-to-go, trick plays, a live 4th-down call) or whenever the user names a sequence and asks to "go under the hood" on it — this escalation is prose density only, never an extra user turn. The possession kernel still owns score/outcome resolution; kernel 2013.3 then allocates each resolved drive into a deterministic public snap ledger without consuming additional outcome RNG draws.
+Document 1 §11.2 already defines four game-detail modes (Executive, Play-Calling, Critical-Decision, Full Tactical). That existing dial sets the user's default narration depth for their own games. Independently of the dial, any sequence automatically escalates to denser, near-play-by-play narration at flagged spotlight moments (money downs, the two-minute drill, goal-to-go, trick plays, a live 4th-down call) or whenever the user names a sequence and asks to "go under the hood" on it — this escalation is prose density only, never an extra user turn. The possession kernel still owns score/outcome resolution; kernel 2013.4 then allocates each resolved drive into a deterministic public snap ledger without consuming additional outcome RNG draws.
 
 ### 3.6 Long-run consistency check
 
@@ -134,7 +134,7 @@ Record an actual iteration transition in the season ledger on its effective date
 
 ### 3.8 Canonical snap ledger, full player stats, and named-call accounting
 
-Kernel 2013.3 adds a public post-resolution detail layer to every game. This layer is mandatory for both protagonist and background games even when background narration remains compressed.
+Kernel 2013.3 added, and kernel 2013.4 keeps, a public post-resolution detail layer on every game. This layer is mandatory for both protagonist and background games even when background narration remains compressed.
 
 1. **Outcome ownership stays at the possession kernel.** Score, possession outcome, drive duration, aggregate pass/rush production and other game-resolution facts are drawn first. Snap detail uses a separate deterministic stream derived from the already-closed game entropy plus event/drive identity. Adding, removing or rendering more snap fields cannot consume extra outcome draws or reroll the game.
 2. **Every generated scrimmage snap is recorded.** Each public `play_ledger` row carries global sequence, drive, snap-in-drive, period/clock, offense/defense, run/pass type, named concept/family when supplied, personnel/formation/motion/protection metadata when supplied, involved passer/runner/target/blocker/tackler when generated, yardage, completion/sack/turnover/touchdown flags, and applicable special-teams terminal plays.
@@ -143,6 +143,16 @@ Kernel 2013.3 adds a public post-resolution detail layer to every game. This lay
 5. **Receipts own durable statistical truth without duplicating unnecessary background play-by-play.** After every closed regular-season or postseason game, `career/<year>/stats/game_receipts/` stores a public receipt. Jacksonville/protagonist games use a full receipt with complete public player dictionaries, `play_ledger`, and game `play_call_stats`. Ordinary background games use the compact-stat receipt: every nonzero generated team/player statistic is retained for league totals and leaders, while background snap rows, named-call data, zero-only player rows, and zero-valued player fields are omitted. Cumulative statistical views are rebuilt from receipts, never hand-added from prior Markdown.
 6. **Compressed background storage never changes resolution.** Every background game still resolves through the same kernel and produces its full in-memory result. Compact storage happens only after closure and preserves the generated statistics needed for season accounting; it does not reroll, resample, or alter the game.
 7. **No retroactive invention.** A legacy game without a canonical snap ledger may preserve known totals and unattributed remainders, but named play counts, targets, tackles, completions or other missing details may not be reverse-engineered from prose or imported from the corresponding real historical game.
+
+### 3.9 Depth-chart attribution, drive volume and statistical bands (kernel 2013.4)
+
+Added September 27, 2026 after an audit of the Week 1 receipts found backups sharing quarterback snaps, receivers taking about a third of carries, linebackers nearly absent from tackles, no assisted tackles and about 30 percent too many plays. Week 1 was voided and replays under this kernel (Document 6, 2013 ledger Entry 34).
+
+1. **Who gets the ball follows the club's depth chart.** Each TeamInput carries explicit `depth` order. The kernel gives one passer the whole game, then distributes carries, targets, tackles, sacks, interceptions and passes defended by position-group share and by usage rank within the group, using the two-source 2012 play-by-play baseline in [library/2012_position_usage_calibration.md](../library/2012_position_usage_calibration.md). Depth order, roles and availability are coach and medical inputs; the shapes never create a Jacksonville touch quota, rate a player or decide a depth-chart battle (AGENTS.md no-percentage rule).
+2. **Tackles are solo or assisted, and runs can lose yardage,** at the sourced 2012 rates, and every drive total still reconciles exactly.
+3. **Drive length and clock follow the resolved drive result.** Plays per drive and seconds per play come from 2012 drive data by terminal result, scaled so expected team-game totals equal the verified aggregate baseline (§8). Third-down attempts and first downs use sourced 2012 rates instead of fixed formulas.
+4. **Thin inputs fail closed.** The production runner and the weekly input gate reject a TeamInput that is not a legal game-day unit or lacks QB/RB/WR/TE depth order.
+5. **Band audit.** `runtime/bands.py` compares league receipts with the 2012 shapes and is rendered as `career/<year>/stats/calibration_audit.md`, fulfilling §3.6's standing audit. It detects engine or input defects. It never reruns, selects or edits a closed game.
 
 ## 4. Mandatory decision pauses
 

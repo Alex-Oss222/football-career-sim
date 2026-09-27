@@ -118,10 +118,13 @@ class ContinuityTests(unittest.TestCase):
         self.assertTrue(any('stale generated stat view' in error for error in validate(self.root)))
 
     def test_receipt_score_mismatch_is_rejected(self):
-        receipt = self.root/'career/2013/stats/game_receipts/2013-week01-reset-v2-03.json'
-        data = json.loads(receipt.read_text())
-        team = next(iter(data['final_score']))
-        data['final_score'][team] += 1
+        receipt = self.root/'career/2013/stats/game_receipts/synthetic-score-check.json'
+        data = {
+            'schema_version': 2, 'event_id': 'synthetic-score-check', 'week': 1,
+            'matchup': 'B at A', 'coverage': 'complete', 'detail': 'compact_stats',
+            'final_score': {'A': 8, 'B': 0},
+            'team_stats': {'A': {'points': 7, 'players': {}}, 'B': {'points': 0, 'players': {}}},
+        }
         receipt.write_text(json.dumps(data, sort_keys=True, separators=(',', ':'))+'\n')
         self.assertTrue(any('receipt points differ from final score' in error for error in validate(self.root)))
 

@@ -16,6 +16,8 @@ Start with [current state](../../state/05_Current_Season_State.md). The [season 
 | [Stone play-call stats](stats/play_call_stats.md) | Current named offensive-call usage/results from canonical snap ledgers |
 | [League player stats](stats/league_player_stats.md) | Current all-club player-stat view; coverage status is explicit |
 | [League leaders](stats/league_leaders.md) | Derived leaderboards only when stat-receipt coverage is complete |
+| [Team stats](stats/team_stats.md) | Per-game team totals for every club |
+| [Band audit](stats/calibration_audit.md) | League receipts against sourced 2012 usage and volume shapes |
 | [Game readiness](../../state/game_readiness.md) | Requirements before game resolution |
 
 ## Phase and event records
@@ -38,7 +40,8 @@ The preseason and regular-season stubs describe scheduled work only. League resu
 
 ## Canonical migrations
 
-- [Week 1 full-fidelity reset](migrations/week_01_full_fidelity_reset.md) — user-authorized replacement of the legacy Week 1 slate. Missing 32-team input reconstruction is an internal prerequisite owned by the one-command `Run Week 1` workflow; the user does not populate the manifest by hand.
+- [Week 1 restart under kernel 2013.4](migrations/week_01_kernel_2013_4_restart.md): active. Week 1 is void (Entry 34) and replays as event generation 3.
+- [Week 1 full-fidelity reset](migrations/week_01_full_fidelity_reset.md): superseded audit history of generations 1 and 2; its JSON manifest now controls generation 3.
 
 ## Durable football inputs
 

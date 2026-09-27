@@ -12,12 +12,16 @@ import hashlib
 import json
 import random
 
+from . import usage
+from .calibration import load as load_calibration
 from .player_evidence import choose
+
+OFFENSIVE_LINE = {"OT", "OG", "C", "T", "G", "OL"}
 
 
 def _rng(seed, *, event_id, drive_no, offense):
     payload = json.dumps(
-        ["public-snap-detail-v1", event_id, drive_no, offense],
+        ["public-snap-detail-v2", event_id, drive_no, offense],
         separators=(",", ":"),
     ).encode()
     digest = hashlib.sha256(seed + payload).digest()
@@ -41,6 +45,68 @@ def _allocate(total, count, rng):
     for index in order[:residue]:
         values[index] += 1
     return [sign * value for value in values]
+
+
+def _allocate_runs(total, count, rng):
+    """Allocate drive rushing yards so some carries lose yardage.
+
+    The sourced 2012 negative-run rate marks losing carries; their losses come
+    from the sourced loss distribution and the remaining carries absorb the
+    difference, so the drive total still reconciles exactly.
+    """
+    if count <= 1 or total < 0:
+        return _allocate(total, count, rng)
+    rate = usage.load()["values"]["negative_run_rate"]
+    losing = [i for i in range(count) if rng.random() < rate]
+    if len(losing) == count:
+        losing = losing[:-1]
+    losses = {i: usage.draw_loss(rng) for i in losing}
+    gaining = [i for i in range(count) if i not in losses]
+    shares = _allocate(int(total) + sum(losses.values()), len(gaining), rng)
+    values = [0] * count
+    for index, value in zip(gaining, shares):
+        values[index] = value
+    for index, loss in losses.items():
+        values[index] = -loss
+    return values
+
+
+def _credit_tackle(rng, defenders, defense_stats, record, *, negative=False):
+    """Credit a solo or assisted tackle using the sourced group shapes."""
+    values = usage.load()["values"]
+    shares = values["tfl_share"] if negative else values["tackle_share"]
+    first = usage.pick(rng, defenders, shares, "defense", role="tackle")
+    second = None
+    if rng.random() < values["assisted_tackle_play_rate"]:
+        try:
+            second = usage.pick(
+                rng, defenders, values["tackle_share"], "defense",
+                role="tackle", exclude=(first,),
+            )
+        except ValueError:
+            second = None
+    credited = [first] + ([second] if second is not None else [])
+    for player in credited:
+        line = defense_stats["players"][player.player_id]
+        _bump(line, "tackles")
+        _bump(line, "assisted_tackles" if second is not None else "solo_tackles")
+        if negative:
+            _bump(line, "tackles_for_loss")
+    record["tackler"] = first.player_id
+    if second is not None:
+        record["assist_tackler"] = second.player_id
+    return first
+
+
+def _returner(rng, players, role):
+    """The coach-designated returner handles the return when one is listed."""
+    designated = [p for p in players if role in p.roles or role in p.responsibilities]
+    if designated:
+        return min(
+            enumerate(designated),
+            key=lambda item: (item[1].depth if isinstance(item[1].depth, int) else 99, item[0]),
+        )[1]
+    return choose(rng, players, {"WR", "RB", "CB", "S"}, role)
 
 
 def _normalize_call(raw, default_type):
@@ -170,9 +236,12 @@ def apply_drive_detail(
     end_clock,
     kick_return=False,
     punt_return=False,
+    passer=None,
 ):
     """Allocate one resolved drive into reconciled player/snap public detail."""
     rng = _rng(seed, event_id=event_id, drive_no=drive_no, offense=team.team_id)
+    shares = usage.load()["values"]
+    completion_rate = load_calibration()["derived"]["completion_rate"]["value"]
     plays = max(1, int(plays))
     pass_plays = max(0, min(int(pass_plays), plays))
     sacks = max(0, min(int(sacks), pass_plays))
@@ -185,7 +254,9 @@ def apply_drive_detail(
     attempt_slots = [i for i in pass_slot_order if i not in sack_slots]
     run_slots = [i for i in range(plays) if i not in pass_slots]
 
-    qb = choose(rng, available, {"QB"}, "passer")
+    # One passer per club per game: the depth-chart QB1 unless the kernel
+    # supplies a different game passer.
+    qb = passer or usage.game_passer(available) or choose(rng, available, {"QB"}, "passer")
     qb_line = offense_stats["players"][qb.player_id]
 
     turnover_slot = None
@@ -205,7 +276,7 @@ def apply_drive_detail(
     completion_slots = []
     eligible_completions = [i for i in attempt_slots if i != turnover_slot]
     for index in eligible_completions:
-        if rng.random() < 0.60:
+        if rng.random() < completion_rate:
             completion_slots.append(index)
     if (pass_yards or outcome == "touchdown") and eligible_completions and not completion_slots:
         completion_slots.append(rng.choice(eligible_completions))
@@ -214,7 +285,7 @@ def apply_drive_detail(
 
     completion_yards = _allocate(pass_yards, len(completion_slots), rng)
     passing_by_slot = dict(zip(completion_slots, completion_yards))
-    rushing_yards = _allocate(rush_yards, len(run_slots), rng)
+    rushing_yards = _allocate_runs(rush_yards, len(run_slots), rng)
     rushing_by_slot = dict(zip(run_slots, rushing_yards))
 
     touchdown_slot = None
@@ -266,6 +337,7 @@ def apply_drive_detail(
             "target": None,
             "blocker": None,
             "tackler": None,
+            "assist_tackler": None,
             "result_yards": 0,
             "passing_yards": 0,
             "rushing_yards": 0,
@@ -288,8 +360,8 @@ def apply_drive_detail(
                 counter["yards"] -= loss
                 _bump(qb_line, "sacks_taken")
                 _bump(qb_line, "sack_yards", loss)
-                blocker = choose(rng, available, {"OT", "OG", "C"}, "pass_protection")
-                rusher = choose(rng, defenders, {"DE", "DT", "DL", "LB"}, "pass_rush")
+                blocker = choose(rng, available, OFFENSIVE_LINE, "pass_protection")
+                rusher = usage.pick(rng, defenders, shares["sack_share"], "defense", role="pass_rush")
                 _bump(offense_stats["players"][blocker.player_id], "sacks_allowed")
                 record["blocker"] = blocker.player_id
                 _bump(defense_stats["players"][rusher.player_id], "sacks")
@@ -298,7 +370,7 @@ def apply_drive_detail(
                 _bump(defense_stats["players"][rusher.player_id], "solo_tackles")
                 record["tackler"] = rusher.player_id
             else:
-                receiver = choose(rng, available, {"WR", "TE", "RB", "FB"}, "receiver")
+                receiver = usage.pick(rng, available, shares["target_share"], "target", role="receiver")
                 rec_line = offense_stats["players"][receiver.player_id]
                 record["target"] = receiver.player_id
                 _bump(qb_line, "pass_attempts")
@@ -308,7 +380,7 @@ def apply_drive_detail(
                 if turnover_type == "interception" and index == turnover_slot:
                     _bump(qb_line, "interceptions")
                     _bump(qb_line, "interceptions_thrown")
-                    defender = choose(rng, defenders, {"CB", "S", "LB"}, "coverage")
+                    defender = usage.pick(rng, defenders, shares["interception_share"], "defense", role="coverage")
                     def_line = defense_stats["players"][defender.player_id]
                     _bump(def_line, "defensive_interceptions")
                     return_yards = rng.randint(0, 35)
@@ -336,22 +408,20 @@ def apply_drive_detail(
                         _bump(rec_line, "receiving_touchdowns")
                         counter["touchdowns"] += 1
                     else:
-                        tackler = choose(rng, defenders, {"LB", "CB", "S", "DE", "DT", "DL"}, "tackle")
-                        _bump(defense_stats["players"][tackler.player_id], "tackles")
-                        _bump(defense_stats["players"][tackler.player_id], "solo_tackles")
-                        record["tackler"] = tackler.player_id
-                        if yards < 0:
-                            _bump(defense_stats["players"][tackler.player_id], "tackles_for_loss")
+                        _credit_tackle(rng, defenders, defense_stats, record)
                 else:
                     if rng.random() < 0.35:
-                        cover = choose(rng, defenders, {"CB", "S", "LB"}, "coverage")
+                        cover = usage.pick(rng, defenders, shares["pass_defensed_share"], "defense", role="coverage")
                         _bump(defense_stats["players"][cover.player_id], "passes_defended")
                         record["tackler"] = cover.player_id
                     if rng.random() < 0.20:
-                        pressure = choose(rng, defenders, {"DE", "DT", "DL", "LB"}, "pass_rush")
+                        pressure = usage.pick(rng, defenders, shares["sack_share"], "defense", role="pass_rush")
                         _bump(defense_stats["players"][pressure.player_id], "pressures")
         else:
-            runner = choose(rng, available, {"RB", "FB", "QB", "WR"}, "rusher")
+            runner = usage.pick(
+                rng, available, shares["rush_share"], "rush", role="rusher",
+                only=lambda p: usage.group(p.position) != "QB" or p.player_id == qb.player_id,
+            )
             run_line = offense_stats["players"][runner.player_id]
             yards = rushing_by_slot.get(index, 0)
             record["runner"] = runner.player_id
@@ -366,7 +436,7 @@ def apply_drive_detail(
             if turnover_type == "fumble" and index == turnover_slot:
                 _bump(run_line, "fumbles")
                 _bump(run_line, "fumbles_lost")
-                defender = choose(rng, defenders, {"LB", "CB", "S", "DE", "DT", "DL"}, "tackle")
+                defender = usage.pick(rng, defenders, shares["tackle_share"], "defense", role="tackle")
                 def_line = defense_stats["players"][defender.player_id]
                 _bump(def_line, "forced_fumbles")
                 _bump(def_line, "fumble_recoveries")
@@ -381,12 +451,7 @@ def apply_drive_detail(
                 _bump(run_line, "rushing_touchdowns")
                 counter["touchdowns"] += 1
             else:
-                tackler = choose(rng, defenders, {"LB", "CB", "S", "DE", "DT", "DL"}, "tackle")
-                _bump(defense_stats["players"][tackler.player_id], "tackles")
-                _bump(defense_stats["players"][tackler.player_id], "solo_tackles")
-                record["tackler"] = tackler.player_id
-                if yards < 0:
-                    _bump(defense_stats["players"][tackler.player_id], "tackles_for_loss")
+                _credit_tackle(rng, defenders, defense_stats, record, negative=yards < 0)
 
         ledger.append(record)
 
@@ -394,7 +459,7 @@ def apply_drive_detail(
     period, game_clock = _period_clock(end_clock)
 
     if outcome == "field_goal":
-        kicker = choose(rng, available, {"K"}, "placekicker")
+        kicker = usage.specialist(available, "K", "placekicker") or choose(rng, available, {"K"}, "placekicker")
         line = offense_stats["players"][kicker.player_id]
         _bump(line, "field_goals_attempted")
         _bump(line, "field_goals_made")
@@ -405,7 +470,7 @@ def apply_drive_detail(
             "result_yards": 0, "touchdown": False, "turnover": False,
         })
     elif outcome == "punt":
-        punter = choose(rng, available, {"P"}, "punt")
+        punter = usage.specialist(available, "P", "punt") or choose(rng, available, {"P"}, "punt")
         line = offense_stats["players"][punter.player_id]
         punt_yards = rng.randint(32, 58)
         _bump(line, "punts")
@@ -417,7 +482,7 @@ def apply_drive_detail(
         returner = None
         return_yards = 0
         if punt_return:
-            returner = choose(rng, defenders, {"WR", "RB", "CB", "S"}, "punt_return")
+            returner = _returner(rng, defenders, "punt_return")
             return_yards = rng.randint(0, 22)
             rline = defense_stats["players"][returner.player_id]
             _bump(rline, "punt_returns")
@@ -432,7 +497,7 @@ def apply_drive_detail(
         })
 
     if outcome == "touchdown":
-        kicker = choose(rng, available, {"K"}, "placekicker")
+        kicker = usage.specialist(available, "K", "placekicker") or choose(rng, available, {"K"}, "placekicker")
         line = offense_stats["players"][kicker.player_id]
         _bump(line, "extra_points_attempted")
         _bump(line, "extra_points_made")
@@ -445,7 +510,7 @@ def apply_drive_detail(
         terminal_snap += 1
 
     if kick_return:
-        returner = choose(rng, defenders, {"WR", "RB", "CB", "S"}, "kick_return")
+        returner = _returner(rng, defenders, "kick_return")
         return_yards = rng.randint(12, 36)
         rline = defense_stats["players"][returner.player_id]
         _bump(rline, "kick_returns")

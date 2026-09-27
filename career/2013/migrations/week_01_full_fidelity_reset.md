@@ -1,12 +1,12 @@
 # Week 1 full-fidelity reset
 
-**Status:** COMPLETE — generation 1 technically aborted; generation 2 published in merge `6658e3c0e8797f0524a9fda25a4624992118815f`; post-publication branch-roster attribution correction applied without changing scores or standings.
+**Status:** SUPERSEDED. Generation 1 technically aborted; generation 2 was published in merge `6658e3c0e8797f0524a9fda25a4624992118815f` and later **voided** by ledger Entry 34 for the kernel 2013.4 restart. The active procedure is [week_01_kernel_2013_4_restart.md](week_01_kernel_2013_4_restart.md). This file is retained as the audit history of generations 1 and 2.
 **User authorization:** The user explicitly authorized the full-stat/full-play Week 1 replacement and later instructed that `Run Week 1` must perform all reset preparation automatically without sending setup work back to the user.
 **Source checkpoint:** `Canonical update - September 4, 2013 - preseason, roster and cap block closed`.
 
 **Technical-abort record (September 20, 2026):** the first full-fidelity reset attempt privately closed all 16 `reset-v1` events, then an older workflow erroneously advanced the private snapshot before public publication. Codex subsequently failed because the generated Git diff exceeded its extraction limit; no reset commit or PR reached `main`, and no v1 result was published to the user as replacement canon. HTTP deployment logs independently show the 16 event closures followed by the premature snapshot-advance call. Under the project's transaction rule this entire v1 batch is an outcome-independent technical abort. Generation 2 uses new event IDs and may run only after the private binding is auditably restored to the checked-in canonical state.
 
-The retry must run `python scripts/mark_week1_v1_aborted.py` before closing any generation-2 replacement event. That helper idempotently records the same private correction for each known `2013-week01-reset-v1-01` through `...-16` event ID. This preserves the private append-only audit trail without exposing the abandoned results.
+Before any replacement event closes, `python scripts/mark_week1_generations_void.py` (which replaced the earlier generation-1-only helper) idempotently records the private correction for each known `2013-week01-reset-v1-01` through `...-16` event ID. This preserves the private append-only audit trail without exposing the abandoned results.
 
 ## Why the reset needs reconstruction
 

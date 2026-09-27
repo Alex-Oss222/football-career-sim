@@ -127,19 +127,11 @@ def validate(root=ROOT):
         import sys
         if str(ROOT) not in sys.path:
             sys.path.insert(0, str(ROOT))
-        from runtime.statbook import aggregate_receipts
-        from scripts.render_season_stats import (
-            all_players_markdown,
-            compact_book_for_storage,
-            leaders_markdown,
-            league_markdown,
-            play_calls_markdown,
-            team_markdown,
-        )
+        from scripts.render_season_stats import render_views
 
         stats_dir = root/'career/2013/stats'
         receipt_paths = sorted((stats_dir/'game_receipts').glob('*.json'))
-        require(bool(receipt_paths), 'Statbook has no closed-game receipts')
+        # Zero receipts is legitimate before the first regular-season game.
         receipts = []
         for receipt_path in receipt_paths:
             receipt = json.loads(receipt_path.read_text())
@@ -165,27 +157,13 @@ def validate(root=ROOT):
                             f'{event_id}: {team_id} receipt points differ from final score',
                         )
 
-        book = aggregate_receipts(receipts)
-        expected_cache = (
-            json.dumps(
-                compact_book_for_storage(book),
-                sort_keys=True,
-                separators=(',', ':'),
-            ) + '\n'
-        )
-        require(
-            (stats_dir/'season_totals.json').read_text() == expected_cache,
-            'season_totals.json is stale; rebuild season stats from receipts',
-        )
-        expected_views = {
-            'team_player_stats.md': team_markdown(2013, 'Jacksonville Jaguars', book),
-            'league_player_stats.md': league_markdown(2013, book),
-            'all_player_stats.md': all_players_markdown(2013, book),
-            'league_leaders.md': leaders_markdown(2013, book),
-            'play_call_stats.md': play_calls_markdown(2013, 'Jacksonville Jaguars', book),
-        }
+        expected_views = render_views(2013, 'Jacksonville Jaguars', receipts)
         for name, expected in expected_views.items():
             actual = (stats_dir/name).read_text()
+            if name == 'season_totals.json':
+                require(actual == expected,
+                        'season_totals.json is stale; rebuild season stats from receipts')
+                continue
             if actual != expected:
                 actual_lines = actual.splitlines()
                 expected_lines = expected.splitlines()

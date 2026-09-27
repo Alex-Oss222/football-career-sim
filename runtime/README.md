@@ -20,9 +20,13 @@ Preseason uses the consolidated-block architecture: Document 5 may remain at the
 Current Markdown views are rendered from the receipt set with `scripts/render_season_stats.py`. Incomplete legacy receipt coverage must remain labeled and formal league leaderboards are withheld until the gap is reconciled.
 
 
-## Kernel 2013.3 snap-detail contract
+## Kernel 2013.4 attribution and volume contract
 
-Kernel 2013.3 keeps score/outcome generation at the possession layer and adds a deterministic public detail stream after each drive is resolved.
+`runtime/usage.py` loads `library/data/2012_nfl_position_usage_baseline.json` (two-source 2012 play-by-play; see `library/2012_position_usage_calibration.md`). Player attribution is depth-chart aware: one game passer per club (`PlayerInput.depth`, then a `passer` role, then rotation status, then roster order), carries/targets/defensive credits by sourced position-group share and usage rank, assisted tackles, losing runs and tackles for loss. `runtime/kernel.py` draws plays and clock per drive from the resolved result and scales them to the verified team-game totals; third-down and first-down volume use sourced rates. `runtime/game_runner.py` rejects a TeamInput that is not a legal game-day unit. `runtime/bands.py` audits closed receipts against the shapes without touching any result. The private service must be redeployed at the same kernel version; readiness fails closed on a mismatch.
+
+## Snap-detail contract (introduced in kernel 2013.3, retained in 2013.4)
+
+The kernel keeps score/outcome generation at the possession layer and adds a deterministic public detail stream after each drive is resolved.
 
 - `runtime/play_detail.py` allocates a resolved drive into public snap rows without consuming the possession RNG.
 - `TeamInput.offensive_call_sheet` carries the structured weekly call menu used for named-call accounting.

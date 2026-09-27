@@ -9,6 +9,7 @@ from .packets import canonical
 from .private_client import Client
 from .player_evidence import normalize_players, serialize_roster
 from .play_detail import canonical_call_sheet
+from .usage import lineup_errors
 
 ENTROPY_DOMAIN = b"football-career-sim/event-entropy/v1\0"
 
@@ -31,6 +32,12 @@ def build_game_packet(event_id, snapshot, home, away, *, venue="home", weather="
         raise ValueError("game teams must differ")
     if not normalize_players(home) or not normalize_players(away):
         raise ValueError("each club requires an available, roster-bound participant")
+    for team in (home, away):
+        missing = lineup_errors(normalize_players(team))
+        if missing:
+            raise ValueError(
+                f"{team.team_id} TeamInput is not a legal game-day unit: " + "; ".join(missing)
+            )
     return {
         "procedure": KERNEL_VERSION, "event_id": event_id, "snapshot": snapshot,
         "home": _team_packet(home), "away": _team_packet(away), "venue": venue,

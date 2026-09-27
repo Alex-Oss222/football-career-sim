@@ -35,7 +35,7 @@ Every closed regular-season or postseason game also produces a **public stat rec
 
 `career/[year]/stats/game_receipts/`
 
-That receipt is downstream of the already-resolved game. Under kernel 2013.3 it contains the complete public player-stat dictionaries, the complete public snap `play_ledger`, game-level named `play_call_stats`, and identifiers needed to rebuild season totals. It must never contain private Engine State material, hidden ratings, matchup deltas, probabilities, or seeds.
+That receipt is downstream of the already-resolved game. Under kernel 2013.4 it contains the complete public player-stat dictionaries, the complete public snap `play_ledger`, game-level named `play_call_stats`, and identifiers needed to rebuild season totals. It must never contain private Engine State material, hidden ratings, matchup deltas, probabilities, or seeds.
 
 The current season-stat views are separate from standings:
 
@@ -49,7 +49,7 @@ Season totals should be rebuilt mechanically from game receipts using the reposi
 
 ## Structured weekly call-sheet rule
 
-Before a protagonist game is closed under kernel 2013.3, the executable offensive menu used by the simulator must be passed as structured `TeamInput.offensive_call_sheet` data. This is the machine-readable version of the call sheet Stone and staff already approved during preparation.
+Before a protagonist game is closed under kernel 2013.4, the executable offensive menu used by the simulator must be passed as structured `TeamInput.offensive_call_sheet` data. This is the machine-readable version of the call sheet Stone and staff already approved during preparation.
 
 A call entry may contain:
 

@@ -16,6 +16,8 @@ class PlayerInput:
     responsibilities: tuple = ()
     rotation_status: str = "competition"
     medical_limitation: str | None = None
+    # Coach-supplied depth-chart order within the position group (1 = first).
+    depth: int | None = None
 
 
 STAT_FIELDS = (

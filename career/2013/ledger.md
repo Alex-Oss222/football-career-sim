@@ -690,3 +690,33 @@ This correction does not simulate or authorize Week 2. Oakland remains unplayed.
 
 **Commit closed — Canonical correction - September 9, 2013 - Week 1 attribution audit completed for Week 2 readiness — canonical through September 9, after Week 1 and before Week 2 preparation**
 
+
+## Entry 34: Week 1 voided for kernel 2013.4 restart
+
+**Effective canonical state:** September 4, 2013, after regular-season cap compliance and before Week 1
+**Recorded:** September 27, 2026
+**Checkpoint:** `Canonical correction - September 4, 2013 - Week 1 voided for kernel 2013.4 restart`
+**Preceding global package checkpoint:** `Canonical correction - September 9, 2013 - Week 1 attribution audit completed for Week 2 readiness`
+
+The user directed a full Week 1 restart after a statistical audit of the sixteen generation-2 receipts found engine and input defects that no attribution correction could repair:
+
+- the kernel picked a passer per drive from every available quarterback and weighted "competition" players above "core" starters, so 29 of 32 team-games used two or three passers and backups often led;
+- carries and targets were drawn with near-equal weight across positions, giving receivers about a third of all carries;
+- linebackers were largely absent from the reconstructed background TeamInputs, and OLB/ILB labels could never be selected, so linebackers made 20 of about 2,050 tackles;
+- every tackle was solo and losing runs were almost never generated;
+- drive clock and snap counts ignored the calibrated drive rate, producing about 84 plays per team-game against the verified 2012 figure of 64.2.
+
+Game-level efficiency (completion rate, yards per carry, sack rate) was close to the 2012 baseline; the defects were in play volume and player attribution.
+
+**Void.** Entries 30 through 33 are superseded. The legacy Week 1 slate, generation 2 (events `2013-week01-reset-v2-01` through `-16`) and every downstream Week 1 fact are void: the Jacksonville 34-13 result, all Week 1 scores and standings, all Week 1 player statistics and receipts, the generated Owens and Rambo injuries, and the post-game quarterback-rotation statement. Generation 1 remains a recorded technical abort. Void events stay in the private append-only journal; they are marked void there by `scripts/mark_week1_generations_void.py` before any replacement event closes, and their results are never shown or selected among.
+
+**Why this is not outcome selection.** The restart is triggered by verified engine and input defects measured against sourced 2012 play-by-play, not by whether any result was desirable. Every one of the sixteen games is replaced, including every non-Jacksonville game, under one corrected kernel.
+
+**Engine change.** Kernel 2013.4 adds depth-chart-aware attribution from a two-source 2012 play-by-play baseline (`library/2012_position_usage_calibration.md`), one passer per club per game, assisted tackles, losing runs, outcome-shaped drive length and clock, sourced third-down and first-down volume, a game-day unit gate that fails closed on thin TeamInputs, and a non-blocking statistical band audit.
+
+**Restored state.** Roster, register, calendar, standings and current state return to their September 4 content. Jacksonville is 0-0 with 53 active players and 8 on the practice squad; no transaction, contract, cap or roster-control fact changed. Pasztor remains on medical hold and Mosley medically unavailable, as before Week 1. The Week 1 ex-ante preparation and a recovered structured call sheet are kept for the replay.
+
+**Primary records:** `migrations/week_01_kernel_2013_4_restart.md`; `regular_season/week_01_kansas_city_at_jacksonville/output.md` and `call_sheet.json`; empty regenerated `stats/` views.
+**Next competitive event:** September 8 Week 1 vs Kansas City, 1:00 p.m. ET, replayed under kernel 2013.4. **Not simulated.**
+
+**Commit closed - Canonical correction - September 4, 2013 - Week 1 voided for kernel 2013.4 restart - canonical through September 4, after regular-season cap compliance and before Week 1**
