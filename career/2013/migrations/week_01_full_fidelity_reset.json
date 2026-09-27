@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "migration": "2013-week-01-full-fidelity-reset",
- "status": "GENERATION_3_PENDING_KERNEL_2013_4",
+ "status": "GENERATION_3_CLOSED",
  "user_authorized": true,
  "source_checkpoint": "Canonical update - September 4, 2013 - preseason, roster and cap block closed",
  "purpose": "Replace the legacy Week 1 slate only after all 16 games can be rerun under the full snap/stat receipt contract.",
@@ -12,7 +12,7 @@
    "away": "Baltimore Ravens",
    "home": "Denver Broncos",
    "event_id": "2013-week01-reset-v3-01",
-   "input_status": "INPUTS_REQUIRED",
+   "input_status": "CLOSED",
    "away_input": null,
    "home_input": null
   },
@@ -21,7 +21,7 @@
    "away": "New England Patriots",
    "home": "Buffalo Bills",
    "event_id": "2013-week01-reset-v3-02",
-   "input_status": "INPUTS_REQUIRED",
+   "input_status": "CLOSED",
    "away_input": null,
    "home_input": null
   },
@@ -30,7 +30,7 @@
    "away": "Tennessee Titans",
    "home": "Pittsburgh Steelers",
    "event_id": "2013-week01-reset-v3-03",
-   "input_status": "INPUTS_REQUIRED",
+   "input_status": "CLOSED",
    "away_input": null,
    "home_input": null
   },
@@ -39,7 +39,7 @@
    "away": "Atlanta Falcons",
    "home": "New Orleans Saints",
    "event_id": "2013-week01-reset-v3-04",
-   "input_status": "INPUTS_REQUIRED",
+   "input_status": "CLOSED",
    "away_input": null,
    "home_input": null
   },
@@ -48,7 +48,7 @@
    "away": "Tampa Bay Buccaneers",
    "home": "New York Jets",
    "event_id": "2013-week01-reset-v3-05",
-   "input_status": "INPUTS_REQUIRED",
+   "input_status": "CLOSED",
    "away_input": null,
    "home_input": null
   },
@@ -57,7 +57,7 @@
    "away": "Seattle Seahawks",
    "home": "Carolina Panthers",
    "event_id": "2013-week01-reset-v3-06",
-   "input_status": "INPUTS_REQUIRED",
+   "input_status": "CLOSED",
    "away_input": null,
    "home_input": null
   },
@@ -66,7 +66,7 @@
    "away": "Cincinnati Bengals",
    "home": "Chicago Bears",
    "event_id": "2013-week01-reset-v3-07",
-   "input_status": "INPUTS_REQUIRED",
+   "input_status": "CLOSED",
    "away_input": null,
    "home_input": null
   },
@@ -75,7 +75,7 @@
    "away": "Miami Dolphins",
    "home": "Cleveland Browns",
    "event_id": "2013-week01-reset-v3-08",
-   "input_status": "INPUTS_REQUIRED",
+   "input_status": "CLOSED",
    "away_input": null,
    "home_input": null
   },
@@ -84,7 +84,7 @@
    "away": "Minnesota Vikings",
    "home": "Detroit Lions",
    "event_id": "2013-week01-reset-v3-09",
-   "input_status": "INPUTS_REQUIRED",
+   "input_status": "CLOSED",
    "away_input": null,
    "home_input": null
   },
@@ -93,7 +93,7 @@
    "away": "Oakland Raiders",
    "home": "Indianapolis Colts",
    "event_id": "2013-week01-reset-v3-10",
-   "input_status": "INPUTS_REQUIRED",
+   "input_status": "CLOSED",
    "away_input": null,
    "home_input": null
   },
@@ -102,7 +102,7 @@
    "away": "Green Bay Packers",
    "home": "San Francisco 49ers",
    "event_id": "2013-week01-reset-v3-11",
-   "input_status": "INPUTS_REQUIRED",
+   "input_status": "CLOSED",
    "away_input": null,
    "home_input": null
   },
@@ -111,7 +111,7 @@
    "away": "Arizona Cardinals",
    "home": "St. Louis Rams",
    "event_id": "2013-week01-reset-v3-12",
-   "input_status": "INPUTS_REQUIRED",
+   "input_status": "CLOSED",
    "away_input": null,
    "home_input": null
   },
@@ -120,7 +120,7 @@
    "away": "New York Giants",
    "home": "Dallas Cowboys",
    "event_id": "2013-week01-reset-v3-13",
-   "input_status": "INPUTS_REQUIRED",
+   "input_status": "CLOSED",
    "away_input": null,
    "home_input": null
   },
@@ -129,7 +129,7 @@
    "away": "Philadelphia Eagles",
    "home": "Washington Redskins",
    "event_id": "2013-week01-reset-v3-14",
-   "input_status": "INPUTS_REQUIRED",
+   "input_status": "CLOSED",
    "away_input": null,
    "home_input": null
   },
@@ -138,7 +138,7 @@
    "away": "Houston Texans",
    "home": "San Diego Chargers",
    "event_id": "2013-week01-reset-v3-15",
-   "input_status": "INPUTS_REQUIRED",
+   "input_status": "CLOSED",
    "away_input": null,
    "home_input": null
   },
@@ -147,7 +147,7 @@
    "away": "Kansas City Chiefs",
    "home": "Jacksonville Jaguars",
    "event_id": "2013-week01-reset-v3-16",
-   "input_status": "INPUTS_REQUIRED",
+   "input_status": "CLOSED",
    "away_input": null,
    "home_input": null
   }
@@ -169,5 +169,10 @@
    "reason": "verified kernel 2013.3 attribution and volume defects and thin background TeamInputs; all 16 games void, receipts deleted"
   }
  ],
- "protagonist_call_sheet": "career/2013/regular_season/week_01_kansas_city_at_jacksonville/call_sheet.json"
+ "protagonist_call_sheet": "career/2013/regular_season/week_01_kansas_city_at_jacksonville/call_sheet.json",
+ "closure": {
+  "ledger_entry": 35,
+  "checkpoint": "Canonical update - September 8, 2013 - Week 1 vs Kansas City closed",
+  "receipts": "career/2013/stats/game_receipts/2013-week01-reset-v3-*.json"
+ }
 }

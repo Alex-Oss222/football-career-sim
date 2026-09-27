@@ -1,6 +1,6 @@
 # Week 1 restart under kernel 2013.4
 
-**Status:** OPEN. Week 1 is void (ledger Entry 34) and not yet replayed.
+**Status:** CLOSED. Week 1 was replayed as generation 3 and closed by ledger Entry 35: Jacksonville 31, Kansas City 13, with all sixteen games replaced.
 **User authorization:** On September 27, 2026 the user directed a full Week 1 restart after the statistical audit, asked that everything from Week 1 be deleted, and asked that the engine fixes and the stat-sheet rebuild be made.
 **Restored checkpoint:** `Canonical correction - September 4, 2013 - Week 1 voided for kernel 2013.4 restart` (roster content equals the September 4 Entry 29 state).
 **Control manifest:** [week_01_full_fidelity_reset.json](week_01_full_fidelity_reset.json), now at event generation 3 (`2013-week01-reset-v3-01` through `-16`) and kernel 2013.4.

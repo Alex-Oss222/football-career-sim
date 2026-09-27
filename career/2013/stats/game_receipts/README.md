@@ -28,4 +28,4 @@ A receipt may list `player_attribution_incomplete_teams` when a later integrity 
 
 ## Current contents
 
-Empty. The generation-2 Week 1 receipts were deleted when ledger Entry 34 voided Week 1. The replay writes generation-3 receipts under kernel 2013.4 (see `../../migrations/week_01_kernel_2013_4_restart.md`).
+Week 1 generation 3: `2013-week01-reset-v3-01.json` through `-16.json` (kernel 2013.4). Jacksonville's receipt (`-16`) is full; the other fifteen are compact. The void generation-2 receipts were deleted by ledger Entry 34.

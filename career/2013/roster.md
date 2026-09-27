@@ -1,13 +1,13 @@
 # Jacksonville Jaguars roster
 
-**As of:** September 4, 2013, after regular-season cap compliance.
+**As of:** September 8, 2013, after Week 1.
 **Canonical controlled-player count:** **53**.
 **Practice squad:** **8**, separate from the active roster.
-**Record:** preseason 2-2; regular season 0-0. Week 1 (voided by ledger Entry 34) awaits replay, so no Week 1 injury, role change or result applies.
+**Record:** preseason 2-2; regular season 1-0 (Week 1: Jacksonville 31, Kansas City 13). Week 1 produced no injury, role change or transaction.
 
 ## 1. How to read this page
 
-Players are grouped by position. **Pos** is the roster position in Document 4. **Availability** is the club's current medical communication; "No communicated restriction" means none has been communicated, and game-week status still requires fresh communication before each game. **Role** lists only assignments already decided in canon (ledger and Document 4, September 4); a dash means no assignment has been set, not a demotion. The depth chart below those roles is set by staff decisions and is not implied by the order of this page.
+Players are grouped by position. **Pos** is the roster position in Document 4. **Availability** is the club's current medical communication; "No communicated restriction" means none has been communicated, and game-week status still requires fresh communication before each game. **Role** lists only assignments already decided in canon (ledger and Document 4); a dash means no assignment has been set, not a demotion. The depth chart below those roles is set by staff decisions and is not implied by the order of this page.
 
 ## 2. How the roster was formed
 

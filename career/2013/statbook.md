@@ -20,7 +20,7 @@ Each weekly `output.md` carries its game's box score, generated from the same re
 
 ## Current coverage
 
-No regular-season game is canon. Week 1 was voided by ledger Entry 34 and its receipts were deleted, so every page is empty until the replayed Week 1 closes under kernel 2013.4.
+Through Week 1: sixteen of sixteen game receipts (generation 3, kernel 2013.4); coverage complete and every band-audit row WITHIN the 2012 bands.
 
 ## Rebuild
 
