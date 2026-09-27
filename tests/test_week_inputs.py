@@ -77,7 +77,7 @@ class PackageTests(unittest.TestCase):
         self.assertEqual(set(jax["active_players"]), available - inactives)
         self.assertLessEqual(len(jax["active_players"]), 46)
         self.assertNotIn("Austin Pasztor", jax["active_players"])
-        self.assertNotIn("Justin Blackmon", {p["player_id"] for p in jax["roster"]})
+        self.assertNotIn("Justin Blackmon", jax["active_players"])
 
     def test_background_clubs_dress_at_most_forty_six(self):
         for game in self.package["games"]:

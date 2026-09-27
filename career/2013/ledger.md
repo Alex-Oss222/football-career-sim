@@ -909,3 +909,54 @@ Under AGENTS.md these are engine defects to investigate, never grounds to rerun 
 **Next competitive event:** October 13 Week 6 at Denver, 4:05 p.m. ET. **Not simulated.**
 
 **Commit closed - Canonical update - October 6, 2013 - Week 5 at St. Louis closed - canonical through October 6, after Week 5**
+
+## Entry 42: Blackmon reinstated and activated
+
+**Effective canonical state:** October 7, 2013
+**Recorded:** September 27, 2026
+**Checkpoint:** `Canonical update - October 7, 2013 - Blackmon reinstated and activated`
+**Preceding global package checkpoint:** `Canonical update - October 6, 2013 - Week 5 at St. Louis closed`
+
+**Transaction.** Justin Blackmon's four-game league suspension (Entry 36) ended with Jacksonville's Week 5 game. Under the sourced 2013 rule (`library/2013_suspension_reinstatement_rules.md`: eligible the day after the club's fourth suspended game; confirmed), he was reinstated from Reserve/Suspended on Monday, October 7. Jacksonville activated him to the 53-man roster the same day, using the spot Caldwell had held open since September 9. The club may activate a returning player at any time, so no league roster exemption was needed or resolved. The activation is a roster move within Caldwell's authority. It carries out Stone's recorded plan for Blackmon to practice and be a game-day inactive in Weeks 6 and 7. He is eligible for Week 8.
+
+**Effects.**
+- Active roster 53; no Reserve/Suspended player; practice squad 8.
+- Game checks: Blackmon's base-salary game checks resume. The sourced rule sets the forfeiture for the four suspended games at 4/17 of his 2013 base salary. The dollar amount and its cap credit remain unresolved, because his base/proration split is not verified in the worksheet.
+- Stone's Week 6-7 game-day inactive decision is unchanged.
+
+**Primary records:** `roster.md`; `offseason/current_cap_worksheet.md`; `depth_chart.json`.
+
+**Commit closed - Canonical update - October 7, 2013 - Blackmon reinstated and activated - canonical through October 7**
+
+## Entry 43: Week 6 closed
+
+**Effective canonical state:** October 13, 2013, after Week 6
+**Recorded:** September 27, 2026
+**Checkpoint:** `Canonical update - October 13, 2013 - Week 6 at Denver closed`
+**Preceding global package checkpoint:** `Canonical update - October 7, 2013 - Blackmon reinstated and activated`
+
+**Result.** Jacksonville 26, Denver 10 at Sports Authority Field at Mile High. Jacksonville is 4-2, first in the AFC South and first in the AFC.
+
+**Batch.** All fifteen Week 6 games closed once each under kernel 2013.6 through `runtime.game_runner.run_game` and the private Engine State service. They closed from the package frozen by `scripts/build_week_inputs.py 6` after the fifteen-game gate passed. Atlanta and Miami had byes. No event was drawn twice. The user chose to play Week 6 before kernel 2013.7 (in development) was ready.
+
+**Inputs.**
+- **Call sheet:** Stone's runner-ready sheet, frozen verbatim. Sprint Flood, H Chip-Release, Smoke/Now, Zip, Snag, TE Delay and 6OL all appear in the active 2013 book.
+- **Line:** Brewster confirmed as the starting center, with Meester as reserve.
+- **Inactives:** Blackmon, Pasztor, Mosley, C.J. Wilson, Edwards, Rutland and John Parker Wilson. Thielen returned as WR2.
+- **Development emphasis:** Kelce and Thielen, through assignments rather than quotas.
+- **Background clubs** dressed up to 46 players each, from depth order. Every club carried the Average low-confidence unit anchor.
+
+**Statistics and standings.** A full Jacksonville receipt and fourteen compact receipts are preserved. The box score, standings and statbook were generated from them. Every graded band-audit row is WITHIN, and every ledger-coherence count is zero.
+
+**Availability.** Jacksonville generated no injury. Rackley remains limited (minor). Background injuries are listed in `league_results/week_06.md`, including Pittsburgh's Antonio Brown (projected 173 days) and Denver's Orlando Franklin (head/neck hold).
+
+**Engine findings (investigated, not grounds to rerun).**
+- **Safety after a kickoff return.** Denver's third-quarter possession began after a 28-yard kickoff return, lost 13 yards on two plays and is recorded as a safety, which cannot reach the end zone. It is the same known lack of field position as the Week 5 safety against Jacksonville (Entries 39-41), this time in Jacksonville's favour. Under the rules both stand.
+- **Call labels.** The TE Delay label was attached to throws to Clemons and Mike Brown because 2013.6 labels are not tied to the ball carrier. Kelce was not targeted: 2013.6 targets follow the tight-end depth order.
+
+Kernel 2013.7 addresses the first three defect classes and the sack rate.
+
+**Primary records:** `regular_season/week_06_jacksonville_at_denver/output.md` and `call_sheet.json`; `league_results/week_06.md`; `stats/game_receipts/week_06_*.json`; `standings.md`; `depth_chart.json`.
+**Next competitive event:** October 20 Week 7 vs San Diego, 1 p.m. ET. **Not simulated.**
+
+**Commit closed - Canonical update - October 13, 2013 - Week 6 at Denver closed - canonical through October 13, after Week 6**

@@ -1,7 +1,7 @@
 # Jacksonville Jaguars — 2013 Regular-Season Cap Reconciliation
 
 **Status:** RECONCILED WITH SOURCE-BOUNDED UNCERTAINTY.
-**Effective date:** September 9, 2013, after Justin Blackmon's move to Reserve/Suspended.
+**Effective date:** October 7, 2013, after Justin Blackmon's reinstatement and activation.
 
 ## Governing treatment
 
@@ -24,6 +24,10 @@ This range is the honest current branch answer; an exact club ledger does not ex
 ## September 9: Blackmon to Reserve/Suspended
 
 Justin Blackmon serves a four-game league suspension (Weeks 2-5) on Reserve/Suspended. He forfeits his base-salary game checks for those four weeks. How the forfeiture is credited against the 2013 cap has not been verified here, and the exact 2013 base salary behind his cap charge is not verified in this worksheet (`initial_cap_sheet.md` carries his total cap charge, not the base/proration split), so the forfeited amount and its cap effect are **unresolved**; no figure is booked. His signing-bonus proration is unaffected by this worksheet; whether any of it is recoverable is also unresolved. The working range above is unchanged until that reconciliation is done. Jacksonville's active roster is 52 with one open spot; no replacement has been signed.
+
+## October 7: Blackmon reinstated and activated
+
+Blackmon was reinstated from Reserve/Suspended and activated to the open 53rd spot on October 7 (ledger Entry 42), so his base-salary game checks resume from Week 6. The sourced 2013 rule (`library/2013_suspension_reinstatement_rules.md`, confirmed) sets the forfeiture for the four suspended games at 4/17 of his 2013 Paragraph 5 base salary. The dollar amount and how it is credited against the cap remain **unresolved**, because the base/proration split behind his cap charge is still not verified here; no figure is booked and the working range is unchanged. The active roster is 53 with no open spot.
 
 ## Recalculation triggers
 

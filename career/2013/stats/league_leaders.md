@@ -1,7 +1,7 @@
 # 2013 NFL statistical leaders
 
-**Version:** `2013-W05-LEADERS`
-**Through:** Week 5.
+**Version:** `2013-W06-LEADERS`
+**Through:** Week 6.
 **Coverage:** complete for every closed game.
 
 By position, then category; each list ranks only players at that position. Passer-rate leaders and overall leaders follow.
@@ -12,46 +12,46 @@ By position, then category; each list ranks only players at that position. Passe
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Tony Romo | Dallas Cowboys | 1511 |
-| 2 | Michael Vick | Philadelphia Eagles | 1449 |
-| 3 | Sam Bradford | St. Louis Rams | 1323 |
-| 4 | Matt Ryan | Atlanta Falcons | 1300 |
-| 5 | Philip Rivers | San Diego Chargers | 1291 |
-| 6 | Joe Flacco | Baltimore Ravens | 1276 |
-| 7 | E.J. Manuel | Buffalo Bills | 1245 |
-| 8 | Andy Dalton | Cincinnati Bengals | 1233 |
-| 8 | Carson Palmer | Arizona Cardinals | 1233 |
-| 10 | Jay Cutler | Chicago Bears | 1222 |
+| 1 | Michael Vick | Philadelphia Eagles | 1715 |
+| 2 | Tony Romo | Dallas Cowboys | 1673 |
+| 3 | Jay Cutler | Chicago Bears | 1581 |
+| 4 | Carson Palmer | Arizona Cardinals | 1498 |
+| 5 | Andy Dalton | Cincinnati Bengals | 1484 |
+| 6 | Joe Flacco | Baltimore Ravens | 1475 |
+| 7 | E.J. Manuel | Buffalo Bills | 1472 |
+| 8 | Philip Rivers | San Diego Chargers | 1466 |
+| 9 | Alex Smith (KC) | Kansas City Chiefs | 1436 |
+| 10 | Matt Schaub | Houston Texans | 1432 |
 
 ### Passing touchdowns
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Philip Rivers | San Diego Chargers | 10 |
-| 1 | Sam Bradford | St. Louis Rams | 10 |
-| 1 | Tony Romo | Dallas Cowboys | 10 |
-| 4 | Carson Palmer | Arizona Cardinals | 9 |
-| 4 | Kirk Cousins | Jacksonville Jaguars | 9 |
-| 4 | Ryan Tannehill | Miami Dolphins | 9 |
-| 7 | Ben Roethlisberger | Pittsburgh Steelers | 8 |
-| 7 | Matt Ryan | Atlanta Falcons | 8 |
-| 9 | Andrew Luck | Indianapolis Colts | 7 |
-| 9 | Brandon Weeden | Cleveland Browns | 7 |
+| 1 | Carson Palmer | Arizona Cardinals | 12 |
+| 2 | Kirk Cousins | Jacksonville Jaguars | 11 |
+| 2 | Philip Rivers | San Diego Chargers | 11 |
+| 2 | Sam Bradford | St. Louis Rams | 11 |
+| 2 | Tony Romo | Dallas Cowboys | 11 |
+| 6 | Jay Cutler | Chicago Bears | 10 |
+| 6 | Matt Schaub | Houston Texans | 10 |
+| 8 | Colin Kaepernick | San Francisco 49ers | 9 |
+| 8 | Ryan Tannehill | Miami Dolphins | 9 |
+| 10 | Ben Roethlisberger | Pittsburgh Steelers | 8 |
 
 ### Completions
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Sam Bradford | St. Louis Rams | 127 |
-| 2 | Carson Palmer | Arizona Cardinals | 126 |
-| 3 | E.J. Manuel | Buffalo Bills | 117 |
-| 3 | Jake Locker | Tennessee Titans | 117 |
-| 5 | Christian Ponder | Minnesota Vikings | 116 |
-| 6 | Kirk Cousins | Jacksonville Jaguars | 113 |
-| 6 | Matt Ryan | Atlanta Falcons | 113 |
-| 8 | Andy Dalton | Cincinnati Bengals | 112 |
-| 8 | Tom Brady | New England Patriots | 112 |
-| 10 | Tony Romo | Dallas Cowboys | 111 |
+| 1 | Sam Bradford | St. Louis Rams | 146 |
+| 2 | E.J. Manuel | Buffalo Bills | 145 |
+| 3 | Carson Palmer | Arizona Cardinals | 144 |
+| 4 | Jake Locker | Tennessee Titans | 142 |
+| 5 | Kirk Cousins | Jacksonville Jaguars | 141 |
+| 6 | Andy Dalton | Cincinnati Bengals | 136 |
+| 7 | Christian Ponder | Minnesota Vikings | 135 |
+| 7 | Geno Smith | New York Jets | 135 |
+| 7 | Matt Schaub | Houston Texans | 135 |
+| 7 | Matthew Stafford | Detroit Lions | 135 |
 
 ## Running backs
 
@@ -59,46 +59,46 @@ By position, then category; each list ranks only players at that position. Passe
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | DeAngelo Williams | Carolina Panthers | 487 |
-| 2 | Ray Rice | Baltimore Ravens | 473 |
-| 3 | Matt Forte | Chicago Bears | 453 |
-| 4 | Jamaal Charles | Kansas City Chiefs | 450 |
-| 5 | Arian Foster | Houston Texans | 449 |
-| 6 | BenJarvus Green-Ellis | Cincinnati Bengals | 439 |
-| 7 | Bilal Powell | New York Jets | 430 |
-| 8 | LeSean McCoy | Philadelphia Eagles | 423 |
-| 9 | Reggie Bush | Detroit Lions | 421 |
-| 10 | Ronnie Hillman | Denver Broncos | 410 |
+| 1 | DeAngelo Williams | Carolina Panthers | 649 |
+| 2 | Ray Rice | Baltimore Ravens | 598 |
+| 3 | Frank Gore | San Francisco 49ers | 564 |
+| 4 | Jamaal Charles | Kansas City Chiefs | 557 |
+| 5 | Reggie Bush | Detroit Lions | 534 |
+| 6 | BenJarvus Green-Ellis | Cincinnati Bengals | 530 |
+| 7 | Ronnie Hillman | Denver Broncos | 527 |
+| 8 | Bilal Powell | New York Jets | 525 |
+| 9 | Stevan Ridley | New England Patriots | 508 |
+| 10 | Arian Foster | Houston Texans | 506 |
 
 ### Rushing touchdowns
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Daryl Richardson | St. Louis Rams | 7 |
-| 2 | DeMarco Murray | Dallas Cowboys | 6 |
-| 2 | LeSean McCoy | Philadelphia Eagles | 6 |
-| 4 | Arian Foster | Houston Texans | 5 |
-| 4 | David Wilson | New York Giants | 5 |
-| 4 | Reggie Bush | Detroit Lions | 5 |
-| 4 | Ronnie Hillman | Denver Broncos | 5 |
-| 8 | Jamaal Charles | Kansas City Chiefs | 4 |
-| 8 | Joique Bell | Detroit Lions | 4 |
-| 8 | Matt Forte | Chicago Bears | 4 |
+| 1 | Reggie Bush | Detroit Lions | 8 |
+| 2 | Daryl Richardson | St. Louis Rams | 7 |
+| 2 | DeMarco Murray | Dallas Cowboys | 7 |
+| 2 | LeSean McCoy | Philadelphia Eagles | 7 |
+| 5 | Arian Foster | Houston Texans | 5 |
+| 5 | David Wilson | New York Giants | 5 |
+| 5 | Jamaal Charles | Kansas City Chiefs | 5 |
+| 5 | Ronnie Hillman | Denver Broncos | 5 |
+| 5 | Stevan Ridley | New England Patriots | 5 |
+| 10 | Bilal Powell | New York Jets | 4 |
 
 ### Receiving yards
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Ronnie Hillman | Denver Broncos | 281 |
-| 2 | DeMarco Murray | Dallas Cowboys | 242 |
-| 3 | Daryl Richardson | St. Louis Rams | 213 |
-| 3 | DeAngelo Williams | Carolina Panthers | 213 |
-| 5 | Arian Foster | Houston Texans | 198 |
-| 6 | Stevan Ridley | New England Patriots | 195 |
-| 6 | Vick Ballard | Indianapolis Colts | 195 |
-| 8 | Ray Rice | Baltimore Ravens | 194 |
-| 9 | C.J. Spiller | Buffalo Bills | 185 |
-| 10 | Alfred Morris | Washington Redskins | 175 |
+| 1 | Ronnie Hillman | Denver Broncos | 297 |
+| 2 | DeMarco Murray | Dallas Cowboys | 275 |
+| 3 | Ray Rice | Baltimore Ravens | 265 |
+| 4 | Reggie Bush | Detroit Lions | 263 |
+| 5 | Arian Foster | Houston Texans | 250 |
+| 6 | Stevan Ridley | New England Patriots | 231 |
+| 7 | Vick Ballard | Indianapolis Colts | 225 |
+| 8 | DeAngelo Williams | Carolina Panthers | 224 |
+| 9 | Daryl Richardson | St. Louis Rams | 221 |
+| 10 | Darren McFadden | Oakland Raiders | 209 |
 
 ## Wide receivers
 
@@ -106,46 +106,46 @@ By position, then category; each list ranks only players at that position. Passe
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Larry Fitzgerald | Arizona Cardinals | 48 |
-| 2 | Chris Givens | St. Louis Rams | 42 |
-| 3 | A.J. Green | Cincinnati Bengals | 36 |
-| 3 | Reggie Wayne | Indianapolis Colts | 36 |
-| 5 | Brandon Marshall | Chicago Bears | 35 |
-| 5 | Greg Jennings | Minnesota Vikings | 35 |
-| 7 | Marques Colston | New Orleans Saints | 34 |
-| 7 | Victor Cruz | New York Giants | 34 |
-| 7 | Wes Welker | Denver Broncos | 34 |
-| 10 | Calvin Johnson | Detroit Lions | 33 |
+| 1 | Larry Fitzgerald | Arizona Cardinals | 53 |
+| 2 | Chris Givens | St. Louis Rams | 48 |
+| 3 | Victor Cruz | New York Giants | 45 |
+| 4 | A.J. Green | Cincinnati Bengals | 44 |
+| 4 | Brandon Marshall | Chicago Bears | 44 |
+| 4 | DeSean Jackson | Philadelphia Eagles | 44 |
+| 7 | Marques Colston | New Orleans Saints | 41 |
+| 8 | Greg Jennings | Minnesota Vikings | 40 |
+| 8 | Stephen Hill | New York Jets | 40 |
+| 10 | Calvin Johnson | Detroit Lions | 39 |
 
 ### Receiving yards
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Malcom Floyd | San Diego Chargers | 491 |
-| 1 | Roddy White | Atlanta Falcons | 491 |
-| 3 | Brandon Marshall | Chicago Bears | 428 |
-| 3 | DeSean Jackson | Philadelphia Eagles | 428 |
-| 5 | Miles Austin | Dallas Cowboys | 426 |
-| 6 | A.J. Green | Cincinnati Bengals | 424 |
-| 7 | Calvin Johnson | Detroit Lions | 402 |
-| 8 | Larry Fitzgerald | Arizona Cardinals | 393 |
-| 9 | Chris Givens | St. Louis Rams | 392 |
-| 10 | Reggie Wayne | Indianapolis Colts | 378 |
+| 1 | Brandon Marshall | Chicago Bears | 629 |
+| 2 | DeSean Jackson | Philadelphia Eagles | 585 |
+| 3 | Malcom Floyd | San Diego Chargers | 565 |
+| 4 | A.J. Green | Cincinnati Bengals | 511 |
+| 5 | Roddy White | Atlanta Falcons | 491 |
+| 6 | Victor Cruz | New York Giants | 469 |
+| 7 | Calvin Johnson | Detroit Lions | 466 |
+| 8 | Miles Austin | Dallas Cowboys | 439 |
+| 9 | Torrey Smith | Baltimore Ravens | 423 |
+| 10 | Larry Fitzgerald | Arizona Cardinals | 422 |
 
 ### Receiving touchdowns
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Chris Givens | St. Louis Rams | 5 |
-| 1 | Reggie Wayne | Indianapolis Colts | 5 |
+| 1 | Chris Givens | St. Louis Rams | 6 |
+| 2 | Reggie Wayne | Indianapolis Colts | 5 |
+| 3 | Brandon Marshall | Chicago Bears | 4 |
 | 3 | Larry Fitzgerald | Arizona Cardinals | 4 |
-| 4 | Alshon Jeffery | Chicago Bears | 3 |
-| 4 | Andre Johnson | Houston Texans | 3 |
-| 4 | Brandon Gibson | Miami Dolphins | 3 |
-| 4 | Calvin Johnson | Detroit Lions | 3 |
-| 4 | DeSean Jackson | Philadelphia Eagles | 3 |
-| 4 | Lance Moore | New Orleans Saints | 3 |
-| 4 | Malcom Floyd | San Diego Chargers | 3 |
+| 3 | Toney Clemons | Jacksonville Jaguars | 4 |
+| 6 | Alshon Jeffery | Chicago Bears | 3 |
+| 6 | Andre Johnson | Houston Texans | 3 |
+| 6 | Brandon Gibson | Miami Dolphins | 3 |
+| 6 | Calvin Johnson | Detroit Lions | 3 |
+| 6 | DeSean Jackson | Philadelphia Eagles | 3 |
 
 ## Tight ends
 
@@ -153,46 +153,46 @@ By position, then category; each list ranks only players at that position. Passe
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Jared Cook | St. Louis Rams | 28 |
-| 2 | Jason Witten | Dallas Cowboys | 24 |
-| 3 | Scott Chandler | Buffalo Bills | 23 |
-| 4 | Craig Stevens | Tennessee Titans | 22 |
-| 4 | Jermaine Gresham | Cincinnati Bengals | 22 |
-| 4 | Kyle Rudolph | Minnesota Vikings | 22 |
-| 4 | Marcedes Lewis | Jacksonville Jaguars | 22 |
-| 8 | Brent Celek | Philadelphia Eagles | 21 |
-| 8 | Jermichael Finley | Green Bay Packers | 21 |
-| 10 | Owen Daniels | Houston Texans | 20 |
+| 1 | Jared Cook | St. Louis Rams | 34 |
+| 2 | Scott Chandler | Buffalo Bills | 32 |
+| 3 | Owen Daniels | Houston Texans | 30 |
+| 4 | Marcedes Lewis | Jacksonville Jaguars | 28 |
+| 5 | Jason Witten | Dallas Cowboys | 27 |
+| 5 | Kyle Rudolph | Minnesota Vikings | 27 |
+| 7 | Craig Stevens | Tennessee Titans | 25 |
+| 8 | Brent Celek | Philadelphia Eagles | 24 |
+| 8 | Vernon Davis | San Francisco 49ers | 24 |
+| 10 | Brandon Pettigrew | Detroit Lions | 23 |
 
 ### Receiving yards
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Jared Cook | St. Louis Rams | 323 |
-| 2 | Brent Celek | Philadelphia Eagles | 318 |
-| 3 | Jason Witten | Dallas Cowboys | 282 |
-| 4 | Jimmy Graham | New Orleans Saints | 261 |
-| 5 | Marcedes Lewis | Jacksonville Jaguars | 250 |
-| 6 | Owen Daniels | Houston Texans | 246 |
-| 7 | Jermaine Gresham | Cincinnati Bengals | 245 |
-| 8 | Craig Stevens | Tennessee Titans | 239 |
-| 9 | Charles Clay | Miami Dolphins | 217 |
-| 10 | Anthony Fasano | Kansas City Chiefs | 205 |
+| 1 | Jared Cook | St. Louis Rams | 357 |
+| 2 | Brent Celek | Philadelphia Eagles | 337 |
+| 3 | Owen Daniels | Houston Texans | 334 |
+| 4 | Jason Witten | Dallas Cowboys | 302 |
+| 5 | Marcedes Lewis | Jacksonville Jaguars | 300 |
+| 6 | Anthony Fasano | Kansas City Chiefs | 276 |
+| 7 | Jimmy Graham | New Orleans Saints | 262 |
+| 8 | Scott Chandler | Buffalo Bills | 254 |
+| 9 | Jermaine Gresham | Cincinnati Bengals | 247 |
+| 10 | Craig Stevens | Tennessee Titans | 241 |
 
 ### Receiving touchdowns
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
 | 1 | Jason Witten | Dallas Cowboys | 4 |
-| 2 | Anthony Fasano | Kansas City Chiefs | 2 |
-| 2 | Brandon Myers | New York Giants | 2 |
-| 2 | Charles Clay | Miami Dolphins | 2 |
-| 2 | Ed Dickson | Baltimore Ravens | 2 |
-| 2 | Gary Barnidge | Cleveland Browns | 2 |
-| 2 | Marcedes Lewis | Jacksonville Jaguars | 2 |
-| 2 | Tony Gonzalez | Atlanta Falcons | 2 |
-| 9 | Antonio Gates | San Diego Chargers | 1 |
-| 9 | Benjamin Watson | New Orleans Saints | 1 |
+| 2 | Marcedes Lewis | Jacksonville Jaguars | 3 |
+| 3 | Anthony Fasano | Kansas City Chiefs | 2 |
+| 3 | Brandon Myers | New York Giants | 2 |
+| 3 | Charles Clay | Miami Dolphins | 2 |
+| 3 | Ed Dickson | Baltimore Ravens | 2 |
+| 3 | Gary Barnidge | Cleveland Browns | 2 |
+| 3 | Jeron Mastrud | Oakland Raiders | 2 |
+| 3 | Jim Dray | Arizona Cardinals | 2 |
+| 3 | Steve Maneri | Chicago Bears | 2 |
 
 ## Defensive line
 
@@ -200,46 +200,46 @@ By position, then category; each list ranks only players at that position. Passe
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Red Bryant | Seattle Seahawks | 5 |
-| 2 | Brandon Graham | Philadelphia Eagles | 4 |
-| 2 | Cory Redding | Indianapolis Colts | 4 |
-| 2 | Muhammad Wilkerson | New York Jets | 4 |
-| 2 | Pat Sims | Oakland Raiders | 4 |
-| 6 | Ahtyba Rubin | Cleveland Browns | 3 |
-| 6 | B.J. Raji | Green Bay Packers | 3 |
-| 6 | Cam Thomas | San Diego Chargers | 3 |
-| 6 | Cameron Jordan | New Orleans Saints | 3 |
-| 6 | Geno Atkins | Cincinnati Bengals | 3 |
+| 1 | Red Bryant | Seattle Seahawks | 6 |
+| 2 | Muhammad Wilkerson | New York Jets | 5 |
+| 2 | Sen'Derrick Marks | Jacksonville Jaguars | 5 |
+| 4 | B.J. Raji | Green Bay Packers | 4 |
+| 4 | Brandon Graham | Philadelphia Eagles | 4 |
+| 4 | Cory Redding | Indianapolis Colts | 4 |
+| 4 | Fletcher Cox | Philadelphia Eagles | 4 |
+| 4 | Justin Smith | San Francisco 49ers | 4 |
+| 4 | Nick Fairley | Detroit Lions | 4 |
+| 4 | Pat Sims | Oakland Raiders | 4 |
 
 ### Tackles for loss
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
 | 1 | Osi Umenyiora | Atlanta Falcons | 8 |
-| 2 | Ahtyba Rubin | Cleveland Browns | 6 |
-| 2 | Linval Joseph | New York Giants | 6 |
-| 4 | Earl Mitchell | Houston Texans | 5 |
-| 4 | Mike Devito | Kansas City Chiefs | 5 |
-| 4 | Muhammad Wilkerson | New York Jets | 5 |
-| 4 | Ropati Pitoitua | Tennessee Titans | 5 |
-| 8 | Chris Canty | Baltimore Ravens | 4 |
-| 8 | Chris Long | St. Louis Rams | 4 |
-| 8 | Damon Harrison | New York Jets | 4 |
+| 2 | Mike Devito | Kansas City Chiefs | 7 |
+| 3 | Ahtyba Rubin | Cleveland Browns | 6 |
+| 3 | Earl Mitchell | Houston Texans | 6 |
+| 3 | Linval Joseph | New York Giants | 6 |
+| 6 | Damon Harrison | New York Jets | 5 |
+| 6 | Kyle Williams (BUF) | Buffalo Bills | 5 |
+| 6 | Muhammad Wilkerson | New York Jets | 5 |
+| 6 | Ropati Pitoitua | Tennessee Titans | 5 |
+| 10 | Aubrayo Franklin | Indianapolis Colts | 4 |
 
 ### Tackles
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Ahtyba Rubin | Cleveland Browns | 48 |
-| 2 | Justin Smith | San Francisco 49ers | 37 |
-| 3 | Corey Liuget | San Diego Chargers | 33 |
-| 3 | Damon Harrison | New York Jets | 33 |
-| 3 | Fletcher Cox | Philadelphia Eagles | 33 |
-| 3 | Muhammad Wilkerson | New York Jets | 33 |
-| 7 | J.J. Watt | Houston Texans | 32 |
-| 8 | Osi Umenyiora | Atlanta Falcons | 31 |
-| 8 | Vance Walker | Oakland Raiders | 31 |
-| 10 | Geno Atkins | Cincinnati Bengals | 30 |
+| 1 | Ahtyba Rubin | Cleveland Browns | 56 |
+| 2 | Justin Smith | San Francisco 49ers | 44 |
+| 3 | Damon Harrison | New York Jets | 41 |
+| 3 | Fletcher Cox | Philadelphia Eagles | 41 |
+| 3 | Muhammad Wilkerson | New York Jets | 41 |
+| 6 | Vance Walker | Oakland Raiders | 39 |
+| 7 | Corey Liuget | San Diego Chargers | 37 |
+| 8 | Geno Atkins | Cincinnati Bengals | 36 |
+| 9 | Calais Campbell | Arizona Cardinals | 35 |
+| 9 | Henry Melton | Chicago Bears | 35 |
 
 ## Linebackers
 
@@ -247,46 +247,46 @@ By position, then category; each list ranks only players at that position. Passe
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Brian Cushing | Houston Texans | 60 |
-| 2 | Kevin Burnett | Oakland Raiders | 57 |
-| 3 | Vontaze Burfict | Cincinnati Bengals | 56 |
-| 4 | D'Qwell Jackson | Cleveland Browns | 55 |
-| 5 | David Harris | New York Jets | 53 |
-| 5 | Karlos Dansby | Arizona Cardinals | 53 |
-| 7 | Curtis Lofton | New Orleans Saints | 52 |
-| 7 | Dan Connor | New York Giants | 52 |
-| 9 | DeMeco Ryans | Philadelphia Eagles | 50 |
-| 10 | James Laurinaitis | St. Louis Rams | 49 |
+| 1 | Kevin Burnett | Oakland Raiders | 71 |
+| 2 | Vontaze Burfict | Cincinnati Bengals | 70 |
+| 3 | Brian Cushing | Houston Texans | 67 |
+| 4 | Dan Connor | New York Giants | 65 |
+| 5 | Curtis Lofton | New Orleans Saints | 63 |
+| 6 | D'Qwell Jackson | Cleveland Browns | 62 |
+| 6 | David Harris | New York Jets | 62 |
+| 6 | James Laurinaitis | St. Louis Rams | 62 |
+| 9 | Lance Briggs | Chicago Bears | 61 |
+| 10 | DeMeco Ryans | Philadelphia Eagles | 60 |
 
 ### Sacks
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Karlos Dansby | Arizona Cardinals | 6 |
+| 1 | Karlos Dansby | Arizona Cardinals | 7 |
 | 2 | Brian Cushing | Houston Texans | 5 |
 | 3 | Justin Houston | Kansas City Chiefs | 4 |
 | 4 | Bobby Wagner | Seattle Seahawks | 3 |
 | 4 | James Laurinaitis | St. Louis Rams | 3 |
+| 4 | Jerrell Freeman | Indianapolis Colts | 3 |
 | 4 | Justin Durant | Dallas Cowboys | 3 |
 | 4 | Lance Briggs | Chicago Bears | 3 |
 | 4 | Navorro Bowman | San Francisco 49ers | 3 |
 | 4 | Terrell Suggs | Baltimore Ravens | 3 |
-| 4 | Will Witherspoon | St. Louis Rams | 3 |
 
 ### Tackles for loss
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Brian Cushing | Houston Texans | 6 |
-| 1 | Nigel Bradham | Buffalo Bills | 6 |
-| 3 | Bront Bird | San Diego Chargers | 5 |
-| 3 | David Hawthorne | New Orleans Saints | 5 |
-| 3 | Donald Butler | San Diego Chargers | 5 |
-| 3 | Luke Kuechly | Carolina Panthers | 5 |
-| 3 | Mychal Kendricks | Philadelphia Eagles | 5 |
-| 3 | Stephen Nicholas | Atlanta Falcons | 5 |
-| 3 | Zach Brown | Tennessee Titans | 5 |
-| 10 | Chad Greenway | Minnesota Vikings | 4 |
+| 1 | Mychal Kendricks | Philadelphia Eagles | 8 |
+| 2 | Brian Cushing | Houston Texans | 7 |
+| 2 | Luke Kuechly | Carolina Panthers | 7 |
+| 4 | Donald Butler | San Diego Chargers | 6 |
+| 4 | Jerod Mayo | New England Patriots | 6 |
+| 4 | Nigel Bradham | Buffalo Bills | 6 |
+| 7 | Bront Bird | San Diego Chargers | 5 |
+| 7 | David Hawthorne | New Orleans Saints | 5 |
+| 7 | Kevin Burnett | Oakland Raiders | 5 |
+| 7 | Patrick Willis | San Francisco 49ers | 5 |
 
 ## Defensive backs
 
@@ -295,45 +295,45 @@ By position, then category; each list ranks only players at that position. Passe
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
 | 1 | Buster Skrine | Cleveland Browns | 6 |
-| 2 | Antonio Allen | New York Jets | 4 |
-| 2 | Antrel Rolle | New York Giants | 4 |
-| 4 | Bernard Pollard | Tennessee Titans | 3 |
-| 4 | Brandon Carr | Dallas Cowboys | 3 |
-| 4 | Chris Clemons (MIA) | Miami Dolphins | 3 |
-| 4 | Cortez Allen | Pittsburgh Steelers | 3 |
-| 4 | Devin McCourty | New England Patriots | 3 |
-| 4 | Jason McCourty | Tennessee Titans | 3 |
-| 4 | Tarell Brown | San Francisco 49ers | 3 |
+| 2 | Antonio Allen | New York Jets | 5 |
+| 3 | Antrel Rolle | New York Giants | 4 |
+| 3 | Dawan Landry | New York Jets | 4 |
+| 3 | Devin McCourty | New England Patriots | 4 |
+| 6 | Bernard Pollard | Tennessee Titans | 3 |
+| 6 | Brandon Carr | Dallas Cowboys | 3 |
+| 6 | Charles Tillman | Chicago Bears | 3 |
+| 6 | Chris Clemons (MIA) | Miami Dolphins | 3 |
+| 6 | Cortez Allen | Pittsburgh Steelers | 3 |
 
 ### Passes defended
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Cortland Finnegan | St. Louis Rams | 10 |
-| 2 | Bernard Pollard | Tennessee Titans | 9 |
-| 2 | Buster Skrine | Cleveland Browns | 9 |
-| 2 | Mark Barron | Tampa Bay Buccaneers | 9 |
-| 2 | Roman Harper | New Orleans Saints | 9 |
-| 6 | Antoine Bethea | Indianapolis Colts | 8 |
-| 6 | Antonio Allen | New York Jets | 8 |
-| 6 | Antrel Rolle | New York Giants | 8 |
-| 6 | DeAngelo Hall | Washington Redskins | 8 |
-| 6 | Eric Berry | Kansas City Chiefs | 8 |
+| 1 | Tyvon Branch | Oakland Raiders | 13 |
+| 2 | Cortland Finnegan | St. Louis Rams | 11 |
+| 3 | Antonio Allen | New York Jets | 10 |
+| 3 | Buster Skrine | Cleveland Browns | 10 |
+| 3 | Mark Barron | Tampa Bay Buccaneers | 10 |
+| 6 | Bernard Pollard | Tennessee Titans | 9 |
+| 6 | Da'Norris Searcy | Buffalo Bills | 9 |
+| 6 | Eric Berry | Kansas City Chiefs | 9 |
+| 6 | Kam Chancellor | Seattle Seahawks | 9 |
+| 6 | Roman Harper | New Orleans Saints | 9 |
 
 ### Tackles
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Antoine Bethea | Indianapolis Colts | 46 |
-| 2 | Charles Tillman | Chicago Bears | 45 |
-| 3 | Bernard Pollard | Tennessee Titans | 43 |
-| 4 | Danieal Manning | Houston Texans | 42 |
-| 5 | Kam Chancellor | Seattle Seahawks | 41 |
-| 5 | Yeremiah Bell | Arizona Cardinals | 41 |
-| 7 | Reggie Nelson | Cincinnati Bengals | 40 |
-| 7 | Roman Harper | New Orleans Saints | 40 |
-| 9 | Buster Skrine | Cleveland Browns | 39 |
-| 9 | Malcolm Jenkins | New Orleans Saints | 39 |
+| 1 | Antoine Bethea | Indianapolis Colts | 56 |
+| 2 | Bernard Pollard | Tennessee Titans | 49 |
+| 2 | Tyvon Branch | Oakland Raiders | 49 |
+| 4 | Charles Tillman | Chicago Bears | 48 |
+| 4 | Danieal Manning | Houston Texans | 48 |
+| 4 | Kam Chancellor | Seattle Seahawks | 48 |
+| 7 | Buster Skrine | Cleveland Browns | 47 |
+| 8 | Justin Rogers | Buffalo Bills | 46 |
+| 9 | Corey Graham | Baltimore Ravens | 45 |
+| 9 | Eric Berry | Kansas City Chiefs | 45 |
 
 ## Kickers
 
@@ -341,31 +341,31 @@ By position, then category; each list ranks only players at that position. Passe
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Mike Nugent | Cincinnati Bengals | 12 |
-| 1 | Nick Folk | New York Jets | 12 |
-| 3 | Robbie Gould | Chicago Bears | 11 |
-| 4 | Adam Vinatieri | Indianapolis Colts | 10 |
-| 4 | Justin Tucker | Baltimore Ravens | 10 |
-| 4 | Phil Dawson | San Francisco 49ers | 10 |
-| 4 | Rob Bironas | Tennessee Titans | 10 |
-| 4 | Ryan Succop | Kansas City Chiefs | 10 |
-| 4 | Stephen Gostkowski | New England Patriots | 10 |
-| 4 | Stephen Hauschka | Seattle Seahawks | 10 |
+| 1 | Robbie Gould | Chicago Bears | 15 |
+| 2 | Nick Folk | New York Jets | 14 |
+| 3 | Adam Vinatieri | Indianapolis Colts | 13 |
+| 3 | Mike Nugent | Cincinnati Bengals | 13 |
+| 5 | Phil Dawson | San Francisco 49ers | 12 |
+| 5 | Stephen Hauschka | Seattle Seahawks | 12 |
+| 7 | Billy Cundiff | Cleveland Browns | 11 |
+| 7 | Garrett Hartley | New Orleans Saints | 11 |
+| 7 | Justin Tucker | Baltimore Ravens | 11 |
+| 7 | Rob Bironas | Tennessee Titans | 11 |
 
 ### Extra points made
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Greg Zuerlein | St. Louis Rams | 18 |
-| 2 | David Akers | Detroit Lions | 17 |
-| 3 | Dan Bailey | Dallas Cowboys | 16 |
-| 4 | Matt Bryant | Atlanta Falcons | 14 |
-| 5 | Josh Scobee | Jacksonville Jaguars | 13 |
-| 5 | Matt Prater | Denver Broncos | 13 |
-| 5 | Nick Novak | San Diego Chargers | 13 |
-| 8 | Alex Henery | Philadelphia Eagles | 12 |
-| 8 | Josh Brown | New York Giants | 12 |
-| 8 | Robbie Gould | Chicago Bears | 12 |
+| 1 | David Akers | Detroit Lions | 20 |
+| 2 | Greg Zuerlein | St. Louis Rams | 19 |
+| 3 | Dan Bailey | Dallas Cowboys | 18 |
+| 4 | Josh Scobee | Jacksonville Jaguars | 16 |
+| 4 | Nick Novak | San Diego Chargers | 16 |
+| 6 | Alex Henery | Philadelphia Eagles | 15 |
+| 6 | Randy Bullock | Houston Texans | 15 |
+| 6 | Robbie Gould | Chicago Bears | 15 |
+| 9 | Josh Brown | New York Giants | 14 |
+| 9 | Matt Bryant | Atlanta Falcons | 14 |
 
 ## Punters
 
@@ -373,31 +373,31 @@ By position, then category; each list ranks only players at that position. Passe
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Marquette King | Oakland Raiders | 1467 |
-| 2 | Spencer Lanning | Cleveland Browns | 1400 |
-| 3 | Mike Scifres | San Diego Chargers | 1348 |
-| 4 | Andy Lee | San Francisco 49ers | 1242 |
-| 5 | Jon Ryan | Seattle Seahawks | 1197 |
-| 6 | Sam Martin | Detroit Lions | 1167 |
-| 7 | Steve Weatherford | New York Giants | 1155 |
-| 8 | Dave Zastudil | Arizona Cardinals | 1142 |
-| 9 | Robert Malone | New York Jets | 1133 |
-| 10 | Shawn Powell | Buffalo Bills | 1098 |
+| 1 | Spencer Lanning | Cleveland Browns | 1660 |
+| 2 | Mike Scifres | San Diego Chargers | 1649 |
+| 3 | Marquette King | Oakland Raiders | 1611 |
+| 4 | Jon Ryan | Seattle Seahawks | 1516 |
+| 5 | Andy Lee | San Francisco 49ers | 1396 |
+| 6 | Robert Malone | New York Jets | 1376 |
+| 7 | Shawn Powell | Buffalo Bills | 1371 |
+| 8 | Brett Kern | Tennessee Titans | 1363 |
+| 8 | Dave Zastudil | Arizona Cardinals | 1363 |
+| 8 | Johnny Hekker | St. Louis Rams | 1363 |
 
 ### Punts inside the 20
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Marquette King | Oakland Raiders | 13 |
-| 2 | Steve Weatherford | New York Giants | 12 |
-| 3 | Andy Lee | San Francisco 49ers | 11 |
-| 3 | Dustin Colquitt | Kansas City Chiefs | 11 |
-| 3 | Jon Ryan | Seattle Seahawks | 11 |
-| 3 | Sam Martin | Detroit Lions | 11 |
-| 3 | Spencer Lanning | Cleveland Browns | 11 |
-| 8 | Brandon Fields | Miami Dolphins | 10 |
-| 8 | Bryan Anger | Jacksonville Jaguars | 10 |
-| 8 | Dave Zastudil | Arizona Cardinals | 10 |
+| 1 | Jon Ryan | Seattle Seahawks | 16 |
+| 2 | Marquette King | Oakland Raiders | 15 |
+| 2 | Steve Weatherford | New York Giants | 15 |
+| 4 | Andy Lee | San Francisco 49ers | 13 |
+| 4 | Bryan Anger | Jacksonville Jaguars | 13 |
+| 4 | Chris Jones | Dallas Cowboys | 13 |
+| 4 | Dustin Colquitt | Kansas City Chiefs | 13 |
+| 4 | Robert Malone | New York Jets | 13 |
+| 4 | Sam Koch | Baltimore Ravens | 13 |
+| 10 | Mike Scifres | San Diego Chargers | 12 |
 
 ## Passer rate leaders
 
@@ -407,46 +407,46 @@ Qualified passers: at least 14 attempts per team game.
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Cam Newton | Carolina Panthers | 111.4 |
-| 2 | Sam Bradford | St. Louis Rams | 94.4 |
-| 3 | Ben Roethlisberger | Pittsburgh Steelers | 93.9 |
-| 4 | Tony Romo | Dallas Cowboys | 90.5 |
-| 5 | Philip Rivers | San Diego Chargers | 90.2 |
-| 6 | Peyton Manning | Denver Broncos | 89.4 |
+| 1 | Cam Newton | Carolina Panthers | 94.6 |
+| 2 | Philip Rivers | San Diego Chargers | 91.7 |
+| 3 | Carson Palmer | Arizona Cardinals | 90.6 |
+| 4 | Peyton Manning | Denver Broncos | 90.0 |
+| 5 | Sam Bradford | St. Louis Rams | 90.0 |
+| 6 | Kirk Cousins | Jacksonville Jaguars | 89.7 |
 | 7 | Matt Ryan | Atlanta Falcons | 88.7 |
-| 8 | Eli Manning | New York Giants | 88.3 |
-| 9 | Robert Griffin | Washington Redskins | 88.1 |
-| 10 | Derek Anderson | Carolina Panthers | 87.4 |
+| 8 | Alex Smith (KC) | Kansas City Chiefs | 88.5 |
+| 9 | Tony Romo | Dallas Cowboys | 88.3 |
+| 10 | Matthew Stafford | Detroit Lions | 88.0 |
 
 ### Completion percentage
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Cam Newton | Carolina Panthers | 70.3 |
-| 2 | Christian Ponder | Minnesota Vikings | 69.5 |
-| 3 | Robert Griffin | Washington Redskins | 67.8 |
-| 4 | Drew Brees | New Orleans Saints | 66.4 |
-| 5 | Derek Anderson | Carolina Panthers | 66.2 |
-| 6 | Josh Freeman | Tampa Bay Buccaneers | 65.2 |
-| 7 | Andrew Luck | Indianapolis Colts | 65.1 |
-| 8 | Alex Smith (KC) | Kansas City Chiefs | 65.0 |
-| 9 | E.J. Manuel | Buffalo Bills | 65.0 |
-| 10 | Andy Dalton | Cincinnati Bengals | 64.7 |
+| 1 | Christian Ponder | Minnesota Vikings | 69.9 |
+| 2 | Cam Newton | Carolina Panthers | 67.9 |
+| 3 | Josh Freeman | Tampa Bay Buccaneers | 67.3 |
+| 4 | E.J. Manuel | Buffalo Bills | 66.5 |
+| 5 | Drew Brees | New Orleans Saints | 66.4 |
+| 6 | Peyton Manning | Denver Broncos | 65.5 |
+| 7 | Robert Griffin | Washington Redskins | 65.5 |
+| 8 | Sam Bradford | St. Louis Rams | 65.5 |
+| 9 | Matthew Stafford | Detroit Lions | 65.2 |
+| 10 | Carson Palmer | Arizona Cardinals | 64.6 |
 
 ### Yards per attempt
 
 | Rank | Player | Team | Total |
 |---:|---|---|---:|
-| 1 | Tony Romo | Dallas Cowboys | 8.0 |
-| 2 | Michael Vick | Philadelphia Eagles | 7.9 |
-| 3 | Cam Newton | Carolina Panthers | 7.9 |
-| 4 | Derek Anderson | Carolina Panthers | 7.8 |
-| 5 | Peyton Manning | Denver Broncos | 7.6 |
-| 6 | Jay Cutler | Chicago Bears | 7.4 |
-| 7 | Matt Ryan | Atlanta Falcons | 7.3 |
-| 8 | Joe Flacco | Baltimore Ravens | 7.2 |
-| 9 | Andy Dalton | Cincinnati Bengals | 7.1 |
-| 10 | Philip Rivers | San Diego Chargers | 7.0 |
+| 1 | Michael Vick | Philadelphia Eagles | 7.8 |
+| 2 | Jay Cutler | Chicago Bears | 7.8 |
+| 3 | Tony Romo | Dallas Cowboys | 7.5 |
+| 4 | Matt Ryan | Atlanta Falcons | 7.3 |
+| 5 | Peyton Manning | Denver Broncos | 7.1 |
+| 6 | Joe Flacco | Baltimore Ravens | 7.1 |
+| 7 | Josh Freeman | Tampa Bay Buccaneers | 7.0 |
+| 8 | Andy Dalton | Cincinnati Bengals | 7.0 |
+| 9 | Alex Smith (KC) | Kansas City Chiefs | 6.9 |
+| 10 | Matt Schaub | Houston Texans | 6.8 |
 
 ## All positions
 
@@ -454,88 +454,88 @@ Qualified passers: at least 14 attempts per team game.
 
 | Rank | Player | Team | Pos | Total |
 |---:|---|---|---|---:|
-| 1 | Tony Romo | Dallas Cowboys | QB | 1511 |
-| 2 | Michael Vick | Philadelphia Eagles | QB | 1449 |
-| 3 | Sam Bradford | St. Louis Rams | QB | 1323 |
-| 4 | Matt Ryan | Atlanta Falcons | QB | 1300 |
-| 5 | Philip Rivers | San Diego Chargers | QB | 1291 |
-| 6 | Joe Flacco | Baltimore Ravens | QB | 1276 |
-| 7 | E.J. Manuel | Buffalo Bills | QB | 1245 |
-| 8 | Andy Dalton | Cincinnati Bengals | QB | 1233 |
-| 8 | Carson Palmer | Arizona Cardinals | QB | 1233 |
-| 10 | Jay Cutler | Chicago Bears | QB | 1222 |
+| 1 | Michael Vick | Philadelphia Eagles | QB | 1715 |
+| 2 | Tony Romo | Dallas Cowboys | QB | 1673 |
+| 3 | Jay Cutler | Chicago Bears | QB | 1581 |
+| 4 | Carson Palmer | Arizona Cardinals | QB | 1498 |
+| 5 | Andy Dalton | Cincinnati Bengals | QB | 1484 |
+| 6 | Joe Flacco | Baltimore Ravens | QB | 1475 |
+| 7 | E.J. Manuel | Buffalo Bills | QB | 1472 |
+| 8 | Philip Rivers | San Diego Chargers | QB | 1466 |
+| 9 | Alex Smith (KC) | Kansas City Chiefs | QB | 1436 |
+| 10 | Matt Schaub | Houston Texans | QB | 1432 |
 
 ### Rushing yards
 
 | Rank | Player | Team | Pos | Total |
 |---:|---|---|---|---:|
-| 1 | DeAngelo Williams | Carolina Panthers | RB | 487 |
-| 2 | Ray Rice | Baltimore Ravens | RB | 473 |
-| 3 | Matt Forte | Chicago Bears | RB | 453 |
-| 4 | Jamaal Charles | Kansas City Chiefs | RB | 450 |
-| 5 | Arian Foster | Houston Texans | RB | 449 |
-| 6 | BenJarvus Green-Ellis | Cincinnati Bengals | HB | 439 |
-| 7 | Bilal Powell | New York Jets | RB | 430 |
-| 8 | LeSean McCoy | Philadelphia Eagles | RB | 423 |
-| 9 | Reggie Bush | Detroit Lions | RB | 421 |
-| 10 | Ronnie Hillman | Denver Broncos | RB | 410 |
+| 1 | DeAngelo Williams | Carolina Panthers | RB | 649 |
+| 2 | Ray Rice | Baltimore Ravens | RB | 598 |
+| 3 | Frank Gore | San Francisco 49ers | RB | 564 |
+| 4 | Jamaal Charles | Kansas City Chiefs | RB | 557 |
+| 5 | Reggie Bush | Detroit Lions | RB | 534 |
+| 6 | BenJarvus Green-Ellis | Cincinnati Bengals | HB | 530 |
+| 7 | Ronnie Hillman | Denver Broncos | RB | 527 |
+| 8 | Bilal Powell | New York Jets | RB | 525 |
+| 9 | Stevan Ridley | New England Patriots | RB | 508 |
+| 10 | Arian Foster | Houston Texans | RB | 506 |
 
 ### Receiving yards
 
 | Rank | Player | Team | Pos | Total |
 |---:|---|---|---|---:|
-| 1 | Malcom Floyd | San Diego Chargers | WR | 491 |
-| 1 | Roddy White | Atlanta Falcons | WR | 491 |
-| 3 | Brandon Marshall | Chicago Bears | WR | 428 |
-| 3 | DeSean Jackson | Philadelphia Eagles | WR | 428 |
-| 5 | Miles Austin | Dallas Cowboys | WR | 426 |
-| 6 | A.J. Green | Cincinnati Bengals | WR | 424 |
-| 7 | Calvin Johnson | Detroit Lions | WR | 402 |
-| 8 | Larry Fitzgerald | Arizona Cardinals | WR | 393 |
-| 9 | Chris Givens | St. Louis Rams | WR | 392 |
-| 10 | Reggie Wayne | Indianapolis Colts | WR | 378 |
+| 1 | Brandon Marshall | Chicago Bears | WR | 629 |
+| 2 | DeSean Jackson | Philadelphia Eagles | WR | 585 |
+| 3 | Malcom Floyd | San Diego Chargers | WR | 565 |
+| 4 | A.J. Green | Cincinnati Bengals | WR | 511 |
+| 5 | Roddy White | Atlanta Falcons | WR | 491 |
+| 6 | Victor Cruz | New York Giants | WR | 469 |
+| 7 | Calvin Johnson | Detroit Lions | WR | 466 |
+| 8 | Miles Austin | Dallas Cowboys | WR | 439 |
+| 9 | Torrey Smith | Baltimore Ravens | WR | 423 |
+| 10 | Larry Fitzgerald | Arizona Cardinals | WR | 422 |
 
 ### Tackles
 
 | Rank | Player | Team | Pos | Total |
 |---:|---|---|---|---:|
-| 1 | Brian Cushing | Houston Texans | MLB | 60 |
-| 2 | Kevin Burnett | Oakland Raiders | OLB | 57 |
-| 3 | Vontaze Burfict | Cincinnati Bengals | MLB | 56 |
-| 4 | D'Qwell Jackson | Cleveland Browns | ILB | 55 |
-| 5 | David Harris | New York Jets | OLB | 53 |
-| 5 | Karlos Dansby | Arizona Cardinals | ILB | 53 |
-| 7 | Curtis Lofton | New Orleans Saints | ILB | 52 |
-| 7 | Dan Connor | New York Giants | MLB | 52 |
-| 9 | DeMeco Ryans | Philadelphia Eagles | ILB | 50 |
-| 10 | James Laurinaitis | St. Louis Rams | MLB | 49 |
+| 1 | Kevin Burnett | Oakland Raiders | OLB | 71 |
+| 2 | Vontaze Burfict | Cincinnati Bengals | MLB | 70 |
+| 3 | Brian Cushing | Houston Texans | MLB | 67 |
+| 4 | Dan Connor | New York Giants | MLB | 65 |
+| 5 | Curtis Lofton | New Orleans Saints | ILB | 63 |
+| 6 | D'Qwell Jackson | Cleveland Browns | ILB | 62 |
+| 6 | David Harris | New York Jets | OLB | 62 |
+| 6 | James Laurinaitis | St. Louis Rams | MLB | 62 |
+| 9 | Lance Briggs | Chicago Bears | OLB | 61 |
+| 10 | DeMeco Ryans | Philadelphia Eagles | ILB | 60 |
 
 ### Sacks
 
 | Rank | Player | Team | Pos | Total |
 |---:|---|---|---|---:|
-| 1 | Karlos Dansby | Arizona Cardinals | ILB | 6 |
-| 2 | Brian Cushing | Houston Texans | MLB | 5 |
-| 2 | Red Bryant | Seattle Seahawks | DE | 5 |
-| 4 | Brandon Graham | Philadelphia Eagles | DE | 4 |
-| 4 | Cory Redding | Indianapolis Colts | DE | 4 |
-| 4 | Justin Houston | Kansas City Chiefs | OLB | 4 |
-| 4 | Muhammad Wilkerson | New York Jets | DE | 4 |
-| 4 | Pat Sims | Oakland Raiders | NT | 4 |
-| 9 | Ahtyba Rubin | Cleveland Browns | DT | 3 |
-| 9 | B.J. Raji | Green Bay Packers | NT | 3 |
+| 1 | Karlos Dansby | Arizona Cardinals | ILB | 7 |
+| 2 | Red Bryant | Seattle Seahawks | DE | 6 |
+| 3 | Brian Cushing | Houston Texans | MLB | 5 |
+| 3 | Muhammad Wilkerson | New York Jets | DE | 5 |
+| 3 | Sen'Derrick Marks | Jacksonville Jaguars | DT | 5 |
+| 6 | B.J. Raji | Green Bay Packers | NT | 4 |
+| 6 | Brandon Graham | Philadelphia Eagles | DE | 4 |
+| 6 | Cory Redding | Indianapolis Colts | DE | 4 |
+| 6 | Fletcher Cox | Philadelphia Eagles | DT | 4 |
+| 6 | Justin Houston | Kansas City Chiefs | OLB | 4 |
 
 ### Interceptions
 
 | Rank | Player | Team | Pos | Total |
 |---:|---|---|---|---:|
 | 1 | Buster Skrine | Cleveland Browns | CB | 6 |
-| 2 | Antonio Allen | New York Jets | S | 4 |
-| 2 | Antrel Rolle | New York Giants | SS | 4 |
-| 4 | Bernard Pollard | Tennessee Titans | SS | 3 |
-| 4 | Brandon Carr | Dallas Cowboys | CB | 3 |
-| 4 | Chris Clemons (MIA) | Miami Dolphins | S | 3 |
-| 4 | Cortez Allen | Pittsburgh Steelers | CB | 3 |
-| 4 | Devin McCourty | New England Patriots | S | 3 |
-| 4 | Jason McCourty | Tennessee Titans | CB | 3 |
-| 4 | Stephen Nicholas | Atlanta Falcons | OLB | 3 |
+| 2 | Antonio Allen | New York Jets | S | 5 |
+| 3 | Antrel Rolle | New York Giants | SS | 4 |
+| 3 | Dawan Landry | New York Jets | S | 4 |
+| 3 | Devin McCourty | New England Patriots | S | 4 |
+| 6 | Bernard Pollard | Tennessee Titans | SS | 3 |
+| 6 | Brandon Carr | Dallas Cowboys | CB | 3 |
+| 6 | Charles Tillman | Chicago Bears | CB | 3 |
+| 6 | Chris Clemons (MIA) | Miami Dolphins | S | 3 |
+| 6 | Cortez Allen | Pittsburgh Steelers | CB | 3 |

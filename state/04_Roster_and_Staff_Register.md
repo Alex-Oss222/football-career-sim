@@ -3,9 +3,9 @@
 ## Document status
 
 - Function: Canonical register for current Jacksonville player control, staff operating authority, roster legality, contract/cap reconciliation, availability boundaries and football-role state.
-- Current status: **RECONCILED THROUGH WEEK 5 (ENTRY 41)**.
-- Effective through: **October 6, 2013, after Week 5 at St. Louis**.
-- Progression authority: `career/2013/ledger.md`, Entry 41 (Week 5 closed; Posluszny returned; Thielen injured), after Entry 40 (Week 4 closed under kernel 2013.6, Entry 39; Meester returned as reserve center), Entry 38 (Week 3 closed; Posluszny injured) and Entries 36-37 (Blackmon to Reserve/Suspended; Week 2 closed with Meester and C.J. Wilson injured).
+- Current status: **RECONCILED THROUGH WEEK 6 (ENTRY 43)**.
+- Effective through: **October 13, 2013, after Week 6 at Denver**.
+- Progression authority: `career/2013/ledger.md`, Entries 42-43 (Blackmon reinstated and activated October 7; Week 6 closed), after Entry 41 (Week 5 closed; Posluszny returned; Thielen injured), Entry 40 (Week 4 closed under kernel 2013.6, Entry 39; Meester returned as reserve center), Entry 38 (Week 3 closed; Posluszny injured) and Entries 36-37 (Blackmon to Reserve/Suspended; Week 2 closed with Meester and C.J. Wilson injured).
 - Detailed readable roster: `career/2013/roster.md`.
 - Current cap worksheet: `career/2013/offseason/current_cap_worksheet.md`.
 - Current calendar: `career/2013/calendar.md`.
@@ -21,17 +21,17 @@
 | Competition | NFL |
 | Season | 2013 |
 | Divergence point | January 15, 2013 — Alex Stone accepts Jacksonville head-coach offer |
-| Season phase | Regular season; Week 5 closed, Week 6 preparation |
-| Owned content effective | October 6, 2013 |
-| Document 4 register version | `JAX-2013-OCT06-WEEK5-REGISTER-16` |
-| Supersedes | `JAX-2013-SEP29-WEEK4-REGISTER-15` |
-| Last content-changing checkpoint | `Canonical update - October 6, 2013 - Week 5 at St. Louis closed` |
-| Latest Document 6 event | Entry 41: Week 5 closed |
+| Season phase | Regular season; Week 6 closed, Week 7 preparation |
+| Owned content effective | October 13, 2013 |
+| Document 4 register version | `JAX-2013-OCT13-WEEK6-REGISTER-17` |
+| Supersedes | `JAX-2013-OCT06-WEEK5-REGISTER-16` |
+| Last content-changing checkpoint | `Canonical update - October 13, 2013 - Week 6 at Denver closed` |
+| Latest Document 6 event | Entry 43: Week 6 closed |
 | Current controlled players | **53** |
 | Current practice squad | **8; separate from active 53** |
 | Current regular-season planning room | **~$6.2M-$6.6M before weekly practice-squad charges** |
-| Next scheduled football event | October 13 Week 6 at Denver: NOT SIMULATED |
-| Unresolved matter before participation | Blackmon's reinstatement from Reserve/Suspended (date and roster treatment to be sourced; rules research in `library/2013_suspension_reinstatement_rules.md`; Stone's game-day inactive Weeks 6-7); Thielen's projection clears October 9 |
+| Next scheduled football event | October 20 Week 7 vs San Diego: NOT SIMULATED |
+| Unresolved matter before participation | Blackmon is Stone's game-day inactive for Week 7 (eligible Week 8); Week 7 inactives and plan are Stone decisions |
 
 ## Canon and evidence conventions
 
@@ -104,12 +104,12 @@ These rules apply to every real player, staff member, executive, candidate, oppo
 
 | Exact primary status | Current count | Governing limit | Reconciled |
 |---|---:|---:|---|
-| Active 53-player roster | **52** | 53-player regular-season limit; one open spot while Blackmon is on Reserve/Suspended | October 6, 2013 (Entry 41) |
+| Active 53-player roster | **53** | 53-player regular-season limit | October 7, 2013 (Entry 42) |
 
 | Primary-status total | Current value | Derivation |
 |---|---:|---|
-| Players on active roster | **52** | Blackmon to Reserve/Suspended, September 9 (Entry 36) |
-| Reserve/Suspended | **1** | Justin Blackmon, Weeks 2-5 |
+| Players on active roster | **53** | Blackmon reinstated and activated, October 7 (Entry 42) |
+| Reserve/Suspended | **0** | Blackmon's suspension (Weeks 2-5) ended; reinstated October 7 |
 | Practice-squad players | **8** | Separate from active 53 |
 
 Week 5 inactives were Pasztor, Mosley, C.J. Wilson, Edwards, Rutland and John Parker Wilson (Posluszny active; J.P. Wilson remains QB3); Week 6 designations are not yet set.
@@ -125,7 +125,7 @@ Week 5 inactives were Pasztor, Mosley, C.J. Wilson, Edwards, Rutland and John Pa
 | UDFA contracts | Four signed three-year minimum deals; $0 current Top-51 effect | `offseason/draft/udfa_signings.md` |
 | Cousins / Gabbert / C.J. Wilson | Transfer accounting included in current worksheet | Current cap worksheet |
 | Branch releases | Included in current planning range; Aaron Ross timing creates the stated range | Current cap worksheet |
-| Active-roster legality | 52 / 53 (one open spot while Blackmon is on Reserve/Suspended, Entry 36) | Current roster |
+| Active-roster legality | 53 / 53 | Current roster (Entry 42) |
 | Next accounting triggers | New transaction, reserve move, settlement or practice-squad change | Current calendar |
 
 The current planning range is intentionally not penny-precise. The historical starting-room source is approximate and the branch does not separately fix Aaron Ross's exact execution timing inside the compressed March batch.
@@ -143,16 +143,16 @@ Staff remains unchanged from the closed late-January hiring phase. `career/2013/
 
 ### Reconciliation result
 
-- Register status: **RECONCILED THROUGH WEEK 5 (ENTRY 41)**.
-- Roster/control: **53 controlled (52 active, Blackmon on Reserve/Suspended); eight-player practice squad separate**.
+- Register status: **RECONCILED THROUGH WEEK 6 (ENTRY 43)**.
+- Roster/control: **53 controlled, all active (Blackmon activated October 7); eight-player practice squad separate**.
 - Cap: regular-season accounting; approximately **$6.2M-$6.6M** before weekly practice-squad charges.
-- Medical: Thielen out (projected return October 9); Rackley minor, limited, no projected absence; C.J. Wilson out (projected return January 30, 2014); Pasztor on independent medical hold; Mosley medically unavailable.
-- Football: Brewster starting center (Weeks 3-5), Meester reserve center, evaluated weekly; Posluszny and Smith base linebackers with Smith the communication lead and Allen first off the bench; Bradfield sixth OL; Shorts WR1, Thielen WR2, Clemons WR3, Brown WR4 while Blackmon is unavailable; edge order Babin, Mincey, Branch, Davis.
-- Next event: October 13 Week 6 at Denver; **NOT SIMULATED**. Blackmon reinstatement pending (timing to be sourced).
+- Medical: no Week 6 injury; Thielen returned; Rackley minor, limited, no projected absence; C.J. Wilson out (projected return January 30, 2014); Pasztor on independent medical hold; Mosley medically unavailable.
+- Football: Brewster the starting center (confirmed Week 6), Meester reserve center; Posluszny and Smith base linebackers with Smith the communication lead and Allen first off the bench; Bradfield sixth OL; Shorts WR1, Thielen WR2, Clemons WR3, Brown WR4; Blackmon active, Stone's game-day inactive Weeks 6-7, eligible Week 8; edge order Babin, Mincey, Branch, Davis.
+- Next event: October 20 Week 7 vs San Diego; **NOT SIMULATED**.
 
 ## Jacksonville current transaction reconciliation
 
-**Current progression source:** [Season ledger, Entry 41](../career/2013/ledger.md#entry-41-week-5-closed), checkpoint `Canonical update - October 6, 2013 - Week 5 at St. Louis closed`; Blackmon to Reserve/Suspended by Entry 36.
+**Current progression source:** [Season ledger, Entry 43](../career/2013/ledger.md#entry-43-week-6-closed), checkpoint `Canonical update - October 13, 2013 - Week 6 at Denver closed`; Blackmon reinstated and activated by Entry 42.
 **Readable roster:** [career/2013/roster.md](../career/2013/roster.md).
 **Current cap worksheet:** [career/2013/offseason/current_cap_worksheet.md](../career/2013/offseason/current_cap_worksheet.md).
 **Current calendar:** [career/2013/calendar.md](../career/2013/calendar.md).
@@ -186,11 +186,11 @@ The old 75-person working count and the old unresolved inherited-control bucket 
 | Jonathan Grimes | JAX-JONATHANGRIMES | RB | Active 53 | Existing contract/control; not a March 12 free agent | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Maurice Jones-Drew | JAX-MAURICEJONESDREW | RB | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Montell Owens | JAX-MONTELLOWENS | FB | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Justin Blackmon | JAX-JUSTINBLACKMON | WR | Reserve/Suspended (Weeks 2-5) | Existing rookie contract; game checks forfeited Weeks 2-5, amount unresolved | League suspension Weeks 2-5; Stone's game-day inactive Weeks 6-7; eligible Week 8 | Entry 36 |
+| Justin Blackmon | JAX-JUSTINBLACKMON | WR | Active 53 | Existing rookie contract; 4/17 of 2013 base forfeited for Weeks 2-5, amount unresolved | No communicated restriction; Stone's game-day inactive Weeks 6-7; eligible Week 8 | Entry 42 |
 | Mike Brown | JAX-MIKEBROWN | WR | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Toney Clemons | JAX-TONEYCLEMONS | WR | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Cecil Shorts | JAX-CECILSHORTS | WR | Active 53 | Existing rookie contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Adam Thielen | JAX-ADAMTHIELEN | WR | Active 53 | Three-year UDFA minimum contract | Out, upper extremity (Week 5); projected return October 9 | Entry 41 |
+| Adam Thielen | JAX-ADAMTHIELEN | WR | Active 53 | Three-year UDFA minimum contract | No communicated restriction; fresh game-day communication required | Entry 43 |
 | Allen Reisner | JAX-ALLENREISNER | TE | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Marcedes Lewis | JAX-MARCEDESLEWIS | TE | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Travis Kelce | JAX-TRAVISKELCE | TE | Active 53 | #33; rookie contract signed May 2 | No communicated restriction; fresh game-day communication required | Entry 41 |
@@ -672,12 +672,12 @@ This table is generated from Document 6 and is only a navigation aid. Active unr
 
 ## End-of-update control block
 
-- Effective through: October 6, 2013, after Week 5.
-- Document 4 register version: `JAX-2013-OCT06-WEEK5-REGISTER-16`.
-- Last content-changing checkpoint: `Canonical update - October 6, 2013 - Week 5 at St. Louis closed`.
-- Latest source event: season-ledger Entry 41.
-- Current controlled count: **53** (52 active, 1 Reserve/Suspended); practice squad **8**, separate from the active roster.
+- Effective through: October 13, 2013, after Week 6.
+- Document 4 register version: `JAX-2013-OCT13-WEEK6-REGISTER-17`.
+- Last content-changing checkpoint: `Canonical update - October 13, 2013 - Week 6 at Denver closed`.
+- Latest source event: season-ledger Entry 43.
+- Current controlled count: **53**, all active; practice squad **8**, separate from the active roster.
 - Cap: regular-season accounting, **~$6.2M-$6.6M before weekly practice-squad charges**.
-- Depth/packages: Cousins QB1; regular-season roles as in `career/2013/roster.md`; weekly structured call sheet (Week 5 latest; Week 6 sheet not yet supplied).
-- Medical: Thielen out (projected October 9); Rackley limited (minor); C.J. Wilson out; Pasztor on independent medical hold; Mosley medically unavailable.
-- Next event: October 13 Week 6 at Denver; **NOT SIMULATED**. Blackmon reinstatement pending (timing to be sourced).
+- Depth/packages: Cousins QB1; regular-season roles as in `career/2013/roster.md`; weekly structured call sheet (Week 6 latest; Week 7 sheet not yet supplied).
+- Medical: no Week 6 injury; Rackley limited (minor); C.J. Wilson out; Pasztor on independent medical hold; Mosley medically unavailable.
+- Next event: October 20 Week 7 vs San Diego; **NOT SIMULATED**.
