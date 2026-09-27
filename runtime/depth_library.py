@@ -29,15 +29,22 @@ def clubs():
     return tuple(load()["clubs"])
 
 
-def team_input(team, *, offense_anchor, defense_anchor, special_teams_anchor):
-    """A kernel TeamInput dict for one background club's Week 1 game-day unit."""
+def available(player, week):
+    """Week 1 report availability; a pre-existing injury ends at its return week."""
+    if player.get("available", True):
+        return True
+    return bool(player.get("return_week")) and week >= player["return_week"]
+
+
+def team_input(team, *, offense_anchor, defense_anchor, special_teams_anchor, week=1):
+    """A kernel TeamInput dict for one background club's game-day unit in `week`."""
     club = load()["clubs"][team]
     roster = []
     for player in club["players"]:
         roster.append({
             "player_id": player["player_id"],
             "position": player["position"],
-            "available": player.get("available", True),
+            "available": available(player, week),
             "unit": UNIT.get(group(player["position"]), "offense"),
             "roles": tuple(player.get("roles", ())),
             "depth": player["depth"],

@@ -37,7 +37,8 @@ Kernel 2013.4 distributes carries, targets and tackles by each club's depth orde
 3. **Depth:** within each kernel position group, by depth-chart string (1st, 2nd, 3rd). Players the club listed at the same string are ordered by 2012 regular-season usage: attempts for quarterbacks, carries for backs, targets for receivers and tight ends, tackles for defenders. Offensive linemen at the same string follow LT, LG, C, RG, RT. A player seen only in a special-teams slot ranks behind every player with an offensive or defensive slot.
 4. **Roles:** the first-string kick and punt returners carry `kick_return` and `punt_return`; kickers and punters carry `placekicker` and `punt`.
 5. **Availability:** a player listed Out or Doubtful on the September 6 report is unavailable (55 players: 43 Out, 12 Doubtful). Under the 2013 definitions, Doubtful meant at least a 75 percent chance of not playing. Questionable and Probable players are available.
-6. **Ids:** a player id is the player's name. When two players share a name, each gets his club code, for example `Alex Smith (KC)` and `Alex Smith (CIN)`, or `Mike Harris (SD)` beside Jacksonville's Mike Harris.
+6. **Return of a pre-existing injury (`return_week`):** a player out before Week 1 did not play in the real Week 1, so his later pre-game reports still describe that same injury. He returns the first week he is reported Questionable or Probable, or is off the report while listed on his club's depth chart. Nothing about him is read after that week, because a later report could describe an injury from a real game. Two players never return during the regular season under this rule.
+7. **Ids:** a player id is the player's name. When two players share a name, each gets his club code, for example `Alex Smith (KC)` and `Alex Smith (CIN)`, or `Mike Harris (SD)` beside Jacksonville's Mike Harris.
 
 ## Branch reconciliation
 
@@ -98,9 +99,13 @@ Jacksonville's branch undrafted signings (C.J. Anderson, A.J. Bouye, Brynden Tra
 - **Practice-squad listings:** a few players the league may have listed from practice squads appear on club charts. The status that would confirm this is one of the leaking fields above, so they are kept at their listed depth.
 - **Name-based control check:** branch control is matched by name and position side. A future Jacksonville acquisition must be checked against this library before the week it applies to.
 
+## Later weeks
+
+`runtime/week_inputs.py` carries these units forward to every later week. Real depth charts after Week 1 are not read, because they reflect injuries and results from real games the branch never had. Availability each week comes from the injuries generated in the branch's own closed games (every receipt carries its game's injury report) plus the `return_week` above. A branch transaction involving one of these clubs is applied by rebuilding this library.
+
 ## Updating
 
-Rebuild after a branch transaction that moves a player onto or off one of these clubs before Week 1:
+Rebuild after a branch transaction that moves a player onto or off one of these clubs:
 
 ```
 python scripts/research/build_2013_week1_depth_charts.py SOURCE_DIR > library/data/2013_week1_depth_charts.json

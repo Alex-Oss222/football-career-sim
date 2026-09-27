@@ -152,6 +152,23 @@ def draft_moves(source, depth, control):
     return moves
 
 
+def pre_existing_return(reports, charted):
+    """First week a player already out before Week 1 is expected to play.
+
+    He did not play in the real Week 1, so his later pre-game reports still
+    describe that pre-existing injury. He returns the first week he is
+    reported Questionable or Probable, or is off the report while listed on
+    his club's depth chart. After that week nothing more is read: any later
+    report could describe an injury from a real game. None means no return
+    during the regular season.
+    """
+    for week in range(2, 18):
+        status = reports.get(week)
+        if status in {"Questionable", "Probable"} or (status is None and charted(week)):
+            return week
+    return None
+
+
 def compact(player):
     """Stored fields only; group and unit are derived from position on load."""
     out = {"player_id": player["player_id"], "position": player["position"], "depth": player["depth"]}
@@ -163,6 +180,8 @@ def compact(player):
         out["available"] = False
     if player["injury_report"]:
         out["injury_report"] = player["injury_report"]
+    if player["return_week"]:
+        out["return_week"] = player["return_week"]
     if player["roles"]:
         out["roles"] = player["roles"]
     for key in ("slots", "jersey", "gsis_id"):
@@ -179,6 +198,13 @@ def build(source):
     injuries = {(r["team"], r["gsis_id"]): r for r in read(source / "injuries_2013.csv")
                 if r["week"] == "1" and r["game_type"] == "REG"}
     usage = {r["player_id"]: r for r in read(source / "stats_player_reg_2012.csv")}
+    later_reports = collections.defaultdict(dict)
+    for r in read(source / "injuries_2013.csv"):
+        if r["game_type"] == "REG" and r["week"] != "1":
+            later_reports[(r["team"], r["gsis_id"])][int(r["week"])] = r["report_status"]
+    later_charts = {(r["club_code"], r["gsis_id"], int(r["week"]))
+                    for r in read(source / "depth_charts_2013.csv")
+                    if r["game_type"] == "REG" and r["week"] not in ("", "1")}
     control = branch_control(ROOT / "career/2013/roster.md")
     control_by_norm = {norm(n): (n, p) for n, p in control.items()}
 
@@ -237,6 +263,10 @@ def build(source):
                 changes.append("Added %s (%s): %s" % (name, position, entry["moved"]))
             cross_check["listed" if (ROSTER_CODE.get(real_code, real_code), gsis) in roster_feed else "not_in_roster_feed"] += 1
             report = injuries.get((real_code, gsis), {}).get("report_status", "") or None
+            return_week = None
+            if report in UNAVAILABLE_REPORT:
+                return_week = pre_existing_return(later_reports.get((real_code, gsis), {}),
+                                                  lambda week: (real_code, gsis, week) in later_charts)
             tier = min((s[2] for s in football), default=min(s[2] for s in entry["slots"]) + 3)
             roles = []
             for formation, slot, rank in entry["slots"]:
@@ -255,7 +285,7 @@ def build(source):
                 "player_id": player_id, "name": name, "position": position,
                 "listed_position": listed_position, "group": grp,
                 "available": report not in UNAVAILABLE_REPORT,
-                "injury_report": report, "roles": sorted(set(roles)),
+                "injury_report": report, "return_week": return_week, "roles": sorted(set(roles)),
                 "gsis_id": gsis,
                 "jersey": row["jersey_number"],
                 "slots": ",".join("%s%d" % (s[1] or s[0][:3].upper(), s[2]) for s in entry["slots"]),
@@ -266,7 +296,7 @@ def build(source):
                 "player_id": placement["name"], "name": placement["name"],
                 "position": placement["position"], "listed_position": placement["position"],
                 "group": group(placement["position"]),
-                "available": True, "injury_report": None, "roles": [],
+                "available": True, "injury_report": None, "return_week": None, "roles": [],
                 "gsis_id": None, "jersey": None, "slots": "",
                 "_order": (9, 9, 0, placement["name"]),
             })
@@ -302,6 +332,7 @@ def build(source):
         "sources": {
             "depth_chart": "nflverse depth_charts_2013.csv, week 1, regular season",
             "availability": "nflverse injuries_2013.csv, week 1 report (Friday, September 6, 2013); Out and Doubtful are unavailable",
+            "pre_existing_returns": "for Week 1 Out/Doubtful players only: first later week reported Questionable/Probable, or off the report and on the club depth chart",
             "co_starter_order": "nflverse stats_player_reg_2012.csv (2012 regular-season usage)",
             "membership_cross_check": "nflverse roster_weekly_2013.csv, week 1 club membership only; status ignored",
         },

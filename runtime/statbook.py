@@ -51,6 +51,15 @@ def _receipt_team_stats(team_stats, *, compact):
     return stamped
 
 
+INJURY_FIELDS = ("team", "player", "injury_class", "severity", "restriction",
+                 "return_days", "reassessment_days")
+
+
+def public_injury(injury):
+    """The game's public injury report entry: who, what class, what restriction."""
+    return {field: injury.get(field) for field in INJURY_FIELDS}
+
+
 def _home_and_away(matchup, team_stats):
     away, separator, home = matchup.partition(" at ")
     if not separator or {away, home} != set(team_stats):
@@ -62,7 +71,8 @@ def make_receipt(result, *, week, matchup, coverage="complete", detail="full",
                  player_attribution_incomplete_teams=()):
     """Return a public receipt for one already-closed game.
 
-    full keeps the snap ledger and all player counters. compact_stats keeps
+    Both details carry the game's public injury report. full keeps the snap
+    ledger and all player counters. compact_stats keeps
     every nonzero generated player/team statistic and every game-day player
     row, but omits snap rows, named-call data and zero-valued player fields.
     """
@@ -101,6 +111,7 @@ def make_receipt(result, *, week, matchup, coverage="complete", detail="full",
         raise ValueError("player attribution team not present in receipt")
     if incomplete:
         receipt["player_attribution_incomplete_teams"]=incomplete
+    receipt["injuries"] = [public_injury(i) for i in result.get("injuries", ())]
     if detail == "full":
         receipt["play_ledger"] = deepcopy(result.get("play_ledger", []))
         receipt["play_call_stats"] = deepcopy(result.get("play_call_stats", {}))

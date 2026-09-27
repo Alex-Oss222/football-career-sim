@@ -123,8 +123,8 @@ For the named week, Codex must autonomously:
 1. Read the current state, calendar, that week's existing `output.md`, the active playbook iterations, the season-output template, current roster/medical state, and any weekly plan supplied by the user.
 2. Run ordinary repository/game readiness checks.
 3. Resolve **internal repository prerequisites** that are already user-authorized, including an explicit migration/reset for that same week.
-4. Build/freeze the protagonist and background TeamInput records required by the active kernel. Before any event closes, run the weekly TeamInput exclusivity gate: current Jacksonville-controlled active-roster and practice-squad players may appear only in Jacksonville's TeamInput, and no player may appear on more than one club in the same weekly slate. Historical roster rails always yield to branch transactions/control.
-5. Run the protagonist game and every other league game in that week through the shared production runner, exactly once per canonical event.
+4. Build/freeze the protagonist and background TeamInput records required by the active kernel with `python scripts/build_week_inputs.py N` (Week 2 onward; it needs that week's frozen `call_sheet.json` from Stone's plan). Before any event closes, run the weekly TeamInput exclusivity gate: current Jacksonville-controlled active-roster and practice-squad players may appear only in Jacksonville's TeamInput, and no player may appear on more than one club in the same weekly slate. Historical roster rails always yield to branch transactions/control.
+5. Run the protagonist game and every other league game in that week through the shared production runner, exactly once per canonical event: `python scripts/close_week.py N --close`.
 6. Preserve the full public game receipts required by the active kernel/statbook contract.
 7. Write the protagonist weekly `output.md` using the current season-output template and write the background roundup to `league_results/week_NN.md`.
 8. Generate the box score, standings and season statistics from receipts (`render_box_score.py --write`, `render_standings.py`, `render_season_stats.py`); never hand-add totals from Markdown.

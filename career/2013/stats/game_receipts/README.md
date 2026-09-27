@@ -2,13 +2,14 @@
 
 One JSON receipt per closed regular-season or postseason game, written by `runtime.statbook.make_receipt` after the game closes. Receipts are the only source for the season statbook, the standings and every weekly box score.
 
-Normal-week naming pattern: `week_NN_<away>_at_<home>.json`. Migration and reset receipts keep their immutable event-id filenames when that identity is part of an audited replacement batch.
+Normal-week naming pattern: `week_NN_<away club>_at_<home club>.json`, for example `week_02_jacksonville_jaguars_at_oakland_raiders.json`, written by `scripts/close_week.py`. The Week 1 generation-3 receipts keep their event-id filenames from the audited replacement batch.
 
 ## Contents (statbook schema 3)
 
 - `event_id`, `week`, `matchup` (`Away Club at Home Club`), and the designated `home` and `away` clubs.
 - `final_score` and each club's team statistics.
 - A player row for every player on each club's game-day active list. Each row carries the player's position, `games: 1`, and his generated statistics.
+- `injuries`: the game's public injury report (club, player, injury class, severity, restriction, projected return and reassessment days). Later weeks read it for availability.
 - Jacksonville and protagonist games use `detail="full"`: player rows keep every counter, including zeros, and the receipt adds the public snap `play_ledger` and named-call `play_call_stats`.
 - Ordinary background games use `detail="compact_stats"`: player rows keep only nonzero counters plus `games`, and there is no snap ledger or named-call data. This keeps weekly diffs reviewable without losing any generated statistic or appearance.
 
