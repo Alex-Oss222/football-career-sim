@@ -11,7 +11,7 @@
 - Controlled 53 (53 active); practice squad 8; preseason record 2-2; regular-season record 6-2.
 - Next roster deadline: **October 29, 4 p.m. ET trade deadline**. No trade proposal is open.
 - Week 9 (November 3) is the bye. Next competitive event: **November 10 Week 10 at Tennessee, 1 p.m. ET: NOT SIMULATED**.
-- Rackley limited (minor); C.J. Wilson out. Pasztor and Mosley available from their recovered projections (Entry 46). Games run under kernel 2013.6 from Week 4 (Entry 39).
+- Rackley limited (minor); C.J. Wilson out. Pasztor and Mosley available from their recovered projections (Entry 46). Games ran under kernel 2013.6 in Weeks 4-8 (Entry 39); kernel 2013.7 from the Week 9 slate (Entry 48). League awards: `awards/` (Entry 47).
 
 ## 2013 branch schedule
 
