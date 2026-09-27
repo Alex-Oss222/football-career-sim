@@ -1,4 +1,4 @@
-<!-- sim-meta: {"event_entry": 19, "kind": "evidence_summary", "source": "career/2013/offseason/training_camp/output.md", "source_sha256": "d4163d8e6070248392e21679c872951d1c26a69dd543f3a0d6713c5dd4c4733e", "status": "IN_PROGRESS", "through": "2013-08-08"} -->
+<!-- sim-meta: {"event_entry": 29, "kind": "evidence_summary", "source": "career/2013/offseason/training_camp/output.md", "source_sha256": "cab0a6106cabdb76ff109133396f3b88f12fc503523511ffe5de138601eee994", "status": "COMPLETE", "through": "2013-09-04"} -->
 
 # Training-camp and preseason evidence summary
 

@@ -26,7 +26,7 @@ The counterfactual simulation had already advanced past the April 16-18 voluntar
 
 ## 2. Jacksonville offseason program
 
-| Date/window | Phase/event | Status in branch |
+| Date/window | Phase/event | Branch status at the May 5, 2013 research checkpoint |
 |---|---|---|
 | **Apr. 2** | Official offseason program begins | Historical date verified; phase was not separately simulated |
 | Apr. 2-15 | Phase One physical-development window, subject to CBA structure | Historical window; no retroactive attendance/performance invented |
@@ -73,7 +73,7 @@ No unverified August 4 or August 10-11 practice is inserted. After August 15, us
 
 All times Eastern.
 
-| Preseason week | Date | Jacksonville game | Venue | Status |
+| Preseason week | Date | Jacksonville game | Venue | Branch status at the May 5, 2013 research checkpoint |
 |---:|---|---|---|---|
 | 1 | Fri. Aug. 9, 7:30 p.m. | Miami Dolphins at Jacksonville | EverBank Field | Future branch game; no historical score imported |
 | 2 | Sat. Aug. 17, 7:30 p.m. | Jacksonville at New York Jets | MetLife Stadium | Future branch game |
@@ -172,3 +172,7 @@ The schedule is historical infrastructure. The actual branch owns:
 - playoff qualification.
 
 Those outcomes must be simulated from branch state. Historical Jacksonville outcomes must never be used as an answer key.
+
+## Correction note, September 27, 2026
+
+The branch-status columns in sections 2 and 3 record the branch position at the May 5, 2013 research checkpoint, when this file was built. They are not current status: every OTA block, the mandatory minicamp, training camp and all four preseason games listed there as "Future" have since closed in the branch (ledger Entries 10-29), and later rows may close as the season advances. Current branch status is owned by [career/2013/calendar.md](../career/2013/calendar.md), the branch-facing calendar authority. No historical date, time, venue or source in this file changed.

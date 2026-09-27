@@ -39,7 +39,7 @@ No Jacksonville draft-day trade closed. The Cousins and Gabbert/Wilson transacti
 
 The seven selections initially created exclusive negotiating rights. Caldwell converted all seven into signed rookie contracts on **May 2, 2013**, before rookie minicamp. Signing does not guarantee a starting job, workload, medical clearance beyond the event-specific record, or final roster place.
 
-**Contemporaneous evidence:** `library/2013_draft_class.md` (April 24 pre-selection snapshot), `library/2013_draft_pool_registry.md` (eligibility), `library/2013_draft_information_gates.md` (release-date controls), and the 2013 rookie-pool estimates in the current cap worksheet. **Jacksonville recommendation:** `player_draft_board.md`. **Ex-ante packet:** `career/2013/ledger.md`, Entry 4.
+**Contemporaneous evidence:** `library/2013_draft_class.md` (April 24 pre-selection snapshot), `library/2013_draft_pool_registry.md` (eligibility), `library/2013_draft_information_gates.md` (release-date controls), and the 2013 rookie-pool sources in the May 5 cap worksheet (Git `d25c8cf`, the last version of `../current_cap_worksheet.md` before its September rewrite in `4cf2ad7`) and the May 5 section of `../initial_cap_sheet.md`. **Jacksonville recommendation:** `player_draft_board.md`. **Ex-ante packet:** `career/2013/ledger.md`, Entry 4.
 
 ## Post-draft rookie free agents
 
@@ -60,6 +60,6 @@ Caldwell completed all seven four-year rookie contracts before the verified May 
 | #208 | Tyler Bray | 4 years | $68,900 | $422,225 | $512,225 | $602,225 | $692,225 | $2,228,900 |
 | **Total** | | | **$17,736,408** | **$7,269,102** | **$8,980,407** | **$10,666,712** | **$12,403,517** | **$39,319,738** |
 
-The prior branch total of **$7,326,170** for 2013 was incorrect and is superseded. Gross rookie charges are also not the same as net Top-51 effect. The reconciled current worksheet calculates the drafted-rookie Top-51 effect at **$4,134,102** as of May 5. See `../current_cap_worksheet.md`.
+The prior branch total of **$7,326,170** for 2013 was incorrect and is superseded. Gross rookie charges are also not the same as net Top-51 effect. The May 5 worksheet (Git `d25c8cf`) calculated the drafted-rookie Top-51 effect at **$4,134,102** as of May 5; that figure is historical, because Top-51 accounting ended September 4. Current regular-season accounting is in `../current_cap_worksheet.md`.
 
 **Slot source:** OverTheCap's contemporaneous February 2013 Jacksonville rookie-pool estimate, cross-checked to the 2011 CBA Article 7 structure. The project uses the pick-slot economics because Jacksonville selected these players at those branch draft positions.

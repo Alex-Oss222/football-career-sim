@@ -39,6 +39,38 @@ def without_code(text):
     return re.sub(r'`[^`\n]*`', '', text)
 
 
+def receipt_coverage_errors(receipts, scheduled=None):
+    """One receipt per scheduled game in every regular-season week that has any.
+
+    `scheduled(week)` returns that week's scheduled games and raises ValueError
+    for a week with none (runtime.week_inputs.schedule, library/data/2013_schedule.json).
+    A week outside the regular-season schedule, such as a postseason round, is
+    skipped here.
+    """
+    if scheduled is None:
+        import sys
+        if str(ROOT) not in sys.path:
+            sys.path.insert(0, str(ROOT))
+        from runtime.week_inputs import schedule as scheduled
+    counts = {}
+    for receipt in receipts:
+        week = receipt.get('week')
+        if isinstance(week, int) and not isinstance(week, bool):
+            counts[week] = counts.get(week, 0) + 1
+    errors = []
+    for week in sorted(counts):
+        try:
+            games = len(scheduled(week))
+        except json.JSONDecodeError:
+            raise
+        except ValueError:
+            continue
+        if counts[week] != games:
+            errors.append(f'Week {week}: {counts[week]} game receipt(s) for {games} scheduled games; '
+                          'receipt coverage must match the schedule before the week reads complete')
+    return errors
+
+
 def validate(root=ROOT):
     root = Path(root).resolve()
     errors = []
@@ -156,6 +188,8 @@ def validate(root=ROOT):
                             game.get('points') == final_score.get(team_id),
                             f'{event_id}: {team_id} receipt points differ from final score',
                         )
+
+        errors.extend(receipt_coverage_errors(receipts))
 
         expected_views = render_views(2013, 'Jacksonville Jaguars', receipts)
         for name, expected in expected_views.items():

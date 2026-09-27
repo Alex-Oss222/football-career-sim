@@ -127,7 +127,7 @@ For the named week, Codex must autonomously:
 5. Run the protagonist game and every other league game in that week through the shared production runner, exactly once per canonical event: `python scripts/close_week.py N --close`.
 6. Preserve the full public game receipts required by the active kernel/statbook contract.
 7. Write the protagonist weekly `output.md` using the current season-output template and write the background roundup to `league_results/week_NN.md`.
-8. Generate the box score, standings and season statistics from receipts (`render_box_score.py --write`, `render_standings.py`, `render_season_stats.py`); never hand-add totals from Markdown.
+8. Generate the box score, standings and season statistics from receipts (`render_box_score.py --write`, `render_standings.py`, `render_season_stats.py`); never hand-add totals from Markdown. Then read `career/[year]/stats/calibration_audit.md`: an OUTSIDE row is investigated as an input or engine defect, never grounds to rerun or select a closed result.
 9. Reconcile injuries, availability, roles, transactions and other actually changed state.
 10. Close the ledger/current state/calendar atomically and validate the branch. Open the normal PR. **Do not advance the private snapshot from an unmerged branch.** If Codex can merge the PR, merge it first, update/check out the merged `main`, then advance the private snapshot to the merged Document 5 digest and rerun readiness. If Codex cannot merge, leave the private snapshot unchanged and report snapshot advancement as pending merge.
 11. Stop before Week N+1.
@@ -153,22 +153,15 @@ Before the first game event of any regular-season/postseason weekly slate closes
 
 A user-authorized migration for the requested week is an **internal prerequisite**, not a user task.
 
-For the 2013 Week 1 restart specifically (Week 1 voided by ledger Entry 34; replay as event generation 3 under kernel 2013.4):
+General rules for any such migration:
 
-- Read `career/2013/migrations/week_01_kernel_2013_4_restart.md`, then `career/2013/migrations/week_01_full_fidelity_reset.md` (history) and its JSON manifest.
-- The September 20, 2026 `reset-v1` attempt is an audited technical abort: all 16 private events closed, but the generated Git diff exceeded the Codex extraction limit and no public reset commit/PR landed. Generation 2 (`reset-v2`) was published and then voided for verified kernel defects. Use only the current generation IDs in the manifest; never publish, show or compare v1 or v2 results.
-- Before closing any generation-3 Week 1 event, run `python scripts/mark_week1_generations_void.py`; it idempotently records the abort/void correction against all 32 v1 and v2 event IDs.
-- If `python scripts/check_week1_reset_ready.py` reports missing TeamInputs, **do not stop and ask the user to fill them**.
-- Research and construct all missing pre-Week-1 TeamInputs yourself from date-eligible public sources and branch canon. Write the reconstructed full TeamInput objects to the gitignored .sim_cache/week_01_full_fidelity_inputs.json, not into the committed migration manifest, then rerun the gate. The committed manifest remains small control metadata.
-- Use verified historical Week-1 roster membership/position/availability facts for non-Jacksonville clubs as date-specific roster rails when no earlier branch transaction overrides them. Historical Week-1 scores, statistics, injuries produced by the real games, later depth-chart outcomes and later season/career results are forbidden inputs.
-- Prefer a week-level roster source with explicit 2013 Week 1 scope; cross-check material ambiguities against an independent period-appropriate source. Record source/provenance for the reconstructed inputs. Kernel 2013.4 distributes carries, targets and tackles by the depth order in each TeamInput, so every club needs a complete game-day unit (linebackers included) and explicit `depth` values from a date-eligible pre-Week-1 depth chart; generation-2 inputs lacked whole position groups and must not be reused.
-- Jacksonville must use the branch's September 4 roster, medical state, roles and the already-approved Week 1 structured offensive call sheet—not the real historical Jaguars roster/result.
-- For unit evidence anchors, apply Document 7 §2.2. Where pre-Week-1 evidence is thin, use the established `Average` low-confidence default rather than guessing a stronger/weaker secret rating.
-- Background clubs do not need invented named play calls. Use only offensive-call detail supported by their date-eligible input contract; the protagonist's structured call sheet remains mandatory where the active kernel requires it.
-- Freeze all 32 reconstructed TeamInputs before any replacement Week 1 draw.
-- Only after the reset gate passes may any replacement event close. Then replace all 16 Week 1 games as one batch. Preserve a full Jacksonville receipt and compact_stats receipts for the other 15 games, rebuild every dependent stat/standings view, append the supersession entry, reconcile injuries/state and validate before Week 2.
-- Never rerun only Jacksonville while leaving the other 15 legacy Week 1 games active.
-- After the slate closes, read `career/2013/stats/calibration_audit.md`. An OUTSIDE row is investigated as an input or engine defect; it is never grounds to rerun or select a closed result.
+- Use only the current generation identifiers in the migration manifest. Never publish, show or compare the results of a voided or aborted generation.
+- Freeze every replacement TeamInput before any replacement draw.
+- Replace the whole affected slate as one batch. Never rerun only Jacksonville while leaving the rest of a voided slate active.
+- Preserve a full Jacksonville receipt and compact_stats receipts for the other games, rebuild every dependent stat and standings view, append the supersession entry, and reconcile state before the next week.
+- The decision to void and replay must never depend on which side a result favoured (the label-swap test in Document 1 §9.1).
+
+The 2013 Week 1 restart is closed. Generations v1 and v2 were voided and Week 1 was replayed as generation 3 under kernel 2013.4. Ledger Entries 34-35 and `career/2013/migrations/` are its record. Its one-off readiness gate and void recorder were retired after closure (2026-09-27).
 
 ### Public/private transaction boundary
 
@@ -218,9 +211,11 @@ Return only the useful week result and closure summary: protagonist score/result
 
 **Availability gate:** this task is disabled until `foundation/07_Game_Simulation_and_Resolution_Engine.md` is marked runtime-ready, its §8 era calibration is complete for the season being played, and the private Engine State store has been instantiated. If any of those conditions is missing, stop without generating scores.
 
-**Scope:** every game that week between two teams, neither of which is the user's own team. Never touch a game involving the protagonist's team — that is played interactively elsewhere and is not your job.
+**Superseded in practice by `Run Week N` (2026-09-27).** Background games now close in the same `scripts/close_week.py` batch as Jacksonville's game, through the same production runner and per-possession kernel; there is no separate background path. The output-format, reactive-event, results-file and statistics rules below still govern `league_results/week_NN.md` and the background receipts.
 
-**Method — read `foundation/07_Game_Simulation_and_Resolution_Engine.md` §1's scope-discipline rule first, and §3.4's resolution-packet/seed rule.** Corrected 2026-09-18: there is only one outcome kernel in this project. Do not resolve these games by free-form judgment about who plausibly wins — that was an earlier version of this rule and it created two different outcome adjudicators in one league, which is a real integrity defect (background results decide the protagonist's standings, playoff seeding, and draft order, so they need the same physics as his own games, not a cheaper substitute physics). Actually sample from the §2 rating anchors and §3.2 matchup-delta mechanism, at a coarser granularity (whole-game or a few aggregated segments, not per-drive) to control cost — then narrate only the result. The savings versus the interactive path is in narration depth and sampling granularity, never in swapping the mechanism for a subjective call.
+**Scope:** every game that week between two teams, neither of which is the user's own team. Jacksonville's game is written up in its own weekly output, not in this roundup.
+
+**Method — read `foundation/07_Game_Simulation_and_Resolution_Engine.md` §1's scope-discipline rule first, and §3.4's resolution-packet/seed rule.** Corrected 2026-09-18: there is only one outcome kernel in this project. Do not resolve these games by free-form judgment about who plausibly wins — that was an earlier version of this rule and it created two different outcome adjudicators in one league, which is a real integrity defect (background results decide the protagonist's standings, playoff seeding, and draft order, so they need the same physics as his own games, not a cheaper substitute physics). Resolve them through the same production runner and per-possession kernel as the protagonist's game, then narrate only the result. The savings versus the protagonist's game are in narration depth and compact receipt storage, never in the mechanism.
 
 **Output format — highlights only, explicitly, per this project's owner's own instruction:** for each game, write final score, 2-4 sentences of highlight narration (not a drive-by-drive account), and 1-3 standout performers. Do not write play-by-play. Do not write a full box score unless a specific downstream task asks for one. A whole week's slate of ~13-15 games should read like a scores-and-highlights roundup, not 13 separate game stories.
 
@@ -330,6 +325,6 @@ This is the bounded pre-hire phase that may run before full career initializatio
 
 ---
 
-## Task: "Run the [year] offseason cycle." (free agency, draft, and trades — not yet enabled)
+## Task: "Run the [year] offseason cycle." (free agency, draft, and trades — gated each year by the real calendar)
 
 Gated on the real calendar, not just a brief. Do not attempt free agency before March 12 or the draft before April 25 for the 2013 cycle (`library/2013_league_calendar_and_financial_rules.md`; check the equivalent library file for other years). When that window is actually reached, this task resolves `career/[year]/offseason/free_agency/player_board.md`, `career/[year]/offseason/draft/player_draft_board.md`, and `career/[year]/trades/trade_targets.md` the same way the staff-building task above resolves staff hiring: real market pressure, genuine possible rejection or lost competition, Caldwell's retained authority over the actual signing/pick/trade decision, and a written result (never a locked-in outcome assumed from what actually happened in real history). If any of those three files doesn't exist yet for the year in question, stop and report rather than improvising the user's priorities.

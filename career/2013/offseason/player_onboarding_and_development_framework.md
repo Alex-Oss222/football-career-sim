@@ -217,8 +217,8 @@ Each actual event stays separate, in its own dated output file, and gets its clo
 - `career/2013/offseason/rookie_minicamp/output.md` — what actually happened at rookie minicamp.
 - `career/2013/offseason/otas/output.md` — what actually happened during OTAs.
 - `career/2013/offseason/mandatory_minicamp/output.md` — what actually happened there.
-- Training camp receives its own folder/output structure when the calendar reaches it.
+- `career/2013/offseason/training_camp/output.md` — what actually happened at training camp and in the preseason block.
 
 When the onboarding process itself actually executes, its ledger entry records that every player received the standards package and active 2013 playbook, that Stone and each position coach completed their individual outreach calls, that recurring player feedback was routed to the appropriate staff, and that no football role was awarded through the onboarding process itself.
 
-**Prerequisite before executing any of this against the calendar:** the real 2013 Jacksonville offseason-program, rookie minicamp, OTA, and minicamp dates are not yet established in this repository (`library/2013_league_calendar_and_financial_rules.md` flags them explicitly as not yet researched). This framework is canon now; the calendar must be verified, with the same two-pass sourcing discipline used elsewhere in this project, before the simulation is moved through any of these phases.
+**Calendar prerequisite (satisfied):** the real 2013 Jacksonville offseason-program, rookie minicamp, OTA, minicamp and camp dates were verified with the two-pass discipline in `library/2013_jacksonville_master_calendar.md`, and `career/2013/calendar.md` is the branch-facing schedule authority. Any later phase still reads the calendar before it is executed.

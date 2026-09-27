@@ -4,7 +4,7 @@
 **Through:** Week 5.
 **Coverage:** complete for this club's closed games.
 
-Generated game use of the named calls in the weekly offensive call sheet, from the snap ledger. Y/P is yards per snap; 20+ counts gains of 20 yards or more; NEG counts snaps that lost yardage.
+Generated game use of the named calls in the weekly offensive call sheet, from the snap ledger. Y/P is yards per snap; 20+ counts gains of 20 yards or more; NEG counts snaps that lost yardage. Kernels 2013.4-2013.6 draw each snap's call label at random from the sheet's calls of that run or pass type, independent of the ball carrier (ledger Entry 41), so for games closed under them these rows show label assignment, not Stone's call frequencies.
 
 | Call | Family | SNAPS | RUNS | DB | CMP | ATT | CMP% | YDS | Y/P | 20+ | NEG | TD | TO | SCK |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|

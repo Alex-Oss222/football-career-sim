@@ -1,7 +1,11 @@
-"""Deterministic, immutable resolution packets for a future private runtime.
+"""Canonical packet encoding and the reference journal-before-draw packet.
 
-No football distribution is invented here. The caller must supply a calibrated
-distribution from the shared football kernel, which is not implemented yet.
+`canonical()` is the canonical JSON encoding behind every packet digest; the
+production path uses it through `game_runner`, `private_client` and
+`private_service`. `Packet`, `PrivateJournal` and `resolve` are the Document 7
+section 3.4 reference implementation, exercised by `tests/test_packets.py`; the
+production runner closes events through the private service and resolves games
+in `kernel.py` instead. No football distribution is invented here.
 Never expose packet contents, weights, seeds or private journal data to a coach.
 """
 from dataclasses import dataclass, field

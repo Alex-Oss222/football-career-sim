@@ -36,12 +36,12 @@ Start with [current state](../../state/05_Current_Season_State.md). The [season 
 | Preseason | [Game index](preseason/README.md) | Per-game output linked in the index | [Roster cuts](preseason/final_roster_cuts.md) |
 | Regular season | [Week index](regular_season/README.md) | Per-week output linked in the index | [Standings](standings.md) / [statbook](statbook.md) |
 
-The preseason and regular-season stubs describe scheduled work only. League results, conditional postseason rounds and closeouts are created when reached. A future folder is never evidence that an event happened.
+The remaining regular-season stubs (Weeks 6-17) describe scheduled work only. League results, conditional postseason rounds and closeouts are created when reached. A future folder is never evidence that an event happened.
 
 ## Canonical migrations
 
 - [Week 1 restart under kernel 2013.4](migrations/week_01_kernel_2013_4_restart.md): closed. Week 1 was replayed as event generation 3 (Entry 35).
-- [Week 1 full-fidelity reset](migrations/week_01_full_fidelity_reset.md): superseded audit history of generations 1 and 2; its JSON manifest now controls generation 3.
+- [Week 1 full-fidelity reset](migrations/week_01_full_fidelity_reset.md): superseded audit history of generations 1 and 2; its JSON manifest records the closed generation 3 (Entry 35).
 
 ## Durable football inputs
 

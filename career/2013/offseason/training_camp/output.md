@@ -1,8 +1,8 @@
-<!-- sim-meta: {"event_entry": 19, "kind": "phase_output", "status": "IN_PROGRESS", "through": "2013-08-08"} -->
+<!-- sim-meta: {"event_entry": 29, "kind": "phase_output", "status": "COMPLETE", "through": "2013-09-04"} -->
 
 # Jacksonville Jaguars — 2013 training camp output
 
-**Status:** IN PROGRESS through the end of the August 8 final walkthrough; camp continues after Preseason Game 1.
+**Status:** COMPLETE through September 4, 2013 (camp closed Entry 21; preseason/roster block closed Entry 29).
 **Evidence summary:** [Standouts](standouts.md).
 **Current boundary:** Training camp and the complete four-game preseason evaluation block are closed through September 4.
 

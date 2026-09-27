@@ -7,7 +7,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT/'scripts'))
-from validate_repository import validate
+from validate_repository import receipt_coverage_errors, validate
 from check_game_readiness import assess, check
 
 
@@ -36,10 +36,8 @@ class ContinuityTests(unittest.TestCase):
         self.assertIn(old, text)
         file.write_text(text.replace(old, new, 1))
 
-    def test_closed_current_records_and_future_phase_stubs_pass(self):
+    def test_closed_current_records_pass(self):
         self.assertEqual(validate(self.root), [])
-        # An unchanged May 5 cap worksheet is valid at the May 23 clock.
-        self.assertIn('May 5', (self.root/'career/2013/offseason/current_cap_worksheet.md').read_text())
 
     def test_changed_output_requires_summary_review(self):
         output = self.root/'career/2013/offseason/otas/output.md'
@@ -128,6 +126,45 @@ class ContinuityTests(unittest.TestCase):
         }
         receipt.write_text(json.dumps(data, sort_keys=True, separators=(',', ':'))+'\n')
         self.assertTrue(any('receipt points differ from final score' in error for error in validate(self.root)))
+
+    def test_missing_week_receipt_is_rejected(self):
+        receipts = sorted((self.root/'career/2013/stats/game_receipts').glob('week_05_*.json'))
+        self.assertTrue(receipts)
+        receipts[-1].unlink()
+        self.assertTrue(any('Week 5:' in error and 'scheduled games' in error
+                            for error in validate(self.root)))
+
+
+class ReceiptCoverageTests(unittest.TestCase):
+    @staticmethod
+    def receipts(week, count):
+        return [{'event_id': f'w{week}-{n}', 'week': week} for n in range(count)]
+
+    @staticmethod
+    def schedule(week):
+        if week not in (1, 2):
+            raise ValueError('no 2013 schedule for week %s' % week)
+        return [{}] * (3 if week == 1 else 2)
+
+    def test_full_weeks_pass_and_unreceipted_weeks_are_not_required(self):
+        receipts = self.receipts(1, 3) + self.receipts(2, 2)
+        self.assertEqual(receipt_coverage_errors(receipts, self.schedule), [])
+        self.assertEqual(receipt_coverage_errors(self.receipts(1, 3), self.schedule), [])
+
+    def test_short_or_extra_week_is_rejected(self):
+        short = receipt_coverage_errors(self.receipts(1, 2), self.schedule)
+        self.assertEqual(len(short), 1)
+        self.assertIn('Week 1: 2 game receipt(s) for 3 scheduled games', short[0])
+        extra = receipt_coverage_errors(self.receipts(2, 3), self.schedule)
+        self.assertIn('Week 2: 3 game receipt(s) for 2 scheduled games', extra[0])
+
+    def test_week_outside_the_regular_season_schedule_is_skipped(self):
+        self.assertEqual(receipt_coverage_errors(self.receipts(19, 1), self.schedule), [])
+
+    def test_repository_schedule_is_the_default(self):
+        # Week 5 of 2013 has fourteen scheduled games (four byes).
+        self.assertEqual(receipt_coverage_errors(self.receipts(5, 14)), [])
+        self.assertTrue(receipt_coverage_errors(self.receipts(5, 13)))
 
 
 if __name__ == '__main__':

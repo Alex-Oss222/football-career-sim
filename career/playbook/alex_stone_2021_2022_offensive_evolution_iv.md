@@ -63,7 +63,7 @@ Stone remains the primary game-day play-caller. No coordinator branch is created
 11. [Play-Action and Movement Pass Evolution](#11-play-action-and-movement-pass-evolution)
 12. [ACCESS, READ, and KEEP Packages](#12-access-read-and-keep-packages)
 13. [Screen and Perimeter Game Evolution](#13-screen-and-perimeter-game-evolution)
-14. [6OL and Offensive-Line Package Evolution](#14-6ol-and-offensive-line-package-evolution)
+14. [6OL and Offensive-Line Package Evolution](#14-six-ol-and-offensive-line-package-evolution)
 15. [Situational Offense](#15-situational-offense)
 16. [Concept Portability and Series Architecture](#16-concept-portability-and-series-architecture)
 17. [Weekly Game-Planning and Call-Sheet Changes](#17-weekly-game-planning-and-call-sheet-changes)

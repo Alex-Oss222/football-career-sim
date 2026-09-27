@@ -1,6 +1,6 @@
 # Training-camp position battles — final
 
-**Evidence through:** September 4, 2013. Roles are current football decisions, not contract guarantees.
+**Evidence through:** September 4, 2013. These were the September 4 camp-close decisions, not contract guarantees; current roles are in `career/2013/depth_chart.json`, `career/2013/roster.md` and Document 5 §4.
 
 | Competition | Cumulative evidence | Decision |
 |---|---|---|

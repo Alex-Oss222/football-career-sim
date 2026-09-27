@@ -2,13 +2,13 @@
 
 Status: MARCH 12 OPENING BATCH COMPLETE
 
-> **Current-state supersession:** This file preserves the March batch and its original gross running arithmetic. Its `~$8.35M` figures are **historical unreconciled planning shortcuts, not current cap room**. Season-ledger Entry 9 and `../current_cap_worksheet.md` supersede them for current state. May 5 Top-51 planning room is approximately **$7.0M-$7.4M**.
+> **Current-state supersession:** This file preserves the March batch and its original gross running arithmetic. Its `~$8.35M` figures are **historical unreconciled planning shortcuts, not current cap room**. Season-ledger Entry 9 and `../current_cap_worksheet.md` supersede them for current state. Current regular-season working room (Top-51 expired September 4) is in `../current_cap_worksheet.md`.
 
 Operative date: March 12, 2013, 4:00 p.m. ET, as recorded for the batch. Separate execution times are not supplied.
 
 These are completed simulation outcomes. The contracts, accepted/declined offers, contingency sequence and four releases are unchanged. Amounts below are calculated from those branch agreements, not from the players' real later contracts.
 
-Current roster now: [reconciled May 5 roster](../../roster.md). Historical event source: [season ledger, Entry 3](../../ledger.md). Historical starting finances: [January cap sheet](../initial_cap_sheet.md). Current cap accounting: [May 5 Top-51 worksheet](../current_cap_worksheet.md).
+Current roster now: [current roster](../../roster.md). Historical event source: [season ledger, Entry 3](../../ledger.md). Historical starting finances: [January cap sheet](../initial_cap_sheet.md). Current cap accounting: [current cap worksheet](../current_cap_worksheet.md).
 
 ## 1. Completed outcomes
 
@@ -78,7 +78,7 @@ For an actual reconciliation, calculate counted team salary before and after eac
 
 **Reconciled room = ~$8.35M + baseline/adjusted-cap correction + verified signing-count adjustments + verified net release adjustments + other documented changes.**
 
-This historical section explains how the original $8.35M shortcut was produced. It is superseded for current decision-making by the May 5 Top-51 worksheet and must not be used as current room.
+This historical section explains how the original $8.35M shortcut was produced. It is superseded for current decision-making by `../current_cap_worksheet.md` and must not be used as current room.
 
 Before allocating all remaining room, establish any still-unbooked rookie/tender costs, offseason adjustments, the later transition from Top-51 to full-roster counting, practice-squad/in-season replacement costs and a club-selected operating reserve. No reserve amount or exact future cap space is invented here. The four-year cash-spending test is separate from cap room.
 

@@ -1,6 +1,6 @@
 # Week 1 full-fidelity reset
 
-**Status:** SUPERSEDED. Generation 1 technically aborted; generation 2 was published in merge `6658e3c0e8797f0524a9fda25a4624992118815f` and later **voided** by ledger Entry 34 for the kernel 2013.4 restart. The active procedure is [week_01_kernel_2013_4_restart.md](week_01_kernel_2013_4_restart.md). This file is retained as the audit history of generations 1 and 2.
+**Status:** SUPERSEDED. Generation 1 technically aborted; generation 2 was published in merge `6658e3c0e8797f0524a9fda25a4624992118815f` and later **voided** by ledger Entry 34 for the kernel 2013.4 restart. It was replaced by the generation-3 restart ([week_01_kernel_2013_4_restart.md](week_01_kernel_2013_4_restart.md)), closed by ledger Entry 35. This file is retained as the audit history of generations 1 and 2.
 **User authorization:** The user explicitly authorized the full-stat/full-play Week 1 replacement and later instructed that `Run Week 1` must perform all reset preparation automatically without sending setup work back to the user.
 **Source checkpoint:** `Canonical update - September 4, 2013 - preseason, roster and cap block closed`.
 
