@@ -1,7 +1,7 @@
 # 2013 Week 5 league results
 
 **Events:** `2013-week05-<away>-at-<home>`, kernel 2013.6 (ledger Entry 39), closed once each through the private production runner.
-**Inputs:** background clubs carried forward from the [Week 1 depth-chart library](../../../library/2013_week1_depth_charts.md) with branch injuries applied, each dressing 46 players chosen by depth order; every club at the Average low-confidence unit anchor.
+**Inputs:** background clubs carried forward from the [Week 1 depth-chart library](../../../library/2013_week1_depth_charts.md) with branch injuries applied, each dressing up to 46 players chosen by depth order (fewer when too few are available: the Jets dressed 43 or 44 in Weeks 3-5); every club at the Average low-confidence unit anchor.
 **Receipts:** `../stats/game_receipts/week_05_*.json`. **Standings:** [../standings.md](../standings.md), generated from the receipts.
 **Byes:** Minnesota Vikings, Pittsburgh Steelers, Tampa Bay Buccaneers, Washington Redskins.
 
@@ -38,7 +38,7 @@ Ryan Tannehill threw three touchdown passes and 284 yards, and Baltimore managed
 
 ## Detroit 48, Green Bay 27
 
-Detroit ran for 257 yards, Reggie Bush for 137 of them, and Calvin Johnson caught two of Matthew Stafford's three touchdown passes among 164 yards.
+Detroit ran for 257 yards, Reggie Bush for 137 of them, and Calvin Johnson caught eight passes for 164 yards and two of Matthew Stafford's three touchdown passes.
 
 **Standouts:** Calvin Johnson (8-164, 2 TD); Reggie Bush (137 rushing yards, TD; 4-46, TD); Aaron Rodgers (3 TD in the loss).
 
@@ -68,7 +68,7 @@ Alex Henery kicked three field goals and LeSean McCoy ran for 93 yards and a tou
 
 ## Indianapolis 12, Seattle 10
 
-Adam Vinatieri kicked four field goals and Indianapolis intercepted Russell Wilson twice. Red Bryant had two of Seattle's four sacks.
+Adam Vinatieri kicked four field goals and Jerrell Freeman intercepted Russell Wilson, offsetting two Seattle interceptions of Andrew Luck. Red Bryant had two of Seattle's four sacks.
 
 **Standouts:** Adam Vinatieri (4 of 4 field goals); Red Bryant (2 sacks); Golden Tate (7-69, TD).
 

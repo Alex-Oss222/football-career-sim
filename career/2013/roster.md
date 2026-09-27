@@ -71,7 +71,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Mark Asper | G | Active 53 | No communicated restriction | — |
 | Uche Nwaneri | G | Active 53 | No communicated restriction | — |
 | Austin Pasztor | G | Active 53 | Independent medical hold (August 17 head/neck injury) | — |
-| Will Rackley | G | Active 53 | No communicated restriction | Starting right guard |
+| Will Rackley | G | Active 53 | Limited, no projected absence (upper extremity, Week 5) | Starting right guard |
 
 ### Centers (2)
 

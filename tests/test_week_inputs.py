@@ -49,6 +49,8 @@ class AvailabilityTests(unittest.TestCase):
         self.assertTrue(week_inputs.roster_available(
             "Out, trunk (Week 2); projected return January 30, 2014", date(2014, 2, 1)))
         self.assertFalse(week_inputs.roster_available("Independent medical hold", date(2013, 12, 1)))
+        self.assertTrue(week_inputs.roster_available(
+            "Limited, no projected absence (upper extremity, Week 5)", date(2013, 10, 13)))
 
     def test_limited_without_days_does_not_sit_a_player(self):
         receipts = [injury_receipt("Matt Kalil", 0, restriction="limited")]

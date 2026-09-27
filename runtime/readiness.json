@@ -66,7 +66,7 @@
         "tests/test_kernel_coherence.py",
         "tests/test_drive_model.py"
       ],
-      "remaining": "Verified by repository tests for shared kernel 2013.6: the sourced 2012 drive model (resampled real drives, field-goal accuracy by distance, extra points, safeties, turnovers on downs), clock-bounded halves, kickoffs and the overtime state machine, zero ledger-coherence violations, depth-chart attribution, full public snap ledger, player-stat reconciliation, band audit and season-stat aggregation. The private service must report kernel 2013.6 before any Week 4 event closes."
+      "remaining": "Verified by repository tests for shared kernel 2013.6: the sourced 2012 drive model (resampled real drives, field-goal accuracy by distance, extra points, safeties, turnovers on downs), clock-bounded halves, kickoffs and the overtime state machine, zero ledger-coherence violations, depth-chart attribution, full public snap ledger, player-stat reconciliation, band audit and season-stat aggregation. The private service must report the repository kernel version before any event closes."
     },
     {
       "id": "private_runtime",

@@ -27,6 +27,7 @@ ROSTER = ROOT / "career" / "2013" / "roster.md"
 DEPTH_CHART = ROOT / "career" / "2013" / "depth_chart.json"
 PROTAGONIST = "Jacksonville Jaguars"
 AVAILABLE_TEXT = "No communicated restriction"
+LIMITED_TEXT = "Limited, no projected absence"
 UNIT = depth_library.UNIT
 
 
@@ -144,9 +145,10 @@ def roster_available(availability, game_day):
 
     A game injury recorded with a projected return clears on that date, the
     rule every background club gets; a hold without a date (a medical hold,
-    a suspension) clears only when the roster entry is changed.
+    a suspension) clears only when the roster entry is changed. A player
+    listed as limited with no projected absence plays, as for every club.
     """
-    if availability == AVAILABLE_TEXT:
+    if availability == AVAILABLE_TEXT or availability.startswith(LIMITED_TEXT):
         return True
     match = PROJECTED_RETURN.search(availability)
     if not match:

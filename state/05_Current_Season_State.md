@@ -29,7 +29,7 @@
 | Preseason record | **2-2** |
 | Regular-season record | **3-2** |
 | Last event | Week 5: St. Louis 26, Jacksonville 24 (Entry 41) |
-| Next dated event | **October 7: Blackmon reinstated from Reserve/Suspended** (Entry 36) |
+| Next roster event | **Blackmon's reinstatement from Reserve/Suspended** after his league suspension ended with Week 5 (Entry 36); date and roster treatment unverified, to be sourced |
 | Next competitive event | **October 13, Week 6 at Denver, 4:05 p.m. ET: NOT SIMULATED** |
 
 ## 2. Roster and finance
@@ -46,7 +46,7 @@
 
 ## 3. Availability
 
-Adam Thielen is out after a Week 5 upper-extremity injury (projected return October 9, before Week 6). Will Rackley has a minor injury, limited with no projected absence. Paul Posluszny is available and returned in Week 5. C.J. Wilson is out after a Week 2 trunk injury (projected return January 30, 2014); no reserve-list move has been made. Austin Pasztor remains on an independent medical hold after the August 17 simulated head/neck injury. C.J. Mosley remains medically unavailable after the August 29 simulated upper-extremity injury. Justin Blackmon's league suspension ended with Week 5. His reinstatement from Reserve/Suspended is due October 7, and Stone's game-day inactive applies for Weeks 6 and 7. Every other status requires fresh Week 6 medical communication.
+Adam Thielen is out after a Week 5 upper-extremity injury (projected return October 9, before Week 6). Will Rackley has a minor injury, limited with no projected absence. Paul Posluszny is available and returned in Week 5. C.J. Wilson is out after a Week 2 trunk injury (projected return January 30, 2014); no reserve-list move has been made. Austin Pasztor remains on an independent medical hold after the August 17 simulated head/neck injury. C.J. Mosley remains medically unavailable after the August 29 simulated upper-extremity injury. Justin Blackmon's league suspension ended with Week 5. Stone's game-day inactive applies for Weeks 6 and 7; the date and roster treatment of his reinstatement from Reserve/Suspended are unverified and must be sourced before the Week 6 transaction. Every other status requires fresh Week 6 medical communication.
 
 ## 4. Current football roles
 
@@ -68,11 +68,11 @@ Through Week 5, Jacksonville is 3-2, first in the AFC South on a three-way tie w
 
 ## 7. Immediate next step
 
-Play Week 6 at Denver only on an explicit `Run Week 6` instruction. `python scripts/build_week_inputs.py 6` freezes the slate from canon, and `python scripts/close_week.py 6 --close` closes it under kernel 2013.6. Before the build, Blackmon's October 7 reinstatement moves him from Reserve/Suspended to the active roster, filling the 53rd spot. `career/2013/roster.md` and Document 4 change accordingly, and he joins the Week 6 inactive list under Stone's ruling. Stone's inputs needed:
+Play Week 6 at Denver only on an explicit `Run Week 6` instruction. `python scripts/build_week_inputs.py 6` freezes the slate from canon, and `python scripts/close_week.py 6 --close` closes it under kernel 2013.6. Before the build, Blackmon's reinstatement is executed once its 2013 timing and roster treatment (open spot or roster exemption) are sourced; `career/2013/roster.md` and Document 4 change accordingly, and he joins the Week 6 inactive list under Stone's ruling. Stone's inputs needed:
 
 - the Week 6 plan as a structured call sheet;
 - the center;
-- seven game-day inactives including Blackmon (the Week 5 list carries forward otherwise);
+- the game-day inactives including Blackmon (seven if he fills the 53rd spot; the Week 5 list carries forward otherwise);
 - Thielen's role, since his projection clears October 9.
 
 **Denver has not been simulated.**

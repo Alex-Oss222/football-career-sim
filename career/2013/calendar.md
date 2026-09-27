@@ -9,7 +9,7 @@
 
 - Completed through: **October 6, Week 5 at St. Louis (lost 26-24)**.
 - Controlled 53 (52 active; Blackmon on Reserve/Suspended Weeks 2-5); practice squad 8; preseason record 2-2; regular-season record 3-2.
-- Next dated event: **October 7, Blackmon reinstated from Reserve/Suspended** (Entry 36); Stone's game-day inactive for Weeks 6 and 7.
+- Next roster event: **Blackmon's reinstatement from Reserve/Suspended** after the Week 5 end of his league suspension (Entry 36); its date and roster treatment are unverified and must be sourced. Stone's game-day inactive applies for Weeks 6 and 7.
 - Next competitive event: **October 13 Week 6 at Denver, 4:05 p.m.: NOT SIMULATED**.
 - Thielen out (Week 5; projected return October 9); Rackley limited (minor); C.J. Wilson out; Pasztor on independent medical hold; Mosley medically unavailable. Games run under kernel 2013.6 from Week 4 (Entry 39).
 

@@ -27,7 +27,7 @@
 ## 2. Week setup and game preparation
 
 **Opponent context:**
-- **St. Louis defense:** it came in 3-1 and had allowed 22.8 points, 332.2 yards (211.8 passing, 120.5 rushing) and a 42.2% third-down rate a game. It had 10 sacks and 3 takeaways. Its pass rush was spread across linebackers and ends: Laurinaitis and Witherspoon had three sacks each, and Long had a sack and a forced fumble.
+- **St. Louis defense:** it came in 3-1 and had allowed 22.8 points, 332.3 yards (211.8 passing, 120.5 rushing) and a 42.2% third-down rate a game. It had 10 sacks and 3 takeaways. Its pass rush was spread across linebackers and ends: Laurinaitis and Witherspoon had three sacks each, and Long had a sack and a forced fumble.
 - **St. Louis offense:** it had scored 30.8 points a game with 276 passing and 82.8 rushing yards, and converted 45.8% of third downs. It had allowed 15 sacks.
 - **Rams players:** Sam Bradford was coming off 24 of 42 for 325 yards and four touchdowns against San Francisco. Chris Givens had 121, 102, 69 and 80 receiving yards in the four games. Jared Cook was a steady middle-field target, and Daryl Richardson had a 56-yard catch in Week 4.
 
@@ -38,7 +38,7 @@
 - **Offense:** the plan expanded the pictures, not the concepts: a small 6OL package (Heavy Power, Heavy Counter away, Wing TE Delay), 12 personnel shifting to Empty without substituting, one Jet Sweep, TE Delay as a new screen, Snag back on the weekly sheet, and more HOLD sequencing. Boot Flood stayed off.
 
 **Practice / teaching emphasis:**
-- **Monday:** film showed the Indianapolis win as film: 254 yards, 3.8 a carry, the Drive sack, and Clemons's fumble, the fourth straight game with a giveaway. The seven-of-ten third downs and one sack allowed were taught too.
+- **Monday:** film of the Indianapolis win showed 254 yards, 3.8 a carry, the Drive sack, and Clemons's fumble, the fourth straight game with a giveaway. The seven-of-ten third downs and one sack allowed were taught too.
 - **Tuesday:** each offensive coach brought one St. Louis rule Jacksonville could force it to break.
 - **Wednesday:** the base offense was repped first, then the new-install period: 6OL reporting and both runs, 12 Shift Empty with no substitution, and the Jet exchange with ball security first.
 - **Thursday:** the scout defense chose its own answers to 6OL, the Empty shift and Jet.
@@ -272,7 +272,7 @@ Jacksonville pulled within two with 8:52 left: after a St. Louis punt, Shorts ca
 - Paul Posluszny: 12 tackles and a tackle for loss in his return.
 - Sen'Derrick Marks: 11 tackles.
 
-**Material game-management decisions:** None was entered by Stone. The game ran in autonomous management mode, as in Weeks 1 to 4, and that includes the punt with 1:56 left while trailing by two. Kernel 2013.6 makes no score-dependent fourth-down choice (Entry 39, not fixed). Stone owns the decision publicly.
+**Material game-management decisions:** None was entered by Stone. The game ran in autonomous management mode, as in Weeks 1 to 4, and that includes the punt with 1:56 left while trailing by two. Kernel 2013.6 makes no score-dependent fourth-down choice, a gap first recorded in Entry 41. Stone owns the decision publicly.
 
 **Injuries / availability from the game:**
 - Adam Thielen: upper extremity, out, projected return 3 days (October 9), before the Denver game.
@@ -308,12 +308,12 @@ St. Louis generated no injury.
 - Givens held to 20 yards on 8 catches.
 
 **What must be corrected:**
-- The offense after the first quarter: 204 total yards, 2.7 a carry, two sacks and a turnover on downs.
+- The offense after the first quarter: 92 total yards, 22 rushing yards on 14 carries, a sack and a turnover on downs.
 - St. Louis held the ball almost 35 minutes and scored on its first three second-half possessions, with Cook catching 102 yards.
 - The late-game punt.
 
 **Next-week carry-forward:**
-- Blackmon's league suspension ends after this game. Reinstatement from Reserve/Suspended to the active roster is due on October 7, and Stone's own game-day inactive then applies for Weeks 6 and 7. His return fills the open roster spot, so seven players must be inactive each game day.
+- Blackmon's league suspension ends after this game, and Stone's own game-day inactive then applies for Weeks 6 and 7. The date and roster treatment of his reinstatement from Reserve/Suspended (whether he fills the open spot at once or the club gets a roster exemption) are unverified and are to be sourced before the Week 6 transaction.
 - Thielen's projection clears before Denver.
 - The center and linebacker operation are Stone's Monday decisions.
 
@@ -325,7 +325,7 @@ St. Louis generated no injury.
 |---|---|---|---|---|
 | QB | QB1: Cousins; QB2: Henne; QB3: Wilson (inactive, numbers decision) | Available | Efficient scoring, low volume | 19-34, 155 yards, 3 TD, no INT; two sacks |
 | RB / FB | Jones-Drew lead; Grimes RB2; Anderson RB3; Owens FB | Available | Jones-Drew productive as a receiver | Jones-Drew 13-44 rushing, 2-52 receiving, TD |
-| WR | Shorts WR1, Thielen WR2, Clemons WR3, Brown WR4 | Thielen out (projected October 9); Blackmon reinstatement due October 7 | Shorts in the scoring areas | Shorts 6-44, 2 TD; Thielen 6-38 |
+| WR | Shorts WR1, Thielen WR2, Clemons WR3, Brown WR4 | Thielen out (projected October 9); Blackmon's suspension ended | Shorts in the scoring areas | Shorts 6-44, 2 TD; Thielen 6-38 |
 | TE | Lewis lead; Kelce TE2; Reisner in 13 personnel | Available | Delay and protection roles | Lewis 2-18; Kelce 2-8 |
 | OL | LT Monroe; LG Nwaneri; C Brewster; RG Rackley; RT Johnson; Bradfield sixth OL; Meester reserve C; Asper interior | Rackley limited (minor); Pasztor on medical hold | Protection gave up two sacks | 49 rushing yards; sacks by Langford and Hayes |
 
@@ -361,12 +361,12 @@ St. Louis generated no injury.
   - Thielen out (upper extremity, projected return October 9).
   - Rackley limited (minor).
   - C.J. Wilson remains out, Pasztor is on medical hold and Mosley is unavailable.
-- **Activations / elevations / transactions:** None this week. Blackmon's reinstatement from Reserve/Suspended is due October 7, after this checkpoint.
+- **Activations / elevations / transactions:** None this week. Blackmon's reinstatement from Reserve/Suspended follows this checkpoint; its date and roster treatment are to be sourced.
 - **Depth-chart / rotation changes:**
   - Posluszny back as a base linebacker; Smith keeps the communication lead.
   - Bradfield is the sixth offensive lineman.
   - John Parker Wilson inactive as a game-day numbers decision.
-- **Role consequences for next week:** Blackmon's activation, a seven-player inactive list, Thielen's return and the center are Stone decisions for Denver.
+- **Role consequences for next week:** Blackmon's activation (once its timing is sourced), the inactive list, Thielen's return and the center are Stone decisions for Denver.
 
 ## 8. Week closure
 
