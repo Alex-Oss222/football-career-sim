@@ -39,6 +39,24 @@ def without_code(text):
     return re.sub(r'`[^`\n]*`', '', text)
 
 
+def award_coverage_errors(receipts, awards_dir):
+    """Every closed week has its awards; every month whose weeks are all closed
+    and whose following week has closed has its monthly awards."""
+    method_path, results_path = awards_dir / 'methodology.json', awards_dir / 'results.json'
+    if not method_path.exists():
+        return []
+    method = json.loads(method_path.read_text(encoding='utf-8'))
+    results = json.loads(results_path.read_text(encoding='utf-8')) if results_path.exists() else {}
+    closed = sorted({int(r['week']) for r in receipts if str(r.get('week', '')).isdigit()})
+    errors = [f'league awards missing for week {w} (scripts/league_awards.py week {w} --close)'
+              for w in closed if f'week-{w}' not in results]
+    last = closed[-1] if closed else 0
+    for name, month in method.get('months', {}).items():
+        if max(month['weeks']) < last and f'month-{name}' not in results:
+            errors.append(f'league awards missing for {name} (scripts/league_awards.py month {name} --close)')
+    return errors
+
+
 def receipt_coverage_errors(receipts, scheduled=None):
     """One receipt per scheduled game in every regular-season week that has any.
 
@@ -190,6 +208,7 @@ def validate(root=ROOT):
                         )
 
         errors.extend(receipt_coverage_errors(receipts))
+        errors.extend(award_coverage_errors(receipts, root / 'career/2013/awards'))
 
         expected_views = render_views(2013, 'Jacksonville Jaguars', receipts)
         for name, expected in expected_views.items():

@@ -128,6 +128,7 @@ For the named week, Codex must autonomously:
 6. Preserve the full public game receipts required by the active kernel/statbook contract.
 7. Write the protagonist weekly `output.md` using the current season-output template and write the background roundup to `league_results/week_NN.md`.
 8. Generate the box score, standings and season statistics from receipts (`render_box_score.py --write`, `render_standings.py`, `render_season_stats.py`); never hand-add totals from Markdown. Then read `career/[year]/stats/calibration_audit.md`: an OUTSIDE row is investigated as an input or engine defect, never grounds to rerun or select a closed result.
+8a. Draw the week's league awards with `python scripts/league_awards.py week N --close`, and each month's awards when its league announcement date is reached (`month NAME --close`; October after Week 9's first game, and so on), then render `career/[year]/awards/`. `validate_repository.py` fails while a closed week or a finished month lacks awards.
 9. Reconcile injuries, availability, roles, transactions and other actually changed state.
 10. Close the ledger/current state/calendar atomically and validate the branch. Open the normal PR. **Do not advance the private snapshot from an unmerged branch.** If Codex can merge the PR, merge it first, update/check out the merged `main`, then advance the private snapshot to the merged Document 5 digest and rerun readiness. If Codex cannot merge, leave the private snapshot unchanged and report snapshot advancement as pending merge.
 11. Stop before Week N+1.
