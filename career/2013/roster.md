@@ -77,8 +77,8 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| Mike Brewster | C | Active 53 | No communicated restriction | Starting center (Weeks 3-5); evaluated weekly |
-| Brad Meester | C | Active 53 | No communicated restriction | Reserve center (Weeks 4-5); evaluated weekly |
+| Mike Brewster | C | Active 53 | No communicated restriction | Starting center (confirmed Week 6) |
+| Brad Meester | C | Active 53 | No communicated restriction | Reserve center |
 
 ### Defensive ends (6)
 

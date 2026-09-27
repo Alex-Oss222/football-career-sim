@@ -4,10 +4,11 @@
   python scripts/build_week_inputs.py WEEK
 
 Reads the week's Jacksonville call sheet from
-career/2013/regular_season/week_NN_*/call_sheet.json, every closed receipt
-for availability, and writes .sim_cache/week_NN_inputs.json. It then runs the
-weekly exclusivity and game-day gate with the scheduled game count. Nothing
-is drawn and no event is closed.
+career/2013/regular_season/week_NN_*/call_sheet.json and every closed receipt
+for availability, builds the package and runs the weekly exclusivity and
+game-day gate with the scheduled game count. The package is written to
+.sim_cache/week_NN_inputs.json only when the gate passes; any other exit
+leaves no package at that path. Nothing is drawn and no event is closed.
 """
 from __future__ import annotations
 
@@ -40,6 +41,9 @@ def main():
     parser.add_argument("week", type=int)
     args = parser.parse_args()
 
+    out = ROOT / ".sim_cache" / ("week_%02d_inputs.json" % args.week)
+    # Only a package that passed the gate may sit at the frozen path.
+    out.unlink(missing_ok=True)
     sheet_path = call_sheet_path(args.week)
     if sheet_path is None:
         print("WEEK_INPUTS: BLOCKED")
@@ -51,13 +55,10 @@ def main():
     receipts = [r for r in load_receipts(ROOT / "career/2013/stats/game_receipts") if int(r["week"]) < args.week]
     package = build_package(args.week, receipts, call_sheet, AVERAGE_ANCHORS)
 
-    out = ROOT / ".sim_cache" / ("week_%02d_inputs.json" % args.week)
     out.parent.mkdir(exist_ok=True)
     errors = check_inputs(package, controlled_players_from_roster(ROOT / "career/2013/roster.md"),
                           "Jacksonville Jaguars", expected_games=len(schedule(args.week)))
     if errors:
-        # Only a package that passed the gate may sit at the frozen path.
-        out.unlink(missing_ok=True)
         print("WEEK_INPUTS: BLOCKED")
         for error in errors:
             print("- " + error)

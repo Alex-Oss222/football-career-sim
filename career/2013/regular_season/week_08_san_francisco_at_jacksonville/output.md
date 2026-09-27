@@ -97,8 +97,8 @@ It was 14-3 at halftime.
 - After a San Francisco punt and a 19-yard return by Mike Brown, Montell Owens ran for 13 and Thielen caught a 19-yard Y-Cross. Scobee's 43-yard field goal made it 20-10 with 10:46 left.
 - Dawson's 34-yarder made it 20-13 with 5:45 left.
 - Aldon Smith intercepted Cousins on a throw toward Shorts at 3:27. Jeremy Mincey then sacked Kaepernick, and San Francisco punted.
-- With 2:22 left, Jacksonville ran twice from 6OL Heavy, and on the next snap Tarell Brown intercepted a throw to Thielen.
-- San Francisco got the ball with 1:51 left and moved 29 yards in eight plays. Kaepernick's last two passes, to Marlon Moore and Davis, fell incomplete.
+- Taking over with 2:30 left, Jacksonville ran twice from 6OL Heavy, and on the next snap Tarell Brown intercepted a throw to Thielen.
+- San Francisco got the ball with 2:07 left and moved 29 yards in eight plays. Kaepernick's last two passes, to Marlon Moore and Davis, fell incomplete.
 
 **The numbers.**
 - Jacksonville gained 400 yards (267 passing, 133 rushing) to San Francisco's 336.
