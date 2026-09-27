@@ -1,10 +1,10 @@
 # Jacksonville Jaguars roster
 
-**As of:** September 15, 2013, after Week 2.
+**As of:** September 22, 2013, after Week 3.
 **Canonical controlled-player count:** **53**.
 **Active roster:** **52**; Justin Blackmon is on Reserve/Suspended and does not count against the 53, leaving one open spot.
 **Practice squad:** **8**, separate from the active roster.
-**Record:** preseason 2-2; regular season 1-1 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13).
+**Record:** preseason 2-2; regular season 2-1 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13).
 
 ## 1. How to read this page
 
@@ -77,7 +77,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| Mike Brewster | C | Active 53 | No communicated restriction | — |
+| Mike Brewster | C | Active 53 | No communicated restriction | Center while Meester is out |
 | Brad Meester | C | Active 53 | Out, upper extremity (Week 2); projected return September 27 | Starting center when available |
 
 ### Defensive ends (6)
@@ -107,7 +107,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 |---|---|---|---|---|
 | Russell Allen | LB | Active 53 | No communicated restriction | — |
 | Sio Moore | LB | Active 53 | No communicated restriction | — |
-| Paul Posluszny | LB | Active 53 | No communicated restriction | — |
+| Paul Posluszny | LB | Active 53 | Out, upper extremity (Week 3); projected return October 2 | — |
 | Daryl Smith | LB | Active 53 | No communicated restriction | — |
 | Julian Stanford | LB | Active 53 | No communicated restriction | — |
 

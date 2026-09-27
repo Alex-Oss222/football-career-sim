@@ -77,6 +77,25 @@ class PackageTests(unittest.TestCase):
         self.assertNotIn("Austin Pasztor", jax["active_players"])
         self.assertNotIn("Justin Blackmon", {p["player_id"] for p in jax["roster"]})
 
+    def test_background_clubs_dress_at_most_forty_six(self):
+        for game in self.package["games"]:
+            for side in ("away", "home"):
+                if game[side] != "Jacksonville Jaguars":
+                    self.assertLessEqual(len(game[side + "_input"]["active_players"]), 46)
+
+    def test_deepest_player_is_made_inactive_first(self):
+        roster = [{"player_id": "QB%d" % i, "position": "QB", "depth": i, "available": True} for i in (1, 2, 3)]
+        roster += [{"player_id": "OL%d" % i, "position": "OL", "depth": i, "available": True} for i in range(1, 11)]
+        roster += [{"player_id": "%s%d" % (pos, i), "position": pos, "depth": i, "available": True}
+                   for pos, n in (("RB", 4), ("WR", 7), ("TE", 4), ("DL", 10), ("LB", 7), ("DB", 10))
+                   for i in range(1, n + 1)]
+        roster += [{"player_id": pos, "position": pos, "depth": 1, "available": True} for pos in ("K", "P", "LS")]
+        active = week_inputs.game_day_actives(roster)
+        self.assertEqual(len(active), 46)
+        self.assertNotIn("OL10", active)
+        self.assertNotIn("DB10", active)
+        self.assertIn("QB3", active)
+
     def test_branch_injuries_carry_into_the_next_week(self):
         game = next(g for g in self.package["games"] if "Carolina Panthers" in (g["away"], g["home"]))
         side = game["away_input"] if game["away"] == "Carolina Panthers" else game["home_input"]

@@ -1,0 +1,124 @@
+{
+ "schema_version": 1,
+ "team": "Jacksonville Jaguars",
+ "event": "2013 Regular Season Week 3, Jacksonville at Seattle",
+ "status": "EX_ANTE_CALL_SHEET_FROZEN",
+ "provenance": "Stone's Week 3 game plan, opening fifteen (section 9) plus Dagger from the section 7 menu, which names no formation for it and restricts it to SOLID protection. Boot Flood and 10 Empty are off the primary sheet (section 7). Script-jump rules (section 10) are in-game coaching guidance; the active kernel does not condition call selection on them.",
+ "offensive_call_sheet": [
+  {
+   "name": "12 Ace Right, Power R",
+   "family": "Power",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace Right"
+  },
+  {
+   "name": "12 Doubles, Stick",
+   "family": "Stick",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Doubles"
+  },
+  {
+   "name": "21 Pro Left, Counter R",
+   "family": "Counter",
+   "type": "run",
+   "personnel": "21",
+   "formation": "21 Pro Left"
+  },
+  {
+   "name": "11 Bunch Right, Return, Mesh",
+   "family": "Mesh",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Bunch Right"
+  },
+  {
+   "name": "12 Wing Right, Trade, Split L",
+   "family": "Split Zone",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Wing Right"
+  },
+  {
+   "name": "12 Trey Right, RB Slow Screen",
+   "family": "RB Slow Screen",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey Right"
+  },
+  {
+   "name": "11 Trips Right, Inside L, Access Bubble",
+   "family": "Inside + Bubble",
+   "type": "run",
+   "personnel": "11",
+   "formation": "11 Trips Right"
+  },
+  {
+   "name": "12 Doubles, Drive, Solid",
+   "family": "Drive",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Doubles",
+   "protection": "Solid"
+  },
+  {
+   "name": "13 Heavy Right, Power L",
+   "family": "Power",
+   "type": "run",
+   "personnel": "13",
+   "formation": "13 Heavy Right"
+  },
+  {
+   "name": "12 Trey Right, Y-Cross, Solid",
+   "family": "Y-Cross",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey Right",
+   "protection": "Solid"
+  },
+  {
+   "name": "20 Doubles, Drive",
+   "family": "Drive",
+   "type": "pass",
+   "personnel": "20",
+   "formation": "20 Doubles"
+  },
+  {
+   "name": "12 Doubles, Spacing",
+   "family": "Spacing",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Doubles"
+  },
+  {
+   "name": "12 Ace Left, Outside L",
+   "family": "Outside Zone",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace Left"
+  },
+  {
+   "name": "11 Doubles, Vert, Alert X, Max",
+   "family": "Four Verticals",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles",
+   "protection": "Max"
+  },
+  {
+   "name": "13 Heavy Left, Post-Cross, Max",
+   "family": "Post-Cross",
+   "type": "pass",
+   "personnel": "13",
+   "formation": "13 Heavy Left",
+   "protection": "Max"
+  },
+  {
+   "name": "Dagger, Solid",
+   "family": "Dagger",
+   "type": "pass",
+   "protection": "Solid"
+  }
+ ]
+}
