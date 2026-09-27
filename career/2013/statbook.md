@@ -20,7 +20,7 @@ Each weekly `output.md` carries its game's box score, generated from the same re
 
 ## Current coverage
 
-Through Week 1: sixteen of sixteen game receipts (generation 3, kernel 2013.4); coverage complete and every band-audit row WITHIN the 2012 bands.
+Through Week 2: thirty-two of thirty-two game receipts (kernel 2013.4); coverage complete and every band-audit row WITHIN the 2012 bands.
 
 ## Rebuild
 

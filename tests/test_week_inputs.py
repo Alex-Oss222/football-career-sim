@@ -61,8 +61,13 @@ class PackageTests(unittest.TestCase):
     def test_jacksonville_dresses_its_game_day_unit(self):
         game = next(g for g in self.package["games"] if g["away"] == "Jacksonville Jaguars")
         jax = game["away_input"]
-        self.assertEqual(len(jax["active_players"]), 46)
+        chart = json.loads((ROOT / "career/2013/depth_chart.json").read_text())
+        inactives = set(chart["game_day_inactives"]["players"])
+        available = {p["player_id"] for p in jax["roster"] if p["available"]}
+        self.assertEqual(set(jax["active_players"]), available - inactives)
+        self.assertLessEqual(len(jax["active_players"]), 46)
         self.assertNotIn("Austin Pasztor", jax["active_players"])
+        self.assertNotIn("Justin Blackmon", {p["player_id"] for p in jax["roster"]})
 
     def test_branch_injuries_carry_into_the_next_week(self):
         game = next(g for g in self.package["games"] if "Carolina Panthers" in (g["away"], g["home"]))

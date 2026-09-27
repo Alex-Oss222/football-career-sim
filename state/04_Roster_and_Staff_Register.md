@@ -3,9 +3,9 @@
 ## Document status
 
 - Function: Canonical register for current Jacksonville player control, staff operating authority, roster legality, contract/cap reconciliation, availability boundaries and football-role state.
-- Current status: **RECONCILED THROUGH WEEK 1 (ENTRY 35)**.
-- Effective through: **September 8, 2013, after Week 1 vs Kansas City**.
-- Progression authority: `career/2013/ledger.md`, Entry 35 (Week 1 closed; no roster, control, role or availability change).
+- Current status: **RECONCILED THROUGH WEEK 2 (ENTRY 37)**.
+- Effective through: **September 15, 2013, after Week 2 at Oakland**.
+- Progression authority: `career/2013/ledger.md`, Entries 36-37 (Blackmon to Reserve/Suspended; Week 2 closed with Meester and C.J. Wilson injured).
 - Detailed readable roster: `career/2013/roster.md`.
 - Current cap worksheet: `career/2013/offseason/current_cap_worksheet.md`.
 - Current calendar: `career/2013/calendar.md`.
@@ -21,17 +21,17 @@
 | Competition | NFL |
 | Season | 2013 |
 | Divergence point | January 15, 2013 — Alex Stone accepts Jacksonville head-coach offer |
-| Season phase | Regular season; Week 1 closed, Week 2 preparation |
-| Owned content effective | September 8, 2013 |
-| Document 4 register version | `JAX-2013-SEP08-WEEK1-REGISTER-12` |
-| Supersedes | `JAX-2013-SEP04-WEEK1-VOID-REGISTER-11` |
-| Last content-changing checkpoint | `Canonical update - September 8, 2013 - Week 1 vs Kansas City closed` |
-| Latest Document 6 event | Entry 35: Week 1 closed, generation 3 |
+| Season phase | Regular season; Week 2 closed, Week 3 preparation |
+| Owned content effective | September 15, 2013 |
+| Document 4 register version | `JAX-2013-SEP15-WEEK2-REGISTER-13` |
+| Supersedes | `JAX-2013-SEP08-WEEK1-REGISTER-12` |
+| Last content-changing checkpoint | `Canonical update - September 15, 2013 - Week 2 at Oakland closed` |
+| Latest Document 6 event | Entry 37: Week 2 closed |
 | Current controlled players | **53** |
 | Current practice squad | **8; separate from active 53** |
 | Current regular-season planning room | **~$6.2M-$6.6M before weekly practice-squad charges** |
-| Next scheduled football event | September 15 Week 2 at Oakland: NOT SIMULATED |
-| Unresolved matter before participation | Fresh Week 2 medical communication; Week 1 generated no Jacksonville injury |
+| Next scheduled football event | September 22 Week 3 at Seattle: NOT SIMULATED |
+| Unresolved matter before participation | Meester and C.J. Wilson out; replacement center and Week 3 inactives are open Stone decisions |
 
 ## Canon and evidence conventions
 
@@ -108,10 +108,11 @@ These rules apply to every real player, staff member, executive, candidate, oppo
 
 | Primary-status total | Current value | Derivation |
 |---|---:|---|
-| Players on active roster | **53** | August 31 final reduction |
+| Players on active roster | **52** | Blackmon to Reserve/Suspended, September 9 (Entry 36) |
+| Reserve/Suspended | **1** | Justin Blackmon, Weeks 2-5 |
 | Practice-squad players | **8** | Separate from active 53 |
 
-Week 1 inactives were Pasztor, Mosley, Asper, Brewster, Davis, Edwards and Rutland; Week 2 designations are not yet set.
+Week 2 inactives were Pasztor, Mosley, Asper, Brewster, Edwards and Rutland (Davis active); Week 3 designations are not yet set.
 
 ### Financial, contract and eligibility reconciliation
 
@@ -142,16 +143,16 @@ Staff remains unchanged from the closed late-January hiring phase. `career/2013/
 
 ### Reconciliation result
 
-- Register status: **RECONCILED THROUGH WEEK 1 (ENTRY 35)**.
-- Roster/control: **53 active players; eight-player practice squad separate**.
+- Register status: **RECONCILED THROUGH WEEK 2 (ENTRY 37)**.
+- Roster/control: **53 controlled (52 active, Blackmon on Reserve/Suspended); eight-player practice squad separate**.
 - Cap: regular-season accounting; approximately **$6.2M-$6.6M** before weekly practice-squad charges.
-- Medical: Pasztor on independent medical hold; Mosley medically unavailable; Week 1 generated no Jacksonville injury; fresh Week 2 communication required.
-- Football: regular-season roles unchanged after Week 1.
-- Next event: September 15 Week 2 at Oakland; **NOT SIMULATED**.
+- Medical: Meester out (projected return September 27); C.J. Wilson out (projected return January 30, 2014); Pasztor on independent medical hold; Mosley medically unavailable.
+- Football: Shorts WR1, Thielen WR2, Clemons WR3, Brown WR4 while Blackmon is unavailable; center open for Week 3.
+- Next event: September 22 Week 3 at Seattle; **NOT SIMULATED**.
 
 ## Jacksonville current transaction reconciliation
 
-**Current progression source:** [Season ledger, Entry 35](../career/2013/ledger.md#entry-35-week-1-closed-generation-3), checkpoint `Canonical update - September 8, 2013 - Week 1 vs Kansas City closed`; roster content unchanged since Entry 29.
+**Current progression source:** [Season ledger, Entry 37](../career/2013/ledger.md#entry-37-week-2-closed), checkpoint `Canonical update - September 15, 2013 - Week 2 at Oakland closed`; Blackmon to Reserve/Suspended by Entry 36.
 **Readable roster:** [career/2013/roster.md](../career/2013/roster.md).
 **Current cap worksheet:** [career/2013/offseason/current_cap_worksheet.md](../career/2013/offseason/current_cap_worksheet.md).
 **Current calendar:** [career/2013/calendar.md](../career/2013/calendar.md).
@@ -185,7 +186,7 @@ The old 75-person working count and the old unresolved inherited-control bucket 
 | Jonathan Grimes | JAX-JONATHANGRIMES | RB | Offseason roster under contract/control | Existing contract/control; not a March 12 free agent | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 29 / training-camp output |
 | Maurice Jones-Drew | JAX-MAURICEJONESDREW | RB | Offseason roster under contract/control | Existing 2013 contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 29 / training-camp output |
 | Montell Owens | JAX-MONTELLOWENS | FB | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 29 / training-camp output |
-| Justin Blackmon | JAX-JUSTINBLACKMON | WR | Offseason roster under contract/control | Existing rookie contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 29 / training-camp output |
+| Justin Blackmon | JAX-JUSTINBLACKMON | WR | Reserve/Suspended (Weeks 2-5) | Existing rookie contract; game checks forfeited Weeks 2-5, amount unresolved | League suspension Weeks 2-5; Stone's game-day inactive Weeks 6-7; eligible Week 8 | Entry 36 |
 | Mike Brown | JAX-MIKEBROWN | WR | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 29 / training-camp output |
 | Toney Clemons | JAX-TONEYCLEMONS | WR | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 29 / training-camp output |
 | Cecil Shorts | JAX-CECILSHORTS | WR | Offseason roster under contract/control | Existing rookie contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 29 / training-camp output |
@@ -201,13 +202,13 @@ The old 75-person working count and the old unresolved inherited-control bucket 
 | Austin Pasztor | JAX-AUSTINPASZTOR | G | Offseason roster under contract/control | Existing contract/control | Independent medical hold after the August 17 simulated head/neck injury | Entry 29 / training-camp output |
 | Will Rackley | JAX-WILLRACKLEY | G | Offseason roster under contract/control | Existing rookie contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 29 / training-camp output |
 | Mike Brewster | JAX-MIKEBREWSTER | C | Offseason roster under contract/control | Existing contract/control | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 29 / training-camp output |
-| Brad Meester | JAX-BRADMEESTER | C | Offseason roster under contract/control | Branch re-signing; one year, $1.50M | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 29 / training-camp output |
+| Brad Meester | JAX-BRADMEESTER | C | Active 53 | Branch re-signing; one year, $1.50M | Out, upper extremity (Week 2); projected return September 27 | Entry 37 |
 | Jason Babin | JAX-JASONBABIN | DE | Offseason roster under contract/control | Existing 2013 contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 29 / training-camp output |
 | Andre Branch | JAX-ANDREBRANCH | DE | Offseason roster under contract/control | Existing rookie contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 29 / training-camp output |
 | Ryan Davis | JAX-RYANDAVIS | DE | Offseason roster under contract/control | Dec. 30, 2012 reserve/future contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 29 / training-camp output |
 | Lavar Edwards | JAX-LAVAREDWARDS | DE | Offseason roster under contract/control | #135; rookie contract signed May 2 | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 29 / training-camp output |
 | Jeremy Mincey | JAX-JEREMYMINCEY | DE | Offseason roster under contract/control | Existing 2013 contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 29 / training-camp output |
-| C.J. Wilson | JAX-CJWILSON | DE | Offseason roster under contract/control | Acquired from Green Bay for Blaine Gabbert | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 29 / training-camp output |
+| C.J. Wilson | JAX-CJWILSON | DE | Active 53 | Acquired from Green Bay for Blaine Gabbert | Out, trunk (Week 2); projected return January 30, 2014; no reserve move made | Entry 37 |
 | Tyson Alualu | JAX-TYSONALUALU | DT | Offseason roster under contract/control | Existing 2013 contract | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 29 / training-camp output |
 | Sen'Derrick Marks | JAX-SENDERRICKMARKS | DT | Offseason roster under contract/control | Branch signing; one year, $1.50M | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 29 / training-camp output |
 | Roy Miller | JAX-ROYMILLER | DT | Offseason roster under contract/control | Branch signing; two years, $5.00M | Available for assigned Aug. 8 work; fresh game-day medical communication required | Entry 29 / training-camp output |
@@ -668,12 +669,12 @@ This table is generated from Document 6 and is only a navigation aid. Active unr
 
 ## End-of-update control block
 
-- Effective through: September 8, 2013, after Week 1.
-- Document 4 register version: `JAX-2013-SEP08-WEEK1-REGISTER-12`.
-- Last content-changing checkpoint: `Canonical update - September 8, 2013 - Week 1 vs Kansas City closed`.
-- Latest source event: season-ledger Entry 35.
-- Current active-player count: **53**; practice squad **8**, separate from the active roster.
+- Effective through: September 15, 2013, after Week 2.
+- Document 4 register version: `JAX-2013-SEP15-WEEK2-REGISTER-13`.
+- Last content-changing checkpoint: `Canonical update - September 15, 2013 - Week 2 at Oakland closed`.
+- Latest source event: season-ledger Entry 37.
+- Current controlled count: **53** (52 active, 1 Reserve/Suspended); practice squad **8**, separate from the active roster.
 - Cap: regular-season accounting, **~$6.2M-$6.6M before weekly practice-squad charges**.
 - Depth/packages: Cousins QB1; regular-season roles as in `career/2013/roster.md`; Week 1 menu retained.
-- Medical: Pasztor on independent medical hold; Mosley medically unavailable; no Week 1 injury.
-- Next event: September 15 Week 2 at Oakland; **NOT SIMULATED**.
+- Medical: Meester and C.J. Wilson out (Week 2 injuries); Pasztor on independent medical hold; Mosley medically unavailable.
+- Next event: September 22 Week 3 at Seattle; **NOT SIMULATED**.

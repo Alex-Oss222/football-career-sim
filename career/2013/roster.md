@@ -1,13 +1,14 @@
 # Jacksonville Jaguars roster
 
-**As of:** September 8, 2013, after Week 1.
+**As of:** September 15, 2013, after Week 2.
 **Canonical controlled-player count:** **53**.
+**Active roster:** **52**; Justin Blackmon is on Reserve/Suspended and does not count against the 53, leaving one open spot.
 **Practice squad:** **8**, separate from the active roster.
-**Record:** preseason 2-2; regular season 1-0 (Week 1: Jacksonville 31, Kansas City 13). Week 1 produced no injury, role change or transaction.
+**Record:** preseason 2-2; regular season 1-1 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13).
 
 ## 1. How to read this page
 
-Players are grouped by position. **Pos** is the roster position in Document 4. **Availability** is the club's current medical communication; "No communicated restriction" means none has been communicated, and game-week status still requires fresh communication before each game. **Role** lists only assignments already decided in canon (ledger and Document 4); a dash means no assignment has been set, not a demotion. The depth chart below those roles is set by staff decisions and is not implied by the order of this page.
+Players are grouped by position. **Pos** is the roster position in Document 4. **Status** is Active 53 or a reserve list; a player on Reserve/Suspended stays under Jacksonville control but does not count against the 53. **Availability** is the club's current medical communication; "No communicated restriction" means none has been communicated, and game-week status still requires fresh communication before each game. **Role** lists only assignments already decided in canon (ledger and Document 4); a dash means no assignment has been set, not a demotion. The depth chart below those roles is set by staff decisions and is not implied by the order of this page.
 
 ## 2. How the roster was formed
 
@@ -27,9 +28,9 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| C.J. Anderson | RB | Active 53 | No communicated restriction | — |
-| Jonathan Grimes | RB | Active 53 | No communicated restriction | — |
-| Maurice Jones-Drew | RB | Active 53 | No communicated restriction | — |
+| C.J. Anderson | RB | Active 53 | No communicated restriction | RB3 |
+| Jonathan Grimes | RB | Active 53 | No communicated restriction | RB2 |
+| Maurice Jones-Drew | RB | Active 53 | No communicated restriction | Lead back |
 
 ### Fullbacks (1)
 
@@ -41,11 +42,11 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| Justin Blackmon | WR | Active 53 | No communicated restriction | — |
-| Mike Brown | WR | Active 53 | No communicated restriction | — |
-| Toney Clemons | WR | Active 53 | No communicated restriction | — |
-| Cecil Shorts | WR | Active 53 | No communicated restriction | — |
-| Adam Thielen | WR | Active 53 | No communicated restriction | WR3 |
+| Justin Blackmon | WR | Reserve/Suspended | League suspension, Weeks 2-5; Stone's game-day inactive Weeks 6-7; eligible Week 8 | — |
+| Mike Brown | WR | Active 53 | No communicated restriction | WR4 |
+| Toney Clemons | WR | Active 53 | No communicated restriction | WR3 |
+| Cecil Shorts | WR | Active 53 | No communicated restriction | WR1 |
+| Adam Thielen | WR | Active 53 | No communicated restriction | WR2 |
 
 ### Tight ends (3)
 
@@ -77,7 +78,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
 | Mike Brewster | C | Active 53 | No communicated restriction | — |
-| Brad Meester | C | Active 53 | No communicated restriction | — |
+| Brad Meester | C | Active 53 | Out, upper extremity (Week 2); projected return September 27 | Starting center when available |
 
 ### Defensive ends (6)
 
@@ -88,7 +89,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Ryan Davis | DE | Active 53 | No communicated restriction | — |
 | Lavar Edwards | DE | Active 53 | No communicated restriction | — |
 | Jeremy Mincey | DE | Active 53 | No communicated restriction | — |
-| C.J. Wilson | DE | Active 53 | No communicated restriction | — |
+| C.J. Wilson | DE | Active 53 | Out, trunk (Week 2); projected return January 30, 2014 | — |
 
 ### Defensive tackles (5)
 

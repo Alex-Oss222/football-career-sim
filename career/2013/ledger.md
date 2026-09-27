@@ -744,3 +744,42 @@ Game-level efficiency (completion rate, yards per carry, sack rate) was close to
 **Next competitive event:** September 15 Week 2 at Oakland, 4:25 p.m. ET. **Not simulated.**
 
 **Commit closed - Canonical update - September 8, 2013 - Week 1 vs Kansas City closed - canonical through September 8, after Week 1**
+
+## Entry 36: Blackmon suspension ruling
+
+**Effective canonical state:** September 9, 2013, Week 2 preparation
+**Recorded:** September 27, 2026
+**Checkpoint:** `Canonical update - September 9, 2013 - Blackmon to Reserve/Suspended`
+**Preceding global package checkpoint:** `Canonical update - September 8, 2013 - Week 1 vs Kansas City closed`
+
+**User branch ruling.** The league's four-game substance-abuse suspension of Justin Blackmon takes effect after Jacksonville's completed Week 1. He is on Reserve/Suspended for Weeks 2-5, does not count against the 53 and does not practice; he may attend meetings, study film, use the facility and receive treatment as the league's rules allow. Stone separately sets him game-day inactive for Weeks 6 and 7 while he practices on the active roster; that is Stone's availability decision, not a second suspension. He is eligible for a normal role in Week 8. Public statement: Blackmon is unavailable, and Jacksonville will announce any change in his playing status.
+
+**Roster and money.** Active roster 52 with one open spot; Caldwell has not filled it. Blackmon forfeits his base-salary game checks for Weeks 2-5; the forfeited amount and its cap credit are unresolved (`offseason/current_cap_worksheet.md`).
+
+**Roles.** Shorts WR1, Thielen WR2, Clemons WR3, Brown WR4 (`depth_chart.json`, `roster.md`).
+
+**Commit closed - Canonical update - September 9, 2013 - Blackmon to Reserve/Suspended - canonical through September 9, Week 2 preparation**
+
+## Entry 37: Week 2 closed
+
+**Effective canonical state:** September 15, 2013, after Week 2
+**Recorded:** September 27, 2026
+**Checkpoint:** `Canonical update - September 15, 2013 - Week 2 at Oakland closed`
+**Preceding global package checkpoint:** `Canonical update - September 9, 2013 - Blackmon to Reserve/Suspended`
+
+**Result.** Oakland 17, Jacksonville 13 at O.co Coliseum. Jacksonville is 1-1.
+
+**Batch.** All sixteen Week 2 games closed once each under kernel 2013.4 through `runtime.game_runner.run_game` and the private Engine State service, from the package frozen by `scripts/build_week_inputs.py 2` after the sixteen-game exclusivity and game-day gate passed. The events were closed by an earlier pass of this task that was interrupted before the public record was written; before publication the inputs were rebuilt byte for byte from canon plus Entry 36, and all sixteen identical packets were resubmitted to the private service, which returned the same event references and reproduced every result exactly. No event was drawn twice.
+
+**Inputs.** Background clubs carried forward from the Week 1 depth-chart library with Week 1 branch injuries and pre-existing returns applied. Jacksonville used Stone's Week 2 plan (opening fifteen as the structured sheet; 10 Empty off the sheet, Spacing carried from 12 Doubles), the Entry 36 receiver order and inactives Pasztor, Mosley, Asper, Brewster, Edwards and Rutland, with Ryan Davis active. Every club carried the Average low-confidence unit anchor.
+
+**Statistics and standings.** A full Jacksonville receipt and fifteen compact receipts are preserved; the box score, standings and statbook were generated from them. Every band-audit row is WITHIN. Jacksonville is fourth in the AFC South and eleventh in the AFC.
+
+**Availability.** Brad Meester is out (upper extremity, projected return September 27). C.J. Wilson is out (trunk, projected return January 30, 2014); any reserve-list move is a Caldwell and medical decision and has not been made. Pasztor remains on medical hold and Mosley unavailable. Background injuries are listed in `league_results/week_02.md`.
+
+**Engine findings (investigated, not grounds to rerun).** The same snap-ledger drive-detail defects recur: snaps after the final-possession fumble and one Oakland possession spanning halftime. Score and statistics are unaffected; the result stands.
+
+**Primary records:** `regular_season/week_02_jacksonville_at_oakland/output.md` and `call_sheet.json`; `league_results/week_02.md`; `stats/game_receipts/week_02_*.json`; `standings.md`.
+**Next competitive event:** September 22 Week 3 at Seattle, 4:25 p.m. ET. **Not simulated.**
+
+**Commit closed - Canonical update - September 15, 2013 - Week 2 at Oakland closed - canonical through September 15, after Week 2**

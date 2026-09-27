@@ -58,8 +58,12 @@ CATEGORIES = (
 
 
 def load_receipt(event_id, directory=RECEIPTS):
-    path = Path(directory) / (event_id + ".json")
-    return json.loads(path.read_text(encoding="utf-8"))
+    """The receipt whose event_id matches, whatever its file name."""
+    for path in sorted(Path(directory).glob("*.json")):
+        receipt = json.loads(path.read_text(encoding="utf-8"))
+        if receipt.get("event_id") == event_id:
+            return receipt
+    raise FileNotFoundError("no receipt for event %s" % event_id)
 
 
 def team_order(receipt, lead_team):
