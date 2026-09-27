@@ -23,7 +23,7 @@ Dates, times and venues are historical schedule facts from `library/2013_jackson
 | 5 | Sun. Oct. 6 | 1:00 p.m. ET | Jacksonville at St. Louis Rams | Away | Closed: L 24-26 (Entry 41) | [week_05_jacksonville_at_st_louis/output.md](week_05_jacksonville_at_st_louis/output.md) |
 | 6 | Sun. Oct. 13 | 4:05 p.m. ET | Jacksonville at Denver Broncos | Away | Closed: W 26-10 (Entry 43) | [week_06_jacksonville_at_denver/output.md](week_06_jacksonville_at_denver/output.md) |
 | 7 | Sun. Oct. 20 | 1:00 p.m. ET | San Diego Chargers at Jacksonville | Home | Closed: W 30-24 (Entry 44) | [week_07_san_diego_at_jacksonville/output.md](week_07_san_diego_at_jacksonville/output.md) |
-| 8 | Sun. Oct. 27 | 1:00 p.m. ET (5:00 p.m. UK local) | San Francisco 49ers at Jacksonville | Home | Not started | [week_08_san_francisco_at_jacksonville/output.md](week_08_san_francisco_at_jacksonville/output.md) |
+| 8 | Sun. Oct. 27 | 1:00 p.m. ET (5:00 p.m. UK local) | San Francisco 49ers at Jacksonville | Home | Closed: W 20-13 (Entry 45) | [week_08_san_francisco_at_jacksonville/output.md](week_08_san_francisco_at_jacksonville/output.md) |
 | 9 | Sun. Nov. 3 | - | **BYE** | - | Not started | [week_09_bye/output.md](week_09_bye/output.md) |
 | 10 | Sun. Nov. 10 | 1:00 p.m. ET | Jacksonville at Tennessee Titans | Away | Not started | [week_10_jacksonville_at_tennessee/output.md](week_10_jacksonville_at_tennessee/output.md) |
 | 11 | Sun. Nov. 17 | 1:00 p.m. ET | Arizona Cardinals at Jacksonville | Home | Not started | [week_11_arizona_at_jacksonville/output.md](week_11_arizona_at_jacksonville/output.md) |

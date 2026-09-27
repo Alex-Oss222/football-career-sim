@@ -997,3 +997,82 @@ Kernel 2013.7 adds field position, real per-drive first-down and third-down coun
 **Next competitive event:** October 27 Week 8 vs San Francisco at Wembley Stadium, London, 1 p.m. ET (Jacksonville designated home). **Not simulated.** Next deadline: trade deadline, October 29, 4 p.m. ET.
 
 **Commit closed - Canonical update - October 20, 2013 - Week 7 vs San Diego closed - canonical through October 20, after Week 7**
+
+## Entry 45: Week 8 closed
+
+**Effective canonical state:** October 27, 2013, after Week 8
+**Recorded:** September 27, 2026
+**Checkpoint:** `Canonical update - October 27, 2013 - Week 8 vs San Francisco closed`
+**Preceding global package checkpoint:** `Canonical update - October 20, 2013 - Week 7 vs San Diego closed`
+
+**Result.** Jacksonville 20, San Francisco 13 at Wembley Stadium, London, with Jacksonville the designated home team. Jacksonville is 6-2, first in the AFC South (5-2 Tennessee had a bye) and first in the AFC, ahead of the 6-2 Jets on conference record.
+
+**Batch.** All thirteen Week 8 games closed once each under kernel 2013.6 through `runtime.game_runner.run_game` and the private Engine State service. They closed from the package frozen by `scripts/build_week_inputs.py 8` (sha256 `6680c723...`) after the thirteen-game gate passed. Baltimore, Chicago, Houston, Indianapolis, San Diego and Tennessee had byes. No event was drawn twice. The Jacksonville game was drawn with venue `neutral`. Kernel 2013.7 was built but did not pass its acceptance and is not deployed.
+
+**Inputs.**
+- **Call sheet:** Stone's runner-ready fifteen-call sheet, frozen verbatim and committed before the draw. Every concept is in the active 2013 offensive book: Inside Zone with the ACCESS Smoke tag, Slant-Flat, Y-Cross, Mills with MAX, Wham, Whip/Pivot, Split Leak with TURNBACK, Sprint Flood, Spacing and 6OL Heavy.
+- **Blackmon dressed** as WR3 and the outside Z receiver, with no target quota. The receiver order became Shorts, Thielen (WR2/H), Blackmon, Clemons, Brown.
+- **Inactives:** Pasztor, Mosley, C.J. Wilson, Edwards, Pendleton, Rutland and John Parker Wilson.
+- **Background clubs** dressed up to 46 players from depth order (the Jets 42, from a 44-player sourced unit less two injuries). Every club carried the Average low-confidence unit anchor.
+
+**Gate hardening (before the draw).** A readiness audit found two gaps:
+- `build_week_inputs.py` wrote the package before running the gate, so a blocked build could leave a failing package at the frozen path. It now writes only after the gate passes.
+- `close_week.py` drew whatever package was on disk. It now re-runs the weekly gate before any draw.
+
+A test that hard-coded Blackmon as inactive was generalised. No kernel, packet or result logic changed.
+
+**Statistics and standings.** A full Jacksonville receipt and twelve compact receipts are preserved (120 of 120 through Week 8). The box score, standings and statbook were generated from them. Every graded band-audit row is WITHIN, including field-goal accuracy under 30 yards (0.917), and every ledger-coherence count is zero.
+
+**Availability.**
+- **Jacksonville:** no injury was generated.
+- **San Francisco:** Colin Kaepernick (upper extremity, out, projected one day) and B.J. Daniels (trunk, limited).
+- **Background clubs:** injuries are listed in `league_results/week_08.md`. From this week the roundup states the rule as the engine applies it: a background player returns on his projected date, and the staged concussion-protocol clearance is not modelled as a separate event. Earlier roundups said return required independent sign-off whatever the projection, which the engine did not do.
+
+**Open reconciliation: Pasztor and Mosley.** Their preseason injuries (Entries 22 and 25) were logged with class and restriction only. No preseason receipt or projected return was preserved, so their holds cannot clear on a date, while every other club's generated injuries do. That is a protagonist-blind gap (Document 1 section 9.1), and no clearance or date is invented here. The fix is to recover the original injury records through the Document 7 section 3.4 correction path, or to adopt a club-blind rule. Both were Stone's game-day inactives this week, so the draw is unaffected.
+
+**Engine findings (investigated, not grounds to rerun).**
+- **Field position.** Thielen's 20-yard touchdown came two snaps after an unreturned San Francisco punt that ended a 3-yard drive from a touchback.
+- **Downs.** Jacksonville's 14-play drive is recorded as a turnover on downs, but its last snap was an 18-yard completion.
+- **Call labels.** "Access Blackmon Smoke" was attached to nine running-back and fullback carries, and Blackmon never touched the ball on it. The Mills "Blackmon Post Alert" label went to a sack and to throws to Lewis, Jones-Drew and Thielen. Cousins's runs carried running-back labels.
+- **Neutral site.** Kernel 2013.6 applies its small home term to the designated home team regardless of venue. So Jacksonville received it at Wembley, as Minnesota did in the Week 4 Wembley game. The public receipt does not record the venue.
+
+Under the standing rule these are fixed going forward, and every result stands.
+
+**Kernel 2013.7 status.** Kernel 2013.7 is built and passes its structural, coherence, defect, label, isolation and determinism checks. 54 of its 57 graded rows are WITHIN. Three drive-model rows read OUTSIDE (FGM per team game, drive share ending on the clock, clock-expired drives), traced to its first-half end-of-half model. It is not committed to main or deployed; adoption awaits the user's decision.
+
+**Primary records:** `regular_season/week_08_san_francisco_at_jacksonville/output.md` and `call_sheet.json`; `league_results/week_08.md`; `stats/game_receipts/week_08_*.json`; `standings.md`; `depth_chart.json`.
+**Next:** trade deadline Tuesday, October 29, 4 p.m. ET (no proposal open); Week 9 bye; November 10 Week 10 at Tennessee, 1 p.m. ET. **Not simulated.**
+
+**Commit closed - Canonical update - October 27, 2013 - Week 8 vs San Francisco closed - canonical through October 27, after Week 8**
+
+## Entry 46: Pasztor and Mosley injury projections recovered
+
+**Effective canonical state:** October 27, 2013, after Week 8
+**Recorded:** September 27, 2026
+**Checkpoint:** `Canonical correction - October 27, 2013 - Pasztor and Mosley injury projections recovered`
+**Preceding global package checkpoint:** `Canonical update - October 27, 2013 - Week 8 vs San Francisco closed`
+
+**Defect.** Austin Pasztor's August 17 head/neck injury (Entry 22) and C.J. Mosley's August 29 upper-extremity injury (Entry 25) were generated with a projected return, as every injury is (`runtime/injuries.py`). Only the class and restriction were recorded, though, and no preseason receipt was kept. Their holds therefore could never clear on a date, while every other club's generated injuries clear on their projection. That is a protagonist-blind gap (Document 1 section 9.1), recorded as open in Entry 45.
+
+**Exact replay not possible.** The Document 7 section 3.4 correction path needs the original packet rebuilt to its committed digest. The preseason TeamInputs were built transiently and never committed; commit `4cf2ad7` holds only prose, and no builder or input file exists in the history. So no packet can be rebuilt, and no replay was sent.
+
+**Audited redraw (user's choice, September 27, 2026).**
+- **What was drawn.** Each missing projection was drawn once from the model every club uses. The draw was conditioned only on the class and restriction recorded when the injury was generated. A head/neck hold constrains nothing, since every severity yields a hold. An upper-extremity "out" restriction means at least one day. Later availability records were not used as evidence, because they were written without the projection.
+- **Pre-registration.** The procedure (`scripts/recover_injury_projection.py`) and both packets were committed and pushed before the draw: `career/2013/migrations/injury_projection_recovery.json`, with procedure `injury-projection-recovery-v1`, the private snapshot and the model digest.
+- **The draw.** The private service committed each packet digest and supplied the entropy, as for a game. A second submission of each packet returned the same reference and the same result.
+
+**Results.**
+
+| Player | Injury | Severity | Return days | Projected return |
+|---|---|---|--:|---|
+| Austin Pasztor | Head/neck, independent medical hold (August 17) | Minor | 2 | August 19, 2013 |
+| C.J. Mosley | Upper extremity, out (August 29) | Minor | 1 | August 30, 2013 |
+
+**Application.** On the rule applied to every club, both would have returned before Week 1, so both are available from this checkpoint. They were held out of Weeks 1-8 by the recording defect. Every result stands, and no game is rerun.
+
+The Week 8 inactive list, which names both, carries forward for Week 10 unless Stone changes it. Their depth-chart places are the preseason ones, and their roles are Stone's to set. No roster count, contract or cap figure changes.
+
+**Primary records:** `migrations/injury_projection_recovery.json`; `roster.md`; Documents 4 and 5.
+**Next:** trade deadline Tuesday, October 29, 4 p.m. ET; Week 9 bye; November 10 Week 10 at Tennessee. **Not simulated.**
+
+**Commit closed - Canonical correction - October 27, 2013 - Pasztor and Mosley injury projections recovered - canonical through October 27, after Week 8**

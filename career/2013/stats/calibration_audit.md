@@ -1,7 +1,7 @@
 # 2013 statistical band audit
 
-**Version:** `2013-W07-BAND-AUDIT`
-**Through:** Week 7.
+**Version:** `2013-W08-BAND-AUDIT`
+**Through:** Week 8.
 
 League-wide receipts compared with the sourced 2012 shapes in `library/data/2012_nfl_aggregate_baseline.json`, `library/data/2012_nfl_position_usage_baseline.json` and `library/data/2012_nfl_drive_model.json`. This is a defect detector for engine code and TeamInputs. An OUTSIDE row is investigated; it never reruns, selects or edits a closed game. Receipts are split into cohorts by kernel version; grading starts at 16 team-games per cohort.
 
@@ -37,30 +37,30 @@ Drive-model rows and ledger coherence: not measurable for this cohort (legacy re
 
 ## Kernel 2013.6 cohort (Week 4 onward)
 
-**Team-games audited:** 118.
+**Team-games audited:** 144.
 
 | Metric | Observed | 2012 band centre | Tolerance | Status |
 |---|---:|---:|---:|---|
 | QB1 share of team pass attempts | 1.000 | 0.978 | ±0.050 | WITHIN |
-| FB share of carries | 0.013 | 0.021 | ±0.050 | WITHIN |
-| QB share of carries | 0.083 | 0.090 | ±0.050 | WITHIN |
-| RB share of carries | 0.883 | 0.867 | ±0.050 | WITHIN |
+| FB share of carries | 0.016 | 0.021 | ±0.050 | WITHIN |
+| QB share of carries | 0.086 | 0.090 | ±0.050 | WITHIN |
+| RB share of carries | 0.878 | 0.867 | ±0.050 | WITHIN |
 | TE share of carries | 0.000 | 0.000 | ±0.050 | WITHIN |
 | WR share of carries | 0.020 | 0.019 | ±0.050 | WITHIN |
-| FB share of targets | 0.017 | 0.026 | ±0.050 | WITHIN |
+| FB share of targets | 0.016 | 0.026 | ±0.050 | WITHIN |
 | RB share of targets | 0.163 | 0.155 | ±0.050 | WITHIN |
-| TE share of targets | 0.219 | 0.215 | ±0.050 | WITHIN |
-| WR share of targets | 0.602 | 0.602 | ±0.050 | WITHIN |
-| DB share of tackle credits | 0.376 | 0.401 | ±0.050 | WITHIN |
+| TE share of targets | 0.217 | 0.215 | ±0.050 | WITHIN |
+| WR share of targets | 0.604 | 0.602 | ±0.050 | WITHIN |
+| DB share of tackle credits | 0.377 | 0.401 | ±0.050 | WITHIN |
 | DL share of tackle credits | 0.260 | 0.226 | ±0.050 | WITHIN |
-| LB share of tackle credits | 0.365 | 0.353 | ±0.050 | WITHIN |
-| Assisted share of tackle credits | 0.336 | 0.339 | ±0.050 | WITHIN |
-| plays per team game | 64.5 | 64.2 | ±6.0 | WITHIN |
-| yards per team game | 351.2 | 347.2 | ±40.0 | WITHIN |
-| points per team game | 20.7 | 22.8 | ±5.0 | WITHIN |
-| first downs per team game | 20.4 | 19.8 | ±3.0 | WITHIN |
-| third down attempts per team game | 13.3 | 13.3 | ±2.5 | WITHIN |
-| third down rate | 0.383 | 0.383 | ±0.060 | WITHIN |
+| LB share of tackle credits | 0.363 | 0.353 | ±0.050 | WITHIN |
+| Assisted share of tackle credits | 0.331 | 0.339 | ±0.050 | WITHIN |
+| plays per team game | 65.1 | 64.2 | ±6.0 | WITHIN |
+| yards per team game | 358.9 | 347.2 | ±40.0 | WITHIN |
+| points per team game | 21.2 | 22.8 | ±5.0 | WITHIN |
+| first downs per team game | 20.8 | 19.8 | ±3.0 | WITHIN |
+| third down attempts per team game | 13.4 | 13.3 | ±2.5 | WITHIN |
+| third down rate | 0.384 | 0.383 | ±0.060 | WITHIN |
 
 Points: non-offensive touchdowns, their tries and two-point tries are not modelled by design (about 1.7-2.0 points per team game below the 2012 centre); the ±5.0 tolerance is deliberately not tightened.
 
@@ -70,32 +70,32 @@ Centres from the 2012 drive model (nflverse drive definition) and period totals;
 
 | Metric | Observed | 2012 band centre | Tolerance | Status |
 |---|---:|---:|---:|---|
-| FG accuracy | 0.842 | 0.839 | ±0.073 | WITHIN |
-| FG accuracy <30 yd | 0.895 | 0.967 | ±0.071 | OUTSIDE |
-| FG accuracy 30-39 yd | 0.908 | 0.891 | ±0.116 | WITHIN |
-| FG accuracy 40-49 yd | 0.821 | 0.802 | ±0.135 | WITHIN |
-| FG accuracy 50+ yd | 0.643 | 0.609 | ±0.277 | INSUFFICIENT SAMPLE |
-| XP accuracy (informational; partially verified) | 0.996 | 0.994 | ±0.015 | WITHIN |
-| FGA per team game | 1.932 | 1.984 | ±0.389 | WITHIN |
-| FGM per team game | 1.627 | 1.664 | ±0.356 | WITHIN |
-| drives per team game (nflverse definition; PFR 10.47) | 12.0 | 11.7 | ±0.944 | WITHIN |
-| punts per team game (drive-ending) | 5.1 | 4.8 | ±0.606 | WITHIN |
-| drive share: touchdown | 0.187 | 0.195 | ±0.032 | WITHIN |
-| drive share: field goal attempt | 0.161 | 0.170 | ±0.030 | WITHIN |
-| drive share: punt | 0.423 | 0.412 | ±0.039 | WITHIN |
-| drive share: turnover (INT + fumble lost) | 0.128 | 0.125 | ±0.026 | WITHIN |
-| drive share: downs | 0.028 | 0.033 | ±0.014 | WITHIN |
-| drive share: safety | 0.004 | 0.002 | ±0.004 | WITHIN |
-| drive share: clock | 0.070 | 0.063 | ±0.019 | WITHIN |
-| clock-expired drives per team game | 0.839 | 0.734 | ±0.237 | WITHIN |
-| offensive-drive turnovers per team game | 1.534 | 1.461 | ±0.334 | WITHIN |
-| interception share of turnovers | 0.691 | 0.626 | ±0.108 | WITHIN |
-| kickoffs per team game (informational; centre includes kicks not modelled: after non-offensive TDs, onside, re-kicks, after half-final scores) | 4.8 | 5.2 | ±0.630 | INFORMATIONAL |
-| kick returns per team game | 2.5 | 2.6 | ±0.448 | WITHIN |
+| FG accuracy | 0.841 | 0.839 | ±0.066 | WITHIN |
+| FG accuracy <30 yd | 0.917 | 0.967 | ±0.064 | WITHIN |
+| FG accuracy 30-39 yd | 0.927 | 0.891 | ±0.103 | WITHIN |
+| FG accuracy 40-49 yd | 0.800 | 0.802 | ±0.123 | WITHIN |
+| FG accuracy 50+ yd | 0.588 | 0.609 | ±0.251 | WITHIN |
+| XP accuracy (informational; partially verified) | 0.997 | 0.994 | ±0.013 | WITHIN |
+| FGA per team game | 1.965 | 1.984 | ±0.352 | WITHIN |
+| FGM per team game | 1.653 | 1.664 | ±0.322 | WITHIN |
+| drives per team game (nflverse definition; PFR 10.47) | 12.1 | 11.7 | ±0.855 | WITHIN |
+| punts per team game (drive-ending) | 5.1 | 4.8 | ±0.549 | WITHIN |
+| drive share: touchdown | 0.191 | 0.195 | ±0.028 | WITHIN |
+| drive share: field goal attempt | 0.162 | 0.170 | ±0.027 | WITHIN |
+| drive share: punt | 0.424 | 0.412 | ±0.035 | WITHIN |
+| drive share: turnover (INT + fumble lost) | 0.126 | 0.125 | ±0.024 | WITHIN |
+| drive share: downs | 0.027 | 0.033 | ±0.013 | WITHIN |
+| drive share: safety | 0.003 | 0.002 | ±0.003 | WITHIN |
+| drive share: clock | 0.067 | 0.063 | ±0.017 | WITHIN |
+| clock-expired drives per team game | 0.812 | 0.734 | ±0.214 | WITHIN |
+| offensive-drive turnovers per team game | 1.528 | 1.461 | ±0.302 | WITHIN |
+| interception share of turnovers | 0.691 | 0.626 | ±0.098 | WITHIN |
+| kickoffs per team game (informational; centre includes kicks not modelled: after non-offensive TDs, onside, re-kicks, after half-final scores) | 4.9 | 5.2 | ±0.570 | INFORMATIONAL |
+| kick returns per team game | 2.6 | 2.6 | ±0.405 | WITHIN |
 
 ### Ledger coherence
 
-Zero-tolerance counts from `runtime.play_detail.check_ledger` over every receipt's drives summary plus the full snap ledgers. Games checked: 59.
+Zero-tolerance counts from `runtime.play_detail.check_ledger` over every receipt's drives summary plus the full snap ledgers. Games checked: 72.
 
 | Class | Count | Status |
 |---|---:|---|

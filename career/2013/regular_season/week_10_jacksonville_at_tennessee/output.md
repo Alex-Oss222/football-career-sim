@@ -8,3 +8,5 @@
 **Format:** `foundation/templates/season_output_template.md`
 
 **Note:** Division game (AFC South).
+**Carry-forward:** Week 8 closed as a 20-13 win over San Francisco at Wembley ([Week 8 output](../week_08_san_francisco_at_jacksonville/output.md)); Week 9 is the bye. Jacksonville (6-2) leads Tennessee (5-2) in the AFC South. The Week 8 inactive list in `depth_chart.json` carries forward unless Stone sets a new one. No new Jacksonville injury.
+**Availability correction:** Entry 46 recovered Pasztor's and Mosley's lost preseason injury projections (August 19 and August 30). Both are available; the carried-forward Week 8 inactive list still names them unless Stone changes it.

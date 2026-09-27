@@ -91,7 +91,7 @@ career/
       team_player_stats.md       <- readable protagonist-team season-to-date player stats
       all_player_stats.md        <- comprehensive all-player supported-field ledger
       league_player_stats.md     <- readable all-club season-to-date category stats
-      play_call_stats.md         <- protagonist offense named-call label usage/results; Weeks 1-7 labels are drawn per run/pass type, not carrier-true (Entry 41)
+      play_call_stats.md         <- protagonist offense named-call label usage/results; Weeks 1-8 labels are drawn per run/pass type, not carrier-true (Entry 41)
       team_stats.md              <- generated per-club team statistics
       calibration_audit.md       <- generated band audit of the receipts against sourced 2012 shapes; an OUTSIDE row is investigated, never grounds to rerun
       league_leaders.md          <- derived league leaders; withheld when coverage is incomplete

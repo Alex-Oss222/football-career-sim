@@ -1,0 +1,117 @@
+{
+ "schema_version": 1,
+ "team": "Jacksonville Jaguars",
+ "event": "2013 Regular Season Week 8, San Francisco at Jacksonville, Wembley Stadium",
+ "status": "EX_ANTE_CALL_SHEET_FROZEN",
+ "provenance": "Stone's Week 8 game plan, runner-ready call sheet (section 43), approved by the user as APPROVED_WEEK_8_PLAN and frozen verbatim before any Week 8 draw under kernel 2013.6 (kernel 2013.7 was not ready). Plan provenance as supplied: Stone Week 8 plan after Jacksonville's canonical 30-24 Week 7 win over San Diego. Blackmon's disciplinary inactive period is complete and he returns as WR3/outside Z without displacing Shorts or Thielen. The plan expands 11 personnel while preserving the 12-personnel Kelce development structure and the established Power/Counter/quick-game sequencing. Every concept on it is in the active 2013 offensive iteration: Inside Zone and the ACCESS tag with Smoke (section 13), Slant-Flat, Y-Cross, Mills (Post-Dig) with MAX, Wham, Whip/Pivot, Split Leak with TURNBACK, Sprint Flood, Spacing from an Empty shift, chip-release and the 6OL Heavy package. The Four Verticals alert and the Blackmon Go alert are in-game options without structured entries. Script order, jump rules, tempo and the Blackmon/Thielen/Kelce role emphasis are coaching guidance the kernel does not condition on; kernel 2013.6 assigns call labels by run/pass type, not by ball carrier.",
+ "offensive_call_sheet": [
+  {
+   "name": "11 Trey Right, Power R",
+   "family": "Power",
+   "type": "run",
+   "personnel": "11",
+   "formation": "11 Trey Right"
+  },
+  {
+   "name": "11 Doubles, Inside L, Access Blackmon Smoke",
+   "family": "Inside + Smoke",
+   "type": "run",
+   "personnel": "11",
+   "formation": "11 Doubles"
+  },
+  {
+   "name": "12 Trey Right, Stick, H Chip-Release",
+   "family": "Stick",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey Right"
+  },
+  {
+   "name": "11 Bunch Right, Return, Mesh",
+   "family": "Mesh",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Bunch Right"
+  },
+  {
+   "name": "12 Wing Right, Split L",
+   "family": "Split Zone",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Wing Right"
+  },
+  {
+   "name": "11 Doubles, Slant-Flat, Blackmon Z",
+   "family": "Slant-Flat",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles"
+  },
+  {
+   "name": "12 Wing Right, Wham R",
+   "family": "Wham",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Wing Right"
+  },
+  {
+   "name": "12 Wing Right, Split Leak, Turnback",
+   "family": "Split Leak",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Wing Right",
+   "protection": "Turnback"
+  },
+  {
+   "name": "11 Bunch Right, Thielen Whip",
+   "family": "Whip/Pivot",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Bunch Right"
+  },
+  {
+   "name": "11 Trips Right, Inside L, Access Blackmon Smoke",
+   "family": "Inside + Smoke",
+   "type": "run",
+   "personnel": "11",
+   "formation": "11 Trips Right"
+  },
+  {
+   "name": "12 Trey Right, Y-Cross, Solid",
+   "family": "Y-Cross",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey Right",
+   "protection": "Solid"
+  },
+  {
+   "name": "11 Trey Right, Sprint Flood R",
+   "family": "Sprint Flood",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Trey Right"
+  },
+  {
+   "name": "6OL Heavy Right, Power R",
+   "family": "Power",
+   "type": "run",
+   "personnel": "6OL",
+   "formation": "6OL Heavy Right"
+  },
+  {
+   "name": "11 Doubles, Mills, Blackmon Post Alert, Max",
+   "family": "Mills",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles",
+   "protection": "Max"
+  },
+  {
+   "name": "12 Ace, Shift Empty, Spacing",
+   "family": "Spacing",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Ace Shift Empty"
+  }
+ ]
+}

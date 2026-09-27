@@ -1,0 +1,49 @@
+{
+ "procedure": "injury-projection-recovery-v1",
+ "authority": "User instruction of September 27, 2026 choosing the audited redraw (ledger Entry 46). The exact replay of the preseason packets is impossible: the preseason TeamInputs were built transiently and never committed, so no packet can reproduce the committed digests.",
+ "rule": "Each missing projection is drawn once from runtime/injuries.py, the model every club's generated injuries use, conditioned only on the class and restriction recorded when the injury was generated. A head/neck injury is an independent medical hold at every severity, so it constrains nothing; an 'out' restriction means at least one day. Later availability records (from September 4 onward) are not used as evidence: they were written without the projection, which is the defect being corrected. The projected return is the injury date plus the drawn days, the rule injured_out applies to every club; on and after that date the player is available like any background player.",
+ "snapshot": "aeed85f60223030305d5f5bd2624d68c1372804d19363eef2533608e0c5dc13d",
+ "model_sha256": "e5b56b123255d7563bc567c998aa60cbad30817f4ca731360d21a0abc86b4a51",
+ "recoveries": [
+  {
+   "event_id": "2013-injury-projection-recovery-v1-austin-pasztor",
+   "source_event": "jax-2013-preseason-02-jax-at-nyj",
+   "player": "Austin Pasztor",
+   "injury_date": "2013-08-17",
+   "injury_class": "head_neck",
+   "restriction": "independent medical hold",
+   "min_return_days": 0,
+   "record": "preseason/game_2_jacksonville_at_ny_jets/output.md; ledger Entry 22"
+  },
+  {
+   "event_id": "2013-injury-projection-recovery-v1-c-j-mosley",
+   "source_event": "jax-2013-preseason-04-jax-at-atl",
+   "player": "C.J. Mosley",
+   "injury_date": "2013-08-29",
+   "injury_class": "upper_extremity",
+   "restriction": "out",
+   "min_return_days": 1,
+   "record": "preseason/game_4_jacksonville_at_atlanta/output.md; ledger Entry 25"
+  }
+ ],
+ "packet_sha256": {
+  "2013-injury-projection-recovery-v1-austin-pasztor": "f13e7f4e62dc2c84f442df98d39be3a9fcb8dd7cfe2ffded9b31fd7f9703093b",
+  "2013-injury-projection-recovery-v1-c-j-mosley": "c9f86c2daf21aa80c16db4b9c19d0371ab3cb152d1294d83d07fd2203eac2452"
+ },
+ "results": {
+  "2013-injury-projection-recovery-v1-austin-pasztor": {
+   "result_ref": "cc40ea0b213b0f2492fc30e4de94f3f020cfc3460f7cf36038a01dab43aec4d0",
+   "severity": "minor",
+   "return_days": 2,
+   "reassessment_days": 1,
+   "projected_return": "2013-08-19"
+  },
+  "2013-injury-projection-recovery-v1-c-j-mosley": {
+   "result_ref": "bc9a9b0bb50e860ec64ef3fc4b4bf95461554d93c858e1147dc117a6dff6aaf1",
+   "severity": "minor",
+   "return_days": 1,
+   "reassessment_days": 1,
+   "projected_return": "2013-08-30"
+  }
+ }
+}
