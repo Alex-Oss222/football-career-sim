@@ -3,9 +3,9 @@
 This directory is the **current season-stat layer**, parallel to but separate from `../standings.md`.
 
 - `../standings.md` owns team records, points for/against, conference/division position and tiebreak presentation.
-- `team_player_stats.md` owns Jacksonville's readable current season-to-date player production by category.
-- `all_player_stats.md` is the comprehensive ledger: every player record preserved by the stat receipts and every currently supported generated stat field.
-- `league_player_stats.md` owns the readable all-club season-to-date category view.
+- `team_player_stats.md` owns Jacksonville's readable current season-to-date player production, filed by position group (quarterbacks, running backs, wide receivers, tight ends, offensive line, defensive line, linebackers, defensive backs, kickers, punters) with each group's standard columns, then returns.
+- `all_player_stats.md` is the comprehensive ledger: every player record preserved by the stat receipts and every currently supported generated stat field, filed by position group with each position's standard columns (passing plus rushing for quarterbacks, rushing plus receiving for backs, and so on). Counters outside a player's position table, such as a receiver's special-teams tackle, are listed in a closing table so nothing is dropped.
+- `league_player_stats.md` owns the readable all-club season-to-date category view (passing, rushing, receiving, defense, kicking, punting, returns), each row carrying the player's position.
 - `play_call_stats.md` owns Jacksonville's season-to-date named offensive call usage and results.
 - `league_leaders.md` is a derived top-of-league view and may only rank players when receipt coverage and exact player attribution are complete.
 - `game_receipts/` is the rebuildable source: one public stat-only receipt per closed game.
