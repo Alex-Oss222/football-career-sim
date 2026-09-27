@@ -1,7 +1,10 @@
 import unittest
 
 from runtime.statbook import aggregate_receipts, leaders, make_receipt
-from scripts.render_season_stats import coverage_line, leaders_markdown
+from scripts.render_season_stats import (
+    all_players_markdown, coverage_line, leaders_markdown, league_markdown,
+    passer_rating,
+)
 
 
 class StatbookTests(unittest.TestCase):
@@ -128,6 +131,53 @@ class StatbookTests(unittest.TestCase):
         receipt = make_receipt(self.result("same"), week=1, matchup="B at A")
         with self.assertRaises(ValueError):
             aggregate_receipts([receipt, receipt])
+
+    def test_stat_views_are_position_first(self):
+        players = {
+            "QB One": {"position": "QB", "teams": ["AAA"], "completions": 20,
+                       "pass_attempts": 30, "passing_yards": 250,
+                       "passing_touchdowns": 2, "interceptions_thrown": 1},
+            "CB One": {"position": "CB", "teams": ["BBB"], "tackles": 5,
+                       "solo_tackles": 5, "defensive_interceptions": 1},
+            "WR One": {"position": "WR", "teams": ["AAA"], "receptions": 3,
+                       "targets": 4, "receiving_yards": 40, "tackles": 1},
+        }
+        teams = {
+            "AAA": {"players": {k: players[k] for k in ("QB One", "WR One")}},
+            "BBB": {"players": {"CB One": players["CB One"]}},
+        }
+        book = {"through_week": 1, "receipt_count": 1, "coverage_complete": True,
+                "player_attribution_complete": True, "players": players, "teams": teams}
+
+        league = league_markdown(2013, book)
+        qb = league.split("## Quarterbacks")[1].split("## ")[0]
+        db = league.split("## Defensive backs")[1].split("## ")[0]
+        self.assertIn("| QB One | AAA | 20 | 30 | 66.7 | 250 |", qb)
+        self.assertNotIn("CB One", qb)
+        self.assertIn("| CB One | BBB | 5 | 5 |", db)
+        self.assertLess(league.index("## Quarterbacks"), league.index("## Wide receivers"))
+        self.assertIn("| WR One | AAA | WR | Tkl 1 |", league)
+
+        ledger = all_players_markdown(2013, book)
+        aaa = ledger.split("## AAA")[1].split("## BBB")[0]
+        self.assertIn("### Quarterbacks", aaa)
+        self.assertIn("### Wide receivers", aaa)
+        self.assertNotIn("CB One", aaa)
+        self.assertNotIn("Nonzero stored statistics", ledger)
+
+        leaders_text = leaders_markdown(2013, book)
+        qb_leaders = leaders_text.split("## Quarterbacks")[1].split("## Running backs")[0]
+        self.assertIn("| 1 | QB One | AAA | 250 |", qb_leaders)
+        self.assertNotIn("CB One", qb_leaders)
+
+    def test_passer_rating_matches_nfl_formula(self):
+        line = {"completions": 20, "pass_attempts": 30, "passing_yards": 250,
+                "passing_touchdowns": 2, "interceptions_thrown": 1}
+        self.assertEqual(passer_rating(line), "100.7")
+        perfect = {"completions": 10, "pass_attempts": 10, "passing_yards": 200,
+                   "passing_touchdowns": 2, "interceptions_thrown": 0}
+        self.assertEqual(passer_rating(perfect), "158.3")
+        self.assertEqual(passer_rating({}), "—")
 
 
 if __name__ == "__main__":
