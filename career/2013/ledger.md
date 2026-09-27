@@ -720,3 +720,27 @@ Game-level efficiency (completion rate, yards per carry, sack rate) was close to
 **Next competitive event:** September 8 Week 1 vs Kansas City, 1:00 p.m. ET, replayed under kernel 2013.4. **Not simulated.**
 
 **Commit closed - Canonical correction - September 4, 2013 - Week 1 voided for kernel 2013.4 restart - canonical through September 4, after regular-season cap compliance and before Week 1**
+
+## Entry 35: Week 1 closed, generation 3
+
+**Effective canonical state:** September 8, 2013, after Week 1
+**Recorded:** September 27, 2026
+**Checkpoint:** `Canonical update - September 8, 2013 - Week 1 vs Kansas City closed`
+**Preceding global package checkpoint:** `Canonical correction - September 4, 2013 - Week 1 voided for kernel 2013.4 restart`
+
+**Result.** Jacksonville 31, Kansas City 13 at EverBank Field. Jacksonville is 1-0.
+
+**Replacement batch.** All sixteen Week 1 games closed once each as generation 3 (`2013-week01-reset-v3-01` through `-16`) under kernel 2013.4 through `runtime.game_runner.run_game` and the private Engine State service, after `scripts/mark_week1_generations_void.py` marked generations 1 and 2 and `scripts/check_week1_reset_ready.py` and the weekly exclusivity gate passed on all 32 frozen TeamInputs. This generation supersedes the void Week 1 of Entry 34; no earlier Week 1 result was shown or compared.
+
+**Inputs.** The 31 background clubs came from the sourced, branch-reconciled [Week 1 depth-chart library](../../library/2013_week1_depth_charts.md). Jacksonville used the September 4 roster, medical state and roles; the ex-ante inactives (Pasztor, Mosley, Asper, Brewster, Davis, Edwards, Rutland); and Stone's Week 1 plan, which amended the recovered call sheet before the draw by adding the weekly menu (Inside Zone, Counter, Power + Smoke, Y-Cross, Smash, Texas, Power Pass, Tunnel) to the opening fifteen. Co-starters without a recorded order were sequenced by 2012 usage, the same rule used for every background club. Every club, Jacksonville included, carried the Average low-confidence unit anchor under Document 7 section 2.2.
+
+**Statistics and standings.** A full receipt for Jacksonville and compact receipts for the other fifteen games are preserved; the box score, standings and statbook were generated from them. Every row of the band audit is WITHIN the sourced 2012 bands.
+
+**Availability.** No Jacksonville injury was generated. Pasztor remains on medical hold and Mosley medically unavailable. Background injuries are listed in `league_results/week_01.md`.
+
+**Engine findings (investigated, not grounds to rerun).** The Jacksonville snap ledger shows drive-detail defects that do not affect the score or statistics: snaps logged after a drive-ending interception or touchdown, and one possession continuing across halftime. They are recorded for an engine fix; the closed result stands.
+
+**Primary records:** `regular_season/week_01_kansas_city_at_jacksonville/output.md`; `league_results/week_01.md`; `stats/game_receipts/2013-week01-reset-v3-*.json`; `standings.md`; `migrations/week_01_kernel_2013_4_restart.md`.
+**Next competitive event:** September 15 Week 2 at Oakland, 4:25 p.m. ET. **Not simulated.**
+
+**Commit closed - Canonical update - September 8, 2013 - Week 1 vs Kansas City closed - canonical through September 8, after Week 1**

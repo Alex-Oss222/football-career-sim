@@ -40,7 +40,7 @@ The preseason and regular-season stubs describe scheduled work only. League resu
 
 ## Canonical migrations
 
-- [Week 1 restart under kernel 2013.4](migrations/week_01_kernel_2013_4_restart.md): active. Week 1 is void (Entry 34) and replays as event generation 3.
+- [Week 1 restart under kernel 2013.4](migrations/week_01_kernel_2013_4_restart.md): closed. Week 1 was replayed as event generation 3 (Entry 35).
 - [Week 1 full-fidelity reset](migrations/week_01_full_fidelity_reset.md): superseded audit history of generations 1 and 2; its JSON manifest now controls generation 3.
 
 ## Durable football inputs

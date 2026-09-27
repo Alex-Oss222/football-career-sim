@@ -3,9 +3,9 @@
 ## Document status
 
 - Function: Canonical register for current Jacksonville player control, staff operating authority, roster legality, contract/cap reconciliation, availability boundaries and football-role state.
-- Current status: **RECONCILED THROUGH SEPTEMBER 4 CAP TRANSITION; WEEK 1 VOID (ENTRY 34)**.
-- Effective through: **September 4, 2013, after regular-season cap compliance**.
-- Progression authority: `career/2013/ledger.md`, Entry 34 (restores the Entry 29 content after the Week 1 void).
+- Current status: **RECONCILED THROUGH WEEK 1 (ENTRY 35)**.
+- Effective through: **September 8, 2013, after Week 1 vs Kansas City**.
+- Progression authority: `career/2013/ledger.md`, Entry 35 (Week 1 closed; no roster, control, role or availability change).
 - Detailed readable roster: `career/2013/roster.md`.
 - Current cap worksheet: `career/2013/offseason/current_cap_worksheet.md`.
 - Current calendar: `career/2013/calendar.md`.
@@ -21,17 +21,17 @@
 | Competition | NFL |
 | Season | 2013 |
 | Divergence point | January 15, 2013 — Alex Stone accepts Jacksonville head-coach offer |
-| Season phase | Regular-season preparation; Week 1 void and awaiting replay under kernel 2013.4 |
-| Owned content effective | September 4, 2013 |
-| Document 4 register version | `JAX-2013-SEP04-WEEK1-VOID-REGISTER-11` |
-| Supersedes | `JAX-2013-SEP09-WEEK1-RESET-STATE-10` (void); content equals `JAX-2013-SEP04-REGULAR-STATE-8` |
-| Last content-changing checkpoint | `Canonical correction - September 4, 2013 - Week 1 voided for kernel 2013.4 restart` |
-| Latest Document 6 event | Entry 34: Week 1 voided for kernel 2013.4 restart |
+| Season phase | Regular season; Week 1 closed, Week 2 preparation |
+| Owned content effective | September 8, 2013 |
+| Document 4 register version | `JAX-2013-SEP08-WEEK1-REGISTER-12` |
+| Supersedes | `JAX-2013-SEP04-WEEK1-VOID-REGISTER-11` |
+| Last content-changing checkpoint | `Canonical update - September 8, 2013 - Week 1 vs Kansas City closed` |
+| Latest Document 6 event | Entry 35: Week 1 closed, generation 3 |
 | Current controlled players | **53** |
 | Current practice squad | **8; separate from active 53** |
 | Current regular-season planning room | **~$6.2M-$6.6M before weekly practice-squad charges** |
-| Next scheduled football event | September 8 Week 1 vs Kansas City — NOT SIMULATED |
-| Unresolved matter before participation | Fresh game-day medical communication; no current football restriction |
+| Next scheduled football event | September 15 Week 2 at Oakland: NOT SIMULATED |
+| Unresolved matter before participation | Fresh Week 2 medical communication; Week 1 generated no Jacksonville injury |
 
 ## Canon and evidence conventions
 
@@ -111,7 +111,7 @@ These rules apply to every real player, staff member, executive, candidate, oppo
 | Players on active roster | **53** | August 31 final reduction |
 | Practice-squad players | **8** | Separate from active 53 |
 
-Week 1 game-day active/inactive designations have not yet been set.
+Week 1 inactives were Pasztor, Mosley, Asper, Brewster, Davis, Edwards and Rutland; Week 2 designations are not yet set.
 
 ### Financial, contract and eligibility reconciliation
 
@@ -142,16 +142,16 @@ Staff remains unchanged from the closed late-January hiring phase. `career/2013/
 
 ### Reconciliation result
 
-- Register status: **RECONCILED THROUGH SEPTEMBER 4 CAP TRANSITION; WEEK 1 VOID**.
+- Register status: **RECONCILED THROUGH WEEK 1 (ENTRY 35)**.
 - Roster/control: **53 active players; eight-player practice squad separate**.
 - Cap: regular-season accounting; approximately **$6.2M-$6.6M** before weekly practice-squad charges.
-- Medical: Pasztor on independent medical hold; Mosley medically unavailable; Smith cleared; every other active player has no communicated restriction; fresh game-day communication required.
-- Football: regular-season roles are synchronized to the preseason/cutdown records.
-- Next event: September 8 Week 1 vs Kansas City, replayed under kernel 2013.4; **NOT SIMULATED**.
+- Medical: Pasztor on independent medical hold; Mosley medically unavailable; Week 1 generated no Jacksonville injury; fresh Week 2 communication required.
+- Football: regular-season roles unchanged after Week 1.
+- Next event: September 15 Week 2 at Oakland; **NOT SIMULATED**.
 
 ## Jacksonville current transaction reconciliation
 
-**Current progression source:** [Season ledger, Entry 34](../career/2013/ledger.md#entry-34-week-1-voided-for-kernel-20134-restart), checkpoint `Canonical correction - September 4, 2013 - Week 1 voided for kernel 2013.4 restart`; roster content restored from Entry 29.
+**Current progression source:** [Season ledger, Entry 35](../career/2013/ledger.md#entry-35-week-1-closed-generation-3), checkpoint `Canonical update - September 8, 2013 - Week 1 vs Kansas City closed`; roster content unchanged since Entry 29.
 **Readable roster:** [career/2013/roster.md](../career/2013/roster.md).
 **Current cap worksheet:** [career/2013/offseason/current_cap_worksheet.md](../career/2013/offseason/current_cap_worksheet.md).
 **Current calendar:** [career/2013/calendar.md](../career/2013/calendar.md).
@@ -668,12 +668,12 @@ This table is generated from Document 6 and is only a navigation aid. Active unr
 
 ## End-of-update control block
 
-- Effective through: September 4, 2013, final walkthrough closed.
-- Document 4 register version: `JAX-2013-SEP04-REGULAR-STATE-8`.
-- Last content-changing checkpoint: `Canonical update - September 4, 2013 - preseason, roster and cap block closed`.
-- Latest source event: season-ledger Entry 29.
+- Effective through: September 8, 2013, after Week 1.
+- Document 4 register version: `JAX-2013-SEP08-WEEK1-REGISTER-12`.
+- Last content-changing checkpoint: `Canonical update - September 8, 2013 - Week 1 vs Kansas City closed`.
+- Latest source event: season-ledger Entry 35.
 - Current active-player count: **53**; practice squad **8**, separate from the active roster.
 - Cap: regular-season accounting, **~$6.2M-$6.6M before weekly practice-squad charges**.
-- Depth/packages: provisional camp hierarchy and reduced Miami menu; no final roster or regular-season QB1 decision.
-- Medical: all 64 available for assigned August 8 work, subject to fresh game-day communication.
-- Next event: September 8 Week 1 vs Kansas City, replayed under kernel 2013.4; **NOT SIMULATED**.
+- Depth/packages: Cousins QB1; regular-season roles as in `career/2013/roster.md`; Week 1 menu retained.
+- Medical: Pasztor on independent medical hold; Mosley medically unavailable; no Week 1 injury.
+- Next event: September 15 Week 2 at Oakland; **NOT SIMULATED**.

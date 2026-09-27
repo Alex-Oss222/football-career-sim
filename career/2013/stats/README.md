@@ -59,7 +59,7 @@ Passer-rate leaders (rating, completion percentage, yards per attempt) require 1
 
 ## Current coverage
 
-Empty. Week 1 was voided by ledger Entry 34 and its receipts were deleted. The views fill when the replayed Week 1 closes under kernel 2013.4.
+Through Week 1: sixteen of sixteen receipts, coverage complete.
 
 ## Branch-control rule
 
