@@ -1,10 +1,10 @@
 # Jacksonville Jaguars roster
 
-**As of:** October 6, 2013, after Week 5.
+**As of:** October 13, 2013, after Week 6.
 **Canonical controlled-player count:** **53**.
-**Active roster:** **52**; Justin Blackmon is on Reserve/Suspended and does not count against the 53, leaving one open spot.
+**Active roster:** **53**; Justin Blackmon was reinstated from Reserve/Suspended on October 7 and activated to the open spot (ledger Entry 42).
 **Practice squad:** **8**, separate from the active roster.
-**Record:** preseason 2-2; regular season 3-2 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24).
+**Record:** preseason 2-2; regular season 4-2 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10).
 
 ## 1. How to read this page
 
@@ -42,11 +42,11 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| Justin Blackmon | WR | Reserve/Suspended | League suspension, Weeks 2-5; Stone's game-day inactive Weeks 6-7; eligible Week 8 | — |
+| Justin Blackmon | WR | Active 53 | No communicated restriction | Stone's game-day inactive Weeks 6-7; eligible Week 8 |
 | Mike Brown | WR | Active 53 | No communicated restriction | WR4 |
 | Toney Clemons | WR | Active 53 | No communicated restriction | WR3 |
 | Cecil Shorts | WR | Active 53 | No communicated restriction | WR1 |
-| Adam Thielen | WR | Active 53 | Out, upper extremity (Week 5); projected return October 9 | WR2; coverage units |
+| Adam Thielen | WR | Active 53 | No communicated restriction | WR2; coverage units |
 
 ### Tight ends (3)
 

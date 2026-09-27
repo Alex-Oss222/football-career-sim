@@ -1,7 +1,7 @@
 {
  "team": "Jacksonville Jaguars",
- "effective": "September 30, 2013, Week 5 preparation",
- "sources": "career/2013/offseason/training_camp/position_battles.md; roster_decisions.md; training_camp/output.md; ledger Entries 29 and 35; Stone's Week 1 plan; ledger Entry 36; Stone's Week 2 plan; Stone's Week 3 plan; Stone's Week 4 plan; Stone's Week 5 plan",
+ "effective": "October 7, 2013, Week 6 preparation",
+ "sources": "career/2013/offseason/training_camp/position_battles.md; roster_decisions.md; training_camp/output.md; ledger Entries 29 and 35; Stone's Week 1 plan; ledger Entry 36; Stone's Week 2 plan; Stone's Week 3 plan; Stone's Week 4 plan; Stone's Week 5 plan; ledger Entry 42; Stone's Week 6 plan",
  "rule": "Order within each kernel position group, first = starter. It comes from the staff's recorded roles; where the staff listed co-starters without an order, 2012 regular-season usage breaks the tie, the rule used for every background club. Stone owns this order and changes it by decision; the weekly input builder reads it as written.",
  "depth": {
   "QB": ["Kirk Cousins", "Chad Henne", "John Parker Wilson"],
@@ -73,5 +73,5 @@
   "Jeremy Cain": "LS"
  },
  "roles": {"Kirk Cousins": ["passer"], "Josh Scobee": ["placekicker"], "Bryan Anger": ["punt"]},
- "game_day_inactives": {"week": 5, "players": ["Austin Pasztor", "C.J. Mosley", "C.J. Wilson", "Lavar Edwards", "Kevin Rutland", "John Parker Wilson"], "note": "Stone sets inactives each week. A week without a new list reuses the last one, minus players no longer controlled. A player on Reserve/Suspended is off the active roster and never an inactive."}
+ "game_day_inactives": {"week": 6, "players": ["Justin Blackmon", "Austin Pasztor", "C.J. Mosley", "C.J. Wilson", "Lavar Edwards", "Kevin Rutland", "John Parker Wilson"], "note": "Stone sets inactives each week. A week without a new list reuses the last one, minus players no longer controlled. A player on Reserve/Suspended is off the active roster and never an inactive."}
 }
