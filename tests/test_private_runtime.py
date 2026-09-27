@@ -197,6 +197,27 @@ class PrivateRuntimeTests(unittest.TestCase):
         self.assertEqual(history,[('snapshot','next','checkpoint-1')])
         self.assertTrue(client.readiness()['ready'])
 
+    def test_newer_image_starts_locked_until_ordinary_advance(self):
+        db=Path(self.tmp.name)/'locked.sqlite3'
+        store=Store(db); store.initialize('old-canon'); store.close('prior-event',b'x')
+        with self.assertRaisesRegex(ValueError,'branch snapshot mismatch'):
+            store.initialize('new-canon')
+        self.assertTrue(store.initialize('new-canon',allow_pending=True))
+        self.assertEqual(store.current_snapshot(),'old-canon')
+        server=ThreadingHTTPServer(('127.0.0.1',0),handler(store,self.token,'new-canon','new-canon'))
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        self.addCleanup(server.server_close); self.addCleanup(server.shutdown)
+        client=Client(f'http://127.0.0.1:{server.server_port}',token=self.token,snapshot='new-canon')
+        with self.assertRaisesRegex(PrivateRuntimeUnavailable,'snapshot advance pending'):
+            client.close_event({'event_id':'blocked','fact':'x'})
+        with self.assertRaises(PrivateRuntimeUnavailable):
+            client.readiness()
+        self.assertTrue(client.record_correction('prior-event','void'))
+        self.assertEqual(client.advance_snapshot('old-canon','new-canon','restart'),'new-canon')
+        self.assertTrue(client.readiness()['ready'])
+        self.assertTrue(client.close_event({'event_id':'after','fact':'x'}))
+        self.assertFalse(Store(db).initialize('new-canon'))
+
     def test_bodyless_administrative_probe_is_idempotent(self):
         first=self.post_empty('/admin/probe')
         second=self.post_empty('/admin/probe')
