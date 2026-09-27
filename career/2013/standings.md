@@ -1,26 +1,18 @@
-# 2013 NFL standings - league, conference and division
+# 2013 NFL standings
 
-**Status:** PRE-SEASON. No regular-season game has been played; every record is 0-0-0 and no seed exists.
-**Through:** nothing played. Update this line to `Through Week N (date)` each time results are entered.
-**Scope:** all 32 clubs. Regular-season games only; preseason results never count.
+**Through:** no regular-season game has been played.
+**Scope:** all 32 clubs; regular-season games only.
+**Source:** generated from the closed-game receipts in `stats/game_receipts/` by `python scripts/render_standings.py 2013`. Past weeks: add `--through-week N`.
 
-## How this file is kept current
+Pct counts a tie as half a win. SOV is strength of victory, the combined winning percentage of the clubs a team has beaten; SOS is strength of schedule, the combined winning percentage of all its opponents. Tiebreakers follow the 2013 NFL procedure in Document 2 section 5.3; a tie that survives to the coin toss is reported, never tossed.
 
-This is the single current-standings file for the whole league. It is rewritten in place after every regular-season week, in the same commit as the results that change it (`AGENTS.md`, atomic progression rule).
+## Division standings
 
-- **Inputs:** Jacksonville's game comes from `regular_season/week_NN_*/output.md`; every other game comes from `league_results/week_NN.md`. Both must be final before this file changes.
-- **Weekly history:** each `league_results/week_NN.md` carries its own header snapshot of these tables, so past weeks stay recoverable. This file holds only the current state.
-- **Tiebreakers:** apply the NFL procedure in `foundation/02_League_Era_and_Sourcebook.md` section 5.3, never a guess. Until a tie is broken by that procedure, mark it `TIE - unbroken` rather than ordering the clubs by feel.
-- **Playoff field:** six clubs per conference (four division winners as seeds 1-4, two wild cards as seeds 5-6). Seeds are entered only once the tiebreak inputs are known.
-- **Draft order:** computed from these standings by the rules in Document 2 section 12; never copied from real history.
-- **Column meaning:** Div, Conf, Home and Away are W-L-T. Streak is `W3` or `L2` style. PF/PA are points for and against.
+Clubs are ordered by winning percentage, ties broken by the division procedure.
 
-## 1. Division standings
-
-Ordered by record within each division; tied clubs stay alphabetical and marked unbroken until the tiebreak procedure resolves them.
 ### AFC East
 
-| Team | W | L | T | Pct | PF | PA | Diff | Div | Conf | Home | Away | Streak |
+| Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
 | Buffalo Bills | 0 | 0 | 0 | .000 | 0 | 0 | 0 | 0-0-0 | 0-0-0 | 0-0-0 | 0-0-0 | - |
 | Miami Dolphins | 0 | 0 | 0 | .000 | 0 | 0 | 0 | 0-0-0 | 0-0-0 | 0-0-0 | 0-0-0 | - |
@@ -29,7 +21,7 @@ Ordered by record within each division; tied clubs stay alphabetical and marked 
 
 ### AFC North
 
-| Team | W | L | T | Pct | PF | PA | Diff | Div | Conf | Home | Away | Streak |
+| Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
 | Baltimore Ravens | 0 | 0 | 0 | .000 | 0 | 0 | 0 | 0-0-0 | 0-0-0 | 0-0-0 | 0-0-0 | - |
 | Cincinnati Bengals | 0 | 0 | 0 | .000 | 0 | 0 | 0 | 0-0-0 | 0-0-0 | 0-0-0 | 0-0-0 | - |
@@ -38,7 +30,7 @@ Ordered by record within each division; tied clubs stay alphabetical and marked 
 
 ### AFC South
 
-| Team | W | L | T | Pct | PF | PA | Diff | Div | Conf | Home | Away | Streak |
+| Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
 | Houston Texans | 0 | 0 | 0 | .000 | 0 | 0 | 0 | 0-0-0 | 0-0-0 | 0-0-0 | 0-0-0 | - |
 | Indianapolis Colts | 0 | 0 | 0 | .000 | 0 | 0 | 0 | 0-0-0 | 0-0-0 | 0-0-0 | 0-0-0 | - |
@@ -47,7 +39,7 @@ Ordered by record within each division; tied clubs stay alphabetical and marked 
 
 ### AFC West
 
-| Team | W | L | T | Pct | PF | PA | Diff | Div | Conf | Home | Away | Streak |
+| Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
 | Denver Broncos | 0 | 0 | 0 | .000 | 0 | 0 | 0 | 0-0-0 | 0-0-0 | 0-0-0 | 0-0-0 | - |
 | Kansas City Chiefs | 0 | 0 | 0 | .000 | 0 | 0 | 0 | 0-0-0 | 0-0-0 | 0-0-0 | 0-0-0 | - |
@@ -56,7 +48,7 @@ Ordered by record within each division; tied clubs stay alphabetical and marked 
 
 ### NFC East
 
-| Team | W | L | T | Pct | PF | PA | Diff | Div | Conf | Home | Away | Streak |
+| Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
 | Dallas Cowboys | 0 | 0 | 0 | .000 | 0 | 0 | 0 | 0-0-0 | 0-0-0 | 0-0-0 | 0-0-0 | - |
 | New York Giants | 0 | 0 | 0 | .000 | 0 | 0 | 0 | 0-0-0 | 0-0-0 | 0-0-0 | 0-0-0 | - |
@@ -65,7 +57,7 @@ Ordered by record within each division; tied clubs stay alphabetical and marked 
 
 ### NFC North
 
-| Team | W | L | T | Pct | PF | PA | Diff | Div | Conf | Home | Away | Streak |
+| Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
 | Chicago Bears | 0 | 0 | 0 | .000 | 0 | 0 | 0 | 0-0-0 | 0-0-0 | 0-0-0 | 0-0-0 | - |
 | Detroit Lions | 0 | 0 | 0 | .000 | 0 | 0 | 0 | 0-0-0 | 0-0-0 | 0-0-0 | 0-0-0 | - |
@@ -74,7 +66,7 @@ Ordered by record within each division; tied clubs stay alphabetical and marked 
 
 ### NFC South
 
-| Team | W | L | T | Pct | PF | PA | Diff | Div | Conf | Home | Away | Streak |
+| Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
 | Atlanta Falcons | 0 | 0 | 0 | .000 | 0 | 0 | 0 | 0-0-0 | 0-0-0 | 0-0-0 | 0-0-0 | - |
 | Carolina Panthers | 0 | 0 | 0 | .000 | 0 | 0 | 0 | 0-0-0 | 0-0-0 | 0-0-0 | 0-0-0 | - |
@@ -83,78 +75,98 @@ Ordered by record within each division; tied clubs stay alphabetical and marked 
 
 ### NFC West
 
-| Team | W | L | T | Pct | PF | PA | Diff | Div | Conf | Home | Away | Streak |
+| Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
 | Arizona Cardinals | 0 | 0 | 0 | .000 | 0 | 0 | 0 | 0-0-0 | 0-0-0 | 0-0-0 | 0-0-0 | - |
-| St. Louis Rams | 0 | 0 | 0 | .000 | 0 | 0 | 0 | 0-0-0 | 0-0-0 | 0-0-0 | 0-0-0 | - |
 | San Francisco 49ers | 0 | 0 | 0 | .000 | 0 | 0 | 0 | 0-0-0 | 0-0-0 | 0-0-0 | 0-0-0 | - |
 | Seattle Seahawks | 0 | 0 | 0 | .000 | 0 | 0 | 0 | 0-0-0 | 0-0-0 | 0-0-0 | 0-0-0 | - |
+| St. Louis Rams | 0 | 0 | 0 | .000 | 0 | 0 | 0 | 0-0-0 | 0-0-0 | 0-0-0 | 0-0-0 | - |
 
-## 2. Conference standings and playoff seeding
+## Conference standings and playoff seeding
 
-Seed order follows the NFL rule: the four division winners ranked by record take seeds 1-4, then the two best remaining clubs take wild-card seeds 5-6. Pre-season, no seed is assigned.
+No game has been played, so no club is seeded. Six clubs per conference qualify: the four division winners (seeds 1-4) and two wild cards (seeds 5-6).
 
 ### AFC
 
-| Seed | Team | Division | W | L | T | Pct | Conf | Status |
-|---:|---|---|--:|--:|--:|--:|---|---|
-| 1 | - | - | - | - | - | - | - | not yet seeded |
-| 2 | - | - | - | - | - | - | - | not yet seeded |
-| 3 | - | - | - | - | - | - | - | not yet seeded |
-| 4 | - | - | - | - | - | - | - | not yet seeded |
-| 5 | - | - | - | - | - | - | - | not yet seeded |
-| 6 | - | - | - | - | - | - | - | not yet seeded |
-
-Out of the field, in current order: none ranked yet.
+| Rank | Team | Division | W | L | T | Pct | Div | Conf | SOV | SOS | Status |
+|--:|---|---|--:|--:|--:|--:|---|---|--:|--:|---|
+| - | Baltimore Ravens | North | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | Buffalo Bills | East | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | Cincinnati Bengals | North | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | Cleveland Browns | North | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | Denver Broncos | West | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | Houston Texans | South | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | Indianapolis Colts | South | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | **Jacksonville Jaguars** | South | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | Kansas City Chiefs | West | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | Miami Dolphins | East | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | New England Patriots | East | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | New York Jets | East | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | Oakland Raiders | West | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | Pittsburgh Steelers | North | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | San Diego Chargers | West | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | Tennessee Titans | South | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
 
 ### NFC
 
-| Seed | Team | Division | W | L | T | Pct | Conf | Status |
-|---:|---|---|--:|--:|--:|--:|---|---|
-| 1 | - | - | - | - | - | - | - | not yet seeded |
-| 2 | - | - | - | - | - | - | - | not yet seeded |
-| 3 | - | - | - | - | - | - | - | not yet seeded |
-| 4 | - | - | - | - | - | - | - | not yet seeded |
-| 5 | - | - | - | - | - | - | - | not yet seeded |
-| 6 | - | - | - | - | - | - | - | not yet seeded |
+| Rank | Team | Division | W | L | T | Pct | Div | Conf | SOV | SOS | Status |
+|--:|---|---|--:|--:|--:|--:|---|---|--:|--:|---|
+| - | Arizona Cardinals | West | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | Atlanta Falcons | South | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | Carolina Panthers | South | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | Chicago Bears | North | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | Dallas Cowboys | East | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | Detroit Lions | North | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | Green Bay Packers | North | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | Minnesota Vikings | North | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | New Orleans Saints | South | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | New York Giants | East | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | Philadelphia Eagles | East | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | San Francisco 49ers | West | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | Seattle Seahawks | West | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | St. Louis Rams | West | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | Tampa Bay Buccaneers | South | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
+| - | Washington Redskins | East | 0 | 0 | 0 | .000 | 0-0-0 | 0-0-0 | .000 | .000 | - |
 
-Out of the field, in current order: none ranked yet.
+## League
 
-## 3. League-wide standings
+All 32 clubs by winning percentage. Clubs with the same percentage share a place; league-wide order is not tiebroken across conferences here.
 
-All 32 clubs ranked by overall record. Pre-season, clubs are listed alphabetically because every record is 0-0-0.
+| Place | Team | Conf | W | L | T | Pct | PF | PA | Diff |
+|--:|---|---|--:|--:|--:|--:|--:|--:|--:|
+| - | Arizona Cardinals | NFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Atlanta Falcons | NFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Baltimore Ravens | AFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Buffalo Bills | AFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Carolina Panthers | NFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Chicago Bears | NFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Cincinnati Bengals | AFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Cleveland Browns | AFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Dallas Cowboys | NFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Denver Broncos | AFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Detroit Lions | NFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Green Bay Packers | NFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Houston Texans | AFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Indianapolis Colts | AFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | **Jacksonville Jaguars** | AFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Kansas City Chiefs | AFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Miami Dolphins | AFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Minnesota Vikings | NFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | New England Patriots | AFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | New Orleans Saints | NFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | New York Giants | NFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | New York Jets | AFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Oakland Raiders | AFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Philadelphia Eagles | NFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Pittsburgh Steelers | AFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | San Diego Chargers | AFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | San Francisco 49ers | NFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Seattle Seahawks | NFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | St. Louis Rams | NFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Tampa Bay Buccaneers | NFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Tennessee Titans | AFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
+| - | Washington Redskins | NFC | 0 | 0 | 0 | .000 | 0 | 0 | 0 |
 
-| Rank | Team | Conf | Division | W | L | T | Pct | PF | PA | Diff | Streak |
-|---:|---|---|---|--:|--:|--:|--:|--:|--:|--:|---|
-| 1 | Arizona Cardinals | NFC | West | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 2 | Atlanta Falcons | NFC | South | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 3 | Baltimore Ravens | AFC | North | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 4 | Buffalo Bills | AFC | East | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 5 | Carolina Panthers | NFC | South | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 6 | Chicago Bears | NFC | North | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 7 | Cincinnati Bengals | AFC | North | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 8 | Cleveland Browns | AFC | North | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 9 | Dallas Cowboys | NFC | East | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 10 | Denver Broncos | AFC | West | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 11 | Detroit Lions | NFC | North | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 12 | Green Bay Packers | NFC | North | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 13 | Houston Texans | AFC | South | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 14 | Indianapolis Colts | AFC | South | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 15 | **Jacksonville Jaguars** | AFC | South | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 16 | Kansas City Chiefs | AFC | West | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 17 | Miami Dolphins | AFC | East | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 18 | Minnesota Vikings | NFC | North | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 19 | New England Patriots | AFC | East | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 20 | New Orleans Saints | NFC | South | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 21 | New York Giants | NFC | East | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 22 | New York Jets | AFC | East | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 23 | Oakland Raiders | AFC | West | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 24 | Philadelphia Eagles | NFC | East | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 25 | Pittsburgh Steelers | AFC | North | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 26 | San Diego Chargers | AFC | West | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 27 | San Francisco 49ers | NFC | West | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 28 | Seattle Seahawks | NFC | West | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 29 | St. Louis Rams | NFC | West | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 30 | Tampa Bay Buccaneers | NFC | South | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 31 | Tennessee Titans | AFC | South | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
-| 32 | Washington Redskins | NFC | East | 0 | 0 | 0 | .000 | 0 | 0 | 0 | - |
+## Tiebreakers applied
+
+None. No two clubs have yet needed a tiebreaker.

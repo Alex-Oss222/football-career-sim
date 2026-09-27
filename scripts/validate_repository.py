@@ -196,6 +196,24 @@ def validate(root=ROOT):
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append(f'Malformed season statbook: {exc}')
 
+    # Standings and weekly box scores are generated from the same receipts.
+    try:
+        from scripts.render_standings import render as render_standings
+        standings = (root/'career/2013/standings.md').read_text()
+        require(standings == render_standings(2013, receipts),
+                'standings.md is stale; run render_standings.py')
+    except (OSError, ValueError, KeyError, TypeError, NameError) as exc:
+        errors.append(f'Standings cannot be rebuilt from receipts: {exc}')
+    try:
+        from scripts.render_box_score import stale_blocks
+        receipt_dir = root/'career/2013/stats/game_receipts'
+        for output in sorted((root/'career/2013/regular_season').glob('*/output.md')):
+            for event_id in stale_blocks(output, receipt_dir):
+                require(False, f'{output.relative_to(root)}: box score for {event_id} '
+                               'differs from its receipt; run render_box_score.py --write')
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append(f'Box score cannot be rebuilt from its receipt: {exc}')
+
     allowed_books = set(mapping['active_playbooks']) | {'career/playbook/README.md'}
     def readable(path):
         rel = path.relative_to(root).as_posix()

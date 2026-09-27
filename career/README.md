@@ -79,7 +79,7 @@ career/
         standouts.md
         position_battles.md    <- evidence-based open competitions
         roster_decisions.md   <- dated decisions; state/04 holds the current result
-    standings.md                <- the single current league / conference / division standings file (all 32 clubs); updated after each final regular-season result; a closed weekly snapshot is kept in league_results/week_NN.md
+    standings.md                <- league / conference / division standings, seeding and tiebreakers for all 32 clubs, generated from game receipts by scripts/render_standings.py (past weeks: --through-week N)
     statbook.md                 <- obvious front door for standings + every current season stat view
     stats/
       README.md                  <- statbook ownership, coverage and rebuild rules
@@ -139,4 +139,4 @@ Only phases and rounds actually reached in play get created — never pre-built 
 
 ## Season statbook
 
-Season statistics are current derived views, parallel to standings. Every closed game should preserve a public stat receipt and the cumulative views should be rebuilt from those receipts rather than hand-added week to week. Statistical totals do not alter roster evaluation tiers, standings tiebreaks, or game resolution. A legacy coverage gap must remain labeled until canonically backfilled.
+Season statistics are current derived views, parallel to standings. Every closed game preserves a public stat receipt; the season views, the standings and each week's box score are generated from those receipts, never hand-added week to week. Statistical totals do not alter roster evaluation tiers, standings tiebreaks, or game resolution. A legacy coverage gap must remain labeled until canonically backfilled.

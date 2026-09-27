@@ -1,33 +1,38 @@
 # 2013 Statbook
 
-This is the front door for season statistics.
+The front door for season statistics and standings. Every page below is generated from the closed-game receipts; none is maintained by hand.
 
-## Current views
+## Pages
 
-| View | Purpose |
+| Page | What it shows |
 |---|---|
-| [Jacksonville player stats](stats/team_player_stats.md) | Jaguars season-to-date player production by category |
-| [All player stats](stats/all_player_stats.md) | Comprehensive supported-field ledger for every player preserved in the stat receipts |
-| [League player stats](stats/league_player_stats.md) | League-wide category tables |
-| [Stone play-call stats](stats/play_call_stats.md) | Season-to-date usage and results by named offensive concept |
-| [League leaders](stats/league_leaders.md) | Formal leaders when league receipt coverage and exact player attribution are complete |
-| [Team stats](stats/team_stats.md) | Per-game team totals for every club from the receipts |
-| [Band audit](stats/calibration_audit.md) | League receipts compared with the sourced 2012 position and volume shapes |
-| [Standings](standings.md) | Team W-L-T, division/conference/league position and tiebreak presentation |
-| [Statbook rules](stats/README.md) | Receipt storage, coverage rules and rebuild procedure |
+| [Standings](standings.md) | Division standings, conference seeding if the season ended today, the league table and every tiebreaker applied |
+| [Jacksonville player stats](stats/team_player_stats.md) | Jaguars players by position, then player |
+| [League player stats](stats/league_player_stats.md) | Every club's players, one league-wide table per position |
+| [All players by club](stats/all_player_stats.md) | Club, then position, then player |
+| [League leaders](stats/league_leaders.md) | Leaders within each position, qualified passer-rate leaders and leaders across positions |
+| [Team stats](stats/team_stats.md) | Per-game offense, defense and special teams for every club |
+| [Stone play-call stats](stats/play_call_stats.md) | Use and results of each named offensive call |
+| [Band audit](stats/calibration_audit.md) | League receipts against the sourced 2012 position and volume shapes |
+| [Statbook rules](stats/README.md) | Columns, qualifiers, receipt rules and rebuild commands |
+
+Each weekly `output.md` carries its game's box score, generated from the same receipt by `scripts/render_box_score.py`.
 
 ## Current coverage
 
-No regular-season game is canon. Week 1 was voided by ledger Entry 34 and its receipts were deleted, so every view is empty until the replayed Week 1 closes under kernel 2013.4.
+No regular-season game is canon. Week 1 was voided by ledger Entry 34 and its receipts were deleted, so every page is empty until the replayed Week 1 closes under kernel 2013.4.
 
-Every public player-stat dictionary returned by the shared game result is preserved in its game receipt and accumulated into the statbook. The comprehensive all-player ledger is not limited to leaders, starters or standouts. Rebuild every view with one command:
+## Rebuild
 
-`python scripts/render_season_stats.py 2013 --team "Jacksonville Jaguars"`
+```
+python scripts/render_season_stats.py 2013 --team "Jacksonville Jaguars"
+python scripts/render_standings.py 2013
+```
 
 ## Snap ledger
 
-Since kernel 2013.3 every closed game result carries a canonical public `play_ledger`. The corresponding game receipt stores the entire ledger, including every generated scrimmage snap and scoring/special-teams terminal play. Named Jacksonville calls come from the structured weekly offensive call sheet. The season play-call page is derived from those raw snap records.
+Every Jacksonville receipt stores the complete public `play_ledger`: each scrimmage snap with its named call, and each scoring or special-teams terminal play. The play-call page, including its explosive (20+ yard) and negative-play counts, is derived from those snap records. The ledger records play type, gain, participants and clock; it does not record down, distance or field position, so red-zone and down-and-distance splits are not generated.
 
 ## Player attribution (kernel 2013.4)
 
-Carries, targets, tackles and defensive credits follow the club depth chart supplied in each TeamInput, shaped by sourced 2012 league-wide position usage (`../../library/2012_position_usage_calibration.md`). One passer plays the whole game unless a coach input changes it. Assisted tackles and tackles for loss are generated. The band audit flags a week whose league totals drift from those shapes; it never reruns a game.
+Carries, targets, tackles and defensive credits follow the club depth chart supplied in each TeamInput, shaped by sourced 2012 league-wide position usage (`../../library/2012_position_usage_calibration.md`). One passer plays the whole game unless a coach input changes it. The band audit flags a week whose league totals drift from those shapes; it never reruns a game.

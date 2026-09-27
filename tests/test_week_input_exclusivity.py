@@ -18,13 +18,19 @@ class WeekInputExclusivityTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             path=Path(tmp)/"roster.md"
             path.write_text(
-                "| Player | Current status |\n"
-                "|---|---|\n"
-                "| Kirk Cousins | Active 53 |\n"
-                "| Brent Grimes | Active 53 |\n"
+                "| Player | Pos | Status | Availability | Role |\n"
+                "|---|---|---|---|---|\n"
+                "| Kirk Cousins | QB | Active 53 | No communicated restriction | QB1 |\n"
+                "| Brent Grimes | CB | Active 53 | No communicated restriction | — |\n"
                 "\n"
-                "**Jacksonville practice squad (not active 53):** "
-                "Tyler Bray, Brandon King.\n",
+                "| Player | Pos | Status |\n"
+                "|---|---|---|\n"
+                "| Tyler Bray | QB | Practice squad |\n"
+                "| Brandon King | DB | Practice squad |\n"
+                "\n"
+                "| Player | Current branch status |\n"
+                "|---|---|\n"
+                "| Austen Lane | Claimed on waivers |\n",
                 encoding="utf-8",
             )
             self.assertEqual(

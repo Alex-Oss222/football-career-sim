@@ -1,150 +1,160 @@
-# Jacksonville Jaguars — Current Roster
+# Jacksonville Jaguars roster
 
 **As of:** September 4, 2013, after regular-season cap compliance.
-**Week 1 status:** void and awaiting replay (ledger Entry 34); no Week 1 injury, role change or result applies.
 **Canonical controlled-player count:** **53**.
-**Practice squad:** **8, separate from active roster**.
-**Preseason / regular-season records:** **2-2 / 0-0**.
+**Practice squad:** **8**, separate from the active roster.
+**Record:** preseason 2-2; regular season 0-0. Week 1 (voided by ledger Entry 34) awaits replay, so no Week 1 injury, role change or result applies.
 
-## 1. Transition summary
+## 1. How to read this page
 
-Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers and formed a separate eight-player practice squad September 1, and completed regular-season cap compliance September 4.
+Players are grouped by position. **Pos** is the roster position in Document 4. **Availability** is the club's current medical communication; "No communicated restriction" means none has been communicated, and game-week status still requires fresh communication before each game. **Role** lists only assignments already decided in canon (ledger and Document 4, September 4); a dash means no assignment has been set, not a demotion. The depth chart below those roles is set by staff decisions and is not implied by the order of this page.
 
-## 2. Current role and medical summary
+## 2. How the roster was formed
 
-Cousins is QB1, Henne QB2 and Wilson QB3. Pasztor remains on an independent medical hold; Mosley is medically unavailable; Smith cleared his short restriction. All other active players have no communicated football restriction, subject to fresh Week 1 communication.
+Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers and formed an eight-player practice squad on September 1, and completed regular-season cap compliance on September 4.
 
 ## 3. Current controlled players
 
-### Quarterbacks — 3
+### Quarterbacks (3)
 
-| Player | Current status |
-|---|---|
-| Kirk Cousins | Active 53 |
-| Chad Henne | Active 53 |
-| John Parker Wilson | Active 53 |
+| Player | Pos | Status | Availability | Role |
+|---|---|---|---|---|
+| Kirk Cousins | QB | Active 53 | No communicated restriction | QB1 |
+| Chad Henne | QB | Active 53 | No communicated restriction | QB2 |
+| John Parker Wilson | QB | Active 53 | No communicated restriction | QB3 |
 
-### Running backs — 3
+### Running backs (3)
 
-| Player | Current status |
-|---|---|
-| C.J. Anderson | Active 53 |
-| Jonathan Grimes | Active 53 |
-| Maurice Jones-Drew | Active 53 |
+| Player | Pos | Status | Availability | Role |
+|---|---|---|---|---|
+| C.J. Anderson | RB | Active 53 | No communicated restriction | — |
+| Jonathan Grimes | RB | Active 53 | No communicated restriction | — |
+| Maurice Jones-Drew | RB | Active 53 | No communicated restriction | — |
 
-### Fullbacks — 1
+### Fullbacks (1)
 
-| Player | Current status |
-|---|---|
-| Montell Owens | Active 53 |
+| Player | Pos | Status | Availability | Role |
+|---|---|---|---|---|
+| Montell Owens | FB | Active 53 | No communicated restriction | — |
 
-### Wide receivers — 5
+### Wide receivers (5)
 
-| Player | Current status |
-|---|---|
-| Justin Blackmon | Active 53 |
-| Mike Brown | Active 53 |
-| Toney Clemons | Active 53 |
-| Cecil Shorts | Active 53 |
-| Adam Thielen | Active 53 |
+| Player | Pos | Status | Availability | Role |
+|---|---|---|---|---|
+| Justin Blackmon | WR | Active 53 | No communicated restriction | — |
+| Mike Brown | WR | Active 53 | No communicated restriction | — |
+| Toney Clemons | WR | Active 53 | No communicated restriction | — |
+| Cecil Shorts | WR | Active 53 | No communicated restriction | — |
+| Adam Thielen | WR | Active 53 | No communicated restriction | WR3 |
 
-### Tight ends — 3
+### Tight ends (3)
 
-| Player | Current status |
-|---|---|
-| Allen Reisner | Active 53 |
-| Marcedes Lewis | Active 53 |
-| Travis Kelce | Active 53 |
+| Player | Pos | Status | Availability | Role |
+|---|---|---|---|---|
+| Allen Reisner | TE | Active 53 | No communicated restriction | — |
+| Marcedes Lewis | TE | Active 53 | No communicated restriction | — |
+| Travis Kelce | TE | Active 53 | No communicated restriction | TE2 |
 
-### Offensive tackles — 3
+### Offensive tackles (3)
 
-| Player | Current status |
-|---|---|
-| Cameron Bradfield | Active 53 |
-| Lane Johnson | Active 53 |
-| Eugene Monroe | Active 53 |
+| Player | Pos | Status | Availability | Role |
+|---|---|---|---|---|
+| Cameron Bradfield | OT | Active 53 | No communicated restriction | — |
+| Lane Johnson | OT | Active 53 | No communicated restriction | Starting right tackle |
+| Eugene Monroe | OT | Active 53 | No communicated restriction | — |
 
-### Offensive guards — 4
+### Offensive guards (4)
 
-| Player | Current status |
-|---|---|
-| Mark Asper | Active 53 |
-| Uche Nwaneri | Active 53 |
-| Austin Pasztor | Active 53 |
-| Will Rackley | Active 53 |
+| Player | Pos | Status | Availability | Role |
+|---|---|---|---|---|
+| Mark Asper | G | Active 53 | No communicated restriction | — |
+| Uche Nwaneri | G | Active 53 | No communicated restriction | — |
+| Austin Pasztor | G | Active 53 | Independent medical hold (August 17 head/neck injury) | — |
+| Will Rackley | G | Active 53 | No communicated restriction | Starting right guard |
 
-### Centers — 2
+### Centers (2)
 
-| Player | Current status |
-|---|---|
-| Mike Brewster | Active 53 |
-| Brad Meester | Active 53 |
+| Player | Pos | Status | Availability | Role |
+|---|---|---|---|---|
+| Mike Brewster | C | Active 53 | No communicated restriction | — |
+| Brad Meester | C | Active 53 | No communicated restriction | — |
 
-### Defensive ends / edge — 6
+### Defensive ends (6)
 
-| Player | Current status |
-|---|---|
-| Jason Babin | Active 53 |
-| Andre Branch | Active 53 |
-| Ryan Davis | Active 53 |
-| Lavar Edwards | Active 53 |
-| Jeremy Mincey | Active 53 |
-| C.J. Wilson | Active 53 |
+| Player | Pos | Status | Availability | Role |
+|---|---|---|---|---|
+| Jason Babin | DE | Active 53 | No communicated restriction | — |
+| Andre Branch | DE | Active 53 | No communicated restriction | — |
+| Ryan Davis | DE | Active 53 | No communicated restriction | — |
+| Lavar Edwards | DE | Active 53 | No communicated restriction | — |
+| Jeremy Mincey | DE | Active 53 | No communicated restriction | — |
+| C.J. Wilson | DE | Active 53 | No communicated restriction | — |
 
-### Defensive tackles — 5
+### Defensive tackles (5)
 
-| Player | Current status |
-|---|---|
-| Tyson Alualu | Active 53 |
-| Sen'Derrick Marks | Active 53 |
-| Roy Miller | Active 53 |
-| C.J. Mosley | Active 53 |
-| Jeris Pendleton | Active 53 |
+| Player | Pos | Status | Availability | Role |
+|---|---|---|---|---|
+| Tyson Alualu | DT | Active 53 | No communicated restriction | — |
+| Sen'Derrick Marks | DT | Active 53 | No communicated restriction | — |
+| Roy Miller | DT | Active 53 | No communicated restriction | — |
+| C.J. Mosley | DT | Active 53 | Medically unavailable (August 29 upper-extremity injury) | — |
+| Jeris Pendleton | DT | Active 53 | No communicated restriction | — |
 
-### Linebackers — 5
+### Linebackers (5)
 
-| Player | Current status |
-|---|---|
-| Russell Allen | Active 53 |
-| Sio Moore | Active 53 |
-| Paul Posluszny | Active 53 |
-| Daryl Smith | Active 53 |
-| Julian Stanford | Active 53 |
+| Player | Pos | Status | Availability | Role |
+|---|---|---|---|---|
+| Russell Allen | LB | Active 53 | No communicated restriction | — |
+| Sio Moore | LB | Active 53 | No communicated restriction | — |
+| Paul Posluszny | LB | Active 53 | No communicated restriction | — |
+| Daryl Smith | LB | Active 53 | No communicated restriction | — |
+| Julian Stanford | LB | Active 53 | No communicated restriction | — |
 
-### Cornerbacks — 6
+### Cornerbacks (6)
 
-| Player | Current status |
-|---|---|
-| Alan Ball | Active 53 |
-| A.J. Bouye | Active 53 |
-| Brent Grimes | Active 53 |
-| Mike Harris | Active 53 |
-| Jordan Poyer | Active 53 |
-| Kevin Rutland | Active 53 |
+| Player | Pos | Status | Availability | Role |
+|---|---|---|---|---|
+| Alan Ball | CB | Active 53 | No communicated restriction | — |
+| A.J. Bouye | CB | Active 53 | No communicated restriction | — |
+| Brent Grimes | CB | Active 53 | No communicated restriction | — |
+| Mike Harris | CB | Active 53 | No communicated restriction | — |
+| Jordan Poyer | CB | Active 53 | No communicated restriction | — |
+| Kevin Rutland | CB | Active 53 | No communicated restriction | — |
 
-### Safeties — 4
+### Safeties (4)
 
-| Player | Current status |
-|---|---|
-| Dwight Lowery | Active 53 |
-| Chris Prosinski | Active 53 |
-| Bacarri Rambo | Active 53 |
-| Brynden Trawick | Active 53 |
+| Player | Pos | Status | Availability | Role |
+|---|---|---|---|---|
+| Dwight Lowery | S | Active 53 | No communicated restriction | — |
+| Chris Prosinski | S | Active 53 | No communicated restriction | — |
+| Bacarri Rambo | S | Active 53 | No communicated restriction | — |
+| Brynden Trawick | S | Active 53 | No communicated restriction | — |
 
-### Specialists — 3
+### Specialists (3)
 
-| Player | Current status |
-|---|---|
-| Josh Scobee | Active 53 |
-| Bryan Anger | Active 53 |
-| Jeremy Cain | Active 53 |
+| Player | Pos | Status | Availability | Role |
+|---|---|---|---|---|
+| Josh Scobee | K | Active 53 | No communicated restriction | — |
+| Bryan Anger | P | Active 53 | No communicated restriction | — |
+| Jeremy Cain | LS | Active 53 | No communicated restriction | — |
 
-## 4. August 31 departures / September 1 practice squad
+## 4. Practice squad
 
-**Claimed by other clubs:** Austen Lane, Brandon Marshall, Isaiah Stanback.
+| Player | Pos | Status |
+|---|---|---|
+| Tyler Bray | QB | Practice squad |
+| Richard Murphy | RB | Practice squad |
+| Will Ta'ufo'ou | FB | Practice squad |
+| Jerrell Jackson | WR | Practice squad |
+| Jerome Long | DT | Practice squad |
+| D'Anthony Smith | DT | Practice squad |
+| Brandon King | DB | Practice squad |
+| Antwon Blake | S | Practice squad |
 
-**Jacksonville practice squad (not active 53):** Tyler Bray, Richard Murphy, Will Ta'ufo'ou, Jerrell Jackson, Jerome Long, D'Anthony Smith, Brandon King, Antwon Blake.
+## 5. August 31 departures
 
-## 5. Financial pointer
+Claimed by other clubs on waivers: Austen Lane, Brandon Marshall, Isaiah Stanback.
+
+## 6. Finances
 
 See `offseason/current_cap_worksheet.md`. Top-51 accounting has expired. Current source-bounded room is approximately $6.2M-$6.6M before weekly practice-squad charges.

@@ -19,25 +19,30 @@ from runtime.usage import group, lineup_errors
 DEPTH_REQUIRED = ("QB", "RB", "WR", "TE")
 
 
+CONTROLLED_STATUS = re.compile(
+    r"^(?:Active 53|Practice squad|Injured reserve|IR|Reserve(?:/[^|]+)?|"
+    r"PUP|NFI|Suspended|Commissioner(?:/[^|]+)?)$",
+    re.IGNORECASE,
+)
+
+
 def controlled_players_from_roster(path: Path) -> set[str]:
-    text = path.read_text(encoding="utf-8")
+    """Every player in a roster table whose Status column shows club control."""
     controlled: set[str] = set()
-    controlled_status = re.compile(
-        r"^(?:Active 53|Practice squad|Injured reserve|IR|Reserve(?:/[^|]+)?|"
-        r"PUP|NFI|Suspended|Commissioner(?:/[^|]+)?)$",
-        re.IGNORECASE,
-    )
-    for line in text.splitlines():
-        match = re.match(r"^\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|", line)
-        if match and controlled_status.match(match.group(2).strip()):
-            controlled.add(match.group(1).strip())
-        if line.startswith("**Jacksonville practice squad (not active 53):**"):
-            _, names = line.split(":**", 1)
-            controlled.update(
-                name.strip().rstrip(".")
-                for name in names.split(",")
-                if name.strip()
-            )
+    player_col = status_col = None
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.startswith("|"):
+            player_col = status_col = None
+            continue
+        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+        if "Player" in cells:
+            player_col = cells.index("Player")
+            status_col = next((i for i, c in enumerate(cells) if "status" in c.lower()), None)
+            continue
+        if player_col is None or status_col is None or set(cells[0]) <= {"-", ":"}:
+            continue
+        if status_col < len(cells) and CONTROLLED_STATUS.match(cells[status_col]):
+            controlled.add(cells[player_col])
     return controlled
 
 

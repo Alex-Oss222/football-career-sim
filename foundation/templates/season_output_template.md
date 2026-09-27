@@ -31,21 +31,19 @@ Background games remain in `career/[year]/league_results/week_NN.md`; they are n
 
 ## Season-stat persistence rule
 
-Every closed regular-season or postseason game also produces a **public stat receipt** under:
+Every closed regular-season or postseason game produces a **public stat receipt** under:
 
 `career/[year]/stats/game_receipts/`
 
-That receipt is downstream of the already-resolved game. Under kernel 2013.4 it contains the complete public player-stat dictionaries, the complete public snap `play_ledger`, game-level named `play_call_stats`, and identifiers needed to rebuild season totals. It must never contain private Engine State material, hidden ratings, matchup deltas, probabilities, or seeds.
+The receipt is downstream of the already-resolved game. It names the home and away clubs, the final score and team statistics, and a player row for every player on each club's game-day active list. Protagonist receipts also keep the complete public snap `play_ledger` and named `play_call_stats`. A receipt never contains private Engine State material, hidden ratings, matchup deltas, probabilities or seeds.
 
-The current season-stat views are separate from standings:
+Everything statistical is generated from the receipts, never added by hand:
 
-- `career/[year]/stats/team_player_stats.md` — protagonist-team season-to-date player production;
-- `career/[year]/stats/league_player_stats.md` — all-club season-to-date player production;
-- `career/[year]/stats/play_call_stats.md` — protagonist offense season-to-date named-call usage and results;
-- `career/[year]/stats/league_leaders.md` — league leaders only when receipt coverage is complete;
-- `career/[year]/standings.md` — team records and tiebreak position only.
+- the week's box score in `output.md` (`scripts/render_box_score.py`);
+- `career/[year]/standings.md`: records, division order, seeding and tiebreakers (`scripts/render_standings.py`);
+- `career/[year]/stats/`: player views by position, leaders, team statistics and named-call statistics (`scripts/render_season_stats.py`).
 
-Season totals should be rebuilt mechanically from game receipts using the repository statbook tooling rather than hand-added from the prior week's Markdown. A missing legacy attribution remains missing; never import the real historical game's statistic to fill it.
+A missing attribution stays missing; never import the real historical game's statistic to fill it.
 
 ## Structured weekly call-sheet rule
 
@@ -190,36 +188,20 @@ Before the week closes, perform this pass:
 
 ## Box-score presentation rule
 
-Every played game gets a **full statistical box score for both teams**. Do not use "selected offense," "selected defense," or a hand-picked stat list.
+Every played game gets a **full statistical box score for both teams**, generated from the game's receipt. Never type or edit box-score numbers by hand.
 
-The presentation target is the same basic information hierarchy used by major football box-score pages such as ESPN: a compact team comparison first, then each team separated into **Passing, Rushing, Receiving, Defense, and Special Teams**. This is a structural reference, not a requirement to copy ESPN branding or wording.
+Place this block where the box score belongs, then fill it:
 
-### Coverage rules
+```
+<!-- box-score event=EVENT_ID team=[Your team] -->
+<!-- /box-score -->
+```
 
-- Show **both teams**, even when one side is the protagonist.
-- Within each category, show every player with a nonzero generated statistic in that category. A low-volume player is still part of the box score.
-- Keep offense and defense separate. Do not combine a player's rushing and receiving into one compressed cell.
-- Use a **Team total** row wherever the canonical totals exist and reconcile.
-- If a team-level statistic exists but the runtime did not preserve player attribution, use a clearly labeled **Team / unattributed** row. Never guess the player.
-- A blank or dash means "not applicable." It must not mean "unknown." If a statistic was not generated, remove that column or explicitly mark the field as not generated.
-- Derived rate stats are allowed only when they are simple arithmetic from canonical counts, such as yards per carry or yards per reception. Do not invent completion percentage, passer rating, longest gain, YAC, targets, tackle splits, or similar fields unless the underlying data exists.
-- Box-score tables contain football statistics, not qualitative tiers or coaching judgments.
-- Never import the real historical game's player statistics to make the table look complete.
+`python scripts/render_box_score.py --write career/[year]/regular_season/week_NN_<away>_at_<home>/output.md`
 
-### Preferred category columns
+The generated box score follows the standard NFL layout: a team comparison, then each club in turn (your team first) with Passing, Rushing, Receiving, Fumbles, Defense, Kicking, Punting and Returns. Every player with a generated statistic in a category appears in it; Passing, Rushing, Receiving and Defense end with a **Team total** row. A line whose player attribution could not be preserved appears as **Team / unattributed**.
 
-Use the fullest supported subset of these columns:
-
-- **Passing:** CMP/ATT, YDS, AVG, TD, INT, SACK, RTG.
-- **Rushing:** CAR, YDS, AVG, TD, LNG.
-- **Receiving:** REC, TGTS, YDS, AVG, TD, LNG.
-- **Defense:** SOLO, AST, TOT, SACK, TFL, PD, INT, INT YDS, FF, FR.
-- **Kicking:** FGM/FGA, XPM/XPA, PTS.
-- **Punting:** NO, YDS, AVG, TB, IN20, LNG.
-- **Returns:** KR, KR YDS, KR AVG, PR, PR YDS, PR AVG.
-- **Fumbles:** FUM, LOST, REC when generated.
-
-For a single-game box score, do not add season-only columns such as GP or YDS/G unless the user explicitly asks for a season-stat view.
+The box score shows only statistics the engine generates. Derived columns are arithmetic on those counts: completion percentage, averages and the official NFL passer rating (RTG) from completions, attempts, yards, touchdowns and interceptions. The engine does not generate red-zone or down-and-distance data, so neither appears. `scripts/validate_repository.py` fails if a filled box score differs from its receipt.
 
 ## Media rule
 
@@ -302,78 +284,10 @@ A routine pregame session normally uses **2-3 substantive questions**. A routine
 
 ### Box score
 
-#### Team comparison
+<!-- box-score event=[EVENT_ID] team=[Your team] -->
+<!-- /box-score -->
 
-| Statistic | [Your team] | [Opponent] |
-|---|---:|---:|
-| Total yards | [X] | [Y] |
-| Passing yards | [X] | [Y] |
-| Rushing yards | [X] | [Y] |
-| First downs | [X] | [Y] |
-| Turnovers | [X] | [Y] |
-| Sacks allowed | [X] | [Y] |
-| Penalties-yards | [X-Y] | [X-Y] |
-| 3rd down | [X/Y] | [X/Y] |
-| Red zone | [X/Y] | [X/Y] |
-| Time of possession | [MM:SS] | [MM:SS] |
-
-[Remove any team-stat row the canonical result did not generate. Do not fill missing rows with guessed values.]
-
-#### [Your team]
-
-##### Passing
-
-| Player | CMP/ATT* | YDS | AVG* | TD* | INT | SACK* | RTG* |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| [Player] | [X/Y] | [YDS] | [AVG] | [TD] | [INT] | [SACK] | [RTG] |
-| **Team total** | [X/Y] | [YDS] | [AVG] | [TD] | [INT] | [SACK] | [RTG] |
-
-##### Rushing
-
-| Player | CAR | YDS | AVG | TD* | LNG* |
-|---|---:|---:|---:|---:|---:|
-| [Player] | [CAR] | [YDS] | [AVG] | [TD] | [LNG] |
-| **Team total** | [CAR] | [YDS] | [AVG] | [TD] | [LNG] |
-
-##### Receiving
-
-| Player | REC | TGTS* | YDS | AVG | TD* | LNG* |
-|---|---:|---:|---:|---:|---:|---:|
-| [Player] | [REC] | [TGTS] | [YDS] | [AVG] | [TD] | [LNG] |
-| **Team total** | [REC] | [TGTS] | [YDS] | [AVG] | [TD] | [LNG] |
-
-##### Defense
-
-| Player | SOLO* | AST* | TOT* | SACK | TFL* | PD* | INT* | INT YDS* | FF* | FR* |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| [Player] | [SOLO] | [AST] | [TOT] | [SACK] | [TFL] | [PD] | [INT] | [YDS] | [FF] | [FR] |
-| **Team total** | [SOLO] | [AST] | [TOT] | [SACK] | [TFL] | [PD] | [INT] | [YDS] | [FF] | [FR] |
-
-##### Special teams
-
-**Kicking**
-
-| Player | FGM/FGA* | XPM/XPA* | PTS* |
-|---|---:|---:|---:|
-| [Kicker] | [X/Y] | [X/Y] | [PTS] |
-
-**Punting**
-
-| Player | NO | YDS* | AVG* | TB* | IN20* | LNG* |
-|---|---:|---:|---:|---:|---:|---:|
-| [Punter] | [NO] | [YDS] | [AVG] | [TB] | [IN20] | [LNG] |
-
-**Returns**
-
-| Player | KR | KR YDS* | KR AVG* | PR | PR YDS* | PR AVG* |
-|---|---:|---:|---:|---:|---:|---:|
-| [Returner] | [KR] | [YDS] | [AVG] | [PR] | [YDS] | [AVG] |
-
-#### [Opponent]
-
-[Repeat the same Passing, Rushing, Receiving, Defense, and Special Teams tables for the opponent. Do not compress the opponent into a one-line summary.]
-
-\* Remove unsupported columns completely when the canonical game payload does not generate them. Unknown is never zero.
+[Filled by `scripts/render_box_score.py --write`; see the box-score presentation rule.]
 
 **Standout performances**
 - [Player]: [Specific football evidence and relevant statistics.]
@@ -460,12 +374,9 @@ Do not repeat the entire roster or every unchanged backup. `career/[year]/roster
 
 ## 8. Week closure
 
-**Record after game:** [W-L]
-**Division / conference position:** [Only if materially useful; standings.md remains authoritative.]
-**Season player stats:** [`career/[year]/stats/team_player_stats.md` version / through week]
-**League player stats:** [`career/[year]/stats/league_player_stats.md` version / coverage status]
-**Stone play-call stats:** [`career/[year]/stats/play_call_stats.md` version / through week]
-**League leaders:** [`career/[year]/stats/league_leaders.md` version / complete or withheld]
+**Record after game:** [W-L-T]
+**Division / conference position:** [From `career/[year]/standings.md`: division place and current seed, when useful.]
+**Statbook:** [Through week and coverage status of the regenerated `career/[year]/stats/` views; leaders complete or withheld.]
 **Ledger entry:** [Entry N]
 **Next event:** [Exact next football/calendar event]
 ~~~

@@ -1,21 +1,31 @@
 # Game stat receipts
 
-Store one JSON stat receipt per closed regular-season or postseason game.
+One JSON receipt per closed regular-season or postseason game, written by `runtime.statbook.make_receipt` after the game closes. Receipts are the only source for the season statbook, the standings and every weekly box score.
 
-Normal-week naming pattern:
+Normal-week naming pattern: `week_NN_<away>_at_<home>.json`. Migration and reset receipts keep their immutable event-id filenames when that identity is part of an audited replacement batch.
 
-`week_NN_<away>_at_<home>.json`
+## Contents (statbook schema 3)
 
-Migration/reset receipts may retain immutable event-ID filenames when that identity is part of the audited replacement batch.
+- `event_id`, `week`, `matchup` (`Away Club at Home Club`), and the designated `home` and `away` clubs.
+- `final_score` and each club's team statistics.
+- A player row for every player on each club's game-day active list. Each row carries the player's position, `games: 1`, and his generated statistics.
+- Jacksonville and protagonist games use `detail="full"`: player rows keep every counter, including zeros, and the receipt adds the public snap `play_ledger` and named-call `play_call_stats`.
+- Ordinary background games use `detail="compact_stats"`: player rows keep only nonzero counters plus `games`, and there is no snap ledger or named-call data. This keeps weekly diffs reviewable without losing any generated statistic or appearance.
 
-A receipt is created **after** the game is closed and contains only public game output needed for durable season accounting. Under kernel 2013.4, Jacksonville/protagonist games use `detail="full"` and retain complete player dictionaries, the public snap `play_ledger`, and `play_call_stats`. Ordinary background games use `detail="compact_stats"`: every nonzero generated team/player statistic is retained, while background snap rows, named-call data, zero-only player rows and zero-valued player fields are omitted to keep weekly Git diffs reviewable. Neither receipt type may contain private Engine State data, seeds, probability distributions, hidden ratings, or matchup deltas.
+No receipt may contain private Engine State data, seeds, probability distributions, hidden ratings or matchup deltas.
 
-The receipt schema is produced by `runtime.statbook.make_receipt`. Rebuilding the current stat views is handled by:
+## Rebuilding
 
-`python scripts/render_season_stats.py YEAR --team TEAM_ID`
-
-This directory is empty: the generation-2 Week 1 receipts were deleted when ledger Entry 34 voided Week 1. The replay writes generation-3 receipts under kernel 2013.4 (see `../../migrations/week_01_kernel_2013_4_restart.md`).
+```
+python scripts/render_season_stats.py 2013 --team "Jacksonville Jaguars"
+python scripts/render_standings.py 2013
+python scripts/render_box_score.py --write career/2013/regular_season/week_NN_<away>_at_<home>/output.md
+```
 
 ## Attribution corrections
 
-A receipt may include `player_attribution_incomplete_teams` when a later integrity correction proves that a preserved player identity could not legally belong to that simulated club but the exact eligible replacement attribution is unknowable. In that case the generated statistics move to a pseudo-player id beginning `__`; team totals remain exact, pseudo rows are excluded from player leaderboards, and league player rankings remain withheld. Never invent a replacement player's line merely to restore leaderboard completeness.
+A receipt may list `player_attribution_incomplete_teams` when a later integrity correction proves that a preserved player identity could not legally belong to that simulated club and the exact eligible replacement is unknowable. The statistics then move to a pseudo-player id beginning `__`: team totals stay exact, box scores show the line as `Team / unattributed`, pseudo rows never enter leaderboards, and league player rankings stay withheld. A replacement player's line is never invented to restore completeness.
+
+## Current contents
+
+Empty. The generation-2 Week 1 receipts were deleted when ledger Entry 34 voided Week 1. The replay writes generation-3 receipts under kernel 2013.4 (see `../../migrations/week_01_kernel_2013_4_restart.md`).
