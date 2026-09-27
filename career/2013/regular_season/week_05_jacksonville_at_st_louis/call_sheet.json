@@ -1,0 +1,116 @@
+{
+ "schema_version": 1,
+ "team": "Jacksonville Jaguars",
+ "event": "2013 Regular Season Week 5, Jacksonville at St. Louis",
+ "status": "EX_ANTE_CALL_SHEET_FROZEN",
+ "provenance": "Stone's Week 5 game plan, runner-ready call sheet (section 40), frozen verbatim before any Week 5 draw under kernel 2013.6. Every concept and package on it (6OL, 12 Shift Empty, Jet, TE Delay, Snag) appears in the active 2013 offensive iteration. Script order, jump rules, HOLD/ROTATE/PRESS tempo and shot triggers are in-game coaching guidance the kernel does not condition on. Menu calls without a structured entry (Slant-Flat, Texas, RB Slow, RB Slip, Mills Max, Sneak) are not on the sheet.",
+ "offensive_call_sheet": [
+  {
+   "name": "12 Ace Right, Power R",
+   "family": "Power",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace Right"
+  },
+  {
+   "name": "12 Ace, Shift Empty, Stick",
+   "family": "Stick",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Ace Shift Empty"
+  },
+  {
+   "name": "11 Trey Right, Jet L",
+   "family": "Jet Sweep",
+   "type": "run",
+   "personnel": "11",
+   "formation": "11 Trey Right"
+  },
+  {
+   "name": "21 Pro Left, Counter R",
+   "family": "Counter",
+   "type": "run",
+   "personnel": "21",
+   "formation": "21 Pro Left"
+  },
+  {
+   "name": "11 Bunch Right, Return, Mesh",
+   "family": "Mesh",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Bunch Right"
+  },
+  {
+   "name": "6OL Heavy Right, Power R",
+   "family": "Power",
+   "type": "run",
+   "personnel": "6OL",
+   "formation": "6OL Heavy Right"
+  },
+  {
+   "name": "6OL Heavy Right, Counter L",
+   "family": "Counter",
+   "type": "run",
+   "personnel": "6OL",
+   "formation": "6OL Heavy Right"
+  },
+  {
+   "name": "6OL Wing Left, TE Delay",
+   "family": "TE Delay",
+   "type": "pass",
+   "personnel": "6OL",
+   "formation": "6OL Wing Left"
+  },
+  {
+   "name": "20 Doubles, Drive",
+   "family": "Drive",
+   "type": "pass",
+   "personnel": "20",
+   "formation": "20 Doubles"
+  },
+  {
+   "name": "20 Doubles, Draw",
+   "family": "Draw",
+   "type": "run",
+   "personnel": "20",
+   "formation": "20 Doubles"
+  },
+  {
+   "name": "11 Trips Right, Inside L, Access Bubble",
+   "family": "Inside + Bubble",
+   "type": "run",
+   "personnel": "11",
+   "formation": "11 Trips Right"
+  },
+  {
+   "name": "12 Trey Right, Y-Cross, Solid",
+   "family": "Y-Cross",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey Right",
+   "protection": "Solid"
+  },
+  {
+   "name": "12 Bunch Right, Snag",
+   "family": "Snag",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Bunch Right"
+  },
+  {
+   "name": "12 Ace Right, Power Pass, Post-Cross, Max",
+   "family": "Power Pass",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Ace Right",
+   "protection": "Max"
+  },
+  {
+   "name": "12 Doubles, Spacing",
+   "family": "Spacing",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Doubles"
+  }
+ ]
+}

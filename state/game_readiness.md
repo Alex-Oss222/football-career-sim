@@ -2,7 +2,7 @@
 
 **Status: BLOCKED in this checkout until the mandatory authenticated live preflight succeeds.**
 
-The public implementation and evidence gates are verified, but readiness is fail-closed: this environment does not currently provide the Railway URL and token, so it cannot certify the external service. This is an administrative readiness assessment, not a simulated event. The career stands at September 22, 2013, after Week 3; Week 4 (Indianapolis at Jacksonville) is NOT STARTED and will be the first event resolved under kernel 2013.6, which the private service must report before any Week 4 event closes.
+The public implementation and evidence gates are verified, but readiness is fail-closed: this environment does not currently provide the Railway URL and token, so it cannot certify the external service. This is an administrative readiness assessment, not a simulated event. The career position and next event are in Document 5 (`state/05_Current_Season_State.md`). The private service must report the repository's kernel version before any event closes.
 
 | Requirement | Verified evidence | Executable proof |
 |---|---|---|

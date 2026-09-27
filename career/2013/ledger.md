@@ -868,3 +868,44 @@ The kernel constants and the private service identity move together to 2013.6. N
 **Next competitive event:** October 6 Week 5 at St. Louis, 1 p.m. ET. **Not simulated.**
 
 **Commit closed - Canonical update - September 29, 2013 - Week 4 vs Indianapolis closed - canonical through September 29, after Week 4**
+
+## Entry 41: Week 5 closed
+
+**Effective canonical state:** October 6, 2013, after Week 5
+**Recorded:** September 27, 2026
+**Checkpoint:** `Canonical update - October 6, 2013 - Week 5 at St. Louis closed`
+**Preceding global package checkpoint:** `Canonical update - September 29, 2013 - Week 4 vs Indianapolis closed`
+
+**Result.** St. Louis 26, Jacksonville 24 at the Edward Jones Dome. Jacksonville is 3-2 and first in the AFC South on a three-way tie.
+
+**Batch.** All fourteen Week 5 games closed once each under kernel 2013.6 through `runtime.game_runner.run_game` and the private Engine State service. They closed from the package frozen by `scripts/build_week_inputs.py 5` after the fourteen-game exclusivity and game-day gate passed. Minnesota, Pittsburgh, Tampa Bay and Washington had byes. No event was drawn twice.
+
+**Inputs.**
+- **Call sheet:** Stone's runner-ready sheet, frozen verbatim. Every package on it (6OL, 12 Shift Empty, Jet, TE Delay, Snag) is in the active 2013 offensive iteration.
+- **Line:** Brewster started at center with Meester as reserve, and Bradfield was the sixth offensive lineman.
+- **Linebackers:** Posluszny returned to the base defense with Smith, and Smith stayed the communication lead. Allen was first off the bench.
+- **Inactives:** Pasztor, Mosley, C.J. Wilson, Edwards, Rutland and John Parker Wilson (a game-day numbers decision; he stays QB3). Blackmon served the last game of the league suspension on Reserve/Suspended.
+- **Background clubs** dressed up to 46 players each, from depth order with branch injuries applied; the Jets dressed 43 because fewer were available (they dressed 44 in Weeks 3 and 4, where Entries 38 and 40 said 46 each; corrected here). Every club carried the Average low-confidence unit anchor.
+
+**Statistics and standings.** A full Jacksonville receipt and thirteen compact receipts are preserved. The box score, standings and statbook were generated from them. In the 2013.6 cohort every ledger-coherence count is zero, and every graded band row is WITHIN except field-goal accuracy under 30 yards: 26 of 30 against 231 of 239. It was investigated. `runtime.drive_model.fg_make_prob` applies the sourced rate correctly, and a result this low has about a 1.7% probability at that sample size, among some forty graded rows. No defect was found.
+
+**Availability.**
+- Adam Thielen is out (upper extremity, projected return October 9), before Week 6.
+- Will Rackley has a minor upper-extremity injury, limited with no projected absence (roster availability now reads "Limited, no projected absence", which the week-input builder treats as available, the same rule as every club).
+- Posluszny is available.
+- C.J. Wilson remains out, Pasztor on medical hold and Mosley unavailable.
+- Background injuries are listed in `league_results/week_05.md`.
+
+**Engine findings (investigated, not grounds to rerun).**
+- **Safety after a touchback.** Jacksonville's fourth-quarter possession after a touchback lost 13 yards on two runs and is recorded as a safety. From the 20 that is physically impossible. Kernel 2013.6 resamples real 2012 drives with no field position, so it does not tie a drive to where the previous kick or drive left the ball. This gap was left open deliberately in Entry 39 and first observed in Entry 40. The two points are the final margin.
+- **Short touchdown drive after a punt.** Jacksonville's one-net-yard touchdown drive after an unreturned 34-yard punt has the same cause.
+- **Call labels.** They are assigned uniformly from the sheet regardless of ball carrier. Five snaps carry the Jet L label, two of them Cousins runs. The labels do not represent Stone's call frequencies.
+- **Late punt.** The punt with 1:56 left while trailing by two reflects the kernel's lack of score-dependent fourth-down choice, a gap not addressed by Entry 39 and first recorded here.
+
+Under AGENTS.md these are engine defects to investigate, never grounds to rerun or select a result, and the result stands.
+
+**Primary records:** `regular_season/week_05_jacksonville_at_st_louis/output.md` and `call_sheet.json`; `league_results/week_05.md`; `stats/game_receipts/week_05_*.json`; `standings.md`; `depth_chart.json`.
+**Next roster event:** Blackmon's reinstatement from Reserve/Suspended at the end of the league suspension (Entry 36). Its date and roster treatment (open spot or roster exemption) are unverified and must be sourced before the Week 6 transaction. Stone's game-day inactive applies for Weeks 6 and 7.
+**Next competitive event:** October 13 Week 6 at Denver, 4:05 p.m. ET. **Not simulated.**
+
+**Commit closed - Canonical update - October 6, 2013 - Week 5 at St. Louis closed - canonical through October 6, after Week 5**

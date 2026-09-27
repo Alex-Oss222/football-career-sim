@@ -59,7 +59,7 @@ Passer-rate leaders (rating, completion percentage, yards per attempt) require 1
 
 ## Current coverage
 
-Through Week 4: sixty-three of sixty-three receipts, coverage complete.
+Through Week 5: seventy-seven of seventy-seven receipts, coverage complete.
 
 ## Branch-control rule
 

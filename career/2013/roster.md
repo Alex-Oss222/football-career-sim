@@ -1,10 +1,10 @@
 # Jacksonville Jaguars roster
 
-**As of:** September 29, 2013, after Week 4.
+**As of:** October 6, 2013, after Week 5.
 **Canonical controlled-player count:** **53**.
 **Active roster:** **52**; Justin Blackmon is on Reserve/Suspended and does not count against the 53, leaving one open spot.
 **Practice squad:** **8**, separate from the active roster.
-**Record:** preseason 2-2; regular season 2-1 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10).
+**Record:** preseason 2-2; regular season 3-2 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24).
 
 ## 1. How to read this page
 
@@ -46,7 +46,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Mike Brown | WR | Active 53 | No communicated restriction | WR4 |
 | Toney Clemons | WR | Active 53 | No communicated restriction | WR3 |
 | Cecil Shorts | WR | Active 53 | No communicated restriction | WR1 |
-| Adam Thielen | WR | Active 53 | No communicated restriction | WR2 |
+| Adam Thielen | WR | Active 53 | Out, upper extremity (Week 5); projected return October 9 | WR2 |
 
 ### Tight ends (3)
 
@@ -60,7 +60,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| Cameron Bradfield | OT | Active 53 | No communicated restriction | — |
+| Cameron Bradfield | OT | Active 53 | No communicated restriction | Swing tackle; sixth OL in 6OL |
 | Lane Johnson | OT | Active 53 | No communicated restriction | Starting right tackle |
 | Eugene Monroe | OT | Active 53 | No communicated restriction | — |
 
@@ -71,14 +71,14 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Mark Asper | G | Active 53 | No communicated restriction | — |
 | Uche Nwaneri | G | Active 53 | No communicated restriction | — |
 | Austin Pasztor | G | Active 53 | Independent medical hold (August 17 head/neck injury) | — |
-| Will Rackley | G | Active 53 | No communicated restriction | Starting right guard |
+| Will Rackley | G | Active 53 | Limited, no projected absence (upper extremity, Week 5) | Starting right guard |
 
 ### Centers (2)
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| Mike Brewster | C | Active 53 | No communicated restriction | Starting center (Weeks 3-4); evaluated weekly |
-| Brad Meester | C | Active 53 | No communicated restriction | Reserve center (Week 4); evaluated weekly |
+| Mike Brewster | C | Active 53 | No communicated restriction | Starting center (Weeks 3-5); evaluated weekly |
+| Brad Meester | C | Active 53 | No communicated restriction | Reserve center (Weeks 4-5); evaluated weekly |
 
 ### Defensive ends (6)
 
@@ -107,7 +107,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 |---|---|---|---|---|
 | Russell Allen | LB | Active 53 | No communicated restriction | — |
 | Sio Moore | LB | Active 53 | No communicated restriction | — |
-| Paul Posluszny | LB | Active 53 | Out, upper extremity (Week 3); projected return October 2 | — |
+| Paul Posluszny | LB | Active 53 | No communicated restriction | Base LB (Smith communication lead) |
 | Daryl Smith | LB | Active 53 | No communicated restriction | — |
 | Julian Stanford | LB | Active 53 | No communicated restriction | — |
 

@@ -1,7 +1,7 @@
 # 2013 Week 3 league results
 
 **Events:** `2013-week03-<away>-at-<home>`, kernel 2013.5, closed once each through the private production runner.
-**Inputs:** background clubs carried forward from the [Week 1 depth-chart library](../../../library/2013_week1_depth_charts.md) with branch injuries applied, each dressing 46 players chosen by depth order; every club at the Average low-confidence unit anchor.
+**Inputs:** background clubs carried forward from the [Week 1 depth-chart library](../../../library/2013_week1_depth_charts.md) with branch injuries applied, each dressing up to 46 players chosen by depth order (fewer when too few are available: the Jets dressed 43 or 44 in Weeks 3-5); every club at the Average low-confidence unit anchor.
 **Receipts:** `../stats/game_receipts/week_03_*.json`. **Standings:** [../standings.md](../standings.md), generated from the receipts.
 
 Jacksonville's game is recorded in [its weekly output](../regular_season/week_03_jacksonville_at_seattle/output.md): Jacksonville 16, Seattle 13.
