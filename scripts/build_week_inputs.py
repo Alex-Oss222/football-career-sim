@@ -53,14 +53,16 @@ def main():
 
     out = ROOT / ".sim_cache" / ("week_%02d_inputs.json" % args.week)
     out.parent.mkdir(exist_ok=True)
-    out.write_text(json.dumps(package, indent=1), encoding="utf-8")
     errors = check_inputs(package, controlled_players_from_roster(ROOT / "career/2013/roster.md"),
                           "Jacksonville Jaguars", expected_games=len(schedule(args.week)))
     if errors:
+        # Only a package that passed the gate may sit at the frozen path.
+        out.unlink(missing_ok=True)
         print("WEEK_INPUTS: BLOCKED")
         for error in errors:
             print("- " + error)
         return 1
+    out.write_text(json.dumps(package, indent=1), encoding="utf-8")
     digest = hashlib.sha256(out.read_bytes()).hexdigest()
     unavailable = sum(1 for g in package["games"] for side in ("away_input", "home_input")
                       for p in g[side]["roster"] if not p["available"])

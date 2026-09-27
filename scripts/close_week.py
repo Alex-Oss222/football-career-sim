@@ -50,6 +50,17 @@ def main():
 
     package_path = ROOT / ".sim_cache" / ("week_%02d_inputs.json" % args.week)
     package = json.loads(package_path.read_text(encoding="utf-8"))
+    from runtime.week_inputs import schedule
+    from scripts.check_week_input_exclusivity import check_inputs, controlled_players_from_roster
+    errors = [] if package.get("week") == args.week else ["package is for week %s" % package.get("week")]
+    errors += check_inputs(package, controlled_players_from_roster(ROOT / "career/2013/roster.md"),
+                           PROTAGONIST, expected_games=len(schedule(args.week)))
+    if errors:
+        # The frozen package must still pass the weekly gate before any draw.
+        print("WEEK_INPUTS: BLOCKED")
+        for error in errors:
+            print("- " + error)
+        return 1
     if not args.close:
         print("Dry run: %d games in %s; add --close to close them." % (len(package["games"]), package_path.name))
         return 0
