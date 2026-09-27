@@ -19,4 +19,6 @@ For the 2013 Week 1 restart (Week 1 voided by ledger Entry 34), `Run Week 1` mea
 
 ## Generated-data rule
 
+Every club dresses at most 46 players. Jacksonville's inactives are Stone's list in `career/2013/depth_chart.json`; a background club's are chosen mechanically from the bottom of its depth order (`runtime.week_inputs.game_day_actives`), never from a real historical inactive list, and the weekly gate rejects a TeamInput with more than 46 actives.
+
 The one-command workflow keeps large reconstructed TeamInputs in the gitignored `.sim_cache/` workspace. Jacksonville/protagonist games preserve full snap/stat receipts; ordinary background games preserve `compact_stats` receipts with complete nonzero generated statistics but no background snap ledger. Codex must use these bounded-storage paths automatically rather than failing the task because the generated Git diff is too large.

@@ -14,6 +14,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from runtime.usage import group, lineup_errors
+from runtime.week_inputs import GAME_DAY_ACTIVE_LIMIT
 
 # Groups whose usage kernel 2013.4 orders by depth; each needs an explicit order.
 DEPTH_REQUIRED = ("QB", "RB", "WR", "TE")
@@ -64,7 +65,7 @@ def _player_ids(team_input) -> set[str]:
 
 
 def game_day_errors(team, team_input):
-    """Kernel 2013.4 game-day unit and depth-order checks for one TeamInput."""
+    """Game-day unit and depth-order checks for one TeamInput."""
     active = {
         raw.split(":", 1)[-1].strip()
         for raw in team_input.get("active_players", ()) or ()
@@ -127,6 +128,9 @@ def check_inputs(data, controlled_players, protagonist="Jacksonville Jaguars", e
                 errors.append(f"{team}: missing TeamInput object")
                 continue
             errors.extend(game_day_errors(team, team_input))
+            dressed = len(team_input.get("active_players", ()) or ())
+            if dressed > GAME_DAY_ACTIVE_LIMIT:
+                errors.append(f"{team}: {dressed} game-day actives, limit {GAME_DAY_ACTIVE_LIMIT}")
             for player in _player_ids(team_input):
                 ownership.setdefault(player, set()).add(team)
                 if team != protagonist and player in controlled_players:

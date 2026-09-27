@@ -29,4 +29,4 @@ A receipt may list `player_attribution_incomplete_teams` when a later integrity 
 
 ## Current contents
 
-Week 1 generation 3: `2013-week01-reset-v3-01.json` through `-16.json`; Week 2: `week_02_*.json` (kernel 2013.4). Jacksonville's receipt each week is full; the rest are compact. The void generation-2 receipts were deleted by ledger Entry 34.
+Week 1 generation 3: `2013-week01-reset-v3-01.json` through `-16.json`; Week 2: `week_02_*.json` (kernel 2013.4); Week 3: `week_03_*.json` (kernel 2013.5). Jacksonville's receipt each week is full; the rest are compact. The void generation-2 receipts were deleted by ledger Entry 34.

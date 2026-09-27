@@ -7,6 +7,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from support_rosters import game_day_roster
 
+from runtime.week_inputs import game_day_actives
 from scripts.check_week_input_exclusivity import (
     check_inputs,
     controlled_players_from_roster,
@@ -119,7 +120,7 @@ class WeekInputExclusivityTests(unittest.TestCase):
     def full_input(prefix, qb_name):
         roster=[asdict(p) for p in game_day_roster(prefix)]
         roster[0]["player_id"]=qb_name
-        return {"active_players":[r["player_id"] for r in roster],"roster":roster}
+        return {"active_players":game_day_actives(roster),"roster":roster}
 
     def test_clean_slate_passes(self):
         data={

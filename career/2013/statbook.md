@@ -20,7 +20,7 @@ Each weekly `output.md` carries its game's box score, generated from the same re
 
 ## Current coverage
 
-Through Week 2: thirty-two of thirty-two game receipts (kernel 2013.4); coverage complete and every band-audit row WITHIN the 2012 bands.
+Through Week 3: forty-eight of forty-eight game receipts (Weeks 1-2 kernel 2013.4, Week 3 kernel 2013.5); coverage complete and every band-audit row WITHIN the 2012 bands.
 
 ## Rebuild
 
@@ -33,6 +33,6 @@ python scripts/render_standings.py 2013
 
 Every Jacksonville receipt stores the complete public `play_ledger`: each scrimmage snap with its named call, and each scoring or special-teams terminal play. The play-call page, including its explosive (20+ yard) and negative-play counts, is derived from those snap records. The ledger records play type, gain, participants and clock; it does not record down, distance or field position, so red-zone and down-and-distance splits are not generated.
 
-## Player attribution (kernel 2013.4)
+## Player attribution (kernel 2013.4 onward)
 
 Carries, targets, tackles and defensive credits follow the club depth chart supplied in each TeamInput, shaped by sourced 2012 league-wide position usage (`../../library/2012_position_usage_calibration.md`). One passer plays the whole game unless a coach input changes it. The band audit flags a week whose league totals drift from those shapes; it never reruns a game.

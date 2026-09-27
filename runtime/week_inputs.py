@@ -19,7 +19,7 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 
 from . import depth_library
-from .usage import group
+from .usage import group, lineup_errors
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEDULE = ROOT / "library" / "data" / "2013_schedule.json"
@@ -77,8 +77,43 @@ def background_input(team, week, receipts, game_day, anchors):
     for player in team_input["roster"]:
         if player["player_id"] in out:
             player["available"] = False
-    team_input["active_players"] = [p["player_id"] for p in team_input["roster"] if p["available"]]
+    team_input["active_players"] = game_day_actives(team_input["roster"])
     return team_input
+
+
+GAME_DAY_ACTIVE_LIMIT = 46
+
+
+def game_day_actives(roster):
+    """A background club's 46 game-day actives, chosen mechanically from depth.
+
+    No club's real inactive list is imported. While more than 46 players are
+    available, the deepest-ranked player in the club's depth order is made
+    inactive (the larger position group first on a tie), never below a legal
+    game-day unit. Jacksonville's inactives are Stone's decision instead.
+    """
+    rows = [p for p in roster if p["available"]]
+    sizes = {}
+    for p in rows:
+        sizes[group(p["position"])] = sizes.get(group(p["position"]), 0) + 1
+    def deepest_first(item):
+        index, p = item
+        depth = p.get("depth") if isinstance(p.get("depth"), int) else 99
+        return (-depth, -sizes.get(group(p["position"]), 0), -index)
+    order = [p for _, p in sorted(enumerate(rows), key=deepest_first)]
+    active = list(rows)
+    for candidate in order:
+        if len(active) <= GAME_DAY_ACTIVE_LIMIT:
+            break
+        trial = [p for p in active if p is not candidate]
+        if not lineup_errors([_Row(p) for p in trial]):
+            active = trial
+    return [p["player_id"] for p in active]
+
+
+class _Row:
+    def __init__(self, row):
+        self.position = row["position"]
 
 
 def controlled_active():

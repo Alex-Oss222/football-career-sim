@@ -783,3 +783,27 @@ Game-level efficiency (completion rate, yards per carry, sack rate) was close to
 **Next competitive event:** September 22 Week 3 at Seattle, 4:25 p.m. ET. **Not simulated.**
 
 **Commit closed - Canonical update - September 15, 2013 - Week 2 at Oakland closed - canonical through September 15, after Week 2**
+
+## Entry 38: Week 3 closed
+
+**Effective canonical state:** September 22, 2013, after Week 3
+**Recorded:** September 27, 2026
+**Checkpoint:** `Canonical update - September 22, 2013 - Week 3 at Seattle closed`
+**Preceding global package checkpoint:** `Canonical update - September 15, 2013 - Week 2 at Oakland closed`
+
+**Result.** Jacksonville 16, Seattle 13 at CenturyLink Field. Josh Scobee's third field goal came on the final snap. Jacksonville is 2-1.
+
+**Batch.** All sixteen Week 3 games closed once each under kernel 2013.5 through `runtime.game_runner.run_game` and the private Engine State service, from the package frozen by `scripts/build_week_inputs.py 3` after the sixteen-game exclusivity and game-day gate passed. No event was drawn twice.
+
+**Inputs.** Jacksonville used Stone's Week 3 plan: the opening fifteen plus Dagger (SOLID only) as the structured sheet, with Boot Flood and 10 Empty off it. Mike Brewster started at center for Brad Meester, with Mark Asper active. The edge order was Babin, Mincey, Branch and Davis. Inactives were Pasztor, Meester, Mosley, C.J. Wilson, Edwards and Rutland, and Blackmon remained on Reserve/Suspended. Background clubs were carried forward from the Week 1 depth-chart library with branch injuries and pre-existing returns applied. Before the draw, a data-preparation defect was corrected: background clubs had been dressing every available player (up to 53), while Jacksonville dressed 46. From Week 3, each background club dresses 46, made inactive mechanically from the bottom of its depth order without breaking a legal game-day unit. The weekly gate now rejects more than 46 actives. Kernel injury exposure is drawn per dressed player, so the earlier rule gave background clubs more injury draws than Jacksonville. Weeks 1 and 2 stand as closed. Every club carried the Average low-confidence unit anchor.
+
+**Statistics and standings.** A full Jacksonville receipt and fifteen compact receipts are preserved; the box score, standings and statbook were generated from them. Every band-audit row is WITHIN. Jacksonville is third in the AFC South and ninth in the AFC.
+
+**Availability.** Paul Posluszny is out (upper extremity, projected return October 2), which covers the Week 4 game. Meester's projection clears September 27. His return to center is a Stone decision; he is on the Week 3 inactive list, which carries forward unless reset. C.J. Wilson remains out, Pasztor on medical hold and Mosley unavailable. Background injuries are listed in `league_results/week_03.md`.
+
+**Engine findings (investigated, not grounds to rerun).** The snap-ledger drive-detail defects recur. Jacksonville's touchdown drive records snaps after Toney Clemons' 19-yard touchdown catch. Seattle's fourth-quarter possession after Scobee's first field goal ends with no punt, score or turnover row. Its last possession records 76 net yards before a punt, with no field position in the ledger to reconcile them. Score and statistics are unaffected; the result stands.
+
+**Primary records:** `regular_season/week_03_jacksonville_at_seattle/output.md` and `call_sheet.json`; `league_results/week_03.md`; `stats/game_receipts/week_03_*.json`; `standings.md`; `depth_chart.json`.
+**Next competitive event:** September 29 Week 4 vs Indianapolis, 1 p.m. ET. **Not simulated.**
+
+**Commit closed - Canonical update - September 22, 2013 - Week 3 at Seattle closed - canonical through September 22, after Week 3**
