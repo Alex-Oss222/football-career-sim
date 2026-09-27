@@ -70,7 +70,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 |---|---|---|---|---|
 | Mark Asper | G | Active 53 | No communicated restriction | Interior OL depth |
 | Uche Nwaneri | G | Active 53 | No communicated restriction | Starting LG |
-| Austin Pasztor | G | Active 53 | Independent medical hold (August 17 head/neck injury) | — |
+| Austin Pasztor | G | Active 53 | No communicated restriction | — |
 | Will Rackley | G | Active 53 | Limited, no projected absence (upper extremity, Week 5) | Starting right guard |
 
 ### Centers (2)
@@ -98,7 +98,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Tyson Alualu | DT | Active 53 | No communicated restriction | DT rotation |
 | Sen'Derrick Marks | DT | Active 53 | No communicated restriction | Starting DT |
 | Roy Miller | DT | Active 53 | No communicated restriction | Starting DT |
-| C.J. Mosley | DT | Active 53 | Medically unavailable (August 29 upper-extremity injury) | — |
+| C.J. Mosley | DT | Active 53 | No communicated restriction | — |
 | Jeris Pendleton | DT | Active 53 | No communicated restriction | — |
 
 ### Linebackers (5)

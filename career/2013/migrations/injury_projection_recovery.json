@@ -30,5 +30,20 @@
   "2013-injury-projection-recovery-v1-austin-pasztor": "f13e7f4e62dc2c84f442df98d39be3a9fcb8dd7cfe2ffded9b31fd7f9703093b",
   "2013-injury-projection-recovery-v1-c-j-mosley": "c9f86c2daf21aa80c16db4b9c19d0371ab3cb152d1294d83d07fd2203eac2452"
  },
- "results": {}
+ "results": {
+  "2013-injury-projection-recovery-v1-austin-pasztor": {
+   "result_ref": "cc40ea0b213b0f2492fc30e4de94f3f020cfc3460f7cf36038a01dab43aec4d0",
+   "severity": "minor",
+   "return_days": 2,
+   "reassessment_days": 1,
+   "projected_return": "2013-08-19"
+  },
+  "2013-injury-projection-recovery-v1-c-j-mosley": {
+   "result_ref": "bc9a9b0bb50e860ec64ef3fc4b4bf95461554d93c858e1147dc117a6dff6aaf1",
+   "severity": "minor",
+   "return_days": 1,
+   "reassessment_days": 1,
+   "projected_return": "2013-08-30"
+  }
+ }
 }

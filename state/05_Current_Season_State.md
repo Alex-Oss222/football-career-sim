@@ -1,11 +1,11 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2013-OCT27-WEEK8-STATE-22`
-**Supersedes:** `JAX-2013-OCT20-WEEK7-STATE-21`
-**Snapshot effective:** October 27, 2013, after Week 8 (Jacksonville 20, San Francisco 13, Wembley Stadium).
-**Last reconciled:** September 27, 2026; season-ledger Entry 45.
-**Global package checkpoint:** `Canonical update - October 27, 2013 - Week 8 vs San Francisco closed`
+**Version:** `JAX-2013-OCT27-INJURY-RECOVERY-STATE-23`
+**Supersedes:** `JAX-2013-OCT27-WEEK8-STATE-22`
+**Snapshot effective:** October 27, 2013, after Week 8 (Jacksonville 20, San Francisco 13, Wembley Stadium) and the recovery of Pasztor's and Mosley's injury projections.
+**Last reconciled:** September 27, 2026; season-ledger Entry 46.
+**Global package checkpoint:** `Canonical correction - October 27, 2013 - Pasztor and Mosley injury projections recovered`
 
 ## Effective source-version manifest
 
@@ -14,8 +14,8 @@
 | Document 1 | `358ccf4feac40830055bae5e4cbd84151536ab9e` | Active foundation source |
 | Document 2 | `ab790f6e935c99a901a6d39cf3bee5183cf4da3e` | Active foundation source |
 | Document 3 | `38e0ce21e9cf1b62f8d4b9c281955facdaf07b57` | Active foundation source |
-| Document 4 | `JAX-2013-OCT27-WEEK8-REGISTER-19`; closed by Entry 45 | Controlled 53, all active, practice squad, roles and availability after Week 8 |
-| Document 6 | 2013 ledger through Entry 45 | Week 8 closed |
+| Document 4 | `JAX-2013-OCT27-INJURY-RECOVERY-REGISTER-20`; closed by Entry 46 | Controlled 53, all active, practice squad, roles and availability after Week 8 and the projection recovery |
+| Document 6 | 2013 ledger through Entry 46 | Week 8 closed; Pasztor and Mosley projections recovered |
 
 ## 1. Master clock and competition position
 
@@ -28,7 +28,7 @@
 | Season phase | Regular season; Week 8 closed; Week 9 bye next |
 | Preseason record | **2-2** |
 | Regular-season record | **6-2** |
-| Last event | Week 8: Jacksonville 20, San Francisco 13 (Entry 45) |
+| Last event | Week 8: Jacksonville 20, San Francisco 13 (Entry 45); injury-projection recovery (Entry 46) |
 | Next deadline | Trade deadline, Tuesday, October 29, 4 p.m. ET; no trade proposal is open |
 | Next week | Week 9 bye (November 3) |
 | Next competitive event | **November 10, Week 10 at Tennessee, 1 p.m. ET: NOT SIMULATED** |
@@ -47,14 +47,14 @@
 
 ## 3. Availability
 
-Week 8 generated no Jacksonville injury. Will Rackley has a minor injury, limited with no projected absence. C.J. Wilson is out after a Week 2 trunk injury (projected return January 30, 2014); no reserve-list move has been made. Austin Pasztor remains on an independent medical hold after the August 17 simulated head/neck injury. C.J. Mosley remains medically unavailable after the August 29 simulated upper-extremity injury. Pasztor's and Mosley's holds carry no projected return: their preseason injuries were logged by class and restriction only, and no preseason receipt was preserved, so neither can clear on a date the way every other club's generated injuries do (Entry 45). That is an open protagonist-blind reconciliation; no clearance is assumed. Both were Stone's game-day inactives in Week 8. Every other status requires fresh medical communication before Week 10.
+Week 8 generated no Jacksonville injury. Will Rackley has a minor injury, limited with no projected absence. C.J. Wilson is out after a Week 2 trunk injury (projected return January 30, 2014); no reserve-list move has been made. Austin Pasztor (August 17 head/neck hold) and C.J. Mosley (August 29 upper-extremity injury) are available. Their preseason projections were never recorded, so each was redrawn once through the private service from the injury model every club uses (Entry 46): Pasztor minor, 2 days (projected return August 19); Mosley minor, 1 day (August 30). On the rule applied to every club they would have returned before Week 1; they were held through Week 8 by the recording defect, and those results stand. The Week 8 inactive list, which names both, carries forward unless Stone changes it. Every other status requires fresh medical communication before Week 10.
 
 ## 4. Current football roles
 
 - **QB:** Cousins QB1, Henne QB2, Wilson QB3 (a game-day numbers inactive in Weeks 5-8).
-- **OL:** Monroe–Nwaneri–Brewster–Rackley–Johnson, with Brewster the starting center (confirmed Week 6). Meester reserve center; Bradfield swing tackle and sixth offensive lineman in 6OL; Asper interior depth; Pasztor only when cleared.
+- **OL:** Monroe–Nwaneri–Brewster–Rackley–Johnson, with Brewster the starting center (confirmed Week 6). Meester reserve center; Bradfield swing tackle and sixth offensive lineman in 6OL; Asper interior depth; Pasztor available (Entry 46).
 - **Skill:** Jones-Drew leads, Grimes RB2, Anderson RB3; Shorts WR1, Thielen WR2/H (the movable receiver), Blackmon WR3/outside Z (dressed from Week 8), Clemons WR4, Brown WR5; Lewis leads tight end, and Kelce is TE2 in the regular call structure.
-- **Defense:** Edge order Babin, Mincey, Branch, Davis; Miller/Marks inside; Posluszny and Smith base linebackers with Smith the communication lead, Allen first off the bench, then Stanford, with Moore in Crennel's packages; Grimes/Ball outside, Poyer nickel, Lowery/Rambo safety. Mosley and C.J. Wilson unavailable.
+- **Defense:** Edge order Babin, Mincey, Branch, Davis; Miller/Marks inside; Posluszny and Smith base linebackers with Smith the communication lead, Allen first off the bench, then Stanford, with Moore in Crennel's packages; Grimes/Ball outside, Poyer nickel, Lowery/Rambo safety. C.J. Wilson unavailable; Mosley available (Entry 46).
 - **Teams:** Scobee/Anger/Cain specialists. Trawick, Rambo, Thielen, Anderson, Poyer, Prosinski, Allen and Bouye hold defined primary/backup coverage jobs.
 
 Execution and observable effort remain separate. Protection losses were technique/physical evidence where assignments were identified; medical limitations are not effort findings. The kernel (2013.4 onward) turns this depth order into game usage, so each weekly TeamInput must carry it as explicit `depth` values.

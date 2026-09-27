@@ -394,5 +394,5 @@ It was 14-3 at halftime.
 - **Neutral site.** The packet recorded the neutral venue, but kernel 2013.6 applies its small home term to the designated home team regardless of venue. So Jacksonville received it at Wembley, as Minnesota did in the Week 4 Wembley game. The public receipt does not record the venue.
 - **Band audit.** Every graded row is WITHIN, including field-goal accuracy under 30 yards (now 0.917 against 0.967), and all fifteen ledger-coherence counts are zero.
 
-**Ledger entry:** Entry 45 (Week 8).
+**Ledger entries:** Entry 45 (Week 8); Entry 46 (after the game: Pasztor's and Mosley's lost preseason injury projections recovered; both available from Week 10).
 **Next event:** Trade deadline, Tuesday, October 29, 4 p.m. ET; then the Week 9 bye and Week 10 at Tennessee, Sunday, November 10, 1 p.m. ET.

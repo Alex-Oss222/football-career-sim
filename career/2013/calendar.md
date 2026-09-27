@@ -2,7 +2,7 @@
 
 **Function:** Branch-facing schedule and phase control.
 **Historical source:** `../../library/2013_jacksonville_master_calendar.md`.
-**Current branch checkpoint:** October 27, 2013, Week 8 closed (Entry 45).
+**Current branch checkpoint:** October 27, 2013, Week 8 closed (Entry 45); Pasztor and Mosley projections recovered (Entry 46).
 **Rule:** Dates/opponents/deadlines are historical rails. Attendance, transactions, performance and game results are branch events.
 
 ## Current checkpoint
@@ -11,7 +11,7 @@
 - Controlled 53 (53 active); practice squad 8; preseason record 2-2; regular-season record 6-2.
 - Next roster deadline: **October 29, 4 p.m. ET trade deadline**. No trade proposal is open.
 - Week 9 (November 3) is the bye. Next competitive event: **November 10 Week 10 at Tennessee, 1 p.m. ET: NOT SIMULATED**.
-- Rackley limited (minor); C.J. Wilson out; Pasztor on independent medical hold; Mosley medically unavailable. Games run under kernel 2013.6 from Week 4 (Entry 39).
+- Rackley limited (minor); C.J. Wilson out. Pasztor and Mosley available from their recovered projections (Entry 46). Games run under kernel 2013.6 from Week 4 (Entry 39).
 
 ## 2013 branch schedule
 

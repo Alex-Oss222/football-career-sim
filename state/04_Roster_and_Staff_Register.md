@@ -3,9 +3,9 @@
 ## Document status
 
 - Function: Canonical register for current Jacksonville player control, staff operating authority, roster legality, contract/cap reconciliation, availability boundaries and football-role state.
-- Current status: **RECONCILED THROUGH WEEK 8 (ENTRY 45)**.
+- Current status: **RECONCILED THROUGH ENTRY 46 (WEEK 8; INJURY-PROJECTION RECOVERY)**.
 - Effective through: **October 27, 2013, after Week 8 vs San Francisco (Wembley Stadium)**.
-- Progression authority: `career/2013/ledger.md`, Entry 45 (Week 8 closed; Blackmon dressed), Entry 44 (Week 7 closed), after Entries 42-43 (Blackmon reinstated and activated October 7; Week 6 closed), Entry 41 (Week 5 closed; Posluszny returned; Thielen injured), Entry 40 (Week 4 closed under kernel 2013.6, Entry 39; Meester returned as reserve center), Entry 38 (Week 3 closed; Posluszny injured) and Entries 36-37 (Blackmon to Reserve/Suspended; Week 2 closed with Meester and C.J. Wilson injured).
+- Progression authority: `career/2013/ledger.md`, Entry 46 (Pasztor and Mosley projections recovered; both available), Entry 45 (Week 8 closed; Blackmon dressed), Entry 44 (Week 7 closed), after Entries 42-43 (Blackmon reinstated and activated October 7; Week 6 closed), Entry 41 (Week 5 closed; Posluszny returned; Thielen injured), Entry 40 (Week 4 closed under kernel 2013.6, Entry 39; Meester returned as reserve center), Entry 38 (Week 3 closed; Posluszny injured) and Entries 36-37 (Blackmon to Reserve/Suspended; Week 2 closed with Meester and C.J. Wilson injured).
 - Detailed readable roster: `career/2013/roster.md`.
 - Current cap worksheet: `career/2013/offseason/current_cap_worksheet.md`.
 - Current calendar: `career/2013/calendar.md`.
@@ -23,15 +23,15 @@
 | Divergence point | January 15, 2013 — Alex Stone accepts Jacksonville head-coach offer |
 | Season phase | Regular season; Week 8 closed; Week 9 bye next |
 | Owned content effective | October 27, 2013 |
-| Document 4 register version | `JAX-2013-OCT27-WEEK8-REGISTER-19` |
-| Supersedes | `JAX-2013-OCT20-WEEK7-REGISTER-18` |
-| Last content-changing checkpoint | `Canonical update - October 27, 2013 - Week 8 vs San Francisco closed` |
-| Latest Document 6 event | Entry 45: Week 8 closed |
+| Document 4 register version | `JAX-2013-OCT27-INJURY-RECOVERY-REGISTER-20` |
+| Supersedes | `JAX-2013-OCT27-WEEK8-REGISTER-19` |
+| Last content-changing checkpoint | `Canonical correction - October 27, 2013 - Pasztor and Mosley injury projections recovered` |
+| Latest Document 6 event | Entry 46: Pasztor and Mosley injury projections recovered |
 | Current controlled players | **53** |
 | Current practice squad | **8; separate from active 53** |
 | Current regular-season planning room | **~$6.2M-$6.6M before weekly practice-squad charges** |
 | Next scheduled football event | November 10 Week 10 at Tennessee: NOT SIMULATED (trade deadline October 29, 4 p.m. ET; Week 9 bye) |
-| Unresolved matter before participation | Pasztor's and Mosley's holds carry no recorded projected return (Entry 45); the Week 10 plan and inactives are Stone decisions |
+| Unresolved matter before participation | The Week 10 plan and inactives are Stone decisions (the Week 8 list, naming the now-available Pasztor and Mosley, carries forward otherwise) |
 
 ## Canon and evidence conventions
 
@@ -143,16 +143,16 @@ Staff remains unchanged from the closed late-January hiring phase. `career/2013/
 
 ### Reconciliation result
 
-- Register status: **RECONCILED THROUGH WEEK 8 (ENTRY 45)**.
+- Register status: **RECONCILED THROUGH ENTRY 46**.
 - Roster/control: **53 controlled, all active (Blackmon activated October 7); eight-player practice squad separate**.
 - Cap: regular-season accounting; approximately **$6.2M-$6.6M** before weekly practice-squad charges.
-- Medical: no Week 8 injury; Rackley minor, limited, no projected absence; C.J. Wilson out (projected return January 30, 2014); Pasztor on independent medical hold; Mosley medically unavailable.
+- Medical: no Week 8 injury; Rackley minor, limited, no projected absence; C.J. Wilson out (projected return January 30, 2014); Pasztor and Mosley available from their recovered projections (Entry 46).
 - Football: Brewster the starting center (confirmed Week 6), Meester reserve center; Posluszny and Smith base linebackers with Smith the communication lead and Allen first off the bench; Bradfield sixth OL; Shorts WR1, Thielen WR2/H, Blackmon WR3/outside Z (dressed from Week 8), Clemons WR4, Brown WR5; edge order Babin, Mincey, Branch, Davis.
 - Next event: trade deadline October 29, 4 p.m. ET; Week 9 bye; November 10 Week 10 at Tennessee; **NOT SIMULATED**.
 
 ## Jacksonville current transaction reconciliation
 
-**Current progression source:** [Season ledger, Entry 45](../career/2013/ledger.md#entry-45-week-8-closed), checkpoint `Canonical update - October 27, 2013 - Week 8 vs San Francisco closed`; Blackmon reinstated and activated by Entry 42.
+**Current progression source:** [Season ledger, Entry 46](../career/2013/ledger.md#entry-46-pasztor-and-mosley-injury-projections-recovered), checkpoint `Canonical correction - October 27, 2013 - Pasztor and Mosley injury projections recovered`; Week 8 closed by Entry 45; Blackmon reinstated and activated by Entry 42.
 **Readable roster:** [career/2013/roster.md](../career/2013/roster.md).
 **Current cap worksheet:** [career/2013/offseason/current_cap_worksheet.md](../career/2013/offseason/current_cap_worksheet.md).
 **Current calendar:** [career/2013/calendar.md](../career/2013/calendar.md).
@@ -199,7 +199,7 @@ The old 75-person working count and the old unresolved inherited-control bucket 
 | Eugene Monroe | JAX-EUGENEMONROE | OT | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Mark Asper | JAX-MARKASPER | G | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Uche Nwaneri | JAX-UCHENWANERI | G | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Austin Pasztor | JAX-AUSTINPASZTOR | G | Active 53 | Existing contract/control | Independent medical hold after the August 17 simulated head/neck injury | Entry 41 |
+| Austin Pasztor | JAX-AUSTINPASZTOR | G | Active 53 | Existing contract/control | No communicated restriction; August 17 head/neck hold, recovered projection August 19 | Entry 46 |
 | Will Rackley | JAX-WILLRACKLEY | G | Active 53 | Existing rookie contract | Limited, no projected absence (upper extremity, Week 5) | Entry 41 |
 | Mike Brewster | JAX-MIKEBREWSTER | C | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Brad Meester | JAX-BRADMEESTER | C | Active 53 | Branch re-signing; one year, $1.50M | No communicated restriction; fresh game-day communication required | Entry 41 |
@@ -212,7 +212,7 @@ The old 75-person working count and the old unresolved inherited-control bucket 
 | Tyson Alualu | JAX-TYSONALUALU | DT | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Sen'Derrick Marks | JAX-SENDERRICKMARKS | DT | Active 53 | Branch signing; one year, $1.50M | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Roy Miller | JAX-ROYMILLER | DT | Active 53 | Branch signing; two years, $5.00M | No communicated restriction; fresh game-day communication required | Entry 41 |
-| C.J. Mosley | JAX-CJMOSLEY | DT | Active 53 | Existing contract/control | Medically unavailable after the August 29 simulated upper-extremity injury | Entry 41 |
+| C.J. Mosley | JAX-CJMOSLEY | DT | Active 53 | Existing contract/control | No communicated restriction; August 29 upper-extremity injury, recovered projection August 30 | Entry 46 |
 | Jeris Pendleton | JAX-JERISPENDLETON | DT | Active 53 | Existing rookie contract | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Russell Allen | JAX-RUSSELLALLEN | LB | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Sio Moore | JAX-SIOMOORE | LB | Active 53 | #98; rookie contract signed May 2 | No communicated restriction; fresh game-day communication required | Entry 41 |
@@ -673,11 +673,11 @@ This table is generated from Document 6 and is only a navigation aid. Active unr
 ## End-of-update control block
 
 - Effective through: October 27, 2013, after Week 8.
-- Document 4 register version: `JAX-2013-OCT27-WEEK8-REGISTER-19`.
-- Last content-changing checkpoint: `Canonical update - October 27, 2013 - Week 8 vs San Francisco closed`.
-- Latest source event: season-ledger Entry 45.
+- Document 4 register version: `JAX-2013-OCT27-INJURY-RECOVERY-REGISTER-20`.
+- Last content-changing checkpoint: `Canonical correction - October 27, 2013 - Pasztor and Mosley injury projections recovered`.
+- Latest source event: season-ledger Entry 46.
 - Current controlled count: **53**, all active; practice squad **8**, separate from the active roster.
 - Cap: regular-season accounting, **~$6.2M-$6.6M before weekly practice-squad charges**.
 - Depth/packages: Cousins QB1; regular-season roles as in `career/2013/roster.md`; weekly structured call sheet (Week 8 latest; Week 10 sheet not yet supplied).
-- Medical: no Week 8 injury; Rackley limited (minor); C.J. Wilson out; Pasztor on independent medical hold; Mosley medically unavailable.
+- Medical: no Week 8 injury; Rackley limited (minor); C.J. Wilson out; Pasztor and Mosley available (Entry 46).
 - Next event: trade deadline October 29, 4 p.m. ET; Week 9 bye; November 10 Week 10 at Tennessee; **NOT SIMULATED**.

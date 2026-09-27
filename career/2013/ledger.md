@@ -1044,3 +1044,35 @@ Under the standing rule these are fixed going forward, and every result stands.
 **Next:** trade deadline Tuesday, October 29, 4 p.m. ET (no proposal open); Week 9 bye; November 10 Week 10 at Tennessee, 1 p.m. ET. **Not simulated.**
 
 **Commit closed - Canonical update - October 27, 2013 - Week 8 vs San Francisco closed - canonical through October 27, after Week 8**
+
+## Entry 46: Pasztor and Mosley injury projections recovered
+
+**Effective canonical state:** October 27, 2013, after Week 8
+**Recorded:** September 27, 2026
+**Checkpoint:** `Canonical correction - October 27, 2013 - Pasztor and Mosley injury projections recovered`
+**Preceding global package checkpoint:** `Canonical update - October 27, 2013 - Week 8 vs San Francisco closed`
+
+**Defect.** Austin Pasztor's August 17 head/neck injury (Entry 22) and C.J. Mosley's August 29 upper-extremity injury (Entry 25) were generated with a projected return, as every injury is (`runtime/injuries.py`). Only the class and restriction were recorded, though, and no preseason receipt was kept. Their holds therefore could never clear on a date, while every other club's generated injuries clear on their projection. That is a protagonist-blind gap (Document 1 section 9.1), recorded as open in Entry 45.
+
+**Exact replay not possible.** The Document 7 section 3.4 correction path needs the original packet rebuilt to its committed digest. The preseason TeamInputs were built transiently and never committed; commit `4cf2ad7` holds only prose, and no builder or input file exists in the history. So no packet can be rebuilt, and no replay was sent.
+
+**Audited redraw (user's choice, September 27, 2026).**
+- **What was drawn.** Each missing projection was drawn once from the model every club uses. The draw was conditioned only on the class and restriction recorded when the injury was generated. A head/neck hold constrains nothing, since every severity yields a hold. An upper-extremity "out" restriction means at least one day. Later availability records were not used as evidence, because they were written without the projection.
+- **Pre-registration.** The procedure (`scripts/recover_injury_projection.py`) and both packets were committed and pushed before the draw: `career/2013/migrations/injury_projection_recovery.json`, with procedure `injury-projection-recovery-v1`, the private snapshot and the model digest.
+- **The draw.** The private service committed each packet digest and supplied the entropy, as for a game. A second submission of each packet returned the same reference and the same result.
+
+**Results.**
+
+| Player | Injury | Severity | Return days | Projected return |
+|---|---|---|--:|---|
+| Austin Pasztor | Head/neck, independent medical hold (August 17) | Minor | 2 | August 19, 2013 |
+| C.J. Mosley | Upper extremity, out (August 29) | Minor | 1 | August 30, 2013 |
+
+**Application.** On the rule applied to every club, both would have returned before Week 1, so both are available from this checkpoint. They were held out of Weeks 1-8 by the recording defect. Every result stands, and no game is rerun.
+
+The Week 8 inactive list, which names both, carries forward for Week 10 unless Stone changes it. Their depth-chart places are the preseason ones, and their roles are Stone's to set. No roster count, contract or cap figure changes.
+
+**Primary records:** `migrations/injury_projection_recovery.json`; `roster.md`; Documents 4 and 5.
+**Next:** trade deadline Tuesday, October 29, 4 p.m. ET; Week 9 bye; November 10 Week 10 at Tennessee. **Not simulated.**
+
+**Commit closed - Canonical correction - October 27, 2013 - Pasztor and Mosley injury projections recovered - canonical through October 27, after Week 8**
