@@ -130,7 +130,7 @@ The snap-detail stream (`public-snap-detail-v4`), the kickoff-detail stream (`pu
 - *Not conditioned:* weather, venue (e.g. altitude touchbacks), per-staff tendency profiles.
 - *Postseason overtime period change* (not reachable in the regular season): a clock-expired overtime possession passes the ball to the other club at the same spot, as the possession loop alternates; a real period change keeps possession. **Fixed in kernel 2013.8** (below).
 - *Overtime walk-off drives run out the period.* **Fixed in kernel 2013.8** (below); the Week 10 Washington at Minnesota receipt keeps it.
-- *Neutral site still ignored.* `kernel._edge` is unchanged: its 0.008 home term goes to the designated home team whatever the venue (Entry 45).
+- *Neutral site still ignored* in 2013.7-2013.10: `kernel._edge` gave its 0.008 home term to the designated home team whatever the venue (Entry 45). Fixed in 2013.11.
 - *Closed canon is not rerun.* Weeks 1-8 keep their defects (for example the Week 4 seven-yard touchback touchdown, the Week 5 touchback safety, one-yard touchdown and 1:56 punt, and the Weeks 6-8 field-position and label defects of Entries 43-45).
 
 ## Kernel 2013.8 overtime and 2013 rules correction
@@ -151,7 +151,7 @@ Kernel 2013.8 corrects the overtime state machine to the 2013 NFL rules sourced 
 
 **Tests and sample.** `tests/test_overtime.py` scripts the overtime draws after real tied regulations: an opening made field goal gives the other club a possession; an opening touchdown ends it with no try; a safety ends it; an expired regular-season period ties; a postseason overtime crosses into `OT2` and ends decided; walk-off tuples never run out the period; and every unscripted overtime alternates and ties only at regular-season expiry. On the shared 250-game synthetic sample (same seeds as the 2013.7 acceptance) every band row is WITHIN, the drive-model rows read as in 2013.7 (18 WITHIN, the same three known detections within twice their tolerance), every field-position row is WITHIN, and ledger coherence is zero; 21 games reached overtime, none tied, none ended on an opening field goal.
 
-**Still not modelled (listed in the rules library):** two-point tries, onside kicks and kicking-team recoveries (so the overtime kicking-team-recovery branch cannot occur), defensive and return touchdowns (so the only defensive overtime score is a safety), per-snap timeouts, two-minute warning and play clock (drive durations are real 2012 durations), and the neutral-site home term.
+**Still not modelled (listed in the rules library):** two-point tries, onside kicks and kicking-team recoveries (so the overtime kicking-team-recovery branch cannot occur), defensive and return touchdowns (so the only defensive overtime score is a safety), per-snap timeouts, two-minute warning and play clock (drive durations are real 2012 durations).
 
 ## Kernel 2013.9 spike seating
 
@@ -198,4 +198,13 @@ A round raises `ValueError` until every game of the round before it has a closed
 - `render_box_score.py` finds receipts in either directory.
 - Tests: `tests/test_postseason.py`.
 
-**Known limit.** The neutral-site home term is still unmodelled (Entry 45): `kernel._edge` gives its 0.008 home term to the designated home team whatever the venue. That matters only in the Super Bowl, where the AFC champion would receive it at MetLife Stadium.
+**Neutral site.** Kernel 2013.11 (Entry 66) removes the home term at a neutral venue, so the Super Bowl's designated home team gets no home edge; home-venue games are unchanged.
+
+## Kernel 2013.11 neutral-site correction
+
+Kernel 2013.11 changes one thing: `kernel._edge` adds its 0.008 home term only when the packet venue is not `neutral`. Through 2013.10 the designated home team received it at any venue, so Minnesota (Week 4) and Jacksonville (Week 8) got it at Wembley (Entry 45). The anchor term is unchanged.
+
+**Scope.** Only games drawn with venue `neutral` change. Every home-venue game resolves exactly as under 2013.10, since the function is identical there. In the 2013 branch the only remaining neutral-site game is Super Bowl XLVIII; the Wembley receipts are closed and never rerun. Tests: `tests/test_neutral_site.py`.
+
+**Versions and cohorts.** `KERNEL_VERSION` and the service `KERNEL` are both `2013.11`. `KNOWN_DETECTIONS["2013.11"]` carries the 2013.10 registry over.
+

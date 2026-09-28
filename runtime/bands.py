@@ -220,10 +220,12 @@ KNOWN_DETECTIONS["2013.8"] = dict(KNOWN_DETECTIONS["2013.7"])
 KNOWN_DETECTIONS["2013.9"] = dict(KNOWN_DETECTIONS["2013.8"])
 # Kernel 2013.10 changes only which call label a snap carries.
 KNOWN_DETECTIONS["2013.10"] = dict(KNOWN_DETECTIONS["2013.9"])
+# Kernel 2013.11 changes only the home term at a neutral venue.
+KNOWN_DETECTIONS["2013.11"] = dict(KNOWN_DETECTIONS["2013.10"])
 
 
 def known_detections(cohort):
-    """{metric: note} for a kernel cohort ("2013.6", "2013.7", "2013.8", "2013.9" or "2013.10"); empty otherwise."""
+    """{metric: note} for a kernel cohort ("2013.6", "2013.7", "2013.8", "2013.9", "2013.10" or "2013.11"); empty otherwise."""
     return dict(KNOWN_DETECTIONS.get(cohort, {}))
 
 

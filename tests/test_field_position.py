@@ -316,7 +316,7 @@ class FieldPositionTests(unittest.TestCase):
         legacy, kernel_2013_6, current = cohorts(receipts)
         self.assertTrue(legacy and kernel_2013_6)
         # Closed 2013.7+ slates (Week 9 on) form the current cohort; older receipts never join it.
-        self.assertTrue(all(r.get("kernel_version") in {"2013.7", "2013.8", "2013.9", "2013.10"} for r in current))
+        self.assertTrue(all(r.get("kernel_version") in {"2013.7", "2013.8", "2013.9", "2013.10", "2013.11"} for r in current))
         errors = [e for r in receipts for e in check_ledger(r)]
         self.assertFalse([e for e in errors if e.split(":")[0] in play_detail.SPOT_CLASSES])
         # The committed Weeks 4-5 receipts closed with no coherence violation.

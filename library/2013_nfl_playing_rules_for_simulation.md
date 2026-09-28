@@ -51,7 +51,7 @@ The kernel resamples real 2012 drives, kicks and transitions. 2012 and 2013 were
 | R2 defensive score on the first possession | Not modelled: interception, fumble and kick-return touchdowns do not exist in the transition pools, so the only defensive score is a safety. | **Listed** (already a documented 2013.7 limitation). |
 | R6, R13, R14, R17 clock rules | Quarters, halves and the overtime period are exact windows (900/1800 s). Timeouts, the two-minute warning and the play clock are not simulated per snap; each drive's seconds are the real 2012 drive's scaled duration, which embeds them. | **Listed** (structural: no per-snap clock). Constants are in `runtime/rules.py`. |
 | R13/R14 spikes | A spike stops a running clock. Every possession starts on a stopped clock (R14: a change of possession is an administrative stoppage), and an incompletion stops it. Kernels through 2013.8 shuffled a drive's real 2012 spikes into any snap slot, so a spike could open a drive or follow an incompletion (Week 12, Entry 53). | **Fixed in 2013.9** (`play_detail._seat_spikes`): a spike sits just after a run, sack or completion; snap order only, no result changes. |
-| Neutral site | `kernel._edge` gives the 0.008 home term to the designated home club whatever the venue. | **Listed** (existing Entry 45 limitation). |
+| Neutral site | Through kernel 2013.10, `kernel._edge` gave the 0.008 home term to the designated home club whatever the venue. Kernel 2013.11 gives no home term at a neutral venue. | **Resolved** in kernel 2013.11 (Entry 66); the Entry 45 Wembley receipts stand. |
 
 ## Sources
 

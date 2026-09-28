@@ -8,7 +8,7 @@ The branch's own playoff field, built from the final regular-season standings (`
 - **Wild Card.** Seeds 1 and 2 have byes. Seed 3 hosts seed 6, and seed 4 hosts seed 5.
 - **Divisional.** Reseeded: the 1 seed hosts the lowest surviving seed, and the 2 seed hosts the other survivor.
 - **Conference championships.** The higher remaining seed hosts.
-- **Super Bowl XLVIII.** A neutral site (MetLife Stadium). The AFC champion is the designated home team.
+- **Super Bowl XLVIII.** A neutral site (MetLife Stadium). The AFC champion is the designated home team; from kernel 2013.11 (Entry 66) the designated home team receives no home edge at a neutral site.
 - **Rules.** Postseason games cannot end tied: overtime runs in 15-minute periods, with modified sudden death, until someone wins (kernel 2013.8 onward). Game-day actives stay at 46.
 - **No postseason weekly awards.** The league gave AFC/NFC Players of the Week for the regular season only, so none are drawn for the postseason.
 
