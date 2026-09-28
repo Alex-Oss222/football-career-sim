@@ -30,6 +30,19 @@ Backfilled on October 27, 2013 (Entry 47); announced by the league on October 3.
 
 Drawn at the league's October 31 announcement date, during Week 9 (Entry 49).
 
+### November (Weeks 9-12)
+
+| Award | Winner | Team | Score | Shortlist (score) |
+|---|---|---|--:|---|
+| AFC Offensive Player | Stevan Ridley | New England Patriots | 77.8 | Philip Rivers, San Diego Chargers (103.5); Andrew Luck, Indianapolis Colts (80.9); Stevan Ridley, New England Patriots (77.8) |
+| AFC Defensive Player | Jerrell Freeman | Indianapolis Colts | 63.0 | Jerrell Freeman, Indianapolis Colts (63.0); Josh Bynes, Baltimore Ravens (57.5); Philip Wheeler, Miami Dolphins (55.9) |
+| AFC Special Teams Player | Brett Kern | Tennessee Titans | 37.2 | Eddie Royal, San Diego Chargers (45.8); Brett Kern, Tennessee Titans (37.2); Jacoby Jones, Baltimore Ravens (36.0) |
+| NFC Offensive Player | DeAngelo Williams | Carolina Panthers | 86.5 | DeAngelo Williams, Carolina Panthers (86.5); Josh Freeman, Tampa Bay Buccaneers (85.9); Alfred Morris, Washington Redskins (81.7) |
+| NFC Defensive Player | Lance Briggs | Chicago Bears | 52.9 | Stephen Nicholas, Atlanta Falcons (55.0); Lance Briggs, Chicago Bears (52.9); Chad Greenway, Minnesota Vikings (52.0) |
+| NFC Special Teams Player | Kai Forbath | Washington Redskins | 36.0 | Kai Forbath, Washington Redskins (36.0); LaMichael James, San Francisco 49ers (36.0); Devin Hester, Chicago Bears (35.7) |
+
+
+
 ## Weekly awards
 
 ### Week 1
@@ -174,3 +187,14 @@ Drawn at the close of Week 10 (Entry 50).
 | NFC Special Teams Player | Jeremy Ross | Green Bay Packers | 12.1 | Tim Masthay, Green Bay Packers (16.8); Damaris Johnson, Philadelphia Eagles (13.2); Jeremy Ross, Green Bay Packers (12.1) |
 
 Drawn at the close of Week 11 (Entry 52).
+
+### Week 12
+
+| Award | Winner | Team | Score | Shortlist (score) |
+|---|---|---|--:|---|
+| AFC Offensive Player | Philip Rivers | San Diego Chargers | 38.9 | Jamaal Charles, Kansas City Chiefs (48.8); Philip Rivers, San Diego Chargers (38.9); Isaac Redman, Pittsburgh Steelers (32.4) |
+| AFC Defensive Player | Derrick Johnson | Kansas City Chiefs | 18.0 | Jerod Mayo, New England Patriots (20.0); Derrick Johnson, Kansas City Chiefs (18.0); Brooks Reed, Houston Texans (17.6) |
+| AFC Special Teams Player | Brett Kern | Tennessee Titans | 22.8 | Brett Kern, Tennessee Titans (22.8); Eddie Royal, San Diego Chargers (20.8); Cassius Vaughn, Indianapolis Colts (16.1) |
+| NFC Offensive Player | Alfred Morris | Washington Redskins | 29.5 | Alfred Morris, Washington Redskins (29.5); Sam Bradford, St. Louis Rams (26.3); DeMarco Murray, Dallas Cowboys (26.1) |
+| NFC Defensive Player | Morris Claiborne | Dallas Cowboys | 29.9 | Morris Claiborne, Dallas Cowboys (29.9); Glover Quin, Detroit Lions (19.5); Stephen Nicholas, Atlanta Falcons (19.0) |
+| NFC Special Teams Player | Dan Bailey | Dallas Cowboys | 14.0 | Dan Bailey, Dallas Cowboys (14.0); LaMichael James, San Francisco 49ers (12.8); Jeff Locke, Minnesota Vikings (12.2) |

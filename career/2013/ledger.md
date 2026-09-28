@@ -1255,3 +1255,49 @@ This is an engine defect. It is fixed going forward, and no game is rerun. Until
 **Next competitive event:** November 24 Week 12 at Houston, 1 p.m. ET. **Not simulated.**
 
 **Commit closed - Canonical update - November 17, 2013 - Week 11 vs Arizona closed - canonical through November 17, after Week 11**
+
+## Entry 53: Week 12 at Houston closed
+
+**Effective canonical state:** November 24, 2013, after Week 12
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - November 24, 2013 - Week 12 at Houston closed`
+**Preceding global package checkpoint:** `Canonical update - November 17, 2013 - Week 11 vs Arizona closed`
+
+**Result.** Houston 38, Jacksonville 6 at Reliant Stadium. Jacksonville is 7-4, first in the AFC South a game ahead of 6-5 Tennessee, and the AFC's third seed behind the 8-3 Jets and 7-4 Pittsburgh.
+
+**Batch.** All fourteen Week 12 games closed once each under kernel 2013.8, drawn from the package frozen by `build_week_inputs.py 12` (sha256 `ee191707...`) after the gate passed. The call sheet, depth chart and scouting Phase II plan were committed before the draw (204f119).
+
+**Inputs.**
+- **Call sheet:** Stone's fifteen calls.
+- **Secondary:** Grimes and Harris outside, Poyer at nickel, Rutland first outside reserve.
+- **Dressed:** Edwards, Mosley and Rutland.
+- **Inactives:** Ball, Bouye, C.J. Wilson, Pendleton, Asper, John Parker Wilson, Mike Brown.
+
+**Game.**
+- Scoring: Scobee kicked field goals of 49 and 33. Jacksonville reached the Houston 24 or closer four times and scored no touchdown (a field goal, two turnovers on downs, an interception).
+- Cousins completed 25 of 42 for 176 yards with two interceptions (Reed, Joseph) and was sacked three times (Watt two, Mays).
+- Jones-Drew ran 12 times for 86 yards.
+- Houston: Foster ran 29 times for 133 yards and a touchdown; Andre Johnson caught 8 for 134 and three touchdowns; Schaub threw four touchdowns.
+- Grimes intercepted Schaub.
+- Stone entered no game-management decision; both fourth-down attempts came from the engine's 2012 resolution.
+
+**Availability.** No injury for either team. Bouye's projected return (November 26) falls before Week 13; his status needs fresh medical communication.
+
+**Rematch notes.** Tice, Crennel and Lowry recorded Stone's four questions after the game, from the receipt only. They are closed and are not a Week 14 plan (`houston_rematch_notes.md`).
+
+**Scouting Phase II.** The role-validation directive and interim-card format are recorded as a plan (`scouting/2014_draft/phase_ii_role_validation.md`). No interim card was written: the card's tape fields need a dated, sourced record of what was knowable by November 22, 2013, and the repository holds none yet. No card content, grade or eligibility fact was invented, and every prospect file still reads not started.
+
+**Statistics, standings and awards.**
+- **Receipts:** one full receipt and thirteen compact receipts were kept, 176 of 176 in total.
+- **Calibration audit:** every graded 2013.8 row is WITHIN, including the third-down rate that was OUTSIDE after Week 11 (now 0.421 over 58 team-games). Every ledger-coherence count is zero.
+- **Awards:** Week 12 and November awards were drawn; no Jacksonville player was shortlisted.
+
+**Engine notes.**
+- **Spike after a fair catch:** Houston's first snap after Jacksonville's fair-caught punt at 2:01 of the second quarter was a spike, although the clock was already stopped. `play_detail._layout` shuffles a drive's 2012 spikes into any slot, so a spike can land on the first snap of a possession. This changes play order only: the drive's totals, terminal and the result are fixed by the kernel. It is the only such spike in any full receipt. It is recorded for a forward fix and was not corrected here, since that would change the kernel.
+- **0-yard punt:** Anger's 0-yard punt from the Houston 49, downed at the line, is a real 2012 pool record (LOS 49, downed, gross 0) drawn as-is; it is not a defect.
+- **Clock-expired drive:** Houston's first-half drive to the Jacksonville 30 that ran out of time is the registered clock-expired known detection.
+
+**Primary records:** `regular_season/week_12_jacksonville_at_houston/output.md`, `call_sheet.json` and `houston_rematch_notes.md`; `league_results/week_12.md`; `stats/game_receipts/week_12_*.json`; `awards/`; `scouting/2014_draft/phase_ii_role_validation.md`; `standings.md`; `depth_chart.json`.
+**Next competitive event:** December 1 Week 13 at Cleveland, 1 p.m. ET. **Not simulated.**
+
+**Commit closed - Canonical update - November 24, 2013 - Week 12 at Houston closed - canonical through November 24, after Week 12**

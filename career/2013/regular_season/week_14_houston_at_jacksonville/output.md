@@ -8,3 +8,5 @@
 **Format:** `foundation/templates/season_output_template.md`
 
 **Note:** Division game (AFC South). Thursday night on NFL Network; short week.
+
+**Carry-forward:** the Houston rematch notes recorded after Week 12 are in [houston_rematch_notes.md](../week_12_jacksonville_at_houston/houston_rematch_notes.md). They are notes, not a Week 14 plan.
