@@ -66,13 +66,13 @@ Many of the pages located are school biographies, reference pages or retrospecti
 
 ### Telvin Smith
 
-- **College and position:** Florida State; linebacker (played inside and outside; the middle linebacker job was his in 2013).
-- **2013 class standing:** Senior. **Confirmed.** First full-time starting season in 2013 after two years splitting reps at middle linebacker (confirmed: ESPN ACC blog preseason 2013 top-25 countdown, and the ESPN December 2013 feature).
+- **College and position:** Florida State; linebacker. **Corrected (evidence pass, September 28, 2026):** dated 2013 sources (seminoles.com, August 27, 2013; Tomahawk Nation, August 5 and October 25, 2013) list him at weak-side linebacker in 2013; he played middle linebacker in 2011 and 2012. See `2014_prospect_evidence/telvin_smith.md`.
+- **2013 class standing:** Senior. **Confirmed.** First full-time starting season in 2013 after two years splitting reps at middle linebacker (the ESPN December 4, 2013 feature, gated below; the ESPN ACC blog countdown formerly cited here is a January 2014 postseason piece, not preseason, and is gated to its date).
 - **Eligibility:** Senior; automatically eligible. No declaration required. **Confirmed.**
 - **Transfer or dismissal history:** None found for Smith himself in either pass. (Contemporaneous coverage discusses the earlier dismissal of a teammate and childhood friend, Greg Reid; that bears on nothing in Smith's status.)
 - **Sources:**
   - Florida State 2013 roster: https://seminoles.com/sports/football/roster/telvin-smith/4196 (page publication date unverified).
-  - ESPN ACC blog, "2013 Top 25 countdown No. 13 Florida State Seminoles LB Telvin Smith": http://www.espn.com/blog/acc/post/_/id/66470/2013-top-25-player-countdown-no-13-2 (preseason 2013; exact date unverified).
+  - ESPN ACC blog, "2013 Top 25 countdown No. 13 Florida State Seminoles LB Telvin Smith": http://www.espn.com/blog/acc/post/_/id/66470/2013-top-25-player-countdown-no-13-2 (corrected: a January 2014 postseason countdown, one search summary dates it January 27, 2014; not usable before that date).
   - **December 4, 2013 (not usable before):** ESPN (David Hale), "Florida State Seminoles linebacker Telvin Smith rededicates himself in honor of former teammate Greg Reid", describes him as a senior linebacker and a vocal leader of the defense. https://www.espn.com/college-football/story/_/id/10077490/florida-state-seminoles-linebacker-telvin-smith-rededicates-honor-former-teammate-greg-reid . Pass 2: date confirmed in search text; single publisher.
 - **Other gated facts:**
   - **Senior Bowl participation (corrected in pass 2):** pass 1 gated his acceptance to December 30, 2013; pass 2 found no second source for that date. A reference source (https://en.wikipedia.org/wiki/Telvin_Smith) instead states that his Senior Bowl participation was announced on January 21, 2014. Conservative gate: **not usable before January 21, 2014**, unless an earlier dated acceptance report is verified. His name on NFL.com's running acceptance list (https://www.nfl.com/news/players-who-have-accepted-invites-for-2014-senior-bowl-0ap2000000291817) was not re-confirmed in pass 2 search text. **Unverified.**
@@ -184,7 +184,7 @@ A club may select:
 
 ### Confirmed
 
-- **Bitonio:** Nevada senior left tackle; 38 consecutive starts; Phil Steele preseason second-team All-MW; the NFL.com December 12, 2013 article and its content; on the Senior Bowl acceptance list; combine invitee.
+- **Bitonio:** Nevada senior left tackle; 38 consecutive starts per NFL.com (school and reference text say 39; unresolved, see `2014_prospect_evidence/joel_bitonio.md`); Phil Steele preseason second-team All-MW; the NFL.com December 12, 2013 article and its content; on the Senior Bowl acceptance list; combine invitee.
 - **Turner:** redshirt sophomore; 2011 redshirt; started all 13 games at right guard in 2013; eligible under the three-year rule only by application; second-team All-SEC (AP); declaration by agent statement on Monday, January 13, 2014; one of seven LSU early entrants on the January 19, 2014 list (search text).
 - **Smith:** Florida State senior; first full-time starting season in 2013; ESPN feature dated December 4, 2013.
 - **Leno:** Boise State redshirt senior left tackle; all 13 starts in 2013; 39 consecutive career starts, 26 at left tackle; first-team All-MW 2013; East-West Shrine Game acceptance; combine invitee.
