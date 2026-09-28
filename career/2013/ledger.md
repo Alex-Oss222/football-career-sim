@@ -1374,3 +1374,28 @@ Turner is an underclassman and is not in the 2014 pool until a dated declaration
 **Next competitive event:** Thursday, December 5, Week 14 vs Houston, 8:25 p.m. ET. **Not simulated.**
 
 **Commit closed - Canonical update - December 1, 2013 - Week 13 at Cleveland closed - canonical through December 1, after Week 13**
+
+## Entry 56: Kernel 2013.10 adopted (personnel-true labels)
+
+**Effective canonical state:** December 1, 2013, after Week 13
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - December 1, 2013 - Kernel 2013.10 adopted (personnel-true labels)`
+**Preceding global package checkpoint:** `Canonical update - December 1, 2013 - Week 13 at Cleveland closed`
+
+**Decision.** At the user's instruction ("fix the label bug before week 14"), kernel 2013.10 replaces 2013.9 for every slate from Week 14.
+
+**Defect (Entry 55).** Call labels ignored personnel, so a receiver who is not in a package could carry that package's label (Week 13: the WR4's touchdown labelled 22 Heavy Snag).
+
+**Fix.** A snap's label must come from a call whose personnel could include the player who made it:
+- his position group needs a slot;
+- his depth rank may be at most one past the slot count (one rotation spot, matching the weekly plans' "Thielen / Blackmon" and "MJD / Grimes");
+- a fullback needs two backs;
+- quarterbacks and 6OL codes always fit.
+
+A snap no call fits carries the generic label. Source and tests: `runtime/README.md`, `tests/test_personnel_labels.py`.
+
+**Evidence.** Labels only. Scores, drives and every player statistic are identical to 2013.9 across the 250-game sample. On that sample 10% of labels changed and 2.1% became generic, against 0.02% before.
+
+**Closed results stand.** Closed receipts keep their labels; nothing is rerun.
+
+**Commit closed - Canonical update - December 1, 2013 - Kernel 2013.10 adopted (personnel-true labels) - canonical through December 1, after Week 13**

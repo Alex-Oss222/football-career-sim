@@ -1,4 +1,4 @@
-"""One shared, cached synthetic kernel sample (2013.9) for the kernel test modules.
+"""One shared, cached synthetic kernel sample (2013.10) for the kernel test modules.
 
 Resolving games is the slow part of the suite (the Railway image runs the
 whole suite on every deploy), so the coherence, label and band tests share

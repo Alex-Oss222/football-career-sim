@@ -162,3 +162,13 @@ Kernel 2013.9 changes one thing: where a spike sits in a drive's snap order. The
 **Evidence.** On the shared 250-game synthetic sample, the 2013.8 layout misplaced 40 of 87 spikes and 2013.9 misplaces none. Final scores and the drive summaries are identical in all 250 games. `tests/test_spike_seating.py` covers the moves and the sample.
 
 **Versions and cohorts.** `KERNEL_VERSION` and the private service's `KERNEL` are both `2013.9`. `KNOWN_DETECTIONS["2013.9"]` carries the 2013.8 registry over unchanged; `bands.current_cohorts` gives 2013.9 receipts their own audit section. Closed receipts (including the Week 12 spike) are never rerun.
+
+## Kernel 2013.10 personnel-true call labels
+
+Kernel 2013.10 changes one thing: which call label a snap carries. Labels are chosen after each snap is resolved, on their own random stream, from the calls whose family covers the carrier's or target's position group. Through 2013.9 the call's personnel was never consulted, so a receiver who is not in a package could carry that package's label. In Week 13, for example, the WR4 caught a touchdown labelled "22 Heavy Right, Snag", though 22 personnel carries one receiver (Entry 55; 7 of 135 labelled passes in Weeks 10-13).
+
+**The fix.** `play_detail._personnel_fits` reads a two-digit personnel code as backs then tight ends, with receivers as the rest of five. A labelled player needs a slot in his group, and his depth rank in that group may be at most one past the slot count: one rotation spot, as the weekly plans rotate "Thielen / Blackmon" and "MJD / Grimes". A fullback needs two backs. A quarterback, and any code with no skill layout (6OL), always fit. When no call on the sheet fits, the snap carries the generic label rather than a wrong one.
+
+**Evidence.** On the shared 250-game sample, scores, drives and every player statistic are identical to 2013.9, since labels never feed back into resolution. Of club A's 16,481 labelled snaps, 1,717 changed label and 340 (2.1%) became generic, against 3 before; ledger coherence is zero. `tests/test_personnel_labels.py` covers the rule and checks every sample label.
+
+**Versions and cohorts.** `KERNEL_VERSION` and the service `KERNEL` are both `2013.10`. `KNOWN_DETECTIONS["2013.10"]` carries the 2013.9 registry over. Closed receipts keep their labels and are never rerun.

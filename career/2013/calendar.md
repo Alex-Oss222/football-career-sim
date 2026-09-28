@@ -10,7 +10,7 @@
 - Completed through: **December 1, Week 13 at Cleveland (won 22-19, overtime)**.
 - Controlled 53 (53 active); practice squad 8; preseason record 2-2; regular-season record 8-4.
 - Next competitive event: **Thursday, December 5 Week 14 vs Houston, 8:25 p.m. ET: NOT SIMULATED**.
-- Alan Ball out (Week 10; projected return January 22, 2014); A.J. Bouye cleared (Week 11 injury; November 26); Paul Posluszny out (Week 13; independent medical hold; projected return April 5, 2014); Travis Kelce out, minor (Week 13; projected return December 3); Rackley limited (minor); C.J. Wilson out. Pasztor and Mosley available from their recovered projections (Entry 46). Games ran under kernel 2013.6 in Weeks 4-8 (Entry 39); kernel 2013.7 in Weeks 9-10 (Entry 48); kernel 2013.8 in Weeks 11-12 (Entry 51); kernel 2013.9 from Week 13 (Entry 54). League awards: `awards/` (Entry 47).
+- Alan Ball out (Week 10; projected return January 22, 2014); A.J. Bouye cleared (Week 11 injury; November 26); Paul Posluszny out (Week 13; independent medical hold; projected return April 5, 2014); Travis Kelce out, minor (Week 13; projected return December 3); Rackley limited (minor); C.J. Wilson out. Pasztor and Mosley available from their recovered projections (Entry 46). Games ran under kernel 2013.6 in Weeks 4-8 (Entry 39); kernel 2013.7 in Weeks 9-10 (Entry 48); kernel 2013.8 in Weeks 11-12 (Entry 51); kernel 2013.9 in Week 13 (Entry 54); kernel 2013.10 from Week 14 (Entry 56). League awards: `awards/` (Entry 47).
 
 ## 2013 branch schedule
 
