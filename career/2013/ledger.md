@@ -2111,3 +2111,36 @@ This archive was appended late. It was written at this February 2, 2014 checkpoi
 **Still not generated.** The two 2013 special-teamer slots (no coverage-unit evidence in the 2013 receipts).
 
 **Commit closed - Canonical update - February 2, 2014 - Super Bowl MVP and Pro Bowl drawn (retroactive) - canonical through February 2, 2014**
+
+## Entry 74: Season review with Khan and Caldwell; Stone retained
+
+**Effective canonical state:** February 2, 2014 (no clock advance). The event is dated Wednesday January 15, 2014.
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - February 2, 2014 - Season review with Khan and Caldwell (Stone retained)`
+**Preceding global package checkpoint:** `Canonical update - February 2, 2014 - Super Bowl MVP and Pro Bowl drawn (retroactive)`
+
+**Decision.** The user asked whether Stone's end-of-season meeting with the owner and general manager had been held, and whether he is retained. It had not been held. The user directed it:
+- **Date:** Wednesday January 15, 2014, the day after the player exit interviews.
+- **Stone's brief:** an honest season review and his 2014 direction, with no new asks.
+
+**Record.** `career/2013/season_review/owner_and_gm_review.md`.
+- **Entry 1:** the club's criteria freeze, committed before the meeting was written. It covers authority, the fully guaranteed contract, the hire criteria, Stone's own first-year standard, the 2013 record, and the unknown private weighting.
+- **Entry 2:** the meeting.
+- **Entry 3:** the club's decision.
+
+**Decision: Alex Stone is retained as head coach for 2014, on his existing contract.** Khan and Caldwell hold this authority (Document 3, row 1), and resolved it from the frozen criteria.
+- **The five criteria:** the Caldwell-Stone partnership, program leadership, the quarterback evaluation, staff construction and roster development all have 2013 evidence.
+- **Stone's own standard:** the season met the first-year standard he set in his interview, which did not promise a playoff appearance.
+- **Concerns raised:** the regular-season scoring margin (356-346), the three losses by 28 or more (six and four turnovers in two of them), and Cousins's 18 interceptions and 38 sacks. They are Caldwell's first measures for 2014, not grounds to end the contract.
+- **Label-swap check:** any club with this record and a four-year, fully guaranteed contract in its first year retains its coach.
+- **Unchanged:** Stone's contract, authority and staff.
+- **Extension:** not raised by either side; remains unknown.
+
+**Follow-ups.**
+- **Caldwell's deadline:** Stone's written recommendations before February 17. They were delivered as the February 2 memo filed in `career/2014/offseason/`.
+- **Khan's request:** prepare the November 9, 2014 Wembley game against Dallas on the 2013 London plan.
+- **Open gap:** the league's post-2013 head-coaching changes are not simulated, so no other club has sought permission to interview a Jacksonville assistant. This is recorded for the user's decision.
+
+**Exit interviews.** Stone's player exit interviews, dated January 13-14, are recorded separately when complete.
+
+**Commit closed - Canonical update - February 2, 2014 - Season review with Khan and Caldwell (Stone retained) - canonical through February 2, 2014**

@@ -1,11 +1,11 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2014-FEB02-PRO-BOWL-STATE-49`
-**Supersedes:** `JAX-2014-FEB02-KERNEL-2014-3-STATE-48`
+**Version:** `JAX-2014-FEB02-SEASON-REVIEW-STATE-50`
+**Supersedes:** `JAX-2014-FEB02-PRO-BOWL-STATE-49`
 **Snapshot effective:** February 2, 2014, after Super Bowl XLVIII (Buffalo 31, Minnesota 20); the 2013 season is complete and archived.
-**Last reconciled:** September 28, 2026; season-ledger Entry 73.
-**Global package checkpoint:** `Canonical update - February 2, 2014 - Super Bowl MVP and Pro Bowl drawn (retroactive)`
+**Last reconciled:** September 28, 2026; season-ledger Entry 74.
+**Global package checkpoint:** `Canonical update - February 2, 2014 - Season review with Khan and Caldwell (Stone retained)`
 
 ## Effective source-version manifest
 
@@ -15,7 +15,7 @@
 | Document 2 | `ab790f6e935c99a901a6d39cf3bee5183cf4da3e` | Active foundation source |
 | Document 3 | `38e0ce21e9cf1b62f8d4b9c281955facdaf07b57` | Active foundation source |
 | Document 4 | `JAX-2014-FEB02-SEASON-CLOSE-REGISTER-34`; closed by Entry 67 | Controlled 53, all active, practice squad, roles and availability at the season's close |
-| Document 6 | 2013 ledger through Entry 73 | 2013 season complete; phase archives in Entry 67; 2014 setup in Entry 68; kernels 2014.1 and 2014.2 in Entries 69-70; season honours in Entry 71; kernel 2014.3 and the engine assessment in Entry 72; Super Bowl MVP and Pro Bowl in Entry 73 |
+| Document 6 | 2013 ledger through Entry 74 | 2013 season complete; phase archives in Entry 67; 2014 setup in Entry 68; kernels 2014.1 and 2014.2 in Entries 69-70; season honours in Entry 71; kernel 2014.3 and the engine assessment in Entry 72; Super Bowl MVP and Pro Bowl in Entry 73; season review with Khan and Caldwell in Entry 74 |
 
 ## 1. Master clock and competition position
 
@@ -23,7 +23,7 @@
 |---|---|
 | Master date/time | February 2, 2014, after Super Bowl XLVIII |
 | League/season | NFL, 2013 |
-| Team / head coach | Jacksonville Jaguars / Alex Stone |
+| Team / head coach | Jacksonville Jaguars / Alex Stone (retained for 2014 at the January 15, 2014 season review, Entry 74) |
 | Callers | Stone offense; Romeo Crennel defense; Alan Lowry special teams |
 | Season phase | 2013 season complete; 2014 offseason |
 | Preseason record | **2-2** |
@@ -76,7 +76,8 @@ League awards (`career/2013/awards/`): Weeks 1-8 and September backfilled (Entry
 
 The 2013 season is complete and archived (Entry 67): Jacksonville 10-6, 1-1 in the postseason; Buffalo won Super Bowl XLVIII. The next Jacksonville football event belongs to the 2014 offseason.
 
-- **Held for the user:** end-of-season exit interviews (not run until the user asks).
+- **Held for the user:** end-of-season exit interviews, now being run at the user's request (dated January 13-14, 2014). The five 2014 phase plans (folders created; the user writes them).
+- **Season review (Entry 74):** Khan and Caldwell retained Stone for 2014 on his existing contract after the January 15, 2014 review (`career/2013/season_review/owner_and_gm_review.md`). Caldwell's first 2014 measures: the scoring margin and the quarterback's ball security. Open gap: other clubs' post-2013 head-coaching changes are not simulated.
 - **2014 setup (Entry 68):** `career/2014/` holds the 2014 calendar with its gates, the generated draft order (Jacksonville 26th in each round; its second-round selection is Washington's), the derived opponents and the contract-status register (8 unrestricted, 3 restricted and 3 exclusive-rights free agents, 4 unresolved). The next league events are the tag window (February 17), the Combine (February 19-25) and the league year (March 11).
 - **Engine:** kernel 2014.1 (Entry 69) tracks timeouts, conditions late draws on them, keeps kneel drives in their start zone and publishes goal-to-go distances. The two-minute warning and play clock remain embedded in real drive durations. Kernel 2014.2 (Entry 70) recalibrates the late-game draw: category weights conditioned on the start zone, and late cells borrowing feasible drives from the same need instead of masking a category; the late mix by score situation now tracks 2012.
 - **Kernel 2014.3 (Entry 72):** credit-only rules (sacks allowed to the on-field lineman facing the rusher, coverage tackles, long snaps, line starts, one club returner) and the Pro Bowl game type; every result is identical to 2014.2. `runtime/defect_register.md` ranks the open engine defects for the user's decision before any 2014 game; the first is that every club carries the same Average strength.
