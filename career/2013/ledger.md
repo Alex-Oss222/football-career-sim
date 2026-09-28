@@ -1941,3 +1941,39 @@ This archive was appended late. It was written at this February 2, 2014 checkpoi
 - The engine fixes for timeouts, the two-minute warning, kneel-downs and the fourth-down display, before any 2014 game.
 
 **Commit closed - Canonical update - February 2, 2014 - 2014 season set up - canonical through February 2, 2014, after Super Bowl XLVIII**
+
+## Entry 69: Kernel 2014.1 adopted (timeouts, kneel zones, goal to go)
+
+**Effective canonical state:** February 2, 2014 (no clock advance)
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - February 2, 2014 - Kernel 2014.1 adopted (timeouts)`
+**Preceding global package checkpoint:** `Canonical update - February 2, 2014 - 2014 season set up`
+
+**Decision.** The user's instruction was "The timeout and fourth-down fixes you deferred, before any 2014 games." Kernel 2014.1 replaces 2013.11 for every event from here on. No game has been drawn under it.
+
+**Defects addressed.**
+- **Week 17 (Entry 60):** a leading possession punted with 3 seconds left.
+- **Divisional round (Entry 64):** after a trailing punt with 2:22 left, the opponent's clock ran down to 0:07.
+- **Super Bowl XLVIII (Entry 67):** kneel-downs at the Minnesota 1 before halftime.
+- **Fourth-down display:** yards to go beyond the goal line in three receipts (Weeks 11, 13, 16).
+
+**Fix.** Documented in `runtime/README.md`; tests in `tests/test_timeouts.py`.
+- **Timeout data:** the 2012 field-position data (schema v2) now carries each club's charged timeouts at every drive's start and the timeouts it used. The data was cross-checked against the second play-by-play file; the deviations are explained and recorded in the builder.
+- **Timeout state:** the kernel tracks each club's timeouts: three per half, two in regular-season overtime, and three per two-period postseason overtime half (labelled inference).
+- **Conditioned draws:** late, first-half-final and overtime draws follow a pre-registered ladder on those counts, and the counts reweight the choice between kneeling out, punting, a field goal or going.
+- **Kneel start zone:** a kneel drive replays only from its own start zone.
+- **End-of-half fallback:** a failed end-of-half draw first tries a same-bin drive that fits the time left.
+- **Fourth-down records:** they publish goal-to-go distances.
+- **New checks:** coherence classes check the timeout state and the goal line.
+
+**Not modelled separately.** The two-minute warning and the play clock remain embedded in real 2012 drive durations. This is stated rather than claimed as fixed.
+
+**Acceptance (250-game synthetic sample).** Zero coherence violations. Every graded band row is inside except the two clock rows registered as known detections since kernel 2013.7. FGM per team game moves back inside.
+- **Touchdown share of drives:** 0.2100 against 0.1945 +/- 0.0155, at the band's ceiling (2013.11: 0.2090 on the same sample).
+- **Trailing late punt share:** 0.062 against 0.119 +/- 0.064, inside but low.
+- **Cause:** both come from the late cells' existing masking bias, not the timeout logic. Recalibrating it is a separate, larger change, not made here.
+- **Effect on the defects:** a leading offence in its last two minutes punted 11 of 126 times, against 16 of 115 under 2013.11. With the defence out of timeouts it punted 1 of 50 times.
+
+**Closed results stand.** No 2013 receipt is rerun. The Week 17, Divisional and Super Bowl results keep their recorded limitations.
+
+**Commit closed - Canonical update - February 2, 2014 - Kernel 2014.1 adopted (timeouts) - canonical through February 2, 2014**

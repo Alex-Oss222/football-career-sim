@@ -57,9 +57,9 @@ def _scripted(script):
     kernel's own."""
     queue = list(script)
 
-    def draw(rng, spot, half, window, diff, edge, diagnostics):
+    def draw(rng, spot, half, window, diff, edge, diagnostics, timeouts=None):
         if half != "OT" or not queue:
-            return REAL_DRAW(rng, spot, half, window, diff, edge, diagnostics)
+            return REAL_DRAW(rng, spot, half, window, diff, edge, diagnostics, timeouts)
         category = queue.pop(0)
         if category == "clock":
             t = fp._clock_fallback(rng, fp._late_clock_tuples("tied"), spot, window) or fp.ZERO_TUPLE
@@ -102,7 +102,7 @@ class OvertimeRuleTests(unittest.TestCase):
 
     def test_kernel_version(self):
         # 2013.8 introduced these rules; later kernels keep them.
-        self.assertIn(KERNEL_VERSION, ("2013.8", "2013.9", "2013.10", "2013.11"))
+        self.assertIn(KERNEL_VERSION, ("2013.8", "2013.9", "2013.10", "2013.11", "2014.1"))
         self.assertEqual((RULES.regular_ot_seconds, RULES.postseason_ot_seconds), (900, 900))
 
     def test_opening_field_goal_gives_the_other_club_a_possession(self):
@@ -139,7 +139,7 @@ class OvertimeRuleTests(unittest.TestCase):
     def test_safety_ends_the_game(self):
         played = 0
         for which in range(len(self.regular)):
-            for script in (["safety"], ["punt", "safety"]):
+            for script in (["safety"], ["punt", "safety"], ["punt", "punt", "safety"]):
                 try:
                     result = self.replay(script, which=which)
                 except Infeasible:

@@ -9,8 +9,9 @@ real transition records that turn one possession's end into the next one's
 start (kickoffs, safety free kicks, punts, interceptions, fumbles lost).
 
 Stateless: every draw takes the caller's possession RNG, so it stays on the
-possession stream. Every rule is keyed only on the ball spot, the clock and
-the score. Nothing here reads a club identity; every club uses this code.
+possession stream. Every rule is keyed only on the ball spot, the clock, the
+score and (kernel 2014.1) the two clubs' charged timeouts. Nothing here reads
+a club identity; every club uses this code.
 """
 from __future__ import annotations
 
@@ -23,7 +24,7 @@ from . import drive_model
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "library/data/2012_nfl_field_position_model.json"
-SCHEMA = "2012-nfl-field-position-model-v1"
+SCHEMA = "2012-nfl-field-position-model-v2"
 CATEGORIES = drive_model.CATEGORIES
 
 TUPLE_FIELDS = (
@@ -31,11 +32,18 @@ TUPLE_FIELDS = (
     "term_bucket", "term_down", "term_ydstogo", "chains", "kneel_yards", "spikes",
     "fg_distance", "fg_made", "fg_blocked", "safety_term_kind", "safety_term_los",
     "runs", "attempts", "sacks", "td_kind",
+    "off_timeouts", "def_timeouts", "off_timeouts_used", "def_timeouts_used",
 )
 T = {name: index for index, name in enumerate(TUPLE_FIELDS)}
 FOURTH_DOWN_CATEGORIES = ("punt", "field_goal_attempt", "downs")
 KEEP_END = ("field_goal_attempt", "punt", "downs", "interception", "fumble_lost")
 H1_BUCKET_EDGES = ((0, 30), (31, 60), (61, 120), (121, 240), (241, 1800))
+# Kernel 2014.1: late, first-half-final and overtime draws are conditioned on
+# the clubs' charged timeouts. A ladder level is used when its matching tuples
+# in the pool number at least MIN_TIMEOUT_POOL (the pre-registered min_cell).
+TIMEOUT_REGIMES = ("h1_final", "late", "ot")
+MIN_TIMEOUT_POOL = 30
+TIMEOUT_BANDS = ((0,), (1, 2), (3,))
 EXPECTED_DRIVES = 5984
 KICK = {"touchback": 0, "next_start": 1, "kick_yards": 2, "return_yards": 3, "enforcement": 4, "outcome": 5}
 PUNT = {"los": 0, "outcome": 1, "gross": 2, "return_yards": 3, "enforcement": 4, "next_start": 5, "touchback": 6}
@@ -287,6 +295,8 @@ def static_feasible(category, t, spot):
     free, kneels, terminal, sacks = fixed_yardage(category, t)
     if t[T["kneel_yards"]] and not 1 <= end + kneels <= 99:
         return False  # kneels are the drive's last snaps: the spot before them must be in the field
+    if t[T["kneel_yards"]] and zone(t[T["start"]]) != zone(spot):
+        return False  # kernel 2014.1: a kneel drive replays only from its own start zone
     if free <= 0:
         # Only sacks can carry the yardage: their losses are fitted to the
         # net, so the required loss must be non-negative (exactly zero
@@ -435,10 +445,11 @@ class Drive:
     regime: str
     fallback: str | None = None
     redirected: bool = False
+    timeout_level: int | None = None
 
 
 ZERO_TUPLE = (0, 0, 0, 0, 0, 0, 0, 1, "gt600", None, None, [0, 0, 0, 0, 0, 0], [], 0,
-              None, None, None, None, None, 0, 0, 0, None)
+              None, None, None, None, None, 0, 0, 0, None, None, None, 0, 0)
 
 
 def draw_options(pool_id, regime, spot, window):
@@ -448,14 +459,81 @@ def draw_options(pool_id, regime, spot, window):
     return counts, options
 
 
-def _draw_from(rng, pool_id, regime, spot, window, edge):
+def _band(n):
+    return next(i for i, band in enumerate(TIMEOUT_BANDS) if n in band)
+
+
+def timeout_match(level, t, timeouts, key):
+    """Kernel 2014.1 ladder: does tuple t match the clubs' charged timeouts?
+
+    Level 0: both clubs' counts equal the tuple's; level 1: the clock-stopping
+    side's count (the offense when it trails, otherwise the defense) equals the
+    tuple's; level 2: that side's count is in the same band (0, 1-2, 3);
+    level 3: unconditioned."""
+    if level >= 3:
+        return True
+    off, dfn = t[T["off_timeouts"]], t[T["def_timeouts"]]
+    if off is None or dfn is None:
+        return False
+    if level == 0:
+        return (off, dfn) == tuple(timeouts)
+    mine, now = (off, timeouts[0]) if key == "off" else (dfn, timeouts[1])
+    return mine == now if level == 1 else _band(mine) == _band(now)
+
+
+def _members(pool_id, category):
+    """Every tuple of a pool's category, before spot and clock feasibility."""
+    kind, key = pool_id
+    if kind == "late_union":
+        return [t for cell in _need_cells(key) for t in load()["pools"]["late"][cell][category]]
+    return list(_pool(pool_id, category))
+
+
+def _timeout_options(pool_id, counts, options, timeouts, key, diagnostics):
+    """(weights, options) conditioned on the charged timeouts by the ladder.
+
+    A level is used when the pool holds at least MIN_TIMEOUT_POOL matching
+    tuples and at least one matching tuple is feasible here; the category
+    weight is its 2012 cell count times the share of its tuples that match
+    (P(category | cell, timeouts) up to a constant)."""
+    members = {c: _members(pool_id, c) for c in counts if counts.get(c, 0)}
+    for level in range(3):
+        matching = {c: [t for t in m if timeout_match(level, t, timeouts, key)] for c, m in members.items()}
+        if sum(len(m) for m in matching.values()) < MIN_TIMEOUT_POOL:
+            continue
+        weights, narrowed = {}, {}
+        for c, m in matching.items():
+            if not members[c]:
+                continue
+            weights[c] = counts[c] * len(m) / len(members[c])
+            feasible = options.get(c, ())
+            # Within a category, prefer the matching feasible tuples; when the
+            # spot and clock leave none, keep the category's feasible set so
+            # the timeout filter never masks a category (masking is spot and
+            # clock feasibility only, as in 2013.x).
+            narrowed[c] = tuple(t for t in feasible if timeout_match(level, t, timeouts, key)) or feasible
+            if feasible and narrowed[c] is feasible and diagnostics is not None:
+                diagnostics["timeout_tuple_widened"] = diagnostics.get("timeout_tuple_widened", 0) + 1
+        if any(weights.get(c) and narrowed.get(c) for c in weights):
+            if diagnostics is not None:
+                diagnostics["timeout_level_%d" % level] = diagnostics.get("timeout_level_%d" % level, 0) + 1
+            return weights, narrowed, level
+    if diagnostics is not None:
+        diagnostics["timeout_level_3"] = diagnostics.get("timeout_level_3", 0) + 1
+    return counts, options, 3
+
+
+def _draw_from(rng, pool_id, regime, spot, window, edge, timeouts=None, key="def", diagnostics=None):
     counts, options = draw_options(pool_id, regime, spot, window)
+    level = None
+    if timeouts is not None and regime in TIMEOUT_REGIMES:
+        counts, options, level = _timeout_options(pool_id, counts, options, timeouts, key, diagnostics)
     probs = category_mix(counts, edge, options)
     if not probs:
         return None
     category = drive_model.draw_category(rng, probs)
     pool = options[category]
-    return category, pool[rng.randrange(len(pool))]
+    return category, pool[rng.randrange(len(pool))], level
 
 
 def _clock_fallback(rng, tuples, spot, window):
@@ -480,24 +558,39 @@ def _h1_clock_tuples():
     return [t for cells in load()["pools"]["h1_final"].values() for t in cells["clock"]]
 
 
-def draw_drive(rng, spot, half, window, diff, edge, diagnostics):
+def draw_drive(rng, spot, half, window, diff, edge, diagnostics, timeouts=None):
     """One possession: a category from the state's 2012 mix, then a real drive
     of that category feasible from the start spot. Draws: one random for the
-    category and one randrange for the tuple (again for an H1 redirect)."""
+    category and one randrange for the tuple (again for an H1 redirect).
+
+    Kernel 2014.1: `timeouts` is (offense, defense) charged timeouts left.
+    First-half-final, late and overtime draws are conditioned on them
+    (timeout_match); None keeps the 2013.x draw."""
     cell = cell_for(half, window, diff)
+    key = "off" if diff < 0 else "def"
     if half == "OT" and diff > 0:
         diagnostics["ot_leading_offense"] = diagnostics.get("ot_leading_offense", 0) + 1
     if half == 1:
         drawn = _draw_from(rng, ("neutral", start_bin(spot)), "h1_neutral", spot, window, edge)
         if drawn is not None:
-            category, t = drawn
+            category, t, _ = drawn
             seconds = scaled_seconds(t)
             if category != "clock" and seconds < window:
                 return Drive(category, t, seconds, False, cell, "h1_neutral")
         diagnostics["interior_clock_redirected"] = diagnostics.get("interior_clock_redirected", 0) + 1
-        drawn = _draw_from(rng, ("h1_final", h1_key(window)), "h1_final", spot, window, edge)
+        drawn = _draw_from(rng, ("h1_final", h1_key(window)), "h1_final", spot, window, edge,
+                           timeouts, key, diagnostics)
         if drawn is not None:
-            return Drive(drawn[0], drawn[1], window, True, cell, "h1_final", redirected=True)
+            return Drive(drawn[0], drawn[1], window, True, cell, "h1_final", redirected=True,
+                         timeout_level=drawn[2])
+        if timeouts is not None:
+            # Kernel 2014.1: before any clock fallback, a real drive from the
+            # start bin that fits the time left (the half then continues).
+            drawn = _draw_from(rng, ("neutral", start_bin(spot)), "h2_neutral", spot, window, edge)
+            if drawn is not None and drawn[0] != "clock":
+                diagnostics["h1_fit_fallback"] = diagnostics.get("h1_fit_fallback", 0) + 1
+                return Drive(drawn[0], drawn[1], scaled_seconds(drawn[1]), False, cell, "h1_neutral",
+                             fallback="h1_fit")
         t = _clock_fallback(rng, _h1_clock_tuples(), spot, window)
         if t is not None:
             diagnostics["fallback_clock_tuple"] = diagnostics.get("fallback_clock_tuple", 0) + 1
@@ -517,12 +610,12 @@ def draw_drive(rng, spot, half, window, diff, edge, diagnostics):
         regime, pool_id, need_label = "ot", ("ot", None), "tied"
     else:
         regime, pool_id, need_label = ("late" if half == 2 else "ot"), ("late", cell), cell_need(cell)
-    drawn = _draw_from(rng, pool_id, regime, spot, window, edge)
+    drawn = _draw_from(rng, pool_id, regime, spot, window, edge, timeouts, key, diagnostics)
     fallback = None
     if drawn is None and pool_id[0] != "late_union":
         fallback = "need_union"
         diagnostics["fallback_need_union"] = diagnostics.get("fallback_need_union", 0) + 1
-        drawn = _draw_from(rng, ("late_union", need_label), regime, spot, window, edge)
+        drawn = _draw_from(rng, ("late_union", need_label), regime, spot, window, edge, timeouts, key, diagnostics)
     if drawn is None:
         t = _clock_fallback(rng, _late_clock_tuples(need_label), spot, window)
         if t is not None:
@@ -530,10 +623,10 @@ def draw_drive(rng, spot, half, window, diff, edge, diagnostics):
             return Drive("clock", t, window, True, cell, regime, fallback="clock_tuple")
         diagnostics["fallback_zero_tuple"] = diagnostics.get("fallback_zero_tuple", 0) + 1
         return Drive("clock", ZERO_TUPLE, window, True, cell, regime, fallback="zero")
-    category, t = drawn
+    category, t, level = drawn
     if ends_window(regime, category, t):
-        return Drive(category, t, window, True, cell, regime, fallback=fallback)
-    return Drive(category, t, scaled_seconds(t), False, cell, regime, fallback=fallback)
+        return Drive(category, t, window, True, cell, regime, fallback=fallback, timeout_level=level)
+    return Drive(category, t, scaled_seconds(t), False, cell, regime, fallback=fallback, timeout_level=level)
 
 
 # ---- transitions -------------------------------------------------------------------------

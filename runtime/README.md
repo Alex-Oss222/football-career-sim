@@ -208,3 +208,57 @@ Kernel 2013.11 changes one thing: `kernel._edge` adds its 0.008 home term only w
 
 **Versions and cohorts.** `KERNEL_VERSION` and the service `KERNEL` are both `2013.11`. `KNOWN_DETECTIONS["2013.11"]` carries the 2013.10 registry over.
 
+
+## Kernel 2014.1 timeouts, kneel zones and goal to go
+
+Kernel 2014.1 fixes the clock-management defects recorded in Entries 60, 64 and 67 and the fourth-down display defect. The user directed these fixes before any 2014 game.
+
+**Data.** The 2012 field-position artifact moves to schema v2 (`library/data/2012_nfl_field_position_model.json`, rebuilt by `scripts/research/build_2012_field_position_model.py`; `--check` reproduces it byte for byte).
+- **New tuple fields.** Every drive tuple gains four fields: each club's charged timeouts at the drive's first offensive snap (`posteam_timeouts_remaining`, `defteam_timeouts_remaining`) and the timeout rows each club called during the drive (`timeout_team`).
+- **Second pass.** The nflscrapR comparison covers the new counts. The starting counts differ on 36 (defence) and 32 (offence) of 5,940 matched drives, almost always by one timeout. Both files are equally self-consistent (5,247 of 5,276 same-half possession changes carry both counts exactly).
+- **Explained deviations.** The zero-timeout buckets and total defence timeouts used exceed the count tolerance; they are recorded as explained in the builder.
+
+**Timeout state.** Each club holds three charged timeouts at the start of each half.
+- **Regular-season overtime:** two per club (`RULES.regular_ot_timeouts`; library R6, Unverified for 2013).
+- **Postseason overtime:** three per club per two-period "half" (`RULES.postseason_ot_timeouts_per_half`; labelled inference).
+- **Usage:** after each possession, each club's count falls by the timeouts the replayed real drive used, capped at what it holds.
+- **Publication:** every possession publishes `timeouts` = [offence before, defence before, offence used, defence used] and `timeout_level`.
+
+**Conditioned draws (`field_position.timeout_match`, `_timeout_options`).** First-half-final, late (last 10:00) and overtime draws condition on the two counts through a ladder:
+
+| Level | Match rule |
+|---|---|
+| 0 | Both counts equal the real drive's |
+| 1 | The clock-stopping side's count equals (the offence when it trails, otherwise the defence) |
+| 2 | That side's count is in the same band (0, 1-2, 3) |
+| 3 | Unconditioned |
+
+- **Minimum pool:** a level is used only when the pool holds at least 30 matching drives (`MIN_TIMEOUT_POOL`, the pre-registered `min_cell`).
+- **Category weights:** each category's 2012 cell count times the share of its drives that match, an estimate of P(category | cell, timeouts). So the timeouts move the choice between kneeling out, punting, a field goal or going.
+- **Tuple choice:** within a category the tuple is drawn from the matching feasible drives, or from the category's feasible set when none matches. The timeout filter never masks a category; masking stays spot and clock feasibility, as in 2013.x.
+
+**Kneel start zone.** A drive with kneel-downs is feasible only from its own real start zone (A 80-99, B 50-79, C 1-49). All 83 real first-half-final kneel drives started in the offence's own half; the Super Bowl XLVIII receipt shows an own-half kneel drive replayed from the opponent's 1 through the clock fallback.
+
+**End-of-half fallback.** When the first-half-final draw finds nothing feasible, a real drive from the same start bin that fits the time left is drawn before any clock fallback (`h1_fit_fallback`).
+
+**Goal to go.** A published fourth-down record's `ydstogo` is at most the distance to the goal line, and `goal_to_go` says when the real distance reached it.
+
+**Not modelled separately.** The two-minute warning and the play clock are still embedded in each real drive's duration. Late draws now match the clubs' timeouts, but no snap-by-snap clock is simulated.
+
+**Checks.** Two coherence classes are evaluated only on 2014.1 receipts:
+- `timeout_state_invalid`: counts stay within the allowance and carry exactly from possession to possession.
+- `fourth_down_beyond_goal`.
+
+Tests: `tests/test_timeouts.py`.
+
+**Acceptance (250-game synthetic sample).** Every structural, coherence and determinism check passes, with zero coherence violations on results and receipts. Every graded band row is inside its band except the two clock rows already registered as known detections (drive share: clock 0.0493; clock-expired drives per team game 0.582).
+- **Improved:** FGM per team game is back inside (1.832).
+- **At the edge:** drive share: touchdown reads 0.2100 against 0.1945 +/- 0.0155, the band's ceiling (2013.11 on the same sample: 0.2090).
+- **Low but inside:** the trailing 1-8 late punt share reads 0.062 against 0.119 +/- 0.064.
+- **Why:** both trace to the late cells' existing masking bias. A category with no drive feasible at the spot and clock is removed and its weight goes to touchdowns, which are always feasible. Conditioning puts a little more weight on states where that bias bites. The conditioned mix before masking is close to 2012 (late touchdown probability 0.165 against 0.159 real). Recalibrating the late-cell masking is a separate, larger change.
+- **Effect on the defects:**
+  - A leading offence in the last two minutes punted 16 of 115 times under 2013.11 and 11 of 126 under 2014.1.
+  - With the defence out of timeouts, it punted 1 of 50 times and otherwise ran out the clock.
+  - First-half kneel drives outside their start zone can no longer occur.
+
+**Versions and cohorts.** `KERNEL_VERSION` and the service `KERNEL` are both `2014.1`. `KNOWN_DETECTIONS["2014.1"]` carries the registry over. Closed 2013 receipts keep their defects and are never rerun.

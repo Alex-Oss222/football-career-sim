@@ -25,6 +25,10 @@ class Rules2013:
     scrimmage_kick_touchback_yard_line: int = 20
     two_point_snap_yard_line: int = 2
     regular_ot_timeouts: int = 2
+    # Kernel 2014.1 (Unverified for 2013, labelled inference): postseason
+    # overtime periods are played as halves of two periods, each club with
+    # three timeouts per such half.
+    postseason_ot_timeouts_per_half: int = 3
     postseason_ot_intermission_seconds: int = 120
     # Engine bound, not a football rule: postseason overtime is untimed in
     # the sense that periods continue until a score. The kernel lays the

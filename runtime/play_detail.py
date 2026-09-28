@@ -1021,9 +1021,13 @@ COHERENCE_CLASSES = (
     "late_terminal_state_mismatch", "fourth_down_state_missing", "chain_counter_mismatch",
     "label_type_mismatch", "label_carrier_mismatch", "label_target_mismatch",
     "scramble_with_designed_label", "kneel_spike_mislabelled",
+    # Kernel 2014.1 onward: evaluated only when every possession carries the
+    # timeout state.
+    "timeout_state_invalid", "fourth_down_beyond_goal",
 )
+TIMEOUT_CLASSES = ("timeout_state_invalid", "fourth_down_beyond_goal")
 LEGACY_CLASSES = COHERENCE_CLASSES[:15]
-SPOT_CLASSES = COHERENCE_CLASSES[15:]
+SPOT_CLASSES = tuple(c for c in COHERENCE_CLASSES[15:] if c not in TIMEOUT_CLASSES)
 SPOT_LEDGER_CLASSES = (
     "kick_spot_mismatch", "label_type_mismatch", "label_carrier_mismatch",
     "label_target_mismatch", "scramble_with_designed_label", "kneel_spike_mislabelled",
@@ -1043,6 +1047,8 @@ DRIVE_SUMMARY_FIELDS = (
     # Kernel 2013.7 onward (append-only; 2013.6 rows zip shorter).
     "start_spot", "start_kind", "end_spot", "next_start", "score_diff", "cell",
     "tuple_terminal_bucket", "chains", "fourth_down", "kneels", "spikes",
+    # Kernel 2014.1 onward (append-only).
+    "timeouts", "timeout_level",
 )
 LABEL_TYPES = {KNEEL_LABEL: "run", GENERIC_RUN: "run", SPIKE_LABEL: "pass",
                GENERIC_PASS: "pass", SCRAMBLE_LABEL: "pass"}
@@ -1074,7 +1080,49 @@ def measurable_classes(result):
         classes.update(c for c in SPOT_CLASSES if c not in SPOT_LEDGER_CLASSES)
         if result.get("play_ledger"):
             classes.update(SPOT_LEDGER_CLASSES)
+        if has_timeouts(result):
+            classes.update(TIMEOUT_CLASSES)
     return classes
+
+
+def has_timeouts(result):
+    """True for a kernel 2014.1-or-later result or receipt."""
+    possessions = _possessions(result)
+    return bool(possessions) and all(p.get("timeouts") is not None for p in possessions)
+
+
+def _check_timeouts(possessions, game_type, other, err):
+    """Kernel 2014.1: each club's charged timeouts stay within the allowance
+    and carry exactly from possession to possession inside a half (a reset at
+    each half, at overtime, and every two postseason overtime periods)."""
+    from .rules import RULES
+    held, segment = {}, None
+    for p in possessions:
+        off_before, def_before, off_used, def_used = p["timeouts"]
+        if p["half"] == "OT":
+            if game_type == "postseason":
+                allowance = RULES.postseason_ot_timeouts_per_half
+                elapsed = RULES.postseason_ot_period_bound * RULES.postseason_ot_seconds - p["start_clock"]
+                key = ("OT", int(elapsed // (2 * RULES.postseason_ot_seconds)))
+            else:
+                allowance, key = RULES.regular_ot_timeouts, ("OT", 0)
+        else:
+            allowance, key = RULES.timeouts_per_half, p["half"]
+        if key != segment:
+            segment, held = key, {}
+        team, rival = p["team"], other.get(p["team"])
+        if not all(0 <= value <= allowance and 0 <= used <= value
+                   for value, used in ((off_before, off_used), (def_before, def_used))):
+            err("timeout_state_invalid", "drive %s timeouts %s" % (p["number"], p["timeouts"]))
+        if team in held and held[team] != off_before:
+            err("timeout_state_invalid", "drive %s offence count does not carry" % p["number"])
+        if rival in held and held[rival] != def_before:
+            err("timeout_state_invalid", "drive %s defence count does not carry" % p["number"])
+        held[team], held[rival] = off_before - off_used, def_before - def_used
+        fourth = p.get("fourth_down")
+        if fourth and fourth.get("ydstogo") is not None and fourth.get("los") is not None \
+                and fourth["ydstogo"] > fourth["los"]:
+            err("fourth_down_beyond_goal", "drive %s: %s to go at %s" % (p["number"], fourth["ydstogo"], fourth["los"]))
 
 
 def _score_kind(p):
@@ -1277,6 +1325,8 @@ def check_ledger(result):
     regulation = [p for p in possessions if p["half"] in (1, 2)]
     overtime = [p for p in possessions if p["half"] == "OT"]
     last = possessions[-1]
+    if spots and has_timeouts(result):
+        _check_timeouts(possessions, game_type, other, err)
 
     for p in regulation:
         if p["start_clock"] > 1800 > p["end_clock"]:
