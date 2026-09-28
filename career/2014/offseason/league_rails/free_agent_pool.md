@@ -1,6 +1,54 @@
-# 2014 free-agent pool (draft)
+# 2014 free-agent pool
 
-**Status:** DRAFT. Players on the 31 other clubs whose latest contract in the Over The Cap data signed in 2013 or earlier ends with the 2013 season. It is unverified and incomplete: unrestricted, restricted and exclusive-rights status is not separated, extensions may be missing, and players off the Week 1 charts are not included. Jacksonville's own pending free agents are in `career/2014/offseason/contract_status_register.md`. Where each player really went is not recorded until his real signing date.
+**Branch date:** February 2, 2014. **Research checked:** September 28, 2026. The nine players on the February 2 target board have verified pending free-agent classifications below. The rest of this file remains an unverified contract-candidate inventory, not a complete or executable free-agent pool. Jacksonville's own pending free agents belong in `career/2014/offseason/contract_status_register.md`.
+
+## Verified February 2 targets
+
+These are the players' pending categories for the March 11 league-year opening, as known on February 2. Pending UFA does not guarantee later open-market availability: a dated re-signing, tag or other controlling action must be checked when the clock reaches it. Pending RFA does not establish a tender level, compensation or permission to sign. Offers and draws remain subject to method §§2-4. No destinations, 2014 contract terms or later club decisions are recorded here.
+
+### Pending unrestricted free agents (UFA)
+
+| Player | Club (2013) | Pos | Verification |
+|---|---|---|---|
+| Alterraun Verner | Tennessee Titans | CB | F1 + F2 |
+| Aqib Talib | New England Patriots | CB | F1 + F2 |
+| Golden Tate | Seattle Seahawks | WR | F1 + F2 |
+| Greg Hardy | Carolina Panthers | DE | F1 + F3 |
+| Daniel Te'o-Nesheim | Tampa Bay Buccaneers | DE | F1 + F2; F4 also confirms |
+| Jared Allen | Minnesota Vikings | DE | F1 + F2 |
+| Julian Edelman | New England Patriots | WR | F1 + F2 |
+| Emmanuel Sanders | Pittsburgh Steelers | WR | F1 + F2; F5 also confirms |
+
+### Pending restricted free agents (RFA)
+
+| Player | Club (2013) | Pos | Verification |
+|---|---|---|---|
+| Andrew Hawkins | Cincinnati Bengals | WR | F1 + F2; F6 also confirms |
+
+### Pending exclusive-rights free agents (ERFA)
+
+None of the nine targets is classified as pending ERFA. This is not a claim that the league has no ERFAs.
+
+### Source receipt and information boundary
+
+| ID | Outlet and title | Published | What it verifies |
+|---|---|---|---|
+| F1 | Patriots.com, NFL.com Report, [2014 NFL free agents](https://www.patriots.com/news/2014-nfl-free-agents-195716) | January 27, 2014; list marked updated January 26 | First-pass baseline: all nine names, 2013 clubs and positions, with eight under unrestricted and Hawkins under restricted |
+| F2 | Jefferson City News Tribune, [A look at NFL free agency](https://www.newstribune.com/news/2014/mar/09/look-nfl-free-agency/) | March 9, 2014 | Independent second-pass category, club and position confirmation for Verner, Talib, Tate, Te'o-Nesheim, Allen, Edelman, Sanders and Hawkins |
+| F3 | Associated Press via Fox News, [Panthers GM Dave Gettleman expresses confidence…](https://www.foxnews.com/sports/panthers-gm-dave-gettleman-expresses-confidence-in-cam-newton-coach-ron-rivera-going-forward) | January 14, 2014 (subsequently updated) | Hardy: pending UFA |
+| F4 | Tampa Bay Buccaneers, [One Buc Mailbag: Free Agency & More](https://www.buccaneers.com/news/one-buc-mailbag-free-agency-more-12609707) | February 11, 2014 | Te'o-Nesheim listed as an unrestricted free-agent defensive end |
+| F5 | Pittsburgh Steelers, [Steelers' 2014 free agent list](https://www.steelers.com/news/steelers-2014-free-agent-list-12325195) | December 30, 2013 | Sanders listed as an unrestricted free-agent wide receiver |
+| F6 | Cincinnati Bengals, [Uninvited but undaunted](https://www.bengals.com/news/uninvited-but-undaunted-12629966) | February 17, 2014 | Hawkins identified as a restricted free-agent wide receiver |
+
+F1 is an NFL.com report republished by the Patriots; those two outlets are not counted as independent passes. F2 supplies the independent check for eight players; F3 supplies it for Hardy. Sources published after February 2 corroborate only the classifications already present in F1. Their later developments are not imported into the branch.
+
+**Identity check:** the target is **Golden Tate, Seattle WR**, not Ben Tate, Houston RB, or Brandon Tate, Cincinnati WR. Golden Tate and Andrew Hawkins were missing from the generated candidate list and are now included above. The seven other target rows have been moved out of that unverified list; their old contract amounts are not treated as verified research.
+
+## Unverified contract candidates (406)
+
+**Status: DRAFT, not cleared for pursuit.** These are the remaining 406 rows from the original 413-row generated list, which attempted to select players on the 31 other clubs whose latest contract in the Over The Cap data was signed in 2013 or earlier and ended with the 2013 season. The raw output includes anomalous years and stale contracts. UFA/RFA/ERFA status is unverified, extensions may be missing, and players off the Week 1 charts may be absent. Preserve these rows as research leads only; a contract end year or appearance here does not establish eligibility.
+
+For an additional target, confirm identity, 2013 club, position and pending category with the same two-pass sourcing discipline, then place him in the appropriate verified section. Check dated controlling actions before any offer or draw. Do not rerun `scripts/research/build_league_rails_rosters.py`: it would overwrite this research.
 
 | Club (2013) | Player | Pos | Contract in the data |
 |---|---|---|---|
@@ -68,7 +116,6 @@
 | Carolina Panthers | Byron Bell | G | 2011-2013, $469,667 a year |
 | Carolina Panthers | Jeff Byers | C | 0-2, $465,000 a year |
 | Carolina Panthers | Travelle Wharton | G | 0-0, $1,100,000 a year |
-| Carolina Panthers | Greg Hardy | DE | 2010-2013, $476,447 a year |
 | Carolina Panthers | Colin Cole | DT | 0-0, $1,050,000 a year |
 | Carolina Panthers | Jon Beason | MLB | 2013-2013, $3,500,000 a year |
 | Carolina Panthers | Chase Blackburn | MLB | 0-1, $1,025,000 a year |
@@ -223,7 +270,6 @@
 | Minnesota Vikings | Charlie Johnson | G | 2013-2013, $3,250,000 a year |
 | Minnesota Vikings | Joe Berger | C | 2013-2013, $905,000 a year |
 | Minnesota Vikings | J'Marcus Webb | T | 2013-2013, $630,000 a year |
-| Minnesota Vikings | Jared Allen | DE | 2008-2013, $12,210,012 a year |
 | Minnesota Vikings | Kevin Williams | DT | 2013-2013, $5,000,000 a year |
 | Minnesota Vikings | Everson Griffen | DE | 2010-2013, $582,500 a year |
 | Minnesota Vikings | Fred Evans | NT | 0-0, $1,000,000 a year |
@@ -235,12 +281,10 @@
 | Minnesota Vikings | Marcus Sherels | CB | 2013-2013, $555,000 a year |
 | New England Patriots | LeGarrette Blount | RB | 2013-2013, $680,000 a year |
 | New England Patriots | Leon Washington | RB | 0-0, $920,000 a year |
-| New England Patriots | Julian Edelman | WR | 2013-2013, $765,000 a year |
 | New England Patriots | Rob Gronkowski | TE | 2010-2013, $1,110,000 a year |
 | New England Patriots | Logan Mankins | G | 2010-2010, $1,540,000 a year |
 | New England Patriots | Will Svitek | T | 0-0, $855,000 a year |
 | New England Patriots | Brandon Spikes | LB | 2010-2013, $800,000 a year |
-| New England Patriots | Aqib Talib | CB | 2013-2013, $5,000,000 a year |
 | New Orleans Saints | Luke McCown | QB | 2013-2013, $825,000 a year |
 | New Orleans Saints | Jed Collins | FB | 0-0, $810,000 a year |
 | New Orleans Saints | Andy Tanner | WR | 0-1, $465,000 a year |
@@ -312,7 +356,6 @@
 | Pittsburgh Steelers | Ben Roethlisberger | QB | 2008-2013, $14,664,417 a year |
 | Pittsburgh Steelers | LaRod Stephens-Howling | RB | 0-0, $780,000 a year |
 | Pittsburgh Steelers | Felix Jones | RB | 0-0, $780,000 a year |
-| Pittsburgh Steelers | Emmanuel Sanders | WR | 2013-2013, $2,500,000 a year |
 | Pittsburgh Steelers | Derek Moye | WR | 0-1, $450,000 a year |
 | Pittsburgh Steelers | Heath Miller | TE | 2009-2013, $6,750,000 a year |
 | Pittsburgh Steelers | David Johnson | TE | 2013-2013, $665,000 a year |
@@ -378,7 +421,6 @@
 | Tampa Bay Buccaneers | Mike Williams | WR | 2010-2013, $582,063 a year |
 | Tampa Bay Buccaneers | Eric Page | WR | 0-0, $405,000 a year |
 | Tampa Bay Buccaneers | Jeremy Zuttah | C | 2012-2013, $4,062,500 a year |
-| Tampa Bay Buccaneers | Daniel Te'o-Nesheim | DE | 0-0, $1,323,000 a year |
 | Tampa Bay Buccaneers | Gary Gibson | DT | 0-0, $1,000,000 a year |
 | Tampa Bay Buccaneers | Derek Landri | DT | 0-1, $1,375,000 a year |
 | Tampa Bay Buccaneers | Trevor Scott | DE | 0-0, $730,000 a year |
@@ -401,7 +443,6 @@
 | Tennessee Titans | Keyunta Dawson | DE | 0-0, $860,000 a year |
 | Tennessee Titans | Patrick Bailey | OLB | 0-2, $1,100,000 a year |
 | Tennessee Titans | Bernard Pollard | SS | 2013-2013, $2,000,000 a year |
-| Tennessee Titans | Alterraun Verner | CB | 2010-2013, $790,035 a year |
 | Tennessee Titans | Rob Bironas | K | 0-1, $3,337,500 a year |
 | Washington Redskins | Josh Morgan | WR | 2012-2013, $5,750,000 a year |
 | Washington Redskins | Santana Moss | WR | 2013-2013, $2,500,000 a year |
