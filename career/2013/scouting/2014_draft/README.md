@@ -4,7 +4,11 @@
 **Source directive:** [../2014_draft_focus_directive.md](../2014_draft_focus_directive.md).
 **Authority:** Caldwell holds the board and every pick; the scouting department carries volume; coaches review assigned cut-ups in set windows without missing opponent preparation.
 
-## Latest: Week 16 research update
+## Latest: Week 17 research update
+
+All twenty reports now include a separate addendum through **December 29, 2013**, using the merged Week 17 and postseason-bracket checkpoint. Start with the [Week 17 update and pick comparisons](week17_scouting_update.md) and [source register](sources_week17_2013_12_29.md). New bowl records support the Leno, Paradis, Martin, Donald and Van Noy studies; Hurst has a dated medical update. Jacksonville finished 10-6 and enters the Wild Card round as the AFC's fifth seed. The packet preserves unresolved eligibility, medical and technique questions, with no exact draft slot or completed coach read assumed.
+
+## Week 16 research update
 
 All twenty reports now include a separate addendum through **December 22, 2013**. Start with the [Week 16 update and pick comparisons](week16_scouting_update.md) and [source register](sources_week16_2013_12_22.md). The packet uses Jacksonville's 10-5 checkpoint, verifies new national honors and resolves specific source discrepancies for Smith, Paradis and Butler. Formal coaching conclusions and unresolved eligibility or medical questions remain explicitly open.
 
@@ -41,10 +45,11 @@ Jacksonville has six owned selections for seven focus names. Round 2 belongs to 
 - Week 15: [Phase IV, first coach football reads](phase_iv_first_coach_reads.md).
 - Week 15 research supplement: [evidence update and comparisons](week15_scouting_update.md), with individual addenda in all twenty reports.
 - Week 16 research supplement: [evidence update and comparisons](week16_scouting_update.md), through December 22; no new coaching directive or completed meeting is implied.
+- Week 17 research supplement: [evidence update and comparisons](week17_scouting_update.md), through December 29, with bowl evidence and the final regular-season branch context; formal reads remain open.
 
 ## Focus prospects
 
-The verification column below preserves the November 30 identity/status checkpoint. Each linked file includes the December 1 research entry, Week 15 addendum through December 13 and Week 16 addendum through December 22; older entries remain intact. Current research findings and remaining gaps are summarized in the Week 16 update above.
+The verification column below preserves the November 30 identity/status checkpoint. Each linked file includes the December 1 research entry, Week 15 addendum through December 13, Week 16 addendum through December 22 and Week 17 addendum through December 29; older entries remain intact. Current research findings and remaining gaps are summarized in the Week 17 update above.
 
 | Prospect | Position | Focus round | Evaluators | Status |
 |---|---|---|---|---|

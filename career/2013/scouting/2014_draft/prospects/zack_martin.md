@@ -55,3 +55,15 @@ For Stone's early investment, the unresolved distinction remains tackle value ve
 Bitonio's updated acquisition discussion makes the early tackle comparison more concrete. Compare the first usable job, recovery after contact and protection help required. Richardson and Jackson remain the interior alternatives if guard is the stronger projection. Do not price tackle flexibility until its independent evidence supports it.
 
 Jacksonville's lack of a second-round selection makes an early miss more costly to the plan, but cannot manufacture a higher grade for any lineman. **Tier:** Not yet graded. **Decision trigger:** A demonstrated initial position and enough independent protection to justify its acquisition cost. The next useful evidence is a complete protection sequence, not another positional label.
+
+### Week 17 addendum: evidence through December 29, 2013
+
+**Evidence and branch-context cutoff:** December 29, 2013, after Week 17 and the postseason bracket close. Prepared September 28, 2026. This is public-source research and proposed review work, not a completed staff evaluation. See the [Week 17 guide](../week17_scouting_update.md) and [verification register](../sources_week17_2013_12_29.md).
+
+**New evidence:** Notre Dame's December 28 Pinstripe Bowl game book lists Martin at left tackle and names number 70 the game's MVP. The school recap corroborates the award. The book also records no Rutgers sacks, a team result that cannot establish Martin's individual pressure record. The recap's migrated display date precedes the event; the game book and the recap's December 28 body date control the chronology. [T07, T08](../sources_week17_2013_12_29.md).
+
+**Meaning for the comparison:** There is now another documented left-tackle game to study alongside Bitonio. The award supports including the performance in the review; it does not demonstrate guard technique, certify every protection or establish the acquisition price. A productive offense can still contain individual losses that the quarterback, protection design or another blocker repairs.
+
+**Review sequence:** Separate isolated edge sets from protected snaps. On the former, follow the first contact, inside-counter response and recovery. On the latter, identify what the help removes from the tackle's responsibility. Then test exchanges with the guard. Keep a separate interior study if the proposed Jacksonville value includes guard: shorter reaction space, adjacent communication and first contact require their own evidence.
+
+**Pick implication:** The missing second round makes Caldwell's first usable-job assessment consequential, but it cannot turn bowl recognition into a first-round grade. Compare Martin's demonstrated initial role with Bitonio's and the guard alternatives before paying for projected versatility. **Tier:** Not yet graded. **Decision trigger:** Complete independent protection evidence at the initial position, plus separate support for every additional position included in the purchase.

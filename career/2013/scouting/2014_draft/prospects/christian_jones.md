@@ -57,3 +57,15 @@ SAM with an earned pressure complement remains the working proposal. The full li
 SAM with an earned pressure complement remains the Jacksonville research proposal. The next evidence must identify what happened after contact and which coverage responsibility accompanied a rush or replacement. Starting-position labels alone do not reveal the call.
 
 Compare Jones with Van Noy on strong-side work and with Smith only after separating that job from the proposed WILL role. **Tier:** Not yet graded. **Decision trigger:** A dependable base assignment plus one demonstrated complementary skill. A coverage-teams pathway remains a separate, open question.
+
+### Week 17 addendum: evidence through December 29, 2013
+
+**Evidence and branch-context cutoff:** December 29, 2013, after Week 17 and the postseason bracket close. Prepared September 28, 2026. This is public-source research and proposed review work, not a completed staff evaluation. See the [Week 17 guide](../week17_scouting_update.md) and [verification register](../sources_week17_2013_12_29.md).
+
+**Evidence carried forward:** The previously checked position snapshots remain dated observations. No new game sample or completed coverage evaluation is established in this pass. Do not collapse the preseason middle listing and later strong-side listing into a claim that every linebacker responsibility is already mastered.
+
+**Updated comparison:** Van Noy's bowl sample supplies another source for the SAM comparison. The relevant issue is the base job each prospect can perform: the relationship to an attached surface, the force responsibility, release recognition and coverage after the offense changes the picture. A visible backfield finish cannot substitute for those ordinary assignments. [T05, T06](../sources_week17_2013_12_29.md).
+
+**Teaching burden:** Begin with one strong-side job and its adjacent-player communication. Evaluate any edge-rush complement separately, including what happens against a tackle rather than a lighter blocker or a free path. Keep the WILL comparison with Telvin Smith explicit about the different responsibility; neither prospect inherits Jacksonville's communication lead from a college position abbreviation.
+
+**Tier:** Not yet graded. **Decision trigger:** A repeatable base assignment with separately evidenced coverage, pressure and teams contributions wherever those are claimed. No availability at Smith's intended fourth-round window is promised.

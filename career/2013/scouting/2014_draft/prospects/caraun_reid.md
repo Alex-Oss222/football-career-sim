@@ -57,3 +57,15 @@ The rotational-interior study remains the same. The football questions are how h
 Reid remains the developmental interior comparison while Harris's status is unresolved. More available background does not prove a higher ability grade. The football study still needs the response to directed runs and combinations, a usable rush counter, and lane control after the quarterback moves.
 
 Keep the role narrow enough to identify what a reserve would actually do on game day. A general interior label cannot establish nose, three-technique and end responsibilities at once. **Tier:** Not yet graded. **Decision trigger:** Current, permitted evidence for one defined job. Neither Harris's hold nor a future evaluation opportunity guarantees Reid a place in Jacksonville's sixth-round window.
+
+### Week 17 addendum: evidence through December 29, 2013
+
+**Evidence and branch-context cutoff:** December 29, 2013, after Week 17 and the postseason bracket close. Prepared September 28, 2026. This is public-source research and proposed review work, not a completed staff evaluation. See the [Week 17 guide](../week17_scouting_update.md) and [verification register](../sources_week17_2013_12_29.md).
+
+**Evidence carried forward:** The earlier invitation record remains separate from attendance and performance. No later all-star practice, measurement or professional result is admitted. This pass does not establish a new technical finding.
+
+**Developmental interior comparison:** Harris remains on a status hold, while Donald's bowl record adds a sample to the earlier-investment question. Those developments do not establish Reid as either a substitute for Donald's proposed disruption or the automatic beneficiary of Harris's uncertainty. Price and role need evidence of their own.
+
+**Review to request:** Identify one first alignment and its ordinary run responsibility. Study combinations directed at that gap, separation after initial contact and the ability to keep the lane useful when the quarterback moves. In the rush file, distinguish a repeatable independent move from a favorable path created by the protection or an adjacent defender. Keep the opponent and blocking task visible without applying a blanket penalty or bonus for competition level.
+
+**Tier:** Not yet graded. **Decision trigger:** Current, permitted evidence for a defined reserve contribution and an honest teaching path. No sixth-round availability, multi-position role or special-teams assignment is guaranteed by the amount of background material available.

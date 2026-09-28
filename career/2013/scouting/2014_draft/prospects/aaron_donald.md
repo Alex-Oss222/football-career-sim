@@ -57,3 +57,17 @@ That updates the early defensive-line alternative alongside the offensive-line f
 Keep isolated penetration separate from handling a run directed at his gap or a combination block. The source record does not justify assuming that the most visible backfield play represents every snap. Compare the resource commitment with an early lineman on offense and with a later developmental interior option only after establishing the usable defensive job.
 
 **Tier:** Not yet graded. **Decision trigger:** Repeatable disruption with run-fit and lane control. No later testing, draft slot or professional result enters this comparison.
+
+### Week 17 addendum: evidence through December 29, 2013
+
+**Evidence and branch-context cutoff:** December 29, 2013, after Week 17 and the postseason bracket close. Prepared September 28, 2026. This is public-source research and proposed review work, not a completed staff evaluation. See the [Week 17 guide](../week17_scouting_update.md) and [verification register](../sources_week17_2013_12_29.md).
+
+**New evidence:** Pitt's December 26 bowl notes credit Donald with five tackles, two tackles for loss and one sack against Bowling Green. They identify his late sack and the bowl's defensive-lineman award. Bowling Green's separate recap records an earlier unsportsmanlike-conduct penalty that extended a possession after a third-down sack. Preserve both the productive event and the costly event. The opponent-hosted game book corroborates the individual totals and penalty sequence. These are official recorded outcomes, not an independent film chart. [T03, T04, T11](../sources_week17_2013_12_29.md).
+
+**Football meaning:** The new sample gives the interior-disruption study another specific game. Neither the award nor the late sack establishes the mechanism of the win. Review alignment, protection, first contact, the rush path and adjacent lanes before attributing it to an independent move. Include directed runs and ordinary downs to test what happens when he cannot immediately penetrate.
+
+**Penalty interpretation:** A recorded penalty belongs in the file because giving back a stopped possession is a real football cost. It does not by itself establish a pattern, motive, temperament or response to coaching. Request the actual sequence and keep any wider behavioral judgment unresolved. Do not cancel the penalty with the sack or cancel the sack with the penalty; they answer different questions.
+
+**Jacksonville purchase:** The proposed rotational three-technique must preserve the weak B-gap relationship and rush-lane integrity. Compare that defined contribution with the early offensive-line alternatives before arguing that another position's need should lose priority. Harris's status hold and Reid's developmental study do not establish that equivalent disruption can be obtained later.
+
+**Tier:** Not yet graded. **Decision trigger:** Repeatable interior disruption with a usable run responsibility and controlled rush lanes. No later testing, selection result or professional reputation enters the recommendation.

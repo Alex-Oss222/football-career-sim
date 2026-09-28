@@ -55,3 +55,15 @@ Jackson is now a more substantial contemporary benchmark for the cost of waiting
 His guard-first comparison with Turner now has additional dated season recognition. The practical distinction remains a documented guard background versus a conditional acquisition route, not an award-driven talent verdict. Turner still needs pool clearance; Jackson still needs evidence that his movement and protection fit the intended offense.
 
 On the next technical review, separate an initial displacement from control through the end of the block. Check the reset when a defender changes direction after contact. **Tier:** Not yet graded. **Decision trigger:** Reliable independent interior protection and functional movement without routine adjacent rescue. No third-round availability or starting role is promised.
+
+### Week 17 addendum: evidence through December 29, 2013
+
+**Evidence and branch-context cutoff:** December 29, 2013, after Week 17 and the postseason bracket close. Prepared September 28, 2026. This is public-source research and proposed review work, not a completed staff evaluation. See the [Week 17 guide](../week17_scouting_update.md) and [verification register](../sources_week17_2013_12_29.md).
+
+**Evidence carried forward:** The December national recognition remains admitted in the earlier log. This pass establishes no new game-specific technical conclusion. No post-cutoff bowl performance is used to make the guard comparison appear complete.
+
+**Why this file matters:** Turner remains conditional, while Thomas requires an interior transition study. Jackson's guard background gives the alternatives a direct position comparison, but not a presumed lower teaching burden in Jacksonville's language. Ask whether the complete protection responsibility survives changed fronts before deciding that college position continuity means immediate readiness.
+
+**Review focus:** Pair independent anchor work with recovery against a changed rush path. For Power and Counter, examine arrival angle and balance through contact, not simply whether the runner gained yards. Compare the same task with Richardson while identifying differences in assistance and opponent. A powerful first collision is incomplete if the defender regains the useful lane before the ball arrives.
+
+**Capital boundary:** If Caldwell wants guard value between Jacksonville's owned selections, there is no second-round pick available by assumption. Waiting requires an actual alternative; moving requires a real proposal. **Tier:** Not yet graded. **Decision trigger:** Reliable interior protection and functional movement within one usable initial job, at a price supported by the eventual board.

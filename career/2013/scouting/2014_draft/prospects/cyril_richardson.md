@@ -55,3 +55,15 @@ Guard remains the first-role study. Compare him with Jackson on isolated protect
 The guard comparison now has broader contemporary recognition behind it. The next question remains whether the position can function across the required run and protection assignments. Keep independent anchor, lateral recovery and arrival on a moving target separate. Team offensive production cannot establish an individual win on any of those tasks.
 
 Compare the guard job with Jackson directly, and with Bitonio or Martin only after accounting for conversion work. **Tier:** Not yet graded. **Decision trigger:** A sufficiently complete guard role to justify the proposed expenditure. More honors do not settle where he will be selected or remove the need to examine ordinary losing snaps.
+
+### Week 17 addendum: evidence through December 29, 2013
+
+**Evidence and branch-context cutoff:** December 29, 2013, after Week 17 and the postseason bracket close. Prepared September 28, 2026. This is public-source research and proposed review work, not a completed staff evaluation. See the [Week 17 guide](../week17_scouting_update.md) and [verification register](../sources_week17_2013_12_29.md).
+
+**Evidence carried forward:** The dated national selections remain the latest verified individual additions in this packet. No new bowl result or independently charted technique finding is added by December 29.
+
+**Comparison task:** Martin's new tackle sample does not answer whether Jacksonville should buy a guard earlier. Richardson needs to be evaluated against Jackson on the guard job itself, then against any proposed Bitonio or Martin conversion after its teaching cost is made explicit. A tackle's award and a guard's award do not measure the same assignment.
+
+**Football review:** In the run game, distinguish initial displacement from sustained control and the ability to reach a moving second-level target without overrunning it. In protection, test the reset after first contact and the exchange when the defender crosses the adjacent gap. Team production cannot isolate any of these outcomes. If the grade depends on help, identify the help rather than treating it as an individual win.
+
+**Tier:** Not yet graded. **Decision trigger:** A complete guard role that justifies its price against waiting or developing another lineman. No exact first- or third-round availability is established, and Jacksonville's current starters are not displaced by this comparison.

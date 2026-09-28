@@ -57,3 +57,15 @@ Swanson remains a center-first comparison with Paradis and Stork. The role needs
 Stork has additional national recognition and Paradis's team-award record is now directly verified. Those changes improve the comparison's documentation without settling Swanson's isolated-anchor question. The next review should keep an assisted combination distinct from a one-on-one block after the snap.
 
 Center remains the first job to investigate. Require point, snap and contact to survive a changed front as one sequence, with any responsibility inferred from visible behavior explicitly marked uncertain. **Tier:** Not yet graded. **Decision trigger:** Independent contact control that does not force recurring repairs by Cousins or an adjacent guard. Jacksonville's record changes the acquisition setting, not the evidence of Swanson's technique.
+
+### Week 17 addendum: evidence through December 29, 2013
+
+**Evidence and branch-context cutoff:** December 29, 2013, after Week 17 and the postseason bracket close. Prepared September 28, 2026. This is public-source research and proposed review work, not a completed staff evaluation. See the [Week 17 guide](../week17_scouting_update.md) and [verification register](../sources_week17_2013_12_29.md).
+
+**Evidence carried forward:** No additional dated technical finding is established in this pass. The earlier recognition and center background remain the basis of the study; an interval without a new result is not evidence of regression.
+
+**What would distinguish him:** The comparison with Paradis and Stork should expose the help each center receives. A successful combination cannot answer the isolated-anchor question. Track when the guard departs, what space the center must protect and whether the defender's second move defeats the initial contact. Keep the snap and any apparent point adjustment attached to that same observation.
+
+**Acquisition argument:** If the proposal is to spend earlier than the Paradis focus, explain the additional usable work the selection would buy. If that difference remains unverified, say so. A new bowl sample for another center makes the available evidence different; it does not create a ranking or establish a lower price for Swanson.
+
+**Tier:** Not yet graded. **Decision trigger:** Independent contact control and a reliable changed-front sequence, with actual call uncertainty retained. No automatic starter, completed learning response or exact draft-window availability is assigned.
