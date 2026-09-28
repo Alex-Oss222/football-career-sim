@@ -327,7 +327,7 @@ def render():
         " and ".join("%s (%s)" % (c["player"], c["team"]) for c in pb["captains"]["defense"])),
         "", "Coaches (highest-seeded Divisional-round loser in each conference): " + "; ".join(
             "%s, %s staff (%s seed %d)" % (v["head_coach"], v["club"], c, v["seed"]) for c, v in pb["coaches"].items()) + ".",
-        "", "Not generated: the two special teamer slots (no coverage-unit evidence in the receipts), the two coach-appointed need players, the January 21-22 draft and the game itself."]
+        "", "Not generated: the two special teamer slots (no coverage-unit evidence in the 2013 receipts). The need players, the January 21-22 draft and the game are in [../pro_bowl/README.md](../pro_bowl/README.md) (Entry 73)."]
     PAGE.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
 

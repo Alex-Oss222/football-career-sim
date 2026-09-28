@@ -70,4 +70,4 @@ Captains (clubs outside the conference round): offense Jamaal Charles (Kansas Ci
 
 Coaches (highest-seeded Divisional-round loser in each conference): Rex Ryan, New York Jets staff (AFC seed 1); Jeff Fisher, St. Louis Rams staff (NFC seed 2).
 
-Not generated: the two special teamer slots (no coverage-unit evidence in the receipts), the two coach-appointed need players, the January 21-22 draft and the game itself.
+Not generated: the two special teamer slots (no coverage-unit evidence in the 2013 receipts). The need players, the January 21-22 draft and the game are in [../pro_bowl/README.md](../pro_bowl/README.md) (Entry 73).

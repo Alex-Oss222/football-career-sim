@@ -1,0 +1,11 @@
+{
+ "event_id": "2013-pro-bowl",
+ "ledger_entry": "Ledger Entry 73",
+ "snapshot": "f1dbff9ea7d90f5385064276f6bc708c1dce9145e548c146045ead7dbe8e7d14",
+ "kernel_version": "2014.3",
+ "final_score": {
+  "Team One": 9,
+  "Team Two": 6
+ },
+ "receipt_sha256": "6e5119db31145a45e696dc6d8a03eb4723ca37c1cba26982620796526186a7fa"
+}

@@ -1,0 +1,1355 @@
+{
+ "procedure": "pro-bowl-2014-v1",
+ "ledger_entry": "Ledger Entry 73",
+ "snapshot": "f1dbff9ea7d90f5385064276f6bc708c1dce9145e548c146045ead7dbe8e7d14",
+ "event_id": "2013-pro-bowl-draft-v1",
+ "packet_sha256": "919ad9a54ea6032139daa2e726859ce1571dc31954f662fe3f3c3b48eb459227",
+ "result_ref": "dbe9b821603ec46a2c9c3122d6f6d7ae129de9ff79e2446ec85253740c9fcfa3",
+ "first_pick": "Team Two",
+ "coaches": {
+  "Team One": {
+   "club": "St. Louis Rams",
+   "seed": 2,
+   "head_coach": "Jeff Fisher"
+  },
+  "Team Two": {
+   "club": "New York Jets",
+   "seed": 1,
+   "head_coach": "Rex Ryan"
+  }
+ },
+ "rosters": {
+  "Team One": [
+   {
+    "player": "Jamaal Charles",
+    "team": "Kansas City Chiefs",
+    "position": "RB",
+    "score": 296.6,
+    "slot": "RB",
+    "how": "captain"
+   },
+   {
+    "player": "David Harris",
+    "team": "New York Jets",
+    "position": "OLB",
+    "score": 198.6,
+    "slot": "OLB",
+    "how": "captain"
+   },
+   {
+    "player": "Fletcher Cox",
+    "team": "Philadelphia Eagles",
+    "position": "DT",
+    "score": 122.5,
+    "slot": "DT",
+    "how": "pick"
+   },
+   {
+    "player": "Vance Walker",
+    "team": "Oakland Raiders",
+    "position": "DT",
+    "score": 121.0,
+    "slot": "DT",
+    "how": "pick"
+   },
+   {
+    "player": "Ryan Pickett",
+    "team": "Green Bay Packers",
+    "position": "NT",
+    "score": 115.5,
+    "slot": "DT",
+    "how": "assigned"
+   },
+   {
+    "player": "Jeff Allen",
+    "team": "Kansas City Chiefs",
+    "position": "G",
+    "score": 187.93,
+    "slot": "G",
+    "how": "pick"
+   },
+   {
+    "player": "Evan Mathis",
+    "team": "Philadelphia Eagles",
+    "position": "G",
+    "score": 164.5,
+    "slot": "G",
+    "how": "pick"
+   },
+   {
+    "player": "Clint Boling",
+    "team": "Cincinnati Bengals",
+    "position": "G",
+    "score": 162.37,
+    "slot": "G",
+    "how": "pick"
+   },
+   {
+    "player": "Nick Mangold",
+    "team": "New York Jets",
+    "position": "C",
+    "score": 182.45,
+    "slot": "C",
+    "how": "pick"
+   },
+   {
+    "player": "Peter Konz",
+    "team": "Atlanta Falcons",
+    "position": "C",
+    "score": 164.33,
+    "slot": "C",
+    "how": "assigned"
+   },
+   {
+    "player": "Mike Tolbert",
+    "team": "Carolina Panthers",
+    "position": "FB",
+    "score": 27.9,
+    "slot": "FB",
+    "how": "pick"
+   },
+   {
+    "player": "Tim Masthay",
+    "team": "Green Bay Packers",
+    "position": "P",
+    "score": 51.25,
+    "slot": "P",
+    "how": "assigned"
+   },
+   {
+    "player": "DeSean Jackson",
+    "team": "Philadelphia Eagles",
+    "position": "WR",
+    "score": 183.2,
+    "slot": "WR",
+    "how": "pick"
+   },
+   {
+    "player": "Chris Givens",
+    "team": "St. Louis Rams",
+    "position": "WR",
+    "score": 178.2,
+    "slot": "WR",
+    "how": "pick"
+   },
+   {
+    "player": "Larry Fitzgerald",
+    "team": "Arizona Cardinals",
+    "position": "WR",
+    "score": 173.2,
+    "slot": "WR",
+    "how": "pick"
+   },
+   {
+    "player": "Roddy White",
+    "team": "Atlanta Falcons",
+    "position": "WR",
+    "score": 167.8,
+    "slot": "WR",
+    "how": "assigned"
+   },
+   {
+    "player": "Branden Albert",
+    "team": "Kansas City Chiefs",
+    "position": "T",
+    "score": 187.93,
+    "slot": "T",
+    "how": "pick"
+   },
+   {
+    "player": "Jason Peters",
+    "team": "Philadelphia Eagles",
+    "position": "T",
+    "score": 164.5,
+    "slot": "T",
+    "how": "pick"
+   },
+   {
+    "player": "Andre Smith (CIN)",
+    "team": "Cincinnati Bengals",
+    "position": "T",
+    "score": 162.37,
+    "slot": "T",
+    "how": "pick"
+   },
+   {
+    "player": "Jordan Cameron",
+    "team": "Cleveland Browns",
+    "position": "TE",
+    "score": 96.4,
+    "slot": "TE",
+    "how": "pick"
+   },
+   {
+    "player": "Marcedes Lewis",
+    "team": "Jacksonville Jaguars",
+    "position": "TE",
+    "score": 92.9,
+    "slot": "TE",
+    "how": "assigned"
+   },
+   {
+    "player": "Andy Dalton",
+    "team": "Cincinnati Bengals",
+    "position": "QB",
+    "score": 262.94,
+    "slot": "QB",
+    "how": "pick"
+   },
+   {
+    "player": "Sam Bradford",
+    "team": "St. Louis Rams",
+    "position": "QB",
+    "score": 254.7,
+    "slot": "QB",
+    "how": "pick"
+   },
+   {
+    "player": "Alex Smith (KC)",
+    "team": "Kansas City Chiefs",
+    "position": "QB",
+    "score": 248.06,
+    "slot": "QB",
+    "how": "assigned"
+   },
+   {
+    "player": "Arian Foster",
+    "team": "Houston Texans",
+    "position": "RB",
+    "score": 278.8,
+    "slot": "RB",
+    "how": "pick"
+   },
+   {
+    "player": "Stevan Ridley",
+    "team": "New England Patriots",
+    "position": "RB",
+    "score": 270.9,
+    "slot": "RB",
+    "how": "pick"
+   },
+   {
+    "player": "Justin Durant",
+    "team": "Dallas Cowboys",
+    "position": "OLB",
+    "score": 179.2,
+    "slot": "OLB",
+    "how": "pick"
+   },
+   {
+    "player": "Akeem Ayers",
+    "team": "Tennessee Titans",
+    "position": "OLB",
+    "score": 165.7,
+    "slot": "OLB",
+    "how": "pick"
+   },
+   {
+    "player": "Stephen Tulloch",
+    "team": "Detroit Lions",
+    "position": "MLB",
+    "score": 195.5,
+    "slot": "ILB",
+    "how": "assigned"
+   },
+   {
+    "player": "Curtis Lofton",
+    "team": "New Orleans Saints",
+    "position": "ILB",
+    "score": 181.5,
+    "slot": "ILB",
+    "how": "assigned"
+   },
+   {
+    "player": "Buster Skrine",
+    "team": "Cleveland Browns",
+    "position": "CB",
+    "score": 181.9,
+    "slot": "CB",
+    "how": "pick"
+   },
+   {
+    "player": "Cortland Finnegan",
+    "team": "St. Louis Rams",
+    "position": "CB",
+    "score": 153.7,
+    "slot": "CB",
+    "how": "pick"
+   },
+   {
+    "player": "Charles Tillman",
+    "team": "Chicago Bears",
+    "position": "CB",
+    "score": 142.1,
+    "slot": "CB",
+    "how": "pick"
+   },
+   {
+    "player": "Sean Smith",
+    "team": "Kansas City Chiefs",
+    "position": "CB",
+    "score": 134.8,
+    "slot": "CB",
+    "how": "pick"
+   },
+   {
+    "player": "Antoine Bethea",
+    "team": "Indianapolis Colts",
+    "position": "SS",
+    "score": 174.1,
+    "slot": "S",
+    "how": "pick"
+   },
+   {
+    "player": "Reshad Jones",
+    "team": "Miami Dolphins",
+    "position": "S",
+    "score": 167.1,
+    "slot": "S",
+    "how": "pick"
+   },
+   {
+    "player": "Eric Berry",
+    "team": "Kansas City Chiefs",
+    "position": "SS",
+    "score": 163.2,
+    "slot": "S",
+    "how": "assigned"
+   },
+   {
+    "player": "Muhammad Wilkerson",
+    "team": "New York Jets",
+    "position": "DE",
+    "score": 191.0,
+    "slot": "DE",
+    "how": "pick"
+   },
+   {
+    "player": "Rob Ninkovich",
+    "team": "New England Patriots",
+    "position": "DE",
+    "score": 131.5,
+    "slot": "DE",
+    "how": "pick"
+   },
+   {
+    "player": "Mike Devito",
+    "team": "Kansas City Chiefs",
+    "position": "DE",
+    "score": 128.5,
+    "slot": "DE",
+    "how": "pick"
+   },
+   {
+    "player": "Stephen Hauschka",
+    "team": "Seattle Seahawks",
+    "position": "K",
+    "score": 131.0,
+    "slot": "K",
+    "how": "assigned"
+   },
+   {
+    "player": "Jacoby Jones",
+    "team": "Baltimore Ravens",
+    "position": "WR",
+    "score": 144.5,
+    "slot": "RS",
+    "how": "pick"
+   },
+   {
+    "player": "Jake McQuaide",
+    "team": "St. Louis Rams",
+    "position": "LS",
+    "slot": "LS",
+    "how": "need player"
+   }
+  ],
+  "Team Two": [
+   {
+    "player": "Vontaze Burfict",
+    "team": "Cincinnati Bengals",
+    "position": "MLB",
+    "score": 208.5,
+    "slot": "ILB",
+    "how": "captain"
+   },
+   {
+    "player": "Philip Rivers",
+    "team": "San Diego Chargers",
+    "position": "QB",
+    "score": 291.76,
+    "slot": "QB",
+    "how": "captain"
+   },
+   {
+    "player": "Ahtyba Rubin",
+    "team": "Cleveland Browns",
+    "position": "DT",
+    "score": 149.5,
+    "slot": "DT",
+    "how": "pick"
+   },
+   {
+    "player": "Henry Melton",
+    "team": "Chicago Bears",
+    "position": "DT",
+    "score": 121.5,
+    "slot": "DT",
+    "how": "pick"
+   },
+   {
+    "player": "Linval Joseph",
+    "team": "New York Giants",
+    "position": "NT",
+    "score": 120.0,
+    "slot": "DT",
+    "how": "pick"
+   },
+   {
+    "player": "Vladimir Ducasse",
+    "team": "New York Jets",
+    "position": "G",
+    "score": 182.45,
+    "slot": "G",
+    "how": "pick"
+   },
+   {
+    "player": "Garrett Reynolds",
+    "team": "Atlanta Falcons",
+    "position": "G",
+    "score": 164.33,
+    "slot": "G",
+    "how": "pick"
+   },
+   {
+    "player": "Chad Rinehart",
+    "team": "San Diego Chargers",
+    "position": "G",
+    "score": 160.88,
+    "slot": "G",
+    "how": "assigned"
+   },
+   {
+    "player": "Rodney Hudson",
+    "team": "Kansas City Chiefs",
+    "position": "C",
+    "score": 187.93,
+    "slot": "C",
+    "how": "pick"
+   },
+   {
+    "player": "Jason Kelce",
+    "team": "Philadelphia Eagles",
+    "position": "C",
+    "score": 164.5,
+    "slot": "C",
+    "how": "pick"
+   },
+   {
+    "player": "Tony Fiammetta",
+    "team": "Chicago Bears",
+    "position": "FB",
+    "score": 27.9,
+    "slot": "FB",
+    "how": "assigned"
+   },
+   {
+    "player": "Spencer Lanning",
+    "team": "Cleveland Browns",
+    "position": "P",
+    "score": 60.75,
+    "slot": "P",
+    "how": "pick"
+   },
+   {
+    "player": "Calvin Johnson",
+    "team": "Detroit Lions",
+    "position": "WR",
+    "score": 187.1,
+    "slot": "WR",
+    "how": "pick"
+   },
+   {
+    "player": "Malcom Floyd",
+    "team": "San Diego Chargers",
+    "position": "WR",
+    "score": 181.7,
+    "slot": "WR",
+    "how": "pick"
+   },
+   {
+    "player": "Brandon Marshall",
+    "team": "Chicago Bears",
+    "position": "WR",
+    "score": 174.9,
+    "slot": "WR",
+    "how": "pick"
+   },
+   {
+    "player": "Davone Bess",
+    "team": "Cleveland Browns",
+    "position": "WR",
+    "score": 171.3,
+    "slot": "WR",
+    "how": "pick"
+   },
+   {
+    "player": "Austin Howard",
+    "team": "New York Jets",
+    "position": "T",
+    "score": 182.45,
+    "slot": "T",
+    "how": "pick"
+   },
+   {
+    "player": "Lamar Holmes",
+    "team": "Atlanta Falcons",
+    "position": "T",
+    "score": 164.33,
+    "slot": "T",
+    "how": "pick"
+   },
+   {
+    "player": "King Dunlap",
+    "team": "San Diego Chargers",
+    "position": "T",
+    "score": 160.88,
+    "slot": "T",
+    "how": "assigned"
+   },
+   {
+    "player": "Tony Gonzalez",
+    "team": "Atlanta Falcons",
+    "position": "TE",
+    "score": 96.8,
+    "slot": "TE",
+    "how": "pick"
+   },
+   {
+    "player": "Ed Dickson",
+    "team": "Baltimore Ravens",
+    "position": "TE",
+    "score": 92.9,
+    "slot": "TE",
+    "how": "pick"
+   },
+   {
+    "player": "Jay Cutler",
+    "team": "Chicago Bears",
+    "position": "QB",
+    "score": 256.3,
+    "slot": "QB",
+    "how": "pick"
+   },
+   {
+    "player": "Matt Ryan",
+    "team": "Atlanta Falcons",
+    "position": "QB",
+    "score": 249.36,
+    "slot": "QB",
+    "how": "pick"
+   },
+   {
+    "player": "Reggie Bush",
+    "team": "Detroit Lions",
+    "position": "RB",
+    "score": 273.1,
+    "slot": "RB",
+    "how": "pick"
+   },
+   {
+    "player": "Daryl Richardson",
+    "team": "St. Louis Rams",
+    "position": "RB",
+    "score": 270.8,
+    "slot": "RB",
+    "how": "assigned"
+   },
+   {
+    "player": "DeMarco Murray",
+    "team": "Dallas Cowboys",
+    "position": "RB",
+    "score": 266.3,
+    "slot": "RB",
+    "how": "assigned"
+   },
+   {
+    "player": "Stephen Nicholas",
+    "team": "Atlanta Falcons",
+    "position": "OLB",
+    "score": 190.0,
+    "slot": "OLB",
+    "how": "pick"
+   },
+   {
+    "player": "Lance Briggs",
+    "team": "Chicago Bears",
+    "position": "OLB",
+    "score": 177.5,
+    "slot": "OLB",
+    "how": "pick"
+   },
+   {
+    "player": "Kevin Burnett",
+    "team": "Oakland Raiders",
+    "position": "OLB",
+    "score": 158.5,
+    "slot": "OLB",
+    "how": "assigned"
+   },
+   {
+    "player": "Dan Connor",
+    "team": "New York Giants",
+    "position": "MLB",
+    "score": 196.8,
+    "slot": "ILB",
+    "how": "pick"
+   },
+   {
+    "player": "Morris Claiborne",
+    "team": "Dallas Cowboys",
+    "position": "CB",
+    "score": 167.8,
+    "slot": "CB",
+    "how": "pick"
+   },
+   {
+    "player": "Johnathan Joseph",
+    "team": "Houston Texans",
+    "position": "CB",
+    "score": 142.3,
+    "slot": "CB",
+    "how": "pick"
+   },
+   {
+    "player": "Jason McCourty",
+    "team": "Tennessee Titans",
+    "position": "CB",
+    "score": 136.1,
+    "slot": "CB",
+    "how": "pick"
+   },
+   {
+    "player": "Patrick Peterson",
+    "team": "Arizona Cardinals",
+    "position": "CB",
+    "score": 132.9,
+    "slot": "CB",
+    "how": "assigned"
+   },
+   {
+    "player": "Dawan Landry",
+    "team": "New York Jets",
+    "position": "S",
+    "score": 192.6,
+    "slot": "S",
+    "how": "pick"
+   },
+   {
+    "player": "Antrel Rolle",
+    "team": "New York Giants",
+    "position": "SS",
+    "score": 169.5,
+    "slot": "S",
+    "how": "pick"
+   },
+   {
+    "player": "Bernard Pollard",
+    "team": "Tennessee Titans",
+    "position": "SS",
+    "score": 166.8,
+    "slot": "S",
+    "how": "pick"
+   },
+   {
+    "player": "Red Bryant",
+    "team": "Seattle Seahawks",
+    "position": "DE",
+    "score": 133.0,
+    "slot": "DE",
+    "how": "pick"
+   },
+   {
+    "player": "Calais Campbell",
+    "team": "Arizona Cardinals",
+    "position": "DE",
+    "score": 130.5,
+    "slot": "DE",
+    "how": "pick"
+   },
+   {
+    "player": "Daniel Te'o-Nesheim",
+    "team": "Tampa Bay Buccaneers",
+    "position": "DE",
+    "score": 125.5,
+    "slot": "DE",
+    "how": "assigned"
+   },
+   {
+    "player": "Ryan Succop",
+    "team": "Kansas City Chiefs",
+    "position": "K",
+    "score": 136.0,
+    "slot": "K",
+    "how": "pick"
+   },
+   {
+    "player": "Eddie Royal",
+    "team": "San Diego Chargers",
+    "position": "WR",
+    "score": 140.5,
+    "slot": "RS",
+    "how": "assigned"
+   },
+   {
+    "player": "Tanner Purdum",
+    "team": "New York Jets",
+    "position": "LS",
+    "slot": "LS",
+    "how": "need player"
+   }
+  ]
+ },
+ "picks": [
+  {
+   "day": "tuesday",
+   "slot": "DT",
+   "team": "Team Two",
+   "player": "Ahtyba Rubin",
+   "club": "Cleveland Browns",
+   "how": "pick"
+  },
+  {
+   "day": "tuesday",
+   "slot": "DT",
+   "team": "Team One",
+   "player": "Fletcher Cox",
+   "club": "Philadelphia Eagles",
+   "how": "pick"
+  },
+  {
+   "day": "tuesday",
+   "slot": "DT",
+   "team": "Team Two",
+   "player": "Henry Melton",
+   "club": "Chicago Bears",
+   "how": "pick"
+  },
+  {
+   "day": "tuesday",
+   "slot": "DT",
+   "team": "Team One",
+   "player": "Vance Walker",
+   "club": "Oakland Raiders",
+   "how": "pick"
+  },
+  {
+   "day": "tuesday",
+   "slot": "DT",
+   "team": "Team Two",
+   "player": "Linval Joseph",
+   "club": "New York Giants",
+   "how": "pick"
+  },
+  {
+   "day": "tuesday",
+   "slot": "DT",
+   "team": "Team One",
+   "player": "Ryan Pickett",
+   "club": "Green Bay Packers",
+   "how": "assigned"
+  },
+  {
+   "day": "tuesday",
+   "slot": "G",
+   "team": "Team One",
+   "player": "Jeff Allen",
+   "club": "Kansas City Chiefs",
+   "how": "pick"
+  },
+  {
+   "day": "tuesday",
+   "slot": "G",
+   "team": "Team Two",
+   "player": "Vladimir Ducasse",
+   "club": "New York Jets",
+   "how": "pick"
+  },
+  {
+   "day": "tuesday",
+   "slot": "G",
+   "team": "Team One",
+   "player": "Evan Mathis",
+   "club": "Philadelphia Eagles",
+   "how": "pick"
+  },
+  {
+   "day": "tuesday",
+   "slot": "G",
+   "team": "Team Two",
+   "player": "Garrett Reynolds",
+   "club": "Atlanta Falcons",
+   "how": "pick"
+  },
+  {
+   "day": "tuesday",
+   "slot": "G",
+   "team": "Team One",
+   "player": "Clint Boling",
+   "club": "Cincinnati Bengals",
+   "how": "pick"
+  },
+  {
+   "day": "tuesday",
+   "slot": "G",
+   "team": "Team Two",
+   "player": "Chad Rinehart",
+   "club": "San Diego Chargers",
+   "how": "assigned"
+  },
+  {
+   "day": "tuesday",
+   "slot": "C",
+   "team": "Team Two",
+   "player": "Rodney Hudson",
+   "club": "Kansas City Chiefs",
+   "how": "pick"
+  },
+  {
+   "day": "tuesday",
+   "slot": "C",
+   "team": "Team One",
+   "player": "Nick Mangold",
+   "club": "New York Jets",
+   "how": "pick"
+  },
+  {
+   "day": "tuesday",
+   "slot": "C",
+   "team": "Team Two",
+   "player": "Jason Kelce",
+   "club": "Philadelphia Eagles",
+   "how": "pick"
+  },
+  {
+   "day": "tuesday",
+   "slot": "C",
+   "team": "Team One",
+   "player": "Peter Konz",
+   "club": "Atlanta Falcons",
+   "how": "assigned"
+  },
+  {
+   "day": "tuesday",
+   "slot": "FB",
+   "team": "Team One",
+   "player": "Mike Tolbert",
+   "club": "Carolina Panthers",
+   "how": "pick"
+  },
+  {
+   "day": "tuesday",
+   "slot": "FB",
+   "team": "Team Two",
+   "player": "Tony Fiammetta",
+   "club": "Chicago Bears",
+   "how": "assigned"
+  },
+  {
+   "day": "tuesday",
+   "slot": "P",
+   "team": "Team Two",
+   "player": "Spencer Lanning",
+   "club": "Cleveland Browns",
+   "how": "pick"
+  },
+  {
+   "day": "tuesday",
+   "slot": "P",
+   "team": "Team One",
+   "player": "Tim Masthay",
+   "club": "Green Bay Packers",
+   "how": "assigned"
+  },
+  {
+   "day": "wednesday",
+   "slot": "WR",
+   "team": "Team Two",
+   "player": "Calvin Johnson",
+   "club": "Detroit Lions",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "WR",
+   "team": "Team One",
+   "player": "DeSean Jackson",
+   "club": "Philadelphia Eagles",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "WR",
+   "team": "Team Two",
+   "player": "Malcom Floyd",
+   "club": "San Diego Chargers",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "WR",
+   "team": "Team One",
+   "player": "Chris Givens",
+   "club": "St. Louis Rams",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "WR",
+   "team": "Team Two",
+   "player": "Brandon Marshall",
+   "club": "Chicago Bears",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "WR",
+   "team": "Team One",
+   "player": "Larry Fitzgerald",
+   "club": "Arizona Cardinals",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "WR",
+   "team": "Team Two",
+   "player": "Davone Bess",
+   "club": "Cleveland Browns",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "WR",
+   "team": "Team One",
+   "player": "Roddy White",
+   "club": "Atlanta Falcons",
+   "how": "assigned"
+  },
+  {
+   "day": "wednesday",
+   "slot": "T",
+   "team": "Team One",
+   "player": "Branden Albert",
+   "club": "Kansas City Chiefs",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "T",
+   "team": "Team Two",
+   "player": "Austin Howard",
+   "club": "New York Jets",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "T",
+   "team": "Team One",
+   "player": "Jason Peters",
+   "club": "Philadelphia Eagles",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "T",
+   "team": "Team Two",
+   "player": "Lamar Holmes",
+   "club": "Atlanta Falcons",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "T",
+   "team": "Team One",
+   "player": "Andre Smith (CIN)",
+   "club": "Cincinnati Bengals",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "T",
+   "team": "Team Two",
+   "player": "King Dunlap",
+   "club": "San Diego Chargers",
+   "how": "assigned"
+  },
+  {
+   "day": "wednesday",
+   "slot": "TE",
+   "team": "Team Two",
+   "player": "Tony Gonzalez",
+   "club": "Atlanta Falcons",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "TE",
+   "team": "Team One",
+   "player": "Jordan Cameron",
+   "club": "Cleveland Browns",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "TE",
+   "team": "Team Two",
+   "player": "Ed Dickson",
+   "club": "Baltimore Ravens",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "TE",
+   "team": "Team One",
+   "player": "Marcedes Lewis",
+   "club": "Jacksonville Jaguars",
+   "how": "assigned"
+  },
+  {
+   "day": "wednesday",
+   "slot": "QB",
+   "team": "Team One",
+   "player": "Andy Dalton",
+   "club": "Cincinnati Bengals",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "QB",
+   "team": "Team Two",
+   "player": "Jay Cutler",
+   "club": "Chicago Bears",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "QB",
+   "team": "Team One",
+   "player": "Sam Bradford",
+   "club": "St. Louis Rams",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "QB",
+   "team": "Team Two",
+   "player": "Matt Ryan",
+   "club": "Atlanta Falcons",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "QB",
+   "team": "Team One",
+   "player": "Alex Smith (KC)",
+   "club": "Kansas City Chiefs",
+   "how": "assigned"
+  },
+  {
+   "day": "wednesday",
+   "slot": "RB",
+   "team": "Team One",
+   "player": "Arian Foster",
+   "club": "Houston Texans",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "RB",
+   "team": "Team Two",
+   "player": "Reggie Bush",
+   "club": "Detroit Lions",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "RB",
+   "team": "Team One",
+   "player": "Stevan Ridley",
+   "club": "New England Patriots",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "RB",
+   "team": "Team Two",
+   "player": "Daryl Richardson",
+   "club": "St. Louis Rams",
+   "how": "assigned"
+  },
+  {
+   "day": "wednesday",
+   "slot": "RB",
+   "team": "Team Two",
+   "player": "DeMarco Murray",
+   "club": "Dallas Cowboys",
+   "how": "assigned"
+  },
+  {
+   "day": "wednesday",
+   "slot": "OLB",
+   "team": "Team Two",
+   "player": "Stephen Nicholas",
+   "club": "Atlanta Falcons",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "OLB",
+   "team": "Team One",
+   "player": "Justin Durant",
+   "club": "Dallas Cowboys",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "OLB",
+   "team": "Team Two",
+   "player": "Lance Briggs",
+   "club": "Chicago Bears",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "OLB",
+   "team": "Team One",
+   "player": "Akeem Ayers",
+   "club": "Tennessee Titans",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "OLB",
+   "team": "Team Two",
+   "player": "Kevin Burnett",
+   "club": "Oakland Raiders",
+   "how": "assigned"
+  },
+  {
+   "day": "wednesday",
+   "slot": "ILB",
+   "team": "Team Two",
+   "player": "Dan Connor",
+   "club": "New York Giants",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "ILB",
+   "team": "Team One",
+   "player": "Stephen Tulloch",
+   "club": "Detroit Lions",
+   "how": "assigned"
+  },
+  {
+   "day": "wednesday",
+   "slot": "ILB",
+   "team": "Team One",
+   "player": "Curtis Lofton",
+   "club": "New Orleans Saints",
+   "how": "assigned"
+  },
+  {
+   "day": "wednesday",
+   "slot": "CB",
+   "team": "Team One",
+   "player": "Buster Skrine",
+   "club": "Cleveland Browns",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "CB",
+   "team": "Team Two",
+   "player": "Morris Claiborne",
+   "club": "Dallas Cowboys",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "CB",
+   "team": "Team One",
+   "player": "Cortland Finnegan",
+   "club": "St. Louis Rams",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "CB",
+   "team": "Team Two",
+   "player": "Johnathan Joseph",
+   "club": "Houston Texans",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "CB",
+   "team": "Team One",
+   "player": "Charles Tillman",
+   "club": "Chicago Bears",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "CB",
+   "team": "Team Two",
+   "player": "Jason McCourty",
+   "club": "Tennessee Titans",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "CB",
+   "team": "Team One",
+   "player": "Sean Smith",
+   "club": "Kansas City Chiefs",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "CB",
+   "team": "Team Two",
+   "player": "Patrick Peterson",
+   "club": "Arizona Cardinals",
+   "how": "assigned"
+  },
+  {
+   "day": "wednesday",
+   "slot": "S",
+   "team": "Team Two",
+   "player": "Dawan Landry",
+   "club": "New York Jets",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "S",
+   "team": "Team One",
+   "player": "Antoine Bethea",
+   "club": "Indianapolis Colts",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "S",
+   "team": "Team Two",
+   "player": "Antrel Rolle",
+   "club": "New York Giants",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "S",
+   "team": "Team One",
+   "player": "Reshad Jones",
+   "club": "Miami Dolphins",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "S",
+   "team": "Team Two",
+   "player": "Bernard Pollard",
+   "club": "Tennessee Titans",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "S",
+   "team": "Team One",
+   "player": "Eric Berry",
+   "club": "Kansas City Chiefs",
+   "how": "assigned"
+  },
+  {
+   "day": "wednesday",
+   "slot": "DE",
+   "team": "Team One",
+   "player": "Muhammad Wilkerson",
+   "club": "New York Jets",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "DE",
+   "team": "Team Two",
+   "player": "Red Bryant",
+   "club": "Seattle Seahawks",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "DE",
+   "team": "Team One",
+   "player": "Rob Ninkovich",
+   "club": "New England Patriots",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "DE",
+   "team": "Team Two",
+   "player": "Calais Campbell",
+   "club": "Arizona Cardinals",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "DE",
+   "team": "Team One",
+   "player": "Mike Devito",
+   "club": "Kansas City Chiefs",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "DE",
+   "team": "Team Two",
+   "player": "Daniel Te'o-Nesheim",
+   "club": "Tampa Bay Buccaneers",
+   "how": "assigned"
+  },
+  {
+   "day": "wednesday",
+   "slot": "K",
+   "team": "Team Two",
+   "player": "Ryan Succop",
+   "club": "Kansas City Chiefs",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "K",
+   "team": "Team One",
+   "player": "Stephen Hauschka",
+   "club": "Seattle Seahawks",
+   "how": "assigned"
+  },
+  {
+   "day": "wednesday",
+   "slot": "RS",
+   "team": "Team One",
+   "player": "Jacoby Jones",
+   "club": "Baltimore Ravens",
+   "how": "pick"
+  },
+  {
+   "day": "wednesday",
+   "slot": "RS",
+   "team": "Team Two",
+   "player": "Eddie Royal",
+   "club": "San Diego Chargers",
+   "how": "assigned"
+  }
+ ]
+}
