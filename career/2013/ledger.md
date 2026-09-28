@@ -2042,3 +2042,36 @@ This archive was appended late. It was written at this February 2, 2014 checkpoi
 - The Super Bowl MVP.
 
 **Commit closed - Canonical update - February 2, 2014 - 2013 season honours drawn (retroactive) - canonical through February 2, 2014**
+
+## Entry 72: Kernel 2014.3 adopted (credit rules, Pro Bowl game type)
+
+**Effective canonical state:** February 2, 2014 (no clock advance)
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - February 2, 2014 - Kernel 2014.3 adopted (credit rules, Pro Bowl game type)`
+**Preceding global package checkpoint:** `Canonical update - February 2, 2014 - 2013 season honours drawn (retroactive)`
+
+**Decision.** The user asked for an assessment of what must be fixed so games have no bugs, and for the gaps recorded in Entry 71 to be built out. They confirmed that the engine change ships as kernel 2014.3 and that 2013's closed receipts are not rerun. Kernel 2014.3 replaces 2014.2 for every event from here on. No game has been drawn under 2014.2 or 2014.3.
+
+**Credit rules (credit only; every result identical to 2014.2).** Documented in `runtime/README.md`.
+- **Sacks allowed:** charged to the on-field lineman facing the rusher (edge rushers beat a tackle, interior rushers a guard or the center). The five on the field earn line starts.
+- **Coverage tackles:** one per returned kickoff or punt, from the kicking club's coverage unit.
+- **Long snaps:** credited on every punt, field goal and try.
+- **Returners:** one club returner per game when none is designated.
+- **Coverage units and returners:** Jacksonville's depth chart designates none, so they follow the same mechanical rule as every club until Stone designates them.
+
+**Pro Bowl game type.** `game_type="pro_bowl"` plays the 2014 Pro Bowl structure: no kickoffs, the ball at the 25 to start every quarter and after every score, and possession ending at every quarter. Regular and postseason games never reach it.
+
+**Acceptance.**
+- **Replay:** 1,090 games (the frozen Weeks 11-17 TeamInputs, ten fresh seeds each) are identical to 2014.2 in score, possessions, kickoffs, injuries and team counters, with zero validation errors and zero coherence violations.
+- **Pro Bowl:** 300 synthetic Pro Bowl games, with zero errors.
+- **Views:** the 2013 stat views and box scores render unchanged. `season_totals.json` gains only the declared names of the three new counters.
+
+**Assessment.** `runtime/defect_register.md` ranks the open defects. The most important is that every club carries the same Average strength, so each game is close to a coin flip.
+- **Tier 1:** results integrity, recommended before any 2014 game. It includes half-final drives taking the whole clock, fourth-down distances and first downs contradicting the yardage, and players never leaving a game.
+- **Tier 2:** visible play-by-play and decision bugs.
+- **Tier 3:** realism gaps.
+- **No fixes yet:** none of these fixes is made here. Each changes results, so each needs the user's decision.
+
+**Unrecorded 2013 defect, now recorded.** Week 9, San Diego 20, Washington 20 (kernel 2013.7): San Diego's nine-play, 66-yard overtime drive, which ended on downs, was clocked from 13:25 to 0:00. That is the whole-period overtime defect Entry 50 records for Week 10, and kernel 2013.8 fixed it. Neither Entry 49 nor the Week 9 roundup noted it. The result stands, as the Week 10 one does.
+
+**Commit closed - Canonical update - February 2, 2014 - Kernel 2014.3 adopted (credit rules, Pro Bowl game type) - canonical through February 2, 2014**

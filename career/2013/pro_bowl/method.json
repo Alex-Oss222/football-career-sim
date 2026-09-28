@@ -1,0 +1,38 @@
+{
+ "procedure": "pro-bowl-2014-v1",
+ "procedure_tag": "v1",
+ "authority": "User instruction of September 28, 2026: build out the Pro Bowl need players, draft and game, recorded as not generated in Entry 71. Drawn retroactively on the branch date of February 2, 2014; the game is an exhibition and changes no standing, statistic or roster fact.",
+ "structure_sources": [
+  "library/2013_season_honours_selection_structure.md",
+  "library/2013_super_bowl_mvp_and_pro_bowl_procedure.md"
+ ],
+ "selections": "career/2013/awards/season_honours_results.json pro_bowl: each selection who plays, or the alternate who replaced him (Super Bowl clubs and injuries), keeps his position slot and his vote-rank score.",
+ "special_teamer": "Not generated (Entry 71: no coverage-unit evidence in the 2013 receipts), so each team has 42 voted players (its two captains included) and its need player: 43 dress, not the league's 44.",
+ "captains": "The four active captains in season_honours_results.json. Group 1: the top offensive captain with the second defensive captain. Group 2: the top defensive captain with the second offensive captain (library section 2.2; single league source). Captains join their group's team and are not drafted; each counts against his position quota.",
+ "teams": "Team One is the Group 1 team, Team Two the Group 2 team. The alumni captains are not named in the library and are not named here.",
+ "coin_toss": "The private service commits the draft packet and supplies the entropy. Its first bit decides which team has the first pick on both days (the league rule gives the toss loser's side the first pick on both days when the winner takes a group, so one toss fixes the first pick either way). Its second bit pairs the two coaching staffs with the teams, a pairing the library does not record.",
+ "coaches": "The staffs of the highest-seeded club in each conference to lose in the Divisional round (season_honours_results.json pro_bowl.coaches).",
+ "need_players": "Each coach appoints one long snapper. Branch reading (the choice is the coach's and no rule governs it): his own club's long snapper, the LS in that club's latest closed receipt.",
+ "draft": {
+  "order": "Straight alternation (A, B, A, B), first-pick team first on each day, continuing across segments within a day. An assignment does not use a pick.",
+  "tuesday": [["DT", 3], ["G", 3], ["C", 2], ["FB", 1], ["P", 1]],
+  "wednesday": [["WR", 4], ["T", 3], ["TE", 2], ["QB", 3], ["RB", 3], ["OLB", 3], ["ILB", 2], ["CB", 4], ["S", 3], ["DE", 3], ["K", 1], ["RS", 1]],
+  "segment_rule": "Tuesday runs in position segments in the league's order (interior line first); Wednesday's free order across its groups is unverified, so the branch runs its groups as segments in the listed order.",
+  "pick_rule": "The team on the clock takes the highest vote-rank player left at the segment's position. Captains' preferences are not recorded, so vote rank stands in for them. Once a team fills its quota at a position, the players left there are assigned to the other team."
+ },
+ "game": {
+  "rules": "kernel game_type pro_bowl (runtime/README.md, kernel 2014.3): no kickoffs; the ball at the 25 to start every quarter and after every score; the possession in progress ends when any quarter ends.",
+  "quarter_possession": "Branch reading of G2a: possession alternates at the start of each quarter from one opening coin toss (Q1 and Q3 to the toss winner, Q2 and Q4 to the other team).",
+  "after_score": "Branch reading of G2b: the team scored upon starts at its own 25; after a safety the scoring team does.",
+  "timeouts": "Three per half (G10 inference: no 2014 change found).",
+  "overtime": "The 2013 regular-season overtime rules (G12 candidate), opened at the 25 instead of a kickoff; a tie is possible.",
+  "actives": "All 43 dress (G14 unverified; the branch dresses every selected player, within the 46-player game-day limit).",
+  "home": "Team One is the designated home team at a neutral site; no home term applies (kernel 2013.11).",
+  "venue": "neutral (Aloha Stadium)",
+  "strength": "Both teams carry the Average anchors, as every club did in 2013.",
+  "depth": "Within each team, players rank at their position by vote rank. The Pro Bowl returner carries the kick_return and punt_return roles, the kicker placekicker, the punter punt and the need player long_snap.",
+  "not_modelled": "Play-level exhibition rules: the two-minute warning each quarter, the late-quarter clock, the incomplete-pass restart, sacks not stopping the clock, the 35/25 play clock and the defensive restrictions (G3 to G9). Drives are real 2012 regular-season drives: quarters 1 to 3 draw as first-half windows that end the possession, quarter 4 as the second half's last fifteen minutes.",
+  "receipt": "career/2013/pro_bowl/receipt.json (full detail). It is kept apart from the season receipts and counts toward no statistic, standing, award or band."
+ },
+ "hindsight": "No real Pro Bowl captain, pairing, coin toss, pick, assignment, need player, game score or statistic is read."
+}

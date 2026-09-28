@@ -1,0 +1,13 @@
+{
+ "procedure": "super-bowl-mvp-v1",
+ "procedure_tag": "v1",
+ "authority": "User instruction of September 28, 2026: build out the Super Bowl MVP, recorded as not generated in Entry 71. Drawn retroactively on the branch date of February 2, 2014 from the closed Super Bowl XLVIII receipt; no game result or statistic changes.",
+ "structure_source": "library/2013_super_bowl_mvp_and_pro_bowl_procedure.md section 1",
+ "evidence": "career/2013/stats/postseason_receipts/week_21_minnesota_vikings_at_buffalo_bills.json (Super Bowl XLVIII only; the award is for the game alone)",
+ "formula": "Each player's game score is the sum of the league-awards-v1 offense, defense and special_teams formulas (career/2013/awards/methodology.json), each applied only where its positions allow, over the Super Bowl receipt.",
+ "pool": "Players of the winning club. No written rule bars a losing-club player, but the one losing-club winner is a 1971 precedent and panel members are asked to choose from the winning team (library section 1); the branch reads that practice as its pool rule.",
+ "shortlist_size": 3,
+ "panel_weights": [6, 3, 1],
+ "panel_rule": "The top three by game score form the shortlist, ordered by score then name. The private service commits the award packet and supplies the entropy; the panel picks rank 1, 2 or 3 with weights 6:3:1, the draw the weekly and AP awards use. It stands in for the whole 20-vote tally (16 media ballots and the fans' four); the fan conversion is not modelled separately. No co-winner is drawn.",
+ "hindsight": "No real Super Bowl XLVIII participant, statistic or MVP is read."
+}

@@ -22,7 +22,8 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from runtime.stat_tables import (
-    BOX_DEFENSE, FUMBLES, KICKING, PUNTING, RECEIVING, RETURNS, RUSHING, avg,
+    BOX_DEFENSE, COVERAGE, FUMBLES, KICKING, LINE_STARTS, LONG_SNAPS, OFFENSIVE_LINE, PUNTING,
+    RECEIVING, RETURNS, RUSHING, avg,
     combine, derived, col, g, passer_rating, pct, table, thrown, time_text,
 )
 
@@ -54,6 +55,10 @@ CATEGORIES = (
     ("Kicking", KICKING, ("field_goals_attempted", "extra_points_attempted"), "field_goals_made", False),
     ("Punting", PUNTING, ("punts",), "punt_yards", False),
     ("Returns", RETURNS, ("kick_returns", "punt_returns"), "return_yards", False),
+    # Kernel 2014.3 sections appear only in receipts that carry these fields.
+    ("Offensive line", (LINE_STARTS,) + OFFENSIVE_LINE, ("line_starts",), "sacks_allowed", True),
+    ("Coverage", COVERAGE, ("special_teams_tackles",), "special_teams_tackles", True),
+    ("Long snapping", (LONG_SNAPS,), ("long_snaps",), "long_snaps", False),
 )
 
 
@@ -127,12 +132,12 @@ def team_box(team_id, players):
 START_KIND = {
     "kickoff": "kickoff", "kickoff_touchback": "kickoff (touchback)", "free_kick": "free kick",
     "punt": "punt", "interception": "interception", "fumble_lost": "fumble", "downs": "downs",
-    "missed_fg": "missed FG", "period_change": "period change",
+    "missed_fg": "missed FG", "period_change": "period change", "placement": "placed at the 25",
 }
 RESULT = {
     "touchdown": "Touchdown", "field_goal_attempt": "FG", "punt": "Punt", "interception": "Interception",
     "fumble_lost": "Fumble lost", "downs": "Downs", "safety": "Safety", "end_of_half": "End of half",
-    "end_of_game": "End of game", "end_of_overtime": "End of overtime",
+    "end_of_game": "End of game", "end_of_overtime": "End of overtime", "end_of_quarter": "End of quarter",
 }
 
 

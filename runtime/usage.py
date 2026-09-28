@@ -209,3 +209,164 @@ def lineup_errors(players):
 def kicking_specialist(players, grp, role):
     """The club's own specialist, else its emergency one (punter kicks, kicker punts)."""
     return specialist(players, grp, role) or specialist(players, EMERGENCY_SPECIALIST[grp], role)
+
+
+# ---- Kernel 2014.3: who is on the field for protection and the kicking game.
+# Credit only. Every rule below is deterministic, reads only the club's own
+# depth order and roles, and applies to every club alike. None of it can
+# change a score, clock, spot or team counter.
+
+LINE_SLOTS = ("LT", "LG", "C", "RG", "RT")
+_LINE_FILL = (("C", "C"), ("LT", "T"), ("RT", "T"), ("LG", "G"), ("RG", "G"))
+_LINE_POSITION = {"T": "T", "OT": "T", "G": "G", "OG": "G", "C": "C"}
+# A rusher off the edge beats a tackle; an interior rusher beats a guard or
+# the center (by the rusher's own position label). A generic LB or DL label
+# says neither, so that rusher may have beaten any of the five.
+EDGE_RUSHERS = frozenset({"DE", "OLB", "CB", "S", "SS", "FS", "DB", "SAF"})
+INTERIOR_RUSHERS = frozenset({"DT", "NT", "ILB", "MLB"})
+EDGE_SLOTS = ("LT", "RT")
+INTERIOR_SLOTS = ("LG", "C", "RG")
+# Base-personnel starters skipped when a club has not designated its coverage
+# units or returners: one back, three receivers, one tight end (11
+# personnel), three linebackers and four defensive backs (4-3 base). A
+# mechanical convention, labelled as such in runtime/README.md (kernel 2014.3).
+# Four linebackers are skipped for every club, so a 3-4 club's starters stay
+# out of coverage too.
+BASE_STARTERS = {"RB": 1, "WR": 3, "TE": 1, "FB": 0, "LB": 4, "DB": 4}
+COVERAGE_GROUPS = ("LB", "DB", "TE", "FB", "RB", "WR")
+RETURN_GROUPS = ("WR", "RB", "DB")
+COVERAGE_SIZE = {"kickoff_coverage": 10, "punt_coverage": 9}
+# The unit's make-up when the club has designated none (a mechanical
+# convention: backup linebackers and defensive backs, a tight end, a
+# fullback or back, a receiver).
+COVERAGE_MIX = {
+    "kickoff_coverage": ((("LB",), 3), (("DB",), 4), (("TE",), 1), (("FB", "RB"), 1), (("WR",), 1)),
+    "punt_coverage": ((("LB",), 3), (("DB",), 3), (("TE",), 1), (("FB", "RB"), 1), (("WR",), 1)),
+}
+
+
+def protection_front(players):
+    """{slot: player} for the five linemen on the field.
+
+    A unit-wide chart (every lineman a distinct depth, as the library and
+    Jacksonville's depth chart build it) lists the first string LT, LG, C,
+    RG, RT at depths 1-5: each available first-stringer plays his depth's
+    slot whatever his label, and a vacant slot takes the next available
+    lineman by depth whose label fits it (a tackle at LT/RT, a guard at
+    LG/RG, a center at C), else the next by depth. A per-position chart
+    (tied depths) seats its five lowest-depth linemen by label: the center,
+    tackles left then right, guards left then right."""
+    line = depth_order(players, "OL", "pass_protection")
+    depths = [p.depth for p in line]
+    front, used = {}, set()
+    if line and all(isinstance(d, int) for d in depths) and len(set(depths)) == len(depths):
+        for player in line:
+            if 1 <= player.depth <= len(LINE_SLOTS):
+                front[LINE_SLOTS[player.depth - 1]] = player
+                used.add(player.player_id)
+        wanted = {slot: label for slot, label in _LINE_FILL}
+        for slot in LINE_SLOTS:
+            if slot in front:
+                continue
+            rest = [p for p in line if p.player_id not in used]
+            pick = next((p for p in rest if _LINE_POSITION.get(str(p.position).upper()) == wanted[slot]),
+                        rest[0] if rest else None)
+            if pick is not None:
+                front[slot] = pick
+                used.add(pick.player_id)
+        return {slot: front[slot] for slot in LINE_SLOTS if slot in front}
+    starters = line[:len(LINE_SLOTS)]
+    for slot, label in _LINE_FILL:
+        for player in starters:
+            if player.player_id not in used and _LINE_POSITION.get(str(player.position).upper()) == label:
+                front[slot] = player
+                used.add(player.player_id)
+                break
+    spares = [p for p in starters if p.player_id not in used]
+    for slot in LINE_SLOTS:
+        if slot not in front and spares:
+            front[slot] = spares.pop(0)
+    return {slot: front[slot] for slot in LINE_SLOTS if slot in front}
+
+
+def beaten_slots(rusher, front):
+    """The front slots a sack by this rusher can be charged to."""
+    label = str(rusher.position).upper()
+    wanted = (EDGE_SLOTS if label in EDGE_RUSHERS else INTERIOR_SLOTS if label in INTERIOR_RUSHERS
+              else LINE_SLOTS)
+    slots = [s for s in wanted if s in front]
+    return slots or [s for s in LINE_SLOTS if s in front]
+
+
+def _designated(players, role):
+    return [p for p in players if role in p.roles or role in p.responsibilities]
+
+
+def _beyond_starters(players, groups):
+    """(rank past the base starters, group order, player) for non-starters."""
+    out = []
+    for order, grp in enumerate(groups):
+        ranked = depth_order(players, grp)
+        for rank, player in enumerate(ranked[BASE_STARTERS.get(grp, 0):]):
+            out.append((rank, order, player))
+    return sorted(out, key=lambda item: (item[0], item[1]))
+
+
+def club_returner(players, role):
+    """The designated returner, else the club's first non-starter receiver,
+    back or defensive back by depth (receivers before backs before DBs at
+    the same rank). Deterministic: one club returner per game."""
+    designated = _designated(players, role)
+    if designated:
+        return min(enumerate(designated),
+                   key=lambda item: (item[1].depth if isinstance(item[1].depth, int) else 99, item[0]))[1]
+    candidates = _beyond_starters(players, RETURN_GROUPS)
+    if candidates:
+        return candidates[0][2]
+    pool = [p for p in players if group(p.position) in RETURN_GROUPS]
+    return pool[0] if pool else None
+
+
+def coverage_unit(players, role, exclude=()):
+    """The club's kickoff or punt coverage players (kicker and punter aside).
+
+    Designated players first (role or responsibility `kickoff_coverage` /
+    `punt_coverage`), then a fixed make-up (COVERAGE_MIX) filled from each
+    group's non-starters by depth; a short group is made up from the other
+    non-starters in depth order, then from the lowest-ranked starters. The
+    club's own returners are left out."""
+    size = COVERAGE_SIZE[role]
+    blocked = {getattr(p, "player_id", p) for p in exclude if p is not None}
+    for returner_role in ("kick_return", "punt_return"):
+        returner = club_returner(players, returner_role)
+        if returner is not None:
+            blocked.add(returner.player_id)
+    unit = [p for p in _designated(players, role) if p.player_id not in blocked][:size]
+    taken = {p.player_id for p in unit}
+    bench = {grp: [p for p in depth_order(players, grp)[BASE_STARTERS.get(grp, 0):] if p.player_id not in blocked]
+             for grp in COVERAGE_GROUPS}
+    for groups, count in COVERAGE_MIX[role]:
+        for grp in groups:
+            for p in bench[grp]:
+                if count and len(unit) < size and p.player_id not in taken:
+                    unit.append(p)
+                    taken.add(p.player_id)
+                    count -= 1
+    spares = [p for _, _, p in _beyond_starters(players, COVERAGE_GROUPS)
+              if p.player_id not in blocked and p.player_id not in taken]
+    unit += spares[:max(0, size - len(unit))]
+    if len(unit) < size:
+        taken = {p.player_id for p in unit}
+        starters = []
+        for grp in COVERAGE_GROUPS:
+            starters += list(reversed(depth_order(players, grp)[:BASE_STARTERS.get(grp, 0)]))
+        unit += [p for p in starters if p.player_id not in blocked and p.player_id not in taken][:size - len(unit)]
+    return unit[:size]
+
+
+def long_snapper(players, front=None):
+    """The club's first long snapper, else the center on the field."""
+    snapper = specialist(players, "LS", "long_snap")
+    if snapper is None and front:
+        snapper = front.get("C")
+    return snapper

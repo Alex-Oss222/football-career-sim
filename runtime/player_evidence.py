@@ -37,6 +37,8 @@ STAT_FIELDS = (
     "punts", "punt_yards", "long_punt", "punts_inside_20", "punt_touchbacks",
     "kick_returns", "kick_return_yards", "punt_returns", "punt_return_yards",
     "return_yards",
+    # Kernel 2014.3 (append-only): line starts, long snaps, coverage tackles.
+    "line_starts", "long_snaps", "special_teams_tackles",
 )
 
 

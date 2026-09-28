@@ -20,8 +20,10 @@ from .calibration import load as load_calibration
 from .player_evidence import choose
 
 OFFENSIVE_LINE = {"OT", "OG", "C", "T", "G", "OL"}
-SNAP_DETAIL_TAG = "public-snap-detail-v4"
-KICKOFF_DETAIL_TAG = "public-kickoff-detail-v2"
+# Kernel 2014.3: v5/v3 name the on-field blocker, coverage tackler and long
+# snapper (credit only; the possession stream is untouched).
+SNAP_DETAIL_TAG = "public-snap-detail-v5"
+KICKOFF_DETAIL_TAG = "public-kickoff-detail-v3"
 LABEL_TAG = "public-call-label-v1"
 KNEEL_LABEL = "Victory (kneel)"
 SPIKE_LABEL = "Clock (spike)"
@@ -114,14 +116,20 @@ def _credit_tackle(rng, defenders, defense_stats, record, *, negative=False):
 
 
 def _returner(rng, players, role):
-    """The coach-designated returner handles the return when one is listed."""
-    designated = [p for p in players if role in p.roles or role in p.responsibilities]
-    if designated:
-        return min(
-            enumerate(designated),
-            key=lambda item: (item[1].depth if isinstance(item[1].depth, int) else 99, item[0]),
-        )[1]
-    return choose(rng, players, {"WR", "RB", "CB", "S"}, role)
+    """The coach-designated returner, else the club returner by the
+    kernel 2014.3 depth rule (runtime.usage.club_returner): one per game."""
+    return usage.club_returner(players, role) or choose(rng, players, {"WR", "RB", "CB", "S"}, role)
+
+
+def _coverage_tackle(rng, players, stats_players, role, exclude):
+    """Kernel 2014.3: credit the returned kick's tackle to one player of the
+    kicking club's coverage unit, evenly (no sourced within-unit share)."""
+    unit = usage.coverage_unit(players, role, exclude=exclude)
+    if not unit:
+        return None
+    tackler = rng.choice(unit)
+    _bump(stats_players[tackler.player_id], "special_teams_tackles")
+    return tackler
 
 
 def _declarations(raw, name, family, kind):
@@ -702,6 +710,8 @@ def apply_drive_detail(
     # supplies a different game passer.
     qb = passer or usage.game_passer(available) or choose(rng, available, {"QB"}, "passer")
     qb_line = offense_stats["players"][qb.player_id]
+    # Kernel 2014.3: the five linemen on the field (same for every drive).
+    front = usage.protection_front(available)
 
     drive_seconds = max(0, int(start_clock) - int(end_clock))
     ledger = []
@@ -769,10 +779,19 @@ def apply_drive_detail(
             record["result_yards"] = yards
             _bump(qb_line, "sacks_taken")
             _bump(qb_line, "sack_yards", loss)
-            blocker = choose(rng, available, OFFENSIVE_LINE, "pass_protection")
+            # Kernel 2014.3: the rusher first, then the on-field lineman
+            # facing him (edge rushers beat a tackle, interior rushers a
+            # guard or the center).
             rusher = usage.pick(rng, defenders, shares["sack_share"], "defense", role="pass_rush")
+            if front:
+                slots = usage.beaten_slots(rusher, front)
+                slot = slots[0] if len(slots) == 1 else rng.choice(slots)
+                blocker = front[slot]
+            else:
+                slot, blocker = None, choose(rng, available, OFFENSIVE_LINE, "pass_protection")
             _bump(offense_stats["players"][blocker.player_id], "sacks_allowed")
             record["blocker"] = blocker.player_id
+            record["blocker_slot"] = slot
             _bump(defense_stats["players"][rusher.player_id], "sacks")
             _bump(defense_stats["players"][rusher.player_id], "pressures")
             _bump(defense_stats["players"][rusher.player_id], "tackles")
@@ -884,13 +903,22 @@ def apply_drive_detail(
         kicker = usage.kicking_specialist(available, "K", "placekicker") or choose(rng, available, {"K"}, "placekicker")
         return kicker, offense_stats["players"][kicker.player_id]
 
+    def snap():
+        """Kernel 2014.3: the long snapper on every punt, field goal and try."""
+        snapper = usage.long_snapper(available, front)
+        if snapper is None:
+            return None
+        _bump(offense_stats["players"][snapper.player_id], "long_snaps")
+        return snapper.player_id
+
     if category == "field_goal_attempt":
         kicker, line = kicker_line()
         _bump(line, "field_goals_attempted")
         if fg_made:
             _bump(line, "field_goals_made")
         ledger.append({**base, "snap_in_drive": terminal_snap, "play_type": "field_goal",
-                       "kicker": kicker.player_id, "made": bool(fg_made), "distance": fg_distance, **fourth})
+                       "kicker": kicker.player_id, "made": bool(fg_made), "distance": fg_distance,
+                       "long_snapper": snap(), **fourth})
     elif category == "punt":
         punter = usage.kicking_specialist(available, "P", "punt") or choose(rng, available, {"P"}, "punt")
         line = offense_stats["players"][punter.player_id]
@@ -903,8 +931,8 @@ def apply_drive_detail(
             _bump(line, "punt_touchbacks")
         elif 100 - los + gross - ret >= 81:
             _bump(line, "punts_inside_20")
-        cover = choose(rng, available, {"LB", "CB", "S", "WR", "RB", "TE"}, "punt_coverage")
-        returner = None
+        snapper = snap()
+        returner = cover = None
         if punt_record["outcome"] == "returned":
             returner = _returner(rng, defenders, "punt_return")
             rline = defense_stats["players"][returner.player_id]
@@ -912,8 +940,10 @@ def apply_drive_detail(
             _bump(rline, "punt_return_yards", ret)
             _bump(rline, "return_yards", ret)
             returner = returner.player_id
+            tackler = _coverage_tackle(rng, available, offense_stats["players"], "punt_coverage", (punter,))
+            cover = tackler.player_id if tackler else None
         ledger.append({**base, "snap_in_drive": terminal_snap, "play_type": "punt",
-                       "punter": punter.player_id, "cover_player": cover.player_id,
+                       "punter": punter.player_id, "cover_player": cover, "long_snapper": snapper,
                        "punt_yards": gross, "returner": returner, "return_yards": ret,
                        "gross": gross, "enforcement": punt_record["enforcement"],
                        "outcome": punt_record["outcome"], "touchback": touchback,
@@ -924,7 +954,7 @@ def apply_drive_detail(
         if xp_made:
             _bump(line, "extra_points_made")
         ledger.append({**base, "snap_in_drive": terminal_snap, "play_type": "extra_point",
-                       "kicker": kicker.player_id, "made": bool(xp_made)})
+                       "kicker": kicker.player_id, "made": bool(xp_made), "long_snapper": snap()})
     elif category == "safety":
         ledger.append({**base, "snap_in_drive": terminal_snap, "play_type": "safety",
                        "scoring_team": defense.team_id})
@@ -964,7 +994,7 @@ def apply_drive_detail(
     return ledger, call_stats
 
 
-POSSESSION_END_REASONS = ("downs", "end_of_half", "end_of_game", "end_of_overtime")
+POSSESSION_END_REASONS = ("downs", "end_of_half", "end_of_game", "end_of_overtime", "end_of_quarter")
 
 
 def apply_kickoff_detail(*, seed, event_id, kick_no, kicking, receiving, rosters, stats,
@@ -986,7 +1016,7 @@ def apply_kickoff_detail(*, seed, event_id, kick_no, kicking, receiving, rosters
         "offense": kicking.team_id, "defense": receiving.team_id,
         "play_type": "free_kick" if free_kick else "kickoff",
         "kicker": kicker.player_id, "touchback": not returned,
-        "returner": None, "return_yards": 0, "result_yards": 0,
+        "returner": None, "return_yards": 0, "result_yards": 0, "cover_player": None,
         "touchdown": False, "turnover": False,
         "kick_yards": record.get("kick_yards"), "enforcement": record.get("enforcement"),
         "outcome": record.get("outcome"), "next_start": record.get("next_start"),
@@ -1001,6 +1031,10 @@ def apply_kickoff_detail(*, seed, event_id, kick_no, kicking, receiving, rosters
         row["returner"] = returner.player_id
         row["return_yards"] = return_yards
         row["result_yards"] = return_yards
+        if record.get("outcome", "returned") == "returned":
+            tackler = _coverage_tackle(rng, kicking_players, stats[kicking.team_id]["players"],
+                                       "kickoff_coverage", (kicker,))
+            row["cover_player"] = tackler.player_id if tackler else None
     return [row]
 
 
@@ -1039,6 +1073,7 @@ MARKER_FOR = {
     "interception": "interception", "fumble_lost": "fumble", "safety": "safety",
     "downs": "possession_end", "end_of_half": "possession_end",
     "end_of_game": "possession_end", "end_of_overtime": "possession_end",
+    "end_of_quarter": "possession_end",
 }
 DRIVE_SUMMARY_FIELDS = (
     "number", "team", "half", "category", "points", "scrimmage_plays", "start_clock",
@@ -1150,8 +1185,22 @@ def _clock_base(half):
     return 1800 if half == 1 else 0
 
 
+PRO_BOWL = "pro_bowl"
+PRO_BOWL_SPOT = 75
+QUARTER_STARTS = (2700, 1800, 900)
+
+
+def _frame(p, game_type):
+    """(draw half, clock base) of a possession: the half and its base, or for
+    a Pro Bowl possession its quarter window (kernel 2014.3)."""
+    if game_type == PRO_BOWL and p.get("quarter"):
+        return (2 if p["quarter"] == 4 else 1), (4 - p["quarter"]) * 900
+    return p["half"], _clock_base(p["half"])
+
+
 def _check_spots(result, possessions, err):
     """Ledger-free kernel 2013.7 classes on the possession list or drives summary."""
+    game_type = result.get("game_type", "regular")
     from . import field_position as fp
 
     def key(p):
@@ -1191,26 +1240,31 @@ def _check_spots(result, possessions, err):
         # Fourth-down decision state on punt, field-goal and downs terminals.
         if category in fp.FOURTH_DOWN_CATEGORIES:
             fd = p.get("fourth_down")
-            base = _clock_base(p["half"])
+            draw_half, base = _frame(p, game_type)
             window = p["start_clock"] - base
             clock_s = p["end_clock"] - base
             expected = None
             if isinstance(fd, dict) and isinstance(p.get("score_diff"), int):
                 expected = {
-                    "los": end, "clock_s": clock_s, "half": p["half"], "score_diff": p["score_diff"],
+                    "los": end, "clock_s": clock_s, "half": draw_half, "score_diff": p["score_diff"],
                     "need": fp.need(p["score_diff"]), "decision_zone": fp.decision_zone(end),
-                    "cell": fp.cell_for(p["half"], window, p["score_diff"]),
-                    "clock_bucket": fp.terminal_bucket(clock_s) if p["half"] == 2 else None,
+                    "cell": fp.cell_for(draw_half, window, p["score_diff"]),
+                    "clock_bucket": fp.terminal_bucket(clock_s) if draw_half == 2 else None,
                     "action": FOURTH_DOWN_ACTION[category],
                 }
             if expected is None or any(fd.get(k) != v for k, v in expected.items()):
                 err("fourth_down_state_missing", "drive %s" % number)
-            elif p["half"] == 2 and fd["cell"] != "neutral" and (
+            elif draw_half == 2 and fd["cell"] != "neutral" and (
                     fd["clock_bucket"] != fd.get("tuple_terminal_bucket")
                     or fp.cell_need(fd["cell"]) != fd["need"]):
                 err("late_terminal_state_mismatch", "drive %s bucket %s tuple %s" % (
                     number, fd["clock_bucket"], fd.get("tuple_terminal_bucket")))
     for a, b in zip(possessions, possessions[1:]):
+        if game_type == PRO_BOWL and b["half"] in (1, 2) and b["start_clock"] in QUARTER_STARTS:
+            # A new Pro Bowl quarter starts at the 25 whatever ended the last.
+            if b["start_spot"] != PRO_BOWL_SPOT:
+                err("spot_chain_break", "drive %s opens a quarter at %s" % (b["number"], b["start_spot"]))
+            continue
         if a["half"] == b["half"] and a.get("next_start") is not None and b["start_spot"] != a["next_start"]:
             err("spot_chain_break", "drive %s start %s after next %s" % (b["number"], b["start_spot"], a["next_start"]))
         if a["half"] == b["half"] and a.get("next_start") is None:
@@ -1249,6 +1303,9 @@ def _check_spot_ledger(result, possessions, rows_by_drive, kicks, err):
             err("kick_spot_mismatch", "punt on drive %s los %s next %s" % (p["number"], los, nxt))
             continue
         after = possessions[index + 1] if index + 1 < len(possessions) else None
+        if after is not None and result.get("game_type") == PRO_BOWL and after["half"] in (1, 2) \
+                and after["start_clock"] in QUARTER_STARTS:
+            after = None  # the next Pro Bowl quarter starts at the 25
         if after is not None and after["half"] == p["half"] and after["start_spot"] != nxt:
             err("kick_spot_mismatch", "punt on drive %s next %s start %s" % (p["number"], nxt, after["start_spot"]))
         e = row.get("enforcement") or 0
@@ -1332,7 +1389,21 @@ def check_ledger(result):
         if p["start_clock"] > 1800 > p["end_clock"]:
             err("drives_spanning_half", "drive %s" % p["number"])
     first_h2 = next((p for p in regulation if p["half"] == 2), None)
-    if regulation and (first_h2 is None or first_h2["team"] == regulation[0]["team"]):
+    pro_bowl = game_type == PRO_BOWL
+    if pro_bowl:
+        # Kernel 2014.3 Pro Bowl: possession alternates at the start of each
+        # quarter, every quarter opens at the 25 and no possession crosses one.
+        openers = [next((p for p in regulation if p["start_clock"] == top), None) for top in (3600,) + QUARTER_STARTS]
+        teams_open = [p["team"] if p else None for p in openers]
+        if None in teams_open or not (teams_open[0] == teams_open[2] != teams_open[1] == teams_open[3]):
+            err("wrong_second_half_receiver", "Pro Bowl quarter possession does not alternate")
+        for p in openers:
+            if p is not None and p["start_spot"] != PRO_BOWL_SPOT:
+                err("spot_chain_break", "drive %s opens a quarter at %s" % (p["number"], p["start_spot"]))
+        for p in regulation:
+            if any(p["start_clock"] > b > p["end_clock"] for b in (2700, 900)):
+                err("drives_spanning_half", "drive %s spans a quarter" % p["number"])
+    elif regulation and (first_h2 is None or first_h2["team"] == regulation[0]["team"]):
         err("wrong_second_half_receiver", "second half opened by the opening receiver")
     for half, top, bottom in ((1, 3600, 1800), (2, 1800, 0)):
         rows = [p for p in regulation if p["half"] == half]
@@ -1345,6 +1416,8 @@ def check_ledger(result):
         if rows and clock != bottom:
             err("clock_regression", "half %s does not end at %d" % (half, bottom))
     for a, b in zip(possessions, possessions[1:]):
+        if pro_bowl and b["half"] in (1, 2) and b["start_clock"] in QUARTER_STARTS:
+            continue  # a Pro Bowl quarter's opener is set by the alternation
         if a["half"] == b["half"] and a["team"] == b["team"]:
             err("clock_regression", "drive %s repeats the offense" % b["number"])
 
@@ -1369,6 +1442,9 @@ def check_ledger(result):
         if p.get("half_final"):
             boundary = 1800 if p["half"] == 1 else 0
             nxt = possessions[possessions.index(p) + 1] if p is not last else None
+            if pro_bowl and p["half"] in (1, 2):
+                boundary = _frame(p, game_type)[1]
+                nxt = None
             if p["end_clock"] != boundary or (nxt is not None and nxt["half"] == p["half"]
                                               and p["half"] in (1, 2)):
                 err("clock_regression", "half-final drive %s does not end its window" % p["number"])
@@ -1436,18 +1512,21 @@ def check_ledger(result):
         previous = stamp
 
     kicks = [row for row in ledger if row.get("play_type") in KICK_TYPES]
-    if not ledger or ledger[0].get("play_type") != "kickoff" or (
+    by_number = {p["number"]: p for p in possessions}
+    if pro_bowl:
+        if kicks:
+            err("kickoff_after_expired_clock", "a kick row in a game without kickoffs")
+    elif not ledger or ledger[0].get("play_type") != "kickoff" or (
             ledger[0]["period"], ledger[0]["game_clock"]) != (1, "15:00"):
         err("missing_half_kickoff", "no opening kickoff at Q1 15:00")
-    by_number = {p["number"]: p for p in possessions}
-    openers = {regulation[0]["number"]} if regulation else set()
-    if first_h2:
+    openers = {regulation[0]["number"]} if regulation and not pro_bowl else set()
+    if first_h2 and not pro_bowl:
         openers.add(first_h2["number"])
         second = [k for k in kicks if k["drive"] == first_h2["number"]
                   and (k["period"], k["game_clock"]) == (3, "15:00")]
         if not second or second[0]["defense"] != first_h2["team"]:
             err("missing_half_kickoff", "no second-half kickoff at Q3 15:00 to %s" % first_h2["team"])
-    if overtime:
+    if overtime and not pro_bowl:
         openers.add(overtime[0]["number"])
     kicked_drives = set()
     for k in kicks:

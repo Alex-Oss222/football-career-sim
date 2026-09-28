@@ -70,6 +70,8 @@ def _append_evidence(evidence, drive_ledger, offense_players, defense_players, o
 
     for play in drive_ledger:
         if play.get("sack") and play.get("blocker"):
+            # Kernel 2014.3: the lineman facing the rusher is named; which one
+            # is an even draw, so no technique finding is asserted.
             blocker = offense_by_id.get(play["blocker"])
             if blocker:
                 evidence.append(
@@ -79,12 +81,11 @@ def _append_evidence(evidence, drive_ledger, offense_players, defense_players, o
                         role="pass protection",
                         responsibility="protect assigned gap/edge",
                         situation="generated passing down",
-                        assignment="assignment identified",
-                        technique="leverage lost",
-                        physical_execution="pressure reached quarterback",
+                        physical_execution="sacked from his side of the line",
                     )
                 )
         if play.get("play_type") == "punt" and play.get("cover_player"):
+            # Kernel 2014.3: named only when he made the tackle on a return.
             cover = offense_by_id.get(play["cover_player"])
             if cover:
                 evidence.append(
@@ -93,11 +94,8 @@ def _append_evidence(evidence, drive_ledger, offense_players, defense_players, o
                         unit="special teams",
                         role="punt coverage",
                         responsibility="maintain coverage lane and leverage",
-                        situation="punt",
-                        assignment="coverage lane held",
-                        communication="substitution responsibility confirmed",
-                        observable_effort="coverage pursuit continued to the finish",
-                        special_teams_responsibility="coverage lane, leverage and tackle finish",
+                        situation="returned punt",
+                        special_teams_responsibility="tackle made on the return",
                     )
                 )
         if play.get("turnover"):
@@ -212,6 +210,13 @@ def _blank_team_stats(players):
 
 
 CLOCK_REASON = {1: "end_of_half", 2: "end_of_game", "OT": "end_of_overtime"}
+# Kernel 2014.3 Pro Bowl (library/2013_super_bowl_mvp_and_pro_bowl_procedure.md
+# section 3; branch readings in career/2013/pro_bowl/method.json): no kickoffs,
+# the ball at the 25 to start every quarter and after every score, and a
+# possession that ends when any quarter ends.
+PRO_BOWL = "pro_bowl"
+PRO_BOWL_SPOT = 75
+QUARTER_REASON = {1: "end_of_quarter", 2: "end_of_half", 3: "end_of_quarter", 4: "end_of_game"}
 SCORE_KIND = {"touchdown": "touchdown", "field_goal_attempt": "field_goal", "safety": "safety"}
 LEGACY_OUTCOME = {
     "touchdown": "touchdown", "field_goal_attempt": "field_goal", "punt": "punt",
@@ -268,6 +273,10 @@ def resolve_game(
     teams = {home.team_id: home, away.team_id: away}
     rosters = {home.team_id: home_players, away.team_id: away_players}
     stats = {t.team_id: _blank_team_stats(rosters[t.team_id]) for t in (home, away)}
+    # Kernel 2014.3: the five linemen on the field start the game (credit only).
+    for team_id, players in rosters.items():
+        for lineman in usage.protection_front(players).values():
+            stats[team_id]["players"][lineman.player_id]["line_starts"] += 1
     play_call_stats = {home.team_id: {}, away.team_id: {}}
     evidence = []
     possessions = []
@@ -334,8 +343,12 @@ def resolve_game(
         ))
         return record
 
-    def possess(offense, window, half, spot, start_kind, ot_history=None, ot_label="OT"):
+    def possess(offense, window, half, spot, start_kind, ot_history=None, ot_label="OT", quarter=None):
         team = teams[offense]
+        # Pro Bowl quarters are their own windows: the first three draw as a
+        # first-half window ending the possession, the fourth as the second
+        # half's last fifteen minutes (runtime/README.md, kernel 2014.3).
+        draw_half = half if quarter is None else (2 if quarter == 4 else 1)
         defense = teams[other(offense)]
         edge = _edge(team, defense, home, venue)
         drive_no = len(possessions) + 1
@@ -346,7 +359,7 @@ def resolve_game(
         if half == "OT" and game_type == "postseason":
             _reset_postseason_ot_timeouts(window)
         timeouts_before = (timeouts[offense], timeouts[other(offense)])
-        drawn = field_position.draw_drive(rng, spot, half, window, score_diff, edge, diagnostics, timeouts_before)
+        drawn = field_position.draw_drive(rng, spot, draw_half, window, score_diff, edge, diagnostics, timeouts_before)
         category, row, seconds = drawn.category, drawn.tuple, drawn.seconds
         # The real drive's charged timeouts, capped at what each club holds.
         timeouts_used = (min(timeouts_before[0], row[T["off_timeouts_used"]] or 0),
@@ -497,11 +510,13 @@ def resolve_game(
         s["points"] += points
         s["time_of_possession"] += seconds
 
-        terminal = CLOCK_REASON[half] if category == "clock" else category
+        terminal = category
+        if category == "clock":
+            terminal = QUARTER_REASON[quarter] if quarter else CLOCK_REASON[half]
         if half == "OT":
             start_clock, end_clock = window, window - seconds
         else:
-            base = 1800 if half == 1 else 0
+            base = (4 - quarter) * RULES.quarter_seconds if quarter else (1800 if half == 1 else 0)
             start_clock, end_clock = base + window, base + window - seconds
 
         fourth_down = None
@@ -515,8 +530,8 @@ def resolve_game(
                 "ydstogo": min(ydstogo, end_spot) if ydstogo is not None else None,
                 "goal_to_go": ydstogo is not None and ydstogo >= end_spot,
                 "los": end_spot,
-                "clock_s": clock_s, "clock_bucket": field_position.terminal_bucket(clock_s) if half == 2 else None,
-                "half": half, "score_diff": score_diff, "need": field_position.need(score_diff),
+                "clock_s": clock_s, "clock_bucket": field_position.terminal_bucket(clock_s) if draw_half == 2 else None,
+                "half": draw_half, "score_diff": score_diff, "need": field_position.need(score_diff),
                 "decision_zone": field_position.decision_zone(end_spot), "cell": drawn.cell,
                 "tuple_terminal_bucket": row[T["term_bucket"]],
                 "action": {"punt": "punt", "field_goal_attempt": "field_goal", "downs": "go"}[category],
@@ -607,6 +622,8 @@ def resolve_game(
         }
         if half == "OT":
             record["period"] = _period_clock(start_clock, overtime=ot_label)[0]
+        if quarter:
+            record["quarter"] = quarter
         possessions.append(record)
         return record, score_kind, next_kind
 
@@ -620,9 +637,33 @@ def resolve_game(
         record["next_start"] = kicked["next_start"]
         return kicked["next_start"], _start_kind(kicked)
 
+    def placed(record):
+        """Pro Bowl: the next possession starts at the 25 (no kickoff)."""
+        record["next_start"] = PRO_BOWL_SPOT
+        return PRO_BOWL_SPOT, "placement"
+
     # Regulation: two clock-bounded halves; a possession never crosses one.
     opening_receiver = away.team_id if rng.random() < 0.5 else home.team_id
-    for half in (1, 2):
+    pro_bowl = game_type == PRO_BOWL
+    for quarter in ((1, 2, 3, 4) if pro_bowl else ()):
+        # Possession alternates at the start of each quarter from the
+        # opening coin toss; timeouts reset at each half.
+        half = 1 if quarter <= 2 else 2
+        offense = opening_receiver if quarter in (1, 3) else other(opening_receiver)
+        window = RULES.quarter_seconds
+        if quarter in (1, 3):
+            for team_id in timeouts:
+                timeouts[team_id] = RULES.timeouts_per_half
+        spot, start_kind = PRO_BOWL_SPOT, "placement"
+        while window > 0:
+            record, score_kind, next_kind = possess(offense, window, half, spot, start_kind, quarter=quarter)
+            window -= record["seconds"]
+            if score_kind and window > 0:
+                spot, start_kind = placed(record)
+            else:
+                spot, start_kind = record["next_start"], next_kind
+            offense = other(offense)
+    for half in (() if pro_bowl else (1, 2)):
         offense = opening_receiver if half == 1 else other(opening_receiver)
         window = RULES.quarter_seconds * 2
         for team_id in timeouts:
@@ -664,8 +705,11 @@ def resolve_game(
             timeouts[team_id] = (RULES.postseason_ot_timeouts_per_half if postseason
                                  else RULES.regular_ot_timeouts)
         ot_half[0] = 0
-        opened = kick(other(offense), offense, free_kick=False, half="OT", remaining=window, ot_label=ot_label)
-        spot, start_kind = opened["next_start"], _start_kind(opened)
+        if pro_bowl:
+            spot, start_kind = PRO_BOWL_SPOT, "placement"
+        else:
+            opened = kick(other(offense), offense, free_kick=False, half="OT", remaining=window, ot_label=ot_label)
+            spot, start_kind = opened["next_start"], _start_kind(opened)
         while True:
             record, score_kind, next_kind = possess(offense, window, "OT", spot, start_kind, history, ot_label)
             window -= record["seconds"]
@@ -679,7 +723,8 @@ def resolve_game(
                 raise RuntimeError("postseason overtime exceeded the engine's %d-period bound"
                                    % RULES.postseason_ot_period_bound)
             if score_kind:
-                spot, start_kind = kicked_after(record, score_kind, window, "OT", ot_label)
+                spot, start_kind = (placed(record) if pro_bowl
+                                    else kicked_after(record, score_kind, window, "OT", ot_label))
             else:
                 spot, start_kind = record["next_start"], next_kind
             offense = other(offense)
@@ -756,6 +801,31 @@ def validate_result(result):
         opponent = next(t for t in result["team_stats"] if t != team)
         if sum(p["sacks"] for p in result["team_stats"][opponent]["players"].values()) != s["sacks_allowed"]:
             errors.append("defensive sack credit mismatch")
+        if current and all("line_starts" in p for p in players.values()):
+            # Kernel 2014.3 credit checks (legacy inputs without linemen or a
+            # long snapper keep the old fallbacks).
+            linemen = sum(usage.group(p["position"]) == "OL" for p in players.values())
+            snapper = linemen or any(p["position"] == "LS" for p in players.values())
+            if sum(p["line_starts"] for p in players.values()) != min(5, linemen):
+                errors.append("line start count mismatch")
+            if linemen and any(p["sacks_allowed"] and not p["line_starts"] for p in players.values()):
+                errors.append("sack charged to a lineman off the field")
+            kicks = [row for row in result.get("play_ledger", [])
+                     if row.get("offense") == team and row.get("play_type") in ("kickoff", "free_kick", "punt")]
+            if sum(p["special_teams_tackles"] for p in players.values()) != sum(
+                    1 for row in kicks if row.get("cover_player")):
+                errors.append("coverage tackle count mismatch")
+            if any(row.get("outcome") == "returned" and not row.get("cover_player") for row in kicks):
+                errors.append("returned kick without a coverage tackler")
+            if any(row.get("cover_player") and row.get("outcome") != "returned" for row in kicks):
+                errors.append("coverage tackle on a kick that was not returned")
+            for pid, line in players.items():
+                if line["special_teams_tackles"] != sum(1 for row in kicks if row.get("cover_player") == pid):
+                    errors.append("coverage tackle credit differs from the ledger")
+                    break
+            snaps = s["punts"] + s["field_goal_attempts"] + s["extra_point_attempts"]
+            if snapper and sum(p["long_snaps"] for p in players.values()) != snaps:
+                errors.append("long snap count mismatch")
         if (
             sum(p["interceptions_thrown"] + p["fumbles_lost"] for p in players.values())
             != s["turnovers"]
@@ -820,10 +890,18 @@ def validate_result(result):
         errors.append("possession spans halftime")
     opening = regulation[0]["team"] if regulation else None
     second = next((p for p in regulation if p["half"] == 2), None)
-    if second is None or second["team"] == opening:
+    pro_bowl = result.get("game_type") == PRO_BOWL
+    if pro_bowl:
+        openers = [next((p for p in regulation if p.get("quarter") == q), None) for q in (1, 2, 3, 4)]
+        if any(p is None or p["start_spot"] != PRO_BOWL_SPOT for p in openers) or not (
+                openers[0]["team"] == openers[2]["team"] != openers[1]["team"] == openers[3]["team"]):
+            errors.append("pro bowl quarter possession mismatch")
+        if any(p["start_clock"] > b > p["end_clock"] for p in regulation for b in (2700, 900)):
+            errors.append("possession spans a quarter")
+    elif second is None or second["team"] == opening:
         errors.append("second half opened by the opening receiver")
     kicks = result.get("kickoffs", [])
-    expected_kicks = 2 + (1 if overtime else 0) + sum(1 for p in possessions if p.get("kickoff_after"))
+    expected_kicks = 0 if pro_bowl else 2 + (1 if overtime else 0) + sum(1 for p in possessions if p.get("kickoff_after"))
     if len(kicks) != expected_kicks:
         errors.append("kickoff count mismatch")
     for team, s in result["team_stats"].items():
@@ -841,12 +919,17 @@ def validate_result(result):
                     or s["third_down_attempts"] != sum(c[2] for c in mine)
                     or s["third_down_conversions"] != sum(c[3] for c in mine)):
                 errors.append("chain counters differ from the drive chains")
-    if any(p.get("half_final") and p["end_clock"] != (1800 if p["half"] == 1 else 0) for p in possessions):
-        errors.append("half-final possession does not end its window")
-    for half in (1, 2):
-        finals = [p for p in regulation if p["half"] == half and p.get("half_final")]
-        rows = [p for p in regulation if p["half"] == half]
+    # A window's final possession ends it: each half, or each Pro Bowl quarter.
+    windows = ((("quarter", q), (4 - q) * RULES.quarter_seconds) for q in (1, 2, 3, 4)) if pro_bowl else (
+        (("half", h), 1800 if h == 1 else 0) for h in (1, 2))
+    for (kind, number), boundary in windows:
+        rows = [p for p in regulation if p.get(kind) == number]
+        finals = [p for p in rows if p.get("half_final")]
+        if any(p["end_clock"] != boundary for p in finals):
+            errors.append("half-final possession does not end its window")
         if len(finals) > 1 or (finals and finals[0] is not rows[-1]):
-            errors.append(f"half {half} continues after its half-final possession")
+            errors.append(f"{kind} {number} continues after its half-final possession")
+    if any(p.get("half_final") and p["end_clock"] != 0 for p in overtime):
+        errors.append("half-final possession does not end its window")
     errors.extend(check_ledger(result))
     return errors
