@@ -1,0 +1,398 @@
+{
+ "schema_version": "hc-change-base-rates-v1",
+ "source": {
+  "file": "nfldata games.csv",
+  "url": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
+  "sha256": "c14c7de28c9eb7027699b9b316f7276ea03e34a077c8ae65010f15a44a6780d1"
+ },
+ "window": "club-seasons 2002-2012 keyed to the coach who opened the season (1999-2001 read only to count tenure back); outcome read from the 2003-2013 opening games; New Orleans 2012 left out and 2011 counted as kept (Payton's suspension)",
+ "definition": "changed = a different head coach opened the club's next regular season (a firing during or after the season, a resignation or a retirement alike)",
+ "buckets": {
+  "wins": "ties count half; 0-4 (<=4.5), 5-6 (<=6.5), 7-8 (<=8.5), 9-10 (<=10.5), 11+",
+  "tenure": "consecutive seasons the coach opened for the club, this season included, counted back to 1999",
+  "playoffs": "any postseason game that season; pooled by tenure"
+ },
+ "smoothing": "rate = (changed + 5 * overall) / (seasons + 5)",
+ "overall_rate": 0.208,
+ "club_seasons": 351,
+ "cells": {
+  "0-4|1st season": {
+   "changed": 5,
+   "seasons": 17,
+   "raw_rate": 0.2941,
+   "rate": 0.2745
+  },
+  "0-4|2nd-3rd": {
+   "changed": 14,
+   "seasons": 19,
+   "raw_rate": 0.7368,
+   "rate": 0.6267
+  },
+  "0-4|4th+": {
+   "changed": 11,
+   "seasons": 17,
+   "raw_rate": 0.6471,
+   "rate": 0.5473
+  },
+  "11+|4th+": {
+   "changed": 0,
+   "seasons": 1,
+   "raw_rate": 0.0,
+   "rate": 0.1733
+  },
+  "5-6|1st season": {
+   "changed": 1,
+   "seasons": 16,
+   "raw_rate": 0.0625,
+   "rate": 0.0971
+  },
+  "5-6|2nd-3rd": {
+   "changed": 12,
+   "seasons": 27,
+   "raw_rate": 0.4444,
+   "rate": 0.4075
+  },
+  "5-6|4th+": {
+   "changed": 11,
+   "seasons": 19,
+   "raw_rate": 0.5789,
+   "rate": 0.5017
+  },
+  "7-8|1st season": {
+   "changed": 1,
+   "seasons": 17,
+   "raw_rate": 0.0588,
+   "rate": 0.0927
+  },
+  "7-8|2nd-3rd": {
+   "changed": 3,
+   "seasons": 27,
+   "raw_rate": 0.1111,
+   "rate": 0.1262
+  },
+  "7-8|4th+": {
+   "changed": 5,
+   "seasons": 30,
+   "raw_rate": 0.1667,
+   "rate": 0.1726
+  },
+  "9-10|1st season": {
+   "changed": 0,
+   "seasons": 3,
+   "raw_rate": 0.0,
+   "rate": 0.13
+  },
+  "9-10|2nd-3rd": {
+   "changed": 1,
+   "seasons": 12,
+   "raw_rate": 0.0833,
+   "rate": 0.12
+  },
+  "9-10|4th+": {
+   "changed": 4,
+   "seasons": 14,
+   "raw_rate": 0.2857,
+   "rate": 0.2653
+  },
+  "playoffs|1st season": {
+   "changed": 0,
+   "seasons": 20,
+   "raw_rate": 0.0,
+   "rate": 0.0416
+  },
+  "playoffs|2nd-3rd": {
+   "changed": 0,
+   "seasons": 36,
+   "raw_rate": 0.0,
+   "rate": 0.0254
+  },
+  "playoffs|4th+": {
+   "changed": 5,
+   "seasons": 76,
+   "raw_rate": 0.0658,
+   "rate": 0.0746
+  },
+  "0-4|2nd-3rd|no recent playoffs": {
+   "changed": 9,
+   "seasons": 12,
+   "raw_rate": 0.75,
+   "rate": 0.7137,
+   "smoothed_toward": "parent cell"
+  },
+  "0-4|2nd-3rd|recent playoffs": {
+   "changed": 5,
+   "seasons": 7,
+   "raw_rate": 0.7143,
+   "rate": 0.6778,
+   "smoothed_toward": "parent cell"
+  },
+  "0-4|4th+|no recent playoffs": {
+   "changed": 4,
+   "seasons": 5,
+   "raw_rate": 0.8,
+   "rate": 0.6736,
+   "smoothed_toward": "parent cell"
+  },
+  "0-4|4th+|recent playoffs": {
+   "changed": 7,
+   "seasons": 12,
+   "raw_rate": 0.5833,
+   "rate": 0.5727,
+   "smoothed_toward": "parent cell"
+  },
+  "11+|4th+|recent playoffs": {
+   "changed": 0,
+   "seasons": 1,
+   "raw_rate": 0.0,
+   "rate": 0.1444,
+   "smoothed_toward": "parent cell"
+  },
+  "5-6|2nd-3rd|no recent playoffs": {
+   "changed": 12,
+   "seasons": 21,
+   "raw_rate": 0.5714,
+   "rate": 0.5399,
+   "smoothed_toward": "parent cell"
+  },
+  "5-6|2nd-3rd|recent playoffs": {
+   "changed": 0,
+   "seasons": 6,
+   "raw_rate": 0.0,
+   "rate": 0.1852,
+   "smoothed_toward": "parent cell"
+  },
+  "5-6|4th+|no recent playoffs": {
+   "changed": 5,
+   "seasons": 6,
+   "raw_rate": 0.8333,
+   "rate": 0.6826,
+   "smoothed_toward": "parent cell"
+  },
+  "5-6|4th+|recent playoffs": {
+   "changed": 6,
+   "seasons": 13,
+   "raw_rate": 0.4615,
+   "rate": 0.4727,
+   "smoothed_toward": "parent cell"
+  },
+  "7-8|2nd-3rd|no recent playoffs": {
+   "changed": 1,
+   "seasons": 15,
+   "raw_rate": 0.0667,
+   "rate": 0.0815,
+   "smoothed_toward": "parent cell"
+  },
+  "7-8|2nd-3rd|recent playoffs": {
+   "changed": 2,
+   "seasons": 12,
+   "raw_rate": 0.1667,
+   "rate": 0.1548,
+   "smoothed_toward": "parent cell"
+  },
+  "7-8|4th+|no recent playoffs": {
+   "changed": 3,
+   "seasons": 9,
+   "raw_rate": 0.3333,
+   "rate": 0.2759,
+   "smoothed_toward": "parent cell"
+  },
+  "7-8|4th+|recent playoffs": {
+   "changed": 2,
+   "seasons": 21,
+   "raw_rate": 0.0952,
+   "rate": 0.1101,
+   "smoothed_toward": "parent cell"
+  },
+  "9-10|2nd-3rd|no recent playoffs": {
+   "changed": 0,
+   "seasons": 4,
+   "raw_rate": 0.0,
+   "rate": 0.0667,
+   "smoothed_toward": "parent cell"
+  },
+  "9-10|2nd-3rd|recent playoffs": {
+   "changed": 1,
+   "seasons": 8,
+   "raw_rate": 0.125,
+   "rate": 0.1231,
+   "smoothed_toward": "parent cell"
+  },
+  "9-10|4th+|no recent playoffs": {
+   "changed": 0,
+   "seasons": 1,
+   "raw_rate": 0.0,
+   "rate": 0.2211,
+   "smoothed_toward": "parent cell"
+  },
+  "9-10|4th+|recent playoffs": {
+   "changed": 4,
+   "seasons": 13,
+   "raw_rate": 0.3077,
+   "rate": 0.2959,
+   "smoothed_toward": "parent cell"
+  }
+ },
+ "tenure_2013": {
+  "ARI": {
+   "coach": "Bruce Arians",
+   "tenure": 1,
+   "playoffs_2011_or_2012": false
+  },
+  "ATL": {
+   "coach": "Mike Smith",
+   "tenure": 6,
+   "playoffs_2011_or_2012": true
+  },
+  "BAL": {
+   "coach": "John Harbaugh",
+   "tenure": 6,
+   "playoffs_2011_or_2012": true
+  },
+  "BUF": {
+   "coach": "Doug Marrone",
+   "tenure": 1,
+   "playoffs_2011_or_2012": false
+  },
+  "CAR": {
+   "coach": "Ron Rivera",
+   "tenure": 3,
+   "playoffs_2011_or_2012": false
+  },
+  "CHI": {
+   "coach": "Marc Trestman",
+   "tenure": 1,
+   "playoffs_2011_or_2012": false
+  },
+  "CIN": {
+   "coach": "Marvin Lewis",
+   "tenure": 11,
+   "playoffs_2011_or_2012": true
+  },
+  "CLE": {
+   "coach": "Rob Chudzinski",
+   "tenure": 1,
+   "playoffs_2011_or_2012": false
+  },
+  "DAL": {
+   "coach": "Jason Garrett",
+   "tenure": 3,
+   "playoffs_2011_or_2012": false
+  },
+  "DEN": {
+   "coach": "John Fox",
+   "tenure": 3,
+   "playoffs_2011_or_2012": true
+  },
+  "DET": {
+   "coach": "Jim Schwartz",
+   "tenure": 5,
+   "playoffs_2011_or_2012": true
+  },
+  "GB": {
+   "coach": "Mike McCarthy",
+   "tenure": 8,
+   "playoffs_2011_or_2012": true
+  },
+  "HOU": {
+   "coach": "Gary Kubiak",
+   "tenure": 8,
+   "playoffs_2011_or_2012": true
+  },
+  "IND": {
+   "coach": "Chuck Pagano",
+   "tenure": 2,
+   "playoffs_2011_or_2012": true
+  },
+  "JAX": {
+   "coach": "Gus Bradley",
+   "tenure": 1,
+   "playoffs_2011_or_2012": false
+  },
+  "KC": {
+   "coach": "Andy Reid",
+   "tenure": 1,
+   "playoffs_2011_or_2012": false
+  },
+  "STL": {
+   "coach": "Jeff Fisher",
+   "tenure": 2,
+   "playoffs_2011_or_2012": false
+  },
+  "SD": {
+   "coach": "Mike McCoy",
+   "tenure": 1,
+   "playoffs_2011_or_2012": false
+  },
+  "OAK": {
+   "coach": "Dennis Allen",
+   "tenure": 2,
+   "playoffs_2011_or_2012": false
+  },
+  "MIA": {
+   "coach": "Joe Philbin",
+   "tenure": 2,
+   "playoffs_2011_or_2012": false
+  },
+  "MIN": {
+   "coach": "Leslie Frazier",
+   "tenure": 3,
+   "playoffs_2011_or_2012": true
+  },
+  "NE": {
+   "coach": "Bill Belichick",
+   "tenure": 14,
+   "playoffs_2011_or_2012": true
+  },
+  "NO": {
+   "coach": "Sean Payton",
+   "tenure": 1,
+   "playoffs_2011_or_2012": true
+  },
+  "NYG": {
+   "coach": "Tom Coughlin",
+   "tenure": 10,
+   "playoffs_2011_or_2012": true
+  },
+  "NYJ": {
+   "coach": "Rex Ryan",
+   "tenure": 5,
+   "playoffs_2011_or_2012": false
+  },
+  "PHI": {
+   "coach": "Chip Kelly",
+   "tenure": 1,
+   "playoffs_2011_or_2012": false
+  },
+  "PIT": {
+   "coach": "Mike Tomlin",
+   "tenure": 7,
+   "playoffs_2011_or_2012": true
+  },
+  "SEA": {
+   "coach": "Pete Carroll",
+   "tenure": 4,
+   "playoffs_2011_or_2012": true
+  },
+  "SF": {
+   "coach": "Jim Harbaugh",
+   "tenure": 3,
+   "playoffs_2011_or_2012": true
+  },
+  "TB": {
+   "coach": "Greg Schiano",
+   "tenure": 2,
+   "playoffs_2011_or_2012": false
+  },
+  "TEN": {
+   "coach": "Mike Munchak",
+   "tenure": 3,
+   "playoffs_2011_or_2012": false
+  },
+  "WAS": {
+   "coach": "Mike Shanahan",
+   "tenure": 4,
+   "playoffs_2011_or_2012": true
+  }
+ },
+ "tenure_note": "2013 opening-day head coach (the 2013 Week 1 row, a pre-season fact) and consecutive seasons he started for the club through 2013; a season the coach missed breaks the count (see the carousel method for overrides)."
+}

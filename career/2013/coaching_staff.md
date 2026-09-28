@@ -1,7 +1,7 @@
 # 2013 Coaching Staff — Jacksonville Jaguars
 
 **Head coach:** Alex Stone  
-**Staff status:** COMPLETE FOR INITIALIZATION  
+**Staff status:** COMPLETE FOR INITIALIZATION; **one vacancy since January 12, 2014: special teams coordinator** (Alan Lowry left for Atlanta's head-coach job, Entry 75; see §2, Changes after execution)  
 **Effective period:** Late January 2013 onward; exact acceptance day for each simulated assistant remains the date recorded in `offseason/staff_building/hires.md` unless later canon fixes a more precise day.  
 **Contract completion:** Assistant compensation and contract mechanics completed 2026-09-18 at the user's instruction for a realistic 2013 build.  
 **Authority source:** `foundation/03_Head_Coach_Organization_and_Authority_Canon.md`, Stone's executed head-coach agreement, The Prowl program files, and the closed staff-hiring record.  
@@ -23,7 +23,7 @@ This file is the **current operating staff register**. The hiring sequence, decl
 |---|---|---|---|
 | Offense | Mike Tice coordinates the unit and weekly offensive process | **Alex Stone calls offensive plays** | Final offensive menu, game-plan approval, situational direction, game management |
 | Defense | Romeo Crennel | **Romeo Crennel calls the defense** | Final team principles, coordinator supervision, major situational/game-management decisions |
-| Special teams | Alan Lowry | **Alan Lowry directs the kicking game** | Final team-level priorities, roster/use decisions within Stone's authority, game-management interface |
+| Special teams | Alan Lowry (2013 season); **vacant from January 12, 2014** | **Alan Lowry directed the kicking game in 2013**; until a replacement is hired, direction returns to Stone (Document 3: material departures return control) | Final team-level priorities, roster/use decisions within Stone's authority, game-management interface |
 
 The delegation above is real delegation. Stone does not hire Crennel or Lowry and then secretly call their units snap by snap.
 
@@ -58,6 +58,16 @@ NFL assistant salaries were normally private. Period reporting nevertheless esta
 | **2014** | **$7,575,000** |
 | **2015** | **$2,900,000** |
 | **Total guaranteed scheduled salary** | **$17,700,000** |
+
+These totals are the executed register. For changes after execution, see below.
+
+### Changes after execution
+
+| Date | Coach | Change | Effect on the schedule | Record |
+|---|---|---|---|---|
+| January 12, 2014 | Alan Lowry | Left to become Atlanta's head coach. The interview was requested on January 6 inside the Wild Card winners' window and granted under Jacksonville's default policy; a head-coach move is a promotion under the 2013 rules | His 2014 salary ($625,000) is no longer scheduled: his contract ends with the move to another club. Branch treatment: no release terms or payments between the clubs are recorded, and the 2013 rules allow none for an assistant | `career/2014/offseason/staff_changes/requests_and_outcomes.md`; ledger Entry 75 |
+
+After this change, the scheduled 2014 assistant salary for the eleven remaining coaches is **$6,950,000** before any replacement hire, and the total scheduled salary for 2013-2015 is **$17,075,000**. Frank Bush interviewed with Indianapolis for its defensive coordinator job on January 14 with Jacksonville's permission and was not hired; his contract is unchanged.
 
 These totals cover the twelve football coaches listed here. They do **not** include Stone, strength and conditioning, athletic training, medical personnel, scouting, front-office staff, support staff or later assistants added through an authorized transaction.
 
@@ -409,7 +419,8 @@ Oden recommends roles. He does not independently guarantee starting jobs.
 
 ### Alan Lowry — Special Teams Coordinator
 
-**Contract:** 2 seasons, $1.225M total; $600K in 2013.  
+**Status:** Left January 12, 2014 to become Atlanta's head coach (Entry 75). The job is vacant; the responsibilities below describe the role for his replacement.  
+**Contract:** 2 seasons, $1.225M total; $600K in 2013; ended with his move.  
 **Reports to:** Stone.
 
 Lowry is paid at a coordinator rate because the kicking game is its own phase, not an assistant duty folded into another room.

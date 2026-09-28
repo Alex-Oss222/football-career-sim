@@ -1,0 +1,406 @@
+{
+ "procedure": "coaching-carousel-2014-v1",
+ "event_id": "2014-coaching-carousel-v1",
+ "snapshot": "c229203e2e19e7f9cdf84367673e344e5b40013f7dc6b7e111187e23de6fe242",
+ "method_sha256": "90ecf2d0d410d2102204cc3759318a52cd1c1cd9905c13ce85c53bcdce4e76c2",
+ "code_sha256": "a5a18c227bdf3db967062b0e22892b5a410d5b6476e559fee776d3a433b48bb5",
+ "rates_sha256": "58ba80eb9dff3950f4bbe4481ad04dd4498794d6656e4779a463d3f73cb0a183",
+ "inputs_sha256": "564af3266336cc031839e969c4272fa6395270a4d0c6a2a9d12dc20cba2025e3",
+ "ledger_entry": "Ledger Entry 75",
+ "packet_sha256": "58feae6a3dc0d518f04ab78beb67d31e1c9190dc446544e54f15df54a2517906",
+ "result_ref": "cd494b1c0aa07651fc7fd244a08b9ec5ad897108466c1b1973a28f6abbb0a54e",
+ "deferred_procedure": "2014-coaching-carousel-deferred-v1",
+ "head_coach_changes": [
+  {
+   "club": "Arizona Cardinals",
+   "coach": "Bruce Arians",
+   "record_wins": 6.5,
+   "cell": "5-6|1st season",
+   "p_change": 0.0971,
+   "draw": 0.388,
+   "changed": false
+  },
+  {
+   "club": "Atlanta Falcons",
+   "coach": "Mike Smith",
+   "record_wins": 8.0,
+   "cell": "7-8|4th+|recent playoffs",
+   "p_change": 0.1101,
+   "draw": 0.0024,
+   "changed": true,
+   "vacancy_opens": "2013-12-30",
+   "hire_day": "2014-01-12",
+   "resolved_by_branch_date": true,
+   "hired_from": "Jacksonville Jaguars (Alan Lowry)"
+  },
+  {
+   "club": "Baltimore Ravens",
+   "coach": "John Harbaugh",
+   "record_wins": 5.0,
+   "cell": "5-6|4th+|recent playoffs",
+   "p_change": 0.4727,
+   "draw": 0.5108,
+   "changed": false
+  },
+  {
+   "club": "Buffalo Bills",
+   "coach": "Doug Marrone",
+   "record_wins": 9.0,
+   "cell": "playoffs|1st season",
+   "p_change": 0.0416,
+   "draw": null,
+   "changed": null,
+   "deferred": "2014-coaching-carousel-deferred-v1"
+  },
+  {
+   "club": "Carolina Panthers",
+   "coach": "Ron Rivera",
+   "record_wins": 8.0,
+   "cell": "7-8|2nd-3rd|no recent playoffs",
+   "p_change": 0.0815,
+   "draw": 0.964,
+   "changed": false
+  },
+  {
+   "club": "Chicago Bears",
+   "coach": "Marc Trestman",
+   "record_wins": 7.0,
+   "cell": "7-8|1st season",
+   "p_change": 0.0927,
+   "draw": 0.3755,
+   "changed": false
+  },
+  {
+   "club": "Cincinnati Bengals",
+   "coach": "Marvin Lewis",
+   "record_wins": 5.5,
+   "cell": "5-6|4th+|recent playoffs",
+   "p_change": 0.4727,
+   "draw": 0.2981,
+   "changed": true,
+   "vacancy_opens": "2013-12-30",
+   "hire_day": "2014-01-02",
+   "resolved_by_branch_date": true,
+   "hired_from": "external"
+  },
+  {
+   "club": "Cleveland Browns",
+   "coach": "Rob Chudzinski",
+   "record_wins": 7.0,
+   "cell": "7-8|1st season",
+   "p_change": 0.0927,
+   "draw": 0.3593,
+   "changed": false
+  },
+  {
+   "club": "Dallas Cowboys",
+   "coach": "Jason Garrett",
+   "record_wins": 8.0,
+   "cell": "playoffs|2nd-3rd",
+   "p_change": 0.0254,
+   "draw": 0.3588,
+   "changed": false
+  },
+  {
+   "club": "Denver Broncos",
+   "coach": "John Fox",
+   "record_wins": 7.0,
+   "cell": "7-8|2nd-3rd|recent playoffs",
+   "p_change": 0.1548,
+   "draw": 0.1027,
+   "changed": true,
+   "vacancy_opens": "2013-12-30",
+   "hire_day": "2014-01-02",
+   "resolved_by_branch_date": true,
+   "hired_from": "external"
+  },
+  {
+   "club": "Detroit Lions",
+   "coach": "Jim Schwartz",
+   "record_wins": 7.0,
+   "cell": "7-8|4th+|recent playoffs",
+   "p_change": 0.1101,
+   "draw": 0.1349,
+   "changed": false
+  },
+  {
+   "club": "Green Bay Packers",
+   "coach": "Mike McCarthy",
+   "record_wins": 8.0,
+   "cell": "7-8|4th+|recent playoffs",
+   "p_change": 0.1101,
+   "draw": 0.7388,
+   "changed": false
+  },
+  {
+   "club": "Houston Texans",
+   "coach": "Gary Kubiak",
+   "record_wins": 6.0,
+   "cell": "5-6|4th+|recent playoffs",
+   "p_change": 0.4727,
+   "draw": 0.6701,
+   "changed": false
+  },
+  {
+   "club": "Indianapolis Colts",
+   "coach": "Chuck Pagano",
+   "record_wins": 8.0,
+   "cell": "7-8|2nd-3rd|recent playoffs",
+   "p_change": 0.1548,
+   "draw": 0.0949,
+   "changed": true,
+   "vacancy_opens": "2013-12-30",
+   "hire_day": "2014-01-14",
+   "resolved_by_branch_date": true,
+   "hired_from": "external"
+  },
+  {
+   "club": "Kansas City Chiefs",
+   "coach": "Andy Reid",
+   "record_wins": 9.0,
+   "cell": "playoffs|1st season",
+   "p_change": 0.0416,
+   "draw": 0.3293,
+   "changed": false
+  },
+  {
+   "club": "Miami Dolphins",
+   "coach": "Joe Philbin",
+   "record_wins": 7.0,
+   "cell": "7-8|2nd-3rd|no recent playoffs",
+   "p_change": 0.0815,
+   "draw": 0.3466,
+   "changed": false
+  },
+  {
+   "club": "Minnesota Vikings",
+   "coach": "Leslie Frazier",
+   "record_wins": 13.0,
+   "cell": "playoffs|2nd-3rd",
+   "p_change": 0.0254,
+   "draw": null,
+   "changed": null,
+   "deferred": "2014-coaching-carousel-deferred-v1"
+  },
+  {
+   "club": "New England Patriots",
+   "coach": "Bill Belichick",
+   "record_wins": 8.0,
+   "cell": "7-8|4th+|recent playoffs",
+   "p_change": 0.1101,
+   "draw": 0.1976,
+   "changed": false
+  },
+  {
+   "club": "New Orleans Saints",
+   "coach": "Sean Payton",
+   "record_wins": 10.0,
+   "cell": "playoffs|4th+",
+   "p_change": 0.0746,
+   "draw": 0.8963,
+   "changed": false
+  },
+  {
+   "club": "New York Giants",
+   "coach": "Tom Coughlin",
+   "record_wins": 8.0,
+   "cell": "7-8|4th+|recent playoffs",
+   "p_change": 0.1101,
+   "draw": 0.3557,
+   "changed": false
+  },
+  {
+   "club": "New York Jets",
+   "coach": "Rex Ryan",
+   "record_wins": 12.0,
+   "cell": "playoffs|4th+",
+   "p_change": 0.0746,
+   "draw": 0.5623,
+   "changed": false
+  },
+  {
+   "club": "Oakland Raiders",
+   "coach": "Dennis Allen",
+   "record_wins": 7.0,
+   "cell": "7-8|2nd-3rd|no recent playoffs",
+   "p_change": 0.0815,
+   "draw": 0.687,
+   "changed": false
+  },
+  {
+   "club": "Philadelphia Eagles",
+   "coach": "Chip Kelly",
+   "record_wins": 8.0,
+   "cell": "playoffs|1st season",
+   "p_change": 0.0416,
+   "draw": 0.9355,
+   "changed": false
+  },
+  {
+   "club": "Pittsburgh Steelers",
+   "coach": "Mike Tomlin",
+   "record_wins": 9.0,
+   "cell": "playoffs|4th+",
+   "p_change": 0.0746,
+   "draw": 0.57,
+   "changed": false
+  },
+  {
+   "club": "San Diego Chargers",
+   "coach": "Mike McCoy",
+   "record_wins": 9.0,
+   "cell": "9-10|1st season",
+   "p_change": 0.13,
+   "draw": 0.9958,
+   "changed": false
+  },
+  {
+   "club": "San Francisco 49ers",
+   "coach": "Jim Harbaugh",
+   "record_wins": 2.5,
+   "cell": "0-4|2nd-3rd|recent playoffs",
+   "p_change": 0.6778,
+   "draw": 0.0235,
+   "changed": true,
+   "vacancy_opens": "2013-12-30",
+   "hire_day": "2014-01-05",
+   "resolved_by_branch_date": true,
+   "hired_from": "external"
+  },
+  {
+   "club": "Seattle Seahawks",
+   "coach": "Pete Carroll",
+   "record_wins": 6.0,
+   "cell": "5-6|4th+|recent playoffs",
+   "p_change": 0.4727,
+   "draw": 0.6921,
+   "changed": false
+  },
+  {
+   "club": "St. Louis Rams",
+   "coach": "Jeff Fisher",
+   "record_wins": 11.0,
+   "cell": "playoffs|2nd-3rd",
+   "p_change": 0.0254,
+   "draw": 0.1441,
+   "changed": false
+  },
+  {
+   "club": "Tampa Bay Buccaneers",
+   "coach": "Greg Schiano",
+   "record_wins": 9.0,
+   "cell": "playoffs|2nd-3rd",
+   "p_change": 0.0254,
+   "draw": 0.6588,
+   "changed": false
+  },
+  {
+   "club": "Tennessee Titans",
+   "coach": "Mike Munchak",
+   "record_wins": 10.0,
+   "cell": "playoffs|2nd-3rd",
+   "p_change": 0.0254,
+   "draw": 0.5329,
+   "changed": false
+  },
+  {
+   "club": "Washington Redskins",
+   "coach": "Mike Shanahan",
+   "record_wins": 7.5,
+   "cell": "7-8|4th+|recent playoffs",
+   "p_change": 0.1101,
+   "draw": 0.6632,
+   "changed": false
+  }
+ ],
+ "events": [
+  {
+   "date": "2014-01-06",
+   "club": "Atlanta Falcons",
+   "coach": "Alan Lowry",
+   "job": "head coach",
+   "event": "request",
+   "detail": "probability 0.027"
+  },
+  {
+   "date": "2014-01-06",
+   "club": "Atlanta Falcons",
+   "coach": "Alan Lowry",
+   "job": "head coach",
+   "event": "permission granted",
+   "detail": "inside the January 5-12 window for a Wild Card winner's assistants (rule W5); whether a playoff club could refuse rather than schedule it is Unverified (W11), and Jacksonville's default policy grants it"
+  },
+  {
+   "date": "2014-01-06",
+   "club": "Atlanta Falcons",
+   "coach": "Alan Lowry",
+   "job": "head coach",
+   "event": "interview",
+   "detail": ""
+  },
+  {
+   "date": "2014-01-12",
+   "club": "Atlanta Falcons",
+   "coach": "Alan Lowry",
+   "job": "head coach",
+   "event": "offer",
+   "detail": ""
+  },
+  {
+   "date": "2014-01-12",
+   "club": "Atlanta Falcons",
+   "coach": "Alan Lowry",
+   "job": "head coach",
+   "event": "hired",
+   "detail": "accepted (method stage 5)"
+  },
+  {
+   "date": "2014-01-12",
+   "club": "Atlanta Falcons",
+   "coach": "Frank Bush",
+   "job": "linebackers",
+   "event": "request",
+   "detail": "probability 0.030"
+  },
+  {
+   "date": "2014-01-12",
+   "club": "Atlanta Falcons",
+   "coach": "Frank Bush",
+   "job": "linebackers",
+   "event": "permission refused",
+   "detail": "lateral (rule T3); Jacksonville's default policy refuses a move to the same job elsewhere"
+  },
+  {
+   "date": "2014-01-14",
+   "club": "Indianapolis Colts",
+   "coach": "Frank Bush",
+   "job": "defensive coordinator",
+   "event": "request",
+   "detail": "probability 0.095"
+  },
+  {
+   "date": "2014-01-14",
+   "club": "Indianapolis Colts",
+   "coach": "Frank Bush",
+   "job": "defensive coordinator",
+   "event": "permission granted",
+   "detail": "lateral under the 2013 rules (T3) but a step up in title; Jacksonville's default policy grants it"
+  },
+  {
+   "date": "2014-01-14",
+   "club": "Indianapolis Colts",
+   "coach": "Frank Bush",
+   "job": "defensive coordinator",
+   "event": "interview",
+   "detail": ""
+  }
+ ],
+ "departed": {
+  "Alan Lowry": {
+   "club": "Atlanta Falcons",
+   "job": "head coach",
+   "date": "2014-01-12"
+  }
+ },
+ "pending": []
+}

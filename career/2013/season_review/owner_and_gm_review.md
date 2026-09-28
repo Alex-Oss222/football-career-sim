@@ -74,7 +74,7 @@ Stone opens with the standard he gave Caldwell in his interview a year earlier a
 ### What the club raises
 
 - **Caldwell** asks for the written recommendations before February 17 and says the scoring margin and the quarterback's ball security are the two things he will judge 2014 by first. He will run the contract, tag and trade decisions himself, as agreed.
-- **Khan** asks about the staff. Stone says every coach is under contract through at least 2014 and that no club has asked permission to interview any of them. The record holds no such request. The league's other head-coaching changes after 2013 are not simulated; that gap is open (see Follow-ups).
+- **Khan** asks about the staff. Stone reports that Alan Lowry left on January 12 to become Atlanta's head coach, that Frank Bush interviewed with Indianapolis for its defensive coordinator job on January 14 and is waiting on the Colts' decision, and that the other ten assistants are under contract through at least 2014 with no request made. The special teams coordinator job is open. *(Corrected September 28, 2026 by Entry 4 below: this line first said no club had asked, because the league's coaching changes had not yet been resolved.)*
 - Neither raises the contract. Nothing about an extension, a raise or a change of authority is offered or asked.
 
 ## Entry 3: The club's decision
@@ -101,4 +101,13 @@ Stone's own standard asked for a functioning program and a candid quarterback ev
 - **Caldwell's deadline:** Stone's written recommendations before the February 17 tag window. They were delivered as `career/2014/offseason/stone_to_caldwell_2014_offseason_decisions.md`, dated February 2, 2014.
 - **Caldwell's first 2014 measures:** the scoring margin, and the quarterback's ball security and protection.
 - **Khan's request:** prepare the London week for Dallas (November 9, 2014, Wembley) on the 2013 Wembley plan.
-- **Open gap:** the league's post-2013 head-coaching changes (other clubs firing and hiring coaches) are not simulated. Until they are, no club's interest in a Jacksonville assistant can arise. This is recorded for the user's decision; it is not resolved here.
+- **Closed gap:** the league's post-2013 head-coaching changes were resolved retroactively by ledger Entry 75 (see Entry 4 below).
+
+## Entry 4: Retroactive correction from the coaching carousel
+
+**Recorded:** September 28, 2026 (ledger Entry 75).
+
+Entry 75 resolved the January 2014 coaching carousel after this meeting was first written. Two of its events fall before January 15: Alan Lowry left on January 12 to become Atlanta's head coach, and Frank Bush interviewed with Indianapolis on January 14 (the Colts' coordinator search could not close before January 16 under the carousel method, so his candidacy was open at the meeting; he was not hired). Stone's staff answer to Khan in Entry 2 is corrected to those facts. Nothing else in the meeting changes.
+
+**The decision is re-checked, not re-made.** The Entry 1 freeze records that the staff completed the 2013 season, which remains true: Lowry left the day after Jacksonville's elimination. Losing a coordinator to another club's head-coach job is not a ground against retaining the head coach under any of the five frozen criteria, for this club or any other (label-swap check). Entry 3 stands: Stone is retained on his existing contract, with no change to his authority. The vacancy is Stone's to fill within Caldwell's staff budget (Document 3, rows 2 and 6).
+

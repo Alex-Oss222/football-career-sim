@@ -2144,3 +2144,47 @@ This archive was appended late. It was written at this February 2, 2014 checkpoi
 **Exit interviews.** Stone's player exit interviews, dated January 13-14, are recorded separately when complete.
 
 **Commit closed - Canonical update - February 2, 2014 - Season review with Khan and Caldwell (Stone retained) - canonical through February 2, 2014**
+
+## Entry 75: January 2014 coaching carousel resolved (retroactive)
+
+**Effective canonical state:** February 2, 2014 (no clock advance). The events are dated December 30, 2013 to February 2, 2014.
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - February 2, 2014 - January 2014 coaching carousel resolved (Lowry to Atlanta)`
+**Preceding global package checkpoint:** `Canonical update - February 2, 2014 - Season review with Khan and Caldwell (Stone retained)`
+
+**Decision.** The user asked for the 2013-14 rules on other clubs interviewing Jacksonville's coordinators and position coaches to be researched and followed, and for the staff's exposure to be weighted and resolved without the user forcing each case. This closes the open gap recorded in Entry 74.
+
+**Rules.** `library/2014_coaching_hiring_and_anti_tampering_rules.md`: two research passes, a calibration pass from the January 2013 cycle and a skeptical verification pass. Section 8 is enforced as written:
+- only a head-coach job is a promotion;
+- a head-coach interview cannot be refused once the employer's season is over;
+- a Wild Card winner's assistants may be interviewed for head-coach jobs only from the evening of January 5 to January 12, 2014;
+- every other request is lateral, waits for the employer's elimination and may be refused;
+- no hire before the employer's elimination.
+Whether a playoff club could refuse an in-window head-coach interview is Unverified (W11); the method sets a default policy there instead of a rule.
+
+**Method.** `career/2014/offseason/staff_changes/carousel_method.json` and `scripts/coaching_carousel.py`, committed and pushed (35f1276) before the draw, with `tests/test_coaching_carousel.py`.
+- **Head-coach changes:** each club's chance comes from real 2002-2012 club-seasons by wins, tenure and recent playoffs (`library/data/2012_hc_change_base_rates.json`), applied to the branch 2013 record. Hire days follow the January 2013 cycle.
+- **Requests:** weighted by role, play-calling, club and unit rank for head-coach jobs, and by prior coordinator experience and room for coordinator jobs. Factors are normalized so they move interest without raising the league total.
+- **Permission:** Jacksonville's default policy, set for the user and applied alike to any club, grants head-coach interviews and position-to-coordinator moves and refuses lateral moves.
+- **Offers:** calibrated to the January 2013 cycle, in which sitting coordinators were 72.5 percent of named candidates and half of the hires.
+The adversarial review of the method before the draw confirmed and fixed thirteen findings, among them double hires into one job, the hire date of a club that hires a Jacksonville coach, pending candidacies and the base-rate window.
+
+**Draw.** One private packet (`coaching-carousel-2014-v1`, event `2014-coaching-carousel-v1`) committing the method, script, base-rate and input digests; result reference and digests in `carousel_results.json`. Rendered at `requests_and_outcomes.md`. The rendering fix to the page's table after the draw changed no draw; `code_sha256` in the results matches the script at 35f1276.
+
+**Result.**
+- **Head-coach changes by February 2 (five):** Atlanta (Mike Smith; 8-8; hired Alan Lowry, January 12), Cincinnati (Marvin Lewis; 5-10-1; external hire January 2), Denver (John Fox; 7-9; external hire January 2), Indianapolis (Chuck Pagano; 8-8; external hire January 14) and San Francisco (Jim Harbaugh; 2-13-1; external hire January 5). Every other club kept its coach. External hires are not named: the branch has no league-wide staff register.
+- **Deferred:** Buffalo and Minnesota played Super Bowl XLVIII on February 2; their decisions are resolved by `2014-coaching-carousel-deferred-v1` when the clock passes that date.
+- **Alan Lowry (special teams coordinator):** Atlanta asked on January 6, inside the Wild Card winners' window. The interview was granted under the default policy and held. Atlanta offered him the head-coach job on January 12, the first day a hire was allowed, and he accepted. **He leaves Jacksonville.**
+- **Frank Bush (linebackers):** Atlanta's January 12 request for its linebackers job was refused (lateral). Indianapolis asked on January 14 for its defensive coordinator job; the request was granted (a step up in title) and he interviewed. He was not hired, and he stays.
+- **The other ten assistants:** no request.
+
+**State.**
+- `career/2013/coaching_staff.md`: Lowry's departure and the vacancy. His 2014 salary ($625,000) is no longer scheduled; the eleven remaining coaches are scheduled at $6,950,000 for 2014 before any replacement.
+- Document 4 (`JAX-2014-FEB02-COACHING-CAROUSEL-REGISTER-35`) and Document 5 (`JAX-2014-FEB02-COACHING-CAROUSEL-STATE-51`): the special teams coordinator job is vacant. Direction of the kicking game returns to Stone until a replacement is hired, as Document 3's special-teams rows provide for a material departure. Document 3 itself still names Lowry in its authority map; it is a foundation file and is not edited here (flagged for the user).
+- `career/2013/season_review/owner_and_gm_review.md`: Entry 2's staff answer is corrected and Entry 4 appended, because the retroactive carousel places Lowry's departure and Bush's interview before the January 15 meeting. The retention decision is re-checked against the frozen criteria and stands.
+- `career/2014/offseason/staff_changes/`: README, staff plan status and budget line; the first-pass interest assessment is kept as the ex-ante record.
+- No player, roster, cap, calendar or draft-capital change.
+
+**Label-swap check.** Every probability reads only the job, the coach's role and record, the clubs' branch records and the calendar. The permission policy applies alike to any asking club.
+
+**Commit closed - Canonical update - February 2, 2014 - January 2014 coaching carousel resolved (Lowry to Atlanta) - canonical through February 2, 2014**
