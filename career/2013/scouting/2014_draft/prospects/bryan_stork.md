@@ -57,3 +57,15 @@ Reserve center remains the first professional role to investigate. Compare the c
 Paradis's newly verified banquet release makes the center comparison better documented on both sides. The useful distinction remains the completeness of the center job, particularly whether a late identification adjustment can coexist with a reliable snap and the first block. An award cannot reveal the division of calls between center, quarterback and sideline.
 
 Compare Stork, Paradis and Swanson on that connected sequence before arguing for a different purchase price. Brewster and Meester retain their current branch roles. **Tier:** Not yet graded. **Decision trigger:** Stable communication and sufficient independent protection under changed fronts. No succession date or exact draft-window availability is established.
+
+### Week 17 addendum: evidence through December 29, 2013
+
+**Evidence and branch-context cutoff:** December 29, 2013, after Week 17 and the postseason bracket close. Prepared September 28, 2026. This is public-source research and proposed review work, not a completed staff evaluation. See the [Week 17 guide](../week17_scouting_update.md) and [verification register](../sources_week17_2013_12_29.md).
+
+**Evidence carried forward:** The December national center recognition remains part of the earlier log. No new game-specific technical finding is established here, and no post-cutoff championship performance or later season total is admitted.
+
+**Center comparison:** Paradis's bowl participation gives that file another game to inspect. It does not establish superior communication or diminish Stork's case. Apply the same sequence to both: identification, any adjustment, snap, first contact and recovery. Mark uncertainty about the actual call and who controlled it instead of treating a visible gesture as proof of center authority.
+
+**Price and role:** An earlier center investment needs evidence that it buys a more complete or earlier usable job than the later development plan. Recognition alone cannot establish that difference. Compare independent protection with assisted work, and keep the emergency-entry requirement visible: the snap and communication must remain reliable together under a changed front.
+
+**Tier:** Not yet graded. **Decision trigger:** Stable execution of the connected center job without recurring repairs by the quarterback or guards. Brewster and Meester retain their current positions; this research does not establish a succession date or promise Stork's availability at any pick.

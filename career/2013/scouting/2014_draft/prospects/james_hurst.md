@@ -59,3 +59,17 @@ Hurst also remains a useful comparison against paying earlier for Bitonio or Mar
 Leno remains the direct reserve comparison. For either player, distinguish a college left-tackle foundation from a verified ability to enter on the right without rearranging the line. The cost of moving another player is part of the reserve decision.
 
 Use the response after a lost first exchange as the next comparison: can the tackle regain position without giving up the inside lane, and can he pass off a movement with the guard? This is a proposed review, not a charted finding. **Tier:** Not yet graded. **Decision trigger:** A dependable emergency package and separate evidence for every side included in the roster claim. No later medical event is imported into this December 22 report.
+
+### Week 17 addendum: evidence through December 29, 2013
+
+**Evidence and branch-context cutoff:** December 29, 2013, after Week 17 and the postseason bracket close. Prepared September 28, 2026. This is public-source research and proposed review work, not a completed staff evaluation. See the [Week 17 guide](../week17_scouting_update.md) and [verification register](../sources_week17_2013_12_29.md).
+
+**New medical evidence:** North Carolina's December 29 postgame notes report that Hurst suffered a non-displaced fracture of the left fibula during the first half of the December 28 Belk Bowl. The school's separate recap repeats the announcement. Both originate with the school; they are not independent medical examinations. The December 29 publication is now admissible; it was correctly excluded from the earlier December 22 entry. [T09, T10](../sources_week17_2013_12_29.md).
+
+**What changes now:** Add a medical-information requirement before making a current readiness or participation assumption. Preserve the pre-injury tackle evidence as evidence of that earlier football. Do not convert the injury into a lower technique grade, an exact draft slide, a treatment plan or a recovery timetable. The cited releases do not establish clearance for training, testing or contact.
+
+**Reserve-role comparison:** Leno now has a separate bowl sample to study; that is not proof that he is the safer or better reserve. Compare the football foundations independently, then identify the availability uncertainty attached to Hurst. If a future acquisition requires protected development time, Caldwell needs verified information before pricing that roster arrangement. An assumed full recovery cannot be used to remove the question, and an assumed long absence cannot be used to reject the player.
+
+**Remaining football work:** A college left-tackle record still does not establish emergency right-tackle protection. Keep stance, first contact, inside-counter recovery and exchanges separate for each side. Any later physical evaluation must follow actual permission and medical guidance; no Jacksonville session or staff medical conclusion is invented here.
+
+**Tier:** Not yet graded. **Decision trigger:** Dated medical follow-up that establishes what can be evaluated, followed by evidence for the proposed emergency job. The earlier Week 16 entry remains correct for its December 22 cutoff.

@@ -59,3 +59,15 @@ The teams study remains separate: blocked-kick background is relevant, but no ne
 Jones's clarified position history helps define the strong-side comparison. Keep base contact and coverage work visible before adding pressure value. A player who can contribute to a designed rush still needs a repeatable answer when the offense runs at his assignment or releases a receiver through it.
 
 The proposed first purchase remains SAM with a limited pressure complement, subject to evidence. It is different from the WILL study for Telvin Smith. **Tier:** Not yet graded. **Decision trigger:** A reliable base job and a complementary skill that can be installed without obscuring the original responsibility. No future bowl or all-star result is assumed.
+
+### Week 17 addendum: evidence through December 29, 2013
+
+**Evidence and branch-context cutoff:** December 29, 2013, after Week 17 and the postseason bracket close. Prepared September 28, 2026. This is public-source research and proposed review work, not a completed staff evaluation. See the [Week 17 guide](../week17_scouting_update.md) and [verification register](../sources_week17_2013_12_29.md).
+
+**New evidence:** Washington's December 27 game record and BYU's bowl recap agree on seven tackles and 1.5 tackles for loss. The recap identifies Van Noy's fourth-down tackle for a nine-yard loss near his own goal line. This is a specific negative-yardage finish, not a recorded sack or proof of an independent win against an offensive tackle. The recap's URL and display dates differ; this packet conservatively places that recap at December 28. [T05, T06](../sources_week17_2013_12_29.md).
+
+**How to use the play:** Retrieve the full sequence and establish the alignment, intended fit and blocking before assigning the cause. The result makes the snap useful to study, but cannot distinguish block defeat from an unblocked path or another defender creating the opportunity. Review ordinary base snaps alongside it so a single finish does not define the role.
+
+**SAM and complement:** Compare strong-side contact, force responsibility and coverage with Jones first. Add selective pressure only where its evidence supports a separate contribution. Telvin Smith's WILL study remains a different purchase, and neither college versatility nor this tackle total establishes a replacement for Jacksonville's communication lead.
+
+**Best objection:** An early hybrid investment can fail if the complementary skill receives more attention than the base job that must earn snaps. The teams pathway also needs its own evidence. **Tier:** Not yet graded. **Decision trigger:** A dependable strong-side assignment plus a supported complement that can be taught without obscuring the original responsibility.

@@ -112,3 +112,17 @@ Reid remains a research alternative for a developmental interior role. The disti
 **Week 16 decision:** Retain the hold. Jacksonville's improved standings do not justify relaxing the evidence requirement or making a personal judgment from missing information.
 
 **Tier:** Not yet graded. **Decision trigger:** Dated eligibility and current-status verification. Football alignment and development-cost conclusions remain deferred until that prerequisite is satisfied. No future professional account is used to supply the missing clearance.
+
+### Week 17 addendum: evidence through December 29, 2013
+
+**Evidence and branch-context cutoff:** December 29, 2013, after Week 17 and the postseason bracket close. Prepared September 28, 2026. This is public-source research and proposed review work, not a completed staff evaluation. See the [Week 17 guide](../week17_scouting_update.md) and [verification register](../sources_week17_2013_12_29.md).
+
+**Status remains unresolved:** No dated eligibility or current-status resolution is established by this pass. The historical college evidence remains available, but it does not establish present conditioning, a lawful current football evaluation or selection clearance. There is no new interview, reference call or personal explanation to report.
+
+**The order of work matters:** First obtain the dated status determination. Then identify what current evaluation is permitted and what medical information is needed. Only after those prerequisites can Pleasant and Crennel address an initial football alignment. The Phase IV restriction remains intact: no first-practice alignment and no completed coach football conclusion are assigned here.
+
+**Sixth-round comparison:** Paradis's bowl participation adds to the center's documented season, while Harris's missing current sample remains missing. That changes the amount of evidence available, not the players' relative ability. Caldwell cannot commit the same sixth-round selection to both. If the defensive-line route remains unresolved, the decision must use a cleared alternative or a different position, without inventing another pick or an assured undrafted signing.
+
+**Role cost once cleared:** Ask for one actual defensive job, its run responsibility and its pass-rush contribution before attaching a broad versatility label. Reid is a useful interior-development comparison because the same questions can be posed to his file. A richer record for Reid would still require review of block quality, ordinary downs and lane integrity before a talent judgment.
+
+**Best objection:** An appealing historical play cannot price several unresolved prerequisites. Equally, missing evidence cannot justify a character verdict or an invented physical decline. **Tier:** Not yet graded; acquisition hold retained. **Decision-changing evidence:** A dated resolution of eligibility and current status, followed by an appropriate present evaluation. No alignment or development timetable is promised while that sequence is incomplete.

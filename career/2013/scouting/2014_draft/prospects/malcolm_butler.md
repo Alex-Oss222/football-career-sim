@@ -116,3 +116,17 @@ This changes the evidence base from prior-year production and recognition to a d
 **Week 16 roster implication:** Jacksonville continues with Grimes and Mike Harris outside, Poyer at nickel and Bouye as the first outside reserve. The future Butler comparison with Cockrell and Fuller remains a role-and-development decision, independent of the result against Tennessee. Fuller's medical question stays separate from the coverage comparison.
 
 **Tier:** Not yet graded. **Decision trigger:** Full coverage situations with technique and help identified, plus a separately supported teams contribution. No undated postseason award or later workout is admitted simply because it appears in a college biography.
+
+### Week 17 addendum: evidence through December 29, 2013
+
+**Evidence and branch-context cutoff:** December 29, 2013, after Week 17 and the postseason bracket close. Prepared September 28, 2026. This is public-source research and proposed review work, not a completed staff evaluation. See the [Week 17 guide](../week17_scouting_update.md) and [verification register](../sources_week17_2013_12_29.md).
+
+**Evidence carried forward:** This pass establishes no additional dated technical finding beyond the previously verified conference statistics and regional recognition. The absence of a new bowl sample in this packet says nothing by itself about Butler's ability. Later biographies, workouts and professional events are not used to fill that gap.
+
+**Outside-corner review:** Request full sequences from the receiver's release through the finish, including plays on which the ball goes elsewhere if the coverage can still be identified. Record leverage, available help and the route combination before interpreting a breakup or completion. An outcome total cannot show whether Butler was in phase throughout the route, recovered late or benefited from an inaccurate throw. Keep responsibility uncertain when the call cannot be established.
+
+**Contact and teams:** For run support, separate arriving near the ball from preserving the assigned force relationship and finishing through contact. For special teams, select a specific job to investigate only when actual evidence supports it. Return experience does not establish gunner releases or coverage-lane discipline. Lowry's question remains open rather than becoming an assumed reason he can dress.
+
+**Pick comparison:** Cockrell remains the outside-technique comparison, with Fuller carrying a separate unresolved medical question. A more prominent college schedule does not automatically settle the technical comparison, and Butler's late focus does not guarantee availability or low teaching cost. If the seventh-round opportunity is absent, neither a trade nor an undrafted agreement is implied.
+
+**Jacksonville pathway:** The current outside, nickel and reserve assignments still need to be respected. A developmental outside corner must offer a defensible emergency role or earn another contribution that justifies game-day use; future roster turnover is not assumed. **Tier:** Not yet graded. **Question still OPEN:** Is the coverage foundation repeatable across route types, and is there separately documented work that makes the developmental roster place useful before a starting opportunity exists?

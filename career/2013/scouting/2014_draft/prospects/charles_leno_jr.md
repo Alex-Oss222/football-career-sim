@@ -108,3 +108,17 @@ The next comparison with Hurst should emphasize the response to a lost first exc
 **Comparison and teaching:** Hurst remains the direct reserve comparison; Bitonio and Martin test the value of paying earlier for a broader role. Start Leno on one side and add the second only after its separate protection evidence supports it. None of the new evidence establishes an exact fifth-round market price.
 
 **Tier:** Not yet graded. **Week 16 decision:** Continue the tackle development study, with the ability to dress still OPEN. **Decision trigger:** A defined emergency role that survives changed fronts and does not require constant protection help.
+
+### Week 17 addendum: evidence through December 29, 2013
+
+**Evidence and branch-context cutoff:** December 29, 2013, after Week 17 and the postseason bracket close. Prepared September 28, 2026. This is public-source research and proposed review work, not a completed staff evaluation. See the [Week 17 guide](../week17_scouting_update.md) and [verification register](../sources_week17_2013_12_29.md).
+
+**New evidence:** The December 24 Oregon State game book identifies Leno as Boise State's starting left tackle. Its play-by-play charges him with holding on the first play of the second-quarter possession beginning at 2:48. That is a specific recorded penalty, not a diagnosis of its mechanism or a season-wide discipline pattern. The same book records five sacks against Boise State; it does not assign those sacks to individual blockers. [T01, T02](../sources_week17_2013_12_29.md).
+
+**What to inspect:** The named holding play is a useful retrieval point. Identify the defender, initial leverage, hand location and recovery before deciding whether the problem was a late set, lost contact or another cause. Then include successful and unsuccessful protections from other possessions. A penalty-only sample would overstate the error; an award-only sample would conceal it. Neither the team yardage nor the loss establishes Leno's individual performance.
+
+**Protection responsibility:** Chart the five sack plays without presuming five tackle losses. Record the apparent protection, help, rush path and quarterback timing. When the assignment cannot be established, leave responsibility unresolved. Test the inside counter and guard-tackle exchange separately from pure edge speed. The existing left-side foundation still does not certify the opposite stance or an emergency right-tackle package.
+
+**Reserve comparison:** Hurst's newly reported injury requires a separate availability question in that comparison. It does not improve Leno's technique or guarantee a fifth-round opportunity. Keep the football and medical files distinct, then compare the roster arrangements each acquisition would require. [T09, T10](../sources_week17_2013_12_29.md).
+
+**Teaching and decision:** Continue one-side development first, with a separately evidenced second-side trial if swing duty is claimed. Bradfield's current function remains the practical reserve benchmark. **Tier:** Not yet graded. **Question still OPEN:** Is there a complete emergency protection job that avoids constant help and avoids moving multiple other linemen after one substitution?

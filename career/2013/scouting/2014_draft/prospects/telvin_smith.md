@@ -114,3 +114,17 @@ At the Week 15 branch checkpoint, Russell Allen is already starting beside Daryl
 The Duke game remains the newest directly checked game-specific evidence in this packet. No extra tackles, coverage success rate or practice response is invented for the intervening days. Lowry's teams pathway stays OPEN, with lane discipline and finishing evidence still needed separately.
 
 **Tier:** Not yet graded. **Decision trigger:** Correct fits and back-match responsibility across ordinary and unsuccessful plays, followed by an independently supported coverage-unit job. The initial WILL proposal is research analysis, not a completed coach read.
+
+### Week 17 addendum: evidence through December 29, 2013
+
+**Evidence and branch-context cutoff:** December 29, 2013, after Week 17 and the postseason bracket close. Prepared September 28, 2026. This is public-source research and proposed review work, not a completed staff evaluation. See the [Week 17 guide](../week17_scouting_update.md) and [verification register](../sources_week17_2013_12_29.md).
+
+**Evidence carried forward:** No additional game-specific finding is admitted in this pass. Preserve the dated distinction between the August weak-side listing and the December championship-game middle-linebacker label. Neither establishes every snap's job, and neither closes the WILL question in Crennel's defense. The corrected second-team media All-ACC record remains unchanged.
+
+**Updated comparison:** Van Noy's bowl record provides another strong-side comparison sample, but his documented negative-yardage play cannot answer Smith's weak-side coverage and fit questions. Jones remains the other SAM study. The useful purchasing question is which actual assignment Jacksonville needs the prospect to execute, followed by the cost of any complement. Counting tackles across different roles would obscure that distinction. [T05, T06](../sources_week17_2013_12_29.md).
+
+**WILL review:** For the weak A-gap fit, identify the initial key, the back's path and the point at which the linebacker commits. If the play changes direction, distinguish disciplined pursuit from a late recovery after losing the original responsibility. In back-match work, separate recognizing the release from staying in useful leverage through the route. A fast finish cannot by itself establish that either earlier decision was correct.
+
+**Teaching and dressing:** Build one base fit and its coverage relationship before adding communication leadership or extra pressure work. Jacksonville's current pairing and Daryl Smith's communication role are not transferred to a prospect by a college MIKE label. Lowry still needs a specific coverage-unit study: release, lane, response to the return and finish. The report does not create a teams role from size, speed or willingness attributed without evidence.
+
+**Best objection:** The fourth-round plan fails if it purchases pursuit ability without a repeatable assignment and an earned game-day contribution. The positive case needs the ordinary correct play as well as the visible finish. **Tier:** Not yet graded. **Question still OPEN:** Can the WILL responsibilities survive misdirection and contact without requiring a reduced call menu?

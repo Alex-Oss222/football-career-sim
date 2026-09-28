@@ -57,3 +57,15 @@ Against Turner, the useful distinction remains existing positional history and a
 The comparison with Turner still requires a cleared acquisition route and a usable first job. Jackson and Richardson have updated national recognition, but the specific issue for Thomas is the cost of moving inside: shorter reaction space, first-contact timing and exchanges with the center and tackle.
 
 Retain a separate edge study if emergency tackle work is part of the proposed purchase. A single versatility label cannot close both evaluations. **Tier:** Not yet graded. **Decision trigger:** A functional guard foundation with independently supported tackle cover if claimed. No subsequent injury, workout or draft event is used to decide the projection.
+
+### Week 17 addendum: evidence through December 29, 2013
+
+**Evidence and branch-context cutoff:** December 29, 2013, after Week 17 and the postseason bracket close. Prepared September 28, 2026. This is public-source research and proposed review work, not a completed staff evaluation. See the [Week 17 guide](../week17_scouting_update.md) and [verification register](../sources_week17_2013_12_29.md).
+
+**Evidence carried forward:** This packet adds no new technical conclusion and admits no later bowl, workout or medical event. The guard-first proposal remains a hypothesis based on the earlier dated record, with emergency tackle cover evaluated separately.
+
+**Alternative guard pathway:** Turner's conditional status keeps Thomas relevant to the alternatives, but does not complete his conversion. At guard, the defender arrives sooner and the center/tackle relationships change. Review whether first contact and recovery remain functional in that reduced space, then inspect exchanges and combinations. A college tackle award cannot establish those interior outcomes.
+
+**Reserve claim:** If the proposed value includes tackle cover, identify the actual side and protection package. Hurst's medical news creates a separate availability question elsewhere in the comparison; it does not certify Thomas for an edge job. Avoid counting one player's uncertainty as another player's demonstrated skill.
+
+**Tier:** Not yet graded. **Decision trigger:** A supported guard foundation, with any additional tackle role proven on its own terms. Teaching two positions has a cost, and no completed cross-training or third-round availability is established by this report.

@@ -108,3 +108,17 @@ The new companion evidence file flags conflicting career-start totals. Retain th
 **Week 16 decision:** Keep the early offensive-line comparison active. Jacksonville's win and improved record change its acquisition setting, not Bitonio's technique. The report supports a more current price conversation, while the formal tackle-versus-guard coaching answer remains OPEN.
 
 **Tier:** Not yet graded. **Next evidence that changes the view:** Independent edge protection after the initial rush changes direction, paired with interior evidence if guard is part of the purchase. No January practice observation is admitted.
+
+### Week 17 addendum: evidence through December 29, 2013
+
+**Evidence and branch-context cutoff:** December 29, 2013, after Week 17 and the postseason bracket close. Prepared September 28, 2026. This is public-source research and proposed review work, not a completed staff evaluation. See the [Week 17 guide](../week17_scouting_update.md) and [verification register](../sources_week17_2013_12_29.md).
+
+**Individual evidence:** No additional dated individual finding is established in this pass. Carry the December 12 market comment forward as attributed opinion, with the existing career-start discrepancy still unresolved. A new week supplies no automatic improvement in technique or draft value.
+
+**Updated comparison:** Martin's Pinstripe Bowl recognition adds a concrete event to the early tackle comparison. It does not establish that Martin is the better professional tackle, or that Bitonio should be recast as a guard. Read their complete protection work against the same questions: where the set takes them, what happens at first contact, how they answer the counter and whether help changes the result. Different opponents and protection structures prevent a simple comparison of team sack totals. [T07, T08](../sources_week17_2013_12_29.md).
+
+**First-round decision:** Caldwell needs a role-specific recommendation. If the tackle projection survives review, explain which edge could be trusted first and which protections need further work. If the strongest case is at guard, compare that purchase directly with Jackson and Richardson and include the interior teaching burden. Do not describe an untested conversion as insurance that automatically protects an early investment.
+
+**The cost of waiting:** Jacksonville has no second-round selection. A preference for a later price therefore needs a complete alternative if Bitonio is gone before the next owned pick. The available evidence does not establish his exact market boundary, and Martin is not a guaranteed fallback. A proposed trade needs an actual offer and Caldwell's decision; the report cannot create draft capital to solve the gap.
+
+**Review priority:** Tice and Yarno should receive paired examples of independent edge protection and interior work if that role is claimed, with assistance and assignment uncertainty marked. This is a proposed packet, not a claim that either coach watched it. **Tier:** Not yet graded. **Question still OPEN:** Does the first usable job justify the first-round resource without borrowing value from a position he has not demonstrated?

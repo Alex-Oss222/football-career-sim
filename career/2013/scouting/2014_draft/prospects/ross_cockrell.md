@@ -59,3 +59,15 @@ Butler's newly dated season statistics improve the comparison's evidence base. T
 Butler's newly checked regional recognition is useful background for the comparison, while the technical questions remain concrete: initial leverage, response to the route break, recovery, tackling and a distinct teams contribution. Comparing conference reputations alone would leave those jobs unanswered.
 
 Jacksonville's current outside and nickel roles do not create an automatic late-round opening. A developmental corner needs a defensible first assignment and a path to dressing. **Tier:** Not yet graded. **Decision trigger:** Repeatable outside technique plus a separately evidenced teams job. Fuller stays in the coverage comparison with his medical question recorded independently; no seventh-round fallback is guaranteed.
+
+### Week 17 addendum: evidence through December 29, 2013
+
+**Evidence and branch-context cutoff:** December 29, 2013, after Week 17 and the postseason bracket close. Prepared September 28, 2026. This is public-source research and proposed review work, not a completed staff evaluation. See the [Week 17 guide](../week17_scouting_update.md) and [verification register](../sources_week17_2013_12_29.md).
+
+**Evidence carried forward:** No new game-specific technical finding is established by this pass. The earlier dated recognition remains available; no December 31 bowl result, later full-season total or future workout enters this December 29 packet.
+
+**Comparison with Butler:** Use matched questions rather than conference labels: release leverage, route-stem response, recovery, catch-point work and run support. A target outcome without the route and help does not identify whether the corner executed the assignment. Include ordinary coverage and unattractive plays so the study is not limited to highlights.
+
+**Active-roster pathway:** A reserve outside corner needs a credible emergency assignment and, where claimed, a separately evidenced teams role. Position and tackle totals cannot establish coverage-lane discipline. Fuller's unresolved medical question belongs in its own column; it does not make Cockrell more technically ready or guarantee that a later acquisition is available.
+
+**Tier:** Not yet graded. **Decision trigger:** Repeatable outside technique with an actual route to useful game-day work. Jacksonville's current corner roles remain in place, and neither a seventh-round fallback nor an undrafted agreement is assumed.

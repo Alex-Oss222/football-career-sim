@@ -112,3 +112,17 @@ The communication burden cannot be answered from an award list. Tice and Yarno w
 **Week 16 decision:** Maintain a conditional guard study and an independent alternative list. Do not reserve Jacksonville's third-round choice for a player whose pool status remains unresolved. There is no instruction to select, trade or replace Rackley.
 
 **Tier:** Not yet graded. **Decision trigger:** Dated pool clearance, then evidence that the protection and movement jobs coexist without excessive adjacent help.
+
+### Week 17 addendum: evidence through December 29, 2013
+
+**Evidence and branch-context cutoff:** December 29, 2013, after Week 17 and the postseason bracket close. Prepared September 28, 2026. This is public-source research and proposed review work, not a completed staff evaluation. See the [Week 17 guide](../week17_scouting_update.md) and [verification register](../sources_week17_2013_12_29.md).
+
+**Eligibility and evidence:** This pass establishes no declaration usable by December 29. Turner remains a conditional right-guard study, outside the cleared selection pool. No later declaration, bowl performance or professional outcome supplies an earlier answer. The prior dated identity, guard experience and conference recognition remain the evidentiary foundation.
+
+**Decision discipline:** Keep two independent files ready: the football case if eligibility is established, and the alternatives if it is not. The third-round focus is a research priority, not a reservation. Thomas requires a separate conversion assessment; Jackson and Richardson require a defensible acquisition price and a complete guard evaluation. None is assumed to survive to Jacksonville's selection.
+
+**Football review to request:** In HALF, distinguish a physical loss after the correct exchange from an unhandled movement caused by a late or mistaken handoff. In SOLID, identify the help actually available before crediting the guard with an isolated win. On Power and Counter, record whether the pull or down block arrives with useful leverage and remains connected through the runner's decision. These are questions for lawful, dated footage; no protection call is inferred with certainty from the result alone.
+
+**Teaching cost:** Start with one stance, the first contact and recovery in the right-guard job. Add ACE combinations and the relationship with the tackle after the basic responsibility is understood. A failed exchange could reflect language, timing, assignment recognition or physical execution; it needs a specific correction and a later retest before being called a learning problem. Neither good college production nor class year measures correction retention.
+
+**Acquisition boundary:** A verified declaration would open the acquisition discussion, not settle the grade. Until then, keep the alternative guard study moving without replacing Rackley or promising Turner a roster place. **Tier:** Not yet graded. **Decision-changing evidence:** Dated pool clearance followed by protection and movement evidence that supports the same initial job.

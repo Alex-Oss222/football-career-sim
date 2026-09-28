@@ -116,3 +116,17 @@ For the next permitted viewing opportunity, identify the front before and after 
 **Comparison update:** Stork's additional national recognition makes the center comparison more current, while Swanson's prior record remains available. It does not establish their relative price or show that an earlier selection buys better communication. Brewster remains the starter and Meester the reserve in Jacksonville. [N07–N08](../sources_week16_2013_12_22.md).
 
 **Tier:** Not yet graded. **Week 16 decision:** Continue a center-first developmental study. **Decision trigger:** A complete snap/point/block sequence under a changed front, with enough isolated protection to avoid routine repair by the quarterback or adjacent guard. The same sixth-round pick cannot also be committed to Harris.
+
+### Week 17 addendum: evidence through December 29, 2013
+
+**Evidence and branch-context cutoff:** December 29, 2013, after Week 17 and the postseason bracket close. Prepared September 28, 2026. This is public-source research and proposed review work, not a completed staff evaluation. See the [Week 17 guide](../week17_scouting_update.md) and [verification register](../sources_week17_2013_12_29.md).
+
+**New evidence:** The December 24 game book lists Paradis as Boise State's starting center against Oregon State. That verifies bowl participation at his established position. The book and the school's recap establish the game context, but neither supplies an individual communication chart or identifies who controlled each protection adjustment. [T01, T02](../sources_week17_2013_12_29.md).
+
+**What the new sample can answer:** Begin with the center's complete sequence: pre-snap front, any movement, visible communication, snap and first contact. Distinguish an apparent protection adjustment from a call whose actual content is unknown. A successful pass is not proof that the center made the right point; a sack is not proof that he made the wrong one. Do not assign the team's recorded protection failures to Paradis without reviewing the responsibility.
+
+**Independent contact:** Compare plays on which he receives combination help with plays demanding a solo answer after the snap. On ACE, ask whether the pair secures the first-level defender before the release and whether Paradis remains functional when that help leaves. In protection, observe the response when the defender changes direction after first contact. The resulting question is whether Cousins and the adjacent guards would need recurring repairs to keep the call usable.
+
+**Teaching and roster pathway:** A reserve center needs the snap, point and block to coexist when he enters unexpectedly. Rehearsed calls without a credible changed-front response would leave the emergency role incomplete. Tice, Yarno and Bates have distinct parts of that proposed review; no completed joint session is reported. Brewster and Meester retain their branch roles.
+
+**Comparison and cost:** Stork and Swanson should face the same connected evaluation before an earlier center purchase is preferred. A fresh bowl sample gives Paradis material to examine, not an automatic advantage. The single sixth-round resource remains shared with the Harris focus. **Tier:** Not yet graded. **Question still OPEN:** Can he execute a reliable center job under change without reducing the protection menu to accommodate him?

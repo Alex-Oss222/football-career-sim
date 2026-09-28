@@ -57,3 +57,15 @@ The early-investment case still has to support both acquisition cost and a usabl
 Outside corner remains the first-role study. Continue to assess leverage, route response and tackling from the admitted record while leaving participation and current medical information unresolved. Good coverage evidence would not remove the medical question, just as clearance would not answer a technique question.
 
 Compare the acquisition cost with Cockrell and Butler only after identifying the initial role and the evidence available for it. **Tier:** Not yet graded. **Decision trigger:** Dated participation or medical information, followed by complete coverage evidence. No future bowl participation, all-star participation or workout result enters this report.
+
+### Week 17 addendum: evidence through December 29, 2013
+
+**Evidence and branch-context cutoff:** December 29, 2013, after Week 17 and the postseason bracket close. Prepared September 28, 2026. This is public-source research and proposed review work, not a completed staff evaluation. See the [Week 17 guide](../week17_scouting_update.md) and [verification register](../sources_week17_2013_12_29.md).
+
+**Medical gate retained:** This pass establishes no new dated clearance usable by December 29. The previously sourced surgery information remains separate from his coverage record. A suggestion that he might participate, a projected recovery interval or a later bowl account is not a clearance event.
+
+**Source-date caution:** A Virginia Tech press-conference article surfaced with a December 29 display but a December 30 URL and a description placing the game less than a day away. Its timing is not secure for this cutoff, so it is excluded. The source register records the conflict; this report does not use it to declare Fuller available or unavailable.
+
+**Coverage work that can continue:** Compare the admitted outside-corner sequences with Butler and Cockrell on release leverage, route response, recovery and tackling. Medical uncertainty does not supply a technique grade, and attractive technique does not establish present participation capacity. Keep both questions visible when considering an earlier expenditure.
+
+**Tier:** Not yet graded. **Decision trigger:** A dated medical or participation update, then complete football evidence for the proposed first role. No bowl participation, all-star availability or future recovery outcome is assumed, and no exact draft discount is invented.
