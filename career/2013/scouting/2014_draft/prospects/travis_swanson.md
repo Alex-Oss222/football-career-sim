@@ -1,0 +1,41 @@
+# Travis Swanson, C
+
+**College and status:** Arkansas; senior center in dated 2013 preseason evaluations and the October game notes at Alabama. Formal pool verification remains required before any selection decision. [S42](../sources_2013_12_01.md).
+**Focus round:** Class-wide center comparison; availability at Jacksonville's sixth-round focus is unverified.
+**Suggested reviewers:** Tice and Yarno; Bates for the protection exchange with Cousins.
+
+## Entries
+
+### December 1, 2013 evidence cutoff: comparative research report
+
+#### Assessment and conflicting evidence
+
+Swanson is particularly useful because the contemporary source record contains a real disagreement to investigate. Tom Melton's August 5 evaluation describes concerns about isolated push against Texas A&M while finding better movement and combination work in other reviewed material. A separate August 7 prospect note presents a more favorable overall view while still discussing strength development. [S36–S37](../sources_2013_12_01.md).
+
+Neither evaluator is treated as the final authority. Different opponents, assignments and samples can explain different conclusions. The report therefore separates isolated contact from assisted combinations rather than averaging the opinions into a vague grade. The sources' medical speculation, later updates and subsequent draft information are excluded.
+
+**Strengths supported by tape:** Attributed movement and combination-block observations, not a new Jacksonville chart. **Weaknesses supported by tape:** Attributed concern about independent displacement and anchor strength, with frequency and persistence unresolved. The question is specific enough to guide a useful comparison with Paradis and Stork.
+
+#### Contact and protection translation
+
+A center can look effective when the guard supplies the initial force and the center completes the positioning. That is a useful team skill, but it does not establish the ability to handle a covered nose without assistance. The evidence should distinguish who creates the displacement, who controls the defender and when either blocker can leave.
+
+For pass protection, assess whether Swanson can absorb contact while maintaining room for Cousins to step and deliver. Depth conceded under control is different from a sudden collapse, but both must be evaluated against the timing of the play. A late second move also tests hand replacement and base recovery after the original anchor.
+
+The communication question is independent. The center must identify the relevant threat, make or confirm the point within the offense's division of responsibility and execute the snap without delaying the block. This report does not assign Arkansas's private call structure or assume that every correct college protection began with Swanson.
+
+#### Run game and first job
+
+The favorable movement hypothesis fits an investigation of ACE combinations and second-level positioning. It is useful only if he can establish enough first-level control to release on time. On Outside, an efficient path must end in maintained leverage; reaching the landmark and losing contact immediately is not a completed block.
+
+**Projected first job to investigate:** Reserve center, conditional on a functional isolated-contact floor. If he requires adjacent help on routine assignments, the offense may have to divert resources that should be available elsewhere. That cost belongs in the projection rather than being hidden beneath a mobility label.
+
+**Development cost:** Substantial if physical and technical improvements are needed while the protection vocabulary is learned. The sequence should start with snap-to-contact mechanics and a limited set of front identifications, then add exchanges and late movement. Guard cover remains a later study.
+
+**Coach's answer:** Open. Tice and Yarno would need to distinguish a correctable leverage/hand problem from a broader physical limitation. Bates would evaluate the communication burden. The present sources cannot decide that distinction for them.
+
+#### Objection, value and decision trigger
+
+The best objection is selecting a center for intelligence or mobility labels while routine isolated blocks remain unreliable. The case for continued study is that useful movement and combination work could translate if the contact floor is adequate.
+
+**Tier:** Not yet graded. **What would change the view?** Independent success against direct interior contact and stable execution after the snap would answer the major objection. Success concentrated in assisted combinations would narrow the role. No source reviewed here makes Swanson a guaranteed late-round alternative; compare his eventual acquisition cost with Paradis and Stork only after the market evidence improves.
