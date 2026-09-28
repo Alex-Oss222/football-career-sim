@@ -23,7 +23,7 @@ Plans own teaching intent. Outputs own what happened. Standouts are evidence sum
 3. Review each dependency above. Update affected owners and summaries in the same commit. For a closed Jacksonville/protagonist regular-season or postseason game, preserve the full public receipt including player dictionaries, snap ledger and named-call usage. For ordinary background games, preserve the compact_stats receipt with every nonzero generated player/team statistic and every game-day active player, without background snap rows or zero-valued counters. Generate the box score, standings and season stat views from the receipt set; do not hand-add totals or reconstruct missing plays from prior Markdown. Do not touch unrelated financial or historical records to manufacture freshness.
 4. Update Documents 4 and 5 checkpoints/versions consistently. Document 4 may retain its older content version if none of its owned facts changed; Document 5 must name that exact version. Refresh foundation Git-blob hashes in Document 5 after a foundation change, using `git hash-object` on each changed foundation source.
 5. Update phase metadata and review the actual summary text. Only then run the receipt command below. It acknowledges review of the current source; it does not generate observations or prove prose is correct.
-6. Close the ledger entry, run validation and review the diff. Commit the entire dependency set together through a pull request.
+6. Refresh DOB/age columns and the league age view with `python scripts/render_player_ages.py` after any master-date or roster change, including birthdays within a season and January postseason dates. Verify a new player's identity and birth date before preparing his first game; never substitute an experience count or current real-world age. Then close the ledger entry, run validation and review the diff. Commit the entire dependency set together through a pull request.
 
 ```sh
 python scripts/refresh_summary_receipt.py otas --reviewed
@@ -34,6 +34,7 @@ python scripts/refresh_summary_receipt.py otas --reviewed
 # python scripts/render_box_score.py --write career/YEAR/regular_season/week_NN_<away>_at_<home>/output.md
 # python scripts/render_standings.py YEAR
 # python scripts/render_season_stats.py YEAR --team TEAM_ID
+python scripts/render_player_ages.py
 python scripts/validate_repository.py
 python -m unittest discover -s tests -v
 ```

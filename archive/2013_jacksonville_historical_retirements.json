@@ -1,0 +1,716 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-09-28",
+  "classification": "quarantined_actual_future_comparator",
+  "scope": "61 current Jacksonville branch players; other league players not yet researched for retirement",
+  "runtime_use": false,
+  "players": {
+    "Kirk Cousins": {
+      "gsis_id": "00-0029604",
+      "position_in_branch": "QB",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Chad Henne": {
+      "gsis_id": "00-0026197",
+      "position_in_branch": "QB",
+      "announcement_date": "2023-02-12",
+      "effective_date": null,
+      "effective_period": "following Super Bowl LVII",
+      "ceremonial_date": null,
+      "evidence": "Corroborated",
+      "sources": [
+        "https://www.nfl.com/news/chiefs-qb-chad-henne-announces-retirement-following-super-bowl-lvii-victory",
+        "https://www.upi.com/Sports_News/NFL/2023/02/13/Chiefs-QB-Chad-Henne-retire/3721676307131/"
+      ],
+      "note": "Announcement Sunday night; reports published February 13."
+    },
+    "John Parker Wilson": {
+      "gsis_id": "00-0026505",
+      "position_in_branch": "QB",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "C.J. Anderson": {
+      "gsis_id": "00-0029854",
+      "position_in_branch": "RB",
+      "announcement_date": "2020-09-18",
+      "effective_date": null,
+      "effective_period": "announced retirement",
+      "ceremonial_date": null,
+      "evidence": "Confirmed",
+      "sources": [
+        "https://www.denverbroncos.com/news/rb-c-j-anderson-a-super-bowl-50-champion-announces-his-retirement-from-the-nfl",
+        "https://touchdownactu.com/240701/retraite-pour-c-j-anderson/"
+      ],
+      "note": "Club report includes direct confirmation from the player; separate report quotes the same-day announcement."
+    },
+    "Jonathan Grimes": {
+      "gsis_id": "00-0029510",
+      "position_in_branch": "RB",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Maurice Jones-Drew": {
+      "gsis_id": "00-0024275",
+      "position_in_branch": "RB",
+      "announcement_date": "2015-03-05",
+      "effective_date": null,
+      "effective_period": "announced retirement",
+      "ceremonial_date": "2015-04-28",
+      "evidence": "Confirmed",
+      "sources": [
+        "https://www.jaguars.com/news/maurice-jones-drew-retires-14996139",
+        "https://abcnews.com/Sports/maurice-jones-drew-retires/story?id=29424695"
+      ],
+      "note": "The one-day Jaguars contract and ceremony were April 28, not the original retirement announcement."
+    },
+    "Montell Owens": {
+      "gsis_id": "00-0024103",
+      "position_in_branch": "FB",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Justin Blackmon": {
+      "gsis_id": "00-0029707",
+      "position_in_branch": "WR",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Mike Brown": {
+      "gsis_id": "00-0029155",
+      "position_in_branch": "WR",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Toney Clemons": {
+      "gsis_id": "00-0029204",
+      "position_in_branch": "WR",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Cecil Shorts": {
+      "gsis_id": "00-0028052",
+      "position_in_branch": "WR",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Adam Thielen": {
+      "gsis_id": "00-0030035",
+      "position_in_branch": "WR",
+      "announcement_date": "2026-01-14",
+      "effective_date": null,
+      "effective_period": "announced retirement",
+      "ceremonial_date": null,
+      "evidence": "Corroborated",
+      "sources": [
+        "https://www.vikings.com/news/adam-thielen-retirement-career-captain-munnerlyn-new-role-coaching",
+        "https://www.reuters.com/sports/wr-adam-thielen-retires-what-ride-it-has-been--flm-2026-01-14/"
+      ],
+      "note": "Vikings January 15 report specifies Wednesday; Reuters dates the event January 14."
+    },
+    "Allen Reisner": {
+      "gsis_id": "00-0028267",
+      "position_in_branch": "TE",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Marcedes Lewis": {
+      "gsis_id": "00-0024243",
+      "position_in_branch": "TE",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Travis Kelce": {
+      "gsis_id": "00-0030506",
+      "position_in_branch": "TE",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Cameron Bradfield": {
+      "gsis_id": "00-0028401",
+      "position_in_branch": "OT",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Lane Johnson": {
+      "gsis_id": "00-0030561",
+      "position_in_branch": "OT",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Eugene Monroe": {
+      "gsis_id": "00-0026984",
+      "position_in_branch": "OT",
+      "announcement_date": "2016-07-21",
+      "effective_date": null,
+      "effective_period": "announced retirement",
+      "ceremonial_date": null,
+      "evidence": "Corroborated",
+      "sources": [
+        "https://www.baltimoreravens.com/news/late-for-work-7-21-stanley-among-top-rated-rookies-in-madden-17-monroe--17344347",
+        "https://abcnews.com/Sports/eugene-monroe-announces-retirement-evaluate-health/story?id=40767444"
+      ],
+      "note": "Announcement date only; no later medical information is imported."
+    },
+    "Mark Asper": {
+      "gsis_id": "00-0029296",
+      "position_in_branch": "G",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Uche Nwaneri": {
+      "gsis_id": "00-0025536",
+      "position_in_branch": "G",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Austin Pasztor": {
+      "gsis_id": "00-0029076",
+      "position_in_branch": "G",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Will Rackley": {
+      "gsis_id": "00-0028014",
+      "position_in_branch": "G",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Mike Brewster": {
+      "gsis_id": "00-0029052",
+      "position_in_branch": "C",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Brad Meester": {
+      "gsis_id": "00-0018956",
+      "position_in_branch": "C",
+      "announcement_date": "2013-12-18",
+      "effective_date": null,
+      "effective_period": "after the 2013 season",
+      "ceremonial_date": null,
+      "evidence": "Confirmed",
+      "sources": [
+        "https://www.jaguars.com/news/open-locker-room-meester-to-retire-12194252",
+        "https://www.tennesseetitans.com/news/know-the-foe-titans-final-matchup-with-retiring-jaguars-c-brad-meester-12217071"
+      ],
+      "note": "Season-end intent, not a December 18 removal."
+    },
+    "Jason Babin": {
+      "gsis_id": "00-0022695",
+      "position_in_branch": "DE",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Andre Branch": {
+      "gsis_id": "00-0029600",
+      "position_in_branch": "DE",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Ryan Davis": {
+      "gsis_id": "00-0029053",
+      "position_in_branch": "DE",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Lavar Edwards": {
+      "gsis_id": "00-0030488",
+      "position_in_branch": "DE",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Jeremy Mincey": {
+      "gsis_id": "00-0024405",
+      "position_in_branch": "DE",
+      "announcement_date": "2016-08-23",
+      "effective_date": null,
+      "effective_period": "announced retirement",
+      "ceremonial_date": null,
+      "evidence": "Corroborated",
+      "sources": [
+        "https://www.nfl.com/news/former-jaguars-cowboys-dl-jeremy-mincey-retires-0ap3000000689473",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jeremy-mincey-announces-retirement"
+      ],
+      "note": "Public announcement; not last playing season."
+    },
+    "C.J. Wilson": {
+      "gsis_id": "00-0027822",
+      "position_in_branch": "DE",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Tyson Alualu": {
+      "gsis_id": "00-0027862",
+      "position_in_branch": "DT",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Sen'Derrick Marks": {
+      "gsis_id": "00-0027038",
+      "position_in_branch": "DT",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Roy Miller": {
+      "gsis_id": "00-0027055",
+      "position_in_branch": "DT",
+      "announcement_date": "2018-06-30",
+      "effective_date": null,
+      "effective_period": "retirement publicly reported",
+      "ceremonial_date": null,
+      "evidence": "Disputed",
+      "sources": [
+        "https://www.cbssports.com/nfl/news/nfl-player-announces-retirement-blames-wife-for-trying-to-ruin-any-opportunity-for-me-to-work/",
+        "https://www.cbssports.com/nfl/players/1123389/roy-miller/"
+      ],
+      "note": "July 1 CBS article says Saturday (June 30); July 2 RotoWire blurb says Monday. June 30 is the earlier dated report, not an independently settled exact date. No personal allegations retained."
+    },
+    "C.J. Mosley": {
+      "gsis_id": "00-0023624",
+      "position_in_branch": "DT",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Jeris Pendleton": {
+      "gsis_id": "00-0029622",
+      "position_in_branch": "DT",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Russell Allen": {
+      "gsis_id": "00-0026605",
+      "position_in_branch": "LB",
+      "announcement_date": "2014-04-22",
+      "effective_date": null,
+      "effective_period": "retirement publicly reported",
+      "ceremonial_date": null,
+      "evidence": "Corroborated",
+      "sources": [
+        "https://www.si.com/nfl/2014/04/22/russell-allen-jacksonville-jaguars-stroke",
+        "https://www.ksl.com/article/sports/nfl/report-jags-allen-retires-after-in-game-stroke/29585951"
+      ],
+      "note": "Actual-history date only; source medical events do not apply to this branch."
+    },
+    "Sio Moore": {
+      "gsis_id": "00-0030529",
+      "position_in_branch": "LB",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Paul Posluszny": {
+      "gsis_id": "00-0025421",
+      "position_in_branch": "LB",
+      "announcement_date": "2018-03-13",
+      "effective_date": null,
+      "effective_period": "announced retirement",
+      "ceremonial_date": null,
+      "evidence": "Confirmed",
+      "sources": [
+        "https://www.jaguars.com/news/paul-posluszny-announces-retirement-following-11-year-nfl-career",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/linebacker-paul-posluszny-retires"
+      ],
+      "note": "Club published his retirement letter on March 13."
+    },
+    "Daryl Smith": {
+      "gsis_id": "00-0022839",
+      "position_in_branch": "LB",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Julian Stanford": {
+      "gsis_id": "00-0029061",
+      "position_in_branch": "LB",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Alan Ball": {
+      "gsis_id": "00-0025624",
+      "position_in_branch": "CB",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "A.J. Bouye": {
+      "gsis_id": "00-0030228",
+      "position_in_branch": "CB",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Brent Grimes": {
+      "gsis_id": "00-0024183",
+      "position_in_branch": "CB",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Mike Harris": {
+      "gsis_id": "00-0029610",
+      "position_in_branch": "CB",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Jordan Poyer": {
+      "gsis_id": "00-0030114",
+      "position_in_branch": "CB",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Kevin Rutland": {
+      "gsis_id": "00-0028420",
+      "position_in_branch": "CB",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Dwight Lowery": {
+      "gsis_id": "00-0026253",
+      "position_in_branch": "S",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Chris Prosinski": {
+      "gsis_id": "00-0028059",
+      "position_in_branch": "S",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Bacarri Rambo": {
+      "gsis_id": "00-0030289",
+      "position_in_branch": "S",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Brynden Trawick": {
+      "gsis_id": "00-0030020",
+      "position_in_branch": "S",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Josh Scobee": {
+      "gsis_id": "00-0022874",
+      "position_in_branch": "K",
+      "announcement_date": "2017-03-30",
+      "effective_date": null,
+      "effective_period": "retirement announced; ceremonial contract April 13",
+      "ceremonial_date": "2017-04-13",
+      "evidence": "Corroborated",
+      "sources": [
+        "https://www.espn.com/blog/jacksonville-jaguars/post/_/id/21254/josh-scobee-to-sign-a-one-day-contract-and-retire-as-a-jaguar",
+        "https://www.jaguars.com/news/view-from-the-o-zone-a-quip-a-smile-and-a-fitting-farewell-18737133"
+      ],
+      "note": "March announcement and April ceremony are separate dates."
+    },
+    "Bryan Anger": {
+      "gsis_id": "00-0029692",
+      "position_in_branch": "P",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Jeremy Cain": {
+      "gsis_id": "00-0022502",
+      "position_in_branch": "LS",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Tyler Bray": {
+      "gsis_id": "00-0030151",
+      "position_in_branch": "QB",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Richard Murphy": {
+      "gsis_id": "00-0028416",
+      "position_in_branch": "RB",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Will Ta'ufo'ou": {
+      "gsis_id": "00-0026557",
+      "position_in_branch": "FB",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Jerrell Jackson": {
+      "gsis_id": "00-0029511",
+      "position_in_branch": "WR",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Jerome Long": {
+      "gsis_id": "00-0029306",
+      "position_in_branch": "DT",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "D'Anthony Smith": {
+      "gsis_id": "00-0027679",
+      "position_in_branch": "DT",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Brandon King": {
+      "gsis_id": "00-0027468",
+      "position_in_branch": "DB",
+      "announcement_date": null,
+      "effective_date": null,
+      "effective_period": null,
+      "ceremonial_date": null,
+      "evidence": "Unknown",
+      "sources": [],
+      "note": "Exact retirement announcement/effective date not verified; last season, roster release and absence from a current roster are not retirement dates."
+    },
+    "Antwon Blake": {
+      "gsis_id": "00-0029050",
+      "position_in_branch": "S",
+      "announcement_date": "2017-09-05",
+      "effective_date": null,
+      "effective_period": "reported announcement",
+      "ceremonial_date": null,
+      "evidence": "Supported",
+      "sources": [
+        "https://krod.com/former-utep-football-player-debuts-book-little-zillas-big-wait/",
+        "https://en.wikipedia.org/wiki/Valentino_Blake"
+      ],
+      "note": "Retrospective KROD report supplies the date. A matching reference is not independent contemporary confirmation; exact transaction date unresolved."
+    }
+  }
+}

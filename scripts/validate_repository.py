@@ -171,6 +171,17 @@ def validate(root=ROOT):
     except (OSError, IndexError, TypeError, ValueError) as exc:
         errors.append(f'Malformed canonical state: {exc}')
 
+    # Age views must advance with the canonical calendar, including birthdays
+    # during a season and January postseason dates in the next calendar year.
+    try:
+        import sys
+        if str(ROOT) not in sys.path:
+            sys.path.insert(0, str(ROOT))
+        from scripts.render_player_ages import check as check_player_ages
+        errors.extend(check_player_ages(root))
+    except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
+        errors.append(f'Invalid player birth-date/age evidence: {exc}')
+
     # Season statistics are generated artifacts. Rebuild them from the durable
     # closed-game receipts so stale caches or hand-edited views fail closed.
     try:

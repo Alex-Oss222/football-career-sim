@@ -18,7 +18,7 @@ import re
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
-from . import call_families, depth_library
+from . import call_families, depth_library, player_bios
 from .usage import group, lineup_errors
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -235,6 +235,7 @@ def jacksonville_input(receipts, game_day, anchors, call_sheet):
 
 def build_package(week, receipts, call_sheet, anchors):
     games = []
+    birth_dates = player_bios.load()
     for game in schedule(week):
         game_day = date.fromisoformat(game["date"])
 
@@ -252,4 +253,9 @@ def build_package(week, receipts, call_sheet, anchors):
                                           "away_seed", "home_seed") if key in game},
             "away_input": unit(game["away"]), "home_input": unit(game["home"]),
         })
+        # Public preparation metadata, deliberately outside TeamInput and the
+        # outcome packet. Birthdays cannot reroll already-frozen football.
+        games[-1]["player_ages"] = player_bios.biographies(
+            [p["player_id"] for side in ("away_input", "home_input")
+             for p in games[-1][side]["roster"]], game_day, birth_dates)
     return {"week": week, "games": games}

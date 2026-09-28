@@ -1615,3 +1615,22 @@ The Jets, Tennessee, Minnesota and St. Louis have byes.
 **No game was simulated.**
 
 **Commit closed - Canonical update - December 29, 2013 - Postseason bracket built (Wild Card slate set) - canonical through December 29, after Week 17**
+
+
+## Entry 62 - Player birth dates, calendar ages and historical retirement audit
+
+**Effective:** December 29, 2013, after Week 17; administrative reconciliation only.
+**Recorded:** September 28, 2026.
+**Authority:** User request to check and update player ages in their proper simulation records and research historical retirement dates.
+
+The prior current player tables had no populated DOB/age fields. Added a sourced birth-date registry for the 1,661 distinct players in the current Jacksonville roster (53 active plus eight practice-squad players) and the branch background depth library. Exact GSIS identities distinguish namesakes, especially the defensive tackle C.J. Mosley, defensive end C.J. Wilson, receiver Mike Brown and Purdue defensive back Brandon King. The source notes record verification limits and source disagreements; no age was inferred from an NFL experience count.
+
+Document 4 and the readable roster now show DOB and completed calendar age. The league age view is generated from the same source. Ages refresh from Document 5's master date, and repository validation rejects stale columns or a stale as-of marker. Weekly preparation includes ages at each actual game date as public metadata outside TeamInput and the outcome packet. Birthdays do not change hidden anchors, seeded results, depth order or eligibility.
+
+Historical retirement research is retained in `archive/2013_jacksonville_historical_retirements.md`, with announcement dates distinguished from effective periods and ceremonial contracts. Unverified dates stay unknown. This is an explicitly requested historical audit, not a simulation event: no real later retirement, injury, result or current real-world status is imported into branch availability. A simulation retirement still requires a dated branch event under the existing rules. Meester remains on the branch roster for Wild Card preparation.
+
+**Correction:** Document 4's header, identity and ending control block still displayed October 27 / Week 8 even though its version and player rows were through December 29 / Week 17. Reconciled those stale date/phase/next-event labels to Document 5 and Entries 60-61. Historical October 27 records remain dated history.
+
+**Dependency closure:** Birth-date evidence and verification notes; roster and register DOB/age columns; generated league ages; age renderer and validation; weekly preparation metadata; current-state version manifest; workflow/index pointers. Roster control, medical restrictions, finances, game receipts, scores and standings do not change. No football event or retirement was simulated, and the clock remains December 29, 2013.
+
+**Commit closed - Canonical update - December 29, 2013 - Player age register reconciled - canonical through December 29, after Week 17**

@@ -1,0 +1,94 @@
+{
+  "checked_on": "2026-09-28",
+  "scope": "DOB only; retrospective sources supply no later outcomes",
+  "players": {
+    "Andrew Whitworth": {
+      "gsis_id": "00-0024270",
+      "nflverse_birth_date": "1981-12-12",
+      "espn_birth_date": "1981-12-18",
+      "birth_date": "1981-12-12",
+      "source_url": "https://lsusports.net/sports/fb/roster/season/2002/player/andrew-whitworth",
+      "review": "LSU player biography; personal section gives December 12, 1981."
+    },
+    "Charles Godfrey": {
+      "gsis_id": "00-0026207",
+      "nflverse_birth_date": "1985-11-15",
+      "espn_birth_date": "1985-11-11",
+      "birth_date": "1985-11-15",
+      "source_url": "https://www.profootballarchives.com/players/g/godf00170.html",
+      "review": "Pro Football Archives lists November 15, 1985; independently also PFR /players/G/GodfCh99.htm."
+    },
+    "Dashon Goldson": {
+      "gsis_id": "00-0025513",
+      "nflverse_birth_date": "1984-09-18",
+      "espn_birth_date": "1984-05-21",
+      "birth_date": "1984-09-18",
+      "source_url": "https://library.sfo2.cdn.digitaloceanspaces.com/publications/football/yearbooks/FSF49MG-2009-san-francisco-49ers-media-guide.pdf",
+      "review": "49ers 2009 media guide lists 9/18/84; independently Pro Football Archives /players/g/gold01700.html."
+    },
+    "Dimitri Patterson": {
+      "gsis_id": "00-0023727",
+      "nflverse_birth_date": "1983-06-18",
+      "espn_birth_date": "1982-12-01",
+      "birth_date": "1983-06-18",
+      "source_url": "https://semoredhawks.com/sports/football/roster/dimitri-patterson/3412",
+      "review": "College biography gives 6-18-83; 2013 Dolphins guide agrees. An older 2005 NFL press note and ESPN instead give 12/1/1982; use the college biography and 2013 club guide."
+    },
+    "Jake McQuaide": {
+      "gsis_id": "00-0028394",
+      "nflverse_birth_date": "1987-12-07",
+      "espn_birth_date": "1987-07-07",
+      "birth_date": "1987-12-07",
+      "source_url": "https://www.pro-football-reference.com/players/M/McQuJa00.htm",
+      "review": "PFR lists December 7, 1987; Yahoo player 25549 independently agrees."
+    },
+    "Jerry Hughes": {
+      "gsis_id": "00-0027881",
+      "nflverse_birth_date": "1988-08-13",
+      "espn_birth_date": "1988-08-31",
+      "birth_date": "1988-08-13",
+      "source_url": "https://static.clubs.nfl.com/image/upload/bills/fx1ngfkj61vtz0clyxjj.pdf",
+      "review": "Bills player biography gives August 13, 1988; 2011 Colts media guide also agrees."
+    },
+    "Kurt Coleman": {
+      "gsis_id": "00-0027835",
+      "nflverse_birth_date": "1988-04-01",
+      "espn_birth_date": "1988-07-01",
+      "birth_date": "1988-07-01",
+      "source_url": "https://www.nfl.com/news/greg-schiano-whitney-mercilus-on-nfl-network-0ap1000000215699",
+      "review": "Contemporaneous NFL birthday notice, published June 30, 2013, says Coleman turns 25 on Monday (July 1). ESPN, PFR and Pro Football Archives agree on July 1, 1988. Supersedes April 1 in nflverse and the 2017 Panthers guide."
+    },
+    "Leonard Johnson": {
+      "gsis_id": "00-0029087",
+      "nflverse_birth_date": "1990-03-30",
+      "espn_birth_date": "1998-07-03",
+      "birth_date": "1990-03-30",
+      "source_url": "https://cyclones.com/sports/football/roster/leonard-johnson/2076",
+      "review": "Iowa State biography gives March 30, 1990; 2017 Bills guide agrees. The ESPN ID resolves to a 1998-born namesake, so reject that comparison."
+    },
+    "Luke Stocker": {
+      "gsis_id": "00-0028042",
+      "nflverse_birth_date": "1988-07-17",
+      "espn_birth_date": "1988-07-01",
+      "birth_date": "1988-07-17",
+      "source_url": "https://utsports.com/documents/download/2008/8/18/2008spreview.pdf",
+      "review": "Tennessee 2008 spring review gives July 17, 1988; 2025 NFL Record & Fact Book independently agrees."
+    },
+    "Steve Johnson": {
+      "gsis_id": "00-0026364",
+      "nflverse_birth_date": "1986-07-22",
+      "espn_birth_date": "1986-11-28",
+      "birth_date": "1986-07-22",
+      "source_url": "https://profootballarchives.com/players/j/john29640.html",
+      "review": "Buffalo receiver Stevie Johnson: July 22, 1986. ESPN resolves to a namesake; Iowa State Steve Johnson biography identifies November 28, 1986 as a different player."
+    },
+    "Tarvaris Jackson": {
+      "gsis_id": "00-0024279",
+      "nflverse_birth_date": "1983-04-21",
+      "espn_birth_date": "1982-08-19",
+      "birth_date": "1983-04-21",
+      "source_url": "https://static.clubs.nfl.com/image/upload/v1578519993/patriots/xsi56dahzq8nbxdoy91y.pdf",
+      "review": "Seahawks Super Bowl XLIX media notes give April 21, 1983; family foundation 7legacy.org independently agrees."
+    }
+  }
+}

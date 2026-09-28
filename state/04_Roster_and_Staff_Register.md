@@ -3,9 +3,9 @@
 ## Document status
 
 - Function: Canonical register for current Jacksonville player control, staff operating authority, roster legality, contract/cap reconciliation, availability boundaries and football-role state.
-- Current status: **RECONCILED THROUGH ENTRY 60 (WEEK 17)**.
-- Effective through: **October 27, 2013, after Week 8 vs San Francisco (Wembley Stadium)**.
-- Progression authority: `career/2013/ledger.md`, Entry 60 (Week 17 closed; regular season complete; no Jacksonville injury), Entry 59 (Week 16 closed; no Jacksonville injury; roles unchanged), Entry 58 (Week 15 closed; no Jacksonville injury; roles unchanged), Entry 57 (Week 14 closed as generation 2; Allen base LB for Posluszny; Kelce cleared; no injury), Entry 55 (Week 13 closed; Posluszny out, independent medical hold; Kelce out, minor; Bouye cleared and first outside reserve), Entry 53 (Week 12 closed; Rutland first outside reserve; Edwards dressed; no injury), Entry 52 (Week 11 closed; Harris starts; Mosley dressed; Bouye injured), Entry 50 (Week 10 closed; Ball injured; Pasztor dressed), Entry 49 (Week 9 bye; no deadline transaction), Entry 46 (Pasztor and Mosley projections recovered; both available), Entry 45 (Week 8 closed; Blackmon dressed), Entry 44 (Week 7 closed), after Entries 42-43 (Blackmon reinstated and activated October 7; Week 6 closed), Entry 41 (Week 5 closed; Posluszny returned; Thielen injured), Entry 40 (Week 4 closed under kernel 2013.6, Entry 39; Meester returned as reserve center), Entry 38 (Week 3 closed; Posluszny injured) and Entries 36-37 (Blackmon to Reserve/Suspended; Week 2 closed with Meester and C.J. Wilson injured).
+- Current status: **RECONCILED THROUGH ENTRY 62 (PLAYER AGE AUDIT)**.
+- Effective through: **December 29, 2013, after Week 17; player age audit closed**.
+- Progression authority: `career/2013/ledger.md`, Entry 62 (DOB/age reconciliation; no time advance), Entry 61 (postseason bracket), Entry 60 (Week 17 closed; regular season complete; no Jacksonville injury), Entry 59 (Week 16 closed; no Jacksonville injury; roles unchanged), Entry 58 (Week 15 closed; no Jacksonville injury; roles unchanged), Entry 57 (Week 14 closed as generation 2; Allen base LB for Posluszny; Kelce cleared; no injury), Entry 55 (Week 13 closed; Posluszny out, independent medical hold; Kelce out, minor; Bouye cleared and first outside reserve), Entry 53 (Week 12 closed; Rutland first outside reserve; Edwards dressed; no injury), Entry 52 (Week 11 closed; Harris starts; Mosley dressed; Bouye injured), Entry 50 (Week 10 closed; Ball injured; Pasztor dressed), Entry 49 (Week 9 bye; no deadline transaction), Entry 46 (Pasztor and Mosley projections recovered; both available), Entry 45 (Week 8 closed; Blackmon dressed), Entry 44 (Week 7 closed), after Entries 42-43 (Blackmon reinstated and activated October 7; Week 6 closed), Entry 41 (Week 5 closed; Posluszny returned; Thielen injured), Entry 40 (Week 4 closed under kernel 2013.6, Entry 39; Meester returned as reserve center), Entry 38 (Week 3 closed; Posluszny injured) and Entries 36-37 (Blackmon to Reserve/Suspended; Week 2 closed with Meester and C.J. Wilson injured).
 - Detailed readable roster: `career/2013/roster.md`.
 - Current cap worksheet: `career/2013/offseason/current_cap_worksheet.md`.
 - Current calendar: `career/2013/calendar.md`.
@@ -21,17 +21,17 @@
 | Competition | NFL |
 | Season | 2013 |
 | Divergence point | January 15, 2013 — Alex Stone accepts Jacksonville head-coach offer |
-| Season phase | Regular season; Week 8 closed; Week 9 bye next |
-| Owned content effective | October 27, 2013 |
-| Document 4 register version | `JAX-2013-DEC29-WEEK17-REGISTER-29` |
-| Supersedes | `JAX-2013-DEC22-WEEK16-REGISTER-28` |
-| Last content-changing checkpoint | `Canonical update - December 29, 2013 - Week 17 at Indianapolis closed` |
-| Latest Document 6 event | Entry 60: Week 17 closed; regular season complete; no Jacksonville injury |
+| Season phase | Regular season complete; AFC Wild Card preparation |
+| Owned content effective | December 29, 2013 |
+| Document 4 register version | `JAX-2013-DEC29-PLAYER-AGES-REGISTER-30` |
+| Supersedes | `JAX-2013-DEC29-WEEK17-REGISTER-29` |
+| Last content-changing checkpoint | `Canonical update - December 29, 2013 - Player age register reconciled` |
+| Latest Document 6 event | Entry 62: player age register reconciled; no football event or time advance |
 | Current controlled players | **53** |
 | Current practice squad | **8; separate from active 53** |
 | Current regular-season planning room | **~$6.2M-$6.6M before weekly practice-squad charges** |
-| Next scheduled football event | AFC Wild Card at Kansas City, January 4-5, 2014: NOT SIMULATED |
-| Unresolved matter before participation | The Week 10 plan and inactives are Stone decisions (the Week 8 list, naming the now-available Pasztor and Mosley, carries forward otherwise) |
+| Next scheduled football event | AFC Wild Card at Kansas City, January 4, 2014, 4:35 p.m. ET: NOT SIMULATED |
+| Unresolved matter before participation | The Wild Card plan and inactives are Stone decisions; the Week 17 inactive list carries forward unless replaced |
 
 ## Canon and evidence conventions
 
@@ -148,11 +148,11 @@ Staff remains unchanged from the closed late-January hiring phase. `career/2013/
 - Cap: regular-season accounting; approximately **$6.2M-$6.6M** before weekly practice-squad charges.
 - Medical: no Week 8 injury; Rackley minor, limited, no projected absence; C.J. Wilson out (projected return January 30, 2014); Alan Ball out (Week 10 trunk; projected return January 22, 2014); A.J. Bouye cleared (Week 11 injury; projected return November 26 reached); Paul Posluszny out (Week 13 head/neck, independent medical hold; projected return April 5, 2014; no reserve-list move made); Travis Kelce cleared (Week 13 minor; projected return December 3 reached); no Week 14-17 injury; Pasztor and Mosley available (Entry 46).
 - Football: Brewster the starting center (confirmed Week 6), Meester reserve center; Posluszny and Smith base linebackers (Posluszny out from Week 13; Russell Allen starts beside Smith from Week 14, Stanford first base reserve, Moore in Crennel's packages) with Smith the communication lead and Allen first off the bench; Bradfield sixth OL; Shorts WR1, Thielen WR2/H, Blackmon WR3/outside Z (dressed from Week 8), Clemons WR4, Brown WR5; edge order Babin, Mincey, Branch, Davis.
-- Next event: AFC Wild Card at Kansas City, January 4-5, 2014; **NOT SIMULATED**.
+- Next event: AFC Wild Card at Kansas City, January 4, 2014, 4:35 p.m. ET; **NOT SIMULATED**.
 
 ## Jacksonville current transaction reconciliation
 
-**Current progression source:** [Season ledger, Entry 46](../career/2013/ledger.md#entry-46-pasztor-and-mosley-injury-projections-recovered), checkpoint `Canonical correction - October 27, 2013 - Pasztor and Mosley injury projections recovered`; Week 8 closed by Entry 45; Blackmon reinstated and activated by Entry 42.
+**Current progression source:** [Season ledger, Entry 62](../career/2013/ledger.md), checkpoint `Canonical update - December 29, 2013 - Player age register reconciled`. Week 17 closed by Entry 60; postseason bracket by Entry 61. Historical control and availability events retain their original ledger pointers.
 **Readable roster:** [career/2013/roster.md](../career/2013/roster.md).
 **Current cap worksheet:** [career/2013/offseason/current_cap_worksheet.md](../career/2013/offseason/current_cap_worksheet.md).
 **Current calendar:** [career/2013/calendar.md](../career/2013/calendar.md).
@@ -177,61 +177,65 @@ The old 75-person working count and the old unresolved inherited-control bucket 
 
 ### Current player index
 
-| Player | Stable ID | Pos. | Primary status | Current control basis | Current availability boundary | Current source |
-|---|---|---|---|---|---|---|
-| Kirk Cousins | JAX-KIRKCOUSINS | QB | Active 53 | Acquired from Washington; 2014 second transferred | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Chad Henne | JAX-CHADHENNE | QB | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| John Parker Wilson | JAX-JOHNPARKERWILSON | QB | Active 53 | Dec. 30, 2012 reserve/future contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| C.J. Anderson | JAX-CJANDERSON | RB | Active 53 | Three-year UDFA minimum contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Jonathan Grimes | JAX-JONATHANGRIMES | RB | Active 53 | Existing contract/control; not a March 12 free agent | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Maurice Jones-Drew | JAX-MAURICEJONESDREW | RB | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Montell Owens | JAX-MONTELLOWENS | FB | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Justin Blackmon | JAX-JUSTINBLACKMON | WR | Active 53 | Existing rookie contract; 4/17 of 2013 base forfeited for Weeks 2-5, amount unresolved | No communicated restriction; WR3 / outside Z, dressed from Week 8 | Entry 45 |
-| Mike Brown | JAX-MIKEBROWN | WR | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Toney Clemons | JAX-TONEYCLEMONS | WR | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Cecil Shorts | JAX-CECILSHORTS | WR | Active 53 | Existing rookie contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Adam Thielen | JAX-ADAMTHIELEN | WR | Active 53 | Three-year UDFA minimum contract | No communicated restriction; fresh game-day communication required | Entry 43 |
-| Allen Reisner | JAX-ALLENREISNER | TE | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Marcedes Lewis | JAX-MARCEDESLEWIS | TE | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Travis Kelce | JAX-TRAVISKELCE | TE | Active 53 | #33; rookie contract signed May 2 | Cleared (Week 13 minor injury; projected return December 3 reached); fresh game-day communication required | Entry 57 |
-| Cameron Bradfield | JAX-CAMERONBRADFIELD | OT | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Lane Johnson | JAX-LANEJOHNSON | OT | Active 53 | #2; rookie contract signed May 2; first-round option mechanism | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Eugene Monroe | JAX-EUGENEMONROE | OT | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Mark Asper | JAX-MARKASPER | G | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Uche Nwaneri | JAX-UCHENWANERI | G | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Austin Pasztor | JAX-AUSTINPASZTOR | G | Active 53 | Existing contract/control | No communicated restriction; August 17 head/neck hold, recovered projection August 19 | Entry 46 |
-| Will Rackley | JAX-WILLRACKLEY | G | Active 53 | Existing rookie contract | Limited, no projected absence (upper extremity, Week 5) | Entry 41 |
-| Mike Brewster | JAX-MIKEBREWSTER | C | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Brad Meester | JAX-BRADMEESTER | C | Active 53 | Branch re-signing; one year, $1.50M | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Jason Babin | JAX-JASONBABIN | DE | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Andre Branch | JAX-ANDREBRANCH | DE | Active 53 | Existing rookie contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Ryan Davis | JAX-RYANDAVIS | DE | Active 53 | Dec. 30, 2012 reserve/future contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Lavar Edwards | JAX-LAVAREDWARDS | DE | Active 53 | #135; rookie contract signed May 2 | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Jeremy Mincey | JAX-JEREMYMINCEY | DE | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| C.J. Wilson | JAX-CJWILSON | DE | Active 53 | Acquired from Green Bay for Blaine Gabbert | Out, trunk (Week 2); projected return January 30, 2014; no reserve move made | Entry 41 |
-| Tyson Alualu | JAX-TYSONALUALU | DT | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Sen'Derrick Marks | JAX-SENDERRICKMARKS | DT | Active 53 | Branch signing; one year, $1.50M | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Roy Miller | JAX-ROYMILLER | DT | Active 53 | Branch signing; two years, $5.00M | No communicated restriction; fresh game-day communication required | Entry 41 |
-| C.J. Mosley | JAX-CJMOSLEY | DT | Active 53 | Existing contract/control | No communicated restriction; August 29 upper-extremity injury, recovered projection August 30 | Entry 46 |
-| Jeris Pendleton | JAX-JERISPENDLETON | DT | Active 53 | Existing rookie contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Russell Allen | JAX-RUSSELLALLEN | LB | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Sio Moore | JAX-SIOMOORE | LB | Active 53 | #98; rookie contract signed May 2 | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Paul Posluszny | JAX-PAULPOSLUSZNY | LB | Active 53 | Existing 2013 contract | Out, head/neck, independent medical hold (Week 13); projected return April 5, 2014 | Entry 55 |
-| Daryl Smith | JAX-DARYLSMITH | LB | Active 53 | Branch re-signing; two years, $6.00M | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Julian Stanford | JAX-JULIANSTANFORD | LB | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Alan Ball | JAX-ALANBALL | CB | Active 53 | Branch signing; one year, $1.00M | Out, trunk (Week 10); projected return January 22, 2014 | Entry 50 |
-| A.J. Bouye | JAX-AJBOUYE | CB | Active 53 | Three-year UDFA minimum contract | Cleared (Week 11 injury; projected return November 26 reached); fresh game-day communication required | Entry 55 |
-| Brent Grimes | JAX-BRENTGRIMES | CB | Active 53 | Branch signing; one year, $5.50M fully guaranteed | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Mike Harris | JAX-MIKEHARRIS | CB | Active 53 | Existing rookie contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Jordan Poyer | JAX-JORDANPOYER | CB | Active 53 | #64; rookie contract signed May 2 | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Kevin Rutland | JAX-KEVINRUTLAND | CB | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Dwight Lowery | JAX-DWIGHTLOWERY | S | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Chris Prosinski | JAX-CHRISPROSINSKI | S | Active 53 | Existing rookie contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Bacarri Rambo | JAX-BACARRIRAMBO | S | Active 53 | #169; rookie contract signed May 2 | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Brynden Trawick | JAX-BRYNDENTRAWICK | S | Active 53 | Three-year UDFA minimum contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Josh Scobee | JAX-JOSHSCOBEE | K | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Bryan Anger | JAX-BRYANANGER | P | Active 53 | Existing rookie contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Jeremy Cain | JAX-JEREMYCAIN | LS | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
+<!-- player-ages-as-of: 2013-12-29 -->
+
+DOB is a verified pre-divergence identity fact, supported by the [birth-date evidence registry](../library/data/player_birth_dates.json) and [verification notes](../library/2013_player_birth_dates.md). Age is derived at Document 5's master date, refreshed with `python scripts/render_player_ages.py`. Practice-squad birth dates and ages appear in the [current roster](../career/2013/roster.md#4-practice-squad). An age does not determine a rating, medical clearance or retirement.
+
+| Player | Stable ID | Pos. | DOB | Age | Primary status | Current control basis | Current availability boundary | Current source |
+| --- | --- | --- | --- | ---: | --- | --- | --- | --- |
+| Kirk Cousins | JAX-KIRKCOUSINS | QB | 1988-08-19 | 25 | Active 53 | Acquired from Washington; 2014 second transferred | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Chad Henne | JAX-CHADHENNE | QB | 1985-07-02 | 28 | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
+| John Parker Wilson | JAX-JOHNPARKERWILSON | QB | 1985-10-17 | 28 | Active 53 | Dec. 30, 2012 reserve/future contract | No communicated restriction; fresh game-day communication required | Entry 41 |
+| C.J. Anderson | JAX-CJANDERSON | RB | 1991-02-10 | 22 | Active 53 | Three-year UDFA minimum contract | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Jonathan Grimes | JAX-JONATHANGRIMES | RB | 1989-12-21 | 24 | Active 53 | Existing contract/control; not a March 12 free agent | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Maurice Jones-Drew | JAX-MAURICEJONESDREW | RB | 1985-03-23 | 28 | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Montell Owens | JAX-MONTELLOWENS | FB | 1984-05-04 | 29 | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Justin Blackmon | JAX-JUSTINBLACKMON | WR | 1990-01-09 | 23 | Active 53 | Existing rookie contract; 4/17 of 2013 base forfeited for Weeks 2-5, amount unresolved | No communicated restriction; WR3 / outside Z, dressed from Week 8 | Entry 45 |
+| Mike Brown | JAX-MIKEBROWN | WR | 1989-02-09 | 24 | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Toney Clemons | JAX-TONEYCLEMONS | WR | 1988-10-11 | 25 | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Cecil Shorts | JAX-CECILSHORTS | WR | 1987-12-22 | 26 | Active 53 | Existing rookie contract | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Adam Thielen | JAX-ADAMTHIELEN | WR | 1990-08-22 | 23 | Active 53 | Three-year UDFA minimum contract | No communicated restriction; fresh game-day communication required | Entry 43 |
+| Allen Reisner | JAX-ALLENREISNER | TE | 1988-09-29 | 25 | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Marcedes Lewis | JAX-MARCEDESLEWIS | TE | 1984-05-19 | 29 | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Travis Kelce | JAX-TRAVISKELCE | TE | 1989-10-05 | 24 | Active 53 | #33; rookie contract signed May 2 | Cleared (Week 13 minor injury; projected return December 3 reached); fresh game-day communication required | Entry 57 |
+| Cameron Bradfield | JAX-CAMERONBRADFIELD | OT | 1987-09-14 | 26 | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Lane Johnson | JAX-LANEJOHNSON | OT | 1990-05-08 | 23 | Active 53 | #2; rookie contract signed May 2; first-round option mechanism | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Eugene Monroe | JAX-EUGENEMONROE | OT | 1987-04-18 | 26 | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Mark Asper | JAX-MARKASPER | G | 1985-11-08 | 28 | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Uche Nwaneri | JAX-UCHENWANERI | G | 1984-03-20 | 29 | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Austin Pasztor | JAX-AUSTINPASZTOR | G | 1990-11-26 | 23 | Active 53 | Existing contract/control | No communicated restriction; August 17 head/neck hold, recovered projection August 19 | Entry 46 |
+| Will Rackley | JAX-WILLRACKLEY | G | 1989-10-11 | 24 | Active 53 | Existing rookie contract | Limited, no projected absence (upper extremity, Week 5) | Entry 41 |
+| Mike Brewster | JAX-MIKEBREWSTER | C | 1989-07-27 | 24 | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Brad Meester | JAX-BRADMEESTER | C | 1977-03-23 | 36 | Active 53 | Branch re-signing; one year, $1.50M | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Jason Babin | JAX-JASONBABIN | DE | 1980-05-24 | 33 | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Andre Branch | JAX-ANDREBRANCH | DE | 1989-07-14 | 24 | Active 53 | Existing rookie contract | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Ryan Davis | JAX-RYANDAVIS | DE | 1989-02-24 | 24 | Active 53 | Dec. 30, 2012 reserve/future contract | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Lavar Edwards | JAX-LAVAREDWARDS | DE | 1990-04-29 | 23 | Active 53 | #135; rookie contract signed May 2 | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Jeremy Mincey | JAX-JEREMYMINCEY | DE | 1983-12-14 | 30 | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
+| C.J. Wilson | JAX-CJWILSON | DE | 1987-03-30 | 26 | Active 53 | Acquired from Green Bay for Blaine Gabbert | Out, trunk (Week 2); projected return January 30, 2014; no reserve move made | Entry 41 |
+| Tyson Alualu | JAX-TYSONALUALU | DT | 1987-05-12 | 26 | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Sen'Derrick Marks | JAX-SENDERRICKMARKS | DT | 1987-02-23 | 26 | Active 53 | Branch signing; one year, $1.50M | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Roy Miller | JAX-ROYMILLER | DT | 1987-07-09 | 26 | Active 53 | Branch signing; two years, $5.00M | No communicated restriction; fresh game-day communication required | Entry 41 |
+| C.J. Mosley | JAX-CJMOSLEY | DT | 1983-08-06 | 30 | Active 53 | Existing contract/control | No communicated restriction; August 29 upper-extremity injury, recovered projection August 30 | Entry 46 |
+| Jeris Pendleton | JAX-JERISPENDLETON | DT | 1983-11-07 | 30 | Active 53 | Existing rookie contract | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Russell Allen | JAX-RUSSELLALLEN | LB | 1986-05-05 | 27 | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Sio Moore | JAX-SIOMOORE | LB | 1990-05-02 | 23 | Active 53 | #98; rookie contract signed May 2 | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Paul Posluszny | JAX-PAULPOSLUSZNY | LB | 1984-10-10 | 29 | Active 53 | Existing 2013 contract | Out, head/neck, independent medical hold (Week 13); projected return April 5, 2014 | Entry 55 |
+| Daryl Smith | JAX-DARYLSMITH | LB | 1982-03-14 | 31 | Active 53 | Branch re-signing; two years, $6.00M | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Julian Stanford | JAX-JULIANSTANFORD | LB | 1990-09-02 | 23 | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Alan Ball | JAX-ALANBALL | CB | 1985-03-29 | 28 | Active 53 | Branch signing; one year, $1.00M | Out, trunk (Week 10); projected return January 22, 2014 | Entry 50 |
+| A.J. Bouye | JAX-AJBOUYE | CB | 1991-08-16 | 22 | Active 53 | Three-year UDFA minimum contract | Cleared (Week 11 injury; projected return November 26 reached); fresh game-day communication required | Entry 55 |
+| Brent Grimes | JAX-BRENTGRIMES | CB | 1983-07-19 | 30 | Active 53 | Branch signing; one year, $5.50M fully guaranteed | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Mike Harris | JAX-MIKEHARRIS | CB | 1989-01-05 | 24 | Active 53 | Existing rookie contract | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Jordan Poyer | JAX-JORDANPOYER | CB | 1991-04-25 | 22 | Active 53 | #64; rookie contract signed May 2 | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Kevin Rutland | JAX-KEVINRUTLAND | CB | 1988-04-02 | 25 | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Dwight Lowery | JAX-DWIGHTLOWERY | S | 1986-01-23 | 27 | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Chris Prosinski | JAX-CHRISPROSINSKI | S | 1987-04-28 | 26 | Active 53 | Existing rookie contract | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Bacarri Rambo | JAX-BACARRIRAMBO | S | 1990-06-27 | 23 | Active 53 | #169; rookie contract signed May 2 | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Brynden Trawick | JAX-BRYNDENTRAWICK | S | 1989-10-23 | 24 | Active 53 | Three-year UDFA minimum contract | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Josh Scobee | JAX-JOSHSCOBEE | K | 1982-06-23 | 31 | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Bryan Anger | JAX-BRYANANGER | P | 1988-10-06 | 25 | Active 53 | Existing rookie contract | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Jeremy Cain | JAX-JEREMYCAIN | LS | 1980-03-24 | 33 | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
 
 
 ### Players no longer under Jacksonville control
@@ -672,12 +676,12 @@ This table is generated from Document 6 and is only a navigation aid. Active unr
 
 ## End-of-update control block
 
-- Effective through: October 27, 2013, after Week 8.
-- Document 4 register version: `JAX-2013-DEC29-WEEK17-REGISTER-29`.
-- Last content-changing checkpoint: `Canonical update - December 29, 2013 - Week 17 at Indianapolis closed`.
-- Latest source event: season-ledger Entry 60.
+- Effective through: December 29, 2013, after Week 17; age audit Entry 62.
+- Document 4 register version: `JAX-2013-DEC29-PLAYER-AGES-REGISTER-30`.
+- Last content-changing checkpoint: `Canonical update - December 29, 2013 - Player age register reconciled`.
+- Latest source event: season-ledger Entry 62.
 - Current controlled count: **53**, all active; practice squad **8**, separate from the active roster.
 - Cap: regular-season accounting, **~$6.2M-$6.6M before weekly practice-squad charges**.
 - Depth/packages: Cousins QB1; regular-season roles as in `career/2013/roster.md`; weekly structured call sheet (Week 17 latest; Wild Card sheet not yet supplied).
 - Medical: Alan Ball out (Week 10, projected January 22, 2014); Bouye cleared; Posluszny out (independent medical hold, projected April 5, 2014); Kelce cleared; no Week 14-17 injury; Rackley limited (minor); C.J. Wilson out; Pasztor and Mosley available.
-- Next event: AFC Wild Card at Kansas City, January 4-5, 2014; **NOT SIMULATED**.
+- Next event: AFC Wild Card at Kansas City, January 4, 2014, 4:35 p.m. ET; **NOT SIMULATED**.
