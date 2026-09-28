@@ -97,7 +97,11 @@ def observe(receipts):
             assisted += line.get("assisted_tackles", 0)
             tackles += line.get("tackles", 0)
             totals["plays"] += line.get("rushing_attempts", 0) + line.get("dropbacks", 0)
-        totals["yards"] += game.get("passing_yards", 0) + game.get("rushing_yards", 0)
+        # Net yards, as the 2012 centre (passing less sack yards, plus rushing:
+        # 118,418 + 59,349 over 512 team-games). Receipts keep passing yards
+        # gross and each passer's sack yards on his line.
+        sack_yards = sum(line.get("sack_yards", 0) for line in players.values())
+        totals["yards"] += game.get("passing_yards", 0) - sack_yards + game.get("rushing_yards", 0)
         totals["points"] += game.get("points", 0)
         totals["first_downs"] += game.get("first_downs", 0)
         totals["third_att"] += game.get("third_down_attempts", 0)

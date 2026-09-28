@@ -198,3 +198,16 @@ Drawn at the close of Week 11 (Entry 52).
 | NFC Offensive Player | Alfred Morris | Washington Redskins | 29.5 | Alfred Morris, Washington Redskins (29.5); Sam Bradford, St. Louis Rams (26.3); DeMarco Murray, Dallas Cowboys (26.1) |
 | NFC Defensive Player | Morris Claiborne | Dallas Cowboys | 29.9 | Morris Claiborne, Dallas Cowboys (29.9); Glover Quin, Detroit Lions (19.5); Stephen Nicholas, Atlanta Falcons (19.0) |
 | NFC Special Teams Player | Dan Bailey | Dallas Cowboys | 14.0 | Dan Bailey, Dallas Cowboys (14.0); LaMichael James, San Francisco 49ers (12.8); Jeff Locke, Minnesota Vikings (12.2) |
+
+
+
+### Week 13
+
+| Award | Winner | Team | Score | Shortlist (score) |
+|---|---|---|--:|---|
+| AFC Offensive Player | Andy Dalton | Cincinnati Bengals | 27.2 | Andy Dalton, Cincinnati Bengals (27.2); Peyton Manning, Denver Broncos (25.1); Joe Flacco, Baltimore Ravens (23.9) |
+| AFC Defensive Player | Joe Haden | Cleveland Browns | 25.1 | Joe Haden, Cleveland Browns (25.1); Reshad Jones, Miami Dolphins (24.9); Johnathan Joseph, Houston Texans (19.9) |
+| AFC Special Teams Player | Mike Scifres | San Diego Chargers | 16.5 | Mike Scifres, San Diego Chargers (16.5); Rob Bironas, Tennessee Titans (16.0); Eddie Royal, San Diego Chargers (15.8) |
+| NFC Offensive Player | Daryl Richardson | St. Louis Rams | 24.2 | Daryl Richardson, St. Louis Rams (24.2); Larry Fitzgerald, Arizona Cardinals (23.7); Joique Bell, Detroit Lions (22.7) |
+| NFC Defensive Player | Justin Durant | Dallas Cowboys | 21.5 | Justin Durant, Dallas Cowboys (21.5); Brandon Carr, Dallas Cowboys (20.7); Harrison Smith, Minnesota Vikings (18.6) |
+| NFC Special Teams Player | Jon Ryan | Seattle Seahawks | 12.2 | Mason Crosby, Green Bay Packers (15.0); Jon Ryan, Seattle Seahawks (12.2); David Akers, Detroit Lions (12.0) |

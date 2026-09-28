@@ -1318,3 +1318,59 @@ This is an engine defect. It is fixed going forward, and no game is rerun. Until
 **Closed results stand.** Weeks 11-12 remain the 2013.8 audit cohort, and the Week 12 spike stays as closed. Nothing is rerun.
 
 **Commit closed - Canonical update - November 24, 2013 - Kernel 2013.9 adopted (spike seating) - canonical through November 24, after Week 12**
+
+## Entry 55: Week 13 at Cleveland closed
+
+**Effective canonical state:** December 1, 2013, after Week 13
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - December 1, 2013 - Week 13 at Cleveland closed`
+**Preceding global package checkpoint:** `Canonical update - November 24, 2013 - Kernel 2013.9 adopted (spike seating)`
+
+**Result.** Jacksonville 22, Cleveland 19, in overtime, at FirstEnergy Stadium. Regulation ended 19-19. Cleveland received in overtime and punted. Under the modified sudden-death rule the next score won, and Scobee kicked a 34-yard field goal. Jacksonville is 8-4, first in the AFC South a game ahead of 7-5 Tennessee, and the AFC's second seed behind 8-4 Pittsburgh.
+
+**Batch.** All sixteen Week 13 games closed once each under kernel 2013.9, the first slate on it. They were drawn from the package frozen by `build_week_inputs.py 13` (sha256 `2ab521a8...`) after the gate passed; the call sheet, depth chart and scouting Phase III plan were committed before the draw (d12e431). Four games went to overtime; Cincinnati and San Diego tied 30-30 when the period expired.
+
+**Inputs.**
+- **Call sheet:** Stone's fifteen calls, including the new 22-personnel Power and Snag.
+- **Bouye:** cleared at his projected return (November 26) under the rule every club gets, and dressed as first outside reserve.
+- **Inactives:** Ball, C.J. Wilson, Pendleton, Edwards, Asper, John Parker Wilson, Mike Brown.
+
+**Game.**
+- **Run and pass:** 28 runs against 36 dropbacks. Jones-Drew 16 carries for 93 yards and 3 catches for 40.
+- **Passing:** Cousins 20 of 34 for 328 yards, two touchdowns (Shorts 37, Clemons 43) and two interceptions, both by Haden (the second at the Cleveland 28 with 20 seconds left). Lewis caught 7 for 110.
+- **Defense:** Lowery had an interception, 10 tackles and a 40-yard overtime punt return; Allen had a sack. Richardson ran 25 times for 129 yards; Cameron caught 1 of 3 targets.
+- **Kicking:** Scobee made 3 of 4 field goals and missed an extra point. Cundiff made 4 of 4.
+- **Game management:** Stone entered no game-management decision.
+
+**Availability.**
+- **Posluszny:** head/neck, independent medical hold, long-term, projected return April 5, 2014, so he is out for the regular season. No reserve-list move has been made; that is Caldwell's transaction.
+- **Kelce:** minor, out two days, projected return December 3.
+- **Ball:** remains out.
+
+**Scouting Phase III.** Each focus prospect file has a verification entry dated November 30, 2013, using only information public by that date:
+- identity, school and class;
+- eligibility;
+- dated sources;
+- unresolved items;
+- the requested cut-up;
+- a prepared coaching window.
+
+Turner is an underclassman and is not in the 2014 pool until a dated declaration. Harris's status is unresolved (dismissed from Illinois State before 2013; no dated fall-2013 source). Every football first-entry question is OPEN, because no dated tape evidence is recorded; nothing was projected to fill it. There is no tier, no round movement and no recommendation.
+
+**2014 draft library.** `library/2014_draft_information_gates.md` and `library/2014_draft_pool_registry.md` were built in two passes: research, then a separate skeptical verification.
+- **Source limit:** both passes relied on search-result text, because page fetches are blocked by the environment's network policy. Each file says so.
+- **Corrections:** Harris's college path (Wisconsin 2009, then Illinois State); Turner's declaration date (January 13, 2014, gated) and the January 19, 2014 special-eligibility list; the combine invitation gate (February 6, 2014); Butler's Alcorn State detail.
+- **Hindsight:** two hindsight items found in the first pass were removed.
+- **Branch-resolved:** draft order, traded picks and compensatory picks.
+- **Coverage:** full-class coverage is not built.
+
+**Audit correction.** The band audit's yards row compared gross passing yards plus rushing against the 2012 centre of 347.2, which is net of sack yards (118,418 + 59,349 over 512 team-games). `bands.py` now subtracts each passer's sack yards, which lowers every cohort's row by about 14 yards per team-game. Before the correction, the 2013.9 cohort read 393.5 (OUTSIDE); it now reads 376.9 (WITHIN). The synthetic sample sits at the same level, so no engine defect is indicated. No centre, tolerance or result changed, and every graded row is WITHIN.
+
+**Label limitation (recorded, not changed).** Call labels are chosen after each snap from the call's family and position group; personnel is not checked. Three Week 13 completions carry 22-personnel labels though the receiver (Clemons, Blackmon twice) is not in Stone's 22 package. Across the full receipts of Weeks 10-13 this happened on 7 of 135 labelled passes. Labels only; no result depends on them.
+
+**Statistics and awards.** One full receipt and fifteen compact receipts were kept, 192 of 192 in total. Week 13 awards were drawn; no Jacksonville player was shortlisted.
+
+**Primary records:** `regular_season/week_13_jacksonville_at_cleveland/output.md` and `call_sheet.json`; `league_results/week_13.md`; `stats/game_receipts/week_13_*.json`; `awards/`; `scouting/2014_draft/`; `library/2014_draft_information_gates.md`; `library/2014_draft_pool_registry.md`; `standings.md`; `depth_chart.json`.
+**Next competitive event:** Thursday, December 5, Week 14 vs Houston, 8:25 p.m. ET. **Not simulated.**
+
+**Commit closed - Canonical update - December 1, 2013 - Week 13 at Cleveland closed - canonical through December 1, after Week 13**
