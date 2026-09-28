@@ -44,417 +44,256 @@ F1 is an NFL.com report republished by the Patriots; those two outlets are not c
 
 **Identity check:** the target is **Golden Tate, Seattle WR**, not Ben Tate, Houston RB, or Brandon Tate, Cincinnati WR. Golden Tate and Andrew Hawkins were missing from the generated candidate list and are now included above. The seven other target rows have been moved out of that unverified list; their old contract amounts are not treated as verified research.
 
-## Unverified contract candidates (406)
+<!-- BEGIN GENERATED LEAGUE DATABASE -->
+## Generated pending-free-agent candidates
 
-**Status: DRAFT, not cleared for pursuit.** These are the remaining 406 rows from the original 413-row generated list, which attempted to select players on the 31 other clubs whose latest contract in the Over The Cap data was signed in 2013 or earlier and ended with the 2013 season. The raw output includes anomalous years and stale contracts. UFA/RFA/ERFA status is unverified, extensions may be missing, and players off the Week 1 charts may be absent. Preserve these rows as research leads only; a contract end year or appearance here does not establish eligibility.
+Rebuilt from the league database. Verified targets above remain authoritative. Every other category is an experience-based estimate, not verified accrued service or signing permission. Only an estimated contract ending in 2013 produces an expiry candidate. Old contracts ending before 2013 do not. Jacksonville-controlled players use their own register. Unknown contracts and uncertain placement remain in `league_exceptions.csv`; omission here does not mean a player is unavailable.
 
-For an additional target, confirm identity, 2013 club, position and pending category with the same two-pass sourcing discipline, then place him in the appropriate verified section. Check dated controlling actions before any offer or draw. Do not rerun `scripts/research/build_league_rails_rosters.py`: it would overwrite this research.
+### Estimated UFA (191)
 
-| Club (2013) | Player | Pos | Contract in the data |
-|---|---|---|---|
-| Arizona Cardinals | Drew Stanton | QB | 2012-2012, $1,250,000 a year |
-| Arizona Cardinals | Rashard Mendenhall | RB | 2013-2013, $2,500,000 a year |
-| Arizona Cardinals | Alfonso Smith | RB | 0-0, $645,000 a year |
-| Arizona Cardinals | Andre Roberts | WR | 2010-2013, $639,800 a year |
-| Arizona Cardinals | Kory Sperry | TE | 0-0, $730,000 a year |
-| Arizona Cardinals | Levi Brown | T | 2007-2012, $6,120,417 a year |
-| Arizona Cardinals | Paul Fanaika | G | 2013-2013, $830,000 a year |
-| Arizona Cardinals | Mike Gibson | C | 0-1, $665,000 a year |
-| Arizona Cardinals | Darnell Dockett | DT | 2010-2013, $8,825,000 a year |
-| Arizona Cardinals | Frostee Rucker | DT | 2013-2013, $905,000 a year |
-| Arizona Cardinals | Matt Shaughnessy | DE | 2013-2013, $1,000,000 a year |
-| Arizona Cardinals | Karlos Dansby | ILB | 2013-2013, $2,250,000 a year |
-| Arizona Cardinals | Yeremiah Bell | SS | 0-0, $905,000 a year |
-| Arizona Cardinals | Antoine Cason | CB | 0-0, $730,000 a year |
-| Arizona Cardinals | Jay Feely | K | 0-0, $955,000 a year |
-| Atlanta Falcons | Dominique Davis | QB | 0-1, $615,000 a year |
-| Atlanta Falcons | Jason Snelling | RB | 0-2, $1,333,333 a year |
-| Atlanta Falcons | Josh Vaughan | RB | 0-1, $600,000 a year |
-| Atlanta Falcons | Roddy White | WR | 2009-2013, $8,544,000 a year |
-| Atlanta Falcons | Joe Hawley | C | 2010-2013, $565,795 a year |
-| Atlanta Falcons | Jeremy Trueblood | T | 0-0, $840,000 a year |
-| Atlanta Falcons | Jonathan Babineaux | DT | 2008-2012, $5,000,000 a year |
-| Atlanta Falcons | Corey Peters | DT | 2010-2013, $640,500 a year |
-| Atlanta Falcons | Peria Jerry | DT | 2009-2013, $2,070,000 a year |
-| Atlanta Falcons | Dominique Franks | CB | 0-0, $730,000 a year |
-| Baltimore Ravens | Vonta Leach | FB | 0-1, $1,875,000 a year |
-| Baltimore Ravens | Jacoby Jones | WR | 2012-2013, $3,250,000 a year |
-| Baltimore Ravens | Brandon Stokley | WR | 0-0, $940,000 a year |
-| Baltimore Ravens | Ed Dickson | TE | 2013-2013, $1,323,000 a year |
-| Baltimore Ravens | Dallas Clark | TE | 0-0, $1,005,000 a year |
-| Baltimore Ravens | Bryant McKinnie | T | 0-0, $1,000,000 a year |
-| Baltimore Ravens | Michael Oher | T | 2009-2013, $2,139,000 a year |
-| Baltimore Ravens | Haloti Ngata | NT | 2006-2010, $2,380,000 a year |
-| Baltimore Ravens | Arthur Jones | DT | 2013-2013, $2,023,000 a year |
-| Baltimore Ravens | Terrence Cody | NT | 0-0, $730,000 a year |
-| Baltimore Ravens | Josh Bynes | ILB | 2011-2013, APY not listed a year |
-| Baltimore Ravens | Robert James | ILB | 0-0, $480,000 a year |
-| Baltimore Ravens | Corey Graham | FS | 2012-2013, $1,850,000 a year |
-| Baltimore Ravens | Michael Huff | FS | 0-0, $840,000 a year |
-| Buffalo Bills | Fred Jackson | RB | 2012-2013, $4,350,000 a year |
-| Buffalo Bills | Tashard Choice | RB | 0-1, $785,000 a year |
-| Buffalo Bills | Frank Summers | FB | 0-0, $570,000 a year |
-| Buffalo Bills | Steve Johnson | WR | 2008-2011, $439,758 a year |
-| Buffalo Bills | Chris Hogan | WR | 2012-2013, $397,500 a year |
-| Buffalo Bills | Scott Chandler | TE | 2012-2013, $2,725,000 a year |
-| Buffalo Bills | Erik Pears | T | 2011-2013, $3,100,000 a year |
-| Buffalo Bills | Thomas Welch | T | 0-1, $585,000 a year |
-| Buffalo Bills | Kiko Alonso | MLB | 2013-2013, $1,075,100 a year |
-| Buffalo Bills | Arthur Moats | MLB | 2010-2013, $475,500 a year |
-| Buffalo Bills | Jamaal Westerman | OLB | 0-0, $730,000 a year |
-| Buffalo Bills | Marcus Dowtin | OLB | 0-0, $570,000 a year |
-| Buffalo Bills | Justin Rogers | CB | 2013-2013, $555,000 a year |
-| Buffalo Bills | Jim Leonhard | SS | 0-0, $855,000 a year |
-| Buffalo Bills | Jairus Byrd | FS | 2013-2013, $6,916,000 a year |
-| Carolina Panthers | Derek Anderson | QB | 2013-2013, $905,000 a year |
-| Carolina Panthers | Brandon LaFell | WR | 2010-2013, $663,350 a year |
-| Carolina Panthers | Domenik Hixon | WR | 0-0, $830,000 a year |
-| Carolina Panthers | Armanti Edwards | WR | 0-0, $730,000 a year |
-| Carolina Panthers | Ted Ginn | WR | 2013-2013, $1,100,000 a year |
-| Carolina Panthers | Ben Hartsock | TE | 0-0, $905,000 a year |
-| Carolina Panthers | Jordan Gross | T | 2013-2013, $5,500,000 a year |
-| Carolina Panthers | Byron Bell | G | 2011-2013, $469,667 a year |
-| Carolina Panthers | Jeff Byers | C | 0-2, $465,000 a year |
-| Carolina Panthers | Travelle Wharton | G | 0-0, $1,100,000 a year |
-| Carolina Panthers | Colin Cole | DT | 0-0, $1,050,000 a year |
-| Carolina Panthers | Jon Beason | MLB | 2013-2013, $3,500,000 a year |
-| Carolina Panthers | Chase Blackburn | MLB | 0-1, $1,025,000 a year |
-| Carolina Panthers | Jordan Senn | OLB | 0-0, $780,000 a year |
-| Carolina Panthers | Captain Munnerlyn | CB | 2013-2013, $1,100,000 a year |
-| Carolina Panthers | D.J. Moore | CB | 2013-2013, $620,000 a year |
-| Carolina Panthers | James Dockery | CB | 2011-2013, APY not listed a year |
-| Chicago Bears | Jay Cutler | QB | 2009-2010, $14,456,250 a year |
-| Chicago Bears | Josh McCown | QB | 2013-2013, $865,000 a year |
-| Chicago Bears | Tony Fiammetta | FB | 0-1, $812,500 a year |
-| Chicago Bears | Brandon Marshall | WR | 2013-2013, $480,000 a year |
-| Chicago Bears | Devin Hester | WR | 2008-2011, $5,500,881 a year |
-| Chicago Bears | Dante Rosario | TE | 0-0, $870,000 a year |
-| Chicago Bears | Kyle Adams | TE | 2011-2013, APY not listed a year |
-| Chicago Bears | Matt Slauson | G | 2013-2013, $815,000 a year |
-| Chicago Bears | Roberto Garza | C | 2011-2012, $3,125,000 a year |
-| Chicago Bears | Eben Britton | T | 0-0, $730,000 a year |
-| Chicago Bears | James Brown | G | 0-2, $480,000 a year |
-| Chicago Bears | Henry Melton | DT | 2013-2013, $8,450,000 a year |
-| Chicago Bears | Corey Wootton | DE | 2010-2013, $785,043 a year |
-| Chicago Bears | Nate Collins | NT | 0-0, $730,001 a year |
-| Chicago Bears | Zach Minter | DT | 0-1, $540,000 a year |
-| Chicago Bears | Lance Briggs | OLB | 2012-2012, $7,000,000 a year |
-| Chicago Bears | D.J. Williams | MLB | 2013-2013, $1,500,000 a year |
-| Chicago Bears | Blake Costanzo | OLB | 0-0, $855,000 a year |
-| Chicago Bears | Charles Tillman | CB | 2007-2012, $6,166,667 a year |
-| Chicago Bears | Tim Jennings | CB | 2012-2013, $3,300,000 a year |
-| Chicago Bears | Craig Steltz | FS | 0-0, $795,000 a year |
-| Chicago Bears | Isaiah Frey | CB | 2013-2013, $450,000 a year |
-| Chicago Bears | Adam Podlesh | P | 0-0, $855,000 a year |
-| Chicago Bears | Patrick Mannelly | LS | 0-0, $1,040,000 a year |
-| Cincinnati Bengals | Dane Sanzenbacher | WR | 2011-2011, $1,200,000 a year |
-| Cincinnati Bengals | Andrew Whitworth | T | 2011-2012, $9,762,500 a year |
-| Cincinnati Bengals | Anthony Collins | T | 2012-2013, $2,000,000 a year |
-| Cincinnati Bengals | Mike Pollak | G | 0-2, $1,600,000 a year |
-| Cincinnati Bengals | Dennis Roland | T | 0-0, $855,000 a year |
-| Cincinnati Bengals | Michael Johnson | DE | 2013-2013, $11,175,000 a year |
-| Cincinnati Bengals | Domata Peko | NT | 2008-2012, $5,024,000 a year |
-| Cincinnati Bengals | James Harrison | OLB | 2013-2013, $2,225,000 a year |
-| Cincinnati Bengals | Vincent Rey | MLB | 2013-2013, $630,000 a year |
-| Cincinnati Bengals | Jeromy Miles | FS | 0-0, $745,000 a year |
-| Cincinnati Bengals | Brandon Ghee | CB | 0-0, $745,000 a year |
-| Cleveland Browns | Brian Hoyer | QB | 2013-2013, $2,023,000 a year |
-| Cleveland Browns | Chris Ogbonnaya | FB | 0-0, $770,000 a year |
-| Cleveland Browns | MarQueis Gray | TE | 2013-2013, $405,000 a year |
-| Cleveland Browns | Alex Mack | C | 2009-2013, $2,920,000 a year |
-| Cleveland Browns | Oniel Cousins | T | 0-0, $795,000 a year |
-| Cleveland Browns | Rashad Butler | T | 0-0, $715,000 a year |
-| Cleveland Browns | Shawn Lauvao | G | 2010-2013, $621,750 a year |
-| Cleveland Browns | Ahtyba Rubin | DT | 2011-2013, $8,833,333 a year |
-| Cleveland Browns | Paul Hazel | OLB | 0-1, $540,000 a year |
-| Cleveland Browns | T.J. Ward | SS | 2010-2013, $1,378,000 a year |
-| Dallas Cowboys | Phillip Tanner | RB | 0-0, $645,000 a year |
-| Dallas Cowboys | Phil Costa | C | 0-1, $1,350,000 a year |
-| Dallas Cowboys | David Arkin | G | 2013-2013, $102,000 a year |
-| Dallas Cowboys | Anthony Spencer | DE | 2013-2013, $10,627,200 a year |
-| Dallas Cowboys | Jason Hatcher | DT | 2011-2013, $2,000,000 a year |
-| Dallas Cowboys | Landon Cohen | DT | 0-0, $730,000 a year |
-| Dallas Cowboys | Edgar Jones | DE | 0-0, $855,000 a year |
-| Dallas Cowboys | Caesar Rayford | DT | 0-0, $510,000 a year |
-| Dallas Cowboys | Brandon Carr | CB | 2011-2011, $2,611,000 a year |
-| Denver Broncos | Knowshon Moreno | RB | 2009-2013, $3,415,000 a year |
-| Denver Broncos | Eric Decker | WR | 2010-2013, $828,787 a year |
-| Denver Broncos | Zane Beadles | G | 2010-2013, $1,042,750 a year |
-| Denver Broncos | Steve Vallos | C | 0-0, $730,000 a year |
-| Denver Broncos | Robert Ayers | DE | 2009-2013, $2,600,000 a year |
-| Denver Broncos | Mitch Unrein | DT | 2013-2013, $555,000 a year |
-| Denver Broncos | Wesley Woodyard | MLB | 2012-2013, $2,500,000 a year |
-| Denver Broncos | Paris Lenon | MLB | 0-0, $940,000 a year |
-| Denver Broncos | Dominique Rodgers-Cromartie | CB | 2013-2013, $5,000,000 a year |
-| Denver Broncos | Duke Ihenacho | SS | 2012-2012, APY not listed a year |
-| Denver Broncos | Chris Harris | CB | 2011-2013, $465,667 a year |
-| Denver Broncos | Quentin Jammer | CB | 0-0, $1,100,000 a year |
-| Detroit Lions | Shaun Hill | QB | 2012-2013, $2,750,000 a year |
-| Detroit Lions | Joique Bell | RB | 2013-2013, $630,000 a year |
-| Detroit Lions | Patrick Edwards | WR | 0-1, $540,000 a year |
-| Detroit Lions | Micheal Spurlock | WR | 0-0, $730,000 a year |
-| Detroit Lions | Kris Durham | WR | 2013-2013, $555,000 a year |
-| Detroit Lions | Brandon Pettigrew | TE | 2009-2013, $2,400,000 a year |
-| Detroit Lions | Rob Sims | G | 2010-2013, $3,550,000 a year |
-| Detroit Lions | Dominic Raiola | C | 0-0, $1,500,000 a year |
-| Detroit Lions | Leroy Harris | G | 0-1, $1,500,000 a year |
-| Detroit Lions | Dylan Gandy | G | 2013-2013, $905,000 a year |
-| Detroit Lions | Corey Hilliard | T | 0-0, $950,000 a year |
-| Detroit Lions | Israel Idonije | DE | 0-0, $980,000 a year |
-| Detroit Lions | Willie Young | DE | 2013-2013, $1,500,000 a year |
-| Detroit Lions | Rocky McIntosh | OLB | 0-0, $840,000 a year |
-| Detroit Lions | John Wendling | SS | 0-2, $913,333 a year |
-| Detroit Lions | DeJon Gomes | SS | 2011-2012, $557,825 a year |
-| Detroit Lions | David Akers | K | 0-0, $1,005,000 a year |
-| Detroit Lions | Don Muhlbach | LS | 2013-2013, $905,000 a year |
-| Green Bay Packers | Seneca Wallace | QB | 0-0, $840,000 a year |
-| Green Bay Packers | James Starks | RB | 2010-2013, $472,575 a year |
-| Green Bay Packers | John Kuhn | FB | 2011-2013, $2,500,000 a year |
-| Green Bay Packers | Jordy Nelson | WR | 2011-2013, $4,366,667 a year |
-| Green Bay Packers | James Jones | WR | 2011-2013, $3,200,000 a year |
-| Green Bay Packers | Jermichael Finley | TE | 2012-2013, $7,000,000 a year |
-| Green Bay Packers | Evan Smith | C | 2013-2013, $1,323,000 a year |
-| Green Bay Packers | Ryan Pickett | NT | 2010-2013, $6,250,000 a year |
-| Green Bay Packers | B.J. Raji | NT | 2009-2013, $4,500,000 a year |
-| Green Bay Packers | Johnny Jolly | DE | 0-0, $715,000 a year |
-| Green Bay Packers | Rob Francois | ILB | 0-0, $630,000 a year |
-| Green Bay Packers | Mike Neal | OLB | 2010-2013, $861,625 a year |
-| Green Bay Packers | Tramon Williams | CB | 2010-2013, $8,250,000 a year |
-| Green Bay Packers | M.D. Jennings | SS | 0-0, $660,000 a year |
-| Green Bay Packers | Sam Shields | CB | 2013-2013, $2,023,000 a year |
-| Green Bay Packers | Jarrett Bush | CB | 0-2, $1,750,000 a year |
-| Houston Texans | Ben Tate | RB | 0-0, $645,000 a year |
-| Houston Texans | Lestar Jean | WR | 0-0, $635,000 a year |
-| Houston Texans | Garrett Graham | TE | 2010-2013, $567,525 a year |
-| Houston Texans | Duane Brown | T | 2008-2012, $1,825,000 a year |
-| Houston Texans | Wade Smith | G | 2010-2013, $3,000,000 a year |
-| Houston Texans | Cody White | G | 0-0, $585,000 a year |
-| Houston Texans | Earl Mitchell | NT | 2010-2013, $644,625 a year |
-| Houston Texans | Tim Jamison | DE | 0-1, $900,000 a year |
-| Houston Texans | Terrell McClain | NT | 2012-2013, $510,000 a year |
-| Houston Texans | Joe Mays | MLB | 2013-2013, $1,100,000 a year |
-| Houston Texans | Tim Dobbins | MLB | 0-0, $855,000 a year |
-| Indianapolis Colts | Donald Brown | RB | 2009-2013, $1,927,000 a year |
-| Indianapolis Colts | Ahmad Bradshaw | RB | 2013-2013, $2,000,000 a year |
-| Indianapolis Colts | Darrius Heyward-Bey | WR | 2013-2013, $2,500,000 a year |
-| Indianapolis Colts | David Reed | WR | 0-0, $730,000 a year |
-| Indianapolis Colts | Joe Reitz | T | 2013-2013, $555,000 a year |
-| Indianapolis Colts | Aubrayo Franklin | NT | 0-0, $1,005,000 a year |
-| Indianapolis Colts | Robert Mathis | OLB | 2012-2013, $9,000,000 a year |
-| Indianapolis Colts | Mario Harvey | LB | 0-0, $660,000 a year |
-| Indianapolis Colts | Antoine Bethea | SS | 2010-2013, $6,500,000 a year |
-| Indianapolis Colts | Vontae Davis | CB | 2009-2013, $2,040,000 a year |
-| Indianapolis Colts | Joe Young | SS | 0-1, $695,000 a year |
-| Indianapolis Colts | Sergio Brown | FS | 2010-2013, $457,209 a year |
-| Indianapolis Colts | Delano Howell | FS | 0-2, $480,000 a year |
-| Indianapolis Colts | Adam Vinatieri | K | 2011-2013, $3,066,667 a year |
-| Kansas City Chiefs | Dexter McCluster | WR | 2010-2013, $1,298,750 a year |
-| Kansas City Chiefs | Branden Albert | T | 2013-2013, $9,828,000 a year |
-| Kansas City Chiefs | Jon Asamoah | G | 2010-2013, $675,530 a year |
-| Kansas City Chiefs | Geoff Schwartz | G | 2013-2013, $700,000 a year |
-| Kansas City Chiefs | Tyson Jackson | DE | 2013-2013, $4,700,000 a year |
-| Kansas City Chiefs | Akeem Jordan | ILB | 0-0, $920,000 a year |
-| Kansas City Chiefs | Quintin Demps | SS | 2013-2013, $715,000 a year |
-| Miami Dolphins | Richie Incognito | G | 2011-2013, $4,300,000 a year |
-| Miami Dolphins | John Jerry | G | 2010-2013, $699,625 a year |
-| Miami Dolphins | Tyson Clabo | T | 2013-2013, $3,500,000 a year |
-| Miami Dolphins | Will Yeatman | T | 0-1, $950,000 a year |
-| Miami Dolphins | Nate Garner | T | 0-2, $1,625,000 a year |
-| Miami Dolphins | Paul Soliai | DT | 2012-2013, $5,750,000 a year |
-| Miami Dolphins | Randy Starks | DT | 2013-2013, $8,450,000 a year |
-| Miami Dolphins | Nolan Carroll | CB | 2010-2013, $495,438 a year |
-| Minnesota Vikings | Matt Cassel | QB | 2013-2013, $3,700,000 a year |
-| Minnesota Vikings | Toby Gerhart | HB | 2010-2013, $941,625 a year |
-| Minnesota Vikings | Jerome Simpson | WR | 2013-2013, $2,100,000 a year |
-| Minnesota Vikings | Joe Webb | WR | 2010-2013, $508,129 a year |
-| Minnesota Vikings | Charlie Johnson | G | 2013-2013, $3,250,000 a year |
-| Minnesota Vikings | Joe Berger | C | 2013-2013, $905,000 a year |
-| Minnesota Vikings | J'Marcus Webb | T | 2013-2013, $630,000 a year |
-| Minnesota Vikings | Kevin Williams | DT | 2013-2013, $5,000,000 a year |
-| Minnesota Vikings | Everson Griffen | DE | 2010-2013, $582,500 a year |
-| Minnesota Vikings | Fred Evans | NT | 0-0, $1,000,000 a year |
-| Minnesota Vikings | George Johnson | DE | 2012-2013, $585,000 a year |
-| Minnesota Vikings | Chase Baker | NT | 0-1, $450,000 a year |
-| Minnesota Vikings | Marvin Mitchell | OLB | 0-0, $765,000 a year |
-| Minnesota Vikings | Larry Dean | OLB | 0-0, $745,000 a year |
-| Minnesota Vikings | Chris Cook | CB | 0-0, $1,300,000 a year |
-| Minnesota Vikings | Marcus Sherels | CB | 2013-2013, $555,000 a year |
-| New England Patriots | LeGarrette Blount | RB | 2013-2013, $680,000 a year |
-| New England Patriots | Leon Washington | RB | 0-0, $920,000 a year |
-| New England Patriots | Rob Gronkowski | TE | 2010-2013, $1,110,000 a year |
-| New England Patriots | Logan Mankins | G | 2010-2010, $1,540,000 a year |
-| New England Patriots | Will Svitek | T | 0-0, $855,000 a year |
-| New England Patriots | Brandon Spikes | LB | 2010-2013, $800,000 a year |
-| New Orleans Saints | Luke McCown | QB | 2013-2013, $825,000 a year |
-| New Orleans Saints | Jed Collins | FB | 0-0, $810,000 a year |
-| New Orleans Saints | Andy Tanner | WR | 0-1, $465,000 a year |
-| New Orleans Saints | Jimmy Graham | TE | 2010-2013, $825,736 a year |
-| New Orleans Saints | Brian De La Puente | C | 2013-2013, $2,023,000 a year |
-| New Orleans Saints | Zach Strief | T | 2011-2013, $2,066,667 a year |
-| New Orleans Saints | Tom Johnson | DT | 2011-2013, $440,000 a year |
-| New Orleans Saints | Glenn Foster | DE | 0-2, $495,000 a year |
-| New Orleans Saints | Will Herring | ILB | 0-0, $855,000 a year |
-| New Orleans Saints | Parys Haralson | OLB | 0-0, $950,000 a year |
-| New Orleans Saints | Malcolm Jenkins | S | 2009-2013, $2,950,000 a year |
-| New Orleans Saints | Isa Abdul-Quddus | S | 2011-2013, $466,667 a year |
-| New York Giants | Curtis Painter | QB | 0-0, $795,000 a year |
-| New York Giants | Da'Rel Scott | RB | 2013-2013, $555,000 a year |
-| New York Giants | Henry Hynoski | FB | 0-1, $1,050,000 a year |
-| New York Giants | Hakeem Nicks | WR | 2009-2013, $1,845,000 a year |
-| New York Giants | Brandon Myers | TE | 2013-2013, $2,250,000 a year |
-| New York Giants | Kevin Boothe | C | 0-1, $1,312,500 a year |
-| New York Giants | Chris Snee | G | 2008-2013, $6,875,000 a year |
-| New York Giants | Jim Cordle | C | 0-0, $555,000 a year |
-| New York Giants | David Diehl | T | 0-0, $1,000,000 a year |
-| New York Giants | Linval Joseph | NT | 2010-2013, $1,040,125 a year |
-| New York Giants | Justin Tuck | DE | 2008-2012, $6,000,000 a year |
-| New York Giants | Shaun Rogers | DT | 0-0, $1,055,000 a year |
-| New York Giants | Justin Trattou | DE | 2011-2013, APY not listed a year |
-| New York Giants | Dan Connor | MLB | 0-0, $715,000 a year |
-| New York Giants | Keith Rivers | OLB | 0-0, $825,000 a year |
-| New York Giants | Corey Webster | CB | 2013-2013, $4,000,000 a year |
-| New York Giants | Terrell Thomas | CB | 0-0, $730,000 a year |
-| New York Jets | Kellen Winslow | TE | 2013-2013, $840,000 a year |
-| New York Jets | Willie Colon | G | 2013-2013, $1,200,000 a year |
-| New York Jets | Austin Howard | T | 2013-2013, $2,023,000 a year |
-| New York Jets | Calvin Pace | OLB | 2013-2013, $1,005,000 a year |
-| New York Jets | Garrett McIntyre | OLB | 0-0, $645,000 a year |
-| New York Jets | Antwan Barnes | OLB | 0-2, $1,350,000 a year |
-| New York Jets | Ricky Sapp | OLB | 0-0, $660,000 a year |
-| New York Jets | Dawan Landry | S | 0-1, $1,500,000 a year |
-| New York Jets | Darrin Walls | CB | 2011-2013, APY not listed a year |
-| New York Jets | Isaiah Trufant | CB | 0-1, $770,000 a year |
-| New York Jets | Robert Malone | P | 0-1, $630,000 a year |
-| Oakland Raiders | Darren McFadden | RB | 2008-2013, $7,002,292 a year |
-| Oakland Raiders | Rashad Jennings | RB | 2013-2013, $630,000 a year |
-| Oakland Raiders | Taiwan Jones | RB | 2011-2013, $611,250 a year |
-| Oakland Raiders | Jamize Olawale | FB | 2012-2013, $435,000 a year |
-| Oakland Raiders | Jacoby Ford | WR | 0-0, $660,000 a year |
-| Oakland Raiders | Jeron Mastrud | TE | 0-0, $730,000 a year |
-| Oakland Raiders | Tony Pashos | T | 0-0, $840,000 a year |
-| Oakland Raiders | Andre Gurode | C | 0-0, $1,005,000 a year |
-| Oakland Raiders | Vance Walker | DT | 2013-2013, $2,000,000 a year |
-| Oakland Raiders | Pat Sims | NT | 2013-2013, $1,750,000 a year |
-| Oakland Raiders | Jason Hunter | DE | 0-0, $1,000,000 a year |
-| Oakland Raiders | Brian Sanford | DE | 0-0, $645,000 a year |
-| Oakland Raiders | Lamarr Houston | OLB | 2010-2013, $1,082,500 a year |
-| Oakland Raiders | Kaelin Burnett | OLB | 0-0, $660,000 a year |
-| Oakland Raiders | Charles Woodson | FS | 2013-2013, $1,800,000 a year |
-| Oakland Raiders | Tracy Porter | CB | 2013-2013, $1,500,000 a year |
-| Oakland Raiders | Usama Young | FS | 0-1, $1,175,000 a year |
-| Oakland Raiders | Phillip Adams | CB | 2013-2013, $775,000 a year |
-| Philadelphia Eagles | Michael Vick | QB | 2013-2013, $7,500,000 a year |
-| Philadelphia Eagles | Riley Cooper | WR | 2010-2013, $501,620 a year |
-| Philadelphia Eagles | Jeff Maehl | WR | 0-0, $660,000 a year |
-| Philadelphia Eagles | Jason Peters | T | 2009-2012, $12,862,500 a year |
-| Philadelphia Eagles | Cedric Thornton | DT | 2011-2013, $467,500 a year |
-| Philadelphia Eagles | Jake Knott | ILB | 0-0, $510,000 a year |
-| Philadelphia Eagles | Nate Allen | SS | 2010-2013, $1,258,250 a year |
-| Philadelphia Eagles | Patrick Chung | FS | 2013-2013, $3,333,333 a year |
-| Philadelphia Eagles | Kurt Coleman | FS | 2010-2013, $458,342 a year |
-| Philadelphia Eagles | Donnie Jones | P | 2013-2013, $905,000 a year |
-| Pittsburgh Steelers | Ben Roethlisberger | QB | 2008-2013, $14,664,417 a year |
-| Pittsburgh Steelers | LaRod Stephens-Howling | RB | 0-0, $780,000 a year |
-| Pittsburgh Steelers | Felix Jones | RB | 0-0, $780,000 a year |
-| Pittsburgh Steelers | Derek Moye | WR | 0-1, $450,000 a year |
-| Pittsburgh Steelers | Heath Miller | TE | 2009-2013, $6,750,000 a year |
-| Pittsburgh Steelers | David Johnson | TE | 2013-2013, $665,000 a year |
-| Pittsburgh Steelers | Michael Palmer | TE | 0-0, $730,000 a year |
-| Pittsburgh Steelers | Guy Whimper | T | 0-0, $920,000 a year |
-| Pittsburgh Steelers | Brett Keisel | DE | 2009-2012, $2,600,000 a year |
-| Pittsburgh Steelers | Ziggy Hood | DE | 2009-2013, $1,740,000 a year |
-| Pittsburgh Steelers | Al Woods | DE | 2010-2010, $88,400 a year |
-| Pittsburgh Steelers | Jason Worilds | OLB | 2010-2013, $918,750 a year |
-| Pittsburgh Steelers | Kion Wilson | ILB | 0-0, $645,000 a year |
-| Pittsburgh Steelers | Ryan Clark | FS | 2010-2013, $3,500,000 a year |
-| Pittsburgh Steelers | Troy Polamalu | SS | 2011-2013, $9,866,667 a year |
-| Pittsburgh Steelers | Da'Mon Cromartie-Smith | SS | 2010-2013, APY not listed a year |
-| Pittsburgh Steelers | Zoltan Mesko | P | 0-0, $630,000 a year |
-| San Diego Chargers | Charlie Whitehurst | QB | 2012-2013, $1,525,000 a year |
-| San Diego Chargers | Ronnie Brown | RB | 0-0, $855,000 a year |
-| San Diego Chargers | Chad Rinehart | G | 2013-2013, $1,250,000 a year |
-| San Diego Chargers | Rich Ohrnberger | C | 0-0, $795,000 a year |
-| San Diego Chargers | Cam Thomas | DT | 2010-2013, $495,325 a year |
-| San Diego Chargers | Kwame Geathers | DT | 0-1, $555,000 a year |
-| San Diego Chargers | Donald Butler | ILB | 2010-2013, $649,625 a year |
-| San Diego Chargers | Bront Bird | ILB | 2012-2013, $510,000 a year |
-| San Diego Chargers | Terrell Manning | ILB | 2013-2013, $102,000 a year |
-| San Diego Chargers | Richard Marshall | CB | 0-0, $855,000 a year |
-| San Francisco 49ers | Colt McCoy | QB | 2010-2013, $635,250 a year |
-| San Francisco 49ers | Frank Gore | RB | 2011-2013, $6,300,000 a year |
-| San Francisco 49ers | Anquan Boldin | WR | 2010-2012, $8,333,333 a year |
-| San Francisco 49ers | Vernon Davis | TE | 2006-2010, $4,055,000 a year |
-| San Francisco 49ers | Jonathan Goodwin | C | 2013-2013, $2,500,000 a year |
-| San Francisco 49ers | Adam Snyder | G | 0-0, $855,000 a year |
-| San Francisco 49ers | Donte Whitner | SS | 2011-2013, $3,850,000 a year |
-| San Francisco 49ers | Tarell Brown | CB | 2009-2011, $2,400,000 a year |
-| San Francisco 49ers | Nnamdi Asomugha | CB | 2013-2013, $1,350,000 a year |
-| San Francisco 49ers | C.J. Spillman | FS | 0-2, $1,400,000 a year |
-| San Francisco 49ers | Perrish Cox | CB | 2013-2013, $555,000 a year |
-| San Francisco 49ers | Phil Dawson | K | 2013-2013, $2,350,000 a year |
-| San Francisco 49ers | Andy Lee | P | 2007-2012, $1,183,333 a year |
-| Seattle Seahawks | Doug Baldwin | WR | 2011-2013, $470,833 a year |
-| Seattle Seahawks | Stephen Williams | WR | 0-0, $645,000 a year |
-| Seattle Seahawks | Paul McQuistan | G | 2012-2013, $2,000,000 a year |
-| Seattle Seahawks | Max Unger | C | 2009-2012, $926,500 a year |
-| Seattle Seahawks | Breno Giacomini | T | 2012-2013, $3,000,000 a year |
-| Seattle Seahawks | Mike Person | G | 2012-2012, $96,900 a year |
-| Seattle Seahawks | Tony McDaniel | DT | 2013-2013, $890,000 a year |
-| Seattle Seahawks | Michael Bennett | DE | 2013-2013, $4,800,000 a year |
-| Seattle Seahawks | Heath Farwell | MLB | 0-3, $1,125,000 a year |
-| Seattle Seahawks | Brandon Browner | CB | 2013-2013, $805,008 a year |
-| Seattle Seahawks | Chris Maragos | FS | 2013-2013, $1,323,000 a year |
-| Seattle Seahawks | Walter Thurmond | S | 2010-2013, $573,375 a year |
-| St. Louis Rams | Mike McNeill | TE | 2011-2013, APY not listed a year |
-| St. Louis Rams | Chris Williams | G | 2013-2013, $1,376,154 a year |
-| St. Louis Rams | Rodger Saffold | G | 2010-2013, $1,499,500 a year |
-| St. Louis Rams | Shelley Smith | G | 2010-2013, $508,940 a year |
-| St. Louis Rams | Tim Barnes | C | 2013-2013, $480,000 a year |
-| St. Louis Rams | Matt Conrath | DE | 0-0, $585,000 a year |
-| St. Louis Rams | Will Witherspoon | OLB | 0-0, $940,000 a year |
-| St. Louis Rams | Matt Giordano | SS | 0-0, $840,000 a year |
-| St. Louis Rams | Darian Stewart | FS | 2013-2013, $1,000,000 a year |
-| St. Louis Rams | Quinton Pointer | CB | 2012-2012, APY not listed a year |
-| Tampa Bay Buccaneers | Josh Freeman | QB | 2009-2013, $2,700,000 a year |
-| Tampa Bay Buccaneers | Brian Leonard | RB | 0-0, $855,000 a year |
-| Tampa Bay Buccaneers | Peyton Hillis | RB | 0-1, $900,000 a year |
-| Tampa Bay Buccaneers | Mike Williams | WR | 2010-2013, $582,063 a year |
-| Tampa Bay Buccaneers | Eric Page | WR | 0-0, $405,000 a year |
-| Tampa Bay Buccaneers | Jeremy Zuttah | C | 2012-2013, $4,062,500 a year |
-| Tampa Bay Buccaneers | Gary Gibson | DT | 0-0, $1,000,000 a year |
-| Tampa Bay Buccaneers | Derek Landri | DT | 0-1, $1,375,000 a year |
-| Tampa Bay Buccaneers | Trevor Scott | DE | 0-0, $730,000 a year |
-| Tampa Bay Buccaneers | Dekoda Watson | OLB | 2010-2013, $500,455 a year |
-| Tampa Bay Buccaneers | Jonathan Casillas | OLB | 2013-2013, $1,400,000 a year |
-| Tampa Bay Buccaneers | Michael Adams | CB | 2013-2013, $715,000 a year |
-| Tampa Bay Buccaneers | Rian Lindell | K | 0-0, $1,005,000 a year |
-| Tampa Bay Buccaneers | Michael Koenen | P | 0-5, $3,250,000 a year |
-| Tampa Bay Buccaneers | Andrew Economos | LS | 0-0, $905,000 a year |
-| Tennessee Titans | Darius Reynaud | RB | 0-0, $730,000 a year |
-| Tennessee Titans | Jackie Battle | RB | 0-0, $855,000 a year |
-| Tennessee Titans | Kenny Britt | WR | 2009-2013, $1,830,002 a year |
-| Tennessee Titans | Michael Preston | WR | 0-0, $585,000 a year |
-| Tennessee Titans | Michael Roos | T | 2008-2013, $7,166,667 a year |
-| Tennessee Titans | Robert Turner | C | 0-0, $730,000 a year |
-| Tennessee Titans | David Stewart | T | 2008-2013, $6,147,167 a year |
-| Tennessee Titans | Chris Spencer | G | 0-0, $920,000 a year |
-| Tennessee Titans | Ropati Pitoitua | DE | 2013-2013, $1,000,000 a year |
-| Tennessee Titans | Antonio Johnson | DT | 2013-2013, $850,000 a year |
-| Tennessee Titans | Keyunta Dawson | DE | 0-0, $860,000 a year |
-| Tennessee Titans | Patrick Bailey | OLB | 0-2, $1,100,000 a year |
-| Tennessee Titans | Bernard Pollard | SS | 2013-2013, $2,000,000 a year |
-| Tennessee Titans | Rob Bironas | K | 0-1, $3,337,500 a year |
-| Washington Redskins | Josh Morgan | WR | 2012-2013, $5,750,000 a year |
-| Washington Redskins | Santana Moss | WR | 2013-2013, $2,500,000 a year |
-| Washington Redskins | Fred Davis | TE | 2013-2013, $3,000,000 a year |
-| Washington Redskins | Chris Baker | DT | 2013-2013, $1,323,000 a year |
-| Washington Redskins | London Fletcher | MLB | 2012-2013, $5,375,000 a year |
-| Washington Redskins | Perry Riley | ILB | 2010-2013, $580,000 a year |
-| Washington Redskins | Brian Orakpo | OLB | 2009-2013, $3,080,000 a year |
-| Washington Redskins | Nick Barnett | MLB | 0-0, $940,000 a year |
-| Washington Redskins | Bryan Kehl | ILB | 0-0, $740,000 a year |
-| Washington Redskins | DeAngelo Hall | FS | 2013-2013, $1,250,000 a year |
-| Washington Redskins | Josh Wilson | CB | 0-0, $950,000 a year |
-| Washington Redskins | Reed Doughty | SS | 0-2, $1,375,000 a year |
-| Washington Redskins | Jerome Murphy | CB | 0-0, $645,000 a year |
-| Washington Redskins | Jose Gumbs | SS | 0-0, $495,000 a year |
+| Player | GSIS ID | Observed 2013 club | Pos | Contract estimate | Review flags |
+|---|---|---|---|---|---|
+| Adam Vinatieri | 00-0016919 | IND | K | 2011-2013 (estimate) | Verify expiry and accrued service |
+| Ahmad Bradshaw | 00-0025637 | IND | RB | 2013-2013 (estimate) | last_observed_before_week17 |
+| Ahtyba Rubin | 00-0026330 | CLE | DE | 2011-2013 (estimate) | Verify expiry and accrued service |
+| Alex Mack | 00-0026997 | CLE | C | 2009-2013 (estimate) | Verify expiry and accrued service |
+| Andre Brown | 00-0027094 | NYG | RB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Andre Roberts | 00-0027691 | ARI | WR | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Anthony Collins | 00-0026252 | CIN | T | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Anthony Spencer | 00-0025413 | DAL | DE | 2013-2013 (estimate) | last_observed_before_week17 |
+| Antoine Bethea | 00-0024421 | IND | SS | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Antonio Johnson | 00-0025539 | TEN | DT | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Antonio Smith | 00-0022793 | HOU | DE | 2009-2013 (estimate) | Verify expiry and accrued service |
+| Arthur Jones | 00-0027756 | BAL | DT | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Arthur Moats | 00-0027777 | BUF | MLB | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Austin Howard | 00-0027297 | NYJ | T | 2013-2013 (estimate) | Verify expiry and accrued service |
+| B.J. Raji | 00-0026985 | GB | DT | 2009-2013 (estimate) | Verify expiry and accrued service |
+| Bernard Pollard | 00-0024269 | TEN | SS | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Branden Albert | 00-0026155 | KC | T | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Brandon Browner | 00-0023013 | SEA | CB | 2013-2013 (estimate) | last_observed_before_week17 |
+| Brandon LaFell | 00-0027681 | CAR | WR | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Brandon Myers | 00-0027135 | NYG | TE | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Brandon Pettigrew | 00-0026996 | DET | TE | 2009-2013 (estimate) | last_observed_before_week17 |
+| Brandon Spikes | 00-0027668 | NE | ILB | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Breno Giacomini | 00-0026290 | SEA | T | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Brian De La Puente | 00-0025980 | NO | C | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Brian Orakpo | 00-0026989 | WAS | OLB | 2009-2013 (estimate) | Verify expiry and accrued service |
+| Calvin Pace | 00-0022120 | NYJ | OLB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Cam Thomas | 00-0027745 | SD | DT | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Captain Munnerlyn | 00-0026944 | CAR | CB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Chad Rinehart | 00-0026236 | SD | G | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Charles Woodson | 00-0018227 | OAK | FS | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Charlie Johnson | 00-0024413 | MIN | G | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Charlie Whitehurst | 00-0024296 | SD | QB | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Chris Baker | 00-0026512 | WAS | DE | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Chris Clemons | 00-0021577 | SEA | DE | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Chris Clemons | 00-0027115 | MIA | FS | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Chris Maragos | 00-0027378 | SEA | FS | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Chris Snee | 00-0022838 | NYG | G | 2008-2013 (estimate) | last_observed_before_week17 |
+| Chris Williams | 00-0026154 | STL | G | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Clinton McDonald | 00-0026964 | SEA | DT | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Corey Graham | 00-0025555 | BAL | CB | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Corey Peters | 00-0027686 | ATL | DT | 2010-2013 (estimate) | last_observed_before_week17 |
+| Corey Webster | 00-0023478 | NYG | CB | 2013-2013 (estimate) | last_observed_before_week17 |
+| Corey Wootton | 00-0027603 | CHI | DE | 2010-2013 (estimate) | Verify expiry and accrued service |
+| D.J. Moore | 00-0026907 | CAR | CB | 2013-2013 (estimate) | last_observed_before_week17; release_status_needs_dated_source |
+| D.J. Williams | 00-0022780 | CHI | MLB | 2013-2013 (estimate) | last_observed_before_week17 |
+| Da'Mon Cromartie-Smith | 00-0027239 | PIT | SS | 2010-2013 (estimate) | last_observed_before_week17; release_status_needs_dated_source |
+| Darian Stewart | 00-0027256 | STL | FS | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Darnell Dockett | 00-0022930 | ARI | DT | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Darren McFadden | 00-0026144 | OAK | RB | 2008-2013 (estimate) | Verify expiry and accrued service |
+| Darrius Heyward-Bey | 00-0026983 | IND | WR | 2013-2013 (estimate) | Verify expiry and accrued service |
+| David Johnson | 00-0026957 | PIT | TE | 2013-2013 (estimate) | last_observed_before_week17 |
+| DeAngelo Hall | 00-0022923 | WAS | CB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Dekoda Watson | 00-0027812 | TB | OLB | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Dennis Pitta | 00-0027714 | BAL | TE | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Derek Anderson | 00-0023645 | CAR | QB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Dexter McCluster | 00-0027651 | KC | WR | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Dominique Rodgers-Cromartie | 00-0026156 | DEN | CB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Don Muhlbach | 00-0022455 | DET | LS | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Donald Brown | 00-0027003 | IND | RB | 2009-2013 (estimate) | Verify expiry and accrued service |
+| Donald Butler | 00-0027682 | SD | ILB | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Donnie Jones | 00-0022684 | PHI | P | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Donte Whitner | 00-0024223 | SF | SS | 2011-2013 (estimate) | Verify expiry and accrued service |
+| Dylan Gandy | 00-0023563 | DET | G | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Earl Mitchell | 00-0027684 | HOU | NT | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Ed Dickson | 00-0027675 | BAL | TE | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Ed Reed | 00-0021377 | NYJ | FS | 2013-2013 (estimate) | missing_or_conflicting_source_status; release_status_needs_dated_source |
+| Eric Decker | 00-0027690 | DEN | WR | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Erik Pears | 00-0023016 | BUF | T | 2011-2013 (estimate) | Verify expiry and accrued service |
+| Evan Dietrich-Smith | 00-0026784 | GB | C | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Evander Hood | 00-0027008 | PIT | DE | 2009-2013 (estimate) | Verify expiry and accrued service |
+| Everson Griffen | 00-0027701 | MIN | DE | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Frank Gore | 00-0023500 | SF | RB | 2011-2013 (estimate) | Verify expiry and accrued service |
+| Fred Davis | 00-0026188 | WAS | TE | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Fred Jackson | 00-0024204 | BUF | RB | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Frostee Rucker | 00-0024306 | ARI | DT | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Garrett Graham | 00-0027718 | HOU | TE | 2010-2013 (estimate) | last_observed_before_week17 |
+| Geoff Schwartz | 00-0026381 | KC | T | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Hakeem Nicks | 00-0027005 | NYG | WR | 2009-2013 (estimate) | Verify expiry and accrued service |
+| Heath Miller | 00-0023465 | PIT | TE | 2009-2013 (estimate) | Verify expiry and accrued service |
+| Henry Melton | 00-0026905 | CHI | DT | 2013-2013 (estimate) | last_observed_before_week17 |
+| J'Marcus Webb | 00-0027609 | MIN | T | 2013-2013 (estimate) | Verify expiry and accrued service |
+| J.D. Walton | 00-0027683 | WAS | C | 2010-2013 (estimate) | missing_or_conflicting_source_status; release_status_needs_dated_source |
+| Jacoby Jones | 00-0025460 | BAL | WR | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Jairus Byrd | 00-0027018 | BUF | FS | 2013-2013 (estimate) | Verify expiry and accrued service |
+| James Harrison | 00-0020712 | CIN | OLB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| James Jones | 00-0025465 | GB | WR | 2011-2013 (estimate) | Verify expiry and accrued service |
+| James Starks | 00-0027791 | GB | RB | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Jared Veldheer | 00-0027674 | OAK | T | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Jason Hatcher | 00-0024307 | DAL | DT | 2011-2013 (estimate) | Verify expiry and accrued service |
+| Jason Worilds | 00-0027889 | PIT | OLB | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Jeremy Zuttah | 00-0026223 | TB | C | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Jermichael Finley | 00-0026231 | GB | TE | 2012-2013 (estimate) | last_observed_before_week17 |
+| Jerome Simpson | 00-0026186 | MIN | WR | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Jimmy Graham | 00-0027696 | NO | TE | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Joe Berger | 00-0023639 | MIN | C | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Joe Hawley | 00-0027717 | ATL | C | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Joe Mays | 00-0026340 | HOU | ILB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Joe Reitz | 00-0026408 | IND | G | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Joe Webb | 00-0027796 | MIN | WR | 2010-2013 (estimate) | Verify expiry and accrued service |
+| John Jerry | 00-0027678 | MIA | G | 2010-2013 (estimate) | Verify expiry and accrued service |
+| John Kuhn | 00-0022999 | GB | FB | 2011-2013 (estimate) | Verify expiry and accrued service |
+| Joique Bell | 00-0027218 | DET | RB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Jon Asamoah | 00-0027673 | KC | G | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Jon Beason | 00-0025412 | NYG | OLB | 2013-2013 (estimate) | missing_or_conflicting_source_status; release_status_needs_dated_source |
+| Jonathan Casillas | 00-0026832 | TB | OLB | 2013-2013 (estimate) | last_observed_before_week17 |
+| Jonathan Goodwin | 00-0021267 | SF | C | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Jordan Gross | 00-0022117 | CAR | T | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Jordy Nelson | 00-0026176 | GB | WR | 2011-2013 (estimate) | Verify expiry and accrued service |
+| Josh Freeman | 00-0026993 | MIN | QB | 2013-2013 (estimate) | missing_or_conflicting_source_status; release_status_needs_dated_source |
+| Josh McCown | 00-0021206 | CHI | QB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Josh Morgan | 00-0026314 | WAS | WR | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Karlos Dansby | 00-0022927 | ARI | ILB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Kellen Winslow | 00-0022922 | NYJ | TE | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Kenny Britt | 00-0027006 | TEN | WR | 2009-2013 (estimate) | Verify expiry and accrued service |
+| Kevin Williams | 00-0022073 | MIN | DT | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Knowshon Moreno | 00-0026988 | DEN | RB | 2009-2013 (estimate) | Verify expiry and accrued service |
+| Kurt Coleman | 00-0027835 | PHI | FS | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Kyle Williams | 00-0027608 | KC | WR | 2013-2013 (estimate) | last_observed_before_week17; missing_or_conflicting_source_status; release_status_needs_dated_source |
+| Lamarr Houston | 00-0027657 | OAK | DE | 2010-2013 (estimate) | Verify expiry and accrued service |
+| LeGarrette Blount | 00-0027325 | NE | RB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Linval Joseph | 00-0027885 | NYG | DT | 2010-2013 (estimate) | Verify expiry and accrued service |
+| London Fletcher | 00-0005322 | WAS | ILB | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Luke McCown | 00-0022864 | NO | QB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Malcolm Jenkins | 00-0026990 | NO | FS | 2009-2013 (estimate) | Verify expiry and accrued service |
+| Marcus Sherels | 00-0027547 | MIN | CB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Matt Cassel | 00-0023662 | MIN | QB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Matt Shaughnessy | 00-0027045 | ARI | OLB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Matt Slauson | 00-0026500 | CHI | G | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Michael Adams | 00-0025668 | TB | CB | 2013-2013 (estimate) | last_observed_before_week17 |
+| Michael Bennett | 00-0026618 | SEA | DE | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Michael Johnson | 00-0027044 | CIN | DE | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Michael Mitchell | 00-0027023 | CAR | SS | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Michael Oher | 00-0026999 | BAL | T | 2009-2013 (estimate) | Verify expiry and accrued service |
+| Michael Roos | 00-0023476 | TEN | T | 2008-2013 (estimate) | Verify expiry and accrued service |
+| Michael Vick | 00-0020245 | PHI | QB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Mike Adams | 00-0022247 | DEN | SS | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Mike Neal | 00-0027664 | GB | DE | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Mitch Unrein | 00-0027573 | DEN | DT | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Nate Allen | 00-0027652 | PHI | SS | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Nnamdi Asomugha | 00-0022077 | SF | CB | 2013-2013 (estimate) | last_observed_before_week17; release_status_needs_dated_source |
+| Nolan Carroll | 00-0027744 | MIA | CB | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Pat Sims | 00-0026217 | OAK | NT | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Patrick Chung | 00-0027010 | PHI | FS | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Paul Fanaika | 00-0026943 | ARI | G | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Paul McQuistan | 00-0024284 | SEA | G | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Paul Soliai | 00-0025495 | MIA | DT | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Peria Jerry | 00-0027000 | ATL | DT | 2009-2013 (estimate) | Verify expiry and accrued service |
+| Perrish Cox | 00-0027737 | SF | CB | 2013-2013 (estimate) | missing_or_conflicting_source_status; release_status_needs_dated_source |
+| Perry Riley | 00-0027704 | WAS | ILB | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Phil Dawson | 00-0004091 | SF | K | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Phillip Adams | 00-0027610 | OAK | CB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Quintin Demps | 00-0026257 | KC | SS | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Randy Starks | 00-0022805 | MIA | DT | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Rashad Jennings | 00-0027155 | OAK | RB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Rashard Mendenhall | 00-0026163 | ARI | RB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Richie Incognito | 00-0023516 | MIA | G | 2011-2013 (estimate) | last_observed_before_week17 |
+| Riley Cooper | 00-0027758 | PHI | WR | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Robert Ayers | 00-0026994 | DEN | DE | 2009-2013 (estimate) | Verify expiry and accrued service |
+| Robert Mathis | 00-0022059 | IND | OLB | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Roddy White | 00-0023462 | ATL | WR | 2009-2013 (estimate) | Verify expiry and accrued service |
+| Rodger Saffold | 00-0027648 | STL | T | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Ropati Pitoitua | 00-0026016 | TEN | DE | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Ryan Clark | 00-0020840 | PIT | FS | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Ryan Pickett | 00-0020515 | GB | NT | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Sam Shields | 00-0027440 | GB | CB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Santana Moss | 00-0020494 | WAS | WR | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Scott Chandler | 00-0025516 | BUF | TE | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Sergio Brown | 00-0027232 | IND | FS | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Shaun Hill | 00-0020679 | DET | QB | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Shawn Lauvao | 00-0027694 | CLE | G | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Shelley Smith | 00-0027785 | STL | G | 2010-2013 (estimate) | Verify expiry and accrued service |
+| T.J. Ward | 00-0027653 | CLE | SS | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Ted Ginn | 00-0025396 | CAR | WR | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Tim Jennings | 00-0024277 | CHI | CB | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Toby Gerhart | 00-0027888 | MIN | RB | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Tom Johnson | 00-0024030 | NO | DE | 2011-2013 (estimate) | Verify expiry and accrued service |
+| Tony McDaniel | 00-0024102 | SEA | DT | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Tracy Porter | 00-0026180 | OAK | CB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Troy Polamalu | 00-0022119 | PIT | SS | 2011-2013 (estimate) | Verify expiry and accrued service |
+| Tyson Clabo | 00-0022245 | MIA | T | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Tyson Jackson | 00-0026980 | KC | DE | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Vance Walker | 00-0026942 | OAK | DT | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Vincent Rey | 00-0027245 | CIN | OLB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Vontae Davis | 00-0027001 | IND | CB | 2009-2013 (estimate) | Verify expiry and accrued service |
+| Wade Smith | 00-0022131 | HOU | G | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Walter Thurmond | 00-0027711 | SEA | CB | 2010-2013 (estimate) | Verify expiry and accrued service |
+| Wesley Woodyard | 00-0025828 | DEN | MLB | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Willie Colon | 00-0024193 | NYJ | G | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Willie Young | 00-0027808 | DET | DE | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Zach Strief | 00-0024424 | NO | T | 2011-2013 (estimate) | Verify expiry and accrued service |
+| Zane Beadles | 00-0027658 | DEN | G | 2010-2013 (estimate) | Verify expiry and accrued service |
+
+### Estimated RFA (21)
+
+| Player | GSIS ID | Observed 2013 club | Pos | Contract estimate | Review flags |
+|---|---|---|---|---|---|
+| Bront Bird | 00-0028575 | SD | ILB | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Byron Bell | 00-0028738 | CAR | T | 2011-2013 (estimate) | Verify expiry and accrued service |
+| Chris Harris | 00-0028224 | DEN | CB | 2011-2013 (estimate) | Verify expiry and accrued service |
+| D.J. Williams | 00-0028079 | NE | TE | 2013-2013 (estimate) | missing_or_conflicting_source_status; release_status_needs_dated_source |
+| Da'Rel Scott | 00-0028159 | NYG | RB | 2013-2013 (estimate) | last_observed_before_week17 |
+| Danny Watkins | 00-0027961 | MIA | G | 2013-2013 (estimate) | Verify expiry and accrued service |
+| DeMarcus Van Dyke | 00-0028019 | PIT | FS | 2013-2013 (estimate) | last_observed_before_week17; release_status_needs_dated_source |
+| Doug Baldwin | 00-0028434 | SEA | WR | 2011-2013 (estimate) | Verify expiry and accrued service |
+| Isa Abdul-Quddus | 00-0028564 | NO | FS | 2011-2013 (estimate) | release_status_needs_dated_source |
+| Jerrell Powe | 00-0028137 | KC | DT | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Josh Bynes | 00-0028278 | BAL | ILB | 2011-2013 (estimate) | Verify expiry and accrued service |
+| Justin Rogers | 00-0028144 | MIA | CB | 2013-2013 (estimate) | last_observed_before_week17; missing_or_conflicting_source_status; release_status_needs_dated_source |
+| Kris Durham | 00-0028045 | DET | WR | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Marvin Austin | 00-0027990 | DAL | DT | 2013-2013 (estimate) | last_observed_before_week17; missing_or_conflicting_source_status; release_status_needs_dated_source |
+| Owen Marecic | 00-0028062 | SF | FB | 2013-2013 (estimate) | last_observed_before_week17; release_status_needs_dated_source |
+| Richard Gordon | 00-0028119 | KC | TE | 2013-2013 (estimate) | missing_or_conflicting_source_status; release_status_needs_dated_source |
+| Stephen Schilling | 00-0028139 | SD | T | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Taiwan Jones | 00-0028063 | OAK | CB | 2011-2013 (estimate) | Verify expiry and accrued service |
+| Tandon Doss | 00-0028061 | BAL | WR | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Terrell McClain | 00-0028003 | HOU | DT | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Tim Barnes | 00-0028274 | STL | C | 2013-2013 (estimate) | Verify expiry and accrued service |
+
+### Estimated ERFA (14)
+
+| Player | GSIS ID | Observed 2013 club | Pos | Contract estimate | Review flags |
+|---|---|---|---|---|---|
+| Alameda Ta'amu | 00-0029138 | ARI | NT | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Austin Davis | 00-0028957 | STL | QB | 2013-2013 (estimate) | missing_or_conflicting_source_status; release_status_needs_dated_source |
+| Cam Johnson | 00-0029310 | IND | OLB | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Chris Greenwood | 00-0029213 | DET | DB | 2013-2013 (estimate) | missing_or_conflicting_source_status; release_status_needs_dated_source |
+| Edwin Baker | 00-0029317 | CLE | RB | 2013-2013 (estimate) | missing_or_conflicting_source_status; release_status_needs_dated_source |
+| Isaiah Frey | 00-0029299 | CHI | CB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Jamize Olawale | 00-0029492 | OAK | FB | 2012-2013 (estimate) | Verify expiry and accrued service |
+| Kheeston Randall | 00-0029571 | CIN | DT | 2013-2013 (estimate) | last_observed_before_week17; release_status_needs_dated_source |
+| Kiko Alonso | 00-0030401 | BUF | MLB | 2013-2013 (estimate) | Verify expiry and accrued service |
+| MarQueis Gray | 00-0029878 | CLE | TE | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Marvin McNutt | 00-0029424 | CAR | WR | 2013-2013 (estimate) | missing_or_conflicting_source_status; release_status_needs_dated_source |
+| Matt McCants | 00-0029302 | OAK | T | 2013-2013 (estimate) | Verify expiry and accrued service |
+| Terrell Manning | 00-0029291 | SD | ILB | 2013-2013 (estimate) | last_observed_before_week17 |
+| Trevin Wade | 00-0029314 | NO | CB | 2013-2013 (estimate) | Verify expiry and accrued service |
+
+### Estimated unknown category (0)
+
+| Player | GSIS ID | Observed 2013 club | Pos | Contract estimate | Review flags |
+|---|---|---|---|---|---|
+
+The superseded 406-row raw list is replaced by these ID-linked candidates and the complete research inventory. Released-status observations are not exact dated releases; they remain research leads, not confirmed unsigned players.
+<!-- END GENERATED LEAGUE DATABASE -->

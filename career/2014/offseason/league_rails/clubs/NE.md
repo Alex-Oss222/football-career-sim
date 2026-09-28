@@ -1,62 +1,76 @@
-# New England Patriots: 2014 rails roster (draft)
+<!-- BEGIN GENERATED LEAGUE DATABASE -->
+# New England Patriots: generated end-of-2013 research inventory
 
-**Status:** DRAFT for the user to complete. Starting point: the branch's 2013 Week 1 unit (`library/2013_week1_depth_charts.md`), with contract years from Over The Cap data signed in 2013 or earlier. The contract end year is unverified: extensions can list only the added years. No 2014 signing, release, trade or destination is recorded here; those enter only on their real dates (AGENTS.md, Historical league rails).
+**As of:** February 2, 2014. These are historical observations with existing branch placements applied, not a certified final roster or a live TeamInput. Source status does not impose an injury or suspension on the branch. Week 1 slots are reference labels only; row order is alphabetical, not depth order.
 
-| 2013 slot | Player | Pos | Contract in the data (signed-to-end, average per year) | 2014 status | User notes |
-|---|---|---|---|---|---|
-| QB1 | Tom Brady | QB | 2013-2017, $11,400,000 a year | Under contract (draft) | |
-| QB2 | Ryan Mallett | QB | 2011-2014, $736,957 a year | Under contract (draft) | |
-| RB1 | Stevan Ridley | RB | 2011-2014, $738,375 a year | Under contract (draft) | |
-| RB1 | Shane Vereen | RB | 2011-2014, $865,288 a year | Under contract (draft) | |
-| RB2 | Brandon Bolden | RB | not in the contract data | Unknown: confirm | |
-| RB2 | LeGarrette Blount | RB | 2013-2013, $680,000 a year | Pending free agent (draft) | |
-| RB3 | Leon Washington | RB | 0-0, $920,000 a year | Pending free agent (draft) | |
-| RB3 | James Develin | RB | not in the contract data | Unknown: confirm | |
-| WR1 | Danny Amendola | WR | 2013-2017, $5,700,000 a year | Under contract (draft) | |
-| WR1,PR1 | Julian Edelman | WR | 2013-2013, $765,000 a year | Pending free agent (draft) | |
-| WR2 | Aaron Dobson | WR | 2013-2016, $857,093 a year | Under contract (draft) | |
-| WR2,KOR2 | Matt Slater | WR | 2012-2014, $1,800,000 a year | Under contract (draft) | |
-| WR3 | Josh Boyce | WR | 2013-2016, $659,250 a year | Under contract (draft) | |
-| WR3 | Kenbrell Thompkins | WR | not in the contract data | Unknown: confirm | |
-| TE1 | Rob Gronkowski | TE | 2010-2013, $1,110,000 a year | Pending free agent (draft) | |
-| TE2 | Michael Hoomanawanui | TE | not in the contract data | Unknown: confirm | |
-| TE3 | Zach Sudfeld | TE | not in the contract data | Unknown: confirm | |
-| LT1 | Nate Solder | T | 2011-2015, $3,195,698 a year | Under contract (draft) | |
-| LG1 | Logan Mankins | G | 2010-2010, $1,540,000 a year | Pending free agent (draft) | |
-| C1 | Ryan Wendell | C | not in the contract data | Unknown: confirm | |
-| RG1 | Dan Connolly | G | 2012-2014, $3,250,000 a year | Under contract (draft) | |
-| RT1 | Sebastian Vollmer | T | 2013-2016, $4,187,500 a year | Under contract (draft) | |
-| LT2 | Marcus Cannon | T | 2011-2014, $584,547 a year | Under contract (draft) | |
-| LG2,RT2,RG2 | Will Svitek | T | 0-0, $855,000 a year | Pending free agent (draft) | |
-| LT3 | Josh Kline | G | 2013-2015, $496,333 a year | Under contract (draft) | |
-| RG3 | Chris Barker | G | not in the contract data | Unknown: confirm | |
-| LE1 | Rob Ninkovich | DE | 2013-2015, $3,566,667 a year | Under contract (draft) | |
-| DT1 | Vince Wilfork | DT | 2010-2014, $8,009,000 a year | Under contract (draft) | |
-| RE1 | Chandler Jones | DE | 2012-2016, $3,194,500 a year | Under contract (draft) | |
-| DT1 | Tommy Kelly | DT | 2013-2014, $2,500,000 a year | Under contract (draft) | |
-| LE2 | Jake Bequette | DE | 2012-2015, $663,700 a year | Under contract (draft) | |
-| DT2,DT2 | Joe Vellano | DT | not in the contract data | Unknown: confirm | |
-| RE2,LE3 | Michael Buchanan | DE | 2013-2016, $553,403 a year | Under contract (draft) | |
-| LB1 | Jerod Mayo | LB | 2011-2015, $9,700,000 a year | Under contract (draft) | |
-| LB1 | Brandon Spikes | LB | 2010-2013, $800,000 a year | Pending free agent (draft) | |
-| LB1 | Dont'a Hightower | LB | 2012-2016, $3,095,000 a year | Under contract (draft) | |
-| LB2 | Dane Fletcher | LB | not in the contract data | Unknown: confirm | |
-| LB2 | Jamie Collins | LB | 2013-2016, $940,251 a year | Under contract (draft) | |
-| LB2 | Steve Beauharnais | LB | 2013-2016, $551,898 a year | Under contract (draft) | |
-| LB3 | Chris White | LB | 2011-2014, $540,150 a year | Under contract (draft) | |
-| S1,KOR1 | Devin McCourty | S | 2010-2014, $2,000,000 a year | Under contract (draft) | |
-| LCB1 | Aqib Talib | CB | 2013-2013, $5,000,000 a year | Pending free agent (draft) | |
-| RCB1 | Alfonzo Dennard | CB | 2012-2015, $539,462 a year | Under contract (draft) | |
-| S1 | Steve Gregory | S | 2012-2014, $2,350,000 a year | Under contract (draft) | |
-| RCB2 | Kyle Arrington | CB | 2013-2016, $4,000,000 a year | Under contract (draft) | |
-| S2 | Tavon Wilson | S | 2012-2015, $1,054,474 a year | Under contract (draft) | |
-| LCB2 | Marquice Cole | CB | not in the contract data | Unknown: confirm | |
-| S2 | Duron Harmon | S | 2013-2016, $677,775 a year | Under contract (draft) | |
-| S3 | Nate Ebner | S | 2012-2015, $549,150 a year | Under contract (draft) | |
-| LCB3 | Logan Ryan | FS | 2013-2016, $693,313 a year | Under contract (draft) | |
-| K1 | Stephen Gostkowski | K | 2010-2014, $3,400,000 a year | Under contract (draft) | |
-| H1,P1 | Ryan Allen | P | not in the contract data | Unknown: confirm | |
-| LS1 | Danny Aiken | LS | not in the contract data | Unknown: confirm | |
+63 players. See [database coverage and rebuild instructions](../league_database_report.md). Contract years and experience-derived categories require verification before pursuit. Manual dated moves below are preserved by rebuilds.
+
+| Player | GSIS ID | Pos | 2013 branch Week 1 slot | Last observed week | Source status | Contract | Pending FA | Review flags |
+|---|---|---|---|---|---|---|---|---|
+| Aaron Dobson | 00-0030540 | WR | WR2 | 20 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Alfonzo Dennard | 00-0029596 | CB | RCB1 | 20 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Andre Carter | 00-0020489 | DE | Unknown | 20 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Andre Neblett | 00-0027402 | DT | Unknown | 7 | CUT | no pre 2014 contract | Unknown | last_observed_before_week17; no_pre_2014_contract; release_status_needs_dated_source |
+| Aqib Talib | 00-0026160 | CB | LCB1 | 20 | ACT | 2013-2013 (estimate) | UFA (verified) | Source data only |
+| Austin Collie | 00-0027092 | WR | Unknown | 20 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Brandon Bolden | 00-0029239 | RB | RB2 | 20 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Brandon Spikes | 00-0027668 | ILB | LB1 | 18 | RES | 2010-2013 (estimate) | UFA (estimate) | Source data only |
+| Chandler Jones | 00-0029585 | DE | RE1 | 20 | ACT | 2012-2016 (estimate) | Under contract (estimate) | Source data only |
+| Chris Barker | 00-0029965 | G | RG3 | 20 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Chris Jones | 00-0030106 | DT | Unknown | 20 | ACT,TRC | 2013-2016 (estimate) | Under contract (estimate) | missing_or_conflicting_source_status; release_status_needs_dated_source |
+| Chris White | 00-0028107 | OLB | LB3 | 20 | ACT | 2011-2014 (estimate) | Under contract (estimate) | Source data only |
+| D.J. Williams | 00-0028079 | TE | Unknown | 20 | ACT,TRD | 2013-2013 (estimate) | RFA (estimate) | missing_or_conflicting_source_status; release_status_needs_dated_source |
+| Dan Connolly | 00-0022979 | G | RG1 | 20 | ACT | 2012-2014 (estimate) | Under contract (estimate) | Source data only |
+| Dane Fletcher | 00-0027237 | OLB | LB2 | 20 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Danny Aiken | 00-0028496 | LS | LS1 | 20 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Danny Amendola | 00-0026035 | WR | WR1 | 20 | ACT | 2013-2017 (estimate) | Under contract (estimate) | Source data only |
+| Devin McCourty | 00-0027647 | SS | S1,KOR1 | 20 | ACT | 2010-2014 (estimate) | Under contract (estimate) | Source data only |
+| Dont'a Hightower | 00-0029669 | OLB | LB1 | 20 | ACT | 2012-2016 (estimate) | Under contract (estimate) | Source data only |
+| Duron Harmon | 00-0030383 | FS | S2 | 20 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Isaac Sopoaga | 00-0022863 | NT | NT1 | 20 | ACT,TRC | 2013-2015 (estimate) | Under contract (estimate) | missing_or_conflicting_source_status; release_status_needs_dated_source |
+| Ja'Gared Davis | 00-0030231 | LB | Unknown | 20 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Jake Bequette | 00-0029646 | DE | LE2 | 20 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| James Develin | 00-0027925 | RB | RB3 | 20 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Jamie Collins | 00-0030421 | OLB | LB2 | 20 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Jerod Mayo | 00-0026150 | ILB | LB1 | 6 | RES | 2011-2015 (estimate) | Under contract (estimate) | last_observed_before_week17 |
+| Joe Vellano | 00-0030001 | DT | DT2,DT2 | 20 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Josh Boyce | 00-0030474 | WR | WR3 | 17 | RES | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Josh Kline | 00-0029992 | T | LT3 | 20 | ACT | ambiguous same year terms | Unknown | ambiguous_same_year_terms |
+| Julian Edelman | 00-0027150 | WR | WR1,PR1 | 20 | ACT | 2013-2013 (estimate) | UFA (verified) | Source data only |
+| Justin Green | 00-0030560 | DB | Unknown | 20 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Kanorris Davis | 00-0029987 | DB | Unknown | 20 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Kenbrell Thompkins | 00-0030000 | WR | WR3 | 20 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Kyle Arrington | 00-0026071 | CB | RCB2 | 20 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| LaQuan Williams | 00-0028288 | WR | Unknown | 10 | CUT | no matching club contract | Unknown | last_observed_before_week17; no_matching_club_contract; release_status_needs_dated_source |
+| LeGarrette Blount | 00-0027325 | RB | RB2 | 20 | ACT | 2013-2013 (estimate) | UFA (estimate) | Source data only |
+| Logan Mankins | 00-0023467 | G | LG1 | 20 | ACT | 2011-2016 (estimate) | Under contract (estimate) | Source data only |
+| Logan Ryan | 00-0030411 | CB | LCB3 | 20 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Marcus Cannon | 00-0028076 | T | LT2 | 20 | ACT | 2011-2014 (estimate) | Under contract (estimate) | Source data only |
+| Marcus Forston | 00-0029240 | DT | Unknown | 12 | DEV | no pre 2014 contract | Unknown | last_observed_before_week17; no_pre_2014_contract |
+| Matt Slater | 00-0026293 | WR | WR2,KOR2 | 20 | ACT | 2012-2014 (estimate) | Under contract (estimate) | Source data only |
+| Matthew Mulligan | 00-0026008 | TE | Unknown | 20 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Michael Buchanan | 00-0030475 | DE | RE2,LE3 | 20 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Michael Hoomanawanui | 00-0027732 | TE | TE2 | 20 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Nate Ebner | 00-0029570 | SS | S3 | 20 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Nate Solder | 00-0027955 | T | LT1 | 20 | ACT | 2011-2015 (estimate) | Under contract (estimate) | Source data only |
+| Rob Gronkowski | 00-0027656 | TE | TE1 | 14 | RES | 2012-2019 (sourced correction) | Under contract (sourced) | last_observed_before_week17 |
+| Rob Ninkovich | 00-0024349 | DE | LE1 | 20 | ACT | 2013-2015 (estimate) | Under contract (estimate) | Source data only |
+| Ryan Allen | 00-0029984 | P | H1,P1 | 20 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Ryan Mallett | 00-0028012 | QB | QB2 | 20 | ACT | 2011-2014 (estimate) | Under contract (estimate) | Source data only |
+| Ryan Wendell | 00-0025866 | C | C1 | 20 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Sealver Siliga | 00-0028256 | NT | Unknown | 20 | ACT,TRC | no pre 2014 contract | Unknown | missing_or_conflicting_source_status; no_pre_2014_contract; release_status_needs_dated_source |
+| Sebastian Vollmer | 00-0027034 | T | RT1 | 8 | RES | 2013-2016 (estimate) | Under contract (estimate) | last_observed_before_week17 |
+| Shane Vereen | 00-0027994 | RB | RB1 | 20 | ACT | 2011-2014 (estimate) | Under contract (estimate) | Source data only |
+| Stephen Gostkowski | 00-0024333 | K | K1 | 20 | ACT | 2010-2014 (estimate) | Under contract (estimate) | Source data only |
+| Stevan Ridley | 00-0028011 | RB | RB1 | 20 | ACT | 2011-2014 (estimate) | Under contract (estimate) | Source data only |
+| Steve Beauharnais | 00-0030426 | ILB | LB2 | 20 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Steve Gregory | 00-0023998 | FS | S1 | 20 | ACT | 2012-2014 (estimate) | Under contract (estimate) | Source data only |
+| Tavon Wilson | 00-0029410 | SS | S2 | 20 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Tom Brady | 00-0019596 | QB | QB1 | 20 | ACT | 2013-2017 (estimate) | Under contract (estimate) | Source data only |
+| Tommy Kelly | 00-0022539 | DT | DT1 | 8 | RES | 2013-2014 (estimate) | Under contract (estimate) | last_observed_before_week17 |
+| Vince Wilfork | 00-0022712 | DT | DT1 | 4 | RES | 2010-2014 (estimate) | Under contract (estimate) | last_observed_before_week17 |
+| Will Svitek | 00-0023620 | T | LG2,RT2,RG2 | 20 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+<!-- END GENERATED LEAGUE DATABASE -->
 
 ## Changes on the rails (fill by real date)
 

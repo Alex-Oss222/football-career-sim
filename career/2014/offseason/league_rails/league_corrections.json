@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "as_of": "2014-02-02",
+  "players": {
+    "00-0022924": {
+      "contract_start": 2008,
+      "contract_end": 2015,
+      "note": "The club announcement describes eight total seasons through 2015. The raw export lists six added years and falsely projects a 2013 expiry. The independent UPI report confirms an eight-year agreement. No contract money is imported.",
+      "sources": [
+        {
+          "publisher": "Pittsburgh Steelers",
+          "title": "Steelers Sign QB Ben Roethlisberger to New Deal",
+          "published": "2008-03-03",
+          "url": "https://www.steelers.com/news/steelers-sign-qb-ben-roethlisberger-to-new-deal-959655"
+        },
+        {
+          "publisher": "UPI",
+          "title": "Roethlisberger signs rich, long-term deal",
+          "published": "2008-03-03",
+          "url": "https://www.upi.com/Sports_News/2008/03/03/Roethlisberger-signs-rich-long-term-deal/82401204574481/"
+        }
+      ]
+    },
+    "00-0027656": {
+      "contract_start": 2012,
+      "contract_end": 2019,
+      "note": "Six added years follow the remaining 2012 and 2013 seasons. The reported outer term is 2019, subject to the agreement and club options; no future option exercise is presumed. This is not a 2014 expiring contract.",
+      "sources": [
+        {
+          "publisher": "New England Patriots",
+          "title": "Reports: Pats, Gronkowski near new contract (updated)",
+          "published": "2012-06-08",
+          "url": "https://www.patriots.com/news/reports-pats-gronkowski-near-new-contract-updated-189131"
+        },
+        {
+          "publisher": "NFL.com",
+          "title": "Patriots, Rob Gronkowski agree to six-year, $54M extension",
+          "published": "2012-06-08",
+          "url": "https://www.nfl.com/news/patriots-rob-gronkowski-agree-to-six-year-54m-extension-09000d5d829ab3e5"
+        }
+      ]
+    }
+  }
+}

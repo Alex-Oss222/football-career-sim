@@ -1,60 +1,81 @@
-# Houston Texans: 2014 rails roster (draft)
+<!-- BEGIN GENERATED LEAGUE DATABASE -->
+# Houston Texans: generated end-of-2013 research inventory
 
-**Status:** DRAFT for the user to complete. Starting point: the branch's 2013 Week 1 unit (`library/2013_week1_depth_charts.md`), with contract years from Over The Cap data signed in 2013 or earlier. The contract end year is unverified: extensions can list only the added years. No 2014 signing, release, trade or destination is recorded here; those enter only on their real dates (AGENTS.md, Historical league rails).
+**As of:** February 2, 2014. These are historical observations with existing branch placements applied, not a certified final roster or a live TeamInput. Source status does not impose an injury or suspension on the branch. Week 1 slots are reference labels only; row order is alphabetical, not depth order.
 
-| 2013 slot | Player | Pos | Contract in the data (signed-to-end, average per year) | 2014 status | User notes |
-|---|---|---|---|---|---|
-| QB1 | Matt Schaub | QB | 2012-2015, $15,500,000 a year | Under contract (draft) | |
-| QB2 | T.J. Yates | QB | 2011-2014, $556,250 a year | Under contract (draft) | |
-| QB3 | Case Keenum | QB | 2012-2014, $484,000 a year | Under contract (draft) | |
-| RB1 | Arian Foster | RB | 2012-2016, $8,700,000 a year | Under contract (draft) | |
-| RB2 | Ben Tate | RB | 0-0, $645,000 a year | Pending free agent (draft) | |
-| RB3 | Cierre Wood | RB | not in the contract data | Unknown: confirm | |
-| FB1 | Greg Jones | FB | 2013-2014, $600,000 a year | Under contract (draft) | |
-| WR1 | Andre Johnson | WR | 2010-2016, $8,957,143 a year | Under contract (draft) | |
-| WR1,PR3 | DeAndre Hopkins | WR | 2013-2016, $1,906,675 a year | Under contract (draft) | |
-| WR2,KR1,PR1 | Keshawn Martin | WR | 2012-2015, $628,140 a year | Under contract (draft) | |
-| WR2 | Lestar Jean | WR | 0-0, $635,000 a year | Pending free agent (draft) | |
-| WR3 | DeVier Posey | WR | 2012-2015, $740,523 a year | Under contract (draft) | |
-| TE1 | Owen Daniels | TE | 2011-2014, $5,500,000 a year | Under contract (draft) | |
-| TE2 | Garrett Graham | TE | 2010-2013, $567,525 a year | Pending free agent (draft) | |
-| TE3 | Ryan Griffin | TE | 2013-2016, $559,670 a year | Under contract (draft) | |
-| LT1 | Duane Brown | T | 2008-2012, $1,825,000 a year | Pending free agent (draft) | |
-| LG1 | Wade Smith | G | 2010-2013, $3,000,000 a year | Pending free agent (draft) | |
-| C1 | Chris Myers | C | 2012-2015, $6,250,000 a year | Under contract (draft) | |
-| RG1 | Brandon Brooks | G | 2012-2015, $700,000 a year | Under contract (draft) | |
-| RT1 | Derek Newton | T | 2011-2014, $525,064 a year | Under contract (draft) | |
-| LT2 | Ryan Harris | T | not in the contract data | Unknown: confirm | |
-| C2,LG2 | Ben Jones | C | 2012-2015, $645,362 a year | Under contract (draft) | |
-| RG2 | Cody White | G | 0-0, $585,000 a year | Pending free agent (draft) | |
-| RT2 | Andrew Gardner | G | not in the contract data | Unknown: confirm | |
-| LG3 | David Quessenberry | G | 2013-2016, $568,363 a year | Under contract (draft) | |
-| DE1 | J.J. Watt | DE | 2011-2014, $2,809,375 a year | Under contract (draft) | |
-| NT1 | Earl Mitchell | NT | 2010-2013, $644,625 a year | Pending free agent (draft) | |
-| WLB1 | Whitney Mercilus | DE | 2012-2015, $1,908,524 a year | Under contract (draft) | |
-| DE1 | Jared Crick | DE | 2012-2015, $622,875 a year | Under contract (draft) | |
-| DE2 | Tim Jamison | DE | 0-1, $900,000 a year | Pending free agent (draft) | |
-| NT2 | Terrell McClain | NT | 2012-2013, $510,000 a year | Pending free agent (draft) | |
-| WLB3 | Sam Montgomery | DE | 2013-2016, $669,004 a year | Under contract (draft) | |
-| MLB1 | Brian Cushing | MLB | 2013-2018, $8,750,000 a year | Under contract (draft) | |
-| SLB1 | Brooks Reed | OLB | 2011-2014, $1,175,441 a year | Under contract (draft) | |
-| MLB1 | Joe Mays | MLB | 2013-2013, $1,100,000 a year | Pending free agent (draft) | |
-| MLB2 | Tim Dobbins | MLB | 0-0, $855,000 a year | Pending free agent (draft) | |
-| MLB2 | Darryl Sharpton | MLB | not in the contract data | Unknown: confirm | |
-| SLB2 | Bryan Braman | LB | not in the contract data | Unknown: confirm | |
-| WLB2 | Willie Jefferson | OLB | not in the contract data | Unknown: confirm | |
-| MLB3 | Justin Tuggle | MLB | not in the contract data | Unknown: confirm | |
-| SS1,KR2 | Danieal Manning | SS | 2011-2014, $5,000,000 a year | Under contract (draft) | |
-| RCB1 | Johnathan Joseph | CB | 2011-2015, $9,750,000 a year | Under contract (draft) | |
-| LCB1 | Kareem Jackson | SS | 2010-2014, $2,620,000 a year | Under contract (draft) | |
-| FS1,KR3,PR2 | Shiloh Keo | FS | 2011-2014, $558,000 a year | Under contract (draft) | |
-| LCB2 | Brice McCain | CB | 2013-2015, $1,750,000 a year | Under contract (draft) | |
-| RCB2 | Brandon Harris | CB | 2011-2014, $824,832 a year | Under contract (draft) | |
-| SS2 | Eddie Pleasant | SS | not in the contract data | Unknown: confirm | |
-| FS2 | D.J. Swearinger | FS | 2013-2016, $872,825 a year | Under contract (draft) | |
-| K1 | Randy Bullock | K | 2012-2015, $569,527 a year | Under contract (draft) | |
-| H1,P1 | Shane Lechler | P | 2013-2015, $1,833,333 a year | Under contract (draft) | |
-| LS1 | Jonathan Weeks | LS | not in the contract data | Unknown: confirm | |
+68 players. See [database coverage and rebuild instructions](../league_database_report.md). Contract years and experience-derived categories require verification before pursuit. Manual dated moves below are preserved by rebuilds.
+
+| Player | GSIS ID | Pos | 2013 branch Week 1 slot | Last observed week | Source status | Contract | Pending FA | Review flags |
+|---|---|---|---|---|---|---|---|---|
+| Alex Kupper | 00-0030238 | G | Unknown | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Andre Johnson | 00-0022044 | WR | WR1 | 17 | ACT | 2010-2016 (estimate) | Under contract (estimate) | Source data only |
+| Andrew Gardner | 00-0026929 | T | RT2 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Antonio Smith | 00-0022793 | DE | Unknown | 17 | ACT | 2009-2013 (estimate) | UFA (estimate) | Source data only |
+| Arian Foster | 00-0026796 | RB | RB1 | 10 | RES | 2012-2016 (estimate) | Under contract (estimate) | last_observed_before_week17 |
+| Ben Jones | 00-0029413 | C | C2,LG2 | 17 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Ben Tate | 00-0027890 | RB | RB2 | 15 | RES | no pre 2014 contract | Unknown | last_observed_before_week17; no_pre_2014_contract |
+| Brad Smelley | 00-0029315 | RB | Unknown | 16 | RES | ambiguous same year terms | Unknown | ambiguous_same_year_terms; last_observed_before_week17 |
+| Brandon Brooks | 00-0029679 | G | RG1 | 17 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Brandon Harris | 00-0027998 | CB | RCB2 | 17 | ACT | 2011-2014 (estimate) | Under contract (estimate) | Source data only |
+| Brian Cushing | 00-0026991 | ILB | MLB1 | 8 | RES | 2013-2018 (estimate) | Under contract (estimate) | last_observed_before_week17 |
+| Brice McCain | 00-0026935 | CB | LCB2 | 17 | ACT | 2013-2015 (estimate) | Under contract (estimate) | Source data only |
+| Brooks Reed | 00-0027980 | OLB | SLB1 | 17 | ACT | 2011-2014 (estimate) | Under contract (estimate) | Source data only |
+| Bryan Braman | 00-0028536 | OLB | SLB2 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Case Keenum | 00-0028986 | QB | QB3 | 17 | ACT | 2013-2014 (estimate) | Under contract (estimate) | Source data only |
+| Chad Spann | 00-0028656 | RB | Unknown | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Chris Myers | 00-0023633 | C | C1 | 17 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Cierre Wood | 00-0030248 | RB | RB3 | 7 | CUT,TRD | no pre 2014 contract | Unknown | last_observed_before_week17; missing_or_conflicting_source_status; no_pre_2014_contract; release_status_needs_dated_source |
+| Cody White | 00-0029522 | G | RG2 | 17 | ACT | missing otc id | Unknown | missing_otc_id |
+| D.J. Smith | 00-0028124 | ILB | Unknown | 11 | CUT | 2013-2014 (estimate) | Under contract (estimate) | last_observed_before_week17; release_status_needs_dated_source |
+| D.J. Swearinger | 00-0030566 | FS | FS2 | 17 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Danieal Manning | 00-0024257 | SS | SS1,KR2 | 6 | RES | 2011-2014 (estimate) | Under contract (estimate) | last_observed_before_week17 |
+| Darryl Sharpton | 00-0027703 | ILB | MLB2 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| David Quessenberry | 00-0030097 | G | LG3 | 1 | RES | 2013-2016 (estimate) | Under contract (estimate) | last_observed_before_week17 |
+| DeAndre Hopkins | 00-0030564 | WR | WR1,PR3 | 17 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| DeVier Posey | 00-0029673 | WR | WR3 | 17 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Deji Karim | 00-0027779 | RB | Unknown | 16 | RES | no pre 2014 contract | Unknown | last_observed_before_week17; no_pre_2014_contract |
+| Dennis Johnson | 00-0030236 | RB | Unknown | 17 | ACT,TRD | no pre 2014 contract | Unknown | missing_or_conflicting_source_status; no_pre_2014_contract; release_status_needs_dated_source |
+| Derek Newton | 00-0028152 | T | RT1 | 17 | ACT | 2011-2014 (estimate) | Under contract (estimate) | Source data only |
+| Duane Brown | 00-0026166 | T | LT1 | 17 | ACT | 2012-2017 (estimate) | Under contract (estimate) | Source data only |
+| Earl Mitchell | 00-0027684 | NT | NT1 | 17 | ACT | 2010-2013 (estimate) | UFA (estimate) | Source data only |
+| Eddie Pleasant | 00-0029520 | SS | SS2 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Elbert Mack | 00-0025902 | CB | Unknown | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Garrett Graham | 00-0027718 | TE | TE2 | 16 | RES | 2010-2013 (estimate) | UFA (estimate) | last_observed_before_week17 |
+| Greg Jones | 00-0022897 | FB | FB1 | 17 | ACT | no matching club contract | Unknown | no_matching_club_contract |
+| J.J. Watt | 00-0027949 | DE | DE1 | 17 | ACT | 2011-2014 (estimate) | Under contract (estimate) | Source data only |
+| Jared Crick | 00-0029417 | DE | DE1 | 17 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Jawanza Starling | 00-0030245 | DB | Unknown | 17 | ACT,TRC | no pre 2014 contract | Unknown | missing_or_conflicting_source_status; no_pre_2014_contract; release_status_needs_dated_source |
+| Jeff Tarpinian | 00-0028251 | LB | Unknown | 17 | ACT,TRC | no matching club contract | Unknown | missing_or_conflicting_source_status; no_matching_club_contract; release_status_needs_dated_source |
+| Joe Mays | 00-0026340 | ILB | MLB1 | 17 | ACT | 2013-2013 (estimate) | UFA (estimate) | Source data only |
+| Johnathan Joseph | 00-0024239 | CB | RCB1 | 16 | RES | 2011-2015 (estimate) | Under contract (estimate) | last_observed_before_week17 |
+| Jonathan Weeks | 00-0027224 | LS | LS1 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Josh Victorian | 00-0028286 | DB | Unknown | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Justin Tuggle | 00-0030246 | MLB | MLB3 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Kareem Jackson | 00-0027872 | CB | LCB1 | 17 | ACT | 2010-2014 (estimate) | Under contract (estimate) | Source data only |
+| Keshawn Martin | 00-0029415 | WR | WR2,KR1,PR1 | 17 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Lestar Jean | 00-0028542 | WR | WR2 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Matt Schaub | 00-0022787 | QB | QB1 | 17 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Mike Mohamed | 00-0028127 | OLB | Unknown | 17 | ACT | ambiguous same year terms | Unknown | ambiguous_same_year_terms |
+| Owen Daniels | 00-0024313 | TE | TE1 | 5 | RSR | 2011-2014 (estimate) | Under contract (estimate) | last_observed_before_week17; release_status_needs_dated_source |
+| Phillip Supernaw | 00-0028987 | TE | Unknown | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Randy Bullock | 00-0029421 | K | K1 | 17 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Ray Graham | 00-0030233 | RB | Unknown | 17 | ACT,TRD | no pre 2014 contract | Unknown | missing_or_conflicting_source_status; no_pre_2014_contract; release_status_needs_dated_source |
+| Ricky Sapp | 00-0027734 | OLB | OL B2 | 17 | ACT,TRD | no pre 2014 contract | Unknown | missing_or_conflicting_source_status; no_pre_2014_contract; release_status_needs_dated_source |
+| Ryan Griffin | 00-0030108 | TE | TE3 | 17 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Ryan Harris | 00-0025457 | T | LT2 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Sam Montgomery | 00-0030473 | OLB | WLB3 | 7 | CUT | 2013-2016 (estimate) | Under contract (estimate) | last_observed_before_week17; release_status_needs_dated_source |
+| Shane Lechler | 00-0019714 | P | H1,P1 | 17 | ACT | 2013-2015 (estimate) | Under contract (estimate) | Source data only |
+| Shiloh Keo | 00-0028082 | FS | FS1,KR3,PR2 | 17 | ACT | ambiguous same year terms | Unknown | ambiguous_same_year_terms |
+| T.J. Yates | 00-0028090 | QB | QB2 | 17 | ACT | 2011-2014 (estimate) | Under contract (estimate) | Source data only |
+| Tavares Gooden | 00-0026211 | ILB | Unknown | 9 | CUT | no pre 2014 contract | Unknown | last_observed_before_week17; no_pre_2014_contract; release_status_needs_dated_source |
+| Terrell McClain | 00-0028003 | DT | NT2 | 17 | ACT | 2012-2013 (estimate) | RFA (estimate) | Source data only |
+| Tim Dobbins | 00-0024365 | ILB | MLB2 | 7 | CUT | no pre 2014 contract | Unknown | last_observed_before_week17; no_pre_2014_contract; release_status_needs_dated_source |
+| Tim Jamison | 00-0026798 | DE | DE2 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Toben Opurum | 00-0030429 | RB | Unknown | 17 | ACT,TRD | no pre 2014 contract | Unknown | missing_or_conflicting_source_status; no_pre_2014_contract; release_status_needs_dated_source |
+| Wade Smith | 00-0022131 | G | LG1 | 17 | ACT | 2010-2013 (estimate) | UFA (estimate) | Source data only |
+| Whitney Mercilus | 00-0029643 | OLB | WLB1 | 17 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Willie Jefferson | 00-0030235 | OLB | WLB2 | 7 | CUT | no pre 2014 contract | Unknown | last_observed_before_week17; no_pre_2014_contract; release_status_needs_dated_source |
+<!-- END GENERATED LEAGUE DATABASE -->
 
 ## Changes on the rails (fill by real date)
 
