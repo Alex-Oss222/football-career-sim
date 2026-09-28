@@ -44,6 +44,19 @@ H1_BUCKET_EDGES = ((0, 30), (31, 60), (61, 120), (121, 240), (241, 1800))
 TIMEOUT_REGIMES = ("h1_final", "late", "ot")
 MIN_TIMEOUT_POOL = 30
 TIMEOUT_BANDS = ((0,), (1, 2), (3,))
+# Kernel 2014.2 late-game recalibration (switches kept for the documented
+# before/after comparison; both are on in the kernel):
+# - ZONE_CONDITIONING: a conditioned draw's category weights are multiplied by
+#   P(start zone | category) / P(start zone), estimated with add-one smoothing
+#   over the need's union of late cells (every first-half final; the
+#   overtime pool), so the mix reflects where the drive starts;
+# - NEED_UNION_RUNGS: a late cell with no feasible drive of a category takes
+#   one from the need's other time buckets (same bin, same zone, then any
+#   start feasible at the spot), under the same clock filters, instead of
+#   masking the category.
+ZONE_CONDITIONING = True
+NEED_UNION_RUNGS = True
+ZONE_SMOOTHING = 1.0
 EXPECTED_DRIVES = 5984
 KICK = {"touchback": 0, "next_start": 1, "kick_yards": 2, "return_yards": 3, "enforcement": 4, "outcome": 5}
 PUNT = {"los": 0, "outcome": 1, "gross": 2, "return_yards": 3, "enforcement": 4, "next_start": 5, "touchback": 6}
@@ -418,7 +431,27 @@ def eligible(pool_id, category, spot, regime, window):
         feasible = _dynamic(rung, category, regime, window)
         if feasible:
             return feasible
+    if NEED_UNION_RUNGS and regime == "late" and pool_id[0] == "late":
+        # Kernel 2014.2: a late cell with no feasible drive of the category
+        # borrows the same need's other time buckets (same bin, then same
+        # zone), under the same clock filters.
+        union = ("late_union", cell_need(pool_id[1]))
+        for rung in _rungs(union, category, spot):
+            feasible = _dynamic(rung, category, regime, window)
+            if feasible:
+                return feasible
+        # Last rung: any real drive of the category and need, whatever its
+        # start, that is feasible at this spot (end in the field, net inside
+        # the current start bin's 2012 envelope) and at this clock.
+        feasible = _dynamic(_any_start(union, category, spot), category, regime, window)
+        if feasible:
+            return feasible
     return ()
+
+
+@lru_cache(maxsize=None)
+def _any_start(pool_id, category, spot):
+    return tuple(t for t in _members(pool_id, category) if static_feasible(category, t, spot))
 
 
 def category_mix(counts, edge, eligible_by_category):
@@ -523,8 +556,45 @@ def _timeout_options(pool_id, counts, options, timeouts, key, diagnostics):
     return counts, options, 3
 
 
+def _reference(pool_id):
+    """The larger pool whose start zones estimate P(zone | category) for a
+    conditioned draw: the need's union of late cells, every first-half final,
+    or the overtime pool."""
+    kind, key = pool_id
+    if kind == "late":
+        return ("late_union", cell_need(key))
+    if kind == "h1_final":
+        return ("h1_final_all", None)
+    return pool_id
+
+
+@lru_cache(maxsize=None)
+def zone_likelihood(reference, spot_zone):
+    """{category: P(zone | category) / P(zone)} over the reference pool, with
+    add-one smoothing over the three zones."""
+    data = load()
+    kind, key = reference
+    def members(c):
+        if kind == "h1_final_all":
+            return [t for cells in data["pools"]["h1_final"].values() for t in cells[c]]
+        return _members(reference, c)
+    by_cat = {c: members(c) for c in CATEGORIES}
+    a = ZONE_SMOOTHING
+    total = sum(len(m) for m in by_cat.values())
+    in_zone = sum(1 for m in by_cat.values() for t in m if zone(t[T["start"]]) == spot_zone)
+    base = (in_zone + a) / (total + 3 * a)
+    out = {}
+    for c, m in by_cat.items():
+        n_zone = sum(1 for t in m if zone(t[T["start"]]) == spot_zone)
+        out[c] = ((n_zone + a) / (len(m) + 3 * a)) / base
+    return out
+
+
 def _draw_from(rng, pool_id, regime, spot, window, edge, timeouts=None, key="def", diagnostics=None):
     counts, options = draw_options(pool_id, regime, spot, window)
+    if ZONE_CONDITIONING and regime in TIMEOUT_REGIMES:
+        ratio = zone_likelihood(_reference(pool_id), zone(spot))
+        counts = {c: n * ratio[c] for c, n in counts.items()}
     level = None
     if timeouts is not None and regime in TIMEOUT_REGIMES:
         counts, options, level = _timeout_options(pool_id, counts, options, timeouts, key, diagnostics)

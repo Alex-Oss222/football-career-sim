@@ -119,8 +119,10 @@ class FieldPositionTests(unittest.TestCase):
 
     def test_ladder_steps_on_full_feasibility(self):
         """The same-bin rung is used only when one of its tuples fits both the
-        spot and the clock; otherwise the same-zone rung supplies the drive,
-        and a category is masked only when neither rung does."""
+        spot and the clock; otherwise the same-zone rung supplies the drive.
+        Kernel 2014.2: when neither does, the need's union supplies it (same
+        bin, same zone, then any start feasible here); a category is masked
+        only when none does."""
         stepped = 0
         for cell in sorted(fp.load()["late_counts"]):
             for category in fp.CATEGORIES:
@@ -130,7 +132,11 @@ class FieldPositionTests(unittest.TestCase):
                         near = fp._dynamic(same, category, "late", window)
                         far = fp._dynamic(wider, category, "late", window)
                         got = fp.eligible(("late", cell), category, spot, "late", window)
-                        self.assertEqual(got, near or far)
+                        if near or far:
+                            self.assertEqual(got, near or far)
+                        else:
+                            self.assertTrue(all(fp.static_feasible(category, t, spot) for t in got))
+                            self.assertEqual(tuple(got), fp._dynamic(tuple(got), category, "late", window))
                         if same and not near and far:
                             stepped += 1
                             self.assertTrue(got)
@@ -316,7 +322,7 @@ class FieldPositionTests(unittest.TestCase):
         legacy, kernel_2013_6, current = cohorts(receipts)
         self.assertTrue(legacy and kernel_2013_6)
         # Closed 2013.7+ slates (Week 9 on) form the current cohort; older receipts never join it.
-        self.assertTrue(all(r.get("kernel_version") in {"2013.7", "2013.8", "2013.9", "2013.10", "2013.11", "2014.1"} for r in current))
+        self.assertTrue(all(r.get("kernel_version") in {"2013.7", "2013.8", "2013.9", "2013.10", "2013.11", "2014.1", "2014.2"} for r in current))
         errors = [e for r in receipts for e in check_ledger(r)]
         self.assertFalse([e for e in errors if e.split(":")[0] in play_detail.SPOT_CLASSES])
         # The committed Weeks 4-5 receipts closed with no coherence violation.

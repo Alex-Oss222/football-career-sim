@@ -1,6 +1,7 @@
 """Kernel 2014.1: charged timeouts, kneel start zones and goal-to-go distances."""
 import sys
 import unittest
+import unittest.mock
 from pathlib import Path
 
 from runtime import field_position as fp
@@ -107,3 +108,37 @@ class KernelTimeoutTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class LateRecalibrationTests(unittest.TestCase):
+    """Kernel 2014.2: start-zone weights and need-union rungs for late draws."""
+
+    def test_zone_likelihood_is_a_ratio_around_one(self):
+        ratio = fp.zone_likelihood(("late_union", "trail9"), "A")
+        self.assertEqual(set(ratio), set(fp.CATEGORIES))
+        self.assertTrue(all(value > 0 for value in ratio.values()))
+        # Weighted by the categories' frequencies, the ratios average to one.
+        members = {c: len(fp._members(("late_union", "trail9"), c)) for c in fp.CATEGORIES}
+        total = sum(members.values())
+        weighted = sum(members[c] * ratio[c] for c in members) / total
+        self.assertAlmostEqual(weighted, 1.0, delta=0.05)
+
+    def test_late_cells_borrow_before_masking(self):
+        data = fp.load()
+        cell = next(c for c in data["late_counts"] if c.endswith("trail9"))
+        masked_before = masked_after = 0
+        for spot in (95, 80, 65, 50, 35, 20, 5):
+            for category in ("interception", "fumble_lost", "downs", "punt"):
+                if not data["late_counts"][cell].get(category):
+                    continue
+                with unittest.mock.patch.object(fp, "NEED_UNION_RUNGS", False):
+                    masked_before += not fp.eligible(("late", cell), category, spot, "late", 300)
+                masked_after += not fp.eligible(("late", cell), category, spot, "late", 300)
+        self.assertLess(masked_after, masked_before)
+
+    def test_borrowed_drives_are_feasible_here(self):
+        data = fp.load()
+        cell = next(c for c in data["late_counts"] if c.endswith("trail4_8"))
+        for spot in (90, 60, 30):
+            for t in fp.eligible(("late", cell), "interception", spot, "late", 400):
+                self.assertTrue(fp.static_feasible("interception", t, spot))

@@ -225,10 +225,27 @@ KNOWN_DETECTIONS["2013.11"] = dict(KNOWN_DETECTIONS["2013.10"])
 # Kernel 2014.1 (timeouts, kneel zones, end-of-half fit fallback, goal to go): the
 # registry carries over until its own acceptance run says otherwise.
 KNOWN_DETECTIONS["2014.1"] = dict(KNOWN_DETECTIONS["2013.11"])
+# Kernel 2014.2 (late-game recalibration) carries the registry over and adds
+# two rows, registered by Claude on September 28, 2026 while carrying out the
+# user's recalibration request (reversible; runtime/README.md, kernel 2014.2).
+_FGA_2014_2 = (
+    "field-goal attempts rise with FGM from the first-half half-final redirect; "
+    "kernel 2014.2 also stops masking late field goals, whose expected share by "
+    "need now tracks 2012 (runtime/README.md, kernel 2014.2 acceptance)"
+)
+_LATE_PUNT_2014_2 = (
+    "about 70 events per 250 games; the 2014.2 expected late mix by need tracks "
+    "2012 (trailing 4-8 punts 0.173 against 0.179), a 750-game fresh sample reads "
+    "0.087 inside its tolerance, and the rest is the timing mix of possessions "
+    "that end in the last 5:00 (runtime/README.md, kernel 2014.2 acceptance)"
+)
+KNOWN_DETECTIONS["2014.2"] = dict(KNOWN_DETECTIONS["2014.1"])
+KNOWN_DETECTIONS["2014.2"]["FGA per team game"] = _FGA_2014_2
+KNOWN_DETECTIONS["2014.2"]["punt share of possessions ending in Q4's last 5:00 or OT, offense trailing 1-8"] = _LATE_PUNT_2014_2
 
 
 def known_detections(cohort):
-    """{metric: note} for a kernel cohort ("2013.6", "2013.7", "2013.8", "2013.9", "2013.10", "2013.11" or "2014.1"); empty otherwise."""
+    """{metric: note} for a kernel cohort ("2013.6", "2013.7", "2013.8", "2013.9", "2013.10", "2013.11", "2014.1" or "2014.2"); empty otherwise."""
     return dict(KNOWN_DETECTIONS.get(cohort, {}))
 
 
