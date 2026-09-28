@@ -17,6 +17,7 @@
 
 - Week 11: [focus directive](../2014_draft_focus_directive.md).
 - Week 12: [Phase II, role validation](phase_ii_role_validation.md), with the interim-card format.
+- Week 13: [Phase III, verify then write](phase_iii_verify_then_write.md).
 
 ## Focus prospects
 
