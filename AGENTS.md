@@ -96,12 +96,15 @@ For any task that **starts, advances, runs, simulates, or closes** Jacksonville'
 **Phase-plan map:**
 
 - Rookie minicamp -> `career/[year]/offseason/rookie_minicamp/plan.md`
-- Offseason program / Phase One / Phase Two / OTAs -> `career/[year]/offseason/otas/plan.md`
+- Offseason program / Phase One / Phase Two -> `career/[year]/offseason/offseason_program/plan.md` when that separate plan exists (2014 onward in the current layout); otherwise the combined `career/[year]/offseason/otas/plan.md` (2013).
+- OTAs / Phase Three -> `career/[year]/offseason/otas/plan.md`
 - Any separately scheduled new-head-coach voluntary veteran minicamp -> use `otas/plan.md` plus the exact voluntary-minicamp CBA/calendar rules; do not convert it into the mandatory event.
 - Mandatory veteran minicamp -> `career/[year]/offseason/mandatory_minicamp/plan.md`
 - Training camp and its integrated preseason-development process -> `career/[year]/offseason/training_camp/plan.md`
 
 **Plan versus history is a hard boundary.** A `plan.md` says what Jacksonville intends to teach, train, evaluate, and provide. The corresponding `output.md`, season ledger, roster/register, and current-state files say what actually happened. Never write results, standouts, attendance lists, depth-chart outcomes, injuries, or performance history back into a durable plan merely because the event occurred.
+
+**2014 carry-forward:** the framework, readiness standard and program identity remain at their `career/2013/offseason/` paths, explicitly incorporated by the 2014 phase plans. Read those durable methods when the corresponding year-local file does not exist; apply the 2014 plan/calendar's returning-head-coach restriction. Prepared recommendations marked pending are not adopted decisions. Resolve or explicitly defer any material pending choice needed for a phase before running it.
 
 **Calendar gate.** If the exact 2013 Jacksonville date/window needed to execute a phase is still unresolved in the repository, research and verify it under the project's two-pass sourcing discipline before advancing the career clock. Do not invent a convenient date, practice count, reporting day, or roster deadline.
 

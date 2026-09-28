@@ -1,6 +1,6 @@
 # Jacksonville Jaguars: 2014 staff replacement plan
 
-**Status:** Framework ready; replacement targets and offer terms not yet selected. The special teams coordinator job is vacant following Alan Lowry's January 12 departure for Atlanta (ledger Entry 75). This file's existence does not authorize a hire. Stone selects candidates and staff assignments under Document 3 row 2; a target, interview or proposed offer is not an appointment.
+**Status:** Researched shortlist and proposed terms prepared for Stone's decision, September 28, 2026. The special teams coordinator job is vacant following Alan Lowry's January 12 departure for Atlanta (ledger Entry 75). This file's existence does not authorize an approach, offer or hire. Stone selects candidates and staff assignments under Document 3 row 2; a target, interview or proposed offer is not an appointment.
 **As of:** February 2, 2014. Entry 77 reconciles planning and authority references without advancing time or selecting a candidate.
 
 ## Open position and interim coverage
@@ -24,11 +24,36 @@ The head-coach agreement promises a funded staff budget but states no numeric ce
 
 ## Target order
 
-The user has not selected a first choice or fallbacks. Add other positions only if a vacancy or an authorized staffing change creates a need.
+The following order is a recommendation for approval, not a claim that Stone has selected it. It favors a veteran unit teacher with a plausible role incentive, then another experienced coordinator, then an experienced coach whose willingness to return must be established. No unsupported coaching grade or later career outcome drives the order.
 
-| Position | First choice | First fallback | Second fallback | Selection status |
-|---|---|---|---|---|
-| Special teams coordinator | Not selected | Not selected | Not selected | Awaiting Stone's targets and authorized terms |
+| Order / candidate | Evidence before the February 2, 2014 cutoff | Proposed approach and obstacle | Proposed annual offer / ceiling |
+|---|---|---|---|
+| 1. Bruce DeHaven | Extensive coordinator experience through 2012; historically joined Carolina as assistant special teams coach in February 2013 (S1/S2) | Recommend full unit responsibility as the reason to consider Jacksonville. Reconcile branch employer/contract first; seek permission if under contract. Carolina may refuse even though the title is a promotion. | $625,000 / $750,000 |
+| 2. Bobby April | Eagles coordinator through 2012; historically hired by Oakland in January 2013 (S3/S4) | Experienced full-unit option. Reconcile branch employer/contract; an under-contract lateral request may be refused. No invented release or automatic right to interview. | $700,000 / $800,000 |
+| 3. Mike Westhoff | Jets coordinator entering retirement after 2012 (S5/S6) | First establish whether he wants to return and whether any contract rights remain. Retirement is not proof of either willingness or unrestricted availability. Do not assume a later real return. | $625,000 / $750,000 |
+
+**Proposed common terms:** two seasons, 2014 and 2015; equal annual salaries; no signing bonus; first-season salary guaranteed with an offset for earnings from another coaching job; second season non-guaranteed; no automatic extension, assistant-head-coach title, roster power or additional hires. A counter changing the term, guarantee, offset, authority or salary ceiling returns to Stone. These are proposed branch negotiating terms, not sourced historical salaries or an already-funded authorization. Confirm the funded staff allocation with Caldwell before an offer.
+
+At the proposed openings, scheduled annual assistant compensation would be $7,575,000 for DeHaven or Westhoff and $7,650,000 for April. At the proposed ceilings it would be $7,700,000 or $7,750,000 respectively. These are arithmetic against the existing $6,950,000 commitment, not budget ceilings. Only one coordinator would be hired; no three-offer commitment is authorized.
+
+**Proposed interview test:** ask the candidate to teach a punt-protection correction, separate a specialist-operation error from coverage and call errors, describe reserve-player development, and explain his end-of-half reporting to Stone. Assess the content and demonstrated pre-cutoff experience, without scripting his answer. The role and reporting line are the existing vacancy description above. Stone retains consequential game management; the coordinator gets routine unit teaching and operation within Stone's approved plan.
+
+**Proposed search sequence:** after Stone approves the order and terms, reconcile the first candidate's branch employment/rights, then resolve permission and interest. Move to the next on a refusal, declined interview, rejection or terms outside the approved limits. A materially different counter returns to Stone. Do not manufacture a dated rejection to accelerate the search. Aim to settle the post before organized field work, while treating April 21 as a readiness objective rather than a fabricated acceptance deadline.
+
+### Research and verification receipt
+
+Accessed September 28, 2026. Pass one used contemporaneous club announcements; a separately worded second search found independent reporting. The dates verify historical facts only. None of these sources proves February 2014 branch employment, remaining contract term, permission, salary or willingness. The branch carousel has no complete external assistant register; those checks remain explicit prerequisites. Do not import real 2014 coaching hires as rails.
+
+| ID | Source and publication date | Supported fact and limit |
+|---|---|---|
+| S1 | Panthers, [Assistant special teams, wide receivers coaches hired](https://www.panthers.com/news/assistant-special-teams-wide-receivers-coaches-hired-9536721), February 5, 2013 | DeHaven's historical assistant appointment and prior coordinator experience; not branch availability |
+| S2 | NBC/PFT, [Panthers hire veteran assistant Bruce DeHaven](https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/panthers-hire-veteran-assistant-bruce-dehaven/), February 5, 2013 | Independently corroborates S1 appointment |
+| S3 | Raiders, [Bobby April Joins Raiders as Special Teams Coordinator](https://www.raiders.com/news/bobby-april-joins-raiders-as-special-teams-coordinator-9389782), January 19, 2013 | Historical appointment and prior experience; not permission or branch contract terms |
+| S4 | NBC/PFT, [Raiders hire Bobby April as special teams coordinator](https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/raiders-hire-bobby-april-as-special-teams-coordinator/), January 19, 2013 | Independently corroborates S3 appointment |
+| S5 | Jets, [Huge Decisions Ahead for the Jets](https://www.newyorkjets.com/news/huge-decisions-ahead-for-the-jets-9229099), December 30, 2012 | Westhoff headed for retirement; no finding about future interest |
+| S6 | NBC/PFT, [Westhoff sounds off on Tebow situation](https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/westhoff-sounds-off-on-tebow-situation/), January 11, 2013 | Independently confirms retirement |
+
+The 2013-14 permission distinction comes from [the existing hiring-rules research](../../../../library/2014_coaching_hiring_and_anti_tampering_rules.md), rules T1-T5 and E1-E6. Assistant-to-coordinator promotion was not a protected move in that period. Preserve the source's explicit uncertainties about retired coaches' surviving rights.
 
 For each proposed candidate, record the evidence needed to decide and approach him:
 

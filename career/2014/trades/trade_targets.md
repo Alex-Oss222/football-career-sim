@@ -1,3 +1,5 @@
 # Jacksonville Jaguars: 2014 trade targets
 
 **Status:** Stone's recommendations to Caldwell, user-authored (February 2, 2014 branch date). The single source is [stone_to_caldwell_2014_offseason_decisions.md](../offseason/stone_to_caldwell_2014_offseason_decisions.md), section 5 (an outbound-only board: packages A, D, E, F1, F2 and G). Trading opens at 4 p.m. ET on March 11, 2014; every partner's answer is resolved by the simulation when the window runs. Results go in the trade ledger, never here.
+
+**Package G amendment:** the memo's September 28, 2026 amendment controls over its original draft-dependent row. Shop Russell Allen from March 11 at 4 p.m. ET; complete by April 21, before his April 22 retirement. Ask for an unconditional 2015 seventh, with an unconditional 2016 seventh already acceptable. Keep the actual Posluszny-clearance condition; flag a delayed clearance to Stone before the deadline rather than waiting for the draft or silently waiving it. No completed trade or pick acquisition is recorded.

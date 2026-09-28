@@ -228,3 +228,16 @@ The first five decide dollar figures above and should be settled before the tag 
 - [ ] Paul Posluszny's medical clearance, projected April 5.
 
 The cap arithmetic, contract frameworks, branch evidence and sources behind every figure here are in the full [Jacksonville 2014 Offseason Plan](https://claude.ai/code/artifact/366a8bee-e8b5-4f0b-ae54-be8669c9e444).
+
+## September 28, 2026 amendment: package G timing
+
+**User instruction, at the unchanged February 2 branch checkpoint:** pursue a trade of Russell Allen before April 22 so Jacksonville can receive something in return. This amendment supersedes package G's instruction to wait for the draft. The original uploaded memo above is preserved as the earlier recommendation, not the current timing authority.
+
+- Caldwell should prepare the market inquiry now and shop Allen when the trade window opens March 11 at 4 p.m. ET. No transaction can close before that opening. Seek an unconditional 2015 seventh; the already-authorized fallback is an unconditional 2016 seventh. Jacksonville sends no pick and does not add another player to this package.
+- Complete any agreement, physical, contract review and league processing by April 21, 2014. April 21 is Stone's operational deadline, not a league trade deadline. An agreement still conditional or unprocessed when April 22 arrives is not a completed trade. No wait for the May 8 to 10 draft remains.
+- The earlier Posluszny-clearance condition is retained: a projected April 5 return is not clearance. Solicit interest before that review, then close at the first permissible opportunity after actual clearance. If clearance is delayed and the condition would prevent completion by April 21, bring that specific coverage/depth decision to Stone before the window expires. Do not silently remove it, declare clearance, or assume a drafted replacement exists.
+- A buyer must independently accept the price and Allen's verified contractual and medical position. Disclose communicated branch medical information through normal channels. The real-world injury behind his retirement is not a branch injury and cannot be fabricated into his physical. No club is assigned private foreknowledge, and no offer or guaranteed return is invented.
+- The league-wide April 22 retirement still applies whichever club controls him. Moving Allen changes ownership, not the retirement rule. If there is no completed deal, keep him under existing control until that scheduled event is applied; this instruction does not authorize a separate release.
+- The memo's $1.98M saving remains a planning claim pending clause-level verification. Check salary, guarantees, unpaid bonuses, retained proration and Top-51 displacement before booking a cap effect. Record any unresolved amount explicitly.
+
+Actual inquiries/offers and a completed trade belong in the dated trade records and ledger when the clock reaches them, with roster, contract/cap, pick ownership and current-state updates closed together. This amendment records a plan only: no buyer, pick, cap saving or roster change has occurred.

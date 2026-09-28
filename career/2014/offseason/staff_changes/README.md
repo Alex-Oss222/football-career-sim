@@ -8,7 +8,7 @@
 |---|---|
 | [requests_and_outcomes.md](requests_and_outcomes.md) | **Canon (Entry 75).** The resolved January 2014 carousel: every club's head-coach decision, each request for a Jacksonville assistant, Jacksonville's answer, each interview and each departure. Generated from [carousel_results.json](carousel_results.json). |
 | [carousel_method.json](carousel_method.json) | The weighted method, committed before the draw: base rates, request weights, Jacksonville's default permission policy, offers and dates. Rules from `library/2014_coaching_hiring_and_anti_tampering_rules.md`; script `scripts/coaching_carousel.py`. |
-| [staff_plan.md](staff_plan.md) | Awaiting the user: Stone's replacement targets. **The special teams coordinator job is vacant.** |
+| [staff_plan.md](staff_plan.md) | Researched candidate order and proposed terms prepared for Stone's approval. **The special teams coordinator job remains vacant.** |
 | [interest_assessment.md](interest_assessment.md) | First-pass assessment written before the rules were researched. **Not canon**; kept as the ex-ante record. |
 | `hires.md` | Not yet created. Records each 2014 hire and each declined call, as in 2013. |
 
