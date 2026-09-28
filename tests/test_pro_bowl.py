@@ -32,6 +32,14 @@ class ProBowlGameTests(unittest.TestCase):
                 top = (5 - p["quarter"]) * 900
                 self.assertTrue(top - 900 <= p["end_clock"] < p["start_clock"] <= top)
 
+    def test_receipt_audits_clean(self):
+        from runtime.play_detail import check_ledger
+        from runtime.statbook import make_receipt
+        for game in self.games[:20]:
+            for detail in ("full", "compact_stats"):
+                receipt = make_receipt(game, week=20, matchup="B at A", detail=detail)
+                self.assertEqual(check_ledger(receipt), [])
+
     def test_score_is_followed_by_a_placement(self):
         seen = 0
         for game in self.games:

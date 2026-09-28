@@ -51,4 +51,4 @@ Each branch game takes the real 2013-14 date, kickoff and network of the slot wi
 | 20 | NFC Championship (4 at 1) | Sun. Jan. 19, 6:30 p.m., FOX | Philadelphia at Minnesota | **Minnesota 20**, Philadelphia 7 | [roundup](../league_results/week_20.md) |
 | 21 | Super Bowl XLVIII | Sun. Feb. 2, 2014, 6:30 p.m., FOX, MetLife Stadium (neutral) | Minnesota (NFC 1) vs. Buffalo (AFC 6, designated home) | **Buffalo 31**, Minnesota 20; Buffalo champion (Entry 67) | [roundup](../league_results/week_21.md) |
 
-The Pro Bowl (Sun. Jan. 26, Aloha Stadium) falls in the off week between the conference round and the Super Bowl. It is not simulated.
+The Pro Bowl (Sun. Jan. 26, Aloha Stadium) falls in the off week between the conference round and the Super Bowl. It was drawn retroactively as an exhibition (Entry 73; [../pro_bowl/README.md](../pro_bowl/README.md)) and counts toward no standing or statistic. The Super Bowl MVP is in [../awards/super_bowl_mvp.json](../awards/super_bowl_mvp.json).

@@ -1193,8 +1193,11 @@ QUARTER_STARTS = (2700, 1800, 900)
 def _frame(p, game_type):
     """(draw half, clock base) of a possession: the half and its base, or for
     a Pro Bowl possession its quarter window (kernel 2014.3)."""
-    if game_type == PRO_BOWL and p.get("quarter"):
-        return (2 if p["quarter"] == 4 else 1), (4 - p["quarter"]) * 900
+    if game_type == PRO_BOWL and p["half"] in (1, 2):
+        # A receipt's drive summary omits the quarter; no Pro Bowl possession
+        # crosses one, so its start clock fixes it.
+        quarter = p.get("quarter") or 4 - (int(p["start_clock"]) - 1) // 900
+        return (2 if quarter == 4 else 1), (4 - quarter) * 900
     return p["half"], _clock_base(p["half"])
 
 

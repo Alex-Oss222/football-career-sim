@@ -1,0 +1,31 @@
+{
+ "procedure": "super-bowl-mvp-v1",
+ "ledger_entry": "Ledger Entry 73",
+ "snapshot": "f1dbff9ea7d90f5385064276f6bc708c1dce9145e548c146045ead7dbe8e7d14",
+ "event_id": "2013-honours-super-bowl-mvp-v1",
+ "packet_sha256": "3c63f92205a085afb360e33b6e279fc8fcdf8b458ee1c6b9ea00f0937061792f",
+ "result_ref": "dba86ab057d223c61ec80bb79aeefd066e36ad6532915af3d685a99491ed106d",
+ "method_sha256": "bb3d633d5c7734ab25b959467b90883688a93c8e63e831334a37a0363e3deda5",
+ "receipt_sha256": "c89c2613abf6fed43210267fccf2136dcaf423a8c794c83dbe7131a1eac460ba",
+ "shortlist": [
+  {
+   "player": "C.J. Spiller",
+   "team": "Buffalo Bills",
+   "position": "RB",
+   "score": 21.1
+  },
+  {
+   "player": "Leodis McKelvin",
+   "team": "Buffalo Bills",
+   "position": "CB",
+   "score": 18.9
+  },
+  {
+   "player": "Jeff Tuel",
+   "team": "Buffalo Bills",
+   "position": "QB",
+   "score": 14.1
+  }
+ ],
+ "winner_index": 0
+}

@@ -2075,3 +2075,39 @@ This archive was appended late. It was written at this February 2, 2014 checkpoi
 **Unrecorded 2013 defect, now recorded.** Week 9, San Diego 20, Washington 20 (kernel 2013.7): San Diego's nine-play, 66-yard overtime drive, which ended on downs, was clocked from 13:25 to 0:00. That is the whole-period overtime defect Entry 50 records for Week 10, and kernel 2013.8 fixed it. Neither Entry 49 nor the Week 9 roundup noted it. The result stands, as the Week 10 one does.
 
 **Commit closed - Canonical update - February 2, 2014 - Kernel 2014.3 adopted (credit rules, Pro Bowl game type) - canonical through February 2, 2014**
+
+## Entry 73: Super Bowl MVP and Pro Bowl drawn (retroactive)
+
+**Effective canonical state:** February 2, 2014 (no clock advance)
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - February 2, 2014 - Super Bowl MVP and Pro Bowl drawn (retroactive)`
+**Preceding global package checkpoint:** `Canonical update - February 2, 2014 - Kernel 2014.3 adopted (credit rules, Pro Bowl game type)`
+
+**Decision.** The user asked for the Super Bowl MVP and the Pro Bowl need players, draft and game to be built out and finished (Entry 71 recorded them as not generated). That authorizes this retroactive draw.
+- **Methods:** both were merged in Entry 72, before any draw: `career/2013/awards/super_bowl_mvp_method.json` and `career/2013/pro_bowl/method.json`, on `library/2013_super_bowl_mvp_and_pro_bowl_procedure.md`.
+- **Scope:** no game result, statistic, standing or roster fact changes.
+
+**Super Bowl XLVIII MVP: C.J. Spiller, Buffalo.**
+- **Shortlist:** from the winning club's players on the closed Super Bowl receipt, by the weekly award formulas: Spiller, Leodis McKelvin and Jeff Tuel.
+- **Draw:** the private service's 6:3:1 panel drew the first name.
+
+**Pro Bowl draft (January 21-22).**
+- **Captain groups:**
+  - Team One: Jamaal Charles and David Harris.
+  - Team Two: Vontaze Burfict and Philip Rivers.
+- **Coin toss:** the private service's toss gave Team Two the first pick on both days.
+- **Coaches:** the pairing put Jeff Fisher's Rams staff with Team One and Rex Ryan's Jets staff with Team Two.
+- **Need players:** each staff appointed its own long snapper, Jake McQuaide (Rams) and Tanner Purdum (Jets).
+- **Picks:** alternated straight, taking the highest vote-rank player left at each position. A team with its quota filled had the rest assigned to it.
+- **Jacksonville:** Marcedes Lewis was drafted by Team One.
+
+**Pro Bowl game (January 26): Team One 9, Team Two 6 in overtime.**
+- **Rules:** played under the kernel 2014.3 Pro Bowl rules: no kickoffs, the ball at the 25 each quarter and after scores, and possession alternating each quarter.
+- **Scoring:** four regulation field goals, then Team One's overtime field goal.
+- **Records:** the receipt is `career/2013/pro_bowl/receipt.json`, apart from the season receipts, and counts toward no statistic, standing, award or band. The record is `career/2013/pro_bowl/README.md`.
+
+**Receipt audit.** The first audit of the published receipt showed that its compact drive summary omits the quarter. `check_ledger` now derives the quarter from the drive's clock, since no Pro Bowl possession crosses a quarter. The receipt audits clean, and `tests/test_pro_bowl.py` now audits Pro Bowl receipts. This is a checking change only; no result depends on it.
+
+**Still not generated.** The two 2013 special-teamer slots (no coverage-unit evidence in the 2013 receipts).
+
+**Commit closed - Canonical update - February 2, 2014 - Super Bowl MVP and Pro Bowl drawn (retroactive) - canonical through February 2, 2014**
