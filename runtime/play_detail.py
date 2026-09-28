@@ -229,7 +229,48 @@ def _groups(value):
     return value if isinstance(value, str) else list(value)
 
 
-def _choose_label(lrng, team, record, runner_group, target_group):
+def _personnel_slots(personnel):
+    """{group: slots} for a two-digit personnel code (backs, tight ends,
+    receivers the rest of five); None when the code names no skill layout
+    (for example 6OL), in which case no personnel limit applies."""
+    code = str(personnel or "")
+    if len(code) != 2 or not code.isdigit():
+        return None
+    backs, ends = int(code[0]), int(code[1])
+    if backs + ends > 5:
+        return None
+    return {"RB": backs, "FB": backs, "TE": ends, "WR": 5 - backs - ends}
+
+
+def _personnel_fits(call, grp, rank):
+    """Kernel 2013.10: whether the player who made the snap could be on the
+    field in the call's personnel. His group needs a slot, and his depth rank
+    in that group may be at most one past the slots (one rotation spot, as in
+    "Thielen / Blackmon" or "MJD / Grimes"). A fullback needs two backs. A
+    quarterback, an unranked player or a personnel code with no skill layout
+    always fits."""
+    slots = _personnel_slots(call.get("personnel"))
+    if slots is None or grp in (None, "QB") or rank is None:
+        return True
+    if grp == "FB":
+        return slots["FB"] >= 2 and rank <= slots["FB"] - 1
+    count = slots.get(grp)
+    if count is None:
+        return True
+    return count >= 1 and rank <= count + 1
+
+
+def _group_rank(players, player):
+    """1-based depth rank of a player within his position group."""
+    grp = usage.group(player.position)
+    ordered = usage.depth_order(tuple(players), grp)
+    for rank, member in enumerate(ordered, 1):
+        if member.player_id == player.player_id:
+            return rank
+    return None
+
+
+def _choose_label(lrng, team, record, runner_group, target_group, runner_rank=None, target_rank=None):
     """(call, label_source, label_groups, scramble) for one resolved snap."""
     if record.get("kneel"):
         return _engine_label(KNEEL_LABEL, "run"), "kneel", None, False
@@ -245,7 +286,8 @@ def _choose_label(lrng, team, record, runner_group, target_group):
                 call = pool[lrng.randrange(len(pool))]
                 return call, "sheet", _groups(call["target"]), True
         pool = _candidates(team, "run", lambda call: isinstance(call["carrier"], tuple)
-                           and runner_group in call["carrier"])
+                           and runner_group in call["carrier"]
+                           and _personnel_fits(call, runner_group, runner_rank))
         if not pool:
             return _engine_label(GENERIC_RUN, "run"), "generic", None, False
         call = pool[lrng.randrange(len(pool))]
@@ -253,8 +295,9 @@ def _choose_label(lrng, team, record, runner_group, target_group):
     if record.get("sack"):
         pool = _candidates(team, "pass", lambda call: True)
     else:
-        pool = _candidates(team, "pass", lambda call: call["target"] == call_families.ANY or (
+        pool = _candidates(team, "pass", lambda call: (call["target"] == call_families.ANY or (
             isinstance(call["target"], tuple) and target_group in call["target"]))
+            and _personnel_fits(call, target_group, target_rank))
     if not pool:
         return _engine_label(GENERIC_PASS, "pass"), "generic", None, False
     call = pool[lrng.randrange(len(pool))]
@@ -752,7 +795,7 @@ def apply_drive_detail(
             receiver = usage.pick(rng, available, shares["target_share"], "target", role="receiver")
             rec_line = offense_stats["players"][receiver.player_id]
             record["target"] = receiver.player_id
-            groups_for[index] = (None, usage.group(receiver.position))
+            groups_for[index] = (None, usage.group(receiver.position), None, _group_rank(available, receiver))
             _bump(qb_line, "pass_attempts")
             _bump(rec_line, "targets")
 
@@ -800,7 +843,7 @@ def apply_drive_detail(
             record["runner"] = qb.player_id
             record["rushing_yards"] = yards
             record["result_yards"] = yards
-            groups_for[index] = (usage.group(qb.position), None)
+            groups_for[index] = (usage.group(qb.position), None, 1, None)
             _bump(run_line, "rushing_attempts")
             _bump(run_line, "rushing_yards", yards)
         else:
@@ -812,7 +855,7 @@ def apply_drive_detail(
             record["runner"] = runner.player_id
             record["rushing_yards"] = yards
             record["result_yards"] = yards
-            groups_for[index] = (usage.group(runner.position), None)
+            groups_for[index] = (usage.group(runner.position), None, _group_rank(available, runner), None)
             _bump(run_line, "rushing_attempts")
             _bump(run_line, "rushing_yards", yards)
             _max(run_line, "long_rush", yards)
@@ -893,8 +936,9 @@ def apply_drive_detail(
     lrng = _label_rng(seed, event_id=event_id, drive_no=drive_no, offense=team.team_id)
     call_stats = {}
     for index, record in enumerate(ledger[:plays]):
-        runner_group, target_group = groups_for.get(index, (None, None))
-        call, source, label_groups, scramble = _choose_label(lrng, team, record, runner_group, target_group)
+        runner_group, target_group, runner_rank, target_rank = groups_for.get(index, (None, None, None, None))
+        call, source, label_groups, scramble = _choose_label(lrng, team, record, runner_group, target_group,
+                                                             runner_rank, target_rank)
         record.update({
             "concept": call["name"], "family": call["family"], "personnel": call["personnel"],
             "formation": call["formation"], "motion": call["motion"], "protection": call["protection"],

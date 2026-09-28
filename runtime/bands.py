@@ -218,10 +218,12 @@ KNOWN_DETECTIONS = {
 KNOWN_DETECTIONS["2013.8"] = dict(KNOWN_DETECTIONS["2013.7"])
 # Kernel 2013.9 changes only where a spike sits in a drive's snap order.
 KNOWN_DETECTIONS["2013.9"] = dict(KNOWN_DETECTIONS["2013.8"])
+# Kernel 2013.10 changes only which call label a snap carries.
+KNOWN_DETECTIONS["2013.10"] = dict(KNOWN_DETECTIONS["2013.9"])
 
 
 def known_detections(cohort):
-    """{metric: note} for a kernel cohort ("2013.6", "2013.7", "2013.8" or "2013.9"); empty otherwise."""
+    """{metric: note} for a kernel cohort ("2013.6", "2013.7", "2013.8", "2013.9" or "2013.10"); empty otherwise."""
     return dict(KNOWN_DETECTIONS.get(cohort, {}))
 
 

@@ -1,6 +1,6 @@
 """The single, era-calibrated football runtime used by every game path."""
 
-KERNEL_VERSION = "2013.9"
+KERNEL_VERSION = "2013.10"
 SCHEMA_VERSION = "1"
 
 # Production callers import these names.  Low-level kernel access remains for
