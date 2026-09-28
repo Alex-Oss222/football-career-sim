@@ -27,6 +27,7 @@ ROSTER = ROOT / "career" / "2013" / "roster.md"
 DEPTH_CHART = ROOT / "career" / "2013" / "depth_chart.json"
 PROTAGONIST = "Jacksonville Jaguars"
 AVAILABLE_TEXT = "No communicated restriction"
+GAME_DAY_ACTIVES = 46
 LIMITED_TEXT = "Limited, no projected absence"
 UNIT = depth_library.UNIT
 
@@ -42,8 +43,22 @@ def schedule(week):
     return games
 
 
-def event_id(game):
-    return "2013-week%02d-%s-at-%s" % (game["week"], slug(game["away"], "-"), slug(game["home"], "-"))
+GENERATIONS = ROOT / "career/2013/migrations/event_generations.json"
+
+
+def event_generation(week):
+    """The current event generation for a week: 1 unless a user-authorized
+    void in career/2013/migrations/event_generations.json replaced it."""
+    if not GENERATIONS.exists():
+        return 1
+    weeks = json.loads(GENERATIONS.read_text(encoding="utf-8")).get("weeks", {})
+    return int(weeks.get(str(int(week)), {}).get("current_generation", 1))
+
+
+def event_id(game, generation=None):
+    generation = event_generation(game["week"]) if generation is None else generation
+    base = "2013-week%02d-%s-at-%s" % (game["week"], slug(game["away"], "-"), slug(game["home"], "-"))
+    return base if generation == 1 else "%s-g%d" % (base, generation)
 
 
 def receipt_name(game):
@@ -137,6 +152,7 @@ def controlled_active():
     return rows
 
 
+HOLD_NOTE = re.compile(r"\b(Out|hold|Suspended|Reserve|Non-football|Exempt)\b", re.IGNORECASE)
 PROJECTED_RETURN = re.compile(r"projected return ([A-Z][a-z]+ \d{1,2}(?:, \d{4})?)")
 
 
@@ -148,10 +164,14 @@ def roster_available(availability, game_day):
     a suspension) clears only when the roster entry is changed. A player
     listed as limited with no projected absence plays, as for every club.
     """
-    if availability == AVAILABLE_TEXT or availability.startswith(LIMITED_TEXT):
+    if availability.startswith(AVAILABLE_TEXT) or availability.startswith(LIMITED_TEXT):
         return True
     match = PROJECTED_RETURN.search(availability)
     if not match:
+        if not HOLD_NOTE.search(availability):
+            # A note that is neither clear, limited, dated nor an explicit
+            # hold is a data defect, not a hold: fail the build (Entry 57).
+            raise ValueError("unrecognized availability note: %r" % availability)
         return False
     text = match.group(1)
     back = datetime.strptime(text if "," in text else text + ", 2013", "%B %d, %Y").date()
@@ -183,9 +203,19 @@ def jacksonville_input(receipts, game_day, anchors, call_sheet):
         })
     if missing:
         raise ValueError("depth_chart.json does not place: " + ", ".join(missing))
+    active = [p["player_id"] for p in roster if p["available"] and p["player_id"] not in inactives]
+    healthy_inactive = [p["player_id"] for p in roster if p["available"] and p["player_id"] in inactives]
+    if len(active) < GAME_DAY_ACTIVES and healthy_inactive:
+        # 2013 clubs dress 46 while healthy players remain: an unavailable
+        # player missing from Stone's inactive list is a plan gap to resolve
+        # before the draw, never a silent 45-man unit (Entry 57).
+        unlisted = [p["player_id"] for p in roster if not p["available"] and p["player_id"] not in inactives]
+        raise ValueError("Jacksonville would dress %d, not %d: unavailable but not listed inactive: %s; "
+                         "healthy inactives: %s" % (len(active), GAME_DAY_ACTIVES, ", ".join(unlisted) or "none",
+                                                     ", ".join(healthy_inactive)))
     return {
         "team_id": PROTAGONIST,
-        "active_players": [p["player_id"] for p in roster if p["available"] and p["player_id"] not in inactives],
+        "active_players": active,
         **anchors, "roster": roster, "offensive_call_sheet": list(call_sheet),
     }
 

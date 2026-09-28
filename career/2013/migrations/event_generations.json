@@ -1,0 +1,35 @@
+{
+ "schema_version": 1,
+ "rule": "A week's events close under current_generation. Earlier generations were voided by the user before any result was seen; they are marked in the private journal with scripts/void_week_generation.py and are never shown, compared or selected among. The decision to void never depends on a result (Document 1 section 9.1).",
+ "weeks": {
+  "14": {
+   "current_generation": 2,
+   "voided": [
+    {
+     "generation": 1,
+     "events": [
+      "2013-week14-houston-texans-at-jacksonville-jaguars",
+      "2013-week14-atlanta-falcons-at-green-bay-packers",
+      "2013-week14-buffalo-bills-at-tampa-bay-buccaneers",
+      "2013-week14-cleveland-browns-at-new-england-patriots",
+      "2013-week14-detroit-lions-at-philadelphia-eagles",
+      "2013-week14-indianapolis-colts-at-cincinnati-bengals",
+      "2013-week14-kansas-city-chiefs-at-washington-redskins",
+      "2013-week14-miami-dolphins-at-pittsburgh-steelers",
+      "2013-week14-minnesota-vikings-at-baltimore-ravens",
+      "2013-week14-oakland-raiders-at-new-york-jets",
+      "2013-week14-tennessee-titans-at-denver-broncos",
+      "2013-week14-new-york-giants-at-san-diego-chargers",
+      "2013-week14-seattle-seahawks-at-san-francisco-49ers",
+      "2013-week14-st-louis-rams-at-arizona-cardinals",
+      "2013-week14-carolina-panthers-at-new-orleans-saints",
+      "2013-week14-dallas-cowboys-at-chicago-bears"
+     ],
+     "reason": "technical void (ledger Entry 57): Jacksonville's generation-1 TeamInput left A.J. Bouye unavailable because runtime.week_inputs.roster_available matched only the exact note 'No communicated restriction' and his roster note carried a parenthetical; Jacksonville dressed 45, not the plan's 46. The user voided the whole slate before any result was viewed.",
+     "input_package_sha256": "3039f6e64e80745322fd60428bfefeceec1e78c2390223ff273a638920dca3cf",
+     "authorized": "user, September 28, 2026 (answer: Void and replay)"
+    }
+   ]
+  }
+ }
+}

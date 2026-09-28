@@ -2350,5 +2350,152 @@
     "winner_index": 1
    }
   }
+ },
+ "week-14": {
+  "kind": "week",
+  "key": "14",
+  "label": "Week 14",
+  "order": 14,
+  "note": "",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2013-award-week14-afc-offense-v1",
+    "packet_sha256": "94819d4e70ccc043643ef67583e0f9cda9a09f1f68968062b81055723cd2a6c2",
+    "result_ref": "a3a9ba5c1e372928ffec7d459c3ff15764a72d6702004624fe38451fc60a0870",
+    "shortlist": [
+     {
+      "player": "Chris Johnson",
+      "team": "Tennessee Titans",
+      "score": 34.6
+     },
+     {
+      "player": "Malcom Floyd",
+      "team": "San Diego Chargers",
+      "score": 32.7
+     },
+     {
+      "player": "Ronnie Hillman",
+      "team": "Denver Broncos",
+      "score": 31.2
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-defense": {
+    "event_id": "2013-award-week14-afc-defense-v1",
+    "packet_sha256": "794f08a1958ae0a3cad065d718cad4720a4a1469f11b919a60e9df5c5d21ece2",
+    "result_ref": "09041f9c0ecbaa38da977cbc39c0a5a2e2b5699eb3421d8fac54544c4e27f611",
+    "shortlist": [
+     {
+      "player": "Justin Rogers",
+      "team": "Buffalo Bills",
+      "score": 26.7
+     },
+     {
+      "player": "Rahim Moore",
+      "team": "Denver Broncos",
+      "score": 20.0
+     },
+     {
+      "player": "Tyvon Branch",
+      "team": "Oakland Raiders",
+      "score": 19.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-special_teams": {
+    "event_id": "2013-award-week14-afc-special_teams-v1",
+    "packet_sha256": "34668a3636d62bcf1cfdb64c0694f1cd6d7128af5eb781008b01b32ebc92b03f",
+    "result_ref": "894b3ec00317f5cd2c88880ce7ed97dabe78a4e14395a82ed83072be4150706a",
+    "shortlist": [
+     {
+      "player": "Jacoby Ford",
+      "team": "Oakland Raiders",
+      "score": 16.3
+     },
+     {
+      "player": "Brandon Tate",
+      "team": "Cincinnati Bengals",
+      "score": 15.4
+     },
+     {
+      "player": "Dan Carpenter",
+      "team": "Buffalo Bills",
+      "score": 13.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-offense": {
+    "event_id": "2013-award-week14-nfc-offense-v1",
+    "packet_sha256": "c41b19c9de285a00efedf6536e54ab63830d34f9f3c0806b7e9faf1dafdad3f9",
+    "result_ref": "694ecd3f10984a734ea4bf8f4ebc831adb8a330dd52322c8de7a20c630b0a9b3",
+    "shortlist": [
+     {
+      "player": "Aaron Rodgers",
+      "team": "Green Bay Packers",
+      "score": 37.36
+     },
+     {
+      "player": "Randall Cobb",
+      "team": "Green Bay Packers",
+      "score": 29.4
+     },
+     {
+      "player": "Marshawn Lynch",
+      "team": "Seattle Seahawks",
+      "score": 26.4
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2013-award-week14-nfc-defense-v1",
+    "packet_sha256": "8221084f6d3d2e67f75751bed25bbe2ae6065d18adca76d5fd50b465373eaeee",
+    "result_ref": "70f528881abd954eb5d0ea7bd6631bb684a6b6862f36ccefc9b667c54713a142",
+    "shortlist": [
+     {
+      "player": "Curtis Lofton",
+      "team": "New Orleans Saints",
+      "score": 21.5
+     },
+     {
+      "player": "B.J. Raji",
+      "team": "Green Bay Packers",
+      "score": 19.0
+     },
+     {
+      "player": "Dan Connor",
+      "team": "New York Giants",
+      "score": 19.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-special_teams": {
+    "event_id": "2013-award-week14-nfc-special_teams-v1",
+    "packet_sha256": "a4ec86375248a81f43b0544afa02ba1b438d652387ad94a06b7fc41edc188355",
+    "result_ref": "0424bac49c89c989e0f7fbf3e5e662ac1ba55fdf99d38e2946ebf1fb0fed6013",
+    "shortlist": [
+     {
+      "player": "Dave Zastudil",
+      "team": "Arizona Cardinals",
+      "score": 17.75
+     },
+     {
+      "player": "Darren Sproles",
+      "team": "New Orleans Saints",
+      "score": 16.0
+     },
+     {
+      "player": "LaMichael James",
+      "team": "San Francisco 49ers",
+      "score": 14.3
+     }
+    ],
+    "winner_index": 0
+   }
+  }
  }
 }

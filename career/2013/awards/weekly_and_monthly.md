@@ -211,3 +211,16 @@ Drawn at the close of Week 11 (Entry 52).
 | NFC Offensive Player | Daryl Richardson | St. Louis Rams | 24.2 | Daryl Richardson, St. Louis Rams (24.2); Larry Fitzgerald, Arizona Cardinals (23.7); Joique Bell, Detroit Lions (22.7) |
 | NFC Defensive Player | Justin Durant | Dallas Cowboys | 21.5 | Justin Durant, Dallas Cowboys (21.5); Brandon Carr, Dallas Cowboys (20.7); Harrison Smith, Minnesota Vikings (18.6) |
 | NFC Special Teams Player | Jon Ryan | Seattle Seahawks | 12.2 | Mason Crosby, Green Bay Packers (15.0); Jon Ryan, Seattle Seahawks (12.2); David Akers, Detroit Lions (12.0) |
+
+
+
+### Week 14
+
+| Award | Winner | Team | Score | Shortlist (score) |
+|---|---|---|--:|---|
+| AFC Offensive Player | Chris Johnson | Tennessee Titans | 34.6 | Chris Johnson, Tennessee Titans (34.6); Malcom Floyd, San Diego Chargers (32.7); Ronnie Hillman, Denver Broncos (31.2) |
+| AFC Defensive Player | Justin Rogers | Buffalo Bills | 26.7 | Justin Rogers, Buffalo Bills (26.7); Rahim Moore, Denver Broncos (20.0); Tyvon Branch, Oakland Raiders (19.0) |
+| AFC Special Teams Player | Jacoby Ford | Oakland Raiders | 16.3 | Jacoby Ford, Oakland Raiders (16.3); Brandon Tate, Cincinnati Bengals (15.4); Dan Carpenter, Buffalo Bills (13.0) |
+| NFC Offensive Player | Aaron Rodgers | Green Bay Packers | 37.4 | Aaron Rodgers, Green Bay Packers (37.4); Randall Cobb, Green Bay Packers (29.4); Marshawn Lynch, Seattle Seahawks (26.4) |
+| NFC Defensive Player | Curtis Lofton | New Orleans Saints | 21.5 | Curtis Lofton, New Orleans Saints (21.5); B.J. Raji, Green Bay Packers (19.0); Dan Connor, New York Giants (19.0) |
+| NFC Special Teams Player | Dave Zastudil | Arizona Cardinals | 17.8 | Dave Zastudil, Arizona Cardinals (17.8); Darren Sproles, New Orleans Saints (16.0); LaMichael James, San Francisco 49ers (14.3) |

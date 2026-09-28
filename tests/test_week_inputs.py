@@ -62,7 +62,26 @@ class PackageTests(unittest.TestCase):
     def setUpClass(cls):
         sheet = json.loads(WEEK1_SHEET.read_text())["offensive_call_sheet"]
         receipts = [r for r in load_receipts(ROOT / "career/2013/stats/game_receipts") if int(r["week"]) < 2]
-        cls.package = week_inputs.build_package(2, receipts, sheet, AVERAGE_ANCHORS)
+        cls.sheet, cls.receipts = sheet, receipts
+        # Week 2 rebuilt with today's roster notes: players hurt later (for
+        # example Kelce, Week 13) are dated out, so the 46-man gate is relaxed
+        # for this structural rebuild and tested on its own below.
+        with mock.patch.object(week_inputs, "GAME_DAY_ACTIVES", 0):
+            cls.package = week_inputs.build_package(2, receipts, sheet, AVERAGE_ANCHORS)
+
+    def test_short_unit_with_healthy_inactives_fails_the_build(self):
+        chart = json.loads(week_inputs.DEPTH_CHART.read_text())
+        inactives = set(chart["game_day_inactives"]["players"])
+        rows = list(week_inputs.controlled_active())
+        # Hold one dressed, available player without adding him to Stone's list.
+        index = next(i for i, (player, note) in enumerate(rows)
+                     if player not in inactives and note == week_inputs.AVAILABLE_TEXT)
+        held = rows[index][0]
+        rows[index] = (held, "Out, medical hold")
+        with mock.patch.object(week_inputs, "controlled_active", return_value=rows), \
+                mock.patch.object(week_inputs, "injured_out", return_value={}):
+            with self.assertRaisesRegex(ValueError, "not 46.*%s" % held):
+                week_inputs.jacksonville_input([], date(2013, 12, 15), AVERAGE_ANCHORS, self.sheet)
 
     def test_unlabelled_call_fails_the_build(self):
         with self.assertRaisesRegex(ValueError, "Mystery"):
@@ -118,3 +137,28 @@ class PackageTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class AvailabilityNoteTests(unittest.TestCase):
+    """Entry 57: the Week 14 generation-1 void."""
+
+    def test_explained_clear_note_is_available(self):
+        from datetime import date
+        from runtime.week_inputs import roster_available
+        day = date(2013, 12, 5)
+        self.assertTrue(roster_available("No communicated restriction (Week 11 injury cleared November 26)", day))
+        self.assertFalse(roster_available("Out, head/neck, independent medical hold (Week 13); projected return April 5, 2014", day))
+        self.assertFalse(roster_available("Out, medical hold", day))
+
+    def test_unrecognized_note_fails_the_build(self):
+        from datetime import date
+        from runtime.week_inputs import roster_available
+        with self.assertRaises(ValueError):
+            roster_available("Questionable", date(2013, 12, 5))
+
+    def test_generation_suffix(self):
+        from runtime.week_inputs import event_id
+        game = {"week": 14, "away": "Houston Texans", "home": "Jacksonville Jaguars"}
+        self.assertEqual(event_id(game, 1), "2013-week14-houston-texans-at-jacksonville-jaguars")
+        self.assertEqual(event_id(game, 2), "2013-week14-houston-texans-at-jacksonville-jaguars-g2")
+        self.assertEqual(event_id(game), event_id(game, 2))

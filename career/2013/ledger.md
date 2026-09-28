@@ -1399,3 +1399,52 @@ A snap no call fits carries the generic label. Source and tests: `runtime/README
 **Closed results stand.** Closed receipts keep their labels; nothing is rerun.
 
 **Commit closed - Canonical update - December 1, 2013 - Kernel 2013.10 adopted (personnel-true labels) - canonical through December 1, after Week 13**
+
+## Entry 57: Week 14 vs Houston closed (generation 2, after a technical void)
+
+**Effective canonical state:** December 5, 2013, after Week 14
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - December 5, 2013 - Week 14 vs Houston closed`
+**Preceding global package checkpoint:** `Canonical update - December 1, 2013 - Kernel 2013.10 adopted (personnel-true labels)`
+
+**Result.** Jacksonville 21, Houston 20, Thursday night at EverBank Field. Jacksonville is 9-4, first in the AFC South a game ahead of 8-5 Tennessee, and the AFC's top seed ahead of the 9-4 Jets.
+
+**Generation-1 void.** The first Week 14 build left A.J. Bouye unavailable, so Jacksonville's unit had 45 players, not the 46 in Stone's plan.
+- **Cause:** his roster note read "No communicated restriction (Week 11 injury cleared November 26)", and `roster_available` matched only the exact phrase.
+- **How it closed:** the build and the close were chained, so all sixteen generation-1 events closed before the unit was inspected.
+- **Blind decision:** no generation-1 receipt, score or view was opened. The user was offered void-and-replay or keep, with no result known, and chose to void.
+- **Void:** the whole slate was voided. The generation-1 artifacts were deleted unread, and the sixteen events were recorded as corrections in the private journal (`scripts/void_week_generation.py`).
+- **Fixes:** the availability rule now accepts an explained clear note and fails the build on any unclassifiable note. A new gate fails when Jacksonville would dress fewer than 46 while healthy players sit inactive.
+- **Replacement:** the package (sha256 `1b206955...`) differs from generation 1 only in Bouye (45 to 46 actives). It was committed before the draw (1910d9d, 250a5c2).
+- **Record:** `migrations/week_14_generation_void.md` and `migrations/event_generations.json`.
+
+**Batch.** All sixteen generation-2 events (`...-g2`) closed once each under kernel 2013.10, the first slate on it.
+
+**Inputs.**
+- **Call sheet:** Stone's fifteen calls, with no new family.
+- **Linebackers:** Daryl Smith base linebacker and communication lead; Russell Allen started beside him for Posluszny.
+- **Kelce:** cleared at his projected return (December 3) and dressed.
+- **Inactives:** Posluszny, Ball, C.J. Wilson, Pendleton, Asper, John Parker Wilson, Mike Brown.
+
+**Game.**
+- **Run and pass:** 25 runs against 27 dropbacks; third down 8 of 12.
+- **Passing:** Cousins 15 of 24 for 226 yards, two touchdowns (Jones-Drew 17, Shorts 36 with 3:34 left) and no interception.
+- **Rushing:** Jones-Drew 13 carries for 89 yards and a touchdown.
+- **Turnover:** Grimes lost a fumble at the Houston 18.
+- **Defense:** Daryl Smith forced and recovered Andre Johnson's fumble at the Jacksonville 39 with 1:56 left; Babin had two sacks; Foster ran 17 times for 40.
+- **Game management:** Stone entered no game-management decision.
+
+**Availability.** No injury for either team. Posluszny out (projected April 5, 2014); Ball out.
+
+**Statistics, standings and awards.** One full receipt and fifteen compact receipts were kept, 208 of 208 in total. Week 14 awards were drawn; no Jacksonville player was shortlisted.
+
+**Audit.** The first 2013.10 cohort (Week 14, 32 team-games) reads OUTSIDE on net yards per team game: 394.2 against 347.2 ±40.
+- **Not caused by 2013.10:** it changes labels only, and results were identical on the 250-game sample.
+- **Engine level:** on that sample the kernel's own net level is 369.6, with a standard deviation of 86.5 per team-game. At that level a single 32-team-game week reads above 387.2 about 12% of the time.
+- **Reading:** one-week variance on top of a standing level about 22 yards above the 2012 centre. That level is inside tolerance and is listed here for future calibration.
+- **Unchanged:** nothing was tuned or rerun, and every other graded row is WITHIN.
+
+**Primary records:** `regular_season/week_14_houston_at_jacksonville/output.md` and `call_sheet.json`; `league_results/week_14.md`; `stats/game_receipts/week_14_*.json`; `migrations/week_14_generation_void.md`; `awards/`; `standings.md`; `depth_chart.json`.
+**Next competitive event:** December 15 Week 15 vs Buffalo, 1 p.m. ET. **Not simulated.**
+
+**Commit closed - Canonical update - December 5, 2013 - Week 14 vs Houston closed - canonical through December 5, after Week 14**
