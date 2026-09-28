@@ -8,13 +8,16 @@ The current checkpoint is owned by [Document 5](../state/05_Current_Season_State
 |---|---|---|
 | Practice or camp work | Phase `output.md`, then ledger | Phase `standouts.md`; roster/register availability and role evidence; current state; calendar status; camp battles/decisions if a decision occurred |
 | Signing, release, trade or drafted contract | Applicable signing/trade/draftee result, then ledger | Roster; cap/contract worksheet; pick ownership; Documents 4 and 5 |
-| Staff appointment or delegation | Staff hiring record and ledger | Current coaching staff; Document 4; Document 3 if durable authority/delegation changed; Document 5 |
+| Outside staff interview request, permission, interview, offer or refusal | Applicable dated request/outcome record and ledger; preserve frozen carousel artifacts | Current season's staff timeline and overview; calendar and Document 5 when their pending decisions change; staff employment and payroll change only if an actual event changes them |
+| Staff appointment, departure or delegation | Staff hiring/departure record and ledger | Current coaching staff and contract totals; Document 4; Document 3 if authority/delegation or current-incumbent pointers change; Document 5; current season's staff timeline, overview, hiring record and calendar |
 | Final regular-season game | Game output and ledger | Full public game receipt for Jacksonville (player stats + snap ledger + named-call stats) and a `compact_stats` receipt for each background game; background roundup `career/YEAR/league_results/week_NN.md`; the week's league awards (`scripts/league_awards.py week N --close`, plus the month's when due) in `career/YEAR/awards/`; generated box score in the week's output; regenerated statbook and standings; read `stats/calibration_audit.md` (investigate OUTSIDE rows, never rerun); the week's frozen `call_sheet.json`, committed as frozen; `career/YEAR/depth_chart.json` (order and inactives) when Stone changes either; medical/availability; Documents 4 and 5; calendar |
 | Preseason game | Preseason output and ledger | Same affected personnel/statistical views; regular-season standings stay unchanged |
 | Bye or administrative correction | Applicable note and ledger | Only facts actually changed; no phantom game, practice, injury or roster move |
 | Foundation correction | Ledger correction staged first | Named foundation document; source-version manifest; affected current views and readiness |
 
 Plans own teaching intent. Outputs own what happened. Standouts are evidence summaries of outputs, never a second event source or a permanent depth chart. Initial roster/cap sheets preserve the starting baseline; the current roster and cap worksheet own later changes. An older financial effective date remains correct when no financial event occurred.
+
+For 2014, the staff front door is [the staff-change folder](../career/2014/offseason/staff_changes/README.md). Its [timeline](../career/2014/offseason/staff_changes/timeline.md) summarizes dated outside requests and Jacksonville's [hiring outcomes](../career/2014/offseason/staff_changes/hires.md). Update these views in the same commit as a relevant closed event. The [plan](../career/2014/offseason/staff_changes/staff_plan.md) retains Stone's targets and proposed terms; do not rewrite it into a result log.
 
 ## Close an event
 

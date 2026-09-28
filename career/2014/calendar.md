@@ -6,10 +6,23 @@
 
 ## Current checkpoint
 
-- **Master date:** February 2, 2014, after Super Bowl XLVIII (2013 season complete; ledger Entry 67; 2014 setup Entry 68; latest closed event Entry 76, the exit interviews).
-- **Jacksonville:** 2013 finished 10-6, 1-1 postseason. 53 active and 8 on the practice squad carry over from the 2013 roster until the league year turns (`career/2013/roster.md` stays the controlled-roster record until the 2014 roster owner is created).
+- **Master date:** February 2, 2014, after Super Bowl XLVIII (2013 season complete; ledger Entry 67; 2014 setup Entry 68; latest closed Entry 79, Meester retired and Allen retirement scheduled; historical league rails adopted in Entry 78; staff-authority reconciliation closed in Entry 77 and player exit interviews in Entry 76).
+- **Jacksonville:** 2013 finished 10-6, 1-1 postseason. 52 active, Brad Meester on Reserve/Retired and 8 on the practice squad after Entry 79 (`career/2013/roster.md` stays the controlled-roster record until the 2014 roster owner is created).
 - **Held for the user:** the five 2014 phase plans; the special teams coordinator replacement plan.
 - **Next league events:** franchise and transition window February 17; Combine February 19-25; the 2014 league year opens March 11, 4:00 p.m. ET.
+
+## Coaching staff timeline
+
+[Open the full staff timeline](offseason/staff_changes/timeline.md) for the dated requests, permission decisions, interviews and outcomes. [Staff overview](offseason/staff_changes/README.md) · [Replacement targets](offseason/staff_changes/staff_plan.md) · [Jacksonville hires](offseason/staff_changes/hires.md).
+
+| Date or checkpoint | Staff event or decision | Status | Record |
+|---|---|---|---|
+| January 6 | Atlanta requested and received permission to interview Alan Lowry for head coach; the interview took place | Complete | [Timeline](offseason/staff_changes/timeline.md#dated-events), Entry 75 |
+| January 12 | Lowry accepted Atlanta's head-coach job; special teams coordinator became vacant and Stone assumed interim direction | Complete | [Departure record](offseason/staff_changes/requests_and_outcomes.md#departures), Entry 75 |
+| January 12 | Atlanta requested Frank Bush for linebackers; Jacksonville refused permission | Complete | [Timeline](offseason/staff_changes/timeline.md#dated-events), Entry 75 |
+| January 14; outcome known by February 2 | Bush interviewed for Indianapolis defensive coordinator and was not hired; he stays with Jacksonville | Complete | [Outcome](offseason/staff_changes/requests_and_outcomes.md#interviewed-not-hired), Entry 75 |
+| Current vacancy from January 12 | Select and pursue a replacement special teams coordinator | Open; no target, offer or appointment selected | [Plan](offseason/staff_changes/staff_plan.md), [hiring record](offseason/staff_changes/hires.md) |
+| After February 2, when the clock advances | Deferred Buffalo and Minnesota coaching decisions and any resulting Jacksonville requests | Future; not resolved | [Open items](offseason/staff_changes/timeline.md#still-open) |
 
 ## Offseason calendar
 
