@@ -1,0 +1,245 @@
+{
+ "procedure": "league-season-honours-v1",
+ "procedure_tag": "v1",
+ "authority": "User instruction of September 28, 2026: build a method and draw the 2013 Pro Bowl, AP All-Pro and AP season awards, which were recorded as gaps. This is a retroactive draw on the branch date of February 2, 2014; no game result or statistic changes.",
+ "structure_sources": [
+  "library/2013_nfl_awards_structure.md",
+  "library/2013_season_honours_selection_structure.md"
+ ],
+ "evidence": {
+  "receipts": "career/2013/stats/game_receipts (regular season only; postseason receipts are never read for a vote)",
+  "eligibility": "career/2013/awards/season_honours_evidence.json",
+  "player_formulas": "career/2013/awards/methodology.json (league-awards-v1): the offense, defense and special_teams formulas, unchanged",
+  "windows": {
+   "ap_awards": [
+    1,
+    17
+   ],
+   "all_pro": [
+    1,
+    17
+   ],
+   "pro_bowl": [
+    1,
+    16
+   ]
+  },
+  "window_note": "AP ballots follow the regular season, before the playoffs. The Pro Bowl vote closed December 26, 2013, before Week 17, so Week 17 does not count for it."
+ },
+ "position_groups": {
+  "QB": [
+   "QB"
+  ],
+  "RB": [
+   "RB",
+   "HB"
+  ],
+  "FB": [
+   "FB"
+  ],
+  "WR": [
+   "WR"
+  ],
+  "TE": [
+   "TE"
+  ],
+  "T": [
+   "T",
+   "OT"
+  ],
+  "G": [
+   "G",
+   "OG"
+  ],
+  "C": [
+   "C"
+  ],
+  "DE": [
+   "DE"
+  ],
+  "DT": [
+   "DT",
+   "NT"
+  ],
+  "OLB": [
+   "OLB"
+  ],
+  "ILB": [
+   "ILB",
+   "MLB",
+   "LB"
+  ],
+  "CB": [
+   "CB"
+  ],
+  "S": [
+   "S",
+   "SS",
+   "FS"
+  ],
+  "K": [
+   "K"
+  ],
+  "P": [
+   "P"
+  ]
+ },
+ "position_rule": "A player's group is the position he carried in the most regular-season receipts (ties go to the earliest week's label). The ballots' own handling of 3-4 ends and 4-3 linebackers is unverified, so the receipt label controls. A generic LB is placed with the inside linebackers.",
+ "group_scores": {
+  "QB": "offense",
+  "RB": "offense",
+  "FB": "offense",
+  "WR": "offense",
+  "TE": "offense",
+  "T": "line",
+  "G": "line",
+  "C": "line",
+  "DE": "defense",
+  "DT": "defense",
+  "OLB": "defense",
+  "ILB": "defense",
+  "CB": "defense",
+  "S": "defense",
+  "K": "kicker",
+  "P": "punter"
+ },
+ "extra_formulas": {
+  "line": {
+   "per_start": {
+    "constant": 3,
+    "team_rushing_yards": 0.05,
+    "team_passing_yards": 0.02,
+    "team_sacks_allowed": -2
+   },
+   "note": "The kernel charges a sack to a lineman drawn from the dressed line by planned rotation weight, so an individual lineman's sacks allowed record opportunity, not quality, and are not used. A lineman is credited with his club's line output in each game he started (evidence file, line_starts).",
+   "club_rule": "Every starter on a line earns the same line score, so equal scores cannot separate teammates. Each club therefore places at most one lineman per position (T, G, C) in any ranking: the one with the most starts, then by name. This rule was added after a dry run showed one club's five starters tied at the top of all three line positions; it applies to every club alike and was fixed before any draw."
+  },
+  "kicker": "methodology.json special_teams part for K",
+  "punter": "methodology.json special_teams part for P",
+  "kick_returner": {
+   "kick_return_yards": 0.1
+  },
+  "return_specialist": {
+   "kick_return_yards": 0.1,
+   "punt_return_yards": 0.1
+  }
+ },
+ "all_pro": {
+  "slots": {
+   "QB": 1,
+   "RB": 2,
+   "FB": 1,
+   "TE": 1,
+   "WR": 2,
+   "T": 2,
+   "G": 2,
+   "C": 1,
+   "DE": 2,
+   "DT": 2,
+   "OLB": 2,
+   "ILB": 2,
+   "CB": 2,
+   "S": 2,
+   "K": 1,
+   "P": 1,
+   "KR": 1
+  },
+  "rule": "Formula rank stands in for the 50-vote tally. First team: the top N at each position; second team: the next N (the AP second team was the runners-up of the same vote). Equal scores order by player name. KR ranks every player by kick_returner."
+ },
+ "pro_bowl": {
+  "slots": {
+   "QB": 6,
+   "RB": 6,
+   "FB": 2,
+   "WR": 8,
+   "TE": 4,
+   "T": 6,
+   "G": 6,
+   "C": 4,
+   "DE": 6,
+   "DT": 6,
+   "OLB": 6,
+   "ILB": 4,
+   "CB": 8,
+   "S": 6,
+   "K": 2,
+   "P": 2,
+   "RS": 2
+  },
+  "not_generated": {
+   "ST": "Special teamer (2 slots): the receipts carry no coverage-unit evidence separate from defensive tackles.",
+   "need_players": "The two coach-appointed need players (long snappers in 2014) are the coaches' choice, not a vote.",
+   "draft_and_game": "The January 21-22 draft and the January 26 game are exhibitions the kernel does not model."
+  },
+  "safeties": "Six safeties as one group: the 3 FS / 3 SS split is unverified; the draft quota of 3 safeties per team is confirmed.",
+  "rule": "Formula rank over Weeks 1-16 stands in for the one-third fan, player and coach vote. Selections: the top N per position; alternates: the next three, in order. RS ranks every player by return_specialist.",
+  "replacement_rule": "A selection whose club reached Super Bowl XLVIII, or whose latest recorded injury (regular season or postseason receipt) projects a return after January 26, 2014, does not play and is replaced by the highest alternate at his position who meets neither condition. The replaced player keeps his selection.",
+  "captains_rule": "Two offensive and two defensive active captains: the highest-scoring selections by the offense formula and by the defense formula whose clubs did not reach the conference championship round.",
+  "coaches_rule": "The staffs of the highest-seeded club in each conference to lose in the Divisional round (career/2013/postseason/README.md)."
+ },
+ "ap_awards": {
+  "awards": {
+   "MVP": {
+    "pool": [
+     "offense",
+     "defense"
+    ],
+    "team_wins_weight": 5
+   },
+   "OPOY": {
+    "pool": [
+     "offense"
+    ]
+   },
+   "DPOY": {
+    "pool": [
+     "defense"
+    ]
+   },
+   "OROY": {
+    "pool": [
+     "offense"
+    ],
+    "eligibility": "rookies"
+   },
+   "DROY": {
+    "pool": [
+     "defense"
+    ],
+    "eligibility": "rookies"
+   },
+   "CPOY": {
+    "pool": [
+     "offense",
+     "defense"
+    ],
+    "eligibility": "comeback_eligible"
+   },
+   "COY": {
+    "pool": "head_coaches",
+    "score": "2013 regular-season wins minus 2012 wins (a tie counts half); then 2013 wins, then 2013 point differential, then name"
+   }
+  },
+  "names": {
+   "MVP": "Most Valuable Player",
+   "OPOY": "Offensive Player of the Year",
+   "DPOY": "Defensive Player of the Year",
+   "OROY": "Offensive Rookie of the Year",
+   "DROY": "Defensive Rookie of the Year",
+   "CPOY": "Comeback Player of the Year",
+   "COY": "Coach of the Year"
+  },
+  "pool_rule": "A player enters a pool only through his position group's formula (offense groups: QB, RB, FB, WR, TE; defense groups: DE, DT, OLB, ILB, CB, S). Linemen, kickers and punters have no comparable score and are not in a player-award pool.",
+  "mvp_rule": "MVP score = the player's formula score plus 5 per regular-season win by his club, because the award weighs a player's value to a winning team. The weight applies to every club alike.",
+  "shortlist_size": 3,
+  "panel_weights": [
+   6,
+   3,
+   1
+  ],
+  "panel_rule": "League-wide, no conference split. The top three by score form the shortlist, ordered by score then name. The private service commits the award packet (award, shortlist, weights, this file's digest) and supplies the entropy; the panel picks rank 1, 2 or 3 with weights 6:3:1, the same draw as the weekly awards. Co-winners are not drawn.",
+  "definition_notes": "No 2013 AP definition of a rookie or of a comeback was found (library/2013_season_honours_selection_structure.md section 3.2). The rookie rule follows the NFL first-season definition. The comeback rule is the branch's own labelled inference: an established player (8 or more 2011 games) who lost most of 2012 (6 or fewer games). Coach of the Year is limited to head coaches, as every recipient was."
+ },
+ "hindsight": "No real 2013 award, All-Pro, Pro Bowl, statistic or post-2012 result is read. The public files supply only pre-2013 facts: experience, 2011 and 2012 games, 2012 club records and opening-day head coaches.",
+ "method_timing": "Fixed and committed before any draw. The 2013 season was already closed when this method was written, so its author could see the branch standings and statistics; every rule applies to every club and player alike, and Jacksonville is handled like any other club."
+}

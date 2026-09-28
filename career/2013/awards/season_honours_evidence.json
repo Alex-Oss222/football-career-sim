@@ -1,0 +1,5418 @@
+{
+ "schema_version": "season-honours-evidence-v1",
+ "sources": {
+  "roster_weekly_2013.csv": {
+   "url": "https://github.com/nflverse/nflverse-data/releases/download/weekly_rosters/roster_weekly_2013.csv",
+   "sha256": "76c47a629075ffd75f9c4ee49fadb6dad45396be486af897078fee5722969781"
+  },
+  "player_stats_2012.csv": {
+   "url": "https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_2012.csv",
+   "sha256": "cb9f80dcc85defe8bce45050aaed677796aff5dc462365a319001d0d68b69d1d"
+  },
+  "player_stats_def_2012.csv": {
+   "url": "https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_def_2012.csv",
+   "sha256": "ff5187db815eee0c9e4a9bbb0d7a0398b441767feae0a56008a96b865abf23f5"
+  },
+  "player_stats_2011.csv": {
+   "url": "https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_2011.csv",
+   "sha256": "06c37c0d3894ffd7a74be39121f9e0e389d6ba87addd73727909f4b246d27475"
+  },
+  "player_stats_def_2011.csv": {
+   "url": "https://github.com/nflverse/nflverse-data/releases/download/player_stats/player_stats_def_2011.csv",
+   "sha256": "294f121eaa2281eaeeadb10e9f9c66b3d0e0583c23928c420857d0103ed13ce7"
+  },
+  "roster_2012.csv": {
+   "url": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2012.csv",
+   "sha256": "90628fcdadd9f2dde083bc77d41139cedc9fefd1fcc09f2ce8675823de23291b"
+  },
+  "games.csv": {
+   "url": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
+   "sha256": "bfe433d7bf644880656ce3ad50529ebb9526e75ea17f734aa6d097d65a4c295e"
+  }
+ },
+ "name_to_gsis": "library/data/player_birth_dates.json",
+ "packages_sha256": {
+  "1": "68424f8bfde96b42b9e2302503a07570edd565932448e598a64d76092e917446",
+  "2": "83d0e9ed375760f3bf589ec31b2282592e5c6c27938f153dc4b5cdf8cb04dde3",
+  "3": "a4b18a00e99ef629718ef4b9575c34148f59458ae8dc9fd096e6db342423155e",
+  "4": "64c5e524f8f217ae04712e2a89c15bfbdfd41fb8d5489bc30400048a2f2bc274",
+  "5": "de9ee82cad1793d931b65ae6a585167e91b800d8a4404dba13f8f9b912a55538",
+  "6": "1d51147ed3314ac6251295a2db213d87d923b3c3435134eaf54df472c9ebcac0",
+  "7": "262d69c9849fe38c82a9b1c94dc35b5f2cf3c8ad2c6ec8261d70669e09841a9e",
+  "8": "6680c72324335f2835ec373c5b584ed13e99de7355c2e624a0319e873599f5a3",
+  "9": "8c8c14adf4b923821930249be9e8112d4358b6b6105d0109bf92fc3a376ae061",
+  "10": "4064efc25a4921e6be62ff542348d419b17df5cd28da465e006b97ab4ba53626",
+  "11": "b8f8e957798b22ca22201b5abea079c8c1ccd2c3fd7d7656b9a88f8e5c7ec759",
+  "12": "ee1917076c1e170844b89d15e7ee1c158c0ac074201dc0638f52bcece02f523d",
+  "13": "2ab521a83f37d332c9a2e3c00d252e709886fc1b1fd63a8c6fc24f29d92190c6",
+  "14": "1b206955dc0b2f8d2109bc1d4ed3114dc00765cb56581ee9ad08cb526bffdd1e",
+  "15": "6f41f90bc116ad330a16d4ab3e29b4e61528a4dd92f6e64014e3ee03fac17d88",
+  "16": "dc85945228d4addba19defe7ffeee2955b3f8b02d95176ac03ba2d9017378899",
+  "17": "cb72c8705a0a7444e2daefd640b7b0f66afb11a4f32d55917e5d3b3ebdf54c8a"
+ },
+ "rules": {
+  "rookie": "First NFL season is 2013: years_exp 0 in the earliest 2013 regular-season roster_weekly row, or a branch rookie contract on the register.",
+  "comeback": "Not a rookie, years_exp >= 2 in 2013, at least 8 2011 regular-season games and at most 6 2012 regular-season games with a recorded statistic (nflverse player_stats and player_stats_def, REG): an established player who lost most of 2012.",
+  "line_start": "The five available game-day active offensive linemen with the lowest depth in the frozen TeamInput start that game.",
+  "head_coach": "Opening-day head coach; the branch records no in-season change."
+ },
+ "unresolved_experience": [],
+ "rookies": {
+  "A.J. Bouye": {
+   "team": "Jacksonville Jaguars",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "A.J. Klein": {
+   "team": "Carolina Panthers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Aaron Dobson": {
+   "team": "New England Patriots",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Aaron Mellette": {
+   "team": "Baltimore Ravens",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Ace Sanders": {
+   "team": "Philadelphia Eagles",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Adam Thielen": {
+   "team": "Jacksonville Jaguars",
+   "basis": "state/04 register: three-year UDFA minimum contract (2013 undrafted rookie)"
+  },
+  "Akeem Spence": {
+   "team": "Tampa Bay Buccaneers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Alec Ogletree": {
+   "team": "St. Louis Rams",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Alex Okafor": {
+   "team": "Arizona Cardinals",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Alvin Bailey": {
+   "team": "Seattle Seahawks",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Andre Ellington": {
+   "team": "Arizona Cardinals",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Andy Mulumba": {
+   "team": "Green Bay Packers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Armonty Bryant": {
+   "team": "Cleveland Browns",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Arthur Brown": {
+   "team": "Baltimore Ravens",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "B.J. Daniels": {
+   "team": "San Francisco 49ers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Bacarri Rambo": {
+   "team": "Jacksonville Jaguars",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Barkevious Mingo": {
+   "team": "Cleveland Browns",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Barrett Jones": {
+   "team": "St. Louis Rams",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Bennie Logan": {
+   "team": "Philadelphia Eagles",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Benny Cunningham": {
+   "team": "St. Louis Rams",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Benson Mayowa": {
+   "team": "Seattle Seahawks",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Bjoern Werner": {
+   "team": "Indianapolis Colts",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Blidi Wreh-Wilson": {
+   "team": "Tennessee Titans",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Brad Sorensen": {
+   "team": "San Diego Chargers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Bradley McDougald": {
+   "team": "Kansas City Chiefs",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Brandon Jenkins": {
+   "team": "Washington Redskins",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Brandon Magee": {
+   "team": "Cleveland Browns",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Brandon McGee": {
+   "team": "St. Louis Rams",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Brandon Williams (BAL)": {
+   "team": "Baltimore Ravens",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Brandon Williams (CAR)": {
+   "team": "Carolina Panthers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Brian Schwenke": {
+   "team": "Tennessee Titans",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Brian Winters": {
+   "team": "New York Jets",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Brice Butler": {
+   "team": "Oakland Raiders",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Brynden Trawick": {
+   "team": "Jacksonville Jaguars",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "C.J. Anderson": {
+   "team": "Jacksonville Jaguars",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "C.J. Wilson (CHI)": {
+   "team": "Chicago Bears",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Caesar Rayford": {
+   "team": "Dallas Cowboys",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Caleb Sturgis": {
+   "team": "Miami Dolphins",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Chance Warmack": {
+   "team": "Tennessee Titans",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Chris Banjo": {
+   "team": "Green Bay Packers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Chris Barker": {
+   "team": "New England Patriots",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Chris Gragg": {
+   "team": "Buffalo Bills",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Chris Harper": {
+   "team": "San Francisco 49ers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Chris Thompson": {
+   "team": "Washington Redskins",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Christine Michael": {
+   "team": "Seattle Seahawks",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Cierre Wood": {
+   "team": "Houston Texans",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Cooper Taylor": {
+   "team": "New York Giants",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Cordarrelle Patterson": {
+   "team": "Minnesota Vikings",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Corey Lemonier": {
+   "team": "San Francisco 49ers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Cornelius Washington": {
+   "team": "Chicago Bears",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "D.C. Jefferson": {
+   "team": "Arizona Cardinals",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "D.J. Fluker": {
+   "team": "San Diego Chargers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "D.J. Hayden": {
+   "team": "Oakland Raiders",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "D.J. Swearinger": {
+   "team": "Houston Texans",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Daimion Stafford": {
+   "team": "Tennessee Titans",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Dallas Thomas": {
+   "team": "Miami Dolphins",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Damion Square": {
+   "team": "Philadelphia Eagles",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Damontre Moore": {
+   "team": "New York Giants",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Daren Bates": {
+   "team": "St. Louis Rams",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Darius Slay": {
+   "team": "Detroit Lions",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Datone Jones": {
+   "team": "Green Bay Packers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "David Amerson": {
+   "team": "Washington Redskins",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "David Bakhtiari": {
+   "team": "Green Bay Packers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "David Bass": {
+   "team": "Chicago Bears",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "David Quessenberry": {
+   "team": "Houston Texans",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "DeAndre Hopkins": {
+   "team": "Houston Texans",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "DeVonte Holloman": {
+   "team": "Dallas Cowboys",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Dee Milliner": {
+   "team": "New York Jets",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Demetrius McCray": {
+   "team": "Philadelphia Eagles",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Denard Robinson": {
+   "team": "Tennessee Titans",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Desmond Trufant": {
+   "team": "Atlanta Falcons",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Devin Taylor": {
+   "team": "Detroit Lions",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Dion Jordan": {
+   "team": "Miami Dolphins",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Dion Sims": {
+   "team": "Miami Dolphins",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Don Jones": {
+   "team": "Miami Dolphins",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Duke Williams": {
+   "team": "Buffalo Bills",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Duron Harmon": {
+   "team": "New England Patriots",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Dwayne Gratz": {
+   "team": "Philadelphia Eagles",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "E.J. Manuel": {
+   "team": "Buffalo Bills",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Earl Watford": {
+   "team": "Arizona Cardinals",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Earl Wolff": {
+   "team": "Philadelphia Eagles",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Eddie Lacy": {
+   "team": "Green Bay Packers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Eric Fisher": {
+   "team": "Kansas City Chiefs",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Eric Kush": {
+   "team": "Kansas City Chiefs",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Eric Martin": {
+   "team": "Cleveland Browns",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Eric Reid": {
+   "team": "San Francisco 49ers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Ezekiel Ansah": {
+   "team": "Detroit Lions",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Garrett Gilkey": {
+   "team": "Cleveland Browns",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Gavin Escobar": {
+   "team": "Dallas Cowboys",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Geno Smith": {
+   "team": "New York Jets",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Gerald Hodges": {
+   "team": "Minnesota Vikings",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Gerald Rivers": {
+   "team": "St. Louis Rams",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Giovani Bernard": {
+   "team": "Cincinnati Bengals",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Glenn Foster": {
+   "team": "New Orleans Saints",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Hugh Thornton": {
+   "team": "Indianapolis Colts",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "J.J. Wilcox": {
+   "team": "Dallas Cowboys",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Jack Doyle": {
+   "team": "Indianapolis Colts",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Jahleel Addae": {
+   "team": "San Diego Chargers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Jake Knott": {
+   "team": "Philadelphia Eagles",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Jamar Taylor": {
+   "team": "Miami Dolphins",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Jamie Collins": {
+   "team": "New England Patriots",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Jaron Brown": {
+   "team": "Arizona Cardinals",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Jarvis Jones": {
+   "team": "Pittsburgh Steelers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Jayson DiManche": {
+   "team": "Cincinnati Bengals",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Jeff Baca": {
+   "team": "Minnesota Vikings",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Jeff Heath": {
+   "team": "Dallas Cowboys",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Jeff Locke": {
+   "team": "Minnesota Vikings",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Jeff Tuel": {
+   "team": "Buffalo Bills",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Jelani Jenkins": {
+   "team": "Miami Dolphins",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Joe Vellano": {
+   "team": "New England Patriots",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "John Jenkins": {
+   "team": "New Orleans Saints",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "John Simon": {
+   "team": "Baltimore Ravens",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Johnathan Cyprien": {
+   "team": "Kansas City Chiefs",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Johnathan Franklin": {
+   "team": "Green Bay Packers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Johnathan Hankins": {
+   "team": "New York Giants",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Johnthan Banks": {
+   "team": "Tampa Bay Buccaneers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Jon Bostic": {
+   "team": "Chicago Bears",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Jonathan Meeks": {
+   "team": "Buffalo Bills",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Jonathan Stewart": {
+   "team": "St. Louis Rams",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Joplo Bartu": {
+   "team": "Atlanta Falcons",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Jordan Hill": {
+   "team": "Seattle Seahawks",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Jordan Mills": {
+   "team": "Chicago Bears",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Jordan Poyer": {
+   "team": "Jacksonville Jaguars",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Jordan Reed": {
+   "team": "Washington Redskins",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Joseph Fauria": {
+   "team": "Detroit Lions",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Joseph Randle": {
+   "team": "Dallas Cowboys",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Josh Aubrey": {
+   "team": "Cleveland Browns",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Josh Boyce": {
+   "team": "New England Patriots",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Josh Boyd": {
+   "team": "Green Bay Packers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Josh Evans": {
+   "team": "Washington Redskins",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Josh Hill": {
+   "team": "New Orleans Saints",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Josh Kline": {
+   "team": "New England Patriots",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Josh Martin": {
+   "team": "Kansas City Chiefs",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Justin Hunter": {
+   "team": "Tennessee Titans",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Justin Pugh": {
+   "team": "New York Giants",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Justin Tuggle": {
+   "team": "Houston Texans",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Kayvon Webster": {
+   "team": "Denver Broncos",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Keenan Allen": {
+   "team": "San Diego Chargers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Kemal Ishmael": {
+   "team": "Atlanta Falcons",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Kenbrell Thompkins": {
+   "team": "New England Patriots",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Kenjon Barner": {
+   "team": "Carolina Panthers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Kenny Stills": {
+   "team": "New Orleans Saints",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Kenny Vaccaro": {
+   "team": "New Orleans Saints",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Kevin McDermott": {
+   "team": "San Francisco 49ers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Kevin Minter": {
+   "team": "Arizona Cardinals",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Kevin Reddick": {
+   "team": "New Orleans Saints",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Khaled Holmes": {
+   "team": "Indianapolis Colts",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Khaseem Greene": {
+   "team": "Chicago Bears",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Khiry Robinson": {
+   "team": "New Orleans Saints",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Kiko Alonso": {
+   "team": "Buffalo Bills",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Knile Davis": {
+   "team": "Kansas City Chiefs",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Kwame Geathers": {
+   "team": "San Diego Chargers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Kyle Juszczyk": {
+   "team": "Baltimore Ravens",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Kyle Long": {
+   "team": "Chicago Bears",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "LaAdrian Waddle": {
+   "team": "Detroit Lions",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Landry Jones": {
+   "team": "Pittsburgh Steelers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Lane Johnson": {
+   "team": "Jacksonville Jaguars",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Lane Taylor": {
+   "team": "Green Bay Packers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Larry Warford": {
+   "team": "Detroit Lions",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Lavar Edwards": {
+   "team": "Jacksonville Jaguars",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Le'Veon Bell": {
+   "team": "Pittsburgh Steelers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Leon McFadden": {
+   "team": "Cleveland Browns",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Levine Toilolo": {
+   "team": "Atlanta Falcons",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Logan Ryan": {
+   "team": "New England Patriots",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Luke Joeckel": {
+   "team": "Philadelphia Eagles",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Luke Willson": {
+   "team": "Seattle Seahawks",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Malliciah Goodman": {
+   "team": "Atlanta Falcons",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "MarQueis Gray": {
+   "team": "Cleveland Browns",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Marcus Cooper": {
+   "team": "Kansas City Chiefs",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Margus Hunt": {
+   "team": "Cincinnati Bengals",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Markus Wheaton": {
+   "team": "Pittsburgh Steelers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Marlon Brown": {
+   "team": "Baltimore Ravens",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Marquess Wilson": {
+   "team": "Chicago Bears",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Marquise Goodwin": {
+   "team": "Buffalo Bills",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Martin Wallace": {
+   "team": "Cleveland Browns",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Matt Barkley": {
+   "team": "Oakland Raiders",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Matt Elam": {
+   "team": "Baltimore Ravens",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Matt Tobin": {
+   "team": "Philadelphia Eagles",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Matthew McGloin": {
+   "team": "Oakland Raiders",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Melvin White": {
+   "team": "Carolina Panthers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Menelik Watson": {
+   "team": "Oakland Raiders",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Micah Hyde": {
+   "team": "Green Bay Packers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Michael Bowie": {
+   "team": "Seattle Seahawks",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Michael Buchanan": {
+   "team": "New England Patriots",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Michael Cox": {
+   "team": "New York Giants",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Michael Ford": {
+   "team": "Chicago Bears",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Michael Mauti": {
+   "team": "Minnesota Vikings",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Mike Catapano": {
+   "team": "Kansas City Chiefs",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Mike Gillislee": {
+   "team": "Miami Dolphins",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Mike Glennon": {
+   "team": "Tampa Bay Buccaneers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Mike James": {
+   "team": "Tampa Bay Buccaneers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Montee Ball": {
+   "team": "Denver Broncos",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Montori Hughes": {
+   "team": "Indianapolis Colts",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Mychal Rivera": {
+   "team": "Oakland Raiders",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Nate Palmer": {
+   "team": "Green Bay Packers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Nick Kasa": {
+   "team": "Oakland Raiders",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Nick Moody": {
+   "team": "San Francisco 49ers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Nickell Robey": {
+   "team": "Buffalo Bills",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Nico Johnson": {
+   "team": "Kansas City Chiefs",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Patrick Lewis": {
+   "team": "Cleveland Browns",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Paul Hazel": {
+   "team": "Cleveland Browns",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Paul Worrilow": {
+   "team": "Atlanta Falcons",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Quinton Patton": {
+   "team": "San Francisco 49ers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Ray-Ray Armstrong": {
+   "team": "St. Louis Rams",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Rex Burkhead": {
+   "team": "Cincinnati Bengals",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Rick Wagner": {
+   "team": "Baltimore Ravens",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Robert Alford": {
+   "team": "Atlanta Falcons",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Robert Woods": {
+   "team": "Buffalo Bills",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Rod Sweeting": {
+   "team": "New Orleans Saints",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Russell Shepard": {
+   "team": "Tampa Bay Buccaneers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Ryan Allen": {
+   "team": "New England Patriots",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Ryan Griffin": {
+   "team": "Houston Texans",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Ryan Jensen": {
+   "team": "Baltimore Ravens",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Ryan Nassib": {
+   "team": "New York Giants",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Ryan Robinson": {
+   "team": "Oakland Raiders",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Ryan Schraeder": {
+   "team": "Atlanta Falcons",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Ryan Spadola": {
+   "team": "New York Jets",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Sam Barrington": {
+   "team": "Green Bay Packers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Sam Martin": {
+   "team": "Detroit Lions",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Sam Montgomery": {
+   "team": "Houston Texans",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Shamarko Thomas": {
+   "team": "Pittsburgh Steelers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Sharrif Floyd": {
+   "team": "Minnesota Vikings",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Shawn Williams": {
+   "team": "Cincinnati Bengals",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Sheldon Richardson": {
+   "team": "New York Jets",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Sio Moore": {
+   "team": "Jacksonville Jaguars",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Spencer Ware": {
+   "team": "Seattle Seahawks",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Stacy McGee": {
+   "team": "Oakland Raiders",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Stansly Maponga": {
+   "team": "Atlanta Falcons",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Star Lotulelei": {
+   "team": "Carolina Panthers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Stedman Bailey": {
+   "team": "St. Louis Rams",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Stepfan Taylor": {
+   "team": "Arizona Cardinals",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Steve Beauharnais": {
+   "team": "New England Patriots",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Steven Means": {
+   "team": "Tampa Bay Buccaneers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Sylvester Williams": {
+   "team": "Denver Broncos",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "T.J. McDonald": {
+   "team": "St. Louis Rams",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Tanner Hawkinson": {
+   "team": "Cincinnati Bengals",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Tavon Austin": {
+   "team": "St. Louis Rams",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Terence Garvin": {
+   "team": "Pittsburgh Steelers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Terrance Williams": {
+   "team": "Dallas Cowboys",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Terron Armstead": {
+   "team": "New Orleans Saints",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Theo Riddick": {
+   "team": "Detroit Lions",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Tim Lelito": {
+   "team": "New Orleans Saints",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Timothy Wright": {
+   "team": "Tampa Bay Buccaneers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Tommy Bohanon": {
+   "team": "New York Jets",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Tony Jefferson": {
+   "team": "Arizona Cardinals",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Tourek Williams": {
+   "team": "San Diego Chargers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Travis Frederick": {
+   "team": "Dallas Cowboys",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Travis Kelce": {
+   "team": "Jacksonville Jaguars",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Tyler Eifert": {
+   "team": "Cincinnati Bengals",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Tyrann Mathieu": {
+   "team": "Arizona Cardinals",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Vance McDonald": {
+   "team": "San Francisco 49ers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Vince Williams": {
+   "team": "Pittsburgh Steelers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Will Davis": {
+   "team": "Miami Dolphins",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "William Gholston": {
+   "team": "Tampa Bay Buccaneers",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Willie Jefferson": {
+   "team": "Houston Texans",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Xavier Rhodes": {
+   "team": "Minnesota Vikings",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Zac Dysert": {
+   "team": "Denver Broncos",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Zac Stacy": {
+   "team": "St. Louis Rams",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Zach Ertz": {
+   "team": "Philadelphia Eagles",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Zach Line": {
+   "team": "Minnesota Vikings",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Zach Minter": {
+   "team": "Chicago Bears",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Zach Sudfeld": {
+   "team": "New England Patriots",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Zaviar Gooden": {
+   "team": "Tennessee Titans",
+   "basis": "roster_weekly_2013 years_exp 0"
+  },
+  "Zeke Motta": {
+   "team": "Atlanta Falcons",
+   "basis": "roster_weekly_2013 years_exp 0"
+  }
+ },
+ "comeback_eligible": {
+  "Adrian Clayborn": {
+   "team": "Tampa Bay Buccaneers",
+   "years_exp": 2,
+   "games_2011": 15,
+   "games_2012": 2
+  },
+  "Alan Ball": {
+   "team": "Jacksonville Jaguars",
+   "years_exp": 6,
+   "games_2011": 12,
+   "games_2012": 3
+  },
+  "Allen Bailey": {
+   "team": "Kansas City Chiefs",
+   "years_exp": 2,
+   "games_2011": 9,
+   "games_2012": 4
+  },
+  "Andre Caldwell": {
+   "team": "Denver Broncos",
+   "years_exp": 5,
+   "games_2011": 12,
+   "games_2012": 3
+  },
+  "Anthony Sherman": {
+   "team": "Kansas City Chiefs",
+   "years_exp": 2,
+   "games_2011": 8,
+   "games_2012": 6
+  },
+  "Arthur Moats": {
+   "team": "Buffalo Bills",
+   "years_exp": 3,
+   "games_2011": 10,
+   "games_2012": 6
+  },
+  "Billy Bajema": {
+   "team": "Baltimore Ravens",
+   "years_exp": 8,
+   "games_2011": 8,
+   "games_2012": 1
+  },
+  "Brandon Meriweather": {
+   "team": "Washington Redskins",
+   "years_exp": 6,
+   "games_2011": 9,
+   "games_2012": 1
+  },
+  "Brent Grimes": {
+   "team": "Jacksonville Jaguars",
+   "years_exp": 7,
+   "games_2011": 11,
+   "games_2012": 1
+  },
+  "Brian Cushing": {
+   "team": "Houston Texans",
+   "years_exp": 4,
+   "games_2011": 16,
+   "games_2012": 5
+  },
+  "Brian Orakpo": {
+   "team": "Washington Redskins",
+   "years_exp": 4,
+   "games_2011": 16,
+   "games_2012": 2
+  },
+  "Christopher Owens": {
+   "team": "Cleveland Browns",
+   "years_exp": 4,
+   "games_2011": 9,
+   "games_2012": 6
+  },
+  "Colt McCoy": {
+   "team": "San Francisco 49ers",
+   "years_exp": 3,
+   "games_2011": 13,
+   "games_2012": 2
+  },
+  "Corey Peters": {
+   "team": "Atlanta Falcons",
+   "years_exp": 3,
+   "games_2011": 12,
+   "games_2012": 6
+  },
+  "Craig Steltz": {
+   "team": "Chicago Bears",
+   "years_exp": 5,
+   "games_2011": 8,
+   "games_2012": 3
+  },
+  "Curtis Painter": {
+   "team": "New York Giants",
+   "years_exp": 4,
+   "games_2011": 9,
+   "games_2012": 0
+  },
+  "D.J. Williams": {
+   "team": "Chicago Bears",
+   "years_exp": 9,
+   "games_2011": 13,
+   "games_2012": 5
+  },
+  "Dane Fletcher": {
+   "team": "New England Patriots",
+   "years_exp": 3,
+   "games_2011": 9,
+   "games_2012": 0
+  },
+  "Dane Sanzenbacher": {
+   "team": "Cincinnati Bengals",
+   "years_exp": 2,
+   "games_2011": 14,
+   "games_2012": 2
+  },
+  "Darian Stewart": {
+   "team": "St. Louis Rams",
+   "years_exp": 3,
+   "games_2011": 15,
+   "games_2012": 3
+  },
+  "Darrelle Revis": {
+   "team": "Tampa Bay Buccaneers",
+   "years_exp": 6,
+   "games_2011": 15,
+   "games_2012": 2
+  },
+  "Daryl Smith": {
+   "team": "Jacksonville Jaguars",
+   "years_exp": 9,
+   "games_2011": 16,
+   "games_2012": 2
+  },
+  "David Johnson": {
+   "team": "Pittsburgh Steelers",
+   "years_exp": 4,
+   "games_2011": 10,
+   "games_2012": 0
+  },
+  "Dekoda Watson": {
+   "team": "Tampa Bay Buccaneers",
+   "years_exp": 3,
+   "games_2011": 10,
+   "games_2012": 4
+  },
+  "Desmond Bishop": {
+   "team": "Minnesota Vikings",
+   "years_exp": 6,
+   "games_2011": 13,
+   "games_2012": 0
+  },
+  "Fili Moala": {
+   "team": "Indianapolis Colts",
+   "years_exp": 4,
+   "games_2011": 10,
+   "games_2012": 5
+  },
+  "Glenn Dorsey": {
+   "team": "San Francisco 49ers",
+   "years_exp": 5,
+   "games_2011": 15,
+   "games_2012": 4
+  },
+  "Husain Abdullah": {
+   "team": "Kansas City Chiefs",
+   "years_exp": 5,
+   "games_2011": 9,
+   "games_2012": 0
+  },
+  "Jacoby Ford": {
+   "team": "Oakland Raiders",
+   "years_exp": 3,
+   "games_2011": 8,
+   "games_2012": 0
+  },
+  "Jamaal Westerman": {
+   "team": "Buffalo Bills",
+   "years_exp": 4,
+   "games_2011": 10,
+   "games_2012": 1
+  },
+  "James Starks": {
+   "team": "Green Bay Packers",
+   "years_exp": 3,
+   "games_2011": 13,
+   "games_2012": 6
+  },
+  "Jarius Wynn": {
+   "team": "San Diego Chargers",
+   "years_exp": 4,
+   "games_2011": 10,
+   "games_2012": 6
+  },
+  "Jarrett Bush": {
+   "team": "Green Bay Packers",
+   "years_exp": 7,
+   "games_2011": 11,
+   "games_2012": 4
+  },
+  "Jason Hunter": {
+   "team": "Oakland Raiders",
+   "years_exp": 7,
+   "games_2011": 13,
+   "games_2012": 0
+  },
+  "Joe Mays": {
+   "team": "Houston Texans",
+   "years_exp": 5,
+   "games_2011": 15,
+   "games_2012": 4
+  },
+  "Joe Webb": {
+   "team": "Minnesota Vikings",
+   "years_exp": 3,
+   "games_2011": 8,
+   "games_2012": 1
+  },
+  "John Phillips": {
+   "team": "San Diego Chargers",
+   "years_exp": 4,
+   "games_2011": 9,
+   "games_2012": 6
+  },
+  "Jordan Senn": {
+   "team": "Carolina Panthers",
+   "years_exp": 5,
+   "games_2011": 8,
+   "games_2012": 1
+  },
+  "Josh Johnson": {
+   "team": "Cincinnati Bengals",
+   "years_exp": 5,
+   "games_2011": 9,
+   "games_2012": 1
+  },
+  "Kellen Winslow": {
+   "team": "New York Jets",
+   "years_exp": 9,
+   "games_2011": 16,
+   "games_2012": 1
+  },
+  "Kyle Orton": {
+   "team": "Dallas Cowboys",
+   "years_exp": 8,
+   "games_2011": 9,
+   "games_2012": 1
+  },
+  "Lardarius Webb": {
+   "team": "Baltimore Ravens",
+   "years_exp": 4,
+   "games_2011": 15,
+   "games_2012": 5
+  },
+  "Leger Douzable": {
+   "team": "New York Jets",
+   "years_exp": 5,
+   "games_2011": 14,
+   "games_2012": 0
+  },
+  "Marvin Mitchell": {
+   "team": "Minnesota Vikings",
+   "years_exp": 6,
+   "games_2011": 9,
+   "games_2012": 2
+  },
+  "Matt Moore": {
+   "team": "Miami Dolphins",
+   "years_exp": 6,
+   "games_2011": 13,
+   "games_2012": 2
+  },
+  "Maurice Jones-Drew": {
+   "team": "Jacksonville Jaguars",
+   "years_exp": 7,
+   "games_2011": 16,
+   "games_2012": 6
+  },
+  "Michael Adams": {
+   "team": "Tampa Bay Buccaneers",
+   "years_exp": 6,
+   "games_2011": 12,
+   "games_2012": 5
+  },
+  "Michael Palmer": {
+   "team": "Pittsburgh Steelers",
+   "years_exp": 3,
+   "games_2011": 11,
+   "games_2012": 6
+  },
+  "Nate Burleson": {
+   "team": "Detroit Lions",
+   "years_exp": 10,
+   "games_2011": 16,
+   "games_2012": 6
+  },
+  "Nate Collins": {
+   "team": "Chicago Bears",
+   "years_exp": 3,
+   "games_2011": 9,
+   "games_2012": 5
+  },
+  "Parys Haralson": {
+   "team": "New Orleans Saints",
+   "years_exp": 7,
+   "games_2011": 14,
+   "games_2012": 0
+  },
+  "Pat Sims": {
+   "team": "Oakland Raiders",
+   "years_exp": 5,
+   "games_2011": 11,
+   "games_2012": 5
+  },
+  "Rashard Mendenhall": {
+   "team": "Arizona Cardinals",
+   "years_exp": 5,
+   "games_2011": 15,
+   "games_2012": 6
+  },
+  "Rex Grossman": {
+   "team": "Washington Redskins",
+   "years_exp": 10,
+   "games_2011": 13,
+   "games_2012": 0
+  },
+  "Richard Marshall": {
+   "team": "San Diego Chargers",
+   "years_exp": 7,
+   "games_2011": 16,
+   "games_2012": 4
+  },
+  "Roy Helu": {
+   "team": "Washington Redskins",
+   "years_exp": 2,
+   "games_2011": 15,
+   "games_2012": 3
+  },
+  "Santonio Holmes": {
+   "team": "New York Jets",
+   "years_exp": 7,
+   "games_2011": 16,
+   "games_2012": 4
+  },
+  "Sean Lee": {
+   "team": "Dallas Cowboys",
+   "years_exp": 3,
+   "games_2011": 14,
+   "games_2012": 6
+  },
+  "Sergio Brown": {
+   "team": "Indianapolis Colts",
+   "years_exp": 3,
+   "games_2011": 8,
+   "games_2012": 2
+  },
+  "Shaun Rogers": {
+   "team": "New York Giants",
+   "years_exp": 12,
+   "games_2011": 15,
+   "games_2012": 0
+  },
+  "Tarvaris Jackson": {
+   "team": "Seattle Seahawks",
+   "years_exp": 7,
+   "games_2011": 15,
+   "games_2012": 0
+  },
+  "Ted Ginn": {
+   "team": "Carolina Panthers",
+   "years_exp": 6,
+   "games_2011": 12,
+   "games_2012": 3
+  },
+  "Terrell McClain": {
+   "team": "Houston Texans",
+   "years_exp": 2,
+   "games_2011": 10,
+   "games_2012": 0
+  },
+  "Tim Jamison": {
+   "team": "Houston Texans",
+   "years_exp": 4,
+   "games_2011": 12,
+   "games_2012": 3
+  },
+  "Tracy Porter": {
+   "team": "Oakland Raiders",
+   "years_exp": 5,
+   "games_2011": 13,
+   "games_2012": 5
+  },
+  "Vincent Brown": {
+   "team": "San Diego Chargers",
+   "years_exp": 2,
+   "games_2011": 10,
+   "games_2012": 0
+  }
+ },
+ "line_starts": {
+  "Alex Boone": {
+   "team": "San Francisco 49ers",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Alex Mack": {
+   "team": "Cleveland Browns",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Alvin Bailey": {
+   "team": "Seattle Seahawks",
+   "position": "G",
+   "weeks": [
+    4,
+    10,
+    11,
+    16
+   ]
+  },
+  "Amini Silatolu": {
+   "team": "Carolina Panthers",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Andre Smith (CIN)": {
+   "team": "Cincinnati Bengals",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Andrew Whitworth": {
+   "team": "Cincinnati Bengals",
+   "position": "T",
+   "weeks": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Andy Levitre": {
+   "team": "Tennessee Titans",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Anthony Castonzo": {
+   "team": "Indianapolis Colts",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Anthony Collins": {
+   "team": "Cincinnati Bengals",
+   "position": "T",
+   "weeks": [
+    1
+   ]
+  },
+  "Anthony Davis": {
+   "team": "San Francisco 49ers",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Austin Howard": {
+   "team": "New York Jets",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Ben Grubbs": {
+   "team": "New Orleans Saints",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Brad Meester": {
+   "team": "Jacksonville Jaguars",
+   "position": "C",
+   "weeks": [
+    1,
+    2
+   ]
+  },
+  "Branden Albert": {
+   "team": "Kansas City Chiefs",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Brandon Brooks": {
+   "team": "Houston Texans",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Brandon Fusco": {
+   "team": "Minnesota Vikings",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Breno Giacomini": {
+   "team": "Seattle Seahawks",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    13,
+    14,
+    15,
+    17
+   ]
+  },
+  "Brian De La Puente": {
+   "team": "New Orleans Saints",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Bryant McKinnie": {
+   "team": "Baltimore Ravens",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Byron Bell": {
+   "team": "Carolina Panthers",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Chad Rinehart": {
+   "team": "San Diego Chargers",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Chance Warmack": {
+   "team": "Tennessee Titans",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Charles Brown": {
+   "team": "New Orleans Saints",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ]
+  },
+  "Charlie Johnson": {
+   "team": "Minnesota Vikings",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Chris Chester": {
+   "team": "Washington Redskins",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Chris Clark": {
+   "team": "Denver Broncos",
+   "position": "T",
+   "weeks": [
+    7
+   ]
+  },
+  "Chris Myers": {
+   "team": "Houston Texans",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Chris Snee": {
+   "team": "New York Giants",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Chris Williams": {
+   "team": "St. Louis Rams",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Clint Boling": {
+   "team": "Cincinnati Bengals",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Colin Brown": {
+   "team": "Buffalo Bills",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Cordy Glenn": {
+   "team": "Buffalo Bills",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "D'Brickashaw Ferguson": {
+   "team": "New York Jets",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "D.J. Fluker": {
+   "team": "San Diego Chargers",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Dan Connolly": {
+   "team": "New England Patriots",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Daryn Colledge": {
+   "team": "Arizona Cardinals",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "David Baas": {
+   "team": "New York Giants",
+   "position": "C",
+   "weeks": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "David Bakhtiari": {
+   "team": "Green Bay Packers",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "David DeCastro": {
+   "team": "Pittsburgh Steelers",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "David Stewart": {
+   "team": "Tennessee Titans",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Davin Joseph": {
+   "team": "Tampa Bay Buccaneers",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Demar Dotson": {
+   "team": "Tampa Bay Buccaneers",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Derek Newton": {
+   "team": "Houston Texans",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Dominic Raiola": {
+   "team": "Detroit Lions",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Don Barclay": {
+   "team": "Green Bay Packers",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Donald Penn": {
+   "team": "Tampa Bay Buccaneers",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Donald Thomas": {
+   "team": "Indianapolis Colts",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Doug Free": {
+   "team": "Dallas Cowboys",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Duane Brown": {
+   "team": "Houston Texans",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Eben Britton": {
+   "team": "Chicago Bears",
+   "position": "T",
+   "weeks": [
+    5,
+    6,
+    7
+   ]
+  },
+  "Eric Fisher": {
+   "team": "Kansas City Chiefs",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Eric Winston": {
+   "team": "Arizona Cardinals",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Eric Wood": {
+   "team": "Buffalo Bills",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Erik Pears": {
+   "team": "Buffalo Bills",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Eugene Monroe": {
+   "team": "Jacksonville Jaguars",
+   "position": "OT",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Evan Mathis": {
+   "team": "Philadelphia Eagles",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Evan Smith": {
+   "team": "Green Bay Packers",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Gabe Carimi": {
+   "team": "Tampa Bay Buccaneers",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Garrett Reynolds": {
+   "team": "Atlanta Falcons",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Garry Williams": {
+   "team": "Carolina Panthers",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Gino Gradkowski": {
+   "team": "Baltimore Ravens",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Gosder Cherilus": {
+   "team": "Indianapolis Colts",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Harvey Dahl": {
+   "team": "St. Louis Rams",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "J.R. Sweezy": {
+   "team": "Seattle Seahawks",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Jahri Evans": {
+   "team": "New Orleans Saints",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Jake Long": {
+   "team": "St. Louis Rams",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "James Brewer": {
+   "team": "New York Giants",
+   "position": "T",
+   "weeks": [
+    1,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Jamon Meredith": {
+   "team": "Tampa Bay Buccaneers",
+   "position": "T",
+   "weeks": [
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ]
+  },
+  "Jason Fox": {
+   "team": "Detroit Lions",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Jason Kelce": {
+   "team": "Philadelphia Eagles",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Jason Peters": {
+   "team": "Philadelphia Eagles",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Jeff Allen": {
+   "team": "Kansas City Chiefs",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Jeremy Zuttah": {
+   "team": "Tampa Bay Buccaneers",
+   "position": "C",
+   "weeks": [
+    1,
+    15,
+    16,
+    17
+   ]
+  },
+  "Jermon Bushrod": {
+   "team": "Chicago Bears",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Jeromey Clary": {
+   "team": "San Diego Chargers",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Joe Reitz": {
+   "team": "Indianapolis Colts",
+   "position": "T",
+   "weeks": [
+    7
+   ]
+  },
+  "Joe Staley": {
+   "team": "San Francisco 49ers",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Joe Thomas": {
+   "team": "Cleveland Browns",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "John Greco": {
+   "team": "Cleveland Browns",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "John Jerry": {
+   "team": "Miami Dolphins",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "John Sullivan": {
+   "team": "Minnesota Vikings",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Jon Asamoah": {
+   "team": "Kansas City Chiefs",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Jonathan Goodwin": {
+   "team": "San Francisco 49ers",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Jonathan Martin": {
+   "team": "Miami Dolphins",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ]
+  },
+  "Jordan Gross": {
+   "team": "Carolina Panthers",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Jordan Mills": {
+   "team": "Chicago Bears",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Josh Sitton": {
+   "team": "Green Bay Packers",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Justin Blalock": {
+   "team": "Atlanta Falcons",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Justin Pugh": {
+   "team": "New York Giants",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Kelechi Osemele": {
+   "team": "Baltimore Ravens",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Kevin Boothe": {
+   "team": "New York Giants",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12
+   ]
+  },
+  "Kevin Zeitler": {
+   "team": "Cincinnati Bengals",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Khalif Barnes": {
+   "team": "Oakland Raiders",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "King Dunlap": {
+   "team": "San Diego Chargers",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Kory Lichtensteiger": {
+   "team": "Washington Redskins",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Kraig Urbik": {
+   "team": "Buffalo Bills",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Kyle Cook": {
+   "team": "Cincinnati Bengals",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Kyle Long": {
+   "team": "Chicago Bears",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "LaAdrian Waddle": {
+   "team": "Detroit Lions",
+   "position": "T",
+   "weeks": [
+    7,
+    8
+   ]
+  },
+  "Lamar Holmes": {
+   "team": "Atlanta Falcons",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Lane Johnson": {
+   "team": "Jacksonville Jaguars",
+   "position": "OT",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Larry Warford": {
+   "team": "Detroit Lions",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Levi Brown": {
+   "team": "Arizona Cardinals",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Logan Mankins": {
+   "team": "New England Patriots",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+   ]
+  },
+  "Louis Vasquez": {
+   "team": "Denver Broncos",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Lucas Nix": {
+   "team": "Oakland Raiders",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Luke Joeckel": {
+   "team": "Philadelphia Eagles",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Lyle Sendlein": {
+   "team": "Arizona Cardinals",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Mackenzy Bernadeau": {
+   "team": "Dallas Cowboys",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Manuel Ramirez": {
+   "team": "Denver Broncos",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Marcus Cannon": {
+   "team": "New England Patriots",
+   "position": "T",
+   "weeks": [
+    17
+   ]
+  },
+  "Marcus Gilbert": {
+   "team": "Pittsburgh Steelers",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Marshal Yanda": {
+   "team": "Baltimore Ravens",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Matt Kalil": {
+   "team": "Minnesota Vikings",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Matt Slauson": {
+   "team": "Chicago Bears",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Maurkice Pouncey": {
+   "team": "Pittsburgh Steelers",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Max Unger": {
+   "team": "Seattle Seahawks",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Michael Oher": {
+   "team": "Baltimore Ravens",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Michael Roos": {
+   "team": "Tennessee Titans",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Mike Adams (PIT)": {
+   "team": "Pittsburgh Steelers",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Mike Brewster": {
+   "team": "Jacksonville Jaguars",
+   "position": "C",
+   "weeks": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Mike Brisiel": {
+   "team": "Oakland Raiders",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Mike Iupati": {
+   "team": "San Francisco 49ers",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Mike McGlynn": {
+   "team": "Indianapolis Colts",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Mike Pouncey": {
+   "team": "Miami Dolphins",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Mitchell Schwartz": {
+   "team": "Cleveland Browns",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Nate Solder": {
+   "team": "New England Patriots",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Nick Hardwick": {
+   "team": "San Diego Chargers",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Nick Mangold": {
+   "team": "New York Jets",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Oniel Cousins": {
+   "team": "Cleveland Browns",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Orlando Franklin": {
+   "team": "Denver Broncos",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Paul Fanaika": {
+   "team": "Arizona Cardinals",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Paul McQuistan": {
+   "team": "Seattle Seahawks",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Peter Konz": {
+   "team": "Atlanta Falcons",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Phil Loadholt": {
+   "team": "Minnesota Vikings",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Ramon Foster": {
+   "team": "Pittsburgh Steelers",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Richie Incognito": {
+   "team": "Miami Dolphins",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Rick Wagner": {
+   "team": "Baltimore Ravens",
+   "position": "G",
+   "weeks": [
+    5,
+    13
+   ]
+  },
+  "Riley Reiff": {
+   "team": "Detroit Lions",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Rob Sims": {
+   "team": "Detroit Lions",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Robert Turner": {
+   "team": "Tennessee Titans",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Roberto Garza": {
+   "team": "Chicago Bears",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Rodger Saffold": {
+   "team": "St. Louis Rams",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Rodney Hudson": {
+   "team": "Kansas City Chiefs",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Ronald Leary": {
+   "team": "Dallas Cowboys",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Russell Okung": {
+   "team": "Seattle Seahawks",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Ryan Clady": {
+   "team": "Denver Broncos",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Ryan Harris": {
+   "team": "Houston Texans",
+   "position": "T",
+   "weeks": [
+    9
+   ]
+  },
+  "Ryan Kalil": {
+   "team": "Carolina Panthers",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Ryan Wendell": {
+   "team": "New England Patriots",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Sam Baker": {
+   "team": "Atlanta Falcons",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Samson Satele": {
+   "team": "Indianapolis Colts",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Scott Wells": {
+   "team": "St. Louis Rams",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Sebastian Vollmer": {
+   "team": "New England Patriots",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Shelley Smith": {
+   "team": "St. Louis Rams",
+   "position": "G",
+   "weeks": [
+    12,
+    13
+   ]
+  },
+  "Stefen Wisniewski": {
+   "team": "Oakland Raiders",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "T.J. Lang": {
+   "team": "Green Bay Packers",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Terron Armstead": {
+   "team": "New Orleans Saints",
+   "position": "T",
+   "weeks": [
+    16,
+    17
+   ]
+  },
+  "Todd Herremans": {
+   "team": "Philadelphia Eagles",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Tony Pashos": {
+   "team": "Oakland Raiders",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Travis Frederick": {
+   "team": "Dallas Cowboys",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Trent Williams": {
+   "team": "Washington Redskins",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Tyler Polumbus": {
+   "team": "Washington Redskins",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Tyron Smith": {
+   "team": "Dallas Cowboys",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Tyson Clabo": {
+   "team": "Miami Dolphins",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Uche Nwaneri": {
+   "team": "Jacksonville Jaguars",
+   "position": "OG",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Vladimir Ducasse": {
+   "team": "New York Jets",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Wade Smith": {
+   "team": "Houston Texans",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Will Beatty": {
+   "team": "New York Giants",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Will Montgomery": {
+   "team": "Washington Redskins",
+   "position": "C",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Will Rackley": {
+   "team": "Jacksonville Jaguars",
+   "position": "OG",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Will Yeatman": {
+   "team": "Miami Dolphins",
+   "position": "T",
+   "weeks": [
+    16,
+    17
+   ]
+  },
+  "Willie Colon": {
+   "team": "New York Jets",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Zach Strief": {
+   "team": "New Orleans Saints",
+   "position": "T",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  "Zane Beadles": {
+   "team": "Denver Broncos",
+   "position": "G",
+   "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  }
+ },
+ "head_coaches": {
+  "Arizona Cardinals": {
+   "coach": "Bruce Arians",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 5,
+    "losses": 11,
+    "ties": 0
+   }
+  },
+  "Atlanta Falcons": {
+   "coach": "Mike Smith",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 13,
+    "losses": 3,
+    "ties": 0
+   }
+  },
+  "Baltimore Ravens": {
+   "coach": "John Harbaugh",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 10,
+    "losses": 6,
+    "ties": 0
+   }
+  },
+  "Buffalo Bills": {
+   "coach": "Doug Marrone",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 6,
+    "losses": 10,
+    "ties": 0
+   }
+  },
+  "Carolina Panthers": {
+   "coach": "Ron Rivera",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 7,
+    "losses": 9,
+    "ties": 0
+   }
+  },
+  "Chicago Bears": {
+   "coach": "Marc Trestman",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 10,
+    "losses": 6,
+    "ties": 0
+   }
+  },
+  "Cincinnati Bengals": {
+   "coach": "Marvin Lewis",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 10,
+    "losses": 6,
+    "ties": 0
+   }
+  },
+  "Cleveland Browns": {
+   "coach": "Rob Chudzinski",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 5,
+    "losses": 11,
+    "ties": 0
+   }
+  },
+  "Dallas Cowboys": {
+   "coach": "Jason Garrett",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 8,
+    "losses": 8,
+    "ties": 0
+   }
+  },
+  "Denver Broncos": {
+   "coach": "John Fox",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 13,
+    "losses": 3,
+    "ties": 0
+   }
+  },
+  "Detroit Lions": {
+   "coach": "Jim Schwartz",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 4,
+    "losses": 12,
+    "ties": 0
+   }
+  },
+  "Green Bay Packers": {
+   "coach": "Mike McCarthy",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 11,
+    "losses": 5,
+    "ties": 0
+   }
+  },
+  "Houston Texans": {
+   "coach": "Gary Kubiak",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 12,
+    "losses": 4,
+    "ties": 0
+   }
+  },
+  "Indianapolis Colts": {
+   "coach": "Chuck Pagano",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 11,
+    "losses": 5,
+    "ties": 0
+   }
+  },
+  "Jacksonville Jaguars": {
+   "coach": "Alex Stone",
+   "basis": "branch hire (career/2013/offseason/hiring_search.md)",
+   "record_2012": {
+    "wins": 2,
+    "losses": 14,
+    "ties": 0
+   }
+  },
+  "Kansas City Chiefs": {
+   "coach": "Andy Reid",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 2,
+    "losses": 14,
+    "ties": 0
+   }
+  },
+  "Miami Dolphins": {
+   "coach": "Joe Philbin",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 7,
+    "losses": 9,
+    "ties": 0
+   }
+  },
+  "Minnesota Vikings": {
+   "coach": "Leslie Frazier",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 10,
+    "losses": 6,
+    "ties": 0
+   }
+  },
+  "New England Patriots": {
+   "coach": "Bill Belichick",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 12,
+    "losses": 4,
+    "ties": 0
+   }
+  },
+  "New Orleans Saints": {
+   "coach": "Sean Payton",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 7,
+    "losses": 9,
+    "ties": 0
+   }
+  },
+  "New York Giants": {
+   "coach": "Tom Coughlin",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 9,
+    "losses": 7,
+    "ties": 0
+   }
+  },
+  "New York Jets": {
+   "coach": "Rex Ryan",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 6,
+    "losses": 10,
+    "ties": 0
+   }
+  },
+  "Oakland Raiders": {
+   "coach": "Dennis Allen",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 4,
+    "losses": 12,
+    "ties": 0
+   }
+  },
+  "Philadelphia Eagles": {
+   "coach": "Chip Kelly",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 4,
+    "losses": 12,
+    "ties": 0
+   }
+  },
+  "Pittsburgh Steelers": {
+   "coach": "Mike Tomlin",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 8,
+    "losses": 8,
+    "ties": 0
+   }
+  },
+  "San Diego Chargers": {
+   "coach": "Mike McCoy",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 7,
+    "losses": 9,
+    "ties": 0
+   }
+  },
+  "San Francisco 49ers": {
+   "coach": "Jim Harbaugh",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 11,
+    "losses": 4,
+    "ties": 1
+   }
+  },
+  "Seattle Seahawks": {
+   "coach": "Pete Carroll",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 11,
+    "losses": 5,
+    "ties": 0
+   }
+  },
+  "St. Louis Rams": {
+   "coach": "Jeff Fisher",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 7,
+    "losses": 8,
+    "ties": 1
+   }
+  },
+  "Tampa Bay Buccaneers": {
+   "coach": "Greg Schiano",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 7,
+    "losses": 9,
+    "ties": 0
+   }
+  },
+  "Tennessee Titans": {
+   "coach": "Mike Munchak",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 6,
+    "losses": 10,
+    "ties": 0
+   }
+  },
+  "Washington Redskins": {
+   "coach": "Mike Shanahan",
+   "basis": "opening-day head coach (nfldata games.csv, 2013 Week 1 row); no branch change on record",
+   "record_2012": {
+    "wins": 10,
+    "losses": 6,
+    "ties": 0
+   }
+  }
+ }
+}
