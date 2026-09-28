@@ -1,7 +1,7 @@
 {
  "team": "Jacksonville Jaguars",
- "effective": "November 4, 2013, Week 10 preparation",
- "sources": "career/2013/offseason/training_camp/position_battles.md; roster_decisions.md; training_camp/output.md; ledger Entries 29 and 35; Stone's Week 1 plan; ledger Entry 36; Stone's Week 2 plan; Stone's Week 3 plan; Stone's Week 4 plan; Stone's Week 5 plan; ledger Entry 42; Stone's Week 6 plan; Stone's Week 7 plan; Stone's Week 8 plan; Stone's Week 10 plan",
+ "effective": "November 11, 2013, Week 11 preparation",
+ "sources": "career/2013/offseason/training_camp/position_battles.md; roster_decisions.md; training_camp/output.md; ledger Entries 29 and 35; Stone's Week 1 plan; ledger Entry 36; Stone's Week 2 plan; Stone's Week 3 plan; Stone's Week 4 plan; Stone's Week 5 plan; ledger Entry 42; Stone's Week 6 plan; Stone's Week 7 plan; Stone's Week 8 plan; Stone's Week 10 plan; Stone's Week 11 plan",
  "rule": "Order within each kernel position group, first = starter. It comes from the staff's recorded roles; where the staff listed co-starters without an order, 2012 regular-season usage breaks the tie, the rule used for every background club. Stone owns this order and changes it by decision; the weekly input builder reads it as written.",
  "depth": {
   "QB": ["Kirk Cousins", "Chad Henne", "John Parker Wilson"],
@@ -12,7 +12,7 @@
   "OL": ["Eugene Monroe", "Uche Nwaneri", "Mike Brewster", "Will Rackley", "Lane Johnson", "Cameron Bradfield", "Brad Meester", "Austin Pasztor", "Mark Asper"],
   "DL": ["Sen'Derrick Marks", "Jason Babin", "Roy Miller", "Tyson Alualu", "C.J. Mosley", "Jeremy Mincey", "Andre Branch", "Ryan Davis", "Jeris Pendleton", "C.J. Wilson", "Lavar Edwards"],
   "LB": ["Paul Posluszny", "Daryl Smith", "Russell Allen", "Julian Stanford", "Sio Moore"],
-  "DB": ["Dwight Lowery", "Alan Ball", "Brent Grimes", "Bacarri Rambo", "Jordan Poyer", "Mike Harris", "Chris Prosinski", "Kevin Rutland", "A.J. Bouye", "Brynden Trawick"],
+  "DB": ["Dwight Lowery", "Mike Harris", "Brent Grimes", "Bacarri Rambo", "Jordan Poyer", "A.J. Bouye", "Chris Prosinski", "Kevin Rutland", "Brynden Trawick", "Alan Ball"],
   "K": ["Josh Scobee"],
   "P": ["Bryan Anger"],
   "LS": ["Jeremy Cain"]
@@ -73,5 +73,5 @@
   "Jeremy Cain": "LS"
  },
  "roles": {"Kirk Cousins": ["passer"], "Josh Scobee": ["placekicker"], "Bryan Anger": ["punt"]},
- "game_day_inactives": {"week": 10, "players": ["Mark Asper", "C.J. Mosley", "C.J. Wilson", "Lavar Edwards", "Jeris Pendleton", "Kevin Rutland", "John Parker Wilson"], "note": "Stone sets inactives each week. A week without a new list reuses the last one, minus players no longer controlled. A player on Reserve/Suspended is off the active roster and never an inactive."}
+ "game_day_inactives": {"week": 11, "players": ["Alan Ball", "C.J. Wilson", "Lavar Edwards", "Jeris Pendleton", "Mark Asper", "John Parker Wilson", "Mike Brown"], "note": "Stone sets inactives each week. A week without a new list reuses the last one, minus players no longer controlled. A player on Reserve/Suspended is off the active roster and never an inactive."}
 }

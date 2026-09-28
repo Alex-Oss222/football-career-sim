@@ -1762,5 +1762,152 @@
     "winner_index": 0
    }
   }
+ },
+ "week-11": {
+  "kind": "week",
+  "key": "11",
+  "label": "Week 11",
+  "order": 11,
+  "note": "Drawn at the close of Week 11 (Entry 52).",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2013-award-week11-afc-offense-v1",
+    "packet_sha256": "9d5107c4f98d236d22346e3a54f0b640afbddcae18ab7a48ff409ea9b746f8af",
+    "result_ref": "db4fd17ee0c6998d6260a3ae8d6ecf49efc7a6f0135901b06dea67c2814edb97",
+    "shortlist": [
+     {
+      "player": "Andrew Luck",
+      "team": "Indianapolis Colts",
+      "score": 36.08
+     },
+     {
+      "player": "Maurice Jones-Drew",
+      "team": "Jacksonville Jaguars",
+      "score": 27.6
+     },
+     {
+      "player": "Ryan Tannehill",
+      "team": "Miami Dolphins",
+      "score": 27.42
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-defense": {
+    "event_id": "2013-award-week11-afc-defense-v1",
+    "packet_sha256": "20a7c1df5af9e5db1ba0c0001612aef6a2a6effe85cc07411664f267639eaf82",
+    "result_ref": "c8c44e697ebc4448210f46e2363a0c9166311ed33398c8cbf543e33f2ab1f2c0",
+    "shortlist": [
+     {
+      "player": "Antoine Bethea",
+      "team": "Indianapolis Colts",
+      "score": 21.9
+     },
+     {
+      "player": "Cameron Wake",
+      "team": "Miami Dolphins",
+      "score": 19.5
+     },
+     {
+      "player": "T.J. Ward",
+      "team": "Cleveland Browns",
+      "score": 17.8
+     }
+    ],
+    "winner_index": 2
+   },
+   "AFC-special_teams": {
+    "event_id": "2013-award-week11-afc-special_teams-v1",
+    "packet_sha256": "c345f1d4e111be0e6b0bc419099c29014cf355ad65a058021684baebe249392b",
+    "result_ref": "ec07aee5ba3ac6a3940f8844828c645a927a567aa672cda8e6553c080026bcc8",
+    "shortlist": [
+     {
+      "player": "Spencer Lanning",
+      "team": "Cleveland Browns",
+      "score": 16.25
+     },
+     {
+      "player": "Britton Colquitt",
+      "team": "Denver Broncos",
+      "score": 16.0
+     },
+     {
+      "player": "Josh Scobee",
+      "team": "Jacksonville Jaguars",
+      "score": 16.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-offense": {
+    "event_id": "2013-award-week11-nfc-offense-v1",
+    "packet_sha256": "2402cd86ba813975c30f35c467699b3ef220a8c8ddc2144cce6686103635cfdf",
+    "result_ref": "6c9bdacd1e28f0cc31674c2cf8e0ba87a7089d686112c3e7a601f019e3444990",
+    "shortlist": [
+     {
+      "player": "Alfred Morris",
+      "team": "Washington Redskins",
+      "score": 30.8
+     },
+     {
+      "player": "Cam Newton",
+      "team": "Carolina Panthers",
+      "score": 27.72
+     },
+     {
+      "player": "Jay Cutler",
+      "team": "Chicago Bears",
+      "score": 25.2
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2013-award-week11-nfc-defense-v1",
+    "packet_sha256": "11908e89e4bcc091ec7c7380e696b1380594339722eca3eae280f07b04a8598c",
+    "result_ref": "0709bd7c8ffe3f1af41f37c96107bdb69d4a5d1a24177d3e8aab3a8057c944fe",
+    "shortlist": [
+     {
+      "player": "Corey Webster",
+      "team": "New York Giants",
+      "score": 19.5
+     },
+     {
+      "player": "Stephen Nicholas",
+      "team": "Atlanta Falcons",
+      "score": 18.0
+     },
+     {
+      "player": "Chris Conte",
+      "team": "Chicago Bears",
+      "score": 17.9
+     }
+    ],
+    "winner_index": 1
+   },
+   "NFC-special_teams": {
+    "event_id": "2013-award-week11-nfc-special_teams-v1",
+    "packet_sha256": "d8faa0c7aa442fe434c0a81b9324b576c7d5dd607a548b36d254af7498a6c9f7",
+    "result_ref": "f0cb7c9ec40cfd1eb80376beade96cd70e9aa1051e55c20e7c63533586e786d2",
+    "shortlist": [
+     {
+      "player": "Tim Masthay",
+      "team": "Green Bay Packers",
+      "score": 16.75
+     },
+     {
+      "player": "Damaris Johnson",
+      "team": "Philadelphia Eagles",
+      "score": 13.2
+     },
+     {
+      "player": "Jeremy Ross",
+      "team": "Green Bay Packers",
+      "score": 12.1
+     }
+    ],
+    "winner_index": 2
+   }
+  }
  }
 }

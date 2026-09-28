@@ -161,3 +161,16 @@ Drawn at the close of Week 9 (Entry 49).
 | NFC Special Teams Player | Chris Jones | Dallas Cowboys | 17.2 | Chris Jones, Dallas Cowboys (17.2); Jay Feely, Arizona Cardinals (15.0); LaMichael James, San Francisco 49ers (15.0) |
 
 Drawn at the close of Week 10 (Entry 50).
+
+### Week 11
+
+| Award | Winner | Team | Score | Shortlist (score) |
+|---|---|---|--:|---|
+| AFC Offensive Player | Andrew Luck | Indianapolis Colts | 36.1 | Andrew Luck, Indianapolis Colts (36.1); Maurice Jones-Drew, Jacksonville Jaguars (27.6); Ryan Tannehill, Miami Dolphins (27.4) |
+| AFC Defensive Player | T.J. Ward | Cleveland Browns | 17.8 | Antoine Bethea, Indianapolis Colts (21.9); Cameron Wake, Miami Dolphins (19.5); T.J. Ward, Cleveland Browns (17.8) |
+| AFC Special Teams Player | Spencer Lanning | Cleveland Browns | 16.2 | Spencer Lanning, Cleveland Browns (16.2); Britton Colquitt, Denver Broncos (16.0); Josh Scobee, Jacksonville Jaguars (16.0) |
+| NFC Offensive Player | Alfred Morris | Washington Redskins | 30.8 | Alfred Morris, Washington Redskins (30.8); Cam Newton, Carolina Panthers (27.7); Jay Cutler, Chicago Bears (25.2) |
+| NFC Defensive Player | Stephen Nicholas | Atlanta Falcons | 18.0 | Corey Webster, New York Giants (19.5); Stephen Nicholas, Atlanta Falcons (18.0); Chris Conte, Chicago Bears (17.9) |
+| NFC Special Teams Player | Jeremy Ross | Green Bay Packers | 12.1 | Tim Masthay, Green Bay Packers (16.8); Damaris Johnson, Philadelphia Eagles (13.2); Jeremy Ross, Green Bay Packers (12.1) |
+
+Drawn at the close of Week 11 (Entry 52).

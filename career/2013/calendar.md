@@ -2,15 +2,15 @@
 
 **Function:** Branch-facing schedule and phase control.
 **Historical source:** `../../library/2013_jacksonville_master_calendar.md`.
-**Current branch checkpoint:** November 10, 2013, Week 10 closed (Entry 50).
+**Current branch checkpoint:** November 17, 2013, Week 11 closed (Entry 52).
 **Rule:** Dates/opponents/deadlines are historical rails. Attendance, transactions, performance and game results are branch events.
 
 ## Current checkpoint
 
-- Completed through: **November 10, Week 10 at Tennessee (lost 41-11)**.
-- Controlled 53 (53 active); practice squad 8; preseason record 2-2; regular-season record 6-3.
-- Next competitive event: **November 17 Week 11 vs Arizona, 1 p.m. ET: NOT SIMULATED**.
-- Alan Ball out (Week 10; projected return January 22, 2014); Rackley limited (minor); C.J. Wilson out. Pasztor and Mosley available from their recovered projections (Entry 46). Games ran under kernel 2013.6 in Weeks 4-8 (Entry 39); kernel 2013.7 from the Week 9 slate (Entry 48). League awards: `awards/` (Entry 47).
+- Completed through: **November 17, Week 11 vs Arizona (won 29-7)**.
+- Controlled 53 (53 active); practice squad 8; preseason record 2-2; regular-season record 7-3.
+- Next competitive event: **November 24 Week 12 at Houston, 1 p.m. ET: NOT SIMULATED**.
+- Alan Ball out (Week 10; projected return January 22, 2014); A.J. Bouye out (Week 11; projected return November 26); Rackley limited (minor); C.J. Wilson out. Pasztor and Mosley available from their recovered projections (Entry 46). Games ran under kernel 2013.6 in Weeks 4-8 (Entry 39); kernel 2013.7 in Weeks 9-10 (Entry 48); kernel 2013.8 from Week 11 (Entry 51). League awards: `awards/` (Entry 47).
 
 ## 2013 branch schedule
 
@@ -62,7 +62,7 @@
 | **Oct. 29, 4 p.m.** | Trade deadline | transaction gate | Complete: no Jacksonville transaction |
 | **Nov. 3** | W9 BYE | [Week 9 output](regular_season/week_09_bye/output.md) | Complete: bye |
 | **Nov. 10** | W10 at Tennessee, 1 p.m. | [Week 10 output](regular_season/week_10_jacksonville_at_tennessee/output.md) | Complete: lost 41-11 |
-| Nov. 17 | W11 vs Arizona, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
+| **Nov. 17** | W11 vs Arizona, 1 p.m. | [Week 11 output](regular_season/week_11_arizona_at_jacksonville/output.md) | Complete: won 29-7 |
 | Nov. 24 | W12 at Houston, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
 | Dec. 1 | W13 at Cleveland, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
 | **Dec. 5** | W14 vs Houston, 8:25 p.m. | short-week game plan | Future |

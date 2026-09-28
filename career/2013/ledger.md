@@ -1221,3 +1221,37 @@ This is an engine defect. It is fixed going forward, and no game is rerun. Until
 **Closed results stand.** The Week 10 Washington at Minnesota overtime result stands as closed 2013.7 canon and is not rerun. That choice does not depend on which club won. Weeks 9-10 remain the 2013.7 audit cohort.
 
 **Commit closed - Canonical update - November 10, 2013 - Kernel 2013.8 adopted (2013 overtime rules) - canonical through November 10, after Week 10**
+
+## Entry 52: Week 11 vs Arizona closed
+
+**Effective canonical state:** November 17, 2013, after Week 11
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - November 17, 2013 - Week 11 vs Arizona closed`
+**Preceding global package checkpoint:** `Canonical update - November 10, 2013 - Kernel 2013.8 adopted (2013 overtime rules)`
+
+**Result.** Jacksonville 29, Arizona 7 at EverBank Field. Jacksonville is 7-3, first in the AFC South a game ahead of 6-4 Tennessee, and the AFC's top seed, ahead of the 7-3 Jets on conference record.
+
+**Batch.** All fifteen Week 11 games closed once each under kernel 2013.8, the first slate on it. They were drawn from the package frozen by `build_week_inputs.py 11` (sha256 `b8f8e957...`); the call sheet and depth chart were committed before the draw (7ca9cda).
+
+**Inputs.**
+- **Call sheet:** Stone's fifteen calls.
+- **Secondary:** Mike Harris started outside for the injured Ball; Poyer stayed at nickel, with Bouye the first outside reserve.
+- **Dressed:** Mosley and Rutland.
+- **Inactives:** Ball, C.J. Wilson, Edwards, Pendleton, Asper, John Parker Wilson, Mike Brown.
+
+**2014 scouting focus.** Stone's coaching-focus directive for the 2014 draft is recorded as a plan in `scouting/2014_draft_focus_directive.md`. Caldwell retains authority, the no-hindsight rule applies, and the list changes no prospect's grade or availability.
+
+**Game.**
+- Jacksonville ran for 267 yards: Jones-Drew 25 carries for 191 and a touchdown, Grimes 62 and a touchdown.
+- Cousins completed 19 of 24 with no turnover.
+- The defense took three interceptions (Daryl Smith, Russell Allen, Poyer) and had four sacks (Alualu two, Harris, Lowery).
+- Scobee made five of six field goals.
+
+**Availability.** A.J. Bouye was hurt (lower extremity, short; out, projected return November 26).
+
+**Statistics, standings and awards.** One full receipt and fourteen compact receipts were kept, 162 of 162 in total. In the new 2013.8 cohort (30 team-games), third-down rate is OUTSIDE its band: 0.445 against 0.383 ±0.060. Investigated as a possible defect, none was found. The 2013.8 change touched only overtime, the 46-active limit and overtime booth review; no regulation third-down code changed. Weeks 4-10 ran from 0.350 to 0.408, and 0.445 on 393 attempts is within three standard errors (±0.074) of the centre, so this reads as one-week variance. No centre, tolerance or coefficient was changed and no game was rerun; the row stays graded as the cohort grows. The Week 11 awards were drawn; Jones-Drew and Scobee were shortlisted but not drawn.
+
+**Primary records:** `regular_season/week_11_arizona_at_jacksonville/output.md` and `call_sheet.json`; `league_results/week_11.md`; `stats/game_receipts/week_11_*.json`; `awards/`; `scouting/2014_draft_focus_directive.md`; `standings.md`; `depth_chart.json`.
+**Next competitive event:** November 24 Week 12 at Houston, 1 p.m. ET. **Not simulated.**
+
+**Commit closed - Canonical update - November 17, 2013 - Week 11 vs Arizona closed - canonical through November 17, after Week 11**
