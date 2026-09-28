@@ -1,11 +1,11 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2013-OCT27-KERNEL-2013-7-STATE-24`
-**Supersedes:** `JAX-2013-OCT27-INJURY-RECOVERY-STATE-23`
-**Snapshot effective:** October 27, 2013, after Week 8 (Jacksonville 20, San Francisco 13, Wembley Stadium) the recovery of Pasztor's and Mosley's injury projections, the backfilled league awards and the adoption of kernel 2013.7.
-**Last reconciled:** September 27, 2026; season-ledger Entry 48.
-**Global package checkpoint:** `Canonical update - October 27, 2013 - League awards backfilled; kernel 2013.7 adopted`
+**Version:** `JAX-2013-NOV03-WEEK9-BYE-STATE-25`
+**Supersedes:** `JAX-2013-OCT27-KERNEL-2013-7-STATE-24`
+**Snapshot effective:** November 3, 2013, after Week 9 (Jacksonville bye).
+**Last reconciled:** September 28, 2026; season-ledger Entry 49.
+**Global package checkpoint:** `Canonical update - November 3, 2013 - Week 9 bye closed`
 
 ## Effective source-version manifest
 
@@ -14,23 +14,22 @@
 | Document 1 | `358ccf4feac40830055bae5e4cbd84151536ab9e` | Active foundation source |
 | Document 2 | `ab790f6e935c99a901a6d39cf3bee5183cf4da3e` | Active foundation source |
 | Document 3 | `38e0ce21e9cf1b62f8d4b9c281955facdaf07b57` | Active foundation source |
-| Document 4 | `JAX-2013-OCT27-INJURY-RECOVERY-REGISTER-20`; closed by Entry 46 | Controlled 53, all active, practice squad, roles and availability after Week 8 and the projection recovery |
-| Document 6 | 2013 ledger through Entry 48 | Week 8 closed; projections recovered; awards backfilled (Entry 47); kernel 2013.7 adopted (Entry 48) |
+| Document 4 | `JAX-2013-NOV03-WEEK9-BYE-REGISTER-21`; closed by Entry 49 | Controlled 53, all active, practice squad, roles and availability after the Week 9 bye |
+| Document 6 | 2013 ledger through Entry 49 | Week 9 bye closed; league slate under kernel 2013.7 |
 
 ## 1. Master clock and competition position
 
 | Field | Current canonical value |
 |---|---|
-| Master date/time | October 27, 2013, after Week 8 vs San Francisco at Wembley Stadium, London |
+| Master date/time | November 3, 2013, after the Week 9 bye |
 | League/season | NFL, 2013 |
 | Team / head coach | Jacksonville Jaguars / Alex Stone |
 | Callers | Stone offense; Romeo Crennel defense; Alan Lowry special teams |
-| Season phase | Regular season; Week 8 closed; Week 9 bye next |
+| Season phase | Regular season; Week 9 bye closed; Week 10 preparation |
 | Preseason record | **2-2** |
 | Regular-season record | **6-2** |
-| Last event | Week 8: Jacksonville 20, San Francisco 13 (Entry 45); injury-projection recovery (Entry 46) |
-| Next deadline | Trade deadline, Tuesday, October 29, 4 p.m. ET; no trade proposal is open |
-| Next week | Week 9 bye (November 3) |
+| Last event | Week 9 bye; trade deadline passed with no Jacksonville transaction (Entry 49) |
+| Last game | Week 8: Jacksonville 20, San Francisco 13 (Entry 45) |
 | Next competitive event | **November 10, Week 10 at Tennessee, 1 p.m. ET: NOT SIMULATED** |
 
 ## 2. Roster and finance
@@ -65,15 +64,18 @@ All four preseason games were generated through `runtime.game_runner.run_game` f
 
 ## 6. League position and statistics
 
-Through Week 8, Jacksonville is 6-2, first in the AFC South (5-2 Tennessee had a bye) and first in the AFC, ahead of the 6-2 Jets on conference record (`career/2013/standings.md`). One hundred twenty of one hundred twenty receipts are preserved. Weeks 1-3 are the legacy kernel cohort, and Weeks 4-8 are kernel 2013.6. Every graded band-audit row is WITHIN and every ledger-coherence count is zero. The known field-position and downs gaps (Entries 39-45) produced impossible safeties in Weeks 5 and 6, San Diego's two-play touchdown drive in Week 7 and Jacksonville's short-field touchdown and a turnover on downs after an 18-yard gain in Week 8, none of which the coherence check can see. Kernel 2013.6 also gives its small home term to the designated home team at a neutral site. Kernel 2013.7 (field position, real per-drive chains and sacks, carrier-true labels, late-game fourth-down partition) was adopted as documented by the user (Entry 48): its three OUTSIDE acceptance rows are registered known detections. Every slate closed after Week 8 runs under it; Weeks 1-8 are never rerun. The neutral-site home term is unchanged in 2013.7.
+Through Week 9, Jacksonville is 6-2 (bye), first in the AFC South a game and a half ahead of 5-3 Tennessee, and the AFC's second seed behind the 7-2 Jets (`career/2013/standings.md`). One hundred thirty-three of one hundred thirty-three receipts are preserved. Weeks 1-3 are the legacy kernel cohort, Weeks 4-8 are kernel 2013.6 and Week 9 onward is kernel 2013.7, each audited as its own cohort. Every graded band-audit row is WITHIN and every ledger-coherence count is zero. The known field-position and downs gaps (Entries 39-45) produced impossible safeties in Weeks 5 and 6, San Diego's two-play touchdown drive in Week 7 and Jacksonville's short-field touchdown and a turnover on downs after an 18-yard gain in Week 8, none of which the coherence check can see. Kernel 2013.6 also gives its small home term to the designated home team at a neutral site. Kernel 2013.7 (field position, real per-drive chains and sacks, carrier-true labels, late-game fourth-down partition) was adopted as documented by the user (Entry 48): its three OUTSIDE acceptance rows are registered known detections. Every slate closed after Week 8 runs under it; Weeks 1-8 are never rerun. The neutral-site home term is unchanged in 2013.7.
 
-League awards (`career/2013/awards/`): Weeks 1-8 and September were backfilled by the registered method (Entry 47); October's awards are drawn on the league's October 31 date, during Week 9.
+League awards (`career/2013/awards/`): Weeks 1-8 and September backfilled (Entry 47); Week 9 and October drawn at the Week 9 close (Entry 49). Every closed week's awards are required by `validate_repository.py`; November's are drawn after Week 12.
 
 ## 7. Immediate next step
 
-October's Players of the Month are drawn on October 31 (`python scripts/league_awards.py month October --close`). The trade deadline (Tuesday, October 29, 4 p.m. ET) passes with no open proposal unless Stone and Caldwell open one. Week 9 is the bye; its output is written only on an explicit instruction and records practice, recovery and self-scout without inventing events. Play Week 10 at Tennessee only on an explicit `Run Week 10` instruction: `python scripts/build_week_inputs.py 10` freezes the slate and `python scripts/close_week.py 10 --close` closes it under the kernel then deployed. Stone's inputs needed:
+Play Week 10 at Tennessee only on an explicit `Run Week 10` instruction: `python scripts/build_week_inputs.py 10` freezes the slate and `python scripts/close_week.py 10 --close` closes it under the kernel then deployed. Stone's inputs needed:
 
 - the Week 10 plan as a structured call sheet;
-- the Week 10 inactive list (the Week 8 list carries forward unless replaced).
+- the Week 10 inactive list (the Week 8 list, naming the now-available Pasztor and Mosley, carries forward unless replaced);
+- Kernel 2013.7 fails closed on any call family not in `runtime/call_families.py`; a new family on the Week 10 sheet is declared from the active 2013 book before the build.
+
+Week 10's league awards are drawn at its close (`scripts/league_awards.py week 10 --close`).
 
 **Tennessee has not been simulated.**

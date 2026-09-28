@@ -2,15 +2,15 @@
 
 **Function:** Branch-facing schedule and phase control.
 **Historical source:** `../../library/2013_jacksonville_master_calendar.md`.
-**Current branch checkpoint:** October 27, 2013, Week 8 closed (Entry 45); Pasztor and Mosley projections recovered (Entry 46).
+**Current branch checkpoint:** November 3, 2013, Week 9 bye closed (Entry 49).
 **Rule:** Dates/opponents/deadlines are historical rails. Attendance, transactions, performance and game results are branch events.
 
 ## Current checkpoint
 
-- Completed through: **October 27, Week 8 vs San Francisco at Wembley Stadium, London (won 20-13)**.
+- Completed through: **November 3, Week 9 bye**. Last game: October 27, Week 8 vs San Francisco at Wembley (won 20-13).
 - Controlled 53 (53 active); practice squad 8; preseason record 2-2; regular-season record 6-2.
-- Next roster deadline: **October 29, 4 p.m. ET trade deadline**. No trade proposal is open.
-- Week 9 (November 3) is the bye. Next competitive event: **November 10 Week 10 at Tennessee, 1 p.m. ET: NOT SIMULATED**.
+- The October 29 trade deadline passed with no Jacksonville transaction.
+- Next competitive event: **November 10 Week 10 at Tennessee, 1 p.m. ET: NOT SIMULATED**.
 - Rackley limited (minor); C.J. Wilson out. Pasztor and Mosley available from their recovered projections (Entry 46). Games ran under kernel 2013.6 in Weeks 4-8 (Entry 39); kernel 2013.7 from the Week 9 slate (Entry 48). League awards: `awards/` (Entry 47).
 
 ## 2013 branch schedule
@@ -60,8 +60,8 @@
 | **Oct. 13** | W6 at Denver, 4:05 p.m. | [Week 6 output](regular_season/week_06_jacksonville_at_denver/output.md) | Complete: won 26-10 |
 | **Oct. 20** | W7 vs San Diego, 1 p.m. | [Week 7 output](regular_season/week_07_san_diego_at_jacksonville/output.md) | Complete: won 30-24 |
 | **Oct. 27** | W8 vs San Francisco at Wembley, 1 p.m. ET (5 p.m. UK) | [Week 8 output](regular_season/week_08_san_francisco_at_jacksonville/output.md) | Complete: won 20-13 |
-| **Oct. 29, 4 p.m.** | Trade deadline | transaction gate | Future |
-| Nov. 3 | W9 BYE | self-scout/recovery week | Future |
+| **Oct. 29, 4 p.m.** | Trade deadline | transaction gate | Complete: no Jacksonville transaction |
+| **Nov. 3** | W9 BYE | [Week 9 output](regular_season/week_09_bye/output.md) | Complete: bye |
 | Nov. 10 | W10 at Tennessee, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
 | Nov. 17 | W11 vs Arizona, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
 | Nov. 24 | W12 at Houston, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
