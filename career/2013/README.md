@@ -19,6 +19,7 @@ Start with [current state](../../state/05_Current_Season_State.md). The [season 
 | [Team stats](stats/team_stats.md) | Per-game team totals for every club |
 | [Band audit](stats/calibration_audit.md) | League receipts against sourced 2012 usage and volume shapes |
 | [Game readiness](../../state/game_readiness.md) | Requirements before game resolution |
+| [Scouting](scouting/README.md) | 2014 draft focus directive and dated prospect scouting reports |
 
 ## Phase and event records
 
