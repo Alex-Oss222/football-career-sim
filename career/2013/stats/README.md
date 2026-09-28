@@ -41,7 +41,7 @@ Players are filed by roster position: quarterbacks, running backs (RB, FB), wide
 
 Kick and punt returners follow in their own table. A counter outside a player's position table, such as a receiver's coverage tackle, appears under **Other statistics**, so no generated statistic is dropped from the readable views.
 
-**G** counts games on the game-day active list: every player in a closed game's result is stamped with one game active. In Weeks 1 and 2 background clubs dressed every available player, up to 53; from Week 3 each dresses up to 46, chosen from its depth order (fewer when too few are available: the Jets dressed 44, 44, 43, 43, 43 and 42 in Weeks 3-8), so background G counts for deep reserves in those two weeks run higher than a real inactive list would give. RTG is the official NFL passer rating. CMP%, Y/A, AVG, FG% and every other derived column are arithmetic on stored counters. LNG is the longest single play, combined across games by maximum.
+**G** counts games on the game-day active list: every player in a closed game's result is stamped with one game active. In Weeks 1 and 2 background clubs dressed every available player, up to 53; from Week 3 each dresses up to 46, chosen from its depth order (fewer when too few are available: the Jets dressed 44, 44, 43, 43, 43, 42 and 43 in Weeks 3-9), so background G counts for deep reserves in those two weeks run higher than a real inactive list would give. RTG is the official NFL passer rating. CMP%, Y/A, AVG, FG% and every other derived column are arithmetic on stored counters. LNG is the longest single play, combined across games by maximum.
 
 ## Leader qualifiers
 
@@ -59,7 +59,7 @@ Passer-rate leaders (rating, completion percentage, yards per attempt) require 1
 
 ## Current coverage
 
-Through Week 8: one hundred twenty of one hundred twenty receipts, coverage complete.
+Through Week 9: one hundred thirty-three of one hundred thirty-three receipts, coverage complete.
 
 ## Branch-control rule
 

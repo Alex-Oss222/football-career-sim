@@ -1321,5 +1321,299 @@
     "winner_index": 0
    }
   }
+ },
+ "week-9": {
+  "kind": "week",
+  "key": "9",
+  "label": "Week 9",
+  "order": 9,
+  "note": "Drawn at the close of Week 9 (Entry 49).",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2013-award-week09-afc-offense-v1",
+    "packet_sha256": "49da0471b23a21ad21b27824f7d45d26ddb19eaea27025a427b2d14fba42feaa",
+    "result_ref": "c7ef8fb50b725d3b86922e8ffcb70b8d67c71d3d8dd1cc04405ab46cb21f39e2",
+    "shortlist": [
+     {
+      "player": "Stevan Ridley",
+      "team": "New England Patriots",
+      "score": 40.2
+     },
+     {
+      "player": "Matt Schaub",
+      "team": "Houston Texans",
+      "score": 30.68
+     },
+     {
+      "player": "Brandon Weeden",
+      "team": "Cleveland Browns",
+      "score": 24.9
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-defense": {
+    "event_id": "2013-award-week09-afc-defense-v1",
+    "packet_sha256": "6f2c5fa9cf9cbb3902aae1731405fa96b6b862d587c6aeae845ccae857a9904b",
+    "result_ref": "93302551e58ea7efed988d77f64b6dfadbe3e1f12e9b7e4c45bfaca4c229fe83",
+    "shortlist": [
+     {
+      "player": "D'Qwell Jackson",
+      "team": "Cleveland Browns",
+      "score": 23.0
+     },
+     {
+      "player": "Philip Wheeler",
+      "team": "Miami Dolphins",
+      "score": 22.4
+     },
+     {
+      "player": "Akeem Ayers",
+      "team": "Tennessee Titans",
+      "score": 19.8
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-special_teams": {
+    "event_id": "2013-award-week09-afc-special_teams-v1",
+    "packet_sha256": "ed08b8c117099c68760fe8d805373c93ada937057f8629794645808c99b1627c",
+    "result_ref": "5154fdf27fce4eea64ab99cc202282447e2088109fd3954d05d87a3904ebcad4",
+    "shortlist": [
+     {
+      "player": "Ryan Succop",
+      "team": "Kansas City Chiefs",
+      "score": 15.0
+     },
+     {
+      "player": "Brett Kern",
+      "team": "Tennessee Titans",
+      "score": 12.25
+     },
+     {
+      "player": "Nick Folk",
+      "team": "New York Jets",
+      "score": 12.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-offense": {
+    "event_id": "2013-award-week09-nfc-offense-v1",
+    "packet_sha256": "ce40672d9ef08aa1d87f885613418d0af4fe2aae897c864bf61014fa1fa01ded",
+    "result_ref": "3edbccadddfdaee1937d0bef2b990a43ca92b97b884b18e5c5bfc7a1a8f1fcd6",
+    "shortlist": [
+     {
+      "player": "Daryl Richardson",
+      "team": "St. Louis Rams",
+      "score": 49.3
+     },
+     {
+      "player": "Adrian Peterson",
+      "team": "Minnesota Vikings",
+      "score": 31.3
+     },
+     {
+      "player": "Sam Bradford",
+      "team": "St. Louis Rams",
+      "score": 21.84
+     }
+    ],
+    "winner_index": 1
+   },
+   "NFC-defense": {
+    "event_id": "2013-award-week09-nfc-defense-v1",
+    "packet_sha256": "95a1171ed32a96ac4e6dde09b93e824ac9edef97d655ec03190de659110ed373",
+    "result_ref": "ee80d18c999bc197d0c22e150010e417212ee052e9fb4b4145b4aa87f38b917e",
+    "shortlist": [
+     {
+      "player": "Cortland Finnegan",
+      "team": "St. Louis Rams",
+      "score": 21.7
+     },
+     {
+      "player": "Curtis Lofton",
+      "team": "New Orleans Saints",
+      "score": 21.0
+     },
+     {
+      "player": "Janoris Jenkins",
+      "team": "St. Louis Rams",
+      "score": 18.3
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-special_teams": {
+    "event_id": "2013-award-week09-nfc-special_teams-v1",
+    "packet_sha256": "54ec8ed367f1257b4ee2214b3cdc7229f3ee2d2d42542cab8514d734daa54ad1",
+    "result_ref": "911b70597cc586d1fb0b130f6bb97613e13fd8ae504e044f465209d0dae42507",
+    "shortlist": [
+     {
+      "player": "Devin Hester",
+      "team": "Chicago Bears",
+      "score": 15.8
+     },
+     {
+      "player": "Jeremy Ross",
+      "team": "Green Bay Packers",
+      "score": 12.0
+     },
+     {
+      "player": "Mason Crosby",
+      "team": "Green Bay Packers",
+      "score": 12.0
+     }
+    ],
+    "winner_index": 2
+   }
+  }
+ },
+ "month-October": {
+  "kind": "month",
+  "key": "October",
+  "label": "October (Weeks 5-8)",
+  "order": 102,
+  "note": "Drawn at the league's October 31 announcement date, during Week 9 (Entry 49).",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2013-award-october-afc-offense-v1",
+    "packet_sha256": "543bb6947ac91aab39d9d231b27b5d47532b5a7e8e5526a3ceada4043f51c8b0",
+    "result_ref": "f0db22c4bf98adee2204c254f8863f6903c9c68e87e19948adb0ac2b636cb741",
+    "shortlist": [
+     {
+      "player": "Jamaal Charles",
+      "team": "Kansas City Chiefs",
+      "score": 98.1
+     },
+     {
+      "player": "Stevan Ridley",
+      "team": "New England Patriots",
+      "score": 88.3
+     },
+     {
+      "player": "Ronnie Hillman",
+      "team": "Denver Broncos",
+      "score": 86.6
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-defense": {
+    "event_id": "2013-award-october-afc-defense-v1",
+    "packet_sha256": "383419805367a30396e5abc939de0da92d4485bf2710db8e47de94939176ab30",
+    "result_ref": "231aad98ea6a14545b32addd4dfdec2c57dde87d44fadde03869646b6f2305c6",
+    "shortlist": [
+     {
+      "player": "Dawan Landry",
+      "team": "New York Jets",
+      "score": 79.3
+     },
+     {
+      "player": "Devin McCourty",
+      "team": "New England Patriots",
+      "score": 58.3
+     },
+     {
+      "player": "Muhammad Wilkerson",
+      "team": "New York Jets",
+      "score": 58.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-special_teams": {
+    "event_id": "2013-award-october-afc-special_teams-v1",
+    "packet_sha256": "656312d35d73dd9005520ccfdcb0d122ed5d1d38e9d6a7fc1ea1ea99aa322fb1",
+    "result_ref": "1628500dc7a37d01a148727ed0280c4a43656fc1276a2dd1ea408e76782acde3",
+    "shortlist": [
+     {
+      "player": "Jacoby Jones",
+      "team": "Baltimore Ravens",
+      "score": 36.8
+     },
+     {
+      "player": "Nick Folk",
+      "team": "New York Jets",
+      "score": 36.0
+     },
+     {
+      "player": "Keshawn Martin",
+      "team": "Houston Texans",
+      "score": 32.5
+     }
+    ],
+    "winner_index": 1
+   },
+   "NFC-offense": {
+    "event_id": "2013-award-october-nfc-offense-v1",
+    "packet_sha256": "be0a1c119f839fe51ec98eebdf85bd335404face029246bc3fe20644348f3e4b",
+    "result_ref": "3386cd75bffab764910ffdf2cc11f1e9f935f9633eef2c73f004308038141029",
+    "shortlist": [
+     {
+      "player": "Reggie Bush",
+      "team": "Detroit Lions",
+      "score": 105.7
+     },
+     {
+      "player": "Rashard Mendenhall",
+      "team": "Arizona Cardinals",
+      "score": 82.5
+     },
+     {
+      "player": "LeSean McCoy",
+      "team": "Philadelphia Eagles",
+      "score": 77.4
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2013-award-october-nfc-defense-v1",
+    "packet_sha256": "a6c613a4699c7d056783d817d21ed70c74ad651cf08719d9e04a194a2dc2c59f",
+    "result_ref": "7a7697e09187b00dea2eb84ce87ffa9c407a1bee2b002e744155d183327df2f4",
+    "shortlist": [
+     {
+      "player": "Luke Kuechly",
+      "team": "Carolina Panthers",
+      "score": 62.0
+     },
+     {
+      "player": "Dan Connor",
+      "team": "New York Giants",
+      "score": 53.1
+     },
+     {
+      "player": "Nate Allen",
+      "team": "Philadelphia Eagles",
+      "score": 52.2
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-special_teams": {
+    "event_id": "2013-award-october-nfc-special_teams-v1",
+    "packet_sha256": "fcb647a22baf8405f9462b6a1bc0e0cbc53d7a965a9fe122a99dfe097753aa06",
+    "result_ref": "4b2bba9a90209013c440f7d41d4f5aa51f3bfe6dfa76bf94ae0cbb2942db9bb1",
+    "shortlist": [
+     {
+      "player": "Michael Cox",
+      "team": "New York Giants",
+      "score": 49.5
+     },
+     {
+      "player": "Chris Thompson",
+      "team": "Washington Redskins",
+      "score": 44.1
+     },
+     {
+      "player": "Jeremy Ross",
+      "team": "Green Bay Packers",
+      "score": 40.4
+     }
+    ],
+    "winner_index": 1
+   }
+  }
  }
 }

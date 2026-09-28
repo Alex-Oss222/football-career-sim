@@ -315,7 +315,8 @@ class FieldPositionTests(unittest.TestCase):
         receipts = [json.loads(p.read_text()) for p in sorted((ROOT / "career/2013/stats/game_receipts").glob("*.json"))]
         legacy, kernel_2013_6, current = cohorts(receipts)
         self.assertTrue(legacy and kernel_2013_6)
-        self.assertFalse(current)
+        # Closed 2013.7 slates (Week 9 on) form their own cohort; older receipts never join it.
+        self.assertTrue(all(r.get("kernel_version") == "2013.7" for r in current))
         errors = [e for r in receipts for e in check_ledger(r)]
         self.assertFalse([e for e in errors if e.split(":")[0] in play_detail.SPOT_CLASSES])
         # The committed Weeks 4-5 receipts closed with no coherence violation.

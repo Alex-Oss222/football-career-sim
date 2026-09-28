@@ -1124,3 +1124,32 @@ The Week 8 inactive list, which names both, carries forward for Week 10 unless S
 **Next:** trade deadline Tuesday, October 29, 4 p.m. ET; October awards on October 31; Week 9 bye; November 10 Week 10 at Tennessee. **Not simulated.**
 
 **Commit closed - Canonical update - October 27, 2013 - League awards backfilled; kernel 2013.7 adopted - canonical through October 27, after Week 8**
+
+## Entry 49: Week 9 bye closed
+
+**Effective canonical state:** November 3, 2013, after Week 9
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - November 3, 2013 - Week 9 bye closed`
+**Preceding global package checkpoint:** `Canonical update - October 27, 2013 - League awards backfilled; kernel 2013.7 adopted`
+
+**Jacksonville.** Bye week, run on Stone's midseason review and second-half plan:
+- Monday: return-from-London recovery, team meeting and film.
+- Tuesday: one self-scout correction practice (ball security, protection, third down, core runs and 6OL, run fits, rush finish, back and tight-end coverage).
+- Wednesday to Sunday: players off.
+- Staff: self-scout, coordinator meetings and second-half planning, including a Houston short-week skeleton for Week 14.
+
+Pasztor and Mosley practised for the first time since Entry 46. Neither moved on the depth chart; their roles are decided from practice evidence. No injury, no roster change. Record 6-2. The durable second-half choices are recorded in `regular_season/week_09_bye/output.md`:
+- Duo, Texas and a TE screen become weekly options.
+- Boot Flood stays out.
+- A Thursday complement period is added to the practice week.
+
+**Trade deadline.** Stone gave Caldwell his assessment before the Tuesday, October 29 deadline. There was no need at quarterback, receiver, running back or center; any move for pass rush or line depth had to come on value alone, and none before Pasztor and Mosley were evaluated. No proposal was open, and the deadline passed with no Jacksonville transaction.
+
+**League.** Thirteen games closed once each under kernel 2013.7, the first slate on it. They were drawn from the package frozen by `build_week_inputs.py 9` (sha256 `8c8c14ad...`), which now runs without a call sheet in Jacksonville's bye week. Thirteen compact receipts were kept, 133 of 133 in total. The 2013.7 cohort's graded rows are WITHIN, registered known detections or of insufficient sample, and every measurable ledger-coherence count is zero. The label and snap-level classes need a full receipt and are not measurable in a week without a Jacksonville game. Tennessee lost and is 5-3. The Jets are 7-2 and hold the AFC's top seed; Jacksonville is second.
+
+**Awards.** The six Week 9 awards and the six October Players of the Month were drawn by the registered method. October covers Weeks 5-8 and was announced by the league on October 31. No Jacksonville player won.
+
+**Primary records:** `regular_season/week_09_bye/output.md`; `league_results/week_09.md`; `stats/game_receipts/week_09_*.json`; `awards/`; `standings.md`.
+**Next competitive event:** November 10 Week 10 at Tennessee, 1 p.m. ET. **Not simulated.**
+
+**Commit closed - Canonical update - November 3, 2013 - Week 9 bye closed - canonical through November 3, after Week 9**

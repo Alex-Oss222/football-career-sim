@@ -1,6 +1,6 @@
 # Jacksonville Jaguars roster
 
-**As of:** October 27, 2013, after Week 8.
+**As of:** November 3, 2013, after the Week 9 bye.
 **Canonical controlled-player count:** **53**.
 **Active roster:** **53**; Justin Blackmon was reinstated from Reserve/Suspended on October 7 and activated to the open spot (ledger Entry 42).
 **Practice squad:** **8**, separate from the active roster.

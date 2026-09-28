@@ -1,7 +1,7 @@
 # 2013 Jacksonville Jaguars player statistics
 
-**Version:** `2013-W08-TEAM-PLAYER-STATS`
-**Through:** Week 8.
+**Version:** `2013-W09-TEAM-PLAYER-STATS`
+**Through:** Week 9.
 **Coverage:** complete for this club's closed games.
 
 By position, then player. G counts games on the game-day active list.

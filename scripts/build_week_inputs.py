@@ -44,14 +44,18 @@ def main():
     out = ROOT / ".sim_cache" / ("week_%02d_inputs.json" % args.week)
     # Only a package that passed the gate may sit at the frozen path.
     out.unlink(missing_ok=True)
+    jacksonville_plays = any("Jacksonville Jaguars" in (g["away"], g["home"]) for g in schedule(args.week))
     sheet_path = call_sheet_path(args.week)
-    if sheet_path is None:
+    if sheet_path is None and not jacksonville_plays:
+        call_sheet = []  # bye week: no Jacksonville game, so no call sheet
+    elif sheet_path is None:
         print("WEEK_INPUTS: BLOCKED")
         print("- No Jacksonville call sheet for Week %d: Stone's weekly plan must be frozen as "
               "career/2013/regular_season/week_%02d_<away>_at_<home>/call_sheet.json before the draw."
               % (args.week, args.week))
         return 1
-    call_sheet = json.loads(sheet_path.read_text(encoding="utf-8"))["offensive_call_sheet"]
+    else:
+        call_sheet = json.loads(sheet_path.read_text(encoding="utf-8"))["offensive_call_sheet"]
     receipts = [r for r in load_receipts(ROOT / "career/2013/stats/game_receipts") if int(r["week"]) < args.week]
     try:
         package = build_package(args.week, receipts, call_sheet, AVERAGE_ANCHORS)
