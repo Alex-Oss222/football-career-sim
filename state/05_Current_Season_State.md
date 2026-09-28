@@ -1,11 +1,11 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2013-NOV10-WEEK10-STATE-26`
-**Supersedes:** `JAX-2013-NOV03-WEEK9-BYE-STATE-25`
+**Version:** `JAX-2013-NOV10-KERNEL-2013-8-STATE-27`
+**Supersedes:** `JAX-2013-NOV10-WEEK10-STATE-26`
 **Snapshot effective:** November 10, 2013, after Week 10 (Tennessee 41, Jacksonville 11).
-**Last reconciled:** September 28, 2026; season-ledger Entry 50.
-**Global package checkpoint:** `Canonical update - November 10, 2013 - Week 10 at Tennessee closed`
+**Last reconciled:** September 28, 2026; season-ledger Entry 51.
+**Global package checkpoint:** `Canonical update - November 10, 2013 - Kernel 2013.8 adopted (2013 overtime rules)`
 
 ## Effective source-version manifest
 
@@ -15,7 +15,7 @@
 | Document 2 | `ab790f6e935c99a901a6d39cf3bee5183cf4da3e` | Active foundation source |
 | Document 3 | `38e0ce21e9cf1b62f8d4b9c281955facdaf07b57` | Active foundation source |
 | Document 4 | `JAX-2013-NOV10-WEEK10-REGISTER-22`; closed by Entry 50 | Controlled 53, all active, practice squad, roles and availability after Week 10 |
-| Document 6 | 2013 ledger through Entry 50 | Week 10 closed |
+| Document 6 | 2013 ledger through Entry 51 | Week 10 closed; kernel 2013.8 adopted |
 
 ## 1. Master clock and competition position
 
@@ -69,7 +69,7 @@ League awards (`career/2013/awards/`): Weeks 1-8 and September backfilled (Entry
 
 ## 7. Immediate next step
 
-Play Week 11 vs Arizona only on an explicit `Run Week 11` instruction: `python scripts/build_week_inputs.py 11` freezes the slate and `python scripts/close_week.py 11 --close` closes it under kernel 2013.7. Stone's inputs needed:
+Play Week 11 vs Arizona only on an explicit `Run Week 11` instruction: `python scripts/build_week_inputs.py 11` freezes the slate and `python scripts/close_week.py 11 --close` closes it under kernel 2013.8 (2013 overtime rules; Entry 51). Stone's inputs needed:
 
 - the Week 11 plan as a structured call sheet (new families are declared in `runtime/call_families.py` from the active 2013 book before the build);
 - the Week 11 inactive list and the starting corner in Ball's place (the Week 10 list carries forward unless replaced).

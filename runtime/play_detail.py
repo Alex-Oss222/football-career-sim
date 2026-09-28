@@ -302,9 +302,22 @@ def _period_clock(remaining, closing=False, overtime=False):
     period). At an exact quarter boundary a closing row is labelled with the
     earlier period at 0:00 and an opening row with the later period at 15:00."""
     remaining = max(0, int(remaining))
+    if isinstance(overtime, tuple):
+        # Kernel 2013.8 postseason overtime: ("OT", periods, length) lays the
+        # periods on one continuous countdown of periods * length seconds, so
+        # a possession continues across a period break. Periods are "OT",
+        # "OT2", "OT3"; an exact boundary closes the earlier period at 0:00
+        # and opens the later one at the full period length.
+        _, periods, length = overtime
+        elapsed = periods * length - remaining
+        number, in_period = divmod(elapsed, length)
+        if closing and in_period == 0 and number > 0:
+            number, left = number, 0
+        else:
+            number, left = number + 1, length - in_period
+        label = "OT" if number == 1 else "OT%d" % number
+        return label, "%d:%02d" % (left // 60, left % 60)
     if overtime:
-        # A postseason game can need more than one overtime period: "OT",
-        # then "OT2", "OT3".
         label = overtime if isinstance(overtime, str) else "OT"
         return label, "%d:%02d" % (remaining // 60, remaining % 60)
     if closing and remaining in PERIOD_BOUNDARIES:

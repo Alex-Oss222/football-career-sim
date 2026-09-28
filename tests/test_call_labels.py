@@ -103,7 +103,13 @@ class CallLabelTests(unittest.TestCase):
         x = TeamInput("A", a.active_players, roster=a.roster, offensive_call_sheet=tuple(changed))
         self.assertEqual(canonical_call_sheet(x), canonical_call_sheet(a))
         self.assertFalse([row for row in canonical_call_sheet(x) if {"carrier", "target", "name"} & set(row)])
-        self.assertEqual(build_game_packet("iso", "snapshot", x, b), build_game_packet("iso", "snapshot", a, b))
+        # The production packet needs a legal 2013 game-day unit (46 actives);
+        # the 47-man calibration roster leaves its fifth corner inactive here.
+        def legal(t):
+            return TeamInput(t.team_id, tuple(pid for pid in t.active_players if not pid.endswith("-CB5")),
+                             roster=t.roster, offensive_call_sheet=t.offensive_call_sheet)
+        self.assertEqual(build_game_packet("iso", "snapshot", legal(x), legal(b)),
+                         build_game_packet("iso", "snapshot", legal(a), legal(b)))
         for i in range(ISOLATION_GAMES):
             first = self.games[i]
             second = resolve_game(x, b, seed=SEED + b"-%05d" % i, event_id=f"{EVENT_PREFIX}-{i}")

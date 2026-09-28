@@ -36,9 +36,20 @@ class ProductionGameRunnerTests(unittest.TestCase):
                 PlayerInput("lb","LB",unit="defense",roles=("punt_coverage",)),
                 PlayerInput("out","WR",available=False))
         # Complete the legal game-day unit the production runner requires.
-        roster+=tuple(p for p in game_day_roster("fill") if p.position not in {"QB"})
+        # 2013: at most 46 game-day actives (the deepest fill spares are left off).
+        spares={"fill-WR5","fill-CB5","fill-S4","fill-RB3"}
+        roster+=tuple(p for p in game_day_roster("fill") if p.position not in {"QB"} and p.player_id not in spares)
         self.home=TeamInput("A",tuple(p.player_id for p in roster if p.available),roster=roster)
         self.away=TeamInput("B",tuple(p.player_id for p in roster if p.available),roster=roster)
+
+    def test_more_than_46_actives_fails_closed(self):
+        roster=tuple(self.home.roster)
+        self.assertEqual(len([p for p in roster if p.available]),46)
+        extra=roster+(PlayerInput("extra","WR",roles=("receiver",)),)
+        big=TeamInput("A",tuple(p.player_id for p in extra if p.available),roster=extra)
+        with self.assertRaisesRegex(ValueError,"46"):
+            build_game_packet("actives","snapshot",big,self.away)
+        self.assertTrue(build_game_packet("actives","snapshot",self.home,self.away))
 
     def test_architecture_and_freeze_precedes_kernel(self):
         self.assertEqual(architecture_errors(),[])

@@ -19,6 +19,18 @@ class Rules2013:
     kickoff_yard_line: int = 35
     kickoff_touchback_yard_line: int = 20
     pat_snap_yard_line: int = 2
+    # Sourced in library/2013_nfl_playing_rules_for_simulation.md (kernel 2013.8).
+    two_minute_warning_seconds: int = 120
+    safety_kick_yard_line: int = 20
+    scrimmage_kick_touchback_yard_line: int = 20
+    two_point_snap_yard_line: int = 2
+    regular_ot_timeouts: int = 2
+    postseason_ot_intermission_seconds: int = 120
+    # Engine bound, not a football rule: postseason overtime is untimed in
+    # the sense that periods continue until a score. The kernel lays the
+    # periods on one continuous timeline of this many periods and fails
+    # closed if it is ever exhausted.
+    postseason_ot_period_bound: int = 10
 
 RULES = Rules2013()
 
@@ -30,15 +42,11 @@ WILD_CARD_TIEBREAKERS=("head_to_head_if_applicable","conference_record","common_
     "net_conference_points","net_all_points","net_touchdowns","coin_toss")
 PLAYOFF_SEEDS={"division_champions":(1,2,3,4),"wild_cards":(5,6)}
 
-def overtime_ends(scores, possession_complete, game_type="regular"):
-    """2012-forward modified sudden death; postseason cannot end tied."""
-    home, away = scores
-    if home == away:
-        return False
-    return possession_complete
-
-def review_authority(*, seconds_left, scoring=False, turnover=False):
-    if scoring or turnover or seconds_left <= 120:
+def review_authority(*, seconds_left, scoring=False, turnover=False, overtime=False):
+    """2013: the replay official initiates every review inside two minutes of
+    either half, throughout overtime, and of every scoring play and turnover;
+    otherwise a coach's challenge is required."""
+    if scoring or turnover or overtime or seconds_left <= RULES.two_minute_warning_seconds:
         return "booth"
     return "coach"
 

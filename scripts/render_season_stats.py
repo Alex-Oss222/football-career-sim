@@ -13,7 +13,7 @@ if str(ROOT) not in sys.path:
 
 from runtime.bands import (
     KERNEL_2013_6_LABEL, KNOWN_DETECTION_BOUND, LEGACY_LABEL, audit, audit_drive_model, audit_field_position,
-    coherence, cohorts, known_detections, known_status,
+    coherence, cohorts, current_cohorts, known_detections, known_status,
 )
 from runtime.stat_tables import (
     POSITION_GROUPS, avg, combine, g, pct, position_sections, rating_value,
@@ -442,6 +442,35 @@ def _coherence_lines(checked, counts):
     return lines
 
 
+def _current_cohort_lines(version, members, empty):
+    """One field-position-era cohort (kernel 2013.7, 2013.8, ...) of the audit."""
+    team_games, rows = audit(members)
+    drive_games, drive_rows = audit_drive_model(members)
+    fp_games, fp_rows = audit_field_position(members)
+    checked, counts = coherence(members)
+    lines = [
+        "## Kernel %s cohort (%s)" % (version, _week_span(members, empty)), "",
+        "**Team-games audited:** %d. Carry shares exclude kneels, as in the 2012 "
+        "baseline." % team_games, "",
+    ] + _band_table(rows) + ["", POINTS_NOTE, "",
+        "### Drive model rows", "",
+        "Centres from the 2012 drive model (nflverse drive definition) and period totals; "
+        "tolerance is three standard errors at the observed sample.", "",
+    ] + _band_table(drive_rows, version) + [""] + _known_detection_lines(version) + [
+        "### Field-position rows", "",
+        "Centres from the 2012 field-position model's band_centres. Rates use "
+        "3*sqrt(p(1-p)/n) and means 3*sd/sqrt(n) with the 2012 sd; a row reads "
+        "INSUFFICIENT SAMPLE below 30 events. INFORMATIONAL rows are shapes, not grades.", "",
+    ] + _band_table(fp_rows) + [
+        "",
+        "### Ledger coherence", "",
+        "Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and "
+        "17 kernel 2013.7 spot and label classes). Games checked: %d. The kick-row and "
+        "label classes need the full snap ledger." % checked, "",
+    ] + _coherence_lines(checked, counts) + [""]
+    return lines
+
+
 def calibration_audit_markdown(year, receipts, book):
     legacy, kernel_2013_6, current = cohorts(receipts)
     lines = [
@@ -486,30 +515,10 @@ def calibration_audit_markdown(year, receipts, book):
         "kernel 2013.7 spot and label classes are not measurable for this cohort "
         "(its receipts carry no start spots)." % checked, "",
     ] + _coherence_lines(checked, counts) + [""]
-    team_games, rows = audit(current)
-    drive_games, drive_rows = audit_drive_model(current)
-    fp_games, fp_rows = audit_field_position(current)
-    checked, counts = coherence(current)
-    lines += [
-        "## Kernel 2013.7 cohort (%s)" % _week_span(current, "after Week 8; no game closed yet"), "",
-        "**Team-games audited:** %d. Carry shares exclude kneels, as in the 2012 "
-        "baseline." % team_games, "",
-    ] + _band_table(rows) + ["", POINTS_NOTE, "",
-        "### Drive model rows", "",
-        "Centres from the 2012 drive model (nflverse drive definition) and period totals; "
-        "tolerance is three standard errors at the observed sample.", "",
-    ] + _band_table(drive_rows, "2013.7") + [""] + _known_detection_lines("2013.7") + [
-        "### Field-position rows", "",
-        "Centres from the 2012 field-position model's band_centres. Rates use "
-        "3*sqrt(p(1-p)/n) and means 3*sd/sqrt(n) with the 2012 sd; a row reads "
-        "INSUFFICIENT SAMPLE below 30 events. INFORMATIONAL rows are shapes, not grades.", "",
-    ] + _band_table(fp_rows) + [
-        "",
-        "### Ledger coherence", "",
-        "Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and "
-        "17 kernel 2013.7 spot and label classes). Games checked: %d. The kick-row and "
-        "label classes need the full snap ledger." % checked, "",
-    ] + _coherence_lines(checked, counts) + [""]
+    split = dict(current_cohorts(current))
+    lines += _current_cohort_lines("2013.7", split.pop("2013.7", []), "after Week 8; no game closed yet")
+    for version, members in sorted(split.items(), key=lambda item: tuple(int(v) for v in item[0].split("."))):
+        lines += _current_cohort_lines(version, members, "no game closed yet")
     return "\n".join(lines)
 
 

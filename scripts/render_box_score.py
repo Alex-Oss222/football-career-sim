@@ -142,7 +142,15 @@ def spot_text(spot):
     return "own %d" % (100 - spot) if spot > 50 else "opp %d" % spot
 
 
-def clock_text(half, seconds):
+def clock_text(half, seconds, game_type="regular"):
+    if half == "OT" and game_type == "postseason":
+        # Kernel 2013.8 postseason overtime: one continuous countdown of
+        # periods (runtime.rules.postseason_ot_period_bound), labelled per period.
+        from runtime.play_detail import _period_clock
+        from runtime.rules import RULES
+        label, text = _period_clock(seconds, overtime=(
+            "OT", RULES.postseason_ot_period_bound, RULES.postseason_ot_seconds))
+        return "%s %s" % (label, text)
     if half == "OT":
         return "OT %d:%02d" % (seconds // 60, seconds % 60)
     left = seconds - 900 if seconds > 900 else seconds
@@ -153,7 +161,7 @@ def clock_text(half, seconds):
 
 
 def drive_chart(receipt):
-    """Kernel 2013.7 receipts: every possession's start, end and result."""
+    """Kernel 2013.7-or-later receipts: every possession's start, end and result."""
     from runtime.play_detail import DRIVE_SUMMARY_FIELDS
     drives = [dict(zip(DRIVE_SUMMARY_FIELDS, row)) for row in receipt.get("drives", ())]
     if not drives or any(d.get("start_spot") is None for d in drives):
@@ -176,7 +184,7 @@ def drive_chart(receipt):
                 fourth["ydstogo"], spot_text(fourth["los"]))
         end = "end zone" if d["category"] in ("touchdown", "safety") else spot_text(d.get("end_spot"))
         lines.append("| %d | %s | %s | %s | %s | %d | %d | %s | %s |" % (
-            d["number"], d["team"], clock_text(d["half"], d["start_clock"]), spot_text(d["start_spot"]),
+            d["number"], d["team"], clock_text(d["half"], d["start_clock"], receipt.get("game_type", "regular")), spot_text(d["start_spot"]),
             START_KIND.get(d.get("start_kind"), d.get("start_kind") or "—"), d["scrimmage_plays"],
             d["net_yards"], end, result))
     return lines + [""]

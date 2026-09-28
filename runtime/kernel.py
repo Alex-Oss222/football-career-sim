@@ -12,6 +12,7 @@ from . import usage
 from .player_evidence import empty_player_stats, normalize_players, observation
 from .play_detail import (
     apply_drive_detail, apply_kickoff_detail, canonical_call_sheet, check_ledger,
+    _period_clock,
 )
 
 
@@ -462,9 +463,6 @@ def resolve_game(
             score_kind = "safety"
         elif category == "clock":
             s["clock_expired_drives"] += 1
-            if half == "OT":
-                # A postseason period change keeps the ball where it lies.
-                next_start, next_kind = 100 - end_spot, "period_change"
         s["drives"] += 1
         s["points"] += points
         s["time_of_possession"] += seconds
@@ -568,7 +566,7 @@ def resolve_game(
             "spikes": spikes,
         }
         if half == "OT":
-            record["period"] = "OT"
+            record["period"] = _period_clock(start_clock, overtime=ot_label)[0]
         possessions.append(record)
         return record, score_kind, next_kind
 
@@ -602,31 +600,40 @@ def resolve_game(
     total = RULES.quarter_seconds * 4
     overtime_seconds = 0
     if stats[home.team_id]["points"] == stats[away.team_id]["points"]:
-        # A new coin toss decides the overtime receiver.
+        # Kernel 2013.8 overtime (library/2013_nfl_playing_rules_for_simulation.md).
+        # A new coin toss decides the receiver; possessions alternate on a
+        # real clock, each drive using its own seconds; modified sudden death
+        # (runtime.rules.ot_status) decides when a score ends the game.
+        # Regular season and preseason: one 15-minute period; when it expires
+        # the game ends, tied if still level. Postseason: 15-minute periods
+        # laid on one continuous countdown, so a possession carries across a
+        # period break and the game never ends tied.
         offense = home.team_id if rng.random() < 0.5 else away.team_id
-        period_length = (
-            RULES.postseason_ot_seconds if game_type == "postseason" else RULES.regular_ot_seconds
-        )
-        window = period_length
+        postseason = game_type == "postseason"
+        if postseason:
+            periods = RULES.postseason_ot_period_bound
+            ot_label = ("OT", periods, RULES.postseason_ot_seconds)
+            window = periods * RULES.postseason_ot_seconds
+        else:
+            ot_label = "OT"
+            window = RULES.regular_ot_seconds
         history = []
-        ot_period = 1
-        opened = kick(other(offense), offense, free_kick=False, half="OT", remaining=window)
+        opened = kick(other(offense), offense, free_kick=False, half="OT", remaining=window, ot_label=ot_label)
         spot, start_kind = opened["next_start"], _start_kind(opened)
         while True:
-            if window <= 0:
-                if ot_status(history, game_type, expired=True) == "end":
-                    break
-                window = period_length
-                ot_period += 1
-            label = "OT" if ot_period == 1 else "OT%d" % ot_period
-            record, score_kind, next_kind = possess(offense, window, "OT", spot, start_kind, history, label)
+            record, score_kind, next_kind = possess(offense, window, "OT", spot, start_kind, history, ot_label)
             window -= record["seconds"]
             overtime_seconds += record["seconds"]
             history.append({"team": offense, "score": score_kind})
             if ot_status(history, game_type) == "end":
                 break
-            if score_kind and window > 0:
-                spot, start_kind = kicked_after(record, score_kind, window, "OT", label)
+            if window <= 0:
+                if ot_status(history, game_type, expired=True) == "end":
+                    break
+                raise RuntimeError("postseason overtime exceeded the engine's %d-period bound"
+                                   % RULES.postseason_ot_period_bound)
+            if score_kind:
+                spot, start_kind = kicked_after(record, score_kind, window, "OT", ot_label)
             else:
                 spot, start_kind = record["next_start"], next_kind
             offense = other(offense)
