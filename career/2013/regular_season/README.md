@@ -29,7 +29,7 @@ Dates, times and venues are historical schedule facts from `library/2013_jackson
 | 11 | Sun. Nov. 17 | 1:00 p.m. ET | Arizona Cardinals at Jacksonville | Home | Closed: W 29-7 (Entry 52) | [week_11_arizona_at_jacksonville/output.md](week_11_arizona_at_jacksonville/output.md) |
 | 12 | Sun. Nov. 24 | 1:00 p.m. ET | Jacksonville at Houston Texans | Away | Closed: L 38-6 (Entry 53) | [week_12_jacksonville_at_houston/output.md](week_12_jacksonville_at_houston/output.md) |
 | 13 | Sun. Dec. 1 | 1:00 p.m. ET | Jacksonville at Cleveland Browns | Away | Closed: W 22-19 OT (Entry 55) | [week_13_jacksonville_at_cleveland/output.md](week_13_jacksonville_at_cleveland/output.md) |
-| 14 | Thu. Dec. 5 | 8:25 p.m. ET | Houston Texans at Jacksonville | Home | Not started | [week_14_houston_at_jacksonville/output.md](week_14_houston_at_jacksonville/output.md) |
+| 14 | Thu. Dec. 5 | 8:25 p.m. ET | Houston Texans at Jacksonville | Home | Closed: W 21-20 (Entry 57) | [week_14_houston_at_jacksonville/output.md](week_14_houston_at_jacksonville/output.md) |
 | 15 | Sun. Dec. 15 | 1:00 p.m. ET | Buffalo Bills at Jacksonville | Home | Not started | [week_15_buffalo_at_jacksonville/output.md](week_15_buffalo_at_jacksonville/output.md) |
 | 16 | Sun. Dec. 22 | 1:00 p.m. ET | Tennessee Titans at Jacksonville | Home | Not started | [week_16_tennessee_at_jacksonville/output.md](week_16_tennessee_at_jacksonville/output.md) |
 | 17 | Sun. Dec. 29 | 1:00 p.m. ET | Jacksonville at Indianapolis Colts | Away | Not started | [week_17_jacksonville_at_indianapolis/output.md](week_17_jacksonville_at_indianapolis/output.md) |

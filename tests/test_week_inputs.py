@@ -70,8 +70,18 @@ class PackageTests(unittest.TestCase):
             cls.package = week_inputs.build_package(2, receipts, sheet, AVERAGE_ANCHORS)
 
     def test_short_unit_with_healthy_inactives_fails_the_build(self):
-        with self.assertRaisesRegex(ValueError, "would dress 45, not 46.*Travis Kelce"):
-            week_inputs.build_package(2, self.receipts, self.sheet, AVERAGE_ANCHORS)
+        chart = json.loads(week_inputs.DEPTH_CHART.read_text())
+        inactives = set(chart["game_day_inactives"]["players"])
+        rows = list(week_inputs.controlled_active())
+        # Hold one dressed, available player without adding him to Stone's list.
+        index = next(i for i, (player, note) in enumerate(rows)
+                     if player not in inactives and note == week_inputs.AVAILABLE_TEXT)
+        held = rows[index][0]
+        rows[index] = (held, "Out, medical hold")
+        with mock.patch.object(week_inputs, "controlled_active", return_value=rows), \
+                mock.patch.object(week_inputs, "injured_out", return_value={}):
+            with self.assertRaisesRegex(ValueError, "not 46.*%s" % held):
+                week_inputs.jacksonville_input([], date(2013, 12, 15), AVERAGE_ANCHORS, self.sheet)
 
     def test_unlabelled_call_fails_the_build(self):
         with self.assertRaisesRegex(ValueError, "Mystery"):
