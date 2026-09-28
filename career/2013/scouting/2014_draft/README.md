@@ -13,6 +13,11 @@
 - **Append, don't rewrite.** A prospect file is a dated log. A new evaluation is a new dated entry; earlier entries stay as written.
 - **Research first.** Factual lines (school, eligibility, measurables, college statistics) need a real cited source and a verification pass, or are marked unverified.
 
+## Phases
+
+- Week 11: [focus directive](../2014_draft_focus_directive.md).
+- Week 12: [Phase II, role validation](phase_ii_role_validation.md), with the interim-card format.
+
 ## Focus prospects
 
 | Prospect | Position | Focus round | Evaluators | Status |
