@@ -37,7 +37,7 @@ Start with [current state](../../state/05_Current_Season_State.md). The [season 
 | Preseason | [Game index](preseason/README.md) | Per-game output linked in the index | [Roster cuts](preseason/final_roster_cuts.md) |
 | Regular season | [Week index](regular_season/README.md) | Per-week output linked in the index | [Standings](standings.md) / [statbook](statbook.md) |
 
-Every regular-season week is closed. The postseason bracket and round index is `postseason/README.md`; the Wild Card round is closed (Jacksonville 38, Kansas City 14) and later rounds are built as they are reached. A future folder is never evidence that an event happened.
+Every regular-season week is closed. The postseason bracket and round index is `postseason/README.md`; Jacksonville won the Wild Card (38-14 at Kansas City) and was eliminated in the Divisional round (20-13 at Tennessee); the remaining rounds are background slates, built as they are reached. A future folder is never evidence that an event happened.
 
 ## Canonical migrations
 

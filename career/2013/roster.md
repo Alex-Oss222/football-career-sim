@@ -1,12 +1,12 @@
 # Jacksonville Jaguars roster
 
-**As of:** January 5, 2014, after the AFC Wild Card round.
+**As of:** January 12, 2014, after the AFC Divisional round; season over (eliminated).
 **Canonical controlled-player count:** **53**.
 **Active roster:** **53**; Justin Blackmon was reinstated from Reserve/Suspended on October 7 and activated to the open spot (ledger Entry 42).
 **Practice squad:** **8**, separate from the active roster.
-**Record:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-0 (AFC Wild Card: Jacksonville 38, Kansas City 14).
+**Record:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-1 (AFC Wild Card: Jacksonville 38, Kansas City 14; AFC Divisional: Tennessee 20, Jacksonville 13).
 
-<!-- player-ages-as-of: 2014-01-05 -->
+<!-- player-ages-as-of: 2014-01-12 -->
 
 Birth dates are sourced in the [identity registry](../../library/data/player_birth_dates.json). **Age** is completed years at the master date in Document 5; [league ages](player_ages.md) update through the same renderer.
 
@@ -40,17 +40,17 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
-| Montell Owens | FB | 1984-05-04 | 29 | Active 53 | Out, lower extremity, minor (Wild Card); projected return January 5, 2014 | FB |
+| Montell Owens | FB | 1984-05-04 | 29 | Active 53 | No communicated restriction | FB |
 
 ### Wide receivers (5)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
-| Justin Blackmon | WR | 1990-01-09 | 23 | Active 53 | No communicated restriction | WR3 / outside Z (from Week 8) |
+| Justin Blackmon | WR | 1990-01-09 | 24 | Active 53 | No communicated restriction | WR3 / outside Z (from Week 8) |
 | Mike Brown | WR | 1989-02-09 | 24 | Active 53 | No communicated restriction | WR5 |
 | Toney Clemons | WR | 1988-10-11 | 25 | Active 53 | No communicated restriction | WR4 |
 | Cecil Shorts | WR | 1987-12-22 | 26 | Active 53 | No communicated restriction | WR1 |
-| Adam Thielen | WR | 1990-08-22 | 23 | Active 53 | Out, lower extremity, minor (Wild Card); projected return January 6, 2014 | WR2 / H (movable receiver); coverage units |
+| Adam Thielen | WR | 1990-08-22 | 23 | Active 53 | No communicated restriction | WR2 / H (movable receiver); coverage units |
 
 ### Tight ends (3)
 
@@ -90,7 +90,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | --- | --- | --- | ---: | --- | --- | --- |
 | Jason Babin | DE | 1980-05-24 | 33 | Active 53 | No communicated restriction | Edge 1 |
 | Andre Branch | DE | 1989-07-14 | 24 | Active 53 | No communicated restriction | Edge 3 |
-| Ryan Davis | DE | 1989-02-24 | 24 | Active 53 | No communicated restriction | Edge 4 |
+| Ryan Davis | DE | 1989-02-24 | 24 | Active 53 | Out, trunk, minor (Divisional); projected return January 14, 2014 | Edge 4 |
 | Lavar Edwards | DE | 1990-04-29 | 23 | Active 53 | No communicated restriction | Edge/front depth and teams (dressed Weeks 12 and 14-17; inactive Week 13) |
 | Jeremy Mincey | DE | 1983-12-14 | 30 | Active 53 | No communicated restriction | Edge 2 |
 | C.J. Wilson | DE | 1987-03-30 | 26 | Active 53 | Out, trunk (Week 2); projected return January 30, 2014 | — |
