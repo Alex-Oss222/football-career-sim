@@ -1,0 +1,153 @@
+# Jacksonville Jaguars: 2014 contract and free-agency status register
+
+**Branch date:** February 2, 2014 (2013 season complete; Jacksonville eliminated in the AFC Divisional round).
+**Applies at:** the opening of the 2014 league year, Tuesday, March 11, 2014, 4:00 PM ET (`library/2014_league_calendar_and_financial_rules.md`, C10).
+**Scope:** every player Jacksonville controls in `career/2013/roster.md` at the branch date: 53 active players and 8 practice-squad players.
+**Nature:** research and status register only. It executes no signing, tender, release, extension, option or trade and changes no current state. Caldwell retains contract authority under Document 3.
+
+## 1. How to read this register
+
+- **Branch records override real history.** A player signed, re-signed, drafted, acquired or moved to the practice squad in the branch carries the contract the branch records state (`offseason/free_agency/signings.md`, `trades/trades.md`, `offseason/draft/draftees.md`, `offseason/draft/udfa_signings.md`, `preseason/final_roster_cuts.md`, the current and May 5 cap worksheets). No real-world 2013 contract is substituted for a branch contract.
+- **Inherited contracts** (signed before January 15, 2013) use the real contract's length and final league year from sourced public reporting.
+- **No hindsight.** No real 2014 re-signing, tender decision, franchise tag, release, trade, signing elsewhere or later outcome is recorded or used. Where a source published before March 11, 2014 also discusses a real 2014 decision, it is cited only for the pre-existing contract fact stated in the row, and that decision is excluded.
+- **Accrued seasons** (2011 CBA): a season accrues when the player is on, or should have been on, full pay status for six or more regular-season games. Practice-squad weeks never count. Full pay status includes the active and inactive 53 and Reserve/Injured; a suspended player is not on full pay status for the suspended games.
+- **Free-agency class for an expired contract:** 4 or more accrued seasons is an unrestricted free agent (UFA); exactly 3 is a restricted free agent (RFA); fewer than 3 is an exclusive-rights free agent (ERFA). Tender amounts and deadlines are in the 2014 financial-rules library, sections 2d and C10.
+- **Branch 2013 accrual.** Every player on the active 53 was on the roster from the August 31 cutdown through Week 17. Jacksonville played 16 regular-season games (bye in Week 9), and no player was moved to a reserve list except Justin Blackmon, who served a four-game suspension (Weeks 2-5) on Reserve/Suspended and was activated October 7 (ledger Entries 41-42). Paul Posluszny, C.J. Wilson and Alan Ball stayed on the active 53 while injured; no reserve-list move was made. Postseason games do not count toward accrual.
+- **Labels.** Confirmed: two independent sources, or an explicit branch record. Supported: one credible source, or a source plus consistent contract arithmetic. Corrected: changed in the verification pass (section 5 says what and why). Unverified: a single, weak or conflicting source. Unresolved: not established; do not act on a guess.
+
+### Source access limit
+
+WebFetch was blocked by the session's network egress proxy for every outlet tried (overthecap.com, jaguars.com, nbcsports.com). The research used WebSearch result text and the NFLverse redistribution of OverTheCap's historical-contract export (`historical_contracts.csv.gz`, [NFLverse contracts release](https://github.com/nflverse/nflverse-data/releases/tag/contracts)), which gives each contract's signing year, length, value and OverTheCap player page. No attempt was made to route around the proxy. OverTheCap player-page URLs below come from that export and were not opened directly.
+
+## 2. Summary
+
+| Status on March 11, 2014 | Active 53 | Practice squad | Total |
+|---|---:|---:|---:|
+| Under contract for 2014 | 35 | 0 | 35 |
+| Unrestricted free agent | 8 | 0 | 8 |
+| Restricted free agent | 3 | 0 | 3 |
+| Exclusive-rights free agent | 3 | 0 | 3 |
+| Practice-squad contract expiring | 0 | 8 | 8 |
+| Unresolved | 4 | 0 | 4 |
+| **Total** | **53** | **8** | **61** |
+
+**Pending unrestricted free agents (8):** QB Chad Henne, RB Maurice Jones-Drew, OT Eugene Monroe, C Brad Meester, DT Sen'Derrick Marks, DE C.J. Wilson, CB Alan Ball, CB Brent Grimes.
+**Pending restricted free agents (3):** OT Cameron Bradfield, TE Allen Reisner, CB Kevin Rutland.
+**Pending exclusive-rights free agents (3):** WR Toney Clemons, WR Mike Brown, G Austin Pasztor.
+**Unresolved (4):** QB John Parker Wilson, RB Jonathan Grimes, FB Montell Owens, LS Jeremy Cain.
+
+## 3. Active 53
+
+### Branch contracts
+
+| Player | Pos. | Contract type and final league year | March 11, 2014 status | Accrued seasons through 2012 | 2013 branch accrual | Source and label |
+|---|---|---|---|---|---|---|
+| Kirk Cousins | QB | Inherited 2012 Washington four-year rookie contract, acquired by branch trade; final year 2015. Branch record: Jacksonville carries his base salary ($480,000 in 2013); Washington keeps its bonus proration | Under contract | 1 (2012 rookie season with Washington) | Accrues in branch (on 53 for 16 games) | Trade: `trades/trades.md`; accounting: May 5 worksheet (Git `d25c8cf`). Term: [CBS Sports, May 2012](https://www.cbssports.com/nfl/news/kirk-cousins-signs-contract-with-redskins-reportedly-four-years-25m/); [OverTheCap](https://overthecap.com/player/kirk-cousins/1443/). Confirmed |
+| Brad Meester | C | Branch re-signing, one year ($1.50M); final year 2013 | **UFA** | 4+ (entered 2000; on Jacksonville's March 12, 2013 own-free-agent list as a veteran) | Accrues in branch (on 53 for 16 games) | `free_agency/signings.md`; ledger Entry 9. Confirmed |
+| Sen'Derrick Marks | DT | Branch signing, one year ($1.50M); final year 2013 | **UFA** | 4+ (entered 2009; his 2009 Tennessee four-year rookie contract expired after 2012 and he signed with Jacksonville from outside as a free agent) | Accrues in branch (on 53 for 16 games) | `free_agency/signings.md`; [OverTheCap](https://overthecap.com/player/senderrick-marks/2083/) for the 2009 rookie term. Confirmed |
+| Roy Miller | DT | Branch signing, two years ($5.00M); final year 2014. 2014 base not guaranteed | Under contract | Not status-determining (entered 2009) | Accrues in branch (on 53 for 16 games) | `free_agency/signings.md`. Confirmed |
+| Daryl Smith | LB | Branch re-signing, two years ($6.00M); final year 2014. 2014 base not guaranteed | Under contract | Not status-determining (entered 2004) | Accrues in branch (on 53 for 16 games) | `free_agency/signings.md`. Confirmed |
+| Alan Ball | CB | Branch signing, one year ($1.00M); final year 2013 | **UFA** | 4+ (entered 2007; signed from outside as a free agent in March 2013) | Accrues in branch (on 53 for 16 games) | `free_agency/signings.md`. Confirmed |
+| Brent Grimes | CB | Branch signing, one year ($5.50M, fully guaranteed); final year 2013 | **UFA** | 4+ (entered 2006; played 2012 under an Atlanta franchise-tag contract and signed from outside as a free agent in March 2013) | Accrues in branch (on 53 for 16 games) | `free_agency/signings.md`; [OverTheCap](https://overthecap.com/player/brent-grimes/205/) for the 2012 one-year tag contract. Confirmed |
+| C.J. Wilson | DE | Inherited 2010 Green Bay seventh-round four-year rookie contract, acquired by branch trade; final year 2013. Branch record: $630,000 2013 base; Green Bay keeps its bonus proration | **UFA** | 3 (2010-2012 with Green Bay) | Accrues in branch (on 53 for 16 games; injured Week 2, never moved to a reserve list) | Trade: `trades/trades.md`; May 5 worksheet (Git `d25c8cf`). Term: [OverTheCap](https://overthecap.com/player/c-j-wilson/1095/) (2010, four years); [ECU, April 24, 2010](https://ecupirates.com/news/2010/4/24/Wilson_Drafted_In_Seventh_Round_By_Packers.aspx) (seventh round). Accrual through 2012: Supported. Final year: Corrected (section 5) |
+| Lane Johnson | OT | Branch #2 rookie contract signed May 2, 2013; four years, final year 2016, plus the CBA first-round fifth-year club option | Under contract | 0 | Accrues in branch (on 53 for 16 games) | `draft/draftees.md`. Confirmed |
+| Travis Kelce | TE | Branch #33 rookie contract; four years, final year 2016 | Under contract | 0 | Accrues in branch (on 53 for 16 games) | `draft/draftees.md`. Confirmed |
+| Jordan Poyer | CB | Branch #64 rookie contract; four years, final year 2016 | Under contract | 0 | Accrues in branch (on 53 for 16 games) | `draft/draftees.md`. Confirmed |
+| Sio Moore | LB | Branch #98 rookie contract; four years, final year 2016 | Under contract | 0 | Accrues in branch (on 53 for 16 games) | `draft/draftees.md`. Confirmed |
+| Lavar Edwards | DE | Branch #135 rookie contract; four years, final year 2016 | Under contract | 0 | Accrues in branch (on 53 for 16 games) | `draft/draftees.md`. Confirmed |
+| Bacarri Rambo | S | Branch #169 rookie contract; four years, final year 2016 | Under contract | 0 | Accrues in branch (on 53 for 16 games) | `draft/draftees.md`. Confirmed |
+| Brynden Trawick | S | Branch UDFA minimum contract; three years, final year 2015 ($495,000 2014 base) | Under contract | 0 | Accrues in branch (on 53 for 16 games) | `draft/udfa_signings.md`. Confirmed |
+| A.J. Bouye | CB | Branch UDFA minimum contract; three years, final year 2015 | Under contract | 0 | Accrues in branch (on 53 for 16 games) | `draft/udfa_signings.md`. Confirmed |
+| Adam Thielen | WR | Branch UDFA minimum contract; three years, final year 2015 | Under contract | 0 | Accrues in branch (on 53 for 16 games) | `draft/udfa_signings.md`. Confirmed |
+| C.J. Anderson | RB | Branch UDFA minimum contract; three years, final year 2015 | Under contract | 0 | Accrues in branch (on 53 for 16 games) | `draft/udfa_signings.md`. Confirmed |
+
+### Inherited contracts expiring after 2013
+
+| Player | Pos. | Contract type and final league year | March 11, 2014 status | Accrued seasons through 2012 | 2013 branch accrual | Source and label |
+|---|---|---|---|---|---|---|
+| Chad Henne | QB | Veteran contract signed March 2012; two years ($6.75M); final year 2013 | **UFA** | 5 (2008-2011 Miami, 2012 Jacksonville; 4+ is Supported) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/chad-henne/920/) (2012, two years, $6,750,000); `initial_cap_sheet.md`; March 14, 2012 signing date per [Wikipedia](https://en.wikipedia.org/wiki/Chad_Henne). Confirmed |
+| Maurice Jones-Drew | RB | 2009 veteran extension; final year 2013 | **UFA** | 7 (2006-2012; 2012 on Reserve/Injured, which is full pay) | Accrues in branch (on 53 for 16 games) | [SI, June 12, 2012](https://www.si.com/nfl/2012/06/12/huddle-up-why-the-maurice-jones-drew-holdout-is-a-unique-situation) (two years left in 2012: 2012 and 2013 bases); [OverTheCap](https://overthecap.com/player/maurice-jones-drew/949/); `initial_cap_sheet.md` ("final year of existing veteran deal"). Final year Confirmed; term length Corrected (section 5) |
+| Eugene Monroe | OT | 2009 first-round (#8) five-year rookie contract; final year 2013 | **UFA** | 4 (2009-2012) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/eugene-monroe/927/) (2009, five years, $25,000,000); `initial_cap_sheet.md` ("final contract year"). Confirmed |
+| Cameron Bradfield | OT | 2011 undrafted rookie contract, three years; final year 2013 | **RFA** | 2 (2011: one of three undrafted rookies on Jacksonville's opening 53; 2012: 14 games) | Accrues in branch (on 53 for 16 games) | 2011 roster: [Jaguars.com, September 2011](https://www.jaguars.com/news/a-call-to-remember-5932309); 2012 games: `initial_roster.md`. Three-year undrafted term and 2013 expiry: Supported (standard 2011 undrafted term; not on Jacksonville's March 2013 own-free-agent list). 2011 accrual: Supported, not Confirmed (games count for 2011 not recovered) |
+| Allen Reisner | TE | 2011 Minnesota undrafted contract, carried by waiver claim (December 24, 2012); final year 2013 | **RFA** | 2 (2011: Minnesota active roster through October 4 and again from November 26, about ten games; 2012: Minnesota and Jacksonville) | Accrues in branch (on 53 for 16 games) | Transactions: [Wikipedia](https://en.wikipedia.org/wiki/Allen_Reisner). Expiry after 2013: [Big Cat Country, March 6, 2014](https://www.bigcatcountry.com/2014/3/6/5478230/2014-jaguars-restricted-free-agents-tender-amounts) lists him as a pending restricted free agent (cited only for the contract's expiry; any real tender decision is excluded). [OverTheCap](https://overthecap.com/player/allen-reisner/908/) shows an ambiguous "2011, two years" row. Final year: Supported. Accrual: Supported |
+| Kevin Rutland | CB | 2011 Jacksonville undrafted contract, three years; final year 2013 | **RFA** | 2 (2011: opening 53, 11 games; 2012: 13 games) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/kevin-rutland/944/) (Jaguars 2011, three years); [Wikipedia](https://en.wikipedia.org/wiki/Kevin_Rutland) (2011 games); `initial_roster.md` (2012 games). Supported |
+| Toney Clemons | WR | Signed off Pittsburgh's practice squad in late November 2012; two-year Jacksonville contract ($870,000); final year 2013 | **ERFA** | 0 (joined Jacksonville's 53 in late November 2012; 4 games) | Accrues in branch (on 53 for 16 games); 1 total | [OverTheCap](https://overthecap.com/player/toney-clemons/959/) (Jaguars 2012, two years, $870,000); [Pro Football Reference, November 2012 transactions](https://www.pro-football-reference.com/years/2012/11_transactions.htm). Status: Confirmed as ERFA whatever his 2012 accrual (at most 2 total) |
+| Mike Brown | WR | 2012 Jacksonville undrafted contract; final year 2013 | **ERFA** | 0 (practice squad for all but two weeks of 2012) | Accrues in branch (on 53 for 16 games); 1 total | 2012 practice-squad time: [Big Cat Country, November 7, 2013](https://www.bigcatcountry.com/2013/11/7/5066558/mike-brown-jaguars-journey-liberty-nfl). Final year 2013: Unverified (single report: the March 6, 2014 Big Cat Country article above groups him with pending exclusive-rights players). If his contract instead runs through 2014 he is under contract. Status: Supported |
+| Austin Pasztor | G | Signed to Jacksonville's practice squad September 17, 2012; promoted to the 53 on December 14, 2012; final year 2013 | **ERFA** | 0 (active only from December 14, 2012) | Accrues in branch (on 53 for 16 games; Week 1 inactive on medical hold, still full pay); 1 total | 2012 dates: [Wikipedia](https://en.wikipedia.org/wiki/Austin_Pasztor). Final year 2013: Unverified (same single March 6, 2014 report). Status: Supported |
+
+### Inherited contracts running through 2014 or later
+
+| Player | Pos. | Contract and final league year | March 11, 2014 status | Accrued seasons through 2012 | 2013 branch accrual | Source and label |
+|---|---|---|---|---|---|---|
+| Justin Blackmon | WR | 2012 first-round (#5) four-year rookie contract; final year 2015 | Under contract | 1 | Accrues in branch (on 53 for 12 games: Week 1 and Weeks 6-17; Weeks 2-5 on Reserve/Suspended) | [OverTheCap](https://overthecap.com/player/justin-blackmon/943/); `initial_cap_sheet.md`. The four-game forfeiture amount is unresolved in `current_cap_worksheet.md`; no contract tolling is recorded or assumed. Confirmed |
+| Cecil Shorts | WR | 2011 fourth-round four-year rookie contract; final year 2014 | Under contract | 2 | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/cecil-shorts/919/); `initial_cap_sheet.md`. Confirmed |
+| Marcedes Lewis | TE | 2011 five-year veteran contract; final year 2015 | Under contract | 4+ (entered 2006) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/marcedes-lewis/946/); `initial_cap_sheet.md`. Confirmed |
+| Mark Asper | G | 2012 Buffalo sixth-round four-year rookie contract, carried by waiver claims; final year 2015 | Under contract | Unresolved (not status-determining) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/mark-asper/947/) (2012, four years, listed as MIN/BUF/JAX). Supported |
+| Uche Nwaneri | G | 2010 five-year extension; final year 2014 or 2015 (disputed) | Under contract | 4+ (entered 2007) | Accrues in branch (on 53 for 16 games) | [NFL.com, 2010](https://www.nfl.com/news/guard-nwaneri-signs-five-year-contract-extension-with-jaguars-09000d5d81a5a14d); [OverTheCap](https://overthecap.com/player/uche-nwaneri/961/). Final year Corrected to disputed (section 5); 2014 status unaffected |
+| Will Rackley | G | 2011 third-round four-year rookie contract; final year 2014 | Under contract | 2 (2012 on Reserve/Injured, full pay) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/will-rackley/962/); `initial_cap_sheet.md`. Confirmed |
+| Mike Brewster | C | 2012 Jacksonville undrafted contract, three years; final year 2014 | Under contract | 1 (2012: 12 games, 7 starts, then Reserve/Injured) | Accrues in branch (on 53 for 16 games) | [Spotrac](https://www.spotrac.com/nfl/new-orleans-saints/mike-brewster-10383/) (three years, $1,450,000, per search-result text); `initial_roster.md`. Supported |
+| Jason Babin | DE | 2011 Philadelphia five-year contract, carried by Jacksonville's December 2012 waiver claim; final year 2015 | Under contract | 4+ (entered 2004) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/jason-babin/931/) (JAX/PHI 2011, five years); `initial_cap_sheet.md`. Confirmed |
+| Andre Branch | DE | 2012 second-round four-year rookie contract; final year 2015 | Under contract | 1 (2012 on Reserve/Injured at season close, full pay) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/andre-branch/909/); `initial_cap_sheet.md`. Confirmed |
+| Ryan Davis | DE | Reserve/future contract signed December 30, 2012; two years ($900,000); final year 2014 | Under contract | 0 (2012 mostly practice squad; active roughly October 5-23) | Accrues in branch (on 53 for 16 games) | Futures date: `initial_roster.md`; ledger Entry 9. Term: [OverTheCap](https://overthecap.com/player/ryan-davis/957/) (Jaguars, league year 2013, two years, $900,000). 2012 dates: [Wikipedia](https://en.wikipedia.org/wiki/Ryan_Davis_(defensive_end)). Supported |
+| Jeremy Mincey | DE | 2012 four-year veteran contract; final year 2015 | Under contract | 4+ (entered 2006) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/jeremy-mincey/934/); `initial_cap_sheet.md`. Confirmed |
+| Tyson Alualu | DT | 2010 first-round five-year rookie contract; final year 2014 | Under contract | 3 | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/tyson-alualu/960/); `initial_cap_sheet.md`. Confirmed |
+| C.J. Mosley | DT | 2012 three-year veteran contract; final year 2014 | Under contract | 4+ (entered 2005) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/c-j-mosley/819/) (Jaguars 2012, three years, $7,500,000); `initial_cap_sheet.md`. Supported |
+| Jeris Pendleton | DT | 2012 Jacksonville seventh-round four-year rookie contract; final year 2015 | Under contract | Unresolved (not status-determining; 4 games in 2012) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/jeris-pendleton/2662/); `initial_cap_sheet.md`. Confirmed |
+| Russell Allen | LB | 2012 three-year contract; final year 2014 | Under contract | 4 (2009-2012) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/russell-allen/956/); `initial_cap_sheet.md`. Supported |
+| Paul Posluszny | LB | 2011 six-year veteran contract; final year 2016 | Under contract | 4+ (entered 2007) | Accrues in branch (on 53 for 16 games; out from Week 13 on independent medical hold, never moved to a reserve list) | [OverTheCap](https://overthecap.com/player/paul-posluszny/954/); `initial_cap_sheet.md`. Confirmed |
+| Julian Stanford | LB | 2012 Jacksonville undrafted contract, three years; final year 2014 | Under contract | 1 (2012: 16 games) | Accrues in branch (on 53 for 16 games) | [Spotrac](https://www.spotrac.com/nfl/detroit-lions/julian-stanford-11178/) (three years, $1,445,000, per search-result text); `initial_roster.md`. Supported |
+| Mike Harris | CB | 2012 Jacksonville sixth-round four-year rookie contract; final year 2015 | Under contract | 1 | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/mike-harris/952/); `initial_cap_sheet.md`. Confirmed |
+| Dwight Lowery | S | 2012 four-year veteran contract; final year 2015 | Under contract | 4+ (entered 2008) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/dwight-lowery/926/); `initial_cap_sheet.md`. Confirmed |
+| Chris Prosinski | S | 2011 fourth-round four-year rookie contract; final year 2014 | Under contract | 2 | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/chris-prosinski/921/); `initial_cap_sheet.md`. Confirmed |
+| Josh Scobee | K | Four-year contract agreed July 16, 2012 after the franchise tag; final year 2015 | Under contract | 4+ (entered 2004) | Accrues in branch (on 53 for 16 games) | [Big Cat Country, July 16, 2012](https://www.bigcatcountry.com/2012/7/16/3163301/josh-scobee-contract-jaguars); [NFL.com, July 2012](https://www.nfl.com/news/josh-scobee-jacksonville-jaguars-reach-four-year-deal-09000d5d82a95c52). Confirmed (closes the citation gap noted in `initial_cap_sheet.md`) |
+| Bryan Anger | P | 2012 third-round four-year rookie contract; final year 2015 | Under contract | 1 | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/bryan-anger/917/); `initial_cap_sheet.md`. Confirmed |
+
+### Unresolved inherited contracts
+
+| Player | Pos. | What is known | March 11, 2014 status | Accrued seasons through 2012 | 2013 branch accrual | Source and label |
+|---|---|---|---|---|---|---|
+| John Parker Wilson | QB | Reserve/future contract signed December 30, 2012; length not recovered | **Unresolved**. If it expires after 2013: RFA with 3 accrued, UFA with 4 | Unresolved: Atlanta's third quarterback in 2009 and 2010 and re-signed July 30, 2011; 2012 on Jacksonville's practice squad except October 27-29. Supported range 2 or 3 | Accrues in branch (on 53 for 16 games) | Futures date: `initial_roster.md`; ledger Entry 9. Career dates: [Wikipedia](https://en.wikipedia.org/wiki/John_Parker_Wilson). Unresolved |
+| Jonathan Grimes | RB | 2012 Houston undrafted player; signed off Houston's practice squad by the Jets in October 2012; claimed off waivers from Houston by Jacksonville on December 21, 2012 (the claim carries the Houston contract). Branch register: not a March 12, 2013 free agent. Length not recovered | **Unresolved**. If it expires after 2013: ERFA (at most 2 accrued) | Unresolved (0 or 1; 2012 full-pay games with the Jets, Houston and Jacksonville not counted) | Accrues in branch (on 53 for 16 games) | [Fox News, December 2012](https://www.foxnews.com/sports/jaguars-claim-rb-jonathan-grimes-off-waivers-from-texans-adding-depth-to-thin-backfield); [New York Jets, 2012](https://www.newyorkjets.com/news/rb-grimes-signed-from-hou-practice-squad-8383288); `state/04_Roster_and_Staff_Register.md`. Unresolved |
+| Montell Owens | FB | Contract extension signed October 4, 2011. Search-result text disagrees on its structure (a three-year $9.275M extension versus a figure similar to an earlier three-year $6.675M deal), so the final league year is not established | **Unresolved**. If it expires after 2013: UFA | 4+ (Jacksonville 2006-2012) | Accrues in branch (on 53 for 16 games) | [ProFootballTalk, October 2011](https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jaguars-sign-montell-owens-to-extension); [Spotrac](https://www.spotrac.com/nfl/chicago-bears/montell-owens-4176/). Unverified term |
+| Jeremy Cain | LS | New Jacksonville contract reported February 2011, terms undisclosed at the time. Spotrac search text shows a three-year $3.0M Jacksonville deal, not dated in the result | **Unresolved**. If the three-year deal dates from 2011 it expires after 2013: UFA | 4+ (entered 2004; Jacksonville long snapper through 2012) | Accrues in branch (on 53 for 16 games) | [NFL.com, February 2011](https://www.nfl.com/news/jaguars-sign-long-snapper-cain-to-new-contract-09000d5d81e77777); [Spotrac](https://www.spotrac.com/nfl/chicago-bears/jeremy-cain-6060/). Unverified term |
+
+## 4. Practice squad (8)
+
+All eight were waived at the August 31 cutdown, cleared waivers and signed branch practice-squad contracts on September 1, 2013 (`preseason/final_roster_cuts.md`; ledger Entry 27). A waiver ends the player's earlier contract, so Tyler Bray's May 2 rookie contract and the December 30, 2012 reserve/future contracts of Will Ta'ufo'ou and Brandon King no longer apply. Practice-squad seasons do not accrue.
+
+A practice-squad contract runs only through the club's season. No branch reserve/future contract has been recorded for any of the eight at February 2, 2014. Clubs may sign reserve/future contracts once their own season is over (`library/2014_league_calendar_and_financial_rules.md`, C1; the exact CBA wording of the practice-squad expiry moment is Unverified there and here). Unless Jacksonville signs one of these players to a reserve/future contract, he is not under Jacksonville contract on March 11, 2014 and is free to sign with any club; he is not a Jacksonville RFA or ERFA.
+
+| Player | Pos. | Contract | March 11, 2014 status | Source and label |
+|---|---|---|---|---|
+| Tyler Bray | QB | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | `preseason/final_roster_cuts.md`. Confirmed |
+| Richard Murphy | RB | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | Same. Confirmed |
+| Will Ta'ufo'ou | FB | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | Same. Confirmed |
+| Jerrell Jackson | WR | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | Same. Confirmed |
+| Jerome Long | DT | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | Same. Confirmed |
+| D'Anthony Smith | DT | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | Same. Confirmed |
+| Brandon King | DB | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | Same. Confirmed |
+| Antwon Blake | S | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | Same. Confirmed |
+
+## 5. Two-pass verification record
+
+### Pass 1: research
+
+The first pass matched all 61 names against the OverTheCap historical-contract export, took branch contracts from the branch records listed in section 1, and searched named outlets for every inherited player the export did not cover (John Parker Wilson, Jonathan Grimes, Montell Owens, Cameron Bradfield, Austin Pasztor, Mike Brewster, Julian Stanford, Mike Brown, Josh Scobee, Jeremy Cain). Accrued-season counts came from sourced roster and transaction dates. The NFL roster-feed "years of experience" field was tested and rejected as an accrual source: it equals season minus entry year (for example, Meester 13 and Babin 9 in 2013), not credited seasons.
+
+### Pass 2: separate verification
+
+Each status-determining claim was searched again from scratch rather than taken from the pass 1 citation.
+
+- **Confirmed on re-check:** Henne (two years, signed March 14, 2012); Monroe (2009 five-year rookie deal, final year 2013); Cousins (2012 four-year rookie deal); Stanford and Brewster (three-year 2012 undrafted deals); Rutland (2011 games and three-year term); Clemons (late-November 2012 practice-squad signing, consistent with the two-year $870,000 row).
+- **Corrected, Maurice Jones-Drew:** the export lists his 2009 deal as four years, which would end in 2012. Contemporaneous 2012 holdout reporting describes a five-year, $31M deal with 2012 and 2013 remaining. The final year is 2013 (UFA), not 2012; the length label follows the 2012 reporting.
+- **Corrected, C.J. Wilson:** pass 1 assumed a three-year seventh-round deal ending in 2012. The export shows a 2010 four-year contract, and his reported 2013 cap number of $642,590 equals the branch's $630,000 base plus one quarter of a $50,354 signing bonus. The final year is 2013, matching the branch trade record, and he is a UFA with 4 accrued seasons after the branch season.
+- **Corrected, Uche Nwaneri:** pass 1 read the export (signed 2010, five years) as ending in 2014. The re-check found reporting that treats it as a five-year extension on top of a rookie deal that ran through 2010, which would end in 2015. The final year is now marked disputed. He is under contract for 2014 either way.
+- **Confirmed and upgraded, Josh Scobee:** `initial_cap_sheet.md` flagged a missing contemporaneous citation for his 2012 terms. Two July 16, 2012 reports confirm the four-year agreement (final year 2015).
+- **Not resolved by the re-check:** Owens (sources disagree on the extension), Cain (term undisclosed at signing; the Spotrac figure is undated), John Parker Wilson (futures length not reported), Jonathan Grimes (contract carried through two clubs; length not reported). All four stay Unresolved.
+- **Single-source items kept as Unverified:** the 2013 final year for Mike Brown and Austin Pasztor, and Reisner's expiry, rest on one March 6, 2014 report plus the absence of their names from Jacksonville's March 2013 own-free-agent list.
+
+## 6. What this register does not decide
+
+- It does not tender, extend, re-sign, release or trade anyone, and it assigns no tender level. Those are Caldwell decisions, taken on or before March 11, 2014 (library C10).
+- It changes no cap figure. The 2014 cap effects of the contracts above still have to be reconciled for the 2014 league year.
+- Branch 2013 performance and injuries are not evaluated here. Status comes only from contract terms and accrual.

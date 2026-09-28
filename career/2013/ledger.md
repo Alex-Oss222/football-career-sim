@@ -1893,3 +1893,51 @@ This archive was appended late. It was written at this February 2, 2014 checkpoi
 - **Next phase and first event:** the 2014 offseason. The next league events are the franchise and transition tag window (February 17 to March 3, 2014), the Combine (February 19-25) and the opening of the 2014 league year on March 11, 2014 (`library/2014_league_calendar_and_financial_rules.md`, gated as recorded there).
 
 **Commit closed - Canonical update - February 2, 2014 - Super Bowl XLVIII closed; 2013 season archived - canonical through February 2, 2014, after Super Bowl XLVIII**
+
+## Entry 68: 2014 season set up (no clock advance)
+
+**Effective canonical state:** February 2, 2014, after Super Bowl XLVIII (the master date does not move)
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - February 2, 2014 - 2014 season set up`
+**Preceding global package checkpoint:** `Canonical update - February 2, 2014 - Super Bowl XLVIII closed; 2013 season archived`
+
+**Decision.** The user asked to "set up for 2014 season", and said not to run exit interviews yet. This entry creates the 2014 records. It advances no clock, changes no roster, contract or staff fact, and runs no phase.
+
+**Created.**
+- **`career/2014/README.md`:** the season index.
+- **`career/2014/calendar.md`:** Jacksonville's 2014 calendar with each league date's public gate, from the new sourced library file `library/2014_league_calendar_and_financial_rules.md` (two-pass; WebFetch blocked, search-result text only; no real 2014 transaction or outcome; two outcome-bearing URL slugs withheld).
+- **`career/2014/draft/draft_order.md`:** the 2014 draft order, generated from the closed receipts by `runtime/draft_order.py` and `scripts/render_draft_order.py`. `validate_repository.py` checks it is current; tests are in `tests/test_draft_order.py`.
+- **`career/2014/schedule/opponents.md`:** Jacksonville's 2014 opponents, derived from the 2014 formula and the branch standings.
+- **`career/2014/offseason/contract_status_register.md`:** each controlled player's status when the league year opens (two-pass research; branch contracts override real history; no real 2014 decision recorded).
+
+**2014 draft order (branch).**
+- **Jacksonville:** 26th in each round, as a Divisional loser (10-6, strength of schedule .477). Its second-round selection belongs to Washington (the Cousins trade).
+- **Top and bottom:** San Francisco (2-13-1) holds the first selection; Buffalo, the champion, the 32nd.
+- **Ties that survived strength of schedule:**
+  - Oakland and Miami (both 7-9, .533): Miami wins the conference tiebreaker on conference record, so Oakland picks 11th and Miami 12th.
+  - Green Bay and Indianapolis (both 8-8, .479, different conferences): a coin flip the league holds before the draft. It is pending and not invented.
+- **Still open:** compensatory selections (gated to March 24, 2014) come from the branch's own 2014 free-agency cycle. Other clubs' traded 2014 selections are not reconciled.
+
+**2014 opponents.**
+- **Home:** Tennessee, Indianapolis, Houston, Cleveland, Pittsburgh, the Giants, Buffalo (AFC East second place), and Dallas (at Wembley Stadium, November 9).
+- **Away:** Tennessee, Indianapolis, Houston, Baltimore, Cincinnati, Philadelphia, Washington, and San Diego (AFC West second place).
+- **Dates:** gated to the April 23, 2014 schedule release.
+
+**Contract status at the March 11, 2014 league-year turn (research register; Caldwell decides tenders and re-signings).**
+
+| Status | Count | Players |
+|---|--:|---|
+| Under contract | 35 | |
+| Unrestricted free agents | 8 | Henne, Jones-Drew, Monroe, Meester, Marks, C.J. Wilson, Ball, Brent Grimes |
+| Restricted free agents | 3 | Bradfield, Reisner, Rutland |
+| Exclusive-rights free agents | 3 | Clemons, Mike Brown, Pasztor |
+| Practice-squad contracts expiring | 8 | |
+| Unresolved | 4 | John Parker Wilson, Jonathan Grimes, Owens, Cain (contract lengths not recovered) |
+
+**Held for the user.**
+- End-of-season exit interviews.
+- The 2014 phase plans.
+- The 2014 free-agency, draft and trade boards (AGENTS.md "Run the [year] offseason cycle").
+- The engine fixes for timeouts, the two-minute warning, kneel-downs and the fourth-down display, before any 2014 game.
+
+**Commit closed - Canonical update - February 2, 2014 - 2014 season set up - canonical through February 2, 2014, after Super Bowl XLVIII**

@@ -268,6 +268,16 @@ def validate(root=ROOT):
                 'standings.md is stale; run render_standings.py')
     except (OSError, ValueError, KeyError, TypeError, NameError) as exc:
         errors.append(f'Standings cannot be rebuilt from receipts: {exc}')
+    # The 2014 draft order is generated from the same receipts once the
+    # Super Bowl has closed.
+    draft_order = root/'career/2014/draft/draft_order.md'
+    if draft_order.exists():
+        try:
+            from scripts.render_draft_order import render as render_draft_order
+            require(draft_order.read_text() == render_draft_order(),
+                    'career/2014/draft/draft_order.md is stale; run render_draft_order.py')
+        except (OSError, ValueError, KeyError, TypeError) as exc:
+            errors.append(f'Draft order cannot be rebuilt from receipts: {exc}')
     try:
         from scripts.render_box_score import stale_blocks
         receipt_dir = root/'career/2013/stats/game_receipts'
