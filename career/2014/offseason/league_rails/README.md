@@ -1,6 +1,6 @@
 # 2014 league rails
 
-**Function:** the working folder for the historical league rails rule: the other 31 clubs' rosters follow real history, while Jacksonville's come only from the branch. Rule: AGENTS.md, "Historical league rails"; Document 2 §4.5. Method: [method.md](method.md). Adopted in ledger Entry 77.
+**Function:** the working folder for the historical league rails rule: the other 31 clubs' rosters follow real history, while Jacksonville's come only from the branch. Rule: AGENTS.md, "Historical league rails"; Document 2 §4.5. Method: [method.md](method.md). Adopted in ledger Entry 78.
 **Status:** DRAFT. The structure is built and pre-filled; the user is completing rosters and contracts.
 
 | Record | What it holds | Status |

@@ -1,6 +1,6 @@
 # Historical league rails: method
 
-**Adopted:** September 28, 2026, by the user (AGENTS.md, "Historical league rails"; Document 2 §§4.3a and 4.5; ledger Entry 77).
+**Adopted:** September 28, 2026, by the user (AGENTS.md, "Historical league rails"; Document 2 §§4.3a and 4.5; ledger Entry 78).
 **Purpose:** keep the branch's league the same league of players the real NFL had from 2014, while Jacksonville's roster and contracts come only from the branch.
 
 ## 1. What rides the rails

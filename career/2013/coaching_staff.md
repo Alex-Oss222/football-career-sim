@@ -23,9 +23,9 @@ This file is the **current operating staff register**. The hiring sequence, decl
 |---|---|---|---|
 | Offense | Mike Tice coordinates the unit and weekly offensive process | **Alex Stone calls offensive plays** | Final offensive menu, game-plan approval, situational direction, game management |
 | Defense | Romeo Crennel | **Romeo Crennel calls the defense** | Final team principles, coordinator supervision, major situational/game-management decisions |
-| Special teams | Alan Lowry (2013 season); **vacant from January 12, 2014** | **Alan Lowry directed the kicking game in 2013**; until a replacement is hired, direction returns to Stone (Document 3: material departures return control) | Final team-level priorities, roster/use decisions within Stone's authority, game-management interface |
+| Special teams | Alan Lowry (2013 season); **vacant from January 12, 2014** | **Alan Lowry directed the kicking game in 2013**; Stone directs the unit on an interim basis under Entry 75 until a replacement is hired (Document 3 section 4, reconciled by Entry 77) | Final team-level priorities, roster/use decisions within Stone's authority, game-management interface |
 
-The delegation above is real delegation. Stone does not hire Crennel or Lowry and then secretly call their units snap by snap.
+The delegation above is real delegation. Crennel remains the defensive caller. Lowry directed special teams during his Jacksonville appointment; Stone's interim assignment starts with the recorded January 12 vacancy, not a retroactive takeover of Lowry's work.
 
 ## 2. Executed assistant contract register
 
@@ -69,9 +69,9 @@ These totals are the executed register. For changes after execution, see below.
 
 After this change, the scheduled 2014 assistant salary for the eleven remaining coaches is **$6,950,000** before any replacement hire, and the total scheduled salary for 2013-2015 is **$17,075,000**. Frank Bush interviewed with Indianapolis for its defensive coordinator job on January 14 with Jacksonville's permission and was not hired; his contract is unchanged.
 
-These totals cover the twelve football coaches listed here. They do **not** include Stone, strength and conditioning, athletic training, medical personnel, scouting, front-office staff, support staff or later assistants added through an authorized transaction.
+The original totals cover the twelve football coaches listed in the executed register; the revised 2014 total covers the eleven who remain. They do **not** include Stone, strength and conditioning, athletic training, medical personnel, scouting, front-office staff, support staff or later assistants added through an authorized transaction.
 
-Assistant compensation is a club operating expense and does **not** count against the NFL player salary cap.
+Assistant compensation is a club operating expense and does **not** count against the NFL player salary cap. The $6,950,000 is scheduled salary, not the staff-budget ceiling or uncommitted hiring money. Document 3 section 3.1 records a funded staff-budget commitment but no numeric ceiling; replacement terms and available spending require reconciliation within that commitment.
 
 ### Market-calibration source
 
@@ -273,7 +273,7 @@ Drake came from a long Chicago tenure and brought extensive NFL/college receiver
 - insert/lead-block responsibilities;
 - formation/motion flexibility;
 - red-zone and short-yardage tight-end work;
-- special-teams coordination for tight ends where Lowry needs them.
+- special-teams coordination for tight ends with the current unit lead, Stone during the vacancy.
 
 Stone's own playing background at tight end does not make Zernhelt a ceremonial hire. Zernhelt owns the room's daily teaching.
 
@@ -423,7 +423,7 @@ Oden recommends roles. He does not independently guarantee starting jobs.
 **Contract:** 2 seasons, $1.225M total; $600K in 2013; ended with his move.  
 **Reports to:** Stone.
 
-Lowry is paid at a coordinator rate because the kicking game is its own phase, not an assistant duty folded into another room.
+Lowry's executed salary reflected a coordinator role responsible for the whole kicking game. Stone now covers that workload alongside his head-coach and offensive-calling duties. This interim assignment does not appoint another assistant or establish a permanent combined role.
 
 #### Responsibilities
 
@@ -440,7 +440,7 @@ Lowry is paid at a coordinator rate because the kicking game is its own phase, n
 - special-teams situational planning;
 - game-day special-teams decisions inside Stone's overall game management.
 
-Lowry may strongly influence the final roster because special-teams value matters at the bottom of the roster, but final player decisions remain with the authorities established elsewhere.
+The special-teams lead supplies bottom-of-roster evaluations; final player decisions remain with the authorities established elsewhere. The duties above currently sit with Stone and transfer only through an authorized appointment and delegation.
 
 ## 7. Staff collaboration rules
 
@@ -450,7 +450,7 @@ The three phase leads do not operate separate franchises.
 
 - Tice and Stone reconcile offensive personnel, protection and run-game priorities.
 - Crennel presents the defensive plan and any roster/schematic problems that require head-coach attention.
-- Lowry identifies bottom-of-roster special-teams requirements early enough to matter in personnel discussions.
+- The special-teams lead, currently Stone, identifies bottom-of-roster special-teams requirements early enough to matter in personnel discussions.
 - Position coaches bring evidence from film, practice and meetings rather than hidden player ratings.
 
 ### Personnel input

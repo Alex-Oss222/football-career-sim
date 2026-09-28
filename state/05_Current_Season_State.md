@@ -1,10 +1,10 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2014-FEB02-LEAGUE-RAILS-STATE-53`
-**Supersedes:** `JAX-2014-FEB02-EXIT-INTERVIEWS-STATE-52`
+**Version:** `JAX-2014-FEB02-LEAGUE-RAILS-STATE-54`
+**Supersedes:** `JAX-2014-FEB02-STAFF-RECONCILIATION-STATE-53`
 **Snapshot effective:** February 2, 2014, after Super Bowl XLVIII (Buffalo 31, Minnesota 20); the 2013 season is complete and archived.
-**Last reconciled:** September 28, 2026; season-ledger Entry 77.
+**Last reconciled:** September 28, 2026; season-ledger Entry 78.
 **Global package checkpoint:** `Canonical update - February 2, 2014 - Historical league rails adopted (2014 onward)`
 
 ## Effective source-version manifest
@@ -13,9 +13,9 @@
 |---|---|---|
 | Document 1 | `358ccf4feac40830055bae5e4cbd84151536ab9e` | Active foundation source |
 | Document 2 | `f25e462b4e0478e6b641957e39560d7dcb3502e0` | Active foundation source |
-| Document 3 | `38e0ce21e9cf1b62f8d4b9c281955facdaf07b57` | Active foundation source |
-| Document 4 | `JAX-2014-FEB02-COACHING-CAROUSEL-REGISTER-35`; closed by Entry 75 | Controlled 53, all active, practice squad, roles and availability at the season's close; special teams coordinator vacant |
-| Document 6 | 2013 ledger through Entry 77 | 2013 season complete; phase archives in Entry 67; 2014 setup in Entry 68; kernels 2014.1 and 2014.2 in Entries 69-70; season honours in Entry 71; kernel 2014.3 and the engine assessment in Entry 72; Super Bowl MVP and Pro Bowl in Entry 73; season review with Khan and Caldwell in Entry 74; January 2014 coaching carousel in Entry 75; exit interviews in Entry 76; historical league rails adopted in Entry 77 |
+| Document 3 | `c1a3e60a4e9f3dbfd98c47b4ca85a4b551f1c440` | Active foundation source |
+| Document 4 | `JAX-2014-FEB02-STAFF-RECONCILIATION-REGISTER-36`; closed by Entry 77 | Controlled 53, all active, practice squad, roles and availability at the season's close; special teams coordinator vacant |
+| Document 6 | 2013 ledger through Entry 78 | 2013 season complete; phase archives in Entry 67; 2014 setup in Entry 68; kernels 2014.1 and 2014.2 in Entries 69-70; season honours in Entry 71; kernel 2014.3 and the engine assessment in Entry 72; Super Bowl MVP and Pro Bowl in Entry 73; season review with Khan and Caldwell in Entry 74; January 2014 coaching carousel in Entry 75; exit interviews in Entry 76; staff authority and planning reconciliation in Entry 77; historical league rails adopted in Entry 78 |
 
 ## 1. Master clock and competition position
 
@@ -77,9 +77,10 @@ League awards (`career/2013/awards/`): Weeks 1-8 and September backfilled (Entry
 The 2013 season is complete and archived (Entry 67): Jacksonville 10-6, 1-1 in the postseason; Buffalo won Super Bowl XLVIII. The next Jacksonville football event belongs to the 2014 offseason.
 
 - **Held for the user:** the five 2014 phase plans (folders created; the user writes them). The exit interviews' open program decisions and staff findings feed them (`career/2013/exit_interviews/README.md`).
-- **Historical league rails (Entry 77):** from the 2014 league year the other 31 clubs' rosters follow real history on real dates (signings, trades, releases, retirements, draft, Week 1 charts); Jacksonville's roster and contracts come only from the branch, except that real retirements apply league-wide. Free agents Jacksonville pursues are decided by a market draw against the real contract; draft availability follows the real pick number. Draft rosters for all 31 clubs are in `career/2014/offseason/league_rails/` for the user to complete. Open check: any real retirement by a Jacksonville player dated on or before February 2, 2014.
+- **Historical league rails (Entry 78):** from the 2014 league year the other 31 clubs' rosters follow real history on real dates (signings, trades, releases, retirements, draft, Week 1 charts); Jacksonville's roster and contracts come only from the branch, except that real retirements apply league-wide. Free agents Jacksonville pursues are decided by a market draw against the real contract; draft availability follows the real pick number. Draft rosters for all 31 clubs are in `career/2014/offseason/league_rails/` for the user to complete. Open check: any real retirement by a Jacksonville player dated on or before February 2, 2014.
 - **Exit interviews (Entry 76):** held January 13-14, 2014 with all 61 players (13 main core in full, 27 core in structured reports, 21 summarized). No promise was made and no role, roster, contract or medical state changed.
 - **Season review (Entry 74):** Khan and Caldwell retained Stone for 2014 on his existing contract after the January 15, 2014 review (`career/2013/season_review/owner_and_gm_review.md`). Caldwell's first 2014 measures: the scoring margin and the quarterback's ball security.
+- **Staff reconciliation (Entry 77):** Document 3 now reflects the vacant special-teams coordinator post and Stone's existing interim direction from January 12. Stone retains offensive calling, Crennel remains defensive caller, and no emergency successor for Stone is assigned. The replacement plan awaits selected targets and offer terms. The $6,950,000 is scheduled assistant salary, not a budget ceiling; position-to-coordinator interview permission is voluntary club policy under the 2013-14 rules.
 - **Coaching carousel (Entry 75):** resolved retroactively under the sourced 2013-14 rules and a weighted method committed before the draw (`career/2014/offseason/staff_changes/`). Five clubs changed head coaches by February 2 (Atlanta, Cincinnati, Denver, Indianapolis, San Francisco); Buffalo's and Minnesota's decisions are deferred past the Super Bowl. Alan Lowry left on January 12 to become Atlanta's head coach, so the special teams coordinator job is vacant; Frank Bush interviewed for Indianapolis's defensive coordinator job and was not hired. Replacement targets await the user (`staff_plan.md`); scheduled 2014 assistant salary is $6,950,000 for eleven coaches before any replacement.
 - **2014 setup (Entry 68):** `career/2014/` holds the 2014 calendar with its gates, the generated draft order (Jacksonville 26th in each round; its second-round selection is Washington's), the derived opponents and the contract-status register (8 unrestricted, 3 restricted and 3 exclusive-rights free agents, 4 unresolved). The next league events are the tag window (February 17), the Combine (February 19-25) and the league year (March 11).
 - **Engine:** kernel 2014.1 (Entry 69) tracks timeouts, conditions late draws on them, keeps kneel drives in their start zone and publishes goal-to-go distances. The two-minute warning and play clock remain embedded in real drive durations. Kernel 2014.2 (Entry 70) recalibrates the late-game draw: category weights conditioned on the start zone, and late cells borrowing feasible drives from the same need instead of masking a category; the late mix by score situation now tracks 2012.
