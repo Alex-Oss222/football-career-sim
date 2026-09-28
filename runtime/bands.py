@@ -156,6 +156,11 @@ def audit(receipts):
 #   and the 2013.7 adoption entry). Detection only, never grounds to rerun.
 # - current (kernel 2013.7 onward, from the first slate after Week 8): every
 #   row, including the field-position rows and the 17 spot and label classes.
+#   The current cohort is split again by exact kernel version
+#   (current_cohorts): kernel 2013.7 receipts (Weeks 9-10, including the
+#   Week 10 overtime defect) stay their own cohort; kernel 2013.8 (the 2013
+#   overtime correction) starts a new one. Regulation is unchanged, so the
+#   2013.7 known detections carry over to 2013.8 by the same registry.
 # Tolerances are three standard errors at the observed sample, not constants:
 # 3*sqrt(p(1-p)/n) for rates, 3*sqrt(lambda/n) for per-team-game counts and
 # 3*sd/sqrt(n) for means, with the 2012 sd from the artifact.
@@ -204,10 +209,13 @@ KNOWN_DETECTIONS = {
         "clock-expired drives per team game": _H1_FINAL,
     },
 }
+# Kernel 2013.8 changes overtime only; the first-half redirect and its
+# detections are unchanged.
+KNOWN_DETECTIONS["2013.8"] = dict(KNOWN_DETECTIONS["2013.7"])
 
 
 def known_detections(cohort):
-    """{metric: note} for a kernel cohort ("2013.6" or "2013.7"); empty otherwise."""
+    """{metric: note} for a kernel cohort ("2013.6", "2013.7" or "2013.8"); empty otherwise."""
     return dict(KNOWN_DETECTIONS.get(cohort, {}))
 
 
@@ -239,6 +247,20 @@ def cohorts(receipts):
         else:
             legacy.append(receipt)
     return legacy, kernel_2013_6, current
+
+
+def current_cohorts(current):
+    """[(kernel version, receipts)] for the current cohort, split by exact
+    kernel version in version order; audits never mix two versions."""
+    by_version = {}
+    for receipt in current:
+        by_version.setdefault(str(receipt.get("kernel_version")), []).append(receipt)
+    def key(version):
+        try:
+            return tuple(int(v) for v in version.split("."))
+        except ValueError:
+            return (float("inf"),)
+    return [(version, by_version[version]) for version in sorted(by_version, key=key)]
 
 
 def _drives(receipt):

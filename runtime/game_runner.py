@@ -11,6 +11,7 @@ from .player_evidence import normalize_players, serialize_roster
 from .play_detail import canonical_call_sheet
 from .usage import lineup_errors
 from .call_families import sheet_errors
+from .rules import RULES
 
 ENTROPY_DOMAIN = b"football-career-sim/event-entropy/v1\0"
 
@@ -34,12 +35,21 @@ def build_game_packet(event_id, snapshot, home, away, *, venue="home", weather="
     if not normalize_players(home) or not normalize_players(away):
         raise ValueError("each club requires an available, roster-bound participant")
     for team in (home, away):
+        # 2013 game-day rule: at most 46 active players (the other seven of
+        # the 53 are declared inactive). Fail closed before the private event
+        # is journaled; which players are inactive is a football decision
+        # made upstream (Stone for Jacksonville, depth order for others).
+        actives = len(normalize_players(team))
+        if actives > RULES.active_limit:
+            raise ValueError(
+                f"{team.team_id} TeamInput has {actives} game-day actives; the 2013 limit is {RULES.active_limit}"
+            )
         missing = lineup_errors(normalize_players(team))
         if missing:
             raise ValueError(
                 f"{team.team_id} TeamInput is not a legal game-day unit: " + "; ".join(missing)
             )
-        # Kernel 2013.7 labels follow the ball carrier: every call must name
+        # Kernel 2013.7+ labels follow the ball carrier: every call must name
         # who it can describe (explicitly or through the 2013 family map).
         # Fail closed here, before the private event is journaled.
         undeclared = sheet_errors(getattr(team, "offensive_call_sheet", ()) or ())

@@ -5,9 +5,9 @@ import unittest
 
 import copy
 
-from runtime import usage
+from runtime import KERNEL_VERSION, usage
 from runtime.bands import (KNOWN_DETECTION_BOUND, audit, audit_drive_model, audit_field_position,
-                           coherence, cohorts, known_detections, known_status)
+                           coherence, cohorts, current_cohorts, known_detections, known_status)
 from runtime.kernel import TeamInput, resolve_game, validate_result
 from runtime.play_detail import DRIVE_SUMMARY_FIELDS, check_ledger
 from runtime.statbook import make_receipt
@@ -20,7 +20,8 @@ from synthetic_games import SAMPLE_SIZE, sample
 # known detections by the user's decision of September 27, 2026. All four come
 # from the first-half half-final redirect. Any other graded row going OUTSIDE
 # fails, and so does a known detection beyond KNOWN_DETECTION_BOUND x tolerance.
-KNOWN_DETECTIONS = known_detections("2013.7")
+# Kernel 2013.8 changes overtime only and carries the 2013.7 registry over.
+KNOWN_DETECTIONS = known_detections(KERNEL_VERSION)
 
 
 
@@ -77,12 +78,13 @@ class UsageBandTests(unittest.TestCase):
             "punts per team game (drive-ending)", "FGM per team game",
             "drive share: clock", "clock-expired drives per team game"})
         self.assertEqual(set(known_detections("2013.6")), {"punts per team game (drive-ending)"})
+        self.assertEqual(known_detections("2013.8"), known_detections("2013.7"))
         self.assertEqual(known_detections("legacy"), {})
         _, rows = audit_drive_model(self.receipts)
         metrics = {row[0] for row in rows}
         self.assertTrue(set(KNOWN_DETECTIONS) <= metrics)
         for row in rows:
-            status = known_status(row, "2013.7")
+            status = known_status(row, KERNEL_VERSION)
             if row[0] in KNOWN_DETECTIONS:
                 self.assertIn("known detection", status)
                 self.assertNotIn("beyond", status)
@@ -91,7 +93,7 @@ class UsageBandTests(unittest.TestCase):
         # A known detection far outside its bound is still flagged.
         metric, observed, centre, tolerance, _ = next(r for r in rows if r[0] == "FGM per team game")
         far = (metric, centre + 3 * tolerance, centre, tolerance, "OUTSIDE")
-        self.assertIn("beyond", known_status(far, "2013.7"))
+        self.assertIn("beyond", known_status(far, KERNEL_VERSION))
         self.assertEqual(known_status(far, "2013.6"), "OUTSIDE")
 
     def test_field_position_rows(self):
@@ -102,8 +104,8 @@ class UsageBandTests(unittest.TestCase):
         self.assertTrue(any(row[0].startswith("punt share of possessions ending") for row in rows))
         self.assertEqual([row for row in graded if row[4] != "WITHIN"], [])
         for metric, observed, centre, _, status in rows:
-            print("[2013.7 sample] %s: %s (2012 %s) %s" % (
-                metric, "—" if observed is None else round(observed, 4), round(centre, 4), status))
+            print("[%s sample] %s: %s (2012 %s) %s" % (
+                KERNEL_VERSION, metric, "—" if observed is None else round(observed, 4), round(centre, 4), status))
 
     def test_doctored_late_punt_is_detected(self):
         """A punt in a zero-punt late cell (trailing 1-8 inside the last 2:00)
@@ -146,7 +148,14 @@ class UsageBandTests(unittest.TestCase):
             receipt["kernel_version"] = "2013.6"
         old, kernel_2013_6, current = cohorts(legacy + previous + self.receipts[30:40])
         self.assertEqual((len(old), len(kernel_2013_6), len(current)), (20, 10, 10))
-        self.assertTrue(all(r["kernel_version"] == "2013.7" for r in current))
+        self.assertTrue(all(r["kernel_version"] == KERNEL_VERSION for r in current))
+        # The field-position era splits again by exact kernel version: 2013.7
+        # receipts never join the 2013.8 cohort.
+        older = copy.deepcopy(self.receipts[40:45])
+        for receipt in older:
+            receipt["kernel_version"] = "2013.7"
+        split = current_cohorts(cohorts(older + self.receipts[45:50])[2])
+        self.assertEqual([(v, len(r)) for v, r in split], [("2013.7", 5), ("2013.8", 5)])
 
     def test_depth_chart_orders_usage(self):
         carries = {}

@@ -1,4 +1,4 @@
-"""The sourced 2012 field-position drive model used by kernel 2013.7.
+"""The sourced 2012 field-position drive model used by kernels 2013.7-2013.8.
 
 The artifact (library/data/2012_nfl_field_position_model.json) is built by
 scripts/research/build_2012_field_position_model.py from 2012 regular-season
@@ -360,6 +360,20 @@ def _static(pool_id, category, spot):
     return ()
 
 
+def ends_window(regime, category, t):
+    """True when a tuple replays as the drive that runs out the window.
+
+    In regulation a "final" 2012 drive was the last of its half or game, so it
+    ran out the clock. In overtime (kernel 2013.8) a 2012 drive was also
+    "final" when its score ended the game (a walk-off touchdown or field
+    goal); that is not the period expiring. Under the 2013 overtime rule only
+    a clock-expired drive ends the period, so in the "ot" regime every other
+    tuple replays with its own scaled seconds and must fit the window."""
+    if not t[T["final"]]:
+        return False
+    return regime != "ot" or category == "clock"
+
+
 def _dynamic(tuples, category, regime, window):
     """Clock filters of the regime (see the module docstring and README)."""
     if regime == "h1_neutral" or regime == "h1_final":
@@ -369,7 +383,7 @@ def _dynamic(tuples, category, regime, window):
     out = []
     bucket = h1_bucket_index(window)
     for t in tuples:
-        if t[T["final"]]:
+        if ends_window(regime, category, t):
             if h1_bucket_index(t[T["t0"]]) != bucket:
                 continue
             left = 0
@@ -517,7 +531,7 @@ def draw_drive(rng, spot, half, window, diff, edge, diagnostics):
         diagnostics["fallback_zero_tuple"] = diagnostics.get("fallback_zero_tuple", 0) + 1
         return Drive("clock", ZERO_TUPLE, window, True, cell, regime, fallback="zero")
     category, t = drawn
-    if t[T["final"]]:
+    if ends_window(regime, category, t):
         return Drive(category, t, window, True, cell, regime, fallback=fallback)
     return Drive(category, t, scaled_seconds(t), False, cell, regime, fallback=fallback)
 
