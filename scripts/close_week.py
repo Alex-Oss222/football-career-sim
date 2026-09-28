@@ -82,12 +82,17 @@ def main():
         if game["event_id"] not in results:
             result = run_game(team_input(game["home_input"]), team_input(game["away_input"]),
                               event_id=game["event_id"], snapshot=snapshot, client=client,
-                              venue=game["venue"])
+                              venue=game["venue"], game_type=game.get("game_type", "regular"))
             results[game["event_id"]] = json.loads(json.dumps(result, default=encode))
             results_path.write_text(json.dumps(results), encoding="utf-8")
             print("closed %s" % game["event_id"])
 
-    receipts_dir = ROOT / "career/2013/stats/game_receipts"
+    # Postseason receipts live apart so standings, the regular-season statbook,
+    # awards and the band audit stay regular-season only (runtime.postseason).
+    postseason_week = any(g.get("game_type") == "postseason" for g in package["games"])
+    receipts_dir = ROOT / ("career/2013/stats/postseason_receipts" if postseason_week
+                           else "career/2013/stats/game_receipts")
+    receipts_dir.mkdir(parents=True, exist_ok=True)
     for game in package["games"]:
         detail = "full" if PROTAGONIST in (game["away"], game["home"]) else "compact_stats"
         receipt = make_receipt(results[game["event_id"]], week=args.week,

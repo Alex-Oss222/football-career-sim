@@ -260,7 +260,9 @@ def validate(root=ROOT):
     try:
         from scripts.render_box_score import stale_blocks
         receipt_dir = root/'career/2013/stats/game_receipts'
-        for output in sorted((root/'career/2013/regular_season').glob('*/output.md')):
+        outputs = sorted((root/'career/2013/regular_season').glob('*/output.md'))
+        outputs += sorted((root/'career/2013/postseason').glob('*/output.md'))
+        for output in outputs:
             for event_id in stale_blocks(output, receipt_dir):
                 require(False, f'{output.relative_to(root)}: box score for {event_id} '
                                'differs from its receipt; run render_box_score.py --write')
@@ -271,7 +273,9 @@ def validate(root=ROOT):
     # each call names who it can describe, explicitly or through the family map.
     try:
         from runtime.call_families import sheet_errors
-        for sheet_path in sorted((root/'career/2013/regular_season').glob('*/call_sheet.json')):
+        sheets = sorted((root/'career/2013/regular_season').glob('*/call_sheet.json'))
+        sheets += sorted((root/'career/2013/postseason').glob('*/call_sheet.json'))
+        for sheet_path in sheets:
             sheet = json.loads(sheet_path.read_text()).get('offensive_call_sheet', [])
             for problem in sheet_errors(sheet):
                 require(False, f'{sheet_path.relative_to(root)}: {problem}')

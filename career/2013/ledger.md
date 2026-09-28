@@ -1570,3 +1570,48 @@ A snap no call fits carries the generic label. Source and tests: `runtime/README
 **Next competitive event:** AFC Wild Card at Kansas City, January 4-5, 2014. **Not simulated.**
 
 **Commit closed - Canonical update - December 29, 2013 - Week 17 at Indianapolis closed - canonical through December 29, after Week 17**
+
+## Entry 61: Postseason bracket built; Wild Card slate set
+
+**Effective canonical state:** December 29, 2013, after Week 17
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - December 29, 2013 - Postseason bracket built (Wild Card slate set)`
+**Preceding global package checkpoint:** `Canonical update - December 29, 2013 - Week 17 at Indianapolis closed`
+
+**Decision.** At the user's instruction ("build for wildcard and for each round of the playoff - you decide realistic to 2013"), the pipeline now builds and closes all four postseason rounds under the 2013 format. No kernel change: the postseason runs on kernel 2013.10.
+
+**Format.** Sourced in `library/2013_postseason_format_and_schedule.md` (two-pass; no real postseason result recorded; two source URL slugs that named real Super Bowl participants are withheld).
+- Six clubs per conference; division winners seeded 1-4, wild cards 5-6; seeds 1-2 have byes.
+- Wild Card: 3 hosts 6, 4 hosts 5.
+- Divisional: reseeded, with the 1 seed hosting the lowest survivor.
+- Conference: the higher seed hosts.
+- Super Bowl XLVIII: MetLife Stadium, with the AFC champion as designated home team.
+- Overtime: 15-minute periods until a winner (kernel 2013.8 onward).
+- Game-day actives: 46.
+- Weekly awards: none in the postseason.
+
+**Slot rule, fixed before any postseason draw.** Each branch game takes the real 2013-14 date, kickoff and network of the slot with the same conference and seed matchup (`library/data/2013_postseason_slots.json`). The rule never looks at a result.
+
+**Pipeline.**
+- Rounds are weeks 18-21 (`runtime/postseason.py`).
+- `build_week_inputs.py` and `close_week.py` run them like regular-season weeks.
+- Receipts go to `career/2013/stats/postseason_receipts/`, so standings, the regular-season statbook, awards and the audit are unchanged.
+- The bracket page is `career/2013/postseason/README.md`.
+- Tests: `tests/test_postseason.py`. A trial package build for week 18 passed the four-game exclusivity gate and was discarded before any draw.
+
+**Wild Card slate (week 18):**
+
+| Date and kickoff (ET) | Round | Game | Network |
+|---|---|---|---|
+| Sat. Jan. 4, 4:35 p.m. | AFC 5 at 4 | Jacksonville at Kansas City | NBC |
+| Sat. Jan. 4, 8:10 p.m. | NFC 6 at 3 | Dallas at New Orleans | NBC |
+| Sun. Jan. 5, 1:05 p.m. | AFC 6 at 3 | Buffalo at Pittsburgh | CBS |
+| Sun. Jan. 5, 4:40 p.m. | NFC 5 at 4 | Tampa Bay at Philadelphia | FOX |
+
+The Jets, Tennessee, Minnesota and St. Louis have byes.
+
+**Known limit carried.** The neutral-site home term (Entry 45) would give the AFC champion the kernel's small home term in the Super Bowl. The fourth-down display defect and the timeout/kneel limitation also remain open; the user has deferred both.
+
+**No game was simulated.**
+
+**Commit closed - Canonical update - December 29, 2013 - Postseason bracket built (Wild Card slate set) - canonical through December 29, after Week 17**

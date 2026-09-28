@@ -1,0 +1,183 @@
+{
+  "season": 2013,
+  "source_doc": "library/2013_postseason_format_and_schedule.md",
+  "note": "Scheduling rails only. No real postseason result is recorded. Wild Card slots are keyed by seed matchup; Divisional slots by host seed (low@1 = lowest surviving seed at the 1 seed, other@2 = the other survivor at the 2 seed); Conference slots by conference with the higher remaining seed hosting. Times are Eastern.",
+  "format": {
+    "teams_per_conference": 6,
+    "division_winner_seeds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "wild_card_seeds": [
+      5,
+      6
+    ],
+    "division_winner_always_above_wild_card": true,
+    "bye_seeds": [
+      1,
+      2
+    ],
+    "wild_card_pairings": [
+      "6@3",
+      "5@4"
+    ],
+    "divisional_reseed": "1 seed hosts the lowest surviving seed; 2 seed hosts the other survivor",
+    "conference_host": "higher remaining seed",
+    "super_bowl_site": "neutral"
+  },
+  "rounds": [
+    {
+      "round": "wild_card",
+      "week": 18,
+      "announced": "2013-12-29",
+      "slots": [
+        {
+          "conference": "AFC",
+          "matchup": "5@4",
+          "date": "2014-01-04",
+          "kickoff_et": "16:35",
+          "network": "NBC"
+        },
+        {
+          "conference": "NFC",
+          "matchup": "6@3",
+          "date": "2014-01-04",
+          "kickoff_et": "20:10",
+          "network": "NBC"
+        },
+        {
+          "conference": "AFC",
+          "matchup": "6@3",
+          "date": "2014-01-05",
+          "kickoff_et": "13:05",
+          "network": "CBS"
+        },
+        {
+          "conference": "NFC",
+          "matchup": "5@4",
+          "date": "2014-01-05",
+          "kickoff_et": "16:40",
+          "network": "FOX"
+        }
+      ]
+    },
+    {
+      "round": "divisional",
+      "week": 19,
+      "announced": "2014-01-05",
+      "slots": [
+        {
+          "conference": "NFC",
+          "matchup": "low@1",
+          "date": "2014-01-11",
+          "kickoff_et": "16:35",
+          "network": "FOX"
+        },
+        {
+          "conference": "AFC",
+          "matchup": "other@2",
+          "date": "2014-01-11",
+          "kickoff_et": "20:15",
+          "network": "CBS"
+        },
+        {
+          "conference": "NFC",
+          "matchup": "other@2",
+          "date": "2014-01-12",
+          "kickoff_et": "13:05",
+          "network": "FOX"
+        },
+        {
+          "conference": "AFC",
+          "matchup": "low@1",
+          "date": "2014-01-12",
+          "kickoff_et": "16:40",
+          "network": "CBS"
+        }
+      ]
+    },
+    {
+      "round": "conference",
+      "week": 20,
+      "announced": "2013-12-29",
+      "announced_note": "Kickoff times and networks by conference were published 2013-12-29; pairings follow the Divisional round.",
+      "slots": [
+        {
+          "conference": "AFC",
+          "matchup": "lower@higher",
+          "date": "2014-01-19",
+          "kickoff_et": "15:00",
+          "network": "CBS"
+        },
+        {
+          "conference": "NFC",
+          "matchup": "lower@higher",
+          "date": "2014-01-19",
+          "kickoff_et": "18:30",
+          "network": "FOX"
+        }
+      ]
+    },
+    {
+      "round": "super_bowl",
+      "week": 21,
+      "name": "Super Bowl XLVIII",
+      "slots": [
+        {
+          "conference": "NFL",
+          "matchup": "NFC@AFC",
+          "date": "2014-02-02",
+          "kickoff_et": "18:30",
+          "network": "FOX",
+          "site": "neutral",
+          "venue": "MetLife Stadium",
+          "city": "East Rutherford, New Jersey"
+        }
+      ]
+    }
+  ],
+  "pro_bowl": {
+    "date": "2014-01-26",
+    "kickoff_et": "19:30",
+    "network": "NBC",
+    "venue": "Aloha Stadium",
+    "city": "Honolulu, Hawaii"
+  },
+  "designated_home_rule": "The AFC champion is the designated home team in odd-numbered seasons (even-numbered Super Bowls, including XLVIII for the 2013 season); the NFC champion in even-numbered seasons.",
+  "postseason_rules": {
+    "overtime": "15-minute periods until a winner; modified sudden death on the first possession; no ties (matches 2013_nfl_playing_rules_for_simulation.md R5)",
+    "active_limit": 46,
+    "weekly_player_of_the_week_awards": false,
+    "weekly_player_of_the_week_awards_label": "unverified: no postseason award found; branch guidance only",
+    "seeding_tiebreakers": "same procedures as regular-season standings"
+  },
+  "unverified": [
+    "Exact announcement hour of the Wild Card and Divisional schedules",
+    "Postseason overtime three-minute intermission and three timeouts per half (single source)",
+    "Designated visitor calls the Super Bowl coin toss (single post-2013 source)",
+    "Absence of postseason Players of the Week (no rule text found)"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/2013%E2%80%9314_NFL_playoffs",
+    "https://fbschedules.com/2013-14-nfl-playoffs-schedule-announced/",
+    "https://fbschedules.com/2013-14-nfl-playoffs-divisional-round-match-ups-set/",
+    "https://fbschedules.com/2014-afc-nfc-championship-games-set/",
+    "https://www.neworleanssaints.com/news/new-orleans-saints-to-play-at-philadelphia-on-saturday-night-at-7-10-p--12305642",
+    "https://www.thephinsider.com/2013/12/29/5255462/nfl-playoff-schedule-2014-wildcard-game-times-set",
+    "https://www.thephinsider.com/2013/12/30/5255774/nfl-playoffs-schedule-2014",
+    "https://www.thephinsider.com/2014/1/5/5277998/nfl-playoffs-2014-schedule-divisional-round-set",
+    "https://www.battleredblog.com/2013/12/29/5255548/2014-nfl-playoff-schedule-wild-card-divisional-round-and-conference",
+    "https://www.bleedinggreennation.com/2013/12/30/5255040/eagles-vs-saints-2014-nfl-playoff-schedule-times-tv-channel-wild-card-weekend",
+    "https://www.arrowheadpride.com/2013/12/29/5254680/chiefs-vs-colts-2014-nfl-playoffs-schedule-times-tv-channel-wild-card-weekend",
+    "https://bleacherreport.com/articles/1912877-nfl-playoff-schedule-2014-complete-guide-and-predictions-for-divisional-round",
+    "https://www.cbc.ca/sports/football/nfl/super-bowl-xlviii-5-things-to-know-1.2520452",
+    "cbssports.com NFL news item (URL slug withheld: it names the real AFC champion)",
+    "https://en.wikipedia.org/wiki/2014_Pro_Bowl",
+    "https://www.nfl.com/news/postseason-overtime-rules-09000d5d81d817d7",
+    "https://en.wikipedia.org/wiki/Third_quarterback_rule"
+  ],
+  "super_bowl_matchup": "NFC@AFC",
+  "designated_home_conference": "AFC"
+}
