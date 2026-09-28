@@ -529,10 +529,48 @@ def _layout(rng, category, terminal, runs, attempts, sacks, kneel_yards, spikes,
     if order is None:
         order = list(range(len(free_index)))
     permutation = [free_index[i] for i in order] + tail
+    rows = _seat_spikes([(kinds[i], completed[i], values[i]) for i in permutation], len(free_index))
     return {"ok": ok, "repaired": repaired and ok,
-            "kinds": [kinds[i] for i in permutation],
-            "completed": [completed[i] for i in permutation],
-            "values": [values[i] for i in permutation]}
+            "kinds": [row[0] for row in rows],
+            "completed": [row[1] for row in rows],
+            "values": [row[2] for row in rows]}
+
+
+def _clock_runs_after(row):
+    """True when the game clock keeps running after this snap: a run, a sack
+    or a completed pass. An incompletion or a spike stops it."""
+    kind, completed, _ = row
+    return kind in ("run", "sack") or (kind in ("att", "catch") and completed)
+
+
+def _seat_spikes(rows, movable):
+    """Kernel 2013.9: a spike only stops a running clock. Every possession
+    starts on a stopped clock (a change of possession is an administrative
+    stoppage, library/2013_nfl_playing_rules_for_simulation.md R14), and an
+    incompletion or a spike stops it again, so a spike may not be a drive's
+    first snap or follow one of those. Each misplaced spike (value 0) moves,
+    within the free prefix, to just after the nearest snap that leaves the
+    clock running, earlier first. Prefix sums are unchanged because a spike
+    gains nothing; no randomness is consumed. A drive with no such snap keeps
+    its spike after the first snap (never first)."""
+    rows = list(rows)
+    for _ in range(movable):
+        bad = next((p for p in range(movable) if rows[p][0] == "spike" and not (
+            p > 0 and _clock_runs_after(rows[p - 1]))), None)
+        if bad is None:
+            break
+        spike = rows.pop(bad)
+        prefix = movable - 1
+        slots = [q for q in range(1, prefix + 1) if _clock_runs_after(rows[q - 1])
+                 and not (q < prefix and rows[q][0] == "spike")]
+        if slots:
+            target = min(slots, key=lambda q: (abs(q - bad), q > bad))
+        else:
+            target = min(1, prefix)
+        rows.insert(target, spike)
+        if not slots:
+            break
+    return rows
 
 
 def apply_drive_detail(

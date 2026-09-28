@@ -212,10 +212,12 @@ KNOWN_DETECTIONS = {
 # Kernel 2013.8 changes overtime only; the first-half redirect and its
 # detections are unchanged.
 KNOWN_DETECTIONS["2013.8"] = dict(KNOWN_DETECTIONS["2013.7"])
+# Kernel 2013.9 changes only where a spike sits in a drive's snap order.
+KNOWN_DETECTIONS["2013.9"] = dict(KNOWN_DETECTIONS["2013.8"])
 
 
 def known_detections(cohort):
-    """{metric: note} for a kernel cohort ("2013.6", "2013.7" or "2013.8"); empty otherwise."""
+    """{metric: note} for a kernel cohort ("2013.6", "2013.7", "2013.8" or "2013.9"); empty otherwise."""
     return dict(KNOWN_DETECTIONS.get(cohort, {}))
 
 

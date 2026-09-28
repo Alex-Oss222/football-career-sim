@@ -101,7 +101,8 @@ class OvertimeRuleTests(unittest.TestCase):
         return result
 
     def test_kernel_version(self):
-        self.assertEqual(KERNEL_VERSION, "2013.8")
+        # 2013.8 introduced these rules; later kernels keep them.
+        self.assertIn(KERNEL_VERSION, ("2013.8", "2013.9"))
         self.assertEqual((RULES.regular_ot_seconds, RULES.postseason_ot_seconds), (900, 900))
 
     def test_opening_field_goal_gives_the_other_club_a_possession(self):

@@ -150,12 +150,12 @@ class UsageBandTests(unittest.TestCase):
         self.assertEqual((len(old), len(kernel_2013_6), len(current)), (20, 10, 10))
         self.assertTrue(all(r["kernel_version"] == KERNEL_VERSION for r in current))
         # The field-position era splits again by exact kernel version: 2013.7
-        # receipts never join the 2013.8 cohort.
+        # receipts never join the current kernel's cohort.
         older = copy.deepcopy(self.receipts[40:45])
         for receipt in older:
             receipt["kernel_version"] = "2013.7"
         split = current_cohorts(cohorts(older + self.receipts[45:50])[2])
-        self.assertEqual([(v, len(r)) for v, r in split], [("2013.7", 5), ("2013.8", 5)])
+        self.assertEqual([(v, len(r)) for v, r in split], [("2013.7", 5), (KERNEL_VERSION, 5)])
 
     def test_depth_chart_orders_usage(self):
         carries = {}
