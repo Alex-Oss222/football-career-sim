@@ -6,8 +6,8 @@
 
 ## Current checkpoint
 
-- **Master date:** February 2, 2014, after Super Bowl XLVIII (2013 season complete; ledger Entry 67; 2014 setup Entry 68; latest closed entry 77, the staff-authority reconciliation; player exit interviews closed in Entry 76).
-- **Jacksonville:** 2013 finished 10-6, 1-1 postseason. 53 active and 8 on the practice squad carry over from the 2013 roster until the league year turns (`career/2013/roster.md` stays the controlled-roster record until the 2014 roster owner is created).
+- **Master date:** February 2, 2014, after Super Bowl XLVIII (2013 season complete; ledger Entry 67; 2014 setup Entry 68; latest closed Entry 79, Meester retired and Allen retirement scheduled; historical league rails adopted in Entry 78; staff-authority reconciliation closed in Entry 77 and player exit interviews in Entry 76).
+- **Jacksonville:** 2013 finished 10-6, 1-1 postseason. 52 active, Brad Meester on Reserve/Retired and 8 on the practice squad after Entry 79 (`career/2013/roster.md` stays the controlled-roster record until the 2014 roster owner is created).
 - **Held for the user:** the five 2014 phase plans; the special teams coordinator replacement plan.
 - **Next league events:** franchise and transition window February 17; Combine February 19-25; the 2014 league year opens March 11, 4:00 p.m. ET.
 
