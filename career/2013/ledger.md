@@ -2228,4 +2228,6 @@ The user's February 2 memo to Caldwell (`career/2014/offseason/stone_to_caldwell
 - **Program decisions** for the 2014 phase plans, listed in the README: examples are the backup defensive caller, the long-term-injury plan, individual classified cutups, how rotation and depth-order evidence is communicated, and the end-of-half punt rules.
 - **Follow-ups dated January 31, 2014:** individual film cutups from the position coaches. Their delivery is not recorded; whether the CBA lets staff send film before April 21 is unsourced.
 
+**Companion manuscript.** The user's researched ownership review and press conference (`career/2013/season_review/stone_2013_review_and_exit_interview.md`, merged into this branch as pull request #122) was written before Entry 75. Its staff passages are corrected to Entry 75, with a dated note at the top: Lowry's departure, Bush's Indianapolis interview and the vacant special teams job. `owner_and_gm_review.md` remains the controlling record.
+
 **Commit closed - Canonical update - February 2, 2014 - 2013 exit interviews recorded (January 13-14) - canonical through February 2, 2014**
