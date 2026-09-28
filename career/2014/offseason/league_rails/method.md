@@ -82,11 +82,18 @@ Later weeks carry forward with branch-generated availability.
 
 ## 8. Work split
 
-- **Built by the branch:**
-  - the rule and this method;
-  - draft club rosters from the 2013 Week 1 units and Over The Cap contract data (`clubs/`, `free_agent_pool.md`);
-  - the draw, pairing and retirement records.
-- **The user completes:**
-  - full rosters, including players off the Week 1 charts and practice squads;
-  - confirmed contract years and 2014 status;
-  - the real dated moves in each club's rails table, as the clock reaches them.
+The merged [FILLING_GUIDE.md](FILLING_GUIDE.md) defines this split. The user is not required to complete the 31 club rosters.
+
+- **Research inputs requested from the user, or completed by the branch on request:**
+  - a dated public retirement source for each of Nwaneri, Rackley, Owens and Rutland, or **no dated source**, leaving VERIFY until a supported date can be applied;
+  - each February 2 free-agency target's 2013 club, position and UFA/RFA/ERFA status before March 11. These nine classifications are now sourced in `free_agent_pool.md`;
+  - the name and position of any additional target, so his status can be checked before pursuit.
+- **The branch completes when the relevant date is reached:**
+  - `fa_draws.md` at each pursued player's real signing date;
+  - `draft_pairing.md` at the May 8-10 draft;
+  - all other clubs' real 2014 Week 1 rosters before the season, under §7;
+  - later retirements as their dates arrive;
+  - Jacksonville and state records after each actual event, through the normal closure workflow.
+- **Optional club-file research:** sourced contract corrections, permitted 2014 status labels and dated real moves under the filling guide. Do not reorder the depth column. Hand-completing all 31 rosters is unnecessary because the Week 1 build replaces them.
+
+The four retirement research results and nine target classifications are recorded without advancing the calendar, applying a new retirement, making an offer or resolving a draw. The remaining contract candidates are still unverified. Do not rerun the roster generator over the researched files.
