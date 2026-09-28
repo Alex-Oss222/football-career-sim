@@ -47,8 +47,8 @@ Each branch game takes the real 2013-14 date, kickoff and network of the slot wi
 | 19 | AFC Divisional (5 at 2) | Sat. Jan. 11, 8:15 p.m., CBS | Jacksonville at Tennessee | **Tennessee 20**, Jacksonville 13 (Entry 64); Jacksonville eliminated | [week_19_jacksonville_at_tennessee/output.md](week_19_jacksonville_at_tennessee/output.md) |
 | 19 | NFC Divisional (4 at 2) | Sun. Jan. 12, 1:05 p.m., FOX | Philadelphia at St. Louis | **Philadelphia 30**, St. Louis 20 | [roundup](../league_results/week_19.md) |
 | 19 | AFC Divisional (6 at 1) | Sun. Jan. 12, 4:40 p.m., CBS | Buffalo at New York Jets | **Buffalo 26**, New York Jets 24 | [roundup](../league_results/week_19.md) |
-| 20 | AFC Championship (6 at 2) | Sun. Jan. 19, 3:00 p.m., CBS | Buffalo at Tennessee | Not started | - |
-| 20 | NFC Championship (4 at 1) | Sun. Jan. 19, 6:30 p.m., FOX | Philadelphia at Minnesota | Not started | - |
-| 21 | Super Bowl XLVIII | Sun. Feb. 2, 2014, 6:30 p.m., FOX, MetLife Stadium | After the conference round | Conditional | - |
+| 20 | AFC Championship (6 at 2) | Sun. Jan. 19, 3:00 p.m., CBS | Buffalo at Tennessee | **Buffalo 34**, Tennessee 3 | [roundup](../league_results/week_20.md) |
+| 20 | NFC Championship (4 at 1) | Sun. Jan. 19, 6:30 p.m., FOX | Philadelphia at Minnesota | **Minnesota 20**, Philadelphia 7 | [roundup](../league_results/week_20.md) |
+| 21 | Super Bowl XLVIII | Sun. Feb. 2, 2014, 6:30 p.m., FOX, MetLife Stadium (neutral) | Minnesota (NFC 1) vs. Buffalo (AFC 6, designated home) | Not started | - |
 
 The Pro Bowl (Sun. Jan. 26, Aloha Stadium) falls in the off week between the conference round and the Super Bowl. It is not simulated.

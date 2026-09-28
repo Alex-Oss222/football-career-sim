@@ -1748,3 +1748,25 @@ They are background games.
 - No other Jacksonville status changed.
 
 **Commit closed - Canonical update - January 12, 2014 - AFC Divisional at Tennessee closed - canonical through January 12, 2014, after the Divisional round**
+
+## Entry 65: Conference championships closed (background)
+
+**Effective canonical state:** January 19, 2014, after the conference championships
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - January 19, 2014 - Conference championships closed`
+**Preceding global package checkpoint:** `Canonical update - January 12, 2014 - AFC Divisional at Tennessee closed`
+
+**Decision.** At the user's instruction ("Finish the playoffs"), the conference round (postseason week 20) closed as a background slate. Jacksonville was eliminated in Entry 64 and supplies no plan.
+
+**Batch.** Both games closed once each under kernel 2013.10 as `postseason` games. They were drawn from the package frozen by `build_week_inputs.py 20` (sha256 `880c16de...`) after the two-game exclusivity gate passed: no Jacksonville-controlled player appeared in either TeamInput. Buffalo dressed Jeff Tuel as its only available quarterback after E.J. Manuel's Divisional injury, under the rule every club gets. Receipts (compact_stats) are in `career/2013/stats/postseason_receipts/`.
+
+**Results.**
+- **AFC:** Buffalo 34, Tennessee 3. Spiller ran 27 times for 214; Buffalo committed no turnover.
+- **NFC:** Minnesota 20, Philadelphia 7. Philadelphia came away empty from the Minnesota 16, 20 and 8.
+- **Roundup:** `career/2013/league_results/week_20.md`.
+
+**Super Bowl XLVIII:** Minnesota (NFC 1) vs. Buffalo (AFC 6), Sun. February 2, 2014, 6:30 p.m. ET, FOX, MetLife Stadium. It is a neutral site, and Buffalo, as the AFC champion, is the designated home team. The user approved fixing the neutral-site home term before this game (Entry 66).
+
+**Jacksonville.** The season is over. Ryan Davis's projected return (January 14, 2014) has passed, so he is cleared under the standard rule; no other status changed.
+
+**Commit closed - Canonical update - January 19, 2014 - Conference championships closed - canonical through January 19, 2014**
