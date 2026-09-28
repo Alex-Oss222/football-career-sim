@@ -2644,5 +2644,152 @@
     "winner_index": 0
    }
   }
+ },
+ "week-16": {
+  "kind": "week",
+  "key": "16",
+  "label": "Week 16",
+  "order": 16,
+  "note": "",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2013-award-week16-afc-offense-v1",
+    "packet_sha256": "23b9b74a7937dfd7753fa28bff639f2b7adac02a95baa8a64df7bbcb16f8464d",
+    "result_ref": "9b7e79f81766e7f108a161b14a68106ce395464ed54780e7b506f817ce87c3a0",
+    "shortlist": [
+     {
+      "player": "Andy Dalton",
+      "team": "Cincinnati Bengals",
+      "score": 39.12
+     },
+     {
+      "player": "Jamaal Charles",
+      "team": "Kansas City Chiefs",
+      "score": 30.2
+     },
+     {
+      "player": "Jake Locker",
+      "team": "Tennessee Titans",
+      "score": 28.28
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-defense": {
+    "event_id": "2013-award-week16-afc-defense-v1",
+    "packet_sha256": "59e05eede37bde2b55cf27c4e0a22f63fdbbc456ce907f092b3f15371ca26821",
+    "result_ref": "73673128337a0a1144d7733e41d9a8ef21156f652c251282a4d63802512efdc3",
+    "shortlist": [
+     {
+      "player": "Eric Weddle",
+      "team": "San Diego Chargers",
+      "score": 24.5
+     },
+     {
+      "player": "Josh Bynes",
+      "team": "Baltimore Ravens",
+      "score": 24.0
+     },
+     {
+      "player": "Rahim Moore",
+      "team": "Denver Broncos",
+      "score": 23.6
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-special_teams": {
+    "event_id": "2013-award-week16-afc-special_teams-v1",
+    "packet_sha256": "a53bbcdd61b674e5cf1b5daf9c7c2d4db6371b07c8daea3bd98196b622416aa5",
+    "result_ref": "5ee3a1b8f293913735ba9c4e626cff4ecd622325e8d7827365c1d13d3471f4ba",
+    "shortlist": [
+     {
+      "player": "Darius Reynaud",
+      "team": "Tennessee Titans",
+      "score": 15.2
+     },
+     {
+      "player": "Ryan Succop",
+      "team": "Kansas City Chiefs",
+      "score": 12.0
+     },
+     {
+      "player": "Cassius Vaughn",
+      "team": "Indianapolis Colts",
+      "score": 11.5
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-offense": {
+    "event_id": "2013-award-week16-nfc-offense-v1",
+    "packet_sha256": "9099d138cda8061832b69d0755b4d6fabcf269765dba6300ebfe2558586f8085",
+    "result_ref": "cefc1e338b28c1f08267320982abd2afce276b3451bf78a24d236d3b22485cc4",
+    "shortlist": [
+     {
+      "player": "Frank Gore",
+      "team": "San Francisco 49ers",
+      "score": 30.4
+     },
+     {
+      "player": "Roddy White",
+      "team": "Atlanta Falcons",
+      "score": 29.0
+     },
+     {
+      "player": "Sam Bradford",
+      "team": "St. Louis Rams",
+      "score": 26.66
+     }
+    ],
+    "winner_index": 1
+   },
+   "NFC-defense": {
+    "event_id": "2013-award-week16-nfc-defense-v1",
+    "packet_sha256": "ad65951c7763ee42dc685fbbf253c3ac7cec50f5cba968cc333a25b97e728de2",
+    "result_ref": "c799442dc846486055fce9926bfdc04d4c04de832c1edb8af0e32817dd280c49",
+    "shortlist": [
+     {
+      "player": "Stephen Tulloch",
+      "team": "Detroit Lions",
+      "score": 43.8
+     },
+     {
+      "player": "Greg Hardy",
+      "team": "Carolina Panthers",
+      "score": 22.6
+     },
+     {
+      "player": "Curtis Lofton",
+      "team": "New Orleans Saints",
+      "score": 22.5
+     }
+    ],
+    "winner_index": 1
+   },
+   "NFC-special_teams": {
+    "event_id": "2013-award-week16-nfc-special_teams-v1",
+    "packet_sha256": "4634e67b0babaee30aeefdb2a5004b0d3bd0212b87e17ca0368b57bc459b0592",
+    "result_ref": "d8ce48cbd0fc533a23c1f64e0a5cd47deb9564110d6173a483cb4f213cb774c3",
+    "shortlist": [
+     {
+      "player": "Darren Sproles",
+      "team": "New Orleans Saints",
+      "score": 13.2
+     },
+     {
+      "player": "Jon Ryan",
+      "team": "Seattle Seahawks",
+      "score": 13.0
+     },
+     {
+      "player": "Johnny Hekker",
+      "team": "St. Louis Rams",
+      "score": 12.5
+     }
+    ],
+    "winner_index": 0
+   }
+  }
  }
 }
