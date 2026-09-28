@@ -2231,3 +2231,44 @@ The user's February 2 memo to Caldwell (`career/2014/offseason/stone_to_caldwell
 **Companion manuscript.** The user's researched ownership review and press conference (`career/2013/season_review/stone_2013_review_and_exit_interview.md`, merged into this branch as pull request #122) was written before Entry 75. Its staff passages are corrected to Entry 75, with a dated note at the top: Lowry's departure, Bush's Indianapolis interview and the vacant special teams job. `owner_and_gm_review.md` remains the controlling record.
 
 **Commit closed - Canonical update - February 2, 2014 - 2013 exit interviews recorded (January 13-14) - canonical through February 2, 2014**
+
+## Entry 77: Historical league rails adopted (2014 onward)
+
+**Effective canonical state:** February 2, 2014 (no clock advance).
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - February 2, 2014 - Historical league rails adopted (2014 onward)`
+**Preceding global package checkpoint:** `Canonical update - February 2, 2014 - 2013 exit interviews recorded (January 13-14)`
+
+**Decision.** The user asked that the branch keep the same league of players as the real NFL. Other clubs' players should retire, sign and be drafted as they really were. The players Stone drafts come to Jacksonville, and the players the real Jaguars drafted go to the clubs that really drafted Stone's picks. Jacksonville's own contracts stay the branch's.
+
+The user's choices:
+- **Free agents Jacksonville pursues:** a market draw.
+- **Retirements:** real dates apply league-wide, Jacksonville included.
+- **Draft availability:** by real pick number.
+- **Where the rule is written:** AGENTS.md and Document 2 both.
+
+**Rule.**
+- AGENTS.md, "Historical league rails", is the controlling text. Its hard-rule line now names this as the one standing exception to the no-hindsight rule.
+- Document 2 adds §§4.3a and 4.5, and §12 notes the override for other clubs.
+- Document 5 carries the new Document 2 hash.
+- The 2013 background library already followed this pattern: real Week 1 charts, draft swaps, Jacksonville control first. The rule now states it in writing for 2014 onward.
+
+**Method.** `career/2014/offseason/league_rails/method.md`:
+- rails become usable only on their real public dates;
+- Jacksonville control overrides every rail except retirement;
+- market draw: the chance Jacksonville signs a free agent is 0 below a money index of 0.80, 0.50 at parity and at most 0.90, drawn through the private service at his real signing date;
+- draft availability by real pick number, with Jacksonville's k-th selection paired with the real Jaguars' k-th selection.
+
+The draw weights are a modelling choice and can be changed until the first draw.
+
+**Built.** At the user's direction, the branch builds the structure and fills what it can; the user completes the rosters and contracts.
+- `clubs/`: 31 draft club rosters, about 1,600 players, from the branch's 2013 Week 1 units, with contract years from Over The Cap data signed in 2013 or earlier. 316 players have no contract in the data, and every end year is unverified.
+- `free_agent_pool.md`: 413 likely pending free agents.
+- Empty records for retirements, the draft pairing and the market draws.
+- No 2014 destination, term, trade or selection is recorded.
+
+**Open check.** Whether any of Jacksonville's 61 controlled players announced a real retirement on or before February 2, 2014. A found retirement applies with its own ledger entry.
+
+**What changed.** No roster, contract, cap, medical or result state.
+
+**Commit closed - Canonical update - February 2, 2014 - Historical league rails adopted (2014 onward) - canonical through February 2, 2014**
