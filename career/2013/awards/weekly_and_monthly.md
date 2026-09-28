@@ -224,3 +224,16 @@ Drawn at the close of Week 11 (Entry 52).
 | NFC Offensive Player | Aaron Rodgers | Green Bay Packers | 37.4 | Aaron Rodgers, Green Bay Packers (37.4); Randall Cobb, Green Bay Packers (29.4); Marshawn Lynch, Seattle Seahawks (26.4) |
 | NFC Defensive Player | Curtis Lofton | New Orleans Saints | 21.5 | Curtis Lofton, New Orleans Saints (21.5); B.J. Raji, Green Bay Packers (19.0); Dan Connor, New York Giants (19.0) |
 | NFC Special Teams Player | Dave Zastudil | Arizona Cardinals | 17.8 | Dave Zastudil, Arizona Cardinals (17.8); Darren Sproles, New Orleans Saints (16.0); LaMichael James, San Francisco 49ers (14.3) |
+
+
+
+### Week 15
+
+| Award | Winner | Team | Score | Shortlist (score) |
+|---|---|---|--:|---|
+| AFC Offensive Player | C.J. Spiller | Buffalo Bills | 33.4 | C.J. Spiller, Buffalo Bills (33.4); Chris Ivory, New York Jets (27.3); Peyton Manning, Denver Broncos (27.1) |
+| AFC Defensive Player | Muhammad Wilkerson | New York Jets | 29.0 | Jerrell Freeman, Indianapolis Colts (29.5); Muhammad Wilkerson, New York Jets (29.0); Brooks Reed, Houston Texans (20.0) |
+| AFC Special Teams Player | Matt Prater | Denver Broncos | 15.0 | Matt Prater, Denver Broncos (15.0); Dustin Colquitt, Kansas City Chiefs (11.8); Shane Lechler, Houston Texans (11.2) |
+| NFC Offensive Player | Reggie Bush | Detroit Lions | 28.8 | Doug Martin, Tampa Bay Buccaneers (35.5); Jay Cutler, Chicago Bears (31.7); Reggie Bush, Detroit Lions (28.8) |
+| NFC Defensive Player | Roman Harper | New Orleans Saints | 24.6 | Roman Harper, New Orleans Saints (24.6); Mark Barron, Tampa Bay Buccaneers (19.3); David Hawthorne, New Orleans Saints (16.6) |
+| NFC Special Teams Player | Matt Bryant | Atlanta Falcons | 14.0 | Matt Bryant, Atlanta Falcons (14.0); Dan Bailey, Dallas Cowboys (11.0); Garrett Hartley, New Orleans Saints (11.0) |

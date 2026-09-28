@@ -1448,3 +1448,37 @@ A snap no call fits carries the generic label. Source and tests: `runtime/README
 **Next competitive event:** December 15 Week 15 vs Buffalo, 1 p.m. ET. **Not simulated.**
 
 **Commit closed - Canonical update - December 5, 2013 - Week 14 vs Houston closed - canonical through December 5, after Week 14**
+
+## Entry 58: Week 15 vs Buffalo closed
+
+**Effective canonical state:** December 15, 2013, after Week 15
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - December 15, 2013 - Week 15 vs Buffalo closed`
+**Preceding global package checkpoint:** `Canonical update - December 5, 2013 - Week 14 vs Houston closed`
+
+**Result.** Buffalo 45, Jacksonville 16 at EverBank Field. Jacksonville is 9-5 and second in the AFC South: Tennessee is also 9-5 and holds the head-to-head tiebreaker (Week 10). Jacksonville is the AFC's fifth seed, a wild card.
+
+**Batch.** All sixteen Week 15 games closed once each under kernel 2013.10. They were drawn from the package frozen by `build_week_inputs.py 15` (sha256 `6f41f90b...`) after the gate passed; Jacksonville's unit was inspected before the close (46 dressed; Wilson, Posluszny and Ball unavailable). The call sheet, depth chart and scouting Phase IV plan were committed before the draw (2c38fa5).
+
+**Inputs.**
+- **Call sheet:** Stone's fifteen calls, with Outside Zone and RB Slow Screen on the sheet.
+- **Linebackers:** Smith and Allen base, Stanford first base reserve, Moore in packages.
+- **Inactives:** unchanged from Week 14.
+
+**Game.**
+- **Buffalo:** ran 33 times for 237 yards. Spiller had 24 carries for 147 and two touchdowns plus a touchdown catch; Manuel threw four touchdowns without an interception.
+- **Turnovers:** Jacksonville lost four. Anderson's fumble (forced and recovered by Lawson at the Jacksonville 12) and interceptions by McKelvin and Rogers each led directly to a Buffalo touchdown; Searcy also intercepted.
+- **Jacksonville offense:** Cousins 23 of 36 for 242 yards, a touchdown and three interceptions; Jones-Drew 134 yards from scrimmage and a touchdown.
+- **Kicking:** Scobee 3 of 3.
+- **Game management:** Stone entered no game-management decision.
+
+**Availability.** No Jacksonville injury. Posluszny out (projected April 5, 2014); Ball out.
+
+**Scouting Phase IV.** The plan is recorded (`scouting/2014_draft/phase_iv_first_coach_reads.md`). No coach read was entered as a conclusion: the repository holds no dated football evidence for any focus prospect, so each question stays OPEN (Harris: no conclusion by directive; Turner: not in the pool). The prospect files carry a December 13 entry saying so. Nothing was invented.
+
+**Statistics, standings and awards.** One full receipt and fifteen compact receipts were kept, 224 of 224 in total. Every graded audit row is WITHIN (2013.10 cohort, 64 team-games). Week 15 awards were drawn; no Jacksonville player was shortlisted.
+
+**Primary records:** `regular_season/week_15_buffalo_at_jacksonville/output.md` and `call_sheet.json`; `league_results/week_15.md`; `stats/game_receipts/week_15_*.json`; `awards/`; `scouting/2014_draft/`; `standings.md`; `depth_chart.json`.
+**Next competitive event:** December 22 Week 16 vs Tennessee, 1 p.m. ET. **Not simulated.**
+
+**Commit closed - Canonical update - December 15, 2013 - Week 15 vs Buffalo closed - canonical through December 15, after Week 15**
