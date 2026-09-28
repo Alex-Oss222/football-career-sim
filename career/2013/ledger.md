@@ -1523,3 +1523,50 @@ A snap no call fits carries the generic label. Source and tests: `runtime/README
 **Next competitive event:** December 29 Week 17 at Indianapolis, 1 p.m. ET. **Not simulated.**
 
 **Commit closed - Canonical update - December 22, 2013 - Week 16 vs Tennessee closed - canonical through December 22, after Week 16**
+
+## Entry 60: Week 17 at Indianapolis closed; regular season complete
+
+**Effective canonical state:** December 29, 2013, after Week 17
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - December 29, 2013 - Week 17 at Indianapolis closed`
+**Preceding global package checkpoint:** `Canonical update - December 22, 2013 - Week 16 vs Tennessee closed`
+
+**Result.** Indianapolis 23, Jacksonville 22 at Lucas Oil Stadium. Jacksonville finishes the regular season 10-6. Tennessee beat Houston 27-21 to finish 10-6, and with the season series split 1-1 it wins the AFC South on division record (4-2 against 3-3). Jacksonville is the AFC's fifth seed, a wild card, and plays at fourth-seeded Kansas City (9-7) on Wild Card weekend, January 4-5, 2014.
+
+**Batch.** All sixteen Week 17 games closed once each under kernel 2013.10. They were drawn from the package frozen by `build_week_inputs.py 17` (sha256 `cb72c870...`) after the gate passed; Jacksonville's unit was inspected before the close (46 dressed; Wilson, Posluszny and Ball unavailable). Indianapolis's Vick Ballard cleared his one-day Week 16 hold under the rule every club gets. The call sheet and depth chart were committed before the draw (69d9e2a).
+
+**Inputs.**
+- **Call sheet:** Stone's fifteen calls, with Draw in 20 personnel and no new family.
+- **Lineup:** no starter rested; inactives unchanged.
+- **Scouting:** the plan's scouting section is handled outside this record at the user's direction.
+
+**Game.**
+- **Jacksonville offense:** no turnover.
+  - Ball control: 32 runs and 38 dropbacks; held the ball 36:35.
+  - Scoring: one touchdown (Grimes, 6 yards) and five Scobee field goals (45, 26, 31, 28, 27).
+  - Cousins: 24 of 35 for 278 yards, no interception, three sacks.
+- **Defense:** Marks strip-sacked Luck at the Colts 8. Indianapolis ran 19 times for 49 yards. Luck completed 28 of 38 for 308 yards and two touchdowns, both to Wayne (11 catches for 114).
+- **The finish:** Jacksonville led 22-16 with the ball at its 20 and 22 seconds left. It ran three times and punted from its 26 with 3 seconds left. Hilton returned the punt 26 yards to the Jacksonville 43, Luck hit Allen for 36 and Wayne for a 7-yard touchdown on the final snap, and the extra point won it.
+- **Game management:** Stone entered no game-management decision.
+
+**Engine limitation (listed since Entry 51; recorded here, not fixed).**
+- **Mechanism:** timeouts and kneel-downs are not simulated snap by snap. A late possession replays a real 2012 drive from the same score-and-time cell (leading by 1-8 with 120 seconds or fewer), and that cell includes real drives that ended in punts because the trailing team still held timeouts.
+- **Why it matters:** the engine cannot tell whether a kneel-out was available, so the Jacksonville possession's clock management and the punt it produced may not reflect what a 2013 club would have done.
+- **Consequence:** it decided a division title.
+- **Decision:** the result stands as closed. A closed result is never rerun, and the decision cannot depend on which club it favoured. The user has deferred engine fixes; this item is listed with the fourth-down display defect (Entry 59) for that work.
+
+**Availability.** No injury for either team. Posluszny out (projected April 5, 2014); Ball out.
+
+**Statistics, standings and awards.**
+- **Receipts:** one full receipt and fifteen compact receipts were kept, 256 of 256 in total, and the regular season is complete. Every graded audit row is WITHIN.
+- **Awards:** Week 17 and December awards were drawn. Scobee was shortlisted for Week 17 special teams and not drawn.
+- **Final seeds:**
+  - AFC: Jets, Tennessee, Pittsburgh, Kansas City, Jacksonville, Buffalo.
+  - NFC: Minnesota, St. Louis, New Orleans, Philadelphia, Tampa Bay, Dallas.
+
+**Postseason prerequisite.** The weekly pipeline reads only the regular-season schedule. Before any Wild Card draw, a postseason slate must be built from the final seeds, with `postseason` game type and continuous overtime. The branch pairings are not the real 2013 pairings, so their date slots cannot be imported and need a stated, result-blind rule.
+
+**Primary records:** `regular_season/week_17_jacksonville_at_indianapolis/output.md` and `call_sheet.json`; `league_results/week_17.md`; `stats/game_receipts/week_17_*.json`; `awards/`; `standings.md`; `depth_chart.json`.
+**Next competitive event:** AFC Wild Card at Kansas City, January 4-5, 2014. **Not simulated.**
+
+**Commit closed - Canonical update - December 29, 2013 - Week 17 at Indianapolis closed - canonical through December 29, after Week 17**

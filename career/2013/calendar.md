@@ -2,14 +2,14 @@
 
 **Function:** Branch-facing schedule and phase control.
 **Historical source:** `../../library/2013_jacksonville_master_calendar.md`.
-**Current branch checkpoint:** December 22, 2013, Week 16 closed (Entry 59).
+**Current branch checkpoint:** December 29, 2013, Week 17 closed; regular season complete (Entry 60).
 **Rule:** Dates/opponents/deadlines are historical rails. Attendance, transactions, performance and game results are branch events.
 
 ## Current checkpoint
 
-- Completed through: **December 22, Week 16 vs Tennessee (won 38-27)**.
-- Controlled 53 (53 active); practice squad 8; preseason record 2-2; regular-season record 10-5.
-- Next competitive event: **December 29 Week 17 at Indianapolis, 1 p.m. ET: NOT SIMULATED**.
+- Completed through: **December 29, Week 17 at Indianapolis (lost 23-22)**; regular season complete.
+- Controlled 53 (53 active); practice squad 8; preseason record 2-2; regular-season record 10-6 (final).
+- Next competitive event: **AFC Wild Card at Kansas City, January 4-5, 2014 (slot not yet set): NOT SIMULATED**.
 - Alan Ball out (Week 10; projected return January 22, 2014); A.J. Bouye cleared (Week 11 injury; November 26); Paul Posluszny out (Week 13; independent medical hold; projected return April 5, 2014); Travis Kelce cleared (Week 13 minor injury; December 3); Rackley limited (minor); C.J. Wilson out. Pasztor and Mosley available from their recovered projections (Entry 46). Games ran under kernel 2013.6 in Weeks 4-8 (Entry 39); kernel 2013.7 in Weeks 9-10 (Entry 48); kernel 2013.8 in Weeks 11-12 (Entry 51); kernel 2013.9 in Week 13 (Entry 54); kernel 2013.10 from Week 14 (Entry 56). League awards: `awards/` (Entry 47).
 
 ## 2013 branch schedule
@@ -68,8 +68,8 @@
 | **Dec. 5** | W14 vs Houston, 8:25 p.m. | [Week 14 output](regular_season/week_14_houston_at_jacksonville/output.md) | Complete: won 21-20 (generation 2; Entry 57) |
 | **Dec. 15** | W15 vs Buffalo, 1 p.m. | [Week 15 output](regular_season/week_15_buffalo_at_jacksonville/output.md) | Complete: lost 45-16 |
 | **Dec. 22** | W16 vs Tennessee, 1 p.m. | [Week 16 output](regular_season/week_16_tennessee_at_jacksonville/output.md) | Complete: won 38-27 |
-| Dec. 29 | W17 at Indianapolis, 1 p.m. | [regular-season week index](regular_season/README.md) | Future |
-| Jan. 4-5, 2014 | Wild Card Weekend, if qualified | postseason engine | Conditional |
+| **Dec. 29** | W17 at Indianapolis, 1 p.m. | [Week 17 output](regular_season/week_17_jacksonville_at_indianapolis/output.md) | Complete: lost 23-22 |
+| Jan. 4-5, 2014 | Wild Card Weekend: at Kansas City (AFC 5 at 4) | postseason slate not yet built | Qualified; future |
 | Jan. 11-12 | Divisional Playoffs, if qualified | postseason engine | Conditional |
 | Jan. 19 | AFC/NFC Championships, if qualified | postseason engine | Conditional |
 | Feb. 2 | Super Bowl XLVIII, if qualified | postseason engine | Conditional |
