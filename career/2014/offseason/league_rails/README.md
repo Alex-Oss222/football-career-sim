@@ -11,6 +11,7 @@
 | [retirements.md](retirements.md) | Real retirements by real date, league-wide, Jacksonville included | Empty: fill by date |
 | [draft_pairing.md](draft_pairing.md) | Jacksonville's selections, real availability and the swap partner | Empty until the draft (May 8-10, 2014) |
 | [fa_draws.md](fa_draws.md) | Each market draw for a free agent Jacksonville pursues | Empty until March 11, 2014 |
+| [FILLING_GUIDE.md](FILLING_GUIDE.md) | What the user fills, what the branch fills, and what never to enter | Read first |
 
 **Builder:** `scripts/research/build_league_rails_rosters.py` (reads the downloaded `historical_contracts.csv.gz` from nflverse; only contracts signed in 2013 or earlier). Re-running it overwrites the club files, so rerun it only before the user edits them.
 
