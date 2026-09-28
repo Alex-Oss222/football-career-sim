@@ -2791,5 +2791,299 @@
     "winner_index": 0
    }
   }
+ },
+ "week-17": {
+  "kind": "week",
+  "key": "17",
+  "label": "Week 17",
+  "order": 17,
+  "note": "",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2013-award-week17-afc-offense-v1",
+    "packet_sha256": "7818c7bd08749472a260d79ea7fce5e28d973e28db1bbee991e61427977afce3",
+    "result_ref": "c7b7e76935ebd4591edb0e6502c6076682dc2241452553652e34ec7e894082ef",
+    "shortlist": [
+     {
+      "player": "Bilal Powell",
+      "team": "New York Jets",
+      "score": 28.9
+     },
+     {
+      "player": "Tom Brady",
+      "team": "New England Patriots",
+      "score": 25.82
+     },
+     {
+      "player": "Ben Roethlisberger",
+      "team": "Pittsburgh Steelers",
+      "score": 23.92
+     }
+    ],
+    "winner_index": 1
+   },
+   "AFC-defense": {
+    "event_id": "2013-award-week17-afc-defense-v1",
+    "packet_sha256": "0744ad31ed1d979692771d4b78825ccd4b23cfa30d235bcf31d974fa6c873b11",
+    "result_ref": "cf4855d25ba952c735b0aec71b10b07ede3f2c450a0004cffabee157618d90e3",
+    "shortlist": [
+     {
+      "player": "Brian Cushing",
+      "team": "Houston Texans",
+      "score": 24.0
+     },
+     {
+      "player": "Reshad Jones",
+      "team": "Miami Dolphins",
+      "score": 17.9
+     },
+     {
+      "player": "Nigel Bradham",
+      "team": "Buffalo Bills",
+      "score": 17.7
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-special_teams": {
+    "event_id": "2013-award-week17-afc-special_teams-v1",
+    "packet_sha256": "ffec11dcf4d379b8b7f1a67c5fed68e0bbe6fde7bd30b140f85f91026b80d788",
+    "result_ref": "efb4d0948c1178b3382c4f62142cc40f515cc3680c73cd07bd02751ae93ac59d",
+    "shortlist": [
+     {
+      "player": "Marquise Goodwin",
+      "team": "Buffalo Bills",
+      "score": 21.6
+     },
+     {
+      "player": "Spencer Lanning",
+      "team": "Cleveland Browns",
+      "score": 17.5
+     },
+     {
+      "player": "Josh Scobee",
+      "team": "Jacksonville Jaguars",
+      "score": 16.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-offense": {
+    "event_id": "2013-award-week17-nfc-offense-v1",
+    "packet_sha256": "8b65f04d1d77aeea01818de325d4eed19a47cfdbcb6bddb64cd2dbea45d128de",
+    "result_ref": "38fd3f2d1a540c48411557d9415d534a321c56990f800832b35674dc625b219c",
+    "shortlist": [
+     {
+      "player": "DeAngelo Williams",
+      "team": "Carolina Panthers",
+      "score": 36.1
+     },
+     {
+      "player": "David Wilson",
+      "team": "New York Giants",
+      "score": 34.2
+     },
+     {
+      "player": "LeSean McCoy",
+      "team": "Philadelphia Eagles",
+      "score": 29.6
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2013-award-week17-nfc-defense-v1",
+    "packet_sha256": "0de82925ef2770cc2b0f99d4d06057a5177d57285d29b3e5106da57a4d74e881",
+    "result_ref": "b26a73f7830f47bc38db110bb3e2fc77d51f833e7ed8870bdd7cf1b9d8a7e25c",
+    "shortlist": [
+     {
+      "player": "Mark Barron",
+      "team": "Tampa Bay Buccaneers",
+      "score": 20.9
+     },
+     {
+      "player": "Nick Fairley",
+      "team": "Detroit Lions",
+      "score": 20.5
+     },
+     {
+      "player": "Ian Williams",
+      "team": "San Francisco 49ers",
+      "score": 19.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-special_teams": {
+    "event_id": "2013-award-week17-nfc-special_teams-v1",
+    "packet_sha256": "e1e11f666df19bfae5ef4b2534d3ce7e26b63681cb94fe90e02f6b253e7590f1",
+    "result_ref": "e643425e433b2ebafd4898e8b4139b1d67e942ff9281d794f2a5fd7446082590",
+    "shortlist": [
+     {
+      "player": "Dwayne Harris",
+      "team": "Dallas Cowboys",
+      "score": 20.6
+     },
+     {
+      "player": "Graham Gano",
+      "team": "Carolina Panthers",
+      "score": 17.0
+     },
+     {
+      "player": "Jacquizz Rodgers",
+      "team": "Atlanta Falcons",
+      "score": 14.0
+     }
+    ],
+    "winner_index": 0
+   }
+  }
+ },
+ "month-December": {
+  "kind": "month",
+  "key": "December",
+  "label": "December (Weeks 13-17)",
+  "order": 104,
+  "note": "",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2013-award-december-afc-offense-v1",
+    "packet_sha256": "d18037ac9f8df83859eaab93eae0ef2aa9db5fb2bd8ed98c7a7d380b548bd917",
+    "result_ref": "6b9ed576d2dc26c6ff7389920a0d2c0995682aaf4c2887ad9a976a6d1b4978c1",
+    "shortlist": [
+     {
+      "player": "Andy Dalton",
+      "team": "Cincinnati Bengals",
+      "score": 135.36
+     },
+     {
+      "player": "Peyton Manning",
+      "team": "Denver Broncos",
+      "score": 100.58
+     },
+     {
+      "player": "E.J. Manuel",
+      "team": "Buffalo Bills",
+      "score": 98.22
+     }
+    ],
+    "winner_index": 1
+   },
+   "AFC-defense": {
+    "event_id": "2013-award-december-afc-defense-v1",
+    "packet_sha256": "fa3a9916d3450e90722ff91ad6bb39f2bb1a8cae8468d492b331bbaea8e87e93",
+    "result_ref": "b57708b71e1803bf7c945e37ddde610e8aaa5bd7772233067207d52ec8f18536",
+    "shortlist": [
+     {
+      "player": "Vontaze Burfict",
+      "team": "Cincinnati Bengals",
+      "score": 89.6
+     },
+     {
+      "player": "Rahim Moore",
+      "team": "Denver Broncos",
+      "score": 73.6
+     },
+     {
+      "player": "Jerrell Freeman",
+      "team": "Indianapolis Colts",
+      "score": 71.5
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-special_teams": {
+    "event_id": "2013-award-december-afc-special_teams-v1",
+    "packet_sha256": "5929a5bec5f4cb868759aa33577f12ab6420757af0b0fb812f7c567f95ce21f7",
+    "result_ref": "a8f35bb27337c87d893409acd29c1fcef7e6d0b8d4eea7c1988521fecb276cbb",
+    "shortlist": [
+     {
+      "player": "Rob Bironas",
+      "team": "Tennessee Titans",
+      "score": 53.0
+     },
+     {
+      "player": "Mike Nugent",
+      "team": "Cincinnati Bengals",
+      "score": 49.0
+     },
+     {
+      "player": "Dan Carpenter",
+      "team": "Buffalo Bills",
+      "score": 47.0
+     }
+    ],
+    "winner_index": 2
+   },
+   "NFC-offense": {
+    "event_id": "2013-award-december-nfc-offense-v1",
+    "packet_sha256": "3f3945016c98ff9214e1723c8b19b3cc0764818de17a65abce121c2a0ff5c67e",
+    "result_ref": "c6c59482c3a0d73799608206cb4d49f0661f49fbc354aea81cc05305bd7e6736",
+    "shortlist": [
+     {
+      "player": "Aaron Rodgers",
+      "team": "Green Bay Packers",
+      "score": 112.98
+     },
+     {
+      "player": "Robert Griffin",
+      "team": "Washington Redskins",
+      "score": 99.52
+     },
+     {
+      "player": "Tony Romo",
+      "team": "Dallas Cowboys",
+      "score": 95.72
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2013-award-december-nfc-defense-v1",
+    "packet_sha256": "45ba74e655a31b4732ad82cc7b98bb259f8ebc8e1ef870b2dd24dbb7870c4551",
+    "result_ref": "756e1ed4f0102d7541b7b6d991dd4b5d760f067ef80c4ef99cf2e3a8d8eebb90",
+    "shortlist": [
+     {
+      "player": "Stephen Tulloch",
+      "team": "Detroit Lions",
+      "score": 84.3
+     },
+     {
+      "player": "Curtis Lofton",
+      "team": "New Orleans Saints",
+      "score": 73.5
+     },
+     {
+      "player": "Perry Riley",
+      "team": "Washington Redskins",
+      "score": 73.5
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-special_teams": {
+    "event_id": "2013-award-december-nfc-special_teams-v1",
+    "packet_sha256": "c1926f12298804229d1f3027107c946dacd164b1392c8d362933ed8bcb04890f",
+    "result_ref": "c7d20d39b17bfaf17090024be6ce8dd3cad7a7e557b5c868dd790b8baef565be",
+    "shortlist": [
+     {
+      "player": "Dwayne Harris",
+      "team": "Dallas Cowboys",
+      "score": 50.0
+     },
+     {
+      "player": "Stephen Hauschka",
+      "team": "Seattle Seahawks",
+      "score": 49.0
+     },
+     {
+      "player": "Darren Sproles",
+      "team": "New Orleans Saints",
+      "score": 47.2
+     }
+    ],
+    "winner_index": 0
+   }
+  }
  }
 }

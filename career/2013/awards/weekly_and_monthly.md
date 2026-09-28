@@ -43,6 +43,19 @@ Drawn at the league's October 31 announcement date, during Week 9 (Entry 49).
 
 
 
+### December (Weeks 13-17)
+
+| Award | Winner | Team | Score | Shortlist (score) |
+|---|---|---|--:|---|
+| AFC Offensive Player | Peyton Manning | Denver Broncos | 100.6 | Andy Dalton, Cincinnati Bengals (135.4); Peyton Manning, Denver Broncos (100.6); E.J. Manuel, Buffalo Bills (98.2) |
+| AFC Defensive Player | Vontaze Burfict | Cincinnati Bengals | 89.6 | Vontaze Burfict, Cincinnati Bengals (89.6); Rahim Moore, Denver Broncos (73.6); Jerrell Freeman, Indianapolis Colts (71.5) |
+| AFC Special Teams Player | Dan Carpenter | Buffalo Bills | 47.0 | Rob Bironas, Tennessee Titans (53.0); Mike Nugent, Cincinnati Bengals (49.0); Dan Carpenter, Buffalo Bills (47.0) |
+| NFC Offensive Player | Aaron Rodgers | Green Bay Packers | 113.0 | Aaron Rodgers, Green Bay Packers (113.0); Robert Griffin, Washington Redskins (99.5); Tony Romo, Dallas Cowboys (95.7) |
+| NFC Defensive Player | Stephen Tulloch | Detroit Lions | 84.3 | Stephen Tulloch, Detroit Lions (84.3); Curtis Lofton, New Orleans Saints (73.5); Perry Riley, Washington Redskins (73.5) |
+| NFC Special Teams Player | Dwayne Harris | Dallas Cowboys | 50.0 | Dwayne Harris, Dallas Cowboys (50.0); Stephen Hauschka, Seattle Seahawks (49.0); Darren Sproles, New Orleans Saints (47.2) |
+
+
+
 ## Weekly awards
 
 ### Week 1
@@ -250,3 +263,16 @@ Drawn at the close of Week 11 (Entry 52).
 | NFC Offensive Player | Roddy White | Atlanta Falcons | 29.0 | Frank Gore, San Francisco 49ers (30.4); Roddy White, Atlanta Falcons (29.0); Sam Bradford, St. Louis Rams (26.7) |
 | NFC Defensive Player | Greg Hardy | Carolina Panthers | 22.6 | Stephen Tulloch, Detroit Lions (43.8); Greg Hardy, Carolina Panthers (22.6); Curtis Lofton, New Orleans Saints (22.5) |
 | NFC Special Teams Player | Darren Sproles | New Orleans Saints | 13.2 | Darren Sproles, New Orleans Saints (13.2); Jon Ryan, Seattle Seahawks (13.0); Johnny Hekker, St. Louis Rams (12.5) |
+
+
+
+### Week 17
+
+| Award | Winner | Team | Score | Shortlist (score) |
+|---|---|---|--:|---|
+| AFC Offensive Player | Tom Brady | New England Patriots | 25.8 | Bilal Powell, New York Jets (28.9); Tom Brady, New England Patriots (25.8); Ben Roethlisberger, Pittsburgh Steelers (23.9) |
+| AFC Defensive Player | Brian Cushing | Houston Texans | 24.0 | Brian Cushing, Houston Texans (24.0); Reshad Jones, Miami Dolphins (17.9); Nigel Bradham, Buffalo Bills (17.7) |
+| AFC Special Teams Player | Marquise Goodwin | Buffalo Bills | 21.6 | Marquise Goodwin, Buffalo Bills (21.6); Spencer Lanning, Cleveland Browns (17.5); Josh Scobee, Jacksonville Jaguars (16.0) |
+| NFC Offensive Player | DeAngelo Williams | Carolina Panthers | 36.1 | DeAngelo Williams, Carolina Panthers (36.1); David Wilson, New York Giants (34.2); LeSean McCoy, Philadelphia Eagles (29.6) |
+| NFC Defensive Player | Mark Barron | Tampa Bay Buccaneers | 20.9 | Mark Barron, Tampa Bay Buccaneers (20.9); Nick Fairley, Detroit Lions (20.5); Ian Williams, San Francisco 49ers (19.0) |
+| NFC Special Teams Player | Dwayne Harris | Dallas Cowboys | 20.6 | Dwayne Harris, Dallas Cowboys (20.6); Graham Gano, Carolina Panthers (17.0); Jacquizz Rodgers, Atlanta Falcons (14.0) |

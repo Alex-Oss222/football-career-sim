@@ -20,7 +20,7 @@ Each weekly `output.md` carries its game's box score, generated from the same re
 
 ## Current coverage
 
-Through Week 16: two hundred forty of two hundred forty game receipts (Weeks 1-2 kernel 2013.4, Week 3 kernel 2013.5, Weeks 4-8 kernel 2013.6, Weeks 9-10 kernel 2013.7, Weeks 11-12 kernel 2013.8, Week 13 kernel 2013.9, Weeks 14-16 kernel 2013.10); coverage complete. Every graded band-audit row is WITHIN the 2012 bands, and every ledger-coherence count is zero.
+Through Week 17: two hundred fifty-six of two hundred fifty-six game receipts (regular season complete) (Weeks 1-2 kernel 2013.4, Week 3 kernel 2013.5, Weeks 4-8 kernel 2013.6, Weeks 9-10 kernel 2013.7, Weeks 11-12 kernel 2013.8, Week 13 kernel 2013.9, Weeks 14-17 kernel 2013.10); coverage complete. Every graded band-audit row is WITHIN the 2012 bands, and every ledger-coherence count is zero.
 
 ## Rebuild
 
