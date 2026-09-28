@@ -1,0 +1,108 @@
+{
+ "procedure": "coaching-carousel-2014-v1",
+ "procedure_tag": "v1",
+ "authority": "User instruction of September 28, 2026: research the rules on other clubs asking to interview Jacksonville's coordinators and position coaches, make sure they are followed, and build a weighted way for the staff to be assessed and resolved without the user forcing it, including who would be asked.",
+ "rules_source": "library/2014_coaching_hiring_and_anti_tampering_rules.md. Its section 8 is enforced as written. No Unverified item is treated as a rule; where the method needs an answer an Unverified item leaves open (W11: whether a Wild Card winner could refuse, rather than only schedule, a head-coach interview inside the January 5-12 window), it sets a stated default policy instead.",
+ "scope": "The January 2014 cycle, December 29, 2013 to February 2, 2014, resolved retroactively at the branch date of February 2, 2014. Stage 1 covers every club except Jacksonville, whose head coach was retained by the January 15 review (ledger Entry 74). Stages 2 to 5 resolve interest in Jacksonville's twelve assistants. Other clubs' assistants are not modelled one by one: they are the field Jacksonville's assistants compete against.",
+ "stage_1_head_coach_changes": {
+  "rule": "Each club's head coach changes with the probability of his base-rate cell in library/data/2012_hc_change_base_rates.json (real 2002-2012 club-seasons keyed to the coach who opened the season, smoothed): the branch 2013 regular-season wins (ties half) and his tenure with the club, or the playoff cell by tenure if the club reached the branch postseason. A coach past his first season whose club missed the branch postseason takes the split cell for whether the club reached the real 2011 or 2012 playoffs (pre-branch public record; in the 2002-2012 data recent playoffs lowered the change rate, for example 0.19 against 0.54 at 5-6 wins in a coach's second or third season). One draw per club, clubs in alphabetical order.",
+  "tenure": "Consecutive seasons the coach opened for the club through 2013 (nfldata games.csv). Override: Sean Payton, New Orleans, seventh season (2006-2011 and 2013; the 2012 season, which he missed under a league suspension, neither counts nor breaks the run, as in the base-rate data).",
+  "vacancy_opens": "The day after the club's last game: December 30, 2013 for a non-playoff club; the day after its elimination for a playoff club. The two Super Bowl clubs play on February 2, 2014, the branch date, so their decisions are deferred, not drawn (see deferred_procedure).",
+  "hire_day": "Days from the vacancy opening to the hire, drawn uniformly from the January 2013 cycle's eight hires measured the same way (3, 6, 7, 9, 14, 15, 15, 16: seven vacancies opened on Black Monday, counted by earliest recorded date, and the late-opening vacancy was filled 7 days after it opened; rules file section 7.3, Pattern). If the club hires a Jacksonville coordinator, the hire is dated when that offer is made (no earlier than January 12, rule X1), and the club's coordinator searches run from that date."
+ },
+ "stage_2_openings_below_head_coach": {
+  "rule": "A club with a new head coach opens its offensive coordinator job (probability 1.0) and its defensive coordinator job (probability 0.875): 8 of 8 and 7 of 8 in the January 2013 cycle (rules file section 7.4, Pattern). Its new staff also fills position jobs. Each coordinator search runs from the head-coach hire to 2 to 10 days after it (uniform; 'within days', section 7.4). One hire per club per job: once a job is filled, no further request or offer for it is made.",
+  "not_modelled": "Coordinator changes at clubs that keep their head coach. No source gives their rate (rules file section 7.5), so the branch does not invent one; this undercounts openings and is labelled as such.",
+  "open_probability": {
+   "offensive coordinator": 1.0,
+   "defensive coordinator": 0.875
+  }
+ },
+ "stage_3_requests_for_jacksonville_assistants": {
+  "windows": "Head-coach requests for a Jacksonville assistant may be made from the evening of January 5 to January 12, 2014 (Wild Card winner, rule W5), and freely after the January 11 Divisional loss. A head-coach search whose hire day falls before January 6 cannot reach Jacksonville's staff. Requests for any other job may be made only after January 11 (rule W10). Every Jacksonville assistant is under contract through at least 2014 (career/2013/coaching_staff.md).",
+  "head_coach_requests": {
+   "eligible": "Jacksonville's three coordinators (Crennel, Tice, Lowry). In the January 2013 field, sitting coordinators were 72.5 percent of candidate pairings; the one position coach named was a former NFL head coach, and Jacksonville has none.",
+   "base_probability": 0.0604,
+   "base_note": "Per open search per sitting coordinator: 8 names per search x 72.5 percent coordinators / 96 sitting coordinators (32 clubs x 3), from rules file sections 7.1-7.2. It is the chance of being named, that is reported interest. The branch treats a named coordinator as a formal request followed by one interview; that conversion is a modelling choice (section 7.2 shows reported interest and completed interviews are distinct statuses). The offer probability below is per named candidate, so departures stay calibrated either way.",
+   "role_factor": {
+    "offensive coordinator": 1.7647,
+    "defensive coordinator": 0.8824,
+    "special teams coordinator": 0.3529
+   },
+   "role_factor_note": "Named coordinators in January 2013 were 10 offensive, 5 defensive and 2 special teams of 17 (section 7.2); each factor is that share divided by one third, so the three average 1.",
+   "play_calling_factor": {
+    "calls plays": 1.0,
+    "does not call plays": 0.5
+   },
+   "club_factor": {
+    "playoff club": 1.5,
+    "other": 1.0
+   },
+   "unit_factor": {
+    "top 8 in the unit's scoring rank": 1.5,
+    "9th to 24th": 1.0,
+    "25th to 32nd": 0.6
+   },
+   "factor_note": "Play-calling, club and unit factors are the branch's own modelling choices (section 7.5: no source supplies them). The unit rank is the branch 2013 regular-season points scored (offense) or allowed (defense); special teams take 1.0.",
+   "normalization": "The club and unit factors are divided by their league means over the 32 clubs' branch records (club: 12 playoff clubs, mean 1.1875; unit: 8, 16 and 8 clubs in the three bands, mean 1.025), so they move interest between clubs' staffs without raising the league total. The play-calling reference is a coordinator who calls plays (factor 1.0); one who does not is discounted.",
+   "offer_probability": 0.0862
+  },
+  "coordinator_requests": {
+   "eligible": "Each Jacksonville position coach for a coordinator job on his side of the ball; each Jacksonville coordinator for the same coordinator job elsewhere (a lateral move).",
+   "base_probability": 0.0125,
+   "base_note": "Modelling choice (section 7.5): each coordinator search interviews 4 people, about half of them sitting position coaches, from roughly 160 on each side of the ball (32 clubs x 5).",
+   "coach_factor": {
+    "Jeremy Bates (QB) for offensive coordinator": 8.0,
+    "Frank Bush (LB) for defensive coordinator": 6.0,
+    "George Yarno (OL, run-game title) for offensive coordinator": 1.5,
+    "Tony Oden (DB) for defensive coordinator": 1.5,
+    "Anthony Pleasant (DL) for defensive coordinator": 1.0,
+    "Darryl Drake (WR) for offensive coordinator": 1.0,
+    "Tim Spencer (RB) for offensive coordinator": 1.0,
+    "John Zernhelt (TE) for offensive coordinator": 1.0,
+    "Romeo Crennel (DC) for defensive coordinator, lateral": 1.6,
+    "Mike Tice (OC) for offensive coordinator, lateral": 1.6
+   },
+   "coach_factor_note": "Prior NFL coordinator experience x4 (Bates, Bush, and the sitting coordinators' lateral case at x1.6 against a smaller pool); the quarterbacks coach x2 for offensive coordinator; the linebackers coach x1.5 for defensive coordinator; a coordinator-level title below coordinator (Yarno's run-game title) and the defensive backs coach x1.5; everyone else x1. Charlie Skalaski (offensive assistant) is not a coordinator candidate. Modelling choices, from the résumés in career/2013/offseason/staff_building/. A factor is relative to a typical candidate (1.0).",
+   "club_factor": 1.5,
+   "club_factor_note": "Jacksonville reached the playoffs: the head-coach club factor, normalized the same way (1.5 / 1.1875).",
+   "offer_probability": 0.25
+  },
+  "position_requests": {
+   "rule": "Each new head coach's staff may ask about each Jacksonville position coach for the same position elsewhere (a lateral move) with probability 0.03. Modelling choice: a new staff fills about 8 position jobs, and a club's own position coaches are a small share of the field.",
+   "coaches": [
+    "Jeremy Bates",
+    "Tim Spencer",
+    "Darryl Drake",
+    "John Zernhelt",
+    "George Yarno",
+    "Anthony Pleasant",
+    "Frank Bush",
+    "Tony Oden",
+    "Alan Lowry"
+   ],
+   "probability": 0.03
+  }
+ },
+ "stage_4_permission": {
+  "rule": "A head-coach request after January 11 is granted: Jacksonville may not refuse it once its season is over (rule T2). Inside the January 5-12 window a Wild Card winner sets the time and place (rules W5, W6); whether it could refuse is Unverified (W11), so Jacksonville's default policy grants it. Every other request is lateral and Jacksonville's to grant or refuse (rule T3).",
+  "jacksonville_default_policy": "Grant a head-coach request inside the January 5-12 window. Grant a request that would make a Jacksonville position coach a coordinator. Refuse a coordinator's move to the same coordinator job elsewhere and any position coach's move to the same position elsewhere. This is a standing default set for the user (who asked not to force each case); the user may change it at any time, and it applies alike to any request whatever the asking club. No source gives how often clubs granted lateral requests (section 7.5).",
+  "authority": "Stone controls his own staff (Document 3 row 2); the permission answer is Jacksonville's."
+ },
+ "stage_5_interviews_offers_and_acceptance": {
+  "interview": "A granted request becomes one interview (while Jacksonville was alive, one per asking club, rule W6).",
+  "head_coach_offer": "The club hires one of its 8 names. A named sitting coordinator wins with probability 0.5 / 5.8 (0.0862): coordinators were 72.5 percent of the names (5.8 a search) but 50 percent of the January 2013 hires (section 7.3, Pattern). His weight already decided whether he was named, so it is not applied again. If two Jacksonville coordinators both win the same search, the earlier-ordered one takes the job.",
+  "coordinator_offer": "The club hires one of its 4 interviewees; each wins with probability 0.25, for the same reason. A filled job takes no second hire.",
+  "acceptance": "A coach offered a head-coach job, or a coordinator job that is a step up from his position job, accepts. Modelling choice; a lateral offer cannot arise because lateral requests are refused.",
+  "hire_date": "The club's decision date (its head-coach hire day, or the end of its coordinator search), and no hire before Jacksonville's elimination on January 11 (rule X1): the earliest is January 12.",
+  "pending": "A candidacy interviewed by February 2 whose decision date falls after it is recorded as pending, not resolved; its offer is drawn by the deferred procedure."
+ },
+ "draws": "The private service commits one packet (the procedure and event id, this method's digest, the script's digest, the base-rate file's digest, the inputs' digest and the snapshot) and supplies the entropy. One seeded generator then makes every draw in a fixed structural order: stage 1 by club; then, for each search, the head-coach request and offer draws; then the coordinator-opening, search-length, request and offer draws and the position-request draws. Events are applied in date order. A request, a permission, an interview, an offer and a hire are logged as separate events (rule 16). Draws for events after February 2 are not used.",
+ "label_swap": "Every probability and rule above reads only the job, the coach's role and record, the clubs' records and the calendar. The same method applied with any other club as the employer gives the same probabilities for the same inputs.",
+ "outputs": "career/2014/offseason/staff_changes/carousel_results.json and requests_and_outcomes.md (generated). New head coaches at other clubs are recorded as openings filled by an external candidate unless a Jacksonville coordinator takes the job: the branch holds no league-wide staff register to name them, and none is invented. A departure leaves the Jacksonville job vacant; any replacement awaits the user's staff plan.",
+ "event_id": "2014-coaching-carousel-v1",
+ "deferred_procedure": {
+  "event_id": "2014-coaching-carousel-deferred-v1",
+  "scope": "When the career clock next passes February 2, 2014, one further private packet resolves, with this method's stages 1 to 5: the two Super Bowl clubs' head-coach decisions (vacancy opening February 3); every Jacksonville candidacy pending on February 2; and requests from searches whose windows open after February 2. Head-coach hire days already drawn here stand."
+ }
+}
