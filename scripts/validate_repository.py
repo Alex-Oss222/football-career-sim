@@ -57,6 +57,29 @@ def award_coverage_errors(receipts, awards_dir):
     return errors
 
 
+def season_honours_errors(awards_dir):
+    """A drawn season-honours record must match its method, evidence and page."""
+    results_path = awards_dir / 'season_honours_results.json'
+    if not results_path.exists():
+        return []
+    import hashlib
+    results = json.loads(results_path.read_text(encoding='utf-8'))
+    errors = []
+    for key, name in (('method_sha256', 'season_honours_method.json'), ('evidence_sha256', 'season_honours_evidence.json')):
+        if hashlib.sha256((awards_dir / name).read_bytes()).hexdigest() != results.get(key):
+            errors.append(f'{name} changed after the season honours were drawn')
+    page = awards_dir / 'season_honours.md'
+    before = page.read_text(encoding='utf-8') if page.exists() else None
+    import sys
+    if str(ROOT) not in sys.path:
+        sys.path.insert(0, str(ROOT))
+    from scripts import season_honours
+    season_honours.render()
+    if page.read_text(encoding='utf-8') != before:
+        errors.append('season_honours.md was stale; regenerated with scripts/season_honours.py render')
+    return errors
+
+
 def receipt_coverage_errors(receipts, scheduled=None):
     """One receipt per scheduled game in every regular-season week that has any.
 
@@ -220,6 +243,7 @@ def validate(root=ROOT):
 
         errors.extend(receipt_coverage_errors(receipts))
         errors.extend(award_coverage_errors(receipts, root / 'career/2013/awards'))
+        errors.extend(season_honours_errors(root / 'career/2013/awards'))
 
         expected_views = render_views(2013, 'Jacksonville Jaguars', receipts)
         for name, expected in expected_views.items():
