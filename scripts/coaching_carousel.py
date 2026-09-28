@@ -322,7 +322,7 @@ def render():
             if c["hired_from"] != "external":
                 hire += ", from " + c["hired_from"]
         lines.append("| %s | %s | %s | %s | %.1f%% | %s | %s |" % (
-            c["club"], c["coach"], ("%g" % c["record_wins"]), c["cell"], 100 * c["p_change"], result, hire))
+            c["club"], c["coach"], ("%g" % c["record_wins"]), c["cell"].replace("|", ", "), 100 * c["p_change"], result, hire))
     deferred = [c["club"] for c in res["head_coach_changes"] if c.get("deferred")]
     lines += ["", "%d clubs changed head coaches. New head coaches from outside Jacksonville are recorded as external hires: "
               "the branch has no league-wide staff register to name them." % len(changed)]
@@ -345,6 +345,16 @@ def render():
         lines.append("No Jacksonville assistant left. Every one stays under contract for 2014.")
     else:
         lines.append("No Jacksonville assistant left by February 2.")
+    pending = {(p["coach"], p["club"], p["job"]) for p in res["pending"]}
+    hired = {(e["coach"], e["club"], e["job"]) for e in res["events"] if e["event"] == "hired"}
+    passed = [e for e in res["events"] if e["event"] == "interview"
+              and (e["coach"], e["club"], e["job"]) not in hired | pending]
+    if passed:
+        lines += ["", "## Interviewed, not hired", ""]
+        for e in passed:
+            lines.append("- **%s** interviewed with %s (%s) on %s and was not offered the job; the club hired another "
+                         "candidate by February 2. He stays under contract with Jacksonville." % (
+                             e["coach"], e["club"], e["job"], e["date"]))
     if res["pending"]:
         lines += ["", "## Pending at February 2", "",
                   "Interviewed, with the club's decision after the branch date. Resolved by `%s`." % res["deferred_procedure"], ""]
