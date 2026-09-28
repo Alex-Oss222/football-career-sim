@@ -8,3 +8,4 @@
 **Format:** `foundation/templates/season_output_template.md`
 
 **Note:** Division game (AFC South).
+**Carry-forward:** Week 11 closed as a 29-7 win over Arizona ([Week 11 output](../week_11_arizona_at_jacksonville/output.md)); Jacksonville 7-3, first in the AFC South. Bouye out (projected return November 26); Ball out. The Week 11 inactive list carries forward unless Stone changes it.
