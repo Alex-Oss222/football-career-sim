@@ -37,3 +37,13 @@ For Cousins, immediate interior pressure matters because it disrupts the availab
 Jackson is a relevant comparator even if the final board puts him out of reach. His presence asks whether Jacksonville wants to spend its early resource on a guard, a tackle or a defensive contributor. The club cannot assume it will address tackle in round one and then obtain this particular guard in round three.
 
 The best objection is treating a power-based reputation as proof of complete guard play. A narrow run-game benefit may not justify an early investment if pass-protection help and movement restrictions consume the gain. **Tier:** Not yet graded. **What would change the view?** Reliable isolated protection, sound exchanges and effective movement would strengthen a broad guard projection. Repeated late feet or dependence on favorable contact angles would narrow the call-sheet fit.
+
+### Week 15 addendum: evidence through December 13, 2013
+
+The December 9 AP All-SEC list names Jackson to the first team, and the December 12 Walter Camp list names him to the second team nationally. These are different selections, with their bodies identified rather than combined into a generic ranking. [W06, W14](../sources_week15_2013_12_13.md).
+
+The evidence strengthens the college guard résumé already under review. It does not close the lateral-recovery, pull-path or protection-exchange questions. Continue the guard-first study instead of treating recognition as proof that every part of the offensive menu is ready.
+
+Jackson is now a more substantial contemporary benchmark for the cost of waiting for Turner, whose eligibility remains conditional. The comparison should ask whether a better established first position reduces conversion work enough to justify a different acquisition price. It cannot assume that either player is present in Jacksonville's third-round window.
+
+**Tier:** Not yet graded. **Decision trigger:** Independent interior protection and movement that remain functional when contact or the defensive picture changes. No starting role, exact round movement or final board order is assigned.

@@ -39,3 +39,13 @@ The favorable movement hypothesis fits an investigation of ACE combinations and 
 The best objection is selecting a center for intelligence or mobility labels while routine isolated blocks remain unreliable. The case for continued study is that useful movement and combination work could translate if the contact floor is adequate.
 
 **Tier:** Not yet graded. **What would change the view?** Independent success against direct interior contact and stable execution after the snap would answer the major objection. Success concentrated in assisted combinations would narrow the role. No source reviewed here makes Swanson a guaranteed late-round alternative; compare his eventual acquisition cost with Paradis and Stork only after the market evidence improves.
+
+### Week 15 addendum: evidence through December 13, 2013
+
+The December 9 AP All-SEC list selects Swanson as its first-team center. The ballot is recorded explicitly; this update makes no claim that every awarding body placed him identically. [W06](../sources_week15_2013_12_13.md).
+
+The recognition adds a contemporary season assessment alongside the conflicting preseason technical opinions. It does not erase their specific disagreement about isolated contact versus assisted combinations. The appropriate next step is to test that distinction on later college work, rather than let an accolade settle a technique question indirectly.
+
+Swanson remains a center-first comparison with Paradis and Stork. The role needs a complete snap/point/block sequence and an anchor that does not force the quarterback or adjacent guard to make routine repairs.
+
+**Tier:** Not yet graded. **Decision trigger:** Independent contact control and communication that remain stable under a changed front. A stronger season résumé warrants continued evaluation, without guaranteeing readiness or late-round availability.

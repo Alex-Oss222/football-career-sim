@@ -78,3 +78,19 @@ The strongest objection is paying for a first-round starting lineman while the b
 **Tier:** Not yet graded. Confidence is stronger in the college identity and experience than in the NFL position or acquisition range. No dated source reviewed here establishes a December 1 first-round consensus for Bitonio.
 
 **What would make us change our mind?** Repeated independent tackle evidence against speed, counters and power would strengthen the outside projection. A better guard file in isolated anchor, combinations and exchanges would change the first job. Failure at both would reduce the acquisition case. A later testing result or later published evaluation enters only when its information gate opens.
+
+### Week 15 addendum: evidence through December 13, 2013
+
+**New evidence:** Nevada's December 10 release identifies Bitonio as a senior tackle and first-team All-Mountain West selection. The honor is now usable evidence; the December 1 entry correctly did not anticipate it. The release identifies a college tackle, without resolving a professional guard conversion. [W01](../sources_week15_2013_12_13.md).
+
+**Answer to the Phase IV question:** Tackle remains the first position to investigate. Guard remains a separate projection. This is a research recommendation; Tice and Yarno's formal first-position conclusion stays OPEN because the new source supplies recognition rather than individual protection observations.
+
+The award increases confidence that the college performance deserves serious comparison. It does not answer whether Bitonio controls an NFL edge, handles a late inside counter or creates more value in reduced space at guard. Those are the questions that separate a good college season from the specific early investment Stone is considering.
+
+For the next position comparison, use the same protection situations for Bitonio and Martin: an isolated set, a speed-to-power transition and an exchange with the guard. Then compare any interior projection against the guard-specific work of Richardson and Jackson. The decisive difference should be the first usable job and the amount of help required, not which player collected the most honors.
+
+**Teaching and roster implication:** Keep one tackle side as the initial teaching proposal. Guard cross-training adds contact timing and center communication; it is not free versatility. The early roster case still needs more than a sixth-lineman package because Monroe, Johnson and Bradfield already cover distinct tackle functions in the branch.
+
+**Best objection after the update:** The first-round focus can still outrun the demonstrated professional role. A dated award removes an information gap, not that objection. No new reliable market range was established in this pass.
+
+**Tier:** Not yet graded. **Next decision-changing evidence:** A tackle file showing controlled responses after the defender changes his rush, paired with a genuinely separate guard file. No completed film session or instruction response is recorded by this addendum.

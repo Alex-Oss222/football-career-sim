@@ -37,3 +37,13 @@ Pass-rush review should isolate the initial entry, the blocker’s response and 
 The strongest objection is paying an early price for disruption that requires too much protection elsewhere in the front. The strongest reason to keep investigating is that reliable interior pressure could improve a four-man rush without changing the coverage structure. Both statements are role-based inferences, not completed grades.
 
 Compare Donald with Reid for the interior-development question and Harris only conditionally, since Harris's status remains unresolved. Do not use those names to imply equal ability or equal price. **Tier:** Not yet graded. **What would change the view?** Consistent assignment control, viable counters and effective work when the offense targets him would support a larger role. Production dependent on free paths or uncontrolled penetration would narrow it. The source record needs additional independent film evaluation before any early-round recommendation.
+
+### Week 15 addendum: evidence through December 13, 2013
+
+Pitt's December 12 release records Donald winning the Outland Trophy and Bednarik Award. The FWAA's dated announcement independently verifies the Outland selection. This moves those items from the earlier finalist record to awards already announced by the Week 15 cutoff. [W10–W11](../sources_week15_2013_12_13.md).
+
+The expanded recognition strengthens the reason to examine an early interior-defensive investment alongside Stone's offensive-line focus. It does not make the technical projection automatic. The three-technique study still needs control of the assigned gap when the offense runs at him, a response to combinations and a rush counter after initial contact.
+
+The useful comparison with a developmental interior option remains resource allocation. A greater expected contribution would justify a greater expenditure only after the football evidence supports it; the trophy itself does not supply that contribution estimate.
+
+**Tier:** Not yet graded. **Decision trigger:** Repeatable disruption with fit and rush-lane control, including snaps that do not end in a tackle or pressure. Neither a future testing result nor a professional outcome enters the assessment. No precise draft range is newly established.

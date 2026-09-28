@@ -39,3 +39,13 @@ Guard cross-training can improve roster flexibility only after the center job is
 Against Paradis, ask which player can deliver a dependable complete center sequence at an acceptable acquisition and teaching cost. Against Swanson, compare isolated interior protection and communication under late movement. Do not promote one solely because the other carries a late focus-round label.
 
 The strongest objection is assuming an established college center is an easy reserve projection. **Tier:** Not yet graded. **What would change the view?** Consistent snaps, correct late adjustments and pass protection that survives direct contact would strengthen the active-roster case. A recurring tradeoff between communication and execution would make the developmental burden larger than the positional résumé suggests.
+
+### Week 15 addendum: evidence through December 13, 2013
+
+Stork's Rimington Trophy selection was announced on December 12, according to the dated conference release; the award organizer's historical record confirms the 2013 winner. This is now admitted recognition, rather than a future honor. [W12–W13](../sources_week15_2013_12_13.md).
+
+It makes Stork a more substantial contemporary center comparator for Paradis, but does not establish a teaching shortcut. The snap, identification, communication and block still have to operate together in Jacksonville's terminology. An award for college center play does not reveal which calls the player personally owned.
+
+Reserve center remains the first professional role to investigate. Compare the complete sequence with Paradis and Swanson before deciding whether an earlier expenditure secures a materially more dependable initial job. No source here establishes the price difference.
+
+**Tier:** Not yet graded. **Decision trigger:** Correct late adjustments that coexist with reliable snaps and sufficient isolated protection. The new award strengthens the college résumé without displacing Brewster or Meester in the branch.

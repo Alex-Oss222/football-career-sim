@@ -82,3 +82,23 @@ The strongest objection is a reserve corner who needs a protected development ye
 **Tier:** Not yet graded. The conference recognition and prior return background are supported. NFL press/off translation, tackling reliability, coverage-team usefulness and market range remain open.
 
 **What would make us change our mind?** Complete games showing consistent leverage, recovery and controlled tackling would strengthen the corner case. Verified return or coverage-team usefulness would establish an active pathway. Repeated dependence on gambling, or inability to stay connected without illegal contact, would weaken it. No later professional outcome is admissible as evidence.
+
+### Week 15 addendum: evidence through December 13, 2013
+
+**Newly verified football record:** The Gulf South Conference's weekly release is dated December 4, even though the storage URL contains December 2. Its tables, effective December 1, list Butler over 11 games with 16 pass breakups, two interceptions and 18 passes defended. The tackle table records 45 total tackles, including 33 solo. The relevant PDF rows were visually checked; West Alabama's biography independently matches those totals. [W08–W09](../sources_week15_2013_12_13.md).
+
+This changes the evidence base from prior-year production and recognition to a dated current-season record. It does not supply target count, completions allowed, route assignments or missed tackles. Passes defended must not be divided by an invented target denominator to manufacture a coverage efficiency claim.
+
+**Answer to the Phase IV question:** Outside corner remains the first role to investigate. The current-season pass disruption strengthens the reason to study ball location and arrival at the catch point. It does not by itself establish a particular press or off-man technical strength. Those fields remain INSUFFICIENT EVIDENCE until full plays show how the result was achieved.
+
+**Technical concern to investigate:** Whether he preserves leverage through the receiver's release and route break before attempting to play the ball. This is an evaluation question, not a newly diagnosed defect. A breakup after sound positioning and a breakup after a risky recovery have different professional implications.
+
+**Tackling:** The dated total verifies recorded participation in tackles. It does not establish approach angle, wrap, missed-tackle frequency or the quality of run-force decisions. A tackling conclusion remains open rather than being inferred from the solo count.
+
+**Teams pathway:** The earlier return background remains relevant. The new pass-defense and tackle tables do not establish gunner work or coverage-lane competence, and no immediate teams assignment is awarded. Lowry still needs the actual unit and task identified.
+
+**Teaching and comparison:** Keep outside technique and the Cover 1/Cover 3 leverage rules together before adding nickel. Compare Cockrell's documented corner background against Butler's now better dated production record, while keeping competition and technique distinct. Fuller's award recognition does not remove his separate medical gate.
+
+**Best objection after the update:** Productive college ball involvement can still leave the reserve role incomplete if ordinary coverage snaps and teams work require too much protection.
+
+**Tier:** Not yet graded. **Next decision-changing evidence:** Complete games with targets and coverage context, controlled tackling and a separately established teams job. No later award announcement or professional result is used.

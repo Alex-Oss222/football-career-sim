@@ -39,3 +39,13 @@ For the pressure component, separate rushes against tackles from attacks on back
 Against Smith, Jones offers a different contact/edge hypothesis; Smith offers the more explicitly speed-led WILL hypothesis. Against Van Noy, the question is which prospect has a clearer first job in this particular defense, then how much additional usage can be earned.
 
 The strongest objection is buying versatility without identifying the assignment that remains dependable under pressure. **Tier:** Not yet graded. **What would change the view?** Strong-side contact control plus functional coverage would support the proposed role. If the useful evidence concentrates almost entirely in rushing situations, reclassify the study around that job rather than pretending a complete linebacker has been established. No dated source here guarantees his presence in round four.
+
+### Week 15 addendum: evidence through December 13, 2013
+
+The December 2 media All-ACC team names Jones to the second team. Duke's December 7 championship game book lists him at strong-side linebacker, while listing Telvin Smith in the middle. That gives a dated game-specific check on the earlier role-change reporting. [W03–W04, W07](../sources_week15_2013_12_13.md).
+
+A starting-position label does not describe every alignment or assignment. It does, however, support keeping Jones's strong-side study distinct from Smith's proposed professional WILL study. The next useful question is what Jones actually had to do from that listed role: control contact, carry a route, rush or replace another defender.
+
+SAM with an earned pressure complement remains the working proposal. The full linebacker/end combination remains too broad to declare ready without the corresponding evidence. Lowry's coverage-team question also remains open.
+
+**Tier:** Not yet graded. **Decision trigger:** A repeatable strong-side fit and a complementary skill demonstrated within its assignment context. The new game record supports role identification, not a completed multi-position grade.

@@ -1,10 +1,10 @@
 # Jacksonville Jaguars roster
 
-**As of:** December 15, 2013, after Week 15.
+**As of:** December 22, 2013, after Week 16.
 **Canonical controlled-player count:** **53**.
 **Active roster:** **53**; Justin Blackmon was reinstated from Reserve/Suspended on October 7 and activated to the open spot (ledger Entry 42).
 **Practice squad:** **8**, separate from the active roster.
-**Record:** preseason 2-2; regular season 9-5 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16).
+**Record:** preseason 2-2; regular season 10-5 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27).
 
 ## 1. How to read this page
 
@@ -68,7 +68,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| Mark Asper | G | Active 53 | No communicated restriction | Interior OL depth (game-day inactive Weeks 10-15) |
+| Mark Asper | G | Active 53 | No communicated restriction | Interior OL depth (game-day inactive Weeks 10-16) |
 | Uche Nwaneri | G | Active 53 | No communicated restriction | Starting LG |
 | Austin Pasztor | G | Active 53 | No communicated restriction | Game-day interior OL reserve (from Week 10) |
 | Will Rackley | G | Active 53 | Limited, no projected absence (upper extremity, Week 5) | Starting right guard |
@@ -87,7 +87,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Jason Babin | DE | Active 53 | No communicated restriction | Edge 1 |
 | Andre Branch | DE | Active 53 | No communicated restriction | Edge 3 |
 | Ryan Davis | DE | Active 53 | No communicated restriction | Edge 4 |
-| Lavar Edwards | DE | Active 53 | No communicated restriction | Edge/front depth and teams (dressed Weeks 12, 14 and 15; inactive Week 13) |
+| Lavar Edwards | DE | Active 53 | No communicated restriction | Edge/front depth and teams (dressed Weeks 12 and 14-16; inactive Week 13) |
 | Jeremy Mincey | DE | Active 53 | No communicated restriction | Edge 2 |
 | C.J. Wilson | DE | Active 53 | Out, trunk (Week 2); projected return January 30, 2014 | — |
 

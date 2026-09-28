@@ -80,3 +80,23 @@ The strongest objection is selecting a space athlete while assuming the difficul
 **Tier:** Not yet graded. The speed case is better supported than a claim of complete coverage technique or every-down readiness. Stone's fourth-round focus is not evidence that Smith will last until Jacksonville's fourth selection window.
 
 **What would make us change our mind?** Repeated correct fits through traffic and controlled finishes would strengthen the base role. Reliable route recognition would support a larger sub-package. Consistent displacement by blockers or false steps that erase the movement advantage would narrow the role. Verified special-teams performance can establish an active path; it cannot erase a defensive limitation.
+
+### Week 15 addendum: evidence through December 13, 2013
+
+**New evidence:** The December 2 media All-ACC announcement names Smith to the second team. More substantively, Duke's December 7 championship game book credits him with eight tackles, two tackles for loss, a sack and an interception. It lists him at middle linebacker for that game. [W03–W04, W07](../sources_week15_2013_12_13.md).
+
+The game book gives a dated football sample beyond preseason reputation. It records an early run stopped for a loss and a later quarterback sack. Those are identifiable results worth locating in full-game film. The written record does not disclose the defensive call, how a blocker was defeated, or whether every pursuit angle was correct.
+
+**Answer to the Phase IV question:** Investigate WILL first in Jacksonville's Under defense. That is a professional role hypothesis, not a claim that Smith played only WILL in college. The newly verified middle-linebacker listing should remain in the record alongside the earlier evidence of changing responsibilities.
+
+The new game contributes evidence of involvement against the run, in pressure and on a pass turnover. It does not establish that one player can immediately own every linebacker responsibility. A sack does not certify an independent edge-rush role; an interception does not certify consistent back-match coverage. The useful translation question remains whether recognition and leverage allow his movement to produce correct weak-side fits.
+
+**Teams pathway:** Still OPEN. None of the new sources establishes kickoff lane integrity, punt coverage releases or a repeatable tackling assignment for Lowry. Defensive production cannot fill that field.
+
+**Teaching implication:** Begin with weak-side keys, the weak A-gap relationship and the back release. Add a limited coverage complement after the base fit is dependable. The December 7 record makes the proposed study more substantial, but no Jacksonville coach's correction or retained response is being claimed.
+
+At the Week 15 branch checkpoint, Russell Allen is already starting beside Daryl Smith following Posluszny's injury. Telvin's future evaluation is not a decision to undo that current arrangement, and Daryl remains the communication lead.
+
+**Best objection after the update:** Productive college involvement may still exceed the reliability of the projected professional assignment. Compare Jones for a strong-side/edge job and Van Noy for the cost of a different linebacker purchase.
+
+**Tier:** Not yet graded. **Next decision-changing evidence:** Full-game confirmation of keys, contact and coverage responsibility around the recorded positive plays, including ordinary and unsuccessful snaps.

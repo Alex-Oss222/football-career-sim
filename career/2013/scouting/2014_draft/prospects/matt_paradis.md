@@ -84,3 +84,21 @@ The strongest objection is selecting a backup whose physical blocking or communi
 **Tier:** Not yet graded. Senior identity and college center experience are supported; learning speed, NFL anchor and game-day reserve readiness remain open.
 
 **What would make us change our mind?** Stable snaps, correct points after movement, sound exchanges and sufficient anchor in the same evaluation sequence would strengthen the acquisition case. A center who can explain the rule but cannot execute it on time is not ready. A narrow center-only role may still be useful, but its roster price must remain visible.
+
+### Week 15 addendum: evidence through December 13, 2013
+
+**New evidence:** Boise State's December 10 release identifies Paradis as a redshirt senior center, names him second-team All-Mountain West and reports 25 consecutive center starts. The experience count belongs to that dated release and excludes later bowl participation. [W02](../sources_week15_2013_12_13.md).
+
+**Answer to the Phase IV question:** The evidence supports a center-first teaching study, but his ability to learn and execute Jacksonville's language remains OPEN. A college starting record establishes repetition in that college job; it does not reveal the division of protection calls or the response to a new vocabulary.
+
+**Proposed answer to Bates's communication question:** The early burden on Cousins would be material until the center's point, snap and block operate together. The quarterback must know whether an apparent disagreement is an identification error, a different rule interpretation or a physical failure after a correct call. Teaching should make those failure types visible rather than asking Cousins to compensate for all three during live play. This is a research proposal for Bates, not a quotation or a completed staff assessment.
+
+Begin with an agreed point against a static front and the paired ACE assignment. Then introduce a shifted front and a late pressure presentation. Evaluate the snap and the first block on every repetition. A correct verbal explanation with a delayed or inaccurate snap does not satisfy the reserve-center job.
+
+**What changes in the comparison:** Stork's December 12 Rimington recognition and Swanson's AP All-SEC first-team selection now belong in the center comparison. They do not demonstrate that either player is available near Paradis's intended window, nor do they settle the relative communication or anchor question. [W06, W12](../sources_week15_2013_12_13.md).
+
+**Teaching and roster cost:** Substantial until the complete sequence is reliable. Center-first remains preferable to immediate multi-position teaching. Brewster remains the starter; Meester's reserve role does not create an automatic mentorship outcome or a fixed succession date.
+
+**Best objection after the update:** More college experience can coexist with an unproven professional anchor and communication burden. The report must answer those together before claiming that a center-only developmental roster place is economical.
+
+**Tier:** Not yet graded. **Next decision-changing evidence:** A connected, correctly executed snap/point/block sequence against changing fronts. The new honors do not close the first coach read.

@@ -39,3 +39,13 @@ Tackle cover remains a separate benefit to establish. If the interior role is so
 Thomas is an alternative to Turner's acquisition uncertainty, not an exact substitute for Turner's right-guard background. Jackson and Richardson offer guard-first comparisons; Bitonio and Martin test how much value the team assigns to tackle projection.
 
 The strongest objection is counting versatility before establishing a functional anchor at one position. **Tier:** Not yet graded. **What would change the view?** Reliable interior contact, correct exchanges and movement that survives congestion would strengthen the guard study. A need for extensive help against power would narrow the role. No verified December 1 range makes Thomas a guaranteed third-round or late-round fallback.
+
+### Week 15 addendum: evidence through December 13, 2013
+
+The December 2 media All-ACC list selects Thomas to the second team at tackle. The named ballot and listed college position matter: this is not evidence that he has already completed a professional guard conversion. [W03](../sources_week15_2013_12_13.md).
+
+The guard-first study remains a roster projection informed by his earlier interior experience. It needs compressed-space contact, anchor and exchange evidence. The new tackle recognition strengthens the reason to retain a separate edge study rather than discarding that possibility because Jacksonville is comparing guards.
+
+Against Turner, the useful distinction remains existing positional history and acquisition eligibility, not an assumed identical role or price. Against Jackson and Richardson, measure the conversion work that Thomas would still need.
+
+**Tier:** Not yet graded. **Decision trigger:** A usable guard foundation with separately verified tackle cover if that flexibility is part of the purchase. The honor does not close either job, and no later medical or draft information is admitted.

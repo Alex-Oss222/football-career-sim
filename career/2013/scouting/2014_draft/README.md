@@ -4,6 +4,12 @@
 **Source directive:** [../2014_draft_focus_directive.md](../2014_draft_focus_directive.md).
 **Authority:** Caldwell holds the board and every pick; the scouting department carries volume; coaches review assigned cut-ups in set windows without missing opponent preparation.
 
+## Latest: Week 15 research update
+
+All twenty prospect files now include an addendum with evidence through **December 13, 2013**, addressing the Phase IV window. Start with the [Week 15 update and pick implications](week15_scouting_update.md) and its [source register](sources_week15_2013_12_13.md). The update admits dated conference recognition, Smith's championship game record and Butler's verified conference statistics, while preserving unresolved eligibility, medical and technique questions.
+
+Jacksonville's roster/record context is separately updated through the already closed December 15 checkpoint. The earlier December 1 packet remains a dated reference. The new material does not replace the original December 13 placeholders with invented coach conclusions: formal reads remain open, and all prospects remain not yet graded.
+
 ## Comprehensive December research packet
 
 **Evidence through December 1, 2013; prepared September 28, 2026.** Seven focus reports have substantial new entries, and thirteen comparison reports broaden the study around Stone's intended pick windows. The packet covers sourced background, attributed strengths and concerns, protection/run/coverage translation, first-role hypotheses, teaching cost, active-roster pathways, objections and evidence that would change the view. This is a retrospective research supplement: the later December 13 Phase IV entries remain intact and open. Roster and record references within the packet describe the December 1 snapshot.
@@ -27,10 +33,11 @@ Jacksonville has six owned selections for seven focus names. Round 2 belongs to 
 - Week 12: [Phase II, role validation](phase_ii_role_validation.md), with the interim-card format.
 - Week 13: [Phase III, verify then write](phase_iii_verify_then_write.md).
 - Week 15: [Phase IV, first coach football reads](phase_iv_first_coach_reads.md).
+- Week 15 research supplement: [evidence update and comparisons](week15_scouting_update.md), with individual addenda in all twenty reports.
 
 ## Focus prospects
 
-The verification column below preserves the November 30 identity/status checkpoint. Each linked file now includes a separate December 1 evidence-cutoff research entry; older entries remain intact.
+The verification column below preserves the November 30 identity/status checkpoint. Each linked file includes the December 1 research entry and a Week 15 addendum through December 13; older entries remain intact. Current research findings and remaining gaps are summarized in the Week 15 update above.
 
 | Prospect | Position | Focus round | Evaluators | Status |
 |---|---|---|---|---|

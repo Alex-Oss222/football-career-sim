@@ -39,3 +39,13 @@ Documented blocked-kick involvement creates a specific special-teams question. L
 Against Harris, the immediate distinction is research readiness: Harris's eligibility remains unresolved, so he cannot be treated as a cleared alternative. Against Donald, Reid is a comparison of interior projection and resource allocation, not a claim of equal disruption or equal market value.
 
 The strongest objection is carrying another developmental lineman without identifying an early useful assignment. **Tier:** Not yet graded. **What would change the view?** Controlled contact, a repeatable counter and assignment discipline against varied blocking would strengthen the rotational case. Wins concentrated in free access or unstable gap play would narrow it. This packet does not establish that Reid will be available in round six.
+
+### Week 15 addendum: evidence through December 13, 2013
+
+Reid's Senior Bowl invitation was already reported on November 22. [W16](../sources_week15_2013_12_13.md). This is an earlier fact newly admitted to the research record, not a December event. The linked school announcement could not be recovered, so the report's verification limitation remains explicit.
+
+An invitation permits planning for a possible later evaluation opportunity. It does not establish that he attended, completed a drill, defeated a particular blocker or improved his standing. None of those later events belongs in this window.
+
+The rotational-interior study remains the same. The football questions are how he handles directed runs and combinations, whether his rush has a repeatable counter and whether the lane remains controlled when the quarterback moves.
+
+**Tier:** Not yet graded. **Decision trigger:** Current, permitted role evidence when it becomes available. Harris's unresolved status does not confer a grade advantage on Reid, and the invitation does not prove availability in Jacksonville's sixth-round window.

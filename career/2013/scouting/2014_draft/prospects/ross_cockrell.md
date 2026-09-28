@@ -41,3 +41,13 @@ Run support requires the correct relationship to the inside fit. Oden should eva
 The strongest objection is confusing extensive experience with a dependable professional floor. Compare Cockrell with Butler on the actual outside-corner techniques and with Fuller on the larger acquisition decision. Competition level supplies context; it cannot replace the technique comparison.
 
 **Tier:** Not yet graded. **What would change the view?** Repeatable leverage, controlled transitions and reliable tackling would strengthen reserve usefulness. Repeated dependence on recovery or favorable help would narrow the coverage menu. No dated market evidence here proves that Cockrell will reach the seventh round, so he is a comparator rather than a promised replacement pick.
+
+### Week 15 addendum: evidence through December 13, 2013
+
+Cockrell is a first-team corner on the December 2 media All-ACC list. This supplies dated current-season recognition beyond the preseason biography used in the original report. [W03](../sources_week15_2013_12_13.md).
+
+The outside-corner study remains appropriate, but the honor does not establish target efficiency or professional recovery speed. Continue to separate initial leverage from later recovery, and route recognition from a favorable opportunity at the catch point.
+
+Butler's newly dated season statistics improve the comparison's evidence base. Their respective recognition and production should lead to examination of complete coverage situations, rather than a conference-name shortcut. Fuller's additional national recognition similarly belongs in the comparison without resolving his medical status.
+
+**Tier:** Not yet graded. **Decision trigger:** Dependable outside technique, controlled tackling and an independently evidenced teams pathway. The new recognition does not make Cockrell a verified seventh-round fallback or close a nickel projection.

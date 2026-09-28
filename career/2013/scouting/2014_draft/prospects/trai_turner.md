@@ -80,3 +80,21 @@ Stone's third-round focus is an evaluation target, not a price quotation. Compar
 **Tier:** Not yet graded. Identity and the prior right-guard role are well supported; NFL anchor, communication, exact market range and eligibility remain distinct unresolved items. No medical conclusion is drawn from the absence of a current report.
 
 **What would make us change our mind?** Verified special eligibility is necessary before selection. On football, a stable pocket against isolated interior power, clean exchanges and correction retention would strengthen the case. Repeated quick pressure through his assigned gap would weaken it even if the pull-blocking tape is attractive. A changed declaration status changes availability, not ability.
+
+### Week 15 addendum: evidence through December 13, 2013
+
+**New evidence:** LSU's December 9 announcement names Turner to the AP All-SEC second team. The complete AP list published separately by Ole Miss corroborates the selection and still identifies him as a sophomore. This is the AP team, not an interchangeable claim about the coaches' ballot. [W05–W06](../sources_week15_2013_12_13.md).
+
+**Eligibility:** Still conditional. The new award is not a declaration, and this research pass did not establish a dated entry into the 2014 pool by December 13. No selection recommendation follows from it.
+
+**Answer to the Phase IV question:** Right guard remains the first-role study. The run-movement case has contemporary support in the earlier August assessment; the new recognition broadens the season résumé. Independent anchor, first-contact control and protection communication remain OPEN. Neither the award nor LSU's overall offensive production establishes Turner's responsibility on a particular play.
+
+The important comparison is whether the guard can preserve useful pocket depth without sacrificing the movement that makes Power and Counter attractive. A heavy first strike is not enough if the feet stop. A quick pull is not enough if the target changes and he cannot arrive under control. The report should retain those distinctions when comparing him with Jackson, Richardson and Thomas.
+
+**Teaching implication:** The proposed first sequence is right-guard stance and contact, then ACE work with the center, then the guard-tackle exchange. Brewster's point and Johnson's adjacent assignment give the evaluation concrete relationships. A center or tackle conversion is not part of the initial recommendation.
+
+The communication burden cannot be answered from an award list. Tice and Yarno would need evidence that a correction transfers to a different front, rather than being repeated only against the same picture. This addendum does not invent that coaching exchange.
+
+**Best objection after the update:** The acquisition plan remains exposed to two independent uncertainties: whether Turner enters and whether his protection supports the complete offense. A stronger college résumé does not close either.
+
+**Tier:** Not yet graded. **Next decision-changing evidence:** A dated eligibility event for acquisition, and a connected protection sequence showing identification, contact and recovery for the football evaluation. If he remains outside the pool, the guard alternatives remain active research options without an automatic grade increase.

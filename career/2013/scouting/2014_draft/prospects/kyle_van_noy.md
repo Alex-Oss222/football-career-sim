@@ -39,3 +39,15 @@ For rush work, identify whether success comes against tackles, tight ends, backs
 The objection is selecting a hybrid without identifying the job that earns his snaps. If he is purchased as an edge rusher but cannot win there independently, the coverage value may be insufficient compensation at an early price. If he can handle the strong-side job and add useful pressure, the roster case is broader.
 
 **Tier:** Not yet graded. **What would change the view?** Independent rush wins and dependable base contact would increase role flexibility. Coverage that is useful only in a narrow zone assignment would reduce it. The contemporary market signal argues for evaluating him before Jacksonville's third-round window, not assuming that window will contain him.
+
+### Week 15 addendum: evidence through December 13, 2013
+
+The December 12 Walter Camp team lists Van Noy on the second team. That is additional college recognition available in this window. [W14](../sources_week15_2013_12_13.md).
+
+The first-role proposal remains SAM with a limited pressure complement. Recognition does not resolve the earlier tension between a productive college rush record and the question of whether independent professional edge rushing should be his principal purchase.
+
+Compare him with Jones on strong-side contact, coverage responsibility and the cost of adding rush work. Compare him with Telvin Smith only after acknowledging that the proposed WILL job is different. Selecting one to solve the other's assignment would leave the original roster question unanswered.
+
+The teams study remains separate: blocked-kick background is relevant, but no new coverage-unit evidence is established by the award list.
+
+**Tier:** Not yet graded. **Decision trigger:** A dependable base assignment plus an independently supported complementary skill. No acquisition range is moved merely because the postseason résumé is stronger.

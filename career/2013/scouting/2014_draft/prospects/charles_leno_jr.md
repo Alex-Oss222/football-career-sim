@@ -80,3 +80,19 @@ The strongest objection is spending a pick and roster spot on a reserve who is n
 **Tier:** Not yet graded. College position history is better established than the reserve floor. No reliable December 1 market range has been confirmed for Leno in this packet.
 
 **What would make us change our mind?** Correct protection on both sides against varied rush types and exchanges would support a genuine swing role. A stable left-side file with persistent right-side failure would keep him as a single-position development player. Repeated losses that require protection help on routine snaps would reduce the reserve value, regardless of attractive movement in the run game.
+
+### Week 15 addendum: evidence through December 13, 2013
+
+**New evidence:** Boise State's December 10 release identifies Leno as a first-team All-Mountain West left tackle. The same dated release reports 38 consecutive starts, including the most recent 25 at left tackle. These are the school's figures as of that release, not later complete-career totals. [W02](../sources_week15_2013_12_13.md).
+
+**Answer to the Phase IV question:** Whether he can dress as a rookie reserve remains OPEN. The new source strengthens the experience record, especially on the left, but does not establish a professional emergency package on either edge.
+
+That distinction is consequential. Prior right-tackle exposure gives a reason to test the other side; the sustained recent left-tackle work gives the first study a clearer starting point. Neither tells the staff that changing stance, post foot and adjacent communication will be immediate. A long starting streak is evidence of college continuity, not proof of independent protection after a sudden NFL substitution.
+
+The next comparison with Hurst should emphasize the response to a lost first exchange. Can the tackle re-establish position without exposing the inside lane or collapsing the pocket? Can he handle a guard-tackle game when the front changes after the original point? The award supplies no answer to those questions, so the teaching proposal should stay narrower than a ready-made swing role.
+
+**Teaching and game-day cost:** One-side development remains the lower-burden plan. A credible swing role requires separately demonstrated right-side protection and communication. If the roster must move a starter to accommodate him after one injury, include that disruption in the reserve cost rather than describing him as uncomplicated depth.
+
+**Best objection after the update:** The fifth-round focus still risks buying a player whose future promise exceeds his immediate emergency utility. The December recognition does not establish that he will be available at that price.
+
+**Tier:** Not yet graded. **Next decision-changing evidence:** Complete protection work on each side and a defined emergency call menu that does not depend on constant additional help. No reserve activation or coach conclusion is recorded.

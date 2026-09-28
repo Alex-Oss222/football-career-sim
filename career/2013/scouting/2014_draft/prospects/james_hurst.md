@@ -39,3 +39,15 @@ For Power and Counter, distinguish securing the initial defender from climbing e
 The best objection is spending above a developmental price on an assumed safe tackle without proving how he handles losing situations. Compare him with Leno for reserve readiness, with Bitonio and Martin for the earlier investment, and with Brandon Thomas only after accounting for Thomas's guard-first study.
 
 **Tier:** Not yet graded. **What would change the view?** Repeatable recovery, competent work on both edges and protection that does not require extensive help would strengthen reserve value. A one-side projection requiring a restricted pass menu would reduce immediate usefulness. No post-cutoff injury, workout or draft outcome is used to influence this report.
+
+### Week 15 addendum: evidence through December 13, 2013
+
+The December 2 media All-ACC announcement names Hurst to the first team at tackle. That is a dated update to the preseason protection assessment used in the earlier report. [W03](../sources_week15_2013_12_13.md).
+
+The reserve comparison with Leno remains a question of complete protection utility. A conference honor does not establish emergency work on both sides, a response to the inside counter or recovery after a failed opening strike.
+
+Investigate the college left-tackle evidence first, then conduct a separate right-side projection. If only one side is supported, state the roster accommodation required to dress him. Do not let an experienced-starter résumé stand in for a verified swing role.
+
+Hurst also remains a useful comparison against paying earlier for Bitonio or Martin, but this update does not establish that he will reach the fifth-round window.
+
+**Tier:** Not yet graded. **Decision trigger:** Controlled protection across varied rushes and exchanges, plus explicit evidence for any second-side responsibility. No post-cutoff medical event is used.

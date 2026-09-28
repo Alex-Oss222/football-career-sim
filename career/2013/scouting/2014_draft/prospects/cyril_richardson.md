@@ -37,3 +37,13 @@ Pass protection is the decisive limit on a guard-first early selection. In SCAT,
 Richardson versus Turner is partly an eligibility and resource question: the former is a senior comparison; Turner remains conditional. Richardson versus Bitonio or Martin is primarily a role question: guard confidence may be more useful than a speculative tackle/guard combination, but it purchases different roster flexibility.
 
 The best objection is paying for college displacement without confirming isolated pass protection and movement on the intended runs. **Tier:** Not yet graded. **What would change the view?** Controlled pass sets against quickness, effective pulls through traffic and properly timed combinations would support broader usage. Protection requiring persistent adjacent help would reduce the value even if the run blocking remains attractive.
+
+### Week 15 addendum: evidence through December 13, 2013
+
+Baylor's December 12 release names Richardson a first-team Walter Camp All-American; the contemporaneous complete team published by Texas A&M corroborates the selection. [W14–W15](../sources_week15_2013_12_13.md).
+
+The new recognition belongs in the early guard comparison. It does not establish that his pulling path, pass-set recovery or independent anchor has improved since the earlier report. Awards summarize judgments about college performance; they do not identify the particular professional assignment that makes an early purchase worthwhile.
+
+Guard remains the first-role study. Compare him with Jackson on isolated protection and with Turner on the intended movement assignments. Compare him with Bitonio and Martin only after accounting for their unresolved tackle/interior split. That keeps the same resource question attached to each alternative.
+
+**Tier:** Not yet graded. **Decision trigger:** A broad guard role supported by protection and run evidence, with no excessive help requirement. The additional honor does not guarantee a first-round valuation, a fall into round three or availability at any exact pick.

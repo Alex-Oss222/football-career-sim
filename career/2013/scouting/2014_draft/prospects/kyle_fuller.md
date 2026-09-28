@@ -37,3 +37,15 @@ The physical reputation makes run support worth studying, but collision willingn
 The strongest objection is combining an early acquisition cost with unresolved health and assuming a broad secondary role will justify both. The reason to investigate is that a credible outside-corner projection can be a different roster purchase from a late developmental corner. Compare his coverage evidence with Cockrell's and Butler's, while comparing acquisition cost separately.
 
 **Tier:** Not yet graded. **What would change the view?** Dated medical information, subsequently available participation evidence and repeatable coverage technique could strengthen the case. Dependence on a narrow coverage setting would reduce flexibility. The second-round market signal means Jacksonville must account for the missing pick, rather than casually scheduling this option for later.
+
+### Week 15 addendum: evidence through December 13, 2013
+
+Fuller appears on the December 2 media All-ACC third team and the December 12 Walter Camp second team. The selections cover different electorates and scopes; they should not be presented as a contradiction or as interchangeable position rankings. [W03, W14](../sources_week15_2013_12_13.md).
+
+**Medical gate:** This pass does not establish dated clearance or a completed return by December 13. The November surgery report remains a separate availability issue. An award is evidence about recognized performance, not permission to assume recovery.
+
+Outside corner remains the first-role study. Keep the coverage comparison with Cockrell and Butler independent of the health question: technique can be promising while participation remains unresolved, and medical clearance would not itself prove press, off or tackling reliability.
+
+The early-investment case still has to support both acquisition cost and a usable coverage role. No future practice, bowl appearance or workout is imported to settle the question.
+
+**Tier:** Not yet graded. **Decision trigger:** Dated medical information plus complete coverage evidence. The new honors change the résumé, not the clearance status.

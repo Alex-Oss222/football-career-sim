@@ -6,6 +6,8 @@ Jacksonville's scouting records for the 2013 career year. Records here are dated
 |---|---|
 | [2014_draft_focus_directive.md](2014_draft_focus_directive.md) | Stone's Week 11 coaching focus for the 2014 draft (plan, not a board) |
 | [2014_draft/](2014_draft/README.md) | Twenty detailed prospect research reports: seven Stone priorities and thirteen comparisons, with process and template |
+| [Week 15 scouting update](2014_draft/week15_scouting_update.md) | Latest addenda for all twenty players, with December 13 prospect evidence and December 15 branch context |
+| [Week 15 evidence register](2014_draft/sources_week15_2013_12_13.md) | New dated releases, game/statistical evidence and verification limits |
 | [Pick windows and decisions](2014_draft/pick_windows_2013_12_01.md) | Role comparisons, target-unavailable scenarios, the missing second-round pick and the shared sixth-round focus |
 | [December 1 evidence register](2014_draft/sources_2013_12_01.md) | Dated sources, verification outcomes and unresolved evidence |
 

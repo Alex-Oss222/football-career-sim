@@ -37,3 +37,13 @@ In the run game, compare down-block leverage with reach-block positioning. Stone
 The best objection is paying an early price for nominal versatility while the first usable job is still unresolved. Compare Martin and Bitonio at tackle before comparing either with Richardson or Jackson at guard. If Martin proves the better tackle and the team values that role, his interior possibility is a bonus. If only guard is convincing, value him against the guards.
 
 **Tier:** Not yet graded. **What would change the view?** Sustained edge protection and recoveries against counters would strengthen the tackle case. Repeated dependence on help would narrow it. Interior work would need its own evidence before changing the first-job recommendation. The contemporary market signal makes waiting until round three a risk, not proof of unavailability.
+
+### Week 15 addendum: evidence through December 13, 2013
+
+This pass does not establish a new individual technique finding or a revised acquisition range for Martin. The earlier tackle-first study therefore continues on its existing evidence, with guard evaluated separately. An omitted award or an unsuccessful search is not a negative football finding.
+
+The comparison has nevertheless changed around him: the dated December evidence strengthens the college résumés of Bitonio, Richardson and Jackson. That creates a better comparison set without proving which player has the best professional role. The correct response is to match protection situations and teaching costs, not to move Martin down because another player received recognition.
+
+For Stone's early investment, the unresolved distinction remains tackle value versus interior value. If Martin's strongest usable job is guard, compare it directly with the established guard prospects. If tackle remains stronger, price the reserve and future starting benefit against Jacksonville's actual line.
+
+**Tier:** Not yet graded. **Decision trigger:** Independent edge protection and recovery evidence, followed by a separate interior assessment if proposed. The missing second-round pick remains relevant, but no new precise market price is claimed.

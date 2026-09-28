@@ -80,3 +80,21 @@ The strongest objection is the combined uncertainty: selection status, recent fo
 **Tier:** Not yet graded; not on a cleared acquisition list. Confidence in the prior defensive-tackle record is materially higher than confidence in a December 1 NFL projection.
 
 **What would make us change our mind?** A dated eligibility determination, a current permitted evaluation and independently verified role evidence could move the file from hold to a real acquisition comparison. Unresolved status keeps the hold in place. A disappointing current evaluation would weaken the football case without requiring speculation about private conduct.
+
+### Week 15 addendum: evidence through December 13, 2013
+
+**Phase IV status:** No coach football conclusion, as the Week 15 directive requires. The research pass did not establish a dated source resolving Harris's eligibility or fall-2013 status by this cutoff. The prior historical defensive-line evidence remains usable, but acquisition clearance remains UNRESOLVED.
+
+This is a bounded research result, not proof that no relevant document existed. Later professional profiles cannot be used to supply an earlier clearance, current training record or personal explanation. The source register records that timing limitation without importing those later accounts. [Week 15 source register](../sources_week15_2013_12_13.md).
+
+**What can be updated now:** The acquisition comparison should explicitly carry Harris as a hold, not as a cleared sixth-round choice. He and Paradis appear in the same focus window, but only one owned selection exists there. A status hold cannot be solved by penciling Harris into another round or an undrafted signing, since those routes also require eligibility.
+
+**First alignment:** Still unassigned. The earlier interior record can support a historical study, but the report does not convert that into a current three-technique, nose or end decision. Pleasant and Crennel's role question begins only after the stated gate is satisfied.
+
+**Development-cost implication:** There is no responsible current estimate of time to useful snaps without a lawful current evaluation and the necessary status/medical information. The broader teaching sequence can be described conditionally: one alignment, its run fit, a rush plan and lane discipline. It cannot be represented as a program Harris has begun or completed.
+
+Reid remains a comparison for interior development. Comparing a better documented active prospect with Harris does not prove the active player is better; it identifies the extra uncertainty attached to the Harris option.
+
+**Best objection after the update:** The unresolved status remains prior to the football purchase. An appealing historical play or late-round label cannot substitute for clearance.
+
+**Tier:** Not yet graded. **Next decision-changing evidence:** A dated determination of selection eligibility and verified current status. Until then, retain the hold and the prohibition on a first-practice alignment. No character verdict, private allegation or future outcome is added.
