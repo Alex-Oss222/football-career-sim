@@ -1,11 +1,11 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2014-JAN05-WILDCARD-STATE-38`
-**Supersedes:** `JAX-2013-DEC29-POSTSEASON-BRACKET-STATE-37`
+**Version:** `JAX-2014-JAN05-PLAYER-AGES-STATE-39`
+**Supersedes:** `JAX-2014-JAN05-WILDCARD-STATE-38`
 **Snapshot effective:** January 5, 2014, after the AFC Wild Card round (Jacksonville 38, Kansas City 14).
-**Last reconciled:** September 28, 2026; season-ledger Entry 62.
-**Global package checkpoint:** `Canonical update - January 5, 2014 - AFC Wild Card at Kansas City closed`
+**Last reconciled:** September 28, 2026; season-ledger Entry 63.
+**Global package checkpoint:** `Canonical update - January 5, 2014 - Player age register reconciled`
 
 ## Effective source-version manifest
 
@@ -14,8 +14,8 @@
 | Document 1 | `358ccf4feac40830055bae5e4cbd84151536ab9e` | Active foundation source |
 | Document 2 | `ab790f6e935c99a901a6d39cf3bee5183cf4da3e` | Active foundation source |
 | Document 3 | `38e0ce21e9cf1b62f8d4b9c281955facdaf07b57` | Active foundation source |
-| Document 4 | `JAX-2014-JAN05-WILDCARD-REGISTER-30`; closed by Entry 62 | Controlled 53, all active, practice squad, roles and availability after the Wild Card round |
-| Document 6 | 2013 ledger through Entry 62 | Regular season complete; AFC Wild Card closed |
+| Document 4 | `JAX-2014-JAN05-PLAYER-AGES-REGISTER-31`; closed by Entry 63 | Controlled 53, all active, practice squad, roles and availability after the Wild Card round |
+| Document 6 | 2013 ledger through Entry 63 | Regular season complete; AFC Wild Card closed; player ages reconciled |
 
 ## 1. Master clock and competition position
 
@@ -43,6 +43,8 @@
 | Working room | Approximately **$6.2M-$6.6M** before weekly practice-squad charges; **$5.4M-$5.8M** comparable full-season exposure if the opening eight remain all season |
 | Personnel/contracts/cap authority | David Caldwell |
 | Football roles | Alex Stone within eligibility and medical limits |
+
+Player birth dates and ages are in Document 4, the [roster](../career/2013/roster.md) and [league age view](../career/2013/player_ages.md). Ages are derived at the master date and checked on every repository validation; run `python scripts/render_player_ages.py` after a date or roster change. Entry 63 added identity metadata without advancing time or retiring anyone.
 
 ## 3. Availability
 

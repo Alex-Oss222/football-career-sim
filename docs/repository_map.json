@@ -201,7 +201,15 @@
     "career/2013/postseason/week_18_jacksonville_at_kansas_city/output.md",
     "career/2013/postseason/week_18_jacksonville_at_kansas_city/call_sheet.json",
     "career/2013/league_results/week_18.md",
-    "career/2013/postseason/week_19_jacksonville_at_tennessee/output.md"
+    "career/2013/postseason/week_19_jacksonville_at_tennessee/output.md",
+    "library/data/player_birth_dates.json",
+    "library/2013_player_birth_dates.md",
+    "career/2013/player_ages.md",
+    "runtime/player_bios.py",
+    "scripts/render_player_ages.py",
+    "scripts/research/build_player_birth_dates.py",
+    "tests/test_player_bios.py",
+    "library/data/player_birth_date_corrections.json"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",
