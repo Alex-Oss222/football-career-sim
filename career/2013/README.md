@@ -39,6 +39,11 @@ Start with [current state](../../state/05_Current_Season_State.md). The [season 
 
 Every regular-season week is closed. The postseason bracket and round index is `postseason/README.md`; Jacksonville won the Wild Card (38-14 at Kansas City) and was eliminated in the Divisional round (20-13 at Tennessee); Buffalo won Super Bowl XLVIII. The season is archived in ledger Entry 67. A future folder is never evidence that an event happened.
 
+## Season review
+
+- [Owner and GM review](season_review/owner_and_gm_review.md): frozen evaluation criteria and resolved retention decision.
+- [Expanded ownership review and press exit interview](season_review/stone_2013_review_and_exit_interview.md): researched narrative, separate assessment of the February 2 offseason proposal, and source notes; an interpretive companion to the controlling record.
+
 ## Canonical migrations
 
 - [Week 1 restart under kernel 2013.4](migrations/week_01_kernel_2013_4_restart.md): closed. Week 1 was replayed as event generation 3 (Entry 35).
