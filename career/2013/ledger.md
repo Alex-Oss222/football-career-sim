@@ -1301,3 +1301,20 @@ This is an engine defect. It is fixed going forward, and no game is rerun. Until
 **Next competitive event:** December 1 Week 13 at Cleveland, 1 p.m. ET. **Not simulated.**
 
 **Commit closed - Canonical update - November 24, 2013 - Week 12 at Houston closed - canonical through November 24, after Week 12**
+
+## Entry 54: Kernel 2013.9 adopted (spike seating)
+
+**Effective canonical state:** November 24, 2013, after Week 12
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - November 24, 2013 - Kernel 2013.9 adopted (spike seating)`
+**Preceding global package checkpoint:** `Canonical update - November 24, 2013 - Week 12 at Houston closed`
+
+**Decision.** At the user's instruction ("fix the spike bug"), kernel 2013.9 replaces 2013.8 for every slate from Week 13.
+
+**Defect.** Every possession starts on a stopped clock (a change of possession is an administrative stoppage, rules library R14), and an incompletion stops the clock too. The play-order layout nevertheless placed a drive's real 2012 spikes in any slot, so a spike could open a drive or follow an incompletion (Entry 53). On the 250-game synthetic sample, 40 of 87 spikes were misplaced. Background receipts keep no snap order, which is why only one surfaced in canon.
+
+**Fix.** `play_detail._seat_spikes` moves each misplaced spike to just after the nearest run, sack or completion. The change touches snap order only. It consumes no randomness, and scores, drive summaries, statistics and attributions are identical to 2013.8 across all 250 sample games. After the fix, 0 of 87 spikes are misplaced. Sources and tests: `library/2013_nfl_playing_rules_for_simulation.md` (R13/R14 spikes row), `runtime/README.md`, `tests/test_spike_seating.py`.
+
+**Closed results stand.** Weeks 11-12 remain the 2013.8 audit cohort, and the Week 12 spike stays as closed. Nothing is rerun.
+
+**Commit closed - Canonical update - November 24, 2013 - Kernel 2013.9 adopted (spike seating) - canonical through November 24, after Week 12**
