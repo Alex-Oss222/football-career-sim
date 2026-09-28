@@ -1,10 +1,10 @@
 # Jacksonville Jaguars roster
 
-**As of:** November 3, 2013, after the Week 9 bye.
+**As of:** November 10, 2013, after Week 10.
 **Canonical controlled-player count:** **53**.
 **Active roster:** **53**; Justin Blackmon was reinstated from Reserve/Suspended on October 7 and activated to the open spot (ledger Entry 42).
 **Practice squad:** **8**, separate from the active roster.
-**Record:** preseason 2-2; regular season 6-2 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London).
+**Record:** preseason 2-2; regular season 6-3 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11).
 
 ## 1. How to read this page
 
@@ -68,9 +68,9 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| Mark Asper | G | Active 53 | No communicated restriction | Interior OL depth |
+| Mark Asper | G | Active 53 | No communicated restriction | Interior OL depth (game-day inactive Week 10) |
 | Uche Nwaneri | G | Active 53 | No communicated restriction | Starting LG |
-| Austin Pasztor | G | Active 53 | No communicated restriction | — |
+| Austin Pasztor | G | Active 53 | No communicated restriction | Game-day interior OL reserve (from Week 10) |
 | Will Rackley | G | Active 53 | Limited, no projected absence (upper extremity, Week 5) | Starting right guard |
 
 ### Centers (2)
@@ -115,7 +115,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| Alan Ball | CB | Active 53 | No communicated restriction | Starting CB |
+| Alan Ball | CB | Active 53 | Out, trunk (Week 10); projected return January 22, 2014 | Starting CB (unavailable) |
 | A.J. Bouye | CB | Active 53 | No communicated restriction | Coverage units |
 | Brent Grimes | CB | Active 53 | No communicated restriction | Starting CB |
 | Mike Harris | CB | Active 53 | No communicated restriction | — |

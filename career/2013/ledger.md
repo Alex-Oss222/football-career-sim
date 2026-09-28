@@ -1153,3 +1153,41 @@ Pasztor and Mosley practised for the first time since Entry 46. Neither moved on
 **Next competitive event:** November 10 Week 10 at Tennessee, 1 p.m. ET. **Not simulated.**
 
 **Commit closed - Canonical update - November 3, 2013 - Week 9 bye closed - canonical through November 3, after Week 9**
+
+## Entry 50: Week 10 at Tennessee closed
+
+**Effective canonical state:** November 10, 2013, after Week 10
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - November 10, 2013 - Week 10 at Tennessee closed`
+**Preceding global package checkpoint:** `Canonical update - November 3, 2013 - Week 9 bye closed`
+
+**Result.** Tennessee 41, Jacksonville 11 at LP Field. Jacksonville is 6-3. Tennessee, also 6-3, leads the AFC South on head-to-head, and Jacksonville is the AFC's fifth seed.
+
+**Batch.** All fourteen Week 10 games closed once each under kernel 2013.7, the first Jacksonville game on it. They were drawn from the package frozen by `build_week_inputs.py 10` (sha256 `4064efc2...`) after the gate passed; the call sheet and depth chart were committed before the draw (3c41ca9).
+
+**Inputs.**
+- **Call sheet:** Stone's fifteen calls. Duo, Texas, TE Delay, RB Slow Screen and Post-Cross all resolve in the 2013.7 family map from the active 2013 book.
+- **Base personnel:** 12, with 13, 21 and 6OL protection packages.
+- **Line:** Pasztor dressed as the interior reserve and Asper was inactive.
+- **Inactives:** Asper, Mosley, C.J. Wilson, Edwards, Pendleton, Rutland, John Parker Wilson.
+
+**Game.**
+- Jacksonville turned the ball over six times: four Cousins interceptions and fumbles by Jones-Drew and Cousins. Those giveaways led to 13 Tennessee points.
+- Scobee made three of five field goals, missing from 22 and 27.
+- The defense had three sacks, including Roy Miller's safety, and an interception by Posluszny.
+- Tennessee ran for 210 yards, 126 of them by Chris Johnson.
+
+**Availability.** Cornerback Alan Ball was hurt (trunk, long-term; out, projected return January 22, 2014). No reserve-list move has been made; that is Caldwell's decision, and 2013 injured-reserve rules are not yet sourced in the library. Ball's starting spot is Stone's decision for Week 11.
+
+**Statistics, standings and awards.** One full receipt and thirteen compact receipts were kept, 147 of 147 in total. The box score, standings and statbook were regenerated, and the six Week 10 league awards were drawn by the registered method.
+
+**Engine notes (the result stands).** Kernel 2013.7 ties call labels to the ball carrier but not to personnel groups, so a 13-personnel Cross was completed to Clemons.
+
+**Overtime defect (investigated; the result stands).** Washington at Minnesota went to overtime. Kernel 2013.7 drew the whole period as one half-final possession, and Minnesota's opening drive (six plays, 77 yards, recorded as running 15:00 to 0:00) ended the game with a 20-yard field goal. Under the 2013 regular-season overtime rule, a field goal on the opening possession gives the other club a possession. Kernel 2013.6 tracked overtime possessions (`ot_status`); the 2013.7 overtime path drew one possession for the whole period.
+
+This is an engine defect. It is fixed going forward, and no game is rerun. Until it is fixed, any overtime game is recorded with this note.
+
+**Primary records:** `regular_season/week_10_jacksonville_at_tennessee/output.md` and `call_sheet.json`; `league_results/week_10.md`; `stats/game_receipts/week_10_*.json`; `awards/`; `standings.md`; `depth_chart.json`.
+**Next competitive event:** November 17 Week 11 vs Arizona, 1 p.m. ET. **Not simulated.**
+
+**Commit closed - Canonical update - November 10, 2013 - Week 10 at Tennessee closed - canonical through November 10, after Week 10**

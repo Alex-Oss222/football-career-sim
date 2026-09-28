@@ -1,6 +1,6 @@
 # 2013 NFL standings
 
-**Through:** Week 9.
+**Through:** Week 10.
 **Scope:** all 32 clubs; regular-season games only.
 **Source:** generated from the closed-game receipts in `stats/game_receipts/` by `python scripts/render_standings.py 2013`. Past weeks: add `--through-week N`.
 
@@ -16,71 +16,71 @@ Clubs are ordered by winning percentage, ties broken by the division procedure.
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
 | New York Jets | 7 | 2 | 0 | .778 | 207 | 166 | +41 | 4-1-0 | 3-1-0 | 1-2-0 | 4-2-0 | W6 |
 | New England Patriots | 5 | 4 | 0 | .556 | 201 | 136 | +65 | 5-0-0 | 0-4-0 | 2-2-0 | 3-3-0 | W2 |
-| Miami Dolphins | 4 | 4 | 0 | .500 | 138 | 134 | +4 | 2-2-0 | 2-2-0 | 0-2-0 | 4-2-0 | W1 |
-| Buffalo Bills | 4 | 5 | 0 | .444 | 185 | 197 | -12 | 2-3-0 | 2-2-0 | 3-0-0 | 4-3-0 | L2 |
+| Miami Dolphins | 4 | 5 | 0 | .444 | 159 | 171 | -12 | 2-2-0 | 2-3-0 | 0-2-0 | 4-2-0 | L1 |
+| Buffalo Bills | 4 | 6 | 0 | .400 | 199 | 214 | -15 | 2-3-0 | 2-3-0 | 3-0-0 | 4-4-0 | L3 |
 
 ### AFC North
 
 | Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
+| Pittsburgh Steelers | 5 | 4 | 0 | .556 | 199 | 200 | -1 | 2-2-0 | 3-2-0 | 2-0-0 | 4-3-0 | W1 |
 | Cleveland Browns | 5 | 4 | 0 | .556 | 176 | 177 | -1 | 3-2-0 | 2-2-0 | 3-0-0 | 4-2-0 | W1 |
-| Pittsburgh Steelers | 4 | 4 | 0 | .500 | 182 | 186 | -4 | 1-2-0 | 3-2-0 | 2-0-0 | 3-3-0 | L1 |
-| Baltimore Ravens | 3 | 5 | 0 | .375 | 144 | 214 | -70 | 1-2-0 | 2-3-0 | 0-3-0 | 3-4-0 | L4 |
-| Cincinnati Bengals | 1 | 8 | 0 | .111 | 166 | 210 | -44 | 1-3-0 | 0-5-0 | 0-2-0 | 1-5-0 | L4 |
+| Baltimore Ravens | 4 | 5 | 0 | .444 | 161 | 224 | -63 | 2-2-0 | 2-3-0 | 1-3-0 | 4-4-0 | W1 |
+| Cincinnati Bengals | 1 | 9 | 0 | .100 | 176 | 227 | -51 | 1-3-0 | 0-6-0 | 0-3-0 | 1-6-0 | L5 |
 
 ### AFC South
 
 | Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
-| **Jacksonville Jaguars** | 6 | 2 | 0 | .750 | 191 | 126 | +65 | 4-0-0 | 2-2-0 | 1-0-0 | 4-1-0 | W3 |
-| Tennessee Titans | 5 | 3 | 0 | .625 | 151 | 148 | +3 | 2-2-0 | 3-1-0 | 1-0-0 | 3-2-0 | L1 |
-| Houston Texans | 4 | 4 | 0 | .500 | 194 | 168 | +26 | 3-1-0 | 1-3-0 | 1-1-0 | 2-3-0 | W1 |
-| Indianapolis Colts | 3 | 5 | 0 | .375 | 126 | 160 | -34 | 2-2-0 | 1-3-0 | 0-2-0 | 1-5-0 | L3 |
+| Tennessee Titans | 6 | 3 | 0 | .667 | 192 | 159 | +33 | 3-2-0 | 3-1-0 | 2-0-0 | 4-2-0 | W1 |
+| **Jacksonville Jaguars** | 6 | 3 | 0 | .667 | 202 | 167 | +35 | 4-0-0 | 2-3-0 | 1-1-0 | 4-2-0 | L1 |
+| Houston Texans | 4 | 5 | 0 | .444 | 211 | 201 | +10 | 3-1-0 | 1-4-0 | 1-1-0 | 2-3-0 | L1 |
+| Indianapolis Colts | 3 | 6 | 0 | .333 | 136 | 183 | -47 | 2-3-0 | 1-3-0 | 0-2-0 | 1-5-0 | L4 |
 
 ### AFC West
 
 | Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
-| San Diego Chargers | 4 | 3 | 1 | .562 | 174 | 168 | +6 | 2-1-0 | 2-2-1 | 0-1-0 | 2-3-0 | T1 |
-| Denver Broncos | 4 | 4 | 0 | .500 | 182 | 180 | +2 | 2-3-0 | 2-1-0 | 1-0-0 | 2-2-0 | W2 |
+| San Diego Chargers | 5 | 3 | 1 | .611 | 202 | 178 | +24 | 3-1-0 | 2-2-1 | 1-1-0 | 3-3-0 | W1 |
+| Denver Broncos | 4 | 5 | 0 | .444 | 192 | 208 | -16 | 2-3-0 | 2-2-0 | 1-1-0 | 2-3-0 | L1 |
 | Kansas City Chiefs | 4 | 5 | 0 | .444 | 203 | 212 | -9 | 2-3-0 | 2-2-0 | 0-1-0 | 3-3-0 | W3 |
-| Oakland Raiders | 3 | 5 | 0 | .375 | 125 | 162 | -37 | 2-3-0 | 1-2-0 | 2-1-0 | 3-3-0 | L2 |
+| Oakland Raiders | 3 | 6 | 0 | .333 | 142 | 192 | -50 | 2-3-0 | 1-3-0 | 2-1-0 | 3-3-0 | L3 |
 
 ### NFC East
 
 | Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
-| Philadelphia Eagles | 5 | 4 | 0 | .556 | 206 | 207 | -1 | 1-3-0 | 4-1-0 | 2-2-0 | 3-2-0 | W1 |
-| Dallas Cowboys | 5 | 4 | 0 | .556 | 207 | 219 | -12 | 4-1-0 | 1-3-0 | 2-1-0 | 3-3-0 | L3 |
-| Washington Redskins | 3 | 4 | 1 | .438 | 146 | 165 | -19 | 1-2-1 | 2-2-0 | 1-1-0 | 2-3-0 | T1 |
-| New York Giants | 3 | 5 | 0 | .375 | 164 | 186 | -22 | 0-3-0 | 3-2-0 | 1-2-0 | 2-4-0 | W1 |
+| Philadelphia Eagles | 5 | 5 | 0 | .500 | 212 | 217 | -5 | 1-3-0 | 4-2-0 | 2-2-0 | 3-3-0 | L1 |
+| Dallas Cowboys | 5 | 5 | 0 | .500 | 210 | 239 | -29 | 4-1-0 | 1-4-0 | 2-1-0 | 3-4-0 | L4 |
+| New York Giants | 4 | 5 | 0 | .444 | 194 | 203 | -9 | 1-3-0 | 3-2-0 | 1-2-0 | 2-4-0 | W2 |
+| Washington Redskins | 3 | 5 | 1 | .389 | 159 | 181 | -22 | 1-2-1 | 2-3-0 | 1-1-0 | 2-4-0 | L1 |
 
 ### NFC North
 
 | Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
-| Minnesota Vikings | 7 | 1 | 0 | .875 | 191 | 152 | +39 | 3-1-0 | 4-0-0 | 3-0-0 | 6-0-0 | W4 |
-| Chicago Bears | 5 | 3 | 0 | .625 | 180 | 138 | +42 | 2-2-0 | 3-1-0 | 1-2-0 | 3-3-0 | L1 |
-| Detroit Lions | 5 | 3 | 0 | .625 | 217 | 178 | +39 | 2-2-0 | 3-1-0 | 1-2-0 | 3-3-0 | W4 |
-| Green Bay Packers | 4 | 4 | 0 | .500 | 175 | 188 | -13 | 1-3-0 | 3-1-0 | 1-2-0 | 2-3-0 | W1 |
+| Minnesota Vikings | 8 | 1 | 0 | .889 | 207 | 165 | +42 | 4-1-0 | 4-0-0 | 3-0-0 | 7-0-0 | W5 |
+| Detroit Lions | 6 | 3 | 0 | .667 | 255 | 208 | +47 | 2-2-0 | 4-1-0 | 2-2-0 | 4-3-0 | W5 |
+| Green Bay Packers | 5 | 4 | 0 | .556 | 185 | 194 | -9 | 2-3-0 | 3-1-0 | 1-2-0 | 3-3-0 | W2 |
+| Chicago Bears | 5 | 4 | 0 | .556 | 210 | 176 | +34 | 2-3-0 | 3-1-0 | 1-3-0 | 3-4-0 | L2 |
 
 ### NFC South
 
 | Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
-| Atlanta Falcons | 4 | 4 | 0 | .500 | 183 | 178 | +5 | 1-3-0 | 3-1-0 | 2-1-0 | 2-3-0 | W1 |
-| New Orleans Saints | 4 | 4 | 0 | .500 | 182 | 194 | -12 | 3-1-0 | 1-3-0 | 0-2-0 | 2-2-0 | L1 |
-| Carolina Panthers | 3 | 5 | 0 | .375 | 158 | 169 | -11 | 0-4-0 | 3-1-0 | 1-1-0 | 2-5-0 | L1 |
-| Tampa Bay Buccaneers | 3 | 5 | 0 | .375 | 140 | 161 | -21 | 2-2-0 | 1-3-0 | 2-1-0 | 3-3-0 | L2 |
+| Atlanta Falcons | 5 | 4 | 0 | .556 | 211 | 190 | +21 | 2-3-0 | 3-1-0 | 2-1-0 | 3-3-0 | W2 |
+| New Orleans Saints | 5 | 4 | 0 | .556 | 202 | 197 | +5 | 4-1-0 | 1-3-0 | 0-2-0 | 3-2-0 | W1 |
+| Carolina Panthers | 4 | 5 | 0 | .444 | 177 | 178 | -1 | 0-4-0 | 4-1-0 | 1-1-0 | 3-5-0 | W1 |
+| Tampa Bay Buccaneers | 4 | 5 | 0 | .444 | 177 | 182 | -5 | 3-2-0 | 1-3-0 | 2-1-0 | 3-3-0 | W1 |
 
 ### NFC West
 
 | Team | W | L | T | Pct | PF | PA | Diff | Home | Away | Div | Conf | Strk |
 |---|--:|--:|--:|--:|--:|--:|--:|---|---|---|---|---|
-| St. Louis Rams | 7 | 2 | 0 | .778 | 234 | 180 | +54 | 5-0-0 | 2-2-0 | 3-0-0 | 5-1-0 | W3 |
-| Arizona Cardinals | 3 | 5 | 0 | .375 | 172 | 217 | -45 | 2-2-0 | 1-3-0 | 1-2-0 | 3-5-0 | W1 |
-| Seattle Seahawks | 3 | 6 | 0 | .333 | 173 | 173 | 0 | 1-3-0 | 2-3-0 | 1-2-0 | 3-2-0 | W1 |
-| San Francisco 49ers | 2 | 6 | 0 | .250 | 154 | 178 | -24 | 1-3-0 | 1-3-0 | 1-2-0 | 1-3-0 | L3 |
+| St. Louis Rams | 8 | 2 | 0 | .800 | 257 | 190 | +67 | 5-0-0 | 3-2-0 | 3-0-0 | 5-1-0 | W4 |
+| Arizona Cardinals | 4 | 5 | 0 | .444 | 205 | 234 | -29 | 3-2-0 | 1-3-0 | 1-2-0 | 3-5-0 | W2 |
+| Seattle Seahawks | 3 | 7 | 0 | .300 | 185 | 201 | -16 | 1-3-0 | 2-4-0 | 1-2-0 | 3-3-0 | L1 |
+| San Francisco 49ers | 2 | 7 | 0 | .222 | 163 | 197 | -34 | 1-4-0 | 1-3-0 | 1-2-0 | 1-4-0 | L4 |
 
 ## Conference standings and playoff seeding
 
@@ -90,43 +90,43 @@ If the season ended today. Seeds 1-4 are the division leaders ordered by record;
 
 | Rank | Team | Division | W | L | T | Pct | Div | Conf | SOV | SOS | Status |
 |--:|---|---|--:|--:|--:|--:|---|---|--:|--:|---|
-| 1 | New York Jets | East | 7 | 2 | 0 | .778 | 1-2-0 | 4-2-0 | .448 | .461 | Seed 1, division leader |
-| 2 | **Jacksonville Jaguars** | South | 6 | 2 | 0 | .750 | 1-0-0 | 4-1-0 | .410 | .455 | Seed 2, division leader |
-| 3 | San Diego Chargers | West | 4 | 3 | 1 | .562 | 0-1-0 | 2-3-0 | .529 | .523 | Seed 3, division leader |
-| 4 | Cleveland Browns | North | 5 | 4 | 0 | .556 | 3-0-0 | 4-2-0 | .357 | .467 | Seed 4, division leader |
-| 5 | Tennessee Titans | South | 5 | 3 | 0 | .625 | 1-0-0 | 3-2-0 | .405 | .522 | Seed 5, wild card |
-| 6 | New England Patriots | East | 5 | 4 | 0 | .556 | 2-2-0 | 3-3-0 | .537 | .500 | Seed 6, wild card |
-| 7 | Miami Dolphins | East | 4 | 4 | 0 | .500 | 0-2-0 | 4-2-0 | .353 | .426 | Out of the field |
-| 8 | Pittsburgh Steelers | North | 4 | 4 | 0 | .500 | 2-0-0 | 3-3-0 | .424 | .537 | Out of the field |
-| 9 | Denver Broncos | West | 4 | 4 | 0 | .500 | 1-0-0 | 2-2-0 | .391 | .477 | Out of the field |
-| 10 | Houston Texans | South | 4 | 4 | 0 | .500 | 1-1-0 | 2-3-0 | .515 | .470 | Out of the field |
-| 11 | Kansas City Chiefs | West | 4 | 5 | 0 | .444 | 0-1-0 | 3-3-0 | .514 | .526 | Out of the field |
-| 12 | Buffalo Bills | East | 4 | 5 | 0 | .444 | 3-0-0 | 4-3-0 | .486 | .468 | Out of the field |
-| 13 | Oakland Raiders | West | 3 | 5 | 0 | .375 | 2-1-0 | 3-3-0 | .580 | .515 | Out of the field |
-| 14 | Baltimore Ravens | North | 3 | 5 | 0 | .375 | 0-3-0 | 3-4-0 | .480 | .507 | Out of the field |
-| 15 | Indianapolis Colts | South | 3 | 5 | 0 | .375 | 0-2-0 | 1-5-0 | .320 | .469 | Out of the field |
-| 16 | Cincinnati Bengals | North | 1 | 8 | 0 | .111 | 0-2-0 | 1-5-0 | .556 | .566 | Out of the field |
+| 1 | New York Jets | East | 7 | 2 | 0 | .778 | 1-2-0 | 4-2-0 | .484 | .482 | Seed 1, division leader |
+| 2 | Tennessee Titans | South | 6 | 3 | 0 | .667 | 2-0-0 | 4-2-0 | .436 | .536 | Seed 2, division leader |
+| 3 | San Diego Chargers | West | 5 | 3 | 1 | .611 | 1-1-0 | 3-3-0 | .489 | .476 | Seed 3, division leader |
+| 4 | Pittsburgh Steelers | North | 5 | 4 | 0 | .556 | 2-0-0 | 4-3-0 | .426 | .518 | Seed 4, division leader |
+| 5 | **Jacksonville Jaguars** | South | 6 | 3 | 0 | .667 | 1-1-0 | 4-2-0 | .391 | .464 | Seed 5, wild card |
+| 6 | Cleveland Browns | North | 5 | 4 | 0 | .556 | 3-0-0 | 4-2-0 | .383 | .482 | Seed 6, wild card |
+| 7 | New England Patriots | East | 5 | 4 | 0 | .556 | 2-2-0 | 3-3-0 | .556 | .506 | Out of the field |
+| 8 | Miami Dolphins | East | 4 | 5 | 0 | .444 | 0-2-0 | 4-2-0 | .351 | .434 | Out of the field |
+| 9 | Baltimore Ravens | North | 4 | 5 | 0 | .444 | 1-3-0 | 4-4-0 | .342 | .446 | Out of the field |
+| 10 | Houston Texans | South | 4 | 5 | 0 | .444 | 1-1-0 | 2-3-0 | .513 | .476 | Out of the field |
+| 11 | Denver Broncos | West | 4 | 5 | 0 | .444 | 1-1-0 | 2-3-0 | .375 | .470 | Out of the field |
+| 12 | Kansas City Chiefs | West | 4 | 5 | 0 | .444 | 0-1-0 | 3-3-0 | .474 | .500 | Out of the field |
+| 13 | Buffalo Bills | East | 4 | 6 | 0 | .400 | 3-0-0 | 4-4-0 | .459 | .484 | Out of the field |
+| 14 | Indianapolis Colts | South | 3 | 6 | 0 | .333 | 0-2-0 | 1-5-0 | .286 | .476 | Out of the field |
+| 15 | Oakland Raiders | West | 3 | 6 | 0 | .333 | 2-1-0 | 3-3-0 | .574 | .488 | Out of the field |
+| 16 | Cincinnati Bengals | North | 1 | 9 | 0 | .100 | 0-3-0 | 1-6-0 | .556 | .549 | Out of the field |
 
 ### NFC
 
 | Rank | Team | Division | W | L | T | Pct | Div | Conf | SOV | SOS | Status |
 |--:|---|---|--:|--:|--:|--:|---|---|--:|--:|---|
-| 1 | Minnesota Vikings | North | 7 | 1 | 0 | .875 | 3-0-0 | 6-0-0 | .517 | .515 | Seed 1, division leader |
-| 2 | St. Louis Rams | West | 7 | 2 | 0 | .778 | 3-0-0 | 5-1-0 | .456 | .473 | Seed 2, division leader |
-| 3 | Philadelphia Eagles | East | 5 | 4 | 0 | .556 | 2-2-0 | 3-2-0 | .439 | .446 | Seed 3, division leader |
-| 4 | Atlanta Falcons | South | 4 | 4 | 0 | .500 | 2-1-0 | 2-3-0 | .485 | .537 | Seed 4, division leader |
-| 5 | Chicago Bears | North | 5 | 3 | 0 | .625 | 1-2-0 | 3-3-0 | .402 | .485 | Seed 5, wild card |
-| 6 | Detroit Lions | North | 5 | 3 | 0 | .625 | 1-2-0 | 3-3-0 | .430 | .500 | Seed 6, wild card |
-| 7 | Dallas Cowboys | East | 5 | 4 | 0 | .556 | 2-1-0 | 3-3-0 | .512 | .573 | Out of the field |
-| 8 | New Orleans Saints | South | 4 | 4 | 0 | .500 | 0-2-0 | 2-2-0 | .485 | .522 | Out of the field |
-| 9 | Green Bay Packers | North | 4 | 4 | 0 | .500 | 1-2-0 | 2-3-0 | .333 | .477 | Out of the field |
-| 10 | Washington Redskins | East | 3 | 4 | 1 | .438 | 1-1-0 | 2-3-0 | .480 | .538 | Out of the field |
-| 11 | Arizona Cardinals | West | 3 | 5 | 0 | .375 | 1-2-0 | 3-5-0 | .458 | .470 | Out of the field |
-| 12 | New York Giants | East | 3 | 5 | 0 | .375 | 1-2-0 | 2-4-0 | .462 | .559 | Out of the field |
-| 13 | Carolina Panthers | South | 3 | 5 | 0 | .375 | 1-1-0 | 2-5-0 | .400 | .507 | Out of the field |
-| 14 | Tampa Bay Buccaneers | South | 3 | 5 | 0 | .375 | 2-1-0 | 3-3-0 | .458 | .500 | Out of the field |
-| 15 | Seattle Seahawks | West | 3 | 6 | 0 | .333 | 1-2-0 | 3-2-0 | .375 | .493 | Out of the field |
-| 16 | San Francisco 49ers | West | 2 | 6 | 0 | .250 | 1-2-0 | 1-3-0 | .412 | .530 | Out of the field |
+| 1 | Minnesota Vikings | North | 8 | 1 | 0 | .889 | 3-0-0 | 7-0-0 | .514 | .518 | Seed 1, division leader |
+| 2 | St. Louis Rams | West | 8 | 2 | 0 | .800 | 3-0-0 | 5-1-0 | .452 | .457 | Seed 2, division leader |
+| 3 | Atlanta Falcons | South | 5 | 4 | 0 | .556 | 2-1-0 | 3-3-0 | .457 | .530 | Seed 3, division leader |
+| 4 | Philadelphia Eagles | East | 5 | 5 | 0 | .500 | 2-2-0 | 3-3-0 | .435 | .462 | Seed 4, division leader |
+| 5 | Detroit Lions | North | 6 | 3 | 0 | .667 | 2-2-0 | 4-3-0 | .438 | .500 | Seed 5, wild card |
+| 6 | New Orleans Saints | South | 5 | 4 | 0 | .556 | 0-2-0 | 3-2-0 | .468 | .518 | Seed 6, wild card |
+| 7 | Green Bay Packers | North | 5 | 4 | 0 | .556 | 1-2-0 | 3-3-0 | .362 | .476 | Out of the field |
+| 8 | Chicago Bears | North | 5 | 4 | 0 | .556 | 1-3-0 | 3-4-0 | .424 | .530 | Out of the field |
+| 9 | Dallas Cowboys | East | 5 | 5 | 0 | .500 | 2-1-0 | 3-4-0 | .511 | .576 | Out of the field |
+| 10 | Carolina Panthers | South | 4 | 5 | 0 | .444 | 1-1-0 | 3-5-0 | .378 | .500 | Out of the field |
+| 11 | Tampa Bay Buccaneers | South | 4 | 5 | 0 | .444 | 2-1-0 | 3-3-0 | .500 | .506 | Out of the field |
+| 12 | Arizona Cardinals | West | 4 | 5 | 0 | .444 | 1-2-0 | 3-5-0 | .472 | .494 | Out of the field |
+| 13 | New York Giants | East | 4 | 5 | 0 | .444 | 1-2-0 | 2-4-0 | .432 | .512 | Out of the field |
+| 14 | Washington Redskins | East | 3 | 5 | 1 | .389 | 1-1-0 | 2-4-0 | .464 | .560 | Out of the field |
+| 15 | Seattle Seahawks | West | 3 | 7 | 0 | .300 | 1-2-0 | 3-3-0 | .444 | .505 | Out of the field |
+| 16 | San Francisco 49ers | West | 2 | 7 | 0 | .222 | 1-2-0 | 1-4-0 | .368 | .518 | Out of the field |
 
 ## League
 
@@ -134,43 +134,47 @@ All 32 clubs by winning percentage. Clubs with the same percentage share a place
 
 | Place | Team | Conf | W | L | T | Pct | PF | PA | Diff |
 |--:|---|---|--:|--:|--:|--:|--:|--:|--:|
-| 1 | Minnesota Vikings | NFC | 7 | 1 | 0 | .875 | 191 | 152 | +39 |
-| 2 | New York Jets | AFC | 7 | 2 | 0 | .778 | 207 | 166 | +41 |
-| 2 | St. Louis Rams | NFC | 7 | 2 | 0 | .778 | 234 | 180 | +54 |
-| 4 | **Jacksonville Jaguars** | AFC | 6 | 2 | 0 | .750 | 191 | 126 | +65 |
-| 5 | Chicago Bears | NFC | 5 | 3 | 0 | .625 | 180 | 138 | +42 |
-| 5 | Detroit Lions | NFC | 5 | 3 | 0 | .625 | 217 | 178 | +39 |
-| 5 | Tennessee Titans | AFC | 5 | 3 | 0 | .625 | 151 | 148 | +3 |
-| 8 | San Diego Chargers | AFC | 4 | 3 | 1 | .562 | 174 | 168 | +6 |
-| 9 | Cleveland Browns | AFC | 5 | 4 | 0 | .556 | 176 | 177 | -1 |
-| 9 | Dallas Cowboys | NFC | 5 | 4 | 0 | .556 | 207 | 219 | -12 |
-| 9 | New England Patriots | AFC | 5 | 4 | 0 | .556 | 201 | 136 | +65 |
-| 9 | Philadelphia Eagles | NFC | 5 | 4 | 0 | .556 | 206 | 207 | -1 |
-| 13 | Atlanta Falcons | NFC | 4 | 4 | 0 | .500 | 183 | 178 | +5 |
-| 13 | Denver Broncos | AFC | 4 | 4 | 0 | .500 | 182 | 180 | +2 |
-| 13 | Green Bay Packers | NFC | 4 | 4 | 0 | .500 | 175 | 188 | -13 |
-| 13 | Houston Texans | AFC | 4 | 4 | 0 | .500 | 194 | 168 | +26 |
-| 13 | Miami Dolphins | AFC | 4 | 4 | 0 | .500 | 138 | 134 | +4 |
-| 13 | New Orleans Saints | NFC | 4 | 4 | 0 | .500 | 182 | 194 | -12 |
-| 13 | Pittsburgh Steelers | AFC | 4 | 4 | 0 | .500 | 182 | 186 | -4 |
-| 20 | Buffalo Bills | AFC | 4 | 5 | 0 | .444 | 185 | 197 | -12 |
-| 20 | Kansas City Chiefs | AFC | 4 | 5 | 0 | .444 | 203 | 212 | -9 |
-| 22 | Washington Redskins | NFC | 3 | 4 | 1 | .438 | 146 | 165 | -19 |
-| 23 | Arizona Cardinals | NFC | 3 | 5 | 0 | .375 | 172 | 217 | -45 |
-| 23 | Baltimore Ravens | AFC | 3 | 5 | 0 | .375 | 144 | 214 | -70 |
-| 23 | Carolina Panthers | NFC | 3 | 5 | 0 | .375 | 158 | 169 | -11 |
-| 23 | Indianapolis Colts | AFC | 3 | 5 | 0 | .375 | 126 | 160 | -34 |
-| 23 | New York Giants | NFC | 3 | 5 | 0 | .375 | 164 | 186 | -22 |
-| 23 | Oakland Raiders | AFC | 3 | 5 | 0 | .375 | 125 | 162 | -37 |
-| 23 | Tampa Bay Buccaneers | NFC | 3 | 5 | 0 | .375 | 140 | 161 | -21 |
-| 30 | Seattle Seahawks | NFC | 3 | 6 | 0 | .333 | 173 | 173 | 0 |
-| 31 | San Francisco 49ers | NFC | 2 | 6 | 0 | .250 | 154 | 178 | -24 |
-| 32 | Cincinnati Bengals | AFC | 1 | 8 | 0 | .111 | 166 | 210 | -44 |
+| 1 | Minnesota Vikings | NFC | 8 | 1 | 0 | .889 | 207 | 165 | +42 |
+| 2 | St. Louis Rams | NFC | 8 | 2 | 0 | .800 | 257 | 190 | +67 |
+| 3 | New York Jets | AFC | 7 | 2 | 0 | .778 | 207 | 166 | +41 |
+| 4 | Detroit Lions | NFC | 6 | 3 | 0 | .667 | 255 | 208 | +47 |
+| 4 | **Jacksonville Jaguars** | AFC | 6 | 3 | 0 | .667 | 202 | 167 | +35 |
+| 4 | Tennessee Titans | AFC | 6 | 3 | 0 | .667 | 192 | 159 | +33 |
+| 7 | San Diego Chargers | AFC | 5 | 3 | 1 | .611 | 202 | 178 | +24 |
+| 8 | Atlanta Falcons | NFC | 5 | 4 | 0 | .556 | 211 | 190 | +21 |
+| 8 | Chicago Bears | NFC | 5 | 4 | 0 | .556 | 210 | 176 | +34 |
+| 8 | Cleveland Browns | AFC | 5 | 4 | 0 | .556 | 176 | 177 | -1 |
+| 8 | Green Bay Packers | NFC | 5 | 4 | 0 | .556 | 185 | 194 | -9 |
+| 8 | New England Patriots | AFC | 5 | 4 | 0 | .556 | 201 | 136 | +65 |
+| 8 | New Orleans Saints | NFC | 5 | 4 | 0 | .556 | 202 | 197 | +5 |
+| 8 | Pittsburgh Steelers | AFC | 5 | 4 | 0 | .556 | 199 | 200 | -1 |
+| 15 | Dallas Cowboys | NFC | 5 | 5 | 0 | .500 | 210 | 239 | -29 |
+| 15 | Philadelphia Eagles | NFC | 5 | 5 | 0 | .500 | 212 | 217 | -5 |
+| 17 | Arizona Cardinals | NFC | 4 | 5 | 0 | .444 | 205 | 234 | -29 |
+| 17 | Baltimore Ravens | AFC | 4 | 5 | 0 | .444 | 161 | 224 | -63 |
+| 17 | Carolina Panthers | NFC | 4 | 5 | 0 | .444 | 177 | 178 | -1 |
+| 17 | Denver Broncos | AFC | 4 | 5 | 0 | .444 | 192 | 208 | -16 |
+| 17 | Houston Texans | AFC | 4 | 5 | 0 | .444 | 211 | 201 | +10 |
+| 17 | Kansas City Chiefs | AFC | 4 | 5 | 0 | .444 | 203 | 212 | -9 |
+| 17 | Miami Dolphins | AFC | 4 | 5 | 0 | .444 | 159 | 171 | -12 |
+| 17 | New York Giants | NFC | 4 | 5 | 0 | .444 | 194 | 203 | -9 |
+| 17 | Tampa Bay Buccaneers | NFC | 4 | 5 | 0 | .444 | 177 | 182 | -5 |
+| 26 | Buffalo Bills | AFC | 4 | 6 | 0 | .400 | 199 | 214 | -15 |
+| 27 | Washington Redskins | NFC | 3 | 5 | 1 | .389 | 159 | 181 | -22 |
+| 28 | Indianapolis Colts | AFC | 3 | 6 | 0 | .333 | 136 | 183 | -47 |
+| 28 | Oakland Raiders | AFC | 3 | 6 | 0 | .333 | 142 | 192 | -50 |
+| 30 | Seattle Seahawks | NFC | 3 | 7 | 0 | .300 | 185 | 201 | -16 |
+| 31 | San Francisco 49ers | NFC | 2 | 7 | 0 | .222 | 163 | 197 | -34 |
+| 32 | Cincinnati Bengals | AFC | 1 | 9 | 0 | .100 | 176 | 227 | -51 |
 
 ## Tiebreakers applied
 
+- AFC North: Pittsburgh Steelers over Cleveland Browns on record in common games.
+- AFC South: Tennessee Titans over Jacksonville Jaguars on head-to-head.
+- AFC West: Denver Broncos over Kansas City Chiefs on division record.
 - NFC East: Philadelphia Eagles over Dallas Cowboys on head-to-head.
-- NFC North: Chicago Bears over Detroit Lions on head-to-head.
+- NFC North: Green Bay Packers over Chicago Bears on head-to-head.
 - NFC South: Atlanta Falcons over New Orleans Saints on head-to-head.
 - NFC South: Carolina Panthers over Tampa Bay Buccaneers on head-to-head.
-- NFC wild card: Chicago Bears over Detroit Lions on head-to-head.
+- AFC wild card: Cleveland Browns over New England Patriots on conference record.
+- NFC wild card: New Orleans Saints over Green Bay Packers on conference record.
