@@ -1,11 +1,11 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2013-DEC29-WEEK17-STATE-36`
-**Supersedes:** `JAX-2013-DEC22-WEEK16-STATE-35`
+**Version:** `JAX-2013-DEC29-POSTSEASON-BRACKET-STATE-37`
+**Supersedes:** `JAX-2013-DEC29-WEEK17-STATE-36`
 **Snapshot effective:** December 29, 2013, after Week 17 (Indianapolis 23, Jacksonville 22); regular season complete.
-**Last reconciled:** September 28, 2026; season-ledger Entry 60.
-**Global package checkpoint:** `Canonical update - December 29, 2013 - Week 17 at Indianapolis closed`
+**Last reconciled:** September 28, 2026; season-ledger Entry 61.
+**Global package checkpoint:** `Canonical update - December 29, 2013 - Postseason bracket built (Wild Card slate set)`
 
 ## Effective source-version manifest
 
@@ -15,7 +15,7 @@
 | Document 2 | `ab790f6e935c99a901a6d39cf3bee5183cf4da3e` | Active foundation source |
 | Document 3 | `38e0ce21e9cf1b62f8d4b9c281955facdaf07b57` | Active foundation source |
 | Document 4 | `JAX-2013-DEC29-WEEK17-REGISTER-29`; closed by Entry 60 | Controlled 53, all active, practice squad, roles and availability after Week 17 |
-| Document 6 | 2013 ledger through Entry 60 | Week 17 closed; regular season complete |
+| Document 6 | 2013 ledger through Entry 61 | Week 17 closed; regular season complete; postseason bracket built |
 
 ## 1. Master clock and competition position
 
@@ -29,7 +29,7 @@
 | Preseason record | **2-2** |
 | Regular-season record | **10-6 (final)** |
 | Last event | Week 17: Indianapolis 23, Jacksonville 22 (Entry 60) |
-| Next competitive event | **AFC Wild Card at Kansas City, January 4-5, 2014 (slot not yet set): NOT SIMULATED** |
+| Next competitive event | **AFC Wild Card (5 at 4) at Kansas City, Sat. January 4, 2014, 4:35 p.m. ET, NBC: NOT SIMULATED** |
 
 ## 2. Roster and finance
 
@@ -69,15 +69,14 @@ League awards (`career/2013/awards/`): Weeks 1-8 and September backfilled (Entry
 
 ## 7. Immediate next step
 
-The AFC Wild Card game at Kansas City (January 4-5, 2014) is next. Before any postseason draw, the pipeline needs a postseason slate:
+The AFC Wild Card game at Kansas City (Saturday January 4, 2014, 4:35 p.m. ET, NBC; Arrowhead Stadium) is next. The postseason bracket is built (Entry 61; `career/2013/postseason/README.md`): the Wild Card round is postseason week 18, closed with `build_week_inputs.py 18` and `close_week.py 18 --close` as `postseason` games, with continuous overtime and receipts in `career/2013/stats/postseason_receipts/`.
 
-- **Wild Card slate:** build it from the final seeds. AFC 3 Pittsburgh vs 6 Buffalo, 4 Kansas City vs 5 Jacksonville; NFC 3 New Orleans vs 6 Dallas, 4 Philadelphia vs 5 Tampa Bay.
-- **Postseason games:** close them as `postseason` games, with continuous overtime (kernel 2013.8 onward).
-- **Date slots:** the branch pairings are not the real 2013 pairings, so the slots cannot be imported. They need a stated, result-blind rule.
+- **Wild Card slate:** AFC 5 Jacksonville at 4 Kansas City (Sat. 4:35 p.m.), NFC 6 Dallas at 3 New Orleans (Sat. 8:10 p.m.), AFC 6 Buffalo at 3 Pittsburgh (Sun. 1:05 p.m.), NFC 5 Tampa Bay at 4 Philadelphia (Sun. 4:40 p.m.). The Jets, Tennessee, Minnesota and St. Louis have byes.
+- **Later rounds:** Divisional January 11-12 (reseeded), conference championships January 19, Super Bowl XLVIII February 2 at MetLife Stadium; each is built only after the round before it closes.
 
-`build_week_inputs.py` and `close_week.py` currently read only the regular-season schedule. Stone's inputs needed:
+Stone's inputs needed:
 
-- the Wild Card plan as a structured call sheet;
+- the Wild Card plan as a structured call sheet, frozen to `career/2013/postseason/week_18_jacksonville_at_kansas_city/call_sheet.json`;
 - the Wild Card inactive list (the Week 17 list carries forward unless replaced).
 
 **The Wild Card game has not been simulated.**

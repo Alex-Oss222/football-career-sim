@@ -172,3 +172,30 @@ Kernel 2013.10 changes one thing: which call label a snap carries. Labels are ch
 **Evidence.** On the shared 250-game sample, scores, drives and every player statistic are identical to 2013.9, since labels never feed back into resolution. Of club A's 16,481 labelled snaps, 1,717 changed label and 340 (2.1%) became generic, against 3 before; ledger coherence is zero. `tests/test_personnel_labels.py` covers the rule and checks every sample label.
 
 **Versions and cohorts.** `KERNEL_VERSION` and the service `KERNEL` are both `2013.10`. `KNOWN_DETECTIONS["2013.10"]` carries the 2013.9 registry over. Closed receipts keep their labels and are never rerun.
+
+## Postseason bracket (no kernel change)
+
+The postseason runs on kernel 2013.10 unchanged. `runtime/postseason.py` builds each round's games from closed receipts only.
+
+**Seeding.** `seeds` takes the final `standings.compute` order per conference: the four division winners are seeds 1-4, and the two best remaining clubs are seeds 5-6.
+
+**Rounds.** Postseason weeks are numbered 18-21: Wild Card, Divisional, Conference and Super Bowl.
+
+| Week | Round | Pairings |
+|---:|---|---|
+| 18 | Wild Card | 6 at 3 and 5 at 4 |
+| 19 | Divisional | Reseeded: the lowest surviving seed at 1, the other survivor at 2 |
+| 20 | Conference | The higher remaining seed hosts |
+| 21 | Super Bowl | The two conference champions at a neutral site, with the designated home conference from the slots file |
+
+A round raises `ValueError` until every game of the round before it has a closed receipt. A tied postseason receipt also raises, since postseason games cannot tie.
+
+**Slots.** Each game takes the real 2013-14 date, kickoff and network of the slot with its conference and seed matchup (`library/data/2013_postseason_slots.json`). The rule is result-blind.
+
+**Pipeline.** `week_inputs.schedule` delegates weeks 18-21 here, and the package carries `game_type: postseason`, the round and the seeds.
+- `build_week_inputs.py` also finds call sheets under `career/2013/postseason/`.
+- `close_week.py` passes `game_type` to `run_game`, so the 2013.8 postseason overtime applies, and writes the receipts to `career/2013/stats/postseason_receipts/`. Standings, the regular-season statbook, awards and the calibration audit read `game_receipts/` only, so they stay regular-season views.
+- `render_box_score.py` finds receipts in either directory.
+- Tests: `tests/test_postseason.py`.
+
+**Known limit.** The neutral-site home term is still unmodelled (Entry 45): `kernel._edge` gives its 0.008 home term to the designated home team whatever the venue. That matters only in the Super Bowl, where the AFC champion would receive it at MetLife Stadium.

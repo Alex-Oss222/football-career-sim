@@ -33,6 +33,7 @@ AVERAGE_ANCHORS = {"offense_anchor": 2.0, "defense_anchor": 2.0, "special_teams_
 
 def call_sheet_path(week):
     matches = sorted((ROOT / "career/2013/regular_season").glob("week_%02d_*/call_sheet.json" % week))
+    matches += sorted((ROOT / "career/2013/postseason").glob("week_%02d_*/call_sheet.json" % week))
     return matches[0] if matches else None
 
 
@@ -57,6 +58,8 @@ def main():
     else:
         call_sheet = json.loads(sheet_path.read_text(encoding="utf-8"))["offensive_call_sheet"]
     receipts = [r for r in load_receipts(ROOT / "career/2013/stats/game_receipts") if int(r["week"]) < args.week]
+    # Postseason rounds also carry injuries from the earlier playoff rounds.
+    receipts += [r for r in load_receipts(ROOT / "career/2013/stats/postseason_receipts") if int(r["week"]) < args.week]
     try:
         package = build_package(args.week, receipts, call_sheet, AVERAGE_ANCHORS)
     except ValueError as exc:

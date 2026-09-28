@@ -37,6 +37,10 @@ def slug(team, sep):
 
 
 def schedule(week):
+    from . import postseason
+    if postseason.is_postseason(week):
+        # Weeks 18-21: the bracket built from closed receipts (runtime.postseason).
+        return postseason.schedule(week)
     games = [g for g in json.loads(SCHEDULE.read_text(encoding="utf-8"))["games"] if g["week"] == week]
     if not games:
         raise ValueError("no 2013 schedule for week %s" % week)
@@ -66,8 +70,17 @@ def receipt_name(game):
 
 
 def _game_dates():
+    from . import postseason
     games = json.loads(SCHEDULE.read_text(encoding="utf-8"))["games"]
-    return {(g["week"], g["away"], g["home"]): date.fromisoformat(g["date"]) for g in games}
+    dates = {(g["week"], g["away"], g["home"]): date.fromisoformat(g["date"]) for g in games}
+    # Closed postseason rounds: their games can always be rebuilt from receipts.
+    for week in sorted(postseason.ROUNDS):
+        try:
+            rows = postseason.schedule(week)
+        except (ValueError, FileNotFoundError, KeyError):
+            break
+        dates.update({(g["week"], g["away"], g["home"]): date.fromisoformat(g["date"]) for g in rows})
+    return dates
 
 
 def injured_out(receipts, game_day):
@@ -234,6 +247,9 @@ def build_package(week, receipts, call_sheet, anchors):
             "event_id": event_id(game), "receipt": receipt_name(game), "week": week,
             "date": game["date"], "away": game["away"], "home": game["home"],
             "venue": "neutral" if game["site"] == "neutral" else "home",
+            "game_type": game.get("game_type", "regular"),
+            **{key: game[key] for key in ("round", "conference", "matchup", "kickoff_et", "network",
+                                          "away_seed", "home_seed") if key in game},
             "away_input": unit(game["away"]), "home_input": unit(game["home"]),
         })
     return {"week": week, "games": games}

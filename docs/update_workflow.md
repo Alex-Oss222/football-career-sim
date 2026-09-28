@@ -52,6 +52,15 @@ For regular-season play, `Run Week N` is the top-level workflow defined in `AGEN
 
 See `docs/run_week.md` for the minimal runner handoff prompt.
 
+## Postseason rounds
+
+The postseason uses the same one-command workflow, with weeks numbered 18 (Wild Card), 19 (Divisional), 20 (Conference) and 21 (Super Bowl); a request such as "Run the Wild Card" means `Run Week 18`. The round's games come from `runtime/postseason.py` (seeds from the final standings, the real 2013-14 slot by seed matchup, a round built only after the previous one closed). The differences from a regular-season week:
+
+- Jacksonville's folder is `career/2013/postseason/week_NN_<away>_at_<home>/` (`output.md` and the frozen `call_sheet.json`); `career/2013/postseason/README.md` is the bracket page and round index.
+- Receipts go to `career/2013/stats/postseason_receipts/`. Standings, the regular-season statbook, the calibration audit and awards stay regular-season views; no postseason weekly awards are drawn (the league gave none).
+- The league roundup is `career/2013/league_results/week_NN.md` for the round's other games.
+- A club eliminated from the postseason, Jacksonville included, plays no further game; if Jacksonville is eliminated, later rounds still close as background slates.
+
 ## Before a game
 
 Read [game readiness](../state/game_readiness.md) and run `python scripts/check_game_readiness.py`. That command fails while any game prerequisite remains unverified. Repository validation, populated schedule folders and deterministic packet tests do not authorize a game. Keep private engine state outside Git, public logs and coach-facing files.

@@ -193,7 +193,12 @@
     "tests/test_kernel_coherence.py",
     "scripts/validate_repository.py",
     "scripts/check_game_readiness.py",
-    "scripts/advance_private_snapshot.py"
+    "scripts/advance_private_snapshot.py",
+    "runtime/postseason.py",
+    "library/2013_postseason_format_and_schedule.md",
+    "library/data/2013_postseason_slots.json",
+    "career/2013/postseason/README.md",
+    "career/2013/postseason/week_18_jacksonville_at_kansas_city/output.md"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",

@@ -58,8 +58,11 @@ CATEGORIES = (
 
 
 def load_receipt(event_id, directory=RECEIPTS):
-    """The receipt whose event_id matches, whatever its file name."""
-    for path in sorted(Path(directory).glob("*.json")):
+    """The receipt whose event_id matches, whatever its file name. Postseason
+    receipts sit in the sibling postseason_receipts directory."""
+    base = Path(directory)
+    paths = sorted(base.glob("*.json")) + sorted((base.parent / "postseason_receipts").glob("*.json"))
+    for path in paths:
         receipt = json.loads(path.read_text(encoding="utf-8"))
         if receipt.get("event_id") == event_id:
             return receipt
