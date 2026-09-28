@@ -1,49 +1,35 @@
-# League rails: what to fill, and what not to
+# League rails: what needs human input
 
-**For:** the user, before editing anything in this folder. **Rule source:** AGENTS.md, "Historical league rails"; [method.md](method.md).
+The league research inventory is generated from public files. Do not hand-build 31 rosters. Start with [the coverage report](league_database_report.md), [the player table](league_players.csv) or [the exception queue](league_exceptions.csv).
 
-## The short version
+## Three kinds of input
 
-Most of the 31 club files do **not** need filling. When the 2014 regular season is near, the branch builds every other club's Week 1 roster from the real 2014 Week 1 depth charts (the same data source as 2013), then applies Jacksonville's moves. That brings in every real signing, trade, release, retirement and draft pick automatically. Hand-filling full rosters would be redone by that build.
+1. **A player the data cannot place.** Supply his name or GSIS ID, the conflicting or missing fact, and a dated source. The branch resolves the source correction and regenerates the affected views. Unknown does not mean unsigned, retired or unavailable.
+2. **The four VERIFY retirements.** Nwaneri, Rackley, Owens and Rutland currently have **no dated source** for an exact public retirement date. If a public announcement is found, add the outlet, title, publication date and link to `retirements.md`. Leave VERIFY until the branch applies the supported date.
+3. **A player Stone actually targets.** Give his name and position. The branch verifies his contract expiration, accrued service and any controlling tag/tender before pursuit. The nine February 2 targets already have sourced pending classifications in `free_agent_pool.md`; their contract money is researched at the prescribed draw date.
 
-What actually needs you is small:
+Most missing contracts can stay unresolved until a player matters. A seasons-of-experience estimate is not a legal eligibility ruling. Source statuses, stale contracts and missing rows do not settle a player's availability.
 
-| Needed | When | Where | What to enter |
-|---|---|---|---|
-| **1. The four VERIFY retirements** | Any time | `retirements.md` | For Nwaneri, Rackley, Owens and Rutland: a dated public source (outlet, title, date, link). If none exists, write "no dated source" and leave it. Do not remove the word VERIFY; the branch does that when it applies the row. |
-| **2. Contract status for Stone's free-agent targets** | Before March 11, 2014 | `free_agent_pool.md` (add a row if the player is missing) | For each player on the February 2 memo's free-agency board: his 2013 club, position, and whether he is unrestricted, restricted or exclusive-rights. Nothing else. |
-| **3. Any player Stone wants who is not on the memo's board** | Before March 11, 2014 | Tell the branch, or add him to the memo | Name and position. Adding him to a club file is not needed. |
+## Where updates belong
 
-Everything else is optional.
+- Add verified target categories and citations above the generated block in `free_agent_pool.md`. Preserve the UFA/RFA/ERFA table format so the generator can read the evidence. A targeted player absent from the database needs a reviewed identity/source addition first.
+- Put dated real moves for other clubs in the existing **Changes on the rails** table below the generated block in `clubs/<CODE>.md`. Include the real public date and source. A row takes effect only when an authorized closed event reaches its date.
+- Put reviewed club, position, birth-date or contract-year corrections in `league_corrections.json`, keyed by GSIS ID, then rebuild. Include a note and dated sources, each with publisher, title, URL and publication date on or before February 2. For contract years, supply both `contract_start` and `contract_end`. Keep verified UFA/RFA/ERFA classifications and their citations in the manual free-agent section. Do not edit `league_players.json`, the generated CSVs, the compressed evidence snapshot or generated Markdown blocks by hand.
+- Free-form club notes may go outside the generated markers. The builder preserves that text. The source snapshot and generated outputs were added for this authorized database build; further manual file structures are not needed.
 
-## What the branch fills (do not fill these)
+## What the branch handles
 
-| Record | Filled by the branch when |
-|---|---|
-| `fa_draws.md` | At each target's real signing date: his real contract terms, Caldwell's offer, the chance and the draw |
-| `draft_pairing.md` | At the draft (May 8-10, 2014) |
-| Other clubs' 2014 Week 1 rosters | Before the 2014 season, from the real Week 1 depth charts |
-| Retirement rows other than the four VERIFY rows | As real dates are reached |
-| Jacksonville's roster, register, Document 4 and 5, ledger, stats, standings | Every closed event |
+- Database regeneration, identity joins, exception records and preservation of Jacksonville control.
+- Free-agent draws at each pursued player's real signing date.
+- Draft pairing at the May 8-10 draft.
+- The other clubs' real 2014 Week 1 rosters before the season, with Jacksonville control, draft swaps and free agents won by Jacksonville reconciled again.
+- Later retirements as their dates arrive.
+- Jacksonville's roster, contracts, state, ledger, statistics and snapshot after actual branch events.
 
-## Never enter
+## Boundaries
 
-- Game results, statistics, injuries, suspensions, awards or standings from real 2014. These are never rails.
-- Coaching or front-office changes. The branch's own carousel (Entry 75) stands.
-- Any real move by the Jaguars, or by a Jacksonville-controlled player, in a club file. Jacksonville's moves come only from Stone and Caldwell's decisions, and Jacksonville has no club file.
-- New files or folders here. If something seems to need one, ask first.
-- Edits to `foundation/`, `state/`, the ledger, or anything under `career/2013/stats/`. The branch updates those.
+Never add real 2014 game results, statistics, injuries, suspensions, awards or standings. Never import real coaching changes or real Jaguars transactions. Source roster status is historical evidence, not branch availability. Jacksonville has no generated club file.
 
-## If you do fill a club file (optional)
+The database build does not authorize editing `foundation/`, `state/`, the ledger or statistics. Those records change only through the normal event workflow. The calendar remains February 2, 2014.
 
-Only if you want a club's picture now instead of waiting for the Week 1 build:
-- **Contract column:** fix a wrong end year, or fill "not in the contract data". Use a source dated before March 11, 2014, such as a team or league transaction page.
-- **2014 status column:** one of *Under contract*, *Pending UFA*, *Pending RFA*, *Pending ERFA*, *Released (date)*, *Retired (date)*.
-- **Changes on the rails table:** one row per real move, with its real date and a source. It takes effect only when the branch clock passes that date.
-- Do not add stats, grades or opinions, and do not reorder the depth column.
-
-## Order of work, if you want one
-
-1. The four VERIFY retirements.
-2. Contract status for the memo's free-agency targets: Verner, Talib, Tate, Hardy, Te'o-Nesheim, Jared Allen, Hawkins, Edelman and Sanders.
-3. Nothing else is needed until the calendar moves.
+Rebuild with `python scripts/research/build_league_player_database.py`; verify with the same command plus `--check`. The legacy exporter is disabled. Generated club rows are alphabetized for lookup, while their old Week 1 slot labels remain reference information, not a new depth order.

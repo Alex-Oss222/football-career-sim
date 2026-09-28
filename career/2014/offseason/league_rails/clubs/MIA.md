@@ -1,59 +1,77 @@
-# Miami Dolphins: 2014 rails roster (draft)
+<!-- BEGIN GENERATED LEAGUE DATABASE -->
+# Miami Dolphins: generated end-of-2013 research inventory
 
-**Status:** DRAFT for the user to complete. Starting point: the branch's 2013 Week 1 unit (`library/2013_week1_depth_charts.md`), with contract years from Over The Cap data signed in 2013 or earlier. The contract end year is unverified: extensions can list only the added years. No 2014 signing, release, trade or destination is recorded here; those enter only on their real dates (AGENTS.md, Historical league rails).
+**As of:** February 2, 2014. These are historical observations with existing branch placements applied, not a certified final roster or a live TeamInput. Source status does not impose an injury or suspension on the branch. Week 1 slots are reference labels only; row order is alphabetical, not depth order.
 
-| 2013 slot | Player | Pos | Contract in the data (signed-to-end, average per year) | 2014 status | User notes |
-|---|---|---|---|---|---|
-| QB1 | Ryan Tannehill | QB | 2012-2015, $3,167,128 a year | Under contract (draft) | |
-| QB2 | Matt Moore | QB | 2013-2014, $4,000,000 a year | Under contract (draft) | |
-| QB3 | Pat Devlin | QB | not in the contract data | Unknown: confirm | |
-| RB1 | Lamar Miller | RB | 2012-2015, $646,500 a year | Under contract (draft) | |
-| RB1 | Mike Gillislee | RB | 2013-2016, $580,700 a year | Under contract (draft) | |
-| RB2 | Daniel Thomas | RB | 2011-2014, $809,097 a year | Under contract (draft) | |
-| KOR1,PR1,RB3 | Marcus Thigpen | RB | not in the contract data | Unknown: confirm | |
-| WR1 | Brian Hartline | WR | 2013-2017, $6,155,000 a year | Under contract (draft) | |
-| WR1 | Mike Wallace | WR | 2013-2015, $12,000,000 a year | Under contract (draft) | |
-| WR2 | Brandon Gibson | WR | 2013-2015, $3,260,000 a year | Under contract (draft) | |
-| WR2 | Rishard Matthews | WR | 2012-2015, $538,403 a year | Under contract (draft) | |
-| TE1 | Charles Clay | TE | 2011-2014, $538,000 a year | Under contract (draft) | |
-| TE2 | Dion Sims | TE | 2013-2016, $656,888 a year | Under contract (draft) | |
-| TE3 | Michael Egnew | TE | 2012-2015, $694,114 a year | Under contract (draft) | |
-| LT1 | Jonathan Martin | T | 2012-2015, $1,196,067 a year | Under contract (draft) | |
-| LG1 | Richie Incognito | G | 2011-2013, $4,300,000 a year | Pending free agent (draft) | |
-| C1 | Mike Pouncey | C | 2011-2015, $3,339,539 a year | Under contract (draft) | |
-| RG1 | John Jerry | G | 2010-2013, $699,625 a year | Pending free agent (draft) | |
-| RT1 | Tyson Clabo | T | 2013-2013, $3,500,000 a year | Pending free agent (draft) | |
-| LT2 | Will Yeatman | T | 0-1, $950,000 a year | Pending free agent (draft) | |
-| LG2 | Dallas Thomas | G | not in the contract data | Unknown: confirm | |
-| RT2 | Nate Garner | T | 0-2, $1,625,000 a year | Pending free agent (draft) | |
-| LE1 | Cameron Wake | DE | 2012-2015, $8,300,000 a year | Under contract (draft) | |
-| RE1 | Olivier Vernon | DE | 2012-2015, $712,020 a year | Under contract (draft) | |
-| DT1 | Paul Soliai | DT | 2012-2013, $5,750,000 a year | Pending free agent (draft) | |
-| DT1 | Randy Starks | DT | 2013-2013, $8,450,000 a year | Pending free agent (draft) | |
-| DT2 | Jared Odrick | DT | 2010-2014, $1,984,388 a year | Under contract (draft) | |
-| RE2 | Vaughn Martin | DT | not in the contract data | Unknown: confirm | |
-| LE2 | Derrick Shelby | DE | 2012-2014, $483,333 a year | Under contract (draft) | |
-| RE3 | Dion Jordan | DE | 2013-2016, $5,143,075 a year | Under contract (draft) | |
-| LB1 | Philip Wheeler | LB | 2013-2017, $4,400,000 a year | Under contract (draft) | |
-| LB1 | Dannell Ellerbe | LB | 2013-2014, $7,000,000 a year | Under contract (draft) | |
-| LB1 | Koa Misi | LB | 2013-2016, $4,250,000 a year | Under contract (draft) | |
-| LB2 | Jason Trusnik | LB | not in the contract data | Unknown: confirm | |
-| LB2 | Jonathan Freeny | LB | not in the contract data | Unknown: confirm | |
-| LB2 | Jelani Jenkins | LB | 2013-2016, $658,172 a year | Under contract (draft) | |
-| LB3 | Josh Kaddu | LB | 2012-2015, $571,685 a year | Under contract (draft) | |
-| S1 | Chris Clemons (MIA) | S | not in the contract data | Unknown: confirm | |
-| S1 | Reshad Jones | S | 2013-2016, $7,003,000 a year | Under contract (draft) | |
-| CB1 | Dimitri Patterson | CB | 2012-2014, $5,350,000 a year | Under contract (draft) | |
-| CB1 | Jamar Taylor | CB | 2013-2016, $906,538 a year | Under contract (draft) | |
-| CB2 | Nolan Carroll | CB | 2010-2013, $495,438 a year | Pending free agent (draft) | |
-| S2 | Jimmy Wilson | S | 2011-2014, $521,475 a year | Under contract (draft) | |
-| S2 | Kelcie McCray | S | not in the contract data | Unknown: confirm | |
-| CB2 | Will Davis | CB | 2013-2016, $675,300 a year | Under contract (draft) | |
-| CB3 | R.J. Stanford | CB | not in the contract data | Unknown: confirm | |
-| S3 | Don Jones | S | 2013-2016, $551,474 a year | Under contract (draft) | |
-| K1,KO1 | Caleb Sturgis | K | 2013-2016, $576,140 a year | Under contract (draft) | |
-| P1,H1 | Brandon Fields | P | not in the contract data | Unknown: confirm | |
-| LS1 | John Denney | LS | not in the contract data | Unknown: confirm | |
+64 players. See [database coverage and rebuild instructions](../league_database_report.md). Contract years and experience-derived categories require verification before pursuit. Manual dated moves below are preserved by rebuilds.
+
+| Player | GSIS ID | Pos | 2013 branch Week 1 slot | Last observed week | Source status | Contract | Pending FA | Review flags |
+|---|---|---|---|---|---|---|---|---|
+| A.J. Francis | 00-0029972 | DT | Unknown | 17 | ACT,TRT | no pre 2014 contract | Unknown | missing_or_conflicting_source_status; no_pre_2014_contract; release_status_needs_dated_source |
+| Austin Spitler | 00-0027843 | MLB | Unknown | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Brandon Fields | 00-0025612 | P | P1,H1 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Brandon Gibson | 00-0026937 | WR | WR2 | 8 | RES | 2013-2015 (estimate) | Under contract (estimate) | last_observed_before_week17 |
+| Brian Hartline | 00-0027077 | WR | WR1 | 17 | ACT | 2013-2017 (estimate) | Under contract (estimate) | Source data only |
+| Bryant McKinnie | 00-0021383 | T | LT1 | 17 | ACT,TRD | no pre 2014 contract | Unknown | missing_or_conflicting_source_status; no_pre_2014_contract; release_status_needs_dated_source |
+| Caleb Sturgis | 00-0030390 | K | K1,KO1 | 17 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Cameron Wake | 00-0023368 | DE | LE1 | 17 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Charles Clay | 00-0028112 | TE | TE1 | 17 | ACT | 2011-2014 (estimate) | Under contract (estimate) | Source data only |
+| Chris Clemons | 00-0027115 | FS | S1 | 17 | ACT | 2013-2013 (estimate) | UFA (estimate) | Source data only |
+| Christopher Owens | 00-0027062 | CB | RCB2 | 17 | ACT,TRD | no pre 2014 contract | Unknown | missing_or_conflicting_source_status; no_pre_2014_contract; release_status_needs_dated_source |
+| D.J. Campbell | 00-0029305 | SS | Unknown | 15 | CUT,TRC | ambiguous same year terms | Unknown | ambiguous_same_year_terms; last_observed_before_week17; missing_or_conflicting_source_status; release_status_needs_dated_source |
+| Dallas Thomas | 00-0030531 | G | LG2 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Daniel Thomas | 00-0028000 | RB | RB2 | 17 | ACT | 2011-2014 (estimate) | Under contract (estimate) | Source data only |
+| Dannell Ellerbe | 00-0026857 | MLB | LB1 | 17 | ACT | 2013-2014 (estimate) | Under contract (estimate) | Source data only |
+| Danny Watkins | 00-0027961 | G | Unknown | 17 | ACT | 2013-2013 (estimate) | RFA (estimate) | Source data only |
+| David Arkin | 00-0028048 | G | RG2 | 17 | ACT,TRC | 2013-2014 (estimate) | Under contract (estimate) | missing_or_conflicting_source_status; release_status_needs_dated_source |
+| Derrick Shelby | 00-0029111 | DE | LE2 | 17 | ACT | 2012-2014 (estimate) | Under contract (estimate) | Source data only |
+| Dimitri Patterson | 00-0023727 | CB | CB1 | 14 | RES | 2012-2014 (estimate) | Under contract (estimate) | last_observed_before_week17 |
+| Dion Jordan | 00-0030555 | DE | RE3 | 17 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Dion Sims | 00-0030422 | TE | TE2 | 17 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Don Jones | 00-0030395 | FS | S3 | 17 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Isaako Aaitui | 00-0028830 | NT | Unknown | 12 | DEV | no pre 2014 contract | Unknown | last_observed_before_week17; no_pre_2014_contract |
+| Jalil Brown | 00-0028056 | CB | Unknown | 17 | ACT,TRD | 2013-2014 (estimate) | Under contract (estimate) | missing_or_conflicting_source_status; release_status_needs_dated_source |
+| Jamar Taylor | 00-0030484 | CB | CB1 | 17 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Jared Odrick | 00-0027878 | DT | DT2 | 17 | ACT | 2010-2014 (estimate) | Under contract (estimate) | Source data only |
+| Jason Trusnik | 00-0025697 | OLB | LB2 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Jelani Jenkins | 00-0030384 | MLB | LB2 | 17 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Jimmy Wilson | 00-0028173 | FS | S2 | 17 | ACT | 2011-2014 (estimate) | Under contract (estimate) | Source data only |
+| John Denney | 00-0023173 | LS | LS1 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| John Jerry | 00-0027678 | G | RG1 | 17 | ACT | 2010-2013 (estimate) | UFA (estimate) | Source data only |
+| Jonathan Freeny | 00-0028454 | OLB | LB2 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Jonathan Martin | 00-0029593 | T | LT1 | 12 | RSN | 2012-2015 (estimate) | Under contract (estimate) | last_observed_before_week17 |
+| Jordan Kovacs | 00-0029975 | DB | Unknown | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Josh Kaddu | 00-0029595 | OLB | LB3 | 7 | DEV | ambiguous same year terms | Unknown | ambiguous_same_year_terms; last_observed_before_week17 |
+| Justin Rogers | 00-0028144 | CB | RCB1 | 15 | CUT,TRD,TRT | 2013-2013 (estimate) | RFA (estimate) | last_observed_before_week17; missing_or_conflicting_source_status; release_status_needs_dated_source |
+| Koa Misi | 00-0027883 | OLB | LB1 | 17 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Lamar Miller | 00-0029615 | RB | RB1 | 17 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Marcus Thigpen | 00-0026577 | RB | KOR1,PR1,RB3 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Marlon Moore | 00-0027356 | WR | WR2 | 17 | ACT,TRC | no pre 2014 contract | Unknown | missing_or_conflicting_source_status; no_pre_2014_contract; release_status_needs_dated_source |
+| Matt Moore | 00-0025708 | QB | QB2 | 17 | ACT | 2013-2014 (estimate) | Under contract (estimate) | Source data only |
+| Michael Egnew | 00-0029694 | TE | TE3 | 17 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Michael Thomas | 00-0028908 | DB | Unknown | 17 | ACT,TRC | 2013-2014 (estimate) | Under contract (estimate) | missing_or_conflicting_source_status; release_status_needs_dated_source |
+| Mike Gillislee | 00-0030433 | RB | RB1 | 17 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Mike Pouncey | 00-0027953 | C | C1 | 17 | ACT | 2011-2015 (estimate) | Under contract (estimate) | Source data only |
+| Mike Wallace | 00-0026901 | WR | WR1 | 17 | ACT | 2013-2015 (estimate) | Under contract (estimate) | Source data only |
+| Nate Garner | 00-0026351 | T | RT2 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Nolan Carroll | 00-0027744 | CB | CB2 | 17 | ACT | 2010-2013 (estimate) | UFA (estimate) | Source data only |
+| Olivier Vernon | 00-0029693 | DE | RE1 | 17 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Pat Devlin | 00-0028453 | QB | QB3 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Paul Soliai | 00-0025495 | DT | DT1 | 17 | ACT | 2012-2013 (estimate) | UFA (estimate) | Source data only |
+| Philip Wheeler | 00-0026233 | OLB | LB1 | 17 | ACT | 2013-2017 (estimate) | Under contract (estimate) | Source data only |
+| R.J. Stanford | 00-0027817 | CB | CB3 | 14 | RES | no pre 2014 contract | Unknown | last_observed_before_week17; no_pre_2014_contract |
+| Randy Starks | 00-0022805 | DT | DT1 | 17 | ACT | 2013-2013 (estimate) | UFA (estimate) | Source data only |
+| Reshad Jones | 00-0027762 | FS | S1 | 17 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Richie Incognito | 00-0023516 | G | LG1 | 9 | SUS | 2011-2013 (estimate) | UFA (estimate) | last_observed_before_week17 |
+| Rishard Matthews | 00-0029580 | WR | WR2 | 17 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Ryan Spadola | 00-0030175 | WR | WR3 | 9 | DEV,TRT | no pre 2014 contract | Unknown | last_observed_before_week17; missing_or_conflicting_source_status; no_pre_2014_contract; release_status_needs_dated_source |
+| Ryan Tannehill | 00-0029701 | QB | QB1 | 17 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Sam Brenner | 00-0029967 | C | Unknown | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Tyson Clabo | 00-0022245 | T | RT1 | 17 | ACT | 2013-2013 (estimate) | UFA (estimate) | Source data only |
+| Vaughn Martin | 00-0027082 | DE | RE2 | 3 | CUT | no pre 2014 contract | Unknown | last_observed_before_week17; no_pre_2014_contract; release_status_needs_dated_source |
+| Will Davis | 00-0030519 | CB | CB2 | 17 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Will Yeatman | 00-0028253 | T | LT2 | 10 | RES | no pre 2014 contract | Unknown | last_observed_before_week17; no_pre_2014_contract |
+<!-- END GENERATED LEAGUE DATABASE -->
 
 ## Changes on the rails (fill by real date)
 

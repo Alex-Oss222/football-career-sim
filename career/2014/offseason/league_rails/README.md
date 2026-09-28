@@ -1,20 +1,26 @@
 # 2014 league rails
 
-**Function:** the working folder for the historical league rails rule: the other 31 clubs' rosters follow real history, while Jacksonville's come only from the branch. Rule: AGENTS.md, "Historical league rails"; Document 2 §4.5. Method: [method.md](method.md). Adopted in ledger Entry 78.
-**Status:** The nine-player February 2 free-agency board is classified and sourced; the four requested retirement checks are recorded as **no dated source**, with VERIFY preserved. The wider contract inventory remains a draft. Responsibilities and limits are in [FILLING_GUIDE.md](FILLING_GUIDE.md).
+**Function:** the historical league rails workspace for the other 31 clubs. Jacksonville's roster and contracts come from the branch. Rules: AGENTS.md, Historical league rails; Document 2 §4.5; [method.md](method.md). Adopted in ledger Entry 78.
 
-| Record | What it holds | Status |
-|---|---|---|
-| [method.md](method.md) | The rules: gates, Jacksonville control, the free-agent market draw, retirements, the draft pairing, Week 1 charts | Adopted |
-| [clubs/](clubs/) | One file per club (31): the branch's 2013 Week 1 unit, draft contract data and a dated rails table | Optional contract research only: 316 players have no contract in the data; every end year is unverified. The branch builds the real 2014 Week 1 rosters before the season |
-| [free_agent_pool.md](free_agent_pool.md) | Nine verified board targets, separated into pending UFA/RFA/ERFA sections, plus 406 unverified contract candidates | Target classifications complete: eight pending UFA, one pending RFA, no targeted ERFA. The remaining candidates are not an eligibility list |
-| [retirements.md](retirements.md) | Real retirements by real date, league-wide, Jacksonville included | Meester applied; Allen scheduled for April 22; four VERIFY rows researched with no exact public retirement date found |
-| [draft_pairing.md](draft_pairing.md) | Jacksonville's selections, real availability and the swap partner | Empty until the draft (May 8-10, 2014) |
-| [fa_draws.md](fa_draws.md) | Each market draw for a free agent Jacksonville pursues | Empty until March 11, 2014 |
-| [FILLING_GUIDE.md](FILLING_GUIDE.md) | What the user fills, what the branch fills, and what never to enter | Read first |
+**Status:** the generated February 2, 2014 research database is built. It contains 2,208 distinct player identities, including Jacksonville's 61 controlled players. It replaces the partial contract export with an ID-linked inventory, coverage report and review queue. It is not a certified end-of-season roster or live TeamInput. The public files have coverage and status limitations documented in the report.
 
-**Builder:** `scripts/research/build_league_rails_rosters.py` (reads the downloaded `historical_contracts.csv.gz` from nflverse; only contracts signed in 2013 or earlier). It overwrites the club files and `free_agent_pool.md`. Do not rerun it over this researched version.
+| Record | Purpose |
+|---|---|
+| [league_database_report.md](league_database_report.md) | Coverage, source hashes, uncertainty, branch protections and rebuild instructions |
+| [league_players.json](league_players.json) | Full player records with identity, DOB evidence, college/draft history, source observations, branch control, contract estimates and FA evidence |
+| [league_players.csv](league_players.csv) | Flat player table for filtering and review |
+| [league_corrections.json](league_corrections.json) | Dated, reviewed club/position/DOB/contract-year corrections keyed by GSIS ID |
+| [league_exceptions.csv](league_exceptions.csv) | Unresolved placement, status, identity and contract issues by player ID |
+| [source_snapshot.json.gz](source_snapshot.json.gz) | Compressed, field-limited source and branch evidence for offline regeneration; no future outcomes or 2014 draft results |
+| [clubs/](clubs/) | 31 generated research inventories, with manually maintained dated move tables preserved below each generated block |
+| [free_agent_pool.md](free_agent_pool.md) | Nine independently verified targets plus generated, explicitly estimated UFA/RFA/ERFA candidates |
+| [retirements.md](retirements.md) | Meester applied; Allen scheduled for April 22; four VERIFY rows with no exact public retirement date found |
+| [draft_pairing.md](draft_pairing.md) | Jacksonville's selections and swap partners, filled at the May 8-10 draft |
+| [fa_draws.md](fa_draws.md) | Market draws at each pursued player's real signing date |
+| [FILLING_GUIDE.md](FILLING_GUIDE.md) | The small amount of human input needed and where to put it |
 
-**Next work:** the branch maintains free-agent draws at each player's real signing date, draft pairings at the May 8-10 draft, the other clubs' Week 1 rosters before the season, and Jacksonville/state records after actual branch events. No full-club roster completion is required from the user. An additional target needs his name and position, then the same status check before pursuit.
+**Rebuild:** `python scripts/research/build_league_player_database.py`. This runs offline and preserves the sourced target section and club text outside generated markers. Add `--check` to compare the generated outputs without writing. The old `build_league_rails_rosters.py` exporter now stops with a migration message; it cannot overwrite this research.
 
-**Gate reminder:** nothing in the rails tables applies until the career clock passes its real date. The branch is at February 2, 2014.
+**Next work:** resolve exceptions when a player matters, retain dated retirement evidence, and verify targeted contract terms and accrued service. The branch handles market draws, the draft and 2014 Week 1 rosters at their prescribed dates. No hand-built league roster is required.
+
+**Gate:** the baseline is February 2, 2014. Source status does not impose real injuries or suspensions on the branch. No new retirement, transaction, calendar event, state update or private snapshot advance is performed by this build.

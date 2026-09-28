@@ -1,60 +1,69 @@
-# Baltimore Ravens: 2014 rails roster (draft)
+<!-- BEGIN GENERATED LEAGUE DATABASE -->
+# Baltimore Ravens: generated end-of-2013 research inventory
 
-**Status:** DRAFT for the user to complete. Starting point: the branch's 2013 Week 1 unit (`library/2013_week1_depth_charts.md`), with contract years from Over The Cap data signed in 2013 or earlier. The contract end year is unverified: extensions can list only the added years. No 2014 signing, release, trade or destination is recorded here; those enter only on their real dates (AGENTS.md, Historical league rails).
+**As of:** February 2, 2014. These are historical observations with existing branch placements applied, not a certified final roster or a live TeamInput. Source status does not impose an injury or suspension on the branch. Week 1 slots are reference labels only; row order is alphabetical, not depth order.
 
-| 2013 slot | Player | Pos | Contract in the data (signed-to-end, average per year) | 2014 status | User notes |
-|---|---|---|---|---|---|
-| QB1 | Joe Flacco | QB | 2013-2018, $20,100,000 a year | Under contract (draft) | |
-| QB2 | Tyrod Taylor | QB | 2011-2014, $536,327 a year | Under contract (draft) | |
-| RB1 | Ray Rice | RB | 2012-2016, $7,000,000 a year | Under contract (draft) | |
-| RB2 | Bernard Pierce | RB | 2012-2015, $663,986 a year | Under contract (draft) | |
-| FB1 | Vonta Leach | FB | 0-1, $1,875,000 a year | Pending free agent (draft) | |
-| FB2 | Kyle Juszczyk | FB | 2013-2016, $615,146 a year | Under contract (draft) | |
-| WR1 | Torrey Smith | WR | 2011-2014, $847,308 a year | Under contract (draft) | |
-| WR1,PR1,KR1 | Jacoby Jones | WR | 2012-2013, $3,250,000 a year | Pending free agent (draft) | |
-| WR2 | Brandon Stokley | WR | 0-0, $940,000 a year | Pending free agent (draft) | |
-| WR2 | Marlon Brown | WR | not in the contract data | Unknown: confirm | |
-| WR3,KR2 | Deonte Thompson | WR | not in the contract data | Unknown: confirm | |
-| OFF1 | Aaron Mellette | WR | 2013-2016, $551,474 a year | Under contract (draft) | |
-| TE1 | Ed Dickson | TE | 2013-2013, $1,323,000 a year | Pending free agent (draft) | |
-| TE2 | Dallas Clark | TE | 0-0, $1,005,000 a year | Pending free agent (draft) | |
-| TE3 | Billy Bajema | TE | not in the contract data | Unknown: confirm | |
-| LT1 | Bryant McKinnie | T | 0-0, $1,000,000 a year | Pending free agent (draft) | |
-| LG1,RT2 | Kelechi Osemele | G | 2012-2015, $836,468 a year | Under contract (draft) | |
-| C1 | Gino Gradkowski | C | 2012-2015, $646,106 a year | Under contract (draft) | |
-| RG1 | Marshal Yanda | G | 2011-2015, $6,400,000 a year | Under contract (draft) | |
-| RT1 | Michael Oher | T | 2009-2013, $2,139,000 a year | Pending free agent (draft) | |
-| LT2 | Rick Wagner | G | not in the contract data | Unknown: confirm | |
-| LG2,RG2 | Jah Reid | G | 2011-2014, $650,810 a year | Under contract (draft) | |
-| C2 | A.Q. Shipley | C | not in the contract data | Unknown: confirm | |
-| C3 | Ryan Jensen | C | 2013-2016, $559,670 a year | Under contract (draft) | |
-| SAM1 | Courtney Upshaw | DE | 2012-2015, $1,324,175 a year | Under contract (draft) | |
-| NT1 | Haloti Ngata | NT | 2006-2010, $2,380,000 a year | Pending free agent (draft) | |
-| DT1 | Arthur Jones | DT | 2013-2013, $2,023,000 a year | Pending free agent (draft) | |
-| DE1 | Chris Canty | DE | 2013-2015, $2,666,667 a year | Under contract (draft) | |
-| SAM2 | Elvis Dumervil | DE | 2013-2017, $5,200,000 a year | Under contract (draft) | |
-| DE2 | Marcus Spears | DE | not in the contract data | Unknown: confirm | |
-| NT2 | Terrence Cody | NT | 0-0, $730,000 a year | Pending free agent (draft) | |
-| DT2 | Brandon Williams (BAL) | DT | not in the contract data | Unknown: confirm | |
-| DE3 | DeAngelo Tyson | DE | 2012-2015, $536,898 a year | Under contract (draft) | |
-| SAM3 | John Simon | DE | 2013-2016, $636,413 a year | Under contract (draft) | |
-| WILL1 | Josh Bynes | ILB | 2011-2013, APY not listed a year | Pending free agent (draft) | |
-| RUSH1 | Terrell Suggs | OLB | 2009-2014, $10,416,667 a year | Under contract (draft) | |
-| MIKE2 | Albert McClellan | ILB | not in the contract data | Unknown: confirm | |
-| RUSH2 | Pernell McPhee | OLB | 2011-2014, $546,140 a year | Under contract (draft) | |
-| WILL2 | Arthur Brown | OLB | 2013-2016, $888,558 a year | Under contract (draft) | |
-| WILL3 | Robert James | ILB | 0-0, $480,000 a year | Pending free agent (draft) | |
-| RCB1 | Corey Graham | FS | 2012-2013, $1,850,000 a year | Pending free agent (draft) | |
-| FS1 | Michael Huff | FS | 0-0, $840,000 a year | Pending free agent (draft) | |
-| SS1 | James Ihedigbo | SS | not in the contract data | Unknown: confirm | |
-| LCB1,PR2 | Lardarius Webb | FS | 2012-2017, $8,333,333 a year | Under contract (draft) | |
-| LCB2 | Jimmy Smith | CB | 2011-2015, $2,871,940 a year | Under contract (draft) | |
-| RCB2 | Chykie Brown | CB | 2011-2014, $546,140 a year | Under contract (draft) | |
-| SS2 | Matt Elam | SS | 2013-2016, $1,691,751 a year | Under contract (draft) | |
-| SS3 | Anthony Levine | SS | 2013-2014, $450,000 a year | Under contract (draft) | |
-| K1 | Justin Tucker | K | 2012-2014, $480,000 a year | Under contract (draft) | |
-| P1,H1 | Sam Koch | P | not in the contract data | Unknown: confirm | |
-| LS1 | Morgan Cox | LS | 2013-2014, $805,000 a year | Under contract (draft) | |
+56 players. See [database coverage and rebuild instructions](../league_database_report.md). Contract years and experience-derived categories require verification before pursuit. Manual dated moves below are preserved by rebuilds.
+
+| Player | GSIS ID | Pos | 2013 branch Week 1 slot | Last observed week | Source status | Contract | Pending FA | Review flags |
+|---|---|---|---|---|---|---|---|---|
+| A.Q. Shipley | 00-0026950 | C | C2 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Aaron Mellette | 00-0029896 | WR | OFF1 | 1 | RES | 2013-2016 (estimate) | Under contract (estimate) | last_observed_before_week17 |
+| Albert McClellan | 00-0027560 | ILB | MIKE2 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Anthony Levine | 00-0027539 | SS | SS3 | 17 | ACT | 2013-2014 (estimate) | Under contract (estimate) | Source data only |
+| Arthur Brown | 00-0030458 | ILB | WILL2 | 17 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Arthur Jones | 00-0027756 | DT | DT1 | 17 | ACT | 2013-2013 (estimate) | UFA (estimate) | Source data only |
+| Asa Jackson | 00-0029294 | CB | Unknown | 17 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Bernard Pierce | 00-0029264 | RB | RB2 | 17 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Bernard Scott | 00-0026941 | RB | Unknown | 17 | ACT,TRT | no pre 2014 contract | Unknown | missing_or_conflicting_source_status; no_pre_2014_contract; release_status_needs_dated_source |
+| Billy Bajema | 00-0023679 | TE | TE3 | 6 | CUT | no pre 2014 contract | Unknown | last_observed_before_week17; no_pre_2014_contract; release_status_needs_dated_source |
+| Brandon Stokley | 00-0015754 | WR | WR2 | 14 | RES | no pre 2014 contract | Unknown | last_observed_before_week17; no_pre_2014_contract |
+| Brandon Williams | 00-0030511 | DT | DT2 | 17 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Chris Canty | 00-0023566 | DE | DE1 | 17 | ACT | 2013-2015 (estimate) | Under contract (estimate) | Source data only |
+| Chykie Brown | 00-0028102 | CB | RCB2 | 17 | ACT | 2011-2014 (estimate) | Under contract (estimate) | Source data only |
+| Corey Graham | 00-0025555 | CB | RCB1 | 17 | ACT | 2012-2013 (estimate) | UFA (estimate) | Source data only |
+| Courtney Upshaw | 00-0029252 | OLB | SAM1 | 17 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Dallas Clark | 00-0022165 | TE | TE2 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| DeAngelo Tyson | 00-0029309 | DE | DE3 | 17 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Dennis Pitta | 00-0027714 | TE | Unknown | 17 | ACT | 2013-2013 (estimate) | UFA (estimate) | Source data only |
+| Deonte Thompson | 00-0029388 | WR | WR3,KR2 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Ed Dickson | 00-0027675 | TE | TE1 | 17 | ACT | 2013-2013 (estimate) | UFA (estimate) | Source data only |
+| Elvis Dumervil | 00-0024341 | OLB | SAM2 | 17 | ACT | 2013-2017 (estimate) | Under contract (estimate) | Source data only |
+| Gino Gradkowski | 00-0029268 | C | C1 | 17 | ACT | 2012-2015 (estimate) | Under contract (estimate) | Source data only |
+| Haloti Ngata | 00-0024227 | NT | NT1 | 17 | ACT | 2011-2011 (estimate) | Unknown | stale_contract |
+| Jacoby Jones | 00-0025460 | WR | WR1,PR1,KR1 | 17 | ACT | 2012-2013 (estimate) | UFA (estimate) | Source data only |
+| Jah Reid | 00-0028023 | G | LG2,RG2 | 17 | ACT | 2011-2014 (estimate) | Under contract (estimate) | Source data only |
+| Jameel McClain | 00-0026407 | ILB | Unknown | 17 | ACT | 2013-2014 (estimate) | Under contract (estimate) | Source data only |
+| James Ihedigbo | 00-0025753 | SS | SS1 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Jeromy Miles | 00-0027244 | FS | FS2 | 17 | ACT,TRT | no pre 2014 contract | Unknown | missing_or_conflicting_source_status; no_pre_2014_contract; release_status_needs_dated_source |
+| Jimmy Smith | 00-0027965 | CB | LCB2 | 17 | ACT | 2011-2015 (estimate) | Under contract (estimate) | Source data only |
+| Joe Flacco | 00-0026158 | QB | QB1 | 17 | ACT | 2013-2018 (estimate) | Under contract (estimate) | Source data only |
+| John Simon | 00-0030442 | OLB | SAM3 | 17 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Josh Bynes | 00-0028278 | ILB | WILL1 | 17 | ACT | 2011-2013 (estimate) | RFA (estimate) | Source data only |
+| Justin Tucker | 00-0029597 | K | K1 | 17 | ACT | 2012-2014 (estimate) | Under contract (estimate) | Source data only |
+| Kelechi Osemele | 00-0029259 | G | LG1,RT2 | 9 | RES | 2012-2015 (estimate) | Under contract (estimate) | last_observed_before_week17 |
+| Kyle Juszczyk | 00-0029892 | FB | FB2 | 17 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Lardarius Webb | 00-0027060 | CB | LCB1,PR2 | 17 | ACT | 2012-2017 (estimate) | Under contract (estimate) | Source data only |
+| Marcus Spears | 00-0023455 | DE | DE2 | 8 | CUT | no pre 2014 contract | Unknown | last_observed_before_week17; no_pre_2014_contract; release_status_needs_dated_source |
+| Marlon Brown | 00-0030400 | WR | WR2 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Marshal Yanda | 00-0025473 | G | RG1 | 17 | ACT | 2011-2015 (estimate) | Under contract (estimate) | Source data only |
+| Matt Elam | 00-0030559 | SS | SS2 | 17 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Michael Oher | 00-0026999 | T | RT1 | 17 | ACT | 2009-2013 (estimate) | UFA (estimate) | Source data only |
+| Morgan Cox | 00-0027557 | LS | LS1 | 17 | ACT | 2013-2014 (estimate) | Under contract (estimate) | Source data only |
+| Omar Brown | 00-0029372 | DB | Unknown | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Pernell McPhee | 00-0028103 | OLB | RUSH2 | 17 | ACT | 2011-2014 (estimate) | Under contract (estimate) | Source data only |
+| Ray Rice | 00-0026195 | RB | RB1 | 17 | ACT | 2012-2016 (estimate) | Under contract (estimate) | Source data only |
+| Ricky Wagner | 00-0029893 | T | LT2 | 17 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Ryan Jensen | 00-0029895 | C | C3 | 17 | ACT | 2013-2016 (estimate) | Under contract (estimate) | Source data only |
+| Sam Koch | 00-0024417 | P | P1,H1 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Shaun Draughn | 00-0028202 | RB | Unknown | 5 | CUT | no pre 2014 contract | Unknown | last_observed_before_week17; no_pre_2014_contract; release_status_needs_dated_source |
+| Tandon Doss | 00-0028061 | WR | Unknown | 17 | ACT | 2013-2013 (estimate) | RFA (estimate) | Source data only |
+| Terrell Suggs | 00-0022161 | OLB | RUSH1 | 17 | ACT | 2009-2014 (estimate) | Under contract (estimate) | Source data only |
+| Terrence Cody | 00-0027665 | NT | NT2 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+| Torrey Smith | 00-0027996 | WR | WR1 | 17 | ACT | 2011-2014 (estimate) | Under contract (estimate) | Source data only |
+| Tyrod Taylor | 00-0028118 | QB | QB2 | 17 | ACT | 2011-2014 (estimate) | Under contract (estimate) | Source data only |
+| Vonta Leach | 00-0022397 | FB | FB1 | 17 | ACT | no pre 2014 contract | Unknown | no_pre_2014_contract |
+<!-- END GENERATED LEAGUE DATABASE -->
 
 ## Changes on the rails (fill by real date)
 
