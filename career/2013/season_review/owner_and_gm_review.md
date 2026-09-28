@@ -1,6 +1,6 @@
 # 2013 season review: Stone with Shad Khan and David Caldwell
 
-**Expanded review and press interview:** [Read the researched manuscript](stone_2013_review_and_exit_interview.md), including the January 15 ownership/GM discussion and season-ending press conference, a separate February 2 assessment of Stone's offseason proposal, and research notes. The manuscript is an interpretive reconstruction; the frozen criteria and resolved retention decision below remain the controlling record.
+**Expanded review and press interview:** [Read the researched manuscript](stone_2013_review_and_exit_interview.md), including the January 15 ownership/GM discussion and season-ending press conference, a separate February 2 assessment of Stone's offseason proposal, and research notes. [Jump directly to Alex Stone's press exit interview](stone_2013_review_and_exit_interview.md#alex-stone-press-exit-interview). The manuscript is an interpretive reconstruction; the frozen criteria and resolved retention decision below remain the controlling record.
 
 **Function:** the dated record of the head coach's end-of-season review with ownership and the general manager, and of the club's retention decision. Organization-side actions are resolved from the criteria frozen in Entry 1 before Stone's review was read (the hiring-search discipline, `career/2013/offseason/hiring_search.md`, and Document 3 row 1).
 **Date of the meeting:** Wednesday January 15, 2014, at the stadium, four days after the Divisional loss at Tennessee.

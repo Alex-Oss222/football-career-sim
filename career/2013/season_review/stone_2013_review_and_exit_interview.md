@@ -1,6 +1,12 @@
 # Alex Stone: ownership review and season-ending press conference
 
+[Ownership and GM review](#ownership-and-gm-review) | [Alex Stone's press exit interview](#alex-stone-press-exit-interview) | [February 2 offseason assessment](#february-2-what-caldwell-should-make-of-the-actual-offseason-proposal)
+
 *A researched counterfactual reconstruction for the supplied Jacksonville branch. The January 15 scenes use information available at that date. Dialogue is newly written, not a historical transcript. The February 2 assessment considers Stone's subsequently filed offseason proposal. Research notes and source limitations follow the manuscript. This draft does not execute personnel moves or change the branch's closed results.*
+
+*Corrected September 28, 2026, after ledger Entry 75. The January 2014 coaching carousel was resolved after this manuscript was written. It places Alan Lowry's departure to become Atlanta's head coach on January 12 and Frank Bush's interview with Indianapolis on January 14, both before these scenes. The staff passages in the ownership meeting and the press conference now reflect those facts, as does the controlling record (`owner_and_gm_review.md`, Entries 2 and 4). Nothing else in the manuscript changed.*
+
+## Ownership and GM review
 
 *Wednesday, January 15, 2014. EverBank Field. Shad Khan, David Caldwell, Alex Stone.*
 
@@ -172,19 +178,19 @@ Caldwell gave the scheduled assistant total: $7.225 million in 2013, excluding S
 
 “I wanted experienced people,” Stone said.
 
-“You got them,” Khan said. “I'm happy to pay for people who make us better. I don't want keeping the same twelve names presented as the result of the investment. What did the players learn? What did we stop doing badly? Where did the coaches make a difference?”
+“You got them,” Khan said. “I'm happy to pay for people who make us better. I don't want keeping the same names presented as the result of the investment. What did the players learn? What did we stop doing badly? Where did the coaches make a difference?”
 
 Caldwell pointed to the receiver development, the replacement linebackers and the changed Houston plan. He also pointed to the protection totals and the recurring difficulty finishing drives.
 
 “There's enough here to keep working with this staff,” he said. “There isn't enough to say every room is working equally well. Tice has the weekday offense. You have the Sunday calls. I don't want a failure passed between those two descriptions until neither one owns it.”
 
-Stone said he was not recommending a staff change.
+Stone gave the staff position first. Alan Lowry had left on Sunday to become Atlanta's head coach, so the special teams coordinator job was open. Frank Bush had interviewed with Indianapolis the day before for its defensive coordinator job. The other assistants were under contract, and Stone was not recommending a change among them.
 
 “I'm not asking you for one,” Khan said.
 
-Lowry's unit needed its own review. Scobee had made thirty-six of forty-one field goals. He had kept points coming when the offense stalled, although the two short misses in the first Tennessee game were part of that defeat. Caldwell would not treat the kicker's season as proof that the entire kicking game had been dependable. Keshawn Martin had produced damaging punt returns in both Houston games. Cleveland had a long kickoff return. Those plays belonged to the coverage evaluation even when Jacksonville won.
+The kicking game still needed its own review. Scobee had made thirty-six of forty-one field goals. He had kept points coming when the offense stalled, although the two short misses in the first Tennessee game were part of that defeat. Caldwell would not treat the kicker's season as proof that the entire kicking game had been dependable. Keshawn Martin had produced damaging punt returns in both Houston games. Cleveland had a long kickoff return. Those plays belonged to the coverage evaluation even when Jacksonville won.
 
-“We hired a special-teams coordinator and gave the young players jobs there,” he said. “We need the same report we want from the offense and defense. Which units improved, who can stay in those roles, and what we're exposing when we dress the forty-six. Josh making the kick doesn't answer that.”
+“We hired a special-teams coordinator and gave the young players jobs there,” he said. “Whoever replaces Alan starts from the same report we want from the offense and defense. Which units improved, who can stay in those roles, and what we're exposing when we dress the forty-six. Josh making the kick doesn't answer that.”
 
 They discussed the support program briefly. The onboarding calls, individual teaching sheets and correction-and-retest process gave the club an organized way to teach. Family events and confidential support had defined boundaries. Their existence did not demonstrate that every player trusted the staff or that the resources had caused the wins. Neither Caldwell nor Khan had a report that could establish that.
 
@@ -217,6 +223,8 @@ Stone said the first priorities were keeping the lines together where possible, 
 Khan had no contract proposal for Stone. Stone requested no raise, extension, additional authority or staff money. They continued under the agreement already in place: Caldwell controlled acquisitions, contracts, cap and scouting; Stone controlled his staff, football roles and offensive play-calling. The quarterback consultation requirement remained a consultation requirement. The attempted concurrence right from the hiring negotiations had never become part of the contract.
 
 Caldwell said he would put the personnel and development questions into the written follow-up. Stone asked him to include Kelce's blocking evaluation with the receiving questions, then returned to the page on which Caldwell had divided the season into two halves. Khan asked whether the February submission would include the players whose contracts still needed to be reconciled. Caldwell said it would, and began identifying which files he needed from football administration.
+
+## Alex Stone: press exit interview
 
 *Wednesday, January 15, 2014. Season-ending press availability. The questions are a fictional local press corps, not invented quotations attributed to real reporters.*
 
@@ -354,15 +362,15 @@ The communications staff connected the podium microphone, checked its level thro
 
 **Reporter:** Are you keeping all your assistants?
 
-**Stone:** I'm not announcing a change. They're under contract. We're reviewing the work in every room.
+**Stone:** Alan Lowry is Atlanta's head coach, and he earned that job. Special teams coordinator is open. The rest are under contract, and we're reviewing the work in every room.
 
 **Reporter:** Do you expect other teams to ask to interview them?
 
-**Stone:** We'll handle a request if one comes. I don't have one to announce.
+**Stone:** Indianapolis asked to talk to Frank Bush about its coordinator job, and we said yes. That's his conversation to discuss, not mine. I don't have anything else to announce.
 
 **Reporter:** At Indianapolis, you had the division in reach and lost by a point. Then there was the late punt in Nashville. Are you satisfied with your end-of-game operation?
 
-**Stone:** No. After Indianapolis we put an explicit end-game check into the plan: score, down, distance, clock, timeouts, field position and the consequences of a punt. Lowry is part of that conversation. The operation belongs to me.
+**Stone:** No. After Indianapolis we put an explicit end-game check into the plan: score, down, distance, clock, timeouts, field position and the consequences of a punt. Lowry was part of that conversation. The operation belongs to me.
 
 **Reporter:** But you still punted in Tennessee, down seven, with 2:22 left. Why?
 
@@ -374,7 +382,7 @@ The communications staff connected the podium microphone, checked its level thro
 
 **Reporter:** Does holding the play sheet make it harder to run the whole game?
 
-**Stone:** It adds work. That's why the responsibilities around me have to be clear. Tice runs the weekday offensive process, Romeo calls the defense, Lowry handles the kicking game. I chose to keep offensive play-calling. I don't get to use having two jobs as an excuse for doing one badly.
+**Stone:** It adds work. That's why the responsibilities around me have to be clear. Tice runs the weekday offensive process, Romeo calls the defense, and until we hire a special teams coordinator, the kicking game is mine too. I chose to keep offensive play-calling. I don't get to use having two jobs as an excuse for doing one badly.
 
 **Reporter:** Did ownership ask you to give it up?
 
@@ -456,7 +464,7 @@ Caldwell should retain Stone's football priorities while requiring a narrower fi
 
 The manuscript's overall judgment is favorable because the branch evidence warrants it. A first-year head coach who turns a 2-14 club into a 10-6 team with a decisive road playoff victory has earned substantial organizational confidence. Retention is not plausibly a narrow escape made possible by a guaranteed contract. The uncertainty concerns how strong the underlying team is, whether specific corrections last, and whether Stone can make a better acquisition case than the broad assertion that the program worked.
 
-The dialogue and meeting details are dramatic reconstruction. They communicate an evidence-based interpretation of the owner and GM's incentives; they do not claim access to their real private views. No current player, assistant or reporter is assigned an unrecorded grievance, interview request or private misconduct. The draft makes no new binding promises on Stone's behalf.
+The dialogue and meeting details are dramatic reconstruction. They communicate an evidence-based interpretation of the owner and GM's incentives; they do not claim access to their real private views. No current player, assistant or reporter is assigned an unrecorded grievance, interview request or private misconduct; the staff departures and interview requests in the corrected passages are the ones ledger Entry 75 records. The draft makes no new binding promises on Stone's behalf.
 
 ### Branch material used
 

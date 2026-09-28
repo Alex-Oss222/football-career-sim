@@ -15,6 +15,6 @@ The 2014 league year folder. The 2013 season is complete and archived (ledger En
 | Season ledger | not yet created; the 2013 ledger (`career/2013/ledger.md`) remains Document 6 until the first 2014 event closes | Pending |
 | Roster | `career/2013/roster.md` remains the controlled-roster record until a 2014 roster owner is created with the first roster-changing event | Pending |
 
-**Held for the user:** the five 2014 phase plans (folders created; the user writes them). The exit interviews are being run at the user's request (dated January 13-14, 2014).
+**Held for the user:** the five 2014 phase plans (folders created; the user writes them) and the staff replacement plan. The exit interviews (January 13-14, 2014; Entry 76) list the program decisions and staff findings the plans should answer (`career/2013/exit_interviews/README.md`).
 
 **Engine:** the user directed fixes for timeouts, the two-minute warning, kneel-downs and the fourth-down display before any 2014 game.

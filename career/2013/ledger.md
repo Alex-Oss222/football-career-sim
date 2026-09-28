@@ -2189,13 +2189,56 @@ The adversarial review of the method before the draw confirmed and fixed thirtee
 
 **Commit closed - Canonical update - February 2, 2014 - January 2014 coaching carousel resolved (Lowry to Atlanta) - canonical through February 2, 2014**
 
+## Entry 76: 2013 exit interviews recorded (retroactive)
 
-## Entry 76: Special-teams authority and staff planning reconciled
+**Effective canonical state:** February 2, 2014 (no clock advance). The interviews are dated Monday January 13 and Tuesday January 14, 2014.
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - February 2, 2014 - 2013 exit interviews recorded (January 13-14)`
+**Preceding global package checkpoint:** `Canonical update - February 2, 2014 - January 2014 coaching carousel resolved (Lowry to Atlanta)`
+
+**Decision.** The user asked for in-depth, comprehensive exit interviews and set the format:
+- **Date:** January 13-14, 2014.
+- **Tone:** an honest review with no promises.
+- **Depth:** a full interview for the main core; a structured, in-depth report for the core; a summary for everyone else.
+
+**Record.** `career/2013/exit_interviews/` holds 61 players: all 53 on the active roster and all 8 on the practice squad.
+- **Main core** (13 full interviews, Monday January 13): `main_core/`.
+- **Core** (27 structured reports, Tuesday January 14): `core/`.
+- **Summaries** (21, Tuesday January 14): `summaries_offense.md`, `summaries_defense.md`, `summaries_practice_squad.md`.
+- **Index:** `README.md` lists each player's date and the coaches present. It also collects the open program decisions for the user, the follow-ups and the staff findings.
+
+**Method.**
+- Each interview was written from the branch record only, then checked by a separate skeptical pass.
+- The verification removed manufactured flaws, unsupported motives, draft and contract hints and misdated quotations. It also moved any live work out of Phase Two, where the CBA forbids it.
+- No numeric rating appears. Statistics that the 2013 engine attributed at random are not used as evidence (sacks allowed by lineman, returners, coverage tackles).
+- No real 2013 or later outcome was used.
+
+**Reconciliation with Entry 75.** The carousel closed first and places Lowry's departure (January 12) and Bush's Indianapolis interview (January 14) before or inside the interview dates.
+- Lowry attends no meeting. His follow-ups belong to the special teams coordinator, with Stone covering until the job is filled, and none is dated before February 2.
+- Bush attends the Monday meetings but not Tuesday's.
+- Stone told the specialists that Lowry had left and that his replacement was not decided.
+
+**What changed.** Nothing in roster, role, contract, cap, medical or availability state:
+- every exit physical is the medical staff's, and none recorded a finding;
+- Stone promised no job, role, contract or roster spot;
+- contract, tag, tender and roster questions were referred to Caldwell.
+The user's February 2 memo to Caldwell (`career/2014/offseason/stone_to_caldwell_2014_offseason_decisions.md`) already answers the contract recommendations for the pending free agents, the futures and the trade candidates. The interviews disclosed none of them.
+
+**Open for the user.**
+- **Program decisions** for the 2014 phase plans, listed in the README: examples are the backup defensive caller, the long-term-injury plan, individual classified cutups, how rotation and depth-order evidence is communicated, and the end-of-half punt rules.
+- **Follow-ups dated January 31, 2014:** individual film cutups from the position coaches. Their delivery is not recorded; whether the CBA lets staff send film before April 21 is unsourced.
+
+**Companion manuscript.** The user's researched ownership review and press conference (`career/2013/season_review/stone_2013_review_and_exit_interview.md`, merged into this branch as pull request #122) was written before Entry 75. Its staff passages are corrected to Entry 75, with a dated note at the top: Lowry's departure, Bush's Indianapolis interview and the vacant special teams job. `owner_and_gm_review.md` remains the controlling record.
+
+**Commit closed - Canonical update - February 2, 2014 - 2013 exit interviews recorded (January 13-14) - canonical through February 2, 2014**
+
+
+## Entry 77: Special-teams authority and staff planning reconciled
 
 **Effective canonical state:** February 2, 2014; the existing interim assignment applies from Lowry's January 12 departure. No clock advance.
 **Recorded:** September 28, 2026
 **Checkpoint:** `Canonical correction - February 2, 2014 - special-teams authority and staff planning reconciled`
-**Preceding global package checkpoint:** `Canonical update - February 2, 2014 - January 2014 coaching carousel resolved (Lowry to Atlanta)`
+**Preceding global package checkpoint:** `Canonical update - February 2, 2014 - 2013 exit interviews recorded (January 13-14)`
 
 **Authority and scope.** The user requested assessment and improvement of the staff-change handoff, explicitly including Document 3's stale Lowry references, Stone's interim duties, the $6,950,000 payroll and the standing interview policy. This is an administrative correction of the Entry 75 dependency gap, not another carousel, appointment or delegation decision.
 
@@ -2207,6 +2250,6 @@ The adversarial review of the method before the draw confirmed and fixed thirtee
 
 **Planning corrections.** `staff_plan.md` exists but has no selected targets or authorized offers. It now separates that missing decision from the existing role description, interim coverage, payroll commitments, unestablished hiring budget and candidate evidence. A current opening is not evidence that another club's coach is available; permission, contract status and availability must be checked at the actual approach date using branch records and permitted dated evidence.
 
-**Dependency closure.** Document 3 becomes Rebuild draft 2.6; Document 4 becomes `JAX-2014-FEB02-STAFF-RECONCILIATION-REGISTER-36`; Document 5 becomes `JAX-2014-FEB02-STAFF-RECONCILIATION-STATE-52` with the exact new Document 3 Git-blob hash. Current staff prose and the staff-change README agree with those records. Earlier ledger entries and the frozen carousel artifacts are preserved verbatim. No player, roster, cap, medical, calendar, draft-capital or game-result change; no replacement is selected or hired.
+**Dependency closure.** Document 3 becomes Rebuild draft 2.6; Document 4 becomes `JAX-2014-FEB02-STAFF-RECONCILIATION-REGISTER-36`; Document 5 becomes `JAX-2014-FEB02-STAFF-RECONCILIATION-STATE-53` with the exact new Document 3 Git-blob hash. Current staff prose and the staff-change README agree with those records. Earlier ledger entries, including the merged player exit interviews in Entry 76, and the frozen carousel artifacts are preserved verbatim. The corrected ownership/press manuscript is retained; section headings and index links make Alex Stone's press interview and the separate player interviews directly discoverable. No player, roster, cap, medical, calendar, draft-capital or game-result change; no replacement is selected or hired.
 
 **Commit closed - Canonical correction - February 2, 2014 - special-teams authority and staff planning reconciled - canonical through February 2, 2014**

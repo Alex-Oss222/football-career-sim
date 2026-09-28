@@ -42,7 +42,9 @@ Every regular-season week is closed. The postseason bracket and round index is `
 ## Season review
 
 - [Owner and GM review](season_review/owner_and_gm_review.md): frozen evaluation criteria and resolved retention decision.
-- [Expanded ownership review and press exit interview](season_review/stone_2013_review_and_exit_interview.md): researched narrative, separate assessment of the February 2 offseason proposal, and source notes; an interpretive companion to the controlling record.
+- [Expanded ownership review](season_review/stone_2013_review_and_exit_interview.md#ownership-and-gm-review): researched narrative, separate assessment of the February 2 offseason proposal, and source notes; an interpretive companion to the controlling record.
+- [Alex Stone's press exit interview](season_review/stone_2013_review_and_exit_interview.md#alex-stone-press-exit-interview): January 15 season-ending press availability.
+- [Player exit interviews with Stone](exit_interviews/README.md): January 13-14 meetings covering all 61 players, recorded in Entry 76.
 
 ## Canonical migrations
 

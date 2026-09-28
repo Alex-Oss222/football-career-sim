@@ -23,7 +23,7 @@ This file is the **current operating staff register**. The hiring sequence, decl
 |---|---|---|---|
 | Offense | Mike Tice coordinates the unit and weekly offensive process | **Alex Stone calls offensive plays** | Final offensive menu, game-plan approval, situational direction, game management |
 | Defense | Romeo Crennel | **Romeo Crennel calls the defense** | Final team principles, coordinator supervision, major situational/game-management decisions |
-| Special teams | Alan Lowry (2013 season); **vacant from January 12, 2014** | **Alan Lowry directed the kicking game in 2013**; Stone directs the unit on an interim basis under Entry 75 until a replacement is hired (Document 3 section 4, reconciled by Entry 76) | Final team-level priorities, roster/use decisions within Stone's authority, game-management interface |
+| Special teams | Alan Lowry (2013 season); **vacant from January 12, 2014** | **Alan Lowry directed the kicking game in 2013**; Stone directs the unit on an interim basis under Entry 75 until a replacement is hired (Document 3 section 4, reconciled by Entry 77) | Final team-level priorities, roster/use decisions within Stone's authority, game-management interface |
 
 The delegation above is real delegation. Crennel remains the defensive caller. Lowry directed special teams during his Jacksonville appointment; Stone's interim assignment starts with the recorded January 12 vacancy, not a retroactive takeover of Lowry's work.
 

@@ -1,7 +1,7 @@
 # Jacksonville Jaguars: 2014 staff replacement plan
 
 **Status:** Framework ready; replacement targets and offer terms not yet selected. The special teams coordinator job is vacant following Alan Lowry's January 12 departure for Atlanta (ledger Entry 75). This file's existence does not authorize a hire. Stone selects candidates and staff assignments under Document 3 row 2; a target, interview or proposed offer is not an appointment.
-**As of:** February 2, 2014. Entry 76 reconciles planning and authority references without advancing time or selecting a candidate.
+**As of:** February 2, 2014. Entry 77 reconciles planning and authority references without advancing time or selecting a candidate.
 
 ## Open position and interim coverage
 

@@ -6,9 +6,9 @@
 
 ## Current checkpoint
 
-- **Master date:** February 2, 2014, after Super Bowl XLVIII (2013 season complete; ledger Entry 67; 2014 setup Entry 68).
+- **Master date:** February 2, 2014, after Super Bowl XLVIII (2013 season complete; ledger Entry 67; 2014 setup Entry 68; latest closed event Entry 76, the exit interviews).
 - **Jacksonville:** 2013 finished 10-6, 1-1 postseason. 53 active and 8 on the practice squad carry over from the 2013 roster until the league year turns (`career/2013/roster.md` stays the controlled-roster record until the 2014 roster owner is created).
-- **Held for the user:** end-of-season exit interviews.
+- **Held for the user:** the five 2014 phase plans; the special teams coordinator replacement plan.
 - **Next league events:** franchise and transition window February 17; Combine February 19-25; the 2014 league year opens March 11, 4:00 p.m. ET.
 
 ## Offseason calendar
@@ -16,9 +16,9 @@
 | Date (2014) | Event | Owner / record | Status |
 |---|---|---|---|
 | From Jan. 12 | Reserve/future contracts: Jacksonville may sign them once its season ended (January 11). None has been recorded; any signing is a Caldwell personnel decision. | future Caldwell transaction record | Open |
+| Jan. 13-14 | End-of-season exit interviews with all 61 players, after Alan Lowry left for Atlanta's head-coach job on January 12 (Entry 75) and before the January 15 season review with Khan and Caldwell (Entry 74) | `career/2013/exit_interviews/README.md` (Entry 76) | Complete |
 | Jan. 15 | Underclassman special-eligibility deadline | `library/2014_draft_information_gates.md` | Complete (league) |
 | Jan. 25 | Senior Bowl, Mobile | draft information gates | Complete (league) |
-| **Held** | End-of-season exit interviews | not run until the user asks | Held |
 | Feb. 17 - Mar. 3 (4 p.m. ET) | Franchise and transition designation window | Caldwell (contract authority) | Future |
 | Feb. 19-25 | NFL Scouting Combine, Indianapolis | draft information gates | Future |
 | Feb. 28 | 2014 salary cap announced ($133.0M; **Gate: Feb. 28**; tag values released the same day) | library section 2 | Gated |
