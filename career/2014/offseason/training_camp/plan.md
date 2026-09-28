@@ -1,6 +1,6 @@
 # Jacksonville Jaguars: 2014 Training camp and preseason plan
 
-**Status:** DURABLE CARRY-FORWARD PREPARED; new decisions below await Stone's approval. No phase has run.
+**Status:** 2013 METHODS RETAINED; individual training/film workflow authorized; other marked choices remain pending. No phase has run.
 **Planning checkpoint:** February 2, 2014. Prepared September 28, 2026 without advancing time.
 **Proposed dates:** Reporting and practice dates unresolved until the July 14 reporting-date gate and the applicable preseason schedule.
 **Authority:** [Stone's memo, section 6](../stone_to_caldwell_2014_offseason_decisions.md); [2014 calendar](../../calendar.md).
@@ -9,7 +9,7 @@
 
 ## 2014 authority and execution conditions
 
-This is the carry-forward authorized in Stone's February 2 memo section 6 and the user's September 28, 2026 request to address the outstanding work. The inherited teaching method is retained below. New recommendations at the end are explicitly proposed, not silently adopted Stone decisions. No practice, attendance, delivery, hiring, clearance or role change is recorded by this plan.
+This is the carry-forward authorized in Stone's February 2 memo section 6 and the user's September 28, 2026 request to address the outstanding work. The inherited teaching method is retained below. The individual training/film items identified below are adopted; other recommendations at the end remain explicitly proposed. No practice, attendance, delivery, hiring, clearance or role change is recorded by this plan.
 
 - Returning players begin with retention of assigned 2013 material. New arrivals receive the complete active books and the existing onboarding process after control/invitation is verified; late onboarding is recorded honestly, never backdated. Any pre-program football contact or film delivery first passes the unresolved CBA check recorded in the exit-interview README.
 - Cousins remains the established QB1. The quarterback competition is for QB2/QB3 among players actually controlled when the phase opens. Henne and Bray are memo candidates, not assumed re-signings. Cousins's priorities are ball security, protection communication and separating decision errors from technique or protection failures.
@@ -27,6 +27,14 @@ The existing framework, readiness standard and identity remain at their 2013 pat
 - [Active playbook index](../../../playbook/README.md): offensive and defensive Iteration I only, effective 2013 through 2015.
 
 Use Explain → Show → Walk → Rep → Correct → Rep again → Retain → Add complexity. Good means the assigned job works at the lawful phase speed; Better means correction survives changed presentations; Best for the phase means reliable, independent execution. These describe teaching evidence, not permanent player ratings.
+
+## Individual training and film workflow
+
+Read the [training index](../README.md), [room work plans](../training/unit_plans.md), [player queue](../film/player_queue.md) and the relevant [individual plan](../player_development/README.md) before preparing the phase. Use the [session template](../training/session_template.md), [film packet](../film/packet_template.md) and [delivery log](../film/delivery_log.md) to close the loop from assigned job to a later independent retest.
+
+Stone authorized the individual-feedback process P3 and Cousins progression, the P5 QB-center identification teaching process, and continuation of individual development in P8. Other marked proposals remain pending. Start Cousins from his [2013 evidence assessment](../player_development/kirk_cousins.md), preserving demonstrated operation and targeting the unresolved job. Do not reset him to a beginner plan or infer broad mastery from results alone.
+
+All work remains within this phase’s calendar, contact, medical and voluntary-participation limits. The actual phase output owns new practice evidence; the delivery log owns actual distribution. A prepared packet is not a delivered tape. No historic January delivery is backdated. New role assignments and Boot Flood’s return require their separate decisions.
 
 ## Player playbook access and evidence rule
 
@@ -762,9 +770,9 @@ Recommend that every end-of-half/end-of-game punt instruction state the clock, s
 
 The proposed execution default after Stone chooses a punt is a secure snap/protection operation and a placement/coverage instruction suited to the actual field, rather than chasing gross distance. The coordinator must identify whether the objective is field position, avoiding a return or preserving a specific clock situation; no fixed yard-line rule replaces that decision. Anger is evaluated against the instruction he received. Grade snap, protection, kick, coverage and the call separately. Rehearse a rushed substitution and a bad-snap response within legal practice limits, without prescribing an intentional safety or improvised fake in advance.
 
-### P8: continuation of individual development
+### P8: continuation of individual development, adopted; defensive directive proposal pending
 
-Recommend keeping a position-coach development review after each camp block and during the regular season, including after the bye. Use P3's individual evidence note and correction ownership. Receiver-quarterback adjustment work tests changed leverage; established players retain blocking/protection work. The defensive directive for each opponent must state the accepted concession and the response if the opponent exploits it, as well as the intended stop. No coordinator call or accepted concession is invented in this offseason plan.
+Keep a position-coach development review after each camp block and during the regular season, including after the bye. Use P3's individual evidence note and correction ownership. Receiver-quarterback adjustment work tests changed leverage; established players retain blocking/protection work. The separate proposed defensive directive for each opponent would state the accepted concession and the response if the opponent exploits it, as well as the intended stop. No coordinator call or accepted concession is invented in this offseason plan.
 
 ### P9: contact, return and consultation
 

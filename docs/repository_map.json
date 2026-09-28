@@ -221,7 +221,19 @@
     "career/2014/calendar.md",
     "career/2014/draft/draft_order.md",
     "career/2014/schedule/opponents.md",
-    "career/2014/offseason/contract_status_register.md"
+    "career/2014/offseason/contract_status_register.md",
+    "career/2014/offseason/README.md",
+    "career/2014/offseason/training/session_template.md",
+    "career/2014/offseason/training/unit_plans.md",
+    "career/2014/offseason/training/weekly_workflow.md",
+    "career/2014/offseason/player_development/README.md",
+    "career/2014/offseason/player_development/kirk_cousins.md",
+    "career/2014/offseason/player_development/player_plan_template.md",
+    "career/2014/offseason/film/README.md",
+    "career/2014/offseason/film/delivery_log.md",
+    "career/2014/offseason/film/kirk_cousins_2013_review.md",
+    "career/2014/offseason/film/packet_template.md",
+    "career/2014/offseason/film/player_queue.md"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",

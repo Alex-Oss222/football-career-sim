@@ -1,0 +1,41 @@
+# Jacksonville 2014 training and player development
+
+**Planning baseline:** February 2, 2014. The user authorized the training-folder, individual-film and Cousins-progression improvements on September 28, 2026. Preparing these records does not advance the career clock or record participation, film delivery, a hire, medical clearance or a role change.
+
+Start with the player's existing evidence, preserve what works, teach the next unresolved job, then test retention before adding complexity. The [2013 onboarding framework](../../2013/offseason/player_onboarding_and_development_framework.md), [readiness standard](../../2013/offseason/the_prowl_player_readiness_standard.md) and [program identity](../../2013/offseason/the_prowl_program_identity.md) remain the durable methods. The [2014 calendar](../calendar.md) and returning-head-coach restrictions control this year.
+
+## Find the right record
+
+| Need | Open | What it owns |
+|---|---|---|
+| Run the coaching process | [Training workflow](training/weekly_workflow.md) | Preparation, session rhythm, correction, retention and phase handoff |
+| Prepare a position room | [Unit work plans](training/unit_plans.md) | Coach, football objective, paired-film question and next test |
+| Script a permitted session | [Session template](training/session_template.md) | Specific jobs and evidence to gather; no results entered in the script |
+| Build a player's progression | [Player development](player_development/README.md) | Baseline, retained strengths, open corrections and advancement criteria |
+| Review Cousins | [Development plan](player_development/kirk_cousins.md) and [2013 review index](film/kirk_cousins_2013_review.md) | Evidence-based starting point and the actual source plays requiring review |
+| Assemble or issue a tape | [Film workflow](film/README.md) | Packet contents, cause review, approval, receipt and later retest |
+| Find outstanding player work | [Player film queue](film/player_queue.md) | One accountable queue entry for each of the 61 players at the baseline, including the retired-player archive |
+| Verify a delivery | [Delivery log](film/delivery_log.md) | Dated packet revisions and actual issue/acknowledgment/review receipts |
+| Resolve a staffing dependency | [Staff changes](staff_changes/README.md) | April search plan and actual appointment records |
+
+## Phase route
+
+| Phase | Plan | Required handoff |
+|---|---|---|
+| Offseason program, Phases One and Two | [plan.md](offseason_program/plan.md) | Permitted physical work and unopposed individual/group teaching; no offense against defense; carry open checks into OTAs |
+| Rookie minicamp | [plan.md](rookie_minicamp/plan.md) | Actual eligible participants, onboarding evidence and an individual baseline for each participant |
+| OTAs, Phase Three | [plan.md](otas/plan.md) | Non-contact, changed-picture work, independent communication and delayed retests |
+| Mandatory veteran minicamp | [plan.md](mandatory_minicamp/plan.md) | Retained assignments and individual summer/camp-entry instructions |
+| Training camp and preseason | [plan.md](training_camp/plan.md) | Lawful contact and game-speed transfer, individual development continued through season |
+
+Dates stay in the calendar and phase plans. A proposed date does not authorize work. No extra new-head-coach minicamp applies to Jacksonville in 2014.
+
+## Authority and record boundaries
+
+The individual-feedback process previously labeled P3, Cousins's evidence-led progression, the QB-center identification teaching process in P5, and continuation of individual development in P8 are authorized by this request. Other marked proposals, including new role assignments, Boot Flood's return to team work and Stone's punt policy, remain separate decisions. A player learning a job does not win it merely by appearing in a plan.
+
+Plans describe intended work. The relevant phase's `output.md` records actual instruction, evidence and decisions when it runs. The film delivery log records actual distribution. Player evidence records link to those primary sources rather than inventing practice results. Any change to canon closes with the ledger and dependent state under [the update workflow](../../../docs/update_workflow.md).
+
+The queue is an explicitly dated work inventory, not a second roster. Recheck [club control](../../2013/roster.md), [contract status](contract_status_register.md), current medical instructions and [staff responsibility](../../2013/coaching_staff.md) before player contact or phase entry. Meester has no training assignment. Allen's prospective trade is not completed and his April 22 retirement remains a boundary. Bobby April is selected for the search, not appointed; Stone owns special teams until a hire closes.
+
+Before pre-program player delivery or football contact, Caldwell's office must close the existing rules question documented in the [exit-interview follow-ups](../../2013/exit_interviews/README.md#follow-ups). Internal preparation can proceed. No historic January delivery is backdated or assumed.

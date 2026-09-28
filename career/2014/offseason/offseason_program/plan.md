@@ -1,6 +1,6 @@
 # Jacksonville Jaguars: 2014 Offseason program, Phases One and Two plan
 
-**Status:** DURABLE CARRY-FORWARD PREPARED; new decisions below await Stone's approval. No phase has run.
+**Status:** 2013 METHODS RETAINED; individual training/film workflow authorized; other marked choices remain pending. No phase has run.
 **Planning checkpoint:** February 2, 2014. Prepared September 28, 2026 without advancing time.
 **Proposed dates:** Phase One April 21 to May 2; Phase Two May 5 to May 23.
 **Authority:** [Stone's memo, section 6](../stone_to_caldwell_2014_offseason_decisions.md); [2014 calendar](../../calendar.md).
@@ -9,7 +9,7 @@
 
 ## 2014 authority and execution conditions
 
-This is the carry-forward authorized in Stone's February 2 memo section 6 and the user's September 28, 2026 request to address the outstanding work. The inherited teaching method is retained below. New recommendations at the end are explicitly proposed, not silently adopted Stone decisions. No practice, attendance, delivery, hiring, clearance or role change is recorded by this plan.
+This is the carry-forward authorized in Stone's February 2 memo section 6 and the user's September 28, 2026 request to address the outstanding work. The inherited teaching method is retained below. The individual training/film items identified below are adopted; other recommendations at the end remain explicitly proposed. No practice, attendance, delivery, hiring, clearance or role change is recorded by this plan.
 
 - Returning players begin with retention of assigned 2013 material. New arrivals receive the complete active books and the existing onboarding process after control/invitation is verified; late onboarding is recorded honestly, never backdated. Any pre-program football contact or film delivery first passes the unresolved CBA check recorded in the exit-interview README.
 - Cousins remains the established QB1. The quarterback competition is for QB2/QB3 among players actually controlled when the phase opens. Henne and Bray are memo candidates, not assumed re-signings. Cousins's priorities are ball security, protection communication and separating decision errors from technique or protection failures.
@@ -27,6 +27,14 @@ The existing framework, readiness standard and identity remain at their 2013 pat
 - [Active playbook index](../../../playbook/README.md): offensive and defensive Iteration I only, effective 2013 through 2015.
 
 Use Explain → Show → Walk → Rep → Correct → Rep again → Retain → Add complexity. Good means the assigned job works at the lawful phase speed; Better means correction survives changed presentations; Best for the phase means reliable, independent execution. These describe teaching evidence, not permanent player ratings.
+
+## Individual training and film workflow
+
+Read the [training index](../README.md), [room work plans](../training/unit_plans.md), [player queue](../film/player_queue.md) and the relevant [individual plan](../player_development/README.md) before preparing the phase. Use the [session template](../training/session_template.md), [film packet](../film/packet_template.md) and [delivery log](../film/delivery_log.md) to close the loop from assigned job to a later independent retest.
+
+Stone authorized the individual-feedback process P3 and Cousins progression, the P5 QB-center identification teaching process, and continuation of individual development in P8. Other marked proposals remain pending. Start Cousins from his [2013 evidence assessment](../player_development/kirk_cousins.md), preserving demonstrated operation and targeting the unresolved job. Do not reset him to a beginner plan or infer broad mastery from results alone.
+
+All work remains within this phase’s calendar, contact, medical and voluntary-participation limits. The actual phase output owns new practice evidence; the delivery log owns actual distribution. A prepared packet is not a delivered tape. No historic January delivery is backdated. New role assignments and Boot Flood’s return require their separate decisions.
 
 ## Player playbook access and evidence rule
 
@@ -141,9 +149,9 @@ Before Phase Two, position coaches prepare the retained-material check and an in
 
 At the handoff to OTAs, each room reports what was taught, retained, postponed and limited by medicine or legal work restrictions. The shared full-team family dinner remains one event in the offseason/OTA window, planned and recorded through OTAs, not a duplicate obligation here. Events belong in this folder's future `output.md`; current state changes only when an event actually occurs.
 
-## Proposed decisions for Stone, not yet adopted
+## 2014 decisions: P3 adopted; other proposals pending
 
-These proposals answer the exit-interview questions without inventing Crennel's promised report or a player evaluation. Approval adopts a teaching process; any later personnel appointment still needs its own evidence and record.
+These items answer the exit-interview questions without inventing Crennel's promised report or a player evaluation. P3 is adopted by the user’s training/film request; P1, P2 and P4 remain proposals. Any later personnel appointment still needs its own evidence and record.
 
 ### P1: defensive communication succession
 
@@ -155,13 +163,13 @@ Crennel's proposal should name the primary and backup communicator for each actu
 
 Offer medically permitted access to meetings, approved film and position-coach clarification on the same voluntary basis as teammates. The clinician specifies whether cognitive as well as physical work is restricted. No attendance, recall deadline or contact requirement overrides that instruction. Review restrictions before adding work; a return projection is not permission. Provide a short catch-up sequence on clearance, then a lawful retest of assigned material. No lost role follows automatically from an injury or absence.
 
-### P3: individual feedback and overdue film
+### P3: individual feedback and overdue film, adopted
 
-Recommend an individual written teaching note for every participating controlled player, including reserves and practice-squad/futures players, after each meaningful work block. State the assigned job, evidence, what was correct, the cause of any error, correction owner, next legal retest and whether an evaluation is open, parked or closed. No evidence means not observed, not failed. If several players miss the same instruction, review the teaching first.
+Provide an individual written teaching note for every participating controlled player, including reserves and practice-squad/futures players, after each meaningful work block. State the assigned job, evidence, what was correct, the cause of any error, correction owner, next legal retest and whether an evaluation is open, parked or closed. No evidence means not observed, not failed. If several players miss the same instruction, review the teaching first.
 
 For a needed correction, pair the player's rep with a correct example where one exists; never fabricate a matching good rep. Classify assignment, communication, technique, physical loss, processing delay, medical restriction and staff/design failure separately. Correct reps need no invented fault. Immediate re-reps occur only at the lawful speed/contact level; otherwise schedule the next permitted opportunity.
 
-The January 31 deliveries remain **unverified/open**, not delivered and not proven undelivered. Staff should inventory the existing promised cutups and their receipts first. Do not backdate a February preparation action into January. The owners below are proposed accountability assignments for completion, not statements that work already occurred:
+The January 31 deliveries remain **unverified/open**, not delivered and not proven undelivered. Staff should inventory the existing promised cutups and their receipts first. Do not backdate a February preparation action into January. The owners below are the adopted preparation assignments, not statements that work already occurred. The [player queue](../film/player_queue.md) tracks individual obligations and the [delivery log](../film/delivery_log.md) records actual receipts:
 
 | Owner | Follow-up | Closure evidence |
 |---|---|---|
