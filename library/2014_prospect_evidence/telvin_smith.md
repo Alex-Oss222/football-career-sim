@@ -7,7 +7,7 @@
 
 ## Source-access limitation
 
-WebFetch was blocked by the network policy. Every item below rests on **search-result text** attributed to the cited URL, not on a full read of the page. Quotations are reproduced only where the search text showed them in quotation marks; everything else is a short paraphrase.
+The original two passes used **search-result text** because page fetching was blocked. A subsequent Week 16 verification read the full pages for E4 and E6; see the appended verification note. Other original items retain their stated access limitations.
 
 ## Hindsight rule applied
 
@@ -67,8 +67,8 @@ Jones and Smith top the depth chart at middle and weak-side linebacker respectiv
 **E5. October 25, 2013. Tomahawk Nation, "Telvin Smith continues to Improve & Impress."** Dated URL https://www.tomahawknation.com/f/2013/10/25/5028720/telvin-smith-continues-to-improve-impress
 Improved from the previous year but could still get better; stronger than ever at the point of attack, playing like 238 pounds despite a listed 218; played predominantly at WILL, showing speed, instincts and downhill play.
 
-**E6. December 2, 2013. ACC, "2013 All-ACC Teams Announced": first-team linebacker.** Dated URL https://theacc.com/news/2013/12/2/529ce42de4b0465167b4e15a_131480996780103312.aspx
-Listing in search text: "LB, Telvin Smith, Florida State, 6-3, 218, Sr., Valdosta, Ga." Christian Jones on the second team.
+**E6. December 2, 2013. ACC, "2013 All-ACC Teams Announced": second-team linebacker on the media ballot.** https://theacc.com/news/2013/12/2/529ce42de4b0465167b4e15a_131480996780103312.aspx
+The full page places Smith and Christian Jones beneath the second-team heading. The original search-only reading lost that heading and incorrectly recorded Smith as first team. The correction concerns the cited ACSMA selection, not a football grade.
 
 **E7. December 4, 2013. ESPN (David Hale), feature on Smith rededicating himself in honor of former teammate Greg Reid.** https://www.espn.com/college-football/story/_/id/10077490/florida-state-seminoles-linebacker-telvin-smith-rededicates-honor-former-teammate-greg-reid
 Senior linebacker; vocal leader of the defense (from the registry).
@@ -112,7 +112,7 @@ Postseason countdown: after two years splitting reps at middle linebacker he too
 - **2013 position:** registry text ("middle linebacker job was his in 2013") versus dated 2013 sources placing him at weak-side linebacker. The registry wording came from the ESPN countdown, which pass 2 found to be a January 2014 postseason piece. The dated 2013 sources are preferred here; the registry is not edited by this task.
 - **ESPN countdown date:** registry says "preseason 2013; exact date unverified." Pass 2 found it is postseason (January 2014; one summary gives January 27, 2014). **Flag for the registry owner.**
 - **2013 tackles:** 90 versus 75. Unresolved.
-- **2013 All-ACC:** the ACC release lists him first team; one reference infobox says second team. The official release is preferred; the discrepancy is noted.
+- **2013 All-ACC:** resolved in the subsequent full-page check. The official December 2 media release lists Smith on the second team; the original first-team reading was incorrect.
 - **2010 sacks:** 1.0 versus 1.5.
 - **Combine 40:** 4.47, 4.51, 4.52.
 
@@ -121,7 +121,7 @@ Postseason countdown: after two years splitting reps at middle linebacker he too
 **Pass 2 date:** 2026-09-28. Fresh queries; search-result text only.
 
 ### Confirmed
-- First-team All-ACC in the ACC's December 2, 2013 release (theacc.com dated URL, with ESPN and other lists agreeing).
+- All-ACC recognition in the December 2 media release. The original first-team claim is superseded by the full-page correction below: second team.
 - 2013 weak-side linebacker starter (seminoles.com August 27, 2013; Tomahawk Nation August 5 and October 25, 2013; 247Sports outlook text).
 - 2012: 14 games, 64 tackles, 1 sack; 2011: 42 tackles, 3 sacks, 1 interception.
 - Tomahawk Nation October 25, 2013 date and content.
@@ -139,3 +139,7 @@ Postseason countdown: after two years splitting reps at middle linebacker he too
 - Bleacher Report June 24, 2013 and ESPN August 19, 2013 dates (one search summary each).
 - Combine 40 time, vertical and broad jump; linebacker workout day.
 - Senior Bowl game statistics (post-draft source only).
+
+## Subsequent full-page verification: Week 16 research
+
+**Checked September 28, 2026; admissible information through December 22, 2013.** The complete ACC media list confirms E6 as second team, and Florida State's December 2 announcement corroborates it. Florida State's August 27 page confirms E4's dated position labels. The December 7 game-specific labels are retained separately in the scouting report. See [Week 16 sources N02, N03 and N11](../../career/2013/scouting/2014_draft/sources_week16_2013_12_22.md). This check does not verify other unresolved statistics or admit the gated material above.

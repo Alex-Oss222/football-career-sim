@@ -47,3 +47,13 @@ The expanded recognition strengthens the reason to examine an early interior-def
 The useful comparison with a developmental interior option remains resource allocation. A greater expected contribution would justify a greater expenditure only after the football evidence supports it; the trophy itself does not supply that contribution estimate.
 
 **Tier:** Not yet graded. **Decision trigger:** Repeatable disruption with fit and rush-lane control, including snaps that do not end in a tackle or pressure. Neither a future testing result nor a professional outcome enters the assessment. No precise draft range is newly established.
+
+### Week 16 addendum: evidence through December 22, 2013
+
+**New evidence:** Donald appears on the first team of both the December 17 AP and December 18 FWAA lists. The FWAA organizer release also identifies him among its selections. [N07–N08, N10](../sources_week16_2013_12_22.md).
+
+That updates the early defensive-line alternative alongside the offensive-line focus. It does not resolve the specific cost-benefit question for Jacksonville: how much independent interior disruption is available while preserving the called fit and rush lane?
+
+Keep isolated penetration separate from handling a run directed at his gap or a combination block. The source record does not justify assuming that the most visible backfield play represents every snap. Compare the resource commitment with an early lineman on offense and with a later developmental interior option only after establishing the usable defensive job.
+
+**Tier:** Not yet graded. **Decision trigger:** Repeatable disruption with run-fit and lane control. No later testing, draft slot or professional result enters this comparison.

@@ -7,7 +7,7 @@
 
 ## Source-access limitation
 
-WebFetch was blocked by the network policy. Every item below rests on **search-result text** attributed to the cited URL, not on a full read of the page. Quotations are reproduced only where the search text showed them in quotation marks; everything else is a short paraphrase.
+The original two passes used **search-result text** because page fetching was blocked. A subsequent Week 16 verification read the full page for E3; see the appended note. Other original items retain their stated access limitations.
 
 ## Hindsight rule applied
 
@@ -42,7 +42,7 @@ Redshirt senior in 2013; automatically eligible. No declaration needed.
 |---|---|---|---|
 | 2011 | 8 games / at least 1 start (exact start count **unverified**) | | End of 2011 season |
 | 2012 | 13 / 13 at C | First-team All-Mountain West (announcement date **unverified**) | End of 2012 season |
-| 2013 through the regular season | 12 / 12 at C (**labelled inference**: the sources give 13 starts for a season that includes the December 24 bowl) | Second-team All-Mountain West, December 10, 2013. Boise State's Outstanding Offensive Lineman for 2013 (see E3) | Regular season complete before the branch date |
+| 2013 through the regular season | 12 / 12; identified as a center in the December 8 school release | Second-team All-Mountain West, December 10, 2013. Boise State's Outstanding Offensive Lineman for 2013 (see E3) | December 8 release directly verifies the pre-bowl starting count |
 | 2013 full season | 13 / 13 at C; 26 consecutive starts | | **Gated: not usable before December 24, 2013** (Hawaii Bowl) |
 
 ## 4. Dated evidence usable at the branch date
@@ -52,8 +52,8 @@ Redshirt senior in 2013; automatically eligible. No declaration needed.
 **E2. August 2012 (either August 9 or August 27, 2012; the search text did not show which OBNUG page carried it). OBNUG walk-on profiles / team preview.** https://www.obnug.com/2012/8/9/3223006/profiles-of-boise-state-footballs-walk-ons ; https://www.obnug.com/2012/8/27/3265591/meet-your-2012-boise-state-football-team
 Search text: moved from defensive line to offensive line after joining; moved into the starting lineup in fall 2012 when Cory Yriarte suffered a career-ending knee injury; "Boise State's best offensive lineman in fall camp"; high-school record as in section 1. **Exact page and date unverified.**
 
-**E3. December 8, 2013 (date from the dated URL only). Boise State, "Team Awards Announced at Banquet."** https://broncosports.com/news/2013/12/8/Team_Awards_Announced_at_Banquet.aspx?path=football
-Paradis named Outstanding Offensive Lineman for 2013 per Boise State bio text; **that this specific release names him was not shown in search text** (single-publisher, partly unverified).
+**E3. December 8, 2013, confirmed on the full page. Boise State, "Team Awards Announced at Banquet."** https://broncosports.com/news/2013/12/8/team_awards_announced_at_banquet
+The release names Paradis Outstanding Offensive Lineman, identifies him as a redshirt senior center and reports starts in all twelve 2013 games to that point, with twenty-five consecutive starts. Direct school evidence; no teaching or professional-readiness conclusion follows.
 
 **E4. December 10, 2013. All-Mountain West second team, center.** Dated URL https://www.mwcconnection.com/2013/12/10/5196338/2013-mountain-west-all-conference-football-awards ; honor confirmed by Boise State bio text, Wikipedia and a separate summary of Boise State's 2013 All-MW selections.
 
@@ -97,10 +97,14 @@ No dated scouting commentary on Paradis published before December 22, 2013 was f
 
 ### Corrected (old to new, and why)
 - **2013 All-MW tier:** "first team" (one pass 1 summary) to **second team**. Reason: multiple independent results in both passes.
-- **2013 starts at the branch date:** "13" to **12 at the branch date; 13 after December 24, 2013** (labelled inference).
+- **2013 starts at the branch date:** twelve before the bowl, now directly verified by the December 8 release. No later bowl start is needed to establish the count.
 
 ### Unverified
 - Combine numbers: single source (Boise State release). A pass 2 search returned a garbled "4.46" 40 time (the shuttle figure); the 40 of 5.34 is **not independently confirmed**.
 - Pro-day date and content (post-draft reference only).
-- 2009 scout-team award; Yriarte detail and the exact OBNUG page and date; December 8 banquet release content.
+- 2009 scout-team award; Yriarte detail and the exact OBNUG page and date. The December 8 banquet release content is now verified below.
 - Listed college height and weight; 2011 start count; 2012 honor date.
+
+## Subsequent full-page verification: Week 16 research
+
+**Checked September 28, 2026; admissible information through December 22, 2013.** The working school URL verifies E3's award and pre-bowl starts in both prose and the award recap. See [Week 16 source N04](../../career/2013/scouting/2014_draft/sources_week16_2013_12_22.md). This is the same publisher as the December 10 conference announcement; it is not independent scouting evidence or a measured learning result.

@@ -98,3 +98,17 @@ Reid remains a comparison for interior development. Comparing a better documente
 **Best objection after the update:** The unresolved status remains prior to the football purchase. An appealing historical play or late-round label cannot substitute for clearance.
 
 **Tier:** Not yet graded. **Next decision-changing evidence:** A dated determination of selection eligibility and verified current status. Until then, retain the hold and the prohibition on a first-practice alignment. No character verdict, private allegation or future outcome is added.
+
+### Week 16 addendum: evidence through December 22, 2013
+
+**Status through the cutoff:** The new [companion evidence file](../../../../../library/2014_prospect_evidence/shelby_harris.md) still does not establish a dated resolution of eligibility or current fall-2013 status. This pass likewise found no admissible clearance to add. That is a limit of the recovered evidence, not proof that no relevant document existed. The Phase IV prohibition on a coach football conclusion remains in force.
+
+**What can be decided:** Harris remains a hold in the research list. No first alignment, practice participation, current conditioning level or medical conclusion is assigned. His prior interior record can identify historical material to retain, but cannot establish what he would do at a current Jacksonville practice.
+
+**Capital comparison:** Harris and Paradis still share the same sixth-round resource in Stone's focus list. Paradis's newly verified school award improves the center's evidence record; it does not resolve the defensive-line option or automatically award the pick to the center. Caldwell must compare only cleared acquisition routes when the actual decision arrives. Moving Harris to an assumed undrafted route would not eliminate the status question.
+
+Reid remains a research alternative for a developmental interior role. The distinction is the documentation available for evaluating each option, not a manufactured ordering of their talent. If Harris's status is resolved, begin with current participation and one specified defensive job before estimating the cost of a larger role.
+
+**Week 16 decision:** Retain the hold. Jacksonville's improved standings do not justify relaxing the evidence requirement or making a personal judgment from missing information.
+
+**Tier:** Not yet graded. **Decision trigger:** Dated eligibility and current-status verification. Football alignment and development-cost conclusions remain deferred until that prerequisite is satisfied. No future professional account is used to supply the missing clearance.

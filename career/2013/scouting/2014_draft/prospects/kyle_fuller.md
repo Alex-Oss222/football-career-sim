@@ -49,3 +49,11 @@ Outside corner remains the first-role study. Keep the coverage comparison with C
 The early-investment case still has to support both acquisition cost and a usable coverage role. No future practice, bowl appearance or workout is imported to settle the question.
 
 **Tier:** Not yet graded. **Decision trigger:** Dated medical information plus complete coverage evidence. The new honors change the résumé, not the clearance status.
+
+### Week 16 addendum: evidence through December 22, 2013
+
+**Medical and evidence status:** No dated clearance by December 22 was established in this pass. The earlier surgery report and dated recognition remain separate records. A projected recovery interval is not a clearance event, and a later article cannot be used to backdate one.
+
+Outside corner remains the first-role study. Continue to assess leverage, route response and tackling from the admitted record while leaving participation and current medical information unresolved. Good coverage evidence would not remove the medical question, just as clearance would not answer a technique question.
+
+Compare the acquisition cost with Cockrell and Butler only after identifying the initial role and the evidence available for it. **Tier:** Not yet graded. **Decision trigger:** Dated participation or medical information, followed by complete coverage evidence. No future bowl participation, all-star participation or workout result enters this report.

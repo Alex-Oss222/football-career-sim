@@ -7,7 +7,7 @@
 
 ## Source-access limitation
 
-WebFetch was blocked by the network policy. Every item below rests on **search-result text** attributed to the cited URL, not on a full read of the page. Quotations are reproduced only where the search text showed them in quotation marks; everything else is a short paraphrase.
+The original two passes used **search-result text** because page fetching was blocked. A subsequent Week 16 verification read the full page for E3 and corrected its publication date; see the appended note. Other original items retain their stated access limitations.
 
 ## Hindsight rule applied
 
@@ -39,7 +39,7 @@ Senior in 2013; automatically eligible. No declaration needed.
 | Season | Tackles | INT | PBU / PD | Returns | Other | Honors | Public from |
 |---|---|---|---|---|---|---|---|
 | 2012 | 49 (43 solo) | 5 (3 against West Georgia) | 9 PBU | KR: 12 for 357 yards (29.8, team high), including a 100-yard touchdown against North Alabama (GSC Special Teams Player of the Week). PR: 4 for 60 (15.0) | 12 games, 12 starts | First-team All-GSC | End of the 2012 season |
-| 2013 | 45 (33 solo) | 2 (1 returned for a touchdown) | 16 PBU; 18 passes defended (both GSC-leading) | KR: 13 returns, 27.9 average | Blocked a field goal | First-team All-GSC (November 20, 2013); Daktronics All-Super Region Two second team (December 4, 2013); Beyond Sports Network All-American (date **unverified**); on the Senior Bowl watch list (date **unverified**) | See season-end note |
+| 2013 | 45 (33 solo) | 2 (1 returned for a touchdown) | 16 PBU; 18 passes defended (both GSC-leading) | KR: 13 returns, 27.9 average | Blocked a field goal | First-team All-GSC (November 20, 2013); Daktronics All-Super Region Two second team (release displayed December 5, 2013); Beyond Sports Network All-American (date **unverified**); on the Senior Bowl watch list (date **unverified**) | See season-end note |
 
 Source for the statistics: West Alabama athletics biography (URL above) and Wikipedia, search text; page dates unverified. One post-draft source (a local TV station website; outlet name withheld because it would reveal a post-selection outcome) gives the combined 2012 and 2013 total as seven interceptions and 25 kick returns for more than 700 yards and a touchdown, consistent with the rows above.
 
@@ -53,7 +53,7 @@ Butler and return man Malik Lofton named first-team Division II Preseason All-Am
 **E2. November 20, 2013. Gulf South Conference, "GSC Announces All-Conference Football Honors."** Dated URL https://gscsports.org/news/2013/11/20/fb_1120135333.aspx
 Butler on the 2013 All-GSC team as a returning first-team member; West Alabama led the team with 20 selections, nine on the first team.
 
-**E3. December 4, 2013. Gulf South Conference, "GSC Lands 16 Standouts on Daktronics Super Region Two Football Team."** Dated URL https://gscsports.org/news/2013/12/4/FB_1204135824.aspx?path=football
+**E3. December 5, 2013, displayed publication date. Gulf South Conference, "GSC Lands 16 Standouts on Daktronics Super Region Two Football Team."** https://gscsports.org/news/2013/12/4/FB_1204135824.aspx?path=football . The URL contains December 4; the full page displays December 5 at 10 a.m.
 "UWA cornerback Malcolm Butler" on the second team.
 
 **E4. Earlier 2012 honors:** first-team All-GSC 2012 and GSC Special Teams Player of the Week (dates **unverified**; both public before the branch date).
@@ -82,7 +82,7 @@ No dated scouting commentary on Butler published before December 22, 2013 was fo
 ### Confirmed
 - 2012: 12 starts; 49 tackles (43 solo); 5 interceptions, 3 against West Georgia; 29.8 kickoff-return average; 100-yard return touchdown against North Alabama and GSC Special Teams Player of the Week.
 - 2013: 45 tackles; 2 interceptions, 1 returned for a touchdown; 18 passes defended (GSC lead); blocked field goal; first-team All-GSC.
-- November 20, 2013 All-GSC release date; December 4, 2013 Daktronics release naming him on the second team.
+- November 20, 2013 All-GSC release date; Daktronics regional second-team selection. The original URL-based December 4 date is superseded by the full-page December 5 publication date below.
 - Preseason All-America first team (July 2013).
 - Pro-day figures (two post-draft sources agree).
 
@@ -98,3 +98,7 @@ No dated scouting commentary on Butler published before December 22, 2013 was fo
 - Name of the preseason All-America selector.
 - Pro-day date and location (post-draft sources only).
 - 2013 kickoff-return yardage total (only the 27.9 average and 13 returns were found).
+
+## Subsequent full-page verification: Week 16 research
+
+**Checked September 28, 2026; admissible information through December 22, 2013.** The conference page names Butler on its regional second team and displays a December 5 publication date. That date supersedes the original inference from the URL. See [Week 16 source N06](../../career/2013/scouting/2014_draft/sources_week16_2013_12_22.md). Other unverified fields remain unresolved and are not adopted by this check.

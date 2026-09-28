@@ -51,3 +51,11 @@ Investigate the college left-tackle evidence first, then conduct a separate righ
 Hurst also remains a useful comparison against paying earlier for Bitonio or Martin, but this update does not establish that he will reach the fifth-round window.
 
 **Tier:** Not yet graded. **Decision trigger:** Controlled protection across varied rushes and exchanges, plus explicit evidence for any second-side responsibility. No post-cutoff medical event is used.
+
+### Week 16 addendum: evidence through December 22, 2013
+
+**Week 16 carry-forward:** The earlier dated tackle recognition and protection questions remain the working record. No new emergency right-tackle conclusion or precise market range was established in this pass.
+
+Leno remains the direct reserve comparison. For either player, distinguish a college left-tackle foundation from a verified ability to enter on the right without rearranging the line. The cost of moving another player is part of the reserve decision.
+
+Use the response after a lost first exchange as the next comparison: can the tackle regain position without giving up the inside lane, and can he pass off a movement with the guard? This is a proposed review, not a charted finding. **Tier:** Not yet graded. **Decision trigger:** A dependable emergency package and separate evidence for every side included in the roster claim. No later medical event is imported into this December 22 report.

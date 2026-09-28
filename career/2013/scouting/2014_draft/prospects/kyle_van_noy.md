@@ -51,3 +51,11 @@ Compare him with Jones on strong-side contact, coverage responsibility and the c
 The teams study remains separate: blocked-kick background is relevant, but no new coverage-unit evidence is established by the award list.
 
 **Tier:** Not yet graded. **Decision trigger:** A dependable base assignment plus an independently supported complementary skill. No acquisition range is moved merely because the postseason résumé is stronger.
+
+### Week 16 addendum: evidence through December 22, 2013
+
+**Week 16 carry-forward:** The dated Walter Camp recognition and earlier role evidence remain admitted. This update does not establish a new independent-rush finding, exact price or completed coverage-teams role.
+
+Jones's clarified position history helps define the strong-side comparison. Keep base contact and coverage work visible before adding pressure value. A player who can contribute to a designed rush still needs a repeatable answer when the offense runs at his assignment or releases a receiver through it.
+
+The proposed first purchase remains SAM with a limited pressure complement, subject to evidence. It is different from the WILL study for Telvin Smith. **Tier:** Not yet graded. **Decision trigger:** A reliable base job and a complementary skill that can be installed without obscuring the original responsibility. No future bowl or all-star result is assumed.

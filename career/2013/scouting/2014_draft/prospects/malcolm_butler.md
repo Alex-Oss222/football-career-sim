@@ -102,3 +102,17 @@ This changes the evidence base from prior-year production and recognition to a d
 **Best objection after the update:** Productive college ball involvement can still leave the reserve role incomplete if ordinary coverage snaps and teams work require too much protection.
 
 **Tier:** Not yet graded. **Next decision-changing evidence:** Complete games with targets and coverage context, controlled tackling and a separately established teams job. No later award announcement or professional result is used.
+
+### Week 16 addendum: evidence through December 22, 2013
+
+**Newly verified earlier evidence:** The Gulf South regional-awards release lists Butler on the Daktronics All-Super Region Two second team. Its displayed publication date is December 5, although the URL contains December 4. The companion evidence file now distinguishes those dates. This is regional recognition, not a national first-team selection. [N06](../sources_week16_2013_12_22.md).
+
+**What changes:** The recognition can accompany the dated statistical record already admitted in Week 15. It does not supply new targets, receptions allowed, missed tackles or assignment counts. The current evidence still supports investigating outside corner first, without certifying a particular press or off-man strength.
+
+**Coverage study:** Separate the release, the route stem, the break and the catch-point finish. A defender can disrupt a pass after losing initial leverage, and a completion can occur despite a correctly played responsibility. The report needs the route, available help and quarterback timing before assigning the cause. The existing passes-defended total identifies outcomes worth investigating, not a coverage success percentage.
+
+**Run support and teams:** Tackle totals do not answer whether he maintained force or finished with the correct leverage. Return background also remains separate from coverage-unit competence. Lowry's useful first question is which specific teams job has evidence behind it, followed by the release, lane and finishing requirements of that job. No gunner assignment is created from the cornerback label.
+
+**Week 16 roster implication:** Jacksonville continues with Grimes and Mike Harris outside, Poyer at nickel and Bouye as the first outside reserve. The future Butler comparison with Cockrell and Fuller remains a role-and-development decision, independent of the result against Tennessee. Fuller's medical question stays separate from the coverage comparison.
+
+**Tier:** Not yet graded. **Decision trigger:** Full coverage situations with technique and help identified, plus a separately supported teams contribution. No undated postseason award or later workout is admitted simply because it appears in a college biography.

@@ -49,3 +49,11 @@ The guard-first study remains a roster projection informed by his earlier interi
 Against Turner, the useful distinction remains existing positional history and acquisition eligibility, not an assumed identical role or price. Against Jackson and Richardson, measure the conversion work that Thomas would still need.
 
 **Tier:** Not yet graded. **Decision trigger:** A usable guard foundation with separately verified tackle cover if that flexibility is part of the purchase. The honor does not close either job, and no later medical or draft information is admitted.
+
+### Week 16 addendum: evidence through December 22, 2013
+
+**Week 16 carry-forward:** The earlier interior experience and dated college tackle recognition remain distinct parts of Thomas's file. No new evidence in this pass completes a professional guard conversion.
+
+The comparison with Turner still requires a cleared acquisition route and a usable first job. Jackson and Richardson have updated national recognition, but the specific issue for Thomas is the cost of moving inside: shorter reaction space, first-contact timing and exchanges with the center and tackle.
+
+Retain a separate edge study if emergency tackle work is part of the proposed purchase. A single versatility label cannot close both evaluations. **Tier:** Not yet graded. **Decision trigger:** A functional guard foundation with independently supported tackle cover if claimed. No subsequent injury, workout or draft event is used to decide the projection.

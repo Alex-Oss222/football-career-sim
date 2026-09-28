@@ -102,3 +102,17 @@ Begin with an agreed point against a static front and the paired ACE assignment.
 **Best objection after the update:** More college experience can coexist with an unproven professional anchor and communication burden. The report must answer those together before claiming that a center-only developmental roster place is economical.
 
 **Tier:** Not yet graded. **Next decision-changing evidence:** A connected, correctly executed snap/point/block sequence against changing fronts. The new honors do not close the first coach read.
+
+### Week 16 addendum: evidence through December 22, 2013
+
+**Newly verified earlier evidence:** The full December 8 Boise State banquet release names Paradis its Outstanding Offensive Lineman and reports starts in all twelve games to that point, with twenty-five consecutive starts. This resolves the companion evidence file's uncertainty about the release's contents. It does not add a thirteenth 2013 start before the scheduled December 24 bowl. [N04–N05](../sources_week16_2013_12_22.md).
+
+**What the evidence supports:** The school recognized his work across its own line, and the dated continuity record is now direct rather than inferred by subtracting a future bowl. Neither fact demonstrates how quickly he learns Jacksonville's language or which protection decisions he personally controlled. The teaching claim remains untested.
+
+**Center evaluation:** Keep point, snap and block connected. A correct declaration followed by a late snap or lost initial position is an incomplete repetition. Likewise, a successful block after an incorrect point can leave a teammate exposed. Bates's quarterback question should distinguish those failure types, because Cousins cannot compensate for all of them through an extra verbal check.
+
+For the next permitted viewing opportunity, identify the front before and after movement, the apparent communication exchange, the snap location and the first block. Any uncertainty about the actual call must remain marked. A visible gesture alone cannot establish the protection responsibility.
+
+**Comparison update:** Stork's additional national recognition makes the center comparison more current, while Swanson's prior record remains available. It does not establish their relative price or show that an earlier selection buys better communication. Brewster remains the starter and Meester the reserve in Jacksonville. [N07–N08](../sources_week16_2013_12_22.md).
+
+**Tier:** Not yet graded. **Week 16 decision:** Continue a center-first developmental study. **Decision trigger:** A complete snap/point/block sequence under a changed front, with enough isolated protection to avoid routine repair by the quarterback or adjacent guard. The same sixth-round pick cannot also be committed to Harris.
