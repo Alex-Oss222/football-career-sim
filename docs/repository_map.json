@@ -209,7 +209,8 @@
     "scripts/render_player_ages.py",
     "scripts/research/build_player_birth_dates.py",
     "tests/test_player_bios.py",
-    "library/data/player_birth_date_corrections.json"
+    "library/data/player_birth_date_corrections.json",
+    "career/2013/postseason/week_19_jacksonville_at_tennessee/call_sheet.json"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",
