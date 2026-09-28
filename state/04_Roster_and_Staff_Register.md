@@ -3,9 +3,9 @@
 ## Document status
 
 - Function: Canonical register for current Jacksonville player control, staff operating authority, roster legality, contract/cap reconciliation, availability boundaries and football-role state.
-- Current status: **RECONCILED THROUGH ENTRY 75 (COACHING CAROUSEL: SPECIAL TEAMS COORDINATOR VACANT)**.
+- Current status: **RECONCILED THROUGH ENTRY 76 (SPECIAL-TEAMS AUTHORITY AND STAFF PLANNING)**.
 - Effective through: **February 2, 2014, after Super Bowl XLVIII (2013 season complete)**.
-- Progression authority: `career/2013/ledger.md`, Entry 75 (January 2014 coaching carousel; Alan Lowry left for Atlanta's head-coach job on January 12, 2014; special teams coordinator vacant; no player change), Entry 67 (Super Bowl XLVIII closed; 2013 season archived; Ball and C.J. Wilson cleared at their projections), Entry 66 (kernel 2013.11; no roster change), Entry 65 (conference championships closed, background; Ryan Davis cleared at his projection), Entry 64 (AFC Divisional closed; Jacksonville eliminated; Owens and Thielen cleared; Ryan Davis out, minor, projected back January 14; roles unchanged), Entry 63 (verified birth dates and calendar ages; administrative correction only), Entry 62 (AFC Wild Card closed; Owens and Thielen out, minor, projected back January 5 and 6; roles unchanged), Entry 61 (postseason bracket built; no roster change), Entry 60 (Week 17 closed; regular season complete; no Jacksonville injury), Entry 59 (Week 16 closed; no Jacksonville injury; roles unchanged), Entry 58 (Week 15 closed; no Jacksonville injury; roles unchanged), Entry 57 (Week 14 closed as generation 2; Allen base LB for Posluszny; Kelce cleared; no injury), Entry 55 (Week 13 closed; Posluszny out, independent medical hold; Kelce out, minor; Bouye cleared and first outside reserve), Entry 53 (Week 12 closed; Rutland first outside reserve; Edwards dressed; no injury), Entry 52 (Week 11 closed; Harris starts; Mosley dressed; Bouye injured), Entry 50 (Week 10 closed; Ball injured; Pasztor dressed), Entry 49 (Week 9 bye; no deadline transaction), Entry 46 (Pasztor and Mosley projections recovered; both available), Entry 45 (Week 8 closed; Blackmon dressed), Entry 44 (Week 7 closed), after Entries 42-43 (Blackmon reinstated and activated October 7; Week 6 closed), Entry 41 (Week 5 closed; Posluszny returned; Thielen injured), Entry 40 (Week 4 closed under kernel 2013.6, Entry 39; Meester returned as reserve center), Entry 38 (Week 3 closed; Posluszny injured) and Entries 36-37 (Blackmon to Reserve/Suspended; Week 2 closed with Meester and C.J. Wilson injured).
+- Progression authority: `career/2013/ledger.md`, Entry 76 (administrative reconciliation of the existing interim special-teams assignment, payroll meaning and staff planning; no new appointment), Entry 75 (January 2014 coaching carousel; Alan Lowry left for Atlanta's head-coach job on January 12, 2014; special teams coordinator vacant; no player change), Entry 67 (Super Bowl XLVIII closed; 2013 season archived; Ball and C.J. Wilson cleared at their projections), Entry 66 (kernel 2013.11; no roster change), Entry 65 (conference championships closed, background; Ryan Davis cleared at his projection), Entry 64 (AFC Divisional closed; Jacksonville eliminated; Owens and Thielen cleared; Ryan Davis out, minor, projected back January 14; roles unchanged), Entry 63 (verified birth dates and calendar ages; administrative correction only), Entry 62 (AFC Wild Card closed; Owens and Thielen out, minor, projected back January 5 and 6; roles unchanged), Entry 61 (postseason bracket built; no roster change), Entry 60 (Week 17 closed; regular season complete; no Jacksonville injury), Entry 59 (Week 16 closed; no Jacksonville injury; roles unchanged), Entry 58 (Week 15 closed; no Jacksonville injury; roles unchanged), Entry 57 (Week 14 closed as generation 2; Allen base LB for Posluszny; Kelce cleared; no injury), Entry 55 (Week 13 closed; Posluszny out, independent medical hold; Kelce out, minor; Bouye cleared and first outside reserve), Entry 53 (Week 12 closed; Rutland first outside reserve; Edwards dressed; no injury), Entry 52 (Week 11 closed; Harris starts; Mosley dressed; Bouye injured), Entry 50 (Week 10 closed; Ball injured; Pasztor dressed), Entry 49 (Week 9 bye; no deadline transaction), Entry 46 (Pasztor and Mosley projections recovered; both available), Entry 45 (Week 8 closed; Blackmon dressed), Entry 44 (Week 7 closed), after Entries 42-43 (Blackmon reinstated and activated October 7; Week 6 closed), Entry 41 (Week 5 closed; Posluszny returned; Thielen injured), Entry 40 (Week 4 closed under kernel 2013.6, Entry 39; Meester returned as reserve center), Entry 38 (Week 3 closed; Posluszny injured) and Entries 36-37 (Blackmon to Reserve/Suspended; Week 2 closed with Meester and C.J. Wilson injured).
 - Detailed readable roster: `career/2013/roster.md`.
 - Current cap worksheet: `career/2013/offseason/current_cap_worksheet.md`.
 - Current calendar: `career/2013/calendar.md`.
@@ -23,10 +23,10 @@
 | Divergence point | January 15, 2013 — Alex Stone accepts Jacksonville head-coach offer |
 | Season phase | 2013 season complete (eliminated in the AFC Divisional round); 2014 offseason |
 | Owned content effective | February 2, 2014 |
-| Document 4 register version | `JAX-2014-FEB02-COACHING-CAROUSEL-REGISTER-35` |
-| Supersedes | `JAX-2014-FEB02-SEASON-CLOSE-REGISTER-34` |
-| Last content-changing checkpoint | `Canonical update - February 2, 2014 - January 2014 coaching carousel resolved (Lowry to Atlanta)` |
-| Latest Document 6 event | Entry 75: January 2014 coaching carousel resolved; Alan Lowry to Atlanta as head coach; special teams coordinator vacant |
+| Document 4 register version | `JAX-2014-FEB02-STAFF-RECONCILIATION-REGISTER-36` |
+| Supersedes | `JAX-2014-FEB02-COACHING-CAROUSEL-REGISTER-35` |
+| Last content-changing checkpoint | `Canonical correction - February 2, 2014 - special-teams authority and staff planning reconciled` |
+| Latest Document 6 event | Entry 76: existing interim special-teams authority, staff-planning and payroll references reconciled; no new appointment |
 | Current controlled players | **53** |
 | Current practice squad | **8; separate from active 53** |
 | Current regular-season planning room | **~$6.2M-$6.6M before weekly practice-squad charges** |
@@ -137,14 +137,14 @@ One change since the closed late-January 2013 hiring phase: Alan Lowry left on J
 - Head coach / ordinary offensive play caller: Alex Stone.
 - Offensive coordinator: Mike Tice.
 - Defensive coordinator / defensive caller: Romeo Crennel.
-- Special-teams coordinator: **vacant** from January 12, 2014 (Lowry to Atlanta, Entry 75). Direction of the kicking game returns to Stone until a replacement is hired (Document 3: material departures return control). Replacement targets await the user (`career/2014/offseason/staff_changes/staff_plan.md`).
-- Scheduled 2014 assistant salary: $6,950,000 for eleven coaches, before any replacement.
+- Special-teams coordinator: **vacant** from January 12, 2014 (Lowry to Atlanta, Entry 75). Stone directs the kicking game on an interim basis under Entry 75 until a replacement is hired (Document 3 section 4, reconciled by Entry 76). Emergency succession if Stone is unavailable remains unassigned. Replacement targets await the user (`career/2014/offseason/staff_changes/staff_plan.md`).
+- Scheduled 2014 assistant salary: $6,950,000 for eleven coaches, before any replacement. This is a salary commitment, not a budget ceiling or available hiring money; no numeric staff-budget ceiling is established in Document 3 section 3.1.
 - Caldwell retains personnel/contract/cap authority under Document 3.
-- No staff contract or responsibility changes in Entry 12.
+- Entry 76 reconciles the existing interim duties; it changes no staff contract and creates no appointment.
 
 ### Reconciliation result
 
-- Register status: **RECONCILED THROUGH ENTRY 75**.
+- Register status: **RECONCILED THROUGH ENTRY 76**.
 - Staff: special teams coordinator vacant (Lowry to Atlanta, January 12, 2014, Entry 75); the other eleven assistants under contract.
 - Roster/control: **53 controlled, all active (Blackmon activated October 7); eight-player practice squad separate**.
 - Cap: regular-season accounting; approximately **$6.2M-$6.6M** before weekly practice-squad charges.
@@ -679,9 +679,9 @@ This table is generated from Document 6 and is only a navigation aid. Active unr
 ## End-of-update control block
 
 - Effective through: February 2, 2014, after Super Bowl XLVIII.
-- Document 4 register version: `JAX-2014-FEB02-COACHING-CAROUSEL-REGISTER-35`.
-- Last content-changing checkpoint: `Canonical update - February 2, 2014 - January 2014 coaching carousel resolved (Lowry to Atlanta)`.
-- Latest source event: season-ledger Entry 75.
+- Document 4 register version: `JAX-2014-FEB02-STAFF-RECONCILIATION-REGISTER-36`.
+- Last content-changing checkpoint: `Canonical correction - February 2, 2014 - special-teams authority and staff planning reconciled`.
+- Latest source event: season-ledger Entry 76.
 - Staff: special teams coordinator vacant (Lowry to Atlanta, Entry 75).
 - Current controlled count: **53**, all active; practice squad **8**, separate from the active roster.
 - Cap: regular-season accounting, **~$6.2M-$6.6M before weekly practice-squad charges**.
