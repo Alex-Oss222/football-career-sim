@@ -62,7 +62,16 @@ class PackageTests(unittest.TestCase):
     def setUpClass(cls):
         sheet = json.loads(WEEK1_SHEET.read_text())["offensive_call_sheet"]
         receipts = [r for r in load_receipts(ROOT / "career/2013/stats/game_receipts") if int(r["week"]) < 2]
-        cls.package = week_inputs.build_package(2, receipts, sheet, AVERAGE_ANCHORS)
+        cls.sheet, cls.receipts = sheet, receipts
+        # Week 2 rebuilt with today's roster notes: players hurt later (for
+        # example Kelce, Week 13) are dated out, so the 46-man gate is relaxed
+        # for this structural rebuild and tested on its own below.
+        with mock.patch.object(week_inputs, "GAME_DAY_ACTIVES", 0):
+            cls.package = week_inputs.build_package(2, receipts, sheet, AVERAGE_ANCHORS)
+
+    def test_short_unit_with_healthy_inactives_fails_the_build(self):
+        with self.assertRaisesRegex(ValueError, "would dress 45, not 46.*Travis Kelce"):
+            week_inputs.build_package(2, self.receipts, self.sheet, AVERAGE_ANCHORS)
 
     def test_unlabelled_call_fails_the_build(self):
         with self.assertRaisesRegex(ValueError, "Mystery"):
