@@ -831,7 +831,7 @@ Jacksonville includes every controlled player, including the practice squad. Oth
 | Austin Pasztor | G | 1990-11-26 | 23 | Active 53 |
 | Will Rackley | G | 1989-10-11 | 24 | Active 53 |
 | Mike Brewster | C | 1989-07-27 | 24 | Active 53 |
-| Brad Meester | C | 1977-03-23 | 36 | Active 53 |
+| Brad Meester | C | 1977-03-23 | 36 | Reserve/Retired |
 | Jason Babin | DE | 1980-05-24 | 33 | Active 53 |
 | Andre Branch | DE | 1989-07-14 | 24 | Active 53 |
 | Ryan Davis | DE | 1989-02-24 | 24 | Active 53 |

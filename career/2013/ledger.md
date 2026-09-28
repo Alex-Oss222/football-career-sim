@@ -2293,3 +2293,38 @@ The draw weights are a modelling choice and can be changed until the first draw.
 **What changed.** No roster, contract, cap, medical or result state.
 
 **Commit closed - Canonical update - February 2, 2014 - Historical league rails adopted (2014 onward) - canonical through February 2, 2014**
+
+## Entry 79: Meester retired; Allen retirement scheduled (league rails)
+
+**Effective canonical state:** February 2, 2014 (no clock advance).
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - February 2, 2014 - Meester retired; Allen retirement scheduled (league rails)`
+**Preceding global package checkpoint:** `Canonical update - February 2, 2014 - Historical league rails adopted (2014 onward)`
+
+**Decision.** The user asked to retire the confirmed players and to list the possible ones for verification. This is the retirement rule of the league rails (Entry 78).
+
+**Research.** All 61 controlled players were searched in two passes for a real retirement announced from December 1, 2013 to December 31, 2014.
+
+**Applied now.**
+- **Brad Meester, C.**
+  - He really announced on December 18, 2013 that he would retire at the end of the 2013 season. The date falls before the branch date, so the retirement applies now.
+  - The branch weeks already closed are unchanged: he finished the season as reserve center.
+  - He moves to Reserve/Retired and stays under control until his one-year contract expires March 11, 2014.
+  - Active roster 52, controlled 53.
+  - No cap effect.
+
+**Scheduled.**
+- **Russell Allen, LB.**
+  - His real retirement is dated April 22, 2014 and applies when the clock passes that date.
+  - Its real cause, a stroke in the real December 15, 2013 game, did not happen in the branch. The user chose to apply the retirement as the rule says.
+  - The real April 17 release is a Jaguars move and does not apply.
+  - The contract and cap effect is unresolved until verified.
+  - Stone's trade package G (Allen for a 2015 seventh) cannot close after April 22.
+
+**To verify (not applied).**
+- Nwaneri, Rackley, Owens and Rutland are listed with "VERIFY" before their names in `career/2014/offseason/league_rails/retirements.md`.
+- None has a dated public source.
+
+**State.** Updated in the same commit: `career/2013/roster.md`, Document 4, Document 5, and `retirements.md`.
+
+**Commit closed - Canonical update - February 2, 2014 - Meester retired; Allen retirement scheduled (league rails) - canonical through February 2, 2014**
