@@ -1,0 +1,115 @@
+{
+ "schema_version": 1,
+ "team": "Jacksonville Jaguars",
+ "event": "2013 Regular Season Week 13, Jacksonville at Cleveland",
+ "status": "EX_ANTE_CALL_SHEET_FROZEN",
+ "provenance": "Stone's Week 13 game plan, runner-ready call sheet (section 59), approved by the user as APPROVED_WEEK_13_PLAN and frozen verbatim before any Week 13 draw under kernel 2013.9. Plan provenance as supplied: Stone Week 13 plan after Jacksonville's canonical 38-6 Week 12 loss at Houston. The central correction is game-flow discipline after Jacksonville abandoned a productive run game. The plan retains the internal protection structure, adds a small 22-personnel short-yardage/red-zone package, preserves Harris outside and Poyer at nickel, and restores Bouye as the first outside reserve only if medical clearance is communicated (it is: his Week 11 injury cleared at its projected return, November 26, under the rule every club gets). Every family resolves in the call-family map from the active 2013 book.",
+ "offensive_call_sheet": [
+  {
+   "name": "12 Ace Right, Duo R",
+   "family": "Duo",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace Right"
+  },
+  {
+   "name": "12 Trey Right, Stick, H Chip-Release",
+   "family": "Stick",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey Right"
+  },
+  {
+   "name": "21 Pro Left, Counter R",
+   "family": "Counter",
+   "type": "run",
+   "personnel": "21",
+   "formation": "21 Pro Left"
+  },
+  {
+   "name": "11 Bunch Right, Return, Mesh",
+   "family": "Mesh",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Bunch Right"
+  },
+  {
+   "name": "12 Wing Right, Split L",
+   "family": "Split Zone",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Wing Right"
+  },
+  {
+   "name": "12 Doubles, Texas",
+   "family": "Texas",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Doubles"
+  },
+  {
+   "name": "22 Heavy Right, Power R",
+   "family": "Power",
+   "type": "run",
+   "personnel": "22",
+   "formation": "22 Heavy Right"
+  },
+  {
+   "name": "22 Heavy Right, Snag",
+   "family": "Snag",
+   "type": "pass",
+   "personnel": "22",
+   "formation": "22 Heavy Right"
+  },
+  {
+   "name": "6OL Heavy Right, Power R",
+   "family": "Power",
+   "type": "run",
+   "personnel": "6OL",
+   "formation": "6OL Heavy Right"
+  },
+  {
+   "name": "6OL Heavy Right, Counter L",
+   "family": "Counter",
+   "type": "run",
+   "personnel": "6OL",
+   "formation": "6OL Heavy Right"
+  },
+  {
+   "name": "11 Trips Right, Inside L, Access Blackmon Smoke",
+   "family": "Inside + Smoke",
+   "type": "run",
+   "personnel": "11",
+   "formation": "11 Trips Right"
+  },
+  {
+   "name": "12 Bunch Right, Snag",
+   "family": "Snag",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Bunch Right"
+  },
+  {
+   "name": "12 Trey Right, Sprint Flood R",
+   "family": "Sprint Flood",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey Right"
+  },
+  {
+   "name": "12 Ace Right, Power Pass, Post-Cross, Max",
+   "family": "Power Pass",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Ace Right",
+   "protection": "Max"
+  },
+  {
+   "name": "12 Doubles, Spacing",
+   "family": "Spacing",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Doubles"
+  }
+ ]
+}

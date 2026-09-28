@@ -1,10 +1,10 @@
 # Jacksonville Jaguars roster
 
-**As of:** November 24, 2013, after Week 12.
+**As of:** December 1, 2013, after Week 13.
 **Canonical controlled-player count:** **53**.
 **Active roster:** **53**; Justin Blackmon was reinstated from Reserve/Suspended on October 7 and activated to the open spot (ledger Entry 42).
 **Practice squad:** **8**, separate from the active roster.
-**Record:** preseason 2-2; regular season 7-4 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6).
+**Record:** preseason 2-2; regular season 8-4 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime).
 
 ## 1. How to read this page
 
@@ -54,7 +54,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 |---|---|---|---|---|
 | Allen Reisner | TE | Active 53 | No communicated restriction | TE3 (13 personnel) |
 | Marcedes Lewis | TE | Active 53 | No communicated restriction | Lead TE |
-| Travis Kelce | TE | Active 53 | No communicated restriction | TE2 |
+| Travis Kelce | TE | Active 53 | Out, lower extremity, minor (Week 13); projected return December 3 | TE2 |
 
 ### Offensive tackles (3)
 
@@ -68,7 +68,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
-| Mark Asper | G | Active 53 | No communicated restriction | Interior OL depth (game-day inactive Weeks 10-12) |
+| Mark Asper | G | Active 53 | No communicated restriction | Interior OL depth (game-day inactive Weeks 10-13) |
 | Uche Nwaneri | G | Active 53 | No communicated restriction | Starting LG |
 | Austin Pasztor | G | Active 53 | No communicated restriction | Game-day interior OL reserve (from Week 10) |
 | Will Rackley | G | Active 53 | Limited, no projected absence (upper extremity, Week 5) | Starting right guard |
@@ -87,7 +87,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Jason Babin | DE | Active 53 | No communicated restriction | Edge 1 |
 | Andre Branch | DE | Active 53 | No communicated restriction | Edge 3 |
 | Ryan Davis | DE | Active 53 | No communicated restriction | Edge 4 |
-| Lavar Edwards | DE | Active 53 | No communicated restriction | Edge/front depth and teams (dressed Week 12) |
+| Lavar Edwards | DE | Active 53 | No communicated restriction | Edge/front depth and teams (dressed Week 12; inactive Week 13) |
 | Jeremy Mincey | DE | Active 53 | No communicated restriction | Edge 2 |
 | C.J. Wilson | DE | Active 53 | Out, trunk (Week 2); projected return January 30, 2014 | — |
 
@@ -107,7 +107,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 |---|---|---|---|---|
 | Russell Allen | LB | Active 53 | No communicated restriction | First LB off the bench; coverage units |
 | Sio Moore | LB | Active 53 | No communicated restriction | Package LB (Crennel's packages) |
-| Paul Posluszny | LB | Active 53 | No communicated restriction | Base LB |
+| Paul Posluszny | LB | Active 53 | Out, head/neck, independent medical hold (Week 13); projected return April 5, 2014 | Base LB (replacement not yet decided) |
 | Daryl Smith | LB | Active 53 | No communicated restriction | Base LB; defensive communication lead |
 | Julian Stanford | LB | Active 53 | No communicated restriction | LB depth after Allen |
 
@@ -116,11 +116,11 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Player | Pos | Status | Availability | Role |
 |---|---|---|---|---|
 | Alan Ball | CB | Active 53 | Out, trunk (Week 10); projected return January 22, 2014 | Starting CB (unavailable) |
-| A.J. Bouye | CB | Active 53 | Out, lower extremity (Week 11); projected return November 26 | Outside reserve CB (inactive Week 12); coverage units |
+| A.J. Bouye | CB | Active 53 | No communicated restriction (Week 11 injury cleared November 26) | First outside reserve CB (from Week 13); coverage units |
 | Brent Grimes | CB | Active 53 | No communicated restriction | Starting CB |
 | Mike Harris | CB | Active 53 | No communicated restriction | Starting CB (from Week 11) |
 | Jordan Poyer | CB | Active 53 | No communicated restriction | Nickel; coverage units |
-| Kevin Rutland | CB | Active 53 | No communicated restriction | First outside reserve CB (from Week 12); coverage units |
+| Kevin Rutland | CB | Active 53 | No communicated restriction | Second outside reserve CB (Week 13); coverage units |
 
 ### Safeties (4)
 

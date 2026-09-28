@@ -2203,5 +2203,152 @@
     "winner_index": 0
    }
   }
+ },
+ "week-13": {
+  "kind": "week",
+  "key": "13",
+  "label": "Week 13",
+  "order": 13,
+  "note": "",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2013-award-week13-afc-offense-v1",
+    "packet_sha256": "22ee2f2a8cdc906949281c89b610a72944f3c2147e8fa10a5e9b3613baeaa5f0",
+    "result_ref": "50b77ed7d451c9151e2693a4f524a77b6c1e1fa46ac22442157911dcdcf06015",
+    "shortlist": [
+     {
+      "player": "Andy Dalton",
+      "team": "Cincinnati Bengals",
+      "score": 27.24
+     },
+     {
+      "player": "Peyton Manning",
+      "team": "Denver Broncos",
+      "score": 25.1
+     },
+     {
+      "player": "Joe Flacco",
+      "team": "Baltimore Ravens",
+      "score": 23.88
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-defense": {
+    "event_id": "2013-award-week13-afc-defense-v1",
+    "packet_sha256": "7f909765fc9f99540c5bda80ee0897431592142c2b056fe8b9654e3f9ae08b9f",
+    "result_ref": "46a1b8ea57707e75bf0da7c88dbd5ce7c849774fb98d7803c35f909d0b32dbd2",
+    "shortlist": [
+     {
+      "player": "Joe Haden",
+      "team": "Cleveland Browns",
+      "score": 25.1
+     },
+     {
+      "player": "Reshad Jones",
+      "team": "Miami Dolphins",
+      "score": 24.9
+     },
+     {
+      "player": "Johnathan Joseph",
+      "team": "Houston Texans",
+      "score": 19.9
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-special_teams": {
+    "event_id": "2013-award-week13-afc-special_teams-v1",
+    "packet_sha256": "a9ed79bfa4e1b9e0d7d31398a4853bca27728744f318041c58c1a0ff97df8794",
+    "result_ref": "1e7b0cb6872317300c56e7a2f257fe39d79c61c21c82a95a7b5c7208c19718a4",
+    "shortlist": [
+     {
+      "player": "Mike Scifres",
+      "team": "San Diego Chargers",
+      "score": 16.5
+     },
+     {
+      "player": "Rob Bironas",
+      "team": "Tennessee Titans",
+      "score": 16.0
+     },
+     {
+      "player": "Eddie Royal",
+      "team": "San Diego Chargers",
+      "score": 15.8
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-offense": {
+    "event_id": "2013-award-week13-nfc-offense-v1",
+    "packet_sha256": "04b6185b3676d291f4456a3dd5f991f49bdfff9455c865a1ea891a1162924c2c",
+    "result_ref": "d89d27a1b8cedfd78dd64f555eee3df9b997534ad0dded0c54ddd95714da9681",
+    "shortlist": [
+     {
+      "player": "Daryl Richardson",
+      "team": "St. Louis Rams",
+      "score": 24.2
+     },
+     {
+      "player": "Larry Fitzgerald",
+      "team": "Arizona Cardinals",
+      "score": 23.7
+     },
+     {
+      "player": "Joique Bell",
+      "team": "Detroit Lions",
+      "score": 22.7
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2013-award-week13-nfc-defense-v1",
+    "packet_sha256": "96b7ca80de055890f3ffe06c06adade887a0ddb1f3f3594da91d98709965fb21",
+    "result_ref": "acc5e1ff9c9dffe0fbfcd4e3528fd524731b282d66d49b7be4a826df7cafff88",
+    "shortlist": [
+     {
+      "player": "Justin Durant",
+      "team": "Dallas Cowboys",
+      "score": 21.5
+     },
+     {
+      "player": "Brandon Carr",
+      "team": "Dallas Cowboys",
+      "score": 20.7
+     },
+     {
+      "player": "Harrison Smith",
+      "team": "Minnesota Vikings",
+      "score": 18.6
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-special_teams": {
+    "event_id": "2013-award-week13-nfc-special_teams-v1",
+    "packet_sha256": "6ac8786d26f2cdd353dd5464478e728386054ba56bf794421d6a60366a5d09b0",
+    "result_ref": "e91a98f7da1e8cdec0950596d9c2fc9d4bbe2ee1841c4d0a5561aa9a5dfe6d56",
+    "shortlist": [
+     {
+      "player": "Mason Crosby",
+      "team": "Green Bay Packers",
+      "score": 15.0
+     },
+     {
+      "player": "Jon Ryan",
+      "team": "Seattle Seahawks",
+      "score": 12.25
+     },
+     {
+      "player": "David Akers",
+      "team": "Detroit Lions",
+      "score": 12.0
+     }
+    ],
+    "winner_index": 1
+   }
+  }
  }
 }

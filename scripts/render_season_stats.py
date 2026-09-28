@@ -396,7 +396,9 @@ def play_calls_markdown(year, team_id, book):
 POINTS_NOTE = (
     "Points: non-offensive touchdowns, their tries and two-point tries are not "
     "modelled by design (about 1.7-2.0 points per team game below the 2012 centre); "
-    "the ±5.0 tolerance is deliberately not tightened."
+    "the ±5.0 tolerance is deliberately not tightened. Yards per team game are net "
+    "of sack yards, as the 2012 centre is (corrected in Entry 55; earlier audits "
+    "compared gross passing yards and read about 14 yards high)."
 )
 
 
