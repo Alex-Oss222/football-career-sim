@@ -1909,5 +1909,299 @@
     "winner_index": 2
    }
   }
+ },
+ "week-12": {
+  "kind": "week",
+  "key": "12",
+  "label": "Week 12",
+  "order": 12,
+  "note": "",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2013-award-week12-afc-offense-v1",
+    "packet_sha256": "f8402e13dfff790027d4efd4476d9bf4f43df8d2307d8e19ab1c0cf0e8c9c110",
+    "result_ref": "ad4ed6d4d2c219ff1c291ae077fb2630e2b2ac1d9379f09d1b6cae29ac78aecb",
+    "shortlist": [
+     {
+      "player": "Jamaal Charles",
+      "team": "Kansas City Chiefs",
+      "score": 48.8
+     },
+     {
+      "player": "Philip Rivers",
+      "team": "San Diego Chargers",
+      "score": 38.94
+     },
+     {
+      "player": "Isaac Redman",
+      "team": "Pittsburgh Steelers",
+      "score": 32.4
+     }
+    ],
+    "winner_index": 1
+   },
+   "AFC-defense": {
+    "event_id": "2013-award-week12-afc-defense-v1",
+    "packet_sha256": "1d23a52f99995965c8209f6cd1e8c49b702943a423465a1ae826f1a090501dd6",
+    "result_ref": "f680eae533187d1ed598637b91d1350916e12762999fca64e956049e00890181",
+    "shortlist": [
+     {
+      "player": "Jerod Mayo",
+      "team": "New England Patriots",
+      "score": 20.0
+     },
+     {
+      "player": "Derrick Johnson",
+      "team": "Kansas City Chiefs",
+      "score": 18.0
+     },
+     {
+      "player": "Brooks Reed",
+      "team": "Houston Texans",
+      "score": 17.6
+     }
+    ],
+    "winner_index": 1
+   },
+   "AFC-special_teams": {
+    "event_id": "2013-award-week12-afc-special_teams-v1",
+    "packet_sha256": "cbecbd5ee8cd6639e3d3ad4e1218968e50d2c27f2d8d132173ca6af693efbfc7",
+    "result_ref": "f83698a16883fc87172b0299ed74c95bf44781ec4b81f80e0dda79a12b0ef538",
+    "shortlist": [
+     {
+      "player": "Brett Kern",
+      "team": "Tennessee Titans",
+      "score": 22.75
+     },
+     {
+      "player": "Eddie Royal",
+      "team": "San Diego Chargers",
+      "score": 20.8
+     },
+     {
+      "player": "Cassius Vaughn",
+      "team": "Indianapolis Colts",
+      "score": 16.1
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-offense": {
+    "event_id": "2013-award-week12-nfc-offense-v1",
+    "packet_sha256": "5eb5015fe193200d754cd3721b31c28d166ce6560fc17d2c138887621b32d67b",
+    "result_ref": "de7d871d3e8eb87697d14a8fc4eba55f1b491006e9adf5c8bd8a313df56caa92",
+    "shortlist": [
+     {
+      "player": "Alfred Morris",
+      "team": "Washington Redskins",
+      "score": 29.5
+     },
+     {
+      "player": "Sam Bradford",
+      "team": "St. Louis Rams",
+      "score": 26.3
+     },
+     {
+      "player": "DeMarco Murray",
+      "team": "Dallas Cowboys",
+      "score": 26.1
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2013-award-week12-nfc-defense-v1",
+    "packet_sha256": "0ce54d315b6094b4cd163ce4c3649e523371035495b0a41924d2da3f544fa8c8",
+    "result_ref": "45fc20f2e1eeb69663769f5a4e4b2e4d50740bc5c85bdc818d7f1a508ccd7bdb",
+    "shortlist": [
+     {
+      "player": "Morris Claiborne",
+      "team": "Dallas Cowboys",
+      "score": 29.9
+     },
+     {
+      "player": "Glover Quin",
+      "team": "Detroit Lions",
+      "score": 19.5
+     },
+     {
+      "player": "Stephen Nicholas",
+      "team": "Atlanta Falcons",
+      "score": 19.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-special_teams": {
+    "event_id": "2013-award-week12-nfc-special_teams-v1",
+    "packet_sha256": "97a288533cb0be63e701b34ea44c07f3fcf24df5051d72a1c9f7d76989955dbc",
+    "result_ref": "b95e61a8f00973d27e2f04aa0b759437ce4ed5b745aa7426516027c82fcda1c8",
+    "shortlist": [
+     {
+      "player": "Dan Bailey",
+      "team": "Dallas Cowboys",
+      "score": 14.0
+     },
+     {
+      "player": "LaMichael James",
+      "team": "San Francisco 49ers",
+      "score": 12.8
+     },
+     {
+      "player": "Jeff Locke",
+      "team": "Minnesota Vikings",
+      "score": 12.25
+     }
+    ],
+    "winner_index": 0
+   }
+  }
+ },
+ "month-November": {
+  "kind": "month",
+  "key": "November",
+  "label": "November (Weeks 9-12)",
+  "order": 103,
+  "note": "",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2013-award-november-afc-offense-v1",
+    "packet_sha256": "a0dc1f4afe4996ef841e07199106c75e2efbeaf03fae382772bf9025bd8df4dd",
+    "result_ref": "06780b025d1f2d1453c4144d55dcad974fd0c4df7edd7d47331cf5acd284a318",
+    "shortlist": [
+     {
+      "player": "Philip Rivers",
+      "team": "San Diego Chargers",
+      "score": 103.54
+     },
+     {
+      "player": "Andrew Luck",
+      "team": "Indianapolis Colts",
+      "score": 80.92
+     },
+     {
+      "player": "Stevan Ridley",
+      "team": "New England Patriots",
+      "score": 77.8
+     }
+    ],
+    "winner_index": 2
+   },
+   "AFC-defense": {
+    "event_id": "2013-award-november-afc-defense-v1",
+    "packet_sha256": "638b27901d2abcaeacba5b4ec79ac3fc2badf19acc06a4aab299fe6b5756dd67",
+    "result_ref": "4db17bbb0d7a44ec35fe1ebe10735bdd2619994fde91a111469ecfb675cbe8db",
+    "shortlist": [
+     {
+      "player": "Jerrell Freeman",
+      "team": "Indianapolis Colts",
+      "score": 63.0
+     },
+     {
+      "player": "Josh Bynes",
+      "team": "Baltimore Ravens",
+      "score": 57.5
+     },
+     {
+      "player": "Philip Wheeler",
+      "team": "Miami Dolphins",
+      "score": 55.9
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-special_teams": {
+    "event_id": "2013-award-november-afc-special_teams-v1",
+    "packet_sha256": "92404c1bbb79477d282cc194e954312e32fa6e1fa5b933e40855e20a3637e56e",
+    "result_ref": "4c2589ed9fa9db395882906b85e80521fe7b12e917388777c339ca85e1ecb563",
+    "shortlist": [
+     {
+      "player": "Eddie Royal",
+      "team": "San Diego Chargers",
+      "score": 45.8
+     },
+     {
+      "player": "Brett Kern",
+      "team": "Tennessee Titans",
+      "score": 37.25
+     },
+     {
+      "player": "Jacoby Jones",
+      "team": "Baltimore Ravens",
+      "score": 36.0
+     }
+    ],
+    "winner_index": 1
+   },
+   "NFC-offense": {
+    "event_id": "2013-award-november-nfc-offense-v1",
+    "packet_sha256": "35d395efdc3957ff6428b4ddf102ceddc4a1e56e9de1f7e3395979f76b230a4d",
+    "result_ref": "a8e340563ee4ef8443ea7ccd93b6cdba9202f2ddf11aa35a95c8b88d5152f0ad",
+    "shortlist": [
+     {
+      "player": "DeAngelo Williams",
+      "team": "Carolina Panthers",
+      "score": 86.5
+     },
+     {
+      "player": "Josh Freeman",
+      "team": "Tampa Bay Buccaneers",
+      "score": 85.88
+     },
+     {
+      "player": "Alfred Morris",
+      "team": "Washington Redskins",
+      "score": 81.7
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2013-award-november-nfc-defense-v1",
+    "packet_sha256": "6224cf1f75f356ee65b47e3703d28b9579bdd9076182a659cc04f8c1240b7896",
+    "result_ref": "7a84942779a394a5a2ce3232d0e39a3ae664481719e17ced2a1f1047e8690611",
+    "shortlist": [
+     {
+      "player": "Stephen Nicholas",
+      "team": "Atlanta Falcons",
+      "score": 55.0
+     },
+     {
+      "player": "Lance Briggs",
+      "team": "Chicago Bears",
+      "score": 52.9
+     },
+     {
+      "player": "Chad Greenway",
+      "team": "Minnesota Vikings",
+      "score": 52.0
+     }
+    ],
+    "winner_index": 1
+   },
+   "NFC-special_teams": {
+    "event_id": "2013-award-november-nfc-special_teams-v1",
+    "packet_sha256": "c26a15a26bf69d9b1ad5ca57f6e374ab35a9abdc9fd40eeffc5b2460892d4ca4",
+    "result_ref": "c8c8529d80a318db63c39c99ca635f74edd8da1923f3686262bdc3804381dc59",
+    "shortlist": [
+     {
+      "player": "Kai Forbath",
+      "team": "Washington Redskins",
+      "score": 36.0
+     },
+     {
+      "player": "LaMichael James",
+      "team": "San Francisco 49ers",
+      "score": 36.0
+     },
+     {
+      "player": "Devin Hester",
+      "team": "Chicago Bears",
+      "score": 35.7
+     }
+    ],
+    "winner_index": 0
+   }
+  }
  }
 }

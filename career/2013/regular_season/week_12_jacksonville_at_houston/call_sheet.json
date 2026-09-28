@@ -1,0 +1,115 @@
+{
+ "schema_version": 1,
+ "team": "Jacksonville Jaguars",
+ "event": "2013 Regular Season Week 12, Jacksonville at Houston",
+ "status": "EX_ANTE_CALL_SHEET_FROZEN",
+ "provenance": "Stone's Week 12 game plan, runner-ready call sheet (section 54), approved by the user as APPROVED_WEEK_12_PLAN and frozen verbatim before any Week 12 draw under kernel 2013.8. Plan provenance as supplied: Stone Week 12 divisional road plan after Jacksonville's canonical 29-7 Week 11 win over Arizona. The plan preserves the corrected ball security, protection structure and downhill run identity, emphasizes red-zone finishing, keeps Harris and Grimes outside with Poyer at nickel while Bouye and Ball are out, and continues the Week 11 2014 scouting directive through role-validation work. Every family resolves in the call-family map from the active 2013 book.",
+ "offensive_call_sheet": [
+  {
+   "name": "12 Ace Right, Duo R",
+   "family": "Duo",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace Right"
+  },
+  {
+   "name": "12 Trey Right, Stick, H Chip-Release",
+   "family": "Stick",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey Right"
+  },
+  {
+   "name": "21 Pro Left, Counter R",
+   "family": "Counter",
+   "type": "run",
+   "personnel": "21",
+   "formation": "21 Pro Left"
+  },
+  {
+   "name": "11 Bunch Right, Return, Mesh",
+   "family": "Mesh",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Bunch Right"
+  },
+  {
+   "name": "12 Wing Right, Split L",
+   "family": "Split Zone",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Wing Right"
+  },
+  {
+   "name": "12 Doubles, Texas",
+   "family": "Texas",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Doubles"
+  },
+  {
+   "name": "6OL Heavy Right, Power R",
+   "family": "Power",
+   "type": "run",
+   "personnel": "6OL",
+   "formation": "6OL Heavy Right"
+  },
+  {
+   "name": "6OL Heavy Right, Counter L",
+   "family": "Counter",
+   "type": "run",
+   "personnel": "6OL",
+   "formation": "6OL Heavy Right"
+  },
+  {
+   "name": "6OL Wing Left, TE Delay",
+   "family": "TE Delay",
+   "type": "pass",
+   "personnel": "6OL",
+   "formation": "6OL Wing Left"
+  },
+  {
+   "name": "11 Trips Right, Inside L, Access Blackmon Smoke",
+   "family": "Inside + Smoke",
+   "type": "run",
+   "personnel": "11",
+   "formation": "11 Trips Right"
+  },
+  {
+   "name": "12 Bunch Right, Snag",
+   "family": "Snag",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Bunch Right"
+  },
+  {
+   "name": "12 Trey Right, Sprint Flood R",
+   "family": "Sprint Flood",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey Right"
+  },
+  {
+   "name": "12 Ace Right, Duo R",
+   "family": "Duo",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace Right"
+  },
+  {
+   "name": "12 Ace Right, Power Pass, Post-Cross, Max",
+   "family": "Power Pass",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Ace Right",
+   "protection": "Max"
+  },
+  {
+   "name": "12 Doubles, Spacing",
+   "family": "Spacing",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Doubles"
+  }
+ ]
+}
