@@ -242,10 +242,13 @@ _LATE_PUNT_2014_2 = (
 KNOWN_DETECTIONS["2014.2"] = dict(KNOWN_DETECTIONS["2014.1"])
 KNOWN_DETECTIONS["2014.2"]["FGA per team game"] = _FGA_2014_2
 KNOWN_DETECTIONS["2014.2"]["punt share of possessions ending in Q4's last 5:00 or OT, offense trailing 1-8"] = _LATE_PUNT_2014_2
+# Kernel 2014.3 changes credit only (runtime/README.md, kernel 2014.3): every
+# result is identical to 2014.2, so the registry carries over unchanged.
+KNOWN_DETECTIONS["2014.3"] = dict(KNOWN_DETECTIONS["2014.2"])
 
 
 def known_detections(cohort):
-    """{metric: note} for a kernel cohort ("2013.6", "2013.7", "2013.8", "2013.9", "2013.10", "2013.11", "2014.1" or "2014.2"); empty otherwise."""
+    """{metric: note} for a kernel cohort ("2013.6", "2013.7", "2013.8", "2013.9", "2013.10", "2013.11", "2014.1", "2014.2" or "2014.3"); empty otherwise."""
     return dict(KNOWN_DETECTIONS.get(cohort, {}))
 
 

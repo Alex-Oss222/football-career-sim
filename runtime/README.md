@@ -30,7 +30,7 @@ Every public statistical page is generated from the receipt set: season views by
 
 `runtime/usage.py` loads `library/data/2012_nfl_position_usage_baseline.json` (two-source 2012 play-by-play; see `library/2012_position_usage_calibration.md`). Player attribution is depth-chart aware: one game passer per club (`PlayerInput.depth`, then a `passer` role, then rotation status, then roster order), carries/targets/defensive credits by sourced position-group share and usage rank, assisted tackles, losing runs and tackles for loss. Through 2013.5, `runtime/kernel.py` drew plays and clock per drive from the resolved result and scaled them to the verified team-game totals (kernel 2013.6 replaces this; see below); third-down and first-down volume use sourced rates. `runtime/game_runner.py` rejects a TeamInput that is not a legal game-day unit. Kernel 2013.5 adds one rule: a club with no available kicker has its punter kick, and one with no available punter has its kicker punt, as NFL clubs do in an emergency; the game-day check accepts that coverage. The rule changes nothing for a club that dresses both specialists, and every Week 1 and Week 2 club did. `runtime/bands.py` audits closed receipts against the shapes without touching any result. The private service must be redeployed at the same kernel version; readiness fails closed on a mismatch.
 
-## Snap-detail contract (introduced in kernel 2013.3; tag v3 from 2013.6, v4 from 2013.7)
+## Snap-detail contract (introduced in kernel 2013.3; tag v3 from 2013.6, v4 from 2013.7, v5 from 2014.3)
 
 The kernel keeps score/outcome generation at the possession layer and adds a deterministic public detail stream after each drive is resolved.
 
@@ -300,3 +300,40 @@ Kernel 2014.2 corrects the late-cell masking bias recorded at the 2014.1 accepta
 **Snap detail.** A drive whose only running-clock snap is its terminal snap keeps its spike after the first snap (the 2013.9 rule). `tests/test_spike_seating.py` now checks only drives with a running snap before the terminal tail. Borrowed late drives produce the case about twice in 250 games.
 
 **Versions and cohorts.** `KERNEL_VERSION` and the service `KERNEL` are both `2014.2`. `KNOWN_DETECTIONS["2014.2"]` adds the two rows above. No closed 2013 receipt is rerun.
+
+## Kernel 2014.3 credit rules (on-field line, coverage, long snaps)
+
+Kernel 2014.3 changes who is credited, never what happens. The user directed it after the 2013 season honours (Entry 71) showed that individual line and coverage statistics carried no participation signal. Every rule reads only the club's own depth order and roles and applies to every club alike.
+
+**What was wrong (2013.4 through 2014.2).**
+- **Sacks allowed** were charged by an equal draw over every dressed lineman, backups included (`choose` over the whole line, drawn before the rusher). In Weeks 11-17, 32% of background sacks went to linemen outside the five on the field, which is what chance predicts.
+- **Coverage tackles** were never credited. The punt cover player was drawn from a position set that missed OLB, ILB, MLB, SS and FS, and was praised for "coverage lane held" whatever happened.
+- **Long snappers** did nothing statistically.
+- **Returners** were drawn afresh on every kick when a club designated none (Jacksonville used 18 kick returners in 2013).
+
+**The rules (`runtime/usage.py`, `runtime/play_detail.py`).**
+- **The line on the field** (`protection_front`): the five available linemen lowest in the club's depth order start and earn `line_starts`. Their labels only seat them: the center at C, tackles at LT then RT, guards at LG then RG, and anyone left takes an open slot in depth order (a first-string guard playing right tackle starts there, ahead of a backup tackle).
+- **Sack blame** (`beaten_slots`): the rusher is drawn from the sourced sack shares, and now drawn first. An edge rusher (DE, OLB, a defensive back) beats a tackle; an interior rusher (DT, NT, ILB, MLB) a guard or the center; a generic LB or DL label, which says neither, any of the five. The lineman is drawn evenly among those slots. The ledger records `blocker_slot`.
+- **Coverage tackles** (`coverage_unit`, `special_teams_tackles`): on a kickoff or punt that is actually returned (not a touchback, fair catch, muff or kick out of bounds), one player of the kicking club's coverage unit is credited, evenly. The unit is the club's designated `kickoff_coverage` / `punt_coverage` players, filled to 10 (kickoffs) or 9 (punts) by a mechanical make-up from non-starters by depth: 3 linebackers, 4 defensive backs (3 on punts), a tight end, a fullback or back and a receiver. Base starters, skipped first, are one back, three receivers, one tight end, four linebackers (so a 3-4 club's starters stay out too) and four defensive backs (a labelled convention, `BASE_STARTERS`). The club's own returners are left out.
+- **Returners** (`club_returner`): for each role (kick, punt), the designated returner, else the club's first non-starter receiver, back or defensive back by depth. One kick returner and one punt returner per club per game; they are the same player unless the club designates different ones.
+- **Long snaps** (`long_snapper`, `long_snaps`): the first long snapper, else the center on the field, on every punt, field goal and try.
+- **Player evidence:** the lineman facing the rusher is named on a sack without a technique finding (which of the eligible linemen is an even draw), and a punt coverage player is named only when he made the tackle.
+- **Stream tags:** snap detail v5, kickoff detail v3 (snap layouts are redrawn; no team counter moves). The possession stream is untouched.
+
+**Validation (`kernel.validate_result`).** Five line starts per club (fewer only if it dresses fewer linemen); no sack charged to a lineman off the field; one coverage tackle per returned kick, none on any other kick, and each player's coverage tackles equal to his ledger rows; long snaps equal to punts plus field-goal and extra-point attempts. Legacy inputs without linemen or a long snapper keep the old fallbacks.
+
+**Acceptance (identical seeds, 2014.2 against 2014.3).**
+- **Replay:** every game of the frozen Weeks 11-17 TeamInput packages, replayed with ten fresh seeds each (1,090 games), is identical to 2014.2 (final score, every possession, kickoffs, injuries, the opening receiver and every team counter), with zero validation errors and zero coherence violations.
+- **Credit on the same games:** all 4,947 sacks charged to the five on the field (left tackle 26.1%, right tackle 27.1%, left guard 15.3%, center 15.8%, right guard 15.7%). Across the 218 frozen team-games no available first-string lineman sat. Coverage tackles came to 4.7 per team game (tight ends 17.5%, cornerbacks 15.1%, outside linebackers 11.9%, backs 10.3%, receivers 10.0%, the rest fullbacks, inside linebackers and safeties). Every long snap went to a long snapper. One kick returner and one punt returner per club in 87% of team games (the rest had no return of that kind).
+- **Guard in the suite:** `tests/test_attribution.py` (ResultIdentityTests) replays 40 synthetic regular and postseason games and requires the result digests recorded under 2014.2 (`tests/data/result_identity.json`). A kernel that deliberately changes results replaces that file in its own commit.
+
+**What this does and does not give.** These statistics now record who was on the field, who was beaten and who made the tackle. They still carry no individual quality signal: the engine has no per-player ability (Document 7 section 2.2 describes per-attribute tiers that are not built), so which eligible lineman is beaten, or which coverage player makes the tackle, is drawn evenly. Closed 2013 receipts are not rerun and keep the old credit.
+
+### Pro Bowl game type (kernel 2014.3)
+
+`resolve_game(..., game_type="pro_bowl")` plays the 2014 Pro Bowl structure (`library/2013_super_bowl_mvp_and_pro_bowl_procedure.md` section 3; the branch readings of its unverified rules are in `career/2013/pro_bowl/method.json`). Regular and postseason games never reach these branches; the 1,090-game replay above was rerun after they were added and stayed identical.
+- **No kickoffs:** every quarter opens with the ball at the offence's 25 (`start_kind` "placement"), and after every score the next possession starts there. The team scored upon takes it; after a safety, the scoring team.
+- **Quarters:** the possession in progress ends when any quarter ends (`end_of_quarter` after the first and third). Possession alternates at the start of each quarter from the opening coin toss. Timeouts reset at each half.
+- **Draws:** quarters 1 to 3 draw as first-half windows of 15:00 that end the possession, quarter 4 as the second half's last 15:00 (late cells). The play-level exhibition rules (two-minute warning each quarter, late-quarter clock, play clock, defensive restrictions) are not modelled; drives stay real 2012 regular-season drives.
+- **Overtime:** the regular-season rules, opened at the 25.
+- **Checks:** `validate_result` and `check_ledger` replace the kickoff and second-half-receiver checks with the quarter rules (every quarter opens at the 25, possession alternates, no possession crosses a quarter, no kick rows). 300 synthetic Pro Bowl games at acceptance: zero validation errors and zero coherence violations; `tests/test_pro_bowl.py` replays 80 each run.

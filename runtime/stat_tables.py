@@ -133,6 +133,12 @@ RETURNS = (
     derived("PR AVG", lambda l: avg(g(l, "punt_return_yards"), g(l, "punt_returns"))),
 )
 OFFENSIVE_LINE = (col("SCK ALLOWED", "sacks_allowed"),)
+# Kernel 2014.3 (shown only where a receipt carries them, so earlier views
+# are unchanged): line starts, long snaps and coverage tackles.
+LINE_STARTS = col("STARTS", "line_starts")
+LONG_SNAPS = col("LONG SNAPS", "long_snaps")
+COVERAGE = (col("ST TKL", "special_teams_tackles"),)
+OPTIONAL_COLUMNS = {"Offensive line": (LINE_STARTS,), "Long snappers": (LONG_SNAPS,)}
 
 RETURN_FIELDS = frozenset({"kick_returns", "kick_return_yards", "punt_returns", "punt_return_yards", "return_yards"})
 # Implied by columns already shown: dropbacks are attempts plus sacks, and
@@ -169,6 +175,7 @@ LABELS = {
     "field_goals_made": "FGM", "field_goals_attempted": "FGA", "extra_points_made": "XPM",
     "extra_points_attempted": "XPA", "punts": "PUNTS", "punt_yards": "PUNT YDS",
     "long_punt": "PUNT LNG", "punts_inside_20": "IN20", "punt_touchbacks": "TB",
+    "line_starts": "STARTS", "long_snaps": "LONG SNAPS", "special_teams_tackles": "ST TKL",
 }
 
 
@@ -251,12 +258,13 @@ def position_sections(players, *, with_team, level="##"):
         if not fields:
             continue
         index = position_group(line.get("position", ""))
-        shown = RETURN_FIELDS | IMPLIED_FIELDS | {"games"}
+        shown = RETURN_FIELDS | IMPLIED_FIELDS | {"games", "special_teams_tackles"}
         if index is None:
             extra = fields - shown
         else:
             grouped[index].append((player_id, line))
-            extra = fields - shown - covered(POSITION_GROUPS[index][2])
+            optional = covered(OPTIONAL_COLUMNS.get(POSITION_GROUPS[index][0], ()))
+            extra = fields - shown - covered(POSITION_GROUPS[index][2]) - optional
         if extra:
             order = list(LABELS)
             extra_rows.append((player_id, line, sorted(extra, key=lambda f: order.index(f) if f in order else len(order))))
@@ -266,11 +274,18 @@ def position_sections(players, *, with_team, level="##"):
         rows = grouped[index]
         if rows:
             rows.sort(key=sort_key(sort_field))
-            lines += table(title, rows, (GAMES,) + columns, with_team=with_team, level=level)
+            extra_columns = tuple(c for c in OPTIONAL_COLUMNS.get(title, ())
+                                  if any(g(line, f) for _, line in rows for f in c[2]))
+            lines += table(title, rows, (GAMES,) + columns + extra_columns, with_team=with_team, level=level)
 
     returners = rows_with(players, ("kick_returns", "punt_returns"), "return_yards")
     if returners:
         lines += table("Kick and punt returners", returners, (GAMES,) + RETURNS,
+                       with_team=with_team, with_pos=True, level=level)
+
+    coverage = rows_with(players, ("special_teams_tackles",), "special_teams_tackles")
+    if coverage:
+        lines += table("Kick and punt coverage", coverage, (GAMES,) + COVERAGE,
                        with_team=with_team, with_pos=True, level=level)
 
     if extra_rows:

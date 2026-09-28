@@ -1,0 +1,207 @@
+{
+ "kernel": "2014.2",
+ "note": "Result digests (final score, possessions, kickoffs, injuries, opening receiver, team counters) of synthetic sample_teams() games under kernel 2014.2. A credit-only kernel must reproduce them; a kernel that deliberately changes results replaces this file in its own commit.",
+ "seed_rule": "sha256('identity-<game_type>-<i>'); event_id 'identity-<game_type>-<i>'; venue neutral when i % 5 == 0, else home",
+ "games": [
+  {
+   "game_type": "regular",
+   "index": 0,
+   "digest": "14d52f9275f7cbf3fcb067db7b2ac7a63fde69abf5863e3f2122410785d94146"
+  },
+  {
+   "game_type": "regular",
+   "index": 1,
+   "digest": "7ad67a1a73d69318a804eb940a72bc5474ea4a06f3052aa10d700c8004e2baa6"
+  },
+  {
+   "game_type": "regular",
+   "index": 2,
+   "digest": "36c42313c5b187cdd929a10bf2944f86544e6dfe53e600b2ba6bc2772e0fe671"
+  },
+  {
+   "game_type": "regular",
+   "index": 3,
+   "digest": "0ecb06f8a67977a2ac975a198434bd1f7815d2c6cf193f100a1e739311a126f3"
+  },
+  {
+   "game_type": "regular",
+   "index": 4,
+   "digest": "8b6689353bf4365ffd884e69fa2245239ac14cda8dd5c8548cdd43d2af11af3a"
+  },
+  {
+   "game_type": "regular",
+   "index": 5,
+   "digest": "05eab6ab84881c2be0ecf0eafb413fc31843a23e48579f43113fd19ffae26b0b"
+  },
+  {
+   "game_type": "regular",
+   "index": 6,
+   "digest": "1e0faaf926c84f16f82f9bfcd54abaa130a236266eff4b4df0db6efbd3a90b72"
+  },
+  {
+   "game_type": "regular",
+   "index": 7,
+   "digest": "364e40d432524161e59838d380861b06c13b43e29f91bb2eab4e35f077100fd6"
+  },
+  {
+   "game_type": "regular",
+   "index": 8,
+   "digest": "c4390ed90d1db3d68e98a29bed7d915773439fb8816488ce81a44fbc7dee0390"
+  },
+  {
+   "game_type": "regular",
+   "index": 9,
+   "digest": "d3b85709e8ac5c7a7b2a87f69b467183fa2b6e19433d29e92b1630e09006c928"
+  },
+  {
+   "game_type": "regular",
+   "index": 10,
+   "digest": "9f2396ae72187fa60d8538d177f518c70839d3592101c6c4787adaa61e972913"
+  },
+  {
+   "game_type": "regular",
+   "index": 11,
+   "digest": "23dbab57e6a1be7cbb77c69205787ef613ceb34f9cc095e88efb3ef95f0820dc"
+  },
+  {
+   "game_type": "regular",
+   "index": 12,
+   "digest": "f018fcf6fd3cf0ed491b808af5d7a42f0de1d9e8f090390823d59cbf945de295"
+  },
+  {
+   "game_type": "regular",
+   "index": 13,
+   "digest": "a9c4b3aa01bdd10401f93f54e8ab0f0f644665cb2f1def67d953b6a93cae7a34"
+  },
+  {
+   "game_type": "regular",
+   "index": 14,
+   "digest": "6be6e31766e602a984976273e1ff98525e171a1b5e7fd9ada546ded0b193a9e1"
+  },
+  {
+   "game_type": "regular",
+   "index": 15,
+   "digest": "1edb7023a0d815046756c7cd5fe6e6c351d75e195c7ce434bb5db805095abc80"
+  },
+  {
+   "game_type": "regular",
+   "index": 16,
+   "digest": "52f522fc25b8ba6f9db6b1d06bdf059bd55ef3890a688a8d563d6d1c330da034"
+  },
+  {
+   "game_type": "regular",
+   "index": 17,
+   "digest": "d759118c0d13bcec63b2f70df5cb1b2fa538b6167c7e7c5b6a52a1029ab0d04d"
+  },
+  {
+   "game_type": "regular",
+   "index": 18,
+   "digest": "d4b8077da17bff966c9fabc30811c1ab966be9d20d1bd7aa61d70571fc36a889"
+  },
+  {
+   "game_type": "regular",
+   "index": 19,
+   "digest": "e920c44f1e3dbb8dcad6fdc853af322ec95f2cbb9ed83857fd0b9a253a854289"
+  },
+  {
+   "game_type": "regular",
+   "index": 20,
+   "digest": "3f99d887c0d88fdbbf549f67967fe1ab1019cbe9edd717f1950da2072448f804"
+  },
+  {
+   "game_type": "regular",
+   "index": 21,
+   "digest": "e7fe67146377252ee7ba1fa34e957b5af6310231781239338892fe464076f990"
+  },
+  {
+   "game_type": "regular",
+   "index": 22,
+   "digest": "c5b0dc67259f26213362268bbcb496bff0a50838edd576df0b6cdff96e60784a"
+  },
+  {
+   "game_type": "regular",
+   "index": 23,
+   "digest": "136b319265b06095b4ee52499488ec868b931ed3e81d8c30be365130411aa3a1"
+  },
+  {
+   "game_type": "regular",
+   "index": 24,
+   "digest": "351c907df0d6397561e84fd6e4285c5d0c3a9cd990f6e91c722f850c1731c138"
+  },
+  {
+   "game_type": "regular",
+   "index": 25,
+   "digest": "e4bf0e3dc4c5371c753fd2a262f6c75b421e11160ca202ad356f39517e45fbfe"
+  },
+  {
+   "game_type": "regular",
+   "index": 26,
+   "digest": "4845855f489bc6da0ab493a6e1b1e8e75045322249a9112d05a26845ee39651c"
+  },
+  {
+   "game_type": "regular",
+   "index": 27,
+   "digest": "c71aa5f16ca75f64efcdacac10c897298c42e0280136d44c0ddf92c0ac06f3c1"
+  },
+  {
+   "game_type": "regular",
+   "index": 28,
+   "digest": "02e09d8ad4d833435113f34aa806fcb94c98b5355c9f0d2d622596a7a278b225"
+  },
+  {
+   "game_type": "regular",
+   "index": 29,
+   "digest": "3b3ddb340bdf92ce877ff23a5b2e54dd4b64b08641b3173ab36660fca744624a"
+  },
+  {
+   "game_type": "postseason",
+   "index": 0,
+   "digest": "98dd2aee2075ad8acb085d3594413805ceb4ce3681506ef5c0080fb6140d7a3a"
+  },
+  {
+   "game_type": "postseason",
+   "index": 1,
+   "digest": "eeef1f9ca671ddb65e511433fb773c3cfbdc008768b71e3a51b615652aa63edc"
+  },
+  {
+   "game_type": "postseason",
+   "index": 2,
+   "digest": "9d29b64ae4de3899383cd4a8b666ff5b97e2b03fac92420747490a05ecb0fc49"
+  },
+  {
+   "game_type": "postseason",
+   "index": 3,
+   "digest": "4b1d70a115b8feed32f8d5c43e56d727c4ade89505af6ae51bcdb1304628597e"
+  },
+  {
+   "game_type": "postseason",
+   "index": 4,
+   "digest": "f00b94cfb62d40207237ffcee8731cf2c555c550ef872cf6272b7e0db1469bb1"
+  },
+  {
+   "game_type": "postseason",
+   "index": 5,
+   "digest": "2df7e51d857c031cd8f4af2da873886de60d5967f4386f367cf2a23931dfd828"
+  },
+  {
+   "game_type": "postseason",
+   "index": 6,
+   "digest": "0c1e76673ce2599f80dcef1395d07bf8200ac994813aeabd5192aea0b37c8f7d"
+  },
+  {
+   "game_type": "postseason",
+   "index": 7,
+   "digest": "5a7014f1633b252ad7376e83c10d814daac8b3ec489e0c6cc84c236f90edf76b"
+  },
+  {
+   "game_type": "postseason",
+   "index": 8,
+   "digest": "11f1f978a9219396b8773839d9faef9d55cc99395bfd6d76e3f018f7efad7931"
+  },
+  {
+   "game_type": "postseason",
+   "index": 9,
+   "digest": "4186b477d389ab0f9a5bdb38ef8ea66958d0203e95ef2ce85c200b7166526147"
+  }
+ ]
+}
