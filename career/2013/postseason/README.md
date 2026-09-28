@@ -49,6 +49,6 @@ Each branch game takes the real 2013-14 date, kickoff and network of the slot wi
 | 19 | AFC Divisional (6 at 1) | Sun. Jan. 12, 4:40 p.m., CBS | Buffalo at New York Jets | **Buffalo 26**, New York Jets 24 | [roundup](../league_results/week_19.md) |
 | 20 | AFC Championship (6 at 2) | Sun. Jan. 19, 3:00 p.m., CBS | Buffalo at Tennessee | **Buffalo 34**, Tennessee 3 | [roundup](../league_results/week_20.md) |
 | 20 | NFC Championship (4 at 1) | Sun. Jan. 19, 6:30 p.m., FOX | Philadelphia at Minnesota | **Minnesota 20**, Philadelphia 7 | [roundup](../league_results/week_20.md) |
-| 21 | Super Bowl XLVIII | Sun. Feb. 2, 2014, 6:30 p.m., FOX, MetLife Stadium (neutral) | Minnesota (NFC 1) vs. Buffalo (AFC 6, designated home) | Not started | - |
+| 21 | Super Bowl XLVIII | Sun. Feb. 2, 2014, 6:30 p.m., FOX, MetLife Stadium (neutral) | Minnesota (NFC 1) vs. Buffalo (AFC 6, designated home) | **Buffalo 31**, Minnesota 20; Buffalo champion (Entry 67) | [roundup](../league_results/week_21.md) |
 
 The Pro Bowl (Sun. Jan. 26, Aloha Stadium) falls in the off week between the conference round and the Super Bowl. It is not simulated.
