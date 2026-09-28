@@ -1,12 +1,12 @@
 # Jacksonville Jaguars roster
 
-**As of:** January 12, 2014, after the AFC Divisional round; season over (eliminated).
+**As of:** January 19, 2014; season over (eliminated in the AFC Divisional round).
 **Canonical controlled-player count:** **53**.
 **Active roster:** **53**; Justin Blackmon was reinstated from Reserve/Suspended on October 7 and activated to the open spot (ledger Entry 42).
 **Practice squad:** **8**, separate from the active roster.
 **Record:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-1 (AFC Wild Card: Jacksonville 38, Kansas City 14; AFC Divisional: Tennessee 20, Jacksonville 13).
 
-<!-- player-ages-as-of: 2014-01-12 -->
+<!-- player-ages-as-of: 2014-01-19 -->
 
 Birth dates are sourced in the [identity registry](../../library/data/player_birth_dates.json). **Age** is completed years at the master date in Document 5; [league ages](player_ages.md) update through the same renderer.
 
@@ -90,7 +90,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | --- | --- | --- | ---: | --- | --- | --- |
 | Jason Babin | DE | 1980-05-24 | 33 | Active 53 | No communicated restriction | Edge 1 |
 | Andre Branch | DE | 1989-07-14 | 24 | Active 53 | No communicated restriction | Edge 3 |
-| Ryan Davis | DE | 1989-02-24 | 24 | Active 53 | Out, trunk, minor (Divisional); projected return January 14, 2014 | Edge 4 |
+| Ryan Davis | DE | 1989-02-24 | 24 | Active 53 | No communicated restriction | Edge 4 |
 | Lavar Edwards | DE | 1990-04-29 | 23 | Active 53 | No communicated restriction | Edge/front depth and teams (dressed Weeks 12 and 14-17; inactive Week 13) |
 | Jeremy Mincey | DE | 1983-12-14 | 30 | Active 53 | No communicated restriction | Edge 2 |
 | C.J. Wilson | DE | 1987-03-30 | 26 | Active 53 | Out, trunk (Week 2); projected return January 30, 2014 | — |
