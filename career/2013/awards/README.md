@@ -15,7 +15,7 @@ Each award has one scoring formula, applied identically to every player from the
 |---|---|---|
 | AFC and NFC Offensive, Defensive and Special Teams Player of the Week | Each regular-season week | Weeks 1-8 backfilled; generated with each later week |
 | AFC and NFC Offensive, Defensive and Special Teams Player of the Month | Each month, on the league's calendar | Generated when the month's weeks close |
-| Season honours (AP awards, All-Pro, Pro Bowl) | After the regular season | Method to be fixed before the end of the season |
+| Season honours (AP awards, All-Pro, Pro Bowl) | After the regular season | Drawn retroactively (Entry 71): [season_honours.md](season_honours.md), method [season_honours_method.json](season_honours_method.json) |
 
 Fan-voted sponsor awards (FedEx Air & Ground, Pepsi NEXT Rookie of the Week) are not generated. The league-wide Offensive and Defensive Rookie of the Month need a sourced rookie list for all 32 clubs, which the repository does not yet hold; they are not generated until one is built. Months are assigned by NFL week (September Weeks 1-4, October 5-8, November 9-12, December 13-17).
 

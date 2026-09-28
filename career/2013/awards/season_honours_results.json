@@ -1,0 +1,1744 @@
+{
+ "procedure": "league-season-honours-v1",
+ "ledger_entry": "Ledger Entry 71",
+ "snapshot": "b46413948a9e7126ac8a94efbda6f2f6357bd6598047d6dbcd1a028890a4e17f",
+ "method_sha256": "2c3c68c3f97de2d58d33f4c0028633ddb6f996768c0a684ee39d373aa5ca3fca",
+ "evidence_sha256": "ce5e6b3375208f16ee7d1a1706d8af6751cd55e8a4f9cc188c995f9f70394ec6",
+ "ap_awards": {
+  "MVP": {
+   "event_id": "2013-honours-mvp-v1",
+   "packet_sha256": "ff2b8133b050b2d221f17dd49117f8199ca55df23a30a5602ea98ec94ea58361",
+   "result_ref": "d1c05a0d12450dcf75d49f964eafe45220022350504cc2c5a5cd2f272fec31a5",
+   "shortlist": [
+    {
+     "player": "Jamaal Charles",
+     "team": "Kansas City Chiefs",
+     "position": "RB",
+     "score": 360.4
+    },
+    {
+     "player": "Daryl Richardson",
+     "team": "St. Louis Rams",
+     "position": "RB",
+     "score": 349.7
+    },
+    {
+     "player": "Philip Rivers",
+     "team": "San Diego Chargers",
+     "position": "QB",
+     "score": 346.62
+    }
+   ],
+   "winner_index": 0
+  },
+  "OPOY": {
+   "event_id": "2013-honours-opoy-v1",
+   "packet_sha256": "c9c9c0fc2f1c73594545a171b58a9225616f835c7027b47e1c6f8561009c63fe",
+   "result_ref": "614a56c806b94ef172cbdf51c0db1d3980e1223746afe5e42bacae633ae1e4db",
+   "shortlist": [
+    {
+     "player": "Jamaal Charles",
+     "team": "Kansas City Chiefs",
+     "position": "RB",
+     "score": 315.4
+    },
+    {
+     "player": "Philip Rivers",
+     "team": "San Diego Chargers",
+     "position": "QB",
+     "score": 301.62
+    },
+    {
+     "player": "Daryl Richardson",
+     "team": "St. Louis Rams",
+     "position": "RB",
+     "score": 294.7
+    }
+   ],
+   "winner_index": 2
+  },
+  "DPOY": {
+   "event_id": "2013-honours-dpoy-v1",
+   "packet_sha256": "9d2d4ff3bda97ab5cee79e4241e242f5e935bd8f4a436e0e11b2ec34530bcc4e",
+   "result_ref": "219c55ae7790739d21d95fb79c2d9fc3023792b25c574c79e386f48facb39914",
+   "shortlist": [
+    {
+     "player": "Vontaze Burfict",
+     "team": "Cincinnati Bengals",
+     "position": "MLB",
+     "score": 224.0
+    },
+    {
+     "player": "David Harris",
+     "team": "New York Jets",
+     "position": "OLB",
+     "score": 210.1
+    },
+    {
+     "player": "Dawan Landry",
+     "team": "New York Jets",
+     "position": "S",
+     "score": 206.1
+    }
+   ],
+   "winner_index": 1
+  },
+  "OROY": {
+   "event_id": "2013-honours-oroy-v1",
+   "packet_sha256": "5c04f40f564d2e36acb5ced062e0c97d1ad848cdf4d9e97fe089c7e0888e9a87",
+   "result_ref": "d120e9c31ade1ac8a2afe8c458050b4e2d50ebc8b3c49d51801701a57428da57",
+   "shortlist": [
+    {
+     "player": "E.J. Manuel",
+     "team": "Buffalo Bills",
+     "position": "QB",
+     "score": 260.92
+    },
+    {
+     "player": "Geno Smith",
+     "team": "New York Jets",
+     "position": "QB",
+     "score": 234.32
+    },
+    {
+     "player": "Eddie Lacy",
+     "team": "Green Bay Packers",
+     "position": "RB",
+     "score": 209.8
+    }
+   ],
+   "winner_index": 1
+  },
+  "DROY": {
+   "event_id": "2013-honours-droy-v1",
+   "packet_sha256": "059b1a7a583f840529571de5dd285f0f3f6fcf1647b80b07d4eff7f077c874db",
+   "result_ref": "2ea308f54161afe36f46ed23f95b10d7155d9820d1e7d573bd3adf25727341c5",
+   "shortlist": [
+    {
+     "player": "Kiko Alonso",
+     "team": "Buffalo Bills",
+     "position": "MLB",
+     "score": 74.5
+    },
+    {
+     "player": "Desmond Trufant",
+     "team": "Atlanta Falcons",
+     "position": "CB",
+     "score": 73.2
+    },
+    {
+     "player": "Dee Milliner",
+     "team": "New York Jets",
+     "position": "CB",
+     "score": 71.9
+    }
+   ],
+   "winner_index": 0
+  },
+  "CPOY": {
+   "event_id": "2013-honours-cpoy-v1",
+   "packet_sha256": "f85a64ecfcc52b50b1e71961f9d9ed7e718a0dc4855e59c48d4d45176794137c",
+   "result_ref": "bbebb63f22bab0832d178f56eb53033e94ac818d59124b9d39eaeace048d6a85",
+   "shortlist": [
+    {
+     "player": "Maurice Jones-Drew",
+     "team": "Jacksonville Jaguars",
+     "position": "RB",
+     "score": 241.4
+    },
+    {
+     "player": "Rashard Mendenhall",
+     "team": "Arizona Cardinals",
+     "position": "RB",
+     "score": 227.5
+    },
+    {
+     "player": "Brian Cushing",
+     "team": "Houston Texans",
+     "position": "MLB",
+     "score": 189.0
+    }
+   ],
+   "winner_index": 0
+  },
+  "COY": {
+   "event_id": "2013-honours-coy-v1",
+   "packet_sha256": "ac78ea12ef8aeaa306744f4b2c2f45e0580b486cd87878fdea370f58df3a6e0a",
+   "result_ref": "43d7b656712cfcd227e9dc0b4c1d9334582c09d7a9aedce13e9534983b1656eb",
+   "shortlist": [
+    {
+     "coach": "Alex Stone",
+     "team": "Jacksonville Jaguars",
+     "score": 8.0,
+     "wins_2013": 10.0,
+     "wins_2012": 2.0,
+     "point_differential": 10
+    },
+    {
+     "coach": "Andy Reid",
+     "team": "Kansas City Chiefs",
+     "score": 7.0,
+     "wins_2013": 9.0,
+     "wins_2012": 2.0,
+     "point_differential": 26
+    },
+    {
+     "coach": "Rex Ryan",
+     "team": "New York Jets",
+     "score": 6.0,
+     "wins_2013": 12.0,
+     "wins_2012": 6.0,
+     "point_differential": 79
+    }
+   ],
+   "winner_index": 2
+  }
+ },
+ "all_pro": {
+  "first": {
+   "QB": [
+    {
+     "player": "Philip Rivers",
+     "team": "San Diego Chargers",
+     "position": "QB",
+     "score": 301.62
+    }
+   ],
+   "RB": [
+    {
+     "player": "Jamaal Charles",
+     "team": "Kansas City Chiefs",
+     "position": "RB",
+     "score": 315.4
+    },
+    {
+     "player": "Daryl Richardson",
+     "team": "St. Louis Rams",
+     "position": "RB",
+     "score": 294.7
+    }
+   ],
+   "FB": [
+    {
+     "player": "Tony Fiammetta",
+     "team": "Chicago Bears",
+     "position": "FB",
+     "score": 28.6
+    }
+   ],
+   "TE": [
+    {
+     "player": "Scott Chandler",
+     "team": "Buffalo Bills",
+     "position": "TE",
+     "score": 110.5
+    }
+   ],
+   "WR": [
+    {
+     "player": "Larry Fitzgerald",
+     "team": "Arizona Cardinals",
+     "position": "WR",
+     "score": 194.8
+    },
+    {
+     "player": "Calvin Johnson",
+     "team": "Detroit Lions",
+     "position": "WR",
+     "score": 190.3
+    }
+   ],
+   "T": [
+    {
+     "player": "Austin Howard",
+     "team": "New York Jets",
+     "position": "T",
+     "score": 199.96
+    },
+    {
+     "player": "Branden Albert",
+     "team": "Kansas City Chiefs",
+     "position": "T",
+     "score": 195.77
+    }
+   ],
+   "G": [
+    {
+     "player": "Vladimir Ducasse",
+     "team": "New York Jets",
+     "position": "G",
+     "score": 199.96
+    },
+    {
+     "player": "Jeff Allen",
+     "team": "Kansas City Chiefs",
+     "position": "G",
+     "score": 195.77
+    }
+   ],
+   "C": [
+    {
+     "player": "Nick Mangold",
+     "team": "New York Jets",
+     "position": "C",
+     "score": 199.96
+    }
+   ],
+   "DE": [
+    {
+     "player": "Muhammad Wilkerson",
+     "team": "New York Jets",
+     "position": "DE",
+     "score": 196.0
+    },
+    {
+     "player": "Rob Ninkovich",
+     "team": "New England Patriots",
+     "position": "DE",
+     "score": 146.5
+    }
+   ],
+   "DT": [
+    {
+     "player": "Ahtyba Rubin",
+     "team": "Cleveland Browns",
+     "position": "DT",
+     "score": 155.0
+    },
+    {
+     "player": "Fletcher Cox",
+     "team": "Philadelphia Eagles",
+     "position": "DT",
+     "score": 131.5
+    }
+   ],
+   "OLB": [
+    {
+     "player": "David Harris",
+     "team": "New York Jets",
+     "position": "OLB",
+     "score": 210.1
+    },
+    {
+     "player": "Stephen Nicholas",
+     "team": "Atlanta Falcons",
+     "position": "OLB",
+     "score": 198.5
+    }
+   ],
+   "ILB": [
+    {
+     "player": "Vontaze Burfict",
+     "team": "Cincinnati Bengals",
+     "position": "MLB",
+     "score": 224.0
+    },
+    {
+     "player": "Dan Connor",
+     "team": "New York Giants",
+     "position": "MLB",
+     "score": 204.3
+    }
+   ],
+   "CB": [
+    {
+     "player": "Buster Skrine",
+     "team": "Cleveland Browns",
+     "position": "CB",
+     "score": 186.9
+    },
+    {
+     "player": "Morris Claiborne",
+     "team": "Dallas Cowboys",
+     "position": "CB",
+     "score": 183.3
+    }
+   ],
+   "S": [
+    {
+     "player": "Dawan Landry",
+     "team": "New York Jets",
+     "position": "S",
+     "score": 206.1
+    },
+    {
+     "player": "Antrel Rolle",
+     "team": "New York Giants",
+     "position": "SS",
+     "score": 186.6
+    }
+   ],
+   "K": [
+    {
+     "player": "Ryan Succop",
+     "team": "Kansas City Chiefs",
+     "position": "K",
+     "score": 144.0
+    }
+   ],
+   "P": [
+    {
+     "player": "Spencer Lanning",
+     "team": "Cleveland Browns",
+     "position": "P",
+     "score": 78.25
+    }
+   ],
+   "KR": [
+    {
+     "player": "Michael Cox",
+     "team": "New York Giants",
+     "position": "RB",
+     "score": 123.2
+    }
+   ]
+  },
+  "second": {
+   "QB": [
+    {
+     "player": "Andy Dalton",
+     "team": "Cincinnati Bengals",
+     "position": "QB",
+     "score": 281.6
+    }
+   ],
+   "RB": [
+    {
+     "player": "DeAngelo Williams",
+     "team": "Carolina Panthers",
+     "position": "RB",
+     "score": 289.0
+    },
+    {
+     "player": "Arian Foster",
+     "team": "Houston Texans",
+     "position": "RB",
+     "score": 288.9
+    }
+   ],
+   "FB": [
+    {
+     "player": "Mike Tolbert",
+     "team": "Carolina Panthers",
+     "position": "FB",
+     "score": 28.3
+    }
+   ],
+   "TE": [
+    {
+     "player": "Jeff Cumberland",
+     "team": "New York Jets",
+     "position": "TE",
+     "score": 109.1
+    }
+   ],
+   "WR": [
+    {
+     "player": "DeSean Jackson",
+     "team": "Philadelphia Eagles",
+     "position": "WR",
+     "score": 188.2
+    },
+    {
+     "player": "Malcom Floyd",
+     "team": "San Diego Chargers",
+     "position": "WR",
+     "score": 181.7
+    }
+   ],
+   "T": [
+    {
+     "player": "Jason Peters",
+     "team": "Philadelphia Eagles",
+     "position": "T",
+     "score": 180.45
+    },
+    {
+     "player": "Andre Smith (CIN)",
+     "team": "Cincinnati Bengals",
+     "position": "T",
+     "score": 176.05
+    }
+   ],
+   "G": [
+    {
+     "player": "Evan Mathis",
+     "team": "Philadelphia Eagles",
+     "position": "G",
+     "score": 180.45
+    },
+    {
+     "player": "Clint Boling",
+     "team": "Cincinnati Bengals",
+     "position": "G",
+     "score": 176.05
+    }
+   ],
+   "C": [
+    {
+     "player": "Rodney Hudson",
+     "team": "Kansas City Chiefs",
+     "position": "C",
+     "score": 195.77
+    }
+   ],
+   "DE": [
+    {
+     "player": "Calais Campbell",
+     "team": "Arizona Cardinals",
+     "position": "DE",
+     "score": 139.5
+    },
+    {
+     "player": "Red Bryant",
+     "team": "Seattle Seahawks",
+     "position": "DE",
+     "score": 139.0
+    }
+   ],
+   "DT": [
+    {
+     "player": "Nick Fairley",
+     "team": "Detroit Lions",
+     "position": "DT",
+     "score": 131.0
+    },
+    {
+     "player": "Linval Joseph",
+     "team": "New York Giants",
+     "position": "NT",
+     "score": 130.0
+    }
+   ],
+   "OLB": [
+    {
+     "player": "Lance Briggs",
+     "team": "Chicago Bears",
+     "position": "OLB",
+     "score": 189.8
+    },
+    {
+     "player": "Justin Durant",
+     "team": "Dallas Cowboys",
+     "position": "OLB",
+     "score": 187.7
+    }
+   ],
+   "ILB": [
+    {
+     "player": "Stephen Tulloch",
+     "team": "Detroit Lions",
+     "position": "MLB",
+     "score": 203.5
+    },
+    {
+     "player": "Jerrell Freeman",
+     "team": "Indianapolis Colts",
+     "position": "ILB",
+     "score": 193.1
+    }
+   ],
+   "CB": [
+    {
+     "player": "Justin Rogers",
+     "team": "Buffalo Bills",
+     "position": "CB",
+     "score": 173.3
+    },
+    {
+     "player": "Cortland Finnegan",
+     "team": "St. Louis Rams",
+     "position": "CB",
+     "score": 161.2
+    }
+   ],
+   "S": [
+    {
+     "player": "Reshad Jones",
+     "team": "Miami Dolphins",
+     "position": "S",
+     "score": 185.0
+    },
+    {
+     "player": "Mark Barron",
+     "team": "Tampa Bay Buccaneers",
+     "position": "SS",
+     "score": 183.9
+    }
+   ],
+   "K": [
+    {
+     "player": "Stephen Hauschka",
+     "team": "Seattle Seahawks",
+     "position": "K",
+     "score": 139.0
+    }
+   ],
+   "P": [
+    {
+     "player": "Jeff Locke",
+     "team": "Minnesota Vikings",
+     "position": "P",
+     "score": 65.5
+    }
+   ],
+   "KR": [
+    {
+     "player": "Jacoby Jones",
+     "team": "Baltimore Ravens",
+     "position": "WR",
+     "score": 115.9
+    }
+   ]
+  }
+ },
+ "pro_bowl": {
+  "selections": {
+   "QB": [
+    {
+     "player": "Philip Rivers",
+     "team": "San Diego Chargers",
+     "position": "QB",
+     "score": 291.76,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Andy Dalton",
+     "team": "Cincinnati Bengals",
+     "position": "QB",
+     "score": 262.94,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Jay Cutler",
+     "team": "Chicago Bears",
+     "position": "QB",
+     "score": 256.3,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Sam Bradford",
+     "team": "St. Louis Rams",
+     "position": "QB",
+     "score": 254.7,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "E.J. Manuel",
+     "team": "Buffalo Bills",
+     "position": "QB",
+     "score": 250.88,
+     "replaced_by": {
+      "player": "Alex Smith (KC)",
+      "team": "Kansas City Chiefs",
+      "position": "QB",
+      "score": 248.06
+     },
+     "reason": "club in Super Bowl XLVIII"
+    },
+    {
+     "player": "Matt Ryan",
+     "team": "Atlanta Falcons",
+     "position": "QB",
+     "score": 249.36,
+     "replaced_by": null,
+     "reason": null
+    }
+   ],
+   "RB": [
+    {
+     "player": "Jamaal Charles",
+     "team": "Kansas City Chiefs",
+     "position": "RB",
+     "score": 296.6,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Arian Foster",
+     "team": "Houston Texans",
+     "position": "RB",
+     "score": 278.8,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Reggie Bush",
+     "team": "Detroit Lions",
+     "position": "RB",
+     "score": 273.1,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Stevan Ridley",
+     "team": "New England Patriots",
+     "position": "RB",
+     "score": 270.9,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Daryl Richardson",
+     "team": "St. Louis Rams",
+     "position": "RB",
+     "score": 270.8,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "DeMarco Murray",
+     "team": "Dallas Cowboys",
+     "position": "RB",
+     "score": 266.3,
+     "replaced_by": null,
+     "reason": null
+    }
+   ],
+   "FB": [
+    {
+     "player": "Zach Line",
+     "team": "Minnesota Vikings",
+     "position": "FB",
+     "score": 29.7,
+     "replaced_by": {
+      "player": "Tony Fiammetta",
+      "team": "Chicago Bears",
+      "position": "FB",
+      "score": 27.9
+     },
+     "reason": "club in Super Bowl XLVIII"
+    },
+    {
+     "player": "Mike Tolbert",
+     "team": "Carolina Panthers",
+     "position": "FB",
+     "score": 27.9,
+     "replaced_by": null,
+     "reason": null
+    }
+   ],
+   "WR": [
+    {
+     "player": "Calvin Johnson",
+     "team": "Detroit Lions",
+     "position": "WR",
+     "score": 187.1,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "DeSean Jackson",
+     "team": "Philadelphia Eagles",
+     "position": "WR",
+     "score": 183.2,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Malcom Floyd",
+     "team": "San Diego Chargers",
+     "position": "WR",
+     "score": 181.7,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Chris Givens",
+     "team": "St. Louis Rams",
+     "position": "WR",
+     "score": 178.2,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Brandon Marshall",
+     "team": "Chicago Bears",
+     "position": "WR",
+     "score": 174.9,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Larry Fitzgerald",
+     "team": "Arizona Cardinals",
+     "position": "WR",
+     "score": 173.2,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Davone Bess",
+     "team": "Cleveland Browns",
+     "position": "WR",
+     "score": 171.3,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Roddy White",
+     "team": "Atlanta Falcons",
+     "position": "WR",
+     "score": 167.8,
+     "replaced_by": null,
+     "reason": null
+    }
+   ],
+   "TE": [
+    {
+     "player": "Jason Witten",
+     "team": "Dallas Cowboys",
+     "position": "TE",
+     "score": 104.3,
+     "replaced_by": {
+      "player": "Ed Dickson",
+      "team": "Baltimore Ravens",
+      "position": "TE",
+      "score": 92.9
+     },
+     "reason": "injury: projected return after January 26"
+    },
+    {
+     "player": "Scott Chandler",
+     "team": "Buffalo Bills",
+     "position": "TE",
+     "score": 101.7,
+     "replaced_by": {
+      "player": "Marcedes Lewis",
+      "team": "Jacksonville Jaguars",
+      "position": "TE",
+      "score": 92.9
+     },
+     "reason": "club in Super Bowl XLVIII"
+    },
+    {
+     "player": "Tony Gonzalez",
+     "team": "Atlanta Falcons",
+     "position": "TE",
+     "score": 96.8,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Jordan Cameron",
+     "team": "Cleveland Browns",
+     "position": "TE",
+     "score": 96.4,
+     "replaced_by": null,
+     "reason": null
+    }
+   ],
+   "T": [
+    {
+     "player": "Branden Albert",
+     "team": "Kansas City Chiefs",
+     "position": "T",
+     "score": 187.93,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Austin Howard",
+     "team": "New York Jets",
+     "position": "T",
+     "score": 182.45,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Cordy Glenn",
+     "team": "Buffalo Bills",
+     "position": "T",
+     "score": 165.09,
+     "replaced_by": {
+      "player": "King Dunlap",
+      "team": "San Diego Chargers",
+      "position": "T",
+      "score": 160.88
+     },
+     "reason": "club in Super Bowl XLVIII"
+    },
+    {
+     "player": "Jason Peters",
+     "team": "Philadelphia Eagles",
+     "position": "T",
+     "score": 164.5,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Lamar Holmes",
+     "team": "Atlanta Falcons",
+     "position": "T",
+     "score": 164.33,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Andre Smith (CIN)",
+     "team": "Cincinnati Bengals",
+     "position": "T",
+     "score": 162.37,
+     "replaced_by": null,
+     "reason": null
+    }
+   ],
+   "G": [
+    {
+     "player": "Jeff Allen",
+     "team": "Kansas City Chiefs",
+     "position": "G",
+     "score": 187.93,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Vladimir Ducasse",
+     "team": "New York Jets",
+     "position": "G",
+     "score": 182.45,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Colin Brown",
+     "team": "Buffalo Bills",
+     "position": "G",
+     "score": 165.09,
+     "replaced_by": {
+      "player": "Chad Rinehart",
+      "team": "San Diego Chargers",
+      "position": "G",
+      "score": 160.88
+     },
+     "reason": "club in Super Bowl XLVIII"
+    },
+    {
+     "player": "Evan Mathis",
+     "team": "Philadelphia Eagles",
+     "position": "G",
+     "score": 164.5,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Garrett Reynolds",
+     "team": "Atlanta Falcons",
+     "position": "G",
+     "score": 164.33,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Clint Boling",
+     "team": "Cincinnati Bengals",
+     "position": "G",
+     "score": 162.37,
+     "replaced_by": null,
+     "reason": null
+    }
+   ],
+   "C": [
+    {
+     "player": "Rodney Hudson",
+     "team": "Kansas City Chiefs",
+     "position": "C",
+     "score": 187.93,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Nick Mangold",
+     "team": "New York Jets",
+     "position": "C",
+     "score": 182.45,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Eric Wood",
+     "team": "Buffalo Bills",
+     "position": "C",
+     "score": 165.09,
+     "replaced_by": {
+      "player": "Peter Konz",
+      "team": "Atlanta Falcons",
+      "position": "C",
+      "score": 164.33
+     },
+     "reason": "club in Super Bowl XLVIII"
+    },
+    {
+     "player": "Jason Kelce",
+     "team": "Philadelphia Eagles",
+     "position": "C",
+     "score": 164.5,
+     "replaced_by": null,
+     "reason": null
+    }
+   ],
+   "DE": [
+    {
+     "player": "Muhammad Wilkerson",
+     "team": "New York Jets",
+     "position": "DE",
+     "score": 191.0,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Red Bryant",
+     "team": "Seattle Seahawks",
+     "position": "DE",
+     "score": 133.0,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Jared Allen",
+     "team": "Minnesota Vikings",
+     "position": "DE",
+     "score": 132.0,
+     "replaced_by": {
+      "player": "Daniel Te'o-Nesheim",
+      "team": "Tampa Bay Buccaneers",
+      "position": "DE",
+      "score": 125.5
+     },
+     "reason": "club in Super Bowl XLVIII"
+    },
+    {
+     "player": "Rob Ninkovich",
+     "team": "New England Patriots",
+     "position": "DE",
+     "score": 131.5,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Calais Campbell",
+     "team": "Arizona Cardinals",
+     "position": "DE",
+     "score": 130.5,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Mike Devito",
+     "team": "Kansas City Chiefs",
+     "position": "DE",
+     "score": 128.5,
+     "replaced_by": null,
+     "reason": null
+    }
+   ],
+   "DT": [
+    {
+     "player": "Ahtyba Rubin",
+     "team": "Cleveland Browns",
+     "position": "DT",
+     "score": 149.5,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Fletcher Cox",
+     "team": "Philadelphia Eagles",
+     "position": "DT",
+     "score": 122.5,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Henry Melton",
+     "team": "Chicago Bears",
+     "position": "DT",
+     "score": 121.5,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Vance Walker",
+     "team": "Oakland Raiders",
+     "position": "DT",
+     "score": 121.0,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Linval Joseph",
+     "team": "New York Giants",
+     "position": "NT",
+     "score": 120.0,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Ryan Pickett",
+     "team": "Green Bay Packers",
+     "position": "NT",
+     "score": 115.5,
+     "replaced_by": null,
+     "reason": null
+    }
+   ],
+   "OLB": [
+    {
+     "player": "David Harris",
+     "team": "New York Jets",
+     "position": "OLB",
+     "score": 198.6,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Stephen Nicholas",
+     "team": "Atlanta Falcons",
+     "position": "OLB",
+     "score": 190.0,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Justin Durant",
+     "team": "Dallas Cowboys",
+     "position": "OLB",
+     "score": 179.2,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Lance Briggs",
+     "team": "Chicago Bears",
+     "position": "OLB",
+     "score": 177.5,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Chad Greenway",
+     "team": "Minnesota Vikings",
+     "position": "OLB",
+     "score": 169.1,
+     "replaced_by": {
+      "player": "Kevin Burnett",
+      "team": "Oakland Raiders",
+      "position": "OLB",
+      "score": 158.5
+     },
+     "reason": "club in Super Bowl XLVIII"
+    },
+    {
+     "player": "Akeem Ayers",
+     "team": "Tennessee Titans",
+     "position": "OLB",
+     "score": 165.7,
+     "replaced_by": null,
+     "reason": null
+    }
+   ],
+   "ILB": [
+    {
+     "player": "Vontaze Burfict",
+     "team": "Cincinnati Bengals",
+     "position": "MLB",
+     "score": 208.5,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Dan Connor",
+     "team": "New York Giants",
+     "position": "MLB",
+     "score": 196.8,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Stephen Tulloch",
+     "team": "Detroit Lions",
+     "position": "MLB",
+     "score": 195.5,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Curtis Lofton",
+     "team": "New Orleans Saints",
+     "position": "ILB",
+     "score": 181.5,
+     "replaced_by": null,
+     "reason": null
+    }
+   ],
+   "CB": [
+    {
+     "player": "Buster Skrine",
+     "team": "Cleveland Browns",
+     "position": "CB",
+     "score": 181.9,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Morris Claiborne",
+     "team": "Dallas Cowboys",
+     "position": "CB",
+     "score": 167.8,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Justin Rogers",
+     "team": "Buffalo Bills",
+     "position": "CB",
+     "score": 161.3,
+     "replaced_by": {
+      "player": "Patrick Peterson",
+      "team": "Arizona Cardinals",
+      "position": "CB",
+      "score": 132.9
+     },
+     "reason": "club in Super Bowl XLVIII"
+    },
+    {
+     "player": "Cortland Finnegan",
+     "team": "St. Louis Rams",
+     "position": "CB",
+     "score": 153.7,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Johnathan Joseph",
+     "team": "Houston Texans",
+     "position": "CB",
+     "score": 142.3,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Charles Tillman",
+     "team": "Chicago Bears",
+     "position": "CB",
+     "score": 142.1,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Jason McCourty",
+     "team": "Tennessee Titans",
+     "position": "CB",
+     "score": 136.1,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Sean Smith",
+     "team": "Kansas City Chiefs",
+     "position": "CB",
+     "score": 134.8,
+     "replaced_by": null,
+     "reason": null
+    }
+   ],
+   "S": [
+    {
+     "player": "Dawan Landry",
+     "team": "New York Jets",
+     "position": "S",
+     "score": 192.6,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Antoine Bethea",
+     "team": "Indianapolis Colts",
+     "position": "SS",
+     "score": 174.1,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Antrel Rolle",
+     "team": "New York Giants",
+     "position": "SS",
+     "score": 169.5,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Reshad Jones",
+     "team": "Miami Dolphins",
+     "position": "S",
+     "score": 167.1,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Bernard Pollard",
+     "team": "Tennessee Titans",
+     "position": "SS",
+     "score": 166.8,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Eric Berry",
+     "team": "Kansas City Chiefs",
+     "position": "SS",
+     "score": 163.2,
+     "replaced_by": null,
+     "reason": null
+    }
+   ],
+   "K": [
+    {
+     "player": "Ryan Succop",
+     "team": "Kansas City Chiefs",
+     "position": "K",
+     "score": 136.0,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Stephen Hauschka",
+     "team": "Seattle Seahawks",
+     "position": "K",
+     "score": 131.0,
+     "replaced_by": null,
+     "reason": null
+    }
+   ],
+   "P": [
+    {
+     "player": "Jeff Locke",
+     "team": "Minnesota Vikings",
+     "position": "P",
+     "score": 67.5,
+     "replaced_by": {
+      "player": "Tim Masthay",
+      "team": "Green Bay Packers",
+      "position": "P",
+      "score": 51.25
+     },
+     "reason": "club in Super Bowl XLVIII"
+    },
+    {
+     "player": "Spencer Lanning",
+     "team": "Cleveland Browns",
+     "position": "P",
+     "score": 60.75,
+     "replaced_by": null,
+     "reason": null
+    }
+   ],
+   "RS": [
+    {
+     "player": "Jacoby Jones",
+     "team": "Baltimore Ravens",
+     "position": "WR",
+     "score": 144.5,
+     "replaced_by": null,
+     "reason": null
+    },
+    {
+     "player": "Eddie Royal",
+     "team": "San Diego Chargers",
+     "position": "WR",
+     "score": 140.5,
+     "replaced_by": null,
+     "reason": null
+    }
+   ]
+  },
+  "alternates": {
+   "QB": [
+    {
+     "player": "Alex Smith (KC)",
+     "team": "Kansas City Chiefs",
+     "position": "QB",
+     "score": 248.06
+    },
+    {
+     "player": "Ben Roethlisberger",
+     "team": "Pittsburgh Steelers",
+     "position": "QB",
+     "score": 246.26
+    },
+    {
+     "player": "Josh Freeman",
+     "team": "Tampa Bay Buccaneers",
+     "position": "QB",
+     "score": 243.0
+    }
+   ],
+   "RB": [
+    {
+     "player": "Isaac Redman",
+     "team": "Pittsburgh Steelers",
+     "position": "RB",
+     "score": 264.2
+    },
+    {
+     "player": "Doug Martin",
+     "team": "Tampa Bay Buccaneers",
+     "position": "RB",
+     "score": 259.8
+    },
+    {
+     "player": "Ronnie Hillman",
+     "team": "Denver Broncos",
+     "position": "RB",
+     "score": 258.1
+    }
+   ],
+   "FB": [
+    {
+     "player": "Tony Fiammetta",
+     "team": "Chicago Bears",
+     "position": "FB",
+     "score": 27.9
+    },
+    {
+     "player": "Darrel Young",
+     "team": "Washington Redskins",
+     "position": "FB",
+     "score": 26.0
+    },
+    {
+     "player": "Tommy Bohanon",
+     "team": "New York Jets",
+     "position": "FB",
+     "score": 24.6
+    }
+   ],
+   "WR": [
+    {
+     "player": "Randall Cobb",
+     "team": "Green Bay Packers",
+     "position": "WR",
+     "score": 163.0
+    },
+    {
+     "player": "Steve Johnson",
+     "team": "Buffalo Bills",
+     "position": "WR",
+     "score": 160.3
+    },
+    {
+     "player": "A.J. Green",
+     "team": "Cincinnati Bengals",
+     "position": "WR",
+     "score": 158.1
+    }
+   ],
+   "TE": [
+    {
+     "player": "Julius Thomas",
+     "team": "Denver Broncos",
+     "position": "TE",
+     "score": 96.1
+    },
+    {
+     "player": "Ed Dickson",
+     "team": "Baltimore Ravens",
+     "position": "TE",
+     "score": 92.9
+    },
+    {
+     "player": "Marcedes Lewis",
+     "team": "Jacksonville Jaguars",
+     "position": "TE",
+     "score": 92.9
+    }
+   ],
+   "T": [
+    {
+     "player": "King Dunlap",
+     "team": "San Diego Chargers",
+     "position": "T",
+     "score": 160.88
+    },
+    {
+     "player": "Jason Fox",
+     "team": "Detroit Lions",
+     "position": "T",
+     "score": 157.65
+    },
+    {
+     "player": "Demar Dotson",
+     "team": "Tampa Bay Buccaneers",
+     "position": "T",
+     "score": 156.8
+    }
+   ],
+   "G": [
+    {
+     "player": "Chad Rinehart",
+     "team": "San Diego Chargers",
+     "position": "G",
+     "score": 160.88
+    },
+    {
+     "player": "Rob Sims",
+     "team": "Detroit Lions",
+     "position": "G",
+     "score": 157.65
+    },
+    {
+     "player": "Davin Joseph",
+     "team": "Tampa Bay Buccaneers",
+     "position": "G",
+     "score": 156.8
+    }
+   ],
+   "C": [
+    {
+     "player": "Peter Konz",
+     "team": "Atlanta Falcons",
+     "position": "C",
+     "score": 164.33
+    },
+    {
+     "player": "Kyle Cook",
+     "team": "Cincinnati Bengals",
+     "position": "C",
+     "score": 162.37
+    },
+    {
+     "player": "Nick Hardwick",
+     "team": "San Diego Chargers",
+     "position": "C",
+     "score": 160.88
+    }
+   ],
+   "DE": [
+    {
+     "player": "Daniel Te'o-Nesheim",
+     "team": "Tampa Bay Buccaneers",
+     "position": "DE",
+     "score": 125.5
+    },
+    {
+     "player": "Osi Umenyiora",
+     "team": "Atlanta Falcons",
+     "position": "DE",
+     "score": 118.5
+    },
+    {
+     "player": "Cameron Jordan",
+     "team": "New Orleans Saints",
+     "position": "DE",
+     "score": 117.0
+    }
+   ],
+   "DT": [
+    {
+     "player": "Geno Atkins",
+     "team": "Cincinnati Bengals",
+     "position": "DT",
+     "score": 114.5
+    },
+    {
+     "player": "Sen'Derrick Marks",
+     "team": "Jacksonville Jaguars",
+     "position": "DT",
+     "score": 113.5
+    },
+    {
+     "player": "Nick Fairley",
+     "team": "Detroit Lions",
+     "position": "DT",
+     "score": 110.5
+    }
+   ],
+   "OLB": [
+    {
+     "player": "Nigel Bradham",
+     "team": "Buffalo Bills",
+     "position": "OLB",
+     "score": 160.0
+    },
+    {
+     "player": "Kevin Burnett",
+     "team": "Oakland Raiders",
+     "position": "OLB",
+     "score": 158.5
+    },
+    {
+     "player": "Lawrence Timmons",
+     "team": "Pittsburgh Steelers",
+     "position": "OLB",
+     "score": 138.5
+    }
+   ],
+   "ILB": [
+    {
+     "player": "Luke Kuechly",
+     "team": "Carolina Panthers",
+     "position": "MLB",
+     "score": 180.6
+    },
+    {
+     "player": "Jerrell Freeman",
+     "team": "Indianapolis Colts",
+     "position": "ILB",
+     "score": 178.1
+    },
+    {
+     "player": "Philip Wheeler",
+     "team": "Miami Dolphins",
+     "position": "LB",
+     "score": 177.6
+    }
+   ],
+   "CB": [
+    {
+     "player": "Patrick Peterson",
+     "team": "Arizona Cardinals",
+     "position": "CB",
+     "score": 132.9
+    },
+    {
+     "player": "Brandon Carr",
+     "team": "Dallas Cowboys",
+     "position": "CB",
+     "score": 131.0
+    },
+    {
+     "player": "Terence Newman",
+     "team": "Cincinnati Bengals",
+     "position": "CB",
+     "score": 125.2
+    }
+   ],
+   "S": [
+    {
+     "player": "Mark Barron",
+     "team": "Tampa Bay Buccaneers",
+     "position": "SS",
+     "score": 163.0
+    },
+    {
+     "player": "Rahim Moore",
+     "team": "Denver Broncos",
+     "position": "FS",
+     "score": 159.0
+    },
+    {
+     "player": "Kam Chancellor",
+     "team": "Seattle Seahawks",
+     "position": "SS",
+     "score": 157.6
+    }
+   ],
+   "K": [
+    {
+     "player": "Josh Brown",
+     "team": "New York Giants",
+     "position": "K",
+     "score": 126.0
+    },
+    {
+     "player": "Nick Folk",
+     "team": "New York Jets",
+     "position": "K",
+     "score": 125.0
+    },
+    {
+     "player": "Mason Crosby",
+     "team": "Green Bay Packers",
+     "position": "K",
+     "score": 124.0
+    }
+   ],
+   "P": [
+    {
+     "player": "Tim Masthay",
+     "team": "Green Bay Packers",
+     "position": "P",
+     "score": 51.25
+    },
+    {
+     "player": "Jon Ryan",
+     "team": "Seattle Seahawks",
+     "position": "P",
+     "score": 50.0
+    },
+    {
+     "player": "Mike Scifres",
+     "team": "San Diego Chargers",
+     "position": "P",
+     "score": 48.5
+    }
+   ],
+   "RS": [
+    {
+     "player": "LaMichael James",
+     "team": "San Francisco 49ers",
+     "position": "RB",
+     "score": 138.8
+    },
+    {
+     "player": "Keshawn Martin",
+     "team": "Houston Texans",
+     "position": "WR",
+     "score": 138.1
+    },
+    {
+     "player": "Micheal Spurlock",
+     "team": "Detroit Lions",
+     "position": "WR",
+     "score": 131.3
+    }
+   ]
+  },
+  "captains": {
+   "offense": [
+    {
+     "player": "Jamaal Charles",
+     "team": "Kansas City Chiefs",
+     "score": 296.6
+    },
+    {
+     "player": "Philip Rivers",
+     "team": "San Diego Chargers",
+     "score": 291.76
+    }
+   ],
+   "defense": [
+    {
+     "player": "Vontaze Burfict",
+     "team": "Cincinnati Bengals",
+     "score": 208.5
+    },
+    {
+     "player": "David Harris",
+     "team": "New York Jets",
+     "score": 198.6
+    }
+   ]
+  },
+  "super_bowl_clubs": [
+   "Buffalo Bills",
+   "Minnesota Vikings"
+  ],
+  "coaches": {
+   "AFC": {
+    "club": "New York Jets",
+    "seed": 1,
+    "head_coach": "Rex Ryan"
+   },
+   "NFC": {
+    "club": "St. Louis Rams",
+    "seed": 2,
+    "head_coach": "Jeff Fisher"
+   }
+  }
+ }
+}

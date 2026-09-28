@@ -2004,3 +2004,41 @@ This archive was appended late. It was written at this February 2, 2014 checkpoi
 **Closed results stand.** No 2013 receipt is rerun.
 
 **Commit closed - Canonical update - February 2, 2014 - Kernel 2014.2 adopted (late-game recalibration) - canonical through February 2, 2014**
+
+## Entry 71: 2013 season honours drawn (retroactive)
+
+**Effective canonical state:** February 2, 2014 (no clock advance)
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - February 2, 2014 - 2013 season honours drawn (retroactive)`
+**Preceding global package checkpoint:** `Canonical update - February 2, 2014 - Kernel 2014.2 adopted (late-game recalibration)`
+
+**Decision.** The user asked for a method and a draw for the 2013 Pro Bowl, AP All-Pro teams and AP season awards, which Entry 67 recorded as chronology gaps. That request authorizes this retroactive draw. It changes no game result, statistic, standing or roster fact.
+
+**Method.** Fixed in `career/2013/awards/season_honours_method.json` and committed before the draw.
+- **Structure:** slot counts and voting from `library/2013_season_honours_selection_structure.md` (new, two-pass sourced, no honourees).
+- **Evidence:** regular-season receipts only; Weeks 1-17 for the AP ballots, Weeks 1-16 for the Pro Bowl (its vote closed December 26). Eligibility and line starts come from `season_honours_evidence.json`: pre-2013 public facts (experience, 2011 and 2012 games, 2012 records, opening-day head coaches) and the frozen weekly TeamInputs, each checked against its receipts.
+- **Selection:** All-Pro and Pro Bowl slots are formula ranks per position; each AP award is drawn 6:3:1 from a three-name shortlist with the private service's entropy, as the weekly awards are.
+- **Linemen:** the receipts hold no individual line evidence, so a starter earns his club's line output and a club places at most one lineman per position. The one-per-club rule was added after a dry run showed one club's five starters tied across all three line positions; it applies to every club and was fixed before the draw.
+- **Author's view:** the method was written after the season closed, so the standings were visible to its author. Every rule applies to every club alike.
+
+**AP awards.**
+- MVP: Jamaal Charles, Kansas City.
+- Offensive Player of the Year: Daryl Richardson, St. Louis.
+- Defensive Player of the Year: David Harris, New York Jets.
+- Offensive Rookie of the Year: Geno Smith, New York Jets.
+- Defensive Rookie of the Year: Kiko Alonso, Buffalo.
+- Comeback Player of the Year: **Maurice Jones-Drew, Jacksonville**.
+- Coach of the Year: Rex Ryan, New York Jets. Alex Stone led the shortlist on improvement (plus 8 wins); the panel drew the third name.
+
+**All-Pro and Pro Bowl.** Full tables in `career/2013/awards/season_honours.md`.
+- No Jaguar made either All-Pro team.
+- Marcedes Lewis plays in the Pro Bowl, replacing Buffalo's Scott Chandler (Super Bowl club). Sen'Derrick Marks is the first alternate at defensive tackle.
+- The Pro Bowl coaches are the Jets' and Rams' staffs (highest-seeded Divisional losers); Stone does not coach it.
+
+**Not generated.**
+- The two special teamer slots: no coverage-unit evidence.
+- The coach-appointed need players.
+- The Pro Bowl draft and game.
+- The Super Bowl MVP.
+
+**Commit closed - Canonical update - February 2, 2014 - 2013 season honours drawn (retroactive) - canonical through February 2, 2014**
