@@ -118,3 +118,28 @@ class PackageTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class AvailabilityNoteTests(unittest.TestCase):
+    """Entry 57: the Week 14 generation-1 void."""
+
+    def test_explained_clear_note_is_available(self):
+        from datetime import date
+        from runtime.week_inputs import roster_available
+        day = date(2013, 12, 5)
+        self.assertTrue(roster_available("No communicated restriction (Week 11 injury cleared November 26)", day))
+        self.assertFalse(roster_available("Out, head/neck, independent medical hold (Week 13); projected return April 5, 2014", day))
+        self.assertFalse(roster_available("Out, medical hold", day))
+
+    def test_unrecognized_note_fails_the_build(self):
+        from datetime import date
+        from runtime.week_inputs import roster_available
+        with self.assertRaises(ValueError):
+            roster_available("Questionable", date(2013, 12, 5))
+
+    def test_generation_suffix(self):
+        from runtime.week_inputs import event_id
+        game = {"week": 14, "away": "Houston Texans", "home": "Jacksonville Jaguars"}
+        self.assertEqual(event_id(game, 1), "2013-week14-houston-texans-at-jacksonville-jaguars")
+        self.assertEqual(event_id(game, 2), "2013-week14-houston-texans-at-jacksonville-jaguars-g2")
+        self.assertEqual(event_id(game), event_id(game, 2))
