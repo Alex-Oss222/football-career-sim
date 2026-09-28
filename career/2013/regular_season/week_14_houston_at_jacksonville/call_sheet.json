@@ -1,0 +1,115 @@
+{
+ "schema_version": 1,
+ "team": "Jacksonville Jaguars",
+ "event": "2013 Regular Season Week 14, Houston at Jacksonville",
+ "status": "EX_ANTE_CALL_SHEET_FROZEN",
+ "provenance": "Stone's Week 14 game plan, runner-ready call sheet (section 56), approved by the user as APPROVED_WEEK_14_PLAN and frozen verbatim before any Week 14 draw under kernel 2013.10. Plan provenance as supplied: Stone Week 14 Thursday-night rematch plan after Jacksonville's canonical 22-19 overtime Week 13 win at Cleveland and Houston's canonical 38-6 Week 12 win over Jacksonville. The short-week plan installs no new concept family. It uses the closed Week 12 rematch notes: keep the productive run alive, reduce the red-zone/fringe menu, protect against Watt and second-level pressure, redistribute the passing game, change defensive help against Andre Johnson, and improve Foster fits. Russell Allen replaces the injured Paul Posluszny in the base defense while Daryl Smith retains communication. Kelce's Week 13 injury cleared at its projected return (December 3) under the rule every club gets, so the cleared branch applies. Every family resolves in the call-family map from the active 2013 book.",
+ "offensive_call_sheet": [
+  {
+   "name": "12 Wing Right, Split L",
+   "family": "Split Zone",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Wing Right"
+  },
+  {
+   "name": "12 Trey Right, Stick, H Chip-Release",
+   "family": "Stick",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey Right"
+  },
+  {
+   "name": "12 Ace Right, Duo R",
+   "family": "Duo",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace Right"
+  },
+  {
+   "name": "12 Doubles, Texas",
+   "family": "Texas",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Doubles"
+  },
+  {
+   "name": "21 Pro Left, Counter R",
+   "family": "Counter",
+   "type": "run",
+   "personnel": "21",
+   "formation": "21 Pro Left"
+  },
+  {
+   "name": "11 Bunch Right, Return, Mesh",
+   "family": "Mesh",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Bunch Right"
+  },
+  {
+   "name": "6OL Heavy Right, Power R",
+   "family": "Power",
+   "type": "run",
+   "personnel": "6OL",
+   "formation": "6OL Heavy Right"
+  },
+  {
+   "name": "6OL Heavy Right, Counter L",
+   "family": "Counter",
+   "type": "run",
+   "personnel": "6OL",
+   "formation": "6OL Heavy Right"
+  },
+  {
+   "name": "6OL Wing Left, TE Delay",
+   "family": "TE Delay",
+   "type": "pass",
+   "personnel": "6OL",
+   "formation": "6OL Wing Left"
+  },
+  {
+   "name": "11 Trips Right, Inside L, Access Blackmon Smoke",
+   "family": "Inside + Smoke",
+   "type": "run",
+   "personnel": "11",
+   "formation": "11 Trips Right"
+  },
+  {
+   "name": "22 Heavy Right, Power R",
+   "family": "Power",
+   "type": "run",
+   "personnel": "22",
+   "formation": "22 Heavy Right"
+  },
+  {
+   "name": "22 Heavy Right, Snag",
+   "family": "Snag",
+   "type": "pass",
+   "personnel": "22",
+   "formation": "22 Heavy Right"
+  },
+  {
+   "name": "12 Trey Right, Sprint Flood R",
+   "family": "Sprint Flood",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey Right"
+  },
+  {
+   "name": "12 Ace Right, Power Pass, Post-Cross, Max",
+   "family": "Power Pass",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Ace Right",
+   "protection": "Max"
+  },
+  {
+   "name": "12 Doubles, Spacing",
+   "family": "Spacing",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Doubles"
+  }
+ ]
+}
