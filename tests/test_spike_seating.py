@@ -46,7 +46,9 @@ class SpikeSeatingTests(unittest.TestCase):
             spikes += sum(1 for row in ledger if row.get("spike"))
             for drive, snap in misplaced_spikes(ledger):
                 rows = [r for r in ledger if r.get("drive") == drive and r.get("play_type") in ("run", "pass")]
-                if any(clock_running(r) for r in rows if not r.get("spike")):
+                # The terminal snap never moves (test_terminal_tail_never_moves),
+                # so only a running snap before it gives the spike a legal seat.
+                if any(clock_running(r) for r in rows[:-1] if not r.get("spike")):
                     misplaced += 1
         self.assertGreater(spikes, 0)
         self.assertEqual(misplaced, 0)

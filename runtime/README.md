@@ -262,3 +262,41 @@ Tests: `tests/test_timeouts.py`.
   - First-half kneel drives outside their start zone can no longer occur.
 
 **Versions and cohorts.** `KERNEL_VERSION` and the service `KERNEL` are both `2014.1`. `KNOWN_DETECTIONS["2014.1"]` carries the registry over. Closed 2013 receipts keep their defects and are never rerun.
+
+## Kernel 2014.2 late-game recalibration
+
+Kernel 2014.2 corrects the late-cell masking bias recorded at the 2014.1 acceptance. The user directed it before any 2014 game.
+
+**The bias.** A late category's weight came from its score-and-time cell, but the tuple had to be feasible at the current spot and clock.
+- **What went wrong:** when none was feasible, the category was masked and its weight went pro rata to the rest. Touchdowns, which are always feasible, gained most.
+- **Size:** on the 250-game sample an average of 1.7 categories were masked per late draw. The expected late touchdown share went from 0.166 before masking to 0.209 after (2012: 0.159).
+- **Causes:** spot masking dominated for turnovers, downs and clock drives, and clock masking for field goals.
+
+**The correction (`runtime/field_position.py`).**
+- **Start-zone weights (`ZONE_CONDITIONING`, `zone_likelihood`).** In a conditioned draw (first-half final, late, overtime), each category's weight is multiplied by P(start zone | category) / P(start zone), with add-one smoothing. The estimate comes from a larger reference pool: the need's union of late cells, every first-half final, or the overtime pool. This is Bayes on the cell mix, P(category | cell, zone) up to a constant, assuming the start zone depends on the category and need but not the time bucket.
+- **Need-union rungs (`NEED_UNION_RUNGS`).** A late cell with no feasible drive of a category takes one from the same need's other time buckets: same bin, same zone, then any start feasible at the spot (end in the field, net inside the current start bin's 2012 envelope). The same clock filters apply. A category is masked only when none of these supplies a drive.
+
+**Evidence (identical seeds, 2014.1 against 2014.2).**
+- **Masking:** masked categories per late draw fell from 1.47 (zone weights alone) to 0.74.
+- **Expected late touchdown share:** 0.199 under 2014.1 and 0.170 under 2014.2 on 750 fresh games (2012: 0.159). Realized was 0.2016 and 0.1770, consistent with the expected values.
+- **Drive share: touchdown on the same 750 games:** 0.2027 under 2014.1 and 0.1991 under 2014.2 (centre 0.1945).
+- **Expected late mix by need against 2012 (250-game sample):**
+
+| Need | Touchdown | Punt |
+|---|---|---|
+| lead 1-8 | 0.089 (2012: 0.078) | 0.435 (0.436) |
+| trail 4-8 | 0.294 (0.255) | 0.173 (0.179) |
+| trail 9+ | 0.276 (0.246) | 0.129 (0.135) |
+
+**Acceptance (250-game synthetic sample).** Zero coherence violations. Every graded row is inside its band, with these known detections:
+- **Carried from 2013.7:** the two clock rows, drive-ending punts per team game and FGM per team game.
+- **Two rows registered for 2014.2:**
+  - FGA per team game: 2.178 against 1.984 +/- 0.189. It rises with FGM from the first-half half-final redirect, and late field goals are no longer masked; their expected share by need tracks 2012.
+  - Punt share of possessions ending in Q4's last 5:00 or OT, offence trailing 1-8: 0.043 against 0.119 +/- 0.067. About 70 events; 0.087 on the 750-game sample, inside its tolerance there.
+- **Who registered them:** Claude, on September 28, 2026, while carrying out the user's recalibration request. They are reversible, stay graded and labelled, and are tolerated only within twice their tolerance.
+
+**Still open (not late-game).** On 750 games the field-goal-attempt share (0.179 against 0.170) and the turnover share (0.117 against 0.125) sit outside their narrower 750-game tolerances under both 2014.1 and 2014.2. Both trace to the first-half redirect and the neutral pools.
+
+**Snap detail.** A drive whose only running-clock snap is its terminal snap keeps its spike after the first snap (the 2013.9 rule). `tests/test_spike_seating.py` now checks only drives with a running snap before the terminal tail. Borrowed late drives produce the case about twice in 250 games.
+
+**Versions and cohorts.** `KERNEL_VERSION` and the service `KERNEL` are both `2014.2`. `KNOWN_DETECTIONS["2014.2"]` adds the two rows above. No closed 2013 receipt is rerun.

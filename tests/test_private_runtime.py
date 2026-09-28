@@ -324,7 +324,7 @@ class PrivateRuntimeTests(unittest.TestCase):
 class KernelVersionTests(unittest.TestCase):
     def test_client_and_service_kernel_agree(self):
         from runtime import private_service
-        self.assertEqual(KERNEL_VERSION, "2014.1")
+        self.assertEqual(KERNEL_VERSION, "2014.2")
         self.assertEqual(private_service.KERNEL, KERNEL_VERSION)
 
 

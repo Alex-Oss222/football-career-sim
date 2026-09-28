@@ -1977,3 +1977,30 @@ This archive was appended late. It was written at this February 2, 2014 checkpoi
 **Closed results stand.** No 2013 receipt is rerun. The Week 17, Divisional and Super Bowl results keep their recorded limitations.
 
 **Commit closed - Canonical update - February 2, 2014 - Kernel 2014.1 adopted (timeouts) - canonical through February 2, 2014**
+
+## Entry 70: Kernel 2014.2 adopted (late-game recalibration)
+
+**Effective canonical state:** February 2, 2014 (no clock advance)
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - February 2, 2014 - Kernel 2014.2 adopted (late-game recalibration)`
+**Preceding global package checkpoint:** `Canonical update - February 2, 2014 - Kernel 2014.1 adopted (timeouts)`
+
+**Decision.** The user's instruction was "do the late-game recalibration before 2014". Kernel 2014.2 replaces 2014.1 for every event from here on. No game has been drawn under 2014.1 or 2014.2.
+
+**Defect.** Recorded at the 2014.1 acceptance (Entry 69): late categories with no drive feasible at the spot and clock were masked, and their weight went mostly to touchdowns. The late touchdown rate ran well above 2012 (expected 0.199 against 0.159), and trailing teams punted too rarely.
+
+**Fix.** Documented in `runtime/README.md`; tests in `tests/test_timeouts.py`.
+- **Start-zone weights:** late, first-half-final and overtime category weights are conditioned on the drive's start zone (Bayes, estimated on the need's larger pool).
+- **Borrowing before masking:** a late cell with no feasible drive of a category borrows one from the same need's other time buckets under the same clock filters.
+
+**Evidence.**
+- **750 fresh games:** the expected late touchdown share is 0.170 (2014.1: 0.199; 2012: 0.159), and drive share: touchdown is 0.1991 (2014.1: 0.2027; centre 0.1945).
+- **Expected late mix by score situation:** tracks 2012, with trailing punts at 0.173 and 0.129 against 0.179 and 0.135.
+
+**Acceptance.** Zero coherence violations. Two rows were registered as known detections: field-goal attempts per team game (the first-half redirect) and the small late trailing punt row (0.087 inside tolerance on 750 games).
+- **Who registered them:** Claude, not the user, while carrying out the request. They are reversible, graded and labelled, and tolerated only within twice their tolerance.
+- **Still open, not late-game:** the field-goal and turnover shares of drives. Both trace to the first-half redirect.
+
+**Closed results stand.** No 2013 receipt is rerun.
+
+**Commit closed - Canonical update - February 2, 2014 - Kernel 2014.2 adopted (late-game recalibration) - canonical through February 2, 2014**

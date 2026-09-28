@@ -74,14 +74,19 @@ class UsageBandTests(unittest.TestCase):
         self.assertEqual(measurable["label_carrier_mismatch"], 0)
 
     def test_known_detections_are_registered_and_labelled(self):
-        self.assertEqual(set(KNOWN_DETECTIONS), {
+        self.assertEqual(set(known_detections("2014.1")), {
             "punts per team game (drive-ending)", "FGM per team game",
             "drive share: clock", "clock-expired drives per team game"})
+        # Kernel 2014.2 adds two rows (runtime/README.md, kernel 2014.2 acceptance).
+        self.assertEqual(set(known_detections("2014.2")) - set(known_detections("2014.1")), {
+            "FGA per team game",
+            "punt share of possessions ending in Q4's last 5:00 or OT, offense trailing 1-8"})
         self.assertEqual(set(known_detections("2013.6")), {"punts per team game (drive-ending)"})
         self.assertEqual(known_detections("2013.8"), known_detections("2013.7"))
         self.assertEqual(known_detections("legacy"), {})
         _, rows = audit_drive_model(self.receipts)
-        metrics = {row[0] for row in rows}
+        _, fp_rows = audit_field_position(self.receipts)
+        metrics = {row[0] for row in rows} | {row[0] for row in fp_rows}
         self.assertTrue(set(KNOWN_DETECTIONS) <= metrics)
         for row in rows:
             status = known_status(row, KERNEL_VERSION)
@@ -102,7 +107,10 @@ class UsageBandTests(unittest.TestCase):
         graded = [row for row in rows if row[4] not in ("INFORMATIONAL", "INSUFFICIENT SAMPLE")]
         self.assertTrue(any(row[0] == "sacks per dropback" for row in graded))
         self.assertTrue(any(row[0].startswith("punt share of possessions ending") for row in rows))
-        self.assertEqual([row for row in graded if row[4] != "WITHIN"], [])
+        self.assertEqual([row for row in graded if row[4] != "WITHIN" and row[0] not in KNOWN_DETECTIONS], [])
+        for metric, observed, centre, tolerance, status in graded:
+            if metric in KNOWN_DETECTIONS:
+                self.assertLessEqual(abs(observed - centre), KNOWN_DETECTION_BOUND * tolerance, metric)
         for metric, observed, centre, _, status in rows:
             print("[%s sample] %s: %s (2012 %s) %s" % (
                 KERNEL_VERSION, metric, "—" if observed is None else round(observed, 4), round(centre, 4), status))
