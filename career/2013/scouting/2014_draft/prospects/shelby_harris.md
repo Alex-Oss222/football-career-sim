@@ -23,3 +23,7 @@ First front position, run fit, rush-lane discipline, reducing inside on passing 
 **First-entry question:** One first-practice alignment: **OPEN**, and not to be written until status is verified. No evaluator disagreement has been recorded.
 
 No tier, round movement or selection recommendation. Caldwell retains the board. Add later dated entries using [../template.md](../template.md).
+
+### December 13, 2013: Phase IV first coach read
+
+No coach football conclusion, by directive: his status is still unresolved. The scouting department continues to look for a dated source on his eligibility and fall-2013 status. No tier, round movement or recommendation. Caldwell retains the board.

@@ -23,3 +23,7 @@ Anchor, hands, combination blocks, Power and Counter pulls, interior games, pock
 **First-entry question:** Can the anchor and technique support an initial NFL guard job: **OPEN**. Tape may be studied; eligibility is not assumed.
 
 No tier, round movement or selection recommendation. Caldwell retains the board. Add later dated entries using [../template.md](../template.md).
+
+### December 13, 2013: Phase IV first coach read
+
+Not entered as a conclusion. He remains outside the 2014 pool until a dated declaration, and no dated tape observation is recorded. Question stays OPEN. No tier, round movement or recommendation. Caldwell retains the board.

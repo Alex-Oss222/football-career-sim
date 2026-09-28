@@ -23,3 +23,7 @@ Outside or nickel first, press, off-man recognition, recovery, ball tracking, ta
 **First-entry question:** Outside or nickel first: **OPEN**. Technical strength, technical concern, tackling and teams-pathway evidence: **INSUFFICIENT EVIDENCE** (no dated tape observation recorded). Jacksonville's injuries at corner do not enter the grade.
 
 No tier, round movement or selection recommendation. Caldwell retains the board. Add later dated entries using [../template.md](../template.md).
+
+### December 13, 2013: Phase IV first coach read
+
+Not entered as a conclusion. No dated tape observation is recorded, so every field stays INSUFFICIENT EVIDENCE. No tier, round movement or recommendation. Caldwell retains the board.

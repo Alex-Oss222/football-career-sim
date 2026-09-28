@@ -2497,5 +2497,152 @@
     "winner_index": 0
    }
   }
+ },
+ "week-15": {
+  "kind": "week",
+  "key": "15",
+  "label": "Week 15",
+  "order": 15,
+  "note": "",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2013-award-week15-afc-offense-v1",
+    "packet_sha256": "3bced7e5d4511a48fc1f5745359a8e3d2466f51d31b5574f2cee5851b1c95c3a",
+    "result_ref": "c46a7db33ae23123b906b3a043f57525225b5f1d95bb7577dbae06ced944a2e5",
+    "shortlist": [
+     {
+      "player": "C.J. Spiller",
+      "team": "Buffalo Bills",
+      "score": 33.4
+     },
+     {
+      "player": "Chris Ivory",
+      "team": "New York Jets",
+      "score": 27.3
+     },
+     {
+      "player": "Peyton Manning",
+      "team": "Denver Broncos",
+      "score": 27.12
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-defense": {
+    "event_id": "2013-award-week15-afc-defense-v1",
+    "packet_sha256": "aabaee86dbce320df2d51a7b151ceb622cd334c04cac800a90567d493b4cd7b6",
+    "result_ref": "d883a613e27f1035aea091464431ccfa55c25072914114dcb4ce3f0d7b116ce4",
+    "shortlist": [
+     {
+      "player": "Jerrell Freeman",
+      "team": "Indianapolis Colts",
+      "score": 29.5
+     },
+     {
+      "player": "Muhammad Wilkerson",
+      "team": "New York Jets",
+      "score": 29.0
+     },
+     {
+      "player": "Brooks Reed",
+      "team": "Houston Texans",
+      "score": 20.0
+     }
+    ],
+    "winner_index": 1
+   },
+   "AFC-special_teams": {
+    "event_id": "2013-award-week15-afc-special_teams-v1",
+    "packet_sha256": "ef9f148a70ecf1b4210dfba8aee8481669f053cfb99908e7b5dedb560f0bd070",
+    "result_ref": "0f8f353b4563afccee5a424ca278cc46507aa28876469ab835c67b94a61678c1",
+    "shortlist": [
+     {
+      "player": "Matt Prater",
+      "team": "Denver Broncos",
+      "score": 15.0
+     },
+     {
+      "player": "Dustin Colquitt",
+      "team": "Kansas City Chiefs",
+      "score": 11.75
+     },
+     {
+      "player": "Shane Lechler",
+      "team": "Houston Texans",
+      "score": 11.25
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-offense": {
+    "event_id": "2013-award-week15-nfc-offense-v1",
+    "packet_sha256": "b262582b407e0ea7cc0e1bdb48865fce816ead998ad3f2e8ebe8c251dda5ef72",
+    "result_ref": "20fa63a05e4d0b5f09fbfad0cdbdf650f84acc1ab5539299757c5c80c0bbd6b3",
+    "shortlist": [
+     {
+      "player": "Doug Martin",
+      "team": "Tampa Bay Buccaneers",
+      "score": 35.5
+     },
+     {
+      "player": "Jay Cutler",
+      "team": "Chicago Bears",
+      "score": 31.7
+     },
+     {
+      "player": "Reggie Bush",
+      "team": "Detroit Lions",
+      "score": 28.8
+     }
+    ],
+    "winner_index": 2
+   },
+   "NFC-defense": {
+    "event_id": "2013-award-week15-nfc-defense-v1",
+    "packet_sha256": "6b914cfc4eda7780dd698588e78a5b3de98d9643182513c7598d7079fdeb4914",
+    "result_ref": "799a2649804fce86ec2d181148dffcc830c5e8b9e83c03854cd86a1b6ec33140",
+    "shortlist": [
+     {
+      "player": "Roman Harper",
+      "team": "New Orleans Saints",
+      "score": 24.6
+     },
+     {
+      "player": "Mark Barron",
+      "team": "Tampa Bay Buccaneers",
+      "score": 19.3
+     },
+     {
+      "player": "David Hawthorne",
+      "team": "New Orleans Saints",
+      "score": 16.6
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-special_teams": {
+    "event_id": "2013-award-week15-nfc-special_teams-v1",
+    "packet_sha256": "654bc14dae289e114bf723f98c6f807b98816f8e316e69d1cbef8e68b0ede2d3",
+    "result_ref": "7f7d58cfc4d4debcb8a36cbad340fdfc70d012a62c40f5c190f28b8fb5fe5549",
+    "shortlist": [
+     {
+      "player": "Matt Bryant",
+      "team": "Atlanta Falcons",
+      "score": 14.0
+     },
+     {
+      "player": "Dan Bailey",
+      "team": "Dallas Cowboys",
+      "score": 11.0
+     },
+     {
+      "player": "Garrett Hartley",
+      "team": "New Orleans Saints",
+      "score": 11.0
+     }
+    ],
+    "winner_index": 0
+   }
+  }
  }
 }

@@ -23,3 +23,7 @@ Pass-set consistency, recovery, edge speed, the inside counter, balance, run lev
 **First-entry question:** Can he dress before he can start (reserve floor): **OPEN**. No dated tape observation is recorded yet.
 
 No tier, round movement or selection recommendation. Caldwell retains the board. Add later dated entries using [../template.md](../template.md).
+
+### December 13, 2013: Phase IV first coach read
+
+Not entered as a conclusion. No dated tape observation is recorded, so the first-read question stays OPEN. No tier, round movement or recommendation. Caldwell retains the board.
