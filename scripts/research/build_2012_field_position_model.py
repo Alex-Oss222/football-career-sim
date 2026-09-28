@@ -64,7 +64,7 @@ ROSTER = {
     "sha256": "90628fcdadd9f2dde083bc77d41139cedc9fefd1fcc09f2ce8675823de23291b",
 }
 
-SCHEMA = "2012-nfl-field-position-model-v1"
+SCHEMA = "2012-nfl-field-position-model-v2"
 CATEGORIES = (
     "touchdown", "field_goal_attempt", "punt", "interception",
     "fumble_lost", "downs", "safety", "clock",
@@ -97,6 +97,8 @@ TUPLE_FIELDS = (
     "term_bucket", "term_down", "term_ydstogo", "chains", "kneel_yards", "spikes",
     "fg_distance", "fg_made", "fg_blocked", "safety_term_kind", "safety_term_los",
     "runs", "attempts", "sacks", "td_kind",
+    # Kernel 2014.1: charged timeouts at the drive's first snap and used during it.
+    "off_timeouts", "def_timeouts", "off_timeouts_used", "def_timeouts_used",
 )
 CHAIN_FIELDS = ("scrimmage_first_downs", "penalty_first_downs", "third_down_attempts",
                 "third_down_conversions", "fourth_down_attempts", "fourth_down_conversions")
@@ -118,6 +120,7 @@ EXPLAINED = {
     "trail1_3_le120": "The trail 1-3 <=120 s late cell holds 30 drives in nflverse and 29 in nflscrapR (score rebuild); the nflverse cell map is used for both passes without re-collapse.",
     "late_punt_share": "Late trailing punt shares use the rebuilt score in both files; nflscrapR's differ through the score rebuild (imputed tries) and its missing punt rows.",
     "spikes": "nflscrapR codes two spikes (2012092304 play 4391, 2012111810 play 2332) as ordinary incomplete passes; nflverse codes them qb_spike. Pass-attempt totals are unaffected.",
+    "timeouts": "The timeout counters are GSIS fields coded differently by the two parses. On the 5,940 drives matched across files (club, first play id, clock, start), the starting counts differ on 36 drives for the defence and 32 for the offence, almost always by one timeout with nflverse one lower; nflverse carries 30 more timeout rows (1,878 against 1,848). Both files are equally self-consistent: in each, 5,247 of 5,276 same-half possession changes carry both clubs' counts exactly (start minus timeouts used equals the next drive's start). The gap is under 1% per drive and exceeds the count tolerance only in the small zero-timeout buckets. nflverse is used.",
 }
 # Metrics whose second-pass deviation each explanation covers.
 EXPLAINED_METRICS = {
@@ -129,6 +132,11 @@ EXPLAINED_METRICS = {
     "late:121-300|trail1_3": "score_rebuild", "late:121-300|tied": "score_rebuild",
     "late:301-600|tied": "score_rebuild", "late:le120|tied": "score_rebuild",
     "spikes": "spikes",
+    "timeouts:def_start_0": "timeouts", "timeouts:off_start_0": "timeouts",
+    "timeouts:def_used": "timeouts", "timeouts:off_used": "timeouts",
+    "timeouts:def_start_1": "timeouts", "timeouts:off_start_1": "timeouts",
+    "timeouts:def_start_2": "timeouts", "timeouts:off_start_2": "timeouts",
+    "timeouts:def_start_3": "timeouts", "timeouts:off_start_3": "timeouts",
 }
 # A late score-state cell may differ between the passes only through the score
 # rebuild: its need-free time-bucket totals (late_time:*) must still agree.
@@ -138,14 +146,15 @@ STR_COLS = (
     "game_id", "posteam", "defteam", "game_half", "play_type", "desc", "field_goal_result",
     "extra_point_result", "two_point_conv_result", "td_team", "kickoff_returner_player_id",
     "kickoff_returner_player_name", "punt_returner_player_id", "rusher_player_id",
-    "drive_time_of_possession",
+    "drive_time_of_possession", "timeout_team",
 )
 RAW_COLS = (  # kept as source strings: the imported classifier reads them
     "two_point_attempt", "touchdown", "safety", "interception", "fumble_lost",
     "fourth_down_failed",
 )
 NUM_COLS = ("play_id", "yardline_100", "qtr", "down", "ydstogo", "yards_gained",
-            "quarter_seconds_remaining", "half_seconds_remaining", "kick_distance", "return_yards")
+            "quarter_seconds_remaining", "half_seconds_remaining", "kick_distance", "return_yards",
+            "posteam_timeouts_remaining", "defteam_timeouts_remaining", "timeout")
 FLAG_COLS = ("fourth_down_converted", "third_down_converted", "third_down_failed",
              "first_down_rush", "first_down_pass", "first_down_penalty", "sack", "qb_scramble",
              "punt_blocked", "touchback", "kickoff_attempt", "pass_touchdown", "rush_touchdown")
@@ -460,6 +469,15 @@ def extract(path, source, positions):
         d["attempts"] = sum(1 for r in d["offs"] if r["play_type"] == "pass" and r["sack"] != 1)
         d["kneel_yards"] = [int(r["yards_gained"] or 0) for r in d["offs"] if r["play_type"] == "qb_kneel"]
         d["spikes"] = sum(1 for r in d["offs"] if r["play_type"] == "qb_spike")
+        # Charged timeouts: each club's count at the first snap, and the
+        # timeout rows of the drive by the calling club (timeout_team).
+        off0, def0 = first.get("posteam_timeouts_remaining"), first.get("defteam_timeouts_remaining")
+        d["off_timeouts"] = None if off0 is None else int(off0)
+        d["def_timeouts"] = None if def0 is None else int(def0)
+        called = [r.get("timeout_team") or "" for r in d["rows"] if r.get("timeout") == 1]
+        pos_alias = ALIAS.get(d["posteam"], d["posteam"])
+        d["off_timeouts_used"] = sum(1 for team in called if team and ALIAS.get(team, team) == pos_alias)
+        d["def_timeouts_used"] = sum(1 for team in called if team and ALIAS.get(team, team) != pos_alias)
         d["seconds"] = clock_seconds(d["rows"][-1].get("drive_time_of_possession", "")) if source == "nflverse" else None
         d["t0"] = int(first["quarter_seconds_remaining"] if (first["qtr"] or 0) >= 5 else first["half_seconds_remaining"])
         d["score_diff"] = first.get("sd")
@@ -650,6 +668,7 @@ def tuple_of(d):
         int(d["final"]), d["term_bucket"], d["term_down"], d["term_ydstogo"], d["chains"],
         d["kneel_yards"], d["spikes"], fg[0], fg[1], fg[2], safety[0], safety[1],
         d["runs"], d["attempts"], d["sacks"], d["td_kind"],
+        d["off_timeouts"], d["def_timeouts"], d["off_timeouts_used"], d["def_timeouts_used"],
     ]
 
 
@@ -682,6 +701,10 @@ def summary(extracted, cell_map):
         out["chains:" + name] = value
     out["kneels"] = sum(len(d["kneel_yards"]) for d in drives)
     out["spikes"] = sum(d["spikes"] for d in drives)
+    for side in ("off", "def"):
+        for n in range(4):
+            out["timeouts:%s_start_%d" % (side, n)] = sum(1 for d in drives if d[side + "_timeouts"] == n)
+        out["timeouts:%s_used" % side] = sum(d[side + "_timeouts_used"] for d in drives)
     out["sacks"] = sum(d["sacks"] for d in drives)
     out["dropbacks"] = sum(d["sacks"] + d["attempts"] + d["spikes"] for d in drives)
     out["kickoff_pool"] = len(extracted["kickoff_pool"])
@@ -957,6 +980,7 @@ def build_model(primary, drive_model, usage):
             "keep_net": ["clock"],
             "fixed": {"touchdown": "net = start, end = 0", "safety": "net = start - 100, end = 100"},
             "safety_render_rule": "A safety is drawn only from a start bin with a 2012 safety and with net inside that bin's envelope; its terminal kind (sack or run) and terminal line of scrimmage come from the real render tuple, so the terminal loss is exactly 100 - LOS.",
+            "timeouts": "Kernel 2014.1: every tuple carries each club's charged timeouts at the drive's first offensive snap (posteam/defteam_timeouts_remaining) and the timeout rows called during the drive by each club (timeout_team). Late, first-half-final and overtime draws are conditioned on the current counts; see runtime/README.md.",
             "fallbacks": ["union of the need's late cells", "nearest-bucket clock tuple of the same need", "[0, 0, 0] (must never occur)"],
             "ot_mapping": "OT tied -> OT cell; OT trailing -> le120|trail1_3 cell (labelled inference: 2012 OT trailing n=4); OT leading -> OT cell with a diagnostic.",
         },

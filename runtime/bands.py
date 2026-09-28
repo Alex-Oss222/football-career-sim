@@ -222,10 +222,13 @@ KNOWN_DETECTIONS["2013.9"] = dict(KNOWN_DETECTIONS["2013.8"])
 KNOWN_DETECTIONS["2013.10"] = dict(KNOWN_DETECTIONS["2013.9"])
 # Kernel 2013.11 changes only the home term at a neutral venue.
 KNOWN_DETECTIONS["2013.11"] = dict(KNOWN_DETECTIONS["2013.10"])
+# Kernel 2014.1 (timeouts, kneel zones, end-of-half fit fallback, goal to go): the
+# registry carries over until its own acceptance run says otherwise.
+KNOWN_DETECTIONS["2014.1"] = dict(KNOWN_DETECTIONS["2013.11"])
 
 
 def known_detections(cohort):
-    """{metric: note} for a kernel cohort ("2013.6", "2013.7", "2013.8", "2013.9", "2013.10" or "2013.11"); empty otherwise."""
+    """{metric: note} for a kernel cohort ("2013.6", "2013.7", "2013.8", "2013.9", "2013.10", "2013.11" or "2014.1"); empty otherwise."""
     return dict(KNOWN_DETECTIONS.get(cohort, {}))
 
 

@@ -1,11 +1,11 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2014-FEB02-2014-SETUP-STATE-44`
-**Supersedes:** `JAX-2014-FEB02-SEASON-CLOSE-STATE-43`
+**Version:** `JAX-2014-FEB02-KERNEL-2014-1-STATE-45`
+**Supersedes:** `JAX-2014-FEB02-2014-SETUP-STATE-44`
 **Snapshot effective:** February 2, 2014, after Super Bowl XLVIII (Buffalo 31, Minnesota 20); the 2013 season is complete and archived.
-**Last reconciled:** September 28, 2026; season-ledger Entry 68.
-**Global package checkpoint:** `Canonical update - February 2, 2014 - 2014 season set up`
+**Last reconciled:** September 28, 2026; season-ledger Entry 69.
+**Global package checkpoint:** `Canonical update - February 2, 2014 - Kernel 2014.1 adopted (timeouts)`
 
 ## Effective source-version manifest
 
@@ -15,7 +15,7 @@
 | Document 2 | `ab790f6e935c99a901a6d39cf3bee5183cf4da3e` | Active foundation source |
 | Document 3 | `38e0ce21e9cf1b62f8d4b9c281955facdaf07b57` | Active foundation source |
 | Document 4 | `JAX-2014-FEB02-SEASON-CLOSE-REGISTER-34`; closed by Entry 67 | Controlled 53, all active, practice squad, roles and availability at the season's close |
-| Document 6 | 2013 ledger through Entry 68 | 2013 season complete; phase archives in Entry 67; 2014 setup in Entry 68 |
+| Document 6 | 2013 ledger through Entry 69 | 2013 season complete; phase archives in Entry 67; 2014 setup in Entry 68; kernel 2014.1 in Entry 69 |
 
 ## 1. Master clock and competition position
 
@@ -78,5 +78,5 @@ The 2013 season is complete and archived (Entry 67): Jacksonville 10-6, 1-1 in t
 
 - **Held for the user:** end-of-season exit interviews (not run until the user asks).
 - **2014 setup (Entry 68):** `career/2014/` holds the 2014 calendar with its gates, the generated draft order (Jacksonville 26th in each round; its second-round selection is Washington's), the derived opponents and the contract-status register (8 unrestricted, 3 restricted and 3 exclusive-rights free agents, 4 unresolved). The next league events are the tag window (February 17), the Combine (February 19-25) and the league year (March 11).
-- **Engine before any 2014 game:** the user directed fixes for timeouts, the two-minute warning, kneel-downs and the fourth-down display (Entries 60, 64 and 67).
+- **Engine:** kernel 2014.1 (Entry 69) tracks timeouts, conditions late draws on them, keeps kneel drives in their start zone and publishes goal-to-go distances. The two-minute warning and play clock remain embedded in real drive durations. The touchdown share of drives sits at its band's ceiling (a pre-existing late-draw masking bias, recorded for a later recalibration).
 - **Recorded gaps:** Pro Bowl, All-Pro and the AP season awards were not drawn (Entry 67).

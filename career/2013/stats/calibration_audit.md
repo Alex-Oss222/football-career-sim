@@ -136,6 +136,8 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` over every receipt
 | label target mismatch | — | not measurable |
 | scramble with designed label | — | not measurable |
 | kneel spike mislabelled | — | not measurable |
+| timeout state invalid | — | not measurable |
+| fourth down beyond goal | — | not measurable |
 
 ## Kernel 2013.7 cohort (Weeks 9-10)
 
@@ -295,6 +297,8 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and 1
 | label target mismatch | 0 | WITHIN |
 | scramble with designed label | 0 | WITHIN |
 | kneel spike mislabelled | 0 | WITHIN |
+| timeout state invalid | — | not measurable |
+| fourth down beyond goal | — | not measurable |
 
 ## Kernel 2013.8 cohort (Weeks 11-12)
 
@@ -454,6 +458,8 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and 1
 | label target mismatch | 0 | WITHIN |
 | scramble with designed label | 0 | WITHIN |
 | kneel spike mislabelled | 0 | WITHIN |
+| timeout state invalid | — | not measurable |
+| fourth down beyond goal | — | not measurable |
 
 ## Kernel 2013.9 cohort (Week 13)
 
@@ -613,6 +619,8 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and 1
 | label target mismatch | 0 | WITHIN |
 | scramble with designed label | 0 | WITHIN |
 | kneel spike mislabelled | 0 | WITHIN |
+| timeout state invalid | — | not measurable |
+| fourth down beyond goal | — | not measurable |
 
 ## Kernel 2013.10 cohort (Weeks 14-17)
 
@@ -772,3 +780,5 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and 1
 | label target mismatch | 0 | WITHIN |
 | scramble with designed label | 0 | WITHIN |
 | kneel spike mislabelled | 0 | WITHIN |
+| timeout state invalid | — | not measurable |
+| fourth down beyond goal | — | not measurable |

@@ -276,12 +276,32 @@ def resolve_game(
     diagnostics = {"yard_split_count_fallback": 0, "td_split_fitted": 0, "interior_clock_redirected": 0,
                    "sack_losses_fitted": 0, "fallback_need_union": 0, "fallback_clock_tuple": 0,
                    "fallback_zero_tuple": 0, "h2_neutral_into_late": 0, "ot_leading_offense": 0,
-                   "prefix_order_repaired": 0, "prefix_order_failed": 0}
+                   "prefix_order_repaired": 0, "prefix_order_failed": 0,
+                   # Kernel 2014.1: timeout-ladder levels and the end-of-half fit fallback.
+                   "timeout_level_0": 0, "timeout_level_1": 0, "timeout_level_2": 0,
+                   "timeout_level_3": 0, "h1_fit_fallback": 0, "timeout_tuple_widened": 0}
+    # Kernel 2014.1: charged timeouts left, per club; reset at each half and
+    # at the start of overtime (and every two postseason overtime periods).
+    timeouts = {home.team_id: RULES.timeouts_per_half, away.team_id: RULES.timeouts_per_half}
     # Legacy synthetic inputs without a QB keep one deterministic passer.
     passers = {tid: usage.game_passer(players) or players[0] for tid, players in rosters.items()}
 
     def other(team_id):
         return away.team_id if team_id == home.team_id else home.team_id
+
+    ot_half = [0]
+
+    def _reset_postseason_ot_timeouts(window):
+        """Postseason overtime: periods 1-2, 3-4, ... are halves; each club
+        gets three timeouts at the start of each such half (labelled
+        inference, library/2013_nfl_playing_rules_for_simulation.md R6)."""
+        total = RULES.postseason_ot_period_bound * RULES.postseason_ot_seconds
+        elapsed = total - window
+        half_index = int(elapsed // (2 * RULES.postseason_ot_seconds))
+        if half_index != ot_half[0]:
+            ot_half[0] = half_index
+            for team_id in timeouts:
+                timeouts[team_id] = RULES.postseason_ot_timeouts_per_half
 
     def append_rows(rows):
         for row in rows:
@@ -323,8 +343,16 @@ def resolve_game(
 
         # 1-3. Game-state cell, category and a real 2012 drive feasible from
         # the start spot (runtime/field_position.py, possession stream).
-        drawn = field_position.draw_drive(rng, spot, half, window, score_diff, edge, diagnostics)
+        if half == "OT" and game_type == "postseason":
+            _reset_postseason_ot_timeouts(window)
+        timeouts_before = (timeouts[offense], timeouts[other(offense)])
+        drawn = field_position.draw_drive(rng, spot, half, window, score_diff, edge, diagnostics, timeouts_before)
         category, row, seconds = drawn.category, drawn.tuple, drawn.seconds
+        # The real drive's charged timeouts, capped at what each club holds.
+        timeouts_used = (min(timeouts_before[0], row[T["off_timeouts_used"]] or 0),
+                         min(timeouts_before[1], row[T["def_timeouts_used"]] or 0))
+        timeouts[offense] -= timeouts_used[0]
+        timeouts[other(offense)] -= timeouts_used[1]
         half_final = drawn.consumes_window
         net, end_spot = field_position.adapt(category, row, spot)
         plays = int(row[T["plays"]])
@@ -479,8 +507,14 @@ def resolve_game(
         fourth_down = None
         if category in field_position.FOURTH_DOWN_CATEGORIES:
             clock_s = window - seconds
+            ydstogo = row[T["term_ydstogo"]]
             fourth_down = {
-                "down": row[T["term_down"]], "ydstogo": row[T["term_ydstogo"]], "los": end_spot,
+                # Kernel 2014.1: goal to go when the real distance is at least the
+                # distance to the goal line at the replayed spot.
+                "down": row[T["term_down"]],
+                "ydstogo": min(ydstogo, end_spot) if ydstogo is not None else None,
+                "goal_to_go": ydstogo is not None and ydstogo >= end_spot,
+                "los": end_spot,
                 "clock_s": clock_s, "clock_bucket": field_position.terminal_bucket(clock_s) if half == 2 else None,
                 "half": half, "score_diff": score_diff, "need": field_position.need(score_diff),
                 "decision_zone": field_position.decision_zone(end_spot), "cell": drawn.cell,
@@ -566,6 +600,10 @@ def resolve_game(
             "fourth_down": fourth_down,
             "kneels": len(kneel_yards),
             "spikes": spikes,
+            # Kernel 2014.1 (append-only): [offense before, defence before,
+            # offense used, defence used] and the timeout-ladder level.
+            "timeouts": [timeouts_before[0], timeouts_before[1], timeouts_used[0], timeouts_used[1]],
+            "timeout_level": drawn.timeout_level,
         }
         if half == "OT":
             record["period"] = _period_clock(start_clock, overtime=ot_label)[0]
@@ -587,6 +625,8 @@ def resolve_game(
     for half in (1, 2):
         offense = opening_receiver if half == 1 else other(opening_receiver)
         window = RULES.quarter_seconds * 2
+        for team_id in timeouts:
+            timeouts[team_id] = RULES.timeouts_per_half
         opened = kick(other(offense), offense, free_kick=False, half=half,
                       remaining=window + (1800 if half == 1 else 0))
         spot, start_kind = opened["next_start"], _start_kind(opened)
@@ -620,6 +660,10 @@ def resolve_game(
             ot_label = "OT"
             window = RULES.regular_ot_seconds
         history = []
+        for team_id in timeouts:
+            timeouts[team_id] = (RULES.postseason_ot_timeouts_per_half if postseason
+                                 else RULES.regular_ot_timeouts)
+        ot_half[0] = 0
         opened = kick(other(offense), offense, free_kick=False, half="OT", remaining=window, ot_label=ot_label)
         spot, start_kind = opened["next_start"], _start_kind(opened)
         while True:

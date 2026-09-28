@@ -27,7 +27,7 @@ class KernelCoherenceTests(unittest.TestCase):
         cls.games = sample()
 
     def test_check_ledger_zero_violations(self):
-        self.assertEqual(len(COHERENCE_CLASSES), 32)
+        self.assertEqual(len(COHERENCE_CLASSES), 34)  # kernel 2014.1 adds two timeout-state classes
         errors = [e for r in self.games for e in check_ledger(r)]
         self.assertEqual(errors, [])
         self.assertTrue(all(validate_result(r) == [] for r in self.games))
