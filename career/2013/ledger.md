@@ -1770,3 +1770,27 @@ They are background games.
 **Jacksonville.** The season is over. Ryan Davis's projected return (January 14, 2014) has passed, so he is cleared under the standard rule; no other status changed.
 
 **Commit closed - Canonical update - January 19, 2014 - Conference championships closed - canonical through January 19, 2014**
+
+## Entry 66: Kernel 2013.11 adopted (no home term at a neutral site)
+
+**Effective canonical state:** January 19, 2014, after the conference championships
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - January 19, 2014 - Kernel 2013.11 adopted (neutral site)`
+**Preceding global package checkpoint:** `Canonical update - January 19, 2014 - Conference championships closed`
+
+**Decision.** The user approved the fix before Super Bowl XLVIII. The instruction quoted Claude's offer, "The Super Bowl still carries the unfixed neutral-site issue ... I can fix that first if you approve it", as part of "Finish the playoffs". Kernel 2013.11 replaces 2013.10 from postseason week 21.
+
+**Defect (Entry 45).** `kernel._edge` gave its 0.008 home term to the designated home team at any venue, so Minnesota (Week 4) and Jacksonville (Week 8) received it at Wembley.
+
+**Fix.** The home term applies only when the packet venue is not `neutral`; the anchor term is unchanged.
+- Source and tests: `runtime/README.md`, `tests/test_neutral_site.py`.
+- The full suite passes.
+
+**Scope.**
+- Every home-venue game resolves exactly as under 2013.10. The only 2013 game this affects is Super Bowl XLVIII, where Buffalo is the designated home team.
+- The decision is result-blind. It was taken before the Super Bowl pairing's draw, and it applies to whichever club is designated home.
+
+**Closed results stand.** The Week 4 and Week 8 Wembley receipts are never rerun.
+
+**Commit closed - Canonical update - January 19, 2014 - Kernel 2013.11 adopted (neutral site) - canonical through January 19, 2014**
+

@@ -168,13 +168,15 @@ def _start_kind(kick_record):
     return "kickoff_touchback" if kick_record["touchback"] else "kickoff"
 
 
-def _edge(team, defense, home):
+def _edge(team, defense, home, venue="home"):
+    # Kernel 2013.11: the designated home team gets the home term only at a
+    # home venue; at a neutral site neither team does.
     return max(
         -0.06,
         min(
             0.06,
             (team.offense_anchor - defense.defense_anchor) * 0.025
-            + (0.008 if team is home else 0),
+            + (0.008 if team is home and venue != "neutral" else 0),
         ),
     )
 
@@ -315,7 +317,7 @@ def resolve_game(
     def possess(offense, window, half, spot, start_kind, ot_history=None, ot_label="OT"):
         team = teams[offense]
         defense = teams[other(offense)]
-        edge = _edge(team, defense, home)
+        edge = _edge(team, defense, home, venue)
         drive_no = len(possessions) + 1
         score_diff = stats[offense]["points"] - stats[other(offense)]["points"]
 
