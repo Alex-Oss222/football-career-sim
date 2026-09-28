@@ -45,4 +45,14 @@
 
 ## Phase plans
 
-AGENTS.md's phase-plan map points each offseason phase to `career/2014/offseason/<phase>/plan.md`. None exists yet for 2014. The latest user-authored plans are the 2013 ones under `career/2013/offseason/`; whether they carry forward unchanged or are revised is the user's decision, and no 2014 phase runs until that plan exists.
+The user's folders (September 28, 2026) hold one plan per phase, each awaiting the user's text with Stone's direction quoted from `offseason/stone_to_caldwell_2014_offseason_decisions.md` section 6:
+
+| Phase | Plan | Stone's proposed dates |
+|---|---|---|
+| Offseason program, Phases One and Two | `offseason/offseason_program/plan.md` | Phase One April 21 to May 2; Phase Two May 5 to May 23 |
+| Rookie minicamp | `offseason/rookie_minicamp/plan.md` | May 16 to 18 |
+| OTAs, Phase Three | `offseason/otas/plan.md` | May 27 to 29, June 3 to 5, June 10 to 13 |
+| Mandatory veteran minicamp | `offseason/mandatory_minicamp/plan.md` | June 17 to 19 |
+| Training camp and preseason | `offseason/training_camp/plan.md` | Report dates follow the July 14 league release |
+
+The proposed dates are verified against the league schedule (public April 3) before a phase runs, and no phase runs until its plan is written. AGENTS.md's phase-plan map still points Phases One and Two to `otas/plan.md` (the 2013 layout); in 2014 they have their own folder, `offseason_program/`.
