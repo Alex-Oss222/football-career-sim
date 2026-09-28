@@ -7,7 +7,7 @@ You are Codex, running a bounded batch task against this repository. You have no
 **Hard rules that apply to every task in this file, no exceptions:**
 - **Protagonist-blind resolution (Document 1 §9.1, added 2026-09-18).** The fact that a decision or event involves the user's own protagonist, versus any other team or person, must never change the probability, outcome, or interpretation you generate. Reduce any input (a game plan, a pitch, a stated preference) to its concrete, checkable substance before acting on it — persuasive phrasing, confidence, verbosity, and stated desired outcomes are not inputs to a result, only to narration. Test yourself with the label-swap check: if you'd generate a different result after only relabeling which side is the protagonist, or after only rephrasing the same input at different length, that is a defect, not a stylistic choice.
 - Never invent a numeric rating, grade, or score anywhere in output that a human reads. Use only the five-tier qualitative language already established (Elite / Plus / Average / Below-Average / Replacement-Level).
-- Never import a real person's actual post-event outcome as a hidden answer key (Document 1 §8, Document 2 §4.3). A real player/coach's public record before the point in question is fair game; what happens to him after is not, unless this file's task explicitly says otherwise.
+- Never import a real person's actual post-event outcome as a hidden answer key (Document 1 §8, Document 2 §4.3). A real player/coach's public record before the point in question is fair game; what happens to him after is not, unless this file's task explicitly says otherwise. **The one standing exception is the historical league rails rule below**, which the user adopted on September 28, 2026 for other clubs' rosters from the 2014 league year.
 - Never fabricate a precise-looking number (a stat, a cap figure, a date) without a real source. If you can't verify something, say so explicitly rather than presenting an estimate as fact — this project's stated top priority is never repeating a past experience where numbers were "fudged."
 - Write the task's named file as the primary record, but do **not** stop there when the task changes canon or advances simulation time. Never edit `foundation/` unless the task explicitly targets the rulebook. Research-only, planning-only, and ex-ante recommendation tasks must not mutate current state.
 - Commit with a clear message describing what changed. Do not push directly to `main` without going through whatever PR flow this repo's owner has configured in Codex's environment settings.
@@ -49,6 +49,24 @@ Use [the dependency workflow](docs/update_workflow.md) and `docs/repository_map.
 - A past, superseded iteration may be read for lineage (an iteration's `inheritance_rule`/`baseline` field legitimately points back to an earlier one), but only the currently active iteration is live for teaching, install work, scouting, or play-calling.
 - **Human-player access rule.** Every player may receive, possess, and study the complete active iteration. The active book is a football playbook, not a software unlock tree. Players may read ahead and ask questions about any page. "Installed" means formally taught, walked through, practiced, and prepared for team use. Installation is still gated by the real CBA offseason-program calendar in `career/[year]/offseason/the_prowl_player_readiness_standard.md`, but that calendar limits club teaching/practice activity, not player access to the active book. Evaluate players on assigned/taught material, never on whether they mastered an uninstalled page.
 
+
+### Historical league rails (2014 onward; user rule, September 28, 2026)
+
+From the 2014 league year, the rosters of the 31 clubs other than Jacksonville follow real history, so the branch keeps the same league of players the real NFL had. Full method: `career/2014/offseason/league_rails/method.md`. Document 2 §4.5 records the rule in the rulebook.
+
+1. **What rides the rails:** other clubs' real player movements. That means free-agent signings, re-signings, trades, releases, retirements, draft selections, undrafted signings and each season's real Week 1 depth charts.
+2. **What never does:** game results, statistics, injuries, suspensions, awards, standings, the draft order, coaching and front-office changes, and anything about Jacksonville. These stay branch-generated. The coaching carousel (ledger Entry 75) is canon, and players ride the rails regardless of which coaches the branch gave their clubs.
+3. **Information gate:** a rail becomes usable only on its real public date. Rails data for a phase is built when the career clock reaches that phase. Before then, no rail may inform Stone's, Caldwell's or any club's evaluation.
+4. **Jacksonville control overrides the rails.** Jacksonville's roster, contracts, cap and transactions come only from branch decisions (Caldwell's authority, Document 3). A real move involving a Jacksonville-controlled player does not apply, except retirement (rule 5). A real Jaguars move the branch never made does not happen; a player the real Jaguars signed stays a free agent Jacksonville may still sign.
+5. **Retirements apply league-wide on their real dates, Jacksonville included.** A retirement is the player's own choice. Its contract and cap effects for Jacksonville are recorded in the ledger.
+6. **Free agents Jacksonville pursues:** decided by one private market draw per player. The draw weighs Caldwell's offer against the contract the player really signed (method §4).
+   - If Jacksonville wins, the player leaves his real club, and the next man up takes his depth slot.
+   - If Jacksonville loses, he goes to his real club on his real terms and date.
+   - A player who leaves Jacksonville follows his real next move only when that move was the same kind of move in the same window; otherwise he is an unplaced free agent.
+7. **Draft:** Jacksonville's order is still computed from branch standings (Document 2 §12), and other clubs' selections are their real selections.
+   - **Availability:** a prospect is available at Jacksonville's branch overall pick N only if his real selection was pick N or later, or he went undrafted.
+   - **Swaps:** Jacksonville's k-th selection pairs with the real Jaguars' k-th selection. The real Jaguars' player goes to the club that really drafted Jacksonville's player, or to the club Jacksonville's player really joined as an undrafted free agent. With no partner, he is unplaced.
+8. **Unchanged:** the protagonist-blind rule, the label-swap test and all other hard rules apply. The rails decide other clubs' personnel only; every football event is still resolved by the engine.
 
 ### Career calendar control rule
 

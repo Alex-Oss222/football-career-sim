@@ -5,6 +5,8 @@
 **Recorded:** September 28, 2026 (ledger Entry 76), retroactively at the branch date of February 2, 2014.
 **User's instructions:** each interview is an honest review with no promises. The main core get a full interview with conversation. The core get a structured, in-depth, detailed report. Everyone else gets a summary.
 
+**Looking for Alex Stone's own exit interview with the press?** Read the [January 15 press exit interview](../season_review/stone_2013_review_and_exit_interview.md#alex-stone-press-exit-interview). This folder records his meetings with the players.
+
 ## How the interviews were run
 
 - **Evidence.** Each file cites only the branch record: phase outputs, weekly outputs and call sheets, game receipts, the roster and ledger, and pre-2013 public facts. No real 2013 or later outcome is used. No numeric rating appears. Where the 2013 engine made a statistic unreliable, the file says so and does not use it. In 2013 a sack allowed was charged to a random dressed lineman, returners were drawn kick by kick, and no coverage tackles were kept (`runtime/defect_register.md`; kernel 2014.3 fixes the credit rules from 2014).

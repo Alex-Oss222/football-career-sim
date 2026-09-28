@@ -2231,3 +2231,65 @@ The user's February 2 memo to Caldwell (`career/2014/offseason/stone_to_caldwell
 **Companion manuscript.** The user's researched ownership review and press conference (`career/2013/season_review/stone_2013_review_and_exit_interview.md`, merged into this branch as pull request #122) was written before Entry 75. Its staff passages are corrected to Entry 75, with a dated note at the top: Lowry's departure, Bush's Indianapolis interview and the vacant special teams job. `owner_and_gm_review.md` remains the controlling record.
 
 **Commit closed - Canonical update - February 2, 2014 - 2013 exit interviews recorded (January 13-14) - canonical through February 2, 2014**
+
+## Entry 77: Special-teams authority and staff planning reconciled
+
+**Effective canonical state:** February 2, 2014; the existing interim assignment applies from Lowry's January 12 departure. No clock advance.
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical correction - February 2, 2014 - special-teams authority and staff planning reconciled`
+**Preceding global package checkpoint:** `Canonical update - February 2, 2014 - 2013 exit interviews recorded (January 13-14)`
+
+**Authority and scope.** The user requested assessment and improvement of the staff-change handoff, explicitly including Document 3's stale Lowry references, Stone's interim duties, the $6,950,000 payroll and the standing interview policy. This is an administrative correction of the Entry 75 dependency gap, not another carousel, appointment or delegation decision.
+
+**Conflicting records and correction.** Entry 75, the current staff register and Document 4 already recorded Lowry's departure and Stone's interim control. Document 3 sections 4, 5 row 14 and 6.1 still named Lowry as current operator or incumbent. Those current references now reflect the vacant coordinator post and Stone's interim direction. Stone already held final authority under row 14; no new power is conferred. The generic phrase "material departures" concerned departures from an approved plan and did not itself appoint an emergency successor. Entry 75's express interim assignment is the controlling event. Emergency succession if Stone is unavailable remains unassigned.
+
+**Payroll checked.** The eleven remaining 2014 contract rows sum to $6,950,000, also $7,575,000 less Lowry's removed $625,000. These are scheduled assistant salaries, not a spending ceiling, total football-operations cost or player-cap room. No numeric staff-budget ceiling or replacement salary has been established. The original contract schedule and Entry 75's treatment of Lowry's departure stand.
+
+**Policy clarified, not changed.** For the January 2014 cycle, head-coach interview requests follow the applicable eligibility windows; Jacksonville grants them where required and voluntarily within a permitted playoff window. Position-to-coordinator interviews are voluntarily permitted after Jacksonville's season ends, even though they remain assistant-to-assistant moves under that era's rules. Same-job requests for contracted assistants are refused under the standing club policy. An expired or released contract is not a basis for Jacksonville to claim a veto. Interview permission is not an offer, a hire or the coach's acceptance. Other requests must be checked against the actual role and existing authority rather than assigned an invented permission decision. The frozen method and all closed requests, interviews and outcomes remain unchanged.
+
+**Planning corrections.** `staff_plan.md` exists but has no selected targets or authorized offers. It now separates that missing decision from the existing role description, interim coverage, payroll commitments, unestablished hiring budget and candidate evidence. A current opening is not evidence that another club's coach is available; permission, contract status and availability must be checked at the actual approach date using branch records and permitted dated evidence.
+
+**Dependency closure.** Document 3 becomes Rebuild draft 2.6; Document 4 becomes `JAX-2014-FEB02-STAFF-RECONCILIATION-REGISTER-36`; Document 5 becomes `JAX-2014-FEB02-STAFF-RECONCILIATION-STATE-53` with the exact new Document 3 Git-blob hash. Current staff prose and the staff-change README agree with those records. Earlier ledger entries, including the merged player exit interviews in Entry 76, and the frozen carousel artifacts are preserved verbatim. The corrected ownership/press manuscript is retained; section headings and index links make Alex Stone's press interview and the separate player interviews directly discoverable. No player, roster, cap, medical, calendar, draft-capital or game-result change; no replacement is selected or hired.
+
+**Commit closed - Canonical correction - February 2, 2014 - special-teams authority and staff planning reconciled - canonical through February 2, 2014**
+
+## Entry 78: Historical league rails adopted (2014 onward)
+
+**Effective canonical state:** February 2, 2014 (no clock advance).
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - February 2, 2014 - Historical league rails adopted (2014 onward)`
+**Preceding global package checkpoint:** `Canonical correction - February 2, 2014 - special-teams authority and staff planning reconciled`
+
+**Decision.** The user asked that the branch keep the same league of players as the real NFL. Other clubs' players should retire, sign and be drafted as they really were. The players Stone drafts come to Jacksonville, and the players the real Jaguars drafted go to the clubs that really drafted Stone's picks. Jacksonville's own contracts stay the branch's.
+
+The user's choices:
+- **Free agents Jacksonville pursues:** a market draw.
+- **Retirements:** real dates apply league-wide, Jacksonville included.
+- **Draft availability:** by real pick number.
+- **Where the rule is written:** AGENTS.md and Document 2 both.
+
+**Rule.**
+- AGENTS.md, "Historical league rails", is the controlling text. Its hard-rule line now names this as the one standing exception to the no-hindsight rule.
+- Document 2 adds §§4.3a and 4.5, and §12 notes the override for other clubs.
+- Document 5 carries the new Document 2 hash.
+- The 2013 background library already followed this pattern: real Week 1 charts, draft swaps, Jacksonville control first. The rule now states it in writing for 2014 onward.
+
+**Method.** `career/2014/offseason/league_rails/method.md`:
+- rails become usable only on their real public dates;
+- Jacksonville control overrides every rail except retirement;
+- market draw: the chance Jacksonville signs a free agent is 0 below a money index of 0.80, 0.50 at parity and at most 0.90, drawn through the private service at his real signing date;
+- draft availability by real pick number, with Jacksonville's k-th selection paired with the real Jaguars' k-th selection.
+
+The draw weights are a modelling choice and can be changed until the first draw.
+
+**Built.** At the user's direction, the branch builds the structure and fills what it can; the user completes the rosters and contracts.
+- `clubs/`: 31 draft club rosters, about 1,600 players, from the branch's 2013 Week 1 units, with contract years from Over The Cap data signed in 2013 or earlier. 316 players have no contract in the data, and every end year is unverified.
+- `free_agent_pool.md`: 413 likely pending free agents.
+- Empty records for retirements, the draft pairing and the market draws.
+- No 2014 destination, term, trade or selection is recorded.
+
+**Open check.** Whether any of Jacksonville's 61 controlled players announced a real retirement on or before February 2, 2014. A found retirement applies with its own ledger entry.
+
+**What changed.** No roster, contract, cap, medical or result state.
+
+**Commit closed - Canonical update - February 2, 2014 - Historical league rails adopted (2014 onward) - canonical through February 2, 2014**

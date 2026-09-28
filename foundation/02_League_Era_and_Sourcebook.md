@@ -66,9 +66,17 @@ The accepted January 15 offer and its authority division are recorded in the hir
 
 Never use a real player's or coach's later career, injury, destination, award or performance as an answer key. Actual-future comparators remain outside runtime. A source published later may verify an earlier fact only when its contents can be separated from later outcomes. Baseline calibration for the May 2013 clock uses completed 2012 aggregate statistics, never actual 2013 season results.
 
+### 4.3a Exception: historical league rails (user rule, September 28, 2026)
+
+From the 2014 league year, §4.5 lets real player movement for the 31 other clubs serve as rails. This is the only exception to §4.3, and it is the user's explicit decision. It never extends to results, injuries, awards, coaching or Jacksonville.
+
 ### 4.4 Institutional rails
 
 The existing 2013 career calendar explicitly authorizes historical dates, opponents and deadlines as rails. The sourced 2011 CBA and existing verified 2013 financial rules remain applicable. This correction does not infer blanket approval for all later rule, medical-policy or institutional changes. Verify applicability and the established rail before adopting a new rule; unresolved adoption boundaries block the affected action.
+
+### 4.5 Historical league rails (2014 onward)
+
+The rosters of the clubs other than Jacksonville follow real history: signings, trades, releases, retirements, draft selections, undrafted signings and each season's real Week 1 depth charts. Each rail becomes usable on its real public date. Jacksonville's roster, contracts and transactions come only from branch decisions, except that real retirements apply league-wide. Free agents Jacksonville pursues are decided by a private market draw against the contract the player really signed. The draft pairs Jacksonville's selections with the real Jaguars' selections as AGENTS.md sets out. Game results, statistics, injuries, suspensions, awards, standings, the draft order and coaching changes are never rails. Controlling text: AGENTS.md, "Historical league rails"; method: `career/2014/offseason/league_rails/method.md`.
 
 ## 5. Competition identity and season structure
 
@@ -160,7 +168,7 @@ The closed 2013 draft is history in [draftees](../career/2013/offseason/draft/dr
 
 ### Historical class sourcing, simulated order, and post-selection continuation
 
-This governing rule applies to every draft or equivalent selection event, in every simulated year, regardless of mode.
+This governing rule applies to every draft or equivalent selection event, in every simulated year, regardless of mode. **From 2014, §4.5 overrides the "Selecting club behavior", "Autonomy" and "Post-selection continuation" provisions for clubs other than Jacksonville: their selections and later movements follow real history on its real dates.** Jacksonville's order, its own evaluations and its players' continuation remain governed here.
 
 **Historical class sourcing, through the last real year with a documented class.**
 
