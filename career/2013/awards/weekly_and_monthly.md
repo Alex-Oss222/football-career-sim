@@ -237,3 +237,16 @@ Drawn at the close of Week 11 (Entry 52).
 | NFC Offensive Player | Reggie Bush | Detroit Lions | 28.8 | Doug Martin, Tampa Bay Buccaneers (35.5); Jay Cutler, Chicago Bears (31.7); Reggie Bush, Detroit Lions (28.8) |
 | NFC Defensive Player | Roman Harper | New Orleans Saints | 24.6 | Roman Harper, New Orleans Saints (24.6); Mark Barron, Tampa Bay Buccaneers (19.3); David Hawthorne, New Orleans Saints (16.6) |
 | NFC Special Teams Player | Matt Bryant | Atlanta Falcons | 14.0 | Matt Bryant, Atlanta Falcons (14.0); Dan Bailey, Dallas Cowboys (11.0); Garrett Hartley, New Orleans Saints (11.0) |
+
+
+
+### Week 16
+
+| Award | Winner | Team | Score | Shortlist (score) |
+|---|---|---|--:|---|
+| AFC Offensive Player | Andy Dalton | Cincinnati Bengals | 39.1 | Andy Dalton, Cincinnati Bengals (39.1); Jamaal Charles, Kansas City Chiefs (30.2); Jake Locker, Tennessee Titans (28.3) |
+| AFC Defensive Player | Eric Weddle | San Diego Chargers | 24.5 | Eric Weddle, San Diego Chargers (24.5); Josh Bynes, Baltimore Ravens (24.0); Rahim Moore, Denver Broncos (23.6) |
+| AFC Special Teams Player | Darius Reynaud | Tennessee Titans | 15.2 | Darius Reynaud, Tennessee Titans (15.2); Ryan Succop, Kansas City Chiefs (12.0); Cassius Vaughn, Indianapolis Colts (11.5) |
+| NFC Offensive Player | Roddy White | Atlanta Falcons | 29.0 | Frank Gore, San Francisco 49ers (30.4); Roddy White, Atlanta Falcons (29.0); Sam Bradford, St. Louis Rams (26.7) |
+| NFC Defensive Player | Greg Hardy | Carolina Panthers | 22.6 | Stephen Tulloch, Detroit Lions (43.8); Greg Hardy, Carolina Panthers (22.6); Curtis Lofton, New Orleans Saints (22.5) |
+| NFC Special Teams Player | Darren Sproles | New Orleans Saints | 13.2 | Darren Sproles, New Orleans Saints (13.2); Jon Ryan, Seattle Seahawks (13.0); Johnny Hekker, St. Louis Rams (12.5) |

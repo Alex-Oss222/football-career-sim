@@ -8,3 +8,5 @@
 **Format:** `foundation/templates/season_output_template.md`
 
 **Note:** Division game (AFC South). Regular-season finale.
+
+**Carry-forward (Week 16):** Jacksonville beat Tennessee 38-27 ([Week 16 output](../week_16_tennessee_at_jacksonville/output.md)) and is 10-5, a game ahead of 9-6 Tennessee in the AFC South; a win clinches the division. Posluszny out (projected return April 5, 2014), Allen starting beside Daryl Smith; Ball out. The Week 16 inactive list carries forward unless Stone changes it.

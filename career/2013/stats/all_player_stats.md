@@ -1,7 +1,7 @@
 # 2013 NFL rosters and player statistics
 
-**Version:** `2013-W15-ALL-PLAYER-STATS`
-**Through:** Week 15.
+**Version:** `2013-W16-ALL-PLAYER-STATS`
+**Through:** Week 16.
 **Coverage:** complete for every closed game.
 
 Club by club, then position, then player: every player who has been on a game-day active list, with his position's statistics. G counts games active.
@@ -12,50 +12,50 @@ Club by club, then position, then player: every player who has been on a game-da
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Carson Palmer | 14 | 307 | 465 | 66.0 | 3089 | 6.6 | 23 | 14 | 88.7 | 29 | 177 | 37 | 153 | 1 | 0 | 0 |
-| Drew Stanton | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Ryan Lindley | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Carson Palmer | 15 | 329 | 504 | 65.3 | 3340 | 6.6 | 25 | 15 | 88.2 | 29 | 177 | 40 | 177 | 1 | 0 | 0 |
+| Drew Stanton | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ryan Lindley | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Rashard Mendenhall | 14 | 250 | 1112 | 4.4 | 3 | 29 | 47 | 32 | 325 | 6 | 6 | 6 |
-| Stepfan Taylor | 14 | 77 | 386 | 5.0 | 2 | 62 | 18 | 10 | 151 | 1 | 0 | 0 |
-| Alfonso Smith | 14 | 17 | 64 | 3.8 | 0 | 22 | 6 | 5 | 60 | 0 | 0 | 0 |
-| Andre Ellington | 14 | 1 | 3 | 3.0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Ryan Williams | 8 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Rashard Mendenhall | 15 | 267 | 1216 | 4.6 | 4 | 31 | 51 | 34 | 359 | 7 | 6 | 6 |
+| Stepfan Taylor | 15 | 78 | 387 | 5.0 | 2 | 62 | 18 | 10 | 151 | 1 | 0 | 0 |
+| Alfonso Smith | 15 | 18 | 64 | 3.6 | 0 | 22 | 6 | 5 | 60 | 0 | 0 | 0 |
+| Andre Ellington | 15 | 1 | 3 | 3.0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ryan Williams | 9 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Larry Fitzgerald | 14 | 160 | 104 | 982 | 9.4 | 8 | 54 | 9 | 61 | 1 | 0 | 0 |
-| Michael Floyd | 14 | 74 | 40 | 456 | 11.4 | 1 | 40 | 1 | 2 | 0 | 0 | 0 |
-| Andre Roberts | 14 | 42 | 25 | 290 | 11.6 | 2 | 60 | 2 | 1 | 0 | 0 | 0 |
-| Jaron Brown | 14 | 13 | 12 | 115 | 9.6 | 0 | 26 | 0 | 0 | 0 | 0 | 0 |
+| Larry Fitzgerald | 15 | 172 | 111 | 1071 | 9.6 | 9 | 54 | 9 | 61 | 1 | 0 | 0 |
+| Michael Floyd | 15 | 82 | 46 | 480 | 10.4 | 1 | 40 | 1 | 2 | 0 | 0 | 0 |
+| Andre Roberts | 15 | 45 | 26 | 298 | 11.5 | 2 | 60 | 2 | 1 | 0 | 0 | 0 |
+| Jaron Brown | 15 | 14 | 12 | 115 | 9.6 | 0 | 26 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Rob Housler | 12 | 69 | 54 | 472 | 8.7 | 3 | 38 | 0 | 0 | 0 | 0 | 0 |
-| Jim Dray | 14 | 31 | 22 | 201 | 9.1 | 2 | 28 | 0 | 0 | 0 | 0 | 0 |
-| D.C. Jefferson | 14 | 4 | 3 | 37 | 12.3 | 0 | 18 | 0 | 0 | 0 | 0 | 0 |
-| Bradley Sowell | 14 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Kory Sperry | 14 | 1 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Rob Housler | 13 | 77 | 59 | 554 | 9.4 | 3 | 38 | 0 | 0 | 0 | 0 | 0 |
+| Jim Dray | 15 | 34 | 23 | 215 | 9.3 | 2 | 28 | 0 | 0 | 0 | 0 | 0 |
+| D.C. Jefferson | 15 | 4 | 3 | 37 | 12.3 | 0 | 18 | 0 | 0 | 0 | 0 | 0 |
+| Bradley Sowell | 15 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Kory Sperry | 15 | 1 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Eric Winston | 14 | 8 |
-| Daryn Colledge | 14 | 5 |
-| Levi Brown | 14 | 4 |
-| Nate Potter | 14 | 4 |
-| Mike Gibson | 14 | 3 |
-| Paul Fanaika | 14 | 3 |
-| Lyle Sendlein | 14 | 2 |
+| Eric Winston | 15 | 8 |
+| Daryn Colledge | 15 | 5 |
+| Levi Brown | 15 | 4 |
+| Nate Potter | 15 | 4 |
+| Mike Gibson | 15 | 3 |
+| Paul Fanaika | 15 | 3 |
+| Lyle Sendlein | 15 | 2 |
 | Bobby Massie | 2 | 0 |
 | Earl Watford | 2 | 0 |
 
@@ -63,37 +63,37 @@ Club by club, then position, then player: every player who has been on a game-da
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Calais Campbell | 14 | 79 | 58 | 21 | 5 | 10 | 14 | 2 | 0 | 1 | 1 |
-| Dan Williams | 14 | 48 | 32 | 16 | 3 | 4 | 8 | 1 | 0 | 0 | 0 |
-| Darnell Dockett | 14 | 32 | 17 | 15 | 5 | 4 | 5 | 1 | 0 | 1 | 1 |
-| Frostee Rucker | 14 | 15 | 9 | 6 | 1 | 3 | 8 | 1 | 0 | 0 | 0 |
-| Matt Shaughnessy | 14 | 13 | 9 | 4 | 4 | 0 | 1 | 0 | 0 | 0 | 0 |
-| Ronald Talley | 14 | 11 | 8 | 3 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
-| Alameda Ta'amu | 13 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Calais Campbell | 15 | 81 | 60 | 21 | 5 | 11 | 17 | 4 | 0 | 1 | 1 |
+| Dan Williams | 15 | 50 | 34 | 16 | 3 | 4 | 8 | 1 | 0 | 0 | 0 |
+| Darnell Dockett | 15 | 34 | 19 | 15 | 6 | 4 | 5 | 1 | 0 | 1 | 1 |
+| Frostee Rucker | 15 | 16 | 10 | 6 | 1 | 3 | 8 | 1 | 0 | 0 | 0 |
+| Matt Shaughnessy | 15 | 14 | 9 | 5 | 4 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Ronald Talley | 15 | 11 | 8 | 3 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
+| Alameda Ta'amu | 14 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Alex Okafor | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Karlos Dansby | 14 | 131 | 96 | 35 | 7 | 7 | 11 | 7 | 0 | 0 | 0 |
-| Jasper Brinkley | 14 | 90 | 61 | 29 | 7 | 3 | 7 | 5 | 1 | 0 | 0 |
-| Sam Acho | 14 | 43 | 29 | 14 | 5 | 2 | 3 | 1 | 0 | 1 | 1 |
-| Lorenzo Alexander | 14 | 21 | 14 | 7 | 0 | 1 | 2 | 0 | 0 | 0 | 0 |
-| Kevin Minter | 14 | 5 | 2 | 3 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
+| Karlos Dansby | 15 | 138 | 101 | 37 | 8 | 7 | 11 | 8 | 0 | 0 | 0 |
+| Jasper Brinkley | 15 | 97 | 66 | 31 | 9 | 3 | 8 | 5 | 1 | 0 | 0 |
+| Sam Acho | 15 | 48 | 34 | 14 | 6 | 3 | 5 | 2 | 0 | 1 | 1 |
+| Lorenzo Alexander | 15 | 22 | 14 | 8 | 0 | 1 | 2 | 0 | 0 | 0 | 0 |
+| Kevin Minter | 15 | 5 | 2 | 3 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
 | John Abraham | 14 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Yeremiah Bell | 14 | 102 | 77 | 25 | 1 | 0 | 0 | 9 | 0 | 0 | 1 | 1 |
-| Patrick Peterson | 14 | 90 | 62 | 28 | 7 | 4 | 114 | 10 | 0 | 0 | 0 | 0 |
-| Jerraud Powers | 14 | 70 | 50 | 20 | 2 | 0 | 0 | 7 | 0 | 0 | 1 | 1 |
-| Rashad Johnson | 14 | 36 | 19 | 17 | 1 | 1 | 17 | 9 | 0 | 1 | 0 | 0 |
-| Antoine Cason | 14 | 31 | 21 | 10 | 1 | 4 | 77 | 7 | 0 | 1 | 1 | 1 |
-| Javier Arenas | 14 | 6 | 5 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
-| Tony Jefferson | 9 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Yeremiah Bell | 15 | 111 | 84 | 27 | 2 | 0 | 0 | 9 | 0 | 0 | 1 | 1 |
+| Patrick Peterson | 15 | 92 | 64 | 28 | 7 | 4 | 114 | 11 | 0 | 0 | 0 | 0 |
+| Jerraud Powers | 15 | 74 | 52 | 22 | 2 | 0 | 0 | 7 | 0 | 0 | 2 | 2 |
+| Rashad Johnson | 15 | 39 | 21 | 18 | 1 | 1 | 17 | 9 | 0 | 1 | 0 | 0 |
+| Antoine Cason | 15 | 32 | 21 | 11 | 1 | 4 | 77 | 7 | 0 | 1 | 1 | 1 |
+| Javier Arenas | 15 | 7 | 6 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Tony Jefferson | 10 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Jamell Fleming | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Justin Bethel | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Tyrann Mathieu | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -102,26 +102,26 @@ Club by club, then position, then player: every player who has been on a game-da
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Jay Feely | 14 | 25 | 28 | 89.3 | 30 | 30 | 105 |
+| Jay Feely | 15 | 25 | 28 | 89.3 | 33 | 33 | 108 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Dave Zastudil | 14 | 66 | 2989 | 45.3 | 65 | 28 | 1 |
+| Dave Zastudil | 15 | 74 | 3368 | 45.5 | 65 | 31 | 2 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Mike Leach | 14 |
+| Mike Leach | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Javier Arenas | CB | 14 | 36 | 894 | 24.8 | 0 | 0 | — |
-| Patrick Peterson | CB | 14 | 0 | 0 | — | 21 | 181 | 8.6 |
+| Javier Arenas | CB | 15 | 39 | 970 | 24.9 | 0 | 0 | — |
+| Patrick Peterson | CB | 15 | 0 | 0 | — | 24 | 190 | 7.9 |
 
 ### Other statistics
 
@@ -144,49 +144,49 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Matt Ryan | 14 | 318 | 501 | 63.5 | 3472 | 6.9 | 21 | 13 | 87.0 | 29 | 209 | 44 | 195 | 2 | 2 | 2 |
-| Dominique Davis | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Matt Ryan | 15 | 338 | 534 | 63.3 | 3809 | 7.1 | 24 | 14 | 88.6 | 30 | 214 | 47 | 210 | 2 | 2 | 2 |
+| Dominique Davis | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Steven Jackson | 14 | 244 | 1115 | 4.6 | 4 | 26 | 65 | 37 | 349 | 0 | 2 | 2 |
-| Jacquizz Rodgers | 14 | 79 | 514 | 6.5 | 4 | 70 | 9 | 7 | 121 | 1 | 0 | 0 |
-| Antone Smith | 14 | 22 | 75 | 3.4 | 0 | 11 | 2 | 1 | 12 | 0 | 1 | 1 |
-| Bradie Ewing | 14 | 9 | 46 | 5.1 | 0 | 9 | 8 | 7 | 64 | 1 | 0 | 0 |
-| Josh Vaughan | 14 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Steven Jackson | 15 | 258 | 1189 | 4.6 | 4 | 26 | 68 | 39 | 364 | 1 | 2 | 2 |
+| Jacquizz Rodgers | 15 | 81 | 509 | 6.3 | 4 | 70 | 12 | 8 | 133 | 1 | 0 | 0 |
+| Antone Smith | 15 | 24 | 85 | 3.5 | 0 | 11 | 2 | 1 | 12 | 0 | 1 | 1 |
+| Bradie Ewing | 15 | 11 | 51 | 4.6 | 0 | 9 | 8 | 7 | 64 | 1 | 0 | 0 |
+| Josh Vaughan | 15 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Jason Snelling | 10 | 2 | -6 | -3.0 | 0 | 0 | 2 | 1 | 24 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Roddy White | 14 | 151 | 93 | 1097 | 11.8 | 5 | 51 | 3 | 11 | 0 | 1 | 1 |
-| Julio Jones | 14 | 99 | 69 | 681 | 9.9 | 3 | 36 | 3 | 13 | 0 | 0 | 0 |
-| Harry Douglas | 14 | 45 | 29 | 262 | 9.0 | 4 | 34 | 0 | 0 | 0 | 0 | 0 |
-| D.J. Davis | 14 | 17 | 9 | 98 | 10.9 | 0 | 18 | 0 | 0 | 0 | 0 | 0 |
-| Kevin Cone | 14 | 2 | 1 | 4 | 4.0 | 0 | 4 | 0 | 0 | 0 | 0 | 0 |
+| Roddy White | 15 | 164 | 103 | 1327 | 12.9 | 6 | 77 | 3 | 11 | 0 | 1 | 1 |
+| Julio Jones | 15 | 103 | 71 | 716 | 10.1 | 3 | 36 | 3 | 13 | 0 | 0 | 0 |
+| Harry Douglas | 15 | 49 | 29 | 262 | 9.0 | 4 | 34 | 0 | 0 | 0 | 0 | 0 |
+| D.J. Davis | 15 | 17 | 9 | 98 | 10.9 | 0 | 18 | 0 | 0 | 0 | 0 | 0 |
+| Kevin Cone | 15 | 2 | 1 | 4 | 4.0 | 0 | 4 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Tony Gonzalez | 14 | 79 | 50 | 615 | 12.3 | 6 | 39 | 0 | 0 | 0 | 1 | 1 |
-| Chase Coffman | 14 | 19 | 11 | 132 | 12.0 | 1 | 46 | 1 | 1 | 0 | 0 | 0 |
-| Levine Toilolo | 14 | 3 | 3 | 13 | 4.3 | 0 | 7 | 0 | 0 | 0 | 0 | 0 |
+| Tony Gonzalez | 15 | 82 | 52 | 628 | 12.1 | 6 | 39 | 0 | 0 | 0 | 1 | 1 |
+| Chase Coffman | 15 | 20 | 12 | 139 | 11.6 | 2 | 46 | 1 | 1 | 0 | 0 | 0 |
+| Levine Toilolo | 15 | 5 | 5 | 38 | 7.6 | 0 | 15 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Garrett Reynolds | 14 | 5 |
-| Joe Hawley | 14 | 5 |
-| Peter Konz | 14 | 5 |
-| Justin Blalock | 14 | 4 |
-| Ryan Schraeder | 14 | 4 |
-| Lamar Holmes | 14 | 2 |
-| Sam Baker | 14 | 2 |
+| Garrett Reynolds | 15 | 5 |
+| Joe Hawley | 15 | 5 |
+| Justin Blalock | 15 | 5 |
+| Peter Konz | 15 | 5 |
+| Ryan Schraeder | 15 | 4 |
+| Lamar Holmes | 15 | 2 |
+| Sam Baker | 15 | 2 |
 | Harland Gunn | 2 | 1 |
 | Jeremy Trueblood | 2 | 1 |
 
@@ -194,38 +194,38 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Osi Umenyiora | 14 | 76 | 49 | 27 | 15 | 6 | 16 | 2 | 0 | 0 | 0 |
-| Jonathan Babineaux | 14 | 54 | 35 | 19 | 6 | 4 | 6 | 4 | 0 | 0 | 0 |
-| Corey Peters | 14 | 31 | 21 | 10 | 4 | 5 | 7 | 0 | 0 | 1 | 1 |
-| Peria Jerry | 14 | 27 | 17 | 10 | 2 | 2 | 3 | 0 | 0 | 0 | 0 |
-| Cliff Matthews | 14 | 16 | 12 | 4 | 2 | 0 | 1 | 0 | 0 | 0 | 0 |
-| Travian Robertson | 14 | 7 | 4 | 3 | 0 | 3 | 3 | 0 | 0 | 0 | 0 |
-| Malliciah Goodman | 14 | 4 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Osi Umenyiora | 15 | 85 | 58 | 27 | 16 | 7 | 17 | 2 | 0 | 0 | 0 |
+| Jonathan Babineaux | 15 | 55 | 36 | 19 | 6 | 4 | 6 | 4 | 0 | 0 | 0 |
+| Corey Peters | 15 | 33 | 22 | 11 | 4 | 5 | 7 | 0 | 0 | 1 | 1 |
+| Peria Jerry | 15 | 29 | 18 | 11 | 2 | 2 | 3 | 0 | 0 | 0 | 0 |
+| Cliff Matthews | 15 | 16 | 12 | 4 | 2 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Travian Robertson | 15 | 7 | 4 | 3 | 0 | 3 | 3 | 0 | 0 | 0 | 0 |
+| Malliciah Goodman | 15 | 4 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Stansly Maponga | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Stephen Nicholas | 14 | 124 | 83 | 41 | 11 | 7 | 11 | 8 | 4 | 1 | 1 |
-| Sean Weatherspoon | 14 | 67 | 51 | 16 | 1 | 1 | 4 | 5 | 1 | 1 | 1 |
-| Akeem Dent | 14 | 59 | 38 | 21 | 6 | 3 | 7 | 2 | 1 | 0 | 0 |
-| Kroy Biermann | 14 | 31 | 24 | 7 | 2 | 0 | 2 | 0 | 0 | 0 | 0 |
-| Joplo Bartu | 14 | 5 | 3 | 2 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
-| Jonathan Massaquoi | 14 | 4 | 4 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
-| Paul Worrilow | 14 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Stephen Nicholas | 15 | 128 | 86 | 42 | 11 | 7 | 12 | 8 | 4 | 1 | 1 |
+| Sean Weatherspoon | 15 | 73 | 55 | 18 | 1 | 1 | 5 | 5 | 1 | 1 | 1 |
+| Akeem Dent | 15 | 61 | 39 | 22 | 6 | 3 | 7 | 2 | 1 | 0 | 0 |
+| Kroy Biermann | 15 | 33 | 25 | 8 | 2 | 0 | 2 | 0 | 0 | 0 | 0 |
+| Joplo Bartu | 15 | 6 | 4 | 2 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Jonathan Massaquoi | 15 | 4 | 4 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
+| Paul Worrilow | 15 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Thomas DeCoud | 14 | 84 | 58 | 26 | 3 | 1 | 9 | 11 | 0 | 1 | 0 | 0 |
-| William Moore | 14 | 83 | 60 | 23 | 2 | 1 | 20 | 8 | 1 | 1 | 0 | 0 |
-| Asante Samuel | 14 | 68 | 42 | 26 | 2 | 1 | 28 | 4 | 1 | 1 | 1 | 1 |
-| Desmond Trufant | 14 | 45 | 31 | 14 | 4 | 2 | 52 | 8 | 0 | 0 | 0 | 0 |
-| Robert McClain | 14 | 11 | 9 | 2 | 0 | 0 | 0 | 4 | 0 | 0 | 0 | 0 |
-| Robert Alford | 14 | 10 | 6 | 4 | 0 | 1 | 19 | 1 | 0 | 0 | 0 | 0 |
-| Shann Schillinger | 6 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Thomas DeCoud | 15 | 90 | 63 | 27 | 3 | 1 | 9 | 11 | 1 | 2 | 0 | 0 |
+| William Moore | 15 | 90 | 67 | 23 | 2 | 1 | 20 | 8 | 1 | 1 | 0 | 0 |
+| Asante Samuel | 15 | 74 | 47 | 27 | 3 | 1 | 28 | 4 | 1 | 1 | 1 | 1 |
+| Desmond Trufant | 15 | 47 | 33 | 14 | 4 | 2 | 52 | 8 | 0 | 0 | 0 | 0 |
+| Robert McClain | 15 | 13 | 10 | 3 | 0 | 0 | 0 | 4 | 0 | 0 | 0 | 0 |
+| Robert Alford | 15 | 11 | 7 | 4 | 0 | 1 | 19 | 2 | 0 | 0 | 0 | 0 |
+| Shann Schillinger | 7 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Dominique Franks | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Kemal Ishmael | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Zeke Motta | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -234,26 +234,26 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Matt Bryant | 14 | 28 | 29 | 96.6 | 31 | 31 | 115 |
+| Matt Bryant | 15 | 29 | 31 | 93.5 | 34 | 34 | 121 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Matt Bosher | 14 | 66 | 3040 | 46.1 | 64 | 15 | 4 |
+| Matt Bosher | 15 | 70 | 3221 | 46.0 | 64 | 17 | 4 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Josh Harris | 14 |
+| Josh Harris | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Jacquizz Rodgers | RB | 14 | 31 | 664 | 21.4 | 0 | 0 | — |
-| Harry Douglas | WR | 14 | 0 | 0 | — | 37 | 467 | 12.6 |
+| Jacquizz Rodgers | RB | 15 | 34 | 764 | 22.5 | 0 | 0 | — |
+| Harry Douglas | WR | 15 | 0 | 0 | — | 40 | 531 | 13.3 |
 
 ### Other statistics
 
@@ -280,113 +280,113 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Joe Flacco | 14 | 299 | 488 | 61.3 | 3147 | 6.4 | 16 | 21 | 73.0 | 31 | 198 | 34 | 121 | 0 | 0 | 0 |
-| Tyrod Taylor | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Joe Flacco | 15 | 323 | 525 | 61.5 | 3418 | 6.5 | 17 | 23 | 73.0 | 33 | 212 | 37 | 128 | 0 | 0 | 0 |
+| Tyrod Taylor | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Ray Rice | 14 | 258 | 1155 | 4.5 | 6 | 36 | 49 | 32 | 397 | 3 | 3 | 3 |
-| Bernard Pierce | 14 | 74 | 347 | 4.7 | 3 | 49 | 19 | 13 | 108 | 1 | 2 | 2 |
-| Vonta Leach | 14 | 6 | 21 | 3.5 | 0 | 7 | 7 | 2 | 13 | 0 | 0 | 0 |
-| Kyle Juszczyk | 14 | 1 | -1 | -1.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ray Rice | 15 | 278 | 1232 | 4.4 | 7 | 36 | 54 | 37 | 465 | 3 | 3 | 3 |
+| Bernard Pierce | 15 | 80 | 356 | 4.5 | 4 | 49 | 19 | 13 | 108 | 1 | 2 | 2 |
+| Vonta Leach | 15 | 6 | 21 | 3.5 | 0 | 7 | 8 | 3 | 37 | 0 | 0 | 0 |
+| Kyle Juszczyk | 15 | 1 | -1 | -1.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Torrey Smith | 14 | 139 | 88 | 878 | 10.0 | 3 | 51 | 5 | 6 | 0 | 1 | 1 |
-| Jacoby Jones | 14 | 96 | 54 | 589 | 10.9 | 4 | 57 | 4 | 7 | 0 | 0 | 0 |
-| Brandon Stokley | 14 | 49 | 33 | 309 | 9.4 | 0 | 38 | 1 | 4 | 0 | 1 | 1 |
-| Marlon Brown | 11 | 20 | 13 | 106 | 8.2 | 0 | 27 | 0 | 0 | 0 | 0 | 0 |
-| Deonte Thompson | 11 | 6 | 3 | 33 | 11.0 | 0 | 17 | 0 | 0 | 0 | 0 | 0 |
-| Aaron Mellette | 14 | 3 | 1 | 19 | 19.0 | 0 | 19 | 0 | 0 | 0 | 0 | 0 |
+| Torrey Smith | 15 | 150 | 93 | 936 | 10.1 | 3 | 51 | 5 | 6 | 0 | 1 | 1 |
+| Jacoby Jones | 15 | 106 | 62 | 652 | 10.5 | 5 | 57 | 4 | 7 | 0 | 0 | 0 |
+| Brandon Stokley | 15 | 52 | 34 | 340 | 10.0 | 0 | 38 | 1 | 4 | 0 | 1 | 1 |
+| Marlon Brown | 12 | 22 | 14 | 117 | 8.4 | 0 | 27 | 0 | 0 | 0 | 0 | 0 |
+| Deonte Thompson | 12 | 6 | 3 | 33 | 11.0 | 0 | 17 | 0 | 0 | 0 | 0 | 0 |
+| Aaron Mellette | 15 | 3 | 1 | 19 | 19.0 | 0 | 19 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Ed Dickson | 14 | 76 | 49 | 567 | 11.6 | 5 | 45 | 1 | -2 | 1 | 0 | 0 |
-| Dallas Clark | 14 | 20 | 11 | 128 | 11.6 | 0 | 22 | 0 | 0 | 0 | 0 | 0 |
-| Billy Bajema | 13 | 2 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ed Dickson | 15 | 78 | 50 | 571 | 11.4 | 5 | 45 | 1 | -2 | 1 | 0 | 0 |
+| Dallas Clark | 15 | 23 | 13 | 140 | 10.8 | 0 | 22 | 0 | 0 | 0 | 0 | 0 |
+| Billy Bajema | 14 | 2 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Gino Gradkowski | 14 | 8 |
-| Kelechi Osemele | 14 | 7 |
-| Jah Reid | 14 | 5 |
-| Michael Oher | 13 | 5 |
-| Bryant McKinnie | 14 | 3 |
-| Marshal Yanda | 13 | 2 |
+| Gino Gradkowski | 15 | 9 |
+| Kelechi Osemele | 15 | 7 |
+| Jah Reid | 15 | 5 |
+| Michael Oher | 14 | 5 |
+| Bryant McKinnie | 15 | 4 |
+| Marshal Yanda | 14 | 2 |
 | A.Q. Shipley | 11 | 1 |
-| Rick Wagner | 14 | 0 |
+| Rick Wagner | 15 | 0 |
 | Ryan Jensen | 1 | 0 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Courtney Upshaw | 14 | 76 | 57 | 19 | 5 | 4 | 13 | 3 | 0 | 0 | 0 |
-| Haloti Ngata | 14 | 43 | 28 | 15 | 4 | 4 | 6 | 0 | 0 | 1 | 1 |
-| Chris Canty | 14 | 28 | 17 | 11 | 6 | 4 | 8 | 1 | 0 | 0 | 0 |
-| Arthur Jones | 13 | 26 | 14 | 12 | 3 | 3 | 9 | 2 | 0 | 0 | 0 |
-| Elvis Dumervil | 14 | 10 | 9 | 1 | 1 | 2 | 4 | 0 | 0 | 0 | 0 |
-| Marcus Spears | 14 | 10 | 7 | 3 | 1 | 1 | 2 | 2 | 0 | 0 | 0 |
+| Courtney Upshaw | 15 | 84 | 63 | 21 | 6 | 5 | 15 | 3 | 0 | 0 | 0 |
+| Haloti Ngata | 15 | 48 | 32 | 16 | 5 | 5 | 7 | 0 | 0 | 1 | 1 |
+| Chris Canty | 15 | 32 | 19 | 13 | 6 | 5 | 9 | 1 | 0 | 1 | 1 |
+| Arthur Jones | 14 | 26 | 14 | 12 | 3 | 3 | 10 | 2 | 0 | 0 | 0 |
+| Elvis Dumervil | 15 | 11 | 9 | 2 | 1 | 2 | 4 | 0 | 0 | 0 | 0 |
+| Marcus Spears | 15 | 10 | 7 | 3 | 1 | 1 | 2 | 2 | 0 | 0 | 0 |
 | DeAngelo Tyson | 2 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Brandon Williams (BAL) | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | John Simon | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Terrence Cody | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Terrence Cody | 15 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Josh Bynes | 14 | 116 | 75 | 41 | 8 | 5 | 11 | 4 | 1 | 1 | 1 |
-| Terrell Suggs | 14 | 107 | 60 | 47 | 3 | 5 | 11 | 4 | 0 | 0 | 0 |
-| Albert McClellan | 14 | 49 | 31 | 18 | 5 | 1 | 3 | 1 | 0 | 2 | 2 |
-| Pernell McPhee | 14 | 27 | 15 | 12 | 2 | 0 | 0 | 2 | 0 | 0 | 0 |
-| Arthur Brown | 10 | 5 | 4 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Robert James | 14 | 4 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Josh Bynes | 15 | 132 | 89 | 43 | 9 | 7 | 14 | 4 | 1 | 1 | 1 |
+| Terrell Suggs | 15 | 113 | 64 | 49 | 3 | 5 | 13 | 4 | 0 | 0 | 0 |
+| Albert McClellan | 15 | 54 | 34 | 20 | 5 | 1 | 3 | 1 | 0 | 2 | 2 |
+| Pernell McPhee | 15 | 29 | 17 | 12 | 2 | 0 | 0 | 2 | 0 | 0 | 0 |
+| Arthur Brown | 11 | 5 | 4 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Robert James | 15 | 4 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Corey Graham | 14 | 100 | 68 | 32 | 9 | 1 | 27 | 16 | 0 | 1 | 1 | 1 |
-| Michael Huff | 14 | 70 | 52 | 18 | 2 | 2 | 35 | 13 | 2 | 2 | 0 | 0 |
-| James Ihedigbo | 14 | 45 | 23 | 22 | 3 | 2 | 35 | 10 | 1 | 1 | 0 | 0 |
-| Lardarius Webb | 14 | 44 | 29 | 15 | 1 | 2 | 38 | 10 | 0 | 1 | 0 | 0 |
-| Jimmy Smith | 14 | 39 | 30 | 9 | 1 | 2 | 27 | 5 | 0 | 0 | 2 | 2 |
-| Chykie Brown | 14 | 11 | 4 | 7 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
-| Anthony Levine | 13 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Matt Elam | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Corey Graham | 15 | 102 | 70 | 32 | 9 | 2 | 29 | 18 | 0 | 1 | 1 | 1 |
+| Michael Huff | 15 | 75 | 56 | 19 | 2 | 2 | 35 | 14 | 2 | 2 | 0 | 0 |
+| James Ihedigbo | 15 | 51 | 28 | 23 | 3 | 2 | 35 | 10 | 1 | 2 | 0 | 0 |
+| Lardarius Webb | 15 | 46 | 31 | 15 | 1 | 2 | 38 | 10 | 0 | 1 | 0 | 0 |
+| Jimmy Smith | 15 | 40 | 31 | 9 | 1 | 2 | 27 | 5 | 0 | 0 | 2 | 2 |
+| Chykie Brown | 15 | 12 | 5 | 7 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Anthony Levine | 14 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Matt Elam | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
 
 ### Kickers
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Justin Tucker | 14 | 22 | 25 | 88.0 | 26 | 26 | 92 |
+| Justin Tucker | 15 | 22 | 26 | 84.6 | 29 | 29 | 95 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Sam Koch | 14 | 73 | 3112 | 42.6 | 58 | 28 | 0 |
+| Sam Koch | 15 | 81 | 3475 | 42.9 | 58 | 31 | 2 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Morgan Cox | 14 |
+| Morgan Cox | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Jacoby Jones | WR | 14 | 42 | 1087 | 25.9 | 29 | 266 | 9.2 |
+| Jacoby Jones | WR | 15 | 45 | 1139 | 25.3 | 32 | 306 | 9.6 |
 
 ### Other statistics
 
@@ -394,7 +394,7 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Vonta Leach | FB | REC LNG 8 |
+| Vonta Leach | FB | REC LNG 24 |
 | Josh Bynes | ILB | INT YDS 8 |
 | Joe Flacco | QB | RUSH LNG 15 |
 | Bernard Pierce | RB | REC LNG 17 |
@@ -409,85 +409,85 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| E.J. Manuel | 14 | 310 | 471 | 65.8 | 3399 | 7.2 | 21 | 8 | 94.8 | 32 | 215 | 32 | 146 | 2 | 3 | 3 |
-| Jeff Tuel | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| E.J. Manuel | 15 | 333 | 511 | 65.2 | 3752 | 7.3 | 24 | 9 | 95.3 | 33 | 221 | 36 | 168 | 2 | 3 | 3 |
+| Jeff Tuel | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| C.J. Spiller | 13 | 243 | 1185 | 4.9 | 7 | 30 | 59 | 39 | 435 | 2 | 3 | 3 |
-| Fred Jackson | 14 | 98 | 491 | 5.0 | 3 | 24 | 25 | 11 | 77 | 1 | 1 | 1 |
-| Tashard Choice | 14 | 19 | 80 | 4.2 | 1 | 11 | 4 | 2 | 4 | 0 | 1 | 1 |
-| Frank Summers | 14 | 12 | 46 | 3.8 | 1 | 9 | 13 | 8 | 43 | 0 | 0 | 0 |
+| C.J. Spiller | 14 | 265 | 1298 | 4.9 | 7 | 30 | 64 | 42 | 469 | 2 | 3 | 3 |
+| Fred Jackson | 15 | 106 | 552 | 5.2 | 4 | 24 | 26 | 11 | 77 | 1 | 1 | 1 |
+| Tashard Choice | 15 | 22 | 82 | 3.7 | 1 | 11 | 4 | 2 | 4 | 0 | 1 | 1 |
+| Frank Summers | 15 | 13 | 51 | 3.9 | 1 | 9 | 14 | 8 | 43 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Steve Johnson | 14 | 141 | 85 | 940 | 11.1 | 7 | 40 | 2 | 36 | 1 | 1 | 1 |
-| Trevor Graham | 14 | 71 | 47 | 635 | 13.5 | 4 | 67 | 5 | 15 | 0 | 0 | 0 |
-| Marquise Goodwin | 14 | 32 | 21 | 281 | 13.4 | 1 | 48 | 0 | 0 | 0 | 0 | 0 |
-| Robert Woods | 14 | 14 | 13 | 141 | 10.8 | 0 | 24 | 1 | 10 | 0 | 0 | 0 |
-| Chris Hogan | 14 | 7 | 5 | 33 | 6.6 | 0 | 12 | 0 | 0 | 0 | 0 | 0 |
-| Marcus Easley | 14 | 1 | 1 | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Steve Johnson | 15 | 152 | 92 | 1047 | 11.4 | 8 | 40 | 2 | 36 | 1 | 1 | 1 |
+| Trevor Graham | 15 | 81 | 52 | 720 | 13.8 | 4 | 67 | 6 | 24 | 0 | 0 | 0 |
+| Marquise Goodwin | 15 | 38 | 26 | 397 | 15.3 | 3 | 84 | 0 | 0 | 0 | 0 | 0 |
+| Robert Woods | 15 | 14 | 13 | 141 | 10.8 | 0 | 24 | 1 | 10 | 0 | 0 | 0 |
+| Chris Hogan | 15 | 7 | 5 | 33 | 6.6 | 0 | 12 | 0 | 0 | 0 | 0 | 0 |
+| Marcus Easley | 15 | 1 | 1 | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Scott Chandler | 14 | 91 | 69 | 673 | 9.8 | 6 | 50 | 0 | 0 | 0 | 1 | 1 |
-| Lee Smith | 14 | 10 | 8 | 117 | 14.6 | 0 | 36 | 0 | 0 | 0 | 0 | 0 |
-| Chris Gragg | 14 | 2 | 1 | 20 | 20.0 | 0 | 20 | 0 | 0 | 0 | 0 | 0 |
+| Scott Chandler | 15 | 95 | 71 | 677 | 9.5 | 6 | 50 | 0 | 0 | 0 | 1 | 1 |
+| Lee Smith | 15 | 11 | 9 | 124 | 13.8 | 0 | 36 | 0 | 0 | 0 | 0 | 0 |
+| Chris Gragg | 15 | 2 | 1 | 20 | 20.0 | 0 | 20 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Sam Young | 14 | 9 |
-| Eric Wood | 14 | 8 |
-| Erik Pears | 14 | 6 |
-| Thomas Welch | 14 | 3 |
-| Colin Brown | 14 | 2 |
-| Doug Legursky | 12 | 2 |
-| Cordy Glenn | 14 | 1 |
-| Kraig Urbik | 14 | 1 |
+| Sam Young | 15 | 9 |
+| Eric Wood | 15 | 8 |
+| Erik Pears | 15 | 6 |
+| Thomas Welch | 15 | 4 |
+| Colin Brown | 15 | 2 |
+| Doug Legursky | 13 | 2 |
+| Cordy Glenn | 15 | 1 |
+| Kraig Urbik | 15 | 1 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Kyle Williams (BUF) | 14 | 75 | 52 | 23 | 9 | 4 | 6 | 3 | 1 | 1 | 1 |
-| Mario Williams | 14 | 60 | 47 | 13 | 6 | 8 | 13 | 3 | 0 | 0 | 0 |
-| Marcell Dareus | 14 | 28 | 17 | 11 | 4 | 3 | 8 | 2 | 0 | 0 | 0 |
-| Alex Carrington | 14 | 21 | 16 | 5 | 1 | 3 | 5 | 0 | 0 | 0 | 0 |
-| Jerry Hughes | 14 | 16 | 14 | 2 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
-| Alan Branch | 14 | 7 | 6 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Kyle Williams (BUF) | 15 | 77 | 54 | 23 | 9 | 4 | 7 | 3 | 1 | 1 | 1 |
+| Mario Williams | 15 | 63 | 48 | 15 | 6 | 8 | 13 | 3 | 0 | 0 | 0 |
+| Marcell Dareus | 15 | 31 | 20 | 11 | 5 | 3 | 9 | 2 | 0 | 0 | 0 |
+| Alex Carrington | 15 | 25 | 20 | 5 | 1 | 4 | 6 | 0 | 0 | 0 | 0 |
+| Jerry Hughes | 15 | 16 | 14 | 2 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Alan Branch | 15 | 8 | 6 | 2 | 2 | 0 | 1 | 0 | 0 | 0 | 0 |
 | Corbin Bryant | 7 | 2 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Jay Ross | 14 | 2 | 2 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Jay Ross | 15 | 2 | 2 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Nigel Bradham | 14 | 141 | 92 | 49 | 13 | 3 | 11 | 5 | 0 | 0 | 0 |
-| Manny Lawson | 14 | 88 | 56 | 32 | 4 | 1 | 6 | 4 | 1 | 1 | 1 |
-| Kiko Alonso | 14 | 56 | 41 | 15 | 4 | 2 | 5 | 3 | 0 | 0 | 0 |
-| Arthur Moats | 14 | 26 | 14 | 12 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Jamaal Westerman | 14 | 7 | 2 | 5 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |
-| Marcus Dowtin | 14 | 3 | 2 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Nigel Bradham | 15 | 150 | 97 | 53 | 13 | 4 | 12 | 5 | 0 | 0 | 0 |
+| Manny Lawson | 15 | 93 | 59 | 34 | 6 | 1 | 6 | 4 | 1 | 1 | 1 |
+| Kiko Alonso | 15 | 59 | 43 | 16 | 4 | 2 | 6 | 4 | 0 | 0 | 0 |
+| Arthur Moats | 15 | 30 | 17 | 13 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Jamaal Westerman | 15 | 8 | 2 | 6 | 0 | 0 | 1 | 1 | 1 | 0 | 0 |
+| Marcus Dowtin | 15 | 3 | 2 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Justin Rogers | 14 | 112 | 75 | 37 | 5 | 4 | 58 | 16 | 0 | 0 | 0 | 0 |
-| Da'Norris Searcy | 14 | 80 | 56 | 24 | 5 | 3 | 29 | 15 | 0 | 0 | 0 | 0 |
-| Leodis McKelvin | 14 | 41 | 24 | 17 | 0 | 1 | 4 | 6 | 1 | 1 | 0 | 0 |
-| Ron Brooks | 14 | 38 | 20 | 18 | 2 | 1 | 35 | 3 | 0 | 0 | 0 | 0 |
-| Aaron Williams | 12 | 37 | 25 | 12 | 2 | 1 | 28 | 12 | 0 | 0 | 1 | 1 |
-| Jim Leonhard | 12 | 9 | 3 | 6 | 1 | 4 | 55 | 7 | 0 | 0 | 0 | 0 |
-| Brandon Burton | 14 | 3 | 1 | 2 | 1 | 1 | 30 | 2 | 0 | 0 | 0 | 0 |
+| Justin Rogers | 15 | 116 | 78 | 38 | 5 | 4 | 58 | 19 | 0 | 1 | 1 | 1 |
+| Da'Norris Searcy | 15 | 83 | 59 | 24 | 5 | 3 | 29 | 16 | 0 | 0 | 0 | 0 |
+| Leodis McKelvin | 15 | 46 | 26 | 20 | 1 | 1 | 4 | 7 | 1 | 1 | 0 | 0 |
+| Aaron Williams | 13 | 41 | 29 | 12 | 2 | 2 | 63 | 13 | 0 | 0 | 1 | 1 |
+| Ron Brooks | 15 | 39 | 20 | 19 | 2 | 1 | 35 | 3 | 0 | 0 | 0 | 0 |
+| Jim Leonhard | 13 | 10 | 3 | 7 | 1 | 4 | 55 | 7 | 0 | 0 | 0 | 0 |
+| Brandon Burton | 15 | 3 | 1 | 2 | 1 | 1 | 30 | 2 | 0 | 0 | 0 | 0 |
 | Duke Williams | 2 | 2 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Jonathan Meeks | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Nickell Robey | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -496,26 +496,26 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Dan Carpenter | 14 | 25 | 26 | 96.2 | 36 | 36 | 111 |
+| Dan Carpenter | 15 | 27 | 30 | 90.0 | 40 | 40 | 121 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Shawn Powell | 14 | 64 | 2927 | 45.7 | 63 | 22 | 2 |
+| Shawn Powell | 15 | 65 | 2977 | 45.8 | 63 | 23 | 2 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Garrison Sanborn | 14 |
+| Garrison Sanborn | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Marquise Goodwin | WR | 14 | 37 | 768 | 20.8 | 0 | 0 | — |
-| Leodis McKelvin | CB | 14 | 0 | 0 | — | 28 | 262 | 9.4 |
+| Marquise Goodwin | WR | 15 | 38 | 793 | 20.9 | 0 | 0 | — |
+| Leodis McKelvin | CB | 15 | 0 | 0 | — | 31 | 318 | 10.3 |
 
 ### Other statistics
 
@@ -540,117 +540,117 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Cam Newton | 12 | 271 | 419 | 64.7 | 3139 | 7.5 | 17 | 7 | 93.8 | 36 | 206 | 35 | 143 | 0 | 2 | 2 |
-| Derek Anderson | 14 | 45 | 68 | 66.2 | 532 | 7.8 | 2 | 2 | 87.4 | 5 | 44 | 7 | 32 | 0 | 0 | 0 |
+| Cam Newton | 13 | 289 | 453 | 63.8 | 3395 | 7.5 | 18 | 9 | 91.4 | 41 | 250 | 38 | 163 | 0 | 2 | 2 |
+| Derek Anderson | 15 | 45 | 68 | 66.2 | 532 | 7.8 | 2 | 2 | 87.4 | 5 | 44 | 7 | 32 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| DeAngelo Williams | 14 | 273 | 1429 | 5.2 | 8 | 59 | 53 | 38 | 398 | 3 | 7 | 7 |
-| Kenjon Barner | 11 | 45 | 173 | 3.8 | 1 | 24 | 14 | 10 | 132 | 0 | 1 | 1 |
-| Armond Smith | 14 | 32 | 116 | 3.6 | 1 | 16 | 4 | 2 | 21 | 0 | 1 | 1 |
-| Mike Tolbert | 14 | 8 | 16 | 2.0 | 0 | 8 | 17 | 13 | 162 | 1 | 0 | 0 |
+| DeAngelo Williams | 15 | 291 | 1500 | 5.2 | 9 | 59 | 56 | 41 | 449 | 3 | 7 | 7 |
+| Kenjon Barner | 12 | 49 | 185 | 3.8 | 1 | 24 | 16 | 11 | 136 | 0 | 2 | 2 |
+| Armond Smith | 15 | 32 | 116 | 3.6 | 1 | 16 | 4 | 2 | 21 | 0 | 1 | 1 |
+| Mike Tolbert | 15 | 8 | 16 | 2.0 | 0 | 8 | 18 | 14 | 203 | 1 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Steve Smith | 14 | 114 | 85 | 948 | 11.2 | 5 | 83 | 2 | 13 | 0 | 0 | 0 |
-| Brandon LaFell | 14 | 94 | 58 | 804 | 13.9 | 4 | 68 | 2 | 5 | 0 | 0 | 0 |
-| Domenik Hixon | 14 | 48 | 30 | 362 | 12.1 | 1 | 40 | 0 | 0 | 0 | 0 | 0 |
-| Armanti Edwards | 14 | 19 | 11 | 161 | 14.6 | 1 | 89 | 0 | 0 | 0 | 0 | 0 |
-| Ted Ginn | 13 | 2 | 2 | 8 | 4.0 | 1 | 8 | 0 | 0 | 0 | 0 | 0 |
+| Steve Smith | 15 | 122 | 89 | 1014 | 11.4 | 5 | 83 | 2 | 13 | 0 | 0 | 0 |
+| Brandon LaFell | 15 | 102 | 63 | 849 | 13.5 | 5 | 68 | 2 | 5 | 0 | 1 | 1 |
+| Domenik Hixon | 15 | 48 | 30 | 362 | 12.1 | 1 | 40 | 0 | 0 | 0 | 0 | 0 |
+| Armanti Edwards | 15 | 20 | 12 | 173 | 14.4 | 1 | 89 | 0 | 0 | 0 | 0 | 0 |
+| Ted Ginn | 14 | 2 | 2 | 8 | 4.0 | 1 | 8 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Greg Olsen | 14 | 98 | 54 | 560 | 10.4 | 3 | 49 | 0 | 0 | 0 | 1 | 1 |
-| Ben Hartsock | 14 | 20 | 12 | 115 | 9.6 | 0 | 24 | 0 | 0 | 0 | 0 | 0 |
-| Brandon Williams (CAR) | 14 | 1 | 1 | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Richie Brockel | 14 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Greg Olsen | 15 | 106 | 57 | 597 | 10.5 | 3 | 49 | 0 | 0 | 0 | 1 | 1 |
+| Ben Hartsock | 15 | 23 | 12 | 115 | 9.6 | 0 | 24 | 0 | 0 | 0 | 0 | 0 |
+| Brandon Williams (CAR) | 15 | 1 | 1 | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Richie Brockel | 15 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Byron Bell | 14 | 7 |
-| Garry Williams | 14 | 7 |
-| Ryan Kalil | 14 | 7 |
-| Jeff Byers | 14 | 6 |
-| Amini Silatolu | 14 | 4 |
-| Travelle Wharton | 14 | 4 |
-| Jordan Gross | 14 | 3 |
-| Nate Chandler | 14 | 2 |
+| Byron Bell | 15 | 8 |
+| Ryan Kalil | 15 | 8 |
+| Garry Williams | 15 | 7 |
+| Jeff Byers | 15 | 6 |
+| Amini Silatolu | 15 | 5 |
+| Jordan Gross | 15 | 4 |
+| Travelle Wharton | 15 | 4 |
+| Nate Chandler | 15 | 3 |
 | Brian Folkerts | 3 | 1 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Greg Hardy | 14 | 64 | 51 | 13 | 6 | 6 | 16 | 0 | 0 | 0 | 0 |
-| Dwan Edwards | 14 | 61 | 43 | 18 | 9 | 7 | 14 | 1 | 0 | 2 | 2 |
-| Charles Johnson | 14 | 35 | 23 | 12 | 6 | 1 | 2 | 0 | 0 | 0 | 0 |
-| Star Lotulelei | 14 | 18 | 13 | 5 | 3 | 2 | 5 | 0 | 0 | 0 | 0 |
-| Frank Alexander | 14 | 16 | 13 | 3 | 1 | 2 | 2 | 1 | 0 | 0 | 0 |
-| Mario Addison | 14 | 5 | 4 | 1 | 2 | 0 | 0 | 1 | 0 | 0 | 0 |
-| Colin Cole | 14 | 2 | 2 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Greg Hardy | 15 | 73 | 56 | 17 | 7 | 7 | 17 | 2 | 1 | 0 | 0 |
+| Dwan Edwards | 15 | 67 | 45 | 22 | 9 | 8 | 16 | 1 | 0 | 2 | 2 |
+| Charles Johnson | 15 | 38 | 26 | 12 | 6 | 1 | 2 | 0 | 0 | 0 | 0 |
+| Star Lotulelei | 15 | 21 | 15 | 6 | 3 | 2 | 5 | 0 | 0 | 0 | 0 |
+| Frank Alexander | 15 | 17 | 14 | 3 | 1 | 2 | 2 | 1 | 0 | 0 | 0 |
+| Mario Addison | 15 | 6 | 5 | 1 | 2 | 0 | 0 | 1 | 0 | 0 | 0 |
+| Colin Cole | 15 | 2 | 2 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Luke Kuechly | 14 | 133 | 102 | 31 | 14 | 5 | 12 | 8 | 1 | 0 | 0 |
-| Thomas Davis | 14 | 91 | 73 | 18 | 6 | 3 | 5 | 4 | 1 | 1 | 1 |
-| Jon Beason | 14 | 39 | 25 | 14 | 3 | 1 | 1 | 2 | 1 | 0 | 0 |
-| Chase Blackburn | 14 | 25 | 17 | 8 | 1 | 1 | 2 | 0 | 0 | 0 | 0 |
+| Luke Kuechly | 15 | 143 | 110 | 33 | 14 | 5 | 12 | 8 | 1 | 0 | 0 |
+| Thomas Davis | 15 | 102 | 78 | 24 | 6 | 5 | 7 | 4 | 1 | 1 | 1 |
+| Jon Beason | 15 | 43 | 28 | 15 | 3 | 1 | 1 | 2 | 1 | 0 | 0 |
+| Chase Blackburn | 15 | 26 | 17 | 9 | 1 | 1 | 2 | 0 | 0 | 0 | 0 |
+| Jordan Senn | 15 | 6 | 4 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | A.J. Klein | 14 | 4 | 1 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Jordan Senn | 14 | 4 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Charles Godfrey | 14 | 89 | 58 | 31 | 3 | 1 | 11 | 9 | 1 | 2 | 1 | 1 |
-| Captain Munnerlyn | 14 | 71 | 44 | 27 | 3 | 1 | 22 | 9 | 0 | 0 | 0 | 0 |
-| Michael Mitchell | 13 | 48 | 30 | 18 | 0 | 4 | 40 | 10 | 0 | 0 | 0 | 0 |
-| Josh Norman | 14 | 37 | 24 | 13 | 0 | 2 | 8 | 8 | 1 | 2 | 0 | 0 |
-| Josh Thomas | 14 | 32 | 20 | 12 | 0 | 0 | 0 | 5 | 0 | 0 | 0 | 0 |
-| D.J. Moore | 14 | 11 | 5 | 6 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
-| Colin Jones | 4 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| James Dockery | 12 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Charles Godfrey | 15 | 96 | 61 | 35 | 3 | 1 | 11 | 9 | 1 | 2 | 1 | 1 |
+| Captain Munnerlyn | 15 | 78 | 49 | 29 | 3 | 1 | 22 | 10 | 0 | 0 | 0 | 0 |
+| Michael Mitchell | 14 | 52 | 34 | 18 | 0 | 5 | 68 | 12 | 0 | 0 | 0 | 0 |
+| Josh Norman | 15 | 39 | 26 | 13 | 0 | 2 | 8 | 8 | 1 | 2 | 0 | 0 |
+| Josh Thomas | 15 | 33 | 21 | 12 | 1 | 0 | 0 | 5 | 0 | 0 | 0 | 0 |
+| D.J. Moore | 15 | 14 | 7 | 7 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| James Dockery | 13 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Colin Jones | 5 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Melvin White | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Kickers
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Graham Gano | 14 | 28 | 31 | 90.3 | 29 | 29 | 113 |
+| Graham Gano | 15 | 29 | 32 | 90.6 | 31 | 31 | 118 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Brad Nortman | 14 | 59 | 2642 | 44.8 | 62 | 27 | 0 |
+| Brad Nortman | 15 | 64 | 2848 | 44.5 | 62 | 29 | 0 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| J.J. Jansen | 14 |
+| J.J. Jansen | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Ted Ginn | WR | 13 | 31 | 744 | 24.0 | 24 | 180 | 7.5 |
-| DeAngelo Williams | RB | 14 | 1 | 26 | 26.0 | 0 | 0 | — |
-| Steve Smith | WR | 14 | 1 | 23 | 23.0 | 0 | 0 | — |
-| Josh Norman | CB | 14 | 0 | 0 | — | 1 | 22 | 22.0 |
-| Brandon LaFell | WR | 14 | 1 | 21 | 21.0 | 0 | 0 | — |
-| Armanti Edwards | WR | 14 | 1 | 20 | 20.0 | 0 | 0 | — |
-| James Dockery | CB | 12 | 0 | 0 | — | 1 | 3 | 3.0 |
+| Ted Ginn | WR | 14 | 35 | 824 | 23.5 | 27 | 208 | 7.7 |
+| DeAngelo Williams | RB | 15 | 1 | 26 | 26.0 | 0 | 0 | — |
+| Steve Smith | WR | 15 | 1 | 23 | 23.0 | 0 | 0 | — |
+| Josh Norman | CB | 15 | 0 | 0 | — | 1 | 22 | 22.0 |
+| Brandon LaFell | WR | 15 | 1 | 21 | 21.0 | 0 | 0 | — |
+| Armanti Edwards | WR | 15 | 1 | 20 | 20.0 | 0 | 0 | — |
+| James Dockery | CB | 13 | 0 | 0 | — | 1 | 3 | 3.0 |
 
 ### Other statistics
 
@@ -658,6 +658,7 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
+| Greg Hardy | DE | INT YDS 26 |
 | Mike Tolbert | FB | REC LNG 50 |
 | Jon Beason | MLB | INT YDS 8 |
 | Luke Kuechly | MLB | INT YDS 31 |
@@ -675,74 +676,74 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Jay Cutler | 14 | 329 | 534 | 61.6 | 3874 | 7.3 | 26 | 16 | 87.4 | 35 | 234 | 35 | 116 | 1 | 1 | 1 |
-| Josh McCown | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Jay Cutler | 15 | 344 | 557 | 61.8 | 4025 | 7.2 | 26 | 16 | 87.2 | 37 | 243 | 37 | 133 | 2 | 1 | 1 |
+| Josh McCown | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Matt Forte | 14 | 241 | 1179 | 4.9 | 8 | 82 | 48 | 33 | 286 | 3 | 2 | 2 |
-| Michael Bush | 14 | 76 | 371 | 4.9 | 1 | 41 | 14 | 9 | 177 | 0 | 0 | 0 |
-| Michael Ford | 14 | 14 | 63 | 4.5 | 0 | 13 | 1 | 1 | 9 | 0 | 0 | 0 |
-| Tony Fiammetta | 14 | 5 | 18 | 3.6 | 0 | 7 | 11 | 9 | 182 | 1 | 0 | 0 |
+| Matt Forte | 15 | 253 | 1267 | 5.0 | 8 | 82 | 52 | 36 | 304 | 3 | 2 | 2 |
+| Michael Bush | 15 | 84 | 395 | 4.7 | 1 | 41 | 16 | 11 | 205 | 0 | 0 | 0 |
+| Michael Ford | 15 | 14 | 63 | 4.5 | 0 | 13 | 1 | 1 | 9 | 0 | 0 | 0 |
+| Tony Fiammetta | 15 | 7 | 37 | 5.3 | 0 | 14 | 11 | 9 | 182 | 1 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Brandon Marshall | 14 | 173 | 110 | 1387 | 12.6 | 6 | 93 | 3 | 21 | 0 | 1 | 1 |
-| Alshon Jeffery | 14 | 97 | 55 | 739 | 13.4 | 8 | 47 | 3 | 22 | 0 | 1 | 1 |
-| Earl Bennett | 14 | 52 | 27 | 344 | 12.7 | 1 | 46 | 4 | 15 | 0 | 0 | 0 |
-| Joe Anderson | 14 | 20 | 12 | 157 | 13.1 | 1 | 38 | 0 | 0 | 0 | 0 | 0 |
-| Eric Weems | 14 | 1 | 1 | 8 | 8.0 | 0 | 8 | 0 | 0 | 0 | 0 | 0 |
-| Devin Hester | 14 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Marquess Wilson | 14 | 1 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Brandon Marshall | 15 | 175 | 111 | 1388 | 12.5 | 6 | 93 | 3 | 21 | 0 | 1 | 1 |
+| Alshon Jeffery | 15 | 101 | 58 | 793 | 13.7 | 8 | 47 | 3 | 22 | 0 | 1 | 1 |
+| Earl Bennett | 15 | 57 | 30 | 363 | 12.1 | 1 | 46 | 4 | 15 | 0 | 0 | 0 |
+| Joe Anderson | 15 | 20 | 12 | 157 | 13.1 | 1 | 38 | 0 | 0 | 0 | 0 | 0 |
+| Eric Weems | 15 | 1 | 1 | 8 | 8.0 | 0 | 8 | 0 | 0 | 0 | 0 | 0 |
+| Devin Hester | 15 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Marquess Wilson | 15 | 1 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Martellus Bennett | 14 | 86 | 52 | 405 | 7.8 | 2 | 36 | 0 | 0 | 0 | 0 | 0 |
-| Steve Maneri | 14 | 24 | 19 | 178 | 9.4 | 4 | 36 | 0 | 0 | 0 | 0 | 0 |
-| Dante Rosario | 14 | 2 | 1 | 2 | 2.0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
-| Kyle Adams | 14 | 1 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Martellus Bennett | 15 | 91 | 55 | 436 | 7.9 | 2 | 36 | 0 | 0 | 0 | 0 | 0 |
+| Steve Maneri | 15 | 24 | 19 | 178 | 9.4 | 4 | 36 | 0 | 0 | 0 | 0 | 0 |
+| Dante Rosario | 15 | 2 | 1 | 2 | 2.0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
+| Kyle Adams | 15 | 1 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Eben Britton | 14 | 7 |
-| Jordan Mills | 14 | 6 |
-| Kyle Long | 14 | 6 |
-| Jermon Bushrod | 11 | 5 |
-| Roberto Garza | 14 | 4 |
+| Eben Britton | 15 | 7 |
+| Jordan Mills | 15 | 7 |
+| Jermon Bushrod | 12 | 6 |
+| Kyle Long | 15 | 6 |
+| Roberto Garza | 15 | 4 |
 | James Brown | 2 | 3 |
-| Matt Slauson | 14 | 3 |
-| Taylor Boggs | 13 | 1 |
+| Matt Slauson | 15 | 3 |
+| Taylor Boggs | 14 | 1 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Henry Melton | 14 | 92 | 60 | 32 | 5 | 7 | 13 | 4 | 0 | 0 | 0 |
-| Julius Peppers | 14 | 58 | 33 | 25 | 2 | 2 | 4 | 2 | 0 | 0 | 0 |
-| Corey Wootton | 14 | 37 | 23 | 14 | 6 | 3 | 9 | 3 | 0 | 0 | 0 |
-| Stephen Paea | 14 | 21 | 19 | 2 | 4 | 1 | 2 | 1 | 0 | 0 | 0 |
-| Nate Collins | 14 | 11 | 7 | 4 | 1 | 1 | 4 | 0 | 0 | 0 | 0 |
-| Cornelius Washington | 14 | 10 | 5 | 5 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Zach Minter | 14 | 10 | 4 | 6 | 1 | 1 | 2 | 0 | 0 | 0 | 0 |
+| Henry Melton | 15 | 100 | 65 | 35 | 5 | 7 | 13 | 4 | 0 | 0 | 0 |
+| Julius Peppers | 15 | 62 | 36 | 26 | 2 | 2 | 5 | 2 | 0 | 0 | 0 |
+| Corey Wootton | 15 | 40 | 24 | 16 | 6 | 3 | 10 | 3 | 0 | 0 | 0 |
+| Stephen Paea | 15 | 24 | 21 | 3 | 4 | 1 | 2 | 1 | 0 | 0 | 0 |
+| Nate Collins | 15 | 11 | 7 | 4 | 1 | 1 | 4 | 0 | 0 | 0 | 0 |
+| Cornelius Washington | 15 | 10 | 5 | 5 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Zach Minter | 15 | 10 | 4 | 6 | 1 | 1 | 2 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Lance Briggs | 14 | 134 | 91 | 43 | 8 | 7 | 13 | 6 | 2 | 0 | 0 |
-| James Anderson | 12 | 69 | 47 | 22 | 4 | 1 | 3 | 1 | 0 | 0 | 0 |
-| D.J. Williams | 14 | 63 | 41 | 22 | 2 | 2 | 3 | 3 | 0 | 1 | 1 |
-| Shea McClellin | 14 | 32 | 14 | 18 | 1 | 2 | 2 | 0 | 0 | 2 | 2 |
-| Blake Costanzo | 14 | 8 | 3 | 5 | 0 | 0 | 1 | 1 | 0 | 0 | 0 |
-| David Bass | 14 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Lance Briggs | 15 | 144 | 99 | 45 | 8 | 7 | 13 | 6 | 2 | 0 | 0 |
+| James Anderson | 13 | 74 | 49 | 25 | 4 | 2 | 4 | 1 | 0 | 0 | 0 |
+| D.J. Williams | 15 | 66 | 43 | 23 | 2 | 2 | 3 | 3 | 0 | 1 | 1 |
+| Shea McClellin | 15 | 33 | 14 | 19 | 1 | 2 | 2 | 0 | 0 | 2 | 2 |
+| Blake Costanzo | 15 | 9 | 4 | 5 | 0 | 0 | 1 | 1 | 0 | 0 | 0 |
+| David Bass | 15 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Jon Bostic | 6 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Khaseem Greene | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
@@ -750,12 +751,12 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Charles Tillman | 14 | 96 | 67 | 29 | 1 | 3 | 51 | 15 | 2 | 4 | 0 | 0 |
-| Major Wright | 14 | 70 | 46 | 24 | 3 | 4 | 4 | 14 | 3 | 3 | 0 | 0 |
-| Tim Jennings | 14 | 47 | 33 | 14 | 1 | 2 | 24 | 4 | 0 | 1 | 0 | 0 |
-| Chris Conte | 14 | 43 | 31 | 12 | 0 | 2 | 43 | 10 | 0 | 0 | 0 | 0 |
-| Anthony Walters | 14 | 30 | 24 | 6 | 3 | 1 | 14 | 4 | 0 | 0 | 0 | 0 |
-| Craig Steltz | 14 | 7 | 6 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Charles Tillman | 15 | 108 | 73 | 35 | 1 | 3 | 51 | 15 | 2 | 4 | 0 | 0 |
+| Major Wright | 15 | 76 | 49 | 27 | 3 | 4 | 4 | 15 | 3 | 3 | 0 | 0 |
+| Tim Jennings | 15 | 52 | 38 | 14 | 1 | 3 | 26 | 5 | 0 | 1 | 0 | 0 |
+| Chris Conte | 15 | 50 | 37 | 13 | 0 | 2 | 43 | 12 | 0 | 0 | 0 | 0 |
+| Anthony Walters | 15 | 34 | 27 | 7 | 3 | 1 | 14 | 4 | 0 | 0 | 0 | 0 |
+| Craig Steltz | 15 | 9 | 7 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Zackary Bowman | 4 | 2 | 0 | 2 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
 | C.J. Wilson (CHI) | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Isaiah Frey | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -765,25 +766,25 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Robbie Gould | 14 | 27 | 30 | 90.0 | 36 | 36 | 117 |
+| Robbie Gould | 15 | 29 | 34 | 85.3 | 37 | 37 | 124 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Adam Podlesh | 14 | 63 | 2861 | 45.4 | 63 | 20 | 3 |
+| Adam Podlesh | 15 | 67 | 3041 | 45.4 | 63 | 23 | 3 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Patrick Mannelly | 14 |
+| Patrick Mannelly | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Devin Hester | WR | 14 | 28 | 650 | 23.2 | 38 | 383 | 10.1 |
+| Devin Hester | WR | 15 | 31 | 741 | 23.9 | 38 | 383 | 10.1 |
 
 ### Other statistics
 
@@ -807,49 +808,49 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Andy Dalton | 14 | 341 | 537 | 63.5 | 3708 | 6.9 | 21 | 14 | 85.9 | 28 | 177 | 42 | 155 | 1 | 1 | 1 |
-| Josh Johnson | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Andy Dalton | 15 | 366 | 580 | 63.1 | 4091 | 7.1 | 26 | 14 | 88.9 | 33 | 207 | 46 | 193 | 1 | 1 | 1 |
+| Josh Johnson | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| BenJarvus Green-Ellis | 14 | 308 | 1326 | 4.3 | 4 | 30 | 66 | 45 | 550 | 4 | 0 | 0 |
-| Giovani Bernard | 14 | 75 | 246 | 3.3 | 2 | 13 | 11 | 8 | 40 | 1 | 1 | 1 |
-| Cedric Peerman | 14 | 16 | 82 | 5.1 | 0 | 13 | 2 | 0 | 0 | 0 | 0 | 0 |
-| Rex Burkhead | 14 | 1 | 4 | 4.0 | 0 | 4 | 1 | 1 | 21 | 0 | 0 | 0 |
+| BenJarvus Green-Ellis | 15 | 331 | 1427 | 4.3 | 4 | 30 | 70 | 46 | 572 | 4 | 0 | 0 |
+| Giovani Bernard | 15 | 78 | 269 | 3.4 | 2 | 13 | 12 | 9 | 43 | 1 | 1 | 1 |
+| Cedric Peerman | 15 | 17 | 85 | 5.0 | 0 | 13 | 2 | 0 | 0 | 0 | 0 | 0 |
+| Rex Burkhead | 15 | 1 | 4 | 4.0 | 0 | 4 | 1 | 1 | 21 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| A.J. Green | 14 | 164 | 107 | 1175 | 11.0 | 5 | 46 | 5 | 14 | 0 | 0 | 0 |
-| Mohamed Sanu | 8 | 52 | 34 | 487 | 14.3 | 2 | 47 | 1 | 7 | 0 | 0 | 0 |
-| Marvin Jones | 14 | 63 | 38 | 447 | 11.8 | 3 | 42 | 5 | 32 | 0 | 0 | 0 |
-| Brandon Tate | 14 | 35 | 26 | 275 | 10.6 | 2 | 38 | 0 | 0 | 0 | 0 | 0 |
-| Ryan Whalen | 14 | 11 | 8 | 61 | 7.6 | 0 | 15 | 0 | 0 | 0 | 1 | 1 |
-| Dane Sanzenbacher | 14 | 3 | 3 | 18 | 6.0 | 1 | 8 | 0 | 0 | 0 | 0 | 0 |
+| A.J. Green | 15 | 176 | 113 | 1267 | 11.2 | 5 | 46 | 5 | 14 | 0 | 0 | 0 |
+| Mohamed Sanu | 9 | 58 | 37 | 571 | 15.4 | 3 | 47 | 1 | 7 | 0 | 0 | 0 |
+| Marvin Jones | 15 | 68 | 42 | 508 | 12.1 | 3 | 42 | 5 | 32 | 0 | 0 | 0 |
+| Brandon Tate | 15 | 36 | 27 | 303 | 11.2 | 3 | 38 | 0 | 0 | 0 | 0 | 0 |
+| Ryan Whalen | 15 | 11 | 8 | 61 | 7.6 | 0 | 15 | 0 | 0 | 0 | 1 | 1 |
+| Dane Sanzenbacher | 15 | 3 | 3 | 18 | 6.0 | 1 | 8 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Jermaine Gresham | 14 | 105 | 61 | 550 | 9.0 | 3 | 33 | 0 | 0 | 0 | 0 | 0 |
-| Orson Charles | 14 | 18 | 9 | 76 | 8.4 | 0 | 15 | 0 | 0 | 0 | 0 | 0 |
-| Tyler Eifert | 14 | 3 | 1 | 8 | 8.0 | 0 | 8 | 0 | 0 | 0 | 0 | 0 |
-| Alex Smith (CIN) | 14 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Jermaine Gresham | 15 | 113 | 66 | 596 | 9.0 | 4 | 33 | 0 | 0 | 0 | 0 | 0 |
+| Orson Charles | 15 | 24 | 13 | 123 | 9.5 | 2 | 35 | 0 | 0 | 0 | 0 | 0 |
+| Tyler Eifert | 15 | 3 | 1 | 8 | 8.0 | 0 | 8 | 0 | 0 | 0 | 0 | 0 |
+| Alex Smith (CIN) | 15 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Andre Smith (CIN) | 14 | 7 |
-| Clint Boling | 14 | 6 |
-| Andrew Whitworth | 13 | 4 |
-| Kyle Cook | 14 | 4 |
-| Mike Pollak | 9 | 3 |
-| Anthony Collins | 14 | 2 |
-| Kevin Zeitler | 14 | 2 |
+| Andre Smith (CIN) | 15 | 7 |
+| Clint Boling | 15 | 7 |
+| Kyle Cook | 15 | 5 |
+| Mike Pollak | 10 | 5 |
+| Andrew Whitworth | 14 | 4 |
+| Anthony Collins | 15 | 3 |
+| Kevin Zeitler | 15 | 2 |
 | Dennis Roland | 2 | 0 |
 | Tanner Hawkinson | 2 | 0 |
 | Trevor Robinson | 3 | 0 |
@@ -858,37 +859,37 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Geno Atkins | 14 | 90 | 59 | 31 | 13 | 4 | 9 | 4 | 0 | 0 | 0 |
-| Michael Johnson | 14 | 44 | 33 | 11 | 5 | 3 | 15 | 1 | 0 | 1 | 1 |
-| Domata Peko | 14 | 29 | 16 | 13 | 5 | 0 | 4 | 1 | 0 | 0 | 0 |
-| Robert Geathers | 14 | 29 | 21 | 8 | 3 | 4 | 4 | 3 | 1 | 1 | 1 |
-| Wallace Gilberry | 14 | 15 | 11 | 4 | 2 | 2 | 2 | 0 | 0 | 0 | 0 |
-| Devon Still | 14 | 9 | 5 | 4 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Geno Atkins | 15 | 96 | 61 | 35 | 14 | 4 | 11 | 4 | 0 | 0 | 0 |
+| Michael Johnson | 15 | 46 | 34 | 12 | 5 | 3 | 15 | 1 | 0 | 1 | 1 |
+| Domata Peko | 15 | 30 | 16 | 14 | 6 | 0 | 5 | 1 | 0 | 0 | 0 |
+| Robert Geathers | 15 | 29 | 21 | 8 | 3 | 4 | 5 | 3 | 1 | 1 | 1 |
+| Wallace Gilberry | 15 | 15 | 11 | 4 | 2 | 2 | 2 | 0 | 0 | 0 | 0 |
+| Devon Still | 15 | 10 | 6 | 4 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
 | Margus Hunt | 10 | 2 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Brandon Thompson | 14 | 1 | 1 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
+| Brandon Thompson | 15 | 1 | 1 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Vontaze Burfict | 14 | 148 | 92 | 56 | 8 | 6 | 10 | 7 | 2 | 2 | 2 |
-| Rey Maualuga | 14 | 85 | 57 | 28 | 5 | 1 | 7 | 5 | 0 | 0 | 0 |
-| James Harrison | 14 | 63 | 45 | 18 | 4 | 1 | 3 | 2 | 0 | 0 | 0 |
-| Carlos Dunlap | 14 | 19 | 11 | 8 | 0 | 1 | 1 | 0 | 0 | 2 | 2 |
-| Vincent Rey | 14 | 10 | 5 | 5 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
-| Jayson DiManche | 14 | 2 | 1 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
+| Vontaze Burfict | 15 | 160 | 101 | 59 | 8 | 6 | 10 | 10 | 3 | 2 | 2 |
+| Rey Maualuga | 15 | 89 | 60 | 29 | 6 | 1 | 7 | 5 | 0 | 0 | 0 |
+| James Harrison | 15 | 68 | 48 | 20 | 4 | 1 | 3 | 3 | 0 | 0 | 0 |
+| Carlos Dunlap | 15 | 20 | 12 | 8 | 0 | 2 | 2 | 0 | 0 | 2 | 2 |
+| Vincent Rey | 15 | 10 | 5 | 5 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Jayson DiManche | 15 | 2 | 1 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Reggie Nelson | 14 | 108 | 71 | 37 | 6 | 2 | 29 | 12 | 2 | 3 | 0 | 0 |
-| Terence Newman | 14 | 85 | 55 | 30 | 3 | 3 | 37 | 19 | 0 | 0 | 0 | 0 |
-| Leon Hall | 14 | 57 | 34 | 23 | 4 | 1 | 10 | 7 | 0 | 0 | 0 | 0 |
-| George Iloka | 14 | 32 | 17 | 15 | 0 | 0 | 0 | 4 | 0 | 0 | 0 | 0 |
-| Adam Jones | 14 | 25 | 11 | 14 | 1 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
-| Jeromy Miles | 14 | 13 | 6 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Taylor Mays | 14 | 6 | 5 | 1 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
+| Reggie Nelson | 15 | 114 | 77 | 37 | 7 | 2 | 29 | 14 | 2 | 3 | 0 | 0 |
+| Terence Newman | 15 | 91 | 59 | 32 | 3 | 3 | 37 | 19 | 0 | 0 | 0 | 0 |
+| Leon Hall | 15 | 60 | 37 | 23 | 4 | 1 | 10 | 9 | 0 | 0 | 0 | 0 |
+| George Iloka | 15 | 36 | 19 | 17 | 0 | 0 | 0 | 5 | 0 | 1 | 0 | 0 |
+| Adam Jones | 15 | 25 | 11 | 14 | 1 | 0 | 0 | 3 | 0 | 0 | 0 | 0 |
+| Jeromy Miles | 15 | 16 | 9 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Taylor Mays | 15 | 6 | 5 | 1 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
 | Dre Kirkpatrick | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Shawn Williams | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
@@ -896,26 +897,26 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Mike Nugent | 14 | 28 | 35 | 80.0 | 28 | 28 | 112 |
+| Mike Nugent | 15 | 30 | 38 | 78.9 | 32 | 32 | 122 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Kevin Huber | 14 | 72 | 3142 | 43.6 | 62 | 20 | 3 |
+| Kevin Huber | 15 | 78 | 3426 | 43.9 | 62 | 21 | 3 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Clark Harris | 14 |
+| Clark Harris | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Brandon Tate | WR | 14 | 32 | 765 | 23.9 | 0 | 0 | — |
-| Adam Jones | CB | 14 | 0 | 0 | — | 41 | 432 | 10.5 |
+| Brandon Tate | WR | 15 | 36 | 858 | 23.8 | 0 | 0 | — |
+| Adam Jones | CB | 15 | 0 | 0 | — | 42 | 436 | 10.4 |
 
 ### Other statistics
 
@@ -925,7 +926,7 @@ Counters outside the player's position table, such as coverage tackles by offens
 |---|---|---|
 | BenJarvus Green-Ellis | HB | REC LNG 56 |
 | Giovani Bernard | HB | REC LNG 11 |
-| Vontaze Burfict | MLB | INT YDS 29 |
+| Vontaze Burfict | MLB | INT YDS 60 |
 | Andy Dalton | QB | RUSH LNG 26 |
 | Rex Burkhead | RB | REC LNG 21 |
 | A.J. Green | WR | RUSH LNG 5 |
@@ -938,72 +939,72 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Brandon Weeden | 14 | 295 | 495 | 59.6 | 3122 | 6.3 | 25 | 16 | 81.4 | 23 | 156 | 40 | 129 | 0 | 0 | 0 |
-| Brian Hoyer | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Jason Campbell | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Brandon Weeden | 15 | 327 | 554 | 59.0 | 3459 | 6.2 | 25 | 21 | 76.5 | 24 | 159 | 42 | 134 | 0 | 0 | 0 |
+| Brian Hoyer | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Jason Campbell | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Trent Richardson | 14 | 265 | 1039 | 3.9 | 4 | 28 | 66 | 33 | 352 | 1 | 2 | 2 |
-| Bobby Rainey | 14 | 72 | 361 | 5.0 | 3 | 33 | 17 | 11 | 61 | 0 | 1 | 1 |
-| Chris Ogbonnaya | 14 | 9 | 46 | 5.1 | 1 | 19 | 12 | 7 | 60 | 0 | 0 | 0 |
+| Trent Richardson | 15 | 277 | 1070 | 3.9 | 4 | 28 | 73 | 36 | 375 | 1 | 2 | 2 |
+| Bobby Rainey | 15 | 74 | 376 | 5.1 | 3 | 33 | 20 | 11 | 61 | 0 | 1 | 1 |
+| Chris Ogbonnaya | 15 | 9 | 46 | 5.1 | 1 | 19 | 14 | 9 | 74 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Davone Bess | 14 | 140 | 90 | 940 | 10.4 | 11 | 40 | 3 | 18 | 0 | 0 | 0 |
-| Greg Little | 14 | 77 | 49 | 509 | 10.4 | 3 | 43 | 4 | 14 | 0 | 0 | 0 |
-| Travis Benjamin | 14 | 52 | 28 | 216 | 7.7 | 1 | 43 | 0 | 0 | 0 | 0 | 0 |
-| Josh Cooper | 14 | 21 | 14 | 193 | 13.8 | 2 | 43 | 1 | 2 | 0 | 0 | 0 |
+| Davone Bess | 15 | 156 | 100 | 1035 | 10.3 | 11 | 40 | 3 | 18 | 0 | 0 | 0 |
+| Greg Little | 15 | 90 | 57 | 616 | 10.8 | 3 | 48 | 4 | 14 | 0 | 0 | 0 |
+| Travis Benjamin | 15 | 58 | 33 | 253 | 7.7 | 1 | 43 | 0 | 0 | 0 | 0 | 0 |
+| Josh Cooper | 15 | 21 | 14 | 193 | 13.8 | 2 | 43 | 1 | 2 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Jordan Cameron | 14 | 83 | 50 | 650 | 13.0 | 5 | 69 | 0 | 0 | 0 | 0 | 0 |
-| Gary Barnidge | 14 | 23 | 11 | 130 | 11.8 | 2 | 36 | 0 | 0 | 0 | 0 | 0 |
-| MarQueis Gray | 14 | 4 | 2 | 11 | 5.5 | 0 | 8 | 0 | 0 | 0 | 0 | 0 |
+| Jordan Cameron | 15 | 91 | 53 | 664 | 12.5 | 5 | 69 | 0 | 0 | 0 | 0 | 0 |
+| Gary Barnidge | 15 | 27 | 12 | 177 | 14.8 | 2 | 47 | 0 | 0 | 0 | 0 | 0 |
+| MarQueis Gray | 15 | 4 | 2 | 11 | 5.5 | 0 | 8 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| John Greco | 14 | 6 |
-| Oniel Cousins | 14 | 4 |
-| Patrick Lewis | 14 | 3 |
-| Rashad Butler | 14 | 3 |
-| Alex Mack | 14 | 2 |
-| Garrett Gilkey | 14 | 2 |
-| Joe Thomas | 14 | 2 |
-| Mitchell Schwartz | 14 | 1 |
+| John Greco | 15 | 7 |
+| Oniel Cousins | 15 | 4 |
+| Patrick Lewis | 15 | 3 |
+| Rashad Butler | 15 | 3 |
+| Alex Mack | 15 | 2 |
+| Garrett Gilkey | 15 | 2 |
+| Joe Thomas | 15 | 2 |
+| Mitchell Schwartz | 15 | 1 |
 | Martin Wallace | 2 | 0 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Ahtyba Rubin | 14 | 101 | 71 | 30 | 9 | 6 | 17 | 2 | 0 | 3 | 3 |
-| Desmond Bryant | 14 | 55 | 35 | 20 | 5 | 2 | 4 | 0 | 0 | 0 | 0 |
-| Phillip Taylor | 14 | 32 | 23 | 9 | 3 | 3 | 6 | 2 | 0 | 0 | 0 |
-| John Hughes | 14 | 22 | 11 | 11 | 0 | 2 | 3 | 2 | 0 | 0 | 0 |
-| Billy Winn | 14 | 15 | 8 | 7 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Ishmaa'ily Kitchen | 14 | 8 | 5 | 3 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
-| Armonty Bryant | 14 | 3 | 1 | 2 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Ahtyba Rubin | 15 | 109 | 76 | 33 | 11 | 7 | 19 | 2 | 0 | 3 | 3 |
+| Desmond Bryant | 15 | 57 | 37 | 20 | 5 | 3 | 5 | 0 | 0 | 0 | 0 |
+| Phillip Taylor | 15 | 38 | 26 | 12 | 4 | 4 | 7 | 3 | 0 | 0 | 0 |
+| John Hughes | 15 | 24 | 12 | 12 | 0 | 2 | 3 | 2 | 0 | 0 | 0 |
+| Billy Winn | 15 | 16 | 9 | 7 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ishmaa'ily Kitchen | 15 | 8 | 5 | 3 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Armonty Bryant | 15 | 3 | 1 | 2 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| D'Qwell Jackson | 14 | 135 | 91 | 44 | 6 | 4 | 7 | 5 | 1 | 2 | 2 |
-| Craig Robertson | 14 | 90 | 59 | 31 | 3 | 4 | 7 | 6 | 1 | 0 | 0 |
-| Paul Kruger | 14 | 29 | 19 | 10 | 2 | 2 | 6 | 3 | 1 | 1 | 1 |
-| Jabaal Sheard | 8 | 24 | 14 | 10 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
-| Quentin Groves | 14 | 11 | 7 | 4 | 0 | 1 | 2 | 2 | 0 | 0 | 0 |
-| Tank Carder | 14 | 6 | 3 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Barkevious Mingo | 13 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| D'Qwell Jackson | 15 | 143 | 97 | 46 | 6 | 4 | 7 | 5 | 1 | 2 | 2 |
+| Craig Robertson | 15 | 94 | 61 | 33 | 3 | 4 | 7 | 6 | 1 | 0 | 0 |
+| Paul Kruger | 15 | 30 | 20 | 10 | 2 | 2 | 6 | 4 | 1 | 1 | 1 |
+| Jabaal Sheard | 9 | 27 | 16 | 11 | 2 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Quentin Groves | 15 | 13 | 8 | 5 | 0 | 1 | 2 | 2 | 0 | 0 | 0 |
+| Tank Carder | 15 | 6 | 3 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Barkevious Mingo | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Brandon Magee | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Eric Martin | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Paul Hazel | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -1012,39 +1013,39 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| T.J. Ward | 14 | 101 | 71 | 30 | 2 | 3 | 44 | 12 | 0 | 0 | 1 | 1 |
-| Buster Skrine | 13 | 97 | 66 | 31 | 2 | 7 | 119 | 24 | 0 | 0 | 2 | 2 |
-| Joe Haden | 14 | 59 | 45 | 14 | 0 | 6 | 108 | 14 | 0 | 1 | 0 | 0 |
-| Christopher Owens | 14 | 35 | 22 | 13 | 2 | 1 | 2 | 4 | 0 | 0 | 0 | 0 |
-| Tashaun Gipson | 14 | 34 | 22 | 12 | 0 | 0 | 0 | 3 | 0 | 0 | 0 | 0 |
-| Johnson Bademosi | 14 | 9 | 7 | 2 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
-| Josh Aubrey | 14 | 3 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Leon McFadden | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| T.J. Ward | 15 | 110 | 77 | 33 | 3 | 3 | 44 | 12 | 0 | 0 | 1 | 1 |
+| Buster Skrine | 14 | 104 | 68 | 36 | 3 | 7 | 119 | 24 | 0 | 0 | 2 | 2 |
+| Joe Haden | 15 | 65 | 48 | 17 | 0 | 6 | 108 | 14 | 0 | 1 | 0 | 0 |
+| Christopher Owens | 15 | 39 | 24 | 15 | 2 | 1 | 2 | 5 | 0 | 0 | 0 | 0 |
+| Tashaun Gipson | 15 | 37 | 24 | 13 | 0 | 0 | 0 | 4 | 0 | 0 | 0 | 0 |
+| Johnson Bademosi | 15 | 12 | 9 | 3 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
+| Josh Aubrey | 15 | 3 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Leon McFadden | 15 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Kickers
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Billy Cundiff | 14 | 27 | 29 | 93.1 | 32 | 32 | 113 |
+| Billy Cundiff | 15 | 29 | 31 | 93.5 | 32 | 32 | 119 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Spencer Lanning | 14 | 83 | 3834 | 46.2 | 61 | 28 | 1 |
+| Spencer Lanning | 15 | 86 | 4001 | 46.5 | 68 | 28 | 2 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Christian Yount | 14 |
+| Christian Yount | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Johnson Bademosi | FS | 14 | 39 | 894 | 22.9 | 0 | 0 | — |
-| Travis Benjamin | WR | 14 | 0 | 0 | — | 30 | 303 | 10.1 |
+| Johnson Bademosi | FS | 15 | 43 | 982 | 22.8 | 0 | 0 | — |
+| Travis Benjamin | WR | 15 | 0 | 0 | — | 32 | 356 | 11.1 |
 
 ### Other statistics
 
@@ -1068,112 +1069,112 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Tony Romo | 14 | 305 | 493 | 61.9 | 3532 | 7.2 | 24 | 11 | 90.4 | 21 | 144 | 36 | 146 | 0 | 0 | 0 |
-| Kyle Orton | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Tony Romo | 15 | 329 | 527 | 62.4 | 3723 | 7.1 | 25 | 12 | 89.9 | 25 | 164 | 41 | 172 | 0 | 0 | 0 |
+| Kyle Orton | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| DeMarco Murray | 14 | 251 | 986 | 3.9 | 11 | 29 | 70 | 42 | 611 | 5 | 1 | 1 |
-| Lance Dunbar | 13 | 72 | 275 | 3.8 | 1 | 30 | 10 | 7 | 110 | 0 | 2 | 2 |
-| Phillip Tanner | 14 | 19 | 67 | 3.5 | 0 | 15 | 1 | 1 | 22 | 0 | 0 | 0 |
-| Joseph Randle | 14 | 0 | 0 | — | 0 | 0 | 1 | 1 | 4 | 0 | 0 | 0 |
+| DeMarco Murray | 15 | 262 | 1052 | 4.0 | 12 | 29 | 71 | 42 | 611 | 5 | 1 | 1 |
+| Lance Dunbar | 14 | 81 | 304 | 3.8 | 1 | 30 | 10 | 7 | 110 | 0 | 3 | 3 |
+| Phillip Tanner | 15 | 19 | 67 | 3.5 | 0 | 15 | 1 | 1 | 22 | 0 | 0 | 0 |
+| Joseph Randle | 15 | 0 | 0 | — | 0 | 0 | 1 | 1 | 4 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Miles Austin | 14 | 99 | 66 | 907 | 13.7 | 6 | 68 | 2 | 15 | 0 | 1 | 1 |
-| Dez Bryant | 14 | 139 | 77 | 683 | 8.9 | 3 | 35 | 7 | 15 | 0 | 2 | 2 |
-| Dwayne Harris | 14 | 50 | 30 | 259 | 8.6 | 1 | 32 | 0 | 0 | 0 | 0 | 0 |
-| Terrance Williams | 14 | 14 | 9 | 103 | 11.4 | 0 | 26 | 0 | 0 | 0 | 0 | 0 |
-| Cole Beasley | 14 | 5 | 3 | 21 | 7.0 | 0 | 14 | 0 | 0 | 0 | 0 | 0 |
+| Miles Austin | 15 | 102 | 67 | 910 | 13.6 | 6 | 68 | 2 | 15 | 0 | 1 | 1 |
+| Dez Bryant | 15 | 151 | 86 | 749 | 8.7 | 3 | 35 | 8 | 19 | 0 | 2 | 2 |
+| Dwayne Harris | 15 | 56 | 35 | 330 | 9.4 | 2 | 54 | 0 | 0 | 0 | 0 | 0 |
+| Terrance Williams | 15 | 14 | 9 | 103 | 11.4 | 0 | 26 | 0 | 0 | 0 | 0 | 0 |
+| Cole Beasley | 15 | 6 | 4 | 25 | 6.2 | 0 | 14 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Jason Witten | 14 | 80 | 53 | 557 | 10.5 | 8 | 48 | 0 | 0 | 0 | 1 | 1 |
-| James Hanna | 14 | 19 | 13 | 223 | 17.2 | 1 | 67 | 0 | 0 | 0 | 0 | 0 |
-| Andre Smith (DAL) | 14 | 3 | 2 | 28 | 14.0 | 0 | 16 | 0 | 0 | 0 | 0 | 0 |
-| Gavin Escobar | 14 | 1 | 1 | 4 | 4.0 | 0 | 4 | 0 | 0 | 0 | 0 | 0 |
+| Jason Witten | 15 | 88 | 59 | 583 | 9.9 | 8 | 48 | 0 | 0 | 0 | 1 | 1 |
+| James Hanna | 15 | 21 | 14 | 225 | 16.1 | 1 | 67 | 1 | 1 | 0 | 0 | 0 |
+| Andre Smith (DAL) | 15 | 4 | 3 | 47 | 15.7 | 0 | 19 | 0 | 0 | 0 | 0 | 0 |
+| Gavin Escobar | 15 | 1 | 1 | 4 | 4.0 | 0 | 4 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Ronald Leary | 14 | 7 |
-| Darrion Weems | 14 | 3 |
-| Tyron Smith | 14 | 3 |
-| Mackenzy Bernadeau | 14 | 2 |
-| Phil Costa | 14 | 2 |
-| Travis Frederick | 14 | 2 |
+| Ronald Leary | 15 | 9 |
+| Tyron Smith | 15 | 4 |
+| Darrion Weems | 15 | 3 |
+| Phil Costa | 15 | 3 |
+| Mackenzy Bernadeau | 15 | 2 |
+| Travis Frederick | 15 | 2 |
 | David Arkin | 2 | 1 |
-| Doug Free | 14 | 1 |
+| Doug Free | 15 | 1 |
 | Jermey Parnell | 2 | 0 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Anthony Spencer | 13 | 73 | 53 | 20 | 3 | 7 | 12 | 4 | 0 | 1 | 1 |
-| DeMarcus Ware | 14 | 51 | 32 | 19 | 8 | 2 | 15 | 1 | 0 | 0 | 0 |
-| Jason Hatcher | 14 | 40 | 25 | 15 | 4 | 4 | 4 | 2 | 0 | 1 | 1 |
-| Nick Hayden | 14 | 20 | 16 | 4 | 3 | 0 | 2 | 2 | 0 | 0 | 0 |
-| George Selvie | 14 | 13 | 10 | 3 | 0 | 1 | 2 | 0 | 0 | 0 | 0 |
-| Landon Cohen | 14 | 4 | 3 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Edgar Jones | 14 | 1 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Anthony Spencer | 14 | 77 | 56 | 21 | 3 | 7 | 13 | 4 | 0 | 1 | 1 |
+| DeMarcus Ware | 15 | 53 | 34 | 19 | 8 | 3 | 16 | 1 | 0 | 0 | 0 |
+| Jason Hatcher | 15 | 41 | 26 | 15 | 4 | 4 | 4 | 2 | 0 | 1 | 1 |
+| Nick Hayden | 15 | 21 | 17 | 4 | 3 | 0 | 2 | 2 | 0 | 0 | 0 |
+| George Selvie | 15 | 13 | 10 | 3 | 0 | 1 | 2 | 0 | 0 | 0 | 0 |
+| Landon Cohen | 15 | 4 | 3 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Edgar Jones | 15 | 1 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
 | Caesar Rayford | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Justin Durant | 14 | 126 | 94 | 32 | 11 | 9 | 14 | 9 | 1 | 0 | 0 |
-| Bruce Carter | 14 | 81 | 54 | 27 | 3 | 2 | 5 | 4 | 0 | 2 | 2 |
-| Sean Lee | 14 | 61 | 45 | 16 | 3 | 2 | 2 | 3 | 1 | 0 | 0 |
-| Ernie Sims | 14 | 23 | 12 | 11 | 1 | 1 | 2 | 3 | 1 | 0 | 0 |
-| Kyle Bosworth | 14 | 8 | 7 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Kyle Wilber | 14 | 2 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| DeVonte Holloman | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Justin Durant | 15 | 130 | 97 | 33 | 11 | 9 | 14 | 9 | 1 | 0 | 0 |
+| Bruce Carter | 15 | 89 | 61 | 28 | 3 | 2 | 5 | 5 | 0 | 2 | 2 |
+| Sean Lee | 15 | 62 | 46 | 16 | 3 | 2 | 3 | 4 | 1 | 0 | 0 |
+| Ernie Sims | 15 | 25 | 14 | 11 | 1 | 2 | 3 | 3 | 1 | 0 | 0 |
+| Kyle Bosworth | 15 | 9 | 8 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Kyle Wilber | 15 | 2 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| DeVonte Holloman | 15 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Morris Claiborne | 14 | 98 | 63 | 35 | 2 | 3 | 91 | 20 | 2 | 3 | 1 | 1 |
-| Brandon Carr | 14 | 75 | 53 | 22 | 5 | 5 | 85 | 11 | 2 | 2 | 0 | 0 |
-| Barry Church | 14 | 46 | 29 | 17 | 1 | 3 | 23 | 10 | 0 | 0 | 0 | 0 |
-| Danny McCray | 13 | 33 | 19 | 14 | 0 | 1 | 20 | 4 | 3 | 3 | 0 | 0 |
+| Morris Claiborne | 15 | 108 | 70 | 38 | 4 | 4 | 103 | 21 | 2 | 3 | 1 | 1 |
+| Brandon Carr | 15 | 79 | 54 | 25 | 5 | 5 | 85 | 12 | 2 | 2 | 0 | 0 |
+| Barry Church | 15 | 49 | 32 | 17 | 1 | 3 | 23 | 10 | 0 | 0 | 0 | 0 |
+| Danny McCray | 14 | 37 | 19 | 18 | 0 | 1 | 20 | 4 | 3 | 4 | 0 | 0 |
+| Orlando Scandrick | 15 | 26 | 19 | 7 | 2 | 1 | 51 | 5 | 0 | 1 | 1 | 1 |
 | Will Allen | 7 | 23 | 13 | 10 | 0 | 1 | 27 | 4 | 2 | 2 | 0 | 0 |
-| Orlando Scandrick | 14 | 22 | 16 | 6 | 1 | 1 | 51 | 5 | 0 | 1 | 1 | 1 |
-| J.J. Wilcox | 14 | 9 | 2 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Jeff Heath | 9 | 1 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| J.J. Wilcox | 15 | 11 | 3 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Jeff Heath | 10 | 2 | 0 | 2 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
 
 ### Kickers
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Dan Bailey | 14 | 23 | 27 | 85.2 | 36 | 36 | 105 |
+| Dan Bailey | 15 | 24 | 28 | 85.7 | 38 | 38 | 110 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Chris Jones | 14 | 68 | 3098 | 45.6 | 66 | 29 | 3 |
+| Chris Jones | 15 | 73 | 3332 | 45.6 | 66 | 31 | 3 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| L.P. Ladouceur | 14 |
+| L.P. Ladouceur | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Dwayne Harris | WR | 14 | 29 | 662 | 22.8 | 34 | 451 | 13.3 |
+| Dwayne Harris | WR | 15 | 31 | 703 | 22.7 | 35 | 468 | 13.4 |
 
 ### Other statistics
 
@@ -1189,6 +1190,7 @@ Counters outside the player's position table, such as coverage tackles by offens
 | Joseph Randle | RB | REC LNG 4 |
 | Lance Dunbar | RB | REC LNG 24 |
 | Phillip Tanner | RB | REC LNG 22 |
+| James Hanna | TE | RUSH LNG 1 |
 | Dez Bryant | WR | RUSH LNG 6 |
 | Miles Austin | WR | RUSH LNG 11 |
 
@@ -1198,87 +1200,87 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Peyton Manning | 14 | 310 | 479 | 64.7 | 3329 | 6.9 | 22 | 12 | 89.8 | 27 | 183 | 28 | 107 | 1 | 2 | 2 |
-| Brock Osweiler | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Zac Dysert | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Peyton Manning | 15 | 341 | 525 | 65.0 | 3550 | 6.8 | 26 | 12 | 91.4 | 28 | 186 | 30 | 112 | 1 | 2 | 2 |
+| Brock Osweiler | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Zac Dysert | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Ronnie Hillman | 14 | 247 | 1263 | 5.1 | 7 | 41 | 59 | 33 | 487 | 6 | 3 | 3 |
-| Montee Ball | 14 | 62 | 282 | 4.5 | 1 | 20 | 11 | 8 | 73 | 1 | 0 | 0 |
-| Knowshon Moreno | 14 | 15 | 76 | 5.1 | 0 | 15 | 1 | 1 | 9 | 0 | 1 | 1 |
+| Ronnie Hillman | 15 | 271 | 1374 | 5.1 | 7 | 41 | 61 | 34 | 487 | 6 | 3 | 3 |
+| Montee Ball | 15 | 64 | 300 | 4.7 | 1 | 20 | 14 | 11 | 90 | 2 | 0 | 0 |
+| Knowshon Moreno | 15 | 16 | 78 | 4.9 | 0 | 15 | 1 | 1 | 9 | 0 | 1 | 1 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Wes Welker | 14 | 137 | 96 | 1065 | 11.1 | 3 | 59 | 6 | 27 | 1 | 1 | 1 |
-| Demaryius Thomas | 14 | 86 | 54 | 478 | 8.9 | 3 | 29 | 4 | 11 | 0 | 1 | 1 |
-| Eric Decker | 14 | 59 | 37 | 410 | 11.1 | 3 | 51 | 0 | 0 | 0 | 0 | 0 |
-| Andre Caldwell | 14 | 15 | 12 | 157 | 13.1 | 0 | 49 | 0 | 0 | 0 | 0 | 0 |
-| Trindon Holliday | 13 | 3 | 2 | 17 | 8.5 | 0 | 14 | 0 | 0 | 0 | 0 | 0 |
+| Wes Welker | 15 | 157 | 107 | 1142 | 10.7 | 3 | 59 | 6 | 27 | 1 | 2 | 2 |
+| Demaryius Thomas | 15 | 93 | 60 | 530 | 8.8 | 4 | 29 | 6 | 9 | 0 | 1 | 1 |
+| Eric Decker | 15 | 64 | 42 | 447 | 10.6 | 3 | 51 | 0 | 0 | 0 | 0 | 0 |
+| Andre Caldwell | 15 | 15 | 12 | 157 | 13.1 | 0 | 49 | 0 | 0 | 0 | 0 | 0 |
+| Trindon Holliday | 14 | 3 | 2 | 17 | 8.5 | 0 | 14 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Julius Thomas | 14 | 83 | 55 | 509 | 9.3 | 5 | 37 | 0 | 0 | 0 | 0 | 0 |
-| Joel Dreessen | 12 | 16 | 11 | 91 | 8.3 | 1 | 36 | 0 | 0 | 0 | 0 | 0 |
-| Jacob Tamme | 14 | 6 | 1 | 33 | 33.0 | 0 | 33 | 0 | 0 | 0 | 0 | 0 |
-| Virgil Green | 14 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Julius Thomas | 15 | 91 | 59 | 541 | 9.2 | 7 | 37 | 0 | 0 | 0 | 0 | 0 |
+| Joel Dreessen | 13 | 16 | 11 | 91 | 8.3 | 1 | 36 | 0 | 0 | 0 | 0 | 0 |
+| Jacob Tamme | 15 | 7 | 2 | 39 | 19.5 | 0 | 33 | 0 | 0 | 0 | 0 | 0 |
+| Virgil Green | 15 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Ryan Clady | 14 | 7 |
-| Chris Clark | 14 | 5 |
-| Chris Kuper | 13 | 4 |
-| Zane Beadles | 14 | 4 |
-| Louis Vasquez | 14 | 3 |
-| Manuel Ramirez | 14 | 3 |
-| Orlando Franklin | 13 | 1 |
+| Ryan Clady | 15 | 7 |
+| Chris Clark | 15 | 5 |
+| Chris Kuper | 14 | 4 |
+| Zane Beadles | 15 | 4 |
+| Louis Vasquez | 15 | 3 |
+| Manuel Ramirez | 15 | 3 |
+| Orlando Franklin | 14 | 2 |
 | John Moffitt | 2 | 0 |
-| Steve Vallos | 7 | 0 |
+| Steve Vallos | 8 | 0 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Derek Wolfe | 14 | 75 | 52 | 23 | 11 | 4 | 16 | 3 | 0 | 0 | 0 |
-| Kevin Vickerson | 14 | 54 | 40 | 14 | 5 | 6 | 8 | 1 | 0 | 0 | 0 |
-| Robert Ayers | 14 | 29 | 17 | 12 | 2 | 1 | 3 | 1 | 0 | 0 | 0 |
+| Derek Wolfe | 15 | 84 | 59 | 25 | 12 | 5 | 17 | 3 | 0 | 0 | 0 |
+| Kevin Vickerson | 15 | 60 | 43 | 17 | 6 | 7 | 10 | 1 | 0 | 0 | 0 |
+| Robert Ayers | 15 | 32 | 19 | 13 | 2 | 2 | 5 | 1 | 0 | 0 | 0 |
 | Terrance Knighton | 14 | 28 | 20 | 8 | 3 | 2 | 7 | 2 | 0 | 1 | 1 |
-| Mitch Unrein | 14 | 13 | 8 | 5 | 4 | 2 | 2 | 0 | 0 | 0 | 0 |
-| Malik Jackson | 14 | 7 | 2 | 5 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
-| Sylvester Williams | 14 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Mitch Unrein | 15 | 13 | 8 | 5 | 4 | 2 | 2 | 1 | 1 | 0 | 0 |
+| Malik Jackson | 15 | 7 | 2 | 5 | 0 | 1 | 2 | 0 | 0 | 0 | 0 |
+| Sylvester Williams | 15 | 2 | 2 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Wesley Woodyard | 14 | 131 | 91 | 40 | 11 | 4 | 9 | 3 | 1 | 1 | 1 |
-| Danny Trevathan | 14 | 97 | 63 | 34 | 6 | 3 | 4 | 2 | 0 | 0 | 0 |
-| Nate Irving | 14 | 43 | 27 | 16 | 4 | 1 | 3 | 0 | 0 | 0 | 0 |
+| Wesley Woodyard | 15 | 143 | 99 | 44 | 12 | 6 | 11 | 3 | 1 | 1 | 1 |
+| Danny Trevathan | 15 | 104 | 68 | 36 | 7 | 4 | 5 | 2 | 0 | 0 | 0 |
+| Nate Irving | 15 | 47 | 29 | 18 | 5 | 1 | 3 | 0 | 0 | 0 | 0 |
 | Paris Lenon | 13 | 23 | 12 | 11 | 2 | 1 | 5 | 1 | 0 | 1 | 1 |
-| Shaun Phillips | 14 | 12 | 8 | 4 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Steven Johnson | 14 | 4 | 2 | 2 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
-| Adrian Robinson | 12 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Shaun Phillips | 15 | 13 | 8 | 5 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Steven Johnson | 15 | 5 | 3 | 2 | 0 | 0 | 1 | 0 | 0 | 1 | 1 |
+| Adrian Robinson | 13 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Rahim Moore | 14 | 86 | 55 | 31 | 4 | 6 | 39 | 18 | 0 | 0 | 0 | 0 |
-| Champ Bailey | 12 | 68 | 40 | 28 | 3 | 3 | 76 | 9 | 0 | 0 | 0 | 0 |
-| Dominique Rodgers-Cromartie | 14 | 51 | 36 | 15 | 1 | 1 | 0 | 7 | 1 | 1 | 0 | 0 |
-| Duke Ihenacho | 14 | 40 | 24 | 16 | 4 | 1 | 16 | 7 | 1 | 1 | 1 | 1 |
-| Mike Adams (DEN) | 14 | 29 | 20 | 9 | 1 | 2 | 48 | 4 | 1 | 1 | 2 | 2 |
-| Chris Harris | 14 | 17 | 11 | 6 | 0 | 2 | 80 | 4 | 1 | 1 | 0 | 0 |
-| Tony Carter | 14 | 3 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| David Bruton | 2 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Rahim Moore | 15 | 98 | 65 | 33 | 4 | 7 | 70 | 21 | 0 | 0 | 0 | 0 |
+| Champ Bailey | 13 | 70 | 42 | 28 | 3 | 4 | 94 | 11 | 0 | 0 | 0 | 0 |
+| Dominique Rodgers-Cromartie | 15 | 55 | 39 | 16 | 1 | 1 | 0 | 8 | 1 | 1 | 0 | 0 |
+| Duke Ihenacho | 15 | 43 | 27 | 16 | 5 | 1 | 16 | 8 | 1 | 1 | 1 | 1 |
+| Mike Adams (DEN) | 15 | 31 | 22 | 9 | 1 | 2 | 48 | 4 | 1 | 1 | 2 | 2 |
+| Chris Harris | 15 | 18 | 12 | 6 | 0 | 2 | 80 | 4 | 1 | 1 | 0 | 0 |
+| Tony Carter | 15 | 3 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| David Bruton | 3 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Quentin Jammer | 2 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Kayvon Webster | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Omar Bolden | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -1287,32 +1289,32 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Matt Prater | 14 | 27 | 34 | 79.4 | 32 | 32 | 113 |
+| Matt Prater | 15 | 28 | 35 | 80.0 | 36 | 36 | 120 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Britton Colquitt | 14 | 61 | 2819 | 46.2 | 66 | 18 | 1 |
+| Britton Colquitt | 15 | 69 | 3122 | 45.2 | 66 | 21 | 2 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Aaron Brewer | 14 |
+| Aaron Brewer | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Trindon Holliday | WR | 13 | 31 | 702 | 22.6 | 19 | 175 | 9.2 |
-| Wes Welker | WR | 14 | 1 | 35 | 35.0 | 0 | 0 | — |
-| Dominique Rodgers-Cromartie | CB | 14 | 1 | 34 | 34.0 | 0 | 0 | — |
-| Knowshon Moreno | RB | 14 | 2 | 32 | 16.0 | 1 | 2 | 2.0 |
-| Eric Decker | WR | 14 | 1 | 28 | 28.0 | 0 | 0 | — |
-| Andre Caldwell | WR | 14 | 1 | 14 | 14.0 | 0 | 0 | — |
-| Champ Bailey | CB | 12 | 0 | 0 | — | 1 | 11 | 11.0 |
-| Ronnie Hillman | RB | 14 | 0 | 0 | — | 1 | 9 | 9.0 |
+| Trindon Holliday | WR | 14 | 32 | 733 | 22.9 | 22 | 180 | 8.2 |
+| Wes Welker | WR | 15 | 1 | 35 | 35.0 | 0 | 0 | — |
+| Dominique Rodgers-Cromartie | CB | 15 | 1 | 34 | 34.0 | 0 | 0 | — |
+| Knowshon Moreno | RB | 15 | 2 | 32 | 16.0 | 1 | 2 | 2.0 |
+| Eric Decker | WR | 15 | 1 | 28 | 28.0 | 0 | 0 | — |
+| Andre Caldwell | WR | 15 | 1 | 14 | 14.0 | 0 | 0 | — |
+| Champ Bailey | CB | 13 | 0 | 0 | — | 1 | 11 | 11.0 |
+| Ronnie Hillman | RB | 15 | 0 | 0 | — | 1 | 9 | 9.0 |
 
 ### Other statistics
 
@@ -1334,49 +1336,49 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Matthew Stafford | 14 | 344 | 520 | 66.2 | 3408 | 6.6 | 23 | 7 | 93.7 | 29 | 179 | 40 | 209 | 0 | 1 | 1 |
-| Kellen Moore | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Shaun Hill | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Matthew Stafford | 15 | 367 | 554 | 66.2 | 3630 | 6.6 | 23 | 9 | 91.7 | 32 | 196 | 41 | 210 | 0 | 1 | 1 |
+| Kellen Moore | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Shaun Hill | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Reggie Bush | 12 | 208 | 1015 | 4.9 | 14 | 80 | 59 | 38 | 421 | 6 | 3 | 3 |
-| Joique Bell | 14 | 115 | 605 | 5.3 | 9 | 29 | 19 | 16 | 113 | 1 | 0 | 0 |
-| Mikel Leshoure | 14 | 25 | 94 | 3.8 | 1 | 17 | 4 | 1 | 5 | 0 | 0 | 0 |
-| Theo Riddick | 14 | 3 | 31 | 10.3 | 0 | 19 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Reggie Bush | 13 | 226 | 1099 | 4.9 | 15 | 80 | 61 | 40 | 432 | 6 | 3 | 3 |
+| Joique Bell | 15 | 121 | 640 | 5.3 | 9 | 29 | 20 | 16 | 113 | 1 | 0 | 0 |
+| Mikel Leshoure | 15 | 25 | 94 | 3.8 | 1 | 17 | 5 | 2 | 12 | 0 | 0 | 0 |
+| Theo Riddick | 15 | 3 | 31 | 10.3 | 0 | 19 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Calvin Johnson | 14 | 165 | 106 | 1109 | 10.5 | 11 | 86 | 1 | 0 | 0 | 0 | 0 |
-| Nate Burleson | 14 | 89 | 64 | 615 | 9.6 | 1 | 50 | 2 | 10 | 0 | 1 | 1 |
-| Ryan Broyles | 14 | 57 | 37 | 391 | 10.6 | 1 | 38 | 1 | -3 | 0 | 0 | 0 |
-| Patrick Edwards | 14 | 26 | 15 | 194 | 12.9 | 1 | 47 | 0 | 0 | 0 | 1 | 1 |
-| Micheal Spurlock | 14 | 5 | 2 | 28 | 14.0 | 0 | 23 | 0 | 0 | 0 | 0 | 0 |
-| Kris Durham | 14 | 1 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Calvin Johnson | 15 | 178 | 115 | 1231 | 10.7 | 11 | 86 | 1 | 0 | 0 | 1 | 1 |
+| Nate Burleson | 15 | 96 | 68 | 659 | 9.7 | 1 | 50 | 2 | 10 | 0 | 1 | 1 |
+| Ryan Broyles | 15 | 58 | 38 | 396 | 10.4 | 1 | 38 | 1 | -3 | 0 | 0 | 0 |
+| Patrick Edwards | 15 | 27 | 16 | 198 | 12.4 | 1 | 47 | 0 | 0 | 0 | 1 | 1 |
+| Micheal Spurlock | 15 | 5 | 2 | 28 | 14.0 | 0 | 23 | 0 | 0 | 0 | 0 | 0 |
+| Kris Durham | 15 | 1 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Brandon Pettigrew | 14 | 77 | 52 | 382 | 7.3 | 2 | 24 | 0 | 0 | 0 | 1 | 1 |
-| Tony Scheffler | 14 | 17 | 13 | 150 | 11.5 | 0 | 28 | 0 | 0 | 0 | 0 | 0 |
-| Joseph Fauria | 14 | 1 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Brandon Pettigrew | 15 | 85 | 57 | 411 | 7.2 | 2 | 24 | 0 | 0 | 0 | 1 | 1 |
+| Tony Scheffler | 15 | 17 | 13 | 150 | 11.5 | 0 | 28 | 0 | 0 | 0 | 0 | 0 |
+| Joseph Fauria | 15 | 1 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Rob Sims | 14 | 7 |
-| Riley Reiff | 14 | 6 |
-| Jason Fox | 14 | 4 |
-| Larry Warford | 12 | 4 |
-| Dominic Raiola | 14 | 3 |
-| Leroy Harris | 14 | 3 |
-| LaAdrian Waddle | 14 | 2 |
+| Rob Sims | 15 | 7 |
+| Jason Fox | 15 | 6 |
+| Riley Reiff | 15 | 6 |
+| Larry Warford | 13 | 4 |
+| Dominic Raiola | 15 | 3 |
+| LaAdrian Waddle | 15 | 3 |
+| Leroy Harris | 15 | 3 |
 | Corey Hilliard | 2 | 0 |
 | Dylan Gandy | 4 | 0 |
 
@@ -1384,38 +1386,38 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Nick Fairley | 14 | 67 | 49 | 18 | 9 | 7 | 13 | 3 | 0 | 0 | 0 |
-| Ndamukong Suh | 14 | 60 | 49 | 11 | 7 | 4 | 8 | 2 | 0 | 0 | 0 |
-| Jason Jones | 14 | 25 | 19 | 6 | 4 | 1 | 4 | 2 | 0 | 1 | 1 |
-| Ezekiel Ansah | 14 | 21 | 12 | 9 | 2 | 2 | 4 | 2 | 0 | 0 | 0 |
-| Israel Idonije | 14 | 14 | 8 | 6 | 0 | 1 | 2 | 2 | 0 | 0 | 0 |
-| Justin Bannan | 14 | 7 | 6 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Willie Young | 14 | 3 | 3 | 0 | 0 | 2 | 2 | 0 | 0 | 0 | 0 |
+| Nick Fairley | 15 | 75 | 55 | 20 | 9 | 8 | 14 | 3 | 0 | 0 | 0 |
+| Ndamukong Suh | 15 | 64 | 51 | 13 | 8 | 4 | 9 | 2 | 0 | 0 | 0 |
+| Jason Jones | 15 | 27 | 21 | 6 | 4 | 1 | 4 | 2 | 0 | 1 | 1 |
+| Ezekiel Ansah | 15 | 26 | 14 | 12 | 3 | 3 | 5 | 3 | 0 | 0 | 0 |
+| Israel Idonije | 15 | 16 | 9 | 7 | 2 | 1 | 2 | 2 | 0 | 0 | 0 |
+| Justin Bannan | 15 | 8 | 6 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Willie Young | 15 | 3 | 3 | 0 | 0 | 2 | 2 | 0 | 0 | 0 | 0 |
 | Devin Taylor | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Stephen Tulloch | 14 | 125 | 90 | 35 | 5 | 3 | 9 | 10 | 1 | 1 | 1 |
-| DeAndre Levy | 14 | 91 | 61 | 30 | 5 | 2 | 4 | 3 | 2 | 0 | 0 |
-| Ashlee Palmer | 14 | 61 | 41 | 20 | 0 | 2 | 7 | 0 | 0 | 0 | 0 |
-| Rocky McIntosh | 14 | 25 | 16 | 9 | 2 | 0 | 1 | 1 | 0 | 1 | 1 |
-| Tahir Whitehead | 14 | 11 | 7 | 4 | 0 | 0 | 1 | 2 | 1 | 0 | 0 |
-| Travis Lewis | 14 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Stephen Tulloch | 15 | 141 | 100 | 41 | 7 | 4 | 10 | 12 | 3 | 2 | 2 |
+| DeAndre Levy | 15 | 97 | 66 | 31 | 5 | 2 | 4 | 4 | 2 | 0 | 0 |
+| Ashlee Palmer | 15 | 62 | 42 | 20 | 0 | 2 | 8 | 0 | 0 | 0 | 0 |
+| Rocky McIntosh | 15 | 27 | 16 | 11 | 2 | 0 | 1 | 1 | 0 | 1 | 1 |
+| Tahir Whitehead | 15 | 12 | 8 | 4 | 0 | 0 | 1 | 2 | 1 | 0 | 0 |
+| Travis Lewis | 15 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Glover Quin | 14 | 92 | 63 | 29 | 3 | 5 | 55 | 16 | 0 | 2 | 2 | 2 |
-| Chris Houston | 14 | 75 | 50 | 25 | 2 | 3 | 6 | 12 | 0 | 0 | 0 | 0 |
-| Louis Delmas | 14 | 39 | 22 | 17 | 1 | 2 | 20 | 8 | 0 | 0 | 0 | 0 |
-| Darius Slay | 14 | 37 | 25 | 12 | 2 | 1 | 14 | 7 | 0 | 1 | 0 | 0 |
-| Don Carey | 14 | 30 | 18 | 12 | 1 | 1 | 17 | 3 | 1 | 2 | 0 | 0 |
-| John Wendling | 14 | 17 | 6 | 11 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Glover Quin | 15 | 95 | 64 | 31 | 3 | 6 | 55 | 18 | 0 | 2 | 2 | 2 |
+| Chris Houston | 15 | 83 | 55 | 28 | 5 | 3 | 6 | 12 | 0 | 0 | 0 | 0 |
+| Louis Delmas | 15 | 43 | 24 | 19 | 1 | 2 | 20 | 8 | 0 | 0 | 0 | 0 |
+| Darius Slay | 15 | 38 | 26 | 12 | 2 | 1 | 14 | 8 | 0 | 1 | 0 | 0 |
+| Don Carey | 15 | 34 | 21 | 13 | 1 | 1 | 17 | 4 | 1 | 2 | 0 | 0 |
+| John Wendling | 15 | 17 | 6 | 11 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
 | DeJon Gomes | 2 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Rashean Mathis | 14 | 1 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Rashean Mathis | 15 | 1 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
 | Dwight Bentley | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Jonte Green | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
@@ -1423,25 +1425,25 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| David Akers | 14 | 16 | 22 | 72.7 | 47 | 47 | 95 |
+| David Akers | 15 | 20 | 27 | 74.1 | 48 | 48 | 108 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Sam Martin | 14 | 59 | 2687 | 45.5 | 58 | 17 | 0 |
+| Sam Martin | 15 | 63 | 2866 | 45.5 | 58 | 17 | 0 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Don Muhlbach | 14 |
+| Don Muhlbach | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Micheal Spurlock | WR | 14 | 41 | 899 | 21.9 | 26 | 303 | 11.7 |
+| Micheal Spurlock | WR | 15 | 46 | 1016 | 22.1 | 27 | 297 | 11.0 |
 
 ### Other statistics
 
@@ -1449,12 +1451,12 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Stephen Tulloch | MLB | INT YDS 22 |
+| Stephen Tulloch | MLB | INT YDS 90 |
 | DeAndre Levy | OLB | INT YDS 53 |
 | Tahir Whitehead | OLB | INT YDS 14 |
 | Matthew Stafford | QB | RUSH LNG 34 |
 | Joique Bell | RB | REC LNG 27 |
-| Mikel Leshoure | RB | REC LNG 5 |
+| Mikel Leshoure | RB | REC LNG 7 |
 | Reggie Bush | RB | REC LNG 56 |
 | Nate Burleson | WR | RUSH LNG 8 |
 
@@ -1464,73 +1466,73 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Aaron Rodgers | 14 | 339 | 523 | 64.8 | 3494 | 6.7 | 17 | 16 | 82.0 | 34 | 222 | 38 | 204 | 3 | 0 | 0 |
-| Blaine Gabbert | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Seneca Wallace | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Aaron Rodgers | 15 | 360 | 551 | 65.3 | 3774 | 6.8 | 19 | 17 | 83.7 | 35 | 232 | 43 | 235 | 3 | 0 | 0 |
+| Blaine Gabbert | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Seneca Wallace | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Eddie Lacy | 14 | 228 | 1019 | 4.5 | 6 | 26 | 48 | 33 | 289 | 2 | 1 | 1 |
-| James Starks | 14 | 75 | 396 | 5.3 | 4 | 53 | 16 | 12 | 160 | 1 | 0 | 0 |
-| Johnathan Franklin | 14 | 21 | 139 | 6.6 | 1 | 32 | 2 | 0 | 0 | 0 | 2 | 2 |
+| Eddie Lacy | 15 | 245 | 1139 | 4.6 | 7 | 26 | 49 | 34 | 293 | 2 | 1 | 1 |
+| James Starks | 15 | 80 | 406 | 5.1 | 5 | 53 | 19 | 15 | 195 | 1 | 0 | 0 |
+| Johnathan Franklin | 15 | 22 | 139 | 6.3 | 1 | 32 | 2 | 0 | 0 | 0 | 2 | 2 |
 | John Kuhn | 9 | 8 | 27 | 3.4 | 0 | 11 | 7 | 5 | 66 | 0 | 1 | 1 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Randall Cobb | 14 | 140 | 95 | 1004 | 10.6 | 7 | 91 | 5 | 6 | 0 | 1 | 1 |
-| Jordy Nelson | 14 | 102 | 65 | 803 | 12.4 | 2 | 74 | 5 | 80 | 1 | 2 | 2 |
-| James Jones | 14 | 57 | 33 | 356 | 10.8 | 2 | 52 | 1 | 1 | 0 | 0 | 0 |
-| Jarrett Boykin | 14 | 24 | 13 | 114 | 8.8 | 0 | 32 | 1 | 3 | 0 | 0 | 0 |
-| Jeremy Ross | 14 | 1 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Randall Cobb | 15 | 152 | 103 | 1104 | 10.7 | 9 | 91 | 5 | 6 | 0 | 1 | 1 |
+| Jordy Nelson | 15 | 108 | 69 | 886 | 12.8 | 2 | 74 | 5 | 80 | 1 | 2 | 2 |
+| James Jones | 15 | 58 | 34 | 364 | 10.7 | 2 | 52 | 1 | 1 | 0 | 0 | 0 |
+| Jarrett Boykin | 15 | 24 | 13 | 114 | 8.8 | 0 | 32 | 1 | 3 | 0 | 0 | 0 |
+| Jeremy Ross | 15 | 1 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Jermichael Finley | 14 | 97 | 65 | 564 | 8.7 | 3 | 33 | 1 | 3 | 0 | 0 | 0 |
-| Andrew Quarless | 14 | 24 | 17 | 130 | 7.6 | 0 | 20 | 0 | 0 | 0 | 0 | 0 |
-| Ryan Taylor | 14 | 2 | 1 | 8 | 8.0 | 0 | 8 | 0 | 0 | 0 | 0 | 0 |
-| Brandon Bostick | 14 | 2 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Jermichael Finley | 15 | 101 | 68 | 587 | 8.6 | 3 | 33 | 1 | 3 | 0 | 0 | 0 |
+| Andrew Quarless | 15 | 25 | 18 | 157 | 8.7 | 0 | 27 | 0 | 0 | 0 | 0 | 0 |
+| Ryan Taylor | 15 | 2 | 1 | 8 | 8.0 | 0 | 8 | 0 | 0 | 0 | 0 | 0 |
+| Brandon Bostick | 15 | 2 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Lane Taylor | 14 | 7 |
-| T.J. Lang | 14 | 6 |
-| Don Barclay | 14 | 5 |
-| Greg Van Roten | 14 | 4 |
-| Josh Sitton | 14 | 4 |
-| Marshall Newhouse | 8 | 4 |
-| David Bakhtiari | 14 | 3 |
-| Evan Smith | 14 | 1 |
+| Lane Taylor | 15 | 7 |
+| T.J. Lang | 15 | 6 |
+| Don Barclay | 15 | 5 |
+| Greg Van Roten | 15 | 5 |
+| Josh Sitton | 15 | 4 |
+| Marshall Newhouse | 9 | 4 |
+| David Bakhtiari | 15 | 3 |
+| Evan Smith | 15 | 1 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Ryan Pickett | 14 | 84 | 53 | 31 | 8 | 7 | 16 | 3 | 0 | 0 | 0 |
-| B.J. Raji | 14 | 60 | 45 | 15 | 6 | 6 | 13 | 3 | 0 | 3 | 3 |
-| Mike Daniels | 13 | 34 | 29 | 5 | 5 | 2 | 5 | 3 | 0 | 0 | 0 |
-| Johnny Jolly | 14 | 33 | 25 | 8 | 6 | 3 | 7 | 1 | 0 | 0 | 0 |
-| Josh Boyd | 14 | 13 | 8 | 5 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Datone Jones | 14 | 10 | 7 | 3 | 2 | 0 | 1 | 0 | 0 | 1 | 1 |
+| Ryan Pickett | 15 | 87 | 55 | 32 | 8 | 8 | 17 | 3 | 0 | 0 | 0 |
+| B.J. Raji | 15 | 60 | 45 | 15 | 6 | 6 | 14 | 3 | 0 | 3 | 3 |
+| Mike Daniels | 14 | 36 | 31 | 5 | 5 | 2 | 6 | 3 | 0 | 0 | 0 |
+| Johnny Jolly | 15 | 33 | 25 | 8 | 6 | 3 | 8 | 1 | 0 | 0 | 0 |
+| Josh Boyd | 15 | 15 | 8 | 7 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Datone Jones | 15 | 11 | 7 | 4 | 2 | 0 | 1 | 0 | 0 | 1 | 1 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| A.J. Hawk | 13 | 121 | 77 | 44 | 7 | 1 | 8 | 4 | 1 | 1 | 1 |
-| Brad Jones | 14 | 91 | 59 | 32 | 3 | 2 | 4 | 2 | 0 | 1 | 1 |
-| Clay Matthews | 14 | 59 | 42 | 17 | 2 | 4 | 7 | 5 | 1 | 0 | 0 |
-| Nick Perry | 14 | 21 | 11 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Rob Francois | 14 | 8 | 4 | 4 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
-| Andy Mulumba | 14 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Jamari Lattimore | 14 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| A.J. Hawk | 14 | 127 | 81 | 46 | 8 | 1 | 8 | 4 | 1 | 1 | 1 |
+| Brad Jones | 15 | 96 | 64 | 32 | 4 | 3 | 5 | 2 | 0 | 1 | 1 |
+| Clay Matthews | 15 | 60 | 42 | 18 | 2 | 4 | 7 | 5 | 1 | 0 | 0 |
+| Nick Perry | 15 | 23 | 13 | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Rob Francois | 15 | 9 | 5 | 4 | 1 | 0 | 0 | 1 | 0 | 0 | 0 |
+| Andy Mulumba | 15 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Jamari Lattimore | 15 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Mike Neal | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Nate Palmer | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Sam Barrington | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -1539,13 +1541,13 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Morgan Burnett | 14 | 82 | 54 | 28 | 3 | 2 | 29 | 16 | 0 | 1 | 0 | 0 |
-| Tramon Williams | 14 | 77 | 47 | 30 | 4 | 2 | 7 | 12 | 0 | 0 | 1 | 1 |
-| M.D. Jennings | 14 | 58 | 36 | 22 | 2 | 1 | 9 | 7 | 1 | 1 | 0 | 0 |
-| Sam Shields | 14 | 57 | 37 | 20 | 4 | 1 | 38 | 4 | 0 | 1 | 1 | 1 |
-| Casey Hayward | 11 | 27 | 18 | 9 | 0 | 3 | -6 | 5 | 0 | 0 | 0 | 0 |
-| Jerron McMillian | 14 | 17 | 12 | 5 | 0 | 2 | 0 | 3 | 0 | 0 | 0 | 0 |
-| Davon House | 14 | 8 | 3 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Morgan Burnett | 15 | 87 | 58 | 29 | 3 | 2 | 29 | 18 | 0 | 1 | 0 | 0 |
+| Tramon Williams | 15 | 84 | 53 | 31 | 4 | 2 | 7 | 12 | 0 | 0 | 2 | 2 |
+| M.D. Jennings | 15 | 63 | 41 | 22 | 2 | 1 | 9 | 7 | 1 | 1 | 0 | 0 |
+| Sam Shields | 15 | 60 | 38 | 22 | 4 | 1 | 38 | 4 | 0 | 1 | 1 | 1 |
+| Casey Hayward | 12 | 28 | 18 | 10 | 0 | 3 | -6 | 5 | 0 | 0 | 0 | 0 |
+| Jerron McMillian | 15 | 17 | 12 | 5 | 0 | 2 | 0 | 3 | 0 | 0 | 0 | 0 |
+| Davon House | 15 | 8 | 3 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Chris Banjo | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Jarrett Bush | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Micah Hyde | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -1554,25 +1556,25 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Mason Crosby | 14 | 29 | 34 | 85.3 | 32 | 32 | 119 |
+| Mason Crosby | 15 | 31 | 36 | 86.1 | 36 | 36 | 129 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Tim Masthay | 14 | 63 | 2935 | 46.6 | 79 | 31 | 2 |
+| Tim Masthay | 15 | 66 | 3051 | 46.2 | 79 | 31 | 2 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Brett Goode | 14 |
+| Brett Goode | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Jeremy Ross | WR | 14 | 33 | 761 | 23.1 | 33 | 362 | 11.0 |
+| Jeremy Ross | WR | 15 | 36 | 805 | 22.4 | 37 | 393 | 10.6 |
 
 ### Other statistics
 
@@ -1598,49 +1600,49 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Matt Schaub | 14 | 297 | 451 | 65.9 | 3235 | 7.2 | 20 | 19 | 84.1 | 29 | 179 | 31 | 201 | 1 | 2 | 2 |
-| Case Keenum | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| T.J. Yates | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Matt Schaub | 15 | 328 | 506 | 64.8 | 3643 | 7.2 | 21 | 22 | 81.8 | 35 | 208 | 35 | 228 | 1 | 2 | 2 |
+| Case Keenum | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| T.J. Yates | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Arian Foster | 14 | 263 | 1165 | 4.4 | 11 | 45 | 51 | 33 | 452 | 5 | 2 | 2 |
-| Ben Tate | 14 | 55 | 260 | 4.7 | 2 | 31 | 18 | 15 | 106 | 1 | 0 | 0 |
-| Cierre Wood | 14 | 16 | 54 | 3.4 | 2 | 14 | 2 | 2 | 37 | 0 | 1 | 1 |
-| Greg Jones | 14 | 6 | 31 | 5.2 | 0 | 19 | 8 | 4 | 20 | 1 | 0 | 0 |
+| Arian Foster | 15 | 278 | 1232 | 4.4 | 14 | 45 | 53 | 34 | 456 | 5 | 2 | 2 |
+| Ben Tate | 15 | 59 | 267 | 4.5 | 2 | 31 | 20 | 17 | 124 | 2 | 0 | 0 |
+| Cierre Wood | 15 | 17 | 57 | 3.4 | 2 | 14 | 2 | 2 | 37 | 0 | 1 | 1 |
+| Greg Jones | 15 | 7 | 50 | 7.1 | 0 | 19 | 8 | 4 | 20 | 1 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Andre Johnson | 14 | 123 | 79 | 868 | 11.0 | 7 | 73 | 4 | 14 | 0 | 2 | 2 |
-| DeAndre Hopkins | 14 | 104 | 63 | 647 | 10.3 | 2 | 53 | 1 | 1 | 0 | 0 | 0 |
-| Keshawn Martin | 14 | 49 | 35 | 388 | 11.1 | 2 | 57 | 2 | 9 | 0 | 1 | 1 |
-| Lestar Jean | 14 | 13 | 9 | 70 | 7.8 | 0 | 22 | 0 | 0 | 0 | 1 | 1 |
-| DeVier Posey | 14 | 3 | 2 | 8 | 4.0 | 0 | 5 | 0 | 0 | 0 | 0 | 0 |
+| Andre Johnson | 15 | 138 | 87 | 966 | 11.1 | 7 | 73 | 4 | 14 | 0 | 2 | 2 |
+| DeAndre Hopkins | 15 | 117 | 68 | 702 | 10.3 | 2 | 53 | 1 | 1 | 0 | 0 | 0 |
+| Keshawn Martin | 15 | 56 | 41 | 484 | 11.8 | 2 | 57 | 2 | 9 | 0 | 1 | 1 |
+| Lestar Jean | 15 | 16 | 11 | 85 | 7.7 | 0 | 22 | 1 | 0 | 0 | 1 | 1 |
+| DeVier Posey | 15 | 3 | 2 | 8 | 4.0 | 0 | 5 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Owen Daniels | 14 | 63 | 45 | 524 | 11.6 | 2 | 40 | 0 | 0 | 0 | 0 | 0 |
-| Garrett Graham | 14 | 15 | 9 | 113 | 12.6 | 0 | 38 | 0 | 0 | 0 | 0 | 0 |
-| Ryan Griffin | 14 | 1 | 1 | 2 | 2.0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
+| Owen Daniels | 15 | 75 | 52 | 646 | 12.4 | 2 | 40 | 0 | 0 | 0 | 1 | 1 |
+| Garrett Graham | 15 | 15 | 9 | 113 | 12.6 | 0 | 38 | 0 | 0 | 0 | 0 | 0 |
+| Ryan Griffin | 15 | 1 | 1 | 2 | 2.0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Ben Jones | 14 | 5 |
-| Chris Myers | 14 | 5 |
-| Duane Brown | 14 | 5 |
-| Derek Newton | 14 | 4 |
-| Ryan Harris | 14 | 4 |
-| Wade Smith | 14 | 3 |
+| Ben Jones | 15 | 7 |
+| Duane Brown | 15 | 7 |
+| Chris Myers | 15 | 5 |
+| Ryan Harris | 15 | 5 |
+| Derek Newton | 15 | 4 |
+| Wade Smith | 15 | 3 |
+| Brandon Brooks | 14 | 2 |
 | Andrew Gardner | 2 | 1 |
-| Brandon Brooks | 13 | 1 |
 | Cody White | 2 | 1 |
 | David Quessenberry | 1 | 0 |
 
@@ -1648,63 +1650,63 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| J.J. Watt | 14 | 75 | 57 | 18 | 6 | 5 | 11 | 5 | 0 | 0 | 0 |
-| Earl Mitchell | 14 | 62 | 45 | 17 | 11 | 2 | 10 | 4 | 0 | 0 | 0 |
-| Whitney Mercilus | 14 | 35 | 22 | 13 | 3 | 1 | 5 | 3 | 0 | 0 | 0 |
-| Jared Crick | 14 | 28 | 20 | 8 | 6 | 0 | 4 | 0 | 0 | 0 | 0 |
-| Tim Jamison | 14 | 18 | 13 | 5 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
-| Terrell McClain | 14 | 9 | 4 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Sam Montgomery | 14 | 2 | 0 | 2 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
+| J.J. Watt | 15 | 81 | 60 | 21 | 7 | 5 | 11 | 5 | 0 | 1 | 1 |
+| Earl Mitchell | 15 | 67 | 48 | 19 | 11 | 2 | 11 | 4 | 0 | 0 | 0 |
+| Whitney Mercilus | 15 | 36 | 23 | 13 | 3 | 1 | 5 | 4 | 0 | 0 | 0 |
+| Jared Crick | 15 | 29 | 21 | 8 | 6 | 0 | 4 | 0 | 0 | 0 | 0 |
+| Tim Jamison | 15 | 18 | 13 | 5 | 1 | 0 | 1 | 1 | 0 | 0 | 0 |
+| Terrell McClain | 15 | 10 | 5 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Sam Montgomery | 15 | 2 | 0 | 2 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Brian Cushing | 14 | 135 | 83 | 52 | 9 | 7 | 13 | 3 | 0 | 0 | 0 |
-| Brooks Reed | 14 | 84 | 58 | 26 | 6 | 2 | 4 | 4 | 3 | 2 | 2 |
-| Joe Mays | 14 | 53 | 31 | 22 | 3 | 2 | 3 | 2 | 1 | 0 | 0 |
-| Tim Dobbins | 14 | 30 | 20 | 10 | 2 | 0 | 0 | 1 | 0 | 1 | 1 |
-| Darryl Sharpton | 13 | 9 | 6 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Bryan Braman | 14 | 4 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Willie Jefferson | 14 | 1 | 1 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Brian Cushing | 15 | 147 | 92 | 55 | 9 | 8 | 14 | 3 | 0 | 0 | 0 |
+| Brooks Reed | 15 | 92 | 62 | 30 | 7 | 2 | 4 | 4 | 3 | 2 | 2 |
+| Joe Mays | 15 | 55 | 33 | 22 | 3 | 2 | 3 | 2 | 1 | 0 | 0 |
+| Tim Dobbins | 15 | 32 | 21 | 11 | 2 | 0 | 0 | 1 | 0 | 1 | 1 |
+| Darryl Sharpton | 14 | 9 | 6 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Bryan Braman | 15 | 4 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Willie Jefferson | 15 | 1 | 1 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
 | Justin Tuggle | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Johnathan Joseph | 14 | 90 | 56 | 34 | 1 | 5 | 83 | 13 | 1 | 1 | 1 | 1 |
-| Danieal Manning | 8 | 64 | 40 | 24 | 6 | 3 | 66 | 11 | 0 | 1 | 0 | 0 |
-| Kareem Jackson | 14 | 64 | 44 | 20 | 2 | 0 | 0 | 5 | 0 | 0 | 0 | 0 |
-| Shiloh Keo | 14 | 45 | 30 | 15 | 2 | 2 | 39 | 9 | 0 | 1 | 4 | 4 |
-| Brice McCain | 14 | 41 | 28 | 13 | 2 | 1 | 8 | 3 | 0 | 0 | 0 | 0 |
-| Brandon Harris | 14 | 24 | 16 | 8 | 1 | 0 | 0 | 3 | 1 | 1 | 0 | 0 |
-| Eddie Pleasant | 14 | 3 | 2 | 1 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
+| Johnathan Joseph | 15 | 97 | 59 | 38 | 1 | 5 | 83 | 14 | 1 | 1 | 1 | 1 |
+| Danieal Manning | 9 | 75 | 49 | 26 | 6 | 3 | 66 | 13 | 0 | 1 | 0 | 0 |
+| Kareem Jackson | 15 | 70 | 50 | 20 | 2 | 0 | 0 | 5 | 0 | 0 | 0 | 0 |
+| Shiloh Keo | 15 | 50 | 34 | 16 | 2 | 2 | 39 | 9 | 0 | 1 | 4 | 4 |
+| Brice McCain | 15 | 42 | 29 | 13 | 2 | 1 | 8 | 3 | 0 | 0 | 0 | 0 |
+| Brandon Harris | 15 | 25 | 17 | 8 | 1 | 0 | 0 | 3 | 1 | 1 | 0 | 0 |
+| Eddie Pleasant | 15 | 3 | 2 | 1 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
 | D.J. Swearinger | 8 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Kickers
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Randy Bullock | 14 | 18 | 21 | 85.7 | 35 | 36 | 89 |
+| Randy Bullock | 15 | 20 | 23 | 87.0 | 39 | 40 | 99 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Shane Lechler | 14 | 71 | 3285 | 46.3 | 63 | 21 | 2 |
+| Shane Lechler | 15 | 76 | 3520 | 46.3 | 63 | 22 | 2 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Jonathan Weeks | 14 |
+| Jonathan Weeks | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Keshawn Martin | WR | 14 | 38 | 931 | 24.5 | 33 | 354 | 10.7 |
+| Keshawn Martin | WR | 15 | 42 | 1015 | 24.2 | 34 | 366 | 10.8 |
 
 ### Other statistics
 
@@ -1729,88 +1731,88 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Andrew Luck | 14 | 295 | 482 | 61.2 | 3157 | 6.5 | 21 | 16 | 81.1 | 25 | 156 | 47 | 189 | 1 | 1 | 1 |
-| Matt Hasselbeck | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Andrew Luck | 15 | 312 | 511 | 61.1 | 3373 | 6.6 | 22 | 16 | 81.8 | 26 | 164 | 48 | 192 | 1 | 1 | 1 |
+| Matt Hasselbeck | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Vick Ballard | 14 | 255 | 1004 | 3.9 | 5 | 48 | 69 | 46 | 523 | 0 | 7 | 7 |
-| Donald Brown | 14 | 78 | 371 | 4.8 | 2 | 23 | 24 | 15 | 97 | 0 | 0 | 0 |
-| Ahmad Bradshaw | 14 | 14 | 74 | 5.3 | 0 | 14 | 3 | 2 | 14 | 0 | 0 | 0 |
-| Stanley Havili | 14 | 8 | 31 | 3.9 | 0 | 14 | 11 | 6 | 51 | 0 | 0 | 0 |
+| Vick Ballard | 15 | 274 | 1137 | 4.1 | 6 | 48 | 71 | 46 | 523 | 0 | 7 | 7 |
+| Donald Brown | 15 | 79 | 371 | 4.7 | 2 | 23 | 26 | 15 | 97 | 0 | 0 | 0 |
+| Ahmad Bradshaw | 15 | 15 | 78 | 5.2 | 0 | 14 | 4 | 3 | 31 | 1 | 0 | 0 |
+| Stanley Havili | 15 | 10 | 36 | 3.6 | 0 | 14 | 12 | 6 | 51 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Reggie Wayne | 14 | 126 | 83 | 906 | 10.9 | 8 | 45 | 3 | 13 | 0 | 1 | 1 |
-| Darrius Heyward-Bey | 14 | 72 | 42 | 505 | 12.0 | 4 | 62 | 1 | 6 | 0 | 0 | 0 |
-| T.Y. Hilton | 14 | 50 | 29 | 310 | 10.7 | 4 | 26 | 0 | 0 | 0 | 1 | 1 |
-| Griff Whalen | 14 | 24 | 14 | 184 | 13.1 | 1 | 43 | 1 | 2 | 0 | 0 | 0 |
-| David Reed | 14 | 1 | 1 | 4 | 4.0 | 0 | 4 | 0 | 0 | 0 | 0 | 0 |
+| Reggie Wayne | 15 | 130 | 85 | 953 | 11.2 | 8 | 45 | 3 | 13 | 0 | 1 | 1 |
+| Darrius Heyward-Bey | 15 | 79 | 46 | 556 | 12.1 | 4 | 62 | 1 | 6 | 0 | 1 | 1 |
+| T.Y. Hilton | 15 | 53 | 31 | 339 | 10.9 | 4 | 29 | 0 | 0 | 0 | 1 | 1 |
+| Griff Whalen | 15 | 25 | 15 | 187 | 12.5 | 1 | 43 | 1 | 2 | 0 | 0 | 0 |
+| David Reed | 15 | 1 | 1 | 4 | 4.0 | 0 | 4 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Dwayne Allen | 13 | 67 | 40 | 342 | 8.6 | 1 | 27 | 0 | 0 | 0 | 1 | 1 |
+| Dwayne Allen | 14 | 73 | 45 | 399 | 8.9 | 1 | 27 | 0 | 0 | 0 | 1 | 1 |
 | Coby Fleener | 10 | 22 | 11 | 166 | 15.1 | 1 | 60 | 0 | 0 | 0 | 0 | 0 |
-| Dominique Jones | 14 | 10 | 5 | 44 | 8.8 | 2 | 20 | 0 | 0 | 0 | 0 | 0 |
-| Jack Doyle | 14 | 1 | 1 | 11 | 11.0 | 0 | 11 | 0 | 0 | 0 | 0 | 0 |
+| Dominique Jones | 15 | 12 | 7 | 56 | 8.0 | 2 | 20 | 0 | 0 | 0 | 1 | 1 |
+| Jack Doyle | 15 | 1 | 1 | 11 | 11.0 | 0 | 11 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Khaled Holmes | 14 | 7 |
-| Anthony Castonzo | 14 | 4 |
-| Joe Reitz | 14 | 4 |
-| Samson Satele | 13 | 4 |
-| Mike McGlynn | 14 | 3 |
+| Khaled Holmes | 15 | 7 |
+| Anthony Castonzo | 15 | 4 |
+| Joe Reitz | 15 | 4 |
+| Samson Satele | 14 | 4 |
+| Mike McGlynn | 15 | 3 |
 | Jeff Linkenbach | 2 | 2 |
-| Gosder Cherilus | 14 | 1 |
-| Donald Thomas | 14 | 0 |
+| Donald Thomas | 15 | 1 |
+| Gosder Cherilus | 15 | 1 |
 | Hugh Thornton | 3 | 0 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Cory Redding | 14 | 75 | 53 | 22 | 8 | 9 | 17 | 0 | 0 | 0 | 0 |
-| Aubrayo Franklin | 14 | 39 | 25 | 14 | 7 | 3 | 7 | 1 | 0 | 1 | 1 |
-| Ricky Jean Francois | 14 | 36 | 26 | 10 | 3 | 4 | 9 | 0 | 0 | 0 | 0 |
-| Fili Moala | 14 | 22 | 13 | 9 | 1 | 1 | 3 | 0 | 0 | 0 | 0 |
-| Ricardo Mathews | 14 | 12 | 7 | 5 | 2 | 1 | 3 | 1 | 0 | 0 | 0 |
-| Cam Johnson | 14 | 7 | 5 | 2 | 0 | 2 | 2 | 0 | 0 | 0 | 0 |
-| Josh Chapman | 14 | 3 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |
-| Montori Hughes | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Cory Redding | 15 | 82 | 57 | 25 | 9 | 9 | 17 | 0 | 0 | 0 | 0 |
+| Aubrayo Franklin | 15 | 42 | 27 | 15 | 7 | 3 | 7 | 2 | 0 | 1 | 1 |
+| Ricky Jean Francois | 15 | 38 | 28 | 10 | 3 | 4 | 10 | 0 | 0 | 0 | 0 |
+| Fili Moala | 15 | 24 | 14 | 10 | 1 | 1 | 3 | 0 | 0 | 0 | 0 |
+| Ricardo Mathews | 15 | 15 | 9 | 6 | 3 | 1 | 3 | 1 | 0 | 0 | 0 |
+| Cam Johnson | 15 | 7 | 5 | 2 | 0 | 2 | 2 | 0 | 0 | 0 | 0 |
+| Josh Chapman | 15 | 3 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |
+| Montori Hughes | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Jerrell Freeman | 14 | 125 | 82 | 43 | 8 | 8 | 14 | 7 | 2 | 1 | 1 |
-| Kelvin Sheppard | 14 | 74 | 49 | 25 | 5 | 4 | 6 | 4 | 1 | 0 | 0 |
-| Erik Walden | 14 | 69 | 40 | 29 | 1 | 3 | 4 | 2 | 0 | 1 | 1 |
-| Robert Mathis | 14 | 27 | 12 | 15 | 1 | 0 | 0 | 2 | 0 | 0 | 0 |
-| Kavell Conner | 13 | 6 | 4 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Mario Harvey | 14 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Bjoern Werner | 13 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Jerrell Freeman | 15 | 133 | 87 | 46 | 10 | 8 | 14 | 7 | 2 | 1 | 1 |
+| Kelvin Sheppard | 15 | 86 | 56 | 30 | 7 | 4 | 6 | 5 | 1 | 0 | 0 |
+| Erik Walden | 15 | 73 | 44 | 29 | 1 | 4 | 5 | 2 | 0 | 1 | 1 |
+| Robert Mathis | 15 | 28 | 12 | 16 | 1 | 0 | 0 | 2 | 0 | 0 | 0 |
+| Kavell Conner | 14 | 7 | 5 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Mario Harvey | 15 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Bjoern Werner | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Pat Angerer | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Antoine Bethea | 14 | 119 | 95 | 24 | 3 | 5 | 46 | 17 | 0 | 2 | 0 | 0 |
-| LaRon Landry | 14 | 69 | 46 | 23 | 1 | 3 | 89 | 9 | 1 | 2 | 0 | 0 |
-| Vontae Davis | 14 | 51 | 33 | 18 | 3 | 2 | 41 | 10 | 0 | 0 | 1 | 1 |
-| Gregory Toler | 14 | 42 | 30 | 12 | 2 | 0 | 0 | 3 | 2 | 2 | 1 | 1 |
-| Cassius Vaughn | 14 | 22 | 15 | 7 | 0 | 1 | 16 | 1 | 0 | 0 | 0 | 0 |
-| Joe Young | 14 | 11 | 3 | 8 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
-| Darius Butler | 14 | 3 | 3 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Antoine Bethea | 15 | 127 | 100 | 27 | 4 | 5 | 46 | 18 | 0 | 2 | 0 | 0 |
+| LaRon Landry | 15 | 72 | 47 | 25 | 1 | 3 | 89 | 9 | 1 | 2 | 0 | 0 |
+| Vontae Davis | 15 | 56 | 35 | 21 | 4 | 2 | 41 | 10 | 0 | 1 | 1 | 1 |
+| Gregory Toler | 15 | 45 | 32 | 13 | 2 | 0 | 0 | 3 | 2 | 2 | 1 | 1 |
+| Cassius Vaughn | 15 | 23 | 15 | 8 | 0 | 1 | 16 | 1 | 0 | 0 | 0 | 0 |
+| Joe Young | 15 | 12 | 4 | 8 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Darius Butler | 15 | 4 | 3 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Josh Gordy | 2 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Delano Howell | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Sergio Brown | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -1819,26 +1821,26 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Adam Vinatieri | 14 | 25 | 28 | 89.3 | 29 | 29 | 104 |
+| Adam Vinatieri | 15 | 26 | 30 | 86.7 | 31 | 31 | 109 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Pat McAfee | 14 | 66 | 2965 | 44.9 | 57 | 23 | 2 |
+| Pat McAfee | 15 | 69 | 3102 | 45.0 | 57 | 23 | 2 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Matt Overton | 14 |
+| Matt Overton | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Cassius Vaughn | CB | 14 | 34 | 882 | 25.9 | 0 | 0 | — |
-| T.Y. Hilton | WR | 14 | 0 | 0 | — | 40 | 303 | 7.6 |
+| Cassius Vaughn | CB | 15 | 38 | 997 | 26.2 | 0 | 0 | — |
+| T.Y. Hilton | WR | 15 | 0 | 0 | — | 41 | 306 | 7.5 |
 
 ### Other statistics
 
@@ -1850,7 +1852,7 @@ Counters outside the player's position table, such as coverage tackles by offens
 | Jerrell Freeman | ILB | INT YDS 6 |
 | Kelvin Sheppard | MLB | INT YDS 29 |
 | Andrew Luck | QB | RUSH LNG 19 |
-| Ahmad Bradshaw | RB | REC LNG 9 |
+| Ahmad Bradshaw | RB | REC LNG 17 |
 | Donald Brown | RB | REC LNG 25 |
 | Vick Ballard | RB | REC LNG 36 |
 | Darrius Heyward-Bey | WR | RUSH LNG 6 |
@@ -1863,132 +1865,132 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Kirk Cousins | 14 | 317 | 497 | 63.8 | 3347 | 6.7 | 19 | 18 | 80.9 | 33 | 216 | 33 | 99 | 0 | 2 | 2 |
-| Chad Henne | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Kirk Cousins | 15 | 333 | 529 | 62.9 | 3703 | 7.0 | 22 | 18 | 83.4 | 35 | 231 | 35 | 101 | 0 | 2 | 2 |
+| Chad Henne | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | John Parker Wilson | 4 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Maurice Jones-Drew | 14 | 236 | 1158 | 4.9 | 7 | 35 | 60 | 39 | 357 | 4 | 2 | 2 |
-| Jonathan Grimes | 14 | 81 | 409 | 5.0 | 3 | 18 | 11 | 4 | 72 | 0 | 1 | 1 |
-| C.J. Anderson | 14 | 13 | 63 | 4.8 | 0 | 10 | 2 | 1 | 17 | 0 | 1 | 1 |
-| Montell Owens | 14 | 10 | 50 | 5.0 | 0 | 13 | 14 | 7 | 113 | 0 | 0 | 0 |
+| Maurice Jones-Drew | 15 | 261 | 1251 | 4.8 | 8 | 35 | 64 | 40 | 365 | 4 | 2 | 2 |
+| Jonathan Grimes | 15 | 85 | 446 | 5.2 | 4 | 18 | 13 | 6 | 114 | 0 | 1 | 1 |
+| C.J. Anderson | 15 | 14 | 64 | 4.6 | 0 | 10 | 2 | 1 | 17 | 0 | 1 | 1 |
+| Montell Owens | 15 | 12 | 54 | 4.5 | 0 | 13 | 14 | 7 | 113 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Cecil Shorts | 14 | 136 | 95 | 989 | 10.4 | 5 | 37 | 2 | 5 | 0 | 0 | 0 |
-| Adam Thielen | 14 | 76 | 46 | 499 | 10.8 | 2 | 38 | 1 | 3 | 0 | 0 | 0 |
-| Toney Clemons | 14 | 37 | 24 | 240 | 10.0 | 5 | 43 | 0 | 0 | 0 | 1 | 1 |
-| Justin Blackmon | 8 | 47 | 29 | 232 | 8.0 | 0 | 23 | 1 | 2 | 0 | 0 | 0 |
+| Cecil Shorts | 15 | 148 | 99 | 1093 | 11.0 | 6 | 55 | 4 | 15 | 0 | 0 | 0 |
+| Adam Thielen | 15 | 78 | 48 | 574 | 12.0 | 3 | 50 | 1 | 3 | 0 | 0 | 0 |
+| Toney Clemons | 15 | 38 | 25 | 272 | 10.9 | 5 | 43 | 0 | 0 | 0 | 1 | 1 |
+| Justin Blackmon | 9 | 50 | 30 | 240 | 8.0 | 0 | 23 | 1 | 2 | 0 | 0 | 0 |
 | Mike Brown | 9 | 16 | 12 | 112 | 9.3 | 0 | 22 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Marcedes Lewis | 14 | 82 | 52 | 630 | 12.1 | 3 | 72 | 0 | 0 | 0 | 0 | 0 |
-| Travis Kelce | 14 | 15 | 7 | 77 | 11.0 | 0 | 36 | 0 | 0 | 0 | 0 | 0 |
-| Allen Reisner | 14 | 1 | 1 | 9 | 9.0 | 0 | 9 | 0 | 0 | 0 | 0 | 0 |
+| Marcedes Lewis | 15 | 89 | 56 | 689 | 12.3 | 4 | 72 | 0 | 0 | 0 | 0 | 0 |
+| Travis Kelce | 15 | 16 | 8 | 105 | 13.1 | 0 | 36 | 0 | 0 | 0 | 0 | 0 |
+| Allen Reisner | 15 | 1 | 1 | 9 | 9.0 | 0 | 9 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Lane Johnson | 14 | 8 |
-| Will Rackley | 14 | 6 |
-| Brad Meester | 13 | 4 |
-| Austin Pasztor | 6 | 3 |
-| Mike Brewster | 12 | 3 |
-| Uche Nwaneri | 14 | 3 |
-| Cameron Bradfield | 14 | 2 |
-| Eugene Monroe | 14 | 2 |
+| Lane Johnson | 15 | 8 |
+| Will Rackley | 15 | 6 |
+| Brad Meester | 14 | 5 |
+| Mike Brewster | 13 | 4 |
+| Austin Pasztor | 7 | 3 |
+| Uche Nwaneri | 15 | 3 |
+| Cameron Bradfield | 15 | 2 |
+| Eugene Monroe | 15 | 2 |
 | Mark Asper | 6 | 2 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Sen'Derrick Marks | 14 | 80 | 50 | 30 | 7 | 7 | 14 | 6 | 0 | 0 | 0 |
-| Jason Babin | 14 | 44 | 33 | 11 | 6 | 3 | 7 | 1 | 0 | 0 | 0 |
-| Roy Miller | 14 | 40 | 25 | 15 | 3 | 1 | 5 | 3 | 0 | 0 | 0 |
-| Tyson Alualu | 14 | 22 | 16 | 6 | 3 | 3 | 6 | 1 | 0 | 0 | 0 |
-| Jeremy Mincey | 14 | 12 | 10 | 2 | 3 | 1 | 3 | 0 | 0 | 0 | 0 |
-| C.J. Mosley | 5 | 7 | 4 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Andre Branch | 14 | 4 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Sen'Derrick Marks | 15 | 86 | 53 | 33 | 7 | 7 | 14 | 6 | 0 | 0 | 0 |
+| Jason Babin | 15 | 48 | 33 | 15 | 6 | 3 | 7 | 1 | 0 | 0 | 0 |
+| Roy Miller | 15 | 47 | 29 | 18 | 4 | 1 | 7 | 3 | 0 | 0 | 0 |
+| Tyson Alualu | 15 | 22 | 16 | 6 | 3 | 3 | 7 | 1 | 0 | 0 | 0 |
+| Jeremy Mincey | 15 | 13 | 11 | 2 | 3 | 1 | 3 | 0 | 0 | 0 | 0 |
+| C.J. Mosley | 6 | 9 | 5 | 4 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Andre Branch | 15 | 4 | 2 | 2 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
 | Jeris Pendleton | 7 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Lavar Edwards | 3 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Ryan Davis | 13 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Lavar Edwards | 4 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ryan Davis | 14 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | C.J. Wilson | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Daryl Smith | 15 | 101 | 70 | 31 | 3 | 0 | 6 | 2 | 1 | 1 | 1 |
 | Paul Posluszny | 11 | 101 | 72 | 29 | 9 | 3 | 6 | 8 | 1 | 0 | 0 |
-| Daryl Smith | 14 | 91 | 63 | 28 | 3 | 0 | 5 | 2 | 1 | 1 | 1 |
-| Russell Allen | 14 | 61 | 43 | 18 | 9 | 1 | 3 | 1 | 1 | 0 | 0 |
-| Julian Stanford | 14 | 18 | 10 | 8 | 0 | 0 | 0 | 2 | 0 | 0 | 0 |
-| Sio Moore | 14 | 9 | 5 | 4 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
+| Russell Allen | 15 | 67 | 46 | 21 | 9 | 1 | 5 | 1 | 1 | 0 | 0 |
+| Julian Stanford | 15 | 23 | 15 | 8 | 0 | 0 | 0 | 3 | 0 | 0 | 0 |
+| Sio Moore | 15 | 12 | 6 | 6 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Dwight Lowery | 14 | 105 | 65 | 40 | 5 | 1 | 0 | 15 | 1 | 1 | 2 | 2 |
-| Brent Grimes | 14 | 58 | 35 | 23 | 5 | 2 | 36 | 5 | 0 | 0 | 1 | 1 |
-| Bacarri Rambo | 14 | 43 | 26 | 17 | 3 | 0 | 0 | 3 | 0 | 0 | 0 | 0 |
+| Dwight Lowery | 15 | 115 | 73 | 42 | 5 | 2 | 20 | 19 | 1 | 2 | 2 | 2 |
+| Brent Grimes | 15 | 60 | 37 | 23 | 5 | 2 | 36 | 5 | 0 | 0 | 1 | 1 |
+| Bacarri Rambo | 15 | 46 | 27 | 19 | 3 | 0 | 0 | 3 | 0 | 0 | 0 | 0 |
 | Alan Ball | 9 | 41 | 23 | 18 | 1 | 1 | 8 | 9 | 0 | 0 | 0 | 0 |
-| Mike Harris | 14 | 32 | 19 | 13 | 1 | 0 | 0 | 7 | 1 | 1 | 0 | 0 |
-| Jordan Poyer | 14 | 27 | 17 | 10 | 0 | 1 | 2 | 7 | 0 | 0 | 1 | 1 |
-| A.J. Bouye | 13 | 4 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Brynden Trawick | 14 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Chris Prosinski | 14 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Kevin Rutland | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Mike Harris | 15 | 37 | 21 | 16 | 1 | 0 | 0 | 7 | 1 | 1 | 0 | 0 |
+| Jordan Poyer | 15 | 30 | 18 | 12 | 0 | 1 | 2 | 7 | 0 | 0 | 1 | 1 |
+| A.J. Bouye | 14 | 4 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Brynden Trawick | 15 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Chris Prosinski | 15 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Kevin Rutland | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Kickers
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Josh Scobee | 14 | 30 | 35 | 85.7 | 28 | 29 | 118 |
+| Josh Scobee | 15 | 31 | 36 | 86.1 | 33 | 34 | 126 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Bryan Anger | 14 | 58 | 2593 | 44.7 | 59 | 25 | 2 |
+| Bryan Anger | 15 | 64 | 2881 | 45.0 | 59 | 26 | 4 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Jeremy Cain | 14 |
+| Jeremy Cain | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Toney Clemons | WR | 14 | 7 | 170 | 24.3 | 1 | 14 | 14.0 |
-| A.J. Bouye | CB | 13 | 4 | 118 | 29.5 | 3 | 51 | 17.0 |
+| A.J. Bouye | CB | 14 | 5 | 143 | 28.6 | 4 | 57 | 14.2 |
+| Toney Clemons | WR | 15 | 8 | 180 | 22.5 | 1 | 14 | 14.0 |
 | Mike Brown | WR | 9 | 4 | 115 | 28.8 | 3 | 32 | 10.7 |
-| C.J. Anderson | RB | 14 | 3 | 101 | 33.7 | 1 | 21 | 21.0 |
-| Dwight Lowery | S | 14 | 2 | 57 | 28.5 | 3 | 63 | 21.0 |
-| Brent Grimes | CB | 14 | 4 | 91 | 22.8 | 2 | 10 | 5.0 |
-| Chris Prosinski | S | 14 | 3 | 71 | 23.7 | 2 | 29 | 14.5 |
+| C.J. Anderson | RB | 15 | 3 | 101 | 33.7 | 1 | 21 | 21.0 |
+| Dwight Lowery | S | 15 | 2 | 57 | 28.5 | 3 | 63 | 21.0 |
+| Brent Grimes | CB | 15 | 4 | 91 | 22.8 | 2 | 10 | 5.0 |
+| Chris Prosinski | S | 15 | 3 | 71 | 23.7 | 2 | 29 | 14.5 |
 | Alan Ball | CB | 9 | 4 | 88 | 22.0 | 0 | 0 | — |
-| Mike Harris | CB | 14 | 1 | 16 | 16.0 | 6 | 70 | 11.7 |
-| Bacarri Rambo | S | 14 | 3 | 71 | 23.7 | 2 | 12 | 6.0 |
-| Kevin Rutland | CB | 5 | 3 | 63 | 21.0 | 2 | 12 | 6.0 |
-| Jonathan Grimes | RB | 14 | 2 | 49 | 24.5 | 1 | 19 | 19.0 |
-| Justin Blackmon | WR | 8 | 2 | 59 | 29.5 | 1 | 4 | 4.0 |
-| Maurice Jones-Drew | RB | 14 | 1 | 18 | 18.0 | 2 | 31 | 15.5 |
-| Cecil Shorts | WR | 14 | 1 | 24 | 24.0 | 2 | 13 | 6.5 |
-| Jordan Poyer | CB | 14 | 1 | 12 | 12.0 | 2 | 24 | 12.0 |
-| Brynden Trawick | S | 14 | 1 | 22 | 22.0 | 2 | 6 | 3.0 |
-| Adam Thielen | WR | 14 | 1 | 22 | 22.0 | 1 | 3 | 3.0 |
+| Mike Harris | CB | 15 | 1 | 16 | 16.0 | 6 | 70 | 11.7 |
+| Bacarri Rambo | S | 15 | 3 | 71 | 23.7 | 2 | 12 | 6.0 |
+| Kevin Rutland | CB | 6 | 3 | 63 | 21.0 | 2 | 12 | 6.0 |
+| Jonathan Grimes | RB | 15 | 2 | 49 | 24.5 | 1 | 19 | 19.0 |
+| Justin Blackmon | WR | 9 | 2 | 59 | 29.5 | 1 | 4 | 4.0 |
+| Brynden Trawick | S | 15 | 2 | 44 | 22.0 | 3 | 17 | 5.7 |
+| Maurice Jones-Drew | RB | 15 | 1 | 18 | 18.0 | 2 | 31 | 15.5 |
+| Cecil Shorts | WR | 15 | 1 | 24 | 24.0 | 2 | 13 | 6.5 |
+| Jordan Poyer | CB | 15 | 1 | 12 | 12.0 | 2 | 24 | 12.0 |
+| Adam Thielen | WR | 15 | 1 | 22 | 22.0 | 1 | 3 | 3.0 |
 
 ### Other statistics
 
@@ -2001,10 +2003,10 @@ Counters outside the player's position table, such as coverage tackles by offens
 | Paul Posluszny | LB | INT YDS 13 |
 | Kirk Cousins | QB | RUSH LNG 12 |
 | C.J. Anderson | RB | REC LNG 17 |
-| Jonathan Grimes | RB | REC LNG 28 |
+| Jonathan Grimes | RB | REC LNG 39 |
 | Maurice Jones-Drew | RB | REC LNG 37 |
 | Adam Thielen | WR | RUSH LNG 3 |
-| Cecil Shorts | WR | RUSH LNG 3 |
+| Cecil Shorts | WR | RUSH LNG 8 |
 | Justin Blackmon | WR | RUSH LNG 2 |
 
 ## Kansas City Chiefs
@@ -2013,86 +2015,86 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Alex Smith (KC) | 14 | 324 | 515 | 62.9 | 3663 | 7.1 | 23 | 9 | 91.8 | 26 | 184 | 32 | 135 | 0 | 0 | 0 |
-| Chase Daniel | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Alex Smith (KC) | 15 | 345 | 547 | 63.1 | 3889 | 7.1 | 24 | 9 | 92.0 | 27 | 191 | 38 | 145 | 0 | 0 | 0 |
+| Chase Daniel | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Jamaal Charles | 14 | 250 | 1332 | 5.3 | 11 | 38 | 58 | 37 | 552 | 3 | 3 | 3 |
-| Knile Davis | 14 | 92 | 465 | 5.1 | 3 | 30 | 18 | 9 | 125 | 1 | 0 | 0 |
-| Cyrus Gray | 13 | 20 | 149 | 7.5 | 0 | 43 | 5 | 2 | 22 | 0 | 0 | 0 |
-| Anthony Sherman | 14 | 7 | 39 | 5.6 | 0 | 13 | 15 | 11 | 133 | 1 | 0 | 0 |
+| Jamaal Charles | 15 | 269 | 1497 | 5.6 | 13 | 80 | 62 | 40 | 569 | 3 | 3 | 3 |
+| Knile Davis | 15 | 101 | 534 | 5.3 | 3 | 30 | 21 | 11 | 130 | 1 | 0 | 0 |
+| Cyrus Gray | 14 | 21 | 151 | 7.2 | 0 | 43 | 5 | 2 | 22 | 0 | 0 | 0 |
+| Anthony Sherman | 15 | 7 | 39 | 5.6 | 0 | 13 | 15 | 11 | 133 | 1 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Donnie Avery | 14 | 137 | 85 | 1017 | 12.0 | 6 | 58 | 3 | 14 | 0 | 1 | 1 |
-| Dwayne Bowe | 14 | 101 | 64 | 641 | 10.0 | 4 | 59 | 1 | 0 | 0 | 0 | 0 |
-| Dexter McCluster | 14 | 59 | 39 | 397 | 10.2 | 1 | 37 | 2 | 6 | 0 | 1 | 1 |
-| A.J. Jenkins | 14 | 16 | 11 | 64 | 5.8 | 1 | 12 | 0 | 0 | 0 | 0 | 0 |
-| Chad Hall | 14 | 3 | 1 | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Junior Hemingway | 14 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Donnie Avery | 15 | 146 | 92 | 1097 | 11.9 | 7 | 58 | 4 | 11 | 0 | 1 | 1 |
+| Dwayne Bowe | 15 | 107 | 68 | 698 | 10.3 | 4 | 59 | 1 | 0 | 0 | 0 | 0 |
+| Dexter McCluster | 15 | 61 | 40 | 433 | 10.8 | 1 | 37 | 2 | 6 | 0 | 1 | 1 |
+| A.J. Jenkins | 15 | 16 | 11 | 64 | 5.8 | 1 | 12 | 0 | 0 | 0 | 0 | 0 |
+| Chad Hall | 15 | 3 | 1 | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Junior Hemingway | 15 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Anthony Fasano | 14 | 79 | 50 | 537 | 10.7 | 5 | 43 | 0 | 0 | 0 | 0 | 0 |
-| Sean McGrath | 14 | 23 | 15 | 175 | 11.7 | 1 | 22 | 0 | 0 | 0 | 0 | 0 |
+| Anthony Fasano | 15 | 85 | 53 | 556 | 10.5 | 5 | 43 | 0 | 0 | 0 | 0 | 0 |
+| Sean McGrath | 15 | 25 | 16 | 187 | 11.7 | 1 | 22 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Geoff Schwartz | 14 | 7 |
-| Eric Fisher | 14 | 4 |
-| Jeff Allen | 14 | 4 |
-| Donald Stephenson | 14 | 3 |
-| Eric Kush | 12 | 3 |
-| Jon Asamoah | 14 | 2 |
-| Rodney Hudson | 14 | 2 |
-| Branden Albert | 14 | 1 |
+| Geoff Schwartz | 15 | 7 |
+| Eric Fisher | 15 | 4 |
+| Jeff Allen | 15 | 4 |
+| Donald Stephenson | 15 | 3 |
+| Eric Kush | 13 | 3 |
+| Jon Asamoah | 15 | 3 |
+| Rodney Hudson | 15 | 2 |
+| Branden Albert | 15 | 1 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Mike Devito | 14 | 77 | 63 | 14 | 10 | 10 | 18 | 5 | 0 | 0 | 0 |
-| Tyson Jackson | 14 | 60 | 42 | 18 | 8 | 6 | 11 | 1 | 0 | 2 | 2 |
-| Allen Bailey | 14 | 30 | 19 | 11 | 3 | 1 | 5 | 1 | 0 | 0 | 0 |
-| Dontari Poe | 9 | 18 | 12 | 6 | 3 | 2 | 6 | 2 | 0 | 0 | 0 |
-| Anthony Toribio | 14 | 11 | 4 | 7 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
-| Jaye Howard | 14 | 11 | 6 | 5 | 3 | 0 | 1 | 1 | 0 | 0 | 0 |
+| Mike Devito | 15 | 78 | 64 | 14 | 10 | 10 | 20 | 5 | 0 | 0 | 0 |
+| Tyson Jackson | 15 | 61 | 43 | 18 | 8 | 6 | 11 | 1 | 0 | 2 | 2 |
+| Allen Bailey | 15 | 30 | 19 | 11 | 3 | 1 | 5 | 1 | 0 | 0 | 0 |
+| Dontari Poe | 10 | 19 | 13 | 6 | 3 | 2 | 7 | 2 | 0 | 0 | 0 |
+| Anthony Toribio | 15 | 11 | 4 | 7 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Jaye Howard | 15 | 11 | 6 | 5 | 3 | 0 | 1 | 1 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Derrick Johnson | 14 | 129 | 94 | 35 | 8 | 3 | 5 | 6 | 0 | 2 | 2 |
-| Justin Houston | 14 | 84 | 73 | 11 | 1 | 6 | 8 | 1 | 0 | 1 | 1 |
-| Tamba Hali | 14 | 53 | 31 | 22 | 3 | 1 | 3 | 1 | 0 | 0 | 0 |
-| Akeem Jordan | 14 | 19 | 12 | 7 | 3 | 0 | 2 | 1 | 1 | 0 | 0 |
-| James-Michael Johnson | 14 | 8 | 3 | 5 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
-| Dezman Moses | 14 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Frank Zombo | 13 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Derrick Johnson | 15 | 134 | 99 | 35 | 8 | 3 | 5 | 6 | 0 | 2 | 2 |
+| Justin Houston | 15 | 90 | 79 | 11 | 1 | 7 | 9 | 1 | 0 | 1 | 1 |
+| Tamba Hali | 15 | 55 | 33 | 22 | 3 | 1 | 4 | 1 | 0 | 1 | 1 |
+| Akeem Jordan | 15 | 19 | 12 | 7 | 3 | 0 | 2 | 1 | 1 | 0 | 0 |
+| James-Michael Johnson | 15 | 8 | 3 | 5 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Dezman Moses | 15 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Frank Zombo | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Josh Martin | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Mike Catapano | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Nico Johnson | 13 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Nico Johnson | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Eric Berry | 14 | 104 | 70 | 34 | 6 | 4 | 57 | 22 | 0 | 1 | 1 | 1 |
-| Sean Smith | 14 | 78 | 52 | 26 | 3 | 3 | 68 | 17 | 0 | 0 | 2 | 2 |
-| Brandon Flowers | 14 | 66 | 46 | 20 | 3 | 2 | 33 | 8 | 1 | 2 | 0 | 0 |
-| Kendrick Lewis | 14 | 42 | 23 | 19 | 4 | 1 | 4 | 6 | 0 | 0 | 0 | 0 |
-| Johnathan Cyprien | 14 | 28 | 20 | 8 | 0 | 1 | 0 | 2 | 0 | 1 | 0 | 0 |
-| Dunta Robinson | 14 | 16 | 7 | 9 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
-| Quintin Demps | 14 | 6 | 2 | 4 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Eric Berry | 15 | 111 | 76 | 35 | 6 | 4 | 57 | 22 | 0 | 1 | 1 | 1 |
+| Sean Smith | 15 | 88 | 61 | 27 | 3 | 3 | 68 | 17 | 0 | 0 | 2 | 2 |
+| Brandon Flowers | 15 | 70 | 50 | 20 | 3 | 2 | 33 | 9 | 1 | 2 | 0 | 0 |
+| Kendrick Lewis | 15 | 45 | 26 | 19 | 4 | 1 | 4 | 6 | 0 | 0 | 1 | 1 |
+| Johnathan Cyprien | 15 | 28 | 20 | 8 | 0 | 1 | 0 | 2 | 0 | 1 | 0 | 0 |
+| Dunta Robinson | 15 | 17 | 8 | 9 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Quintin Demps | 15 | 6 | 2 | 4 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Bradley McDougald | 2 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Husain Abdullah | 9 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Marcus Cooper | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -2102,26 +2104,26 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Ryan Succop | 14 | 30 | 33 | 90.9 | 37 | 37 | 127 |
+| Ryan Succop | 15 | 33 | 36 | 91.7 | 40 | 40 | 139 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Dustin Colquitt | 14 | 76 | 3385 | 44.5 | 62 | 31 | 3 |
+| Dustin Colquitt | 15 | 79 | 3506 | 44.4 | 62 | 33 | 4 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Thomas Gafford | 14 |
+| Thomas Gafford | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Quintin Demps | SS | 14 | 33 | 697 | 21.1 | 0 | 0 | — |
-| Dexter McCluster | WR | 14 | 0 | 0 | — | 36 | 429 | 11.9 |
+| Quintin Demps | SS | 15 | 34 | 718 | 21.1 | 0 | 0 | — |
+| Dexter McCluster | WR | 15 | 0 | 0 | — | 38 | 429 | 11.3 |
 
 ### Other statistics
 
@@ -2144,111 +2146,112 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Ryan Tannehill | 14 | 295 | 483 | 61.1 | 3081 | 6.4 | 21 | 19 | 77.7 | 24 | 148 | 41 | 132 | 0 | 0 | 0 |
-| Matt Moore | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Pat Devlin | 12 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ryan Tannehill | 15 | 316 | 519 | 60.9 | 3343 | 6.4 | 21 | 20 | 77.1 | 26 | 162 | 42 | 129 | 0 | 0 | 0 |
+| Matt Moore | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Pat Devlin | 13 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Lamar Miller | 14 | 257 | 1098 | 4.3 | 7 | 26 | 53 | 36 | 281 | 1 | 4 | 4 |
-| Mike Gillislee | 14 | 82 | 490 | 6.0 | 1 | 76 | 19 | 10 | 53 | 0 | 1 | 1 |
-| Daniel Thomas | 14 | 17 | 70 | 4.1 | 1 | 23 | 3 | 0 | 0 | 0 | 0 | 0 |
-| Marcus Thigpen | 14 | 0 | 0 | — | 0 | 0 | 1 | 1 | 2 | 0 | 0 | 0 |
+| Lamar Miller | 15 | 268 | 1169 | 4.4 | 7 | 30 | 59 | 38 | 289 | 1 | 4 | 4 |
+| Mike Gillislee | 15 | 88 | 504 | 5.7 | 1 | 76 | 19 | 10 | 53 | 0 | 1 | 1 |
+| Daniel Thomas | 15 | 20 | 75 | 3.8 | 1 | 23 | 3 | 0 | 0 | 0 | 0 | 0 |
+| Marcus Thigpen | 15 | 0 | 0 | — | 0 | 0 | 1 | 1 | 2 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Brian Hartline | 14 | 142 | 87 | 911 | 10.5 | 5 | 54 | 5 | 22 | 0 | 1 | 1 |
-| Mike Wallace | 14 | 81 | 51 | 511 | 10.0 | 2 | 30 | 2 | 13 | 0 | 0 | 0 |
-| Brandon Gibson | 14 | 64 | 40 | 507 | 12.7 | 6 | 75 | 2 | 4 | 0 | 0 | 0 |
-| Rishard Matthews | 14 | 15 | 8 | 113 | 14.1 | 1 | 56 | 0 | 0 | 0 | 0 | 0 |
+| Brian Hartline | 15 | 149 | 92 | 952 | 10.3 | 5 | 54 | 5 | 22 | 0 | 1 | 1 |
+| Mike Wallace | 15 | 91 | 57 | 598 | 10.5 | 2 | 55 | 2 | 13 | 0 | 0 | 0 |
+| Brandon Gibson | 15 | 69 | 42 | 528 | 12.6 | 6 | 75 | 2 | 4 | 0 | 1 | 1 |
+| Rishard Matthews | 15 | 15 | 8 | 113 | 14.1 | 1 | 56 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Charles Clay | 14 | 81 | 45 | 508 | 11.3 | 3 | 51 | 0 | 0 | 0 | 1 | 1 |
-| Dion Sims | 14 | 19 | 14 | 151 | 10.8 | 3 | 23 | 0 | 0 | 0 | 1 | 1 |
-| Michael Egnew | 14 | 5 | 3 | 44 | 14.7 | 0 | 21 | 0 | 0 | 0 | 0 | 0 |
+| Charles Clay | 15 | 88 | 50 | 611 | 12.2 | 3 | 51 | 0 | 0 | 0 | 1 | 1 |
+| Dion Sims | 15 | 20 | 15 | 153 | 10.2 | 3 | 23 | 0 | 0 | 0 | 1 | 1 |
+| Michael Egnew | 15 | 5 | 3 | 44 | 14.7 | 0 | 21 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| John Jerry | 14 | 6 |
-| Dallas Thomas | 14 | 4 |
+| John Jerry | 15 | 6 |
+| Dallas Thomas | 15 | 4 |
 | Jonathan Martin | 14 | 4 |
-| Nate Garner | 14 | 3 |
-| Will Yeatman | 14 | 3 |
-| Mike Pouncey | 14 | 2 |
-| Richie Incognito | 14 | 1 |
-| Tyson Clabo | 14 | 1 |
+| Nate Garner | 15 | 3 |
+| Will Yeatman | 15 | 3 |
+| Mike Pouncey | 15 | 2 |
+| Richie Incognito | 15 | 2 |
+| Tyson Clabo | 15 | 2 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Cameron Wake | 14 | 71 | 45 | 26 | 5 | 3 | 11 | 7 | 1 | 2 | 2 |
-| Olivier Vernon | 14 | 62 | 39 | 23 | 5 | 4 | 14 | 3 | 0 | 0 | 0 |
-| Paul Soliai | 14 | 46 | 34 | 12 | 4 | 1 | 3 | 2 | 0 | 1 | 1 |
-| Randy Starks | 14 | 25 | 19 | 6 | 1 | 3 | 6 | 1 | 0 | 0 | 0 |
+| Cameron Wake | 15 | 78 | 49 | 29 | 5 | 3 | 11 | 7 | 1 | 2 | 2 |
+| Olivier Vernon | 15 | 64 | 40 | 24 | 5 | 4 | 14 | 3 | 0 | 0 | 0 |
+| Paul Soliai | 15 | 47 | 35 | 12 | 4 | 1 | 3 | 2 | 0 | 1 | 1 |
+| Randy Starks | 15 | 28 | 22 | 6 | 2 | 3 | 6 | 1 | 0 | 0 | 0 |
+| Vaughn Martin | 15 | 10 | 6 | 4 | 0 | 1 | 2 | 0 | 0 | 0 | 0 |
 | Jared Odrick | 10 | 6 | 4 | 2 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
-| Vaughn Martin | 14 | 6 | 2 | 4 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
-| Derrick Shelby | 14 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Dion Jordan | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Derrick Shelby | 15 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Dion Jordan | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Philip Wheeler | 14 | 134 | 101 | 33 | 11 | 0 | 2 | 9 | 2 | 1 | 1 |
-| Dannell Ellerbe | 14 | 83 | 51 | 32 | 7 | 1 | 7 | 4 | 0 | 1 | 1 |
-| Koa Misi | 14 | 47 | 28 | 19 | 4 | 3 | 7 | 1 | 0 | 0 | 0 |
-| Jason Trusnik | 14 | 27 | 20 | 7 | 3 | 0 | 1 | 3 | 2 | 0 | 0 |
-| Jonathan Freeny | 14 | 11 | 7 | 4 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
-| Jelani Jenkins | 14 | 2 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Josh Kaddu | 14 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Philip Wheeler | 15 | 149 | 113 | 36 | 13 | 0 | 2 | 9 | 2 | 1 | 1 |
+| Dannell Ellerbe | 15 | 87 | 53 | 34 | 7 | 1 | 7 | 4 | 0 | 1 | 1 |
+| Koa Misi | 15 | 50 | 29 | 21 | 4 | 3 | 7 | 1 | 0 | 0 | 0 |
+| Jason Trusnik | 15 | 29 | 22 | 7 | 3 | 0 | 1 | 3 | 2 | 0 | 0 |
+| Jonathan Freeny | 15 | 11 | 7 | 4 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Jelani Jenkins | 15 | 2 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Josh Kaddu | 15 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Chris Clemons (MIA) | 14 | 99 | 64 | 35 | 2 | 4 | 55 | 12 | 0 | 1 | 0 | 0 |
-| Reshad Jones | 14 | 76 | 53 | 23 | 4 | 7 | 186 | 20 | 1 | 2 | 1 | 1 |
-| Dimitri Patterson | 14 | 56 | 37 | 19 | 0 | 1 | 11 | 7 | 0 | 0 | 0 | 0 |
-| Jamar Taylor | 12 | 25 | 15 | 10 | 2 | 2 | 0 | 7 | 0 | 0 | 0 | 0 |
-| Nolan Carroll | 14 | 25 | 14 | 11 | 0 | 3 | 39 | 9 | 0 | 0 | 0 | 0 |
-| Jimmy Wilson | 14 | 11 | 6 | 5 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
-| Kelcie McCray | 14 | 4 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Chris Clemons (MIA) | 15 | 111 | 71 | 40 | 2 | 4 | 55 | 14 | 0 | 1 | 0 | 0 |
+| Reshad Jones | 15 | 82 | 56 | 26 | 4 | 7 | 186 | 21 | 1 | 2 | 1 | 1 |
+| Dimitri Patterson | 15 | 60 | 41 | 19 | 0 | 2 | 15 | 8 | 0 | 0 | 0 | 0 |
+| Jamar Taylor | 13 | 28 | 15 | 13 | 2 | 2 | 0 | 7 | 0 | 0 | 0 | 0 |
+| Nolan Carroll | 15 | 28 | 15 | 13 | 0 | 3 | 39 | 10 | 0 | 0 | 0 | 0 |
+| Jimmy Wilson | 15 | 12 | 7 | 5 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Kelcie McCray | 15 | 4 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Don Jones | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | R.J. Stanford | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Will Davis | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Kickers
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Caleb Sturgis | 14 | 16 | 25 | 64.0 | 30 | 30 | 78 |
+| Caleb Sturgis | 15 | 17 | 26 | 65.4 | 30 | 30 | 81 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Brandon Fields | 14 | 63 | 2770 | 44.0 | 59 | 24 | 2 |
+| Brandon Fields | 15 | 69 | 3072 | 44.5 | 59 | 25 | 3 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| John Denney | 14 |
+| John Denney | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Marcus Thigpen | RB | 14 | 26 | 592 | 22.8 | 29 | 303 | 10.4 |
+| Marcus Thigpen | RB | 15 | 30 | 660 | 22.0 | 29 | 303 | 10.4 |
 
 ### Other statistics
 
@@ -2273,61 +2276,61 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Christian Ponder | 14 | 314 | 476 | 66.0 | 3022 | 6.3 | 18 | 8 | 89.1 | 29 | 204 | 37 | 144 | 0 | 1 | 1 |
-| Matt Cassel | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| McLeod Bethel-Thompson | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Christian Ponder | 15 | 336 | 513 | 65.5 | 3326 | 6.5 | 22 | 9 | 90.7 | 30 | 212 | 38 | 143 | 0 | 1 | 1 |
+| Matt Cassel | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| McLeod Bethel-Thompson | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Adrian Peterson | 14 | 223 | 1062 | 4.8 | 8 | 77 | 58 | 39 | 390 | 1 | 2 | 2 |
+| Adrian Peterson | 15 | 246 | 1216 | 4.9 | 8 | 77 | 63 | 42 | 442 | 2 | 2 | 2 |
 | Toby Gerhart | 14 | 78 | 352 | 4.5 | 0 | 35 | 14 | 9 | 138 | 1 | 0 | 0 |
-| Matt Asiata | 14 | 18 | 87 | 4.8 | 1 | 25 | 1 | 0 | 0 | 0 | 0 | 0 |
-| Zach Line | 13 | 5 | 11 | 2.2 | 1 | 6 | 17 | 12 | 166 | 1 | 0 | 0 |
+| Matt Asiata | 15 | 21 | 95 | 4.5 | 1 | 25 | 2 | 1 | 13 | 0 | 0 | 0 |
+| Zach Line | 14 | 5 | 11 | 2.2 | 1 | 6 | 17 | 12 | 166 | 1 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Greg Jennings | 14 | 139 | 90 | 828 | 9.2 | 3 | 53 | 6 | 11 | 0 | 0 | 0 |
-| Jerome Simpson | 14 | 96 | 61 | 504 | 8.3 | 4 | 49 | 3 | 9 | 0 | 0 | 0 |
-| Jarius Wright | 14 | 44 | 30 | 299 | 10.0 | 2 | 44 | 0 | 0 | 0 | 0 | 0 |
-| Cordarrelle Patterson | 14 | 12 | 4 | 34 | 8.5 | 0 | 20 | 0 | 0 | 0 | 0 | 0 |
-| Joe Webb | 14 | 2 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Greg Jennings | 15 | 149 | 97 | 916 | 9.4 | 4 | 53 | 6 | 11 | 0 | 0 | 0 |
+| Jerome Simpson | 15 | 101 | 65 | 549 | 8.4 | 5 | 49 | 3 | 9 | 0 | 0 | 0 |
+| Jarius Wright | 15 | 46 | 31 | 309 | 10.0 | 2 | 44 | 0 | 0 | 0 | 0 | 0 |
+| Cordarrelle Patterson | 15 | 15 | 5 | 39 | 7.8 | 0 | 20 | 0 | 0 | 0 | 0 | 0 |
+| Joe Webb | 15 | 2 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Kyle Rudolph | 14 | 76 | 54 | 515 | 9.5 | 4 | 56 | 0 | 0 | 0 | 0 | 0 |
-| John Carlson | 14 | 17 | 15 | 148 | 9.9 | 2 | 25 | 0 | 0 | 0 | 0 | 0 |
-| Rhett Ellison | 14 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Kyle Rudolph | 15 | 84 | 58 | 600 | 10.3 | 5 | 56 | 0 | 0 | 0 | 0 | 0 |
+| John Carlson | 15 | 19 | 16 | 154 | 9.6 | 2 | 25 | 0 | 0 | 0 | 0 | 0 |
+| Rhett Ellison | 15 | 1 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Matt Kalil | 14 | 7 |
-| Joe Berger | 14 | 6 |
-| Jeff Baca | 14 | 5 |
-| Phil Loadholt | 14 | 4 |
-| Brandon Fusco | 14 | 3 |
-| Charlie Johnson | 14 | 3 |
-| J'Marcus Webb | 4 | 1 |
-| John Sullivan | 14 | 0 |
+| Matt Kalil | 15 | 7 |
+| Joe Berger | 15 | 6 |
+| Jeff Baca | 15 | 5 |
+| Phil Loadholt | 15 | 4 |
+| Brandon Fusco | 15 | 3 |
+| Charlie Johnson | 15 | 3 |
+| J'Marcus Webb | 5 | 1 |
+| John Sullivan | 15 | 1 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Jared Allen | 14 | 80 | 56 | 24 | 7 | 8 | 14 | 5 | 0 | 1 | 1 |
-| Brian Robison | 14 | 42 | 25 | 17 | 2 | 4 | 7 | 1 | 0 | 0 | 0 |
-| Letroy Guion | 14 | 29 | 18 | 11 | 2 | 7 | 7 | 2 | 0 | 1 | 1 |
-| Everson Griffen | 14 | 16 | 10 | 6 | 1 | 1 | 2 | 0 | 0 | 0 | 0 |
-| Kevin Williams | 13 | 13 | 11 | 2 | 1 | 1 | 4 | 0 | 0 | 0 | 0 |
-| Fred Evans | 14 | 12 | 6 | 6 | 3 | 2 | 3 | 0 | 0 | 0 | 0 |
-| Sharrif Floyd | 14 | 5 | 3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Jared Allen | 15 | 86 | 62 | 24 | 8 | 9 | 16 | 6 | 0 | 1 | 1 |
+| Brian Robison | 15 | 46 | 29 | 17 | 2 | 5 | 8 | 1 | 0 | 0 | 0 |
+| Letroy Guion | 15 | 34 | 23 | 11 | 4 | 8 | 9 | 2 | 0 | 1 | 1 |
+| Everson Griffen | 15 | 17 | 10 | 7 | 1 | 1 | 2 | 0 | 0 | 0 | 0 |
+| Kevin Williams | 14 | 16 | 14 | 2 | 1 | 1 | 4 | 0 | 0 | 0 | 0 |
+| Fred Evans | 15 | 12 | 6 | 6 | 3 | 2 | 3 | 0 | 0 | 0 | 0 |
+| Sharrif Floyd | 15 | 5 | 3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Chase Baker | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | George Johnson | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
@@ -2335,26 +2338,26 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Chad Greenway | 14 | 126 | 90 | 36 | 6 | 8 | 12 | 7 | 1 | 0 | 0 |
-| Erin Henderson | 14 | 77 | 54 | 23 | 2 | 3 | 7 | 8 | 2 | 2 | 2 |
-| Marvin Mitchell | 14 | 53 | 29 | 24 | 4 | 0 | 3 | 3 | 0 | 1 | 1 |
-| Larry Dean | 14 | 34 | 22 | 12 | 2 | 3 | 3 | 1 | 0 | 0 | 0 |
-| Audie Cole | 11 | 3 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Desmond Bishop | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Gerald Hodges | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Chad Greenway | 15 | 134 | 96 | 38 | 6 | 8 | 12 | 7 | 1 | 0 | 0 |
+| Erin Henderson | 15 | 86 | 61 | 25 | 2 | 5 | 9 | 9 | 2 | 2 | 2 |
+| Marvin Mitchell | 15 | 55 | 29 | 26 | 4 | 0 | 3 | 3 | 0 | 1 | 1 |
+| Larry Dean | 15 | 34 | 22 | 12 | 2 | 3 | 3 | 1 | 0 | 0 | 0 |
+| Audie Cole | 12 | 3 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Desmond Bishop | 15 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Gerald Hodges | 15 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Michael Mauti | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Harrison Smith | 14 | 122 | 84 | 38 | 4 | 1 | 41 | 11 | 0 | 1 | 0 | 0 |
-| Jamarca Sanford | 14 | 80 | 45 | 35 | 0 | 5 | 88 | 12 | 0 | 0 | 0 | 0 |
-| Josh Robinson | 13 | 46 | 29 | 17 | 1 | 0 | 0 | 6 | 0 | 0 | 0 | 0 |
-| Chris Cook | 14 | 42 | 28 | 14 | 2 | 2 | 49 | 5 | 0 | 0 | 0 | 0 |
-| A.J. Orange | 14 | 29 | 19 | 10 | 1 | 1 | 8 | 6 | 0 | 0 | 0 | 0 |
-| Mistral Raymond | 14 | 14 | 7 | 7 | 1 | 1 | 25 | 2 | 0 | 0 | 0 | 0 |
-| Andrew Sendejo | 14 | 4 | 3 | 1 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Harrison Smith | 15 | 129 | 89 | 40 | 4 | 1 | 41 | 11 | 0 | 1 | 0 | 0 |
+| Jamarca Sanford | 15 | 85 | 48 | 37 | 0 | 5 | 88 | 12 | 0 | 0 | 0 | 0 |
+| Josh Robinson | 14 | 51 | 33 | 18 | 1 | 0 | 0 | 9 | 0 | 0 | 0 | 0 |
+| Chris Cook | 15 | 43 | 28 | 15 | 2 | 2 | 49 | 6 | 0 | 0 | 0 | 0 |
+| A.J. Orange | 15 | 32 | 21 | 11 | 1 | 1 | 8 | 7 | 0 | 0 | 0 | 0 |
+| Mistral Raymond | 15 | 15 | 8 | 7 | 1 | 1 | 25 | 2 | 0 | 0 | 0 | 0 |
+| Andrew Sendejo | 15 | 7 | 4 | 3 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
 | Robert Blanton | 2 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Marcus Sherels | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Xavier Rhodes | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -2363,33 +2366,33 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Blair Walsh | 14 | 28 | 30 | 93.3 | 28 | 28 | 112 |
+| Blair Walsh | 15 | 30 | 32 | 93.8 | 32 | 32 | 122 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Jeff Locke | 14 | 71 | 3352 | 47.2 | 71 | 29 | 3 |
+| Jeff Locke | 15 | 76 | 3558 | 46.8 | 71 | 33 | 3 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Cullen Loeffler | 14 |
+| Cullen Loeffler | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Cordarrelle Patterson | WR | 14 | 35 | 761 | 21.7 | 2 | 10 | 5.0 |
-| Jarius Wright | WR | 14 | 0 | 0 | — | 4 | 81 | 20.2 |
-| Joe Webb | WR | 14 | 0 | 0 | — | 2 | 35 | 17.5 |
-| Chris Cook | CB | 14 | 0 | 0 | — | 4 | 34 | 8.5 |
-| Greg Jennings | WR | 14 | 0 | 0 | — | 2 | 17 | 8.5 |
+| Cordarrelle Patterson | WR | 15 | 40 | 884 | 22.1 | 2 | 10 | 5.0 |
+| Jarius Wright | WR | 15 | 0 | 0 | — | 4 | 81 | 20.2 |
+| A.J. Orange | CB | 15 | 0 | 0 | — | 2 | 36 | 18.0 |
+| Joe Webb | WR | 15 | 0 | 0 | — | 2 | 35 | 17.5 |
+| Chris Cook | CB | 15 | 0 | 0 | — | 4 | 34 | 8.5 |
+| Greg Jennings | WR | 15 | 0 | 0 | — | 2 | 17 | 8.5 |
 | Marcus Sherels | CB | 2 | 0 | 0 | — | 1 | 17 | 17.0 |
-| A.J. Orange | CB | 14 | 0 | 0 | — | 1 | 16 | 16.0 |
-| Jerome Simpson | WR | 14 | 0 | 0 | — | 1 | 15 | 15.0 |
-| Josh Robinson | CB | 13 | 0 | 0 | — | 1 | 4 | 4.0 |
+| Jerome Simpson | WR | 15 | 0 | 0 | — | 2 | 15 | 7.5 |
+| Josh Robinson | CB | 14 | 0 | 0 | — | 2 | 4 | 2.0 |
 
 ### Other statistics
 
@@ -2399,6 +2402,7 @@ Counters outside the player's position table, such as coverage tackles by offens
 |---|---|---|
 | Zach Line | FB | REC LNG 64 |
 | Adrian Peterson | HB | REC LNG 69 |
+| Matt Asiata | HB | REC LNG 13 |
 | Toby Gerhart | HB | REC LNG 28 |
 | Erin Henderson | MLB | INT YDS 20 |
 | Chad Greenway | OLB | INT YDS 6 |
@@ -2412,87 +2416,87 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Tom Brady | 14 | 311 | 494 | 63.0 | 3190 | 6.5 | 18 | 14 | 81.8 | 29 | 176 | 38 | 100 | 0 | 0 | 0 |
-| Ryan Mallett | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Tom Brady | 15 | 342 | 539 | 63.5 | 3473 | 6.4 | 19 | 15 | 82.0 | 34 | 214 | 42 | 105 | 0 | 1 | 1 |
+| Ryan Mallett | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Stevan Ridley | 14 | 238 | 1217 | 5.1 | 11 | 46 | 59 | 46 | 514 | 4 | 2 | 2 |
-| Shane Vereen | 14 | 84 | 255 | 3.0 | 2 | 16 | 19 | 16 | 170 | 2 | 2 | 2 |
-| Brandon Bolden | 14 | 15 | 77 | 5.1 | 1 | 27 | 3 | 3 | 33 | 0 | 0 | 0 |
-| James Develin | 14 | 1 | 7 | 7.0 | 1 | 7 | 1 | 0 | 0 | 0 | 0 | 0 |
-| LeGarrette Blount | 14 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Leon Washington | 14 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Stevan Ridley | 15 | 252 | 1261 | 5.0 | 12 | 46 | 65 | 50 | 528 | 4 | 2 | 2 |
+| Shane Vereen | 15 | 88 | 261 | 3.0 | 2 | 16 | 21 | 18 | 215 | 2 | 2 | 2 |
+| Brandon Bolden | 15 | 16 | 77 | 4.8 | 1 | 27 | 4 | 4 | 39 | 1 | 0 | 0 |
+| James Develin | 15 | 1 | 7 | 7.0 | 1 | 7 | 2 | 0 | 0 | 0 | 0 | 0 |
+| LeGarrette Blount | 15 | 0 | 0 | — | 0 | 0 | 1 | 1 | 10 | 0 | 0 | 0 |
+| Leon Washington | 15 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Danny Amendola | 14 | 119 | 72 | 716 | 9.9 | 3 | 38 | 2 | 5 | 0 | 0 | 0 |
-| Julian Edelman | 14 | 101 | 59 | 674 | 11.4 | 8 | 61 | 1 | 4 | 0 | 1 | 1 |
-| Aaron Dobson | 14 | 53 | 29 | 281 | 9.7 | 1 | 37 | 0 | 0 | 0 | 0 | 0 |
-| Matt Slater | 14 | 18 | 12 | 129 | 10.8 | 0 | 36 | 1 | 8 | 0 | 0 | 0 |
-| Josh Boyce | 14 | 1 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Kenbrell Thompkins | 14 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Danny Amendola | 15 | 128 | 78 | 761 | 9.8 | 3 | 38 | 2 | 5 | 0 | 0 | 0 |
+| Julian Edelman | 15 | 109 | 64 | 732 | 11.4 | 8 | 61 | 1 | 4 | 0 | 1 | 1 |
+| Aaron Dobson | 15 | 59 | 35 | 328 | 9.4 | 1 | 37 | 0 | 0 | 0 | 0 | 0 |
+| Matt Slater | 15 | 19 | 13 | 150 | 11.5 | 0 | 36 | 1 | 8 | 0 | 0 | 0 |
+| Josh Boyce | 15 | 1 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Kenbrell Thompkins | 15 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Rob Gronkowski | 12 | 81 | 50 | 433 | 8.7 | 0 | 43 | 0 | 0 | 0 | 4 | 4 |
-| Michael Hoomanawanui | 14 | 35 | 22 | 241 | 11.0 | 0 | 54 | 0 | 0 | 0 | 0 | 0 |
+| Rob Gronkowski | 13 | 89 | 54 | 468 | 8.7 | 0 | 43 | 0 | 0 | 0 | 4 | 4 |
+| Michael Hoomanawanui | 15 | 36 | 23 | 243 | 10.6 | 0 | 54 | 0 | 0 | 0 | 0 | 0 |
 | Zach Sudfeld | 14 | 3 | 2 | -1 | -0.5 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Dan Connolly | 14 | 8 |
-| Marcus Cannon | 14 | 5 |
-| Sebastian Vollmer | 14 | 5 |
-| Nate Solder | 14 | 4 |
-| Ryan Wendell | 14 | 4 |
-| Logan Mankins | 14 | 2 |
+| Dan Connolly | 15 | 8 |
+| Marcus Cannon | 15 | 6 |
+| Ryan Wendell | 15 | 6 |
+| Sebastian Vollmer | 15 | 6 |
+| Nate Solder | 15 | 4 |
+| Logan Mankins | 15 | 3 |
 | Josh Kline | 2 | 1 |
 | Chris Barker | 2 | 0 |
-| Will Svitek | 3 | 0 |
+| Will Svitek | 4 | 0 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Rob Ninkovich | 14 | 75 | 62 | 13 | 4 | 8 | 13 | 3 | 0 | 1 | 1 |
-| Vince Wilfork | 14 | 55 | 43 | 12 | 6 | 4 | 9 | 4 | 0 | 1 | 1 |
-| Chandler Jones | 14 | 31 | 18 | 13 | 3 | 2 | 9 | 1 | 0 | 0 | 0 |
-| Tommy Kelly | 14 | 17 | 14 | 3 | 0 | 2 | 4 | 1 | 0 | 0 | 0 |
-| Jake Bequette | 14 | 11 | 7 | 4 | 1 | 1 | 1 | 2 | 1 | 0 | 0 |
-| Joe Vellano | 14 | 6 | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Michael Buchanan | 14 | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Rob Ninkovich | 15 | 85 | 69 | 16 | 5 | 10 | 15 | 3 | 0 | 1 | 1 |
+| Vince Wilfork | 15 | 57 | 44 | 13 | 6 | 4 | 10 | 4 | 0 | 1 | 1 |
+| Chandler Jones | 15 | 35 | 19 | 16 | 3 | 2 | 9 | 1 | 0 | 0 | 0 |
+| Tommy Kelly | 15 | 21 | 17 | 4 | 1 | 2 | 4 | 1 | 0 | 0 | 0 |
+| Jake Bequette | 15 | 12 | 7 | 5 | 1 | 1 | 1 | 2 | 1 | 0 | 0 |
+| Joe Vellano | 15 | 6 | 3 | 3 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
+| Michael Buchanan | 15 | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Jerod Mayo | 14 | 127 | 81 | 46 | 12 | 4 | 7 | 9 | 2 | 0 | 0 |
-| Brandon Spikes | 14 | 94 | 69 | 25 | 6 | 5 | 9 | 5 | 0 | 0 | 0 |
-| Dont'a Hightower | 14 | 56 | 34 | 22 | 0 | 0 | 1 | 3 | 0 | 0 | 0 |
-| Dane Fletcher | 14 | 23 | 11 | 12 | 1 | 0 | 0 | 1 | 1 | 0 | 0 |
-| Jamie Collins | 14 | 7 | 6 | 1 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
-| Steve Beauharnais | 13 | 5 | 3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Chris White | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Jerod Mayo | 15 | 136 | 88 | 48 | 13 | 4 | 7 | 9 | 2 | 0 | 0 |
+| Brandon Spikes | 15 | 101 | 74 | 27 | 6 | 5 | 10 | 5 | 0 | 0 | 0 |
+| Dont'a Hightower | 15 | 59 | 36 | 23 | 0 | 0 | 1 | 3 | 0 | 0 | 0 |
+| Dane Fletcher | 15 | 23 | 11 | 12 | 1 | 0 | 0 | 1 | 1 | 0 | 0 |
+| Jamie Collins | 15 | 8 | 7 | 1 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
+| Steve Beauharnais | 14 | 5 | 3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Chris White | 15 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Devin McCourty | 13 | 78 | 49 | 29 | 4 | 6 | 89 | 14 | 0 | 1 | 1 | 1 |
-| Aqib Talib | 14 | 74 | 50 | 24 | 2 | 2 | 48 | 11 | 0 | 0 | 1 | 1 |
-| Alfonzo Dennard | 14 | 67 | 44 | 23 | 2 | 2 | 31 | 10 | 0 | 0 | 0 | 0 |
-| Steve Gregory | 14 | 46 | 34 | 12 | 1 | 2 | 62 | 9 | 0 | 0 | 0 | 0 |
-| Kyle Arrington | 13 | 25 | 17 | 8 | 0 | 1 | 0 | 4 | 0 | 0 | 0 | 0 |
-| Tavon Wilson | 14 | 10 | 5 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Devin McCourty | 14 | 86 | 54 | 32 | 4 | 8 | 87 | 16 | 0 | 1 | 1 | 1 |
+| Aqib Talib | 15 | 78 | 53 | 25 | 2 | 2 | 48 | 11 | 0 | 0 | 1 | 1 |
+| Alfonzo Dennard | 15 | 72 | 48 | 24 | 2 | 2 | 31 | 12 | 0 | 0 | 0 | 0 |
+| Steve Gregory | 15 | 47 | 35 | 12 | 1 | 2 | 62 | 9 | 0 | 0 | 0 | 0 |
+| Kyle Arrington | 14 | 27 | 19 | 8 | 1 | 1 | 0 | 4 | 0 | 0 | 0 | 0 |
+| Tavon Wilson | 15 | 11 | 5 | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Duron Harmon | 2 | 2 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Marquice Cole | 2 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Logan Ryan | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -2502,27 +2506,27 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Stephen Gostkowski | 14 | 24 | 28 | 85.7 | 33 | 33 | 105 |
+| Stephen Gostkowski | 15 | 24 | 29 | 82.8 | 35 | 35 | 107 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Ryan Allen | 14 | 66 | 3002 | 45.5 | 58 | 26 | 0 |
+| Ryan Allen | 15 | 74 | 3372 | 45.6 | 59 | 28 | 2 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Danny Aiken | 14 |
+| Danny Aiken | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Devin McCourty | S | 13 | 21 | 478 | 22.8 | 0 | 0 | — |
-| Julian Edelman | WR | 14 | 0 | 0 | — | 36 | 383 | 10.6 |
-| Stevan Ridley | RB | 14 | 1 | 35 | 35.0 | 0 | 0 | — |
+| Devin McCourty | S | 14 | 24 | 568 | 23.7 | 0 | 0 | — |
+| Julian Edelman | WR | 15 | 0 | 0 | — | 41 | 423 | 10.3 |
+| Stevan Ridley | RB | 15 | 1 | 35 | 35.0 | 0 | 0 | — |
 
 ### Other statistics
 
@@ -2535,6 +2539,7 @@ Counters outside the player's position table, such as coverage tackles by offens
 | Jerod Mayo | LB | INT YDS 32 |
 | Tom Brady | QB | RUSH LNG 16 |
 | Brandon Bolden | RB | REC LNG 30 |
+| LeGarrette Blount | RB | REC LNG 10 |
 | Shane Vereen | RB | REC LNG 37 |
 | Stevan Ridley | RB | REC LNG 39 |
 | Danny Amendola | WR | RUSH LNG 3 |
@@ -2547,87 +2552,87 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Luke McCown | 14 | 153 | 237 | 64.6 | 1872 | 7.9 | 12 | 8 | 91.6 | 13 | 91 | 20 | 124 | 1 | 1 | 1 |
-| Drew Brees | 7 | 158 | 239 | 66.1 | 1680 | 7.0 | 10 | 9 | 84.7 | 13 | 82 | 18 | 44 | 0 | 0 | 0 |
+| Drew Brees | 8 | 186 | 281 | 66.2 | 1941 | 6.9 | 11 | 11 | 82.8 | 17 | 106 | 21 | 41 | 0 | 0 | 0 |
+| Luke McCown | 15 | 153 | 237 | 64.6 | 1872 | 7.9 | 12 | 8 | 91.6 | 13 | 91 | 20 | 124 | 1 | 1 | 1 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Pierre Thomas | 14 | 253 | 1081 | 4.3 | 8 | 30 | 50 | 29 | 310 | 3 | 1 | 1 |
-| Mark Ingram | 14 | 71 | 272 | 3.8 | 1 | 19 | 15 | 8 | 105 | 2 | 0 | 0 |
-| Travaris Cadet | 14 | 11 | 80 | 7.3 | 0 | 13 | 7 | 5 | 53 | 0 | 0 | 0 |
-| Jed Collins | 14 | 5 | 20 | 4.0 | 0 | 6 | 10 | 7 | 91 | 1 | 0 | 0 |
-| Darren Sproles | 12 | 2 | 2 | 1.0 | 0 | 4 | 2 | 2 | 19 | 0 | 0 | 0 |
-| Khiry Robinson | 14 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Pierre Thomas | 15 | 273 | 1136 | 4.2 | 9 | 30 | 57 | 34 | 368 | 3 | 1 | 1 |
+| Mark Ingram | 15 | 81 | 278 | 3.4 | 1 | 19 | 16 | 9 | 105 | 2 | 0 | 0 |
+| Travaris Cadet | 15 | 12 | 86 | 7.2 | 0 | 13 | 7 | 5 | 53 | 0 | 0 | 0 |
+| Jed Collins | 15 | 6 | 21 | 3.5 | 0 | 6 | 12 | 9 | 107 | 1 | 0 | 0 |
+| Darren Sproles | 13 | 2 | 2 | 1.0 | 0 | 4 | 2 | 2 | 19 | 0 | 0 | 0 |
+| Khiry Robinson | 15 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Marques Colston | 14 | 138 | 88 | 1069 | 12.1 | 4 | 85 | 3 | 8 | 0 | 0 | 0 |
-| Lance Moore | 14 | 86 | 63 | 552 | 8.8 | 5 | 36 | 0 | 0 | 0 | 1 | 1 |
-| Andy Tanner | 14 | 51 | 31 | 439 | 14.2 | 2 | 79 | 1 | 1 | 1 | 0 | 0 |
-| Nick Toon | 14 | 14 | 12 | 133 | 11.1 | 1 | 24 | 1 | 12 | 0 | 0 | 0 |
-| Kenny Stills | 14 | 4 | 4 | 29 | 7.2 | 0 | 12 | 1 | 3 | 0 | 0 | 0 |
+| Marques Colston | 15 | 147 | 95 | 1116 | 11.7 | 4 | 85 | 4 | 25 | 1 | 0 | 0 |
+| Lance Moore | 15 | 92 | 66 | 571 | 8.7 | 5 | 36 | 0 | 0 | 0 | 1 | 1 |
+| Andy Tanner | 15 | 56 | 33 | 523 | 15.8 | 3 | 79 | 1 | 1 | 1 | 0 | 0 |
+| Nick Toon | 15 | 17 | 14 | 143 | 10.2 | 1 | 24 | 1 | 12 | 0 | 0 | 0 |
+| Kenny Stills | 15 | 5 | 5 | 37 | 7.4 | 0 | 12 | 1 | 3 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Jimmy Graham | 14 | 75 | 46 | 606 | 13.2 | 3 | 63 | 0 | 0 | 0 | 1 | 1 |
-| Benjamin Watson | 14 | 22 | 15 | 144 | 9.6 | 1 | 24 | 0 | 0 | 0 | 0 | 0 |
-| Josh Hill | 14 | 2 | 1 | 2 | 2.0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
+| Jimmy Graham | 15 | 82 | 51 | 625 | 12.3 | 3 | 63 | 0 | 0 | 0 | 1 | 1 |
+| Benjamin Watson | 15 | 23 | 15 | 144 | 9.6 | 1 | 24 | 0 | 0 | 0 | 0 | 0 |
+| Josh Hill | 15 | 2 | 1 | 2 | 2.0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Brian De La Puente | 14 | 7 |
-| Zach Strief | 14 | 7 |
-| Ben Grubbs | 14 | 5 |
+| Brian De La Puente | 15 | 8 |
+| Zach Strief | 15 | 8 |
+| Ben Grubbs | 15 | 6 |
+| Tim Lelito | 10 | 3 |
 | Charles Brown | 14 | 2 |
-| Terron Armstead | 14 | 2 |
-| Tim Lelito | 9 | 2 |
-| Jahri Evans | 14 | 1 |
-| Bryce Harris | 6 | 0 |
+| Terron Armstead | 15 | 2 |
+| Jahri Evans | 15 | 1 |
+| Bryce Harris | 7 | 0 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Cameron Jordan | 14 | 74 | 51 | 23 | 11 | 7 | 13 | 6 | 0 | 0 | 0 |
-| Brodrick Bunkley | 14 | 52 | 33 | 19 | 5 | 6 | 10 | 0 | 0 | 1 | 1 |
-| Akiem Hicks | 14 | 35 | 26 | 9 | 1 | 3 | 6 | 0 | 0 | 1 | 1 |
-| Tom Johnson | 14 | 17 | 13 | 4 | 2 | 0 | 1 | 2 | 0 | 0 | 0 |
-| Glenn Foster | 13 | 15 | 11 | 4 | 2 | 1 | 2 | 0 | 0 | 0 | 0 |
-| John Jenkins | 14 | 7 | 4 | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Tyrunn Walker | 14 | 2 | 2 | 0 | 0 | 1 | 2 | 0 | 0 | 0 | 0 |
+| Cameron Jordan | 15 | 77 | 53 | 24 | 11 | 8 | 15 | 6 | 0 | 0 | 0 |
+| Brodrick Bunkley | 15 | 56 | 36 | 20 | 5 | 8 | 12 | 0 | 0 | 1 | 1 |
+| Akiem Hicks | 15 | 38 | 28 | 10 | 2 | 4 | 7 | 0 | 0 | 1 | 1 |
+| Tom Johnson | 15 | 19 | 13 | 6 | 2 | 0 | 1 | 2 | 0 | 0 | 0 |
+| Glenn Foster | 14 | 15 | 11 | 4 | 2 | 1 | 2 | 0 | 0 | 0 | 0 |
+| John Jenkins | 15 | 7 | 4 | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Tyrunn Walker | 15 | 2 | 2 | 0 | 0 | 1 | 2 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Curtis Lofton | 14 | 143 | 99 | 44 | 8 | 2 | 8 | 8 | 0 | 2 | 2 |
-| David Hawthorne | 14 | 95 | 67 | 28 | 9 | 6 | 9 | 4 | 2 | 0 | 0 |
-| Junior Galette | 14 | 45 | 30 | 15 | 2 | 4 | 5 | 2 | 1 | 0 | 0 |
-| Martez Wilson | 14 | 24 | 17 | 7 | 5 | 1 | 1 | 0 | 0 | 0 | 0 |
-| Will Herring | 14 | 9 | 6 | 3 | 0 | 0 | 0 | 1 | 0 | 1 | 1 |
-| Ramon Humber | 14 | 3 | 0 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Curtis Lofton | 15 | 155 | 109 | 46 | 9 | 3 | 11 | 9 | 0 | 3 | 3 |
+| David Hawthorne | 15 | 101 | 71 | 30 | 10 | 6 | 9 | 5 | 3 | 1 | 1 |
+| Junior Galette | 15 | 47 | 32 | 15 | 2 | 4 | 5 | 3 | 1 | 0 | 0 |
+| Martez Wilson | 15 | 24 | 17 | 7 | 5 | 1 | 2 | 0 | 0 | 0 | 0 |
+| Will Herring | 15 | 10 | 6 | 4 | 0 | 0 | 0 | 1 | 0 | 1 | 1 |
+| Ramon Humber | 15 | 3 | 0 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Kevin Reddick | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Parys Haralson | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Parys Haralson | 15 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Roman Harper | 14 | 93 | 69 | 24 | 1 | 3 | 48 | 18 | 1 | 3 | 0 | 0 |
-| Malcolm Jenkins | 14 | 80 | 51 | 29 | 7 | 5 | 21 | 13 | 0 | 0 | 1 | 1 |
-| Keenan Lewis | 14 | 57 | 37 | 20 | 2 | 1 | 0 | 9 | 0 | 1 | 1 | 1 |
-| Jabari Greer | 14 | 32 | 23 | 9 | 1 | 0 | 0 | 9 | 1 | 1 | 0 | 0 |
+| Roman Harper | 15 | 100 | 75 | 25 | 2 | 4 | 92 | 20 | 1 | 3 | 0 | 0 |
+| Malcolm Jenkins | 15 | 84 | 54 | 30 | 7 | 5 | 21 | 14 | 0 | 1 | 1 | 1 |
+| Keenan Lewis | 15 | 61 | 40 | 21 | 2 | 1 | 0 | 9 | 0 | 1 | 1 | 1 |
+| Jabari Greer | 15 | 34 | 24 | 10 | 1 | 0 | 0 | 10 | 1 | 1 | 0 | 0 |
+| Corey White | 15 | 16 | 9 | 7 | 0 | 2 | 53 | 5 | 0 | 0 | 0 | 0 |
 | Patrick Robinson | 12 | 15 | 11 | 4 | 0 | 0 | 0 | 2 | 0 | 0 | 1 | 1 |
-| Corey White | 14 | 14 | 7 | 7 | 0 | 2 | 53 | 5 | 0 | 0 | 0 | 0 |
-| Rafael Bush | 13 | 4 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| Rafael Bush | 14 | 5 | 4 | 1 | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
 | Kenny Vaccaro | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Rod Sweeting | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
@@ -2635,32 +2640,32 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Garrett Hartley | 14 | 27 | 29 | 93.1 | 33 | 33 | 114 |
+| Garrett Hartley | 15 | 29 | 31 | 93.5 | 36 | 36 | 123 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Thomas Morstead | 14 | 58 | 2622 | 45.2 | 68 | 24 | 4 |
+| Thomas Morstead | 15 | 63 | 2856 | 45.3 | 68 | 26 | 4 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Justin Drescher | 14 |
+| Justin Drescher | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Darren Sproles | RB | 12 | 28 | 663 | 23.7 | 33 | 418 | 12.7 |
-| Pierre Thomas | RB | 14 | 1 | 21 | 21.0 | 1 | 16 | 16.0 |
-| Khiry Robinson | RB | 14 | 1 | 25 | 25.0 | 0 | 0 | — |
-| Jabari Greer | CB | 14 | 2 | 20 | 10.0 | 0 | 0 | — |
-| Andy Tanner | WR | 14 | 0 | 0 | — | 1 | 10 | 10.0 |
-| Travaris Cadet | RB | 14 | 0 | 0 | — | 2 | 4 | 2.0 |
-| Nick Toon | WR | 14 | 0 | 0 | — | 1 | 0 | 0.0 |
-| Marques Colston | WR | 14 | 0 | 0 | — | 1 | -1 | -1.0 |
+| Darren Sproles | RB | 13 | 32 | 764 | 23.9 | 36 | 449 | 12.5 |
+| Pierre Thomas | RB | 15 | 1 | 21 | 21.0 | 1 | 16 | 16.0 |
+| Khiry Robinson | RB | 15 | 1 | 25 | 25.0 | 0 | 0 | — |
+| Jabari Greer | CB | 15 | 2 | 20 | 10.0 | 0 | 0 | — |
+| Andy Tanner | WR | 15 | 0 | 0 | — | 1 | 10 | 10.0 |
+| Travaris Cadet | RB | 15 | 0 | 0 | — | 2 | 4 | 2.0 |
+| Nick Toon | WR | 15 | 0 | 0 | — | 1 | 0 | 0.0 |
+| Marques Colston | WR | 15 | 0 | 0 | — | 1 | -1 | -1.0 |
 
 ### Other statistics
 
@@ -2669,7 +2674,7 @@ Counters outside the player's position table, such as coverage tackles by offens
 | Player | Pos | Statistics |
 |---|---|---|
 | Jed Collins | FB | REC LNG 40 |
-| David Hawthorne | ILB | INT YDS 19 |
+| David Hawthorne | ILB | INT YDS 20 |
 | Junior Galette | OLB | INT YDS 35 |
 | Drew Brees | QB | RUSH LNG 7 |
 | Luke McCown | QB | RUSH LNG 23 |
@@ -2679,7 +2684,7 @@ Counters outside the player's position table, such as coverage tackles by offens
 | Travaris Cadet | RB | REC LNG 16 |
 | Andy Tanner | WR | RUSH LNG 1 |
 | Kenny Stills | WR | RUSH LNG 3 |
-| Marques Colston | WR | RUSH LNG 6 |
+| Marques Colston | WR | RUSH LNG 17 |
 | Nick Toon | WR | RUSH LNG 12 |
 
 ## New York Giants
@@ -2688,113 +2693,113 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Eli Manning | 14 | 306 | 502 | 61.0 | 3277 | 6.5 | 15 | 13 | 79.2 | 31 | 208 | 36 | 206 | 2 | 0 | 0 |
-| Curtis Painter | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Ryan Nassib | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Eli Manning | 15 | 328 | 540 | 60.7 | 3528 | 6.5 | 17 | 16 | 78.1 | 34 | 226 | 42 | 231 | 2 | 1 | 1 |
+| Curtis Painter | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ryan Nassib | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| David Wilson | 14 | 256 | 1157 | 4.5 | 9 | 35 | 50 | 26 | 302 | 1 | 4 | 4 |
-| Da'Rel Scott | 13 | 78 | 362 | 4.6 | 2 | 18 | 24 | 12 | 189 | 0 | 1 | 1 |
-| Michael Cox | 14 | 32 | 136 | 4.2 | 0 | 26 | 4 | 2 | 3 | 0 | 0 | 0 |
-| Henry Hynoski | 14 | 12 | 54 | 4.5 | 2 | 10 | 11 | 9 | 44 | 0 | 0 | 0 |
+| David Wilson | 15 | 275 | 1212 | 4.4 | 10 | 35 | 56 | 30 | 359 | 2 | 4 | 4 |
+| Da'Rel Scott | 14 | 85 | 401 | 4.7 | 2 | 18 | 24 | 12 | 189 | 0 | 1 | 1 |
+| Michael Cox | 15 | 34 | 152 | 4.5 | 0 | 26 | 5 | 3 | 6 | 0 | 0 | 0 |
+| Henry Hynoski | 15 | 13 | 76 | 5.8 | 2 | 22 | 11 | 9 | 44 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Victor Cruz | 14 | 151 | 95 | 1101 | 11.6 | 6 | 54 | 3 | 7 | 0 | 1 | 1 |
-| Hakeem Nicks | 14 | 71 | 44 | 554 | 12.6 | 5 | 56 | 1 | 1 | 0 | 1 | 1 |
-| Louis Murphy | 14 | 40 | 23 | 209 | 9.1 | 0 | 21 | 1 | 9 | 0 | 0 | 0 |
-| Rueben Randle | 14 | 22 | 16 | 148 | 9.2 | 0 | 31 | 2 | 20 | 0 | 0 | 0 |
-| Jerrel Jernigan | 14 | 4 | 4 | 28 | 7.0 | 0 | 12 | 0 | 0 | 0 | 0 | 0 |
+| Victor Cruz | 15 | 163 | 101 | 1157 | 11.5 | 6 | 54 | 4 | 12 | 0 | 1 | 1 |
+| Hakeem Nicks | 15 | 74 | 45 | 567 | 12.6 | 6 | 56 | 1 | 1 | 0 | 1 | 1 |
+| Louis Murphy | 15 | 45 | 27 | 248 | 9.2 | 0 | 25 | 1 | 9 | 0 | 0 | 0 |
+| Rueben Randle | 15 | 24 | 17 | 165 | 9.7 | 0 | 31 | 2 | 20 | 0 | 0 | 0 |
+| Jerrel Jernigan | 15 | 4 | 4 | 28 | 7.0 | 0 | 12 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Brandon Myers | 14 | 104 | 65 | 590 | 9.1 | 3 | 36 | 1 | 16 | 0 | 0 | 0 |
-| Bear Pascoe | 14 | 16 | 9 | 115 | 12.8 | 0 | 28 | 0 | 0 | 0 | 0 | 0 |
-| Adrien Robinson | 8 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Larry Donnell | 14 | 2 | 1 | -6 | -6.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Brandon Myers | 15 | 112 | 69 | 628 | 9.1 | 3 | 36 | 1 | 16 | 0 | 0 | 0 |
+| Bear Pascoe | 15 | 17 | 10 | 143 | 14.3 | 0 | 28 | 0 | 0 | 0 | 0 | 0 |
+| Adrien Robinson | 9 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Larry Donnell | 15 | 2 | 1 | -6 | -6.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Justin Pugh | 14 | 7 |
-| Brandon Mosley | 14 | 6 |
-| David Baas | 13 | 5 |
-| Jim Cordle | 14 | 4 |
-| Will Beatty | 14 | 4 |
-| Chris Snee | 14 | 2 |
-| James Brewer | 14 | 2 |
+| Brandon Mosley | 15 | 7 |
+| Justin Pugh | 15 | 7 |
+| Will Beatty | 15 | 6 |
+| David Baas | 14 | 5 |
+| Jim Cordle | 15 | 4 |
+| Chris Snee | 15 | 2 |
+| James Brewer | 15 | 2 |
 | Kevin Boothe | 11 | 1 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Linval Joseph | 14 | 74 | 52 | 22 | 12 | 7 | 16 | 5 | 0 | 0 | 0 |
-| Mathias Kiwanuka | 14 | 45 | 31 | 14 | 1 | 3 | 3 | 4 | 1 | 1 | 1 |
-| Justin Tuck | 10 | 36 | 24 | 12 | 2 | 3 | 6 | 3 | 0 | 0 | 0 |
-| Cullen Jenkins | 8 | 14 | 12 | 2 | 1 | 1 | 2 | 2 | 0 | 0 | 0 |
-| Jason Pierre-Paul | 14 | 13 | 10 | 3 | 1 | 1 | 3 | 0 | 0 | 0 | 0 |
-| Shaun Rogers | 14 | 8 | 7 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Linval Joseph | 15 | 79 | 54 | 25 | 13 | 7 | 17 | 5 | 0 | 1 | 1 |
+| Mathias Kiwanuka | 15 | 47 | 32 | 15 | 1 | 3 | 4 | 4 | 1 | 1 | 1 |
+| Justin Tuck | 11 | 42 | 29 | 13 | 3 | 4 | 7 | 3 | 0 | 0 | 0 |
+| Cullen Jenkins | 9 | 16 | 13 | 3 | 1 | 2 | 3 | 2 | 0 | 0 | 0 |
+| Jason Pierre-Paul | 15 | 13 | 10 | 3 | 1 | 1 | 3 | 0 | 0 | 0 | 0 |
+| Shaun Rogers | 15 | 8 | 7 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
 | Damontre Moore | 13 | 6 | 4 | 2 | 0 | 1 | 3 | 2 | 0 | 0 | 0 |
 | Justin Trattou | 5 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Johnathan Hankins | 13 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Johnathan Hankins | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Dan Connor | 14 | 134 | 99 | 35 | 8 | 5 | 12 | 10 | 1 | 4 | 4 |
-| Keith Rivers | 14 | 71 | 52 | 19 | 0 | 0 | 3 | 1 | 0 | 0 | 0 |
-| Spencer Paysinger | 14 | 46 | 30 | 16 | 3 | 3 | 8 | 0 | 0 | 0 | 0 |
-| Jacquian Williams | 14 | 20 | 9 | 11 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
-| Mark Herzlich | 14 | 6 | 6 | 0 | 0 | 2 | 2 | 1 | 0 | 0 | 0 |
+| Dan Connor | 15 | 141 | 101 | 40 | 8 | 5 | 12 | 11 | 2 | 4 | 4 |
+| Keith Rivers | 15 | 80 | 59 | 21 | 1 | 0 | 4 | 1 | 0 | 0 | 0 |
+| Spencer Paysinger | 15 | 53 | 34 | 19 | 3 | 4 | 9 | 0 | 0 | 0 | 0 |
+| Jacquian Williams | 15 | 23 | 12 | 11 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Mark Herzlich | 15 | 7 | 7 | 0 | 0 | 2 | 2 | 1 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Antrel Rolle | 14 | 109 | 73 | 36 | 5 | 6 | 115 | 14 | 1 | 1 | 1 | 1 |
-| Corey Webster | 14 | 89 | 64 | 25 | 3 | 2 | 11 | 9 | 1 | 1 | 0 | 0 |
-| Prince Amukamara | 14 | 56 | 42 | 14 | 1 | 1 | 32 | 10 | 0 | 2 | 0 | 0 |
-| Ryan Mundy | 14 | 51 | 37 | 14 | 1 | 1 | 0 | 9 | 0 | 0 | 0 | 0 |
-| Aaron Ross | 14 | 22 | 15 | 7 | 0 | 0 | 0 | 1 | 0 | 0 | 1 | 1 |
-| Jayron Hosley | 14 | 14 | 9 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Cooper Taylor | 14 | 4 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Terrell Thomas | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Antrel Rolle | 15 | 111 | 75 | 36 | 5 | 6 | 115 | 14 | 1 | 1 | 1 | 1 |
+| Corey Webster | 15 | 94 | 67 | 27 | 3 | 3 | 26 | 10 | 1 | 1 | 0 | 0 |
+| Prince Amukamara | 15 | 61 | 46 | 15 | 2 | 1 | 32 | 12 | 0 | 2 | 0 | 0 |
+| Ryan Mundy | 15 | 54 | 40 | 14 | 1 | 1 | 0 | 9 | 0 | 0 | 0 | 0 |
+| Aaron Ross | 15 | 25 | 17 | 8 | 0 | 0 | 0 | 2 | 0 | 0 | 1 | 1 |
+| Jayron Hosley | 15 | 14 | 9 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Cooper Taylor | 15 | 4 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Terrell Thomas | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Trumaine McBride | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Kickers
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Josh Brown | 14 | 29 | 32 | 90.6 | 30 | 30 | 117 |
+| Josh Brown | 15 | 32 | 35 | 91.4 | 33 | 33 | 129 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Steve Weatherford | 14 | 68 | 3046 | 44.8 | 66 | 30 | 2 |
+| Steve Weatherford | 15 | 70 | 3153 | 45.0 | 66 | 30 | 3 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Zak DeOssie | 14 |
+| Zak DeOssie | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Michael Cox | RB | 14 | 39 | 1041 | 26.7 | 0 | 0 | — |
-| Rueben Randle | WR | 14 | 0 | 0 | — | 27 | 289 | 10.7 |
+| Michael Cox | RB | 15 | 42 | 1119 | 26.6 | 0 | 0 | — |
+| Rueben Randle | WR | 15 | 0 | 0 | — | 29 | 305 | 10.5 |
 
 ### Other statistics
 
@@ -2803,7 +2808,7 @@ Counters outside the player's position table, such as coverage tackles by offens
 | Player | Pos | Statistics |
 |---|---|---|
 | Henry Hynoski | FB | REC LNG 11 |
-| Dan Connor | MLB | INT YDS 1 |
+| Dan Connor | MLB | INT YDS 13 |
 | Eli Manning | QB | RUSH LNG 29 |
 | Da'Rel Scott | RB | REC LNG 39 |
 | David Wilson | RB | REC LNG 50 |
@@ -2820,107 +2825,107 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Geno Smith | 14 | 332 | 529 | 62.8 | 3348 | 6.3 | 19 | 16 | 80.1 | 19 | 134 | 39 | 131 | 0 | 0 | 0 |
+| Geno Smith | 15 | 361 | 569 | 63.4 | 3640 | 6.4 | 21 | 16 | 82.2 | 22 | 153 | 42 | 136 | 1 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Bilal Powell | 10 | 194 | 910 | 4.7 | 6 | 46 | 55 | 29 | 319 | 1 | 4 | 4 |
-| Chris Ivory | 14 | 117 | 672 | 5.7 | 6 | 95 | 44 | 30 | 262 | 0 | 1 | 1 |
-| Alex Green | 14 | 43 | 256 | 6.0 | 0 | 43 | 7 | 6 | 47 | 0 | 0 | 0 |
-| Tommy Bohanon | 14 | 9 | 53 | 5.9 | 1 | 18 | 10 | 7 | 73 | 1 | 0 | 0 |
+| Bilal Powell | 11 | 210 | 978 | 4.7 | 6 | 46 | 61 | 33 | 342 | 1 | 4 | 4 |
+| Chris Ivory | 15 | 123 | 687 | 5.6 | 6 | 95 | 45 | 31 | 264 | 0 | 1 | 1 |
+| Alex Green | 15 | 45 | 272 | 6.0 | 0 | 43 | 7 | 6 | 47 | 0 | 0 | 0 |
+| Tommy Bohanon | 15 | 9 | 53 | 5.9 | 1 | 18 | 12 | 7 | 73 | 1 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Stephen Hill | 14 | 137 | 90 | 918 | 10.2 | 7 | 60 | 3 | 12 | 0 | 0 | 0 |
-| Santonio Holmes | 14 | 86 | 53 | 619 | 11.7 | 2 | 44 | 4 | 18 | 0 | 1 | 1 |
-| Jeremy Kerley | 14 | 55 | 31 | 177 | 5.7 | 1 | 33 | 3 | 17 | 0 | 0 | 0 |
-| Edmond Gates | 14 | 20 | 13 | 111 | 8.5 | 1 | 35 | 0 | 0 | 0 | 0 | 0 |
+| Stephen Hill | 15 | 148 | 97 | 1020 | 10.5 | 8 | 60 | 3 | 12 | 0 | 0 | 0 |
+| Santonio Holmes | 15 | 93 | 59 | 670 | 11.4 | 3 | 44 | 4 | 18 | 0 | 1 | 1 |
+| Jeremy Kerley | 15 | 59 | 34 | 214 | 6.3 | 1 | 33 | 3 | 17 | 0 | 0 | 0 |
+| Edmond Gates | 15 | 22 | 15 | 109 | 7.3 | 1 | 35 | 0 | 0 | 0 | 0 | 0 |
 | Ryan Spadola | 14 | 6 | 3 | 25 | 8.3 | 0 | 20 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Jeff Cumberland | 14 | 83 | 51 | 587 | 11.5 | 5 | 51 | 0 | 0 | 0 | 1 | 1 |
-| Kellen Winslow | 14 | 24 | 19 | 210 | 11.1 | 1 | 34 | 0 | 0 | 0 | 0 | 0 |
-| Konrad Reuland | 14 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Jeff Cumberland | 15 | 89 | 56 | 638 | 11.4 | 5 | 51 | 0 | 0 | 0 | 1 | 1 |
+| Kellen Winslow | 15 | 25 | 20 | 238 | 11.9 | 1 | 34 | 0 | 0 | 0 | 0 | 0 |
+| Konrad Reuland | 15 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Sheldon Richardson | 14 | 5 |
-| Austin Howard | 14 | 3 |
-| D'Brickashaw Ferguson | 14 | 3 |
-| Vladimir Ducasse | 14 | 3 |
-| Brian Winters | 14 | 2 |
-| Caleb Schlauderaff | 14 | 1 |
-| Nick Mangold | 14 | 1 |
-| Willie Colon | 14 | 1 |
+| Sheldon Richardson | 15 | 5 |
+| Austin Howard | 15 | 4 |
+| Vladimir Ducasse | 15 | 4 |
+| Brian Winters | 15 | 3 |
+| D'Brickashaw Ferguson | 15 | 3 |
+| Caleb Schlauderaff | 15 | 1 |
+| Nick Mangold | 15 | 1 |
+| Willie Colon | 15 | 1 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Muhammad Wilkerson | 14 | 118 | 80 | 38 | 13 | 14 | 28 | 4 | 0 | 2 | 2 |
-| Damon Harrison | 14 | 71 | 51 | 20 | 11 | 3 | 8 | 1 | 0 | 0 | 0 |
-| Leger Douzable | 14 | 49 | 34 | 15 | 3 | 7 | 13 | 1 | 0 | 2 | 2 |
+| Muhammad Wilkerson | 15 | 126 | 86 | 40 | 13 | 14 | 30 | 4 | 0 | 2 | 2 |
+| Damon Harrison | 15 | 77 | 56 | 21 | 11 | 3 | 8 | 1 | 0 | 0 | 0 |
+| Leger Douzable | 15 | 53 | 35 | 18 | 3 | 7 | 13 | 1 | 0 | 2 | 2 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| David Harris | 14 | 152 | 105 | 47 | 12 | 5 | 10 | 9 | 2 | 0 | 0 |
-| Calvin Pace | 14 | 105 | 70 | 35 | 8 | 4 | 7 | 1 | 0 | 2 | 2 |
-| Demario Davis | 14 | 58 | 43 | 15 | 3 | 1 | 1 | 2 | 0 | 0 | 0 |
-| Garrett McIntyre | 14 | 17 | 12 | 5 | 3 | 0 | 1 | 3 | 0 | 1 | 1 |
-| Antwan Barnes | 14 | 3 | 3 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
-| Nick Bellore | 14 | 2 | 2 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
-| Ricky Sapp | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| David Harris | 15 | 160 | 110 | 50 | 12 | 6 | 12 | 9 | 2 | 0 | 0 |
+| Calvin Pace | 15 | 108 | 72 | 36 | 8 | 4 | 10 | 2 | 0 | 2 | 2 |
+| Demario Davis | 15 | 60 | 45 | 15 | 3 | 1 | 1 | 3 | 0 | 0 | 0 |
+| Garrett McIntyre | 15 | 17 | 12 | 5 | 3 | 0 | 1 | 3 | 0 | 1 | 1 |
+| Antwan Barnes | 15 | 5 | 5 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Nick Bellore | 15 | 3 | 3 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
+| Ricky Sapp | 15 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Dawan Landry | 14 | 110 | 72 | 38 | 5 | 6 | 102 | 15 | 1 | 1 | 3 | 3 |
-| Antonio Allen | 14 | 63 | 45 | 18 | 5 | 7 | 118 | 17 | 0 | 0 | 0 | 0 |
-| Antonio Cromartie | 14 | 60 | 41 | 19 | 4 | 3 | 30 | 8 | 0 | 1 | 2 | 2 |
-| Kyle Wilson | 14 | 46 | 35 | 11 | 5 | 5 | 37 | 13 | 0 | 0 | 1 | 1 |
-| Dee Milliner | 9 | 32 | 23 | 9 | 0 | 1 | 11 | 4 | 1 | 1 | 1 | 1 |
-| Josh Bush | 14 | 21 | 12 | 9 | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 1 |
-| Darrin Walls | 14 | 5 | 3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Jaiquawn Jarrett | 13 | 4 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Ellis Lankster | 14 | 3 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Isaiah Trufant | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Dawan Landry | 15 | 114 | 76 | 38 | 5 | 7 | 101 | 19 | 1 | 1 | 3 | 3 |
+| Antonio Allen | 15 | 68 | 50 | 18 | 6 | 8 | 118 | 21 | 0 | 0 | 0 | 0 |
+| Antonio Cromartie | 15 | 68 | 45 | 23 | 4 | 4 | 32 | 11 | 0 | 1 | 2 | 2 |
+| Kyle Wilson | 15 | 48 | 37 | 11 | 5 | 5 | 37 | 13 | 0 | 0 | 1 | 1 |
+| Dee Milliner | 10 | 33 | 24 | 9 | 0 | 3 | 44 | 6 | 1 | 1 | 1 | 1 |
+| Josh Bush | 15 | 23 | 14 | 9 | 1 | 0 | 0 | 1 | 0 | 0 | 1 | 1 |
+| Darrin Walls | 15 | 5 | 3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Jaiquawn Jarrett | 14 | 4 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ellis Lankster | 15 | 3 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Isaiah Trufant | 15 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
 
 ### Kickers
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Nick Folk | 14 | 32 | 36 | 88.9 | 30 | 31 | 126 |
+| Nick Folk | 15 | 33 | 39 | 84.6 | 33 | 34 | 132 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Robert Malone | 14 | 69 | 3107 | 45.0 | 63 | 26 | 1 |
+| Robert Malone | 15 | 76 | 3394 | 44.7 | 63 | 32 | 1 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Tanner Purdum | 14 |
+| Tanner Purdum | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Edmond Gates | WR | 14 | 30 | 689 | 23.0 | 0 | 0 | — |
-| Jeremy Kerley | WR | 14 | 0 | 0 | — | 23 | 242 | 10.5 |
+| Edmond Gates | WR | 15 | 31 | 707 | 22.8 | 0 | 0 | — |
+| Jeremy Kerley | WR | 15 | 0 | 0 | — | 24 | 248 | 10.3 |
 
 ### Other statistics
 
@@ -2944,86 +2949,86 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Terrelle Pryor | 14 | 299 | 493 | 60.6 | 3206 | 6.5 | 15 | 14 | 78.0 | 24 | 148 | 35 | 131 | 1 | 0 | 0 |
-| Matt Barkley | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Matt Flynn | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Matthew McGloin | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Terrelle Pryor | 15 | 326 | 529 | 61.6 | 3421 | 6.5 | 16 | 15 | 78.7 | 31 | 197 | 39 | 141 | 1 | 0 | 0 |
+| Matt Barkley | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Matt Flynn | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Matthew McGloin | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Darren McFadden | 14 | 237 | 979 | 4.1 | 11 | 30 | 58 | 40 | 399 | 0 | 0 | 0 |
-| Rashad Jennings | 14 | 82 | 412 | 5.0 | 3 | 29 | 12 | 8 | 51 | 0 | 0 | 0 |
-| Jeremy Stewart | 14 | 10 | 48 | 4.8 | 0 | 16 | 2 | 1 | -3 | 0 | 0 | 0 |
-| Taiwan Jones | 14 | 1 | 4 | 4.0 | 0 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Marcel Reece | 14 | 5 | 2 | 0.4 | 0 | 4 | 10 | 7 | 74 | 0 | 0 | 0 |
-| Jamize Olawale | 14 | 2 | -1 | -0.5 | 0 | 1 | 2 | 2 | 25 | 1 | 0 | 0 |
+| Darren McFadden | 15 | 256 | 1060 | 4.1 | 11 | 30 | 61 | 41 | 413 | 0 | 2 | 2 |
+| Rashad Jennings | 15 | 89 | 447 | 5.0 | 3 | 29 | 14 | 10 | 72 | 0 | 0 | 0 |
+| Jeremy Stewart | 15 | 10 | 48 | 4.8 | 0 | 16 | 2 | 1 | -3 | 0 | 0 | 0 |
+| Taiwan Jones | 15 | 1 | 4 | 4.0 | 0 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Marcel Reece | 15 | 5 | 2 | 0.4 | 0 | 4 | 10 | 7 | 74 | 0 | 0 | 0 |
+| Jamize Olawale | 15 | 2 | -1 | -0.5 | 0 | 1 | 3 | 2 | 25 | 1 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Denarius Moore | 14 | 155 | 97 | 1087 | 11.2 | 6 | 66 | 0 | 0 | 0 | 0 | 0 |
-| Rod Streater | 14 | 79 | 41 | 475 | 11.6 | 3 | 62 | 5 | 17 | 0 | 1 | 1 |
-| Brice Butler | 14 | 42 | 24 | 297 | 12.4 | 1 | 36 | 2 | 1 | 0 | 0 | 0 |
-| Jacoby Ford | 14 | 18 | 10 | 120 | 12.0 | 0 | 41 | 0 | 0 | 0 | 0 | 0 |
-| Juron Criner | 14 | 3 | 2 | 7 | 3.5 | 0 | 8 | 0 | 0 | 0 | 0 | 0 |
+| Denarius Moore | 15 | 166 | 107 | 1149 | 10.7 | 6 | 66 | 1 | 9 | 0 | 0 | 0 |
+| Rod Streater | 15 | 86 | 46 | 511 | 11.1 | 4 | 62 | 5 | 17 | 0 | 1 | 1 |
+| Brice Butler | 15 | 44 | 26 | 323 | 12.4 | 1 | 36 | 2 | 1 | 0 | 0 | 0 |
+| Jacoby Ford | 15 | 19 | 11 | 136 | 12.4 | 0 | 41 | 0 | 0 | 0 | 0 | 0 |
+| Juron Criner | 15 | 3 | 2 | 7 | 3.5 | 0 | 8 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Jeron Mastrud | 14 | 88 | 52 | 479 | 9.2 | 3 | 46 | 0 | 0 | 0 | 0 | 0 |
-| Mychal Rivera | 14 | 20 | 13 | 181 | 13.9 | 1 | 71 | 0 | 0 | 0 | 0 | 0 |
-| Nick Kasa | 14 | 4 | 2 | 14 | 7.0 | 0 | 7 | 0 | 0 | 0 | 0 | 0 |
+| Jeron Mastrud | 15 | 93 | 56 | 509 | 9.1 | 3 | 46 | 0 | 0 | 0 | 0 | 0 |
+| Mychal Rivera | 15 | 23 | 14 | 187 | 13.4 | 1 | 71 | 0 | 0 | 0 | 0 | 0 |
+| Nick Kasa | 15 | 5 | 3 | 18 | 6.0 | 0 | 7 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Stefen Wisniewski | 14 | 6 |
-| Lucas Nix | 14 | 4 |
-| Tony Pashos | 14 | 4 |
-| Antoine McClain | 14 | 3 |
-| Khalif Barnes | 14 | 3 |
-| Mike Brisiel | 14 | 3 |
+| Lucas Nix | 15 | 6 |
+| Stefen Wisniewski | 15 | 6 |
+| Menelik Watson | 11 | 4 |
+| Mike Brisiel | 15 | 4 |
+| Tony Pashos | 15 | 4 |
+| Antoine McClain | 15 | 3 |
+| Khalif Barnes | 15 | 3 |
 | Andre Gurode | 4 | 1 |
-| Menelik Watson | 10 | 0 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Vance Walker | 14 | 80 | 63 | 17 | 8 | 7 | 15 | 6 | 0 | 0 | 0 |
-| Pat Sims | 14 | 42 | 32 | 10 | 5 | 5 | 8 | 1 | 0 | 0 | 0 |
-| Jason Hunter | 14 | 39 | 23 | 16 | 4 | 3 | 5 | 0 | 0 | 0 | 0 |
-| Christo Bilukidi | 14 | 28 | 18 | 10 | 1 | 2 | 5 | 0 | 0 | 1 | 1 |
-| Jack Crawford | 14 | 12 | 9 | 3 | 0 | 1 | 3 | 2 | 0 | 1 | 1 |
-| Ryan Robinson | 14 | 8 | 6 | 2 | 0 | 2 | 2 | 0 | 0 | 0 | 0 |
-| Stacy McGee | 14 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Vance Walker | 15 | 84 | 66 | 18 | 9 | 7 | 15 | 6 | 0 | 0 | 0 |
+| Pat Sims | 15 | 45 | 35 | 10 | 5 | 6 | 9 | 1 | 0 | 0 | 0 |
+| Jason Hunter | 15 | 42 | 23 | 19 | 4 | 3 | 5 | 0 | 0 | 0 | 0 |
+| Christo Bilukidi | 15 | 29 | 18 | 11 | 1 | 2 | 5 | 0 | 0 | 1 | 1 |
+| Jack Crawford | 15 | 12 | 9 | 3 | 0 | 1 | 3 | 2 | 0 | 1 | 1 |
+| Ryan Robinson | 15 | 9 | 7 | 2 | 0 | 2 | 2 | 0 | 0 | 0 | 0 |
+| Stacy McGee | 15 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Brian Sanford | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Kevin Burnett | 14 | 136 | 95 | 41 | 6 | 2 | 8 | 6 | 1 | 0 | 0 |
-| Nick Roach | 14 | 83 | 59 | 24 | 3 | 3 | 9 | 3 | 0 | 0 | 0 |
-| Lamarr Houston | 14 | 55 | 39 | 16 | 0 | 3 | 3 | 1 | 0 | 0 | 0 |
-| Kaluka Maiava | 14 | 24 | 12 | 12 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
-| Kaelin Burnett | 14 | 7 | 5 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Kevin Burnett | 15 | 151 | 107 | 44 | 7 | 2 | 8 | 6 | 1 | 0 | 0 |
+| Nick Roach | 15 | 87 | 62 | 25 | 3 | 3 | 9 | 4 | 0 | 0 | 0 |
+| Lamarr Houston | 15 | 62 | 46 | 16 | 1 | 3 | 3 | 1 | 0 | 0 | 0 |
+| Kaluka Maiava | 15 | 28 | 13 | 15 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Kaelin Burnett | 15 | 7 | 5 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Tyvon Branch | 14 | 116 | 78 | 38 | 3 | 1 | 0 | 25 | 0 | 0 | 1 | 1 |
-| Charles Woodson | 14 | 87 | 54 | 33 | 3 | 2 | 0 | 16 | 1 | 2 | 1 | 1 |
-| Tracy Porter | 14 | 71 | 45 | 26 | 1 | 1 | 21 | 7 | 1 | 1 | 0 | 0 |
-| Mike Jenkins | 14 | 42 | 30 | 12 | 2 | 0 | 0 | 5 | 1 | 2 | 1 | 1 |
-| Usama Young | 14 | 32 | 18 | 14 | 1 | 1 | 1 | 5 | 0 | 1 | 0 | 0 |
-| Brandian Ross | 14 | 14 | 6 | 8 | 2 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |
+| Tyvon Branch | 15 | 119 | 79 | 40 | 3 | 1 | 0 | 25 | 0 | 0 | 1 | 1 |
+| Charles Woodson | 15 | 92 | 59 | 33 | 4 | 2 | 0 | 17 | 1 | 2 | 1 | 1 |
+| Tracy Porter | 15 | 77 | 49 | 28 | 1 | 1 | 21 | 7 | 1 | 1 | 0 | 0 |
+| Mike Jenkins | 15 | 45 | 31 | 14 | 3 | 0 | 0 | 5 | 1 | 2 | 1 | 1 |
+| Usama Young | 15 | 35 | 19 | 16 | 1 | 1 | 1 | 5 | 0 | 1 | 0 | 0 |
+| Brandian Ross | 15 | 14 | 6 | 8 | 2 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |
 | Phillip Adams | 6 | 2 | 2 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
 | Chimdi Chekwa | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | D.J. Hayden | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -3032,36 +3037,36 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Sebastian Janikowski | 10 | 13 | 14 | 92.9 | 24 | 24 | 63 |
+| Sebastian Janikowski | 11 | 13 | 16 | 81.2 | 25 | 25 | 64 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Marquette King | 14 | 77 | 3429 | 44.5 | 61 | 27 | 1 |
+| Marquette King | 15 | 81 | 3605 | 44.5 | 61 | 28 | 1 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Jon Condo | 14 |
+| Jon Condo | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Jacoby Ford | WR | 14 | 36 | 877 | 24.4 | 2 | 63 | 31.5 |
+| Jacoby Ford | WR | 15 | 38 | 940 | 24.7 | 2 | 63 | 31.5 |
 | Phillip Adams | CB | 6 | 0 | 0 | — | 12 | 136 | 11.3 |
-| Tracy Porter | CB | 14 | 0 | 0 | — | 3 | 70 | 23.3 |
-| Mike Jenkins | CB | 14 | 0 | 0 | — | 5 | 53 | 10.6 |
-| Denarius Moore | WR | 14 | 0 | 0 | — | 3 | 37 | 12.3 |
-| Brice Butler | WR | 14 | 0 | 0 | — | 1 | 15 | 15.0 |
-| Taiwan Jones | RB | 14 | 0 | 0 | — | 3 | 8 | 2.7 |
-| Rashad Jennings | RB | 14 | 0 | 0 | — | 1 | 7 | 7.0 |
-| Rod Streater | WR | 14 | 0 | 0 | — | 3 | 6 | 2.0 |
-| Juron Criner | WR | 14 | 0 | 0 | — | 1 | 4 | 4.0 |
-| Jeremy Stewart | RB | 14 | 0 | 0 | — | 1 | 2 | 2.0 |
-| Darren McFadden | RB | 14 | 0 | 0 | — | 1 | 0 | 0.0 |
+| Tracy Porter | CB | 15 | 0 | 0 | — | 3 | 70 | 23.3 |
+| Denarius Moore | WR | 15 | 0 | 0 | — | 5 | 55 | 11.0 |
+| Mike Jenkins | CB | 15 | 0 | 0 | — | 5 | 53 | 10.6 |
+| Taiwan Jones | RB | 15 | 0 | 0 | — | 4 | 36 | 9.0 |
+| Brice Butler | WR | 15 | 0 | 0 | — | 2 | 29 | 14.5 |
+| Darren McFadden | RB | 15 | 0 | 0 | — | 2 | 12 | 6.0 |
+| Rashad Jennings | RB | 15 | 0 | 0 | — | 1 | 7 | 7.0 |
+| Rod Streater | WR | 15 | 0 | 0 | — | 3 | 6 | 2.0 |
+| Juron Criner | WR | 15 | 0 | 0 | — | 1 | 4 | 4.0 |
+| Jeremy Stewart | RB | 15 | 0 | 0 | — | 1 | 2 | 2.0 |
 
 ### Other statistics
 
@@ -3077,6 +3082,7 @@ Counters outside the player's position table, such as coverage tackles by offens
 | Darren McFadden | RB | REC LNG 24 |
 | Rashad Jennings | RB | REC LNG 20 |
 | Brice Butler | WR | RUSH LNG 1 |
+| Denarius Moore | WR | RUSH LNG 9 |
 | Rod Streater | WR | RUSH LNG 9 |
 
 ## Philadelphia Eagles
@@ -3085,86 +3091,86 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Michael Vick | 14 | 323 | 515 | 62.7 | 3683 | 7.2 | 13 | 15 | 80.4 | 29 | 191 | 36 | 147 | 1 | 1 | 1 |
-| Nick Foles | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Michael Vick | 15 | 348 | 546 | 63.7 | 3905 | 7.2 | 14 | 16 | 81.3 | 30 | 198 | 41 | 160 | 1 | 1 | 1 |
+| Nick Foles | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| LeSean McCoy | 14 | 240 | 1162 | 4.8 | 10 | 54 | 59 | 38 | 407 | 1 | 1 | 1 |
-| Bryce Brown | 14 | 78 | 420 | 5.4 | 4 | 80 | 22 | 15 | 162 | 0 | 1 | 1 |
-| Chris Polk | 14 | 15 | 76 | 5.1 | 1 | 17 | 3 | 2 | 26 | 0 | 0 | 0 |
+| LeSean McCoy | 15 | 259 | 1250 | 4.8 | 10 | 54 | 64 | 42 | 438 | 1 | 1 | 1 |
+| Bryce Brown | 15 | 88 | 485 | 5.5 | 4 | 80 | 22 | 15 | 162 | 0 | 1 | 1 |
+| Chris Polk | 15 | 19 | 96 | 5.1 | 1 | 17 | 4 | 3 | 36 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| DeSean Jackson | 14 | 161 | 102 | 1216 | 11.9 | 8 | 53 | 4 | 18 | 1 | 1 | 1 |
+| DeSean Jackson | 15 | 169 | 109 | 1294 | 11.9 | 8 | 53 | 4 | 18 | 1 | 1 | 1 |
 | Riley Cooper | 13 | 87 | 56 | 572 | 10.2 | 1 | 44 | 1 | 4 | 0 | 2 | 2 |
-| Ace Sanders | 14 | 54 | 29 | 388 | 13.4 | 1 | 38 | 2 | 15 | 0 | 0 | 0 |
-| Jason Avant | 14 | 16 | 9 | 56 | 6.2 | 0 | 13 | 0 | 0 | 0 | 0 | 0 |
-| Damaris Johnson | 14 | 7 | 3 | 44 | 14.7 | 0 | 33 | 0 | 0 | 0 | 0 | 0 |
-| Jeff Maehl | 14 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ace Sanders | 15 | 60 | 34 | 436 | 12.8 | 2 | 38 | 2 | 15 | 0 | 0 | 0 |
+| Jason Avant | 15 | 19 | 12 | 86 | 7.2 | 0 | 13 | 0 | 0 | 0 | 0 | 0 |
+| Damaris Johnson | 15 | 8 | 3 | 44 | 14.7 | 0 | 33 | 0 | 0 | 0 | 0 | 0 |
+| Jeff Maehl | 15 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Brent Celek | 14 | 83 | 55 | 620 | 11.3 | 1 | 66 | 0 | 0 | 0 | 2 | 2 |
-| James Casey | 14 | 20 | 14 | 192 | 13.7 | 1 | 46 | 0 | 0 | 0 | 0 | 0 |
-| Emil Igwenagu | 14 | 2 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Zach Ertz | 14 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Brent Celek | 15 | 89 | 59 | 633 | 10.7 | 1 | 66 | 0 | 0 | 0 | 2 | 2 |
+| James Casey | 15 | 21 | 15 | 204 | 13.6 | 1 | 46 | 0 | 0 | 0 | 0 | 0 |
+| Emil Igwenagu | 15 | 2 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Zach Ertz | 15 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Allen Barbre | 14 | 6 |
-| Jason Peters | 14 | 6 |
-| Jason Kelce | 14 | 5 |
-| Luke Joeckel | 14 | 5 |
-| Evan Mathis | 14 | 3 |
-| Matt Tobin | 14 | 2 |
-| Julian Vandervelde | 5 | 1 |
-| Todd Herremans | 14 | 1 |
+| Allen Barbre | 15 | 6 |
+| Jason Kelce | 15 | 6 |
+| Jason Peters | 15 | 6 |
+| Luke Joeckel | 15 | 5 |
+| Evan Mathis | 15 | 3 |
+| Matt Tobin | 15 | 2 |
+| Julian Vandervelde | 6 | 1 |
+| Todd Herremans | 15 | 1 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Fletcher Cox | 14 | 84 | 58 | 26 | 7 | 7 | 9 | 3 | 0 | 0 | 0 |
-| Cedric Thornton | 14 | 46 | 33 | 13 | 2 | 4 | 8 | 3 | 0 | 0 | 0 |
-| Brandon Graham | 14 | 36 | 28 | 8 | 6 | 4 | 7 | 1 | 0 | 1 | 1 |
-| Isaac Sopoaga | 14 | 34 | 26 | 8 | 5 | 2 | 3 | 1 | 0 | 0 | 0 |
-| Vinny Curry | 14 | 11 | 6 | 5 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Clifton Geathers | 14 | 5 | 3 | 2 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
-| Bennie Logan | 14 | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Damion Square | 14 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Fletcher Cox | 15 | 89 | 61 | 28 | 7 | 9 | 11 | 3 | 0 | 0 | 0 |
+| Cedric Thornton | 15 | 52 | 37 | 15 | 3 | 4 | 9 | 4 | 0 | 0 | 0 |
+| Brandon Graham | 15 | 38 | 29 | 9 | 6 | 4 | 7 | 1 | 0 | 1 | 1 |
+| Isaac Sopoaga | 15 | 37 | 29 | 8 | 5 | 2 | 3 | 1 | 0 | 0 | 0 |
+| Vinny Curry | 15 | 12 | 6 | 6 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Clifton Geathers | 15 | 5 | 3 | 2 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Bennie Logan | 15 | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Damion Square | 15 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| DeMeco Ryans | 14 | 130 | 90 | 40 | 6 | 4 | 11 | 1 | 0 | 0 | 0 |
-| Mychal Kendricks | 14 | 106 | 76 | 30 | 9 | 2 | 11 | 3 | 1 | 1 | 1 |
-| Connor Barwin | 14 | 58 | 37 | 21 | 3 | 1 | 2 | 1 | 0 | 0 | 0 |
-| Trent Cole | 14 | 27 | 20 | 7 | 2 | 1 | 2 | 1 | 1 | 1 | 1 |
-| Casey Matthews | 14 | 10 | 8 | 2 | 0 | 0 | 0 | 2 | 0 | 0 | 0 |
-| Jake Knott | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Najee Goode | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| DeMeco Ryans | 15 | 139 | 95 | 44 | 6 | 4 | 11 | 1 | 0 | 0 | 0 |
+| Mychal Kendricks | 15 | 109 | 77 | 32 | 9 | 2 | 11 | 3 | 1 | 1 | 1 |
+| Connor Barwin | 15 | 58 | 37 | 21 | 3 | 1 | 2 | 1 | 0 | 0 | 0 |
+| Trent Cole | 15 | 29 | 21 | 8 | 2 | 1 | 2 | 1 | 1 | 1 | 1 |
+| Casey Matthews | 15 | 11 | 8 | 3 | 0 | 0 | 0 | 2 | 0 | 0 | 0 |
+| Jake Knott | 15 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Najee Goode | 15 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Nate Allen | 10 | 79 | 55 | 24 | 1 | 1 | 27 | 6 | 1 | 2 | 2 | 2 |
-| Cary Williams | 14 | 77 | 46 | 31 | 2 | 1 | 17 | 9 | 1 | 1 | 0 | 0 |
-| Bradley Fletcher | 14 | 55 | 38 | 17 | 1 | 2 | 61 | 14 | 1 | 1 | 0 | 0 |
-| Dwayne Gratz | 14 | 39 | 21 | 18 | 0 | 1 | 1 | 5 | 2 | 2 | 1 | 1 |
+| Cary Williams | 15 | 86 | 51 | 35 | 3 | 1 | 17 | 10 | 1 | 1 | 0 | 0 |
+| Nate Allen | 11 | 82 | 55 | 27 | 1 | 1 | 27 | 6 | 1 | 2 | 2 | 2 |
+| Bradley Fletcher | 15 | 58 | 38 | 20 | 1 | 2 | 61 | 14 | 1 | 1 | 0 | 0 |
+| Dwayne Gratz | 15 | 43 | 22 | 21 | 1 | 1 | 1 | 6 | 2 | 2 | 1 | 1 |
 | Kurt Coleman | 14 | 29 | 21 | 8 | 0 | 0 | 0 | 3 | 0 | 0 | 0 | 0 |
-| Brandon Boykin | 14 | 24 | 15 | 9 | 2 | 0 | 0 | 1 | 1 | 1 | 1 | 1 |
-| Patrick Chung | 3 | 13 | 7 | 6 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Brandon Boykin | 15 | 24 | 15 | 9 | 2 | 0 | 0 | 1 | 1 | 1 | 1 | 1 |
+| Patrick Chung | 4 | 16 | 9 | 7 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
 | Colt Anderson | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Demetrius McCray | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Earl Wolff | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -3174,26 +3180,26 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Alex Henery | 14 | 23 | 29 | 79.3 | 30 | 30 | 99 |
+| Alex Henery | 15 | 26 | 32 | 81.2 | 31 | 31 | 109 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Donnie Jones | 14 | 65 | 2862 | 44.0 | 57 | 30 | 1 |
+| Donnie Jones | 15 | 67 | 2939 | 43.9 | 57 | 31 | 1 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Jon Dorenbos | 14 |
+| Jon Dorenbos | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Damaris Johnson | WR | 14 | 39 | 956 | 24.5 | 0 | 0 | — |
-| DeSean Jackson | WR | 14 | 0 | 0 | — | 30 | 297 | 9.9 |
+| Damaris Johnson | WR | 15 | 42 | 1006 | 24.0 | 0 | 0 | — |
+| DeSean Jackson | WR | 15 | 0 | 0 | — | 32 | 319 | 10.0 |
 
 ### Other statistics
 
@@ -3217,74 +3223,74 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Ben Roethlisberger | 14 | 325 | 511 | 63.6 | 3543 | 6.9 | 22 | 11 | 89.4 | 27 | 164 | 39 | 151 | 1 | 1 | 1 |
-| Bruce Gradkowski | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Landry Jones | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ben Roethlisberger | 15 | 342 | 540 | 63.3 | 3769 | 7.0 | 23 | 11 | 89.7 | 29 | 179 | 40 | 155 | 2 | 1 | 1 |
+| Bruce Gradkowski | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Landry Jones | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Isaac Redman | 14 | 224 | 1090 | 4.9 | 10 | 49 | 67 | 43 | 516 | 5 | 2 | 2 |
-| LaRod Stephens-Howling | 14 | 67 | 368 | 5.5 | 0 | 48 | 11 | 6 | 54 | 0 | 0 | 0 |
-| Will Johnson | 14 | 10 | 30 | 3.0 | 0 | 6 | 14 | 12 | 160 | 0 | 0 | 0 |
-| Felix Jones | 14 | 7 | 16 | 2.3 | 0 | 8 | 4 | 2 | 13 | 0 | 0 | 0 |
-| Le'Veon Bell | 12 | 0 | 0 | — | 0 | 0 | 1 | 1 | 8 | 0 | 0 | 0 |
+| Isaac Redman | 15 | 238 | 1171 | 4.9 | 11 | 49 | 74 | 45 | 571 | 5 | 3 | 3 |
+| LaRod Stephens-Howling | 15 | 74 | 411 | 5.6 | 0 | 48 | 13 | 7 | 59 | 0 | 0 | 0 |
+| Will Johnson | 15 | 10 | 30 | 3.0 | 0 | 6 | 14 | 12 | 160 | 0 | 0 | 0 |
+| Felix Jones | 15 | 7 | 16 | 2.3 | 0 | 8 | 4 | 2 | 13 | 0 | 0 | 0 |
+| Le'Veon Bell | 13 | 0 | 0 | — | 0 | 0 | 1 | 1 | 8 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Emmanuel Sanders | 14 | 131 | 86 | 1027 | 11.9 | 7 | 62 | 2 | 25 | 1 | 2 | 2 |
-| Jerricho Cotchery | 14 | 68 | 40 | 445 | 11.1 | 3 | 28 | 1 | 8 | 0 | 1 | 1 |
+| Emmanuel Sanders | 15 | 138 | 90 | 1081 | 12.0 | 7 | 62 | 2 | 25 | 1 | 2 | 2 |
+| Jerricho Cotchery | 15 | 71 | 43 | 495 | 11.5 | 3 | 28 | 1 | 8 | 0 | 1 | 1 |
 | Antonio Brown | 5 | 48 | 32 | 289 | 9.0 | 2 | 29 | 0 | 0 | 0 | 0 | 0 |
-| Markus Wheaton | 14 | 27 | 16 | 151 | 9.4 | 1 | 24 | 0 | 0 | 0 | 0 | 0 |
-| Derek Moye | 14 | 21 | 15 | 147 | 9.8 | 1 | 29 | 0 | 0 | 0 | 0 | 0 |
+| Markus Wheaton | 15 | 30 | 18 | 177 | 9.8 | 1 | 24 | 0 | 0 | 0 | 0 | 0 |
+| Derek Moye | 15 | 22 | 16 | 147 | 9.2 | 1 | 29 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Heath Miller | 12 | 79 | 46 | 481 | 10.5 | 3 | 74 | 1 | 3 | 0 | 1 | 1 |
-| David Johnson | 14 | 32 | 22 | 230 | 10.5 | 0 | 40 | 0 | 0 | 0 | 0 | 0 |
-| David Paulson | 14 | 3 | 2 | 11 | 5.5 | 0 | 8 | 0 | 0 | 0 | 0 | 0 |
-| Michael Palmer | 14 | 2 | 2 | 11 | 5.5 | 0 | 7 | 0 | 0 | 0 | 0 | 0 |
+| Heath Miller | 13 | 82 | 47 | 484 | 10.3 | 4 | 74 | 1 | 3 | 0 | 1 | 1 |
+| David Johnson | 15 | 35 | 25 | 263 | 10.5 | 0 | 40 | 0 | 0 | 0 | 0 | 0 |
+| David Paulson | 15 | 3 | 2 | 11 | 5.5 | 0 | 8 | 0 | 0 | 0 | 0 | 0 |
+| Michael Palmer | 15 | 2 | 2 | 11 | 5.5 | 0 | 7 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Ramon Foster | 14 | 7 |
-| Cody Wallace | 14 | 6 |
-| Marcus Gilbert | 14 | 5 |
-| David DeCastro | 14 | 3 |
-| Guy Whimper | 14 | 2 |
-| Maurkice Pouncey | 14 | 2 |
-| Mike Adams (PIT) | 14 | 2 |
+| Ramon Foster | 15 | 7 |
+| Cody Wallace | 15 | 6 |
+| Marcus Gilbert | 15 | 5 |
+| David DeCastro | 15 | 4 |
+| Guy Whimper | 15 | 3 |
+| Maurkice Pouncey | 15 | 2 |
+| Mike Adams (PIT) | 15 | 2 |
 | Kelvin Beachum | 2 | 0 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Brett Keisel | 14 | 90 | 54 | 36 | 13 | 5 | 11 | 2 | 0 | 0 | 0 |
-| Ziggy Hood | 14 | 53 | 34 | 19 | 2 | 5 | 11 | 1 | 0 | 0 | 0 |
-| Steve McLendon | 14 | 40 | 26 | 14 | 6 | 0 | 3 | 1 | 0 | 0 | 0 |
-| Cameron Heyward | 14 | 32 | 21 | 11 | 3 | 2 | 3 | 0 | 0 | 1 | 1 |
-| Al Woods | 14 | 23 | 15 | 8 | 2 | 2 | 5 | 1 | 0 | 0 | 0 |
-| Hebron Fangupo | 14 | 7 | 4 | 3 | 2 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Brett Keisel | 15 | 98 | 58 | 40 | 14 | 5 | 11 | 2 | 0 | 0 | 0 |
+| Ziggy Hood | 15 | 57 | 36 | 21 | 2 | 6 | 12 | 1 | 0 | 0 | 0 |
+| Steve McLendon | 15 | 42 | 28 | 14 | 6 | 0 | 3 | 1 | 0 | 0 | 0 |
+| Cameron Heyward | 15 | 34 | 23 | 11 | 4 | 2 | 4 | 0 | 0 | 1 | 1 |
+| Al Woods | 15 | 23 | 15 | 8 | 2 | 2 | 5 | 2 | 0 | 0 | 0 |
+| Hebron Fangupo | 15 | 7 | 4 | 3 | 2 | 0 | 1 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Larry Foote | 14 | 131 | 87 | 44 | 6 | 5 | 14 | 7 | 0 | 0 | 0 |
-| Lawrence Timmons | 14 | 98 | 62 | 36 | 6 | 6 | 9 | 8 | 1 | 0 | 0 |
-| LaMarr Woodley | 14 | 52 | 37 | 15 | 5 | 0 | 3 | 1 | 0 | 0 | 0 |
-| Jason Worilds | 14 | 29 | 15 | 14 | 3 | 0 | 2 | 0 | 0 | 0 | 0 |
-| Chris Carter | 14 | 10 | 6 | 4 | 0 | 0 | 0 | 2 | 2 | 0 | 0 |
-| Jarvis Jones | 14 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Kion Wilson | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Larry Foote | 15 | 144 | 97 | 47 | 7 | 5 | 14 | 7 | 0 | 0 | 0 |
+| Lawrence Timmons | 15 | 106 | 66 | 40 | 7 | 6 | 9 | 9 | 1 | 0 | 0 |
+| LaMarr Woodley | 15 | 56 | 41 | 15 | 5 | 0 | 3 | 1 | 0 | 0 | 0 |
+| Jason Worilds | 15 | 29 | 15 | 14 | 3 | 0 | 2 | 0 | 0 | 0 | 0 |
+| Chris Carter | 15 | 10 | 6 | 4 | 0 | 0 | 0 | 2 | 2 | 0 | 0 |
+| Jarvis Jones | 15 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Kion Wilson | 15 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Terence Garvin | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Vince Williams | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
@@ -3292,46 +3298,46 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Ryan Clark | 14 | 85 | 56 | 29 | 2 | 3 | 62 | 14 | 0 | 0 | 1 | 1 |
-| Cortez Allen | 14 | 69 | 50 | 19 | 1 | 4 | 55 | 8 | 0 | 0 | 0 | 0 |
-| Ivan Taylor | 14 | 66 | 38 | 28 | 3 | 0 | 0 | 9 | 0 | 0 | 0 | 0 |
-| Troy Polamalu | 14 | 46 | 31 | 15 | 2 | 4 | 19 | 11 | 0 | 0 | 1 | 1 |
-| William Gay | 14 | 45 | 25 | 20 | 1 | 1 | 33 | 6 | 0 | 0 | 0 | 0 |
-| Curtis Brown | 14 | 16 | 11 | 5 | 0 | 3 | 66 | 3 | 0 | 0 | 0 | 0 |
+| Ryan Clark | 15 | 89 | 59 | 30 | 2 | 3 | 62 | 14 | 0 | 0 | 1 | 1 |
+| Cortez Allen | 15 | 73 | 52 | 21 | 1 | 4 | 55 | 10 | 0 | 0 | 0 | 0 |
+| Ivan Taylor | 15 | 69 | 41 | 28 | 3 | 0 | 0 | 9 | 0 | 0 | 0 | 0 |
+| Troy Polamalu | 15 | 47 | 31 | 16 | 2 | 5 | 19 | 12 | 0 | 0 | 1 | 1 |
+| William Gay | 15 | 47 | 26 | 21 | 1 | 1 | 33 | 6 | 0 | 0 | 0 | 0 |
+| Curtis Brown | 15 | 16 | 11 | 5 | 0 | 3 | 66 | 3 | 0 | 0 | 0 | 0 |
 | Da'Mon Cromartie-Smith | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Robert Golden | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Robert Golden | 12 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
 | Shamarko Thomas | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Kickers
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Shaun Suisham | 14 | 26 | 31 | 83.9 | 34 | 34 | 112 |
+| Shaun Suisham | 15 | 27 | 32 | 84.4 | 37 | 37 | 118 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Zoltan Mesko | 14 | 65 | 2809 | 43.2 | 59 | 28 | 4 |
+| Zoltan Mesko | 15 | 69 | 3019 | 43.8 | 63 | 28 | 4 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Greg Warren | 14 |
+| Greg Warren | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| LaRod Stephens-Howling | RB | 14 | 36 | 811 | 22.5 | 1 | 2 | 2.0 |
+| LaRod Stephens-Howling | RB | 15 | 38 | 857 | 22.6 | 1 | 2 | 2.0 |
 | Antonio Brown | WR | 5 | 0 | 0 | — | 11 | 127 | 11.5 |
-| Jerricho Cotchery | WR | 14 | 0 | 0 | — | 5 | 32 | 6.4 |
-| Isaac Redman | RB | 14 | 0 | 0 | — | 2 | 26 | 13.0 |
-| William Gay | CB | 14 | 0 | 0 | — | 4 | 25 | 6.2 |
-| Emmanuel Sanders | WR | 14 | 0 | 0 | — | 2 | 22 | 11.0 |
-| Derek Moye | WR | 14 | 0 | 0 | — | 4 | 17 | 4.2 |
-| Curtis Brown | CB | 14 | 0 | 0 | — | 2 | 1 | 0.5 |
+| Jerricho Cotchery | WR | 15 | 0 | 0 | — | 6 | 45 | 7.5 |
+| Isaac Redman | RB | 15 | 0 | 0 | — | 2 | 26 | 13.0 |
+| William Gay | CB | 15 | 0 | 0 | — | 4 | 25 | 6.2 |
+| Emmanuel Sanders | WR | 15 | 0 | 0 | — | 2 | 22 | 11.0 |
+| Derek Moye | WR | 15 | 0 | 0 | — | 4 | 17 | 4.2 |
+| Curtis Brown | CB | 15 | 0 | 0 | — | 2 | 1 | 0.5 |
 
 ### Other statistics
 
@@ -3344,7 +3350,7 @@ Counters outside the player's position table, such as coverage tackles by offens
 | Lawrence Timmons | OLB | INT YDS 30 |
 | Ben Roethlisberger | QB | RUSH LNG 21 |
 | Felix Jones | RB | REC LNG 10 |
-| Isaac Redman | RB | REC LNG 40 |
+| Isaac Redman | RB | REC LNG 55 |
 | LaRod Stephens-Howling | RB | REC LNG 20 |
 | Le'Veon Bell | RB | REC LNG 8 |
 | Heath Miller | TE | RUSH LNG 3 |
@@ -3357,88 +3363,88 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Philip Rivers | 14 | 326 | 533 | 61.2 | 3807 | 7.1 | 28 | 11 | 91.7 | 28 | 193 | 37 | 196 | 3 | 1 | 1 |
-| Brad Sorensen | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Charlie Whitehurst | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Philip Rivers | 15 | 344 | 557 | 61.8 | 3949 | 7.1 | 30 | 11 | 92.8 | 29 | 198 | 39 | 198 | 3 | 1 | 1 |
+| Brad Sorensen | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Charlie Whitehurst | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Ryan Mathews | 14 | 240 | 996 | 4.2 | 5 | 33 | 72 | 48 | 535 | 7 | 1 | 1 |
-| Ronnie Brown | 14 | 88 | 391 | 4.4 | 6 | 21 | 17 | 7 | 46 | 0 | 3 | 3 |
-| Fozzy Whittaker | 14 | 24 | 100 | 4.2 | 1 | 12 | 2 | 2 | 18 | 0 | 0 | 0 |
-| Le'Ron McClain | 14 | 8 | 26 | 3.2 | 0 | 7 | 17 | 9 | 106 | 0 | 1 | 1 |
-| Danny Woodhead | 14 | 1 | 9 | 9.0 | 0 | 9 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ryan Mathews | 15 | 261 | 1095 | 4.2 | 5 | 33 | 75 | 50 | 561 | 7 | 1 | 1 |
+| Ronnie Brown | 15 | 99 | 427 | 4.3 | 6 | 21 | 17 | 7 | 46 | 0 | 3 | 3 |
+| Fozzy Whittaker | 15 | 24 | 100 | 4.2 | 1 | 12 | 2 | 2 | 18 | 0 | 0 | 0 |
+| Le'Ron McClain | 15 | 8 | 26 | 3.2 | 0 | 7 | 18 | 10 | 111 | 0 | 1 | 1 |
+| Danny Woodhead | 15 | 1 | 9 | 9.0 | 0 | 9 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | Malcom Floyd | 14 | 148 | 88 | 1210 | 13.8 | 10 | 80 | 6 | 27 | 0 | 1 | 1 |
-| Eddie Royal | 14 | 79 | 48 | 589 | 12.3 | 2 | 86 | 2 | 0 | 0 | 3 | 3 |
-| Keenan Allen | 14 | 62 | 42 | 471 | 11.2 | 1 | 47 | 1 | 1 | 0 | 0 | 0 |
-| Vincent Brown | 14 | 20 | 13 | 233 | 17.9 | 1 | 42 | 0 | 0 | 0 | 0 | 0 |
-| Seyi Ajirotutu | 14 | 1 | 1 | -1 | -1.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Eddie Royal | 15 | 86 | 53 | 630 | 11.9 | 2 | 86 | 2 | 0 | 0 | 3 | 3 |
+| Keenan Allen | 15 | 67 | 47 | 514 | 10.9 | 2 | 47 | 1 | 1 | 0 | 0 | 0 |
+| Vincent Brown | 15 | 21 | 14 | 233 | 16.6 | 1 | 42 | 1 | 1 | 0 | 0 | 0 |
+| Seyi Ajirotutu | 15 | 3 | 2 | 2 | 1.0 | 1 | 3 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Antonio Gates | 14 | 89 | 52 | 454 | 8.7 | 4 | 44 | 1 | 14 | 0 | 1 | 1 |
-| John Phillips | 14 | 19 | 14 | 126 | 9.0 | 3 | 21 | 0 | 0 | 0 | 0 | 0 |
-| Ladarius Green | 14 | 2 | 2 | 20 | 10.0 | 0 | 23 | 0 | 0 | 0 | 0 | 0 |
+| Antonio Gates | 15 | 92 | 54 | 478 | 8.9 | 4 | 44 | 1 | 14 | 0 | 1 | 1 |
+| John Phillips | 15 | 19 | 14 | 126 | 9.0 | 3 | 21 | 0 | 0 | 0 | 0 | 0 |
+| Ladarius Green | 15 | 3 | 3 | 20 | 6.7 | 0 | 23 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Jeromey Clary | 14 | 9 |
-| Chad Rinehart | 14 | 5 |
-| Nick Hardwick | 14 | 5 |
-| D.J. Fluker | 14 | 3 |
-| King Dunlap | 14 | 2 |
+| Jeromey Clary | 15 | 9 |
+| Chad Rinehart | 15 | 5 |
+| Nick Hardwick | 15 | 5 |
+| D.J. Fluker | 15 | 3 |
+| Rich Ohrnberger | 15 | 3 |
+| King Dunlap | 15 | 2 |
 | Mike Harris (SD) | 2 | 2 |
-| Rich Ohrnberger | 14 | 2 |
-| Johnnie Troutman | 14 | 0 |
+| Johnnie Troutman | 15 | 0 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Corey Liuget | 14 | 80 | 51 | 29 | 6 | 4 | 14 | 3 | 0 | 0 | 0 |
-| Kendall Reyes | 14 | 53 | 36 | 17 | 3 | 4 | 12 | 4 | 1 | 1 | 1 |
-| Cam Thomas | 14 | 44 | 30 | 14 | 3 | 3 | 8 | 2 | 0 | 1 | 1 |
-| Sean Lissemore | 14 | 28 | 17 | 11 | 2 | 1 | 2 | 2 | 0 | 0 | 0 |
-| Jarius Wynn | 14 | 15 | 11 | 4 | 0 | 0 | 2 | 2 | 0 | 0 | 0 |
-| Kwame Geathers | 14 | 12 | 6 | 6 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
-| Drake Nevis | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Corey Liuget | 15 | 84 | 54 | 30 | 7 | 4 | 14 | 3 | 0 | 0 | 0 |
+| Kendall Reyes | 15 | 62 | 43 | 19 | 4 | 6 | 15 | 5 | 1 | 1 | 1 |
+| Cam Thomas | 15 | 48 | 34 | 14 | 3 | 4 | 9 | 2 | 0 | 1 | 1 |
+| Sean Lissemore | 15 | 29 | 18 | 11 | 3 | 1 | 2 | 2 | 0 | 0 | 0 |
+| Jarius Wynn | 15 | 16 | 12 | 4 | 0 | 0 | 2 | 2 | 0 | 0 | 0 |
+| Kwame Geathers | 15 | 12 | 6 | 6 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Drake Nevis | 15 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Donald Butler | 14 | 131 | 83 | 48 | 8 | 1 | 7 | 7 | 0 | 1 | 1 |
-| Jarret Johnson | 14 | 103 | 58 | 45 | 9 | 0 | 4 | 6 | 1 | 1 | 1 |
-| Bront Bird | 14 | 45 | 25 | 20 | 6 | 2 | 4 | 1 | 0 | 0 | 0 |
-| Dwight Freeney | 14 | 26 | 21 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Andrew Gachkar | 14 | 4 | 2 | 2 | 0 | 0 | 2 | 1 | 0 | 0 | 0 |
-| Larry English | 14 | 2 | 0 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Donald Butler | 15 | 145 | 95 | 50 | 8 | 3 | 9 | 7 | 0 | 1 | 1 |
+| Jarret Johnson | 15 | 112 | 64 | 48 | 10 | 1 | 5 | 6 | 1 | 1 | 1 |
+| Bront Bird | 15 | 51 | 29 | 22 | 7 | 2 | 4 | 1 | 0 | 0 | 0 |
+| Dwight Freeney | 15 | 29 | 21 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Andrew Gachkar | 15 | 4 | 2 | 2 | 0 | 0 | 2 | 1 | 0 | 0 | 0 |
+| Larry English | 15 | 2 | 0 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Tourek Williams | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Reggie Walker | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Terrell Manning | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
+| Terrell Manning | 15 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Eric Weddle | 14 | 96 | 63 | 33 | 2 | 1 | 0 | 18 | 0 | 0 | 0 | 0 |
-| Marcus Gilchrist | 14 | 64 | 39 | 25 | 2 | 2 | 42 | 13 | 0 | 0 | 0 | 0 |
-| Derek Cox | 14 | 59 | 40 | 19 | 1 | 3 | 24 | 8 | 0 | 0 | 1 | 1 |
-| Shareece Wright | 14 | 44 | 26 | 18 | 0 | 2 | 9 | 9 | 1 | 2 | 0 | 0 |
-| Johnny Patrick | 14 | 24 | 15 | 9 | 1 | 1 | 29 | 6 | 0 | 0 | 0 | 0 |
-| Richard Marshall | 14 | 12 | 5 | 7 | 0 | 2 | 32 | 5 | 0 | 0 | 0 | 0 |
-| Darrell Stuckey | 2 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Eric Weddle | 15 | 105 | 69 | 36 | 2 | 2 | 0 | 20 | 1 | 1 | 1 | 1 |
+| Marcus Gilchrist | 15 | 68 | 42 | 26 | 2 | 2 | 42 | 13 | 0 | 0 | 1 | 1 |
+| Derek Cox | 15 | 65 | 44 | 21 | 1 | 3 | 24 | 8 | 0 | 0 | 1 | 1 |
+| Shareece Wright | 15 | 49 | 27 | 22 | 0 | 2 | 9 | 9 | 1 | 2 | 0 | 0 |
+| Johnny Patrick | 15 | 25 | 15 | 10 | 2 | 1 | 29 | 6 | 0 | 0 | 0 | 0 |
+| Richard Marshall | 15 | 12 | 5 | 7 | 0 | 2 | 32 | 5 | 0 | 0 | 0 | 0 |
+| Darrell Stuckey | 3 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Brandon Taylor | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Jahleel Addae | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
@@ -3446,25 +3452,25 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Nick Novak | 14 | 16 | 20 | 80.0 | 43 | 43 | 91 |
+| Nick Novak | 15 | 19 | 23 | 82.6 | 45 | 45 | 102 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Mike Scifres | 14 | 76 | 3491 | 45.9 | 71 | 26 | 1 |
+| Mike Scifres | 15 | 83 | 3825 | 46.1 | 71 | 26 | 2 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Mike Windt | 14 |
+| Mike Windt | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Eddie Royal | WR | 14 | 41 | 999 | 24.4 | 35 | 401 | 11.5 |
+| Eddie Royal | WR | 15 | 41 | 999 | 24.4 | 37 | 406 | 11.0 |
 
 ### Other statistics
 
@@ -3481,6 +3487,7 @@ Counters outside the player's position table, such as coverage tackles by offens
 | Antonio Gates | TE | RUSH LNG 14 |
 | Keenan Allen | WR | RUSH LNG 1 |
 | Malcom Floyd | WR | RUSH LNG 12 |
+| Vincent Brown | WR | RUSH LNG 1 |
 
 ## San Francisco 49ers
 
@@ -3488,74 +3495,74 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Colin Kaepernick | 14 | 293 | 475 | 61.7 | 2996 | 6.3 | 18 | 14 | 80.1 | 42 | 297 | 30 | 136 | 1 | 1 | 1 |
-| B.J. Daniels | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Colt McCoy | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Colin Kaepernick | 15 | 314 | 508 | 61.8 | 3236 | 6.4 | 19 | 14 | 81.1 | 44 | 310 | 31 | 135 | 1 | 1 | 1 |
+| B.J. Daniels | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Colt McCoy | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Frank Gore | 14 | 240 | 972 | 4.0 | 4 | 30 | 60 | 36 | 320 | 4 | 1 | 1 |
-| Kendall Hunter | 14 | 66 | 258 | 3.9 | 2 | 15 | 13 | 10 | 46 | 0 | 0 | 0 |
-| LaMichael James | 14 | 10 | 37 | 3.7 | 0 | 9 | 3 | 1 | 16 | 0 | 0 | 0 |
-| Bruce Miller | 14 | 7 | 25 | 3.6 | 0 | 10 | 7 | 4 | 21 | 0 | 0 | 0 |
-| Anthony Dixon | 14 | 1 | 7 | 7.0 | 0 | 7 | 1 | 0 | 0 | 0 | 0 | 0 |
-| Will Tukuafu | 14 | 1 | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Frank Gore | 15 | 264 | 1087 | 4.1 | 6 | 30 | 63 | 38 | 389 | 4 | 1 | 1 |
+| Kendall Hunter | 15 | 68 | 281 | 4.1 | 2 | 15 | 16 | 11 | 65 | 0 | 0 | 0 |
+| LaMichael James | 15 | 11 | 41 | 3.7 | 0 | 9 | 4 | 2 | 23 | 0 | 0 | 0 |
+| Bruce Miller | 15 | 7 | 25 | 3.6 | 0 | 10 | 7 | 4 | 21 | 0 | 0 | 0 |
+| Anthony Dixon | 15 | 1 | 7 | 7.0 | 0 | 7 | 1 | 0 | 0 | 0 | 0 | 0 |
+| Will Tukuafu | 15 | 1 | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Anquan Boldin | 14 | 136 | 82 | 938 | 11.4 | 2 | 55 | 5 | 11 | 0 | 2 | 2 |
-| Kyle Williams (SF) | 14 | 75 | 45 | 552 | 12.3 | 4 | 62 | 1 | 3 | 0 | 1 | 1 |
-| Marlon Moore | 14 | 42 | 24 | 263 | 11.0 | 3 | 48 | 0 | 0 | 0 | 0 | 0 |
-| Quinton Patton | 14 | 12 | 12 | 151 | 12.6 | 1 | 33 | 2 | 21 | 0 | 0 | 0 |
-| Jon Baldwin | 14 | 4 | 3 | 9 | 3.0 | 0 | 8 | 0 | 0 | 0 | 0 | 0 |
-| Chris Harper | 14 | 1 | 1 | 3 | 3.0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 |
+| Anquan Boldin | 15 | 147 | 88 | 997 | 11.3 | 2 | 55 | 6 | 18 | 0 | 2 | 2 |
+| Kyle Williams (SF) | 15 | 78 | 47 | 554 | 11.8 | 4 | 62 | 1 | 3 | 0 | 1 | 1 |
+| Marlon Moore | 15 | 44 | 25 | 284 | 11.4 | 4 | 48 | 0 | 0 | 0 | 0 | 0 |
+| Quinton Patton | 15 | 14 | 14 | 148 | 10.6 | 1 | 33 | 2 | 21 | 0 | 0 | 0 |
+| Jon Baldwin | 15 | 4 | 3 | 9 | 3.0 | 0 | 8 | 0 | 0 | 0 | 0 | 0 |
+| Chris Harper | 15 | 1 | 1 | 3 | 3.0 | 0 | 3 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Vernon Davis | 14 | 97 | 59 | 510 | 8.6 | 3 | 46 | 0 | 0 | 0 | 1 | 1 |
-| Vance McDonald | 14 | 22 | 15 | 129 | 8.6 | 0 | 28 | 0 | 0 | 0 | 0 | 0 |
-| Garrett Celek | 14 | 1 | 1 | 38 | 38.0 | 1 | 38 | 0 | 0 | 0 | 0 | 0 |
+| Vernon Davis | 15 | 104 | 64 | 555 | 8.7 | 3 | 46 | 0 | 0 | 0 | 1 | 1 |
+| Vance McDonald | 15 | 23 | 16 | 150 | 9.4 | 0 | 28 | 0 | 0 | 0 | 0 | 0 |
+| Garrett Celek | 15 | 1 | 1 | 38 | 38.0 | 1 | 38 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Anthony Davis | 14 | 12 |
-| Joe Staley | 14 | 10 |
-| Joe Looney | 14 | 5 |
-| Jonathan Goodwin | 14 | 5 |
-| Daniel Kilgore | 14 | 4 |
-| Mike Iupati | 14 | 4 |
-| Alex Boone | 14 | 2 |
+| Anthony Davis | 15 | 13 |
+| Joe Staley | 15 | 10 |
+| Joe Looney | 15 | 5 |
+| Jonathan Goodwin | 15 | 5 |
+| Mike Iupati | 15 | 5 |
+| Daniel Kilgore | 15 | 4 |
+| Alex Boone | 15 | 2 |
 | Adam Snyder | 2 | 0 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Justin Smith | 14 | 86 | 62 | 24 | 11 | 5 | 17 | 1 | 0 | 0 | 0 |
-| Ian Williams | 14 | 43 | 31 | 12 | 3 | 4 | 5 | 1 | 0 | 0 | 0 |
-| Glenn Dorsey | 14 | 35 | 26 | 9 | 1 | 4 | 7 | 1 | 0 | 0 | 0 |
-| Ray McDonald | 9 | 30 | 23 | 7 | 3 | 1 | 7 | 0 | 0 | 0 | 0 |
-| Tony Jerod-Eddie | 14 | 20 | 15 | 5 | 2 | 0 | 3 | 0 | 0 | 0 | 0 |
+| Justin Smith | 15 | 89 | 64 | 25 | 11 | 5 | 17 | 1 | 0 | 0 | 0 |
+| Ian Williams | 15 | 44 | 32 | 12 | 3 | 5 | 6 | 1 | 0 | 0 | 0 |
+| Glenn Dorsey | 15 | 37 | 28 | 9 | 1 | 4 | 7 | 1 | 0 | 0 | 0 |
+| Ray McDonald | 10 | 31 | 24 | 7 | 3 | 1 | 8 | 0 | 0 | 0 | 0 |
+| Tony Jerod-Eddie | 15 | 22 | 17 | 5 | 2 | 0 | 3 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Navorro Bowman | 14 | 119 | 77 | 42 | 9 | 6 | 14 | 3 | 1 | 2 | 2 |
-| Patrick Willis | 14 | 97 | 66 | 31 | 11 | 3 | 5 | 3 | 3 | 1 | 1 |
-| Aldon Smith | 14 | 49 | 33 | 16 | 4 | 1 | 5 | 2 | 2 | 0 | 0 |
-| Ahmad Brooks | 14 | 20 | 11 | 9 | 2 | 0 | 1 | 0 | 0 | 0 | 0 |
-| Dan Skuta | 14 | 5 | 4 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Michael Wilhoite | 14 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Corey Lemonier | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Navorro Bowman | 15 | 131 | 83 | 48 | 11 | 6 | 15 | 4 | 2 | 2 | 2 |
+| Patrick Willis | 15 | 104 | 70 | 34 | 14 | 3 | 5 | 3 | 3 | 1 | 1 |
+| Aldon Smith | 15 | 54 | 36 | 18 | 4 | 1 | 5 | 2 | 2 | 0 | 0 |
+| Ahmad Brooks | 15 | 22 | 11 | 11 | 2 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Dan Skuta | 15 | 6 | 4 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Michael Wilhoite | 15 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Corey Lemonier | 15 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Nathan Stupar | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Nick Moody | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
@@ -3563,12 +3570,12 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Donte Whitner | 14 | 103 | 69 | 34 | 3 | 1 | 30 | 18 | 0 | 1 | 1 | 1 |
-| Carlos Rogers | 14 | 81 | 50 | 31 | 0 | 1 | 2 | 12 | 0 | 0 | 2 | 2 |
-| Tarell Brown | 14 | 60 | 38 | 22 | 1 | 5 | 52 | 13 | 0 | 1 | 0 | 0 |
-| Eric Reid | 14 | 49 | 28 | 21 | 1 | 2 | 35 | 6 | 1 | 1 | 0 | 0 |
-| Craig Dahl | 14 | 31 | 23 | 8 | 1 | 0 | 0 | 5 | 0 | 0 | 1 | 1 |
-| Nnamdi Asomugha | 14 | 10 | 4 | 6 | 1 | 1 | 21 | 2 | 0 | 0 | 0 | 0 |
+| Donte Whitner | 15 | 108 | 73 | 35 | 3 | 1 | 30 | 21 | 0 | 1 | 1 | 1 |
+| Carlos Rogers | 15 | 86 | 52 | 34 | 1 | 1 | 2 | 12 | 0 | 0 | 2 | 2 |
+| Tarell Brown | 15 | 64 | 39 | 25 | 3 | 5 | 52 | 14 | 0 | 1 | 0 | 0 |
+| Eric Reid | 15 | 49 | 28 | 21 | 1 | 2 | 35 | 6 | 1 | 1 | 0 | 0 |
+| Craig Dahl | 15 | 33 | 24 | 9 | 1 | 0 | 0 | 6 | 0 | 0 | 1 | 1 |
+| Nnamdi Asomugha | 15 | 11 | 4 | 7 | 2 | 1 | 21 | 2 | 0 | 0 | 0 | 0 |
 | Tramaine Brock | 7 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | C.J. Spillman | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Perrish Cox | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -3578,25 +3585,25 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Phil Dawson | 14 | 19 | 23 | 82.6 | 25 | 25 | 82 |
+| Phil Dawson | 15 | 19 | 24 | 79.2 | 28 | 28 | 85 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Andy Lee | 14 | 74 | 3368 | 45.5 | 65 | 28 | 4 |
+| Andy Lee | 15 | 80 | 3645 | 45.6 | 65 | 29 | 5 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Kevin McDermott | 14 |
+| Kevin McDermott | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| LaMichael James | RB | 14 | 43 | 1004 | 23.3 | 30 | 345 | 11.5 |
+| LaMichael James | RB | 15 | 44 | 1029 | 23.4 | 31 | 359 | 11.6 |
 
 ### Other statistics
 
@@ -3605,13 +3612,14 @@ Counters outside the player's position table, such as coverage tackles by offens
 | Player | Pos | Statistics |
 |---|---|---|
 | Bruce Miller | FB | REC LNG 7 |
+| Navorro Bowman | ILB | INT YDS 3 |
 | Patrick Willis | ILB | INT YDS 43 |
 | Aldon Smith | OLB | INT YDS 35 |
 | Colin Kaepernick | QB | RUSH LNG 30 |
-| Frank Gore | RB | REC LNG 26 |
-| Kendall Hunter | RB | REC LNG 9 |
+| Frank Gore | RB | REC LNG 53 |
+| Kendall Hunter | RB | REC LNG 19 |
 | LaMichael James | RB | REC LNG 16 |
-| Anquan Boldin | WR | RUSH LNG 6 |
+| Anquan Boldin | WR | RUSH LNG 7 |
 | Kyle Williams (SF) | WR | RUSH LNG 3 |
 | Quinton Patton | WR | RUSH LNG 19 |
 
@@ -3621,114 +3629,114 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Russell Wilson | 14 | 301 | 487 | 61.8 | 2985 | 6.1 | 14 | 10 | 80.2 | 35 | 210 | 41 | 119 | 2 | 1 | 1 |
-| Tarvaris Jackson | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Russell Wilson | 15 | 325 | 528 | 61.6 | 3264 | 6.2 | 17 | 10 | 82.0 | 37 | 226 | 43 | 117 | 2 | 1 | 1 |
+| Tarvaris Jackson | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Marshawn Lynch | 14 | 220 | 975 | 4.4 | 7 | 19 | 61 | 39 | 469 | 3 | 2 | 2 |
-| Robert Turbin | 14 | 62 | 251 | 4.0 | 1 | 19 | 17 | 14 | 150 | 0 | 0 | 0 |
-| Christine Michael | 14 | 14 | 95 | 6.8 | 1 | 19 | 3 | 2 | 9 | 0 | 0 | 0 |
-| Derrick Coleman | 14 | 8 | 69 | 8.6 | 1 | 22 | 11 | 7 | 95 | 0 | 0 | 0 |
-| Spencer Ware | 14 | 1 | 9 | 9.0 | 0 | 9 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Marshawn Lynch | 15 | 232 | 1004 | 4.3 | 7 | 19 | 64 | 42 | 535 | 4 | 3 | 3 |
+| Robert Turbin | 15 | 67 | 266 | 4.0 | 1 | 19 | 17 | 14 | 150 | 0 | 0 | 0 |
+| Christine Michael | 15 | 15 | 102 | 6.8 | 1 | 19 | 3 | 2 | 9 | 0 | 0 | 0 |
+| Derrick Coleman | 15 | 8 | 69 | 8.6 | 1 | 22 | 12 | 7 | 95 | 0 | 0 | 0 |
+| Spencer Ware | 15 | 1 | 9 | 9.0 | 0 | 9 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Sidney Rice | 14 | 132 | 74 | 790 | 10.7 | 4 | 48 | 1 | 7 | 0 | 1 | 1 |
-| Golden Tate | 14 | 101 | 64 | 541 | 8.5 | 2 | 74 | 3 | 5 | 0 | 0 | 0 |
-| Doug Baldwin | 14 | 44 | 26 | 189 | 7.3 | 1 | 39 | 0 | 0 | 0 | 0 | 0 |
-| Stephen Williams | 14 | 9 | 7 | 42 | 6.0 | 1 | 23 | 0 | 0 | 0 | 0 | 0 |
-| Jermaine Kearse | 14 | 5 | 4 | 37 | 9.2 | 1 | 24 | 0 | 0 | 0 | 0 | 0 |
+| Sidney Rice | 15 | 143 | 79 | 847 | 10.7 | 5 | 48 | 1 | 7 | 0 | 1 | 1 |
+| Golden Tate | 15 | 107 | 69 | 600 | 8.7 | 2 | 74 | 3 | 5 | 0 | 0 | 0 |
+| Doug Baldwin | 15 | 49 | 30 | 226 | 7.5 | 1 | 39 | 1 | 32 | 0 | 0 | 0 |
+| Stephen Williams | 15 | 11 | 7 | 42 | 6.0 | 1 | 23 | 0 | 0 | 0 | 0 | 0 |
+| Jermaine Kearse | 15 | 6 | 5 | 40 | 8.0 | 1 | 24 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Zach Miller | 14 | 83 | 52 | 582 | 11.2 | 2 | 54 | 0 | 0 | 0 | 1 | 1 |
-| Luke Willson | 14 | 21 | 12 | 81 | 6.8 | 0 | 19 | 0 | 0 | 0 | 0 | 0 |
+| Zach Miller | 15 | 92 | 57 | 635 | 11.1 | 3 | 54 | 0 | 0 | 0 | 1 | 1 |
+| Luke Willson | 15 | 24 | 13 | 85 | 6.5 | 0 | 19 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Alvin Bailey | 14 | 11 |
-| Paul McQuistan | 14 | 7 |
+| Alvin Bailey | 15 | 11 |
+| Paul McQuistan | 15 | 8 |
 | Breno Giacomini | 12 | 4 |
-| Russell Okung | 13 | 4 |
-| J.R. Sweezy | 14 | 3 |
-| Max Unger | 14 | 3 |
-| James Carpenter | 14 | 2 |
-| Mike Person | 3 | 1 |
-| Lemuel Jeanpierre | 8 | 0 |
+| Max Unger | 15 | 4 |
+| Russell Okung | 14 | 4 |
+| J.R. Sweezy | 15 | 3 |
+| James Carpenter | 15 | 2 |
+| Mike Person | 4 | 1 |
+| Lemuel Jeanpierre | 9 | 0 |
 | Michael Bowie | 1 | 0 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Red Bryant | 14 | 75 | 54 | 21 | 5 | 11 | 19 | 5 | 0 | 1 | 1 |
-| Tony McDaniel | 13 | 53 | 38 | 15 | 4 | 7 | 9 | 2 | 0 | 2 | 2 |
-| Michael Bennett | 14 | 43 | 33 | 10 | 6 | 4 | 9 | 1 | 0 | 0 | 0 |
-| Chris Clemons (SEA) | 13 | 13 | 5 | 8 | 2 | 0 | 3 | 1 | 0 | 0 | 0 |
-| Jordan Hill | 10 | 13 | 9 | 4 | 1 | 0 | 2 | 0 | 0 | 0 | 0 |
-| Brandon Mebane | 14 | 4 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Cliff Avril | 13 | 4 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Red Bryant | 15 | 84 | 59 | 25 | 5 | 11 | 20 | 5 | 0 | 1 | 1 |
+| Tony McDaniel | 14 | 55 | 39 | 16 | 5 | 7 | 9 | 2 | 0 | 2 | 2 |
+| Michael Bennett | 15 | 45 | 35 | 10 | 6 | 4 | 9 | 1 | 0 | 0 | 0 |
+| Chris Clemons (SEA) | 14 | 14 | 6 | 8 | 2 | 0 | 5 | 1 | 0 | 0 | 0 |
+| Jordan Hill | 11 | 14 | 9 | 5 | 1 | 0 | 2 | 0 | 0 | 0 | 0 |
+| Brandon Mebane | 15 | 4 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Cliff Avril | 14 | 4 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Bobby Wagner | 14 | 109 | 84 | 25 | 5 | 4 | 7 | 2 | 0 | 3 | 3 |
-| K.J. Wright | 14 | 102 | 75 | 27 | 4 | 1 | 5 | 2 | 1 | 1 | 1 |
+| Bobby Wagner | 15 | 115 | 87 | 28 | 6 | 4 | 8 | 3 | 0 | 3 | 3 |
+| K.J. Wright | 15 | 107 | 77 | 30 | 4 | 1 | 5 | 2 | 1 | 1 | 1 |
+| Malcolm Smith | 15 | 31 | 18 | 13 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
 | O'Brien Schofield | 12 | 29 | 20 | 9 | 1 | 2 | 3 | 1 | 0 | 0 | 0 |
-| Malcolm Smith | 14 | 27 | 17 | 10 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
-| Benson Mayowa | 14 | 5 | 3 | 2 | 0 | 0 | 0 | 3 | 0 | 0 | 0 |
-| Heath Farwell | 14 | 4 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Allen Bradford | 10 | 3 | 1 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Michael Morgan | 14 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Benson Mayowa | 15 | 5 | 3 | 2 | 0 | 0 | 0 | 3 | 0 | 0 | 0 |
+| Allen Bradford | 11 | 4 | 2 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Heath Farwell | 15 | 4 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Michael Morgan | 15 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Kam Chancellor | 14 | 108 | 78 | 30 | 4 | 3 | 36 | 21 | 0 | 1 | 0 | 0 |
-| Richard Sherman | 14 | 72 | 49 | 23 | 1 | 3 | 9 | 12 | 0 | 0 | 0 | 0 |
+| Kam Chancellor | 15 | 117 | 85 | 32 | 5 | 3 | 36 | 22 | 0 | 2 | 0 | 0 |
+| Richard Sherman | 15 | 75 | 50 | 25 | 1 | 4 | 6 | 13 | 0 | 0 | 0 | 0 |
 | Earl Thomas | 11 | 56 | 39 | 17 | 4 | 2 | 46 | 14 | 2 | 3 | 3 | 3 |
-| Brandon Browner | 14 | 40 | 31 | 9 | 2 | 1 | 0 | 8 | 1 | 1 | 0 | 0 |
+| Brandon Browner | 15 | 44 | 34 | 10 | 2 | 1 | 0 | 9 | 1 | 1 | 0 | 0 |
 | Jeron Johnson | 14 | 25 | 17 | 8 | 0 | 3 | 84 | 9 | 0 | 0 | 0 | 0 |
-| Chris Maragos | 14 | 14 | 11 | 3 | 0 | 0 | 0 | 2 | 1 | 1 | 1 | 1 |
-| Walter Thurmond | 14 | 5 | 3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
-| Byron Maxwell | 9 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Jeremy Lane | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Chris Maragos | 15 | 16 | 12 | 4 | 0 | 0 | 0 | 2 | 1 | 1 | 1 | 1 |
+| Walter Thurmond | 15 | 7 | 4 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
+| Byron Maxwell | 10 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Jeremy Lane | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Kickers
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Stephen Hauschka | 14 | 33 | 36 | 91.7 | 26 | 26 | 125 |
+| Stephen Hauschka | 15 | 35 | 38 | 92.1 | 29 | 29 | 134 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Jon Ryan | 14 | 65 | 2977 | 45.8 | 65 | 24 | 1 |
+| Jon Ryan | 15 | 71 | 3291 | 46.4 | 65 | 26 | 1 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Clint Gresham | 14 |
+| Clint Gresham | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Jermaine Kearse | WR | 14 | 34 | 819 | 24.1 | 0 | 0 | — |
-| Golden Tate | WR | 14 | 0 | 0 | — | 26 | 398 | 15.3 |
+| Jermaine Kearse | WR | 15 | 36 | 857 | 23.8 | 0 | 0 | — |
+| Golden Tate | WR | 15 | 0 | 0 | — | 30 | 459 | 15.3 |
 
 ### Other statistics
 
@@ -3742,6 +3750,7 @@ Counters outside the player's position table, such as coverage tackles by offens
 | Christine Michael | RB | REC LNG 5 |
 | Marshawn Lynch | RB | REC LNG 46 |
 | Robert Turbin | RB | REC LNG 37 |
+| Doug Baldwin | WR | RUSH LNG 32 |
 | Golden Tate | WR | RUSH LNG 6 |
 | Sidney Rice | WR | RUSH LNG 7 |
 
@@ -3751,88 +3760,88 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Sam Bradford | 14 | 345 | 525 | 65.7 | 3471 | 6.6 | 24 | 18 | 85.3 | 28 | 178 | 40 | 172 | 2 | 0 | 0 |
-| Kellen Clemens | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Sam Bradford | 15 | 373 | 567 | 65.8 | 3780 | 6.7 | 28 | 20 | 86.4 | 31 | 194 | 43 | 195 | 2 | 0 | 0 |
+| Kellen Clemens | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Daryl Richardson | 14 | 263 | 1151 | 4.4 | 12 | 81 | 51 | 34 | 465 | 4 | 3 | 3 |
-| Zac Stacy | 14 | 76 | 361 | 4.8 | 1 | 28 | 18 | 7 | 31 | 0 | 1 | 1 |
-| Chase Reynolds | 14 | 17 | 119 | 7.0 | 1 | 56 | 2 | 2 | 9 | 1 | 0 | 0 |
-| Benny Cunningham | 14 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Daryl Richardson | 15 | 270 | 1179 | 4.4 | 12 | 81 | 55 | 38 | 509 | 6 | 3 | 3 |
+| Zac Stacy | 15 | 80 | 388 | 4.8 | 1 | 28 | 19 | 7 | 31 | 0 | 1 | 1 |
+| Chase Reynolds | 15 | 19 | 126 | 6.6 | 1 | 56 | 2 | 2 | 9 | 1 | 0 | 0 |
+| Benny Cunningham | 15 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Chris Givens | 14 | 169 | 113 | 1149 | 10.2 | 9 | 56 | 4 | 24 | 0 | 0 | 0 |
-| Brian Quick | 14 | 97 | 63 | 646 | 10.3 | 4 | 53 | 0 | 0 | 0 | 0 | 0 |
-| Stedman Bailey | 14 | 53 | 35 | 359 | 10.3 | 2 | 30 | 0 | 0 | 0 | 0 | 0 |
-| Tavon Austin | 14 | 14 | 10 | 105 | 10.5 | 1 | 19 | 0 | 0 | 0 | 0 | 0 |
-| Austin Pettis | 14 | 4 | 3 | 16 | 5.3 | 0 | 10 | 0 | 0 | 0 | 0 | 0 |
+| Chris Givens | 15 | 180 | 122 | 1218 | 10.0 | 9 | 56 | 4 | 24 | 0 | 0 | 0 |
+| Brian Quick | 15 | 105 | 66 | 648 | 9.8 | 4 | 53 | 0 | 0 | 0 | 0 | 0 |
+| Stedman Bailey | 15 | 57 | 37 | 380 | 10.3 | 3 | 30 | 0 | 0 | 0 | 0 | 0 |
+| Tavon Austin | 15 | 16 | 12 | 166 | 13.8 | 1 | 56 | 0 | 0 | 0 | 0 | 0 |
+| Austin Pettis | 15 | 4 | 3 | 16 | 5.3 | 0 | 10 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Jared Cook | 14 | 90 | 60 | 606 | 10.1 | 2 | 38 | 0 | 0 | 0 | 0 | 0 |
-| Lance Kendricks | 14 | 24 | 15 | 84 | 5.6 | 1 | 15 | 0 | 0 | 0 | 0 | 0 |
-| Mike McNeill | 14 | 3 | 3 | 1 | 0.3 | 0 | 3 | 0 | 0 | 0 | 0 | 0 |
-| Cory Harkey | 13 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Jared Cook | 15 | 99 | 65 | 608 | 9.4 | 2 | 38 | 0 | 0 | 0 | 0 | 0 |
+| Lance Kendricks | 15 | 27 | 18 | 194 | 10.8 | 2 | 87 | 0 | 0 | 0 | 0 | 0 |
+| Mike McNeill | 15 | 3 | 3 | 1 | 0.3 | 0 | 3 | 0 | 0 | 0 | 0 | 0 |
+| Cory Harkey | 14 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Jake Long | 14 | 6 |
-| Rodger Saffold | 12 | 5 |
-| Shelley Smith | 14 | 5 |
-| Scott Wells | 14 | 4 |
-| Tim Barnes | 14 | 3 |
-| Chris Williams | 14 | 2 |
+| Jake Long | 15 | 7 |
+| Shelley Smith | 15 | 6 |
+| Rodger Saffold | 13 | 5 |
+| Scott Wells | 15 | 4 |
+| Chris Williams | 15 | 3 |
+| Tim Barnes | 15 | 3 |
 | Joe Barksdale | 2 | 2 |
 | Barrett Jones | 2 | 1 |
 | Brandon Washington | 2 | 0 |
-| Harvey Dahl | 14 | 0 |
+| Harvey Dahl | 15 | 0 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Chris Long | 14 | 71 | 44 | 27 | 4 | 6 | 12 | 1 | 0 | 1 | 1 |
-| Kendall Langford | 14 | 45 | 26 | 19 | 3 | 4 | 6 | 0 | 0 | 0 | 0 |
-| Michael Brockers | 14 | 45 | 32 | 13 | 5 | 4 | 9 | 4 | 0 | 1 | 1 |
-| William Hayes | 14 | 25 | 19 | 6 | 1 | 4 | 8 | 0 | 0 | 0 | 0 |
-| Eugene Sims | 14 | 16 | 11 | 5 | 2 | 3 | 4 | 0 | 0 | 0 | 0 |
-| Jermelle Cudjo | 14 | 8 | 5 | 3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Matt Conrath | 14 | 2 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Chris Long | 15 | 73 | 44 | 29 | 5 | 6 | 12 | 1 | 0 | 1 | 1 |
+| Kendall Langford | 15 | 51 | 31 | 20 | 5 | 4 | 6 | 0 | 0 | 0 | 0 |
+| Michael Brockers | 15 | 46 | 33 | 13 | 5 | 4 | 9 | 4 | 0 | 1 | 1 |
+| William Hayes | 15 | 27 | 21 | 6 | 1 | 4 | 8 | 0 | 0 | 0 | 0 |
+| Eugene Sims | 15 | 16 | 11 | 5 | 2 | 3 | 5 | 0 | 0 | 0 | 0 |
+| Jermelle Cudjo | 15 | 9 | 6 | 3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Matt Conrath | 15 | 3 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| James Laurinaitis | 14 | 135 | 88 | 47 | 14 | 7 | 9 | 2 | 0 | 0 | 0 |
-| Will Witherspoon | 14 | 92 | 63 | 29 | 6 | 5 | 10 | 1 | 1 | 1 | 1 |
-| Robert Quinn | 14 | 56 | 37 | 19 | 2 | 1 | 4 | 3 | 0 | 0 | 0 |
-| Alec Ogletree | 14 | 16 | 12 | 4 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
-| Daren Bates | 14 | 10 | 5 | 5 | 0 | 1 | 2 | 2 | 0 | 0 | 0 |
-| Jonathan Stewart | 13 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| James Laurinaitis | 15 | 145 | 96 | 49 | 15 | 7 | 9 | 2 | 0 | 0 | 0 |
+| Will Witherspoon | 15 | 97 | 68 | 29 | 7 | 5 | 10 | 2 | 1 | 1 | 1 |
+| Robert Quinn | 15 | 62 | 41 | 21 | 4 | 1 | 5 | 4 | 0 | 0 | 0 |
+| Alec Ogletree | 15 | 18 | 14 | 4 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
+| Daren Bates | 15 | 10 | 5 | 5 | 0 | 1 | 2 | 2 | 0 | 0 | 0 |
+| Jonathan Stewart | 14 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Gerald Rivers | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Ray-Ray Armstrong | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ray-Ray Armstrong | 15 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Cortland Finnegan | 14 | 91 | 64 | 27 | 4 | 3 | 32 | 21 | 2 | 2 | 1 | 1 |
-| Janoris Jenkins | 14 | 74 | 55 | 19 | 2 | 3 | 19 | 16 | 0 | 2 | 0 | 0 |
-| T.J. McDonald | 14 | 44 | 26 | 18 | 1 | 0 | 0 | 3 | 0 | 0 | 0 | 0 |
-| Rodney McLeod | 10 | 36 | 20 | 16 | 3 | 2 | 34 | 10 | 0 | 0 | 0 | 0 |
-| Matt Giordano | 14 | 23 | 13 | 10 | 2 | 2 | 28 | 5 | 0 | 0 | 0 | 0 |
-| Trumaine Johnson | 14 | 15 | 9 | 6 | 1 | 0 | 0 | 2 | 0 | 0 | 1 | 1 |
-| Darian Stewart | 12 | 6 | 4 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Cortland Finnegan | 15 | 102 | 72 | 30 | 4 | 3 | 32 | 21 | 2 | 2 | 1 | 1 |
+| Janoris Jenkins | 15 | 81 | 61 | 20 | 2 | 3 | 19 | 16 | 0 | 2 | 0 | 0 |
+| T.J. McDonald | 15 | 47 | 29 | 18 | 1 | 0 | 0 | 3 | 0 | 0 | 0 | 0 |
+| Rodney McLeod | 11 | 39 | 23 | 16 | 3 | 2 | 34 | 10 | 0 | 0 | 0 | 0 |
+| Matt Giordano | 15 | 27 | 17 | 10 | 2 | 2 | 28 | 7 | 0 | 0 | 0 | 0 |
+| Trumaine Johnson | 15 | 15 | 9 | 6 | 1 | 0 | 0 | 2 | 0 | 0 | 1 | 1 |
+| Darian Stewart | 13 | 6 | 4 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Matt Daniels | 2 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Brandon McGee | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
@@ -3840,26 +3849,26 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Greg Zuerlein | 14 | 22 | 23 | 95.7 | 40 | 40 | 106 |
+| Greg Zuerlein | 15 | 22 | 23 | 95.7 | 44 | 44 | 110 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Johnny Hekker | 14 | 66 | 2933 | 44.4 | 61 | 22 | 1 |
+| Johnny Hekker | 15 | 71 | 3204 | 45.1 | 66 | 23 | 1 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Jake McQuaide | 14 |
+| Jake McQuaide | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Benny Cunningham | RB | 14 | 40 | 876 | 21.9 | 0 | 0 | — |
-| Tavon Austin | WR | 14 | 0 | 0 | — | 47 | 523 | 11.1 |
+| Benny Cunningham | RB | 15 | 43 | 938 | 21.8 | 0 | 0 | — |
+| Tavon Austin | WR | 15 | 0 | 0 | — | 53 | 606 | 11.4 |
 
 ### Other statistics
 
@@ -3879,60 +3888,60 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Josh Freeman | 14 | 315 | 472 | 66.7 | 3614 | 7.7 | 21 | 13 | 93.0 | 30 | 201 | 39 | 172 | 0 | 0 | 0 |
-| Mike Glennon | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Josh Freeman | 15 | 341 | 508 | 67.1 | 3875 | 7.6 | 24 | 13 | 94.9 | 30 | 201 | 40 | 180 | 0 | 0 | 0 |
+| Mike Glennon | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Doug Martin | 14 | 269 | 1190 | 4.4 | 9 | 72 | 62 | 46 | 568 | 3 | 3 | 3 |
-| Brian Leonard | 14 | 75 | 327 | 4.4 | 3 | 15 | 18 | 12 | 96 | 0 | 0 | 0 |
-| Mike James | 14 | 17 | 52 | 3.1 | 0 | 20 | 1 | 0 | 0 | 0 | 0 | 0 |
-| Peyton Hillis | 14 | 0 | 0 | — | 0 | 0 | 3 | 3 | 46 | 0 | 0 | 0 |
+| Doug Martin | 15 | 298 | 1292 | 4.3 | 10 | 72 | 66 | 49 | 586 | 3 | 3 | 3 |
+| Brian Leonard | 15 | 81 | 353 | 4.4 | 3 | 15 | 19 | 13 | 121 | 0 | 0 | 0 |
+| Mike James | 15 | 17 | 52 | 3.1 | 0 | 20 | 1 | 0 | 0 | 0 | 0 | 0 |
+| Peyton Hillis | 15 | 0 | 0 | — | 0 | 0 | 3 | 3 | 46 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Mike Williams | 14 | 91 | 57 | 821 | 14.4 | 6 | 80 | 0 | 0 | 0 | 0 | 0 |
-| Vincent Jackson | 14 | 116 | 76 | 720 | 9.5 | 3 | 33 | 2 | 1 | 0 | 2 | 2 |
-| Kevin Ogletree | 14 | 60 | 44 | 397 | 9.0 | 3 | 31 | 2 | 2 | 0 | 0 | 0 |
-| Eric Page | 14 | 19 | 15 | 241 | 16.1 | 2 | 74 | 1 | 1 | 0 | 0 | 0 |
-| Russell Shepard | 14 | 2 | 1 | 11 | 11.0 | 0 | 11 | 0 | 0 | 0 | 0 | 0 |
+| Mike Williams | 15 | 94 | 60 | 849 | 14.2 | 6 | 80 | 0 | 0 | 0 | 0 | 0 |
+| Vincent Jackson | 15 | 124 | 83 | 788 | 9.5 | 4 | 43 | 2 | 1 | 0 | 2 | 2 |
+| Kevin Ogletree | 15 | 63 | 46 | 444 | 9.7 | 4 | 31 | 2 | 2 | 0 | 0 | 0 |
+| Eric Page | 15 | 19 | 15 | 241 | 16.1 | 2 | 74 | 1 | 1 | 0 | 0 | 0 |
+| Russell Shepard | 15 | 2 | 1 | 11 | 11.0 | 0 | 11 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Luke Stocker | 14 | 73 | 43 | 529 | 12.3 | 2 | 44 | 1 | 5 | 0 | 0 | 0 |
-| Tom Crabtree | 12 | 23 | 16 | 176 | 11.0 | 2 | 39 | 0 | 0 | 0 | 0 | 0 |
-| Nate Byham | 14 | 2 | 2 | 9 | 4.5 | 0 | 8 | 0 | 0 | 0 | 0 | 0 |
-| Timothy Wright | 14 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Luke Stocker | 15 | 88 | 52 | 602 | 11.6 | 2 | 44 | 1 | 5 | 0 | 0 | 0 |
+| Tom Crabtree | 13 | 25 | 17 | 178 | 10.5 | 3 | 39 | 0 | 0 | 0 | 0 | 0 |
+| Nate Byham | 15 | 2 | 2 | 9 | 4.5 | 0 | 8 | 0 | 0 | 0 | 0 | 0 |
+| Timothy Wright | 15 | 0 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Jamon Meredith | 14 | 9 |
-| Ted Larsen | 14 | 6 |
-| Demar Dotson | 14 | 5 |
-| Donald Penn | 14 | 5 |
-| Davin Joseph | 14 | 4 |
-| Gabe Carimi | 14 | 1 |
-| Jeremy Zuttah | 2 | 0 |
+| Jamon Meredith | 15 | 9 |
+| Ted Larsen | 15 | 6 |
+| Demar Dotson | 15 | 5 |
+| Donald Penn | 15 | 5 |
+| Davin Joseph | 15 | 4 |
+| Gabe Carimi | 15 | 1 |
+| Jeremy Zuttah | 3 | 0 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Daniel Te'o-Nesheim | 14 | 77 | 53 | 24 | 12 | 7 | 13 | 2 | 0 | 1 | 1 |
-| Gerald McCoy | 14 | 59 | 41 | 18 | 3 | 4 | 10 | 4 | 0 | 0 | 0 |
-| Adrian Clayborn | 14 | 40 | 25 | 15 | 3 | 2 | 10 | 0 | 0 | 1 | 1 |
-| Akeem Spence | 14 | 19 | 11 | 8 | 2 | 1 | 5 | 1 | 1 | 0 | 0 |
-| Gary Gibson | 14 | 10 | 4 | 6 | 3 | 0 | 1 | 1 | 0 | 0 | 0 |
-| Derek Landri | 14 | 3 | 2 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
-| Trevor Scott | 14 | 3 | 1 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Daniel Te'o-Nesheim | 15 | 82 | 57 | 25 | 12 | 9 | 15 | 2 | 0 | 1 | 1 |
+| Gerald McCoy | 15 | 61 | 43 | 18 | 3 | 4 | 10 | 4 | 0 | 0 | 0 |
+| Adrian Clayborn | 15 | 43 | 26 | 17 | 3 | 2 | 10 | 0 | 0 | 1 | 1 |
+| Akeem Spence | 15 | 23 | 14 | 9 | 2 | 1 | 6 | 1 | 1 | 0 | 0 |
+| Gary Gibson | 15 | 12 | 5 | 7 | 3 | 0 | 1 | 1 | 0 | 0 | 0 |
+| Derek Landri | 15 | 3 | 2 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Trevor Scott | 15 | 3 | 1 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Da'Quan Bowers | 9 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | William Gholston | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
@@ -3940,61 +3949,61 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Lavonte David | 13 | 113 | 78 | 35 | 10 | 2 | 7 | 5 | 0 | 0 | 0 |
-| Mason Foster | 14 | 85 | 64 | 21 | 5 | 2 | 6 | 5 | 0 | 0 | 0 |
-| Dekoda Watson | 14 | 59 | 35 | 24 | 3 | 3 | 3 | 3 | 0 | 2 | 2 |
-| Jonathan Casillas | 14 | 22 | 15 | 7 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
-| Adam Hayward | 14 | 10 | 7 | 3 | 0 | 0 | 1 | 1 | 1 | 0 | 0 |
-| Steven Means | 14 | 1 | 0 | 1 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |
+| Lavonte David | 14 | 120 | 84 | 36 | 10 | 2 | 7 | 6 | 0 | 0 | 0 |
+| Mason Foster | 15 | 89 | 68 | 21 | 5 | 2 | 7 | 6 | 0 | 0 | 0 |
+| Dekoda Watson | 15 | 61 | 37 | 24 | 3 | 3 | 3 | 3 | 0 | 2 | 2 |
+| Jonathan Casillas | 15 | 24 | 17 | 7 | 1 | 2 | 2 | 0 | 0 | 0 | 0 |
+| Adam Hayward | 15 | 11 | 7 | 4 | 0 | 0 | 1 | 1 | 1 | 0 | 0 |
+| Steven Means | 15 | 1 | 0 | 1 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Mark Barron | 14 | 102 | 77 | 25 | 2 | 4 | 45 | 22 | 1 | 2 | 1 | 1 |
-| Dashon Goldson | 14 | 69 | 50 | 19 | 1 | 0 | 0 | 13 | 1 | 2 | 2 | 2 |
-| Leonard Johnson | 14 | 53 | 43 | 10 | 1 | 2 | 28 | 7 | 0 | 0 | 1 | 1 |
-| Darrelle Revis | 14 | 43 | 30 | 13 | 0 | 0 | 0 | 4 | 3 | 3 | 1 | 1 |
-| Ahmad Black | 14 | 30 | 21 | 9 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
-| Michael Adams | 14 | 10 | 4 | 6 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
-| Keith Tandy | 14 | 2 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Johnthan Banks | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Mark Barron | 15 | 104 | 79 | 25 | 2 | 4 | 45 | 24 | 1 | 2 | 1 | 1 |
+| Dashon Goldson | 15 | 74 | 53 | 21 | 1 | 2 | 25 | 15 | 1 | 2 | 2 | 2 |
+| Leonard Johnson | 15 | 57 | 46 | 11 | 1 | 2 | 28 | 7 | 0 | 0 | 1 | 1 |
+| Darrelle Revis | 15 | 45 | 32 | 13 | 0 | 0 | 0 | 4 | 3 | 3 | 1 | 1 |
+| Ahmad Black | 15 | 33 | 22 | 11 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
+| Michael Adams | 15 | 11 | 5 | 6 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Keith Tandy | 15 | 2 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Johnthan Banks | 15 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
 
 ### Kickers
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Rian Lindell | 14 | 21 | 27 | 77.8 | 32 | 32 | 95 |
+| Rian Lindell | 15 | 22 | 28 | 78.6 | 36 | 36 | 102 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Michael Koenen | 13 | 67 | 3030 | 45.2 | 64 | 21 | 2 |
+| Michael Koenen | 14 | 74 | 3337 | 45.1 | 64 | 22 | 2 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Andrew Economos | 14 |
+| Andrew Economos | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Eric Page | WR | 14 | 6 | 161 | 26.8 | 1 | 4 | 4.0 |
-| Russell Shepard | WR | 14 | 6 | 124 | 20.7 | 0 | 0 | — |
-| Mike Williams | WR | 14 | 3 | 74 | 24.7 | 2 | 29 | 14.5 |
-| Johnthan Banks | CB | 14 | 3 | 97 | 32.3 | 1 | 5 | 5.0 |
-| Leonard Johnson | CB | 14 | 2 | 38 | 19.0 | 6 | 64 | 10.7 |
-| Brian Leonard | RB | 14 | 3 | 56 | 18.7 | 3 | 36 | 12.0 |
-| Vincent Jackson | WR | 14 | 3 | 85 | 28.3 | 0 | 0 | — |
-| Doug Martin | RB | 14 | 2 | 45 | 22.5 | 5 | 36 | 7.2 |
-| Mike James | RB | 14 | 2 | 75 | 37.5 | 0 | 0 | — |
-| Michael Adams | CB | 14 | 2 | 60 | 30.0 | 1 | 14 | 14.0 |
-| Kevin Ogletree | WR | 14 | 3 | 67 | 22.3 | 1 | 5 | 5.0 |
-| Peyton Hillis | RB | 14 | 2 | 46 | 23.0 | 2 | 7 | 3.5 |
-| Darrelle Revis | CB | 14 | 1 | 25 | 25.0 | 3 | 14 | 4.7 |
+| Eric Page | WR | 15 | 6 | 161 | 26.8 | 1 | 4 | 4.0 |
+| Russell Shepard | WR | 15 | 7 | 154 | 22.0 | 1 | 10 | 10.0 |
+| Johnthan Banks | CB | 15 | 3 | 97 | 32.3 | 2 | 21 | 10.5 |
+| Leonard Johnson | CB | 15 | 2 | 38 | 19.0 | 7 | 69 | 9.9 |
+| Mike Williams | WR | 15 | 3 | 74 | 24.7 | 2 | 29 | 14.5 |
+| Brian Leonard | RB | 15 | 3 | 56 | 18.7 | 3 | 36 | 12.0 |
+| Vincent Jackson | WR | 15 | 3 | 85 | 28.3 | 0 | 0 | — |
+| Doug Martin | RB | 15 | 2 | 45 | 22.5 | 5 | 36 | 7.2 |
+| Peyton Hillis | RB | 15 | 3 | 72 | 24.0 | 2 | 7 | 3.5 |
+| Mike James | RB | 15 | 2 | 75 | 37.5 | 0 | 0 | — |
+| Michael Adams | CB | 15 | 2 | 60 | 30.0 | 1 | 14 | 14.0 |
+| Kevin Ogletree | WR | 15 | 3 | 67 | 22.3 | 1 | 5 | 5.0 |
+| Darrelle Revis | CB | 15 | 2 | 51 | 25.5 | 3 | 14 | 4.7 |
 
 ### Other statistics
 
@@ -4006,7 +4015,7 @@ Counters outside the player's position table, such as coverage tackles by offens
 | Adam Hayward | MLB | INT YDS 15 |
 | Steven Means | OLB | INT YDS 26 |
 | Josh Freeman | QB | RUSH LNG 47 |
-| Brian Leonard | RB | REC LNG 22 |
+| Brian Leonard | RB | REC LNG 25 |
 | Doug Martin | RB | REC LNG 51 |
 | Peyton Hillis | RB | REC LNG 20 |
 | Luke Stocker | TE | RUSH LNG 5 |
@@ -4020,63 +4029,63 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Jake Locker | 14 | 329 | 506 | 65.0 | 3294 | 6.5 | 19 | 16 | 82.7 | 27 | 150 | 37 | 159 | 1 | 0 | 0 |
-| Ryan Fitzpatrick | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Jake Locker | 15 | 364 | 563 | 64.7 | 3726 | 6.6 | 22 | 17 | 84.0 | 28 | 160 | 39 | 169 | 1 | 0 | 0 |
+| Ryan Fitzpatrick | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Chris Johnson | 14 | 224 | 1001 | 4.5 | 9 | 52 | 56 | 35 | 481 | 3 | 1 | 1 |
-| Shonn Greene | 14 | 72 | 306 | 4.2 | 0 | 18 | 18 | 11 | 96 | 1 | 1 | 1 |
-| Darius Reynaud | 14 | 12 | 25 | 2.1 | 2 | 15 | 2 | 2 | 36 | 0 | 0 | 0 |
-| Collin Mooney | 14 | 10 | 19 | 1.9 | 0 | 6 | 14 | 9 | 44 | 0 | 1 | 1 |
-| Jackie Battle | 14 | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Chris Johnson | 15 | 237 | 1060 | 4.5 | 9 | 52 | 62 | 38 | 511 | 4 | 1 | 1 |
+| Shonn Greene | 15 | 75 | 311 | 4.1 | 0 | 18 | 21 | 14 | 157 | 2 | 1 | 1 |
+| Darius Reynaud | 15 | 13 | 25 | 1.9 | 2 | 15 | 3 | 3 | 49 | 0 | 0 | 0 |
+| Collin Mooney | 15 | 11 | 22 | 2.0 | 0 | 6 | 15 | 10 | 62 | 0 | 1 | 1 |
+| Jackie Battle | 15 | 0 | 0 | — | 0 | 0 | 1 | 1 | 22 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Kenny Britt | 14 | 129 | 83 | 849 | 10.2 | 5 | 57 | 4 | 15 | 0 | 1 | 1 |
-| Nate Washington | 14 | 104 | 64 | 657 | 10.3 | 3 | 42 | 4 | 30 | 0 | 0 | 0 |
-| Kendall Wright | 14 | 56 | 40 | 399 | 10.0 | 3 | 53 | 2 | 3 | 0 | 0 | 0 |
-| Damian Williams | 14 | 12 | 8 | 70 | 8.8 | 0 | 18 | 0 | 0 | 0 | 0 | 0 |
-| Denard Robinson | 14 | 3 | 3 | 28 | 9.3 | 1 | 13 | 0 | 0 | 0 | 0 | 0 |
-| Michael Preston | 14 | 1 | 1 | 26 | 26.0 | 0 | 26 | 0 | 0 | 0 | 0 | 0 |
-| Justin Hunter | 14 | 1 | 1 | 19 | 19.0 | 0 | 19 | 0 | 0 | 0 | 0 | 0 |
+| Kenny Britt | 15 | 153 | 98 | 1036 | 10.6 | 5 | 57 | 4 | 15 | 0 | 1 | 1 |
+| Nate Washington | 15 | 110 | 68 | 700 | 10.3 | 3 | 42 | 4 | 30 | 0 | 0 | 0 |
+| Kendall Wright | 15 | 61 | 42 | 407 | 9.7 | 3 | 53 | 2 | 3 | 0 | 0 | 0 |
+| Damian Williams | 15 | 14 | 9 | 88 | 9.8 | 1 | 18 | 0 | 0 | 0 | 0 | 0 |
+| Denard Robinson | 15 | 4 | 4 | 33 | 8.2 | 1 | 13 | 0 | 0 | 0 | 0 | 0 |
+| Michael Preston | 15 | 1 | 1 | 26 | 26.0 | 0 | 26 | 0 | 0 | 0 | 0 | 0 |
+| Justin Hunter | 15 | 1 | 1 | 19 | 19.0 | 0 | 19 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Craig Stevens | 14 | 83 | 56 | 424 | 7.6 | 3 | 30 | 0 | 0 | 0 | 0 | 0 |
-| Taylor Thompson | 14 | 26 | 16 | 165 | 10.3 | 0 | 45 | 0 | 0 | 0 | 0 | 0 |
+| Craig Stevens | 15 | 90 | 59 | 451 | 7.6 | 3 | 30 | 0 | 0 | 0 | 0 | 0 |
+| Taylor Thompson | 15 | 26 | 16 | 165 | 10.3 | 0 | 45 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Robert Turner | 14 | 6 |
-| Mike Otto | 14 | 5 |
-| Andy Levitre | 14 | 4 |
-| Chris Spencer | 14 | 4 |
-| Michael Roos | 14 | 4 |
-| Chance Warmack | 14 | 3 |
-| David Stewart | 14 | 1 |
+| Robert Turner | 15 | 6 |
+| Andy Levitre | 15 | 5 |
+| Mike Otto | 15 | 5 |
+| Chris Spencer | 15 | 4 |
+| Michael Roos | 15 | 4 |
+| Chance Warmack | 15 | 3 |
+| David Stewart | 15 | 1 |
 | Brian Schwenke | 2 | 0 |
-| Byron Stingily | 2 | 0 |
+| Byron Stingily | 3 | 0 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Derrick Morgan | 14 | 77 | 60 | 17 | 5 | 7 | 20 | 2 | 0 | 1 | 1 |
-| Jurrell Casey | 14 | 49 | 32 | 17 | 7 | 2 | 6 | 5 | 0 | 1 | 1 |
-| Ropati Pitoitua | 14 | 43 | 31 | 12 | 7 | 3 | 4 | 1 | 0 | 1 | 1 |
-| Sammie Lee Hill | 14 | 28 | 24 | 4 | 1 | 1 | 3 | 1 | 0 | 0 | 0 |
-| Mike Martin | 14 | 15 | 11 | 4 | 0 | 2 | 4 | 1 | 0 | 1 | 1 |
-| Kamerion Wimbley | 14 | 8 | 7 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Antonio Johnson | 14 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Derrick Morgan | 15 | 81 | 62 | 19 | 5 | 8 | 21 | 2 | 0 | 1 | 1 |
+| Jurrell Casey | 15 | 52 | 35 | 17 | 8 | 2 | 7 | 5 | 0 | 1 | 1 |
+| Ropati Pitoitua | 15 | 45 | 31 | 14 | 7 | 3 | 4 | 1 | 0 | 1 | 1 |
+| Sammie Lee Hill | 15 | 28 | 24 | 4 | 1 | 1 | 3 | 1 | 0 | 0 | 0 |
+| Mike Martin | 15 | 17 | 12 | 5 | 0 | 3 | 5 | 1 | 0 | 1 | 1 |
+| Kamerion Wimbley | 15 | 9 | 8 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Antonio Johnson | 15 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Karl Klug | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Keyunta Dawson | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
@@ -4084,24 +4093,24 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Akeem Ayers | 14 | 120 | 73 | 47 | 11 | 5 | 11 | 10 | 3 | 0 | 0 |
-| Zach Brown | 14 | 104 | 68 | 36 | 9 | 1 | 6 | 4 | 1 | 0 | 0 |
-| Moise Fokou | 14 | 51 | 38 | 13 | 3 | 1 | 2 | 2 | 0 | 1 | 1 |
-| Colin McCarthy | 14 | 16 | 8 | 8 | 1 | 0 | 0 | 2 | 0 | 0 | 0 |
+| Akeem Ayers | 15 | 125 | 76 | 49 | 11 | 5 | 12 | 10 | 3 | 0 | 0 |
+| Zach Brown | 15 | 110 | 71 | 39 | 9 | 1 | 7 | 5 | 1 | 0 | 0 |
+| Moise Fokou | 15 | 54 | 40 | 14 | 3 | 1 | 2 | 2 | 0 | 1 | 1 |
+| Colin McCarthy | 15 | 17 | 9 | 8 | 1 | 0 | 0 | 2 | 0 | 0 | 0 |
 | Patrick Bailey | 14 | 8 | 5 | 3 | 0 | 0 | 1 | 1 | 0 | 0 | 0 |
-| Zaviar Gooden | 13 | 3 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Zaviar Gooden | 14 | 3 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Bernard Pollard | 14 | 97 | 63 | 34 | 3 | 5 | 93 | 20 | 1 | 1 | 1 | 1 |
-| Jason McCourty | 14 | 77 | 51 | 26 | 3 | 6 | 106 | 9 | 0 | 1 | 1 | 1 |
-| Alterraun Verner | 14 | 57 | 38 | 19 | 3 | 3 | 80 | 10 | 0 | 0 | 1 | 1 |
-| Michael Griffin | 14 | 40 | 25 | 15 | 2 | 0 | 0 | 5 | 2 | 2 | 1 | 1 |
-| George Wilson | 14 | 27 | 17 | 10 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
-| Coty Sensabaugh | 14 | 12 | 8 | 4 | 1 | 1 | 23 | 3 | 0 | 0 | 0 | 0 |
-| Tommie Campbell | 14 | 3 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Bernard Pollard | 15 | 103 | 67 | 36 | 4 | 5 | 93 | 23 | 1 | 1 | 1 | 1 |
+| Jason McCourty | 15 | 89 | 59 | 30 | 3 | 6 | 106 | 9 | 0 | 1 | 1 | 1 |
+| Alterraun Verner | 15 | 60 | 40 | 20 | 3 | 3 | 80 | 10 | 0 | 0 | 1 | 1 |
+| Michael Griffin | 15 | 45 | 28 | 17 | 2 | 0 | 0 | 5 | 2 | 2 | 1 | 1 |
+| George Wilson | 15 | 32 | 20 | 12 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
+| Coty Sensabaugh | 15 | 13 | 9 | 4 | 1 | 1 | 23 | 3 | 0 | 0 | 0 | 0 |
+| Tommie Campbell | 15 | 3 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Blidi Wreh-Wilson | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Daimion Stafford | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
@@ -4109,25 +4118,25 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Rob Bironas | 14 | 27 | 33 | 81.8 | 31 | 31 | 112 |
+| Rob Bironas | 15 | 29 | 35 | 82.9 | 34 | 34 | 121 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Brett Kern | 14 | 71 | 3258 | 45.9 | 71 | 27 | 3 |
+| Brett Kern | 15 | 76 | 3464 | 45.6 | 71 | 28 | 3 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Beau Brinkley | 14 |
+| Beau Brinkley | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Darius Reynaud | RB | 14 | 37 | 804 | 21.7 | 30 | 318 | 10.6 |
+| Darius Reynaud | RB | 15 | 42 | 908 | 21.6 | 33 | 366 | 11.1 |
 
 ### Other statistics
 
@@ -4135,13 +4144,14 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | Pos | Statistics |
 |---|---|---|
-| Collin Mooney | FB | REC LNG 12 |
+| Collin Mooney | FB | REC LNG 18 |
 | Akeem Ayers | OLB | INT YDS 42 |
 | Zach Brown | OLB | INT YDS 20 |
 | Jake Locker | QB | RUSH LNG 41 |
 | Chris Johnson | RB | REC LNG 98 |
 | Darius Reynaud | RB | REC LNG 23 |
-| Shonn Greene | RB | REC LNG 41 |
+| Jackie Battle | RB | REC LNG 22 |
+| Shonn Greene | RB | REC LNG 50 |
 | Kendall Wright | WR | RUSH LNG 4 |
 | Kenny Britt | WR | RUSH LNG 11 |
 | Nate Washington | WR | RUSH LNG 22 |
@@ -4152,88 +4162,88 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | CMP | ATT | CMP% | YDS | Y/A | TD | INT | RTG | SCK | SCKY | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Robert Griffin | 14 | 336 | 512 | 65.6 | 3309 | 6.5 | 14 | 12 | 83.0 | 31 | 205 | 36 | 117 | 2 | 0 | 0 |
-| Pat White | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Rex Grossman | 14 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Robert Griffin | 15 | 358 | 546 | 65.6 | 3584 | 6.6 | 16 | 13 | 83.9 | 33 | 220 | 42 | 142 | 3 | 0 | 0 |
+| Pat White | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Rex Grossman | 15 | 0 | 0 | — | 0 | — | 0 | 0 | — | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Running backs
 
 | Player | G | CAR | YDS | AVG | TD | LNG | TGT | REC | REC YDS | REC TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Alfred Morris | 14 | 233 | 1258 | 5.4 | 8 | 80 | 56 | 37 | 449 | 3 | 3 | 3 |
-| Roy Helu | 14 | 78 | 385 | 4.9 | 5 | 17 | 21 | 14 | 114 | 0 | 0 | 0 |
-| Darrel Young | 14 | 11 | 45 | 4.1 | 0 | 14 | 15 | 9 | 93 | 1 | 0 | 0 |
-| Evan Royster | 14 | 10 | 44 | 4.4 | 0 | 18 | 4 | 3 | 40 | 0 | 0 | 0 |
+| Alfred Morris | 15 | 247 | 1330 | 5.4 | 8 | 80 | 58 | 38 | 461 | 3 | 3 | 3 |
+| Roy Helu | 15 | 81 | 395 | 4.9 | 5 | 17 | 22 | 15 | 121 | 0 | 0 | 0 |
+| Evan Royster | 15 | 13 | 119 | 9.2 | 1 | 62 | 4 | 3 | 40 | 0 | 0 | 0 |
+| Darrel Young | 15 | 11 | 45 | 4.1 | 0 | 14 | 16 | 10 | 95 | 2 | 0 | 0 |
 | Chris Thompson | 8 | 1 | 0 | 0.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Wide receivers
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Josh Morgan | 14 | 134 | 85 | 864 | 10.2 | 4 | 50 | 4 | 32 | 0 | 0 | 0 |
-| Pierre Garcon | 14 | 90 | 64 | 670 | 10.5 | 1 | 45 | 4 | 25 | 0 | 1 | 1 |
-| Leonard Hankerson | 14 | 48 | 32 | 305 | 9.5 | 1 | 37 | 1 | 1 | 0 | 0 | 0 |
-| Aldrick Robinson | 14 | 25 | 16 | 136 | 8.5 | 1 | 31 | 1 | 4 | 0 | 0 | 0 |
-| Santana Moss | 14 | 5 | 2 | 12 | 6.0 | 0 | 7 | 0 | 0 | 0 | 0 | 0 |
+| Josh Morgan | 15 | 141 | 89 | 887 | 10.0 | 4 | 50 | 5 | 34 | 0 | 0 | 0 |
+| Pierre Garcon | 15 | 100 | 71 | 813 | 11.5 | 2 | 53 | 4 | 25 | 0 | 1 | 1 |
+| Leonard Hankerson | 15 | 51 | 34 | 313 | 9.2 | 1 | 37 | 1 | 1 | 0 | 0 | 0 |
+| Aldrick Robinson | 15 | 26 | 17 | 149 | 8.8 | 1 | 31 | 1 | 4 | 0 | 0 | 0 |
+| Santana Moss | 15 | 5 | 2 | 12 | 6.0 | 0 | 7 | 0 | 0 | 0 | 0 | 0 |
 
 ### Tight ends
 
 | Player | G | TGT | REC | YDS | AVG | TD | LNG | RUSH | RUSH YDS | RUSH TD | FUM | LOST |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Fred Davis | 14 | 85 | 54 | 475 | 8.8 | 2 | 35 | 0 | 0 | 0 | 0 | 0 |
+| Fred Davis | 15 | 90 | 58 | 520 | 9.0 | 2 | 35 | 0 | 0 | 0 | 0 | 0 |
 | Logan Paulsen | 11 | 23 | 16 | 146 | 9.1 | 1 | 44 | 0 | 0 | 0 | 0 | 0 |
-| Niles Paul | 14 | 4 | 3 | 8 | 2.7 | 0 | 5 | 0 | 0 | 0 | 0 | 0 |
-| Jordan Reed | 14 | 1 | 1 | -3 | -3.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Niles Paul | 15 | 6 | 4 | 30 | 7.5 | 0 | 22 | 0 | 0 | 0 | 0 | 0 |
+| Jordan Reed | 15 | 2 | 1 | -3 | -3.0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Offensive line
 
 | Player | G | SCK ALLOWED |
 |---|---:|---:|
-| Chris Chester | 14 | 7 |
-| Tom Compton | 14 | 6 |
-| Tyler Polumbus | 14 | 6 |
-| Trent Williams | 14 | 5 |
-| Josh LeRibeus | 14 | 2 |
-| Kory Lichtensteiger | 14 | 2 |
-| Will Montgomery | 14 | 2 |
-| Adam Gettis | 5 | 1 |
+| Chris Chester | 15 | 7 |
+| Tom Compton | 15 | 7 |
+| Tyler Polumbus | 15 | 7 |
+| Trent Williams | 15 | 5 |
+| Josh LeRibeus | 15 | 2 |
+| Kory Lichtensteiger | 15 | 2 |
+| Will Montgomery | 15 | 2 |
+| Adam Gettis | 6 | 1 |
 
 ### Defensive line
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Ryan Kerrigan | 14 | 74 | 48 | 26 | 4 | 5 | 12 | 3 | 0 | 0 | 0 |
-| Barry Cofield | 13 | 49 | 32 | 17 | 11 | 3 | 10 | 0 | 0 | 0 | 0 |
-| Stephen Bowen | 14 | 40 | 32 | 8 | 5 | 1 | 10 | 0 | 0 | 0 | 0 |
-| Kedric Golston | 14 | 29 | 21 | 8 | 2 | 1 | 5 | 0 | 0 | 1 | 1 |
-| Darryl Tapp | 14 | 14 | 8 | 6 | 1 | 2 | 3 | 2 | 0 | 0 | 0 |
-| Chris Baker | 14 | 6 | 4 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Phillip Merling | 14 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Chris Neild | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ryan Kerrigan | 15 | 79 | 52 | 27 | 5 | 5 | 12 | 3 | 0 | 0 | 0 |
+| Barry Cofield | 14 | 53 | 34 | 19 | 11 | 4 | 11 | 0 | 0 | 0 | 0 |
+| Stephen Bowen | 15 | 42 | 34 | 8 | 6 | 1 | 10 | 0 | 0 | 0 | 0 |
+| Kedric Golston | 15 | 32 | 23 | 9 | 2 | 1 | 5 | 0 | 0 | 1 | 1 |
+| Darryl Tapp | 15 | 15 | 9 | 6 | 1 | 2 | 3 | 2 | 0 | 0 | 0 |
+| Chris Baker | 15 | 8 | 6 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Chris Neild | 6 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Phillip Merling | 15 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Linebackers
 
 | Player | G | TOT | SOLO | AST | TFL | SCK | PRESS | PD | INT | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Perry Riley | 14 | 104 | 70 | 34 | 11 | 5 | 9 | 7 | 0 | 0 | 0 |
+| Perry Riley | 15 | 111 | 77 | 34 | 11 | 7 | 11 | 7 | 0 | 1 | 1 |
 | London Fletcher | 11 | 94 | 57 | 37 | 4 | 5 | 13 | 4 | 0 | 1 | 1 |
-| Brian Orakpo | 14 | 68 | 47 | 21 | 4 | 2 | 3 | 1 | 0 | 0 | 0 |
-| Nick Barnett | 14 | 37 | 24 | 13 | 4 | 2 | 2 | 1 | 0 | 0 | 0 |
-| Bryan Kehl | 14 | 14 | 7 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Brandon Jenkins | 14 | 2 | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Brian Orakpo | 15 | 72 | 50 | 22 | 4 | 2 | 3 | 1 | 0 | 0 | 0 |
+| Nick Barnett | 15 | 39 | 26 | 13 | 4 | 3 | 3 | 2 | 0 | 0 | 0 |
+| Bryan Kehl | 15 | 14 | 7 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Brandon Jenkins | 15 | 2 | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Defensive backs
 
 | Player | G | TOT | SOLO | AST | TFL | INT | INT YDS | PD | SCK | PRESS | FF | FR |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| DeAngelo Hall | 14 | 101 | 64 | 37 | 7 | 1 | 5 | 14 | 0 | 1 | 1 | 1 |
-| Brandon Meriweather | 14 | 69 | 42 | 27 | 0 | 3 | 36 | 10 | 1 | 2 | 0 | 0 |
+| DeAngelo Hall | 15 | 107 | 70 | 37 | 7 | 1 | 5 | 15 | 0 | 1 | 1 | 1 |
+| Brandon Meriweather | 15 | 72 | 44 | 28 | 0 | 4 | 36 | 11 | 1 | 2 | 0 | 0 |
 | Josh Wilson | 11 | 60 | 40 | 20 | 2 | 4 | 38 | 12 | 0 | 0 | 1 | 1 |
-| Reed Doughty | 14 | 54 | 29 | 25 | 2 | 2 | 18 | 7 | 2 | 2 | 0 | 0 |
-| E.J. Biggers | 14 | 33 | 24 | 9 | 0 | 1 | 0 | 6 | 1 | 1 | 1 | 1 |
-| Jordan Pugh | 14 | 18 | 8 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| David Amerson | 9 | 3 | 3 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
-| Josh Evans | 5 | 2 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Reed Doughty | 15 | 56 | 31 | 25 | 2 | 2 | 18 | 7 | 2 | 2 | 0 | 0 |
+| E.J. Biggers | 15 | 37 | 26 | 11 | 0 | 1 | 0 | 6 | 1 | 1 | 1 | 1 |
+| Jordan Pugh | 15 | 26 | 15 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| David Amerson | 10 | 6 | 6 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
+| Josh Evans | 6 | 2 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Jerome Murphy | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Jose Gumbs | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
@@ -4241,36 +4251,36 @@ Counters outside the player's position table, such as coverage tackles by offens
 
 | Player | G | FGM | FGA | FG% | XPM | XPA | PTS |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Kai Forbath | 14 | 27 | 28 | 96.4 | 29 | 29 | 110 |
+| Kai Forbath | 15 | 28 | 30 | 93.3 | 33 | 33 | 117 |
 
 ### Punters
 
 | Player | G | PUNTS | YDS | AVG | LNG | IN20 | TB |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Saverio Rocca | 14 | 77 | 3364 | 43.7 | 70 | 24 | 1 |
+| Saverio Rocca | 15 | 81 | 3558 | 43.9 | 70 | 24 | 2 |
 
 ### Long snappers
 
 | Player | G |
 |---|---:|
-| Nick Sundberg | 14 |
+| Nick Sundberg | 15 |
 
 ### Kick and punt returners
 
 | Player | Pos | G | KR | KR YDS | KR AVG | PR | PR YDS | PR AVG |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
 | Chris Thompson | RB | 8 | 27 | 618 | 22.9 | 21 | 314 | 15.0 |
-| Alfred Morris | RB | 14 | 4 | 80 | 20.0 | 2 | 20 | 10.0 |
-| Roy Helu | RB | 14 | 1 | 26 | 26.0 | 2 | 31 | 15.5 |
-| Aldrick Robinson | WR | 14 | 2 | 46 | 23.0 | 1 | 10 | 10.0 |
-| Santana Moss | WR | 14 | 2 | 36 | 18.0 | 2 | 20 | 10.0 |
-| Evan Royster | RB | 14 | 2 | 50 | 25.0 | 1 | 3 | 3.0 |
-| Leonard Hankerson | WR | 14 | 1 | 41 | 41.0 | 0 | 0 | — |
+| Alfred Morris | RB | 15 | 5 | 108 | 21.6 | 2 | 20 | 10.0 |
+| Aldrick Robinson | WR | 15 | 3 | 74 | 24.7 | 1 | 10 | 10.0 |
+| Roy Helu | RB | 15 | 2 | 44 | 22.0 | 2 | 31 | 15.5 |
+| E.J. Biggers | CB | 15 | 1 | 16 | 16.0 | 3 | 40 | 13.3 |
+| Santana Moss | WR | 15 | 2 | 36 | 18.0 | 2 | 20 | 10.0 |
+| Evan Royster | RB | 15 | 2 | 50 | 25.0 | 1 | 3 | 3.0 |
+| Leonard Hankerson | WR | 15 | 1 | 41 | 41.0 | 0 | 0 | — |
 | Josh Wilson | CB | 11 | 1 | 27 | 27.0 | 1 | 9 | 9.0 |
-| David Amerson | CB | 9 | 0 | 0 | — | 2 | 24 | 12.0 |
-| Pierre Garcon | WR | 14 | 1 | 17 | 17.0 | 1 | 7 | 7.0 |
-| E.J. Biggers | CB | 14 | 1 | 16 | 16.0 | 1 | 7 | 7.0 |
-| Josh Morgan | WR | 14 | 0 | 0 | — | 1 | 7 | 7.0 |
+| David Amerson | CB | 10 | 0 | 0 | — | 2 | 24 | 12.0 |
+| Pierre Garcon | WR | 15 | 1 | 17 | 17.0 | 1 | 7 | 7.0 |
+| Josh Morgan | WR | 15 | 0 | 0 | — | 1 | 7 | 7.0 |
 
 ### Other statistics
 
@@ -4279,7 +4289,7 @@ Counters outside the player's position table, such as coverage tackles by offens
 | Player | Pos | Statistics |
 |---|---|---|
 | Darrel Young | FB | REC LNG 19 |
-| Robert Griffin | QB | RUSH LNG 24 |
+| Robert Griffin | QB | RUSH LNG 25 |
 | Alfred Morris | RB | REC LNG 62 |
 | Evan Royster | RB | REC LNG 19 |
 | Roy Helu | RB | REC LNG 21 |

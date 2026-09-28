@@ -1482,3 +1482,44 @@ A snap no call fits carries the generic label. Source and tests: `runtime/README
 **Next competitive event:** December 22 Week 16 vs Tennessee, 1 p.m. ET. **Not simulated.**
 
 **Commit closed - Canonical update - December 15, 2013 - Week 15 vs Buffalo closed - canonical through December 15, after Week 15**
+
+## Entry 59: Week 16 vs Tennessee closed
+
+**Effective canonical state:** December 22, 2013, after Week 16
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - December 22, 2013 - Week 16 vs Tennessee closed`
+**Preceding global package checkpoint:** `Canonical update - December 15, 2013 - Week 15 vs Buffalo closed`
+
+**Result.** Jacksonville 38, Tennessee 27 at EverBank Field. Jacksonville is 10-5 and first in the AFC South, a game ahead of 9-6 Tennessee; the season series is 1-1, and a Week 17 win clinches the division. Jacksonville is the AFC's second seed behind the 11-4 Jets.
+
+**Batch.** All sixteen Week 16 games closed once each under kernel 2013.10. They were drawn from the package frozen by `build_week_inputs.py 16` (sha256 `dc859452...`) after the gate passed; Jacksonville's unit was inspected before the close (46 dressed; Wilson, Posluszny and Ball unavailable). The call sheet and depth chart were committed before the draw (fce62df).
+
+**Inputs.**
+- **Call sheet:** Stone's fifteen calls, with no new family and Wham on the sheet.
+- **Lineup and inactives:** unchanged.
+- **Scouting:** the plan's scouting section is handled outside this record at the user's direction.
+
+**Game.**
+- **Jacksonville offense:** no turnover.
+  - Cousins: 16 of 32 for 356 yards and three touchdowns, no interception.
+  - Rushing: 36 runs against 34 dropbacks. Jones-Drew 25 carries for 93 and a touchdown; Grimes 79 yards from scrimmage and a touchdown on Wham.
+  - Third quarter: three touchdowns.
+- **Tennessee:** ran 20 times for 77 yards. Locker threw for 432 yards and three touchdowns; Britt caught 15 of 24 targets for 187.
+- **Defense:** Lowery intercepted Locker; Tennessee's final drive was stopped on downs at the Jacksonville 1 with 44 seconds left.
+- **Game management:** Stone entered no game-management decision.
+
+**Availability.** No injury for either team. Posluszny out (projected April 5, 2014); Ball out.
+
+**Statistics, standings and awards.** One full receipt and fifteen compact receipts were kept, 240 of 240 in total. Every graded audit row is WITHIN. Week 16 awards were drawn; no Jacksonville player was shortlisted.
+
+**Engine defect recorded (not fixed here).**
+- **Symptom:** a published fourth-down state can show more yards to go than yards to the goal line. Tennessee's final drive reads "4th & 7 at opp 1".
+- **Cause:** the kernel carries the real 2012 drive's down and distance with the simulated spot, and nothing caps the distance at goal-to-go.
+- **Extent:** three records across all receipts (Week 11 Minnesota at Seattle, Week 13 St. Louis at San Francisco, Week 16 here). The ledger coherence check does not test for it.
+- **Impact:** the drive's result, its end spot and every statistic come from their own records, so no score or result depends on the published down and distance.
+- **Fix:** capping the distance at goal-to-go and adding a coherence class needs a kernel change, so it is recorded and not made here.
+
+**Primary records:** `regular_season/week_16_tennessee_at_jacksonville/output.md` and `call_sheet.json`; `league_results/week_16.md`; `stats/game_receipts/week_16_*.json`; `awards/`; `standings.md`; `depth_chart.json`.
+**Next competitive event:** December 29 Week 17 at Indianapolis, 1 p.m. ET. **Not simulated.**
+
+**Commit closed - Canonical update - December 22, 2013 - Week 16 vs Tennessee closed - canonical through December 22, after Week 16**
