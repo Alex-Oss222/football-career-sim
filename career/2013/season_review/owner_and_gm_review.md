@@ -37,3 +37,68 @@
 **Unknown private weighting.** Khan's private expectations for 2014, any ownership concern not in the record, the 2014 football operations budget, and any appetite on either side for extending the contract are not established and are not supplied.
 
 **Controls.** The decision must be the one the club would reach for any first-year head coach with this record, contract and evidence (the label-swap test, Document 1 section 9.1). No real-world Jacksonville 2013 or 2014 event is used. Stone's delivery, confidence or phrasing is not an input to the decision.
+
+## Entry 2: The meeting (Wednesday January 15, 2014)
+
+**Present:** Shad Khan, David Caldwell, Alex Stone. Khan's office at the stadium, mid-morning, the day after the last player exit interviews.
+
+### Stone's review
+
+Stone opens with the standard he gave Caldwell in his interview a year earlier and measures the season against it rather than against the record. He takes the parts in order.
+
+- **Program.** The staff he hired finished the season intact. The teaching cycle and the Good, Better, Best standard ran through every phase from rookie minicamp to the Divisional game. He counts the 2-14 to 10-6 turn as evidence the program functions, not as proof it is finished.
+- **Quarterback.** The competition he promised was held, and Cousins won it. Cousins threw for 3,981 yards and 23 touchdowns; he also threw 18 interceptions and was sacked 38 times. Stone owns half of that: he calls the plays, and the protection communication and the ball-security work are his to fix with Bates and Yarno.
+- **Roster direction.** The draft class played: Johnson started at right tackle, Kelce, Poyer, Moore and Rambo held jobs, and Thielen came from the undrafted list to WR2.
+- **What did not work.** Stone puts the three blowouts on the table himself: 11-41 at Tennessee (six turnovers), 6-38 at Houston, 16-45 against Buffalo (four turnovers, 237 rushing yards allowed). Three games in which, by his own standard, preparation or communication failed badly enough that the team was not competitive. The season finished 356 to 346 on points, which he calls a 10-6 record with an 8-8 margin. The Week 17 loss at Indianapolis, by one point, cost the division. The Divisional game produced 13 points on offense, and he called them.
+
+**His 2014 direction.** Stone gives the headings, not the numbers: keep the lines together where he can, strengthen the corners, add depth on both lines and in the secondary, and make Cousins's ball security and protection the offense's first development target. He tells Caldwell the written recommendations on the futures contracts, the pending free agents, the tag and the three boards will reach him before the February 17 tag window. He asks for nothing: no extension, no raise, no change in authority, no staff money.
+
+### Key exchanges
+
+**CALDWELL:** The margin is what I keep coming back to. Ten wins on plus ten. Were the blowouts talent or preparation?
+
+**STONE:** Mostly the football, and that's preparation. Tennessee was six turnovers, four picks and two fumbles; I said after it that the game was lost with the ball, and I still think so. Buffalo was four more, and they ran for 237 on us. Houston we had six points, and I was calling it. Some of it is roster, and you'll get that in writing. The turnovers are coaching until I can show you otherwise.
+
+**CALDWELL:** And Cousins. You're telling me he's the guy?
+
+**STONE:** I'm telling you he won the job on evidence and that the interceptions are the thing to fix. I'm not telling you he's finished. You'll get my evaluation of the room in writing with the rest.
+
+**KHAN:** What do you need from me?
+
+**STONE:** Nothing new. The structure we agreed worked. Dave had the personnel calls and I had the football, and we disagreed a few times and settled it without it reaching you. I'd like to keep it that way.
+
+**KHAN:** London's Dallas next year. I want us ready for it the way we were for San Francisco.
+
+**STONE:** Same week plan as Wembley this year. It worked.
+
+### What the club raises
+
+- **Caldwell** asks for the written recommendations before February 17 and says the scoring margin and the quarterback's ball security are the two things he will judge 2014 by first. He will run the contract, tag and trade decisions himself, as agreed.
+- **Khan** asks about the staff. Stone says every coach is under contract through at least 2014 and that no club has asked permission to interview any of them. The record holds no such request. The league's other head-coaching changes after 2013 are not simulated; that gap is open (see Follow-ups).
+- Neither raises the contract. Nothing about an extension, a raise or a change of authority is offered or asked.
+
+## Entry 3: The club's decision
+
+**Resolved from Entry 1.**
+
+**Decision: Alex Stone is retained as head coach for 2014, on his existing contract.** Nothing about the contract, his authority or his staff changes.
+
+**Why, against the frozen criteria.**
+1. **GM partnership.** The Caldwell-Stone structure held through a full season. Authority disputes were settled between them, and none reached ownership.
+2. **Program leadership.** A full program ran through every phase; the club went from 2-14 to 10-6 and won a playoff game.
+3. **Quarterback.** The evaluation Stone promised was made, and it produced a starter. His interception and sack totals are the open item, and Caldwell names them as a first measure for 2014.
+4. **Staff.** Stone built the staff and it finished the season intact.
+5. **Roster development.** The first draft class, and an undrafted receiver, held roles.
+
+Stone's own standard asked for a functioning program and a candid quarterback evaluation, not a playoff appearance; the season met it. The concerns the club raises, the scoring margin, the lopsided losses and the quarterback's ball security, are measures for 2014, not grounds to end a fully guaranteed contract after one year.
+
+**Label-swap check.** Any club with this record, this evidence and a four-year fully guaranteed contract in its first year retains its head coach. The decision does not depend on Stone being the protagonist, or on how he presented.
+
+**Extension.** Not raised by either side. Whether the club would extend Stone, and on what terms, remains unknown, per Entry 1's unknown private weighting. Stone asked for nothing, per the user's instruction.
+
+## Follow-ups
+
+- **Caldwell's deadline:** Stone's written recommendations before the February 17 tag window. They were delivered as `career/2014/offseason/stone_to_caldwell_2014_offseason_decisions.md`, dated February 2, 2014.
+- **Caldwell's first 2014 measures:** the scoring margin, and the quarterback's ball security and protection.
+- **Khan's request:** prepare the London week for Dallas (November 9, 2014, Wembley) on the 2013 Wembley plan.
+- **Open gap:** the league's post-2013 head-coaching changes (other clubs firing and hiring coaches) are not simulated. Until they are, no club's interest in a Jacksonville assistant can arise. This is recorded for the user's decision; it is not resolved here.
