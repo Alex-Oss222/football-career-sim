@@ -47,3 +47,11 @@ The comparison has nevertheless changed around him: the dated December evidence 
 For Stone's early investment, the unresolved distinction remains tackle value versus interior value. If Martin's strongest usable job is guard, compare it directly with the established guard prospects. If tackle remains stronger, price the reserve and future starting benefit against Jacksonville's actual line.
 
 **Tier:** Not yet graded. **Decision trigger:** Independent edge protection and recovery evidence, followed by a separate interior assessment if proposed. The missing second-round pick remains relevant, but no new precise market price is claimed.
+
+### Week 16 addendum: evidence through December 22, 2013
+
+**Week 16 carry-forward:** No new admissible technical finding or exact market range was established for Martin in this pass. That is a research limit, not evidence that his play declined or that no other contemporary assessment exists. The tackle-first study and separate guard projection remain open.
+
+Bitonio's updated acquisition discussion makes the early tackle comparison more concrete. Compare the first usable job, recovery after contact and protection help required. Richardson and Jackson remain the interior alternatives if guard is the stronger projection. Do not price tackle flexibility until its independent evidence supports it.
+
+Jacksonville's lack of a second-round selection makes an early miss more costly to the plan, but cannot manufacture a higher grade for any lineman. **Tier:** Not yet graded. **Decision trigger:** A demonstrated initial position and enough independent protection to justify its acquisition cost. The next useful evidence is a complete protection sequence, not another positional label.

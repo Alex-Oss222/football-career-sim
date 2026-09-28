@@ -100,3 +100,17 @@ At the Week 15 branch checkpoint, Russell Allen is already starting beside Daryl
 **Best objection after the update:** Productive college involvement may still exceed the reliability of the projected professional assignment. Compare Jones for a strong-side/edge job and Van Noy for the cost of a different linebacker purchase.
 
 **Tier:** Not yet graded. **Next decision-changing evidence:** Full-game confirmation of keys, contact and coverage responsibility around the recorded positive plays, including ordinary and unsuccessful snaps.
+
+### Week 16 addendum: evidence through December 22, 2013
+
+**Source reconciliation:** Florida State's August 27 depth-chart release places Smith at weak-side linebacker and Christian Jones in the middle. The December 7 game book used in Week 15 lists Smith at MIKE for that specific game. Preserve both dated records instead of treating either as a season-wide assignment chart. The November 30 entry's ESPN countdown reference is not admissible preseason evidence; the new companion file identifies it as later material. [N02](../sources_week16_2013_12_22.md); [Week 15 W07](../sources_week15_2013_12_13.md).
+
+**Award correction in the companion file:** The full December 2 ACC media release places Smith under its second-team heading. The Week 15 scouting entry was correct; the new evidence file's first-team description required correction. This is a source-reading correction, not a downgrade in football ability. The selecting body remains explicit. [N03, N11](../sources_week16_2013_12_22.md).
+
+**First defensive job:** WILL remains the preferred research hypothesis for Jacksonville. The dated weak-side listing strengthens the position-history basis, while the game-specific middle role prevents an artificially narrow college résumé. Neither establishes mastery of Crennel's calls or a ready-made replacement for the communication lead.
+
+**Week 16 application:** Russell Allen and Daryl Smith remain the branch's base pairing. The useful future comparison is whether Telvin can preserve the weak-side fit when the back changes course and then handle the coverage responsibility attached to the same personnel group. Evaluate the first two steps, leverage through contact and the finish as distinct parts of the assignment. Recovery speed cannot erase a wrong initial key.
+
+The Duke game remains the newest directly checked game-specific evidence in this packet. No extra tackles, coverage success rate or practice response is invented for the intervening days. Lowry's teams pathway stays OPEN, with lane discipline and finishing evidence still needed separately.
+
+**Tier:** Not yet graded. **Decision trigger:** Correct fits and back-match responsibility across ordinary and unsuccessful plays, followed by an independently supported coverage-unit job. The initial WILL proposal is research analysis, not a completed coach read.

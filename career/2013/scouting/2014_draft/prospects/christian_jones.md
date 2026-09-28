@@ -49,3 +49,11 @@ A starting-position label does not describe every alignment or assignment. It do
 SAM with an earned pressure complement remains the working proposal. The full linebacker/end combination remains too broad to declare ready without the corresponding evidence. Lowry's coverage-team question also remains open.
 
 **Tier:** Not yet graded. **Decision trigger:** A repeatable strong-side fit and a complementary skill demonstrated within its assignment context. The new game record supports role identification, not a completed multi-position grade.
+
+### Week 16 addendum: evidence through December 22, 2013
+
+**Role reconciliation:** Florida State's August 27 release puts Jones in the middle and Telvin Smith on the weak side; the December 7 game book used in Week 15 lists Jones at strong-side linebacker. Those are dated snapshots of changing responsibilities, not proof that he mastered every linebacker job. [N02](../sources_week16_2013_12_22.md); [Week 15 W07](../sources_week15_2013_12_13.md).
+
+SAM with an earned pressure complement remains the Jacksonville research proposal. The next evidence must identify what happened after contact and which coverage responsibility accompanied a rush or replacement. Starting-position labels alone do not reveal the call.
+
+Compare Jones with Van Noy on strong-side work and with Smith only after separating that job from the proposed WILL role. **Tier:** Not yet graded. **Decision trigger:** A dependable base assignment plus one demonstrated complementary skill. A coverage-teams pathway remains a separate, open question.

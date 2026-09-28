@@ -49,3 +49,11 @@ It makes Stork a more substantial contemporary center comparator for Paradis, bu
 Reserve center remains the first professional role to investigate. Compare the complete sequence with Paradis and Swanson before deciding whether an earlier expenditure secures a materially more dependable initial job. No source here establishes the price difference.
 
 **Tier:** Not yet graded. **Decision trigger:** Correct late adjustments that coexist with reliable snaps and sufficient isolated protection. The new award strengthens the college résumé without displacing Brewster or Meester in the branch.
+
+### Week 16 addendum: evidence through December 22, 2013
+
+**New evidence:** The December 17 AP and December 18 FWAA lists both name Stork their first-team center. This extends the dated recognition recorded in Week 15. [N07–N08](../sources_week16_2013_12_22.md).
+
+Paradis's newly verified banquet release makes the center comparison better documented on both sides. The useful distinction remains the completeness of the center job, particularly whether a late identification adjustment can coexist with a reliable snap and the first block. An award cannot reveal the division of calls between center, quarterback and sideline.
+
+Compare Stork, Paradis and Swanson on that connected sequence before arguing for a different purchase price. Brewster and Meester retain their current branch roles. **Tier:** Not yet graded. **Decision trigger:** Stable communication and sufficient independent protection under changed fronts. No succession date or exact draft-window availability is established.

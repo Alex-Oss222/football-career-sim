@@ -51,3 +51,11 @@ The outside-corner study remains appropriate, but the honor does not establish t
 Butler's newly dated season statistics improve the comparison's evidence base. Their respective recognition and production should lead to examination of complete coverage situations, rather than a conference-name shortcut. Fuller's additional national recognition similarly belongs in the comparison without resolving his medical status.
 
 **Tier:** Not yet graded. **Decision trigger:** Dependable outside technique, controlled tackling and an independently evidenced teams pathway. The new recognition does not make Cockrell a verified seventh-round fallback or close a nickel projection.
+
+### Week 16 addendum: evidence through December 22, 2013
+
+**Week 16 carry-forward:** The previous dated corner recognition remains the admitted individual update. No new target-efficiency estimate or exact acquisition price was established.
+
+Butler's newly checked regional recognition is useful background for the comparison, while the technical questions remain concrete: initial leverage, response to the route break, recovery, tackling and a distinct teams contribution. Comparing conference reputations alone would leave those jobs unanswered.
+
+Jacksonville's current outside and nickel roles do not create an automatic late-round opening. A developmental corner needs a defensible first assignment and a path to dressing. **Tier:** Not yet graded. **Decision trigger:** Repeatable outside technique plus a separately evidenced teams job. Fuller stays in the coverage comparison with his medical question recorded independently; no seventh-round fallback is guaranteed.

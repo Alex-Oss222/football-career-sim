@@ -49,3 +49,11 @@ An invitation permits planning for a possible later evaluation opportunity. It d
 The rotational-interior study remains the same. The football questions are how he handles directed runs and combinations, whether his rush has a repeatable counter and whether the lane remains controlled when the quarterback moves.
 
 **Tier:** Not yet graded. **Decision trigger:** Current, permitted role evidence when it becomes available. Harris's unresolved status does not confer a grade advantage on Reid, and the invitation does not prove availability in Jacksonville's sixth-round window.
+
+### Week 16 addendum: evidence through December 22, 2013
+
+**Week 16 carry-forward:** The earlier invitation record remains separate from participation. No all-star practice, measurement or later performance is added, and this pass does not establish a new individual technical finding.
+
+Reid remains the developmental interior comparison while Harris's status is unresolved. More available background does not prove a higher ability grade. The football study still needs the response to directed runs and combinations, a usable rush counter, and lane control after the quarterback moves.
+
+Keep the role narrow enough to identify what a reserve would actually do on game day. A general interior label cannot establish nose, three-technique and end responsibilities at once. **Tier:** Not yet graded. **Decision trigger:** Current, permitted evidence for one defined job. Neither Harris's hold nor a future evaluation opportunity guarantees Reid a place in Jacksonville's sixth-round window.

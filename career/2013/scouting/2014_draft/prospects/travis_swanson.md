@@ -49,3 +49,11 @@ The recognition adds a contemporary season assessment alongside the conflicting 
 Swanson remains a center-first comparison with Paradis and Stork. The role needs a complete snap/point/block sequence and an anchor that does not force the quarterback or adjacent guard to make routine repairs.
 
 **Tier:** Not yet graded. **Decision trigger:** Independent contact control and communication that remain stable under a changed front. A stronger season résumé warrants continued evaluation, without guaranteeing readiness or late-round availability.
+
+### Week 16 addendum: evidence through December 22, 2013
+
+**Week 16 carry-forward:** The dated AP All-SEC recognition from the previous addendum remains admitted. This pass does not establish a new individual technique finding or revised acquisition range for Swanson.
+
+Stork has additional national recognition and Paradis's team-award record is now directly verified. Those changes improve the comparison's documentation without settling Swanson's isolated-anchor question. The next review should keep an assisted combination distinct from a one-on-one block after the snap.
+
+Center remains the first job to investigate. Require point, snap and contact to survive a changed front as one sequence, with any responsibility inferred from visible behavior explicitly marked uncertain. **Tier:** Not yet graded. **Decision trigger:** Independent contact control that does not force recurring repairs by Cousins or an adjacent guard. Jacksonville's record changes the acquisition setting, not the evidence of Swanson's technique.

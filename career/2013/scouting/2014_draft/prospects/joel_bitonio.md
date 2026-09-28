@@ -94,3 +94,17 @@ For the next position comparison, use the same protection situations for Bitonio
 **Best objection after the update:** The first-round focus can still outrun the demonstrated professional role. A dated award removes an information gap, not that objection. No new reliable market range was established in this pass.
 
 **Tier:** Not yet graded. **Next decision-changing evidence:** A tackle file showing controlled responses after the defender changes his rush, paired with a genuinely separate guard file. No completed film session or instruction response is recorded by this addendum.
+
+### Week 16 addendum: evidence through December 22, 2013
+
+**Evidence change:** Phil Savage relayed top-three-round scout feedback for Bitonio on December 12. [N01](../sources_week16_2013_12_22.md). This is an earlier item newly verified in this pass, not a new Week 16 announcement or Jacksonville's board position.
+
+**Acquisition analysis:** Revisit the price discussion in the earlier entries with that attributed opinion available. A broad market comment cannot establish the precise selection at which a player will disappear. Jacksonville owns no second-round pick, so Caldwell needs separate answers to two questions: whether the demonstrated job warrants the first selection, and whether the club can tolerate losing the player before its next selection. Neither question is answered by declaring the player a guaranteed third-round fallback. Trading requires an actual proposal and a separate decision.
+
+**First job and coaching cost:** Tackle first remains the research recommendation. Compare the recovery after an imperfect opening set with Martin, then compare a separately developed guard projection with Jackson and Richardson. The record does not yet show whether the interior move reduces the protection burden or merely substitutes a different set of problems. Cross-training cannot be credited as completed versatility.
+
+The new companion evidence file flags conflicting career-start totals. Retain the discrepancy rather than choosing the larger number or importing a later biography to settle it. Exact career volume is less important to the first-role decision than identifying the position, opponent and protection context of the relevant snaps.
+
+**Week 16 decision:** Keep the early offensive-line comparison active. Jacksonville's win and improved record change its acquisition setting, not Bitonio's technique. The report supports a more current price conversation, while the formal tackle-versus-guard coaching answer remains OPEN.
+
+**Tier:** Not yet graded. **Next evidence that changes the view:** Independent edge protection after the initial rush changes direction, paired with interior evidence if guard is part of the purchase. No January practice observation is admitted.

@@ -98,3 +98,17 @@ The communication burden cannot be answered from an award list. Tice and Yarno w
 **Best objection after the update:** The acquisition plan remains exposed to two independent uncertainties: whether Turner enters and whether his protection supports the complete offense. A stronger college résumé does not close either.
 
 **Tier:** Not yet graded. **Next decision-changing evidence:** A dated eligibility event for acquisition, and a connected protection sequence showing identification, contact and recovery for the football evaluation. If he remains outside the pool, the guard alternatives remain active research options without an automatic grade increase.
+
+### Week 16 addendum: evidence through December 22, 2013
+
+**Evidence and status:** No dated declaration by December 22 was established in this pass. The existing sophomore identity, right-guard history and AP All-SEC recognition remain the admitted record. The new [companion evidence file](../../../../../library/2014_prospect_evidence/trai_turner.md) distinguishes earlier evidence from later material; its gated section is not part of this evaluation. Turner remains outside the cleared selection pool.
+
+**What Week 16 changes:** Jackson and Richardson now have additional dated national recognition, giving the guard comparison a more current college-performance record. Those awards do not settle protection technique, and they do not make Turner inferior by default. The practical issue is that the alternatives can be researched without assuming Turner will enter. [N07–N09](../sources_week16_2013_12_22.md).
+
+**Focused football question:** Keep the evaluation at right guard. On Power and Counter, separate getting to the landmark from arriving square enough to control a moving target. In protection, separate a correct point from maintaining pocket depth after contact. The useful unit of evidence is the whole assignment, including a defender's second move and the exchange with the adjacent lineman. A successful run through the hole does not prove which blocker supplied the decisive work.
+
+**Teaching proposal:** Stance, first contact and recovery should be connected before increasing the number of fronts. Add ACE work and the guard-tackle exchange in the same terminology used for the rest of the line. Communication cost remains OPEN because no correction-and-retest sequence has been observed. No learning claim follows from college tenure alone.
+
+**Week 16 decision:** Maintain a conditional guard study and an independent alternative list. Do not reserve Jacksonville's third-round choice for a player whose pool status remains unresolved. There is no instruction to select, trade or replace Rackley.
+
+**Tier:** Not yet graded. **Decision trigger:** Dated pool clearance, then evidence that the protection and movement jobs coexist without excessive adjacent help.

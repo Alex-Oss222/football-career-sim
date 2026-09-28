@@ -47,3 +47,11 @@ The evidence strengthens the college guard résumé already under review. It doe
 Jackson is now a more substantial contemporary benchmark for the cost of waiting for Turner, whose eligibility remains conditional. The comparison should ask whether a better established first position reduces conversion work enough to justify a different acquisition price. It cannot assume that either player is present in Jacksonville's third-round window.
 
 **Tier:** Not yet graded. **Decision trigger:** Independent interior protection and movement that remain functional when contact or the defensive picture changes. No starting role, exact round movement or final board order is assigned.
+
+### Week 16 addendum: evidence through December 22, 2013
+
+**New evidence:** Jackson is a second-team selection on both the December 17 AP and December 18 FWAA national lists. The lists are checked under their own team headings, with no inferred ranking across organizations. [N07–N08](../sources_week16_2013_12_22.md).
+
+His guard-first comparison with Turner now has additional dated season recognition. The practical distinction remains a documented guard background versus a conditional acquisition route, not an award-driven talent verdict. Turner still needs pool clearance; Jackson still needs evidence that his movement and protection fit the intended offense.
+
+On the next technical review, separate an initial displacement from control through the end of the block. Check the reset when a defender changes direction after contact. **Tier:** Not yet graded. **Decision trigger:** Reliable independent interior protection and functional movement without routine adjacent rescue. No third-round availability or starting role is promised.

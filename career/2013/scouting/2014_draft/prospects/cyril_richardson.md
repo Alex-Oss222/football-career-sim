@@ -47,3 +47,11 @@ The new recognition belongs in the early guard comparison. It does not establish
 Guard remains the first-role study. Compare him with Jackson on isolated protection and with Turner on the intended movement assignments. Compare him with Bitonio and Martin only after accounting for their unresolved tackle/interior split. That keeps the same resource question attached to each alternative.
 
 **Tier:** Not yet graded. **Decision trigger:** A broad guard role supported by protection and run evidence, with no excessive help requirement. The additional honor does not guarantee a first-round valuation, a fall into round three or availability at any exact pick.
+
+### Week 16 addendum: evidence through December 22, 2013
+
+**New evidence:** The December 17 AP list places Richardson on its first team. The December 18 FWAA list does likewise, and Baylor's same-day release confirms that selection and an AFCA first-team honor. These are dated college selections from identified bodies. [N07–N09](../sources_week16_2013_12_22.md).
+
+The guard comparison now has broader contemporary recognition behind it. The next question remains whether the position can function across the required run and protection assignments. Keep independent anchor, lateral recovery and arrival on a moving target separate. Team offensive production cannot establish an individual win on any of those tasks.
+
+Compare the guard job with Jackson directly, and with Bitonio or Martin only after accounting for conversion work. **Tier:** Not yet graded. **Decision trigger:** A sufficiently complete guard role to justify the proposed expenditure. More honors do not settle where he will be selected or remove the need to examine ordinary losing snaps.

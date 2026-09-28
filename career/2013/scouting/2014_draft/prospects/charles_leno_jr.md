@@ -96,3 +96,15 @@ The next comparison with Hurst should emphasize the response to a lost first exc
 **Best objection after the update:** The fifth-round focus still risks buying a player whose future promise exceeds his immediate emergency utility. The December recognition does not establish that he will be available at that price.
 
 **Tier:** Not yet graded. **Next decision-changing evidence:** Complete protection work on each side and a defined emergency call menu that does not depend on constant additional help. No reserve activation or coach conclusion is recorded.
+
+### Week 16 addendum: evidence through December 22, 2013
+
+**Evidence boundary:** The December 10 left-tackle experience and conference-selection record remains the latest directly verified individual update used here. Boise State's December 8 announcement schedules Oregon State for December 24. That provides a future viewing opportunity; the game has not occurred at this report's December 22 cutoff. No bowl start, result, protection outcome or later all-star participation is added. [N05](../sources_week16_2013_12_22.md).
+
+**Reserve question, made specific:** A rookie reserve must enter with a workable protection package. The left-side foundation is better documented than a current right-side emergency job. Before calling him a swing tackle, require evidence that the changed stance and post foot do not delay the set and that he can exchange an inside movement with the guard. If a starter must change positions to accommodate him, that is part of the roster cost.
+
+**Next viewing plan:** For the scheduled bowl, record the opponent and rush type on each selected protection snap, whether the tackle was isolated or helped, the first contact and the recovery. Include routine successful snaps and losses. Keep pressures distinct from sacks, and distinguish a late quarterback hold from an immediate edge loss. These are proposed observation fields, not a completed chart or an assumed outcome against Oregon State.
+
+**Comparison and teaching:** Hurst remains the direct reserve comparison; Bitonio and Martin test the value of paying earlier for a broader role. Start Leno on one side and add the second only after its separate protection evidence supports it. None of the new evidence establishes an exact fifth-round market price.
+
+**Tier:** Not yet graded. **Week 16 decision:** Continue the tackle development study, with the ability to dress still OPEN. **Decision trigger:** A defined emergency role that survives changed fronts and does not require constant protection help.

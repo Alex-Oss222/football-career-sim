@@ -7,7 +7,7 @@
 
 ## Source-access limitation (all files)
 
-WebFetch was blocked by the network policy in both passes. Every item rests on **search-result text** attributed to the cited URL, not on a full read of the page. "Confirmed" means at least two independent search results agreed; single-source items say so.
+WebFetch was blocked by the network policy in the original two passes, which used **search-result text**. "Confirmed" in those passes means at least two independent search results agreed; single-source items say so. A subsequent Week 16 full-page check corrected Smith's media All-ACC team and Butler's regional-release date, and verified Paradis's banquet award and pre-bowl starts. Those three files identify the checked items and retain the original limitations for other evidence. See the [Week 16 verification register](../../career/2013/scouting/2014_draft/sources_week16_2013_12_22.md).
 
 ## Files
 
