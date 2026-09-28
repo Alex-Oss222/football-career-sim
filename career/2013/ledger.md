@@ -1191,3 +1191,33 @@ This is an engine defect. It is fixed going forward, and no game is rerun. Until
 **Next competitive event:** November 17 Week 11 vs Arizona, 1 p.m. ET. **Not simulated.**
 
 **Commit closed - Canonical update - November 10, 2013 - Week 10 at Tennessee closed - canonical through November 10, after Week 10**
+
+## Entry 51: Kernel 2013.8 adopted (2013 overtime rules)
+
+**Effective canonical state:** November 10, 2013, after Week 10
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - November 10, 2013 - Kernel 2013.8 adopted (2013 overtime rules)`
+**Preceding global package checkpoint:** `Canonical update - November 10, 2013 - Week 10 at Tennessee closed`
+
+**Decision.** At the user's instruction, which was to fix the defect and follow the football rules of the era, kernel 2013.8 replaces 2013.7 for every slate from Week 11.
+
+**Rules source.** `library/2013_nfl_playing_rules_for_simulation.md` sources the 2013 rules the engine uses, each checked by a separate verification pass, and records the engine audit against them.
+
+**Fixed in 2013.8:**
+- **Regular-season overtime.** One 15-minute period on a real clock, with possessions alternating. The period follows the 2013 modified sudden-death rule: an opening-possession touchdown or a safety ends it; an opening field goal gives the other club a possession; after that it is sudden death; and the game is a tie if the period expires level.
+- **Postseason overtime.** Periods are continuous, a possession carries across a period break, and the game never ends tied.
+- **Replay.** The booth has review authority throughout overtime.
+- **Game-day actives.** The 46-active limit is enforced in the production packet.
+
+**Unchanged.** Regulation play is identical to 2013.7, and no calibrated centre, pool, coefficient or tolerance changed. A 250-game sample shows every aggregate row WITHIN, zero coherence violations and the same three known detections. Its 21 overtime games all followed the rule.
+
+**Listed, not yet modelled:**
+- two-point tries;
+- onside kicks;
+- defensive and return touchdowns;
+- snap-by-snap timeouts;
+- the neutral-site home term (Entry 45).
+
+**Closed results stand.** The Week 10 Washington at Minnesota overtime result stands as closed 2013.7 canon and is not rerun. That choice does not depend on which club won. Weeks 9-10 remain the 2013.7 audit cohort.
+
+**Commit closed - Canonical update - November 10, 2013 - Kernel 2013.8 adopted (2013 overtime rules) - canonical through November 10, after Week 10**
