@@ -212,7 +212,16 @@
     "library/data/player_birth_date_corrections.json",
     "career/2013/postseason/week_19_jacksonville_at_tennessee/call_sheet.json",
     "career/2013/league_results/week_19.md",
-    "career/2013/league_results/week_20.md"
+    "career/2013/league_results/week_20.md",
+    "career/2013/league_results/week_21.md",
+    "library/2014_league_calendar_and_financial_rules.md",
+    "runtime/draft_order.py",
+    "scripts/render_draft_order.py",
+    "career/2014/README.md",
+    "career/2014/calendar.md",
+    "career/2014/draft/draft_order.md",
+    "career/2014/schedule/opponents.md",
+    "career/2014/offseason/contract_status_register.md"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",

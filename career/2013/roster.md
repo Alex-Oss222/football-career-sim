@@ -1,12 +1,12 @@
 # Jacksonville Jaguars roster
 
-**As of:** January 19, 2014; season over (eliminated in the AFC Divisional round).
+**As of:** February 2, 2014, after Super Bowl XLVIII; 2013 season complete (Jacksonville eliminated in the AFC Divisional round).
 **Canonical controlled-player count:** **53**.
 **Active roster:** **53**; Justin Blackmon was reinstated from Reserve/Suspended on October 7 and activated to the open spot (ledger Entry 42).
 **Practice squad:** **8**, separate from the active roster.
 **Record:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-1 (AFC Wild Card: Jacksonville 38, Kansas City 14; AFC Divisional: Tennessee 20, Jacksonville 13).
 
-<!-- player-ages-as-of: 2014-01-19 -->
+<!-- player-ages-as-of: 2014-02-02 -->
 
 Birth dates are sourced in the [identity registry](../../library/data/player_birth_dates.json). **Age** is completed years at the master date in Document 5; [league ages](player_ages.md) update through the same renderer.
 
@@ -93,7 +93,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Ryan Davis | DE | 1989-02-24 | 24 | Active 53 | No communicated restriction | Edge 4 |
 | Lavar Edwards | DE | 1990-04-29 | 23 | Active 53 | No communicated restriction | Edge/front depth and teams (dressed Weeks 12 and 14-17; inactive Week 13) |
 | Jeremy Mincey | DE | 1983-12-14 | 30 | Active 53 | No communicated restriction | Edge 2 |
-| C.J. Wilson | DE | 1987-03-30 | 26 | Active 53 | Out, trunk (Week 2); projected return January 30, 2014 | — |
+| C.J. Wilson | DE | 1987-03-30 | 26 | Active 53 | No communicated restriction | — |
 
 ### Defensive tackles (5)
 
@@ -119,7 +119,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
-| Alan Ball | CB | 1985-03-29 | 28 | Active 53 | Out, trunk (Week 10); projected return January 22, 2014 | Starting CB (unavailable) |
+| Alan Ball | CB | 1985-03-29 | 28 | Active 53 | No communicated restriction | Starting CB before his Week 10 injury |
 | A.J. Bouye | CB | 1991-08-16 | 22 | Active 53 | No communicated restriction (Week 11 injury cleared November 26) | First outside reserve CB (from Week 13); coverage units |
 | Brent Grimes | CB | 1983-07-19 | 30 | Active 53 | No communicated restriction | Starting CB |
 | Mike Harris | CB | 1989-01-05 | 25 | Active 53 | No communicated restriction | Starting CB (from Week 11) |
@@ -130,7 +130,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
-| Dwight Lowery | S | 1986-01-23 | 27 | Active 53 | No communicated restriction | Starting S |
+| Dwight Lowery | S | 1986-01-23 | 28 | Active 53 | No communicated restriction | Starting S |
 | Chris Prosinski | S | 1987-04-28 | 26 | Active 53 | No communicated restriction | Coverage units |
 | Bacarri Rambo | S | 1990-06-27 | 23 | Active 53 | No communicated restriction | Starting S; coverage units |
 | Brynden Trawick | S | 1989-10-23 | 24 | Active 53 | No communicated restriction | Coverage units |
@@ -153,7 +153,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Jerrell Jackson | WR | 1990-02-06 | 23 | Practice squad |
 | Jerome Long | DT | 1990-04-09 | 23 | Practice squad |
 | D'Anthony Smith | DT | 1988-06-09 | 25 | Practice squad |
-| Brandon King | DB | 1987-01-28 | 26 | Practice squad |
+| Brandon King | DB | 1987-01-28 | 27 | Practice squad |
 | Antwon Blake | S | 1990-08-09 | 23 | Practice squad |
 
 ## 5. August 31 departures

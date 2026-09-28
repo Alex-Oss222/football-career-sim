@@ -1794,3 +1794,150 @@ They are background games.
 
 **Commit closed - Canonical update - January 19, 2014 - Kernel 2013.11 adopted (neutral site) - canonical through January 19, 2014**
 
+
+## Entry 67: Super Bowl XLVIII closed; 2013 season archived
+
+**Effective canonical state:** February 2, 2014, after Super Bowl XLVIII
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - February 2, 2014 - Super Bowl XLVIII closed; 2013 season archived`
+**Preceding global package checkpoint:** `Canonical update - January 19, 2014 - Kernel 2013.11 adopted (neutral site)`
+
+**Result.** Buffalo 31, Minnesota 20, at MetLife Stadium on Sun. February 2, 2014 (neutral site; Buffalo the designated home team). The Buffalo Bills, the AFC's sixth seed, are the branch's 2013 champions.
+
+**Batch.**
+- **How it closed:** one game, closed once under kernel 2013.11 as a `postseason` game at venue `neutral`, from the package frozen by `build_week_inputs.py 21` (sha256 `737fd0b4...`) after the one-game exclusivity gate passed.
+- **Home term:** neither team received it (Entry 66).
+- **Receipt:** compact_stats in `career/2013/stats/postseason_receipts/`.
+- **Roundup:** `career/2013/league_results/week_21.md`.
+
+**Engine limitation (the Entry 60 limit; recorded, not fixed).** Late in the first half, an interception return put Buffalo at the Minnesota 1 with 51 seconds left. The engine drew a real 2012 end-of-half drive from the time cell, and it ended in two kneel-downs. Timeouts and end-of-half clock management are not simulated snap by snap, so the engine cannot tell a kneel-out from a scoring chance. The result stands as closed and nothing is rerun. The user has directed the timeout and fourth-down fixes before any 2014 game.
+
+**Availability reconciled at the master date.**
+- **Cleared at their projected returns:** Alan Ball (January 22, 2014) and C.J. Wilson (January 30, 2014).
+- **Still out:** Paul Posluszny, on an independent medical hold, projected return April 5, 2014.
+- **Limited:** Rackley (minor).
+
+**Not run in the branch (recorded gaps, not simulated):**
+- Pro Bowl selections (December 27, 2013) and AP All-Pro teams (January 3, 2014) were never drawn. They are behind this checkpoint and stay chronology gaps unless the user authorizes a retroactive draw.
+- The Pro Bowl (January 26, 2014), the AP season awards and the Super Bowl MVP (NFL Honors, February 1, 2014) are not drawn. The branch has no season-award voting method; `library/2013_nfl_awards_structure.md` records only the structure.
+- Exit interviews are held until the user asks.
+
+### Phase archive | Jacksonville Jaguars | 2013 regular season | Closed December 29, 2013
+
+This archive was appended late. It was written at this February 2, 2014 checkpoint from the closed records, with no event added or changed. No preseason archive was written at the preseason boundary; the preseason record is Entries 22-29 and Document 5 section 5.
+
+- **Global package checkpoint:** `Canonical update - December 29, 2013 - Week 17 at Indianapolis closed`.
+- **Governing documents:**
+  - Documents 1-3: `358ccf4f`, `ab790f6e`, `38e0ce21` (Document 5 manifest).
+  - Document 4: `JAX-2013-DEC29-WEEK17-REGISTER-29`.
+  - Document 5: `JAX-2013-DEC29-WEEK17-STATE-36`.
+- **Date range:** September 8 through December 29, 2013 (Week 9 bye November 3).
+- **Record and standing:** 10-6 (356 points for, 346 against). Second in the AFC South: Tennessee also went 10-6 and won the division on division record, 4-2 to 3-3. Jacksonville was the AFC's fifth seed.
+- **Schedule and results:** `career/2013/regular_season/README.md` and Entries 35-60.
+- **Roster at close:** 53 active and 8 on the practice squad (Document 4 `REGISTER-29`).
+- **Significant transactions:** Blackmon on Reserve/Suspended for Weeks 2-5 (Entry 36), then reinstated and activated October 7 (Entry 42). No trade and no reserve-list move during the season.
+- **Significant injuries:**
+  - Posluszny: Week 3, returned Week 5; head/neck independent medical hold from Week 13.
+  - Meester and C.J. Wilson: Week 2.
+  - Thielen: Week 5.
+  - Ball: Week 10.
+  - Bouye: Week 11.
+  - Kelce: Week 13.
+  - Pasztor and Mosley projections recovered (Entry 46).
+- **Staff and authority:** unchanged. Stone called the offense, Tice coordinated it, Crennel called the defense and Lowry the special teams (`career/2013/coaching_staff.md`).
+- **Verified statistics (from receipts):**
+  - Cousins 357 of 564 for 3,981 yards, 23 touchdowns, 18 interceptions, 38 sacks.
+  - Jones-Drew 1,334 rushing yards; Shorts 1,158 receiving yards.
+  - Marks 8 sacks; Lowery 119 tackles; Scobee 36 of 41 field goals.
+  - Team: 25 giveaways and 15 takeaways; 23 sacks for.
+- **Material head-coach decisions:** Stone's weekly plans and frozen call sheets, the weekly inactive lists and the Blackmon activation. Every game ran in autonomous game-management mode, with no in-game decision entered.
+- **Corrections and superseded records:**
+  - Week 1 void and replay (Entries 30-35).
+  - Week 14 generation void (Entry 57).
+  - Kernels 2013.6-2013.10 (Entries 39, 48, 51, 54, 56).
+  - Injury projection recovery (Entry 46).
+- **Commitments carrying forward:**
+  - Posluszny's hold, projected April 5, 2014.
+  - Coaching contracts: Crennel and Tice through 2015, Lowry through 2014.
+  - The engine limits listed in Entries 60, 64 and 67.
+- **Information still uncertain:** exact cap working room (ranges in Document 4); the unresolved accounting named there.
+- **Next phase and first event:** postseason, AFC Wild Card at Kansas City, January 4, 2014.
+
+### Phase archive | Jacksonville Jaguars | 2013 postseason | Closed February 2, 2014
+
+- **Global package checkpoint:** `Canonical update - February 2, 2014 - Super Bowl XLVIII closed; 2013 season archived`.
+- **Governing documents:** Documents 1-3 unchanged. Document 4: `JAX-2014-FEB02-SEASON-CLOSE-REGISTER-34`. Document 5: `JAX-2014-FEB02-SEASON-CLOSE-STATE-43`.
+- **Date range:** December 30, 2013 through February 2, 2014.
+- **Record and status:** 1-1.
+  - AFC Wild Card: won 38-14 at Kansas City (Entry 62).
+  - AFC Divisional: lost 20-13 at Tennessee (Entry 64). Jacksonville was eliminated.
+  - League champion: Buffalo (AFC 6).
+  - Stone's NFL postseason head-coaching record is 2-2.
+- **Format:** built in Entry 61. Kernel 2013.10 through the conference round; 2013.11 for the Super Bowl (Entry 66).
+- **Schedule and results:** `career/2013/postseason/README.md`; roundups in `career/2013/league_results/week_18.md` through `week_21.md`.
+- **Roster at close:** 53 active and 8 on the practice squad (Document 4 `REGISTER-34`).
+- **Transactions:** none.
+- **Injuries:** Owens and Thielen (Wild Card, minor) and Ryan Davis (Divisional, minor), all cleared at their projections.
+- **Staff and authority:** unchanged.
+- **Verified statistics (two games):** 51 points for and 34 against; 480 passing and 251 rushing yards; two giveaways and two takeaways.
+- **Material head-coach decisions:**
+  - Stone's Wild Card and Divisional plans (frozen call sheets); the established seven inactives.
+  - Position-coach draft work frozen for the postseason by Stone.
+  - No in-game decision entered.
+- **Corrections during the phase:** none. The engine limits are listed above.
+- **Commitments carrying forward:**
+  - Kernel fixes for timeouts, the two-minute warning, kneel-downs and the fourth-down display before any 2014 game (user instruction).
+  - Exit interviews held for the user.
+  - The 2014 setup (Entry 68).
+- **Information still uncertain:** the award gaps listed above.
+- **Next phase and first event:** the 2014 offseason. The next league events are the franchise and transition tag window (February 17 to March 3, 2014), the Combine (February 19-25) and the opening of the 2014 league year on March 11, 2014 (`library/2014_league_calendar_and_financial_rules.md`, gated as recorded there).
+
+**Commit closed - Canonical update - February 2, 2014 - Super Bowl XLVIII closed; 2013 season archived - canonical through February 2, 2014, after Super Bowl XLVIII**
+
+## Entry 68: 2014 season set up (no clock advance)
+
+**Effective canonical state:** February 2, 2014, after Super Bowl XLVIII (the master date does not move)
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - February 2, 2014 - 2014 season set up`
+**Preceding global package checkpoint:** `Canonical update - February 2, 2014 - Super Bowl XLVIII closed; 2013 season archived`
+
+**Decision.** The user asked to "set up for 2014 season", and said not to run exit interviews yet. This entry creates the 2014 records. It advances no clock, changes no roster, contract or staff fact, and runs no phase.
+
+**Created.**
+- **`career/2014/README.md`:** the season index.
+- **`career/2014/calendar.md`:** Jacksonville's 2014 calendar with each league date's public gate, from the new sourced library file `library/2014_league_calendar_and_financial_rules.md` (two-pass; WebFetch blocked, search-result text only; no real 2014 transaction or outcome; two outcome-bearing URL slugs withheld).
+- **`career/2014/draft/draft_order.md`:** the 2014 draft order, generated from the closed receipts by `runtime/draft_order.py` and `scripts/render_draft_order.py`. `validate_repository.py` checks it is current; tests are in `tests/test_draft_order.py`.
+- **`career/2014/schedule/opponents.md`:** Jacksonville's 2014 opponents, derived from the 2014 formula and the branch standings.
+- **`career/2014/offseason/contract_status_register.md`:** each controlled player's status when the league year opens (two-pass research; branch contracts override real history; no real 2014 decision recorded).
+
+**2014 draft order (branch).**
+- **Jacksonville:** 26th in each round, as a Divisional loser (10-6, strength of schedule .477). Its second-round selection belongs to Washington (the Cousins trade).
+- **Top and bottom:** San Francisco (2-13-1) holds the first selection; Buffalo, the champion, the 32nd.
+- **Ties that survived strength of schedule:**
+  - Oakland and Miami (both 7-9, .533): Miami wins the conference tiebreaker on conference record, so Oakland picks 11th and Miami 12th.
+  - Green Bay and Indianapolis (both 8-8, .479, different conferences): a coin flip the league holds before the draft. It is pending and not invented.
+- **Still open:** compensatory selections (gated to March 24, 2014) come from the branch's own 2014 free-agency cycle. Other clubs' traded 2014 selections are not reconciled.
+
+**2014 opponents.**
+- **Home:** Tennessee, Indianapolis, Houston, Cleveland, Pittsburgh, the Giants, Buffalo (AFC East second place), and Dallas (at Wembley Stadium, November 9).
+- **Away:** Tennessee, Indianapolis, Houston, Baltimore, Cincinnati, Philadelphia, Washington, and San Diego (AFC West second place).
+- **Dates:** gated to the April 23, 2014 schedule release.
+
+**Contract status at the March 11, 2014 league-year turn (research register; Caldwell decides tenders and re-signings).**
+
+| Status | Count | Players |
+|---|--:|---|
+| Under contract | 35 | |
+| Unrestricted free agents | 8 | Henne, Jones-Drew, Monroe, Meester, Marks, C.J. Wilson, Ball, Brent Grimes |
+| Restricted free agents | 3 | Bradfield, Reisner, Rutland |
+| Exclusive-rights free agents | 3 | Clemons, Mike Brown, Pasztor |
+| Practice-squad contracts expiring | 8 | |
+| Unresolved | 4 | John Parker Wilson, Jonathan Grimes, Owens, Cain (contract lengths not recovered) |
+
+**Held for the user.**
+- End-of-season exit interviews.
+- The 2014 phase plans.
+- The 2014 free-agency, draft and trade boards (AGENTS.md "Run the [year] offseason cycle").
+- The engine fixes for timeouts, the two-minute warning, kneel-downs and the fourth-down display, before any 2014 game.
+
+**Commit closed - Canonical update - February 2, 2014 - 2014 season set up - canonical through February 2, 2014, after Super Bowl XLVIII**
