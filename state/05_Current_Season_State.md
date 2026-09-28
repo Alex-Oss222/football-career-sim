@@ -1,11 +1,11 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2014-FEB02-LEAGUE-RAILS-STATE-54`
-**Supersedes:** `JAX-2014-FEB02-STAFF-RECONCILIATION-STATE-53`
+**Version:** `JAX-2014-FEB02-RETIREMENTS-STATE-55`
+**Supersedes:** `JAX-2014-FEB02-LEAGUE-RAILS-STATE-54`
 **Snapshot effective:** February 2, 2014, after Super Bowl XLVIII (Buffalo 31, Minnesota 20); the 2013 season is complete and archived.
-**Last reconciled:** September 28, 2026; season-ledger Entry 78.
-**Global package checkpoint:** `Canonical update - February 2, 2014 - Historical league rails adopted (2014 onward)`
+**Last reconciled:** September 28, 2026; season-ledger Entry 79.
+**Global package checkpoint:** `Canonical update - February 2, 2014 - Meester retired; Allen retirement scheduled (league rails)`
 
 ## Effective source-version manifest
 
@@ -15,7 +15,7 @@
 | Document 2 | `f25e462b4e0478e6b641957e39560d7dcb3502e0` | Active foundation source |
 | Document 3 | `c1a3e60a4e9f3dbfd98c47b4ca85a4b551f1c440` | Active foundation source |
 | Document 4 | `JAX-2014-FEB02-STAFF-RECONCILIATION-REGISTER-36`; closed by Entry 77 | Controlled 53, all active, practice squad, roles and availability at the season's close; special teams coordinator vacant |
-| Document 6 | 2013 ledger through Entry 78 | 2013 season complete; phase archives in Entry 67; 2014 setup in Entry 68; kernels 2014.1 and 2014.2 in Entries 69-70; season honours in Entry 71; kernel 2014.3 and the engine assessment in Entry 72; Super Bowl MVP and Pro Bowl in Entry 73; season review with Khan and Caldwell in Entry 74; January 2014 coaching carousel in Entry 75; exit interviews in Entry 76; staff authority and planning reconciliation in Entry 77; historical league rails adopted in Entry 78 |
+| Document 6 | 2013 ledger through Entry 79 | 2013 season complete; phase archives in Entry 67; 2014 setup in Entry 68; kernels 2014.1 and 2014.2 in Entries 69-70; season honours in Entry 71; kernel 2014.3 and the engine assessment in Entry 72; Super Bowl MVP and Pro Bowl in Entry 73; season review with Khan and Caldwell in Entry 74; January 2014 coaching carousel in Entry 75; exit interviews in Entry 76; staff authority and planning reconciliation in Entry 77; historical league rails adopted in Entry 78; Meester retired and Allen retirement scheduled in Entry 79 |
 
 ## 1. Master clock and competition position
 
@@ -37,7 +37,7 @@
 | Field | Current value |
 |---|---|
 | **Current Jacksonville controlled roster** | **53** |
-| Active roster | **53** |
+| Active roster | **52** (Brad Meester on Reserve/Retired, Entry 79) |
 | Practice squad | **8; separate from active 53** |
 | Current cap treatment | Regular-season accounting; Top-51 expired |
 | Working room | Approximately **$6.2M-$6.6M** before weekly practice-squad charges; **$5.4M-$5.8M** comparable full-season exposure if the opening eight remain all season |
@@ -53,7 +53,7 @@ The Divisional game produced one Jacksonville injury: Ryan Davis (trunk, minor),
 ## 4. Current football roles
 
 - **QB:** Cousins QB1, Henne QB2, Wilson QB3 (a game-day numbers inactive in Weeks 5-8).
-- **OL:** Monroe–Nwaneri–Brewster–Rackley–Johnson, with Brewster the starting center (confirmed Week 6). Meester reserve center; Bradfield swing tackle and sixth offensive lineman in 6OL; Asper interior depth; Pasztor available (Entry 46).
+- **OL:** Monroe–Nwaneri–Brewster–Rackley–Johnson, with Brewster the starting center (confirmed Week 6). Meester retired (Reserve/Retired, Entry 79); Bradfield swing tackle and sixth offensive lineman in 6OL; Asper interior depth; Pasztor available (Entry 46).
 - **Skill:** Jones-Drew leads, Grimes RB2, Anderson RB3; Shorts WR1, Thielen WR2/H (the movable receiver), Blackmon WR3/outside Z (dressed from Week 8), Clemons WR4, Brown WR5; Lewis leads tight end, and Kelce is TE2 in the regular call structure.
 - **Defense:** Edge order Babin, Mincey, Branch, Davis; Miller/Marks inside; Posluszny and Smith base linebackers (Posluszny out from Week 13; Russell Allen starts beside Smith from Week 14) with Smith the communication lead, Allen first off the bench, then Stanford, with Moore in Crennel's packages; Grimes and Mike Harris outside (Harris for the injured Ball from Week 11), Poyer nickel, Bouye first outside reserve (Week 13), Rutland next, Lowery/Rambo safety. C.J. Wilson and Ball cleared at their projections (Entry 67); Mosley available (Entry 46).
 - **Teams:** Scobee/Anger/Cain specialists. Trawick, Rambo, Thielen, Anderson, Poyer, Prosinski, Allen and Bouye hold defined primary/backup coverage jobs.
@@ -77,6 +77,7 @@ League awards (`career/2013/awards/`): Weeks 1-8 and September backfilled (Entry
 The 2013 season is complete and archived (Entry 67): Jacksonville 10-6, 1-1 in the postseason; Buffalo won Super Bowl XLVIII. The next Jacksonville football event belongs to the 2014 offseason.
 
 - **Held for the user:** the five 2014 phase plans (folders created; the user writes them). The exit interviews' open program decisions and staff findings feed them (`career/2013/exit_interviews/README.md`).
+- **Retirements (Entry 79):** Brad Meester retired (real announcement December 18, 2013); he is on Reserve/Retired until his contract expires March 11. Russell Allen's real retirement (April 22, 2014) is scheduled and applies when the clock reaches that date; Stone's trade package G for Allen (February 2 memo) cannot close after it. Nwaneri, Rackley, Owens and Rutland are listed to verify (`career/2014/offseason/league_rails/retirements.md`).
 - **Historical league rails (Entry 78):** from the 2014 league year the other 31 clubs' rosters follow real history on real dates (signings, trades, releases, retirements, draft, Week 1 charts); Jacksonville's roster and contracts come only from the branch, except that real retirements apply league-wide. Free agents Jacksonville pursues are decided by a market draw against the real contract; draft availability follows the real pick number. Draft rosters for all 31 clubs are in `career/2014/offseason/league_rails/` for the user to complete. Open check: any real retirement by a Jacksonville player dated on or before February 2, 2014.
 - **Exit interviews (Entry 76):** held January 13-14, 2014 with all 61 players (13 main core in full, 27 core in structured reports, 21 summarized). No promise was made and no role, roster, contract or medical state changed.
 - **Season review (Entry 74):** Khan and Caldwell retained Stone for 2014 on his existing contract after the January 15, 2014 review (`career/2013/season_review/owner_and_gm_review.md`). Caldwell's first 2014 measures: the scoring margin and the quarterback's ball security.

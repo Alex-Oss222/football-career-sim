@@ -1,7 +1,7 @@
 # Jacksonville Jaguars roster
 
 **As of:** February 2, 2014, after Super Bowl XLVIII; 2013 season complete (Jacksonville eliminated in the AFC Divisional round).
-**Canonical controlled-player count:** **53**.
+**Canonical controlled-player count:** **53** (52 active; Brad Meester on Reserve/Retired until his contract expires March 11, 2014, ledger Entry 79).
 **Active roster:** **53**; Justin Blackmon was reinstated from Reserve/Suspended on October 7 and activated to the open spot (ledger Entry 42).
 **Practice squad:** **8**, separate from the active roster.
 **Record:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-1 (AFC Wild Card: Jacksonville 38, Kansas City 14; AFC Divisional: Tennessee 20, Jacksonville 13).
@@ -82,7 +82,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
 | Mike Brewster | C | 1989-07-27 | 24 | Active 53 | No communicated restriction | Starting center (confirmed Week 6) |
-| Brad Meester | C | 1977-03-23 | 36 | Active 53 | No communicated restriction | Reserve center |
+| Brad Meester | C | 1977-03-23 | 36 | Reserve/Retired | Retired (announced December 18, 2013, effective at the end of the 2013 season; Entry 79) | None; contract expires March 11, 2014 |
 
 ### Defensive ends (6)
 
@@ -109,7 +109,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
-| Russell Allen | LB | 1986-05-05 | 27 | Active 53 | No communicated restriction | Base LB (from Week 14, for Posluszny); coverage units |
+| Russell Allen | LB | 1986-05-05 | 27 | Active 53 | No communicated restriction | Base LB (from Week 14, for Posluszny); coverage units; real retirement dated April 22, 2014 applies when the clock reaches it (league rails, Entry 79) |
 | Sio Moore | LB | 1990-05-02 | 23 | Active 53 | No communicated restriction | Package LB (Crennel's packages) |
 | Paul Posluszny | LB | 1984-10-10 | 29 | Active 53 | Out, head/neck, independent medical hold (Week 13); projected return April 5, 2014 | Base LB; out (Allen starts from Week 14) |
 | Daryl Smith | LB | 1982-03-14 | 31 | Active 53 | No communicated restriction | Base LB; defensive communication lead |
