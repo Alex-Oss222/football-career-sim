@@ -2188,3 +2188,46 @@ The adversarial review of the method before the draw confirmed and fixed thirtee
 **Label-swap check.** Every probability reads only the job, the coach's role and record, the clubs' branch records and the calendar. The permission policy applies alike to any asking club.
 
 **Commit closed - Canonical update - February 2, 2014 - January 2014 coaching carousel resolved (Lowry to Atlanta) - canonical through February 2, 2014**
+
+## Entry 76: 2013 exit interviews recorded (retroactive)
+
+**Effective canonical state:** February 2, 2014 (no clock advance). The interviews are dated Monday January 13 and Tuesday January 14, 2014.
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - February 2, 2014 - 2013 exit interviews recorded (January 13-14)`
+**Preceding global package checkpoint:** `Canonical update - February 2, 2014 - January 2014 coaching carousel resolved (Lowry to Atlanta)`
+
+**Decision.** The user asked for in-depth, comprehensive exit interviews and set the format:
+- **Date:** January 13-14, 2014.
+- **Tone:** an honest review with no promises.
+- **Depth:** a full interview for the main core; a structured, in-depth report for the core; a summary for everyone else.
+
+**Record.** `career/2013/exit_interviews/` holds 61 players: all 53 on the active roster and all 8 on the practice squad.
+- **Main core** (13 full interviews, Monday January 13): `main_core/`.
+- **Core** (27 structured reports, Tuesday January 14): `core/`.
+- **Summaries** (21, Tuesday January 14): `summaries_offense.md`, `summaries_defense.md`, `summaries_practice_squad.md`.
+- **Index:** `README.md` lists each player's date and the coaches present. It also collects the open program decisions for the user, the follow-ups and the staff findings.
+
+**Method.**
+- Each interview was written from the branch record only, then checked by a separate skeptical pass.
+- The verification removed manufactured flaws, unsupported motives, draft and contract hints and misdated quotations. It also moved any live work out of Phase Two, where the CBA forbids it.
+- No numeric rating appears. Statistics that the 2013 engine attributed at random are not used as evidence (sacks allowed by lineman, returners, coverage tackles).
+- No real 2013 or later outcome was used.
+
+**Reconciliation with Entry 75.** The carousel closed first and places Lowry's departure (January 12) and Bush's Indianapolis interview (January 14) before or inside the interview dates.
+- Lowry attends no meeting. His follow-ups belong to the special teams coordinator, with Stone covering until the job is filled, and none is dated before February 2.
+- Bush attends the Monday meetings but not Tuesday's.
+- Stone told the specialists that Lowry had left and that his replacement was not decided.
+
+**What changed.** Nothing in roster, role, contract, cap, medical or availability state:
+- every exit physical is the medical staff's, and none recorded a finding;
+- Stone promised no job, role, contract or roster spot;
+- contract, tag, tender and roster questions were referred to Caldwell.
+The user's February 2 memo to Caldwell (`career/2014/offseason/stone_to_caldwell_2014_offseason_decisions.md`) already answers the contract recommendations for the pending free agents, the futures and the trade candidates. The interviews disclosed none of them.
+
+**Open for the user.**
+- **Program decisions** for the 2014 phase plans, listed in the README: examples are the backup defensive caller, the long-term-injury plan, individual classified cutups, how rotation and depth-order evidence is communicated, and the end-of-half punt rules.
+- **Follow-ups dated January 31, 2014:** individual film cutups from the position coaches. Their delivery is not recorded; whether the CBA lets staff send film before April 21 is unsourced.
+
+**Companion manuscript.** The user's researched ownership review and press conference (`career/2013/season_review/stone_2013_review_and_exit_interview.md`, merged into this branch as pull request #122) was written before Entry 75. Its staff passages are corrected to Entry 75, with a dated note at the top: Lowry's departure, Bush's Indianapolis interview and the vacant special teams job. `owner_and_gm_review.md` remains the controlling record.
+
+**Commit closed - Canonical update - February 2, 2014 - 2013 exit interviews recorded (January 13-14) - canonical through February 2, 2014**
