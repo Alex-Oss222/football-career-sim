@@ -43,11 +43,12 @@ Each branch game takes the real 2013-14 date, kickoff and network of the slot wi
 | 18 | NFC Wild Card (6 at 3) | Sat. Jan. 4, 8:10 p.m., NBC | Dallas at New Orleans | **Dallas 40**, New Orleans 10 | [roundup](../league_results/week_18.md) |
 | 18 | AFC Wild Card (6 at 3) | Sun. Jan. 5, 1:05 p.m., CBS | Buffalo at Pittsburgh | **Buffalo 33**, Pittsburgh 30 (OT) | [roundup](../league_results/week_18.md) |
 | 18 | NFC Wild Card (5 at 4) | Sun. Jan. 5, 4:40 p.m., FOX | Tampa Bay at Philadelphia | **Philadelphia 30**, Tampa Bay 20 | [roundup](../league_results/week_18.md) |
-| 19 | NFC Divisional (6 at 1) | Sat. Jan. 11, 4:35 p.m., FOX | Dallas at Minnesota | Not started | - |
-| 19 | AFC Divisional (5 at 2) | Sat. Jan. 11, 8:15 p.m., CBS | Jacksonville at Tennessee | Not started | [week_19_jacksonville_at_tennessee/output.md](week_19_jacksonville_at_tennessee/output.md) |
-| 19 | NFC Divisional (4 at 2) | Sun. Jan. 12, 1:05 p.m., FOX | Philadelphia at St. Louis | Not started | - |
-| 19 | AFC Divisional (6 at 1) | Sun. Jan. 12, 4:40 p.m., CBS | Buffalo at New York Jets | Not started | - |
-| 20 | Conference championships | Sun. Jan. 19 (AFC 3:00 p.m. CBS; NFC 6:30 p.m. FOX) | After the Divisional round | Conditional | - |
+| 19 | NFC Divisional (6 at 1) | Sat. Jan. 11, 4:35 p.m., FOX | Dallas at Minnesota | **Minnesota 38**, Dallas 10 | [roundup](../league_results/week_19.md) |
+| 19 | AFC Divisional (5 at 2) | Sat. Jan. 11, 8:15 p.m., CBS | Jacksonville at Tennessee | **Tennessee 20**, Jacksonville 13 (Entry 64); Jacksonville eliminated | [week_19_jacksonville_at_tennessee/output.md](week_19_jacksonville_at_tennessee/output.md) |
+| 19 | NFC Divisional (4 at 2) | Sun. Jan. 12, 1:05 p.m., FOX | Philadelphia at St. Louis | **Philadelphia 30**, St. Louis 20 | [roundup](../league_results/week_19.md) |
+| 19 | AFC Divisional (6 at 1) | Sun. Jan. 12, 4:40 p.m., CBS | Buffalo at New York Jets | **Buffalo 26**, New York Jets 24 | [roundup](../league_results/week_19.md) |
+| 20 | AFC Championship (6 at 2) | Sun. Jan. 19, 3:00 p.m., CBS | Buffalo at Tennessee | Not started | - |
+| 20 | NFC Championship (4 at 1) | Sun. Jan. 19, 6:30 p.m., FOX | Philadelphia at Minnesota | Not started | - |
 | 21 | Super Bowl XLVIII | Sun. Feb. 2, 2014, 6:30 p.m., FOX, MetLife Stadium | After the conference round | Conditional | - |
 
 The Pro Bowl (Sun. Jan. 26, Aloha Stadium) falls in the off week between the conference round and the Super Bowl. It is not simulated.

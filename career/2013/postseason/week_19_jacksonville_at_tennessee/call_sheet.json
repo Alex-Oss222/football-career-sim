@@ -1,0 +1,115 @@
+{
+ "schema_version": 1,
+ "team": "Jacksonville Jaguars",
+ "event": "2013 AFC Divisional, Jacksonville at Tennessee",
+ "status": "EX_ANTE_CALL_SHEET_FROZEN",
+ "provenance": "Stone's AFC Divisional plan, runner-ready call sheet (section 63), approved by the user as APPROVED_DIVISIONAL_PLAN and frozen verbatim before any postseason week 19 draw under kernel 2013.10. Plan provenance as supplied: Stone AFC Divisional plan after Jacksonville's canonical 38-14 Wild Card win at Kansas City. Jacksonville and Tennessee split the regular-season series: Tennessee 41-11 in Week 10 and Jacksonville 38-27 in Week 16. The third-meeting plan adds no new concept family. It preserves the zero-turnover, run-credible, protected-shot formula of the Week 16 win while correcting Tennessee's 432 passing yards and Kenny Britt's 187-yard performance without compromising the run fits that held Tennessee to 77 rushing yards. Wild Card injuries to Montell Owens and Adam Thielen require fresh medical communication before final actives. Medical resolution: Owens and Thielen reached their projected returns (January 5 and 6) before the January 11 game under the rule every club gets, so the plan's cleared branch applies: call 7 stays 21 Pro Left, Counter R and the established seven inactives carry. Every family resolves in the call-family map from the active 2013 book.",
+ "offensive_call_sheet": [
+  {
+   "name": "12 Wing Right, Split L",
+   "family": "Split Zone",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Wing Right"
+  },
+  {
+   "name": "12 Trey Right, Stick, H Chip-Release",
+   "family": "Stick",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey Right"
+  },
+  {
+   "name": "12 Ace Right, Duo R",
+   "family": "Duo",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace Right"
+  },
+  {
+   "name": "11 Bunch Right, Return, Mesh",
+   "family": "Mesh",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Bunch Right"
+  },
+  {
+   "name": "12 Wing Right, Wham R",
+   "family": "Wham",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Wing Right"
+  },
+  {
+   "name": "12 Doubles, Texas",
+   "family": "Texas",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Doubles"
+  },
+  {
+   "name": "21 Pro Left, Counter R",
+   "family": "Counter",
+   "type": "run",
+   "personnel": "21",
+   "formation": "21 Pro Left"
+  },
+  {
+   "name": "6OL Heavy Right, Power R",
+   "family": "Power",
+   "type": "run",
+   "personnel": "6OL",
+   "formation": "6OL Heavy Right"
+  },
+  {
+   "name": "6OL Wing Left, TE Delay",
+   "family": "TE Delay",
+   "type": "pass",
+   "personnel": "6OL",
+   "formation": "6OL Wing Left"
+  },
+  {
+   "name": "11 Trips Right, Inside L, Access Blackmon Smoke",
+   "family": "Inside + Smoke",
+   "type": "run",
+   "personnel": "11",
+   "formation": "11 Trips Right"
+  },
+  {
+   "name": "22 Heavy Right, Power R",
+   "family": "Power",
+   "type": "run",
+   "personnel": "22",
+   "formation": "22 Heavy Right"
+  },
+  {
+   "name": "22 Heavy Right, Snag",
+   "family": "Snag",
+   "type": "pass",
+   "personnel": "22",
+   "formation": "22 Heavy Right"
+  },
+  {
+   "name": "20 Doubles, Draw",
+   "family": "Draw",
+   "type": "run",
+   "personnel": "20",
+   "formation": "20 Doubles"
+  },
+  {
+   "name": "12 Ace Right, Power Pass, Post-Cross, Max",
+   "family": "Power Pass",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Ace Right",
+   "protection": "Max"
+  },
+  {
+   "name": "12 Doubles, Spacing",
+   "family": "Spacing",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Doubles"
+  }
+ ]
+}

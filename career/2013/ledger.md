@@ -1687,3 +1687,64 @@ Historical retirement research is retained in `archive/2013_jacksonville_histori
 **Dependency closure:** Birth-date evidence and verification notes; roster and register DOB/age columns; generated league ages; age renderer and validation; weekly preparation metadata; current-state version manifest; workflow/index pointers. Roster control, medical restrictions, finances, game receipts, scores and standings do not change. No football event or retirement was simulated, and the clock remains January 5, 2014.
 
 **Commit closed - Canonical update - January 5, 2014 - Player age register reconciled - canonical through January 5, 2014, after the AFC Wild Card round**
+
+## Entry 64: AFC Divisional at Tennessee closed; Jacksonville eliminated
+
+**Effective canonical state:** January 11-12, 2014, after the Divisional round
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - January 12, 2014 - AFC Divisional at Tennessee closed`
+**Preceding global package checkpoint:** `Canonical update - January 5, 2014 - Player age register reconciled`
+
+**Result.** Tennessee 20, Jacksonville 13 at LP Field (Sat. January 11, 8:15 p.m. ET, CBS). Jacksonville's season ends at 10-6 in the regular season and 1-1 in the postseason. Stone's NFL postseason head-coaching record is 2-2.
+
+**Batch.**
+- **Package:** the four Divisional games (postseason week 19) closed once each under kernel 2013.10 as `postseason` games. They were drawn from the package frozen by `build_week_inputs.py 19` (sha256 `c799c8ed...`) after the four-game exclusivity gate passed.
+- **Snapshot:** advanced to the merged Entry 63 state before the build, so no draw ran against a stale snapshot. Entry 63's age metadata sits outside TeamInput.
+- **Jacksonville's unit:** inspected before the close. 46 dressed with exactly Stone's seven inactives. Owens and Thielen had reached their projected returns (January 5 and 6) and dressed, under the plan's cleared branch.
+- **Jets:** dressed 44 from their thin library entry, as in the regular season.
+- **Freeze:** the call sheet and depth chart were committed before the draw.
+- **Receipts:** `career/2013/stats/postseason_receipts/` (Jacksonville full, others compact_stats). No postseason awards are drawn.
+
+**Inputs.**
+- **Call sheet:** Stone's fifteen calls; Split opener; 22 Power and Snag; no new family.
+- **Lineup:** no role changes; the established seven inactives.
+- **Scouting:** position-coach draft work stayed frozen by Stone. The plan's scouting section is otherwise handled outside this record at the user's direction.
+
+**Game.**
+- **Jacksonville offense:** 227 yards on 51 plays, 1 of 9 on third down, 22:54 possession, three sacks allowed and one turnover.
+  - Scoring: Scobee field goals of 36 and 51, and Shorts's 40-yard touchdown on Mesh at the end of a nine-pass, 80-yard drive.
+  - After that touchdown, eight drives gained 62 yards in total.
+  - Cousins: 18 of 29 for 155 yards, a touchdown, no interception.
+  - Jones-Drew: 13 carries for 42.
+- **Turnover:** Thielen's catch-and-fumble at the Jacksonville 18 with 6:13 left, forced and recovered by Patrick Bailey. It set up Bironas's 26-yarder for 20-13.
+- **Tennessee:** 404 yards on 77 plays, 11 of 20 on third down, 37:06 possession.
+  - Johnson: 24 carries for 103 and a touchdown. Bironas missed from 41 and 42 in the first half.
+  - Britt: 8 catches on 12 targets for 58, longest 19, and the go-ahead 4-yard touchdown with 7:13 left.
+- **Game management:** Stone entered no decision.
+
+**Engine limitation (the Entry 60 limit; recorded here, not fixed).**
+- **What happened:** trailing 20-13 with 2:22 left, Jacksonville faced fourth-and-10 at its own 30. The engine drew a punt from the real 2012 late-game cell (trailing by 4-8, 121-300 seconds). Tennessee's next possession ran from 2:00 to 0:07 on six snaps, and Jacksonville got one snap from its own 8.
+- **Why it matters:** timeouts and the two-minute warning are not simulated snap by snap. A real punt from that cell assumes the trailing team still has timeouts, and the following clock runoff assumes it used none. Stone's spoken end-game check had no mechanical effect.
+- **Status:** the user deferred this defect ("we're gonna fix the bug another day"). Under the label-swap rule a result is never voided because of who it favoured. The result stands as closed and nothing is rerun.
+
+**Other Divisional games.**
+- Minnesota 38, Dallas 10.
+- Philadelphia 30, St. Louis 20.
+- Buffalo 26, the Jets 24: Carpenter kicked a 51-yard field goal with 33 seconds left. E.J. Manuel was injured (lower extremity, long-term; projected absence 66 days).
+- Roundup: `career/2013/league_results/week_19.md`.
+
+**Conference championships (postseason week 20; the higher remaining seed hosts):**
+
+| Date and kickoff (ET) | Game | Seeds |
+|---|---|---|
+| Sun. Jan. 19, 3:00 p.m., CBS | Buffalo at Tennessee | AFC 6 at 2 |
+| Sun. Jan. 19, 6:30 p.m., FOX | Philadelphia at Minnesota | NFC 4 at 1 |
+
+They are background games.
+
+**Availability.**
+- **Ryan Davis:** out, trunk, minor; projected return January 14, 2014.
+- **Owens and Thielen:** cleared at their projected returns.
+- No other Jacksonville status changed.
+
+**Commit closed - Canonical update - January 12, 2014 - AFC Divisional at Tennessee closed - canonical through January 12, 2014, after the Divisional round**
