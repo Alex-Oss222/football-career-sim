@@ -1,7 +1,7 @@
 # Jacksonville Jaguars: 2014 staff replacement plan
 
-**Status:** Researched shortlist and proposed terms prepared for Stone's decision, September 28, 2026. The special teams coordinator job is vacant following Alan Lowry's January 12 departure for Atlanta (ledger Entry 75). This file's existence does not authorize an approach, offer or hire. Stone selects candidates and staff assignments under Document 3 row 2; a target, interview or proposed offer is not an appointment.
-**As of:** February 2, 2014. Entry 77 reconciles planning and authority references without advancing time or selecting a candidate.
+**Status:** Bobby April selected by Stone on September 28, 2026 for the special-teams search at the February 2, 2014 planning checkpoint. The special teams coordinator job is vacant following Alan Lowry's January 12 departure for Atlanta (ledger Entry 75). Stone's selection authorizes the April-specific search within the terms below, subject to branch employment/rights, permission and funded-budget checks; it does not appoint him. Stone selects candidates and staff assignments under Document 3 row 2; a target, interview or proposed offer is not an appointment.
+**As of:** February 2, 2014. Entry 77 remains the latest closed staff reconciliation. The selection below changes planning instructions only; no approach or hiring result has been resolved and the clock has not advanced.
 
 ## Open position and interim coverage
 
@@ -22,23 +22,27 @@ The head-coach agreement promises a funded staff budget but states no numeric ce
 - Confirm the proposed replacement's annual salary, term, guarantees/offsets and total commitment within the funded budget before committing an offer. Stone selects and allocates within his contractual staff-budget authority; Caldwell's broader budget authority remains as established in Document 3.
 - Assistant pay is separate from the player salary cap. These figures exclude Stone and the support departments identified in the staff register.
 
-## Target order
+## Selected target and unselected alternatives
 
-The following order is a recommendation for approval, not a claim that Stone has selected it. It favors a veteran unit teacher with a plausible role incentive, then another experienced coordinator, then an experienced coach whose willingness to return must be established. No unsupported coaching grade or later career outcome drives the order.
+**Stone's instruction:** "Bobby April." In response to the proposed candidates and terms, this selects April as the sole authorized target with his presented negotiating parameters: open at $700,000 annually, ceiling $800,000 annually, for 2014 and 2015 on the common terms below. DeHaven and Westhoff remain researched alternatives, not authorized fallback approaches. The separate phase and engine recommendations remain pending; selecting April does not adopt them.
 
-| Order / candidate | Evidence before the February 2, 2014 cutoff | Proposed approach and obstacle | Proposed annual offer / ceiling |
+| Selection / candidate | Evidence before the February 2, 2014 cutoff | Proposed approach and obstacle | Annual opening / ceiling |
 |---|---|---|---|
-| 1. Bruce DeHaven | Extensive coordinator experience through 2012; historically joined Carolina as assistant special teams coach in February 2013 (S1/S2) | Recommend full unit responsibility as the reason to consider Jacksonville. Reconcile branch employer/contract first; seek permission if under contract. Carolina may refuse even though the title is a promotion. | $625,000 / $750,000 |
-| 2. Bobby April | Eagles coordinator through 2012; historically hired by Oakland in January 2013 (S3/S4) | Experienced full-unit option. Reconcile branch employer/contract; an under-contract lateral request may be refused. No invented release or automatic right to interview. | $700,000 / $800,000 |
-| 3. Mike Westhoff | Jets coordinator entering retirement after 2012 (S5/S6) | First establish whether he wants to return and whether any contract rights remain. Retirement is not proof of either willingness or unrestricted availability. Do not assume a later real return. | $625,000 / $750,000 |
+| Selected: Bobby April | Eagles coordinator through 2012; historically hired by Oakland in January 2013 (S3/S4) | Experienced full-unit option. Reconcile branch employer/contract; an under-contract lateral request may be refused. No invented release or automatic right to interview. | $700,000 / $800,000 |
+| Unselected: Bruce DeHaven | Extensive coordinator experience through 2012; historically joined Carolina as assistant special teams coach in February 2013 (S1/S2) | Recommend full unit responsibility as the reason to consider Jacksonville. Reconcile branch employer/contract first; seek permission if under contract. Carolina may refuse even though the title is a promotion. | $625,000 / $750,000 |
+| Unselected: Mike Westhoff | Jets coordinator entering retirement after 2012 (S5/S6) | First establish whether he wants to return and whether any contract rights remain. Retirement is not proof of either willingness or unrestricted availability. Do not assume a later real return. | $625,000 / $750,000 |
 
-**Proposed common terms:** two seasons, 2014 and 2015; equal annual salaries; no signing bonus; first-season salary guaranteed with an offset for earnings from another coaching job; second season non-guaranteed; no automatic extension, assistant-head-coach title, roster power or additional hires. A counter changing the term, guarantee, offset, authority or salary ceiling returns to Stone. These are proposed branch negotiating terms, not sourced historical salaries or an already-funded authorization. Confirm the funded staff allocation with Caldwell before an offer.
+**Terms authorized for April; still proposals for unselected alternatives:** two seasons, 2014 and 2015; equal annual salaries; no signing bonus; first-season salary guaranteed with an offset for earnings from another coaching job; second season non-guaranteed; no automatic extension, assistant-head-coach title, roster power or additional hires. A counter changing the term, guarantee, offset, authority or salary ceiling returns to Stone. These are branch negotiating instructions, not sourced historical salaries, an accepted contract or evidence of a funded allocation. Confirm the funded staff allocation with Caldwell before an offer.
 
-At the proposed openings, scheduled annual assistant compensation would be $7,575,000 for DeHaven or Westhoff and $7,650,000 for April. At the proposed ceilings it would be $7,700,000 or $7,750,000 respectively. These are arithmetic against the existing $6,950,000 commitment, not budget ceilings. Only one coordinator would be hired; no three-offer commitment is authorized.
+If April accepts the opening, scheduled annual assistant compensation would be $7,650,000; at his ceiling it would be $7,750,000. His proposed two-season face value is $1,400,000 to $1,600,000, with only the first season guaranteed subject to the stated offset. These are prospective calculations against the existing $6,950,000 annual commitment, not new obligations or budget ceilings.
 
 **Proposed interview test:** ask the candidate to teach a punt-protection correction, separate a specialist-operation error from coverage and call errors, describe reserve-player development, and explain his end-of-half reporting to Stone. Assess the content and demonstrated pre-cutoff experience, without scripting his answer. The role and reporting line are the existing vacancy description above. Stone retains consequential game management; the coordinator gets routine unit teaching and operation within Stone's approved plan.
 
-**Proposed search sequence:** after Stone approves the order and terms, reconcile the first candidate's branch employment/rights, then resolve permission and interest. Move to the next on a refusal, declined interview, rejection or terms outside the approved limits. A materially different counter returns to Stone. Do not manufacture a dated rejection to accelerate the search. Aim to settle the post before organized field work, while treating April 21 as a readiness objective rather than a fabricated acceptance deadline.
+**Authorized search sequence:** reconcile April's branch employment/rights, then resolve any required permission and interest. Confirm the funded staff allocation before communicating an offer. Negotiate within the stated salary range without changing the role or other terms. A refusal, rejection or materially different counter returns to Stone; do not approach the unselected alternatives automatically. Do not manufacture a dated rejection or acceptance. Aim to settle the post before organized field work, with April 21 a readiness objective rather than an invented acceptance deadline.
+
+### Availability check after selection
+
+The branch carousel retained Oakland head coach Dennis Allen, but it contains no Bobby April employment, release or contract-rights entry. The source search confirms his historical Oakland appointment (S3/S4); it cannot supply a missing branch contract or an employer's simulated permission. Under AGENTS.md, coaching changes are excluded from the player rails. No branch permission, interview, offer or acceptance has therefore been recorded. Current compensation, contract expiry and willingness remain undetermined, rather than being assumed to match the proposed Jacksonville offer.
 
 ### Research and verification receipt
 
@@ -67,6 +71,6 @@ The 2013 [staff plan](../../../2013/offseason/staff_building/staff_plan.md) is a
 
 ## Search and appointment record
 
-Use the consolidated hiring workflow once targets and terms are supplied. Record requests, permission, interviews, refusals, offers and any accepted appointment separately in `hires.md` when actual search events occur. A coach may decline and an employer may refuse a permissible request; neither acceptance nor release is assumed.
+Use the consolidated hiring workflow for the selected April target once branch employment/rights and permission are resolved. Record requests, permission, interviews, refusals, offers and any accepted appointment separately in `hires.md` when actual search events occur. A coach may decline and an employer may refuse a permissible request; neither acceptance nor release is assumed.
 
 An accepted hire requires its effective date, agreed compensation and operating duties to be closed in the ledger, current coaching staff, Documents 3 and 4 as affected, and Document 5 together. Update the actual interim workload transfer when the appointment occurs.

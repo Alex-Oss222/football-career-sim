@@ -8,7 +8,7 @@
 
 - **Master date:** February 2, 2014, after Super Bowl XLVIII (2013 season complete; ledger Entry 67; 2014 setup Entry 68; latest closed event Entry 76, the exit interviews).
 - **Jacksonville:** 2013 finished 10-6, 1-1 postseason. 53 active and 8 on the practice squad carry over from the 2013 roster until the league year turns (`career/2013/roster.md` stays the controlled-roster record until the 2014 roster owner is created).
-- **Planning prepared:** the five 2014 phase plans carry the authorized 2013 methods forward; their marked new decisions and the researched special-teams candidate/terms proposal await Stone. No phase or hiring event has run.
+- **Planning prepared:** the five 2014 phase plans carry the authorized 2013 methods forward; their marked new decisions await Stone. Bobby April is selected for the special-teams search at the presented terms, with employment/permission and acceptance unresolved. No phase or hiring event has run.
 - **Next league events:** franchise and transition window February 17; Combine February 19-25; the 2014 league year opens March 11, 4:00 p.m. ET.
 
 ## Offseason calendar
