@@ -8,7 +8,7 @@
 
 | Position | Reason for opening | Interim responsibility | Search status |
 |---|---|---|---|
-| Special teams coordinator | Alan Lowry became Atlanta's head coach on January 12, ledger Entry 75 | Alex Stone, under the recorded interim assignment | Target order and offer terms not selected |
+| Special teams coordinator | Alan Lowry became Atlanta's head coach on January 12, ledger Entry 75 | Alex Stone, under the recorded interim assignment | Bobby April selected at the plan’s terms; rights/permission unresolved; no offer communicated or appointment recorded |
 
 Existing role requirements, candidate checks and financial constraints are in [staff_plan.md](staff_plan.md). The current salary commitment is owned by the [staff contract register](../../../2013/coaching_staff.md), not by this empty hiring log.
 

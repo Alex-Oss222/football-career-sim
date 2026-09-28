@@ -1,25 +1,511 @@
 # Jacksonville Jaguars: 2014 Mandatory veteran minicamp plan
 
-**Status:** AWAITING THE USER'S PLAN. The user will write this plan; until it exists this phase does not run (AGENTS.md phase-plan rule). This page holds only Stone's direction for it, quoted from [stone_to_caldwell_2014_offseason_decisions.md](../stone_to_caldwell_2014_offseason_decisions.md) section 6.
-**Event owner when run:** `output.md` in this folder (not yet created). Results, attendance and standouts never go in this plan.
-**Base to carry forward:** `career/2013/offseason/mandatory_minicamp/plan.md`.
-**Framework and authorities:** `career/2013/offseason/player_onboarding_and_development_framework.md`, `the_prowl_player_readiness_standard.md`, `the_prowl_program_identity.md`; the active playbooks are the 2013 offensive and defensive Iteration I books (`career/playbook/README.md`).
+**Status:** 2013 METHODS RETAINED; individual training/film workflow authorized; other marked choices remain pending. No phase has run.
+**Planning checkpoint:** February 2, 2014. Prepared September 28, 2026 without advancing time.
+**Proposed dates:** June 17 to 19, proposed; physicals June 16.
+**Authority:** [Stone's memo, section 6](../stone_to_caldwell_2014_offseason_decisions.md); [2014 calendar](../../calendar.md).
+**Inherited method:** [2013 mandatory_minicamp plan](../../../2013/offseason/mandatory_minicamp/plan.md). The 2013 file remains unchanged; this plan's 2014 conditions override inherited dates, QB competition and new-head-coach clauses.
+**Event owner when run:** `career/2014/offseason/mandatory_minicamp/output.md`, created only when the phase runs. Results and standouts never belong in this plan.
 
-## Stone's direction (quoted)
+## 2014 authority and execution conditions
 
-| Proposed 2014 dates | Carries forward | 2014-specific focus |
-| --- | --- | --- |
-| June 17 to 19, physicals the day before | Work blocks A to D, correction standard, take-home plans, dinner | Retention across the whole roster before the summer break |
+This is the carry-forward authorized in Stone's February 2 memo section 6 and the user's September 28, 2026 request to address the outstanding work. The inherited teaching method is retained below. The individual training/film items identified below are adopted; other recommendations at the end remain explicitly proposed. No practice, attendance, delivery, hiring, clearance or role change is recorded by this plan.
 
-Four changes apply to every phase:
+- Returning players begin with retention of assigned 2013 material. New arrivals receive the complete active books and the existing onboarding process after control/invitation is verified; late onboarding is recorded honestly, never backdated. Any pre-program football contact or film delivery first passes the unresolved CBA check recorded in the exit-interview README.
+- Cousins remains the established QB1. The quarterback competition is for QB2/QB3 among players actually controlled when the phase opens. Henne and Bray are memo candidates, not assumed re-signings. Cousins's priorities are ball security, protection communication and separating decision errors from technique or protection failures.
+- Jacksonville has a returning head coach. No additional new-head-coach voluntary veteran minicamp is authorized. Older references to that privilege in the inherited readiness document do not apply in 2014.
+- Use the actual roster, medical instructions and teaching evidence at execution. Proposed signings, draft selections and departures are not completed transactions. Verner, Talib or drafted linemen enter a plan only if acquired; Allen cannot be relied on for work after his scheduled April 22 retirement.
+- Crennel calls the defense; Stone calls the offense. The player who relays defensive calls is a separate job. Stone directs special teams until a replacement is actually hired. Current roles stand pending a separately authorized change.
+- Medical projections are review dates, not clearance. Voluntary attendance, rehabilitation, private support needs and lawful absence never become hidden role grades. No fixed rep percentages or touch quotas determine roles.
+- The 2014 calendar controls dates and legal work. April 3 publishes the league schedule but does not automatically adopt the real Jaguars' dates. Verify Stone's proposed dates and the applicable phase rules before executing. Training camp also waits for its schedule/reporting gates.
 
-1. Dates. Each header carries 2014 dates instead of 2013 ones.
-2. The new-head-coach clause goes. Jacksonville is a returning-coach club in 2014 and may not hold the extra voluntary veteran minicamp.
-3. Starting point. Returning players begin from what they retained of the 2013 install, so each phase opens with a retention check, not a first lesson. New arrivals (free agents, draftees, futures signings) get the full onboarding gate, compressed and recorded as compressed, with the playbook issued the day each signs.
-4. Quarterback language. The 2013 plans ran an open quarterback competition. Cousins holds QB1 from that competition, so the 2014 plans evaluate QB2 and QB3 (Henne, Bray) and set Cousins's development targets instead. His 18 interceptions and 38 sacks point to ball security and protection communication.
+The existing framework, readiness standard and identity remain at their 2013 paths and are incorporated as durable methods, subject to the 2014 calendar correction above:
 
-**Date gate:** the proposed dates are Stone's proposal for Caldwell; the league-wide offseason schedule becomes public April 3, 2014 (`../../calendar.md`), and the dates are verified against it before this phase runs.
+- [Onboarding and development](../../../2013/offseason/player_onboarding_and_development_framework.md)
+- [Readiness and CBA boundaries](../../../2013/offseason/the_prowl_player_readiness_standard.md)
+- [Program identity](../../../2013/offseason/the_prowl_program_identity.md)
+- [Active playbook index](../../../playbook/README.md): offensive and defensive Iteration I only, effective 2013 through 2015.
 
-## Plan
+Use Explain → Show → Walk → Rep → Correct → Rep again → Retain → Add complexity. Good means the assigned job works at the lawful phase speed; Better means correction survives changed presentations; Best for the phase means reliable, independent execution. These describe teaching evidence, not permanent player ratings.
 
-*To be written by the user.*
+## Individual training and film workflow
+
+Read the [training index](../README.md), [room work plans](../training/unit_plans.md), [player queue](../film/player_queue.md) and the relevant [individual plan](../player_development/README.md) before preparing the phase. Use the [session template](../training/session_template.md), [film packet](../film/packet_template.md) and [delivery log](../film/delivery_log.md) to close the loop from assigned job to a later independent retest.
+
+Stone authorized the individual-feedback process P3 and Cousins progression, the P5 QB-center identification teaching process, and continuation of individual development in P8. Other marked proposals remain pending. Start Cousins from his [2013 evidence assessment](../player_development/kirk_cousins.md), preserving demonstrated operation and targeting the unresolved job. Do not reset him to a beginner plan or infer broad mastery from results alone.
+
+All work remains within this phase’s calendar, contact, medical and voluntary-participation limits. The actual phase output owns new practice evidence; the delivery log owns actual distribution. A prepared packet is not a delivered tape. No historic January delivery is backdated. New role assignments and Boot Flood’s return require their separate decisions.
+
+## Player playbook access and evidence rule
+
+Every participant may possess and study the **complete active 2013 Iteration I playbook**. The phase plan controls what the staff formally installs, practices, and evaluates together; it does not ration access to pages. A player may read ahead and ask about later material. He is evaluated on what has actually been assigned and taught for the phase.
+
+No preset personnel percentage, snap share, rep quota, touch quota, or depth-chart probability determines the result of this phase. Reps and roles are adjusted from football evidence: assignment, communication, technique, physical execution, health, correction retention, matchup, special teams, and what the player demonstrates in practices and games. The plan creates opportunities to evaluate; it does not manufacture the answer.
+
+
+This is the first planned checkpoint where Jacksonville expects the veteran roster and young-player group to operate the same football language together under a mandatory club phase, subject to medical, excused-absence, and CBA rules.
+
+The target is **Better**. Players should not merely know isolated assignments. Units should begin solving ordinary football problems without a coach manually arranging every answer.
+
+Jacksonville is not eligible for an additional new-head-coach voluntary veteran minicamp in 2014.
+
+## 1. Minicamp purpose
+
+The staff uses veteran minicamp to answer:
+
+- Is the core system understood across the roster?
+- Can veterans and rookies communicate the same terms?
+- Do the core concepts survive different personnel and formations?
+- Can the offense identify and answer common pressure/presentation problems?
+- Can the defense change presentation without busting its own rules?
+- Can special-teams units substitute and communicate without sideline rescue?
+- Which corrections from OTAs were retained?
+- Which players are ready for more responsibility in training camp?
+- Which concepts should be removed, simplified, or delayed?
+- What individual physical/technical work should each player take into the pre-camp period?
+
+This is a checkpoint, not the final roster trial.
+
+## 2. Pre-minicamp readiness gate
+
+Before practice:
+
+1. Confirm current roster/control status.
+2. Confirm medical participation status through qualified medical personnel.
+3. Confirm every player has the active 2013 playbook and current position-room material.
+4. Complete onboarding for any player acquired after the original welcome-package wave.
+5. Review unresolved teaching questions from OTAs.
+6. Freeze the minicamp install menu before evaluating execution. Do not change the exam after seeing who is struggling.
+7. Confirm the practice inventory, equipment/contact rules, and mandatory/excused attendance rules from the verified calendar/CBA source.
+
+A late roster addition gets an accelerated but honest install. Do not grade him as if he had months in the system.
+
+## 3. Minicamp operating sequence
+
+Use a progression rather than three disconnected practice scripts.
+
+### Work block A — establish the common floor
+
+Re-establish:
+
+- huddle/substitution mechanics;
+- personnel communication;
+- core formations;
+- cadence;
+- offensive protection point;
+- defensive front/coverage communication;
+- special-teams alignment;
+- major core concepts.
+
+This block answers: **can the full roster execute the language together?**
+
+### Work block B — change the picture
+
+Once the base is stable, vary:
+
+- offensive personnel;
+- formation;
+- shift/motion;
+- defensive front;
+- shell;
+- pressure presentation;
+- down/distance;
+- field zone.
+
+Do not change every variable on the same rep merely to manufacture difficulty.
+
+### Work block C — situational operation
+
+Stress the team's decision-making and communication with:
+
+- third down;
+- red zone;
+- low red zone/goal-line communication as permitted;
+- backed-up offense;
+- sudden change;
+- two minute;
+- four minute;
+- end-of-half/end-of-game awareness;
+- substitution after an injury/absence scenario;
+- noise/communication stress through lawful teaching methods.
+
+### Work block D — correction and retention
+
+Re-run the problems that appeared earlier. The staff learns more from a corrected repeat than from continuously unveiling new calls.
+
+## 4. Offensive minicamp objectives
+
+The offense should demonstrate a functional core across more than one presentation.
+
+### Core menu
+
+The Iteration I core remains the center:
+
+- Power;
+- Counter;
+- Inside Zone;
+- Outside Zone;
+- Stick;
+- Mesh;
+- Drive;
+- Y-Cross;
+- Four Verticals;
+- Boot Flood;
+- RB Slow Screen.
+
+Not every variant must be active. The staff selects the versions the roster can actually execute.
+
+### Personnel portability
+
+Test the concept rather than the costume.
+
+Where roster personnel permit:
+
+- run the same concept from different formations;
+- move Y/H/F responsibilities without changing the teaching definition;
+- use 11/12/21 and other supported groups without turning the personnel signal into a play tell;
+- ask substitutes to enter without forcing the offense into a different language.
+
+A concept that works only with one exact eleven may still be useful, but the staff should know that limitation before camp.
+
+### Protection
+
+The unit should communicate and execute the base protection families tied to the minicamp menu.
+
+Evaluate:
+
+- point identification;
+- line echo/combination calls;
+- back responsibility;
+- quarterback hot/weak-point recognition;
+- response to overload/mugged presentations;
+- twist/game communication;
+- whether protection answers are being solved by rules or by coaches shouting the answer before the snap.
+
+### Motion and shifts
+
+Use motion/shift only with a purpose:
+
+- leverage;
+- coverage identification;
+- strength;
+- blocking angle;
+- role movement;
+- matchup.
+
+If motion causes more offensive confusion than defensive stress, reduce it.
+
+### Tempo
+
+NORMAL should be dependable.
+
+HOLD/ROTATE should be operational.
+
+PRESS receives only calls the current eleven can communicate cleanly at speed. The minicamp goal is not to prove Jacksonville can hurry into mistakes.
+
+## 5. Quarterback competition and teaching
+
+Quarterbacks are evaluated on the job the offense actually asks them to do.
+
+Review:
+
+- huddle command;
+- cadence;
+- pre-snap identification;
+- protection communication;
+- progression discipline;
+- timing/ball placement;
+- ball security;
+- pressure response;
+- movement within structure;
+- situational operation;
+- communication after a mistake;
+- retention of previous corrections.
+
+Do not reduce the room to completion percentage from a non-contact minicamp. Context matters.
+
+A quarterback who makes the correct decision and misses the throw has a different correction from one who repeatedly misidentifies the picture.
+
+Cousins remains QB1. No reserve quarterback job is declared from one scripted practice; Stone decides QB2/QB3 from accumulated evidence among controlled players.
+
+## 6. Offensive-line minicamp objectives
+
+The line must function as five people using one set of rules.
+
+Evaluate:
+
+- point/combination communication;
+- run-game first steps and leverage;
+- combination timing;
+- backside responsibility;
+- protection set/landmarks;
+- twist/game exchanges;
+- movement/screen responsibilities;
+- recovery after a communication error;
+- ability to execute when the formation/personnel changes.
+
+The staff should identify combinations that need training-camp reps together without pretending a minicamp lineup is the final depth chart.
+
+## 7. Skill-position minicamp objectives
+
+### Running backs / fullbacks
+
+- run-track consistency;
+- ball security;
+- protection identification;
+- scan/check;
+- screen timing;
+- route responsibilities;
+- motion/flex;
+- communication with quarterback/line;
+- special teams.
+
+### Tight ends / H-backs
+
+- attached/detached alignments;
+- run-block responsibility;
+- protection;
+- route jobs;
+- motion/shift;
+- personnel portability;
+- special teams.
+
+### Receivers
+
+- split discipline;
+- release;
+- route depth/landmark;
+- leverage;
+- spacing with adjacent routes;
+- blocking responsibility;
+- motion;
+- scramble/drill rules if installed;
+- special teams for players whose role requires it.
+
+Cross-training is earned after the player can execute a primary job.
+
+## 8. Defensive minicamp objectives
+
+The defense moves from knowing rules to communicating them as a unit.
+
+### Base defensive floor
+
+Every installed call must establish:
+
+- front;
+- gap/fit;
+- coverage;
+- force/support;
+- pressure responsibility if any;
+- adjustment ownership;
+- communication chain.
+
+### Change the quarterback's picture
+
+Only after base rules are stable, work:
+
+- late safety movement;
+- changing front presentation;
+- simulated/exchange pressure presentation available in the current scheme;
+- man/zone/match communication as actually installed;
+- showing pressure and bringing fewer;
+- changing rush origin without creating free gaps through confusion.
+
+The defense does not receive credit for looking complex before the snap if it becomes unsound after it.
+
+### Run defense
+
+Evaluate whether the unit can:
+
+- fit correctly;
+- maintain leverage;
+- communicate movement;
+- keep edge/contain;
+- bring secondary support into the fit without abandoning coverage rules.
+
+### Pass defense
+
+Evaluate:
+
+- leverage;
+- route distribution;
+- handoff/communication;
+- pressure/rush-lane coordination;
+- scramble response;
+- explosive-play prevention.
+
+## 9. Defensive position-room emphasis
+
+**Defensive line**
+- alignment;
+- strike/separate;
+- gap control;
+- edge/contain;
+- rush lane;
+- stunt/game communication where installed.
+
+**Linebackers**
+- front recognition;
+- fit;
+- coverage landmark;
+- backfield key;
+- pressure responsibility;
+- pursuit;
+- communication.
+
+**Defensive backs**
+- leverage;
+- coverage call;
+- route distribution;
+- safety/corner communication;
+- force/support;
+- disguise without assignment loss;
+- pursuit/tackling position.
+
+## 10. Special-teams minicamp objectives
+
+The units should operate as actual units.
+
+Test:
+
+- personnel substitutions;
+- primary and backup jobs;
+- communication;
+- punt operation;
+- punt return;
+- kickoff;
+- kickoff return;
+- field-goal/PAT operation;
+- field-goal block;
+- emergency substitution paths;
+- ball security and situational awareness.
+
+Special-teams performance can meaningfully affect later roster decisions, but this minicamp is not the final answer.
+
+## 11. Physical and recovery objectives
+
+Minicamp adds football-density stress without turning into training camp.
+
+Performance/medical staff monitor, within period-appropriate methods:
+
+- technique under repeated work;
+- movement quality;
+- recovery;
+- reported soreness/injury;
+- whether a player's football technique degrades with accumulated reps;
+- whether a prior rehabilitation/conditioning plan needs adjustment.
+
+Medical staff control restrictions.
+
+Coaches may reduce football workload inside the permitted inventory based on performance/medical recommendations. They do not clear an injured player.
+
+## 12. Teaching and correction standard
+
+A coach should never end minicamp with only "he struggled."
+
+For each player who struggled, identify:
+
+- what the assignment was;
+- whether he understood it;
+- whether communication failed;
+- whether technique failed;
+- whether the physical matchup exposed a limitation;
+- whether workload/recovery mattered;
+- whether the teaching itself was unclear;
+- what the next correction is.
+
+For each player who excelled, identify what should be preserved rather than manufacturing a flaw to prove the standard is demanding.
+
+## 13. Good -> Better evaluation
+
+The expected movement is:
+
+**Good:** knows job, aligns, communicates, executes base technique.
+
+**Better:** retains corrections, handles changed looks, needs less prompting, reproduces technique, understands adjacent responsibilities enough to communicate.
+
+**Best for this phase:** operates fast, self-corrects routine issues, helps stabilize the unit, and handles situational variation without losing his own job.
+
+"Best for this phase" is not a permanent player grade and does not use a numeric rating.
+
+## 14. Family-inclusive veteran-minicamp dinner
+
+Schedule one **full-team Veteran Minicamp Family Dinner** during the minicamp window.
+
+Invite:
+
+- every current Jacksonville player;
+- coaches;
+- appropriate football/support staff;
+- each person's invited family or meaningful guest.
+
+Purpose:
+
+- connect veteran and rookie families;
+- let families meet the people responsible for coaching/support;
+- make Player Development resources visible;
+- let the team spend time together without turning every interaction into football.
+
+Rules:
+
+- family/guest attendance is voluntary;
+- no family circumstance becomes a personnel grade;
+- no position meeting, install quiz, or depth-chart announcement is conducted at the dinner;
+- private support needs are routed discreetly after the event;
+- Stone keeps remarks short and does not turn the night into a culture speech;
+- if a player has an excused football absence, the dinner does not create a separate punitive attendance issue.
+
+Record the dinner in `mandatory_minicamp/output.md` when it actually occurs.
+
+## 15. Post-minicamp individual take-home plan
+
+Before players leave for the pre-camp period, each player should receive a concise football/physical development sheet containing only legitimate coaching/performance information:
+
+- primary football job(s);
+- two or three most important technique priorities;
+- concepts/responsibilities to review;
+- conditioning/strength emphasis from performance staff;
+- medical restrictions only through proper medical channels;
+- camp-entry expectations;
+- who to contact with questions.
+
+Do not overload the player with every weakness in the file.
+
+The sheet should answer: **what should I work on so I report to camp ready to compete?**
+
+## 16. Staff closeout
+
+Before closing the phase, coordinators and position coaches identify:
+
+- dependable core concepts;
+- concepts that need work;
+- concepts to remove/postpone;
+- communication issues;
+- likely training-camp competition groups;
+- special-teams paths;
+- teaching-method adjustments;
+- physical/readiness follow-up;
+- no final roster outcome unless a separate authorized personnel decision is actually made.
+
+## 17. Execution and record rule
+
+This file is the durable plan.
+
+When mandatory minicamp is actually run:
+
+- write the actual event to `output.md`;
+- use `standouts.md` for evidence-based standouts only;
+- update roster/register/current-state fields only when facts actually change;
+- append the phase closure to the season ledger;
+- keep current-state updates atomic;
+- preserve this plan unless the user changes the plan itself.
+
+## 2014 application
+
+Open with retention from the actual OTA output, including players who lawfully missed voluntary work. Complete their catch-up teaching without an attendance penalty. Use blocks A through D to establish the common language, change the picture, rehearse situations, then correct and retest. No contact restriction is loosened because this event is mandatory.
+
+Cousins remains QB1; evaluate the actual reserve quarterbacks without assuming Henne re-signed or Bray received a futures contract. Interior-line and secondary competitions remain evidence-based. Use the adopted P1 communication handoff if approved; a scenario removing the lead is a teaching exercise, not a simulated injury. Boot Flood participates only if the P6 review and return decision have actually closed.
+
+Under adopted P3, every player receives an individual summer plan: assigned job, demonstrated strengths, unresolved correction, medical limitations through the proper channel, and the camp-entry retest. Report which concepts and evaluations are open, parked or closed. The family dinner remains a social/support event, with no football exam or penalty for a guest's absence.
+
+Before the break, Tice and Crennel deliver a narrow camp carry-forward menu and the evidence still needed for position decisions. Stone owns subsequent role choices; Caldwell owns contracts and cuts. A future player, medical clearance or camp date is not inferred to complete this document.

@@ -1,0 +1,27 @@
+# Individual teaching packet template
+
+**Player / owner / packet ID / revision:** fill when prepared. **Evidence cutoff:** actual reviewed checkpoint. **Preparation / media / contact gate / distribution:** separate statuses per [workflow](README.md).
+
+## Player-facing explanation
+
+- **Keep:** the specific job already supported by evidence.
+- **Question:** what this packet is reviewing, without prejudging fault.
+- **Your assigned answer:** active-book rule and the assignment actually taught.
+- **Correction:** the supported change, or “cause undetermined” with the missing evidence.
+- **Your cue:** one concise instruction tied to that change.
+- **Explain it back:** the decision/communication question to answer when teaching is permitted.
+- **Next work:** lawful repeat, later changed presentation and what would support advancement.
+
+## Source and comparison table
+
+| Clip/reference ID | Repository source and exact locator | Observed fact | Expected job and source | Cause / confidence / owner | Comparison and limits | Media reference / angle / in-out |
+|---|---|---|---|---|---|---|
+| To be assigned | Actual event / JSON pointer or output section | What is recorded, not imagined | Undetermined if assignment absent | Multiple causes allowed; unknown stays unknown | Correct example supported, or comparison missing | No media supplied until a real asset is verified |
+
+## Review and release
+
+Position-coach review, shared-room reconciliation and staff contribution: pending until actually completed. Record reviewer, date and changes when they occur. Before release, check control/eligibility, the permitted activity/date and medical instructions. Log actual distribution in [delivery_log.md](delivery_log.md); a drafted packet is not a sent tape.
+
+## Retest reference
+
+Link actual output evidence after teaching. State what was tested, at what lawful speed, with what support and whether the response was prompted, immediate or retained later. Do not prefill the result.

@@ -13,7 +13,7 @@
 | [timeline.md](timeline.md) | The readable 2014 chronology: requests, permissions, interviews, departures, vacancies, new hires and unresolved next steps. |
 | [requests_and_outcomes.md](requests_and_outcomes.md) | **Canon (Entry 75).** The resolved January 2014 carousel: every club's head-coach decision, each request for a Jacksonville assistant, Jacksonville's answer, each interview and each departure. Generated from [carousel_results.json](carousel_results.json). |
 | [carousel_method.json](carousel_method.json) | The weighted method, committed before the draw: base rates, request weights, Jacksonville's default permission policy, offers and dates. Rules from `library/2014_coaching_hiring_and_anti_tampering_rules.md`; script `scripts/coaching_carousel.py`. |
-| [staff_plan.md](staff_plan.md) | Awaiting the user: Stone's replacement targets. **The special teams coordinator job is vacant.** |
+| [staff_plan.md](staff_plan.md) | Bobby April selected at the presented terms; branch employment/permission and the hiring outcome remain unresolved. **The special teams coordinator job remains vacant.** |
 | [interest_assessment.md](interest_assessment.md) | First-pass assessment written before the rules were researched. **Not canon**; kept as the ex-ante record. |
 | [hires.md](hires.md) | Jacksonville's replacement-search and appointment record. No search event or hire recorded yet. |
 

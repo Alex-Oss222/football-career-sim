@@ -37,9 +37,9 @@ The January entries below come from the [closed request and outcome record](requ
 
 | Item | Current position | Next step |
 |---|---|---|
-| Jacksonville special teams coordinator | Vacant; no replacement candidate or offer selected | Stone's target order and terms go in [staff_plan.md](staff_plan.md); actual search events and appointments go in [hires.md](hires.md) |
+| Jacksonville special teams coordinator | Vacant; Bobby April selected as the search target at the terms in the plan; no approach, offer or appointment recorded | Resolve April’s branch employment/rights and permission under [staff_plan.md](staff_plan.md); actual search events and appointments go in [hires.md](hires.md) |
 | Post-Super Bowl coaching market | Buffalo's and Minnesota's head-coach decisions are deferred beyond February 2 | Resolve the existing deferred procedure when the career clock passes February 2; record any resulting Jacksonville requests and outcomes before updating this timeline |
-| Replacement spending | Existing salaries are known; available hiring allocation and replacement terms are not set | Reconcile the proposed commitment within Stone's contractual staff-budget authority and Caldwell's broader budget authority |
+| Replacement spending | Existing salaries are known; April’s opening terms and ceiling are selected in the plan, with no new commitment booked | Reconcile the proposed commitment within Stone's contractual staff-budget authority and Caldwell's broader budget authority |
 
 An open item has no completed-event row until something happens. The Super Bowl clubs have not been assigned a firing, request or hire here.
 

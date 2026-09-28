@@ -68,3 +68,7 @@ The postseason uses the same one-command workflow, with weeks numbered 18 (Wild 
 ## Before a game
 
 Read [game readiness](../state/game_readiness.md) and run `python scripts/check_game_readiness.py`. That command fails while any game prerequisite remains unverified. Repository validation, populated schedule folders and deterministic packet tests do not authorize a game. Keep private engine state outside Git, public logs and coach-facing files.
+
+## Individual training and film records
+
+For 2014, start at [the training index](../career/2014/offseason/README.md). A planning-only change may refine the session, packet and player progression without advancing state. When actual teaching occurs, write the phase output first and link its evidence from the individual record. When a packet is distributed, record the actual packet revision, recipient, date, lawful basis and source in [the delivery log](../career/2014/offseason/film/delivery_log.md), then update the queue pointer. Preparation, distribution, acknowledgment, comprehension and delayed retention are separate facts. Keep historical promises and unknown receipts honest. Any accompanying role, roster, staff, medical or time change also requires the normal atomic canon updates above.
