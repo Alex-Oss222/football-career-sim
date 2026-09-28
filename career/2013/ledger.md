@@ -1616,10 +1616,63 @@ The Jets, Tennessee, Minnesota and St. Louis have byes.
 
 **Commit closed - Canonical update - December 29, 2013 - Postseason bracket built (Wild Card slate set) - canonical through December 29, after Week 17**
 
+## Entry 62: AFC Wild Card at Kansas City closed
 
-## Entry 62 - Player birth dates, calendar ages and historical retirement audit
+**Effective canonical state:** January 4-5, 2014, after the Wild Card round
+**Recorded:** September 28, 2026
+**Checkpoint:** `Canonical update - January 5, 2014 - AFC Wild Card at Kansas City closed`
+**Preceding global package checkpoint:** `Canonical update - December 29, 2013 - Postseason bracket built (Wild Card slate set)`
 
-**Effective:** December 29, 2013, after Week 17; administrative reconciliation only.
+**Result.** Jacksonville 38, Kansas City 14 at Arrowhead Stadium (Sat. January 4, 4:35 p.m. ET, NBC). Jacksonville (AFC 5) advances to the Divisional round at Tennessee (AFC 2), Sat. January 11, 8:15 p.m. ET, CBS. Stone's NFL postseason head-coaching record is 2-1.
+
+**Batch.** The four Wild Card games (postseason week 18) closed once each under kernel 2013.10 as `postseason` games. They were drawn from the package frozen by `build_week_inputs.py 18` (sha256 `69ff1ada...`) after the four-game exclusivity gate passed. Jacksonville's unit was inspected before the close: 46 dressed, with exactly Stone's seven inactives. The call sheet and depth chart were committed before the draw. Receipts are in `career/2013/stats/postseason_receipts/` (Jacksonville full, others compact_stats). Standings, the regular-season statbook and the calibration audit are unchanged. No postseason awards are drawn (Entry 61).
+
+**Inputs.**
+- **Call sheet:** Stone's fifteen calls, 12 personnel base, no new family, Boot Flood off.
+- **Lineup:** no reshuffle; the established seven inactives.
+- **Scouting:** position-coach draft work frozen for the postseason by Stone. The plan's scouting section is otherwise handled outside this record at the user's direction.
+
+**Game.**
+- **Jacksonville offense:** 504 yards (179 rushing, 325 passing), 7 of 13 on third down, one sack allowed, one turnover.
+  - Scoring: five touchdowns in the first 33 minutes. Jones-Drew ran 33 on Split; Lewis caught 13 on Texas and 32 on Sprint Flood; Shorts ran 4; Shorts caught 12 on the Power Pass Post-Cross. Scobee added a 22-yard field goal.
+  - Cousins: 20 of 30 for 325 yards, three touchdowns, no interception.
+  - Jones-Drew: 22 carries for 144 and a touchdown; lost one fumble (DeVito).
+- **Defense:**
+  - Allen's interception on the game's seventh snap set up the first touchdown.
+  - Rambo intercepted at the goal line to end an 84-yard Kansas City drive.
+  - Kansas City ran for 47 yards; Charles had 13 carries for 48. Avery caught 12 of 13 targets for 111.
+  - Daryl Smith had 14 tackles and a sack; Marks had a sack.
+- **Game management:** Stone entered no decision. The end-game check came at 3:41 with a 24-point lead, and the drive ended in three kneel-downs from the real 2012 drive for that cell.
+
+**Other Wild Card games:**
+
+| Result | Notes |
+|---|---|
+| Dallas 40, New Orleans 10 | |
+| Buffalo 33, Pittsburgh 30 | Overtime: Pittsburgh field goal on the first possession, Buffalo matched, Suisham missed from 48, Carpenter's 32-yarder won it in the second overtime period. Modified sudden death applied as the 2013 rules require. |
+| Philadelphia 30, Tampa Bay 20 | |
+
+Roundup: `career/2013/league_results/week_18.md`.
+
+**Divisional pairings (reseeded, per Entry 61):**
+
+| Date and kickoff (ET) | Game | Seeds |
+|---|---|---|
+| Sat. Jan. 11, 4:35 p.m., FOX | Dallas at Minnesota | NFC 6 at 1 |
+| Sat. Jan. 11, 8:15 p.m., CBS | Jacksonville at Tennessee | AFC 5 at 2 |
+| Sun. Jan. 12, 1:05 p.m., FOX | Philadelphia at St. Louis | NFC 4 at 2 |
+| Sun. Jan. 12, 4:40 p.m., CBS | Buffalo at the Jets | AFC 6 at 1 |
+
+**Availability.**
+- **Montell Owens:** out, lower extremity, minor; projected return January 5, 2014.
+- **Adam Thielen:** out, lower extremity, minor; projected return January 6, 2014.
+- Both projections fall before the Divisional game; no other Jacksonville status changed.
+
+**Commit closed - Canonical update - January 5, 2014 - AFC Wild Card at Kansas City closed - canonical through January 5, 2014, after the Wild Card round**
+
+## Entry 63 - Player birth dates, calendar ages and historical retirement audit
+
+**Effective:** January 5, 2014, after the AFC Wild Card round; administrative reconciliation only.
 **Recorded:** September 28, 2026.
 **Authority:** User request to check and update player ages in their proper simulation records and research historical retirement dates.
 
@@ -1627,10 +1680,10 @@ The prior current player tables had no populated DOB/age fields. Added a sourced
 
 Document 4 and the readable roster now show DOB and completed calendar age. The league age view is generated from the same source. Ages refresh from Document 5's master date, and repository validation rejects stale columns or a stale as-of marker. Weekly preparation includes ages at each actual game date as public metadata outside TeamInput and the outcome packet. Birthdays do not change hidden anchors, seeded results, depth order or eligibility.
 
-Historical retirement research is retained in `archive/2013_jacksonville_historical_retirements.md`, with announcement dates distinguished from effective periods and ceremonial contracts. Unverified dates stay unknown. This is an explicitly requested historical audit, not a simulation event: no real later retirement, injury, result or current real-world status is imported into branch availability. A simulation retirement still requires a dated branch event under the existing rules. Meester remains on the branch roster for Wild Card preparation.
+Historical retirement research is retained in `archive/2013_jacksonville_historical_retirements.md`, with announcement dates distinguished from effective periods and ceremonial contracts. Unverified dates stay unknown. This is an explicitly requested historical audit, not a simulation event: no real later retirement, injury, result or current real-world status is imported into branch availability. A simulation retirement still requires a dated branch event under the existing rules. Meester remains on the branch roster for Divisional preparation.
 
-**Correction:** Document 4's header, identity and ending control block still displayed October 27 / Week 8 even though its version and player rows were through December 29 / Week 17. Reconciled those stale date/phase/next-event labels to Document 5 and Entries 60-61. Historical October 27 records remain dated history.
+**Correction:** Document 4's header, identity and ending control block still displayed October 27 / Week 8 even though its version and player rows were through January 5 / AFC Wild Card. Reconciled those stale date/phase/next-event labels to Document 5 and Entry 62. Historical October 27 records remain dated history.
 
-**Dependency closure:** Birth-date evidence and verification notes; roster and register DOB/age columns; generated league ages; age renderer and validation; weekly preparation metadata; current-state version manifest; workflow/index pointers. Roster control, medical restrictions, finances, game receipts, scores and standings do not change. No football event or retirement was simulated, and the clock remains December 29, 2013.
+**Dependency closure:** Birth-date evidence and verification notes; roster and register DOB/age columns; generated league ages; age renderer and validation; weekly preparation metadata; current-state version manifest; workflow/index pointers. Roster control, medical restrictions, finances, game receipts, scores and standings do not change. No football event or retirement was simulated, and the clock remains January 5, 2014.
 
-**Commit closed - Canonical update - December 29, 2013 - Player age register reconciled - canonical through December 29, after Week 17**
+**Commit closed - Canonical update - January 5, 2014 - Player age register reconciled - canonical through January 5, 2014, after the AFC Wild Card round**

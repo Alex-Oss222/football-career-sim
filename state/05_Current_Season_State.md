@@ -1,11 +1,11 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2013-DEC29-PLAYER-AGES-STATE-38`
-**Supersedes:** `JAX-2013-DEC29-POSTSEASON-BRACKET-STATE-37`
-**Snapshot effective:** December 29, 2013, after Week 17 (Indianapolis 23, Jacksonville 22); regular season complete.
-**Last reconciled:** September 28, 2026; season-ledger Entry 62.
-**Global package checkpoint:** `Canonical update - December 29, 2013 - Player age register reconciled`
+**Version:** `JAX-2014-JAN05-PLAYER-AGES-STATE-39`
+**Supersedes:** `JAX-2014-JAN05-WILDCARD-STATE-38`
+**Snapshot effective:** January 5, 2014, after the AFC Wild Card round (Jacksonville 38, Kansas City 14).
+**Last reconciled:** September 28, 2026; season-ledger Entry 63.
+**Global package checkpoint:** `Canonical update - January 5, 2014 - Player age register reconciled`
 
 ## Effective source-version manifest
 
@@ -14,22 +14,23 @@
 | Document 1 | `358ccf4feac40830055bae5e4cbd84151536ab9e` | Active foundation source |
 | Document 2 | `ab790f6e935c99a901a6d39cf3bee5183cf4da3e` | Active foundation source |
 | Document 3 | `38e0ce21e9cf1b62f8d4b9c281955facdaf07b57` | Active foundation source |
-| Document 4 | `JAX-2013-DEC29-PLAYER-AGES-REGISTER-30`; closed by Entry 62 | Controlled 53, all active, practice squad, roles and availability after Week 17 |
-| Document 6 | 2013 ledger through Entry 62 | Week 17 closed; regular season complete; postseason bracket built |
+| Document 4 | `JAX-2014-JAN05-PLAYER-AGES-REGISTER-31`; closed by Entry 63 | Controlled 53, all active, practice squad, roles and availability after the Wild Card round |
+| Document 6 | 2013 ledger through Entry 63 | Regular season complete; AFC Wild Card closed; player ages reconciled |
 
 ## 1. Master clock and competition position
 
 | Field | Current canonical value |
 |---|---|
-| Master date/time | December 29, 2013, after Week 17 at Indianapolis |
+| Master date/time | January 5, 2014, after the AFC Wild Card round |
 | League/season | NFL, 2013 |
 | Team / head coach | Jacksonville Jaguars / Alex Stone |
 | Callers | Stone offense; Romeo Crennel defense; Alan Lowry special teams |
-| Season phase | Regular season complete; AFC Wild Card preparation |
+| Season phase | Postseason; AFC Divisional preparation |
 | Preseason record | **2-2** |
 | Regular-season record | **10-6 (final)** |
-| Last event | Week 17: Indianapolis 23, Jacksonville 22 (Entry 60) |
-| Next competitive event | **AFC Wild Card (5 at 4) at Kansas City, Sat. January 4, 2014, 4:35 p.m. ET, NBC: NOT SIMULATED** |
+| Postseason record | **1-0** |
+| Last event | AFC Wild Card: Jacksonville 38, Kansas City 14 (Entry 62) |
+| Next competitive event | **AFC Divisional (5 at 2) at Tennessee, Sat. January 11, 2014, 8:15 p.m. ET, CBS: NOT SIMULATED** |
 
 ## 2. Roster and finance
 
@@ -43,11 +44,11 @@
 | Personnel/contracts/cap authority | David Caldwell |
 | Football roles | Alex Stone within eligibility and medical limits |
 
-Player birth dates and ages are in Document 4, the [roster](../career/2013/roster.md) and [league age view](../career/2013/player_ages.md). Ages are derived at the master date and checked on every repository validation; run `python scripts/render_player_ages.py` after a date or roster change. Entry 62 added identity metadata without advancing time or retiring anyone.
+Player birth dates and ages are in Document 4, the [roster](../career/2013/roster.md) and [league age view](../career/2013/player_ages.md). Ages are derived at the master date and checked on every repository validation; run `python scripts/render_player_ages.py` after a date or roster change. Entry 63 added identity metadata without advancing time or retiring anyone.
 
 ## 3. Availability
 
-Weeks 14-17 generated no Jacksonville injury. Paul Posluszny (Week 13, head/neck) is under an independent medical hold, long-term, projected return April 5, 2014; he is out for the regular season, and no reserve-list move has been made (a Caldwell transaction). Travis Kelce's Week 13 injury cleared at its projected return (December 3); he dressed in Week 14. Alan Ball is out (Week 10; projected return January 22, 2014); no reserve-list move has been made. Rackley is limited (minor, no projected absence). C.J. Wilson is out (projected return January 30, 2014). Pasztor and Mosley are available. Every other status requires fresh medical communication before the Wild Card game.
+The Wild Card game produced two minor Jacksonville injuries: Montell Owens (lower extremity; out, projected return January 5, 2014) and Adam Thielen (lower extremity; out, projected return January 6, 2014), both before the Divisional game. Weeks 14-17 generated no Jacksonville injury. Paul Posluszny (Week 13, head/neck) is under an independent medical hold, long-term, projected return April 5, 2014; he is out for the regular season, and no reserve-list move has been made (a Caldwell transaction). Travis Kelce's Week 13 injury cleared at its projected return (December 3); he dressed in Week 14. Alan Ball is out (Week 10; projected return January 22, 2014); no reserve-list move has been made. Rackley is limited (minor, no projected absence). C.J. Wilson is out (projected return January 30, 2014). Pasztor and Mosley are available. Every other status requires fresh medical communication before the Divisional game.
 
 ## 4. Current football roles
 
@@ -65,20 +66,22 @@ All four preseason games were generated through `runtime.game_runner.run_game` f
 
 ## 6. League position and statistics
 
-The regular season is complete. Jacksonville finished 10-6, second in the AFC South: Tennessee also finished 10-6 and won the division on division record (4-2 against 3-3) after a 1-1 season split. Jacksonville is the AFC's fifth seed, a wild card, and plays at fourth-seeded Kansas City (9-7). AFC seeds: Jets, Tennessee, Pittsburgh, Kansas City, Jacksonville, Buffalo. NFC seeds: Minnesota, St. Louis, New Orleans, Philadelphia, Tampa Bay, Dallas (`career/2013/standings.md`). Two hundred fifty-six of two hundred fifty-six receipts are preserved; Week 14's are event generation 2 (Entry 57). Weeks 1-3 are the legacy kernel cohort, Weeks 4-8 are kernel 2013.6, Weeks 9-10 kernel 2013.7, Weeks 11-12 kernel 2013.8, Week 13 kernel 2013.9 and Week 14 onward kernel 2013.10, each audited as its own cohort. Every graded band-audit row is WITHIN and every ledger-coherence count is zero. The known field-position and downs gaps (Entries 39-45) produced impossible safeties in Weeks 5 and 6, San Diego's two-play touchdown drive in Week 7 and Jacksonville's short-field touchdown and a turnover on downs after an 18-yard gain in Week 8, none of which the coherence check can see. Kernel 2013.6 also gives its small home term to the designated home team at a neutral site. Kernel 2013.7 (field position, real per-drive chains and sacks, carrier-true labels, late-game fourth-down partition) was adopted as documented by the user (Entry 48): its three OUTSIDE acceptance rows are registered known detections. Weeks 9-10 ran under it and Week 11 onward under kernel 2013.8 (Entry 51); Weeks 1-8 are never rerun. The neutral-site home term is unchanged in 2013.7.
+**Postseason.** Jacksonville (AFC 5) beat Kansas City 38-14 in the Wild Card round (Entry 62). The other results: Dallas 40, New Orleans 10; Buffalo 33, Pittsburgh 30 in overtime; Philadelphia 30, Tampa Bay 20. The four postseason receipts are in `career/2013/stats/postseason_receipts/`; the bracket is `career/2013/postseason/README.md`. No postseason awards are drawn.
+
+The regular season is complete. Jacksonville finished 10-6, second in the AFC South: Tennessee also finished 10-6 and won the division on division record (4-2 against 3-3) after a 1-1 season split. Jacksonville was the AFC's fifth seed, a wild card, and won at fourth-seeded Kansas City (9-7) in the Wild Card round. AFC seeds: Jets, Tennessee, Pittsburgh, Kansas City, Jacksonville, Buffalo. NFC seeds: Minnesota, St. Louis, New Orleans, Philadelphia, Tampa Bay, Dallas (`career/2013/standings.md`). Two hundred fifty-six of two hundred fifty-six receipts are preserved; Week 14's are event generation 2 (Entry 57). Weeks 1-3 are the legacy kernel cohort, Weeks 4-8 are kernel 2013.6, Weeks 9-10 kernel 2013.7, Weeks 11-12 kernel 2013.8, Week 13 kernel 2013.9 and Week 14 onward kernel 2013.10, each audited as its own cohort. Every graded band-audit row is WITHIN and every ledger-coherence count is zero. The known field-position and downs gaps (Entries 39-45) produced impossible safeties in Weeks 5 and 6, San Diego's two-play touchdown drive in Week 7 and Jacksonville's short-field touchdown and a turnover on downs after an 18-yard gain in Week 8, none of which the coherence check can see. Kernel 2013.6 also gives its small home term to the designated home team at a neutral site. Kernel 2013.7 (field position, real per-drive chains and sacks, carrier-true labels, late-game fourth-down partition) was adopted as documented by the user (Entry 48): its three OUTSIDE acceptance rows are registered known detections. Weeks 9-10 ran under it and Week 11 onward under kernel 2013.8 (Entry 51); Weeks 1-8 are never rerun. The neutral-site home term is unchanged in 2013.7.
 
 League awards (`career/2013/awards/`): Weeks 1-8 and September backfilled (Entry 47); Week 9 and October drawn at the Week 9 close (Entry 49); Weeks 10-17, November and December at their close (Entries 50, 52, 53, 55 and 57-60). Every closed week's awards are required by `validate_repository.py`; December's are drawn after Week 17.
 
 ## 7. Immediate next step
 
-The AFC Wild Card game at Kansas City (Saturday January 4, 2014, 4:35 p.m. ET, NBC; Arrowhead Stadium) is next. The postseason bracket is built (Entry 61; `career/2013/postseason/README.md`): the Wild Card round is postseason week 18, closed with `build_week_inputs.py 18` and `close_week.py 18 --close` as `postseason` games, with continuous overtime and receipts in `career/2013/stats/postseason_receipts/`.
+The AFC Divisional game at Tennessee (Saturday January 11, 2014, 8:15 p.m. ET, CBS; LP Field, Nashville) is next: AFC 5 Jacksonville at AFC 2 Tennessee, the teams' third meeting (Tennessee 41-11 in Week 10, Jacksonville 38-27 in Week 16). It is postseason week 19, closed with `build_week_inputs.py 19` and `close_week.py 19 --close`.
 
-- **Wild Card slate:** AFC 5 Jacksonville at 4 Kansas City (Sat. 4:35 p.m.), NFC 6 Dallas at 3 New Orleans (Sat. 8:10 p.m.), AFC 6 Buffalo at 3 Pittsburgh (Sun. 1:05 p.m.), NFC 5 Tampa Bay at 4 Philadelphia (Sun. 4:40 p.m.). The Jets, Tennessee, Minnesota and St. Louis have byes.
-- **Later rounds:** Divisional January 11-12 (reseeded), conference championships January 19, Super Bowl XLVIII February 2 at MetLife Stadium; each is built only after the round before it closes.
+- **Divisional slate (reseeded):** NFC 6 Dallas at 1 Minnesota (Sat. 4:35 p.m.), AFC 5 Jacksonville at 2 Tennessee (Sat. 8:15 p.m.), NFC 4 Philadelphia at 2 St. Louis (Sun. 1:05 p.m.), AFC 6 Buffalo at 1 Jets (Sun. 4:40 p.m.).
+- **Later rounds:** conference championships January 19 (the higher remaining seed hosts); Super Bowl XLVIII February 2 at MetLife Stadium.
 
 Stone's inputs needed:
 
-- the Wild Card plan as a structured call sheet, frozen to `career/2013/postseason/week_18_jacksonville_at_kansas_city/call_sheet.json`;
-- the Wild Card inactive list (the Week 17 list carries forward unless replaced).
+- the Divisional plan as a structured call sheet, frozen to `career/2013/postseason/week_19_jacksonville_at_tennessee/call_sheet.json`;
+- the Divisional inactive list (the Wild Card list carries forward unless replaced).
 
-**The Wild Card game has not been simulated.**
+**The Divisional game has not been simulated.**

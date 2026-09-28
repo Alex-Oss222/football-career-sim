@@ -3,9 +3,9 @@
 ## Document status
 
 - Function: Canonical register for current Jacksonville player control, staff operating authority, roster legality, contract/cap reconciliation, availability boundaries and football-role state.
-- Current status: **RECONCILED THROUGH ENTRY 62 (PLAYER AGE AUDIT)**.
-- Effective through: **December 29, 2013, after Week 17; player age audit closed**.
-- Progression authority: `career/2013/ledger.md`, Entry 62 (DOB/age reconciliation; no time advance), Entry 61 (postseason bracket), Entry 60 (Week 17 closed; regular season complete; no Jacksonville injury), Entry 59 (Week 16 closed; no Jacksonville injury; roles unchanged), Entry 58 (Week 15 closed; no Jacksonville injury; roles unchanged), Entry 57 (Week 14 closed as generation 2; Allen base LB for Posluszny; Kelce cleared; no injury), Entry 55 (Week 13 closed; Posluszny out, independent medical hold; Kelce out, minor; Bouye cleared and first outside reserve), Entry 53 (Week 12 closed; Rutland first outside reserve; Edwards dressed; no injury), Entry 52 (Week 11 closed; Harris starts; Mosley dressed; Bouye injured), Entry 50 (Week 10 closed; Ball injured; Pasztor dressed), Entry 49 (Week 9 bye; no deadline transaction), Entry 46 (Pasztor and Mosley projections recovered; both available), Entry 45 (Week 8 closed; Blackmon dressed), Entry 44 (Week 7 closed), after Entries 42-43 (Blackmon reinstated and activated October 7; Week 6 closed), Entry 41 (Week 5 closed; Posluszny returned; Thielen injured), Entry 40 (Week 4 closed under kernel 2013.6, Entry 39; Meester returned as reserve center), Entry 38 (Week 3 closed; Posluszny injured) and Entries 36-37 (Blackmon to Reserve/Suspended; Week 2 closed with Meester and C.J. Wilson injured).
+- Current status: **RECONCILED THROUGH ENTRY 63 (PLAYER AGES)**.
+- Effective through: **January 5, 2014, after the AFC Wild Card round**.
+- Progression authority: `career/2013/ledger.md`, Entry 63 (verified birth dates and calendar ages; administrative correction only), Entry 62 (AFC Wild Card closed; Owens and Thielen out, minor, projected back January 5 and 6; roles unchanged), Entry 61 (postseason bracket built; no roster change), Entry 60 (Week 17 closed; regular season complete; no Jacksonville injury), Entry 59 (Week 16 closed; no Jacksonville injury; roles unchanged), Entry 58 (Week 15 closed; no Jacksonville injury; roles unchanged), Entry 57 (Week 14 closed as generation 2; Allen base LB for Posluszny; Kelce cleared; no injury), Entry 55 (Week 13 closed; Posluszny out, independent medical hold; Kelce out, minor; Bouye cleared and first outside reserve), Entry 53 (Week 12 closed; Rutland first outside reserve; Edwards dressed; no injury), Entry 52 (Week 11 closed; Harris starts; Mosley dressed; Bouye injured), Entry 50 (Week 10 closed; Ball injured; Pasztor dressed), Entry 49 (Week 9 bye; no deadline transaction), Entry 46 (Pasztor and Mosley projections recovered; both available), Entry 45 (Week 8 closed; Blackmon dressed), Entry 44 (Week 7 closed), after Entries 42-43 (Blackmon reinstated and activated October 7; Week 6 closed), Entry 41 (Week 5 closed; Posluszny returned; Thielen injured), Entry 40 (Week 4 closed under kernel 2013.6, Entry 39; Meester returned as reserve center), Entry 38 (Week 3 closed; Posluszny injured) and Entries 36-37 (Blackmon to Reserve/Suspended; Week 2 closed with Meester and C.J. Wilson injured).
 - Detailed readable roster: `career/2013/roster.md`.
 - Current cap worksheet: `career/2013/offseason/current_cap_worksheet.md`.
 - Current calendar: `career/2013/calendar.md`.
@@ -21,17 +21,17 @@
 | Competition | NFL |
 | Season | 2013 |
 | Divergence point | January 15, 2013 — Alex Stone accepts Jacksonville head-coach offer |
-| Season phase | Regular season complete; AFC Wild Card preparation |
-| Owned content effective | December 29, 2013 |
-| Document 4 register version | `JAX-2013-DEC29-PLAYER-AGES-REGISTER-30` |
-| Supersedes | `JAX-2013-DEC29-WEEK17-REGISTER-29` |
-| Last content-changing checkpoint | `Canonical update - December 29, 2013 - Player age register reconciled` |
-| Latest Document 6 event | Entry 62: player age register reconciled; no football event or time advance |
+| Season phase | Postseason; AFC Wild Card closed; AFC Divisional preparation |
+| Owned content effective | January 5, 2014 |
+| Document 4 register version | `JAX-2014-JAN05-PLAYER-AGES-REGISTER-31` |
+| Supersedes | `JAX-2014-JAN05-WILDCARD-REGISTER-30` |
+| Last content-changing checkpoint | `Canonical update - January 5, 2014 - Player age register reconciled` |
+| Latest Document 6 event | Entry 63: verified birth dates and calendar ages; no roster, medical or clock change |
 | Current controlled players | **53** |
 | Current practice squad | **8; separate from active 53** |
 | Current regular-season planning room | **~$6.2M-$6.6M before weekly practice-squad charges** |
-| Next scheduled football event | AFC Wild Card at Kansas City, January 4, 2014, 4:35 p.m. ET: NOT SIMULATED |
-| Unresolved matter before participation | The Wild Card plan and inactives are Stone decisions; the Week 17 inactive list carries forward unless replaced |
+| Next scheduled football event | AFC Divisional at Tennessee, January 11, 2014, 8:15 p.m. ET: NOT SIMULATED |
+| Unresolved matter before participation | The Divisional plan and inactives are Stone decisions; the Wild Card list carries forward unless replaced |
 
 ## Canon and evidence conventions
 
@@ -112,7 +112,7 @@ These rules apply to every real player, staff member, executive, candidate, oppo
 | Reserve/Suspended | **0** | Blackmon's suspension (Weeks 2-5) ended; reinstated October 7 |
 | Practice-squad players | **8** | Separate from active 53 |
 
-Week 17 inactives were Posluszny, Ball, C.J. Wilson, Pendleton, Asper, John Parker Wilson and Mike Brown; Kelce, Pasztor, Mosley, Edwards, Bouye and Rutland dressed. Wild Card designations are not yet set; the Week 17 list carries forward unless Stone replaces it.
+Wild Card inactives were Posluszny, Ball, C.J. Wilson, Pendleton, Asper, John Parker Wilson and Mike Brown (Stone's plan); Kelce, Pasztor, Mosley, Edwards, Bouye and Rutland dressed. Divisional designations are not yet set; the Wild Card list carries forward unless Stone replaces it.
 
 ### Financial, contract and eligibility reconciliation
 
@@ -143,16 +143,16 @@ Staff remains unchanged from the closed late-January hiring phase. `career/2013/
 
 ### Reconciliation result
 
-- Register status: **RECONCILED THROUGH ENTRY 60**.
+- Register status: **RECONCILED THROUGH ENTRY 63**.
 - Roster/control: **53 controlled, all active (Blackmon activated October 7); eight-player practice squad separate**.
 - Cap: regular-season accounting; approximately **$6.2M-$6.6M** before weekly practice-squad charges.
-- Medical: no Week 8 injury; Rackley minor, limited, no projected absence; C.J. Wilson out (projected return January 30, 2014); Alan Ball out (Week 10 trunk; projected return January 22, 2014); A.J. Bouye cleared (Week 11 injury; projected return November 26 reached); Paul Posluszny out (Week 13 head/neck, independent medical hold; projected return April 5, 2014; no reserve-list move made); Travis Kelce cleared (Week 13 minor; projected return December 3 reached); no Week 14-17 injury; Pasztor and Mosley available (Entry 46).
+- Medical: no Week 8 injury; Rackley minor, limited, no projected absence; C.J. Wilson out (projected return January 30, 2014); Alan Ball out (Week 10 trunk; projected return January 22, 2014); A.J. Bouye cleared (Week 11 injury; projected return November 26 reached); Paul Posluszny out (Week 13 head/neck, independent medical hold; projected return April 5, 2014; no reserve-list move made); Travis Kelce cleared (Week 13 minor; projected return December 3 reached); no Week 14-17 injury; Montell Owens and Adam Thielen out (Wild Card, lower extremity, minor; projected return January 5 and January 6, 2014); Pasztor and Mosley available (Entry 46).
 - Football: Brewster the starting center (confirmed Week 6), Meester reserve center; Posluszny and Smith base linebackers (Posluszny out from Week 13; Russell Allen starts beside Smith from Week 14, Stanford first base reserve, Moore in Crennel's packages) with Smith the communication lead and Allen first off the bench; Bradfield sixth OL; Shorts WR1, Thielen WR2/H, Blackmon WR3/outside Z (dressed from Week 8), Clemons WR4, Brown WR5; edge order Babin, Mincey, Branch, Davis.
-- Next event: AFC Wild Card at Kansas City, January 4, 2014, 4:35 p.m. ET; **NOT SIMULATED**.
+- Next event: AFC Divisional at Tennessee, January 11, 2014, 8:15 p.m. ET; **NOT SIMULATED**.
 
 ## Jacksonville current transaction reconciliation
 
-**Current progression source:** [Season ledger, Entry 62](../career/2013/ledger.md), checkpoint `Canonical update - December 29, 2013 - Player age register reconciled`. Week 17 closed by Entry 60; postseason bracket by Entry 61. Historical control and availability events retain their original ledger pointers.
+**Current progression source:** [Season ledger, Entry 46](../career/2013/ledger.md#entry-46-pasztor-and-mosley-injury-projections-recovered), checkpoint `Canonical correction - October 27, 2013 - Pasztor and Mosley injury projections recovered`; Week 8 closed by Entry 45; Blackmon reinstated and activated by Entry 42.
 **Readable roster:** [career/2013/roster.md](../career/2013/roster.md).
 **Current cap worksheet:** [career/2013/offseason/current_cap_worksheet.md](../career/2013/offseason/current_cap_worksheet.md).
 **Current calendar:** [career/2013/calendar.md](../career/2013/calendar.md).
@@ -177,7 +177,7 @@ The old 75-person working count and the old unresolved inherited-control bucket 
 
 ### Current player index
 
-<!-- player-ages-as-of: 2013-12-29 -->
+<!-- player-ages-as-of: 2014-01-05 -->
 
 DOB is a verified pre-divergence identity fact, supported by the [birth-date evidence registry](../library/data/player_birth_dates.json) and [verification notes](../library/2013_player_birth_dates.md). Age is derived at Document 5's master date, refreshed with `python scripts/render_player_ages.py`. Practice-squad birth dates and ages appear in the [current roster](../career/2013/roster.md#4-practice-squad). An age does not determine a rating, medical clearance or retirement.
 
@@ -189,12 +189,12 @@ DOB is a verified pre-divergence identity fact, supported by the [birth-date evi
 | C.J. Anderson | JAX-CJANDERSON | RB | 1991-02-10 | 22 | Active 53 | Three-year UDFA minimum contract | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Jonathan Grimes | JAX-JONATHANGRIMES | RB | 1989-12-21 | 24 | Active 53 | Existing contract/control; not a March 12 free agent | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Maurice Jones-Drew | JAX-MAURICEJONESDREW | RB | 1985-03-23 | 28 | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Montell Owens | JAX-MONTELLOWENS | FB | 1984-05-04 | 29 | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Montell Owens | JAX-MONTELLOWENS | FB | 1984-05-04 | 29 | Active 53 | Existing contract/control | Out, lower extremity, minor (Wild Card); projected return January 5, 2014; fresh game-day communication required | Entry 62 |
 | Justin Blackmon | JAX-JUSTINBLACKMON | WR | 1990-01-09 | 23 | Active 53 | Existing rookie contract; 4/17 of 2013 base forfeited for Weeks 2-5, amount unresolved | No communicated restriction; WR3 / outside Z, dressed from Week 8 | Entry 45 |
 | Mike Brown | JAX-MIKEBROWN | WR | 1989-02-09 | 24 | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Toney Clemons | JAX-TONEYCLEMONS | WR | 1988-10-11 | 25 | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Cecil Shorts | JAX-CECILSHORTS | WR | 1987-12-22 | 26 | Active 53 | Existing rookie contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Adam Thielen | JAX-ADAMTHIELEN | WR | 1990-08-22 | 23 | Active 53 | Three-year UDFA minimum contract | No communicated restriction; fresh game-day communication required | Entry 43 |
+| Adam Thielen | JAX-ADAMTHIELEN | WR | 1990-08-22 | 23 | Active 53 | Three-year UDFA minimum contract | Out, lower extremity, minor (Wild Card); projected return January 6, 2014; fresh game-day communication required | Entry 62 |
 | Allen Reisner | JAX-ALLENREISNER | TE | 1988-09-29 | 25 | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Marcedes Lewis | JAX-MARCEDESLEWIS | TE | 1984-05-19 | 29 | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Travis Kelce | JAX-TRAVISKELCE | TE | 1989-10-05 | 24 | Active 53 | #33; rookie contract signed May 2 | Cleared (Week 13 minor injury; projected return December 3 reached); fresh game-day communication required | Entry 57 |
@@ -226,7 +226,7 @@ DOB is a verified pre-divergence identity fact, supported by the [birth-date evi
 | Alan Ball | JAX-ALANBALL | CB | 1985-03-29 | 28 | Active 53 | Branch signing; one year, $1.00M | Out, trunk (Week 10); projected return January 22, 2014 | Entry 50 |
 | A.J. Bouye | JAX-AJBOUYE | CB | 1991-08-16 | 22 | Active 53 | Three-year UDFA minimum contract | Cleared (Week 11 injury; projected return November 26 reached); fresh game-day communication required | Entry 55 |
 | Brent Grimes | JAX-BRENTGRIMES | CB | 1983-07-19 | 30 | Active 53 | Branch signing; one year, $5.50M fully guaranteed | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Mike Harris | JAX-MIKEHARRIS | CB | 1989-01-05 | 24 | Active 53 | Existing rookie contract | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Mike Harris | JAX-MIKEHARRIS | CB | 1989-01-05 | 25 | Active 53 | Existing rookie contract | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Jordan Poyer | JAX-JORDANPOYER | CB | 1991-04-25 | 22 | Active 53 | #64; rookie contract signed May 2 | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Kevin Rutland | JAX-KEVINRUTLAND | CB | 1988-04-02 | 25 | Active 53 | Existing contract/control | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Dwight Lowery | JAX-DWIGHTLOWERY | S | 1986-01-23 | 27 | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
@@ -431,11 +431,11 @@ Record only material, person-specific issues. Do not create a locker-room morale
 
 ### Base depth chart
 
-Current depth order is `career/2013/depth_chart.json` (effective December 23, Week 17 preparation; read by `runtime/week_inputs.py`), with decided roles in the Role column of `career/2013/roster.md`. The camp-era hierarchy in `career/2013/offseason/training_camp/position_battles.md` and `roster_decisions.md` is history.
+Current depth order is `career/2013/depth_chart.json` (effective December 30, AFC Wild Card preparation; read by `runtime/week_inputs.py`), with decided roles in the Role column of `career/2013/roster.md`. The camp-era hierarchy in `career/2013/offseason/training_camp/position_battles.md` and `roster_decisions.md` is history.
 
 ### Personnel and situational packages
 
-The offensive menu is the latest weekly structured call sheet (Week 17: `career/2013/regular_season/week_17_jacksonville_at_indianapolis/call_sheet.json`; the Wild Card sheet is not yet supplied). Offensive roles are evidence-driven and have no preset shares. Stone calls offense and Crennel calls defense.
+The offensive menu is the latest weekly structured call sheet (AFC Wild Card: `career/2013/postseason/week_18_jacksonville_at_kansas_city/call_sheet.json`; the Divisional sheet is not yet supplied). Offensive roles are evidence-driven and have no preset shares. Stone calls offense and Crennel calls defense.
 
 ### Special-teams assignments
 
@@ -676,12 +676,12 @@ This table is generated from Document 6 and is only a navigation aid. Active unr
 
 ## End-of-update control block
 
-- Effective through: December 29, 2013, after Week 17; age audit Entry 62.
-- Document 4 register version: `JAX-2013-DEC29-PLAYER-AGES-REGISTER-30`.
-- Last content-changing checkpoint: `Canonical update - December 29, 2013 - Player age register reconciled`.
-- Latest source event: season-ledger Entry 62.
+- Effective through: January 5, 2014, after the AFC Wild Card round.
+- Document 4 register version: `JAX-2014-JAN05-PLAYER-AGES-REGISTER-31`.
+- Last content-changing checkpoint: `Canonical update - January 5, 2014 - Player age register reconciled`.
+- Latest source event: season-ledger Entry 63.
 - Current controlled count: **53**, all active; practice squad **8**, separate from the active roster.
 - Cap: regular-season accounting, **~$6.2M-$6.6M before weekly practice-squad charges**.
-- Depth/packages: Cousins QB1; regular-season roles as in `career/2013/roster.md`; weekly structured call sheet (Week 17 latest; Wild Card sheet not yet supplied).
-- Medical: Alan Ball out (Week 10, projected January 22, 2014); Bouye cleared; Posluszny out (independent medical hold, projected April 5, 2014); Kelce cleared; no Week 14-17 injury; Rackley limited (minor); C.J. Wilson out; Pasztor and Mosley available.
-- Next event: AFC Wild Card at Kansas City, January 4, 2014, 4:35 p.m. ET; **NOT SIMULATED**.
+- Depth/packages: Cousins QB1; regular-season roles as in `career/2013/roster.md`; weekly structured call sheet (AFC Wild Card latest; Divisional sheet not yet supplied).
+- Medical: Alan Ball out (Week 10, projected January 22, 2014); Bouye cleared; Posluszny out (independent medical hold, projected April 5, 2014); Kelce cleared; no Week 14-17 injury; Owens and Thielen out (Wild Card, minor; projected back January 5 and 6, 2014); Rackley limited (minor); C.J. Wilson out; Pasztor and Mosley available.
+- Next event: AFC Divisional at Tennessee, January 11, 2014, 8:15 p.m. ET; **NOT SIMULATED**.

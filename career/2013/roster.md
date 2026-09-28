@@ -1,12 +1,12 @@
 # Jacksonville Jaguars roster
 
-**As of:** December 29, 2013, after Week 17 (regular season complete).
+**As of:** January 5, 2014, after the AFC Wild Card round.
 **Canonical controlled-player count:** **53**.
 **Active roster:** **53**; Justin Blackmon was reinstated from Reserve/Suspended on October 7 and activated to the open spot (ledger Entry 42).
 **Practice squad:** **8**, separate from the active roster.
-**Record:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22).
+**Record:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-0 (AFC Wild Card: Jacksonville 38, Kansas City 14).
 
-<!-- player-ages-as-of: 2013-12-29 -->
+<!-- player-ages-as-of: 2014-01-05 -->
 
 Birth dates are sourced in the [identity registry](../../library/data/player_birth_dates.json). **Age** is completed years at the master date in Document 5; [league ages](player_ages.md) update through the same renderer.
 
@@ -40,7 +40,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
-| Montell Owens | FB | 1984-05-04 | 29 | Active 53 | No communicated restriction | FB |
+| Montell Owens | FB | 1984-05-04 | 29 | Active 53 | Out, lower extremity, minor (Wild Card); projected return January 5, 2014 | FB |
 
 ### Wide receivers (5)
 
@@ -50,7 +50,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Mike Brown | WR | 1989-02-09 | 24 | Active 53 | No communicated restriction | WR5 |
 | Toney Clemons | WR | 1988-10-11 | 25 | Active 53 | No communicated restriction | WR4 |
 | Cecil Shorts | WR | 1987-12-22 | 26 | Active 53 | No communicated restriction | WR1 |
-| Adam Thielen | WR | 1990-08-22 | 23 | Active 53 | No communicated restriction | WR2 / H (movable receiver); coverage units |
+| Adam Thielen | WR | 1990-08-22 | 23 | Active 53 | Out, lower extremity, minor (Wild Card); projected return January 6, 2014 | WR2 / H (movable receiver); coverage units |
 
 ### Tight ends (3)
 
@@ -122,7 +122,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Alan Ball | CB | 1985-03-29 | 28 | Active 53 | Out, trunk (Week 10); projected return January 22, 2014 | Starting CB (unavailable) |
 | A.J. Bouye | CB | 1991-08-16 | 22 | Active 53 | No communicated restriction (Week 11 injury cleared November 26) | First outside reserve CB (from Week 13); coverage units |
 | Brent Grimes | CB | 1983-07-19 | 30 | Active 53 | No communicated restriction | Starting CB |
-| Mike Harris | CB | 1989-01-05 | 24 | Active 53 | No communicated restriction | Starting CB (from Week 11) |
+| Mike Harris | CB | 1989-01-05 | 25 | Active 53 | No communicated restriction | Starting CB (from Week 11) |
 | Jordan Poyer | CB | 1991-04-25 | 22 | Active 53 | No communicated restriction | Nickel; coverage units |
 | Kevin Rutland | CB | 1988-04-02 | 25 | Active 53 | No communicated restriction | Second outside reserve CB (Week 13); coverage units |
 

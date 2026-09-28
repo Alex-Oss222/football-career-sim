@@ -1,5 +1,6 @@
 import json
-from datetime import date
+import re
+from datetime import date, timedelta
 from pathlib import Path
 import tempfile
 import unittest
@@ -67,7 +68,10 @@ class PlayerBiographyTests(unittest.TestCase):
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 dest.write_bytes((ROOT / path).read_bytes())
             p = root / "state/05_Current_Season_State.md"
-            p.write_text(p.read_text().replace("| Master date/time | December 29, 2013", "| Master date/time | December 30, 2013"))
+            next_day = player_bios.master_date(root) + timedelta(days=1)
+            label = f"{next_day:%B} {next_day.day}, {next_day.year}"
+            p.write_text(re.sub(r"(\| Master date/time \| )[A-Za-z]+ \d{1,2}, \d{4}",
+                                lambda m: m[1] + label, p.read_text()))
             self.assertEqual(len(render_player_ages.check(root)), 3)
 
     def test_game_date_metadata_does_not_change_team_input(self):
