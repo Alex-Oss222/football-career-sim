@@ -148,3 +148,16 @@ Backfilled on October 27, 2013 (Entry 47) from Week 8 receipts.
 | NFC Special Teams Player | Mason Crosby | Green Bay Packers | 12.0 | Devin Hester, Chicago Bears (15.8); Jeremy Ross, Green Bay Packers (12.0); Mason Crosby, Green Bay Packers (12.0) |
 
 Drawn at the close of Week 9 (Entry 49).
+
+### Week 10
+
+| Award | Winner | Team | Score | Shortlist (score) |
+|---|---|---|--:|---|
+| AFC Offensive Player | Ryan Mathews | San Diego Chargers | 26.9 | Chris Johnson, Tennessee Titans (27.2); Ryan Mathews, San Diego Chargers (26.9); Jake Locker, Tennessee Titans (22.0) |
+| AFC Defensive Player | Jerrell Freeman | Indianapolis Colts | 25.0 | Jerrell Freeman, Indianapolis Colts (25.0); Jason McCourty, Tennessee Titans (22.3); Zach Brown, Tennessee Titans (20.5) |
+| AFC Special Teams Player | Marcus Thigpen | Miami Dolphins | 13.6 | Marcus Thigpen, Miami Dolphins (13.6); Keshawn Martin, Houston Texans (11.8); Trindon Holliday, Denver Broncos (11.2) |
+| NFC Offensive Player | Jay Cutler | Chicago Bears | 23.8 | Jay Cutler, Chicago Bears (23.8); Josh Freeman, Tampa Bay Buccaneers (23.3); Matt Ryan, Atlanta Falcons (22.3) |
+| NFC Defensive Player | Glover Quin | Detroit Lions | 18.0 | Chad Greenway, Minnesota Vikings (21.0); Glover Quin, Detroit Lions (18.0); Mark Barron, Tampa Bay Buccaneers (16.5) |
+| NFC Special Teams Player | Chris Jones | Dallas Cowboys | 17.2 | Chris Jones, Dallas Cowboys (17.2); Jay Feely, Arizona Cardinals (15.0); LaMichael James, San Francisco 49ers (15.0) |
+
+Drawn at the close of Week 10 (Entry 50).

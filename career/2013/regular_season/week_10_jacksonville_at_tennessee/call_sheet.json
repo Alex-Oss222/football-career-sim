@@ -1,0 +1,116 @@
+{
+ "schema_version": 1,
+ "team": "Jacksonville Jaguars",
+ "event": "2013 Regular Season Week 10, Jacksonville at Tennessee",
+ "status": "EX_ANTE_CALL_SHEET_FROZEN",
+ "provenance": "Stone's Week 10 game plan, runner-ready call sheet (section 54), approved by the user as APPROVED_WEEK_10_PLAN and frozen verbatim before any Week 10 draw under kernel 2013.7. Plan provenance as supplied: Stone Week 10 divisional plan after Jacksonville's canonical Week 9 bye. The trade deadline passed without a transaction. Protection is addressed internally through 12, 13, 21 and 6OL personnel, TE chips, RB protection and reduced obvious five-man-protection situations. Pasztor dresses as the primary interior reserve in place of Asper. Every family resolves in the 2013.7 call-family map from the active 2013 book (Duo 9.3, Texas 10.14, Post-Cross 10.17, TE Delay and RB Slow Screen 12). Script order, jump rules, tempo and role emphasis are coaching guidance the kernel does not condition on.",
+ "offensive_call_sheet": [
+  {
+   "name": "12 Ace Right, Duo R",
+   "family": "Duo",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace Right"
+  },
+  {
+   "name": "12 Trey Right, Stick, H Chip-Release",
+   "family": "Stick",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey Right"
+  },
+  {
+   "name": "21 Pro Left, Counter R",
+   "family": "Counter",
+   "type": "run",
+   "personnel": "21",
+   "formation": "21 Pro Left"
+  },
+  {
+   "name": "12 Wing Right, Split L",
+   "family": "Split Zone",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Wing Right"
+  },
+  {
+   "name": "13 Heavy Right, Power R",
+   "family": "Power",
+   "type": "run",
+   "personnel": "13",
+   "formation": "13 Heavy Right"
+  },
+  {
+   "name": "13 Heavy Right, Cross, Solid",
+   "family": "Y-Cross",
+   "type": "pass",
+   "personnel": "13",
+   "formation": "13 Heavy Right",
+   "protection": "Solid"
+  },
+  {
+   "name": "11 Bunch Right, Return, Mesh",
+   "family": "Mesh",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Bunch Right"
+  },
+  {
+   "name": "12 Doubles, Texas",
+   "family": "Texas",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Doubles"
+  },
+  {
+   "name": "6OL Heavy Right, Power R",
+   "family": "Power",
+   "type": "run",
+   "personnel": "6OL",
+   "formation": "6OL Heavy Right"
+  },
+  {
+   "name": "6OL Heavy Right, Counter L",
+   "family": "Counter",
+   "type": "run",
+   "personnel": "6OL",
+   "formation": "6OL Heavy Right"
+  },
+  {
+   "name": "6OL Wing Left, TE Delay",
+   "family": "TE Delay",
+   "type": "pass",
+   "personnel": "6OL",
+   "formation": "6OL Wing Left"
+  },
+  {
+   "name": "12 Trey Right, RB Slow Screen",
+   "family": "RB Slow Screen",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey Right"
+  },
+  {
+   "name": "12 Trey Right, Sprint Flood R",
+   "family": "Sprint Flood",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey Right"
+  },
+  {
+   "name": "13 Heavy Left, Post-Cross, Max",
+   "family": "Post-Cross",
+   "type": "pass",
+   "personnel": "13",
+   "formation": "13 Heavy Left",
+   "protection": "Max"
+  },
+  {
+   "name": "12 Doubles, Spacing",
+   "family": "Spacing",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Doubles"
+  }
+ ]
+}

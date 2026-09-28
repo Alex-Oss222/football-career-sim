@@ -1615,5 +1615,152 @@
     "winner_index": 1
    }
   }
+ },
+ "week-10": {
+  "kind": "week",
+  "key": "10",
+  "label": "Week 10",
+  "order": 10,
+  "note": "Drawn at the close of Week 10 (Entry 50).",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2013-award-week10-afc-offense-v1",
+    "packet_sha256": "2e5efa0ae3676045d9d0301ebc58926a5c3fa962188620e8c64dc35271b09047",
+    "result_ref": "87b781a3fb1acaf11ecc859555ece91cf6912cfb8d32ede44b3589c9c888749f",
+    "shortlist": [
+     {
+      "player": "Chris Johnson",
+      "team": "Tennessee Titans",
+      "score": 27.2
+     },
+     {
+      "player": "Ryan Mathews",
+      "team": "San Diego Chargers",
+      "score": 26.9
+     },
+     {
+      "player": "Jake Locker",
+      "team": "Tennessee Titans",
+      "score": 21.96
+     }
+    ],
+    "winner_index": 1
+   },
+   "AFC-defense": {
+    "event_id": "2013-award-week10-afc-defense-v1",
+    "packet_sha256": "918e3c6b209939e6e525509518a7c329124790a535a87566ecb9ec3bf6a99524",
+    "result_ref": "816347f4944cfbbe35d682641e0741007df6a2e318b6af5ab6a97398b73a02bf",
+    "shortlist": [
+     {
+      "player": "Jerrell Freeman",
+      "team": "Indianapolis Colts",
+      "score": 25.0
+     },
+     {
+      "player": "Jason McCourty",
+      "team": "Tennessee Titans",
+      "score": 22.3
+     },
+     {
+      "player": "Zach Brown",
+      "team": "Tennessee Titans",
+      "score": 20.5
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-special_teams": {
+    "event_id": "2013-award-week10-afc-special_teams-v1",
+    "packet_sha256": "dc1222b6a3772bb268ee0d9bd674f68bdb106a29fbd1ccac28c0d6e72f2a9225",
+    "result_ref": "35b4122cb3ae4f451f1969d50e361d642a5ea65addae2c0ca75de8d49b74e49d",
+    "shortlist": [
+     {
+      "player": "Marcus Thigpen",
+      "team": "Miami Dolphins",
+      "score": 13.6
+     },
+     {
+      "player": "Keshawn Martin",
+      "team": "Houston Texans",
+      "score": 11.8
+     },
+     {
+      "player": "Trindon Holliday",
+      "team": "Denver Broncos",
+      "score": 11.2
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-offense": {
+    "event_id": "2013-award-week10-nfc-offense-v1",
+    "packet_sha256": "a61063879bc67325755aa571564288be92cfd602242cd89d0da3f398da1287e9",
+    "result_ref": "eb3a938d90302e2c9ca36a59812ef31bc45efea4d234eb013f986b700210ffcb",
+    "shortlist": [
+     {
+      "player": "Jay Cutler",
+      "team": "Chicago Bears",
+      "score": 23.76
+     },
+     {
+      "player": "Josh Freeman",
+      "team": "Tampa Bay Buccaneers",
+      "score": 23.32
+     },
+     {
+      "player": "Matt Ryan",
+      "team": "Atlanta Falcons",
+      "score": 22.26
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2013-award-week10-nfc-defense-v1",
+    "packet_sha256": "436fba475274053f71f196a9965881cd71c976a226b2ade8eaa7c869845f6835",
+    "result_ref": "3c4322038cf14bc67435760a702f606ae906758ad1714b2afc79fbbafd80dd27",
+    "shortlist": [
+     {
+      "player": "Chad Greenway",
+      "team": "Minnesota Vikings",
+      "score": 21.0
+     },
+     {
+      "player": "Glover Quin",
+      "team": "Detroit Lions",
+      "score": 18.0
+     },
+     {
+      "player": "Mark Barron",
+      "team": "Tampa Bay Buccaneers",
+      "score": 16.5
+     }
+    ],
+    "winner_index": 1
+   },
+   "NFC-special_teams": {
+    "event_id": "2013-award-week10-nfc-special_teams-v1",
+    "packet_sha256": "ca178c067ccc9a4c1d8d3311ed985422be1bb5067d1ea2d558776a8a5e314448",
+    "result_ref": "d979448d7426e451e83371afcab5cd6d1e4a58e171a14b6a494080476a131c8a",
+    "shortlist": [
+     {
+      "player": "Chris Jones",
+      "team": "Dallas Cowboys",
+      "score": 17.25
+     },
+     {
+      "player": "Jay Feely",
+      "team": "Arizona Cardinals",
+      "score": 15.0
+     },
+     {
+      "player": "LaMichael James",
+      "team": "San Francisco 49ers",
+      "score": 15.0
+     }
+    ],
+    "winner_index": 0
+   }
+  }
  }
 }
