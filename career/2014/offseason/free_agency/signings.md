@@ -1,6 +1,6 @@
 # Jacksonville 2014 free-agency and contract outcomes
 
-**Status:** through March 11, 2014, 4 p.m. ET (Entry 94). Six reserve/future contracts (Entry 85, effective March 11), Eugene Monroe's franchise tag (Entries 87 and 89), four RFA/ERFA tenders and two March 11 signings (Daniel Te'o-Nesheim, Jeremy Cain) are recorded below, with the market draws that decided them. Prior contracts remain in the [2013 signing history](../../../2013/offseason/free_agency/signings.md) and current [contract register](../contract_status_register.md).
+**Status:** through March 11, 2014 (Entry 95). Six reserve/future contracts (Entry 85), four RFA/ERFA tenders (Entry 94), and the March 2014 replay signings of Eugene Monroe (replacing his franchise tag), Sen'Derrick Marks and Alterraun Verner (Entry 95) are recorded below. Entry 94's first-pass draws are kept as history and marked superseded. Prior contracts remain in the [2013 signing history](../../../2013/offseason/free_agency/signings.md) and current [contract register](../contract_status_register.md).
 
 ## Process and evidence
 
@@ -40,7 +40,19 @@ A non-exclusive franchise player may negotiate with other clubs from the league 
 
 **Tender check (February 28, 2014, Entry 89).** The required non-exclusive tender is the greater of the position figure and 120 percent of the player's prior-year salary. The only 2013 figures on record for Monroe are in the [initial cap sheet](../../../2013/offseason/initial_cap_sheet.md): $3,800,000 base, $1,742,500 proration and a $205,000 workout bonus, for a $5,747,500 cap number. That row is an older archive transcription its September 18, 2026 audit did not re-verify. One hundred twenty percent of the base is $4,560,000, and of the full cap number $6,897,000. Both are below $11,654,000, so the position figure applies whichever of those measures counts as his prior-year salary. It would stop applying only if his prior-year salary exceeded $9,711,667, which the recorded figures do not approach; the check stays conditional on the transcription being accurate.
 
-### League-year opening, March 11, 2014 (ledger Entry 94)
+### March 2014 free-agency replay (ledger Entry 95; supersedes the first-pass draws below)
+
+At Stone's instruction the March 8 to 11 negotiations were replayed as a judgment-based simulation: Caldwell set the offers from Stone's baselines, and each player could accept, counter or decline. The full negotiation record, schedules and cap bridge are in [the replay log](march_2014_replay_log.md), the event owner. No private draw was used and none of the first-pass random values is reused.
+
+| Player | Result | Term | Total (maximum) | Fully guaranteed | 2014 cap |
+|---|---|---|---:|---:|---:|
+| Eugene Monroe, OT | Re-signed March 11 (replaced the franchise tender) | 5 years, 2014-2018 | $42,500,000 | $20,000,000 | $5,600,000 |
+| Sen'Derrick Marks, DT | Re-signed March 11 | 4 years, 2014-2017 | $26,000,000 | $12,500,000 | $4,750,000 |
+| Alterraun Verner, CB | Signed March 11, after 4 p.m. | 4 years, 2014-2017 | $29,000,000 | $15,000,000 | $6,000,000 |
+
+Reopened for their own replay entries: Aqib Talib (next), Daniel Te'o-Nesheim and Jeremy Cain (first-pass signings withdrawn), Chad Henne (March 7 chronology), and the held later negotiations (Tate, Hawkins, Edelman, Jones-Drew, C.J. Wilson, Ball, Brent Grimes, Tarell Brown).
+
+### League-year opening, March 11, 2014 (ledger Entry 94; first pass, superseded by Entry 95)
 
 Authority: Stone's memo sections 2 and 3 and the user's September 29, 2026 amendment "league-year draws and package I revised". Caldwell made every offer on the memo's terms: to the outside targets when talks opened at noon March 8, to Jacksonville's own free agents during the exclusive window. Method: [league_year_method.json](../league_year_method.json), committed before the draw; results: [league_year_results.json](../league_year_results.json); public draw log: [fa_draws.md](../league_rails/fa_draws.md).
 

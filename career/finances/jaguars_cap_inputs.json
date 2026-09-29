@@ -1,7 +1,7 @@
 {
   "team": "Jacksonville Jaguars",
   "as_of": "2014-03-11",
-  "checkpoint": "Entry 94",
+  "checkpoint": "Entry 95",
   "prepared": "2026-09-29",
   "start_year": 2014,
   "end_year": 2023,
@@ -4623,7 +4623,7 @@
       "date_of_birth": "1985-07-02",
       "age_at_checkpoint": 28,
       "control": "pending",
-      "status": "Unrestricted free agent at 4 p.m. March 11, 2014 after Jacksonville lost the March 7 re-signing draw (Entry 94)",
+      "status": "Unrestricted free agent from 4 p.m. March 11, 2014; the first-pass March 7 draw is superseded and his chronology is reopened (Entry 95)",
       "contract_type": "Veteran, signed March 14, 2012",
       "signed": "See expiring-contract description",
       "term": "2013",
@@ -4634,7 +4634,7 @@
       "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
-      "plan": "Unrestricted free agent at 4 p.m. March 11, 2014 after Jacksonville lost the March 7 re-signing draw (Entry 94)",
+      "plan": "Unrestricted free agent from 4 p.m. March 11, 2014; the first-pass March 7 draw is superseded and his chronology is reopened (Entry 95)",
       "source_note": "Confirmed (register); 2013 OTC row",
       "sources": [
         "career/2014/offseason/contract_table.md",
@@ -4826,65 +4826,77 @@
       "roster_position": "OT",
       "date_of_birth": "1987-04-18",
       "age_at_checkpoint": 26,
-      "control": "tender",
-      "status": "**Franchise player (non-exclusive)**, designated February 18, 2014; tender not yet signed; long-term draw lost March 11",
-      "contract_type": "Rookie, 2009 first round (pick #8)",
-      "signed": "See expiring-contract description",
-      "term": "1 / 2014 (unsigned franchise tender)",
-      "contract_ends": 2014,
-      "value": "$25,000,000 (5 years)",
-      "bonus_terms": "Not established for a new contract",
-      "guarantees": "Unsigned tender; $0 guaranteed before signing. Signing would fully guarantee the $11,654,000 tender.",
-      "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
-      "remaining_guarantees": 0,
+      "control": "signed",
+      "status": "Under contract",
+      "contract_type": "Veteran (branch re-signing; replaced the franchise tender)",
+      "signed": "March 11, 2014",
+      "term": "5 / 2018",
+      "contract_ends": 2018,
+      "value": "$42,500,000",
+      "bonus_terms": "$8,000,000; $1,600,000; 5",
+      "guarantees": "$20,000,000 fully guaranteed at signing (signing bonus plus 2014 and 2015 base)",
+      "dead_money_2014": "Gross pre-June 1 exposure $20,000,000 before 2014 salary is earned; $14,400,000 in 2015; $4,800,000 in 2016",
+      "remaining_guarantees": 12000000,
       "availability": "No communicated restriction",
-      "plan": "Jacksonville lost the long-term re-signing draw on March 11 (Entry 94; his real Baltimore re-signing does not apply), so he plays 2014 on the non-exclusive franchise tender, **$11,654,000**, the offensive-line value, official February 28. The tender is unsigned; it counts against the 2014 cap from March 11. Another club may sign him to an offer sheet (two first-round picks if Jacksonville declines to match).",
-      "source_note": "Branch record (Entries 87 and 89; tags and tenders); amount Confirmed (library section 2b); the prior-year check rests on an unre-verified 2013 transcription",
+      "plan": "No new transaction decision in this tracker",
+      "source_note": "Branch record (Entry 95; March 2014 replay log). Replaces the $11,654,000 tender once; 2016-2018 cap budgets include the full $500,000 active-game bonuses",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md",
         "career/2014/offseason/free_agency/signings.md",
-        "library/2014_jaguars_contract_completion.md"
+        "career/2014/offseason/free_agency/march_2014_replay_log.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 4 (2009-2012). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "tender",
-          "cap": 11654000,
-          "base": 11654000,
-          "proration": 0,
-          "cash": 11654000,
-          "guaranteed_base": 0,
-          "other_cap": 0
+          "status": "known",
+          "cap": 5600000,
+          "base": 4000000,
+          "proration": 1600000,
+          "other_cap": 0,
+          "cash": 12000000,
+          "guaranteed_base": 4000000,
+          "basis": "Branch contract, Entry 95 (March 2014 replay)"
         },
         "2015": {
-          "status": "not_committed",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 9600000,
+          "base": 8000000,
+          "proration": 1600000,
+          "other_cap": 0,
+          "cash": 8000000,
+          "guaranteed_base": 8000000,
+          "basis": "Branch contract, Entry 95 (March 2014 replay)"
         },
         "2016": {
-          "status": "not_committed",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 9100000,
+          "base": 6500000,
+          "proration": 1600000,
+          "other_cap": 1000000,
+          "cash": 7500000,
+          "guaranteed_base": 0,
+          "basis": "Branch contract, Entry 95 (March 2014 replay): $500,000 roster bonus and up to $500,000 active-game bonuses"
         },
         "2017": {
-          "status": "not_committed",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 9100000,
+          "base": 6500000,
+          "proration": 1600000,
+          "other_cap": 1000000,
+          "cash": 7500000,
+          "guaranteed_base": 0,
+          "basis": "Branch contract, Entry 95 (March 2014 replay): $500,000 roster bonus and up to $500,000 active-game bonuses"
         },
         "2018": {
-          "status": "not_committed",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 9100000,
+          "base": 6500000,
+          "proration": 1600000,
+          "other_cap": 1000000,
+          "cash": 7500000,
+          "guaranteed_base": 0,
+          "basis": "Branch contract, Entry 95 (March 2014 replay): $500,000 roster bonus and up to $500,000 active-game bonuses"
         },
         "2019": {
           "status": "not_committed",
@@ -4923,7 +4935,7 @@
         }
       },
       "guarantee_basis": "simulation reconstruction",
-      "schedule_basis": "Executed branch terms / researched original schedule"
+      "schedule_basis": "Executed branch terms (Entry 95)"
     },
     {
       "name": "Sen'Derrick Marks",
@@ -4931,54 +4943,67 @@
       "roster_position": "DT",
       "date_of_birth": "1987-02-23",
       "age_at_checkpoint": 27,
-      "control": "pending",
-      "status": "Unrestricted free agent at 4 p.m. March 11, 2014 after Jacksonville lost the re-signing draw (Entry 94)",
-      "contract_type": "Veteran (branch signing), March 12, 2013",
-      "signed": "See expiring-contract description",
-      "term": "2013",
-      "contract_ends": 2013,
-      "value": "$1.50M (1 year)",
-      "bonus_terms": "Not established for a new contract",
-      "guarantees": "No new signed 2014 guarantee established",
-      "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
-      "remaining_guarantees": null,
+      "control": "signed",
+      "status": "Under contract",
+      "contract_type": "Veteran (branch re-signing)",
+      "signed": "March 11, 2014",
+      "term": "4 / 2017",
+      "contract_ends": 2017,
+      "value": "$26,000,000",
+      "bonus_terms": "$3,000,000; $750,000; 4",
+      "guarantees": "$12,500,000 fully guaranteed at signing (signing bonus plus 2014 and 2015 base)",
+      "dead_money_2014": "Gross pre-June 1 exposure $7,750,000 in 2015; $1,500,000 in 2016; $750,000 in 2017",
+      "remaining_guarantees": 9500000,
       "availability": "No communicated restriction",
-      "plan": "Unrestricted free agent at 4 p.m. March 11, 2014 after Jacksonville lost the re-signing draw (Entry 94)",
-      "source_note": "Branch record",
+      "plan": "No new transaction decision in this tracker",
+      "source_note": "Branch record (Entry 95; March 2014 replay log). The 2016 active-game bonus was converted to base salary",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/free_agency/signings.md",
+        "career/2014/offseason/free_agency/march_2014_replay_log.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 4+ (entered 2009; his 2009 Tennessee four-year rookie contract expired after 2012 and he signed with Jacksonville from outside as a free agent). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "not_signed",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 4750000,
+          "base": 4000000,
+          "proration": 750000,
+          "other_cap": 0,
+          "cash": 7000000,
+          "guaranteed_base": 4000000,
+          "basis": "Branch contract, Entry 95 (March 2014 replay)"
         },
         "2015": {
-          "status": "not_committed",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 6250000,
+          "base": 5500000,
+          "proration": 750000,
+          "other_cap": 0,
+          "cash": 5500000,
+          "guaranteed_base": 5500000,
+          "basis": "Branch contract, Entry 95 (March 2014 replay)"
         },
         "2016": {
-          "status": "not_committed",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 7500000,
+          "base": 6000000,
+          "proration": 750000,
+          "other_cap": 750000,
+          "cash": 6750000,
+          "guaranteed_base": 0,
+          "basis": "Branch contract, Entry 95 (March 2014 replay): $750,000 roster bonus"
         },
         "2017": {
-          "status": "not_committed",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 7500000,
+          "base": 5500000,
+          "proration": 750000,
+          "other_cap": 1250000,
+          "cash": 6750000,
+          "guaranteed_base": 0,
+          "basis": "Branch contract, Entry 95 (March 2014 replay): $750,000 roster bonus and up to $500,000 active-game bonuses"
         },
         "2018": {
           "status": "not_committed",
@@ -5023,9 +5048,7 @@
           "cash": null
         }
       },
-      "former_player": true,
-      "departure_date": "2014-03-11",
-      "departure_source": "career/2013/ledger.md"
+      "schedule_basis": "Executed branch terms (Entry 95)"
     },
     {
       "name": "C.J. Wilson",
@@ -5339,19 +5362,19 @@
       "roster_position": "LS",
       "date_of_birth": "1980-03-24",
       "age_at_checkpoint": 33,
-      "control": "signed",
-      "status": "Under contract",
-      "contract_type": "Veteran minimum (branch re-signing)",
+      "control": "pending",
+      "status": "Unrestricted free agent from 4 p.m. March 11, 2014; the first-pass re-signing is superseded and his negotiation is reopened (Entry 95)",
+      "contract_type": "Veteran, February 2011",
       "signed": "March 11, 2014 (4 p.m. ET)",
-      "term": "1 / 2014",
-      "contract_ends": 2014,
-      "value": "$855,000",
+      "term": "2013",
+      "contract_ends": 2013,
+      "value": "Disputed: $2.45M or $3.0M (3 years)",
       "bonus_terms": "$0; $0; 0",
       "guarantees": "$0",
       "dead_money_2014": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
-      "remaining_guarantees": 0,
+      "remaining_guarantees": null,
       "availability": "No communicated restriction",
-      "plan": "No new transaction decision in this tracker",
+      "plan": "Negotiation reopened in the March 2014 replay (Entry 95)",
       "source_note": "Branch record (Entry 94, uncontested market draw). $855,000 is the 2014 minimum for seven to nine credited seasons, inferred from Chicago's September 2014 figure (single source). Counted in full; the Article 26 minimum-salary benefit (a $570,000 charge) is not applied because his eligibility is unverified",
       "sources": [
         "career/2014/offseason/contract_table.md",
@@ -5363,13 +5386,11 @@
       "accrued_seasons": "Through 2012: 4+ (entered 2004; Jacksonville long snapper through 2012). 2013: Accrues in branch (on 53 for 16 games); at least 5 accrued",
       "years": {
         "2014": {
-          "status": "known",
-          "cap": 855000,
-          "base": 855000,
-          "proration": 0,
-          "cash": 855000,
-          "guaranteed_base": 0,
-          "basis": "Branch one-year minimum, Entry 94"
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
         },
         "2015": {
           "status": "not_committed",
@@ -5435,7 +5456,10 @@
           "cash": null
         }
       },
-      "schedule_basis": "Executed branch terms (Entry 94)"
+      "schedule_basis": "Executed branch terms (Entry 94)",
+      "former_player": true,
+      "departure_date": "2014-03-11",
+      "departure_source": "career/2013/ledger.md"
     },
     {
       "name": "Cameron Bradfield",
@@ -6266,71 +6290,72 @@
       "schedule_basis": "Includes adopted simulation amounts; see contract notes"
     },
     {
-      "name": "Daniel Te'o-Nesheim",
-      "position": "EDGE",
-      "roster_position": "DE",
-      "date_of_birth": "1987-06-12",
-      "age_at_checkpoint": 26,
+      "name": "Alterraun Verner",
+      "position": "CB",
+      "roster_position": "CB",
+      "date_of_birth": "1988-12-13",
+      "age_at_checkpoint": 25,
       "control": "signed",
       "status": "Under contract",
       "contract_type": "Veteran (branch free agent)",
-      "signed": "March 11, 2014 (4 p.m. ET)",
-      "term": "3 / 2016",
-      "contract_ends": 2016,
-      "value": "$18,800,000",
-      "bonus_terms": "$3,000,000; $1,000,000; 3",
-      "guarantees": "$10,300,000 (signing bonus plus 2014 and 2015 base salary)",
-      "dead_money_2014": "$10,300,000 gross exposure under adopted terms (proration $3,000,000 plus guaranteed base $7,300,000), before any offset",
-      "remaining_guarantees": 7300000,
-      "availability": "No communicated restriction; physical at signing not separately recorded",
+      "signed": "March 11, 2014, after 4 p.m. ET",
+      "term": "4 / 2017",
+      "contract_ends": 2017,
+      "value": "$29,000,000",
+      "bonus_terms": "$4,000,000; $1,000,000; 4",
+      "guarantees": "$15,000,000 fully guaranteed at signing (signing bonus plus 2014 and 2015 base)",
+      "dead_money_2014": "Gross pre-June 1 exposure $9,000,000 in 2015; $2,000,000 in 2016; $1,000,000 in 2017",
+      "remaining_guarantees": 11000000,
+      "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "Branch record (Entry 94, uncontested market draw). Memo section 3 offer; annual schedule is the simulation reconstruction fixed in league_year_method.json before the draw",
+      "source_note": "Branch record (Entry 95; March 2014 replay log). The historical Tampa Bay signing does not occur",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md",
         "career/2014/offseason/free_agency/signings.md",
-        "career/2014/offseason/league_year_method.json",
-        "career/2014/offseason/league_rails/fa_draws.md"
+        "career/2014/offseason/free_agency/march_2014_replay_log.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
-      "accrued_seasons": "Through 2013: 4 (2010-2013, Philadelphia and Tampa Bay; generated league database)",
+      "accrued_seasons": "Through 2013: 4 (Tennessee, 2010-2013)",
       "years": {
         "2014": {
           "status": "known",
-          "cap": 5200000,
-          "base": 4200000,
+          "cap": 6000000,
+          "base": 5000000,
           "proration": 1000000,
-          "cash": 7200000,
-          "guaranteed_base": 4200000,
           "other_cap": 0,
-          "basis": "Branch contract, Entry 94"
+          "cash": 9000000,
+          "guaranteed_base": 5000000,
+          "basis": "Branch contract, Entry 95 (March 2014 replay)"
         },
         "2015": {
           "status": "known",
-          "cap": 4100000,
-          "base": 3100000,
+          "cap": 7000000,
+          "base": 6000000,
           "proration": 1000000,
-          "cash": 3100000,
-          "guaranteed_base": 3100000,
           "other_cap": 0,
-          "basis": "Branch contract, Entry 94"
+          "cash": 6000000,
+          "guaranteed_base": 6000000,
+          "basis": "Branch contract, Entry 95 (March 2014 replay)"
         },
         "2016": {
           "status": "known",
-          "cap": 9500000,
-          "base": 7000000,
+          "cap": 8000000,
+          "base": 5500000,
           "proration": 1000000,
-          "cash": 8500000,
-          "guaranteed_base": 0,
           "other_cap": 1500000,
-          "basis": "Branch contract, Entry 94: $1,000,000 roster bonus and $500,000 per-game active bonuses"
+          "cash": 7000000,
+          "guaranteed_base": 0,
+          "basis": "Branch contract, Entry 95 (March 2014 replay): $1,000,000 roster bonus and up to $500,000 active-game bonuses"
         },
         "2017": {
-          "status": "not_committed",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 8000000,
+          "base": 5500000,
+          "proration": 1000000,
+          "other_cap": 1500000,
+          "cash": 7000000,
+          "guaranteed_base": 0,
+          "basis": "Branch contract, Entry 95 (March 2014 replay): $1,000,000 roster bonus and up to $500,000 active-game bonuses"
         },
         "2018": {
           "status": "not_committed",
@@ -6375,7 +6400,7 @@
           "cash": null
         }
       },
-      "schedule_basis": "Executed branch terms (Entry 94)"
+      "schedule_basis": "Executed branch terms (Entry 95)"
     }
   ],
   "draft_picks": [
@@ -6476,6 +6501,11 @@
       "date": "2014-03-11",
       "source": "career/2013/ledger.md",
       "description": "Entry 94: league year opened March 11, 4 p.m. ET. Te'o-Nesheim and Cain signed; Bradfield, Clemons, Brown and Pasztor tendered; futures effective; Monroe plays on the unsigned tender; eight pending free agents and Meester left control."
+    },
+    {
+      "date": "2014-03-11",
+      "source": "career/2013/ledger.md",
+      "description": "Entry 95: chat-resolved free-agency replay supersedes the first-pass draws. Monroe (5 years, $42.5M, $20M guaranteed), Marks (4 years, $26M, $12.5M) and Verner (4 years, $29M, $15M) signed; Te'o-Nesheim and Cain first-pass signings removed pending their replay entries."
     }
   ],
   "scenarios": [],
