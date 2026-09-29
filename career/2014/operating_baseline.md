@@ -1,6 +1,6 @@
 # 2014 operating baseline and handoffs
 
-**Prepared at the February 2, 2014 checkpoint; current through February 17, 2014 (Entry 86).** This is the 2014 working structure for the offseason and eventual season. No tag, offer, signing, trade, training phase, draft selection or game is completed by preparing it. The tag window opened February 17; the next dated events are the Combine (February 19-25), the March 3 designation deadline and the March 11 league year.
+**Prepared at the February 2, 2014 checkpoint; current through February 28, 2014 (Entry 89).** This is the 2014 working structure for the offseason and eventual season. No offer, signing, trade, training phase, draft selection or game is completed by preparing it. Monroe was designated non-exclusive franchise player on February 18 (Entry 87); his tender became official at $11,654,000 when the league published the 2014 cap ($133,000,000) and tag values on February 28 (Entry 89), and it is not yet signed. The Combine closed February 25; its evidence is in `library/2014_combine_results.md` (Entry 88). The next dated events are the March 3 designation deadline, the March 8 negotiating window and the March 11 league year.
 
 ## Start here
 
@@ -30,7 +30,7 @@ The generated 2,208-player league inventory is research data with unknown contra
 - Package A asks for Seattle's original second, No. 36 (user amendment, September 29, 2026). Package H (No. 36 and Nwaneri to Minnesota for No. 31, for DeMarcus Lawrence) follows only if A closes.
 - Package G retains actual Posluszny clearance and must finish by April 21. No buyer, compensation or cap saving is presumed. Nwaneri's bonus date/clauses still require verification before F1.
 - The special-teams search is closed: Oakland re-signed Bobby April and refused the lateral request; Mike Westhoff was hired as special teams coordinator on February 11 (Entry 84).
-- The [phase decision package](offseason/phase_plan_decisions.md) covers the pending dates, install and P1 through P9 choices. The program schedule must be filed by the agreed date, no later than March 31 for an April 21 start. Pre-program coach-led football study is prohibited; passive film distribution remains unresolved. Existing adopted individual-development methods remain adopted. Five prepared NOT_STARTED outputs do not resolve pending choices or create delivery receipts.
+- The [phase decision package](offseason/phase_plan_decisions.md) covers the pending dates, install and phase-plan choices. The program schedule must be filed by the agreed date, no later than March 31 for an April 21 start. Pre-program coach-led football study is prohibited; passive film distribution remains unresolved. Existing adopted individual-development methods remain adopted. Five prepared NOT_STARTED outputs do not resolve pending choices or create delivery receipts.
 - Linsley and Gaines are current targets. Fallbacks (memo amendment, September 29, 2026): Paradis, then Stork, then Swanson for Linsley; Cockrell for Gaines, then Butler in round 7. Later overall numbers await compensatory awards. Eligibility, pre-selection reports and availability remain normal draft-date prerequisites.
 
 ## Before any 2014 game

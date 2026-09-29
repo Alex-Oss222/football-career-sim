@@ -1,12 +1,12 @@
 # Jacksonville Jaguars roster
 
-**As of:** February 17, 2014 (ledger Entry 86); 2013 season complete (Jacksonville eliminated in the AFC Divisional round).
+**As of:** February 28, 2014 (ledger Entry 89; Eugene Monroe franchise-tagged February 18, Entry 87, tender $11,654,000 official February 28, not yet signed); 2013 season complete (Jacksonville eliminated in the AFC Divisional round).
 **Canonical controlled-player count:** **53** (52 active; Brad Meester on Reserve/Retired until his contract expires March 11, 2014, ledger Entry 79).
 **Active roster:** **52** (Meester moved to Reserve/Retired in Entry 79); Justin Blackmon was reinstated from Reserve/Suspended on October 7 and activated to the open spot (ledger Entry 42).
 **Practice squad:** **0**. The eight 2013 practice-squad contracts ended with Jacksonville's season. **Reserve/future contracts for 2014:** **6**, signed February 3 and 5, 2014 (ledger Entry 85), effective at the March 11, 2014 league year; they are not practice-squad places and are not part of the 53 controlled players above.
 **Record:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-1 (AFC Wild Card: Jacksonville 38, Kansas City 14; AFC Divisional: Tennessee 20, Jacksonville 13).
 
-<!-- player-ages-as-of: 2014-02-17 -->
+<!-- player-ages-as-of: 2014-02-28 -->
 
 Birth dates are sourced in the [identity registry](../../library/data/player_birth_dates.json). **Age** is completed years at the master date in Document 5; [league ages](player_ages.md) update through the same renderer.
 
@@ -90,7 +90,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | --- | --- | --- | ---: | --- | --- | --- |
 | Jason Babin | DE | 1980-05-24 | 33 | Active 53 | No communicated restriction | Edge 1 |
 | Andre Branch | DE | 1989-07-14 | 24 | Active 53 | No communicated restriction | Edge 3 |
-| Ryan Davis | DE | 1989-02-24 | 24 | Active 53 | No communicated restriction | Edge 4 |
+| Ryan Davis | DE | 1989-02-24 | 25 | Active 53 | No communicated restriction | Edge 4 |
 | Lavar Edwards | DE | 1990-04-29 | 23 | Active 53 | No communicated restriction | Edge/front depth and teams (dressed Weeks 12 and 14-17; inactive Week 13) |
 | Jeremy Mincey | DE | 1983-12-14 | 30 | Active 53 | No communicated restriction | Edge 2 |
 | C.J. Wilson | DE | 1987-03-30 | 26 | Active 53 | No communicated restriction | — |
@@ -100,7 +100,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
 | Tyson Alualu | DT | 1987-05-12 | 26 | Active 53 | No communicated restriction | DT rotation |
-| Sen'Derrick Marks | DT | 1987-02-23 | 26 | Active 53 | No communicated restriction | Starting DT |
+| Sen'Derrick Marks | DT | 1987-02-23 | 27 | Active 53 | No communicated restriction | Starting DT |
 | Roy Miller | DT | 1987-07-09 | 26 | Active 53 | No communicated restriction | Starting DT |
 | C.J. Mosley | DT | 1983-08-06 | 30 | Active 53 | No communicated restriction | Interior DL rotation (dressed from Week 11) |
 | Jeris Pendleton | DT | 1983-11-07 | 30 | Active 53 | No communicated restriction | — |

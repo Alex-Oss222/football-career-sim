@@ -85,3 +85,4 @@
 
 | Real date | Move | Player | Detail | Source | Gate passed in branch? |
 |---|---|---|---|---|---|
+| February 18, 2014 | Release | Tashard Choice, RB | Released by Indianapolis (DE Jake McDonough waived on the same wire, same single report) | [ProFootballTalk, February 18, 2014](https://profootballtalk.nbcsports.com/2014/02/18/colts-release-tashard-choice-waive-jake-mcdonough/); Wikipedia summary (tertiary). Single source | Yes: applied at the February 25 checkpoint (ledger Entry 88). Found by a bounded search of February 18-25 moves, not a full transaction log |

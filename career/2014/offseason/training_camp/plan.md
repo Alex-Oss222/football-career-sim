@@ -9,7 +9,7 @@
 
 ## Decision package and historical clarification
 
-The [complete phase decision package](../phase_plan_decisions.md) supplies the proposed dates, install sequence, room priorities, P1 through P9 recommendations and emergency-staff choices, reviewed against Entry 86. Its new recommendations remain unadopted. P3, the P5 teaching process and individual-development P8 are already authorized. The [rules verification](../../../../library/2014_offseason_phase_rules_verification.md) distinguishes the schedule-filing deadline, Phase One classroom permission and unresolved passive pre-program film distribution.
+The [complete phase decision package](../phase_plan_decisions.md) supplies the proposed dates, install sequence, room priorities, pending policy recommendations and emergency-staff choices, reviewed through the February 28 checkpoint, Entry 89. Its new recommendations remain unadopted. Individual feedback, shared protection-identification teaching and continuing individual development are already authorized. The [rules verification](../../../../library/2014_offseason_phase_rules_verification.md) distinguishes the schedule-filing deadline, Phase One classroom permission and unresolved passive pre-program film distribution.
 
 ## Living player assessment: adopted follow-up
 
@@ -48,7 +48,7 @@ Use Explain → Show → Walk → Rep → Correct → Rep again → Retain → A
 
 Read the [training index](../README.md), [room work plans](../training/unit_plans.md), [player queue](../film/player_queue.md) and the relevant [individual plan](../player_development/README.md) before preparing the phase. Use the [session template](../training/session_template.md), [film packet](../film/packet_template.md) and [delivery log](../film/delivery_log.md) to close the loop from assigned job to a later independent retest.
 
-Stone authorized the individual-feedback process P3 and Cousins progression, the P5 QB-center identification teaching process, and continuation of individual development in P8. Other marked proposals remain pending. Start Cousins from his [2013 evidence assessment](../player_development/kirk_cousins.md), preserving demonstrated operation and targeting the unresolved job. Do not reset him to a beginner plan or infer broad mastery from results alone.
+Stone authorized individual feedback and Cousins progression, shared QB-center identification teaching, and continuing individual development. Other marked proposals remain pending. Start Cousins from his [2013 evidence assessment](../player_development/kirk_cousins.md), preserving demonstrated operation and targeting the unresolved job. Do not reset him to a beginner plan or infer broad mastery from results alone.
 
 All work remains within this phase’s calendar, contact, medical and voluntary-participation limits. The actual phase output owns new practice evidence; the delivery log owns actual distribution. A prepared packet is not a delivered tape. No historic January delivery is backdated. New role assignments and Boot Flood’s return require their separate decisions.
 
@@ -778,19 +778,19 @@ When training camp actually begins:
 
 Use the inherited four camp blocks with the verified 2014 reporting, acclimation, contact and preseason calendar. August 26 and August 30 cutdowns come from the 2014 calendar, not the 2013 baseline. Practice-squad size and eligibility use the rule effective on the actual date, including the August 19 information gate; no futures signing is promised a practice-squad place.
 
-Carry forward adopted P3, the P5 teaching process, individual-development P8 and actual spring evidence. P1, P2, P4 and P6 apply only to the extent Stone subsequently approves them. The line and secondary are evaluated from the players actually controlled. New arrivals receive compressed onboarding and an honest retention check. No game, including preseason, runs merely because the camp plan is populated: the engine release and live game-readiness gates must close first.
+Carry forward the adopted feedback, shared-identification and continuing-development methods, together with actual spring evidence. Defensive relay succession, injured-player learning, cross-training and a Boot Flood trial apply only to the extent Stone subsequently approves the proposals; existing medical restrictions remain binding. The line and secondary are evaluated from the players actually controlled. New arrivals receive compressed onboarding and an honest retention check. No game, including preseason, runs merely because the camp plan is populated: the engine release and live game-readiness gates must close first.
 
-### P7: situational punt rules
+### situational punt rules
 
 Recommend that every end-of-half/end-of-game punt instruction state the clock, score, field position, return threat, expected coverage readiness, intended placement and operation priority. Stone retains the consequential decision to punt, go, attempt a field goal, use a timeout or take an unusual special-teams action. Do not auto-punt because a drive tuple says punt.
 
 The proposed execution default after Stone chooses a punt is a secure snap/protection operation and a placement/coverage instruction suited to the actual field, rather than chasing gross distance. The coordinator must identify whether the objective is field position, avoiding a return or preserving a specific clock situation; no fixed yard-line rule replaces that decision. Anger is evaluated against the instruction he received. Grade snap, protection, kick, coverage and the call separately. Rehearse a rushed substitution and a bad-snap response within legal practice limits, without prescribing an intentional safety or improvised fake in advance.
 
-### P8: continuation of individual development, adopted; defensive directive proposal pending
+### continuation of individual development, adopted; defensive directive proposal pending
 
-Keep a position-coach development review after each camp block and during the regular season, including after the bye. Use P3's individual evidence note and correction ownership. Receiver-quarterback adjustment work tests changed leverage; established players retain blocking/protection work. The separate proposed defensive directive for each opponent would state the accepted concession and the response if the opponent exploits it, as well as the intended stop. No coordinator call or accepted concession is invented in this offseason plan.
+Keep a position-coach development review after each camp block and during the regular season, including after the bye. Use the individual-feedback policy's evidence note and correction ownership. Receiver-quarterback adjustment work tests changed leverage; established players retain blocking/protection work. The separate proposed defensive directive for each opponent would state the accepted concession and the response if the opponent exploits it, as well as the intended stop. No coordinator call or accepted concession is invented in this offseason plan.
 
-### P9: contact, return and consultation
+### contact, return and consultation
 
 Recommend live evaluation only in CBA-permitted padded/contact periods, under current medical limits. A returning player receives a controlled re-entry and assigned-work retest; no automatic restoration or demotion follows from absence. A new suspension is never imported from real history.
 

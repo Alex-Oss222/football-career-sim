@@ -1,8 +1,8 @@
 # Jacksonville 2014: Stone's offseason phase decision package
 
-**Status: RECOMMENDATIONS FOR STONE.** Prepared September 29, 2026 against February 17, 2014, ledger Entry 86. No phase has run and no new choice below is adopted by preparing this document. P3, the P5 teaching process and the individual-development part of P8 were already authorized. Their implementation is included without asking Stone to approve them again.
+**Status: RECOMMENDATIONS FOR STONE.** Prepared September 29, 2026 against February 17, 2014, ledger Entry 86; reviewed against the latest merged checkpoint, February 28, Entry 89. The later transactions do not adopt a phase choice or change the proposed teaching method. No phase has run and no new choice below is adopted by preparing this document. Individual feedback, shared protection-identification teaching and continuing individual development were already authorized. Their implementation is included without asking Stone to approve them again.
 
-**Purpose:** settle the dates, teaching scope, operating responsibilities and pending P1 through P9 choices for the second Jacksonville offseason. Build from the whole 2013 season and its unfinished work. Preserve the five existing phase plans rather than creating another program or a new set of empty folders.
+**Purpose:** settle the dates, teaching scope, operating responsibilities and pending policy choices for the second Jacksonville offseason. Build from the whole 2013 season and its unfinished work. Preserve the five existing phase plans rather than creating another program or a new set of empty folders.
 
 **Read with:** [calendar](../calendar.md), [staff plan and recorded outcome](staff_changes/staff_plan.md), [training workflow](training/weekly_workflow.md), [room plans](training/unit_plans.md), [player profiles](player_development/roster_profiles.md), [Stone's profile](../../coaching_profiles/alex_stone.md), [historical verification](../../../library/2014_offseason_phase_rules_verification.md).
 
@@ -28,23 +28,23 @@ That means he does not personally lead every correction. He checks whether the p
 
 ## 3. The decision register
 
-These are the complete pending policy choices carried by the five phase plans, plus the scheduling, install and staff-operation decisions needed to make them usable. Recommended deadlines below are staff planning choices unless identified as a sourced filing limit. All remain future work at the February 17 checkpoint.
+These are the complete pending policy choices carried by the five phase plans, plus the scheduling, install and staff-operation decisions needed to make them usable. Recommended deadlines below are staff planning choices unless identified as a sourced filing limit. Pending choices remain future work at the February 28 checkpoint. The legacy policy labels appear once below so older references can still be followed; elsewhere, use the decision names.
 
 | Item | Present status | Recommended Stone decision | Timing and accountable owner |
 |---|---|---|---|
-| D1: dates and filing | Proposed calendar only | Choose the existing nine-week calendar, May 16 to 18 rookie weekend and ten OTA dates; submit the schedule and separately retain proof | Choose in time for the actual league filing deadline, no later than March 31 for April 21; Caldwell's office administers |
-| D2: install scope | Broad inherited phase methods, no detailed spring allocation | Preserve the demonstrated 2013 core; prioritize common identification, changing pictures, emergency operation and individual unfinished work; controlled additions only | Staff version by April 11, Stone's final pre-program review April 18; Tice, Crennel, Westhoff |
-| D3: emergency staff operation | Unassigned | Designate Tice as proposed temporary practice/acting head-coach lead if Stone is unavailable; rehearse a separate offensive-calling backup and defensive succession as specified below | Approve assignments by April 18; no silent appointment |
-| P1: defensive relay | Daryl Smith leads; backup proposal pending | Keep Smith; evaluate a medically cleared Posluszny as first backup; otherwise teach Stanford, then Moore, without awarding the job | Approve method by April 18; package-specific field evidence before OTAs; Crennel/Bush |
-| P2: injured-player learning | Proposed | Adopt medically permitted voluntary learning and a catch-up route, including cognitive restrictions and no absence penalty | April 18; medical staff define limits, position coaches teach within them |
-| P3: individual feedback | Already adopted; January receipts unverified | Execute the existing promise, inventory missing material and assign the next lawful observation; no new approval needed | Internal inventory before April 21; actual delivery logged when lawful; each position coach |
-| P4: cross-training | Proposed opportunities, no new roles | Approve targeted secondary-position observations while protecting each player's primary job | April 18 method decision; actual role decisions follow evidence; Tice/Crennel |
-| P5: blocked/hot/kill teaching | Already adopted | Execute one shared QB-center-back teaching process; add the receiver's answer where the call requires it | Classroom from program start, lawful field progression thereafter; Bates/Yarno/Tice |
-| P6: Boot Flood | Review and return unresolved | Keep it in the book and outside competitive team work; prepare the cause review; require Stone's separate release before a narrow field trial | Review prepared by April 18 if evidence permits; release is a later decision, not a calendar entitlement; Bates/Tice |
-| P7: punt instruction | Proposed | Adopt a written situational instruction and separate operation/kick/coverage assessment; retain Stone's actual punt/go/field-goal decision | Format by April 18; legal spring rehearsal and camp transfer; Westhoff/Stone |
-| P8: continuation and defensive intent | Individual development adopted; defensive directive pending | Keep individual work through the season and adopt a short intended-stop/accepted-concession/response statement for defensive plans | Format by April 18; opponent content only when actually prepared; Crennel/Stone |
-| P9: consultation and return | Consultation cadence proposed; legal/medical limits already binding | Adopt a council discussion at camp-block reviews and regular-season planning, plus veteran film input before division rematches | Cadence April 18; actual participants and meetings determined later; Stone/coordinators |
-| D4: retained family events | Events retained, exact dates open | Recommend May 17 rookie dinner, June 5 team dinner and June 18 minicamp dinner, all voluntary; camp dates deferred | Include support logistics before April 21; no additional football obligation |
+| Dates and filing | Proposed calendar only | Choose the existing nine-week calendar, May 16 to 18 rookie weekend and ten OTA dates; submit the schedule and separately retain proof | Choose in time for the actual league filing deadline, no later than March 31 for April 21; Caldwell's office administers |
+| Install scope | Broad inherited phase methods, no detailed spring allocation | Preserve the demonstrated 2013 core; prioritize common identification, changing pictures, emergency operation and individual unfinished work; controlled additions only | Staff version by April 11, Stone's final pre-program review April 18; Tice, Crennel, Westhoff |
+| Emergency staff operation | Unassigned | Designate Tice as proposed temporary practice/acting head-coach lead if Stone is unavailable; rehearse a separate offensive-calling backup and defensive succession as specified below | Approve assignments by April 18; no silent appointment |
+| Defensive relay (legacy P1) | Daryl Smith leads; backup proposal pending | Keep Smith; evaluate a medically cleared Posluszny as first backup; otherwise teach Stanford, then Moore, without awarding the job | Approve method by April 18; package-specific field evidence before OTAs; Crennel/Bush |
+| Injured-player learning (legacy P2) | Proposed | Adopt medically permitted voluntary learning and a catch-up route, including cognitive restrictions and no absence penalty | April 18; medical staff define limits, position coaches teach within them |
+| Individual feedback (legacy P3) | Already adopted; January receipts unverified | Execute the existing promise, inventory missing material and assign the next lawful observation; no new approval needed | Internal inventory before April 21; actual delivery logged when lawful; each position coach |
+| Cross-training (legacy P4) | Proposed opportunities, no new roles | Approve targeted secondary-position observations while protecting each player's primary job | April 18 method decision; actual role decisions follow evidence; Tice/Crennel |
+| Blocked/hot/kill teaching (legacy P5) | Already adopted | Execute one shared QB-center-back teaching process; add the receiver's answer where the call requires it | Classroom from program start, lawful field progression thereafter; Bates/Yarno/Tice |
+| Boot Flood (legacy P6) | Review and return unresolved | Keep it in the book and outside competitive team work; prepare the cause review; require Stone's separate release before a narrow field trial | Review prepared by April 18 if evidence permits; release is a later decision, not a calendar entitlement; Bates/Tice |
+| Punt instruction (legacy P7) | Proposed | Adopt a written situational instruction and separate operation/kick/coverage assessment; retain Stone's actual punt/go/field-goal decision | Format by April 18; legal spring rehearsal and camp transfer; Westhoff/Stone |
+| Continuation and defensive intent (legacy P8) | Individual development adopted; defensive directive pending | Keep individual work through the season and adopt a short intended-stop/accepted-concession/response statement for defensive plans | Format by April 18; opponent content only when actually prepared; Crennel/Stone |
+| Consultation and return (legacy P9) | Consultation cadence proposed; legal/medical limits already binding | Adopt a council discussion at camp-block reviews and regular-season planning, plus veteran film input before division rematches | Cadence April 18; actual participants and meetings determined later; Stone/coordinators |
+| Retained family events | Events retained, exact dates open | Recommend May 17 rookie dinner, June 5 team dinner and June 18 minicamp dinner, all voluntary; camp dates deferred | Include support logistics before April 21; no additional football obligation |
 
 The recommended package authorizes teaching opportunities and procedures. It does not approve a Boot Flood return, award reserve or starting jobs, clear a player, commit a transaction or simulate an event.
 
@@ -143,7 +143,7 @@ Each OTA includes the permitted unit work needed for the day's objective and ret
 | Day | Main football question | Offensive work | Defensive and special-teams work | Evidence to carry forward |
 |---|---|---|---|---|
 | May 27 | Does the retained answer survive an opposing picture? | Familiar 2013 core with correct personnel, protection and route landmarks | Current base packages and the approved call relay; Westhoff's substitution/operation baseline | Separate a new-arrival vocabulary gap from a returning player's execution question |
-| May 28 | Can the unit agree when the picture changes? | P5 QB-center-back identification, with the relevant receiver answer | Front/coverage echo and leverage changes; punt operation with a stated objective | Who recognized, who spoke, who heard and who acted; staff-call timing recorded |
+| May 28 | Can the unit agree when the picture changes? | Shared QB-center-back identification, with the relevant receiver answer | Front/coverage echo and leverage changes; punt operation with a stated objective | Who recognized, who spoke, who heard and who acted; staff-call timing recorded |
 | May 29 | Can the backup carry the same instruction? | Relief QB/center and emergency personnel scenarios using taught work | Relay without the usual lead; reserve special-teams substitution | No simulated injury; report the precise handoff that worked or failed |
 | June 3 | Did the correction survive the gap? | Delayed revisit of the first block's open shared jobs | Same defensive and teams responsibilities in a different presentation | Retained correction or a specific reason it remains open |
 | June 4 | Can receiving answers grow without losing protection? | Cousins with Shorts/Thielen and relevant tight ends/backs; coverage-adjustment agreement | Coverage help and accepted concessions; return and coverage assignments without contact | Compare the taught QB and receiver choices, not just completion/incompletion |
@@ -185,7 +185,7 @@ Tice should use four plain descriptions in the preparation inventory: **retained
 
 **Additions need a reason.** Before Stone approves broader Outside Zone, a wider Mesh package, another pressure answer or another presentation, the requesting coach states the problem, the new teaching burden, the existing answer it supplements, the personnel it needs, and what will leave the session to make room. None of those items is automatically scheduled here. No future-iteration concept is available to solve a current problem.
 
-**Boot Flood remains its own decision.** It appeared in successful 2013 camp work and later adverse game events. Neither history alone settles the return. The P6 process below governs it.
+**Boot Flood remains its own decision.** It appeared in successful 2013 camp work and later adverse game events. Neither history alone settles the return. The Boot Flood review below governs it.
 
 **Defense.** Crennel should carry the actual end-of-season front, coverage and situational assignments that have support, then reconcile them with the current personnel. He should not reset a full-season defense to only the first spring lesson, and he should not reopen the failed camp pressure variation just because a new year began. Any added pressure has to leave the rush, fit, leverage and coverage answers understandable to the players who will actually execute it.
 
@@ -193,7 +193,7 @@ Tice should use four plain descriptions in the preparation inventory: **retained
 
 ## 8. The unresolved policies in football terms
 
-### P1: a defensive call must still arrive when Smith leaves the field
+### A defensive call must still arrive when Smith leaves the field
 
 Recommend keeping Daryl Smith as the communication lead. The backup must understand the front and coverage echo, know when the authority transfers, and give the same instruction to the actual package on the field. This is distinct from Crennel choosing the call.
 
@@ -201,23 +201,23 @@ Posluszny is the first proposed backup only after current medical permission and
 
 Before the first OTA, prepare the package card with primary relay, backup relay, front echo, coverage echo and sideline fallback. In Phase Two, explain and walk the transfer without opposition. In OTAs, remove the primary from a teaching scenario and change the presentation. Determine whether the error was a late sideline call, incomplete relay, competing voices or a wrong assignment after a correct message. Correct the responsible link. Stone approves any actual role change from that evidence.
 
-### P2: injury must not leave a player without a route back into the teaching
+### Injury must not leave a player without a route back into the teaching
 
 Recommend the proposed learning policy. The medical staff determines whether a player may attend meetings, review material, travel, exercise or receive no cognitive work at all. Coaches receive functional restrictions through the proper channel, not an entitlement to clinical detail. The player can use the permitted opportunities on the same voluntary basis as teammates.
 
 When participation becomes possible, give the player the common language and the changes to his assigned job before testing independent execution. Do not turn the catch-up sequence into punishment or automatically restore a prior role without current evidence. A clinician's instruction to rest overrides a meeting or film deadline. Posluszny is the immediate example, but the policy applies to everyone.
 
-### P3 and P5: finish the feedback promise and teach one shared answer
+### Finish the feedback promise and teach one shared answer
 
-P3 is already approved. Each meaningful block needs a player-specific account of the assigned job, correct work, unresolved work, likely cause where supported, owner and next legal observation. A positive note can stay positive. An unobserved job stays unobserved. The player should be able to tell why the staff wants the next piece of work.
+Individual feedback is already approved. Each meaningful block needs a player-specific account of the assigned job, correct work, unresolved work, likely cause where supported, owner and next legal observation. A positive note can stay positive. An unobserved job stays unobserved. The player should be able to tell why the staff wants the next piece of work.
 
 The January 31 commitments are unverified, not assumed delivered and not proven undelivered. First inventory the receipts. For work without a receipt, preserve that status while preparing the material. The default recommendation is to begin the pending football delivery/discussion with the lawful program unless Caldwell verifies an earlier lawful passive-distribution route. Preparation does not itself create player contact.
 
-For P5, Bates, Yarno and Tice must agree on the active-book protection instruction before presenting it. Start with a familiar picture. Have the quarterback, center and back identify their responsibilities; include the receiver where the actual rule requires a hot answer or route adjustment. Then change one relevant feature. Distinguish recognition from communication, and communication from physical execution. If both the quarterback and center repeat different reasonable versions of the teaching, fix the instruction before calling either player careless.
+For shared protection identification, Bates, Yarno and Tice must agree on the active-book protection instruction before presenting it. Start with a familiar picture. Have the quarterback, center and back identify their responsibilities; include the receiver where the actual rule requires a hot answer or route adjustment. Then change one relevant feature. Distinguish recognition from communication, and communication from physical execution. If both the quarterback and center repeat different reasonable versions of the teaching, fix the instruction before calling either player careless.
 
 Use the existing session inventory. Do not add an unbudgeted protection block every time a problem appears and silently delete Shorts' or Thielen's development. Tice resolves the conflict, records what was displaced and gives that work its next lawful home.
 
-### P4: explore secondary jobs without prematurely choosing the depth chart
+### Explore secondary jobs without prematurely choosing the depth chart
 
 Recommend the named observations: Johnson at left tackle; Bradfield at both tackles; eligible interior linemen at guard/center; Moore and Stanford in base-linebacker work; Prosinski in safety rotation; Harris, Poyer and Bouye in defined outside-corner situations. These are opportunities to learn and be observed, not promotions.
 
@@ -225,7 +225,7 @@ Start from the player's primary job and explain why the additional one is useful
 
 At each handoff, state whether the evaluation continues, is parked for a stated reason, or has enough evidence for a decision. A parked Poyer outside evaluation should have a next review point or an explicit reason it is not presently part of the team's plan. It should not disappear into a generic statement that he is a nickel.
 
-### P6: review Boot Flood before deciding what version deserves a trial
+### Review Boot Flood before deciding what version deserves a trial
 
 Bates and Tice should use the actual source plays in the [review index](film/kirk_cousins_2013_review.md), including the Week 1 interception and Week 2 sack locators, alongside the positive camp account. The review needs the assigned progression, edge/protection rule, route spacing, relevant defensive response and Stone's purpose in calling it. A receipt label cannot supply any missing piece.
 
@@ -233,7 +233,7 @@ The recommendation is to keep Boot Flood available for study but held from compe
 
 Stone's release would permit explanation, lawful unopposed teaching and a bounded non-contact OTA observation. It would not automatically permit game use or the whole family of variants. If the corrected answer fails, distinguish an unclear instruction from an execution error before simplifying or parking it. Do not charge the entire concept to Cousins because he threw the ball.
 
-### P7: tell Anger what the punt is meant to accomplish
+### Tell Anger what the punt is meant to accomplish
 
 Recommend approving the situational instruction format now. For each relevant scenario, Westhoff states the score, clock, field location, return threat, coverage readiness, intended placement and operation priority. Stone chooses whether to punt at all and retains the unusual or consequential game-management decision.
 
@@ -241,7 +241,7 @@ After a punt is chosen, the normal execution priority is a secure operation and 
 
 Westhoff records instruction, snap, protection, kick and coverage separately. An accurate kick into the called area can coexist with a poor coverage result or a poor strategic decision. A bad snap can affect the kick without proving a new punting weakness. Spring teaches the communication and allowed operation; lawful camp and games provide the additional physical evidence. A rehearsal does not preauthorize a fake, intentional safety or improvised action.
 
-### P8: keep developing players and explain the defense's tradeoff
+### Keep developing players and explain the defense's tradeoff
 
 Individual development already continues through camp and the regular season, including after the bye. Preserve the promised review at camp-block handoffs and a meaningful place in the weekly process. The volume can change with the game week, but the owner and next opportunity should remain visible.
 
@@ -249,13 +249,13 @@ Recommend adopting the separate defensive directive: what the plan intends to st
 
 The spring version is a teaching form, not a fictional opponent plan. Actual weekly content waits for the actual opponent information and preparation window.
 
-### P9: hear players without making them responsible for staff decisions
+### Hear players without making them responsible for staff decisions
 
 Recommend the proposed council cadence at camp-block reviews and each regular-season planning week, with a focused veteran film conversation before division rematches. The point is to catch unclear instructions, workload conflicts and opponent recognition that the staff has missed. It is not another speech from Stone.
 
 Choose participants from the actual eligible roster according to the issue: quarterback and line voices for protection, defensive communicators for front/coverage exchanges, a specialist or core teams player for operation, and a reserve or younger player when onboarding is the question. This does not name new captains or give a group a roster vote. A player's private family, financial or medical information is not council material.
 
-Use the existing legal meeting budget. If the conversation identifies an actionable football issue, assign a coach and a follow-up. Do not invent agreement, candor, gratitude or chemistry simply because a meeting was scheduled. The contact and return restrictions in P9 are obligations, not rules Stone can vote to waive.
+Use the existing legal meeting budget. If the conversation identifies an actionable football issue, assign a coach and a follow-up. Do not invent agreement, candor, gratitude or chemistry simply because a meeting was scheduled. The contact and return restrictions are obligations, not rules Stone can vote to waive.
 
 ## 9. Room-by-room priorities and evidence
 
@@ -325,7 +325,7 @@ Evidence should be specific enough to support a football decision without preten
 
 ## 13. Adoption and execution record
 
-For a single practical approval, the recommendation is: adopt D1, D2 and D4; adopt P1, P2, P4, P7, the defensive-directive portion of P8 and the P9 consultation cadence; continue the already adopted P3, P5 and individual-development P8 work; retain the P6 competitive-work hold pending review and Stone's specific release. Decide D3's proposed named emergency appointments explicitly, with the special-teams deputy still requiring a concrete staff proposal.
+For a single practical approval, adopt the proposed dates, install scope and family-event dates, along with defensive relay succession, injured-player learning, cross-training, situational punt instruction, defensive intent statements and the player-consultation cadence. Continue the already adopted feedback, shared-identification and individual-development work. Keep Boot Flood out of competitive work pending review and Stone's specific release. Decide the proposed emergency staff appointments explicitly; the special-teams deputy still needs a named staff proposal.
 
 This is the recommended bundle, not a claim that Stone said it. A partial approval can identify changed items without reopening the ones already authorized. When an actual choice is made, record its date, exact scope and any deferred item in the appropriate event/decision owner, then reconcile dependent current views only for facts actually changed. Never update a phase output as completed because its plan was approved.
 

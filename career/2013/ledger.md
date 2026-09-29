@@ -2515,3 +2515,94 @@ As a result, the contract status register now shows 36 under contract, 8 pending
 **Atomic closure.** The following now agree: the master clock (February 17), the roster header and player ages, the contract status register and 2014 worksheet, the calendar, the 2014 README, readiness and operating baseline pages, the trade status lines, the staff pages' clock references, and Documents 4 (register 42) and 5 (state 62). There is no player-control, cap-certification, staff, pick or game change. The private snapshot is not advanced from this branch.
 
 **Commit closed - Canonical update - February 17, 2014 - Clock advanced to February 17 (franchise and transition window open) - canonical through February 17, 2014**
+
+
+## Entry 87: Eugene Monroe designated franchise player (February 18, 2014)
+
+**Effective canonical state:** February 18, 2014.
+**Recorded:** September 29, 2026
+**Checkpoint:** `Canonical update - February 18, 2014 - Eugene Monroe designated franchise player`
+**Preceding global package checkpoint:** `Canonical update - February 17, 2014 - Clock advanced to February 17 (franchise and transition window open)`
+
+**Authority.** On September 29, 2026 the user instructed that Monroe be tagged now instead of holding the tag as the March 3 fallback in Stone's February 2 memo. The instruction is appended to the memo as a dated amendment ("tag Monroe now"); it supersedes the timing only. Designating a franchise player is Caldwell's contract authority under Document 3; he acts on the user's instruction. This is a stated reading, not a draw.
+
+**Event.** On Tuesday, February 18, 2014, the second day of the designation window (opened February 17; deadline March 3, 4 p.m. ET), Caldwell designated Eugene Monroe as Jacksonville's non-exclusive franchise player. It is Jacksonville's one designation for 2014.
+- **Tender amount.** The 2014 offensive-line franchise figure. Stone's memo carries it as a projection of $11.654M (from the CBS Sports projections reported February 17, 2014). The league publishes the official figures on February 28, so the amount is recorded as projected until then.
+- **Status.** Monroe is no longer a pending unrestricted free agent. He is a franchise player (non-exclusive) whose tender is not yet signed. The tender counts against Jacksonville's 2014 cap from the league year (March 11, 4 p.m. ET) at the official figure; no projected amount is certified.
+- **Market.** From March 11 another club may sign him to an offer sheet; if Jacksonville declines to match, it receives two first-round picks from that club. Long-term talks continue on the memo's section 2 terms. His re-signing outcome is resolved by one market draw at his real signing date, March 11, under rails method section 4; if Jacksonville loses that draw, he plays 2014 on the tag.
+- **No other tag.** No franchise or transition designation remains for Sen'Derrick Marks or any other player. Marks becomes an unrestricted free agent at the league year if unsigned.
+
+**Administrative corrections (derived-view contradictions, no event).** The contract register's Nwaneri row now shows the 2015 final year confirmed by the pre-tag-window verifications and Entry 86. The 2013 regular-season worksheet no longer says the initial cap sheet lacks Blackmon's base/proration split (it shows one, as an unre-verified archive transcription; the forfeiture stays unresolved). The 2013 draftees page carries a supersession note for Bray's rookie contract, replaced by his Entry 85 reserve/future deal. AGENTS.md now lists the depth chart and the contract table among the dependent views every progression task updates.
+
+**Atomic closure.** The following now agree: the memo amendment, the [tags and tenders record](../2014/offseason/free_agency/signings.md#tags-and-tenders), the contract status register (7 pending UFAs, 1 franchise player), the contract table and the working depth chart (both with update-log rows), the 2014 preparation worksheet, the calendar, the roster header, the 2014 README, readiness, operating baseline and trade status lines, and Documents 4 (register 43) and 5 (state 63). No player-control, roster-count, pick or staff change. The private snapshot is not advanced from this branch.
+
+**Commit closed - Canonical update - February 18, 2014 - Eugene Monroe designated franchise player - canonical through February 18, 2014**
+
+
+## Entry 88: Clock advanced to February 25, 2014 (Combine closed)
+
+**Effective canonical state:** February 25, 2014.
+**Recorded:** September 29, 2026
+**Checkpoint:** `Canonical update - February 25, 2014 - Clock advanced to February 25 (Combine closed)`
+**Preceding global package checkpoint:** `Canonical update - February 18, 2014 - Eugene Monroe designated franchise player`
+
+**Authority.** On September 29, 2026 the user asked for the clock to advance through the Combine (February 19-25, 2014) after the Monroe designation. This entry records what became public in that window and moves the master clock.
+
+**Combine evidence.** `library/2014_combine_results.md` records combine measurables, drill results, non-participation and eligibility for the 23 prospects on Jacksonville's draft board, its named comparisons and its undrafted line list. The research had two passes; every figure carries a status label and is usable from its public date (February 21 to 25, 2014). Pro-day results, later reports and all post-draft material are excluded, and four sources whose titles carry post-draft material are withheld. No grade is assigned: grades are Stone's evaluation and remain open. The information-gates file and the draft board each carry a one-line pointer.
+
+**League rails.** A bounded search of real other-club moves dated February 18 to 25 found two, both applied at this checkpoint in their club pages:
+- Indianapolis released RB Tashard Choice on February 18 (single source).
+- Atlanta released G Garrett Reynolds on February 18 (confirmed).
+The search is not a complete league transaction log. No real retirement dated February 18 to 25 is recorded in `league_rails/retirements.md`, and no new retirement research was done.
+
+**Nothing else happened for Jacksonville between February 19 and 25.** No signing, tender, trade, waiver claim or staff change. Monroe's tender remains unsigned. The 2014 cap and the official tag figures are still unpublished (February 28).
+
+**Next dated events.**
+- Cap and tag figures public, February 28 (Monroe's official tender amount).
+- Designation deadline, March 3 at 4 p.m. ET; Jacksonville has already designated.
+- Negotiating window from March 8 at noon.
+- March 11 at 4 p.m. ET: the league year opens, RFA/ERFA tenders are due, reserve/future contracts take effect, trades open, Monroe's tender starts to count and his re-signing draw falls at his real signing date, and the free-agent market draws begin.
+- Nwaneri's roster-bonus date is unknown.
+
+**Atomic closure.** The following now agree: the master clock (February 25), the roster header and player ages (derived by the age renderer; Ryan Davis and Sen'Derrick Marks had birthdays in the window), the calendar, the combine results file and its two pointers, the Indianapolis and Atlanta rails pages, the 2014 README, readiness, operating baseline, trade and staff status lines, the February 18 to 25 turn output, and Document 5 (state 64). Document 4 stays at register 43: its owned content is unchanged apart from the renderer-derived ages. No player-control, contract, cap, pick, staff or game change. The private snapshot is not advanced from this branch.
+
+**Commit closed - Canonical update - February 25, 2014 - Clock advanced to February 25 (Combine closed) - canonical through February 25, 2014**
+
+
+## Entry 89: Clock advanced to February 28, 2014 (2014 cap and tag figures published)
+
+**Effective canonical state:** February 28, 2014.
+**Recorded:** September 29, 2026
+**Checkpoint:** `Canonical update - February 28, 2014 - Clock advanced to February 28 (2014 cap and tag figures published)`
+**Preceding global package checkpoint:** `Canonical update - February 25, 2014 - Clock advanced to February 25 (Combine closed)`
+
+**Authority.** On September 29, 2026 the user asked for the clock to advance to February 28, the date the league published the 2014 cap and tag values. This entry records what became public and applies the real other-club moves dated February 26 to 28.
+
+**League publications (gate passed February 28).** Cited from `library/2014_league_calendar_and_financial_rules.md`, which is not edited:
+- **2014 salary cap:** $133,000,000 per club (F1, Confirmed); compliance by 4 p.m. ET March 11.
+- **Franchise values** (section 2b, Confirmed; the sources give them rounded to the thousand) and **transition values** (section 2c, mixed labels) are now usable.
+- **Jacksonville's adjusted cap and cap space stay Unresolved.** No per-club 2014 adjusted-cap table was found for February 28. The branch carryover is still uncertified; the memo's branch range is $5.4M to $6.6M, or nothing if no election was filed, and the real Jaguars' reported figure is a comparator only and is not used. As context only, the February 28 release relayed a $6.1M average carryover among clubs that elected one (Buffalo Bills release citing NFLPA communications; single source).
+- **RFA tender amounts:** their publication date is not established (no later than March 6); until then the memo's figures remain planning figures.
+
+**Monroe's tender becomes official.** The non-exclusive franchise tender designated February 18 (Entry 87) is the 2014 offensive-line value, **$11,654,000**. The required tender is the greater of the position figure and 120 percent of the player's prior-year salary. The only 2013 figures on record are the initial cap sheet's archive transcription ($3,800,000 base; $5,747,500 cap number), not re-verified by its audit: 120 percent is $4,560,000 or $6,897,000, both lower, so the position figure applies on either measure, conditional on that transcription. The tender is not yet signed and counts against the 2014 cap from the league year. The contract table's sourced 2014 charges stay $17,618,182 (partial); with the tender they come to $29,272,182 (partial).
+
+**League rails, February 26 to 28.** Applied in each club page's "Changes on the rails" table, with sources and labels:
+- Confirmed: Jordan Gross (Carolina) retired, first reported February 25 and formally announced February 26 (applied at the formal date; league-wide row in `league_rails/retirements.md`); D'Qwell Jackson released by Cleveland, February 26; Jason Peters extended by Philadelphia, February 26 (move confirmed, day single source); Vonta Leach and Jameel McClain released by Baltimore, February 27; Roberto Garza re-signed by Chicago, February 27 (move confirmed, day single source and tertiary); Jasper Brinkley released by Arizona, February 28; Dennis Pitta re-signed by Baltimore, February 28; Sidney Rice and Red Bryant released by Seattle, February 28; Steve Gregory released by New England, February 28; Jeremy Maclin re-signed by Philadelphia (agreement reported February 28; formal signing date Unverified); franchise tags on February 28 for Greg Hardy (Carolina, recorded as non-exclusive), Jimmy Graham (New Orleans, tight end) and Nick Folk (Jets, kicker).
+- Single source, applied with that label: Dallas released or waived Everette Brown, Corvey Irvin, Ray Dominguez and Jeff Olson on February 28 (the move is attested by two outlets; the day rests on one); Chicago re-signed Dante Rosario (February 27) and Kelvin Hayden (February 28).
+- Unverified, not applied: Zach Potter's reported signing with Houston (February 26) and Khalif Barnes's reported re-signing by Oakland (February 28). Both are listed in their club pages as pending verification.
+- Coverage: a bounded two-pass search. The web-search budget ran out during pass 2, which could only re-read the evidence stored from pass 1. Eighteen of the 31 other clubs had no move found, which is not a verified negative.
+- `league_rails/free_agent_pool.md` records the status changes (Hardy, Graham and Folk tagged; Gross retired; the re-signed players off the market) and lists the released veterans as free agents from their release dates. The generated inventories are unchanged (`build_league_player_database.py --check` passes).
+
+**Jacksonville board consequence (current reading, not a memo change).** Hardy is franchise-tagged by Carolina. Under that tag an offer sheet would cost two first-round picks, which the current plan commits to Donald (13) and Adams (26), so he is not pursued. The priority 4 edge target is Daniel Te'o-Nesheim (pending UFA status supported; March 11 availability not established), then Jared Allen, then keep Babin (memo contingency 4). The user's instruction still requires an edge rusher opposite Lawrence. Veterans released February 26 to 28 are free agents now and could be pursued before March 11 only on a new user instruction; none has been given.
+
+**Nothing else happened for Jacksonville between February 26 and 28.** No signing, tender, trade, waiver claim or staff change; Monroe's tender remains unsigned. No Jacksonville retirement dated February 26 to 28 is recorded.
+
+**Next dated events.**
+- March 3 at 4 p.m. ET: designation deadline; Jacksonville has already designated.
+- March 8 at noon: negotiating window opens.
+- March 11 at 4 p.m. ET: the league year opens; RFA/ERFA tenders are due; the reserve/future contracts and Monroe's tag tender take effect; trades open; Monroe's re-signing draw and the free-agent market draws fall at the players' real signing dates.
+- Nwaneri's roster-bonus date is still unknown.
+
+**Atomic closure.** The following now agree: the master clock (February 28), the roster header and player ages, the calendar, the tags and tenders record, the contract register, the contract table (update-log row), the 2014 preparation worksheet, the working depth chart's as-of line (no chart change), the free-agency board reading, the thirteen touched club rails pages, the free-agent pool and retirements pages, the 2014 README, readiness, operating baseline, trade and staff status lines, the February 26 to 28 turn output, and Documents 4 (register 44) and 5 (state 65). No player-control, pick or staff change. The private snapshot is not advanced from this branch.
+
+**Commit closed - Canonical update - February 28, 2014 - Clock advanced to February 28 (2014 cap and tag figures published) - canonical through February 28, 2014**

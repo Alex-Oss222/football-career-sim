@@ -78,3 +78,6 @@
 
 | Real date | Move | Player | Detail | Source | Gate passed in branch? |
 |---|---|---|---|---|---|
+| February 28, 2014 | Franchise tag | Nick Folk, K | Franchise tag announced by the club. The tag type is not recorded here | [NewYorkJets.com](https://www.newyorkjets.com/news/jets-place-franchise-tag-on-k-nick-folk-12687180); [The Jet Press, February 28, 2014](https://thejetpress.com/2014/02/28/new-york-jets-use-franchise-tag-nick-folk/); [ESPN](https://www.espn.com/nfl/story/_/id/10534335/new-york-jets-put-franchise-tag-placekicker-nick-folk); [NFL.com](https://www.nfl.com/news/nick-folk-receives-franchise-tag-from-new-york-jets-0ap2000000329991). Confirmed | Yes: applied February 28, 2014 by Entry 89 |
+
+**Coverage note (Entry 89, February 28, 2014):** the February 26 to 28 moves in this table come from a bounded two-pass search. The web-search budget ran out during pass 2, which could therefore only re-read the evidence stored from pass 1. Eighteen of the 31 other clubs had no move found in the window; that is not a verified negative, and other moves by this club in the window may exist.

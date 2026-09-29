@@ -73,3 +73,6 @@
 
 | Real date | Move | Player | Detail | Source | Gate passed in branch? |
 |---|---|---|---|---|---|
+| February 28, 2014 | Re-signing (reported) | Khalif Barnes, T | Reported re-signing of a pending free agent; terms not recorded. The first pass rated it confirmed; the second pass could not re-open any source | [Raiders.com](https://www.raiders.com/news/raiders-re-sign-khalif-barnes-12688241); [ProFootballTalk, February 28, 2014](https://profootballtalk.nbcsports.com/2014/02/28/raiders-re-sign-khalif-barnes-2/); [SFGate](https://www.sfgate.com/raiders/article/Lineman-Khalif-Barnes-re-signs-with-Raiders-5279176.php); [AP via Fox News](https://www.foxnews.com/sports/raiders-bring-back-first-of-17-free-agents-re-signing-ol-khalif-barnes). Unverified | **No: pending verification; not applied.** Recorded so a later session can verify it |
+
+**Coverage note (Entry 89, February 28, 2014):** the February 26 to 28 moves in this table come from a bounded two-pass search. The web-search budget ran out during pass 2, which could therefore only re-read the evidence stored from pass 1. Eighteen of the 31 other clubs had no move found in the window; that is not a verified negative, and other moves by this club in the window may exist.

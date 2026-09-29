@@ -77,3 +77,6 @@
 
 | Real date | Move | Player | Detail | Source | Gate passed in branch? |
 |---|---|---|---|---|---|
+| February 26, 2014 | Release | D'Qwell Jackson, ILB | Released; the club announced it on the afternoon of February 26 as a mutual decision. No cap figure recorded | [ProFootballTalk, February 26, 2014](https://profootballtalk.nbcsports.com/2014/02/26/browns-parting-ways-with-dqwell-jackson/); [SI Wire, February 26, 2014](https://www.si.com/si-wire/2014/02/26/dqwell-jackson-browns-release); [Dawgs By Nature, February 26, 2014](https://www.dawgsbynature.com/2014/2/26/5450694/browns-part-with-team-captain-ilb-dqwell-jackson); [NFL.com](https://www.nfl.com/news/d-qwell-jackson-released-by-cleveland-browns-0ap2000000329412). Confirmed | Yes: applied February 28, 2014 by Entry 89 |
+
+**Coverage note (Entry 89, February 28, 2014):** the February 26 to 28 moves in this table come from a bounded two-pass search. The web-search budget ran out during pass 2, which could therefore only re-read the evidence stored from pass 1. Eighteen of the 31 other clubs had no move found in the window; that is not a verified negative, and other moves by this club in the window may exist.

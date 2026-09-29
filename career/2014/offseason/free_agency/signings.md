@@ -1,6 +1,6 @@
 # Jacksonville 2014 free-agency and contract outcomes
 
-**Status:** six 2014 reserve/future contracts are recorded below (Entry 85). No 2014 re-signing, outside free-agent signing, tender or tag is completed. Prior contracts remain in the [2013 signing history](../../../2013/offseason/free_agency/signings.md) and current [contract register](../contract_status_register.md). This file is prepared for the dated events.
+**Status:** six 2014 reserve/future contracts (Entry 85) and Eugene Monroe's February 18 franchise tag (Entry 87; tender amount official February 28, Entry 89) are recorded below. No 2014 re-signing, outside free-agent signing or RFA/ERFA tender is completed. Prior contracts remain in the [2013 signing history](../../../2013/offseason/free_agency/signings.md) and current [contract register](../contract_status_register.md). This file is prepared for the dated events.
 
 ## Process and evidence
 
@@ -24,6 +24,16 @@ Authority: Stone's February 2 memo, section 1; Caldwell made all six offers on F
 | D'Anthony Smith, DT | February 3 | Signed February 5 after the [market draw](../league_rails/fa_draws.md) against his real Seattle reserve/future contract of that date | March 11, 2014 | Minimum for credited seasons, figure unresolved | Credited seasons |
 
 Not offered: Brandon King and Will Ta'ufo'ou, who left as free agents.
+
+### Tags and tenders
+
+| Date | Player | Instrument | Authority | Amount | Status | Remaining unknowns |
+|---|---|---|---|---|---|---|
+| February 18, 2014 | Eugene Monroe, OT | Non-exclusive franchise tag; Jacksonville's one designation for 2014 | User instruction of September 29, 2026 (memo amendment "tag Monroe now"); Caldwell designated; ledger Entry 87 | **$11,654,000**, the 2014 offensive-line franchise value, official from February 28, 2014 (`library/2014_league_calendar_and_financial_rules.md` section 2b, Confirmed; the sources give it rounded to the thousand). Carried as a projection ($11.654M, Stone's memo) from February 18 until the publication (Entry 89) | Franchise player (non-exclusive); tender not yet signed. The tender counts against Jacksonville's 2014 cap from the league year (March 11, 4 p.m. ET) | Whether Monroe signs the tender or a long-term contract; the prior-year-salary check below rests on an unre-verified 2013 transcription |
+
+A non-exclusive franchise player may negotiate with other clubs from the league year. Another club may sign him to an offer sheet from March 11; if Jacksonville declines to match, it receives two first-round picks from that club. Long-term talks continue on the memo's section 2 terms. The re-signing outcome is resolved by one market draw at his real signing date (March 11, 2014) under [rails method section 4](../league_rails/method.md#4-free-agents-jacksonville-pursues-the-market-draw); if Jacksonville loses that draw, Monroe plays 2014 on the tag. No tag remains for Marks or any other player. No RFA or ERFA tender has been made (due by March 11, 4 p.m. ET).
+
+**Tender check (February 28, 2014, Entry 89).** The required non-exclusive tender is the greater of the position figure and 120 percent of the player's prior-year salary. The only 2013 figures on record for Monroe are in the [initial cap sheet](../../../2013/offseason/initial_cap_sheet.md): $3,800,000 base, $1,742,500 proration and a $205,000 workout bonus, for a $5,747,500 cap number. That row is an older archive transcription its September 18, 2026 audit did not re-verify. One hundred twenty percent of the base is $4,560,000, and of the full cap number $6,897,000. Both are below $11,654,000, so the position figure applies whichever of those measures counts as his prior-year salary. It would stop applying only if his prior-year salary exceeded $9,711,667, which the recorded figures do not approach; the check stays conditional on the transcription being accurate.
 
 ### Later entries
 

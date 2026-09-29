@@ -9,7 +9,7 @@
 
 ## Decision package and historical clarification
 
-The [complete phase decision package](../phase_plan_decisions.md) supplies the proposed dates, install sequence, room priorities, P1 through P9 recommendations and emergency-staff choices, reviewed against Entry 86. Its new recommendations remain unadopted. P3, the P5 teaching process and individual-development P8 are already authorized. The [rules verification](../../../../library/2014_offseason_phase_rules_verification.md) distinguishes the schedule-filing deadline, Phase One classroom permission and unresolved passive pre-program film distribution.
+The [complete phase decision package](../phase_plan_decisions.md) supplies the proposed dates, install sequence, room priorities, pending policy recommendations and emergency-staff choices, reviewed through the February 28 checkpoint, Entry 89. Its new recommendations remain unadopted. Individual feedback, shared protection-identification teaching and continuing individual development are already authorized. The [rules verification](../../../../library/2014_offseason_phase_rules_verification.md) distinguishes the schedule-filing deadline, Phase One classroom permission and unresolved passive pre-program film distribution.
 
 ## Living player assessment: adopted follow-up
 
@@ -48,7 +48,7 @@ Use Explain → Show → Walk → Rep → Correct → Rep again → Retain → A
 
 Read the [training index](../README.md), [room work plans](../training/unit_plans.md), [player queue](../film/player_queue.md) and the relevant [individual plan](../player_development/README.md) before preparing the phase. Use the [session template](../training/session_template.md), [film packet](../film/packet_template.md) and [delivery log](../film/delivery_log.md) to close the loop from assigned job to a later independent retest.
 
-Stone authorized the individual-feedback process P3 and Cousins progression, the P5 QB-center identification teaching process, and continuation of individual development in P8. Other marked proposals remain pending. Start Cousins from his [2013 evidence assessment](../player_development/kirk_cousins.md), preserving demonstrated operation and targeting the unresolved job. Do not reset him to a beginner plan or infer broad mastery from results alone.
+Stone authorized individual feedback and Cousins progression, shared QB-center identification teaching, and continuing individual development. Other marked proposals remain pending. Start Cousins from his [2013 evidence assessment](../player_development/kirk_cousins.md), preserving demonstrated operation and targeting the unresolved job. Do not reset him to a beginner plan or infer broad mastery from results alone.
 
 All work remains within this phase’s calendar, contact, medical and voluntary-participation limits. The actual phase output owns new practice evidence; the delivery log owns actual distribution. A prepared packet is not a delivered tape. No historic January delivery is backdated. New role assignments and Boot Flood’s return require their separate decisions.
 
@@ -165,21 +165,21 @@ Before Phase Two, position coaches prepare the retained-material check and an in
 
 At the handoff to OTAs, each room reports what was taught, retained, postponed and limited by medicine or legal work restrictions. The shared full-team family dinner remains one event in the offseason/OTA window, planned and recorded through OTAs, not a duplicate obligation here. Events belong in this folder's future `output.md`; current state changes only when an event actually occurs.
 
-## 2014 decisions: P3 adopted; other proposals pending
+## 2014 decisions: individual feedback adopted; other proposals pending
 
-These items answer the exit-interview questions without inventing Crennel's promised report or a player evaluation. P3 is adopted by the user’s training/film request; P1, P2 and P4 remain proposals. Any later personnel appointment still needs its own evidence and record.
+These items answer the exit-interview questions without inventing Crennel's promised report or a player evaluation. Individual feedback is adopted by the user’s training/film request; defensive relay succession, injured-player learning and cross-training remain proposals. Any later personnel appointment still needs its own evidence and record.
 
-### P1: defensive communication succession
+### defensive communication succession
 
 Keep Daryl Smith as the on-field communication lead. Recommend Posluszny as the first backup only after medical clearance and a lawful retention check. If he is unavailable, have Crennel and Bush evaluate Stanford, then Moore, for the reserve relay job during permitted work. That order is a proposed teaching sequence, not a depth-chart award. Allen is not a durable successor because the trade instruction and April 22 retirement remove him from the post-April plan.
 
 Crennel's proposal should name the primary and backup communicator for each actual package, the front/coverage echo, the handoff when the lead leaves, and the sideline fallback if neither designated player is on the field. First explain and walk the handoff within Phase Two limits; stress a changed look and missing lead in OTAs. Record whether the call arrived, was repeated accurately and produced the correct alignment. Separate a late staff call from a player's relay error. Do not make two players competing authorities on the same snap.
 
-### P2: injured-player learning and return
+### injured-player learning and return
 
 Offer medically permitted access to meetings, approved film and position-coach clarification on the same voluntary basis as teammates. The clinician specifies whether cognitive as well as physical work is restricted. No attendance, recall deadline or contact requirement overrides that instruction. Review restrictions before adding work; a return projection is not permission. Provide a short catch-up sequence on clearance, then a lawful retest of assigned material. No lost role follows automatically from an injury or absence.
 
-### P3: individual feedback and overdue film, adopted
+### individual feedback and overdue film, adopted
 
 Provide an individual written teaching note for every participating controlled player, including reserves and practice-squad/futures players, after each meaningful work block. State the assigned job, evidence, what was correct, the cause of any error, correction owner, next legal retest and whether an evaluation is open, parked or closed. No evidence means not observed, not failed. If several players miss the same instruction, review the teaching first.
 
@@ -199,7 +199,7 @@ The January 31 deliveries remain **unverified/open**, not delivered and not prov
 
 Coaches may prepare and audit material internally without claiming player participation. Pre-program coach-led football meetings, film and playbook study are prohibited; the [verification record](../../../../library/2014_offseason_phase_rules_verification.md) leaves passive film distribution unresolved. Unless Caldwell verifies an earlier lawful distribution route, the decision package recommends beginning pending player delivery/discussion with the April 21 program. No arbitrary new delivery date or prepared packet establishes permission or actual receipt.
 
-### P4: position opportunities and role explanations
+### position opportunities and role explanations
 
 Recommend keeping each player's primary-job development first, then targeted cross-training when lawful workload allows: Johnson at left tackle, Bradfield at both tackles, the actual controlled interior linemen at guard/center, Moore and Stanford in base-linebacker teaching, Prosinski in safety rotation, and Harris/Poyer/Bouye in defined outside-corner looks. These are evaluation opportunities, not promised starts, fixed rep shares or automatic position changes. Tice/Crennel and their position coaches identify the specific assignment evidence needed before a role change reaches Stone.
 

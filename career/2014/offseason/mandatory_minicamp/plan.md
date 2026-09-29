@@ -9,7 +9,7 @@
 
 ## Decision package and historical clarification
 
-The [complete phase decision package](../phase_plan_decisions.md) supplies the proposed dates, install sequence, room priorities, P1 through P9 recommendations and emergency-staff choices, reviewed against Entry 86. Its new recommendations remain unadopted. P3, the P5 teaching process and individual-development P8 are already authorized. The [rules verification](../../../../library/2014_offseason_phase_rules_verification.md) distinguishes the schedule-filing deadline, Phase One classroom permission and unresolved passive pre-program film distribution.
+The [complete phase decision package](../phase_plan_decisions.md) supplies the proposed dates, install sequence, room priorities, pending policy recommendations and emergency-staff choices, reviewed through the February 28 checkpoint, Entry 89. Its new recommendations remain unadopted. Individual feedback, shared protection-identification teaching and continuing individual development are already authorized. The [rules verification](../../../../library/2014_offseason_phase_rules_verification.md) distinguishes the schedule-filing deadline, Phase One classroom permission and unresolved passive pre-program film distribution.
 
 ## Living player assessment: adopted follow-up
 
@@ -48,7 +48,7 @@ Use Explain → Show → Walk → Rep → Correct → Rep again → Retain → A
 
 Read the [training index](../README.md), [room work plans](../training/unit_plans.md), [player queue](../film/player_queue.md) and the relevant [individual plan](../player_development/README.md) before preparing the phase. Use the [session template](../training/session_template.md), [film packet](../film/packet_template.md) and [delivery log](../film/delivery_log.md) to close the loop from assigned job to a later independent retest.
 
-Stone authorized the individual-feedback process P3 and Cousins progression, the P5 QB-center identification teaching process, and continuation of individual development in P8. Other marked proposals remain pending. Start Cousins from his [2013 evidence assessment](../player_development/kirk_cousins.md), preserving demonstrated operation and targeting the unresolved job. Do not reset him to a beginner plan or infer broad mastery from results alone.
+Stone authorized individual feedback and Cousins progression, shared QB-center identification teaching, and continuing individual development. Other marked proposals remain pending. Start Cousins from his [2013 evidence assessment](../player_development/kirk_cousins.md), preserving demonstrated operation and targeting the unresolved job. Do not reset him to a beginner plan or infer broad mastery from results alone.
 
 All work remains within this phase’s calendar, contact, medical and voluntary-participation limits. The actual phase output owns new practice evidence; the delivery log owns actual distribution. A prepared packet is not a delivered tape. No historic January delivery is backdated. New role assignments and Boot Flood’s return require their separate decisions.
 
@@ -520,8 +520,8 @@ When mandatory minicamp is actually run:
 
 Open with retention from the actual OTA output, including players who lawfully missed voluntary work. Complete their catch-up teaching without an attendance penalty. Use blocks A through D to establish the common language, change the picture, rehearse situations, then correct and retest. No contact restriction is loosened because this event is mandatory.
 
-Cousins remains QB1; evaluate the actual reserve quarterbacks using their actual eligibility: Henne is not assumed re-signed, and Bray's signed March 11-effective futures contract does not pre-award QB3. Interior-line and secondary competitions remain evidence-based. Use the proposed P1 communication handoff only if subsequently approved; a scenario removing the lead is a teaching exercise, not a simulated injury. Boot Flood participates only if the P6 review and return decision have actually closed.
+Cousins remains QB1; evaluate the actual reserve quarterbacks using their actual eligibility: Henne is not assumed re-signed, and Bray's signed March 11-effective futures contract does not pre-award QB3. Interior-line and secondary competitions remain evidence-based. Use the proposed defensive communication handoff only if subsequently approved; a scenario removing the lead is a teaching exercise, not a simulated injury. Boot Flood participates only if its review and return decision have actually closed.
 
-Under adopted P3, every player receives an individual summer plan: assigned job, demonstrated strengths, unresolved correction, medical limitations through the proper channel, and the camp-entry retest. Report which concepts and evaluations are open, parked or closed. The family dinner remains a social/support event, with no football exam or penalty for a guest's absence.
+Under the adopted individual-feedback policy, every player receives an individual summer plan: assigned job, demonstrated strengths, unresolved correction, medical limitations through the proper channel, and the camp-entry retest. Report which concepts and evaluations are open, parked or closed. The family dinner remains a social/support event, with no football exam or penalty for a guest's absence.
 
 Before the break, Tice and Crennel deliver a narrow camp carry-forward menu and the evidence still needed for position decisions. Stone owns subsequent role choices; Caldwell owns contracts and cuts. A future player, medical clearance or camp date is not inferred to complete this document.

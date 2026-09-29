@@ -2,17 +2,17 @@
 
 ## Alex Stone
 
-**Career assessed through February 17, 2014. Prepared September 29, 2026.** Companion to the [human coaching portrait](alex_stone.md), using the supplied NFL Coach Sheet format. This is a dated assessment of existing history. It does not advance the season, appoint staff, change roles or make new football decisions.
+**Career assessed through February 28, 2014. Prepared September 29, 2026.** Companion to the [human coaching portrait](alex_stone.md), using the supplied NFL Coach Sheet format. This is a dated assessment of existing history. It does not advance the season, appoint staff, change roles or make new football decisions.
 
 [Career](#background) | [Coaching profile](#coaching-profile) | [Team and staff](#team-situation) | [Roster](#roster) | [Capabilities](#capabilities) | [Season log](#season-log) | [Sources](#source-and-research-notes)
 
 Stone is most comfortable when he has a football problem to work on: how to give Cousins an answer against pressure, move a tight end without changing the concept, or get another useful look from the same personnel. He wants to call the offense himself. By this point he has called in college, taken over the Saints' calls during 2011, and carried them through two complete NFL seasons as a head coach. Jacksonville has tested something different: whether he can make his own staff and developmental program work for players who do not already know the answers.
 
-His best teaching gives a player a clear job, a useful correction and another opportunity to perform it. His less effective teaching leaves the player with a short instruction while the week moves on. The interesting change entering 2014 is that players can now tell him exactly where that happened. He listens and can admit it. The follow-through still needs to become as dependable as the explanation. Those are interpretations of the recorded work, not invented private thoughts. [C8] [C9] [C10] [C11]
+His best teaching gives a player a clear job, a useful correction and another opportunity to perform it. His less effective teaching leaves the player with a short instruction while the week moves on. The interesting change entering 2014 is that players can now tell him exactly where that happened. He listens and can admit it. The follow-through still needs to become as dependable as the explanation. Those are interpretations of the recorded work, not invented private thoughts.
 
-**Latest closure:** the current fields include Entries 83-86 through February 17: Westhoff's hire, completed futures outcomes and the opening of the franchise/transition window. The underlying human portrait and most demonstrated coaching evidence remain rooted in the completed 2013 season. [C6] [C25] [C26]
+**Latest closure:** the current fields follow [Entry 89 and current state](../../state/05_Current_Season_State.md) through February 28: Westhoff is hired, six futures contracts are signed, Monroe was franchise-tagged on February 18, the Combine has closed and the league cap and franchise values are public. The underlying human portrait and most demonstrated coaching evidence remain rooted in the completed 2013 season.
 
-**Reading the sheet:** biography and completed events come from branch records; statements about comfort or temperament are evidence-based interpretations; historical research supplies real context only. Unknown means the record does not establish the answer. Inactive game-week fields are marked accordingly because the club is in its offseason. Source codes link to the records and are explained at the end.
+**Reading the sheet:** biography and completed events come from branch records; statements about comfort or temperament are evidence-based interpretations; historical research supplies real context only. Unknown means the record does not establish the answer. Inactive game-week fields are marked accordingly because the club is in its offseason. Named links and the source section at the end identify the supporting records.
 
 | Current record | Details |
 | --- | --- |
@@ -24,22 +24,22 @@ His best teaching gives a player a clear job, a useful correction and another op
 | Division record | 2013: 3-3 in the AFC South |
 | Conference record | 2013: 7-5 against the AFC, regular season only |
 | Current opponent | None. Last opponent was Tennessee in the Divisional round |
-| Date / time | Master date February 17, 2014; no current kickoff time |
+| Date / time | Master date February 28, 2014; no current kickoff time |
 | Location | Jacksonville organization; Stone's exact physical whereabouts at this checkpoint are not recorded |
-| Current situation | Season review and exits completed; Westhoff hired, six futures contracts signed, franchise/transition window open; no tag designated |
+| Current situation | Season review and exits completed; Westhoff hired; six futures contracts effective March 11; Monroe's franchise tender unsigned; Combine closed; league cap public, Jacksonville cap space unresolved |
 | Job status | Retained January 15, 2014 under his existing fully guaranteed four-year contract; no extension or change in authority |
 
-Records are calculated from the established 2012 head-coaching record and 2013 receipts. They are branch results, not the real Saints' or Jaguars' results. [C2] [C6] [C7] [C21]
+Records are calculated from the established 2012 head-coaching record and 2013 receipts. They are branch results, not the real Saints' or Jaguars' results.
 
 ## Background
 
-Alex-Lamar Stone was born in Miami on September 21, 1963. His childhood household, schools before college and formative family stories have not been established. His football history begins at the University of Miami, where he played from 1982 through 1985 and was a sophomore on the 1983 national championship team. That team was coached by Howard Schnellenberger. Jimmy Johnson coached Stone's final two college seasons. The distinction matters: his later work for Johnson does not make Johnson the coach of the 1983 title team. [C1] [C2] [H1]
+Alex-Lamar Stone was born in Miami on September 21, 1963. His childhood household, schools before college and formative family stories have not been established. His football history begins at the University of Miami, where he played from 1982 through 1985 and was a sophomore on the 1983 national championship team. That team was coached by Howard Schnellenberger. Jimmy Johnson coached Stone's final two college seasons. The distinction matters: his later work for Johnson does not make Johnson the coach of the 1983 title team.
 
-Stone then played ten seasons at tight end for San Diego, from 1986 through 1995. His established fictional record is 150 games, 488 receptions, 5,912 receiving yards and 44 touchdowns, with five Pro Bowls and two first-team All-Pro selections. He played in the Chargers' Super Bowl XXIX loss to San Francisco, 49-26 on January 29, 1995. He retired after the 1995 season at 32. Neither his draft slot nor the cause of retirement is established. His career is an addition to the fictional world; those numbers do not take statistics or honors away from real players. [C1] [C2] [H2]
+Stone then played ten seasons at tight end for San Diego, from 1986 through 1995. His established fictional record is 150 games, 488 receptions, 5,912 receiving yards and 44 touchdowns, with five Pro Bowls and two first-team All-Pro selections. He played in the Chargers' Super Bowl XXIX loss to San Francisco, 49-26 on January 29, 1995. He retired after the 1995 season at 32. Neither his draft slot nor the cause of retirement is established. His career is an addition to the fictional world; those numbers do not take statistics or honors away from real players.
 
-He has a BS from Miami, conferred in 1986, an MBA from the University of San Diego in 1996, and a Miami PhD in Exercise Physiology in 2002. His doctoral work concerned motor learning. He studied while moving from playing into graduate-assistant work and then professional coaching. This explains an interest in how a correction is learned and retained. It does not prove every lesson he gives is effective, and he does not lead ordinary conversation with the doctorate. [C1]
+He has a BS from Miami, conferred in 1986, an MBA from the University of San Diego in 1996, and a Miami PhD in Exercise Physiology in 2002. His doctoral work concerned motor learning. He studied while moving from playing into graduate-assistant work and then professional coaching. This explains an interest in how a correction is learned and retained. It does not prove every lesson he gives is effective, and he does not lead ordinary conversation with the doctorate.
 
-His coaching route crossed position rooms before it reached a permanent NFL head-coaching job. Quarterback support and college calling came first, then the New England secondary, tight ends and passing-game coordination, then the Saints' offensive coordination and interim head-coaching job. Reading his current offense against that history, the recurring interest is the relationship between a receiver's assignment, the coverage response and the protection needed to make the throw possible. That is a supported interpretation of his work, not a claim that any one mentor supplied his entire philosophy. [C2] [C14]
+His coaching route crossed position rooms before it reached a permanent NFL head-coaching job. Quarterback support and college calling came first, then the New England secondary, tight ends and passing-game coordination, then the Saints' offensive coordination and interim head-coaching job. Reading his current offense against that history, the recurring interest is the relationship between a receiver's assignment, the coverage response and the protection needed to make the throw possible. That is a supported interpretation of his work, not a claim that any one mentor supplied his entire philosophy.
 
 ## Experience
 
@@ -59,43 +59,43 @@ His coaching route crossed position rooms before it reached a permanent NFL head
 | 2011 | Saints offensive coordinator, then primary caller from Payton's Week 6 sideline injury onward | Sustained NFL calling through the rest of the season and playoffs, with Payton still contributing ideas and situational direction |
 | April 16, 2012 through the 2012 playing season | Saints interim head coach, offensive coordinator and caller | Full team responsibility with much of the inherited staff; 12-4, Wild Card win, Divisional loss January 13, 2013. Exact administrative end date remains unspecified |
 | January 15, 2013 onward | Jaguars permanent head coach and offensive caller | Built his own staff, installed a program and developed a new starting quarterback. First Jacksonville season: 10-6, one playoff win and a Divisional exit |
-| February 2014 | Second Jacksonville offseason | Completed the Westhoff replacement hire after Oakland refused the April approach; retained the remaining assistants through February exposure. Six futures signed through Caldwell; no new on-field development result [C25] [C26] [C27] |
+| February 2014 | Second Jacksonville offseason | Completed the Westhoff replacement hire after Oakland refused the April approach; retained the remaining assistants through February exposure. Six futures signed through Caldwell; no new on-field development result |
 
-These are Stone's established branch jobs. The real Saints' coordinator and interim-head-coach succession differed. Historical New England sources confirm the surrounding Mangini/Crennel structure, not the existence of fictional employee Stone. [C1] [C2] [H3]
+These are Stone's established branch jobs. The real Saints' coordinator and interim-head-coach succession differed. Historical New England sources confirm the surrounding Mangini/Crennel structure, not the existence of fictional employee Stone.
 
-Before the Jacksonville hire, he had already been passed over for permanent jobs. After 2011, Oakland met him twice without an offer; Indianapolis interviewed him once without a return interview. Interest reached Tampa Bay and Miami through his agent, but no interviews are established there. The record supports an experienced candidate who had not yet secured a permanent job. It does not establish bitterness, a grudge or a private explanation for those outcomes. [C2]
+Before the Jacksonville hire, he had already been passed over for permanent jobs. After 2011, Oakland met him twice without an offer; Indianapolis interviewed him once without a return interview. Interest reached Tampa Bay and Miami through his agent, but no interviews are established there. The record supports an experienced candidate who had not yet secured a permanent job. It does not establish bitterness, a grudge or a private explanation for those outcomes.
 
-The earlier career also includes successful teams that finished badly. The 1999 Dolphins won a playoff game before losing 62-7 at Jacksonville. New England's 16-0 regular season in 2007 ended without the championship, and its 11-5 season in 2008 ended without a playoff berth. New Orleans won the 2009-season championship with Payton calling the offense, lost 41-36 at Seattle after the 2010 season, and lost 36-32 at San Francisco after 2011 with Stone established as the caller. Those experiences belong in his history without invented lessons or claims that he alone caused or solved the outcome. He had seen a good offense and a successful regular season fail to settle a playoff game well before arriving in Jacksonville. [C2] [H8]
+The earlier career also includes successful teams that finished badly. The 1999 Dolphins won a playoff game before losing 62-7 at Jacksonville. New England's 16-0 regular season in 2007 ended without the championship, and its 11-5 season in 2008 ended without a playoff berth. New Orleans won the 2009-season championship with Payton calling the offense, lost 41-36 at Seattle after the 2010 season, and lost 36-32 at San Francisco after 2011 with Stone established as the caller. Those experiences belong in his history without invented lessons or claims that he alone caused or solved the outcome. He had seen a good offense and a successful regular season fail to settle a playoff game well before arriving in Jacksonville.
 
 ### Offensive experience
 
-This is his deepest professional specialty. Tight-end playing and coaching, quarterback work, college coordination, New England passing preparation and New Orleans coordination precede Jacksonville. He can prepare and call a complete offense. His current preference is recognizable: a physical run game, familiar concepts from changing formations, backs and tight ends who can occupy several useful roles, quick answers against pressure, and shots with an identifiable reason to take them. His recurring difficulty is staying with that balance when a passing answer absorbs his attention. [C2] [C14] [C16]
+This is his deepest professional specialty. Tight-end playing and coaching, quarterback work, college coordination, New England passing preparation and New Orleans coordination precede Jacksonville. He can prepare and call a complete offense. His current preference is recognizable: a physical run game, familiar concepts from changing formations, backs and tight ends who can occupy several useful roles, quick answers against pressure, and shots with an identifiable reason to take them. His recurring difficulty is staying with that balance when a passing answer absorbs his attention.
 
 ### Defensive experience
 
-Three seasons in New England's secondary room give him real defensive work in his history. He can participate in coverage, disguise and matchup discussions and has authored an active defensive system. That background does not establish a career as an NFL defensive coordinator. Crennel prepares and calls Jacksonville's defense. The authored defensive book is broader than the package any dated practice or game has demonstrated as installed. [C1] [C4] [C15]
+Three seasons in New England's secondary room give him real defensive work in his history. He can participate in coverage, disguise and matchup discussions and has authored an active defensive system. That background does not establish a career as an NFL defensive coordinator. Crennel prepares and calls Jacksonville's defense. The authored defensive book is broader than the package any dated practice or game has demonstrated as installed.
 
 ### Special teams experience
 
-His evidence is strongest in oversight: approving roles and game plans, considering field position and working with a specialist coordinator. Greg McMahon ran the Saints' technical operation in 2012; Alan Lowry did so in Jacksonville in 2013. Lowry's January departure left Stone covering the unit until February 11, when Mike Westhoff was hired. Oakland had retained Bobby April and refused the lateral approach, so Jacksonville moved to the user's first fallback. Stone now has a specialist running the unit again. The completed hire shows a responsibility transferred; it does not establish a newly acquired technical specialty for Stone or prove the new partnership has already worked on the field. [C2] [C4] [C25]
+His evidence is strongest in oversight: approving roles and game plans, considering field position and working with a specialist coordinator. Greg McMahon ran the Saints' technical operation in 2012; Alan Lowry did so in Jacksonville in 2013. Lowry's January departure left Stone covering the unit until February 11, when Mike Westhoff was hired. Oakland had retained Bobby April and refused the lateral approach, so Jacksonville moved to the user's first fallback. Stone now has a specialist running the unit again. The completed hire shows a responsibility transferred; it does not establish a newly acquired technical specialty for Stone or prove the new partnership has already worked on the field.
 
 ### Leadership and personnel
 
-The 2012 interim season tested responsibility for an existing operation. Jacksonville tested staff construction, open competition and the consequences of his own decisions. He kept Johnson at right tackle with help, promoted Brewster at center, and preserved Thielen's expanded role when Blackmon returned. He can delegate substantial work while keeping the final offensive call. Personnel evaluation belongs in his job; executing acquisitions, player contracts and draft selections belongs to Caldwell. [C1] [C3] [C16]
+The 2012 interim season tested responsibility for an existing operation. Jacksonville tested staff construction, open competition and the consequences of his own decisions. He kept Johnson at right tackle with help, promoted Brewster at center, and preserved Thielen's expanded role when Blackmon returned. He can delegate substantial work while keeping the final offensive call. Personnel evaluation belongs in his job; executing acquisitions, player contracts and draft selections belongs to Caldwell.
 
 ### Game management
 
-He has college calling and assistant-head-coach experience plus two complete NFL seasons of head-coach responsibility. His book addresses two-minute operation, four-minute possession and situational call selection. His overall clock, challenge and fourth-down judgment is less well established than that résumé might suggest. Some 2013 finishes contain documented autonomous-management limitations. They cannot be turned into invented headset decisions or proof that he is habitually timid, aggressive or expert. [C14] [C16]
+He has college calling and assistant-head-coach experience plus two complete NFL seasons of head-coach responsibility. His book addresses two-minute operation, four-minute possession and situational call selection. His overall clock, challenge and fourth-down judgment is less well established than that résumé might suggest. Some 2013 finishes contain documented autonomous-management limitations. They cannot be turned into invented headset decisions or proof that he is habitually timid, aggressive or expert.
 
 ### Media and organization
 
-Stone has negotiated a head-coach contract, built a staff, explained a program and presented a season review to an owner and GM. He accepts direct responsibility for his part in offensive mistakes. His surviving work supports a direct, football-specific voice. It does not establish a universal media reputation, sponsor skill, popularity rating or private relationship with league officials. The expanded January interview is an interpretive manuscript, not an independent transcript proving new character traits. [C3] [C7]
+Stone has negotiated a head-coach contract, built a staff, explained a program and presented a season review to an owner and GM. He accepts direct responsibility for his part in offensive mistakes. His surviving work supports a direct, football-specific voice. It does not establish a universal media reputation, sponsor skill, popularity rating or private relationship with league officials. The expanded January interview is an interpretive manuscript, not an independent transcript proving new character traits.
 
 ## Identity
 
 | Field | Detail |
 | --- | --- |
-| Age | 50 on February 17, 2014 |
+| Age | 50 on February 28, 2014 |
 | Date of birth | September 21, 1963 |
 | Birthplace | Miami, Florida |
 | Hometown | Miami is his documented birthplace; a separate upbringing history is not supplied |
@@ -117,7 +117,7 @@ Stone has negotiated a head-coach contract, built a staff, explained a program a
 | Coaching tree / major influences | Documented work under Johnson, McGarry, Belichick's staff and Payton; secondary work under Mangini with Crennel coordinating. Professional overlap is not proof of private mentorship |
 | Long-term ambitions | Build and lead a functioning, developing NFL program. A preferred future employer, retirement date or personal championship timetable is not established |
 
-Counts derive from the chronology, excluding 1998. [C1] [C2] [C3] [C7]
+Counts derive from the chronology, excluding 1998.
 
 ## Coaching Profile
 
@@ -141,7 +141,7 @@ Counts derive from the chronology, excluding 1998. [C1] [C2] [C3] [C7]
 | Free-agency philosophy | Recommend players in relation to needed jobs and roster continuity. The 2014 memorandum is advice to Caldwell, not a list of completed transactions |
 | Analytics usage | Uses tendency work, self-scout questions and situational information. No documented model, fourth-down probability system, software expertise or standing numerical threshold is established |
 
-This section interprets [C8]-[C16], within [C1]'s authority limits.
+This section draws on the [player exits and dated coaching evidence](alex_stone_2013_assessment_record.md) within the [established coaching authority](../../foundation/03_Head_Coach_Organization_and_Authority_Canon.md).
 
 ## Personal Profile
 
@@ -154,8 +154,6 @@ This section interprets [C8]-[C16], within [C1]'s authority limits.
 | Public demeanor | Direct and specific about football in the recorded material; willing to own his calling mistakes |
 | Private demeanor | Not established outside the recorded professional and family facts |
 | Media reputation | Branch Coach of the Year finalist, but no sufficiently broad press sample to assign a consensus personality or approval level |
-
-[C1] [C2] [C7]
 
 ## Natural Attributes
 
@@ -176,8 +174,6 @@ These entries describe observed behavior. They are not measurements of innate in
 | Persuasion | Secured the Jacksonville job and staff hires. That establishes outcomes, not a general ability to win any negotiation |
 | Work capacity | Sustained head-coach and caller responsibilities; interim ST direction ended February 11. Sleep, fatigue and sustainable limits remain unknown |
 
-[C2] [C3] [C8]-[C16]
-
 ## Family and Personal Life
 
 | Family / personal | Detail |
@@ -190,7 +186,7 @@ These entries describe observed behavior. They are not measurements of innate in
 | Close football relationships | See professional relationships below. Years of overlap do not establish personal closeness |
 | Personal commitments | No hard geographic constraint established at hiring. Private routines, religious commitments and hobbies are unrecorded |
 
-The family-dinner policy provides room for players' families without making attendance another football evaluation. It does not establish Stone's private home life. [C1] [C2] [C23]
+The family-dinner policy provides room for players' families without making attendance another football evaluation. It does not establish Stone's private home life.
 
 ## Languages
 
@@ -210,8 +206,6 @@ The family-dinner policy provides room for players' families without making atte
 | Written communication | Detailed playbooks, plans and football recommendations; completeness on paper does not prove successful instruction |
 | Public speaking | Head-coach interviews, team instruction and public football responsibilities; no invented charisma rating |
 
-[C1] [C2] [C8] [C10] [C19]
-
 ## Current Coaching Condition
 
 | Field | Detail |
@@ -222,8 +216,6 @@ The family-dinner policy provides room for players' families without making atte
 | Stress / workload | HC and offensive caller; temporary ST direction has ended. Responsibility changed, but no subjective stress or fatigue improvement is documented |
 | Suspension or league restrictions | No Stone suspension or fine established. Normal offseason and game rules still apply |
 | Other limitations | Incomplete development follow-up; new ST working relationship not yet tested in a recorded phase; remaining financial and contract questions belong to the appropriate offices |
-
-[C1] [C6] [C13] [C17]
 
 ## Game-Day Equipment
 
@@ -245,8 +237,6 @@ There is no active game today. These entries distinguish documented working mate
 | Opponent tendency sheets | Supported by weekly preparation; no live opponent sheet at this checkpoint |
 | Other | Period paper-photo binders are historical context; no personal inventory is inferred |
 
-[C1] [C14] [C16] [H7]
-
 ## Coaching Resources
 
 | Field | Detail |
@@ -254,7 +244,7 @@ There is no active game today. These entries distinguish documented working mate
 | Film available | Completed branch game records and staff review work. A Markdown film index is not a video asset or proof of delivery |
 | Practice footage | Phase observations and review process are recorded; exact retained camera inventory and clips are not catalogued here |
 | Opponent scouting reports | Weekly opponent preparation exists for 2013; no 2014 opponent packet is active |
-| Analytics reports | Tendency and self-scout work; no specific current report or subscribed tool is established. Historical department context appears under H6 |
+| Analytics reports | Tendency and self-scout work; no specific current report or subscribed tool is established. Historical department context appears in the [research notes](#historical-verification) |
 | Medical information | Authorized medical communication and participation restrictions; private detail is not a coaching entitlement |
 | Roster information | Current controlled-player roster, register and dated role decisions |
 | Practice squad information | No current practice squad. Six reserve/future contracts are signed for March 11; King and Ta'ufo'ou were not offered and left. Futures are not practice-squad places |
@@ -263,8 +253,6 @@ There is no active game today. These entries distinguish documented working mate
 | Quality-control support | Charlie Skalaski's offensive assistant / assistant-QB work; no invented additional staff |
 | Technology staff | Historical analytics/technology function exists; personal equipment access and named operational support are not confirmed |
 | Other resources | Tice, Crennel and position coaches; the adopted onboarding/readiness methods; medical and player-support functions within their responsibilities |
-
-[C4] [C5] [C6] [C18] [C19] [C22] [C23]
 
 ## Team Situation
 
@@ -286,7 +274,7 @@ There is no active game today. These entries distinguish documented working mate
 | Remaining schedule | No 2013 games. No released 2014 dated game schedule at this checkpoint; use the calendar's release gate |
 | Current organizational expectations | Continue the functioning program, develop the quarterback and roster, and reduce preparation/communication failures. No new ownership win minimum is established |
 
-These splits are derived from closed receipts, with Wembley classified explicitly. They describe results; the 2013 equal-strength engine does not establish individual coaching quality from them. [C7] [C17] [C21]
+These splits are derived from closed receipts, with Wembley classified explicitly. They describe results; the 2013 equal-strength engine does not establish individual coaching quality from them.
 
 ## Coaching Staff
 
@@ -310,7 +298,7 @@ These splits are derived from closed receipts, with Wembley classified explicitl
 | Analytics | No coaching-staff appointment established | See historical department context below; do not turn an executive into an assistant coach |
 | Other | Medical, support and administrative functions | No additional names or titles invented |
 
-Twelve contracted football assistants are now in place. Minnesota's February 17 lateral requests for Bates and Tice were refused; no Jacksonville assistant left in the February exposure process. [C4] [C25] [C27]
+Twelve contracted football assistants are now in place. Minnesota's February 17 lateral requests for Bates and Tice were refused; no Jacksonville assistant left in the February exposure process.
 
 ## Front Office and Ownership
 
@@ -326,7 +314,7 @@ Twelve contracted football assistants are now in place. Minnesota's February 17 
 | Salary-Cap / Contract Lead | Named subordinate not established | Caldwell's final authority is established; no invented specialist salary/cap officer |
 | Other | Tony Khan, historical technology/analytics baseline | Publicly associated with football technology and analytics from 2012. This does not establish a personal advisory relationship with Stone or a specific tool in use |
 
-The historical 2013 hires included Kyle O'Brien in college scouting, Chris Polian in pro personnel, Andy Dengler as assistant director of player personnel, Paul Roell in assistant college scouting and Mark Ellenz in regional scouting. They are kept in the research note because the branch has not recorded those appointments. Staff changes are outside the player-history rails. [C1] [C4] [H4] [H5] [H6]
+The historical 2013 hires included Kyle O'Brien in college scouting, Chris Polian in pro personnel, Andy Dengler as assistant director of player personnel, Paul Roell in assistant college scouting and Mark Ellenz in regional scouting. They are kept in the research note because the branch has not recorded those appointments. Staff changes are outside the player-history rails.
 
 ## Key Players
 
@@ -342,11 +330,9 @@ The historical 2013 hires included Kyle O'Brien in college scouting, Chris Polia
 | Injured key player | Paul Posluszny | Independent head/neck hold; Allen carries his base role |
 | Other | Cecil Shorts and Mike Brewster | Shorts wants explanation and film when emphasis changes; Brewster's earned starting job survived Meester's return |
 
-[C5] [C8] [C9] [C10] [C11] [C16]
-
 ## Offensive Identity
 
-The active Iteration I book supplies the available system; weekly records establish what was actually carried. In particular, its printed Boot Flood entries do not undo the recorded removal from the 2013 primary sheet. [C8] [C14]
+The active Iteration I book supplies the available system; weekly records establish what was actually carried. In particular, its printed Boot Flood entries do not undo the recorded removal from the 2013 primary sheet.
 
 | Field | Detail |
 | --- | --- |
@@ -373,7 +359,7 @@ The active Iteration I book supplies the available system; weekly records establ
 
 ## Defensive Identity
 
-The following describes Stone's issued Iteration I system and recorded priorities. **Crennel is the defensive caller.** Full-book availability does not certify that every pressure or coverage was installed or used in 2013. [C4] [C12] [C15]
+The following describes Stone's issued Iteration I system and recorded priorities. **Crennel is the defensive caller.** Full-book availability does not certify that every pressure or coverage was installed or used in 2013.
 
 | Field | Detail |
 | --- | --- |
@@ -409,28 +395,26 @@ The following describes Stone's issued Iteration I system and recorded prioritie
 | Fake / trick-play philosophy | No standing permission or frequency established |
 | Field-position philosophy | Part of whole-game planning; Lowry ran technical work in 2013 and Westhoff assumed the unit February 11. No new field-work result established |
 
-[C4] [C13] [C16]
-
 ## Roster
 
-**Dated snapshot, not a new depth-chart decision:** 53 controlled players, comprising 52 active and Meester on Reserve/Retired, plus six separately recorded reserve/future contracts effective March 11. Current practice squad: zero. Medical restriction and eligibility are separate from depth role. Unless a restriction is specified below, the roster communicates none at this checkpoint; this is not a fresh medical clearance or a game-day active list. Current source owners remain the [roster][C5] and [state][C6].
+**Dated snapshot, not a new depth-chart decision:** 53 controlled players, comprising 52 active and Meester on Reserve/Retired, plus six separately recorded reserve/future contracts effective March 11. Current practice squad: zero. Medical restriction and eligibility are separate from depth role. Unless a restriction is specified below, the roster communicates none at this checkpoint; this is not a fresh medical clearance or a game-day active list. Current source owners remain the [roster](../2013/roster.md) and [state](../../state/05_Current_Season_State.md).
 
 ### Quarterbacks
 
 | Player | Role | Status | Coach notes |
 | --- | --- | --- | --- |
-| Kirk Cousins | QB; QB1 | Active | Keep his operational strengths; review calls, protection and contested throws together. [C8] |
+| Kirk Cousins | QB; QB1 | Active | Keep his operational strengths; review calls, protection and contested throws together. |
 | Chad Henne | QB; QB2 | Active | Established next quarterback; competition history does not disappear with the QB1 decision. |
-| John Parker Wilson | QB; QB3 | Active; contract term unresolved | Current QB3 assignment; Bray's future contract does not automatically change the role. [C28] |
+| John Parker Wilson | QB; QB3 | Active; contract term unresolved | Current QB3 assignment; Bray's future contract does not automatically change the role. |
 
 ### Running Backs
 
 | Player | Role | Status | Coach notes |
 | --- | --- | --- | --- |
 | C.J. Anderson | RB; RB3; coverage units | Active | Reserve running and coverage responsibilities. |
-| Jonathan Grimes | RB; RB2 | Active; contract term unresolved | Established second back; contract verification has not produced a new roster decision. [C28] |
+| Jonathan Grimes | RB; RB2 | Active; contract term unresolved | Established second back; contract verification has not produced a new roster decision. |
 | Maurice Jones-Drew | RB; Lead back | Active | Lead runner; football-use advice does not promise a new contract. |
-| Montell Owens | FB; FB | Active | Fullback in heavier groupings; contract through 2015 supported, 2014 base unresolved. [C28] |
+| Montell Owens | FB; FB | Active | Fullback in heavier groupings; contract through 2015 supported, 2014 base unresolved. |
 
 ### Wide Receivers
 
@@ -439,8 +423,8 @@ The following describes Stone's issued Iteration I system and recorded prioritie
 | Justin Blackmon | WR; WR3 / outside Z (from Week 8) | Active | Outside assignment did not displace Thielen's earned WR2/H role. |
 | Mike Brown | WR; WR5 | Active | Fifth receiver; no new role inferred. |
 | Toney Clemons | WR; WR4 | Active | Fourth receiver; no new role inferred. |
-| Cecil Shorts | WR; WR1 | Active | WR1; wants film and an explanation when emphasis changes. [C10] |
-| Adam Thielen | WR; WR2 / H (movable receiver); coverage units | Active | Movable role retained; individual development period needs continuity. [C9] |
+| Cecil Shorts | WR; WR1 | Active | WR1; wants film and an explanation when emphasis changes. |
+| Adam Thielen | WR; WR2 / H (movable receiver); coverage units | Active | Movable role retained; individual development period needs continuity. |
 
 ### Tight Ends
 
@@ -448,7 +432,7 @@ The following describes Stone's issued Iteration I system and recorded prioritie
 | --- | --- | --- | --- |
 | Allen Reisner | TE; TE3 (13 personnel) | Active | Third-TE/heavier package job. |
 | Marcedes Lewis | TE; Lead TE | Active | Lead TE; football role and future contract remain separate. |
-| Travis Kelce | TE; TE2 | Active | Attached-blocking assessment and receiving-opportunity review remain open. [C11] |
+| Travis Kelce | TE; TE2 | Active | Attached-blocking assessment and receiving-opportunity review remain open. |
 
 ### Offensive Line
 
@@ -456,7 +440,7 @@ The following describes Stone's issued Iteration I system and recorded prioritie
 | --- | --- | --- | --- |
 | Cameron Bradfield | OT; Swing tackle; sixth OL in 6OL | Active | Extra-lineman work requires declared eligibility and complementary answers. |
 | Lane Johnson | OT; Starting right tackle | Active | Starter retained with structural help; review the cost and need for that help. |
-| Eugene Monroe | OT; Starting LT | Active | Established left tackle; current role is not a future contract guarantee. |
+| Eugene Monroe | OT; Starting LT | Active; franchise tender unsigned | Established left tackle; February 18 designation preserves the recorded tag rights. No signed 2014 tender or new depth decision is inferred. |
 | Mark Asper | G; Interior OL depth | Active | Interior depth; previous inactive weeks do not dictate a future game list. |
 | Uche Nwaneri | G; Starting LG | Active | Established starting guard. |
 | Austin Pasztor | G; Game-day interior OL reserve (from Week 10) | Active | Established game-day interior reserve; no fresh active list is implied. |
@@ -511,11 +495,11 @@ The following describes Stone's issued Iteration I system and recorded prioritie
 | --- | --- | --- | --- |
 | Josh Scobee | K; K | Active | Established kicker; no fixed weather-independent field-goal limit. |
 | Bryan Anger | P; P | Active | Established punter; specialist technique and Stone's situational instruction are distinct. |
-| Jeremy Cain | LS; LS | Active in the current controlled register; pending UFA | Contract expiry verified; no re-signing completed. Emergency replacement not specified. [C28] |
+| Jeremy Cain | LS; LS | Active in the current controlled register; pending UFA | Contract expiry verified; no re-signing completed. Emergency replacement not specified. |
 
 ### Reserve/future contracts and former practice-squad players
 
-The current practice squad is empty. Six reserve/future agreements are signed, effective March 11 and outside the current 53-player controlled register. They create camp opportunities, not guaranteed roles or future practice-squad places. The eight former names are all accounted for below. [C6] [C26]
+The current practice squad is empty. Six reserve/future agreements are signed, effective March 11 and outside the current 53-player controlled register. They create camp opportunities, not guaranteed roles or future practice-squad places. The eight former names are all accounted for below.
 
 | Player | Position | Current status |
 | --- | --- | --- |
@@ -537,7 +521,7 @@ The current practice squad is empty. Six reserve/future agreements are signed, e
 | Alan Ball | CB | Prior Week 10 injury | Cleared January 22 | No communicated restriction | Clearance does not automatically remove Harris from his established role |
 | C.J. Wilson | DE | Prior trunk injury | Cleared January 30 | No communicated restriction | No new depth assignment established merely by clearance |
 
-Earlier injuries to Thielen, Owens, Kelce, Bouye, Ryan Davis and other players are not carried forward as current restrictions. Meester is retired, not an injured active center. [C5] [C6]
+Earlier injuries to Thielen, Owens, Kelce, Bouye, Ryan Davis and other players are not carried forward as current restrictions. Meester is retired, not an injured active center.
 
 ## Standing and Reputation
 
@@ -559,7 +543,7 @@ Earlier injuries to Thielen, Owens, Kelce, Bouye, Ryan Davis and other players a
 | Controversies / disciplinary issues | Worked in New Orleans during the bounty matter. No Stone involvement is established; his advance knowledge is explicitly unresolved. Do not invent either misconduct or private exonerating facts |
 | League fines / suspensions | None established for Stone |
 
-The source phrase about never winning a championship as a player is read in its NFL playing-career context: he had no NFL title, while the separately established 1983 college title remains. [C1] [C2] [C7] [H1] [H2] [H8]
+The source phrase about never winning a championship as a player is read in its NFL playing-career context: he had no NFL title, while the separately established 1983 college title remains.
 
 ## Relationships
 
@@ -583,8 +567,6 @@ The source phrase about never winning a championship as a player is read in its 
 | Rival Coaches | Opponents and earlier professional overlaps exist; a private rivalry is not established |
 | Former Coaches / Mentors | Johnson, McGarry, Belichick's staff and Payton provide documented professional context; private mentorship beyond that is not presumed |
 | Other | Inbar is his spouse. Her opinions of his career and their domestic arrangements remain unrecorded |
-
-[C1] [C2] [C3] [C4] [C8]-[C13]
 
 ## Current Knowledge
 
@@ -615,8 +597,6 @@ The source phrase about never winning a championship as a player is read in its 
 | Practice observations | Completed 2013 phase/weekly records; no 2014 practice has been invented |
 | Scouting observations | Existing recommendations and boards only; no future player outcome is a known trait |
 | Information not yet known | Remaining 2014 contract terms and cap reconciliation, future medical clearance, game schedule and new practice evidence; the ST appointment and futures outcomes are now closed |
-
-[C6] [C7] [C13] [C17]-[C22]
 
 ## Current Opponent
 
@@ -672,7 +652,7 @@ No opponent is active in this offseason snapshot. The following template fields 
 
 ## Weekly Game Plan
 
-No game-week plan is active. The numbered entries below carry existing offseason review priorities into the template; they are not new installations, adopted roster moves or a plan for an invented opponent. [C7]-[C13] [C18]-[C20]
+No game-week plan is active. The numbered entries below carry existing offseason review priorities into the template; they are not new installations, adopted roster moves or a plan for an invented opponent.
 
 ### Offensive objectives
 
@@ -694,7 +674,7 @@ No game-week plan is active. The numbered entries below carry existing offseason
 
 1. Use Westhoff's agreed responsibility for the kicking game; the vacancy is closed.
 2. Keep team priorities and consequential game management with Stone, as the executed appointment specifies.
-3. Assess subsequent specialist teaching through actual work; no completed 2014 practice is recorded yet. [C25]
+3. Assess subsequent specialist teaching through actual work; no completed 2014 practice is recorded yet.
 
 ### Situational objectives
 
@@ -713,7 +693,7 @@ No game-week plan is active. The numbered entries below carry existing offseason
 
 ## Game-Day Decision Rules
 
-This sheet summarizes existing responsibilities and principles. It does not authorize the engine to make consequential choices that remain with the user. [C1] [C14] [C16]
+This sheet summarizes existing responsibilities and principles. It does not authorize the engine to make consequential choices that remain with the user.
 
 | Field | Existing rule or unresolved detail |
 | --- | --- |
@@ -747,15 +727,13 @@ This sheet summarizes existing responsibilities and principles. It does not auth
 | Responsibility to supporters | Public accountability inherent in the role; no specific personal appearances promised here |
 | Other commitments | Existing contract and documented family facts; additional private obligations unknown |
 
-[C1] [C3] [C23]
-
 ## Present Aim
 
 Enter the second Jacksonville season with a fuller account of what his program actually taught: preserve what worked, return the missing explanations to players, and work with the completed staff while remaining personnel decisions proceed within the agreed authority. Calling offense is familiar work. Making sure the rest of the organization continues to learn while he calls it is the harder ongoing task.
 
 ## Short-Term Objectives
 
-These summarize existing review commitments and open work, not new decisions. [C7]-[C13] [C18]-[C22]
+These summarize existing review commitments and open work, not new decisions.
 
 1. Work with Westhoff under his executed responsibilities; evaluate the new working relationship through actual preparation and teaching.
 2. Carry out the player-feedback and film follow-up already identified in the exits.
@@ -765,7 +743,7 @@ These summarize existing review commitments and open work, not new decisions. [C
 
 ## Long-Term Objectives
 
-The record supports program aims more clearly than private personal ambitions. [C7] [C14] [C23]
+The record supports program aims more clearly than private personal ambitions.
 
 1. Sustain a functioning program that can develop players across seasons.
 2. Build a dependable quarterback/offensive operation while allowing evidence to change the assessment.
@@ -794,179 +772,179 @@ The template's ability names are retained. Its numerical rating, XP and next-lev
 
 | Ability | Current assessment | Development / open question | Used / evidence |
 | --- | --- | --- | --- |
-| Staff Leadership | Built his own Jacksonville staff and assigned unit responsibilities | Keep unfinished work from falling between coaches | 2013 hires; exits [C4] [C9] [C11] |
-| Player Leadership | Makes clear role decisions and accepts specific player disagreement | Explain changes before players infer them from usage | Thielen/Shorts exits [C9] [C10] |
-| Locker-Room Management | Handles competition and reinstatement without automatic role restoration | Team-wide trust and informal factions are not measured | Blackmon return; QB competition [C16] |
-| Motivation | Connects preparation to a concrete job | No evidence for a universal motivational style or speech effect | Program and onboarding [C23] |
-| Discipline | Can sustain an unpopular football decision | No complete sanction policy or proof that every decision was effective | Blackmon inactive weeks [C16] |
-| Conflict Resolution | Allows disagreement about the football explanation | Review the contested snap instead of requiring immediate concession | Cousins exit [C8] |
-| Delegation | Tice and Crennel have substantive work; Westhoff now runs ST | Completed transfer does not yet prove the new partnership effective | Staff; February 11 appointment [C4] [C25] |
-| Teaching | Specific jobs and changed-look retests are documented | Carry the same completeness into crowded game weeks | Spring; player exits [C12] [C8]-[C11] |
-| Communication | Can be precise about assignments | Short cues sometimes omit the example or reason | Cousins and Shorts [C8] [C10] |
-| Culture Building | Established common teaching and readiness expectations | A written standard does not prove uniform daily experience | Program; exits [C23] [C9] |
-| Crisis Management | Ran the Saints through an exceptional interim season | Do not infer mastery of every organizational crisis from that tenure | 2012 record [C2] |
-| Accountability | Acknowledges his part in calls and incomplete teaching | Admission needs a completed correction afterward | Houston review; exits [C8] [C11] [C16] |
+| Staff Leadership | Built his own Jacksonville staff and assigned unit responsibilities | Keep unfinished work from falling between coaches | 2013 hires; exits |
+| Player Leadership | Makes clear role decisions and accepts specific player disagreement | Explain changes before players infer them from usage | Thielen/Shorts exits |
+| Locker-Room Management | Handles competition and reinstatement without automatic role restoration | Team-wide trust and informal factions are not measured | Blackmon return; QB competition |
+| Motivation | Connects preparation to a concrete job | No evidence for a universal motivational style or speech effect | Program and onboarding |
+| Discipline | Can sustain an unpopular football decision | No complete sanction policy or proof that every decision was effective | Blackmon inactive weeks |
+| Conflict Resolution | Allows disagreement about the football explanation | Review the contested snap instead of requiring immediate concession | Cousins exit |
+| Delegation | Tice and Crennel have substantive work; Westhoff now runs ST | Completed transfer does not yet prove the new partnership effective | Staff; February 11 appointment |
+| Teaching | Specific jobs and changed-look retests are documented | Carry the same completeness into crowded game weeks | Spring; player exits |
+| Communication | Can be precise about assignments | Short cues sometimes omit the example or reason | Cousins and Shorts |
+| Culture Building | Established common teaching and readiness expectations | A written standard does not prove uniform daily experience | Program; exits |
+| Crisis Management | Ran the Saints through an exceptional interim season | Do not infer mastery of every organizational crisis from that tenure | 2012 record |
+| Accountability | Acknowledges his part in calls and incomplete teaching | Admission needs a completed correction afterward | Houston review; exits |
 
 ## Offensive Coaching
 
 | Ability | Current assessment | Development / open question | Used / evidence |
 | --- | --- | --- | --- |
-| Offensive Scheme Design | Coherent concept-based offense with complementary answers | Available system must stay distinct from the installed weekly menu | Active book [C14] |
-| Play Design | Creates new problems with familiar jobs | Test whether a wrinkle earns its preparation cost | Week 5 six-OL/TE-screen work [C16] |
-| Play Calling | Comfortable and extensively experienced | Passing interest can displace a useful run plan; self-check not proven reliable | College; 2011-2013; Houston [C2] [C16] |
-| Run-Game Design | Physical core with front-dependent alternatives | Calling commitment must match preparation when warranted | Power/Counter work; Week 12 [C14] [C16] |
-| Passing-Game Design | Uses backs, TEs and movable receivers in familiar combinations | Removed answers can shrink the menu without a completed diagnosis | Thielen role; Boot Flood [C8] [C9] |
-| Protection Design | Links protection to each carried pass and supplies tackle help | Weigh receiver loss and practice-time costs; diagnose QB/line communication jointly | Johnson support; Week 10 process [C16] |
-| Quarterback Development | Prepared open competition and defined operational responsibilities | Cousins needs comparative film and room to challenge an interpretation | Camp; Cousins exit [C8] [C16] |
-| Route-Concept Design | Understands spacing and distribution across different personnel | Do not claim every written combination has transferred to players | Active book; Thielen feedback [C14] [C9] |
-| Personnel Packaging | Documented 12/21, movable H and extra-lineman work | Preserve credible complementary calls without overloading players | Weeks 5-8 [C16] |
-| Formation Design | Changes presentation while retaining the concept | Formation variety alone is not evidence of deception or efficiency | Heavy-to-Empty work [C14] [C16] |
-| Motion / Shift Design | Uses movement to expose defensive responses | Require the assignments and protection to survive the shift | London/Thielen work [C9] [C16] |
-| Red-Zone Offense | Longstanding situational preparation; compressed-spacing menu | No isolated causal grade from scoring totals | Patriots responsibilities; active book [C2] [C14] |
-| Third-Down Offense | Plans man/pressure answers and route depth relative to the sticks | Separate concept, protection and execution in failed conversions | Active book; weekly work [C14] [C16] |
-| Two-Minute Offense | Teaches operation and preplanned clock answers | Late-game limitations prevent a blanket verdict on his live decisions | Camp; Week 17 review [C16] |
-| Short-Yardage Offense | Prepared downhill, movement and overloaded-box answers | No single call is universally correct | Active book [C14] |
+| Offensive Scheme Design | Coherent concept-based offense with complementary answers | Available system must stay distinct from the installed weekly menu | Active book |
+| Play Design | Creates new problems with familiar jobs | Test whether a wrinkle earns its preparation cost | Week 5 six-OL/TE-screen work |
+| Play Calling | Comfortable and extensively experienced | Passing interest can displace a useful run plan; self-check not proven reliable | College; 2011-2013; Houston |
+| Run-Game Design | Physical core with front-dependent alternatives | Calling commitment must match preparation when warranted | Power/Counter work; Week 12 |
+| Passing-Game Design | Uses backs, TEs and movable receivers in familiar combinations | Removed answers can shrink the menu without a completed diagnosis | Thielen role; Boot Flood |
+| Protection Design | Links protection to each carried pass and supplies tackle help | Weigh receiver loss and practice-time costs; diagnose QB/line communication jointly | Johnson support; Week 10 process |
+| Quarterback Development | Prepared open competition and defined operational responsibilities | Cousins needs comparative film and room to challenge an interpretation | Camp; Cousins exit |
+| Route-Concept Design | Understands spacing and distribution across different personnel | Do not claim every written combination has transferred to players | Active book; Thielen feedback |
+| Personnel Packaging | Documented 12/21, movable H and extra-lineman work | Preserve credible complementary calls without overloading players | Weeks 5-8 |
+| Formation Design | Changes presentation while retaining the concept | Formation variety alone is not evidence of deception or efficiency | Heavy-to-Empty work |
+| Motion / Shift Design | Uses movement to expose defensive responses | Require the assignments and protection to survive the shift | London/Thielen work |
+| Red-Zone Offense | Longstanding situational preparation; compressed-spacing menu | No isolated causal grade from scoring totals | Patriots responsibilities; active book |
+| Third-Down Offense | Plans man/pressure answers and route depth relative to the sticks | Separate concept, protection and execution in failed conversions | Active book; weekly work |
+| Two-Minute Offense | Teaches operation and preplanned clock answers | Late-game limitations prevent a blanket verdict on his live decisions | Camp; Week 17 review |
+| Short-Yardage Offense | Prepared downhill, movement and overloaded-box answers | No single call is universally correct | Active book |
 
 ## Defensive Coaching
 
 | Ability | Current assessment | Development / open question | Used / evidence |
 | --- | --- | --- | --- |
-| Defensive Scheme Design | Secondary background and authored Multiple Under system | System authorship is not proof of full installation or individual effectiveness | 2002-2004; active book [C2] [C15] |
-| Defensive Play Calling | Not Jacksonville's ordinary defensive caller | No basis to assign Crennel's calls or results to Stone | Current delegation [C4] |
-| Front Design | Issued Under/Over and complementary front structure | Actual weekly selection and teaching are staff-resolved | Active book; Crennel role [C15] [C4] |
-| Coverage Design | Genuine secondary-room background and coverage language | Independent Jacksonville coverage-design contribution is not isolated | Patriots tenure; book [C2] [C15] |
-| Pressure Packages | Understands the coverage obligation behind added rushers | Do not credit all written pressures as installed | Spring narrowed pressure work [C12] [C15] |
-| Run Defense | Sets fit-first priorities | Unit result does not identify his personal technical contribution | Spring; active book [C12] [C15] |
-| Pass Defense | Can discuss distribution and offensive intent | Oden/Crennel own much of the actual teaching and calling | Staff; secondary background [C4] [C2] |
-| Pass-Rush Design | Active system includes rush lanes and line games | No evidence of a distinct Stone specialist rush-coaching method | Book; Pleasant/Crennel roles [C15] [C4] |
-| Coverage Disguise | Understands changing the picture without losing the job | Communication failure can erase the benefit | Spring install limits [C12] [C15] |
-| Quarterback Containment | Requires an edge and replacement answer | No broad performance claim from one matchup | Active book [C15] |
-| Red-Zone Defense | Issued compressed-field principles | Crennel's selection and player execution remain separate evidence | Active book [C15] |
-| Third-Down Defense | Supports distance-specific fronts and coverage answers | Conversion totals do not isolate Stone's judgment | Active book; staff authority [C15] [C4] |
-| Two-Minute Defense | Prioritizes quick communication over disguise volume | Direct live defensive-management evidence remains limited | Active book [C15] |
-| Short-Yardage Defense | Accounts for gaps, leverage and rub threats | A written answer is not a demonstrated technical coaching result | Active book [C15] |
+| Defensive Scheme Design | Secondary background and authored Multiple Under system | System authorship is not proof of full installation or individual effectiveness | 2002-2004; active book |
+| Defensive Play Calling | Not Jacksonville's ordinary defensive caller | No basis to assign Crennel's calls or results to Stone | Current delegation |
+| Front Design | Issued Under/Over and complementary front structure | Actual weekly selection and teaching are staff-resolved | Active book; Crennel role |
+| Coverage Design | Genuine secondary-room background and coverage language | Independent Jacksonville coverage-design contribution is not isolated | Patriots tenure; book |
+| Pressure Packages | Understands the coverage obligation behind added rushers | Do not credit all written pressures as installed | Spring narrowed pressure work |
+| Run Defense | Sets fit-first priorities | Unit result does not identify his personal technical contribution | Spring; active book |
+| Pass Defense | Can discuss distribution and offensive intent | Oden/Crennel own much of the actual teaching and calling | Staff; secondary background |
+| Pass-Rush Design | Active system includes rush lanes and line games | No evidence of a distinct Stone specialist rush-coaching method | Book; Pleasant/Crennel roles |
+| Coverage Disguise | Understands changing the picture without losing the job | Communication failure can erase the benefit | Spring install limits |
+| Quarterback Containment | Requires an edge and replacement answer | No broad performance claim from one matchup | Active book |
+| Red-Zone Defense | Issued compressed-field principles | Crennel's selection and player execution remain separate evidence | Active book |
+| Third-Down Defense | Supports distance-specific fronts and coverage answers | Conversion totals do not isolate Stone's judgment | Active book; staff authority |
+| Two-Minute Defense | Prioritizes quick communication over disguise volume | Direct live defensive-management evidence remains limited | Active book |
+| Short-Yardage Defense | Accounts for gaps, leverage and rub threats | A written answer is not a demonstrated technical coaching result | Active book |
 
 ## Special Teams
 
 | Ability | Current assessment | Development / open question | Used / evidence |
 | --- | --- | --- | --- |
-| Kickoff Strategy | HC oversight established | Personal technical placement/risk method unestablished | Lowry's 2013 responsibility [C4] |
-| Kickoff Return | Oversees unit and personnel priorities | Independent return-design or blocking correction unproven | Staff division [C4] |
-| Punt Strategy | Responsible for consequential team decisions | Resolve actual instruction; do not infer intent from autonomous Divisional punt | Assessment limits [C16] |
-| Punt Return | HC oversight, not a documented specialist craft | Technique and standing return policy need evidence | Lowry tenure; Westhoff appointment [C4] [C25] |
-| Field Goals | Works with a specialist coordinator and kicker | No personal kicking-technical expertise or fixed range established | Staff and roster [C4] [C5] |
-| Field-Goal Block | Insufficient direct evidence | Do not transfer defensive-front experience automatically | Responsibility only [C4] |
-| Coverage Units | Assigns roster roles that include coverage | Technical credit belongs to the coach who supplies the correction | Anderson/Thielen/DB roles [C5] |
-| Return Design | Insufficient direct evidence | Needs an actual design, teaching and use record | Coordinator-led in 2013 [C4] |
-| Onside Kicks | HC decision responsibility | No standing trigger or demonstrated specialty | Authority map [C1] |
-| Fake Kicks / Punts | HC decision responsibility | No standing permission or demonstrated package | Authority map [C1] |
-| Field-Position Management | Integrates specialist work into whole-game preparation | Game outcome alone cannot validate punt/go decisions | 2013 review limits [C16] |
+| Kickoff Strategy | HC oversight established | Personal technical placement/risk method unestablished | Lowry's 2013 responsibility |
+| Kickoff Return | Oversees unit and personnel priorities | Independent return-design or blocking correction unproven | Staff division |
+| Punt Strategy | Responsible for consequential team decisions | Resolve actual instruction; do not infer intent from autonomous Divisional punt | Assessment limits |
+| Punt Return | HC oversight, not a documented specialist craft | Technique and standing return policy need evidence | Lowry tenure; Westhoff appointment |
+| Field Goals | Works with a specialist coordinator and kicker | No personal kicking-technical expertise or fixed range established | Staff and roster |
+| Field-Goal Block | Insufficient direct evidence | Do not transfer defensive-front experience automatically | Responsibility only |
+| Coverage Units | Assigns roster roles that include coverage | Technical credit belongs to the coach who supplies the correction | Anderson/Thielen/DB roles |
+| Return Design | Insufficient direct evidence | Needs an actual design, teaching and use record | Coordinator-led in 2013 |
+| Onside Kicks | HC decision responsibility | No standing trigger or demonstrated specialty | Authority map |
+| Fake Kicks / Punts | HC decision responsibility | No standing permission or demonstrated package | Authority map |
+| Field-Position Management | Integrates specialist work into whole-game preparation | Game outcome alone cannot validate punt/go decisions | 2013 review limits |
 
 ## Game Management
 
 | Ability | Current assessment | Development / open question | Used / evidence |
 | --- | --- | --- | --- |
-| Clock Management | Prepared mechanics and two HC seasons | Preserve actual choices and legal game state before judging late finishes | Active book; defect limits [C14] [C16] |
-| Timeout Management | Final HC responsibility with preparatory principles | No sufficient set of recorded discretionary decisions for a broad tier | Authority; two-minute mechanics [C1] [C14] |
-| Challenge Decisions | Responsibility established | Named advice chain and decision accuracy not established | Authority map [C1] |
-| Fourth-Down Decisions | Responsibility established | Autonomous choices cannot become Stone's private risk philosophy | Divisional review [C16] |
-| Two-Point Decisions | Prepared play menu | Choosing a call is distinct from choosing whether to attempt | Active book [C14] |
-| End-of-Half Management | College and NFL experience; situational planning | Historical responsibility exceeds the available decision-level evidence | Career; active book [C2] [C14] |
-| End-of-Game Management | Has managed playoff stakes | Do not declare a strength or flaw from unsupported intent at Indianapolis/Tennessee | Assessment limits [C16] |
-| Overtime Management | Jacksonville won in overtime at Cleveland | That result alone does not assess discretionary management | Week 13 receipt/output [C21] [C16] |
-| Situational Awareness | Adjusts menus to yardage, clock and field location | Assess what he knew at the decision, not only what happened afterward | Active book [C14] |
-| Risk Management | Uses protection help and call reduction | Can keep an answer removed after its original problem should be revisited | Johnson; Boot Flood [C8] [C16] |
-| In-Game Adjustments | Long calling experience; post-Houston self-review is specific | A between-week correction is not proof of live adaptability on every drive | Career; Weeks 12-14 [C2] [C16] |
-| Halftime Adjustments | Book supplies structured questions | Specific halftime decisions and causal effects are not isolated here | Active book §20.3 [C14] |
-| Emergency Decision-Making | Led a full interim season and covered the ST vacancy until February 11 | Different emergencies require distinct evidence | 2012; completed ST handoff [C2] [C25] |
+| Clock Management | Prepared mechanics and two HC seasons | Preserve actual choices and legal game state before judging late finishes | Active book; defect limits |
+| Timeout Management | Final HC responsibility with preparatory principles | No sufficient set of recorded discretionary decisions for a broad tier | Authority; two-minute mechanics |
+| Challenge Decisions | Responsibility established | Named advice chain and decision accuracy not established | Authority map |
+| Fourth-Down Decisions | Responsibility established | Autonomous choices cannot become Stone's private risk philosophy | Divisional review |
+| Two-Point Decisions | Prepared play menu | Choosing a call is distinct from choosing whether to attempt | Active book |
+| End-of-Half Management | College and NFL experience; situational planning | Historical responsibility exceeds the available decision-level evidence | Career; active book |
+| End-of-Game Management | Has managed playoff stakes | Do not declare a strength or flaw from unsupported intent at Indianapolis/Tennessee | Assessment limits |
+| Overtime Management | Jacksonville won in overtime at Cleveland | That result alone does not assess discretionary management | Week 13 receipt/output |
+| Situational Awareness | Adjusts menus to yardage, clock and field location | Assess what he knew at the decision, not only what happened afterward | Active book |
+| Risk Management | Uses protection help and call reduction | Can keep an answer removed after its original problem should be revisited | Johnson; Boot Flood |
+| In-Game Adjustments | Long calling experience; post-Houston self-review is specific | A between-week correction is not proof of live adaptability on every drive | Career; Weeks 12-14 |
+| Halftime Adjustments | Book supplies structured questions | Specific halftime decisions and causal effects are not isolated here | Active book §20.3 |
+| Emergency Decision-Making | Led a full interim season and covered the ST vacancy until February 11 | Different emergencies require distinct evidence | 2012; completed ST handoff |
 
 ## Player Development
 
 | Ability | Current assessment | Development / open question | Used / evidence |
 | --- | --- | --- | --- |
-| Quarterback Development | Sustained preparation with Cousins and QB staff | Return paired clips and diagnose disputed throws jointly | Cousins exit [C8] |
-| Veteran Management | Can change hierarchy without promising status to the veteran | Individual response and relationship cannot be presumed | Brewster/Meester decision [C16] |
-| Rookie Development | Supported Johnson, expanded Thielen and assigned other rookies real jobs | Different player needs cannot share one automatic growth verdict | Rookie year; exits [C9] [C11] [C16] |
-| Practice Coaching | Detailed explanation and retest process | Weekly preparation can crowd it out | Spring and Shorts exit [C12] [C10] |
-| Technique Development | TE background and staff-led correction | Kelce's persistent open issue limits claims of successful closure | Kelce exit [C11] |
-| Film Teaching | Knows the football problem and can state a cue | Supply the actual comparison, including correct examples | Cousins/Shorts [C8] [C10] |
-| Meeting-Room Teaching | Allows argument about the work | Clarify which coach supplies the correction and what completes it | Cousins/Thielen [C8] [C9] |
-| Role Definition | Concrete earned-role decisions | Explain narrowing or changing emphasis before usage communicates it indirectly | Thielen/Shorts; roster [C9] [C10] [C5] |
-| Confidence Management | Retains responsibility while adding structural help | Do not infer a player's internal confidence from continued selection | Johnson support [C16] |
-| Performance Correction | Will name a particular failure and reconsider attribution | Follow-up and independent retest remain the test of change | Exits and 2014 work [C8]-[C11] [C18] |
+| Quarterback Development | Sustained preparation with Cousins and QB staff | Return paired clips and diagnose disputed throws jointly | Cousins exit |
+| Veteran Management | Can change hierarchy without promising status to the veteran | Individual response and relationship cannot be presumed | Brewster/Meester decision |
+| Rookie Development | Supported Johnson, expanded Thielen and assigned other rookies real jobs | Different player needs cannot share one automatic growth verdict | Rookie year; exits |
+| Practice Coaching | Detailed explanation and retest process | Weekly preparation can crowd it out | Spring and Shorts exit |
+| Technique Development | TE background and staff-led correction | Kelce's persistent open issue limits claims of successful closure | Kelce exit |
+| Film Teaching | Knows the football problem and can state a cue | Supply the actual comparison, including correct examples | Cousins/Shorts |
+| Meeting-Room Teaching | Allows argument about the work | Clarify which coach supplies the correction and what completes it | Cousins/Thielen |
+| Role Definition | Concrete earned-role decisions | Explain narrowing or changing emphasis before usage communicates it indirectly | Thielen/Shorts; roster |
+| Confidence Management | Retains responsibility while adding structural help | Do not infer a player's internal confidence from continued selection | Johnson support |
+| Performance Correction | Will name a particular failure and reconsider attribution | Follow-up and independent retest remain the test of change | Exits and 2014 work |
 
 ## Personnel
 
 | Ability | Current assessment | Development / open question | Used / evidence |
 | --- | --- | --- | --- |
-| Player Evaluation | Evaluates observable work for specific jobs | Later real careers and equal-strength results cannot certify foresight | Camp; role decisions [C16] |
-| Roster Construction | Substantial football input | Caldwell controls acquisitions, contracts and final cuts | Authority map [C1] |
-| Depth-Chart Management | Makes meaningful competitive and earned-role choices | Medical clearance is not an automatic depth reversal | Cousins, Brewster, Harris [C5] [C16] |
-| Free-Agent Evaluation | Supplies role projections and recommendations | Market outcome is separate from football evaluation | Existing offseason memo [C20] |
-| Draft Evaluation | Participates in prospect/role evaluation | Do not award credit from a player's actual later career | Authority; draft roles [C1] [C7] |
-| Practice-Squad Management | Coaching role in reserve development; six recommended futures signed | March 11 contracts do not guarantee camp roles or August practice-squad eligibility | Current state; signings [C6] [C26] |
-| Game-Day Activation | Chooses football roles within availability and control | Old inactives are not a current offseason designation | Weekly role records [C5] [C16] |
-| Matchup Selection | Uses personnel and formation to seek an answer | A favorable-looking matchup is not a guaranteed result | Six-OL and movable H [C14] [C16] |
-| Role Assignment | Will let evidence change established order | Communicate the new work and what remains required | Brewster; Thielen [C9] [C16] |
-| Staff Evaluation | Allocates work and hears player reports on its delivery | Need closed follow-up, not assumed assistant effectiveness | Player exits; current staff [C4] [C9] [C11] |
-| Staff Hiring | Built the permanent staff and completed the Westhoff replacement hire | Judge the new working relationship when actual work exists | 2013 hires; February 11 appointment [C4] [C25] |
+| Player Evaluation | Evaluates observable work for specific jobs | Later real careers and equal-strength results cannot certify foresight | Camp; role decisions |
+| Roster Construction | Substantial football input | Caldwell controls acquisitions, contracts and final cuts | Authority map |
+| Depth-Chart Management | Makes meaningful competitive and earned-role choices | Medical clearance is not an automatic depth reversal | Cousins, Brewster, Harris |
+| Free-Agent Evaluation | Supplies role projections and recommendations | Market outcome is separate from football evaluation | Existing offseason memo |
+| Draft Evaluation | Participates in prospect/role evaluation | Do not award credit from a player's actual later career | Authority; draft roles |
+| Practice-Squad Management | Coaching role in reserve development; six recommended futures signed | March 11 contracts do not guarantee camp roles or August practice-squad eligibility | Current state; signings |
+| Game-Day Activation | Chooses football roles within availability and control | Old inactives are not a current offseason designation | Weekly role records |
+| Matchup Selection | Uses personnel and formation to seek an answer | A favorable-looking matchup is not a guaranteed result | Six-OL and movable H |
+| Role Assignment | Will let evidence change established order | Communicate the new work and what remains required | Brewster; Thielen |
+| Staff Evaluation | Allocates work and hears player reports on its delivery | Need closed follow-up, not assumed assistant effectiveness | Player exits; current staff |
+| Staff Hiring | Built the permanent staff and completed the Westhoff replacement hire | Judge the new working relationship when actual work exists | 2013 hires; February 11 appointment |
 
 ## Scouting
 
 | Ability | Current assessment | Development / open question | Used / evidence |
 | --- | --- | --- | --- |
-| Film Study | Extensive coverage and offensive-preparation experience | Distinguish seeing the issue from delivering usable teaching | Career; exits [C2] [C8] [C10] |
-| Opponent Tendency Analysis | A core job since Dolphins QC and Patriots passing work | An identified tendency still needs a conditional answer | Career; weekly process [C2] [C14] |
-| Self-Scouting | Houston review identifies his own plan/call mismatch | Revisit the remedy under later evidence | Weeks 12-14; Cousins exit [C16] [C8] |
-| Personnel Scouting | Studies players for football roles | No general accuracy rating or access to future outcomes | Authority; current memo [C1] [C20] |
-| Formation Recognition | Shared identification language supports the offense | Authorship does not certify each player's recognition | Active book [C14] |
-| Coverage Recognition | Secondary work informs offensive preparation | Judge disputed throws against actual post-snap distribution | Career; Cousins review [C2] [C8] |
-| Protection Recognition | Connects front/pressure picture to protection answers | QB-center and staff communication must agree | Active book; player work [C14] [C18] |
-| Situational Scouting | Repeated red-zone and short-yardage preparation | Need a current opponent before creating a current tendency report | Career; weekly process [C2] [C14] |
-| Statistical Analysis | Uses football totals and tendencies | Specific statistical methods and independent proficiency unestablished | Review and preparation [C7] [C14] |
-| Analytics Interpretation | Has access to organizational support in historical context | No evidence for a particular model, report or decision threshold | Historical department [H6]; branch limits [C1] |
+| Film Study | Extensive coverage and offensive-preparation experience | Distinguish seeing the issue from delivering usable teaching | Career; exits |
+| Opponent Tendency Analysis | A core job since Dolphins QC and Patriots passing work | An identified tendency still needs a conditional answer | Career; weekly process |
+| Self-Scouting | Houston review identifies his own plan/call mismatch | Revisit the remedy under later evidence | Weeks 12-14; Cousins exit |
+| Personnel Scouting | Studies players for football roles | No general accuracy rating or access to future outcomes | Authority; current memo |
+| Formation Recognition | Shared identification language supports the offense | Authorship does not certify each player's recognition | Active book |
+| Coverage Recognition | Secondary work informs offensive preparation | Judge disputed throws against actual post-snap distribution | Career; Cousins review |
+| Protection Recognition | Connects front/pressure picture to protection answers | QB-center and staff communication must agree | Active book; player work |
+| Situational Scouting | Repeated red-zone and short-yardage preparation | Need a current opponent before creating a current tendency report | Career; weekly process |
+| Statistical Analysis | Uses football totals and tendencies | Specific statistical methods and independent proficiency unestablished | Review and preparation |
+| Analytics Interpretation | Has access to organizational support in historical context | No evidence for a particular model, report or decision threshold | Historical department ; branch limits |
 
 ## Administration
 
 | Ability | Current assessment | Development / open question | Used / evidence |
 | --- | --- | --- | --- |
-| Practice Planning | Detailed phase-to-week structure | Preserve individual work when protection consumes time | Spring; Shorts exit [C12] [C10] |
-| Weekly Scheduling | Complement work and call-sheet reduction have assigned days | A scheduled development period still needs continuation and explanation | Weekly process; Thielen [C14] [C9] |
-| Staff Meetings | Established coordinator/position-coach division | Reconcile competing instructions and assign follow-up ownership | Staff; exits [C4] [C9] |
-| Installation Planning | Reuses known concepts through new presentations | Available pages are not all installed; lawful phase restrictions still apply | Active books; calendar [C14] [C15] [C17] |
-| Workload Management | Can reduce menus and delegate; ST interim work has ended | Individual work disappeared under pressure in 2013; hiring alone does not close that problem | Thielen; Westhoff appointment [C9] [C25] |
-| Injury Coordination | Uses authorized medical restrictions | No personal diagnosis, clearance or guaranteed future availability | Current roster/state [C5] [C6] |
-| Front-Office Coordination | Functions within negotiated Caldwell relationship | Major QB consultation is a voice right, not concurrence | Contract/authority [C1] [C3] |
-| League Compliance | Responsible within organizational rules | Do not claim a personal compliance specialty or invent a clean audit | Authority; readiness/calendar [C1] [C17] [C23] |
-| Travel Planning | Has participated in a season including London | Operational travel staff work cannot be attributed to his personal skill | 2013 calendar [C24] |
-| Record Keeping | Extensive written structure survives | Boot Flood attribution and unfinished film show gaps in useful closure | Cousins/Kelce exits [C8] [C11] |
+| Practice Planning | Detailed phase-to-week structure | Preserve individual work when protection consumes time | Spring; Shorts exit |
+| Weekly Scheduling | Complement work and call-sheet reduction have assigned days | A scheduled development period still needs continuation and explanation | Weekly process; Thielen |
+| Staff Meetings | Established coordinator/position-coach division | Reconcile competing instructions and assign follow-up ownership | Staff; exits |
+| Installation Planning | Reuses known concepts through new presentations | Available pages are not all installed; lawful phase restrictions still apply | Active books; calendar |
+| Workload Management | Can reduce menus and delegate; ST interim work has ended | Individual work disappeared under pressure in 2013; hiring alone does not close that problem | Thielen; Westhoff appointment |
+| Injury Coordination | Uses authorized medical restrictions | No personal diagnosis, clearance or guaranteed future availability | Current roster/state |
+| Front-Office Coordination | Functions within negotiated Caldwell relationship | Major QB consultation is a voice right, not concurrence | Contract/authority |
+| League Compliance | Responsible within organizational rules | Do not claim a personal compliance specialty or invent a clean audit | Authority; readiness/calendar |
+| Travel Planning | Has participated in a season including London | Operational travel staff work cannot be attributed to his personal skill | 2013 calendar |
+| Record Keeping | Extensive written structure survives | Boot Flood attribution and unfinished film show gaps in useful closure | Cousins/Kelce exits |
 
 ## Media / Communication
 
 | Ability | Current assessment | Development / open question | Used / evidence |
 | --- | --- | --- | --- |
-| Press Conferences | Experienced public football representative | Expanded January manuscript is interpretation, not a new transcript | Review/source note [C7] [C16] |
-| Player Communication | Direct about jobs and willing to hear objections | Explain changing emphasis and attach examples to cues | Cousins, Thielen, Shorts [C8]-[C10] |
-| Staff Communication | Responsibilities are explicit | Shared player corrections need one clear delivery route | Staff; Thielen exit [C4] [C9] |
-| Ownership Communication | Presents failures and direction without seeking new terms | Khan's private reaction cannot be invented beyond the resolved decision | January 15 review [C7] |
-| Public Speaking | Team, hiring and review responsibilities established | No broad charisma or persuasion tier justified | Dossier; review [C2] [C7] |
-| Message Discipline | Keeps football, contract and medical authority distinct | Concision can omit an explanation players need | Authority; exits [C1] [C8] [C10] |
-| Crisis Communication | Interim-HC exposure and accountability experience | No basis for a universal crisis-media verdict | 2012 background [C2] |
-| Interview Management | Permanent-job search and player exits supply actual experience | A successful hire is not proof every interview was persuasive | Hiring history; exits [C2] [C3] [C8]-[C11] |
+| Press Conferences | Experienced public football representative | Expanded January manuscript is interpretation, not a new transcript | Review/source note |
+| Player Communication | Direct about jobs and willing to hear objections | Explain changing emphasis and attach examples to cues | Cousins, Thielen, Shorts |
+| Staff Communication | Responsibilities are explicit | Shared player corrections need one clear delivery route | Staff; Thielen exit |
+| Ownership Communication | Presents failures and direction without seeking new terms | Khan's private reaction cannot be invented beyond the resolved decision | January 15 review |
+| Public Speaking | Team, hiring and review responsibilities established | No broad charisma or persuasion tier justified | Dossier; review |
+| Message Discipline | Keeps football, contract and medical authority distinct | Concision can omit an explanation players need | Authority; exits |
+| Crisis Communication | Interim-HC exposure and accountability experience | No basis for a universal crisis-media verdict | 2012 background |
+| Interview Management | Permanent-job search and player exits supply actual experience | A successful hire is not proof every interview was persuasive | Hiring history; exits |
 
 ## Provisional Estimates
 
 | Ability | Domain | Provisional interpretation | Used / evidence needed |
 | --- | --- | --- | --- |
-| Offensive diagnosis informed by coverage work | Scouting / offense | His secondary background plausibly helps him see the defender's problem; current concepts are consistent with that reading | Show the specific recognition and resulting useful correction; proximity to mentors is insufficient [C2] [C14] |
-| More selective self-correction as a caller | Offense | Houston produced a specific check on his reasoning | A future sequence must show whether he uses it well; six Cleveland passes do not settle the question [C8] [C16] |
-| More complete player explanations | Teaching | Exits identify that a short cue sometimes needs paired examples | Actual film delivery, player response and retention, not the promise alone [C8] [C10] [C19] |
-| Better developmental continuity | Administration | He now has explicit evidence of work lost after the bye | Subsequent continuation and closure; no improvement awarded in advance [C9] [C18] |
-| Technical special-teams coaching | Special teams | Oversight experience supports working with a coordinator | No assumed transfer to kicking, protection or return technique from the interim stint [C25] |
+| Offensive diagnosis informed by coverage work | Scouting / offense | His secondary background plausibly helps him see the defender's problem; current concepts are consistent with that reading | Show the specific recognition and resulting useful correction; proximity to mentors is insufficient |
+| More selective self-correction as a caller | Offense | Houston produced a specific check on his reasoning | A future sequence must show whether he uses it well; six Cleveland passes do not settle the question |
+| More complete player explanations | Teaching | Exits identify that a short cue sometimes needs paired examples | Actual film delivery, player response and retention, not the promise alone |
+| Better developmental continuity | Administration | He now has explicit evidence of work lost after the bye | Subsequent continuation and closure; no improvement awarded in advance |
+| Technical special-teams coaching | Special teams | Oversight experience supports working with a coordinator | No assumed transfer to kicking, protection or return technique from the interim stint |
 
 ## Season Log
 
-The complete 2013 game sequence follows. Records reset between preseason, regular season and postseason; playoff rows also retain the final regular-season record. Opponent links lead to the dated outputs. Earlier career seasons are summarized in the chronology because their complete game-level branch record is not supplied. The 2012 Divisional opponent and score remain unknown. [C2] [C21] [C24]
+The complete 2013 game sequence follows. Records reset between preseason, regular season and postseason; playoff rows also retain the final regular-season record. Opponent links lead to the dated outputs. Earlier career seasons are summarized in the chronology because their complete game-level branch record is not supplied. The 2012 Divisional opponent and score remain unknown.
 
 | Week / date | Opponent | Result | Record | Major decisions / context | Development / notes |
 | --- | --- | --- | --- | --- | --- |
@@ -1000,34 +978,34 @@ The original template's XP and new-total columns are replaced with actual change
 
 | Ability | Event / evidence | Change in the assessment | What remains unresolved |
 | --- | --- | --- | --- |
-| Calling and offensive organization | San Diego 2000-2001 [C2] | Established primary-caller experience before NFL coordination | No detailed surviving call-by-call evaluation |
-| Defensive understanding | Patriots secondary work 2002-2004 [C2] | Genuine work on the other side of the ball | Not a defensive-coordinator résumé or automatic current tier |
-| Passing-game preparation | Patriots 2007-2008 [C2] | Broader personnel, motion and situational responsibility | Selected preseason calls do not become regular-season calling credit |
-| NFL offensive calling | Saints mid-2011 onward [C2] | Sustained responsibility for the live offense | Payton and the rest of the staff still contributed |
-| Whole-team leadership | Saints interim season 2012 [C2] | Full-season head-coach responsibility established | Inherited operation differs from building his own staff |
-| Program construction | Jacksonville hiring and spring 2013 [C3] [C4] [C12] | Selected the staff and established the teaching process | Written method does not prove every player received it |
-| Role judgment | Johnson support, Brewster promotion, Thielen retention [C9] [C16] | Will alter support and hierarchy on football evidence | Effectiveness must be assessed in the assigned job |
-| Calling self-awareness | Houston loss and subsequent check [C16] | Names his own departure from the intended run plan | A reminder is not proof of a corrected tendency |
-| Teaching communication | January player exits [C8]-[C11] | Has specific player accounts of unclear or missing work | Promised film and closure still need delivery |
-| Delegation under added workload | January 12-February 11 interim ST work; Westhoff hire [C25] | Technical unit responsibility returned to a specialist | No demonstrated new technical specialty for Stone or automatic gain in workload management |
+| Calling and offensive organization | San Diego 2000-2001 | Established primary-caller experience before NFL coordination | No detailed surviving call-by-call evaluation |
+| Defensive understanding | Patriots secondary work 2002-2004 | Genuine work on the other side of the ball | Not a defensive-coordinator résumé or automatic current tier |
+| Passing-game preparation | Patriots 2007-2008 | Broader personnel, motion and situational responsibility | Selected preseason calls do not become regular-season calling credit |
+| NFL offensive calling | Saints mid-2011 onward | Sustained responsibility for the live offense | Payton and the rest of the staff still contributed |
+| Whole-team leadership | Saints interim season 2012 | Full-season head-coach responsibility established | Inherited operation differs from building his own staff |
+| Program construction | Jacksonville hiring and spring 2013 | Selected the staff and established the teaching process | Written method does not prove every player received it |
+| Role judgment | Johnson support, Brewster promotion, Thielen retention | Will alter support and hierarchy on football evidence | Effectiveness must be assessed in the assigned job |
+| Calling self-awareness | Houston loss and subsequent check | Names his own departure from the intended run plan | A reminder is not proof of a corrected tendency |
+| Teaching communication | January player exits | Has specific player accounts of unclear or missing work | Promised film and closure still need delivery |
+| Delegation under added workload | January 12-February 11 interim ST work; Westhoff hire | Technical unit responsibility returned to a specialist | No demonstrated new technical specialty for Stone or automatic gain in workload management |
 
 ## Major Decisions and Consequences
 
 | Week / date | Decision | Reason supported by the record | Immediate result | Longer-term consequence |
 | --- | --- | --- | --- | --- |
-| January 15, 2013 | Accept Jacksonville's contract and personnel authority division | Permanent HC role with his own staff and offensive calls; Caldwell retained personnel control | Hire closed | Major QB matters require his documented voice, not his veto [C1] [C3] |
-| 2013 staff build | Delegate weekday offense to Tice and defense to Crennel while retaining offensive calls | Established division of work | Staff and responsibilities set | Gives the program real unit leadership; Stone remains accountable for coordination [C4] |
-| Camp through opener | Maintain competition, then establish Cousins as QB1 | Observed operation and competition | Cousins starts | A full shared season produces more specific strengths and disagreements [C8] [C16] |
-| Early regular season | Keep Johnson at RT with structural help | Support the actual job while continuing development | Role retained | Extra protection uses players who could otherwise release [C16] |
-| Week 3 onward | Remove Boot Flood from the primary sheet | Early interception/sack trouble prompted caution | Call absent from the primary menu | Attribution and reconsideration remained open at Cousins's exit [C8] |
-| Week 6 | Confirm Brewster at center | Established role decision after replacement work | Starter retained after Meester returned | Demonstrates that the depth chart can change on work, not seniority alone [C5] [C16] |
-| Week 8 | Keep Thielen's WR2/H role with Blackmon outside | Existing earned role and planned usage | Movable role preserved | Teaching continuity became the problem after the bye, not immediate displacement [C9] |
-| Week 13 preparation | Add a reason check after three called passes | Houston exposed departure from the intended running approach | Check entered preparation | No automatic run quota; whether it reliably governs later calls remains open [C8] [C16] |
-| January exits | Hear contested interpretations and assign clarification/follow-up | Players identified missing comparisons and unclear completion standards | Specific work identified | No completed improvement until returned work and subsequent evidence exist [C8]-[C11] |
-| January 15, 2014 | Present review without seeking new terms | User's explicit review instruction | Retained on original contract | No raise, extension, authority expansion or new staff allocation created [C7] |
-| February 3-11, 2014 | Approach April, then hire Westhoff under the user's fallback instruction | Oakland retained April and refused permission; Westhoff agreed at the authorized ceiling | Westhoff appointed February 11; interim direction ended | New working relationship needs actual teaching evidence [C25] |
-| February 3 and 5, 2014 | Caldwell executes six futures recommendations | Preserve developmental opportunities under the existing memo | Six contracts signed, effective March 11; King and Ta'ufo'ou not offered | Camp opportunities, not permanent roster or practice-squad guarantees [C26] |
-| February 17, 2014 | Refuse Minnesota's lateral requests for Bates and Tice | Established lateral-move policy | Both remain; February exposure caused no assistant departures | Staff continuity is preserved without proving greater effectiveness [C27] |
+| January 15, 2013 | Accept Jacksonville's contract and personnel authority division | Permanent HC role with his own staff and offensive calls; Caldwell retained personnel control | Hire closed | Major QB matters require his documented voice, not his veto |
+| 2013 staff build | Delegate weekday offense to Tice and defense to Crennel while retaining offensive calls | Established division of work | Staff and responsibilities set | Gives the program real unit leadership; Stone remains accountable for coordination |
+| Camp through opener | Maintain competition, then establish Cousins as QB1 | Observed operation and competition | Cousins starts | A full shared season produces more specific strengths and disagreements |
+| Early regular season | Keep Johnson at RT with structural help | Support the actual job while continuing development | Role retained | Extra protection uses players who could otherwise release |
+| Week 3 onward | Remove Boot Flood from the primary sheet | Early interception/sack trouble prompted caution | Call absent from the primary menu | Attribution and reconsideration remained open at Cousins's exit |
+| Week 6 | Confirm Brewster at center | Established role decision after replacement work | Starter retained after Meester returned | Demonstrates that the depth chart can change on work, not seniority alone |
+| Week 8 | Keep Thielen's WR2/H role with Blackmon outside | Existing earned role and planned usage | Movable role preserved | Teaching continuity became the problem after the bye, not immediate displacement |
+| Week 13 preparation | Add a reason check after three called passes | Houston exposed departure from the intended running approach | Check entered preparation | No automatic run quota; whether it reliably governs later calls remains open |
+| January exits | Hear contested interpretations and assign clarification/follow-up | Players identified missing comparisons and unclear completion standards | Specific work identified | No completed improvement until returned work and subsequent evidence exist |
+| January 15, 2014 | Present review without seeking new terms | User's explicit review instruction | Retained on original contract | No raise, extension, authority expansion or new staff allocation created |
+| February 3-11, 2014 | Approach April, then hire Westhoff under the user's fallback instruction | Oakland retained April and refused permission; Westhoff agreed at the authorized ceiling | Westhoff appointed February 11; interim direction ended | New working relationship needs actual teaching evidence |
+| February 3 and 5, 2014 | Caldwell executes six futures recommendations | Preserve developmental opportunities under the existing memo | Six contracts signed, effective March 11; King and Ta'ufo'ou not offered | Camp opportunities, not permanent roster or practice-squad guarantees |
+| February 17, 2014 | Refuse Minnesota's lateral requests for Bates and Tice | Established lateral-move policy | Both remain; February exposure caused no assistant departures | Staff continuity is preserved without proving greater effectiveness |
 
 ## Unresolved Issues
 
@@ -1036,7 +1014,7 @@ The original template's XP and new-total columns are replaced with actual change
 - **Teaching:** delivery of comparative film, Kelce's blocking assessment and a clear completion standard, plus continued individual work for players such as Thielen and Shorts.
 - **Game management:** distinguish documented user/coach decisions from autonomous engine behavior before treating a finish as a character trait. No emergency specialist plan or complete standing decision chart is established.
 - **Staff:** Westhoff is hired and the vacancy is closed. His practical working relationship with Stone and the specialists remains to be observed; no emergency caller successor is assigned.
-- **Roster and finances:** futures outcomes are closed, but five minimum-salary figures still need credited-season reconciliation. Cap accounting, several inherited contract terms and Nwaneri's bonus due date remain unresolved. Proposed acquisitions, savings and draft packages remain in their proper decision records. [C26] [C28]
+- **Roster and finances:** futures outcomes are closed, but five minimum-salary figures still need credited-season reconciliation. Cap accounting, several inherited contract terms and Nwaneri's bonus due date remain unresolved. Proposed acquisitions, savings and draft packages remain in their proper decision records.
 - **Medical and roles:** Posluszny's projected return is not clearance; Ball's and Wilson's clearances do not make new depth decisions.
 - **Private biography:** childhood, parents, siblings, current residence, personal habits and most physical description are unknown. Realism does not require inventing them.
 - **Historical boundary:** real staffing after divergence and future player outcomes cannot fill branch gaps. The active 2013-2015 books alone inform the football profile.
@@ -1053,87 +1031,50 @@ The interpretive January review and the earlier profile are secondary synthesis.
 
 ### Branch source index
 
-| Code | Source | What it controls here |
-| --- | --- | --- |
-| C1 | [Head Coach, Organization and Authority Canon][C1] | Stable identity, history and final authority |
-| C2 | [Prehire character dossier][C2] | Career through the 2012 season; frozen prehire background |
-| C3 | [Executed head-coach contract][C3] | Jacksonville terms and negotiated role |
-| C4 | [Coaching staff and executed contracts][C4] | Current assistants, responsibilities and departures |
-| C5 | [Current roster][C5] | Controlled players, availability and decided roles |
-| C6 | [Current Season State][C6] | February 17 checkpoint through Entry 86, open gates and current status |
-| C7 | [Owner and GM review][C7] | January 15 retention and existing program direction; later state supersedes dated/stale summary items |
-| C8 | [Kirk Cousins exit][C8] | Call confidence, film comparison and disputed interpretation |
-| C9 | [Adam Thielen exit][C9] | Movable-role learning and lost developmental continuity |
-| C10 | [Cecil Shorts exit][C10] | Explanation, changed emphasis and receiver/QB work |
-| C11 | [Travis Kelce exit][C11] | Attached-blocking issue, role and incomplete feedback |
-| C12 | [2013 OTA output][C12] | Actual spring teaching and limited defensive installation |
-| C13 | [2014 staff plan][C13] | Search instructions and history; executed outcome belongs to C25 |
-| C14 | [Active offensive Iteration I][C14] | Authored 2013-2015 offense; dated game usage remains separate |
-| C15 | [Active defensive Iteration I][C15] | Authored 2013-2015 defense; Crennel remains the caller |
-| C16 | [Initial coaching assessment and dated evidence map][C16] | Index to role/weekly evidence and interpretation limits |
-| C17 | [2014 calendar][C17] | Information and activity gates; no invented current opponent |
-| C18 | [2014 player-development roster profiles][C18] | Existing individual needs and open follow-up |
-| C19 | [Film delivery log][C19] | Distinction between prepared work and actual delivery |
-| C20 | [Stone's 2014 recommendations to Caldwell][C20] | Attributed advice only; not execution or reconciled accounting |
-| C21 | [2013 statistical archive][C21], including [regular-season receipts](../2013/stats/game_receipts/) and [postseason receipts](../2013/stats/postseason_receipts/) | Generated regular/postseason results and record arithmetic |
-| C22 | [2014 cap worksheet][C22] | Unreconciled financial status; no certified room inferred |
-| C23 | [Onboarding and development framework][C23] | Durable teaching method and family/support boundaries; read with the [readiness standard](../2013/offseason/the_prowl_player_readiness_standard.md) and [program identity](../2013/offseason/the_prowl_program_identity.md) |
-| C24 | [2013 calendar][C24] | Dates and links to completed game outputs |
-| C25 | [Executed 2014 assistant hires][C25] | Westhoff appointment, terms, authority and completed interim handoff |
-| C26 | [2014 contract outcomes][C26] | Six futures contracts and the two departures |
-| C27 | [Outside assistant requests and outcomes][C27] | February exposure, Chicago interview and Minnesota lateral refusals |
-| C28 | [Pre-tag verifications][C28] | Current contract findings and unresolved accounting, with their stated source limits |
+| Source | What it controls here |
+| --- | --- |
+| [Head Coach, Organization and Authority Canon](../../foundation/03_Head_Coach_Organization_and_Authority_Canon.md) | Stable identity, history and final authority |
+| [Prehire character dossier](../../library/alex_stone_character_dossier_pre_hire.md) | Career through the 2012 season; frozen prehire background |
+| [Executed head-coach contract](../2013/offseason/head_coach_contract.md) | Jacksonville terms and negotiated role |
+| [Coaching staff and executed contracts](../2013/coaching_staff.md) | Current assistants, responsibilities and departures |
+| [Current roster](../2013/roster.md) | Controlled players, availability and decided roles |
+| [Current Season State](../../state/05_Current_Season_State.md) | February 28 checkpoint through Entry 89, open gates and current status |
+| [Owner and GM review](../2013/season_review/owner_and_gm_review.md) | January 15 retention and existing program direction; later state supersedes dated/stale summary items |
+| [Kirk Cousins exit](../2013/exit_interviews/main_core/kirk_cousins.md) | Call confidence, film comparison and disputed interpretation |
+| [Adam Thielen exit](../2013/exit_interviews/main_core/adam_thielen.md) | Movable-role learning and lost developmental continuity |
+| [Cecil Shorts exit](../2013/exit_interviews/main_core/cecil_shorts.md) | Explanation, changed emphasis and receiver/QB work |
+| [Travis Kelce exit](../2013/exit_interviews/core/travis_kelce.md) | Attached-blocking issue, role and incomplete feedback |
+| [2013 OTA output](../2013/offseason/otas/output.md) | Actual spring teaching and limited defensive installation |
+| [2014 staff plan](../2014/offseason/staff_changes/staff_plan.md) | Search instructions and history; executed outcome belongs to the [assistant hiring record](../2014/offseason/staff_changes/hires.md) |
+| [Active offensive Iteration I](../playbook/alex_stone_2013_offensive_playbook_iteration_i.md) | Authored 2013-2015 offense; dated game usage remains separate |
+| [Active defensive Iteration I](../playbook/alex_stone_2013_defensive_playbook_iteration_i.md) | Authored 2013-2015 defense; Crennel remains the caller |
+| [Initial coaching assessment and dated evidence map](alex_stone_2013_assessment_record.md) | Index to role/weekly evidence and interpretation limits |
+| [2014 calendar](../2014/calendar.md) | Information and activity gates; no invented current opponent |
+| [2014 player-development roster profiles](../2014/offseason/player_development/roster_profiles.md) | Existing individual needs and open follow-up |
+| [Film delivery log](../2014/offseason/film/delivery_log.md) | Distinction between prepared work and actual delivery |
+| [Stone's 2014 recommendations to Caldwell](../2014/offseason/stone_to_caldwell_2014_offseason_decisions.md) | Attributed advice only; not execution or reconciled accounting |
+| [2013 statistical archive](../2013/stats/), including [regular-season receipts](../2013/stats/game_receipts/) and [postseason receipts](../2013/stats/postseason_receipts/) | Generated regular/postseason results and record arithmetic |
+| [2014 cap worksheet](../2014/offseason/current_cap_worksheet.md) | Unreconciled financial status; no certified room inferred |
+| [Onboarding and development framework](../2013/offseason/player_onboarding_and_development_framework.md) | Durable teaching method and family/support boundaries; read with the [readiness standard](../2013/offseason/the_prowl_player_readiness_standard.md) and [program identity](../2013/offseason/the_prowl_program_identity.md) |
+| [2013 calendar](../2013/calendar.md) | Dates and links to completed game outputs |
+| [Executed 2014 assistant hires](../2014/offseason/staff_changes/hires.md) | Westhoff appointment, terms, authority and completed interim handoff |
+| [2014 contract outcomes](../2014/offseason/free_agency/signings.md) | Six futures contracts and the two departures |
+| [Outside assistant requests and outcomes](../2014/offseason/staff_changes/requests_and_outcomes.md) | February exposure, Chicago interview and Minnesota lateral refusals |
+| [Pre-tag verifications](../2014/offseason/caldwell_pre_tag_verifications.md) | Current contract findings and unresolved accounting, with their stated source limits |
 
 ### Historical verification
 
-| Code | Sources | Verified detail and boundary |
-| --- | --- | --- |
-| H1 | Miami, [1983 championship history](https://miamihurricanes.com/news/2002/04/30/205543356-2), April 30, 2002; [football history](https://miamihurricanes.com/history/football-history/) | Schnellenberger led the 1983 title team; Johnson began in 1984. Stone's membership comes only from canon. No fictional college starting role or statistics added |
-| H2 | 49ers, [Super Bowl XXIX retrospective](https://www.49ers.com/news/jan-29-1995-steve-young-leads-49ers-to-fifth-lombardi-trophy-in-super-b-16763434); Pro Football Hall of Fame, [Chargers history](https://www.profootballhof.com/teams/los-angeles-chargers/team-history) | January 29, 1995 and 49-26 are real unchanged context. Stone's participation and career totals come from canon |
-| H3 | Patriots, [Mangini named defensive coordinator](https://www.patriots.com/news/mangini-named-defensive-coordinator-151351), February 12, 2005; [Crennel staying on board](https://www.patriots.com/news/crennel-staying-on-board-124001), 2003 | Mangini's prior secondary responsibility and Crennel's coordinator role support the surrounding structure. They do not independently establish Stone's duties or private relationships |
-| H4 | Jaguars, [A great fit](https://www.jaguars.com/news/a-great-fit-6940371), February 13, 2012; Jets, [Stadium CEO Lamping named Jaguars president](https://www.newyorkjets.com/news/stadium-ceo-lamping-named-jaguars-president-6938021), February 13, 2012 | Lamping's business presidency predates Stone's hire. It does not give him final coaching/personnel authority in this branch |
-| H5 | Jaguars, [Caldwell fills personnel positions](https://www.jaguars.com/news/caldwell-fills-personnel-positions-10071048), May 2, 2013; [contemporary independent report](https://www.bigcatcountry.com/2013/5/2/4294248/jaguars-chris-polian-front-office-scout-news), May 2, 2013 | Confirms real historical titles for O'Brien, Polian, Dengler, Roell and Ellenz. These appointments are post-divergence reference only and remain unconfirmed in the branch |
-| H6 | [Jax Daily Record](https://www.jaxdailyrecord.com/news/2012/jul/31/city-notes-89/), July 31, 2012; TruMedia, [contemporary announcement](https://www.trumedianetworks.com/analytics-news/2013/12/9/press-release-jaguars-executive-tony-khan-invests-in-trumedia-networks), December 9, 2013 | Tony Khan's football technology/analytics role dated to July 2012. The later investment announcement corroborates background; it does not establish a Jacksonville software purchase, Stone's use or a new branch investment event |
-| H7 | NFL Football Operations, [Sideline technology](https://operations.nfl.com/game-operations-logistics/technology/sideline-technology); Microsoft, [Surface is ready for NFL sidelines](https://blogs.windows.com/devices/2014/08/04/surface-ready-nfl-sidelines/), August 4, 2014 | League sideline tablet use began in the 2014 season; paper images remained the 2013 method. Author-only historical check prevents a 2013 equipment anachronism; it does not advance branch technology or knowledge |
-| H8 | Saints, [2009 schedule/results](https://www.neworleanssaints.com/schedule/2009/); [championship ring presentation](https://www.neworleanssaints.com/news/saints-presented-with-customized-super-bowl-xliv-championship-rings-by-t-2319956), June 16, 2010 | The 2009-season Super Bowl XLIV championship is real context. Stone replacing the real OC and his later 2011 calling/2012 interim tenure are intentional branch differences |
+| Sources | Verified detail and boundary |
+| --- | --- |
+| Miami, [1983 championship history](https://miamihurricanes.com/news/2002/04/30/205543356-2), April 30, 2002; [football history](https://miamihurricanes.com/history/football-history/) | Schnellenberger led the 1983 title team; Johnson began in 1984. Stone's membership comes only from canon. No fictional college starting role or statistics added |
+| 49ers, [Super Bowl XXIX retrospective](https://www.49ers.com/news/jan-29-1995-steve-young-leads-49ers-to-fifth-lombardi-trophy-in-super-b-16763434); Pro Football Hall of Fame, [Chargers history](https://www.profootballhof.com/teams/los-angeles-chargers/team-history) | January 29, 1995 and 49-26 are real unchanged context. Stone's participation and career totals come from canon |
+| Patriots, [Mangini named defensive coordinator](https://www.patriots.com/news/mangini-named-defensive-coordinator-151351), February 12, 2005; [Crennel staying on board](https://www.patriots.com/news/crennel-staying-on-board-124001), 2003 | Mangini's prior secondary responsibility and Crennel's coordinator role support the surrounding structure. They do not independently establish Stone's duties or private relationships |
+| Jaguars, [A great fit](https://www.jaguars.com/news/a-great-fit-6940371), February 13, 2012; Jets, [Stadium CEO Lamping named Jaguars president](https://www.newyorkjets.com/news/stadium-ceo-lamping-named-jaguars-president-6938021), February 13, 2012 | Lamping's business presidency predates Stone's hire. It does not give him final coaching/personnel authority in this branch |
+| Jaguars, [Caldwell fills personnel positions](https://www.jaguars.com/news/caldwell-fills-personnel-positions-10071048), May 2, 2013; [contemporary independent report](https://www.bigcatcountry.com/2013/5/2/4294248/jaguars-chris-polian-front-office-scout-news), May 2, 2013 | Confirms real historical titles for O'Brien, Polian, Dengler, Roell and Ellenz. These appointments are post-divergence reference only and remain unconfirmed in the branch |
+| [Jax Daily Record](https://www.jaxdailyrecord.com/news/2012/jul/31/city-notes-89/), July 31, 2012; TruMedia, [contemporary announcement](https://www.trumedianetworks.com/analytics-news/2013/12/9/press-release-jaguars-executive-tony-khan-invests-in-trumedia-networks), December 9, 2013 | Tony Khan's football technology/analytics role dated to July 2012. The later investment announcement corroborates background; it does not establish a Jacksonville software purchase, Stone's use or a new branch investment event |
+| NFL Football Operations, [Sideline technology](https://operations.nfl.com/game-operations-logistics/technology/sideline-technology); Microsoft, [Surface is ready for NFL sidelines](https://blogs.windows.com/devices/2014/08/04/surface-ready-nfl-sidelines/), August 4, 2014 | League sideline tablet use began in the 2014 season; paper images remained the 2013 method. Author-only historical check prevents a 2013 equipment anachronism; it does not advance branch technology or knowledge |
+| Saints, [2009 schedule/results](https://www.neworleanssaints.com/schedule/2009/); [championship ring presentation](https://www.neworleanssaints.com/news/saints-presented-with-customized-super-bowl-xliv-championship-rings-by-t-2319956), June 16, 2010 | The 2009-season Super Bowl XLIV championship is real context. Stone replacing the real OC and his later 2011 calling/2012 interim tenure are intentional branch differences |
 
 ### Maintenance
 
-This remains a February 17, 2014 snapshot. A future update should carry the new date, link actual new evidence and revise only what that evidence changes. Role, staff, contract, medical and clock changes must first close in their owning records. Preserve this dated assessment in history when replacing it; never erase a difficult season to make the later coach look inevitable.
-
-[C1]: ../../foundation/03_Head_Coach_Organization_and_Authority_Canon.md
-[C2]: ../../library/alex_stone_character_dossier_pre_hire.md
-[C3]: ../2013/offseason/head_coach_contract.md
-[C4]: ../2013/coaching_staff.md
-[C5]: ../2013/roster.md
-[C6]: ../../state/05_Current_Season_State.md
-[C7]: ../2013/season_review/owner_and_gm_review.md
-[C8]: ../2013/exit_interviews/main_core/kirk_cousins.md
-[C9]: ../2013/exit_interviews/main_core/adam_thielen.md
-[C10]: ../2013/exit_interviews/main_core/cecil_shorts.md
-[C11]: ../2013/exit_interviews/core/travis_kelce.md
-[C12]: ../2013/offseason/otas/output.md
-[C13]: ../2014/offseason/staff_changes/staff_plan.md
-[C14]: ../playbook/alex_stone_2013_offensive_playbook_iteration_i.md
-[C15]: ../playbook/alex_stone_2013_defensive_playbook_iteration_i.md
-[C16]: alex_stone_2013_assessment_record.md
-[C17]: ../2014/calendar.md
-[C18]: ../2014/offseason/player_development/roster_profiles.md
-[C19]: ../2014/offseason/film/delivery_log.md
-[C20]: ../2014/offseason/stone_to_caldwell_2014_offseason_decisions.md
-[C21]: ../2013/stats/
-[C22]: ../2014/offseason/current_cap_worksheet.md
-[C23]: ../2013/offseason/player_onboarding_and_development_framework.md
-[C24]: ../2013/calendar.md
-[C25]: ../2014/offseason/staff_changes/hires.md
-[C26]: ../2014/offseason/free_agency/signings.md
-[C27]: ../2014/offseason/staff_changes/requests_and_outcomes.md
-[C28]: ../2014/offseason/caldwell_pre_tag_verifications.md
-[H1]: #historical-verification
-[H2]: #historical-verification
-[H3]: #historical-verification
-[H4]: #historical-verification
-[H5]: #historical-verification
-[H6]: #historical-verification
-[H7]: #historical-verification
-[H8]: #historical-verification
+This is a February 28, 2014 snapshot. The update from February 17 refreshes administrative facts and source presentation; it adds no new coaching performance or personality claims. A future update should carry the new date, link actual new evidence and revise only what that evidence changes. Role, staff, contract, medical and clock changes must first close in their owning records. Preserve this dated assessment in history when replacing it; never erase a difficult season to make the later coach look inevitable.
