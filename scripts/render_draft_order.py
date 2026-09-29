@@ -15,48 +15,79 @@ GROUP_LABEL = {"non-playoff": "Non-playoff", "wild_card": "Lost Wild Card", "div
                "champion": "Won Super Bowl"}
 
 
+def choices(values):
+    return " or ".join(str(value) for value in values)
+
+
+def overall(row):
+    base = choices(row["base_overall_options"])
+    offset = " + ".join(f"C{rnd}" for rnd in row["compensatory_after_rounds"])
+    return (f"({base})" if offset and len(row["base_overall_options"]) > 1 else base) + (" + " + offset if offset else "")
+
+
 def render():
-    from runtime.draft_order import order
-    rows = order()
+    from runtime.draft_order import load_ownership, seven_rounds
+    register = load_ownership()
+    # This renderer intentionally cannot publish a final order from an invented
+    # default zero. A later awards event must add the actual branch selections.
+    if (register["compensatory"]["status"] != "pending"
+            or register["compensatory"]["round_counts"] is not None):
+        raise ValueError("compensatory awards require an explicit final-order implementation")
+    rows = seven_rounds(register=register)
     lines = [
-        "# 2014 NFL Draft: selection order (branch)",
-        "",
-        "**Generated** by `python scripts/render_draft_order.py` from the closed 2013 regular-season and postseason receipts (`runtime/draft_order.py`). Do not edit by hand.",
-        "**Rules:** `library/2014_league_calendar_and_financial_rules.md` section 4: non-playoff clubs 1-20 by winning percentage, playoff clubs 21-32 by round of elimination, ties to the lower strength of schedule, then the division or conference tiebreaker (the club that would win it picks later), then a coin flip. No real 2014 draft order is imported.",
-        "**Draft:** May 8-10, 2014, Radio City Music Hall, New York.",
-        "",
-        "## Round 1 order",
-        "",
-        "| Slot | Club | 2013 record | Strength of schedule | Group | Tie note |",
-        "|---:|---|---|---:|---|---|",
+        "# 2014 NFL Draft: all seven rounds (branch)", "",
+        "**As of:** February 2, 2014; ledger Entry 80. **Draft:** May 8–10, 2014.",
+        "**Generated** by `python scripts/render_draft_order.py` from closed branch receipts and [pick_ownership.json](pick_ownership.json). Edit the underlying dated records, then regenerate; do not edit these tables by hand.",
+        "**Coverage:** all **224 ordinary selections**, with original club and recorded owner shown separately. Compensatory selections are still pending; this is not a final 256-pick execution list.",
+        "**Rules and sources:** [verification](../../../library/2014_draft_order_verification.md), [league rules §4](../../../library/2014_league_calendar_and_financial_rules.md#4-2014-draft-order-rules-applied-to-the-branchs-2013-season). Clubs tied on winning percentage rotate within their elimination group: first goes to last, the others move up. No real 2014 order or selection is imported.", "",
+        "## Jacksonville's current draft capital", "",
+        "**Corrected Cousins deal:** Jacksonville received Kirk Cousins **and Washington's original 2014 first**; Washington received Jacksonville's original **2014 and 2015 seconds**. Jacksonville retains its own first. [Completed trade](../../2013/trades/trades.md); [controlling correction, Entry 80](../../2013/ledger.md#entry-80-cousins-trade-and-draft-capital-reconciled).",
+        "**Historical exception:** real Washington had previously conveyed its 2014 first to St. Louis. The user expressly corrected this branch asset to Jacksonville after that conflict was disclosed. St. Louis does not also own No. 13; no compensating Rams deal is invented.", "",
+        "| Round | Original club | Slot in round | Overall pick | Current owner |",
+        "|---:|---|---|---|---|",
     ]
-    for r in rows:
-        sos = ("%.3f" % r["sos"]).lstrip("0")
-        lines.append("| %d | %s | %s | %s | %s | %s |" % (r["slot"], r["club"], r["record"], sos,
-                     GROUP_LABEL[r["group"]], r["tie"] or ""))
-    jax = next(r for r in rows if r["club"] == "Jacksonville Jaguars")
-    lines += [
-        "",
-        "## Rounds 2-7",
-        "",
-        "Each later round repeats the round-1 order. Under the league rule, clubs tied in winning percentage rotate their order from round to round; the rotation detail is **Unverified** in the library (section 6), so the round-2 to round-7 order between tied clubs is unresolved until it is sourced.",
-        "",
-        "## Pending before the order is final",
-        "",
-        "- **Coin flips:** any tie marked \"coin flip pending\" above is decided by a coin flip that the league held before the draft. It is never invented; it is resolved as a recorded branch event when that date is reached.",
-        "- **Compensatory selections** (end of rounds 3-7; announced March 24, 2014, a gated date) depend on the branch's own 2014 free-agent losses and gains. No real compensatory award is imported.",
-        "- **Pick ownership:** this table orders slots by club. Trades of 2014 selections by other clubs, before or after the branch divergence (January 15, 2013), are not reconciled here and are not imported from later real records.",
-        "",
-        "## Jacksonville's 2014 selections",
-        "",
-        "| Round | Slot in round | Owner | Source |",
-        "|---:|---:|---|---|",
-        "| 1 | %d | Jacksonville | own selection |" % jax["slot"],
-        "| 2 | %d | **Washington** | the Kirk Cousins trade (`career/2013/trades/trades.md`) |" % jax["slot"],
-    ]
+    for row in rows:
+        if row["owner"] == "Jacksonville Jaguars" or row["club"] == "Jacksonville Jaguars":
+            lines.append(f'| {row["round"]} | {row["club"]} | {choices(row["slot_options"])} | {overall(row)} | **{row["owner"]}** |')
+    owned = [r for r in rows if r["owner"] == "Jacksonville Jaguars"]
+    owned_labels = "; ".join(f"**{overall(row)}**" for row in owned)
+    lines += ["", f"Jacksonville currently owns **{len(owned)} ordinary 2014 picks**: {owned_labels}. No prospect is selected by this inventory.", "",
+              "| Future asset already conveyed | Current owner | Overall pick | Authority |",
+              "|---|---|---|---|"]
+    for asset in register["transfers"]:
+        if asset["draft_year"] > 2014:
+            lines.append(f'| {asset["draft_year"]} Round {asset["round"]}, {asset["original_club"]} original | {asset["owner"]} | Unknown; future branch season | {asset["basis"]} |')
+    lines += ["", "## How to read pending fields", "",
+              "- **Coin flip:** Green Bay and Indianapolis each show two possible slots. They occupy opposite alternatives, not two picks at either slot. Their still-undrawn Round 1 coin flip controls every later rotation. Alphabetical row display decides nothing.",
+              "- **Overall offsets:** C3, C4, C5 and C6 are the unknown numbers of compensatory picks appended to those rounds. An expression is not an exact overall number. Round 3 ordinary picks precede that round's compensatory additions.",
+              "- **Owner marked †:** original allocation only. No branch transfer is recorded, but other clubs' post-divergence trade chains have not been fully reconciled. Do not treat these rows as verified tradeable holdings. Jacksonville's retained and transferred assets, and the sourced Carolina-to-San Francisco seventh, have explicit authority.",
+              "- **Execution gate:** resolve the coin flip, compensatory awards, any applicable forfeiture and ownership of the asset before using an affected row to execute a pick or trade. The branch currently records no forfeited selection.",
+              "- **Existing package A:** the verified rotation puts Seattle's original second at No. 36; Stone's frozen memo also calls it No. 37. Reconcile that intended asset before executing the offer. No Seattle trade or amended offer is recorded here.", ""]
+    for rnd in range(1, 8):
+        lines += [f"## Round {rnd}", "",
+                  "| Slot in round | Overall pick | Original club | Recorded owner | 2013 record | Note |",
+                  "|---|---|---|---|---|---|"]
+        for row in (r for r in rows if r["round"] == rnd):
+            owner = row["owner"] + (" †" if row["ownership_status"] == "provisional" else "")
+            notes = ["Coin flip pending"] if row["coin_flip_pending"] else []
+            if row["ownership_status"] == "recorded":
+                notes.append(row["basis"])
+            elif row["ownership_status"] == "retained":
+                notes.append("Retained original pick")
+            if rnd == 1:
+                notes.extend([GROUP_LABEL[row["group"]], f'SOS {row["sos"]:.3f}'])
+            note = "; ".join(notes)
+            lines.append(f'| {choices(row["slot_options"])} | {overall(row)} | {row["club"]} | {owner} | {row["record"]} | {note} |')
+        if rnd >= 3:
+            lines += ["", f"**After Round {rnd}:** compensatory selections pending the March 24 announcement and branch awards reconciliation; no recipients or count for this round assigned."]
+        lines.append("")
+    lines += ["## Pending compensatory selections", "",
+              "The 2014 awards depend on qualifying **2013 free-agent losses and signings**, not the upcoming 2014 market. The announcement gate is **March 24, 2014**. Resolve branch eligibility and awards without importing the real recipients; the private formula's exact weights are not supplied by this generator. In 2014 these picks cannot be traded.", "",
+              "| Appended after | Count | Owner / overall numbering |",
+              "|---|---|---|"]
     for rnd in range(3, 8):
-        lines.append("| %d | %d | Jacksonville | own selection |" % (rnd, jax["slot"]))
-    lines += ["", "Jacksonville's compensatory selections, if any, are pending the branch's 2014 free-agency cycle (see above).", ""]
+        lines.append(f"| Round {rnd} | C{rnd}: pending | Pending; no real award list imported |")
+    lines += ["", "The league's 32 supplemental choices are additional to the 224 ordinary allocations. Until their round distribution is reconciled, later overall pick expressions must retain their offsets. See the source verification for remaining formula and ownership gaps.", ""]
     return "\n".join(lines)
 
 

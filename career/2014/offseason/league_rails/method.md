@@ -60,7 +60,7 @@ Recorded in `retirements.md`.
 
 ## 6. Draft
 
-- **Order:** Jacksonville's order is computed from branch standings (Document 2 §12); it picks 26th in each round in 2014, and its second-round pick went to Washington for Cousins.
+- **Order:** computed from branch standings and recorded asset ownership (Document 2 §12). Use [all seven rounds](../../draft/draft_order.md) and [pick ownership](../../draft/pick_ownership.json), not a copied first-round slot. Entry 80 corrects the Cousins deal: Jacksonville owns Washington's original 2014 first (13) plus its own first (26), then its original Round 3–7 picks; Washington owns Jacksonville's 2014 second (58) and 2015 second (slot unknown). The user exception displaces St. Louis's historical claim to the Washington first. Pending compensatory offsets and coin flips must be resolved before an affected selection. Other clubs' provisional ownership is not a verified trade inventory.
 - **Other clubs:** their selections are their real selections.
 - **Availability:** a prospect is available at Jacksonville's branch overall pick N only if his real selection was pick N or later, or he went undrafted, and Jacksonville has not already taken him.
 - **Swaps:** Jacksonville's k-th selection pairs with the real Jaguars' k-th selection.

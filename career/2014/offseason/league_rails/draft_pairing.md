@@ -1,6 +1,6 @@
 # 2014 draft pairing
 
-Filled at the draft (method §6). Jacksonville picks 26th in each round; its second-round pick belongs to Washington (the Cousins trade).
+Filled at the draft (method §6), not before May 8–10. Current [seven-round order](../../draft/draft_order.md) and [ownership register](../../draft/pick_ownership.json) control. Entry 80 gives Jacksonville first-round picks **13 (Washington origin) and 26 (own)**, then its own Round 3–7 selections. Washington owns Jacksonville's original 2014 and 2015 seconds. If this inventory is unchanged, the first-round picks are Jacksonville selections **k=1 and k=2**; Round 3 is k=3. Pair by actual selection sequence, never by round or the old one-first inventory. Resolve compensatory offsets and any new trades before assigning branch overall numbers. No prospect, real destination or swap is filled early.
 
 | Jacksonville selection (k) | Branch overall pick | Player | His real overall pick (must be at or after the branch pick, or undrafted) | His real club | Real Jaguars' k-th selection | Goes to | Depth slot |
 |---|---|---|---|---|---|---|---|
