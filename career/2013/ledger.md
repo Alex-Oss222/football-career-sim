@@ -2328,3 +2328,34 @@ The draw weights are a modelling choice and can be changed until the first draw.
 **State.** Updated in the same commit: `career/2013/roster.md`, Document 4, Document 5, and `retirements.md`.
 
 **Commit closed - Canonical update - February 2, 2014 - Meester retired; Allen retirement scheduled (league rails) - canonical through February 2, 2014**
+
+## Entry 80: Cousins trade and draft capital reconciled
+
+**Effective canonical state:** February 2, 2014 (no clock advance).
+**Recorded:** September 28, 2026 (user's Eastern date; September 29 UTC).
+**Checkpoint:** `Canonical correction - February 2, 2014 - Cousins trade and draft capital reconciled`
+**Preceding global package checkpoint:** `Canonical update - February 2, 2014 - Meester retired; Allen retirement scheduled (league rails)`
+
+**Controlling authority: explicit user correction.** The user clarified the original Cousins trade: Jacksonville sent its **2014 second and 2015 second**; Washington sent **Kirk Cousins and its original 2014 first**. This corrects the recorded compensation of the already-completed pre-draft 2013 trade. It is not a new negotiation, market draw, or transaction on February 2. Its exact original execution date remains unrecorded.
+
+**Superseded claims.** Entry 5 and the prior completed-trade views recorded Cousins for Jacksonville's 2014 second alone. Entry 68's draft inventory omitted Washington's first. Those historical entries and the ex-ante authorization/recommendations remain intact; this correction controls current ownership. No revised offer, valuation, consultation, or acceptance dialogue is invented to make the earlier negotiation support the corrected terms.
+
+| Stable asset | Correct current owner | Effect |
+|---|---|---|
+| Kirk Cousins | Jacksonville | Player control unchanged |
+| Washington original 2014 Round 1 | Jacksonville | Branch overall No. 13 |
+| Jacksonville original 2014 Round 1 | Jacksonville | Retained; branch overall No. 26 |
+| Jacksonville original 2014 Round 2 | Washington | Branch overall No. 58; unconditional |
+| Jacksonville original 2015 Round 2 | Washington | Unconditional; slot depends on the branch's 2014 season and is not known |
+
+**Historical ownership exception, limited to this asset.** Washington had really transferred its 2014 first to St. Louis in the 2012 RGIII transaction, before branch divergence. This conflict was disclosed before the user's clarification. The user's corrected deal expressly controls the branch's Washington-origin 2014 first: Jacksonville owns it and St. Louis does not. This is a user-directed alternate-history ownership exception, not a claim that real Washington still owned the pick. No compensating Rams asset, rescission of the rest of the RGIII deal, or extra trade is invented. The source comparison and scope live in `library/2014_draft_order_verification.md`.
+
+**Seven-round order.** All 224 ordinary slots are derived from the closed branch receipts. Equal-record clubs rotate within their elimination group, with the first club moving to the bottom each round. The Green Bay/Indianapolis coin flip stays unresolved in every affected round. Original club and recorded owner are separate. The verified pre-divergence Carolina 2014 seventh conveyed to San Francisco is carried forward; other clubs' unrecorded post-divergence transfers are not silently imported. Default original allocations are explicitly provisional for those clubs.
+
+**Compensatory picks.** March 24 remains the announcement gate. Awards use **2013**, not 2014, qualifying free-agent activity. No real recipients or round counts are imported. Later overall numbers include explicit unknown compensatory offsets; no pending count is treated as zero. No forfeiture is recorded in the branch; a future recorded forfeiture needs reconciliation before the order can execute.
+
+**Dependent records.** Completed trade views, the machine-readable pick register, generated seven-round order, 2014 index/calendar, rails order/pairing pointers and Documents 4/5 now agree. Documents 4/5 advance together to register 37 / state 56. Historical interview/review cost summaries remain dated evidence superseded by this entry. The user-authored draft board and trade offers are preserved: an extra first-round asset does not choose a prospect, and Seattle's own second now computes to No. 36 rather than the memo's No. 37; the precise intended asset must be reconciled before package A executes. No receiver trade is booked.
+
+**Unchanged.** All seven exercised 2013 picks, player control, roles, contracts, cap charges, medical status, statistics, results, staff and the simulation clock. The existing Meester retirement leaves 52 active and 53 controlled, plus eight practice-squad players; stale active-count headers are reconciled to Entry 79 without a new roster event. The private snapshot must be advanced to the merged correction before any next simulated event; no private snapshot is advanced by this PR.
+
+**Commit closed - Canonical correction - February 2, 2014 - Cousins trade and draft capital reconciled - canonical through February 2, 2014**

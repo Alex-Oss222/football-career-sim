@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "as_of": "2014-02-02",
+  "authority": "career/2013/ledger.md#entry-80-cousins-trade-and-draft-capital-reconciled",
+  "default_ownership": "Original allocation only; other clubs' unrecorded post-divergence transfers remain unreconciled. Jacksonville's retained ordinary picks are confirmed by Entry 80.",
+  "compensatory": {
+    "status": "pending",
+    "announcement_date": "2014-03-24",
+    "qualifying_free_agency_year": 2013,
+    "round_counts": null
+  },
+  "transfers": [
+    {
+      "draft_year": 2014,
+      "round": 1,
+      "original_club": "Washington Redskins",
+      "owner": "Jacksonville Jaguars",
+      "basis": "User-corrected Cousins trade; ledger Entry 80",
+      "source": "career/2013/trades/trades.md",
+      "superseded_historical_owner": "St. Louis Rams",
+      "exception": "User-directed ownership exception for this asset only. Historical 2012 Rams claim disclosed and overridden; no compensating transaction invented."
+    },
+    {
+      "draft_year": 2014,
+      "round": 2,
+      "original_club": "Jacksonville Jaguars",
+      "owner": "Washington Redskins",
+      "basis": "User-corrected Cousins trade; ledger Entry 80",
+      "source": "career/2013/trades/trades.md"
+    },
+    {
+      "draft_year": 2015,
+      "round": 2,
+      "original_club": "Jacksonville Jaguars",
+      "owner": "Washington Redskins",
+      "basis": "User-corrected Cousins trade; ledger Entry 80; unconditional, slot unknown",
+      "source": "career/2013/trades/trades.md"
+    },
+    {
+      "draft_year": 2014,
+      "round": 7,
+      "original_club": "Carolina Panthers",
+      "owner": "San Francisco 49ers",
+      "basis": "Pre-divergence Colin Jones trade, reported August 31, 2012",
+      "source": "library/2014_draft_order_verification.md"
+    }
+  ]
+}
