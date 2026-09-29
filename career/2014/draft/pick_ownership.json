@@ -1,13 +1,23 @@
 {
   "schema_version": 2,
-  "as_of": "2014-03-20",
+  "as_of": "2014-03-24",
   "authority": "career/2013/ledger.md#entry-81-draft-coin-flip-and-league-pick-ownership-reconciled",
   "default_ownership": "Retained original allocation after the 224-asset audit in ownership_audit.md; explicit transfers and conditional claims override it. No generic outside-club provisional holdings remain for 2014.",
   "compensatory": {
-    "status": "pending",
+    "status": "announced",
     "announcement_date": "2014-03-24",
     "qualifying_free_agency_year": 2013,
-    "round_counts": null
+    "round_counts": {
+      "3": 12,
+      "4": 6,
+      "5": 6,
+      "6": 5,
+      "7": 3
+    },
+    "awards": "compensatory/awards.json",
+    "method": "compensatory/method.json",
+    "tradeable": false,
+    "basis": "Branch method adopted in ledger Entry 100; no real award list imported"
   },
   "transfers": [
     {

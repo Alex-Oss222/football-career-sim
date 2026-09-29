@@ -6,7 +6,7 @@
 **Practice squad:** **0** (no 2014 practice squad exists before the regular season). **Reserve/future contracts:** the six signed February 3 and 5, 2014 (ledger Entry 85) are now effective and listed in section 3.
 **Record:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-1 (AFC Wild Card: Jacksonville 38, Kansas City 14; AFC Divisional: Tennessee 20, Jacksonville 13).
 
-<!-- player-ages-as-of: 2014-03-20 -->
+<!-- player-ages-as-of: 2014-03-24 -->
 
 Birth dates are sourced in the [identity registry](../../library/data/player_birth_dates.json). **Age** is completed years at the master date in Document 5; [league ages](player_ages.md) update through the same renderer.
 
@@ -143,7 +143,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | --- | --- | --- | ---: | --- | --- | --- |
 | Josh Scobee | K | 1982-06-23 | 31 | Offseason roster | No communicated restriction | K |
 | Bryan Anger | P | 1988-10-06 | 25 | Offseason roster | No communicated restriction | P |
-| Jeremy Cain | LS | 1980-03-24 | 33 | Offseason roster (re-signed March 19, 2014) | No communicated restriction | LS (2013 incumbent; camp competition planned) |
+| Jeremy Cain | LS | 1980-03-24 | 34 | Offseason roster (re-signed March 19, 2014) | No communicated restriction | LS (2013 incumbent; camp competition planned) |
 
 ## 4. Reserve/future contracts (2014) and the 2013 practice squad
 

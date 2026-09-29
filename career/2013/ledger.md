@@ -2863,3 +2863,26 @@ Atomic closure: contract register/table, futures outcomes, working depth-chart c
 **Atomic closure.** Both negotiation records, the signings record, completed-trades record, offer log, targets and README, pick ownership and draft order, draft board, contract table, financial inputs and generated tracker, worksheet, roster, working depth chart and its JSON copy, the Arizona and Chicago rails pages, calendar and Documents 4 (register 53) and 5 (state 74) agree. The private snapshot is advanced only after merge.
 
 **Commit closed - Canonical update - March 20, 2014 - Cain re-signed; Nwaneri traded to Arizona for No. 38 - canonical through March 20, 2014**
+
+## Entry 100: 2014 compensatory picks announced (March 24)
+
+**Effective canonical state:** March 24, 2014.
+**Recorded:** September 29, 2026
+**Checkpoint:** `Canonical update - March 24, 2014 - Compensatory picks announced`
+**Preceding global package checkpoint:** `Canonical update - March 20, 2014 - Cain re-signed; Nwaneri traded to Arizona for No. 38`
+
+**Authority.** The user asked for the clock to run to March 24 and for the compensatory picks to be announced. The league formula's weights are unpublished and the real award list may not be imported (library/2014_draft_order_verification.md). The branch therefore adopted its own [method](../2014/draft/compensatory/method.json) before computing any award. It keeps the public rules: qualifying 2013 unrestricted free agents lost and signed, net loss only, at most four picks per club, rounds 3 to 7, 32 in total, not tradeable in 2014. Round value comes from each new contract's average per year, raised one round for a branch 2013 Pro Bowl or All-Pro selection and lowered one round for fewer than eight branch games. Inputs: [recorded 2013 moves](../2014/draft/compensatory/inputs.json), with Over The Cap contract values via nflverse for other clubs and Jacksonville's own branch contracts. The branch 2013 receipts and honours supply the adjustments. The resolution is deterministic: no draw. Event owner: [announcement](../2014/draft/compensatory/announcement.md) and [awards receipt](../2014/draft/compensatory/awards.json).
+
+**Awards.** 29 formula picks and 3 fill picks: 12 after Round 3 (Nos. 97 to 108), 6 after Round 4 (141 to 146), 6 after Round 5 (179 to 184), 5 after Round 6 (217 to 221) and 3 fill picks after Round 7 (254 to 256, to San Francisco, Baltimore and Cincinnati in branch first-round order). Pittsburgh (Wallace, Lewis, Mendenhall), Baltimore (Kruger, Ellerbe, Cary Williams, plus a fill pick), Houston, the Jets, New England and Cincinnati receive three or more. The full list is in the announcement.
+
+**Jacksonville.** No compensatory pick. Its valued 2013 losses were Derek Cox (San Diego) and Terrance Knighton (Denver). Its four branch signings, Brent Grimes, Roy Miller, Sen'Derrick Marks and Alan Ball, cancel both, a net gain of two. Its own picks keep their slots; their overall numbers become **134** (Round 4), **157** (Detroit's fifth) and **172** (Round 5), **210** (Round 6) and **247** (Round 7). Nos. 13, 26, 38 and 90 are unchanged. No contract, cap figure or roster fact changes.
+
+**Other March 21 to 24 items.** The League Meeting opens March 23; rules it adopts apply from their effective dates. Stone's offseason-program schedule choice, recommended internally for March 24 in the [phase-plan decisions](../2014/offseason/phase_plan_decisions.md), is **due and not made**: it is Stone's choice, and the filing limit is March 31 for an April 21 start. Miami has not answered package D. Nwaneri's March 25 roster bonus is Arizona's.
+
+**Correction carried.** The draft board now reflects package I as the memo directed when it closed (Entry 99): No. 38 Davante Adams, No. 26 Joel Bitonio, then Kyle Van Noy.
+
+**Limits.** Contract values are reconstructions, not certified league figures. 177 club changes do not qualify or could not be valued; most unvalued ones are near-minimum deals missing from the source. The post-draft signing deadline is not applied. The rails from March 11 evening to March 24 remain unswept beyond the targets' own moves.
+
+**Atomic closure.** The method, inputs, awards and announcement, pick ownership and draft order, draft board, financial inputs and generated tracker, calendar and Documents 4 (register 54) and 5 (state 75) agree. The private snapshot is advanced only after merge.
+
+**Commit closed - Canonical update - March 24, 2014 - Compensatory picks announced - canonical through March 24, 2014**

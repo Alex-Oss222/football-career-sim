@@ -58,7 +58,7 @@ class CapTrackerTests(unittest.TestCase):
         validate(self.data)
         self.assertEqual(totals(self.data['players'], ['2014'])[0],
                          before + former['years']['2014']['cap'])
-        former['departure_date'] = '2014-03-21'
+        former['departure_date'] = '2014-03-25'
         with self.assertRaisesRegex(ValueError, 'future departure'):
             validate(self.data)
 

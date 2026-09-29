@@ -1,0 +1,49 @@
+{
+ "schema_version": 1,
+ "title": "Branch 2014 compensatory-pick method",
+ "adopted": "2026-09-29, ledger Entry 100, before any award was computed",
+ "status": "Branch simulation substitute for the NFL Management Council formula, whose weights are unpublished. Not the league's formula and not a recovered historical award.",
+ "public_rules_applied": [
+  "Awards rest on qualifying unrestricted free agents lost and signed in the 2013 league year (Steelers.com, March 24, 2014; library/2014_draft_order_verification.md).",
+  "A club receives picks only for a net loss of qualifying free agents, at most four (library/2014_league_calendar_and_financial_rules.md D6).",
+  "Picks follow rounds 3 to 7; there are 32 in total; they cannot be traded in the 2014 draft (D6).",
+  "Value reflects salary, playing time and postseason honours (D6)."
+ ],
+ "qualification": {
+  "unrestricted": "At least four accrued seasons after 2012, and a prior contract with his final 2012 club that ended in 2012 or earlier.",
+  "not_qualifying": "Released or traded players (prior contract running past 2012), re-signings, restricted and exclusive-rights players.",
+  "branch_club": "His new club is his branch 2013 club: the 2013 Week 1 chart for other clubs, the branch contract for Jacksonville. A real signing the branch never made does not count.",
+  "valuation_floor_apy": 1000000,
+  "unvalued_movers": "A mover whose 2013 contract is absent from the source is listed as unvalued and not counted. Almost all such deals are near the minimum."
+ },
+ "valuation": {
+  "salary": "Average per year (APY) of the new 2013 contract.",
+  "apy_round_bands": [
+   {"round": 3, "min_apy": 6000000},
+   {"round": 4, "min_apy": 3500000},
+   {"round": 5, "min_apy": 2000000},
+   {"round": 6, "min_apy": 1400000},
+   {"round": 7, "min_apy": 1000000}
+  ],
+  "honours": "A branch 2013 Pro Bowl selection or first- or second-team All-Pro raises his value one round, no higher than Round 3.",
+  "playing_time": "Fewer than 8 branch 2013 games (regular season plus postseason) for his new club lowers his value one round, no lower than Round 7.",
+  "within_round_order": "Higher APY first; ties by the club's branch 2014 first-round slot."
+ },
+ "cancellation": [
+  "Each club's gained free agents are applied from most to least valuable.",
+  "A gain cancels the most valuable remaining loss in the same round.",
+  "If none, it cancels the most valuable remaining loss in a lower round.",
+  "If none, it cancels the least valuable remaining loss in a higher round.",
+  "Uncancelled losses become picks, at most four per club, most valuable first."
+ ],
+ "league_total": {
+  "target": 32,
+  "above_target": "Drop the lowest-valued formula picks until 32 remain.",
+  "below_target": "Add Round 7 picks after the formula's Round 7 picks, one per club, in branch 2014 first-round order starting from slot 1, until 32. The real fill mechanism is unverified (D7); this ordering is the branch rule."
+ },
+ "known_limits": [
+  "The source's contract values are Over The Cap reconstructions, not certified league figures.",
+  "Signing dates are not in the source, so the league's post-draft signing deadline is not applied.",
+  "Contract term is read from the source; an extension recorded with only its new years can misstate an expiry year."
+ ]
+}
