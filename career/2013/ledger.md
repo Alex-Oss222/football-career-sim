@@ -2399,3 +2399,54 @@ The draw weights are a modelling choice and can be changed until the first draw.
 **Atomic closure.** Register 39 / state 58 replace register 38 / state 57. The live records and finance owner remain at their documented paths until a future audited 2014 activation. Earlier ledger entries, game receipts, statistics, ownership, actual contracts, staff appointments, roles and medical instructions remain unchanged. The clock is still February 2. No private snapshot is advanced from this branch; binding to the merged correction remains required before the next simulated event.
 
 **Commit closed - Canonical correction - February 2, 2014 - 2014 operating handoff and readiness reconciled - canonical through February 2, 2014**
+
+
+## Entry 83: February 2014 coaching exposure resolved (retroactive; no departures)
+
+**Effective canonical state:** February 2, 2014 (no clock advance); events dated January 12 to February 17, 2014.
+**Recorded:** September 29, 2026
+**Checkpoint:** `Canonical update - February 2, 2014 - February 2014 coaching exposure resolved (no departures)`
+**Preceding global package checkpoint:** `Canonical correction - February 2, 2014 - 2014 operating handoff and readiness reconciled`
+
+**Authority.** Entry 75 declared a deferred procedure for Buffalo's and Minnesota's post-Super Bowl head-coach decisions. On September 29, 2026 the user asked, before any advance to February 17, for every resolvable poaching risk to Jacksonville's staff to be assessed, including coordinator openings at clubs that kept their head coach, which Entry 75 left unmodelled. The rules are `library/2014_coaching_hiring_and_anti_tampering_rules.md` section 8, as in Entry 75.
+
+**Method, fixed before the draw.** `career/2014/offseason/staff_changes/carousel_deferred_method.json` was committed in b8812d2 before the draw, with `scripts/coaching_carousel_deferred.py`. Stage D1 used each Super Bowl club's recorded Entry 75 base-rate cell. Stage D2 used the sourced January 2013 cycle (`2013_retained_club_coordinator_turnover.md`, research and verification passes): 24 clubs that kept their head coach opened 5 offensive and 4 defensive coordinator jobs, and only 2 of 17 coordinator openings went to another club's sitting position coach. Every probability reads the job, the coach's role and record, the clubs' records and the calendar only; the same method for any employer gives the same probabilities. One private packet (event `2014-coaching-carousel-deferred-v1`, packet `27f11087`, result reference `20275e99`) drew every value in fixed structural order.
+
+**Head coaches.** Buffalo kept Doug Marrone (change probability 4.2 percent, not drawn). Minnesota changed head coach (probability 2.5 percent, drawn); the vacancy opened February 3 and an external candidate was hired February 17. No real 2014 hire is imported and the new coach is not named.
+
+**Coordinator openings.** Ten opened at clubs that kept their head coach: Chicago offense and defense (decided February 9), Cleveland offense (January 17), Dallas defense (February 9), Kansas City defense (January 18), New York Giants offense (January 17), New York Jets defense (January 18), Oakland offense (February 9) and defense (February 12) and Tennessee offense (January 18). Each could reach Jacksonville's staff.
+
+**Requests for Jacksonville assistants.**
+- **Frank Bush, Chicago defensive coordinator:** requested February 6; permission granted under Jacksonville's default policy (lateral under the 2013 rules but a step up in title); interviewed February 6; no offer. Chicago's February 9 decision went to another candidate. Bush stays.
+- **Jeremy Bates, Minnesota quarterbacks coach:** requested February 17 by the new staff; refused as a move to the same job elsewhere (rule T3, default policy).
+- **Mike Tice, Minnesota offensive coordinator:** requested February 17; refused on the same basis.
+
+No other club asked for a Jacksonville assistant, and none left. Nothing was pending at February 17. Alan Lowry, already gone (Entry 75), was not a candidate.
+
+**Atomic closure.** `requests_and_outcomes.md` (February section generated from `carousel_deferred_results.json`), the staff timeline and README, the staff register's Bush note, the 2014 calendar and Documents 4 and 5 now carry these outcomes. No contract, role, player, pick, cap figure or game record changes. The clock is still February 2, 2014.
+
+**Commit closed - Canonical update - February 2, 2014 - February 2014 coaching exposure resolved (no departures) - canonical through February 2, 2014**
+
+
+## Entry 84: Special teams coordinator hired (Mike Westhoff, February 11, 2014)
+
+**Effective canonical state:** February 2, 2014 (no clock advance); events dated February 3 to February 11, 2014.
+**Recorded:** September 29, 2026
+**Checkpoint:** `Canonical update - February 2, 2014 - Special teams coordinator search resolved (Westhoff hired February 11)`
+**Preceding global package checkpoint:** `Canonical update - February 2, 2014 - February 2014 coaching exposure resolved (no departures)`
+
+**Authority.** Stone selected Bobby April on September 28, 2026 at a $700,000 opening and $800,000 ceiling (`career/2014/offseason/staff_changes/staff_plan.md`). On September 29, 2026 the user added the fallback order: Mike Westhoff, then Bruce DeHaven, each at a $625,000 opening and $750,000 ceiling on the common terms. Stone hires his own assistants within the funded staff budget (Document 3, authority row 2).
+
+**Method, fixed before the draw.** `st_search_method.json` was committed in 10ba5f7 before the draw, with `scripts/st_coordinator_search.py`. One private packet (event `2014-st-coordinator-search-v1`, packet `599bb86f`, result reference `3ab39549`) drew in fixed order whatever the path. Each probability reads only the coach's employment status, the job and the calendar.
+
+**April.** His January 2013 Oakland deal is treated as expiring after 2013, a labelled inference from ESPN's January 2014 report that assistants were offered one-year deals. Whether Oakland re-signed him before Jacksonville's approach was drawn at 13/16 = 0.8125, the retention rate of the other Oakland assistants whose decisions ESPN reported (his own outcome excluded): **re-signed**. Jacksonville requested permission on February 3; the lateral move (rule T3) was refused on February 4 under the symmetric default policy that applies to every club. He was not interviewed.
+
+**Westhoff.** Retired from the Jets on December 30, 2012 and a 2013 media analyst, he was under no NFL contract, so no permission was needed. Contacted February 5. His willingness to return was drawn at a labelled 0.25 (no base rate was found; his one pre-cutoff statement left the door open): **willing**, February 7. Interviewed February 10. On February 11 Caldwell confirmed the allocation within the plan's ceiling, Jacksonville offered $625,000 a season, Westhoff countered for the ceiling, and the counter was met under Stone's instruction.
+
+**Appointment.** Mike Westhoff is special teams coordinator effective **February 11, 2014**: **$750,000 a season for 2014 and 2015**, equal salaries, no signing bonus, first season guaranteed subject to offset, second season non-guaranteed, no added title, roster power or authority. DeHaven was not approached. Westhoff runs the kicking game (the role in `career/2013/coaching_staff.md` section 6) and reports to Stone, who keeps team priorities and consequential game management. Stone's interim special-teams direction (Entry 75) ends February 11. Existing player unit assignments stand until changed through the ordinary process. Emergency succession for a caller remains unassigned.
+
+**Money.** Scheduled 2014 assistant salary becomes **$7,700,000** for twelve coaches ($6,950,000 plus $750,000); 2015 becomes $3,650,000 ($2,900,000 plus $750,000). Assistant pay is a club operating expense outside the player salary cap. Caldwell's confirmation covers this allocation only; no numeric staff-budget ceiling is established.
+
+**Atomic closure.** `hires.md` (dated stages and the completed appointment), the staff timeline and README, the staff register (status, delegation, contract row, changes after execution, section 6), Document 3 (section 4, row 14, section 6.1, document control), Document 4 (register 40 replaces 39), Document 5 (state 59 at Entry 83, then 60 here, replacing 58), the 2014 calendar, README, readiness, operating baseline and the current-fact lines of the training plans now agree. Planning records keep their ex-ante content. No player, pick, cap or game record changes. The clock is still February 2, 2014; a later entry advances it to February 17. The private snapshot is not advanced from this branch.
+
+**Commit closed - Canonical update - February 2, 2014 - Special teams coordinator search resolved (Westhoff hired February 11) - canonical through February 2, 2014**

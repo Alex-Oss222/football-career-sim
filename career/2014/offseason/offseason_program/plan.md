@@ -191,7 +191,7 @@ The January 31 deliveries remain **unverified/open**, not delivered and not prov
 | Yarno and Tice | Offensive-line cutups and Brewster's unclosed protection-call feedback | Assignment-based film review, not the defective 2013 sacks-allowed allocation |
 | Bates with Skalaski, under Tice | Cousins's ball-security/protection review and Boot Flood analysis | Cause-separated film; the Boot Flood decision belongs in the OTA proposal |
 | Zernhelt under Tice | Kelce's unreturned blocking/release feedback | Specific taught assignment and observed rep |
-| Stone until a coordinator is hired | Specialist operation and coverage/call separation | Separate snap, hold, punt/kick, coverage and situational instruction |
+| Mike Westhoff (special teams coordinator from February 11, Entry 84) | Specialist operation and coverage/call separation | Separate snap, hold, punt/kick, coverage and situational instruction |
 
 Caldwell's office must verify the unresolved pre-April 21 film/contact rule before player delivery or football meetings. Coaches may prepare and audit material internally without claiming player participation. No arbitrary new delivery date is treated as a CBA permission.
 

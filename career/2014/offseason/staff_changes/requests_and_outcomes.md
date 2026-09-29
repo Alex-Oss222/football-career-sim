@@ -64,3 +64,45 @@ The Super Bowl clubs (Buffalo Bills and Minnesota Vikings) decide after February
 ## Interviewed, not hired
 
 - **Frank Bush** interviewed with Indianapolis Colts (defensive coordinator) on 2014-01-14 and was not offered the job; the club hired another candidate by February 2. He stays under contract with Jacksonville.
+
+## February 2014: the deferred procedure
+
+Generated from `carousel_deferred_results.json` (Entry 83). Method: [carousel_deferred_method.json](carousel_deferred_method.json); 2013 base rate: [2013_retained_club_coordinator_turnover.md](2013_retained_club_coordinator_turnover.md). Window: January 12 to February 17, 2014.
+
+### Super Bowl clubs
+
+| Club | Coach | Cell | Chance | Result | Hire |
+|---|---|---|--:|---|---|
+| Buffalo Bills | Doug Marrone | playoffs, 1st season | 4.2% | kept |  |
+| Minnesota Vikings | Leslie Frazier | playoffs, 2nd-3rd | 2.5% | changed | 2014-02-17 |
+
+### Coordinator openings at clubs that kept their head coach
+
+| Club | Job | Decided | Could reach Jacksonville |
+|---|---|---|---|
+| Chicago Bears | offensive coordinator | 2014-02-09 | yes |
+| Chicago Bears | defensive coordinator | 2014-02-09 | yes |
+| Cleveland Browns | offensive coordinator | 2014-01-17 | yes |
+| Dallas Cowboys | defensive coordinator | 2014-02-09 | yes |
+| Kansas City Chiefs | defensive coordinator | 2014-01-18 | yes |
+| New York Giants | offensive coordinator | 2014-01-17 | yes |
+| New York Jets | defensive coordinator | 2014-01-18 | yes |
+| Oakland Raiders | offensive coordinator | 2014-02-09 | yes |
+| Oakland Raiders | defensive coordinator | 2014-02-12 | yes |
+| Tennessee Titans | offensive coordinator | 2014-01-18 | yes |
+
+### Requests for Jacksonville's assistants
+
+| Date | Club | Coach | Job | Event | Detail |
+|---|---|---|---|---|---|
+| 2014-02-06 | Chicago Bears | Frank Bush | defensive coordinator | request | probability 0.0947 |
+| 2014-02-06 | Chicago Bears | Frank Bush | defensive coordinator | permission granted | lateral under the 2013 rules (T3) but a step up in title; Jacksonville's default policy grants it |
+| 2014-02-06 | Chicago Bears | Frank Bush | defensive coordinator | interview |  |
+| 2014-02-17 | Minnesota Vikings | Jeremy Bates | quarterbacks | request | probability 0.0300 |
+| 2014-02-17 | Minnesota Vikings | Jeremy Bates | quarterbacks | permission refused | lateral (rule T3); Jacksonville's default policy refuses a move to the same job elsewhere |
+| 2014-02-17 | Minnesota Vikings | Mike Tice | offensive coordinator | request | probability 0.0253 |
+| 2014-02-17 | Minnesota Vikings | Mike Tice | offensive coordinator | permission refused | lateral (rule T3); Jacksonville's default policy refuses a move to the same job elsewhere |
+
+### Departures
+
+No Jacksonville assistant left in this window.

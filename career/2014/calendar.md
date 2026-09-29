@@ -10,9 +10,9 @@
 
 ## Current checkpoint
 
-- **Master date:** February 2, 2014, after Super Bowl XLVIII (2013 season complete; latest closed Entry 81, draft coin flip and league ownership reconciled; Entry 80, Cousins compensation corrected; Entry 79, Meester retired and Allen retirement scheduled; league rails Entry 78; staff reconciliation Entry 77; exit interviews Entry 76).
+- **Master date:** February 2, 2014, after Super Bowl XLVIII (2013 season complete; latest closed Entry 84, Mike Westhoff hired as special teams coordinator effective February 11; Entry 83, February coaching exposure resolved with no departures; Entry 82, operating handoff; Entry 81, draft coin flip and league ownership reconciled; Entry 80, Cousins compensation corrected; Entry 79, Meester retired and Allen retirement scheduled; league rails Entry 78; staff reconciliation Entry 77; exit interviews Entry 76).
 - **Jacksonville:** 2013 finished 10-6, 1-1 postseason. 52 active, Brad Meester on Reserve/Retired and 8 on the practice squad. `career/2013/roster.md` remains the controlled-roster owner.
-- **Planning prepared:** the five phase plans retain the 2013 methods. The [training and individual-film workflow](offseason/README.md), including the living assessment of Cousins and every player, is authorized; other marked choices remain pending. Bobby April is selected for the search at the recorded terms, with employment/permission and acceptance unresolved. No phase or hiring event has run.
+- **Planning prepared:** the five phase plans retain the 2013 methods. The [training and individual-film workflow](offseason/README.md), including the living assessment of Cousins and every player, is authorized; other marked choices remain pending. The special-teams search closed with Mike Westhoff's February 11 appointment (Entry 84), resolved retroactively without advancing the clock. No phase has run.
 - **Next league events:** franchise and transition window February 17; Combine February 19-25; the 2014 league year opens March 11, 4:00 p.m. ET.
 
 ## Coaching staff timeline
@@ -25,8 +25,10 @@
 | January 12 | Lowry accepted Atlanta's head-coach job; special teams coordinator became vacant and Stone assumed interim direction | Complete | [Departure record](offseason/staff_changes/requests_and_outcomes.md#departures), Entry 75 |
 | January 12 | Atlanta requested Frank Bush for linebackers; Jacksonville refused permission | Complete | [Timeline](offseason/staff_changes/timeline.md#dated-events), Entry 75 |
 | January 14; outcome known by February 2 | Bush interviewed for Indianapolis defensive coordinator and was not hired; he stays with Jacksonville | Complete | [Outcome](offseason/staff_changes/requests_and_outcomes.md#interviewed-not-hired), Entry 75 |
-| Current vacancy from January 12 | Select and pursue a replacement special teams coordinator | Open; Bobby April selected for the search; no offer communicated or appointment recorded | [Plan](offseason/staff_changes/staff_plan.md), [hiring record](offseason/staff_changes/hires.md) |
-| After February 2, when the clock advances | Deferred Buffalo and Minnesota coaching decisions and any resulting Jacksonville requests | Future; not resolved | [Open items](offseason/staff_changes/timeline.md#still-open) |
+| February 3-4 | Jacksonville requested Bobby April (re-signed by Oakland); Oakland refused the lateral request on February 4 | Complete | [Hiring record](offseason/staff_changes/hires.md), Entry 84 |
+| February 6; Chicago decided February 9 | Chicago requested and interviewed Frank Bush for defensive coordinator with Jacksonville's permission; no offer; he stays | Complete | [February record](offseason/staff_changes/requests_and_outcomes.md#february-2014-the-deferred-procedure), Entry 83 |
+| February 5-11 | Mike Westhoff contacted, interviewed February 10 and hired February 11 at $750,000 a season for 2014-2015; Stone's interim special-teams direction ends | Complete | [Hiring record](offseason/staff_changes/hires.md), Entry 84 |
+| February 17 | Minnesota, after changing head coach, requested Jeremy Bates (quarterbacks) and Mike Tice (offensive coordinator); both refused as lateral | Complete | [February record](offseason/staff_changes/requests_and_outcomes.md#february-2014-the-deferred-procedure), Entry 83 |
 
 ## January through March: close, staff, contracts and acquisition
 
@@ -39,7 +41,7 @@
 | Jan. 31 commitments, reviewed from Feb. 2 | Reconcile individual film promises: prepared, actually delivered, acknowledged and reviewed are separate facts | Open; [61-player queue](offseason/film/player_queue.md); historical receipts unverified |
 | Feb. 2 | Closed Super Bowl XLVIII; Entry 80 corrects the earlier Cousins deal: JAX holds Washington's first (13) plus its own (26); Washington holds JAX's 2014/2015 seconds | Entry 81 resolves IND/GB and restores Detroit fifth to JAX; eight ordinary picks. Administrative correction, no clock advance; [seven-round order](draft/draft_order.md); player assessments prepared |
 | Feb. 3 | 2014 waiver system begins | Future; Caldwell, source A/B |
-| From Feb. 3, next staff checkpoint | Pursue Bobby April through the recorded employment/permission process and offer limits; Stone continues interim ST work | Proposed execution; [staff plan](offseason/staff_changes/staff_plan.md), no appointment |
+| Feb. 3-11 | Special teams coordinator search: April refused by Oakland February 4; Mike Westhoff hired February 11 | Complete; Entry 84; [hiring record](offseason/staff_changes/hires.md) |
 | Feb. 17 | Franchise/transition designation window opens; apply Stone's February 2 memo | Future; Caldwell |
 | Feb. 19–25 | Combine, Indianapolis; enter only newly public scouting evidence | Future; [draft gates](../../library/2014_draft_information_gates.md) |
 | Feb. 28 | Cap and tag figures become public | Gated Feb. 28; original calendar research F1 |

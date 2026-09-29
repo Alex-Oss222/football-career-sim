@@ -9,7 +9,7 @@
 | Defensive player caller and backup | Authorized candidates; recognition and clear shared communication on the taught calls; coordinator's feedback | Crennel's coordinator play-calling authority is separate from the player relaying a call; no new caller appointed here |
 | Linebacker coverage during medical recovery/departure | Actual Posluszny clearance and limits, Allen's control/retirement status, eligible depth and current assignments | Medical projection is not clearance; no reliance on Allen after the April 22 retirement rail applies |
 | Secondary combinations and reserve roles | Current personnel, actual taught leverage/communication, paired-route evidence and repeat opportunities | Verner/Talib/Gaines/Butler remain targets until acquired; real future NFL performance is not an input |
-| Specialists, returners and coverage backups | Actual punt policy, staff appointment, assignment clarity and legal game/practice evidence | Bobby April's search selection is not a hire; Stone covers special teams until an appointment closes |
+| Specialists, returners and coverage backups | Actual punt policy, staff appointment, assignment clarity and legal game/practice evidence | Mike Westhoff is special teams coordinator from February 11 (Entry 84); Stone keeps consequential game management |
 
 These are questions from existing plans, not a new promised competition or mandatory rep quota. At a review, link source observations and contradictory evidence, available support/opposition, medical restrictions and meaningful opportunities for reserves. Invite player perspective when permitted. A shared-rule problem is not automatically an individual failure.
 

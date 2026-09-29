@@ -1,6 +1,6 @@
 # 2014 operating baseline and handoffs
 
-**Prepared at the unchanged February 2, 2014 checkpoint; administratively reconciled through Entry 82.** This is the 2014 working structure for the offseason and eventual season. No tag, offer, signing, trade, training phase, draft selection or game is completed by preparing it. The next checkpoint is February 3 for waivers and staff work; the tag window follows February 17.
+**Prepared at the unchanged February 2, 2014 checkpoint; administratively reconciled through Entry 82; staff facts through Entry 84.** This is the 2014 working structure for the offseason and eventual season. No tag, offer, signing, trade, training phase, draft selection or game is completed by preparing it. The next checkpoint is February 3 for waivers (the February staff events are closed in Entries 83-84); the tag window follows February 17.
 
 ## Start here
 
@@ -10,7 +10,7 @@
 | Futures and practice squad | [Futures instructions](offseason/practice_squad_futures.md) | Actual contract event, control and eligible-list records; no assumed signing |
 | Trade market | [Six packages and their gates](trades/trade_targets.md) | [Communications](trades/trade_offers.md), then [completed trades](trades/trades.md) |
 | Draft | [Eight-pick current board](offseason/draft/player_draft_board.md), [all seven rounds](draft/draft_order.md) | [Draftees/contracts](offseason/draft/draftees.md), [rails pairing](offseason/league_rails/draft_pairing.md), [UDFA contracts](offseason/draft/udfa_signings.md) |
-| Staff | [April search and existing decisions](offseason/staff_changes/README.md) | Staff timeline/hires; no new appointment here |
+| Staff | [Staff changes and hires](offseason/staff_changes/README.md) | Westhoff hired February 11 (Entry 84); no February departure (Entry 83) |
 | Training and film | [Phase route](offseason/README.md), existing player/coach methods | Five phase output/standout pairs, living profiles linked to actual evidence, [delivery receipts](offseason/film/delivery_log.md) |
 | Schedule | [Full opponent matrix](schedule/README.md), [calendar](calendar.md) | Dated 256-game fixtures at April 23 after league-wide reconciliation |
 | Camp/preseason | [Camp plan](offseason/training_camp/plan.md), [position questions](offseason/training_camp/position_battles.md) | Camp output, role decisions, game records, [75/53/squad closure](preseason/final_roster_cuts.md) |
@@ -28,7 +28,7 @@ The generated 2,208-player league inventory is research data with unknown contra
 
 - Package A's Seattle-original-second identity conflicts with the memo's No. 37 label; the current asset is No. 36. Resolve before communicating an offer. It does not block the tag window or unrelated packages.
 - Package G retains actual Posluszny clearance and must finish by April 21. No buyer, compensation or cap saving is presumed. Nwaneri's bonus date/clauses still require verification before F1.
-- Bobby April is the selected staff-search target, not an employed coordinator. Resolve actual availability and authorized terms through the existing staff process.
+- The special-teams search is closed: Oakland re-signed Bobby April and refused the lateral request; Mike Westhoff was hired as special teams coordinator on February 11 (Entry 84).
 - The pre-program film/contact rules check and explicitly pending phase choices still matter before the work they govern. Existing adopted individual-development methods remain adopted. Five prepared NOT_STARTED outputs do not resolve those choices or create delivery receipts.
 - Linsley and Gaines are current targets; no fallback is supplied for either. Later overall numbers await compensatory awards. Eligibility, pre-selection reports and availability remain normal draft-date prerequisites.
 

@@ -2,7 +2,7 @@
 
 The 2014 league year folder. The 2013 season is complete and archived (ledger Entry 67); this folder was set up in ledger Entry 68. Plans and future calendar entries are not completed events. Dated staff outcomes already closed in the ledger are linked below.
 
-**Start here:** [2014 operating baseline](operating_baseline.md) links the transaction records, training outputs, full schedule inventory and season handoffs. The clock remains February 2; next is the February 3 waiver/staff checkpoint, followed by the February 17 tag window.
+**Start here:** [2014 operating baseline](operating_baseline.md) links the transaction records, training outputs, full schedule inventory and season handoffs. The clock remains February 2; next is the February 3 waiver checkpoint, followed by the February 17 tag window. The February staff events (Entries 83-84) are resolved retroactively without advancing the clock.
 
 **Coaching staff:** [Open the 2014 staff timeline](offseason/staff_changes/timeline.md) to see who has been approached, who has left, which jobs are vacant and who Jacksonville hires. [Replacement targets](offseason/staff_changes/staff_plan.md) and [hiring outcomes](offseason/staff_changes/hires.md) are kept in the same folder.
 
@@ -16,14 +16,14 @@ The 2014 league year folder. The 2013 season is complete and archived (ledger En
 | Current boards (memo plus explicit amendments) | [free agency](offseason/free_agency/player_board.md), [draft](offseason/draft/player_draft_board.md), [trades](trades/trade_targets.md), [futures](offseason/practice_squad_futures.md) | Eight draft targets, including Linsley on Detroit R5 and Gaines on JAX R6; six trade packages with triggers and deadlines |
 | Team training and player film | [Training index](offseason/README.md), [player queue](offseason/film/player_queue.md), [Cousins progression](offseason/player_development/kirk_cousins.md) | Prepared from 2013 evidence; no training or delivery invented |
 | Phase plans | [offseason program (Phases One and Two)](offseason/offseason_program/plan.md), [rookie minicamp](offseason/rookie_minicamp/plan.md), [OTAs (Phase Three)](offseason/otas/plan.md), [mandatory minicamp](offseason/mandatory_minicamp/plan.md), [training camp and preseason](offseason/training_camp/plan.md) | 2013 methods retained; individual training/film workflow authorized; other marked choices pending |
-| Coaching staff timeline and hiring | [Staff folder](offseason/staff_changes/README.md), [timeline](offseason/staff_changes/timeline.md), [targets](offseason/staff_changes/staff_plan.md), [hires](offseason/staff_changes/hires.md) | Through February 2: Lowry departed; Bush stays; special teams coordinator vacant; no replacement hired |
+| Coaching staff timeline and hiring | [Staff folder](offseason/staff_changes/README.md), [timeline](offseason/staff_changes/timeline.md), [targets](offseason/staff_changes/staff_plan.md), [hires](offseason/staff_changes/hires.md) | Lowry departed January 12; Bush stays after interviews with Indianapolis and Chicago; no February departure (Entry 83); Mike Westhoff hired as special teams coordinator February 11 (Entry 84) |
 | League rails (other clubs follow real rosters from 2014) | [offseason/league_rails/](offseason/league_rails/README.md) | 2,208-player research inventory built; nine FA targets verified; automated dated roster build and relevant exception checks remain Codex work |
 | Season ledger | not yet created; the 2013 ledger (`career/2013/ledger.md`) remains Document 6 until the first 2014 event closes | Pending |
 | Roster | `career/2013/roster.md` remains the controlled-roster record until a 2014 roster owner is created with the first roster-changing event | Pending |
 
-**Setup status:** [Readiness checklist](readiness.md), [financial preparation](offseason/current_cap_worksheet.md), [scouting](scouting/README.md) and [statbook](statbook.md). Entry 82 reconciles the operating handoff without advancing time.
+**Setup status:** [Readiness checklist](readiness.md), [financial preparation](offseason/current_cap_worksheet.md), [scouting](scouting/README.md) and [statbook](statbook.md). Entry 82 reconciles the operating handoff without advancing time; Entries 83-84 close the February staff events, also without advancing it.
 
-**Prepared:** the five phase plans and individual training/film workflow. Bobby April is selected for the staff search, not hired. Other explicitly marked decisions remain pending. The exit interviews (January 13-14, 2014; Entry 76) list the program decisions and staff findings the plans should answer (`career/2013/exit_interviews/README.md`).
+**Prepared:** the five phase plans and individual training/film workflow. The special-teams search is closed: Mike Westhoff was hired on February 11 (Entry 84). Other explicitly marked decisions remain pending. The exit interviews (January 13-14, 2014; Entry 76) list the program decisions and staff findings the plans should answer (`career/2013/exit_interviews/README.md`).
 
 **Engine:** [E1/E2 policy is adopted](../../runtime/2014_engine_decisions.md); implementation and the other Tier 1 fixes remain open. [The game release gate](operating_baseline.md#before-any-2014-game) also requires season-aware inputs and closure. This baseline is ready for offseason recordkeeping, not game execution.
 

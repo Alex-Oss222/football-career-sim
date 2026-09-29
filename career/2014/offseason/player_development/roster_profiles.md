@@ -14,7 +14,7 @@ Each phase output records what actually happened. At handoff, revise only the re
 
 ## Quarterbacks
 
-**Owner:** Jeremy Bates; Charlie Skalaski assists; Tice on protection. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** Jeremy Bates; Charlie Skalaski assists; Tice on protection. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player and source | Current working profile, with limits | Next opportunity and player perspective to invite |
 |---|---|---|
@@ -25,7 +25,7 @@ Each phase output records what actually happened. At handoff, revise only the re
 
 ## Backs
 
-**Owner:** Tim Spencer; Tice/Yarno on shared protection. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** Tim Spencer; Tice/Yarno on shared protection. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player and source | Current working profile, with limits | Next opportunity and player perspective to invite |
 |---|---|---|
@@ -38,7 +38,7 @@ Each phase output records what actually happened. At handoff, revise only the re
 
 ## Receivers
 
-**Owner:** Darryl Drake; Bates on shared throw decisions. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** Darryl Drake; Bates on shared throw decisions. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player and source | Current working profile, with limits | Next opportunity and player perspective to invite |
 |---|---|---|
@@ -51,7 +51,7 @@ Each phase output records what actually happened. At handoff, revise only the re
 
 ## Tight ends
 
-**Owner:** John Zernhelt; Tice/Yarno on blocking and protection. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** John Zernhelt; Tice/Yarno on blocking and protection. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player and source | Current working profile, with limits | Next opportunity and player perspective to invite |
 |---|---|---|
@@ -61,7 +61,7 @@ Each phase output records what actually happened. At handoff, revise only the re
 
 ## Offensive line
 
-**Owner:** George Yarno; Tice on protection. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** George Yarno; Tice on protection. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player and source | Current working profile, with limits | Next opportunity and player perspective to invite |
 |---|---|---|
@@ -77,7 +77,7 @@ Each phase output records what actually happened. At handoff, revise only the re
 
 ## Defensive line
 
-**Owner:** Anthony Pleasant; Crennel and Bush on calls/fits. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** Anthony Pleasant; Crennel and Bush on calls/fits. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player and source | Current working profile, with limits | Next opportunity and player perspective to invite |
 |---|---|---|
@@ -97,7 +97,7 @@ Each phase output records what actually happened. At handoff, revise only the re
 
 ## Linebackers
 
-**Owner:** Frank Bush; Crennel on help and communication. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** Frank Bush; Crennel on help and communication. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player and source | Current working profile, with limits | Next opportunity and player perspective to invite |
 |---|---|---|
@@ -109,7 +109,7 @@ Each phase output records what actually happened. At handoff, revise only the re
 
 ## Secondary
 
-**Owner:** Tony Oden; Crennel on coverage/help. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** Tony Oden; Crennel on coverage/help. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player and source | Current working profile, with limits | Next opportunity and player perspective to invite |
 |---|---|---|
@@ -128,7 +128,7 @@ Each phase output records what actually happened. At handoff, revise only the re
 
 ## Specialists
 
-**Owner:** Stone until a coordinator is actually appointed. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** Mike Westhoff, special teams coordinator from February 11, 2014 (Entry 84); Stone owned these contributions during the January 12 to February 11 vacancy.
 
 | Player and source | Current working profile, with limits | Next opportunity and player perspective to invite |
 |---|---|---|
