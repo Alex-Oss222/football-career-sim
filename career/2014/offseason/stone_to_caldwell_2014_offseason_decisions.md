@@ -341,3 +341,19 @@ Line plan consequence: with Adams first at 26, the drafted offensive linemen are
 - **Jeremy Cain:** re-sign for one year at the minimum for his credited seasons, as section 2 already provided. His contract expires when the league year opens (March 11, 4 p.m. ET). The re-signing resolves under the league rails at his real signing date, so it is not guaranteed.
 - **Casey Kreiter, LS, Iowa:** sign as an undrafted free agent after the May 8 to 10 draft, on the standard three-year undrafted minimum contract. He must go undrafted in the branch draft, be eligible, and have a dated pre-draft scouting report on file before the call. He is added to the undrafted watch list as the long-snapper signing, outside the offensive-line count.
 - Cain and Kreiter compete in camp. Westhoff runs the evaluation; the roster decision stays with Caldwell.
+
+## September 29, 2026 amendment: package I, Arizona's second for Adams
+
+**User instruction, at the February 28, 2014 branch checkpoint.** This records a plan only; no trade is made here.
+
+| Term | Instruction |
+|---|---|
+| Jacksonville sends | Its original 2015 first-round pick |
+| Jacksonville receives | Arizona's original 2014 second-round pick, No. 38 (retained original pick, no recorded hold) |
+| Purpose | Select Davante Adams at 38 |
+| Window | Trades open March 11, 4 p.m. ET; through the draft. Arizona's answer is its own, resolved by the simulation |
+| If Arizona declines | No deal; the pick 26 order reverts to Adams, then Bitonio, then Van Noy |
+
+**Board consequence if package I closes:** pick 26 becomes Joel Bitonio (then Van Noy), Adams moves to 38, pick 13 stays Donald (then Fuller) and pick 31 stays Lawrence through package H. Until package I closes, the existing pick 26 order (Adams, Bitonio, Van Noy) stands.
+
+**Cost and risk.** Jacksonville would hold no 2015 pick before round 3, because Washington already owns its 2015 second. Adams's availability at 38 is decided at the draft by the league-rails rule; a later pick carries more availability risk than 26, and nothing here promises he is there. This supersedes the board rule that Jacksonville trades no pick away, for this package only.
