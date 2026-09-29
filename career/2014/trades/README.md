@@ -1,6 +1,6 @@
 # Jacksonville 2014 trades
 
-**Prepared at February 2, 2014, after Entry 81.** This folder is ready for the trade window. It records no new conversation with another club, accepted offer, player departure, pick acquisition or cap saving.
+**Prepared at February 2, 2014, after Entry 81; window opened March 11, 2014 at 4 p.m. ET (Entry 94).** Package I was declined by Arizona; F1 (Nwaneri) and D (Babin) are offered with answers open. No trade has closed, and no player, pick or cap saving has moved.
 
 | Record | Owns |
 |---|---|

@@ -12,6 +12,15 @@ from scripts.render_season_stats import load_receipts
 
 ROOT = Path(__file__).resolve().parents[1]
 WEEK1_SHEET = ROOT / "career/2013/regular_season/week_01_kansas_city_at_jacksonville/call_sheet.json"
+# The current roster moved to the 2014 offseason roster at the March 11, 2014
+# league year (Entry 94). 2013 packages are rebuilt from the last roster that
+# still carried the 2013 active 53 (March 3, 2014, Entry 92).
+ROSTER_2013 = ROOT / "tests/fixtures/jaguars_roster_2014-03-03.txt"
+_controlled_active = week_inputs.controlled_active
+
+
+def controlled_active_2013(season=2013, roster_path=None):
+    return _controlled_active(season, roster_path or ROSTER_2013)
 
 
 def injury_receipt(player, days, restriction="out"):
@@ -66,13 +75,14 @@ class PackageTests(unittest.TestCase):
         # Week 2 rebuilt with today's roster notes: players hurt later (for
         # example Kelce, Week 13) are dated out, so the 46-man gate is relaxed
         # for this structural rebuild and tested on its own below.
-        with mock.patch.object(week_inputs, "GAME_DAY_ACTIVES", 0):
+        with mock.patch.object(week_inputs, "GAME_DAY_ACTIVES", 0), \
+                mock.patch.object(week_inputs, "controlled_active", controlled_active_2013):
             cls.package = week_inputs.build_package(2, receipts, sheet, AVERAGE_ANCHORS)
 
     def test_short_unit_with_healthy_inactives_fails_the_build(self):
         chart = json.loads(week_inputs.DEPTH_CHART.read_text())
         inactives = set(chart["game_day_inactives"]["players"])
-        rows = list(week_inputs.controlled_active())
+        rows = list(controlled_active_2013())
         # Hold one dressed, available player without adding him to Stone's list.
         index = next(i for i, (player, note) in enumerate(rows)
                      if player not in inactives and note == week_inputs.AVAILABLE_TEXT)
@@ -89,7 +99,7 @@ class PackageTests(unittest.TestCase):
                                            [{"name": "Mystery", "family": "Mystery", "type": "pass"}])
 
     def test_week_two_package_passes_the_weekly_gate(self):
-        controlled = controlled_players_from_roster(ROOT / "career/2013/roster.md")
+        controlled = controlled_players_from_roster(ROSTER_2013)
         self.assertEqual(check_inputs(self.package, controlled, "Jacksonville Jaguars", expected_games=16), [])
 
     def test_jacksonville_dresses_its_game_day_unit(self):

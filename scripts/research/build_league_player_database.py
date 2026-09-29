@@ -112,7 +112,7 @@ def controlled(root):
         status_col=next((i for i,x in enumerate(header) if x.lower()=='status'),None)
         if status_col is not None:
             status=cells[status_col]
-            if status=='Active 53' or status=='Practice squad' or status.startswith('Reserve/'):
+            if status=='Active 53' or status.startswith('Offseason roster') or status=='Practice squad' or status.startswith('Reserve/'):
                 result[cells[header.index('Player')]]={'position':cells[header.index('Pos')], 'status':status}
     if not result:
         raise ValueError('No Jacksonville controlled players found')

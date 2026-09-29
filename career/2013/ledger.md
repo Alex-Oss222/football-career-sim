@@ -2685,3 +2685,66 @@ Atomic closure: contract register/table, futures outcomes, working depth-chart c
 **Atomic closure.** The following now agree: the master clock (March 3), the roster header and player ages, the calendar, the free-agency board reading, the Washington, Cleveland, Pittsburgh, Miami and Dallas rails pages, the free-agent pool, the contract table and working depth chart (check and as-of lines only), the 2014 README, readiness, operating baseline, trade and staff status lines, the March 1 to 3 turn output, and Documents 4 (register 47) and 5 (state 68). No player-control, contract, pick or staff change. The private snapshot is not advanced from this branch.
 
 **Commit closed - Canonical update - March 3, 2014 - Clock advanced to March 3 (designation deadline passed) - canonical through March 3, 2014**
+
+
+## Entry 93: March 1 to 3 rails verification closed
+
+**Effective canonical state:** March 3, 2014; administrative correction, no time advance.
+**Recorded:** September 29, 2026
+**Checkpoint:** `Canonical correction - March 3, 2014 - March 1 to 3 rails verification closed`
+**Preceding global package checkpoint:** `Canonical update - March 3, 2014 - Clock advanced to March 3 (designation deadline passed)`
+
+**Authority.** The user asked for the Entry 92 verification gaps to be closed: re-signings and extensions dated March 1 to 3, and the three pending reports (Costa, Potter, Barnes).
+
+**Result of the two-pass sweep.**
+- New moves dated March 1 to 3, applied at the March 3 checkpoint: Tennessee re-signed S Bernard Pollard (March 3, Confirmed); Detroit released G/C Leroy Harris (March 3, Confirmed). No re-signing or extension was confirmed for March 1 or 2.
+- Earlier moves found in passing, applied at the same checkpoint: San Diego re-signed LB Donald Butler (February 28; move Confirmed, day single source).
+- Zach Potter's Houston signing (February 26) and Khalif Barnes's Oakland re-signing (February 28): Confirmed and applied.
+- Phil Costa: Dallas released him on March 7, 2014 (Confirmed), not March 1 to 3. He was only a reported planned release at this checkpoint; the release is applied by Entry 94.
+
+**Coverage.** Page fetches were blocked, so the passes relied on search results and dated URLs. The search budget ran out before twelve clubs were individually swept (Baltimore, Carolina, Cleveland, Green Bay, Houston, Miami, New England, New Orleans, the Giants, Philadelphia, Tampa Bay and Washington). Each club page's coverage note says so; no absence is a verified negative.
+
+**What changed.** The Houston, Oakland, San Diego, Tennessee, Detroit and Dallas rails pages and the free-agent pool. No Jacksonville roster, contract, pick, staff or medical state. Document 5 records the closure (state 69, with Entry 94).
+
+**Commit closed - Canonical correction - March 3, 2014 - March 1 to 3 rails verification closed - canonical through March 3, 2014**
+
+
+## Entry 94: League year opened (March 11, 2014, 4 p.m. ET)
+
+**Effective canonical state:** March 11, 2014, 4:00 p.m. ET.
+**Recorded:** September 29, 2026
+**Checkpoint:** `Canonical update - March 11, 2014 - League year opened (tenders, futures, market draws and trade offers)`
+**Preceding global package checkpoint:** `Canonical correction - March 3, 2014 - March 1 to 3 rails verification closed`
+
+**Authority.** On September 29, 2026 the user asked for the clock to advance to 4 p.m. ET March 11: tenders, the futures and Monroe's tender taking effect, the trade window, Monroe's long-term draw, Cain's re-signing and the market draws for Verner, Talib, Tate, Te'o-Nesheim or Allen, and Hawkins or Edelman. Before any draw the user decided four open method questions, recorded as the memo amendment "league-year draws and package I revised" and committed with the method (`career/2014/offseason/league_year_method.json`, commit 34c5986):
+- **Package I revised:** Jacksonville's 2015 first, 2015 fourth and 2016 fifth, plus Alualu only if Marks is re-signed, for Arizona's No. 38. Arizona answers by one draw on the free-agent curve, with Jimmy Johnson chart values and each future pick counted one round later per year out (chart values confirmed from the nflverse draft-values data).
+- **Own free agents re-signed by the real Jaguars** (Marks, Henne): drawn against that real contract; if lost, unplaced unrestricted free agents at 4 p.m.
+- **No rival contract** (Te'o-Nesheim, Cain): decided at 4 p.m. at the 0.90 ceiling.
+- **Later draws** (Tate March 12, Hawkins March 12 and 18, Edelman March 15, Jared Allen March 26): held to their real dates.
+
+**Offers.** Caldwell made every offer on the memo's terms: to outside targets at noon March 8, to Jacksonville's own free agents during the exclusive window. No walk-away figure was offered.
+
+**Tenders (before 4 p.m.).** Cameron Bradfield, lowest RFA tender, $1,431,000 (2014 amounts Confirmed). Exclusive-rights tenders at the minimum for credited seasons: Toney Clemons and Austin Pasztor $570,000, Mike Brown $495,000 (credited seasons are branch inferences). Allen Reisner and Kevin Rutland not tendered. All four tenders are unsigned.
+
+**Market draws.** One private packet (`league_year_results.json`):
+- Chad Henne (March 7; real Jaguars terms 2 years, $8M, $4.5M guaranteed): index 0.42, chance 0. Lost.
+- Sen'Derrick Marks (before 4 p.m.; real Jaguars extension 4 years, up to $22M, guarantee not found): index 1.08, chance 0.63. Lost.
+- Eugene Monroe (Baltimore, 5 years, $37.5M, $19M guaranteed): index 0.88, chance 0.20. Lost: he plays 2014 on the $11,654,000 non-exclusive franchise tender, unsigned. The Baltimore move does not apply.
+- Daniel Te'o-Nesheim (no 2014 contract): chance 0.90. **Signed:** three years, $18.8M, $10.3M guaranteed; 2014 cap $5,200,000 (schedule fixed in the method before the draw).
+- Jeremy Cain (unsigned until Chicago, September 1): chance 0.90. **Re-signed:** one year, $855,000, counted in full.
+- Alterraun Verner (Tampa Bay, 4 years, $26.125M used from the reported $26.5M and $25.75M, $14M guaranteed): index 0.84, chance 0.09. Lost; he signs with Tampa Bay the evening of March 11, after the checkpoint.
+- Aqib Talib (Denver, 6 years, $57M, $26M guaranteed): index 0.50, chance 0. Lost; he signs with Denver the evening of March 11.
+
+**Other control changes at 4 p.m.** The six reserve/future contracts took effect. Maurice Jones-Drew, C.J. Wilson, Alan Ball and Brent Grimes became unrestricted free agents with Jacksonville's offers outstanding (Jones-Drew and Wilson resolve at their real March 28 dates; Ball has no real 2014 move and Grimes's real move is not the same kind, so both need a resolution rule). Brad Meester's contract expired. Controlled roster: 53 minus 9 departures, plus 6 futures and Te'o-Nesheim, is **51**.
+
+**Contingencies.** With Verner and Talib lost, memo contingencies 1 and 2 are triggered: re-sign Brent Grimes and pursue Tarell Brown (real Oakland signing March 14). With Te'o-Nesheim signed, contingency 4 is not triggered and Jared Allen's fallback offer lapses.
+
+**Trades.** At 4 p.m. package I went to Arizona without Alualu (Marks not re-signed): 462 chart points against 520, ratio 0.89, chance 0.22. **Declined.** Pick 26 stays Adams, then Bitonio, then Van Noy; package E is not live, so Alualu stays. F1 (Nwaneri to San Francisco for a 2015 sixth) and D (Babin to Miami for a 2015 fifth, triggered by Te'o-Nesheim's signing) are offered with answers open. A waits on Tate; H waits on A; F2 on the draft; G has no named buyer. No trade closed, and pick ownership is unchanged.
+
+**CBA check (Thielen).** Under the 2011 CBA's rookie-contract rules, an undrafted rookie contract may not be renegotiated, amended or extended until after the final regular-season game of the player's second contract year. Thielen's three-year deal runs 2013 to 2015, so he cannot be extended now; the earliest date is the day after Jacksonville's final 2014 regular-season game. The subsection letter is unverified (the CBA PDF could not be opened); the wording is confirmed from two secondary sources.
+
+**League rails, March 4 to 11 (before 4 p.m.).** Fifty-six real moves are recorded in the club pages, applied with their labels: releases (for example Champ Bailey, DeMarcus Ware, Julius Peppers, Santonio Holmes, Antonio Cromartie, Owen Daniels, Lance Moore, Thomas DeCoud), re-signings and extensions (for example Sam Shields, Michael Bennett, Everson Griffen, Vontae Davis, Polamalu and Heath Miller) and announced tenders. Post-June 1 releases (Colledge, Austin, Woodley, Baas) and Folk's re-signing may fall at or after 4 p.m. and are left for the next turn. The AFC sweep had no independent second pass; San Francisco, St. Louis, Tampa Bay and Washington were not swept. The free-agent pool records each status change.
+
+**Atomic closure.** The following now agree: the memo amendment, the method and results files, the signings, tags and tenders record, the draw log, the trade offer log, targets, completed-trades and README status lines, the contract table (update-log row) and contract status register, the financial inputs and generated tracker ($114,192,821 scheduled 2014 player cap including $14,720,000 of unsigned tenders), the working depth chart and its JSON copy (update-log row), the roster, the 31 club rails pages and the free-agent pool, the calendar, the March 4 to 11 turn output, and Documents 4 (register 48) and 5 (state 69). The private snapshot is advanced only after merge.
+
+**Commit closed - Canonical update - March 11, 2014 - League year opened (tenders, futures, market draws and trade offers) - canonical through March 11, 2014**

@@ -73,3 +73,5 @@
 
 | Real date | Move | Player | Detail | Source | Gate passed in branch? |
 |---|---|---|---|---|---|
+
+**Coverage note (Entry 94, March 11, 2014):** Entry 93 closed the March 1 to 3 re-signing gap; this club was individually swept in that search (the clubs not individually swept were BAL, CAR, CLE, GB, HOU, MIA, NE, NO, NYG, PHI, TB and WAS). The March 4 to 11 NFC sweep never searched this club before the search budget ran out (for example, Anquan Boldin's re-signing and any Jonathan Martin trade agreement are unchecked); its second pass was separate searches that could read only result summaries. Page fetches were blocked, so evidence comes from search summaries and dated URLs; no result is a verified negative, RFA tenders were not systematically swept, and the time of day of March 11 moves is not established unless a row says so.

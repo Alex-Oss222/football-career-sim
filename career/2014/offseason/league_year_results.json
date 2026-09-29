@@ -1,0 +1,84 @@
+{
+ "procedure": "league-year-2014-v1",
+ "event_id": "2014-league-year-open-v1",
+ "snapshot": "8e8c7707e3bcec205db231088089db97d77f7c5485ea60191f6d5bf5760cd874",
+ "method_sha256": "b8bb7f9a4705e28ff7550288a4bb3cfb313c0a5e81c29b9f1bd3d3dd226dee75",
+ "code_sha256": "11a867ac0868bed1d85c161cd9d8cb138ee9067e7d2143bd0fea8eb33b420f10",
+ "ledger_entry": "Entry 94",
+ "result_ref": "1df3358db4a70d1308236d9a75126977e22926ed3c199c687611dea35c5f6e67",
+ "packet_sha256": "d0cef4e6c05a2ae7917cf185d3fcfafdc47f07e54f2e7aa626aaec0accfc86cc",
+ "results": [
+  {
+   "key": "henne",
+   "player": "Chad Henne, QB",
+   "date": "2014-03-07",
+   "m": 0.4177,
+   "chance": 0.0,
+   "draw": 0.1944,
+   "jacksonville": false
+  },
+  {
+   "key": "marks",
+   "player": "Sen'Derrick Marks, DT",
+   "date": "2014-03-11 (before 4 p.m.)",
+   "m": 1.0795,
+   "chance": 0.6273,
+   "draw": 0.9215,
+   "jacksonville": false
+  },
+  {
+   "key": "monroe",
+   "player": "Eugene Monroe, OT (franchise player)",
+   "date": "2014-03-11",
+   "m": 0.8818,
+   "chance": 0.2044,
+   "draw": 0.2728,
+   "jacksonville": false
+  },
+  {
+   "key": "teo_nesheim",
+   "player": "Daniel Te'o-Nesheim, DE",
+   "date": "2014-03-11 (4 p.m.)",
+   "m": null,
+   "chance": 0.9,
+   "draw": 0.2667,
+   "jacksonville": true
+  },
+  {
+   "key": "cain",
+   "player": "Jeremy Cain, LS",
+   "date": "2014-03-11 (4 p.m.)",
+   "m": null,
+   "chance": 0.9,
+   "draw": 0.7755,
+   "jacksonville": true
+  },
+  {
+   "key": "verner",
+   "player": "Alterraun Verner, CB",
+   "date": "2014-03-11",
+   "m": 0.835,
+   "chance": 0.0874,
+   "draw": 0.8241,
+   "jacksonville": false
+  },
+  {
+   "key": "talib",
+   "player": "Aqib Talib, CB",
+   "date": "2014-03-11",
+   "m": 0.497,
+   "chance": 0.0,
+   "draw": 0.7597,
+   "jacksonville": false
+  },
+  {
+   "key": "package_i",
+   "player": "Arizona Cardinals: package I",
+   "date": "2014-03-11 (4 p.m.)",
+   "m": 0.8885,
+   "chance": 0.2212,
+   "draw": 0.4327,
+   "jacksonville": false
+  }
+ ]
+}

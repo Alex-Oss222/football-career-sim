@@ -1,6 +1,6 @@
 # Jacksonville Jaguars: 2014 contract and free-agency status register
 
-**Branch date:** February 28, 2014 (2013 season complete; Jacksonville eliminated in the AFC Divisional round). Built at February 2; updated for the reserve/future contracts (Entry 85), [Caldwell's pre-tag-window verifications](caldwell_pre_tag_verifications.md) (Entry 86), Eugene Monroe's February 18 franchise tag (Entry 87) and the league's February 28 publication of the 2014 cap and tag values (Entry 89).
+**Branch date:** March 11, 2014, after the 4 p.m. ET league-year opening (Entry 94; section 2a records the outcomes). The baseline below is the status at the March 11 handoff. Built at February 2; updated for the reserve/future contracts (Entry 85), [Caldwell's pre-tag-window verifications](caldwell_pre_tag_verifications.md) (Entry 86), Eugene Monroe's February 18 franchise tag (Entry 87) and the league's February 28 publication of the 2014 cap and tag values (Entry 89).
 **Applies at:** the opening of the 2014 league year, Tuesday, March 11, 2014, 4:00 PM ET (`library/2014_league_calendar_and_financial_rules.md`, C10).
 **Scope:** 52 active players and Brad Meester on Reserve/Retired in the current [roster](../../2013/roster.md), plus six signed reserve/future contracts effective March 11 (Entry 85). The eight-player 2013 practice-squad section is a historical reconciliation: it includes the six futures signings and two departed free agents, not eight players still controlled.
 **Nature:** research and status register only. It executes no signing, tender, release, extension, option or trade and reflects Entry 91’s adopted contract reconstruction. Caldwell retains contract authority under Document 3.
@@ -44,6 +44,26 @@ WebFetch was blocked by the session's network egress proxy for every outlet trie
 **Pending restricted free agents (3):** OT Cameron Bradfield, TE Allen Reisner, CB Kevin Rutland.
 **Pending exclusive-rights free agents (3):** WR Toney Clemons, WR Mike Brown, G Austin Pasztor.
 **Unresolved (2):** QB John Parker Wilson, RB Jonathan Grimes. Montell Owens is under contract through 2015 and Jeremy Cain's contract expired after 2013 (Entry 86; [verifications](caldwell_pre_tag_verifications.md) section 2).
+
+### 2a. Outcome at the league-year opening (Entry 94)
+
+| Player | Handoff status | Outcome at 4 p.m. March 11, 2014 |
+|---|---|---|
+| Eugene Monroe | Franchise player | Long-term draw lost; plays 2014 on the unsigned $11,654,000 tender |
+| Jeremy Cain | Pending UFA | Re-signed: one year, $855,000 (uncontested draw) |
+| Chad Henne | Pending UFA | Re-signing draw lost (March 7); unrestricted free agent, unplaced |
+| Sen'Derrick Marks | Pending UFA | Re-signing draw lost; unrestricted free agent, unplaced |
+| Maurice Jones-Drew, C.J. Wilson | Pending UFA | Unrestricted; Jacksonville offers outstanding; draws at their real March 28 dates |
+| Alan Ball, Brent Grimes | Pending UFA | Unrestricted; offers outstanding; resolution rule open |
+| Cameron Bradfield | Pending RFA | Lowest tender, $1,431,000; unsigned |
+| Allen Reisner, Kevin Rutland | Pending RFA | Not tendered; unrestricted |
+| Toney Clemons, Austin Pasztor | Pending ERFA | Tendered at $570,000; unsigned |
+| Mike Brown | Pending ERFA | Tendered at $495,000; unsigned |
+| Brad Meester | Retired | Contract expired |
+| Six reserve/future players | Futures | Contracts in force |
+| Daniel Te'o-Nesheim | Not Jacksonville's | Signed: three years, $18.8M, $10.3M guaranteed |
+
+Controlled after the opening: **51** (46 signed, 5 unsigned tenders). Sources: [signings and tenders](free_agency/signings.md), [draw log](league_rails/fa_draws.md), [contract table](contract_table.md).
 
 ## 3. Controlled active and reserve baseline
 

@@ -73,3 +73,5 @@
 
 | Real date | Move | Player | Detail | Source | Gate passed in branch? |
 |---|---|---|---|---|---|
+
+**Coverage note (Entry 94, March 11, 2014):** Entry 93 closed the March 1 to 3 re-signing gap; this club was individually swept in that search (the clubs not individually swept were BAL, CAR, CLE, GB, HOU, MIA, NE, NO, NYG, PHI, TB and WAS). The March 4 to 11 AFC sweep searched this club thinly (one or two queries) and found no in-window move; it had no separate second pass because the search budget ran out, so each label rests on separate outlets within the first-pass results, and trades were not specifically searched. Page fetches were blocked, so evidence comes from search summaries and dated URLs; no result is a verified negative, RFA tenders were not systematically swept, and the time of day of March 11 moves is not established unless a row says so.

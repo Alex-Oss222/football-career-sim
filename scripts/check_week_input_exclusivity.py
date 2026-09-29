@@ -21,7 +21,7 @@ DEPTH_REQUIRED = ("QB", "RB", "WR", "TE")
 
 
 CONTROLLED_STATUS = re.compile(
-    r"^(?:Active 53|Practice squad|Injured reserve|IR|Reserve(?:/[^|]+)?|"
+    r"^(?:Active 53|Offseason roster(?: \([^|]*\))?|Practice squad|Injured reserve|IR|Reserve(?:/[^|]+)?|"
     r"PUP|NFI|Suspended|Commissioner(?:/[^|]+)?)$",
     re.IGNORECASE,
 )
