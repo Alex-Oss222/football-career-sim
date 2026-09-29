@@ -7,13 +7,14 @@ from .calibration import load, validate
 from . import injury_model
 from . import participation
 from .rules import RULES, ot_status
+from . import chains as chain_walk
 from . import drive_model
 from . import field_position
 from . import usage
 from .player_evidence import empty_player_stats, normalize_players, observation
 from .play_detail import (
     apply_drive_detail, apply_kickoff_detail, canonical_call_sheet, check_ledger,
-    _period_clock, _stream,
+    has_chain_ledger, _period_clock, _stream,
 )
 
 
@@ -361,6 +362,7 @@ def _resolve_game(
     yards_per_attempt = gross_per_attempt["numerator"] / gross_per_attempt["denominator"]
     carry = cal["derived"]["yards_per_carry"]
     yards_per_carry = carry["numerator"] / carry["denominator"]
+    completion_rate = cal["derived"]["completion_rate"]["value"]
     xp_rate = drive_model.rate("extra_point")
     T = field_position.T
 
@@ -672,7 +674,6 @@ def _resolve_game(
         runs, attempts, sacks = int(row[T["runs"]]), int(row[T["attempts"]]), int(row[T["sacks"]])
         kneel_yards = list(row[T["kneel_yards"]])
         spikes = int(row[T["spikes"]])
-        chains = list(row[T["chains"]])
 
         # 4. Real per-drive snap counts: the drive's own runs, attempts,
         # sacks, kneels and spikes, and its own scoring kind. No Bernoulli
@@ -739,6 +740,25 @@ def _resolve_game(
                     rush_free, pass_yards = fitted, pass_yards + before - fitted
                 else:
                     pass_yards, rush_free = fitted, rush_free + before - fitted
+
+        # 6b. Kernel 2014.4 (defect register item 3): the drive's ordered
+        # snaps and their chain walk, on the kernel-owned chain-layout stream
+        # (runtime/chains.py; the possession stream is not consumed). Down,
+        # distance, first downs and third/fourth-down counts come from that
+        # walk; only the real drive's penalty first downs (no ledger rows)
+        # stay a counter, chains[1]. When the split above admits no legal
+        # order the layout returns an alternative split or sack-loss draw
+        # (same net), which the drive then publishes.
+        layout = chain_walk.drive_layout(
+            seed=seed, event_id=event_id, drive_no=drive_no, offense=offense, category=category,
+            td_type=td_type, runs=runs, attempts=attempts, sacks=sacks, kneel_yards=kneel_yards,
+            spikes=spikes, pass_yards=pass_yards, rush_free=rush_free, losses=sack_losses,
+            safety_terminal=safety_terminal, net=net, spot=spot, completion_rate=completion_rate,
+            targets=list(row[T["chains"]]), term_down=row[T["term_down"]], diagnostics=diagnostics)
+        pass_yards, rush_free, sack_losses = layout["pass_yards"], layout["rush_free"], layout["losses"]
+        walked = layout["walk"]["chains"]
+        chains = [walked[0], int(row[T["chains"]][1]), walked[1], walked[2], walked[3], walked[4]]
+
         rush_yards = rush_free + kneel_sum + (terminal_value if safety_terminal and safety_terminal[0] == "run" else 0)
         sack_total = sum(sack_losses) + (-terminal_value if safety_terminal and safety_terminal[0] == "sack" else 0)
 
@@ -748,7 +768,7 @@ def _resolve_game(
         s["rushing_yards"] += rush_yards
         s["sacks_allowed"] += sacks
 
-        # 7. Penalties (counters only) and the drive's real chains.
+        # 7. Penalties (counters only) and the drive's chains.
         pens = sum(rng.random() < model["penalty_per_play"] for _ in range(plays))
         s["penalties"] += pens
         s["penalty_yards"] += pens * rng.randint(5, 10) if pens else 0
@@ -822,14 +842,15 @@ def _resolve_game(
         fourth_down = None
         if category in field_position.FOURTH_DOWN_CATEGORIES:
             clock_s = window - seconds
-            ydstogo = row[T["term_ydstogo"]]
+            # Kernel 2014.4: the ledger's own state before the kick (after the
+            # last scrimmage snap) or, on downs, before the failed fourth-down
+            # snap (its line of scrimmage, not the spot where it ended).
+            state = chain_walk.terminal_state(category, spot, layout["values"])
             fourth_down = {
-                # Kernel 2014.1: goal to go when the real distance is at least the
-                # distance to the goal line at the replayed spot.
-                "down": row[T["term_down"]],
-                "ydstogo": min(ydstogo, end_spot) if ydstogo is not None else None,
-                "goal_to_go": ydstogo is not None and ydstogo >= end_spot,
-                "los": end_spot,
+                "down": state["down"],
+                "ydstogo": state["ydstogo"],
+                "goal_to_go": state["goal_to_go"],
+                "los": state["los"],
                 "clock_s": clock_s, "clock_bucket": field_position.terminal_bucket(clock_s) if draw_half == 2 else None,
                 "half": draw_half, "score_diff": score_diff, "need": field_position.need(score_diff),
                 "decision_zone": field_position.decision_zone(end_spot), "cell": drawn.cell,
@@ -877,7 +898,9 @@ def _resolve_game(
             fourth_down=fourth_down,
             passer=passer,
             diagnostics=diagnostics,
+            layout=layout,
         )
+        chain_walk.annotate(drive_ledger, layout["walk"], fourth_down)
         append_rows(drive_ledger)
         _merge_call_stats(play_call_stats[offense], drive_calls)
         _append_evidence(
@@ -931,6 +954,9 @@ def _resolve_game(
             "expiry_seconds": drawn.expiry_seconds,
             # Kernel 2014.4 (append-only): the drive's passer.
             "passer": passer.player_id,
+            # Kernel 2014.4 (append-only): chains and fourth_down are walked
+            # from this drive's own snap ledger (runtime/chains.py).
+            "chain_model": chain_walk.CHAIN_MODEL,
         }
         if off_notes or def_notes:
             record["emergency"] = off_notes + def_notes
@@ -1290,13 +1316,27 @@ def validate_result(result):
         if s["drives"] != sum(1 for p in possessions if p["team"] == team):
             errors.append("drive counter mismatch")
     if possessions and all(p.get("start_spot") is not None for p in possessions):
-        # Kernel 2013.7: the chain counters are the real drives' own counts.
+        # Kernel 2013.7: the team chain counters are the drives' chains (from
+        # kernel 2014.4 walked from the snap ledger, plus the real drive's
+        # penalty first downs; check_ledger reconciles them with the rows).
         for team, s in result["team_stats"].items():
             mine = [p["chains"] for p in possessions if p["team"] == team]
             if (s["first_downs"] != sum(c[0] + c[1] for c in mine)
                     or s["third_down_attempts"] != sum(c[2] for c in mine)
                     or s["third_down_conversions"] != sum(c[3] for c in mine)):
                 errors.append("chain counters differ from the drive chains")
+    if has_chain_ledger(result):
+        # Kernel 2014.4: the scrimmage first downs and third-down counts are
+        # the snap ledger's own walk; only penalty first downs (chains[1])
+        # have no rows.
+        for team, s in result["team_stats"].items():
+            rows = [r for r in result["play_ledger"] if r.get("offense") == team and r.get("play_type") in ("pass", "run")]
+            penalty = sum(p["chains"][1] for p in possessions if p["team"] == team)
+            third = [r for r in rows if r.get("down") == 3]
+            if (s["first_downs"] != sum(bool(r.get("first_down")) for r in rows) + penalty
+                    or s["third_down_attempts"] != len(third)
+                    or s["third_down_conversions"] != sum(bool(r.get("first_down")) for r in third)):
+                errors.append("chain counters differ from the snap ledger")
     # A window's final possession ends it: each half, or each Pro Bowl quarter.
     windows = ((("quarter", q), (4 - q) * RULES.quarter_seconds) for q in (1, 2, 3, 4)) if pro_bowl else (
         (("half", h), 1800 if h == 1 else 0) for h in (1, 2))
