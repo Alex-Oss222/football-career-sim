@@ -333,3 +333,11 @@ Line plan consequence: with Adams first at 26, the drafted offensive linemen are
 **User instruction, at the February 17, 2014 branch checkpoint, executed February 18, 2014 (ledger Entry 87):** designate Eugene Monroe as Jacksonville's non-exclusive franchise player now, rather than holding the tag as a fallback until 4 p.m. ET on March 3. This supersedes only the timing of the Monroe tag in section 2 and in the earlier amendment ("If he is unsigned at 4 p.m. ET on March 3, apply the non-exclusive franchise tag"). The re-signing terms in section 2 still govern the long-term talks, which continue under the tag. Because the tag is Jacksonville's one designation for 2014, the section 2 provision moving the tag to Marks can no longer apply; Marks becomes an unrestricted free agent at 4 p.m. ET on March 11 if unsigned.
 
 **Contract-evidence update, Entry 90 at the February 28 checkpoint:** [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md) reports Nwaneri's $1M roster bonus due March 25. That resolves the earlier due-date gap; the F1/H recommendations themselves are unchanged. Use the [current contract table](contract_table.md) for updated schedules and explicitly labeled estimates, including salary, retained proration and deferred cash.
+
+## September 29, 2026 amendment: long snapper
+
+**User instruction, at the February 28, 2014 branch checkpoint.** This records a plan only; no contract is made here.
+
+- **Jeremy Cain:** re-sign for one year at the minimum for his credited seasons, as section 2 already provided. His contract expires when the league year opens (March 11, 4 p.m. ET). The re-signing resolves under the league rails at his real signing date, so it is not guaranteed.
+- **Casey Kreiter, LS, Iowa:** sign as an undrafted free agent after the May 8 to 10 draft, on the standard three-year undrafted minimum contract. He must go undrafted in the branch draft, be eligible, and have a dated pre-draft scouting report on file before the call. He is added to the undrafted watch list as the long-snapper signing, outside the offensive-line count.
+- Cain and Kreiter compete in camp. Westhoff runs the evaluation; the roster decision stays with Caldwell.
