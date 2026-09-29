@@ -1,0 +1,554 @@
+{
+  "artifact": "2012_nfl_injury_calibration",
+  "accessed": "2026-09-29",
+  "status": "RESEARCH ARTIFACT for proposed kernel 2014.4; not consumed by any released kernel",
+  "builder": "scripts/research/build_2012_injury_calibration.py",
+  "narrative": "library/2012_nfl_injury_calibration.md",
+  "information_boundary": "2012 regular-season data (weeks 1-17) and literature reporting 2012-or-earlier seasons only. No 2013 or later real injury outcome is an input. The 2012-2014 pooled study (L4) is cited for method only; its pooled numbers are not used.",
+  "sources": {
+    "D1": {
+      "what": "nflverse official injury reports 2012",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2012.csv",
+      "sha256": "8b8ce2ed5bd45bbb709e5402efa4fe930d63fedfce111df9b1fea08ffa51f237"
+    },
+    "D2": {
+      "what": "nflverse play-by-play 2012 (GSIS play descriptions incl. 'was injured during the play' notes; player-id footprint)",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2012.csv.gz",
+      "sha256": "ff1cda2e26610ef8720324e442d1e5ebc24918e08fd1d2933590b7b91a7068cd"
+    },
+    "D3": {
+      "what": "nflverse weekly rosters 2012 (jersey/position map and club membership only; status field unusable, back-filled)",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/weekly_rosters/roster_weekly_2012.csv",
+      "sha256": "262fd2f9a862c3b97275d91c60951f940a4e82989503b8359ac11b12a76c0e2f"
+    },
+    "D4": {
+      "what": "nflverse snap_counts_2012.csv: header only, no rows (snap counts start 2013)",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_2012.csv"
+    },
+    "L1": {
+      "what": "Feeley BT et al., Epidemiology of National Football League Training Camp Injuries from 1998 to 2007, Am J Sports Med 2008;36(8):1597-1603",
+      "url": "https://doi.org/10.1177/0363546508316021",
+      "used": "game 64.7 vs practice 12.7 injuries/1000 AE; season-ending 5.4 vs 0.4/1000 AE (one club, training camp)",
+      "access": "abstract via search index; full text not reachable (proxy)",
+      "verification": "Not re-verified in the verification pass: search budget exhausted and Crossref, SAGE and Semantic Scholar blocked by the proxy. Single-source (abstract/summary) value; cross-check or bound only."
+    },
+    "L2": {
+      "what": "Casson IR, Viano DC, Powell JW, Pellman EJ, Twelve Years of National Football League Concussion Data, Sports Health 2010",
+      "url": "https://doi.org/10.1177/1941738110383963",
+      "used": "0.42 (1996-2001) and 0.38 (2002-2007) documented concussions per NFL game",
+      "access": "abstract via search index",
+      "verification": "Not re-verified in the verification pass: search budget exhausted and Crossref, SAGE and Semantic Scholar blocked by the proxy. Single-source (abstract/summary) value; cross-check or bound only."
+    },
+    "L3": {
+      "what": "Casson IR et al., Concussions Involving 7 or More Days Out in the National Football League, Sports Health 2011",
+      "url": "https://doi.org/10.1177/1941738110397876",
+      "used": "2002-2007: 16.7% of concussed players out 7+ days, 3.86% out 21+ days",
+      "access": "abstract via search index",
+      "verification": "Not re-verified in the verification pass: search budget exhausted and Crossref, SAGE and Semantic Scholar blocked by the proxy. Single-source (abstract/summary) value; cross-check or bound only."
+    },
+    "L4": {
+      "what": "Lawrence DW, Hutchison MG, Comper P, Descriptive Epidemiology of Musculoskeletal Injuries and Concussions in the NFL, 2012-2014, Orthop J Sports Med 2015",
+      "url": "https://doi.org/10.1177/2325967115583653",
+      "used": "method corroboration only (official injury reports as surveillance; knee>ankle>hamstring>shoulder>head ordering; WR/TE/DB highest per athlete at risk). Pooled 2012-13 and 2013-14 numbers NOT used (contain post-divergence season)",
+      "access": "abstract via search index",
+      "verification": "Not re-verified (same access limits). No number used."
+    },
+    "L5": {
+      "what": "Elliott MC et al., Hamstring Muscle Strains in Professional Football Players: A 10-Year Review, Am J Sports Med 2011",
+      "url": "https://doi.org/10.1177/0363546510394647",
+      "used": "1989-1998 hamstring strains 13% of all NFL injuries; 0.77/1000 AE; regular-season practice 0.18/1000 AE",
+      "access": "abstract via search index",
+      "verification": "Not re-verified in the verification pass: search budget exhausted and Crossref, SAGE and Semantic Scholar blocked by the proxy. Single-source (abstract/summary) value; cross-check or bound only."
+    },
+    "L6": {
+      "what": "NFL / Quintiles(IQVIA) health-and-safety injury data (2012 column)",
+      "url": "https://www.nfl.com/news/nfl-says-concussions-acl-injuries-decreased-this-season-0ap2000000320373",
+      "used": "2012 preseason+regular season: 261 concussions; ACL 63 (another summary gives 62). Regular-season-only 2012 concussion count reported in search summaries as 173: UNVERIFIED",
+      "access": "search-result summaries; nfl.com blocked by proxy",
+      "verification": "Not re-verified in the verification pass: search budget exhausted and Crossref, SAGE and Semantic Scholar blocked by the proxy. Single-source (abstract/summary) value; cross-check or bound only."
+    }
+  },
+  "data": {
+    "season": 2012,
+    "season_type": "REG weeks 1-17",
+    "denominators": {
+      "team_games": 512,
+      "report_pairs": 480,
+      "scrimmage_plays_run_pass": 32493,
+      "play_types": {
+        "pass": 18922,
+        "run": 13571,
+        "no_play": 4194,
+        "kickoff": 2620,
+        "punt": 2469,
+        "no_play_snapped": 1478,
+        "(none)": 1355,
+        "extra_point": 1237,
+        "field_goal": 1016,
+        "qb_kneel": 367,
+        "qb_spike": 78
+      },
+      "exposure_plays": 41758,
+      "player_plays_per_team_game": 1794.3
+    },
+    "report_onsets": {
+      "count": 1956,
+      "per_team_game": 4.075,
+      "per_team_game_strict_two_report_rule": 3.9531,
+      "first_listed_status": {
+        "Doubtful": 96,
+        "Questionable": 503,
+        "Probable": 1063,
+        "Out": 294
+      },
+      "unmatched_position": 0
+    },
+    "ingame_stoppages": {
+      "count": 562,
+      "per_team_game": 1.0977,
+      "per_1000_scrimmage_plays_run_pass": 14.68,
+      "per_1000_kickoffs": 11.832,
+      "per_1000_punts": 11.341,
+      "by_play_type": {
+        "run": 214,
+        "pass": 263,
+        "kickoff": 31,
+        "punt": 28,
+        "no_play": 26
+      },
+      "by_side": {
+        "possession": 244,
+        "other": 318
+      },
+      "announced_disposition": {
+        "(none)": 281,
+        "Questionable": 127,
+        "Probable": 92,
+        "Out": 42,
+        "Doubtful": 20
+      },
+      "player_matched": 562,
+      "player_matched_surname_agrees": 562,
+      "footprint_players": 293,
+      "footprint_returned_same_game": 133,
+      "footprint_return_by_disposition": {
+        "Probable": [
+          38,
+          51
+        ],
+        "Questionable": [
+          24,
+          63
+        ],
+        "Doubtful": [
+          1,
+          8
+        ],
+        "Out": [
+          1,
+          23
+        ],
+        "(none)": [
+          69,
+          148
+        ]
+      },
+      "on_next_report": 297,
+      "next_report_class_shares": {
+        "lower_extremity": 0.5599,
+        "upper_extremity": 0.1092,
+        "trunk_other": 0.1021,
+        "head_neck": 0.2289
+      },
+      "next_report_class_n": 284,
+      "severity_shares_footprint": {
+        "minor": 0.7519,
+        "short": 0.1412,
+        "multi_week": 0.0649,
+        "long_term": 0.042
+      },
+      "severity_n_footprint": 262,
+      "severity_censored": 61
+    },
+    "unreported_vanish_upper_bound": {
+      "count": 20,
+      "per_team_game": 0.0391,
+      "by_band": {
+        "multi_week_or_longer": 14,
+        "long_term": 6
+      },
+      "by_group": {
+        "QB": 2,
+        "RB": 2,
+        "WR": 4,
+        "TE": 0,
+        "OL": 0,
+        "DL": 5,
+        "LB": 4,
+        "DB": 2,
+        "K/P/LS": 1
+      }
+    },
+    "by_group": {
+      "QB": {
+        "report_onsets": 52,
+        "report_onsets_per_team_game": 0.1083,
+        "report_share": 0.0266,
+        "ingame_stoppages": 19,
+        "ingame_stoppages_per_team_game": 0.0371,
+        "ingame_share": 0.0338
+      },
+      "RB": {
+        "report_onsets": 189,
+        "report_onsets_per_team_game": 0.3937,
+        "report_share": 0.0966,
+        "ingame_stoppages": 45,
+        "ingame_stoppages_per_team_game": 0.0879,
+        "ingame_share": 0.0801
+      },
+      "WR": {
+        "report_onsets": 288,
+        "report_onsets_per_team_game": 0.6,
+        "report_share": 0.1472,
+        "ingame_stoppages": 67,
+        "ingame_stoppages_per_team_game": 0.1309,
+        "ingame_share": 0.1192
+      },
+      "TE": {
+        "report_onsets": 122,
+        "report_onsets_per_team_game": 0.2542,
+        "report_share": 0.0624,
+        "ingame_stoppages": 20,
+        "ingame_stoppages_per_team_game": 0.0391,
+        "ingame_share": 0.0356
+      },
+      "OL": {
+        "report_onsets": 284,
+        "report_onsets_per_team_game": 0.5917,
+        "report_share": 0.1452,
+        "ingame_stoppages": 81,
+        "ingame_stoppages_per_team_game": 0.1582,
+        "ingame_share": 0.1441
+      },
+      "DL": {
+        "report_onsets": 278,
+        "report_onsets_per_team_game": 0.5792,
+        "report_share": 0.1421,
+        "ingame_stoppages": 76,
+        "ingame_stoppages_per_team_game": 0.1484,
+        "ingame_share": 0.1352
+      },
+      "LB": {
+        "report_onsets": 289,
+        "report_onsets_per_team_game": 0.6021,
+        "report_share": 0.1478,
+        "ingame_stoppages": 79,
+        "ingame_stoppages_per_team_game": 0.1543,
+        "ingame_share": 0.1406
+      },
+      "DB": {
+        "report_onsets": 423,
+        "report_onsets_per_team_game": 0.8812,
+        "report_share": 0.2163,
+        "ingame_stoppages": 173,
+        "ingame_stoppages_per_team_game": 0.3379,
+        "ingame_share": 0.3078
+      },
+      "K/P/LS": {
+        "report_onsets": 31,
+        "report_onsets_per_team_game": 0.0646,
+        "report_share": 0.0158,
+        "ingame_stoppages": 2,
+        "ingame_stoppages_per_team_game": 0.0039,
+        "ingame_share": 0.0036
+      }
+    },
+    "class_shares_report_onsets": {
+      "lower_extremity": 0.6171,
+      "upper_extremity": 0.1687,
+      "trunk_other": 0.1033,
+      "head_neck": 0.1109
+    },
+    "class_counts_report_onsets": {
+      "lower_extremity": 1207,
+      "upper_extremity": 330,
+      "trunk_other": 202,
+      "head_neck": 217
+    },
+    "concussion_report_onsets": 102,
+    "concussion_share_report_onsets": 0.0521,
+    "top_parts_report_onsets": {
+      "knee": 334,
+      "ankle": 244,
+      "hamstring": 185,
+      "shoulder": 170,
+      "back": 104,
+      "concussion": 102,
+      "groin": 82,
+      "foot": 81,
+      "hip": 66,
+      "calf": 64,
+      "thigh": 55,
+      "head": 55,
+      "neck": 53,
+      "elbow": 39,
+      "ribs": 39
+    },
+    "severity_report_onsets_footprint": {
+      "shares": {
+        "minor": 0.7745,
+        "short": 0.1514,
+        "multi_week": 0.0643,
+        "long_term": 0.0098
+      },
+      "n": 918,
+      "censored": 63,
+      "counts": {
+        "minor": 711,
+        "short": 139,
+        "multi_week": 59,
+        "long_term": 9
+      },
+      "by_class": {
+        "lower_extremity": {
+          "minor": 0.7597,
+          "short": 0.1534,
+          "multi_week": 0.0776,
+          "long_term": 0.0092
+        },
+        "upper_extremity": {
+          "minor": 0.8382,
+          "short": 0.0925,
+          "multi_week": 0.0578,
+          "long_term": 0.0116
+        },
+        "trunk_other": {
+          "minor": 0.8367,
+          "short": 0.1327,
+          "multi_week": 0.0204,
+          "long_term": 0.0102
+        },
+        "head_neck": {
+          "minor": 0.6887,
+          "short": 0.2547,
+          "multi_week": 0.0472,
+          "long_term": 0.0094
+        }
+      },
+      "definition": "minor 0 games missed; short 1-2; multi_week 3-8; long_term 9+ (incl. not seen again with 9+ club games left)"
+    }
+  },
+  "recommended": {
+    "label_key": "Confirmed = computed directly from D1-D3 by the builder; Pattern = derived from data plus a stated assumption or literature cross-check; Unverified = assumption without a direct 2012 source",
+    "structure": "Two onset streams. (1) Game onsets drawn on the possession stream per player-snap of actual participation (scrimmage, special teams and penalty-nullified snaps). (2) Optional between-game (practice/non-game) onsets drawn once per club-week, never removing anyone from a game, with the between-game class mix. Each game onset draws class (game mix), then severity conditional on class, then an in-game removal decision.",
+    "game_onsets_per_team_game": {
+      "value": 2.8,
+      "range": [
+        2.4,
+        3.3
+      ],
+      "label": "Pattern",
+      "basis": "4.075 report onsets per team-game (Confirmed, D1) times an estimated game-attributable share of 0.60-0.80 (L1 game vs practice AE rates with ~3 in-season practices per game; L5 hamstring regular-season practice vs game rates). Floor: in-game stoppages alone 1.098 per team-game (Confirmed, D2)."
+    },
+    "between_game_onsets_per_club_week": {
+      "value": 1.25,
+      "range": [
+        0.8,
+        1.7
+      ],
+      "label": "Pattern",
+      "basis": "report onsets minus game onsets"
+    },
+    "player_snaps_per_team_game_2012": {
+      "value": 1794,
+      "label": "Confirmed",
+      "basis": "11 x exposure plays per game: 41,758 exposure plays / 256 games (run, pass, kickoff, punt, extra point, field goal, kneel, spike and 1,478 snapped no_play rows; 2,716 timeout and pre-snap-foul no_play rows excluded). Verification pass corrected the research-pass 1,891, which counted every no_play row as a snap."
+    },
+    "mean_game_onset_hazard_per_player_snap": {
+      "value": 0.00156,
+      "label": "Pattern",
+      "basis": "2.8 / 1,794; the kernel must normalize on its own participation ledger so expected onsets per team-game equal game_onsets_per_team_game"
+    },
+    "position_relative_risk_per_snap": {
+      "values": {
+        "QB": 0.65,
+        "RB": 1.5,
+        "WR": 1.2,
+        "TE": 0.8,
+        "OL": 0.65,
+        "DL": 0.8,
+        "LB": 1.3,
+        "DB": 1.2,
+        "K/P/LS": 0.3
+      },
+      "label": "Pattern",
+      "basis": "Group share of onsets (report D1 and in-game stoppages D2, both Confirmed) divided by an assumed 2012 on-field slot share (QB 1, OL 5, RB 1.25, WR 2.45, TE 1.3; DL 3.7, LB 2.5, DB 4.8 of 22). Slot shares are Unverified (2012 has no public participation data, D4). Report-based RR: QB .59 RB 1.70 WR 1.32 TE 1.06 OL .64 DL .84 LB 1.30 DB .99; in-game RR (corrected note attribution): QB .74 RB 1.41 WR 1.07 TE .60 OL .63 DL .80 LB 1.24 DB 1.41. Values are the rounded mean of the two. Specialists: in-game RR about 0.2 per kick snap; report-based about 1.0 includes practice kicking strains; 0.30 chosen.",
+      "caveat": "RB/WR/LB/DB shares include special-teams injuries while slots count scrimmage only; per-snap RR for those groups is slightly overstated. Recalibrate once the kernel records actual snaps."
+    },
+    "head_neck_share": {
+      "game_onsets": 0.18,
+      "range": [
+        0.14,
+        0.21
+      ],
+      "in_game_removals": 0.23,
+      "label": "Pattern",
+      "note": "Replaces the uniform 25% draw. In-game stoppages that reached the next report were 22.9% head/neck (Confirmed D1+D2, n=284)."
+    },
+    "severity_bands": {
+      "definition": "games missed with weekly games: minor 0 (return within 6 days), short 1-2 (7-20 days), multi_week 3-8 (21-62 days), long_term 9+ or season-ending (63-180 days)",
+      "day_ranges": {
+        "minor": [
+          0,
+          6
+        ],
+        "short": [
+          7,
+          20
+        ],
+        "multi_week": [
+          21,
+          62
+        ],
+        "long_term": [
+          63,
+          180
+        ]
+      },
+      "label": "Pattern (day ranges follow from the weekly game cadence; within-band distribution uniform is Unverified)"
+    },
+    "severity_mix_all_onsets": {
+      "values": {
+        "minor": 0.76,
+        "short": 0.15,
+        "multi_week": 0.07,
+        "long_term": 0.02
+      },
+      "label": "Pattern",
+      "basis": "footprint report onsets .775/.151/.064/.010 (Confirmed D1+D2, n=918, 63 censored) and footprint in-game stoppages .752/.141/.065/.042 (n=262, 61 censored), plus unreported severe vanishes (20 cases, 0.039 per team-game, upper bound) and a censoring correction toward longer bands"
+    },
+    "severity_by_class_confirmed": "data.severity_report_onsets_footprint.by_class",
+    "in_game_removal": {
+      "rest_of_game_removals_per_team_game": {
+        "value": 0.95,
+        "range": [
+          0.6,
+          1.1
+        ],
+        "label": "Pattern",
+        "basis": "No 2012 source measures removals directly. 1.098 official injury stoppages per team-game (Confirmed); at least 45.4% of footprint players recorded a later play in the same game, so stoppage-linked removals are at most about 0.60. Removals without an injury timeout are unobserved. Time-loss game onsets (2.8 x 0.24 = 0.67) plus head/neck medical holds on minor injuries give about 0.9-1.0. 0.95 is the value implied by the recommended mix and removal probabilities, not a measured rate."
+      },
+      "removal_probability_by_severity": {
+        "minor": 0.05,
+        "short": 0.45,
+        "multi_week": 1.0,
+        "long_term": 1.0,
+        "head_neck_any": 1.0,
+        "label": "Pattern. Implied removals = 2.8 x [0.18 x 1.0 + 0.82 x (0.76 x 0.05 + 0.15 x 0.45 + 0.09 x 1.0)] = 0.95 per team-game, inside the 0.6-1.1 band. head_neck removal follows the independent medical hold already in canon, not a rate estimate."
+      },
+      "announced_return_by_disposition": {
+        "Probable": [
+          38,
+          51
+        ],
+        "Questionable": [
+          24,
+          63
+        ],
+        "Doubtful": [
+          1,
+          8
+        ],
+        "Out": [
+          1,
+          23
+        ],
+        "none": [
+          69,
+          148
+        ],
+        "label": "Confirmed (returned-footprint / notes)"
+      }
+    },
+    "acceptance_bands_for_kernel_2014_4": {
+      "game_onsets_per_team_game": [
+        2.4,
+        3.3
+      ],
+      "rest_of_game_removals_per_team_game": [
+        0.6,
+        1.1
+      ],
+      "head_neck_share_game_onsets": [
+        0.14,
+        0.21
+      ],
+      "head_neck_game_onsets_per_team_game": [
+        0.4,
+        0.58
+      ],
+      "lower_extremity_share_game_onsets": [
+        0.52,
+        0.63
+      ],
+      "time_loss_share_(short+)": [
+        0.18,
+        0.3
+      ],
+      "long_term_share": [
+        0.01,
+        0.04
+      ],
+      "concussions_per_team_game_if_kernel_labels_concussion": [
+        0.19,
+        0.34
+      ],
+      "position_order_checks": [
+        "RB, LB, DB, WR per-snap risk above OL, QB, DL",
+        "K/P/LS lowest per snap"
+      ]
+    },
+    "class_mix_game_onsets": {
+      "values": {
+        "lower_extremity": 0.57,
+        "upper_extremity": 0.155,
+        "trunk_other": 0.095,
+        "head_neck": 0.18
+      },
+      "label": "Pattern",
+      "basis": "Report head/neck onsets are 0.452 per team-game (Confirmed D1); adding under-listed concussions to the literature midpoint (0.19-0.34, i.e. +0.05) gives about 0.50. Assuming head/neck onsets are game injuries (Unverified), 0.50 / 2.8 game onsets = 0.18 (range 0.14-0.21: 80% game origin with no adjustment to 100% game origin at the 0.34 concussion figure). The other 0.82 is split in the report ratio lower .694 / upper .190 / trunk .116. Stoppages that reached the next report were 22.9% head/neck (Confirmed D1+D2, n=284). The research pass applied the all-report mix (head/neck 0.135) to game onsets, which gave 0.378 head/neck per team-game, fewer than the reports themselves listed."
+    },
+    "class_mix_between_game_onsets": {
+      "values": {
+        "lower_extremity": 0.69,
+        "upper_extremity": 0.19,
+        "trunk_other": 0.12,
+        "head_neck": 0.0
+      },
+      "label": "Pattern",
+      "basis": "Report class totals minus game onsets at the game mix; head/neck near zero follows from the Unverified game-origin assumption above."
+    }
+  },
+  "limitations": [
+    "Injury reports under-record minor injuries not affecting practice and over-record Probable carryovers; a new body part on a report is not a diagnosis.",
+    "Report onsets mix game and practice injuries; the game share is estimated, not observed.",
+    "Players placed on reserve before the Wednesday report never appear; the footprint check bounds this at about 0.04 per team-game among regular contributors.",
+    "Games missed is inferred from play-by-play footprints; offensive linemen are excluded and a player who plays without recording a stat looks absent (bias toward longer).",
+    "Week 1 listings (camp carryovers) and the Week 17 game (no following regular-season report) are outside the onset window.",
+    "In-game stoppage notes require an official injury timeout; injuries without a stoppage are missed.",
+    "Weekly-roster ACT/RES status for 2012 is back-filled and unusable for reserve timing.",
+    "Literature full texts were proxy-blocked; literature values come from abstracts/search summaries and are labelled accordingly."
+  ],
+  "verification": {
+    "date": "2026-09-29",
+    "reproduced": "fresh downloads, sha256 match; builder output == data block; independent code agrees on onsets, classes, severity, vanishes, notes",
+    "corrections": [
+      "note regex misattributed 22 of 562 in-game notes (lazy match from first team token); builder fixed with last-token rule and surname check",
+      "player-snap denominator 1,891 -> 1,794 (no_play timeouts and pre-snap fouls excluded; kneels, spikes added); hazard 0.00148 -> 0.00156",
+      "class mix split into game and between-game streams; game head/neck 0.135 -> 0.18 (0.14-0.21), Unverified game-origin assumption",
+      "removal target 0.85 -> 0.95 implied (band 0.6-1.1); the old floor/ceiling reading was invalid",
+      "WR RR 1.15 -> 1.20; acceptance bands aligned"
+    ],
+    "not_reverified": "L1-L6 literature (search budget exhausted, publisher/index hosts proxy-blocked)"
+  }
+}
