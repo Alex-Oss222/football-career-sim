@@ -1,6 +1,6 @@
 # Jacksonville Jaguars 2014 contract table
 
-**As of:** February 17, 2014 (ledger Entry 86). The 2014 league year opens March 11, 2014, 4:00 p.m. ET.
+**As of:** February 18, 2014 (ledger Entry 87). The 2014 league year opens March 11, 2014, 4:00 p.m. ET.
 **Nature:** derived view. It executes no signing, tag, tender, release, trade or extension, certifies no cap room and changes no canon. The [contract status register](contract_status_register.md) owns each player's status; the [2014 preparation worksheet](current_cap_worksheet.md) owns reconciliation; Caldwell owns contract decisions (Document 3).
 **Baseline:** [2013 initial cap sheet](../../2013/offseason/initial_cap_sheet.md) (per-player 2013 rows, Git `e04dd82`); [2013 regular-season worksheet](../../2013/offseason/current_cap_worksheet.md) and its May 5 version (Git `d25c8cf`); [2013 free-agency signings](../../2013/offseason/free_agency/signings.md); [2013 draftees](../../2013/offseason/draft/draftees.md); [2013 undrafted signings](../../2013/offseason/draft/udfa_signings.md); [2013 trades](../../2013/trades/trades.md); [2014 contract status register](contract_status_register.md) (Git `3cc276d`); [Caldwell's pre-tag-window verifications](caldwell_pre_tag_verifications.md) (Git `9ca804c`); [2014 free-agency outcomes](free_agency/signings.md); ledger Entries 3, 4, 7, 9, 79, 80, 85 and 86.
 
@@ -11,6 +11,7 @@ Add a row, and change the affected player rows and summaries, for every signing,
 | Date | Event | Ledger entry | Change |
 |---|---|---|---|
 | February 17, 2014 | Table created from the 2013 baseline, the 2014 register and the February 17 verifications | None (derived view; inputs through Entry 86) | 59 rows: 36 under contract, Meester retired, six reserve/future, 14 pending free agents, two unresolved |
+| February 18, 2014 | Eugene Monroe designated non-exclusive franchise player | Entry 87 | Monroe moves from pending UFA to franchise player (tender not yet signed; projected $11.654M, official February 28); pending UFAs 7; tag no longer available for Marks; section 6 items 1, 2 and 7 corrected in their owning files |
 
 ## 1. How to read this table
 
@@ -95,7 +96,7 @@ Terms for each (Entry 85): the 2014 minimum for the player's credited seasons, n
 
 The 2014 minimum scale by credited seasons is in [the verifications](caldwell_pre_tag_verifications.md) section 3 (only the 0-season figure is used above). An unresolved minimum is not zero.
 
-## 4. Pending free agents (14) and unresolved contracts (2)
+## 4. Pending free agents (13), franchise player (1) and unresolved contracts (2)
 
 Each remains Jacksonville's until the league year opens on March 11, 2014, 4:00 p.m. ET. "Planned" is Stone's memo recommendation as recorded in Entry 86; nothing is executed until Caldwell acts on the calendar.
 
@@ -103,8 +104,8 @@ Each remains Jacksonville's until the league year opens on March 11, 2014, 4:00 
 |---|---|---|---|---|---|---|---|---|
 | Chad Henne | QB | Veteran, signed March 14, 2012 | 2013 | $6,750,000 (2 years) | $4,650,000 (includes $500,000 "other", type unresolved) | Pending UFA | Re-sign as insurance; negotiating window from March 8, noon | Confirmed (register); 2013 OTC row |
 | Maurice Jones-Drew | RB | Veteran extension, 2009 | 2013 | $30,515,000 (term length Corrected in the register) | $6,800,000 | Pending UFA | Re-sign short | Final year Confirmed; 2013 archive row |
-| Eugene Monroe | OT | Rookie, 2009 first round (pick #8) | 2013 | $25,000,000 (5 years) | $5,747,500 | Pending UFA | Re-sign; non-exclusive franchise tag at 4 p.m. ET March 3 if unsigned. The tag amount is public February 28 and is not stated here | Confirmed; 2013 archive row |
-| Sen'Derrick Marks | DT | Veteran (branch signing), March 12, 2013 | 2013 | $1.50M (1 year) | $1.50M | Pending UFA | Re-sign; the tag moves to Marks only if Monroe signs first and Marks does not | Branch record |
+| Eugene Monroe | OT | Rookie, 2009 first round (pick #8) | 2013 | $25,000,000 (5 years) | $5,747,500 | **Franchise player (non-exclusive)**, designated February 18, 2014; tender not yet signed | Long-term talks continue on the memo's terms. 2014 tender: the offensive-line franchise figure, projected $11.654M (memo), official February 28; it counts against the 2014 cap from March 11 at the official figure. Offer sheets from other clubs possible from March 11 (two first-round picks if Jacksonville declines to match). Re-signing draw at his real signing date (March 11) under rails method section 4; if lost, he plays 2014 on the tag | Branch record (Entry 87; [tags and tenders](free_agency/signings.md#tags-and-tenders)); amount projected, Unresolved until February 28 |
+| Sen'Derrick Marks | DT | Veteran (branch signing), March 12, 2013 | 2013 | $1.50M (1 year) | $1.50M | Pending UFA | Re-sign. No tag is available (Jacksonville's one designation went to Monroe on February 18) | Branch record |
 | C.J. Wilson | DE | Rookie (Green Bay, 2010 seventh round), acquired by trade | 2013 | Unresolved | $630,000 base carried by Jacksonville (branch); reported cap number $642,590 (register) | Pending UFA | Minimum with no guarantee, or let go | Branch record (trade); final year Corrected (register) |
 | Alan Ball | CB | Veteran (branch signing), March 12, 2013 | 2013 | $1.00M (1 year) | $1.00M | Pending UFA | One-year competition deal | Branch record |
 | Brent Grimes | CB | Veteran (branch signing), March 12, 2013, fully guaranteed | 2013 | $5.50M (1 year) | $5.50M | Pending UFA | Fallback if a primary corner target is lost; otherwise he tests the market | Branch record |
@@ -125,7 +126,8 @@ Each remains Jacksonville's until the league year opens on March 11, 2014, 4:00 
 | Status | Count |
 |---|---:|
 | Under contract (active) | 36 |
-| Pending UFA | 8 |
+| Pending UFA | 7 |
+| Franchise player (non-exclusive, tender not yet signed) | 1 |
 | Pending RFA | 3 |
 | Pending ERFA | 3 |
 | Contract status Unresolved | 2 |
@@ -142,7 +144,8 @@ Thirteen players have an exactly sourced 2014 cap charge: Miller $3,250,000; Smi
 Not in that total:
 - **Approximate, single source (1):** Nwaneri, about $5.9M.
 - **Unresolved (28):** Cousins, Blackmon, Shorts, Lewis, Asper, Rackley, Brewster, Babin, Branch, Davis, Mincey, Alualu, Mosley, Pendleton, Allen, Posluszny, Stanford, Harris, Lowery, Prosinski, Scobee, Anger, Owens; and reserve/future players Murphy, Jerrell Jackson, Long, D'Anthony Smith and Blake.
-- **Pending free agents and unresolved contracts (16):** no 2014 charge until a tag, tender or contract exists (or, for Wilson and Jonathan Grimes, until the term is known).
+- **Franchise player (1):** Monroe's tender counts from March 11 at the official offensive-line figure (projected $11.654M; official February 28). Not in the total until the figure is published and the league year opens.
+- **Pending free agents and unresolved contracts (15):** no 2014 charge until a tender or contract exists (or, for Wilson and Jonathan Grimes, until the term is known).
 
 The total is a sum of scheduled charges. It is not a Top-51 figure and not club room.
 
@@ -162,11 +165,11 @@ The total is a sum of scheduled charges. It is not a Top-51 figure and not club 
 
 The 2014 cap and the adjusted club figures become public on **February 28, 2014** (Document 5 calendar). The amount is gated until then and is not stated here. The [preparation worksheet](current_cap_worksheet.md) stays UNRECONCILED.
 
-### 5f. Tags and tenders pending (none made)
+### 5f. Tags and tenders
 
 | Item | Player | Deadline | Status |
 |---|---|---|---|
-| Non-exclusive franchise tag, fallback | Eugene Monroe | 4 p.m. ET March 3, if unsigned | Planned (memo); not designated |
+| Non-exclusive franchise tag | Eugene Monroe | Designated February 18, 2014 (deadline was 4 p.m. ET March 3) | **Designated** (Entry 87); tender not yet signed; amount projected $11.654M until February 28 |
 | Lowest RFA tender | Cameron Bradfield | March 11, 4 p.m. ET | Planned; not made |
 | ERFA tenders | Toney Clemons, Mike Brown, Austin Pasztor | March 11, 4 p.m. ET | Planned; not made |
 | No tender | Allen Reisner, Kevin Rutland | Not applicable | Planned (memo) |
@@ -174,7 +177,7 @@ The 2014 cap and the adjusted club figures become public on **February 28, 2014*
 
 ## 6. Baseline contradictions and open reconciliations
 
-Found while building this table. None is resolved here; each needs a sourced correction in the owning file.
+Found while building this table. Items 1, 2 and 7 were corrected in their owning files on February 18 (Entry 87, administrative); the others remain open and need a sourced correction in the owning file.
 
 1. **Nwaneri's final year.** The register's inherited-contract row still says "final year 2014 or 2015 (disputed)", while the verifications and Entry 86 mark the 2015 end year Confirmed. The 2013 sheet's "2010, 5 years" reads as ending in 2014. This table uses 2015 per the later verification.
 2. **Blackmon's 2013 split.** The 2013 regular-season worksheet says the initial cap sheet "carries his total cap charge, not the base/proration split", but the initial cap sheet row shows a $1,231,455 base and $2,975,818 proration (archive transcription, not re-verified). The forfeiture amount stays unresolved either way.

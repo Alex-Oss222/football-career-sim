@@ -1,13 +1,13 @@
 # Jacksonville Jaguars 2014 depth chart (working view)
 
-**As of:** February 17, 2014 (ledger Entry 86). The 2014 league year opens March 11, 2014, 4:00 p.m. ET.
+**As of:** February 18, 2014 (ledger Entry 87). The 2014 league year opens March 11, 2014, 4:00 p.m. ET.
 **Status:** carried from the closed 2013 chart; no 2014 depth decision has been made. Stone owns the order and changes it only by decision.
 **Machine-readable copy:** [offseason/depth_chart_working.json](offseason/depth_chart_working.json), same schema as [the 2013 chart](../2013/depth_chart.json) plus contract flags, the March 11 additions and this update log.
 **Sources:** [2013 depth chart](../2013/depth_chart.json) (Git `781213a`, effective January 6, 2014, AFC Divisional preparation); [2013 roster](../2013/roster.md) (Git `3cc276d`, current through Entry 86); [2014 contract status register](offseason/contract_status_register.md) (Git `3cc276d`); [Caldwell's pre-tag-window verifications](offseason/caldwell_pre_tag_verifications.md); ledger Entries 79, 85 and 86.
 
 ## Why this is not `career/2014/depth_chart.json`
 
-`runtime/seasons.py` names `career/2014/depth_chart.json` as a required 2014 game input, and `runtime/week_inputs.py` reads that file as Stone's order when it builds Jacksonville's weekly TeamInput. Creating it now would remove the "Missing 2014 input" line from `scripts/check_game_readiness.py` with a chart that still lists 14 pending free agents, two players with unresolved contracts and a medical hold, and omits the six players whose contracts start March 11. The working copy therefore lives at `career/2014/offseason/depth_chart_working.json`. Promote a reviewed chart to `career/2014/depth_chart.json` only when 2014 control, medical clearance and Stone's depth decisions are established (the `legal_rosters` release gate).
+`runtime/seasons.py` names `career/2014/depth_chart.json` as a required 2014 game input, and `runtime/week_inputs.py` reads that file as Stone's order when it builds Jacksonville's weekly TeamInput. Creating it now would remove the "Missing 2014 input" line from `scripts/check_game_readiness.py` with a chart that still lists 13 pending free agents, a franchise-tagged tackle whose tender is unsigned, two players with unresolved contracts and a medical hold, and omits the six players whose contracts start March 11. The working copy therefore lives at `career/2014/offseason/depth_chart_working.json`. Promote a reviewed chart to `career/2014/depth_chart.json` only when 2014 control, medical clearance and Stone's depth decisions are established (the `legal_rosters` release gate).
 
 ## How to read this chart
 
@@ -68,7 +68,7 @@ The kernel group is one OL list. Brad Meester (C) is removed: Reserve/Retired un
 
 | Order | Player | Pos | Contract flag | 2013 recorded role | Availability |
 |---:|---|---|---|---|---|
-| 1 | Eugene Monroe | OT | **Pending UFA** | Starting LT | No communicated restriction |
+| 1 | Eugene Monroe | OT | **Franchise-tagged** (non-exclusive, February 18; tender not yet signed) | Starting LT | No communicated restriction |
 | 2 | Uche Nwaneri | G | Under contract | Starting LG | No communicated restriction |
 | 3 | Mike Brewster | C | Under contract | Starting center (confirmed Week 6) | No communicated restriction |
 | 4 | Will Rackley | G | Under contract | Starting right guard | Limited, no projected absence (upper extremity, Week 5) |
@@ -135,12 +135,13 @@ The kernel group is one OL list. Brad Meester (C) is removed: Reserve/Retired un
 
 Mike Westhoff has coordinated special teams since February 11, 2014 (Entry 84). No 2014 returner, coverage-unit or specialist decision has been made.
 
-## Counts at February 17, 2014
+## Counts at February 18, 2014
 
 | Group | Count |
 |---|---:|
 | Players on the carried chart (52 active controlled players) | 52 |
-| of whom pending UFA | 8 |
+| of whom pending UFA | 7 |
+| of whom franchise-tagged | 1 |
 | of whom pending RFA | 3 |
 | of whom pending ERFA | 3 |
 | of whom contract status Unresolved | 2 |
@@ -156,3 +157,4 @@ Add a row for every signing, tag, tender, trade, release, retirement, draft pick
 | Date | Event | Ledger entry | Change |
 |---|---|---|---|
 | February 17, 2014 | Working chart created from the closed 2013 chart | None (derived view; inputs are Entries 79, 85 and 86) | Meester removed; 14 pending free agents and 2 unresolved contracts flagged; six reserve/future players listed as joining March 11 with no role |
+| February 18, 2014 | Eugene Monroe designated non-exclusive franchise player | Entry 87 | Monroe's flag changes from pending UFA to franchise-tagged; order unchanged |

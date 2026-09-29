@@ -2515,3 +2515,25 @@ As a result, the contract status register now shows 36 under contract, 8 pending
 **Atomic closure.** The following now agree: the master clock (February 17), the roster header and player ages, the contract status register and 2014 worksheet, the calendar, the 2014 README, readiness and operating baseline pages, the trade status lines, the staff pages' clock references, and Documents 4 (register 42) and 5 (state 62). There is no player-control, cap-certification, staff, pick or game change. The private snapshot is not advanced from this branch.
 
 **Commit closed - Canonical update - February 17, 2014 - Clock advanced to February 17 (franchise and transition window open) - canonical through February 17, 2014**
+
+
+## Entry 87: Eugene Monroe designated franchise player (February 18, 2014)
+
+**Effective canonical state:** February 18, 2014.
+**Recorded:** September 29, 2026
+**Checkpoint:** `Canonical update - February 18, 2014 - Eugene Monroe designated franchise player`
+**Preceding global package checkpoint:** `Canonical update - February 17, 2014 - Clock advanced to February 17 (franchise and transition window open)`
+
+**Authority.** On September 29, 2026 the user instructed that Monroe be tagged now instead of holding the tag as the March 3 fallback in Stone's February 2 memo. The instruction is appended to the memo as a dated amendment ("tag Monroe now"); it supersedes the timing only. Designating a franchise player is Caldwell's contract authority under Document 3; he acts on the user's instruction. This is a stated reading, not a draw.
+
+**Event.** On Tuesday, February 18, 2014, the second day of the designation window (opened February 17; deadline March 3, 4 p.m. ET), Caldwell designated Eugene Monroe as Jacksonville's non-exclusive franchise player. It is Jacksonville's one designation for 2014.
+- **Tender amount.** The 2014 offensive-line franchise figure. Stone's memo carries it as a projection of $11.654M (from the CBS Sports projections reported February 17, 2014). The league publishes the official figures on February 28, so the amount is recorded as projected until then.
+- **Status.** Monroe is no longer a pending unrestricted free agent. He is a franchise player (non-exclusive) whose tender is not yet signed. The tender counts against Jacksonville's 2014 cap from the league year (March 11, 4 p.m. ET) at the official figure; no projected amount is certified.
+- **Market.** From March 11 another club may sign him to an offer sheet; if Jacksonville declines to match, it receives two first-round picks from that club. Long-term talks continue on the memo's section 2 terms. His re-signing outcome is resolved by one market draw at his real signing date, March 11, under rails method section 4; if Jacksonville loses that draw, he plays 2014 on the tag.
+- **No other tag.** No franchise or transition designation remains for Sen'Derrick Marks or any other player. Marks becomes an unrestricted free agent at the league year if unsigned.
+
+**Administrative corrections (derived-view contradictions, no event).** The contract register's Nwaneri row now shows the 2015 final year confirmed by the pre-tag-window verifications and Entry 86. The 2013 regular-season worksheet no longer says the initial cap sheet lacks Blackmon's base/proration split (it shows one, as an unre-verified archive transcription; the forfeiture stays unresolved). The 2013 draftees page carries a supersession note for Bray's rookie contract, replaced by his Entry 85 reserve/future deal. AGENTS.md now lists the depth chart and the contract table among the dependent views every progression task updates.
+
+**Atomic closure.** The following now agree: the memo amendment, the [tags and tenders record](../2014/offseason/free_agency/signings.md#tags-and-tenders), the contract status register (7 pending UFAs, 1 franchise player), the contract table and the working depth chart (both with update-log rows), the 2014 preparation worksheet, the calendar, the roster header, the 2014 README, readiness, operating baseline and trade status lines, and Documents 4 (register 43) and 5 (state 63). No player-control, roster-count, pick or staff change. The private snapshot is not advanced from this branch.
+
+**Commit closed - Canonical update - February 18, 2014 - Eugene Monroe designated franchise player - canonical through February 18, 2014**

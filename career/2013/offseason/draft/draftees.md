@@ -60,6 +60,8 @@ Caldwell completed all seven four-year rookie contracts before the verified May 
 | #208 | Tyler Bray | 4 years | $68,900 | $422,225 | $512,225 | $602,225 | $692,225 | $2,228,900 |
 | **Total** | | | **$17,736,408** | **$7,269,102** | **$8,980,407** | **$10,666,712** | **$12,403,517** | **$39,319,738** |
 
+**Bray supersession (administrative note, Entry 87):** Bray's rookie contract ended when he was waived on August 31, 2013 (`../../preseason/final_roster_cuts.md`), so his 2014 to 2016 rookie charges above no longer apply. His 2014 contract is the reserve/future deal signed February 3, 2014 at a $420,000 base (ledger Entry 85; `../../../2014/offseason/free_agency/signings.md`). The table is kept as the May 2 execution record.
+
 The prior branch total of **$7,326,170** for 2013 was incorrect and is superseded. Gross rookie charges are also not the same as net Top-51 effect. The May 5 worksheet (Git `d25c8cf`) calculated the drafted-rookie Top-51 effect at **$4,134,102** as of May 5; that figure is historical, because Top-51 accounting ended September 4. Current regular-season accounting is in `../current_cap_worksheet.md`.
 
 **Slot source:** OverTheCap's contemporaneous February 2013 Jacksonville rookie-pool estimate, cross-checked to the 2011 CBA Article 7 structure. The project uses the pick-slot economics because Jacksonville selected these players at those branch draft positions.
