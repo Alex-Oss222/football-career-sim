@@ -2,23 +2,27 @@
 
 The 2014 league year folder. The 2013 season is complete and archived (ledger Entry 67); this folder was set up in ledger Entry 68. Plans and future calendar entries are not completed events. Dated staff outcomes already closed in the ledger are linked below.
 
+**Start here:** [2014 operating baseline](operating_baseline.md) links the transaction records, training outputs, full schedule inventory and season handoffs. The clock remains February 2; next is the February 17 tag window.
+
 **Coaching staff:** [Open the 2014 staff timeline](offseason/staff_changes/timeline.md) to see who has been approached, who has left, which jobs are vacant and who Jacksonville hires. [Replacement targets](offseason/staff_changes/staff_plan.md) and [hiring outcomes](offseason/staff_changes/hires.md) are kept in the same folder.
 
 | Record | Path | Status |
 |---|---|---|
 | Calendar and gates | [calendar.md](calendar.md) | Current |
 | Draft order (generated from receipts) | [draft/draft_order.md](draft/draft_order.md) | All seven rounds: 224 ordinary assets audited; IND 14 / GB 15; JAX firsts 13/26 and eight picks; three conditional claims and compensatory awards remain pending |
-| Opponents | [schedule/opponents.md](schedule/opponents.md) | Opponents derived; dates gated to April 23, 2014 |
+| Schedule and opponents | [schedule/README.md](schedule/README.md) | All 32 clubs and 256 matchups generated; dated fixtures/bye wait for April 23; three London dates already known |
 | Contract and free-agency status at the league-year turn | [offseason/contract_status_register.md](offseason/contract_status_register.md) | Research register (sourced; see its labels) |
 | Stone's 2014 offseason decisions to Caldwell (futures, pending free agents and the tag, free-agency, draft and trade boards, phase direction) | [offseason/stone_to_caldwell_2014_offseason_decisions.md](offseason/stone_to_caldwell_2014_offseason_decisions.md) | User-authored recommendations; Caldwell decides when the calendar reaches each call |
-| Board pointers (single source: the memo) | [free agency](offseason/free_agency/player_board.md), [draft](offseason/draft/player_draft_board.md), [trades](trades/trade_targets.md), [futures](offseason/practice_squad_futures.md) | Present, so the offseason-cycle task can run on the calendar |
+| Current boards (memo plus explicit amendments) | [free agency](offseason/free_agency/player_board.md), [draft](offseason/draft/player_draft_board.md), [trades](trades/trade_targets.md), [futures](offseason/practice_squad_futures.md) | Eight draft targets, including Linsley on Detroit R5 and Gaines on JAX R6; six trade packages with triggers and deadlines |
 | Team training and player film | [Training index](offseason/README.md), [player queue](offseason/film/player_queue.md), [Cousins progression](offseason/player_development/kirk_cousins.md) | Prepared from 2013 evidence; no training or delivery invented |
 | Phase plans | [offseason program (Phases One and Two)](offseason/offseason_program/plan.md), [rookie minicamp](offseason/rookie_minicamp/plan.md), [OTAs (Phase Three)](offseason/otas/plan.md), [mandatory minicamp](offseason/mandatory_minicamp/plan.md), [training camp and preseason](offseason/training_camp/plan.md) | 2013 methods retained; individual training/film workflow authorized; other marked choices pending |
 | Coaching staff timeline and hiring | [Staff folder](offseason/staff_changes/README.md), [timeline](offseason/staff_changes/timeline.md), [targets](offseason/staff_changes/staff_plan.md), [hires](offseason/staff_changes/hires.md) | Through February 2: Lowry departed; Bush stays; special teams coordinator vacant; no replacement hired |
-| League rails (other clubs follow real rosters from 2014) | [offseason/league_rails/](offseason/league_rails/README.md) | Rule adopted (Entry 78); 31 draft club rosters built; the user completes rosters and contracts |
+| League rails (other clubs follow real rosters from 2014) | [offseason/league_rails/](offseason/league_rails/README.md) | 2,208-player research inventory built; nine FA targets verified; automated dated roster build and relevant exception checks remain Codex work |
 | Season ledger | not yet created; the 2013 ledger (`career/2013/ledger.md`) remains Document 6 until the first 2014 event closes | Pending |
 | Roster | `career/2013/roster.md` remains the controlled-roster record until a 2014 roster owner is created with the first roster-changing event | Pending |
 
 **Prepared:** the five phase plans and individual training/film workflow. Bobby April is selected for the staff search, not hired. Other explicitly marked decisions remain pending. The exit interviews (January 13-14, 2014; Entry 76) list the program decisions and staff findings the plans should answer (`career/2013/exit_interviews/README.md`).
 
-**Engine:** the user directed fixes for timeouts, the two-minute warning, kneel-downs and the fourth-down display before any 2014 game.
+**Engine:** [E1/E2 policy is adopted](../../runtime/2014_engine_decisions.md); implementation and the other Tier 1 fixes remain open. [The game release gate](operating_baseline.md#before-any-2014-game) also requires season-aware inputs and closure. This baseline is ready for offseason recordkeeping, not game execution.
+
+**Prepared execution records:** [trades](trades/README.md), [signings](offseason/free_agency/signings.md), [draft](offseason/draft/README.md), all five phase outputs and evidence summaries, [preseason](preseason/README.md), and [regular-season windows](regular_season/README.md). They begin empty or NOT_STARTED, without fictitious outcomes.
