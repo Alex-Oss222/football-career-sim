@@ -239,7 +239,10 @@
     "career/2014/offseason/player_development/roster_profiles.md",
     "library/2014_full_calendar_verification.md",
     "runtime/2014_engine_decisions.md",
-    "docs/pr_132_followup_review.md"
+    "docs/pr_132_followup_review.md",
+    "career/2014/draft/coin_flip.json",
+    "career/2014/draft/coin_flip_2026-09-29.jpg",
+    "career/2014/draft/ownership_audit.md"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",

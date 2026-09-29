@@ -2359,3 +2359,25 @@ The draw weights are a modelling choice and can be changed until the first draw.
 **Unchanged.** All seven exercised 2013 picks, player control, roles, contracts, cap charges, medical status, statistics, results, staff and the simulation clock. The existing Meester retirement leaves 52 active and 53 controlled, plus eight practice-squad players; stale active-count headers are reconciled to Entry 79 without a new roster event. The private snapshot must be advanced to the merged correction before any next simulated event; no private snapshot is advanced by this PR.
 
 **Commit closed - Canonical correction - February 2, 2014 - Cousins trade and draft capital reconciled - canonical through February 2, 2014**
+
+
+## Entry 81: Draft coin flip and league pick ownership reconciled
+
+**Effective canonical state:** February 2, 2014 (administrative reconciliation; no clock advance).
+**Recorded:** September 28, 2026 (Eastern; September 29 UTC).
+**Checkpoint:** `Canonical correction - February 2, 2014 - Draft coin flip and league pick ownership reconciled`
+**Preceding global package checkpoint:** `Canonical correction - February 2, 2014 - Cousins trade and draft capital reconciled`
+
+**User authority and draw.** The user directed a website coin flip and a league-wide pick-ownership correction. Before drawing, heads was assigned to Green Bay and tails to Indianapolis. The one-coin RANDOM.ORG result was **0 obverse, 1 reverse (tails)** at **2026-09-29 01:42:47 UTC**. Indianapolis receives Round 1 slot **14**, Green Bay **15**. The locally committed protocol, structured result and screenshot are in `career/2014/draft/coin_flip.json` and `coin_flip_2026-09-29.jpg`. There was one draw, no reroll. This user-authorized administrative resolution is not a claim about an actual 2014 NFL ceremony. The recorded result now drives all seven rounds, preserving equal-record rotation and original-club asset identity.
+
+**Ownership reconciliation.** The complete 224-asset audit is in `career/2014/draft/ownership_audit.md`, with dated source pairs and branch evidence. Pre-divergence consideration and consideration for trades already represented in the accepted 2013 background baseline are restored; this is bookkeeping for established acquisitions, not new negotiations. Closed branch receipts override conflicting historical midseason trades. The existing user exception for Washington's first remains controlling.
+
+**Jacksonville correction.** The October 2012 Mike Thomas trade conveyed Detroit's original 2014 fifth to Jacksonville. That inherited asset was missing from Entry 80's inventory. Jacksonville now owns **eight ordinary 2014 picks**: Washington's first, its own first, its own third and fourth, Detroit's fifth, its own fifth, sixth and seventh. Washington still owns Jacksonville's 2014/2015 seconds. This adds no new trade or player movement. Donald remains Stone's recorded instruction for No. 13; the draft has not taken place.
+
+**Branch conditions, not historical results.** Kansas City's closed 9-7 record satisfies the Alex Smith escalation, so its second goes to San Francisco and its third stays home. Arizona's QB1 and closed passing receipts support sixteen Palmer starts, satisfying the reported thirteen-start condition. Haralson and Shipley are in their receiving clubs' accepted opening rosters, satisfying the sourced roster conditions. Indianapolis keeps its first because Richardson remained in Cleveland; the historical Sopoaga, Beason, Levi Brown, Monroe and D'Anthony Smith transactions are not imposed on this branch.
+
+**Three specific conditional claims remain open.** Revis requires one Tampa Bay pick, third if he is on its roster on March 13, otherwise fourth; neither alternative is free to spend pending resolution. Public sources do not disclose Benn's compensation round/threshold or Rosario's exact playing-time threshold. Philadelphia's original assets carry a single unresolved Benn claim, not seven debts; Chicago's seventh carries the Rosario claim. No historical injury, release or real-life non-conveyance is used to invent a branch outcome. Those affected assets are encumbered and blocked by the ownership guard. Every other ordinary allocation is reconciled; the old blanket outside-club warning is removed. Compensatory awards remain gated to March 24 and their offsets are preserved.
+
+**Atomic closure.** The ownership register, renderer, seven-round order, ownership audit, 2014 calendar/index, rails pointers and Documents 4/5 now share this event. Register 38 / state 57 replace register 37 / state 56. Historical ledger entries and the frozen memo remain intact. Player control, contracts, cap charges, games, statistics, staff and the calendar do not change. Private snapshot binding must follow the merged correction before any simulated event; this PR does not advance that service.
+
+**Commit closed - Canonical correction - February 2, 2014 - Draft coin flip and league pick ownership reconciled - canonical through February 2, 2014**

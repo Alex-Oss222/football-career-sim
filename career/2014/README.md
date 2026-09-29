@@ -7,7 +7,7 @@ The 2014 league year folder. The 2013 season is complete and archived (ledger En
 | Record | Path | Status |
 |---|---|---|
 | Calendar and gates | [calendar.md](calendar.md) | Current |
-| Draft order (generated from receipts) | [draft/draft_order.md](draft/draft_order.md) | All seven rounds: 224 ordinary slots and current ownership; JAX firsts 13/26; coin flip, compensatory awards and other clubs' provisional ownership explicitly pending |
+| Draft order (generated from receipts) | [draft/draft_order.md](draft/draft_order.md) | All seven rounds: 224 ordinary assets audited; IND 14 / GB 15; JAX firsts 13/26 and eight picks; three conditional claims and compensatory awards remain pending |
 | Opponents | [schedule/opponents.md](schedule/opponents.md) | Opponents derived; dates gated to April 23, 2014 |
 | Contract and free-agency status at the league-year turn | [offseason/contract_status_register.md](offseason/contract_status_register.md) | Research register (sourced; see its labels) |
 | Stone's 2014 offseason decisions to Caldwell (futures, pending free agents and the tag, free-agency, draft and trade boards, phase direction) | [offseason/stone_to_caldwell_2014_offseason_decisions.md](offseason/stone_to_caldwell_2014_offseason_decisions.md) | User-authored recommendations; Caldwell decides when the calendar reaches each call |
