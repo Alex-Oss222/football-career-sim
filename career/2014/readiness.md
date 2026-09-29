@@ -1,11 +1,11 @@
 # 2014 setup and execution checklist
 
-**Checkpoint: February 17, 2014, Entry 86.** Setup is prepared; games remain blocked. [Operating baseline](operating_baseline.md) owns the workflow, [calendar](calendar.md) the dates, and [Document 5](../../state/05_Current_Season_State.md) the current snapshot. The planning season and current record owner are deliberately separate in [repository_map.json](../../docs/repository_map.json).
+**Checkpoint: February 25, 2014, Entry 88.** Setup is prepared; games remain blocked. [Operating baseline](operating_baseline.md) owns the workflow, [calendar](calendar.md) the dates, and [Document 5](../../state/05_Current_Season_State.md) the current snapshot. The planning season and current record owner are deliberately separate in [repository_map.json](../../docs/repository_map.json).
 
 | Area | Prepared now | Remaining work and gate |
 |---|---|---|
 | PR #135 integration | Living coaching profiles and their phase links coexist with the newer baseline, eight-pick board and phase outputs | Profiles are evidence records, not engine implementation |
-| Current handoff | Entry 82 reconciled plan, staff, roster-count and next-checkpoint summaries; Entries 83-86 closed the February staff, futures and contract-status events and advanced the clock to February 17 | First actual 2014 event establishes year-local current owners together |
+| Current handoff | Entry 82 reconciled plan, staff, roster-count and next-checkpoint summaries; Entries 83-86 closed the February staff, futures and contract-status events and advanced the clock to February 17; Entry 87 recorded Monroe's February 18 franchise tag; Entry 88 closed the Combine week | First actual 2014 event establishes year-local current owners together |
 | Contracts/cap | [2014 worksheet](offseason/current_cap_worksheet.md), corrected retired-player classification | Verify unresolved clauses, reserve/future players' credited seasons and actual 2014 obligations before affected execution |
 | Staff | Mike Westhoff special teams coordinator from February 11 (Entry 84); February coaching exposure resolved with no departure (Entry 83) | Emergency succession for a caller remains unassigned |
 | Training | Five linked NOT_STARTED outputs, player profiles, film queue, coach profiles | Pending role/Boot Flood/punt choices and lawful pre-program contact; no invented delivery receipts |

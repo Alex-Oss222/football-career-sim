@@ -24,6 +24,8 @@ Any task that **completes an event, advances the career clock, changes roster/co
    - `career/[year]/standings.md` whenever a final score changes any club's record, regenerated from receipts with `python scripts/render_standings.py YEAR`;
    - `career/[year]/stats/` whenever a regular-season or postseason game closes: preserve the public stat receipt and refresh the current team/league stat views from receipts rather than hand-adding prior Markdown;
    - the applicable cap/contract/draft-capital accounting file;
+   - `career/[year]/depth_chart.md` and its working JSON (`career/[year]/offseason/depth_chart_working.json` until the season input `career/[year]/depth_chart.json` is released), with a row in its update log;
+   - `career/[year]/offseason/contract_table.md`, with a row in its update log;
    - `state/04_Roster_and_Staff_Register.md`;
    - `state/05_Current_Season_State.md`.
    Update another file only when that file actually owns a changed current fact. Do **not** append transaction history, roster snapshots, draft recaps, or checkpoint bookkeeping to durable strategy, development, playbook, or planning documents.

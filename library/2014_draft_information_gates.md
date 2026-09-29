@@ -116,6 +116,8 @@ The full 98-name list has not been transcribed yet (see the pool registry).
 
 Combine measurements and drill results become available only after the player actually measures or works out. Do not preload combine numbers before the event.
 
+Combine results for Jacksonville's board prospects, their comparisons and the undrafted line list, each dated by its public release (February 21 to 25, 2014), are recorded in [2014_combine_results.md](2014_combine_results.md).
+
 ## March to April 2014: pro days and medical or workout updates
 
 NFL.com published a 2014 pro-day schedule (https://www.nfl.com/news/2014-pro-days-schedule-0ap2000000326264; publication date **unverified**). The schedule begins **Monday, March 3, 2014**, with pro days at Concordia (Minn.), Minnesota, Mississippi and Pittsburgh (confirmed by pass 2 search text of the same NFL.com page; an independent schedule exists at https://www.baltimoreravens.com/news/2014-pro-day-schedule-12753323 but its content was not shown in search text). The end of the window is **unverified**; the draft moved to May, so pro days and private workouts may run later than in 2013.

@@ -2,6 +2,8 @@
 
 **Planning checkpoint:** February 2, 2014, after ledger Entry 81. Stone's recommendations to Caldwell come from the [February 2 memo and its appended amendments](../stone_to_caldwell_2014_offseason_decisions.md). This is the current reading of that intent; the original memo remains intact. [Draftees](draftees.md) owns actual selections and contracts.
 
+**Combine evidence (February 25, 2014, Entry 88):** measurables, drill results and non-participation for the board's targets, comparisons and undrafted line list are now available in [the combine results file](../../../../library/2014_combine_results.md). No grade is assigned; grades are Stone's evaluation and remain open.
+
 ## Current targets on all eight owned assets
 
 | Round | Original club | Slot in round | Overall number now | Target | Existing alternative instruction / unresolved choice |

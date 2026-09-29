@@ -1,0 +1,221 @@
+{
+ "team": "Jacksonville Jaguars",
+ "season": 2014,
+ "status": "WORKING VIEW, NOT A GAME INPUT. Carried from the closed 2013 chart; no 2014 depth decision has been made.",
+ "as_of": "February 18, 2014 (ledger Entry 87)",
+ "effective": "Carried from the closed 2013 chart (January 6, 2014, AFC Divisional preparation)",
+ "sources": "career/2013/depth_chart.json (Git 781213a); career/2013/roster.md (Git 3cc276d; Entries 79, 85, 86); career/2014/offseason/contract_status_register.md (Git 3cc276d); ledger Entries 79, 85, 86",
+ "rule": "Order within each kernel position group is the closed 2013 order exactly as carried, minus players no longer controlled. It is not a 2014 decision. Stone owns the 2014 order and changes it only by decision; each change is logged in career/2014/depth_chart.md.",
+ "note": "Kept under career/2014/offseason/ on purpose. runtime/seasons.py treats career/2014/depth_chart.json as the 2014 game input, and runtime/week_inputs.py reads that file as Stone's order. A chart that still carries pending free agents and players whose contracts start March 11 must not satisfy that input. Promote a reviewed chart to career/2014/depth_chart.json only when 2014 control, medical clearance and Stone's depth decisions are established.",
+ "depth": {
+  "QB": [
+   "Kirk Cousins",
+   "Chad Henne",
+   "John Parker Wilson"
+  ],
+  "RB": [
+   "Maurice Jones-Drew",
+   "Jonathan Grimes",
+   "C.J. Anderson"
+  ],
+  "FB": [
+   "Montell Owens"
+  ],
+  "WR": [
+   "Cecil Shorts",
+   "Adam Thielen",
+   "Justin Blackmon",
+   "Toney Clemons",
+   "Mike Brown"
+  ],
+  "TE": [
+   "Marcedes Lewis",
+   "Travis Kelce",
+   "Allen Reisner"
+  ],
+  "OL": [
+   "Eugene Monroe",
+   "Uche Nwaneri",
+   "Mike Brewster",
+   "Will Rackley",
+   "Lane Johnson",
+   "Cameron Bradfield",
+   "Austin Pasztor",
+   "Mark Asper"
+  ],
+  "DL": [
+   "Sen'Derrick Marks",
+   "Jason Babin",
+   "Roy Miller",
+   "Tyson Alualu",
+   "C.J. Mosley",
+   "Jeremy Mincey",
+   "Andre Branch",
+   "Ryan Davis",
+   "Jeris Pendleton",
+   "C.J. Wilson",
+   "Lavar Edwards"
+  ],
+  "LB": [
+   "Daryl Smith",
+   "Russell Allen",
+   "Julian Stanford",
+   "Sio Moore",
+   "Paul Posluszny"
+  ],
+  "DB": [
+   "Dwight Lowery",
+   "Mike Harris",
+   "Brent Grimes",
+   "Bacarri Rambo",
+   "Jordan Poyer",
+   "A.J. Bouye",
+   "Kevin Rutland",
+   "Chris Prosinski",
+   "Brynden Trawick",
+   "Alan Ball"
+  ],
+  "K": [
+   "Josh Scobee"
+  ],
+  "P": [
+   "Bryan Anger"
+  ],
+  "LS": [
+   "Jeremy Cain"
+  ]
+ },
+ "positions": {
+  "Kirk Cousins": "QB",
+  "Chad Henne": "QB",
+  "John Parker Wilson": "QB",
+  "Maurice Jones-Drew": "RB",
+  "Jonathan Grimes": "RB",
+  "C.J. Anderson": "RB",
+  "Montell Owens": "FB",
+  "Justin Blackmon": "WR",
+  "Cecil Shorts": "WR",
+  "Adam Thielen": "WR",
+  "Toney Clemons": "WR",
+  "Mike Brown": "WR",
+  "Marcedes Lewis": "TE",
+  "Travis Kelce": "TE",
+  "Allen Reisner": "TE",
+  "Eugene Monroe": "OT",
+  "Uche Nwaneri": "OG",
+  "Will Rackley": "OG",
+  "Lane Johnson": "OT",
+  "Cameron Bradfield": "OT",
+  "Austin Pasztor": "OG",
+  "Mark Asper": "OG",
+  "Mike Brewster": "C",
+  "Sen'Derrick Marks": "DT",
+  "Jason Babin": "DE",
+  "Roy Miller": "DT",
+  "Tyson Alualu": "DT",
+  "C.J. Mosley": "DT",
+  "Jeremy Mincey": "DE",
+  "C.J. Wilson": "DE",
+  "Andre Branch": "DE",
+  "Jeris Pendleton": "DT",
+  "Lavar Edwards": "DE",
+  "Ryan Davis": "DE",
+  "Paul Posluszny": "LB",
+  "Daryl Smith": "LB",
+  "Russell Allen": "LB",
+  "Julian Stanford": "LB",
+  "Sio Moore": "LB",
+  "Dwight Lowery": "S",
+  "Alan Ball": "CB",
+  "Brent Grimes": "CB",
+  "Bacarri Rambo": "S",
+  "Jordan Poyer": "CB",
+  "Mike Harris": "CB",
+  "Chris Prosinski": "S",
+  "Kevin Rutland": "CB",
+  "A.J. Bouye": "CB",
+  "Brynden Trawick": "S",
+  "Josh Scobee": "K",
+  "Bryan Anger": "P",
+  "Jeremy Cain": "LS"
+ },
+ "roles": {
+  "Kirk Cousins": [
+   "passer"
+  ],
+  "Josh Scobee": [
+   "placekicker"
+  ],
+  "Bryan Anger": [
+   "punt"
+  ]
+ },
+ "contract_flags": {
+  "Chad Henne": "Pending UFA",
+  "Maurice Jones-Drew": "Pending UFA",
+  "Eugene Monroe": "Franchise-tagged (non-exclusive, designated February 18, 2014; tender not yet signed)",
+  "Sen'Derrick Marks": "Pending UFA",
+  "C.J. Wilson": "Pending UFA",
+  "Alan Ball": "Pending UFA",
+  "Brent Grimes": "Pending UFA",
+  "Jeremy Cain": "Pending UFA",
+  "Cameron Bradfield": "Pending RFA",
+  "Allen Reisner": "Pending RFA",
+  "Kevin Rutland": "Pending RFA",
+  "Toney Clemons": "Pending ERFA",
+  "Mike Brown": "Pending ERFA",
+  "Austin Pasztor": "Pending ERFA",
+  "John Parker Wilson": "Contract status Unresolved",
+  "Jonathan Grimes": "Contract status Unresolved"
+ },
+ "joins_90_man_roster_march_11": {
+  "note": "Reserve/future contracts signed February 3 and 5, 2014 (ledger Entry 85), effective at the league year (March 11, 2014, 4:00 p.m. ET). Listed below their groups; no role or depth position assigned.",
+  "QB": [
+   "Tyler Bray"
+  ],
+  "RB": [
+   "Richard Murphy"
+  ],
+  "WR": [
+   "Jerrell Jackson"
+  ],
+  "DL": [
+   "Jerome Long",
+   "D'Anthony Smith"
+  ],
+  "DB": [
+   "Antwon Blake"
+  ]
+ },
+ "future_positions": {
+  "Tyler Bray": "QB",
+  "Richard Murphy": "RB",
+  "Jerrell Jackson": "WR",
+  "Jerome Long": "DT",
+  "D'Anthony Smith": "DT",
+  "Antwon Blake": "S"
+ },
+ "availability_notes": {
+  "Paul Posluszny": "Out, head/neck, independent medical hold (Week 13); projected return April 5, 2014 (career/2013/roster.md)",
+  "Will Rackley": "Limited, no projected absence (upper extremity, Week 5) (career/2013/roster.md)",
+  "Russell Allen": "Real retirement dated April 22, 2014 applies when the clock reaches it (league rails, Entry 79)"
+ },
+ "removed_from_2013_chart": {
+  "Brad Meester": "Reserve/Retired (Entry 79); contract expires March 11, 2014"
+ },
+ "game_day_inactives": null,
+ "update_log": [
+  {
+   "date": "February 17, 2014",
+   "event": "Working chart created from the closed 2013 chart",
+   "ledger_entry": "None (derived view; Entries 79, 85, 86 are its inputs)",
+   "change": "Meester removed; pending UFA/RFA/ERFA and unresolved-contract flags added; six reserve/future players listed as joining March 11 without a role"
+  },
+  {
+   "date": "February 18, 2014",
+   "event": "Eugene Monroe designated non-exclusive franchise player",
+   "ledger_entry": "Entry 87",
+   "change": "Monroe's flag changes from pending UFA to franchise-tagged; order unchanged"
+  }
+ ]
+}

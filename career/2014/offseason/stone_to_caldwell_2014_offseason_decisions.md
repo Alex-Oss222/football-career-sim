@@ -327,3 +327,7 @@ Package A's precondition changes accordingly: Tate signed, and Hawkins or Edelma
 Before the pick, confirm Adams on the January 19 special-eligibility list and record a dated pre-selection scouting report; section 3 of the board already required both. No grade exists before the combine, and availability is decided at the draft by the league-rails rule.
 
 Line plan consequence: with Adams first at 26, the drafted offensive linemen are Turner (third), Linsley and Leno (fifths), and Bitonio only as the first fallback at 26. Package F2 still waits until two linemen are actually drafted, and the undrafted class stays weighted to the line. Pick 13 (Donald, then Fuller) and package H (Lawrence at 31) are unchanged.
+
+## September 29, 2026 amendment: tag Monroe now
+
+**User instruction, at the February 17, 2014 branch checkpoint, executed February 18, 2014 (ledger Entry 87):** designate Eugene Monroe as Jacksonville's non-exclusive franchise player now, rather than holding the tag as a fallback until 4 p.m. ET on March 3. This supersedes only the timing of the Monroe tag in section 2 and in the earlier amendment ("If he is unsigned at 4 p.m. ET on March 3, apply the non-exclusive franchise tag"). The re-signing terms in section 2 still govern the long-term talks, which continue under the tag. Because the tag is Jacksonville's one designation for 2014, the section 2 provision moving the tag to Marks can no longer apply; Marks becomes an unrestricted free agent at 4 p.m. ET on March 11 if unsigned.
