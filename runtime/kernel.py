@@ -1,10 +1,11 @@
 """One protagonist-blind possession kernel for interactive and background games."""
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass, asdict, replace
 import hashlib, json, math, random
 
 from . import KERNEL_VERSION
 from .calibration import load, validate
-from .injuries import maybe_injury
+from . import injury_model
+from . import participation
 from .rules import RULES, ot_status
 from . import drive_model
 from . import field_position
@@ -12,7 +13,7 @@ from . import usage
 from .player_evidence import empty_player_stats, normalize_players, observation
 from .play_detail import (
     apply_drive_detail, apply_kickoff_detail, canonical_call_sheet, check_ledger,
-    _period_clock,
+    _period_clock, _stream,
 )
 
 
@@ -225,7 +226,86 @@ LEGACY_OUTCOME = {
 }
 
 
-def resolve_game(
+# ---- Kernel 2014.4 E2: in-game removal, consequential substitutions, pause.
+# A player whose removal needs the controlling coach (E2 "important
+# substitution"): a quarterback, the designated caller, a featured role, or a
+# removal that changes the legal package. Anything else follows the club's
+# depth order (the approved contingency).
+CALLER_ROLES = frozenset({"caller", "play_caller", "signal_caller", "designated_caller",
+                          "defensive_caller", "green_dot"})
+# Specialists' emergency replacements, in order (the punter kicks, the kicker
+# punts, a lineman snaps).
+SPECIALIST_SPARES = {"K": ("P",), "P": ("K",), "LS": ("OL",)}
+
+
+def _featured(team):
+    """Player ids the TeamInput rotation plan marks as featured, if any.
+
+    Accepted entries: {"player"|"player_id": id, "featured": true} or with
+    "role"/"status" "featured". Other entries are ignored."""
+    ids = set()
+    for entry in getattr(team, "rotation_plan", ()) or ():
+        if isinstance(entry, dict):
+            pid = entry.get("player_id", entry.get("player"))
+            if pid and (entry.get("featured") is True or "featured" in (entry.get("role"), entry.get("status"))):
+                ids.add(pid)
+    return ids
+
+
+class _Paused(Exception):
+    def __init__(self, partial):
+        super().__init__("paused for a consequential substitution")
+        self.partial = partial
+
+
+def _partial_result(event_id, game_type, opening_receiver, stats, possessions, kickoffs,
+                    play_ledger, injuries, substitutions, history, pause):
+    """E2 step 4: completed events only. No final score, no team or player
+    totals, no later draw; the continuation token binds a decision to it."""
+    snapshot = json.loads(json.dumps({
+        "possessions": possessions, "kickoffs": kickoffs, "play_ledger": play_ledger,
+        "injuries": injuries, "substitutions": substitutions, "history": history, "pause": pause,
+    }, default=str))
+    return {
+        "kernel_version": KERNEL_VERSION,
+        "event_id": event_id,
+        "game_type": game_type,
+        "opening_receiver": opening_receiver,
+        "score": {tid: s["points"] for tid, s in stats.items()},
+        "possessions": snapshot["possessions"],
+        "kickoffs": snapshot["kickoffs"],
+        "play_ledger": snapshot["play_ledger"],
+        "injuries": snapshot["injuries"],
+        "substitutions": snapshot["substitutions"],
+        "pauses": snapshot["history"] + [snapshot["pause"]],
+        "paused": True,
+        "terminated": False,
+    }
+
+
+def resolve_game(home, away, *, seed, event_id, venue="home", weather="normal", game_type="regular",
+                 management_mode="autonomous", controlled_team=None, continuation=None, _test_onsets=None):
+    """Resolve one game, or return a genuine partial result at an E2 pause.
+
+    Kernel 2014.4 (E2): ``management_mode="user_controlled"`` with a
+    ``controlled_team`` stops before the next event after a consequential
+    in-game removal on that club and returns a partial result (no final
+    score, no later draws). ``continuation={"decisions": [...]}`` resumes it:
+    the game is re-run from the same seed, so the prefix and the frozen injury
+    reproduce exactly, and each decision is checked against the digest of the
+    partial state it answers. ``_test_onsets`` forces onsets for tests only;
+    the production runner (runtime/game_runner.run_game) cannot pass it.
+    """
+    try:
+        return _resolve_game(home, away, seed=seed, event_id=event_id, venue=venue, weather=weather,
+                             game_type=game_type, management_mode=management_mode,
+                             controlled_team=controlled_team, continuation=continuation,
+                             _test_onsets=_test_onsets)
+    except _Paused as paused:
+        return paused.partial
+
+
+def _resolve_game(
     home,
     away,
     *,
@@ -235,10 +315,22 @@ def resolve_game(
     weather="normal",
     game_type="regular",
     management_mode="autonomous",
-    resume=None,
+    controlled_team=None,
+    continuation=None,
+    _test_onsets=None,
 ):
     if not isinstance(seed, bytes) or len(seed) < 32:
         raise ValueError("private seed required")
+    if management_mode not in ("autonomous", "user_controlled"):
+        raise ValueError("unknown management mode")
+    if management_mode == "user_controlled" and controlled_team not in (home.team_id, away.team_id):
+        raise ValueError("user-controlled management requires the controlled club's team_id")
+    if continuation is not None and management_mode != "user_controlled":
+        raise ValueError("a continuation applies only to a user-controlled game")
+    if continuation is not None and not (isinstance(continuation, dict)
+                                         and isinstance(continuation.get("decisions", []), list)):
+        raise ValueError("continuation must be an object with a decisions list")
+    decisions = list((continuation or {}).get("decisions", []))
 
     home_players, away_players = normalize_players(home), normalize_players(away)
     if not home_players or not away_players:
@@ -257,6 +349,8 @@ def resolve_game(
         "game_type": game_type,
     }
     rng = _rng(seed, packet)
+    packet_digest = hashlib.sha256(
+        json.dumps(packet, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
     cal = load()
     assert not validate(cal)
     assert not usage.validate()
@@ -296,8 +390,200 @@ def resolve_game(
     # Kernel 2014.1: charged timeouts left, per club; reset at each half and
     # at the start of overtime (and every two postseason overtime periods).
     timeouts = {home.team_id: RULES.timeouts_per_half, away.team_id: RULES.timeouts_per_half}
-    # Legacy synthetic inputs without a QB keep one deterministic passer.
-    passers = {tid: usage.game_passer(players) or players[0] for tid, players in rosters.items()}
+    # Kernel 2014.4 (Tier 1 item 4, E2): the live available roster per club.
+    # A removed player leaves it at the end of his injury drive, so every
+    # later role (passer, front, skill, defense, returns, coverage, snapper,
+    # specialists) is re-derived from the players still available. The
+    # passer is chosen per drive; legacy inputs without a QB keep the first
+    # available player.
+    injury_model.parameters()
+    baseline = {tid: participation.group_counts(players) for tid, players in rosters.items()}
+    current = {tid: list(players) for tid, players in rosters.items()}
+    original_index = {tid: {p.player_id: i for i, p in enumerate(players)} for tid, players in rosters.items()}
+    removed = {}
+    vacated = {}
+    onset_players = set()
+    injuries = []
+    substitutions = []
+    exposure = {tid: {} for tid in rosters}
+    accumulator = {}
+    forced = dict(_test_onsets or {})
+    pause_state = {"pending": None, "history": []}
+
+    def lineup(team_id, side):
+        return participation.emergency_view(current[team_id], baseline[team_id], side)
+
+    def live_rosters():
+        return {tid: tuple(players) for tid, players in current.items()}
+
+    def add_exposure(team_id, snaps):
+        for pid, count in snaps.items():
+            exposure[team_id][pid] = exposure[team_id].get(pid, 0) + count
+
+    def eligible_for(team_id, player):
+        """Available replacements for a removed player's place, best first."""
+        players = current[team_id]
+        grp = usage.group(player.position)
+        ordered = list(usage.depth_order(players, grp)) if grp else []
+        for spare in SPECIALIST_SPARES.get(grp, ()):
+            ordered += usage.depth_order(players, spare)
+        if not ordered:
+            for source in participation.EMERGENCY_FROM.get(grp, ()):
+                ordered += usage.depth_order(players, source)[usage.MINIMUM_GAME_DAY.get(source, 0):]
+        if not ordered and grp in ("K", "P", "LS"):
+            ordered = list(players)
+        seen, out = set(), []
+        for p in ordered:
+            if p.player_id not in seen:
+                seen.add(p.player_id)
+                out.append(p.player_id)
+        return out
+
+    def consequential(team_id, player, counts_after):
+        """E2: why this removal needs the controlling coach, else None."""
+        grp = usage.group(player.position)
+        tags = set(player.roles) | set(player.responsibilities)
+        if grp == "QB":
+            return "quarterback"
+        if tags & CALLER_ROLES:
+            return "designated_caller"
+        if "featured" in tags or player.player_id in _featured(teams[team_id]):
+            return "featured_role"
+        need = min(usage.MINIMUM_GAME_DAY.get(grp, 0), baseline[team_id].get(grp, 0))
+        if counts_after.get(grp, 0) < need or (grp in ("K", "P", "LS") and not counts_after.get(grp)):
+            return "package_change"
+        return None
+
+    def end_of_drive(drive_no, clock, half):
+        """Draw this interval's onsets for both clubs, then apply removals."""
+        boundary = []
+        for team in (home, away):
+            tid = team.team_id
+            snaps = exposure[tid]
+            for player in rosters[tid]:
+                pid = player.player_id
+                count = snaps.get(pid, 0)
+                key = (drive_no, pid)
+                if pid in onset_players:
+                    if key in forced:
+                        raise ValueError("forced onset for a player already injured this game")
+                    continue
+                stream = _stream(injury_model.ONSET_TAG, seed, event_id, drive_no, tid, pid)
+                if key in forced:
+                    if count <= 0:
+                        raise ValueError("forced onset for a player with no exposure in that interval")
+                    spec = dict(forced.pop(key))
+                    injury = injury_model.disposition(stream, spec.get("injury_class"), spec.get("severity"))
+                    if "removed" in spec:
+                        injury["removed"] = bool(spec["removed"]) or injury["injury_class"] == "head_neck"
+                else:
+                    injury = injury_model.draw(stream, player.position, count)
+                if injury is None:
+                    continue
+                onset_players.add(pid)
+                entry = {"team": tid, "player": pid, **injury, "onset": "end_of_drive",
+                         "drive": drive_no, "half": half, "period": clock[0], "clock": clock[1],
+                         "snaps_in_interval": count}
+                injuries.append(entry)
+                boundary.append((tid, player, entry))
+            exposure[tid] = {}
+        decisions_due = []
+        for tid, player, entry in boundary:
+            if not entry["removed"]:
+                continue
+            pid = player.player_id
+            grp = usage.group(player.position)
+            live = current[tid]
+            live_player = next(p for p in live if p.player_id == pid)
+            before = usage.depth_order(live, grp) if grp else []
+            rank = next((i for i, p in enumerate(before) if p.player_id == pid), None)
+            current[tid] = [p for p in live if p.player_id != pid]
+            removed[pid] = entry
+            vacated[pid] = live_player
+            after = usage.depth_order(current[tid], grp) if grp else []
+            successor = after[rank].player_id if rank is not None and rank < len(after) else None
+            if grp == "OL":
+                # The lineman who now completes the protection front.
+                seated = {p.player_id for p in usage.protection_front(live).values()}
+                entering = [p.player_id for p in usage.protection_front(current[tid]).values()
+                            if p.player_id not in seated]
+                successor = entering[0] if entering else None
+            substitutions.append({"drive": drive_no, "team": tid, "removed": pid, "group": grp,
+                                  "basis": "depth_order", "replacement": successor})
+        if management_mode != "user_controlled":
+            return
+        counts_after = participation.group_counts(current[controlled_team])
+        for tid, player, entry in boundary:
+            if tid != controlled_team or not entry["removed"]:
+                continue
+            reason = consequential(tid, vacated[player.player_id], counts_after)
+            if reason:
+                eligible = eligible_for(tid, vacated[player.player_id])
+                if not eligible:
+                    raise participation.NoLegalPersonnel(
+                        "no available replacement for %s" % player.player_id)
+                decisions_due.append({"slot": player.player_id, "group": usage.group(player.position),
+                                      "reason": reason, "eligible": eligible, "default": eligible[0]})
+        if not decisions_due:
+            return
+        score = {tid: stats[tid]["points"] for tid in stats}
+        availability = {tid: {"removed": {pid: removed[pid]["restriction"] for pid in removed
+                                          if removed[pid]["team"] == tid},
+                              "available": [p.player_id for p in current[tid]]} for tid in current}
+        pause = {"trigger": "consequential_substitution", "team": controlled_team, "drive": drive_no,
+                 "half": half, "period": clock[0], "clock": clock[1], "score": score,
+                 "injuries": [dict(e) for _, _, e in boundary], "decisions": decisions_due,
+                 "availability": availability}
+        pause["continuation_token"] = hashlib.sha256(json.dumps(
+            {"packet": packet_digest, "index": len(pause_state["history"]), "pause": pause,
+             "possessions": possessions, "kickoffs": kickoffs, "play_ledger": play_ledger,
+             "injuries": injuries, "prior": pause_state["history"]},
+            sort_keys=True, separators=(",", ":"), default=str).encode()).hexdigest()
+        pause_state["pending"] = pause
+
+    def apply_decision(pause, decision):
+        """E2 step 5: validate the continuation decision, then promote."""
+        if not isinstance(decision, dict) or decision.get("token") != pause["continuation_token"]:
+            raise ValueError("stale or tampered continuation decision")
+        choices = decision.get("choices")
+        slots = {d["slot"]: d for d in pause["decisions"]}
+        if not isinstance(choices, dict) or set(choices) != set(slots):
+            raise ValueError("continuation must choose exactly the pending replacements")
+        if len(set(choices.values())) != len(choices):
+            raise ValueError("duplicate replacement in continuation")
+        for slot, choice in choices.items():
+            if choice not in slots[slot]["eligible"]:
+                raise ValueError("replacement %r is not an eligible available player" % (choice,))
+        tid = pause["team"]
+        order = original_index[tid]
+        for slot, choice in sorted(choices.items(), key=lambda item: order[item[0]]):
+            gone = vacated[slot]
+            live = current[tid]
+            chosen = next(p for p in live if p.player_id == choice)
+            promoted = replace(chosen, position=gone.position, depth=gone.depth,
+                               rotation_status=gone.rotation_status)
+            rest = [p for p in live if p.player_id != choice]
+            at = next((i for i, p in enumerate(rest) if order[p.player_id] > order[slot]), len(rest))
+            current[tid] = rest[:at] + [promoted] + rest[at:]
+            for sub in substitutions:
+                if sub["removed"] == slot and sub["team"] == tid:
+                    sub.update({"basis": "coach_choice", "replacement": choice})
+        pause_state["history"].append({"drive": pause["drive"], "team": tid,
+                                       "continuation_token": pause["continuation_token"],
+                                       "choices": dict(choices)})
+
+    def checkpoint():
+        """Before the next event: apply the pending decision or pause."""
+        pause = pause_state["pending"]
+        if pause is None:
+            return
+        index = len(pause_state["history"])
+        if index < len(decisions):
+            apply_decision(pause, decisions[index])
+            pause_state["pending"] = None
+            return
+        raise _Paused(_partial_result(event_id, game_type, opening_receiver, stats, possessions, kickoffs,
+                                      play_ledger, injuries, substitutions, pause_state["history"], pause))
 
     def other(team_id):
         return away.team_id if team_id == home.team_id else home.team_id
@@ -323,6 +609,7 @@ def resolve_game(
 
     def kick(kicking, receiving, *, free_kick, half, remaining, ot_label="OT"):
         """One real 2012 kickoff (or safety free kick) record: one randrange."""
+        checkpoint()
         kick_no = len(kickoffs) + 1
         drawn = field_position.free_kick(rng) if free_kick else field_position.kickoff(rng)
         returned = not drawn["touchback"]
@@ -338,16 +625,25 @@ def resolve_game(
             "enforcement": drawn["enforcement"], "outcome": drawn["outcome"],
         }
         kickoffs.append(record)
-        append_rows(apply_kickoff_detail(
+        live = live_rosters()
+        rows = apply_kickoff_detail(
             seed=seed, event_id=event_id, kick_no=kick_no,
-            kicking=teams[kicking], receiving=teams[receiving], rosters=rosters,
+            kicking=teams[kicking], receiving=teams[receiving], rosters=live,
             stats=stats, returned=returned, free_kick=free_kick,
             remaining=remaining, overtime=ot_label if half == "OT" else False, drive=record["drive"],
             record=record,
-        ))
+        )
+        append_rows(rows)
+        # Kernel 2014.4: the kick's units join the next drive's exposure.
+        for row in rows:
+            units = participation.kick(row, kicking, receiving, live[kicking], live[receiving])
+            for team_id, ids in units.items():
+                add_exposure(team_id, participation.credit(stats, team_id, dict.fromkeys(ids, 1),
+                                                           "special_teams"))
         return record
 
     def possess(offense, window, half, spot, start_kind, ot_history=None, ot_label="OT", quarter=None):
+        checkpoint()
         team = teams[offense]
         # Pro Bowl quarters are their own windows: the first three draw as a
         # first-half window ending the possession, the fourth as the second
@@ -541,14 +837,18 @@ def resolve_game(
                 "action": {"punt": "punt", "field_goal_attempt": "field_goal", "downs": "go"}[category],
             }
 
+        # Kernel 2014.4: this drive's lineups from the live rosters.
+        off_view, off_notes = lineup(offense, "offense")
+        def_view, def_notes = lineup(defense.team_id, "defense")
+        passer = usage.game_passer(off_view) or off_view[0]
         drive_ledger, drive_calls = apply_drive_detail(
             seed=seed,
             event_id=event_id,
             drive_no=drive_no,
             team=team,
             defense=defense,
-            available=rosters[offense],
-            defenders=rosters[defense.team_id],
+            available=off_view,
+            defenders=def_view,
             offense_stats=s,
             defense_stats=d,
             runs=runs,
@@ -575,7 +875,7 @@ def resolve_game(
             punt_record=punt_record,
             turnover_record=turnover_record,
             fourth_down=fourth_down,
-            passer=passers[offense],
+            passer=passer,
             diagnostics=diagnostics,
         )
         append_rows(drive_ledger)
@@ -583,8 +883,8 @@ def resolve_game(
         _append_evidence(
             evidence,
             drive_ledger,
-            rosters[offense],
-            rosters[defense.team_id],
+            off_view,
+            def_view,
             "turnover" if turnover_type else LEGACY_OUTCOME.get(category, "other"),
         )
 
@@ -629,12 +929,31 @@ def resolve_game(
             # expiry; expiry is 0 unless the drive ends its window).
             "own_seconds": drawn.own_seconds,
             "expiry_seconds": drawn.expiry_seconds,
+            # Kernel 2014.4 (append-only): the drive's passer.
+            "passer": passer.player_id,
         }
+        if off_notes or def_notes:
+            record["emergency"] = off_notes + def_notes
         if half == "OT":
             record["period"] = _period_clock(start_clock, overtime=ot_label)[0]
         if quarter:
             record["quarter"] = quarter
         possessions.append(record)
+        # Kernel 2014.4: record this drive's participants, then draw injury
+        # onsets for both clubs at the end of the drive (E2 step 1).
+        front = usage.protection_front(off_view)
+        scrimmage = participation.scrimmage(accumulator, offense, defense.team_id, off_view, def_view,
+                                            passer, front, drive_ledger)
+        for team_id, side in ((offense, "offense"), (defense.team_id, "defense")):
+            add_exposure(team_id, participation.credit(stats, team_id, scrimmage[team_id], side))
+        for row in drive_ledger:
+            if row.get("play_type") in participation.KICK_TYPES:
+                units = participation.kick(row, offense, defense.team_id, off_view, def_view)
+                for team_id, ids in units.items():
+                    add_exposure(team_id, participation.credit(stats, team_id, dict.fromkeys(ids, 1),
+                                                               "special_teams"))
+        overtime_label = ot_label if half == "OT" else False
+        end_of_drive(drive_no, _period_clock(end_clock, closing=True, overtime=overtime_label), half)
         return record, score_kind, next_kind
 
     def kicked_after(record, score_kind, window, half, ot_label="OT"):
@@ -740,21 +1059,10 @@ def resolve_game(
             offense = other(offense)
         total += overtime_seconds
 
-    injuries = []
-    for team in (home, away):
-        for p in rosters[team.team_id]:
-            injury = maybe_injury(rng, p.position, 20, "game")
-            if injury:
-                injuries.append({"team": team.team_id, "player": p.player_id, **asdict(injury)})
-
-    pauses = []
-    if management_mode == "user_controlled" and not resume:
-        pauses.append(
-            {
-                "trigger": "material_hc_decision",
-                "continuation_token": hashlib.sha256((event_id + ":pause").encode()).hexdigest(),
-            }
-        )
+    # The game is over: a removal at its last boundary affects no later play.
+    pause_state["pending"] = None
+    if len(pause_state["history"]) < len(decisions):
+        raise ValueError("continuation names a decision for a pause the game never reached")
 
     return {
         "kernel_version": KERNEL_VERSION,
@@ -769,10 +1077,18 @@ def resolve_game(
         "team_stats": stats,
         "player_evidence": evidence,
         "injuries": injuries,
-        "pauses": pauses,
+        "substitutions": substitutions,
+        "pauses": pause_state["history"],
         "diagnostics": diagnostics,
         "terminated": True,
     }
+
+
+# Ledger fields naming a participant, and which club (row key) he plays for.
+REMOVAL_FIELDS = (("passer", "offense"), ("runner", "offense"), ("target", "offense"),
+                  ("blocker", "offense"), ("kicker", "offense"), ("punter", "offense"),
+                  ("long_snapper", "offense"), ("cover_player", "offense"),
+                  ("tackler", "defense"), ("assist_tackler", "defense"), ("returner", "defense"))
 
 
 def validate_result(result):
@@ -804,7 +1120,41 @@ def validate_result(result):
             errors.append("sack attribution mismatch")
         if sum(p["receptions"] for p in players.values()) != sum(p["completions"] for p in players.values()):
             errors.append("reception/completion mismatch")
-        if sum(p["pass_attempts"] > 0 for p in players.values()) > 1:
+        participation_recorded = bool(players) and all("offensive_snaps" in p for p in players.values())
+        drive_passers = [p.get("passer") for p in result["possessions"] if p["team"] == team]
+        if participation_recorded and drive_passers and all(drive_passers):
+            # Kernel 2014.4 (E2): a backup can pass. Every thrower is a drive
+            # passer, and the passer changes only after the previous one was
+            # removed at an earlier drive's end.
+            throwers = {pid for pid, p in players.items() if p["pass_attempts"] > 0}
+            if not throwers <= set(drive_passers):
+                errors.append("pass attempt credited to a player who was not a drive passer")
+            removed_at = {i["player"]: i["drive"] for i in result.get("injuries", ())
+                          if i.get("removed") and i.get("team") == team}
+            previous = None
+            for poss in (p for p in result["possessions"] if p["team"] == team):
+                if previous is not None and poss["passer"] != previous:
+                    if not removed_at.get(previous, poss["number"]) < poss["number"]:
+                        errors.append("passer change without a removal")
+                        break
+                previous = poss["passer"]
+            for pid, p in players.items():
+                if (p["pass_attempts"] or p["rushing_attempts"] or p["targets"] or p["sacks_allowed"]) \
+                        and not p["offensive_snaps"]:
+                    errors.append("offensive credit without an offensive snap")
+                    break
+            for pid, p in players.items():
+                if (p["tackles"] or p["sacks"] or p["defensive_interceptions"] or p["passes_defended"]) \
+                        and not p["defensive_snaps"]:
+                    errors.append("defensive credit without a defensive snap")
+                    break
+            for pid, p in players.items():
+                if (p["punts"] or p["field_goals_attempted"] or p["extra_points_attempted"] or p["long_snaps"]
+                        or p["kick_returns"] or p["punt_returns"] or p["special_teams_tackles"]) \
+                        and not p["special_teams_snaps"]:
+                    errors.append("special-teams credit without a special-teams snap")
+                    break
+        elif sum(p["pass_attempts"] > 0 for p in players.values()) > 1:
             errors.append("more than one passer without a game-passer change")
         if any(p["tackles"] != p["solo_tackles"] + p["assisted_tackles"] for p in players.values()):
             errors.append("tackle credit mismatch")
@@ -818,7 +1168,12 @@ def validate_result(result):
             snapper = linemen or any(p["position"] == "LS" for p in players.values())
             if sum(p["line_starts"] for p in players.values()) != min(5, linemen):
                 errors.append("line start count mismatch")
-            if linemen and any(p["sacks_allowed"] and not p["line_starts"] for p in players.values()):
+            # Kernel 2014.4: line starts are the game-opening front only; a
+            # substitute lineman who entered later is on the field when he has
+            # offensive snaps.
+            if linemen and any(p["sacks_allowed"] and not (p["offensive_snaps"] if participation_recorded
+                                                           else p["line_starts"])
+                               for p in players.values()):
                 errors.append("sack charged to a lineman off the field")
             kicks = [row for row in result.get("play_ledger", [])
                      if row.get("offense") == team and row.get("play_type") in ("kickoff", "free_kick", "punt")]
@@ -862,6 +1217,19 @@ def validate_result(result):
 
     possessions = result["possessions"]
     elapsed = sum(p["seconds"] for p in possessions)
+    removed_at = {(i["team"], i["player"]): i["drive"] for i in result.get("injuries", ())
+                  if i.get("removed") and "drive" in i}
+    if removed_at:
+        # Kernel 2014.4 (E2): a removed player takes no later snap or credit.
+        late = False
+        for row in result.get("play_ledger", []):
+            for field, side in REMOVAL_FIELDS:
+                pid = row.get(field)
+                onset = removed_at.get((row.get(side), pid)) if pid else None
+                if onset is not None and row.get("drive", 0) > onset:
+                    late = True
+        if late:
+            errors.append("removed player participates after his removal")
     if sum(s["time_of_possession"] for s in result["team_stats"].values()) != elapsed:
         errors.append("clock mismatch")
     if any(

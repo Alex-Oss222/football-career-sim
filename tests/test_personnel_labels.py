@@ -41,6 +41,10 @@ class PersonnelLabelTests(unittest.TestCase):
         from runtime import usage
         checked = 0
         for result in sample():
+            # Kernel 2014.4: ranks are within the players still available on
+            # that drive (a removed player's place goes to the next by depth).
+            removed_at = {i["player"]: i["drive"] for i in result.get("injuries", ())
+                          if i.get("removed") and i["team"] == "A"}
             for row in result.get("play_ledger") or []:
                 if row.get("offense") != "A" or row.get("label_source") != "sheet":
                     continue
@@ -48,7 +52,9 @@ class PersonnelLabelTests(unittest.TestCase):
                 if not player or player not in by_id or row.get("scramble"):
                     continue
                 grp = usage.group(by_id[player].position)
-                ordered = usage.depth_order(tuple(p for p in a.roster if p.available), grp)
+                ordered = usage.depth_order(tuple(
+                    p for p in a.roster if p.available and removed_at.get(p.player_id, row["drive"]) >= row["drive"]),
+                    grp)
                 rank = next((i for i, p in enumerate(ordered, 1) if p.player_id == player), None)
                 checked += 1
                 self.assertTrue(_personnel_fits(row, grp, rank), (row.get("concept"), player, rank))
