@@ -14,7 +14,7 @@ class DraftOrderTests(unittest.TestCase):
     def setUpClass(cls):
         cls.regular = draft_order._load(postseason.REGULAR_RECEIPTS)
         cls.post = draft_order._load(postseason.POSTSEASON_RECEIPTS)
-        cls.rows = draft_order.order(cls.regular, cls.post)
+        cls.rows = draft_order.order(cls.regular, cls.post, coin_flip={})
         cls.by_club = {r["club"]: r for r in cls.rows}
 
     def test_every_club_once_in_32_slots(self):
@@ -51,7 +51,7 @@ class DraftOrderTests(unittest.TestCase):
 class SevenRoundTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.first = draft_order.order()
+        cls.first = draft_order.order(coin_flip={})
         cls.register = draft_order.load_ownership()
         cls.rows = draft_order.seven_rounds(cls.first, cls.register)
 
@@ -131,8 +131,8 @@ class SevenRoundTests(unittest.TestCase):
         second = self.asset(2, "Jacksonville Jaguars")
         self.assertEqual((second["owner"], second["base_overall_options"]), ("Washington Redskins", [58]))
         owned = [r for r in self.rows if r["owner"] == "Jacksonville Jaguars"]
-        self.assertEqual(len(owned), 7)
-        self.assertEqual([r["round"] for r in owned], [1, 1, 3, 4, 5, 6, 7])
+        self.assertEqual(len(owned), 8)
+        self.assertEqual([r["round"] for r in owned], [1, 1, 3, 4, 5, 5, 6, 7])
         self.assertEqual(draft_order.ownership_for(2015, 2, "Jacksonville Jaguars", self.register)[0], "Washington Redskins")
         self.assertEqual(self.asset(1, "St. Louis Rams")["owner"], "St. Louis Rams")
 
@@ -172,9 +172,118 @@ class SevenRoundTests(unittest.TestCase):
                     with self.assertRaises(ValueError):
                         draft_order.load_ownership(path)
 
-    def test_default_other_club_allocation_is_not_claimed_verified(self):
+    def test_chiefs_payment_uses_branch_condition(self):
         row = self.asset(2, "Kansas City Chiefs")
-        self.assertEqual(row["ownership_status"], "provisional")
+        self.assertEqual(row["ownership_status"], "recorded")
+        self.assertEqual(row["owner"], "San Francisco 49ers")
+        self.assertEqual(self.asset(3, "Kansas City Chiefs")["owner"], "Kansas City Chiefs")
+        self.assertEqual(next(r for r in self.first if r['club'] == 'Kansas City Chiefs')['record'], '9-7-0')
+
+
+class RecordedDrawAndOwnershipTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.rows = draft_order.seven_rounds()
+        cls.register = draft_order.load_ownership()
+        cls.draw = json.loads(draft_order.COIN_FLIP.read_text())
+
+    def test_saved_single_draw_resolves_every_round_without_redraw(self):
+        self.assertEqual(self.draw['result'], 'tails')
+        self.assertEqual(self.draw['site_result'], '0 obverse, 1 reverse')
+        self.assertEqual(self.draw['flip_count'], 1)
+        self.assertEqual(self.draw['observed_at'], '2026-09-29T01:42:47Z')
+        for club, expected in [('Indianapolis Colts', [14,19,18,17,16,15,14]),
+                               ('Green Bay Packers', [15,14,19,18,17,16,15])]:
+            self.assertEqual([r['slot_options'] for r in self.rows if r['club'] == club], [[n] for n in expected])
+        for rnd in range(1, 8):
+            self.assertEqual(sorted(r['slot_options'][0] for r in self.rows if r['round'] == rnd), list(range(1,33)))
+        self.assertFalse(any(r['coin_flip_pending'] for r in self.rows))
+        self.assertEqual(draft_order.seven_rounds(), self.rows)
+
+    def test_coin_record_rejects_changed_winner_protocol_and_evidence(self):
+        for field, value in [('winner','Green Bay Packers'), ('flip_count',2),
+                             ('winner_slot',13), ('rerolls_permitted',True),
+                             ('screenshot_sha256','0'*64)]:
+            bad = dict(self.draw, **{field:value})
+            with self.subTest(field=field), self.assertRaises(ValueError):
+                draft_order.order(coin_flip=bad)
+        unrelated = draft_order.order(coin_flip={})
+        unrelated[13]['club'] = 'Miami Dolphins'
+        with self.assertRaises(ValueError):
+            draft_order.apply_coin_flip(unrelated, self.draw)
+
+    def test_all_assets_have_one_current_owner_and_specific_hold_status(self):
+        self.assertEqual(len(self.rows),224)
+        self.assertEqual(len({(r['draft_year'],r['round'],r['club']) for r in self.rows}),224)
+        self.assertEqual(sum(r['ownership_status']=='recorded' for r in self.rows),17)
+        self.assertEqual(sum(r['ownership_status']=='encumbered' for r in self.rows),10)
+        self.assertFalse(any(r['ownership_status']=='provisional' for r in self.rows))
+        self.assertEqual(sum(sum(r['owner']==c for r in self.rows) for c in draft_order.TEAMS),224)
+
+    def test_inherited_detroit_fifth_not_missing_or_duplicated(self):
+        row = next(r for r in self.rows if r['round']==5 and r['club']=='Detroit Lions')
+        self.assertEqual(row['owner'],'Jacksonville Jaguars')
+        self.assertEqual(row['base_overall_options'],[139])
+        self.assertEqual(row['compensatory_after_rounds'],[3,4])
+        self.assertEqual(sum(r['owner']=='Jacksonville Jaguars' for r in self.rows),8)
+
+    def test_specific_claims_cannot_be_spent_or_booked_twice(self):
+        self.assertEqual({c['id'] for c in self.register['conditional_claims']},{'revis','benn','rosario'})
+        for claim in self.register['conditional_claims']:
+            self.assertEqual(claim['max_picks'],1)
+            for rnd in claim['round_options']:
+                owner,status,_ = draft_order.ownership_for(2014,rnd,claim['original_club'],self.register)
+                self.assertEqual(owner,claim['original_club'])
+                self.assertEqual(status,'encumbered')
+                with self.assertRaises(ValueError):
+                    draft_order.require_clear_ownership(2014,rnd,claim['original_club'],self.register)
+        self.assertEqual(draft_order.require_clear_ownership(2014,1,'Washington Redskins'),'Jacksonville Jaguars')
+        for year,rnd,club in [(2015,1,'Dallas Cowboys'),(2014,8,'Dallas Cowboys')]:
+            with self.assertRaises(ValueError):
+                draft_order.require_clear_ownership(year,rnd,club)
+
+    def test_register_rejects_future_transfer_missing_club_and_overlapping_claim(self):
+        variants=[]
+        bad=copy.deepcopy(self.register); bad['transfers'][0]['effective_date']='2014-03-12'; variants.append(bad)
+        bad=copy.deepcopy(self.register); bad['audited_clubs'].pop(); variants.append(bad)
+        bad=copy.deepcopy(self.register); bad['conditional_claims'].append(copy.deepcopy(bad['conditional_claims'][0])); variants.append(bad)
+        bad=copy.deepcopy(self.register); bad['conditional_claims'][0]['original_club']='Jacksonville Jaguars'; bad['conditional_claims'][0]['round_options']=[2]; variants.append(bad)
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)/'picks.json'
+            for bad in variants:
+                path.write_text(json.dumps(bad))
+                with self.assertRaises(ValueError): draft_order.load_ownership(path)
+
+    def test_closed_branch_receipts_prevent_real_midseason_transfer_import(self):
+        regular=draft_order._load(postseason.REGULAR_RECEIPTS)
+        for player,club,rounds in [('Trent Richardson','Cleveland Browns',[]),
+                                  ('Isaac Sopoaga','Philadelphia Eagles',[6]),
+                                  ('Jon Beason','Carolina Panthers',[]),
+                                  ('Levi Brown','Arizona Cardinals',[])]:
+            found=[r for r in regular if player in r['team_stats'].get(club,{}).get('players',{})]
+            self.assertEqual(len(found),16, player)
+        for club,rnd in [('Indianapolis Colts',1),('New England Patriots',5),
+                         ('New York Giants',7),('Baltimore Ravens',4),('Baltimore Ravens',5)]:
+            self.assertEqual(draft_order.require_clear_ownership(2014,rnd,club),club)
+
+    def test_roster_and_palmer_conditions_use_branch_evidence(self):
+        baseline=json.loads((draft_order.ROOT/'library/data/2013_week1_depth_charts.json').read_text())
+        for club,player in [('Baltimore Ravens','A.Q. Shipley'),('New Orleans Saints','Parys Haralson')]:
+            self.assertIn(player,[p['player_id'] for p in baseline['clubs'][club]['players']])
+        palmer=next(p for p in baseline['clubs']['Arizona Cardinals']['players'] if p['player_id']=='Carson Palmer')
+        self.assertEqual(palmer['slots'],'QB1')
+        arizona=[r['team_stats']['Arizona Cardinals'] for r in draft_order._load(postseason.REGULAR_RECEIPTS) if 'Arizona Cardinals' in r['team_stats']]
+        self.assertEqual(len(arizona),16)
+        for team in arizona:
+            self.assertEqual([p for p,s in team['players'].items() if s.get('pass_attempts',0)>0],['Carson Palmer'])
+
+    def test_generated_order_is_current_and_shows_claims(self):
+        from scripts.render_draft_order import render, OUT
+        text=render()
+        self.assertEqual(text,OUT.read_text())
+        self.assertIn('eight', (draft_order.ROOT/'career/2014/draft/ownership_audit.md').read_text())
+        self.assertNotIn(' †',text)
+        self.assertIn('conditional hold',text)
 
 
 if __name__ == "__main__":

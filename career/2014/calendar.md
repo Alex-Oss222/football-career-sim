@@ -8,7 +8,7 @@
 
 ## Current checkpoint
 
-- **Master date:** February 2, 2014, after Super Bowl XLVIII (2013 season complete; latest closed Entry 80, Cousins trade and draft capital reconciled; Entry 79, Meester retired and Allen retirement scheduled; league rails Entry 78; staff reconciliation Entry 77; exit interviews Entry 76).
+- **Master date:** February 2, 2014, after Super Bowl XLVIII (2013 season complete; latest closed Entry 81, draft coin flip and league ownership reconciled; Entry 80, Cousins compensation corrected; Entry 79, Meester retired and Allen retirement scheduled; league rails Entry 78; staff reconciliation Entry 77; exit interviews Entry 76).
 - **Jacksonville:** 2013 finished 10-6, 1-1 postseason. 52 active, Brad Meester on Reserve/Retired and 8 on the practice squad. `career/2013/roster.md` remains the controlled-roster owner.
 - **Planning prepared:** the five phase plans retain the 2013 methods. The [training and individual-film workflow](offseason/README.md), including the living assessment of Cousins and every player, is authorized; other marked choices remain pending. Bobby April is selected for the search at the recorded terms, with employment/permission and acceptance unresolved. No phase or hiring event has run.
 - **Next league events:** franchise and transition window February 17; Combine February 19-25; the 2014 league year opens March 11, 4:00 p.m. ET.
@@ -35,7 +35,7 @@
 | Jan. 13–14 / Jan. 15 | Player exit interviews / season review | Complete; Entries 76 / 74 |
 | Jan. 15 / Jan. 25 / Jan. 26 | Draft special-eligibility deadline / Senior Bowl / 2013-season Pro Bowl | Complete; draft gates and 2013 records |
 | Jan. 31 commitments, reviewed from Feb. 2 | Reconcile individual film promises: prepared, actually delivered, acknowledged and reviewed are separate facts | Open; [61-player queue](offseason/film/player_queue.md); historical receipts unverified |
-| Feb. 2 | Closed Super Bowl XLVIII; Entry 80 corrects the earlier Cousins deal: JAX holds Washington's first (13) plus its own (26); Washington holds JAX's 2014/2015 seconds | Administrative correction, no clock advance; [seven-round order](draft/draft_order.md); player assessments prepared |
+| Feb. 2 | Closed Super Bowl XLVIII; Entry 80 corrects the earlier Cousins deal: JAX holds Washington's first (13) plus its own (26); Washington holds JAX's 2014/2015 seconds | Entry 81 resolves IND/GB and restores Detroit fifth to JAX; eight ordinary picks. Administrative correction, no clock advance; [seven-round order](draft/draft_order.md); player assessments prepared |
 | Feb. 3 | 2014 waiver system begins | Future; Caldwell, source A/B |
 | From Feb. 3, next staff checkpoint | Pursue Bobby April through the recorded employment/permission process and offer limits; Stone continues interim ST work | Proposed execution; [staff plan](offseason/staff_changes/staff_plan.md), no appointment |
 | Feb. 17 | Franchise/transition designation window opens; apply Stone's February 2 memo | Future; Caldwell |

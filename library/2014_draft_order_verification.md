@@ -1,5 +1,8 @@
 # 2014 branch draft order: rule and ownership verification
 
+**Current-status supplement, Entry 81:** the website coin flip is resolved (Indianapolis 14, Green Bay 15) and all 224 ordinary assets have been audited. Jacksonville now has eight ordinary picks, including the previously omitted Detroit fifth. [Current ownership audit](../career/2014/draft/ownership_audit.md) supersedes the coin/blanket-provisional status below. Three specific conditional claims remain, as do March 24 compensatory awards. The original research below is preserved as Entry 80 history.
+
+
 Researched September 28–29, 2026; applied at the unchanged February 2, 2014 branch checkpoint, ledger Entry 80. This document verifies procedure and eligible historical ownership. It does not import the real 2013 standings, 2014 draft order, selections, compensatory recipients or post-divergence trades.
 
 ## Two-pass rule check

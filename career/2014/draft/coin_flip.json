@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "committed_before_draw",
+  "status": "resolved",
   "branch_checkpoint": "2014-02-02",
   "authorization": "User requested one website coin flip to resolve Green Bay/Indianapolis now. This is a branch administrative resolution, not a historical NFL ceremony.",
   "site": "https://www.random.org/coins/",
@@ -11,8 +11,17 @@
   },
   "winner_slot": 14,
   "loser_slot": 15,
-  "result": null,
-  "winner": null,
-  "observed_at": null,
-  "rerolls_permitted": false
+  "result": "tails",
+  "winner": "Indianapolis Colts",
+  "observed_at": "2026-09-29T01:42:47Z",
+  "rerolls_permitted": false,
+  "site_result": "0 obverse, 1 reverse",
+  "loser": "Green Bay Packers",
+  "result_url": "https://www.random.org/coins/?num=1&cur=60-usd.0001c",
+  "protocol_commit": "0c6f19a0812d9e97195759c09f242c9f6ee2bda0",
+  "screenshot": "career/2014/draft/coin_flip_2026-09-29.jpg",
+  "screenshot_sha256": "9542da18e9fce54782c91421e3446be0b078f94ae719a475e89543a1fcb02ae6",
+  "note": "URL reruns the website, not a permanent result receipt. Screenshot and this record preserve the sole observed draw. User-authorized external draw replaces a private-service draw for this tie only.",
+  "protocol_commit_note": "Local commit made before the draw. An identical protocol snapshot is published in this PR history afterward; publication time is not draw time.",
+  "published_protocol_commit": "c331b574dcf25e764bb45a47d65941c458e8e88e"
 }
