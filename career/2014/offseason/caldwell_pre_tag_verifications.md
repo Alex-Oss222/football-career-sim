@@ -1,5 +1,8 @@
 # Caldwell's pre-tag-window verifications (February 17, 2014)
 
+**Subsequent correction, Entry 90 at the February 28 checkpoint:** this February 17 report is retained as research history. Use the [original-contract reconstruction](../../../library/2014_jaguars_original_contract_reconstruction.md) and [current contract table](contract_table.md) for recovered annual salaries, futures minimums, bonus allocations and labeled estimates. Nwaneri's original roster bonus is reported due March 25. The earlier “not found” statements below are not the current financial conclusion.
+
+
 [Stone's memo](stone_to_caldwell_2014_offseason_decisions.md) section 7 asks Caldwell to settle five items before the franchise and transition window opens on February 17. This file records what the front office could establish by that date. Contract terms are the club's own documents, so Jacksonville knows them on file even where the public source quoted below is dated later; a later public source is used for the term only, never for what the club or player did next.
 
 **Research:** September 29, 2026, two passes (a research pass, then a separate skeptical verification pass that re-searched each claim). WebFetch was blocked by the network proxy for OverTheCap, Profootballrumors and the CBA PDF, so every figure rests on search-result text. Labels: Confirmed (two independent sources), Single source, Inference, Unverified.

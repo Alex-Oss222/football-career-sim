@@ -1,7 +1,7 @@
 {
   "team": "Jacksonville Jaguars",
   "as_of": "2014-02-28",
-  "checkpoint": "Entry 89",
+  "checkpoint": "Entry 90",
   "prepared": "2026-09-29",
   "start_year": 2014,
   "end_year": 2023,
@@ -24,34 +24,37 @@
       "signed": "2012 with Washington; acquired before the April 25, 2013 draft (exact date not fixed)",
       "term": "4 / 2015",
       "contract_ends": 2015,
-      "value": "Unresolved",
-      "bonus_terms": "Washington keeps all bonus proration; none on Jacksonville's books",
-      "guarantees": "Unresolved",
-      "dead_money_2014": "No proration on Jacksonville's books; guarantees Unresolved",
-      "remaining_guarantees": null,
+      "value": "$2,572,688 original four-year deal",
+      "bonus_terms": "$472,688 original bonus, all retained by Washington; Jacksonville proration $0",
+      "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
+      "dead_money_2014": "$0 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
+      "remaining_guarantees": 0,
       "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "Branch record (trade; May 5 worksheet); term Confirmed (register); 2014 figures Unresolved",
+      "source_note": "Original rookie salaries continue after the branch trade. Washington retains the original $472,688 bonus; Jacksonville carries salary only. No later Washington contract is imported.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 1 (2012 rookie season with Washington). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
+          "status": "known",
+          "cap": 570000,
+          "base": 570000,
           "proration": 0,
-          "cash": null
+          "other_cap": 0,
+          "cash": 570000
         },
         "2015": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
+          "status": "known",
+          "cap": 660000,
+          "base": 660000,
           "proration": 0,
-          "cash": null
+          "other_cap": 0,
+          "cash": 660000
         },
         "2016": {
           "status": "not_committed",
@@ -1356,33 +1359,42 @@
       "term": "4 / 2015",
       "contract_ends": 2015,
       "value": "$18,512,010 (guaranteed at signing: $18,512,010)",
-      "bonus_terms": "Bonus Unresolved; $2,975,818; 2",
+      "bonus_terms": "$7,110,000 paid signing bonus plus deferred roster installments treated as signing bonus; original scheduled allocation $2,975,818 annually, before forfeiture reconciliation",
       "guarantees": "Remaining guarantees Unresolved",
-      "dead_money_2014": "At least $5,951,636 (Inference); guarantees Unresolved",
+      "dead_money_2014": "Unresolved: original remaining allocation $5,951,636 includes unpaid deferred amounts; forfeiture credits and voided guarantees must be reconciled before stating release exposure",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "Archive row (2013); term Confirmed (register); 2014 Unresolved",
+      "source_note": "Original schedule before unresolved branch forfeiture credits: 2014 base $2,072,910 and $1.7M deferred roster cash; 2015 base $2,914,365 and about $1.39M deferred cash. These guaranteed-at-signing bonuses were already treated as signing bonus for cap purposes; do not add them to cap twice. Later actual suspension/tolling does not apply. Current guarantees and four-game branch forfeiture accounting remain unresolved.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 1. 2013: Accrues in branch (on 53 for 12 games: Week 1 and Weeks 6-17; Weeks 2-5 on Reserve/Suspended)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
+          "status": "approximate",
           "cap": null,
-          "base": null,
+          "base": 2072910,
           "proration": 2975818,
-          "cash": null
+          "other_cap": 0,
+          "cash": 3772910,
+          "approximate_cap": 5048728,
+          "estimate_note": "Original schedule before unresolved branch forfeiture credits: 2014 base $2,072,910 and $1.7M deferred roster cash; 2015 base $2,914,365 and about $1.39M deferred cash. These guaranteed-at-signing bonuses were already treated as signing bonus for cap purposes; do not add them to cap twice. Later actual suspension/tolling does not apply. Current guarantees and four-game branch forfeiture accounting remain unresolved.",
+          "deferred_bonus_cash": 1700000
         },
         "2015": {
-          "status": "unknown_amount",
+          "status": "approximate",
           "cap": null,
-          "base": null,
+          "base": 2914365,
           "proration": 2975818,
-          "cash": null
+          "other_cap": 0,
+          "cash": 4304365,
+          "approximate_cap": 5890183,
+          "estimate_note": "Original schedule before unresolved branch forfeiture credits: 2014 base $2,072,910 and $1.7M deferred roster cash; 2015 base $2,914,365 and about $1.39M deferred cash. These guaranteed-at-signing bonuses were already treated as signing bonus for cap purposes; do not add them to cap twice. Later actual suspension/tolling does not apply. Current guarantees and four-game branch forfeiture accounting remain unresolved.",
+          "deferred_bonus_cash": 1390000
         },
         "2016": {
           "status": "option_unexercised",
@@ -1455,26 +1467,30 @@
       "term": "4 / 2014",
       "contract_ends": 2014,
       "value": "$2,672,146",
-      "bonus_terms": "Bonus Unresolved; $110,845; 1",
+      "bonus_terms": "$443,380 signing bonus; final 2014 allocation $110,845",
       "guarantees": "Unresolved",
-      "dead_money_2014": "At least $110,845 (Inference); guarantees Unresolved",
+      "dead_money_2014": "$110,845 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "OTC row (2013); term Confirmed",
+      "source_note": "Planning estimate includes the projected $1.431M proven-performance base. Original un-escalated base is $739,383 (contract-total reconstruction), cap $850,228. Confirm branch offensive snap eligibility and the published 2014 tender before booking the increase; 104 receptions do not certify snap percentage.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 2. 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
+          "status": "approximate",
           "cap": null,
-          "base": null,
+          "base": 1431000,
           "proration": 110845,
-          "cash": null
+          "other_cap": 0,
+          "cash": 1431000,
+          "approximate_cap": 1541845,
+          "estimate_note": "Planning estimate includes the projected $1.431M proven-performance base. Original un-escalated base is $739,383 (contract-total reconstruction), cap $850,228. Confirm branch offensive snap eligibility and the published 2014 tender before booking the increase; 104 receptions do not certify snap percentage."
         },
         "2015": {
           "status": "not_committed",
@@ -1554,33 +1570,36 @@
       "term": "5 / 2015",
       "contract_ends": 2015,
       "value": "$34,000,000",
-      "bonus_terms": "Bonus Unresolved; $1,400,000; 2",
+      "bonus_terms": "$7,000,000 signing bonus; $1,400,000 annually through 2015",
       "guarantees": "Unresolved",
-      "dead_money_2014": "At least $2,800,000 (Inference); guarantees Unresolved",
+      "dead_money_2014": "$2,800,000 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "Archive row (2013); term Confirmed",
+      "source_note": "Original 2011 contract carried through 2015. The 2015 salary reduction in real history is excluded; the original $6.65M base remains. Workout bonus continues at $150,000.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 4+ (entered 2006). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
+          "status": "known",
+          "cap": 8250000,
+          "base": 6700000,
           "proration": 1400000,
-          "cash": null
+          "other_cap": 150000,
+          "cash": 6850000
         },
         "2015": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
+          "status": "known",
+          "cap": 8200000,
+          "base": 6650000,
           "proration": 1400000,
-          "cash": null
+          "other_cap": 150000,
+          "cash": 6800000
         },
         "2016": {
           "status": "not_committed",
@@ -1652,34 +1671,37 @@
       "signed": "2012",
       "term": "4 / 2015",
       "contract_ends": 2015,
-      "value": "Unresolved",
-      "bonus_terms": "Unresolved",
-      "guarantees": "Unresolved",
-      "dead_money_2014": "Unresolved",
-      "remaining_guarantees": null,
+      "value": "$2,213,452 original four-year deal",
+      "bonus_terms": "$113,452 original Buffalo bonus; Jacksonville proration $0",
+      "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
+      "dead_money_2014": "$0 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
+      "remaining_guarantees": 0,
       "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "Register: Single source (OTC export)",
+      "source_note": "Original 2012 four-year rookie deal continued through waiver claims. Buffalo keeps the $113,452 bonus; Jacksonville carries the remaining scheduled salaries. Conditional escalators require branch evidence.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: Unresolved (not status-determining). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 570000,
+          "base": 570000,
+          "proration": 0,
+          "other_cap": 0,
+          "cash": 570000
         },
         "2015": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 660000,
+          "base": 660000,
+          "proration": 0,
+          "other_cap": 0,
+          "cash": 660000
         },
         "2016": {
           "status": "not_committed",
@@ -1752,16 +1774,17 @@
       "term": "5 / 2015",
       "contract_ends": 2015,
       "value": "$24,000,000",
-      "bonus_terms": "Bonus Unresolved; $1,094,500; 2",
+      "bonus_terms": "$1,094,500 annual allocation in 2014 and 2015; original paid-bonus composition not fully recovered",
       "guarantees": "Unresolved",
-      "dead_money_2014": "About $2.19M of proration (Single source; equals 2 x $1,094,500); guarantees Unresolved",
+      "dead_money_2014": "$2,189,000 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "Base, roster bonus and 2015 end Confirmed (verifications section 1); cap charge and dead money Single source",
+      "source_note": "2014 estimate: verified $3.775M base and $1M roster bonus plus carried $25,000 workout and $1,094,500 allocation. Original 2015 cash schedule remains missing; budget the same $4.8M cash and $5,894,500 charge as 2014 until replaced. That flat 2015 allowance is an estimate, not a recovered salary.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 4+ (entered 2007). 2013: Accrues in branch (on 53 for 16 games)",
@@ -1771,16 +1794,20 @@
           "cap": null,
           "base": 3775000,
           "proration": 1094500,
-          "cash": null,
-          "approximate_cap": 5900000,
-          "roster_bonus": 1000000
+          "other_cap": 1025000,
+          "cash": 4800000,
+          "approximate_cap": 5894500,
+          "estimate_note": "2014 estimate: verified $3.775M base and $1M roster bonus plus carried $25,000 workout and $1,094,500 allocation. Original 2015 cash schedule remains missing; budget the same $4.8M cash and $5,894,500 charge as 2014 until replaced. That flat 2015 allowance is an estimate, not a recovered salary."
         },
         "2015": {
-          "status": "unknown_amount",
+          "status": "approximate",
           "cap": null,
-          "base": null,
+          "base": 3775000,
           "proration": 1094500,
-          "cash": null
+          "other_cap": 1025000,
+          "cash": 4800000,
+          "approximate_cap": 5894500,
+          "estimate_note": "2014 estimate: verified $3.775M base and $1M roster bonus plus carried $25,000 workout and $1,094,500 allocation. Original 2015 cash schedule remains missing; budget the same $4.8M cash and $5,894,500 charge as 2014 until replaced. That flat 2015 allowance is an estimate, not a recovered salary."
         },
         "2016": {
           "status": "not_committed",
@@ -1853,26 +1880,30 @@
       "term": "4 / 2014",
       "contract_ends": 2014,
       "value": "$2,914,274",
-      "bonus_terms": "Bonus Unresolved; $154,868; 1",
+      "bonus_terms": "$619,472 signing bonus; final 2014 allocation $154,868",
       "guarantees": "Unresolved",
-      "dead_money_2014": "At least $154,868 (Inference); guarantees Unresolved",
+      "dead_money_2014": "$154,868 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
       "remaining_guarantees": null,
       "availability": "Limited, no projected absence (upper extremity, Week 5)",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "Archive row (2013); term Confirmed",
+      "source_note": "Planning estimate reserves the projected $1.431M proven-performance base. Original base is $772,401 (contract-total reconstruction), cap $927,269. His 2011 participation qualifies for one season; verify 2013 branch snaps and publication before booking the escalator.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 2 (2012 on Reserve/Injured, full pay). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
+          "status": "approximate",
           "cap": null,
-          "base": null,
+          "base": 1431000,
           "proration": 154868,
-          "cash": null
+          "other_cap": 0,
+          "cash": 1431000,
+          "approximate_cap": 1585868,
+          "estimate_note": "Planning estimate reserves the projected $1.431M proven-performance base. Original base is $772,401 (contract-total reconstruction), cap $927,269. His 2011 participation qualifies for one season; verify 2013 branch snaps and publication before booking the escalator."
         },
         "2015": {
           "status": "not_committed",
@@ -1952,26 +1983,28 @@
       "term": "3 / 2014",
       "contract_ends": 2014,
       "value": "$1,450,000",
-      "bonus_terms": "Unresolved",
-      "guarantees": "Unresolved",
-      "dead_money_2014": "Unresolved",
-      "remaining_guarantees": null,
+      "bonus_terms": "$10,000 signing bonus; final 2014 allocation $3,334",
+      "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
+      "dead_money_2014": "$3,334 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
+      "remaining_guarantees": 0,
       "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "Register: Single source (Spotrac search text)",
+      "source_note": "Three-year $1,450,000 deal reconstructed as $390,000/$480,000/$570,000 bases plus $10,000 bonus. Final bonus year carries the $1 rounding remainder.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 1 (2012: 12 games, 7 starts, then Reserve/Injured). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 573334,
+          "base": 570000,
+          "proration": 3334,
+          "other_cap": 0,
+          "cash": 570000
         },
         "2015": {
           "status": "not_committed",
@@ -2051,33 +2084,40 @@
       "term": "5 / 2015",
       "contract_ends": 2015,
       "value": "$28,325,000",
-      "bonus_terms": "No proration on Jacksonville's 2013 row",
+      "bonus_terms": "No Jacksonville proration on the claimed Philadelphia contract",
       "guarantees": "Unresolved",
-      "dead_money_2014": "Unresolved",
+      "dead_money_2014": "$0 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "OTC row (2013); term Confirmed",
+      "source_note": "Planning estimate follows the reported $6.175M annual compensation on the original deal. $6M salary is corroborated; the remaining $175,000 component mix needs confirmation. Philadelphia retains old bonus allocation. An original opt-out clause is reported, but no branch exercise has occurred.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 4+ (entered 2004). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
+          "status": "approximate",
           "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "base": 6000000,
+          "proration": 0,
+          "other_cap": 175000,
+          "cash": 6175000,
+          "approximate_cap": 6175000,
+          "estimate_note": "Planning estimate follows the reported $6.175M annual compensation on the original deal. $6M salary is corroborated; the remaining $175,000 component mix needs confirmation. Philadelphia retains old bonus allocation. An original opt-out clause is reported, but no branch exercise has occurred."
         },
         "2015": {
-          "status": "unknown_amount",
+          "status": "approximate",
           "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "base": 6000000,
+          "proration": 0,
+          "other_cap": 175000,
+          "cash": 6175000,
+          "approximate_cap": 6175000,
+          "estimate_note": "Planning estimate follows the reported $6.175M annual compensation on the original deal. $6M salary is corroborated; the remaining $175,000 component mix needs confirmation. Philadelphia retains old bonus allocation. An original opt-out clause is reported, but no branch exercise has occurred."
         },
         "2016": {
           "status": "not_committed",
@@ -2150,33 +2190,36 @@
       "term": "4 / 2015",
       "contract_ends": 2015,
       "value": "$5,089,934",
-      "bonus_terms": "Bonus Unresolved; $535,442; 2",
-      "guarantees": "Unresolved",
-      "dead_money_2014": "At least $1,070,884 (Inference); guarantees Unresolved",
-      "remaining_guarantees": null,
+      "bonus_terms": "$2,141,768 signing bonus; $535,442 annually through 2015",
+      "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
+      "dead_money_2014": "$1,070,884 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
+      "remaining_guarantees": 0,
       "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "OTC row (2013); term Confirmed",
+      "source_note": "Original 2012 rookie schedule, including $25,000 annual workout bonus.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 1 (2012 on Reserve/Injured at season close, full pay). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
+          "status": "known",
+          "cap": 1388164,
+          "base": 827722,
           "proration": 535442,
-          "cash": null
+          "other_cap": 25000,
+          "cash": 852722
         },
         "2015": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
+          "status": "known",
+          "cap": 1619525,
+          "base": 1059083,
           "proration": 535442,
-          "cash": null
+          "other_cap": 25000,
+          "cash": 1084083
         },
         "2016": {
           "status": "not_committed",
@@ -2249,26 +2292,28 @@
       "term": "2 / 2014",
       "contract_ends": 2014,
       "value": "$900,000",
-      "bonus_terms": "Unresolved",
-      "guarantees": "Unresolved",
-      "dead_money_2014": "Unresolved",
-      "remaining_guarantees": null,
+      "bonus_terms": "$0 signing bonus or proration",
+      "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
+      "dead_money_2014": "$0 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
+      "remaining_guarantees": 0,
       "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "Register: Supported (OTC export)",
+      "source_note": "December 2012 futures deal totals $900,000 across $405,000 in 2013 and $495,000 in 2014, with no bonus. Later real contracts do not extend it.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 0 (2012 mostly practice squad; active roughly October 5-23). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 495000,
+          "base": 495000,
+          "proration": 0,
+          "other_cap": 0,
+          "cash": 495000
         },
         "2015": {
           "status": "not_committed",
@@ -2348,34 +2393,40 @@
       "term": "4 / 2015",
       "contract_ends": 2015,
       "value": "$20,000,000 ($9,000,000 guaranteed at signing)",
-      "bonus_terms": "Bonus Unresolved; $2,000,000; 2",
+      "bonus_terms": "$8,000,000 signing bonus; $2,000,000 annually through 2015",
       "guarantees": "Unresolved",
-      "dead_money_2014": "At least $4,000,000 (Inference); guarantees Unresolved",
+      "dead_money_2014": "$4,000,000 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "Archive row (2013); term Confirmed (verifications)",
+      "source_note": "2014 planning estimate uses the existing $4.475M salary lead and carried $25,000 workout bonus. 2015 base $4.9M is the residual of $20M less $8M bonus, 2012 $1M, 2013 $1.525M, 2014 $4.475M and four $25,000 workouts. This allocation assumes no additional component in the headline value; incentive and annual schedule verification remain open.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 4+ (entered 2006). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
+          "status": "approximate",
           "cap": null,
-          "base": null,
+          "base": 4475000,
           "proration": 2000000,
-          "cash": null,
-          "base_note": "Disputed: $4,475,000 versus about $4,000,000; not used numerically"
+          "other_cap": 25000,
+          "cash": 4500000,
+          "approximate_cap": 6500000,
+          "estimate_note": "2014 planning estimate uses the existing $4.475M salary lead and carried $25,000 workout bonus. 2015 base $4.9M is the residual of $20M less $8M bonus, 2012 $1M, 2013 $1.525M, 2014 $4.475M and four $25,000 workouts. This allocation assumes no additional component in the headline value; incentive and annual schedule verification remain open."
         },
         "2015": {
-          "status": "unknown_amount",
+          "status": "approximate",
           "cap": null,
-          "base": null,
+          "base": 4900000,
           "proration": 2000000,
-          "cash": null
+          "other_cap": 25000,
+          "cash": 4925000,
+          "approximate_cap": 6925000,
+          "estimate_note": "2014 planning estimate uses the existing $4.475M salary lead and carried $25,000 workout bonus. 2015 base $4.9M is the residual of $20M less $8M bonus, 2012 $1M, 2013 $1.525M, 2014 $4.475M and four $25,000 workouts. This allocation assumes no additional component in the headline value; incentive and annual schedule verification remain open."
         },
         "2016": {
           "status": "not_committed",
@@ -2448,26 +2499,28 @@
       "term": "5 / 2014",
       "contract_ends": 2014,
       "value": "$21,399,000",
-      "bonus_terms": "Bonus Unresolved; $1,542,500; 1",
+      "bonus_terms": "$1,542,500 original bonus allocation in the final 2014 year",
       "guarantees": "Unresolved",
-      "dead_money_2014": "At least $1,542,500 (Inference); guarantees Unresolved",
+      "dead_money_2014": "$1,542,500 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "Archive row (2013); term Confirmed",
+      "source_note": "Recovered 2014 salary and bonus allocations plus the $150,000 workout bonus. The original deal ends after 2014; no real 2015 replacement deal is imported.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 3. 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
+          "status": "known",
+          "cap": 4264000,
+          "base": 2571500,
           "proration": 1542500,
-          "cash": null
+          "other_cap": 150000,
+          "cash": 2721500
         },
         "2015": {
           "status": "not_committed",
@@ -2546,27 +2599,31 @@
       "signed": "2012",
       "term": "3 / 2014",
       "contract_ends": 2014,
-      "value": "Disputed: $7,500,000 or \"up to $10M\" ($1,000,000 guaranteed at signing, 2013 sheet)",
-      "bonus_terms": "Unresolved",
+      "value": "$7,500,000 base deal; up to $10,000,000 with incentives",
+      "bonus_terms": "$1,000,000 signing bonus; final-year allocation estimated at $333,334",
       "guarantees": "Unresolved",
-      "dead_money_2014": "Unresolved",
+      "dead_money_2014": "$333,334 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "Term Confirmed; value disputed (verifications section 1)",
+      "source_note": "Working allocation only: $7.5M base deal, $1M bonus and $1M 2012 salary/workout cash leave $5.5M across 2013 and 2014; allocate $2.75M cash per year pending the original schedule. $25,000 is reserved for the carried workout component. The reported $10M ceiling includes potential incentives; it is not a second base value.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 4+ (entered 2005). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
+          "status": "approximate",
           "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "base": 2725000,
+          "proration": 333334,
+          "other_cap": 25000,
+          "cash": 2750000,
+          "approximate_cap": 3083334,
+          "estimate_note": "Working allocation only: $7.5M base deal, $1M bonus and $1M 2012 salary/workout cash leave $5.5M across 2013 and 2014; allocate $2.75M cash per year pending the original schedule. $25,000 is reserved for the carried workout component. The reported $10M ceiling includes potential incentives; it is not a second base value."
         },
         "2015": {
           "status": "not_committed",
@@ -2646,33 +2703,36 @@
       "term": "4 / 2015",
       "contract_ends": 2015,
       "value": "$2,151,392 ($51,392 guaranteed at signing)",
-      "bonus_terms": "Unresolved",
-      "guarantees": "Unresolved",
-      "dead_money_2014": "Unresolved",
-      "remaining_guarantees": null,
+      "bonus_terms": "$51,392 signing bonus; $12,848 annually through 2015",
+      "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
+      "dead_money_2014": "$25,696 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
+      "remaining_guarantees": 0,
       "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "Contract summary Confirmed (2013 sheet); annual rows not recovered",
+      "source_note": "Four-year rookie deal reconstructed from $2,151,392 total: $51,392 bonus plus $390,000/$480,000/$570,000/$660,000 bases. A conditional 2015 escalator is not pre-earned.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: Unresolved (not status-determining; 4 games in 2012). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 582848,
+          "base": 570000,
+          "proration": 12848,
+          "other_cap": 0,
+          "cash": 570000
         },
         "2015": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 672848,
+          "base": 660000,
+          "proration": 12848,
+          "other_cap": 0,
+          "cash": 660000
         },
         "2016": {
           "status": "not_committed",
@@ -2745,26 +2805,30 @@
       "term": "3 / 2014",
       "contract_ends": 2014,
       "value": "$6,000,000",
-      "bonus_terms": "Bonus Unresolved; $416,666; 1",
+      "bonus_terms": "$1,250,000 signing bonus; final 2014 allocation $416,668",
       "guarantees": "Unresolved",
-      "dead_money_2014": "At least $416,666 (Inference); guarantees Unresolved",
+      "dead_money_2014": "$416,668 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "OTC row (2013); term Supported (register)",
+      "source_note": "Planning base $1.975M matches the earlier memo and recovered contract notes. Add $25,000 workout and final $416,668 bonus allocation. Any incentive charge is separate: the prior $1M other-bonus entry cannot be copied without the branch earning test. No later retirement or real release is executed here.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 4 (2009-2012). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
+          "status": "approximate",
           "cap": null,
-          "base": null,
-          "proration": 416666,
-          "cash": null
+          "base": 1975000,
+          "proration": 416668,
+          "other_cap": 25000,
+          "cash": 2000000,
+          "approximate_cap": 2416668,
+          "estimate_note": "Planning base $1.975M matches the earlier memo and recovered contract notes. Add $25,000 workout and final $416,668 bonus allocation. Any incentive charge is separate: the prior $1M other-bonus entry cannot be copied without the branch earning test. No later retirement or real release is executed here."
         },
         "2015": {
           "status": "not_committed",
@@ -2844,40 +2908,44 @@
       "term": "6 / 2016",
       "contract_ends": 2016,
       "value": "$45,000,000",
-      "bonus_terms": "Bonus Unresolved; $2,000,000; 3",
+      "bonus_terms": "$10,000,000 signing bonus; $2,000,000 annually through 2015; $0 in 2016",
       "guarantees": "Unresolved",
-      "dead_money_2014": "At least $6,000,000 (Inference); guarantees Unresolved",
+      "dead_money_2014": "$4,000,000 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
       "remaining_guarantees": null,
       "availability": "Out, head/neck, independent medical hold (Week 13); projected return April 5, 2014",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "Archive row (2013); term Confirmed",
+      "source_note": "Original six-year contract retained. The $10M signing bonus is allocated over five years, 2011 to 2015: no 2016 proration. Original salary remains $7.45M with $50,000 workout bonus; the later real extension is excluded.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 4+ (entered 2007). 2013: Accrues in branch (on 53 for 16 games; out from Week 13 on independent medical hold, never moved to a reserve list)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
+          "status": "known",
+          "cap": 9500000,
+          "base": 7450000,
           "proration": 2000000,
-          "cash": null
+          "other_cap": 50000,
+          "cash": 7500000
         },
         "2015": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
+          "status": "known",
+          "cap": 9500000,
+          "base": 7450000,
           "proration": 2000000,
-          "cash": null
+          "other_cap": 50000,
+          "cash": 7500000
         },
         "2016": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
-          "proration": 2000000,
-          "cash": null
+          "status": "known",
+          "cap": 7500000,
+          "base": 7450000,
+          "proration": 0,
+          "other_cap": 50000,
+          "cash": 7500000
         },
         "2017": {
           "status": "not_committed",
@@ -2943,26 +3011,28 @@
       "term": "3 / 2014",
       "contract_ends": 2014,
       "value": "$1,445,000",
-      "bonus_terms": "Unresolved",
-      "guarantees": "Unresolved",
-      "dead_money_2014": "Unresolved",
-      "remaining_guarantees": null,
+      "bonus_terms": "$5,000 signing bonus; final 2014 allocation $1,668",
+      "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
+      "dead_money_2014": "$1,668 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
+      "remaining_guarantees": 0,
       "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "Register: Single source (Spotrac search text)",
+      "source_note": "Three-year $1,445,000 deal reconstructed as rookie minimum bases plus $5,000 bonus. The final $1,668 allocation matches the original-contract residue reported by OTC; the actual later departure is not applied.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 1 (2012: 16 games). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 571668,
+          "base": 570000,
+          "proration": 1668,
+          "other_cap": 0,
+          "cash": 570000
         },
         "2015": {
           "status": "not_committed",
@@ -3042,33 +3112,36 @@
       "term": "4 / 2015",
       "contract_ends": 2015,
       "value": "$2,215,788",
-      "bonus_terms": "Bonus Unresolved; $28,947; 2",
-      "guarantees": "Unresolved",
-      "dead_money_2014": "At least $57,894 (Inference); guarantees Unresolved",
-      "remaining_guarantees": null,
+      "bonus_terms": "$115,788 signing bonus; $28,947 annually through 2015",
+      "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
+      "dead_money_2014": "$57,894 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
+      "remaining_guarantees": 0,
       "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "OTC row (2013); term Confirmed",
+      "source_note": "Original four-year rookie minimum schedule and $115,788 bonus. Any 2015 proven-performance increase depends on branch participation; none is assumed earned.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 1. 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
+          "status": "known",
+          "cap": 598947,
+          "base": 570000,
           "proration": 28947,
-          "cash": null
+          "other_cap": 0,
+          "cash": 570000
         },
         "2015": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
+          "status": "known",
+          "cap": 688947,
+          "base": 660000,
           "proration": 28947,
-          "cash": null
+          "other_cap": 0,
+          "cash": 660000
         },
         "2016": {
           "status": "not_committed",
@@ -3141,33 +3214,36 @@
       "term": "4 / 2015",
       "contract_ends": 2015,
       "value": "$13,600,000 ($4,000,000 guaranteed at signing, 2013 sheet)",
-      "bonus_terms": "$3,000,000 (Single source); $750,000; 2",
+      "bonus_terms": "$3,000,000 signing bonus; $750,000 annually through 2015",
       "guarantees": "Unresolved",
-      "dead_money_2014": "At least $1,500,000 (Inference); guarantees Unresolved",
+      "dead_money_2014": "$1,500,000 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "Archive row (2013); term Confirmed (verifications)",
+      "source_note": "Original salaries recovered from October 2013 reporting; $3M bonus and $25,000 annual workout amount carry from the 2013 baseline. Schedule reconciles to $13.6M including 2012 and 2013. No real release is imported.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 4+ (entered 2008). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
+          "status": "known",
+          "cap": 3875000,
+          "base": 3100000,
           "proration": 750000,
-          "cash": null
+          "other_cap": 25000,
+          "cash": 3125000
         },
         "2015": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
+          "status": "known",
+          "cap": 4075000,
+          "base": 3300000,
           "proration": 750000,
-          "cash": null
+          "other_cap": 25000,
+          "cash": 3325000
         },
         "2016": {
           "status": "not_committed",
@@ -3240,26 +3316,30 @@
       "term": "4 / 2014",
       "contract_ends": 2014,
       "value": "$2,640,144",
-      "bonus_terms": "Bonus Unresolved; $105,027; 1",
+      "bonus_terms": "$420,108 signing bonus; final 2014 allocation $105,027",
       "guarantees": "Unresolved",
-      "dead_money_2014": "At least $105,027 (Inference); guarantees Unresolved",
+      "dead_money_2014": "$105,027 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "OTC row (2013); term Confirmed",
+      "source_note": "Original 2014 base reconstructed from the four-year total less bonus and earlier salaries. Planning charge excludes an unverified proven-performance increase; if branch participation qualifies, the projected base rises to $1.431M and cap to $1,536,027.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 2. 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
+          "status": "approximate",
           "cap": null,
-          "base": null,
+          "base": 735018,
           "proration": 105027,
-          "cash": null
+          "other_cap": 0,
+          "cash": 735018,
+          "approximate_cap": 840045,
+          "estimate_note": "Original 2014 base reconstructed from the four-year total less bonus and earlier salaries. Planning charge excludes an unverified proven-performance increase; if branch participation qualifies, the projected base rises to $1.431M and cap to $1,536,027."
         },
         "2015": {
           "status": "not_committed",
@@ -3339,33 +3419,36 @@
       "term": "4 / 2015",
       "contract_ends": 2015,
       "value": "$13.8M to $14.2M reported range ($4,750,000 reported guarantee)",
-      "bonus_terms": "Bonus Unresolved; $937,500; 2",
+      "bonus_terms": "$3,750,000 signing bonus; $937,500 annually through 2015",
       "guarantees": "Unresolved",
-      "dead_money_2014": "At least $1,875,000 (Inference); guarantees Unresolved",
+      "dead_money_2014": "$1,875,000 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "OTC row (2013); term Confirmed (register)",
+      "source_note": "Original 2012 deal retained through 2015, including $25,000 annual workout bonus. The $3.425M original 2015 salary is used before any actual later trade adjustment.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 4+ (entered 2004). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
+          "status": "known",
+          "cap": 4187500,
+          "base": 3225000,
           "proration": 937500,
-          "cash": null
+          "other_cap": 25000,
+          "cash": 3250000
         },
         "2015": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
+          "status": "known",
+          "cap": 4387500,
+          "base": 3425000,
           "proration": 937500,
-          "cash": null
+          "other_cap": 25000,
+          "cash": 3450000
         },
         "2016": {
           "status": "not_committed",
@@ -3438,33 +3521,36 @@
       "term": "4 / 2015",
       "contract_ends": 2015,
       "value": "$2,877,166",
-      "bonus_terms": "Bonus Unresolved; $165,625; 2",
-      "guarantees": "Unresolved",
-      "dead_money_2014": "At least $331,250 (Inference); guarantees Unresolved",
-      "remaining_guarantees": null,
+      "bonus_terms": "$662,500 signing bonus; $165,625 annually through 2015",
+      "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
+      "dead_money_2014": "$331,250 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
+      "remaining_guarantees": 0,
       "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "OTC row (2013); term Confirmed",
+      "source_note": "Original 2012 rookie schedule, including $20,000 annual workout bonus.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 1. 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
+          "status": "known",
+          "cap": 770523,
+          "base": 584898,
           "proration": 165625,
-          "cash": null
+          "other_cap": 20000,
+          "cash": 604898
         },
         "2015": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
+          "status": "known",
+          "cap": 875480,
+          "base": 689855,
           "proration": 165625,
-          "cash": null
+          "other_cap": 20000,
+          "cash": 709855
         },
         "2016": {
           "status": "not_committed",
@@ -3536,34 +3622,41 @@
       "signed": "October 4, 2011",
       "term": "New years 2013 to 2015 (Single source) / 2015",
       "contract_ends": 2015,
-      "value": "Unresolved ($4.65M guaranteed, Confirmed)",
-      "bonus_terms": "Disputed ($1.5M or $850,000); proration Unresolved",
+      "value": "$9,275,000 reported extension; $11,275,000 including prior years; $4.65M reported guarantees",
+      "bonus_terms": "$1,500,000 signing bonus reported; estimated $300,000 annually through 2015",
       "guarantees": "Unresolved",
-      "dead_money_2014": "Unresolved",
+      "dead_money_2014": "$600,000 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "Supported (verifications section 2); 2014 base Unverified",
+      "source_note": "Planning allocation: $9.275M extension value less $1.5M bonus leaves $7.775M, averaged over the three new years (about $2,591,667 cash each). This is a budgeting assumption, not the missing annual base schedule. $300,000 annual bonus allocation is consistent with the original 2013 residue. Existing guarantees and payment timing still require reconciliation.",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 4+ (Jacksonville 2006-2012). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "unknown_amount",
+          "status": "approximate",
           "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "base": 2591667,
+          "proration": 300000,
+          "other_cap": 0,
+          "cash": 2591667,
+          "approximate_cap": 2891667,
+          "estimate_note": "Planning allocation: $9.275M extension value less $1.5M bonus leaves $7.775M, averaged over the three new years (about $2,591,667 cash each). This is a budgeting assumption, not the missing annual base schedule. $300,000 annual bonus allocation is consistent with the original 2013 residue. Existing guarantees and payment timing still require reconciliation."
         },
         "2015": {
-          "status": "unknown_amount",
+          "status": "approximate",
           "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "base": 2591667,
+          "proration": 300000,
+          "other_cap": 0,
+          "cash": 2591667,
+          "approximate_cap": 2891667,
+          "estimate_note": "Planning allocation: $9.275M extension value less $1.5M bonus leaves $7.775M, averaged over the three new years (about $2,591,667 cash each). This is a budgeting assumption, not the missing annual base schedule. $300,000 annual bonus allocation is consistent with the original 2013 residue. Existing guarantees and payment timing still require reconciliation."
         },
         "2016": {
           "status": "not_committed",
@@ -3836,26 +3929,28 @@
       "contract_ends": null,
       "value": "Unresolved",
       "bonus_terms": "$0; $0; 0",
-      "guarantees": "$0",
-      "dead_money_2014": "$0",
+      "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
+      "dead_money_2014": "$0 on the no-bonus, no-guarantee futures contract",
       "remaining_guarantees": 0,
       "availability": "Future contract not yet effective",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "Branch record (Entry 85); credited seasons Unresolved",
+      "source_note": "2011 injured reserve does not count under Article 26; five active games in December 2012 do. Branch 2013 practice squad adds none.",
       "sources": [
         "career/2014/offseason/contract_table.md",
         "career/2014/offseason/contract_status_register.md",
-        "career/2014/offseason/free_agency/signings.md"
+        "career/2014/offseason/free_agency/signings.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
-      "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+      "credited_seasons": "1 through 2013, Article 26 reconstruction; see original-contract research",
       "accrued_seasons": "No 2013 accrual from practice-squad service",
       "years": {
         "2014": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
+          "status": "known",
+          "cap": 495000,
+          "base": 495000,
           "proration": 0,
-          "cash": null
+          "other_cap": 0,
+          "cash": 495000
         },
         "2015": {
           "status": "term_unknown",
@@ -3936,26 +4031,28 @@
       "contract_ends": null,
       "value": "Unresolved",
       "bonus_terms": "$0; $0; 0",
-      "guarantees": "$0",
-      "dead_money_2014": "$0",
+      "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
+      "dead_money_2014": "$0 on the no-bonus, no-guarantee futures contract",
       "remaining_guarantees": 0,
       "availability": "Future contract not yet effective",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "Branch record (Entry 85); credited seasons Unresolved",
+      "source_note": "Promoted December 24, 2012 for the finale only; 2013 branch practice squad adds no credited season.",
       "sources": [
         "career/2014/offseason/contract_table.md",
         "career/2014/offseason/contract_status_register.md",
-        "career/2014/offseason/free_agency/signings.md"
+        "career/2014/offseason/free_agency/signings.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
-      "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+      "credited_seasons": "0 through 2013, Article 26 reconstruction; see original-contract research",
       "accrued_seasons": "No 2013 accrual from practice-squad service",
       "years": {
         "2014": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
+          "status": "known",
+          "cap": 420000,
+          "base": 420000,
           "proration": 0,
-          "cash": null
+          "other_cap": 0,
+          "cash": 420000
         },
         "2015": {
           "status": "term_unknown",
@@ -4036,26 +4133,28 @@
       "contract_ends": null,
       "value": "Unresolved",
       "bonus_terms": "$0; $0; 0",
-      "guarantees": "$0",
-      "dead_money_2014": "$0",
+      "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
+      "dead_money_2014": "$0 on the no-bonus, no-guarantee futures contract",
       "remaining_guarantees": 0,
       "availability": "Future contract not yet effective",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "Branch record (Entry 85); credited seasons Unresolved",
+      "source_note": "Kansas City practice squad for the first 15 games of 2012; Jacksonville signed him December 28 for the finale. Branch 2013 practice squad adds none.",
       "sources": [
         "career/2014/offseason/contract_table.md",
         "career/2014/offseason/contract_status_register.md",
-        "career/2014/offseason/free_agency/signings.md"
+        "career/2014/offseason/free_agency/signings.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
-      "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+      "credited_seasons": "0 through 2013, Article 26 reconstruction; see original-contract research",
       "accrued_seasons": "No 2013 accrual from practice-squad service",
       "years": {
         "2014": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
+          "status": "known",
+          "cap": 420000,
+          "base": 420000,
           "proration": 0,
-          "cash": null
+          "other_cap": 0,
+          "cash": 420000
         },
         "2015": {
           "status": "term_unknown",
@@ -4136,26 +4235,28 @@
       "contract_ends": null,
       "value": "Unresolved",
       "bonus_terms": "$0; $0; 0",
-      "guarantees": "$0",
-      "dead_money_2014": "$0",
+      "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
+      "dead_money_2014": "$0 on the no-bonus, no-guarantee futures contract",
       "remaining_guarantees": 0,
       "availability": "Future contract not yet effective",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "Branch record (Entry 85; market draw); credited seasons Unresolved",
+      "source_note": "2010 and 2011 injured reserve do not count for Article 26; eight games in 2012 supply one credited season. Branch 2013 practice squad adds none.",
       "sources": [
         "career/2014/offseason/contract_table.md",
         "career/2014/offseason/contract_status_register.md",
-        "career/2014/offseason/free_agency/signings.md"
+        "career/2014/offseason/free_agency/signings.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
-      "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+      "credited_seasons": "1 through 2013, Article 26 reconstruction; see original-contract research",
       "accrued_seasons": "No 2013 accrual from practice-squad service",
       "years": {
         "2014": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
+          "status": "known",
+          "cap": 495000,
+          "base": 495000,
           "proration": 0,
-          "cash": null
+          "other_cap": 0,
+          "cash": 495000
         },
         "2015": {
           "status": "term_unknown",
@@ -4236,26 +4337,28 @@
       "contract_ends": null,
       "value": "Unresolved",
       "bonus_terms": "$0; $0; 0",
-      "guarantees": "$0",
-      "dead_money_2014": "$0",
+      "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
+      "dead_money_2014": "$0 on the no-bonus, no-guarantee futures contract",
       "remaining_guarantees": 0,
       "availability": "Future contract not yet effective",
       "plan": "No new transaction decision in this tracker",
-      "source_note": "Branch record (Entry 85); credited seasons Unresolved",
+      "source_note": "2012 Jacksonville active-roster service supplies one credited season; branch 2013 practice squad adds none.",
       "sources": [
         "career/2014/offseason/contract_table.md",
         "career/2014/offseason/contract_status_register.md",
-        "career/2014/offseason/free_agency/signings.md"
+        "career/2014/offseason/free_agency/signings.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
-      "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+      "credited_seasons": "1 through 2013, Article 26 reconstruction; see original-contract research",
       "accrued_seasons": "No 2013 accrual from practice-squad service",
       "years": {
         "2014": {
-          "status": "unknown_amount",
-          "cap": null,
-          "base": null,
+          "status": "known",
+          "cap": 495000,
+          "base": 495000,
           "proration": 0,
-          "cash": null
+          "other_cap": 0,
+          "cash": 495000
         },
         "2015": {
           "status": "term_unknown",
@@ -5731,7 +5834,8 @@
       "source_note": "Unresolved (Entry 86)",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: Unresolved: Atlanta's third quarterback in 2009 and 2010 and re-signed July 30, 2011; 2012 on Jacksonville's practice squad except October 27-29. Supported range 2 or 3. 2013: Accrues in branch (on 53 for 16 games)",
@@ -5741,7 +5845,9 @@
           "cap": null,
           "base": null,
           "proration": null,
-          "cash": null
+          "cash": null,
+          "planning_allowance": 730000,
+          "estimate_note": "Conditional minimum-salary allowance if retained; original control term and credited service require confirmation. Excluded from signed obligations."
         },
         "2015": {
           "status": "term_unknown",
@@ -5830,7 +5936,8 @@
       "source_note": "Unresolved (Entry 86)",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "library/2014_jaguars_original_contract_reconstruction.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: Unresolved (0 or 1; 2012 full-pay games with the Jets, Houston and Jacksonville not counted). 2013: Accrues in branch (on 53 for 16 games)",
@@ -5840,7 +5947,9 @@
           "cap": null,
           "base": null,
           "proration": null,
-          "cash": null
+          "cash": null,
+          "planning_allowance": 570000,
+          "estimate_note": "Conditional minimum-salary allowance if retained; original control term and credited service require confirmation. Excluded from signed obligations."
         },
         "2015": {
           "status": "term_unknown",

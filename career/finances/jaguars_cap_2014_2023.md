@@ -1,6 +1,6 @@
 # Jacksonville Jaguars cap tracker, 2014 to 2023
 
-As of February 28, 2014, Entry 89. Prepared September 29, 2026 from the supplied ten-year template. All dollar amounts are whole US dollars. Caldwell owns contract decisions; this tracker records obligations and open questions.
+As of February 28, 2014, Entry 90. Prepared September 29, 2026 from the supplied ten-year template. All dollar amounts are whole US dollars. Caldwell owns contract decisions; this tracker records obligations and open questions.
 
 [Player cap table](#4-cap-by-player-ten-years) | [Individual contract details](jaguars_contract_details.md) | [Expirations](#9-expiring-contracts-and-free-agent-classes) | [Decision calendar](#8-decision-calendar) | [Updating this tracker](README.md)
 
@@ -30,7 +30,7 @@ Cap charge adds salary, scheduled bonus proration and other applicable charges. 
 | Input | Current treatment | Next evidence needed |
 |---|---|---|
 | Future cap growth | No rate assumed | Dated league announcement or explicitly approved projection |
-| Minimum salary, 2014 | 0 seasons 420,000; 1: 495,000; 2: 570,000; 3: 645,000; 4 to 6: 730,000; 7 to 9: 855,000; 10+: 955,000 | Credited service for Murphy, Jackson, Long, Smith and Blake remains unresolved |
+| Minimum salary, 2014 | 0 seasons 420,000; 1: 495,000; 2: 570,000; 3: 645,000; 4 to 6: 730,000; 7 to 9: 855,000; 10+: 955,000 | Six signed futures priced from Article 26 service; see original-contract research |
 | Practice squad | 6,300 per week in 2014; no current PS contracts | Actual signings and paid weeks; future expansion is date-gated |
 | Tag/tender values | Monroe: 11,654,000 non-exclusive tender; unsigned | A replacement agreement or actual signing; do not count twice |
 | RFA/ERFA offers | Not executed | Actual tender, eligibility and dated amount |
@@ -69,14 +69,18 @@ Other template rule fields, repeated-tag formulas, salary benefits, forfeitures,
 
 | Line | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Exact signed-contract scheduled cap | 17,618,182 partial | 12,404,487 partial | 11,711,292 partial | 0 partial | 0 partial | 0 partial | 0 partial | 0 partial | 0 partial | 0 partial |
+| Exact signed-contract scheduled cap | 56,140,166 partial | 43,743,787 partial | 19,211,292 partial | 0 partial | 0 partial | 0 partial | 0 partial | 0 partial | 0 partial | 0 partial |
 | Separate franchise tender | 11,654,000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Known charges plus tender, still partial | 29,272,182 partial | 12,404,487 partial | 11,711,292 partial | 0 partial | 0 partial | 0 partial | 0 partial | 0 partial | 0 partial | 0 partial |
-| Exact charge rows | 13 | 10 | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Known term, amount unknown/approximate | 29 | 15 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Known charges plus tender, still partial | 67,794,166 partial | 43,743,787 partial | 19,211,292 partial | 0 partial | 0 partial | 0 partial | 0 partial | 0 partial | 0 partial | 0 partial |
+| Exact charge rows | 32 | 20 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Known term, amount unknown/approximate | 10 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Unresolved term rows | 2 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 | 8 |
 | Unexercised option rows | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Known scheduled player cash, partial | 11,951,305 partial | 7,987,610 partial | 7,294,415 partial | 0 partial | 0 partial | 0 partial | 0 partial | 0 partial | 0 partial | 0 partial |
+| Known scheduled player cash, partial | 43,095,425 partial | 33,496,548 partial | 14,794,415 partial | 0 partial | 0 partial | 0 partial | 0 partial | 0 partial | 0 partial | 0 partial |
+| Separate estimated contract charges | 35,977,655 estimated | 27,776,350 estimated | 0 estimated | 0 estimated | 0 estimated | 0 estimated | 0 estimated | 0 estimated | 0 estimated | 0 estimated |
+| Priced contracts plus tender, including estimates | 103,771,821 planning subtotal | 71,520,137 planning subtotal | 19,211,292 planning subtotal | 0 planning subtotal | 0 planning subtotal | 0 planning subtotal | 0 planning subtotal | 0 planning subtotal | 0 planning subtotal | 0 planning subtotal |
+| Conditional retention allowances, outside signed totals | 1,300,000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Estimated scheduled cash, separate from known cash | 30,186,595 estimated | 22,796,032 estimated | 0 estimated | 0 estimated | 0 estimated | 0 estimated | 0 estimated | 0 estimated | 0 estimated | 0 estimated |
 | Adjusted club cap | Unknown | Unknown | Unknown | Unknown | Unknown | Unknown | Unknown | Unknown | Unknown | Unknown |
 | Top-51 exclusion and retained charges | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved |
 | Counted player contracts | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved |
@@ -110,27 +114,50 @@ The following is exact scheduled cap only, including the tender in its own row. 
 
 | Position | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | Tracked players | 2014 incomplete amount rows |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| QB | 420,000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 | 2 |
-| RB | 495,000 | 585,000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 | 2 |
+| QB | 990,000 | 660,000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 | 1 |
+| RB | 990,000 | 585,000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 | 1 |
 | FB | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |
-| WR | 495,000 | 585,000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 6 | 3 |
-| TE | 1,242,978 | 1,491,574 | 1,740,170 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 1 |
+| WR | 915,000 | 585,000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 6 | 2 |
+| TE | 9,492,978 | 9,691,574 | 1,740,170 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 0 |
 | OT | 4,818,545 | 5,782,254 | 6,745,963 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 0 |
-| OG | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 | 3 |
-| C | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 1 |
-| EDGE | 548,403 | 638,403 | 728,403 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 6 | 4 |
-| IDL | 3,250,000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 7 | 5 |
-| LB | 4,119,257 | 709,257 | 799,257 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 3 |
-| CB | 1,206,794 | 1,410,794 | 990,294 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 6 | 1 |
-| S | 1,022,205 | 1,202,205 | 707,205 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 3 |
-| K | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |
-| P | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 |
+| OG | 570,000 | 660,000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 | 2 |
+| C | 573,334 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 |
+| EDGE | 2,431,567 | 2,257,928 | 728,403 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 6 | 2 |
+| IDL | 9,011,848 | 672,848 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 7 | 1 |
+| LB | 14,190,925 | 10,209,257 | 8,299,257 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 1 |
+| CB | 1,805,741 | 2,099,741 | 990,294 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 6 | 0 |
+| S | 5,392,205 | 5,277,205 | 707,205 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 1 |
+| K | 4,187,500 | 4,387,500 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+| P | 770,523 | 875,480 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
 | LS | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
-| Offense subtotal | 7,471,523 | 8,443,828 | 8,486,133 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Not applicable | Not applicable |
-| Defense subtotal | 10,146,659 | 3,960,659 | 3,225,159 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Not applicable | Not applicable |
-| Special teams subtotal | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Not applicable | Not applicable |
+| Offense subtotal | 18,349,857 | 17,963,828 | 8,486,133 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Not applicable | Not applicable |
+| Defense subtotal | 32,832,286 | 20,516,979 | 10,725,159 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Not applicable | Not applicable |
+| Special teams subtotal | 4,958,023 | 5,262,980 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Not applicable | Not applicable |
 | Monroe tender, OT | 11,654,000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
-| Known total plus tender | 29,272,182 | 12,404,487 | 11,711,292 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 59 | Partial |
+| Known total plus tender | 67,794,166 | 43,743,787 | 19,211,292 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 59 | Partial |
+
+### Estimated charges by position
+
+Add these to the sourced positional amounts above only for planning. They remain outside the exact subtotal.
+
+| Position | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| QB | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| RB | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| FB | 2,891,667 | 2,891,667 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| WR | 6,590,573 | 5,890,183 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| TE | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| OT | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| OG | 7,480,368 | 5,894,500 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| C | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| EDGE | 12,675,000 | 13,100,000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| IDL | 3,083,334 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| LB | 2,416,668 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| CB | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| S | 840,045 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| K | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| P | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| LS | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### 3.2 Guarantees and bonus exposure
 
@@ -140,15 +167,15 @@ Annual proration carried from an inherited 2013 transcription is an inference, n
 |---|---|---|---|---|---|
 | QB | Unresolved | Unresolved | 0 recorded portion | None documented | See individual limits |
 | RB | Unresolved | Unresolved | 0 recorded portion | None documented | See individual limits |
-| FB | Unresolved | Unresolved | 0 recorded portion | None documented | See individual limits |
+| FB | Unresolved | Unresolved | 600,000 recorded portion | None documented | See individual limits |
 | WR | Unresolved | Unresolved | 6,062,481 recorded portion | None documented | See individual limits |
 | TE | Unresolved | Unresolved | 4,568,146 recorded portion | None documented | See individual limits |
 | OT | Unresolved | Unresolved | 10,349,508 recorded portion | None documented | See individual limits |
 | OG | Unresolved | Unresolved | 2,343,868 recorded portion | None documented | See individual limits |
-| C | Unresolved | Unresolved | 0 recorded portion | None documented | See individual limits |
+| C | Unresolved | Unresolved | 3,334 recorded portion | None documented | See individual limits |
 | EDGE | Unresolved | Unresolved | 5,231,093 recorded portion | None documented | See individual limits |
-| IDL | Unresolved | Unresolved | 2,292,500 recorded portion | None documented | See individual limits |
-| LB | Unresolved | Unresolved | 7,289,437 recorded portion | None documented | See individual limits |
+| IDL | Unresolved | Unresolved | 2,651,530 recorded portion | None documented | See individual limits |
+| LB | Unresolved | Unresolved | 5,291,107 recorded portion | None documented | See individual limits |
 | CB | Unresolved | Unresolved | 561,276 recorded portion | None documented | See individual limits |
 | S | Unresolved | Unresolved | 1,701,642 recorded portion | None documented | See individual limits |
 | K | Unresolved | Unresolved | 1,875,000 recorded portion | None documented | See individual limits |
@@ -167,27 +194,27 @@ Players with exact amounts are listed first within each room, descending by 2014
 
 | Player | Age now | Through | Status | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | Recorded remaining cap |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Tyler Bray](jaguars_contract_details.md#tyler-bray) | 22 | Unknown | future | 420,000 | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | 420,000 known; incomplete |
+| [Kirk Cousins](jaguars_contract_details.md#kirk-cousins) | 25 | 2015 | signed | 570,000 | 660,000 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 1,230,000 |
+| [Tyler Bray](jaguars_contract_details.md#tyler-bray) | 22 | Unknown | future | 420,000 | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | 420,000 priced; remaining term unresolved |
 | [Chad Henne](jaguars_contract_details.md#chad-henne) | 28 | 2013 | pending | Not signed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 0 |
-| [John Parker Wilson](jaguars_contract_details.md#john-parker-wilson) | 28 | Unknown | unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Unknown |
-| [Kirk Cousins](jaguars_contract_details.md#kirk-cousins) | 25 | 2015 | signed | Unknown | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
-| QB exact subtotal | Not applicable | Not applicable | Excludes tender | 420,000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
+| [John Parker Wilson](jaguars_contract_details.md#john-parker-wilson) | 28 | Unknown | unknown | Term unknown; 730,000 allowance | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unresolved |
+| QB exact subtotal | Not applicable | Not applicable | Excludes tender | 990,000 | 660,000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
 
 ### 4.2 RB
 
 | Player | Age now | Through | Status | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | Recorded remaining cap |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | [C.J. Anderson](jaguars_contract_details.md#cj-anderson) | 23 | 2015 | signed | 495,000 | 585,000 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 1,080,000 |
-| [Jonathan Grimes](jaguars_contract_details.md#jonathan-grimes) | 24 | Unknown | unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Unknown |
+| [Richard Murphy](jaguars_contract_details.md#richard-murphy) | 27 | Unknown | future | 495,000 | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | 495,000 priced; remaining term unresolved |
+| [Jonathan Grimes](jaguars_contract_details.md#jonathan-grimes) | 24 | Unknown | unknown | Term unknown; 570,000 allowance | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unresolved |
 | [Maurice Jones-Drew](jaguars_contract_details.md#maurice-jones-drew) | 28 | 2013 | pending | Not signed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 0 |
-| [Richard Murphy](jaguars_contract_details.md#richard-murphy) | 27 | Unknown | future | Unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Unknown |
-| RB exact subtotal | Not applicable | Not applicable | Excludes tender | 495,000 | 585,000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
+| RB exact subtotal | Not applicable | Not applicable | Excludes tender | 990,000 | 585,000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
 
 ### 4.3 FB
 
 | Player | Age now | Through | Status | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | Recorded remaining cap |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Montell Owens](jaguars_contract_details.md#montell-owens) | 29 | 2015 | signed | Unknown | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
+| [Montell Owens](jaguars_contract_details.md#montell-owens) | 29 | 2015 | signed | About 2,891,667 | About 2,891,667 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 5,783,334 including estimates |
 | FB exact subtotal | Not applicable | Not applicable | Excludes tender | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
 
 ### 4.4 WR
@@ -195,21 +222,21 @@ Players with exact amounts are listed first within each room, descending by 2014
 | Player | Age now | Through | Status | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | Recorded remaining cap |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | [Adam Thielen](jaguars_contract_details.md#adam-thielen) | 23 | 2015 | signed | 495,000 | 585,000 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 1,080,000 |
-| [Cecil Shorts](jaguars_contract_details.md#cecil-shorts) | 26 | 2014 | signed | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
-| [Jerrell Jackson](jaguars_contract_details.md#jerrell-jackson) | 24 | Unknown | future | Unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Unknown |
-| [Justin Blackmon](jaguars_contract_details.md#justin-blackmon) | 24 | 2015 | signed | Unknown | Unknown | Option open | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
+| [Jerrell Jackson](jaguars_contract_details.md#jerrell-jackson) | 24 | Unknown | future | 420,000 | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | 420,000 priced; remaining term unresolved |
+| [Cecil Shorts](jaguars_contract_details.md#cecil-shorts) | 26 | 2014 | signed | About 1,541,845 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 1,541,845 including estimates |
+| [Justin Blackmon](jaguars_contract_details.md#justin-blackmon) | 24 | 2015 | signed | About 5,048,728 | About 5,890,183 | Option open | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 10,938,911 including estimates plus option if exercised |
 | [Mike Brown](jaguars_contract_details.md#mike-brown) | 25 | 2013 | pending | Not signed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 0 |
 | [Toney Clemons](jaguars_contract_details.md#toney-clemons) | 25 | 2013 | pending | Not signed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 0 |
-| WR exact subtotal | Not applicable | Not applicable | Excludes tender | 495,000 | 585,000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
+| WR exact subtotal | Not applicable | Not applicable | Excludes tender | 915,000 | 585,000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
 
 ### 4.5 TE
 
 | Player | Age now | Through | Status | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | Recorded remaining cap |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [Marcedes Lewis](jaguars_contract_details.md#marcedes-lewis) | 29 | 2015 | signed | 8,250,000 | 8,200,000 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 16,450,000 |
 | [Travis Kelce](jaguars_contract_details.md#travis-kelce) | 24 | 2016 | signed | 1,242,978 | 1,491,574 | 1,740,170 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 4,474,722 |
 | [Allen Reisner](jaguars_contract_details.md#allen-reisner) | 25 | 2013 | pending | Not signed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 0 |
-| [Marcedes Lewis](jaguars_contract_details.md#marcedes-lewis) | 29 | 2015 | signed | Unknown | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
-| TE exact subtotal | Not applicable | Not applicable | Excludes tender | 1,242,978 | 1,491,574 | 1,740,170 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
+| TE exact subtotal | Not applicable | Not applicable | Excludes tender | 9,492,978 | 9,691,574 | 1,740,170 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
 
 ### 4.6 OT
 
@@ -224,92 +251,92 @@ Players with exact amounts are listed first within each room, descending by 2014
 
 | Player | Age now | Through | Status | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | Recorded remaining cap |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [Mark Asper](jaguars_contract_details.md#mark-asper) | 28 | 2015 | signed | 570,000 | 660,000 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 1,230,000 |
 | [Austin Pasztor](jaguars_contract_details.md#austin-pasztor) | 23 | 2013 | pending | Not signed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 0 |
-| [Mark Asper](jaguars_contract_details.md#mark-asper) | 28 | 2015 | signed | Unknown | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
-| [Uche Nwaneri](jaguars_contract_details.md#uche-nwaneri) | 29 | 2015 | signed | About 5,900,000 | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
-| [Will Rackley](jaguars_contract_details.md#will-rackley) | 24 | 2014 | signed | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
-| OG exact subtotal | Not applicable | Not applicable | Excludes tender | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
+| [Uche Nwaneri](jaguars_contract_details.md#uche-nwaneri) | 29 | 2015 | signed | About 5,894,500 | About 5,894,500 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 11,789,000 including estimates |
+| [Will Rackley](jaguars_contract_details.md#will-rackley) | 24 | 2014 | signed | About 1,585,868 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 1,585,868 including estimates |
+| OG exact subtotal | Not applicable | Not applicable | Excludes tender | 570,000 | 660,000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
 
 ### 4.8 C
 
 | Player | Age now | Through | Status | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | Recorded remaining cap |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [Mike Brewster](jaguars_contract_details.md#mike-brewster) | 24 | 2014 | signed | 573,334 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 573,334 |
 | [Brad Meester](jaguars_contract_details.md#brad-meester) | 36 | 2013 | retired | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 0 |
-| [Mike Brewster](jaguars_contract_details.md#mike-brewster) | 24 | 2014 | signed | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
-| C exact subtotal | Not applicable | Not applicable | Excludes tender | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
+| C exact subtotal | Not applicable | Not applicable | Excludes tender | 573,334 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
 
 ### 4.9 EDGE
 
 | Player | Age now | Through | Status | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | Recorded remaining cap |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [Andre Branch](jaguars_contract_details.md#andre-branch) | 24 | 2015 | signed | 1,388,164 | 1,619,525 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 3,007,689 |
 | [Lavar Edwards](jaguars_contract_details.md#lavar-edwards) | 23 | 2016 | signed | 548,403 | 638,403 | 728,403 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 1,915,209 |
-| [Andre Branch](jaguars_contract_details.md#andre-branch) | 24 | 2015 | signed | Unknown | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
+| [Ryan Davis](jaguars_contract_details.md#ryan-davis) | 25 | 2014 | signed | 495,000 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 495,000 |
 | [C.J. Wilson](jaguars_contract_details.md#cj-wilson) | 26 | 2013 | pending | Not signed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 0 |
-| [Jason Babin](jaguars_contract_details.md#jason-babin) | 33 | 2015 | signed | Unknown | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
-| [Jeremy Mincey](jaguars_contract_details.md#jeremy-mincey) | 30 | 2015 | signed | Unknown | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
-| [Ryan Davis](jaguars_contract_details.md#ryan-davis) | 25 | 2014 | signed | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
-| EDGE exact subtotal | Not applicable | Not applicable | Excludes tender | 548,403 | 638,403 | 728,403 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
+| [Jason Babin](jaguars_contract_details.md#jason-babin) | 33 | 2015 | signed | About 6,175,000 | About 6,175,000 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 12,350,000 including estimates |
+| [Jeremy Mincey](jaguars_contract_details.md#jeremy-mincey) | 30 | 2015 | signed | About 6,500,000 | About 6,925,000 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 13,425,000 including estimates |
+| EDGE exact subtotal | Not applicable | Not applicable | Excludes tender | 2,431,567 | 2,257,928 | 728,403 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
 
 ### 4.10 IDL
 
 | Player | Age now | Through | Status | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | Recorded remaining cap |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [Tyson Alualu](jaguars_contract_details.md#tyson-alualu) | 26 | 2014 | signed | 4,264,000 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 4,264,000 |
 | [Roy Miller](jaguars_contract_details.md#roy-miller) | 26 | 2014 | signed | 3,250,000 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 3,250,000 |
-| [C.J. Mosley](jaguars_contract_details.md#cj-mosley) | 30 | 2014 | signed | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
-| [D'Anthony Smith](jaguars_contract_details.md#danthony-smith) | 25 | Unknown | future | Unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Unknown |
-| [Jeris Pendleton](jaguars_contract_details.md#jeris-pendleton) | 30 | 2015 | signed | Unknown | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
-| [Jerome Long](jaguars_contract_details.md#jerome-long) | 23 | Unknown | future | Unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Unknown |
+| [Jeris Pendleton](jaguars_contract_details.md#jeris-pendleton) | 30 | 2015 | signed | 582,848 | 672,848 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 1,255,696 |
+| [D'Anthony Smith](jaguars_contract_details.md#danthony-smith) | 25 | Unknown | future | 495,000 | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | 495,000 priced; remaining term unresolved |
+| [Jerome Long](jaguars_contract_details.md#jerome-long) | 23 | Unknown | future | 420,000 | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | 420,000 priced; remaining term unresolved |
+| [C.J. Mosley](jaguars_contract_details.md#cj-mosley) | 30 | 2014 | signed | About 3,083,334 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 3,083,334 including estimates |
 | [Sen'Derrick Marks](jaguars_contract_details.md#senderrick-marks) | 27 | 2013 | pending | Not signed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 0 |
-| [Tyson Alualu](jaguars_contract_details.md#tyson-alualu) | 26 | 2014 | signed | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
-| IDL exact subtotal | Not applicable | Not applicable | Excludes tender | 3,250,000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
+| IDL exact subtotal | Not applicable | Not applicable | Excludes tender | 9,011,848 | 672,848 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
 
 ### 4.11 LB
 
 | Player | Age now | Through | Status | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | Recorded remaining cap |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [Paul Posluszny](jaguars_contract_details.md#paul-posluszny) | 29 | 2016 | signed | 9,500,000 | 9,500,000 | 7,500,000 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 26,500,000 |
 | [Daryl Smith](jaguars_contract_details.md#daryl-smith) | 31 | 2014 | signed | 3,500,000 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 3,500,000 |
 | [Sio Moore](jaguars_contract_details.md#sio-moore) | 23 | 2016 | signed | 619,257 | 709,257 | 799,257 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 2,127,771 |
-| [Julian Stanford](jaguars_contract_details.md#julian-stanford) | 23 | 2014 | signed | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
-| [Paul Posluszny](jaguars_contract_details.md#paul-posluszny) | 29 | 2016 | signed | Unknown | Unknown | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
-| [Russell Allen](jaguars_contract_details.md#russell-allen) | 27 | 2014 | signed | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
-| LB exact subtotal | Not applicable | Not applicable | Excludes tender | 4,119,257 | 709,257 | 799,257 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
+| [Julian Stanford](jaguars_contract_details.md#julian-stanford) | 23 | 2014 | signed | 571,668 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 571,668 |
+| [Russell Allen](jaguars_contract_details.md#russell-allen) | 27 | 2014 | signed | About 2,416,668 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 2,416,668 including estimates |
+| LB exact subtotal | Not applicable | Not applicable | Excludes tender | 14,190,925 | 10,209,257 | 8,299,257 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
 
 ### 4.12 CB
 
 | Player | Age now | Through | Status | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | Recorded remaining cap |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | [Jordan Poyer](jaguars_contract_details.md#jordan-poyer) | 22 | 2016 | signed | 711,794 | 825,794 | 990,294 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 2,527,882 |
+| [Mike Harris](jaguars_contract_details.md#mike-harris) | 25 | 2015 | signed | 598,947 | 688,947 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 1,287,894 |
 | [A.J. Bouye](jaguars_contract_details.md#aj-bouye) | 22 | 2015 | signed | 495,000 | 585,000 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 1,080,000 |
 | [Alan Ball](jaguars_contract_details.md#alan-ball) | 28 | 2013 | pending | Not signed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 0 |
 | [Brent Grimes](jaguars_contract_details.md#brent-grimes) | 30 | 2013 | pending | Not signed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 0 |
 | [Kevin Rutland](jaguars_contract_details.md#kevin-rutland) | 25 | 2013 | pending | Not signed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 0 |
-| [Mike Harris](jaguars_contract_details.md#mike-harris) | 25 | 2015 | signed | Unknown | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
-| CB exact subtotal | Not applicable | Not applicable | Excludes tender | 1,206,794 | 1,410,794 | 990,294 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
+| CB exact subtotal | Not applicable | Not applicable | Excludes tender | 1,805,741 | 2,099,741 | 990,294 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
 
 ### 4.13 S
 
 | Player | Age now | Through | Status | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | Recorded remaining cap |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [Dwight Lowery](jaguars_contract_details.md#dwight-lowery) | 28 | 2015 | signed | 3,875,000 | 4,075,000 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 7,950,000 |
 | [Bacarri Rambo](jaguars_contract_details.md#bacarri-rambo) | 23 | 2016 | signed | 527,205 | 617,205 | 707,205 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 1,851,615 |
+| [Antwon Blake](jaguars_contract_details.md#antwon-blake) | 23 | Unknown | future | 495,000 | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | 495,000 priced; remaining term unresolved |
 | [Brynden Trawick](jaguars_contract_details.md#brynden-trawick) | 24 | 2015 | signed | 495,000 | 585,000 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 1,080,000 |
-| [Antwon Blake](jaguars_contract_details.md#antwon-blake) | 23 | Unknown | future | Unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Term unknown | Unknown |
-| [Chris Prosinski](jaguars_contract_details.md#chris-prosinski) | 26 | 2014 | signed | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
-| [Dwight Lowery](jaguars_contract_details.md#dwight-lowery) | 28 | 2015 | signed | Unknown | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
-| S exact subtotal | Not applicable | Not applicable | Excludes tender | 1,022,205 | 1,202,205 | 707,205 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
+| [Chris Prosinski](jaguars_contract_details.md#chris-prosinski) | 26 | 2014 | signed | About 840,045 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 840,045 including estimates |
+| S exact subtotal | Not applicable | Not applicable | Excludes tender | 5,392,205 | 5,277,205 | 707,205 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
 
 ### 4.14 K
 
 | Player | Age now | Through | Status | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | Recorded remaining cap |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Josh Scobee](jaguars_contract_details.md#josh-scobee) | 31 | 2015 | signed | Unknown | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
-| K exact subtotal | Not applicable | Not applicable | Excludes tender | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
+| [Josh Scobee](jaguars_contract_details.md#josh-scobee) | 31 | 2015 | signed | 4,187,500 | 4,387,500 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 8,575,000 |
+| K exact subtotal | Not applicable | Not applicable | Excludes tender | 4,187,500 | 4,387,500 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
 
 ### 4.15 P
 
 | Player | Age now | Through | Status | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | Recorded remaining cap |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Bryan Anger](jaguars_contract_details.md#bryan-anger) | 25 | 2015 | signed | Unknown | Unknown | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Unknown |
-| P exact subtotal | Not applicable | Not applicable | Excludes tender | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
+| [Bryan Anger](jaguars_contract_details.md#bryan-anger) | 25 | 2015 | signed | 770,523 | 875,480 | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | Not committed | 1,646,003 |
+| P exact subtotal | Not applicable | Not applicable | Excludes tender | 770,523 | 875,480 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Partial |
 
 ### 4.16 LS
 
@@ -323,11 +350,11 @@ Players with exact amounts are listed first within each room, descending by 2014
 | Player | Position | Effective date | 2014 cap | Later term | Current treatment |
 |---|---|---|---|---|---|
 | Tyler Bray | QB | March 11, 2014 | 420,000 | Unresolved | Already included above; do not add again |
-| Richard Murphy | RB | March 11, 2014 | Unknown | Unresolved | Already included above; do not add again |
-| Jerrell Jackson | WR | March 11, 2014 | Unknown | Unresolved | Already included above; do not add again |
-| Jerome Long | IDL | March 11, 2014 | Unknown | Unresolved | Already included above; do not add again |
-| D'Anthony Smith | IDL | March 11, 2014 | Unknown | Unresolved | Already included above; do not add again |
-| Antwon Blake | S | March 11, 2014 | Unknown | Unresolved | Already included above; do not add again |
+| Richard Murphy | RB | March 11, 2014 | 495,000 | Unresolved | Already included above; do not add again |
+| Jerrell Jackson | WR | March 11, 2014 | 420,000 | Unresolved | Already included above; do not add again |
+| Jerome Long | IDL | March 11, 2014 | 420,000 | Unresolved | Already included above; do not add again |
+| D'Anthony Smith | IDL | March 11, 2014 | 495,000 | Unresolved | Already included above; do not add again |
+| Antwon Blake | S | March 11, 2014 | 495,000 | Unresolved | Already included above; do not add again |
 
 There are no current practice-squad contracts. The six future deals are camp contracts, not six paid practice-squad places. No modern elevation mechanism is assumed. Meester is included for control reconciliation with no scheduled 2014 playing salary; retirement accounting remains a separate review.
 
@@ -335,7 +362,7 @@ There are no current practice-squad contracts. The six future deals are camp con
 
 | Line | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Exact position totals | 17,618,182 | 12,404,487 | 11,711,292 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Exact position totals | 56,140,166 | 43,743,787 | 19,211,292 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Tender | 11,654,000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Applicable Top-51 adjustment | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved |
 | Counted contract total | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved |
@@ -395,7 +422,9 @@ The four 2013 UDFAs are already included above: Trawick, Bouye, Thielen and Ande
 | Deadline / review | Player or group | Decision and present status | Amount / consequence | Owner |
 |---|---|---|---|---|
 | March 3, 2014, 4 p.m. ET | Monroe | Designation already completed | 11,654,000 tender; do not apply a second tag | Caldwell |
-| Before actual bonus due date, not yet verified | Nwaneri | Review memo trade/release preference against contract | 1,000,000 roster bonus; do not assume a deadline | Caldwell |
+| March 25, 2014; reported original clause | Nwaneri | Review memo trade/release preference against contract | 1,000,000 roster bonus; fifteenth day of league year, see contract research | Caldwell |
+| Before the original opt-out window closes; exact deadline unverified | Babin | Original opt-out reported; no branch exercise recorded | Keep original salary estimate until an actual decision | Player / Caldwell |
+| March 16, 2014; reported deferred-bonus date | Blackmon | Reconcile original deferred payment and branch forfeiture terms | 1,700,000 cash already included in original bonus cap allocation | Caldwell |
 | March 11, 2014, 4 p.m. ET | Bradfield; Clemons, Brown, Pasztor | Tender choices remain unexecuted | Verify amount, class and replacement cost | Caldwell |
 | Before affected league-year decision | John Parker Wilson; Jonathan Grimes | Resolve original contract term | Do not turn uncertainty into release or zero | Caldwell |
 | March 11, 2014 | Six futures; Meester | Futures become effective; prior Meester contract expires | No automatic role for a futures player | Caldwell |
@@ -459,8 +488,10 @@ No projected replacement salary, market APY, automatic extension or future roste
 
 | Line | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Known scheduled cash if retained, partial | 11,951,305 | 7,987,610 | 7,294,415 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Known scheduled cash if retained, partial | 43,095,425 | 33,496,548 | 14,794,415 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Monroe salary if tender signed, separate | 11,654,000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Separately estimated scheduled cash | 30,186,595 | 22,796,032 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Scheduled cash including estimates, excluding unsigned tender | 73,282,020 planning | 56,292,580 planning | 14,794,415 planning | 0 planning | 0 planning | 0 planning | 0 planning | 0 planning | 0 planning | 0 planning |
 | Actual base payments | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved |
 | Actual signing/option/restructure payments | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved |
 | Actual roster/workout/reporting bonuses | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved |

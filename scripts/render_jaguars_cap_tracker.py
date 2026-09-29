@@ -73,11 +73,19 @@ def validate(data, root=ROOT):
         if not p['sources'] or any(not (root/s).is_file() for s in p['sources']): raise ValueError('Missing source: '+p['name'])
         for year,row in p['years'].items():
             if row['status'] not in STATUSES: raise ValueError('Unknown annual status')
-            for k in ['cap','base','proration','cash']:
+            for k in ['cap','base','proration','cash','other_cap','approximate_cap','planning_allowance','deferred_bonus_cash']:
                 v=row.get(k)
                 if v is not None and (type(v) is not int or v<0): raise ValueError('Invalid dollar value: '+p['name'])
             if row['status'] in {'known','tender'} and row['cap'] is None: raise ValueError('Known charge requires amount')
             if row['status'] not in {'known','tender'} and row['cap'] is not None: raise ValueError('Unknown or conditional charge must not be numeric')
+            if row['status']=='approximate':
+                if row.get('approximate_cap') is None or not row.get('estimate_note'):
+                    raise ValueError('Estimate requires an amount and its basis: '+p['name'])
+                if all(row.get(k) is not None for k in ['base','proration']):
+                    if row['approximate_cap'] != row['base']+row['proration']+row.get('other_cap',0):
+                        raise ValueError('Estimated cap components disagree: '+p['name'])
+            if row.get('planning_allowance') is not None and (row['status']!='term_unknown' or not row.get('estimate_note')):
+                raise ValueError('Conditional allowance requires unresolved term and basis')
             if row['status']=='known' and all(row.get(k) is not None for k in ['base','proration']):
                 if row['cap'] != row['base']+row['proration']+row.get('other_cap',0): raise ValueError('Cap components disagree: '+p['name'])
             if row['status']=='known' and p['contract_ends'] is not None and int(year)>p['contract_ends']: raise ValueError('Charge exceeds recorded term: '+p['name'])
@@ -98,6 +106,8 @@ def validate(data, root=ROOT):
             amount=exact_amount(row[10])
             if amount is not None and (y['status']!='known' or y['cap']!=amount): raise ValueError('Current charge differs from contract table: '+p['name'])
             if amount is None and y['status']=='known': raise ValueError('Tracker invents an exact current charge: '+p['name'])
+            if y['status']=='approximate' and exact_amount(row[10].removeprefix('About '))!=y['approximate_cap']:
+                raise ValueError('Current estimate differs from contract table: '+p['name'])
         elif len(row)!=9: raise ValueError('Contract table layout changed; review parser')
         else:
             expected='tender' if 'Franchise player' in row[6] else ('unknown' if row[6].startswith('Unresolved:') else 'pending')
@@ -111,6 +121,7 @@ def cap_cell(row):
     if row['status']=='known':return dollars(row['cap'])
     if row['status']=='tender':return dollars(row['cap'])+' tender'
     if row['status']=='approximate':return 'About '+dollars(row['approximate_cap'])
+    if row.get('planning_allowance') is not None:return 'Term unknown; '+dollars(row['planning_allowance'])+' allowance'
     return LABELS[row['status']]
 
 def totals(players, years, field='cap', status='known'):
@@ -122,9 +133,11 @@ def source_link(path):return '['+Path(path).stem.replace('_',' ')+'](../../'+pat
 
 def contract_total(p):
     rows=list(p['years'].values());known=sum(x['cap'] or 0 for x in rows if x['status'] in {'known','tender'})
-    incomplete=any(x['status'] in {'unknown_amount','term_unknown','approximate'} for x in rows)
-    if incomplete:return dollars(known)+' known; incomplete' if known else 'Unknown'
-    return dollars(known)+(' plus option if exercised' if any(x['status']=='option_unexercised' for x in rows) else '')
+    estimated=sum(x.get('approximate_cap',0) for x in rows if x['status']=='approximate')
+    incomplete=any(x['status'] in {'unknown_amount','term_unknown'} for x in rows)
+    value=dollars(known+estimated)+' including estimates' if estimated else dollars(known)
+    if incomplete:return value+' priced; remaining term unresolved' if known or estimated else 'Term unresolved'
+    return value+(' plus option if exercised' if any(x['status']=='option_unexercised' for x in rows) else '')
 
 def team_accounting(d, year):
     book=d['team_years'][year]
@@ -138,6 +151,9 @@ def team_accounting(d, year):
 
 def render_main(d,years):
     ps=d['players'];known=totals(ps,years);tender=totals(ps,years,status='tender');cash=totals(ps,years,field='cash')
+    estimates=totals(ps,years,field='approximate_cap',status='approximate')
+    allowances=totals(ps,years,field='planning_allowance',status='term_unknown')
+    estimated_cash=totals(ps,years,field='cash',status='approximate')
     counts=[Counter(p['years'][y]['status'] for p in ps) for y in years]
     accounts={y:team_accounting(d,y) for y in years}
     roster=Counter(p['control'] for p in ps if not p.get('former_player'))
@@ -158,7 +174,7 @@ def render_main(d,years):
     out.append(table(['Item']+years,rows))
     out.append('### 1.2 Assumptions and inputs\n\n'+table(['Input','Current treatment','Next evidence needed'],[
       ['Future cap growth','No rate assumed','Dated league announcement or explicitly approved projection'],
-      ['Minimum salary, 2014','0 seasons 420,000; 1: 495,000; 2: 570,000; 3: 645,000; 4 to 6: 730,000; 7 to 9: 855,000; 10+: 955,000','Credited service for Murphy, Jackson, Long, Smith and Blake remains unresolved'],
+      ['Minimum salary, 2014','0 seasons 420,000; 1: 495,000; 2: 570,000; 3: 645,000; 4 to 6: 730,000; 7 to 9: 855,000; 10+: 955,000','Six signed futures priced from Article 26 service; see original-contract research'],
       ['Practice squad','6,300 per week in 2014; no current PS contracts','Actual signings and paid weeks; future expansion is date-gated'],
       ['Tag/tender values','Monroe: 11,654,000 non-exclusive tender; unsigned','A replacement agreement or actual signing; do not count twice'],
       ['RFA/ERFA offers','Not executed','Actual tender, eligibility and dated amount'],
@@ -192,6 +208,12 @@ Other template rule fields, repeated-tag formulas, salary benefits, forfeitures,
 
 ''')
     rows=[['Exact signed-contract scheduled cap']+partial(known),['Separate franchise tender']+[dollars(x) for x in tender],['Known charges plus tender, still partial']+partial([a+b for a,b in zip(known,tender)]),['Exact charge rows']+[c['known'] for c in counts],['Known term, amount unknown/approximate']+[c['unknown_amount']+c['approximate'] for c in counts],['Unresolved term rows']+[c['term_unknown'] for c in counts],['Unexercised option rows']+[c['option_unexercised'] for c in counts],['Known scheduled player cash, partial']+partial(cash)]
+    rows.extend([
+        ['Separate estimated contract charges']+[dollars(v)+' estimated' for v in estimates],
+        ['Priced contracts plus tender, including estimates']+[dollars(a+b+c)+' planning subtotal' for a,b,c in zip(known,tender,estimates)],
+        ['Conditional retention allowances, outside signed totals']+[dollars(v) for v in allowances],
+        ['Estimated scheduled cash, separate from known cash']+[dollars(v)+' estimated' for v in estimated_cash],
+    ])
     for label in ['Adjusted club cap','Top-51 exclusion and retained charges','Counted player contracts','Booked dead-money reconciliation','Practice squad and reserve-list reconciliation','Rookie costs after actual displacement','Incentive and workout adjustments','Total NFL commitments','Cap space','Cap space after rookies','Cap space after hypothetical voids','Actual cash paid','Cash as percent of cap','Fully guaranteed money still outstanding','All guarantee types still outstanding','Top five / top ten cap-hit share','QB / offense / defense / special-teams cap share']:
         values=None
         if label=='Adjusted club cap': values=[dollars(accounts[y]['adjusted']) for y in years]
@@ -209,6 +231,8 @@ Other template rule fields, repeated-tag formulas, salary benefits, forfeitures,
         rows.append([pos]+[dollars(x) for x in totals(group,years)]+[len(group),sum(p['years'][years[0]]['status'] in {'unknown_amount','approximate','term_unknown'} for p in group)])
     rows += [['Offense subtotal']+[dollars(x) for x in totals([p for p in ps if p['position'] in POSITIONS[:8]],years)]+['Not applicable','Not applicable'],['Defense subtotal']+[dollars(x) for x in totals([p for p in ps if p['position'] in POSITIONS[8:13]],years)]+['Not applicable','Not applicable'],['Special teams subtotal']+[dollars(x) for x in totals([p for p in ps if p['position'] in POSITIONS[13:]],years)]+['Not applicable','Not applicable'],['Monroe tender, OT']+[dollars(x) for x in tender]+[1,0],['Known total plus tender']+[dollars(a+b) for a,b in zip(known,tender)]+[len(ps),'Partial']]
     out.append(table(['Position']+years+['Tracked players','2014 incomplete amount rows'],rows))
+    out.append('### Estimated charges by position\n\nAdd these to the sourced positional amounts above only for planning. They remain outside the exact subtotal.\n\n')
+    out.append(table(['Position']+years,[[pos]+[dollars(v) for v in totals([p for p in ps if p['position']==pos],years,field='approximate_cap',status='approximate')] for pos in POSITIONS]))
     out.append('### 3.2 Guarantees and bonus exposure\n\nAnnual proration carried from an inherited 2013 transcription is an inference, not newly verified contract language. The player details retain those source limits. Remaining unpaid guarantees and bonus exposure are different columns and must not be added indiscriminately.\n\n')
     rows=[]
     for pos in POSITIONS:
@@ -234,7 +258,9 @@ Other template rule fields, repeated-tag formulas, salary benefits, forfeitures,
     out.append('Final overall numbers after round three await compensatory awards. The [draft ownership record](../2014/draft/draft_order.md) controls all assets. Jacksonville\'s 2015 second belongs to Washington. Later classes are open future work, not ten assumed annual rookie pools. No signed rookie charge, pool total or Top-51 displacement has been invented.\n\n### 7.2 Compensatory tracking\n\n2014 awards from branch 2013 free agency remain pending until the March 24 event. The 2014 free-agent window has not run, so no 2015 compensatory award is inferred. All later rows remain open.\n\n### 7.3 Undrafted free agents\n\nThe four 2013 UDFAs are already included above: Trawick, Bouye, Thielen and Anderson each have 495,000 scheduled for 2014 and 585,000 for 2015, with zero signing bonus and additional guarantee. No 2014 UDFA has been signed.\n\n## 8. Decision calendar\n\n')
     out.append(table(['Deadline / review','Player or group','Decision and present status','Amount / consequence','Owner'],[
       ['March 3, 2014, 4 p.m. ET','Monroe','Designation already completed','11,654,000 tender; do not apply a second tag','Caldwell'],
-      ['Before actual bonus due date, not yet verified','Nwaneri','Review memo trade/release preference against contract','1,000,000 roster bonus; do not assume a deadline','Caldwell'],
+      ['March 25, 2014; reported original clause','Nwaneri','Review memo trade/release preference against contract','1,000,000 roster bonus; fifteenth day of league year, see contract research','Caldwell'],
+      ['Before the original opt-out window closes; exact deadline unverified','Babin','Original opt-out reported; no branch exercise recorded','Keep original salary estimate until an actual decision','Player / Caldwell'],
+      ['March 16, 2014; reported deferred-bonus date','Blackmon','Reconcile original deferred payment and branch forfeiture terms','1,700,000 cash already included in original bonus cap allocation','Caldwell'],
       ['March 11, 2014, 4 p.m. ET','Bradfield; Clemons, Brown, Pasztor','Tender choices remain unexecuted','Verify amount, class and replacement cost','Caldwell'],
       ['Before affected league-year decision','John Parker Wilson; Jonathan Grimes','Resolve original contract term','Do not turn uncertainty into release or zero','Caldwell'],
       ['March 11, 2014','Six futures; Meester','Futures become effective; prior Meester contract expires','No automatic role for a futures player','Caldwell'],
@@ -255,6 +281,10 @@ Other template rule fields, repeated-tag formulas, salary benefits, forfeitures,
     unknown=[p['name'] for p in ps if p['contract_ends'] is None]
     out.append('Unresolved final year: '+', '.join(unknown)+'. These names remain visibly unresolved across the horizon, rather than being dropped after 2014.\n\n### 9.5 Re-signings and replacements\n\nNo projected replacement salary, market APY, automatic extension or future roster has been adopted. The 2014 memo\'s desired outcomes remain in the decision records; they do not populate future contract columns.\n\n## 10. Cash spending and floor tracking\n\n### 10.1 Annual cash\n\n')
     rows=[['Known scheduled cash if retained, partial']+[dollars(x) for x in cash],['Monroe salary if tender signed, separate']+[dollars(x) for x in tender]]
+    rows.extend([
+        ['Separately estimated scheduled cash']+[dollars(v) for v in estimated_cash],
+        ['Scheduled cash including estimates, excluding unsigned tender']+[dollars(a+b)+' planning' for a,b in zip(cash,estimated_cash)],
+    ])
     for n in ['Actual base payments','Actual signing/option/restructure payments','Actual roster/workout/reporting bonuses','Incentives and escalators paid','Practice-squad and reserve payments','Settlements and grievances paid','Total qualifying cash paid','Cash as percent of league cap','Ownership budget / variance']:
         if n=='Total qualifying cash paid': values=[dollars(d['team_years'][y]['actual_cash_paid']) for y in years]
         elif n=='Ownership budget / variance': values=[dollars(d['team_years'][y]['cash_budget'])+' budget; '+(dollars(d['team_years'][y]['cash_budget']-d['team_years'][y]['actual_cash_paid']) if d['team_years'][y]['cash_budget'] is not None and d['team_years'][y]['actual_cash_paid'] is not None else 'unknown')+' unspent' for y in years]
@@ -295,10 +325,13 @@ def render_details(d,years):
             if not inforce:base=pror=other=cash=exposure='Not applicable' if x['status']=='not_committed' else 'Unresolved'
             else:
                 base=x.get('base_note',dollars(x['base']));pror=dollars(x['proration']);cash=dollars(x['cash'])
-                other=dollars(x['cap']-x['base']-x['proration']) if all(x.get(k) is not None for k in ['cap','base','proration']) else ('1,000,000 roster; other components unresolved' if p['name']=='Uche Nwaneri' and y=='2014' else 'Unresolved')
+                charge=x.get('approximate_cap') if x['status']=='approximate' else x['cap']
+                other=dollars(charge-x['base']-x['proration']) if all(v is not None for v in [charge,x['base'],x['proration']]) else 'Unresolved'
                 exposure=dollars(pror_after)+' recorded portion' if x['proration'] is not None else 'Unresolved'
             rows.append([y,base,pror,other,cap_cell(x),cash,exposure])
         out.append(table(['Year','Base salary','Bonus proration','Other cap components','Scheduled cap','Scheduled cash','Bonus allocated after year'],rows))
+        annual_notes=[y+': '+x['estimate_note'] for y,x in p['years'].items() if x.get('estimate_note') and x['estimate_note']!=p['source_note']]
+        if annual_notes:out.append('Annual assumptions: '+' '.join(annual_notes)+'\n\n')
         out.append('### Release, trade and restructure review\n\n')
         out.append('Recorded 2014 pre-June-1 exposure: '+p['dead_money_2014']+'. Guarantees can make release different from trade. No automatic restructure or void years are added.\n\n')
         rows=[]
@@ -308,8 +341,9 @@ def render_details(d,years):
             remaining=sum(v['proration'] or 0 for yy,v in p['years'].items() if int(yy)>=int(y) and v['status'] in {'known','unknown_amount','approximate'})
             future=remaining-(x['proration'] or 0)
             known_bonus=x['proration'] is not None
+            if p['name']=='Justin Blackmon': known_bonus=False
             certain=p['remaining_guarantees']==0 and known_bonus
-            pre=dollars(remaining) if certain else (dollars(remaining)+' bonus floor; guarantees unresolved' if known_bonus else 'Unresolved')
+            pre=dollars(remaining) if certain else (dollars(remaining)+' scheduled bonus portion; guarantees/credits unresolved' if known_bonus else 'Unresolved')
             saving=dollars(x['cap']-remaining) if certain and x['cap'] is not None else 'Unresolved'
             rows.append([y,cap_cell(x),pre,saving,dollars(x['proration'])+' bonus portion' if known_bonus else 'Unresolved',dollars(future)+' bonus portion' if known_bonus else 'Unresolved','Unresolved; verify terms'])
         if rows:out.append(table(['Year','Scheduled cap','Pre-June-1 exposure','Gross saving before replacement','Post-June-1 current-year bonus','Post-June-1 next-year bonus','Trade / max restructure'],rows))

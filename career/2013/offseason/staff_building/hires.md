@@ -4,7 +4,7 @@
 
 **Sequence:** Late January 2013. The original simulated staff-building record did not fix a precise calendar day for every call, so this file continues to use the established late-January sequence rather than inventing timestamps. Contract terms are effective with each coach's accepted appointment. Compensation figures were completed 2026-09-18 at the user's instruction as simulation canon calibrated to the 2013 NFL assistant market.
 
-Stone made the calls in the order fixed in `staff_plan.md`. Candidate availability was applied before any acceptance decision, and each available candidate was evaluated against the actual role: Stone retains offensive play-calling, the defensive coordinator receives operating autonomy within The Prowl's established defensive principles, and the promised assistant-staff budget remains available subject to Caldwell's overall budget authority. No candidate received favorable treatment because Stone was the caller.
+Stone made the calls in the order fixed in `staff_plan.md`. Candidate availability was applied before any acceptance decision, and each available candidate was evaluated against the actual role: the defensive coordinator receives operating autonomy within The Prowl's established defensive principles, and the promised assistant-staff budget remains available subject to Caldwell's overall budget authority. No candidate received favorable treatment because Stone made the approach.
 
 ## Contract-close framework
 
@@ -78,7 +78,7 @@ Every successful assistant accepted the same basic legal/economic framework unle
 
 | Coach | Role | Effective date | Resolution |
 |---|---|---|---|
-| Mike Tice | Offensive coordinator | Late January 2013; exact day not established | Accepted a non-primary-play-calling coordinator role centered on offensive structure, line play, and the run game. Stone retains final offensive play-calling authority. |
+| Mike Tice | Offensive coordinator | Late January 2013; exact day not established | Accepted the coordinator role, centered on offensive structure, line play, and the run game. |
 | Jeremy Bates | Quarterbacks coach | Late January 2013; exact day not established | Accepted responsibility for the quarterback room and its footwork, processing, accuracy, pressure-response, command, and terminology evaluation plan. No starting quarterback was promised. |
 | Tim Spencer | Running backs coach | Late January 2013; exact day not established | Accepted after Jim Skipper's documented market window had closed. The assignment includes ball security, protection, fundamentals, and preparation across the room rather than a promised personnel outcome. |
 | Darryl Drake | Wide receivers coach | Late January 2013; exact day not established | Accepted the primary offer. The role fits Stone's emphasis on assignment clarity, route detail, fundamentals, and earned responsibility. |
@@ -115,8 +115,8 @@ The second-round candidate order and its conditions were applied as written. Geo
 
 | Coach | Role | Effective date | Resolution |
 |---|---|---|---|
-| George Yarno | Offensive line / run-game coach | Late January 2013; exact day not established | Accepted direct responsibility for the offensive line and a substantial role in constructing the run game under Mike Tice's broader offensive coordination. The role gives Yarno a defined teaching and planning domain while Stone retains final offensive play-calling authority; no scheme, starter, or acquisition was promised. |
-| Charlie Skalaski | Offensive assistant / assistant quarterbacks coach | Late January 2013; exact day not established | Accepted the fallback offer after Miami blocked the Johnson interview. The assignment supports Jeremy Bates in quarterback-room preparation, opponent study, and offensive quality control; it carries no promise of independent play-calling authority or a predetermined quarterback decision. |
+| George Yarno | Offensive line / run-game coach | Late January 2013; exact day not established | Accepted direct responsibility for the offensive line and a substantial role in constructing the run game under Mike Tice's broader offensive coordination. The role gives Yarno a defined teaching and planning domain under Stone's direction; no scheme, starter, or acquisition was promised. |
+| Charlie Skalaski | Offensive assistant / assistant quarterbacks coach | Late January 2013; exact day not established | Accepted the fallback offer after Miami blocked the Johnson interview. The assignment supports Jeremy Bates in quarterback-room preparation, opponent study, and offensive quality control; it carries no predetermined quarterback decision. |
 
 ### Calls that did not close
 
@@ -132,7 +132,6 @@ The hiring process is complete only because both football role and economic term
 
 ### Offensive structure
 
-- Stone remains the offensive play-caller.
 - Tice accepted the coordinator role with that limitation explicitly priced into a $1.10M first-year salary rather than being promised later play-calling.
 - Bates, Yarno and the position coaches accepted defined teaching/planning domains rather than vague titles.
 - Skalaski's compensation reflects an assistant/QC role rather than pretending he is a second quarterbacks coach with equal authority.

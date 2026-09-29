@@ -6,7 +6,7 @@ seasons:
   - 2023
   - 2024
 document_revision: "V.0"
-primary_play_caller: "Alex Stone"
+author: "Alex Stone"
 canonical: true
 inherits:
   - 2013 Iteration I
@@ -20,7 +20,7 @@ system_sentence: "Change the answer late. Keep the rules fast."
 
 ## 2023-2024 Evolution V: Motion and Replacement
 
-> **Team-neutral defensive evolution manual** | Primary play-caller: Alex Stone
+> **Team-neutral defensive evolution manual** | Author: Alex Stone
 > **System sentence:** Change the answer late. Keep the rules fast.
 
 This document evolves the latest prior Stone defense. Silence means the prior rule survives. The purpose is not to replace the system every few seasons, but to record when enough changes affect how the defense is taught, called, matched and simulated.

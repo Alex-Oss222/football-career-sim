@@ -54,7 +54,7 @@ He owns:
 - the relationship between the quarterback's feet and the route structure;
 - determining whether an added check, tag, or packaged decision is worth carrying.
 
-### Alex Stone, head coach and offensive caller
+### Alex Stone, head coach
 
 Stone sets the football priorities, chooses the game-day menu, allocates opportunities, and makes the depth-chart decision.
 

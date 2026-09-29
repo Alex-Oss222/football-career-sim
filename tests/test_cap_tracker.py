@@ -19,19 +19,24 @@ class CapTrackerTests(unittest.TestCase):
         surviving = [row for row in draft if len(row) == 9 and row[0].startswith('#') and row[1] != 'Tyler Bray']
         expected_2015 = sum(exact_amount(row[6]) for row in surviving) + 4 * 585000
         expected_2016 = sum(exact_amount(row[7]) for row in surviving)
-        self.assertEqual(totals(self.data['players'], ['2015', '2016']), [expected_2015, expected_2016])
+        names={row[1] for row in surviving} | {'A.J. Bouye','Adam Thielen','Brynden Trawick','C.J. Anderson'}
+        rookies=[p for p in self.data['players'] if p['name'] in names]
+        self.assertEqual(totals(rookies, ['2015', '2016']), [expected_2015, expected_2016])
         self.assertEqual(self.player('Tyler Bray')['years']['2015']['status'], 'term_unknown')
         self.assertIsNone(self.player('Tyler Bray')['years']['2015']['cap'])
 
     def test_tender_and_options_are_not_double_counted_as_signed_contracts(self):
-        self.assertEqual(totals(self.data['players'], ['2014']), [17618182])
+        before=totals(self.data['players'], ['2014'])
+        self.player('Eugene Monroe')['years']['2014']['cap']+=1
+        self.assertEqual(totals(self.data['players'], ['2014']), before)
+        self.player('Eugene Monroe')['years']['2014']['cap']-=1
         self.assertEqual(totals(self.data['players'], ['2014'], status='tender'), [11654000])
         self.assertEqual(self.player('Justin Blackmon')['years']['2016']['status'], 'option_unexercised')
         self.assertEqual(self.player('Lane Johnson')['years']['2017']['status'], 'option_unexercised')
         self.assertEqual(totals(self.data['players'], ['2017']), [0])
 
     def test_unknown_cannot_be_replaced_with_zero(self):
-        self.player('Kirk Cousins')['years']['2014']['cap'] = 0
+        self.player('John Parker Wilson')['years']['2014']['cap'] = 0
         with self.assertRaisesRegex(ValueError, 'must not be numeric'):
             validate(self.data)
 
@@ -76,6 +81,45 @@ class CapTrackerTests(unittest.TestCase):
 
     def test_present_dataset_matches_roster_and_current_contract_table(self):
         self.assertEqual(validate(self.data), [str(y) for y in range(2014, 2024)])
+
+    def test_original_contracts_survive_without_later_real_restructures(self):
+        self.assertEqual(self.player('Kirk Cousins')['years']['2014']['cap'], 570000)
+        self.assertEqual(self.player('Kirk Cousins')['years']['2015']['proration'], 0)
+        self.assertEqual(self.player('Marcedes Lewis')['years']['2015']['base'], 6650000)
+        pos=self.player('Paul Posluszny')['years']
+        self.assertEqual([pos[y]['proration'] for y in ['2014','2015','2016']], [2000000,2000000,0])
+        self.assertEqual(pos['2016']['cap'], 7500000)
+
+    def test_deferred_blackmon_cash_is_not_charged_twice_to_cap(self):
+        row=self.player('Justin Blackmon')['years']['2014']
+        self.assertEqual(row['cash']-row['base'], 1700000)
+        self.assertEqual(row['approximate_cap'], row['base']+row['proration'])
+        self.assertEqual(row['status'], 'approximate')
+
+    def test_every_signed_2014_deal_is_priced_and_estimates_stay_separate(self):
+        current=[p for p in self.data['players'] if p['control'] in {'signed','future'}]
+        self.assertEqual(len(current),42)
+        self.assertTrue(all(p['years']['2014']['status'] in {'known','approximate'} for p in current))
+        before=totals(current,['2014'])
+        row=self.player('Montell Owens')['years']['2014']
+        row['approximate_cap']+=1000
+        self.assertEqual(totals(current,['2014']),before)
+        with self.assertRaisesRegex(ValueError,'Estimated cap components disagree'):
+            validate(self.data)
+
+    def test_credited_service_uses_branch_practice_squad_history(self):
+        expected={'Richard Murphy':495000, 'Jerrell Jackson':420000, 'Jerome Long':420000,
+                  "D'Anthony Smith":495000, 'Antwon Blake':495000}
+        for name,salary in expected.items():
+            self.assertEqual(self.player(name)['years']['2014']['cap'],salary)
+        self.assertEqual(totals(self.data['players'],['2014'],field='planning_allowance',status='term_unknown'),[1300000])
+
+    def test_estimated_current_charge_must_match_the_owner_table(self):
+        row=self.player('Uche Nwaneri')['years']['2014']
+        row['base']+=1000
+        row['approximate_cap']+=1000
+        with self.assertRaisesRegex(ValueError,'Current estimate differs'):
+            validate(self.data)
 
 
 if __name__ == '__main__':

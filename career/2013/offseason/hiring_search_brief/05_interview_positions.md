@@ -62,7 +62,7 @@ Good teams evolve.
 
 ### Offensive approach
 
-Stone keeps the offensive play-calling responsibility.
+Stone leads the team and sets its game-day staff responsibilities.
 
 That does not mean Stone walks in carrying "the Alex Stone offense."
 

@@ -6,7 +6,7 @@ seasons:
   - 2016
   - 2017
 document_revision: "2.0"
-primary_play_caller: "Alex Stone"
+author: "Alex Stone"
 canonical: true
 inherits:
   - 2013 Iteration I
@@ -17,7 +17,7 @@ system_sentence: "Same people can change the front. The same front can change th
 
 ## 2016-2017 Evolution II: Structure and Exchange
 
-> **Team-neutral defensive evolution manual** | Primary play-caller: Alex Stone
+> **Team-neutral defensive evolution manual** | Author: Alex Stone
 > **System sentence:** Same people can change the front. The same front can change the rusher.
 
 This document evolves the latest prior Stone defense. Silence means the prior rule survives. The purpose is not to replace the system every few seasons, but to record when enough changes affect how the defense is taught, called, matched and simulated.

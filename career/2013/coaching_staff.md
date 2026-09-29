@@ -13,7 +13,7 @@ This file is the **current operating staff register**. The hiring sequence, decl
 
 ### Team level
 
-- **Alex Stone, head coach:** final football authority within the head-coach powers already established in Document 3. Stone sets team priorities, practice structure, depth chart, game management and the coaching-staff organization. He remains the ordinary offensive play-caller.
+- **Alex Stone, head coach:** final football authority within the head-coach powers already established in Document 3. Stone sets team priorities, practice structure, depth chart, game management and the coaching-staff organization.
 - **David Caldwell, general manager:** not a member of the coaching staff. Caldwell retains final player-personnel, contract, salary-cap, scouting-administration, acquisition and draft authority under the accepted Stone-Caldwell division.
 - Assistant coaches do not receive independent player-personnel authority from their titles. They evaluate, recommend and teach; acquisition authority remains where Document 3 places it.
 
@@ -136,7 +136,6 @@ A material demotion that strips the core job the club hired the coach to perform
 
 **Contract:** 3 seasons, $3.45M total; $1.10M in 2013.  
 **Reports to:** Stone.  
-**Play-calling:** Stone retains final offensive play-calling.
 
 #### Pre-hire résumé relevant to the appointment
 
@@ -295,7 +294,6 @@ Stone's own playing background at tight end does not make Zernhelt a ceremonial 
 - quality-control checks on formations, motions and personnel;
 - backup support when Bates is pulled into larger game-plan work.
 
-Skalaski has no independent play-calling authority.
 
 ## 5. Defensive staff
 

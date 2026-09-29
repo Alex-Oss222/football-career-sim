@@ -20,7 +20,7 @@ Documents 1 through 6 were modeled on a separate legal-simulation project's docu
 
 - Document 1 §3 already separates user-controlled decisions from routine implementation the simulator may carry out on its own.
 - Document 1 §7 already defines a layered fog-of-war so the coach only ever learns what a plausible in-world channel would tell him.
-- Document 1 §9 already states the *philosophy* of bounded randomness and decision-quality-independent-of-outcome, and Document 1 §11 already defines pregame/live-game/postgame structure, four game-detail modes (Executive, Play-Calling, Critical-Decision, Full Tactical), and a list of pause triggers.
+- Document 1 §9 already states the *philosophy* of bounded randomness and decision-quality-independent-of-outcome, and Document 1 §11 already defines pregame/live-game/postgame structure, four game-detail modes (Executive, Selected-Play, Critical-Decision, Full Tactical), and a list of pause triggers.
 - Document 2 §12 already defines full autonomy for transactions between two non-protagonist clubs, and a real-draft-class-then-procedural-generation rule.
 - Document 3 §10 already defines a compressed-turn procedure (batch the whole decision, don't narrate every step) for hiring searches — directly reusable for game weeks.
 - Document 6 §6 already defines the bookkeeping format for a game ledger (drive summaries, scoring ledger, per-snap deltas) down to the last reconciliation check.
@@ -118,7 +118,7 @@ Bounded, matchup-weighted, seeded, and fully logged in the Engine Ledger (condit
 
 ### 3.5 Granularity dial and manual escalation
 
-Document 1 §11.2 already defines four game-detail modes (Executive, Play-Calling, Critical-Decision, Full Tactical). That existing dial sets the user's default narration depth for their own games. Independently of the dial, any sequence automatically escalates to denser, near-play-by-play narration at flagged spotlight moments (money downs, the two-minute drill, goal-to-go, trick plays, a live 4th-down call) or whenever the user names a sequence and asks to "go under the hood" on it — this escalation is prose density only, never an extra user turn. The possession kernel still owns score/outcome resolution; kernel 2013.4 then allocates each resolved drive into a deterministic public snap ledger without consuming additional outcome RNG draws.
+Document 1 §11.2 already defines four game-detail modes (Executive, Selected-Play, Critical-Decision, Full Tactical). That existing dial sets the user's default narration depth for their own games. Independently of the dial, any sequence automatically escalates to denser, near-play-by-play narration at flagged spotlight moments (money downs, the two-minute drill, goal-to-go, trick plays, a live 4th-down call) or whenever the user names a sequence and asks to "go under the hood" on it — this escalation is prose density only, never an extra user turn. The possession kernel still owns score/outcome resolution; kernel 2013.4 then allocates each resolved drive into a deterministic public snap ledger without consuming additional outcome RNG draws.
 
 ### 3.6 Long-run consistency check
 

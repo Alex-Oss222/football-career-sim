@@ -1,6 +1,6 @@
 # Alex Stone, entering 2014
 
-Jacksonville Jaguars head coach and offensive play-caller. Age 50. This portrait looks back from February 2, 2014, after his first Jacksonville season. Descriptions of temperament and comfort are interpretations of his recorded work and conversations; the linked records supply the events.
+Jacksonville Jaguars head coach. Age 50. This portrait looks back from February 2, 2014, after his first Jacksonville season. Descriptions of temperament and comfort are interpretations of his recorded work and conversations; the linked records supply the events.
 
 The [complete NFL Coach Sheet](alex_stone_coach_sheet.md) expands this portrait into his full career, identity, team, staff, roster, capabilities and season log through February 17, 2014, with historical research and explicit gaps.
 
@@ -56,7 +56,7 @@ That is the most useful reading of his manner: direct, particular and willing to
 
 ## How he runs the rest of the team
 
-Stone delegates substantial football authority. Tice runs the weekday offensive process. Crennel prepares and calls the defense. Stone gives defensive priorities, such as fitting the back before chasing pressure or accounting for a particular receiver, and leaves Crennel to call the unit. His New England defensive experience lets him take part in the discussion; it has not turned him into Jacksonville's second defensive caller.
+Stone delegates substantial football authority. Tice runs the weekday offensive process. Crennel prepares and calls the defense. Stone gives defensive priorities, such as fitting the back before chasing pressure or accounting for a particular receiver, and leaves Crennel to call the unit. His New England defensive experience lets him question a coverage or discuss an adjustment with Crennel.
 
 His relationship with Caldwell also has a defined limit. He sought stronger influence over quarterback commitments during the original negotiation, accepted consultation with Caldwell retaining the final decision, and worked within that arrangement through the season. He supplies football projections and personnel recommendations. He does not promise players contracts he cannot grant. After the season, he asked for no new authority or contract terms. That is a coach willing to work with a general manager, while continuing to press a detailed view of what the team should become.
 

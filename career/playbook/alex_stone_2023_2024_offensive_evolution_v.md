@@ -6,7 +6,7 @@ seasons:
   - 2023
   - 2024
 document_revision: "5.0"
-primary_play_caller: "Alex Stone"
+author: "Alex Stone"
 canonical: true
 inherits:
   - "2013 Iteration I"
@@ -22,7 +22,7 @@ season_stages:
 
 ## 2023-2024 Evolution V: Motion and Leverage
 
-> **Team-neutral evolution manual** | Document revision 5.0 | Primary play-caller: Alex Stone  
+> **Team-neutral evolution manual** | Document revision 5.0 | Author: Alex Stone
 > **System sentence:** Change the leverage at the snap. Keep the concept recognizable.
 
 This document is the fifth canonical evolution of Stone's offense. It is an evolution manual layered onto the 2013 Iteration I playbook and Evolutions II through IV. Unless this manual explicitly changes a rule, term, concept, protection, personnel relationship, or operating procedure, the latest prior rule remains in force.

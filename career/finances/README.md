@@ -2,7 +2,7 @@
 
 [Open the 2014 to 2023 cap table](jaguars_cap_2014_2023.md) | [Individual contract details](jaguars_contract_details.md)
 
-This is the long-term financial home for the branch. The ten annual columns remain visible even when a player has no recorded commitment in later years. It uses the supplied NFL cap-table template, adapted to the 2014 rules and the February 28, Entry 89 checkpoint. All 59 current active, retired and futures players are covered.
+This is the long-term financial home for the branch. The ten annual columns remain visible even when a player has no recorded commitment in later years. It uses the supplied NFL cap-table template, adapted to the 2014 rules and the February 28, Entry 90 administrative checkpoint. All 59 current active, retired and futures players are covered.
 
 Read the cap table for team and position totals, every player's annual charge, expiration dates, cash, options, draft costs, dead money and scenarios. Read the named player sheets for contract details and source limits. Unknown amounts are never zero. A partial sum is never available cap space. No automatic extensions, projected player signings or future actual Jaguars contracts fill the later columns.
 
@@ -21,3 +21,5 @@ The generator checks player coverage against the linked current roster and exact
 The [current contract table](../2014/offseason/contract_table.md) supplies the 2014 rows and evidence limits. The [contract register](../2014/offseason/contract_status_register.md) supplies terms and free-agent classes. The executed [rookie contracts](../2013/offseason/draft/draftees.md), [UDFA contracts](../2013/offseason/draft/udfa_signings.md), [veteran agreements](../2013/offseason/free_agency/signings.md) and [futures/tag outcomes](../2014/offseason/free_agency/signings.md) supply branch obligations. The [financial preparation worksheet](../2014/offseason/current_cap_worksheet.md) retains the open reconciliation work.
 
 The original 2011 agreement, contemporary NFLPA explanation and independent minimum-salary table were checked for the template's period-sensitive fields. The source links and specific corrections appear in the cap table. Modern fifth-year option tiers, automatic practice-squad elevations, blanket zero-filled blanks and a recurring four-year floor after 2020 were not carried into the 2014 view. Later actual player transactions were not used to fill branch contracts.
+
+The [original-contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md) now prices all 42 continuing/futures 2014 rows. Estimates carry a stated basis and appear in a separate subtotal and a combined planning subtotal. Conditional allowances for unresolved terms remain outside signed totals. The renderer validates both sourced and estimated 2014 amounts against the current contract table.

@@ -2,7 +2,7 @@
 
 ## 2013 Iteration I: Multiple Concept Offense
 
-> **Team-neutral baseline** | Version 1.0 | Primary play-caller: Alex Stone  
+> **Team-neutral baseline** | Version 1.0 | Author: Alex Stone
 > **System sentence:** Same concepts, different people, different pictures.
 
 This is the first canonical version of Stone's offense. It is built to stand on its own in 2013. Later iterations may add, remove, rename, or reshape material, but this book does not assume knowledge of those future changes.
@@ -14,7 +14,7 @@ This is the first canonical version of Stone's offense. It is built to stand on 
 | **Item**             | **2013 Rule**                                                                                                                                                                  |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Purpose              | Complete team-neutral offensive system for the 2013 starting point. Weekly roster and opponent plans sit on top of this book.                                                  |
-| Play-caller          | Stone is the primary game-day play-caller. The call sheet is built around sequencing, not isolated "best plays."                                                               |
+| Call sheet           | The call sheet is built around sequencing, not isolated "best plays."                                                               |
 | Quarterback model    | Pocket-oriented, semi-mobile. Movement throws, pocket escape, and selective keepers are part of the offense; designed QB running is a change-up, not the foundation.           |
 | Primary identity     | Concept-based passing, formation and personnel multiplicity, vertical aggression, physical downhill run game, controlled access throws, extensive but purposeful substitution. |
 | Non-negotiable field | Every concept carries a clear football purpose, assignment structure, and situational use. No preset percentage, snap share, or computer-generated usage quota controls the call. |

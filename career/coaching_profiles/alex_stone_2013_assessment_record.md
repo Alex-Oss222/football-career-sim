@@ -6,7 +6,7 @@ This preserves the initial assessment and dated evidence map before the Septembe
 
 [Profile method](README.md) | [Staff assessments](staff_profiles.md) | [Frozen prehire dossier](../../library/alex_stone_character_dossier_pre_hire.md) | [Cousins assessment](../2014/offseason/player_development/kirk_cousins.md)
 
-**Evidence through February 2, 2014; compiled September 29, 2026.** Retrospective synthesis, not a newly held meeting. Stone is Jacksonville's head coach and offensive caller. Tice runs the weekday offensive process; Crennel coordinates and calls defense. Since Lowry's January 12 departure, Stone also covers special teams. Bobby April is a search target, not an appointed coach. [Authority canon](../../foundation/03_Head_Coach_Organization_and_Authority_Canon.md), [staff record](../2013/coaching_staff.md) and [staff timeline](../2014/offseason/staff_changes/timeline.md) control those facts.
+**Evidence through February 2, 2014; compiled September 29, 2026.** Retrospective synthesis, not a newly held meeting. Stone is Jacksonville's head coach. Tice runs the weekday offensive process; Crennel coordinates and calls defense. Since Lowry's January 12 departure, Stone also covers special teams. Bobby April is a search target, not an appointed coach. [Authority canon](../../foundation/03_Head_Coach_Organization_and_Authority_Canon.md), [staff record](../2013/coaching_staff.md) and [staff timeline](../2014/offseason/staff_changes/timeline.md) control those facts.
 
 ## Current synthesis
 

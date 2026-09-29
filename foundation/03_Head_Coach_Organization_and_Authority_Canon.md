@@ -5,10 +5,10 @@
 | Field | Canonical entry |
 |---|---|
 | Document status | Active established coach/authority canon. Known assignments are reconciled; unresolved entries remain unknown and game readiness is separately gated. |
-| Document version | Rebuild draft 2.7 |
-| Supersedes | Rebuild draft 2.6; the user-authorized special-teams coordinator appointment ends the interim assignment. Final authority is unchanged. |
-| Last Document 3 content-changing update | 2026-09-29, season-ledger Entry 84: Mike Westhoff appointed special-teams coordinator effective February 11, 2014; Stone's interim direction ends that day. |
-| Canonical as-of date | Established Jacksonville authority and delegation through the February 11, 2014 special-teams appointment (Entry 84; career clock February 2, 2014); current personnel changes belong in Document 4 |
+| Document version | Rebuild draft 2.8 |
+| Supersedes | Rebuild draft 2.7; user correction removes separate play-calling entitlement and title. |
+| Last Document 3 content-changing update | 2026-09-29, season-ledger Entry 90: head-coach responsibilities clarified; calling or delegating any phase is Stone's choice, including during games. |
+| Canonical as-of date | February 28, 2014 checkpoint, administrative correction in Entry 90; current personnel changes belong in Document 4 |
 | Competition, season, and team | NFL, 2013, Jacksonville Jaguars; Document 2 |
 | Simulation mode | Counterfactual Stone career; Document 2 active edition |
 | Factual divergence point | January 15, 2013 accepted Jacksonville offer; hiring-search ledger |
@@ -90,7 +90,7 @@ Do not use the supplied playing statistics, reputation, or position to resolve a
 | 1996-1997 | University of Miami, graduate assistant (offense) | Confirmed; concurrent with doctoral coursework. Ordinary entry-level role, no real-staff collision. | User-confirmed, 2026-09-17 (revised) |
 | 1998 | No coaching title | Doctoral qualifying exams and dissertation proposal; not employed in football this year. | User-confirmed, 2026-09-17 (revised) |
 | 1999 | Miami Dolphins, offensive quality control / assistant quarterbacks | Confirmed; Jimmy Johnson's final season as Dolphins head coach. Ordinary entry-level role, no real-staff collision. | User-confirmed, 2026-09-17 (revised) |
-| 2000 | University of San Diego, offensive coordinator / quarterbacks, under head coach Kevin McGarry | Confirmed college stint (Division I-AA / Pioneer Football League). Primary offensive play-caller. | User-confirmed, 2026-09-17 (revised) |
+| 2000 | University of San Diego, offensive coordinator / quarterbacks, under head coach Kevin McGarry | Confirmed college stint (Division I-AA / Pioneer Football League). Called the offense. | User-confirmed, 2026-09-17 (revised) |
 | 2001 | University of San Diego, assistant head coach / offensive coordinator / quarterbacks | Confirmed; same program, expanded title. Resolves the user's own uncertain recollection ("either I was HC or OC") as assistant head coach plus offensive coordinator — in charge of the offense, but not the program's head coach. | User-confirmed, 2026-09-17 (revised) |
 | 2002-2004 | New England Patriots, defensive coaching assistant (secondary), under defensive backs coach Eric Mangini | Confirmed; reinstates the Patriots tenure the earlier resolution had dropped. New England won the Super Bowl for the 2003 and 2004 seasons during this window. | User-confirmed, 2026-09-17 (revised) |
 | 2005-2006 | New England Patriots, tight ends coach | Confirmed. | User-confirmed, 2026-09-17 (revised) |
@@ -187,7 +187,6 @@ Legacy coaching-philosophy candidates (including the earlier "Bear Crawl" materi
 | Conduct, compliance, and disclosure clauses | [UNSET beyond the Authority Map's discipline/media rows; no bespoke clause stated] | — | Unknown or undetermined |
 | Personnel-control clause | Stone selects and hires the coaching staff and controls the depth chart; Caldwell retains final authority over player-personnel acquisition, contracts, cap, scouting, and the draft, including final say on franchise-level quarterback decisions after required consultation with Stone. Do not infer any authority beyond this from the title "head coach." | Public | `hiring_search.md` Entries 6-7; see Authority Map Section 5 |
 | Assistant-hiring clause | Stone selects his own coaching staff | Public | `hiring_search.md` Entries 4, 7 |
-| Play-calling or coordinator commitments | Stone retains offensive play-calling. The head-coach contract did not name a coordinator; subsequent appointments and ordinary callers are recorded in Section 4 and the completed staff-building record. | Public | `hiring_search.md` Entries 4, 7 |
 | Performance expectations | Year 1: install a functional program, credible player development, dependable preparation and communication, and a resolved evidence-based direction at quarterback. Not an immediate playoff requirement. | Coach-known confidential | `hiring_search.md` Entries 6-7 |
 | Review and notice dates | [UNSET; not addressed] | — | Unknown or undetermined |
 | Governing law, league, conference, school, or CBA limits | NFL; the applicable 2013 CBA and league rules per Document 2 | Public | Document 2 §11 |
@@ -209,16 +208,17 @@ Contract terms and reporting identities are evidence used to complete the Author
 
 Evaluation is audience-specific. Do not create a single job-security, prestige, reputation, owner-confidence, or locker-room score.
 
-## 4. Play-calling and game-management delegation
+## 4. Game-day staff responsibilities
 
-This section records operational delegation only. The Authority Map in Section 5 is the sole source of final authority. A row reference here imports the current Section 5 entry; it does not restate or amend it.
+Stone is the head coach. He may call plays himself or delegate any phase, including changing the arrangement during a game. This is part of the job, not a separate contractual entitlement or appointment. The user chooses how much in-game detail to control.
+
+This section records the current working arrangements only. The Authority Map in Section 5 is the sole source of final authority. A row reference here imports the current Section 5 entry; it does not restate or amend it.
 
 | Responsibility | Authority Map reference | Ordinary operator or caller | Head coach's retained operational role | Limits and return-control triggers | Provenance, effective date, and source |
 |---|---|---|---|---|---|
 | Offensive system and weekly plan implementation | Rows 11 and 12; row 22 when resources are required | Mike Tice coordinates; Stone sets the offensive system | Final menu, plan approval and situational direction | Material departures and Document 7 pause triggers return control; emergency succession remains unassigned. | Established staff-building canon; [current coaching staff](../career/2013/coaching_staff.md), §1; reconciled by Entry 13. |
-| Offensive play calling | Row 12 | Alex Stone | Ordinary offensive caller | Material departures and Document 7 pause triggers return control; emergency succession remains unassigned. | Established staff-building canon; [current coaching staff](../career/2013/coaching_staff.md), §1; reconciled by Entry 13. |
 | Defensive system and weekly plan implementation | Rows 11 and 13; row 22 when resources are required | Romeo Crennel | Team principles and coordinator supervision | Material departures and Document 7 pause triggers return control; emergency succession remains unassigned. | Established staff-building canon; [current coaching staff](../career/2013/coaching_staff.md), §1; reconciled by Entry 13. |
-| Defensive play calling | Row 13 | Romeo Crennel | Team-level game management; no silent snap-by-snap takeover | Material departures and Document 7 pause triggers return control; emergency succession remains unassigned. | Established staff-building canon; [current coaching staff](../career/2013/coaching_staff.md), §1; reconciled by Entry 13. |
+| Defensive play calling | Row 13 | Romeo Crennel | Team-level game management; may take over or delegate calls | Material departures and Document 7 pause triggers return control; emergency succession remains unassigned. | Established staff-building canon; [current coaching staff](../career/2013/coaching_staff.md), §1; reconciled by Entry 13. |
 | Special-teams plan implementation | Rows 11 and 14; row 22 when resources are required | Mike Westhoff, special-teams coordinator | Team priorities, approval of the unit plan and roster/use decisions within Stone authority | Existing player assignments stand until an authorized change; material departures and Document 7 pause triggers return control; emergency succession remains unassigned. | Entry 84 appointment effective February 11, 2014, ending Stone's Entry 75 interim direction (January 12 to February 11); [current coaching staff](../career/2013/coaching_staff.md), §1 and §6. |
 | Special-teams calls | Row 14 | Mike Westhoff directs the kicking game | Consequential game management and retained special-teams decisions | Document 7 decision pauses still apply; no emergency caller is assigned. | Entry 84 appointment effective February 11, 2014; [current coaching staff](../career/2013/coaching_staff.md), §1 and §6. |
 | Fourth-down go, field-goal, or punt selection | Rows 12 and 14, as applicable | Alex Stone, with staff recommendations | Consequential choices remain user-controlled | Follow exact era rules and Document 7 pause triggers; never infer an unrecorded standing choice. | Executed head-coach contract, game-day authority; current staff §1; reconciled by Entry 13. |
@@ -232,7 +232,7 @@ The selected game-detail mode is owned by Document 2. This table is a read-only 
 | Game interface setting | Derived or operational entry | Controlling source and last confirmed |
 |---|---|---|
 | Selected game granularity | Executive head-coach mode with mandatory decision pauses | Document 2 §3; Document 7 §11 |
-| Side or phases directly called by the user | Stone retains ordinary offensive calling; Crennel calls defense; Westhoff directs special teams from February 11, 2014, with Stone keeping consequential game management. Interface granularity follows the selected mode. | [Document 3 Section 4 and Authority Map rows 12–14] |
+| Side or phases directly called by the user | Stone chooses his involvement, including full in-game control. Crennel normally directs defense and Westhoff special teams; Stone may change those assignments during play. | [Document 3 Section 4 and Authority Map rows 12–14] |
 | Routine calls the simulator may implement | [UNSET operational delegation] | [Document 1 plus Document 3 Section 4] |
 | Decisions that always return to the user | Consequential Stone decisions and Document 7 §4 pause triggers | [Document 1 plus applicable Authority Map rows] |
 
@@ -258,8 +258,8 @@ Complete every applicable row before initialization. "Final authority" means the
 | 9 | Depth chart and package roles | Stone | Explicit contract term. | Coordinators and position coaches provide input | Availability, contract, roster, and competition rules | `hiring_search.md` Entries 4, 6-7 |
 | 10 | Starting lineups | Stone | Follows from depth-chart authority (row 9) and game-day authority (row 8). | Coordinators, position coaches, and medical availability | The head coach cannot start a medically unavailable or ineligible player. | `hiring_search.md` Entries 6-7 |
 | 11 | Practice schedule, workload, and repetition allocation | Stone (inferred from his retained head-coach/game-day/depth-chart authority; not itself a separately negotiated line item) | Sets the practice structure. | Medical, performance, coordinator, facilities, and operations input | CBA, governing-body, calendar, travel, and facility limits | Labeled inference — `hiring_search.md` Entries 6-7 |
-| 12 | Offensive play calling | Stone | Explicit contract term. | [UNSET] | Applicable game rules; Section 4 may record operational delegation but cannot change this row | `hiring_search.md` Entries 4, 6-7 |
-| 13 | Defensive play calling | Stone (formal authority of the head-coach role) | Romeo Crennel is the established ordinary defensive caller; see Section 4 and current staff record | Current coaching-staff register | Applicable game rules; Section 4 may record operational delegation but cannot change this row | Structural default only; not part of the negotiated contract terms |
+| 12 | Offensive game-day operation | Stone | Calls or delegates as head coach, including in-game changes. | Mike Tice and offensive staff | Applicable game rules | Head-coach responsibilities; user clarification, Entry 90 |
+| 13 | Defensive game-day operation | Stone (formal authority of the head-coach role) | Romeo Crennel is the established ordinary defensive caller; see Section 4 and current staff record | Current coaching-staff register | Applicable game rules; Section 4 may record operational delegation but cannot change this row | Structural default only; not part of the negotiated contract terms |
 | 14 | Special-teams decisions and calls | Stone (formal authority of the head-coach role) | Mike Westhoff is the ordinary special-teams director from February 11, 2014; see Section 4 and current staff record | Current coaching-staff register | Applicable game rules; Section 4 may record operational delegation but cannot change final authority | Structural final authority unchanged; Entry 84 appointment ends the Entry 75 interim assignment |
 | 15 | Medical diagnosis | Qualified medical personnel (team physician/athletic training staff, per standard NFL practice) | No diagnostic authority. The coach may report observations and request an evaluation. | Player, team physician, athletic trainers, and specialists as applicable | Medical ethics, law, CBA, governing-body policy, and privacy rules | Standard NFL structure, not bespoke to this contract |
 | 16 | Medical clearance and return-to-participation status | Qualified medical personnel (team physician/athletic training staff) | No power to clear or overrule. The coach may decide how to use a medically available player within stated limitations. | Player, physician, athletic training, performance, independent specialists or protocols as applicable | Medical protocol, law, CBA, and governing-body rules | Standard NFL structure, not bespoke to this contract |

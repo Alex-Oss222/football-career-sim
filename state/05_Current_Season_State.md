@@ -1,21 +1,21 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2014-FEB28-STATE-65`
-**Supersedes:** `JAX-2014-FEB25-STATE-64`
-**Snapshot effective:** February 28, 2014; the league has published the 2014 cap ($133,000,000) and tag values. Eugene Monroe is Jacksonville's franchise player (non-exclusive, designated February 18); his tender is official at $11,654,000 and not yet signed. The 2013 season is complete and archived (Super Bowl XLVIII: Buffalo 31, Minnesota 20).
-**Last reconciled:** September 29, 2026; season-ledger Entry 89.
-**Global package checkpoint:** `Canonical update - February 28, 2014 - Clock advanced to February 28 (2014 cap and tag figures published)`
+**Version:** `JAX-2014-FEB28-STATE-66`
+**Supersedes:** `JAX-2014-FEB28-STATE-65`
+**Snapshot effective:** February 28, 2014; Entry 90 corrects head-coach framing and original-contract accounting at the same date; the league has published the 2014 cap ($133,000,000) and tag values. Eugene Monroe is Jacksonville's franchise player (non-exclusive, designated February 18); his tender is official at $11,654,000 and not yet signed. The 2013 season is complete and archived (Super Bowl XLVIII: Buffalo 31, Minnesota 20).
+**Last reconciled:** September 29, 2026; season-ledger Entry 90.
+**Global package checkpoint:** `Canonical correction - February 28, 2014 - Head-coach role and original contracts reconciled`
 
 ## Effective source-version manifest
 
 | Canonical document | Effective version | Current pointer |
 |---|---|---|
-| Document 1 | `358ccf4feac40830055bae5e4cbd84151536ab9e` | Active foundation source |
+| Document 1 | `cba09b0857584ea0fb1ccba6ea17da593b48330c` | Active foundation source |
 | Document 2 | `f25e462b4e0478e6b641957e39560d7dcb3502e0` | Active foundation source |
-| Document 3 | `9e526e59013155b8ba29ca99b6bb51618c4135d9` | Active foundation source |
-| Document 4 | `JAX-2014-FEB28-REGISTER-44`; closed by Entry 89 | Controlled 53 (52 active, Meester Reserve/Retired); practice squad 0; six 2014 reserve/future contracts effective March 11; Monroe franchise-tagged February 18 (tender official at $11,654,000 from February 28, not yet signed); draft coin flip and league ownership reconciled; Mike Westhoff special teams coordinator from February 11, 2014 |
-| Document 6 | 2013 ledger through Entry 89 | 2013 season complete; phase archives in Entry 67; 2014 setup in Entry 68; kernels 2014.1 and 2014.2 in Entries 69-70; season honours in Entry 71; kernel 2014.3 and the engine assessment in Entry 72; Super Bowl MVP and Pro Bowl in Entry 73; season review with Khan and Caldwell in Entry 74; January 2014 coaching carousel in Entry 75; exit interviews in Entry 76; staff authority and planning reconciliation in Entry 77; historical league rails adopted in Entry 78; Meester retired and Allen retirement scheduled in Entry 79; Cousins trade and draft capital reconciled in Entry 80; coin flip and league pick ownership reconciled in Entry 81; operating handoff and readiness reconciliation in Entry 82; February 2014 coaching exposure (no departures) in Entry 83; special teams coordinator hired in Entry 84; 2014 reserve/future contracts in Entry 85; clock advanced to February 17 in Entry 86; Monroe franchise tag in Entry 87; clock advanced to February 25 (Combine closed) in Entry 88; clock advanced to February 28 (2014 cap and tag figures published) in Entry 89 |
+| Document 3 | `30ff2bd2eb39f64e31565d5eaf76bdd2de7e54b5` | Active foundation source |
+| Document 4 | `JAX-2014-FEB28-REGISTER-45`; closed by Entry 90 | Controlled 53 (52 active, Meester Reserve/Retired); practice squad 0; six 2014 reserve/future contracts effective March 11; Monroe franchise-tagged February 18 (tender official at $11,654,000 from February 28, not yet signed); draft coin flip and league ownership reconciled; Mike Westhoff special teams coordinator from February 11, 2014 |
+| Document 6 | 2013 ledger through Entry 90 | 2013 season complete; phase archives in Entry 67; 2014 setup in Entry 68; kernels 2014.1 and 2014.2 in Entries 69-70; season honours in Entry 71; kernel 2014.3 and the engine assessment in Entry 72; Super Bowl MVP and Pro Bowl in Entry 73; season review with Khan and Caldwell in Entry 74; January 2014 coaching carousel in Entry 75; exit interviews in Entry 76; staff authority and planning reconciliation in Entry 77; historical league rails adopted in Entry 78; Meester retired and Allen retirement scheduled in Entry 79; Cousins trade and draft capital reconciled in Entry 80; coin flip and league pick ownership reconciled in Entry 81; operating handoff and readiness reconciliation in Entry 82; February 2014 coaching exposure (no departures) in Entry 83; special teams coordinator hired in Entry 84; 2014 reserve/future contracts in Entry 85; clock advanced to February 17 in Entry 86; Monroe franchise tag in Entry 87; clock advanced to February 25 (Combine closed) in Entry 88; clock advanced to February 28 (2014 cap and tag figures published) in Entry 89; head-coach role and original contracts reconciled in Entry 90 |
 
 ## 1. Master clock and competition position
 
@@ -24,7 +24,7 @@
 | Master date/time | February 28, 2014 |
 | League/season | NFL, 2013 |
 | Team / head coach | Jacksonville Jaguars / Alex Stone (retained for 2014 at the January 15, 2014 season review, Entry 74) |
-| Callers | Stone offense; Romeo Crennel defense; Mike Westhoff directs special teams from February 11, 2014 (Entry 84), with Stone keeping consequential game management. Stone's interim direction after Alan Lowry's January 12 departure (Entry 75) ended that day |
+| Game-day staff | Stone leads the team and chooses which calls to make or delegate. Crennel normally directs defense; Westhoff special teams from February 11, 2014 (Entry 84). Stone's interim direction after Alan Lowry's January 12 departure (Entry 75) ended that day |
 | Season phase | 2013 season complete; 2014 offseason, before the March 11 league year (franchise/transition window February 17 to March 3; Jacksonville's designation made February 18; Combine closed February 25; 2014 cap and tag values published February 28) |
 | Preseason record | **2-2** |
 | Regular-season record | **10-6 (final)** |
@@ -47,7 +47,7 @@
 
 Player birth dates and ages are in Document 4, the [roster](../career/2013/roster.md) and [league age view](../career/2013/player_ages.md). Ages are derived at the master date and checked on every repository validation; run `python scripts/render_player_ages.py` after a date or roster change. Entry 63 added identity metadata without advancing time or retiring anyone.
 
-**2014 financial/control gate:** [the prepared worksheet](../career/2014/offseason/current_cap_worksheet.md) does not certify cap room. Monroe's franchise tender, $11,654,000, counts from March 11; the [contract table](../career/2014/offseason/contract_table.md) lists every sourced and unresolved 2014 charge. Six reserve/future contracts are signed at the minimum for each player's credited seasons (Bray $420,000; the other five figures unresolved until credited seasons are established); 2014 practice-squad eligibility is checked only after the August cutdown. No contract is created or terminated by this administrative review.
+**2014 financial/control gate:** [the prepared worksheet](../career/2014/offseason/current_cap_worksheet.md) does not certify cap room. Monroe's franchise tender, $11,654,000, counts from March 11; the [contract table](../career/2014/offseason/contract_table.md) prices all 42 continuing/futures contracts with sourced schedules and estimates separated. Six reserve/future contracts are signed at the minimum for each player's credited seasons (Bray, Jerrell Jackson and Long $420,000 each; Murphy, D'Anthony Smith and Blake $495,000 each, service reconstructed in Entry 90); 2014 practice-squad eligibility is checked only after the August cutdown. No contract is created or terminated by this administrative review.
 
 ## 3. Availability
 
@@ -89,7 +89,7 @@ The 2013 season is complete and archived (Entry 67): Jacksonville 10-6, 1-1 in t
 | March 3, 4 p.m. ET | Designation deadline | Jacksonville already designated (Monroe, February 18) |
 | March 8 noon to March 11 | Permitted agent negotiating window | No new-club contract before March 11 |
 | March 11, 4 p.m. ET | League year opens: free agency and trades; RFA/ERFA tender deadline; reserve/future contracts and Monroe's tag tender take effect | Tenders (Bradfield lowest; ERFAs Clemons, Brown, Pasztor) are made before this deadline, not yet (the 2014 RFA amounts' publication date is not established, no later than March 6); Meester's contract expires; Monroe's $11,654,000 tender counts from here and offer sheets become possible; his re-signing draw (rails section 4), the other own free agents and the free-agent market draws resolve at their real signing dates |
-| Unknown | Nwaneri's 2014 roster-bonus due date | Sets the deadline for package F1 and for including Nwaneri in package H; still unverified |
+| March 25, 2014 | Nwaneri's original $1M roster bonus, reported due on day 15 of the league year | Original clause recovered in Entry 90; review the proposed F1/H timing before that date |
 
 - **Memo amendment recorded at February 17 (plans only; commit adba00d):** package A's pick is No. 36. New package H would send 36 (once package A has delivered it) and Nwaneri to Minnesota for No. 31 to draft DeMarcus Lawrence (DE, Boise State). If it is not agreed before Nwaneri's bonus date, package F1 governs him and H becomes 36 alone for 31; if Minnesota declines, Jacksonville keeps 36 with Lawrence first choice there. Monroe: re-sign, else the franchise tag at 4 p.m. ET on March 3 (timing superseded by the tag-now amendment; see Entry 87). Fallbacks: Paradis, Stork, then Swanson for Linsley (Detroit's fifth); Cockrell for Gaines (sixth), then Butler in round 7.
 - **Clock advanced to February 28 (Entry 89):** the league published the 2014 cap, **$133,000,000** per club, and the franchise and transition values (`library/2014_league_calendar_and_financial_rules.md` F1 and sections 2b and 2c). Monroe's non-exclusive tender is official at **$11,654,000** (offensive line); 120 percent of his recorded 2013 salary is lower on either measure, a check that rests on an unre-verified 2013 transcription. The tender is not yet signed and counts from March 11. Jacksonville's adjusted cap, carryover and cap space remain unresolved (branch carryover range $5.4M to $6.6M or none, per the memo). Real other-club moves dated February 26-28 apply on the rails from a bounded two-pass search (18 of the 31 other clubs had no move found, not a verified negative): Jordan Gross (Carolina) retired; Cleveland, Baltimore, Arizona, Seattle, New England and Dallas released veterans; Baltimore, Chicago and Philadelphia re-signed or extended their own players (each row's label is in its club page); Carolina tagged Greg Hardy, New Orleans Jimmy Graham and the Jets Nick Folk. Two reported moves (Potter to Houston, Barnes re-signed by Oakland) await verification and are not applied. Nothing happened for Jacksonville: no signing, tender, trade or waiver claim.
@@ -115,3 +115,5 @@ The 2013 season is complete and archived (Entry 67): Jacksonville 10-6, 1-1 in t
 - **Season honours (Entries 71 and 73):** drawn retroactively at the user's request (`career/2013/awards/season_honours.md`). Maurice Jones-Drew is Comeback Player of the Year; Stone was shortlisted for Coach of the Year (Rex Ryan drawn). C.J. Spiller is the Super Bowl XLVIII MVP. Marcedes Lewis played in the Pro Bowl for Team One (Jeff Fisher's Rams staff), which won 9-6 in overtime (`career/2013/pro_bowl/README.md`).
 
 **2014 execution gate:** explicit season routing and `runtime/season_readiness.json` now enforce the open release requirements even if the private service is reachable. The Tier 1 engine fixes, rules, dated fixtures, legal inputs and accepted end-to-end closure remain outstanding. See [readiness and handoff checklist](../career/2014/readiness.md).
+
+**Entry 90 financial correction:** $56,140,166 sourced/reconstructed contracts plus about $35,977,655 estimated contracts and Monroe's $11,654,000 tender yields about $103,771,821 of scheduled charges before team accounting. Wilson/Grimes conditional retention allowances remain outside signed totals. See the [ten-year tracker](../career/finances/jaguars_cap_2014_2023.md).

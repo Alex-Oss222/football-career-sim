@@ -1,6 +1,6 @@
 # Jacksonville Jaguars individual contract details
 
-[Return to the ten-year table](jaguars_cap_2014_2023.md). Snapshot: February 28, 2014, Entry 89. Whole US dollars. All 59 tracked players have a named sheet below.
+[Return to the ten-year table](jaguars_cap_2014_2023.md). Snapshot: February 28, 2014, Entry 90. Whole US dollars. All 59 tracked players have a named sheet below.
 
 The supplied template's clause fields remain relevant. Unless a player entry establishes them, agent, jersey number, option/restructure/reporting bonuses, incentive schedules, split salary, guarantee vesting, offset, no-trade/no-tag language, deferrals, advances and physical clauses are **unresolved**, not zero or absent. No speculative market value or performance rating is added. Cash means scheduled annual commitment if retained, not paid-to-date. An inherited annual bonus carry-forward is only the inference disclosed in the current contract table.
 
@@ -16,10 +16,10 @@ The supplied template's clause fields remain relevant. Unless a player entry est
 | Signed | 2012 with Washington; acquired before the April 25, 2013 draft (exact date not fixed) |
 | Recorded term | 4 / 2015 |
 | Last recorded contract/tender year | 2015 |
-| Reported original deal value | Unresolved |
-| Signing bonus and proration | Washington keeps all bonus proration; none on Jacksonville's books |
-| 2014 guarantee evidence | Unresolved |
-| Remaining guarantees | Unknown |
+| Reported original deal value | $2,572,688 original four-year deal |
+| Signing bonus and proration | $472,688 original bonus, all retained by Washington; Jacksonville proration $0 |
+| 2014 guarantee evidence | No remaining guaranteed base salary established in the recovered schedule |
+| Remaining guarantees | 0 |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
 | Accrued service evidence | Through 2012: 1 (2012 rookie season with Washington). 2013: Accrues in branch (on 53 for 16 games) |
 | Availability | No communicated restriction |
@@ -30,8 +30,8 @@ The supplied template's clause fields remain relevant. Unless a player entry est
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 0 | Unresolved | Unknown | Unknown | 0 recorded portion |
-| 2015 | Unknown | 0 | Unresolved | Unknown | Unknown | 0 recorded portion |
+| 2014 | 570,000 | 0 | 0 | 570,000 | 570,000 | 0 recorded portion |
+| 2015 | 660,000 | 0 | 0 | 660,000 | 660,000 | 0 recorded portion |
 | 2016 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2018 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -43,16 +43,16 @@ The supplied template's clause fields remain relevant. Unless a player entry est
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: No proration on Jacksonville's books; guarantees Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $0 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 0 bonus floor; guarantees unresolved | Unresolved | 0 bonus portion | 0 bonus portion | Unresolved; verify terms |
-| 2015 | Unknown | 0 bonus floor; guarantees unresolved | Unresolved | 0 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | 570,000 | 0 | 570,000 | 0 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2015 | 660,000 | 0 | 660,000 | 0 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
-Unresolved. Remaining unpaid exposure is unknown. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
+No remaining guaranteed base salary established in the recovered schedule. Remaining unpaid exposure is 0. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
 
 ### Rookie terms and conditional years
 
@@ -66,9 +66,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-Branch record (trade; May 5 worksheet); term Confirmed (register); 2014 figures Unresolved.
+Original rookie salaries continue after the branch trade. Washington retains the original $472,688 bonus; Jacksonville carries salary only. No later Washington contract is imported..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Roy Miller
 
@@ -243,9 +243,9 @@ Recorded 2014 pre-June-1 exposure: At least $10,349,508 (remaining proration); b
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | 4,818,545 | 10,349,508 bonus floor; guarantees unresolved | Unresolved | 3,449,836 bonus portion | 6,899,672 bonus portion | Unresolved; verify terms |
-| 2015 | 5,782,254 | 6,899,672 bonus floor; guarantees unresolved | Unresolved | 3,449,836 bonus portion | 3,449,836 bonus portion | Unresolved; verify terms |
-| 2016 | 6,745,963 | 3,449,836 bonus floor; guarantees unresolved | Unresolved | 3,449,836 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | 4,818,545 | 10,349,508 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 3,449,836 bonus portion | 6,899,672 bonus portion | Unresolved; verify terms |
+| 2015 | 5,782,254 | 6,899,672 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 3,449,836 bonus portion | 3,449,836 bonus portion | Unresolved; verify terms |
+| 2016 | 6,745,963 | 3,449,836 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 3,449,836 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
@@ -310,9 +310,9 @@ Recorded 2014 pre-June-1 exposure: At least $1,768,146; base guarantees Unresolv
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | 1,242,978 | 1,768,146 bonus floor; guarantees unresolved | Unresolved | 589,382 bonus portion | 1,178,764 bonus portion | Unresolved; verify terms |
-| 2015 | 1,491,574 | 1,178,764 bonus floor; guarantees unresolved | Unresolved | 589,382 bonus portion | 589,382 bonus portion | Unresolved; verify terms |
-| 2016 | 1,740,170 | 589,382 bonus floor; guarantees unresolved | Unresolved | 589,382 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | 1,242,978 | 1,768,146 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 589,382 bonus portion | 1,178,764 bonus portion | Unresolved; verify terms |
+| 2015 | 1,491,574 | 1,178,764 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 589,382 bonus portion | 589,382 bonus portion | Unresolved; verify terms |
+| 2016 | 1,740,170 | 589,382 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 589,382 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
@@ -377,9 +377,9 @@ Recorded 2014 pre-June-1 exposure: At least $503,382; base guarantees Unresolved
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | 711,794 | 503,382 bonus floor; guarantees unresolved | Unresolved | 167,794 bonus portion | 335,588 bonus portion | Unresolved; verify terms |
-| 2015 | 825,794 | 335,588 bonus floor; guarantees unresolved | Unresolved | 167,794 bonus portion | 167,794 bonus portion | Unresolved; verify terms |
-| 2016 | 990,294 | 167,794 bonus floor; guarantees unresolved | Unresolved | 167,794 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | 711,794 | 503,382 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 167,794 bonus portion | 335,588 bonus portion | Unresolved; verify terms |
+| 2015 | 825,794 | 335,588 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 167,794 bonus portion | 167,794 bonus portion | Unresolved; verify terms |
+| 2016 | 990,294 | 167,794 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 167,794 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
@@ -444,9 +444,9 @@ Recorded 2014 pre-June-1 exposure: At least $372,771; base guarantees Unresolved
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | 619,257 | 372,771 bonus floor; guarantees unresolved | Unresolved | 124,257 bonus portion | 248,514 bonus portion | Unresolved; verify terms |
-| 2015 | 709,257 | 248,514 bonus floor; guarantees unresolved | Unresolved | 124,257 bonus portion | 124,257 bonus portion | Unresolved; verify terms |
-| 2016 | 799,257 | 124,257 bonus floor; guarantees unresolved | Unresolved | 124,257 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | 619,257 | 372,771 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 124,257 bonus portion | 248,514 bonus portion | Unresolved; verify terms |
+| 2015 | 709,257 | 248,514 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 124,257 bonus portion | 124,257 bonus portion | Unresolved; verify terms |
+| 2016 | 799,257 | 124,257 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 124,257 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
@@ -511,9 +511,9 @@ Recorded 2014 pre-June-1 exposure: At least $160,209; base guarantees Unresolved
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | 548,403 | 160,209 bonus floor; guarantees unresolved | Unresolved | 53,403 bonus portion | 106,806 bonus portion | Unresolved; verify terms |
-| 2015 | 638,403 | 106,806 bonus floor; guarantees unresolved | Unresolved | 53,403 bonus portion | 53,403 bonus portion | Unresolved; verify terms |
-| 2016 | 728,403 | 53,403 bonus floor; guarantees unresolved | Unresolved | 53,403 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | 548,403 | 160,209 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 53,403 bonus portion | 106,806 bonus portion | Unresolved; verify terms |
+| 2015 | 638,403 | 106,806 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 53,403 bonus portion | 53,403 bonus portion | Unresolved; verify terms |
+| 2016 | 728,403 | 53,403 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 53,403 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
@@ -578,9 +578,9 @@ Recorded 2014 pre-June-1 exposure: At least $96,615; base guarantees Unresolved.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | 527,205 | 96,615 bonus floor; guarantees unresolved | Unresolved | 32,205 bonus portion | 64,410 bonus portion | Unresolved; verify terms |
-| 2015 | 617,205 | 64,410 bonus floor; guarantees unresolved | Unresolved | 32,205 bonus portion | 32,205 bonus portion | Unresolved; verify terms |
-| 2016 | 707,205 | 32,205 bonus floor; guarantees unresolved | Unresolved | 32,205 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | 527,205 | 96,615 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 32,205 bonus portion | 64,410 bonus portion | Unresolved; verify terms |
+| 2015 | 617,205 | 64,410 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 32,205 bonus portion | 32,205 bonus portion | Unresolved; verify terms |
+| 2016 | 707,205 | 32,205 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 32,205 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
@@ -879,7 +879,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Recorded term | 4 / 2015 |
 | Last recorded contract/tender year | 2015 |
 | Reported original deal value | $18,512,010 (guaranteed at signing: $18,512,010) |
-| Signing bonus and proration | Bonus Unresolved; $2,975,818; 2 |
+| Signing bonus and proration | $7,110,000 paid signing bonus plus deferred roster installments treated as signing bonus; original scheduled allocation $2,975,818 annually, before forfeiture reconciliation |
 | 2014 guarantee evidence | Remaining guarantees Unresolved |
 | Remaining guarantees | Unknown |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
@@ -892,8 +892,8 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 2,975,818 | Unresolved | Unknown | Unknown | 2,975,818 recorded portion |
-| 2015 | Unknown | 2,975,818 | Unresolved | Unknown | Unknown | 0 recorded portion |
+| 2014 | 2,072,910 | 2,975,818 | 0 | About 5,048,728 | 3,772,910 | 2,975,818 recorded portion |
+| 2015 | 2,914,365 | 2,975,818 | 0 | About 5,890,183 | 4,304,365 | 0 recorded portion |
 | 2016 | Unresolved | Unresolved | Unresolved | Option open | Unresolved | Unresolved |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2018 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -905,12 +905,12 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: At least $5,951,636 (Inference); guarantees Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: Unresolved: original remaining allocation $5,951,636 includes unpaid deferred amounts; forfeiture credits and voided guarantees must be reconciled before stating release exposure. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 5,951,636 bonus floor; guarantees unresolved | Unresolved | 2,975,818 bonus portion | 2,975,818 bonus portion | Unresolved; verify terms |
-| 2015 | Unknown | 2,975,818 bonus floor; guarantees unresolved | Unresolved | 2,975,818 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | About 5,048,728 | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved; verify terms |
+| 2015 | About 5,890,183 | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
@@ -928,9 +928,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-Archive row (2013); term Confirmed (register); 2014 Unresolved.
+Original schedule before unresolved branch forfeiture credits: 2014 base $2,072,910 and $1.7M deferred roster cash; 2015 base $2,914,365 and about $1.39M deferred cash. These guaranteed-at-signing bonuses were already treated as signing bonus for cap purposes; do not add them to cap twice. Later actual suspension/tolling does not apply. Current guarantees and four-game branch forfeiture accounting remain unresolved..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Cecil Shorts
 
@@ -945,7 +945,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Recorded term | 4 / 2014 |
 | Last recorded contract/tender year | 2014 |
 | Reported original deal value | $2,672,146 |
-| Signing bonus and proration | Bonus Unresolved; $110,845; 1 |
+| Signing bonus and proration | $443,380 signing bonus; final 2014 allocation $110,845 |
 | 2014 guarantee evidence | Unresolved |
 | Remaining guarantees | Unknown |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
@@ -958,7 +958,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 110,845 | Unresolved | Unknown | Unknown | 0 recorded portion |
+| 2014 | 1,431,000 | 110,845 | 0 | About 1,541,845 | 1,431,000 | 0 recorded portion |
 | 2015 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2016 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -971,11 +971,11 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: At least $110,845 (Inference); guarantees Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $110,845 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 110,845 bonus floor; guarantees unresolved | Unresolved | 110,845 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | About 1,541,845 | 110,845 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 110,845 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
@@ -993,9 +993,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-OTC row (2013); term Confirmed.
+Planning estimate includes the projected $1.431M proven-performance base. Original un-escalated base is $739,383 (contract-total reconstruction), cap $850,228. Confirm branch offensive snap eligibility and the published 2014 tender before booking the increase; 104 receptions do not certify snap percentage..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Marcedes Lewis
 
@@ -1010,7 +1010,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Recorded term | 5 / 2015 |
 | Last recorded contract/tender year | 2015 |
 | Reported original deal value | $34,000,000 |
-| Signing bonus and proration | Bonus Unresolved; $1,400,000; 2 |
+| Signing bonus and proration | $7,000,000 signing bonus; $1,400,000 annually through 2015 |
 | 2014 guarantee evidence | Unresolved |
 | Remaining guarantees | Unknown |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
@@ -1023,8 +1023,8 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 1,400,000 | Unresolved | Unknown | Unknown | 1,400,000 recorded portion |
-| 2015 | Unknown | 1,400,000 | Unresolved | Unknown | Unknown | 0 recorded portion |
+| 2014 | 6,700,000 | 1,400,000 | 150,000 | 8,250,000 | 6,850,000 | 1,400,000 recorded portion |
+| 2015 | 6,650,000 | 1,400,000 | 150,000 | 8,200,000 | 6,800,000 | 0 recorded portion |
 | 2016 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2018 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -1036,12 +1036,12 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: At least $2,800,000 (Inference); guarantees Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $2,800,000 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 2,800,000 bonus floor; guarantees unresolved | Unresolved | 1,400,000 bonus portion | 1,400,000 bonus portion | Unresolved; verify terms |
-| 2015 | Unknown | 1,400,000 bonus floor; guarantees unresolved | Unresolved | 1,400,000 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | 8,250,000 | 2,800,000 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 1,400,000 bonus portion | 1,400,000 bonus portion | Unresolved; verify terms |
+| 2015 | 8,200,000 | 1,400,000 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 1,400,000 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
@@ -1059,9 +1059,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-Archive row (2013); term Confirmed.
+Original 2011 contract carried through 2015. The 2015 salary reduction in real history is excluded; the original $6.65M base remains. Workout bonus continues at $150,000..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Mark Asper
 
@@ -1075,10 +1075,10 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Signed | 2012 |
 | Recorded term | 4 / 2015 |
 | Last recorded contract/tender year | 2015 |
-| Reported original deal value | Unresolved |
-| Signing bonus and proration | Unresolved |
-| 2014 guarantee evidence | Unresolved |
-| Remaining guarantees | Unknown |
+| Reported original deal value | $2,213,452 original four-year deal |
+| Signing bonus and proration | $113,452 original Buffalo bonus; Jacksonville proration $0 |
+| 2014 guarantee evidence | No remaining guaranteed base salary established in the recovered schedule |
+| Remaining guarantees | 0 |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
 | Accrued service evidence | Through 2012: Unresolved (not status-determining). 2013: Accrues in branch (on 53 for 16 games) |
 | Availability | No communicated restriction |
@@ -1089,8 +1089,8 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | Unknown | Unresolved | Unknown | Unknown | Unresolved |
-| 2015 | Unknown | Unknown | Unresolved | Unknown | Unknown | Unresolved |
+| 2014 | 570,000 | 0 | 0 | 570,000 | 570,000 | 0 recorded portion |
+| 2015 | 660,000 | 0 | 0 | 660,000 | 660,000 | 0 recorded portion |
 | 2016 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2018 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -1102,16 +1102,16 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $0 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved; verify terms |
-| 2015 | Unknown | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved; verify terms |
+| 2014 | 570,000 | 0 | 570,000 | 0 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2015 | 660,000 | 0 | 660,000 | 0 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
-Unresolved. Remaining unpaid exposure is unknown. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
+No remaining guaranteed base salary established in the recovered schedule. Remaining unpaid exposure is 0. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
 
 ### Rookie terms and conditional years
 
@@ -1125,9 +1125,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-Register: Single source (OTC export).
+Original 2012 four-year rookie deal continued through waiver claims. Buffalo keeps the $113,452 bonus; Jacksonville carries the remaining scheduled salaries. Conditional escalators require branch evidence..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Uche Nwaneri
 
@@ -1142,7 +1142,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Recorded term | 5 / 2015 |
 | Last recorded contract/tender year | 2015 |
 | Reported original deal value | $24,000,000 |
-| Signing bonus and proration | Bonus Unresolved; $1,094,500; 2 |
+| Signing bonus and proration | $1,094,500 annual allocation in 2014 and 2015; original paid-bonus composition not fully recovered |
 | 2014 guarantee evidence | Unresolved |
 | Remaining guarantees | Unknown |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
@@ -1155,8 +1155,8 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | 3,775,000 | 1,094,500 | 1,000,000 roster; other components unresolved | About 5,900,000 | Unknown | 1,094,500 recorded portion |
-| 2015 | Unknown | 1,094,500 | Unresolved | Unknown | Unknown | 0 recorded portion |
+| 2014 | 3,775,000 | 1,094,500 | 1,025,000 | About 5,894,500 | 4,800,000 | 1,094,500 recorded portion |
+| 2015 | 3,775,000 | 1,094,500 | 1,025,000 | About 5,894,500 | 4,800,000 | 0 recorded portion |
 | 2016 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2018 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -1168,12 +1168,12 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: About $2.19M of proration (Single source; equals 2 x $1,094,500); guarantees Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $2,189,000 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | About 5,900,000 | 2,189,000 bonus floor; guarantees unresolved | Unresolved | 1,094,500 bonus portion | 1,094,500 bonus portion | Unresolved; verify terms |
-| 2015 | Unknown | 1,094,500 bonus floor; guarantees unresolved | Unresolved | 1,094,500 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | About 5,894,500 | 2,189,000 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 1,094,500 bonus portion | 1,094,500 bonus portion | Unresolved; verify terms |
+| 2015 | About 5,894,500 | 1,094,500 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 1,094,500 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
@@ -1191,9 +1191,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-Base, roster bonus and 2015 end Confirmed (verifications section 1); cap charge and dead money Single source.
+2014 estimate: verified $3.775M base and $1M roster bonus plus carried $25,000 workout and $1,094,500 allocation. Original 2015 cash schedule remains missing; budget the same $4.8M cash and $5,894,500 charge as 2014 until replaced. That flat 2015 allowance is an estimate, not a recovered salary..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Will Rackley
 
@@ -1208,7 +1208,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Recorded term | 4 / 2014 |
 | Last recorded contract/tender year | 2014 |
 | Reported original deal value | $2,914,274 |
-| Signing bonus and proration | Bonus Unresolved; $154,868; 1 |
+| Signing bonus and proration | $619,472 signing bonus; final 2014 allocation $154,868 |
 | 2014 guarantee evidence | Unresolved |
 | Remaining guarantees | Unknown |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
@@ -1221,7 +1221,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 154,868 | Unresolved | Unknown | Unknown | 0 recorded portion |
+| 2014 | 1,431,000 | 154,868 | 0 | About 1,585,868 | 1,431,000 | 0 recorded portion |
 | 2015 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2016 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -1234,11 +1234,11 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: At least $154,868 (Inference); guarantees Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $154,868 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 154,868 bonus floor; guarantees unresolved | Unresolved | 154,868 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | About 1,585,868 | 154,868 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 154,868 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
@@ -1256,9 +1256,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-Archive row (2013); term Confirmed.
+Planning estimate reserves the projected $1.431M proven-performance base. Original base is $772,401 (contract-total reconstruction), cap $927,269. His 2011 participation qualifies for one season; verify 2013 branch snaps and publication before booking the escalator..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Mike Brewster
 
@@ -1273,9 +1273,9 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Recorded term | 3 / 2014 |
 | Last recorded contract/tender year | 2014 |
 | Reported original deal value | $1,450,000 |
-| Signing bonus and proration | Unresolved |
-| 2014 guarantee evidence | Unresolved |
-| Remaining guarantees | Unknown |
+| Signing bonus and proration | $10,000 signing bonus; final 2014 allocation $3,334 |
+| 2014 guarantee evidence | No remaining guaranteed base salary established in the recovered schedule |
+| Remaining guarantees | 0 |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
 | Accrued service evidence | Through 2012: 1 (2012: 12 games, 7 starts, then Reserve/Injured). 2013: Accrues in branch (on 53 for 16 games) |
 | Availability | No communicated restriction |
@@ -1286,7 +1286,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | Unknown | Unresolved | Unknown | Unknown | Unresolved |
+| 2014 | 570,000 | 3,334 | 0 | 573,334 | 570,000 | 0 recorded portion |
 | 2015 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2016 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -1299,15 +1299,15 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $3,334 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved; verify terms |
+| 2014 | 573,334 | 3,334 | 570,000 | 3,334 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
-Unresolved. Remaining unpaid exposure is unknown. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
+No remaining guaranteed base salary established in the recovered schedule. Remaining unpaid exposure is 0. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
 
 ### Rookie terms and conditional years
 
@@ -1321,9 +1321,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-Register: Single source (Spotrac search text).
+Three-year $1,450,000 deal reconstructed as $390,000/$480,000/$570,000 bases plus $10,000 bonus. Final bonus year carries the $1 rounding remainder..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Jason Babin
 
@@ -1338,7 +1338,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Recorded term | 5 / 2015 |
 | Last recorded contract/tender year | 2015 |
 | Reported original deal value | $28,325,000 |
-| Signing bonus and proration | No proration on Jacksonville's 2013 row |
+| Signing bonus and proration | No Jacksonville proration on the claimed Philadelphia contract |
 | 2014 guarantee evidence | Unresolved |
 | Remaining guarantees | Unknown |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
@@ -1351,8 +1351,8 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | Unknown | Unresolved | Unknown | Unknown | Unresolved |
-| 2015 | Unknown | Unknown | Unresolved | Unknown | Unknown | Unresolved |
+| 2014 | 6,000,000 | 0 | 175,000 | About 6,175,000 | 6,175,000 | 0 recorded portion |
+| 2015 | 6,000,000 | 0 | 175,000 | About 6,175,000 | 6,175,000 | 0 recorded portion |
 | 2016 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2018 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -1364,12 +1364,12 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $0 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved; verify terms |
-| 2015 | Unknown | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved; verify terms |
+| 2014 | About 6,175,000 | 0 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 0 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2015 | About 6,175,000 | 0 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 0 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
@@ -1387,9 +1387,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-OTC row (2013); term Confirmed.
+Planning estimate follows the reported $6.175M annual compensation on the original deal. $6M salary is corroborated; the remaining $175,000 component mix needs confirmation. Philadelphia retains old bonus allocation. An original opt-out clause is reported, but no branch exercise has occurred..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Andre Branch
 
@@ -1404,9 +1404,9 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Recorded term | 4 / 2015 |
 | Last recorded contract/tender year | 2015 |
 | Reported original deal value | $5,089,934 |
-| Signing bonus and proration | Bonus Unresolved; $535,442; 2 |
-| 2014 guarantee evidence | Unresolved |
-| Remaining guarantees | Unknown |
+| Signing bonus and proration | $2,141,768 signing bonus; $535,442 annually through 2015 |
+| 2014 guarantee evidence | No remaining guaranteed base salary established in the recovered schedule |
+| Remaining guarantees | 0 |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
 | Accrued service evidence | Through 2012: 1 (2012 on Reserve/Injured at season close, full pay). 2013: Accrues in branch (on 53 for 16 games) |
 | Availability | No communicated restriction |
@@ -1417,8 +1417,8 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 535,442 | Unresolved | Unknown | Unknown | 535,442 recorded portion |
-| 2015 | Unknown | 535,442 | Unresolved | Unknown | Unknown | 0 recorded portion |
+| 2014 | 827,722 | 535,442 | 25,000 | 1,388,164 | 852,722 | 535,442 recorded portion |
+| 2015 | 1,059,083 | 535,442 | 25,000 | 1,619,525 | 1,084,083 | 0 recorded portion |
 | 2016 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2018 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -1430,16 +1430,16 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: At least $1,070,884 (Inference); guarantees Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $1,070,884 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 1,070,884 bonus floor; guarantees unresolved | Unresolved | 535,442 bonus portion | 535,442 bonus portion | Unresolved; verify terms |
-| 2015 | Unknown | 535,442 bonus floor; guarantees unresolved | Unresolved | 535,442 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | 1,388,164 | 1,070,884 | 317,280 | 535,442 bonus portion | 535,442 bonus portion | Unresolved; verify terms |
+| 2015 | 1,619,525 | 535,442 | 1,084,083 | 535,442 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
-Unresolved. Remaining unpaid exposure is unknown. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
+No remaining guaranteed base salary established in the recovered schedule. Remaining unpaid exposure is 0. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
 
 ### Rookie terms and conditional years
 
@@ -1453,9 +1453,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-OTC row (2013); term Confirmed.
+Original 2012 rookie schedule, including $25,000 annual workout bonus..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Ryan Davis
 
@@ -1470,9 +1470,9 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Recorded term | 2 / 2014 |
 | Last recorded contract/tender year | 2014 |
 | Reported original deal value | $900,000 |
-| Signing bonus and proration | Unresolved |
-| 2014 guarantee evidence | Unresolved |
-| Remaining guarantees | Unknown |
+| Signing bonus and proration | $0 signing bonus or proration |
+| 2014 guarantee evidence | No remaining guaranteed base salary established in the recovered schedule |
+| Remaining guarantees | 0 |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
 | Accrued service evidence | Through 2012: 0 (2012 mostly practice squad; active roughly October 5-23). 2013: Accrues in branch (on 53 for 16 games) |
 | Availability | No communicated restriction |
@@ -1483,7 +1483,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | Unknown | Unresolved | Unknown | Unknown | Unresolved |
+| 2014 | 495,000 | 0 | 0 | 495,000 | 495,000 | 0 recorded portion |
 | 2015 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2016 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -1496,15 +1496,15 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $0 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved; verify terms |
+| 2014 | 495,000 | 0 | 495,000 | 0 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
-Unresolved. Remaining unpaid exposure is unknown. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
+No remaining guaranteed base salary established in the recovered schedule. Remaining unpaid exposure is 0. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
 
 ### Rookie terms and conditional years
 
@@ -1518,9 +1518,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-Register: Supported (OTC export).
+December 2012 futures deal totals $900,000 across $405,000 in 2013 and $495,000 in 2014, with no bonus. Later real contracts do not extend it..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Jeremy Mincey
 
@@ -1535,7 +1535,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Recorded term | 4 / 2015 |
 | Last recorded contract/tender year | 2015 |
 | Reported original deal value | $20,000,000 ($9,000,000 guaranteed at signing) |
-| Signing bonus and proration | Bonus Unresolved; $2,000,000; 2 |
+| Signing bonus and proration | $8,000,000 signing bonus; $2,000,000 annually through 2015 |
 | 2014 guarantee evidence | Unresolved |
 | Remaining guarantees | Unknown |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
@@ -1548,8 +1548,8 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Disputed: $4,475,000 versus about $4,000,000; not used numerically | 2,000,000 | Unresolved | Unknown | Unknown | 2,000,000 recorded portion |
-| 2015 | Unknown | 2,000,000 | Unresolved | Unknown | Unknown | 0 recorded portion |
+| 2014 | 4,475,000 | 2,000,000 | 25,000 | About 6,500,000 | 4,500,000 | 2,000,000 recorded portion |
+| 2015 | 4,900,000 | 2,000,000 | 25,000 | About 6,925,000 | 4,925,000 | 0 recorded portion |
 | 2016 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2018 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -1561,12 +1561,12 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: At least $4,000,000 (Inference); guarantees Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $4,000,000 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 4,000,000 bonus floor; guarantees unresolved | Unresolved | 2,000,000 bonus portion | 2,000,000 bonus portion | Unresolved; verify terms |
-| 2015 | Unknown | 2,000,000 bonus floor; guarantees unresolved | Unresolved | 2,000,000 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | About 6,500,000 | 4,000,000 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 2,000,000 bonus portion | 2,000,000 bonus portion | Unresolved; verify terms |
+| 2015 | About 6,925,000 | 2,000,000 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 2,000,000 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
@@ -1584,9 +1584,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-Archive row (2013); term Confirmed (verifications).
+2014 planning estimate uses the existing $4.475M salary lead and carried $25,000 workout bonus. 2015 base $4.9M is the residual of $20M less $8M bonus, 2012 $1M, 2013 $1.525M, 2014 $4.475M and four $25,000 workouts. This allocation assumes no additional component in the headline value; incentive and annual schedule verification remain open..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Tyson Alualu
 
@@ -1601,7 +1601,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Recorded term | 5 / 2014 |
 | Last recorded contract/tender year | 2014 |
 | Reported original deal value | $21,399,000 |
-| Signing bonus and proration | Bonus Unresolved; $1,542,500; 1 |
+| Signing bonus and proration | $1,542,500 original bonus allocation in the final 2014 year |
 | 2014 guarantee evidence | Unresolved |
 | Remaining guarantees | Unknown |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
@@ -1614,7 +1614,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 1,542,500 | Unresolved | Unknown | Unknown | 0 recorded portion |
+| 2014 | 2,571,500 | 1,542,500 | 150,000 | 4,264,000 | 2,721,500 | 0 recorded portion |
 | 2015 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2016 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -1627,11 +1627,11 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: At least $1,542,500 (Inference); guarantees Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $1,542,500 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 1,542,500 bonus floor; guarantees unresolved | Unresolved | 1,542,500 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | 4,264,000 | 1,542,500 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 1,542,500 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
@@ -1649,9 +1649,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-Archive row (2013); term Confirmed.
+Recovered 2014 salary and bonus allocations plus the $150,000 workout bonus. The original deal ends after 2014; no real 2015 replacement deal is imported..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## C.J. Mosley
 
@@ -1665,8 +1665,8 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Signed | 2012 |
 | Recorded term | 3 / 2014 |
 | Last recorded contract/tender year | 2014 |
-| Reported original deal value | Disputed: $7,500,000 or "up to $10M" ($1,000,000 guaranteed at signing, 2013 sheet) |
-| Signing bonus and proration | Unresolved |
+| Reported original deal value | $7,500,000 base deal; up to $10,000,000 with incentives |
+| Signing bonus and proration | $1,000,000 signing bonus; final-year allocation estimated at $333,334 |
 | 2014 guarantee evidence | Unresolved |
 | Remaining guarantees | Unknown |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
@@ -1679,7 +1679,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | Unknown | Unresolved | Unknown | Unknown | Unresolved |
+| 2014 | 2,725,000 | 333,334 | 25,000 | About 3,083,334 | 2,750,000 | 0 recorded portion |
 | 2015 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2016 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -1692,11 +1692,11 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $333,334 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved; verify terms |
+| 2014 | About 3,083,334 | 333,334 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 333,334 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
@@ -1714,9 +1714,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-Term Confirmed; value disputed (verifications section 1).
+Working allocation only: $7.5M base deal, $1M bonus and $1M 2012 salary/workout cash leave $5.5M across 2013 and 2014; allocate $2.75M cash per year pending the original schedule. $25,000 is reserved for the carried workout component. The reported $10M ceiling includes potential incentives; it is not a second base value..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Jeris Pendleton
 
@@ -1731,9 +1731,9 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Recorded term | 4 / 2015 |
 | Last recorded contract/tender year | 2015 |
 | Reported original deal value | $2,151,392 ($51,392 guaranteed at signing) |
-| Signing bonus and proration | Unresolved |
-| 2014 guarantee evidence | Unresolved |
-| Remaining guarantees | Unknown |
+| Signing bonus and proration | $51,392 signing bonus; $12,848 annually through 2015 |
+| 2014 guarantee evidence | No remaining guaranteed base salary established in the recovered schedule |
+| Remaining guarantees | 0 |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
 | Accrued service evidence | Through 2012: Unresolved (not status-determining; 4 games in 2012). 2013: Accrues in branch (on 53 for 16 games) |
 | Availability | No communicated restriction |
@@ -1744,8 +1744,8 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | Unknown | Unresolved | Unknown | Unknown | Unresolved |
-| 2015 | Unknown | Unknown | Unresolved | Unknown | Unknown | Unresolved |
+| 2014 | 570,000 | 12,848 | 0 | 582,848 | 570,000 | 12,848 recorded portion |
+| 2015 | 660,000 | 12,848 | 0 | 672,848 | 660,000 | 0 recorded portion |
 | 2016 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2018 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -1757,16 +1757,16 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $25,696 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved; verify terms |
-| 2015 | Unknown | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved; verify terms |
+| 2014 | 582,848 | 25,696 | 557,152 | 12,848 bonus portion | 12,848 bonus portion | Unresolved; verify terms |
+| 2015 | 672,848 | 12,848 | 660,000 | 12,848 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
-Unresolved. Remaining unpaid exposure is unknown. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
+No remaining guaranteed base salary established in the recovered schedule. Remaining unpaid exposure is 0. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
 
 ### Rookie terms and conditional years
 
@@ -1780,9 +1780,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-Contract summary Confirmed (2013 sheet); annual rows not recovered.
+Four-year rookie deal reconstructed from $2,151,392 total: $51,392 bonus plus $390,000/$480,000/$570,000/$660,000 bases. A conditional 2015 escalator is not pre-earned..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Russell Allen
 
@@ -1797,7 +1797,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Recorded term | 3 / 2014 |
 | Last recorded contract/tender year | 2014 |
 | Reported original deal value | $6,000,000 |
-| Signing bonus and proration | Bonus Unresolved; $416,666; 1 |
+| Signing bonus and proration | $1,250,000 signing bonus; final 2014 allocation $416,668 |
 | 2014 guarantee evidence | Unresolved |
 | Remaining guarantees | Unknown |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
@@ -1810,7 +1810,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 416,666 | Unresolved | Unknown | Unknown | 0 recorded portion |
+| 2014 | 1,975,000 | 416,668 | 25,000 | About 2,416,668 | 2,000,000 | 0 recorded portion |
 | 2015 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2016 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -1823,11 +1823,11 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: At least $416,666 (Inference); guarantees Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $416,668 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 416,666 bonus floor; guarantees unresolved | Unresolved | 416,666 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | About 2,416,668 | 416,668 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 416,668 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
@@ -1845,9 +1845,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-OTC row (2013); term Supported (register).
+Planning base $1.975M matches the earlier memo and recovered contract notes. Add $25,000 workout and final $416,668 bonus allocation. Any incentive charge is separate: the prior $1M other-bonus entry cannot be copied without the branch earning test. No later retirement or real release is executed here..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Paul Posluszny
 
@@ -1862,7 +1862,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Recorded term | 6 / 2016 |
 | Last recorded contract/tender year | 2016 |
 | Reported original deal value | $45,000,000 |
-| Signing bonus and proration | Bonus Unresolved; $2,000,000; 3 |
+| Signing bonus and proration | $10,000,000 signing bonus; $2,000,000 annually through 2015; $0 in 2016 |
 | 2014 guarantee evidence | Unresolved |
 | Remaining guarantees | Unknown |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
@@ -1875,9 +1875,9 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 2,000,000 | Unresolved | Unknown | Unknown | 4,000,000 recorded portion |
-| 2015 | Unknown | 2,000,000 | Unresolved | Unknown | Unknown | 2,000,000 recorded portion |
-| 2016 | Unknown | 2,000,000 | Unresolved | Unknown | Unknown | 0 recorded portion |
+| 2014 | 7,450,000 | 2,000,000 | 50,000 | 9,500,000 | 7,500,000 | 2,000,000 recorded portion |
+| 2015 | 7,450,000 | 2,000,000 | 50,000 | 9,500,000 | 7,500,000 | 0 recorded portion |
+| 2016 | 7,450,000 | 0 | 50,000 | 7,500,000 | 7,500,000 | 0 recorded portion |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2018 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2019 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -1888,13 +1888,13 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: At least $6,000,000 (Inference); guarantees Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $4,000,000 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 6,000,000 bonus floor; guarantees unresolved | Unresolved | 2,000,000 bonus portion | 4,000,000 bonus portion | Unresolved; verify terms |
-| 2015 | Unknown | 4,000,000 bonus floor; guarantees unresolved | Unresolved | 2,000,000 bonus portion | 2,000,000 bonus portion | Unresolved; verify terms |
-| 2016 | Unknown | 2,000,000 bonus floor; guarantees unresolved | Unresolved | 2,000,000 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | 9,500,000 | 4,000,000 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 2,000,000 bonus portion | 2,000,000 bonus portion | Unresolved; verify terms |
+| 2015 | 9,500,000 | 2,000,000 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 2,000,000 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2016 | 7,500,000 | 0 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 0 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
@@ -1912,9 +1912,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-Archive row (2013); term Confirmed.
+Original six-year contract retained. The $10M signing bonus is allocated over five years, 2011 to 2015: no 2016 proration. Original salary remains $7.45M with $50,000 workout bonus; the later real extension is excluded..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Julian Stanford
 
@@ -1929,9 +1929,9 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Recorded term | 3 / 2014 |
 | Last recorded contract/tender year | 2014 |
 | Reported original deal value | $1,445,000 |
-| Signing bonus and proration | Unresolved |
-| 2014 guarantee evidence | Unresolved |
-| Remaining guarantees | Unknown |
+| Signing bonus and proration | $5,000 signing bonus; final 2014 allocation $1,668 |
+| 2014 guarantee evidence | No remaining guaranteed base salary established in the recovered schedule |
+| Remaining guarantees | 0 |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
 | Accrued service evidence | Through 2012: 1 (2012: 16 games). 2013: Accrues in branch (on 53 for 16 games) |
 | Availability | No communicated restriction |
@@ -1942,7 +1942,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | Unknown | Unresolved | Unknown | Unknown | Unresolved |
+| 2014 | 570,000 | 1,668 | 0 | 571,668 | 570,000 | 0 recorded portion |
 | 2015 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2016 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -1955,15 +1955,15 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $1,668 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved; verify terms |
+| 2014 | 571,668 | 1,668 | 570,000 | 1,668 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
-Unresolved. Remaining unpaid exposure is unknown. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
+No remaining guaranteed base salary established in the recovered schedule. Remaining unpaid exposure is 0. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
 
 ### Rookie terms and conditional years
 
@@ -1977,9 +1977,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-Register: Single source (Spotrac search text).
+Three-year $1,445,000 deal reconstructed as rookie minimum bases plus $5,000 bonus. The final $1,668 allocation matches the original-contract residue reported by OTC; the actual later departure is not applied..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Mike Harris
 
@@ -1994,9 +1994,9 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Recorded term | 4 / 2015 |
 | Last recorded contract/tender year | 2015 |
 | Reported original deal value | $2,215,788 |
-| Signing bonus and proration | Bonus Unresolved; $28,947; 2 |
-| 2014 guarantee evidence | Unresolved |
-| Remaining guarantees | Unknown |
+| Signing bonus and proration | $115,788 signing bonus; $28,947 annually through 2015 |
+| 2014 guarantee evidence | No remaining guaranteed base salary established in the recovered schedule |
+| Remaining guarantees | 0 |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
 | Accrued service evidence | Through 2012: 1. 2013: Accrues in branch (on 53 for 16 games) |
 | Availability | No communicated restriction |
@@ -2007,8 +2007,8 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 28,947 | Unresolved | Unknown | Unknown | 28,947 recorded portion |
-| 2015 | Unknown | 28,947 | Unresolved | Unknown | Unknown | 0 recorded portion |
+| 2014 | 570,000 | 28,947 | 0 | 598,947 | 570,000 | 28,947 recorded portion |
+| 2015 | 660,000 | 28,947 | 0 | 688,947 | 660,000 | 0 recorded portion |
 | 2016 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2018 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -2020,16 +2020,16 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: At least $57,894 (Inference); guarantees Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $57,894 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 57,894 bonus floor; guarantees unresolved | Unresolved | 28,947 bonus portion | 28,947 bonus portion | Unresolved; verify terms |
-| 2015 | Unknown | 28,947 bonus floor; guarantees unresolved | Unresolved | 28,947 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | 598,947 | 57,894 | 541,053 | 28,947 bonus portion | 28,947 bonus portion | Unresolved; verify terms |
+| 2015 | 688,947 | 28,947 | 660,000 | 28,947 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
-Unresolved. Remaining unpaid exposure is unknown. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
+No remaining guaranteed base salary established in the recovered schedule. Remaining unpaid exposure is 0. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
 
 ### Rookie terms and conditional years
 
@@ -2043,9 +2043,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-OTC row (2013); term Confirmed.
+Original four-year rookie minimum schedule and $115,788 bonus. Any 2015 proven-performance increase depends on branch participation; none is assumed earned..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Dwight Lowery
 
@@ -2060,7 +2060,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Recorded term | 4 / 2015 |
 | Last recorded contract/tender year | 2015 |
 | Reported original deal value | $13,600,000 ($4,000,000 guaranteed at signing, 2013 sheet) |
-| Signing bonus and proration | $3,000,000 (Single source); $750,000; 2 |
+| Signing bonus and proration | $3,000,000 signing bonus; $750,000 annually through 2015 |
 | 2014 guarantee evidence | Unresolved |
 | Remaining guarantees | Unknown |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
@@ -2073,8 +2073,8 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 750,000 | Unresolved | Unknown | Unknown | 750,000 recorded portion |
-| 2015 | Unknown | 750,000 | Unresolved | Unknown | Unknown | 0 recorded portion |
+| 2014 | 3,100,000 | 750,000 | 25,000 | 3,875,000 | 3,125,000 | 750,000 recorded portion |
+| 2015 | 3,300,000 | 750,000 | 25,000 | 4,075,000 | 3,325,000 | 0 recorded portion |
 | 2016 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2018 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -2086,12 +2086,12 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: At least $1,500,000 (Inference); guarantees Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $1,500,000 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 1,500,000 bonus floor; guarantees unresolved | Unresolved | 750,000 bonus portion | 750,000 bonus portion | Unresolved; verify terms |
-| 2015 | Unknown | 750,000 bonus floor; guarantees unresolved | Unresolved | 750,000 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | 3,875,000 | 1,500,000 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 750,000 bonus portion | 750,000 bonus portion | Unresolved; verify terms |
+| 2015 | 4,075,000 | 750,000 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 750,000 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
@@ -2109,9 +2109,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-Archive row (2013); term Confirmed (verifications).
+Original salaries recovered from October 2013 reporting; $3M bonus and $25,000 annual workout amount carry from the 2013 baseline. Schedule reconciles to $13.6M including 2012 and 2013. No real release is imported..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Chris Prosinski
 
@@ -2126,7 +2126,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Recorded term | 4 / 2014 |
 | Last recorded contract/tender year | 2014 |
 | Reported original deal value | $2,640,144 |
-| Signing bonus and proration | Bonus Unresolved; $105,027; 1 |
+| Signing bonus and proration | $420,108 signing bonus; final 2014 allocation $105,027 |
 | 2014 guarantee evidence | Unresolved |
 | Remaining guarantees | Unknown |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
@@ -2139,7 +2139,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 105,027 | Unresolved | Unknown | Unknown | 0 recorded portion |
+| 2014 | 735,018 | 105,027 | 0 | About 840,045 | 735,018 | 0 recorded portion |
 | 2015 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2016 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -2152,11 +2152,11 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: At least $105,027 (Inference); guarantees Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $105,027 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 105,027 bonus floor; guarantees unresolved | Unresolved | 105,027 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | About 840,045 | 105,027 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 105,027 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
@@ -2174,9 +2174,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-OTC row (2013); term Confirmed.
+Original 2014 base reconstructed from the four-year total less bonus and earlier salaries. Planning charge excludes an unverified proven-performance increase; if branch participation qualifies, the projected base rises to $1.431M and cap to $1,536,027..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Josh Scobee
 
@@ -2191,7 +2191,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Recorded term | 4 / 2015 |
 | Last recorded contract/tender year | 2015 |
 | Reported original deal value | $13.8M to $14.2M reported range ($4,750,000 reported guarantee) |
-| Signing bonus and proration | Bonus Unresolved; $937,500; 2 |
+| Signing bonus and proration | $3,750,000 signing bonus; $937,500 annually through 2015 |
 | 2014 guarantee evidence | Unresolved |
 | Remaining guarantees | Unknown |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
@@ -2204,8 +2204,8 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 937,500 | Unresolved | Unknown | Unknown | 937,500 recorded portion |
-| 2015 | Unknown | 937,500 | Unresolved | Unknown | Unknown | 0 recorded portion |
+| 2014 | 3,225,000 | 937,500 | 25,000 | 4,187,500 | 3,250,000 | 937,500 recorded portion |
+| 2015 | 3,425,000 | 937,500 | 25,000 | 4,387,500 | 3,450,000 | 0 recorded portion |
 | 2016 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2018 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -2217,12 +2217,12 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: At least $1,875,000 (Inference); guarantees Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $1,875,000 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 1,875,000 bonus floor; guarantees unresolved | Unresolved | 937,500 bonus portion | 937,500 bonus portion | Unresolved; verify terms |
-| 2015 | Unknown | 937,500 bonus floor; guarantees unresolved | Unresolved | 937,500 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | 4,187,500 | 1,875,000 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 937,500 bonus portion | 937,500 bonus portion | Unresolved; verify terms |
+| 2015 | 4,387,500 | 937,500 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 937,500 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
@@ -2240,9 +2240,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-OTC row (2013); term Confirmed (register).
+Original 2012 deal retained through 2015, including $25,000 annual workout bonus. The $3.425M original 2015 salary is used before any actual later trade adjustment..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Bryan Anger
 
@@ -2257,9 +2257,9 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Recorded term | 4 / 2015 |
 | Last recorded contract/tender year | 2015 |
 | Reported original deal value | $2,877,166 |
-| Signing bonus and proration | Bonus Unresolved; $165,625; 2 |
-| 2014 guarantee evidence | Unresolved |
-| Remaining guarantees | Unknown |
+| Signing bonus and proration | $662,500 signing bonus; $165,625 annually through 2015 |
+| 2014 guarantee evidence | No remaining guaranteed base salary established in the recovered schedule |
+| Remaining guarantees | 0 |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
 | Accrued service evidence | Through 2012: 1. 2013: Accrues in branch (on 53 for 16 games) |
 | Availability | No communicated restriction |
@@ -2270,8 +2270,8 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 165,625 | Unresolved | Unknown | Unknown | 165,625 recorded portion |
-| 2015 | Unknown | 165,625 | Unresolved | Unknown | Unknown | 0 recorded portion |
+| 2014 | 584,898 | 165,625 | 20,000 | 770,523 | 604,898 | 165,625 recorded portion |
+| 2015 | 689,855 | 165,625 | 20,000 | 875,480 | 709,855 | 0 recorded portion |
 | 2016 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2018 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -2283,16 +2283,16 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: At least $331,250 (Inference); guarantees Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $331,250 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 331,250 bonus floor; guarantees unresolved | Unresolved | 165,625 bonus portion | 165,625 bonus portion | Unresolved; verify terms |
-| 2015 | Unknown | 165,625 bonus floor; guarantees unresolved | Unresolved | 165,625 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | 770,523 | 331,250 | 439,273 | 165,625 bonus portion | 165,625 bonus portion | Unresolved; verify terms |
+| 2015 | 875,480 | 165,625 | 709,855 | 165,625 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
-Unresolved. Remaining unpaid exposure is unknown. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
+No remaining guaranteed base salary established in the recovered schedule. Remaining unpaid exposure is 0. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
 
 ### Rookie terms and conditional years
 
@@ -2306,9 +2306,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-OTC row (2013); term Confirmed.
+Original 2012 rookie schedule, including $20,000 annual workout bonus..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Montell Owens
 
@@ -2322,8 +2322,8 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Signed | October 4, 2011 |
 | Recorded term | New years 2013 to 2015 (Single source) / 2015 |
 | Last recorded contract/tender year | 2015 |
-| Reported original deal value | Unresolved ($4.65M guaranteed, Confirmed) |
-| Signing bonus and proration | Disputed ($1.5M or $850,000); proration Unresolved |
+| Reported original deal value | $9,275,000 reported extension; $11,275,000 including prior years; $4.65M reported guarantees |
+| Signing bonus and proration | $1,500,000 signing bonus reported; estimated $300,000 annually through 2015 |
 | 2014 guarantee evidence | Unresolved |
 | Remaining guarantees | Unknown |
 | Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
@@ -2336,8 +2336,8 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | Unknown | Unresolved | Unknown | Unknown | Unresolved |
-| 2015 | Unknown | Unknown | Unresolved | Unknown | Unknown | Unresolved |
+| 2014 | 2,591,667 | 300,000 | 0 | About 2,891,667 | 2,591,667 | 300,000 recorded portion |
+| 2015 | 2,591,667 | 300,000 | 0 | About 2,891,667 | 2,591,667 | 0 recorded portion |
 | 2016 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2017 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
 | 2018 | Not applicable | Not applicable | Not applicable | Not committed | Not applicable | Not applicable |
@@ -2349,12 +2349,12 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: Unresolved. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $600,000 scheduled remaining bonus allocation; unpaid guarantees and transaction-specific credits require separate review. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved; verify terms |
-| 2015 | Unknown | Unresolved | Unresolved | Unresolved | Unresolved | Unresolved; verify terms |
+| 2014 | About 2,891,667 | 600,000 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 300,000 bonus portion | 300,000 bonus portion | Unresolved; verify terms |
+| 2015 | About 2,891,667 | 300,000 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 300,000 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
@@ -2372,9 +2372,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-Supported (verifications section 2); 2014 base Unverified.
+Planning allocation: $9.275M extension value less $1.5M bonus leaves $7.775M, averaged over the three new years (about $2,591,667 cash each). This is a budgeting assumption, not the missing annual base schedule. $300,000 annual bonus allocation is consistent with the original 2013 residue. Existing guarantees and payment timing still require reconciliation..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Brad Meester
 
@@ -2518,9 +2518,9 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Last recorded contract/tender year | Unresolved |
 | Reported original deal value | Unresolved |
 | Signing bonus and proration | $0; $0; 0 |
-| 2014 guarantee evidence | $0 |
+| 2014 guarantee evidence | No remaining guaranteed base salary established in the recovered schedule |
 | Remaining guarantees | 0 |
-| Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
+| Credited seasons | 1 through 2013, Article 26 reconstruction; see original-contract research |
 | Accrued service evidence | No 2013 accrual from practice-squad service |
 | Availability | Future contract not yet effective |
 | New-money APY / payment dates / other clauses | Unresolved unless established in the sources below |
@@ -2530,7 +2530,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 0 | Unresolved | Unknown | Unknown | 0 recorded portion |
+| 2014 | 495,000 | 0 | 0 | 495,000 | 495,000 | 0 recorded portion |
 | 2015 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
 | 2016 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
 | 2017 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
@@ -2543,15 +2543,15 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: $0. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $0 on the no-bonus, no-guarantee futures contract. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 0 | Unresolved | 0 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | 495,000 | 0 | 495,000 | 0 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
-$0. Remaining unpaid exposure is 0. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
+No remaining guaranteed base salary established in the recovered schedule. Remaining unpaid exposure is 0. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
 
 ### Rookie terms and conditional years
 
@@ -2565,9 +2565,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-Branch record (Entry 85); credited seasons Unresolved.
+2011 injured reserve does not count under Article 26; five active games in December 2012 do. Branch 2013 practice squad adds none..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Jerrell Jackson
 
@@ -2583,9 +2583,9 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Last recorded contract/tender year | Unresolved |
 | Reported original deal value | Unresolved |
 | Signing bonus and proration | $0; $0; 0 |
-| 2014 guarantee evidence | $0 |
+| 2014 guarantee evidence | No remaining guaranteed base salary established in the recovered schedule |
 | Remaining guarantees | 0 |
-| Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
+| Credited seasons | 0 through 2013, Article 26 reconstruction; see original-contract research |
 | Accrued service evidence | No 2013 accrual from practice-squad service |
 | Availability | Future contract not yet effective |
 | New-money APY / payment dates / other clauses | Unresolved unless established in the sources below |
@@ -2595,7 +2595,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 0 | Unresolved | Unknown | Unknown | 0 recorded portion |
+| 2014 | 420,000 | 0 | 0 | 420,000 | 420,000 | 0 recorded portion |
 | 2015 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
 | 2016 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
 | 2017 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
@@ -2608,15 +2608,15 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: $0. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $0 on the no-bonus, no-guarantee futures contract. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 0 | Unresolved | 0 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | 420,000 | 0 | 420,000 | 0 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
-$0. Remaining unpaid exposure is 0. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
+No remaining guaranteed base salary established in the recovered schedule. Remaining unpaid exposure is 0. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
 
 ### Rookie terms and conditional years
 
@@ -2630,9 +2630,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-Branch record (Entry 85); credited seasons Unresolved.
+Promoted December 24, 2012 for the finale only; 2013 branch practice squad adds no credited season..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Jerome Long
 
@@ -2648,9 +2648,9 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Last recorded contract/tender year | Unresolved |
 | Reported original deal value | Unresolved |
 | Signing bonus and proration | $0; $0; 0 |
-| 2014 guarantee evidence | $0 |
+| 2014 guarantee evidence | No remaining guaranteed base salary established in the recovered schedule |
 | Remaining guarantees | 0 |
-| Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
+| Credited seasons | 0 through 2013, Article 26 reconstruction; see original-contract research |
 | Accrued service evidence | No 2013 accrual from practice-squad service |
 | Availability | Future contract not yet effective |
 | New-money APY / payment dates / other clauses | Unresolved unless established in the sources below |
@@ -2660,7 +2660,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 0 | Unresolved | Unknown | Unknown | 0 recorded portion |
+| 2014 | 420,000 | 0 | 0 | 420,000 | 420,000 | 0 recorded portion |
 | 2015 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
 | 2016 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
 | 2017 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
@@ -2673,15 +2673,15 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: $0. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $0 on the no-bonus, no-guarantee futures contract. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 0 | Unresolved | 0 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | 420,000 | 0 | 420,000 | 0 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
-$0. Remaining unpaid exposure is 0. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
+No remaining guaranteed base salary established in the recovered schedule. Remaining unpaid exposure is 0. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
 
 ### Rookie terms and conditional years
 
@@ -2695,9 +2695,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-Branch record (Entry 85); credited seasons Unresolved.
+Kansas City practice squad for the first 15 games of 2012; Jacksonville signed him December 28 for the finale. Branch 2013 practice squad adds none..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## D'Anthony Smith
 
@@ -2713,9 +2713,9 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Last recorded contract/tender year | Unresolved |
 | Reported original deal value | Unresolved |
 | Signing bonus and proration | $0; $0; 0 |
-| 2014 guarantee evidence | $0 |
+| 2014 guarantee evidence | No remaining guaranteed base salary established in the recovered schedule |
 | Remaining guarantees | 0 |
-| Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
+| Credited seasons | 1 through 2013, Article 26 reconstruction; see original-contract research |
 | Accrued service evidence | No 2013 accrual from practice-squad service |
 | Availability | Future contract not yet effective |
 | New-money APY / payment dates / other clauses | Unresolved unless established in the sources below |
@@ -2725,7 +2725,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 0 | Unresolved | Unknown | Unknown | 0 recorded portion |
+| 2014 | 495,000 | 0 | 0 | 495,000 | 495,000 | 0 recorded portion |
 | 2015 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
 | 2016 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
 | 2017 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
@@ -2738,15 +2738,15 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: $0. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $0 on the no-bonus, no-guarantee futures contract. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 0 | Unresolved | 0 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | 495,000 | 0 | 495,000 | 0 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
-$0. Remaining unpaid exposure is 0. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
+No remaining guaranteed base salary established in the recovered schedule. Remaining unpaid exposure is 0. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
 
 ### Rookie terms and conditional years
 
@@ -2760,9 +2760,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-Branch record (Entry 85; market draw); credited seasons Unresolved.
+2010 and 2011 injured reserve do not count for Article 26; eight games in 2012 supply one credited season. Branch 2013 practice squad adds none..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Antwon Blake
 
@@ -2778,9 +2778,9 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Last recorded contract/tender year | Unresolved |
 | Reported original deal value | Unresolved |
 | Signing bonus and proration | $0; $0; 0 |
-| 2014 guarantee evidence | $0 |
+| 2014 guarantee evidence | No remaining guaranteed base salary established in the recovered schedule |
 | Remaining guarantees | 0 |
-| Credited seasons | Unresolved; verify Article 26 service separately from accrued seasons |
+| Credited seasons | 1 through 2013, Article 26 reconstruction; see original-contract research |
 | Accrued service evidence | No 2013 accrual from practice-squad service |
 | Availability | Future contract not yet effective |
 | New-money APY / payment dates / other clauses | Unresolved unless established in the sources below |
@@ -2790,7 +2790,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 0 | Unresolved | Unknown | Unknown | 0 recorded portion |
+| 2014 | 495,000 | 0 | 0 | 495,000 | 495,000 | 0 recorded portion |
 | 2015 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
 | 2016 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
 | 2017 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
@@ -2803,15 +2803,15 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ### Release, trade and restructure review
 
-Recorded 2014 pre-June-1 exposure: $0. Guarantees can make release different from trade. No automatic restructure or void years are added.
+Recorded 2014 pre-June-1 exposure: $0 on the no-bonus, no-guarantee futures contract. Guarantees can make release different from trade. No automatic restructure or void years are added.
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | Unknown | 0 | Unresolved | 0 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | 495,000 | 0 | 495,000 | 0 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
-$0. Remaining unpaid exposure is 0. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
+No remaining guaranteed base salary established in the recovered schedule. Remaining unpaid exposure is 0. Paid bonus and cap proration are not a second unpaid guarantee. No earned incentive, vesting event or forfeiture is inferred from a season summary.
 
 ### Rookie terms and conditional years
 
@@ -2825,9 +2825,9 @@ The firm term and annual status above control. Future free-agent class depends o
 
 No new restructure, conversion or extension is executed by this tracker.
 
-Branch record (Entry 85); credited seasons Unresolved.
+2012 Jacksonville active-roster service supplies one credited season; branch 2013 practice squad adds none..
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Chad Henne
 
@@ -2999,7 +2999,7 @@ Recorded 2014 pre-June-1 exposure: Unresolved; do not treat pending contract sta
 
 | Year | Scheduled cap | Pre-June-1 exposure | Gross saving before replacement | Post-June-1 current-year bonus | Post-June-1 next-year bonus | Trade / max restructure |
 |---|---|---|---|---|---|---|
-| 2014 | 11,654,000 tender | 0 bonus floor; guarantees unresolved | Unresolved | 0 bonus portion | 0 bonus portion | Unresolved; verify terms |
+| 2014 | 11,654,000 tender | 0 scheduled bonus portion; guarantees/credits unresolved | Unresolved | 0 bonus portion | 0 bonus portion | Unresolved; verify terms |
 
 ### Guarantees and incentives
 
@@ -3740,7 +3740,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
+| 2014 | Unresolved | Unresolved | Unresolved | Term unknown; 730,000 allowance | Unresolved | Unresolved |
 | 2015 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
 | 2016 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
 | 2017 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
@@ -3750,6 +3750,8 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | 2021 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
 | 2022 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
 | 2023 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
+
+Annual assumptions: 2014: Conditional minimum-salary allowance if retained; original control term and credited service require confirmation. Excluded from signed obligations.
 
 ### Release, trade and restructure review
 
@@ -3775,7 +3777,7 @@ No new restructure, conversion or extension is executed by this tracker.
 
 Let go if expired, as recommended in the memo; Bray is a future reserve candidate, not an appointed QB3. No action until the term is known. Unresolved (Entry 86).
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).
 
 ## Jonathan Grimes
 
@@ -3803,7 +3805,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Base salary | Bonus proration | Other cap components | Scheduled cap | Scheduled cash | Bonus allocated after year |
 |---|---|---|---|---|---|---|
-| 2014 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
+| 2014 | Unresolved | Unresolved | Unresolved | Term unknown; 570,000 allowance | Unresolved | Unresolved |
 | 2015 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
 | 2016 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
 | 2017 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
@@ -3813,6 +3815,8 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | 2021 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
 | 2022 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
 | 2023 | Unresolved | Unresolved | Unresolved | Term unknown | Unresolved | Unresolved |
+
+Annual assumptions: 2014: Conditional minimum-salary allowance if retained; original control term and credited service require confirmation. Excluded from signed obligations.
 
 ### Release, trade and restructure review
 
@@ -3838,4 +3842,4 @@ No new restructure, conversion or extension is executed by this tracker.
 
 Tender if expired; decision before March 11. Unresolved (Entry 86).
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md).

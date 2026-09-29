@@ -14,7 +14,6 @@
 
 **Walk-away conditions:**
 - Vick's contract or starting job is mandated as-is, without a real evaluation.
-- Play-calling authority is taken away.
 - Roseman picks the coordinators instead of Stone.
 
 **Automatic acceptance / rejection conditions:** none specified — any offer must come back to the user.
