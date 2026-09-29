@@ -4,7 +4,7 @@ iteration: "2013 Iteration I: Multiple Under Defense"
 version: "1.0"
 status: "canonical constructed counterpart"
 effective_seasons: "2013-2015"
-primary_play_caller: "Alex Stone"
+author: "Alex Stone"
 system_sentence: "Own the fit. Change the picture. Make the quarterback confirm."
 ---
 
@@ -12,7 +12,7 @@ system_sentence: "Own the fit. Change the picture. Make the quarterback confirm.
 
 ## 2013 Iteration I: Multiple Under Defense
 
-> **Team-neutral defensive baseline** | Version 1.0 | Primary play-caller: Alex Stone
+> **Team-neutral defensive baseline** | Version 1.0 | Author: Alex Stone
 > **System sentence:** Own the fit. Change the picture. Make the quarterback confirm.
 
 This is the first canonical defensive counterpart to Stone's 2013 offensive system. It begins with a 4-3 Under run-fit structure, conventional four-man rush, a real nickel package, selective Big Nickel, and a coverage menu broad enough to change the quarterback's picture without asking the defense to learn unrelated football.

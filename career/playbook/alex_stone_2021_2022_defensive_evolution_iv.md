@@ -6,7 +6,7 @@ seasons:
   - 2021
   - 2022
 document_revision: "IV.0"
-primary_play_caller: "Alex Stone"
+author: "Alex Stone"
 canonical: true
 inherits:
   - 2013 Iteration I
@@ -19,7 +19,7 @@ system_sentence: "Show two high. Fit with eleven. Make the trigger expensive."
 
 ## 2021-2022 Evolution IV: Fit from Depth
 
-> **Team-neutral defensive evolution manual** | Primary play-caller: Alex Stone
+> **Team-neutral defensive evolution manual** | Author: Alex Stone
 > **System sentence:** Show two high. Fit with eleven. Make the trigger expensive.
 
 This document evolves the latest prior Stone defense. Silence means the prior rule survives. The purpose is not to replace the system every few seasons, but to record when enough changes affect how the defense is taught, called, matched and simulated.

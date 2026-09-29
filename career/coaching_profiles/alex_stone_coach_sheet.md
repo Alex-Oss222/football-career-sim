@@ -19,7 +19,7 @@ His best teaching gives a player a clear job, a useful correction and another op
 | Season | Entering 2014; 2013 season closed |
 | Week | Offseason; franchise/transition window open; no active Jacksonville game week |
 | Team | Jacksonville Jaguars |
-| Position / role | Head coach and offensive play-caller; Westhoff now directs special teams |
+| Position / role | Head coach |
 | Overall record | 2013: 10-6 regular season, 1-1 postseason. NFL head-coaching career: 22-10 regular season, 2-2 postseason; 24-12 combined, excluding preseason |
 | Division record | 2013: 3-3 in the AFC South |
 | Conference record | 2013: 7-5 against the AFC, regular season only |
@@ -57,8 +57,8 @@ His coaching route crossed position rooms before it reached a permanent NFL head
 | 2007-2008 | Patriots passing-game coordinator / tight ends alongside Josh McDaniels | Coverage study, route combinations, personnel, motion and situational preparation. Selected preseason calling assignments; McDaniels remained the regular-season caller |
 | 2009-2010 | Saints offensive coordinator under Sean Payton | Consolidated the weekly plan and installation within an established offense. Payton called the games; Carmichael and Kromer retained substantial passing and running responsibilities |
 | 2011 | Saints offensive coordinator, then primary caller from Payton's Week 6 sideline injury onward | Sustained NFL calling through the rest of the season and playoffs, with Payton still contributing ideas and situational direction |
-| April 16, 2012 through the 2012 playing season | Saints interim head coach, offensive coordinator and caller | Full team responsibility with much of the inherited staff; 12-4, Wild Card win, Divisional loss January 13, 2013. Exact administrative end date remains unspecified |
-| January 15, 2013 onward | Jaguars permanent head coach and offensive caller | Built his own staff, installed a program and developed a new starting quarterback. First Jacksonville season: 10-6, one playoff win and a Divisional exit |
+| April 16, 2012 through the 2012 playing season | Saints interim head coach and offensive coordinator | Full team responsibility with much of the inherited staff; 12-4, Wild Card win, Divisional loss January 13, 2013. Exact administrative end date remains unspecified |
+| January 15, 2013 onward | Jaguars permanent head coach | Built his own staff, installed a program and developed a new starting quarterback. First Jacksonville season: 10-6, one playoff win and a Divisional exit |
 | February 2014 | Second Jacksonville offseason | Completed the Westhoff replacement hire after Oakland refused the April approach; retained the remaining assistants through February exposure. Six futures signed through Caldwell; no new on-field development result |
 
 These are Stone's established branch jobs. The real Saints' coordinator and interim-head-coach succession differed. Historical New England sources confirm the surrounding Mangini/Crennel structure, not the existence of fictional employee Stone.
@@ -172,7 +172,7 @@ These entries describe observed behavior. They are not measurements of innate in
 | Organization | Extensive phase and weekly structure; missing continuation work shows that a documented process can still lose tasks |
 | Perception | Recognizes useful roles and complementary looks; attribution of particular play failures still needs film |
 | Persuasion | Secured the Jacksonville job and staff hires. That establishes outcomes, not a general ability to win any negotiation |
-| Work capacity | Sustained head-coach and caller responsibilities; interim ST direction ended February 11. Sleep, fatigue and sustainable limits remain unknown |
+| Work capacity | Sustained head-coach responsibilities; interim ST direction ended February 11. Sleep, fatigue and sustainable limits remain unknown |
 
 ## Family and Personal Life
 
@@ -213,7 +213,7 @@ The family-dinner policy provides room for players' families without making atte
 | Availability | Active head coach, retained for 2014 |
 | Health / physical limitations affecting coaching | None communicated in the record; not a medical finding of perfect health |
 | Fatigue | Not measured or reported |
-| Stress / workload | HC and offensive caller; temporary ST direction has ended. Responsibility changed, but no subjective stress or fatigue improvement is documented |
+| Stress / workload | Head coach; temporary ST direction has ended. Responsibility changed, but no subjective stress or fatigue improvement is documented |
 | Suspension or league restrictions | No Stone suspension or fine established. Normal offseason and game rules still apply |
 | Other limitations | Incomplete development follow-up; new ST working relationship not yet tested in a recorded phase; remaining financial and contract questions belong to the appropriate offices |
 
@@ -223,7 +223,7 @@ There is no active game today. These entries distinguish documented working mate
 
 | Item | Detail |
 | --- | --- |
-| Headset | Required communication for his established caller role; personal model, brand and wearing habits not documented |
+| Headset | Sideline communication with his staff and players; personal model, brand and wearing habits not documented |
 | Play sheet / call sheet | Opponent-specific sheet; Thursday complements and Friday reduction appear in weekly preparation |
 | Game-management sheet | Situational preparation exists; no separately preserved personal chart with standing decision thresholds |
 | Situational chart | Active playbook contains situational menus; existence of a separate handheld chart is not established |
@@ -280,7 +280,7 @@ These splits are derived from closed receipts, with Wembley classified explicitl
 
 | Position | Coach | Relationship / notes |
 | --- | --- | --- |
-| Head Coach | Alex Stone | Offensive caller; final football responsibilities within the authority map |
+| Head Coach | Alex Stone | Leads the team, sets priorities and makes game-day decisions |
 | Assistant Head Coach | No current appointment established | Do not promote Tice by description |
 | Offensive Coordinator | Mike Tice | Runs weekday offensive process; Stone keeps game-day calls |
 | Defensive Coordinator | Romeo Crennel | Prepares and calls defense; substantial delegated responsibility |
@@ -294,7 +294,7 @@ These splits are derived from closed receipts, with Wembley classified explicitl
 | Linebackers | Frank Bush | Remains after unsuccessful Indianapolis and February Chicago DC interviews; no assistant departure resulted |
 | Defensive Backs | Tony Oden | DB teaching and coverage communication |
 | Strength / Conditioning | Individual appointments not established here | Performance function does not confer medical clearance authority |
-| Quality Control | Charlie Skalaski | Offensive assistant / assistant QB support; not a separate game-day caller |
+| Quality Control | Charlie Skalaski | Offensive assistant / assistant QB support |
 | Analytics | No coaching-staff appointment established | See historical department context below; do not turn an executive into an assistant coach |
 | Other | Medical, support and administrative functions | No additional names or titles invented |
 
@@ -359,7 +359,7 @@ The active Iteration I book supplies the available system; weekly records establ
 
 ## Defensive Identity
 
-The following describes Stone's issued Iteration I system and recorded priorities. **Crennel is the defensive caller.** Full-book availability does not certify that every pressure or coverage was installed or used in 2013.
+The following describes Stone's issued Iteration I system and recorded priorities. Crennel currently directs the defense. Full-book availability does not certify that every pressure or coverage was installed or used in 2013.
 
 | Field | Detail |
 | --- | --- |
@@ -552,7 +552,7 @@ The source phrase about never winning a championship as a player is read in its 
 | Owner | Khan retained him. No invented personal friendship or private access |
 | General Manager | Caldwell hears Stone's football projection and retains final player-personnel authority. Major QB decisions require documented consultation, not Stone's veto |
 | Offensive Coordinator | Tice is trusted with the weekday process; Stone keeps Sunday calling |
-| Defensive Coordinator | Crennel has genuine unit responsibility. Stone supplies priorities without becoming the ordinary second defensive caller |
+| Defensive Coordinator | Crennel has genuine unit responsibility. Stone supplies priorities, questions adjustments and may take a more direct role when he chooses |
 | Special Teams Coordinator | Westhoff became coordinator February 11 after the April approach was refused. His duties are established; personal trust and field-work effectiveness need actual evidence |
 | Quarterbacks Coach | Bates works through quarterback preparation and correction with him |
 | Starting Quarterback | Cousins has earned space to argue a football reading and identify calls he trusts; Stone keeps final selection |
@@ -810,7 +810,7 @@ The template's ability names are retained. Its numerical rating, XP and next-lev
 | Ability | Current assessment | Development / open question | Used / evidence |
 | --- | --- | --- | --- |
 | Defensive Scheme Design | Secondary background and authored Multiple Under system | System authorship is not proof of full installation or individual effectiveness | 2002-2004; active book |
-| Defensive Play Calling | Not Jacksonville's ordinary defensive caller | No basis to assign Crennel's calls or results to Stone | Current delegation |
+| Defensive game management | Experienced in defensive preparation; Crennel has handled the unit in Jacksonville | His own snap-by-snap defensive decisions have less recorded evidence than his offensive work | Current staff practice |
 | Front Design | Issued Under/Over and complementary front structure | Actual weekly selection and teaching are staff-resolved | Active book; Crennel role |
 | Coverage Design | Genuine secondary-room background and coverage language | Independent Jacksonville coverage-design contribution is not isolated | Patriots tenure; book |
 | Pressure Packages | Understands the coverage obligation behind added rushers | Do not credit all written pressures as installed | Spring narrowed pressure work |
@@ -1047,7 +1047,7 @@ The interpretive January review and the earlier profile are secondary synthesis.
 | [2013 OTA output](../2013/offseason/otas/output.md) | Actual spring teaching and limited defensive installation |
 | [2014 staff plan](../2014/offseason/staff_changes/staff_plan.md) | Search instructions and history; executed outcome belongs to the [assistant hiring record](../2014/offseason/staff_changes/hires.md) |
 | [Active offensive Iteration I](../playbook/alex_stone_2013_offensive_playbook_iteration_i.md) | Authored 2013-2015 offense; dated game usage remains separate |
-| [Active defensive Iteration I](../playbook/alex_stone_2013_defensive_playbook_iteration_i.md) | Authored 2013-2015 defense; Crennel remains the caller |
+| [Active defensive Iteration I](../playbook/alex_stone_2013_defensive_playbook_iteration_i.md) | Authored 2013-2015 defense; current staff assignments are recorded separately |
 | [Initial coaching assessment and dated evidence map](alex_stone_2013_assessment_record.md) | Index to role/weekly evidence and interpretation limits |
 | [2014 calendar](../2014/calendar.md) | Information and activity gates; no invented current opponent |
 | [2014 player-development roster profiles](../2014/offseason/player_development/roster_profiles.md) | Existing individual needs and open follow-up |

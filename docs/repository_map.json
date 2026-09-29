@@ -305,7 +305,12 @@
     "career/2014/awards/README.md",
     "career/2014/postseason/README.md",
     "career/2014/closeouts/README.md",
-    "tests/test_season_isolation.py"
+    "tests/test_season_isolation.py",
+    "career/finances/README.md",
+    "career/finances/jaguars_cap_inputs.json",
+    "career/finances/jaguars_cap_2014_2023.md",
+    "career/finances/jaguars_contract_details.md",
+    "scripts/render_jaguars_cap_tracker.py"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",

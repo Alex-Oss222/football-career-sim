@@ -28,9 +28,9 @@ Effective-season ranges come from each file's own frontmatter (`effective_season
 
 ## Who calls the plays: the defensive coordinator, whoever he is
 
-**The defensive coordinator, whoever holds the job in a given year, is the defensive caller.** He controls the defensive call sheet and calls the defense; Stone does not secretly call the unit snap by snap. This is a role rule, not a person rule: it follows the DC through any staff change. In 2013 that is Romeo Crennel (`career/2013/coaching_staff.md`); a later DC inherits the same authority.
+Romeo Crennel currently prepares and directs the defense. Stone may call or delegate plays in any phase as head coach, including changing the arrangement during a game. The current staff assignment describes how they work; it does not restrict the user's in-game control.
 
-The defensive books' frontmatter names Alex Stone as "primary play-caller." That describes the authored system and does not override this rule or Document 3's authority map. The defensive book is Stone's issued system and coaching-philosophy reference. How much of it a given DC installs, adapts, or sequences differently (Crennel has a multiple-front / 3-4 background) is a staff-resolved football question, never assumed, and each year's defense is built from the roster Jacksonville actually has.
+Stone's name on a playbook identifies the author. It does not appoint a game-day caller. The defensive book is Stone's issued system and coaching-philosophy reference. How much of it a given DC installs, adapts, or sequences differently (Crennel has a multiple-front / 3-4 background) is a staff-resolved football question, never assumed, and each year's defense is built from the roster Jacksonville actually has.
 
 ## The lock rule
 

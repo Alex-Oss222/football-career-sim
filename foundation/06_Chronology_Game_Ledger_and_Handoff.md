@@ -234,7 +234,7 @@ Canon class and record form remain operational at every level. The pregame basel
 - Conditions: [weather/field facts that materially affect play]
 - Active and inactive players: [source and late changes]
 - Availability limitations and emergency roles: [material only]
-- Offensive play caller: [person and limits]
+- Game-day staff arrangements: [record a meaningful change when applicable]
 - Defensive play caller: [person and limits]
 - Special-teams responsibility: [person and limits]
 - Head-coach game-management authority: [timeouts, challenges, fourth downs, personnel, and any organizational limits]

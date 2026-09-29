@@ -1,9 +1,9 @@
 # Project Instructions
 
 **Document status:** Stable governing instructions  
-**Version:** Rebuild draft 1.6
-**Supersedes:** Rebuild draft 1.5
-**Last Document 1 content-changing revision:** 2026-09-19 - Entry 13 reconciles readiness pointers to the established career without advancing time. Previous revision: 2026-09-18 - defined the explicit PRE-HIRE SEARCH lifecycle, authorized `career/<year>/offseason/hiring_search.md` as the ex-ante decision ledger before full career initialization, reconciled that exception with Document 6, and updated response-format language for the three active templates.
+**Version:** Rebuild draft 1.7
+**Supersedes:** Rebuild draft 1.6
+**Last Document 1 content-changing revision:** 2026-09-29, Entry 90: user clarifies that calling or delegating plays is part of the head-coach role; full in-game control needs no separate appointment. Previous history: 2026-09-19 - Entry 13 reconciles readiness pointers to the established career without advancing time. Previous revision: 2026-09-18 - defined the explicit PRE-HIRE SEARCH lifecycle, authorized `career/<year>/offseason/hiring_search.md` as the ex-ante decision ledger before full career initialization, reconciled that exception with Document 6, and updated response-format language for the three active templates.
 **Change rule:** Amend only by an explicit user instruction or a documented canon correction. Do not use this file for changing season state.
 
 ## 1. Purpose and honest limits
@@ -24,7 +24,7 @@ Do not generate a game, roster move, player decision, press conference, or other
 2. Real, fictional, mixed, historical, current, or counterfactual mode.
 3. Exact divergence point for altered real history.
 4. Applicable game, roster, transaction, eligibility or labor, recruiting, and financial rules.
-5. Head-coach contract, reporting line, organizational authority, and play-calling role.
+5. Head-coach contract, reporting line, and organizational authority.
 6. Game granularity and career/off-field detail level, and Document 7's §11 decisions resolved.
 7. A reconciled starting roster, staff, schedule, availability report, and record when real people or teams are used.
 8. All blocking contradictions marked resolved or deliberately preserved as explicit fictional alterations.
@@ -194,9 +194,11 @@ Never silently change the approved plan before kickoff.
 ### 11.2 Supported game modes
 
 - **Executive head-coach mode:** coordinators call ordinary plays; user controls strategy, game management, major adjustments, and material personnel choices.
-- **Play-calling head-coach mode:** user controls the side expressly assigned to the head coach; delegated staff handle the other side within the approved plan.
+- **Selected-play mode:** user chooses which phases or plays to call; staff handle the rest within the approved plan.
 - **Critical-decision mode:** simulate drives or meaningful sequences and stop only for high-impact choices.
 - **Full tactical mode:** pause for the user's selected play-level scope and track every required game-state field.
+
+The head coach may call or delegate any phase and change that choice during a game. The user may request full in-game control at any time; no separate job title, contract clause or permission is required. Game-detail settings control how often the simulation pauses, not what the head coach may decide.
 
 Delegating ordinary calls never silently delegates the head coach's retained game-management authority.
 
@@ -271,7 +273,7 @@ Stage a complete candidate bundle outside the active canonical copies. Give the 
 After a response that advances state, close one update—or two ordered updates when a consequential decision requires a decision-only checkpoint before its outcome—using this order for each:
 
 1. In the candidate Document 6 copy, record the user's decision exactly, any mandatory ex-ante decision entry, event results, and necessary correction/supersession.
-2. If the user changes a stable project instruction, prepare a candidate Document 1 revision. If the event changes mode, league, team, rules, calendar, head-coach contract, reporting, authority, play calling, or senior structure, prepare and reconcile a candidate Document 2 and/or Document 3 version.
+2. If the user changes a stable project instruction, prepare a candidate Document 1 revision. If the event changes mode, league, team, rules, calendar, head-coach contract, reporting, authority, or senior structure, prepare and reconcile a candidate Document 2 and/or Document 3 version.
 3. If owned content changes, prepare the affected person, roster, medical-communication, financial-reconciliation, package, and staff changes in a candidate Document 4 version; otherwise retain its current content version.
 4. Recompute a full candidate Document 5 snapshot from those source records.
 5. Run the applicable invariants and audit triggers against the whole candidate bundle. Document 5 must name the exact effective versions of Documents 1–4. Append the close line and register row to candidate Document 6, then promote Document 6, the replacement Document 5, and every changed Document 1–4 version as one logical commit. The new label becomes the global package checkpoint in Documents 5 and 6. A changed Document 1–4 records it as that file's content-changing update; an unchanged file legitimately retains its older content-changing pointer.

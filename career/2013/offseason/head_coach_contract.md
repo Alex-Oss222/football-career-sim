@@ -13,7 +13,6 @@
 | Employer / employee | Jacksonville Jaguars / Alex Stone |
 | Contract length | Four years |
 | Guarantee | All four contract years fully guaranteed |
-| Offensive play-calling | Stone retains ordinary offensive play-calling |
 | Coaching staff | Stone selects the coaching staff |
 | Assistant budget | Funded budget consistent with the strong staff proposed; exact dollars were not stated |
 | Depth chart | Stone controls the depth chart |

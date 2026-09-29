@@ -17,11 +17,11 @@ Authority: Stone's February 2 memo, section 1; Caldwell made all six offers on F
 | Player | Offer | Result | Effective | 2014 base | Remaining unknowns |
 |---|---|---|---|---|---|
 | Tyler Bray, QB | February 3 | Signed February 3 (no dated competing move) | March 11, 2014 | $420,000 (0 credited seasons) | None for the base |
-| Richard Murphy, RB | February 3 | Signed February 3 (no dated competing move) | March 11, 2014 | Minimum for credited seasons, figure unresolved | Credited seasons |
-| Antwon Blake, S | February 3 | Signed February 3 (no dated competing move) | March 11, 2014 | Minimum for credited seasons, figure unresolved | Credited seasons |
-| Jerome Long, DT | February 3 | Signed February 3 (no dated competing move) | March 11, 2014 | Minimum for credited seasons, figure unresolved | Credited seasons |
-| Jerrell Jackson, WR | February 3 | Signed February 3 (his real 2014 Kansas City contract is undated and cannot enter the branch) | March 11, 2014 | Minimum for credited seasons, figure unresolved | Credited seasons |
-| D'Anthony Smith, DT | February 3 | Signed February 5 after the [market draw](../league_rails/fa_draws.md) against his real Seattle reserve/future contract of that date | March 11, 2014 | Minimum for credited seasons, figure unresolved | Credited seasons |
+| Richard Murphy, RB | February 3 | Signed February 3 (no dated competing move) | March 11, 2014 | $495,000 (1 credited season; reconstructed Entry 90) | Annual minimum resolved, Entry 90; term after 2014 unrecorded |
+| Antwon Blake, S | February 3 | Signed February 3 (no dated competing move) | March 11, 2014 | $495,000 (1 credited season; reconstructed Entry 90) | Annual minimum resolved, Entry 90; term after 2014 unrecorded |
+| Jerome Long, DT | February 3 | Signed February 3 (no dated competing move) | March 11, 2014 | $420,000 (0 credited seasons; reconstructed Entry 90) | Annual minimum resolved, Entry 90; term after 2014 unrecorded |
+| Jerrell Jackson, WR | February 3 | Signed February 3 (his real 2014 Kansas City contract is undated and cannot enter the branch) | March 11, 2014 | $420,000 (0 credited seasons; reconstructed Entry 90) | Annual minimum resolved, Entry 90; term after 2014 unrecorded |
+| D'Anthony Smith, DT | February 3 | Signed February 5 after the [market draw](../league_rails/fa_draws.md) against his real Seattle reserve/future contract of that date | March 11, 2014 | $495,000 (1 credited season; reconstructed Entry 90) | Annual minimum resolved, Entry 90; term after 2014 unrecorded |
 
 Not offered: Brandon King and Will Ta'ufo'ou, who left as free agents.
 
@@ -40,3 +40,5 @@ A non-exclusive franchise player may negotiate with other clubs from the league 
 Record actual dated offer or tender, authority, player response/draw reference where applicable, effective date, transaction type and actual status. Only a completed agreement belongs among signed contracts. Keep tendered rights, offer sheets, a matching period and an executed contract distinct.
 
 For every completed contract, record term, base salaries, bonuses, guarantees, options/incentives when verified, cap/cash treatment and remaining unknowns. Link the ledger and changed roster/control, contract accounting and current state. Do not copy the memo's estimated cap room into an authoritative balance. Actual departures and failed pursuits remain visible without becoming invented signings.
+
+**Entry 90 accounting correction, February 28 checkpoint:** the five previously unpriced futures minimums are now reconstructed from Article 26 service in the [original-contract research](../../../../library/2014_jaguars_original_contract_reconstruction.md#futures-service-and-minimum-salaries). No bonus, guarantee, signing date or contract term was changed.

@@ -6,7 +6,7 @@ seasons:
   - 2021
   - 2022
 document_revision: "4.0"
-primary_play_caller: "Alex Stone"
+author: "Alex Stone"
 canonical: true
 baseline: "2020 Evolution III-C"
 inherits:
@@ -23,7 +23,7 @@ system_sentence: "Count the box. Stress the fit. Make the rotation wrong."
 
 ## 2021-2022 Evolution IV: Box and Shell
 
-> **Team-neutral evolution manual** | Document revision 4.0 | Primary play-caller: Alex Stone
+> **Team-neutral evolution manual** | Document revision 4.0 | Author: Alex Stone
 > **System sentence:** Count the box. Stress the fit. Make the rotation wrong.
 
 This document is the fourth canonical evolution of Stone's offense. It is layered onto the 2013 Iteration I playbook, the 2016-2017 Evolution II manual, and the 2018-2020 Evolution III manual. Unless this document explicitly changes a rule, concept, protection, personnel relationship, motion rule, or operating procedure, the latest prior rule remains in force.

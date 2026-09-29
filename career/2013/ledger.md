@@ -2606,3 +2606,25 @@ The search is not a complete league transaction log. No real retirement dated Fe
 **Atomic closure.** The following now agree: the master clock (February 28), the roster header and player ages, the calendar, the tags and tenders record, the contract register, the contract table (update-log row), the 2014 preparation worksheet, the working depth chart's as-of line (no chart change), the free-agency board reading, the thirteen touched club rails pages, the free-agent pool and retirements pages, the 2014 README, readiness, operating baseline, trade and staff status lines, the February 26 to 28 turn output, and Documents 4 (register 44) and 5 (state 65). No player-control, pick or staff change. The private snapshot is not advanced from this branch.
 
 **Commit closed - Canonical update - February 28, 2014 - Clock advanced to February 28 (2014 cap and tag figures published) - canonical through February 28, 2014**
+
+
+## Entry 90: Head-coach role and original contracts reconciled
+
+**Effective canonical state:** February 28, 2014; administrative correction, no time advance.
+**Recorded:** September 29, 2026
+**Checkpoint:** `Canonical correction - February 28, 2014 - Head-coach role and original contracts reconciled`
+**Preceding global package checkpoint:** `Canonical update - February 28, 2014 - Clock advanced to February 28 (2014 cap and tag figures published)`
+
+**Authority.** The user directs removal of offensive play-caller as a separate Stone title, contract condition or permission, and requests research and continuation of the original player contracts from 2013, allowing labeled approximations.
+
+**Head coach.** Stone is the head coach. He may call or delegate any phase and change that choice during a game. Full in-game control is available on request. Documents 1 and 3, the job/contract summaries, profiles, staff records and active playbook attribution now reflect that instruction. Current coordinator assignments remain useful descriptions of staff work; they are not exclusive permissions. Historical accounts of actual play-calling experience and technical football material remain. The user's correction supersedes the former negotiated-play-calling framing in the hiring history and season-review dialogue; those passages are edited for consistency, not treated as a new offer or appointment.
+
+**Player contracts.** The [original-contract research](../../library/2014_jaguars_original_contract_reconstruction.md) recovers original annual terms and reconstructs remaining schedules from the existing 2013 records. All 36 continuing contracts and six signed futures now have a priced 2014 row: $56,140,166 sourced/reconstructed and about $35,977,655 estimated. With Monroe's separate $11,654,000 tender, the planning subtotal is about $103,771,821 before team accounting. Wilson and Jonathan Grimes have $1.3M of conditional retention allowances outside signed totals because their surviving terms remain unresolved. No real later extension, release, trade or suspension is imported.
+
+**Corrections with accounting consequences.** Cousins and Asper carry salary without the former club's bonus. Posluszny's $10M original bonus stops prorating after 2015, so no $2M allocation remains in 2016. Blackmon's deferred roster cash is already included in original bonus cap treatment; the branch four-game forfeiture reconciliation remains open. Futures minimums are $420,000 for Bray, Jerrell Jackson and Long, $495,000 for Murphy, D'Anthony Smith and Blake. Shorts/Rackley escalators are budgeted as estimates pending branch snap verification and publication. Nwaneri's original bonus is reported due March 25.
+
+**Current obligations and estimates.** Carryover, dead money, counting adjustments, draft costs, incentives and specific unrecovered clauses still prevent certified room. Estimates are usable planning amounts with documented assumptions, not hidden zeros or new contracts. The fixed 2014 to 2023 tracker retains the remaining original deals and leaves unexecuted future business outside commitments.
+
+**Atomic closure.** The current contract table/register, futures signing amounts, preparation worksheet, financial inputs and generated views, Documents 4 (register 45) and 5 (state 66), and the governing-source manifest are reconciled. Roster ownership, availability, player roles, draft assets and the working depth chart were inspected and require no change. No signing, tender, release, retirement, staff appointment, game or clock advance occurs. Private engine state remains untouched.
+
+**Commit closed - Canonical correction - February 28, 2014 - Head-coach role and original contracts reconciled - canonical through February 28, 2014**

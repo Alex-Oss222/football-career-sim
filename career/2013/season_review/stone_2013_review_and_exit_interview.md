@@ -220,7 +220,7 @@ Stone said the first priorities were keeping the lines together where possible, 
 
 “And separate continuity from keeping people. If the player can't do the job, we improve it. If the player can do it and we're replacing him, I want a reason that survives the cost.”
 
-Khan had no contract proposal for Stone. Stone requested no raise, extension, additional authority or staff money. They continued under the agreement already in place: Caldwell controlled acquisitions, contracts, cap and scouting; Stone controlled his staff, football roles and offensive play-calling. The quarterback consultation requirement remained a consultation requirement. The attempted concurrence right from the hiring negotiations had never become part of the contract.
+Khan had no contract proposal for Stone. Stone requested no raise, extension, additional authority or staff money. They continued under the agreement already in place: Caldwell controlled acquisitions, contracts, cap and scouting; Stone controlled his staff, football roles and game-day decisions. The quarterback consultation requirement remained a consultation requirement. The attempted concurrence right from the hiring negotiations had never become part of the contract.
 
 Caldwell said he would put the personnel and development questions into the written follow-up. Stone asked him to include Kelce's blocking evaluation with the receiving questions, then returned to the page on which Caldwell had divided the season into two halves. Khan asked whether the February submission would include the players whose contracts still needed to be reconciled. Caldwell said it would, and began identifying which files he needed from football administration.
 
@@ -382,7 +382,7 @@ The communications staff connected the podium microphone, checked its level thro
 
 **Reporter:** Does holding the play sheet make it harder to run the whole game?
 
-**Stone:** It adds work. That's why the responsibilities around me have to be clear. Tice runs the weekday offensive process, Romeo calls the defense, and until we hire a special teams coordinator, the kicking game is mine too. I chose to keep offensive play-calling. I don't get to use having two jobs as an excuse for doing one badly.
+**Stone:** It adds work. That's why the responsibilities around me have to be clear. Tice runs the weekday offensive process, Romeo calls the defense, and until we hire a special teams coordinator, the kicking game is mine too. I'm responsible for how the whole team plays. I need to know when to get involved and when to let a coach finish his work.
 
 **Reporter:** Did ownership ask you to give it up?
 

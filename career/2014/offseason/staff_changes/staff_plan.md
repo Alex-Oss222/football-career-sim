@@ -9,7 +9,7 @@
 
 ## Open position and interim coverage
 
-**Special teams coordinator is the only current vacancy.** Stone directs the kicking game on an interim basis under Entry 75 and Document 3 section 4. Crennel remains the defensive caller, Tice runs the offensive process, and Stone retains offensive play-calling. No additional assistant has been appointed to absorb the special-teams workload; emergency succession if Stone is unavailable remains unassigned.
+**Special teams coordinator is the only current vacancy.** Stone directs the kicking game on an interim basis under Entry 75 and Document 3 section 4. Crennel directs the defense and Tice runs the offensive process under Stone. No additional assistant has been appointed to absorb the special-teams workload; emergency succession if Stone is unavailable remains unassigned.
 
 The replacement role covers punt and punt return, kickoff and kickoff return, field-goal/PAT and block units, hands/onside units, specialist development and integration, coverage technique, returner evaluation, personnel recommendations, and unit planning. The current staff register's section 6 owns that role description. Stone retains team priorities and consequential game management; Caldwell retains final player-personnel authority. Existing player assignments stand until an authorized change.
 

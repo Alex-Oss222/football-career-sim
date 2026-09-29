@@ -18,7 +18,6 @@
 - A quarterback is forced at #2 regardless of Stone's evaluation.
 - The GM picks the coordinators instead of Stone.
 - The coaching staff is underfunded.
-- Play-calling authority is taken away.
 - Contract term comes in under 3 years, or with no real guarantees.
 - Ownership expects an immediate playoff push in year 1.
 

@@ -15,6 +15,8 @@ jobs:
           python-version: '3.12'
       - name: Validate records and links
         run: python scripts/validate_repository.py
+      - name: Validate ten-year cap tracker
+        run: python scripts/render_jaguars_cap_tracker.py --check
       - name: Regression tests
         run: python -m unittest discover -s tests -v
       - name: Report the separate game gate

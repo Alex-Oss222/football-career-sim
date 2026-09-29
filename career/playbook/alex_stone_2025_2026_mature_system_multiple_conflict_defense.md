@@ -9,7 +9,7 @@ document_revision: "6.0"
 status: "standalone master"
 canonical: true
 standalone: true
-primary_play_caller: "Alex Stone"
+author: "Alex Stone"
 base_structure: "4-3 Under Multiple"
 personnel_center: "4-2-5 Big Nickel"
 system_sentence: "Present uncertainty. Play with certainty."
@@ -19,7 +19,7 @@ system_sentence: "Present uncertainty. Play with certainty."
 
 ## 2025-2026 Mature System: Multiple Conflict Defense
 
-> **Team-neutral standalone master book** | Document revision 6.0 | Primary play-caller: Alex Stone
+> **Team-neutral standalone master book** | Document revision 6.0 | Author: Alex Stone
 > **System sentence:** Present uncertainty. Play with certainty.
 
 This is the fully consolidated mature defensive counterpart to Stone's offensive system. It stands on its own. Earlier defensive books explain how the system arrived here; this book defines what survives by 2025-26.
