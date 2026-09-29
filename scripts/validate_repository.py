@@ -80,19 +80,22 @@ def season_honours_errors(awards_dir):
     return errors
 
 
-def receipt_coverage_errors(receipts, scheduled=None):
+def receipt_coverage_errors(receipts, scheduled=None, season=2013, root=None):
     """One receipt per scheduled game in every regular-season week that has any.
 
     `scheduled(week)` returns that week's scheduled games and raises ValueError
-    for a week with none (runtime.week_inputs.schedule, library/data/2013_schedule.json).
-    A week outside the regular-season schedule, such as a postseason round, is
-    skipped here.
+    for a week with none (runtime.week_inputs.schedule for `season`, e.g.
+    library/data/2013_schedule.json). A week outside the regular-season
+    schedule, such as a postseason round, is skipped here. A season whose
+    schedule file does not exist is an error, never a silent skip.
     """
+    import sys
+    if str(ROOT) not in sys.path:
+        sys.path.insert(0, str(ROOT))
+    from runtime.season import SeasonDataMissing
     if scheduled is None:
-        import sys
-        if str(ROOT) not in sys.path:
-            sys.path.insert(0, str(ROOT))
-        from runtime.week_inputs import schedule as scheduled
+        from runtime.week_inputs import schedule
+        scheduled = lambda week: schedule(week, season, root)
     counts = {}
     for receipt in receipts:
         week = receipt.get('week')
@@ -104,11 +107,185 @@ def receipt_coverage_errors(receipts, scheduled=None):
             games = len(scheduled(week))
         except json.JSONDecodeError:
             raise
+        except SeasonDataMissing as exc:
+            errors.append(f'{season} receipts cannot be checked against a schedule: {exc}')
+            break
         except ValueError:
             continue
         if counts[week] != games:
             errors.append(f'Week {week}: {counts[week]} game receipt(s) for {games} scheduled games; '
                           'receipt coverage must match the schedule before the week reads complete')
+    return errors
+
+
+CLOSED_SEASON = 2013
+GAME_DIRS = ('regular_season', 'postseason', 'preseason')
+RECEIPT_DIRS = ('game_receipts', 'postseason_receipts', 'preseason_receipts')
+
+
+def game_seasons(root=ROOT):
+    """2013 (the closed season, always checked) plus every other career/<year>
+    folder that holds receipts, call sheets or weekly outputs. A season with
+    no game data yet needs none."""
+    seasons = {CLOSED_SEASON}
+    career = Path(root)/'career'
+    for folder in sorted(career.iterdir()) if career.is_dir() else ():
+        if not (folder.is_dir() and re.fullmatch(r'\d{4}', folder.name)):
+            continue
+        if any(any((folder/'stats'/d).glob('*.json')) for d in RECEIPT_DIRS) or any(
+                any((folder/d).glob('*/call_sheet.json')) or any((folder/d).glob('*/output.md'))
+                for d in GAME_DIRS):
+            seasons.add(int(folder.name))
+    return sorted(seasons)
+
+
+def _stale_view_message(name, actual, expected):
+    actual_lines = actual.splitlines()
+    expected_lines = expected.splitlines()
+    mismatch = next(
+        (
+            index
+            for index, (left, right) in enumerate(
+                zip(actual_lines, expected_lines), 1
+            )
+            if left != right
+        ),
+        min(len(actual_lines), len(expected_lines)) + 1,
+    )
+    actual_line = (
+        actual_lines[mismatch - 1]
+        if mismatch <= len(actual_lines)
+        else '<EOF>'
+    )
+    expected_line = (
+        expected_lines[mismatch - 1]
+        if mismatch <= len(expected_lines)
+        else '<EOF>'
+    )
+    return (f'{name}: stale generated stat view at line {mismatch}; '
+            f'actual={actual_line!r}; expected={expected_line!r}; '
+            'run render_season_stats.py')
+
+
+def season_stat_errors(root, season):
+    """Receipts, statbook views, awards and standings of one season."""
+    errors = []
+    def require(condition, message):
+        if not condition:
+            errors.append(message)
+    label = '' if season == CLOSED_SEASON else f'{season}: '
+    # Season statistics are generated artifacts. Rebuild them from the durable
+    # closed-game receipts so stale caches or hand-edited views fail closed.
+    try:
+        import sys
+        if str(ROOT) not in sys.path:
+            sys.path.insert(0, str(ROOT))
+        from scripts.render_season_stats import render_views
+
+        stats_dir = root/f'career/{season}/stats'
+        receipt_paths = sorted((stats_dir/'game_receipts').glob('*.json'))
+        # Zero receipts is legitimate before the first regular-season game.
+        receipts = []
+        for receipt_path in receipt_paths:
+            receipt = json.loads(receipt_path.read_text())
+            receipts.append(receipt)
+            event_id = receipt.get('event_id', receipt_path.name)
+            require(str(event_id).startswith(f'{season}-week'),
+                    f'{event_id}: event id does not belong to season {season}')
+            require(receipt.get('game_type', 'regular') == 'regular',
+                    f'{event_id}: only regular-season receipts belong in game_receipts')
+            team_stats = receipt.get('team_stats')
+            final_score = receipt.get('final_score')
+            require(
+                isinstance(team_stats, dict) and len(team_stats) == 2,
+                f'{event_id}: receipt must contain exactly two team-stat rows',
+            )
+            require(
+                isinstance(final_score, dict)
+                and isinstance(team_stats, dict)
+                and set(final_score) == set(team_stats),
+                f'{event_id}: final-score teams differ from team-stat teams',
+            )
+            if isinstance(team_stats, dict) and isinstance(final_score, dict):
+                for team_id, game in team_stats.items():
+                    if isinstance(game, dict):
+                        require(
+                            game.get('points') == final_score.get(team_id),
+                            f'{event_id}: {team_id} receipt points differ from final score',
+                        )
+        for directory in ('postseason_receipts', 'preseason_receipts'):
+            for receipt_path in sorted((stats_dir/directory).glob('*.json')):
+                event_id = json.loads(receipt_path.read_text()).get('event_id', receipt_path.name)
+                require(str(event_id).startswith(f'{season}-week'),
+                        f'{event_id}: event id does not belong to season {season}')
+
+        if season != CLOSED_SEASON and not receipts:
+            return errors
+        errors.extend(receipt_coverage_errors(receipts, season=season, root=root))
+        errors.extend(award_coverage_errors(receipts, root / f'career/{season}/awards'))
+        if season == CLOSED_SEASON:
+            errors.extend(season_honours_errors(root / 'career/2013/awards'))
+
+        expected_views = render_views(season, 'Jacksonville Jaguars', receipts)
+        for name, expected in expected_views.items():
+            actual = (stats_dir/name).read_text()
+            if name == 'season_totals.json':
+                require(actual == expected,
+                        f'{label}season_totals.json is stale; rebuild season stats from receipts')
+                continue
+            if actual != expected:
+                require(False, label + _stale_view_message(name, actual, expected))
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append(f'{label}Malformed season statbook: {exc}')
+
+    # Standings and weekly box scores are generated from the same receipts.
+    try:
+        from scripts.render_standings import render as render_standings
+        standings = (root/f'career/{season}/standings.md').read_text()
+        require(standings == render_standings(season, receipts),
+                f'{label}standings.md is stale; run render_standings.py')
+    except (OSError, ValueError, KeyError, TypeError, NameError) as exc:
+        errors.append(f'{label}Standings cannot be rebuilt from receipts: {exc}')
+    return errors
+
+
+def season_output_errors(root, season):
+    """Weekly box scores and call sheets of one season."""
+    errors = []
+    def require(condition, message):
+        if not condition:
+            errors.append(message)
+    try:
+        from scripts.render_box_score import stale_blocks
+        receipt_dir = root/f'career/{season}/stats/game_receipts'
+        outputs = []
+        for directory in GAME_DIRS:
+            if season == CLOSED_SEASON and directory == 'preseason':
+                continue  # 2013 preseason was a bulk narrative turn with no receipts
+            outputs += sorted((root/f'career/{season}/{directory}').glob('*/output.md'))
+        for output in outputs:
+            directory = receipt_dir
+            if output.parent.parent.name == 'preseason':
+                directory = root/f'career/{season}/stats/preseason_receipts'
+            for event_id in stale_blocks(output, directory):
+                require(False, f'{output.relative_to(root)}: box score for {event_id} '
+                               'differs from its receipt; run render_box_score.py --write')
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append(f'Box score cannot be rebuilt from its receipt: {exc}')
+
+    # Every committed weekly call sheet must be labellable by kernel 2013.7:
+    # each call names who it can describe, explicitly or through the family map.
+    try:
+        from runtime.call_families import sheet_errors
+        sheets = []
+        for directory in GAME_DIRS:
+            sheets += sorted((root/f'career/{season}/{directory}').glob('*/call_sheet.json'))
+        for sheet_path in sheets:
+            sheet = json.loads(sheet_path.read_text()).get('offensive_call_sheet', [])
+            for problem in sheet_errors(sheet):
+                require(False, f'{sheet_path.relative_to(root)}: {problem}')
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append(f'Call sheets cannot be checked: {exc}')
     return errors
 
 
@@ -205,95 +382,14 @@ def validate(root=ROOT):
     except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
         errors.append(f'Invalid player birth-date/age evidence: {exc}')
 
-    # Season statistics are generated artifacts. Rebuild them from the durable
-    # closed-game receipts so stale caches or hand-edited views fail closed.
-    try:
-        import sys
-        if str(ROOT) not in sys.path:
-            sys.path.insert(0, str(ROOT))
-        from scripts.render_season_stats import render_views
-
-        stats_dir = root/'career/2013/stats'
-        receipt_paths = sorted((stats_dir/'game_receipts').glob('*.json'))
-        # Zero receipts is legitimate before the first regular-season game.
-        receipts = []
-        for receipt_path in receipt_paths:
-            receipt = json.loads(receipt_path.read_text())
-            receipts.append(receipt)
-            event_id = receipt.get('event_id', receipt_path.name)
-            team_stats = receipt.get('team_stats')
-            final_score = receipt.get('final_score')
-            require(
-                isinstance(team_stats, dict) and len(team_stats) == 2,
-                f'{event_id}: receipt must contain exactly two team-stat rows',
-            )
-            require(
-                isinstance(final_score, dict)
-                and isinstance(team_stats, dict)
-                and set(final_score) == set(team_stats),
-                f'{event_id}: final-score teams differ from team-stat teams',
-            )
-            if isinstance(team_stats, dict) and isinstance(final_score, dict):
-                for team_id, game in team_stats.items():
-                    if isinstance(game, dict):
-                        require(
-                            game.get('points') == final_score.get(team_id),
-                            f'{event_id}: {team_id} receipt points differ from final score',
-                        )
-
-        errors.extend(receipt_coverage_errors(receipts))
-        errors.extend(award_coverage_errors(receipts, root / 'career/2013/awards'))
-        errors.extend(season_honours_errors(root / 'career/2013/awards'))
-
-        expected_views = render_views(2013, 'Jacksonville Jaguars', receipts)
-        for name, expected in expected_views.items():
-            actual = (stats_dir/name).read_text()
-            if name == 'season_totals.json':
-                require(actual == expected,
-                        'season_totals.json is stale; rebuild season stats from receipts')
-                continue
-            if actual != expected:
-                actual_lines = actual.splitlines()
-                expected_lines = expected.splitlines()
-                mismatch = next(
-                    (
-                        index
-                        for index, (left, right) in enumerate(
-                            zip(actual_lines, expected_lines), 1
-                        )
-                        if left != right
-                    ),
-                    min(len(actual_lines), len(expected_lines)) + 1,
-                )
-                actual_line = (
-                    actual_lines[mismatch - 1]
-                    if mismatch <= len(actual_lines)
-                    else '<EOF>'
-                )
-                expected_line = (
-                    expected_lines[mismatch - 1]
-                    if mismatch <= len(expected_lines)
-                    else '<EOF>'
-                )
-                require(
-                    False,
-                    f'{name}: stale generated stat view at line {mismatch}; '
-                    f'actual={actual_line!r}; expected={expected_line!r}; '
-                    'run render_season_stats.py',
-                )
-    except (OSError, ValueError, KeyError, TypeError) as exc:
-        errors.append(f'Malformed season statbook: {exc}')
-
-    # Standings and weekly box scores are generated from the same receipts.
-    try:
-        from scripts.render_standings import render as render_standings
-        standings = (root/'career/2013/standings.md').read_text()
-        require(standings == render_standings(2013, receipts),
-                'standings.md is stale; run render_standings.py')
-    except (OSError, ValueError, KeyError, TypeError, NameError) as exc:
-        errors.append(f'Standings cannot be rebuilt from receipts: {exc}')
-    # The 2014 draft order is generated from the same receipts once the
-    # Super Bowl has closed.
+    # Season statistics, standings, box scores and call sheets are checked by
+    # the same rules for every season folder that has game data: 2013 always
+    # (the closed season), any later season once its receipts, call sheets
+    # or box-score outputs exist. No later-season data is required now.
+    for season in game_seasons(root):
+        errors.extend(season_stat_errors(root, season))
+    # The 2014 draft order is generated from the 2013 receipts once the
+    # Super Bowl has closed (runtime.draft_order stays pinned to 2013).
     draft_order = root/'career/2014/draft/draft_order.md'
     if draft_order.exists():
         try:
@@ -310,30 +406,8 @@ def validate(root=ROOT):
             errors.extend(check_2014_opponents(root))
         except (OSError, ValueError, KeyError, TypeError) as exc:
             errors.append(f'2014 opponent matrix cannot be rebuilt: {exc}')
-    try:
-        from scripts.render_box_score import stale_blocks
-        receipt_dir = root/'career/2013/stats/game_receipts'
-        outputs = sorted((root/'career/2013/regular_season').glob('*/output.md'))
-        outputs += sorted((root/'career/2013/postseason').glob('*/output.md'))
-        for output in outputs:
-            for event_id in stale_blocks(output, receipt_dir):
-                require(False, f'{output.relative_to(root)}: box score for {event_id} '
-                               'differs from its receipt; run render_box_score.py --write')
-    except (OSError, ValueError, KeyError, TypeError) as exc:
-        errors.append(f'Box score cannot be rebuilt from its receipt: {exc}')
-
-    # Every committed weekly call sheet must be labellable by kernel 2013.7:
-    # each call names who it can describe, explicitly or through the family map.
-    try:
-        from runtime.call_families import sheet_errors
-        sheets = sorted((root/'career/2013/regular_season').glob('*/call_sheet.json'))
-        sheets += sorted((root/'career/2013/postseason').glob('*/call_sheet.json'))
-        for sheet_path in sheets:
-            sheet = json.loads(sheet_path.read_text()).get('offensive_call_sheet', [])
-            for problem in sheet_errors(sheet):
-                require(False, f'{sheet_path.relative_to(root)}: {problem}')
-    except (OSError, ValueError, KeyError, TypeError) as exc:
-        errors.append(f'Call sheets cannot be checked: {exc}')
+    for season in game_seasons(root):
+        errors.extend(season_output_errors(root, season))
 
     allowed_books = set(mapping['active_playbooks']) | {'career/playbook/README.md'}
     def readable(path):

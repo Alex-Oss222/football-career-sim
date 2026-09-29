@@ -1,6 +1,9 @@
-"""2013 NFL conference and division alignment (unchanged 2002-2019).
+"""NFL conference and division alignment for the 2013 and 2014 seasons
+(alignment unchanged 2002-2019).
 
-Club names match the team identifiers used in game receipts.
+Club names match the team identifiers used in game receipts. They are the
+same for 2013 and 2014; a later season needs its names and alignment
+verified (relocations and renames) before this table may serve it.
 """
 
 DIVISIONS = {
@@ -18,6 +21,16 @@ DIVISION_OF = {team: division for division, teams in DIVISIONS.items() for team 
 TEAMS = tuple(sorted(DIVISION_OF))
 CONFERENCES = ("AFC", "NFC")
 PLAYOFF_CLUBS_PER_CONFERENCE = 6
+# Seasons whose alignment, club names and six-club playoff field this table
+# is verified for. Any other season fails closed rather than borrowing them.
+SEASONS = (2013, 2014)
+
+
+def require_season(season):
+    if season not in SEASONS:
+        raise ValueError("league alignment and club names are verified for %s only, not %s"
+                         % (", ".join(str(s) for s in SEASONS), season))
+    return season
 
 
 def conference_of(team):

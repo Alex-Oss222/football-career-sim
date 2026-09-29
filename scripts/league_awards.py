@@ -151,7 +151,15 @@ def main():
     parser.add_argument("key", nargs="?")
     parser.add_argument("--close", action="store_true")
     parser.add_argument("--note", default="")
+    parser.add_argument("--season", type=int, default=2013,
+                        help="season (only 2013's award method and results exist)")
     args = parser.parse_args()
+    if args.season != 2013:
+        # The method, results and receipts here are 2013's. A later season
+        # needs its own career/<season>/awards method first; never 2013's.
+        print("AWARDS: BLOCKED - no %d award method; this script reads and writes "
+              "career/2013/awards only" % args.season)
+        return 1
     if args.kind == "render":
         render()
         return 0

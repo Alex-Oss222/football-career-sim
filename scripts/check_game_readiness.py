@@ -11,8 +11,26 @@ from runtime.private_client import Client, PrivateRuntimeUnavailable
 from runtime.rules import RULES
 
 REQUIRED={'calibration','playing_rules','injury_model','football_kernel','private_runtime'}
+# The season whose playing rules are executable and verified (runtime/rules.py
+# Rules2013; Document 2 "2013 playing rules, verified"). Any other season is
+# blocked until its own rules object, probe and season data exist.
+RULES_SEASON=2013
+SEASON_DATA=('schedule','depth_library','roster','depth_chart')
 
-def assess(root=ROOT):
+def season_blockers(root,season):
+    """A later season is ready only with its own verified rules and data; never 2013's."""
+    from runtime.season import SeasonDataMissing, season_paths
+    blockers=[]
+    try: paths=season_paths(season,root)
+    except (TypeError,ValueError) as e: return [dict(id='season_probe',label='Season probe',detail=str(e))]
+    if season!=RULES_SEASON:
+        blockers.append(dict(id='rules_probe',label='Rules probe',detail=f'no verified {season} playing rules: runtime/rules.py executes the {RULES_SEASON} rules only'))
+    for what in SEASON_DATA:
+        try: paths.require(what)
+        except SeasonDataMissing as e: blockers.append(dict(id='season_probe',label='Season probe',detail=str(e)))
+    return blockers
+
+def assess(root=ROOT,season=RULES_SEASON):
     root=Path(root); blockers=[]
     blockers += [dict(id='repository_continuity',label='Repository continuity',detail=e) for e in validate(root)]
     manifest=json.loads((root/'runtime/readiness.json').read_text()); reqs=manifest['requirements']
@@ -28,6 +46,7 @@ def assess(root=ROOT):
         errors=validate_calibration(json.loads((root/'library/data/2012_nfl_aggregate_baseline.json').read_text()))
         if errors: blockers.append(dict(id='calibration_probe',label='Calibration probe',detail='; '.join(errors)))
     except Exception as e: blockers.append(dict(id='calibration_probe',label='Calibration probe',detail=str(e)))
+    blockers += season_blockers(root,season)
     rule_doc=(root/'foundation/02_League_Era_and_Sourcebook.md').read_text()
     if RULES.active_limit!=46 or '2013 playing rules, verified' not in rule_doc: blockers.append(dict(id='rules_probe',label='Rules probe',detail='2013 executable/source rules mismatch'))
     runner_errors=architecture_errors()
@@ -48,11 +67,12 @@ def assess(root=ROOT):
         except PrivateRuntimeUnavailable as e: blockers.append(dict(id='private_probe',label='Private runtime probe',detail=str(e)))
     return {'ready':not blockers,'blockers':blockers}
 
-def check(root=ROOT): return [f"{x['label']}: {x['detail']}" for x in assess(root)['blockers']]
+def check(root=ROOT,season=RULES_SEASON): return [f"{x['label']}: {x['detail']}" for x in assess(root,season)['blockers']]
 
 def main():
-    p=argparse.ArgumentParser(); p.add_argument('--json',action='store_true'); a=p.parse_args()
-    try: result=assess()
+    p=argparse.ArgumentParser(); p.add_argument('--json',action='store_true')
+    p.add_argument('--season',type=int,default=RULES_SEASON,help='season whose game would close (default 2013)'); a=p.parse_args()
+    try: result=assess(season=a.season)
     except (OSError,ValueError,KeyError,TypeError) as e:
         if a.json: print(json.dumps({'ready':False,'configuration_error':str(e)},sort_keys=True)); return 2
         print(f'INVALID READINESS CONFIGURATION: {e}'); return 2
