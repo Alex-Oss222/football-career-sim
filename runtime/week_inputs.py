@@ -1,9 +1,4 @@
-"""Weekly TeamInput package for any regular-season or postseason week.
-
-Every path is season-scoped through `runtime.season` (default 2013, the
-closed season, which resolves to exactly the files listed below). A later
-season reads only its own schedule, depth library, roster, depth chart and
-generation registry, and fails closed when one is missing.
+"""Weekly TeamInput package for any regular-season week.
 
 - Slate: `library/data/2013_schedule.json` (schedule rails only).
 - Background clubs: the sourced Week 1 units (`runtime.depth_library`),
@@ -24,12 +19,9 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 
 from . import call_families, depth_library, player_bios
-from .season import DEFAULT_SEASON, season_of_event, season_paths
 from .usage import group, lineup_errors
 
 ROOT = Path(__file__).resolve().parents[1]
-# The closed 2013 season's files (kept for existing callers); season-aware
-# code resolves through runtime.season instead.
 SCHEDULE = ROOT / "library" / "data" / "2013_schedule.json"
 ROSTER = ROOT / "career" / "2013" / "roster.md"
 DEPTH_CHART = ROOT / "career" / "2013" / "depth_chart.json"
@@ -44,44 +36,32 @@ def slug(team, sep):
     return re.sub(r"[^a-z0-9]+", sep, team.lower()).strip(sep)
 
 
-def _season_games(paths):
-    data = json.loads(paths.require("schedule").read_text(encoding="utf-8"))
-    if data.get("season") != paths.season:
-        raise ValueError("%s declares season %r, not %d" % (paths.schedule.name, data.get("season"), paths.season))
-    return data["games"]
-
-
-def schedule(week, season=DEFAULT_SEASON, root=None):
+def schedule(week):
     from . import postseason
     if postseason.is_postseason(week):
         # Weeks 18-21: the bracket built from closed receipts (runtime.postseason).
-        return postseason.schedule(week, season=season, root=root)
-    paths = season_paths(season, root)
-    games = [g for g in _season_games(paths) if g["week"] == week]
+        return postseason.schedule(week)
+    games = [g for g in json.loads(SCHEDULE.read_text(encoding="utf-8"))["games"] if g["week"] == week]
     if not games:
-        raise ValueError("no %d schedule for week %s" % (season, week))
+        raise ValueError("no 2013 schedule for week %s" % week)
     return games
 
 
 GENERATIONS = ROOT / "career/2013/migrations/event_generations.json"
 
 
-def event_generation(week, season=DEFAULT_SEASON, root=None):
+def event_generation(week):
     """The current event generation for a week: 1 unless a user-authorized
-    void in that season's career/{season}/migrations/event_generations.json
-    replaced it. One season's voids never apply to another season's weeks."""
-    generations = season_paths(season, root).generations
-    if not generations.exists():
+    void in career/2013/migrations/event_generations.json replaced it."""
+    if not GENERATIONS.exists():
         return 1
-    weeks = json.loads(generations.read_text(encoding="utf-8")).get("weeks", {})
+    weeks = json.loads(GENERATIONS.read_text(encoding="utf-8")).get("weeks", {})
     return int(weeks.get(str(int(week)), {}).get("current_generation", 1))
 
 
-def event_id(game, generation=None, season=DEFAULT_SEASON, root=None):
-    """`{season}-weekNN-<away>-at-<home>[-gN]`: the season prefix keeps a
-    later season's pairing from ever matching a closed 2013 event."""
-    generation = event_generation(game["week"], season, root) if generation is None else generation
-    base = "%d-week%02d-%s-at-%s" % (season, game["week"], slug(game["away"], "-"), slug(game["home"], "-"))
+def event_id(game, generation=None):
+    generation = event_generation(game["week"]) if generation is None else generation
+    base = "2013-week%02d-%s-at-%s" % (game["week"], slug(game["away"], "-"), slug(game["home"], "-"))
     return base if generation == 1 else "%s-g%d" % (base, generation)
 
 
@@ -89,37 +69,26 @@ def receipt_name(game):
     return "week_%02d_%s_at_%s.json" % (game["week"], slug(game["away"], "_"), slug(game["home"], "_"))
 
 
-def _game_dates(season=DEFAULT_SEASON, root=None):
+def _game_dates():
     from . import postseason
-    games = _season_games(season_paths(season, root))
+    games = json.loads(SCHEDULE.read_text(encoding="utf-8"))["games"]
     dates = {(g["week"], g["away"], g["home"]): date.fromisoformat(g["date"]) for g in games}
     # Closed postseason rounds: their games can always be rebuilt from receipts.
     for week in sorted(postseason.ROUNDS):
         try:
-            rows = postseason.schedule(week, season=season, root=root)
+            rows = postseason.schedule(week)
         except (ValueError, FileNotFoundError, KeyError):
             break
         dates.update({(g["week"], g["away"], g["home"]): date.fromisoformat(g["date"]) for g in rows})
     return dates
 
 
-def injured_out(receipts, game_day, root=None, season=DEFAULT_SEASON):
-    """{player_id: reason} for players still inside their projected return window.
-
-    Each receipt's game date comes from its own season's schedule (the season
-    is the event ID's prefix; `season` only dates a receipt without an event
-    ID), so a receipt is never dated from another season's slate."""
-    dates_by_season = {}
+def injured_out(receipts, game_day):
+    """{player_id: reason} for players still inside their projected return window."""
+    dates = _game_dates()
     out = {}
     for receipt in receipts:
-        receipt_season = season_of_event(receipt["event_id"]) if "event_id" in receipt else season
-        if receipt_season not in dates_by_season:
-            dates_by_season[receipt_season] = _game_dates(receipt_season, root)
-        key = (int(receipt["week"]), receipt["away"], receipt["home"])
-        if key not in dates_by_season[receipt_season]:
-            raise ValueError("receipt %s is not on the %d schedule"
-                             % (receipt.get("event_id", key), receipt_season))
-        played = dates_by_season[receipt_season][key]
+        played = dates[(int(receipt["week"]), receipt["away"], receipt["home"])]
         for injury in receipt.get("injuries", ()):
             days = injury.get("return_days") or 0
             if injury.get("restriction") == "limited" and not days:
@@ -131,9 +100,9 @@ def injured_out(receipts, game_day, root=None, season=DEFAULT_SEASON):
     return out
 
 
-def background_input(team, week, receipts, game_day, anchors, season=DEFAULT_SEASON, root=None):
-    team_input = depth_library.team_input(team, week=week, season=season, root=root, **anchors)
-    out = injured_out(receipts, game_day, root, season)
+def background_input(team, week, receipts, game_day, anchors):
+    team_input = depth_library.team_input(team, week=week, **anchors)
+    out = injured_out(receipts, game_day)
     for player in team_input["roster"]:
         if player["player_id"] in out:
             player["available"] = False
@@ -176,12 +145,11 @@ class _Row:
         self.position = row["position"]
 
 
-def controlled_active(season=DEFAULT_SEASON, root=None):
-    """(player, availability text) for every Jacksonville active-53 player
-    on that season's roster owner."""
+def controlled_active():
+    """(player, availability text) for every Jacksonville active-53 player."""
     rows = []
     status_col = avail_col = None
-    for line in season_paths(season, root).require("roster").read_text(encoding="utf-8").splitlines():
+    for line in ROSTER.read_text(encoding="utf-8").splitlines():
         if not line.startswith("|"):
             status_col = None
             continue
@@ -201,14 +169,13 @@ HOLD_NOTE = re.compile(r"\b(Out|hold|Suspended|Reserve|Non-football|Exempt)\b", 
 PROJECTED_RETURN = re.compile(r"projected return ([A-Z][a-z]+ \d{1,2}(?:, \d{4})?)")
 
 
-def roster_available(availability, game_day, season=DEFAULT_SEASON):
+def roster_available(availability, game_day):
     """Whether a roster availability note clears a player for `game_day`.
 
     A game injury recorded with a projected return clears on that date, the
     rule every background club gets; a hold without a date (a medical hold,
     a suspension) clears only when the roster entry is changed. A player
     listed as limited with no projected absence plays, as for every club.
-    A dated return without a year is read in `season`.
     """
     if availability.startswith(AVAILABLE_TEXT) or availability.startswith(LIMITED_TEXT):
         return True
@@ -220,27 +187,26 @@ def roster_available(availability, game_day, season=DEFAULT_SEASON):
             raise ValueError("unrecognized availability note: %r" % availability)
         return False
     text = match.group(1)
-    back = datetime.strptime(text if "," in text else "%s, %d" % (text, season), "%B %d, %Y").date()
+    back = datetime.strptime(text if "," in text else text + ", 2013", "%B %d, %Y").date()
     return game_day >= back
 
 
-def jacksonville_input(receipts, game_day, anchors, call_sheet, season=DEFAULT_SEASON, root=None):
+def jacksonville_input(receipts, game_day, anchors, call_sheet):
     undeclared = call_families.sheet_errors(call_sheet)
     if undeclared:
         # Kernel 2013.7 fails closed on a call no label rule covers.
         raise ValueError("call sheet cannot be labelled: " + "; ".join(undeclared))
-    paths = season_paths(season, root)
-    chart = json.loads(paths.require("depth_chart").read_text(encoding="utf-8"))
+    chart = json.loads(DEPTH_CHART.read_text(encoding="utf-8"))
     depth = {player: rank for players in chart["depth"].values() for rank, player in enumerate(players, 1)}
-    injured = injured_out(receipts, game_day, root, season)
+    injured = injured_out(receipts, game_day)
     inactives = set(chart["game_day_inactives"]["players"])
     roster, missing = [], []
-    for player, availability in controlled_active(season, root):
+    for player, availability in controlled_active():
         if player not in depth:
             missing.append(player)
             continue
         position = chart["positions"][player]
-        cleared = roster_available(availability, game_day, season)
+        cleared = roster_available(availability, game_day)
         roster.append({
             "player_id": player, "position": position,
             "available": cleared and player not in injured,
@@ -267,20 +233,19 @@ def jacksonville_input(receipts, game_day, anchors, call_sheet, season=DEFAULT_S
     }
 
 
-def build_package(week, receipts, call_sheet, anchors, season=DEFAULT_SEASON, root=None):
-    paths = season_paths(season, root)
+def build_package(week, receipts, call_sheet, anchors):
     games = []
-    birth_dates = player_bios.load(paths.root)
-    for game in schedule(week, season, root):
+    birth_dates = player_bios.load()
+    for game in schedule(week):
         game_day = date.fromisoformat(game["date"])
 
         def unit(team):
             if team == PROTAGONIST:
-                return jacksonville_input(receipts, game_day, anchors, call_sheet, season, root)
-            return background_input(team, week, receipts, game_day, anchors, season, root)
+                return jacksonville_input(receipts, game_day, anchors, call_sheet)
+            return background_input(team, week, receipts, game_day, anchors)
 
         games.append({
-            "event_id": event_id(game, season=season, root=root), "receipt": receipt_name(game), "week": week,
+            "event_id": event_id(game), "receipt": receipt_name(game), "week": week,
             "date": game["date"], "away": game["away"], "home": game["home"],
             "venue": "neutral" if game["site"] == "neutral" else "home",
             "game_type": game.get("game_type", "regular"),
@@ -293,9 +258,4 @@ def build_package(week, receipts, call_sheet, anchors, season=DEFAULT_SEASON, ro
         games[-1]["player_ages"] = player_bios.biographies(
             [p["player_id"] for side in ("away_input", "home_input")
              for p in games[-1][side]["roster"]], game_day, birth_dates)
-    package = {"week": week, "games": games}
-    if season != DEFAULT_SEASON:
-        # A 2013 package carries no season key (the closed season's format);
-        # every other package names its season, and close_week checks it.
-        package = {"season": season, **package}
-    return package
+    return {"week": week, "games": games}

@@ -1,4 +1,4 @@
-"""A season's postseason bracket (2013 by default), built from closed receipts only.
+"""The 2013 postseason bracket, built from closed receipts only.
 
 - Field: the final regular-season standings (`runtime.standings.compute`):
   per conference, the four division winners are seeds 1-4 and the two best
@@ -15,18 +15,11 @@ branch's games by seed matchup (the slots file). That rule is fixed before
 any postseason draw and never looks at a result. A round is built only when
 every game of the round before it has a closed receipt; postseason games
 never end tied, so every closed receipt has a winner.
-
-Receipts and slots are season-scoped through `runtime.season`: a season
-reads only its own `career/{season}/stats/*_receipts` and
-`library/data/{season}_postseason_slots.json`, and fails closed without
-them. The module constants below stay the closed 2013 season's paths;
-`runtime.draft_order` reads them for the 2014 draft order.
 """
 import json
 from pathlib import Path
 
 from .league import conference_of
-from .season import DEFAULT_SEASON, season_paths
 
 ROOT = Path(__file__).resolve().parents[1]
 SLOTS = ROOT / "library" / "data" / "2013_postseason_slots.json"
@@ -35,22 +28,11 @@ POSTSEASON_RECEIPTS = ROOT / "career" / "2013" / "stats" / "postseason_receipts"
 ROUNDS = {18: "wild_card", 19: "divisional", 20: "conference", 21: "super_bowl"}
 ROUND_TITLES = {"wild_card": "Wild Card", "divisional": "Divisional",
                 "conference": "Conference Championship", "super_bowl": "Super Bowl XLVIII"}
-_ROMAN = ((50, "L"), (40, "XL"), (10, "X"), (9, "IX"), (5, "V"), (4, "IV"), (1, "I"))
 CONFERENCES = ("AFC", "NFC")
 
 
 def is_postseason(week):
     return int(week) in ROUNDS
-
-
-def round_titles(season=DEFAULT_SEASON):
-    """Round titles for one season: the 2013 season's Super Bowl is XLVIII,
-    each later season's is numbered one higher."""
-    number, numeral = season - 1965, ""
-    for value, letters in _ROMAN:
-        while number >= value:
-            numeral, number = numeral + letters, number - value
-    return {**ROUND_TITLES, "super_bowl": "Super Bowl " + numeral}
 
 
 def _load(directory):
@@ -82,7 +64,7 @@ def _slot(slots, week, conference, matchup):
     for slot in rounds[week]["slots"]:
         if slot["conference"] == conference and slot["matchup"] == matchup:
             return slot
-    raise ValueError("no %s slot for week %d %s %s" % (slots.get("season", "season"), week, conference, matchup))
+    raise ValueError("no 2013 slot for week %d %s %s" % (week, conference, matchup))
 
 
 def _game(week, conference, matchup, away, home, seed_of, slot):
@@ -102,19 +84,14 @@ def _round_winners(week, post_receipts, expected):
     return [winner(r) for r in closed]
 
 
-def schedule(week, regular_receipts=None, post_receipts=None, slots=None, season=DEFAULT_SEASON, root=None):
-    """The games of one postseason week of `season`, in slot order."""
+def schedule(week, regular_receipts=None, post_receipts=None, slots=None):
+    """The games of one postseason week, in slot order."""
     week = int(week)
     if week not in ROUNDS:
         raise ValueError("week %d is not a postseason round" % week)
-    paths = season_paths(season, root)
-    if slots is None:
-        slots = json.loads(paths.require("postseason_slots").read_text(encoding="utf-8"))
-        if slots.get("season") != season:
-            raise ValueError("%s declares season %r, not %d"
-                             % (paths.postseason_slots.name, slots.get("season"), season))
-    regular_receipts = _load(paths.receipts_dir("regular")) if regular_receipts is None else regular_receipts
-    post_receipts = _load(paths.receipts_dir("postseason")) if post_receipts is None else post_receipts
+    regular_receipts = _load(REGULAR_RECEIPTS) if regular_receipts is None else regular_receipts
+    post_receipts = _load(POSTSEASON_RECEIPTS) if post_receipts is None else post_receipts
+    slots = json.loads(SLOTS.read_text(encoding="utf-8")) if slots is None else slots
     field = seeds(regular_receipts)
     seed_of = {team: (conf, n) for conf in CONFERENCES for n, team in enumerate(field[conf], 1)}
     number = {team: n for team, (_, n) in seed_of.items()}

@@ -226,44 +226,20 @@ def stale_blocks(path, directory=RECEIPTS):
     return stale
 
 
-def season_of_output(path):
-    """The season of a weekly output under career/<season>/, else None."""
-    parts = Path(path).resolve().parts
-    for index, part in enumerate(parts[:-1]):
-        if part == "career" and re.fullmatch(r"\d{4}", parts[index + 1]):
-            return int(parts[index + 1])
-    return None
-
-
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("event_id", nargs="?", help="Receipt event id to print")
     parser.add_argument("--team", help="Club listed first (defaults to the home club)")
     parser.add_argument("--write", metavar="OUTPUT_MD", help="Fill the marked box-score blocks in this file")
-    parser.add_argument("--season", type=int,
-                        help="Season whose receipts to read (default: the event ID's season, the "
-                             "career/<season>/ folder of OUTPUT_MD, else 2013)")
-    parser.add_argument("--root", type=Path, default=ROOT,
-                        help="Workspace root (default: this checkout); tests use an isolated one")
     args = parser.parse_args()
-    from runtime.season import DEFAULT_SEASON, season_of_event, season_paths
-    inferred = None
-    if args.event_id:
-        inferred = season_of_event(args.event_id)
-    elif args.write:
-        inferred = season_of_output(args.write)
-    if args.season is not None and inferred is not None and args.season != inferred:
-        parser.error("--season %d does not match %d" % (args.season, inferred))
-    season = args.season or inferred or DEFAULT_SEASON
-    directory = season_paths(season, args.root).receipts_dir("regular")
     if args.write:
         path = Path(args.write)
-        path.write_text(fill(path.read_text(encoding="utf-8"), directory), encoding="utf-8")
+        path.write_text(fill(path.read_text(encoding="utf-8")), encoding="utf-8")
         print("filled box scores in %s" % path)
         return
     if not args.event_id:
         parser.error("give an event id or --write OUTPUT_MD")
-    receipt = load_receipt(args.event_id, directory)
+    receipt = load_receipt(args.event_id)
     print(render(receipt, args.team or receipt["home"]))
 
 

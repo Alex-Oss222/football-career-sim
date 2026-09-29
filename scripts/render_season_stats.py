@@ -35,28 +35,6 @@ def load_receipts(directory):
     return receipts
 
 
-CLOSED_SEASON = 2013
-# Section wording keyed on whether the season is the closed 2013 season: the
-# 2013 text describes that season's kernel history (byte-for-byte as
-# committed); a later season's pages carry no 2013 kernel or week references.
-DRIVE_TEXT = {
-    True: ("## Drives and kicking — Week 4 onward (kernels 2013.6-2013.7)",
-           "Counted only from games closed under kernel 2013.6 or later; Weeks 1-3 receipts "
-           "(kernels 2013.4/2013.5) do not carry these counters and are not included. "
-           "G counts those games only. From kernel 2013.7 (after Week 8) a punt return is a "
-           "punt whose 2012 play-by-play record was returned (not a fair catch, "
-           "downed, out-of-bounds or touchback punt)."),
-    False: ("## Drives and kicking",
-            "Counted from every game whose receipt carries a drives summary. G counts those "
-            "games only. A punt return is a punt whose 2012 play-by-play record was returned "
-            "(not a fair catch, downed, out-of-bounds or touchback punt)."),
-}
-FIELD_POSITION_TEXT = {
-    True: ("## Field position — kernel 2013.7 games (after Week 8)", "Kernel 2013.7 games only: "),
-    False: ("## Field position", "Games whose receipts carry drive start spots: "),
-}
-
-
 def through_line(book):
     if not book.get("receipt_count"):
         return "**Through:** no regular-season game has closed."
@@ -345,8 +323,12 @@ def team_stats_markdown(year, book, receipts=()):
 
     drive_clubs = [(t, d) for t, d in clubs if d.get("drive_model_games")]
     if drive_clubs:
-        heading, note = DRIVE_TEXT[year == CLOSED_SEASON]
-        lines += [heading, "", note, "",
+        lines += ["## Drives and kicking — Week 4 onward (kernels 2013.6-2013.7)", "",
+                  "Counted only from games closed under kernel 2013.6 or later; Weeks 1-3 receipts "
+                  "(kernels 2013.4/2013.5) do not carry these counters and are not included. "
+                  "G counts those games only. From kernel 2013.7 (after Week 8) a punt return is a "
+                  "punt whose 2012 play-by-play record was returned (not a fair catch, "
+                  "downed, out-of-bounds or touchback punt).", "",
                   "| Team | G | DRIVES | FGA | XPA | XPM | SAF | DOWNS | CLOCK | KO |",
                   "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|"]
         for team_id, data in sorted(drive_clubs):
@@ -360,9 +342,8 @@ def team_stats_markdown(year, book, receipts=()):
 
     spots = field_position_rows(receipts)
     if spots:
-        heading, scope = FIELD_POSITION_TEXT[year == CLOSED_SEASON]
-        lines += [heading, "",
-                  scope + "average drive start for the club and for its "
+        lines += ["## Field position — kernel 2013.7 games (after Week 8)", "",
+                  "Kernel 2013.7 games only: average drive start for the club and for its "
                   "opponents, realized punt net (line of scrimmage to the receiving start, "
                   "returns and enforcement included) and fourth-down attempts and conversions "
                   "inside drives (from the real 2012 drive chains; a failed attempt ending a "
@@ -379,34 +360,21 @@ def team_stats_markdown(year, book, receipts=()):
     return "\n".join(lines)
 
 
-PLAY_CALL_NOTE = {
-    True: ("Descriptive labels on the generated snaps, from the snap ledger. From kernel "
-           "2013.7 (after Week 8) each label fits that snap's ball carrier or target: it is drawn "
-           "after the carrier or target is fixed, from the weekly sheet's calls whose "
-           "declared (or 2013 family-map) groups include him. A label is not Stone's call "
-           "selection or frequency, and per-label yardage is not evidence of a concept's "
-           "effectiveness. Generic, kneel, spike and scramble labels are separate rows; a "
-           "quarterback scramble is counted under the pass label it carries. Kernels "
-           "2013.4-2013.6 drew each snap's label at random from the sheet's calls of that "
-           "run or pass type, independent of the ball carrier (ledger Entry 41), so Weeks "
-           "1-8 rows show label assignment only. Y/P is yards per snap; 20+ counts gains "
-           "of 20 yards or more; NEG counts snaps that lost yardage."),
-    False: ("Descriptive labels on the generated snaps, from the snap ledger. Each label fits "
-            "that snap's ball carrier or target: it is drawn after the carrier or target is "
-            "fixed, from the weekly sheet's calls whose declared (or family-map) groups include "
-            "him. A label is not Stone's call selection or frequency, and per-label yardage is "
-            "not evidence of a concept's effectiveness. Generic, kneel, spike and scramble "
-            "labels are separate rows; a quarterback scramble is counted under the pass label "
-            "it carries. Y/P is yards per snap; 20+ counts gains of 20 yards or more; NEG "
-            "counts snaps that lost yardage."),
-}
-
-
 def play_calls_markdown(year, team_id, book):
     lines = header(
         "%s %s descriptive call labels" % (year, team_id),
         "%s-W%02d-PLAY-CALL-STATS" % (year, book["through_week"]), book, team_id,
-        PLAY_CALL_NOTE[year == CLOSED_SEASON],
+        "Descriptive labels on the generated snaps, from the snap ledger. From kernel "
+        "2013.7 (after Week 8) each label fits that snap's ball carrier or target: it is drawn "
+        "after the carrier or target is fixed, from the weekly sheet's calls whose "
+        "declared (or 2013 family-map) groups include him. A label is not Stone's call "
+        "selection or frequency, and per-label yardage is not evidence of a concept's "
+        "effectiveness. Generic, kneel, spike and scramble labels are separate rows; a "
+        "quarterback scramble is counted under the pass label it carries. Kernels "
+        "2013.4-2013.6 drew each snap's label at random from the sheet's calls of that "
+        "run or pass type, independent of the ball carrier (ledger Entry 41), so Weeks "
+        "1-8 rows show label assignment only. Y/P is yards per snap; 20+ counts gains "
+        "of 20 yards or more; NEG counts snaps that lost yardage.",
     ) + no_games(book)
     calls = book.get("play_calls", {}).get(team_id, {})
     if not calls:
@@ -520,22 +488,6 @@ def calibration_audit_markdown(year, receipts, book):
         "it never reruns, selects or edits a closed game. Receipts are split into "
         "cohorts by kernel version; grading starts at 16 team-games per cohort.", "",
     ]
-    if year == CLOSED_SEASON or legacy or kernel_2013_6:
-        lines += _cohorts_2013_lines(legacy, kernel_2013_6)
-    split = dict(current_cohorts(current))
-    if year == CLOSED_SEASON or "2013.7" in split:
-        lines += _current_cohort_lines("2013.7", split.pop("2013.7", []), "after Week 8; no game closed yet")
-    for version, members in sorted(split.items(), key=lambda item: tuple(int(v) for v in item[0].split("."))):
-        lines += _current_cohort_lines(version, members, "no game closed yet")
-    if year != CLOSED_SEASON and not (legacy or kernel_2013_6 or current):
-        lines += ["No regular-season receipt has closed; no cohort is audited.", ""]
-    return "\n".join(lines)
-
-
-def _cohorts_2013_lines(legacy, kernel_2013_6):
-    """The closed 2013 season's legacy and kernel 2013.6 cohorts (always shown
-    for 2013; for another season only if such receipts were ever present)."""
-    lines = []
     team_games, rows = audit(legacy)
     lines += [
         "## Legacy cohort: kernels 2013.4/2013.5",
@@ -565,7 +517,11 @@ def _cohorts_2013_lines(legacy, kernel_2013_6):
         "kernel 2013.7 spot and label classes are not measurable for this cohort "
         "(its receipts carry no start spots)." % checked, "",
     ] + _coherence_lines(checked, counts) + [""]
-    return lines
+    split = dict(current_cohorts(current))
+    lines += _current_cohort_lines("2013.7", split.pop("2013.7", []), "after Week 8; no game closed yet")
+    for version, members in sorted(split.items(), key=lambda item: tuple(int(v) for v in item[0].split("."))):
+        lines += _current_cohort_lines(version, members, "no game closed yet")
+    return "\n".join(lines)
 
 
 # ---- storage -----------------------------------------------------------------
@@ -617,14 +573,10 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("year", type=int)
     parser.add_argument("--team", required=True, help="Exact team_id used by game receipts")
-    parser.add_argument("--root", type=Path, default=ROOT,
-                        help="Workspace root (default: this checkout); tests use an isolated one")
     args = parser.parse_args()
 
-    from runtime.season import season_paths
-    paths = season_paths(args.year, args.root)
-    stats_dir = paths.stats
-    receipts = load_receipts(paths.receipts_dir("regular"))
+    stats_dir = ROOT / "career" / str(args.year) / "stats"
+    receipts = load_receipts(stats_dir / "game_receipts")
     views = render_views(args.year, args.team, receipts)
     for name, text in views.items():
         (stats_dir / name).write_text(text, encoding="utf-8")

@@ -24,14 +24,8 @@ from pathlib import Path
 from .league import TEAMS
 from .standings import Season, games_from_receipts
 from . import postseason
-from .season import season_paths
 
 ROOT = Path(__file__).resolve().parents[1]
-# The 2014 draft order comes from the closed 2013 season. It stays pinned to
-# the 2013 receipts whatever season the closure tooling is working on.
-SOURCE_SEASON = 2013
-REGULAR_RECEIPTS = season_paths(SOURCE_SEASON).receipts_dir("regular")
-POSTSEASON_RECEIPTS = season_paths(SOURCE_SEASON).receipts_dir("postseason")
 GROUPS = (("non-playoff", 1), ("wild_card", 21), ("divisional", 25),
           ("conference", 29), ("super_bowl_loser", 31), ("champion", 32))
 OWNERSHIP = ROOT / "career/2014/draft/pick_ownership.json"
@@ -126,8 +120,8 @@ def apply_coin_flip(rows, result):
 
 def order(regular_receipts=None, post_receipts=None, coin_flip=_RECORDED_DRAW):
     """[{slot, club, group, record, pct, sos, tie}] for slots 1-32."""
-    regular = _load(REGULAR_RECEIPTS) if regular_receipts is None else regular_receipts
-    post = _load(POSTSEASON_RECEIPTS) if post_receipts is None else post_receipts
+    regular = _load(postseason.REGULAR_RECEIPTS) if regular_receipts is None else regular_receipts
+    post = _load(postseason.POSTSEASON_RECEIPTS) if post_receipts is None else post_receipts
     if sum(1 for r in post if int(r["week"]) == 21) != 1:
         raise ValueError("the Super Bowl has not closed; the draft order is not final")
     season = Season(games_from_receipts(regular))
