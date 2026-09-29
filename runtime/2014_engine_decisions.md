@@ -8,7 +8,7 @@
 
 | Piece | Present behavior | Required before claiming completion |
 |---|---|---|
-| Unequal team strength | `scripts/build_week_inputs.py` still gives every club the same Average anchors. Profiles and this policy do not change those inputs | Dated individual evidence, coverage audit, lineup/shared-assignment composition, matchup integration, calibration and release |
+| Unequal team strength | 2014.4 candidate (not released): `runtime/strength.py` builds each club's dated honours record (`TeamInput.strength`, same rule for Jacksonville) and the kernel scores each drive's actual available lineup (runtime/README.md, kernel 2014.4 candidate). 2013 inputs keep the Average anchors | Dated individual evidence, coverage audit, lineup/shared-assignment composition, matchup integration, calibration and release |
 | Coaching contribution | Living [Stone](../career/coaching_profiles/alex_stone.md) and [staff](../career/coaching_profiles/staff_profiles.md) assessments now trace supported choices and open questions | Consume only scoped evidence and actual installed/selected work; model benefits and costs without an overall coach bonus |
 | Live injury substitution | `runtime/kernel.py` still draws injuries after game resolution; its pause is not a partial game and its validation still rejects multiple passers | Actual removal, eligible substitutions, immutable partial continuation, backup passing and reconciled participation/stat credits |
 

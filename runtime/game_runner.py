@@ -19,6 +19,8 @@ ENTROPY_DOMAIN = b"football-career-sim/event-entropy/v1\0"
 
 def _team_packet(team):
     data = asdict(team)
+    if data.get("strength") is None:
+        data.pop("strength", None)  # legacy packets unchanged (kernel 2014.4 E1)
     # Availability and rotation are football inputs; protagonist labels are not.
     data["roster"] = serialize_roster(normalize_players(team))
     data["offensive_call_sheet"] = canonical_call_sheet(team)

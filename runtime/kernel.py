@@ -10,6 +10,7 @@ from .rules import RULES, ot_status
 from . import chains as chain_walk
 from . import drive_model
 from . import field_position
+from . import strength as unit_strength
 from . import usage
 from .player_evidence import empty_player_stats, normalize_players, observation
 from .play_detail import (
@@ -33,6 +34,19 @@ class TeamInput:
     # Public, week-specific offensive calls. Entries may be strings or dicts
     # with name/family/type/personnel/formation/motion/protection/tags.
     offensive_call_sheet: tuple = ()
+    # Kernel 2014.4 (E1, runtime/strength.py): the club's dated honours
+    # evidence per player id, built by runtime.strength.team_strength. None
+    # keeps the legacy anchor path; a record with no honoured player is still
+    # scored (a unit with none sits below the study's centre). Omitted from
+    # the outcome packet when None, so legacy packets are unchanged.
+    strength: dict | None = None
+
+
+def _outcome_team(team):
+    data = asdict(team)
+    if data.get("strength") is None:
+        data.pop("strength", None)
+    return data
 
 
 def _rng(seed, packet):
@@ -168,17 +182,16 @@ def _start_kind(kick_record):
     return "kickoff_touchback" if kick_record["touchback"] else "kickoff"
 
 
-def _edge(team, defense, home, venue="home"):
-    # Kernel 2013.11: the designated home team gets the home term only at a
-    # home venue; at a neutral site neither team does.
-    return max(
-        -0.06,
-        min(
-            0.06,
-            (team.offense_anchor - defense.defense_anchor) * 0.025
-            + (0.008 if team is home and venue != "neutral" else 0),
-        ),
-    )
+def _edge(team, defense, home, venue="home", off_view=(), def_view=(), passer=None):
+    """The drive's matchup edge (runtime/strength.drive_edge).
+
+    Kernel 2013.11: the designated home team gets the home term only at a
+    home venue; at a neutral site neither team does. Kernel 2014.4 (E1): the
+    home term is 0.023, the clamp +/-0.12, and a club with a strength record
+    is scored from the drive's actual lineup; without one it keeps its
+    anchor."""
+    return unit_strength.drive_edge(team, defense, off_view, def_view, passer,
+                                    team is home and venue != "neutral")[0]
 
 
 def _blank_team_stats(players):
@@ -337,8 +350,8 @@ def _resolve_game(
     if not home_players or not away_players:
         raise ValueError("active participants required")
 
-    home_outcome = asdict(home)
-    away_outcome = asdict(away)
+    home_outcome = _outcome_team(home)
+    away_outcome = _outcome_team(away)
     home_outcome["offensive_call_sheet"] = canonical_call_sheet(home)
     away_outcome["offensive_call_sheet"] = canonical_call_sheet(away)
     packet = {
@@ -652,8 +665,15 @@ def _resolve_game(
         # half's last fifteen minutes (runtime/README.md, kernel 2014.3).
         draw_half = half if quarter is None else (2 if quarter == 4 else 1)
         defense = teams[other(offense)]
-        edge = _edge(team, defense, home, venue)
         drive_no = len(possessions) + 1
+        # Kernel 2014.4: this drive's lineups from the live rosters (after
+        # every removal so far; no draw is used), and E1: the matchup edge
+        # from those lineups' composites (runtime/strength.py).
+        off_view, off_notes = lineup(offense, "offense")
+        def_view, def_notes = lineup(defense.team_id, "defense")
+        passer = usage.game_passer(off_view) or off_view[0]
+        edge, strength_receipt = unit_strength.drive_edge(
+            team, defense, off_view, def_view, passer, team is home and venue != "neutral")
         score_diff = stats[offense]["points"] - stats[other(offense)]["points"]
 
         # 1-3. Game-state cell, category and a real 2012 drive feasible from
@@ -861,10 +881,6 @@ def _resolve_game(
                 "action": {"punt": "punt", "field_goal_attempt": "field_goal", "downs": "go"}[category],
             }
 
-        # Kernel 2014.4: this drive's lineups from the live rosters.
-        off_view, off_notes = lineup(offense, "offense")
-        def_view, def_notes = lineup(defense.team_id, "defense")
-        passer = usage.game_passer(off_view) or off_view[0]
         drive_ledger, drive_calls = apply_drive_detail(
             seed=seed,
             event_id=event_id,
@@ -963,6 +979,10 @@ def _resolve_game(
         }
         if off_notes or def_notes:
             record["emergency"] = off_notes + def_notes
+        if team.strength or defense.strength:
+            # Kernel 2014.4 E1 (append-only): the drive's composites, their
+            # contributors and the edge they produced.
+            record["strength"] = strength_receipt
         if half == "OT":
             record["period"] = _period_clock(start_clock, overtime=ot_label)[0]
         if quarter:

@@ -1,6 +1,6 @@
 # 2014 unit-strength calibration from public honours (E1 first pass)
 
-**Research date:** September 29, 2026. **Kernel target:** 2014.4, defect register item 1 (every club has the same strength). **Status:** research and data only. Nothing in `runtime/` reads this yet; the kernel is still 2014.3. **Policy:** `runtime/2014_engine_decisions.md` E1 and the user's first-pass choice "Honours + role": pre-2013 public expert honours may move a player above Average; 2012 depth/role marks experience and job only; everyone else stays Average and low-confidence; Jacksonville is held to the identical rule; nothing is inferred from the branch's 2013 records; the effect size comes from real pre-divergence aggregates, never from a Jacksonville record.
+**Research date:** September 29, 2026. **Kernel target:** 2014.4, defect register item 1 (every club has the same strength). **Status:** research and data. The 2014.4 candidate's `runtime/strength.py` reads it (see Section 8); the installed kernel is still 2014.3 until release. **Policy:** `runtime/2014_engine_decisions.md` E1 and the user's first-pass choice "Honours + role": pre-2013 public expert honours may move a player above Average; 2012 depth/role marks experience and job only; everyone else stays Average and low-confidence; Jacksonville is held to the identical rule; nothing is inferred from the branch's 2013 records; the effect size comes from real pre-divergence aggregates, never from a Jacksonville record.
 
 Machine record: [`data/2014_strength_calibration.json`](data/2014_strength_calibration.json), built by `scripts/research/build_2014_strength_calibration.py` (sources and sha256 in the JSON). Evidence: [2010-2012 honours evidence](2010_2012_honours_evidence.md).
 
@@ -129,3 +129,17 @@ Tier marks: E = Elite, P = Plus, ½ = single-pass evidence (half weight). "Speci
 - The fit is a linear probability model on 32 clubs; confidence intervals are wide for defense.
 - The Week 1 depth chart is a pre-game public document and can differ from who actually played; it is used for role only.
 - The composite ignores depth, availability during the season, and help/opportunity costs, all of which E1 requires the kernel to model.
+
+## 8. Decisions taken (September 29, 2026) and candidate implementation
+
+Recorded from the user's decisions on Section 6; implemented in `runtime/strength.py` (kernel 2014.4 candidate; runtime/README.md).
+
+1. **Centring:** centred on the 2012 study composite means (offense 2.703125, defense 2.203125). A unit with no honoured starter sits below the centre.
+2. **Clamp:** widened from +/-0.06 to +/-0.12; no log-odds tilt.
+3. **Per-side scale:** offense 0.00895127316177478, defense 0.006409703179081172 per composite unit (the study's shrunk slopes). edge = b_off x (off_comp - c_off) - b_def x (def_comp - c_def) + home, where def_comp is the defending unit's composite.
+4. **Dispersion shortfall:** accepted; nothing is inflated.
+5. **Single-pass evidence:** half weight, as preregistered.
+7. **Roles:** composites come from each drive's actual available lineup (the live roster after injuries and removals), not the roster-level preview.
+8. **Home term:** 0.023 per drive for the home offense at a home venue, none at a neutral site (replaces 0.008).
+
+Item 6 (research-pass source keys and announcement dates) remains open research work.

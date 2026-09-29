@@ -11,14 +11,16 @@
 - Jacksonville: the controlled active roster, `career/2013/depth_chart.json`
   (order, roles, inactives) and the week's structured call sheet.
 
-Unit anchors are passed in explicitly (Document 7 section 2.2).
+Unit anchors are passed in explicitly (Document 7 section 2.2). From the
+2014 season each TeamInput also carries its dated honours strength record
+(kernel 2014.4 E1, runtime/strength.py), built by one rule for every club.
 """
 import json
 import re
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
-from . import call_families, depth_library, player_bios
+from . import call_families, depth_library, player_bios, strength
 from .usage import group, lineup_errors
 from .seasons import SeasonPaths, require_receipt_season
 
@@ -240,14 +242,24 @@ def jacksonville_input(receipts, game_day, anchors, call_sheet, season=2013):
 
 def build_package(week, receipts, call_sheet, anchors, season=2013):
     games = []
+    coverage = {}
     birth_dates = player_bios.load()
     for game in schedule(week, season):
         game_day = date.fromisoformat(game["date"])
 
         def unit(team):
             if team == PROTAGONIST:
-                return jacksonville_input(receipts, game_day, anchors, call_sheet, season)
-            return background_input(team, week, receipts, game_day, anchors, season)
+                data = jacksonville_input(receipts, game_day, anchors, call_sheet, season)
+            else:
+                data = background_input(team, week, receipts, game_day, anchors, season)
+            if season != 2013:
+                # Kernel 2014.4 E1: every club, Jacksonville included, gets
+                # its dated honours record by the same rule, as of the game
+                # day (runtime/strength.py). The closed 2013 season is never
+                # rebuilt with it.
+                data["strength"], coverage[team] = strength.team_strength(
+                    team, data["roster"], season, game_day)
+            return data
 
         games.append({
             "event_id": event_id(game, season=season), "receipt": receipt_name(game), "week": week,
@@ -263,4 +275,10 @@ def build_package(week, receipts, call_sheet, anchors, season=2013):
         games[-1]["player_ages"] = player_bios.biographies(
             [p["player_id"] for side in ("away_input", "home_input")
              for p in games[-1][side]["roster"]], game_day, birth_dates)
-    return {"season": season, "week": week, "games": games}
+    package = {"season": season, "week": week, "games": games}
+    if coverage:
+        # Public preparation metadata outside TeamInput: E1 evidence coverage
+        # and every Average fallback, per club.
+        package["strength_coverage"] = {
+            team: {k: v for k, v in c.items()} for team, c in sorted(coverage.items())}
+    return package
