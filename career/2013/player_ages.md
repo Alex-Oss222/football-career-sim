@@ -861,14 +861,12 @@ Jacksonville includes every controlled player, including the practice squad. Oth
 | Josh Scobee | K | 1982-06-23 | 31 | Active 53 |
 | Bryan Anger | P | 1988-10-06 | 25 | Active 53 |
 | Jeremy Cain | LS | 1980-03-24 | 33 | Active 53 |
-| Tyler Bray | QB | 1991-12-27 | 22 | Practice squad |
-| Richard Murphy | RB | 1986-09-18 | 27 | Practice squad |
-| Will Ta'ufo'ou | FB | 1986-06-19 | 27 | Practice squad |
-| Jerrell Jackson | WR | 1990-02-06 | 23 | Practice squad |
-| Jerome Long | DT | 1990-04-09 | 23 | Practice squad |
-| D'Anthony Smith | DT | 1988-06-09 | 25 | Practice squad |
-| Brandon King | DB | 1987-01-28 | 27 | Practice squad |
-| Antwon Blake | S | 1990-08-09 | 23 | Practice squad |
+| Tyler Bray | QB | 1991-12-27 | 22 | Reserve/Future |
+| Richard Murphy | RB | 1986-09-18 | 27 | Reserve/Future |
+| Jerrell Jackson | WR | 1990-02-06 | 23 | Reserve/Future |
+| Jerome Long | DT | 1990-04-09 | 23 | Reserve/Future |
+| D'Anthony Smith | DT | 1988-06-09 | 25 | Reserve/Future |
+| Antwon Blake | S | 1990-08-09 | 23 | Reserve/Future |
 
 ## Kansas City Chiefs
 

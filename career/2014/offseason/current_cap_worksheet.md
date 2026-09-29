@@ -12,11 +12,11 @@ Use the [contract register](contract_status_register.md), actual [2013 agreement
 | Own free agents | Seven pending active UFAs, three RFAs, three ERFAs; verify individual uncertainty and actual tag/tender/contract outcome | A recommendation is not an obligation |
 | Four unresolved contracts | John Parker Wilson, Jonathan Grimes, Montell Owens and Jeremy Cain: establish term and accrued service from evidence | Resolve before the affected contract/control decision |
 | Other uncertain terms | Nwaneri's final year and bonus due date; Blackmon's remaining guarantees/forfeiture; single-source Brown/Pasztor/Reisner expiry evidence | Block only the affected transaction until verified |
-| Eight former-season practice-squad names | Establish the exact expiry/right treatment and record actual reserve/future offers and agreements | Baseline listing does not certify a 2014 contract or eligibility |
+| Reserve/future contracts (Entry 85) | Six signed at the 2014 minimum for credited seasons, no guarantee, no bonus, effective March 11: Bray $420,000; Murphy, Jerrell Jackson, Long, D'Anthony Smith and Blake unresolved until credited seasons are established. King and Ta'ufo'ou left | Count from March 11 under the offseason Top-51 rule; an unresolved minimum is not zero |
 | Trades/releases | Apply the actual instrument, effective date, retained proration, guarantees and verified bonus clauses | No memo savings booked before a completed move |
 | Top-51 | Compute the applicable ranking and displacement, including other counting obligations, at the league-year transition | Do not sum all offseason salaries as full charges |
 | Rookies | Use actual final assets/selections and sourced contract terms when known | No assumed trade proceeds, compensatory counts or signed rookies |
-| Staff spending | Existing assistant salary is a commitment, not a budget ceiling; April's offer limits are not an executed contract | Staff cash remains separate from player cap |
+| Staff spending | Scheduled 2014 assistant salary $7,700,000 after Westhoff's hire (Entry 84); a commitment, not a budget ceiling | Staff cash remains separate from player cap |
 
 For each item, record source, effective/public date, evidence strength, missing component and the event that closes it. Reconcile known obligations even while an unrelated field remains unknown. An unknown amount never becomes zero. No signing, release, trade, tender, futures contract or cap adjustment is executed by this worksheet.
 

@@ -2450,3 +2450,27 @@ No other club asked for a Jacksonville assistant, and none left. Nothing was pen
 **Atomic closure.** `hires.md` (dated stages and the completed appointment), the staff timeline and README, the staff register (status, delegation, contract row, changes after execution, section 6), Document 3 (section 4, row 14, section 6.1, document control), Document 4 (register 40 replaces 39), Document 5 (state 59 at Entry 83, then 60 here, replacing 58), the 2014 calendar, README, readiness, operating baseline and the current-fact lines of the training plans now agree. Planning records keep their ex-ante content. No player, pick, cap or game record changes. The clock is still February 2, 2014; a later entry advances it to February 17. The private snapshot is not advanced from this branch.
 
 **Commit closed - Canonical update - February 2, 2014 - Special teams coordinator search resolved (Westhoff hired February 11) - canonical through February 2, 2014**
+
+
+## Entry 85: 2014 reserve/future contracts signed (six of eight)
+
+**Effective canonical state:** February 2, 2014 (no clock advance); events dated February 3 to February 5, 2014.
+**Recorded:** September 29, 2026
+**Checkpoint:** `Canonical update - February 2, 2014 - 2014 reserve/future contracts signed (six of eight)`
+**Preceding global package checkpoint:** `Canonical update - February 2, 2014 - Special teams coordinator search resolved (Westhoff hired February 11)`
+
+**Authority.** Stone's February 2 memo, section 1 (`career/2014/offseason/stone_to_caldwell_2014_offseason_decisions.md`), recommends reserve/future contracts for Tyler Bray, Richard Murphy, Antwon Blake, Jerome Long, D'Anthony Smith and Jerrell Jackson at the 2014 minimum for each player's credited seasons, no guarantee and no signing bonus, and letting Brandon King and Will Ta'ufo'ou go. On September 29, 2026 the user asked for the reserve/future contracts to be run before the clock advances to February 17. Caldwell executes: six minimum camp contracts are within the memo and cost nothing that counts before the league year. His agreement is a stated reading, not a draw.
+
+**Method, fixed before the draw.** `career/2014/offseason/futures_method.json` and `scripts/futures_2014.py` were committed in 8f85462 before the draw. All six offers went out on February 3, 2014. Under league rails method section 3, a player Jacksonville offers follows his real next move only if it is a dated move of the same kind in the same window. One private packet (event `2014-futures-contracts-v1`, packet `9bc36abe`, result reference `c9e39398`) made the one draw the method needed.
+
+**Uncontested signings, February 3.** Bray, Murphy, Blake, Long and Jerrell Jackson had no dated competing move and signed on February 3. Jackson's real 2014 Kansas City contract is undated, so it cannot enter the branch (rails method section 2).
+
+**Market draw, D'Anthony Smith.** His real Seattle reserve/future contract is dated February 5, 2014. Both contracts are taken as the minimum for the same credited seasons with no guarantee (the Seattle terms are an inference), so the method's ratio is m = 1.0 and Jacksonville's chance is 0.50. Jacksonville won the draw, and Smith signed on February 5. The real Seattle move does not occur in the branch.
+
+**Not offered.** King and Ta'ufo'ou left as free agents when their practice-squad contracts ended. No later destination is imported for either.
+
+**Terms.** Each of the six contracts is the 2014 minimum for the player's credited seasons, with no guarantee and no bonus. Each takes effect at the 2014 league year (March 11, 4:00 p.m. ET) and counts toward the 90-player limit from then. These are camp places, not practice-squad places. Bray has 0 credited seasons, so his base is $420,000 (Confirmed). For the other five, credited seasons are not established in the branch record, so each salary is recorded as "minimum for credited seasons, figure unresolved".
+
+**Atomic closure.** The following now agree: the roster (practice squad 0, six reserve/future contracts), the contract status register, the 2014 preparation worksheet, `free_agency/signings.md`, `league_rails/fa_draws.md`, Seattle's rails page, one-line pointers in the futures page and living profiles, the film queue, the calendar, the readiness and operating baseline pages, and Documents 4 (register 41) and 5 (state 61). The 53 controlled players do not change, and no cap figure is certified. The clock is still February 2, 2014.
+
+**Commit closed - Canonical update - February 2, 2014 - 2014 reserve/future contracts signed (six of eight) - canonical through February 2, 2014**

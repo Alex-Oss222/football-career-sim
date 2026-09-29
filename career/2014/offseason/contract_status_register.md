@@ -2,7 +2,7 @@
 
 **Branch date:** February 2, 2014 (2013 season complete; Jacksonville eliminated in the AFC Divisional round).
 **Applies at:** the opening of the 2014 league year, Tuesday, March 11, 2014, 4:00 PM ET (`library/2014_league_calendar_and_financial_rules.md`, C10).
-**Scope:** every player Jacksonville controls in `career/2013/roster.md` at the branch date: 52 active players, Brad Meester on Reserve/Retired (Entry 79), and eight legacy practice-squad names whose 2014 rights require reconciliation.
+**Scope:** every player Jacksonville controls in `career/2013/roster.md` at the branch date: 52 active players, Brad Meester on Reserve/Retired (Entry 79), and the eight 2013 practice-squad players, six of whom signed reserve/future contracts for 2014 (Entry 85).
 **Nature:** research and status register only. It executes no signing, tender, release, extension, option or trade and changes no current state. Caldwell retains contract authority under Document 3.
 
 **Administrative reconciliation, Entry 82:** Meester's retired status is separated from the seven pending active UFAs. The original contract term is preserved. The legacy practice-squad list is a historical baseline, not proof of continuing exclusive rights or 2014 eligibility; verify expiry and actual futures outcomes before contact/participation that requires control. No contract event occurs here.
@@ -23,14 +23,15 @@ WebFetch was blocked by the session's network egress proxy for every outlet trie
 
 ## 2. Summary
 
-| Status at the March 11 handoff | Controlled active/reserve baseline | Legacy practice squad | Total |
+| Status at the March 11 handoff | Controlled active/reserve baseline | 2013 practice squad | Total |
 |---|---:|---:|---:|
 | Under contract for 2014 | 35 | 0 | 35 |
 | Pending unrestricted free agent | 7 | 0 | 7 |
 | Retired; contract expiration to reconcile | 1 | 0 | 1 |
 | Restricted free agent | 3 | 0 | 3 |
 | Exclusive-rights free agent | 3 | 0 | 3 |
-| Practice-squad contract expiring | 0 | 8 | 8 |
+| Reserve/future contract for 2014 (signed February 3 and 5, effective March 11) | 0 | 6 | 6 |
+| Practice-squad contract ended; not offered, left as free agent | 0 | 2 | 2 |
 | Unresolved | 4 | 0 | 4 |
 | **Total** | **53** | **8** | **61** |
 
@@ -114,22 +115,24 @@ WebFetch was blocked by the session's network egress proxy for every outlet trie
 | Montell Owens | FB | Contract extension signed October 4, 2011. Search-result text disagrees on its structure (a three-year $9.275M extension versus a figure similar to an earlier three-year $6.675M deal), so the final league year is not established | **Unresolved**. If it expires after 2013: UFA | 4+ (Jacksonville 2006-2012) | Accrues in branch (on 53 for 16 games) | [ProFootballTalk, October 2011](https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jaguars-sign-montell-owens-to-extension); [Spotrac](https://www.spotrac.com/nfl/chicago-bears/montell-owens-4176/). Unverified term |
 | Jeremy Cain | LS | New Jacksonville contract reported February 2011, terms undisclosed at the time. Spotrac search text shows a three-year $3.0M Jacksonville deal, not dated in the result | **Unresolved**. If the three-year deal dates from 2011 it expires after 2013: UFA | 4+ (entered 2004; Jacksonville long snapper through 2012) | Accrues in branch (on 53 for 16 games) | [NFL.com, February 2011](https://www.nfl.com/news/jaguars-sign-long-snapper-cain-to-new-contract-09000d5d81e77777); [Spotrac](https://www.spotrac.com/nfl/chicago-bears/jeremy-cain-6060/). Unverified term |
 
-## 4. Legacy practice-squad baseline (8); current rights unresolved
+## 4. 2013 practice squad (8): six reserve/future contracts, two not offered
 
 All eight were waived at the August 31 cutdown, cleared waivers and signed branch practice-squad contracts on September 1, 2013 (`preseason/final_roster_cuts.md`; ledger Entry 27). A waiver ends the player's earlier contract, so Tyler Bray's May 2 rookie contract and the December 30, 2012 reserve/future contracts of Will Ta'ufo'ou and Brandon King no longer apply. Practice-squad seasons do not accrue.
 
-A practice-squad contract runs only through the club's season. No branch reserve/future contract has been recorded for any of the eight at February 2, 2014. Clubs may sign reserve/future contracts once their own season is over (`library/2014_league_calendar_and_financial_rules.md`, C1; the exact CBA wording of the practice-squad expiry moment is Unverified there and here). Unless Jacksonville signs one of these players to a reserve/future contract, he is not under Jacksonville contract on March 11, 2014 and is free to sign with any club; he is not a Jacksonville RFA or ERFA.
+A practice-squad contract runs only through the club's season. Under Stone's February 2 memo (section 1), Caldwell offered six of the eight reserve/future contracts on February 3, 2014 and all six signed (ledger Entry 85; method `futures_method.json`, result `futures_results.json`). Terms: the 2014 minimum for the player's credited seasons, no guarantee, no signing bonus, effective at the March 11, 2014 league year and counting toward the 90-player limit from then. They are camp places, not practice-squad places. Brandon King and Will Ta'ufo'ou were not offered and left as free agents. Clubs may sign reserve/future contracts once their own season is over (`library/2014_league_calendar_and_financial_rules.md`, C1; the exact CBA wording of the practice-squad expiry moment is Unverified there and here). Unless Jacksonville signs one of these players to a reserve/future contract, he is not under Jacksonville contract on March 11, 2014 and is free to sign with any club; he is not a Jacksonville RFA or ERFA.
 
 | Player | Pos. | Contract | March 11, 2014 status | Source and label |
 |---|---|---|---|---|
-| Tyler Bray | QB | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | `preseason/final_roster_cuts.md`. Confirmed |
-| Richard Murphy | RB | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | Same. Confirmed |
-| Will Ta'ufo'ou | FB | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | Same. Confirmed |
-| Jerrell Jackson | WR | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | Same. Confirmed |
-| Jerome Long | DT | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | Same. Confirmed |
-| D'Anthony Smith | DT | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | Same. Confirmed |
-| Brandon King | DB | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | Same. Confirmed |
-| Antwon Blake | S | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | Same. Confirmed |
+| Tyler Bray | QB | 2013 practice-squad contract ended; reserve/future contract signed February 3, 2014 | Under reserve/future contract from March 11; 2014 base **$420,000** (0 credited seasons; minimum Confirmed) | Practice squad: `preseason/final_roster_cuts.md`; futures: ledger Entry 85. Confirmed |
+| Richard Murphy | RB | 2013 practice-squad contract ended; reserve/future contract signed February 3, 2014 | Under reserve/future contract from March 11; minimum for credited seasons, figure unresolved | Ledger Entry 85. Credited seasons not established in the branch record |
+| Will Ta'ufo'ou | FB | 2013 practice-squad contract ended; not offered | Free agent; not under Jacksonville contract | Ledger Entry 85. Confirmed |
+| Jerrell Jackson | WR | 2013 practice-squad contract ended; reserve/future contract signed February 3, 2014 | Under reserve/future contract from March 11; minimum for credited seasons, figure unresolved | Ledger Entry 85. His real 2014 Kansas City contract is undated and cannot enter the branch (rails method section 2) |
+| Jerome Long | DT | 2013 practice-squad contract ended; reserve/future contract signed February 3, 2014 | Under reserve/future contract from March 11; minimum for credited seasons, figure unresolved | Ledger Entry 85. Credited seasons not established |
+| D'Anthony Smith | DT | 2013 practice-squad contract ended; reserve/future contract signed February 5, 2014 after a market draw against his real Seattle reserve/future contract of that date | Under reserve/future contract from March 11; minimum for credited seasons, figure unresolved | Ledger Entry 85; [market draw record](league_rails/fa_draws.md). Credited seasons not established |
+| Brandon King | DB | 2013 practice-squad contract ended; not offered | Free agent; not under Jacksonville contract | Ledger Entry 85. Confirmed |
+| Antwon Blake | S | 2013 practice-squad contract ended; reserve/future contract signed February 3, 2014 | Under reserve/future contract from March 11; minimum for credited seasons, figure unresolved | Ledger Entry 85. Credited seasons not established |
+
+2014 minimum base salary by credited seasons (`caldwell_pre_tag_verifications.md` section 3): 0, $420,000 (Confirmed); 1, $495,000 (Inference); 2, $570,000 (Confirmed by derivation and one direct source); 3, $645,000 (Inference); 4 to 6, $730,000 (Inference); 7 to 9, $855,000 (Confirmed by derivation and one direct source). A player's figure is set once his credited seasons are established.
 
 ## 5. Two-pass verification record
 

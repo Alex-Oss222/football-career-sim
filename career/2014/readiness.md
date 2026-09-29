@@ -6,7 +6,7 @@
 |---|---|---|
 | PR #135 integration | Living coaching profiles and their phase links coexist with the newer baseline, eight-pick board and phase outputs | Profiles are evidence records, not engine implementation |
 | Current handoff | Entry 82 reconciles plan, staff, roster-count and next-checkpoint summaries | First actual 2014 event establishes year-local current owners together |
-| Contracts/cap | [2014 worksheet](offseason/current_cap_worksheet.md), corrected retired-player classification | Verify unresolved clauses, futures rights and actual 2014 obligations before affected execution |
+| Contracts/cap | [2014 worksheet](offseason/current_cap_worksheet.md), corrected retired-player classification | Verify unresolved clauses, reserve/future players' credited seasons and actual 2014 obligations before affected execution |
 | Staff | Mike Westhoff special teams coordinator from February 11 (Entry 84); February coaching exposure resolved with no departure (Entry 83) | Emergency succession for a caller remains unassigned |
 | Training | Five linked NOT_STARTED outputs, player profiles, film queue, coach profiles | Pending role/Boot Flood/punt choices and lawful pre-program contact; no invented delivery receipts |
 | Draft | 224 ordinary assets and eight Jacksonville targets | March 24 branch compensatory awards, final numbering, specific conditional holds; Linsley/Gaines dated reports; package A asset interpretation |

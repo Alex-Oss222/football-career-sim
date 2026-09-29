@@ -11,7 +11,7 @@
 ## Current checkpoint
 
 - **Master date:** February 2, 2014, after Super Bowl XLVIII (2013 season complete; latest closed Entry 84, Mike Westhoff hired as special teams coordinator effective February 11; Entry 83, February coaching exposure resolved with no departures; Entry 82, operating handoff; Entry 81, draft coin flip and league ownership reconciled; Entry 80, Cousins compensation corrected; Entry 79, Meester retired and Allen retirement scheduled; league rails Entry 78; staff reconciliation Entry 77; exit interviews Entry 76).
-- **Jacksonville:** 2013 finished 10-6, 1-1 postseason. 52 active, Brad Meester on Reserve/Retired and 8 on the practice squad. `career/2013/roster.md` remains the controlled-roster owner.
+- **Jacksonville:** 2013 finished 10-6, 1-1 postseason. 52 active and Brad Meester on Reserve/Retired; practice squad 0, with six reserve/future contracts for 2014 effective March 11 (Entry 85). `career/2013/roster.md` remains the controlled-roster owner.
 - **Planning prepared:** the five phase plans retain the 2013 methods. The [training and individual-film workflow](offseason/README.md), including the living assessment of Cousins and every player, is authorized; other marked choices remain pending. The special-teams search closed with Mike Westhoff's February 11 appointment (Entry 84), resolved retroactively without advancing the clock. No phase has run.
 - **Next league events:** franchise and transition window February 17; Combine February 19-25; the 2014 league year opens March 11, 4:00 p.m. ET.
 
@@ -35,7 +35,7 @@
 | Date (2014) | Event / required work | Status / owner |
 |---|---|---|
 | Jan. 4 / Jan. 11 | Jacksonville Wild Card / Divisional games; records stand | Complete; 2013 postseason records |
-| From Jan. 12 | Reserve/future eligibility after Jacksonville's season; contracts require an actual Caldwell decision | Open; no signing implied |
+| From Jan. 12; Feb. 3 and 5 | Reserve/future contracts: Caldwell offered six on February 3; Bray, Murphy, Blake, Long and Jerrell Jackson signed February 3, D'Anthony Smith February 5; King and Ta'ufo'ou not offered | Complete; Entry 85; [signings](offseason/free_agency/signings.md); contracts effective March 11 |
 | Jan. 13–14 / Jan. 15 | Player exit interviews / season review | Complete; Entries 76 / 74 |
 | Jan. 15 / Jan. 25 / Jan. 26 | Draft special-eligibility deadline / Senior Bowl / 2013-season Pro Bowl | Complete; draft gates and 2013 records |
 | Jan. 31 commitments, reviewed from Feb. 2 | Reconcile individual film promises: prepared, actually delivered, acknowledged and reviewed are separate facts | Open; [61-player queue](offseason/film/player_queue.md); historical receipts unverified |

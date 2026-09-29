@@ -1,11 +1,11 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2014-FEB02-SETUP-STATE-60`
-**Supersedes:** `JAX-2014-FEB02-SETUP-STATE-59` (Entry 83, closed in the same commit), which superseded `JAX-2014-FEB02-SETUP-STATE-58`
+**Version:** `JAX-2014-FEB02-SETUP-STATE-61`
+**Supersedes:** `JAX-2014-FEB02-SETUP-STATE-60`
 **Snapshot effective:** February 2, 2014, after Super Bowl XLVIII (Buffalo 31, Minnesota 20); the 2013 season is complete and archived.
-**Last reconciled:** September 29, 2026; season-ledger Entry 84.
-**Global package checkpoint:** `Canonical update - February 2, 2014 - Special teams coordinator search resolved (Westhoff hired February 11)`
+**Last reconciled:** September 29, 2026; season-ledger Entry 85.
+**Global package checkpoint:** `Canonical update - February 2, 2014 - 2014 reserve/future contracts signed (six of eight)`
 
 ## Effective source-version manifest
 
@@ -14,8 +14,8 @@
 | Document 1 | `358ccf4feac40830055bae5e4cbd84151536ab9e` | Active foundation source |
 | Document 2 | `f25e462b4e0478e6b641957e39560d7dcb3502e0` | Active foundation source |
 | Document 3 | `9e526e59013155b8ba29ca99b6bb51618c4135d9` | Active foundation source |
-| Document 4 | `JAX-2014-FEB02-SETUP-REGISTER-40`; closed by Entry 84 | Controlled 53 (52 active, Meester Reserve/Retired), eight practice-squad players; draft coin flip and league ownership reconciled; Mike Westhoff special teams coordinator from February 11, 2014 |
-| Document 6 | 2013 ledger through Entry 84 | 2013 season complete; phase archives in Entry 67; 2014 setup in Entry 68; kernels 2014.1 and 2014.2 in Entries 69-70; season honours in Entry 71; kernel 2014.3 and the engine assessment in Entry 72; Super Bowl MVP and Pro Bowl in Entry 73; season review with Khan and Caldwell in Entry 74; January 2014 coaching carousel in Entry 75; exit interviews in Entry 76; staff authority and planning reconciliation in Entry 77; historical league rails adopted in Entry 78; Meester retired and Allen retirement scheduled in Entry 79; Cousins trade and draft capital reconciled in Entry 80; coin flip and league pick ownership reconciled in Entry 81; operating handoff and readiness reconciliation in Entry 82; February 2014 coaching exposure (no departures) in Entry 83; special teams coordinator hired in Entry 84 |
+| Document 4 | `JAX-2014-FEB02-SETUP-REGISTER-41`; closed by Entry 85 | Controlled 53 (52 active, Meester Reserve/Retired); practice squad 0; six 2014 reserve/future contracts effective March 11; draft coin flip and league ownership reconciled; Mike Westhoff special teams coordinator from February 11, 2014 |
+| Document 6 | 2013 ledger through Entry 85 | 2013 season complete; phase archives in Entry 67; 2014 setup in Entry 68; kernels 2014.1 and 2014.2 in Entries 69-70; season honours in Entry 71; kernel 2014.3 and the engine assessment in Entry 72; Super Bowl MVP and Pro Bowl in Entry 73; season review with Khan and Caldwell in Entry 74; January 2014 coaching carousel in Entry 75; exit interviews in Entry 76; staff authority and planning reconciliation in Entry 77; historical league rails adopted in Entry 78; Meester retired and Allen retirement scheduled in Entry 79; Cousins trade and draft capital reconciled in Entry 80; coin flip and league pick ownership reconciled in Entry 81; operating handoff and readiness reconciliation in Entry 82; February 2014 coaching exposure (no departures) in Entry 83; special teams coordinator hired in Entry 84; 2014 reserve/future contracts in Entry 85 |
 
 ## 1. Master clock and competition position
 
@@ -38,7 +38,8 @@
 |---|---|
 | **Current Jacksonville controlled roster** | **53** |
 | Active roster | **52** (Brad Meester on Reserve/Retired, Entry 79) |
-| Practice squad | **8; separate from 52 active and one Reserve/Retired** |
+| Practice squad | **0** (the 2013 contracts ended with the season) |
+| Reserve/future contracts, 2014 | **6** (Bray, Murphy, Jerrell Jackson, Long, D'Anthony Smith, Blake), signed February 3 and 5, effective March 11, outside the 53; King and Ta'ufo'ou left (Entry 85) |
 | Current cap treatment | Last reconciled 2013 regular-season accounting; 2014 worksheet prepared but unreconciled |
 | Historical 2013 working room, not 2014 spending authority | Approximately **$6.2M-$6.6M** before weekly practice-squad charges; **$5.4M-$5.8M** comparable full-season exposure if the opening eight remain all season |
 | Personnel/contracts/cap authority | David Caldwell |
@@ -46,7 +47,7 @@
 
 Player birth dates and ages are in Document 4, the [roster](../career/2013/roster.md) and [league age view](../career/2013/player_ages.md). Ages are derived at the master date and checked on every repository validation; run `python scripts/render_player_ages.py` after a date or roster change. Entry 63 added identity metadata without advancing time or retiring anyone.
 
-**2014 financial/control gate:** [the prepared worksheet](../career/2014/offseason/current_cap_worksheet.md) does not certify cap room. The eight legacy practice-squad names remain in the closed baseline pending exact expiry/right reconciliation and actual futures outcomes; they are not automatically eligible 2014 participants. No contract is created or terminated by this administrative review.
+**2014 financial/control gate:** [the prepared worksheet](../career/2014/offseason/current_cap_worksheet.md) does not certify cap room. Six reserve/future contracts are signed at the minimum for each player's credited seasons (Bray $420,000; the other five figures unresolved until credited seasons are established); 2014 practice-squad eligibility is checked only after the August cutdown. No contract is created or terminated by this administrative review.
 
 ## 3. Availability
 
@@ -84,6 +85,7 @@ The 2013 season is complete and archived (Entry 67): Jacksonville 10-6, 1-1 in t
 - **Historical league rails (Entry 78):** from the 2014 league year the other 31 clubs' rosters follow real history on real dates (signings, trades, releases, retirements, draft, Week 1 charts); Jacksonville's roster and contracts come only from the branch, except that real retirements apply league-wide. Free agents Jacksonville pursues are decided by a market draw against the real contract; draft availability follows the real pick number. The reproducible research inventory is in `career/2014/offseason/league_rails/`; dated legal rosters and relevant exception resolution are operator work, not a manual assignment for the user. Open check: any real retirement by a Jacksonville player dated on or before February 2, 2014.
 - **Exit interviews (Entry 76):** held January 13-14, 2014 with all 61 players (13 main core in full, 27 core in structured reports, 21 summarized). No promise was made and no role, roster, contract or medical state changed.
 - **Season review (Entry 74):** Khan and Caldwell retained Stone for 2014 on his existing contract after the January 15, 2014 review (`career/2013/season_review/owner_and_gm_review.md`). Caldwell's first 2014 measures: the scoring margin and the quarterback's ball security.
+- **Reserve/future contracts (Entry 85):** under Stone's memo section 1, Caldwell offered six 2013 practice-squad players reserve/future contracts on February 3. Bray, Murphy, Blake, Long and Jerrell Jackson signed that day; D'Anthony Smith signed February 5 after a market draw against his real Seattle reserve/future contract of that date (Jacksonville won; the Seattle move does not occur in the branch). Terms: the minimum for credited seasons, no guarantee, no bonus, effective March 11, counted toward the 90 from then; camp places, not practice-squad places. King and Ta'ufo'ou were not offered and left.
 - **Special teams coordinator (Entry 84):** Mike Westhoff hired effective February 11, 2014: $750,000 a season for 2014 and 2015, equal salaries, no signing bonus, 2014 guaranteed with offset, 2015 non-guaranteed, no added title or authority. Oakland had re-signed Bobby April (drawn; his deal was inferred to expire after 2013) and refused Jacksonville's lateral request on February 4; Westhoff was the user's first fallback; DeHaven was not approached. Westhoff runs the kicking game and reports to Stone, who keeps team priorities and consequential game management. Scheduled 2014 assistant salary is $7,700,000 for twelve coaches, a commitment, not a budget ceiling. No emergency successor for a caller is assigned.
 - **February coaching exposure (Entry 83):** the deferred procedure ran retroactively over January 12 to February 17. Buffalo kept Marrone; Minnesota changed head coach (external hire February 17). Ten coordinator jobs opened at clubs that kept their head coach. Chicago interviewed Frank Bush for defensive coordinator on February 6 with permission and hired elsewhere on February 9; Minnesota's February 17 requests for Jeremy Bates (quarterbacks) and Mike Tice (offensive coordinator) were refused as lateral. No Jacksonville assistant left.
 - **Staff reconciliation (Entry 77):** Document 3 reflected the vacant post and Stone's interim direction from January 12 until Entry 84 closed the appointment. Position-to-coordinator interview permission is voluntary club policy under the 2013-14 rules.

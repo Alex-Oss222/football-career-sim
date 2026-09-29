@@ -7,7 +7,7 @@
 | Work | Current input | Where the actual event will be recorded |
 |---|---|---|
 | Contract/tag/tender and free agency | [Memo](offseason/stone_to_caldwell_2014_offseason_decisions.md), [contract status](offseason/contract_status_register.md), [verified target pool](offseason/league_rails/free_agent_pool.md) | [Signing/contract outcomes](offseason/free_agency/signings.md), plus affected state/accounting |
-| Futures and practice squad | [Futures instructions](offseason/practice_squad_futures.md) | Actual contract event, control and eligible-list records; no assumed signing |
+| Futures and practice squad | [Futures instructions](offseason/practice_squad_futures.md), [signings](offseason/free_agency/signings.md) | Six reserve/future contracts signed (Entry 85), effective March 11; credited seasons and 2014 practice-squad eligibility still to verify |
 | Trade market | [Six packages and their gates](trades/trade_targets.md) | [Communications](trades/trade_offers.md), then [completed trades](trades/trades.md) |
 | Draft | [Eight-pick current board](offseason/draft/player_draft_board.md), [all seven rounds](draft/draft_order.md) | [Draftees/contracts](offseason/draft/draftees.md), [rails pairing](offseason/league_rails/draft_pairing.md), [UDFA contracts](offseason/draft/udfa_signings.md) |
 | Staff | [Staff changes and hires](offseason/staff_changes/README.md) | Westhoff hired February 11 (Entry 84); no February departure (Entry 83) |
