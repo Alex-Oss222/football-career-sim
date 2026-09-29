@@ -15,6 +15,10 @@ Close spring with a current synthesis for every participant: useful strengths, e
 
 Invite player-selected film and interpretation during permitted contact without requiring a reply or quiz for promised material. Record only actual speech/work. At the phase handoff, link observed evidence and state what changed, what did not, an alternative explanation and the next opportunity. Existing medical, voluntary-work, installed-menu and decision-authority boundaries remain in force.
 
+## Living coaching assessment
+
+Read [Stone’s current profile](../../../coaching_profiles/alex_stone.md) and the relevant [assistant assessment](../../../coaching_profiles/staff_profiles.md) with the player evidence. Use the phase to examine actual teaching, adaptation and follow-through as well as player execution. In the real phase output, separate the coach’s instruction/decision from the player response and result. At a material handoff, append a dated change or retained interpretation to the coach profile and refresh its current synthesis. Preserve the previous evidence; no automatic improvement, fixed coaching type or new dialogue is implied.
+
 ## 2014 authority and execution conditions
 
 This is the carry-forward authorized in Stone's February 2 memo section 6 and the user's September 28, 2026 request to address the outstanding work. The inherited teaching method is retained below. The individual training/film items identified below are adopted; other recommendations at the end remain explicitly proposed. No practice, attendance, delivery, hiring, clearance or role change is recorded by this plan.

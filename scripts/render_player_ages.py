@@ -13,6 +13,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from runtime.player_bios import biographies, load, master_date
+from runtime.seasons import current_record
 
 STAMP = re.compile(r"^<!-- player-ages-as-of: [^\n]+ -->$", re.M)
 
@@ -66,13 +67,14 @@ def render_views(root=ROOT):
     root = Path(root)
     day, players = master_date(root), load(root)
     result = {}
-    for path in ("career/2013/roster.md", "state/04_Roster_and_Staff_Register.md"):
+    roster_path = current_record('roster', root).relative_to(root.resolve()).as_posix()
+    for path in (roster_path, "state/04_Roster_and_Staff_Register.md"):
         text = (root / path).read_text(encoding="utf-8")
         if len(STAMP.findall(text)) != 1:
             raise ValueError("Expected one age as-of marker in " + path)
         result[path] = table_ages(text, day, players)
-    clubs = json.loads((root / "library/data/2013_week1_depth_charts.json").read_text())["clubs"]
-    controlled = list(controlled_rows(result["career/2013/roster.md"]))
+    clubs = json.loads(current_record('background_depth', root).read_text())["clubs"]
+    controlled = list(controlled_rows(result[roster_path]))
     names = {n for n, _, _ in controlled}
     sections = {team: [(p["player_id"], p["position"], "Background roster")
                        for p in c["players"] if p["player_id"] not in names]
@@ -92,7 +94,7 @@ def render_views(root=ROOT):
             bio = bios[name]
             lines.append("| %s | %s | %s | %s | %s |" % (name, pos, bio["birth_date"], bio["age"], status))
         lines.append("")
-    result["career/2013/player_ages.md"] = "\n".join(lines)
+    result[current_record('player_ages', root).relative_to(root.resolve()).as_posix()] = "\n".join(lines)
     return result
 
 

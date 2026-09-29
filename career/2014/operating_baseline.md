@@ -1,6 +1,6 @@
 # 2014 operating baseline and handoffs
 
-**Prepared at the unchanged February 2, 2014 checkpoint, after Entry 81.** This is the 2014 working structure for the offseason and eventual season. No tag, offer, signing, trade, training phase, draft selection or game is completed by preparing it. The next calendar window remains February 17.
+**Prepared at the unchanged February 2, 2014 checkpoint; administratively reconciled through Entry 82.** This is the 2014 working structure for the offseason and eventual season. No tag, offer, signing, trade, training phase, draft selection or game is completed by preparing it. The next checkpoint is February 3 for waivers and staff work; the tag window follows February 17.
 
 ## Start here
 
@@ -39,3 +39,7 @@ This baseline supports offseason operations. It is **not game authorization**. [
 E1 requires dated player/job evidence, available lineups and coaching/matchup tradeoffs through the common resolver. Branch 2013 records are not talent evidence and Jacksonville gets no bonus. E2 requires actual mid-game removal, important user-side substitution pauses and functioning backup quarterbacks. Clock, fourth-down and injury-rate Tier 1 defects also remain open. No fix is claimed by adding folders.
 
 The game release also needs season-aware fixture/roster/closure/stat consumers, dated 2014 league inputs, control exclusivity, calibration and a validated kernel version. The existing 2013 runner must not silently execute a 2014 request with old data. Close these as engineering work before preseason, not as a hand-maintenance assignment for Stone. The ordinary repository check validates continuity and prepared records; a green result does not supersede the game gate.
+
+## Setup acceptance and remaining work
+
+[The readiness checklist](readiness.md) distinguishes prepared records from executable work. The [financial preparation worksheet](offseason/current_cap_worksheet.md) remains unreconciled. `runtime/seasons.py` supplies season paths; `runtime/season_readiness.json` records the independent 2014 release requirements. Neither path routing nor an accessible private runtime accepts the outstanding Tier 1 engine work. The current-record map preserves the established owners until one atomic season handoff.

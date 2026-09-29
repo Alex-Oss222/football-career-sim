@@ -20,6 +20,7 @@ import json
 from pathlib import Path
 
 from .league import conference_of
+from .seasons import SeasonPaths, require_receipt_season
 
 ROOT = Path(__file__).resolve().parents[1]
 SLOTS = ROOT / "library" / "data" / "2013_postseason_slots.json"
@@ -84,14 +85,16 @@ def _round_winners(week, post_receipts, expected):
     return [winner(r) for r in closed]
 
 
-def schedule(week, regular_receipts=None, post_receipts=None, slots=None):
+def schedule(week, regular_receipts=None, post_receipts=None, slots=None, season=2013):
     """The games of one postseason week, in slot order."""
     week = int(week)
     if week not in ROUNDS:
         raise ValueError("week %d is not a postseason round" % week)
-    regular_receipts = _load(REGULAR_RECEIPTS) if regular_receipts is None else regular_receipts
-    post_receipts = _load(POSTSEASON_RECEIPTS) if post_receipts is None else post_receipts
-    slots = json.loads(SLOTS.read_text(encoding="utf-8")) if slots is None else slots
+    paths = SeasonPaths(season, ROOT)
+    regular_receipts = _load(paths.receipts) if regular_receipts is None else regular_receipts
+    post_receipts = _load(paths.postseason_receipts) if post_receipts is None else post_receipts
+    slots = json.loads(paths.postseason_slots.read_text(encoding="utf-8")) if slots is None else slots
+    require_receipt_season(regular_receipts + post_receipts, season)
     field = seeds(regular_receipts)
     seed_of = {team: (conf, n) for conf in CONFERENCES for n, team in enumerate(field[conf], 1)}
     number = {team: n for team, (_, n) in seed_of.items()}

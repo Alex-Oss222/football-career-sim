@@ -240,6 +240,12 @@
     "library/2014_full_calendar_verification.md",
     "runtime/2014_engine_decisions.md",
     "docs/pr_132_followup_review.md",
+    "career/2015/calendar.md",
+    "library/2015_historical_calendar.md",
+    "career/coaching_profiles/README.md",
+    "career/coaching_profiles/alex_stone.md",
+    "career/coaching_profiles/staff_profiles.md",
+    "career/coaching_profiles/profile_template.md",
     "career/2014/draft/coin_flip.json",
     "career/2014/draft/coin_flip_2026-09-29.jpg",
     "career/2014/draft/ownership_audit.md",
@@ -274,7 +280,21 @@
     "career/2014/trades/trades.md",
     "runtime/schedule_2014.py",
     "scripts/render_2014_opponents.py",
-    "tests/test_schedule_2014.py"
+    "tests/test_schedule_2014.py",
+    "runtime/seasons.py",
+    "runtime/season_readiness.json",
+    "career/2014/readiness.md",
+    "career/2014/offseason/current_cap_worksheet.md",
+    "career/2014/scouting/README.md",
+    "career/2014/statbook.md",
+    "career/2014/stats/README.md",
+    "career/2014/stats/game_receipts/README.md",
+    "career/2014/stats/postseason_receipts/README.md",
+    "career/2014/league_results/README.md",
+    "career/2014/awards/README.md",
+    "career/2014/postseason/README.md",
+    "career/2014/closeouts/README.md",
+    "tests/test_season_isolation.py"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",
@@ -331,5 +351,16 @@
       "output": "career/2014/offseason/training_camp/output.md",
       "standouts": "career/2014/offseason/training_camp/standouts.md"
     }
+  },
+  "active_season": 2014,
+  "current_records": {
+    "ledger": "career/2013/ledger.md",
+    "roster": "career/2013/roster.md",
+    "staff": "career/2013/coaching_staff.md",
+    "depth_chart": "career/2013/depth_chart.json",
+    "cap": "career/2013/offseason/current_cap_worksheet.md",
+    "calendar": "career/2014/calendar.md",
+    "player_ages": "career/2013/player_ages.md",
+    "background_depth": "library/data/2013_week1_depth_charts.json"
   }
 }

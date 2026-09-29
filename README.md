@@ -4,6 +4,10 @@ An evidence-based NFL head-coaching career simulation centered on Alex-Lamar Sto
 
 ## Start here
 
+- [2014 setup and readiness](career/2014/readiness.md): current handoff, prepared folders and requirements before execution.
+- [2014 operating baseline](career/2014/operating_baseline.md): offseason work and year-owner transition.
+- [Living coaching profiles](career/coaching_profiles/README.md): Stone and the staff after the full 2013 season.
+
 - [Current season state](state/05_Current_Season_State.md): the controlling current date, closed checkpoint, pending decisions and next event.
 - [2013 Jacksonville career index](career/2013/README.md): phase records, roster, staff, cap, standings and season statistics.
 - [2013 season statbook](career/2013/statbook.md): one front door for standings, Jacksonville stats, the comprehensive all-player ledger, league stats and leaderboards.

@@ -119,6 +119,8 @@ def tiebreak_notes(result):
 
 
 def render(year, receipts, through_week=None):
+    from runtime.seasons import require_receipt_season
+    require_receipt_season(receipts, year)
     if through_week is not None:
         receipts = [r for r in receipts if int(r["week"]) <= through_week]
     result = compute(receipts)

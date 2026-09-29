@@ -20,6 +20,7 @@ from pathlib import Path
 
 from . import call_families, depth_library, player_bios
 from .usage import group, lineup_errors
+from .seasons import SeasonPaths, require_receipt_season
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEDULE = ROOT / "library" / "data" / "2013_schedule.json"
@@ -36,32 +37,33 @@ def slug(team, sep):
     return re.sub(r"[^a-z0-9]+", sep, team.lower()).strip(sep)
 
 
-def schedule(week):
+def schedule(week, season=2013):
     from . import postseason
     if postseason.is_postseason(week):
         # Weeks 18-21: the bracket built from closed receipts (runtime.postseason).
-        return postseason.schedule(week)
-    games = [g for g in json.loads(SCHEDULE.read_text(encoding="utf-8"))["games"] if g["week"] == week]
+        return postseason.schedule(week, season=season)
+    games = [g for g in SeasonPaths(season, ROOT).regular_games() if g["week"] == week]
     if not games:
-        raise ValueError("no 2013 schedule for week %s" % week)
+        raise ValueError("no %d schedule for week %s" % (season, week))
     return games
 
 
 GENERATIONS = ROOT / "career/2013/migrations/event_generations.json"
 
 
-def event_generation(week):
+def event_generation(week, season=2013):
     """The current event generation for a week: 1 unless a user-authorized
     void in career/2013/migrations/event_generations.json replaced it."""
-    if not GENERATIONS.exists():
+    generations = SeasonPaths(season, ROOT).generations
+    if not generations.exists():
         return 1
-    weeks = json.loads(GENERATIONS.read_text(encoding="utf-8")).get("weeks", {})
+    weeks = json.loads(generations.read_text(encoding="utf-8")).get("weeks", {})
     return int(weeks.get(str(int(week)), {}).get("current_generation", 1))
 
 
-def event_id(game, generation=None):
-    generation = event_generation(game["week"]) if generation is None else generation
-    base = "2013-week%02d-%s-at-%s" % (game["week"], slug(game["away"], "-"), slug(game["home"], "-"))
+def event_id(game, generation=None, season=2013):
+    generation = event_generation(game["week"], season) if generation is None else generation
+    base = "%d-week%02d-%s-at-%s" % (season, game["week"], slug(game["away"], "-"), slug(game["home"], "-"))
     return base if generation == 1 else "%s-g%d" % (base, generation)
 
 
@@ -69,23 +71,24 @@ def receipt_name(game):
     return "week_%02d_%s_at_%s.json" % (game["week"], slug(game["away"], "_"), slug(game["home"], "_"))
 
 
-def _game_dates():
+def _game_dates(season=2013):
     from . import postseason
-    games = json.loads(SCHEDULE.read_text(encoding="utf-8"))["games"]
+    games = SeasonPaths(season, ROOT).regular_games()
     dates = {(g["week"], g["away"], g["home"]): date.fromisoformat(g["date"]) for g in games}
     # Closed postseason rounds: their games can always be rebuilt from receipts.
     for week in sorted(postseason.ROUNDS):
         try:
-            rows = postseason.schedule(week)
+            rows = postseason.schedule(week, season=season)
         except (ValueError, FileNotFoundError, KeyError):
             break
         dates.update({(g["week"], g["away"], g["home"]): date.fromisoformat(g["date"]) for g in rows})
     return dates
 
 
-def injured_out(receipts, game_day):
+def injured_out(receipts, game_day, season=2013):
     """{player_id: reason} for players still inside their projected return window."""
-    dates = _game_dates()
+    require_receipt_season(receipts, season)
+    dates = _game_dates(season)
     out = {}
     for receipt in receipts:
         played = dates[(int(receipt["week"]), receipt["away"], receipt["home"])]
@@ -100,9 +103,9 @@ def injured_out(receipts, game_day):
     return out
 
 
-def background_input(team, week, receipts, game_day, anchors):
-    team_input = depth_library.team_input(team, week=week, **anchors)
-    out = injured_out(receipts, game_day)
+def background_input(team, week, receipts, game_day, anchors, season=2013):
+    team_input = depth_library.team_input(team, week=week, season=season, **anchors)
+    out = injured_out(receipts, game_day, season)
     for player in team_input["roster"]:
         if player["player_id"] in out:
             player["available"] = False
@@ -145,11 +148,11 @@ class _Row:
         self.position = row["position"]
 
 
-def controlled_active():
+def controlled_active(season=2013):
     """(player, availability text) for every Jacksonville active-53 player."""
     rows = []
     status_col = avail_col = None
-    for line in ROSTER.read_text(encoding="utf-8").splitlines():
+    for line in SeasonPaths(season, ROOT).roster.read_text(encoding="utf-8").splitlines():
         if not line.startswith("|"):
             status_col = None
             continue
@@ -169,7 +172,7 @@ HOLD_NOTE = re.compile(r"\b(Out|hold|Suspended|Reserve|Non-football|Exempt)\b", 
 PROJECTED_RETURN = re.compile(r"projected return ([A-Z][a-z]+ \d{1,2}(?:, \d{4})?)")
 
 
-def roster_available(availability, game_day):
+def roster_available(availability, game_day, season=2013):
     """Whether a roster availability note clears a player for `game_day`.
 
     A game injury recorded with a projected return clears on that date, the
@@ -187,26 +190,28 @@ def roster_available(availability, game_day):
             raise ValueError("unrecognized availability note: %r" % availability)
         return False
     text = match.group(1)
+    if season != 2013 and "," not in text:
+        raise ValueError('New-season projected returns require an explicit year')
     back = datetime.strptime(text if "," in text else text + ", 2013", "%B %d, %Y").date()
     return game_day >= back
 
 
-def jacksonville_input(receipts, game_day, anchors, call_sheet):
+def jacksonville_input(receipts, game_day, anchors, call_sheet, season=2013):
     undeclared = call_families.sheet_errors(call_sheet)
     if undeclared:
         # Kernel 2013.7 fails closed on a call no label rule covers.
         raise ValueError("call sheet cannot be labelled: " + "; ".join(undeclared))
-    chart = json.loads(DEPTH_CHART.read_text(encoding="utf-8"))
+    chart = json.loads(SeasonPaths(season, ROOT).depth_chart.read_text(encoding="utf-8"))
     depth = {player: rank for players in chart["depth"].values() for rank, player in enumerate(players, 1)}
-    injured = injured_out(receipts, game_day)
+    injured = injured_out(receipts, game_day, season)
     inactives = set(chart["game_day_inactives"]["players"])
     roster, missing = [], []
-    for player, availability in controlled_active():
+    for player, availability in controlled_active(season):
         if player not in depth:
             missing.append(player)
             continue
         position = chart["positions"][player]
-        cleared = roster_available(availability, game_day)
+        cleared = roster_available(availability, game_day, season)
         roster.append({
             "player_id": player, "position": position,
             "available": cleared and player not in injured,
@@ -233,19 +238,19 @@ def jacksonville_input(receipts, game_day, anchors, call_sheet):
     }
 
 
-def build_package(week, receipts, call_sheet, anchors):
+def build_package(week, receipts, call_sheet, anchors, season=2013):
     games = []
     birth_dates = player_bios.load()
-    for game in schedule(week):
+    for game in schedule(week, season):
         game_day = date.fromisoformat(game["date"])
 
         def unit(team):
             if team == PROTAGONIST:
-                return jacksonville_input(receipts, game_day, anchors, call_sheet)
-            return background_input(team, week, receipts, game_day, anchors)
+                return jacksonville_input(receipts, game_day, anchors, call_sheet, season)
+            return background_input(team, week, receipts, game_day, anchors, season)
 
         games.append({
-            "event_id": event_id(game), "receipt": receipt_name(game), "week": week,
+            "event_id": event_id(game, season=season), "receipt": receipt_name(game), "week": week,
             "date": game["date"], "away": game["away"], "home": game["home"],
             "venue": "neutral" if game["site"] == "neutral" else "home",
             "game_type": game.get("game_type", "regular"),
@@ -258,4 +263,4 @@ def build_package(week, receipts, call_sheet, anchors):
         games[-1]["player_ages"] = player_bios.biographies(
             [p["player_id"] for side in ("away_input", "home_input")
              for p in games[-1][side]["roster"]], game_day, birth_dates)
-    return {"week": week, "games": games}
+    return {"season": season, "week": week, "games": games}

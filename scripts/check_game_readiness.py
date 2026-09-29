@@ -9,11 +9,15 @@ from runtime.game_runner import (architecture_errors, resolve_background_game,
                                  resolve_protagonist_game, run_game)
 from runtime.private_client import Client, PrivateRuntimeUnavailable
 from runtime.rules import RULES
+from runtime.seasons import active_season, game_release_errors
 
 REQUIRED={'calibration','playing_rules','injury_model','football_kernel','private_runtime'}
 
-def assess(root=ROOT):
+def assess(root=ROOT, season=None):
     root=Path(root); blockers=[]
+    season = active_season(root) if season is None else season
+    blockers += [dict(id='season_release', label=f'{season} season release', detail=e)
+                 for e in game_release_errors(season, root)]
     blockers += [dict(id='repository_continuity',label='Repository continuity',detail=e) for e in validate(root)]
     manifest=json.loads((root/'runtime/readiness.json').read_text()); reqs=manifest['requirements']
     if {x['id'] for x in reqs} != REQUIRED or len(reqs)!=len(REQUIRED): raise ValueError('Readiness manifest must contain each required gate exactly once')
@@ -44,15 +48,20 @@ def assess(root=ROOT):
             blockers.append(dict(id='private_probe',label='Private runtime probe',detail='ENGINE_API_TOKEN is not set'))
         if blockers and any(x['id']=='private_probe' for x in blockers):
             return {'ready':False,'blockers':blockers}
+        # Do not write a live readiness canary while public gates are blocked.
+        if blockers:
+            return {'ready':False,'blockers':blockers}
         try: Client().readiness()
         except PrivateRuntimeUnavailable as e: blockers.append(dict(id='private_probe',label='Private runtime probe',detail=str(e)))
     return {'ready':not blockers,'blockers':blockers}
 
-def check(root=ROOT): return [f"{x['label']}: {x['detail']}" for x in assess(root)['blockers']]
+def check(root=ROOT, season=None): return [f"{x['label']}: {x['detail']}" for x in assess(root, season)['blockers']]
 
 def main():
-    p=argparse.ArgumentParser(); p.add_argument('--json',action='store_true'); a=p.parse_args()
-    try: result=assess()
+    p=argparse.ArgumentParser(); p.add_argument('--json',action='store_true')
+    p.add_argument('--season',type=int,help='Defaults to the explicit active season in repository_map.json')
+    a=p.parse_args()
+    try: result=assess(season=a.season)
     except (OSError,ValueError,KeyError,TypeError) as e:
         if a.json: print(json.dumps({'ready':False,'configuration_error':str(e)},sort_keys=True)); return 2
         print(f'INVALID READINESS CONFIGURATION: {e}'); return 2
