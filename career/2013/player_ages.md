@@ -825,7 +825,7 @@ Jacksonville includes every controlled player, including the practice squad. Oth
 | Travis Kelce | TE | 1989-10-05 | 24 | Offseason roster |
 | Cameron Bradfield | OT | 1987-09-14 | 26 | Offseason roster (RFA tender, unsigned) |
 | Lane Johnson | OT | 1990-05-08 | 23 | Offseason roster |
-| Eugene Monroe | OT | 1987-04-18 | 26 | Offseason roster (franchise tender, unsigned) |
+| Eugene Monroe | OT | 1987-04-18 | 26 | Offseason roster (re-signed March 11, 2014) |
 | Mark Asper | G | 1985-11-08 | 28 | Offseason roster |
 | Uche Nwaneri | G | 1984-03-20 | 29 | Offseason roster |
 | Austin Pasztor | G | 1990-11-26 | 23 | Offseason roster (ERFA tender, unsigned) |
@@ -836,8 +836,8 @@ Jacksonville includes every controlled player, including the practice squad. Oth
 | Ryan Davis | DE | 1989-02-24 | 25 | Offseason roster |
 | Lavar Edwards | DE | 1990-04-29 | 23 | Offseason roster |
 | Jeremy Mincey | DE | 1983-12-14 | 30 | Offseason roster |
-| Daniel Te'o-Nesheim | DE | 1987-06-12 | 26 | Offseason roster (signed March 11, 2014) |
 | Tyson Alualu | DT | 1987-05-12 | 26 | Offseason roster |
+| Sen'Derrick Marks | DT | 1987-02-23 | 27 | Offseason roster (re-signed March 11, 2014) |
 | Roy Miller | DT | 1987-07-09 | 26 | Offseason roster |
 | C.J. Mosley | DT | 1983-08-06 | 30 | Offseason roster |
 | Jeris Pendleton | DT | 1983-11-07 | 30 | Offseason roster |
@@ -850,6 +850,7 @@ Jacksonville includes every controlled player, including the practice squad. Oth
 | Julian Stanford | LB | 1990-09-02 | 23 | Offseason roster |
 | A.J. Bouye | CB | 1991-08-16 | 22 | Offseason roster |
 | Mike Harris | CB | 1989-01-05 | 25 | Offseason roster |
+| Alterraun Verner | CB | 1988-12-13 | 25 | Offseason roster (signed March 11, 2014) |
 | Jordan Poyer | CB | 1991-04-25 | 22 | Offseason roster |
 | Dwight Lowery | S | 1986-01-23 | 28 | Offseason roster |
 | Chris Prosinski | S | 1987-04-28 | 26 | Offseason roster |
@@ -858,7 +859,6 @@ Jacksonville includes every controlled player, including the practice squad. Oth
 | Antwon Blake | S | 1990-08-09 | 23 | Offseason roster (reserve/future contract effective March 11) |
 | Josh Scobee | K | 1982-06-23 | 31 | Offseason roster |
 | Bryan Anger | P | 1988-10-06 | 25 | Offseason roster |
-| Jeremy Cain | LS | 1980-03-24 | 33 | Offseason roster |
 | Tyler Bray | QB | 1991-12-27 | 22 | Effective March 11, 2014 (section 3) |
 | Richard Murphy | RB | 1986-09-18 | 27 | Effective March 11, 2014 (section 3) |
 | Jerrell Jackson | WR | 1990-02-06 | 24 | Effective March 11, 2014 (section 3) |
@@ -1683,6 +1683,7 @@ Jacksonville includes every controlled player, including the practice squad. Oth
 | Demar Dotson | T | 1985-10-11 | 28 | Background roster |
 | Jamon Meredith | T | 1986-05-11 | 27 | Background roster |
 | Ted Larsen | C | 1987-06-13 | 26 | Background roster |
+| Daniel Te'o-Nesheim | DE | 1987-06-12 | 26 | Background roster |
 | Gerald McCoy | DT | 1988-02-25 | 26 | Background roster |
 | Adrian Clayborn | DE | 1988-07-06 | 25 | Background roster |
 | Akeem Spence | DT | 1991-11-29 | 22 | Background roster |
@@ -1755,7 +1756,6 @@ Jacksonville includes every controlled player, including the practice squad. Oth
 | Zaviar Gooden | OLB | 1990-08-31 | 23 | Background roster |
 | Bernard Pollard | SS | 1984-12-23 | 29 | Background roster |
 | Jason McCourty | CB | 1987-08-13 | 26 | Background roster |
-| Alterraun Verner | CB | 1988-12-13 | 25 | Background roster |
 | Michael Griffin | FS | 1985-01-04 | 29 | Background roster |
 | George Wilson | FS | 1981-03-14 | 32 | Background roster |
 | Coty Sensabaugh | CB | 1988-11-15 | 25 | Background roster |

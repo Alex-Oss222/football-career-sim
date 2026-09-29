@@ -1,8 +1,8 @@
 # Jacksonville Jaguars roster
 
-**As of:** March 11, 2014, 4:00 p.m. ET (ledger Entry 94; the 2014 league year opened). Eugene Monroe plays on his unsigned non-exclusive franchise tender ($11,654,000) after the long-term draw was lost; 2013 season complete (Jacksonville eliminated in the AFC Divisional round).
+**As of:** March 11, 2014, after the 4:00 p.m. ET league-year opening (ledger Entry 95, the March 2014 free-agency replay, correcting Entry 94). Eugene Monroe re-signed for five years, replacing his franchise tender; 2013 season complete (Jacksonville eliminated in the AFC Divisional round).
 **Canonical controlled-player count:** **51** (offseason roster; the 90-player limit applies from the league year).
-**Changes at 4 p.m. March 11 (Entry 94):** Daniel Te'o-Nesheim signed; Jeremy Cain re-signed; Cameron Bradfield (RFA) and Toney Clemons, Mike Brown and Austin Pasztor (ERFA) tendered; the six reserve/future contracts took effect. Left control: Chad Henne, Sen'Derrick Marks, Maurice Jones-Drew, C.J. Wilson, Alan Ball and Brent Grimes (unrestricted free agents), Allen Reisner and Kevin Rutland (not tendered), and Brad Meester (retired; contract expired). See section 5.
+**Changes at the league year (Entries 94 and 95):** Monroe and Sen'Derrick Marks re-signed and Alterraun Verner signed in the replay; Cameron Bradfield (RFA) and Toney Clemons, Mike Brown and Austin Pasztor (ERFA) tendered; the six reserve/future contracts took effect. Left control at 4 p.m.: Chad Henne, Jeremy Cain, Maurice Jones-Drew, C.J. Wilson, Alan Ball and Brent Grimes (unrestricted; Henne's and Cain's negotiations reopened in the replay), Allen Reisner and Kevin Rutland (not tendered) and Brad Meester (retired). See section 5.
 **Practice squad:** **0** (no 2014 practice squad exists before the regular season). **Reserve/future contracts:** the six signed February 3 and 5, 2014 (ledger Entry 85) are now effective and listed in section 3.
 **Record:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-1 (AFC Wild Card: Jacksonville 38, Kansas City 14; AFC Divisional: Tennessee 20, Jacksonville 13).
 
@@ -66,7 +66,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | --- | --- | --- | ---: | --- | --- | --- |
 | Cameron Bradfield | OT | 1987-09-14 | 26 | Offseason roster (RFA tender, unsigned) | No communicated restriction | Swing tackle; sixth OL in 6OL |
 | Lane Johnson | OT | 1990-05-08 | 23 | Offseason roster | No communicated restriction | Starting right tackle |
-| Eugene Monroe | OT | 1987-04-18 | 26 | Offseason roster (franchise tender, unsigned) | No communicated restriction | Starting LT |
+| Eugene Monroe | OT | 1987-04-18 | 26 | Offseason roster (re-signed March 11, 2014) | No communicated restriction | Starting LT |
 
 ### Offensive guards (4)
 
@@ -83,7 +83,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | --- | --- | --- | ---: | --- | --- | --- |
 | Mike Brewster | C | 1989-07-27 | 24 | Offseason roster | No communicated restriction | Starting center (confirmed Week 6) |
 
-### Defensive ends (6)
+### Defensive ends (5)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
@@ -92,13 +92,13 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Ryan Davis | DE | 1989-02-24 | 25 | Offseason roster | No communicated restriction | Edge 4 |
 | Lavar Edwards | DE | 1990-04-29 | 23 | Offseason roster | No communicated restriction | Edge/front depth and teams (dressed Weeks 12 and 14-17; inactive Week 13) |
 | Jeremy Mincey | DE | 1983-12-14 | 30 | Offseason roster | No communicated restriction | Edge 2 |
-| Daniel Te'o-Nesheim | DE | 1987-06-12 | 26 | Offseason roster (signed March 11, 2014) | No communicated restriction | Signed as the veteran edge rusher (memo priority 4); depth place not set |
 
-### Defensive tackles (6)
+### Defensive tackles (7)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
 | Tyson Alualu | DT | 1987-05-12 | 26 | Offseason roster | No communicated restriction | DT rotation |
+| Sen'Derrick Marks | DT | 1987-02-23 | 27 | Offseason roster (re-signed March 11, 2014) | No communicated restriction | Starting DT (2013) |
 | Roy Miller | DT | 1987-07-09 | 26 | Offseason roster | No communicated restriction | Starting DT |
 | C.J. Mosley | DT | 1983-08-06 | 30 | Offseason roster | No communicated restriction | Interior DL rotation (dressed from Week 11) |
 | Jeris Pendleton | DT | 1983-11-07 | 30 | Offseason roster | No communicated restriction | — |
@@ -115,12 +115,13 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Daryl Smith | LB | 1982-03-14 | 31 | Offseason roster | No communicated restriction | Base LB; defensive communication lead |
 | Julian Stanford | LB | 1990-09-02 | 23 | Offseason roster | No communicated restriction | LB depth after Allen |
 
-### Cornerbacks (3)
+### Cornerbacks (4)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
 | A.J. Bouye | CB | 1991-08-16 | 22 | Offseason roster | No communicated restriction (Week 11 injury cleared November 26) | First outside reserve CB (from Week 13); coverage units |
 | Mike Harris | CB | 1989-01-05 | 25 | Offseason roster | No communicated restriction | Starting CB (from Week 11) |
+| Alterraun Verner | CB | 1988-12-13 | 25 | Offseason roster (signed March 11, 2014) | No communicated restriction | Role not set |
 | Jordan Poyer | CB | 1991-04-25 | 22 | Offseason roster | No communicated restriction | Nickel; coverage units |
 
 ### Safeties (5)
@@ -133,13 +134,12 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Brynden Trawick | S | 1989-10-23 | 24 | Offseason roster | No communicated restriction | Coverage units |
 | Antwon Blake | S | 1990-08-09 | 23 | Offseason roster (reserve/future contract effective March 11) | No communicated restriction | Role not set |
 
-### Specialists (3)
+### Specialists (2)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
 | Josh Scobee | K | 1982-06-23 | 31 | Offseason roster | No communicated restriction | K |
 | Bryan Anger | P | 1988-10-06 | 25 | Offseason roster | No communicated restriction | P |
-| Jeremy Cain | LS | 1980-03-24 | 33 | Offseason roster | No communicated restriction | LS |
 
 ## 4. Reserve/future contracts (2014) and the 2013 practice squad
 
@@ -158,16 +158,16 @@ Jacksonville's 2013 practice squad (formed September 1, 2013, ledger Entry 27) h
 
 ## 5. Departures
 
-### March 11, 2014, 4 p.m. ET (Entry 94)
+### March 11, 2014, 4 p.m. ET (Entries 94 and 95)
 
-| Player | Pos | How control ended | Outstanding Jacksonville offer |
+| Player | Pos | How control ended | Outstanding Jacksonville position |
 | --- | --- | --- | --- |
-| Chad Henne | QB | Lost the March 7 re-signing draw against his real Jaguars terms; unrestricted free agent | None |
-| Sen'Derrick Marks | DT | Lost the re-signing draw at 4 p.m. against his real Jaguars terms; unrestricted free agent | None |
-| Maurice Jones-Drew | RB | Contract expired; unrestricted free agent | Memo offer stands; draw at his real date |
-| C.J. Wilson | DE | Contract expired; unrestricted free agent | Minimum offer stands; draw at his real date |
-| Alan Ball | CB | Contract expired; unrestricted free agent | One-year offer stands; resolution rule open (no real 2014 move) |
-| Brent Grimes | CB | Contract expired; unrestricted free agent | Corner-contingency offer; resolution rule open |
+| Chad Henne | QB | Contract expired; unrestricted free agent | Negotiation reopened in the replay (Entry 95); the first-pass March 7 draw is superseded |
+| Jeremy Cain | LS | Contract expired; unrestricted free agent | Negotiation reopened in the replay (Entry 95); the first-pass re-signing is superseded |
+| Maurice Jones-Drew | RB | Contract expired; unrestricted free agent | Memo offer outstanding; replay entry pending |
+| C.J. Wilson | DE | Contract expired; unrestricted free agent | Minimum offer outstanding; replay entry pending |
+| Alan Ball | CB | Contract expired; unrestricted free agent | One-year offer outstanding; replay entry pending |
+| Brent Grimes | CB | Contract expired; unrestricted free agent | Corner fallback; replay entry pending |
 | Allen Reisner | TE | Not tendered; unrestricted free agent | None |
 | Kevin Rutland | CB | Not tendered; unrestricted free agent | None |
 | Brad Meester | C | Retired; contract expired | None |
@@ -178,4 +178,4 @@ Claimed by other clubs on waivers: Austen Lane, Brandon Marshall, Isaiah Stanbac
 
 ## 6. Finances
 
-The last closed 2013 accounting remains in `offseason/current_cap_worksheet.md`. For 2014, use the [2014 contract table](../2014/offseason/contract_table.md) and [ten-year tracker](../finances/jaguars_cap_2014_2023.md), through Entry 94. Wilson and Jonathan Grimes are signed through 2014 and the six futures through 2015 under the adopted contract completion.
+The last closed 2013 accounting remains in `offseason/current_cap_worksheet.md`. For 2014, use the [2014 contract table](../2014/offseason/contract_table.md) and [ten-year tracker](../finances/jaguars_cap_2014_2023.md), through Entry 95. Wilson and Jonathan Grimes are signed through 2014 and the six futures through 2015 under the adopted contract completion.

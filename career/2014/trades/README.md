@@ -1,6 +1,6 @@
 # Jacksonville 2014 trades
 
-**Prepared at February 2, 2014, after Entry 81; window opened March 11, 2014 at 4 p.m. ET (Entry 94).** Package I was declined by Arizona; F1 (Nwaneri) and D (Babin) are offered with answers open. No trade has closed, and no player, pick or cap saving has moved.
+**Prepared at February 2, 2014, after Entry 81; window opened March 11, 2014 at 4 p.m. ET (Entry 94).** The Entry 95 free-agency replay reopened package I; F1 (Nwaneri) is offered with its answer open; D (Babin) is withdrawn. No trade has closed, and no player, pick or cap saving has moved.
 
 | Record | Owns |
 |---|---|

@@ -1,6 +1,6 @@
 # Jacksonville Jaguars 2014 contract table
 
-**As of:** March 11, 2014, 4:00 p.m. ET (ledger Entry 94; the 2014 league year opened). Tenders, the six reserve/future contracts, Te'o-Nesheim's and Cain's signings and Monroe's unsigned franchise tender are current; eight pending free agents and Meester left Jacksonville's control at 4 p.m.
+**As of:** March 11, 2014 (ledger Entry 95; the March 2014 free-agency replay corrects Entry 94's first-pass draws). Monroe, Marks and Verner signed in the replay; Te'o-Nesheim's and Cain's first-pass signings are withdrawn pending their replay entries; the four RFA/ERFA tenders stand.
 **Nature:** derived view. It executes no signing, tag, tender, release, trade or extension, certifies no cap room and reflects the adopted reconstruction in Entry 91. The [contract status register](contract_status_register.md) owns each player's status; the [2014 preparation worksheet](current_cap_worksheet.md) owns reconciliation; Caldwell owns contract decisions (Document 3).
 **Baseline:** [2013 initial cap sheet](../../2013/offseason/initial_cap_sheet.md) (per-player 2013 rows, Git `e04dd82`); [2013 regular-season worksheet](../../2013/offseason/current_cap_worksheet.md) and its May 5 version (Git `d25c8cf`); [2013 free-agency signings](../../2013/offseason/free_agency/signings.md); [2013 draftees](../../2013/offseason/draft/draftees.md); [2013 undrafted signings](../../2013/offseason/draft/udfa_signings.md); [2013 trades](../../2013/trades/trades.md); [current contract status register](contract_status_register.md); [Caldwell's pre-tag-window verifications](caldwell_pre_tag_verifications.md) (Git `9ca804c`); [2014 free-agency outcomes](free_agency/signings.md); ledger Entries 3, 4, 7, 9, 79, 80 and 85 through 89. Historical Git references identify the original financial baselines; current status follows the latest register and executed outcomes.
 
@@ -20,6 +20,7 @@ Add a row, and change the affected player rows and summaries, for every signing,
 | February 28, 2014 checkpoint correction | Complete remaining schedules, guarantees and control terms | Entry 91 | 44 signed continuing/futures contracts fully priced, Monroe separate; adopted simulation assumptions persisted; dollars shown through each term |
 | March 3, 2014 checkpoint | Rails verification closure | Entry 93 | No Jacksonville figure changed |
 | March 11, 2014 | League year opened at 4 p.m. ET | Entry 94 | Te'o-Nesheim signed (3 years, $18.8M, $10.3M guaranteed; 2014 cap $5,200,000) and Cain re-signed (1 year, $855,000) after the uncontested draws; Bradfield tendered at $1,431,000 and Clemons, Pasztor ($570,000) and Mike Brown ($495,000) at exclusive-rights minimums; the six futures took effect; Monroe lost the long-term draw and stays on the unsigned $11,654,000 tender; Henne and Marks lost their re-signing draws; Jones-Drew, C.J. Wilson, Ball and Brent Grimes became unrestricted with offers outstanding; Reisner and Rutland untendered; Meester's contract expired. Rows: 51 |
+| March 11, 2014 correction | March 2014 free-agency replay (first-pass draws superseded) | Entry 95 | Monroe re-signed (5 years, $42.5M, $20M guaranteed; 2014 cap $5,600,000, replacing the $11,654,000 tender); Marks re-signed (4 years, $26M, $12.5M guaranteed; $4,750,000); Verner signed (4 years, $29M, $15M guaranteed; $6,000,000). Te'o-Nesheim and Cain rows removed (reopened). Rows: 51 |
 
 ## 1. How to read this table
 
@@ -31,9 +32,9 @@ Add a row, and change the affected player rows and summaries, for every signing,
 - **Branch figures use millions** where the branch record states them in millions; other figures are exact dollars as sourced.
 - **Simulation terms** fill missing existing-contract details under the user’s explicit authorization. They are included in working totals and identified in the source notes. Preserve them between turns until an actual amendment or sourced correction. A blank future year lies outside the contract.
 
-## 2. Controlled players under contract for 2014 (46)
+## 2. Controlled players under contract for 2014 (47)
 
-### 2a. Branch contracts (15)
+### 2a. Branch contracts (16)
 
 | Player | Pos | Contract type | Signed | Years / final league year | Total value | Signing bonus; annual proration; years left | 2014 base | 2014 roster / workout / other bonuses | 2014 guarantees | 2014 cap charge | Dead money if released before June 1 | 2014 status | 2013 cap charge (baseline) | Source and status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -50,8 +51,9 @@ Add a row, and change the affected player rows and summaries, for every signing,
 | A.J. Bouye | CB | UDFA minimum | Post-draft wave, April 27 to May 3, 2013 | 3 / 2015 | $1,485,000 | $0; $0; 0 | $495,000 | None | $0 | $495,000 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | $405,000 | Branch record (UDFA signings) |
 | Adam Thielen | WR | UDFA minimum | Post-draft wave, April 27 to May 3, 2013 | 3 / 2015 | $1,485,000 | $0; $0; 0 | $495,000 | None | $0 | $495,000 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | $405,000 | Branch record (UDFA signings) |
 | C.J. Anderson | RB | UDFA minimum | Post-draft wave, April 27 to May 3, 2013 | 3 / 2015 | $1,485,000 | $0; $0; 0 | $495,000 | None | $0 | $495,000 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | $405,000 | Branch record (UDFA signings) |
-| Daniel Te'o-Nesheim | DE | Veteran (branch free agent) | March 11, 2014, 4 p.m. ET | 3 / 2016 | $18,800,000 | $3,000,000; $1,000,000; 3 | $4,200,000 | None | $4,200,000 base guaranteed ($10,300,000 total with the bonus and the 2015 base) | $5,200,000 | $10,300,000 gross exposure under adopted terms (proration $3,000,000 plus guaranteed base $7,300,000) | Under contract | Not a Jacksonville player (Tampa Bay) | Branch record (Entry 94; [market draw](league_rails/fa_draws.md)); annual schedule is the simulation reconstruction fixed before the draw in [the method](league_year_method.json): 2015 base $3,100,000 guaranteed; 2016 $1,000,000 roster bonus, $7,000,000 base, $500,000 per-game bonuses |
-| Jeremy Cain | LS | Veteran minimum (branch re-signing) | March 11, 2014, 4 p.m. ET | 1 / 2014 | $855,000 | $0; $0; 0 | $855,000 | None | $0 | $855,000 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | Unresolved (no 2013 row) | Branch record (Entry 94; [market draw](league_rails/fa_draws.md)). $855,000 is the 2014 minimum for seven to nine credited seasons, inferred from Chicago's September 2014 figure (single source). Counted in full: the minimum-salary benefit ($570,000 charge) is not applied while his eligibility is unverified |
+| Eugene Monroe | OT | Veteran (branch re-signing; replaced the franchise tender) | March 11, 2014 | 5 / 2018 | $42,500,000 | $8,000,000; $1,600,000; 5 | $4,000,000 | None | $4,000,000 base guaranteed ($20,000,000 total: bonus plus the 2014 and 2015 base) | $5,600,000 | $20,000,000 gross exposure before 2014 salary is earned (bonus plus guaranteed base) | Under contract | $5,747,500 | Branch record (Entry 95; [March 2014 replay log](free_agency/march_2014_replay_log.md)); 2015 base $8,000,000 guaranteed; 2016-2018 each $6,500,000 base, $500,000 roster bonus, up to $500,000 active-game bonuses |
+| Sen'Derrick Marks | DT | Veteran (branch re-signing) | March 11, 2014 | 4 / 2017 | $26,000,000 | $3,000,000; $750,000; 4 | $4,000,000 | None | $4,000,000 base guaranteed ($12,500,000 total: bonus plus the 2014 and 2015 base) | $4,750,000 | $12,500,000 gross exposure before 2014 salary is earned | Under contract | $1.50M | Branch record (Entry 95; [March 2014 replay log](free_agency/march_2014_replay_log.md)); 2015 base $5,500,000 guaranteed; 2016 $6,000,000 base and $750,000 roster bonus; 2017 $5,500,000 base, $750,000 roster bonus, up to $500,000 active-game bonuses |
+| Alterraun Verner | CB | Veteran (branch free agent) | March 11, 2014, after 4 p.m. ET | 4 / 2017 | $29,000,000 | $4,000,000; $1,000,000; 4 | $5,000,000 | None | $5,000,000 base guaranteed ($15,000,000 total: bonus plus the 2014 and 2015 base) | $6,000,000 | $15,000,000 gross exposure before 2014 salary is earned | Under contract | Not a Jacksonville player (Tennessee) | Branch record (Entry 95; [March 2014 replay log](free_agency/march_2014_replay_log.md)); 2015 base $6,000,000 guaranteed; 2016-2017 each $5,500,000 base, $1,000,000 roster bonus, up to $500,000 active-game bonuses |
 
 The UDFA total value is the sum of the three recorded bases ($405,000, $495,000 and $585,000). The 2013 charges for the four UDFAs are their recorded bases; no bonus is recorded.
 
@@ -106,8 +108,8 @@ These players are no longer under Jacksonville control. Their 2013 rows remain i
 
 | Player | Pos | Status at 4 p.m. March 11 |
 |---|---|---|
-| Chad Henne | QB | Lost the March 7 re-signing draw against his real Jaguars terms; unrestricted free agent, unplaced |
-| Sen'Derrick Marks | DT | Lost the re-signing draw at 4 p.m. against his real Jaguars terms; unrestricted free agent, unplaced |
+| Chad Henne | QB | Unrestricted; the first-pass March 7 draw is superseded and his negotiation reopened (Entry 95) |
+| Jeremy Cain | LS | Unrestricted; the first-pass re-signing is superseded and his negotiation reopened (Entry 95) |
 | Maurice Jones-Drew | RB | Unrestricted; Jacksonville's offer (2 years, $8.5M, $3.5M guaranteed) stands; draw held to his real date |
 | C.J. Wilson | DE | Unrestricted; Jacksonville's minimum offer stands; draw held to his real date |
 | Alan Ball | CB | Unrestricted; Jacksonville's one-year offer stands; he has no real 2014 move, and the resolution rule is open |
@@ -116,13 +118,12 @@ These players are no longer under Jacksonville control. Their 2013 rows remain i
 | Kevin Rutland | CB | Not tendered; unrestricted |
 | Brad Meester | C | Retired (Entry 79); contract expired |
 
-## 4. Franchise player and tendered players (5)
+## 4. Tendered players (4)
 
-Each tender was made before 4 p.m. ET March 11 and is unsigned; an unsigned tender counts against the 2014 cap from the league year. Monroe's non-exclusive franchise tender stands after Jacksonville lost the long-term draw.
+Each tender was made before 4 p.m. ET March 11 and is unsigned; an unsigned tender counts against the 2014 cap from the league year. Monroe's franchise tender was replaced by his five-year contract (Entry 95) and is not counted.
 
 | Player | Pos | Expiring contract | Final league year | Total value | 2013 cap charge (baseline) | 2014 status | Planned action and deadline | Source and status |
 |---|---|---|---|---|---|---|---|---|
-| Eugene Monroe | OT | Rookie, 2009 first round (pick #8) | 2013 | $25,000,000 (5 years) | $5,747,500 | **Franchise player (non-exclusive)**, designated February 18, 2014; tender not yet signed | Jacksonville lost the long-term draw on March 11 (Entry 94); he plays 2014 on the tag. 2014 tender: **$11,654,000**, the offensive-line franchise value, official February 28 (library section 2b, Confirmed); 120 percent of his recorded 2013 base of $3,800,000 is $4,560,000, and 120 percent of his recorded 2013 cap number of $5,747,500 is $6,897,000. Both comparison amounts are lower, so the position figure applies ([check](free_agency/signings.md#tags-and-tenders)). It counts against the 2014 cap from March 11. Offer sheets from other clubs possible from March 11 (two first-round picks if Jacksonville declines to match). | Branch record (Entries 87 and 89; [tags and tenders](free_agency/signings.md#tags-and-tenders)); amount Confirmed (library section 2b); the prior-year check rests on an unre-verified 2013 transcription |
 | Cameron Bradfield | OT | UDFA, 2011 (3 years) | 2013 | Unresolved | Unresolved (no 2013 row) | Tendered RFA (lowest, right of first refusal), March 11, 2014; unsigned | 2014 tender: **$1,431,000**. No draft-pick compensation; Jacksonville may match an offer sheet | 2014 tender amounts Confirmed; Branch record (Entry 94) |
 | Toney Clemons | WR | Veteran minimum, late November 2012 (2 years) | 2013 | $870,000 | Unresolved (no 2013 row) | Tendered ERFA, March 11, 2014; unsigned | 2014 tender: **$570,000**. Minimum for two credited seasons (branch inference from the register); he cannot negotiate with other clubs | Branch record (Entry 94) |
 | Mike Brown | WR | UDFA, 2012 | 2013 (Unverified, single report) | Unresolved | Unresolved (no 2013 row) | Tendered ERFA, March 11, 2014; unsigned | 2014 tender: **$495,000**. Minimum for one credited season (branch inference from the register); he cannot negotiate with other clubs | Branch record (Entry 94); final 2013 year Unverified |
@@ -130,32 +131,31 @@ Each tender was made before 4 p.m. ET March 11 and is unsigned; an unsigned tend
 
 ## 5. Summary
 
-### 5a. Counts by 2014 status (March 11, 2014, 4 p.m. ET)
+### 5a. Counts by 2014 status (March 11, 2014, Entry 95)
 
 | Status | Count |
 |---|---:|
 | Under contract, continuing | 38 |
 | Under contract, reserve/future (effective March 11) | 6 |
-| Under contract, signed March 11 (Te'o-Nesheim, Cain) | 2 |
-| Franchise player (non-exclusive, tender not signed) | 1 |
+| Under contract, signed March 11 (Monroe, Marks, Verner) | 3 |
 | Tendered RFA (lowest, not signed) | 1 |
 | Tendered ERFA (not signed) | 3 |
 | **Controlled rows** | **51** |
 | Contracts and rights ended at 4 p.m. (section 3) | 9 |
 
-The 51 controlled rows match the register and the roster. Brandon King and Will Ta'ufo'ou are not Jacksonville's and have no row.
+The 51 controlled rows match the register and the roster.
 
 ### 5b. Working 2014 cap charges
 
 | Component | Players | 2014 amount |
 |---|---:|---:|
-| Signed contracts and futures | 46 | $99,472,821 |
-| Unsigned tenders (Monroe $11,654,000; Bradfield $1,431,000; Clemons and Pasztor $570,000 each; Brown $495,000) | 5 | $14,720,000 |
-| Player contracts including tenders | 51 | $114,192,821 |
+| Signed contracts and futures | 47 | $109,767,821 |
+| Unsigned tenders (Bradfield $1,431,000; Clemons and Pasztor $570,000 each; Brown $495,000) | 4 | $3,066,000 |
+| Player contracts including tenders | 51 | $112,833,821 |
 | Carry-forward dead money | | $51,675 |
-| Recorded cap obligations | | $114,244,496 |
+| Recorded cap obligations | | $112,885,496 |
 
-The 44 contracts priced at Entry 91 are unchanged ($93,417,821). Te'o-Nesheim adds $5,200,000 and Cain $855,000, both branch contracts executed March 11 (Entry 94). The departed free agents carry no 2014 charge. These are scheduled commitments before club adjustments, not a Top-51 count and not certified room: the carryover and adjusted cap stay unresolved (5d, 5e).
+The 44 contracts priced at Entry 91 are unchanged ($93,417,821). The replay adds Monroe $5,600,000, Marks $4,750,000 and Verner $6,000,000; Monroe's contract replaces his $11,654,000 tender once. Against the $133,000,000 league cap the working difference is $20,114,504, before the unresolved carryover, rookies, further signings and reserves. Not a Top-51 count and not certified room.
 
 ### 5c. Dead money carried into 2014
 
@@ -180,10 +180,10 @@ Entry 91 closes these former carry-forward questions. March 2013 releases and th
 
 | Item | Player | Deadline | Status |
 |---|---|---|---|
-| Non-exclusive franchise tag | Eugene Monroe | Designated February 18, 2014 | **Designated** (Entry 87); **$11,654,000**, official February 28 (Entry 89); not signed. Long-term draw lost March 11 (Entry 94): he plays 2014 on the tag unless a later agreement replaces it by July 15 |
-| Lowest RFA tender | Cameron Bradfield | March 11, 4 p.m. ET | **Made** (Entry 94): **$1,431,000** (2014 amounts Confirmed; published by March 6); not signed; right of first refusal only |
-| ERFA tenders | Toney Clemons, Austin Pasztor ($570,000 each); Mike Brown ($495,000) | March 11, 4 p.m. ET | **Made** (Entry 94) at the 2014 minimum for each player's credited seasons (branch inference); not signed |
-| No tender | Allen Reisner, Kevin Rutland | March 11, 4 p.m. ET | Not tendered; unrestricted free agents from 4 p.m. (Entry 94) |
+| Non-exclusive franchise tag | Eugene Monroe | Designated February 18, 2014 | Replaced by his five-year contract on March 11 (Entry 95); the tender charge is removed once and no second designation opens |
+| Lowest RFA tender | Cameron Bradfield | March 11, 4 p.m. ET | **Made** (Entry 94): **$1,431,000**; not signed |
+| ERFA tenders | Toney Clemons, Austin Pasztor ($570,000 each); Mike Brown ($495,000) | March 11, 4 p.m. ET | **Made** (Entry 94); not signed |
+| No tender | Allen Reisner, Kevin Rutland | March 11, 4 p.m. ET | Not tendered; unrestricted free agents |
 | Existing contract | Jonathan Grimes | Through 2014 | $570,000 salary; no tender required |
 
 ## 6. Baseline contradictions and open reconciliations

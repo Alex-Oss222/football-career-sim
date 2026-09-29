@@ -1,6 +1,6 @@
 # Jacksonville Jaguars individual contract details
 
-[Return to the ten-year table](jaguars_cap_2014_2023.md). As of March 11, 2014, Entry 94. Whole US dollars.
+[Return to the ten-year table](jaguars_cap_2014_2023.md). As of March 11, 2014, Entry 95. Whole US dollars.
 
 Annual cells contain the working original or reconstructed contract schedule. Blank years lie outside that deal. The [completion research](../../library/2014_jaguars_contract_completion.md) identifies adopted simulation terms and guarantee assumptions. Cap, scheduled cash and remaining unpaid guarantees are separate amounts.
 
@@ -1919,7 +1919,7 @@ Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
 
 | Field | Detail |
 |---|---|
-| Position / status | QB / Unrestricted free agent at 4 p.m. March 11, 2014 after Jacksonville lost the March 7 re-signing draw (Entry 94) |
+| Position / status | QB / Unrestricted free agent from 4 p.m. March 11, 2014; the first-pass March 7 draw is superseded and his chronology is reopened (Entry 95) |
 | Original contract | Veteran, signed March 14, 2012 |
 | Signed | See expiring-contract description |
 | Term | 2013 |
@@ -1946,7 +1946,7 @@ No new playing contract is recorded for 2014 or later.
 
 Confirmed (register); 2013 OTC row.
 
-Unrestricted free agent at 4 p.m. March 11, 2014 after Jacksonville lost the March 7 re-signing draw (Entry 94).
+Unrestricted free agent from 4 p.m. March 11, 2014; the first-pass March 7 draw is superseded and his chronology is reopened (Entry 95).
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
 
@@ -1991,61 +1991,71 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Field | Detail |
 |---|---|
-| Position / status | OT / **Franchise player (non-exclusive)**, designated February 18, 2014; tender not yet signed; long-term draw lost March 11 |
-| Original contract | Rookie, 2009 first round (pick #8) |
-| Signed | See expiring-contract description |
-| Term | 1 / 2014 (unsigned franchise tender) |
-| Contract value | $25,000,000 (5 years) |
-| Bonus terms | Not established for a new contract |
-| Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | Unsigned tender; $0 guaranteed before signing. Signing would fully guarantee the $11,654,000 tender. |
-| Schedule basis | Executed branch terms / researched original schedule |
+| Position / status | OT / Under contract |
+| Original contract | Veteran (branch re-signing; replaced the franchise tender) |
+| Signed | March 11, 2014 |
+| Term | 5 / 2018 |
+| Contract value | $42,500,000 |
+| Bonus terms | $8,000,000; $1,600,000; 5 |
+| Remaining unpaid salary guarantee | $12,000,000 |
+| Guarantee basis | $20,000,000 fully guaranteed at signing (signing bonus plus 2014 and 2015 base) |
+| Schedule basis | Executed branch terms (Entry 95) |
 
 ### Annual schedule
 
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
-| 2014 | $11,654,000 | $0 | $0 | $11,654,000 | $11,654,000 | $0 |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
+| 2014 | $4,000,000 | $1,600,000 | $0 | $5,600,000 | $12,000,000 | $4,000,000 |
+| 2015 | $8,000,000 | $1,600,000 | $0 | $9,600,000 | $8,000,000 | $8,000,000 |
+| 2016 | $6,500,000 | $1,600,000 | $1,000,000 | $9,100,000 | $7,500,000 | $0 |
+| 2017 | $6,500,000 | $1,600,000 | $1,000,000 | $9,100,000 | $7,500,000 | $0 |
+| 2018 | $6,500,000 | $1,600,000 | $1,000,000 | $9,100,000 | $7,500,000 | $0 |
 | 2019 |  |  |  |  |  |  |
 | 2020 |  |  |  |  |  |  |
 | 2021 |  |  |  |  |  |  |
 | 2022 |  |  |  |  |  |  |
 | 2023 |  |  |  |  |  |  |
 
-The tender is unsigned. Its annual cash is conditional; the full salary guarantee begins if signed.
+### Release comparison
+
+| Year | Gross pre-June-1 dead money | Gross cap reduction |
+|---|---|---|
+| 2014 | $20,000,000 | -$14,400,000 |
+| 2015 | $14,400,000 | -$4,800,000 |
+| 2016 | $4,800,000 | $4,300,000 |
+| 2017 | $3,200,000 | $5,900,000 |
+| 2018 | $1,600,000 | $7,500,000 |
+
+Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
-Branch record (Entries 87 and 89; tags and tenders); amount Confirmed (library section 2b); the prior-year check rests on an unre-verified 2013 transcription.
+Branch record (Entry 95; March 2014 replay log). Replaces the $11,654,000 tender once; 2016-2018 cap budgets include the full $500,000 active-game bonuses.
 
-Jacksonville lost the long-term re-signing draw on March 11 (Entry 94; his real Baltimore re-signing does not apply), so he plays 2014 on the non-exclusive franchise tender, **$11,654,000**, the offensive-line value, official February 28. The tender is unsigned; it counts against the 2014 cap from March 11. Another club may sign him to an offer sheet (two first-round picks if Jacksonville declines to match).
-
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md), [2014 jaguars contract completion](../../library/2014_jaguars_contract_completion.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [signings](../../career/2014/offseason/free_agency/signings.md), [march 2014 replay log](../../career/2014/offseason/free_agency/march_2014_replay_log.md).
 
 ## Sen'Derrick Marks
 
-Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
-
 | Field | Detail |
 |---|---|
-| Position / status | IDL / Unrestricted free agent at 4 p.m. March 11, 2014 after Jacksonville lost the re-signing draw (Entry 94) |
-| Original contract | Veteran (branch signing), March 12, 2013 |
-| Signed | See expiring-contract description |
-| Term | 2013 |
-| Contract value | $1.50M (1 year) |
+| Position / status | IDL / Under contract |
+| Original contract | Veteran (branch re-signing) |
+| Signed | March 11, 2014 |
+| Term | 4 / 2017 |
+| Contract value | $26,000,000 |
+| Bonus terms | $3,000,000; $750,000; 4 |
+| Remaining unpaid salary guarantee | $9,500,000 |
+| Guarantee basis | $12,500,000 fully guaranteed at signing (signing bonus plus 2014 and 2015 base) |
+| Schedule basis | Executed branch terms (Entry 95) |
 
 ### Annual schedule
 
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
-| 2014 |  |  |  |  |  |  |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
+| 2014 | $4,000,000 | $750,000 | $0 | $4,750,000 | $7,000,000 | $4,000,000 |
+| 2015 | $5,500,000 | $750,000 | $0 | $6,250,000 | $5,500,000 | $5,500,000 |
+| 2016 | $6,000,000 | $750,000 | $750,000 | $7,500,000 | $6,750,000 | $0 |
+| 2017 | $5,500,000 | $750,000 | $1,250,000 | $7,500,000 | $6,750,000 | $0 |
 | 2018 |  |  |  |  |  |  |
 | 2019 |  |  |  |  |  |  |
 | 2020 |  |  |  |  |  |  |
@@ -2053,15 +2063,22 @@ Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
 | 2022 |  |  |  |  |  |  |
 | 2023 |  |  |  |  |  |  |
 
-No new playing contract is recorded for 2014 or later.
+### Release comparison
+
+| Year | Gross pre-June-1 dead money | Gross cap reduction |
+|---|---|---|
+| 2014 | $12,500,000 | -$7,750,000 |
+| 2015 | $7,750,000 | -$1,500,000 |
+| 2016 | $1,500,000 | $6,000,000 |
+| 2017 | $750,000 | $6,750,000 |
+
+Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
-Branch record.
+Branch record (Entry 95; March 2014 replay log). The 2016 active-game bonus was converted to base salary.
 
-Unrestricted free agent at 4 p.m. March 11, 2014 after Jacksonville lost the re-signing draw (Entry 94).
-
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [signings](../../career/2014/offseason/free_agency/signings.md), [march 2014 replay log](../../career/2014/offseason/free_agency/march_2014_replay_log.md).
 
 ## C.J. Wilson
 
@@ -2176,23 +2193,21 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ## Jeremy Cain
 
+Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | LS / Under contract |
-| Original contract | Veteran minimum (branch re-signing) |
+| Position / status | LS / Unrestricted free agent from 4 p.m. March 11, 2014; the first-pass re-signing is superseded and his negotiation is reopened (Entry 95) |
+| Original contract | Veteran, February 2011 |
 | Signed | March 11, 2014 (4 p.m. ET) |
-| Term | 1 / 2014 |
-| Contract value | $855,000 |
-| Bonus terms | $0; $0; 0 |
-| Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | $0 |
-| Schedule basis | Executed branch terms (Entry 94) |
+| Term | 2013 |
+| Contract value | Disputed: $2.45M or $3.0M (3 years) |
 
 ### Annual schedule
 
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
-| 2014 | $855,000 | $0 | $0 | $855,000 | $855,000 | $0 |
+| 2014 |  |  |  |  |  |  |
 | 2015 |  |  |  |  |  |  |
 | 2016 |  |  |  |  |  |  |
 | 2017 |  |  |  |  |  |  |
@@ -2203,17 +2218,13 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | 2022 |  |  |  |  |  |  |
 | 2023 |  |  |  |  |  |  |
 
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $0 | $855,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
+No new playing contract is recorded for 2014 or later.
 
 ### Contract notes
 
 Branch record (Entry 94, uncontested market draw). $855,000 is the 2014 minimum for seven to nine credited seasons, inferred from Chicago's September 2014 figure (single source). Counted in full; the Article 26 minimum-salary benefit (a $570,000 charge) is not applied because his eligibility is unverified.
+
+Negotiation reopened in the March 2014 replay (Entry 95).
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md), [league year method](../../career/2014/offseason/league_year_method.json).
 
@@ -2537,28 +2548,28 @@ Under contract for 2014; no ERFA tender required.
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../library/2014_jaguars_contract_completion.md).
 
-## Daniel Te'o-Nesheim
+## Alterraun Verner
 
 | Field | Detail |
 |---|---|
-| Position / status | EDGE / Under contract |
+| Position / status | CB / Under contract |
 | Original contract | Veteran (branch free agent) |
-| Signed | March 11, 2014 (4 p.m. ET) |
-| Term | 3 / 2016 |
-| Contract value | $18,800,000 |
-| Bonus terms | $3,000,000; $1,000,000; 3 |
-| Remaining unpaid salary guarantee | $7,300,000 |
-| Guarantee basis | $10,300,000 (signing bonus plus 2014 and 2015 base salary) |
-| Schedule basis | Executed branch terms (Entry 94) |
+| Signed | March 11, 2014, after 4 p.m. ET |
+| Term | 4 / 2017 |
+| Contract value | $29,000,000 |
+| Bonus terms | $4,000,000; $1,000,000; 4 |
+| Remaining unpaid salary guarantee | $11,000,000 |
+| Guarantee basis | $15,000,000 fully guaranteed at signing (signing bonus plus 2014 and 2015 base) |
+| Schedule basis | Executed branch terms (Entry 95) |
 
 ### Annual schedule
 
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
-| 2014 | $4,200,000 | $1,000,000 | $0 | $5,200,000 | $7,200,000 | $4,200,000 |
-| 2015 | $3,100,000 | $1,000,000 | $0 | $4,100,000 | $3,100,000 | $3,100,000 |
-| 2016 | $7,000,000 | $1,000,000 | $1,500,000 | $9,500,000 | $8,500,000 | $0 |
-| 2017 |  |  |  |  |  |  |
+| 2014 | $5,000,000 | $1,000,000 | $0 | $6,000,000 | $9,000,000 | $5,000,000 |
+| 2015 | $6,000,000 | $1,000,000 | $0 | $7,000,000 | $6,000,000 | $6,000,000 |
+| 2016 | $5,500,000 | $1,000,000 | $1,500,000 | $8,000,000 | $7,000,000 | $0 |
+| 2017 | $5,500,000 | $1,000,000 | $1,500,000 | $8,000,000 | $7,000,000 | $0 |
 | 2018 |  |  |  |  |  |  |
 | 2019 |  |  |  |  |  |  |
 | 2020 |  |  |  |  |  |  |
@@ -2570,14 +2581,15 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Year | Gross pre-June-1 dead money | Gross cap reduction |
 |---|---|---|
-| 2014 | $10,300,000 | -$5,100,000 |
-| 2015 | $5,100,000 | -$1,000,000 |
-| 2016 | $1,000,000 | $8,500,000 |
+| 2014 | $15,000,000 | -$9,000,000 |
+| 2015 | $9,000,000 | -$2,000,000 |
+| 2016 | $2,000,000 | $6,000,000 |
+| 2017 | $1,000,000 | $7,000,000 |
 
 Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
-Branch record (Entry 94, uncontested market draw). Memo section 3 offer; annual schedule is the simulation reconstruction fixed in league_year_method.json before the draw.
+Branch record (Entry 95; March 2014 replay log). The historical Tampa Bay signing does not occur.
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md), [league year method](../../career/2014/offseason/league_year_method.json), [fa draws](../../career/2014/offseason/league_rails/fa_draws.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [signings](../../career/2014/offseason/free_agency/signings.md), [march 2014 replay log](../../career/2014/offseason/free_agency/march_2014_replay_log.md).

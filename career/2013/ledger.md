@@ -2748,3 +2748,26 @@ Atomic closure: contract register/table, futures outcomes, working depth-chart c
 **Atomic closure.** The following now agree: the memo amendment, the method and results files, the signings, tags and tenders record, the draw log, the trade offer log, targets, completed-trades and README status lines, the contract table (update-log row) and contract status register, the financial inputs and generated tracker ($114,192,821 scheduled 2014 player cap including $14,720,000 of unsigned tenders), the working depth chart and its JSON copy (update-log row), the roster, the 31 club rails pages and the free-agent pool, the calendar, the March 4 to 11 turn output, and Documents 4 (register 48) and 5 (state 69). The private snapshot is advanced only after merge.
 
 **Commit closed - Canonical update - March 11, 2014 - League year opened (tenders, futures, market draws and trade offers) - canonical through March 11, 2014**
+
+
+## Entry 95: March 2014 free-agency replay (Monroe, Marks and Verner signed)
+
+**Effective canonical state:** March 11, 2014, after the 4 p.m. ET league-year opening; correction, no time advance.
+**Recorded:** September 29, 2026
+**Checkpoint:** `Canonical correction - March 11, 2014 - March 2014 free-agency replay (Monroe, Marks and Verner signed)`
+**Preceding global package checkpoint:** `Canonical update - March 11, 2014 - League year opened (tenders, futures, market draws and trade offers)`
+
+**Authority and method.** After Entry 94 closed, the user (as Stone's author) objected that the first pass treated Stone's memo figures as fixed offers, when they were baselines for Caldwell, the general manager, to negotiate from with the cap room available. The user directed a replay of the March 8 to 11 negotiations and conducted it in a separate chat session; its record is filed verbatim as [the March 2014 replay log](../2014/offseason/free_agency/march_2014_replay_log.md), which is the event owner for this entry. Under that instruction the replay is a judgment-based simulation: Caldwell sets offers, and each player and his representatives may accept, counter or decline. It uses no private draw and claims no acceptance probability. This supersedes Entry 94's first-pass market draws for the players it resolves. The first-pass results (`league_year_results.json`) are preserved as history, marked superseded, and are not rerolled or reused. The label-swap rule still applies to every replay outcome.
+
+**Resolved in the replay (March 11, 2014).**
+- **Eugene Monroe, OT:** re-signed, five years (2014 to 2018), up to $42,500,000, $20,000,000 fully guaranteed ($8,000,000 signing bonus plus the $4,000,000 2014 and $8,000,000 2015 base). 2014 cap $5,600,000. The contract replaces his $11,654,000 franchise tender once; no second designation opens. The real Baltimore re-signing does not apply.
+- **Sen'Derrick Marks, DT:** re-signed, four years (2014 to 2017), up to $26,000,000, $12,500,000 fully guaranteed ($3,000,000 bonus plus the $4,000,000 and $5,500,000 base). 2014 cap $4,750,000. This meets the precondition for including Alualu in package I; no trade offer is placed by this entry.
+- **Alterraun Verner, CB:** signed after 4 p.m., four years (2014 to 2017), up to $29,000,000, $15,000,000 fully guaranteed ($4,000,000 bonus plus the $5,000,000 and $6,000,000 base). 2014 cap $6,000,000. The real Tampa Bay signing does not occur.
+
+**Reopened, each for its own replay entry.** Daniel Te'o-Nesheim (first-pass signing withdrawn; unsigned), Jeremy Cain (first-pass re-signing withdrawn; unrestricted), Chad Henne (the March 7 event needs its own chronology treatment), Aqib Talib (the next negotiation), and the trade packages. Package D's trigger (a veteran-edge signing) no longer holds, so the Babin offer to Miami is withdrawn; F1 stays offered. Arizona's first-pass answer to package I is superseded with the other first-pass results. The held later draws (Tate, Hawkins, Edelman), Jones-Drew, C.J. Wilson, Ball, Brent Grimes and Tarell Brown remain open.
+
+**Accounting.** 2014 scheduled player cap $112,833,821 including $3,066,000 of unsigned RFA/ERFA tenders, plus $51,675 dead money: $112,885,496, which is $20,114,504 below the $133,000,000 cap before the unresolved carryover, rookies, further signings and reserves. Later commitments: 2015 $97,655,137; 2016 $43,811,292; 2017 $24,600,000; 2018 $9,100,000. Controlled roster: 51 (Te'o-Nesheim and Cain out; Marks and Verner in).
+
+**Atomic closure.** The replay log, signings record, draw log (first pass marked superseded), trade offer log, contract table and register, financial inputs and generated tracker, roster, working depth chart and its JSON copy, the Tennessee, Tampa Bay, Baltimore and Chicago rails pages, the free-agent pool, calendar, and Documents 4 (register 49) and 5 (state 70) agree. Draft Codex PR 153 (an unsigned Monroe proposal) is superseded by the replay log and is not merged. The private snapshot is advanced only after merge.
+
+**Commit closed - Canonical correction - March 11, 2014 - March 2014 free-agency replay (Monroe, Marks and Verner signed) - canonical through March 11, 2014**

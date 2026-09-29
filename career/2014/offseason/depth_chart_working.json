@@ -2,9 +2,9 @@
  "team": "Jacksonville Jaguars",
  "season": 2014,
  "status": "WORKING VIEW, NOT A GAME INPUT. Carried from the closed 2013 chart minus players no longer controlled; no 2014 depth decision has been made.",
- "as_of": "March 11, 2014, 4 p.m. ET (ledger Entry 94)",
+ "as_of": "March 11, 2014, after the 4 p.m. ET league-year opening (ledger Entry 95)",
  "effective": "Carried from the closed 2013 chart (January 6, 2014, AFC Divisional preparation)",
- "sources": "career/2013/depth_chart.json (Git 781213a, carried order); current career/2013/roster.md; current career/2014/offseason/contract_status_register.md; career/2014/offseason/free_agency/signings.md; ledger Entries 79 and 85 through 89; Entry 94 (league year opened)",
+ "sources": "career/2013/depth_chart.json (Git 781213a, carried order); current career/2013/roster.md; current career/2014/offseason/contract_status_register.md; career/2014/offseason/free_agency/signings.md; ledger Entries 79 and 85 through 89; Entry 94 (league year opened); Entry 95 (March 2014 free-agency replay)",
  "rule": "Order within each kernel position group is the closed 2013 order exactly as carried, minus players no longer controlled. It is not a 2014 decision. Stone owns the 2014 order and changes it only by decision; each change is logged in career/2014/depth_chart.md.",
  "note": "Kept under career/2014/offseason/ on purpose. runtime/seasons.py treats career/2014/depth_chart.json as the 2014 game input, and runtime/week_inputs.py reads that file as Stone's order. A chart that still carries pending free agents and players whose contracts start March 11 must not satisfy that input. Promote a reviewed chart to career/2014/depth_chart.json only when 2014 control, medical clearance and Stone's depth decisions are established.",
  "depth": {
@@ -41,6 +41,7 @@
    "Mark Asper"
   ],
   "DL": [
+   "Sen'Derrick Marks",
    "Jason Babin",
    "Roy Miller",
    "Tyson Alualu",
@@ -73,9 +74,7 @@
   "P": [
    "Bryan Anger"
   ],
-  "LS": [
-   "Jeremy Cain"
-  ]
+  "LS": []
  },
  "positions": {
   "Kirk Cousins": "QB",
@@ -121,7 +120,8 @@
   "Brynden Trawick": "S",
   "Josh Scobee": "K",
   "Bryan Anger": "P",
-  "Jeremy Cain": "LS"
+  "Jeremy Cain": "LS",
+  "Sen'Derrick Marks": "DT"
  },
  "roles": {
   "Kirk Cousins": [
@@ -135,14 +135,15 @@
   ]
  },
  "contract_flags": {
-  "Eugene Monroe": "Franchise player (non-exclusive); tender not signed; long-term draw lost March 11 (Entry 94)",
-  "Jeremy Cain": "Under contract through 2014 (re-signed March 11, Entry 94)",
+  "Eugene Monroe": "Under contract through 2018 (re-signed March 11, Entry 95)",
   "Cameron Bradfield": "Tendered RFA (lowest), unsigned",
   "Toney Clemons": "Tendered ERFA, unsigned",
   "Mike Brown": "Tendered ERFA, unsigned",
   "Austin Pasztor": "Tendered ERFA, unsigned",
   "John Parker Wilson": "Under contract through 2014 (Entry 91)",
-  "Jonathan Grimes": "Under contract through 2014 (Entry 91)"
+  "Jonathan Grimes": "Under contract through 2014 (Entry 91)",
+  "Sen'Derrick Marks": "Under contract through 2017 (re-signed March 11, Entry 95)",
+  "Alterraun Verner": "Under contract through 2017 (signed March 11, Entry 95)"
  },
  "availability_notes": {
   "Paul Posluszny": "Out, head/neck, independent medical hold (Week 13); projected return April 5, 2014 (career/2013/roster.md)",
@@ -158,7 +159,7 @@
   "Chad Henne": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
   "Kevin Rutland": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
   "Maurice Jones-Drew": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
-  "Sen'Derrick Marks": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)"
+  "Jeremy Cain": "Unrestricted from 4 p.m. March 11, 2014; negotiation reopened in the replay (Entry 95)"
  },
  "game_day_inactives": null,
  "update_log": [
@@ -191,10 +192,16 @@
    "event": "League year opened",
    "ledger_entry": "Entry 94",
    "change": "Removed Henne (QB2), Jones-Drew (RB1), Reisner (TE3), Marks and C.J. Wilson (DL), Brent Grimes, Ball and Rutland (DB): the players below each moved up only by the removal, no reordering. Added, not placed: the six futures and Te'o-Nesheim. Tender and franchise flags updated; Cain re-signed"
+  },
+  {
+   "date": "March 11, 2014 correction",
+   "event": "March 2014 free-agency replay",
+   "ledger_entry": "Entry 95",
+   "change": "Marks re-signed and restored to his carried 2013 place (DL 1); Verner added, not placed; Te'o-Nesheim's first-pass signing withdrawn; Cain's first-pass re-signing withdrawn, so the LS slot is open; Monroe signed through 2018. No other order change"
   }
  ],
  "added_not_placed": {
-  "note": "Players under contract from March 11, 2014 whom Stone has not placed in the order: the six reserve/future contracts (Entry 85, effective March 11) and Daniel Te'o-Nesheim (signed March 11, Entry 94). Listed below their groups with no depth position or role.",
+  "note": "Players under contract from March 11, 2014 whom Stone has not placed in the order: the six reserve/future contracts (Entry 85) and Alterraun Verner (signed March 11, Entry 95). Listed below their groups with no depth position or role.",
   "QB": [
    "Tyler Bray"
   ],
@@ -205,11 +212,11 @@
    "Jerrell Jackson"
   ],
   "DL": [
-   "Daniel Te'o-Nesheim",
    "Jerome Long",
    "D'Anthony Smith"
   ],
   "DB": [
+   "Alterraun Verner",
    "Antwon Blake"
   ]
  },
@@ -220,6 +227,6 @@
   "Jerome Long": "DT",
   "D'Anthony Smith": "DT",
   "Antwon Blake": "S",
-  "Daniel Te'o-Nesheim": "DE"
+  "Alterraun Verner": "CB"
  }
 }
