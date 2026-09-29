@@ -72,3 +72,7 @@
 
 | Real date | Move | Player | Detail | Source | Gate passed in branch? |
 |---|---|---|---|---|---|
+| February 26, 2014 | Contract extension | Jason Peters, T | Extension agreed and announced by the club; terms not recorded | [ProFootballTalk, February 26, 2014](https://profootballtalk.nbcsports.com/2014/02/26/jason-peters-eagles-agree-to-extension/); OverTheCap-derived NFLverse contract export (a 2014 Eagles contract, undated). Move Confirmed; day Single source | Yes: applied February 28, 2014 by Entry 89 |
+| February 28, 2014 | Re-signing | Jeremy Maclin, WR | Re-signed with Philadelphia before free agency. The February 28 item may report the agreement rather than the formal signing; the formal signing date is Unverified. No generated PHI row: `../league_exceptions.csv` lists his club as unresolved | [Niners Nation roundup, February 28, 2014](https://www.ninersnation.com/2014/2/28/5457994/seahawks-release-sidney-rice-red-bryant-eagles-sign-jeremy-maclin); OverTheCap-derived NFLverse contract export (a 2014 Eagles contract, undated). Move Confirmed; day Single source | Yes: applied February 28, 2014 by Entry 89 |
+
+**Coverage note (Entry 89, February 28, 2014):** the February 26 to 28 moves in this table come from a bounded two-pass search. The web-search budget ran out during pass 2, which could therefore only re-read the evidence stored from pass 1. Eighteen of the 31 other clubs had no move found in the window; that is not a verified negative, and other moves by this club in the window may exist.

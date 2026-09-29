@@ -78,3 +78,8 @@
 
 | Real date | Move | Player | Detail | Source | Gate passed in branch? |
 |---|---|---|---|---|---|
+| February 27, 2014 | Re-signing | Roberto Garza, C | Re-signed; the club's own pending free agent | Wikipedia, 2014 Chicago Bears season (seen as a search summary; tertiary); OverTheCap-derived NFLverse contract export (a 2014 Bears contract, undated). Move Confirmed; day Single source (tertiary) | Yes: applied February 28, 2014 by Entry 89, with its single-source label |
+| February 27, 2014 | Re-signing | Dante Rosario, TE | Re-signed; the club's own pending free agent | Wikipedia, 2014 Chicago Bears season (seen as a search summary; tertiary). Single source for the move and the day | Yes: applied February 28, 2014 by Entry 89, with its single-source label |
+| February 28, 2014 | Re-signing | Kelvin Hayden, CB | Re-signed; the club's own pending free agent. No identity row in the league database | Wikipedia, 2014 Chicago Bears season (seen as a search summary; tertiary). Single source for the move and the day | Yes: applied February 28, 2014 by Entry 89, with its single-source label |
+
+**Coverage note (Entry 89, February 28, 2014):** the February 26 to 28 moves in this table come from a bounded two-pass search. The web-search budget ran out during pass 2, which could therefore only re-read the evidence stored from pass 1. Eighteen of the 31 other clubs had no move found in the window; that is not a verified negative, and other moves by this club in the window may exist.

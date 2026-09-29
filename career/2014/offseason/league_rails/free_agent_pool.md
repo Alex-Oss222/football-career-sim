@@ -1,6 +1,6 @@
 # 2014 free-agent pool
 
-**Branch date:** February 2, 2014. **Research checked:** September 28, 2026. The nine players on the February 2 target board have verified pending free-agent classifications below. The rest of this file remains an unverified contract-candidate inventory, not a complete or executable free-agent pool. Jacksonville's own pending free agents belong in `career/2014/offseason/contract_status_register.md`.
+**Branch date:** February 2, 2014; status changes through February 28, 2014 are recorded in the section below the verified targets (Entry 89). **Research checked:** September 28, 2026. The nine players on the February 2 target board have verified pending free-agent classifications below. The rest of this file remains an unverified contract-candidate inventory, not a complete or executable free-agent pool. Jacksonville's own pending free agents belong in `career/2014/offseason/contract_status_register.md`.
 
 ## Verified February 2 targets
 
@@ -43,6 +43,41 @@ None of the nine targets is classified as pending ERFA. This is not a claim that
 F1 is an NFL.com report republished by the Patriots; those two outlets are not counted as independent passes. F2 supplies the independent check for eight players; F3 supplies it for Hardy. Sources published after February 2 corroborate only the classifications already present in F1. Their later developments are not imported into the branch.
 
 **Identity check:** the target is **Golden Tate, Seattle WR**, not Ben Tate, Houston RB, or Brandon Tate, Cincinnati WR. Golden Tate and Andrew Hawkins were missing from the generated candidate list and are now included above. The seven other target rows have been moved out of that unverified list; their old contract amounts are not treated as verified research.
+
+### Status changes on the rails, February 26 to 28, 2014 (Entry 89)
+
+These real moves are applied at the February 28 checkpoint from the dated rows in the club pages (`clubs/`), where each source is cited. They change open-market availability only. The verified classifications above and the generated candidates below are February 2 records and are not rewritten. Only moves the bounded search found are listed; see the coverage note in each club page.
+
+| Player | Club (2013) | Pos | Real move and date | Effect in this pool | Status label |
+|---|---|---|---|---|---|
+| Greg Hardy | Carolina Panthers | DE | Franchise tag, February 28, recorded as non-exclusive | A verified target no longer on the open market. A non-exclusive franchise player can sign another club's offer sheet from March 11, with two first-round picks as compensation if Carolina declines to match. Jacksonville's position is in Document 5 | Confirmed (tag type: see the Carolina page) |
+| Jordan Gross | Carolina Panthers | T | Retired, February 26 | Listed below as a generated candidate; off the market | Confirmed |
+| Dennis Pitta | Baltimore Ravens | TE | Re-signed, February 28 | Listed below as a generated candidate; off the market | Confirmed |
+| Jimmy Graham | New Orleans Saints | TE | Franchise tag, February 28 | Listed below as a generated candidate; no longer on the open market | Confirmed |
+| Nick Folk | New York Jets | K | Franchise tag, February 28 | Not a generated candidate; no longer on the open market | Confirmed |
+| Roberto Garza | Chicago Bears | C | Re-signed, February 27 | Not a generated candidate; off the market | Move Confirmed; day Single source |
+| Dante Rosario | Chicago Bears | TE | Re-signed, February 27 | Not a generated candidate; off the market | Single source |
+| Kelvin Hayden | Chicago Bears | CB | Re-signed, February 28 | Not in the league database; off the market | Single source |
+| Jeremy Maclin | Philadelphia Eagles | WR | Re-signed (agreement reported February 28) | Not a generated candidate; off the market | Move Confirmed; day Single source |
+| Jason Peters | Philadelphia Eagles | T | Extension, February 26 | Was under contract; no pool effect | Move Confirmed; day Single source |
+
+**Released veterans, free agents from their release dates.** The generated candidates cover expiring contracts only, so released players are listed here. Each is a free agent from his release date, subject to the league's waiver rules; waiver status is not researched here, and no contract figure is recorded. None was on Jacksonville's February 2 target board.
+
+| Player | Released by | Pos | Release date | Status label |
+|---|---|---|---|---|
+| D'Qwell Jackson | Cleveland Browns | ILB | February 26, 2014 | Confirmed |
+| Vonta Leach | Baltimore Ravens | FB | February 27, 2014 | Confirmed |
+| Jameel McClain | Baltimore Ravens | ILB | February 27, 2014 | Confirmed |
+| Jasper Brinkley | Arizona Cardinals | ILB | February 28, 2014 | Confirmed |
+| Sidney Rice | Seattle Seahawks | WR | February 28, 2014 | Confirmed |
+| Red Bryant | Seattle Seahawks | DE | February 28, 2014 | Confirmed |
+| Steve Gregory | New England Patriots | S | February 28, 2014 | Confirmed |
+| Everette Brown | Dallas Cowboys | DE | February 28, 2014 | Move Confirmed; day Single source |
+| Corvey Irvin | Dallas Cowboys | DT | February 28, 2014 | Move Confirmed; day Single source |
+| Ray Dominguez | Dallas Cowboys | G | February 28, 2014 | Move Confirmed; day Single source |
+| Jeff Olson | Dallas Cowboys | G | February 28, 2014 | Move Confirmed; day Single source |
+
+**Pending verification, not applied:** Khalif Barnes (Oakland, reported re-signing February 28) and Zach Potter (Houston, reported signing February 26). Both are listed in their club pages with sources.
 
 <!-- BEGIN GENERATED LEAGUE DATABASE -->
 ## Generated pending-free-agent candidates

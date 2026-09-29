@@ -81,3 +81,6 @@
 
 | Real date | Move | Player | Detail | Source | Gate passed in branch? |
 |---|---|---|---|---|---|
+| February 26, 2014 | Signing (reported) | Zach Potter, TE | Reported free-agent signing. The first pass rated it confirmed; the second pass could not re-open any source. He is not a Jacksonville player: his Jacksonville control ended March 12, 2013 (Entry 9) | [ProFootballTalk, February 26, 2014](https://profootballtalk.nbcsports.com/2014/02/26/texans-are-signing-former-jags-tight-end-zach-potter/); [HoustonTexans.com](https://www.houstontexans.com/news/texans-sign-te-zach-potter-12677599). Unverified | **No: pending verification; not applied.** Recorded so a later session can verify it |
+
+**Coverage note (Entry 89, February 28, 2014):** the February 26 to 28 moves in this table come from a bounded two-pass search. The web-search budget ran out during pass 2, which could therefore only re-read the evidence stored from pass 1. Eighteen of the 31 other clubs had no move found in the window; that is not a verified negative, and other moves by this club in the window may exist.
