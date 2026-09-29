@@ -2771,3 +2771,27 @@ Atomic closure: contract register/table, futures outcomes, working depth-chart c
 **Atomic closure.** The replay log, signings record, draw log (first pass marked superseded), trade offer log, contract table and register, financial inputs and generated tracker, roster, working depth chart and its JSON copy, the Tennessee, Tampa Bay, Baltimore and Chicago rails pages, the free-agent pool, calendar, and Documents 4 (register 49) and 5 (state 70) agree. Draft Codex PR 153 (an unsigned Monroe proposal) is superseded by the replay log and is not merged. The private snapshot is advanced only after merge.
 
 **Commit closed - Canonical correction - March 11, 2014 - March 2014 free-agency replay (Monroe, Marks and Verner signed) - canonical through March 11, 2014**
+
+
+## Entry 96: Free-agency replay continued (Talib signed; Tate to Detroit)
+
+**Effective canonical state:** March 12, 2014.
+**Recorded:** September 29, 2026
+**Checkpoint:** `Canonical update - March 12, 2014 - Free-agency replay (Talib signed; Tate to Detroit)`
+**Preceding global package checkpoint:** `Canonical correction - March 11, 2014 - March 2014 free-agency replay (Monroe, Marks and Verner signed)`
+
+**Authority.** The user supplied the updated replay log, now filed as [the March 2014 replay log](../2014/offseason/free_agency/march_2014_replay_log.md), which remains the event owner. The method is unchanged from Entry 95: judgment-based negotiation, no private draw, competing clubs judged by the same criteria. Tate's decision is dated March 12, so the master clock advances to March 12.
+
+**Aqib Talib, CB (March 11, after 4 p.m.).** Signed: five years (2014 to 2018), up to $46,500,000, $21,500,000 fully guaranteed ($6,500,000 signing bonus plus the $6,500,000 2014 and $8,500,000 2015 base). 2014 cap $7,800,000. Later years carry $1,000,000 roster bonuses and up to $1,000,000 of active-game bonuses. The historical Denver signing does not occur. With both primary corners signed, neither corner-loss contingency applies; Brent Grimes and Tarell Brown are not pursued automatically.
+
+**Golden Tate, WR (March 12).** Declined Jacksonville's final offer (five years, up to $32,500,000, $13,500,000 fully guaranteed) and signed with Detroit on his real terms (five years, $31,000,000). Nothing is booked for Jacksonville. Package A does not activate on its original terms, and package H stays unavailable.
+
+**Stone's new instruction (memo amendment).** Pursue Julian Edelman as the receiver. If Edelman signs, offer package A to Seattle (Shorts and Blackmon for No. 36) even without Tate; otherwise memo contingency 3 keeps Shorts and opens his extension process.
+
+**Accounting.** Scheduled 2014 player cap $120,633,821 including $3,066,000 of unsigned tenders, plus $51,675 dead money. The replay log's team-salary treatment is carried in the worksheet: one $420,000 minimum falls outside the offseason Top 51 ($120,265,496), and the $504,000 opening offseason-workout charge (Article 13 section 5(g)) is added, for $120,769,496, a $12,230,504 working difference against the $133,000,000 cap before carryover, rookies and reserves. Later commitments: 2015 $107,455,137; 2016 $53,111,292; 2017 $34,400,000; 2018 $18,900,000. Controlled roster: 52.
+
+**Open.** Te'o-Nesheim is the next negotiation; then Edelman, Cain, Henne, Hawkins, Jones-Drew, C.J. Wilson, Ball and the trade packages. The rails for March 11 evening and March 12 are not swept apart from Tate's move.
+
+**Atomic closure.** The replay log, memo amendment, signings record, draw-log note, trade pages, contract table, financial inputs and generated tracker, worksheet, roster, working depth chart and its JSON copy, the Denver, New England, Detroit and Seattle rails pages, the free-agent pool, calendar and Documents 4 (register 50) and 5 (state 71) agree. The private snapshot is advanced only after merge.
+
+**Commit closed - Canonical update - March 12, 2014 - Free-agency replay (Talib signed; Tate to Detroit) - canonical through March 12, 2014**

@@ -1,12 +1,12 @@
 # Jacksonville Jaguars roster
 
-**As of:** March 11, 2014, after the 4:00 p.m. ET league-year opening (ledger Entry 95, the March 2014 free-agency replay, correcting Entry 94). Eugene Monroe re-signed for five years, replacing his franchise tender; 2013 season complete (Jacksonville eliminated in the AFC Divisional round).
-**Canonical controlled-player count:** **51** (offseason roster; the 90-player limit applies from the league year).
-**Changes at the league year (Entries 94 and 95):** Monroe and Sen'Derrick Marks re-signed and Alterraun Verner signed in the replay; Cameron Bradfield (RFA) and Toney Clemons, Mike Brown and Austin Pasztor (ERFA) tendered; the six reserve/future contracts took effect. Left control at 4 p.m.: Chad Henne, Jeremy Cain, Maurice Jones-Drew, C.J. Wilson, Alan Ball and Brent Grimes (unrestricted; Henne's and Cain's negotiations reopened in the replay), Allen Reisner and Kevin Rutland (not tendered) and Brad Meester (retired). See section 5.
+**As of:** March 12, 2014 (ledger Entry 96: the March 2014 free-agency replay signed Aqib Talib; Golden Tate chose Detroit). Monroe, Marks, Verner and Talib signed in the replay (Entries 95 and 96); 2013 season complete (Jacksonville eliminated in the AFC Divisional round).
+**Canonical controlled-player count:** **52** (offseason roster; the 90-player limit applies from the league year).
+**Changes at the league year (Entries 94 to 96):** Monroe and Sen'Derrick Marks re-signed and Alterraun Verner and Aqib Talib signed in the replay; Cameron Bradfield (RFA) and Toney Clemons, Mike Brown and Austin Pasztor (ERFA) tendered; the six reserve/future contracts took effect. Left control at 4 p.m.: Chad Henne, Jeremy Cain, Maurice Jones-Drew, C.J. Wilson, Alan Ball and Brent Grimes (unrestricted; Henne's and Cain's negotiations reopened in the replay), Allen Reisner and Kevin Rutland (not tendered) and Brad Meester (retired). See section 5.
 **Practice squad:** **0** (no 2014 practice squad exists before the regular season). **Reserve/future contracts:** the six signed February 3 and 5, 2014 (ledger Entry 85) are now effective and listed in section 3.
 **Record:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-1 (AFC Wild Card: Jacksonville 38, Kansas City 14; AFC Divisional: Tennessee 20, Jacksonville 13).
 
-<!-- player-ages-as-of: 2014-03-11 -->
+<!-- player-ages-as-of: 2014-03-12 -->
 
 Birth dates are sourced in the [identity registry](../../library/data/player_birth_dates.json). **Age** is completed years at the master date in Document 5; [league ages](player_ages.md) update through the same renderer.
 
@@ -115,13 +115,14 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Daryl Smith | LB | 1982-03-14 | 31 | Offseason roster | No communicated restriction | Base LB; defensive communication lead |
 | Julian Stanford | LB | 1990-09-02 | 23 | Offseason roster | No communicated restriction | LB depth after Allen |
 
-### Cornerbacks (4)
+### Cornerbacks (5)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
 | A.J. Bouye | CB | 1991-08-16 | 22 | Offseason roster | No communicated restriction (Week 11 injury cleared November 26) | First outside reserve CB (from Week 13); coverage units |
 | Mike Harris | CB | 1989-01-05 | 25 | Offseason roster | No communicated restriction | Starting CB (from Week 11) |
 | Alterraun Verner | CB | 1988-12-13 | 25 | Offseason roster (signed March 11, 2014) | No communicated restriction | Role not set |
+| Aqib Talib | CB | 1986-02-13 | 28 | Offseason roster (signed March 11, 2014) | No communicated restriction | Role not set |
 | Jordan Poyer | CB | 1991-04-25 | 22 | Offseason roster | No communicated restriction | Nickel; coverage units |
 
 ### Safeties (5)

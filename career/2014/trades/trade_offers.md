@@ -1,6 +1,6 @@
 # Jacksonville 2014 trade offer log
 
-**Status at March 11, 2014 (Entry 95):** the trade window is open. Entry 95's free-agency replay supersedes the first-pass package I answer and reopens the trade packages for their own replay entries; package I may now include Alualu because Marks re-signed. F1 stays offered with its answer open. Package D is withdrawn because its trigger, a veteran-edge signing, no longer holds. No trade has closed. Packages not listed below were not offered: their triggers are unmet or, for G, no buyer with a documented need is named.
+**Status at March 12, 2014 (Entry 96):** Tate signed with Detroit, so package A is not offered unless Edelman signs (Stone's September 29 amendment); H stays unavailable without No. 36. **Earlier status, March 11 (Entry 95):** the trade window is open. Entry 95's free-agency replay supersedes the first-pass package I answer and reopens the trade packages for their own replay entries; package I may now include Alualu because Marks re-signed. F1 stays offered with its answer open. Package D is withdrawn because its trigger, a veteran-edge signing, no longer holds. No trade has closed. Packages not listed below were not offered: their triggers are unmet or, for G, no buyer with a documented need is named.
 
 ## Actual communications
 
