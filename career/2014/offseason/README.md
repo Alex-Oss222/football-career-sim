@@ -8,6 +8,7 @@ Start with the player at the current date, including his full season of experien
 
 | Need | Open | What it owns |
 |---|---|---|
+| Settle the phase-plan choices | [Stone's decision package](phase_plan_decisions.md) | Detailed 2013 carry-forward, recommended schedule and install, pending policy choices, emergency staff choices and deferred decisions; recommendations remain pending |
 | Run the coaching process | [Training workflow](training/weekly_workflow.md) | Preparation, session rhythm, correction, retention and phase handoff |
 | Prepare a position room | [Unit work plans](training/unit_plans.md) | Coach, football objective, paired-film question and next test |
 | Script a permitted session | [Session template](training/session_template.md) | Specific jobs and evidence to gather; no results entered in the script |
@@ -17,7 +18,7 @@ Start with the player at the current date, including his full season of experien
 | Assemble or issue a tape | [Film workflow](film/README.md) | Packet contents, cause review, approval, receipt and later retest |
 | Find outstanding player work | [Player film queue](film/player_queue.md) | One accountable queue entry for each of the 61 players at the baseline, including the retired-player archive |
 | Verify a delivery | [Delivery log](film/delivery_log.md) | Dated packet revisions and actual issue/acknowledgment/review receipts |
-| Resolve a staffing dependency | [Staff changes](staff_changes/README.md) | April search plan and actual appointment records |
+| Resolve a staffing dependency | [Staff changes](staff_changes/README.md) | Closed special-teams search, actual appointments and remaining emergency-succession decision |
 | Check a player's contract terms or 2014 figures | [Contract table](contract_table.md) | Terms, sourced 2014 figures, 2013 baseline and the update log; status stays with the [register](contract_status_register.md) |
 | See the current depth order | [Depth chart](../depth_chart.md) and its [working JSON](depth_chart_working.json) | 2013 order carried with contract flags; no 2014 depth decision yet |
 | Read the narrative for an offseason turn | [Turn outputs](turns/README.md) | One template output per closed offseason turn |
@@ -34,16 +35,16 @@ Start with the player at the current date, including his full season of experien
 
 Each phase now has a linked `output.md` and `standouts.md`, initialized NOT_STARTED with matching evidence metadata. These records are ready to receive actual work; none of the phases has run.
 
-Dates stay in the calendar and phase plans. A proposed date does not authorize work. No extra new-head-coach minicamp applies to Jacksonville in 2014.
+Dates stay in the calendar and phase plans. The [decision package](phase_plan_decisions.md) recommends the detailed sequence. The schedule-filing deadline is the agreed league date, no later than March 31 for an April 21 start; April 3 public publication is separate. A proposed date does not authorize work. No extra new-head-coach minicamp applies to Jacksonville in 2014.
 
 ## Authority and record boundaries
 
-The individual-feedback process previously labeled P3, the living assessments and open-ended development of all players (including Cousins), the QB-center identification teaching process in P5, and continuation of individual development in P8 are authorized by this request. Other marked proposals, including new role assignments, Boot Flood's return to team work and Stone's punt policy, remain separate decisions. A player learning a job does not win it merely by appearing in a plan.
+The individual-feedback process, the living assessments and open-ended development of all players (including Cousins), shared QB-center identification teaching, and continuing individual development are authorized by this request. Other marked proposals, including new role assignments, Boot Flood's return to team work and Stone's punt policy, remain separate decisions. A player learning a job does not win it merely by appearing in a plan.
 
 Plans describe intended work. The relevant phase's `output.md` records actual instruction, evidence and decisions when it runs. The film delivery log records actual distribution. Player evidence records link to those primary sources rather than inventing practice results. Any change to canon closes with the ledger and dependent state under [the update workflow](../../../docs/update_workflow.md).
 
 The queue is an explicitly dated work inventory, not a second roster. Recheck [club control](../../2013/roster.md), [contract status](contract_status_register.md), current medical instructions and [staff responsibility](../../2013/coaching_staff.md) before player contact or phase entry. Meester has no training assignment. Allen's prospective trade is not completed and his April 22 retirement remains a boundary. Mike Westhoff has run special teams since his February 11 appointment (Entry 84).
 
-Before pre-program player delivery or football contact, Caldwell's office must close the existing rules question documented in the [exit-interview follow-ups](../../2013/exit_interviews/README.md#follow-ups). Internal preparation can proceed. No historic January delivery is backdated or assumed.
+The [historical verification](../../../library/2014_offseason_phase_rules_verification.md) confirms that coach-led football meetings, film and playbook study cannot occur before the program. Passive film distribution remains unresolved; absent a verified earlier lawful route, the decision package recommends pending delivery/discussion from April 21. Phase One classroom teaching is permitted within its limits. Internal preparation can proceed, and no historic January delivery is backdated or assumed.
 
 The [full annual calendar](../calendar.md) now carries phase handoffs, all 17 weekly planning windows and conditional postseason/year-end work. [E1/E2](../../../runtime/2014_engine_decisions.md) policy is adopted, including team construction and coaching tradeoffs; implementation and a new kernel release remain open. No game is made ready by these planning documents.

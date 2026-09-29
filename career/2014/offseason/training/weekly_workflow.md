@@ -4,6 +4,8 @@
 
 **Use:** every permitted teaching block, then continue the individual review through the regular season, including after the bye. This is an operating method, not a claim that a 2014 session has happened.
 
+For the proposed 2014 allocation, use [the phase decision package](../phase_plan_decisions.md). Its week-by-week sequence and ten OTA themes fit this workflow; new recommendations remain pending. [Historical verification](../../../../library/2014_offseason_phase_rules_verification.md) distinguishes lawful Phase One classroom instruction from prohibited pre-program coach-led study and restricted field work.
+
 ## Before the block
 
 Read [Stone's current coaching assessment](../../../coaching_profiles/alex_stone.md) and the relevant [assistant profile](../../../coaching_profiles/staff_profiles.md). Select a useful teaching or decision question alongside the player's question. A full season adds coaching experience without proving mastery; the staff can preserve a working approach, revise a cue or discover a different valid player answer.

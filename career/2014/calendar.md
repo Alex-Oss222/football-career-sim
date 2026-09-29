@@ -53,6 +53,7 @@
 | Mar. 11–Apr. 21 | Allen package G execution window: unconditional 2015 seventh preferred, recorded fallback and conditions govern | Future plan; [trade targets](trades/trade_targets.md); no buyer or return guaranteed |
 | Mar. 23–26 | Annual League Meeting, Orlando; review newly adopted rules on their effective dates | Future; source A/B |
 | Mar. 24 | Compensatory selection announcement; resolve branch awards from branch inputs | Gated; [draft order](draft/draft_order.md) |
+| By the agreed league date, no later than Mar. 31 for an Apr. 21 start | Submit the selected offseason-program schedule to the NFL/NFLPA; preserve the receipt and give advance notice of later changes | Required filing limit from 2011 CBA Article 21 section 2(c); [verification](../../library/2014_offseason_phase_rules_verification.md). Actual agreed 2014 date and filing not yet established; [decision package](offseason/phase_plan_decisions.md) recommends an internal Mar. 24 choice |
 | By Mar. 31, staff preparation checkpoint | Reconcile retained/signed players, departed-player archival obligations, newcomer onboarding, shared-job questions and film assets | Proposed staff work; [workflow](offseason/training/weekly_workflow.md); no compulsory player contact |
 
 Individual contract options and guarantees follow their documented terms, not a blanket date in this table. Continue research of any newly targeted free agent before a transaction. The nine verified targets do not certify the entire free-agent pool.
@@ -63,12 +64,12 @@ Individual contract options and guarantees follow their documented terms, not a 
 
 | Date | Event / required work | Status / owner |
 |---|---|---|
-| Apr. 3 | League offseason dates released; confirm the branch's lawful nine-week schedule | Gated; staff and Caldwell |
+| Apr. 3 | League offseason dates publicly released; reconcile the already selected/filed branch schedule and any properly notified changes | Gated public announcement; separate from the earlier filing deadline; staff and Caldwell |
 | Apr. 5 | Posluszny's recorded return projection | Medical review checkpoint only; independent clearance required, including cognitive limits |
 | Apr. 7 | Earliest new-head-coach program start elsewhere | Future league date; Jacksonville remains a returning-head-coach club |
 | Apr. 9 | Preseason matchup release; 2015 Pro Bowl location release | Gated; date sources in verification / original C16; exact preseason dates below remain gated to Apr. 23 |
-| Before Apr. 21 | Resolve or explicitly defer decisions needed to operate: defensive caller/backup, injured-player work, punt instructions, Boot Flood status and individual feedback | Proposed decision checkpoint; [offseason index](offseason/README.md); no role awarded by this row |
-| **Apr. 21–May 2** | **Phase One**, two weeks: permitted performance/medical work; baseline profile and legal-material review | Proposed; [offseason program](offseason/offseason_program/plan.md) |
+| Apr. 11 / Apr. 18, proposed staff reviews | Review the carry-forward menu and settle or explicitly defer pending phase-plan choices, install scope and emergency-staff assignments; execute already adopted feedback work | [Detailed decision package](offseason/phase_plan_decisions.md); Crennel remains defensive caller, player relay is a separate job; no new role or Boot Flood return awarded here |
+| **Apr. 21–May 2** | **Phase One**, two weeks: permitted performance/medical work and classroom football teaching; restricted field coaching remains prohibited | Proposed; [offseason program](offseason/offseason_program/plan.md); [rules clarification](../../library/2014_offseason_phase_rules_verification.md) |
 | Apr. 21 | Allen trade processing deadline set by Stone | Proposed; actual clearance, physical, contract, buyer and league processing conditions still apply |
 | Apr. 22 | Scheduled Allen retirement, wherever he is controlled | Future dated rail; no Jacksonville training assignment after eligibility ends |
 | Apr. 23, 8 p.m. | Regular schedule release; reconcile all branch same-place pairings across the league, then publish exact fixtures and bye | Gated; [opponents](schedule/opponents.md) |
@@ -89,7 +90,7 @@ Individual contract options and guarantees follow their documented terms, not a 
 | June 22–28 | Rookie Symposium, Aurora, Ohio | Future league event; source A/B, actual eligible participants determined later |
 | After program through camp | Player-directed break and rehabilitation within applicable rules; staff prepare camp evidence and contingency plans | Future interval; no attendance or communication penalty |
 
-The nine program weeks run April 21–June 22. Phase Three occupies the last four weeks; the proposed ten OTAs and mandatory minicamp sit within that span. Rookie work has its own eligibility and limits and is not an excuse for additional veteran sessions. Phase rules, holidays, medical instructions and actual permitted hours control over a table entry.
+The nine program weeks run April 21–June 22. Phase Three occupies the last four weeks; the proposed ten OTAs and mandatory minicamp sit within that span. The [decision package](offseason/phase_plan_decisions.md) recommends Monday through Thursday program days in Phases One and Two, no added fourth non-OTA workout in the first two OTA weeks, and voluntary family events on May 17, June 5 and June 18. These remain recommendations. Rookie work has its own eligibility and limits and is not an excuse for additional veteran sessions. Phase rules, holidays, medical instructions and actual permitted hours control over a table entry.
 
 ## July and August: camp, preseason and roster decisions
 

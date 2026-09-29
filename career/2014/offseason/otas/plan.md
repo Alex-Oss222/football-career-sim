@@ -7,6 +7,10 @@
 **Inherited method:** [2013 otas plan](../../../2013/offseason/otas/plan.md). The 2013 file remains unchanged; this plan's 2014 conditions override inherited dates, QB competition and new-head-coach clauses.
 **Execution records:** [Output](output.md) and [evidence summary](standouts.md) are prepared as NOT_STARTED. They receive actual observations only when the phase runs. Results and standouts never belong in this plan.
 
+## Decision package and historical clarification
+
+The [complete phase decision package](../phase_plan_decisions.md) supplies the proposed dates, install sequence, room priorities, pending policy recommendations and emergency-staff choices, reviewed through the February 28 checkpoint, Entry 89. Its new recommendations remain unadopted. Individual feedback, shared protection-identification teaching and continuing individual development are already authorized. The [rules verification](../../../../library/2014_offseason_phase_rules_verification.md) distinguishes the schedule-filing deadline, Phase One classroom permission and unresolved passive pre-program film distribution.
+
 ## Living player assessment: adopted follow-up
 
 Read the [61 player profiles](../player_development/roster_profiles.md), [development method](../player_development/README.md) and [Cousins synthesis](../player_development/kirk_cousins.md) alongside this plan. The full 2013 season is experience to build from; the old engine's win totals and generated statistics cannot establish talent. The inherited teaching cycle applies to individual jobs, not a whole-player unlock ladder.
@@ -23,13 +27,13 @@ Read [Stone’s current profile](../../../coaching_profiles/alex_stone.md) and t
 
 This is the carry-forward authorized in Stone's February 2 memo section 6 and the user's September 28, 2026 request to address the outstanding work. The inherited teaching method is retained below. The individual training/film items identified below are adopted; other recommendations at the end remain explicitly proposed. No practice, attendance, delivery, hiring, clearance or role change is recorded by this plan.
 
-- Returning players begin with retention of assigned 2013 material. New arrivals receive the complete active books and the existing onboarding process after control/invitation is verified; late onboarding is recorded honestly, never backdated. Any pre-program football contact or film delivery first passes the unresolved CBA check recorded in the exit-interview README.
-- Cousins remains the established QB1. The quarterback competition is for QB2/QB3 among players actually controlled when the phase opens. Henne and Bray are memo candidates, not assumed re-signings. Cousins's priorities are ball security, protection communication and separating decision errors from technique or protection failures.
+- Returning players begin with retention of assigned 2013 material. New arrivals receive the complete active books and the existing onboarding process after control/invitation is verified; late onboarding is recorded honestly, never backdated. No coach-led football meeting, film review or playbook study occurs before the program. Passive film distribution remains a separate unresolved question; use the [historical verification](../../../../library/2014_offseason_phase_rules_verification.md) and the default delivery recommendation in the decision package.
+- Cousins remains the established QB1. The quarterback competition is for QB2/QB3 among players actually controlled when the phase opens. Henne's future participation depends on his actual contract or other lawful participation basis; Bray signed a reserve/future contract effective March 11, which does not award a reserve role. Cousins's priorities are ball security, protection communication and separating decision errors from technique or protection failures.
 - Jacksonville has a returning head coach. No additional new-head-coach voluntary veteran minicamp is authorized. Older references to that privilege in the inherited readiness document do not apply in 2014.
 - Use the actual roster, medical instructions and teaching evidence at execution. Proposed signings, draft selections and departures are not completed transactions. Verner, Talib or drafted linemen enter a plan only if acquired; Allen cannot be relied on for work after his scheduled April 22 retirement.
-- Crennel calls the defense; Stone calls the offense. The player who relays defensive calls is a separate job. Stone directs special teams until a replacement is actually hired. Current roles stand pending a separately authorized change.
+- Crennel calls the defense; Stone calls the offense. The player who relays defensive calls is a separate job. Mike Westhoff runs special teams following his February 11 appointment (Entry 84). Current roles stand pending a separately authorized change.
 - Medical projections are review dates, not clearance. Voluntary attendance, rehabilitation, private support needs and lawful absence never become hidden role grades. No fixed rep percentages or touch quotas determine roles.
-- The 2014 calendar controls dates and legal work. April 3 publishes the league schedule but does not automatically adopt the real Jaguars' dates. Verify Stone's proposed dates and the applicable phase rules before executing. Training camp also waits for its schedule/reporting gates.
+- The 2014 calendar controls dates and legal work. The program schedule must be filed by the agreed league date, no later than March 31 for an April 21 start, with advance notice of changes. April 3 public publication does not adopt the real Jaguars' dates. Verify the selected branch dates and applicable phase rules before executing. Training camp also waits for its schedule/reporting gates.
 
 The existing framework, readiness standard and identity remain at their 2013 paths and are incorporated as durable methods, subject to the 2014 calendar correction above:
 
@@ -44,7 +48,7 @@ Use Explain → Show → Walk → Rep → Correct → Rep again → Retain → A
 
 Read the [training index](../README.md), [room work plans](../training/unit_plans.md), [player queue](../film/player_queue.md) and the relevant [individual plan](../player_development/README.md) before preparing the phase. Use the [session template](../training/session_template.md), [film packet](../film/packet_template.md) and [delivery log](../film/delivery_log.md) to close the loop from assigned job to a later independent retest.
 
-Stone authorized the individual-feedback process P3 and Cousins progression, the P5 QB-center identification teaching process, and continuation of individual development in P8. Other marked proposals remain pending. Start Cousins from his [2013 evidence assessment](../player_development/kirk_cousins.md), preserving demonstrated operation and targeting the unresolved job. Do not reset him to a beginner plan or infer broad mastery from results alone.
+Stone authorized individual feedback and Cousins progression, shared QB-center identification teaching, and continuing individual development. Other marked proposals remain pending. Start Cousins from his [2013 evidence assessment](../player_development/kirk_cousins.md), preserving demonstrated operation and targeting the unresolved job. Do not reset him to a beginner plan or infer broad mastery from results alone.
 
 All work remains within this phase’s calendar, contact, medical and voluntary-participation limits. The actual phase output owns new practice evidence; the delivery log owns actual distribution. A prepared packet is not a delivered tape. No historic January delivery is backdated. New role assignments and Boot Flood’s return require their separate decisions.
 
@@ -444,13 +448,13 @@ When the offseason/OTA phase actually runs:
 
 Run the inherited five gates with retention first. The interior-line combinations use only actual acquisitions and retained players; compare protection communication, exchanges and corrections beside the established center. Johnson's pass-set work and Cousins's ball-security/protection work remain memo priorities. Integrate Verner or Talib into coverage terminology only if acquired; otherwise teach the controlled secondary. No future transaction is assumed.
 
-The communication, medical and cross-training proposals P1, P2 and P4 remain pending in [the offseason-program plan](../offseason_program/plan.md). The individual-feedback policy P3 is adopted and uses the linked workflow. At each OTA block review, distinguish an untested job from a lost competition and state what evidence will be gathered next.
+The communication, medical and cross-training proposals remain pending in [the offseason-program plan](../offseason_program/plan.md). The individual-feedback policy is adopted and uses the linked workflow. At each OTA block review, distinguish an untested job from a lost competition and state what evidence will be gathered next.
 
-### P5: blocked, hot and kill identification, adopted teaching process
+### blocked, hot and kill identification, adopted teaching process
 
 Use a standing quarterback-center identification period within the permitted OTA inventory. Bates, Yarno and Tice use the active protection language to identify who is blocked, who is the hot answer and when the taught kill/check applies. Change one presentation at a time, require the quarterback and center to communicate the same answer, and classify recognition, communication and execution separately. No fixed extra minutes or reps override the CBA or displace an existing priority without review.
 
-### P6: Boot Flood review and limited reintroduction
+### Boot Flood review and limited reintroduction
 
 Recommend retaining Boot Flood in the active book while holding it out of competitive team work until Bates and Tice complete the promised cause review and Stone approves its return. Review the assigned quarterback progression, edge/protection answer, route spacing and defensive response from branch film. The evidence must separate a flawed call/design from a correct read with failed execution.
 

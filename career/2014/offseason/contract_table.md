@@ -2,7 +2,7 @@
 
 **As of:** February 28, 2014 (ledger Entry 89). The 2014 league year opens March 11, 2014, 4:00 p.m. ET.
 **Nature:** derived view. It executes no signing, tag, tender, release, trade or extension, certifies no cap room and changes no canon. The [contract status register](contract_status_register.md) owns each player's status; the [2014 preparation worksheet](current_cap_worksheet.md) owns reconciliation; Caldwell owns contract decisions (Document 3).
-**Baseline:** [2013 initial cap sheet](../../2013/offseason/initial_cap_sheet.md) (per-player 2013 rows, Git `e04dd82`); [2013 regular-season worksheet](../../2013/offseason/current_cap_worksheet.md) and its May 5 version (Git `d25c8cf`); [2013 free-agency signings](../../2013/offseason/free_agency/signings.md); [2013 draftees](../../2013/offseason/draft/draftees.md); [2013 undrafted signings](../../2013/offseason/draft/udfa_signings.md); [2013 trades](../../2013/trades/trades.md); [2014 contract status register](contract_status_register.md) (Git `3cc276d`); [Caldwell's pre-tag-window verifications](caldwell_pre_tag_verifications.md) (Git `9ca804c`); [2014 free-agency outcomes](free_agency/signings.md); ledger Entries 3, 4, 7, 9, 79, 80, 85 and 86.
+**Baseline:** [2013 initial cap sheet](../../2013/offseason/initial_cap_sheet.md) (per-player 2013 rows, Git `e04dd82`); [2013 regular-season worksheet](../../2013/offseason/current_cap_worksheet.md) and its May 5 version (Git `d25c8cf`); [2013 free-agency signings](../../2013/offseason/free_agency/signings.md); [2013 draftees](../../2013/offseason/draft/draftees.md); [2013 undrafted signings](../../2013/offseason/draft/udfa_signings.md); [2013 trades](../../2013/trades/trades.md); [current contract status register](contract_status_register.md); [Caldwell's pre-tag-window verifications](caldwell_pre_tag_verifications.md) (Git `9ca804c`); [2014 free-agency outcomes](free_agency/signings.md); ledger Entries 3, 4, 7, 9, 79, 80 and 85 through 89. Historical Git references identify the original financial baselines; current status follows the latest register and executed outcomes.
 
 ## Update log
 
@@ -13,6 +13,7 @@ Add a row, and change the affected player rows and summaries, for every signing,
 | February 17, 2014 | Table created from the 2013 baseline, the 2014 register and the February 17 verifications | None (derived view; inputs through Entry 86) | 59 rows: 36 under contract, Meester retired, six reserve/future, 14 pending free agents, two unresolved |
 | February 18, 2014 | Eugene Monroe designated non-exclusive franchise player | Entry 87 | Monroe moves from pending UFA to franchise player (tender not yet signed; projected $11.654M, official February 28); pending UFAs 7; tag no longer available for Marks; section 6 items 1, 2 and 7 corrected in their owning files |
 | February 28, 2014 | League publishes the 2014 cap and franchise values | Entry 89 | Monroe's tender official at $11,654,000 (prior-year-salary check shown); 2014 cap $133,000,000 stated; Jacksonville's cap space, adjusted cap and carryover still unresolved; sourced total unchanged, tender shown beside it |
+| February 28, 2014 checkpoint review | Administrative reconciliation against the merged records | None (review through Entry 89) | Corrected Monroe's prior-year comparison wording, the resolved/open reconciliation notes and Wilson/Bray role wording; verified 59 rows and partial-charge totals; no transaction or cap-room certification |
 
 ## 1. How to read this table
 
@@ -99,13 +100,13 @@ The 2014 minimum scale by credited seasons is in [the verifications](caldwell_pr
 
 ## 4. Pending free agents (13), franchise player (1) and unresolved contracts (2)
 
-Each remains Jacksonville's until the league year opens on March 11, 2014, 4:00 p.m. ET. "Planned" is Stone's memo recommendation as recorded in Entry 86; nothing is executed until Caldwell acts on the calendar.
+The expiring contracts run to March 11, 2014, 4:00 p.m. ET. Monroe has already been designated a franchise player, preserving the recorded tag rights beyond that date; his tender remains unsigned. Other tenders and new contracts below are still recommendations. "Planned" means Stone's memo recommendation as recorded in Entry 86, not an executed Caldwell transaction.
 
 | Player | Pos | Expiring contract | Final league year | Total value | 2013 cap charge (baseline) | 2014 status | Planned action and deadline | Source and status |
 |---|---|---|---|---|---|---|---|---|
 | Chad Henne | QB | Veteran, signed March 14, 2012 | 2013 | $6,750,000 (2 years) | $4,650,000 (includes $500,000 "other", type unresolved) | Pending UFA | Re-sign as insurance; negotiating window from March 8, noon | Confirmed (register); 2013 OTC row |
 | Maurice Jones-Drew | RB | Veteran extension, 2009 | 2013 | $30,515,000 (term length Corrected in the register) | $6,800,000 | Pending UFA | Re-sign short | Final year Confirmed; 2013 archive row |
-| Eugene Monroe | OT | Rookie, 2009 first round (pick #8) | 2013 | $25,000,000 (5 years) | $5,747,500 | **Franchise player (non-exclusive)**, designated February 18, 2014; tender not yet signed | Long-term talks continue on the memo's terms. 2014 tender: **$11,654,000**, the offensive-line franchise value, official February 28 (library section 2b, Confirmed); 120 percent of his recorded 2013 base ($4,560,000) or cap number ($6,897,000) is lower, so the position figure applies ([check](free_agency/signings.md#tags-and-tenders)). It counts against the 2014 cap from March 11. Offer sheets from other clubs possible from March 11 (two first-round picks if Jacksonville declines to match). Re-signing draw at his real signing date (March 11) under rails method section 4; if lost, he plays 2014 on the tag | Branch record (Entries 87 and 89; [tags and tenders](free_agency/signings.md#tags-and-tenders)); amount Confirmed (library section 2b); the prior-year check rests on an unre-verified 2013 transcription |
+| Eugene Monroe | OT | Rookie, 2009 first round (pick #8) | 2013 | $25,000,000 (5 years) | $5,747,500 | **Franchise player (non-exclusive)**, designated February 18, 2014; tender not yet signed | Long-term talks continue on the memo's terms. 2014 tender: **$11,654,000**, the offensive-line franchise value, official February 28 (library section 2b, Confirmed); 120 percent of his recorded 2013 base of $3,800,000 is $4,560,000, and 120 percent of his recorded 2013 cap number of $5,747,500 is $6,897,000. Both comparison amounts are lower, so the position figure applies ([check](free_agency/signings.md#tags-and-tenders)). It counts against the 2014 cap from March 11. Offer sheets from other clubs possible from March 11 (two first-round picks if Jacksonville declines to match). Re-signing draw at his real signing date (March 11) under rails method section 4; if lost, he plays 2014 on the tag | Branch record (Entries 87 and 89; [tags and tenders](free_agency/signings.md#tags-and-tenders)); amount Confirmed (library section 2b); the prior-year check rests on an unre-verified 2013 transcription |
 | Sen'Derrick Marks | DT | Veteran (branch signing), March 12, 2013 | 2013 | $1.50M (1 year) | $1.50M | Pending UFA | Re-sign. No tag is available (Jacksonville's one designation went to Monroe on February 18) | Branch record |
 | C.J. Wilson | DE | Rookie (Green Bay, 2010 seventh round), acquired by trade | 2013 | Unresolved | $630,000 base carried by Jacksonville (branch); reported cap number $642,590 (register) | Pending UFA | Minimum with no guarantee, or let go | Branch record (trade); final year Corrected (register) |
 | Alan Ball | CB | Veteran (branch signing), March 12, 2013 | 2013 | $1.00M (1 year) | $1.00M | Pending UFA | One-year competition deal | Branch record |
@@ -117,7 +118,7 @@ Each remains Jacksonville's until the league year opens on March 11, 2014, 4:00 
 | Toney Clemons | WR | Veteran minimum, late November 2012 (2 years) | 2013 | $870,000 | Unresolved (no 2013 row) | Pending ERFA | Tender at the minimum for his credited seasons by March 11 | Confirmed as ERFA (register) |
 | Mike Brown | WR | UDFA, 2012 | 2013 (Unverified, single report) | Unresolved | Unresolved (no 2013 row) | Pending ERFA | Tender by March 11 | Status Supported; final year Unverified |
 | Austin Pasztor | G | Practice squad September 17, 2012; promoted December 14, 2012 | 2013 (Unverified, single report) | Unresolved | Unresolved (no 2013 row) | Pending ERFA | Tender by March 11 | Status Supported; final year Unverified |
-| John Parker Wilson | QB | Signed after the 2012 season; the reserve/future label is not supported by the second verification pass | Unresolved | Unresolved | Unresolved (no 2013 row) | Unresolved: RFA with 3 accrued or UFA with 4 if expired | Let go if expired (Bray covers QB3); no action until the term is known | Unresolved (Entry 86) |
+| John Parker Wilson | QB | Signed after the 2012 season; the reserve/future label is not supported by the second verification pass | Unresolved | Unresolved | Unresolved (no 2013 row) | Unresolved: RFA with 3 accrued or UFA with 4 if expired | Let go if expired, as recommended in the memo; Bray is a future reserve candidate, not an appointed QB3. No action until the term is known | Unresolved (Entry 86) |
 | Jonathan Grimes | RB | 2012 Houston undrafted contract carried by the December 21, 2012 waiver claim | Unresolved (three-year 2012 to 2014 is an inference only) | Unresolved | Unresolved (no 2013 row) | Unresolved: ERFA if expired; treated as under contract unless shown otherwise | Tender if expired; decision before March 11 | Unresolved (Entry 86) |
 
 ## 5. Summary
@@ -152,7 +153,7 @@ The total is a sum of scheduled charges. It is not a Top-51 figure and not club 
 
 ### 5c. Dead money on file for 2014
 
-- **Booked:** none. No 2014 release or trade has been executed (Entry 86; February 3 to 17 turn output).
+- **Booked:** none. No 2014 release or trade has been executed through Entry 89. This means no 2014 transaction charge is booked; it does not settle the possible 2013 carry-forward obligations below.
 - **Not booked; identified from the baseline:**
   - Tyler Bray's 2013 rookie signing bonus ($68,900, $17,225 a year). He was waived August 31, 2013, after June 1, so the three future years ($51,675) would fall in 2014 under the after-June-1 rule in the initial cap sheet's governing controls. Inference; not reconciled in any worksheet.
   - Brandon Marshall, Austen Lane and Isaiah Stanback, waived August 31, 2013 and claimed: any future-year proration would also fall in 2014. Their bonus terms are not on file. Unresolved.
@@ -160,7 +161,7 @@ The total is a sum of scheduled charges. It is not a Top-51 figure and not club 
 
 ### 5d. 2013 carryover
 
-**Unresolved.** Jacksonville carried unused 2013 room into 2014 (Confirmed, verifications section 1), but the amount is not certified. The branch planning range in Stone's memo checklist is **$5.4M to $6.6M, or nothing** if no election was filed; it spans the 2013 worksheet's September 4 ranges (about $6.2M to $6.6M before weekly practice-squad charges, about $5.4M to $5.8M if the opening eight stayed all 17 weeks). The real Jaguars' reported figure describes the real club; it is a comparator only and is not used. February 28 published the league cap (5e), not a certified Jacksonville carryover.
+**Unresolved.** Jacksonville carried unused 2013 room into 2014 (Confirmed, verifications section 1), but the amount is not certified. The earlier memo checklist used **$5.4M to $6.6M**, with a conditional zero if no election had been filed. That was a planning alternative, not a current finding of zero carryover. The range spans the 2013 worksheet's September 4 ranges (about $6.2M to $6.6M before weekly practice-squad charges, about $5.4M to $5.8M if the opening eight stayed all 17 weeks). The real Jaguars' reported figure describes the real club; it is a comparator only and is not used. February 28 published the league cap (5e), not a certified Jacksonville carryover.
 
 ### 5e. 2014 league cap
 
@@ -178,16 +179,16 @@ The total is a sum of scheduled charges. It is not a Top-51 figure and not club 
 
 ## 6. Baseline contradictions and open reconciliations
 
-Found while building this table. Items 1, 2 and 7 were corrected in their owning files on February 18 (Entry 87, administrative); the others remain open and need a sourced correction in the owning file.
+This review distinguishes corrected display errors from financial questions that still lack a verified answer. Historical source transcriptions remain available; a corrected current view does not rewrite an executed contract.
 
-1. **Nwaneri's final year.** The register's inherited-contract row still says "final year 2014 or 2015 (disputed)", while the verifications and Entry 86 mark the 2015 end year Confirmed. The 2013 sheet's "2010, 5 years" reads as ending in 2014. This table uses 2015 per the later verification.
-2. **Blackmon's 2013 split.** The 2013 regular-season worksheet says the initial cap sheet "carries his total cap charge, not the base/proration split", but the initial cap sheet row shows a $1,231,455 base and $2,975,818 proration (archive transcription, not re-verified). The forfeiture amount stays unresolved either way.
+1. **Nwaneri's final year: corrected.** The current register and this table use 2015, following the verifications and Entry 86. Entry 87 removed the register's older disputed-year wording. The initial 2013 sheet remains the historical transcription.
+2. **Blackmon's 2013 split: corrected.** Entry 87 corrected the regular-season worksheet to acknowledge the initial sheet's $1,231,455 base and $2,975,818 proration. These remain archive transcriptions, not re-verified terms; the forfeiture amount is unresolved.
 3. **Jones-Drew's term.** The 2013 sheet lists his 2009 deal as 4 years; the register corrected the length (2012 reporting of five years with 2013 remaining). The final year 2013 is not in dispute.
 4. **Mosley's value.** The 2013 sheet gives $7,500,000 ("contract confirmed"); the verifications record the headline as disputed ($7.5M or "up to $10M").
-5. **John Parker Wilson's contract type.** The May 5 worksheet and Entry 9 list him among the December 30, 2012 reserve/future contracts; the February 17 verification pass did not support that label.
-6. **C.J. Wilson's 2013 cap arithmetic.** The register says $642,590 equals $630,000 plus one quarter of a $50,354 bonus; the arithmetic gives $642,588.50. A $1.50 rounding difference, noted only for exactness.
-7. **Bray's rookie contract.** The 2013 draftees table still shows his 2014 rookie charge ($512,225). The register records that the August 31 waiver ended that contract; his 2014 contract is the $420,000 reserve/future deal.
-8. **Memo savings against the 2013 proration.** Stone's memo books package G (Allen) as saving his full $1.98M and package F2 (Rackley) as saving $0.77M, but the 2013 sheet shows annual proration through 2014 for both ($416,666 and $154,868), which would remain as dead money on a release or trade. The verifications already treat the memo savings as planning claims pending clause-level terms.
+5. **John Parker Wilson's contract type: unresolved, current wording corrected.** The May 5 worksheet and Entry 9 list him among the December 30, 2012 reserve/future contracts; the February 17 verification did not support that label. The register now identifies the label as an unverified baseline assertion. His current term and March 11 status remain unresolved; no release or new contract is inferred.
+6. **C.J. Wilson's 2013 cap arithmetic: corrected.** The register separates the reported $642,590 from the calculated $642,588.50 ($630,000 plus one quarter of $50,354). The $1.50 discrepancy remains a source/rounding difference, not an exact equality. Jacksonville carried the $630,000 base; Green Bay retained the bonus proration.
+7. **Bray's rookie contract: corrected.** The draftees file retains the original $512,225 scheduled 2014 rookie charge as history and explicitly marks it superseded by the August 31 waiver and later futures contract. The current table uses the $420,000 reserve/future deal, effective March 11.
+8. **Memo savings against the 2013 proration.** Stone's memo projects package G (Allen) as saving his full $1.98M and package F2 (Rackley) as saving $0.77M, but the 2013 sheet shows annual proration through 2014 for both ($416,666 and $154,868), which would remain as dead money on a release or trade. The verifications already treat the memo savings as planning claims pending clause-level terms.
 
 ## 7. Planning leads not booked
 

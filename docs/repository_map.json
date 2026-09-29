@@ -290,6 +290,8 @@
     "runtime/seasons.py",
     "runtime/season_readiness.json",
     "career/2014/readiness.md",
+    "career/2014/offseason/phase_plan_decisions.md",
+    "library/2014_offseason_phase_rules_verification.md",
     "career/2014/offseason/current_cap_worksheet.md",
     "career/2014/depth_chart.md",
     "career/2014/offseason/depth_chart_working.json",

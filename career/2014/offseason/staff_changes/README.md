@@ -4,6 +4,8 @@
 
 **Status (resolved through February 17, 2014; career clock February 28 since Entry 89):** Alan Lowry left on January 12; **Mike Westhoff was hired as special teams coordinator on February 11** (Entry 84), ending Stone's interim direction. No assistant left in the February exposure (Entry 83). Twelve assistants are under contract.
 
+**Next operating choice:** emergency succession remains unassigned. [The phase decision package](../phase_plan_decisions.md#10-staff-responsibilities-and-emergency-succession) provides specific recommendations for Stone's decision; publication of the package does not appoint those deputies.
+
 **Function:** the folder for Jacksonville's 2014 coaching-staff turnover: other clubs' requests to interview Stone's assistants, the answers, any departures, and the hiring of replacements.
 **Created:** September 28, 2026, at the user's request (branch date February 2, 2014).
 **Authority:** Stone hires, retains, assigns and fires his own assistants within Caldwell's staff budget (Document 3, authority row 2). Whether another club may interview an assistant under contract follows the league's anti-tampering rules and, where those leave a choice, Jacksonville's decision.
