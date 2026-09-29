@@ -1,12 +1,12 @@
 # Jacksonville Jaguars roster
 
-**As of:** March 12, 2014 (ledger Entry 96: the March 2014 free-agency replay signed Aqib Talib; Golden Tate chose Detroit). Monroe, Marks, Verner and Talib signed in the replay (Entries 95 and 96); 2013 season complete (Jacksonville eliminated in the AFC Divisional round).
-**Canonical controlled-player count:** **52** (offseason roster; the 90-player limit applies from the league year).
-**Changes at the league year (Entries 94 to 96):** Monroe and Sen'Derrick Marks re-signed and Alterraun Verner and Aqib Talib signed in the replay; Cameron Bradfield (RFA) and Toney Clemons, Mike Brown and Austin Pasztor (ERFA) tendered; the six reserve/future contracts took effect. Left control at 4 p.m.: Chad Henne, Jeremy Cain, Maurice Jones-Drew, C.J. Wilson, Alan Ball and Brent Grimes (unrestricted; Henne's and Cain's negotiations reopened in the replay), Allen Reisner and Kevin Rutland (not tendered) and Brad Meester (retired). See section 5.
+**As of:** March 18, 2014 (ledger Entry 97: the March 2014 free-agency replay signed Hakeem Nicks and Andrew Hawkins; Julian Edelman returned to New England). Monroe, Marks, Verner, Talib, Nicks and Hawkins signed in the replay (Entries 95 to 97); 2013 season complete (Jacksonville eliminated in the AFC Divisional round).
+**Canonical controlled-player count:** **54** (offseason roster; the 90-player limit applies from the league year).
+**Changes at the league year (Entries 94 to 97):** Monroe and Sen'Derrick Marks re-signed and Alterraun Verner, Aqib Talib, Hakeem Nicks and Andrew Hawkins signed in the replay; Cameron Bradfield (RFA) and Toney Clemons, Mike Brown and Austin Pasztor (ERFA) tendered; the six reserve/future contracts took effect. Left control at 4 p.m.: Chad Henne, Jeremy Cain, Maurice Jones-Drew, C.J. Wilson, Alan Ball and Brent Grimes (unrestricted; Henne's and Cain's negotiations reopened in the replay), Allen Reisner and Kevin Rutland (not tendered) and Brad Meester (retired). See section 5.
 **Practice squad:** **0** (no 2014 practice squad exists before the regular season). **Reserve/future contracts:** the six signed February 3 and 5, 2014 (ledger Entry 85) are now effective and listed in section 3.
 **Record:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-1 (AFC Wild Card: Jacksonville 38, Kansas City 14; AFC Divisional: Tennessee 20, Jacksonville 13).
 
-<!-- player-ages-as-of: 2014-03-12 -->
+<!-- player-ages-as-of: 2014-03-18 -->
 
 Birth dates are sourced in the [identity registry](../../library/data/player_birth_dates.json). **Age** is completed years at the master date in Document 5; [league ages](player_ages.md) update through the same renderer.
 
@@ -42,7 +42,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | --- | --- | --- | ---: | --- | --- | --- |
 | Montell Owens | FB | 1984-05-04 | 29 | Offseason roster | No communicated restriction | FB |
 
-### Wide receivers (6)
+### Wide receivers (8)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
@@ -52,6 +52,8 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Cecil Shorts | WR | 1987-12-22 | 26 | Offseason roster | No communicated restriction | WR1 |
 | Adam Thielen | WR | 1990-08-22 | 23 | Offseason roster | No communicated restriction | WR2 / H (movable receiver); coverage units |
 | Jerrell Jackson | WR | 1990-02-06 | 24 | Offseason roster (reserve/future contract effective March 11) | No communicated restriction | Role not set |
+| Hakeem Nicks | WR | 1988-01-14 | 26 | Offseason roster (signed March 14, 2014) | No communicated restriction | Role not set |
+| Andrew Hawkins | WR | 1986-03-10 | 28 | Offseason roster (signed March 18, 2014, offer sheet not matched) | No communicated restriction | Role not set |
 
 ### Tight ends (2)
 
@@ -112,7 +114,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Russell Allen | LB | 1986-05-05 | 27 | Offseason roster | No communicated restriction | Base LB (from Week 14, for Posluszny); coverage units; real retirement dated April 22, 2014 applies when the clock reaches it (league rails, Entry 79) |
 | Sio Moore | LB | 1990-05-02 | 23 | Offseason roster | No communicated restriction | Package LB (Crennel's packages) |
 | Paul Posluszny | LB | 1984-10-10 | 29 | Offseason roster | Out, head/neck, independent medical hold (Week 13); projected return April 5, 2014 | Base LB; out (Allen starts from Week 14) |
-| Daryl Smith | LB | 1982-03-14 | 31 | Offseason roster | No communicated restriction | Base LB; defensive communication lead |
+| Daryl Smith | LB | 1982-03-14 | 32 | Offseason roster | No communicated restriction | Base LB; defensive communication lead |
 | Julian Stanford | LB | 1990-09-02 | 23 | Offseason roster | No communicated restriction | LB depth after Allen |
 
 ### Cornerbacks (5)

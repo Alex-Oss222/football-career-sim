@@ -1,6 +1,6 @@
 # Jacksonville Jaguars 2014 depth chart (working view)
 
-**As of:** March 12, 2014 (ledger Entry 96, the March 2014 free-agency replay).
+**As of:** March 18, 2014 (ledger Entry 97, the March 2014 free-agency replay).
 **Status:** carried from the closed 2013 chart minus players whose control ended on March 11; no 2014 depth decision has been made. Removing a player moves those below him up without a reorder. Stone owns the order and changes it only by decision.
 **Machine-readable copy:** [offseason/depth_chart_working.json](offseason/depth_chart_working.json), same schema as [the 2013 chart](../2013/depth_chart.json) plus contract flags, the March 11 additions and this update log.
 **Sources:** [2013 depth chart](../2013/depth_chart.json) (Git `781213a`, effective January 6, 2014, AFC Divisional preparation); [current roster](../2013/roster.md); [current contract status register](offseason/contract_status_register.md); [Caldwell's pre-tag-window verifications](offseason/caldwell_pre_tag_verifications.md); ledger Entries 79 and 85 through 89. The January chart supplies the carried order; the current roster and register supply control and availability.
@@ -10,7 +10,7 @@
 - **Order** is the closed 2013 order within each carried position group, first listed first. Players no longer controlled are removed; nobody else moved.
 - **Contract flag** comes from the [contract status register](offseason/contract_status_register.md) and the [contract table](offseason/contract_table.md). Players whose control ended at 4 p.m. March 11 are removed (update log).
 - **2013 recorded role** is the role recorded in the [2013 roster](../2013/roster.md) at the end of the 2013 season. Existing roles are carried for reference until Stone changes them; they do not promise a job after contracts, availability or personnel change. The combined line and secondary lists preserve the source order across different jobs, not a claim that every player competes for the same position.
-- **Added, not placed** marks players under contract from March 11 whom Stone has not placed: the six reserve/future contracts (Entry 85) and Alterraun Verner and Aqib Talib (Entries 95 and 96). They are listed below their groups with no depth position or role.
+- **Added, not placed** marks players under contract from March 11 whom Stone has not placed: the six reserve/future contracts (Entry 85) and the replay signings Verner, Talib, Nicks and Hawkins (Entries 95 to 97). They are listed below their groups with no depth position or role.
 - **Availability** is shown only where the club has recorded a note.
 
 ## Offense
@@ -46,6 +46,8 @@
 | 3 | Justin Blackmon | Under contract | WR3 / outside Z (from Week 8) | No communicated restriction |
 | 4 | Toney Clemons | Tendered ERFA (unsigned) | WR4 | No communicated restriction |
 | 5 | Mike Brown | Tendered ERFA (unsigned) | WR5 | No communicated restriction |
+| Added, not placed | Hakeem Nicks | Signed March 14, 2014 (one year, Entry 97) | None assigned | No communicated restriction |
+| Added, not placed | Andrew Hawkins | Signed March 18, 2014 (four years, Entry 97) | None assigned | No communicated restriction |
 | Added, not placed | Jerrell Jackson | Reserve/future (effective March 11) | None assigned | No communicated restriction |
 
 ### Tight ends (TE)
@@ -126,14 +128,14 @@ The kernel group is one OL list. Brad Meester (C) is removed: retired (Entry 79)
 
 Mike Westhoff has coordinated special teams since February 11, 2014 (Entry 84). No 2014 returner, coverage-unit or specialist decision has been made.
 
-## Counts at March 12, 2014 (Entry 96)
+## Counts at March 18, 2014 (Entry 97)
 
 | Group | Count |
 |---|---:|
 | Players on the carried chart | 44 |
 | of whom tendered RFA or ERFA (unsigned) | 4 |
-| Added, not placed (six futures, Verner and Talib) | 8 |
-| **Controlled players** | **52** |
+| Added, not placed (six futures, Verner, Talib, Nicks and Hawkins) | 10 |
+| **Controlled players** | **54** |
 | Removed since the 2013 chart (Meester, Cain and the seven other March 11 departures) | 9 |
 
 Roles open after March 11: QB2 (Henne), the lead back (Jones-Drew), TE3 (Reisner), long snapper (Cain) and the corner places of Brent Grimes and Ball. Marks is back at his carried place. The chart does not fill open roles: those are Stone's decisions.
@@ -153,6 +155,7 @@ Add a row for every signing, tag, tender, trade, release, retirement, draft pick
 | March 11, 2014 | League year opened | Entry 94 | Removed Henne, Jones-Drew, Reisner, Marks, C.J. Wilson, Brent Grimes, Rutland and Ball (control ended); players below them moved up only by removal. Added, not placed: the six futures (now in force) and Te'o-Nesheim. Tender flags for Bradfield, Clemons, Brown and Pasztor; Monroe on the tag; Cain re-signed |
 | March 11, 2014 correction | March 2014 free-agency replay | Entry 95 | Marks re-signed and restored to his carried place (DL 1, players below move down one); Verner added, not placed; Te'o-Nesheim's and Cain's first-pass signings withdrawn (LS open); Monroe signed through 2018 |
 | March 12, 2014 | Replay: Talib signed | Entry 96 | Talib added, not placed; no order change |
+| March 18, 2014 | Replay: Nicks and Hawkins signed | Entry 97 | Both added, not placed; no order change |
 
 ## Maintaining the game-input copy
 

@@ -96,6 +96,7 @@
     "Andrew Economos": {"gsis_id": "00-0022975", "birth_date": "1982-06-24", "espn_id": "9368", "evidence": "corroborated", "sources": ["nflverse_players", "nflverse_roster_2013", "espn"]},
     "Andrew Gachkar": {"gsis_id": "00-0028172", "birth_date": "1988-11-04", "espn_id": "14141", "evidence": "corroborated", "sources": ["nflverse_players", "nflverse_roster_2013", "espn"]},
     "Andrew Gardner": {"gsis_id": "00-0026929", "birth_date": "1986-04-04", "espn_id": "12659", "evidence": "corroborated", "sources": ["nflverse_players", "nflverse_roster_2013", "espn"]},
+    "Andrew Hawkins": {"gsis_id": "00-0027918", "birth_date": "1986-03-10", "espn_id": null, "evidence": "single_provider", "sources": ["nflverse_players"]},
     "Andrew Luck": {"gsis_id": "00-0029668", "birth_date": "1989-09-12", "espn_id": "14874", "evidence": "corroborated", "sources": ["nflverse_players", "nflverse_roster_2013", "espn"]},
     "Andrew Quarless": {"gsis_id": "00-0027753", "birth_date": "1988-10-06", "espn_id": "13440", "evidence": "corroborated", "sources": ["nflverse_players", "nflverse_roster_2013", "espn"]},
     "Andrew Sendejo": {"gsis_id": "00-0027914", "birth_date": "1987-09-09", "espn_id": "13939", "evidence": "corroborated", "sources": ["nflverse_players", "nflverse_roster_2013", "espn"]},

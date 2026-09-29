@@ -13,3 +13,5 @@
 **Current reading after the March 2014 replay (Entry 95):** Verner (priority 1) signed; Talib (priority 2) is the next negotiation; Te'o-Nesheim (priority 4) is reopened. Monroe and Marks re-signed. Entry 94's reading above is superseded. Results are in [signings](signings.md) and the [replay log](march_2014_replay_log.md).
 
 **Current reading at March 12 (Entry 96):** Talib (priority 2) signed; Tate (priority 3) chose Detroit. Stone directs Edelman as the receiver, with package A only if Edelman signs. Te'o-Nesheim (priority 4) is the next negotiation.
+
+**Current reading at March 18 (Entry 97):** Nicks and Hawkins signed; Edelman returned to New England. Caldwell ends paid veteran receiver bidding. Te'o-Nesheim is next.

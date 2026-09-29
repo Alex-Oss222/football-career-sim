@@ -410,3 +410,5 @@ The superseded 406-row raw list is replaced by these ID-linked candidates and th
 <!-- END GENERATED LEAGUE DATABASE -->
 
 **Entry 96 (March 12, 2014):** Golden Tate (Seattle, WR) signed with Detroit, five years, $31,000,000, after declining Jacksonville's final replay offer. Off the market.
+
+**Entry 97 (March 18, 2014):** Hakeem Nicks (Giants, WR) signed with Jacksonville March 14; Andrew Hawkins (Cincinnati, WR, RFA) signed Jacksonville's offer sheet March 13 and Cincinnati declined to match March 18; Julian Edelman (New England, WR) re-signed with New England, agreed March 15. All three are off the market.

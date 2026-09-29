@@ -1,6 +1,6 @@
 # Jacksonville Jaguars individual contract details
 
-[Return to the ten-year table](jaguars_cap_2014_2023.md). As of March 12, 2014, Entry 96. Whole US dollars.
+[Return to the ten-year table](jaguars_cap_2014_2023.md). As of March 18, 2014, Entry 97. Whole US dollars.
 
 Annual cells contain the working original or reconstructed contract schedule. Blank years lie outside that deal. The [completion research](../../library/2014_jaguars_contract_completion.md) identifies adopted simulation terms and guarantee assumptions. Cap, scheduled cash and remaining unpaid guarantees are separate amounts.
 
@@ -2638,5 +2638,94 @@ Assumes release before that year’s salary and bonuses are earned. Remaining gu
 ### Contract notes
 
 Branch record (Entry 96; March 2014 replay log). The historical Denver signing does not occur.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [signings](../../career/2014/offseason/free_agency/signings.md), [march 2014 replay log](../../career/2014/offseason/free_agency/march_2014_replay_log.md).
+
+## Hakeem Nicks
+
+| Field | Detail |
+|---|---|
+| Position / status | WR / Under contract |
+| Original contract | Veteran (branch free agent) |
+| Signed | March 14, 2014 |
+| Term | 1 / 2014 |
+| Contract value | $5,000,000 (maximum) |
+| Bonus terms | $2,000,000; $2,000,000; 1 |
+| Remaining unpaid salary guarantee | $2,500,000 |
+| Guarantee basis | $4,500,000 fully guaranteed at signing (signing bonus plus 2014 base) |
+| Schedule basis | Executed branch terms (Entry 95) |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $2,500,000 | $2,000,000 | $500,000 | $5,000,000 | $5,000,000 | $2,500,000 |
+| 2015 |  |  |  |  |  |  |
+| 2016 |  |  |  |  |  |  |
+| 2017 |  |  |  |  |  |  |
+| 2018 |  |  |  |  |  |  |
+| 2019 |  |  |  |  |  |  |
+| 2020 |  |  |  |  |  |  |
+| 2021 |  |  |  |  |  |  |
+| 2022 |  |  |  |  |  |  |
+| 2023 |  |  |  |  |  |  |
+
+### Release comparison
+
+| Year | Gross pre-June-1 dead money | Gross cap reduction |
+|---|---|---|
+| 2014 | $4,500,000 | $500,000 |
+
+Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
+
+### Contract notes
+
+Branch record (Entry 97; March 2014 replay log). Cap budget reserves the full $500,000 active-game bonuses; the historical Indianapolis signing does not occur.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [signings](../../career/2014/offseason/free_agency/signings.md), [march 2014 replay log](../../career/2014/offseason/free_agency/march_2014_replay_log.md).
+
+## Andrew Hawkins
+
+| Field | Detail |
+|---|---|
+| Position / status | WR / Under contract |
+| Original contract | Veteran (restricted free agent; offer sheet not matched) |
+| Signed | Offer sheet March 13, 2014; binding March 18 when Cincinnati declined to match |
+| Term | 4 / 2017 |
+| Contract value | $15,600,000 |
+| Bonus terms | $4,000,000; $1,000,000; 4 |
+| Remaining unpaid salary guarantee | $4,000,000 |
+| Guarantee basis | $8,000,000 fully guaranteed (signing bonus, 2014 base and $2,200,000 of the 2015 base) |
+| Schedule basis | Executed branch terms (Entry 95) |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $1,800,000 | $1,000,000 | $0 | $2,800,000 | $5,800,000 | $1,800,000 |
+| 2015 | $5,000,000 | $1,000,000 | $0 | $6,000,000 | $5,000,000 | $2,200,000 |
+| 2016 | $2,400,000 | $1,000,000 | $0 | $3,400,000 | $2,400,000 | $0 |
+| 2017 | $2,400,000 | $1,000,000 | $0 | $3,400,000 | $2,400,000 | $0 |
+| 2018 |  |  |  |  |  |  |
+| 2019 |  |  |  |  |  |  |
+| 2020 |  |  |  |  |  |  |
+| 2021 |  |  |  |  |  |  |
+| 2022 |  |  |  |  |  |  |
+| 2023 |  |  |  |  |  |  |
+
+### Release comparison
+
+| Year | Gross pre-June-1 dead money | Gross cap reduction |
+|---|---|---|
+| 2014 | $8,000,000 | -$5,200,000 |
+| 2015 | $5,200,000 | $800,000 |
+| 2016 | $2,000,000 | $1,400,000 |
+| 2017 | $1,000,000 | $2,400,000 |
+
+Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
+
+### Contract notes
+
+Branch record (Entry 97; March 2014 replay log). No draft-pick compensation to Cincinnati (original-round tender, undrafted); the historical Cleveland offer sheet does not occur.
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [signings](../../career/2014/offseason/free_agency/signings.md), [march 2014 replay log](../../career/2014/offseason/free_agency/march_2014_replay_log.md).

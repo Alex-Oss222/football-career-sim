@@ -1,7 +1,7 @@
 {
   "team": "Jacksonville Jaguars",
-  "as_of": "2014-03-12",
-  "checkpoint": "Entry 96",
+  "as_of": "2014-03-18",
+  "checkpoint": "Entry 97",
   "prepared": "2026-09-29",
   "start_year": 2014,
   "end_year": 2023,
@@ -6517,6 +6517,223 @@
         }
       },
       "schedule_basis": "Executed branch terms (Entry 95)"
+    },
+    {
+      "name": "Hakeem Nicks",
+      "position": "WR",
+      "roster_position": "WR",
+      "date_of_birth": "1988-01-14",
+      "age_at_checkpoint": 26,
+      "control": "signed",
+      "status": "Under contract",
+      "contract_type": "Veteran (branch free agent)",
+      "signed": "March 14, 2014",
+      "term": "1 / 2014",
+      "contract_ends": 2014,
+      "value": "$5,000,000 (maximum)",
+      "bonus_terms": "$2,000,000; $2,000,000; 1",
+      "guarantees": "$4,500,000 fully guaranteed at signing (signing bonus plus 2014 base)",
+      "dead_money_2014": "Gross exposure $4,500,000 before 2014 salary is earned",
+      "remaining_guarantees": 2500000,
+      "availability": "No communicated restriction",
+      "plan": "No new transaction decision in this tracker",
+      "source_note": "Branch record (Entry 97; March 2014 replay log). Cap budget reserves the full $500,000 active-game bonuses; the historical Indianapolis signing does not occur",
+      "sources": [
+        "career/2014/offseason/contract_table.md",
+        "career/2014/offseason/free_agency/signings.md",
+        "career/2014/offseason/free_agency/march_2014_replay_log.md"
+      ],
+      "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+      "accrued_seasons": "Through 2013: 5 (Giants, 2009-2013)",
+      "years": {
+        "2014": {
+          "status": "known",
+          "cap": 5000000,
+          "base": 2500000,
+          "proration": 2000000,
+          "other_cap": 500000,
+          "cash": 5000000,
+          "guaranteed_base": 2500000,
+          "basis": "Branch contract, Entry 97 (March 2014 replay): up to $500,000 active-game bonuses"
+        },
+        "2015": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2016": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2017": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2018": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2019": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2020": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2021": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2022": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2023": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        }
+      },
+      "schedule_basis": "Executed branch terms (Entry 95)"
+    },
+    {
+      "name": "Andrew Hawkins",
+      "position": "WR",
+      "roster_position": "WR",
+      "date_of_birth": "1986-03-10",
+      "age_at_checkpoint": 28,
+      "control": "signed",
+      "status": "Under contract",
+      "contract_type": "Veteran (restricted free agent; offer sheet not matched)",
+      "signed": "Offer sheet March 13, 2014; binding March 18 when Cincinnati declined to match",
+      "term": "4 / 2017",
+      "contract_ends": 2017,
+      "value": "$15,600,000",
+      "bonus_terms": "$4,000,000; $1,000,000; 4",
+      "guarantees": "$8,000,000 fully guaranteed (signing bonus, 2014 base and $2,200,000 of the 2015 base)",
+      "dead_money_2014": "Gross pre-June 1 exposure $5,200,000 before 2015; $2,000,000 before 2016; $1,000,000 before 2017",
+      "remaining_guarantees": 4000000,
+      "availability": "No communicated restriction",
+      "plan": "No new transaction decision in this tracker",
+      "source_note": "Branch record (Entry 97; March 2014 replay log). No draft-pick compensation to Cincinnati (original-round tender, undrafted); the historical Cleveland offer sheet does not occur",
+      "sources": [
+        "career/2014/offseason/contract_table.md",
+        "career/2014/offseason/free_agency/signings.md",
+        "career/2014/offseason/free_agency/march_2014_replay_log.md"
+      ],
+      "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+      "accrued_seasons": "Through 2013: 3 (Cincinnati, 2011-2013)",
+      "years": {
+        "2014": {
+          "status": "known",
+          "cap": 2800000,
+          "base": 1800000,
+          "proration": 1000000,
+          "other_cap": 0,
+          "cash": 5800000,
+          "guaranteed_base": 1800000,
+          "basis": "Branch contract, Entry 97 (March 2014 replay)"
+        },
+        "2015": {
+          "status": "known",
+          "cap": 6000000,
+          "base": 5000000,
+          "proration": 1000000,
+          "other_cap": 0,
+          "cash": 5000000,
+          "guaranteed_base": 2200000,
+          "basis": "Branch contract, Entry 97 (March 2014 replay)"
+        },
+        "2016": {
+          "status": "known",
+          "cap": 3400000,
+          "base": 2400000,
+          "proration": 1000000,
+          "other_cap": 0,
+          "cash": 2400000,
+          "guaranteed_base": 0,
+          "basis": "Branch contract, Entry 97 (March 2014 replay)"
+        },
+        "2017": {
+          "status": "known",
+          "cap": 3400000,
+          "base": 2400000,
+          "proration": 1000000,
+          "other_cap": 0,
+          "cash": 2400000,
+          "guaranteed_base": 0,
+          "basis": "Branch contract, Entry 97 (March 2014 replay)"
+        },
+        "2018": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2019": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2020": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2021": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2022": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2023": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        }
+      },
+      "schedule_basis": "Executed branch terms (Entry 95)"
     }
   ],
   "draft_picks": [
@@ -6627,6 +6844,11 @@
       "date": "2014-03-12",
       "source": "career/2013/ledger.md",
       "description": "Entry 96: Talib signed in the replay (5 years, $46.5M, $21.5M guaranteed); Tate declined Jacksonville and signed with Detroit (March 12). Top-51 displacement and the $504,000 offseason-workout charge are carried in the worksheet, not in these scheduled obligations."
+    },
+    {
+      "date": "2014-03-18",
+      "source": "career/2013/ledger.md",
+      "description": "Entry 97: Nicks signed March 14 (1 year, up to $5M, $4.5M guaranteed); Hawkins's offer sheet signed March 13 and Cincinnati declined to match March 18 (4 years, $15.6M, $8M guaranteed); Edelman returned to New England."
     }
   ],
   "scenarios": [],
