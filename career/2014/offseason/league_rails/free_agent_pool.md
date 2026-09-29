@@ -1,6 +1,6 @@
 # 2014 free-agent pool
 
-**Branch date:** February 2, 2014; status changes through February 28, 2014 are recorded in the section below the verified targets (Entry 89). **Research checked:** September 28, 2026. The nine players on the February 2 target board have verified pending free-agent classifications below. The rest of this file remains an unverified contract-candidate inventory, not a complete or executable free-agent pool. Jacksonville's own pending free agents belong in `career/2014/offseason/contract_status_register.md`.
+**Branch date:** February 2, 2014; status changes through March 3, 2014 are recorded in the sections below the verified targets (Entries 89 and 92). **Research checked:** September 28, 2026. The nine players on the February 2 target board have verified pending free-agent classifications below. The rest of this file remains an unverified contract-candidate inventory, not a complete or executable free-agent pool. Jacksonville's own pending free agents belong in `career/2014/offseason/contract_status_register.md`.
 
 ## Verified February 2 targets
 
@@ -78,6 +78,16 @@ These real moves are applied at the February 28 checkpoint from the dated rows i
 | Jeff Olson | Dallas Cowboys | G | February 28, 2014 | Move Confirmed; day Single source |
 
 **Pending verification, not applied:** Khalif Barnes (Oakland, reported re-signing February 28) and Zach Potter (Houston, reported signing February 26). Both are listed in their club pages with sources.
+
+### Status changes on the rails, March 1 to 3, 2014 (Entry 92)
+
+Applied at the March 3 checkpoint from the dated rows in the club pages, where each source is cited. The sweep covered tags, releases and retirements only; re-signings and extensions dated March 1 to 3 were not swept.
+
+| Player | Club (2013) | Pos | Real move and date | Effect in this pool | Status label |
+|---|---|---|---|---|---|
+| Brian Orakpo | Washington Redskins | OLB | Non-exclusive franchise tag, March 3 | Listed below as a generated candidate; no longer on the open market | Confirmed |
+| Alex Mack | Cleveland Browns | C | Transition tag, March 3 | Listed below as a generated candidate; Cleveland may match any offer sheet | Confirmed |
+| Jason Worilds | Pittsburgh Steelers | OLB | Transition tag, March 3 | Listed below as a generated candidate; Pittsburgh may match any offer sheet | Confirmed |
 
 <!-- BEGIN GENERATED LEAGUE DATABASE -->
 ## Generated pending-free-agent candidates
