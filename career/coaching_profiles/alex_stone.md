@@ -2,6 +2,8 @@
 
 Jacksonville Jaguars head coach and offensive play-caller. Age 50. This portrait looks back from February 2, 2014, after his first Jacksonville season. Descriptions of temperament and comfort are interpretations of his recorded work and conversations; the linked records supply the events.
 
+The [complete NFL Coach Sheet](alex_stone_coach_sheet.md) expands this portrait into his full career, identity, team, staff, roster, capabilities and season log through February 17, 2014, with historical research and explicit gaps.
+
 Stone is an offensive head coach who likes to make the defense declare itself, then move the same players into a different problem. He is comfortable with the play sheet. He likes having the final offensive decision. His offense gives tight ends, backs and movable receivers several ways to do a familiar job, and he spends considerable preparation time making those jobs fit together. He also wants a physical running game, with a fullback, a pulling guard or another tight end doing something useful at the point of attack.
 
 The first Jacksonville season has exposed a less tidy version of that coach. He can see a passing answer and keep pursuing it while a useful running game goes unused. He can protect a young quarterback by taking something off the sheet, then leave it off long after the original problem should have been revisited. His teaching is most complete when he has time to show the correction, run it again and change the look. During the season, that same correction can shrink to a sentence while everybody moves on to the next opponent.
