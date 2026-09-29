@@ -295,3 +295,27 @@ This supersedes the board rule that Jacksonville trades no pick away, for this p
 | E. J. Gaines, CB, Missouri | Jacksonville's sixth | Ross Cockrell (Duke), the recorded corner comparison. If Cockrell is taken at the sixth, the round 7 instruction becomes Malcolm Butler with no second name until the post-combine board |
 
 This expressly authorizes the transfer that the earlier amendment said not to make silently. Each fallback still needs eligibility, dated scouting and the rails availability rule at the draft.
+
+## September 29, 2026 amendment: receivers, pick 13 and 26 fallbacks, edge pairing, undrafted line
+
+**User instruction, at the February 17, 2014 branch checkpoint.** This records plans only. No signing, trade, selection or roster change occurs here.
+
+**Receivers: no Emmanuel Sanders.** Sanders is removed from the free-agency board. The receiver plan is Golden Tate (priority 3) with Adam Thielen, and Travis Kelce at tight end. The third receiver should be a serviceable player who can do every receiver job, not a premium signing:
+- Davante Adams if Jacksonville drafts him (his eligibility and a dated scouting report still required);
+- otherwise the section 3 conditional versatile veterans, Andrew Hawkins on his stated condition, else Julian Edelman, at their stated terms and walk-aways.
+
+Package A's precondition changes accordingly: Tate signed, and Hawkins or Edelman signed or agreed, before the offer to Seattle. If neither can be signed, package A's offer still goes ahead once Tate signs, with Adams as the planned third receiver; Shorts's production is not replaced at a premium price. Contingency 3 stands: if Tate is lost, Shorts stays.
+
+**Pick 13 fallback: Kyle Fuller, CB, Virginia Tech.** If Aaron Donald is unavailable at 13, Fuller is the selection.
+
+**Pick 26 fallback: Kyle Van Noy, LB, BYU.** If Joel Bitonio is unavailable at 26, Van Noy is the selection. This replaces the Martin, Richardson and Gabe Jackson comparisons as the instruction for pick 26.
+
+**Edge pairing.** If package H delivers Lawrence, the free-agency edge rusher (section 3, priority 4) is still signed to play the opposite end, so the front is two edge rushers plus Donald inside. Losing the edge target does not raise the price for the next one; contingency 4 (Jared Allen, then keep Babin) stands.
+
+**Undrafted offensive line, aggressively.** The undrafted class after the draft is weighted to the offensive line more heavily than section 4 said:
+- Linemen come first in the signing order: Andrew Norwell, Cornelius Lucas, Matt Feiler, then the alternates James Hurst (after medical clearance) and Tyler Shatley.
+- At least five of the 12 to 15 undrafted signings are offensive linemen when that many eligible, scouted linemen go undrafted.
+- Caldwell may use the larger undrafted signing bonuses on linemen, within the rookie-pool and cap rules as verified at the time.
+- Each still has to go undrafted in the branch draft, have a pre-draft scouting report and, if an underclassman, be on the January 19 special-eligibility list.
+
+**Adams has no assigned pick.** The only pick that used to name him was 37, now 36 and committed to package H. Picks 13, 26 and 31 are Donald or Fuller, Bitonio or Van Noy, and Lawrence. Adams becomes a target only where the user assigns him a pick (or at 36 if package H fails and Lawrence is gone there).
