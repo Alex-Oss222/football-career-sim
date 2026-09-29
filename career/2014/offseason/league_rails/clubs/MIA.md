@@ -77,3 +77,6 @@
 
 | Real date | Move | Player | Detail | Source | Gate passed in branch? |
 |---|---|---|---|---|---|
+| March 3, 2014 | Re-signing (real Miami move) | Brent Grimes, CB | Real Miami re-signing, agreed and announced March 3. In the branch Grimes is a Jacksonville pending UFA (his one-year 2013 branch contract with Jacksonville ends at the March 11 league year), so the real Miami move cannot apply before then: Jacksonville control overrides a real move (rails method section 3). His placement is decided at the league year under method sections 3 and 4. No contract terms are recorded | [Pro Football Rumors, March 2014](https://www.profootballrumors.com/2014/03/dolphins-re-sign-brent-grimes); further sources in the two-pass research record are not cited because their titles carry contract terms. Confirmed as a real move | **No: not applied, Jacksonville-controlled in the branch** (Entry 92) |
+
+**Coverage note (Entry 92, March 3, 2014):** the March 1 to 3 league sweep was bounded and covered tags, releases and retirements only. Re-signings and extensions dated March 1 to 3 were not swept, and the session's web-search budget is exhausted, so other moves by this club in the window may exist; this is an open verification gap for a later session.

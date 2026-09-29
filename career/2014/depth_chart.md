@@ -1,6 +1,6 @@
 # Jacksonville Jaguars 2014 depth chart (working view)
 
-**As of:** February 28, 2014 (ledger Entry 91; contract notes corrected, depth order unchanged). The 2014 league year opens March 11, 2014, 4:00 p.m. ET.
+**As of:** March 3, 2014 (ledger Entry 92; no change to the chart since Entry 91). The 2014 league year opens March 11, 2014, 4:00 p.m. ET.
 **Status:** carried from the closed 2013 chart; no 2014 depth decision has been made. Stone owns the order and changes it only by decision.
 **Machine-readable copy:** [offseason/depth_chart_working.json](offseason/depth_chart_working.json), same schema as [the 2013 chart](../2013/depth_chart.json) plus contract flags, the March 11 additions and this update log.
 **Sources:** [2013 depth chart](../2013/depth_chart.json) (Git `781213a`, effective January 6, 2014, AFC Divisional preparation); [current roster](../2013/roster.md); [current contract status register](offseason/contract_status_register.md); [Caldwell's pre-tag-window verifications](offseason/caldwell_pre_tag_verifications.md); ledger Entries 79 and 85 through 89. The January chart supplies the carried order; the current roster and register supply control and availability.

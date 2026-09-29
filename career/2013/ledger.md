@@ -2652,3 +2652,36 @@ The carry-forward dead-money register resolves Bray at $51,675, separately from 
 Atomic closure: contract register/table, futures outcomes, working depth-chart control notes, roster/register and current season pointers, financial inputs, generated cap/detail views and maintenance guidance are updated together. No depth-order, medical, staff, draft-pick or football event changes.
 
 **Commit closed - Canonical correction - February 28, 2014 - Complete contract schedules adopted - canonical through February 28, 2014**
+
+
+## Entry 92: Clock advanced to March 3, 2014 (designation deadline passed)
+
+**Effective canonical state:** March 3, 2014.
+**Recorded:** September 29, 2026
+**Checkpoint:** `Canonical update - March 3, 2014 - Clock advanced to March 3 (designation deadline passed)`
+**Preceding global package checkpoint:** `Canonical correction - February 28, 2014 - Complete contract schedules adopted`
+
+**Authority.** On September 29, 2026 the user asked for the clock to advance to March 3, the franchise and transition designation deadline (4 p.m. ET). This entry records the deadline and the real other-club designations dated March 1 to 3.
+
+**Jacksonville.** The deadline passed with Eugene Monroe as Jacksonville's only designation: non-exclusive franchise player, tender $11,654,000, not yet signed (Entries 87 and 89). No other designation was available. Sen'Derrick Marks, Maurice Jones-Drew, Chad Henne, Alan Ball, Brent Grimes, C.J. Wilson and Jeremy Cain remain pending unrestricted free agents, and Jacksonville's, until 4 p.m. ET March 11. No transaction occurred. No contract figure changed, so the financial tracker is not regenerated; `render_jaguars_cap_tracker.py --check` passes, and the contract table keeps its February 28 financial as-of date with a March 3 check note.
+
+**League rails, March 1 to 3.** From the two-pass verified tag and board research:
+- Brian Orakpo, OLB, Washington: non-exclusive franchise tag, March 3. Confirmed.
+- Alex Mack, C, Cleveland: transition tag, March 3. Confirmed.
+- Jason Worilds, OLB, Pittsburgh: transition tag, March 3. Confirmed.
+- Brent Grimes: the real March 3 Miami re-signing is **not applied**. In the branch he is a Jacksonville pending UFA, and Jacksonville control overrides a real move (rails method section 3); his placement is decided at the league year under method sections 3 and 4. Recorded in `MIA.md` without contract terms.
+- Phil Costa (Dallas): reported as a planned release around February 28 to March 1, with no transaction date established. Pending verification; not applied.
+- The three tags are recorded in the Washington, Cleveland and Pittsburgh club pages and in the free-agent pool's status-change section.
+
+**Decisions not to act (context on the board pages only).** Tennessee did not tag Verner, New England did not tag Talib or Edelman, and Tate was not tagged; all remain pending UFAs for March 11, as do Jared Allen and, as far as the record shows, Te'o-Nesheim. Hawkins remains a pending Cincinnati RFA with no tender decision recorded. Stone's priorities 1 to 3 (Verner, Talib, Tate) are intact; the edge order is Te'o-Nesheim, then Jared Allen, then keep Babin.
+
+**Verification gap.** The March 1 to 3 sweep was bounded and covered tags, releases and retirements only. Re-signings and extensions dated March 1 to 3 were not swept, and the session's web-search budget is exhausted. This is an open item for a later session, recorded in each touched club page and in Document 5.
+
+**Next dated events.**
+- March 8 at noon: negotiating window opens (call order on the plan: Verner, Talib, Tate, Te'o-Nesheim; Cain re-signing talks; Monroe long-term talks continue).
+- March 11 at 4 p.m. ET: the league year opens; tenders are due (Bradfield lowest; ERFAs Clemons, Brown and Pasztor); the reserve/future contracts and Monroe's tender take effect; trades open for packages A, H, I, D, F1, F2 and G; Monroe's long-term draw, Cain's re-signing draw and the free-agent market draws fall at the players' real signing dates.
+- March 25: Nwaneri's original $1M roster bonus is reported due (Entry 90).
+
+**Atomic closure.** The following now agree: the master clock (March 3), the roster header and player ages, the calendar, the free-agency board reading, the Washington, Cleveland, Pittsburgh, Miami and Dallas rails pages, the free-agent pool, the contract table and working depth chart (check and as-of lines only), the 2014 README, readiness, operating baseline, trade and staff status lines, the March 1 to 3 turn output, and Documents 4 (register 47) and 5 (state 68). No player-control, contract, pick or staff change. The private snapshot is not advanced from this branch.
+
+**Commit closed - Canonical update - March 3, 2014 - Clock advanced to March 3 (designation deadline passed) - canonical through March 3, 2014**

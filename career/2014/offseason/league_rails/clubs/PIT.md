@@ -77,3 +77,6 @@
 
 | Real date | Move | Player | Detail | Source | Gate passed in branch? |
 |---|---|---|---|---|---|
+| March 3, 2014 | Transition tag | Jason Worilds, OLB | Transition tag, designated on the deadline day. Pittsburgh keeps a right to match any offer sheet; tender signing not recorded | [Steelers.com](https://www.steelers.com/news/steelers-use-transition-tag-on-worilds-12693584); [Pittsburgh Post-Gazette, March 3, 2014](https://www.post-gazette.com/sports/steelers/2014/03/03/Steelers-place-transition-tag-on-linebacker-Worilds/stories/201403030177); [NFL.com](https://www.nfl.com/news/jason-worilds-transition-tagged-by-pittsburgh-steelers-0ap2000000330442). Confirmed | Yes: applied March 3, 2014 by Entry 92 |
+
+**Coverage note (Entry 92, March 3, 2014):** the March 1 to 3 league sweep was bounded and covered tags, releases and retirements only. Re-signings and extensions dated March 1 to 3 were not swept, and the session's web-search budget is exhausted, so other moves by this club in the window may exist; this is an open verification gap for a later session.
