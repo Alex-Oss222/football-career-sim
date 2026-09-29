@@ -183,7 +183,7 @@ The old 75-person working count and the old unresolved inherited-control bucket 
 
 ### Current player index
 
-<!-- player-ages-as-of: 2014-02-18 -->
+<!-- player-ages-as-of: 2014-02-25 -->
 
 DOB is a verified pre-divergence identity fact, supported by the [birth-date evidence registry](../library/data/player_birth_dates.json) and [verification notes](../library/2013_player_birth_dates.md). Age is derived at Document 5's master date, refreshed with `python scripts/render_player_ages.py`. Reserve/future players' birth dates and ages appear in the [current roster](../career/2013/roster.md#4-reservefuture-contracts-2014-and-the-2013-practice-squad). An age does not determine a rating, medical clearance or retirement.
 
@@ -215,12 +215,12 @@ DOB is a verified pre-divergence identity fact, supported by the [birth-date evi
 | Brad Meester | JAX-BRADMEESTER | C | 1977-03-23 | 36 | Reserve/Retired (announced December 18, 2013; Entry 79; contract expires March 11, 2014) | Branch re-signing; one year, $1.50M | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Jason Babin | JAX-JASONBABIN | DE | 1980-05-24 | 33 | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Andre Branch | JAX-ANDREBRANCH | DE | 1989-07-14 | 24 | Active 53 | Existing rookie contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Ryan Davis | JAX-RYANDAVIS | DE | 1989-02-24 | 24 | Active 53 | Dec. 30, 2012 reserve/future contract | Cleared (Divisional minor injury; projected return January 14 reached); fresh game-day communication required | Entry 65 |
+| Ryan Davis | JAX-RYANDAVIS | DE | 1989-02-24 | 25 | Active 53 | Dec. 30, 2012 reserve/future contract | Cleared (Divisional minor injury; projected return January 14 reached); fresh game-day communication required | Entry 65 |
 | Lavar Edwards | JAX-LAVAREDWARDS | DE | 1990-04-29 | 23 | Active 53 | #135; rookie contract signed May 2 | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Jeremy Mincey | JAX-JEREMYMINCEY | DE | 1983-12-14 | 30 | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
 | C.J. Wilson | JAX-CJWILSON | DE | 1987-03-30 | 26 | Active 53 | Acquired from Green Bay for Blaine Gabbert | Cleared (Week 2 injury; projected return January 30, 2014 reached); fresh communication required | Entry 67 |
 | Tyson Alualu | JAX-TYSONALUALU | DT | 1987-05-12 | 26 | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
-| Sen'Derrick Marks | JAX-SENDERRICKMARKS | DT | 1987-02-23 | 26 | Active 53 | Branch signing; one year, $1.50M | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Sen'Derrick Marks | JAX-SENDERRICKMARKS | DT | 1987-02-23 | 27 | Active 53 | Branch signing; one year, $1.50M | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Roy Miller | JAX-ROYMILLER | DT | 1987-07-09 | 26 | Active 53 | Branch signing; two years, $5.00M | No communicated restriction; fresh game-day communication required | Entry 41 |
 | C.J. Mosley | JAX-CJMOSLEY | DT | 1983-08-06 | 30 | Active 53 | Existing contract/control | No communicated restriction; August 29 upper-extremity injury, recovered projection August 30 | Entry 46 |
 | Jeris Pendleton | JAX-JERISPENDLETON | DT | 1983-11-07 | 30 | Active 53 | Existing rookie contract | No communicated restriction; fresh game-day communication required | Entry 41 |

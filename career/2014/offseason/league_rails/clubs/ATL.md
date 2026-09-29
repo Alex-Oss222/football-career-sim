@@ -75,3 +75,4 @@
 
 | Real date | Move | Player | Detail | Source | Gate passed in branch? |
 |---|---|---|---|---|---|
+| February 18, 2014 | Release | Garrett Reynolds, G | Released by Atlanta | [Atlanta Journal-Constitution](https://www.ajc.com/sports/football/falcons-release-offensive-lineman-garrett-reynolds/wD6KN7eRCNgCoQGfsQ4klJ/); [The Falcoholic, February 18, 2014](https://www.thefalcoholic.com/2014/2/18/5423810/falcons-release-right-guard-garrett-reynolds); [AtlantaFalcons.com](https://www.atlantafalcons.com/news/falcons-release-ol-reynolds-12634565). Confirmed | Yes: applied at the February 25 checkpoint (ledger Entry 88). Found by a bounded search of February 18-25 moves, not a full transaction log |

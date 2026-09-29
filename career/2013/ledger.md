@@ -2537,3 +2537,33 @@ As a result, the contract status register now shows 36 under contract, 8 pending
 **Atomic closure.** The following now agree: the memo amendment, the [tags and tenders record](../2014/offseason/free_agency/signings.md#tags-and-tenders), the contract status register (7 pending UFAs, 1 franchise player), the contract table and the working depth chart (both with update-log rows), the 2014 preparation worksheet, the calendar, the roster header, the 2014 README, readiness, operating baseline and trade status lines, and Documents 4 (register 43) and 5 (state 63). No player-control, roster-count, pick or staff change. The private snapshot is not advanced from this branch.
 
 **Commit closed - Canonical update - February 18, 2014 - Eugene Monroe designated franchise player - canonical through February 18, 2014**
+
+
+## Entry 88: Clock advanced to February 25, 2014 (Combine closed)
+
+**Effective canonical state:** February 25, 2014.
+**Recorded:** September 29, 2026
+**Checkpoint:** `Canonical update - February 25, 2014 - Clock advanced to February 25 (Combine closed)`
+**Preceding global package checkpoint:** `Canonical update - February 18, 2014 - Eugene Monroe designated franchise player`
+
+**Authority.** On September 29, 2026 the user asked for the clock to advance through the Combine (February 19-25, 2014) after the Monroe designation. This entry records what became public in that window and moves the master clock.
+
+**Combine evidence.** `library/2014_combine_results.md` records combine measurables, drill results, non-participation and eligibility for the 23 prospects on Jacksonville's draft board, its named comparisons and its undrafted line list. The research had two passes; every figure carries a status label and is usable from its public date (February 21 to 25, 2014). Pro-day results, later reports and all post-draft material are excluded, and four sources whose titles carry post-draft material are withheld. No grade is assigned: grades are Stone's evaluation and remain open. The information-gates file and the draft board each carry a one-line pointer.
+
+**League rails.** A bounded search of real other-club moves dated February 18 to 25 found two, both applied at this checkpoint in their club pages:
+- Indianapolis released RB Tashard Choice on February 18 (single source).
+- Atlanta released G Garrett Reynolds on February 18 (confirmed).
+The search is not a complete league transaction log. No real retirement dated February 18 to 25 is recorded in `league_rails/retirements.md`, and no new retirement research was done.
+
+**Nothing else happened for Jacksonville between February 19 and 25.** No signing, tender, trade, waiver claim or staff change. Monroe's tender remains unsigned. The 2014 cap and the official tag figures are still unpublished (February 28).
+
+**Next dated events.**
+- Cap and tag figures public, February 28 (Monroe's official tender amount).
+- Designation deadline, March 3 at 4 p.m. ET; Jacksonville has already designated.
+- Negotiating window from March 8 at noon.
+- March 11 at 4 p.m. ET: the league year opens, RFA/ERFA tenders are due, reserve/future contracts take effect, trades open, Monroe's tender starts to count and his re-signing draw falls at his real signing date, and the free-agent market draws begin.
+- Nwaneri's roster-bonus date is unknown.
+
+**Atomic closure.** The following now agree: the master clock (February 25), the roster header and player ages (derived by the age renderer; Ryan Davis and Sen'Derrick Marks had birthdays in the window), the calendar, the combine results file and its two pointers, the Indianapolis and Atlanta rails pages, the 2014 README, readiness, operating baseline, trade and staff status lines, the February 18 to 25 turn output, and Document 5 (state 64). Document 4 stays at register 43: its owned content is unchanged apart from the renderer-derived ages. No player-control, contract, cap, pick, staff or game change. The private snapshot is not advanced from this branch.
+
+**Commit closed - Canonical update - February 25, 2014 - Clock advanced to February 25 (Combine closed) - canonical through February 25, 2014**

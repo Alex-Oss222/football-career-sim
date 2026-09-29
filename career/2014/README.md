@@ -2,14 +2,14 @@
 
 The 2014 league year folder. The 2013 season is complete and archived (ledger Entry 67); this folder was set up in ledger Entry 68. Plans and future calendar entries are not completed events. Dated staff outcomes already closed in the ledger are linked below.
 
-**Start here:** [2014 operating baseline](operating_baseline.md) links the transaction records, training outputs, full schedule inventory and season handoffs. The clock is February 18, 2014 (Entry 87): Eugene Monroe was designated non-exclusive franchise player that day (tender not yet signed; [tags and tenders](offseason/free_agency/signings.md#tags-and-tenders)). Next are the Combine (February 19-25), the February 28 cap and tag figures and the March 11 league year. [Caldwell's pre-tag-window verifications](offseason/caldwell_pre_tag_verifications.md) record what the front office established by February 17.
+**Start here:** [2014 operating baseline](operating_baseline.md) links the transaction records, training outputs, full schedule inventory and season handoffs. The clock is February 25, 2014 (Entry 88): the Combine has closed and its evidence for the board's prospects is in [the combine results file](../../library/2014_combine_results.md). Eugene Monroe was designated non-exclusive franchise player on February 18 (Entry 87; tender not yet signed; [tags and tenders](offseason/free_agency/signings.md#tags-and-tenders)). Next are the February 28 cap and tag figures and the March 11 league year. [Caldwell's pre-tag-window verifications](offseason/caldwell_pre_tag_verifications.md) record what the front office established by February 17.
 
 **Coaching staff:** [Open the 2014 staff timeline](offseason/staff_changes/timeline.md) to see who has been approached, who has left, which jobs are vacant and who Jacksonville hires. [Replacement targets](offseason/staff_changes/staff_plan.md) and [hiring outcomes](offseason/staff_changes/hires.md) are kept in the same folder.
 
 | Record | Path | Status |
 |---|---|---|
 | Calendar and gates | [calendar.md](calendar.md) | Current |
-| Offseason turn outputs | [offseason/turns/](offseason/turns/README.md) | February 3 to 17, 2014 written (Entries 83-86) |
+| Offseason turn outputs | [offseason/turns/](offseason/turns/README.md) | February 3 to 17 (Entries 83-86) and February 18 to 25 (Entries 87-88) written |
 | Draft order (generated from receipts) | [draft/draft_order.md](draft/draft_order.md) | All seven rounds: 224 ordinary assets audited; IND 14 / GB 15; JAX firsts 13/26 and eight picks; three conditional claims and compensatory awards remain pending |
 | Schedule and opponents | [schedule/README.md](schedule/README.md) | All 32 clubs and 256 matchups generated; dated fixtures/bye wait for April 23; three London dates already known |
 | Contract and free-agency status at the league-year turn | [offseason/contract_status_register.md](offseason/contract_status_register.md) | Research register (sourced; see its labels) |
@@ -24,7 +24,7 @@ The 2014 league year folder. The 2013 season is complete and archived (ledger En
 | Season ledger | not yet created; the 2013 ledger (`career/2013/ledger.md`) remains Document 6 until the first 2014 event closes | Pending |
 | Roster | `career/2013/roster.md` remains the controlled-roster record until a 2014 roster owner is created with the first roster-changing event | Pending |
 
-**Setup status:** [Readiness checklist](readiness.md), [financial preparation](offseason/current_cap_worksheet.md), [scouting](scouting/README.md) and [statbook](statbook.md). Entry 82 reconciled the operating handoff; Entries 83-85 closed the February staff and reserve/future events; Entry 86 advanced the clock to February 17; Entry 87 recorded Monroe's franchise tag.
+**Setup status:** [Readiness checklist](readiness.md), [financial preparation](offseason/current_cap_worksheet.md), [scouting](scouting/README.md) and [statbook](statbook.md). Entry 82 reconciled the operating handoff; Entries 83-85 closed the February staff and reserve/future events; Entry 86 advanced the clock to February 17; Entry 87 recorded Monroe's franchise tag; Entry 88 advanced the clock to February 25.
 
 **Prepared:** the five phase plans and individual training/film workflow. The special-teams search is closed: Mike Westhoff was hired on February 11 (Entry 84). Other explicitly marked decisions remain pending. The exit interviews (January 13-14, 2014; Entry 76) list the program decisions and staff findings the plans should answer (`career/2013/exit_interviews/README.md`).
 
