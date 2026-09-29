@@ -1,12 +1,14 @@
 # Living coaching profiles
 
-[Alex Stone](alex_stone.md) | [Assistant staff](staff_profiles.md) | [Editable profile template](profile_template.md) | [2014 training](../2014/offseason/README.md)
+[Alex Stone](alex_stone.md) | [Complete NFL Coach Sheet](alex_stone_coach_sheet.md) | [Assistant staff](staff_profiles.md) | [Editable profile template](profile_template.md) | [2014 training](../2014/offseason/README.md)
 
 These records assess the coach working in the branch now. They carry experience, demonstrated teaching, actual choices, recurring questions and changes in understanding across seasons. They do not freeze a coach at his hiring résumé or prescribe the type of coach he must become.
 
 Lead with a recognizable coaching portrait: how the coach prepares, calls, teaches, delegates and responds when the work goes badly. Describe current tendencies and changes through specific decisions and relationships. Evidence tables support that portrait; they should not replace it with a list of questions about what might someday be known. Stone's [initial assessment and dated evidence map](alex_stone_2013_assessment_record.md) remain available behind his revised profile. Interpretations of comfort and temperament should be identified as interpretations, with room for later experience to change them.
 
 **Initial evidence cutoff: February 2, 2014.** The profiles synthesize existing records. Preparing them is not a new review meeting, practice, hire, delegation or career-clock advance. A staff member's contract and authority remain in the authoritative staff/canon records. Stone's frozen [prehire dossier](../../library/alex_stone_character_dossier_pre_hire.md) preserves what was known at hiring; his living profile records what later experience changes.
+
+**Coach Sheet cutoff: February 17, 2014, through Entry 86.** The complete Coach Sheet follows the user's supplied form, retaining its sections and 114 named capabilities. It replaces numerical ratings and XP with evidence-based assessments, separates real historical context from branch events, and marks inactive game-week fields and unestablished biography explicitly. Its roster and season tables are dated reference snapshots; the roster, state, staff and receipt files remain the source owners.
 
 ## How to edit and show evolution
 
