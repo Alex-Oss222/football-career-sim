@@ -1,0 +1,23 @@
+# Jaguars financial tracker
+
+[Open the 2014 to 2023 cap table](jaguars_cap_2014_2023.md) | [Individual contract details](jaguars_contract_details.md)
+
+This is the long-term financial home for the branch. The ten annual columns remain visible even when a player has no recorded commitment in later years. It uses the supplied NFL cap-table template, adapted to the 2014 rules and the February 28, Entry 89 checkpoint. All 59 current active, retired and futures players are covered.
+
+Read the cap table for team and position totals, every player's annual charge, expiration dates, cash, options, draft costs, dead money and scenarios. Read the named player sheets for contract details and source limits. Unknown amounts are never zero. A partial sum is never available cap space. No automatic extensions, projected player signings or future actual Jaguars contracts fill the later columns.
+
+## Keeping it current
+
+1. Close the actual signing, tender, extension, trade, release, retirement, guarantee change or accounting correction in its event owner. Update the current roster, contract register/table, cap worksheet and affected state records under the [normal workflow](../../docs/update_workflow.md).
+2. Update the matching named player in [the financial inputs](jaguars_cap_inputs.json), including every affected annual cap/cash/bonus amount, term, guarantee, source and effective date. Add new players. When a player leaves the current roster inventory, keep his row, set `former_player` to `true`, and supply `departure_date` and the repository path in `departure_source`. Replace future salary with the actual surviving obligations and update the player's status. The validator excludes former players from current-roster matching while their recorded obligations remain in annual totals. If using the separate dead-money register, reconcile it with the player row to avoid counting the same liability twice. Never overwrite a closed year's actual obligation with the terms of a later extension. Record amendments with the player's name, date, source and description.
+3. Resolve both the old charge and its replacement. A tender replaced by a signed deal is not an additional charge. The new Bray futures salary and his possible old rookie bonus liability are different obligations. A future signing is not a depth-chart promotion.
+4. Refresh club adjustments, actual cash receipts, draft inputs and period rules as evidence becomes available. The annual team inputs hold sourced carryover, signed net adjustments, counted team salary, actual cash, reserves and the ownership budget. Cap space appears only when accounting is explicitly reconciled and all required inputs and player obligations are complete. The present dataset has not met that standard. Keep unapproved scenarios out of commitments.
+5. Run `python scripts/render_jaguars_cap_tracker.py`, then `python scripts/render_jaguars_cap_tracker.py --check` and `python scripts/validate_repository.py`. Review the changes against the event, including all affected future years. The two Markdown views are generated; edit the sourced inputs, not their totals.
+
+The generator checks player coverage against the linked current roster and exact 2014 charges against the linked contract table. When a season-owner handoff changes those paths, update the input pointers and the corresponding validation deliberately. The initial horizon is fixed at 2014 to 2023; a later horizon should preserve completed-year history. This is an accounting view, not a roster authority or a simulation engine.
+
+## Sources and verification
+
+The [current contract table](../2014/offseason/contract_table.md) supplies the 2014 rows and evidence limits. The [contract register](../2014/offseason/contract_status_register.md) supplies terms and free-agent classes. The executed [rookie contracts](../2013/offseason/draft/draftees.md), [UDFA contracts](../2013/offseason/draft/udfa_signings.md), [veteran agreements](../2013/offseason/free_agency/signings.md) and [futures/tag outcomes](../2014/offseason/free_agency/signings.md) supply branch obligations. The [financial preparation worksheet](../2014/offseason/current_cap_worksheet.md) retains the open reconciliation work.
+
+The original 2011 agreement, contemporary NFLPA explanation and independent minimum-salary table were checked for the template's period-sensitive fields. The source links and specific corrections appear in the cap table. Modern fifth-year option tiers, automatic practice-squad elevations, blanket zero-filled blanks and a recurring four-year floor after 2020 were not carried into the 2014 view. Later actual player transactions were not used to fill branch contracts.

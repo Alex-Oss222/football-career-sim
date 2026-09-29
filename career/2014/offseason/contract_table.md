@@ -4,6 +4,8 @@
 **Nature:** derived view. It executes no signing, tag, tender, release, trade or extension, certifies no cap room and changes no canon. The [contract status register](contract_status_register.md) owns each player's status; the [2014 preparation worksheet](current_cap_worksheet.md) owns reconciliation; Caldwell owns contract decisions (Document 3).
 **Baseline:** [2013 initial cap sheet](../../2013/offseason/initial_cap_sheet.md) (per-player 2013 rows, Git `e04dd82`); [2013 regular-season worksheet](../../2013/offseason/current_cap_worksheet.md) and its May 5 version (Git `d25c8cf`); [2013 free-agency signings](../../2013/offseason/free_agency/signings.md); [2013 draftees](../../2013/offseason/draft/draftees.md); [2013 undrafted signings](../../2013/offseason/draft/udfa_signings.md); [2013 trades](../../2013/trades/trades.md); [current contract status register](contract_status_register.md); [Caldwell's pre-tag-window verifications](caldwell_pre_tag_verifications.md) (Git `9ca804c`); [2014 free-agency outcomes](free_agency/signings.md); ledger Entries 3, 4, 7, 9, 79, 80 and 85 through 89. Historical Git references identify the original financial baselines; current status follows the latest register and executed outcomes.
 
+**Long-term view:** [2014 to 2023 Jaguars cap tracker](../../finances/jaguars_cap_2014_2023.md), with [individual contract details](../../finances/jaguars_contract_details.md). This table remains the current-year source.
+
 ## Update log
 
 Add a row, and change the affected player rows and summaries, for every signing, tag, tender, trade, release, retirement, draft pick, waiver claim, restructure and newly sourced contract figure.

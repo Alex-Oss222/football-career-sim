@@ -30,6 +30,7 @@ Any task that **completes an event, advances the career clock, changes roster/co
    - the applicable cap/contract/draft-capital accounting file;
    - `career/[year]/depth_chart.md` and its working JSON (`career/[year]/offseason/depth_chart_working.json` until the season input `career/[year]/depth_chart.json` is released), with a row in its update log;
    - `career/[year]/offseason/contract_table.md`, with a row in its update log;
+   - the long-term financial inputs and generated views under `career/finances/`, including all affected future-year obligations; run `python scripts/render_jaguars_cap_tracker.py` and its `--check` mode when these change;
    - `state/04_Roster_and_Staff_Register.md`;
    - `state/05_Current_Season_State.md`.
    Update another file only when that file actually owns a changed current fact. Do **not** append transaction history, roster snapshots, draft recaps, or checkpoint bookkeeping to durable strategy, development, playbook, or planning documents.
