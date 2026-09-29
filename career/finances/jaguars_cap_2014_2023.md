@@ -1,6 +1,6 @@
 # Jacksonville Jaguars cap tracker, 2014 to 2023
 
-As of March 20, 2014, Entry 99. Whole US dollars.
+As of March 24, 2014, Entry 100. Whole US dollars.
 
 [Player cap table](#4-cap-by-player-ten-years) | [Individual contract details](jaguars_contract_details.md) | [Expirations](#9-expiring-contracts-and-free-agent-classes) | [Updating this tracker](README.md)
 
@@ -267,13 +267,13 @@ The $51,675 old Bray bonus is counted separately from his new $420,000 salary. N
 | 2014 | 1 | Jacksonville Jaguars | 26 | 26 |
 | 2014 | 2 | Arizona Cardinals | 6 | 38 |
 | 2014 | 3 | Jacksonville Jaguars | 26 | 90 |
-| 2014 | 4 | Jacksonville Jaguars | 26 | 122 + compensatory picks from round 3 |
-| 2014 | 5 | Detroit Lions | 11 | 139 + compensatory picks from rounds 3 to 4 |
-| 2014 | 5 | Jacksonville Jaguars | 26 | 154 + compensatory picks from rounds 3 to 4 |
-| 2014 | 6 | Jacksonville Jaguars | 26 | 186 + compensatory picks from rounds 3 to 5 |
-| 2014 | 7 | Jacksonville Jaguars | 26 | 218 + compensatory picks from rounds 3 to 6 |
+| 2014 | 4 | Jacksonville Jaguars | 26 | 129 |
+| 2014 | 5 | Detroit Lions | 11 | 153 |
+| 2014 | 5 | Jacksonville Jaguars | 26 | 168 |
+| 2014 | 6 | Jacksonville Jaguars | 26 | 205 |
+| 2014 | 7 | Jacksonville Jaguars | 26 | 241 |
 
-These are selection rights. Add each rookie’s full contract schedule after the actual selection and signing. No future contract dollars are booked against an unselected player. [The draft ownership record](../2014/draft/draft_order.md) controls the picks; compensatory selections after round three are still date-gated.
+These are selection rights. Add each rookie’s full contract schedule after the actual selection and signing. No future contract dollars are booked against an unselected player. [The draft ownership record](../2014/draft/draft_order.md) controls the picks. Overall numbers include the 32 compensatory picks announced March 24, 2014 (ledger Entry 100); Jacksonville received none.
 
 ## 8. Decision calendar
 
@@ -293,12 +293,12 @@ These are selection rights. Add each rookie’s full contract schedule after the
 |---|---|
 | 2013 | Brad Meester, Chad Henne, Maurice Jones-Drew, C.J. Wilson, Alan Ball, Brent Grimes, Allen Reisner, Kevin Rutland |
 | 2014 | Roy Miller, Daryl Smith, Cecil Shorts, Will Rackley, Mike Brewster, Ryan Davis, Tyson Alualu, C.J. Mosley, Russell Allen, Julian Stanford, Chris Prosinski, Jeremy Cain, Cameron Bradfield, Toney Clemons, Mike Brown, Austin Pasztor, John Parker Wilson, Jonathan Grimes, Hakeem Nicks |
-| 2015 | Kirk Cousins, Brynden Trawick, A.J. Bouye, Adam Thielen, C.J. Anderson, Justin Blackmon, Marcedes Lewis, Mark Asper, Uche Nwaneri, Jason Babin, Andre Branch, Jeremy Mincey, Jeris Pendleton, Mike Harris, Dwight Lowery, Josh Scobee, Bryan Anger, Montell Owens, Tyler Bray, Richard Murphy, Jerrell Jackson, Jerome Long, D'Anthony Smith, Antwon Blake |
+| 2015 | Kirk Cousins, Brynden Trawick, A.J. Bouye, Adam Thielen, C.J. Anderson, Justin Blackmon, Marcedes Lewis, Mark Asper, Jason Babin, Andre Branch, Jeremy Mincey, Jeris Pendleton, Mike Harris, Dwight Lowery, Josh Scobee, Bryan Anger, Montell Owens, Tyler Bray, Richard Murphy, Jerrell Jackson, Jerome Long, D'Anthony Smith, Antwon Blake |
 | 2016 | Lane Johnson, Travis Kelce, Jordan Poyer, Sio Moore, Lavar Edwards, Bacarri Rambo, Paul Posluszny, Daniel Te'o-Nesheim |
 | 2017 | Sen'Derrick Marks, Alterraun Verner, Andrew Hawkins |
 | 2018 | Eugene Monroe, Aqib Talib |
 
-“Through” describes the final league year of the recorded contract or tender. The 2013 contracts not retained expired at the March 11, 2014 league-year opening; those players are retained only as former-player history. A player’s class at a later expiry follows his actual accrued service; it does not extend the deal.
+“Through” describes the final league year of the recorded contract or tender. The 2013 contracts not retained expired at the March 11, 2014 league-year opening; those players are retained only as former-player history. Traded players leave these classes. A player’s class at a later expiry follows his actual accrued service; it does not extend the deal.
 
 ## 10. Scheduled cash
 

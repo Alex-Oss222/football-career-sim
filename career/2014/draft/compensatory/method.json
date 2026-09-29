@@ -1,0 +1,68 @@
+{
+ "schema_version": 2,
+ "title": "Branch 2014 compensatory-pick method (version 2, value points)",
+ "adopted": "2026-09-29, ledger Entry 100. Version 2 replaces version 1 (fixed APY bands) before merge, at the user's request for a more realistic method. The change reflects realism, not which club version 1 favoured; Jacksonville's count-based outcome is re-derived under version 2 rather than carried over.",
+ "status": "Branch simulation substitute for the NFL Management Council formula, whose weights are unpublished. It follows the formula's publicly described structure (salary relative to the league, playing time and postseason honours, turned into a round value) but its point weights and thresholds are branch parameters, not the league's.",
+ "public_rules_applied": [
+  "Awards rest on qualifying unrestricted free agents lost and signed in the 2013 league year (Steelers.com, March 24, 2014; library/2014_draft_order_verification.md).",
+  "A club receives picks only for a net loss of qualifying free agents, at most four (library/2014_league_calendar_and_financial_rules.md D6).",
+  "Picks follow rounds 3 to 7; there are 32 in total; they cannot be traded in the 2014 draft (D6).",
+  "Value reflects salary, playing time and postseason honours; not every free agent qualifies (D6)."
+ ],
+ "qualification": {
+  "unrestricted": "At least four accrued seasons after 2012, and a prior contract with his final 2012 club that ended in 2012 or earlier.",
+  "not_qualifying": "Released or traded players (prior contract running past 2012), re-signings, restricted and exclusive-rights players.",
+  "branch_club": "His new club is his branch 2013 club: the 2013 Week 1 chart for other clubs, the branch contract for Jacksonville. A real signing the branch never made does not count.",
+  "minimum_value_points": 55,
+  "below_minimum": "A free agent below the minimum value neither earns nor cancels a pick.",
+  "unvalued_movers": "A mover whose 2013 contract is absent from the source is listed as unvalued and not counted. Almost all such deals are near the minimum."
+ },
+ "valuation": {
+  "salary_points": "His new contract's APY as a percentile of the 2013 league market: every player's latest source contract in force in 2013 (inputs.json salary_market). Ties take the midpoint rank. This is the primary factor.",
+  "playing_time": {
+   "measure": "Branch 2013 games for his new club (regular season and postseason receipts) divided by that club's branch games. Snap counts are not retained for background games, so games are the one measure available for all 32 clubs alike.",
+   "adjustments": [
+    {"min_share": 0.75, "points": 0},
+    {"min_share": 0.5, "points": -4},
+    {"min_share": 0.25, "points": -8},
+    {"min_share": 0.0, "points": -12}
+   ]
+  },
+  "honours": {
+   "source": "Branch 2013 season honours (career/2013/awards/season_honours_results.json); the highest single honour counts.",
+   "first_team_all_pro": 6,
+   "second_team_all_pro": 4,
+   "pro_bowl": 3
+  },
+  "round_thresholds": [
+   {"round": 3, "min_points": 90},
+   {"round": 4, "min_points": 82},
+   {"round": 5, "min_points": 74},
+   {"round": 6, "min_points": 65},
+   {"round": 7, "min_points": 55}
+  ],
+  "within_round_order": "Higher value points first; ties by higher APY, then by the club's branch 2014 first-round slot."
+ },
+ "cancellation": [
+  "Each club's gained free agents are applied from most to least valuable.",
+  "A gain cancels the most valuable remaining loss in the same round.",
+  "If none, it cancels the most valuable remaining loss in a lower round.",
+  "If none, it cancels the least valuable remaining loss in a higher round.",
+  "Uncancelled losses become picks, at most four per club, most valuable first."
+ ],
+ "league_total": {
+  "target": 32,
+  "above_target": "Drop the lowest-valued formula picks until 32 remain.",
+  "below_target": "Add Round 7 picks after the formula's Round 7 picks, one per club, in branch 2014 first-round order starting from slot 1, until 32. The real fill mechanism is unverified (D7); this ordering is the branch rule."
+ },
+ "known_limits": [
+  "Contract values are Over The Cap reconstructions via nflverse, not certified league figures; the salary market omits many minimum contracts missing from the source, which lifts every percentile somewhat.",
+  "Playing time uses games, not snaps or starts.",
+  "Signing dates are not in the source, so the league's post-draft signing deadline is not applied.",
+  "Contract term is read from the source; an extension recorded with only its new years can misstate an expiry year."
+ ],
+ "superseded": {
+  "version": 1,
+  "rule": "Fixed APY bands (R3 at $6.0M or more down to R7 at $1.0M), one round up for any Pro Bowl or All-Pro, one round down under 8 games. Never merged or published as canon."
+ }
+}

@@ -1,7 +1,7 @@
 {
   "team": "Jacksonville Jaguars",
-  "as_of": "2014-03-20",
-  "checkpoint": "Entry 99",
+  "as_of": "2014-03-24",
+  "checkpoint": "Entry 100",
   "prepared": "2026-09-29",
   "start_year": 2014,
   "end_year": 2023,
@@ -6874,35 +6874,35 @@
       "round": 4,
       "original_club": "Jacksonville Jaguars",
       "slot_in_round": "26",
-      "overall": "122 + C3"
+      "overall": "129"
     },
     {
       "year": 2014,
       "round": 5,
       "original_club": "Detroit Lions",
       "slot_in_round": "11",
-      "overall": "139 + C3 + C4"
+      "overall": "153"
     },
     {
       "year": 2014,
       "round": 5,
       "original_club": "Jacksonville Jaguars",
       "slot_in_round": "26",
-      "overall": "154 + C3 + C4"
+      "overall": "168"
     },
     {
       "year": 2014,
       "round": 6,
       "original_club": "Jacksonville Jaguars",
       "slot_in_round": "26",
-      "overall": "186 + C3 + C4 + C5"
+      "overall": "205"
     },
     {
       "year": 2014,
       "round": 7,
       "original_club": "Jacksonville Jaguars",
       "slot_in_round": "26",
-      "overall": "218 + C3 + C4 + C5 + C6"
+      "overall": "241"
     }
   ],
   "dead_money": [
