@@ -4,6 +4,16 @@
 
 **Decision record:** Stone approved E1 and E2 in the September 28–29, 2026 follow-up to PR #132, with the branch still at February 2, 2014. This adopts their policy, including team construction and coaching, without releasing a kernel. Kernel 2014.3 remains installed; Tier 1 remains open. No 2013 receipt, rating input or outcome is rewritten.
 
+## Implementation status checked September 29, 2026
+
+| Piece | Present behavior | Required before claiming completion |
+|---|---|---|
+| Unequal team strength | `scripts/build_week_inputs.py` still gives every club the same Average anchors. Profiles and this policy do not change those inputs | Dated individual evidence, coverage audit, lineup/shared-assignment composition, matchup integration, calibration and release |
+| Coaching contribution | Living [Stone](../career/coaching_profiles/alex_stone.md) and [staff](../career/coaching_profiles/staff_profiles.md) assessments now trace supported choices and open questions | Consume only scoped evidence and actual installed/selected work; model benefits and costs without an overall coach bonus |
+| Live injury substitution | `runtime/kernel.py` still draws injuries after game resolution; its pause is not a partial game and its validation still rejects multiple passers | Actual removal, eligible substitutions, immutable partial continuation, backup passing and reconciled participation/stat credits |
+
+The documentation work completes the decision and evidence-recording method. **E1 and E2 are not implemented.** Existing 2013 outcomes remain closed; they are not training labels for a team/coach talent model.
+
 ## E1: build football differences from the people and the job
 
 Teams need different capabilities, vulnerabilities and ways to play. A single club grade cannot describe those differences. The implementation must follow the causal path from an available player, through an assigned job and supporting unit, to the actual matchup. A good roster can be poorly deployed; a limited roster can find a favorable matchup. Neither has a guaranteed result.

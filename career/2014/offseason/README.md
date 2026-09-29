@@ -13,6 +13,7 @@ Start with the player at the current date, including his full season of experien
 | Script a permitted session | [Session template](training/session_template.md) | Specific jobs and evidence to gather; no results entered in the script |
 | Assess who each player is becoming | [Player development](player_development/README.md) and [all 61 profiles](player_development/roster_profiles.md) | Current strengths, experience, player perspective, open possibilities and next observation |
 | Review Cousins | [Development plan](player_development/kirk_cousins.md) and [2013 review index](film/kirk_cousins_2013_review.md) | Evidence-based starting point and the actual source plays requiring review |
+| Assess the coaches' development | [Stone](../../coaching_profiles/alex_stone.md), [assistant profiles](../../coaching_profiles/staff_profiles.md) and [editing method](../../coaching_profiles/README.md) | Current synthesis after 2013, dated changes, actual teaching contributions and open questions |
 | Assemble or issue a tape | [Film workflow](film/README.md) | Packet contents, cause review, approval, receipt and later retest |
 | Find outstanding player work | [Player film queue](film/player_queue.md) | One accountable queue entry for each of the 61 players at the baseline, including the retired-player archive |
 | Verify a delivery | [Delivery log](film/delivery_log.md) | Dated packet revisions and actual issue/acknowledgment/review receipts |
