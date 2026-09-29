@@ -7,6 +7,14 @@
 **Inherited method:** [2013 mandatory_minicamp plan](../../../2013/offseason/mandatory_minicamp/plan.md). The 2013 file remains unchanged; this plan's 2014 conditions override inherited dates, QB competition and new-head-coach clauses.
 **Event owner when run:** `career/2014/offseason/mandatory_minicamp/output.md`, created only when the phase runs. Results and standouts never belong in this plan.
 
+## Living player assessment: adopted follow-up
+
+Read the [61 player profiles](../player_development/roster_profiles.md), [development method](../player_development/README.md) and [Cousins synthesis](../player_development/kirk_cousins.md) alongside this plan. The full 2013 season is experience to build from; the old engine's win totals and generated statistics cannot establish talent. The inherited teaching cycle applies to individual jobs, not a whole-player unlock ladder.
+
+Close spring with a current synthesis for every participant: useful strengths, emerging possibilities, player perspective if expressed, contradictions and questions camp can actually answer. No automatic promotion, role award or ability increase follows the end of the program.
+
+Invite player-selected film and interpretation during permitted contact without requiring a reply or quiz for promised material. Record only actual speech/work. At the phase handoff, link observed evidence and state what changed, what did not, an alternative explanation and the next opportunity. Existing medical, voluntary-work, installed-menu and decision-authority boundaries remain in force.
+
 ## 2014 authority and execution conditions
 
 This is the carry-forward authorized in Stone's February 2 memo section 6 and the user's September 28, 2026 request to address the outstanding work. The inherited teaching method is retained below. The individual training/film items identified below are adopted; other recommendations at the end remain explicitly proposed. No practice, attendance, delivery, hiring, clearance or role change is recorded by this plan.

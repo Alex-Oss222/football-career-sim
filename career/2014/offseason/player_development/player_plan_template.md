@@ -1,32 +1,35 @@
-# Player development plan template
+# Living player plan template
 
-**Player / position / owner:** to be entered. **Evidence cutoff:** actual latest reviewed event. **Planning status:** prepared, no work implied. Verify control and medical instructions at phase entry.
+**Player / position / owner:** enter when prepared. **Evidence cutoff and current eligibility:** verify actual control and physical/cognitive instructions. **Status:** synthesis and proposed work; no session or player response implied.
 
-## Baseline and next job
+## Current synthesis
 
-| Job | Evidence and context | Supported conclusion | Open question | Next legal test |
-|---|---|---|---|---|
-| Assigned job, not whole-player rating | Link practice/game source; taught task, speed and support | Demonstrated / corrected on repeat / retained in changed picture / unobserved / undetermined | Specific missing evidence | Owner, lawful phase, changed presentation and success behavior |
+Describe what the player has experienced and what he currently demonstrates. Link the relevant entry assessment, completed-season experience and reliable dated observations. Identify staff inference explicitly. Give established strengths a real place; do not describe the player solely through errors or prescribe the type he must become.
 
-Retain functioning mechanics and correct jobs. Select a focused next step from evidence. Do not invent a flaw or a passed test to fill a row.
+| Item | Source-grounded entry |
+|---|---|
+| Useful strengths to preserve | Specific job, conditions and evidence |
+| What has changed since entry | Actual learning/experience; no automatic ability increase |
+| Current working interpretation | Limited, revisable synthesis; alternative explanation if plausible |
+| Player perspective | Actual attributed source, or a question to invite later; never fabricated |
+| Open possibility | A new answer/job worth exploring alongside current strengths |
+| Uncertainty / shared staff question | Missing evidence, conflicting observations, instruction or supporting-unit contribution |
+| Next opportunity | Assigned/taught work, lawful phase and conditions, owner and what could become clearer |
 
-## Teaching packet
+## Film and teaching
 
-- Packet ID/revision and source question.
-- Question rep plus a documented correct example. If no genuine match exists, state that and use a labeled explanation/diagram.
-- Expected assignment and observed fact; uncertain causes remain uncertain.
-- One clear cue; shared-room review where responsibility overlaps.
-- Player explanation, lawful demonstration, immediate repeat and delayed changed-picture test.
-- Actual media, written-only packet and unavailable media identified separately.
+Assemble ordinary correct work, adaptations, challenging reps and supported comparison examples. Invite the player's selected examples and reading when permitted. A clip is not automatically good because it succeeded. A planned diagram is not game film. Keep media status, coach review, delivery and observed learning separate.
 
-## Progression and decisions
+Explain the available answers and why; use a cue where a correction is actually supported. The teaching cycle can include an immediate repeat and later changed presentation. It is not a compulsory exam attached to the player's promised cutup. Record a disagreement honestly and examine the assignment and staff contribution.
 
-| Phase | Planned work | Advance only when | Hold or simplify when |
+## Opportunities across phases
+
+| Phase / legal conditions | Strength used and question explored | Observation that would clarify it | Owner / next opportunity |
 |---|---|---|---|
-| Appropriate phase | Task within its rules | Specific independent behavior survives a later changed presentation | Correction is unretained, evidence is absent or work is not permitted |
+| Fill only relevant phases | No automatic stage progression | Could support change, no change or a different interpretation | Do not prefill a result |
 
-Material role/menu decisions go to the proper authority and result record. No attendance penalty applies to voluntary work.
+New questions can be explored while an unrelated correction remains open. Material menu/role changes require their normal authority; no voluntary-attendance penalty applies. Physical proof waits for lawful work and medical permission.
 
-## Evidence updates
+## Evidence and revised assessment
 
-No new observation entered until an event occurs. For each later entry: date, output/rep locator, conditions, assigned/taught job, observed behavior, cause and confidence, immediate correction, later retest, narrow conclusion and next owner. Keep distribution receipts in the [film log](../film/delivery_log.md), separate from football learning.
+After an actual event, record date, source/rep locator, assignment, support/opposition, observed response, player view if expressed, confidence and alternatives. State what changed in the working assessment, what did not, and the next opportunity. Preserve prior observations. Link actual [film distribution](../film/delivery_log.md) separately; delivery is not mastery.

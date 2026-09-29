@@ -12,6 +12,8 @@
 
 **Hindsight and result boundary (read first):** No real 2014 transaction, franchise or transition tag applied to a named player, signing, trade, compensatory award to a named club, draft selection, the real 2014 draft order, real schedule result, playoff participant, champion or award winner is recorded here, and none may be imported as an answer key (Document 1 §8, Document 2 §4.3). Several cited pages carry such outcomes in their titles or text (for example, the kickoff game's clubs and score, Super Bowl XLIX's participants and result, and the 2014 compensatory recipients); they are cited only for dates, rules and league-wide figures. Clubs are named only where a rule or a pre-branch league scheduling fact requires it (the AFC South rotation and the London game designation).
 
+**September 29 direct-source addendum:** [full calendar verification](2014_full_calendar_verification.md) opens the club bulletins and identifies their publication dates, confirms C19 and June tender dates, verifies the camp rule and adds late-year dates. Its explicitly scoped upgrades supersede the old access limitation only for the named claims; all other labels below remain unchanged.
+
 ## Information gates (core rule)
 
 At any simulation date, use only information that had become public by that date. Each row below carries a **Public by** column. A figure or date whose public release came after January 12, 2014 stays unavailable to the simulation until its release date. Before its release, only the projections that were public at the time may be used, labelled as projections.

@@ -7,10 +7,16 @@
 ## Before the block
 
 1. Read the current calendar, phase plan, actual roster/control and current medical instructions. Establish the work permitted for this participant on this day. Medical restrictions include cognitive work where applicable. An absence or restriction is not a failed football test.
-2. The position coach reads the player's prior phase evidence and exit commitments. Select a retained strength to preserve and the next unresolved football job. Start returning players at their demonstrated level; give newcomers the existing welcome, full-active-book access and honest onboarding sequence.
+2. The position coach reads the player's prior phase evidence and exit commitments. Read the [living profile](../player_development/roster_profiles.md), select a strength to use and a meaningful question or new possibility to explore. Invite the player's view when permitted; record only what he actually expresses. Start returning players at their demonstrated level; give newcomers the existing welcome, full-active-book access and honest onboarding sequence.
 3. Tice coordinates offense, Crennel coordinates and calls defense, and Stone covers special teams until an appointment. Reconcile shared jobs before teaching them: QB/center/back protection; QB/receiver leverage; DL/LB fits; LB/DB exchanges; snap/hold/kick and coverage.
 4. Write the assigned call/job, what the player was taught, the presentation, the allowed speed/contact, the cue and the evidence that would support retention or added difficulty. Use only the active Iteration I books. A job not yet taught is not an evaluation failure.
 5. Reserve a place in the existing lawful schedule for the correction and later retest. No fixed rep percentage, extra practice or hidden mandatory meeting is created by this workflow. A position coach owns every player's follow-up, including established starters, reserves and practice-squad players.
+
+## Room for discovery
+
+Begin from the current player, including a full season of experience where available. Do not fit him to his entry scouting label or turn the next phase into a prewritten growth story. Include ordinary effective work and adaptations in the film sample. Give the player room to explain what he saw before supplying an answer; more than one legal solution may exist. His explanation can change the next coaching assignment. A promised take-home cutup does not require a quiz, reply or voluntary meeting.
+
+A relevant new challenge can run alongside maintenance and correction work; unresolved questions elsewhere do not lock the whole playbook. At a phase handoff, synthesize established strengths, emerging possibilities, contradictions and remaining uncertainty. Record no change when that is what the evidence supports. The table below is a teaching method within an assigned job, not a ladder for the person.
 
 ## Teaching rhythm
 
@@ -23,7 +29,7 @@
 | Correct | Identify the supported cause; give one clear correction rather than competing cues | Player, teammate, communication, staff/design or undetermined contribution |
 | Rep again | Repeat the corrected job within the legal work allowance | Immediate correction evidence only |
 | Retain | Return on a later permitted day, withholding the old prompt and changing one relevant presentation | Whether the correction survives delay and a changed look |
-| Add complexity | Expand only the job supported by evidence | What was added, why, and the next test; other jobs stay at their own level |
+| Add complexity | Expand only the job supported by evidence | What was explored, why, and the next observation; other jobs retain their own evidence |
 
 No invented defect is required on a correct rep. Several players missing the same teaching point triggers a staff review first. A productive outcome can conceal a wrong assignment, and an unproductive outcome can follow a correct job; record each separately.
 
@@ -49,4 +55,4 @@ Use Good/Better/Best only as the existing framework's teaching states, tied to a
 
 ## Continuing into the season
 
-Each weekly plan reserves a lawful individual-development home: retained skill, current correction, paired example and next check. A starter's protection or blocking work continues even when the game plan emphasizes another player. Reserve and practice-squad work receives written feedback even without a game statistic. At the bye, reconcile open items and continue them afterward. Game film and weekly outputs supply evidence; the season totals alone do not close a correction.
+Each weekly plan reserves a lawful individual-development home: a useful strength, current question or correction, representative film and the next opportunity. Player and staff interpretations can evolve together. A starter's protection or blocking work continues even when the game plan emphasizes another player. Reserve and practice-squad work receives written feedback even without a game statistic. At the bye, reconcile open items and continue them afterward. Game film and weekly outputs supply evidence; the season totals alone do not close a correction.

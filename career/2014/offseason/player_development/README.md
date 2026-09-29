@@ -1,15 +1,31 @@
 # Individual player development
 
-[Offseason index](../README.md) | [Player film queue](../film/player_queue.md) | [Player template](player_plan_template.md)
+[Offseason index](../README.md) · [All 61 living profiles](roster_profiles.md) · [Cousins in detail](kirk_cousins.md) · [Film queue](../film/player_queue.md) · [Player template](player_plan_template.md)
 
-The user asked for team training, individual tapes and a Cousins progression built from his 2013 work. Every eligible player receives the same evidence-based process. Create an individual file when there is an actual baseline or development question to maintain; the queue covers all players without creating empty biographies.
+Start from the player at the current date: what he brought in, what he has actually experienced, what he has shown, what he understands and what remains uncertain. The full 2013 season belongs in the assessment. Washington's old assessment cannot freeze Cousins's identity; a draft label, former depth role or thin box score cannot freeze anyone else's.
 
-| Individual plan | Starting evidence | Next step |
-|---|---|---|
-| [Kirk Cousins](kirk_cousins.md) | 2013 QB plan, spring/camp outputs, season receipts and January exit interview | Retain established operation; reconcile causes, teach shared answers and test changed-picture retention |
+The [roster profiles](roster_profiles.md) give every player a sourced current synthesis and a next opportunity, including veterans, reserves and practice-squad players. The [Cousins plan](kirk_cousins.md) goes deeper because his full-season starting experience and 2013 teaching plan provide more material. Missing evidence is stated directly; it is not a negative grade or permission to invent a biography.
 
-For others, the queue links their individual exit record and accountable coach. Use the [room plan](../training/unit_plans.md) and template to turn those commitments into a specific assigned job, not a generic weakness list. Established players, reserves and practice-squad players receive written feedback. The depth chart and acquisition ledger remain the authorities on roles and control.
+## A living assessment
 
-Keep three things distinct: **baseline assessment** supported by old sources, **intended progression**, and **new evidence** linked to the actual phase output. A same-session correction is not long-term mastery. Document scope, speed and situation whenever describing a job as retained. No numeric mastery score, predetermined role or automatic menu expansion.
+| Part | What to write |
+|---|---|
+| Established strengths | Specific demonstrated work, conditions and source; preserve it and use it |
+| Current interpretation | What kind of solutions the player currently shows, explicitly an inference where appropriate; no permanent type |
+| Player perspective | His actual explanation, preference or disagreement if expressed during permitted contact; otherwise an invitation, not invented speech |
+| Open possibilities | A relevant new answer, responsibility or technique worth exploring; more than one plausible direction may remain |
+| Next opportunity | A taught, lawful task that could reveal something useful, with fair supporting conditions; no role promise |
+| New evidence | Actual observed behavior, date/source, context, confidence and alternative explanation; separate from outcome |
+| Revised synthesis | What now seems supported, what changed or did not, what remains unobserved and where to look next |
 
-Once a phase runs, update the evidence table with its actual source and a narrow conclusion. Preserve prior observations and explain any revision. Do not move transactions, attendance snapshots or medical detail into these durable football plans. Store only the participation limitation needed to select lawful work, with the appropriate source pointer.
+A correction is one part of development. Include ordinary good work, independent adaptations and opportunities for new strengths to emerge. Coaching can be revised too. Let the player's explanation influence the next assignment when supported, without making film submission or conversation compulsory during voluntary periods. Promised take-home packets remain available without a mandatory quiz or reply.
+
+## Through the year
+
+Use film and permitted conversation to form questions; Phase One for allowed physical preparation; Phase Two for lawful technique and explanation; OTAs/minicamp for changed presentations and shared answers; camp/preseason for legal contact and game transfer; regular-season work and the actual bye for continued learning. The [annual calendar](../../calendar.md) assigns those handoffs. Each context reveals different things; spring cannot certify contact execution.
+
+The 2013 teaching cycle remains useful within a job. It is not a whole-player ladder. No automatic advancement, required archetype, fixed growth curve, attendance-derived grade or menu unlock score. A player may broaden, specialize, maintain a strength, struggle, or change the staff's initial view. Material roles and team installs remain explicit coaching decisions.
+
+Keep **source observation**, **staff inference**, **planned opportunity**, **actual player perspective** and **new phase evidence** distinct. Reliable dated branch observations can inform E1; the equal-strength engine's 2013 wins and generated production cannot establish talent. The [engine decision](../../../../runtime/2014_engine_decisions.md) governs that boundary.
+
+Before work, verify actual control and current physical/cognitive restrictions. Add acquired players only after an actual transaction/invitation. Archive departed-player obligations; Meester has no training assignment and Allen's retirement limits future eligibility. Phase outputs own what occurred; film receipts belong in the distribution log. These profiles do not replace roster, contract, medical or event records.
