@@ -2795,3 +2795,27 @@ Atomic closure: contract register/table, futures outcomes, working depth-chart c
 **Atomic closure.** The replay log, memo amendment, signings record, draw-log note, trade pages, contract table, financial inputs and generated tracker, worksheet, roster, working depth chart and its JSON copy, the Denver, New England, Detroit and Seattle rails pages, the free-agent pool, calendar and Documents 4 (register 50) and 5 (state 71) agree. The private snapshot is advanced only after merge.
 
 **Commit closed - Canonical update - March 12, 2014 - Free-agency replay (Talib signed; Tate to Detroit) - canonical through March 12, 2014**
+
+
+## Entry 97: Free-agency replay continued (Nicks and Hawkins signed; Edelman to New England)
+
+**Effective canonical state:** March 18, 2014.
+**Recorded:** September 29, 2026
+**Checkpoint:** `Canonical update - March 18, 2014 - Free-agency replay (Nicks and Hawkins signed; Edelman to New England)`
+**Preceding global package checkpoint:** `Canonical update - March 12, 2014 - Free-agency replay (Talib signed; Tate to Detroit)`
+
+**Authority.** The user supplied the updated replay log, filed as [the March 2014 replay log](../2014/offseason/free_agency/march_2014_replay_log.md), the event owner. Stone supplied new baselines for Edelman, Nicks and Hawkins; the method is unchanged (judgment-based negotiation, no private draw). The latest dated decision is Cincinnati's March 18 non-match, so the master clock advances to March 18.
+
+**Julian Edelman, WR (March 15).** Declined Jacksonville's final offer (four years, up to $19,000,000, $8,500,000 fully guaranteed) and agreed to return to New England (four years, $17,000,000 plus up to $2,000,000 incentives). Nothing is booked. Stone's amendment tied package A to Edelman signing, so package A stays inactive; memo contingency 3 keeps Shorts and opens his extension process.
+
+**Hakeem Nicks, WR (March 14).** Signed: one year (2014), up to $5,000,000, $4,500,000 fully guaranteed ($2,000,000 signing bonus plus $2,500,000 base), with up to $500,000 of active-game bonuses reserved in full in the 2014 cap budget. The historical Indianapolis signing does not occur.
+
+**Andrew Hawkins, WR (March 13 to 18).** Signed Jacksonville's offer sheet on March 13; Cincinnati declined to match on March 18, so the contract is binding: four years (2014 to 2017), $15,600,000, $8,000,000 fully guaranteed ($4,000,000 signing bonus, the $1,800,000 2014 base and $2,200,000 of the $5,000,000 2015 base). 2014 cap $2,800,000. No draft pick is owed (original-round tender; undrafted). The historical Cleveland offer sheet does not occur. Hawkins's birth date (March 10, 1986) is added to the identity registry from the league database (single provider; the replay log cites Cincinnati's 2013 media guide).
+
+**Accounting.** Scheduled 2014 player cap $128,433,821 including $3,066,000 of unsigned tenders, plus $51,675 dead money. Offseason Top-51: three $420,000 minimums (Long, Jerrell Jackson, Bray) fall outside, giving $127,225,496; with the $504,000 workout charge, $127,729,496, a $5,270,504 working difference against the $133,000,000 cap before carryover, rookies and reserves. Later commitments: 2015 $113,455,137; 2016 $56,511,292; 2017 $37,800,000; 2018 $18,900,000. Controlled roster: 54. Caldwell ends paid veteran receiver bidding.
+
+**Open.** Te'o-Nesheim is the next negotiation; then Cain, Henne, Jones-Drew, C.J. Wilson, Ball, Shorts's extension and the trade packages (F1's answer is needed before Nwaneri's March 25 bonus). Compensatory picks are announced March 24. The rails from March 11 evening to March 18 are not swept beyond the targets' own moves.
+
+**Atomic closure.** The replay log, signings record, draw-log note, trade pages, contract table, financial inputs and generated tracker, worksheet, roster, identity registry, working depth chart and its JSON copy, the New England, Giants, Indianapolis, Cincinnati and Cleveland rails pages, the free-agent pool, calendar and Documents 4 (register 51) and 5 (state 72) agree. The private snapshot is advanced only after merge.
+
+**Commit closed - Canonical update - March 18, 2014 - Free-agency replay (Nicks and Hawkins signed; Edelman to New England) - canonical through March 18, 2014**

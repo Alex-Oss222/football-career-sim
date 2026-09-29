@@ -2,6 +2,8 @@
 
 Recorded September 29, 2026. In-simulation negotiating window: March 8 to March 11, 2014, with named later decisions recorded on their individual dates. This is the running record of the replay conducted in ChatGPT under Stone's latest instructions.
 
+**Latest resolved position, after the Nicks/Hawkins entry:** Jacksonville has signed Monroe, Marks, Verner, Talib, Nicks and Hawkins in this replay. Tate chose Detroit and Edelman chose New England. Nicks is one year, up to $5 million, $4.5 million fully guaranteed; Hawkins is four years, $15.6 million, $8 million fully guaranteed. The current conservative 2014 base-cap budget remainder is $5,270,504 after Top-51 treatment and the opening workout charge, before carryover, other adjustments, rookies and operating reserves. Earlier intermediate cap tables are preserved as conversation-stage snapshots and are superseded for current accounting by the dated reconciliation below.
+
 ## Authority and method
 
 Stone expressly directs the negotiations and player decisions to take place here, because the other execution environment is unavailable. For this replay, that instruction supersedes the former requirement to obtain each answer from the private draw service. These are fictional, judgment-based simulation outcomes, not actual contacts with players or agents, not private-engine receipts and not recovered historical conversations. No numerical acceptance probabilities or random draws are claimed.
@@ -396,9 +398,231 @@ The remaining $2.75 million of 2015 base becomes fully guaranteed on the third d
 - [NFL.com, February 28, 2014](https://www.nfl.com/news/golden-tate-my-contract-talks-not-like-riley-cooper-s-0ap2000000329834): contemporary public desire to stay in Seattle and the club's interest, interpreted with the branch's different season. No precise Seattle final offer is inferred.
 - The opening proposal, final Jacksonville counter, Detroit contract, guarantees, cap charges, bonus balances and unchanged Jacksonville budget were checked in integer dollars. Negotiation outcomes remain expressly authored judgments rather than verified historical counteroffers or engine receipts.
 
+## Edelman: decision resolved March 15, 2014
+
+**Outcome in this chat replay: Julian Edelman declines Jacksonville's final offer and agrees to return to New England for four years, $17 million in scheduled compensation, with up to $2 million additional performance incentives.** The historical comparator carries $6 million fully guaranteed at signing and another $2 million of injury-only salary protection. No Jacksonville contract is executed. March 15 is the decision/agreement date; New England's historical formal announcement was March 18, not proof of an execution timestamp on March 15.
+
+### Authority, current role and opening proposal
+
+Stone now supplies an express four-year Edelman proposal. This authorizes working his negotiation despite the older memo making him conditional on Hawkins being unavailable. It does not prove Hawkins was unavailable, rejected Jacksonville, signed elsewhere or received an offer sheet. Hawkins's separate status remains unresolved. The current receiver instruction supersedes the older two-year, $7.5 million starting offer; Caldwell retains independent pricing authority and must evaluate the roster actually retained after losing Tate.
+
+Shorts, Thielen and Blackmon remain Jacksonville-controlled. The carried roles are Shorts at WR1, Thielen at WR2/H and Blackmon at WR3/outside Z; they have not been reassigned by this negotiation. Edelman would be considered for inside/outside receiving work and punt returns, with assignments determined by Stone and the staff. Neither a starter's job, a target quota, the departure of another receiver nor a future draft selection is promised. His opportunity is to contribute in a multiple-receiver group, not occupy a vacancy fabricated by treating Package A as complete.
+
+Stone's proposal is four years, up to $18 million, $7.5 million fully guaranteed: $3 million signing bonus, $2 million 2014 base and $2.5 million 2015 base. The 2016 base is $4 million and the 2017 base $4.5 million; each of those seasons adds a $500,000 day-five roster bonus and up to $500,000 of active-game bonuses. Maximum annual cash is $5 million, $2.5 million, $5 million and $5.5 million. The stated $18 million value, $7.5 million guarantee, annual cap charges and $1.5 million pre-2016 bonus balance all reconcile.
+
+Edelman is 27 at negotiation, turning 28 on May 22. His 2013 branch line is 69 catches, 802 yards and nine touchdowns, with 44 punt returns. His historical 105-catch season is not imported. The December 2012 foot injury and injured-reserve placement are documented pre-divergence history. They justify considering availability but do not establish a current medical restriction or forecast another injury. The proposed per-game conditions begin only in 2016: they do not protect the first $7.5 million already guaranteed. No later foot surgery, suspension, championship, individual award or career outcome is used.
+
+### Competition considered
+
+| Club | Financial evidence and response | Football and personal considerations |
+|---|---|---|
+| Jacksonville | Opens at four years, $18 million/$7.5 million fully guaranteed; final bid is $19 million/$8.5 million fully guaranteed | 10-6, playoff win, retained Stone and a suitable concept-based offense. Shorts, Thielen and Blackmon remain, so a specific high-volume role cannot be guaranteed. |
+| New England | Four-year historical benchmark: $17 million including availability/workout conditions, plus up to $2 million performance incentives; $6 million fully guaranteed and $2 million injury-only protection | 8-8 with Belichick retained, Brady at quarterback, and five seasons of familiarity. His receiving and return work already exists in that setting. No branch playoff berth or future title is assumed. |
+| San Francisco | Documented March 14 visit; complete rival offer unverified | Bay Area home connection, but the branch is 2-13-1 and has replaced Jim Harbaugh with an unnamed external hire. No historical Harbaugh recruitment or recent branch championship run is invented. |
+| Cleveland | Contemporary interest; no complete Edelman bid verified | 7-9, with the incumbent head coach retained in the branch. Its interest in Hawkins is not treated as a completed acquisition or an automatic bar on pursuing Edelman. |
+| Baltimore | Contemporary reported interest; no complete Edelman bid verified | 5-11 with John Harbaugh retained. Interest is a live consideration, not proof of a superior money or usage offer. No promised starter vacancy is invented. |
+
+The New England advantage is an established working relationship and understood football responsibilities. That is not an automatic incumbent discount. Jacksonville's program offers clear concepts, accountability and a team that has already reached the playoffs, but Edelman has not personally worked in it. The active offense can use his skills; there is no invented claim that it is incompatible with him or that the roster cannot accommodate him. The decision weighs the uncertainty of a new role against the actual financial premium offered.
+
+Contemporary March 14-15 reporting establishes that New England was working to retain him and that he considered other clubs. His real March 15 description of Foxborough as home is evidence of attachment, not a binding answer to this different Jacksonville bid. The March 18-20 retrospective interview remarks and later career achievements do not supply hidden knowledge or quotes for the simulated negotiation. Later contract reports are used only to recover the financial instrument offered in this window.
+
+### Negotiation record
+
+These exchanges are authored simulation events, not verified historical counteroffers or actual contacts. They follow the same criteria for every club; neither earlier Jacksonville successes nor Tate's rejection predetermines this result.
+
+1. Caldwell opens at Stone's four years, $18 million and $7.5 million fully guaranteed. His pitch is specific receiving and return value within the existing program. He does not present Edelman as a signed Tate replacement or tell him that Shorts, Thielen or Blackmon will lose their positions.
+2. Edelman's representatives counter at four years, $20 million, $10 million fully guaranteed, seeking a $5 million signing bonus and a clearer financial reward for leaving a familiar role. They seek a receiving role of consequence, but no contractual target guarantee is offered or required by the resulting instrument. The $20 million/$10 million position is a simulated request, not a sourced rival offer.
+3. Caldwell's final bid is four years, up to $19 million, with $8.5 million fully guaranteed. He raises the signing bonus from $3 million to $5 million, sets 2014 base at $1.5 million and 2015 base at $2 million, and keeps Stone's last two seasons unchanged. First-year cash rises from $5 million to $6.5 million. The first two seasons are fully protected at signing and the later active-game conditions remain. No guaranteed third year, escalator or statistical incentive is added.
+4. New England maintains the sourced four-year structure, including its higher second-year scheduled cash and known football setting. San Francisco's discussions and Cleveland/Baltimore interest do not produce an agreement Edelman prefers. Exact losing offers are not fabricated, nor are their cap capacities asserted without audited branch figures.
+5. Edelman chooses New England on March 15. He accepts $2.5 million less fully guaranteed at signing than Jacksonville's final offer and more conditions on some compensation. He values continuing with Brady, the retained staff and established responsibilities enough to accept that tradeoff. Jacksonville's $19 million ceiling is not incorrectly compared with New England's $17 million as though New England had no incentives. New England's package can also reach $19 million, although the routes to those totals are different.
+6. Caldwell ends the bidding. The club can afford the submitted final offer; the cap does not force this rejection. He will not reach the $20 million/$10 million counter for a role that overlaps players already retained, or guarantee a coaching decision to change the answer. The old $5 million annual walk-away is an outer limit, not a requirement to spend up to it. No later player performance validates or invalidates the choice at this point.
+
+### Jacksonville final offer, declined and not booked
+
+Figures are millions of dollars; later cash and cap budgets include all active-game bonuses.
+
+| Season | Signing-bonus allocation | Base salary | Day-five roster bonus | Active-game bonuses, maximum | Cash, maximum | Cap budget, maximum | Fully guaranteed at signing |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 2014 | 1.25 | 1.50 | 0 | 0 | 6.50 | 2.75 | Signing bonus and base |
+| 2015 | 1.25 | 2.00 | 0 | 0 | 2.00 | 3.25 | Base |
+| 2016 | 1.25 | 4.00 | 0.50 | 0.50 | 5.00 | 6.25 | No |
+| 2017 | 1.25 | 4.50 | 0.50 | 0.50 | 5.50 | 6.75 | No |
+| Total | 5.00 | 12.00 | 1.00 | 1.00 | 19.00 | 19.00 | $8.50 million |
+
+The full guarantee would have been $5 million bonus plus the $1.5 million and $2 million first-two-year bases. Later roster bonuses were payable on league-year day five; active-game bonuses were $31,250 for each regular-season game active, up to sixteen per year. Scheduled value excluding active-game bonuses was $18 million, subject to employment in the nonguaranteed years. Pre-2016 unamortized bonus would have been $2.5 million, rather than the opening offer's $1.5 million. Actual initial later-year cap treatment would depend on prior participation and CBA incentive rules. None of these terms becomes a Jacksonville liability.
+
+### New England agreement selected
+
+The historical benchmark is a four-year, $17 million schedule with another $2 million of performance incentives, $19 million maximum. The signing bonus is $5 million. The $6 million full-at-signing guarantee is that bonus plus the $1 million 2014 salary. Of the 2015 salary, $2 million initially has injury-only protection and converts to a skill guarantee in 2015 under the reported terms; the precise vesting day is not independently fixed here. The $8 million headline protection is therefore not $8 million fully guaranteed at signing.
+
+Amounts below are millions. This table is the $17 million schedule before additional performance incentives, with all active-game and workout conditions met. It is not a table of future earned cash or certified opening cap charges.
+
+| Season | Signing-bonus allocation | Base salary | Active-game bonuses, maximum | Workout bonus | Cash, scheduled maximum | Cap budget before performance incentives |
+|---|---:|---:|---:|---:|---:|---:|
+| 2014 | 1.25 | 1.00 | 0.50 | 0 | 6.50 | 2.75 |
+| 2015 | 1.25 | 2.25 | 0.75 | 0 | 3.00 | 4.25 |
+| 2016 | 1.25 | 2.50 | 0.75 | 0.25 | 3.50 | 4.75 |
+| 2017 | 1.25 | 3.00 | 0.75 | 0.25 | 4.00 | 5.25 |
+| Total | 5.00 | 8.75 | 2.75 | 0.50 | 17.00 | 17.00 |
+
+The active-game amounts are $31,250 per game in 2014 and $46,875 per game thereafter. These are not a day-five lump-sum roster bonus. The additional $2 million performance pool is kept separate; exact annual trigger language and branch LTBE treatment are not certified from the available original-contract evidence in this entry. No incentive is treated as already earned. The later player-page rows affected by the 2017 extension are not copied as the original contract. Pre-2016 unamortized signing bonus is $2.5 million, before separately applicable earned or guaranteed amounts. These obligations belong to New England.
+
+### Jacksonville accounting and next actions
+
+No Edelman charge, guarantee, bonus payment, release cost or second Top-51 displacement is booked. The working roster inventory stays at 52, including four reserved tenders and one salary already outside the Top 51 after Talib.
+
+The declined final offer would have added a $2.75 million charge and displaced another $420,000 eligible salary, a $2.33 million offseason increment. The hypothetical remaining base-cap difference would have been $9,900,504 before other needs. Because he declines, the actual running replay remains:
+
+| Working Jacksonville budget | Dollars |
+|---|---:|
+| Top-51 player obligations and retained dead money | $120,265,496 |
+| Opening offseason-workout charge | $504,000 |
+| Working counted total before other adjustments | $120,769,496 |
+| Difference from $133 million base cap | $12,230,504 |
+
+Carryover, other team adjustments, rookies and operating reserves remain separate. The future player commitments remain $107,455,137 for 2015; maximum budgets of $53,111,292 for 2016, $34,400,000 for 2017 and $18,900,000 for 2018. Neither a rejected offer nor a pending trade generates cap savings.
+
+Tate remains in Detroit under the previous replay entry. Shorts and Blackmon stay, Package A's Jacksonville-Tate trigger remains unmet, Seattle still owns No. 36 and Package H remains unavailable. Shorts's extension process is open but no extension is agreed. Hawkins is still unresolved and is not automatically signed as compensation for either receiver rejection. The edge negotiation remains open; no first-pass Te'o-Nesheim deal is restored merely because conversation has reached a later player's decision date.
+
+### Edelman sources and verification
+
+- Stone's current proposal, the memo amendments and current role register: changed offer authority, conditional Hawkins relationship, branch statistics and retained receiver roles. The existing chat log supersedes first-pass signing results but does not invent new depth-chart assignments.
+- [Patriots, December 4, 2012](https://www.patriots.com/news/quick-kicks-stallworth-back-edelman-to-ir-187286): pre-divergence foot injury and injured-reserve placement.
+- [Patriots news review, March 14, 2014](https://www.patriots.com/news/news-blitz-3-14-julian-edelman-to-visit-the-49ers-per-source-196661) and [March 15 agreement report](https://www.patriots.com/news/edelman-excited-to-be-back-with-patriots-196681): retention effort, San Francisco visit, other reported interest and agreement date. The articles' historical 2013 statistics are excluded.
+- [Over the Cap contract history](https://overthecap.com/player/julian-edelman/864) and [contemporary contract analysis, Edelman section](https://overthecap.com/otcpff-continuously-updated-free-agent-analysis): four-year value, full guarantee, original signing bonus and active-game conditions. The analysis's assertion that future salary will certainly be earned is an opinion, not another legal guarantee, and is not adopted.
+- [Field Yates contract reporting](https://www.espn.com.au/nfl/story/_/id/10627972/julian-edelman-says-4-year-deal-new-england-patriots): $17 million schedule, $2 million incentive pool and distinction between total protection and skill guarantee. [Mike Reiss original schedule](https://www.espn.com/blog/new-england-patriots/post/_/id/4760458/closer-look-at-edelmans-contract-2): 2015 injury-only protection and original annual contract components. These later reports verify the instrument, not subsequent football results.
+- [Formal club announcement, March 18](https://www.patriots.com/news/patriots-re-sign-wr-julian-edelman-196526): distinguished from the March 15 agreement. No later commentary is backdated as a negotiation quote.
+- The previously read active playbook, branch standings and coaching ledger govern the football setting. San Francisco's unnamed new head coach remains unnamed. No modern medical/facilities assessment or later title run is imported.
+- Opening and final Jacksonville schedules, the original New England schedule, guarantees, bonus balances, hypothetical Top-51 cost and unchanged running obligations were recomputed in integer dollars. This is a qualitative replay decision, not a private-engine receipt.
+
+## Nicks and Hawkins: parallel negotiations resolved March 12 to March 18, 2014
+
+**Replay outcomes:** Hakeem Nicks signs with Jacksonville on March 14 for one season, up to $5 million, with $4.5 million fully guaranteed. Andrew Hawkins agrees to Jacksonville's four-year, $15.6 million offer on March 12; the offer sheet is signed and delivered March 13, and Cincinnati declines to match on March 18. Hawkins joins Jacksonville with $8 million fully guaranteed. These are newly authored simulation decisions, including all counteroffers below, not actual conversations or historical Jacksonville signings.
+
+### Authority, calendar and evidence
+
+Stone supplies new baselines for both players and authorizes Caldwell to negotiate them. This expressly opens Nicks as an additional target and Hawkins as a live negotiation despite the older conditional receiver sequence. It does not authorize a trade of Shorts or Blackmon or any coaching promise. The original premium-receiver contingency does not prohibit considering these newly supplied terms; Caldwell still decides whether each price and role make sense.
+
+These negotiations run alongside the already resolved Tate and Edelman processes. The March 12 Hawkins agreement follows Tate's decision in this authored sequence; its formal March 13 delivery starts the five-day matching window ending March 18. This corrects the earlier calendar's shorthand description of a March 12 offer sheet. There is no new-club contract before the March 11 league-year opening and no pre-opening restricted-free-agent approach. Nicks's March 14 decision does not use advance knowledge of Edelman's March 15 answer. The already recorded Edelman outcome remains New England. Its earlier accounting snapshot was compiled before these two newly requested negotiations; it is superseded by the dated financial bridge in this entry. That earlier receiver description was not a promise to preserve a particular group.
+
+Nicks is 26. Stone supplies his 2013 branch production of 48 catches and 586 yards; no historical 2013 production replaces it. His 2010 and 2011 receiving totals and May 2012 foot fracture are documented pre-branch history. Past high production establishes upside, not proof that health is the only remaining question. The recent branch production and the opportunity to earn work in a crowded group also matter. No new diagnosis or physical failure is generated. Historical March 2014 medical letters are not adopted as branch medical receipts, and later career outcomes are excluded.
+
+Hawkins turned 28 on March 10, 2014, so the supplied age of 27 is corrected. Cincinnati's original-round/right-of-first-refusal tender, combined with his undrafted status, establishes the no-pick-compensation route required by Stone's memo. The working tender amount is $1.431 million. This is adopted from the public tender evidence on its dated rail, not inferred from the absence of a branch stat line. His 2012 work as a slot receiver and on coverage units informs his possible use. His missing 2013 branch line does not prove either inactivity or full health, and the real 2013 ankle injury is not imported.
+
+Jacksonville is 10-6 with a playoff win and Stone retained. Cousins remains QB1; no future career reputation is used to price him. Indianapolis is 8-8 and has replaced Pagano with an unnamed external head coach, so Nicks's historical Pagano relationship cannot recruit him in this branch. Carolina is 8-8 with Rivera retained. Cleveland is 7-9 with Chudzinski retained; no Pettine or Shanahan scheme pitch is imported. Cincinnati is 5-10-1 with an unnamed new head coach. The club's known receivers remain relevant, but its real 2013 receiver production and historical coaching continuity do not.
+
+### Assessment of Stone's opening structures
+
+- Nicks's two-year cash total of $9.5 million and $4.5 million guarantee reconcile. The maximum cap budgets of $4 million and $5.5 million also reconcile. Those cap amounts include all per-game bonuses; exact initial counting requires prior branch game-day participation. The second year gives Jacksonville inexpensive control following a rebound, while guaranteeing Nicks no additional salary. That is the principal bargaining issue for a player considering a short rebuilding contract.
+- Hawkins's $14 million cash total and $6 million guarantee reconcile. The stated flat $3.5 million cap schedule does not follow if the $2 million offseason roster bonus is fully and unconditionally guaranteed at execution. That amount is treated as signing bonus for cap purposes. On that interpretation, total prorated bonus is $4 million, or $1 million per season, and the opening maximum cap budgets are $2 million, $4 million, $4 million and $4 million. A genuinely contingent roster bonus would be a different guarantee promise. Caldwell uses an explicit $4 million signing bonus in the final instrument, avoiding ambiguity.
+- Cleveland's historical benchmark is four years, $13.6 million, with $10.8 million over the first two years and a reported $6.8 million guarantee. Stone's opening Hawkins proposal pays $8 million over those first two years. Its slightly higher average is not a better early-money offer. The exact full-versus-injury guarantee breakdown of the historical Cleveland instrument is not independently certified here; the reported headline is not silently relabeled as full-at-signing protection. Contradictory contemporary descriptions of its bonus components are not used to fabricate a rival annual schedule.
+
+### Nicks: market and resolution
+
+| Club | Financial position | Football and career case |
+|---|---|---|
+| Jacksonville | Opening two years, up to $9.5M, $4.5M fully guaranteed; final one year, up to $5M, same guarantee | Winning branch team and coaching continuity; competes with retained receivers, with no guaranteed starter designation. One year restores his opportunity to negotiate again after the season. |
+| Indianapolis | Historical one-year benchmark around $4M, with $2.25M guaranteed and a reported incentive ceiling of $5.5M; no improved replay bid | Luck is an attractive quarterback, but the branch has a new, unnamed head coach. Wayne and Hilton are competition, not a vacant receiving corps. Historical later injuries or outcomes are excluded. |
+| Carolina | Genuine contemporary interest; complete financial bid unverified | Home-state appeal and Newton. No invented superior offer, automatic target quota or historical playoff record. |
+
+Nicks's March 9 public interest in Luck, Newton and Rivers is market context rather than a binding destination list. No complete San Diego offer is established. Later reporting about his actual Indianapolis choice does not predetermine this answer. Contemporary accounts differ between $3.975 million and $4 million for the Colts' scheduled package, while early reports used $3.5 million; the replay comparison therefore uses approximately $4 million, $2.25 million guaranteed and the separately reported maximum, without certifying every historical bonus trigger. Since Indianapolis does not sign him here, no exact Colts contract is booked.
+
+1. Caldwell opens at Stone's two-year schedule. Nicks's representatives ask for one year, up to $5.5 million, with the same $4.5 million full guarantee. They want compensation now and another negotiation opportunity after a successful season, rather than a nonguaranteed second year controlled by the club.
+2. Caldwell offers one year, up to $5 million: $2 million signing bonus, $2.5 million fully guaranteed base and up to $500,000 in active-game bonuses. This preserves Stone's initial first-year cash and security while relinquishing 2015 control. It is a material concession, not a smaller contract presented as a player loss.
+3. Indianapolis holds its benchmark valuation. Carolina remains a considered alternative without a verified superior offer. Neither club is declared unable to spend more. In this replay, their valuations do not produce an offer Nicks prefers to Jacksonville's security.
+4. Nicks accepts on March 14. The financial protection is substantially stronger than the Colts benchmark, and the one-year term lets him seek a new deal in 2015 under the ordinary free-agency and designation rules. He accepts competition for work. No minimum targets, starter's job or other receiver's departure is promised. He has not been told that Edelman will reject Jacksonville the following day.
+
+Caldwell's decision is to buy outside receiving competition and depth for one season, not declare Nicks restored to his 2011 level. He recognizes the tradeoff: Jacksonville bears $4.5 million of guaranteed exposure and loses the inexpensive second year if Nicks rebounds. The game bonuses limit only the final $500,000; they do not insure the guaranteed salary against injury. No assumed sale or release of Blackmon finances this signing.
+
+### Nicks: executed Jacksonville contract
+
+All amounts in millions of dollars.
+
+| Season | Signing bonus paid | Signing-bonus allocation | Base salary | Roster bonus | Active-game maximum | Cash maximum | Cap budget maximum | Full guarantee |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| 2014 | 2.00 | 2.00 | 2.50 | 0 | 0.50 | 5.00 | 5.00 | $2.00 bonus plus $2.50 base |
+
+Term: 2014 only. The $2 million signing payment is allocated entirely to 2014. Base salary is fully guaranteed for skill, injury and cap termination at execution; standard CBA forfeiture and salary-offset provisions apply, with no hypothetical offset credited. Active-game pay is $31,250 per regular-season game active, up to sixteen games. Scheduled pay excluding these bonuses is $4.5 million. The initial cap charge is $4.5 million plus the applicable likely-to-be-earned portion of the $500,000; this worksheet reserves all $5 million because the exact prior branch active-game count is not established here.
+
+There are no void years, club or player option, 2015 salary, future proration, roster bonus, additional performance incentive, escalator, no-trade clause, no-tag clause or guaranteed playing-time provision. Normal completion leaves no signing-bonus charge in 2015. A pre-season release does not erase the $4.5 million guarantee. A subsequent release or trade requires its own accounting for paid and unpaid salary, offsets and earned bonuses.
+
+### Hawkins: bidding and Cincinnati's independent decision
+
+| Club | Financial position | Football and decision factors |
+|---|---|---|
+| Jacksonville | Final four years, $15.6M, $8M fully guaranteed; $5.8M first year and $10.8M first two years | Stable, successful branch program with slot/motion and coverage work available to compete for. Thielen already has movable-receiver work, so exclusivity is not promised. |
+| Cleveland | Historical benchmark four years, $13.6M/$6.8M reported guarantee; simulated counter four years, $14.4M/$7.2M fully guaranteed and $10.8M first two years | Retained Chudzinski and an identifiable slot need. A credible competing offer; no later draft choice or future Gordon suspension is used. |
+| Cincinnati | Can retain him by matching Jacksonville's actual principal terms; $1.431M original-round tender is the alternative if no outside agreement | Familiar teammates and prior connection to the organization; new branch head coach. Matching requires accepting the long-term price and guarantees alongside other roster commitments. |
+
+The Cleveland counter is expressly fictional. Its complete proposed salary schedule is $5.8M in 2014, $5M in 2015, $1.8M in 2016 and $1.8M in 2017, with no signing or other bonus. All 2014 salary and $1.4M of 2015 salary are fully guaranteed, totaling $7.2M. This is a modeled response before Hawkins signs any offer sheet, not a reconstructed historical Browns contract or a booked Cleveland liability.
+
+1. Caldwell opens at Stone's four years, $14 million, $6 million guaranteed, with the corrected bonus accounting. Hawkins's representatives emphasize Cleveland's $10.8 million two-year cash benchmark and seek four years, $16 million, $8 million fully guaranteed, with at least that much early scheduled cash.
+2. Cleveland improves to the simulated $14.4 million/$7.2 million full-guarantee counter described above while keeping $10.8 million in first-two-year salary. This prevents the negotiation from treating Cleveland as a static number that never responds. It does not oblige Cleveland to win an unlimited auction.
+3. Caldwell finishes at four years, $15.6 million, $8 million fully guaranteed. He uses a $4 million signing bonus, $1.8 million 2014 base, $5 million 2015 base and $2.4 million base in each of 2016 and 2017. The first-two-year cash is $10.8 million. He removes the later per-game conditions entirely; there are no roster bonuses or incentives. The $4 million bonus, $1.8 million 2014 base and $2.2 million of 2015 base form the full guarantee.
+4. Cleveland stops at its revised valuation rather than adding more guaranteed money. Hawkins prefers Jacksonville's stronger protection and total salary, together with the branch program, despite Cleveland's clear slot opening. This is an authored personal tradeoff, not a claim that he historically held that preference. He agrees March 12, then signs the sole offer sheet delivered to Cincinnati on March 13. His compensation and conditions are identical whichever club employs him.
+5. Cincinnati reviews that complete instrument separately. It recognizes that Jacksonville's bonus structure makes the first-year cap burden easier to match than Cleveland's historical cash-heavy design. The contract contains no device making matching impossible. In this replay the Bengals nevertheless decline: $8 million fully guaranteed and $10.8 million over two seasons exceed what they choose to allocate to Hawkins alongside their retained receiver group and broader roster needs. This is a valuation decision, not a claim of insufficient audited cap room or a foregone conclusion from the real non-match.
+6. Cincinnati declines on March 18. Hawkins's Jacksonville contract becomes binding and the signing bonus is payable upon contract execution following resolution of matching rights. No bonus payment is assumed to precede that resolution, no duplicate Cleveland offer sheet is executed, and no draft pick or side payment goes to Cincinnati.
+
+The original club has five days after receipt and can match the principal terms; only one signed offer sheet may be outstanding. The offer-sheet charge is reserved while it is outstanding. Under the 2011 CBA, an unconditional fully guaranteed offseason roster bonus is prorated as signing bonus; base guarantees alone are not prorated. These rules govern the instrument and accounting. The player choice and non-match are independent authored decisions. No fictional league approval receipt or private draw is claimed.
+
+### Hawkins: executed Jacksonville contract
+
+All amounts in millions of dollars. The signing bonus is paid once, in 2014; its allocation is not additional cash.
+
+| Season | Signing-bonus allocation | Base salary | Roster bonus | Per-game bonus | Cash | Cap charge | Full guarantee at execution |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 2014 | 1.00 | 1.80 | 0 | 0 | 5.80 | 2.80 | $4.00 signing bonus and $1.80 base |
+| 2015 | 1.00 | 5.00 | 0 | 0 | 5.00 | 6.00 | $2.20 of base |
+| 2016 | 1.00 | 2.40 | 0 | 0 | 2.40 | 3.40 | None |
+| 2017 | 1.00 | 2.40 | 0 | 0 | 2.40 | 3.40 | None |
+| Total | 4.00 | 11.60 | 0 | 0 | 15.60 | 15.60 | $8.00 million |
+
+Term: four seasons, 2014 through 2017; $3.9 million annual average. The $8 million is fully protected for skill, injury and cap termination when the contract takes effect, subject to standard CBA forfeiture and salary offsets; no speculative recovery is booked. The remaining $2.8 million of 2015 base and all 2016-2017 bases are not guaranteed. There is no third-year guarantee, later vesting guarantee, void year, option, escalator, trade kicker, no-trade clause, no-tag clause, workout condition or statistical incentive. Compensation in later years still requires continued employment.
+
+Gross pre-June 1 release exposure is $5.2 million before the 2015 season ($3 million bonus balance plus $2.2 million guaranteed base), $2 million before 2016 and $1 million before 2017, before offsets or separately earned amounts. Releasing him before 2016 would therefore save $1.4 million against that season's scheduled $3.4 million charge. No release is executed here.
+
+### Receiver room, cap reconciliation and remaining work
+
+Nicks and Hawkins join Shorts, Thielen, Blackmon, Clemons, Brown and Jerrell Jackson on the offseason controlled inventory. Eight receivers at this stage do not guarantee eight regular-season roster places. Stone retains all depth-chart and usage decisions. Nicks supplies outside competition; Hawkins supplies slot/motion and possible coverage-unit competition. Those are Caldwell's acquisition purposes, not new starter or special-teams assignments. Neither signing requires demoting Thielen or promising another player's release.
+
+Tate remains in Detroit, so Package A still does not activate. Seattle retains No. 36; Package H remains unavailable. Signing these receivers does not substitute for the missing Tate condition. Shorts's extension remains open, and the draft instruction remains unchanged until Stone changes it; a planned rookie is not treated as already available or signed. The Arizona package and other trade offers are unresolved and generate no savings.
+
+Caldwell ends additional paid veteran receiver bidding after these two acquisitions. This decision can be changed by a later instruction or roster event, but no other receiver offer is created now. He accepts the near-term cost for one outside receiver and one different type of inside receiver, keeps Nicks off the 2015 payroll, and preserves nonguaranteed exits on Hawkins after two seasons. The price of doing both is materially less room for the edge, backup quarterback, long snapper, rookies and in-season replacements. No prior first-pass Te'o-Nesheim or Cain contract is restored to disguise that constraint.
+
+| 2014 working cap bridge | Dollars |
+|---|---:|
+| Previous counted player obligations and retained dead money | $120,265,496 |
+| Hawkins offer/contract charge | +$2,800,000 |
+| Second $420,000 salary displaced from Top 51 | -$420,000 |
+| Nicks maximum cap budget | +$5,000,000 |
+| Third $420,000 salary displaced from Top 51 | -$420,000 |
+| Updated Top-51 player budget plus retained dead money | $127,225,496 |
+| Opening offseason-workout charge | +$504,000 |
+| Updated counted/reserved total | $127,729,496 |
+| Difference from $133 million base cap | $5,270,504 |
+
+The two additions consume $6.96 million net, not the full $7.8 million of their standalone charges. The underlying inventory is now 54, including four tender allowances. Bray, Jerrell Jackson and Jerome Long each carry a $420,000 salary and no current-contract signing bonus; all three are outside the Top 51. They remain under contract. The old $51,675 of retained dead money is still included separately, with no second credit or deletion.
+
+Chronological accounting: Hawkins's March 13 offer sheet reserves a $2.38 million net increment, taking the base-cap budget remainder to $9,850,504. Nicks's March 14 signing reserves another $4.58 million, taking it to $5,270,504. Edelman's March 15 rejection adds nothing; Hawkins's March 18 non-match converts the already counted offer to a contract without another charge. This is the corrected dated view after the new negotiations, superseding the earlier Edelman step's $12,230,504 snapshot. Prior outcomes remain unchanged.
+
+The Nicks active-game maximum is reserved in full rather than represented as a certified initial cap charge. Carryover, other adjustments, exact rookie commitments and operating reserves remain unresolved; $5,270,504 is therefore not free spending room certified by the league. No future release, trade, incentive credit or cap increase is assumed. Caldwell must resolve those remaining needs before making an unaffordable further commitment.
+
+Future scheduled player commitments become $113,455,137 in 2015, maximum budgets of $56,511,292 in 2016, $37,800,000 in 2017 and $18,900,000 in 2018. These add Hawkins's $6M/$3.4M/$3.4M to the previous totals; Nicks adds no later year. Six replay signings now carry $81.5 million in original full guarantees and up to $51.8 million of first-year cash. Those totals are not additional cap charges.
+
+### Sources and validation for this entry
+
+- Stone's current proposals and the existing chat outcomes supply the new mandate, Nicks's branch line and receiver controls. The [memo](https://github.com/Alex-Oss222/football-career-sim/blob/ddae28ca2f9ec4f171553b730f1bbfbc64a2e55c/career/2014/offseason/stone_to_caldwell_2014_offseason_decisions.md), [2013 standings](https://github.com/Alex-Oss222/football-career-sim/blob/ddae28ca2f9ec4f171553b730f1bbfbc64a2e55c/career/2013/standings.md), [coaching results](https://github.com/Alex-Oss222/football-career-sim/blob/ddae28ca2f9ec4f171553b730f1bbfbc64a2e55c/career/2014/offseason/staff_changes/carousel_results.json), cap inputs and current state supply branch constraints. No real standings or later individual outcomes replace them.
+- [Giants injury announcement, May 24, 2012](https://www.giants.com/news/wr-nicks-suffers-fractured-fifth-metatarsal-in-right-foot-7393929) and [Giants historical receiving totals](https://www.giants.com/photos/every-1-000-yard-receiving-season-in-giants-history) verify Nicks's pre-branch history only.
+- [NFL.com, March 9, 2014](https://www.nfl.com/news/hakeem-nicks-wants-to-play-with-luck-newton-rivers-0ap2000000332163) documents Nicks's interest in established quarterbacks and term preferences. [Contemporary ESPN report carried by ABC](https://abcnews.com/Sports/colts-hakeem-nicks-reach-deal/story?id=22921599), [OTC contract history](https://overthecap.com/player/hakeem-nicks/866) and [March 18 detailed contract reporting](https://www.profootballrumors.com/2014/03/colts-close-deal-hakeem-nicks) supply the Colts benchmark and its reporting differences. Later reports are used for original financial terms only. Pagano's historical recruitment, post-signing comments and later results are not branch facts.
+- [Bengals 2013 media guide](https://static.clubs.nfl.com/image/upload/bengals/eus1xrs10p5menmticti.pdf) supplies Hawkins's birth date and pre-branch identity. [Bengals contemporary tender report](https://www.bengals.com/news/browns-sign-hawkins-as-bengals-mull-match-but-not-ufas-report-says-mays-12730924) supplies the original-round tender, undrafted compensation treatment and coverage role; its 2013 statistics, injury and coaching claims are excluded.
+- [Bengals, March 13](https://www.bengals.com/news/back-to-the-future-with-whit-at-lt-12746016) verifies receipt of the historical offer sheet that Thursday. [Browns, March 18](https://www.clevelandbrowns.com/news/browns-acquire-restricted-free-agent-andrew-hawkins-12775560) confirms the real matching period and no draft compensation. Its historical destination is a comparator, not this replay's required result.
+- [OTC contemporary contract analysis, Hawkins section](https://overthecap.com/otcpff-continuously-updated-free-agent-analysis) and [Hawkins contract history](https://overthecap.com/player/andrew-hawkins/327) establish $13.6 million, reported $6.8 million protection and $10.8 million two-year cash. A conflicting [contemporary component report](https://ca.sports.yahoo.com/news/bengals-not-matching-browns-13-200105020--nfl.html) is not used to assert a settled full-guarantee split or annual historical schedule. Cleveland's improved bid in this entry is entirely simulated.
+- [2011 CBA](https://onlabor.org/wp-content/uploads/2016/04/collective-bargaining-agreement-2011-2020.pdf), Articles 9 and 13, governs matching, offer-sheet counting, guaranteed offseason bonuses, base salaries, proration and incentives. [Caldwell's February 7, 2014 remarks](https://www.jaguars.com/news/what-we-learned-fan-forum-12596317) support disciplined valuation and alternatives, without prescribing these fictional offers.
+- Both final schedules, guaranteed amounts, two-year cash, bonus balances and the five-year team bridge were recomputed in integer dollars. The cap inventory was independently rebuilt from the existing financial inputs by removing the reopened first-pass Te'o-Nesheim/Cain contracts, replacing Monroe's tender, applying all six replay contracts and selecting the Top 51. This verified 54 controlled/tendered entries, the three displaced $420,000 salaries and every total above. No repository file has been mutated.
+
 ## Next negotiation
 
-**Daniel Te'o-Nesheim, the primary available veteran edge target.** Request Stone's current baseline before resolving the reopened signing. The old first-pass deal remains removed from this replay's cap. Jared Allen and keeping Babin remain the existing fallback order. Shorts's extension process is now open for a separate proposal; neither process is completed merely by listing it here.
+**Daniel Te'o-Nesheim, the primary available veteran edge target.** His reopened negotiation still awaits Stone's current baseline. Jared Allen and keeping Babin remain the existing fallback order. The remaining cap budget must also cover rookies and operating needs before any further deal is committed. Shorts's extension, the other pending own free agents and trade packages remain open.
 
 ## Reconciliation handoff
 
