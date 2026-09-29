@@ -333,3 +333,41 @@ Line plan consequence: with Adams first at 26, the drafted offensive linemen are
 **User instruction, at the February 17, 2014 branch checkpoint, executed February 18, 2014 (ledger Entry 87):** designate Eugene Monroe as Jacksonville's non-exclusive franchise player now, rather than holding the tag as a fallback until 4 p.m. ET on March 3. This supersedes only the timing of the Monroe tag in section 2 and in the earlier amendment ("If he is unsigned at 4 p.m. ET on March 3, apply the non-exclusive franchise tag"). The re-signing terms in section 2 still govern the long-term talks, which continue under the tag. Because the tag is Jacksonville's one designation for 2014, the section 2 provision moving the tag to Marks can no longer apply; Marks becomes an unrestricted free agent at 4 p.m. ET on March 11 if unsigned.
 
 **Contract-evidence update, Entry 90 at the February 28 checkpoint:** [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md) reports Nwaneri's $1M roster bonus due March 25. That resolves the earlier due-date gap; the F1/H recommendations themselves are unchanged. Use the [current contract table](contract_table.md) for updated schedules and explicitly labeled estimates, including salary, retained proration and deferred cash.
+
+## September 29, 2026 amendment: long snapper
+
+**User instruction, at the February 28, 2014 branch checkpoint.** This records a plan only; no contract is made here.
+
+- **Jeremy Cain:** re-sign for one year at the minimum for his credited seasons, as section 2 already provided. His contract expires when the league year opens (March 11, 4 p.m. ET). The re-signing resolves under the league rails at his real signing date, so it is not guaranteed.
+- **Casey Kreiter, LS, Iowa:** sign as an undrafted free agent after the May 8 to 10 draft, on the standard three-year undrafted minimum contract. He must go undrafted in the branch draft, be eligible, and have a dated pre-draft scouting report on file before the call. He is added to the undrafted watch list as the long-snapper signing, outside the offensive-line count.
+- Cain and Kreiter compete in camp. Westhoff runs the evaluation; the roster decision stays with Caldwell.
+
+## September 29, 2026 amendment: package I, Arizona's second for Adams
+
+**User instruction, at the February 28, 2014 branch checkpoint.** This records a plan only; no trade is made here.
+
+| Term | Instruction |
+|---|---|
+| Jacksonville sends | Its original 2015 first-round pick |
+| Jacksonville receives | Arizona's original 2014 second-round pick, No. 38 (retained original pick, no recorded hold) |
+| Purpose | Select Davante Adams at 38 |
+| Window | Trades open March 11, 4 p.m. ET; through the draft. Arizona's answer is its own, resolved by the simulation |
+| If Arizona declines | No deal; the pick 26 order reverts to Adams, then Bitonio, then Van Noy |
+
+**Board consequence if package I closes:** pick 26 becomes Joel Bitonio (then Van Noy), Adams moves to 38, pick 13 stays Donald (then Fuller) and pick 31 stays Lawrence through package H. Until package I closes, the existing pick 26 order (Adams, Bitonio, Van Noy) stands.
+
+**Cost and risk.** Jacksonville would hold no 2015 pick before round 3, because Washington already owns its 2015 second. Adams's availability at 38 is decided at the draft by the league-rails rule; a later pick carries more availability risk than 26, and nothing here promises he is there. This supersedes the board rule that Jacksonville trades no pick away, for this package only.
+
+## September 29, 2026 amendment: package I adds Tyson Alualu
+
+**User instruction, at the February 28, 2014 branch checkpoint:** add one tradeable veteran to package I instead of cash (cash is not permitted in trades between clubs). The operator chose **Tyson Alualu, DL**, already on the outbound board as package E.
+
+| Term | Instruction |
+|---|---|
+| Jacksonville sends | Its original 2015 first-round pick **and DL Tyson Alualu** |
+| Jacksonville receives | Arizona's original 2014 second-round pick, No. 38, to select Davante Adams |
+| Alualu condition | Package E's existing condition carries over: Sen'Derrick Marks is actually re-signed first. If Arizona is ready before Marks is re-signed, the offer is the 2015 first alone |
+| 2014 cap (tracker, Entry 91) | Alualu's charge is $4,264,000; a trade saves $2,721,500 (base $2,571,500 plus $150,000 other) and leaves $1,542,500 of bonus proration as dead money |
+| If Arizona declines | No deal; pick 26 stays Adams, then Bitonio, then Van Noy; Alualu returns to package E (Miami, Houston, San Diego for a 2015 sixth) |
+
+Package E is folded into package I while package I is live. Nothing executes before the league year opens on March 11 at 4 p.m. ET; Arizona's answer is resolved by the simulation at that time.
