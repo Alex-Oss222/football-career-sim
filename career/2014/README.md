@@ -9,6 +9,7 @@ The 2014 league year folder. The 2013 season is complete and archived (ledger En
 | Record | Path | Status |
 |---|---|---|
 | Calendar and gates | [calendar.md](calendar.md) | Current |
+| Offseason turn outputs | [offseason/turns/](offseason/turns/README.md) | February 3 to 17, 2014 written (Entries 83-86) |
 | Draft order (generated from receipts) | [draft/draft_order.md](draft/draft_order.md) | All seven rounds: 224 ordinary assets audited; IND 14 / GB 15; JAX firsts 13/26 and eight picks; three conditional claims and compensatory awards remain pending |
 | Schedule and opponents | [schedule/README.md](schedule/README.md) | All 32 clubs and 256 matchups generated; dated fixtures/bye wait for April 23; three London dates already known |
 | Contract and free-agency status at the league-year turn | [offseason/contract_status_register.md](offseason/contract_status_register.md) | Research register (sourced; see its labels) |
