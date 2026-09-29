@@ -1,0 +1,54 @@
+{
+ "procedure": "futures-2014-v1",
+ "event_id": "2014-futures-contracts-v1",
+ "snapshot": "892acee1c74ccbc2f9e6c487ee7a9a351411624e20918153e34ccffc4a18996c",
+ "method_sha256": "a845cb86a6c034de7c8cc4f41257f45eb77294094f26bc328b605ca08faf0130",
+ "code_sha256": "03f90b70b6508461033a06dfbc8a9f3bed4997eb6345ebdc8bbf11efe41c4276",
+ "ledger_entry": "Entry 85",
+ "result_ref": "c9e39398d570bcd9535b2d013d858e885725d8cd5d61d2d01ca2e4054a85e18a",
+ "packet_sha256": "9bc36abe6a2de353be83cbd885055d8ec2ea660a2e3927c2afddf2e16d5cadba",
+ "signed": [
+  {
+   "player": "Tyler Bray",
+   "date": "2014-02-03",
+   "basis": "uncontested"
+  },
+  {
+   "player": "Richard Murphy",
+   "date": "2014-02-03",
+   "basis": "uncontested"
+  },
+  {
+   "player": "Antwon Blake",
+   "date": "2014-02-03",
+   "basis": "uncontested"
+  },
+  {
+   "player": "Jerome Long",
+   "date": "2014-02-03",
+   "basis": "uncontested"
+  },
+  {
+   "player": "Jerrell Jackson",
+   "date": "2014-02-03",
+   "basis": "uncontested"
+  },
+  {
+   "player": "D'Anthony Smith",
+   "date": "2014-02-05",
+   "basis": "market draw won"
+  }
+ ],
+ "smith": {
+  "player": "D'Anthony Smith",
+  "m": 1.0,
+  "chance": 0.4999999999999999,
+  "draw": 0.3729,
+  "jacksonville": true
+ },
+ "let_go": [
+  "Brandon King",
+  "Will Ta'ufo'ou"
+ ],
+ "lost": []
+}
