@@ -100,6 +100,53 @@ class WalkTests(unittest.TestCase):
         self.assertIsNone(w["failed"])
 
 
+class PenaltyFirstDownTests(unittest.TestCase):
+    """Item 3 open issue 1: a walked scrimmage first down beyond the 2012
+    tuple's scrimmage count absorbs one of its penalty first downs."""
+
+    def test_formula(self):
+        pen = chains.penalty_first_downs
+        self.assertEqual(pen(2, 1, 2), 1)   # walk matches the real scrimmage count
+        self.assertEqual(pen(2, 1, 1), 1)   # walk below it: the flag's first down stays
+        self.assertEqual(pen(2, 1, 3), 0)   # one excess walked first down absorbs it
+        self.assertEqual(pen(2, 2, 3), 1)
+        self.assertEqual(pen(0, 1, 4), 0)   # never negative
+        self.assertEqual(pen(3, 0, 5), 0)
+
+    def test_total_never_double_counts(self):
+        pen = chains.penalty_first_downs
+        for c0 in range(6):
+            for c1 in range(4):
+                for walked in range(9):
+                    total = walked + pen(c0, c1, walked)
+                    self.assertGreaterEqual(total, walked)
+                    self.assertLessEqual(total, max(walked, c0 + c1))
+
+    def test_kernel_publishes_the_absorbed_count(self):
+        # Every drive's published penalty count is the formula applied to its
+        # own real tuple and walk, in drive order.
+        a, b = sample_teams()
+        calls = []
+        real = chains.penalty_first_downs
+
+        def spy(c0, c1, walked):
+            out = real(c0, c1, walked)
+            calls.append((int(c0), int(c1), int(walked), out))
+            return out
+
+        absorbed = 0
+        with mock.patch.object(chains, "penalty_first_downs", side_effect=spy):
+            for i in range(20):
+                calls.clear()
+                r = resolve_game(a, b, seed=SEED + b"-pen-%02d" % i, event_id="pen-fd-%d" % i)
+                drives = [p for p in r["possessions"] if p.get("chain_model") == chains.CHAIN_MODEL]
+                self.assertEqual(len(calls), len(drives))
+                for p, (c0, c1, walked, out) in zip(drives, calls):
+                    self.assertEqual((p["chains"][0], p["chains"][1]), (walked, out))
+                    absorbed += c1 - out
+        self.assertGreater(absorbed, 0)
+
+
 class FeasibilityTests(unittest.TestCase):
     def test_punt_needs_three_snaps_after_its_last_first_down(self):
         self.assertTrue(chain_feasible("punt", plays=3, net=9, spot=80))

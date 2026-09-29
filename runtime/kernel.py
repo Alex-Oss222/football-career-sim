@@ -746,7 +746,8 @@ def _resolve_game(
         # (runtime/chains.py; the possession stream is not consumed). Down,
         # distance, first downs and third/fourth-down counts come from that
         # walk; only the real drive's penalty first downs (no ledger rows)
-        # stay a counter, chains[1]. When the split above admits no legal
+        # stay a counter, chains[1], less any walked scrimmage first downs
+        # beyond the real scrimmage count (chains.penalty_first_downs). When the split above admits no legal
         # order the layout returns an alternative split or sack-loss draw
         # (same net), which the drive then publishes.
         layout = chain_walk.drive_layout(
@@ -757,7 +758,9 @@ def _resolve_game(
             targets=list(row[T["chains"]]), term_down=row[T["term_down"]], diagnostics=diagnostics)
         pass_yards, rush_free, sack_losses = layout["pass_yards"], layout["rush_free"], layout["losses"]
         walked = layout["walk"]["chains"]
-        chains = [walked[0], int(row[T["chains"]][1]), walked[1], walked[2], walked[3], walked[4]]
+        real_chains = row[T["chains"]]
+        chains = [walked[0], chain_walk.penalty_first_downs(real_chains[0], real_chains[1], walked[0]),
+                  walked[1], walked[2], walked[3], walked[4]]
 
         rush_yards = rush_free + kneel_sum + (terminal_value if safety_terminal and safety_terminal[0] == "run" else 0)
         sack_total = sum(sack_losses) + (-terminal_value if safety_terminal and safety_terminal[0] == "sack" else 0)

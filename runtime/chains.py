@@ -26,6 +26,18 @@ counters only; defect register item 11), so a 2012 drive's penalty first
 downs stay a documented counter (chains[1]) and are the only chain value not
 reconciled to the ledger.
 
+Penalty first downs are not double counted (item 3 open issue 1). The real
+drive's penalty yards moved the ball but have no snap, so the replayed snaps
+carry that ground themselves and the walk can credit a scrimmage first down
+where the real drive got its line to gain from a flag. When the walk finds
+more scrimmage first downs than the 2012 tuple's scrimmage count c0, each
+excess walked first down absorbs one of the tuple's penalty first downs c1:
+
+    penalty = max(0, c1 - max(0, walked - c0))
+
+(`penalty_first_downs`). A walk at or below c0 keeps all c1; the published
+total never exceeds max(walked, c0 + c1) and never falls below walked.
+
 The layout that fixes each snap's kind, completion and yards and their order
 therefore feeds team counters. It runs on its own keyed stream
 (CHAIN_LAYOUT_TAG, per event, drive and offence) that neither consumes the
@@ -57,6 +69,15 @@ RESTARTS = 4
 NODE_BUDGET = 3000
 EXACT_BUDGET = 600
 REPAIR_STEPS = 120
+
+
+def penalty_first_downs(scrimmage_real, penalty_real, walked):
+    """The drive's published penalty first downs: the 2012 tuple's penalty
+    count less any walked scrimmage first downs beyond the tuple's own
+    scrimmage count (those walked first downs already carry the flag's
+    ground; module docstring)."""
+    c0, c1, walked = int(scrimmage_real), int(penalty_real), int(walked)
+    return max(0, c1 - max(0, walked - c0))
 
 
 def line_to_gain(spot):

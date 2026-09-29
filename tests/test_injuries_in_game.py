@@ -295,7 +295,11 @@ class PauseAndContinuationTests(unittest.TestCase):
         for choices in bad_choices:
             with self.assertRaises(ValueError, msg=choices):
                 self.play(self.onsets, [self.decision(choices)])
-        tampered = self.partial["pauses"][-1]["continuation_token"][:-1] + "0"
+        # Flip the last hex digit so the tamper is never a no-op (a token that
+        # already ends in "0" made the old "+ '0'" edit return the good token).
+        token = self.partial["pauses"][-1]["continuation_token"]
+        tampered = token[:-1] + ("1" if token[-1] == "0" else "0")
+        self.assertNotEqual(tampered, token)
         with self.assertRaisesRegex(ValueError, "stale or tampered"):
             self.play(self.onsets, [self.decision(good, tampered)])
         # A decision that answers a different partial state is stale.
