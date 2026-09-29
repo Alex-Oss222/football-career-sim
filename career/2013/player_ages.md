@@ -838,6 +838,7 @@ Jacksonville includes every controlled player, including the practice squad. Oth
 | Ryan Davis | DE | 1989-02-24 | 25 | Offseason roster |
 | Lavar Edwards | DE | 1990-04-29 | 23 | Offseason roster |
 | Jeremy Mincey | DE | 1983-12-14 | 30 | Offseason roster |
+| Daniel Te'o-Nesheim | DE | 1987-06-12 | 26 | Offseason roster (signed March 18, 2014) |
 | Tyson Alualu | DT | 1987-05-12 | 26 | Offseason roster |
 | Sen'Derrick Marks | DT | 1987-02-23 | 27 | Offseason roster (re-signed March 11, 2014) |
 | Roy Miller | DT | 1987-07-09 | 26 | Offseason roster |
@@ -1684,7 +1685,6 @@ Jacksonville includes every controlled player, including the practice squad. Oth
 | Demar Dotson | T | 1985-10-11 | 28 | Background roster |
 | Jamon Meredith | T | 1986-05-11 | 27 | Background roster |
 | Ted Larsen | C | 1987-06-13 | 26 | Background roster |
-| Daniel Te'o-Nesheim | DE | 1987-06-12 | 26 | Background roster |
 | Gerald McCoy | DT | 1988-02-25 | 26 | Background roster |
 | Adrian Clayborn | DE | 1988-07-06 | 25 | Background roster |
 | Akeem Spence | DT | 1991-11-29 | 22 | Background roster |

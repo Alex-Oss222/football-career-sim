@@ -2819,3 +2819,25 @@ Atomic closure: contract register/table, futures outcomes, working depth-chart c
 **Atomic closure.** The replay log, signings record, draw-log note, trade pages, contract table, financial inputs and generated tracker, worksheet, roster, identity registry, working depth chart and its JSON copy, the New England, Giants, Indianapolis, Cincinnati and Cleveland rails pages, the free-agent pool, calendar and Documents 4 (register 51) and 5 (state 72) agree. The private snapshot is advanced only after merge.
 
 **Commit closed - Canonical update - March 18, 2014 - Free-agency replay (Nicks and Hawkins signed; Edelman to New England) - canonical through March 18, 2014**
+
+
+## Entry 98: Free-agency replay continued (Te'o-Nesheim signed)
+
+**Effective canonical state:** March 18, 2014.
+**Recorded:** September 29, 2026
+**Checkpoint:** `Canonical update - March 18, 2014 - Free-agency replay (Te'o-Nesheim signed)`
+**Preceding global package checkpoint:** `Canonical update - March 18, 2014 - Free-agency replay (Nicks and Hawkins signed; Edelman to New England)`
+
+**Authority.** The user asked for a Te'o-Nesheim contract built on an honest check of the cap against the memo's projection, and for the negotiation to be run. The event owner is [the negotiation record](../2014/offseason/free_agency/teo_nesheim_negotiation_2014-03-18.md); the method is the replay's (judgment-based, no private draw).
+
+**Budget check.** The six earlier replay deals cost $31,950,000 of 2014 cap against the memo's $25,750,000 estimates for the same slots: $6,200,000 over. With the memo's unfinished items priced at its own figures, the full plan ends about $3.5M short, against the memo's projected $6.2M to $13.0M of room. Jacksonville is tighter than projected, so the edge offer was kept cap-light.
+
+**Daniel Te'o-Nesheim, DE (March 18).** Caldwell opened at three years, $12.0M, $5.0M guaranteed; the representatives countered at three years, $16.5M, $8.0M guaranteed; Caldwell's final three years, up to $13,500,000, with $6,000,000 fully guaranteed was accepted. No other club made an offer (on the rails no club signed him in 2014). Terms: $3,000,000 signing bonus; base $1,500,000 in 2014 and 2015 (guaranteed) and $5,000,000 in 2016; a $1,000,000 2016 roster bonus; up to $500,000 of active-game bonuses each year. 2014 cap $3,000,000.
+
+**Consequences.** Package D (Babin to Miami for a 2015 fifth) is reopened, its trigger met, answer open. Stone's instruction adds Nwaneri to package I (with Alualu and the three picks, for No. 38) and withdraws F1; if Arizona has not agreed before March 25, Nwaneri is released before his bonus.
+
+**Accounting.** Scheduled 2014 player cap $131,433,821 including $3,066,000 of unsigned tenders, plus $51,675 dead money. Offseason Top-51 (three $420,000 and one $495,000 minimums outside) $129,730,496; with the $504,000 workout charge, $130,234,496, a $2,765,504 working difference before carryover, rookies and reserves. Later commitments: 2015 $116,455,137; 2016 $64,011,292. Controlled roster: 55.
+
+**Atomic closure.** The negotiation record, memo amendment, signings record, draw-log note, trade pages, contract table, financial inputs and generated tracker, worksheet, roster, working depth chart and its JSON copy, the Tampa Bay rails page, the free-agent pool, calendar and Documents 4 (register 52) and 5 (state 73) agree. The private snapshot is advanced only after merge.
+
+**Commit closed - Canonical update - March 18, 2014 - Free-agency replay (Te'o-Nesheim signed) - canonical through March 18, 2014**

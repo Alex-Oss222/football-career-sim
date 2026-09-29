@@ -40,7 +40,7 @@ A non-exclusive franchise player may negotiate with other clubs from the league 
 
 **Tender check (February 28, 2014, Entry 89).** The required non-exclusive tender is the greater of the position figure and 120 percent of the player's prior-year salary. The only 2013 figures on record for Monroe are in the [initial cap sheet](../../../2013/offseason/initial_cap_sheet.md): $3,800,000 base, $1,742,500 proration and a $205,000 workout bonus, for a $5,747,500 cap number. That row is an older archive transcription its September 18, 2026 audit did not re-verify. One hundred twenty percent of the base is $4,560,000, and of the full cap number $6,897,000. Both are below $11,654,000, so the position figure applies whichever of those measures counts as his prior-year salary. It would stop applying only if his prior-year salary exceeded $9,711,667, which the recorded figures do not approach; the check stays conditional on the transcription being accurate.
 
-### March 2014 free-agency replay (ledger Entries 95 to 97; supersedes the first-pass draws below)
+### March 2014 free-agency replay (ledger Entries 95 to 98; supersedes the first-pass draws below)
 
 At Stone's instruction the March 8 to 11 negotiations were replayed as a judgment-based simulation: Caldwell set the offers from Stone's baselines, and each player could accept, counter or decline. The full negotiation record, schedules and cap bridge are in [the replay log](march_2014_replay_log.md), the event owner. No private draw was used and none of the first-pass random values is reused.
 
@@ -50,12 +50,13 @@ At Stone's instruction the March 8 to 11 negotiations were replayed as a judgmen
 | Sen'Derrick Marks, DT | Re-signed March 11 | 4 years, 2014-2017 | $26,000,000 | $12,500,000 | $4,750,000 |
 | Alterraun Verner, CB | Signed March 11, after 4 p.m. | 4 years, 2014-2017 | $29,000,000 | $15,000,000 | $6,000,000 |
 | Aqib Talib, CB (Entry 96) | Signed March 11, after 4 p.m. | 5 years, 2014-2018 | $46,500,000 | $21,500,000 | $7,800,000 |
+| Daniel Te'o-Nesheim, DE (Entry 98) | Signed March 18 ([negotiation record](teo_nesheim_negotiation_2014-03-18.md)) | 3 years, 2014-2016 | $13,500,000 | $6,000,000 | $3,000,000 |
 | Hakeem Nicks, WR (Entry 97) | Signed March 14 | 1 year, 2014 | $5,000,000 | $4,500,000 | $5,000,000 (active-game bonuses reserved) |
 | Andrew Hawkins, WR (Entry 97) | Offer sheet signed March 13; Cincinnati declined to match March 18 (no pick owed) | 4 years, 2014-2017 | $15,600,000 | $8,000,000 | $2,800,000 |
 | Julian Edelman, WR (Entry 97) | Declined Jacksonville's final offer (4 years, up to $19M, $8.5M guaranteed); returned to New England March 15 | None for Jacksonville | | | |
 | Golden Tate, WR (Entry 96) | Declined Jacksonville's final offer (5 years, up to $32.5M, $13.5M guaranteed); signed with Detroit March 12 | None for Jacksonville | | | |
 
-Still open for their own replay entries: Daniel Te'o-Nesheim (next) and Jeremy Cain (first-pass signings withdrawn), Chad Henne (March 7 chronology), Jones-Drew, C.J. Wilson and Ball. Caldwell has ended paid veteran receiver bidding. With both primary corners signed, Brent Grimes and Tarell Brown are not pursued automatically.
+Still open for their own replay entries: Jeremy Cain (first-pass re-signing withdrawn), Chad Henne (March 7 chronology), Jones-Drew, C.J. Wilson and Ball. Caldwell has ended paid veteran receiver bidding. With both primary corners signed, Brent Grimes and Tarell Brown are not pursued automatically.
 
 ### League-year opening, March 11, 2014 (ledger Entry 94; first pass, superseded by Entry 95)
 

@@ -1,7 +1,7 @@
 {
   "team": "Jacksonville Jaguars",
   "as_of": "2014-03-18",
-  "checkpoint": "Entry 97",
+  "checkpoint": "Entry 98",
   "prepared": "2026-09-29",
   "start_year": 2014,
   "end_year": 2023,
@@ -6734,6 +6734,116 @@
         }
       },
       "schedule_basis": "Executed branch terms (Entry 95)"
+    },
+    {
+      "name": "Daniel Te'o-Nesheim",
+      "position": "EDGE",
+      "roster_position": "DE",
+      "date_of_birth": "1987-06-12",
+      "age_at_checkpoint": 26,
+      "control": "signed",
+      "status": "Under contract",
+      "contract_type": "Veteran (branch free agent)",
+      "signed": "March 18, 2014",
+      "term": "3 / 2016",
+      "contract_ends": 2016,
+      "value": "$13,500,000 (maximum)",
+      "bonus_terms": "$3,000,000; $1,000,000; 3",
+      "guarantees": "$6,000,000 fully guaranteed at signing (signing bonus plus 2014 and 2015 base)",
+      "dead_money_2014": "Gross exposure $6,000,000 before 2014 salary is earned; $1,000,000 before the 2016 roster bonus",
+      "remaining_guarantees": 3000000,
+      "availability": "No communicated restriction",
+      "plan": "No new transaction decision in this tracker",
+      "source_note": "Branch record (Entry 98; negotiation record career/2014/offseason/free_agency/teo_nesheim_negotiation_2014-03-18.md). Active-game bonuses reserved in full",
+      "sources": [
+        "career/2014/offseason/contract_table.md",
+        "career/2014/offseason/free_agency/signings.md",
+        "career/2014/offseason/free_agency/teo_nesheim_negotiation_2014-03-18.md"
+      ],
+      "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+      "accrued_seasons": "Through 2013: 4 (Philadelphia and Tampa Bay, 2010-2013)",
+      "years": {
+        "2014": {
+          "status": "known",
+          "cap": 3000000,
+          "base": 1500000,
+          "proration": 1000000,
+          "other_cap": 500000,
+          "cash": 5000000,
+          "guaranteed_base": 1500000,
+          "basis": "Branch contract, Entry 98 (March 2014 replay): up to $500,000 active-game bonuses"
+        },
+        "2015": {
+          "status": "known",
+          "cap": 3000000,
+          "base": 1500000,
+          "proration": 1000000,
+          "other_cap": 500000,
+          "cash": 2000000,
+          "guaranteed_base": 1500000,
+          "basis": "Branch contract, Entry 98 (March 2014 replay): up to $500,000 active-game bonuses"
+        },
+        "2016": {
+          "status": "known",
+          "cap": 7500000,
+          "base": 5000000,
+          "proration": 1000000,
+          "other_cap": 1500000,
+          "cash": 6500000,
+          "guaranteed_base": 0,
+          "basis": "Branch contract, Entry 98 (March 2014 replay): $1,000,000 roster bonus and up to $500,000 active-game bonuses"
+        },
+        "2017": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2018": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2019": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2020": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2021": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2022": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2023": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        }
+      },
+      "schedule_basis": "Executed branch terms (Entry 95)"
     }
   ],
   "draft_picks": [
@@ -6849,6 +6959,11 @@
       "date": "2014-03-18",
       "source": "career/2013/ledger.md",
       "description": "Entry 97: Nicks signed March 14 (1 year, up to $5M, $4.5M guaranteed); Hawkins's offer sheet signed March 13 and Cincinnati declined to match March 18 (4 years, $15.6M, $8M guaranteed); Edelman returned to New England."
+    },
+    {
+      "date": "2014-03-18",
+      "source": "career/2013/ledger.md",
+      "description": "Entry 98: Te'o-Nesheim signed in the replay (3 years, up to $13.5M, $6.0M guaranteed; 2014 cap $3.0M)."
     }
   ],
   "scenarios": [],

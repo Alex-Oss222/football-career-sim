@@ -1,6 +1,6 @@
 # Jacksonville Jaguars individual contract details
 
-[Return to the ten-year table](jaguars_cap_2014_2023.md). As of March 18, 2014, Entry 97. Whole US dollars.
+[Return to the ten-year table](jaguars_cap_2014_2023.md). As of March 18, 2014, Entry 98. Whole US dollars.
 
 Annual cells contain the working original or reconstructed contract schedule. Blank years lie outside that deal. The [completion research](../../library/2014_jaguars_contract_completion.md) identifies adopted simulation terms and guarantee assumptions. Cap, scheduled cash and remaining unpaid guarantees are separate amounts.
 
@@ -2729,3 +2729,48 @@ Assumes release before that year’s salary and bonuses are earned. Remaining gu
 Branch record (Entry 97; March 2014 replay log). No draft-pick compensation to Cincinnati (original-round tender, undrafted); the historical Cleveland offer sheet does not occur.
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [signings](../../career/2014/offseason/free_agency/signings.md), [march 2014 replay log](../../career/2014/offseason/free_agency/march_2014_replay_log.md).
+
+## Daniel Te'o-Nesheim
+
+| Field | Detail |
+|---|---|
+| Position / status | EDGE / Under contract |
+| Original contract | Veteran (branch free agent) |
+| Signed | March 18, 2014 |
+| Term | 3 / 2016 |
+| Contract value | $13,500,000 (maximum) |
+| Bonus terms | $3,000,000; $1,000,000; 3 |
+| Remaining unpaid salary guarantee | $3,000,000 |
+| Guarantee basis | $6,000,000 fully guaranteed at signing (signing bonus plus 2014 and 2015 base) |
+| Schedule basis | Executed branch terms (Entry 95) |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $1,500,000 | $1,000,000 | $500,000 | $3,000,000 | $5,000,000 | $1,500,000 |
+| 2015 | $1,500,000 | $1,000,000 | $500,000 | $3,000,000 | $2,000,000 | $1,500,000 |
+| 2016 | $5,000,000 | $1,000,000 | $1,500,000 | $7,500,000 | $6,500,000 | $0 |
+| 2017 |  |  |  |  |  |  |
+| 2018 |  |  |  |  |  |  |
+| 2019 |  |  |  |  |  |  |
+| 2020 |  |  |  |  |  |  |
+| 2021 |  |  |  |  |  |  |
+| 2022 |  |  |  |  |  |  |
+| 2023 |  |  |  |  |  |  |
+
+### Release comparison
+
+| Year | Gross pre-June-1 dead money | Gross cap reduction |
+|---|---|---|
+| 2014 | $6,000,000 | -$3,000,000 |
+| 2015 | $3,500,000 | -$500,000 |
+| 2016 | $1,000,000 | $6,500,000 |
+
+Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
+
+### Contract notes
+
+Branch record (Entry 98; negotiation record career/2014/offseason/free_agency/teo_nesheim_negotiation_2014-03-18.md). Active-game bonuses reserved in full.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [signings](../../career/2014/offseason/free_agency/signings.md), [teo nesheim negotiation 2014-03-18](../../career/2014/offseason/free_agency/teo_nesheim_negotiation_2014-03-18.md).
