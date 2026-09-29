@@ -1,6 +1,6 @@
 # Jacksonville Jaguars 2014 depth chart (working view)
 
-**As of:** March 18, 2014 (ledger Entry 98, the March 2014 free-agency replay).
+**As of:** March 20, 2014 (ledger Entry 99: Cain re-signed; Nwaneri traded to Arizona).
 **Status:** carried from the closed 2013 chart minus players whose control ended on March 11; no 2014 depth decision has been made. Removing a player moves those below him up without a reorder. Stone owns the order and changes it only by decision.
 **Machine-readable copy:** [offseason/depth_chart_working.json](offseason/depth_chart_working.json), same schema as [the 2013 chart](../2013/depth_chart.json) plus contract flags, the March 11 additions and this update log.
 **Sources:** [2013 depth chart](../2013/depth_chart.json) (Git `781213a`, effective January 6, 2014, AFC Divisional preparation); [current roster](../2013/roster.md); [current contract status register](offseason/contract_status_register.md); [Caldwell's pre-tag-window verifications](offseason/caldwell_pre_tag_verifications.md); ledger Entries 79 and 85 through 89. The January chart supplies the carried order; the current roster and register supply control and availability.
@@ -64,13 +64,12 @@ The kernel group is one OL list. Brad Meester (C) is removed: retired (Entry 79)
 | Order | Player | Pos | Contract flag | 2013 recorded role | Availability |
 |---:|---|---|---|---|---|
 | 1 | Eugene Monroe | OT | Under contract through 2018 (re-signed March 11, Entry 95) | Starting LT | No communicated restriction |
-| 2 | Uche Nwaneri | G | Under contract | Starting LG | No communicated restriction |
-| 3 | Mike Brewster | C | Under contract | Starting center (confirmed Week 6) | No communicated restriction |
-| 4 | Will Rackley | G | Under contract | Starting right guard | Limited, no projected absence (upper extremity, Week 5) |
-| 5 | Lane Johnson | OT | Under contract | Starting right tackle | No communicated restriction |
-| 6 | Cameron Bradfield | OT | Tendered RFA (unsigned) | Swing tackle; sixth OL in 6OL | No communicated restriction |
-| 7 | Austin Pasztor | G | Tendered ERFA (unsigned) | Game-day interior OL reserve (from Week 10) | No communicated restriction |
-| 8 | Mark Asper | G | Under contract | Interior OL depth (game-day inactive Weeks 10-17) | No communicated restriction |
+| 2 | Mike Brewster | C | Under contract | Starting center (confirmed Week 6) | No communicated restriction |
+| 3 | Will Rackley | G | Under contract | Starting right guard | Limited, no projected absence (upper extremity, Week 5) |
+| 4 | Lane Johnson | OT | Under contract | Starting right tackle | No communicated restriction |
+| 5 | Cameron Bradfield | OT | Tendered RFA (unsigned) | Swing tackle; sixth OL in 6OL | No communicated restriction |
+| 6 | Austin Pasztor | G | Tendered ERFA (unsigned) | Game-day interior OL reserve (from Week 10) | No communicated restriction |
+| 7 | Mark Asper | G | Under contract | Interior OL depth (game-day inactive Weeks 10-17) | No communicated restriction |
 
 ## Defense
 
@@ -123,13 +122,13 @@ The kernel group is one OL list. Brad Meester (C) is removed: retired (Entry 79)
 |---|---|---|---|---|
 | K (placekicker) | Josh Scobee | Under contract | K | No communicated restriction |
 | P (punt) | Bryan Anger | Under contract | P | No communicated restriction |
-| LS | Vacant | Not applicable | Cain was the 2013 LS; his re-signing is reopened in the replay (Entry 95) | Not applicable |
+| LS | Jeremy Cain | Under contract through 2014 (re-signed March 19, Entry 99) | LS | No communicated restriction |
 | Kick returner | No designation | Not applicable | The closed 2013 chart designates no returner (its `roles` are passer, placekicker and punt only) | Not applicable |
 | Punt returner | No designation | Not applicable | Same as above | Not applicable |
 
 Mike Westhoff has coordinated special teams since February 11, 2014 (Entry 84). No 2014 returner, coverage-unit or specialist decision has been made.
 
-## Counts at March 18, 2014 (Entry 98)
+## Counts at March 20, 2014 (Entry 99)
 
 | Group | Count |
 |---|---:|
@@ -137,9 +136,9 @@ Mike Westhoff has coordinated special teams since February 11, 2014 (Entry 84). 
 | of whom tendered RFA or ERFA (unsigned) | 4 |
 | Added, not placed (six futures, Verner, Talib, Nicks, Hawkins and Te'o-Nesheim) | 11 |
 | **Controlled players** | **55** |
-| Removed since the 2013 chart (Meester, Cain and the seven other March 11 departures) | 9 |
+| Removed since the 2013 chart (Meester, the seven other March 11 departures and Nwaneri) | 9 |
 
-Roles open after March 11: QB2 (Henne), the lead back (Jones-Drew), TE3 (Reisner), long snapper (Cain) and the corner places of Brent Grimes and Ball. Marks is back at his carried place. The chart does not fill open roles: those are Stone's decisions.
+Roles open: QB2 (Henne), the lead back (Jones-Drew), TE3 (Reisner), the corner places of Brent Grimes and Ball, and starting left guard (Nwaneri, traded March 20). Cain is back at long snapper. Marks is back at his carried place. The chart does not fill open roles: those are Stone's decisions.
 
 Brandon King and Will Ta'ufo'ou were never on the 2013 chart and are not Jacksonville players (Entry 85). The 2013 game-day inactive list is weekly and is not carried.
 
@@ -158,6 +157,7 @@ Add a row for every signing, tag, tender, trade, release, retirement, draft pick
 | March 12, 2014 | Replay: Talib signed | Entry 96 | Talib added, not placed; no order change |
 | March 18, 2014 | Replay: Nicks and Hawkins signed | Entry 97 | Both added, not placed; no order change |
 | March 18, 2014 | Replay: Te'o-Nesheim signed | Entry 98 | Added, not placed; no order change |
+| March 20, 2014 | Cain re-signed; Nwaneri traded | Entry 99 | Cain back in the LS slot; Nwaneri (OL 2, starting LG) removed and the linemen below him move up one without a reorder; the left guard job is open |
 
 ## Maintaining the game-input copy
 

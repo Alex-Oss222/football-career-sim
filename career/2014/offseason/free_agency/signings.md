@@ -50,13 +50,14 @@ At Stone's instruction the March 8 to 11 negotiations were replayed as a judgmen
 | Sen'Derrick Marks, DT | Re-signed March 11 | 4 years, 2014-2017 | $26,000,000 | $12,500,000 | $4,750,000 |
 | Alterraun Verner, CB | Signed March 11, after 4 p.m. | 4 years, 2014-2017 | $29,000,000 | $15,000,000 | $6,000,000 |
 | Aqib Talib, CB (Entry 96) | Signed March 11, after 4 p.m. | 5 years, 2014-2018 | $46,500,000 | $21,500,000 | $7,800,000 |
+| Jeremy Cain, LS (Entry 99) | Re-signed March 19 ([negotiation record](cain_negotiation_2014-03-19.md)) | 1 year, 2014 | $855,000 | $0 | $855,000 |
 | Daniel Te'o-Nesheim, DE (Entry 98) | Signed March 18 ([negotiation record](teo_nesheim_negotiation_2014-03-18.md)) | 3 years, 2014-2016 | $13,500,000 | $6,000,000 | $3,000,000 |
 | Hakeem Nicks, WR (Entry 97) | Signed March 14 | 1 year, 2014 | $5,000,000 | $4,500,000 | $5,000,000 (active-game bonuses reserved) |
 | Andrew Hawkins, WR (Entry 97) | Offer sheet signed March 13; Cincinnati declined to match March 18 (no pick owed) | 4 years, 2014-2017 | $15,600,000 | $8,000,000 | $2,800,000 |
 | Julian Edelman, WR (Entry 97) | Declined Jacksonville's final offer (4 years, up to $19M, $8.5M guaranteed); returned to New England March 15 | None for Jacksonville | | | |
 | Golden Tate, WR (Entry 96) | Declined Jacksonville's final offer (5 years, up to $32.5M, $13.5M guaranteed); signed with Detroit March 12 | None for Jacksonville | | | |
 
-Still open for their own replay entries: Jeremy Cain (first-pass re-signing withdrawn), Chad Henne (March 7 chronology), Jones-Drew, C.J. Wilson and Ball. Caldwell has ended paid veteran receiver bidding. With both primary corners signed, Brent Grimes and Tarell Brown are not pursued automatically.
+Still open for their own replay entries: Chad Henne (March 7 chronology), Jones-Drew, C.J. Wilson and Ball. Caldwell has ended paid veteran receiver bidding. With both primary corners signed, Brent Grimes and Tarell Brown are not pursued automatically.
 
 ### League-year opening, March 11, 2014 (ledger Entry 94; first pass, superseded by Entry 95)
 

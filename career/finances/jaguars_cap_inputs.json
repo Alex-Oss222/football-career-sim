@@ -1,7 +1,7 @@
 {
   "team": "Jacksonville Jaguars",
-  "as_of": "2014-03-18",
-  "checkpoint": "Entry 98",
+  "as_of": "2014-03-20",
+  "checkpoint": "Entry 99",
   "prepared": "2026-09-29",
   "start_year": 2014,
   "end_year": 2023,
@@ -1839,8 +1839,8 @@
       "roster_position": "G",
       "date_of_birth": "1984-03-20",
       "age_at_checkpoint": 29,
-      "control": "signed",
-      "status": "Under contract",
+      "control": "traded",
+      "status": "Traded to Arizona, March 20, 2014 (package I, Entry 99)",
       "contract_type": "Veteran extension, 2010",
       "signed": "2010",
       "term": "5 / 2015",
@@ -1849,9 +1849,9 @@
       "bonus_terms": "$1,094,500 annual allocation in 2014 and 2015; original paid-bonus composition not fully recovered",
       "guarantees": "Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap.",
       "dead_money_2014": "$2,189,000 gross exposure under adopted terms, before any later earned payment or recorded credit",
-      "remaining_guarantees": 0,
+      "remaining_guarantees": null,
       "availability": "No communicated restriction",
-      "plan": "No new transaction decision in this tracker",
+      "plan": "Traded to Arizona (Entry 99)",
       "source_note": "2014 estimate: verified $3.775M base and $1M roster bonus plus carried $25,000 workout and $1,094,500 allocation. Original 2015 cash schedule remains missing; budget the same $4.8M cash and $5,894,500 charge as 2014 until replaced. That flat 2015 allowance is an estimate, not a recovered salary.",
       "sources": [
         "career/2014/offseason/contract_table.md",
@@ -1863,26 +1863,18 @@
       "accrued_seasons": "Through 2012: 4+ (entered 2007). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "approximate",
+          "status": "not_committed",
           "cap": null,
-          "base": 3775000,
-          "proration": 1094500,
-          "other_cap": 1025000,
-          "cash": 4800000,
-          "approximate_cap": 5894500,
-          "estimate_note": "2014 estimate: verified $3.775M base and $1M roster bonus plus carried $25,000 workout and $1,094,500 allocation. Original 2015 cash schedule remains missing; budget the same $4.8M cash and $5,894,500 charge as 2014 until replaced. That flat 2015 allowance is an estimate, not a recovered salary. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.",
-          "guaranteed_base": 0
+          "base": null,
+          "proration": null,
+          "cash": null
         },
         "2015": {
-          "status": "approximate",
+          "status": "not_committed",
           "cap": null,
-          "base": 3775000,
-          "proration": 1094500,
-          "other_cap": 1025000,
-          "cash": 4800000,
-          "approximate_cap": 5894500,
-          "estimate_note": "2014 estimate: verified $3.775M base and $1M roster bonus plus carried $25,000 workout and $1,094,500 allocation. Original 2015 cash schedule remains missing; budget the same $4.8M cash and $5,894,500 charge as 2014 until replaced. That flat 2015 allowance is an estimate, not a recovered salary. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.",
-          "guaranteed_base": 0
+          "base": null,
+          "proration": null,
+          "cash": null
         },
         "2016": {
           "status": "not_committed",
@@ -1942,7 +1934,10 @@
         }
       },
       "guarantee_basis": "simulation reconstruction",
-      "schedule_basis": "Includes adopted simulation amounts; see contract notes"
+      "schedule_basis": "Includes adopted simulation amounts; see contract notes",
+      "former_player": true,
+      "departure_date": "2014-03-20",
+      "departure_source": "career/2013/ledger.md"
     },
     {
       "name": "Will Rackley",
@@ -5362,35 +5357,37 @@
       "roster_position": "LS",
       "date_of_birth": "1980-03-24",
       "age_at_checkpoint": 33,
-      "control": "pending",
-      "status": "Unrestricted free agent from 4 p.m. March 11, 2014; the first-pass re-signing is superseded and his negotiation is reopened (Entry 95)",
-      "contract_type": "Veteran, February 2011",
-      "signed": "March 11, 2014 (4 p.m. ET)",
-      "term": "2013",
-      "contract_ends": 2013,
-      "value": "Disputed: $2.45M or $3.0M (3 years)",
+      "control": "signed",
+      "status": "Under contract",
+      "contract_type": "Veteran minimum (branch re-signing)",
+      "signed": "March 19, 2014",
+      "term": "1 / 2014",
+      "contract_ends": 2014,
+      "value": "$855,000",
       "bonus_terms": "$0; $0; 0",
       "guarantees": "$0",
-      "dead_money_2014": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
-      "remaining_guarantees": null,
+      "dead_money_2014": "$0 gross exposure under adopted terms",
+      "remaining_guarantees": 0,
       "availability": "No communicated restriction",
-      "plan": "Negotiation reopened in the March 2014 replay (Entry 95)",
-      "source_note": "Branch record (Entry 94, uncontested market draw). $855,000 is the 2014 minimum for seven to nine credited seasons, inferred from Chicago's September 2014 figure (single source). Counted in full; the Article 26 minimum-salary benefit (a $570,000 charge) is not applied because his eligibility is unverified",
+      "plan": "No new transaction decision in this tracker",
+      "source_note": "Branch record (Entry 99; negotiation record career/2014/offseason/free_agency/cain_negotiation_2014-03-19.md). $855,000 is the 2014 minimum for seven to nine credited seasons, inferred from his real September 2014 Chicago figure (single source). Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md",
         "career/2014/offseason/free_agency/signings.md",
-        "career/2014/offseason/league_year_method.json"
+        "career/2014/offseason/free_agency/cain_negotiation_2014-03-19.md"
       ],
       "credited_seasons": "Seven to nine (inferred; unverified)",
       "accrued_seasons": "Through 2012: 4+ (entered 2004; Jacksonville long snapper through 2012). 2013: Accrues in branch (on 53 for 16 games); at least 5 accrued",
       "years": {
         "2014": {
-          "status": "not_committed",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 855000,
+          "base": 855000,
+          "proration": 0,
+          "other_cap": 0,
+          "cash": 855000,
+          "guaranteed_base": 0,
+          "basis": "Branch one-year minimum, Entry 99"
         },
         "2015": {
           "status": "not_committed",
@@ -5456,10 +5453,7 @@
           "cash": null
         }
       },
-      "schedule_basis": "Executed branch terms (Entry 94)",
-      "former_player": true,
-      "departure_date": "2014-03-11",
-      "departure_source": "career/2013/ledger.md"
+      "schedule_basis": "Executed branch terms (Entry 99)"
     },
     {
       "name": "Cameron Bradfield",
@@ -6863,6 +6857,13 @@
     },
     {
       "year": 2014,
+      "round": 2,
+      "original_club": "Arizona Cardinals",
+      "slot_in_round": "6",
+      "overall": "38"
+    },
+    {
+      "year": 2014,
       "round": 3,
       "original_club": "Jacksonville Jaguars",
       "slot_in_round": "26",
@@ -6932,6 +6933,13 @@
       "amount": 0,
       "status": "simulation",
       "basis": "December 2012 practice-squad promotion modeled as a short minimum contract with no new bonus. August 2013 waiver leaves no future bonus charge."
+    },
+    {
+      "player": "Uche Nwaneri",
+      "year": 2014,
+      "amount": 2189000,
+      "status": "reconstructed",
+      "basis": "Pre-June 1 trade to Arizona, March 20, 2014 (Entry 99): the 2014 and 2015 bonus allocations of $1,094,500 each accelerate into 2014. His $1,000,000 March 25 roster bonus passes to Arizona."
     }
   ],
   "amendments": [
@@ -6964,6 +6972,11 @@
       "date": "2014-03-18",
       "source": "career/2013/ledger.md",
       "description": "Entry 98: Te'o-Nesheim signed in the replay (3 years, up to $13.5M, $6.0M guaranteed; 2014 cap $3.0M)."
+    },
+    {
+      "date": "2014-03-20",
+      "source": "career/2013/ledger.md",
+      "description": "Entry 99: Cain re-signed (1 year, $855,000 minimum); Nwaneri traded to Arizona in package I with the 2015 first, 2015 fourth and 2016 fifth for No. 38 (pre-June 1 trade: $2,189,000 of bonus proration accelerates into 2014)."
     }
   ],
   "scenarios": [],

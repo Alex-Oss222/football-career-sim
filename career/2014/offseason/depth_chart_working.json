@@ -2,7 +2,7 @@
  "team": "Jacksonville Jaguars",
  "season": 2014,
  "status": "WORKING VIEW, NOT A GAME INPUT. Carried from the closed 2013 chart minus players no longer controlled; no 2014 depth decision has been made.",
- "as_of": "March 18, 2014 (ledger Entry 98)",
+ "as_of": "March 20, 2014 (ledger Entry 99)",
  "effective": "Carried from the closed 2013 chart (January 6, 2014, AFC Divisional preparation)",
  "sources": "career/2013/depth_chart.json (Git 781213a, carried order); current career/2013/roster.md; current career/2014/offseason/contract_status_register.md; career/2014/offseason/free_agency/signings.md; ledger Entries 79 and 85 through 89; Entry 94 (league year opened); Entry 95 (March 2014 free-agency replay)",
  "rule": "Order within each kernel position group is the closed 2013 order exactly as carried, minus players no longer controlled. It is not a 2014 decision. Stone owns the 2014 order and changes it only by decision; each change is logged in career/2014/depth_chart.md.",
@@ -32,7 +32,6 @@
   ],
   "OL": [
    "Eugene Monroe",
-   "Uche Nwaneri",
    "Mike Brewster",
    "Will Rackley",
    "Lane Johnson",
@@ -74,7 +73,9 @@
   "P": [
    "Bryan Anger"
   ],
-  "LS": []
+  "LS": [
+   "Jeremy Cain"
+  ]
  },
  "positions": {
   "Kirk Cousins": "QB",
@@ -90,7 +91,6 @@
   "Marcedes Lewis": "TE",
   "Travis Kelce": "TE",
   "Eugene Monroe": "OT",
-  "Uche Nwaneri": "OG",
   "Will Rackley": "OG",
   "Lane Johnson": "OT",
   "Cameron Bradfield": "OT",
@@ -147,7 +147,8 @@
   "Aqib Talib": "Under contract through 2018 (signed March 11, Entry 96)",
   "Hakeem Nicks": "Under contract through 2014 (signed March 14, Entry 97)",
   "Andrew Hawkins": "Under contract through 2017 (signed March 18, Entry 97)",
-  "Daniel Te'o-Nesheim": "Under contract through 2016 (signed March 18, Entry 98)"
+  "Daniel Te'o-Nesheim": "Under contract through 2016 (signed March 18, Entry 98)",
+  "Jeremy Cain": "Under contract through 2014 (re-signed March 19, Entry 99)"
  },
  "availability_notes": {
   "Paul Posluszny": "Out, head/neck, independent medical hold (Week 13); projected return April 5, 2014 (career/2013/roster.md)",
@@ -163,7 +164,7 @@
   "Chad Henne": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
   "Kevin Rutland": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
   "Maurice Jones-Drew": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
-  "Jeremy Cain": "Unrestricted from 4 p.m. March 11, 2014; negotiation reopened in the replay (Entry 95)"
+  "Uche Nwaneri": "Traded to Arizona, March 20, 2014 (Entry 99)"
  },
  "game_day_inactives": null,
  "update_log": [
@@ -220,6 +221,12 @@
    "event": "Replay: Te'o-Nesheim signed",
    "ledger_entry": "Entry 98",
    "change": "Te'o-Nesheim added, not placed; no order change"
+  },
+  {
+   "date": "March 20, 2014",
+   "event": "Cain re-signed; Nwaneri traded",
+   "ledger_entry": "Entry 99",
+   "change": "Cain restored to the LS slot; Nwaneri (OL 2, starting LG) removed, OL players below him move up one without a reorder; the starting left guard job is open for Stone"
   }
  ],
  "added_not_placed": {

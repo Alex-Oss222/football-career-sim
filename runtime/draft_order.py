@@ -159,7 +159,8 @@ def load_ownership(path=OWNERSHIP):
     data = json.loads(Path(path).read_text(encoding="utf-8"))
     if data.get("schema_version") != 2:
         raise ValueError("unsupported pick ownership schema")
-    if (data.get("audited_year") != 2014 or data.get("as_of") != "2014-02-02"
+    # The register may advance past the February 2 audit as dated trades are recorded.
+    if (data.get("audited_year") != 2014 or str(data.get("as_of", "")) < "2014-02-02"
             or len(data.get("audited_clubs", [])) != 32
             or set(data["audited_clubs"]) != set(TEAMS)):
         raise ValueError("expected complete 2014 ownership audit at the recorded checkpoint")

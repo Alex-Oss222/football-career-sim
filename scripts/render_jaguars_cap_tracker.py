@@ -222,7 +222,7 @@ def render_main(d,years):
     out.append(table(['Date / review','Player or group','Financial treatment'],[
         ['March 11, 2014 (done, Entry 94)','Futures, tenders and Monroe','Futures effective; RFA/ERFA tenders and the $11,654,000 franchise tender count while unsigned'],
         ['March 16, 2014','Justin Blackmon','$1,700,000 deferred bonus cash; already allocated within the original cap schedule'],
-        ['March 25, 2014','Uche Nwaneri','$1,000,000 roster bonus in the original reported clause'],
+        ['March 25, 2014 (traded March 20)','Uche Nwaneri','Roster bonus passes to Arizona; $2,189,000 of bonus proration is 2014 dead money'],
         ['Original opt-out window','Jason Babin','Keep the original 2014-2015 schedule until an actual exercise is recorded'],
         ['July 15, 2014','Eugene Monroe','Long-term agreement deadline; replace the tender, do not add a second charge'],
         ['2015 option window','Justin Blackmon','2016 fifth-year option remains unexercised; exercise decision follows the 2014 season'],
@@ -233,7 +233,7 @@ def render_main(d,years):
     out.append(table(['Item']+years,[['Signed contracts and futures']+[dollars(working_total(ps,y,'cash',('known','approximate'))) for y in years],['Unsigned tender, conditional on signing']+[dollars(working_total(ps,y,'cash',('tender',))) for y in years],['Total scheduled player cash']+[dollars(working_total(ps,y,'cash')) for y in years]]))
     out.append('Cash counts salary and the bonuses paid in that contract year; bonus proration is a cap allocation, not a second cash payment. Record actual payments separately. The 2013-2016 and 2017-2020 cash-floor tests require their complete four-year cash ledgers.\n\n## 11. Release comparisons\n\nThese are gross pre-June-1 comparisons under the adopted contract terms at this checkpoint. They exclude replacement costs and any later earned bonus, guarantee trigger or collected credit. No release is executed.\n\n')
     rows=[]
-    for name in ['Roy Miller','Daryl Smith','Uche Nwaneri','Russell Allen','Will Rackley','Jeremy Mincey','John Parker Wilson']:
+    for name in ['Roy Miller','Daryl Smith','Jason Babin','Russell Allen','Will Rackley','Jeremy Mincey','John Parker Wilson']:
         p=next(p for p in ps if p['name']==name);charge=working_charge(p['years'][current]);dead=release_exposure(p,current)
         rows.append([name,dollars(charge),dollars(dead),dollars(charge-dead)])
     out.append(table(['Player','Scheduled cap','Gross dead money','Gross cap reduction'],rows))
