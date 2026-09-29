@@ -4,6 +4,8 @@
 
 These records assess the coach working in the branch now. They carry experience, demonstrated teaching, actual choices, recurring questions and changes in understanding across seasons. They do not freeze a coach at his hiring résumé or prescribe the type of coach he must become.
 
+Lead with a recognizable coaching portrait: how the coach prepares, calls, teaches, delegates and responds when the work goes badly. Describe current tendencies and changes through specific decisions and relationships. Evidence tables support that portrait; they should not replace it with a list of questions about what might someday be known. Stone's [initial assessment and dated evidence map](alex_stone_2013_assessment_record.md) remain available behind his revised profile. Interpretations of comfort and temperament should be identified as interpretations, with room for later experience to change them.
+
 **Initial evidence cutoff: February 2, 2014.** The profiles synthesize existing records. Preparing them is not a new review meeting, practice, hire, delegation or career-clock advance. A staff member's contract and authority remain in the authoritative staff/canon records. Stone's frozen [prehire dossier](../../library/alex_stone_character_dossier_pre_hire.md) preserves what was known at hiring; his living profile records what later experience changes.
 
 ## How to edit and show evolution
