@@ -660,6 +660,7 @@ def apply_drive_detail(
     fourth_down=None,
     passer=None,
     diagnostics=None,
+    own_seconds=None,
 ):
     """Allocate one resolved drive into reconciled player/snap public detail.
 
@@ -714,6 +715,12 @@ def apply_drive_detail(
     front = usage.protection_front(available)
 
     drive_seconds = max(0, int(start_clock) - int(end_clock))
+    # Kernel 2014.4: scrimmage snaps are stamped inside the drive's own
+    # seconds. A window-ending drive's clock-expiry leg (drive_seconds -
+    # own) runs after its last snap and belongs to the terminal
+    # possession-end row at end_clock; no snap is stamped inside it.
+    own = drive_seconds if own_seconds is None else max(0, min(int(own_seconds), drive_seconds))
+    own_end = int(start_clock) - own
     ledger = []
     groups_for = {}
 
@@ -736,7 +743,7 @@ def apply_drive_detail(
     running = 0
     for index in range(plays):
         snap_no = index + 1
-        remaining = int(start_clock) - round(drive_seconds * snap_no / plays)
+        remaining = int(start_clock) - round(own * snap_no / plays)
         period, game_clock = clock_at(remaining)
         kind = kinds[index]
         is_terminal = terminal is not None and index == last
@@ -953,10 +960,16 @@ def apply_drive_detail(
         _bump(line, "extra_points_attempted")
         if xp_made:
             _bump(line, "extra_points_made")
-        ledger.append({**base, "snap_in_drive": terminal_snap, "play_type": "extra_point",
+        # Kernel 2014.4: the untimed try (and a safety below) sits with its
+        # scoring snap at the drive's own end, not after the expiry leg.
+        period, game_clock = clock_at(own_end)
+        ledger.append({**base, "period": period, "game_clock": game_clock,
+                       "snap_in_drive": terminal_snap, "play_type": "extra_point",
                        "kicker": kicker.player_id, "made": bool(xp_made), "long_snapper": snap()})
     elif category == "safety":
-        ledger.append({**base, "snap_in_drive": terminal_snap, "play_type": "safety",
+        period, game_clock = clock_at(own_end)
+        ledger.append({**base, "period": period, "game_clock": game_clock,
+                       "snap_in_drive": terminal_snap, "play_type": "safety",
                        "scoring_team": defense.team_id})
     elif category in POSSESSION_END_REASONS:
         ledger.append({**base, "snap_in_drive": terminal_snap, "play_type": "possession_end",
@@ -1058,10 +1071,16 @@ COHERENCE_CLASSES = (
     # Kernel 2014.1 onward: evaluated only when every possession carries the
     # timeout state.
     "timeout_state_invalid", "fourth_down_beyond_goal",
+    # Kernel 2014.4 onward: evaluated only when every possession carries its
+    # own seconds and clock-expiry leg (has_clock_legs); snap_after_expiry
+    # needs the full snap ledger.
+    "seconds_per_snap_outside", "snap_after_expiry", "expiry_leg_exceeds_allowance",
 )
 TIMEOUT_CLASSES = ("timeout_state_invalid", "fourth_down_beyond_goal")
+CLOCK_LEG_CLASSES = ("seconds_per_snap_outside", "snap_after_expiry", "expiry_leg_exceeds_allowance")
+CLOCK_LEG_LEDGER_CLASSES = ("snap_after_expiry",)
 LEGACY_CLASSES = COHERENCE_CLASSES[:15]
-SPOT_CLASSES = tuple(c for c in COHERENCE_CLASSES[15:] if c not in TIMEOUT_CLASSES)
+SPOT_CLASSES = tuple(c for c in COHERENCE_CLASSES[15:] if c not in TIMEOUT_CLASSES + CLOCK_LEG_CLASSES)
 SPOT_LEDGER_CLASSES = (
     "kick_spot_mismatch", "label_type_mismatch", "label_carrier_mismatch",
     "label_target_mismatch", "scramble_with_designed_label", "kneel_spike_mislabelled",
@@ -1084,6 +1103,8 @@ DRIVE_SUMMARY_FIELDS = (
     "tuple_terminal_bucket", "chains", "fourth_down", "kneels", "spikes",
     # Kernel 2014.1 onward (append-only).
     "timeouts", "timeout_level",
+    # Kernel 2014.4 onward (append-only).
+    "own_seconds", "expiry_seconds",
 )
 LABEL_TYPES = {KNEEL_LABEL: "run", GENERIC_RUN: "run", SPIKE_LABEL: "pass",
                GENERIC_PASS: "pass", SCRAMBLE_LABEL: "pass"}
@@ -1117,7 +1138,61 @@ def measurable_classes(result):
             classes.update(SPOT_LEDGER_CLASSES)
         if has_timeouts(result):
             classes.update(TIMEOUT_CLASSES)
+    if has_clock_legs(result):
+        classes.update(c for c in CLOCK_LEG_CLASSES if c not in CLOCK_LEG_LEDGER_CLASSES)
+        if result.get("play_ledger"):
+            classes.update(CLOCK_LEG_LEDGER_CLASSES)
     return classes
+
+
+def has_clock_legs(result):
+    """True for a kernel 2014.4-or-later result or receipt (every possession
+    carries its own seconds and clock-expiry leg)."""
+    possessions = _possessions(result)
+    return bool(possessions) and all(p.get("own_seconds") is not None and p.get("expiry_seconds") is not None
+                                     for p in possessions)
+
+
+def _row_remaining(row, game_type):
+    """Kernel 2014.4: a ledger row's clock as seconds left on the possession
+    countdown (regulation 3600..0; regular overtime 900..0; postseason
+    overtime on the kernel's continuous period-bound countdown)."""
+    from .rules import RULES
+    minutes, seconds = (int(v) for v in row["game_clock"].split(":"))
+    left = minutes * 60 + seconds
+    period = row["period"]
+    if isinstance(period, str) and period.startswith("OT"):
+        if game_type != "postseason":
+            return left
+        number = int(period[2:] or 1)
+        return (RULES.postseason_ot_period_bound - number) * RULES.postseason_ot_seconds + left
+    return 3600 - ((int(period) - 1) * 900 + 900 - left)
+
+
+def _check_clock_legs(result, possessions, rows_by_drive, err):
+    """Kernel 2014.4: a drive's own seconds lie in the 2012 range for its snap
+    count; its clock-expiry leg is 0..CLOCK_EXPIRY_ALLOWANCE, only on a
+    window-ending drive, and own + expiry is the possession's clock; with the
+    full ledger, no scrimmage snap is stamped after the drive's own end."""
+    from . import field_position as fp
+    game_type = result.get("game_type", "regular")
+    ranges = fp.snap_seconds_range()
+    for p in possessions:
+        number, own, expiry = p["number"], p["own_seconds"], p["expiry_seconds"]
+        elapsed = p["start_clock"] - p["end_clock"]
+        if (expiry < 0 or expiry > fp.CLOCK_EXPIRY_ALLOWANCE or own + expiry != elapsed
+                or (expiry and not p.get("half_final"))):
+            err("expiry_leg_exceeds_allowance", "drive %s own %s expiry %s over %s" % (number, own, expiry, elapsed))
+        span = ranges.get(p.get("scrimmage_plays"))
+        if span is None or not span[0] <= own <= span[1]:
+            err("seconds_per_snap_outside", "drive %s: %s snaps in %s s" % (number, p.get("scrimmage_plays"), own))
+        if rows_by_drive is None:
+            continue
+        own_end = p["end_clock"] + expiry
+        for row in rows_by_drive.get(number, ()):
+            if row.get("play_type") in ("pass", "run") and _row_remaining(row, game_type) < own_end:
+                err("snap_after_expiry", "drive %s snap %s at %s %s" % (
+                    number, row.get("snap_in_drive"), row["period"], row["game_clock"]))
 
 
 def has_timeouts(result):
@@ -1201,6 +1276,15 @@ def _frame(p, game_type):
     return p["half"], _clock_base(p["half"])
 
 
+def _zero_play_expiry(p):
+    """Kernel 2014.4: a zero-play possession whose whole window (at most the
+    clock-expiry allowance) is its clock-expiry leg. It replays no 2012
+    drive: its net is 0 by definition, not a sample from the start bin's
+    2012 clock envelope."""
+    return (p.get("scrimmage_plays") == 0 and p["category"].startswith("end_of_") and p["net_yards"] == 0
+            and p.get("own_seconds") == 0 and p.get("expiry_seconds") == p["start_clock"] - p["end_clock"])
+
+
 def _check_spots(result, possessions, err):
     """Ledger-free kernel 2013.7 classes on the possession list or drives summary."""
     game_type = result.get("game_type", "regular")
@@ -1216,7 +1300,7 @@ def _check_spots(result, possessions, err):
             err("start_spot_out_of_field", "drive %s start %s" % (number, start))
             continue
         envelope = fp.load()["envelopes"][category][fp.start_bin(start)]
-        if envelope is None:
+        if envelope is None and not _zero_play_expiry(p):
             err("category_impossible_at_start", "drive %s %s from %s" % (number, category, start))
         if category == "touchdown" and (net != start or end != 0):
             err("td_net_ne_start", "drive %s net %s start %s end %s" % (number, net, start, end))
@@ -1429,7 +1513,9 @@ def check_ledger(result):
     for p in possessions:
         category = p["category"]
         range_key = "clock" if category.startswith("end_of_") else category
-        if spots:
+        if _zero_play_expiry(p):
+            pass  # kernel 2014.4: no 2012 drive is replayed, so no 2012 net range applies
+        elif spots:
             envelope = fp.load()["envelopes"][range_key][fp.start_bin(p["start_spot"])] if (
                 isinstance(p["start_spot"], int) and 1 <= p["start_spot"] <= 99) else None
             if envelope is None or (range_key != "touchdown" and not envelope[0] <= p["net_yards"] <= envelope[1]):
@@ -1502,7 +1588,10 @@ def check_ledger(result):
         _check_spots(result, possessions, err)
 
     ledger = result.get("play_ledger")
+    clock_legs = has_clock_legs(result)
     if not ledger:
+        if clock_legs:
+            _check_clock_legs(result, possessions, None, err)
         return errors
 
     previous = None
@@ -1629,6 +1718,8 @@ def check_ledger(result):
                 break
     if spots:
         _check_spot_ledger(result, possessions, rows_by_drive, kicks, err)
+    if clock_legs:
+        _check_clock_legs(result, possessions, rows_by_drive, err)
     return errors
 
 

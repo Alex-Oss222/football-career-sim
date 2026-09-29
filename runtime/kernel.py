@@ -288,7 +288,11 @@ def resolve_game(
                    "prefix_order_repaired": 0, "prefix_order_failed": 0,
                    # Kernel 2014.1: timeout-ladder levels and the end-of-half fit fallback.
                    "timeout_level_0": 0, "timeout_level_1": 0, "timeout_level_2": 0,
-                   "timeout_level_3": 0, "h1_fit_fallback": 0, "timeout_tuple_widened": 0}
+                   "timeout_level_3": 0, "h1_fit_fallback": 0, "timeout_tuple_widened": 0,
+                   # Kernel 2014.4: no time-feasible first-half final for the
+                   # window, a late/overtime fit drive, a zero-play clock
+                   # expiry inside the allowance.
+                   "h1_final_infeasible": 0, "fallback_fit_drive": 0, "clock_expiry_zero": 0}
     # Kernel 2014.1: charged timeouts left, per club; reset at each half and
     # at the start of overtime (and every two postseason overtime periods).
     timeouts = {home.team_id: RULES.timeouts_per_half, away.team_id: RULES.timeouts_per_half}
@@ -566,6 +570,7 @@ def resolve_game(
             start_spot=spot,
             start_clock=start_clock,
             end_clock=end_clock,
+            own_seconds=drawn.own_seconds,
             overtime=ot_label if half == "OT" else False,
             punt_record=punt_record,
             turnover_record=turnover_record,
@@ -619,6 +624,11 @@ def resolve_game(
             # offense used, defence used] and the timeout-ladder level.
             "timeouts": [timeouts_before[0], timeouts_before[1], timeouts_used[0], timeouts_used[1]],
             "timeout_level": drawn.timeout_level,
+            # Kernel 2014.4 (append-only): the drive's own scaled seconds and
+            # the clock-expiry leg after its last snap (seconds = own +
+            # expiry; expiry is 0 unless the drive ends its window).
+            "own_seconds": drawn.own_seconds,
+            "expiry_seconds": drawn.expiry_seconds,
         }
         if half == "OT":
             record["period"] = _period_clock(start_clock, overtime=ot_label)[0]
