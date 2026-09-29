@@ -118,6 +118,14 @@ def tiebreak_notes(result):
     return lines
 
 
+def tiebreak_basis(year):
+    if year == 2013:
+        return "Tiebreakers follow the 2013 NFL procedure in Document 2 section 5.3; "
+    # Only the 2013 procedure is verified; a later season says so.
+    return ("Tiebreakers follow the 2013 NFL procedure in Document 2 section 5.3, not yet "
+            "re-verified for %d; " % year)
+
+
 def render(year, receipts, through_week=None):
     if through_week is not None:
         receipts = [r for r in receipts if int(r["week"]) <= through_week]
@@ -132,8 +140,8 @@ def render(year, receipts, through_week=None):
         "`python scripts/render_standings.py %d`. Past weeks: add `--through-week N`." % year, "",
         "Pct counts a tie as half a win. SOV is strength of victory, the combined winning "
         "percentage of the clubs a team has beaten; SOS is strength of schedule, the combined "
-        "winning percentage of all its opponents. Tiebreakers follow the 2013 NFL procedure in "
-        "Document 2 section 5.3; a tie that survives to the coin toss is reported, never tossed.", "",
+        "winning percentage of all its opponents. " + tiebreak_basis(year) + "a tie that survives "
+        "to the coin toss is reported, never tossed.", "",
     ]
     lines += division_tables(result) + conference_tables(result) + league_table(result) + tiebreak_notes(result)
     return "\n".join(lines)
@@ -143,9 +151,13 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("year", type=int)
     parser.add_argument("--through-week", type=int)
+    parser.add_argument("--root", type=Path, default=ROOT,
+                        help="Workspace root (default: this checkout); tests use an isolated one")
     args = parser.parse_args()
-    career = ROOT / "career" / str(args.year)
-    receipts = load_receipts(career / "stats" / "game_receipts")
+    from runtime.season import season_paths
+    paths = season_paths(args.year, args.root)
+    career = paths.career
+    receipts = load_receipts(paths.receipts_dir("regular"))
     text = render(args.year, receipts, args.through_week)
     if args.through_week is not None:
         print(text)

@@ -153,8 +153,9 @@ def main():
     parser.add_argument(
         "--roster",
         type=Path,
-        default=ROOT / "career/2013/roster.md",
+        help="Roster owner (default: career/<season>/roster.md; no fallback to another season)",
     )
+    parser.add_argument("--season", type=int, default=2013, help="Season of the package (default 2013)")
     parser.add_argument("--protagonist", default="Jacksonville Jaguars")
     parser.add_argument(
         "--expected-games",
@@ -164,6 +165,9 @@ def main():
     args = parser.parse_args()
 
     data = json.loads(args.inputs.read_text(encoding="utf-8"))
+    if args.roster is None:
+        from runtime.season import season_paths
+        args.roster = season_paths(args.season).require("roster")
     controlled = controlled_players_from_roster(args.roster)
     errors = check_inputs(
         data, controlled, args.protagonist, expected_games=args.expected_games

@@ -90,19 +90,28 @@ def _home_and_away(matchup, team_stats):
 
 
 def make_receipt(result, *, week, matchup, coverage="complete", detail="full",
-                 player_attribution_incomplete_teams=()):
+                 player_attribution_incomplete_teams=(), season=None):
     """Return a public receipt for one already-closed game.
 
     Both details carry the game's public injury report. full keeps the snap
     ledger and all player counters. compact_stats keeps
     every nonzero generated player/team statistic and every game-day player
     row, but omits snap rows, named-call data and zero-valued player fields.
+
+    The receipt's season is its event ID's prefix (no separate field, so the
+    closed 2013 receipts keep their schema). With `season`, an event from
+    any other season is refused, so no result is written into the wrong
+    season's receipt directory.
     """
     if not result.get("terminated"):
         raise ValueError("only terminated games may enter the statbook")
     event_id = result.get("event_id")
     if not isinstance(event_id, str) or not event_id:
         raise ValueError("closed game requires event_id")
+    if season is not None:
+        from .season import season_of_event
+        if season_of_event(event_id) != season:
+            raise ValueError("event %s is not a %d event" % (event_id, season))
     if not isinstance(week, int) or week < 1:
         raise ValueError("week must be a positive integer")
     if coverage not in {"complete", "legacy_partial"}:

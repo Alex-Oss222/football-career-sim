@@ -7,6 +7,10 @@ follow the NFL tiebreaking-procedure text. A step that cannot separate the
 clubs passes to the next step; the final step, a coin toss, is never
 simulated: the clubs stay ordered alphabetically and are reported as an
 unbroken tie.
+
+Receipts of one season are passed in (career/{season}/stats/game_receipts);
+the 2013 order is the one verified here, and a later season's standings
+page says so until its own procedure is verified.
 """
 from dataclasses import dataclass, field
 
@@ -48,6 +52,9 @@ def games_from_receipts(receipts):
     games = []
     for receipt in receipts:
         home, away = receipt["home"], receipt["away"]
+        if receipt.get("game_type") == "preseason":
+            # Preseason receipts live in preseason_receipts and never count.
+            raise ValueError("preseason receipt %s cannot enter standings" % receipt.get("event_id"))
         for team in (home, away):
             if team not in DIVISION_OF:
                 raise ValueError("unknown club in receipt %s: %s" % (receipt.get("event_id"), team))
