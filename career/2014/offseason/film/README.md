@@ -34,6 +34,8 @@ The queue starts with **historical delivery unverified**. Check for an actual re
 
 ## Distribution and phase handoff
 
+The [2014 historical check](../../../../library/2014_offseason_phase_rules_verification.md) confirms the pre-program prohibition on coach-led football meetings, film and playbook study. It does not establish permission for the particular pending passive-distribution process. Unless Caldwell verifies an earlier lawful route, [the phase package](../phase_plan_decisions.md) recommends beginning the pending delivery/discussion with the April 21 program. Lawful Phase One classroom instruction remains distinct from restricted on-field coaching.
+
 Use the player's documented contact preference where one exists, after the relevant gate is resolved. This repository update sends no messages to players. When an in-simulation delivery actually occurs, record it in the [delivery log](delivery_log.md), link the event's primary output/history record and update the queue pointer in the same change. Store no private contact details, medical diagnosis or support disclosure in public packets.
 
 At the next permitted teaching block, the coach checks the actual football job. Carry unobserved, medically restricted, corrected-on-repeat and later-retained work separately into the next phase. An evaluation that is parked must have a stated reason and next review opportunity communicated through a permitted channel; it does not silently disappear.

@@ -30,6 +30,6 @@ Most missing contracts can stay unresolved until a player matters. A seasons-of-
 
 Never add real 2014 game results, statistics, injuries, suspensions, awards or standings. Never import real coaching changes or real Jaguars transactions. Source roster status is historical evidence, not branch availability. Jacksonville has no generated club file.
 
-The database build does not authorize editing `foundation/`, `state/`, the ledger or statistics. Those records change only through the normal event workflow. The calendar remains February 2, 2014.
+The database build does not authorize editing `foundation/`, `state/`, the ledger or statistics. Those records change only through the normal event workflow. February 2, 2014 is this research database's baseline, not the current career clock; the current date belongs to [Document 5](../../../../state/05_Current_Season_State.md).
 
 Rebuild with `python scripts/research/build_league_player_database.py`; verify with the same command plus `--check`. The legacy exporter is disabled. Generated club rows are alphabetized for lookup, while their old Week 1 slot labels remain reference information, not a new depth order.

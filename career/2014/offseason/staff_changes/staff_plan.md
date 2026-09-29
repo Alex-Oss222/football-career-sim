@@ -2,6 +2,8 @@
 
 **Outcome (recorded separately):** the search closed with Mike Westhoff's appointment on February 11, 2014 (ledger Entry 84; [hires.md](hires.md)). The plan below is preserved as written before the search.
 
+**Remaining phase decisions:** use [Stone's phase decision package](../phase_plan_decisions.md), reviewed against Entry 86, for the proposed spring dates, install scope and emergency-staff handoffs. The old vacancy and interim-coverage statements below describe the pre-hire search only. Proposed emergency assignments have not been adopted.
+
 **Status:** Bobby April selected by Stone on September 28, 2026 for the special-teams search at the February 2, 2014 planning checkpoint. The special teams coordinator job is vacant following Alan Lowry's January 12 departure for Atlanta (ledger Entry 75). Stone's selection authorizes the April-specific search within the terms below, subject to branch employment/rights, permission and funded-budget checks; it does not appoint him. Stone selects candidates and staff assignments under Document 3 row 2; a target, interview or proposed offer is not an appointment.
 **As of:** February 2, 2014. Entry 77 remains the latest closed staff reconciliation. The selection below changes planning instructions only; no approach or hiring result has been resolved and the clock has not advanced.
 
