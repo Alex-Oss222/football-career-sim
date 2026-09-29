@@ -267,11 +267,11 @@ The $51,675 old Bray bonus is counted separately from his new $420,000 salary. N
 | 2014 | 1 | Jacksonville Jaguars | 26 | 26 |
 | 2014 | 2 | Arizona Cardinals | 6 | 38 |
 | 2014 | 3 | Jacksonville Jaguars | 26 | 90 |
-| 2014 | 4 | Jacksonville Jaguars | 26 | 134 |
-| 2014 | 5 | Detroit Lions | 11 | 157 |
-| 2014 | 5 | Jacksonville Jaguars | 26 | 172 |
-| 2014 | 6 | Jacksonville Jaguars | 26 | 210 |
-| 2014 | 7 | Jacksonville Jaguars | 26 | 247 |
+| 2014 | 4 | Jacksonville Jaguars | 26 | 129 |
+| 2014 | 5 | Detroit Lions | 11 | 153 |
+| 2014 | 5 | Jacksonville Jaguars | 26 | 168 |
+| 2014 | 6 | Jacksonville Jaguars | 26 | 205 |
+| 2014 | 7 | Jacksonville Jaguars | 26 | 241 |
 
 These are selection rights. Add each rookie’s full contract schedule after the actual selection and signing. No future contract dollars are booked against an unselected player. [The draft ownership record](../2014/draft/draft_order.md) controls the picks. Overall numbers include the 32 compensatory picks announced March 24, 2014 (ledger Entry 100); Jacksonville received none.
 

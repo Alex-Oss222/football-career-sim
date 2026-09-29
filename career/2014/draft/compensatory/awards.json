@@ -2,14 +2,14 @@
  "schema_version": 1,
  "announcement_date": "2014-03-24",
  "qualifying_free_agency_year": 2013,
- "method_sha256": "400d0df849740316f41ddda23a588edf63821a3744ae88dc6b927707df0dbf93",
- "inputs_sha256": "982927c85cdcd8087e97d4e329f1a7c0f66623760d2d8b6201254f75adb1db1a",
+ "method_sha256": "6e0a119f4b50c0265d81a168067298936b2db8c48c770e268fbb62f9a25c9fdc",
+ "inputs_sha256": "3e38bb311e643b72fc434fc0e5c17d41fead193b70c14616dc93cd6c72a1dca1",
  "round_counts": {
-  "3": 12,
-  "4": 6,
-  "5": 6,
-  "6": 5,
-  "7": 3
+  "3": 7,
+  "4": 7,
+  "5": 5,
+  "6": 4,
+  "7": 9
  },
  "picks": [
   {
@@ -17,6 +17,7 @@
    "round": 3,
    "for_player": "Mike Wallace",
    "apy": 12000000,
+   "value_points": 98.04,
    "slot": 21,
    "kind": "formula",
    "overall": 97
@@ -26,6 +27,7 @@
    "round": 3,
    "for_player": "Greg Jennings",
    "apy": 9000000,
+   "value_points": 95.73,
    "slot": 15,
    "kind": "formula",
    "overall": 98
@@ -35,6 +37,7 @@
    "round": 3,
    "for_player": "Dashon Goldson",
    "apy": 8250000,
+   "value_points": 94.04,
    "slot": 1,
    "kind": "formula",
    "overall": 99
@@ -44,6 +47,7 @@
    "round": 3,
    "for_player": "Paul Kruger",
    "apy": 8100000,
+   "value_points": 93.7,
    "slot": 2,
    "kind": "formula",
    "overall": 100
@@ -53,6 +57,7 @@
    "round": 3,
    "for_player": "Jermon Bushrod",
    "apy": 7193000,
+   "value_points": 91.3,
    "slot": 24,
    "kind": "formula",
    "overall": 101
@@ -62,6 +67,7 @@
    "round": 3,
    "for_player": "Dannell Ellerbe",
    "apy": 7000000,
+   "value_points": 90.52,
    "slot": 2,
    "kind": "formula",
    "overall": 102
@@ -69,234 +75,260 @@
   {
    "club": "Detroit Lions",
    "round": 3,
-   "for_player": "Cliff Avril",
-   "apy": 6500000,
+   "for_player": "Gosder Cherilus",
+   "apy": 7000000,
+   "value_points": 90.52,
    "slot": 9,
    "kind": "formula",
    "overall": 103
   },
   {
    "club": "Houston Texans",
-   "round": 3,
+   "round": 4,
    "for_player": "Connor Barwin",
    "apy": 6000000,
+   "value_points": 87.81,
    "slot": 4,
    "kind": "formula",
-   "overall": 104
-  },
-  {
-   "club": "New England Patriots",
-   "round": 3,
-   "for_player": "Wes Welker",
-   "apy": 6000000,
-   "slot": 17,
-   "kind": "formula",
-   "overall": 105
+   "overall": 136
   },
   {
    "club": "New York Jets",
-   "round": 3,
+   "round": 4,
    "for_player": "LaRon Landry",
    "apy": 6000000,
+   "value_points": 87.81,
    "slot": 28,
    "kind": "formula",
-   "overall": 106
-  },
-  {
-   "club": "New York Jets",
-   "round": 3,
-   "for_player": "Mike Devito",
-   "apy": 4200000,
-   "slot": 28,
-   "kind": "formula",
-   "overall": 107
-  },
-  {
-   "club": "Miami Dolphins",
-   "round": 3,
-   "for_player": "Reggie Bush",
-   "apy": 4000000,
-   "slot": 12,
-   "kind": "formula",
-   "overall": 108
+   "overall": 137
   },
   {
    "club": "Baltimore Ravens",
    "round": 4,
    "for_player": "Cary Williams",
    "apy": 5666667,
+   "value_points": 86.76,
    "slot": 2,
    "kind": "formula",
-   "overall": 141
+   "overall": 138
   },
   {
    "club": "New York Giants",
    "round": 4,
    "for_player": "Martellus Bennett",
    "apy": 5100000,
+   "value_points": 84.63,
    "slot": 16,
    "kind": "formula",
-   "overall": 142
+   "overall": 139
   },
   {
    "club": "Pittsburgh Steelers",
    "round": 4,
    "for_player": "Keenan Lewis",
    "apy": 5100000,
+   "value_points": 84.63,
    "slot": 21,
    "kind": "formula",
-   "overall": 143
+   "overall": 140
+  },
+  {
+   "club": "New York Jets",
+   "round": 4,
+   "for_player": "Mike Devito",
+   "apy": 4200000,
+   "value_points": 84.28,
+   "slot": 28,
+   "kind": "formula",
+   "overall": 141
   },
   {
    "club": "Houston Texans",
    "round": 4,
    "for_player": "Glover Quin",
    "apy": 4700000,
+   "value_points": 83.01,
    "slot": 4,
    "kind": "formula",
-   "overall": 144
-  },
-  {
-   "club": "Houston Texans",
-   "round": 4,
-   "for_player": "James Casey",
-   "apy": 4000000,
-   "slot": 4,
-   "kind": "formula",
-   "overall": 145
+   "overall": 142
   },
   {
    "club": "Green Bay Packers",
-   "round": 4,
+   "round": 5,
    "for_player": "Erik Walden",
    "apy": 4000000,
+   "value_points": 80.5,
    "slot": 15,
    "kind": "formula",
-   "overall": 146
+   "overall": 175
   },
   {
    "club": "New England Patriots",
    "round": 5,
-   "for_player": "Patrick Chung",
-   "apy": 3333333,
+   "for_player": "Donald Thomas",
+   "apy": 3500000,
+   "value_points": 77.76,
    "slot": 17,
    "kind": "formula",
-   "overall": 179
+   "overall": 176
   },
   {
    "club": "New York Jets",
    "round": 5,
    "for_player": "Shonn Greene",
    "apy": 3333333,
+   "value_points": 76.17,
    "slot": 28,
    "kind": "formula",
-   "overall": 180
+   "overall": 177
   },
   {
    "club": "St. Louis Rams",
    "round": 5,
    "for_player": "Brandon Gibson",
    "apy": 3260000,
+   "value_points": 75.73,
    "slot": 27,
    "kind": "formula",
-   "overall": 181
+   "overall": 178
   },
   {
-   "club": "Cincinnati Bengals",
+   "club": "Miami Dolphins",
    "round": 5,
-   "for_player": "Manny Lawson",
-   "apy": 3000000,
-   "slot": 3,
+   "for_player": "Davone Bess",
+   "apy": 2939000,
+   "value_points": 74.94,
+   "slot": 12,
    "kind": "formula",
-   "overall": 182
-  },
-  {
-   "club": "St. Louis Rams",
-   "round": 5,
-   "for_player": "Bradley Fletcher",
-   "apy": 2625000,
-   "slot": 27,
-   "kind": "formula",
-   "overall": 183
-  },
-  {
-   "club": "Pittsburgh Steelers",
-   "round": 5,
-   "for_player": "Rashard Mendenhall",
-   "apy": 2500000,
-   "slot": 21,
-   "kind": "formula",
-   "overall": 184
+   "overall": 179
   },
   {
    "club": "Cincinnati Bengals",
    "round": 6,
-   "for_player": "Pat Sims",
-   "apy": 1750000,
+   "for_player": "Manny Lawson",
+   "apy": 3000000,
+   "value_points": 72.68,
    "slot": 3,
    "kind": "formula",
-   "overall": 217
+   "overall": 212
+  },
+  {
+   "club": "St. Louis Rams",
+   "round": 6,
+   "for_player": "Bradley Fletcher",
+   "apy": 2625000,
+   "value_points": 69.97,
+   "slot": 27,
+   "kind": "formula",
+   "overall": 213
+  },
+  {
+   "club": "Pittsburgh Steelers",
+   "round": 6,
+   "for_player": "Rashard Mendenhall",
+   "apy": 2500000,
+   "value_points": 69.03,
+   "slot": 21,
+   "kind": "formula",
+   "overall": 214
   },
   {
    "club": "New England Patriots",
    "round": 6,
-   "for_player": "Danny Woodhead",
-   "apy": 1750000,
+   "for_player": "Patrick Chung",
+   "apy": 3333333,
+   "value_points": 68.17,
    "slot": 17,
    "kind": "formula",
-   "overall": 218
-  },
-  {
-   "club": "Washington Redskins",
-   "round": 6,
-   "for_player": "Lorenzo Alexander",
-   "apy": 1540000,
-   "slot": 13,
-   "kind": "formula",
-   "overall": 219
+   "overall": 215
   },
   {
    "club": "Cincinnati Bengals",
-   "round": 6,
-   "for_player": "Dan Skuta",
-   "apy": 1500000,
+   "round": 7,
+   "for_player": "Pat Sims",
+   "apy": 1750000,
+   "value_points": 62.19,
    "slot": 3,
    "kind": "formula",
-   "overall": 220
+   "overall": 248
+  },
+  {
+   "club": "New England Patriots",
+   "round": 7,
+   "for_player": "Danny Woodhead",
+   "apy": 1750000,
+   "value_points": 62.19,
+   "slot": 17,
+   "kind": "formula",
+   "overall": 249
+  },
+  {
+   "club": "Washington Redskins",
+   "round": 7,
+   "for_player": "Lorenzo Alexander",
+   "apy": 1540000,
+   "value_points": 61.31,
+   "slot": 13,
+   "kind": "formula",
+   "overall": 250
+  },
+  {
+   "club": "Cincinnati Bengals",
+   "round": 7,
+   "for_player": "Dan Skuta",
+   "apy": 1500000,
+   "value_points": 60.97,
+   "slot": 3,
+   "kind": "formula",
+   "overall": 251
   },
   {
    "club": "New Orleans Saints",
-   "round": 6,
+   "round": 7,
    "for_player": "Jonathan Casillas",
    "apy": 1400000,
+   "value_points": 60.56,
    "slot": 24,
    "kind": "formula",
-   "overall": 221
+   "overall": 252
   },
   {
    "club": "San Francisco 49ers",
    "round": 7,
    "for_player": null,
    "apy": null,
+   "value_points": null,
    "slot": 1,
    "kind": "fill",
-   "overall": 254
+   "overall": 253
   },
   {
    "club": "Baltimore Ravens",
    "round": 7,
    "for_player": null,
    "apy": null,
+   "value_points": null,
    "slot": 2,
    "kind": "fill",
-   "overall": 255
+   "overall": 254
   },
   {
    "club": "Cincinnati Bengals",
    "round": 7,
    "for_player": null,
    "apy": null,
+   "value_points": null,
    "slot": 3,
+   "kind": "fill",
+   "overall": 255
+  },
+  {
+   "club": "Houston Texans",
+   "round": 7,
+   "for_player": null,
+   "apy": null,
+   "value_points": null,
+   "slot": 4,
    "kind": "fill",
    "overall": 256
   }
@@ -362,8 +394,7 @@
    "losses": [
     "Connor Barwin",
     "Glover Quin",
-    "James Casey",
-    "Alan Ball"
+    "James Casey"
    ],
    "gains": [
     "Shane Lechler"
@@ -371,10 +402,10 @@
    "cancellations": [
     {
      "gain": "Shane Lechler",
-     "cancels": "Alan Ball"
+     "cancels": "James Casey"
     }
    ],
-   "net_loss": 3,
+   "net_loss": 2,
    "awarded": 3
   },
   {
@@ -406,8 +437,7 @@
    "gains": [
     "Jerraud Powers",
     "Rashard Mendenhall",
-    "Lorenzo Alexander",
-    "Matt Shaughnessy"
+    "Lorenzo Alexander"
    ],
    "cancellations": [
     {
@@ -421,13 +451,9 @@
     {
      "gain": "Lorenzo Alexander",
      "cancels": null
-    },
-    {
-     "gain": "Matt Shaughnessy",
-     "cancels": null
     }
    ],
-   "net_loss": -4,
+   "net_loss": -3,
    "awarded": 0
   },
   {
@@ -516,7 +542,7 @@
    "cancellations": [
     {
      "gain": "Reggie Bush",
-     "cancels": "Gosder Cherilus"
+     "cancels": "Cliff Avril"
     },
     {
      "gain": "Glover Quin",
@@ -559,39 +585,38 @@
     "Desmond Bryant",
     "Philip Wheeler",
     "Brandon Myers",
-    "Shane Lechler",
-    "Matt Shaughnessy"
+    "Shane Lechler"
    ],
    "gains": [
-    "Vance Walker",
     "Nick Roach",
+    "Vance Walker",
     "Kaluka Maiava",
     "Pat Sims",
     "Tracy Porter"
    ],
    "cancellations": [
     {
-     "gain": "Vance Walker",
-     "cancels": "Philip Wheeler"
-    },
-    {
      "gain": "Nick Roach",
      "cancels": "Brandon Myers"
     },
     {
-     "gain": "Kaluka Maiava",
+     "gain": "Vance Walker",
      "cancels": "Shane Lechler"
     },
     {
+     "gain": "Kaluka Maiava",
+     "cancels": "Philip Wheeler"
+    },
+    {
      "gain": "Pat Sims",
-     "cancels": "Matt Shaughnessy"
+     "cancels": "Desmond Bryant"
     },
     {
      "gain": "Tracy Porter",
-     "cancels": "Desmond Bryant"
+     "cancels": null
     }
    ],
-   "net_loss": 0,
+   "net_loss": -1,
    "awarded": 0
   },
   {
@@ -620,11 +645,11 @@
     },
     {
      "gain": "Philip Wheeler",
-     "cancels": "Anthony Fasano"
+     "cancels": "Reggie Bush"
     },
     {
      "gain": "Brandon Gibson",
-     "cancels": "Davone Bess"
+     "cancels": "Anthony Fasano"
     }
    ],
    "net_loss": 1,
@@ -722,7 +747,7 @@
    "cancellations": [
     {
      "gain": "Danny Amendola",
-     "cancels": "Donald Thomas"
+     "cancels": "Wes Welker"
     }
    ],
    "net_loss": 3,
@@ -741,11 +766,11 @@
    "cancellations": [
     {
      "gain": "Osi Umenyiora",
-     "cancels": "Brent Grimes"
+     "cancels": "Vance Walker"
     },
     {
      "gain": "Steven Jackson",
-     "cancels": "Vance Walker"
+     "cancels": "Brent Grimes"
     }
    ],
    "net_loss": 0,
@@ -820,8 +845,7 @@
   {
    "club": "Kansas City Chiefs",
    "losses": [
-    "Glenn Dorsey",
-    "Ropati Pitoitua"
+    "Glenn Dorsey"
    ],
    "gains": [
     "Sean Smith",
@@ -837,7 +861,7 @@
     },
     {
      "gain": "Mike Devito",
-     "cancels": "Ropati Pitoitua"
+     "cancels": null
     },
     {
      "gain": "Anthony Fasano",
@@ -852,7 +876,7 @@
      "cancels": null
     }
    ],
-   "net_loss": -3,
+   "net_loss": -4,
    "awarded": 0
   },
   {
@@ -921,8 +945,7 @@
    "gains": [
     "Brent Grimes",
     "Roy Miller",
-    "Sen'Derrick Marks",
-    "Alan Ball"
+    "Sen'Derrick Marks"
    ],
    "cancellations": [
     {
@@ -936,13 +959,9 @@
     {
      "gain": "Sen'Derrick Marks",
      "cancels": null
-    },
-    {
-     "gain": "Alan Ball",
-     "cancels": null
     }
    ],
-   "net_loss": -2,
+   "net_loss": -1,
    "awarded": 0
   },
   {
@@ -993,8 +1012,8 @@
     "Cary Williams",
     "James Casey",
     "Isaac Sopoaga",
-    "Patrick Chung",
-    "Bradley Fletcher"
+    "Bradley Fletcher",
+    "Patrick Chung"
    ],
    "cancellations": [
     {
@@ -1014,11 +1033,11 @@
      "cancels": null
     },
     {
-     "gain": "Patrick Chung",
+     "gain": "Bradley Fletcher",
      "cancels": null
     },
     {
-     "gain": "Bradley Fletcher",
+     "gain": "Patrick Chung",
      "cancels": null
     }
    ],
@@ -1034,8 +1053,7 @@
    "gains": [
     "Andy Levitre",
     "Sammie Lee Hill",
-    "Shonn Greene",
-    "Ropati Pitoitua"
+    "Shonn Greene"
    ],
    "cancellations": [
     {
@@ -1049,13 +1067,9 @@
     {
      "gain": "Shonn Greene",
      "cancels": null
-    },
-    {
-     "gain": "Ropati Pitoitua",
-     "cancels": null
     }
    ],
-   "net_loss": -2,
+   "net_loss": -1,
    "awarded": 0
   },
   {
@@ -1109,11 +1123,14 @@
    "value": 60000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Steelers 2012, 1 years",
+   "salary_percentile": 98.04,
    "old_club_name": "Pittsburgh Steelers",
    "new_club_name": "Miami Dolphins",
-   "apy_round": 3,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 98.04,
    "value_round": 3
   },
   {
@@ -1127,11 +1144,14 @@
    "value": 45000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Packers 2009, 3 years",
+   "salary_percentile": 95.73,
    "old_club_name": "Green Bay Packers",
    "new_club_name": "Minnesota Vikings",
-   "apy_round": 3,
    "branch_games_2013": 19,
-   "branch_honour_2013": false,
+   "club_games_2013": 19,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 95.73,
    "value_round": 3
   },
   {
@@ -1145,11 +1165,14 @@
    "value": 34000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Dolphins 2008, 5 years",
+   "salary_percentile": 94.79,
    "old_club_name": "Miami Dolphins",
    "new_club_name": "St. Louis Rams",
-   "apy_round": 3,
    "branch_games_2013": 17,
-   "branch_honour_2013": false,
+   "club_games_2013": 17,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 94.79,
    "value_round": 3
   },
   {
@@ -1163,11 +1186,14 @@
    "value": 41000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "49ers 2012, 1 years",
+   "salary_percentile": 94.04,
    "old_club_name": "San Francisco 49ers",
    "new_club_name": "Tampa Bay Buccaneers",
-   "apy_round": 3,
    "branch_games_2013": 17,
-   "branch_honour_2013": false,
+   "club_games_2013": 17,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 94.04,
    "value_round": 3
   },
   {
@@ -1181,11 +1207,14 @@
    "value": 40500000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Ravens 2009, 4 years",
+   "salary_percentile": 93.7,
    "old_club_name": "Baltimore Ravens",
    "new_club_name": "Cleveland Browns",
-   "apy_round": 3,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 93.7,
    "value_round": 3
   },
   {
@@ -1199,11 +1228,14 @@
    "value": 46800000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Bills 2009, 4 years",
+   "salary_percentile": 92.89,
    "old_club_name": "Buffalo Bills",
    "new_club_name": "Tennessee Titans",
-   "apy_round": 3,
    "branch_games_2013": 18,
-   "branch_honour_2013": false,
+   "club_games_2013": 18,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 92.89,
    "value_round": 3
   },
   {
@@ -1217,11 +1249,14 @@
    "value": 35965000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Saints 2011, 2 years",
+   "salary_percentile": 91.3,
    "old_club_name": "New Orleans Saints",
    "new_club_name": "Chicago Bears",
-   "apy_round": 3,
    "branch_games_2013": 13,
-   "branch_honour_2013": false,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 91.3,
    "value_round": 3
   },
   {
@@ -1235,11 +1270,14 @@
    "value": 35100000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Titans 2009, 4 years",
+   "salary_percentile": 91.1,
    "old_club_name": "Tennessee Titans",
    "new_club_name": "St. Louis Rams",
-   "apy_round": 3,
    "branch_games_2013": 17,
-   "branch_honour_2013": false,
+   "club_games_2013": 17,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 91.1,
    "value_round": 3
   },
   {
@@ -1253,11 +1291,14 @@
    "value": 35000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Ravens 2012, 1 years",
+   "salary_percentile": 90.52,
    "old_club_name": "Baltimore Ravens",
    "new_club_name": "Miami Dolphins",
-   "apy_round": 3,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 90.52,
    "value_round": 3
   },
   {
@@ -1271,11 +1312,14 @@
    "value": 35000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Lions 2008, 5 years",
+   "salary_percentile": 90.52,
    "old_club_name": "Detroit Lions",
    "new_club_name": "Indianapolis Colts",
-   "apy_round": 3,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 90.52,
    "value_round": 3
   },
   {
@@ -1289,12 +1333,15 @@
    "value": 34000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Raiders 2012, 1 years",
+   "salary_percentile": 89.74,
    "old_club_name": "Oakland Raiders",
    "new_club_name": "Cleveland Browns",
-   "apy_round": 3,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 3
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 89.74,
+   "value_round": 4
   },
   {
    "player": "Cliff Avril",
@@ -1307,66 +1354,15 @@
    "value": 13000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Lions 2012, 1 years",
+   "salary_percentile": 89.23,
    "old_club_name": "Detroit Lions",
    "new_club_name": "Seattle Seahawks",
-   "apy_round": 3,
    "branch_games_2013": 15,
-   "branch_honour_2013": false,
-   "value_round": 3
-  },
-  {
-   "player": "Connor Barwin",
-   "position": "OLB",
-   "old_club": "HOU",
-   "new_club": "PHI",
-   "accrued_seasons_after_2012": 4,
-   "apy": 6000000,
-   "years": 6,
-   "value": 36000000,
-   "basis": "Over The Cap via nflverse",
-   "prior_contract": "Texans 2009, 4 years",
-   "old_club_name": "Houston Texans",
-   "new_club_name": "Philadelphia Eagles",
-   "apy_round": 3,
-   "branch_games_2013": 19,
-   "branch_honour_2013": false,
-   "value_round": 3
-  },
-  {
-   "player": "LaRon Landry",
-   "position": "FS",
-   "old_club": "NYJ",
-   "new_club": "IND",
-   "accrued_seasons_after_2012": 6,
-   "apy": 6000000,
-   "years": 4,
-   "value": 24000000,
-   "basis": "Over The Cap via nflverse",
-   "prior_contract": "Jets 2012, 1 years",
-   "old_club_name": "New York Jets",
-   "new_club_name": "Indianapolis Colts",
-   "apy_round": 3,
-   "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 3
-  },
-  {
-   "player": "Wes Welker",
-   "position": "WR",
-   "old_club": "NE",
-   "new_club": "DEN",
-   "accrued_seasons_after_2012": 9,
-   "apy": 6000000,
-   "years": 2,
-   "value": 12000000,
-   "basis": "Over The Cap via nflverse",
-   "prior_contract": "Patriots 2012, 1 years",
-   "old_club_name": "New England Patriots",
-   "new_club_name": "Denver Broncos",
-   "apy_round": 3,
-   "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 3
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 89.23,
+   "value_round": 4
   },
   {
    "player": "Sean Smith",
@@ -1379,48 +1375,78 @@
    "value": 16500000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Dolphins 2009, 4 years",
+   "salary_percentile": 85.95,
    "old_club_name": "Miami Dolphins",
    "new_club_name": "Kansas City Chiefs",
-   "apy_round": 4,
    "branch_games_2013": 17,
-   "branch_honour_2013": true,
-   "value_round": 3
+   "club_games_2013": 17,
+   "playing_time_points": 0,
+   "honours_points": 3,
+   "value_points": 88.95,
+   "value_round": 4
   },
   {
-   "player": "Mike Devito",
-   "position": "DE",
+   "player": "Connor Barwin",
+   "position": "OLB",
+   "old_club": "HOU",
+   "new_club": "PHI",
+   "accrued_seasons_after_2012": 4,
+   "apy": 6000000,
+   "years": 6,
+   "value": 36000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Texans 2009, 4 years",
+   "salary_percentile": 87.81,
+   "old_club_name": "Houston Texans",
+   "new_club_name": "Philadelphia Eagles",
+   "branch_games_2013": 19,
+   "club_games_2013": 19,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 87.81,
+   "value_round": 4
+  },
+  {
+   "player": "LaRon Landry",
+   "position": "FS",
    "old_club": "NYJ",
-   "new_club": "KC",
+   "new_club": "IND",
    "accrued_seasons_after_2012": 6,
-   "apy": 4200000,
-   "years": 3,
-   "value": 12600000,
+   "apy": 6000000,
+   "years": 4,
+   "value": 24000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Jets 2012, 1 years",
+   "salary_percentile": 87.81,
    "old_club_name": "New York Jets",
-   "new_club_name": "Kansas City Chiefs",
-   "apy_round": 4,
-   "branch_games_2013": 17,
-   "branch_honour_2013": true,
-   "value_round": 3
+   "new_club_name": "Indianapolis Colts",
+   "branch_games_2013": 16,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 87.81,
+   "value_round": 4
   },
   {
-   "player": "Reggie Bush",
-   "position": "RB",
-   "old_club": "MIA",
-   "new_club": "DET",
-   "accrued_seasons_after_2012": 7,
-   "apy": 4000000,
-   "years": 4,
-   "value": 16000000,
+   "player": "Wes Welker",
+   "position": "WR",
+   "old_club": "NE",
+   "new_club": "DEN",
+   "accrued_seasons_after_2012": 9,
+   "apy": 6000000,
+   "years": 2,
+   "value": 12000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Dolphins 2011, 2 years",
-   "old_club_name": "Miami Dolphins",
-   "new_club_name": "Detroit Lions",
-   "apy_round": 4,
-   "branch_games_2013": 14,
-   "branch_honour_2013": true,
-   "value_round": 3
+   "prior_contract": "Patriots 2012, 1 years",
+   "salary_percentile": 87.81,
+   "old_club_name": "New England Patriots",
+   "new_club_name": "Denver Broncos",
+   "branch_games_2013": 16,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 87.81,
+   "value_round": 4
   },
   {
    "player": "Louis Vasquez",
@@ -1433,11 +1459,14 @@
    "value": 23500000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Chargers 2009, 4 years",
+   "salary_percentile": 87.37,
    "old_club_name": "San Diego Chargers",
    "new_club_name": "Denver Broncos",
-   "apy_round": 4,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 87.37,
    "value_round": 4
   },
   {
@@ -1451,11 +1480,14 @@
    "value": 28500000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Rams 2012, 1 years",
+   "salary_percentile": 86.93,
    "old_club_name": "St. Louis Rams",
    "new_club_name": "New England Patriots",
-   "apy_round": 4,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 86.93,
    "value_round": 4
   },
   {
@@ -1469,11 +1501,14 @@
    "value": 17000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Ravens 2012, 1 years",
+   "salary_percentile": 86.76,
    "old_club_name": "Baltimore Ravens",
    "new_club_name": "Philadelphia Eagles",
-   "apy_round": 4,
    "branch_games_2013": 19,
-   "branch_honour_2013": false,
+   "club_games_2013": 19,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 86.76,
    "value_round": 4
   },
   {
@@ -1487,11 +1522,14 @@
    "value": 5500000,
    "basis": "Branch contract, career/2013/offseason/free_agency/signings.md",
    "prior_contract": "Expired 2012 contract (unrestricted free agent)",
+   "salary_percentile": 85.95,
    "old_club_name": "Atlanta Falcons",
    "new_club_name": "Jacksonville Jaguars",
-   "apy_round": 4,
    "branch_games_2013": 18,
-   "branch_honour_2013": false,
+   "club_games_2013": 18,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 85.95,
    "value_round": 4
   },
   {
@@ -1505,11 +1543,14 @@
    "value": 22000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "49ers 2009, 4 years",
+   "salary_percentile": 85.95,
    "old_club_name": "San Francisco 49ers",
    "new_club_name": "Indianapolis Colts",
-   "apy_round": 4,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 85.95,
    "value_round": 4
   },
   {
@@ -1523,11 +1564,14 @@
    "value": 25500000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Steelers 2012, 1 years",
+   "salary_percentile": 84.63,
    "old_club_name": "Pittsburgh Steelers",
    "new_club_name": "New Orleans Saints",
-   "apy_round": 4,
    "branch_games_2013": 17,
-   "branch_honour_2013": false,
+   "club_games_2013": 17,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 84.63,
    "value_round": 4
   },
   {
@@ -1541,11 +1585,35 @@
    "value": 20400000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Giants 2012, 1 years",
+   "salary_percentile": 84.63,
    "old_club_name": "New York Giants",
    "new_club_name": "Chicago Bears",
-   "apy_round": 4,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 84.63,
+   "value_round": 4
+  },
+  {
+   "player": "Mike Devito",
+   "position": "DE",
+   "old_club": "NYJ",
+   "new_club": "KC",
+   "accrued_seasons_after_2012": 6,
+   "apy": 4200000,
+   "years": 3,
+   "value": 12600000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Jets 2012, 1 years",
+   "salary_percentile": 81.28,
+   "old_club_name": "New York Jets",
+   "new_club_name": "Kansas City Chiefs",
+   "branch_games_2013": 17,
+   "club_games_2013": 17,
+   "playing_time_points": 0,
+   "honours_points": 3,
+   "value_points": 84.28,
    "value_round": 4
   },
   {
@@ -1559,11 +1627,14 @@
    "value": 20000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Jaguars 2009, 4 years",
+   "salary_percentile": 84.12,
    "old_club_name": "Jacksonville Jaguars",
    "new_club_name": "San Diego Chargers",
-   "apy_round": 4,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 84.12,
    "value_round": 4
   },
   {
@@ -1577,11 +1648,35 @@
    "value": 5000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "ARI/PHI 2008, 5 years",
+   "salary_percentile": 84.12,
    "old_club_name": "Philadelphia Eagles",
    "new_club_name": "Denver Broncos",
-   "apy_round": 4,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 84.12,
+   "value_round": 4
+  },
+  {
+   "player": "Reggie Bush",
+   "position": "RB",
+   "old_club": "MIA",
+   "new_club": "DET",
+   "accrued_seasons_after_2012": 7,
+   "apy": 4000000,
+   "years": 4,
+   "value": 16000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Dolphins 2011, 2 years",
+   "salary_percentile": 80.5,
+   "old_club_name": "Miami Dolphins",
+   "new_club_name": "Detroit Lions",
+   "branch_games_2013": 14,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 3,
+   "value_points": 83.5,
    "value_round": 4
   },
   {
@@ -1595,11 +1690,14 @@
    "value": 4800000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Buccaneers 2012, 1 years",
+   "salary_percentile": 83.34,
    "old_club_name": "Tampa Bay Buccaneers",
    "new_club_name": "Seattle Seahawks",
-   "apy_round": 4,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 83.34,
    "value_round": 4
   },
   {
@@ -1613,11 +1711,14 @@
    "value": 23500000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Texans 2009, 4 years",
+   "salary_percentile": 83.01,
    "old_club_name": "Houston Texans",
    "new_club_name": "Detroit Lions",
-   "apy_round": 4,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 83.01,
    "value_round": 4
   },
   {
@@ -1631,11 +1732,14 @@
    "value": 13200000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Raiders 2012, 1 years",
+   "salary_percentile": 82.02,
    "old_club_name": "Oakland Raiders",
    "new_club_name": "Miami Dolphins",
-   "apy_round": 4,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 82.02,
    "value_round": 4
   },
   {
@@ -1649,12 +1753,15 @@
    "value": 8750000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Colts 2007, 6 years",
+   "salary_percentile": 81.92,
    "old_club_name": "Indianapolis Colts",
    "new_club_name": "San Diego Chargers",
-   "apy_round": 4,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 4
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 81.92,
+   "value_round": 5
   },
   {
    "player": "Osi Umenyiora",
@@ -1667,12 +1774,15 @@
    "value": 8500000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Giants 2012, 1 years",
+   "salary_percentile": 81.45,
    "old_club_name": "New York Giants",
    "new_club_name": "Atlanta Falcons",
-   "apy_round": 4,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 4
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 81.45,
+   "value_round": 5
   },
   {
    "player": "Anthony Fasano",
@@ -1685,12 +1795,15 @@
    "value": 16000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Dolphins 2010, 2 years",
+   "salary_percentile": 80.5,
    "old_club_name": "Miami Dolphins",
    "new_club_name": "Kansas City Chiefs",
-   "apy_round": 4,
    "branch_games_2013": 17,
-   "branch_honour_2013": false,
-   "value_round": 4
+   "club_games_2013": 17,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 80.5,
+   "value_round": 5
   },
   {
    "player": "Erik Walden",
@@ -1703,12 +1816,15 @@
    "value": 16000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Packers 2012, 1 years",
+   "salary_percentile": 80.5,
    "old_club_name": "Green Bay Packers",
    "new_club_name": "Indianapolis Colts",
-   "apy_round": 4,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 4
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 80.5,
+   "value_round": 5
   },
   {
    "player": "James Casey",
@@ -1721,12 +1837,15 @@
    "value": 12000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Texans 2009, 4 years",
+   "salary_percentile": 80.5,
    "old_club_name": "Houston Texans",
    "new_club_name": "Philadelphia Eagles",
-   "apy_round": 4,
    "branch_games_2013": 19,
-   "branch_honour_2013": false,
-   "value_round": 4
+   "club_games_2013": 19,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 80.5,
+   "value_round": 5
   },
   {
    "player": "Steven Jackson",
@@ -1739,12 +1858,15 @@
    "value": 12000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Rams 2008, 5 years",
+   "salary_percentile": 80.5,
    "old_club_name": "St. Louis Rams",
    "new_club_name": "Atlanta Falcons",
-   "apy_round": 4,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 4
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 80.5,
+   "value_round": 5
   },
   {
    "player": "Sammie Lee Hill",
@@ -1757,12 +1879,15 @@
    "value": 11400000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Lions 2012, 1 years",
+   "salary_percentile": 79.69,
    "old_club_name": "Detroit Lions",
    "new_club_name": "Tennessee Titans",
-   "apy_round": 4,
    "branch_games_2013": 18,
-   "branch_honour_2013": false,
-   "value_round": 4
+   "club_games_2013": 18,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 79.69,
+   "value_round": 5
   },
   {
    "player": "Isaac Sopoaga",
@@ -1775,12 +1900,15 @@
    "value": 11000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "49ers 2008, 5 years",
+   "salary_percentile": 79.18,
    "old_club_name": "San Francisco 49ers",
    "new_club_name": "Philadelphia Eagles",
-   "apy_round": 4,
    "branch_games_2013": 19,
-   "branch_honour_2013": false,
-   "value_round": 4
+   "club_games_2013": 19,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 79.18,
+   "value_round": 5
   },
   {
    "player": "Donald Thomas",
@@ -1793,12 +1921,15 @@
    "value": 14000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Patriots 2011, 2 years",
+   "salary_percentile": 77.76,
    "old_club_name": "New England Patriots",
    "new_club_name": "Indianapolis Colts",
-   "apy_round": 4,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 4
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 77.76,
+   "value_round": 5
   },
   {
    "player": "Jerraud Powers",
@@ -1811,48 +1942,15 @@
    "value": 10500000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Colts 2009, 4 years",
+   "salary_percentile": 77.76,
    "old_club_name": "Indianapolis Colts",
    "new_club_name": "Arizona Cardinals",
-   "apy_round": 4,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 4
-  },
-  {
-   "player": "Davone Bess",
-   "position": "WR",
-   "old_club": "MIA",
-   "new_club": "CLE",
-   "accrued_seasons_after_2012": 5,
-   "apy": 2939000,
-   "years": 3,
-   "value": 8817000,
-   "basis": "Over The Cap via nflverse",
-   "prior_contract": "Dolphins 2010, 3 years",
-   "old_club_name": "Miami Dolphins",
-   "new_club_name": "Cleveland Browns",
-   "apy_round": 5,
-   "branch_games_2013": 16,
-   "branch_honour_2013": true,
-   "value_round": 4
-  },
-  {
-   "player": "Vance Walker",
-   "position": "DT",
-   "old_club": "ATL",
-   "new_club": "OAK",
-   "accrued_seasons_after_2012": 4,
-   "apy": 2000000,
-   "years": 1,
-   "value": 2000000,
-   "basis": "Over The Cap via nflverse",
-   "prior_contract": "Falcons 2012, 1 years",
-   "old_club_name": "Atlanta Falcons",
-   "new_club_name": "Oakland Raiders",
-   "apy_round": 5,
-   "branch_games_2013": 16,
-   "branch_honour_2013": true,
-   "value_round": 4
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 77.76,
+   "value_round": 5
   },
   {
    "player": "Chase Daniel",
@@ -1865,29 +1963,14 @@
    "value": 10000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Saints 2012, 1 years",
+   "salary_percentile": 76.17,
    "old_club_name": "New Orleans Saints",
    "new_club_name": "Kansas City Chiefs",
-   "apy_round": 5,
    "branch_games_2013": 17,
-   "branch_honour_2013": false,
-   "value_round": 5
-  },
-  {
-   "player": "Patrick Chung",
-   "position": "FS",
-   "old_club": "NE",
-   "new_club": "PHI",
-   "accrued_seasons_after_2012": 4,
-   "apy": 3333333,
-   "years": 1,
-   "value": 10000000,
-   "basis": "Over The Cap via nflverse",
-   "prior_contract": "Patriots 2009, 4 years",
-   "old_club_name": "New England Patriots",
-   "new_club_name": "Philadelphia Eagles",
-   "apy_round": 5,
-   "branch_games_2013": 8,
-   "branch_honour_2013": false,
+   "club_games_2013": 17,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 76.17,
    "value_round": 5
   },
   {
@@ -1901,11 +1984,14 @@
    "value": 10000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Jets 2009, 4 years",
+   "salary_percentile": 76.17,
    "old_club_name": "New York Jets",
    "new_club_name": "Tennessee Titans",
-   "apy_round": 5,
    "branch_games_2013": 18,
-   "branch_honour_2013": false,
+   "club_games_2013": 18,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 76.17,
    "value_round": 5
   },
   {
@@ -1919,11 +2005,14 @@
    "value": 9780000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "PHI/LAR 2009, 4 years",
+   "salary_percentile": 75.73,
    "old_club_name": "St. Louis Rams",
    "new_club_name": "Miami Dolphins",
-   "apy_round": 5,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 75.73,
    "value_round": 5
   },
   {
@@ -1937,11 +2026,35 @@
    "value": 13000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Bears 2011, 2 years",
+   "salary_percentile": 75.46,
    "old_club_name": "Chicago Bears",
    "new_club_name": "Oakland Raiders",
-   "apy_round": 5,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 75.46,
+   "value_round": 5
+  },
+  {
+   "player": "Davone Bess",
+   "position": "WR",
+   "old_club": "MIA",
+   "new_club": "CLE",
+   "accrued_seasons_after_2012": 5,
+   "apy": 2939000,
+   "years": 3,
+   "value": 8817000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Dolphins 2010, 3 years",
+   "salary_percentile": 71.94,
+   "old_club_name": "Miami Dolphins",
+   "new_club_name": "Cleveland Browns",
+   "branch_games_2013": 16,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 3,
+   "value_points": 74.94,
    "value_round": 5
   },
   {
@@ -1955,11 +2068,14 @@
    "value": 9500000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Seahawks 2012, 1 years",
+   "salary_percentile": 74.44,
    "old_club_name": "Seattle Seahawks",
    "new_club_name": "Detroit Lions",
-   "apy_round": 5,
    "branch_games_2013": 15,
-   "branch_honour_2013": false,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 74.44,
    "value_round": 5
   },
   {
@@ -1973,12 +2089,15 @@
    "value": 9300000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Seahawks 2011, 2 years",
+   "salary_percentile": 73.87,
    "old_club_name": "Seattle Seahawks",
    "new_club_name": "Buffalo Bills",
-   "apy_round": 5,
    "branch_games_2013": 20,
-   "branch_honour_2013": false,
-   "value_round": 5
+   "club_games_2013": 20,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 73.87,
+   "value_round": 6
   },
   {
    "player": "Glenn Dorsey",
@@ -1991,12 +2110,15 @@
    "value": 6000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Chiefs 2008, 5 years",
+   "salary_percentile": 72.68,
    "old_club_name": "Kansas City Chiefs",
    "new_club_name": "San Francisco 49ers",
-   "apy_round": 5,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 5
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 72.68,
+   "value_round": 6
   },
   {
    "player": "Manny Lawson",
@@ -2009,12 +2131,15 @@
    "value": 12000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Bengals 2011, 1 years",
+   "salary_percentile": 72.68,
    "old_club_name": "Cincinnati Bengals",
    "new_club_name": "Buffalo Bills",
-   "apy_round": 5,
    "branch_games_2013": 20,
-   "branch_honour_2013": false,
-   "value_round": 5
+   "club_games_2013": 20,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 72.68,
+   "value_round": 6
   },
   {
    "player": "Donnie Avery",
@@ -2027,12 +2152,15 @@
    "value": 8550000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Colts 2012, 1 years",
+   "salary_percentile": 71.46,
    "old_club_name": "Indianapolis Colts",
    "new_club_name": "Kansas City Chiefs",
-   "apy_round": 5,
    "branch_games_2013": 17,
-   "branch_honour_2013": false,
-   "value_round": 5
+   "club_games_2013": 17,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 71.46,
+   "value_round": 6
   },
   {
    "player": "Bradley Fletcher",
@@ -2045,12 +2173,15 @@
    "value": 5250000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Rams 2009, 4 years",
+   "salary_percentile": 69.97,
    "old_club_name": "St. Louis Rams",
    "new_club_name": "Philadelphia Eagles",
-   "apy_round": 5,
    "branch_games_2013": 19,
-   "branch_honour_2013": false,
-   "value_round": 5
+   "club_games_2013": 19,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 69.97,
+   "value_round": 6
   },
   {
    "player": "Rashard Mendenhall",
@@ -2063,12 +2194,15 @@
    "value": 2500000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Steelers 2008, 5 years",
+   "salary_percentile": 69.03,
    "old_club_name": "Pittsburgh Steelers",
    "new_club_name": "Arizona Cardinals",
-   "apy_round": 5,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 5
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 69.03,
+   "value_round": 6
   },
   {
    "player": "Roy Miller",
@@ -2081,12 +2215,57 @@
    "value": 5000000,
    "basis": "Branch contract, career/2013/offseason/free_agency/signings.md",
    "prior_contract": "Expired 2012 contract (unrestricted free agent)",
+   "salary_percentile": 69.03,
    "old_club_name": "Tampa Bay Buccaneers",
    "new_club_name": "Jacksonville Jaguars",
-   "apy_round": 5,
    "branch_games_2013": 18,
-   "branch_honour_2013": false,
-   "value_round": 5
+   "club_games_2013": 18,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 69.03,
+   "value_round": 6
+  },
+  {
+   "player": "Patrick Chung",
+   "position": "FS",
+   "old_club": "NE",
+   "new_club": "PHI",
+   "accrued_seasons_after_2012": 4,
+   "apy": 3333333,
+   "years": 1,
+   "value": 10000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Patriots 2009, 4 years",
+   "salary_percentile": 76.17,
+   "old_club_name": "New England Patriots",
+   "new_club_name": "Philadelphia Eagles",
+   "branch_games_2013": 8,
+   "club_games_2013": 19,
+   "playing_time_points": -8,
+   "honours_points": 0,
+   "value_points": 68.17,
+   "value_round": 6
+  },
+  {
+   "player": "Vance Walker",
+   "position": "DT",
+   "old_club": "ATL",
+   "new_club": "OAK",
+   "accrued_seasons_after_2012": 4,
+   "apy": 2000000,
+   "years": 1,
+   "value": 2000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Falcons 2012, 1 years",
+   "salary_percentile": 65.1,
+   "old_club_name": "Atlanta Falcons",
+   "new_club_name": "Oakland Raiders",
+   "branch_games_2013": 16,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 3,
+   "value_points": 68.1,
+   "value_round": 6
   },
   {
    "player": "Phil Dawson",
@@ -2099,12 +2278,15 @@
    "value": 2350000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Browns 2012, 1 years",
+   "salary_percentile": 67.91,
    "old_club_name": "Cleveland Browns",
    "new_club_name": "San Francisco 49ers",
-   "apy_round": 5,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 5
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 67.91,
+   "value_round": 6
   },
   {
    "player": "Brandon Myers",
@@ -2117,12 +2299,15 @@
    "value": 2250000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Raiders 2009, 4 years",
+   "salary_percentile": 67.54,
    "old_club_name": "Oakland Raiders",
    "new_club_name": "New York Giants",
-   "apy_round": 5,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 5
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 67.54,
+   "value_round": 6
   },
   {
    "player": "Terrance Knighton",
@@ -2135,12 +2320,15 @@
    "value": 4500000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Jaguars 2009, 4 years",
+   "salary_percentile": 67.54,
    "old_club_name": "Jacksonville Jaguars",
    "new_club_name": "Denver Broncos",
-   "apy_round": 5,
    "branch_games_2013": 15,
-   "branch_honour_2013": false,
-   "value_round": 5
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 67.54,
+   "value_round": 6
   },
   {
    "player": "Kaluka Maiava",
@@ -2153,12 +2341,15 @@
    "value": 6000000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Browns 2009, 4 years",
+   "salary_percentile": 65.1,
    "old_club_name": "Cleveland Browns",
    "new_club_name": "Oakland Raiders",
-   "apy_round": 5,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 5
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 65.1,
+   "value_round": 6
   },
   {
    "player": "Jason Campbell",
@@ -2171,12 +2362,15 @@
    "value": 3750000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Bears 2012, 1 years",
+   "salary_percentile": 63.61,
    "old_club_name": "Chicago Bears",
    "new_club_name": "Cleveland Browns",
-   "apy_round": 6,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 6
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 63.61,
+   "value_round": 7
   },
   {
    "player": "King Dunlap",
@@ -2189,12 +2383,15 @@
    "value": 3700000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Eagles 2012, 1 years",
+   "salary_percentile": 63.3,
    "old_club_name": "Philadelphia Eagles",
    "new_club_name": "San Diego Chargers",
-   "apy_round": 6,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 6
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 63.3,
+   "value_round": 7
   },
   {
    "player": "Shane Lechler",
@@ -2207,12 +2404,15 @@
    "value": 5500000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Raiders 2009, 4 years",
+   "salary_percentile": 63.1,
    "old_club_name": "Oakland Raiders",
    "new_club_name": "Houston Texans",
-   "apy_round": 6,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 6
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 63.1,
+   "value_round": 7
   },
   {
    "player": "Danny Woodhead",
@@ -2225,12 +2425,15 @@
    "value": 3500000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Patriots 2010, 2 years",
+   "salary_percentile": 62.19,
    "old_club_name": "New England Patriots",
    "new_club_name": "San Diego Chargers",
-   "apy_round": 6,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 6
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 62.19,
+   "value_round": 7
   },
   {
    "player": "Pat Sims",
@@ -2243,102 +2446,15 @@
    "value": 1750000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Bengals 2012, 1 years",
+   "salary_percentile": 62.19,
    "old_club_name": "Cincinnati Bengals",
    "new_club_name": "Oakland Raiders",
-   "apy_round": 6,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 6
-  },
-  {
-   "player": "Lorenzo Alexander",
-   "position": "OLB",
-   "old_club": "WAS",
-   "new_club": "ARI",
-   "accrued_seasons_after_2012": 8,
-   "apy": 1540000,
-   "years": 3,
-   "value": 4620000,
-   "basis": "Over The Cap via nflverse",
-   "prior_contract": "Commanders 2010, 3 years",
-   "old_club_name": "Washington Redskins",
-   "new_club_name": "Arizona Cardinals",
-   "apy_round": 6,
-   "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 6
-  },
-  {
-   "player": "Dan Skuta",
-   "position": "OLB",
-   "old_club": "CIN",
-   "new_club": "SF",
-   "accrued_seasons_after_2012": 4,
-   "apy": 1500000,
-   "years": 2,
-   "value": 3000000,
-   "basis": "Over The Cap via nflverse",
-   "prior_contract": "Bengals 2012, 1 years",
-   "old_club_name": "Cincinnati Bengals",
-   "new_club_name": "San Francisco 49ers",
-   "apy_round": 6,
-   "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 6
-  },
-  {
-   "player": "Sen'Derrick Marks",
-   "position": "DT",
-   "old_club": "TEN",
-   "new_club": "JAX",
-   "accrued_seasons_after_2012": null,
-   "apy": 1500000,
-   "years": 1,
-   "value": 1500000,
-   "basis": "Branch contract, career/2013/offseason/free_agency/signings.md",
-   "prior_contract": "Expired 2012 contract (unrestricted free agent)",
-   "old_club_name": "Tennessee Titans",
-   "new_club_name": "Jacksonville Jaguars",
-   "apy_round": 6,
-   "branch_games_2013": 18,
-   "branch_honour_2013": false,
-   "value_round": 6
-  },
-  {
-   "player": "Tracy Porter",
-   "position": "CB",
-   "old_club": "DEN",
-   "new_club": "OAK",
-   "accrued_seasons_after_2012": 5,
-   "apy": 1500000,
-   "years": 1,
-   "value": 1500000,
-   "basis": "Over The Cap via nflverse",
-   "prior_contract": "Broncos 2012, 1 years",
-   "old_club_name": "Denver Broncos",
-   "new_club_name": "Oakland Raiders",
-   "apy_round": 6,
-   "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 6
-  },
-  {
-   "player": "Jonathan Casillas",
-   "position": "OLB",
-   "old_club": "NO",
-   "new_club": "TB",
-   "accrued_seasons_after_2012": 4,
-   "apy": 1400000,
-   "years": 1,
-   "value": 1400000,
-   "basis": "Over The Cap via nflverse",
-   "prior_contract": "Saints 2012, 1 years",
-   "old_club_name": "New Orleans Saints",
-   "new_club_name": "Tampa Bay Buccaneers",
-   "apy_round": 6,
-   "branch_games_2013": 17,
-   "branch_honour_2013": false,
-   "value_round": 6
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 62.19,
+   "value_round": 7
   },
   {
    "player": "Justin Durant",
@@ -2351,12 +2467,120 @@
    "value": 2400000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Lions 2011, 2 years",
+   "salary_percentile": 57.55,
    "old_club_name": "Detroit Lions",
    "new_club_name": "Dallas Cowboys",
-   "apy_round": 7,
    "branch_games_2013": 18,
-   "branch_honour_2013": true,
-   "value_round": 6
+   "club_games_2013": 18,
+   "playing_time_points": 0,
+   "honours_points": 4,
+   "value_points": 61.55,
+   "value_round": 7
+  },
+  {
+   "player": "Lorenzo Alexander",
+   "position": "OLB",
+   "old_club": "WAS",
+   "new_club": "ARI",
+   "accrued_seasons_after_2012": 8,
+   "apy": 1540000,
+   "years": 3,
+   "value": 4620000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Commanders 2010, 3 years",
+   "salary_percentile": 61.31,
+   "old_club_name": "Washington Redskins",
+   "new_club_name": "Arizona Cardinals",
+   "branch_games_2013": 16,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 61.31,
+   "value_round": 7
+  },
+  {
+   "player": "Dan Skuta",
+   "position": "OLB",
+   "old_club": "CIN",
+   "new_club": "SF",
+   "accrued_seasons_after_2012": 4,
+   "apy": 1500000,
+   "years": 2,
+   "value": 3000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Bengals 2012, 1 years",
+   "salary_percentile": 60.97,
+   "old_club_name": "Cincinnati Bengals",
+   "new_club_name": "San Francisco 49ers",
+   "branch_games_2013": 16,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 60.97,
+   "value_round": 7
+  },
+  {
+   "player": "Sen'Derrick Marks",
+   "position": "DT",
+   "old_club": "TEN",
+   "new_club": "JAX",
+   "accrued_seasons_after_2012": null,
+   "apy": 1500000,
+   "years": 1,
+   "value": 1500000,
+   "basis": "Branch contract, career/2013/offseason/free_agency/signings.md",
+   "prior_contract": "Expired 2012 contract (unrestricted free agent)",
+   "salary_percentile": 60.97,
+   "old_club_name": "Tennessee Titans",
+   "new_club_name": "Jacksonville Jaguars",
+   "branch_games_2013": 18,
+   "club_games_2013": 18,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 60.97,
+   "value_round": 7
+  },
+  {
+   "player": "Tracy Porter",
+   "position": "CB",
+   "old_club": "DEN",
+   "new_club": "OAK",
+   "accrued_seasons_after_2012": 5,
+   "apy": 1500000,
+   "years": 1,
+   "value": 1500000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Broncos 2012, 1 years",
+   "salary_percentile": 60.97,
+   "old_club_name": "Denver Broncos",
+   "new_club_name": "Oakland Raiders",
+   "branch_games_2013": 16,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 60.97,
+   "value_round": 7
+  },
+  {
+   "player": "Jonathan Casillas",
+   "position": "OLB",
+   "old_club": "NO",
+   "new_club": "TB",
+   "accrued_seasons_after_2012": 4,
+   "apy": 1400000,
+   "years": 1,
+   "value": 1400000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Saints 2012, 1 years",
+   "salary_percentile": 60.56,
+   "old_club_name": "New Orleans Saints",
+   "new_club_name": "Tampa Bay Buccaneers",
+   "branch_games_2013": 17,
+   "club_games_2013": 17,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 60.56,
+   "value_round": 7
   },
   {
    "player": "Chad Rinehart",
@@ -2369,11 +2593,14 @@
    "value": 1250000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Bills 2012, 1 years",
+   "salary_percentile": 58.19,
    "old_club_name": "Buffalo Bills",
    "new_club_name": "San Diego Chargers",
-   "apy_round": 7,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 58.19,
    "value_round": 7
   },
   {
@@ -2387,11 +2614,14 @@
    "value": 3750000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "Panthers 2011, 1 years",
+   "salary_percentile": 58.19,
    "old_club_name": "Carolina Panthers",
    "new_club_name": "Cleveland Browns",
-   "apy_round": 7,
    "branch_games_2013": 16,
-   "branch_honour_2013": false,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 58.19,
    "value_round": 7
   },
   {
@@ -2405,77 +2635,29 @@
    "value": 1100000,
    "basis": "Over The Cap via nflverse",
    "prior_contract": "49ers 2012, 1 years",
+   "salary_percentile": 56.26,
    "old_club_name": "San Francisco 49ers",
    "new_club_name": "Carolina Panthers",
-   "apy_round": 7,
    "branch_games_2013": 15,
-   "branch_honour_2013": false,
-   "value_round": 7
-  },
-  {
-   "player": "Alan Ball",
-   "position": "CB",
-   "old_club": "HOU",
-   "new_club": "JAX",
-   "accrued_seasons_after_2012": null,
-   "apy": 1000000,
-   "years": 1,
-   "value": 1000000,
-   "basis": "Branch contract, career/2013/offseason/free_agency/signings.md",
-   "prior_contract": "Expired 2012 contract (unrestricted free agent)",
-   "old_club_name": "Houston Texans",
-   "new_club_name": "Jacksonville Jaguars",
-   "apy_round": 7,
-   "branch_games_2013": 9,
-   "branch_honour_2013": false,
-   "value_round": 7
-  },
-  {
-   "player": "Matt Shaughnessy",
-   "position": "DE",
-   "old_club": "OAK",
-   "new_club": "ARI",
-   "accrued_seasons_after_2012": 4,
-   "apy": 1000000,
-   "years": 1,
-   "value": 1000000,
-   "basis": "Over The Cap via nflverse",
-   "prior_contract": "Raiders 2009, 4 years",
-   "old_club_name": "Oakland Raiders",
-   "new_club_name": "Arizona Cardinals",
-   "apy_round": 7,
-   "branch_games_2013": 16,
-   "branch_honour_2013": false,
-   "value_round": 7
-  },
-  {
-   "player": "Ropati Pitoitua",
-   "position": "DE",
-   "old_club": "KC",
-   "new_club": "TEN",
-   "accrued_seasons_after_2012": 5,
-   "apy": 1000000,
-   "years": 1,
-   "value": 1000000,
-   "basis": "Over The Cap via nflverse",
-   "prior_contract": "Chiefs 2012, 1 years",
-   "old_club_name": "Kansas City Chiefs",
-   "new_club_name": "Tennessee Titans",
-   "apy_round": 7,
-   "branch_games_2013": 18,
-   "branch_honour_2013": false,
+   "club_games_2013": 16,
+   "playing_time_points": 0,
+   "honours_points": 0,
+   "value_points": 56.26,
    "value_round": 7
   }
  ],
  "below_floor": [
+  "Alan Ball",
   "Antonio Johnson",
   "D.J. Moore",
   "Donnie Jones",
   "Geoff Schwartz",
   "Kellen Winslow",
+  "Matt Shaughnessy",
   "Matt Slauson",
   "Quintin Demps",
   "Rashad Jennings",
+  "Ropati Pitoitua",
   "Tony McDaniel"
  ]
 }

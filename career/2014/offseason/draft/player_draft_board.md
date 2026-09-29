@@ -12,11 +12,11 @@
 | 1 | Jacksonville | 26 | **26** | **Joel Bitonio, T/G, Nevada** | Then Kyle Van Noy, LB, BYU (package I closed March 20, Entry 99; [package I amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-29-2026-amendment-package-i-arizonas-second-for-adams)) |
 | 2 | Arizona | 6 | **38** | **Davante Adams, WR, Fresno State** | Acquired in package I (Entry 99); availability decided at the draft by the rails rule |
 | 3 | Jacksonville | 26 | **90** | Trai Turner, G, LSU | Brandon Thomas is the memo's comparison |
-| 4 | Jacksonville | 26 | **134** | Telvin Smith, LB, Florida State | Christian Jones and Kyle Van Noy are the memo's comparisons |
-| 5 | Detroit | 11 | **157** | **Corey Linsley, C, Ohio State** | Fallbacks in order: Matt Paradis, Bryan Stork, Travis Swanson ([amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-29-2026-amendment-pick-36-lawrence-at-31-monroe-and-the-linsley-and-gaines-fallbacks)) |
-| 5 | Jacksonville | 26 | **172** | Charles Leno Jr., T, Boise State | James Hurst is the memo's comparison; medical evidence must be current |
-| 6 | Jacksonville | 26 | **210** | **E. J. Gaines, CB, Missouri** | Replaces Matt Paradis; fallback Ross Cockrell; if Cockrell goes at the sixth, round 7 is Malcolm Butler alone until the post-combine board ([amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-29-2026-amendment-pick-36-lawrence-at-31-monroe-and-the-linsley-and-gaines-fallbacks)) |
-| 7 | Jacksonville | 26 | **247** | Malcolm Butler, CB, West Alabama | Ross Cockrell if Butler is unavailable, under the amendment below |
+| 4 | Jacksonville | 26 | **129** | Telvin Smith, LB, Florida State | Christian Jones and Kyle Van Noy are the memo's comparisons |
+| 5 | Detroit | 11 | **153** | **Corey Linsley, C, Ohio State** | Fallbacks in order: Matt Paradis, Bryan Stork, Travis Swanson ([amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-29-2026-amendment-pick-36-lawrence-at-31-monroe-and-the-linsley-and-gaines-fallbacks)) |
+| 5 | Jacksonville | 26 | **168** | Charles Leno Jr., T, Boise State | James Hurst is the memo's comparison; medical evidence must be current |
+| 6 | Jacksonville | 26 | **205** | **E. J. Gaines, CB, Missouri** | Replaces Matt Paradis; fallback Ross Cockrell; if Cockrell goes at the sixth, round 7 is Malcolm Butler alone until the post-combine board ([amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-29-2026-amendment-pick-36-lawrence-at-31-monroe-and-the-linsley-and-gaines-fallbacks)) |
+| 7 | Jacksonville | 26 | **241** | Malcolm Butler, CB, West Alabama | Ross Cockrell if Butler is unavailable, under the amendment below |
 
 Use [the generated order](../../draft/draft_order.md) and [ownership register](../../draft/pick_ownership.json) for the asset, its owner and any hold. Overall numbers include the 32 compensatory picks announced March 24, 2014 (Entry 100); Jacksonville received none, and compensatory picks cannot be traded in 2014. A named comparison is not a guarantee of availability or an invented automatic choice among several players. The 13/26/38 plan, Linsley on Detroit's fifth, Gaines on Jacksonville's sixth and the Butler instruction supersede the corresponding original memo rows. The memo's obsolete first-round inventory and unverified rotation language do not control numbering.
 

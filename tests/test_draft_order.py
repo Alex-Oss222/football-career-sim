@@ -154,8 +154,8 @@ class SevenRoundTests(unittest.TestCase):
         from scripts.render_draft_order import overall
         counts = comp["round_counts"]
         self.assertEqual(overall(self.asset(4, "Jacksonville Jaguars")), "122 + C3")
-        self.assertEqual(overall(self.asset(4, "Jacksonville Jaguars"), counts), "134")
-        self.assertEqual(overall(self.asset(7, "Jacksonville Jaguars"), counts), "247")
+        self.assertEqual(overall(self.asset(4, "Jacksonville Jaguars"), counts), "129")
+        self.assertEqual(overall(self.asset(7, "Jacksonville Jaguars"), counts), "241")
 
     def test_compensatory_awards_follow_the_adopted_method(self):
         import json

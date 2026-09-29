@@ -25,7 +25,7 @@ Add a row, and change the affected player rows and summaries, for every signing,
 | March 18, 2014 | Replay: Nicks and Hawkins signed; Edelman declined | Entry 97 | Nicks (1 year, up to $5.0M, $4.5M guaranteed; 2014 cap budget $5,000,000) and Hawkins (4 years, $15.6M, $8.0M guaranteed; $2,800,000) added. Rows: 54 |
 | March 18, 2014 | Replay: Te'o-Nesheim signed | Entry 98 | Te'o-Nesheim (3 years, up to $13.5M, $6.0M guaranteed; 2014 cap $3,000,000) added. Rows: 55 |
 | March 20, 2014 | Cain re-signed; Nwaneri traded | Entry 99 | Cain (1 year, $855,000) added; Nwaneri removed (traded to Arizona in package I); $2,189,000 of his bonus proration accelerates to 2014 dead money. Rows: 55 |
-| March 24, 2014 | 2014 compensatory picks announced | Entry 100 | No contract row changes; Jacksonville received no compensatory pick. Its later draft rights renumber to 134, 157, 172, 210 and 247 in the financial inputs; no rookie contract is booked before a selection |
+| March 24, 2014 | 2014 compensatory picks announced | Entry 100 | No contract row changes; Jacksonville received no compensatory pick. Its later draft rights renumber to 129, 153, 168, 205 and 241 in the financial inputs; no rookie contract is booked before a selection |
 
 ## 1. How to read this table
 

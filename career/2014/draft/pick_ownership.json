@@ -8,16 +8,16 @@
     "announcement_date": "2014-03-24",
     "qualifying_free_agency_year": 2013,
     "round_counts": {
-      "3": 12,
-      "4": 6,
-      "5": 6,
-      "6": 5,
-      "7": 3
+      "3": 7,
+      "4": 7,
+      "5": 5,
+      "6": 4,
+      "7": 9
     },
     "awards": "compensatory/awards.json",
     "method": "compensatory/method.json",
     "tradeable": false,
-    "basis": "Branch method adopted in ledger Entry 100; no real award list imported"
+    "basis": "Branch method version 2 adopted in ledger Entry 100; no real award list imported"
   },
   "transfers": [
     {

@@ -13,6 +13,7 @@ Jaguars' signings that the branch did not make. Jacksonville's own 2013 gains
 come from its branch contracts (career/2013/offseason/free_agency/signings.md).
 No 2014 compensatory award list is read. Downloads are cached in .sim_cache/.
 """
+import bisect
 import csv
 import collections
 import gzip
@@ -68,8 +69,20 @@ def main():
         last = {r["gsis_id"]: (ALIAS.get(r["team"], r["team"]), int(r["years_exp"] or 0)) for r in csv.DictReader(f)}
     with gzip.open(fetch(CONTRACTS_URL, "historical_contracts.csv.gz"), "rt", newline="") as f:
         by_name = collections.defaultdict(list)
+        in_force = {}
         for r in csv.DictReader(f):
             by_name[norm(r["player"])].append(r)
+            if r["year_signed"].isdigit() and r["years"].isdigit() and r["apy"] not in ("", "NA"):
+                start, term = int(r["year_signed"]), int(r["years"])
+                key = r["otc_id"] or r["player"]
+                if start <= 2013 <= start + term - 1 and (key not in in_force or start > in_force[key][0]):
+                    in_force[key] = (start, float(r["apy"]))
+    market = sorted(apy for _, apy in in_force.values())
+
+    def percentile(apy):
+        below = bisect.bisect_left(market, apy)
+        ties = bisect.bisect_right(market, apy) - below
+        return round(100 * (below + ties / 2) / len(market), 2)
     candidates, excluded = [], []
     for club in week1["clubs"].values():
         for p in club["players"]:
@@ -113,6 +126,8 @@ def main():
                            "accrued_seasons_after_2012": None, "apy": apy, "years": years, "value": value,
                            "basis": "Branch contract, career/2013/offseason/free_agency/signings.md",
                            "prior_contract": "Expired 2012 contract (unrestricted free agent)"})
+    for c in candidates:
+        c["salary_percentile"] = percentile(c["apy"])
     candidates.sort(key=lambda r: (-r["apy"], r["player"]))
     excluded.sort(key=lambda r: (r["reason"], r["player"]))
     OUT.parent.mkdir(parents=True, exist_ok=True)
@@ -121,6 +136,8 @@ def main():
         "sources": {"roster_2012": ROSTER_URL, "contracts": CONTRACTS_URL,
                     "branch_2013_clubs": "library/data/2013_week1_depth_charts.json",
                     "jacksonville_gains": "career/2013/offseason/free_agency/signings.md"},
+        "salary_market": {"basis": "APY of each player's latest source contract in force in the 2013 league year",
+                          "contracts": len(market), "median_apy": int(market[len(market) // 2])},
         "candidates": candidates, "excluded_movers": excluded}, indent=1) + "\n")
     print(f"wrote {OUT.relative_to(ROOT)}: {len(candidates)} valued, {len(excluded)} excluded")
 

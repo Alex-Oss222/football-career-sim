@@ -7,6 +7,11 @@
   "branch_2013_clubs": "library/data/2013_week1_depth_charts.json",
   "jacksonville_gains": "career/2013/offseason/free_agency/signings.md"
  },
+ "salary_market": {
+  "basis": "APY of each player's latest source contract in force in the 2013 league year",
+  "contracts": 1477,
+  "median_apy": 805000
+ },
  "candidates": [
   {
    "player": "Mike Wallace",
@@ -18,7 +23,8 @@
    "years": 3,
    "value": 60000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Steelers 2012, 1 years"
+   "prior_contract": "Steelers 2012, 1 years",
+   "salary_percentile": 98.04
   },
   {
    "player": "Greg Jennings",
@@ -30,7 +36,8 @@
    "years": 5,
    "value": 45000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Packers 2009, 3 years"
+   "prior_contract": "Packers 2009, 3 years",
+   "salary_percentile": 95.73
   },
   {
    "player": "Jake Long",
@@ -42,7 +49,8 @@
    "years": 4,
    "value": 34000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Dolphins 2008, 5 years"
+   "prior_contract": "Dolphins 2008, 5 years",
+   "salary_percentile": 94.79
   },
   {
    "player": "Dashon Goldson",
@@ -54,7 +62,8 @@
    "years": 3,
    "value": 41000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "49ers 2012, 1 years"
+   "prior_contract": "49ers 2012, 1 years",
+   "salary_percentile": 94.04
   },
   {
    "player": "Paul Kruger",
@@ -66,7 +75,8 @@
    "years": 5,
    "value": 40500000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Ravens 2009, 4 years"
+   "prior_contract": "Ravens 2009, 4 years",
+   "salary_percentile": 93.7
   },
   {
    "player": "Andy Levitre",
@@ -78,7 +88,8 @@
    "years": 6,
    "value": 46800000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Bills 2009, 4 years"
+   "prior_contract": "Bills 2009, 4 years",
+   "salary_percentile": 92.89
   },
   {
    "player": "Jermon Bushrod",
@@ -90,7 +101,8 @@
    "years": 5,
    "value": 35965000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Saints 2011, 2 years"
+   "prior_contract": "Saints 2011, 2 years",
+   "salary_percentile": 91.3
   },
   {
    "player": "Jared Cook",
@@ -102,7 +114,8 @@
    "years": 5,
    "value": 35100000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Titans 2009, 4 years"
+   "prior_contract": "Titans 2009, 4 years",
+   "salary_percentile": 91.1
   },
   {
    "player": "Dannell Ellerbe",
@@ -114,7 +127,8 @@
    "years": 2,
    "value": 35000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Ravens 2012, 1 years"
+   "prior_contract": "Ravens 2012, 1 years",
+   "salary_percentile": 90.52
   },
   {
    "player": "Gosder Cherilus",
@@ -126,7 +140,8 @@
    "years": 5,
    "value": 35000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Lions 2008, 5 years"
+   "prior_contract": "Lions 2008, 5 years",
+   "salary_percentile": 90.52
   },
   {
    "player": "Desmond Bryant",
@@ -138,7 +153,8 @@
    "years": 5,
    "value": 34000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Raiders 2012, 1 years"
+   "prior_contract": "Raiders 2012, 1 years",
+   "salary_percentile": 89.74
   },
   {
    "player": "Cliff Avril",
@@ -150,7 +166,8 @@
    "years": 2,
    "value": 13000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Lions 2012, 1 years"
+   "prior_contract": "Lions 2012, 1 years",
+   "salary_percentile": 89.23
   },
   {
    "player": "Connor Barwin",
@@ -162,7 +179,8 @@
    "years": 6,
    "value": 36000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Texans 2009, 4 years"
+   "prior_contract": "Texans 2009, 4 years",
+   "salary_percentile": 87.81
   },
   {
    "player": "LaRon Landry",
@@ -174,7 +192,8 @@
    "years": 4,
    "value": 24000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Jets 2012, 1 years"
+   "prior_contract": "Jets 2012, 1 years",
+   "salary_percentile": 87.81
   },
   {
    "player": "Wes Welker",
@@ -186,7 +205,8 @@
    "years": 2,
    "value": 12000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Patriots 2012, 1 years"
+   "prior_contract": "Patriots 2012, 1 years",
+   "salary_percentile": 87.81
   },
   {
    "player": "Louis Vasquez",
@@ -198,7 +218,8 @@
    "years": 4,
    "value": 23500000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Chargers 2009, 4 years"
+   "prior_contract": "Chargers 2009, 4 years",
+   "salary_percentile": 87.37
   },
   {
    "player": "Danny Amendola",
@@ -210,7 +231,8 @@
    "years": 5,
    "value": 28500000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Rams 2012, 1 years"
+   "prior_contract": "Rams 2012, 1 years",
+   "salary_percentile": 86.93
   },
   {
    "player": "Cary Williams",
@@ -222,7 +244,8 @@
    "years": 3,
    "value": 17000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Ravens 2012, 1 years"
+   "prior_contract": "Ravens 2012, 1 years",
+   "salary_percentile": 86.76
   },
   {
    "player": "Brent Grimes",
@@ -234,7 +257,8 @@
    "years": 1,
    "value": 5500000,
    "basis": "Branch contract, career/2013/offseason/free_agency/signings.md",
-   "prior_contract": "Expired 2012 contract (unrestricted free agent)"
+   "prior_contract": "Expired 2012 contract (unrestricted free agent)",
+   "salary_percentile": 85.95
   },
   {
    "player": "Ricky Jean Francois",
@@ -246,7 +270,8 @@
    "years": 4,
    "value": 22000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "49ers 2009, 4 years"
+   "prior_contract": "49ers 2009, 4 years",
+   "salary_percentile": 85.95
   },
   {
    "player": "Sean Smith",
@@ -258,7 +283,8 @@
    "years": 3,
    "value": 16500000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Dolphins 2009, 4 years"
+   "prior_contract": "Dolphins 2009, 4 years",
+   "salary_percentile": 85.95
   },
   {
    "player": "Keenan Lewis",
@@ -270,7 +296,8 @@
    "years": 5,
    "value": 25500000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Steelers 2012, 1 years"
+   "prior_contract": "Steelers 2012, 1 years",
+   "salary_percentile": 84.63
   },
   {
    "player": "Martellus Bennett",
@@ -282,7 +309,8 @@
    "years": 4,
    "value": 20400000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Giants 2012, 1 years"
+   "prior_contract": "Giants 2012, 1 years",
+   "salary_percentile": 84.63
   },
   {
    "player": "Derek Cox",
@@ -294,7 +322,8 @@
    "years": 4,
    "value": 20000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Jaguars 2009, 4 years"
+   "prior_contract": "Jaguars 2009, 4 years",
+   "salary_percentile": 84.12
   },
   {
    "player": "Dominique Rodgers-Cromartie",
@@ -306,7 +335,8 @@
    "years": 1,
    "value": 5000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "ARI/PHI 2008, 5 years"
+   "prior_contract": "ARI/PHI 2008, 5 years",
+   "salary_percentile": 84.12
   },
   {
    "player": "Michael Bennett",
@@ -318,7 +348,8 @@
    "years": 1,
    "value": 4800000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Buccaneers 2012, 1 years"
+   "prior_contract": "Buccaneers 2012, 1 years",
+   "salary_percentile": 83.34
   },
   {
    "player": "Glover Quin",
@@ -330,7 +361,8 @@
    "years": 5,
    "value": 23500000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Texans 2009, 4 years"
+   "prior_contract": "Texans 2009, 4 years",
+   "salary_percentile": 83.01
   },
   {
    "player": "Philip Wheeler",
@@ -342,7 +374,8 @@
    "years": 5,
    "value": 13200000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Raiders 2012, 1 years"
+   "prior_contract": "Raiders 2012, 1 years",
+   "salary_percentile": 82.02
   },
   {
    "player": "Dwight Freeney",
@@ -354,7 +387,8 @@
    "years": 2,
    "value": 8750000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Colts 2007, 6 years"
+   "prior_contract": "Colts 2007, 6 years",
+   "salary_percentile": 81.92
   },
   {
    "player": "Osi Umenyiora",
@@ -366,7 +400,8 @@
    "years": 2,
    "value": 8500000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Giants 2012, 1 years"
+   "prior_contract": "Giants 2012, 1 years",
+   "salary_percentile": 81.45
   },
   {
    "player": "Mike Devito",
@@ -378,7 +413,8 @@
    "years": 3,
    "value": 12600000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Jets 2012, 1 years"
+   "prior_contract": "Jets 2012, 1 years",
+   "salary_percentile": 81.28
   },
   {
    "player": "Anthony Fasano",
@@ -390,7 +426,8 @@
    "years": 2,
    "value": 16000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Dolphins 2010, 2 years"
+   "prior_contract": "Dolphins 2010, 2 years",
+   "salary_percentile": 80.5
   },
   {
    "player": "Erik Walden",
@@ -402,7 +439,8 @@
    "years": 4,
    "value": 16000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Packers 2012, 1 years"
+   "prior_contract": "Packers 2012, 1 years",
+   "salary_percentile": 80.5
   },
   {
    "player": "James Casey",
@@ -414,7 +452,8 @@
    "years": 3,
    "value": 12000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Texans 2009, 4 years"
+   "prior_contract": "Texans 2009, 4 years",
+   "salary_percentile": 80.5
   },
   {
    "player": "Reggie Bush",
@@ -426,7 +465,8 @@
    "years": 4,
    "value": 16000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Dolphins 2011, 2 years"
+   "prior_contract": "Dolphins 2011, 2 years",
+   "salary_percentile": 80.5
   },
   {
    "player": "Steven Jackson",
@@ -438,7 +478,8 @@
    "years": 3,
    "value": 12000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Rams 2008, 5 years"
+   "prior_contract": "Rams 2008, 5 years",
+   "salary_percentile": 80.5
   },
   {
    "player": "Sammie Lee Hill",
@@ -450,7 +491,8 @@
    "years": 3,
    "value": 11400000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Lions 2012, 1 years"
+   "prior_contract": "Lions 2012, 1 years",
+   "salary_percentile": 79.69
   },
   {
    "player": "Isaac Sopoaga",
@@ -462,7 +504,8 @@
    "years": 3,
    "value": 11000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "49ers 2008, 5 years"
+   "prior_contract": "49ers 2008, 5 years",
+   "salary_percentile": 79.18
   },
   {
    "player": "Donald Thomas",
@@ -474,7 +517,8 @@
    "years": 4,
    "value": 14000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Patriots 2011, 2 years"
+   "prior_contract": "Patriots 2011, 2 years",
+   "salary_percentile": 77.76
   },
   {
    "player": "Jerraud Powers",
@@ -486,7 +530,8 @@
    "years": 3,
    "value": 10500000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Colts 2009, 4 years"
+   "prior_contract": "Colts 2009, 4 years",
+   "salary_percentile": 77.76
   },
   {
    "player": "Chase Daniel",
@@ -498,7 +543,8 @@
    "years": 3,
    "value": 10000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Saints 2012, 1 years"
+   "prior_contract": "Saints 2012, 1 years",
+   "salary_percentile": 76.17
   },
   {
    "player": "Patrick Chung",
@@ -510,7 +556,8 @@
    "years": 1,
    "value": 10000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Patriots 2009, 4 years"
+   "prior_contract": "Patriots 2009, 4 years",
+   "salary_percentile": 76.17
   },
   {
    "player": "Shonn Greene",
@@ -522,7 +569,8 @@
    "years": 3,
    "value": 10000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Jets 2009, 4 years"
+   "prior_contract": "Jets 2009, 4 years",
+   "salary_percentile": 76.17
   },
   {
    "player": "Brandon Gibson",
@@ -534,7 +582,8 @@
    "years": 3,
    "value": 9780000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "PHI/LAR 2009, 4 years"
+   "prior_contract": "PHI/LAR 2009, 4 years",
+   "salary_percentile": 75.73
   },
   {
    "player": "Nick Roach",
@@ -546,7 +595,8 @@
    "years": 4,
    "value": 13000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Bears 2011, 2 years"
+   "prior_contract": "Bears 2011, 2 years",
+   "salary_percentile": 75.46
   },
   {
    "player": "Jason Jones",
@@ -558,7 +608,8 @@
    "years": 3,
    "value": 9500000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Seahawks 2012, 1 years"
+   "prior_contract": "Seahawks 2012, 1 years",
+   "salary_percentile": 74.44
   },
   {
    "player": "Alan Branch",
@@ -570,7 +621,8 @@
    "years": 3,
    "value": 9300000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Seahawks 2011, 2 years"
+   "prior_contract": "Seahawks 2011, 2 years",
+   "salary_percentile": 73.87
   },
   {
    "player": "Glenn Dorsey",
@@ -582,7 +634,8 @@
    "years": 2,
    "value": 6000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Chiefs 2008, 5 years"
+   "prior_contract": "Chiefs 2008, 5 years",
+   "salary_percentile": 72.68
   },
   {
    "player": "Manny Lawson",
@@ -594,7 +647,8 @@
    "years": 4,
    "value": 12000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Bengals 2011, 1 years"
+   "prior_contract": "Bengals 2011, 1 years",
+   "salary_percentile": 72.68
   },
   {
    "player": "Davone Bess",
@@ -606,7 +660,8 @@
    "years": 3,
    "value": 8817000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Dolphins 2010, 3 years"
+   "prior_contract": "Dolphins 2010, 3 years",
+   "salary_percentile": 71.94
   },
   {
    "player": "Donnie Avery",
@@ -618,7 +673,8 @@
    "years": 3,
    "value": 8550000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Colts 2012, 1 years"
+   "prior_contract": "Colts 2012, 1 years",
+   "salary_percentile": 71.46
   },
   {
    "player": "Bradley Fletcher",
@@ -630,7 +686,8 @@
    "years": 2,
    "value": 5250000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Rams 2009, 4 years"
+   "prior_contract": "Rams 2009, 4 years",
+   "salary_percentile": 69.97
   },
   {
    "player": "Rashard Mendenhall",
@@ -642,7 +699,8 @@
    "years": 1,
    "value": 2500000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Steelers 2008, 5 years"
+   "prior_contract": "Steelers 2008, 5 years",
+   "salary_percentile": 69.03
   },
   {
    "player": "Roy Miller",
@@ -654,7 +712,8 @@
    "years": 2,
    "value": 5000000,
    "basis": "Branch contract, career/2013/offseason/free_agency/signings.md",
-   "prior_contract": "Expired 2012 contract (unrestricted free agent)"
+   "prior_contract": "Expired 2012 contract (unrestricted free agent)",
+   "salary_percentile": 69.03
   },
   {
    "player": "Phil Dawson",
@@ -666,7 +725,8 @@
    "years": 1,
    "value": 2350000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Browns 2012, 1 years"
+   "prior_contract": "Browns 2012, 1 years",
+   "salary_percentile": 67.91
   },
   {
    "player": "Brandon Myers",
@@ -678,7 +738,8 @@
    "years": 1,
    "value": 2250000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Raiders 2009, 4 years"
+   "prior_contract": "Raiders 2009, 4 years",
+   "salary_percentile": 67.54
   },
   {
    "player": "Terrance Knighton",
@@ -690,7 +751,8 @@
    "years": 2,
    "value": 4500000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Jaguars 2009, 4 years"
+   "prior_contract": "Jaguars 2009, 4 years",
+   "salary_percentile": 67.54
   },
   {
    "player": "Kaluka Maiava",
@@ -702,7 +764,8 @@
    "years": 3,
    "value": 6000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Browns 2009, 4 years"
+   "prior_contract": "Browns 2009, 4 years",
+   "salary_percentile": 65.1
   },
   {
    "player": "Vance Walker",
@@ -714,7 +777,8 @@
    "years": 1,
    "value": 2000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Falcons 2012, 1 years"
+   "prior_contract": "Falcons 2012, 1 years",
+   "salary_percentile": 65.1
   },
   {
    "player": "Jason Campbell",
@@ -726,7 +790,8 @@
    "years": 2,
    "value": 3750000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Bears 2012, 1 years"
+   "prior_contract": "Bears 2012, 1 years",
+   "salary_percentile": 63.61
   },
   {
    "player": "King Dunlap",
@@ -738,7 +803,8 @@
    "years": 2,
    "value": 3700000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Eagles 2012, 1 years"
+   "prior_contract": "Eagles 2012, 1 years",
+   "salary_percentile": 63.3
   },
   {
    "player": "Shane Lechler",
@@ -750,7 +816,8 @@
    "years": 3,
    "value": 5500000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Raiders 2009, 4 years"
+   "prior_contract": "Raiders 2009, 4 years",
+   "salary_percentile": 63.1
   },
   {
    "player": "Danny Woodhead",
@@ -762,7 +829,8 @@
    "years": 2,
    "value": 3500000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Patriots 2010, 2 years"
+   "prior_contract": "Patriots 2010, 2 years",
+   "salary_percentile": 62.19
   },
   {
    "player": "Pat Sims",
@@ -774,7 +842,8 @@
    "years": 1,
    "value": 1750000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Bengals 2012, 1 years"
+   "prior_contract": "Bengals 2012, 1 years",
+   "salary_percentile": 62.19
   },
   {
    "player": "Lorenzo Alexander",
@@ -786,7 +855,8 @@
    "years": 3,
    "value": 4620000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Commanders 2010, 3 years"
+   "prior_contract": "Commanders 2010, 3 years",
+   "salary_percentile": 61.31
   },
   {
    "player": "Dan Skuta",
@@ -798,7 +868,8 @@
    "years": 2,
    "value": 3000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Bengals 2012, 1 years"
+   "prior_contract": "Bengals 2012, 1 years",
+   "salary_percentile": 60.97
   },
   {
    "player": "Sen'Derrick Marks",
@@ -810,7 +881,8 @@
    "years": 1,
    "value": 1500000,
    "basis": "Branch contract, career/2013/offseason/free_agency/signings.md",
-   "prior_contract": "Expired 2012 contract (unrestricted free agent)"
+   "prior_contract": "Expired 2012 contract (unrestricted free agent)",
+   "salary_percentile": 60.97
   },
   {
    "player": "Tracy Porter",
@@ -822,7 +894,8 @@
    "years": 1,
    "value": 1500000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Broncos 2012, 1 years"
+   "prior_contract": "Broncos 2012, 1 years",
+   "salary_percentile": 60.97
   },
   {
    "player": "Jonathan Casillas",
@@ -834,7 +907,8 @@
    "years": 1,
    "value": 1400000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Saints 2012, 1 years"
+   "prior_contract": "Saints 2012, 1 years",
+   "salary_percentile": 60.56
   },
   {
    "player": "Chad Rinehart",
@@ -846,7 +920,8 @@
    "years": 1,
    "value": 1250000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Bills 2012, 1 years"
+   "prior_contract": "Bills 2012, 1 years",
+   "salary_percentile": 58.19
   },
   {
    "player": "Gary Barnidge",
@@ -858,7 +933,8 @@
    "years": 3,
    "value": 3750000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Panthers 2011, 1 years"
+   "prior_contract": "Panthers 2011, 1 years",
+   "salary_percentile": 58.19
   },
   {
    "player": "Justin Durant",
@@ -870,7 +946,8 @@
    "years": 2,
    "value": 2400000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Lions 2011, 2 years"
+   "prior_contract": "Lions 2011, 2 years",
+   "salary_percentile": 57.55
   },
   {
    "player": "Ted Ginn",
@@ -882,7 +959,8 @@
    "years": 1,
    "value": 1100000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "49ers 2012, 1 years"
+   "prior_contract": "49ers 2012, 1 years",
+   "salary_percentile": 56.26
   },
   {
    "player": "Alan Ball",
@@ -894,7 +972,8 @@
    "years": 1,
    "value": 1000000,
    "basis": "Branch contract, career/2013/offseason/free_agency/signings.md",
-   "prior_contract": "Expired 2012 contract (unrestricted free agent)"
+   "prior_contract": "Expired 2012 contract (unrestricted free agent)",
+   "salary_percentile": 54.67
   },
   {
    "player": "Matt Shaughnessy",
@@ -906,7 +985,8 @@
    "years": 1,
    "value": 1000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Raiders 2009, 4 years"
+   "prior_contract": "Raiders 2009, 4 years",
+   "salary_percentile": 54.67
   },
   {
    "player": "Ropati Pitoitua",
@@ -918,7 +998,8 @@
    "years": 1,
    "value": 1000000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Chiefs 2012, 1 years"
+   "prior_contract": "Chiefs 2012, 1 years",
+   "salary_percentile": 54.67
   },
   {
    "player": "Donnie Jones",
@@ -930,7 +1011,8 @@
    "years": 1,
    "value": 905000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Texans 2012, 1 years"
+   "prior_contract": "Texans 2012, 1 years",
+   "salary_percentile": 53.11
   },
   {
    "player": "Tony McDaniel",
@@ -942,7 +1024,8 @@
    "years": 1,
    "value": 890000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Dolphins 2011, 2 years"
+   "prior_contract": "Dolphins 2011, 2 years",
+   "salary_percentile": 52.71
   },
   {
    "player": "Antonio Johnson",
@@ -954,7 +1037,8 @@
    "years": 1,
    "value": 850000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Colts 2011, 2 years"
+   "prior_contract": "Colts 2011, 2 years",
+   "salary_percentile": 51.56
   },
   {
    "player": "Kellen Winslow",
@@ -966,7 +1050,8 @@
    "years": 1,
    "value": 840000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Patriots 2012, 1 years"
+   "prior_contract": "Patriots 2012, 1 years",
+   "salary_percentile": 51.15
   },
   {
    "player": "Matt Slauson",
@@ -978,7 +1063,8 @@
    "years": 1,
    "value": 815000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Jets 2012, 1 years"
+   "prior_contract": "Jets 2012, 1 years",
+   "salary_percentile": 50.27
   },
   {
    "player": "Quintin Demps",
@@ -990,7 +1076,8 @@
    "years": 1,
    "value": 715000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Texans 2012, 1 years"
+   "prior_contract": "Texans 2012, 1 years",
+   "salary_percentile": 47.46
   },
   {
    "player": "Geoff Schwartz",
@@ -1002,7 +1089,8 @@
    "years": 1,
    "value": 700000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Vikings 2012, 1 years"
+   "prior_contract": "Vikings 2012, 1 years",
+   "salary_percentile": 46.68
   },
   {
    "player": "Rashad Jennings",
@@ -1014,7 +1102,8 @@
    "years": 1,
    "value": 630000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Jaguars 2009, 4 years"
+   "prior_contract": "Jaguars 2009, 4 years",
+   "salary_percentile": 37.91
   },
   {
    "player": "D.J. Moore",
@@ -1026,7 +1115,8 @@
    "years": 1,
    "value": 620000,
    "basis": "Over The Cap via nflverse",
-   "prior_contract": "Bears 2009, 4 years"
+   "prior_contract": "Bears 2009, 4 years",
+   "salary_percentile": 36.46
   }
  ],
  "excluded_movers": [

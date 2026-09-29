@@ -37,30 +37,31 @@ def club_names():
 
 
 def branch_games():
-    games = defaultdict(int)
+    games, club_games = defaultdict(int), defaultdict(int)
     for folder in RECEIPTS:
         for path in sorted(folder.glob("*.json")):
             receipt = json.loads(path.read_text())
             for team, stats in receipt.get("team_stats", {}).items():
+                club_games[team] += 1
                 for player, line in stats.get("players", {}).items():
                     games[(team, player)] += int(line.get("games", 0))
-    return games
+    return games, club_games
 
 
-def honoured():
+def honours_points(weights):
     data = json.loads(HONOURS.read_text())
-    names = set()
-    for team in ("first", "second"):
-        for rows in data["all_pro"][team].values():
-            names.update((r["team"], r["player"]) for r in rows)
-    for rows in data["pro_bowl"]["selections"].values():
-        names.update((r["team"], r["player"]) for r in rows)
-    return names
+    points = defaultdict(int)
+    for key, rows in (("first_team_all_pro", data["all_pro"]["first"]), ("second_team_all_pro", data["all_pro"]["second"]),
+                      ("pro_bowl", data["pro_bowl"]["selections"])):
+        for group in rows.values():
+            for r in group:
+                points[(r["team"], r["player"])] = max(points[(r["team"], r["player"])], weights[key])
+    return points
 
 
-def base_round(apy, bands):
-    for band in bands:
-        if apy >= band["min_apy"]:
+def value_round(points, thresholds):
+    for band in thresholds:
+        if points >= band["min_points"]:
             return band["round"]
     return None
 
@@ -70,24 +71,25 @@ def resolve():
     method, inputs = json.loads(METHOD.read_text()), json.loads(INPUTS.read_text())
     val, names = method["valuation"], club_names()
     slot = {row["club"]: row["slot"] for row in order()}
-    games, honours = branch_games(), honoured()
-    floor = method["qualification"]["valuation_floor_apy"]
+    games, club_games = branch_games()
+    honours = honours_points(val["honours"])
+    floor = method["qualification"]["minimum_value_points"]
     valued, below_floor = [], []
     for c in inputs["candidates"]:
         new_club = names[c["new_club"]]
-        if c["apy"] < floor:
+        g = games[(new_club, c["player"])]
+        share = g / club_games[new_club]
+        pt = next(a["points"] for a in val["playing_time"]["adjustments"] if share >= a["min_share"])
+        hp = honours[(new_club, c["player"])]
+        points = round(c["salary_percentile"] + pt + hp, 2)
+        if points < floor:
             below_floor.append(c["player"])
             continue
-        rnd = base_round(c["apy"], val["apy_round_bands"])
-        g = games[(new_club, c["player"])]
-        honour = (new_club, c["player"]) in honours
-        adjusted = max(3, rnd - 1) if honour else rnd
-        if g < 8:
-            adjusted = min(7, adjusted + 1)
         valued.append({**c, "old_club_name": names[c["old_club"]], "new_club_name": new_club,
-                       "apy_round": rnd, "branch_games_2013": g, "branch_honour_2013": honour,
-                       "value_round": adjusted})
-    key = lambda r: (r["value_round"], -r["apy"], r["player"])
+                       "branch_games_2013": g, "club_games_2013": club_games[new_club],
+                       "playing_time_points": pt, "honours_points": hp, "value_points": points,
+                       "value_round": value_round(points, val["round_thresholds"])})
+    key = lambda r: (r["value_round"], -r["value_points"], -r["apy"], r["player"])
     losses, gains = defaultdict(list), defaultdict(list)
     for r in valued:
         losses[r["old_club_name"]].append(r)
@@ -105,17 +107,17 @@ def resolve():
                 remaining.remove(hit)
             cancelled.append({"gain": gain["player"], "cancels": hit["player"] if hit else None})
         picks = remaining[:4]
-        formula += [{"club": club, "round": p["value_round"], "for_player": p["player"], "apy": p["apy"],
+        formula += [{"club": club, "round": p["value_round"], "for_player": p["player"], "apy": p["apy"], "value_points": p["value_points"],
                      "slot": slot[club], "kind": "formula"} for p in picks]
         clubs.append({"club": club, "losses": [l["player"] for l in lost], "gains": [g["player"] for g in got],
                       "cancellations": cancelled, "net_loss": len(lost) - len(got),
                       "awarded": len(picks)})
-    formula.sort(key=lambda p: (p["round"], -p["apy"], p["slot"]))
+    formula.sort(key=lambda p: (p["round"], -p["value_points"], -p["apy"], p["slot"]))
     dropped = []
     target = method["league_total"]["target"]
     while len(formula) > target:
         dropped.append(formula.pop())
-    fill = [{"club": club, "round": 7, "for_player": None, "apy": None, "slot": slot[club], "kind": "fill"}
+    fill = [{"club": club, "round": 7, "for_player": None, "apy": None, "value_points": None, "slot": slot[club], "kind": "fill"}
             for club in sorted(slot, key=slot.get)[:max(0, target - len(formula))]]
     picks = formula + fill
     base = {3: 96, 4: 128, 5: 160, 6: 192, 7: 224}
@@ -139,39 +141,51 @@ def money(value):
 
 def announcement(result):
     inputs = json.loads(INPUTS.read_text())
+    method = json.loads(METHOD.read_text())
+    val = method["valuation"]
+    fa = {r["player"]: r for r in result["valued_free_agents"]}
+    desc = lambda n: (f'{n} ({fa[n]["old_club"]} to {fa[n]["new_club"]}, {money(fa[n]["apy"])} a year, '
+                      f'{fa[n]["value_points"]:.1f} points, Round {fa[n]["value_round"]})')
+    thresholds = ", ".join(f'Round {t["round"]} at {t["min_points"]}' for t in val["round_thresholds"])
     lines = ["# 2014 compensatory picks: branch announcement", "",
              "**Announced:** Monday, March 24, 2014 (ledger Entry 100). **Generated** by `python scripts/resolve_compensatory_picks.py` from [awards.json](awards.json); do not edit by hand.", "",
-             "The league awarded 32 compensatory picks for the 2014 draft, placed after rounds 3 to 7. They rest on each club's qualifying unrestricted free agents lost and signed in the **2013** league year of this branch. The NFL formula's weights are unpublished, so the branch used its own [method](method.json), adopted before the result was computed, on [recorded inputs](inputs.json). No real 2014 award list was read. The picks cannot be traded in 2014.", "",
+             "The league awarded 32 compensatory picks for the 2014 draft, placed after rounds 3 to 7. They rest on each club's qualifying unrestricted free agents lost and signed in the **2013** league year of this branch. The NFL formula's weights are unpublished, so the branch used its own [method](method.json), version 2, on [recorded inputs](inputs.json). No real 2014 award list was read. The picks cannot be traded in 2014.", "",
+             "## How a free agent is valued", "",
+             f'- **Salary (primary):** his new contract\'s average per year as a percentile of the 2013 league market ({inputs["salary_market"]["contracts"]} contracts in force; median {money(inputs["salary_market"]["median_apy"])}). A $12.0M deal scores about 98; a $1.0M deal about 55.',
+             "- **Playing time:** branch 2013 games for his new club as a share of that club's games: 75 percent or more costs nothing, 50 to 75 percent costs 4 points, 25 to 50 percent 8, under 25 percent 12.",
+             f'- **Honours:** the highest branch 2013 honour adds points: first-team All-Pro {val["honours"]["first_team_all_pro"]}, second-team {val["honours"]["second_team_all_pro"]}, Pro Bowl {val["honours"]["pro_bowl"]}.',
+             f'- **Round:** {thresholds}. Below {method["qualification"]["minimum_value_points"]} points a free agent neither earns nor cancels a pick.',
+             "- **Net loss:** each signing cancels a loss in the same round first, then the best lower-round loss, then the weakest higher-round loss. Remaining losses become picks, at most four per club. The league fills to 32 with Round 7 picks in 2014 draft order.", "",
              "## Jacksonville", ""]
     jax = next(c for c in result["clubs"] if c["club"] == "Jacksonville Jaguars")
-    fa = {r["player"]: r for r in result["valued_free_agents"]}
-    desc = lambda n: f'{n} ({fa[n]["old_club"]} to {fa[n]["new_club"]}, {money(fa[n]["apy"])} a year, Round {fa[n]["value_round"]} value)'
-    lines += [f'**No compensatory pick.** Jacksonville lost {len(jax["losses"])} valued qualifying free agents and signed {len(jax["gains"])}, a net gain of {len(jax["gains"]) - len(jax["losses"])}.', "",
-              "- **Lost:** " + "; ".join(desc(n) for n in jax["losses"]) + ".",
-              "- **Signed:** " + "; ".join(desc(n) for n in jax["gains"]) + ".",
-              "- **Cancellations:** " + "; ".join(f'{c["gain"]} cancels {c["cancels"]}' if c["cancels"] else f'{c["gain"]} had no loss left to cancel' for c in jax["cancellations"]) + ".",
-              "- Daryl Smith re-signed with Jacksonville, so he was not a loss. Rashean Mathis, Eben Britton, George Selvie and other departures have no 2013 contract value in the source and are not counted; Rashad Jennings's $0.63M deal is below the $1.0M floor.", "",
-              "Jacksonville's own picks keep their slots; their overall numbers move to include the awards: No. 134 (Round 4), 157 and 172 (Round 5), 210 (Round 6) and 247 (Round 7).", "",
+    mine = [p for p in result["picks"] if p["club"] == "Jacksonville Jaguars"]
+    headline = (f'**{len(mine)} compensatory pick{"s" if len(mine) != 1 else ""}:** ' + ", ".join(f'No. {p["overall"]} (Round {p["round"]})' for p in mine) + "."
+                if mine else "**No compensatory pick.**")
+    lines += [f'{headline} Jacksonville lost {len(jax["losses"])} qualifying free agents and signed {len(jax["gains"])}, a net {"loss" if jax["net_loss"] > 0 else "gain"} of {abs(jax["net_loss"])}.', "",
+              "- **Lost:** " + ("; ".join(desc(n) for n in jax["losses"]) or "none") + ".",
+              "- **Signed:** " + ("; ".join(desc(n) for n in jax["gains"]) or "none") + ".",
+              "- **Cancellations:** " + ("; ".join(f'{c["gain"]} cancels {c["cancels"]}' if c["cancels"] else f'{c["gain"]} had no loss left to cancel' for c in jax["cancellations"]) or "none") + ".",
+              "- Daryl Smith re-signed with Jacksonville, so he was not a loss. Rashean Mathis, Eben Britton, George Selvie and other departures have no 2013 contract value in the source and are not counted.", "",
               "## The 32 picks", "",
               "| Overall | Round | Club | Basis |", "|---:|---:|---|---|"]
     for pick in result["picks"]:
-        basis = (f'Net loss of {pick["for_player"]} ({money(pick["apy"])} a year)' if pick["kind"] == "formula"
+        basis = (f'Net loss of {pick["for_player"]} ({money(pick["apy"])} a year, {pick["value_points"]:.1f} points)' if pick["kind"] == "formula"
                  else "Fill pick: the formula produced fewer than 32")
         lines.append(f'| {pick["overall"]} | {pick["round"]} | {pick["club"]} | {basis} |')
     lines += ["", "## Club summary", "",
-              "Only clubs with a valued qualifying loss or signing are listed.", "",
-              "| Club | Valued losses | Valued signings | Net loss | Picks |", "|---|---:|---:|---:|---:|"]
+              "Only clubs with a qualifying loss or signing are listed. Net loss is losses minus signings; a negative number is a net gain.", "",
+              "| Club | Qualifying losses | Qualifying signings | Net loss | Picks |", "|---|---:|---:|---:|---:|"]
     for c in result["clubs"]:
         if c["losses"] or c["gains"]:
             lines.append(f'| {c["club"]} | {len(c["losses"])} | {len(c["gains"])} | {c["net_loss"]} | {c["awarded"]} |')
-    adjusted = [r for r in result["valued_free_agents"] if r["value_round"] != r["apy_round"]]
+    honoured = [r for r in result["valued_free_agents"] if r["honours_points"]]
+    limited = [r for r in result["valued_free_agents"] if r["playing_time_points"]]
     lines += ["", "## Adjustments and limits", "",
-              "- **Honours:** a branch 2013 Pro Bowl or All-Pro selection raised these players one round: " + "; ".join(f'{r["player"]} (Round {r["apy_round"]} to {r["value_round"]})' for r in adjusted if r["branch_honour_2013"]) + ".",
-              ("- **Playing time:** fewer than 8 branch games for the new club lowered: " + "; ".join(f'{r["player"]} ({r["branch_games_2013"]} games)' for r in result["valued_free_agents"] if r["branch_games_2013"] < 8) + "."
-               if any(r["branch_games_2013"] < 8 for r in result["valued_free_agents"])
-               else "- **Playing time:** every valued player had at least 8 branch games for his new club, so none was lowered."),
+              "- **Honours applied:** " + ("; ".join(f'{r["player"]} (+{r["honours_points"]})' for r in honoured) or "none") + ".",
+              "- **Playing time applied:** " + ("; ".join(f'{r["player"]} ({r["branch_games_2013"]} of {r["club_games_2013"]} games, {r["playing_time_points"]})' for r in limited) or "none") + ".",
+              f'- **Below the minimum value:** {len(result["below_floor"])} moves: ' + ", ".join(result["below_floor"]) + ".",
               f'- **Coverage:** {len(inputs["candidates"])} valued moves (including Jacksonville\'s four branch signings) and {len(inputs["excluded_movers"])} club changes that do not qualify or could not be valued. Most of the unvalued moves are near-minimum deals missing from the source.',
-              "- **Not applied:** the league's post-draft signing deadline (no signing dates in the source) and the unverified real fill order (the branch fills in 2014 first-round order).",
+              "- **Not applied:** the league's post-draft signing deadline (no signing dates in the source) and the unverified real fill order (the branch fills in 2014 first-round order). Playing time is games, not snaps.",
               "- **Values:** contract APYs are Over The Cap reconstructions via nflverse, not certified league figures; Jacksonville's four signings use its branch contracts.", ""]
     return "\n".join(lines)
 
