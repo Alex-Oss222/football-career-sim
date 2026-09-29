@@ -319,3 +319,11 @@ Package A's precondition changes accordingly: Tate signed, and Hawkins or Edelma
 - Each still has to go undrafted in the branch draft, have a pre-draft scouting report and, if an underclassman, be on the January 19 special-eligibility list.
 
 **Adams has no assigned pick.** The only pick that used to name him was 37, now 36 and committed to package H. Picks 13, 26 and 31 are Donald or Fuller, Bitonio or Van Noy, and Lawrence. Adams becomes a target only where the user assigns him a pick (or at 36 if package H fails and Lawrence is gone there).
+
+## September 29, 2026 amendment: Adams at 26
+
+**User instruction, at the February 17, 2014 branch checkpoint:** pick 26 is **Davante Adams, WR, Fresno State**. If Adams is unavailable, Joel Bitonio; if Bitonio is also unavailable, Kyle Van Noy. This supersedes the previous amendment's pick 26 order (Bitonio, then Van Noy) and makes Adams the planned third receiver by draft, as that amendment anticipated.
+
+Before the pick, confirm Adams on the January 19 special-eligibility list and record a dated pre-selection scouting report; section 3 of the board already required both. No grade exists before the combine, and availability is decided at the draft by the league-rails rule.
+
+Line plan consequence: with Adams first at 26, the drafted offensive linemen are Turner (third), Linsley and Leno (fifths), and Bitonio only as the first fallback at 26. Package F2 still waits until two linemen are actually drafted, and the undrafted class stays weighted to the line. Pick 13 (Donald, then Fuller) and package H (Lawrence at 31) are unchanged.
