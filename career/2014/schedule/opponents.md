@@ -13,4 +13,4 @@
 
 **Dates, times, networks and the bye** come from the April 23, 2014 schedule release (a gated date). How the real date rails map onto the branch's pairings is decided when that gate is reached; this page is not a schedule.
 
-**Other clubs:** every club's same-place opponents come from the same branch standings. The full league slate is built at the schedule gate.
+**Other clubs:** the complete [32-club opponent matrix](league_opponents.md) is now generated from the same branch standings and [verified rotation](sources.md). The [release procedure](release_plan.md) places those matchups into dated fixtures at the schedule gate. The [schedule index](README.md) links both views.

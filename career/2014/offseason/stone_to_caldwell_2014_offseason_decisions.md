@@ -252,3 +252,13 @@ Actual inquiries/offers and a completed trade belong in the dated trade records 
 - Scouting uses only evidence public by the applicable branch date. This selection instruction supplies no prospect grade, medical finding, future NFL performance, guaranteed role or automatic development outcome.
 
 This is a draft-plan amendment. Donald has not been drafted or added to Jacksonville's roster. The clock remains February 2; the Round 1 selection is executed when the calendar reaches May 8, 2014. Record the actual selection, contract/control consequences and league-rails pairing only at that event.
+
+## September 29, 2026 amendment: Linsley on Detroit's fifth; Gaines on Jacksonville's sixth
+
+**User instruction, at the unchanged February 2, 2014 branch checkpoint:** target **Corey Linsley, C, Ohio State**, with **Detroit's original 2014 fifth-round pick**, owned by Jacksonville from the Mike Thomas trade. Target **E. J. Gaines, CB, Missouri**, with **Jacksonville's original 2014 sixth-round pick**, replacing Matt Paradis in that slot.
+
+The assets, rather than the original approximate overall labels, control: Detroit R5 is slot 11 in its round, **139 + C3 + C4** overall; Jacksonville R6 is slot 26, **186 + C3 + C4 + C5** overall. C3/C4/C5 are compensatory selections appended to those earlier rounds and are not yet assigned. Use the generated [draft order](../draft/draft_order.md) when their numbering becomes final.
+
+Linsley is an additional target on the restored Detroit asset. Charles Leno Jr. remains the target on Jacksonville's own fifth. Gaines supersedes the earlier Paradis-first instruction and the contingent Shelby Harris selection attached to that sixth-round choice. The user has not specified a fallback for either Linsley or Gaines; do not silently transfer Paradis, Stork, Swanson, Harris or another comparison into a new selection instruction. Retain their earlier scouting work as history. All other picks, the separate Butler/Cockrell instruction and the undrafted watch list remain unchanged.
+
+These are intentions, not acquisitions or new evaluations. Before spending either pick, confirm the branch asset and final overall number, eligibility and dated pre-selection scouting evidence, then apply the draft rails availability rule when the May 8–10 draft runs. Do not use the real selection or later career to promise availability or assign a grade today. Neither target satisfies package F2's requirement that Jacksonville actually draft two linemen. No draft, trade, roster change or clock advance occurs in this amendment.

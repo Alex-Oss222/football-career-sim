@@ -302,6 +302,14 @@ def validate(root=ROOT):
                     'career/2014/draft/draft_order.md is stale; run render_draft_order.py')
         except (OSError, ValueError, KeyError, TypeError) as exc:
             errors.append(f'Draft order cannot be rebuilt from receipts: {exc}')
+    # The opponent inventory is deliberately undated; validate it without
+    # substituting the historical standings or opening the schedule gate.
+    if (root/'career/2014/schedule/rotation_2014.json').exists():
+        try:
+            from runtime.schedule_2014 import check as check_2014_opponents
+            errors.extend(check_2014_opponents(root))
+        except (OSError, ValueError, KeyError, TypeError) as exc:
+            errors.append(f'2014 opponent matrix cannot be rebuilt: {exc}')
     try:
         from scripts.render_box_score import stale_blocks
         receipt_dir = root/'career/2013/stats/game_receipts'
