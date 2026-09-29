@@ -1,6 +1,6 @@
 # Jacksonville 2014 trade offer log
 
-**Status at February 2, 2014:** no 2014 inquiry, offer, counter or agreement is recorded. The [six prepared packages](trade_targets.md) are intentions. No contact is inferred from a target list.
+**Status at February 17, 2014:** no 2014 inquiry, offer, counter or agreement is recorded; trades cannot execute before March 11, 4 p.m. ET. The [six prepared packages](trade_targets.md) are intentions. No contact is inferred from a target list.
 
 ## Actual communications
 

@@ -1,6 +1,6 @@
 # 2014 operating baseline and handoffs
 
-**Prepared at the unchanged February 2, 2014 checkpoint; administratively reconciled through Entry 82; staff facts through Entry 84.** This is the 2014 working structure for the offseason and eventual season. No tag, offer, signing, trade, training phase, draft selection or game is completed by preparing it. The next checkpoint is February 3 for waivers (the February staff events are closed in Entries 83-84); the tag window follows February 17.
+**Prepared at the February 2, 2014 checkpoint; current through February 17, 2014 (Entry 86).** This is the 2014 working structure for the offseason and eventual season. No tag, offer, signing, trade, training phase, draft selection or game is completed by preparing it. The tag window opened February 17; the next dated events are the Combine (February 19-25), the March 3 designation deadline and the March 11 league year.
 
 ## Start here
 
@@ -26,11 +26,11 @@ The generated 2,208-player league inventory is research data with unknown contra
 
 ## Decisions and facts still pending
 
-- Package A's Seattle-original-second identity conflicts with the memo's No. 37 label; the current asset is No. 36. Resolve before communicating an offer. It does not block the tag window or unrelated packages.
+- Package A asks for Seattle's original second, No. 36 (user amendment, September 29, 2026). Package H (No. 36 and Nwaneri to Minnesota for No. 31, for DeMarcus Lawrence) follows only if A closes.
 - Package G retains actual Posluszny clearance and must finish by April 21. No buyer, compensation or cap saving is presumed. Nwaneri's bonus date/clauses still require verification before F1.
 - The special-teams search is closed: Oakland re-signed Bobby April and refused the lateral request; Mike Westhoff was hired as special teams coordinator on February 11 (Entry 84).
 - The pre-program film/contact rules check and explicitly pending phase choices still matter before the work they govern. Existing adopted individual-development methods remain adopted. Five prepared NOT_STARTED outputs do not resolve those choices or create delivery receipts.
-- Linsley and Gaines are current targets; no fallback is supplied for either. Later overall numbers await compensatory awards. Eligibility, pre-selection reports and availability remain normal draft-date prerequisites.
+- Linsley and Gaines are current targets. Fallbacks (memo amendment, September 29, 2026): Paradis, then Stork, then Swanson for Linsley; Cockrell for Gaines, then Butler in round 7. Later overall numbers await compensatory awards. Eligibility, pre-selection reports and availability remain normal draft-date prerequisites.
 
 ## Before any 2014 game
 

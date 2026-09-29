@@ -2474,3 +2474,44 @@ No other club asked for a Jacksonville assistant, and none left. Nothing was pen
 **Atomic closure.** The following now agree: the roster (practice squad 0, six reserve/future contracts), the contract status register, the 2014 preparation worksheet, `free_agency/signings.md`, `league_rails/fa_draws.md`, Seattle's rails page, one-line pointers in the futures page and living profiles, the film queue, the calendar, the readiness and operating baseline pages, and Documents 4 (register 41) and 5 (state 61). The 53 controlled players do not change, and no cap figure is certified. The clock is still February 2, 2014.
 
 **Commit closed - Canonical update - February 2, 2014 - 2014 reserve/future contracts signed (six of eight) - canonical through February 2, 2014**
+
+
+## Entry 86: Clock advanced to February 17, 2014 (franchise and transition window open)
+
+**Effective canonical state:** February 17, 2014.
+**Recorded:** September 29, 2026
+**Checkpoint:** `Canonical update - February 17, 2014 - Clock advanced to February 17 (franchise and transition window open)`
+**Preceding global package checkpoint:** `Canonical update - February 2, 2014 - 2014 reserve/future contracts signed (six of eight)`
+
+**Authority.** On September 29, 2026 the user asked for everything resolvable between February 3 and February 17 to be closed, and then for the clock to advance to February 17. Entries 83 to 85 closed the staff and reserve/future events. This entry closes the rest of the window and moves the master clock.
+
+**Caldwell's pre-tag-window verifications.** `career/2014/offseason/caldwell_pre_tag_verifications.md` answers memo section 7 as of February 17. The research had two passes, and every figure rests on search-result text.
+- **Jeremy Cain.** His three-year February 2011 contract expired after 2013. He is a pending unrestricted free agent with at least 5 accrued seasons. Stone's one-year minimum offer is Caldwell's to make. Its outcome is resolved under the rails at Cain's decision date.
+- **Montell Owens.** He is under contract through 2015 (Supported). His 2014 base is unknown, and he is kept.
+- **John Parker Wilson and Jonathan Grimes.** Both stay Unresolved. The verification pass did not support the reserve/future label on Wilson's contract.
+- **Carryover.** Jacksonville carried unused 2013 room into 2014 (Confirmed). The amount, reported at about $19M to $20M, is Unverified, and the adjusted 2014 figures are not public until February 28.
+- **Nwaneri.** His 2014 base ($3.775M), $1.0M roster bonus and 2015 end year are Confirmed. The bonus due date is not, so package F1's deadline stays unknown.
+- **Mincey, Mosley and Lowery.** Their 2014 figures stay partly Unverified. No release saving is booked.
+
+As a result, the contract status register now shows 36 under contract, 8 pending UFAs, 3 RFAs, 3 ERFAs, Meester retired and 2 unresolved.
+
+**Nothing else happened between February 3 and 17.**
+- The 2014 waiver system opened February 3; Jacksonville made no claim because there was no instruction.
+- No trade can execute before March 11 at 4 p.m. ET.
+- No tag was designated. Stone's plan uses the tag only as a March 3 fallback on Monroe.
+- No tender was made. Bradfield's lowest tender and the ERFA tenders for Clemons, Brown and Pasztor are due before the March 11 deadline.
+- Jacksonville's own free agents resolve at their real signing dates under the rails.
+- No real retirement dated February 3 to 17 is recorded in `league_rails/retirements.md`, and no other-club move in that window is filled in the club rails pages. The one dated move in the window, D'Anthony Smith's real Seattle reserve/future contract of February 5, did not apply (Entry 85).
+- No new research was done for this entry.
+
+**Next dated events.**
+- Combine, February 19 to 25 (newly public evidence only).
+- Cap and tag figures public, February 28.
+- Designation deadline, March 3 at 4 p.m. ET.
+- Negotiating window from March 8 at noon.
+- March 11 at 4 p.m. ET: the league year opens, tenders are due, reserve/future contracts take effect, Meester's contract expires, and trades open.
+- Nwaneri's roster-bonus date is unknown.
+
+**Atomic closure.** The following now agree: the master clock (February 17), the roster header and player ages, the contract status register and 2014 worksheet, the calendar, the 2014 README, readiness and operating baseline pages, the trade status lines, the staff pages' clock references, and Documents 4 (register 42) and 5 (state 62). There is no player-control, cap-certification, staff, pick or game change. The private snapshot is not advanced from this branch.
+
+**Commit closed - Canonical update - February 17, 2014 - Clock advanced to February 17 (franchise and transition window open) - canonical through February 17, 2014**

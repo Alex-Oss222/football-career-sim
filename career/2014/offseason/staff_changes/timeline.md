@@ -2,7 +2,7 @@
 
 [Staff overview](README.md) | [Replacement targets](staff_plan.md) | [Jacksonville hiring record](hires.md) | [2014 calendar](../../calendar.md)
 
-**Through:** February 17, 2014 for resolved staff events (Entries 83 and 84, resolved retroactively); the career clock remains February 2, 2014. This page summarizes the closed staff events and links to their records. It does not advance the season or turn a proposed move into a hire.
+**Through:** February 17, 2014 for resolved staff events (Entries 83 and 84, resolved retroactively); the career clock reached February 17, 2014 in Entry 86. This page summarizes the closed staff events and links to their records. It does not advance the season or turn a proposed move into a hire.
 
 ## Where the staff stands
 

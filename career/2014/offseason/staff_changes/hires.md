@@ -2,7 +2,7 @@
 
 [Staff overview](README.md) | [Dated staff timeline](timeline.md) | [Targets and terms](staff_plan.md)
 
-**Through:** February 11, 2014 (events resolved retroactively; career clock February 2, 2014). **The special teams coordinator search is closed: Mike Westhoff was hired on February 11, 2014** (ledger Entry 84). Method: [st_search_method.json](st_search_method.json), committed before the draw; result: [st_search_results.json](st_search_results.json).
+**Through:** February 11, 2014 (events resolved retroactively in Entry 84; the clock reached February 17 in Entry 86). **The special teams coordinator search is closed: Mike Westhoff was hired on February 11, 2014** (ledger Entry 84). Method: [st_search_method.json](st_search_method.json), committed before the draw; result: [st_search_results.json](st_search_results.json).
 
 ## Current vacancy
 

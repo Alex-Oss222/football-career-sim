@@ -2,7 +2,7 @@
 
 **Start here:** [Dated staff timeline](timeline.md) · [Replacement targets](staff_plan.md) · [Jacksonville hiring record](hires.md) · [Current staff and contracts](../../../2013/coaching_staff.md)
 
-**Status (resolved through February 17, 2014; career clock February 2):** Alan Lowry left on January 12; **Mike Westhoff was hired as special teams coordinator on February 11** (Entry 84), ending Stone's interim direction. No assistant left in the February exposure (Entry 83). Twelve assistants are under contract.
+**Status (resolved through February 17, 2014; career clock February 17 since Entry 86):** Alan Lowry left on January 12; **Mike Westhoff was hired as special teams coordinator on February 11** (Entry 84), ending Stone's interim direction. No assistant left in the February exposure (Entry 83). Twelve assistants are under contract.
 
 **Function:** the folder for Jacksonville's 2014 coaching-staff turnover: other clubs' requests to interview Stone's assistants, the answers, any departures, and the hiring of replacements.
 **Created:** September 28, 2026, at the user's request (branch date February 2, 2014).
