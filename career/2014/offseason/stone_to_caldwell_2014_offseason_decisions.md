@@ -392,3 +392,13 @@ Package E is folded into package I while package I is live. Nothing executes bef
 **No rival contract.** A target with no rival real contract by the moment Jacksonville's offer can first be signed decides at 4 p.m. March 11 at the 0.90 ceiling. This covers Te'o-Nesheim (no 2014 contract) and Cain (unsigned until September 1, 2014).
 
 **Later draws held.** Tate, Hawkins, Edelman and Jared Allen are drawn at their real dates after March 11. The offers go in when talks open at noon on March 8.
+
+## September 29, 2026 amendment: Caldwell negotiation authority and Monroe baseline
+
+**User instruction for the authorized replay of March 8–11, 2014. Planning only; no replacement result has closed.** Stone directs Caldwell to use the cap sheet and act as the general manager. The earlier contract figures are negotiating baselines, not instructions to submit identical offers without judgment. Within lawful contract and cap rules, Caldwell may set price, guarantees, bonus timing, incentives and other terms, negotiate independently, or decline an uneconomic agreement. This supersedes the first-pass method's statement that Caldwell must offer every memo figure exactly; the original method and results remain preserved as first-pass history.
+
+The working routine is player by player: Caldwell identifies the player and the decision, Stone supplies a baseline, and Caldwell handles the negotiation and reports the resolved result with a comprehensive contract schedule. The player's answer remains independent. Stone does not need to approve every negotiating adjustment. This instruction does not promise acceptance, change draft selections or authorize fictional transaction receipts.
+
+**Monroe first.** Stone's latest baseline is five seasons (2014–2018), up to $42,500,000, with $20,000,000 fully guaranteed: a $5,000,000 signing bonus plus $6,500,000 2014 base and $8,500,000 2015 base. Each of 2016–2018 has $6,500,000 base, a $500,000 roster bonus on the fifth day of the league year and up to $500,000 in per-game active bonuses. Caldwell selects this structure for the prepared offer. The [complete Monroe proposal](free_agency/monroe_negotiation_2014.md) records cash, cap treatment, guarantees, exit exposure and the conditional replay cap bridge.
+
+The existing private resolution service is unavailable in the preparing session, so no new player answer, contract, clock advance or canonical cap change is asserted. The authorized redo remains pending resolution; do not rerun locally, reuse the old draw or label the proposal signed.
