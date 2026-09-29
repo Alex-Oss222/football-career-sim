@@ -82,7 +82,11 @@ The linked exits and [player assessments](../2014/offseason/player_development/r
 
 Lowry left January 12, 2014 for Atlanta's branch head-coach job. His Jacksonville spring/preseason coverage instruction and specialist operation remain part of the evidence, including shared work with Thielen. Later real-world results are not his branch future. Jacksonville's unresolved punt/coverage questions require instruction and execution review; do not make either the departed coordinator or the punter responsible solely from the outcome.
 
-Stone owns the interim operation. [The April search](../2014/offseason/staff_changes/staff_plan.md) has not produced a hire. When an appointment closes, create the new coach's initial assessment from permitted evidence and record the actual handoff; do not transfer Lowry's demonstrated work to his replacement. Sources: [staff timeline](../2014/offseason/staff_changes/timeline.md), [Thielen](../2013/exit_interviews/main_core/adam_thielen.md), [Anger](../2013/exit_interviews/core/bryan_anger.md), [Scobee](../2013/exit_interviews/core/josh_scobee.md).
+Stone ran the interim operation from January 12 until Mike Westhoff's appointment as special teams coordinator on February 11 (Entry 84; [hiring record](../2014/offseason/staff_changes/hires.md)). Do not transfer Lowry's demonstrated work to his replacement.
+
+## Mike Westhoff: appointed February 11, 2014
+
+No Jacksonville evidence exists yet. His pre-2014 record (Colts, USFL, Dolphins special teams 1986-2000, Jets special teams coordinator 2001-12, retired after 2012) is in the [staff register, section 6](../2013/coaching_staff.md#6-special-teams). Build his working assessment from his first permitted Jacksonville teaching and unit work, not from reputation or later real-world results. Sources: [staff timeline](../2014/offseason/staff_changes/timeline.md), [Thielen](../2013/exit_interviews/main_core/adam_thielen.md), [Anger](../2013/exit_interviews/core/bryan_anger.md), [Scobee](../2013/exit_interviews/core/josh_scobee.md).
 
 ## Dated changes after this baseline
 
@@ -91,5 +95,6 @@ Append one entry for a material supported change, retaining prior entries. The c
 | Evidence date | Coach | Previous interpretation | Actual source and observed contribution | Revised or retained view | Linked player/shared job and next opportunity |
 |---|---|---|---|---|---|
 | February 2, 2014 cutoff; retrospective compilation | All listed | Entry résumé and existing role records | Linked 2013 outputs and January exits | Initial working assessments above; no new performance observed | [Room plans](../2014/offseason/training/unit_plans.md) and individual records |
+| February 11, 2014 appointment (Entry 84) | Mike Westhoff | Not on staff | Appointment and pre-2014 record only | No working assessment yet; the interim special-teams operation passes from Stone to Westhoff | Specialist and coverage follow-ups in the [film queue](../2014/offseason/film/player_queue.md) |
 
 Future observed effects belong in the shared football assignment once. Do not stack a coach reputation bonus, player-growth bonus and chemistry bonus on the same correction. E1 remains a planned implementation, as the [decision record](../../runtime/2014_engine_decisions.md) states.

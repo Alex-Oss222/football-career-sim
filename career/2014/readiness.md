@@ -1,15 +1,15 @@
 # 2014 setup and execution checklist
 
-**Checkpoint: February 2, 2014, Entry 82.** Setup is prepared; games remain blocked. [Operating baseline](operating_baseline.md) owns the workflow, [calendar](calendar.md) the dates, and [Document 5](../../state/05_Current_Season_State.md) the current snapshot. The planning season and current record owner are deliberately separate in [repository_map.json](../../docs/repository_map.json).
+**Checkpoint: February 17, 2014, Entry 86.** Setup is prepared; games remain blocked. [Operating baseline](operating_baseline.md) owns the workflow, [calendar](calendar.md) the dates, and [Document 5](../../state/05_Current_Season_State.md) the current snapshot. The planning season and current record owner are deliberately separate in [repository_map.json](../../docs/repository_map.json).
 
 | Area | Prepared now | Remaining work and gate |
 |---|---|---|
 | PR #135 integration | Living coaching profiles and their phase links coexist with the newer baseline, eight-pick board and phase outputs | Profiles are evidence records, not engine implementation |
-| Current handoff | Entry 82 reconciles plan, staff, roster-count and next-checkpoint summaries | First actual 2014 event establishes year-local current owners together |
-| Contracts/cap | [2014 worksheet](offseason/current_cap_worksheet.md), corrected retired-player classification | Verify unresolved clauses, futures rights and actual 2014 obligations before affected execution |
-| Staff | Bobby April selected at recorded terms; Stone interim ST | Permission/availability, offer, response and appointment still require actual events; deferred Buffalo/Minnesota decisions after February 2 |
+| Current handoff | Entry 82 reconciled plan, staff, roster-count and next-checkpoint summaries; Entries 83-86 closed the February staff, futures and contract-status events and advanced the clock to February 17 | First actual 2014 event establishes year-local current owners together |
+| Contracts/cap | [2014 worksheet](offseason/current_cap_worksheet.md), corrected retired-player classification | Verify unresolved clauses, reserve/future players' credited seasons and actual 2014 obligations before affected execution |
+| Staff | Mike Westhoff special teams coordinator from February 11 (Entry 84); February coaching exposure resolved with no departure (Entry 83) | Emergency succession for a caller remains unassigned |
 | Training | Five linked NOT_STARTED outputs, player profiles, film queue, coach profiles | Pending role/Boot Flood/punt choices and lawful pre-program contact; no invented delivery receipts |
-| Draft | 224 ordinary assets and eight Jacksonville targets | March 24 branch compensatory awards, final numbering, specific conditional holds; Linsley/Gaines dated reports; package A asset interpretation |
+| Draft | 224 ordinary assets and eight Jacksonville targets | March 24 branch compensatory awards, final numbering, specific conditional holds; Linsley/Gaines and fallback dated reports; package A pick fixed at 36 and package H recorded (memo amendment, September 29, 2026) |
 | Schedule | All-club 256-matchup opponent matrix and release plan | April 23 dated reconciliation, venue/bye/rest checks and frozen fixtures; no opponent matrix substituted for fixtures |
 | League inputs | Offline 2,208-player research inventory | Dated movements, branch-control exclusions, draft swaps and legal 2014 Week 1 inputs |
 | Tooling | Explicit season paths, separate caches/event IDs, foreign-receipt checks and season-specific preflight | Accept a complete synthetic 2014 closure after legal inputs and the new engine exist |

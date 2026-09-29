@@ -73,3 +73,4 @@
 
 | Real date | Move | Player | Detail | Source | Gate passed in branch? |
 |---|---|---|---|---|---|
+| February 5, 2014 | Reserve/future contract | D'Anthony Smith, DT | Real Seattle signing of Jacksonville's 2013 practice-squad player. In the branch Jacksonville won the market draw at this date and signed him | HeraldNet and Field Gulls, February 6, 2014 (cited in `../../futures_method.json`) | No: not applied; Jacksonville signed him (ledger Entry 85) |

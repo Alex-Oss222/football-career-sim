@@ -1,0 +1,158 @@
+{
+ "procedure": "coaching-carousel-2014-deferred-v1",
+ "event_id": "2014-coaching-carousel-deferred-v1",
+ "snapshot": "892acee1c74ccbc2f9e6c487ee7a9a351411624e20918153e34ccffc4a18996c",
+ "method_sha256": "4c6ee7f4ec1b65d74dd75b39af9200b77a2ad12c163c3e4295a6ce55963d93b1",
+ "code_sha256": "83ec886d316dd21e1863a5bad1113645759d121846dba93ad75a2466d986fc2e",
+ "entry75_code_sha256": "433ade03068337cfe3c38a1479e6188b18a82ce4f15f0939187a0360fe34a486",
+ "rates_sha256": "58ba80eb9dff3950f4bbe4481ad04dd4498794d6656e4779a463d3f73cb0a183",
+ "inputs_sha256": "564af3266336cc031839e969c4272fa6395270a4d0c6a2a9d12dc20cba2025e3",
+ "ledger_entry": "Entry 83",
+ "packet_sha256": "27f11087b3e007955782e841d3375005126f43eb570e9d06dafb6752ada2a9fd",
+ "result_ref": "20275e999462502f0c6432e1c63056c9d5b017b4d420b146b62fe5af9823946f",
+ "head_coach_changes": [
+  {
+   "club": "Buffalo Bills",
+   "coach": "Doug Marrone",
+   "record_wins": 9.0,
+   "cell": "playoffs|1st season",
+   "p_change": 0.0416,
+   "draw": 0.6475,
+   "changed": false
+  },
+  {
+   "club": "Minnesota Vikings",
+   "coach": "Leslie Frazier",
+   "record_wins": 13.0,
+   "cell": "playoffs|2nd-3rd",
+   "p_change": 0.0254,
+   "draw": 0.0048,
+   "changed": true,
+   "vacancy_opens": "2014-02-03",
+   "hire_day": "2014-02-17",
+   "hired_from": "external"
+  }
+ ],
+ "openings": [
+  {
+   "club": "Chicago Bears",
+   "job": "offensive coordinator",
+   "decision_date": "2014-02-09",
+   "reaches_jacksonville": true
+  },
+  {
+   "club": "Chicago Bears",
+   "job": "defensive coordinator",
+   "decision_date": "2014-02-09",
+   "reaches_jacksonville": true
+  },
+  {
+   "club": "Cleveland Browns",
+   "job": "offensive coordinator",
+   "decision_date": "2014-01-17",
+   "reaches_jacksonville": true
+  },
+  {
+   "club": "Dallas Cowboys",
+   "job": "defensive coordinator",
+   "decision_date": "2014-02-09",
+   "reaches_jacksonville": true
+  },
+  {
+   "club": "Kansas City Chiefs",
+   "job": "defensive coordinator",
+   "decision_date": "2014-01-18",
+   "reaches_jacksonville": true
+  },
+  {
+   "club": "New York Giants",
+   "job": "offensive coordinator",
+   "decision_date": "2014-01-17",
+   "reaches_jacksonville": true
+  },
+  {
+   "club": "New York Jets",
+   "job": "defensive coordinator",
+   "decision_date": "2014-01-18",
+   "reaches_jacksonville": true
+  },
+  {
+   "club": "Oakland Raiders",
+   "job": "offensive coordinator",
+   "decision_date": "2014-02-09",
+   "reaches_jacksonville": true
+  },
+  {
+   "club": "Oakland Raiders",
+   "job": "defensive coordinator",
+   "decision_date": "2014-02-12",
+   "reaches_jacksonville": true
+  },
+  {
+   "club": "Tennessee Titans",
+   "job": "offensive coordinator",
+   "decision_date": "2014-01-18",
+   "reaches_jacksonville": true
+  }
+ ],
+ "events": [
+  {
+   "date": "2014-02-06",
+   "club": "Chicago Bears",
+   "coach": "Frank Bush",
+   "job": "defensive coordinator",
+   "event": "request",
+   "detail": "probability 0.0947"
+  },
+  {
+   "date": "2014-02-06",
+   "club": "Chicago Bears",
+   "coach": "Frank Bush",
+   "job": "defensive coordinator",
+   "event": "permission granted",
+   "detail": "lateral under the 2013 rules (T3) but a step up in title; Jacksonville's default policy grants it"
+  },
+  {
+   "date": "2014-02-06",
+   "club": "Chicago Bears",
+   "coach": "Frank Bush",
+   "job": "defensive coordinator",
+   "event": "interview",
+   "detail": ""
+  },
+  {
+   "date": "2014-02-17",
+   "club": "Minnesota Vikings",
+   "coach": "Jeremy Bates",
+   "job": "quarterbacks",
+   "event": "request",
+   "detail": "probability 0.0300"
+  },
+  {
+   "date": "2014-02-17",
+   "club": "Minnesota Vikings",
+   "coach": "Jeremy Bates",
+   "job": "quarterbacks",
+   "event": "permission refused",
+   "detail": "lateral (rule T3); Jacksonville's default policy refuses a move to the same job elsewhere"
+  },
+  {
+   "date": "2014-02-17",
+   "club": "Minnesota Vikings",
+   "coach": "Mike Tice",
+   "job": "offensive coordinator",
+   "event": "request",
+   "detail": "probability 0.0253"
+  },
+  {
+   "date": "2014-02-17",
+   "club": "Minnesota Vikings",
+   "coach": "Mike Tice",
+   "job": "offensive coordinator",
+   "event": "permission refused",
+   "detail": "lateral (rule T3); Jacksonville's default policy refuses a move to the same job elsewhere"
+  }
+ ],
+ "departed": {},
+ "pending": []
+}

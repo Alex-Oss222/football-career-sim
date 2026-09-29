@@ -47,9 +47,10 @@ class PlayerBiographyTests(unittest.TestCase):
         self.assertEqual(render_player_ages.check(), [])
         roster = (ROOT / "career/2013/roster.md").read_text()
         names = [n for n, _, _ in render_player_ages.controlled_rows(roster)]
-        self.assertEqual(len(names), 61)
-        self.assertEqual(len(set(names)), 61)
-        self.assertIn("| Tyler Bray | QB | 1991-12-27 | 22 | Practice squad |", roster)
+        # 53 controlled plus six 2014 reserve/future contracts (Entry 85).
+        self.assertEqual(len(names), 59)
+        self.assertEqual(len(set(names)), 59)
+        self.assertIn("| Tyler Bray | QB | 1991-12-27 | 22 | Reserve/Future | February 3, 2014 |", roster)
 
     def test_regeneration_replaces_stale_age_and_is_idempotent(self):
         text = "<!-- player-ages-as-of: 2013-12-29 -->\n\n| Player | Pos | DOB | Age | Status |\n|---|---|---|---:|---|\n| Mike Harris | CB | 1900-01-01 | 99 | Active 53 |\n"

@@ -1,12 +1,12 @@
 # Jacksonville Jaguars roster
 
-**As of:** February 2, 2014, after Super Bowl XLVIII; 2013 season complete (Jacksonville eliminated in the AFC Divisional round).
+**As of:** February 17, 2014 (ledger Entry 86); 2013 season complete (Jacksonville eliminated in the AFC Divisional round).
 **Canonical controlled-player count:** **53** (52 active; Brad Meester on Reserve/Retired until his contract expires March 11, 2014, ledger Entry 79).
 **Active roster:** **52** (Meester moved to Reserve/Retired in Entry 79); Justin Blackmon was reinstated from Reserve/Suspended on October 7 and activated to the open spot (ledger Entry 42).
-**Practice squad:** **8**, separate from the active roster.
+**Practice squad:** **0**. The eight 2013 practice-squad contracts ended with Jacksonville's season. **Reserve/future contracts for 2014:** **6**, signed February 3 and 5, 2014 (ledger Entry 85), effective at the March 11, 2014 league year; they are not practice-squad places and are not part of the 53 controlled players above.
 **Record:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-1 (AFC Wild Card: Jacksonville 38, Kansas City 14; AFC Divisional: Tennessee 20, Jacksonville 13).
 
-<!-- player-ages-as-of: 2014-02-02 -->
+<!-- player-ages-as-of: 2014-02-17 -->
 
 Birth dates are sourced in the [identity registry](../../library/data/player_birth_dates.json). **Age** is completed years at the master date in Document 5; [league ages](player_ages.md) update through the same renderer.
 
@@ -32,7 +32,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
-| C.J. Anderson | RB | 1991-02-10 | 22 | Active 53 | No communicated restriction | RB3; coverage units |
+| C.J. Anderson | RB | 1991-02-10 | 23 | Active 53 | No communicated restriction | RB3; coverage units |
 | Jonathan Grimes | RB | 1989-12-21 | 24 | Active 53 | No communicated restriction | RB2 |
 | Maurice Jones-Drew | RB | 1985-03-23 | 28 | Active 53 | No communicated restriction | Lead back |
 
@@ -47,7 +47,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
 | Justin Blackmon | WR | 1990-01-09 | 24 | Active 53 | No communicated restriction | WR3 / outside Z (from Week 8) |
-| Mike Brown | WR | 1989-02-09 | 24 | Active 53 | No communicated restriction | WR5 |
+| Mike Brown | WR | 1989-02-09 | 25 | Active 53 | No communicated restriction | WR5 |
 | Toney Clemons | WR | 1988-10-11 | 25 | Active 53 | No communicated restriction | WR4 |
 | Cecil Shorts | WR | 1987-12-22 | 26 | Active 53 | No communicated restriction | WR1 |
 | Adam Thielen | WR | 1990-08-22 | 23 | Active 53 | No communicated restriction | WR2 / H (movable receiver); coverage units |
@@ -143,18 +143,20 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Bryan Anger | P | 1988-10-06 | 25 | Active 53 | No communicated restriction | P |
 | Jeremy Cain | LS | 1980-03-24 | 33 | Active 53 | No communicated restriction | LS |
 
-## 4. Practice squad
+## 4. Reserve/future contracts (2014) and the 2013 practice squad
 
-| Player | Pos | DOB | Age | Status |
-| --- | --- | --- | ---: | --- |
-| Tyler Bray | QB | 1991-12-27 | 22 | Practice squad |
-| Richard Murphy | RB | 1986-09-18 | 27 | Practice squad |
-| Will Ta'ufo'ou | FB | 1986-06-19 | 27 | Practice squad |
-| Jerrell Jackson | WR | 1990-02-06 | 23 | Practice squad |
-| Jerome Long | DT | 1990-04-09 | 23 | Practice squad |
-| D'Anthony Smith | DT | 1988-06-09 | 25 | Practice squad |
-| Brandon King | DB | 1987-01-28 | 27 | Practice squad |
-| Antwon Blake | S | 1990-08-09 | 23 | Practice squad |
+Jacksonville's 2013 practice squad (formed September 1, 2013, ledger Entry 27) had eight players: Tyler Bray, Richard Murphy, Will Ta'ufo'ou, Jerrell Jackson, Jerome Long, D'Anthony Smith, Brandon King and Antwon Blake. Their practice-squad contracts ended with the season. Under Stone's February 2 memo, Caldwell offered six of them reserve/future contracts on February 3, 2014; all six signed (ledger Entry 85; `career/2014/offseason/futures_results.json`). Terms for each: the 2014 minimum for his credited seasons, no guarantee, no signing bonus. The contracts take effect at the 2014 league year (March 11, 2014, 4:00 p.m. ET) and count toward the 90-player limit from then; they are camp places, not 2014 practice-squad places.
+
+| Player | Pos | DOB | Age | Status | Signed |
+| --- | --- | --- | ---: | --- | --- |
+| Tyler Bray | QB | 1991-12-27 | 22 | Reserve/Future | February 3, 2014 |
+| Richard Murphy | RB | 1986-09-18 | 27 | Reserve/Future | February 3, 2014 |
+| Jerrell Jackson | WR | 1990-02-06 | 24 | Reserve/Future | February 3, 2014 |
+| Jerome Long | DT | 1990-04-09 | 23 | Reserve/Future | February 3, 2014 |
+| D'Anthony Smith | DT | 1988-06-09 | 25 | Reserve/Future | February 5, 2014 (market draw against a real Seattle reserve/future contract of the same date) |
+| Antwon Blake | S | 1990-08-09 | 23 | Reserve/Future | February 3, 2014 |
+
+**Not offered:** Brandon King (DB) and Will Ta'ufo'ou (FB) were not offered contracts under Stone's memo. They left as free agents when their practice-squad contracts ended and are no longer under Jacksonville control. No later destination is recorded for either.
 
 ## 5. August 31 departures
 

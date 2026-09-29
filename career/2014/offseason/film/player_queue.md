@@ -2,9 +2,9 @@
 
 [Film workflow](README.md) | [Delivery log](delivery_log.md) | [Room work plans](../training/unit_plans.md)
 
-**Baseline:** February 2, 2014, Entry 79. This obligation inventory covers all 61 players in the exit-interview index and controlled inventory: 52 active, 8 practice squad and Meester on Reserve/Retired. It is not a current roster or a claim that these players are signed for the spring. Recheck club control, contract status and medical instructions before contact or participation. The dated retirement change controls over the old roster page’s unreconciled “Active roster: 53” summary line; this planning task does not rewrite roster history.
+**Baseline:** February 2, 2014, Entry 79. This obligation inventory covers all 61 players in the exit-interview index and controlled inventory: 52 active, the 8 from the 2013 practice squad (six now on 2014 reserve/future contracts; King and Ta'ufo'ou left, Entry 85) and Meester on Reserve/Retired. It is not a current roster or a claim that these players are signed for the spring. Recheck club control, contract status and medical instructions before contact or participation. The dated retirement change controls over the old roster page’s unreconciled “Active roster: 53” summary line; this planning task does not rewrite roster history.
 
-**Preparation is not delivery.** All historic receipt statuses begin unverified. No video asset was supplied. The Cousins source index is prepared, but cause review, comparison clips, coach approval and player delivery are still open. Other packets are queued from the linked promises, not purportedly completed. Stone owns special teams until a recorded appointment; selecting Bobby April does not transfer the work.
+**Preparation is not delivery.** All historic receipt statuses begin unverified. No video asset was supplied. The Cousins source index is prepared, but cause review, comparison clips, coach approval and player delivery are still open. Other packets are queued from the linked promises, not purportedly completed. Special-teams packets pass from Stone to Mike Westhoff, special teams coordinator from February 11 (Entry 84); earlier obligations and receipts are retained.
 
 **Timing:** “Jan 31 promise” means the player’s source explicitly gives that old deadline; receipt remains unverified, not proven undelivered. “Source timing” preserves its different week/month/on-request/when-lawful language without inventing a new deadline. Review the full source and all its follow-ups, not just the first question below. The existing pre-program film/contact gate applies before distribution.
 
@@ -12,7 +12,7 @@ Each queue item is an obligation, not the player's entire identity. Read the [61
 
 ## Quarterbacks
 
-**Owner:** Jeremy Bates; Charlie Skalaski assists; Tice on protection. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** Jeremy Bates; Charlie Skalaski assists; Tice on protection. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player | Packet question / next preparation | Original obligation | Preparation / historical receipt |
 |---|---|---|---|
@@ -23,7 +23,7 @@ Each queue item is an obligation, not the player's entire identity. Read the [61
 
 ## Backs
 
-**Owner:** Tim Spencer; Tice/Yarno on shared protection. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** Tim Spencer; Tice/Yarno on shared protection. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player | Packet question / next preparation | Original obligation | Preparation / historical receipt |
 |---|---|---|---|
@@ -32,11 +32,11 @@ Each queue item is an obligation, not the player's entire identity. Read the [61
 | Jonathan Grimes (RB) | Week 14 fumble, protection, Week 6/12 run causes and the timing of his assignment instructions. | [Source timing](../../../2013/exit_interviews/core/jonathan_grimes.md) | Queued; receipt unverified |
 | Montell Owens (FB) | Lead blocking and protection; Week 1 interception assignment with Bates; coverage opportunity explanation. | [Source timing](../../../2013/exit_interviews/core/montell_owens.md) | Queued; receipt unverified |
 | Richard Murphy (RB) | Written individual evaluation from available practice/preseason evidence; do not invent practice-squad results. | [Source timing](../../../2013/exit_interviews/summaries_practice_squad.md) | Queued; receipt unverified |
-| Will Ta'ufo'ou (FB) | Requested blocking/protection film review; actual practice/preseason evidence and next assigned job. | [Source timing](../../../2013/exit_interviews/summaries_practice_squad.md) | Queued; receipt unverified |
+| Will Ta'ufo'ou (FB), left as a free agent (Entry 85); archival obligation only | Requested blocking/protection film review; actual practice/preseason evidence and next assigned job. | [Source timing](../../../2013/exit_interviews/summaries_practice_squad.md) | Queued; receipt unverified |
 
 ## Receivers
 
-**Owner:** Darryl Drake; Bates on shared throw decisions. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** Darryl Drake; Bates on shared throw decisions. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player | Packet question / next preparation | Original obligation | Preparation / historical receipt |
 |---|---|---|---|
@@ -49,7 +49,7 @@ Each queue item is an obligation, not the player's entire identity. Read the [61
 
 ## Tight ends
 
-**Owner:** John Zernhelt; Tice/Yarno on blocking and protection. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** John Zernhelt; Tice/Yarno on blocking and protection. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player | Packet question / next preparation | Original obligation | Preparation / historical receipt |
 |---|---|---|---|
@@ -59,7 +59,7 @@ Each queue item is an obligation, not the player's entire identity. Read the [61
 
 ## Offensive line
 
-**Owner:** George Yarno; Tice on protection. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** George Yarno; Tice on protection. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player | Packet question / next preparation | Original obligation | Preparation / historical receipt |
 |---|---|---|---|
@@ -75,7 +75,7 @@ Each queue item is an obligation, not the player's entire identity. Read the [61
 
 ## Defensive line
 
-**Owner:** Anthony Pleasant; Crennel and Bush on calls/fits. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** Anthony Pleasant; Crennel and Bush on calls/fits. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player | Packet question / next preparation | Original obligation | Preparation / historical receipt |
 |---|---|---|---|
@@ -95,7 +95,7 @@ Each queue item is an obligation, not the player's entire identity. Read the [61
 
 ## Linebackers
 
-**Owner:** Frank Bush; Crennel on help and communication. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** Frank Bush; Crennel on help and communication. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player | Packet question / next preparation | Original obligation | Preparation / historical receipt |
 |---|---|---|---|
@@ -107,7 +107,7 @@ Each queue item is an obligation, not the player's entire identity. Read the [61
 
 ## Secondary
 
-**Owner:** Tony Oden; Crennel on coverage/help. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** Tony Oden; Crennel on coverage/help. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player | Packet question / next preparation | Original obligation | Preparation / historical receipt |
 |---|---|---|---|
@@ -121,12 +121,12 @@ Each queue item is an obligation, not the player's entire identity. Read the [61
 | Kevin Rutland (CB) | Written outside-reserve evaluation; contract-process answer remains with Caldwell. | [Source timing](../../../2013/exit_interviews/summaries_defense.md) | Queued; receipt unverified |
 | Chris Prosinski (S) | Separate written safety and coverage-unit evaluations; safety-rotation opportunity is not assumed. | [Source timing](../../../2013/exit_interviews/summaries_defense.md) | Queued; receipt unverified |
 | Brynden Trawick (S) | Transition technique and individual coverage review; missing coverage statistics do not imply failure. | [Source timing](../../../2013/exit_interviews/summaries_defense.md) | Queued; receipt unverified |
-| Brandon King (DB) | Written defensive and special-teams evaluation from actual recorded work. | [Source timing](../../../2013/exit_interviews/summaries_practice_squad.md) | Queued; receipt unverified |
+| Brandon King (DB), left as a free agent (Entry 85); archival obligation only | Written defensive and special-teams evaluation from actual recorded work. | [Source timing](../../../2013/exit_interviews/summaries_practice_squad.md) | Queued; receipt unverified |
 | Antwon Blake (S) | Written safety evaluation from available practice/preseason evidence; no invented practice-squad record. | [Source timing](../../../2013/exit_interviews/summaries_practice_squad.md) | Queued; receipt unverified |
 
 ## Specialists
 
-**Owner:** Stone until a coordinator is actually appointed. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** Mike Westhoff, special teams coordinator from February 11, 2014 (Entry 84); Stone owned these packets during the January 12 to February 11 vacancy.
 
 | Player | Packet question / next preparation | Original obligation | Preparation / historical receipt |
 |---|---|---|---|

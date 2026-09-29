@@ -262,3 +262,36 @@ The assets, rather than the original approximate overall labels, control: Detroi
 Linsley is an additional target on the restored Detroit asset. Charles Leno Jr. remains the target on Jacksonville's own fifth. Gaines supersedes the earlier Paradis-first instruction and the contingent Shelby Harris selection attached to that sixth-round choice. The user has not specified a fallback for either Linsley or Gaines; do not silently transfer Paradis, Stork, Swanson, Harris or another comparison into a new selection instruction. Retain their earlier scouting work as history. All other picks, the separate Butler/Cockrell instruction and the undrafted watch list remain unchanged.
 
 These are intentions, not acquisitions or new evaluations. Before spending either pick, confirm the branch asset and final overall number, eligibility and dated pre-selection scouting evidence, then apply the draft rails availability rule when the May 8–10 draft runs. Do not use the real selection or later career to promise availability or assign a grade today. Neither target satisfies package F2's requirement that Jacksonville actually draft two linemen. No draft, trade, roster change or clock advance occurs in this amendment.
+
+## September 29, 2026 amendment: pick 36, Lawrence at 31, Monroe, and the Linsley and Gaines fallbacks
+
+**User instruction, at the February 17, 2014 branch checkpoint.** This records plans only. No trade, selection, signing or roster change occurs here.
+
+**Package A's pick is 36.** Seattle's original 2014 second-rounder is No. 36 in the branch [draft order](../draft/draft_order.md). The memo's "#37" was an approximate label, and every package A term now reads 36. All other package A terms stand.
+
+**New package H: 36 and Nwaneri to Minnesota for 31, to draft DeMarcus Lawrence.**
+
+| Term | Instruction |
+| --- | --- |
+| Jacksonville sends | No. 36 (once package A has put it in hand) and G Uche Nwaneri |
+| Jacksonville receives | No. 31, Minnesota's own first-round pick in the branch order |
+| Purpose | Select DeMarcus Lawrence, DE, Boise State, at 31 |
+| Order | Package A must close first; no conditional pick is offered before 36 is owned |
+| Nwaneri's roster bonus | The due date is still unverified ([pre-tag verifications](caldwell_pre_tag_verifications.md)). If package H is not agreed before the bonus falls due, package F1 still governs Nwaneri: trade or release before the bonus. Package H is then offered as 36 alone for 31 |
+| If Minnesota declines | No deal. Jacksonville keeps 36, and Lawrence becomes the first choice at 36 if he is available there |
+| Window | Trades from 4 p.m. ET on March 11 through the draft; Minnesota's answer is its own, resolved by the simulation |
+
+This supersedes the board rule that Jacksonville trades no pick away, for this package only. It also supersedes the part of F1 that names a 2015 sixth for Nwaneri, while that sixth remains the ask if package H fails before his bonus date.
+
+**Lawrence is added to the board.** DE, Boise State, fourth-year junior who announced early entry ([NFL.com](https://www.nfl.com/news/boise-state-broncos-de-demarcus-lawrence-to-enter-nfl-draft-0ap2000000304898)). His 2013 search-text production (20.5 tackles for loss, leading the Mountain West; 10.5 sacks) is single source until checked against a second. Before the pick, confirm him on the January 19 special-eligibility list and record dated pre-selection scouting. No grade is assigned before the combine. His availability at 31 or 36 is decided at the draft by the league-rails rule, never promised now.
+
+**Monroe.** Try to re-sign him on the section 2 terms. If he is unsigned at 4 p.m. ET on March 3, apply the non-exclusive franchise tag at $11.654M. If Monroe signs first and Marks does not, the tag moves to Marks as section 2 says.
+
+**Fallbacks, chosen from Stone's own recorded pre-draft comparisons.** The user asked the operator to set them. Each comes from names Stone had already studied before this date, not from any later result.
+
+| Target | Asset | Fallback order |
+| --- | --- | --- |
+| Corey Linsley, C, Ohio State | Detroit's fifth | Matt Paradis (Boise State), then Bryan Stork (Florida State), then Travis Swanson (Arkansas): the round 6 center comparisons |
+| E. J. Gaines, CB, Missouri | Jacksonville's sixth | Ross Cockrell (Duke), the recorded corner comparison. If Cockrell is taken at the sixth, the round 7 instruction becomes Malcolm Butler with no second name until the post-combine board |
+
+This expressly authorizes the transfer that the earlier amendment said not to make silently. Each fallback still needs eligibility, dated scouting and the rails availability rule at the draft.

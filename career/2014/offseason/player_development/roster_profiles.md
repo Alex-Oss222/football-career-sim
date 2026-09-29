@@ -4,7 +4,7 @@
 
 **Evidence cutoff:** completed branch 2013 season and exit interviews; current control/medical status must be checked against February 2, 2014 Entry 79 and later actual events. These are staff syntheses and proposed opportunities, not new player statements or 2014 practice results. The linked interviews identify their underlying practice/game sources and distinguish documented facts from open questions.
 
-**All 61 players are represented:** 52 active, 8 practice squad and retired Meester for archival obligations. This inventory neither re-signs an expiring player nor guarantees a place in camp. Allen's departure/retirement and every later transaction change teaching eligibility; promises already made remain tracked.
+**All 61 players are represented:** 52 active, the 8 from the 2013 practice squad (six now on 2014 reserve/future contracts; King and Ta'ufo'ou left, Entry 85) and retired Meester for archival obligations. This inventory neither re-signs an expiring player nor guarantees a place in camp. Allen's departure/retirement and every later transaction change teaching eligibility; promises already made remain tracked.
 
 A profile describes the player now, not the type he must become. Carry useful strengths forward; allow more than one plausible direction. Thin evidence means the staff needs to observe, not that the player is poor. A veteran needs opportunities to learn, and a reserve needs an evaluation that does not depend on getting a box-score statistic. Full-season experience matters even where the old engine's numbers cannot establish ability.
 
@@ -14,7 +14,7 @@ Each phase output records what actually happened. At handoff, revise only the re
 
 ## Quarterbacks
 
-**Owner:** Jeremy Bates; Charlie Skalaski assists; Tice on protection. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** Jeremy Bates; Charlie Skalaski assists; Tice on protection. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player and source | Current working profile, with limits | Next opportunity and player perspective to invite |
 |---|---|---|
@@ -25,7 +25,7 @@ Each phase output records what actually happened. At handoff, revise only the re
 
 ## Backs
 
-**Owner:** Tim Spencer; Tice/Yarno on shared protection. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** Tim Spencer; Tice/Yarno on shared protection. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player and source | Current working profile, with limits | Next opportunity and player perspective to invite |
 |---|---|---|
@@ -34,11 +34,11 @@ Each phase output records what actually happened. At handoff, revise only the re
 | **Jonathan Grimes (RB)** · [2013 evidence](../../../2013/exit_interviews/core/jonathan_grimes.md) | Spring/preseason route assignments and backfield work provide useful positive evidence; the season gives RB2 experience. Protection and particular run/fumble causes still need individual review. | Preserve known route/check responsibilities and compare complete series rather than isolated carries. Ask when he understood the week's rotation and which decisions felt independent; staff instruction timing is part of the review, not a player defect. |
 | **Montell Owens (FB)** · [2013 evidence](../../../2013/exit_interviews/core/montell_owens.md) | Fullback responsibilities and receiving appearances show the jobs he encountered; individual lead-block/protection execution is poorly documented. A lack of fumbles or a successful catch does not certify the whole role. | Review lead, protection and release choices together. Ask which front picture or release opportunity changed his job. Spring can establish shared answers; camp can show physical transfer. Keep any broader use an evaluated possibility, not an automatic assignment. |
 | **Richard Murphy (RB)** · [2013 evidence](../../../2013/exit_interviews/summaries_practice_squad.md) | Preseason Miami and Atlanta records describe assignment-correct route work. There is no documented practice-squad-season assessment, so an all-around back judgment would outrun the evidence. | If signed, preserve the demonstrated route detail and offer a defined protection/run-reading sample. Ask what feedback he lacked and which rep best represents his game. Contract timing is Caldwell's; missing season documentation is not a weakness grade. |
-| **Will Ta'ufo'ou (FB)** · [2013 evidence](../../../2013/exit_interviews/summaries_practice_squad.md) | No individual spring, preseason or practice-squad rep is recorded. The staff owes an honest evaluation; absence of a record establishes neither a physical shortfall nor a low ceiling. | If signed and material exists, review his requested camp film before choosing a correction. Ask which fullback job he wants explained. Establish a lead/protection baseline through permitted work; do not presume a role or invent past strengths. |
+| **Will Ta'ufo'ou (FB)**, not offered a 2014 contract; left as a free agent (Entry 85); archival obligations only · [2013 evidence](../../../2013/exit_interviews/summaries_practice_squad.md) | No individual spring, preseason or practice-squad rep is recorded. The staff owes an honest evaluation; absence of a record establishes neither a physical shortfall nor a low ceiling. | If signed and material exists, review his requested camp film before choosing a correction. Ask which fullback job he wants explained. Establish a lead/protection baseline through permitted work; do not presume a role or invent past strengths. |
 
 ## Receivers
 
-**Owner:** Darryl Drake; Bates on shared throw decisions. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** Darryl Drake; Bates on shared throw decisions. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player and source | Current working profile, with limits | Next opportunity and player perspective to invite |
 |---|---|---|
@@ -51,7 +51,7 @@ Each phase output records what actually happened. At handoff, revise only the re
 
 ## Tight ends
 
-**Owner:** John Zernhelt; Tice/Yarno on blocking and protection. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** John Zernhelt; Tice/Yarno on blocking and protection. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player and source | Current working profile, with limits | Next opportunity and player perspective to invite |
 |---|---|---|
@@ -61,7 +61,7 @@ Each phase output records what actually happened. At handoff, revise only the re
 
 ## Offensive line
 
-**Owner:** George Yarno; Tice on protection. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** George Yarno; Tice on protection. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player and source | Current working profile, with limits | Next opportunity and player perspective to invite |
 |---|---|---|
@@ -77,7 +77,7 @@ Each phase output records what actually happened. At handoff, revise only the re
 
 ## Defensive line
 
-**Owner:** Anthony Pleasant; Crennel and Bush on calls/fits. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** Anthony Pleasant; Crennel and Bush on calls/fits. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player and source | Current working profile, with limits | Next opportunity and player perspective to invite |
 |---|---|---|
@@ -97,7 +97,7 @@ Each phase output records what actually happened. At handoff, revise only the re
 
 ## Linebackers
 
-**Owner:** Frank Bush; Crennel on help and communication. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** Frank Bush; Crennel on help and communication. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player and source | Current working profile, with limits | Next opportunity and player perspective to invite |
 |---|---|---|
@@ -109,7 +109,7 @@ Each phase output records what actually happened. At handoff, revise only the re
 
 ## Secondary
 
-**Owner:** Tony Oden; Crennel on coverage/help. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** Tony Oden; Crennel on coverage/help. Special-teams contributions use Mike Westhoff (special teams coordinator from February 11, Entry 84).
 
 | Player and source | Current working profile, with limits | Next opportunity and player perspective to invite |
 |---|---|---|
@@ -123,12 +123,12 @@ Each phase output records what actually happened. At handoff, revise only the re
 | **Kevin Rutland (CB)** · [2013 evidence](../../../2013/exit_interviews/summaries_defense.md) | The recorded outside-reserve workload began after injuries elsewhere; individual technique evidence remains thin. Return credits are unreliable, and no dated retirement has been established. | If retained, review his own coverage reps and assign a clear outside task. Ask what the film says to him before deciding on a correction. RFA decisions remain Caldwell's; no role, retirement or special-teams weakness is inferred from sparse numbers. |
 | **Chris Prosinski (S)** · [2013 evidence](../../../2013/exit_interviews/summaries_defense.md) | Camp prepared him for safety rotation; coverage lanes held in preseason. Lowery/Rambo separated in communication, but regular-season defensive opportunity is unrecorded. | Keep supported coverage discipline and offer distinct safety/teams evaluations. Ask what he wants to demonstrate as a safety. Any rotation opportunity is separately authorized; his teams role does not erase defensive possibilities. |
 | **Brynden Trawick (S)** · [2013 evidence](../../../2013/exit_interviews/summaries_defense.md) | Previously taught special-teams jobs operated with less rescue through spring and strong multi-unit communication in camp. Defensive transition technique remains a baseline question, not a diagnosed flaw. | Preserve teams command while giving safety technique an actual observation home. Ask which coverage responsibility became independent and which defensive movement he wants to understand. Record teams work directly instead of requiring box-score production to count it. |
-| **Brandon King (DB)** · [2013 evidence](../../../2013/exit_interviews/summaries_practice_squad.md) | There is no recorded individual defensive or teams evaluation from the practice-squad year. His request for a teams assessment is a real follow-up, not evidence that he lacks value there. | If signed, Oden and the teams owner give separate written baselines and a clear job to observe. Ask which coverage role he believes represents his work. Use actual permitted reps, with no automatic promotion or invented special-teams skill. |
+| **Brandon King (DB)**, not offered a 2014 contract; left as a free agent (Entry 85); archival obligations only · [2013 evidence](../../../2013/exit_interviews/summaries_practice_squad.md) | There is no recorded individual defensive or teams evaluation from the practice-squad year. His request for a teams assessment is a real follow-up, not evidence that he lacks value there. | If signed, Oden and the teams owner give separate written baselines and a clear job to observe. Ask which coverage role he believes represents his work. Use actual permitted reps, with no automatic promotion or invented special-teams skill. |
 | **Antwon Blake (S)** · [2013 evidence](../../../2013/exit_interviews/summaries_practice_squad.md) | Earlier NFL participation is part of his background; this staff's 2013 individual record is absent. Moving to the practice squad is not a measured regression. | If signed, explain the evidence behind the staff's assessment and invite his question about what changed. Establish a safety assignment and observe actual technique in legal work; do not substitute the previous staff's presumed opinion for a current profile. |
 
 ## Specialists
 
-**Owner:** Stone until a coordinator is actually appointed. Special-teams contributions use Stone while the vacancy remains.
+**Owner:** Mike Westhoff, special teams coordinator from February 11, 2014 (Entry 84); Stone owned these contributions during the January 12 to February 11 vacancy.
 
 | Player and source | Current working profile, with limits | Next opportunity and player perspective to invite |
 |---|---|---|

@@ -1,8 +1,8 @@
 # Jacksonville Jaguars: 2014 contract and free-agency status register
 
-**Branch date:** February 2, 2014 (2013 season complete; Jacksonville eliminated in the AFC Divisional round).
+**Branch date:** February 17, 2014 (2013 season complete; Jacksonville eliminated in the AFC Divisional round). Built at February 2; updated for the reserve/future contracts (Entry 85) and [Caldwell's pre-tag-window verifications](caldwell_pre_tag_verifications.md) (Entry 86).
 **Applies at:** the opening of the 2014 league year, Tuesday, March 11, 2014, 4:00 PM ET (`library/2014_league_calendar_and_financial_rules.md`, C10).
-**Scope:** every player Jacksonville controls in `career/2013/roster.md` at the branch date: 52 active players, Brad Meester on Reserve/Retired (Entry 79), and eight legacy practice-squad names whose 2014 rights require reconciliation.
+**Scope:** every player Jacksonville controls in `career/2013/roster.md` at the branch date: 52 active players, Brad Meester on Reserve/Retired (Entry 79), and the eight 2013 practice-squad players, six of whom signed reserve/future contracts for 2014 (Entry 85).
 **Nature:** research and status register only. It executes no signing, tender, release, extension, option or trade and changes no current state. Caldwell retains contract authority under Document 3.
 
 **Administrative reconciliation, Entry 82:** Meester's retired status is separated from the seven pending active UFAs. The original contract term is preserved. The legacy practice-squad list is a historical baseline, not proof of continuing exclusive rights or 2014 eligibility; verify expiry and actual futures outcomes before contact/participation that requires control. No contract event occurs here.
@@ -23,21 +23,22 @@ WebFetch was blocked by the session's network egress proxy for every outlet trie
 
 ## 2. Summary
 
-| Status at the March 11 handoff | Controlled active/reserve baseline | Legacy practice squad | Total |
+| Status at the March 11 handoff | Controlled active/reserve baseline | 2013 practice squad | Total |
 |---|---:|---:|---:|
-| Under contract for 2014 | 35 | 0 | 35 |
-| Pending unrestricted free agent | 7 | 0 | 7 |
+| Under contract for 2014 | 36 | 0 | 36 |
+| Pending unrestricted free agent | 8 | 0 | 8 |
 | Retired; contract expiration to reconcile | 1 | 0 | 1 |
 | Restricted free agent | 3 | 0 | 3 |
 | Exclusive-rights free agent | 3 | 0 | 3 |
-| Practice-squad contract expiring | 0 | 8 | 8 |
-| Unresolved | 4 | 0 | 4 |
+| Reserve/future contract for 2014 (signed February 3 and 5, effective March 11) | 0 | 6 | 6 |
+| Practice-squad contract ended; not offered, left as free agent | 0 | 2 | 2 |
+| Unresolved | 2 | 0 | 2 |
 | **Total** | **53** | **8** | **61** |
 
-**Pending unrestricted free agents (7):** QB Chad Henne, RB Maurice Jones-Drew, OT Eugene Monroe, DT Sen'Derrick Marks, DE C.J. Wilson, CB Alan Ball, CB Brent Grimes.
+**Pending unrestricted free agents (8):** QB Chad Henne, RB Maurice Jones-Drew, OT Eugene Monroe, DT Sen'Derrick Marks, DE C.J. Wilson, CB Alan Ball, CB Brent Grimes, LS Jeremy Cain (added by Entry 86).
 **Pending restricted free agents (3):** OT Cameron Bradfield, TE Allen Reisner, CB Kevin Rutland.
 **Pending exclusive-rights free agents (3):** WR Toney Clemons, WR Mike Brown, G Austin Pasztor.
-**Unresolved (4):** QB John Parker Wilson, RB Jonathan Grimes, FB Montell Owens, LS Jeremy Cain.
+**Unresolved (2):** QB John Parker Wilson, RB Jonathan Grimes. Montell Owens is under contract through 2015 and Jeremy Cain's contract expired after 2013 (Entry 86; [verifications](caldwell_pre_tag_verifications.md) section 2).
 
 ## 3. Controlled active and reserve baseline
 
@@ -77,6 +78,7 @@ WebFetch was blocked by the session's network egress proxy for every outlet trie
 | Toney Clemons | WR | Signed off Pittsburgh's practice squad in late November 2012; two-year Jacksonville contract ($870,000); final year 2013 | **ERFA** | 0 (joined Jacksonville's 53 in late November 2012; 4 games) | Accrues in branch (on 53 for 16 games); 1 total | [OverTheCap](https://overthecap.com/player/toney-clemons/959/) (Jaguars 2012, two years, $870,000); [Pro Football Reference, November 2012 transactions](https://www.pro-football-reference.com/years/2012/11_transactions.htm). Status: Confirmed as ERFA whatever his 2012 accrual (at most 2 total) |
 | Mike Brown | WR | 2012 Jacksonville undrafted contract; final year 2013 | **ERFA** | 0 (practice squad for all but two weeks of 2012) | Accrues in branch (on 53 for 16 games); 1 total | 2012 practice-squad time: [Big Cat Country, November 7, 2013](https://www.bigcatcountry.com/2013/11/7/5066558/mike-brown-jaguars-journey-liberty-nfl). Final year 2013: Unverified (single report: the March 6, 2014 Big Cat Country article above groups him with pending exclusive-rights players). If his contract instead runs through 2014 he is under contract. Status: Supported |
 | Austin Pasztor | G | Signed to Jacksonville's practice squad September 17, 2012; promoted to the 53 on December 14, 2012; final year 2013 | **ERFA** | 0 (active only from December 14, 2012) | Accrues in branch (on 53 for 16 games; Week 1 inactive on medical hold, still full pay); 1 total | 2012 dates: [Wikipedia](https://en.wikipedia.org/wiki/Austin_Pasztor). Final year 2013: Unverified (same single March 6, 2014 report). Status: Supported |
+| Jeremy Cain | LS | New three-year Jacksonville contract, February 2011; final year 2013 (value disputed, $2.45M or $3.0M) | **UFA** | 4+ (entered 2004; Jacksonville long snapper through 2012) | Accrues in branch (on 53 for 16 games); at least 5 accrued | [NFL.com, February 2011](https://www.nfl.com/news/jaguars-sign-long-snapper-cain-to-new-contract-09000d5d81e77777); [Jaguars.com](https://www.jaguars.com/news/jaguars-sign-long-snapper-jeremy-cain-to-contract-5783792); length from Spotrac and Wikipedia. Expiry Confirmed by length; value Unverified. Moved from Unresolved by Entry 86 |
 
 ### Inherited contracts running through 2014 or later
 
@@ -104,32 +106,33 @@ WebFetch was blocked by the session's network egress proxy for every outlet trie
 | Chris Prosinski | S | 2011 fourth-round four-year rookie contract; final year 2014 | Under contract | 2 | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/chris-prosinski/921/); `initial_cap_sheet.md`. Confirmed |
 | Josh Scobee | K | Four-year contract agreed July 16, 2012 after the franchise tag; final year 2015 | Under contract | 4+ (entered 2004) | Accrues in branch (on 53 for 16 games) | [Big Cat Country, July 16, 2012](https://www.bigcatcountry.com/2012/7/16/3163301/josh-scobee-contract-jaguars); [NFL.com, July 2012](https://www.nfl.com/news/josh-scobee-jacksonville-jaguars-reach-four-year-deal-09000d5d82a95c52). Confirmed (closes the citation gap noted in `initial_cap_sheet.md`) |
 | Bryan Anger | P | 2012 third-round four-year rookie contract; final year 2015 | Under contract | 1 | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/bryan-anger/917/); `initial_cap_sheet.md`. Confirmed |
+| Montell Owens | FB | Extension signed October 4, 2011; $4.65M guaranteed (two sources); new years 2013-2015 (single source); signing bonus disputed; 2014 base not found; final year 2015 | Under contract | 4+ (Jacksonville 2006-2012) | Accrues in branch (on 53 for 16 games) | [ProFootballTalk, October 2011](https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jaguars-sign-montell-owens-to-extension); [verifications](caldwell_pre_tag_verifications.md) section 2. Supported; 2014 base Unverified. Moved from Unresolved by Entry 86 |
 
 ### Unresolved inherited contracts
 
 | Player | Pos. | What is known | March 11, 2014 status | Accrued seasons through 2012 | 2013 branch accrual | Source and label |
 |---|---|---|---|---|---|---|
-| John Parker Wilson | QB | Reserve/future contract signed December 30, 2012; length not recovered | **Unresolved**. If it expires after 2013: RFA with 3 accrued, UFA with 4 | Unresolved: Atlanta's third quarterback in 2009 and 2010 and re-signed July 30, 2011; 2012 on Jacksonville's practice squad except October 27-29. Supported range 2 or 3 | Accrues in branch (on 53 for 16 games) | Futures date: `initial_roster.md`; ledger Entry 9. Career dates: [Wikipedia](https://en.wikipedia.org/wiki/John_Parker_Wilson). Unresolved |
+| John Parker Wilson | QB | Reserve/future contract signed December 30, 2012; length not recovered | **Unresolved**. If it expires after 2013: RFA with 3 accrued, UFA with 4 | Unresolved: Atlanta's third quarterback in 2009 and 2010 and re-signed July 30, 2011; 2012 on Jacksonville's practice squad except October 27-29. Supported range 2 or 3 | Accrues in branch (on 53 for 16 games) | Futures date: `initial_roster.md`; ledger Entry 9. Career dates: [Wikipedia](https://en.wikipedia.org/wiki/John_Parker_Wilson). The February 17 verification pass did not support the reserve/future label ([verifications](caldwell_pre_tag_verifications.md) section 2). Unresolved |
 | Jonathan Grimes | RB | 2012 Houston undrafted player; signed off Houston's practice squad by the Jets in October 2012; claimed off waivers from Houston by Jacksonville on December 21, 2012 (the claim carries the Houston contract). Branch register: not a March 12, 2013 free agent. Length not recovered | **Unresolved**. If it expires after 2013: ERFA (at most 2 accrued) | Unresolved (0 or 1; 2012 full-pay games with the Jets, Houston and Jacksonville not counted) | Accrues in branch (on 53 for 16 games) | [Fox News, December 2012](https://www.foxnews.com/sports/jaguars-claim-rb-jonathan-grimes-off-waivers-from-texans-adding-depth-to-thin-backfield); [New York Jets, 2012](https://www.newyorkjets.com/news/rb-grimes-signed-from-hou-practice-squad-8383288); `state/04_Roster_and_Staff_Register.md`. Unresolved |
-| Montell Owens | FB | Contract extension signed October 4, 2011. Search-result text disagrees on its structure (a three-year $9.275M extension versus a figure similar to an earlier three-year $6.675M deal), so the final league year is not established | **Unresolved**. If it expires after 2013: UFA | 4+ (Jacksonville 2006-2012) | Accrues in branch (on 53 for 16 games) | [ProFootballTalk, October 2011](https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jaguars-sign-montell-owens-to-extension); [Spotrac](https://www.spotrac.com/nfl/chicago-bears/montell-owens-4176/). Unverified term |
-| Jeremy Cain | LS | New Jacksonville contract reported February 2011, terms undisclosed at the time. Spotrac search text shows a three-year $3.0M Jacksonville deal, not dated in the result | **Unresolved**. If the three-year deal dates from 2011 it expires after 2013: UFA | 4+ (entered 2004; Jacksonville long snapper through 2012) | Accrues in branch (on 53 for 16 games) | [NFL.com, February 2011](https://www.nfl.com/news/jaguars-sign-long-snapper-cain-to-new-contract-09000d5d81e77777); [Spotrac](https://www.spotrac.com/nfl/chicago-bears/jeremy-cain-6060/). Unverified term |
 
-## 4. Legacy practice-squad baseline (8); current rights unresolved
+## 4. 2013 practice squad (8): six reserve/future contracts, two not offered
 
 All eight were waived at the August 31 cutdown, cleared waivers and signed branch practice-squad contracts on September 1, 2013 (`preseason/final_roster_cuts.md`; ledger Entry 27). A waiver ends the player's earlier contract, so Tyler Bray's May 2 rookie contract and the December 30, 2012 reserve/future contracts of Will Ta'ufo'ou and Brandon King no longer apply. Practice-squad seasons do not accrue.
 
-A practice-squad contract runs only through the club's season. No branch reserve/future contract has been recorded for any of the eight at February 2, 2014. Clubs may sign reserve/future contracts once their own season is over (`library/2014_league_calendar_and_financial_rules.md`, C1; the exact CBA wording of the practice-squad expiry moment is Unverified there and here). Unless Jacksonville signs one of these players to a reserve/future contract, he is not under Jacksonville contract on March 11, 2014 and is free to sign with any club; he is not a Jacksonville RFA or ERFA.
+A practice-squad contract runs only through the club's season. Under Stone's February 2 memo (section 1), Caldwell offered six of the eight reserve/future contracts on February 3, 2014 and all six signed (ledger Entry 85; method `futures_method.json`, result `futures_results.json`). Terms: the 2014 minimum for the player's credited seasons, no guarantee, no signing bonus, effective at the March 11, 2014 league year and counting toward the 90-player limit from then. They are camp places, not practice-squad places. Brandon King and Will Ta'ufo'ou were not offered and left as free agents. Clubs may sign reserve/future contracts once their own season is over (`library/2014_league_calendar_and_financial_rules.md`, C1; the exact CBA wording of the practice-squad expiry moment is Unverified there and here). Unless Jacksonville signs one of these players to a reserve/future contract, he is not under Jacksonville contract on March 11, 2014 and is free to sign with any club; he is not a Jacksonville RFA or ERFA.
 
 | Player | Pos. | Contract | March 11, 2014 status | Source and label |
 |---|---|---|---|---|
-| Tyler Bray | QB | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | `preseason/final_roster_cuts.md`. Confirmed |
-| Richard Murphy | RB | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | Same. Confirmed |
-| Will Ta'ufo'ou | FB | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | Same. Confirmed |
-| Jerrell Jackson | WR | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | Same. Confirmed |
-| Jerome Long | DT | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | Same. Confirmed |
-| D'Anthony Smith | DT | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | Same. Confirmed |
-| Brandon King | DB | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | Same. Confirmed |
-| Antwon Blake | S | Branch practice-squad contract, September 1, 2013 | Practice-squad contract expiring | Same. Confirmed |
+| Tyler Bray | QB | 2013 practice-squad contract ended; reserve/future contract signed February 3, 2014 | Under reserve/future contract from March 11; 2014 base **$420,000** (0 credited seasons; minimum Confirmed) | Practice squad: `preseason/final_roster_cuts.md`; futures: ledger Entry 85. Confirmed |
+| Richard Murphy | RB | 2013 practice-squad contract ended; reserve/future contract signed February 3, 2014 | Under reserve/future contract from March 11; minimum for credited seasons, figure unresolved | Ledger Entry 85. Credited seasons not established in the branch record |
+| Will Ta'ufo'ou | FB | 2013 practice-squad contract ended; not offered | Free agent; not under Jacksonville contract | Ledger Entry 85. Confirmed |
+| Jerrell Jackson | WR | 2013 practice-squad contract ended; reserve/future contract signed February 3, 2014 | Under reserve/future contract from March 11; minimum for credited seasons, figure unresolved | Ledger Entry 85. His real 2014 Kansas City contract is undated and cannot enter the branch (rails method section 2) |
+| Jerome Long | DT | 2013 practice-squad contract ended; reserve/future contract signed February 3, 2014 | Under reserve/future contract from March 11; minimum for credited seasons, figure unresolved | Ledger Entry 85. Credited seasons not established |
+| D'Anthony Smith | DT | 2013 practice-squad contract ended; reserve/future contract signed February 5, 2014 after a market draw against his real Seattle reserve/future contract of that date | Under reserve/future contract from March 11; minimum for credited seasons, figure unresolved | Ledger Entry 85; [market draw record](league_rails/fa_draws.md). Credited seasons not established |
+| Brandon King | DB | 2013 practice-squad contract ended; not offered | Free agent; not under Jacksonville contract | Ledger Entry 85. Confirmed |
+| Antwon Blake | S | 2013 practice-squad contract ended; reserve/future contract signed February 3, 2014 | Under reserve/future contract from March 11; minimum for credited seasons, figure unresolved | Ledger Entry 85. Credited seasons not established |
+
+2014 minimum base salary by credited seasons (`caldwell_pre_tag_verifications.md` section 3): 0, $420,000 (Confirmed); 1, $495,000 (Inference); 2, $570,000 (Confirmed by derivation and one direct source); 3, $645,000 (Inference); 4 to 6, $730,000 (Inference); 7 to 9, $855,000 (Confirmed by derivation and one direct source). A player's figure is set once his credited seasons are established.
 
 ## 5. Two-pass verification record
 
@@ -147,6 +150,7 @@ Each status-determining claim was searched again from scratch rather than taken 
 - **Corrected, Uche Nwaneri:** pass 1 read the export (signed 2010, five years) as ending in 2014. The re-check found reporting that treats it as a five-year extension on top of a rookie deal that ran through 2010, which would end in 2015. The final year is now marked disputed. He is under contract for 2014 either way.
 - **Confirmed and upgraded, Josh Scobee:** `initial_cap_sheet.md` flagged a missing contemporaneous citation for his 2012 terms. Two July 16, 2012 reports confirm the four-year agreement (final year 2015).
 - **Not resolved by the re-check:** Owens (sources disagree on the extension), Cain (term undisclosed at signing; the Spotrac figure is undated), John Parker Wilson (futures length not reported), Jonathan Grimes (contract carried through two clubs; length not reported). All four stay Unresolved.
+- **February 17, 2014 follow-up (Entry 86):** Caldwell's pre-tag-window verifications establish Cain's three-year February 2011 contract (expiry after 2013, pending UFA with at least 5 accrued seasons) and support Owens's extension through 2015. Wilson and Jonathan Grimes stay Unresolved.
 - **Single-source items kept as Unverified:** the 2013 final year for Mike Brown and Austin Pasztor, and Reisner's expiry, rest on one March 6, 2014 report plus the absence of their names from Jacksonville's March 2013 own-free-agent list.
 
 ## 6. What this register does not decide

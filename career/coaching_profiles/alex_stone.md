@@ -62,6 +62,8 @@ Around players, he keeps some boundaries firm. He can maintain a football decisi
 
 Lowry's departure now tests the division of work. Stone is covering special teams while retaining the offense and the head-coach role. He has selected Bobby April as the replacement target; no appointment has closed. The supported conclusion is that Stone can oversee specialists and coordinators and knows he needs the vacancy filled. There is little basis for describing technical special-teams work as another equally comfortable specialty. [Staff responsibilities](../2013/coaching_staff.md); [contract and authority](../2013/offseason/head_coach_contract.md); [minicamp and dinner](../2013/offseason/mandatory_minicamp/output.md); [current staff search](../2014/offseason/staff_changes/staff_plan.md).
 
+**Dated update, February 17, 2014 (Entries 84 and 86):** the search closed. Oakland had kept April, and Mike Westhoff was hired as special teams coordinator on February 11; Stone's interim special-teams coverage ended that day. The portrait above is otherwise unchanged. [Hiring record](../2014/offseason/staff_changes/hires.md).
+
 ## The difference entering his second Jacksonville season
 
 At hiring, Stone could describe a program and explain why its parts should work together. He now has specific people who can tell him where that description matched their experience and where it did not. Cousins can operate the offense and challenge the way he is being protected. Thielen can explain what helped him change jobs and when that help stopped. Kelce can ask why a correction remained open for an entire season. These are relationships with a shared working history, including unresolved disagreements.
