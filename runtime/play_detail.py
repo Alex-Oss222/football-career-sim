@@ -661,6 +661,7 @@ def apply_drive_detail(
     passer=None,
     diagnostics=None,
     own_seconds=None,
+    layout=None,
 ):
     """Allocate one resolved drive into reconciled player/snap public detail.
 
@@ -673,6 +674,12 @@ def apply_drive_detail(
     before the terminal snap. The terminal snap (touchdown, turnover, safety)
     is always the drive's last scrimmage snap; kneels come immediately before
     any punt, field-goal or downs row.
+
+    Kernel 2014.4: the kernel passes `layout` (runtime.chains.drive_layout,
+    its own chain-layout stream), which fixes the snap kinds, completions,
+    yards and order because the chain walk over them feeds team counters.
+    This stream then only names the players. Without a layout (direct
+    callers and tests) the legacy layout below runs on this stream.
     """
     rng = _rng(seed, event_id=event_id, drive_no=drive_no, offense=team.team_id)
     shares = usage.load()["values"]
@@ -683,26 +690,29 @@ def apply_drive_detail(
     spot = int(start_spot)
     net = int(net_yards)
 
-    if category == "safety":
-        terminal = safety_terminal[0]
+    if layout is not None:
+        terminal = layout["terminal"]
     else:
-        terminal = _terminal_kind(rng, category, td_type, runs, attempts, sacks)
-    # A lost fumble's terminal kind is descriptive (which snap was fumbled):
-    # when the drawn kind cannot be ordered inside the field, the others are
-    # tried in a fixed order before any value repair.
-    options = [terminal]
-    if category == "fumble_lost":
-        options += [k for k, n in (("run", runs), ("catch", attempts), ("sack", sacks)) if n and k != terminal]
-    for attempt, terminal in enumerate(options):
-        layout = _layout(rng, category, terminal, runs, attempts, sacks, kneel_yards, spikes, pass_yards,
-                         rush_free, losses, safety_terminal, net, spot, completion_rate,
-                         repair=attempt == len(options) - 1)
-        if layout["ok"] or attempt == len(options) - 1:
-            break
-    if layout["repaired"] or attempt:
-        diagnostics["prefix_order_repaired"] = diagnostics.get("prefix_order_repaired", 0) + 1
-    if not layout["ok"]:
-        diagnostics["prefix_order_failed"] = diagnostics.get("prefix_order_failed", 0) + 1
+        if category == "safety":
+            terminal = safety_terminal[0]
+        else:
+            terminal = _terminal_kind(rng, category, td_type, runs, attempts, sacks)
+        # A lost fumble's terminal kind is descriptive (which snap was fumbled):
+        # when the drawn kind cannot be ordered inside the field, the others are
+        # tried in a fixed order before any value repair.
+        options = [terminal]
+        if category == "fumble_lost":
+            options += [k for k, n in (("run", runs), ("catch", attempts), ("sack", sacks)) if n and k != terminal]
+        for attempt, terminal in enumerate(options):
+            layout = _layout(rng, category, terminal, runs, attempts, sacks, kneel_yards, spikes, pass_yards,
+                             rush_free, losses, safety_terminal, net, spot, completion_rate,
+                             repair=attempt == len(options) - 1)
+            if layout["ok"] or attempt == len(options) - 1:
+                break
+        if layout["repaired"] or attempt:
+            diagnostics["prefix_order_repaired"] = diagnostics.get("prefix_order_repaired", 0) + 1
+        if not layout["ok"]:
+            diagnostics["prefix_order_failed"] = diagnostics.get("prefix_order_failed", 0) + 1
     kinds, completed, values = layout["kinds"], layout["completed"], layout["values"]
     plays = len(kinds)
     last = plays - 1
@@ -1075,12 +1085,19 @@ COHERENCE_CLASSES = (
     # own seconds and clock-expiry leg (has_clock_legs); snap_after_expiry
     # needs the full snap ledger.
     "seconds_per_snap_outside", "snap_after_expiry", "expiry_leg_exceeds_allowance",
+    # Kernel 2014.4 onward (defect register item 3): evaluated only when the
+    # snap ledger carries the walked down and distance (has_chain_ledger).
+    "down_distance_chain_break", "fourth_down_distance_mismatch", "first_downs_ne_ledger",
+    "goal_to_go_mismatch",
 )
 TIMEOUT_CLASSES = ("timeout_state_invalid", "fourth_down_beyond_goal")
 CLOCK_LEG_CLASSES = ("seconds_per_snap_outside", "snap_after_expiry", "expiry_leg_exceeds_allowance")
 CLOCK_LEG_LEDGER_CLASSES = ("snap_after_expiry",)
+CHAIN_CLASSES = ("down_distance_chain_break", "fourth_down_distance_mismatch", "first_downs_ne_ledger",
+                 "goal_to_go_mismatch")
 LEGACY_CLASSES = COHERENCE_CLASSES[:15]
-SPOT_CLASSES = tuple(c for c in COHERENCE_CLASSES[15:] if c not in TIMEOUT_CLASSES + CLOCK_LEG_CLASSES)
+SPOT_CLASSES = tuple(c for c in COHERENCE_CLASSES[15:]
+                     if c not in TIMEOUT_CLASSES + CLOCK_LEG_CLASSES + CHAIN_CLASSES)
 SPOT_LEDGER_CLASSES = (
     "kick_spot_mismatch", "label_type_mismatch", "label_carrier_mismatch",
     "label_target_mismatch", "scramble_with_designed_label", "kneel_spike_mislabelled",
@@ -1104,7 +1121,7 @@ DRIVE_SUMMARY_FIELDS = (
     # Kernel 2014.1 onward (append-only).
     "timeouts", "timeout_level",
     # Kernel 2014.4 onward (append-only).
-    "own_seconds", "expiry_seconds",
+    "own_seconds", "expiry_seconds", "chain_model",
 )
 LABEL_TYPES = {KNEEL_LABEL: "run", GENERIC_RUN: "run", SPIKE_LABEL: "pass",
                GENERIC_PASS: "pass", SCRAMBLE_LABEL: "pass"}
@@ -1142,7 +1159,77 @@ def measurable_classes(result):
         classes.update(c for c in CLOCK_LEG_CLASSES if c not in CLOCK_LEG_LEDGER_CLASSES)
         if result.get("play_ledger"):
             classes.update(CLOCK_LEG_LEDGER_CLASSES)
+    if has_chain_ledger(result):
+        classes.update(CHAIN_CLASSES)
     return classes
+
+
+def has_chain_model(result):
+    """True for a kernel 2014.4-or-later result or receipt: every possession
+    carries its chains and fourth-down state walked from its own snaps."""
+    possessions = _possessions(result)
+    return bool(possessions) and all(p.get("chain_model") for p in possessions)
+
+
+def has_chain_ledger(result):
+    """Kernel 2014.4: the chain classes need the walked model and a snap
+    ledger whose every scrimmage row carries its down and distance (closed
+    2013 receipts and compact receipts are not measured)."""
+    ledger = result.get("play_ledger")
+    if not ledger or not has_spots(result) or not has_chain_model(result):
+        return False
+    return all("down" in r and "ydstogo" in r for r in ledger if r.get("play_type") in ("pass", "run"))
+
+
+def _check_chain_ledger(possessions, rows_by_drive, err):
+    """Kernel 2014.4 (defect register item 3): each drive's published down,
+    distance, first downs and fourth-down state are re-walked from its own
+    scrimmage rows (runtime.chains.walk) and must agree with them."""
+    from . import chains
+    from .field_position import FOURTH_DOWN_CATEGORIES
+    for p in possessions:
+        number, category = p["number"], p["category"]
+        rows = rows_by_drive.get(number, [])
+        scrim = [r for r in rows if r.get("play_type") in ("pass", "run")]
+        yards = [r.get("result_yards", 0) for r in scrim]
+        start = p["start_spot"]
+        w = chains.walk(start, yards, category in chains.TURNOVER_TERMINALS)
+        where = "drive %s" % number
+        for index, (row, state) in enumerate(zip(scrim, w["rows"])):
+            if (row.get("down"), row.get("ydstogo"), row.get("yardline"), bool(row.get("first_down"))) != (
+                    state["down"], state["ydstogo"], state["los"], state["first_down"]):
+                err("down_distance_chain_break", "%s snap %s: %s & %s at %s" % (
+                    where, index + 1, row.get("down"), row.get("ydstogo"), row.get("yardline")))
+                break
+        failed = w["failed"]
+        if w["breaks"] or (failed is not None and not (category == "downs" and failed == len(yards) - 1)):
+            err("down_distance_chain_break", "%s snap after a failed fourth down" % where)
+        elif category == "downs" and failed is None:
+            err("down_distance_chain_break", "%s turned over on downs without failing on fourth" % where)
+        elif category == "punt" and (w["state"] is None or w["state"]["down"] != 4) and yards:
+            err("down_distance_chain_break", "%s punts before fourth down" % where)
+        for index, (row, state) in enumerate(zip(scrim, w["rows"])):
+            if bool(row.get("goal_to_go")) != state["goal_to_go"] or (
+                    bool(row.get("goal_to_go")) != (row.get("ydstogo") == row.get("yardline"))):
+                err("goal_to_go_mismatch", "%s snap %s" % (where, index + 1))
+                break
+        if category in FOURTH_DOWN_CATEGORIES:
+            fd = p.get("fourth_down") or {}
+            expected = chains.fourth_down_state(category, start, yards)
+            if expected is None or any(fd.get(k) != expected[k] for k in chains.STATE_FIELDS):
+                err("fourth_down_distance_mismatch", "%s published %s" % (
+                    where, [fd.get(k) for k in chains.STATE_FIELDS]))
+            for row in rows:
+                if row.get("play_type") in ("punt", "field_goal") or (
+                        row.get("play_type") == "possession_end" and row.get("reason") == "downs"):
+                    if any(row.get(k) != fd.get(k) for k in chains.STATE_FIELDS):
+                        err("fourth_down_distance_mismatch", "%s %s row" % (where, row.get("play_type")))
+            if fd and bool(fd.get("goal_to_go")) != (fd.get("ydstogo") == fd.get("los")):
+                err("goal_to_go_mismatch", "%s fourth-down state" % where)
+        chain = list(p.get("chains") or [])
+        flags = sum(bool(r.get("first_down")) for r in scrim)
+        if len(chain) != 6 or [chain[0]] + chain[2:6] != w["chains"] or chain[0] != flags:
+            err("first_downs_ne_ledger", "%s chains %s walk %s" % (where, chain, w["chains"]))
 
 
 def has_clock_legs(result):
@@ -1332,8 +1419,16 @@ def _check_spots(result, possessions, err):
             clock_s = p["end_clock"] - base
             expected = None
             if isinstance(fd, dict) and isinstance(p.get("score_diff"), int):
+                # Kernel 2014.4: a downs drive publishes the line of scrimmage
+                # of its failed fourth-down snap, short of the line to gain by
+                # more than that snap gained (end = los - gain, gain < ydstogo).
+                walked_downs = category == "downs" and p.get("chain_model")
+                if walked_downs and not (isinstance(fd.get("los"), int) and isinstance(fd.get("ydstogo"), int)
+                                         and 1 <= fd["los"] <= 99 and fd["los"] - end < fd["ydstogo"]):
+                    err("fourth_down_state_missing", "drive %s downs state" % number)
                 expected = {
-                    "los": end, "clock_s": clock_s, "half": draw_half, "score_diff": p["score_diff"],
+                    "los": fd.get("los") if walked_downs else end,
+                    "clock_s": clock_s, "half": draw_half, "score_diff": p["score_diff"],
                     "need": fp.need(p["score_diff"]), "decision_zone": fp.decision_zone(end),
                     "cell": fp.cell_for(draw_half, window, p["score_diff"]),
                     "clock_bucket": fp.terminal_bucket(clock_s) if draw_half == 2 else None,
@@ -1718,6 +1813,8 @@ def check_ledger(result):
                 break
     if spots:
         _check_spot_ledger(result, possessions, rows_by_drive, kicks, err)
+    if has_chain_ledger(result):
+        _check_chain_ledger(possessions, rows_by_drive, err)
     if clock_legs:
         _check_clock_legs(result, possessions, rows_by_drive, err)
     return errors

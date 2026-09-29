@@ -174,9 +174,14 @@ def drive_chart(receipt):
     drives = [dict(zip(DRIVE_SUMMARY_FIELDS, row)) for row in receipt.get("drives", ())]
     if not drives or any(d.get("start_spot") is None for d in drives):
         return []
+    # Kernel 2014.4 receipts walk the state from the drive's own snaps;
+    # earlier receipts keep their original wording.
+    walked = all(d.get("chain_model") for d in drives)
+    state_text = ("downs result shows the down and distance before the kick, or before the failed "
+                  "fourth-down snap, walked from the drive's own snaps." if walked else
+                  "downs result shows the real 2012 fourth-down state its drive carried.")
     lines = ["#### Drive chart", "",
-             "Start and end are field positions for the offense; a punt, field-goal or "
-             "downs result shows the real 2012 fourth-down state its drive carried.", "",
+             "Start and end are field positions for the offense; a punt, field-goal or " + state_text, "",
              "| # | Team | Start clock | Start | How | Plays | Yds | End | Result |",
              "|---:|---|---|---|---|---:|---:|---|---|"]
     for d in drives:

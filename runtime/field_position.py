@@ -20,6 +20,7 @@ from functools import lru_cache
 import json
 from pathlib import Path
 
+from . import chains
 from . import drive_model
 from .rules import RULES
 
@@ -328,6 +329,13 @@ def static_feasible(category, t, spot):
         required = kneels + terminal - net
         if required < 0 or (sacks <= 0 and required != 0) or category == "touchdown":
             return False
+    # Kernel 2014.4 (defect register item 3): the relocated snaps must admit a
+    # legal chain walk ending in the category's terminal state (a punt on 4th
+    # down, a downs failure on 4th, ...); see runtime.chains.chain_feasible.
+    if t is not ZERO_TUPLE and not chains.chain_feasible(
+            category, plays=t[T["plays"]], net=net, spot=spot, kneel_yards=t[T["kneel_yards"]],
+            sacks=t[T["sacks"]], runs=t[T["runs"]], terminal_value=terminal):
+        return False
     return True
 
 

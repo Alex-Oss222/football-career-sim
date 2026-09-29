@@ -175,7 +175,12 @@ class FieldPositionTests(unittest.TestCase):
                 if p["category"] in FOURTH:
                     fd = p["fourth_down"]
                     base = 1800 if p["half"] == 1 else 0
-                    self.assertEqual(fd["los"], p["end_spot"])
+                    if p["category"] == "downs":
+                        # Kernel 2014.4: the line of scrimmage of the failed
+                        # fourth-down snap, short of the line to gain.
+                        self.assertLess(fd["los"] - p["end_spot"], fd["ydstogo"])
+                    else:
+                        self.assertEqual(fd["los"], p["end_spot"])
                     self.assertEqual(fd["need"], fp.need(p["score_diff"]))
                     self.assertEqual(fd["decision_zone"], fp.decision_zone(p["end_spot"]))
                     self.assertEqual(fd["cell"], fp.cell_for(p["half"], p["start_clock"] - base, p["score_diff"]))
