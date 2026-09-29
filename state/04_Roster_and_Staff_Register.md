@@ -2,13 +2,13 @@
 
 ## Document status
 
-- Function: Canonical register for current Jacksonville player control, staff operating authority, roster legality, contract/cap reconciliation, availability boundaries and football-role state.
-- Current status: **RECONCILED THROUGH ENTRY 77 (SPECIAL-TEAMS AUTHORITY AND STAFF PLANNING)**.
+- Function: Canonical register for current Jacksonville player control, staff operating authority, roster legality, contract/cap and draft-capital reconciliation, availability boundaries and football-role state.
+- Current status: **RECONCILED THROUGH ENTRY 82 (2014 OPERATING HANDOFF)**.
 - Effective through: **February 2, 2014, after Super Bowl XLVIII (2013 season complete)**.
-- Progression authority: `career/2013/ledger.md`, Entry 77 (administrative reconciliation of the existing interim special-teams assignment, payroll meaning and staff planning; no new appointment), Entry 75 (January 2014 coaching carousel; Alan Lowry left for Atlanta's head-coach job on January 12, 2014; special teams coordinator vacant; no player change), Entry 67 (Super Bowl XLVIII closed; 2013 season archived; Ball and C.J. Wilson cleared at their projections), Entry 66 (kernel 2013.11; no roster change), Entry 65 (conference championships closed, background; Ryan Davis cleared at his projection), Entry 64 (AFC Divisional closed; Jacksonville eliminated; Owens and Thielen cleared; Ryan Davis out, minor, projected back January 14; roles unchanged), Entry 63 (verified birth dates and calendar ages; administrative correction only), Entry 62 (AFC Wild Card closed; Owens and Thielen out, minor, projected back January 5 and 6; roles unchanged), Entry 61 (postseason bracket built; no roster change), Entry 60 (Week 17 closed; regular season complete; no Jacksonville injury), Entry 59 (Week 16 closed; no Jacksonville injury; roles unchanged), Entry 58 (Week 15 closed; no Jacksonville injury; roles unchanged), Entry 57 (Week 14 closed as generation 2; Allen base LB for Posluszny; Kelce cleared; no injury), Entry 55 (Week 13 closed; Posluszny out, independent medical hold; Kelce out, minor; Bouye cleared and first outside reserve), Entry 53 (Week 12 closed; Rutland first outside reserve; Edwards dressed; no injury), Entry 52 (Week 11 closed; Harris starts; Mosley dressed; Bouye injured), Entry 50 (Week 10 closed; Ball injured; Pasztor dressed), Entry 49 (Week 9 bye; no deadline transaction), Entry 46 (Pasztor and Mosley projections recovered; both available), Entry 45 (Week 8 closed; Blackmon dressed), Entry 44 (Week 7 closed), after Entries 42-43 (Blackmon reinstated and activated October 7; Week 6 closed), Entry 41 (Week 5 closed; Posluszny returned; Thielen injured), Entry 40 (Week 4 closed under kernel 2013.6, Entry 39; Meester returned as reserve center), Entry 38 (Week 3 closed; Posluszny injured) and Entries 36-37 (Blackmon to Reserve/Suspended; Week 2 closed with Meester and C.J. Wilson injured).
+- Progression authority: `career/2013/ledger.md`, Entry 82 (administrative operating handoff; no control or football event), Entry 81 (website coin flip, league pick ownership and inherited Detroit fifth reconciled; no player-control change), Entry 80 (user-corrected Cousins compensation and draft capital; no player-control change), Entry 79 (Meester on Reserve/Retired; 52 active, 53 controlled), Entry 77 (administrative reconciliation of the existing interim special-teams assignment, payroll meaning and staff planning; no new appointment), Entry 75 (January 2014 coaching carousel; Alan Lowry left for Atlanta's head-coach job on January 12, 2014; special teams coordinator vacant; no player change), Entry 67 (Super Bowl XLVIII closed; 2013 season archived; Ball and C.J. Wilson cleared at their projections), Entry 66 (kernel 2013.11; no roster change), Entry 65 (conference championships closed, background; Ryan Davis cleared at his projection), Entry 64 (AFC Divisional closed; Jacksonville eliminated; Owens and Thielen cleared; Ryan Davis out, minor, projected back January 14; roles unchanged), Entry 63 (verified birth dates and calendar ages; administrative correction only), Entry 62 (AFC Wild Card closed; Owens and Thielen out, minor, projected back January 5 and 6; roles unchanged), Entry 61 (postseason bracket built; no roster change), Entry 60 (Week 17 closed; regular season complete; no Jacksonville injury), Entry 59 (Week 16 closed; no Jacksonville injury; roles unchanged), Entry 58 (Week 15 closed; no Jacksonville injury; roles unchanged), Entry 57 (Week 14 closed as generation 2; Allen base LB for Posluszny; Kelce cleared; no injury), Entry 55 (Week 13 closed; Posluszny out, independent medical hold; Kelce out, minor; Bouye cleared and first outside reserve), Entry 53 (Week 12 closed; Rutland first outside reserve; Edwards dressed; no injury), Entry 52 (Week 11 closed; Harris starts; Mosley dressed; Bouye injured), Entry 50 (Week 10 closed; Ball injured; Pasztor dressed), Entry 49 (Week 9 bye; no deadline transaction), Entry 46 (Pasztor and Mosley projections recovered; both available), Entry 45 (Week 8 closed; Blackmon dressed), Entry 44 (Week 7 closed), after Entries 42-43 (Blackmon reinstated and activated October 7; Week 6 closed), Entry 41 (Week 5 closed; Posluszny returned; Thielen injured), Entry 40 (Week 4 closed under kernel 2013.6, Entry 39; Meester returned as reserve center), Entry 38 (Week 3 closed; Posluszny injured) and Entries 36-37 (Blackmon to Reserve/Suspended; Week 2 closed with Meester and C.J. Wilson injured).
 - Detailed readable roster: `career/2013/roster.md`.
 - Current cap worksheet: `career/2013/offseason/current_cap_worksheet.md`.
-- Current calendar: `career/2013/calendar.md`.
+- Current calendar: `career/2014/calendar.md`.
 - Statistical authority: Document 6 / season ledger and later game ledgers.
 - Authority source: Document 3 remains the sole source of final organizational authority.
 - Medical authority: qualified medical personnel; no contract/control correction creates practice clearance.
@@ -23,15 +23,17 @@
 | Divergence point | January 15, 2013 — Alex Stone accepts Jacksonville head-coach offer |
 | Season phase | 2013 season complete (eliminated in the AFC Divisional round); 2014 offseason |
 | Owned content effective | February 2, 2014 |
-| Document 4 register version | `JAX-2014-FEB02-STAFF-RECONCILIATION-REGISTER-36` |
-| Supersedes | `JAX-2014-FEB02-COACHING-CAROUSEL-REGISTER-35` |
-| Last content-changing checkpoint | `Canonical correction - February 2, 2014 - special-teams authority and staff planning reconciled` |
-| Latest Document 6 event | Entry 77: existing interim special-teams authority, staff-planning and payroll references reconciled; no new appointment |
+| Document 4 register version | `JAX-2014-FEB02-SETUP-REGISTER-39` |
+| Supersedes | `JAX-2014-FEB02-DRAFT-OWNERSHIP-REGISTER-38` |
+| Last content-changing checkpoint | `Canonical correction - February 2, 2014 - 2014 operating handoff and readiness reconciled` |
+| Latest Document 6 event | Entry 82: operating summaries and season-readiness handoff reconciled; ownership from Entry 81 unchanged |
 | Current controlled players | **53** |
-| Current practice squad | **8; separate from active 53** |
-| Current regular-season planning room | **~$6.2M-$6.6M before weekly practice-squad charges** |
+| Current practice squad | **8; separate from 52 active and one Reserve/Retired** |
+| Historical 2013 planning room; not 2014 spending authority | **~$6.2M-$6.6M before weekly practice-squad charges** |
 | Next scheduled football event | None in 2013 (season complete). 2014 offseason: see Document 5 section 7 |
-| Unresolved matter before participation | None; Jacksonville's season is over |
+| Unresolved matter before participation | Recheck control, practice-squad expiry/futures rights, current medical instructions and calendar permissions before any 2014 participation |
+
+The cap worksheet above is the last reconciled **2013** accounting owner. The [2014 preparation worksheet](../career/2014/offseason/current_cap_worksheet.md) supplies open work, not certified cap room. The eight legacy practice-squad names remain recorded pending exact expiry/right reconciliation; no 2014 contract or participation is presumed.
 
 ## Canon and evidence conventions
 
@@ -144,9 +146,9 @@ One change since the closed late-January 2013 hiring phase: Alan Lowry left on J
 
 ### Reconciliation result
 
-- Register status: **RECONCILED THROUGH ENTRY 77**.
+- Register status: **RECONCILED THROUGH ENTRY 82**.
 - Staff: special teams coordinator vacant (Lowry to Atlanta, January 12, 2014, Entry 75); the other eleven assistants under contract.
-- Roster/control: **53 controlled, all active (Blackmon activated October 7); eight-player practice squad separate**.
+- Roster/control: **53 controlled: 52 active and Meester Reserve/Retired; eight legacy practice-squad names separate, with 2014 rights/futures reconciliation pending**.
 - Cap: regular-season accounting; approximately **$6.2M-$6.6M** before weekly practice-squad charges.
 - Medical: no Week 8 injury; Rackley minor, limited, no projected absence; C.J. Wilson cleared (projected return January 30, 2014 reached); Alan Ball cleared (Week 10 trunk; projected return January 22, 2014 reached); A.J. Bouye cleared (Week 11 injury; projected return November 26 reached); Paul Posluszny out (Week 13 head/neck, independent medical hold; projected return April 5, 2014; no reserve-list move made); Travis Kelce cleared (Week 13 minor; projected return December 3 reached); no Week 14-17 injury; Montell Owens and Adam Thielen cleared (Wild Card minor injuries; projections reached); Ryan Davis cleared (Divisional minor injury; projection reached); Pasztor and Mosley available (Entry 46).
 - Football: Brewster the starting center (confirmed Week 6), Meester retired (Reserve/Retired, Entry 79); Posluszny and Smith base linebackers (Posluszny out from Week 13; Russell Allen starts beside Smith from Week 14, Stanford first base reserve, Moore in Crennel's packages) with Smith the communication lead and Allen first off the bench; Bradfield sixth OL; Shorts WR1, Thielen WR2/H, Blackmon WR3/outside Z (dressed from Week 8), Clemons WR4, Brown WR5; edge order Babin, Mincey, Branch, Davis.
@@ -185,7 +187,7 @@ DOB is a verified pre-divergence identity fact, supported by the [birth-date evi
 
 | Player | Stable ID | Pos. | DOB | Age | Primary status | Current control basis | Current availability boundary | Current source |
 | --- | --- | --- | --- | ---: | --- | --- | --- | --- |
-| Kirk Cousins | JAX-KIRKCOUSINS | QB | 1988-08-19 | 25 | Active 53 | Acquired from Washington; 2014 second transferred | No communicated restriction; fresh game-day communication required | Entry 41 |
+| Kirk Cousins | JAX-KIRKCOUSINS | QB | 1988-08-19 | 25 | Active 53 | Acquired with Washington's 2014 first; Jacksonville's 2014 and 2015 seconds transferred (Entry 80) | No communicated restriction; fresh game-day communication required | Entry 41 |
 | Chad Henne | JAX-CHADHENNE | QB | 1985-07-02 | 28 | Active 53 | Existing 2013 contract | No communicated restriction; fresh game-day communication required | Entry 41 |
 | John Parker Wilson | JAX-JOHNPARKERWILSON | QB | 1985-10-17 | 28 | Active 53 | Dec. 30, 2012 reserve/future contract | No communicated restriction; fresh game-day communication required | Entry 41 |
 | C.J. Anderson | JAX-CJANDERSON | RB | 1991-02-10 | 22 | Active 53 | Three-year UDFA minimum contract | No communicated restriction; fresh game-day communication required | Entry 41 |
@@ -280,7 +282,7 @@ These fifteen departures are rights expirations, not new releases. No later real
 - All seven draftees signed May 2; corrected gross 2013 charge: **$7,269,102**.
 - The four UDFAs are on three-year minimum contracts with no signing bonus/additional guarantee.
 - Current regular-season planning room: **~$6.2M-$6.6M before weekly practice-squad charges**.
-- Jacksonville's 2014 second-round selection belongs to Washington.
+- Jacksonville owns Washington's original 2014 first (No. 13) and retains its own first (No. 26); Washington owns Jacksonville's original 2014 second (No. 58) and 2015 second (slot unknown), per Entry 80. Entry 81 restores Detroit’s fifth from the 2012 Mike Thomas trade, making eight ordinary 2014 picks. Current source: `career/2014/draft/pick_ownership.json`; generated seven-round order: `career/2014/draft/draft_order.md`.
 - No current contract guarantees a depth-chart position, rep share, target share, package share or final roster place.
 
 ## Historical player records
@@ -673,18 +675,22 @@ Use the project's canon authority order. Document 6 is the sole authoritative co
 | May 23 OTA participation, availability, football evidence and calendar checkpoint | 2013 season ledger, Entry 12 | May 23, 2013 | Grimes remained medically limited; retained core and narrow Mesh survived correction; single defensive pressure retained; provisional practice responsibilities updated; no transaction or permanent depth decision; next event June 4-7 | September 19, 2026; Canonical update - May 23, 2013 - OTA Day 6 closed |
 | August 8 current role, availability and walkthrough checkpoint | 2013 season ledger, Entry 29 | September 4, 2013 | 64 controlled; all available for assigned work; provisional Miami roles; no transaction/cap change; game not started | September 19, 2026; Canonical update - September 4, 2013 - preseason, roster and cap block closed |
 | Week 1 result, statistics and Week 1 injury/availability state | 2013 season ledger, Entry 34 | September 4, 2013 | Week 1 void (Entries 30-33 superseded); generated Owens and Rambo injuries voided; September 4 availability restored | September 27, 2026; Canonical correction - September 4, 2013 - Week 1 voided for kernel 2013.4 restart |
+| Cousins trade compensation and current draft capital | 2013 season ledger, Entry 80 | February 2, 2014 reconciliation of the pre-draft 2013 deal | Cousins plus Washington 2014 first to JAX; JAX 2014/2015 seconds to Washington | September 28, 2026; Canonical correction - February 2, 2014 - Cousins trade and draft capital reconciled |
+| Draft coin flip and league ownership | 2013 season ledger, Entry 81 | February 2, 2014 administrative reconciliation | Indianapolis 14 / Green Bay 15; Detroit fifth restored; eight JAX picks | September 28, 2026; Canonical correction - February 2, 2014 - Draft coin flip and league pick ownership reconciled |
+| 2014 operating handoff and readiness | 2013 season ledger, Entry 82 | February 2, 2014 administrative correction | Current summaries and ownership pointers reconciled; 2014 game release blocked; no player-control change | September 28, 2026; Canonical correction - February 2, 2014 - 2014 operating handoff and readiness reconciled |
 
 This table is generated from Document 6 and is only a navigation aid. Active unresolved conflicts remain in the reconciliation block and Document 5; resolved history, controlling authority, notification, and superseded values remain only in Document 6.
 
 ## End-of-update control block
 
 - Effective through: February 2, 2014, after Super Bowl XLVIII.
-- Document 4 register version: `JAX-2014-FEB02-STAFF-RECONCILIATION-REGISTER-36`.
-- Last content-changing checkpoint: `Canonical correction - February 2, 2014 - special-teams authority and staff planning reconciled`.
-- Latest source event: season-ledger Entry 77.
+- Document 4 register version: `JAX-2014-FEB02-SETUP-REGISTER-39`.
+- Last content-changing checkpoint: `Canonical correction - February 2, 2014 - 2014 operating handoff and readiness reconciled`.
+- Latest source event: season-ledger Entry 82.
+- Draft capital: eight ordinary 2014 picks, including Washington first (13), own first (26) and Detroit fifth. JAX 2014/2015 seconds remain Washington-owned. Indianapolis 14 / Green Bay 15; league ownership audited with three specific conditional claims.
 - Staff: special teams coordinator vacant (Lowry to Atlanta, Entry 75).
-- Current controlled count: **53**, all active; practice squad **8**, separate from the active roster.
-- Cap: regular-season accounting, **~$6.2M-$6.6M before weekly practice-squad charges**.
+- Current controlled count: **53** (52 active; Meester on Reserve/Retired, Entry 79); practice squad **8**, separate from the active roster.
+- Cap: historical 2013 regular-season accounting, **~$6.2M-$6.6M before weekly practice-squad charges**; the prepared 2014 worksheet remains unreconciled.
 - Depth/packages: Cousins QB1; regular-season roles as in `career/2013/roster.md`; weekly structured call sheet (AFC Divisional, the season's last).
 - Medical: Alan Ball cleared (Week 10; projection January 22, 2014 reached); Bouye cleared; Posluszny out (independent medical hold, projected April 5, 2014); Kelce cleared; no Week 14-17 injury; Owens and Thielen cleared; Ryan Davis cleared (Divisional minor; projection reached); Rackley limited (minor); C.J. Wilson cleared (projection January 30, 2014 reached); Pasztor and Mosley available.
 - Next event: None in 2013 (season complete). 2014 offseason: see Document 5 section 7.

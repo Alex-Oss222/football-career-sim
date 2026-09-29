@@ -241,3 +241,24 @@ The cap arithmetic, contract frameworks, branch evidence and sources behind ever
 - The memo's $1.98M saving remains a planning claim pending clause-level verification. Check salary, guarantees, unpaid bonuses, retained proration and Top-51 displacement before booking a cap effect. Record any unresolved amount explicitly.
 
 Actual inquiries/offers and a completed trade belong in the dated trade records and ledger when the clock reaches them, with roster, contract/cap, pick ownership and current-state updates closed together. This amendment records a plan only: no buyer, pick, cap saving or roster change has occurred.
+
+## September 28, 2026 amendment: Aaron Donald at No. 13
+
+**User instruction, at the unchanged February 2, 2014 branch checkpoint:** select **Aaron Donald, DT, Pittsburgh**, with Jacksonville's **No. 13 overall pick**, the Washington-origin first acquired in the corrected Cousins deal. This is Stone's chosen use of that pick. It supersedes section 4's treatment of Donald only as a possible alternative at No. 26. The original uploaded board remains above as the earlier recommendation.
+
+- **No. 13:** Donald is the selection instruction Caldwell takes into the draft. When Jacksonville is on the clock, verify current ownership of the Washington-origin first, Donald's eligibility and availability under the dated draft rails, then execute the pick through the normal draft process. No alternative for No. 13 has been authorized; if a material condition prevents the selection, return that specific decision to Stone instead of substituting a prospect or trading the pick automatically.
+- **No. 26:** Joel Bitonio remains the first choice, with the existing offensive-line comparisons if he is unavailable. If Donald is selected at 13, remove him from later available-prospect comparisons. This instruction does not spend both firsts on one player or move the No. 26 choice to 13.
+- The remaining board and trade restrictions stand. The [generated order](../draft/draft_order.md) controls pick numbers, ownership and unresolved compensatory offsets; the original memo's approximate numbering is not an override.
+- Scouting uses only evidence public by the applicable branch date. This selection instruction supplies no prospect grade, medical finding, future NFL performance, guaranteed role or automatic development outcome.
+
+This is a draft-plan amendment. Donald has not been drafted or added to Jacksonville's roster. The clock remains February 2; the Round 1 selection is executed when the calendar reaches May 8, 2014. Record the actual selection, contract/control consequences and league-rails pairing only at that event.
+
+## September 29, 2026 amendment: Linsley on Detroit's fifth; Gaines on Jacksonville's sixth
+
+**User instruction, at the unchanged February 2, 2014 branch checkpoint:** target **Corey Linsley, C, Ohio State**, with **Detroit's original 2014 fifth-round pick**, owned by Jacksonville from the Mike Thomas trade. Target **E. J. Gaines, CB, Missouri**, with **Jacksonville's original 2014 sixth-round pick**, replacing Matt Paradis in that slot.
+
+The assets, rather than the original approximate overall labels, control: Detroit R5 is slot 11 in its round, **139 + C3 + C4** overall; Jacksonville R6 is slot 26, **186 + C3 + C4 + C5** overall. C3/C4/C5 are compensatory selections appended to those earlier rounds and are not yet assigned. Use the generated [draft order](../draft/draft_order.md) when their numbering becomes final.
+
+Linsley is an additional target on the restored Detroit asset. Charles Leno Jr. remains the target on Jacksonville's own fifth. Gaines supersedes the earlier Paradis-first instruction and the contingent Shelby Harris selection attached to that sixth-round choice. The user has not specified a fallback for either Linsley or Gaines; do not silently transfer Paradis, Stork, Swanson, Harris or another comparison into a new selection instruction. Retain their earlier scouting work as history. All other picks, the separate Butler/Cockrell instruction and the undrafted watch list remain unchanged.
+
+These are intentions, not acquisitions or new evaluations. Before spending either pick, confirm the branch asset and final overall number, eligibility and dated pre-selection scouting evidence, then apply the draft rails availability rule when the May 8–10 draft runs. Do not use the real selection or later career to promise availability or assign a grade today. Neither target satisfies package F2's requirement that Jacksonville actually draft two linemen. No draft, trade, roster change or clock advance occurs in this amendment.

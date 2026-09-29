@@ -1,0 +1,131 @@
+"""Explicit season routing. A missing new-season input never falls back to 2013.
+
+Historical Python callers default to 2013 to preserve reproducible receipts;
+operator commands require a season or use the map's explicit planning season.
+Current record ownership is separate from the season being prepared.
+"""
+from dataclasses import dataclass
+import json
+from pathlib import Path
+import re
+
+ROOT = Path(__file__).resolve().parents[1]
+RELEASE_GATES = {'tier1_engine', 'season_rules', 'season_closure', 'dated_fixtures',
+                 'legal_rosters', 'financial_control'}
+
+
+def active_season(root=ROOT):
+    return int(json.loads((Path(root) / 'docs/repository_map.json').read_text())['active_season'])
+
+
+def current_record(name, root=ROOT):
+    root = Path(root).resolve()
+    mapping = json.loads((root / 'docs/repository_map.json').read_text())
+    target = (root / mapping['current_records'][name]).resolve()
+    if not target.is_relative_to(root) or not target.is_file():
+        raise ValueError('Missing or invalid current record: ' + name)
+    return target
+
+
+@dataclass(frozen=True)
+class SeasonPaths:
+    year: int
+    root: Path = ROOT
+
+    def __post_init__(self):
+        if type(self.year) is not int or self.year not in (2013, 2014):
+            raise ValueError('Unsupported season: %r' % self.year)
+        object.__setattr__(self, 'root', Path(self.root).resolve())
+
+    @property
+    def career(self): return self.root / 'career' / str(self.year)
+    @property
+    def stats(self): return self.career / 'stats'
+    @property
+    def receipts(self): return self.stats / 'game_receipts'
+    @property
+    def postseason_receipts(self): return self.stats / 'postseason_receipts'
+    @property
+    def roster(self): return self.career / 'roster.md'
+    @property
+    def depth_chart(self): return self.career / 'depth_chart.json'
+    @property
+    def schedule(self):
+        return (self.root / 'library/data/2013_schedule.json' if self.year == 2013
+                else self.career / 'schedule/fixtures.json')
+    @property
+    def postseason_slots(self):
+        return self.root / ('library/data/%d_postseason_slots.json' % self.year)
+    @property
+    def background_depth(self):
+        return self.root / ('library/data/%d_week1_depth_charts.json' % self.year)
+    @property
+    def generations(self): return self.career / 'migrations/event_generations.json'
+
+    def cache(self, week, kind):
+        if type(week) is not int or not 1 <= week <= 21 or kind not in ('inputs', 'results'):
+            raise ValueError('Invalid weekly cache identity')
+        return self.root / '.sim_cache' / str(self.year) / ('week_%02d_%s.json' % (week, kind))
+
+    def regular_games(self):
+        data = json.loads(self.schedule.read_text())
+        if self.year != 2013 and (data.get('season') != self.year or data.get('status') != 'RELEASED'):
+            raise ValueError('Season fixtures must have the requested season and RELEASED status')
+        games = data['games']
+        if any(int(g['date'][:4]) != self.year for g in games):
+            raise ValueError('Fixture dates do not belong to requested regular season')
+        return games
+
+
+def require_receipt_season(receipts, season):
+    """Reject foreign-season receipts; legacy 2013 ids remain byte-identical."""
+    SeasonPaths(season)
+    for row in receipts:
+        event = str(row.get('event_id', ''))
+        match = re.match(r'^(\d{4})-', event)
+        if row.get('season', season) != season or (match and int(match[1]) != season):
+            raise ValueError('Receipt belongs to another season: ' + event)
+        if season != 2013 and (not match or int(match[1]) != season):
+            raise ValueError('Receipt lacks a season-qualified event id: ' + event)
+
+
+def game_release_errors(season, root=ROOT):
+    """Public release gate, independent of credentials or legacy VERIFIED flags."""
+    paths = SeasonPaths(season, root)
+    if season == 2013:
+        return []
+    from . import KERNEL_VERSION
+    data = json.loads((Path(root) / 'runtime/season_readiness.json').read_text())
+    release = data['seasons'][str(season)]
+    if {g['id'] for g in release['gates']} != RELEASE_GATES or len(release['gates']) != len(RELEASE_GATES):
+        raise ValueError('Season release must contain each required gate exactly once')
+    errors = []
+    if not release.get('accepted_kernel') or release['accepted_kernel'] != KERNEL_VERSION:
+        errors.append('No accepted %d game release for the installed kernel' % season)
+    for gate in release['gates']:
+        if gate['status'] not in ('BLOCKED', 'PARTIAL', 'VERIFIED') or not gate.get('remaining'):
+            raise ValueError('Invalid season release disposition: ' + gate['id'])
+        for evidence in gate.get('evidence', []):
+            target = (Path(root) / evidence).resolve()
+            if not target.is_relative_to(paths.root) or not target.is_file():
+                raise ValueError('Invalid season release evidence: ' + evidence)
+        if gate['status'] != 'VERIFIED':
+            errors.append(gate['id'] + ': ' + gate['remaining'])
+        elif not gate.get('evidence') or any(not (Path(root) / p).is_file() for p in gate['evidence']):
+            errors.append(gate['id'] + ': verified gate lacks acceptance evidence')
+    for name in ('roster', 'depth_chart', 'schedule', 'background_depth'):
+        if not getattr(paths, name).is_file():
+            errors.append('Missing %d input: %s' % (season, getattr(paths, name).relative_to(paths.root)))
+    if paths.schedule.is_file():
+        try:
+            if len(paths.regular_games()) != 256:
+                errors.append('2014 regular-season fixture count must be 256')
+        except (ValueError, KeyError, TypeError) as exc:
+            errors.append('Invalid season fixtures: ' + str(exc))
+    return errors
+
+
+def require_game_release(season, root=ROOT):
+    errors = game_release_errors(season, root)
+    if errors:
+        raise ValueError('Season %d game execution blocked: %s' % (season, '; '.join(errors)))

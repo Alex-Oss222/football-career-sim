@@ -173,13 +173,13 @@ Evidence treatment:
 
 ## 8. Pre-draft market check (March 12-April 24 window) — resolved
 
-**Decision record:** The terms and uncertainty were frozen before the calls in career/2013/ledger.md, Entry 4. The accepted outcomes below are simulation canon. They are not claims about conversations that occurred in real life.
+**Decision record:** The terms and uncertainty were frozen before the calls in career/2013/ledger.md, Entry 4. Sections 1–7 remain the ex-ante board. The Washington compensation below is corrected by the explicit user clarification in Entry 80; it must not be attributed to a negotiation or authorization that the old record never contained. These are branch outcomes, not claims about conversations that occurred in real life.
 
 ### Washington — Kirk Cousins
 
-Washington accepted Jacksonville's already-authorized **2014 second-round selection outright** for Kirk Cousins. Jacksonville did not add #33, #64, #98, #208, a 2014 first, or any other compensation. Because the outright structure contains no playing-time condition, the 2014 second transfers to Washington without a snap or start trigger.
+**Corrected completed deal (Entry 80):** Jacksonville receives Kirk Cousins **and Washington's original 2014 first** (branch No. 13); Washington receives Jacksonville's original **2014 and 2015 seconds**, unconditional. Jacksonville keeps its own 2014 first (No. 26) and all seven 2013 selections. The narrow user-directed ownership exception displaces the historical Rams claim to Washington's 2014 first; see trades.md and the verification source. No extra Rams trade is invented.
 
-Caldwell completed the franchise-quarterback consultation required by the authority map before execution. Stone maintained the development case recorded above and accepted the opportunity cost of the future second while preserving every 2013 selection. **Result: Kirk Cousins is acquired; Jacksonville's 2014 second is transferred to Washington.**
+The original record's franchise-quarterback consultation and player-control outcome remain historical facts. No revised consultation or market response is fabricated to fit the compensation correction. **Current result: Cousins and Washington's 2014 first are Jacksonville property; both Jacksonville seconds (2014 and 2015) are Washington property.**
 
 ### Blaine Gabbert — Green Bay counter
 
@@ -197,4 +197,4 @@ With Cousins acquired and Gabbert moved, Caldwell closed the outbound Henne mark
 
 ### Closed Phase 1 result
 
-Jacksonville enters the draft with Cousins, Henne, and Jordan Palmer in the veteran quarterback room, plus C.J. Wilson added to the defensive front. Gabbert is no longer a Jaguar. Jacksonville still owns all seven 2013 selections, while its 2014 second belongs to Washington. Completed transactions are recorded in trades.md; contract and cap uncertainty remains in offseason/initial_cap_sheet.md.
+Jacksonville enters the draft with Cousins, Henne, and Jordan Palmer in the veteran quarterback room, plus C.J. Wilson added to the defensive front. Gabbert is no longer a Jaguar. Jacksonville still owns all seven 2013 selections. The corrected future inventory gives Jacksonville Washington's 2014 first and gives Washington Jacksonville's 2014 and 2015 seconds. Completed transactions are recorded in trades.md; contract and cap uncertainty remains in offseason/initial_cap_sheet.md.

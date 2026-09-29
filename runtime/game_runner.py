@@ -2,6 +2,7 @@
 from dataclasses import asdict
 import hashlib
 import inspect
+import re
 
 from . import KERNEL_VERSION
 from .kernel import TeamInput, resolve_game, validate_result
@@ -80,6 +81,10 @@ def run_game(home: TeamInput, away: TeamInput, *, event_id, snapshot,
     only an immutable opaque event reference, which is domain-separated into the
     kernel entropy bytes.
     """
+    match = re.match(r'^(\d{4})-', event_id)
+    if match:
+        from .seasons import require_game_release
+        require_game_release(int(match[1]))
     client = client or Client(snapshot=snapshot)
     if client.snapshot != snapshot:
         raise ValueError("client and game snapshot differ")

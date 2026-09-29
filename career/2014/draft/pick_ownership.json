@@ -1,0 +1,339 @@
+{
+  "schema_version": 2,
+  "as_of": "2014-02-02",
+  "authority": "career/2013/ledger.md#entry-81-draft-coin-flip-and-league-pick-ownership-reconciled",
+  "default_ownership": "Retained original allocation after the 224-asset audit in ownership_audit.md; explicit transfers and conditional claims override it. No generic outside-club provisional holdings remain for 2014.",
+  "compensatory": {
+    "status": "pending",
+    "announcement_date": "2014-03-24",
+    "qualifying_free_agency_year": 2013,
+    "round_counts": null
+  },
+  "transfers": [
+    {
+      "draft_year": 2014,
+      "round": 1,
+      "original_club": "Washington Redskins",
+      "owner": "Jacksonville Jaguars",
+      "basis": "User-corrected Cousins trade; ledger Entry 80",
+      "source": "career/2013/trades/trades.md",
+      "superseded_historical_owner": "St. Louis Rams",
+      "exception": "User-directed ownership exception for this asset only. Historical 2012 Rams claim disclosed and overridden; no compensating transaction invented.",
+      "effective_date": "2014-02-02",
+      "date_note": "Administrative correction date; original execution timestamp was not recorded."
+    },
+    {
+      "draft_year": 2014,
+      "round": 2,
+      "original_club": "Jacksonville Jaguars",
+      "owner": "Washington Redskins",
+      "basis": "User-corrected Cousins trade; ledger Entry 80",
+      "source": "career/2013/trades/trades.md",
+      "effective_date": "2014-02-02",
+      "date_note": "Administrative correction date; original execution timestamp was not recorded."
+    },
+    {
+      "draft_year": 2015,
+      "round": 2,
+      "original_club": "Jacksonville Jaguars",
+      "owner": "Washington Redskins",
+      "basis": "User-corrected Cousins trade; ledger Entry 80; unconditional, slot unknown",
+      "source": "career/2013/trades/trades.md",
+      "effective_date": "2014-02-02",
+      "date_note": "Administrative correction date; original execution timestamp was not recorded."
+    },
+    {
+      "draft_year": 2014,
+      "round": 7,
+      "original_club": "Carolina Panthers",
+      "owner": "San Francisco 49ers",
+      "basis": "Pre-divergence Colin Jones trade, reported August 31, 2012",
+      "source": "library/2014_draft_order_verification.md",
+      "effective_date": "2012-08-31"
+    },
+    {
+      "draft_year": 2014,
+      "round": 5,
+      "original_club": "Detroit Lions",
+      "owner": "Jacksonville Jaguars",
+      "effective_date": "2012-10-30",
+      "basis": "Mike Thomas: Inherited pre-divergence consideration; Entry 81",
+      "source": "career/2014/draft/ownership_audit.md#thomas",
+      "source_urls": [
+        "https://www.jaguars.com/news/caldwell-roster-not-in-fire-sale-11406545",
+        "https://www.nfl.com/news/mike-thomas-cut-by-detroit-lions-after-short-tenure-0ap1000000231765"
+      ]
+    },
+    {
+      "draft_year": 2014,
+      "round": 7,
+      "original_club": "Indianapolis Colts",
+      "owner": "St. Louis Rams",
+      "effective_date": "2012-08-21",
+      "basis": "Josh Gordy: Inherited pre-divergence consideration; Entry 81",
+      "source": "career/2014/draft/ownership_audit.md#gordy",
+      "source_urls": [
+        "https://www.colts.com/news/colts-receive-cb-josh-gordy-8008317",
+        "https://www.colts.com/news/colts-mailbag-january-29-2014-part-one-12531108"
+      ]
+    },
+    {
+      "draft_year": 2014,
+      "round": 2,
+      "original_club": "Kansas City Chiefs",
+      "owner": "San Francisco 49ers",
+      "effective_date": "2013-03-12",
+      "basis": "Alex Smith: KC finished 9-7 in the branch; meets .500 escalation, third retained; Entry 81",
+      "source": "career/2014/draft/ownership_audit.md#smith",
+      "source_urls": [
+        "https://www.49ers.com/news/49ers-acquire-picks-in-alex-smith-trade-9684680",
+        "https://www.nfl.com/news/alex-smith-trade-might-produce-better-pick-for-49ers-0ap1000000167057"
+      ]
+    },
+    {
+      "draft_year": 2014,
+      "round": 3,
+      "original_club": "Tennessee Titans",
+      "owner": "San Francisco 49ers",
+      "effective_date": "2013-04-26",
+      "basis": "Justin Hunter draft trade: Consideration for accepted 2013 draft acquisition; Entry 81",
+      "source": "career/2014/draft/ownership_audit.md#hunter",
+      "source_urls": [
+        "https://www.tennesseetitans.com/news/titans-aggressive-pass-lands-justin-hunter-10021228",
+        "https://static.clubs.nfl.com/image/upload/titans/v0q1mnwdg9i2gidi3hzr.pdf"
+      ]
+    },
+    {
+      "draft_year": 2014,
+      "round": 3,
+      "original_club": "Pittsburgh Steelers",
+      "owner": "Cleveland Browns",
+      "effective_date": "2013-04-27",
+      "basis": "Shamarko Thomas draft trade: Consideration for accepted 2013 draft acquisition; Entry 81",
+      "source": "career/2014/draft/ownership_audit.md#shamarko",
+      "source_urls": [
+        "https://www.steelers.com/news/steelers-have-15th-selection-in-2014-nfl-draft-12963535",
+        "https://www.pro-football-reference.com/teams/cle/2013_trades.htm"
+      ]
+    },
+    {
+      "draft_year": 2014,
+      "round": 3,
+      "original_club": "Seattle Seahawks",
+      "owner": "Minnesota Vikings",
+      "effective_date": "2013-03-12",
+      "basis": "Percy Harvin: Consideration for accepted 2013 background acquisition; Entry 81",
+      "source": "career/2014/draft/ownership_audit.md#harvin",
+      "source_urls": [
+        "https://www.seahawks.com/team/all-time-trades",
+        "https://www.seahawks.com/news/on-this-date-percy-harvin-acquired-in-trade-with-vikings-153546"
+      ]
+    },
+    {
+      "draft_year": 2014,
+      "round": 4,
+      "original_club": "Indianapolis Colts",
+      "owner": "Cleveland Browns",
+      "effective_date": "2013-04-27",
+      "basis": "Montori Hughes draft trade: Consideration for accepted 2013 draft acquisition; Entry 81",
+      "source": "career/2014/draft/ownership_audit.md#hughes",
+      "source_urls": [
+        "https://www.colts.com/news/indianapolis-colts-select-seven-players-in-the-2013-nfl-draft-10042633",
+        "https://www.colts.com/news/colts-mailbag-december-18-2013-12184135"
+      ]
+    },
+    {
+      "draft_year": 2014,
+      "round": 5,
+      "original_club": "Oakland Raiders",
+      "owner": "Seattle Seahawks",
+      "effective_date": "2013-04-01",
+      "basis": "Matt Flynn: Unconditional 2014 portion; 2015 condition not settled here; Entry 81",
+      "source": "career/2014/draft/ownership_audit.md#flynn",
+      "source_urls": [
+        "https://www.raiders.com/news/raiders-obtain-quarterback-matt-flynn-from-seattle-9811593",
+        "https://www.seahawks.com/team/all-time-trades"
+      ]
+    },
+    {
+      "draft_year": 2014,
+      "round": 6,
+      "original_club": "Tampa Bay Buccaneers",
+      "owner": "Chicago Bears",
+      "effective_date": "2013-06-09",
+      "basis": "Gabe Carimi: Consideration for accepted 2013 background acquisition; Entry 81",
+      "source": "career/2014/draft/ownership_audit.md#carimi",
+      "source_urls": [
+        "https://www.buccaneers.com/news/trade-for-gabe-carimi-bolsters-bucs-o-line-10314128",
+        "https://static.www.nfl.com/league/apps/league-site/media-guides/2021/CHI.pdf"
+      ]
+    },
+    {
+      "draft_year": 2014,
+      "round": 6,
+      "original_club": "Dallas Cowboys",
+      "owner": "Kansas City Chiefs",
+      "effective_date": "2013-08-31",
+      "basis": "Edgar Jones: 2014 sixth for Jones and KC seventh; Entry 81",
+      "source": "career/2014/draft/ownership_audit.md#jones",
+      "source_urls": [
+        "https://www.dallascowboys.com/news/cowboys-trade-lissemore-claim-bosworth-off-waivers-340896",
+        "https://www.chiefs.com/news/chiefs-trade-lb-edgar-jones-to-dallas-11026650"
+      ]
+    },
+    {
+      "draft_year": 2014,
+      "round": 7,
+      "original_club": "Kansas City Chiefs",
+      "owner": "Dallas Cowboys",
+      "effective_date": "2013-08-31",
+      "basis": "Edgar Jones: Counterpart of Dallas sixth in same Jones trade; Entry 81",
+      "source": "career/2014/draft/ownership_audit.md#jones",
+      "source_urls": [
+        "https://www.dallascowboys.com/news/cowboys-trade-lissemore-claim-bosworth-off-waivers-340896",
+        "https://www.chiefs.com/news/chiefs-trade-lb-edgar-jones-to-dallas-11026650"
+      ]
+    },
+    {
+      "draft_year": 2014,
+      "round": 7,
+      "original_club": "Baltimore Ravens",
+      "owner": "Indianapolis Colts",
+      "effective_date": "2013-05-09",
+      "basis": "A.Q. Shipley: Roster condition met in accepted branch Week 1 lineup; Entry 81",
+      "source": "career/2014/draft/ownership_audit.md#shipley",
+      "source_urls": [
+        "https://www.baltimoreravens.com/news/ravens-trade-for-center-a-q-shipley-10111061",
+        "https://www.stampedeblue.com/2013/5/10/4319626/report-colts-will-only-get-a-7th-round-pick-if-a-q-shipley-makes"
+      ]
+    },
+    {
+      "draft_year": 2014,
+      "round": 7,
+      "original_club": "Arizona Cardinals",
+      "owner": "Oakland Raiders",
+      "effective_date": "2013-04-02",
+      "basis": "Carson Palmer: Thirteen-start condition met; branch QB1 and sole passer in all sixteen games; Entry 81",
+      "source": "career/2014/draft/ownership_audit.md#palmer",
+      "source_urls": [
+        "https://www.raiders.com/news/raiders-trade-carson-palmer-to-cardinals-9818701",
+        "https://www.cincyjungle.com/2013/4/2/4174992/carson-palmer-officially-traded-to-arizona-cardinals-bengals-raiders-nfl"
+      ]
+    },
+    {
+      "draft_year": 2014,
+      "round": 7,
+      "original_club": "New Orleans Saints",
+      "owner": "San Francisco 49ers",
+      "effective_date": "2013-08-26",
+      "basis": "Parys Haralson: Roster condition met in accepted branch Week 1 lineup; Entry 81",
+      "source": "career/2014/draft/ownership_audit.md#haralson",
+      "source_urls": [
+        "https://www.49ers.com/news/49ers-trade-parys-haralson-10975056",
+        "https://www.nfl.com/news/parys-haralson-dealt-to-new-orleans-saints-from-49ers-0ap1000000234665"
+      ]
+    }
+  ],
+  "audited_year": 2014,
+  "audited_clubs": [
+    "Arizona Cardinals",
+    "Atlanta Falcons",
+    "Baltimore Ravens",
+    "Buffalo Bills",
+    "Carolina Panthers",
+    "Chicago Bears",
+    "Cincinnati Bengals",
+    "Cleveland Browns",
+    "Dallas Cowboys",
+    "Denver Broncos",
+    "Detroit Lions",
+    "Green Bay Packers",
+    "Houston Texans",
+    "Indianapolis Colts",
+    "Jacksonville Jaguars",
+    "Kansas City Chiefs",
+    "Miami Dolphins",
+    "Minnesota Vikings",
+    "New England Patriots",
+    "New Orleans Saints",
+    "New York Giants",
+    "New York Jets",
+    "Oakland Raiders",
+    "Philadelphia Eagles",
+    "Pittsburgh Steelers",
+    "San Diego Chargers",
+    "San Francisco 49ers",
+    "Seattle Seahawks",
+    "St. Louis Rams",
+    "Tampa Bay Buccaneers",
+    "Tennessee Titans",
+    "Washington Redskins"
+  ],
+  "conditional_claims": [
+    {
+      "id": "revis",
+      "draft_year": 2014,
+      "original_club": "Tampa Bay Buccaneers",
+      "beneficiary": "New York Jets",
+      "round_options": [
+        3,
+        4
+      ],
+      "status": "awaiting_date",
+      "effective_date": "2013-04-21",
+      "decision_date": "2014-03-13",
+      "basis": "One pick to NYJ: R3 if Revis remains on TB roster March 13, otherwise R4. Both alternatives reserved.",
+      "source": "career/2014/draft/ownership_audit.md#revis",
+      "source_urls": [
+        "https://www.nfl.com/news/new-york-jets-trade-darrelle-revis-to-tampa-bay-bucs-0ap1000000162196",
+        "https://www.si.com/nfl/2013/04/22/darrelle-revis-peter-king-monday-morning-quarterback"
+      ],
+      "max_picks": 1
+    },
+    {
+      "id": "benn",
+      "draft_year": 2014,
+      "original_club": "Philadelphia Eagles",
+      "beneficiary": "Tampa Bay Buccaneers",
+      "round_options": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "status": "terms_unverified",
+      "effective_date": "2013-03-15",
+      "decision_date": null,
+      "basis": "One conditional compensation claim to TB; round and trigger undisclosed. Scope hold until terms verified; not seven debts.",
+      "source": "career/2014/draft/ownership_audit.md#benn",
+      "source_urls": [
+        "https://www.philadelphiaeagles.com/news/eagles-acquire-wr-arrelious-benn-9726231",
+        "https://www.buccaneers.com/news/arrelious-benn-traded-to-eagles-9727953"
+      ],
+      "max_picks": 1
+    },
+    {
+      "id": "rosario",
+      "draft_year": 2014,
+      "original_club": "Chicago Bears",
+      "beneficiary": "Dallas Cowboys",
+      "round_options": [
+        7
+      ],
+      "status": "terms_unverified",
+      "effective_date": "2013-09-02",
+      "decision_date": null,
+      "basis": "Conditional seventh to DAL; playing-time threshold unverified. Branch appearances alone do not prove the clause.",
+      "source": "career/2014/draft/ownership_audit.md#rosario",
+      "source_urls": [
+        "https://www.dallascowboys.com/news/broaddus-rosario-move-more-about-faith-in-andre-smith-340926",
+        "https://www.dallasnews.com/sports/cowboys/2013/09/02/cowboys-stockpile-7th-round-picks-with-trade-of-te-dante-rosario/"
+      ],
+      "max_picks": 1
+    }
+  ],
+  "audit_scope": "2014 ordinary selections at February 2. The existing JAX 2015 second remains recorded, but other 2015 assets are not audited or certified by this register."
+}

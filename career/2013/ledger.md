@@ -2328,3 +2328,74 @@ The draw weights are a modelling choice and can be changed until the first draw.
 **State.** Updated in the same commit: `career/2013/roster.md`, Document 4, Document 5, and `retirements.md`.
 
 **Commit closed - Canonical update - February 2, 2014 - Meester retired; Allen retirement scheduled (league rails) - canonical through February 2, 2014**
+
+## Entry 80: Cousins trade and draft capital reconciled
+
+**Effective canonical state:** February 2, 2014 (no clock advance).
+**Recorded:** September 28, 2026 (user's Eastern date; September 29 UTC).
+**Checkpoint:** `Canonical correction - February 2, 2014 - Cousins trade and draft capital reconciled`
+**Preceding global package checkpoint:** `Canonical update - February 2, 2014 - Meester retired; Allen retirement scheduled (league rails)`
+
+**Controlling authority: explicit user correction.** The user clarified the original Cousins trade: Jacksonville sent its **2014 second and 2015 second**; Washington sent **Kirk Cousins and its original 2014 first**. This corrects the recorded compensation of the already-completed pre-draft 2013 trade. It is not a new negotiation, market draw, or transaction on February 2. Its exact original execution date remains unrecorded.
+
+**Superseded claims.** Entry 5 and the prior completed-trade views recorded Cousins for Jacksonville's 2014 second alone. Entry 68's draft inventory omitted Washington's first. Those historical entries and the ex-ante authorization/recommendations remain intact; this correction controls current ownership. No revised offer, valuation, consultation, or acceptance dialogue is invented to make the earlier negotiation support the corrected terms.
+
+| Stable asset | Correct current owner | Effect |
+|---|---|---|
+| Kirk Cousins | Jacksonville | Player control unchanged |
+| Washington original 2014 Round 1 | Jacksonville | Branch overall No. 13 |
+| Jacksonville original 2014 Round 1 | Jacksonville | Retained; branch overall No. 26 |
+| Jacksonville original 2014 Round 2 | Washington | Branch overall No. 58; unconditional |
+| Jacksonville original 2015 Round 2 | Washington | Unconditional; slot depends on the branch's 2014 season and is not known |
+
+**Historical ownership exception, limited to this asset.** Washington had really transferred its 2014 first to St. Louis in the 2012 RGIII transaction, before branch divergence. This conflict was disclosed before the user's clarification. The user's corrected deal expressly controls the branch's Washington-origin 2014 first: Jacksonville owns it and St. Louis does not. This is a user-directed alternate-history ownership exception, not a claim that real Washington still owned the pick. No compensating Rams asset, rescission of the rest of the RGIII deal, or extra trade is invented. The source comparison and scope live in `library/2014_draft_order_verification.md`.
+
+**Seven-round order.** All 224 ordinary slots are derived from the closed branch receipts. Equal-record clubs rotate within their elimination group, with the first club moving to the bottom each round. The Green Bay/Indianapolis coin flip stays unresolved in every affected round. Original club and recorded owner are separate. The verified pre-divergence Carolina 2014 seventh conveyed to San Francisco is carried forward; other clubs' unrecorded post-divergence transfers are not silently imported. Default original allocations are explicitly provisional for those clubs.
+
+**Compensatory picks.** March 24 remains the announcement gate. Awards use **2013**, not 2014, qualifying free-agent activity. No real recipients or round counts are imported. Later overall numbers include explicit unknown compensatory offsets; no pending count is treated as zero. No forfeiture is recorded in the branch; a future recorded forfeiture needs reconciliation before the order can execute.
+
+**Dependent records.** Completed trade views, the machine-readable pick register, generated seven-round order, 2014 index/calendar, rails order/pairing pointers and Documents 4/5 now agree. Documents 4/5 advance together to register 37 / state 56. Historical interview/review cost summaries remain dated evidence superseded by this entry. The user-authored draft board and trade offers are preserved: an extra first-round asset does not choose a prospect, and Seattle's own second now computes to No. 36 rather than the memo's No. 37; the precise intended asset must be reconciled before package A executes. No receiver trade is booked.
+
+**Unchanged.** All seven exercised 2013 picks, player control, roles, contracts, cap charges, medical status, statistics, results, staff and the simulation clock. The existing Meester retirement leaves 52 active and 53 controlled, plus eight practice-squad players; stale active-count headers are reconciled to Entry 79 without a new roster event. The private snapshot must be advanced to the merged correction before any next simulated event; no private snapshot is advanced by this PR.
+
+**Commit closed - Canonical correction - February 2, 2014 - Cousins trade and draft capital reconciled - canonical through February 2, 2014**
+
+
+## Entry 81: Draft coin flip and league pick ownership reconciled
+
+**Effective canonical state:** February 2, 2014 (administrative reconciliation; no clock advance).
+**Recorded:** September 28, 2026 (Eastern; September 29 UTC).
+**Checkpoint:** `Canonical correction - February 2, 2014 - Draft coin flip and league pick ownership reconciled`
+**Preceding global package checkpoint:** `Canonical correction - February 2, 2014 - Cousins trade and draft capital reconciled`
+
+**User authority and draw.** The user directed a website coin flip and a league-wide pick-ownership correction. Before drawing, heads was assigned to Green Bay and tails to Indianapolis. The one-coin RANDOM.ORG result was **0 obverse, 1 reverse (tails)** at **2026-09-29 01:42:47 UTC**. Indianapolis receives Round 1 slot **14**, Green Bay **15**. The locally committed protocol, structured result and screenshot are in `career/2014/draft/coin_flip.json` and `coin_flip_2026-09-29.jpg`. There was one draw, no reroll. This user-authorized administrative resolution is not a claim about an actual 2014 NFL ceremony. The recorded result now drives all seven rounds, preserving equal-record rotation and original-club asset identity.
+
+**Ownership reconciliation.** The complete 224-asset audit is in `career/2014/draft/ownership_audit.md`, with dated source pairs and branch evidence. Pre-divergence consideration and consideration for trades already represented in the accepted 2013 background baseline are restored; this is bookkeeping for established acquisitions, not new negotiations. Closed branch receipts override conflicting historical midseason trades. The existing user exception for Washington's first remains controlling.
+
+**Jacksonville correction.** The October 2012 Mike Thomas trade conveyed Detroit's original 2014 fifth to Jacksonville. That inherited asset was missing from Entry 80's inventory. Jacksonville now owns **eight ordinary 2014 picks**: Washington's first, its own first, its own third and fourth, Detroit's fifth, its own fifth, sixth and seventh. Washington still owns Jacksonville's 2014/2015 seconds. This adds no new trade or player movement. Donald remains Stone's recorded instruction for No. 13; the draft has not taken place.
+
+**Branch conditions, not historical results.** Kansas City's closed 9-7 record satisfies the Alex Smith escalation, so its second goes to San Francisco and its third stays home. Arizona's QB1 and closed passing receipts support sixteen Palmer starts, satisfying the reported thirteen-start condition. Haralson and Shipley are in their receiving clubs' accepted opening rosters, satisfying the sourced roster conditions. Indianapolis keeps its first because Richardson remained in Cleveland; the historical Sopoaga, Beason, Levi Brown, Monroe and D'Anthony Smith transactions are not imposed on this branch.
+
+**Three specific conditional claims remain open.** Revis requires one Tampa Bay pick, third if he is on its roster on March 13, otherwise fourth; neither alternative is free to spend pending resolution. Public sources do not disclose Benn's compensation round/threshold or Rosario's exact playing-time threshold. Philadelphia's original assets carry a single unresolved Benn claim, not seven debts; Chicago's seventh carries the Rosario claim. No historical injury, release or real-life non-conveyance is used to invent a branch outcome. Those affected assets are encumbered and blocked by the ownership guard. Every other ordinary allocation is reconciled; the old blanket outside-club warning is removed. Compensatory awards remain gated to March 24 and their offsets are preserved.
+
+**Atomic closure.** The ownership register, renderer, seven-round order, ownership audit, 2014 calendar/index, rails pointers and Documents 4/5 now share this event. Register 38 / state 57 replace register 37 / state 56. Historical ledger entries and the frozen memo remain intact. Player control, contracts, cap charges, games, statistics, staff and the calendar do not change. Private snapshot binding must follow the merged correction before any simulated event; this PR does not advance that service.
+
+**Commit closed - Canonical correction - February 2, 2014 - Draft coin flip and league pick ownership reconciled - canonical through February 2, 2014**
+
+
+## Entry 82: 2014 operating handoff and readiness reconciled
+
+**Effective canonical state:** February 2, 2014 (administrative correction; no clock advance).
+**Recorded:** September 28, 2026 (Eastern; September 29 UTC).
+**Checkpoint:** `Canonical correction - February 2, 2014 - 2014 operating handoff and readiness reconciled`
+**Preceding global package checkpoint:** `Canonical correction - February 2, 2014 - Draft coin flip and league pick ownership reconciled`
+
+**Authority.** The user requested the audited setup corrections and repair of PR #135's inconsistency. Its living coaching profiles and dated 2015 research are reconciled with the newer 2014 baseline. Research/preparation does not open a future information gate, execute a phase or confer an engine release.
+
+**Corrections.** Five phase plans and their NOT_STARTED output/evidence records already exist; Stone is not assigned to write them. Bobby April is selected at the recorded offer limits, not hired. League research and dated roster preparation are operator work. Meester remains Reserve/Retired under Entry 79: the current baseline is 52 active plus one retired, and the contract register separates him from seven pending active UFAs. The eight legacy practice-squad names are retained as the prior closed baseline pending exact expiry/rights and actual futures reconciliation, not certified 2014 participants. No contract is silently ended or created here. The historical 2013 cap range is not 2014 spending authority; the new preparation worksheet stays UNRECONCILED. February 3's waiver/staff checkpoint precedes the February 17 tag window.
+
+**Ownership and execution.** The repository map now distinguishes planning season 2014 from the still-current 2013 ledger/roster/staff/cap owners. New result-storage indexes contain no outcomes. Explicit season routing prevents new-season commands from silently selecting old inputs, caches, event identities or receipt destinations. The season-release gate separately blocks 2014 before private game closure while the documented engine, rules, financial/control, fixture, input and acceptance requirements remain open. The public free-agent record contains no private probability/draw fields. E1/E2 policy remains adopted; no result-changing kernel is released.
+
+**Atomic closure.** Register 39 / state 58 replace register 38 / state 57. The live records and finance owner remain at their documented paths until a future audited 2014 activation. Earlier ledger entries, game receipts, statistics, ownership, actual contracts, staff appointments, roles and medical instructions remain unchanged. The clock is still February 2. No private snapshot is advanced from this branch; binding to the merged correction remains required before the next simulated event.
+
+**Commit closed - Canonical correction - February 2, 2014 - 2014 operating handoff and readiness reconciled - canonical through February 2, 2014**

@@ -2,8 +2,10 @@
 
 **Branch date:** February 2, 2014 (2013 season complete; Jacksonville eliminated in the AFC Divisional round).
 **Applies at:** the opening of the 2014 league year, Tuesday, March 11, 2014, 4:00 PM ET (`library/2014_league_calendar_and_financial_rules.md`, C10).
-**Scope:** every player Jacksonville controls in `career/2013/roster.md` at the branch date: 53 active players and 8 practice-squad players.
+**Scope:** every player Jacksonville controls in `career/2013/roster.md` at the branch date: 52 active players, Brad Meester on Reserve/Retired (Entry 79), and eight legacy practice-squad names whose 2014 rights require reconciliation.
 **Nature:** research and status register only. It executes no signing, tender, release, extension, option or trade and changes no current state. Caldwell retains contract authority under Document 3.
+
+**Administrative reconciliation, Entry 82:** Meester's retired status is separated from the seven pending active UFAs. The original contract term is preserved. The legacy practice-squad list is a historical baseline, not proof of continuing exclusive rights or 2014 eligibility; verify expiry and actual futures outcomes before contact/participation that requires control. No contract event occurs here.
 
 ## 1. How to read this register
 
@@ -21,29 +23,30 @@ WebFetch was blocked by the session's network egress proxy for every outlet trie
 
 ## 2. Summary
 
-| Status on March 11, 2014 | Active 53 | Practice squad | Total |
+| Status at the March 11 handoff | Controlled active/reserve baseline | Legacy practice squad | Total |
 |---|---:|---:|---:|
 | Under contract for 2014 | 35 | 0 | 35 |
-| Unrestricted free agent | 8 | 0 | 8 |
+| Pending unrestricted free agent | 7 | 0 | 7 |
+| Retired; contract expiration to reconcile | 1 | 0 | 1 |
 | Restricted free agent | 3 | 0 | 3 |
 | Exclusive-rights free agent | 3 | 0 | 3 |
 | Practice-squad contract expiring | 0 | 8 | 8 |
 | Unresolved | 4 | 0 | 4 |
 | **Total** | **53** | **8** | **61** |
 
-**Pending unrestricted free agents (8):** QB Chad Henne, RB Maurice Jones-Drew, OT Eugene Monroe, C Brad Meester, DT Sen'Derrick Marks, DE C.J. Wilson, CB Alan Ball, CB Brent Grimes.
+**Pending unrestricted free agents (7):** QB Chad Henne, RB Maurice Jones-Drew, OT Eugene Monroe, DT Sen'Derrick Marks, DE C.J. Wilson, CB Alan Ball, CB Brent Grimes.
 **Pending restricted free agents (3):** OT Cameron Bradfield, TE Allen Reisner, CB Kevin Rutland.
 **Pending exclusive-rights free agents (3):** WR Toney Clemons, WR Mike Brown, G Austin Pasztor.
 **Unresolved (4):** QB John Parker Wilson, RB Jonathan Grimes, FB Montell Owens, LS Jeremy Cain.
 
-## 3. Active 53
+## 3. Controlled active and reserve baseline
 
 ### Branch contracts
 
 | Player | Pos. | Contract type and final league year | March 11, 2014 status | Accrued seasons through 2012 | 2013 branch accrual | Source and label |
 |---|---|---|---|---|---|---|
 | Kirk Cousins | QB | Inherited 2012 Washington four-year rookie contract, acquired by branch trade; final year 2015. Branch record: Jacksonville carries his base salary ($480,000 in 2013); Washington keeps its bonus proration | Under contract | 1 (2012 rookie season with Washington) | Accrues in branch (on 53 for 16 games) | Trade: `trades/trades.md`; accounting: May 5 worksheet (Git `d25c8cf`). Term: [CBS Sports, May 2012](https://www.cbssports.com/nfl/news/kirk-cousins-signs-contract-with-redskins-reportedly-four-years-25m/); [OverTheCap](https://overthecap.com/player/kirk-cousins/1443/). Confirmed |
-| Brad Meester | C | Branch re-signing, one year ($1.50M); final year 2013 | **UFA** | 4+ (entered 2000; on Jacksonville's March 12, 2013 own-free-agent list as a veteran) | Accrues in branch (on 53 for 16 games) | `free_agency/signings.md`; ledger Entry 9. Confirmed |
+| Brad Meester | C | Branch re-signing, one year ($1.50M); final year 2013 | **Reserve/Retired**, Entry 79; March 11 contract expiry does not make him an active free-agent target | 4+ (entered 2000; on Jacksonville's March 12, 2013 own-free-agent list as a veteran) | Accrues in branch (on 53 for 16 games) | `free_agency/signings.md`; ledger Entry 9. Confirmed |
 | Sen'Derrick Marks | DT | Branch signing, one year ($1.50M); final year 2013 | **UFA** | 4+ (entered 2009; his 2009 Tennessee four-year rookie contract expired after 2012 and he signed with Jacksonville from outside as a free agent) | Accrues in branch (on 53 for 16 games) | `free_agency/signings.md`; [OverTheCap](https://overthecap.com/player/senderrick-marks/2083/) for the 2009 rookie term. Confirmed |
 | Roy Miller | DT | Branch signing, two years ($5.00M); final year 2014. 2014 base not guaranteed | Under contract | Not status-determining (entered 2009) | Accrues in branch (on 53 for 16 games) | `free_agency/signings.md`. Confirmed |
 | Daryl Smith | LB | Branch re-signing, two years ($6.00M); final year 2014. 2014 base not guaranteed | Under contract | Not status-determining (entered 2004) | Accrues in branch (on 53 for 16 games) | `free_agency/signings.md`. Confirmed |
@@ -111,7 +114,7 @@ WebFetch was blocked by the session's network egress proxy for every outlet trie
 | Montell Owens | FB | Contract extension signed October 4, 2011. Search-result text disagrees on its structure (a three-year $9.275M extension versus a figure similar to an earlier three-year $6.675M deal), so the final league year is not established | **Unresolved**. If it expires after 2013: UFA | 4+ (Jacksonville 2006-2012) | Accrues in branch (on 53 for 16 games) | [ProFootballTalk, October 2011](https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jaguars-sign-montell-owens-to-extension); [Spotrac](https://www.spotrac.com/nfl/chicago-bears/montell-owens-4176/). Unverified term |
 | Jeremy Cain | LS | New Jacksonville contract reported February 2011, terms undisclosed at the time. Spotrac search text shows a three-year $3.0M Jacksonville deal, not dated in the result | **Unresolved**. If the three-year deal dates from 2011 it expires after 2013: UFA | 4+ (entered 2004; Jacksonville long snapper through 2012) | Accrues in branch (on 53 for 16 games) | [NFL.com, February 2011](https://www.nfl.com/news/jaguars-sign-long-snapper-cain-to-new-contract-09000d5d81e77777); [Spotrac](https://www.spotrac.com/nfl/chicago-bears/jeremy-cain-6060/). Unverified term |
 
-## 4. Practice squad (8)
+## 4. Legacy practice-squad baseline (8); current rights unresolved
 
 All eight were waived at the August 31 cutdown, cleared waivers and signed branch practice-squad contracts on September 1, 2013 (`preseason/final_roster_cuts.md`; ledger Entry 27). A waiver ends the player's earlier contract, so Tyler Bray's May 2 rookie contract and the December 30, 2012 reserve/future contracts of Will Ta'ufo'ou and Brandon King no longer apply. Practice-squad seasons do not accrue.
 
@@ -149,5 +152,5 @@ Each status-determining claim was searched again from scratch rather than taken 
 ## 6. What this register does not decide
 
 - It does not tender, extend, re-sign, release or trade anyone, and it assigns no tender level. Those are Caldwell decisions, taken on or before March 11, 2014 (library C10).
-- It changes no cap figure. The 2014 cap effects of the contracts above still have to be reconciled for the 2014 league year.
+- It changes no cap figure. Reconcile 2014 cap effects in [the preparation worksheet](current_cap_worksheet.md) before spending; historical room is not 2014 room.
 - Branch 2013 performance and injuries are not evaluated here. Status comes only from contract terms and accrual.

@@ -1,8 +1,8 @@
 # Game readiness
 
-**Status: BLOCKED in this checkout until the mandatory authenticated live preflight succeeds.**
+**Status: BLOCKED for 2014.** The season-specific release gate in `runtime/season_readiness.json` remains open independently of private-service availability. E1/E2 and the other Tier 1 fixes are not implemented; applicable 2014 rules, dated fixtures, legal inputs, financial/control reconciliation and a full isolated closure still need acceptance. See [the 2014 checklist](../career/2014/readiness.md).
 
-The public implementation and evidence gates are verified, but readiness is fail-closed: this environment does not currently provide the Railway URL and token, so it cannot certify the external service. This is an administrative readiness assessment, not a simulated event. The career position and next event are in Document 5 (`state/05_Current_Season_State.md`). The private service must report the repository's kernel version before any event closes.
+`python scripts/check_game_readiness.py --season 2014` checks those public requirements before any authenticated canary. A successful service response cannot override them. The older table below records legacy implementation evidence, not a 2014 release. This environment also lacks the live URL/token, so the deployed version/snapshot cannot be certified here.
 
 | Requirement | Verified evidence | Executable proof |
 |---|---|---|

@@ -555,6 +555,8 @@ def compact_book_for_storage(book):
 
 
 def render_views(year, team, receipts):
+    from runtime.seasons import require_receipt_season
+    require_receipt_season(receipts, year)
     """Every generated stat file, keyed by file name, from one receipt set."""
     book = aggregate_receipts(receipts)
     return {
@@ -576,8 +578,11 @@ def main():
     args = parser.parse_args()
 
     stats_dir = ROOT / "career" / str(args.year) / "stats"
+    from runtime.seasons import SeasonPaths
+    stats_dir = SeasonPaths(args.year, ROOT).stats
     receipts = load_receipts(stats_dir / "game_receipts")
     views = render_views(args.year, args.team, receipts)
+    stats_dir.mkdir(parents=True, exist_ok=True)
     for name, text in views.items():
         (stats_dir / name).write_text(text, encoding="utf-8")
     print("rendered %d stat views from %d receipts" % (len(views), len(receipts)))

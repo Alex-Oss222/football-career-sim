@@ -5,7 +5,7 @@
 **Proposed dates:** June 17 to 19, proposed; physicals June 16.
 **Authority:** [Stone's memo, section 6](../stone_to_caldwell_2014_offseason_decisions.md); [2014 calendar](../../calendar.md).
 **Inherited method:** [2013 mandatory_minicamp plan](../../../2013/offseason/mandatory_minicamp/plan.md). The 2013 file remains unchanged; this plan's 2014 conditions override inherited dates, QB competition and new-head-coach clauses.
-**Event owner when run:** `career/2014/offseason/mandatory_minicamp/output.md`, created only when the phase runs. Results and standouts never belong in this plan.
+**Execution records:** [Output](output.md) and [evidence summary](standouts.md) are prepared as NOT_STARTED. They receive actual observations only when the phase runs. Results and standouts never belong in this plan.
 
 ## Living player assessment: adopted follow-up
 

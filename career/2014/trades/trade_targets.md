@@ -1,5 +1,31 @@
 # Jacksonville Jaguars: 2014 trade targets
 
-**Status:** Stone's recommendations to Caldwell, user-authored (February 2, 2014 branch date). The single source is [stone_to_caldwell_2014_offseason_decisions.md](../offseason/stone_to_caldwell_2014_offseason_decisions.md), section 5 (an outbound-only board: packages A, D, E, F1, F2 and G). Trading opens at 4 p.m. ET on March 11, 2014; every partner's answer is resolved by the simulation when the window runs. Results go in the trade ledger, never here.
+**Prepared, not offered:** February 2, 2014, after Entry 81. [Stone's memo, section 5 and amendments](../offseason/stone_to_caldwell_2014_offseason_decisions.md) control. All six packages are recommendations to Caldwell; no player or pick changes control through this page. [Offers](trade_offers.md) and [completed trades](trades.md) own actual events.
 
-**Package G amendment:** the memo's September 28, 2026 amendment controls over its original draft-dependent row. Shop Russell Allen from March 11 at 4 p.m. ET; complete by April 21, before his April 22 retirement. Ask for an unconditional 2015 seventh, with an unconditional 2016 seventh already acceptable. Keep the actual Posluszny-clearance condition; flag a delayed clearance to Stone before the deadline rather than waiting for the draft or silently waiving it. No completed trade or pick acquisition is recorded.
+## Packages and execution gates
+
+| Package | Players out | Call order / market | Opening request | Authorized alternatives | Trigger and deadline | If no deal |
+|---|---|---|---|---|---|---|
+| A | Cecil Shorts **and** Justin Blackmon | Seattle only | Seattle original 2014 R2, described as No. 37 in the memo | No lower return or substitute year authorized | Resolve **SEA R2 = No. 36 versus memo No. 37** before offering; Tate signed and replacement receiver signed or agreed; target completion May 7, expiry when Round 2 opens May 9 | Both stay; memo directs Shorts extension talks |
+| D | Jason Babin | Miami, Houston, San Diego | 2015 R5 | 2016 R5; or 2015 R6 escalating to R5 on the games condition | Actual veteran-edge signing first; trade window must be open | Memo recommends release; Caldwell must process a separate verified transaction |
+| E | Tyson Alualu | Miami, Houston, San Diego | 2015 R6 | 2016 R6; or 2015 R7 escalating to R6 on the games condition | Marks actually re-signed first | Keep through camp |
+| F1 | Uche Nwaneri | San Francisco, Carolina, New England, Seattle, Chicago, Houston | 2015 R6 | 2016 R6; or unconditional 2015 R7 | March 11, 4 p.m. onward; close **before his verified roster-bonus due date**, currently unresolved | Memo recommends release before that due date, subject to Caldwell's verified accounting |
+| F2 | **One** of Will Rackley or Mike Brewster | Same ordered clubs as F1 | 2015 R7 | 2016 R7; or conditional 2015 R7 on the games condition | Jacksonville must actually draft two linemen; neither a target nor an unsigned agreement counts | Keep; no selection of which player to send has been made here |
+| G | Russell Allen | Clubs with a documented linebacker need; no order named | **Unconditional 2015 R7** | **Unconditional 2016 R7** | Shop from March 11, 4 p.m.; actual Posluszny clearance required before closing; complete all processing **by April 21**, before April 22 retirement | No invented compensation; retirement applies on its date if still controlled |
+
+**Games condition for D/E/F2:** the traded player appears in at least half of the acquiring club's 2014 regular-season games. Record the precise trigger and how appearance is counted in the accepted instrument, using that club's branch receipts. Do not substitute snaps, starts or real 2014 participation. F2 conveys a seventh only if its condition is met. Allen's terms have no games condition.
+
+## Specific issues to settle
+
+- **A asset identity:** the [audited draft order](../draft/draft_order.md) has Seattle at 36 in Round 2. The source memo says both “Seattle's second” and “37 only.” Keep those conflicting instructions visible until Stone identifies the intended asset. Jacksonville does not own either pick through this plan. No other package depends on resolving A.
+- **A receiver sequence:** March 8–11 is the permitted negotiation window; a new-club signing cannot occur before March 11 at 4 p.m. Tate must actually sign and the replacement must satisfy the memo before the offer. Sanders remains a candidate, not an acquisition. Resolve Blackmon's guarantee/availability position from branch records and contract evidence; no later real suspension is imported.
+- **F1 contract:** Nwaneri's bonus date and contract end year remain unresolved. Do not invent a deadline or assume a release saves the quoted amount. Give Caldwell the dated clause evidence before processing either route.
+- **F2 depth:** Linsley and Bitonio are targets, not drafted replacements. Reassess actual acquisitions and interior-line coverage before proposing Rackley or Brewster. No player automatically loses his role here.
+- **G timing:** the [Allen amendment](../offseason/stone_to_caldwell_2014_offseason_decisions.md#september-28-2026-amendment-package-g-timing) replaces the old wait-for-the-draft timing. April 5 is Posluszny's projection, not clearance. If clearance prevents an April 21 close, bring that specific coverage decision to Stone before expiry. Do not silently waive it.
+- **G buyer:** a buyer must independently accept actual terms and disclosed branch medical information. The scheduled April 22 retirement is an out-of-character rail, not knowledge of the buyer or a new branch medical diagnosis. Research does not fabricate buyer interest. Allen's cap effect remains unverified.
+
+## Money, control and priority
+
+No memo savings are booked. Reconcile remaining salary, guarantees, bonuses/proration, Top-51 displacement and any rookie/returning obligation with the [contract register](../offseason/contract_status_register.md). Log sourced amounts separately from estimates and unresolved fields. Future compensation is not cash or cap room.
+
+Caldwell can prepare all packages concurrently, then execute only those whose distinct triggers are met. F1's verified bonus date and G's April 21 deadline take precedence over waiting for the draft. A's additional pick, D/E proceeds and any other successful trade are never presumed in another offer. Mincey and Grimes are not added to this board; the memo handles their expiring rights separately.

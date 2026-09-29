@@ -220,6 +220,8 @@
     "career/2014/README.md",
     "career/2014/calendar.md",
     "career/2014/draft/draft_order.md",
+    "career/2014/draft/pick_ownership.json",
+    "library/2014_draft_order_verification.md",
     "career/2014/schedule/opponents.md",
     "career/2014/offseason/contract_status_register.md",
     "career/2014/offseason/README.md",
@@ -243,7 +245,56 @@
     "career/coaching_profiles/README.md",
     "career/coaching_profiles/alex_stone.md",
     "career/coaching_profiles/staff_profiles.md",
-    "career/coaching_profiles/profile_template.md"
+    "career/coaching_profiles/profile_template.md",
+    "career/2014/draft/coin_flip.json",
+    "career/2014/draft/coin_flip_2026-09-29.jpg",
+    "career/2014/draft/ownership_audit.md",
+    "career/2014/offseason/draft/README.md",
+    "career/2014/offseason/draft/draftees.md",
+    "career/2014/offseason/draft/udfa_signings.md",
+    "career/2014/offseason/free_agency/signings.md",
+    "career/2014/offseason/mandatory_minicamp/output.md",
+    "career/2014/offseason/mandatory_minicamp/standouts.md",
+    "career/2014/offseason/offseason_program/output.md",
+    "career/2014/offseason/offseason_program/standouts.md",
+    "career/2014/offseason/otas/output.md",
+    "career/2014/offseason/otas/standouts.md",
+    "career/2014/offseason/rookie_minicamp/output.md",
+    "career/2014/offseason/rookie_minicamp/standouts.md",
+    "career/2014/offseason/training_camp/output.md",
+    "career/2014/offseason/training_camp/position_battles.md",
+    "career/2014/offseason/training_camp/roster_decisions.md",
+    "career/2014/offseason/training_camp/standouts.md",
+    "career/2014/operating_baseline.md",
+    "career/2014/preseason/README.md",
+    "career/2014/preseason/final_roster_cuts.md",
+    "career/2014/regular_season/README.md",
+    "career/2014/schedule/README.md",
+    "career/2014/schedule/league_opponents.json",
+    "career/2014/schedule/league_opponents.md",
+    "career/2014/schedule/release_plan.md",
+    "career/2014/schedule/rotation_2014.json",
+    "career/2014/schedule/sources.md",
+    "career/2014/trades/README.md",
+    "career/2014/trades/trade_offers.md",
+    "career/2014/trades/trades.md",
+    "runtime/schedule_2014.py",
+    "scripts/render_2014_opponents.py",
+    "tests/test_schedule_2014.py",
+    "runtime/seasons.py",
+    "runtime/season_readiness.json",
+    "career/2014/readiness.md",
+    "career/2014/offseason/current_cap_worksheet.md",
+    "career/2014/scouting/README.md",
+    "career/2014/statbook.md",
+    "career/2014/stats/README.md",
+    "career/2014/stats/game_receipts/README.md",
+    "career/2014/stats/postseason_receipts/README.md",
+    "career/2014/league_results/README.md",
+    "career/2014/awards/README.md",
+    "career/2014/postseason/README.md",
+    "career/2014/closeouts/README.md",
+    "tests/test_season_isolation.py"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",
@@ -274,6 +325,42 @@
       "plan": "career/2013/offseason/training_camp/plan.md",
       "output": "career/2013/offseason/training_camp/output.md",
       "standouts": "career/2013/offseason/training_camp/standouts.md"
+    },
+    "2014_offseason_program": {
+      "plan": "career/2014/offseason/offseason_program/plan.md",
+      "output": "career/2014/offseason/offseason_program/output.md",
+      "standouts": "career/2014/offseason/offseason_program/standouts.md"
+    },
+    "2014_rookie_minicamp": {
+      "plan": "career/2014/offseason/rookie_minicamp/plan.md",
+      "output": "career/2014/offseason/rookie_minicamp/output.md",
+      "standouts": "career/2014/offseason/rookie_minicamp/standouts.md"
+    },
+    "2014_otas": {
+      "plan": "career/2014/offseason/otas/plan.md",
+      "output": "career/2014/offseason/otas/output.md",
+      "standouts": "career/2014/offseason/otas/standouts.md"
+    },
+    "2014_mandatory_minicamp": {
+      "plan": "career/2014/offseason/mandatory_minicamp/plan.md",
+      "output": "career/2014/offseason/mandatory_minicamp/output.md",
+      "standouts": "career/2014/offseason/mandatory_minicamp/standouts.md"
+    },
+    "2014_training_camp": {
+      "plan": "career/2014/offseason/training_camp/plan.md",
+      "output": "career/2014/offseason/training_camp/output.md",
+      "standouts": "career/2014/offseason/training_camp/standouts.md"
     }
+  },
+  "active_season": 2014,
+  "current_records": {
+    "ledger": "career/2013/ledger.md",
+    "roster": "career/2013/roster.md",
+    "staff": "career/2013/coaching_staff.md",
+    "depth_chart": "career/2013/depth_chart.json",
+    "cap": "career/2013/offseason/current_cap_worksheet.md",
+    "calendar": "career/2014/calendar.md",
+    "player_ages": "career/2013/player_ages.md",
+    "background_depth": "library/data/2013_week1_depth_charts.json"
   }
 }

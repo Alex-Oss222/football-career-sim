@@ -23,11 +23,13 @@ Start with the player at the current date, including his full season of experien
 
 | Phase | Plan | Required handoff |
 |---|---|---|
-| Offseason program, Phases One and Two | [plan.md](offseason_program/plan.md) | Permitted physical work and unopposed individual/group teaching; no offense against defense; carry open checks into OTAs |
-| Rookie minicamp | [plan.md](rookie_minicamp/plan.md) | Actual eligible participants, onboarding evidence and an individual baseline for each participant |
-| OTAs, Phase Three | [plan.md](otas/plan.md) | Non-contact, changed-picture work, independent communication and delayed retests |
-| Mandatory veteran minicamp | [plan.md](mandatory_minicamp/plan.md) | Retained assignments and individual summer/camp-entry instructions |
-| Training camp and preseason | [plan.md](training_camp/plan.md) | Lawful contact and game-speed transfer, individual development continued through season |
+| Offseason program, Phases One and Two | [Plan](offseason_program/plan.md), [output](offseason_program/output.md), [evidence](offseason_program/standouts.md) | Permitted physical work and unopposed individual/group teaching; no offense against defense; carry open checks into OTAs |
+| Rookie minicamp | [Plan](rookie_minicamp/plan.md), [output](rookie_minicamp/output.md), [evidence](rookie_minicamp/standouts.md) | Actual eligible participants, onboarding evidence and an individual baseline for each participant |
+| OTAs, Phase Three | [Plan](otas/plan.md), [output](otas/output.md), [evidence](otas/standouts.md) | Non-contact, changed-picture work, independent communication and delayed retests |
+| Mandatory veteran minicamp | [Plan](mandatory_minicamp/plan.md), [output](mandatory_minicamp/output.md), [evidence](mandatory_minicamp/standouts.md) | Retained assignments and individual summer/camp-entry instructions |
+| Training camp and preseason | [Plan](training_camp/plan.md), [output](training_camp/output.md), [evidence](training_camp/standouts.md) | Lawful contact and game-speed transfer, individual development continued through season |
+
+Each phase now has a linked `output.md` and `standouts.md`, initialized NOT_STARTED with matching evidence metadata. These records are ready to receive actual work; none of the phases has run.
 
 Dates stay in the calendar and phase plans. A proposed date does not authorize work. No extra new-head-coach minicamp applies to Jacksonville in 2014.
 
