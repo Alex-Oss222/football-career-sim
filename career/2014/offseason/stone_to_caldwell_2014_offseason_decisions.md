@@ -357,3 +357,17 @@ Line plan consequence: with Adams first at 26, the drafted offensive linemen are
 **Board consequence if package I closes:** pick 26 becomes Joel Bitonio (then Van Noy), Adams moves to 38, pick 13 stays Donald (then Fuller) and pick 31 stays Lawrence through package H. Until package I closes, the existing pick 26 order (Adams, Bitonio, Van Noy) stands.
 
 **Cost and risk.** Jacksonville would hold no 2015 pick before round 3, because Washington already owns its 2015 second. Adams's availability at 38 is decided at the draft by the league-rails rule; a later pick carries more availability risk than 26, and nothing here promises he is there. This supersedes the board rule that Jacksonville trades no pick away, for this package only.
+
+## September 29, 2026 amendment: package I adds Tyson Alualu
+
+**User instruction, at the February 28, 2014 branch checkpoint:** add one tradeable veteran to package I instead of cash (cash is not permitted in trades between clubs). The operator chose **Tyson Alualu, DL**, already on the outbound board as package E.
+
+| Term | Instruction |
+|---|---|
+| Jacksonville sends | Its original 2015 first-round pick **and DL Tyson Alualu** |
+| Jacksonville receives | Arizona's original 2014 second-round pick, No. 38, to select Davante Adams |
+| Alualu condition | Package E's existing condition carries over: Sen'Derrick Marks is actually re-signed first. If Arizona is ready before Marks is re-signed, the offer is the 2015 first alone |
+| 2014 cap (tracker, Entry 91) | Alualu's charge is $4,264,000; a trade saves $2,721,500 (base $2,571,500 plus $150,000 other) and leaves $1,542,500 of bonus proration as dead money |
+| If Arizona declines | No deal; pick 26 stays Adams, then Bitonio, then Van Noy; Alualu returns to package E (Miami, Houston, San Diego for a 2015 sixth) |
+
+Package E is folded into package I while package I is live. Nothing executes before the league year opens on March 11 at 4 p.m. ET; Arizona's answer is resolved by the simulation at that time.
