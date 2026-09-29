@@ -15,3 +15,5 @@
 **Current reading at March 12 (Entry 96):** Talib (priority 2) signed; Tate (priority 3) chose Detroit. Stone directs Edelman as the receiver, with package A only if Edelman signs. Te'o-Nesheim (priority 4) is the next negotiation.
 
 **Current reading at March 18 (Entry 97):** Nicks and Hawkins signed; Edelman returned to New England. Caldwell ends paid veteran receiver bidding. Te'o-Nesheim is next.
+
+**Current reading at March 18 (Entry 98):** Te'o-Nesheim (priority 4) signed on a cap-light three-year deal.

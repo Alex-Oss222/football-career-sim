@@ -1,6 +1,6 @@
 # Jacksonville Jaguars 2014 contract table
 
-**As of:** March 18, 2014 (ledger Entry 97; the March 2014 free-agency replay corrects Entry 94's first-pass draws). Monroe, Marks, Verner (Entry 95), Talib (Entry 96), Nicks and Hawkins (Entry 97) signed in the replay; Tate chose Detroit and Edelman New England; Te'o-Nesheim's and Cain's first-pass signings are withdrawn; the four RFA/ERFA tenders stand.
+**As of:** March 18, 2014 (ledger Entry 98; the March 2014 free-agency replay corrects Entry 94's first-pass draws). Monroe, Marks, Verner (Entry 95), Talib (Entry 96), Nicks and Hawkins (Entry 97) and Te'o-Nesheim (Entry 98) signed in the replay; Tate chose Detroit and Edelman New England; Cain's first-pass re-signing is withdrawn; the four RFA/ERFA tenders stand.
 **Nature:** derived view. It executes no signing, tag, tender, release, trade or extension, certifies no cap room and reflects the adopted reconstruction in Entry 91. The [contract status register](contract_status_register.md) owns each player's status; the [2014 preparation worksheet](current_cap_worksheet.md) owns reconciliation; Caldwell owns contract decisions (Document 3).
 **Baseline:** [2013 initial cap sheet](../../2013/offseason/initial_cap_sheet.md) (per-player 2013 rows, Git `e04dd82`); [2013 regular-season worksheet](../../2013/offseason/current_cap_worksheet.md) and its May 5 version (Git `d25c8cf`); [2013 free-agency signings](../../2013/offseason/free_agency/signings.md); [2013 draftees](../../2013/offseason/draft/draftees.md); [2013 undrafted signings](../../2013/offseason/draft/udfa_signings.md); [2013 trades](../../2013/trades/trades.md); [current contract status register](contract_status_register.md); [Caldwell's pre-tag-window verifications](caldwell_pre_tag_verifications.md) (Git `9ca804c`); [2014 free-agency outcomes](free_agency/signings.md); ledger Entries 3, 4, 7, 9, 79, 80 and 85 through 89. Historical Git references identify the original financial baselines; current status follows the latest register and executed outcomes.
 
@@ -23,6 +23,7 @@ Add a row, and change the affected player rows and summaries, for every signing,
 | March 11, 2014 correction | March 2014 free-agency replay (first-pass draws superseded) | Entry 95 | Monroe re-signed (5 years, $42.5M, $20M guaranteed; 2014 cap $5,600,000, replacing the $11,654,000 tender); Marks re-signed (4 years, $26M, $12.5M guaranteed; $4,750,000); Verner signed (4 years, $29M, $15M guaranteed; $6,000,000). Te'o-Nesheim and Cain rows removed (reopened). Rows: 51 |
 | March 12, 2014 | Replay: Talib signed; Tate declined | Entry 96 | Talib signed (5 years, $46.5M, $21.5M guaranteed; 2014 cap $7,800,000). Tate signed with Detroit; no Jacksonville row. Rows: 52 |
 | March 18, 2014 | Replay: Nicks and Hawkins signed; Edelman declined | Entry 97 | Nicks (1 year, up to $5.0M, $4.5M guaranteed; 2014 cap budget $5,000,000) and Hawkins (4 years, $15.6M, $8.0M guaranteed; $2,800,000) added. Rows: 54 |
+| March 18, 2014 | Replay: Te'o-Nesheim signed | Entry 98 | Te'o-Nesheim (3 years, up to $13.5M, $6.0M guaranteed; 2014 cap $3,000,000) added. Rows: 55 |
 
 ## 1. How to read this table
 
@@ -34,9 +35,9 @@ Add a row, and change the affected player rows and summaries, for every signing,
 - **Branch figures use millions** where the branch record states them in millions; other figures are exact dollars as sourced.
 - **Simulation terms** fill missing existing-contract details under the user’s explicit authorization. They are included in working totals and identified in the source notes. Preserve them between turns until an actual amendment or sourced correction. A blank future year lies outside the contract.
 
-## 2. Controlled players under contract for 2014 (50)
+## 2. Controlled players under contract for 2014 (51)
 
-### 2a. Branch contracts (19)
+### 2a. Branch contracts (20)
 
 | Player | Pos | Contract type | Signed | Years / final league year | Total value | Signing bonus; annual proration; years left | 2014 base | 2014 roster / workout / other bonuses | 2014 guarantees | 2014 cap charge | Dead money if released before June 1 | 2014 status | 2013 cap charge (baseline) | Source and status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -59,6 +60,7 @@ Add a row, and change the affected player rows and summaries, for every signing,
 | Aqib Talib | CB | Veteran (branch free agent) | March 11, 2014, after 4 p.m. ET | 5 / 2018 | $46,500,000 | $6,500,000; $1,300,000; 5 | $6,500,000 | None | $6,500,000 base guaranteed ($21,500,000 total: bonus plus the 2014 and 2015 base) | $7,800,000 | $21,500,000 gross exposure before 2014 salary is earned | Under contract | Not a Jacksonville player (New England) | Branch record (Entry 96; [March 2014 replay log](free_agency/march_2014_replay_log.md)); 2015 base $8,500,000 guaranteed; 2016 $6,000,000 base, 2017-2018 $6,500,000 base, each with a $1,000,000 roster bonus and up to $1,000,000 active-game bonuses |
 | Hakeem Nicks | WR | Veteran (branch free agent) | March 14, 2014 | 1 / 2014 | $5,000,000 (maximum) | $2,000,000; $2,000,000; 1 | $2,500,000 | Up to $500,000 active-game bonuses ($31,250 a game) | $2,500,000 base guaranteed ($4,500,000 total with the bonus) | $5,000,000 | $4,500,000 gross exposure before 2014 salary is earned | Under contract | Not a Jacksonville player (Giants) | Branch record (Entry 97; [March 2014 replay log](free_agency/march_2014_replay_log.md)); no 2015 year |
 | Andrew Hawkins | WR | Veteran (restricted free agent; offer sheet not matched) | Offer sheet March 13, 2014; binding March 18 | 4 / 2017 | $15,600,000 | $4,000,000; $1,000,000; 4 | $1,800,000 | None | $1,800,000 base guaranteed ($8,000,000 total: bonus, 2014 base and $2,200,000 of the 2015 base) | $2,800,000 | $8,000,000 gross exposure before 2014 salary is earned | Under contract | Not a Jacksonville player (Cincinnati) | Branch record (Entry 97; [March 2014 replay log](free_agency/march_2014_replay_log.md)); 2015 base $5,000,000; 2016-2017 base $2,400,000; no pick compensation |
+| Daniel Te'o-Nesheim | DE | Veteran (branch free agent) | March 18, 2014 | 3 / 2016 | $13,500,000 | $3,000,000; $1,000,000; 3 | $1,500,000 | Up to $500,000 active-game bonuses ($31,250 a game) | $1,500,000 base guaranteed ($6,000,000 total: bonus plus the 2014 and 2015 base) | $3,000,000 | $6,000,000 gross exposure before 2014 salary is earned | Under contract | Not a Jacksonville player (Tampa Bay) | Branch record (Entry 98; [negotiation record](free_agency/teo_nesheim_negotiation_2014-03-18.md)); 2015 base $1,500,000 guaranteed plus up to $500,000 active-game bonuses; 2016 $5,000,000 base, $1,000,000 roster bonus, up to $500,000 active-game bonuses |
 
 The UDFA total value is the sum of the three recorded bases ($405,000, $495,000 and $585,000). The 2013 charges for the four UDFAs are their recorded bases; no bonus is recorded.
 
@@ -136,35 +138,35 @@ Each tender was made before 4 p.m. ET March 11 and is unsigned; an unsigned tend
 
 ## 5. Summary
 
-### 5a. Counts by 2014 status (March 18, 2014, Entry 97)
+### 5a. Counts by 2014 status (March 18, 2014, Entry 98)
 
 | Status | Count |
 |---|---:|
 | Under contract, continuing | 38 |
 | Under contract, reserve/future (effective March 11) | 6 |
-| Under contract, signed in the replay (Monroe, Marks, Verner, Talib, Nicks, Hawkins) | 6 |
+| Under contract, signed in the replay (Monroe, Marks, Verner, Talib, Nicks, Hawkins, Te'o-Nesheim) | 7 |
 | Tendered RFA (lowest, not signed) | 1 |
 | Tendered ERFA (not signed) | 3 |
-| **Controlled rows** | **54** |
+| **Controlled rows** | **55** |
 | Contracts and rights ended at 4 p.m. (section 3) | 9 |
 
-The 54 controlled rows match the register and the roster.
+The 55 controlled rows match the register and the roster.
 
 ### 5b. Working 2014 cap charges
 
 | Component | Players | 2014 amount |
 |---|---:|---:|
-| Signed contracts and futures | 50 | $125,367,821 |
+| Signed contracts and futures | 51 | $128,367,821 |
 | Unsigned tenders (Bradfield $1,431,000; Clemons and Pasztor $570,000 each; Brown $495,000) | 4 | $3,066,000 |
-| Player contracts including tenders | 54 | $128,433,821 |
+| Player contracts including tenders | 55 | $131,433,821 |
 | Carry-forward dead money | | $51,675 |
-| Recorded obligations, all 54 players | | $128,485,496 |
-| Less three $420,000 minimums outside the offseason Top 51 (Long, Jerrell Jackson, Bray) | | -$1,260,000 |
-| Offseason Top-51 obligations plus dead money | | $127,225,496 |
+| Recorded obligations, all 55 players | | $131,485,496 |
+| Less three $420,000 minimums (Long, Jerrell Jackson, Bray) and one $495,000 minimum outside the offseason Top 51 | | -$1,755,000 |
+| Offseason Top-51 obligations plus dead money | | $129,730,496 |
 | League-year opening offseason-workout charge (2,880 x $175, CBA Article 13 section 5(g)) | | $504,000 |
-| Working total | | $127,729,496 |
+| Working total | | $130,234,496 |
 
-Against the $133,000,000 league cap the working difference is **$5,270,504**, before the unresolved carryover, rookies, further signings and reserves. The replay adds Monroe $5,600,000 (replacing his $11,654,000 tender), Marks $4,750,000, Verner $6,000,000, Talib $7,800,000, Nicks $5,000,000 (active-game bonuses reserved in full) and Hawkins $2,800,000. The Top-51 displacement is accounting only, not a release. Not certified room.
+Against the $133,000,000 league cap the working difference is **$2,765,504**, before the unresolved carryover, rookies, further signings and reserves. The seven replay contracts total $34,950,000 of 2014 cap (Monroe $5,600,000 replacing his $11,654,000 tender, Marks $4,750,000, Verner $6,000,000, Talib $7,800,000, Nicks $5,000,000, Hawkins $2,800,000, Te'o-Nesheim $3,000,000). The six deals other than Te'o-Nesheim ran $6,200,000 above the memo's estimates ([budget check](free_agency/teo_nesheim_negotiation_2014-03-18.md#budget-check-before-the-offer)). A Nwaneri trade or release before March 25 would add about $3,705,500. Not certified room.
 
 ### 5c. Dead money carried into 2014
 

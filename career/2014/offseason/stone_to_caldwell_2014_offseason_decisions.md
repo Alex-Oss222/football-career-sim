@@ -400,3 +400,12 @@ Package E is folded into package I while package I is live. Nothing executes bef
 - **Receiver:** go to the backup, Julian Edelman, with a realistic Roseman-shape offer for Caldwell to negotiate. This supersedes the section 3 condition that Edelman is pursued only if Hawkins cannot be.
 - **Package A:** if Edelman signs with Jacksonville, Caldwell offers package A to Seattle (Cecil Shorts and Justin Blackmon for Seattle's original 2014 second, No. 36) even though Tate did not sign. For that case this supersedes contingency 3 (Tate lost: Shorts stays) and package A's "Tate signed" trigger. If Edelman does not sign, contingency 3 stands: Shorts stays and his extension process opens.
 - Seattle's answer is its own. Package H still requires No. 36 to be in hand first.
+
+## September 29, 2026 amendment: Nwaneri joins package I
+
+**User instruction, at the March 18, 2014 branch checkpoint (ledger Entry 98).** This records plans only.
+
+- **Package I now sends:** Jacksonville's original 2015 first, 2015 fourth and 2016 fifth, plus Tyson Alualu (Marks re-signed March 11, so the condition is met) and G Uche Nwaneri, for Arizona's original 2014 second, No. 38, to select Davante Adams.
+- **Deadline:** Arizona must agree before Nwaneri's $1,000,000 roster bonus falls due on March 25. If it has not, Nwaneri is released before that date (the memo's section 5 recommendation), and package I continues with the picks and Alualu.
+- **Package F1 is withdrawn.** Package H was already unavailable because package A did not activate.
+- **Cap note:** for Jacksonville, trading Nwaneri or releasing him before June 1 has the same 2014 effect: about $3,705,500 saved, with his $2,189,000 of remaining bonus proration accelerating. A trade is preferable only because it can bring value back.

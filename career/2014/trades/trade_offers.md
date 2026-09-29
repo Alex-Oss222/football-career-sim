@@ -1,6 +1,6 @@
 # Jacksonville 2014 trade offer log
 
-**Status at March 18, 2014 (Entry 97):** Tate went to Detroit and Edelman to New England, so package A is not offered (Stone's September 29 amendment and contingency 3); H stays unavailable without No. 36. **Earlier status, March 11 (Entry 95):** the trade window is open. Entry 95's free-agency replay supersedes the first-pass package I answer and reopens the trade packages for their own replay entries; package I may now include Alualu because Marks re-signed. F1 stays offered with its answer open. Package D is withdrawn because its trigger, a veteran-edge signing, no longer holds. No trade has closed. Packages not listed below were not offered: their triggers are unmet or, for G, no buyer with a documented need is named.
+**Status at March 18, 2014 (Entry 98):** package I now includes Nwaneri and Alualu (Stone's instruction) and must be agreed before his March 25 bonus or he is released; F1 is withdrawn; package D (Babin to Miami) is reopened with its answer open because Te'o-Nesheim signed. **Earlier (Entry 97):** Tate went to Detroit and Edelman to New England, so package A is not offered (Stone's September 29 amendment and contingency 3); H stays unavailable without No. 36. **Earlier status, March 11 (Entry 95):** the trade window is open. Entry 95's free-agency replay supersedes the first-pass package I answer and reopens the trade packages for their own replay entries; package I may now include Alualu because Marks re-signed. F1 stays offered with its answer open. Package D is withdrawn because its trigger, a veteran-edge signing, no longer holds. No trade has closed. Packages not listed below were not offered: their triggers are unmet or, for G, no buyer with a documented need is named.
 
 ## Actual communications
 
@@ -34,3 +34,8 @@ Preserve prior terms and dates when a counter arrives. An agreed-in-principle en
 
 **Priority reminders:** A needs the 36/37 asset conflict resolved before offering. G must finish by April 21 and still requires actual Posluszny clearance. F1 needs the actual bonus due date. These reminders are not outstanding communications.
 - **Entry 95:** withdrawn. The trigger was Te'o-Nesheim's first-pass signing, which the replay superseded; D can be re-offered once a veteran edge rusher actually signs.
+- **Entry 98:** reopened and offered again to Miami on March 18 after Te'o-Nesheim signed (a veteran edge signing meets the trigger); answer open.
+
+### March 18, 2014: package F1 withdrawn (Entry 98)
+
+Stone directed that Nwaneri be added to package I instead. The San Francisco offer is withdrawn with no answer recorded.
