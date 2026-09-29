@@ -47,9 +47,9 @@ class PlayerBiographyTests(unittest.TestCase):
         self.assertEqual(render_player_ages.check(), [])
         roster = (ROOT / "career/2013/roster.md").read_text()
         names = [n for n, _, _ in render_player_ages.controlled_rows(roster)]
-        # 51 controlled at the March 11, 2014 league year (Entry 94); the six
+        # 52 controlled at March 12, 2014 (Entry 96); the six
         # reserve/future players also appear in the section 4 history table.
-        self.assertEqual(len(set(names)), 51)
+        self.assertEqual(len(set(names)), 52)
         self.assertIn("| Tyler Bray | QB | 1991-12-27 | 22 | Offseason roster (reserve/future contract effective March 11) |", roster)
 
     def test_regeneration_replaces_stale_age_and_is_idempotent(self):

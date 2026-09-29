@@ -2,7 +2,7 @@
  "team": "Jacksonville Jaguars",
  "season": 2014,
  "status": "WORKING VIEW, NOT A GAME INPUT. Carried from the closed 2013 chart minus players no longer controlled; no 2014 depth decision has been made.",
- "as_of": "March 11, 2014, after the 4 p.m. ET league-year opening (ledger Entry 95)",
+ "as_of": "March 12, 2014 (ledger Entry 96)",
  "effective": "Carried from the closed 2013 chart (January 6, 2014, AFC Divisional preparation)",
  "sources": "career/2013/depth_chart.json (Git 781213a, carried order); current career/2013/roster.md; current career/2014/offseason/contract_status_register.md; career/2014/offseason/free_agency/signings.md; ledger Entries 79 and 85 through 89; Entry 94 (league year opened); Entry 95 (March 2014 free-agency replay)",
  "rule": "Order within each kernel position group is the closed 2013 order exactly as carried, minus players no longer controlled. It is not a 2014 decision. Stone owns the 2014 order and changes it only by decision; each change is logged in career/2014/depth_chart.md.",
@@ -143,7 +143,8 @@
   "John Parker Wilson": "Under contract through 2014 (Entry 91)",
   "Jonathan Grimes": "Under contract through 2014 (Entry 91)",
   "Sen'Derrick Marks": "Under contract through 2017 (re-signed March 11, Entry 95)",
-  "Alterraun Verner": "Under contract through 2017 (signed March 11, Entry 95)"
+  "Alterraun Verner": "Under contract through 2017 (signed March 11, Entry 95)",
+  "Aqib Talib": "Under contract through 2018 (signed March 11, Entry 96)"
  },
  "availability_notes": {
   "Paul Posluszny": "Out, head/neck, independent medical hold (Week 13); projected return April 5, 2014 (career/2013/roster.md)",
@@ -198,10 +199,16 @@
    "event": "March 2014 free-agency replay",
    "ledger_entry": "Entry 95",
    "change": "Marks re-signed and restored to his carried 2013 place (DL 1); Verner added, not placed; Te'o-Nesheim's first-pass signing withdrawn; Cain's first-pass re-signing withdrawn, so the LS slot is open; Monroe signed through 2018. No other order change"
+  },
+  {
+   "date": "March 12, 2014",
+   "event": "Replay: Talib signed",
+   "ledger_entry": "Entry 96",
+   "change": "Talib added, not placed; no order change"
   }
  ],
  "added_not_placed": {
-  "note": "Players under contract from March 11, 2014 whom Stone has not placed in the order: the six reserve/future contracts (Entry 85) and Alterraun Verner (signed March 11, Entry 95). Listed below their groups with no depth position or role.",
+  "note": "Players under contract from March 11, 2014 whom Stone has not placed in the order: the six reserve/future contracts (Entry 85) and Alterraun Verner and Aqib Talib (signed March 11, Entries 95 and 96). Listed below their groups with no depth position or role.",
   "QB": [
    "Tyler Bray"
   ],
@@ -217,6 +224,7 @@
   ],
   "DB": [
    "Alterraun Verner",
+   "Aqib Talib",
    "Antwon Blake"
   ]
  },
@@ -227,6 +235,7 @@
   "Jerome Long": "DT",
   "D'Anthony Smith": "DT",
   "Antwon Blake": "S",
-  "Alterraun Verner": "CB"
+  "Alterraun Verner": "CB",
+  "Aqib Talib": "CB"
  }
 }

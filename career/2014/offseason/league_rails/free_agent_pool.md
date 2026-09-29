@@ -150,7 +150,7 @@ Applied at the March 11 checkpoint (4 p.m. ET, the league-year opening) from the
 | Patrick Chung | Philadelphia Eagles | S | Released, March 11, before the checkpoint | Listed below as a generated candidate; released, a free agent from his release date, subject to waiver rules | Confirmed |
 | Daniel Te'o-Nesheim | Tampa Bay Buccaneers | DE | First-pass Jacksonville signing (Entry 94) superseded by the March 2014 replay (Entry 95); negotiation reopened | Still an unsigned free agent | Branch record |
 | Alterraun Verner | Tennessee Titans | CB | Signed by Jacksonville, March 11, in the March 2014 replay (Entry 95; four years); the Tampa Bay signing does not occur | Off the market | Branch record |
-| Aqib Talib | New England Patriots | CB | First-pass draw superseded (Entry 95); next replay negotiation. His real Denver signing applies only if Jacksonville does not sign him | Pending | Branch record |
+| Aqib Talib | New England Patriots | CB | Signed by Jacksonville, March 11, in the March 2014 replay (Entry 96; five years); the Denver signing does not occur | Off the market | Branch record |
 | Chad Henne, Jeremy Cain, Maurice Jones-Drew, C.J. Wilson, Alan Ball, Brent Grimes; Allen Reisner, Kevin Rutland | Jacksonville Jaguars (branch) | QB, DT, RB, DE, CB, CB; TE, CB | Contracts expired at the 4 p.m. league-year opening, March 11; Reisner and Rutland were not tendered | Not generated candidates (Jacksonville's register owns them); all eight are unrestricted free agents from 4 p.m. Grimes is unplaced (method section 3) | Branch record, ledger Entry 94. Marks and Monroe re-signed with Jacksonville in the March 2014 replay (Entry 95); Henne's and Cain's negotiations are reopened. |
 
 **Dated at or after 4 p.m., not yet applied:** the post-June 1 releases of Daryn Colledge (Arizona), Miles Austin (Dallas), LaMarr Woodley (Pittsburgh) and David Baas (New York Giants, single source), and Nick Folk's multiyear New York Jets deal, which may fall after 4 p.m. (he stays off the open market under his franchise tag). Each applies when a later turn passes it.
@@ -408,3 +408,5 @@ Rebuilt from the league database. Verified targets above remain authoritative. E
 
 The superseded 406-row raw list is replaced by these ID-linked candidates and the complete research inventory. Released-status observations are not exact dated releases; they remain research leads, not confirmed unsigned players.
 <!-- END GENERATED LEAGUE DATABASE -->
+
+**Entry 96 (March 12, 2014):** Golden Tate (Seattle, WR) signed with Detroit, five years, $31,000,000, after declining Jacksonville's final replay offer. Off the market.

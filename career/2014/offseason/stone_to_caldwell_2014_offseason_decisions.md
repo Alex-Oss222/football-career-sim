@@ -392,3 +392,11 @@ Package E is folded into package I while package I is live. Nothing executes bef
 **No rival contract.** A target with no rival real contract by the moment Jacksonville's offer can first be signed decides at 4 p.m. March 11 at the 0.90 ceiling. This covers Te'o-Nesheim (no 2014 contract) and Cain (unsigned until September 1, 2014).
 
 **Later draws held.** Tate, Hawkins, Edelman and Jared Allen are drawn at their real dates after March 11. The offers go in when talks open at noon on March 8.
+
+## September 29, 2026 amendment: Edelman after Tate, and package A
+
+**User instruction, at the March 12, 2014 branch checkpoint, after Golden Tate chose Detroit (ledger Entry 96).** This records plans only.
+
+- **Receiver:** go to the backup, Julian Edelman, with a realistic Roseman-shape offer for Caldwell to negotiate. This supersedes the section 3 condition that Edelman is pursued only if Hawkins cannot be.
+- **Package A:** if Edelman signs with Jacksonville, Caldwell offers package A to Seattle (Cecil Shorts and Justin Blackmon for Seattle's original 2014 second, No. 36) even though Tate did not sign. For that case this supersedes contingency 3 (Tate lost: Shorts stays) and package A's "Tate signed" trigger. If Edelman does not sign, contingency 3 stands: Shorts stays and his extension process opens.
+- Seattle's answer is its own. Package H still requires No. 36 to be in hand first.

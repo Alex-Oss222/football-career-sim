@@ -1,6 +1,6 @@
 # Jacksonville Jaguars individual contract details
 
-[Return to the ten-year table](jaguars_cap_2014_2023.md). As of March 11, 2014, Entry 95. Whole US dollars.
+[Return to the ten-year table](jaguars_cap_2014_2023.md). As of March 12, 2014, Entry 96. Whole US dollars.
 
 Annual cells contain the working original or reconstructed contract schedule. Blank years lie outside that deal. The [completion research](../../library/2014_jaguars_contract_completion.md) identifies adopted simulation terms and guarantee assumptions. Cap, scheduled cash and remaining unpaid guarantees are separate amounts.
 
@@ -2591,5 +2591,52 @@ Assumes release before that year’s salary and bonuses are earned. Remaining gu
 ### Contract notes
 
 Branch record (Entry 95; March 2014 replay log). The historical Tampa Bay signing does not occur.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [signings](../../career/2014/offseason/free_agency/signings.md), [march 2014 replay log](../../career/2014/offseason/free_agency/march_2014_replay_log.md).
+
+## Aqib Talib
+
+| Field | Detail |
+|---|---|
+| Position / status | CB / Under contract |
+| Original contract | Veteran (branch free agent) |
+| Signed | March 11, 2014, after 4 p.m. ET |
+| Term | 5 / 2018 |
+| Contract value | $46,500,000 |
+| Bonus terms | $6,500,000; $1,300,000; 5 |
+| Remaining unpaid salary guarantee | $15,000,000 |
+| Guarantee basis | $21,500,000 fully guaranteed at signing (signing bonus plus 2014 and 2015 base) |
+| Schedule basis | Executed branch terms (Entry 95) |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $6,500,000 | $1,300,000 | $0 | $7,800,000 | $13,000,000 | $6,500,000 |
+| 2015 | $8,500,000 | $1,300,000 | $0 | $9,800,000 | $8,500,000 | $8,500,000 |
+| 2016 | $6,000,000 | $1,300,000 | $2,000,000 | $9,300,000 | $8,000,000 | $0 |
+| 2017 | $6,500,000 | $1,300,000 | $2,000,000 | $9,800,000 | $8,500,000 | $0 |
+| 2018 | $6,500,000 | $1,300,000 | $2,000,000 | $9,800,000 | $8,500,000 | $0 |
+| 2019 |  |  |  |  |  |  |
+| 2020 |  |  |  |  |  |  |
+| 2021 |  |  |  |  |  |  |
+| 2022 |  |  |  |  |  |  |
+| 2023 |  |  |  |  |  |  |
+
+### Release comparison
+
+| Year | Gross pre-June-1 dead money | Gross cap reduction |
+|---|---|---|
+| 2014 | $21,500,000 | -$13,700,000 |
+| 2015 | $13,700,000 | -$3,900,000 |
+| 2016 | $3,900,000 | $5,400,000 |
+| 2017 | $2,600,000 | $7,200,000 |
+| 2018 | $1,300,000 | $8,500,000 |
+
+Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
+
+### Contract notes
+
+Branch record (Entry 96; March 2014 replay log). The historical Denver signing does not occur.
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [signings](../../career/2014/offseason/free_agency/signings.md), [march 2014 replay log](../../career/2014/offseason/free_agency/march_2014_replay_log.md).

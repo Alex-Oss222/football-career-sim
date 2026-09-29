@@ -1,7 +1,7 @@
 {
   "team": "Jacksonville Jaguars",
-  "as_of": "2014-03-11",
-  "checkpoint": "Entry 95",
+  "as_of": "2014-03-12",
+  "checkpoint": "Entry 96",
   "prepared": "2026-09-29",
   "start_year": 2014,
   "end_year": 2023,
@@ -6401,6 +6401,122 @@
         }
       },
       "schedule_basis": "Executed branch terms (Entry 95)"
+    },
+    {
+      "name": "Aqib Talib",
+      "position": "CB",
+      "roster_position": "CB",
+      "date_of_birth": "1986-02-13",
+      "age_at_checkpoint": 28,
+      "control": "signed",
+      "status": "Under contract",
+      "contract_type": "Veteran (branch free agent)",
+      "signed": "March 11, 2014, after 4 p.m. ET",
+      "term": "5 / 2018",
+      "contract_ends": 2018,
+      "value": "$46,500,000",
+      "bonus_terms": "$6,500,000; $1,300,000; 5",
+      "guarantees": "$21,500,000 fully guaranteed at signing (signing bonus plus 2014 and 2015 base)",
+      "dead_money_2014": "Gross pre-June 1 exposure $13,700,000 in 2015; $3,900,000 in 2016; $2,600,000 in 2017; $1,300,000 in 2018",
+      "remaining_guarantees": 15000000,
+      "availability": "No communicated restriction",
+      "plan": "No new transaction decision in this tracker",
+      "source_note": "Branch record (Entry 96; March 2014 replay log). The historical Denver signing does not occur",
+      "sources": [
+        "career/2014/offseason/contract_table.md",
+        "career/2014/offseason/free_agency/signings.md",
+        "career/2014/offseason/free_agency/march_2014_replay_log.md"
+      ],
+      "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+      "accrued_seasons": "Through 2013: 6 (Tampa Bay and New England, 2008-2013)",
+      "years": {
+        "2014": {
+          "status": "known",
+          "cap": 7800000,
+          "base": 6500000,
+          "proration": 1300000,
+          "other_cap": 0,
+          "cash": 13000000,
+          "guaranteed_base": 6500000,
+          "basis": "Branch contract, Entry 96 (March 2014 replay)"
+        },
+        "2015": {
+          "status": "known",
+          "cap": 9800000,
+          "base": 8500000,
+          "proration": 1300000,
+          "other_cap": 0,
+          "cash": 8500000,
+          "guaranteed_base": 8500000,
+          "basis": "Branch contract, Entry 96 (March 2014 replay)"
+        },
+        "2016": {
+          "status": "known",
+          "cap": 9300000,
+          "base": 6000000,
+          "proration": 1300000,
+          "other_cap": 2000000,
+          "cash": 8000000,
+          "guaranteed_base": 0,
+          "basis": "Branch contract, Entry 96 (March 2014 replay): $1,000,000 roster bonus and up to $1,000,000 active-game bonuses"
+        },
+        "2017": {
+          "status": "known",
+          "cap": 9800000,
+          "base": 6500000,
+          "proration": 1300000,
+          "other_cap": 2000000,
+          "cash": 8500000,
+          "guaranteed_base": 0,
+          "basis": "Branch contract, Entry 96 (March 2014 replay): $1,000,000 roster bonus and up to $1,000,000 active-game bonuses"
+        },
+        "2018": {
+          "status": "known",
+          "cap": 9800000,
+          "base": 6500000,
+          "proration": 1300000,
+          "other_cap": 2000000,
+          "cash": 8500000,
+          "guaranteed_base": 0,
+          "basis": "Branch contract, Entry 96 (March 2014 replay): $1,000,000 roster bonus and up to $1,000,000 active-game bonuses"
+        },
+        "2019": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2020": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2021": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2022": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2023": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        }
+      },
+      "schedule_basis": "Executed branch terms (Entry 95)"
     }
   ],
   "draft_picks": [
@@ -6506,6 +6622,11 @@
       "date": "2014-03-11",
       "source": "career/2013/ledger.md",
       "description": "Entry 95: chat-resolved free-agency replay supersedes the first-pass draws. Monroe (5 years, $42.5M, $20M guaranteed), Marks (4 years, $26M, $12.5M) and Verner (4 years, $29M, $15M) signed; Te'o-Nesheim and Cain first-pass signings removed pending their replay entries."
+    },
+    {
+      "date": "2014-03-12",
+      "source": "career/2013/ledger.md",
+      "description": "Entry 96: Talib signed in the replay (5 years, $46.5M, $21.5M guaranteed); Tate declined Jacksonville and signed with Detroit (March 12). Top-51 displacement and the $504,000 offseason-workout charge are carried in the worksheet, not in these scheduled obligations."
     }
   ],
   "scenarios": [],
