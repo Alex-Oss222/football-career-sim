@@ -241,3 +241,14 @@ The cap arithmetic, contract frameworks, branch evidence and sources behind ever
 - The memo's $1.98M saving remains a planning claim pending clause-level verification. Check salary, guarantees, unpaid bonuses, retained proration and Top-51 displacement before booking a cap effect. Record any unresolved amount explicitly.
 
 Actual inquiries/offers and a completed trade belong in the dated trade records and ledger when the clock reaches them, with roster, contract/cap, pick ownership and current-state updates closed together. This amendment records a plan only: no buyer, pick, cap saving or roster change has occurred.
+
+## September 28, 2026 amendment: Aaron Donald at No. 13
+
+**User instruction, at the unchanged February 2, 2014 branch checkpoint:** select **Aaron Donald, DT, Pittsburgh**, with Jacksonville's **No. 13 overall pick**, the Washington-origin first acquired in the corrected Cousins deal. This is Stone's chosen use of that pick. It supersedes section 4's treatment of Donald only as a possible alternative at No. 26. The original uploaded board remains above as the earlier recommendation.
+
+- **No. 13:** Donald is the selection instruction Caldwell takes into the draft. When Jacksonville is on the clock, verify current ownership of the Washington-origin first, Donald's eligibility and availability under the dated draft rails, then execute the pick through the normal draft process. No alternative for No. 13 has been authorized; if a material condition prevents the selection, return that specific decision to Stone instead of substituting a prospect or trading the pick automatically.
+- **No. 26:** Joel Bitonio remains the first choice, with the existing offensive-line comparisons if he is unavailable. If Donald is selected at 13, remove him from later available-prospect comparisons. This instruction does not spend both firsts on one player or move the No. 26 choice to 13.
+- The remaining board and trade restrictions stand. The [generated order](../draft/draft_order.md) controls pick numbers, ownership and unresolved compensatory offsets; the original memo's approximate numbering is not an override.
+- Scouting uses only evidence public by the applicable branch date. This selection instruction supplies no prospect grade, medical finding, future NFL performance, guaranteed role or automatic development outcome.
+
+This is a draft-plan amendment. Donald has not been drafted or added to Jacksonville's roster. The clock remains February 2; the Round 1 selection is executed when the calendar reaches May 8, 2014. Record the actual selection, contract/control consequences and league-rails pairing only at that event.

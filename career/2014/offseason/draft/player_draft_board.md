@@ -1,6 +1,12 @@
 # Jacksonville Jaguars: 2014 draft board
 
-**Status:** Stone's recommendations to Caldwell, user-authored (February 2, 2014 branch date). The single source is [stone_to_caldwell_2014_offseason_decisions.md](../stone_to_caldwell_2014_offseason_decisions.md), section 4 (the draft board and the undrafted watch list); this page only points there so the board has one owner. Caldwell makes every call when the calendar reaches it; results go in the transaction records, never here.
+**Status:** Stone's recommendations to Caldwell, user-authored (February 2, 2014 branch date). The single source is [stone_to_caldwell_2014_offseason_decisions.md](../stone_to_caldwell_2014_offseason_decisions.md), section 4 (the draft board and the undrafted watch list), subject to its later explicit amendments. This page points to that owner. Caldwell makes every call when the calendar reaches it; results go in the transaction records, never here.
+
+## Current first-round instruction
+
+The [Aaron Donald amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-28-2026-amendment-aaron-donald-at-no-13) directs **Aaron Donald, DT, Pittsburgh, at No. 13** (Washington-origin pick). **Joel Bitonio remains the first choice at No. 26**, with the memo's existing offensive-line alternatives. Donald is no longer merely a No. 26 alternative. These are selection instructions for the draft, with the amendment's availability checks; neither player has been acquired.
+
+Use the [current seven-round order](../../draft/draft_order.md) for asset ownership and exact or explicitly pending numbering. The original memo's one-first inventory and approximate later-round labels have been superseded by ledger Entry 80; the new Donald instruction does not change the remaining board.
 
 ## Amendment: Malcolm Butler (user-directed, September 28, 2026)
 
