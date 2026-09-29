@@ -1,6 +1,6 @@
 # Jacksonville Jaguars cap tracker, 2014 to 2023
 
-As of March 18, 2014, Entry 98. Whole US dollars.
+As of March 20, 2014, Entry 99. Whole US dollars.
 
 [Player cap table](#4-cap-by-player-ten-years) | [Individual contract details](jaguars_contract_details.md) | [Expirations](#9-expiring-contracts-and-free-agent-classes) | [Updating this tracker](README.md)
 
@@ -29,14 +29,14 @@ The [2011 agreement](https://nflps.org/wp-content/uploads/2012/05/collective-bar
 
 | Item | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Signed contracts and futures | $128,367,821 | $116,455,137 | $64,011,292 | $37,800,000 | $18,900,000 |  |  |  |  |  |
+| Signed contracts and futures | $123,328,321 | $110,560,637 | $64,011,292 | $37,800,000 | $18,900,000 |  |  |  |  |  |
 | Unsigned tenders | $3,066,000 |  |  |  |  |  |  |  |  |  |
-| Player contracts including tender | $131,433,821 | $116,455,137 | $64,011,292 | $37,800,000 | $18,900,000 |  |  |  |  |  |
-| Separate carry-forward dead money | $51,675 | $0 | $0 | $0 | $0 |  |  |  |  |  |
-| Recorded cap obligations | $131,485,496 | $116,455,137 | $64,011,292 | $37,800,000 | $18,900,000 |  |  |  |  |  |
-| Scheduled player cash including tender | $134,448,020 | $94,577,580 | $52,944,415 | $32,150,000 | $16,000,000 |  |  |  |  |  |
+| Player contracts including tender | $126,394,321 | $110,560,637 | $64,011,292 | $37,800,000 | $18,900,000 |  |  |  |  |  |
+| Separate carry-forward dead money | $2,240,675 | $0 | $0 | $0 | $0 |  |  |  |  |  |
+| Recorded cap obligations | $128,634,996 | $110,560,637 | $64,011,292 | $37,800,000 | $18,900,000 |  |  |  |  |  |
+| Scheduled player cash including tender | $130,503,020 | $89,777,580 | $52,944,415 | $32,150,000 | $16,000,000 |  |  |  |  |  |
 | Salary guaranteed in that year | $27,322,305 | $34,532,418 | $3,296,127 | $0 | $0 |  |  |  |  |  |
-| Players with scheduled charges | 55 | 37 | 13 | 5 | 2 |  |  |  |  |  |
+| Players with scheduled charges | 55 | 36 | 13 | 5 | 2 |  |  |  |  |  |
 
 These are the working obligations for the recorded deals, before club adjustments and additional roster construction. They are not a forecast of total team spending after these contracts expire.
 
@@ -50,7 +50,7 @@ These are the working obligations for the recorded deals, before club adjustment
 | WR | $16,370,573 | $12,985,183 | $3,400,000 | $3,400,000 |  |  |  |  |  |  |
 | TE | $9,492,978 | $9,691,574 | $1,740,170 |  |  |  |  |  |  |  |
 | OT | $11,849,545 | $15,382,254 | $15,845,963 | $9,100,000 | $9,100,000 |  |  |  |  |  |
-| OG | $8,620,368 | $6,554,500 |  |  |  |  |  |  |  |  |
+| OG | $2,725,868 | $660,000 |  |  |  |  |  |  |  |  |
 | C | $573,334 |  |  |  |  |  |  |  |  |  |
 | EDGE | $18,106,567 | $18,357,928 | $8,228,403 |  |  |  |  |  |  |  |
 | IDL | $16,845,182 | $8,017,848 | $7,500,000 | $7,500,000 |  |  |  |  |  |  |
@@ -59,11 +59,11 @@ These are the working obligations for the recorded deals, before club adjustment
 | S | $6,232,250 | $5,862,205 | $707,205 |  |  |  |  |  |  |  |
 | K | $4,187,500 | $4,387,500 |  |  |  |  |  |  |  |  |
 | P | $770,523 | $875,480 |  |  |  |  |  |  |  |  |
-| LS |  |  |  |  |  |  |  |  |  |  |
-| Offense | $53,078,465 | $49,845,178 | $20,986,133 | $12,500,000 | $9,100,000 |  |  |  |  |  |
+| LS | $855,000 |  |  |  |  |  |  |  |  |  |
+| Offense | $47,183,965 | $43,950,678 | $20,986,133 | $12,500,000 | $9,100,000 |  |  |  |  |  |
 | Defense | $73,397,333 | $61,346,979 | $43,025,159 | $25,300,000 | $9,800,000 |  |  |  |  |  |
-| Special teams | $4,958,023 | $5,262,980 |  |  |  |  |  |  |  |  |
-| All player contracts | $131,433,821 | $116,455,137 | $64,011,292 | $37,800,000 | $18,900,000 |  |  |  |  |  |
+| Special teams | $5,813,023 | $5,262,980 |  |  |  |  |  |  |  |  |
+| All player contracts | $126,394,321 | $110,560,637 | $64,011,292 | $37,800,000 | $18,900,000 |  |  |  |  |  |
 
 Unsigned tenders are included in their positions. Each player is counted once. Futures are grouped by position for accounting; this does not assign a depth-chart role.
 
@@ -132,11 +132,11 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 
 | Player | Through | Status | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | Remaining cap total |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Uche Nwaneri](jaguars_contract_details.md#uche-nwaneri) | 2015 | Signed | $5,894,500 | $5,894,500 |  |  |  |  |  |  |  |  | $11,789,000 |
 | [Will Rackley](jaguars_contract_details.md#will-rackley) | 2014 | Signed | $1,585,868 |  |  |  |  |  |  |  |  |  | $1,585,868 |
 | [Austin Pasztor](jaguars_contract_details.md#austin-pasztor) | 2014 | Unsigned tender | $570,000 |  |  |  |  |  |  |  |  |  | $570,000 |
 | [Mark Asper](jaguars_contract_details.md#mark-asper) | 2015 | Signed | $570,000 | $660,000 |  |  |  |  |  |  |  |  | $1,230,000 |
-| OG total |  |  | $8,620,368 | $6,554,500 |  |  |  |  |  |  |  |  | $15,174,868 |
+| [Uche Nwaneri](jaguars_contract_details.md#uche-nwaneri) | 2015 | traded |  |  |  |  |  |  |  |  |  |  |  |
+| OG total |  |  | $2,725,868 | $660,000 |  |  |  |  |  |  |  |  | $3,385,868 |
 
 ### 4.8 C
 
@@ -226,8 +226,8 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 
 | Player | Through | Status | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | Remaining cap total |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Jeremy Cain](jaguars_contract_details.md#jeremy-cain) | 2013 | Pending free agent |  |  |  |  |  |  |  |  |  |  |  |
-| LS total |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| [Jeremy Cain](jaguars_contract_details.md#jeremy-cain) | 2014 | Signed | $855,000 |  |  |  |  |  |  |  |  |  | $855,000 |
+| LS total |  |  | $855,000 |  |  |  |  |  |  |  |  |  | $855,000 |
 
 ### 4.17 Futures contracts
 
@@ -255,6 +255,7 @@ All six run through 2015 under the adopted two-year terms. They have no signing 
 | Brandon Marshall | 2014 | $0 | The original 2012 rookie contract ended on a 2012 waiver, before divergence. Future bonus accelerated into 2013, not 2014. Replacement active-roster deal modeled without a new bonus. |
 | Austen Lane | 2014 | $0 | Original four-year 2010 contract ends in 2013. The branch August 2013 waiver leaves no 2014 bonus year. |
 | Isaiah Stanback | 2014 | $0 | December 2012 practice-squad promotion modeled as a short minimum contract with no new bonus. August 2013 waiver leaves no future bonus charge. |
+| Uche Nwaneri | 2014 | $2,189,000 | Pre-June 1 trade to Arizona, March 20, 2014 (Entry 99): the 2014 and 2015 bonus allocations of $1,094,500 each accelerate into 2014. His $1,000,000 March 25 roster bonus passes to Arizona. |
 
 The $51,675 old Bray bonus is counted separately from his new $420,000 salary. No recorded deal has void years. The completion research explains the inherited bonus reconciliation.
 
@@ -264,6 +265,7 @@ The $51,675 old Bray bonus is counted separately from his new $420,000 salary. N
 |---|---|---|---|---|
 | 2014 | 1 | Washington Redskins | 13 | 13 |
 | 2014 | 1 | Jacksonville Jaguars | 26 | 26 |
+| 2014 | 2 | Arizona Cardinals | 6 | 38 |
 | 2014 | 3 | Jacksonville Jaguars | 26 | 90 |
 | 2014 | 4 | Jacksonville Jaguars | 26 | 122 + compensatory picks from round 3 |
 | 2014 | 5 | Detroit Lions | 11 | 139 + compensatory picks from rounds 3 to 4 |
@@ -279,7 +281,7 @@ These are selection rights. Add each rookie’s full contract schedule after the
 |---|---|---|
 | March 11, 2014 (done, Entry 94) | Futures, tenders and Monroe | Futures effective; RFA/ERFA tenders and the $11,654,000 franchise tender count while unsigned |
 | March 16, 2014 | Justin Blackmon | $1,700,000 deferred bonus cash; already allocated within the original cap schedule |
-| March 25, 2014 | Uche Nwaneri | $1,000,000 roster bonus in the original reported clause |
+| March 25, 2014 (traded March 20) | Uche Nwaneri | Roster bonus passes to Arizona; $2,189,000 of bonus proration is 2014 dead money |
 | Original opt-out window | Jason Babin | Keep the original 2014-2015 schedule until an actual exercise is recorded |
 | July 15, 2014 | Eugene Monroe | Long-term agreement deadline; replace the tender, do not add a second charge |
 | 2015 option window | Justin Blackmon | 2016 fifth-year option remains unexercised; exercise decision follows the 2014 season |
@@ -289,8 +291,8 @@ These are selection rights. Add each rookie’s full contract schedule after the
 
 | Last contract year | Players |
 |---|---|
-| 2013 | Brad Meester, Chad Henne, Maurice Jones-Drew, C.J. Wilson, Alan Ball, Brent Grimes, Jeremy Cain, Allen Reisner, Kevin Rutland |
-| 2014 | Roy Miller, Daryl Smith, Cecil Shorts, Will Rackley, Mike Brewster, Ryan Davis, Tyson Alualu, C.J. Mosley, Russell Allen, Julian Stanford, Chris Prosinski, Cameron Bradfield, Toney Clemons, Mike Brown, Austin Pasztor, John Parker Wilson, Jonathan Grimes, Hakeem Nicks |
+| 2013 | Brad Meester, Chad Henne, Maurice Jones-Drew, C.J. Wilson, Alan Ball, Brent Grimes, Allen Reisner, Kevin Rutland |
+| 2014 | Roy Miller, Daryl Smith, Cecil Shorts, Will Rackley, Mike Brewster, Ryan Davis, Tyson Alualu, C.J. Mosley, Russell Allen, Julian Stanford, Chris Prosinski, Jeremy Cain, Cameron Bradfield, Toney Clemons, Mike Brown, Austin Pasztor, John Parker Wilson, Jonathan Grimes, Hakeem Nicks |
 | 2015 | Kirk Cousins, Brynden Trawick, A.J. Bouye, Adam Thielen, C.J. Anderson, Justin Blackmon, Marcedes Lewis, Mark Asper, Uche Nwaneri, Jason Babin, Andre Branch, Jeremy Mincey, Jeris Pendleton, Mike Harris, Dwight Lowery, Josh Scobee, Bryan Anger, Montell Owens, Tyler Bray, Richard Murphy, Jerrell Jackson, Jerome Long, D'Anthony Smith, Antwon Blake |
 | 2016 | Lane Johnson, Travis Kelce, Jordan Poyer, Sio Moore, Lavar Edwards, Bacarri Rambo, Paul Posluszny, Daniel Te'o-Nesheim |
 | 2017 | Sen'Derrick Marks, Alterraun Verner, Andrew Hawkins |
@@ -302,9 +304,9 @@ These are selection rights. Add each rookie’s full contract schedule after the
 
 | Item | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Signed contracts and futures | $131,382,020 | $94,577,580 | $52,944,415 | $32,150,000 | $16,000,000 |  |  |  |  |  |
+| Signed contracts and futures | $127,437,020 | $89,777,580 | $52,944,415 | $32,150,000 | $16,000,000 |  |  |  |  |  |
 | Unsigned tender, conditional on signing | $3,066,000 |  |  |  |  |  |  |  |  |  |
-| Total scheduled player cash | $134,448,020 | $94,577,580 | $52,944,415 | $32,150,000 | $16,000,000 |  |  |  |  |  |
+| Total scheduled player cash | $130,503,020 | $89,777,580 | $52,944,415 | $32,150,000 | $16,000,000 |  |  |  |  |  |
 
 Cash counts salary and the bonuses paid in that contract year; bonus proration is a cap allocation, not a second cash payment. Record actual payments separately. The 2013-2016 and 2017-2020 cash-floor tests require their complete four-year cash ledgers.
 
@@ -316,7 +318,7 @@ These are gross pre-June-1 comparisons under the adopted contract terms at this 
 |---|---|---|---|
 | Roy Miller | $3,250,000 | $750,000 | $2,500,000 |
 | Daryl Smith | $3,500,000 | $500,000 | $3,000,000 |
-| Uche Nwaneri | $5,894,500 | $2,189,000 | $3,705,500 |
+| Jason Babin | $6,175,000 | $0 | $6,175,000 |
 | Russell Allen | $2,416,668 | $416,668 | $2,000,000 |
 | Will Rackley | $1,585,868 | $154,868 | $1,431,000 |
 | Jeremy Mincey | $6,500,000 | $4,000,000 | $2,500,000 |

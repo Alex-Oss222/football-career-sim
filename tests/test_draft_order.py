@@ -131,8 +131,8 @@ class SevenRoundTests(unittest.TestCase):
         second = self.asset(2, "Jacksonville Jaguars")
         self.assertEqual((second["owner"], second["base_overall_options"]), ("Washington Redskins", [58]))
         owned = [r for r in self.rows if r["owner"] == "Jacksonville Jaguars"]
-        self.assertEqual(len(owned), 8)
-        self.assertEqual([r["round"] for r in owned], [1, 1, 3, 4, 5, 5, 6, 7])
+        self.assertEqual(len(owned), 9)  # package I adds No. 38 (Entry 99)
+        self.assertEqual([r["round"] for r in owned], [1, 1, 2, 3, 4, 5, 5, 6, 7])
         self.assertEqual(draft_order.ownership_for(2015, 2, "Jacksonville Jaguars", self.register)[0], "Washington Redskins")
         self.assertEqual(self.asset(1, "St. Louis Rams")["owner"], "St. Louis Rams")
 
@@ -215,7 +215,7 @@ class RecordedDrawAndOwnershipTests(unittest.TestCase):
     def test_all_assets_have_one_current_owner_and_specific_hold_status(self):
         self.assertEqual(len(self.rows),224)
         self.assertEqual(len({(r['draft_year'],r['round'],r['club']) for r in self.rows}),224)
-        self.assertEqual(sum(r['ownership_status']=='recorded' for r in self.rows),17)
+        self.assertEqual(sum(r['ownership_status']=='recorded' for r in self.rows),18)  # package I adds No. 38 (Entry 99)
         self.assertEqual(sum(r['ownership_status']=='encumbered' for r in self.rows),10)
         self.assertFalse(any(r['ownership_status']=='provisional' for r in self.rows))
         self.assertEqual(sum(sum(r['owner']==c for r in self.rows) for c in draft_order.TEAMS),224)
@@ -225,7 +225,7 @@ class RecordedDrawAndOwnershipTests(unittest.TestCase):
         self.assertEqual(row['owner'],'Jacksonville Jaguars')
         self.assertEqual(row['base_overall_options'],[139])
         self.assertEqual(row['compensatory_after_rounds'],[3,4])
-        self.assertEqual(sum(r['owner']=='Jacksonville Jaguars' for r in self.rows),8)
+        self.assertEqual(sum(r['owner']=='Jacksonville Jaguars' for r in self.rows),9)  # package I adds No. 38 (Entry 99)
 
     def test_specific_claims_cannot_be_spent_or_booked_twice(self):
         self.assertEqual({c['id'] for c in self.register['conditional_claims']},{'revis','benn','rosario'})
@@ -244,7 +244,7 @@ class RecordedDrawAndOwnershipTests(unittest.TestCase):
 
     def test_register_rejects_future_transfer_missing_club_and_overlapping_claim(self):
         variants=[]
-        bad=copy.deepcopy(self.register); bad['transfers'][0]['effective_date']='2014-03-12'; variants.append(bad)
+        bad=copy.deepcopy(self.register); bad['transfers'][0]['effective_date']='2014-06-01'; variants.append(bad)
         bad=copy.deepcopy(self.register); bad['audited_clubs'].pop(); variants.append(bad)
         bad=copy.deepcopy(self.register); bad['conditional_claims'].append(copy.deepcopy(bad['conditional_claims'][0])); variants.append(bad)
         bad=copy.deepcopy(self.register); bad['conditional_claims'][0]['original_club']='Jacksonville Jaguars'; bad['conditional_claims'][0]['round_options']=[2]; variants.append(bad)

@@ -58,7 +58,7 @@ class CapTrackerTests(unittest.TestCase):
         validate(self.data)
         self.assertEqual(totals(self.data['players'], ['2014'])[0],
                          before + former['years']['2014']['cap'])
-        former['departure_date'] = '2014-03-19'
+        former['departure_date'] = '2014-03-21'
         with self.assertRaisesRegex(ValueError, 'future departure'):
             validate(self.data)
 
@@ -119,7 +119,7 @@ class CapTrackerTests(unittest.TestCase):
         self.assertTrue(all(r['status']!='term_unknown' for p in self.data['players'] for r in p['years'].values()))
 
     def test_estimated_current_charge_must_match_the_owner_table(self):
-        row=self.player('Uche Nwaneri')['years']['2014']
+        row=self.player('Jeremy Mincey')['years']['2014']
         row['base']+=1000
         row['approximate_cap']+=1000
         with self.assertRaisesRegex(ValueError,'Current charge differs'):
@@ -148,8 +148,8 @@ class CapTrackerTests(unittest.TestCase):
         self.assertEqual(cap_cell(self.player('Lane Johnson')['years']['2017']), '')
         self.assertEqual(cap_cell(self.player('Chad Henne')['years']['2014']), '')
         self.assertEqual([working_total(self.data['players'],str(y)) for y in [2014,2015,2016,2017]],
-                         [131433821,116455137,64011292,37800000])
-        self.assertIn('$131,485,496',main)  # Old Bray bonus is included once.
+                         [126394321,110560637,64011292,37800000])
+        self.assertIn('$128,634,996',main)  # Old Bray bonus is included once.
 
     def test_slot_guarantees_and_release_exposure_reconcile(self):
         lane=self.player('Lane Johnson');kelce=self.player('Travis Kelce')

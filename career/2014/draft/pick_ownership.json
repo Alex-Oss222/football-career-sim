@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "as_of": "2014-02-02",
+  "as_of": "2014-03-20",
   "authority": "career/2013/ledger.md#entry-81-draft-coin-flip-and-league-pick-ownership-reconciled",
   "default_ownership": "Retained original allocation after the 224-asset audit in ownership_audit.md; explicit transfers and conditional claims override it. No generic outside-club provisional holdings remain for 2014.",
   "compensatory": {
@@ -232,6 +232,42 @@
         "https://www.49ers.com/news/49ers-trade-parys-haralson-10975056",
         "https://www.nfl.com/news/parys-haralson-dealt-to-new-orleans-saints-from-49ers-0ap1000000234665"
       ]
+    },
+    {
+      "draft_year": 2014,
+      "round": 2,
+      "original_club": "Arizona Cardinals",
+      "owner": "Jacksonville Jaguars",
+      "basis": "Package I trade with Arizona, March 20, 2014; ledger Entry 99",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-03-20"
+    },
+    {
+      "draft_year": 2015,
+      "round": 1,
+      "original_club": "Jacksonville Jaguars",
+      "owner": "Arizona Cardinals",
+      "basis": "Package I trade with Arizona, March 20, 2014; ledger Entry 99",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-03-20"
+    },
+    {
+      "draft_year": 2015,
+      "round": 4,
+      "original_club": "Jacksonville Jaguars",
+      "owner": "Arizona Cardinals",
+      "basis": "Package I trade with Arizona, March 20, 2014; ledger Entry 99",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-03-20"
+    },
+    {
+      "draft_year": 2016,
+      "round": 5,
+      "original_club": "Jacksonville Jaguars",
+      "owner": "Arizona Cardinals",
+      "basis": "Package I trade with Arizona, March 20, 2014; ledger Entry 99",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-03-20"
     }
   ],
   "audited_year": 2014,

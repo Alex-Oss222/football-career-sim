@@ -2841,3 +2841,25 @@ Atomic closure: contract register/table, futures outcomes, working depth-chart c
 **Atomic closure.** The negotiation record, memo amendment, signings record, draw-log note, trade pages, contract table, financial inputs and generated tracker, worksheet, roster, working depth chart and its JSON copy, the Tampa Bay rails page, the free-agent pool, calendar and Documents 4 (register 52) and 5 (state 73) agree. The private snapshot is advanced only after merge.
 
 **Commit closed - Canonical update - March 18, 2014 - Free-agency replay (Te'o-Nesheim signed) - canonical through March 18, 2014**
+
+
+## Entry 99: Cain re-signed; Nwaneri traded to Arizona for No. 38 (package I)
+
+**Effective canonical state:** March 20, 2014.
+**Recorded:** September 29, 2026
+**Checkpoint:** `Canonical update - March 20, 2014 - Cain re-signed; Nwaneri traded to Arizona for No. 38`
+**Preceding global package checkpoint:** `Canonical update - March 18, 2014 - Free-agency replay (Te'o-Nesheim signed)`
+
+**Authority.** The user confirmed Te'o-Nesheim's acceptance (Entry 98), asked for the long-snapper negotiation, and directed that Nwaneri be traded with the picks in package I. Method: the replay's judgment-based negotiation; no private draw. Event owners: [Cain's negotiation record](../2014/offseason/free_agency/cain_negotiation_2014-03-19.md) and [the package I negotiation record](../2014/trades/package_i_negotiation_2014-03-20.md).
+
+**Jeremy Cain, LS (March 19).** Re-signed: one year, $855,000 (the minimum for seven to nine credited seasons, inferred), no bonus or guarantee. His request for a second year or a bonus was declined; he enters camp as the 2013 incumbent in the planned competition with Casey Kreiter. The minimum-salary benefit is not applied while his credited seasons are unverified.
+
+**Package I (March 18 to 20).** Jacksonville offered its 2015 first, 2015 fourth and 2016 fifth, Alualu and Nwaneri for Arizona's No. 38. Arizona valued Nwaneri as a starter for the guard spot opened by Daryn Colledge's March 11 release and countered without Alualu, whose salary it did not want. Caldwell accepted. Nwaneri passed his physical and the trade was processed March 20, before his March 25 roster bonus. Jacksonville receives No. 38; Arizona receives Nwaneri and the three picks. Alualu stays; package E (Alualu for a 2015 sixth) is live. Draft plan: No. 38 Davante Adams, No. 26 Joel Bitonio then Kyle Van Noy, No. 13 unchanged.
+
+**Accounting.** Nwaneri's 2014 working charge (about $5,894,500) comes off and his 2014 and 2015 bonus allocations ($2,189,000) accelerate into 2014 dead money. Scheduled 2014 player cap $126,394,321 including $3,066,000 of unsigned tenders, plus $2,240,675 dead money. Offseason Top-51 (three $420,000 and one $495,000 minimums outside) $126,879,996; with the $504,000 workout charge, $127,383,996, a $5,616,004 working difference before carryover, rookies and reserves. 2015 commitments $110,560,637. Controlled roster: 55. The pick ownership register and draft order are updated; the draft-order loader now accepts a register dated after the February 2 audit.
+
+**Open.** Henne (backup QB); package D (Babin to Miami) answer; package E (Alualu); Shorts's extension; the starting left guard job for Stone. Compensatory picks are announced March 24. The rails from March 11 evening to March 20 are unswept beyond the targets' own moves.
+
+**Atomic closure.** Both negotiation records, the signings record, completed-trades record, offer log, targets and README, pick ownership and draft order, draft board, contract table, financial inputs and generated tracker, worksheet, roster, working depth chart and its JSON copy, the Arizona and Chicago rails pages, calendar and Documents 4 (register 53) and 5 (state 74) agree. The private snapshot is advanced only after merge.
+
+**Commit closed - Canonical update - March 20, 2014 - Cain re-signed; Nwaneri traded to Arizona for No. 38 - canonical through March 20, 2014**

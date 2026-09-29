@@ -16,6 +16,7 @@
 |---:|---|---|---|---|
 | 1 | Washington Redskins | 13 | 13 | **Jacksonville Jaguars** |
 | 1 | Jacksonville Jaguars | 26 | 26 | **Jacksonville Jaguars** |
+| 2 | Arizona Cardinals | 6 | 38 | **Jacksonville Jaguars** |
 | 2 | Jacksonville Jaguars | 26 | 58 | **Washington Redskins** |
 | 3 | Jacksonville Jaguars | 26 | 90 | **Jacksonville Jaguars** |
 | 4 | Jacksonville Jaguars | 26 | 122 + C3 | **Jacksonville Jaguars** |
@@ -24,11 +25,14 @@
 | 6 | Jacksonville Jaguars | 26 | 186 + C3 + C4 + C5 | **Jacksonville Jaguars** |
 | 7 | Jacksonville Jaguars | 26 | 218 + C3 + C4 + C5 + C6 | **Jacksonville Jaguars** |
 
-Jacksonville currently owns **8 ordinary 2014 picks**: **13**; **26**; **90**; **122 + C3**; **139 + C3 + C4**; **154 + C3 + C4**; **186 + C3 + C4 + C5**; **218 + C3 + C4 + C5 + C6**. No prospect is selected by this inventory.
+Jacksonville currently owns **9 ordinary 2014 picks**: **13**; **26**; **38**; **90**; **122 + C3**; **139 + C3 + C4**; **154 + C3 + C4**; **186 + C3 + C4 + C5**; **218 + C3 + C4 + C5 + C6**. No prospect is selected by this inventory.
 
 | Future asset already conveyed | Current owner | Overall pick | Authority |
 |---|---|---|---|
 | 2015 Round 2, Jacksonville Jaguars original | Washington Redskins | Unknown; future branch season | User-corrected Cousins trade; ledger Entry 80; unconditional, slot unknown |
+| 2015 Round 1, Jacksonville Jaguars original | Arizona Cardinals | Unknown; future branch season | Package I trade with Arizona, March 20, 2014; ledger Entry 99 |
+| 2015 Round 4, Jacksonville Jaguars original | Arizona Cardinals | Unknown; future branch season | Package I trade with Arizona, March 20, 2014; ledger Entry 99 |
+| 2016 Round 5, Jacksonville Jaguars original | Arizona Cardinals | Unknown; future branch season | Package I trade with Arizona, March 20, 2014; ledger Entry 99 |
 
 ## How to read pending fields
 
@@ -84,7 +88,7 @@ Jacksonville currently owns **8 ordinary 2014 picks**: **13**; **26**; **90**; *
 | 3 | 35 | Cincinnati Bengals | Cincinnati Bengals | 5-10-1 | Retained original pick |
 | 4 | 36 | Seattle Seahawks | Seattle Seahawks | 6-10-0 | Retained original pick |
 | 5 | 37 | Houston Texans | Houston Texans | 6-10-0 | Retained original pick |
-| 6 | 38 | Arizona Cardinals | Arizona Cardinals | 6-9-1 | Retained original pick |
+| 6 | 38 | Arizona Cardinals | Jacksonville Jaguars | 6-9-1 | Package I trade with Arizona, March 20, 2014; ledger Entry 99 |
 | 7 | 39 | Cleveland Browns | Cleveland Browns | 7-9-0 | Retained original pick |
 | 8 | 40 | Detroit Lions | Detroit Lions | 7-9-0 | Retained original pick |
 | 9 | 41 | Chicago Bears | Chicago Bears | 7-9-0 | Retained original pick |

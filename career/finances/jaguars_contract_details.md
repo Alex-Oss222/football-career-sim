@@ -1,6 +1,6 @@
 # Jacksonville Jaguars individual contract details
 
-[Return to the ten-year table](jaguars_cap_2014_2023.md). As of March 18, 2014, Entry 98. Whole US dollars.
+[Return to the ten-year table](jaguars_cap_2014_2023.md). As of March 20, 2014, Entry 99. Whole US dollars.
 
 Annual cells contain the working original or reconstructed contract schedule. Blank years lie outside that deal. The [completion research](../../library/2014_jaguars_contract_completion.md) identifies adopted simulation terms and guarantee assumptions. Cap, scheduled cash and remaining unpaid guarantees are separate amounts.
 
@@ -773,24 +773,22 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ## Uche Nwaneri
 
+Former player; departure March 20, 2014. [ledger](../../career/2013/ledger.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | OG / Under contract |
+| Position / status | OG / Traded to Arizona, March 20, 2014 (package I, Entry 99) |
 | Original contract | Veteran extension, 2010 |
 | Signed | 2010 |
 | Term | 5 / 2015 |
 | Contract value | $24,000,000 |
-| Bonus terms | $1,094,500 annual allocation in 2014 and 2015; original paid-bonus composition not fully recovered |
-| Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap. |
-| Schedule basis | Includes adopted simulation amounts; see contract notes |
 
 ### Annual schedule
 
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
-| 2014 | $3,775,000 | $1,094,500 | $1,025,000 | $5,894,500 | $4,800,000 | $0 |
-| 2015 | $3,775,000 | $1,094,500 | $1,025,000 | $5,894,500 | $4,800,000 | $0 |
+| 2014 |  |  |  |  |  |  |
+| 2015 |  |  |  |  |  |  |
 | 2016 |  |  |  |  |  |  |
 | 2017 |  |  |  |  |  |  |
 | 2018 |  |  |  |  |  |  |
@@ -800,18 +798,11 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | 2022 |  |  |  |  |  |  |
 | 2023 |  |  |  |  |  |  |
 
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $2,189,000 | $3,705,500 |
-| 2015 | $1,094,500 | $4,800,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
-
 ### Contract notes
 
 2014 estimate: verified $3.775M base and $1M roster bonus plus carried $25,000 workout and $1,094,500 allocation. Original 2015 cash schedule remains missing; budget the same $4.8M cash and $5,894,500 charge as 2014 until replaced. That flat 2015 allowance is an estimate, not a recovered salary.
+
+Traded to Arizona (Entry 99).
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../library/2014_jaguars_contract_completion.md).
 
@@ -2193,21 +2184,23 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ## Jeremy Cain
 
-Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
-
 | Field | Detail |
 |---|---|
-| Position / status | LS / Unrestricted free agent from 4 p.m. March 11, 2014; the first-pass re-signing is superseded and his negotiation is reopened (Entry 95) |
-| Original contract | Veteran, February 2011 |
-| Signed | March 11, 2014 (4 p.m. ET) |
-| Term | 2013 |
-| Contract value | Disputed: $2.45M or $3.0M (3 years) |
+| Position / status | LS / Under contract |
+| Original contract | Veteran minimum (branch re-signing) |
+| Signed | March 19, 2014 |
+| Term | 1 / 2014 |
+| Contract value | $855,000 |
+| Bonus terms | $0; $0; 0 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | $0 |
+| Schedule basis | Executed branch terms (Entry 99) |
 
 ### Annual schedule
 
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
-| 2014 |  |  |  |  |  |  |
+| 2014 | $855,000 | $0 | $0 | $855,000 | $855,000 | $0 |
 | 2015 |  |  |  |  |  |  |
 | 2016 |  |  |  |  |  |  |
 | 2017 |  |  |  |  |  |  |
@@ -2218,15 +2211,19 @@ Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
 | 2022 |  |  |  |  |  |  |
 | 2023 |  |  |  |  |  |  |
 
-No new playing contract is recorded for 2014 or later.
+### Release comparison
+
+| Year | Gross pre-June-1 dead money | Gross cap reduction |
+|---|---|---|
+| 2014 | $0 | $855,000 |
+
+Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
-Branch record (Entry 94, uncontested market draw). $855,000 is the 2014 minimum for seven to nine credited seasons, inferred from Chicago's September 2014 figure (single source). Counted in full; the Article 26 minimum-salary benefit (a $570,000 charge) is not applied because his eligibility is unverified.
+Branch record (Entry 99; negotiation record career/2014/offseason/free_agency/cain_negotiation_2014-03-19.md). $855,000 is the 2014 minimum for seven to nine credited seasons, inferred from his real September 2014 Chicago figure (single source). Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified.
 
-Negotiation reopened in the March 2014 replay (Entry 95).
-
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md), [league year method](../../career/2014/offseason/league_year_method.json).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [signings](../../career/2014/offseason/free_agency/signings.md), [cain negotiation 2014-03-19](../../career/2014/offseason/free_agency/cain_negotiation_2014-03-19.md).
 
 ## Cameron Bradfield
 
