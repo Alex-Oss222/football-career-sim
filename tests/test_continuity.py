@@ -88,7 +88,8 @@ class ContinuityTests(unittest.TestCase):
         self.assertTrue(any('Private runtime probe' in blocker for blocker in check(self.root)))
 
     def test_structured_readiness_assessment_is_fail_closed(self):
-        result = assess(self.root)
+        # Legacy evidence remains testable separately from the 2014 release.
+        result = assess(self.root, season=2013)
         self.assertFalse(result['ready'])
         ids = {blocker['id'] for blocker in result['blockers']}
         self.assertEqual(ids, {'private_probe'})

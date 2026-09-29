@@ -2,6 +2,8 @@
 
 This directory holds dated simulation history and explicitly identified current views. Start with the [2013 career index](2013/README.md) and [current state](../state/05_Current_Season_State.md). The lifecycle below describes transitions; it does not declare the present phase.
 
+Cross-season working assessments live in [coaching profiles](coaching_profiles/README.md), with [Stone's current synthesis and evolution](coaching_profiles/alex_stone.md). Future scheduling references include the [historical 2015 calendar](2015/calendar.md); their presence does not open a season or advance the clock.
+
 ## Lifecycle
 
 1. **PRE-HIRE SEARCH** — career is not initialized. Only `career/<year>/offseason/hiring_search.md` and its user-authored brief may contain dated simulated search activity.

@@ -6,6 +6,8 @@
 
 ## Before the block
 
+Read [Stone's current coaching assessment](../../../coaching_profiles/alex_stone.md) and the relevant [assistant profile](../../../coaching_profiles/staff_profiles.md). Select a useful teaching or decision question alongside the player's question. A full season adds coaching experience without proving mastery; the staff can preserve a working approach, revise a cue or discover a different valid player answer.
+
 1. Read the current calendar, phase plan, actual roster/control and current medical instructions. Establish the work permitted for this participant on this day. Medical restrictions include cognitive work where applicable. An absence or restriction is not a failed football test.
 2. The position coach reads the player's prior phase evidence and exit commitments. Read the [living profile](../player_development/roster_profiles.md), select a strength to use and a meaningful question or new possibility to explore. Invite the player's view when permitted; record only what he actually expresses. Start returning players at their demonstrated level; give newcomers the existing welcome, full-active-book access and honest onboarding sequence.
 3. Tice coordinates offense, Crennel coordinates and calls defense, and Stone covers special teams until an appointment. Reconcile shared jobs before teaching them: QB/center/back protection; QB/receiver leverage; DL/LB fits; LB/DB exchanges; snap/hold/kick and coverage.
@@ -40,6 +42,8 @@ No invented defect is required on a correct rep. Several players missing the sam
 - Stone: review his own call/menu/clock contributions separately from player technique; approve material menu and role changes through their proper records. Players can identify calls or assignments they do not trust before the final game sheet is frozen.
 - Film owner: update preparation and distribution independently. A coach's draft, a sent packet, a player acknowledgment and a completed retest are different events.
 - Phase closer: link the actual output and carry forward retained jobs, open corrections, unobserved work, legal/medical limits, parked evaluations, owner and next review opportunity. Do not manufacture an output for an unrun phase.
+
+- Coaching evidence reviewer: where the output supports it, append a dated change or retained interpretation to the [living coaching record](../../../coaching_profiles/README.md), then refresh its current synthesis. Identify the actual contributor, available information, instruction/call, player response, competing explanation and follow-up. Count a shared improvement once; do not award simultaneous coach, player and chemistry bonuses for the same evidence. Missing delivery/retest evidence remains open.
 
 ## Teaching status and the stop rule
 

@@ -2381,3 +2381,21 @@ The draw weights are a modelling choice and can be changed until the first draw.
 **Atomic closure.** The ownership register, renderer, seven-round order, ownership audit, 2014 calendar/index, rails pointers and Documents 4/5 now share this event. Register 38 / state 57 replace register 37 / state 56. Historical ledger entries and the frozen memo remain intact. Player control, contracts, cap charges, games, statistics, staff and the calendar do not change. Private snapshot binding must follow the merged correction before any simulated event; this PR does not advance that service.
 
 **Commit closed - Canonical correction - February 2, 2014 - Draft coin flip and league pick ownership reconciled - canonical through February 2, 2014**
+
+
+## Entry 82: 2014 operating handoff and readiness reconciled
+
+**Effective canonical state:** February 2, 2014 (administrative correction; no clock advance).
+**Recorded:** September 28, 2026 (Eastern; September 29 UTC).
+**Checkpoint:** `Canonical correction - February 2, 2014 - 2014 operating handoff and readiness reconciled`
+**Preceding global package checkpoint:** `Canonical correction - February 2, 2014 - Draft coin flip and league pick ownership reconciled`
+
+**Authority.** The user requested the audited setup corrections and repair of PR #135's inconsistency. Its living coaching profiles and dated 2015 research are reconciled with the newer 2014 baseline. Research/preparation does not open a future information gate, execute a phase or confer an engine release.
+
+**Corrections.** Five phase plans and their NOT_STARTED output/evidence records already exist; Stone is not assigned to write them. Bobby April is selected at the recorded offer limits, not hired. League research and dated roster preparation are operator work. Meester remains Reserve/Retired under Entry 79: the current baseline is 52 active plus one retired, and the contract register separates him from seven pending active UFAs. The eight legacy practice-squad names are retained as the prior closed baseline pending exact expiry/rights and actual futures reconciliation, not certified 2014 participants. No contract is silently ended or created here. The historical 2013 cap range is not 2014 spending authority; the new preparation worksheet stays UNRECONCILED. February 3's waiver/staff checkpoint precedes the February 17 tag window.
+
+**Ownership and execution.** The repository map now distinguishes planning season 2014 from the still-current 2013 ledger/roster/staff/cap owners. New result-storage indexes contain no outcomes. Explicit season routing prevents new-season commands from silently selecting old inputs, caches, event identities or receipt destinations. The season-release gate separately blocks 2014 before private game closure while the documented engine, rules, financial/control, fixture, input and acceptance requirements remain open. The public free-agent record contains no private probability/draw fields. E1/E2 policy remains adopted; no result-changing kernel is released.
+
+**Atomic closure.** Register 39 / state 58 replace register 38 / state 57. The live records and finance owner remain at their documented paths until a future audited 2014 activation. Earlier ledger entries, game receipts, statistics, ownership, actual contracts, staff appointments, roles and medical instructions remain unchanged. The clock is still February 2. No private snapshot is advanced from this branch; binding to the merged correction remains required before the next simulated event.
+
+**Commit closed - Canonical correction - February 2, 2014 - 2014 operating handoff and readiness reconciled - canonical through February 2, 2014**

@@ -6,6 +6,7 @@ Copy into the applicable phase's planning material only when a session is being 
 |---|---|
 | Session / phase / proposed date | Pending calendar verification |
 | Coach and coordinating room | Named owner; resolve shared assignments |
+| Current coach assessment and question | Link [Stone/staff profile](../../../coaching_profiles/README.md); identify what instruction or choice this session can actually illuminate |
 | Participants | Actual control/eligibility checked; current medical instructions apply |
 | Legal work allowance | Link calendar/readiness rule; permissible speed, contact and coach involvement |
 | Assigned active-book material | Concept/job and source; distinguish assigned from available-to-read |
@@ -26,3 +27,5 @@ Copy into the applicable phase's planning material only when a session is being 
 After execution, the **output** records date, participants, taught job, actual evidence, cause confidence, correction, immediate repeat, later retest still due and any authorized decision. Link it from the player's evidence note and film log. A changed script is not evidence of a changed result.
 
 At handoff, state what this session contributes to the current working profile, including new strengths, no change or unresolved evidence. A correct result, delivered packet or completed session is not an automatic ability upgrade.
+
+Apply the same evidence handoff to the coach: actual contribution, prior interpretation, what changed or stayed uncertain and the next observation. Append to the coach's dated evolution record before revising the current synthesis. Do not infer a teaching breakthrough from the planned drill.

@@ -1,5 +1,7 @@
 # Jacksonville 2014 calendar
 
+[Next year: actual historical 2015 calendar](../2015/calendar.md) | [Coach development](../coaching_profiles/README.md)
+
 **Authority:** branch-facing schedule for the 2014 league year (AGENTS.md career-calendar rule). Its sources are `library/2014_league_calendar_and_financial_rules.md` (league dates, rules and gates) and the branch's own records. Historical dates are rails only: no real 2014 transaction, result or club-specific decision is imported.
 **Gates:** an item marked **Gate** is not usable in the branch before its public date. Before the gate, only the labelled projections recorded in the library may be used.
 **Status keys:** *Complete*, *Open*, *Future* (known date, event not run), *Gated* (not yet public at the master date), *Proposed* (branch planning choice, not a completed event), *Conditional* (only if the stated circumstance occurs). All clock deadlines use Eastern Time, with daylight saving time as applicable.

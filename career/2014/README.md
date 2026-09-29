@@ -2,7 +2,7 @@
 
 The 2014 league year folder. The 2013 season is complete and archived (ledger Entry 67); this folder was set up in ledger Entry 68. Plans and future calendar entries are not completed events. Dated staff outcomes already closed in the ledger are linked below.
 
-**Start here:** [2014 operating baseline](operating_baseline.md) links the transaction records, training outputs, full schedule inventory and season handoffs. The clock remains February 2; next is the February 17 tag window.
+**Start here:** [2014 operating baseline](operating_baseline.md) links the transaction records, training outputs, full schedule inventory and season handoffs. The clock remains February 2; next is the February 3 waiver/staff checkpoint, followed by the February 17 tag window.
 
 **Coaching staff:** [Open the 2014 staff timeline](offseason/staff_changes/timeline.md) to see who has been approached, who has left, which jobs are vacant and who Jacksonville hires. [Replacement targets](offseason/staff_changes/staff_plan.md) and [hiring outcomes](offseason/staff_changes/hires.md) are kept in the same folder.
 
@@ -20,6 +20,8 @@ The 2014 league year folder. The 2013 season is complete and archived (ledger En
 | League rails (other clubs follow real rosters from 2014) | [offseason/league_rails/](offseason/league_rails/README.md) | 2,208-player research inventory built; nine FA targets verified; automated dated roster build and relevant exception checks remain Codex work |
 | Season ledger | not yet created; the 2013 ledger (`career/2013/ledger.md`) remains Document 6 until the first 2014 event closes | Pending |
 | Roster | `career/2013/roster.md` remains the controlled-roster record until a 2014 roster owner is created with the first roster-changing event | Pending |
+
+**Setup status:** [Readiness checklist](readiness.md), [financial preparation](offseason/current_cap_worksheet.md), [scouting](scouting/README.md) and [statbook](statbook.md). Entry 82 reconciles the operating handoff without advancing time.
 
 **Prepared:** the five phase plans and individual training/film workflow. Bobby April is selected for the staff search, not hired. Other explicitly marked decisions remain pending. The exit interviews (January 13-14, 2014; Entry 76) list the program decisions and staff findings the plans should answer (`career/2013/exit_interviews/README.md`).
 

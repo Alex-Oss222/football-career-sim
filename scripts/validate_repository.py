@@ -120,10 +120,14 @@ def validate(root=ROOT):
             errors.append(message)
     try:
         mapping = json.loads((root/'docs/repository_map.json').read_text())
+        import sys
+        if str(ROOT) not in sys.path:
+            sys.path.insert(0, str(ROOT))
+        from runtime.seasons import current_record
         state = (root/'state/05_Current_Season_State.md').read_text()
         register = (root/'state/04_Roster_and_Staff_Register.md').read_text()
-        ledger = (root/'career/2013/ledger.md').read_text()
-        roster = (root/'career/2013/roster.md').read_text()
+        ledger = current_record('ledger', root).read_text()
+        roster = current_record('roster', root).read_text()
     except (OSError, ValueError) as exc:
         return [f'Cannot read required continuity input: {exc}']
     for path in mapping['required_files']:
@@ -334,6 +338,41 @@ def validate(root=ROOT):
                 require(False, f'{sheet_path.relative_to(root)}: {problem}')
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append(f'Call sheets cannot be checked: {exc}')
+
+    # Prepared 2014 storage is legitimate, but future/foreign receipts are not.
+    try:
+        from runtime.seasons import SeasonPaths, game_release_errors, require_receipt_season
+        from scripts.render_season_stats import load_receipts, render_views
+        paths = SeasonPaths(2014, root)
+        regular = load_receipts(paths.receipts)
+        playoff = load_receipts(paths.postseason_receipts)
+        require_receipt_season(regular + playoff, 2014)
+        ids = [r['event_id'] for r in regular + playoff]
+        require(len(ids) == len(set(ids)), '2014 receipts contain duplicate event identities')
+        if regular or playoff:
+            require(not game_release_errors(2014, root), '2014 receipts exist before season release acceptance')
+            for receipt in regular + playoff:
+                for team, score in receipt['final_score'].items():
+                    require(receipt['team_stats'][team]['points'] == score,
+                            '2014 receipt points differ from final score')
+        if regular:
+            games = paths.regular_games()
+            def scheduled_2014(week):
+                rows = [g for g in games if g['week'] == week]
+                if not rows:
+                    raise ValueError('no regular-season fixture week')
+                return rows
+            errors.extend(receipt_coverage_errors(regular, scheduled_2014))
+            for name, expected in render_views(2014, 'Jacksonville Jaguars', regular).items():
+                require((paths.stats / name).is_file() and (paths.stats / name).read_text() == expected,
+                        '2014 generated statistics missing or stale: ' + name)
+            from scripts.render_standings import render as standings_view
+            standings_path = paths.career / 'standings.md'
+            require(standings_path.is_file() and standings_path.read_text() == standings_view(2014, regular),
+                    '2014 standings missing or stale')
+            errors.extend(award_coverage_errors(regular, paths.career / 'awards'))
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append('2014 season records invalid: ' + str(exc))
 
     allowed_books = set(mapping['active_playbooks']) | {'career/playbook/README.md'}
     def readable(path):

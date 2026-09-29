@@ -13,6 +13,7 @@ from functools import lru_cache
 from pathlib import Path
 
 from .usage import group
+from .seasons import SeasonPaths
 
 LIBRARY = Path(__file__).resolve().parents[1] / "library" / "data" / "2013_week1_depth_charts.json"
 UNIT = {"QB": "offense", "RB": "offense", "FB": "offense", "WR": "offense", "TE": "offense",
@@ -36,9 +37,9 @@ def available(player, week):
     return bool(player.get("return_week")) and week >= player["return_week"]
 
 
-def team_input(team, *, offense_anchor, defense_anchor, special_teams_anchor, week=1):
+def team_input(team, *, offense_anchor, defense_anchor, special_teams_anchor, week=1, season=2013):
     """A kernel TeamInput dict for one background club's game-day unit in `week`."""
-    club = load()["clubs"][team]
+    club = load(SeasonPaths(season).background_depth)["clubs"][team]
     roster = []
     for player in club["players"]:
         roster.append({

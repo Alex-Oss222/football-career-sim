@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "seasons": {
+    "2014": {
+      "accepted_kernel": null,
+      "gates": [
+        {
+          "id": "tier1_engine",
+          "status": "BLOCKED",
+          "remaining": "E1/E2, clock, chains and injury-exposure fixes need implementation and accepted synthetic calibration.",
+          "evidence": [
+            "runtime/defect_register.md",
+            "runtime/2014_engine_decisions.md"
+          ]
+        },
+        {
+          "id": "season_rules",
+          "status": "BLOCKED",
+          "remaining": "Verify and adopt the 2014 playing/roster rules at their information gates.",
+          "evidence": [
+            "foundation/02_League_Era_and_Sourcebook.md"
+          ]
+        },
+        {
+          "id": "season_closure",
+          "status": "BLOCKED",
+          "remaining": "Accept an isolated 2014 end-to-end closure using legal 2014 inputs; path routing alone is not acceptance.",
+          "evidence": [
+            "docs/update_workflow.md"
+          ]
+        },
+        {
+          "id": "dated_fixtures",
+          "status": "BLOCKED",
+          "remaining": "Freeze validated dated fixtures after the April 23 release; the opponent matrix is not a fixture schedule.",
+          "evidence": [
+            "career/2014/schedule/release_plan.md"
+          ]
+        },
+        {
+          "id": "legal_rosters",
+          "status": "BLOCKED",
+          "remaining": "Establish current 2014 control, medical clearance, depth charts and dated background inputs.",
+          "evidence": [
+            "career/2014/operating_baseline.md"
+          ]
+        },
+        {
+          "id": "financial_control",
+          "status": "BLOCKED",
+          "remaining": "Reconcile 2014 obligations and practice-squad/futures control before transactions or participation.",
+          "evidence": [
+            "career/2014/offseason/current_cap_worksheet.md"
+          ]
+        }
+      ]
+    }
+  }
+}

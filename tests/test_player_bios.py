@@ -61,7 +61,7 @@ class PlayerBiographyTests(unittest.TestCase):
     def test_stale_views_are_rejected_even_without_a_birthday(self):
         with tempfile.TemporaryDirectory(dir=ROOT.parent) as d:
             root = Path(d)
-            for path in (player_bios.REGISTRY, "state/05_Current_Season_State.md",
+            for path in (player_bios.REGISTRY, "docs/repository_map.json", "state/05_Current_Season_State.md",
                          "state/04_Roster_and_Staff_Register.md", "career/2013/roster.md",
                          "career/2013/player_ages.md", "library/data/2013_week1_depth_charts.json"):
                 dest = root / path
