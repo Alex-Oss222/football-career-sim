@@ -76,3 +76,6 @@
 
 | Real date | Move | Player | Detail | Source | Gate passed in branch? |
 |---|---|---|---|---|---|
+| February 28, 2014 | Release | Steve Gregory, S | Released; the club announced it February 28. The official transaction-wire day is single source | [Patriots.com](https://www.patriots.com/news/patriots-release-s-steve-gregory-196231); [ProFootballTalk, February 28, 2014](https://profootballtalk.nbcsports.com/2014/02/28/agent-patriots-parting-ways-with-safety-steve-gregory/); [Pats Pulpit, February 28, 2014](https://www.patspulpit.com/2014/2/28/5457372/patriots-releasing-steve-gregory); [MusketFire, February 28, 2014](https://musketfire.com/2014/02/28/steve-gregory-released-patriots/). Confirmed | Yes: applied February 28, 2014 by Entry 89 |
+
+**Coverage note (Entry 89, February 28, 2014):** the February 26 to 28 moves in this table come from a bounded two-pass search. The web-search budget ran out during pass 2, which could therefore only re-read the evidence stored from pass 1. Eighteen of the 31 other clubs had no move found in the window; that is not a verified negative, and other moves by this club in the window may exist.

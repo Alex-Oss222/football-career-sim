@@ -2,7 +2,7 @@
  "team": "Jacksonville Jaguars",
  "season": 2014,
  "status": "WORKING VIEW, NOT A GAME INPUT. Carried from the closed 2013 chart; no 2014 depth decision has been made.",
- "as_of": "February 18, 2014 (ledger Entry 87)",
+ "as_of": "February 28, 2014 (ledger Entry 89; no change to the chart since Entry 87)",
  "effective": "Carried from the closed 2013 chart (January 6, 2014, AFC Divisional preparation)",
  "sources": "career/2013/depth_chart.json (Git 781213a); career/2013/roster.md (Git 3cc276d; Entries 79, 85, 86); career/2014/offseason/contract_status_register.md (Git 3cc276d); ledger Entries 79, 85, 86",
  "rule": "Order within each kernel position group is the closed 2013 order exactly as carried, minus players no longer controlled. It is not a 2014 decision. Stone owns the 2014 order and changes it only by decision; each change is logged in career/2014/depth_chart.md.",

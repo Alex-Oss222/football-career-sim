@@ -1,6 +1,6 @@
 # Jacksonville Jaguars 2014 contract table
 
-**As of:** February 18, 2014 (ledger Entry 87). The 2014 league year opens March 11, 2014, 4:00 p.m. ET.
+**As of:** February 28, 2014 (ledger Entry 89). The 2014 league year opens March 11, 2014, 4:00 p.m. ET.
 **Nature:** derived view. It executes no signing, tag, tender, release, trade or extension, certifies no cap room and changes no canon. The [contract status register](contract_status_register.md) owns each player's status; the [2014 preparation worksheet](current_cap_worksheet.md) owns reconciliation; Caldwell owns contract decisions (Document 3).
 **Baseline:** [2013 initial cap sheet](../../2013/offseason/initial_cap_sheet.md) (per-player 2013 rows, Git `e04dd82`); [2013 regular-season worksheet](../../2013/offseason/current_cap_worksheet.md) and its May 5 version (Git `d25c8cf`); [2013 free-agency signings](../../2013/offseason/free_agency/signings.md); [2013 draftees](../../2013/offseason/draft/draftees.md); [2013 undrafted signings](../../2013/offseason/draft/udfa_signings.md); [2013 trades](../../2013/trades/trades.md); [2014 contract status register](contract_status_register.md) (Git `3cc276d`); [Caldwell's pre-tag-window verifications](caldwell_pre_tag_verifications.md) (Git `9ca804c`); [2014 free-agency outcomes](free_agency/signings.md); ledger Entries 3, 4, 7, 9, 79, 80, 85 and 86.
 
@@ -12,6 +12,7 @@ Add a row, and change the affected player rows and summaries, for every signing,
 |---|---|---|---|
 | February 17, 2014 | Table created from the 2013 baseline, the 2014 register and the February 17 verifications | None (derived view; inputs through Entry 86) | 59 rows: 36 under contract, Meester retired, six reserve/future, 14 pending free agents, two unresolved |
 | February 18, 2014 | Eugene Monroe designated non-exclusive franchise player | Entry 87 | Monroe moves from pending UFA to franchise player (tender not yet signed; projected $11.654M, official February 28); pending UFAs 7; tag no longer available for Marks; section 6 items 1, 2 and 7 corrected in their owning files |
+| February 28, 2014 | League publishes the 2014 cap and franchise values | Entry 89 | Monroe's tender official at $11,654,000 (prior-year-salary check shown); 2014 cap $133,000,000 stated; Jacksonville's cap space, adjusted cap and carryover still unresolved; sourced total unchanged, tender shown beside it |
 
 ## 1. How to read this table
 
@@ -104,7 +105,7 @@ Each remains Jacksonville's until the league year opens on March 11, 2014, 4:00 
 |---|---|---|---|---|---|---|---|---|
 | Chad Henne | QB | Veteran, signed March 14, 2012 | 2013 | $6,750,000 (2 years) | $4,650,000 (includes $500,000 "other", type unresolved) | Pending UFA | Re-sign as insurance; negotiating window from March 8, noon | Confirmed (register); 2013 OTC row |
 | Maurice Jones-Drew | RB | Veteran extension, 2009 | 2013 | $30,515,000 (term length Corrected in the register) | $6,800,000 | Pending UFA | Re-sign short | Final year Confirmed; 2013 archive row |
-| Eugene Monroe | OT | Rookie, 2009 first round (pick #8) | 2013 | $25,000,000 (5 years) | $5,747,500 | **Franchise player (non-exclusive)**, designated February 18, 2014; tender not yet signed | Long-term talks continue on the memo's terms. 2014 tender: the offensive-line franchise figure, projected $11.654M (memo), official February 28; it counts against the 2014 cap from March 11 at the official figure. Offer sheets from other clubs possible from March 11 (two first-round picks if Jacksonville declines to match). Re-signing draw at his real signing date (March 11) under rails method section 4; if lost, he plays 2014 on the tag | Branch record (Entry 87; [tags and tenders](free_agency/signings.md#tags-and-tenders)); amount projected, Unresolved until February 28 |
+| Eugene Monroe | OT | Rookie, 2009 first round (pick #8) | 2013 | $25,000,000 (5 years) | $5,747,500 | **Franchise player (non-exclusive)**, designated February 18, 2014; tender not yet signed | Long-term talks continue on the memo's terms. 2014 tender: **$11,654,000**, the offensive-line franchise value, official February 28 (library section 2b, Confirmed); 120 percent of his recorded 2013 base ($4,560,000) or cap number ($6,897,000) is lower, so the position figure applies ([check](free_agency/signings.md#tags-and-tenders)). It counts against the 2014 cap from March 11. Offer sheets from other clubs possible from March 11 (two first-round picks if Jacksonville declines to match). Re-signing draw at his real signing date (March 11) under rails method section 4; if lost, he plays 2014 on the tag | Branch record (Entries 87 and 89; [tags and tenders](free_agency/signings.md#tags-and-tenders)); amount Confirmed (library section 2b); the prior-year check rests on an unre-verified 2013 transcription |
 | Sen'Derrick Marks | DT | Veteran (branch signing), March 12, 2013 | 2013 | $1.50M (1 year) | $1.50M | Pending UFA | Re-sign. No tag is available (Jacksonville's one designation went to Monroe on February 18) | Branch record |
 | C.J. Wilson | DE | Rookie (Green Bay, 2010 seventh round), acquired by trade | 2013 | Unresolved | $630,000 base carried by Jacksonville (branch); reported cap number $642,590 (register) | Pending UFA | Minimum with no guarantee, or let go | Branch record (trade); final year Corrected (register) |
 | Alan Ball | CB | Veteran (branch signing), March 12, 2013 | 2013 | $1.00M (1 year) | $1.00M | Pending UFA | One-year competition deal | Branch record |
@@ -121,7 +122,7 @@ Each remains Jacksonville's until the league year opens on March 11, 2014, 4:00 
 
 ## 5. Summary
 
-### 5a. Counts by 2014 status (February 17, 2014)
+### 5a. Counts by 2014 status (February 28, 2014)
 
 | Status | Count |
 |---|---:|
@@ -144,7 +145,7 @@ Thirteen players have an exactly sourced 2014 cap charge: Miller $3,250,000; Smi
 Not in that total:
 - **Approximate, single source (1):** Nwaneri, about $5.9M.
 - **Unresolved (28):** Cousins, Blackmon, Shorts, Lewis, Asper, Rackley, Brewster, Babin, Branch, Davis, Mincey, Alualu, Mosley, Pendleton, Allen, Posluszny, Stanford, Harris, Lowery, Prosinski, Scobee, Anger, Owens; and reserve/future players Murphy, Jerrell Jackson, Long, D'Anthony Smith and Blake.
-- **Franchise player (1):** Monroe's tender counts from March 11 at the official offensive-line figure (projected $11.654M; official February 28). Not in the total until the figure is published and the league year opens.
+- **Franchise tender (1):** Monroe, **$11,654,000** from March 11 (official February 28; library section 2b, Confirmed). Shown beside the total because the tender is unsigned and counts only from the league year. The sourced charges plus the tender come to **$29,272,182 (partial)**.
 - **Pending free agents and unresolved contracts (15):** no 2014 charge until a tender or contract exists (or, for Wilson and Jonathan Grimes, until the term is known).
 
 The total is a sum of scheduled charges. It is not a Top-51 figure and not club room.
@@ -159,18 +160,18 @@ The total is a sum of scheduled charges. It is not a Top-51 figure and not club 
 
 ### 5d. 2013 carryover
 
-**Unresolved.** Jacksonville carried unused 2013 room into 2014 (Confirmed, verifications section 1), but the amount is not certified. The branch planning range in Stone's memo checklist is **$5.4M to $6.6M, or nothing** if no election was filed; it spans the 2013 worksheet's September 4 ranges (about $6.2M to $6.6M before weekly practice-squad charges, about $5.4M to $5.8M if the opening eight stayed all 17 weeks). The real Jaguars report of about $19M to $20M describes the real club, not the branch, and is not used.
+**Unresolved.** Jacksonville carried unused 2013 room into 2014 (Confirmed, verifications section 1), but the amount is not certified. The branch planning range in Stone's memo checklist is **$5.4M to $6.6M, or nothing** if no election was filed; it spans the 2013 worksheet's September 4 ranges (about $6.2M to $6.6M before weekly practice-squad charges, about $5.4M to $5.8M if the opening eight stayed all 17 weeks). The real Jaguars' reported figure describes the real club; it is a comparator only and is not used. February 28 published the league cap (5e), not a certified Jacksonville carryover.
 
 ### 5e. 2014 league cap
 
-The 2014 cap and the adjusted club figures become public on **February 28, 2014** (Document 5 calendar). The amount is gated until then and is not stated here. The [preparation worksheet](current_cap_worksheet.md) stays UNRECONCILED.
+**$133,000,000 per club**, published February 28, 2014 (`library/2014_league_calendar_and_financial_rules.md` F1, Confirmed); clubs must be compliant by 4 p.m. ET March 11. Jacksonville's **adjusted 2014 cap and cap space remain Unresolved**: the carryover (5d) is not certified, no per-club 2014 adjusted-cap table was found for February 28, and 28 player charges are unresolved (5b). As context only, the February 28 release relayed an average carryover of $6.1M among clubs that elected one (Buffalo Bills release citing NFLPA communications; single source); it is not Jacksonville's figure. The [preparation worksheet](current_cap_worksheet.md) stays UNRECONCILED.
 
 ### 5f. Tags and tenders
 
 | Item | Player | Deadline | Status |
 |---|---|---|---|
-| Non-exclusive franchise tag | Eugene Monroe | Designated February 18, 2014 (deadline was 4 p.m. ET March 3) | **Designated** (Entry 87); tender not yet signed; amount projected $11.654M until February 28 |
-| Lowest RFA tender | Cameron Bradfield | March 11, 4 p.m. ET | Planned; not made |
+| Non-exclusive franchise tag | Eugene Monroe | Designated February 18, 2014 (deadline was 4 p.m. ET March 3) | **Designated** (Entry 87); tender not yet signed; **$11,654,000**, official February 28 (Entry 89) |
+| Lowest RFA tender | Cameron Bradfield | March 11, 4 p.m. ET | Planned; not made. The 2014 tender amounts' publication date is not established (no later than March 6); until then the memo's figures remain planning figures |
 | ERFA tenders | Toney Clemons, Mike Brown, Austin Pasztor | March 11, 4 p.m. ET | Planned; not made |
 | No tender | Allen Reisner, Kevin Rutland | Not applicable | Planned (memo) |
 | Tender if the contract expired | Jonathan Grimes | Before March 11 | Contract term Unresolved |

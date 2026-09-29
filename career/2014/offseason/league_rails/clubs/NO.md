@@ -77,3 +77,6 @@
 
 | Real date | Move | Player | Detail | Source | Gate passed in branch? |
 |---|---|---|---|---|---|
+| February 28, 2014 | Franchise tag | Jimmy Graham, TE | Franchise tag at the tight-end designation, confirmed by the club February 28. Same-day reports said his camp was likely to contest the position designation; that is a report, not a transaction. The tag type is not established inside the window and is not recorded | [ProFootballTalk, February 28, 2014](https://profootballtalk.nbcsports.com/2014/02/28/report-saints-will-use-franchise-tag-on-jimmy-graham/); [SI, February 28, 2014](https://www.si.com/nfl/2014/02/28/jimmy-graham-franchise-tag-new-orleans-saints-2); [NFL.com](https://www.nfl.com/news/jimmy-graham-franchise-tagged-by-new-orleans-saints-0ap2000000330077); [ESPN](https://www.espn.com/nfl/story/_/id/10533205/jimmy-graham-receive-franchise-tag-new-orleans-saints). Confirmed | Yes: applied February 28, 2014 by Entry 89 |
+
+**Coverage note (Entry 89, February 28, 2014):** the February 26 to 28 moves in this table come from a bounded two-pass search. The web-search budget ran out during pass 2, which could therefore only re-read the evidence stored from pass 1. Eighteen of the 31 other clubs had no move found in the window; that is not a verified negative, and other moves by this club in the window may exist.

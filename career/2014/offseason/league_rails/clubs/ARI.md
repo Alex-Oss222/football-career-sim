@@ -74,3 +74,6 @@
 
 | Real date | Move | Player | Detail | Source | Gate passed in branch? |
 |---|---|---|---|---|---|
+| February 28, 2014 | Release | Jasper Brinkley, ILB | Released. No source carries an explicit February 28 date: the day rests on search summaries, the AP story's "Friday" and the club article's position among February 28 items | [AZCardinals.com](https://www.azcardinals.com/news/cardinals-release-jasper-brinkley-12687320); [AP via Fox News](https://www.foxnews.com/sports/cardinals-release-ilb-jasper-brinkley-fire-strength-and-conditioning-coach-john-lott); [NFL.com](https://www.nfl.com/news/jasper-brinkley-released-by-arizona-cardinals-0ap2000000330243); [Pro Football Reference, February 2014 transactions](https://www.pro-football-reference.com/years/2014/02_transactions.htm). Confirmed | Yes: applied February 28, 2014 by Entry 89 |
+
+**Coverage note (Entry 89, February 28, 2014):** the February 26 to 28 moves in this table come from a bounded two-pass search. The web-search budget ran out during pass 2, which could therefore only re-read the evidence stored from pass 1. Eighteen of the 31 other clubs had no move found in the window; that is not a verified negative, and other moves by this club in the window may exist.

@@ -1,6 +1,6 @@
 # 2014 operating baseline and handoffs
 
-**Prepared at the February 2, 2014 checkpoint; current through February 25, 2014 (Entry 88).** This is the 2014 working structure for the offseason and eventual season. No offer, signing, trade, training phase, draft selection or game is completed by preparing it. Monroe was designated non-exclusive franchise player on February 18 (Entry 87; tender not yet signed). The Combine closed February 25; its evidence is in `library/2014_combine_results.md` (Entry 88). The next dated events are the February 28 cap and tag figures and the March 11 league year.
+**Prepared at the February 2, 2014 checkpoint; current through February 28, 2014 (Entry 89).** This is the 2014 working structure for the offseason and eventual season. No offer, signing, trade, training phase, draft selection or game is completed by preparing it. Monroe was designated non-exclusive franchise player on February 18 (Entry 87); his tender became official at $11,654,000 when the league published the 2014 cap ($133,000,000) and tag values on February 28 (Entry 89), and it is not yet signed. The Combine closed February 25; its evidence is in `library/2014_combine_results.md` (Entry 88). The next dated events are the March 3 designation deadline, the March 8 negotiating window and the March 11 league year.
 
 ## Start here
 
