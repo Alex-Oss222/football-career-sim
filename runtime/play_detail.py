@@ -706,8 +706,8 @@ def apply_drive_detail(
     plays = len(kinds)
     last = plays - 1
 
-    # One passer per club per game: the depth-chart QB1 unless the kernel
-    # supplies a different game passer.
+    # The kernel supplies this drive's passer (kernel 2014.4: chosen per
+    # drive from the players still available); else the depth-chart QB1.
     qb = passer or usage.game_passer(available) or choose(rng, available, {"QB"}, "passer")
     qb_line = offense_stats["players"][qb.player_id]
     # Kernel 2014.3: the five linemen on the field (same for every drive).
@@ -1084,6 +1084,8 @@ DRIVE_SUMMARY_FIELDS = (
     "tuple_terminal_bucket", "chains", "fourth_down", "kneels", "spikes",
     # Kernel 2014.1 onward (append-only).
     "timeouts", "timeout_level",
+    # Kernel 2014.4 onward (append-only): the drive's passer.
+    "passer",
 )
 LABEL_TYPES = {KNEEL_LABEL: "run", GENERIC_RUN: "run", SPIKE_LABEL: "pass",
                GENERIC_PASS: "pass", SCRAMBLE_LABEL: "pass"}
@@ -1322,6 +1324,9 @@ def _check_spot_ledger(result, possessions, rows_by_drive, kicks, err):
         for r in rows:
             if r.get("play_type") == "pass" and r.get("passer"):
                 passers.setdefault(r["offense"], r["passer"])
+    # Kernel 2014.4: the passer is chosen per drive (a backup can take over
+    # after a removal), so a kneel belongs to that drive's passer.
+    drive_passers = {p["number"]: p["passer"] for p in possessions if p.get("passer")}
     for number, rows in rows_by_drive.items():
         for r in rows:
             if r.get("play_type") not in ("pass", "run"):
@@ -1332,7 +1337,7 @@ def _check_spot_ledger(result, possessions, rows_by_drive, kicks, err):
             groups = r.get("label_groups")
             where = "drive %s snap %s" % (number, r.get("snap_in_drive"))
             if r.get("kneel"):
-                passer = passers.get(r["offense"])
+                passer = drive_passers.get(number, passers.get(r["offense"]))
                 if concept != KNEEL_LABEL or (passer is not None and r.get("runner") != passer):
                     err("kneel_spike_mislabelled", where)
                 continue

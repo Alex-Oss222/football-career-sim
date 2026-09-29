@@ -221,7 +221,7 @@ class StatbookTests(unittest.TestCase):
             self.assertEqual(receipt["schema_version"], 3)
             # Kernel 2013.7: 14 kernel 2013.6 fields plus 11 field-position
             # fields; kernel 2014.1 appends the timeout state and ladder level.
-            self.assertTrue(all(len(row) == 27 for row in receipt["drives"]))
+            self.assertTrue(all(len(row) == 28 for row in receipt["drives"]))  # 2014.4: + passer
         with self.assertRaises(ValueError):
             aggregate_receipts([{**make_receipt(result, week=4, matchup="B at A"), "schema_version": 4}])
         book = aggregate_receipts([make_receipt(result, week=4, matchup="B at A", detail="compact_stats")])

@@ -76,7 +76,9 @@ class CallLabelTests(unittest.TestCase):
                         self.assertIn(concept, ("QB Draw", "Generic Run"))
                 if row["kneel"]:
                     seen["kneel"] += 1
-                    self.assertEqual((row["concept"], row["runner"]), ("Victory (kneel)", passer.get("A", row["runner"])))
+                    # Kernel 2014.4: the kneel belongs to that drive's passer.
+                    drive_passer = next(p["passer"] for p in r["possessions"] if p["number"] == row["drive"])
+                    self.assertEqual((row["concept"], row["runner"]), ("Victory (kneel)", drive_passer))
                 if row["spike"]:
                     seen["spike"] += 1
                     self.assertIsNone(row["target"])

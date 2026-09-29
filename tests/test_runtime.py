@@ -71,11 +71,16 @@ class RuntimeTests(unittest.TestCase):
             sum(p['scrimmage_plays'] for p in first['possessions'] if p['team']=='A')
         )
 
-    def test_pause_and_continuation(self):
-        a,b=self.teams(); paused=resolve_game(a,b,seed=self.seed,event_id='pause',management_mode='user_controlled')
-        self.assertEqual(len(paused['pauses']),1)
-        continued=resolve_game(a,b,seed=self.seed,event_id='pause',management_mode='user_controlled',resume=paused['pauses'][0]['continuation_token'])
-        self.assertFalse(continued['pauses'])
+    def test_user_control_requires_the_controlled_club(self):
+        # Kernel 2014.4: the post-resolution pause stub is gone; real pauses
+        # and continuations are tested in tests/test_injuries_in_game.py.
+        a,b=self.teams()
+        with self.assertRaises(ValueError):
+            resolve_game(a,b,seed=self.seed,event_id='pause',management_mode='user_controlled')
+        with self.assertRaises(ValueError):
+            resolve_game(a,b,seed=self.seed,event_id='pause',continuation={'decisions':[]})
+        done=resolve_game(a,b,seed=self.seed,event_id='pause',management_mode='user_controlled',controlled_team='A')
+        self.assertTrue(done['terminated'] or done['pauses'][-1]['team']=='A')
     # 250 games per test at most: the deploy image runs this whole suite.
     # The neutral sample is the shared cached 250-game synthetic sample.
     def neutral_sample(self):
@@ -89,10 +94,10 @@ class RuntimeTests(unittest.TestCase):
         for r in self.neutral_sample():
             for t in ('A','B'):
                 s=r['team_stats'][t]; points.append(s['points']); drives.append(sum(x['team']==t for x in r['possessions'])); yards.append(s['passing_yards']+s['rushing_yards']); punts.append(s['punts']); turnovers.append(s['turnovers']); penalties.append(s['penalties']); sacks.append(s['sacks_allowed']); field_goals.append(s['field_goals']); returns.append(s['kick_returns']+s['punt_returns'])
-            injuries.append(len(r['injuries']))
+            injuries.append(len(r['injuries'])/2)
         def mean(x): return sum(x)/len(x)
         self.assertTrue(17<mean(points)<29); self.assertTrue(8<mean(drives)<16); self.assertTrue(240<mean(yards)<460)
-        self.assertTrue(3<mean(punts)<7); self.assertTrue(.7<mean(turnovers)<2.2); self.assertTrue(4<mean(penalties)<9); self.assertTrue(.2<mean(injuries)<2.5)
+        self.assertTrue(3<mean(punts)<7); self.assertTrue(.7<mean(turnovers)<2.2); self.assertTrue(4<mean(penalties)<9); self.assertTrue(2.4<=mean(injuries)<=3.3)
         self.assertTrue(1<mean(sacks)<4); self.assertTrue(.8<mean(field_goals)<2.5); self.assertTrue(1<mean(returns)<7)
     def test_matchup_movement(self):
         def mean(x): return sum(x)/len(x)

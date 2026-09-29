@@ -172,7 +172,11 @@ class UsageBandTests(unittest.TestCase):
                 carries[player] = carries.get(player, 0) + line["rushing_attempts"]
         self.assertGreater(carries["A-RB1"], carries["A-RB2"])
         self.assertGreater(carries["A-RB2"], carries["A-RB3"])
-        self.assertEqual(carries["A-QB2"], 0)
+        # Kernel 2014.4: the backup carries only after QB1 was removed.
+        backup = sum(line["rushing_attempts"] for r in self.results
+                     if not any(i["player"] == "A-QB1" and i["removed"] for i in r["injuries"])
+                     for pid, line in r["team_stats"]["A"]["players"].items() if pid == "A-QB2")
+        self.assertEqual(backup, 0)
 
     def test_linebackers_of_any_label_make_tackles(self):
         tackles = {"OLB": 0, "ILB": 0}
