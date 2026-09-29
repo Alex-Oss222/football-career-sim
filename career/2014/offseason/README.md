@@ -18,6 +18,7 @@ Start with the player at the current date, including his full season of experien
 | Find outstanding player work | [Player film queue](film/player_queue.md) | One accountable queue entry for each of the 61 players at the baseline, including the retired-player archive |
 | Verify a delivery | [Delivery log](film/delivery_log.md) | Dated packet revisions and actual issue/acknowledgment/review receipts |
 | Resolve a staffing dependency | [Staff changes](staff_changes/README.md) | April search plan and actual appointment records |
+| Read the narrative for an offseason turn | [Turn outputs](turns/README.md) | One template output per closed offseason turn |
 
 ## Phase route
 

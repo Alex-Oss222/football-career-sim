@@ -6,8 +6,8 @@
 
 | Round | Original club | Slot in round | Overall number now | Target | Existing alternative instruction / unresolved choice |
 |---:|---|---:|---|---|---|
-| 1 | Washington | 13 | **13** | **Aaron Donald, DT, Pittsburgh** | No fallback supplied for this pick |
-| 1 | Jacksonville | 26 | **26** | Joel Bitonio, T/G, Nevada | Memo comparisons: Zack Martin, Cyril Richardson, Gabe Jackson; do not assume any is available |
+| 1 | Washington | 13 | **13** | **Aaron Donald, DT, Pittsburgh** | Fallback: Kyle Fuller, CB, Virginia Tech ([receivers and fallbacks amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-29-2026-amendment-receivers-pick-13-and-26-fallbacks-edge-pairing-undrafted-line)) |
+| 1 | Jacksonville | 26 | **26** | **Davante Adams, WR, Fresno State** | Then Joel Bitonio, T/G, Nevada; then Kyle Van Noy, LB, BYU ([Adams amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-29-2026-amendment-adams-at-26)) |
 | 3 | Jacksonville | 26 | **90** | Trai Turner, G, LSU | Brandon Thomas is the memo's comparison |
 | 4 | Jacksonville | 26 | **122 + C3** | Telvin Smith, LB, Florida State | Christian Jones and Kyle Van Noy are the memo's comparisons |
 | 5 | Detroit | 11 | **139 + C3 + C4** | **Corey Linsley, C, Ohio State** | Fallbacks in order: Matt Paradis, Bryan Stork, Travis Swanson ([amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-29-2026-amendment-pick-36-lawrence-at-31-monroe-and-the-linsley-and-gaines-fallbacks)) |
@@ -22,6 +22,8 @@ Jacksonville owns **no current second-round pick**. Package A asks Seattle for i
 ## Research and execution
 
 Before the combine, prepare source indexes and permitted college evidence, not later testing or a final grade. Linsley and Gaines need the same dated eligibility/scouting checks as every other target; this user instruction is not scouting evidence. Follow [information gates](../../../../library/2014_draft_information_gates.md) and [the eligible-pool register](../../../../library/2014_draft_pool_registry.md). The actual selection must pass the rails availability rule at its final branch overall number on draft day. If a primary target is unavailable and no precise fallback is authorized, stop that selection for Stone's choice while continuing permissible preparation.
+
+Davante Adams is the target at 26 (Adams amendment), the planned third receiver. Undrafted signings are weighted to the offensive line: at least five linemen when enough eligible, scouted linemen go undrafted, led by Norwell, Lucas and Feiler (same amendment).
 
 No trade up/down or additional pick disposal is authorized beyond package H (No. 36 to Minnesota for No. 31). The [memo's UDFA watch list](../stone_to_caldwell_2014_offseason_decisions.md#undrafted-watch-list) is separate from [actual UDFA signings](udfa_signings.md); a watch-list player is not assumed to go undrafted. The [draft runbook](README.md) sets the sequence and dependency closure.
 
