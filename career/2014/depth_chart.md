@@ -1,6 +1,6 @@
 # Jacksonville Jaguars 2014 depth chart (working view)
 
-**As of:** February 28, 2014 (ledger Entry 89; no change to the chart since Entry 87). The 2014 league year opens March 11, 2014, 4:00 p.m. ET.
+**As of:** February 28, 2014 (ledger Entry 91; contract notes corrected, depth order unchanged). The 2014 league year opens March 11, 2014, 4:00 p.m. ET.
 **Status:** carried from the closed 2013 chart; no 2014 depth decision has been made. Stone owns the order and changes it only by decision.
 **Machine-readable copy:** [offseason/depth_chart_working.json](offseason/depth_chart_working.json), same schema as [the 2013 chart](../2013/depth_chart.json) plus contract flags, the March 11 additions and this update log.
 **Sources:** [2013 depth chart](../2013/depth_chart.json) (Git `781213a`, effective January 6, 2014, AFC Divisional preparation); [current roster](../2013/roster.md); [current contract status register](offseason/contract_status_register.md); [Caldwell's pre-tag-window verifications](offseason/caldwell_pre_tag_verifications.md); ledger Entries 79 and 85 through 89. The January chart supplies the carried order; the current roster and register supply control and availability.
@@ -21,7 +21,7 @@
 |---:|---|---|---|---|
 | 1 | Kirk Cousins | Under contract | QB1 | No communicated restriction |
 | 2 | Chad Henne | **Pending UFA** | QB2 | No communicated restriction |
-| 3 | John Parker Wilson | **Contract status Unresolved** | QB3 | No communicated restriction |
+| 3 | John Parker Wilson | Under contract through 2014 (Entry 91) | QB3 | No communicated restriction |
 | Joins March 11 | Tyler Bray | Reserve/future | None assigned | Not yet under a 2014 contract that is in force |
 
 ### Running backs (RB)
@@ -29,7 +29,7 @@
 | Order | Player | Contract flag | 2013 recorded role | Availability |
 |---:|---|---|---|---|
 | 1 | Maurice Jones-Drew | **Pending UFA** | Lead back | No communicated restriction |
-| 2 | Jonathan Grimes | **Contract status Unresolved** | RB2 | No communicated restriction |
+| 2 | Jonathan Grimes | Under contract through 2014 (Entry 91) | RB2 | No communicated restriction |
 | 3 | C.J. Anderson | Under contract | RB3; coverage units | No communicated restriction |
 | Joins March 11 | Richard Murphy | Reserve/future | None assigned | Not yet under a 2014 contract that is in force |
 
@@ -155,7 +155,8 @@ Add a row for every signing, tag, tender, trade, release, retirement, draft pick
 | February 17, 2014 | Working chart created from the closed 2013 chart | None (derived view; inputs are Entries 79, 85 and 86) | Meester removed; 14 pending free agents and 2 unresolved contracts flagged; six reserve/future players listed as joining March 11 with no role |
 | February 18, 2014 | Eugene Monroe designated non-exclusive franchise player | Entry 87 | Monroe's flag changes from pending UFA to franchise-tagged; order unchanged |
 | February 28, 2014 checkpoint review | Administrative reconciliation against the merged roster and contracts | None (review through Entry 89) | Refreshed source pointers; verified 52 active players, Meester retired and six March 11 futures; order, roles and availability unchanged |
+| February 28, 2014 | Complete contract terms | Entry 91 | Wilson and Jonathan Grimes signed through 2014; futures through 2015; no depth-order or role change |
 
 ## Maintaining the game-input copy
 
-`runtime/seasons.py` names `career/2014/depth_chart.json` as a required 2014 game input, and `runtime/week_inputs.py` reads that file as Stone's order when it builds Jacksonville's weekly TeamInput. Creating it now would remove the "Missing 2014 input" line from `scripts/check_game_readiness.py` with a chart that still lists 13 pending free agents, a franchise-tagged tackle whose tender is unsigned, two players with unresolved contracts and a medical hold, and omits the six players whose contracts start March 11. The working copy therefore lives at `career/2014/offseason/depth_chart_working.json`. Promote a reviewed chart to `career/2014/depth_chart.json` only when 2014 control, medical clearance and Stone's depth decisions are established (the `legal_rosters` release gate).
+`runtime/seasons.py` names `career/2014/depth_chart.json` as a required 2014 game input, and `runtime/week_inputs.py` reads that file as Stone's order when it builds Jacksonville's weekly TeamInput. Creating it now would remove the "Missing 2014 input" line from `scripts/check_game_readiness.py` with a chart that still lists 13 pending free agents, a franchise-tagged tackle whose tender is unsigned, a medical hold, and omits the six players whose contracts start March 11. The working copy therefore lives at `career/2014/offseason/depth_chart_working.json`. Promote a reviewed chart to `career/2014/depth_chart.json` only when 2014 control, medical clearance and Stone's depth decisions are established (the `legal_rosters` release gate).

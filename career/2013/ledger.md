@@ -2628,3 +2628,27 @@ The search is not a complete league transaction log. No real retirement dated Fe
 **Atomic closure.** The current contract table/register, futures signing amounts, preparation worksheet, financial inputs and generated views, Documents 4 (register 45) and 5 (state 66), and the governing-source manifest are reconciled. Roster ownership, availability, player roles, draft assets and the working depth chart were inspected and require no change. No signing, tender, release, retirement, staff appointment, game or clock advance occurs. Private engine state remains untouched.
 
 **Commit closed - Canonical correction - February 28, 2014 - Head-coach role and original contracts reconciled - canonical through February 28, 2014**
+
+
+## Entry 91: Complete contract schedules adopted
+
+**Effective canonical state:** February 28, 2014; administrative correction, no time advance.
+**Recorded:** September 29, 2026
+**Checkpoint:** `Canonical correction - February 28, 2014 - Complete contract schedules adopted`
+**Preceding global package checkpoint:** `Canonical correction - February 28, 2014 - Head-coach role and original contracts reconciled`
+
+The user explicitly authorizes researched or realistic simulated dollar schedules for missing existing-contract terms, with blank years after expiration. The financial inputs now preserve those adopted assumptions between turns. They do not create future extensions, free-agent signings or player moves.
+
+The Jaguars' own 2012 transaction record confirms John Parker Wilson's December 30 futures signing. Adopt a two-year 2013-2014 minimum contract, $630,000 and $730,000, without a bonus or guarantee. Jonathan Grimes's carried 2012 active-roster contract is modeled through 2014, with a $570,000 final salary and no Jacksonville bonus. Both are treated as signed through 2014; their roster places and carried QB3/RB2 roles stay the same. No tender is required for either for 2014. This supersedes their unresolved-term treatment in Entries 86 and 90.
+
+The six Entry 85 futures contracts are completed as two-year 2014-2015 minimum agreements. Bray, Jerrell Jackson and Long have $420,000 in 2014 and $510,000 in 2015. Murphy, D'Anthony Smith and Blake have $495,000 and $585,000. They retain no bonus and no salary guarantee. The second-year amounts use one additional credited season if retained on full-pay active/inactive status; a later waiver ends the deal rather than silently restoring it.
+
+Existing Entry 90 annual estimates are retained as fixed simulation planning schedules. Rookie guarantee gaps use the same draft-slot comparators as the already-executed salary schedules: Lane Johnson carries the pick-2 full guarantee; Kelce carries the pick-33 guarantee, including $653,596 in 2014 and $500,000 in 2015. Other remaining rookie and veteran salaries use the stated no-additional-guarantee model where sources do not establish a surviving guarantee. Blackmon retains his original gross cap/cash schedule; the existing four-game suspension removes future guarantees under the reported original clause. No later real suspension or tolling enters the branch. See the research for all assumptions and arithmetic.
+
+There are now 38 continuing signed players, six signed futures and Monroe's separate unsigned tender. Thirteen free agents have no new contract and Meester has no 2014 playing salary. The ten-year table displays dollars for each covered year and leaves subsequent cells blank. It includes sourced and modeled amounts together in working totals, with their basis stated in contract notes. The 2014 player-contract total is $105,071,821 including Monroe; this is scheduled player cap before club adjustments. The 2015 total is $74,805,137 and 2016 is $19,211,292. No later contract is assumed.
+
+The carry-forward dead-money register resolves Bray at $51,675, separately from his new futures deal. Marshall's original rookie bonus had already accelerated following his 2012 waiver; Lane's four-year 2010 deal ended in 2013. Stanback's short replacement contract is modeled without a signing bonus. None of those three supplies a 2014 bonus charge. Club carryover and actual paid-cash reconciliation remain separate from the completed player-contract schedules.
+
+Atomic closure: contract register/table, futures outcomes, working depth-chart control notes, roster/register and current season pointers, financial inputs, generated cap/detail views and maintenance guidance are updated together. No depth-order, medical, staff, draft-pick or football event changes.
+
+**Commit closed - Canonical correction - February 28, 2014 - Complete contract schedules adopted - canonical through February 28, 2014**

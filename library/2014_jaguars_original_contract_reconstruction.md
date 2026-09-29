@@ -1,5 +1,7 @@
 # Jaguars original contracts carried into 2014
 
+**Current supplement:** [Entry 91 contract completion](2014_jaguars_contract_completion.md) adopts missing term lengths, guarantees and working assumptions. It supersedes this earlier pass’s open Wilson/Grimes terms, futures duration and guarantee labels; its completed schedules persist between turns.
+
 Administrative correction at February 28, 2014, Entry 90. Researched September 29, 2026. The user requested continuation from the existing 2013 contracts and explicitly allowed labeled approximations where original annual terms cannot be fully recovered.
 
 The starting evidence is the [2013 initial cap sheet](../career/2013/offseason/initial_cap_sheet.md), the executed branch signings, draftees, trades and futures agreements. Public sources below recover original instruments. Later publication may document an old term; later real releases, suspensions, restructures and extensions are not branch events. Original scheduled charge, actual historical charge after a real transaction, and cash are different figures.

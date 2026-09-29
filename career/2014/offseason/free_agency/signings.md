@@ -12,16 +12,16 @@ Caldwell resolves the memo's terms and contingencies. Outside targets use the [o
 
 ### Reserve/future contracts (ledger Entry 85)
 
-Authority: Stone's February 2 memo, section 1; Caldwell made all six offers on February 3, 2014. Method `../futures_method.json` (committed before the draw); result `../futures_results.json`. Terms for each: the 2014 minimum for his credited seasons, no guarantee, no signing bonus; effective at the March 11, 2014 league year and counted toward the 90-player limit from then; not practice-squad places.
+Authority: Stone's February 2 memo, section 1; Caldwell made all six offers on February 3, 2014. Method `../futures_method.json` (committed before the draw); result `../futures_results.json`. Entry 91 completes the existing contracts as two-year 2014-2015 deals. Terms for each: the yearly minimum for his credited seasons, no guarantee, no signing bonus; effective at the March 11, 2014 league year and counted toward the 90-player limit from then; not practice-squad places.
 
-| Player | Offer | Result | Effective | 2014 base | Remaining unknowns |
+| Player | Offer | Result | Effective | 2014 base | Remaining term |
 |---|---|---|---|---|---|
-| Tyler Bray, QB | February 3 | Signed February 3 (no dated competing move) | March 11, 2014 | $420,000 (0 credited seasons) | None for the base |
-| Richard Murphy, RB | February 3 | Signed February 3 (no dated competing move) | March 11, 2014 | $495,000 (1 credited season; reconstructed Entry 90) | Annual minimum resolved, Entry 90; term after 2014 unrecorded |
-| Antwon Blake, S | February 3 | Signed February 3 (no dated competing move) | March 11, 2014 | $495,000 (1 credited season; reconstructed Entry 90) | Annual minimum resolved, Entry 90; term after 2014 unrecorded |
-| Jerome Long, DT | February 3 | Signed February 3 (no dated competing move) | March 11, 2014 | $420,000 (0 credited seasons; reconstructed Entry 90) | Annual minimum resolved, Entry 90; term after 2014 unrecorded |
-| Jerrell Jackson, WR | February 3 | Signed February 3 (his real 2014 Kansas City contract is undated and cannot enter the branch) | March 11, 2014 | $420,000 (0 credited seasons; reconstructed Entry 90) | Annual minimum resolved, Entry 90; term after 2014 unrecorded |
-| D'Anthony Smith, DT | February 3 | Signed February 5 after the [market draw](../league_rails/fa_draws.md) against his real Seattle reserve/future contract of that date | March 11, 2014 | $495,000 (1 credited season; reconstructed Entry 90) | Annual minimum resolved, Entry 90; term after 2014 unrecorded |
+| Tyler Bray, QB | February 3 | Signed February 3 (no dated competing move) | March 11, 2014 | $420,000 (0 credited seasons) | Through 2015; $510,000 in 2015; adopted simulation term (Entry 91) |
+| Richard Murphy, RB | February 3 | Signed February 3 (no dated competing move) | March 11, 2014 | $495,000 (1 credited season; reconstructed Entry 90) | Through 2015; $585,000 in 2015; adopted simulation term (Entry 91) |
+| Antwon Blake, S | February 3 | Signed February 3 (no dated competing move) | March 11, 2014 | $495,000 (1 credited season; reconstructed Entry 90) | Through 2015; $585,000 in 2015; adopted simulation term (Entry 91) |
+| Jerome Long, DT | February 3 | Signed February 3 (no dated competing move) | March 11, 2014 | $420,000 (0 credited seasons; reconstructed Entry 90) | Through 2015; $510,000 in 2015; adopted simulation term (Entry 91) |
+| Jerrell Jackson, WR | February 3 | Signed February 3 (his real 2014 Kansas City contract is undated and cannot enter the branch) | March 11, 2014 | $420,000 (0 credited seasons; reconstructed Entry 90) | Through 2015; $510,000 in 2015; adopted simulation term (Entry 91) |
+| D'Anthony Smith, DT | February 3 | Signed February 5 after the [market draw](../league_rails/fa_draws.md) against his real Seattle reserve/future contract of that date | March 11, 2014 | $495,000 (1 credited season; reconstructed Entry 90) | Through 2015; $585,000 in 2015; adopted simulation term (Entry 91) |
 
 Not offered: Brandon King and Will Ta'ufo'ou, who left as free agents.
 

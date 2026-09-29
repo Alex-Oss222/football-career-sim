@@ -164,4 +164,4 @@ Claimed by other clubs on waivers: Austen Lane, Brandon Marshall, Isaiah Stanbac
 
 ## 6. Finances
 
-See `offseason/current_cap_worksheet.md`. Top-51 accounting has expired. Current source-bounded room is approximately $6.2M-$6.6M before weekly practice-squad charges.
+The last closed 2013 accounting remains in `offseason/current_cap_worksheet.md`. For the upcoming year, use the [2014 contract table](../2014/offseason/contract_table.md) and [ten-year tracker](../finances/jaguars_cap_2014_2023.md), through Entry 91. Wilson and Jonathan Grimes are signed through 2014 and the six futures through 2015 under the adopted contract completion; roster places and football roles are unchanged.

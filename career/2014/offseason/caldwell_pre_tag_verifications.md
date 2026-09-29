@@ -7,6 +7,8 @@
 
 **Research:** September 29, 2026, two passes (a research pass, then a separate skeptical verification pass that re-searched each claim). WebFetch was blocked by the network proxy for OverTheCap, Profootballrumors and the CBA PDF, so every figure rests on search-result text. Labels: Confirmed (two independent sources), Single source, Inference, Unverified.
 
+**Entry 91 completion:** [the completed contract schedules](../../../library/2014_jaguars_contract_completion.md) supersede this historical pass’s open Wilson/Grimes terms, futures duration, remaining guarantees and 2014 dead-money estimates. Wilson’s original futures signing is confirmed by the club ledger; the adopted simulation terms are now the working financial record.
+
 ## 1. The five pre-window items
 
 | Item | Finding | Status | What it means on February 17 |
