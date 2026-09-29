@@ -5,12 +5,16 @@
 ## Player-facing explanation
 
 - **Keep:** the specific job already supported by evidence.
+- **Your reading:** an invitation to identify what you saw, what changed during the year and what you would like the staff to explain. Record an answer only if actually given.
+- **Possibility:** an additional answer or useful strength worth exploring; no prescribed player type.
 - **Question:** what this packet is reviewing, without prejudging fault.
 - **Your assigned answer:** active-book rule and the assignment actually taught.
 - **Correction:** the supported change, or “cause undetermined” with the missing evidence.
 - **Your cue:** one concise instruction tied to that change.
-- **Explain it back:** the decision/communication question to answer when teaching is permitted.
-- **Next work:** lawful repeat, later changed presentation and what would support advancement.
+- **Discuss when permitted:** invite the player's explanation of the decision or communication; a promised take-home packet does not require a quiz or reply.
+- **Next work:** lawful exploration, any supported correction and a later changed presentation; state what could become clearer without preselecting the conclusion.
+
+Include representative ordinary good work and adaptations as well as difficult reps. Let the player suggest examples when permitted, without requiring them.
 
 ## Source and comparison table
 

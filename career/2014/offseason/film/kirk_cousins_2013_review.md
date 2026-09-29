@@ -10,6 +10,21 @@ Each pointer is zero-based within the named receipt’s `play_ledger`. Sequence 
 
 **Defaults for every event below:** cause **undetermined**; correct comparison **not yet established**; media **no asset supplied**; delivery **not recorded**; retention **not tested in 2014**. A source index is not a completed classified tape. Bates/Skalaski lead; Tice/Yarno handle protection; Drake and the relevant skill coach handle shared target assignments; Stone reviews his call.
 
+## Balanced season sample for KC-07
+
+The 57 adverse-event locators below answer a promised review obligation. They are not a representative assessment of the whole quarterback. Add ordinary operation, useful aggressive answers and adaptations with sufficient assignment evidence. These are source leads, not newly assembled clips or completed cause findings:
+
+| Source lead | Question to explore | Evidence limit |
+|---|---|---|
+| [OTAs](../../../2013/offseason/otas/output.md), May 13–15 and subsequent changed-picture work | Which communication/timing solutions became dependable, and how did he explain them? | Recorded practice facts; do not invent his explanation |
+| [Mandatory minicamp](../../../2013/offseason/mandatory_minicamp/output.md), June 12–13; [camp](../../../2013/offseason/training_camp/output.md), July 31–August 3 | Compare retained operation and responses to a difficult picture | Immediate and delayed observations remain distinct |
+| [Seattle](../../../2013/regular_season/week_03_jacksonville_at_seattle/output.md), last possession | How did he use the taught two-minute menu and surrounding jobs? | Successful outcome and recorded calls are not a complete read/technique reconstruction |
+| [Arizona](../../../2013/regular_season/week_11_arizona_at_jacksonville/output.md), ordinary possessions and staff observations | What looked more controlled after the difficult Tennessee game? | Do not convert one efficient game into a new talent tier |
+| [Wild Card](../../../2013/postseason/week_18_jacksonville_at_kansas_city/output.md), five-pass touchdown drive; [Divisional](../../../2013/postseason/week_19_jacksonville_at_tennessee/output.md), touchdown drive and subsequent possessions | What answers were available, which support changed and what did the staff fail to supply? | Contrast situations, not a highlight-only selection; no hidden coverage or cause invented |
+| Player-selected reps, if he offers them during permitted contact | What does he think he learned, and what would he now solve differently? | No selections, discussion or media exist until actually supplied/recorded |
+
+Reviewers must add exact clip/receipt locators and assignment sources when these packets are assembled. Keep unobserved and disputed causes open. His own reading and the coach's reading can differ; the next legal opportunity can help test both.
+
 ## Receipt sources
 
 | Week | Event ID | Canonical receipt |

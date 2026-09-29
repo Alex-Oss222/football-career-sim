@@ -8,6 +8,8 @@
 
 **Timing:** “Jan 31 promise” means the player’s source explicitly gives that old deadline; receipt remains unverified, not proven undelivered. “Source timing” preserves its different week/month/on-request/when-lawful language without inventing a new deadline. Review the full source and all its follow-ups, not just the first question below. The existing pre-program film/contact gate applies before distribution.
 
+Each queue item is an obligation, not the player's entire identity. Read the [61 living profiles](../player_development/roster_profiles.md) before selecting clips. Include useful strengths and emerging possibilities alongside the specific promised review; invite the player's perspective when permitted without inventing it.
+
 ## Quarterbacks
 
 **Owner:** Jeremy Bates; Charlie Skalaski assists; Tice on protection. Special-teams contributions use Stone while the vacancy remains.
@@ -15,7 +17,7 @@
 | Player | Packet question / next preparation | Original obligation | Preparation / historical receipt |
 |---|---|---|---|
 | Chad Henne (QB) | Tempo/substitution corrections, two-minute work and comparable supporting conditions; written backup evaluation. | [Source timing](../../../2013/exit_interviews/main_core/chad_henne.md) | Queued; receipt unverified |
-| Kirk Cousins (QB) | Retain operation; classify interceptions, sacks and both fumbles; paired changed-picture teaching and protection retests. [Individual plan](../player_development/kirk_cousins.md). | [Source timing](../../../2013/exit_interviews/main_core/kirk_cousins.md) | [Index prepared](kirk_cousins_2013_review.md); causes open; receipt unverified |
+| Kirk Cousins (QB) | Synthesize the full starting season, preserve command, explore his own reading and emerging answers; classify turnovers/sacks with shared staff context. [Individual plan](../player_development/kirk_cousins.md). | [Source timing](../../../2013/exit_interviews/main_core/kirk_cousins.md) | [Index prepared](kirk_cousins_2013_review.md); causes open; receipt unverified |
 | John Parker Wilson (QB) | Core retained; broader changed-picture operation and the requested practice/preseason review. | [Source timing](../../../2013/exit_interviews/summaries_offense.md) | Queued; receipt unverified |
 | Tyler Bray (QB) | Reduced-core cadence/feet retained; processing under changed looks; written expansion criteria if retained. | [Source timing](../../../2013/exit_interviews/summaries_practice_squad.md) | Queued; receipt unverified |
 

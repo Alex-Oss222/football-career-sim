@@ -233,7 +233,11 @@
     "career/2014/offseason/film/delivery_log.md",
     "career/2014/offseason/film/kirk_cousins_2013_review.md",
     "career/2014/offseason/film/packet_template.md",
-    "career/2014/offseason/film/player_queue.md"
+    "career/2014/offseason/film/player_queue.md",
+    "career/2014/offseason/player_development/roster_profiles.md",
+    "library/2014_full_calendar_verification.md",
+    "runtime/2014_engine_decisions.md",
+    "docs/pr_132_followup_review.md"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",

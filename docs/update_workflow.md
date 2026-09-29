@@ -72,3 +72,11 @@ Read [game readiness](../state/game_readiness.md) and run `python scripts/check_
 ## Individual training and film records
 
 For 2014, start at [the training index](../career/2014/offseason/README.md). A planning-only change may refine the session, packet and player progression without advancing state. When actual teaching occurs, write the phase output first and link its evidence from the individual record. When a packet is distributed, record the actual packet revision, recipient, date, lawful basis and source in [the delivery log](../career/2014/offseason/film/delivery_log.md), then update the queue pointer. Preparation, distribution, acknowledgment, comprehension and delayed retention are separate facts. Keep historical promises and unknown receipts honest. Any accompanying role, roster, staff, medical or time change also requires the normal atomic canon updates above.
+
+## Living player assessments and the annual calendar
+
+The [2014 calendar](../career/2014/calendar.md) owns annual checkpoints and information gates; exact branch fixtures require the league-wide schedule check at release. Do not replace the branch's Buffalo pairing with real-history Miami or silently put Buffalo in an occupied date slot.
+
+At actual phase/week handoff, update the relevant [living profile](../career/2014/offseason/player_development/roster_profiles.md) from the source output: observed strengths and adaptations, what changed or stayed the same, actual player perspective if offered, uncertainty and next opportunity. Preserve the previous evidence. Film preparation, distribution and learning remain separate records. A player's full season matters as experience without converting defective engine outcomes into talent.
+
+The [E1/E2 decision](../runtime/2014_engine_decisions.md) adopts policy only. Implementation, calibration, evidence coverage and a new release must precede 2014 games. A documentation validation pass does not close an engine defect.

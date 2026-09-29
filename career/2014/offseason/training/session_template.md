@@ -10,7 +10,9 @@ Copy into the applicable phase's planning material only when a session is being 
 | Legal work allowance | Link calendar/readiness rule; permissible speed, contact and coach involvement |
 | Assigned active-book material | Concept/job and source; distinguish assigned from available-to-read |
 | Retained strength | Evidence source and context |
-| Next question | One defined unresolved job; no invented defect |
+| Next question / possibility | A meaningful football problem or additional answer to explore; no invented defect or fixed growth destination |
+| Player perspective | Existing sourced view or invitation when permitted; no prewritten response |
+| Alternative explanation | What else could explain the observed behavior, including instruction and support |
 | Question / correct example | Packet ID and play locators; missing media or comparison explicitly stated |
 | Teaching cue and explanation | Player's job, available answers and why |
 | First presentation | Lawful starting situation; conditions held constant |
@@ -22,3 +24,5 @@ Copy into the applicable phase's planning material only when a session is being 
 | Result owner | The phase's actual output, created only when work occurs |
 
 After execution, the **output** records date, participants, taught job, actual evidence, cause confidence, correction, immediate repeat, later retest still due and any authorized decision. Link it from the player's evidence note and film log. A changed script is not evidence of a changed result.
+
+At handoff, state what this session contributes to the current working profile, including new strengths, no change or unresolved evidence. A correct result, delivered packet or completed session is not an automatic ability upgrade.
