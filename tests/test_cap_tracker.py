@@ -32,7 +32,7 @@ class CapTrackerTests(unittest.TestCase):
         self.player('Eugene Monroe')['years']['2014']['cap']+=1
         self.assertEqual(totals(self.data['players'], ['2014']), before)
         self.player('Eugene Monroe')['years']['2014']['cap']-=1
-        self.assertEqual(totals(self.data['players'], ['2014'], status='tender'), [11654000])
+        self.assertEqual(totals(self.data['players'], ['2014'], status='tender'), [14720000])
         self.assertEqual(self.player('Justin Blackmon')['years']['2016']['status'], 'option_unexercised')
         self.assertEqual(self.player('Lane Johnson')['years']['2017']['status'], 'option_unexercised')
         self.assertEqual(totals(self.data['players'], ['2017']), [0])
@@ -58,7 +58,7 @@ class CapTrackerTests(unittest.TestCase):
         validate(self.data)
         self.assertEqual(totals(self.data['players'], ['2014'])[0],
                          before + former['years']['2014']['cap'])
-        former['departure_date'] = '2014-03-01'
+        former['departure_date'] = '2014-03-12'
         with self.assertRaisesRegex(ValueError, 'future departure'):
             validate(self.data)
 
@@ -100,7 +100,7 @@ class CapTrackerTests(unittest.TestCase):
 
     def test_every_signed_2014_deal_is_priced_and_estimates_stay_separate(self):
         current=[p for p in self.data['players'] if p['control'] in {'signed','future'}]
-        self.assertEqual(len(current),44)
+        self.assertEqual(len(current),46)
         self.assertTrue(all(p['years']['2014']['status'] in {'known','approximate'} for p in current))
         before=totals(current,['2014'])
         row=self.player('Montell Owens')['years']['2014']
@@ -148,8 +148,8 @@ class CapTrackerTests(unittest.TestCase):
         self.assertEqual(cap_cell(self.player('Lane Johnson')['years']['2017']), '')
         self.assertEqual(cap_cell(self.player('Chad Henne')['years']['2014']), '')
         self.assertEqual([working_total(self.data['players'],str(y)) for y in [2014,2015,2016,2017]],
-                         [105071821,74805137,19211292,None])
-        self.assertIn('$105,123,496',main)  # Old Bray bonus is included once.
+                         [114192821,78905137,28711292,None])
+        self.assertIn('$114,244,496',main)  # Old Bray bonus is included once.
 
     def test_slot_guarantees_and_release_exposure_reconcile(self):
         lane=self.player('Lane Johnson');kelce=self.player('Travis Kelce')

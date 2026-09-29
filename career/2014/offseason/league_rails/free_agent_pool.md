@@ -1,6 +1,6 @@
 # 2014 free-agent pool
 
-**Branch date:** February 2, 2014; status changes through March 3, 2014 are recorded in the sections below the verified targets (Entries 89 and 92). **Research checked:** September 28, 2026. The nine players on the February 2 target board have verified pending free-agent classifications below. The rest of this file remains an unverified contract-candidate inventory, not a complete or executable free-agent pool. Jacksonville's own pending free agents belong in `career/2014/offseason/contract_status_register.md`.
+**Branch date:** February 2, 2014; status changes through March 11, 2014 (4 p.m. ET) are recorded in the sections below the verified targets (Entries 89, 92, 93 and 94). **Research checked:** September 28, 2026. The nine players on the February 2 target board have verified pending free-agent classifications below. The rest of this file remains an unverified contract-candidate inventory, not a complete or executable free-agent pool. Jacksonville's own pending free agents belong in `career/2014/offseason/contract_status_register.md`.
 
 ## Verified February 2 targets
 
@@ -88,6 +88,72 @@ Applied at the March 3 checkpoint from the dated rows in the club pages, where e
 | Brian Orakpo | Washington Redskins | OLB | Non-exclusive franchise tag, March 3 | Listed below as a generated candidate; no longer on the open market | Confirmed |
 | Alex Mack | Cleveland Browns | C | Transition tag, March 3 | Listed below as a generated candidate; Cleveland may match any offer sheet | Confirmed |
 | Jason Worilds | Pittsburgh Steelers | OLB | Transition tag, March 3 | Listed below as a generated candidate; Pittsburgh may match any offer sheet | Confirmed |
+
+**Entry 93 closure:** the March 1 to 3 re-signing gap was swept, and these moves were verified and applied at the March 3 checkpoint: Bernard Pollard (Tennessee Titans, S) re-signed March 3, off the market; Leroy Harris (Detroit Lions, G/C) released March 3, now a free agent; Zach Potter (TE) signed by the Houston Texans February 26, off the market; Khalif Barnes (Oakland Raiders, T) re-signed February 28, off the market; and Donald Butler (San Diego Chargers, ILB) re-signed February 28 (day single source), off the market. They replace the Entry 89 pending-verification note on Barnes and Potter. Pollard and Butler are listed below as generated candidates.
+
+### Status changes on the rails, March 4 to 11, 2014 (Entry 94)
+
+Applied at the March 11 checkpoint (4 p.m. ET, the league-year opening) from the dated rows in the club pages, where each source is cited. Only moves that change open-market availability are listed: re-signings and extensions take a player off the market, releases put him on it, and tenders make him a tendered RFA or ERFA. March 11 moves whose time of day is not established are treated as before the checkpoint. The sweep was bounded; see the coverage note in each club page.
+
+| Player | Club (2013) | Pos | Real move and date | Effect in this pool | Status label |
+|---|---|---|---|---|---|
+| Corey Peters | Atlanta Falcons | DT | Re-signed, March 4 | Listed below as a generated candidate; off the market | Confirmed |
+| Troy Polamalu | Pittsburgh Steelers | S | Extension, March 5 | Listed below as a generated candidate; extended, off the market | Move Confirmed; day Single source |
+| Heath Miller | Pittsburgh Steelers | TE | Extension, March 5 | Listed below as a generated candidate; extended, off the market | Move Confirmed; day Single source |
+| Larry Foote | Pittsburgh Steelers | LB | Released, March 5 | Not a generated candidate; a free agent from his release date, subject to waiver rules | Confirmed |
+| Levi Brown | Pittsburgh Steelers | T | Released, March 5 | Not a generated candidate; a free agent from his release date, subject to waiver rules | Confirmed |
+| Curtis Brown | Pittsburgh Steelers | CB | Released, March 5 | Not a generated candidate; a free agent from his release date, subject to waiver rules | Confirmed |
+| Jeremiah Ratliff | Chicago Bears | DT | Re-signed (agreement reported March 5) | Not a generated candidate; off the market | Move Confirmed; day Single source |
+| Derek Cox | San Diego Chargers | CB | Released, March 4 | Not a generated candidate; a free agent from his release date, subject to waiver rules | Move Confirmed; day Single source |
+| Champ Bailey | Denver Broncos | CB | Released, March 6 | Not a generated candidate; a free agent from his release date, subject to waiver rules | Confirmed |
+| Samson Satele | Indianapolis Colts | C | Released, March 6 | Not a generated candidate; a free agent from his release date, subject to waiver rules | Confirmed |
+| Cam Johnson | Indianapolis Colts | OLB | ERFA tender, March 6 | Listed below as a generated candidate; a tendered ERFA, not free to negotiate with other clubs | Move Confirmed; day Single source |
+| Josh Gordy | Indianapolis Colts | CB | RFA tender, March 6 | Not a generated candidate; a tendered RFA, Indianapolis may match any offer sheet (tender level not recorded) | Move Confirmed; day Single source |
+| Joe Reitz | Indianapolis Colts | G | RFA tender, March 6 | Listed below as a generated candidate; a tendered RFA, Indianapolis may match any offer sheet (tender level not recorded) | Move Confirmed; day Single source |
+| Letroy Guion | Minnesota Vikings | DT | Released, March 6 | Not a generated candidate; a free agent from his release date, subject to waiver rules | Confirmed |
+| Greg Childs | Minnesota Vikings | WR | Released, March 6 | Not a generated candidate; a free agent from his release date, subject to waiver rules | Confirmed |
+| Brandon Marshall | Denver Broncos | LB | RFA tender, March 7 | Not a generated candidate; a tendered RFA, Denver may match any offer sheet (tender level not recorded) | Single source |
+| Mitch Unrein | Denver Broncos | DT | RFA tender, March 7 | Listed below as a generated candidate; a tendered RFA, Denver may match any offer sheet (tender level not recorded) | Single source |
+| Phil Costa | Dallas Cowboys | C | Released, March 7 | Not a generated candidate; a free agent from his release date, subject to waiver rules | Confirmed |
+| Lance Moore | New Orleans Saints | WR | Released, March 7 | Not a generated candidate; a free agent from his release date, subject to waiver rules | Confirmed |
+| Jeff Cumberland | New York Jets | TE | Re-signed, March 7 | Not a generated candidate; off the market | Move Confirmed; day Single source |
+| Sam Shields | Green Bay Packers | CB | Re-signed, March 8 | Listed below as a generated candidate; off the market | Confirmed |
+| Antonio Cromartie | New York Jets | CB | Released, March 9 | Not a generated candidate; a free agent from his release date, subject to waiver rules | Move Confirmed; day Single source |
+| Nate Collins | Chicago Bears | DT | Re-signed, March 9 | Not a generated candidate; off the market | Confirmed |
+| Jordan Palmer | Chicago Bears | QB | Re-signed, March 9 | Not a generated candidate; off the market | Confirmed |
+| Everson Griffen | Minnesota Vikings | DE | Re-signed (agreement reported March 9) | Listed below as a generated candidate; off the market | Move Confirmed; day Single source |
+| Santonio Holmes | New York Jets | WR | Released, March 10 | Not a generated candidate; a free agent from his release date, subject to waiver rules | Confirmed |
+| Garrett Graham | Houston Texans | TE | Re-signed, March 10 | Listed below as a generated candidate; off the market | Single source |
+| Reggie Walker | San Diego Chargers | LB | Re-signed, March 10 | Not a generated candidate; off the market | Single source |
+| Jay Feely | Arizona Cardinals | K | Re-signed, March 10 | Not a generated candidate; off the market | Move Confirmed; day Single source |
+| Frostee Rucker | Arizona Cardinals | DE | Re-signed, March 10 | Listed below as a generated candidate; off the market | Move Confirmed; day Single source |
+| Michael Bennett | Seattle Seahawks | DE | Re-signed, March 10 | Listed below as a generated candidate; off the market | Confirmed |
+| Cory Grissom | New England Patriots | DL | Released, March 10 | Not a generated candidate; a free agent from his release date, subject to waiver rules | Confirmed |
+| Sam McGuffie | New England Patriots | RB | Released, March 10 | Not a generated candidate; a free agent from his release date, subject to waiver rules | Confirmed |
+| T.J. Moe | New England Patriots | WR | Released, March 10 | Not a generated candidate; a free agent from his release date, subject to waiver rules | Confirmed |
+| Taylor Reed | New England Patriots | LB | Released, March 10 | Not a generated candidate; a free agent from his release date, subject to waiver rules | Confirmed |
+| Quentin Hines | New England Patriots | RB | Released from injured reserve, March 10 | Not a generated candidate; a free agent from his release date, subject to waiver rules | Move Confirmed; day Single source |
+| Elvis Fisher | New England Patriots | OL | Released from injured reserve, March 10 | Not a generated candidate; a free agent from his release date, subject to waiver rules | Move Confirmed; day Single source |
+| Brice Schwab | New England Patriots | OT | Released from injured reserve, March 10 | Not a generated candidate; a free agent from his release date, subject to waiver rules | Move Confirmed; day Single source |
+| Kevin Kolb | Buffalo Bills | QB | Released (failed physical), March 11, before the checkpoint | Not a generated candidate; a free agent from his release date, subject to waiver rules | Confirmed |
+| Kyle Cook | Cincinnati Bengals | C | Released, March 11, before the checkpoint | Not a generated candidate; a free agent from his release date, subject to waiver rules | Confirmed |
+| Brandon Tate | Cincinnati Bengals | WR | Re-signed, March 11, before the checkpoint | Not a generated candidate; off the market | Confirmed |
+| Owen Daniels | Houston Texans | TE | Released, March 11, before the checkpoint | Not a generated candidate; a free agent from his release date, subject to waiver rules | Confirmed |
+| Vontae Davis | Indianapolis Colts | CB | Re-signed, March 11, before the checkpoint | Listed below as a generated candidate; off the market | Confirmed |
+| Leon Washington | Tennessee Titans | RB | Re-signed, March 11, before the checkpoint | Not a generated candidate; off the market | Move Confirmed; day Single source |
+| Jake Ballard | Arizona Cardinals | TE | Re-signed, March 11, before the checkpoint | Not a generated candidate; off the market | Move Confirmed; day Single source |
+| Thomas DeCoud | Atlanta Falcons | S | Released, March 11, before the checkpoint | Not a generated candidate; a free agent from his release date, subject to waiver rules | Confirmed |
+| D.J. Williams | Chicago Bears | LB | Re-signed, March 11, before the checkpoint | Listed below as a generated candidate (the Chicago linebacker, not the New England tight end); off the market | Move Confirmed; day Single source |
+| Julius Peppers | Chicago Bears | DE | Released, March 11, before the checkpoint | Not a generated candidate; a free agent from his release date, subject to waiver rules | Confirmed |
+| DeMarcus Ware | Dallas Cowboys | OLB | Released, March 11, before the checkpoint | Not a generated candidate; a free agent from his release date, subject to waiver rules | Confirmed |
+| Joique Bell | Detroit Lions | RB | Signed RFA tender plus extension, March 11, before 4 p.m. | Listed below as a generated candidate; extended, off the market | Confirmed |
+| Patrick Chung | Philadelphia Eagles | S | Released, March 11, before the checkpoint | Listed below as a generated candidate; released, a free agent from his release date, subject to waiver rules | Confirmed |
+| Daniel Te'o-Nesheim | Tampa Bay Buccaneers | DE | Signed by Jacksonville at 4 p.m. March 11 after the market draw (Entry 94) | A verified target; off the market, now Jacksonville-controlled | Branch record |
+| Alterraun Verner | Tennessee Titans | CB | Jacksonville lost the market draw at 4 p.m. March 11; signs with Tampa Bay on his real terms, agreed that evening | A verified target; an unrestricted free agent at the 4 p.m. checkpoint; his Tampa Bay signing applies when a later turn passes it | Confirmed |
+| Aqib Talib | New England Patriots | CB | Jacksonville lost the market draw at 4 p.m. March 11; signs with Denver on his real terms, agreed late that evening | A verified target; an unrestricted free agent at the 4 p.m. checkpoint; his Denver signing applies when a later turn passes it | Confirmed |
+| Chad Henne, Sen'Derrick Marks, Maurice Jones-Drew, C.J. Wilson, Alan Ball, Brent Grimes; Allen Reisner, Kevin Rutland | Jacksonville Jaguars (branch) | QB, DT, RB, DE, CB, CB; TE, CB | Contracts expired at the 4 p.m. league-year opening, March 11; Reisner and Rutland were not tendered | Not generated candidates (Jacksonville's register owns them); all eight are unrestricted free agents from 4 p.m. Grimes is unplaced (method section 3) | Branch record, ledger Entry 94 |
+
+**Dated at or after 4 p.m., not yet applied:** the post-June 1 releases of Daryn Colledge (Arizona), Miles Austin (Dallas), LaMarr Woodley (Pittsburgh) and David Baas (New York Giants, single source), and Nick Folk's multiyear New York Jets deal, which may fall after 4 p.m. (he stays off the open market under his franchise tag). Each applies when a later turn passes it.
 
 <!-- BEGIN GENERATED LEAGUE DATABASE -->
 ## Generated pending-free-agent candidates

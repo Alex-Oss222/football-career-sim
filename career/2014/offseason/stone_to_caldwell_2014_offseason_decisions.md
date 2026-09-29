@@ -371,3 +371,24 @@ Line plan consequence: with Adams first at 26, the drafted offensive linemen are
 | If Arizona declines | No deal; pick 26 stays Adams, then Bitonio, then Van Noy; Alualu returns to package E (Miami, Houston, San Diego for a 2015 sixth) |
 
 Package E is folded into package I while package I is live. Nothing executes before the league year opens on March 11 at 4 p.m. ET; Arizona's answer is resolved by the simulation at that time.
+
+## September 29, 2026 amendment: league-year draws and package I revised
+
+**User instructions, at the March 3, 2014 branch checkpoint, before 4 p.m. ET March 11.** These record plans and resolution rules only; the results belong to the transaction records.
+
+**Package I revised.** This supersedes the package I terms above.
+
+| Term | Instruction |
+|---|---|
+| Jacksonville sends | Its original 2015 first-round pick, its original 2015 fourth-round pick and its original 2016 fifth-round pick, plus Tyson Alualu only if Sen'Derrick Marks has been re-signed |
+| Jacksonville receives | Arizona's original 2014 second-round pick, No. 38, to select Davante Adams |
+| If Arizona declines | No deal; pick 26 stays Adams, then Bitonio, then Van Noy; Alualu returns to package E |
+| If it closes | Update the cap tracker and the depth chart; pick 26 becomes Bitonio, then Van Noy |
+
+**How Arizona answers.** Jimmy Johnson chart. A future pick counts as the middle pick of the round one later for each year out: the 2015 first as a mid-second (No. 48), the 2015 fourth as a mid-fifth, the 2016 fifth as a mid-seventh. A veteran counts zero points. The ratio of points sent to points asked goes through the free-agent chance curve (0 below 0.80, 0.50 at parity, 0.90 at most), with one private draw. The chart values are confirmed from a source before the draw. Other clubs' answers to packages F1 and G are left open.
+
+**Own free agents re-signed by the real Jaguars.** Marks (real extension December 27, 2013) and Henne (real re-signing March 7, 2014) each get one draw against that real Jaguars contract: Henne at March 7, Marks at 4 p.m. March 11. A player Jacksonville loses becomes an unplaced free agent at 4 p.m. March 11.
+
+**No rival contract.** A target with no rival real contract by the moment Jacksonville's offer can first be signed decides at 4 p.m. March 11 at the 0.90 ceiling. This covers Te'o-Nesheim (no 2014 contract) and Cain (unsigned until September 1, 2014).
+
+**Later draws held.** Tate, Hawkins, Edelman and Jared Allen are drawn at their real dates after March 11. The offers go in when talks open at noon on March 8.

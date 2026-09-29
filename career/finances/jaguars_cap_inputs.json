@@ -1,7 +1,7 @@
 {
   "team": "Jacksonville Jaguars",
-  "as_of": "2014-02-28",
-  "checkpoint": "Entry 91",
+  "as_of": "2014-03-11",
+  "checkpoint": "Entry 94",
   "prepared": "2026-09-29",
   "start_year": 2014,
   "end_year": 2023,
@@ -3869,7 +3869,7 @@
       "date_of_birth": "1977-03-23",
       "age_at_checkpoint": 36,
       "control": "retired",
-      "status": "Retired (Reserve/Retired, Entry 79); contract expires March 11, 2014",
+      "status": "Retired; contract expired at 4 p.m. March 11, 2014 (Entries 79 and 94)",
       "contract_type": "Veteran (branch re-signing)",
       "signed": "March 12, 2013",
       "term": "1 / 2013",
@@ -3880,7 +3880,7 @@
       "dead_money_2014": "Not applicable",
       "remaining_guarantees": null,
       "availability": "Retired (announced December 18, 2013, effective at the end of the 2013 season; Entry 79)",
-      "plan": "No new transaction decision in this tracker",
+      "plan": "Retired; contract expired at 4 p.m. March 11, 2014 (Entries 79 and 94)",
       "source_note": "Branch record (signings section 2)",
       "sources": [
         "career/2014/offseason/contract_table.md",
@@ -3959,7 +3959,10 @@
           "proration": null,
           "cash": null
         }
-      }
+      },
+      "former_player": true,
+      "departure_date": "2014-03-11",
+      "departure_source": "career/2013/ledger.md"
     },
     {
       "name": "Tyler Bray",
@@ -3967,8 +3970,8 @@
       "roster_position": "QB",
       "date_of_birth": "1991-12-27",
       "age_at_checkpoint": 22,
-      "control": "future",
-      "status": "Futures",
+      "control": "signed",
+      "status": "Under contract (reserve/future contract effective March 11, 2014)",
       "contract_type": "Reserve/future",
       "signed": "February 3, 2014",
       "term": "2 / 2015 (simulation reconstruction)",
@@ -3978,7 +3981,7 @@
       "guarantees": "$0",
       "dead_money_2014": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
       "remaining_guarantees": 0,
-      "availability": "Future contract not yet effective",
+      "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
       "source_note": "Branch record (Entry 85); minimum Confirmed Entry 91 completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.",
       "sources": [
@@ -4074,8 +4077,8 @@
       "roster_position": "RB",
       "date_of_birth": "1986-09-18",
       "age_at_checkpoint": 27,
-      "control": "future",
-      "status": "Futures",
+      "control": "signed",
+      "status": "Under contract (reserve/future contract effective March 11, 2014)",
       "contract_type": "Reserve/future",
       "signed": "February 3, 2014",
       "term": "2 / 2015 (simulation reconstruction)",
@@ -4085,7 +4088,7 @@
       "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
       "dead_money_2014": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
       "remaining_guarantees": 0,
-      "availability": "Future contract not yet effective",
+      "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
       "source_note": "2011 injured reserve does not count under Article 26; five active games in December 2012 do. Branch 2013 practice squad adds none. Entry 91 completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.",
       "sources": [
@@ -4183,8 +4186,8 @@
       "roster_position": "WR",
       "date_of_birth": "1990-02-06",
       "age_at_checkpoint": 24,
-      "control": "future",
-      "status": "Futures",
+      "control": "signed",
+      "status": "Under contract (reserve/future contract effective March 11, 2014)",
       "contract_type": "Reserve/future",
       "signed": "February 3, 2014",
       "term": "2 / 2015 (simulation reconstruction)",
@@ -4194,7 +4197,7 @@
       "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
       "dead_money_2014": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
       "remaining_guarantees": 0,
-      "availability": "Future contract not yet effective",
+      "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
       "source_note": "Promoted December 24, 2012 for the finale only; 2013 branch practice squad adds no credited season. Entry 91 completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.",
       "sources": [
@@ -4292,8 +4295,8 @@
       "roster_position": "DT",
       "date_of_birth": "1990-04-09",
       "age_at_checkpoint": 23,
-      "control": "future",
-      "status": "Futures",
+      "control": "signed",
+      "status": "Under contract (reserve/future contract effective March 11, 2014)",
       "contract_type": "Reserve/future",
       "signed": "February 3, 2014",
       "term": "2 / 2015 (simulation reconstruction)",
@@ -4303,7 +4306,7 @@
       "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
       "dead_money_2014": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
       "remaining_guarantees": 0,
-      "availability": "Future contract not yet effective",
+      "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
       "source_note": "Kansas City practice squad for the first 15 games of 2012; Jacksonville signed him December 28 for the finale. Branch 2013 practice squad adds none. Entry 91 completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.",
       "sources": [
@@ -4401,8 +4404,8 @@
       "roster_position": "DT",
       "date_of_birth": "1988-06-09",
       "age_at_checkpoint": 25,
-      "control": "future",
-      "status": "Futures",
+      "control": "signed",
+      "status": "Under contract (reserve/future contract effective March 11, 2014)",
       "contract_type": "Reserve/future (market draw won)",
       "signed": "February 5, 2014",
       "term": "2 / 2015 (simulation reconstruction)",
@@ -4412,7 +4415,7 @@
       "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
       "dead_money_2014": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
       "remaining_guarantees": 0,
-      "availability": "Future contract not yet effective",
+      "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
       "source_note": "2010 and 2011 injured reserve do not count for Article 26; eight games in 2012 supply one credited season. Branch 2013 practice squad adds none. Entry 91 completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.",
       "sources": [
@@ -4510,8 +4513,8 @@
       "roster_position": "S",
       "date_of_birth": "1990-08-09",
       "age_at_checkpoint": 23,
-      "control": "future",
-      "status": "Futures",
+      "control": "signed",
+      "status": "Under contract (reserve/future contract effective March 11, 2014)",
       "contract_type": "Reserve/future",
       "signed": "February 3, 2014",
       "term": "2 / 2015 (simulation reconstruction)",
@@ -4521,7 +4524,7 @@
       "guarantees": "No remaining guaranteed base salary established in the recovered schedule",
       "dead_money_2014": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
       "remaining_guarantees": 0,
-      "availability": "Future contract not yet effective",
+      "availability": "No communicated restriction",
       "plan": "No new transaction decision in this tracker",
       "source_note": "2012 Jacksonville active-roster service supplies one credited season; branch 2013 practice squad adds none. Entry 91 completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.",
       "sources": [
@@ -4620,7 +4623,7 @@
       "date_of_birth": "1985-07-02",
       "age_at_checkpoint": 28,
       "control": "pending",
-      "status": "Pending UFA",
+      "status": "Unrestricted free agent at 4 p.m. March 11, 2014 after Jacksonville lost the March 7 re-signing draw (Entry 94)",
       "contract_type": "Veteran, signed March 14, 2012",
       "signed": "See expiring-contract description",
       "term": "2013",
@@ -4631,7 +4634,7 @@
       "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
-      "plan": "Re-sign as insurance; negotiating window from March 8, noon",
+      "plan": "Unrestricted free agent at 4 p.m. March 11, 2014 after Jacksonville lost the March 7 re-signing draw (Entry 94)",
       "source_note": "Confirmed (register); 2013 OTC row",
       "sources": [
         "career/2014/offseason/contract_table.md",
@@ -4710,7 +4713,10 @@
           "proration": null,
           "cash": null
         }
-      }
+      },
+      "former_player": true,
+      "departure_date": "2014-03-11",
+      "departure_source": "career/2013/ledger.md"
     },
     {
       "name": "Maurice Jones-Drew",
@@ -4719,7 +4725,7 @@
       "date_of_birth": "1985-03-23",
       "age_at_checkpoint": 28,
       "control": "pending",
-      "status": "Pending UFA",
+      "status": "Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's offer stands, draw held to his real date (Entry 94)",
       "contract_type": "Veteran extension, 2009",
       "signed": "See expiring-contract description",
       "term": "2013",
@@ -4730,7 +4736,7 @@
       "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
-      "plan": "Re-sign short",
+      "plan": "Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's offer stands, draw held to his real date (Entry 94)",
       "source_note": "Final year Confirmed; 2013 archive row",
       "sources": [
         "career/2014/offseason/contract_table.md",
@@ -4809,7 +4815,10 @@
           "proration": null,
           "cash": null
         }
-      }
+      },
+      "former_player": true,
+      "departure_date": "2014-03-11",
+      "departure_source": "career/2013/ledger.md"
     },
     {
       "name": "Eugene Monroe",
@@ -4818,7 +4827,7 @@
       "date_of_birth": "1987-04-18",
       "age_at_checkpoint": 26,
       "control": "tender",
-      "status": "**Franchise player (non-exclusive)**, designated February 18, 2014; tender not yet signed",
+      "status": "**Franchise player (non-exclusive)**, designated February 18, 2014; tender not yet signed; long-term draw lost March 11",
       "contract_type": "Rookie, 2009 first round (pick #8)",
       "signed": "See expiring-contract description",
       "term": "1 / 2014 (unsigned franchise tender)",
@@ -4829,7 +4838,7 @@
       "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
       "remaining_guarantees": 0,
       "availability": "No communicated restriction",
-      "plan": "Long-term talks continue on the memo's terms. 2014 tender: **$11,654,000**, the offensive-line franchise value, official February 28 (library section 2b, Confirmed); 120 percent of his recorded 2013 base of $3,800,000 is $4,560,000, and 120 percent of his recorded 2013 cap number of $5,747,500 is $6,897,000. Both comparison amounts are lower, so the position figure applies ([check](../2014/offseason/free_agency/signings.md#tags-and-tenders)). It counts against the 2014 cap from March 11. Offer sheets from other clubs possible from March 11 (two first-round picks if Jacksonville declines to match). Re-signing draw at his real signing date (March 11) under rails method section 4; if lost, he plays 2014 on the tag",
+      "plan": "Jacksonville lost the long-term re-signing draw on March 11 (Entry 94; his real Baltimore re-signing does not apply), so he plays 2014 on the non-exclusive franchise tender, **$11,654,000**, the offensive-line value, official February 28. The tender is unsigned; it counts against the 2014 cap from March 11. Another club may sign him to an offer sheet (two first-round picks if Jacksonville declines to match).",
       "source_note": "Branch record (Entries 87 and 89; tags and tenders); amount Confirmed (library section 2b); the prior-year check rests on an unre-verified 2013 transcription",
       "sources": [
         "career/2014/offseason/contract_table.md",
@@ -4923,7 +4932,7 @@
       "date_of_birth": "1987-02-23",
       "age_at_checkpoint": 27,
       "control": "pending",
-      "status": "Pending UFA",
+      "status": "Unrestricted free agent at 4 p.m. March 11, 2014 after Jacksonville lost the re-signing draw (Entry 94)",
       "contract_type": "Veteran (branch signing), March 12, 2013",
       "signed": "See expiring-contract description",
       "term": "2013",
@@ -4934,7 +4943,7 @@
       "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
-      "plan": "Re-sign. No tag is available (Jacksonville's one designation went to Monroe on February 18)",
+      "plan": "Unrestricted free agent at 4 p.m. March 11, 2014 after Jacksonville lost the re-signing draw (Entry 94)",
       "source_note": "Branch record",
       "sources": [
         "career/2014/offseason/contract_table.md",
@@ -5013,7 +5022,10 @@
           "proration": null,
           "cash": null
         }
-      }
+      },
+      "former_player": true,
+      "departure_date": "2014-03-11",
+      "departure_source": "career/2013/ledger.md"
     },
     {
       "name": "C.J. Wilson",
@@ -5022,7 +5034,7 @@
       "date_of_birth": "1987-03-30",
       "age_at_checkpoint": 26,
       "control": "pending",
-      "status": "Pending UFA",
+      "status": "Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's minimum offer stands, draw held to his real date (Entry 94)",
       "contract_type": "Rookie (Green Bay, 2010 seventh round), acquired by trade",
       "signed": "See expiring-contract description",
       "term": "2013",
@@ -5033,7 +5045,7 @@
       "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
-      "plan": "Minimum with no guarantee, or let go",
+      "plan": "Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's minimum offer stands, draw held to his real date (Entry 94)",
       "source_note": "Branch record (trade); final year Corrected (register)",
       "sources": [
         "career/2014/offseason/contract_table.md",
@@ -5112,7 +5124,10 @@
           "proration": null,
           "cash": null
         }
-      }
+      },
+      "former_player": true,
+      "departure_date": "2014-03-11",
+      "departure_source": "career/2013/ledger.md"
     },
     {
       "name": "Alan Ball",
@@ -5121,7 +5136,7 @@
       "date_of_birth": "1985-03-29",
       "age_at_checkpoint": 28,
       "control": "pending",
-      "status": "Pending UFA",
+      "status": "Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's one-year offer stands, resolution rule open (Entry 94)",
       "contract_type": "Veteran (branch signing), March 12, 2013",
       "signed": "See expiring-contract description",
       "term": "2013",
@@ -5132,7 +5147,7 @@
       "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
-      "plan": "One-year competition deal",
+      "plan": "Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's one-year offer stands, resolution rule open (Entry 94)",
       "source_note": "Branch record",
       "sources": [
         "career/2014/offseason/contract_table.md",
@@ -5211,7 +5226,10 @@
           "proration": null,
           "cash": null
         }
-      }
+      },
+      "former_player": true,
+      "departure_date": "2014-03-11",
+      "departure_source": "career/2013/ledger.md"
     },
     {
       "name": "Brent Grimes",
@@ -5220,7 +5238,7 @@
       "date_of_birth": "1983-07-19",
       "age_at_checkpoint": 30,
       "control": "pending",
-      "status": "Pending UFA",
+      "status": "Unrestricted free agent at 4 p.m. March 11, 2014; the corner contingency makes him Jacksonville's fallback, resolution rule open (Entry 94)",
       "contract_type": "Veteran (branch signing), March 12, 2013, fully guaranteed",
       "signed": "See expiring-contract description",
       "term": "2013",
@@ -5231,7 +5249,7 @@
       "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
-      "plan": "Fallback if a primary corner target is lost; otherwise he tests the market",
+      "plan": "Unrestricted free agent at 4 p.m. March 11, 2014; the corner contingency makes him Jacksonville's fallback, resolution rule open (Entry 94)",
       "source_note": "Branch record",
       "sources": [
         "career/2014/offseason/contract_table.md",
@@ -5310,7 +5328,10 @@
           "proration": null,
           "cash": null
         }
-      }
+      },
+      "former_player": true,
+      "departure_date": "2014-03-11",
+      "departure_source": "career/2013/ledger.md"
     },
     {
       "name": "Jeremy Cain",
@@ -5318,33 +5339,37 @@
       "roster_position": "LS",
       "date_of_birth": "1980-03-24",
       "age_at_checkpoint": 33,
-      "control": "pending",
-      "status": "Pending UFA",
-      "contract_type": "Veteran, February 2011",
-      "signed": "See expiring-contract description",
-      "term": "2013",
-      "contract_ends": 2013,
-      "value": "Disputed: $2.45M or $3.0M (3 years)",
-      "bonus_terms": "Not established for a new contract",
-      "guarantees": "No new signed 2014 guarantee established",
-      "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
-      "remaining_guarantees": null,
+      "control": "signed",
+      "status": "Under contract",
+      "contract_type": "Veteran minimum (branch re-signing)",
+      "signed": "March 11, 2014 (4 p.m. ET)",
+      "term": "1 / 2014",
+      "contract_ends": 2014,
+      "value": "$855,000",
+      "bonus_terms": "$0; $0; 0",
+      "guarantees": "$0",
+      "dead_money_2014": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
+      "remaining_guarantees": 0,
       "availability": "No communicated restriction",
-      "plan": "One-year minimum offer is Caldwell's to make; outcome resolved at Cain's decision date under the rails",
-      "source_note": "Expiry Confirmed by length; value Unverified (Entry 86)",
+      "plan": "No new transaction decision in this tracker",
+      "source_note": "Branch record (Entry 94, uncontested market draw). $855,000 is the 2014 minimum for seven to nine credited seasons, inferred from Chicago's September 2014 figure (single source). Counted in full; the Article 26 minimum-salary benefit (a $570,000 charge) is not applied because his eligibility is unverified",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "career/2014/offseason/free_agency/signings.md",
+        "career/2014/offseason/league_year_method.json"
       ],
-      "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+      "credited_seasons": "Seven to nine (inferred; unverified)",
       "accrued_seasons": "Through 2012: 4+ (entered 2004; Jacksonville long snapper through 2012). 2013: Accrues in branch (on 53 for 16 games); at least 5 accrued",
       "years": {
         "2014": {
-          "status": "not_signed",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 855000,
+          "base": 855000,
+          "proration": 0,
+          "cash": 855000,
+          "guaranteed_base": 0,
+          "basis": "Branch one-year minimum, Entry 94"
         },
         "2015": {
           "status": "not_committed",
@@ -5409,7 +5434,8 @@
           "proration": null,
           "cash": null
         }
-      }
+      },
+      "schedule_basis": "Executed branch terms (Entry 94)"
     },
     {
       "name": "Cameron Bradfield",
@@ -5417,33 +5443,36 @@
       "roster_position": "OT",
       "date_of_birth": "1987-09-14",
       "age_at_checkpoint": 26,
-      "control": "pending",
-      "status": "Pending RFA",
+      "control": "tender",
+      "status": "Lowest (right of first refusal) RFA tender, made by 4 p.m. March 11, 2014 (Entry 94); unsigned. No draft-pick compensation; Jacksonville may match any offer sheet",
       "contract_type": "UDFA, 2011 (3 years)",
       "signed": "See expiring-contract description",
-      "term": "2013",
-      "contract_ends": 2013,
-      "value": "Unresolved",
+      "term": "1 / 2014 (unsigned tender)",
+      "contract_ends": 2014,
+      "value": "$1,431,000 tender",
       "bonus_terms": "Not established for a new contract",
-      "guarantees": "No new signed 2014 guarantee established",
+      "guarantees": "Unsigned tender; $0 guaranteed before signing",
       "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
-      "plan": "Lowest tender (the verifications carry $1.431M, used only when the tender is made), or a two-year deal before March 11; tender due by March 11, 4 p.m. ET",
-      "source_note": "Supported (register)",
+      "plan": "2014 tender: $1,431,000. Lowest (right of first refusal) RFA tender, made by 4 p.m. March 11, 2014 (Entry 94); unsigned. No draft-pick compensation; Jacksonville may match any offer sheet",
+      "source_note": "2014 RFA tender amounts Confirmed (published by March 6)",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "career/2014/offseason/free_agency/signings.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 2 (2011: one of three undrafted rookies on Jacksonville's opening 53; 2012: 14 games). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "not_signed",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "tender",
+          "cap": 1431000,
+          "base": 1431000,
+          "proration": 0,
+          "cash": 1431000,
+          "guaranteed_base": 0,
+          "other_cap": 0
         },
         "2015": {
           "status": "not_committed",
@@ -5508,7 +5537,8 @@
           "proration": null,
           "cash": null
         }
-      }
+      },
+      "schedule_basis": "Unsigned tender (Entry 94)"
     },
     {
       "name": "Allen Reisner",
@@ -5517,7 +5547,7 @@
       "date_of_birth": "1988-09-29",
       "age_at_checkpoint": 25,
       "control": "pending",
-      "status": "Pending RFA",
+      "status": "Not tendered; unrestricted free agent at 4 p.m. March 11, 2014 (Entry 94)",
       "contract_type": "UDFA (Minnesota, 2011), carried by waiver claim",
       "signed": "See expiring-contract description",
       "term": "2013",
@@ -5528,7 +5558,7 @@
       "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
-      "plan": "No tender; one-year minimum once unrestricted",
+      "plan": "Not tendered; unrestricted free agent at 4 p.m. March 11, 2014 (Entry 94)",
       "source_note": "Final year Supported (register)",
       "sources": [
         "career/2014/offseason/contract_table.md",
@@ -5607,7 +5637,10 @@
           "proration": null,
           "cash": null
         }
-      }
+      },
+      "former_player": true,
+      "departure_date": "2014-03-11",
+      "departure_source": "career/2013/ledger.md"
     },
     {
       "name": "Kevin Rutland",
@@ -5616,7 +5649,7 @@
       "date_of_birth": "1988-04-02",
       "age_at_checkpoint": 25,
       "control": "pending",
-      "status": "Pending RFA",
+      "status": "Not tendered; unrestricted free agent at 4 p.m. March 11, 2014 (Entry 94)",
       "contract_type": "UDFA, 2011 (3 years)",
       "signed": "See expiring-contract description",
       "term": "2013",
@@ -5627,7 +5660,7 @@
       "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
-      "plan": "No tender; minimum if he wants to return",
+      "plan": "Not tendered; unrestricted free agent at 4 p.m. March 11, 2014 (Entry 94)",
       "source_note": "Supported (register)",
       "sources": [
         "career/2014/offseason/contract_table.md",
@@ -5706,7 +5739,10 @@
           "proration": null,
           "cash": null
         }
-      }
+      },
+      "former_player": true,
+      "departure_date": "2014-03-11",
+      "departure_source": "career/2013/ledger.md"
     },
     {
       "name": "Toney Clemons",
@@ -5714,33 +5750,36 @@
       "roster_position": "WR",
       "date_of_birth": "1988-10-11",
       "age_at_checkpoint": 25,
-      "control": "pending",
-      "status": "Pending ERFA",
+      "control": "tender",
+      "status": "Exclusive-rights tender at the 2014 minimum for two credited seasons, made by 4 p.m. March 11, 2014 (Entry 94); unsigned",
       "contract_type": "Veteran minimum, late November 2012 (2 years)",
       "signed": "See expiring-contract description",
-      "term": "2013",
-      "contract_ends": 2013,
-      "value": "$870,000",
+      "term": "1 / 2014 (unsigned tender)",
+      "contract_ends": 2014,
+      "value": "$570,000 tender",
       "bonus_terms": "Not established for a new contract",
-      "guarantees": "No new signed 2014 guarantee established",
+      "guarantees": "Unsigned tender; $0 guaranteed before signing",
       "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
-      "plan": "Tender at the minimum for his credited seasons by March 11",
-      "source_note": "Confirmed as ERFA (register)",
+      "plan": "2014 tender: $570,000. Exclusive-rights tender at the 2014 minimum for two credited seasons, made by 4 p.m. March 11, 2014 (Entry 94); unsigned",
+      "source_note": "Two credited seasons (2012: four games on the 53; 2013) is a branch inference from the register",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "career/2014/offseason/free_agency/signings.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 0 (joined Jacksonville's 53 in late November 2012; 4 games). 2013: Accrues in branch (on 53 for 16 games); 1 total",
       "years": {
         "2014": {
-          "status": "not_signed",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "tender",
+          "cap": 570000,
+          "base": 570000,
+          "proration": 0,
+          "cash": 570000,
+          "guaranteed_base": 0,
+          "other_cap": 0
         },
         "2015": {
           "status": "not_committed",
@@ -5805,7 +5844,8 @@
           "proration": null,
           "cash": null
         }
-      }
+      },
+      "schedule_basis": "Unsigned tender (Entry 94)"
     },
     {
       "name": "Mike Brown",
@@ -5813,33 +5853,36 @@
       "roster_position": "WR",
       "date_of_birth": "1989-02-09",
       "age_at_checkpoint": 25,
-      "control": "pending",
-      "status": "Pending ERFA",
+      "control": "tender",
+      "status": "Exclusive-rights tender at the 2014 minimum for one credited season, made by 4 p.m. March 11, 2014 (Entry 94); unsigned",
       "contract_type": "UDFA, 2012",
       "signed": "See expiring-contract description",
-      "term": "2013 (Unverified, single report)",
-      "contract_ends": 2013,
-      "value": "Unresolved",
+      "term": "1 / 2014 (unsigned tender)",
+      "contract_ends": 2014,
+      "value": "$495,000 tender",
       "bonus_terms": "Not established for a new contract",
-      "guarantees": "No new signed 2014 guarantee established",
+      "guarantees": "Unsigned tender; $0 guaranteed before signing",
       "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
-      "plan": "Tender by March 11",
-      "source_note": "Status Supported; final year Unverified",
+      "plan": "2014 tender: $495,000. Exclusive-rights tender at the 2014 minimum for one credited season, made by 4 p.m. March 11, 2014 (Entry 94); unsigned",
+      "source_note": "One credited season (two 2012 weeks on the 53 do not make a credited season; 2013) is a branch inference from the register",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "career/2014/offseason/free_agency/signings.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 0 (practice squad for all but two weeks of 2012). 2013: Accrues in branch (on 53 for 16 games); 1 total",
       "years": {
         "2014": {
-          "status": "not_signed",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "tender",
+          "cap": 495000,
+          "base": 495000,
+          "proration": 0,
+          "cash": 495000,
+          "guaranteed_base": 0,
+          "other_cap": 0
         },
         "2015": {
           "status": "not_committed",
@@ -5904,7 +5947,8 @@
           "proration": null,
           "cash": null
         }
-      }
+      },
+      "schedule_basis": "Unsigned tender (Entry 94)"
     },
     {
       "name": "Austin Pasztor",
@@ -5912,33 +5956,36 @@
       "roster_position": "G",
       "date_of_birth": "1990-11-26",
       "age_at_checkpoint": 23,
-      "control": "pending",
-      "status": "Pending ERFA",
+      "control": "tender",
+      "status": "Exclusive-rights tender at the 2014 minimum for two credited seasons, made by 4 p.m. March 11, 2014 (Entry 94); unsigned",
       "contract_type": "Practice squad September 17, 2012; promoted December 14, 2012",
       "signed": "See expiring-contract description",
-      "term": "2013 (Unverified, single report)",
-      "contract_ends": 2013,
-      "value": "Unresolved",
+      "term": "1 / 2014 (unsigned tender)",
+      "contract_ends": 2014,
+      "value": "$570,000 tender",
       "bonus_terms": "Not established for a new contract",
-      "guarantees": "No new signed 2014 guarantee established",
+      "guarantees": "Unsigned tender; $0 guaranteed before signing",
       "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
       "remaining_guarantees": null,
       "availability": "No communicated restriction",
-      "plan": "Tender by March 11",
-      "source_note": "Status Supported; final year Unverified",
+      "plan": "2014 tender: $570,000. Exclusive-rights tender at the 2014 minimum for two credited seasons, made by 4 p.m. March 11, 2014 (Entry 94); unsigned",
+      "source_note": "Two credited seasons (2012: three games on the 53 from December 14; 2013) is a branch inference from the register",
       "sources": [
         "career/2014/offseason/contract_table.md",
-        "career/2014/offseason/contract_status_register.md"
+        "career/2014/offseason/contract_status_register.md",
+        "career/2014/offseason/free_agency/signings.md"
       ],
       "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
       "accrued_seasons": "Through 2012: 0 (active only from December 14, 2012). 2013: Accrues in branch (on 53 for 16 games; Week 1 inactive on medical hold, still full pay); 1 total",
       "years": {
         "2014": {
-          "status": "not_signed",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "tender",
+          "cap": 570000,
+          "base": 570000,
+          "proration": 0,
+          "cash": 570000,
+          "guaranteed_base": 0,
+          "other_cap": 0
         },
         "2015": {
           "status": "not_committed",
@@ -6003,7 +6050,8 @@
           "proration": null,
           "cash": null
         }
-      }
+      },
+      "schedule_basis": "Unsigned tender (Entry 94)"
     },
     {
       "name": "John Parker Wilson",
@@ -6216,6 +6264,118 @@
         }
       },
       "schedule_basis": "Includes adopted simulation amounts; see contract notes"
+    },
+    {
+      "name": "Daniel Te'o-Nesheim",
+      "position": "EDGE",
+      "roster_position": "DE",
+      "date_of_birth": "1987-06-12",
+      "age_at_checkpoint": 26,
+      "control": "signed",
+      "status": "Under contract",
+      "contract_type": "Veteran (branch free agent)",
+      "signed": "March 11, 2014 (4 p.m. ET)",
+      "term": "3 / 2016",
+      "contract_ends": 2016,
+      "value": "$18,800,000",
+      "bonus_terms": "$3,000,000; $1,000,000; 3",
+      "guarantees": "$10,300,000 (signing bonus plus 2014 and 2015 base salary)",
+      "dead_money_2014": "$10,300,000 gross exposure under adopted terms (proration $3,000,000 plus guaranteed base $7,300,000), before any offset",
+      "remaining_guarantees": 7300000,
+      "availability": "No communicated restriction; physical at signing not separately recorded",
+      "plan": "No new transaction decision in this tracker",
+      "source_note": "Branch record (Entry 94, uncontested market draw). Memo section 3 offer; annual schedule is the simulation reconstruction fixed in league_year_method.json before the draw",
+      "sources": [
+        "career/2014/offseason/contract_table.md",
+        "career/2014/offseason/contract_status_register.md",
+        "career/2014/offseason/free_agency/signings.md",
+        "career/2014/offseason/league_year_method.json",
+        "career/2014/offseason/league_rails/fa_draws.md"
+      ],
+      "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+      "accrued_seasons": "Through 2013: 4 (2010-2013, Philadelphia and Tampa Bay; generated league database)",
+      "years": {
+        "2014": {
+          "status": "known",
+          "cap": 5200000,
+          "base": 4200000,
+          "proration": 1000000,
+          "cash": 7200000,
+          "guaranteed_base": 4200000,
+          "other_cap": 0,
+          "basis": "Branch contract, Entry 94"
+        },
+        "2015": {
+          "status": "known",
+          "cap": 4100000,
+          "base": 3100000,
+          "proration": 1000000,
+          "cash": 3100000,
+          "guaranteed_base": 3100000,
+          "other_cap": 0,
+          "basis": "Branch contract, Entry 94"
+        },
+        "2016": {
+          "status": "known",
+          "cap": 9500000,
+          "base": 7000000,
+          "proration": 1000000,
+          "cash": 8500000,
+          "guaranteed_base": 0,
+          "other_cap": 1500000,
+          "basis": "Branch contract, Entry 94: $1,000,000 roster bonus and $500,000 per-game active bonuses"
+        },
+        "2017": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2018": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2019": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2020": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2021": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2022": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        },
+        "2023": {
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
+        }
+      },
+      "schedule_basis": "Executed branch terms (Entry 94)"
     }
   ],
   "draft_picks": [
@@ -6311,6 +6471,11 @@
       "date": "2014-02-28",
       "source": "career/2013/ledger.md",
       "description": "Entry 91 adopts complete existing-contract schedules and guarantee assumptions; no new signing or time advance."
+    },
+    {
+      "date": "2014-03-11",
+      "source": "career/2013/ledger.md",
+      "description": "Entry 94: league year opened March 11, 4 p.m. ET. Te'o-Nesheim and Cain signed; Bradfield, Clemons, Brown and Pasztor tendered; futures effective; Monroe plays on the unsigned tender; eight pending free agents and Meester left control."
     }
   ],
   "scenarios": [],

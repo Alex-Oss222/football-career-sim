@@ -148,11 +148,12 @@ class _Row:
         self.position = row["position"]
 
 
-def controlled_active(season=2013):
+def controlled_active(season=2013, roster_path=None):
     """(player, availability text) for every Jacksonville active-53 player."""
     rows = []
     status_col = avail_col = None
-    for line in SeasonPaths(season, ROOT).roster.read_text(encoding="utf-8").splitlines():
+    path = roster_path or SeasonPaths(season, ROOT).roster
+    for line in path.read_text(encoding="utf-8").splitlines():
         if not line.startswith("|"):
             status_col = None
             continue

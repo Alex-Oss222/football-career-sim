@@ -1,6 +1,6 @@
 # Jacksonville Jaguars 2014 contract table
 
-**As of:** February 28, 2014 (ledger Entry 91; administrative correction at the same date). **Checked at March 3, 2014 (Entry 92):** the designation deadline changed no figure, so the financial as-of date stays with the [tracker](../../finances/jaguars_cap_2014_2023.md). The 2014 league year opens March 11, 2014, 4:00 p.m. ET.
+**As of:** March 11, 2014, 4:00 p.m. ET (ledger Entry 94; the 2014 league year opened). Tenders, the six reserve/future contracts, Te'o-Nesheim's and Cain's signings and Monroe's unsigned franchise tender are current; eight pending free agents and Meester left Jacksonville's control at 4 p.m.
 **Nature:** derived view. It executes no signing, tag, tender, release, trade or extension, certifies no cap room and reflects the adopted reconstruction in Entry 91. The [contract status register](contract_status_register.md) owns each player's status; the [2014 preparation worksheet](current_cap_worksheet.md) owns reconciliation; Caldwell owns contract decisions (Document 3).
 **Baseline:** [2013 initial cap sheet](../../2013/offseason/initial_cap_sheet.md) (per-player 2013 rows, Git `e04dd82`); [2013 regular-season worksheet](../../2013/offseason/current_cap_worksheet.md) and its May 5 version (Git `d25c8cf`); [2013 free-agency signings](../../2013/offseason/free_agency/signings.md); [2013 draftees](../../2013/offseason/draft/draftees.md); [2013 undrafted signings](../../2013/offseason/draft/udfa_signings.md); [2013 trades](../../2013/trades/trades.md); [current contract status register](contract_status_register.md); [Caldwell's pre-tag-window verifications](caldwell_pre_tag_verifications.md) (Git `9ca804c`); [2014 free-agency outcomes](free_agency/signings.md); ledger Entries 3, 4, 7, 9, 79, 80 and 85 through 89. Historical Git references identify the original financial baselines; current status follows the latest register and executed outcomes.
 
@@ -18,6 +18,8 @@ Add a row, and change the affected player rows and summaries, for every signing,
 | February 28, 2014 checkpoint review | Administrative reconciliation against the merged records | None (review through Entry 89) | Corrected Monroe's prior-year comparison wording, the resolved/open reconciliation notes and Wilson/Bray role wording; verified 59 rows and partial-charge totals; no transaction or cap-room certification |
 | February 28, 2014 checkpoint correction | Original-contract research and carry-forward | Entry 90 | Priced all 42 continuing/futures contracts; corrected bonus allocation and cash treatment; retained conditional amounts separately; no transaction or time advance |
 | February 28, 2014 checkpoint correction | Complete remaining schedules, guarantees and control terms | Entry 91 | 44 signed continuing/futures contracts fully priced, Monroe separate; adopted simulation assumptions persisted; dollars shown through each term |
+| March 3, 2014 checkpoint | Rails verification closure | Entry 93 | No Jacksonville figure changed |
+| March 11, 2014 | League year opened at 4 p.m. ET | Entry 94 | Te'o-Nesheim signed (3 years, $18.8M, $10.3M guaranteed; 2014 cap $5,200,000) and Cain re-signed (1 year, $855,000) after the uncontested draws; Bradfield tendered at $1,431,000 and Clemons, Pasztor ($570,000) and Mike Brown ($495,000) at exclusive-rights minimums; the six futures took effect; Monroe lost the long-term draw and stays on the unsigned $11,654,000 tender; Henne and Marks lost their re-signing draws; Jones-Drew, C.J. Wilson, Ball and Brent Grimes became unrestricted with offers outstanding; Reisner and Rutland untendered; Meester's contract expired. Rows: 51 |
 
 ## 1. How to read this table
 
@@ -29,9 +31,9 @@ Add a row, and change the affected player rows and summaries, for every signing,
 - **Branch figures use millions** where the branch record states them in millions; other figures are exact dollars as sourced.
 - **Simulation terms** fill missing existing-contract details under the user’s explicit authorization. They are included in working totals and identified in the source notes. Preserve them between turns until an actual amendment or sourced correction. A blank future year lies outside the contract.
 
-## 2. Controlled players under contract for 2014 (38)
+## 2. Controlled players under contract for 2014 (46)
 
-### 2a. Branch contracts (13)
+### 2a. Branch contracts (15)
 
 | Player | Pos | Contract type | Signed | Years / final league year | Total value | Signing bonus; annual proration; years left | 2014 base | 2014 roster / workout / other bonuses | 2014 guarantees | 2014 cap charge | Dead money if released before June 1 | 2014 status | 2013 cap charge (baseline) | Source and status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -48,6 +50,8 @@ Add a row, and change the affected player rows and summaries, for every signing,
 | A.J. Bouye | CB | UDFA minimum | Post-draft wave, April 27 to May 3, 2013 | 3 / 2015 | $1,485,000 | $0; $0; 0 | $495,000 | None | $0 | $495,000 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | $405,000 | Branch record (UDFA signings) |
 | Adam Thielen | WR | UDFA minimum | Post-draft wave, April 27 to May 3, 2013 | 3 / 2015 | $1,485,000 | $0; $0; 0 | $495,000 | None | $0 | $495,000 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | $405,000 | Branch record (UDFA signings) |
 | C.J. Anderson | RB | UDFA minimum | Post-draft wave, April 27 to May 3, 2013 | 3 / 2015 | $1,485,000 | $0; $0; 0 | $495,000 | None | $0 | $495,000 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | $405,000 | Branch record (UDFA signings) |
+| Daniel Te'o-Nesheim | DE | Veteran (branch free agent) | March 11, 2014, 4 p.m. ET | 3 / 2016 | $18,800,000 | $3,000,000; $1,000,000; 3 | $4,200,000 | None | $4,200,000 base guaranteed ($10,300,000 total with the bonus and the 2015 base) | $5,200,000 | $10,300,000 gross exposure under adopted terms (proration $3,000,000 plus guaranteed base $7,300,000) | Under contract | Not a Jacksonville player (Tampa Bay) | Branch record (Entry 94; [market draw](league_rails/fa_draws.md)); annual schedule is the simulation reconstruction fixed before the draw in [the method](league_year_method.json): 2015 base $3,100,000 guaranteed; 2016 $1,000,000 roster bonus, $7,000,000 base, $500,000 per-game bonuses |
+| Jeremy Cain | LS | Veteran minimum (branch re-signing) | March 11, 2014, 4 p.m. ET | 1 / 2014 | $855,000 | $0; $0; 0 | $855,000 | None | $0 | $855,000 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | Unresolved (no 2013 row) | Branch record (Entry 94; [market draw](league_rails/fa_draws.md)). $855,000 is the 2014 minimum for seven to nine credited seasons, inferred from Chicago's September 2014 figure (single source). Counted in full: the minimum-salary benefit ($570,000 charge) is not applied while his eligibility is unverified |
 
 The UDFA total value is the sum of the three recorded bases ($405,000, $495,000 and $585,000). The 2013 charges for the four UDFAs are their recorded bases; no bonus is recorded.
 
@@ -81,80 +85,77 @@ The UDFA total value is the sum of the three recorded bases ($405,000, $495,000 
 | John Parker Wilson | QB | Inherited reserve/future contract | December 30, 2012 | 2 / 2014 (simulation reconstruction) | $1,360,000 (2013-2014 simulation terms) | $0 Jacksonville signing bonus; $0 proration | $730,000 | $0 | No guaranteed salary or bonus in the adopted simulation terms | $730,000 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | $630,000 | Adopted simulation terms; [completion research](../../../library/2014_jaguars_contract_completion.md) |
 | Jonathan Grimes | RB | Inherited active-roster contract carried by waiver claims | 2012 active-roster agreement; Jacksonville waiver claim December 2012 | 3 / 2014 (simulation reconstruction) | $1,440,000 (2012-2014 full-season salary schedule; simulation terms) | $0 Jacksonville signing bonus; $0 proration | $570,000 | $0 | No guaranteed salary or bonus in the adopted simulation terms | $570,000 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | $480,000 modeled full-season base | Adopted simulation terms; [completion research](../../../library/2014_jaguars_contract_completion.md) |
 
-## 3. Controlled players not under a 2014 active contract
-
-### 3a. Reserve/Retired (1)
-
-| Player | Pos | Contract type | Signed | Years / final league year | Total value | Signing bonus; annual proration; years left | 2014 base | 2014 bonuses | 2014 guarantees | 2014 cap charge | Dead money if released before June 1 | 2014 status | 2013 cap charge (baseline) | Source and status |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Brad Meester | C | Veteran (branch re-signing) | March 12, 2013 | 1 / 2013 | $1.50M | $0.50M; $0.50M; 0 | None | None | None | None scheduled | Not applicable | Retired (Reserve/Retired, Entry 79); contract expires March 11, 2014 | $1.50M | Branch record (signings section 2) |
-
-### 3b. Reserve/future contracts, effective March 11, 2014 (6)
+### 2c. Reserve/future contracts, effective March 11, 2014 (6)
 
 Terms for each (Entry 85): the 2014 minimum for the player's credited seasons, no guarantee, no signing bonus. Entry 91 completes the term as two years through 2015. The 2013 figure for each is the practice-squad rate of $6,000 a week while on the squad (2013 worksheet); no season total is reconciled.
 
 | Player | Pos | Contract type | Signed | Years / final league year | Total value | Signing bonus; annual proration; years left | 2014 base | 2014 bonuses | 2014 guarantees | 2014 cap charge | Dead money if released before June 1 | 2014 status | 2013 cap charge (baseline) | Source and status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Tyler Bray | QB | Reserve/future | February 3, 2014 | 2 / 2015 (simulation reconstruction) | $930,000 | $0; $0; 0 | $420,000 (0 credited seasons) | None | $0 | $420,000 from March 11 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Futures | Practice squad (his May 2, 2013 rookie contract ended with the August 31 waiver) | Branch record (Entry 85); minimum Confirmed; adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
-| Richard Murphy | RB | Reserve/future | February 3, 2014 | 2 / 2015 (simulation reconstruction) | $1,080,000 | $0; $0; 0 | $495,000 (1 credited season) | None in recovered schedule | No remaining guaranteed base salary established in the recovered schedule | $495,000 from March 11 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Futures | Practice squad | Sourced schedule / stated reconstruction; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#richard-murphy); adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
-| Jerrell Jackson | WR | Reserve/future | February 3, 2014 | 2 / 2015 (simulation reconstruction) | $930,000 | $0; $0; 0 | $420,000 (0 credited seasons) | None in recovered schedule | No remaining guaranteed base salary established in the recovered schedule | $420,000 from March 11 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Futures | Practice squad | Sourced schedule / stated reconstruction; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#jerrell-jackson); adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
-| Jerome Long | DT | Reserve/future | February 3, 2014 | 2 / 2015 (simulation reconstruction) | $930,000 | $0; $0; 0 | $420,000 (0 credited seasons) | None in recovered schedule | No remaining guaranteed base salary established in the recovered schedule | $420,000 from March 11 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Futures | Practice squad | Sourced schedule / stated reconstruction; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#jerome-long); adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
-| D'Anthony Smith | DT | Reserve/future (market draw won) | February 5, 2014 | 2 / 2015 (simulation reconstruction) | $1,080,000 | $0; $0; 0 | $495,000 (1 credited season) | None in recovered schedule | No remaining guaranteed base salary established in the recovered schedule | $495,000 from March 11 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Futures | Practice squad | Sourced schedule / stated reconstruction; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#danthony-smith); adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
-| Antwon Blake | S | Reserve/future | February 3, 2014 | 2 / 2015 (simulation reconstruction) | $1,080,000 | $0; $0; 0 | $495,000 (1 credited season) | None in recovered schedule | No remaining guaranteed base salary established in the recovered schedule | $495,000 from March 11 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Futures | Practice squad | Sourced schedule / stated reconstruction; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#antwon-blake); adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
+| Tyler Bray | QB | Reserve/future | February 3, 2014 | 2 / 2015 (simulation reconstruction) | $930,000 | $0; $0; 0 | $420,000 (0 credited seasons) | None | $0 | $420,000 from March 11 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract (effective March 11) | Practice squad (his May 2, 2013 rookie contract ended with the August 31 waiver) | Branch record (Entry 85); minimum Confirmed; adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
+| Richard Murphy | RB | Reserve/future | February 3, 2014 | 2 / 2015 (simulation reconstruction) | $1,080,000 | $0; $0; 0 | $495,000 (1 credited season) | None in recovered schedule | No remaining guaranteed base salary established in the recovered schedule | $495,000 from March 11 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract (effective March 11) | Practice squad | Sourced schedule / stated reconstruction; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#richard-murphy); adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
+| Jerrell Jackson | WR | Reserve/future | February 3, 2014 | 2 / 2015 (simulation reconstruction) | $930,000 | $0; $0; 0 | $420,000 (0 credited seasons) | None in recovered schedule | No remaining guaranteed base salary established in the recovered schedule | $420,000 from March 11 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract (effective March 11) | Practice squad | Sourced schedule / stated reconstruction; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#jerrell-jackson); adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
+| Jerome Long | DT | Reserve/future | February 3, 2014 | 2 / 2015 (simulation reconstruction) | $930,000 | $0; $0; 0 | $420,000 (0 credited seasons) | None in recovered schedule | No remaining guaranteed base salary established in the recovered schedule | $420,000 from March 11 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract (effective March 11) | Practice squad | Sourced schedule / stated reconstruction; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#jerome-long); adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
+| D'Anthony Smith | DT | Reserve/future (market draw won) | February 5, 2014 | 2 / 2015 (simulation reconstruction) | $1,080,000 | $0; $0; 0 | $495,000 (1 credited season) | None in recovered schedule | No remaining guaranteed base salary established in the recovered schedule | $495,000 from March 11 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract (effective March 11) | Practice squad | Sourced schedule / stated reconstruction; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#danthony-smith); adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
+| Antwon Blake | S | Reserve/future | February 3, 2014 | 2 / 2015 (simulation reconstruction) | $1,080,000 | $0; $0; 0 | $495,000 (1 credited season) | None in recovered schedule | No remaining guaranteed base salary established in the recovered schedule | $495,000 from March 11 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract (effective March 11) | Practice squad | Sourced schedule / stated reconstruction; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#antwon-blake); adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
 
 All six futures minimums are now priced using Article 26 credited service, reconstructed in the [contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#futures-service-and-minimum-salaries). Entry 91 completes the already-signed Entry 85 terms as two-year 2014-2015 agreements, with 2015 salaries of $510,000 or $585,000. No extension or new offer is executed.
 
-## 4. Pending free agents (13) and franchise player (1)
+## 3. Contracts and rights that ended at 4 p.m. March 11, 2014 (9)
 
-The expiring contracts run to March 11, 2014, 4:00 p.m. ET. Monroe has already been designated a franchise player, preserving the recorded tag rights beyond that date; his tender remains unsigned. Other tenders and new contracts below are still recommendations. "Planned" means Stone's memo recommendation as recorded in Entry 86, not an executed Caldwell transaction.
+These players are no longer under Jacksonville control. Their 2013 rows remain in the [2013 records](../../2013/offseason/current_cap_worksheet.md); no 2014 charge is booked. Offers still outstanding are Caldwell's recorded offers, not contracts.
+
+| Player | Pos | Status at 4 p.m. March 11 |
+|---|---|---|
+| Chad Henne | QB | Lost the March 7 re-signing draw against his real Jaguars terms; unrestricted free agent, unplaced |
+| Sen'Derrick Marks | DT | Lost the re-signing draw at 4 p.m. against his real Jaguars terms; unrestricted free agent, unplaced |
+| Maurice Jones-Drew | RB | Unrestricted; Jacksonville's offer (2 years, $8.5M, $3.5M guaranteed) stands; draw held to his real date |
+| C.J. Wilson | DE | Unrestricted; Jacksonville's minimum offer stands; draw held to his real date |
+| Alan Ball | CB | Unrestricted; Jacksonville's one-year offer stands; he has no real 2014 move, and the resolution rule is open |
+| Brent Grimes | CB | Unrestricted; the corner contingency makes him Jacksonville's fallback offer (2 years, $9.25M, $4.0M guaranteed); unplaced under rails method section 3; resolution rule open |
+| Allen Reisner | TE | Not tendered; unrestricted |
+| Kevin Rutland | CB | Not tendered; unrestricted |
+| Brad Meester | C | Retired (Entry 79); contract expired |
+
+## 4. Franchise player and tendered players (5)
+
+Each tender was made before 4 p.m. ET March 11 and is unsigned; an unsigned tender counts against the 2014 cap from the league year. Monroe's non-exclusive franchise tender stands after Jacksonville lost the long-term draw.
 
 | Player | Pos | Expiring contract | Final league year | Total value | 2013 cap charge (baseline) | 2014 status | Planned action and deadline | Source and status |
 |---|---|---|---|---|---|---|---|---|
-| Chad Henne | QB | Veteran, signed March 14, 2012 | 2013 | $6,750,000 (2 years) | $4,650,000 (includes $500,000 "other", type unresolved) | Pending UFA | Re-sign as insurance; negotiating window from March 8, noon | Confirmed (register); 2013 OTC row |
-| Maurice Jones-Drew | RB | Veteran extension, 2009 | 2013 | $30,515,000 (term length Corrected in the register) | $6,800,000 | Pending UFA | Re-sign short | Final year Confirmed; 2013 archive row |
-| Eugene Monroe | OT | Rookie, 2009 first round (pick #8) | 2013 | $25,000,000 (5 years) | $5,747,500 | **Franchise player (non-exclusive)**, designated February 18, 2014; tender not yet signed | Long-term talks continue on the memo's terms. 2014 tender: **$11,654,000**, the offensive-line franchise value, official February 28 (library section 2b, Confirmed); 120 percent of his recorded 2013 base of $3,800,000 is $4,560,000, and 120 percent of his recorded 2013 cap number of $5,747,500 is $6,897,000. Both comparison amounts are lower, so the position figure applies ([check](free_agency/signings.md#tags-and-tenders)). It counts against the 2014 cap from March 11. Offer sheets from other clubs possible from March 11 (two first-round picks if Jacksonville declines to match). Re-signing draw at his real signing date (March 11) under rails method section 4; if lost, he plays 2014 on the tag | Branch record (Entries 87 and 89; [tags and tenders](free_agency/signings.md#tags-and-tenders)); amount Confirmed (library section 2b); the prior-year check rests on an unre-verified 2013 transcription |
-| Sen'Derrick Marks | DT | Veteran (branch signing), March 12, 2013 | 2013 | $1.50M (1 year) | $1.50M | Pending UFA | Re-sign. No tag is available (Jacksonville's one designation went to Monroe on February 18) | Branch record |
-| C.J. Wilson | DE | Rookie (Green Bay, 2010 seventh round), acquired by trade | 2013 | Unresolved | $630,000 base carried by Jacksonville (branch); reported cap number $642,590 (register) | Pending UFA | Minimum with no guarantee, or let go | Branch record (trade); final year Corrected (register) |
-| Alan Ball | CB | Veteran (branch signing), March 12, 2013 | 2013 | $1.00M (1 year) | $1.00M | Pending UFA | One-year competition deal | Branch record |
-| Brent Grimes | CB | Veteran (branch signing), March 12, 2013, fully guaranteed | 2013 | $5.50M (1 year) | $5.50M | Pending UFA | Fallback if a primary corner target is lost; otherwise he tests the market | Branch record |
-| Jeremy Cain | LS | Veteran, February 2011 | 2013 | Disputed: $2.45M or $3.0M (3 years) | Unresolved (no 2013 row) | Pending UFA | One-year minimum offer is Caldwell's to make; outcome resolved at Cain's decision date under the rails | Expiry Confirmed by length; value Unverified (Entry 86) |
-| Cameron Bradfield | OT | UDFA, 2011 (3 years) | 2013 | Unresolved | Unresolved (no 2013 row) | Pending RFA | Lowest tender (the verifications carry $1.431M, used only when the tender is made), or a two-year deal before March 11; tender due by March 11, 4 p.m. ET | Supported (register) |
-| Allen Reisner | TE | UDFA (Minnesota, 2011), carried by waiver claim | 2013 | Unresolved | Unresolved (no 2013 row) | Pending RFA | No tender; one-year minimum once unrestricted | Final year Supported (register) |
-| Kevin Rutland | CB | UDFA, 2011 (3 years) | 2013 | Unresolved | Unresolved (no 2013 row) | Pending RFA | No tender; minimum if he wants to return | Supported (register) |
-| Toney Clemons | WR | Veteran minimum, late November 2012 (2 years) | 2013 | $870,000 | Unresolved (no 2013 row) | Pending ERFA | Tender at the minimum for his credited seasons by March 11 | Confirmed as ERFA (register) |
-| Mike Brown | WR | UDFA, 2012 | 2013 (Unverified, single report) | Unresolved | Unresolved (no 2013 row) | Pending ERFA | Tender by March 11 | Status Supported; final year Unverified |
-| Austin Pasztor | G | Practice squad September 17, 2012; promoted December 14, 2012 | 2013 (Unverified, single report) | Unresolved | Unresolved (no 2013 row) | Pending ERFA | Tender by March 11 | Status Supported; final year Unverified |
+| Eugene Monroe | OT | Rookie, 2009 first round (pick #8) | 2013 | $25,000,000 (5 years) | $5,747,500 | **Franchise player (non-exclusive)**, designated February 18, 2014; tender not yet signed | Jacksonville lost the long-term draw on March 11 (Entry 94); he plays 2014 on the tag. 2014 tender: **$11,654,000**, the offensive-line franchise value, official February 28 (library section 2b, Confirmed); 120 percent of his recorded 2013 base of $3,800,000 is $4,560,000, and 120 percent of his recorded 2013 cap number of $5,747,500 is $6,897,000. Both comparison amounts are lower, so the position figure applies ([check](free_agency/signings.md#tags-and-tenders)). It counts against the 2014 cap from March 11. Offer sheets from other clubs possible from March 11 (two first-round picks if Jacksonville declines to match). | Branch record (Entries 87 and 89; [tags and tenders](free_agency/signings.md#tags-and-tenders)); amount Confirmed (library section 2b); the prior-year check rests on an unre-verified 2013 transcription |
+| Cameron Bradfield | OT | UDFA, 2011 (3 years) | 2013 | Unresolved | Unresolved (no 2013 row) | Tendered RFA (lowest, right of first refusal), March 11, 2014; unsigned | 2014 tender: **$1,431,000**. No draft-pick compensation; Jacksonville may match an offer sheet | 2014 tender amounts Confirmed; Branch record (Entry 94) |
+| Toney Clemons | WR | Veteran minimum, late November 2012 (2 years) | 2013 | $870,000 | Unresolved (no 2013 row) | Tendered ERFA, March 11, 2014; unsigned | 2014 tender: **$570,000**. Minimum for two credited seasons (branch inference from the register); he cannot negotiate with other clubs | Branch record (Entry 94) |
+| Mike Brown | WR | UDFA, 2012 | 2013 (Unverified, single report) | Unresolved | Unresolved (no 2013 row) | Tendered ERFA, March 11, 2014; unsigned | 2014 tender: **$495,000**. Minimum for one credited season (branch inference from the register); he cannot negotiate with other clubs | Branch record (Entry 94); final 2013 year Unverified |
+| Austin Pasztor | G | Practice squad September 17, 2012; promoted December 14, 2012 | 2013 (Unverified, single report) | Unresolved | Unresolved (no 2013 row) | Tendered ERFA, March 11, 2014; unsigned | 2014 tender: **$570,000**. Minimum for two credited seasons (branch inference from the register); he cannot negotiate with other clubs | Branch record (Entry 94); final 2013 year Unverified |
 
 ## 5. Summary
 
-### 5a. Counts by 2014 status (February 28, 2014)
+### 5a. Counts by 2014 status (March 11, 2014, 4 p.m. ET)
 
 | Status | Count |
 |---|---:|
-| Under contract (active) | 38 |
-| Pending UFA | 7 |
-| Franchise player (non-exclusive, tender not yet signed) | 1 |
-| Pending RFA | 3 |
-| Pending ERFA | 3 |
-| Retired (Reserve/Retired, contract expires March 11) | 1 |
-| Reserve/future, effective March 11 | 6 |
-| **Rows** | **59** |
+| Under contract, continuing | 38 |
+| Under contract, reserve/future (effective March 11) | 6 |
+| Under contract, signed March 11 (Te'o-Nesheim, Cain) | 2 |
+| Franchise player (non-exclusive, tender not signed) | 1 |
+| Tendered RFA (lowest, not signed) | 1 |
+| Tendered ERFA (not signed) | 3 |
+| **Controlled rows** | **51** |
+| Contracts and rights ended at 4 p.m. (section 3) | 9 |
 
-This matches the register (53 controlled players plus six reserve/future contracts). Brandon King and Will Ta'ufo'ou are not Jacksonville's and have no row.
+The 51 controlled rows match the register and the roster. Brandon King and Will Ta'ufo'ou are not Jacksonville's and have no row.
 
 ### 5b. Working 2014 cap charges
 
 | Component | Players | 2014 amount |
 |---|---:|---:|
-| Sourced schedules and arithmetic reconstructions | 32 | $56,140,166 |
-| Adopted simulation schedules | 12 | $37,277,655 |
-| Signed contracts and futures | 44 | $93,417,821 |
-| Separate unsigned Monroe franchise tender | 1 | $11,654,000 |
-| Player contracts including tender | 45 | $105,071,821 |
+| Signed contracts and futures | 46 | $99,472,821 |
+| Unsigned tenders (Monroe $11,654,000; Bradfield $1,431,000; Clemons and Pasztor $570,000 each; Brown $495,000) | 5 | $14,720,000 |
+| Player contracts including tenders | 51 | $114,192,821 |
 | Carry-forward dead money | | $51,675 |
-| Recorded cap obligations | | $105,123,496 |
+| Recorded cap obligations | | $114,244,496 |
 
-All 38 continuing contracts and six signed futures have a complete working schedule. Wilson and Jonathan Grimes are included through 2014; pending free agents have no new charge. Sourced and adopted simulation amounts are included together for planning, with their basis retained in the [completion research](../../../library/2014_jaguars_contract_completion.md). These are scheduled commitments, before club adjustments and further roster construction.
+The 44 contracts priced at Entry 91 are unchanged ($93,417,821). Te'o-Nesheim adds $5,200,000 and Cain $855,000, both branch contracts executed March 11 (Entry 94). The departed free agents carry no 2014 charge. These are scheduled commitments before club adjustments, not a Top-51 count and not certified room: the carryover and adjusted cap stay unresolved (5d, 5e).
 
 ### 5c. Dead money carried into 2014
 
@@ -179,10 +180,10 @@ Entry 91 closes these former carry-forward questions. March 2013 releases and th
 
 | Item | Player | Deadline | Status |
 |---|---|---|---|
-| Non-exclusive franchise tag | Eugene Monroe | Designated February 18, 2014 (deadline was 4 p.m. ET March 3) | **Designated** (Entry 87); tender not yet signed; **$11,654,000**, official February 28 (Entry 89) |
-| Lowest RFA tender | Cameron Bradfield | March 11, 4 p.m. ET | Planned; not made. The 2014 tender amounts' publication date is not established (no later than March 6); until then the memo's figures remain planning figures |
-| ERFA tenders | Toney Clemons, Mike Brown, Austin Pasztor | March 11, 4 p.m. ET | Planned; not made |
-| No tender | Allen Reisner, Kevin Rutland | Not applicable | Planned (memo) |
+| Non-exclusive franchise tag | Eugene Monroe | Designated February 18, 2014 | **Designated** (Entry 87); **$11,654,000**, official February 28 (Entry 89); not signed. Long-term draw lost March 11 (Entry 94): he plays 2014 on the tag unless a later agreement replaces it by July 15 |
+| Lowest RFA tender | Cameron Bradfield | March 11, 4 p.m. ET | **Made** (Entry 94): **$1,431,000** (2014 amounts Confirmed; published by March 6); not signed; right of first refusal only |
+| ERFA tenders | Toney Clemons, Austin Pasztor ($570,000 each); Mike Brown ($495,000) | March 11, 4 p.m. ET | **Made** (Entry 94) at the 2014 minimum for each player's credited seasons (branch inference); not signed |
+| No tender | Allen Reisner, Kevin Rutland | March 11, 4 p.m. ET | Not tendered; unrestricted free agents from 4 p.m. (Entry 94) |
 | Existing contract | Jonathan Grimes | Through 2014 | $570,000 salary; no tender required |
 
 ## 6. Baseline contradictions and open reconciliations

@@ -119,7 +119,7 @@ def validate(data, root=ROOT):
                 raise ValueError('Current estimate differs from contract table: '+p['name'])
         elif len(row)!=9: raise ValueError('Contract table layout changed; review parser')
         else:
-            expected='tender' if 'Franchise player' in row[6] else ('unknown' if row[6].startswith('Unresolved:') else 'pending')
+            expected='tender' if 'Franchise player' in row[6] or row[6].startswith('Tendered') else ('unknown' if row[6].startswith('Unresolved:') else 'pending')
             if p['control']!=expected: raise ValueError('Contract status differs from current table: '+p['name'])
             if expected=='tender':
                 match=re.search(r'2014 tender: \*\*\$(\d[\d,]*)',row[7])
@@ -168,10 +168,10 @@ def render_main(d,years):
     roster=Counter(p['control'] for p in ps if not p.get('former_player'))
     out=[f"# Jacksonville Jaguars cap tracker, {years[0]} to {years[-1]}\n\nAs of {display_date(d['as_of'])}, {d['checkpoint']}. Whole US dollars.\n\n",
     '[Player cap table](#4-cap-by-player-ten-years) | [Individual contract details](jaguars_contract_details.md) | [Expirations](#9-expiring-contracts-and-free-agent-classes) | [Updating this tracker](README.md)\n\n',
-    f"The inventory covers {len(ps)} players: {roster['signed']} continuing signed players, {roster['future']} signed futures, {roster['tender']} franchise tender, {roster['pending']} pending free agents and {roster['retired']} retired player. It retains the current 52 active players, Meester on Reserve/Retired and the six futures effective March 11.\n\n",
+    f"The inventory covers {sum(roster.values())} current players: {roster['signed']} under signed contracts (the six reserve/future contracts included from March 11) and {roster['tender']} on unsigned tenders (Monroe's franchise tender and the RFA and ERFA tenders). {len(ps)-sum(roster.values())} former players are retained for financial history only.\n\n",
     '## 0. Reading the table\n\n',
     '**Each amount is the working cap charge for that contract year. A blank means the recorded deal does not cover that year.** Existing sourced schedules and adopted simulation amounts are both included. The individual notes identify their basis; the [completion research](../../library/2014_jaguars_contract_completion.md) explains the assumptions. These terms persist until a recorded amendment or correction changes them.\n\n',
-    'The ten-year horizon stays visible for future tracking. Pending free agents and unexercised options create no new salary commitment. Monroe’s unsigned tender is included once. Scheduled cash means money payable if the player remains under the stated terms, not evidence that it has already been paid.\n\n',
+    'The ten-year horizon stays visible for future tracking. Pending free agents and unexercised options create no new salary commitment. Each unsigned tender is included once. Scheduled cash means money payable if the player remains under the stated terms, not evidence that it has already been paid.\n\n',
     '## 1. League inputs and accounting basis\n\n',
     table(['Input','2014 treatment'],[
         ['League salary cap',dollars(d['league_caps'][current])],
@@ -188,7 +188,7 @@ def render_main(d,years):
     dead=[sum(x['amount'] for x in d['dead_money'] if str(x['year'])==y) for y in years]
     combined=[(a or 0)+b if a is not None or b else None for a,b in zip(player,dead)]
     rows=[['Signed contracts and futures']+list(map(dollars,signed)),
-          ['Unsigned Monroe tender']+list(map(dollars,tender)),
+          ['Unsigned tenders']+list(map(dollars,tender)),
           ['Player contracts including tender']+list(map(dollars,player)),
           ['Separate carry-forward dead money']+[dollars(x) if player[i] is not None or x else '' for i,x in enumerate(dead)],
           ['Recorded cap obligations']+list(map(dollars,combined)),
@@ -202,7 +202,7 @@ def render_main(d,years):
         rows.append([label]+[dollars(working_total([p for p in ps if p['position'] in positions],y)) for y in years])
     rows.append(['All player contracts']+list(map(dollars,player)))
     out.append(table(['Position']+years,rows))
-    out.append('Monroe’s tender is included in OT and offense. Each player is counted once. Futures are grouped by position for accounting; this does not assign a depth-chart role.\n\n## 4. Cap by player, ten years\n\n')
+    out.append('Unsigned tenders are included in their positions. Each player is counted once. Futures are grouped by position for accounting; this does not assign a depth-chart role.\n\n## 4. Cap by player, ten years\n\n')
     labels={'signed':'Signed','future':'Futures','pending':'Pending free agent','tender':'Unsigned tender','retired':'Retired'}
     for i,pos in enumerate(POSITIONS,1):
         out.append(f'### 4.{i} {pos}\n\n')
@@ -213,15 +213,14 @@ def render_main(d,years):
         rows.append([pos+' total','','']+[dollars(working_total(group,y)) for y in years]+[dollars(sum(working_total(group,y) or 0 for y in years)) if any(working_total(group,y) is not None for y in years) else ''])
         out.append(table(['Player','Through','Status']+years+['Remaining cap total'],rows))
     out.append('### 4.17 Futures contracts\n\nAll six run through 2015 under the adopted two-year terms. They have no signing bonus or salary guarantee. Their dollars already appear in the position tables above.\n\n')
-    out.append(table(['Player','2014 salary / cap','2015 salary / cap','Total'],[[p['name'],cap_cell(p['years']['2014']),cap_cell(p['years']['2015']),contract_total(p)] for p in ps if p['control']=='future']))
+    out.append(table(['Player','2014 salary / cap','2015 salary / cap','Total'],[[p['name'],cap_cell(p['years']['2014']),cap_cell(p['years']['2015']),contract_total(p)] for p in ps if p['contract_type'].startswith('Reserve/future') and not p.get('former_player')]))
     out.append(f'## 5. Individual contract detail sheets\n\n[Open all {len(ps)} player sheets](jaguars_contract_details.md) for annual salary, bonus, cap, cash, guarantees, release exposure and sources.\n\n## 6. Dead money and void years\n\n')
     out.append(table(['Player','Year','Charge','Basis'],[[x['player'],x['year'],dollars(x['amount']),x['basis']] for x in d['dead_money']]))
     out.append('The $51,675 old Bray bonus is counted separately from his new $420,000 salary. No recorded deal has void years. The completion research explains the inherited bonus reconciliation.\n\n## 7. Draft class and rookie pool\n\n')
     out.append(table(['Draft','Round','Original club','Slot in round','Overall'],[[x['year'],x['round'],x['original_club'],x['slot_in_round'],draft_slot(x['overall'])] for x in d['draft_picks']]))
     out.append('These are selection rights. Add each rookie’s full contract schedule after the actual selection and signing. No future contract dollars are booked against an unselected player. [The draft ownership record](../2014/draft/draft_order.md) controls the picks; compensatory selections after round three are still date-gated.\n\n## 8. Decision calendar\n\n')
     out.append(table(['Date / review','Player or group','Financial treatment'],[
-        ['March 11, 2014','Six futures and Monroe','Futures become effective; the $11,654,000 tender counts unless replaced'],
-        ['March 11, 2014','Pending free agents','Record each actual tender or new agreement before filling an annual cell'],
+        ['March 11, 2014 (done, Entry 94)','Futures, tenders and Monroe','Futures effective; RFA/ERFA tenders and the $11,654,000 franchise tender count while unsigned'],
         ['March 16, 2014','Justin Blackmon','$1,700,000 deferred bonus cash; already allocated within the original cap schedule'],
         ['March 25, 2014','Uche Nwaneri','$1,000,000 roster bonus in the original reported clause'],
         ['Original opt-out window','Jason Babin','Keep the original 2014-2015 schedule until an actual exercise is recorded'],
@@ -230,7 +229,7 @@ def render_main(d,years):
         ['2016 option window','Lane Johnson','2017 fifth-year option remains unexercised; exercise decision follows the 2015 season']]))
     out.append('## 9. Expiring contracts and free-agent classes\n\n')
     out.append(table(['Last contract year','Players'],[[year,', '.join(p['name'] for p in ps if p['contract_ends']==year)] for year in sorted({p['contract_ends'] for p in ps if p['contract_ends'] is not None})]))
-    out.append('“Through” describes the final league year of the recorded contract or tender. The pending 2013 contracts expire at the March 11, 2014 league-year opening. A player’s class at a later expiry follows his actual accrued service; it does not extend the deal.\n\n## 10. Scheduled cash\n\n')
+    out.append('“Through” describes the final league year of the recorded contract or tender. The 2013 contracts not retained expired at the March 11, 2014 league-year opening; those players are retained only as former-player history. A player’s class at a later expiry follows his actual accrued service; it does not extend the deal.\n\n## 10. Scheduled cash\n\n')
     out.append(table(['Item']+years,[['Signed contracts and futures']+[dollars(working_total(ps,y,'cash',('known','approximate'))) for y in years],['Unsigned tender, conditional on signing']+[dollars(working_total(ps,y,'cash',('tender',))) for y in years],['Total scheduled player cash']+[dollars(working_total(ps,y,'cash')) for y in years]]))
     out.append('Cash counts salary and the bonuses paid in that contract year; bonus proration is a cap allocation, not a second cash payment. Record actual payments separately. The 2013-2016 and 2017-2020 cash-floor tests require their complete four-year cash ledgers.\n\n## 11. Release comparisons\n\nThese are gross pre-June-1 comparisons under the adopted contract terms at this checkpoint. They exclude replacement costs and any later earned bonus, guarantee trigger or collected credit. No release is executed.\n\n')
     rows=[]

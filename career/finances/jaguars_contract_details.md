@@ -1,6 +1,6 @@
 # Jacksonville Jaguars individual contract details
 
-[Return to the ten-year table](jaguars_cap_2014_2023.md). As of February 28, 2014, Entry 91. Whole US dollars.
+[Return to the ten-year table](jaguars_cap_2014_2023.md). As of March 11, 2014, Entry 94. Whole US dollars.
 
 Annual cells contain the working original or reconstructed contract schedule. Blank years lie outside that deal. The [completion research](../../library/2014_jaguars_contract_completion.md) identifies adopted simulation terms and guarantee assumptions. Cap, scheduled cash and remaining unpaid guarantees are separate amounts.
 
@@ -1602,9 +1602,11 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ## Brad Meester
 
+Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | C / Retired (Reserve/Retired, Entry 79); contract expires March 11, 2014 |
+| Position / status | C / Retired; contract expired at 4 p.m. March 11, 2014 (Entries 79 and 94) |
 | Original contract | Veteran (branch re-signing) |
 | Signed | March 12, 2013 |
 | Term | 1 / 2013 |
@@ -1631,13 +1633,15 @@ No new playing contract is recorded for 2014 or later.
 
 Branch record (signings section 2).
 
+Retired; contract expired at 4 p.m. March 11, 2014 (Entries 79 and 94).
+
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
 
 ## Tyler Bray
 
 | Field | Detail |
 |---|---|
-| Position / status | QB / Futures |
+| Position / status | QB / Under contract (reserve/future contract effective March 11, 2014) |
 | Original contract | Reserve/future |
 | Signed | February 3, 2014 |
 | Term | 2 / 2015 (simulation reconstruction) |
@@ -1683,7 +1687,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Field | Detail |
 |---|---|
-| Position / status | RB / Futures |
+| Position / status | RB / Under contract (reserve/future contract effective March 11, 2014) |
 | Original contract | Reserve/future |
 | Signed | February 3, 2014 |
 | Term | 2 / 2015 (simulation reconstruction) |
@@ -1729,7 +1733,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Field | Detail |
 |---|---|
-| Position / status | WR / Futures |
+| Position / status | WR / Under contract (reserve/future contract effective March 11, 2014) |
 | Original contract | Reserve/future |
 | Signed | February 3, 2014 |
 | Term | 2 / 2015 (simulation reconstruction) |
@@ -1775,7 +1779,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Field | Detail |
 |---|---|
-| Position / status | IDL / Futures |
+| Position / status | IDL / Under contract (reserve/future contract effective March 11, 2014) |
 | Original contract | Reserve/future |
 | Signed | February 3, 2014 |
 | Term | 2 / 2015 (simulation reconstruction) |
@@ -1821,7 +1825,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Field | Detail |
 |---|---|
-| Position / status | IDL / Futures |
+| Position / status | IDL / Under contract (reserve/future contract effective March 11, 2014) |
 | Original contract | Reserve/future (market draw won) |
 | Signed | February 5, 2014 |
 | Term | 2 / 2015 (simulation reconstruction) |
@@ -1867,7 +1871,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Field | Detail |
 |---|---|
-| Position / status | S / Futures |
+| Position / status | S / Under contract (reserve/future contract effective March 11, 2014) |
 | Original contract | Reserve/future |
 | Signed | February 3, 2014 |
 | Term | 2 / 2015 (simulation reconstruction) |
@@ -1911,9 +1915,11 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ## Chad Henne
 
+Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | QB / Pending UFA |
+| Position / status | QB / Unrestricted free agent at 4 p.m. March 11, 2014 after Jacksonville lost the March 7 re-signing draw (Entry 94) |
 | Original contract | Veteran, signed March 14, 2012 |
 | Signed | See expiring-contract description |
 | Term | 2013 |
@@ -1940,15 +1946,17 @@ No new playing contract is recorded for 2014 or later.
 
 Confirmed (register); 2013 OTC row.
 
-Re-sign as insurance; negotiating window from March 8, noon.
+Unrestricted free agent at 4 p.m. March 11, 2014 after Jacksonville lost the March 7 re-signing draw (Entry 94).
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
 
 ## Maurice Jones-Drew
 
+Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | RB / Pending UFA |
+| Position / status | RB / Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's offer stands, draw held to his real date (Entry 94) |
 | Original contract | Veteran extension, 2009 |
 | Signed | See expiring-contract description |
 | Term | 2013 |
@@ -1975,7 +1983,7 @@ No new playing contract is recorded for 2014 or later.
 
 Final year Confirmed; 2013 archive row.
 
-Re-sign short.
+Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's offer stands, draw held to his real date (Entry 94).
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
 
@@ -1983,7 +1991,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Field | Detail |
 |---|---|
-| Position / status | OT / **Franchise player (non-exclusive)**, designated February 18, 2014; tender not yet signed |
+| Position / status | OT / **Franchise player (non-exclusive)**, designated February 18, 2014; tender not yet signed; long-term draw lost March 11 |
 | Original contract | Rookie, 2009 first round (pick #8) |
 | Signed | See expiring-contract description |
 | Term | 1 / 2014 (unsigned franchise tender) |
@@ -2014,15 +2022,17 @@ The tender is unsigned. Its annual cash is conditional; the full salary guarante
 
 Branch record (Entries 87 and 89; tags and tenders); amount Confirmed (library section 2b); the prior-year check rests on an unre-verified 2013 transcription.
 
-Long-term talks continue on the memo's terms. 2014 tender: **$11,654,000**, the offensive-line franchise value, official February 28 (library section 2b, Confirmed); 120 percent of his recorded 2013 base of $3,800,000 is $4,560,000, and 120 percent of his recorded 2013 cap number of $5,747,500 is $6,897,000. Both comparison amounts are lower, so the position figure applies ([check](../2014/offseason/free_agency/signings.md#tags-and-tenders)). It counts against the 2014 cap from March 11. Offer sheets from other clubs possible from March 11 (two first-round picks if Jacksonville declines to match). Re-signing draw at his real signing date (March 11) under rails method section 4; if lost, he plays 2014 on the tag.
+Jacksonville lost the long-term re-signing draw on March 11 (Entry 94; his real Baltimore re-signing does not apply), so he plays 2014 on the non-exclusive franchise tender, **$11,654,000**, the offensive-line value, official February 28. The tender is unsigned; it counts against the 2014 cap from March 11. Another club may sign him to an offer sheet (two first-round picks if Jacksonville declines to match).
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md), [2014 jaguars contract completion](../../library/2014_jaguars_contract_completion.md).
 
 ## Sen'Derrick Marks
 
+Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | IDL / Pending UFA |
+| Position / status | IDL / Unrestricted free agent at 4 p.m. March 11, 2014 after Jacksonville lost the re-signing draw (Entry 94) |
 | Original contract | Veteran (branch signing), March 12, 2013 |
 | Signed | See expiring-contract description |
 | Term | 2013 |
@@ -2049,15 +2059,17 @@ No new playing contract is recorded for 2014 or later.
 
 Branch record.
 
-Re-sign. No tag is available (Jacksonville's one designation went to Monroe on February 18).
+Unrestricted free agent at 4 p.m. March 11, 2014 after Jacksonville lost the re-signing draw (Entry 94).
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
 
 ## C.J. Wilson
 
+Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | EDGE / Pending UFA |
+| Position / status | EDGE / Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's minimum offer stands, draw held to his real date (Entry 94) |
 | Original contract | Rookie (Green Bay, 2010 seventh round), acquired by trade |
 | Signed | See expiring-contract description |
 | Term | 2013 |
@@ -2084,15 +2096,17 @@ No new playing contract is recorded for 2014 or later.
 
 Branch record (trade); final year Corrected (register).
 
-Minimum with no guarantee, or let go.
+Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's minimum offer stands, draw held to his real date (Entry 94).
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
 
 ## Alan Ball
 
+Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | CB / Pending UFA |
+| Position / status | CB / Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's one-year offer stands, resolution rule open (Entry 94) |
 | Original contract | Veteran (branch signing), March 12, 2013 |
 | Signed | See expiring-contract description |
 | Term | 2013 |
@@ -2119,15 +2133,17 @@ No new playing contract is recorded for 2014 or later.
 
 Branch record.
 
-One-year competition deal.
+Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's one-year offer stands, resolution rule open (Entry 94).
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
 
 ## Brent Grimes
 
+Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | CB / Pending UFA |
+| Position / status | CB / Unrestricted free agent at 4 p.m. March 11, 2014; the corner contingency makes him Jacksonville's fallback, resolution rule open (Entry 94) |
 | Original contract | Veteran (branch signing), March 12, 2013, fully guaranteed |
 | Signed | See expiring-contract description |
 | Term | 2013 |
@@ -2154,7 +2170,7 @@ No new playing contract is recorded for 2014 or later.
 
 Branch record.
 
-Fallback if a primary corner target is lost; otherwise he tests the market.
+Unrestricted free agent at 4 p.m. March 11, 2014; the corner contingency makes him Jacksonville's fallback, resolution rule open (Entry 94).
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
 
@@ -2162,17 +2178,21 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Field | Detail |
 |---|---|
-| Position / status | LS / Pending UFA |
-| Original contract | Veteran, February 2011 |
-| Signed | See expiring-contract description |
-| Term | 2013 |
-| Contract value | Disputed: $2.45M or $3.0M (3 years) |
+| Position / status | LS / Under contract |
+| Original contract | Veteran minimum (branch re-signing) |
+| Signed | March 11, 2014 (4 p.m. ET) |
+| Term | 1 / 2014 |
+| Contract value | $855,000 |
+| Bonus terms | $0; $0; 0 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | $0 |
+| Schedule basis | Executed branch terms (Entry 94) |
 
 ### Annual schedule
 
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
-| 2014 |  |  |  |  |  |  |
+| 2014 | $855,000 | $0 | $0 | $855,000 | $855,000 | $0 |
 | 2015 |  |  |  |  |  |  |
 | 2016 |  |  |  |  |  |  |
 | 2017 |  |  |  |  |  |  |
@@ -2183,31 +2203,39 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | 2022 |  |  |  |  |  |  |
 | 2023 |  |  |  |  |  |  |
 
-No new playing contract is recorded for 2014 or later.
+### Release comparison
+
+| Year | Gross pre-June-1 dead money | Gross cap reduction |
+|---|---|---|
+| 2014 | $0 | $855,000 |
+
+Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
-Expiry Confirmed by length; value Unverified (Entry 86).
+Branch record (Entry 94, uncontested market draw). $855,000 is the 2014 minimum for seven to nine credited seasons, inferred from Chicago's September 2014 figure (single source). Counted in full; the Article 26 minimum-salary benefit (a $570,000 charge) is not applied because his eligibility is unverified.
 
-One-year minimum offer is Caldwell's to make; outcome resolved at Cain's decision date under the rails.
-
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md), [league year method](../../career/2014/offseason/league_year_method.json).
 
 ## Cameron Bradfield
 
 | Field | Detail |
 |---|---|
-| Position / status | OT / Pending RFA |
+| Position / status | OT / Lowest (right of first refusal) RFA tender, made by 4 p.m. March 11, 2014 (Entry 94); unsigned. No draft-pick compensation; Jacksonville may match any offer sheet |
 | Original contract | UDFA, 2011 (3 years) |
 | Signed | See expiring-contract description |
-| Term | 2013 |
-| Contract value |  |
+| Term | 1 / 2014 (unsigned tender) |
+| Contract value | $1,431,000 tender |
+| Bonus terms | Not established for a new contract |
+| Remaining unpaid salary guarantee |  |
+| Guarantee basis | Unsigned tender; $0 guaranteed before signing |
+| Schedule basis | Unsigned tender (Entry 94) |
 
 ### Annual schedule
 
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
-| 2014 |  |  |  |  |  |  |
+| 2014 | $1,431,000 | $0 | $0 | $1,431,000 | $1,431,000 | $0 |
 | 2015 |  |  |  |  |  |  |
 | 2016 |  |  |  |  |  |  |
 | 2017 |  |  |  |  |  |  |
@@ -2218,21 +2246,23 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | 2022 |  |  |  |  |  |  |
 | 2023 |  |  |  |  |  |  |
 
-No new playing contract is recorded for 2014 or later.
+The tender is unsigned. Its annual cash is conditional; the full salary guarantee begins if signed.
 
 ### Contract notes
 
-Supported (register).
+2014 RFA tender amounts Confirmed (published by March 6).
 
-Lowest tender (the verifications carry $1.431M, used only when the tender is made), or a two-year deal before March 11; tender due by March 11, 4 p.m. ET.
+2014 tender: $1,431,000. Lowest (right of first refusal) RFA tender, made by 4 p.m. March 11, 2014 (Entry 94); unsigned. No draft-pick compensation; Jacksonville may match any offer sheet.
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md).
 
 ## Allen Reisner
 
+Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | TE / Pending RFA |
+| Position / status | TE / Not tendered; unrestricted free agent at 4 p.m. March 11, 2014 (Entry 94) |
 | Original contract | UDFA (Minnesota, 2011), carried by waiver claim |
 | Signed | See expiring-contract description |
 | Term | 2013 |
@@ -2259,15 +2289,17 @@ No new playing contract is recorded for 2014 or later.
 
 Final year Supported (register).
 
-No tender; one-year minimum once unrestricted.
+Not tendered; unrestricted free agent at 4 p.m. March 11, 2014 (Entry 94).
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
 
 ## Kevin Rutland
 
+Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | CB / Pending RFA |
+| Position / status | CB / Not tendered; unrestricted free agent at 4 p.m. March 11, 2014 (Entry 94) |
 | Original contract | UDFA, 2011 (3 years) |
 | Signed | See expiring-contract description |
 | Term | 2013 |
@@ -2294,7 +2326,7 @@ No new playing contract is recorded for 2014 or later.
 
 Supported (register).
 
-No tender; minimum if he wants to return.
+Not tendered; unrestricted free agent at 4 p.m. March 11, 2014 (Entry 94).
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
 
@@ -2302,17 +2334,21 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 | Field | Detail |
 |---|---|
-| Position / status | WR / Pending ERFA |
+| Position / status | WR / Exclusive-rights tender at the 2014 minimum for two credited seasons, made by 4 p.m. March 11, 2014 (Entry 94); unsigned |
 | Original contract | Veteran minimum, late November 2012 (2 years) |
 | Signed | See expiring-contract description |
-| Term | 2013 |
-| Contract value | $870,000 |
+| Term | 1 / 2014 (unsigned tender) |
+| Contract value | $570,000 tender |
+| Bonus terms | Not established for a new contract |
+| Remaining unpaid salary guarantee |  |
+| Guarantee basis | Unsigned tender; $0 guaranteed before signing |
+| Schedule basis | Unsigned tender (Entry 94) |
 
 ### Annual schedule
 
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
-| 2014 |  |  |  |  |  |  |
+| 2014 | $570,000 | $0 | $0 | $570,000 | $570,000 | $0 |
 | 2015 |  |  |  |  |  |  |
 | 2016 |  |  |  |  |  |  |
 | 2017 |  |  |  |  |  |  |
@@ -2323,31 +2359,35 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | 2022 |  |  |  |  |  |  |
 | 2023 |  |  |  |  |  |  |
 
-No new playing contract is recorded for 2014 or later.
+The tender is unsigned. Its annual cash is conditional; the full salary guarantee begins if signed.
 
 ### Contract notes
 
-Confirmed as ERFA (register).
+Two credited seasons (2012: four games on the 53; 2013) is a branch inference from the register.
 
-Tender at the minimum for his credited seasons by March 11.
+2014 tender: $570,000. Exclusive-rights tender at the 2014 minimum for two credited seasons, made by 4 p.m. March 11, 2014 (Entry 94); unsigned.
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md).
 
 ## Mike Brown
 
 | Field | Detail |
 |---|---|
-| Position / status | WR / Pending ERFA |
+| Position / status | WR / Exclusive-rights tender at the 2014 minimum for one credited season, made by 4 p.m. March 11, 2014 (Entry 94); unsigned |
 | Original contract | UDFA, 2012 |
 | Signed | See expiring-contract description |
-| Term | 2013 (Unverified, single report) |
-| Contract value |  |
+| Term | 1 / 2014 (unsigned tender) |
+| Contract value | $495,000 tender |
+| Bonus terms | Not established for a new contract |
+| Remaining unpaid salary guarantee |  |
+| Guarantee basis | Unsigned tender; $0 guaranteed before signing |
+| Schedule basis | Unsigned tender (Entry 94) |
 
 ### Annual schedule
 
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
-| 2014 |  |  |  |  |  |  |
+| 2014 | $495,000 | $0 | $0 | $495,000 | $495,000 | $0 |
 | 2015 |  |  |  |  |  |  |
 | 2016 |  |  |  |  |  |  |
 | 2017 |  |  |  |  |  |  |
@@ -2358,31 +2398,35 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | 2022 |  |  |  |  |  |  |
 | 2023 |  |  |  |  |  |  |
 
-No new playing contract is recorded for 2014 or later.
+The tender is unsigned. Its annual cash is conditional; the full salary guarantee begins if signed.
 
 ### Contract notes
 
-Status Supported; final year Unverified.
+One credited season (two 2012 weeks on the 53 do not make a credited season; 2013) is a branch inference from the register.
 
-Tender by March 11.
+2014 tender: $495,000. Exclusive-rights tender at the 2014 minimum for one credited season, made by 4 p.m. March 11, 2014 (Entry 94); unsigned.
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md).
 
 ## Austin Pasztor
 
 | Field | Detail |
 |---|---|
-| Position / status | OG / Pending ERFA |
+| Position / status | OG / Exclusive-rights tender at the 2014 minimum for two credited seasons, made by 4 p.m. March 11, 2014 (Entry 94); unsigned |
 | Original contract | Practice squad September 17, 2012; promoted December 14, 2012 |
 | Signed | See expiring-contract description |
-| Term | 2013 (Unverified, single report) |
-| Contract value |  |
+| Term | 1 / 2014 (unsigned tender) |
+| Contract value | $570,000 tender |
+| Bonus terms | Not established for a new contract |
+| Remaining unpaid salary guarantee |  |
+| Guarantee basis | Unsigned tender; $0 guaranteed before signing |
+| Schedule basis | Unsigned tender (Entry 94) |
 
 ### Annual schedule
 
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
-| 2014 |  |  |  |  |  |  |
+| 2014 | $570,000 | $0 | $0 | $570,000 | $570,000 | $0 |
 | 2015 |  |  |  |  |  |  |
 | 2016 |  |  |  |  |  |  |
 | 2017 |  |  |  |  |  |  |
@@ -2393,15 +2437,15 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | 2022 |  |  |  |  |  |  |
 | 2023 |  |  |  |  |  |  |
 
-No new playing contract is recorded for 2014 or later.
+The tender is unsigned. Its annual cash is conditional; the full salary guarantee begins if signed.
 
 ### Contract notes
 
-Status Supported; final year Unverified.
+Two credited seasons (2012: three games on the 53 from December 14; 2013) is a branch inference from the register.
 
-Tender by March 11.
+2014 tender: $570,000. Exclusive-rights tender at the 2014 minimum for two credited seasons, made by 4 p.m. March 11, 2014 (Entry 94); unsigned.
 
-Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md).
 
 ## John Parker Wilson
 
@@ -2492,3 +2536,48 @@ The 2012 Jets active-roster agreement, carried through Houston to Jacksonville, 
 Under contract for 2014; no ERFA tender required.
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../library/2014_jaguars_contract_completion.md).
+
+## Daniel Te'o-Nesheim
+
+| Field | Detail |
+|---|---|
+| Position / status | EDGE / Under contract |
+| Original contract | Veteran (branch free agent) |
+| Signed | March 11, 2014 (4 p.m. ET) |
+| Term | 3 / 2016 |
+| Contract value | $18,800,000 |
+| Bonus terms | $3,000,000; $1,000,000; 3 |
+| Remaining unpaid salary guarantee | $7,300,000 |
+| Guarantee basis | $10,300,000 (signing bonus plus 2014 and 2015 base salary) |
+| Schedule basis | Executed branch terms (Entry 94) |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $4,200,000 | $1,000,000 | $0 | $5,200,000 | $7,200,000 | $4,200,000 |
+| 2015 | $3,100,000 | $1,000,000 | $0 | $4,100,000 | $3,100,000 | $3,100,000 |
+| 2016 | $7,000,000 | $1,000,000 | $1,500,000 | $9,500,000 | $8,500,000 | $0 |
+| 2017 |  |  |  |  |  |  |
+| 2018 |  |  |  |  |  |  |
+| 2019 |  |  |  |  |  |  |
+| 2020 |  |  |  |  |  |  |
+| 2021 |  |  |  |  |  |  |
+| 2022 |  |  |  |  |  |  |
+| 2023 |  |  |  |  |  |  |
+
+### Release comparison
+
+| Year | Gross pre-June-1 dead money | Gross cap reduction |
+|---|---|---|
+| 2014 | $10,300,000 | -$5,100,000 |
+| 2015 | $5,100,000 | -$1,000,000 |
+| 2016 | $1,000,000 | $8,500,000 |
+
+Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
+
+### Contract notes
+
+Branch record (Entry 94, uncontested market draw). Memo section 3 offer; annual schedule is the simulation reconstruction fixed in league_year_method.json before the draw.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md), [league year method](../../career/2014/offseason/league_year_method.json), [fa draws](../../career/2014/offseason/league_rails/fa_draws.md).

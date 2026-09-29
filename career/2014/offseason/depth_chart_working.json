@@ -1,20 +1,18 @@
 {
  "team": "Jacksonville Jaguars",
  "season": 2014,
- "status": "WORKING VIEW, NOT A GAME INPUT. Carried from the closed 2013 chart; no 2014 depth decision has been made.",
- "as_of": "March 3, 2014 (ledger Entry 92; no change to the chart since Entry 91)",
+ "status": "WORKING VIEW, NOT A GAME INPUT. Carried from the closed 2013 chart minus players no longer controlled; no 2014 depth decision has been made.",
+ "as_of": "March 11, 2014, 4 p.m. ET (ledger Entry 94)",
  "effective": "Carried from the closed 2013 chart (January 6, 2014, AFC Divisional preparation)",
- "sources": "career/2013/depth_chart.json (Git 781213a, carried order); current career/2013/roster.md; current career/2014/offseason/contract_status_register.md; career/2014/offseason/free_agency/signings.md; ledger Entries 79 and 85 through 89",
+ "sources": "career/2013/depth_chart.json (Git 781213a, carried order); current career/2013/roster.md; current career/2014/offseason/contract_status_register.md; career/2014/offseason/free_agency/signings.md; ledger Entries 79 and 85 through 89; Entry 94 (league year opened)",
  "rule": "Order within each kernel position group is the closed 2013 order exactly as carried, minus players no longer controlled. It is not a 2014 decision. Stone owns the 2014 order and changes it only by decision; each change is logged in career/2014/depth_chart.md.",
  "note": "Kept under career/2014/offseason/ on purpose. runtime/seasons.py treats career/2014/depth_chart.json as the 2014 game input, and runtime/week_inputs.py reads that file as Stone's order. A chart that still carries pending free agents and players whose contracts start March 11 must not satisfy that input. Promote a reviewed chart to career/2014/depth_chart.json only when 2014 control, medical clearance and Stone's depth decisions are established.",
  "depth": {
   "QB": [
    "Kirk Cousins",
-   "Chad Henne",
    "John Parker Wilson"
   ],
   "RB": [
-   "Maurice Jones-Drew",
    "Jonathan Grimes",
    "C.J. Anderson"
   ],
@@ -30,8 +28,7 @@
   ],
   "TE": [
    "Marcedes Lewis",
-   "Travis Kelce",
-   "Allen Reisner"
+   "Travis Kelce"
   ],
   "OL": [
    "Eugene Monroe",
@@ -44,7 +41,6 @@
    "Mark Asper"
   ],
   "DL": [
-   "Sen'Derrick Marks",
    "Jason Babin",
    "Roy Miller",
    "Tyson Alualu",
@@ -53,7 +49,6 @@
    "Andre Branch",
    "Ryan Davis",
    "Jeris Pendleton",
-   "C.J. Wilson",
    "Lavar Edwards"
   ],
   "LB": [
@@ -66,14 +61,11 @@
   "DB": [
    "Dwight Lowery",
    "Mike Harris",
-   "Brent Grimes",
    "Bacarri Rambo",
    "Jordan Poyer",
    "A.J. Bouye",
-   "Kevin Rutland",
    "Chris Prosinski",
-   "Brynden Trawick",
-   "Alan Ball"
+   "Brynden Trawick"
   ],
   "K": [
    "Josh Scobee"
@@ -87,9 +79,7 @@
  },
  "positions": {
   "Kirk Cousins": "QB",
-  "Chad Henne": "QB",
   "John Parker Wilson": "QB",
-  "Maurice Jones-Drew": "RB",
   "Jonathan Grimes": "RB",
   "C.J. Anderson": "RB",
   "Montell Owens": "FB",
@@ -100,7 +90,6 @@
   "Mike Brown": "WR",
   "Marcedes Lewis": "TE",
   "Travis Kelce": "TE",
-  "Allen Reisner": "TE",
   "Eugene Monroe": "OT",
   "Uche Nwaneri": "OG",
   "Will Rackley": "OG",
@@ -109,13 +98,11 @@
   "Austin Pasztor": "OG",
   "Mark Asper": "OG",
   "Mike Brewster": "C",
-  "Sen'Derrick Marks": "DT",
   "Jason Babin": "DE",
   "Roy Miller": "DT",
   "Tyson Alualu": "DT",
   "C.J. Mosley": "DT",
   "Jeremy Mincey": "DE",
-  "C.J. Wilson": "DE",
   "Andre Branch": "DE",
   "Jeris Pendleton": "DT",
   "Lavar Edwards": "DE",
@@ -126,13 +113,10 @@
   "Julian Stanford": "LB",
   "Sio Moore": "LB",
   "Dwight Lowery": "S",
-  "Alan Ball": "CB",
-  "Brent Grimes": "CB",
   "Bacarri Rambo": "S",
   "Jordan Poyer": "CB",
   "Mike Harris": "CB",
   "Chris Prosinski": "S",
-  "Kevin Rutland": "CB",
   "A.J. Bouye": "CB",
   "Brynden Trawick": "S",
   "Josh Scobee": "K",
@@ -151,49 +135,14 @@
   ]
  },
  "contract_flags": {
-  "Chad Henne": "Pending UFA",
-  "Maurice Jones-Drew": "Pending UFA",
-  "Eugene Monroe": "Franchise-tagged (non-exclusive, designated February 18, 2014; tender not yet signed)",
-  "Sen'Derrick Marks": "Pending UFA",
-  "C.J. Wilson": "Pending UFA",
-  "Alan Ball": "Pending UFA",
-  "Brent Grimes": "Pending UFA",
-  "Jeremy Cain": "Pending UFA",
-  "Cameron Bradfield": "Pending RFA",
-  "Allen Reisner": "Pending RFA",
-  "Kevin Rutland": "Pending RFA",
-  "Toney Clemons": "Pending ERFA",
-  "Mike Brown": "Pending ERFA",
-  "Austin Pasztor": "Pending ERFA",
+  "Eugene Monroe": "Franchise player (non-exclusive); tender not signed; long-term draw lost March 11 (Entry 94)",
+  "Jeremy Cain": "Under contract through 2014 (re-signed March 11, Entry 94)",
+  "Cameron Bradfield": "Tendered RFA (lowest), unsigned",
+  "Toney Clemons": "Tendered ERFA, unsigned",
+  "Mike Brown": "Tendered ERFA, unsigned",
+  "Austin Pasztor": "Tendered ERFA, unsigned",
   "John Parker Wilson": "Under contract through 2014 (Entry 91)",
   "Jonathan Grimes": "Under contract through 2014 (Entry 91)"
- },
- "joins_90_man_roster_march_11": {
-  "note": "Reserve/future contracts signed February 3 and 5, 2014 (ledger Entry 85), effective at the league year (March 11, 2014, 4:00 p.m. ET). Listed below their groups; no role or depth position assigned.",
-  "QB": [
-   "Tyler Bray"
-  ],
-  "RB": [
-   "Richard Murphy"
-  ],
-  "WR": [
-   "Jerrell Jackson"
-  ],
-  "DL": [
-   "Jerome Long",
-   "D'Anthony Smith"
-  ],
-  "DB": [
-   "Antwon Blake"
-  ]
- },
- "future_positions": {
-  "Tyler Bray": "QB",
-  "Richard Murphy": "RB",
-  "Jerrell Jackson": "WR",
-  "Jerome Long": "DT",
-  "D'Anthony Smith": "DT",
-  "Antwon Blake": "S"
  },
  "availability_notes": {
   "Paul Posluszny": "Out, head/neck, independent medical hold (Week 13); projected return April 5, 2014 (career/2013/roster.md)",
@@ -201,7 +150,15 @@
   "Russell Allen": "Real retirement dated April 22, 2014 applies when the clock reaches it (league rails, Entry 79)"
  },
  "removed_from_2013_chart": {
-  "Brad Meester": "Reserve/Retired (Entry 79); contract expires March 11, 2014"
+  "Brad Meester": "Retired; contract expired March 11, 2014 (Entries 79 and 94)",
+  "Alan Ball": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
+  "Allen Reisner": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
+  "Brent Grimes": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
+  "C.J. Wilson": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
+  "Chad Henne": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
+  "Kevin Rutland": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
+  "Maurice Jones-Drew": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
+  "Sen'Derrick Marks": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)"
  },
  "game_day_inactives": null,
  "update_log": [
@@ -228,6 +185,41 @@
    "event": "Complete contract terms",
    "ledger_entry": "Entry 91",
    "change": "Wilson and Jonathan Grimes signed through 2014; futures through 2015; no depth-order or role change"
+  },
+  {
+   "date": "March 11, 2014",
+   "event": "League year opened",
+   "ledger_entry": "Entry 94",
+   "change": "Removed Henne (QB2), Jones-Drew (RB1), Reisner (TE3), Marks and C.J. Wilson (DL), Brent Grimes, Ball and Rutland (DB): the players below each moved up only by the removal, no reordering. Added, not placed: the six futures and Te'o-Nesheim. Tender and franchise flags updated; Cain re-signed"
   }
- ]
+ ],
+ "added_not_placed": {
+  "note": "Players under contract from March 11, 2014 whom Stone has not placed in the order: the six reserve/future contracts (Entry 85, effective March 11) and Daniel Te'o-Nesheim (signed March 11, Entry 94). Listed below their groups with no depth position or role.",
+  "QB": [
+   "Tyler Bray"
+  ],
+  "RB": [
+   "Richard Murphy"
+  ],
+  "WR": [
+   "Jerrell Jackson"
+  ],
+  "DL": [
+   "Daniel Te'o-Nesheim",
+   "Jerome Long",
+   "D'Anthony Smith"
+  ],
+  "DB": [
+   "Antwon Blake"
+  ]
+ },
+ "added_positions": {
+  "Tyler Bray": "QB",
+  "Richard Murphy": "RB",
+  "Jerrell Jackson": "WR",
+  "Jerome Long": "DT",
+  "D'Anthony Smith": "DT",
+  "Antwon Blake": "S",
+  "Daniel Te'o-Nesheim": "DE"
+ }
 }
