@@ -1,28 +1,28 @@
 # Jacksonville 2014 regular season
 
-**NOT_STARTED.** The [calendar](../calendar.md) owns the dates. The 17 Sunday anchors below are league-week identifiers, not 17 Jacksonville games. The club will have 16 games and one bye. Only the November 9 London fixture is already fixed for Jacksonville.
+**NOT_STARTED.** The historical calendar is selected. The April 23 release is preserved here as future schedule research at the March 24 clock; no game result or participant is imported. Kickoffs below use Eastern Time. Preserve separately dated historical amendments.
 
-| Week | Sunday anchor | Jacksonville assignment | Status |
-|---:|---|---|---|
-| 1 | September 7 | Opponent/date/bye assignment pending April 23 reconciliation | Not started |
-| 2 | September 14 | Opponent/date/bye assignment pending April 23 reconciliation | Not started |
-| 3 | September 21 | Opponent/date/bye assignment pending April 23 reconciliation | Not started |
-| 4 | September 28 | Opponent/date/bye assignment pending April 23 reconciliation | Not started |
-| 5 | October 5 | Opponent/date/bye assignment pending April 23 reconciliation | Not started |
-| 6 | October 12 | Opponent/date/bye assignment pending April 23 reconciliation | Not started |
-| 7 | October 19 | Opponent/date/bye assignment pending April 23 reconciliation | Not started |
-| 8 | October 26 | Opponent/date/bye assignment pending April 23 reconciliation | Not started |
-| 9 | November 2 | Opponent/date/bye assignment pending April 23 reconciliation | Not started |
-| 10 | November 9 | Dallas at Jacksonville, Wembley; date known, kickoff confirmation pending | Not started |
-| 11 | November 16 | Opponent/date/bye assignment pending April 23 reconciliation | Not started |
-| 12 | November 23 | Opponent/date/bye assignment pending April 23 reconciliation | Not started |
-| 13 | November 30 | Opponent/date/bye assignment pending April 23 reconciliation | Not started |
-| 14 | December 7 | Opponent/date/bye assignment pending April 23 reconciliation | Not started |
-| 15 | December 14 | Opponent/date/bye assignment pending April 23 reconciliation | Not started |
-| 16 | December 21 | Opponent/date/bye assignment pending April 23 reconciliation | Not started |
-| 17 | December 28 | Opponent/date/bye assignment pending April 23 reconciliation | Not started |
+| Week | Date | Jacksonville game | Kickoff | Status |
+|---|---|---|---|---|
+| 1 | September 7 | at Philadelphia | 1 p.m. | Not started |
+| 2 | September 14 | at Washington | 1 p.m. | Not started |
+| 3 | September 21 | Indianapolis | 1 p.m. | Not started |
+| 4 | September 28 | at San Diego | 4:05 p.m. | Not started |
+| 5 | October 5 | Pittsburgh | 1 p.m. | Not started |
+| 6 | October 12 | at Tennessee | 1 p.m. | Not started |
+| 7 | October 19 | Cleveland | 1 p.m. | Not started |
+| 8 | October 26 | Miami | 1 p.m. | Not started |
+| 9 | November 2 | at Cincinnati | 1 p.m. | Not started |
+| 10 | November 9 | Dallas, Wembley (designated home) | 1 p.m. | Not started |
+| 11 | November 16 | Bye | — | Not started |
+| 12 | November 23 | at Indianapolis | 1 p.m. | Not started |
+| 13 | November 30 | New York Giants | 1 p.m. | Not started |
+| 14 | December 7 | Houston | 1 p.m. | Not started |
+| 15 | December 14 | at Baltimore | 1 p.m. | Not started |
+| 16 | December 18 | Tennessee (Thursday) | 8:25 p.m. | Not started |
+| 17 | December 28 | at Houston | 1 p.m. | Not started |
 
-The [opponent matrix](../schedule/league_opponents.md) is complete; the [release plan](../schedule/release_plan.md) reconciles dates across all 32 clubs. Historical bye/Thursday candidates are not adopted by this index. Replace pending assignments with views generated from the frozen branch fixtures when released. Do not create game folders with invented dates or opponents.
+Source: [Jaguars April 23 release](https://www.jaguars.com/news/2014-jaguars-schedule-released-12908209). Full-league dated fixtures and game release remain required; this reference does not bypass them.
 
 ## Running a week after release
 

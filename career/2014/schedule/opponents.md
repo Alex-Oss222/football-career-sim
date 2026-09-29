@@ -1,16 +1,12 @@
-# Jacksonville 2014 opponents (branch)
+# Jacksonville 2014 opponents
 
-**Derived** from the 2014 scheduling formula (`library/2014_league_calendar_and_financial_rules.md` section 3) and the branch's final 2013 standings (`career/2013/standings.md`). Real 2014 opponents that depended on real 2013 standings are not imported.
-
-**Jacksonville's 2013 place:** second in the AFC South (10-6; Tennessee won the division on division record).
+The actual historical calendar controls. Entry 101 supersedes the previous branch same-place recomputation. The branch's 10–6 record remains the 2013 result; it does not substitute Buffalo for Miami in the 2014 schedule.
 
 | Component | Home | Away |
 |---|---|---|
-| AFC South (division, home and away) | Tennessee, Indianapolis, Houston | Tennessee, Indianapolis, Houston |
-| AFC North (2014 conference rotation) | Cleveland, Pittsburgh | Baltimore, Cincinnati |
-| NFC East (2014 interconference rotation) | New York Giants, Dallas (at Wembley Stadium, London, November 9) | Philadelphia, Washington |
-| Same-place finish (second place in 2013) | **Buffalo** (AFC East second, 9-7) | **San Diego** (AFC West second, 8-6-2) |
+| AFC South | Tennessee, Indianapolis, Houston | Tennessee, Indianapolis, Houston |
+| AFC North rotation | Cleveland, Pittsburgh | Baltimore, Cincinnati |
+| NFC East rotation | New York Giants, Dallas at Wembley November 9 | Philadelphia, Washington |
+| Published same-place pairings | Miami | San Diego |
 
-**Dates, times, networks and the bye** come from the April 23, 2014 schedule release (a gated date). How the real date rails map onto the branch's pairings is decided when that gate is reached; this page is not a schedule.
-
-**Other clubs:** the complete [32-club opponent matrix](league_opponents.md) is now generated from the same branch standings and [verified rotation](sources.md). The [release procedure](release_plan.md) places those matchups into dated fixtures at the schedule gate. The [schedule index](README.md) links both views.
+[All 32 clubs](league_opponents.md) use the same historical rule. [Dated Jacksonville schedule](../regular_season/README.md) preserves the historical release facts; [league release work](release_plan.md) remains required before executable fixtures. Source: [Jaguars April 23 release](https://www.jaguars.com/news/2014-jaguars-schedule-released-12908209).

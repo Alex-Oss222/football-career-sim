@@ -82,7 +82,23 @@ class CapTrackerTests(unittest.TestCase):
         })
 
     def test_present_dataset_matches_roster_and_current_contract_table(self):
-        self.assertEqual(validate(self.data), [str(y) for y in range(2014, 2024)])
+        self.assertEqual(validate(self.data), [str(y) for y in range(2014, 2026)])
+
+    def test_readable_horizon_and_separate_organization_payroll(self):
+        outputs=render(self.data)
+        main=next(value for path,value in outputs.items() if path.name=='jaguars_cap.md')
+        organization=next(value for path,value in outputs.items() if path.name=='organization_finances.md')
+        self.assertIn('**Nine-year view**',main)
+        self.assertIn('**Additional three years**',main)
+        self.assertIn('$127,383,996',main)
+        self.assertIn('$5,616,004',main)
+        self.assertIn('Certified cap space | Unresolved',main)
+        self.assertNotRegex(main,r'^##+ \d+\.',)
+        self.assertNotIn('Release comparisons',main)
+        self.assertIn('$7,700,000',organization)
+        self.assertIn('$3,650,000',organization)
+        self.assertIn('Alex Stone | Head coach | Unspecified',organization)
+        self.assertNotIn('Alex Stone',main)
 
     def test_original_contracts_survive_without_later_real_restructures(self):
         self.assertEqual(self.player('Kirk Cousins')['years']['2014']['cap'], 570000)
@@ -140,7 +156,7 @@ class CapTrackerTests(unittest.TestCase):
 
     def test_blank_future_cells_currency_and_totals(self):
         outputs=render(self.data)
-        main=outputs[next(path for path in outputs if path.name=='jaguars_cap_2014_2023.md')]
+        main=outputs[next(path for path in outputs if path.name=='jaguars_cap.md')]
         self.assertNotIn('Unknown',main)
         self.assertNotIn('Term unknown',main)
         self.assertNotIn('Not committed',main)

@@ -1,6 +1,6 @@
 # Career instance data
 
-This directory holds dated simulation history and explicitly identified current views. Start with the [2013 career index](2013/README.md) and [current state](../state/05_Current_Season_State.md). The lifecycle below describes transitions; it does not declare the present phase.
+This directory holds dated simulation history and explicitly identified current views. Start with the [active 2014 career index](2014/README.md) and [current state](../state/05_Current_Season_State.md). The lifecycle below describes transitions; it does not declare the present phase.
 
 Cross-season working assessments live in [coaching profiles](coaching_profiles/README.md), with [Stone's current synthesis and evolution](coaching_profiles/alex_stone.md). Future scheduling references include the [historical 2015 calendar](2015/calendar.md); their presence does not open a season or advance the clock.
 
@@ -35,7 +35,7 @@ Adopted 2026-09-18, replacing an earlier, flatter version of this layout. The ch
 career/
   <year>/
     ledger.md
-    calendar.md                 <- branch-facing full-season calendar: camps, preseason, games, roster/cap deadlines and conditional postseason gates
+    calendar.md                 <- historical full-season calendar: camps, preseason, games, roster/cap deadlines and conditional postseason gates
     coaching_staff.md          <- clean current staff list, no process narrative; the hiring process itself lives in offseason/staff_building/hires.md
     roster.md                   <- current roster view: controlled players, status, availability and decided roles
     depth_chart.json            <- Stone's depth order, roles and game-day inactives, read by the week-input builder
@@ -148,3 +148,8 @@ Only phases and rounds actually reached in play get created — never pre-built 
 ## Season statbook
 
 Season statistics are current derived views, parallel to standings. Every closed game preserves a public stat receipt; the season views, the standings and each week's box score are generated from those receipts, never hand-added week to week. Statistical totals do not alter roster evaluation tiers, standings tiebreaks, or game resolution. A legacy coverage gap must remain labeled until canonically backfilled.
+
+
+## Annual operating route
+
+Use the active year index in date order: current team and finances; offseason preparation; veteran program with draft and rookie camp interleaved; OTAs; mandatory minicamp; camp/preseason; weekly season; closeout. [Player cap and organization finances](finances/README.md) are shared financial views. [The closeout manifest](2014/closeouts/README.md) carries reviewed obligations and roles into the next year after exit interviews, while prior stats/awards remain archived. New years use this same structure; no duplicate scenario or session folders.

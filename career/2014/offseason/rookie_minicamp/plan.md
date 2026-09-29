@@ -1,15 +1,15 @@
 # Jacksonville Jaguars: 2014 Rookie minicamp plan
 
 **Status:** 2013 METHODS RETAINED; individual training/film workflow authorized; other marked choices remain pending. No phase has run.
-**Planning checkpoint:** February 2, 2014. Prepared September 28, 2026 without advancing time.
-**Proposed dates:** May 16 to 18, proposed club election after the May 8 to 10 draft.
+**Planning checkpoint:** March 24, 2014, Entry 101. Prepared from 2013 evidence; no phase executed.
+**Selected dates (execution not started):** May 16 to 17, historical two-day camp after the May 8 to 10 draft.
 **Authority:** [Stone's memo, section 6](../stone_to_caldwell_2014_offseason_decisions.md); [2014 calendar](../../calendar.md).
 **Inherited method:** [2013 rookie_minicamp plan](../../../2013/offseason/rookie_minicamp/plan.md). The 2013 file remains unchanged; this plan's 2014 conditions override inherited dates, QB competition and new-head-coach clauses.
 **Execution records:** [Output](output.md) and [evidence summary](standouts.md) are prepared as NOT_STARTED. They receive actual observations only when the phase runs. Results and standouts never belong in this plan.
 
 ## Decision package and historical clarification
 
-The [complete phase decision package](../phase_plan_decisions.md) supplies the proposed dates, install sequence, room priorities, pending policy recommendations and emergency-staff choices, reviewed through the February 28 checkpoint, Entry 89. Its new recommendations remain unadopted. Individual feedback, shared protection-identification teaching and continuing individual development are already authorized. The [rules verification](../../../../library/2014_offseason_phase_rules_verification.md) distinguishes the schedule-filing deadline, Phase One classroom permission and unresolved passive pre-program film distribution.
+The [complete phase decision package](../phase_plan_decisions.md) supplies the selected historical dates, install sequence, room priorities, pending policy recommendations and emergency-staff choices, reconciled through the March 24 checkpoint, Entry 101. The historical schedule is selected under Entry 101; other named recommendations remain unadopted. Individual feedback, shared protection-identification teaching and continuing individual development are already authorized. The [rules verification](../../../../library/2014_offseason_phase_rules_verification.md) distinguishes the schedule-filing deadline, Phase One classroom permission and unresolved passive pre-program film distribution.
 
 ## Living player assessment: adopted follow-up
 
@@ -23,17 +23,17 @@ Invite player-selected film and interpretation during permitted contact without 
 
 Read [Stone’s current profile](../../../coaching_profiles/alex_stone.md) and the relevant [assistant assessment](../../../coaching_profiles/staff_profiles.md) with the player evidence. Use the phase to examine actual teaching, adaptation and follow-through as well as player execution. In the real phase output, separate the coach’s instruction/decision from the player response and result. At a material handoff, append a dated change or retained interpretation to the coach profile and refresh its current synthesis. Preserve the previous evidence; no automatic improvement, fixed coaching type or new dialogue is implied.
 
-## 2014 authority and execution conditions
+## authority and execution conditions
 
 This is the carry-forward authorized in Stone's February 2 memo section 6 and the user's September 28, 2026 request to address the outstanding work. The inherited teaching method is retained below. The individual training/film items identified below are adopted; other recommendations at the end remain explicitly proposed. No practice, attendance, delivery, hiring, clearance or role change is recorded by this plan.
 
 - Returning players begin with retention of assigned 2013 material. New arrivals receive the complete active books and the existing onboarding process after control/invitation is verified; late onboarding is recorded honestly, never backdated. No coach-led football meeting, film review or playbook study occurs before the program. Passive film distribution remains a separate unresolved question; use the [historical verification](../../../../library/2014_offseason_phase_rules_verification.md) and the default delivery recommendation in the decision package.
 - Cousins remains the established QB1. The quarterback competition is for QB2/QB3 among players actually controlled when the phase opens. Henne's future participation depends on his actual contract or other lawful participation basis; Bray signed a reserve/future contract effective March 11, which does not award a reserve role. Cousins's priorities are ball security, protection communication and separating decision errors from technique or protection failures.
 - Jacksonville has a returning head coach. No additional new-head-coach voluntary veteran minicamp is authorized. Older references to that privilege in the inherited readiness document do not apply in 2014.
-- Use the actual roster, medical instructions and teaching evidence at execution. Proposed signings, draft selections and departures are not completed transactions. Verner, Talib or drafted linemen enter a plan only if acquired; Allen cannot be relied on for work after his scheduled April 22 retirement.
+- Use the actual roster, medical instructions and teaching evidence at execution. Proposed signings, draft selections and departures are not completed transactions. Verner and Talib are signed; drafted linemen enter the plan only after an actual selection and eligibility check; Allen cannot be relied on for work after his scheduled April 22 retirement.
 - Crennel calls the defense; Stone calls the offense. The player who relays defensive calls is a separate job. Mike Westhoff runs special teams following his February 11 appointment (Entry 84). Current roles stand pending a separately authorized change.
 - Medical projections are review dates, not clearance. Voluntary attendance, rehabilitation, private support needs and lawful absence never become hidden role grades. No fixed rep percentages or touch quotas determine roles.
-- The 2014 calendar controls dates and legal work. The program schedule must be filed by the agreed league date, no later than March 31 for an April 21 start, with advance notice of changes. April 3 public publication does not adopt the real Jaguars' dates. Verify the selected branch dates and applicable phase rules before executing. Training camp also waits for its schedule/reporting gates.
+- The 2014 calendar controls dates and legal work. The program schedule must be filed by the agreed league date, no later than March 31 for an April 21 start, with advance notice of changes. The user has selected the historical Jacksonville dates. Preserve the filing receipt separately; public publication is not proof of submission. Verify applicable phase rules before executing. Training camp also waits for its schedule/reporting gates.
 
 The existing framework, readiness standard and identity remain at their 2013 paths and are incorporated as durable methods, subject to the 2014 calendar correction above:
 
@@ -63,7 +63,7 @@ This plan answers one question: **what does Jacksonville intend to teach, train,
 
 The standard for this phase is **Good**, not perfect. A rookie is allowed to be new. He is not allowed to stay confused without communicating after the staff has taught and corrected the issue.
 
-## 1. Pre-minicamp onboarding gate
+## Pre-minicamp onboarding gate
 
 Before a controlled rookie participates, confirm the onboarding steps that are legally and practically available have been completed:
 
@@ -83,7 +83,7 @@ Before a controlled rookie participates, confirm the onboarding steps that are l
 
 If a late acquisition arrives too close to the event for the normal two-day sequence, do not fabricate a completed call. Give him the package, orient him lawfully, record the compressed timing, and complete the follow-up as soon as the calendar allows.
 
-## 2. Minicamp objectives
+## Minicamp objectives
 
 Rookie minicamp is an orientation and baseline-evaluation environment. The staff wants to learn:
 
@@ -100,7 +100,7 @@ Rookie minicamp is an orientation and baseline-evaluation environment. The staff
 
 The staff is **not** trying to answer every roster question in one rookie camp.
 
-## 3. Teaching sequence
+## Teaching sequence
 
 Every installed item follows the same cycle:
 
@@ -207,7 +207,7 @@ Examples:
 - protection/coverage responsibilities appropriate to the role;
 - emergency-operation awareness.
 
-## 4. Offensive install: language before library
+## Offensive install: language before library
 
 Rookie minicamp does not attempt the entire Iteration I offense.
 
@@ -252,7 +252,7 @@ The rookie quarterback does not need mastery of every answer. He does need to be
 
 Start with the protection families attached to the installed concepts. SCAT, HALF, and other families are introduced only to the extent necessary for the actual minicamp menu. The line and quarterback must use one language. Do not let five linemen make five independent declarations.
 
-## 5. Defensive install
+## Defensive install
 
 The defensive staff begins with rules that allow rookies to play fast:
 
@@ -279,7 +279,7 @@ Rookie defenders should leave minicamp knowing:
 
 One player may receive a narrower role than another. That is teaching triage, not a permanent ceiling.
 
-## 6. Special-teams foundation
+## Special-teams foundation
 
 Every rookie who can plausibly contribute on special teams receives a real teaching path.
 
@@ -296,7 +296,7 @@ Teach:
 
 Special teams are not treated as filler after offense and defense finish. For many young players they are the first path to a game-day role, but no roster result is pre-awarded.
 
-## 7. Physical and medical plan
+## Physical and medical plan
 
 Rookie minicamp establishes a baseline. It is not a punishment test.
 
@@ -315,7 +315,7 @@ Medical staff control diagnosis, restrictions, rehabilitation parameters, and cl
 
 There is no random running because a rookie made an assignment mistake.
 
-## 8. Meeting and correction rhythm
+## Meeting and correction rhythm
 
 Each major teaching block should have a correction loop:
 
@@ -332,7 +332,7 @@ A position coach should be able to answer, for every rookie: **what are we askin
 
 General disappointment is not a coaching point.
 
-## 9. Rookie evaluation standard
+## Rookie evaluation standard
 
 The phase uses **Good** as the target.
 
@@ -360,7 +360,7 @@ Separate the reason for a poor rep:
 
 Do not collapse every bad rep into "player failed."
 
-## 10. Family-inclusive team dinner
+## Family-inclusive team dinner
 
 During the rookie-minicamp window, schedule a **Rookie Welcome Family Dinner** as a team-culture event.
 
@@ -373,7 +373,7 @@ During the rookie-minicamp window, schedule a **Rookie Welcome Family Dinner** a
 - No attendance, guest choice, family circumstance, or dinner conversation enters a personnel grade.
 - When the event actually occurs, record it in `rookie_minicamp/output.md`; do not rewrite this plan.
 
-## 11. End-of-minicamp staff review
+## End-of-minicamp staff review
 
 The staff should leave rookie minicamp with:
 
@@ -390,7 +390,7 @@ The review question is:
 
 **What does this player need next so that Good can become Better when the full team work begins?**
 
-## 12. Execution and record rule
+## Execution and record rule
 
 This file is the plan. When rookie minicamp is actually run:
 
@@ -400,7 +400,7 @@ This file is the plan. When rookie minicamp is actually run:
 - record the event in the season ledger;
 - preserve this plan unless the user changes the plan itself.
 
-## 2014 application
+## application
 
 Use the actual drafted, signed and properly invited participant list after the May draft. The memo's board is not the attendee list. Verify each participant's eligibility and participation terms before contact or field work. No veteran is inserted merely to fill a drill unless eligible for this event.
 
@@ -409,3 +409,25 @@ For linemen acquired for guard/center competition, teach the common protection l
 Rookie evaluation expects Good: correct alignment, assigned job and a retained correction at the lawful pace. A physical loss is distinct from a vocabulary problem. Do not turn a draft slot, a known real career or one practice into a role award.
 
 Under the adopted individual-feedback policy in [the offseason-program plan](../offseason_program/plan.md), give every participant a written individual baseline and next teaching step, including tryout players with honestly limited evidence. An invitation is not a contract; a good rep does not establish club control. Close the phase with its actual participant/control record, teaching evidence, medical communications and onboarding items still open. Keep the inherited family dinner voluntary and separate from evaluation.
+
+## Dated rookie progression
+
+The historical camp is **May 16–17, two days**, with the published field window 1:10–3:15 p.m. each day. Retain 2013's package, personal welcome, position-coach explanation, observed baseline, correction and later independent retest. Fit those steps into the actual arrival time; do not invent the two-day follow-up call for a late signing.
+
+| When | Participant and staff work | Record in the existing files |
+|---|---|---|
+| Draft, May 8–10 | After each actual selection, Caldwell records control and the ordinal draft swap. Stone/position coach welcome the player; supply the active book and a short first assignment | Draftees, draft pairing and the player's onboarding row; no evaluation from historical NFL outcomes |
+| UDFA signing / tryout invitation | Identify signed, unsigned selected, invited tryout and eligible first-year participants separately; check medical, paperwork, school and arrival restrictions individually | UDFA/signing owner plus participant rows in this phase's output when confirmed |
+| Earliest rookie program, May 12 | Only eligible individuals begin the separately permitted rookie development program; verify school rules rather than assuming every graduate/classmate has the same date | Actual eligibility date, basis and restrictions; a seven-week allowance is a limit, not seven weeks of fabricated attendance |
+| Before May 16 | Medical processing, equipment, teaching-language orientation and individual goals; reconcile travel conflicts and material actually received | Receipt date, assigned coach, baseline question and next legal contact; no attendance grade for voluntary work |
+| May 16 | Common calls, alignments, stance/start, position fundamentals and separate special-teams jobs. Establish what the player actually knows before changing the problem | Assigned job, observation, source, cause category, correction and any unobserved item |
+| May 17 | Repeat the correction, change one relevant picture and seek an independent response. Preserve strengths; record staff prompts and physical limits | Specific retention evidence, unresolved question and next weekday opportunity; family dinner remains optional |
+| May 19–22 | Eligible rookies bridge into Phase Two's unopposed veteran vocabulary. Pair the appropriate QB/center/back/receiver teaching; defense learns front/coverage echo; specialists learn instruction and operation | Position coach hands one concise carry-forward to the OTA plan; no invented veteran opposition |
+| May 27–June 13 | Rookies join only legal OTA dates; catch up without restarting returning players. Judge assigned work against the same job standard, with experience differences explicit | Actual participant and individual development evidence in OTA output and existing profiles |
+| June 17–19 | Minicamp integrates eligible rookies, identifies remaining gaps and gives each a camp-entry priority | Carry-forward: supported job, open question, medical limit, summer instruction allowed and camp reviewer |
+| June 22–28 | Respect Rookie Symposium assignments and travel; do not double-book required attendance with club work | Actual cohort/conflict and missed opportunity, if any; no invented completion |
+| July 21–25 | Rookie report July 21; veteran report July 24; practice begins July 25. Recheck medical and legal roster status and retained learning | Camp output receives the spring evidence; invitation, contract and role remain distinct |
+
+## Participant register within the phase output
+
+Use one table in `output.md` once participants are known: player; acquisition/control status; eligibility basis and first legal date; medical participation limits; arrival/material receipt; position coach; assigned job; observed correction; next observation. Link each player to the existing development profile. Keep tryout decisions in the signing owner and all source observations in the phase output; no extra participant dossier or document per drill.

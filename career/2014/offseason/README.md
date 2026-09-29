@@ -4,7 +4,7 @@
 
 Start with the player at the current date, including his full season of experience. Preserve useful strengths, invite his interpretation when permitted, explore relevant new possibilities and revise the working assessment from actual evidence. The teaching cycle supports this work; it does not prescribe a player type or a ladder through the whole offense. The [2013 onboarding framework](../../2013/offseason/player_onboarding_and_development_framework.md), [readiness standard](../../2013/offseason/the_prowl_player_readiness_standard.md) and [program identity](../../2013/offseason/the_prowl_program_identity.md) remain the durable methods. The [2014 calendar](../calendar.md) and returning-head-coach restrictions control this year.
 
-[Jaguars ten-year cap table, 2014 to 2023](../../finances/jaguars_cap_2014_2023.md) tracks every current player, future obligations and expirations.
+[Jaguars twelve-year cap table, 2014 to 2025](../../finances/jaguars_cap.md) tracks every current player, future obligations and expirations.
 
 ## Find the right record
 

@@ -409,3 +409,8 @@ Package E is folded into package I while package I is live. Nothing executes bef
 - **Deadline:** Arizona must agree before Nwaneri's $1,000,000 roster bonus falls due on March 25. If it has not, Nwaneri is released before that date (the memo's section 5 recommendation), and package I continues with the picks and Alualu.
 - **Package F1 is withdrawn.** Package H was already unavailable because package A did not activate.
 - **Cap note:** for Jacksonville, trading Nwaneri or releasing him before June 1 has the same 2014 effect: about $3,705,500 saved, with his $2,189,000 of remaining bonus proration accelerating. A trade is preferable only because it can bring value back.
+
+
+## Historical calendar amendment, Entry 101
+
+The user subsequently selected the historical calendar: rookie camp May 16–17; OTAs May 27–29, June 2, 3, 5, 9, 10, 12, 13; mandatory minicamp June 17–19. The original proposed date table above remains proposal history. The current [phase package](phase_plan_decisions.md) and [calendar](../calendar.md) control execution. No other pending policy is adopted by this date amendment.

@@ -1,6 +1,6 @@
 # Jacksonville Jaguars individual contract details
 
-[Return to the ten-year table](jaguars_cap_2014_2023.md). As of March 24, 2014, Entry 100. Whole US dollars.
+[Return to the twelve-year table](jaguars_cap.md). As of March 24, 2014, Entry 100. Whole US dollars.
 
 Annual cells contain the working original or reconstructed contract schedule. Blank years lie outside that deal. The [completion research](../../library/2014_jaguars_contract_completion.md) identifies adopted simulation terms and guarantee assumptions. Cap, scheduled cash and remaining unpaid guarantees are separate amounts.
 
@@ -24,23 +24,6 @@ Annual cells contain the working original or reconstructed contract schedule. Bl
 |---|---|---|---|---|---|---|
 | 2014 | $570,000 | $0 | $0 | $570,000 | $570,000 | $0 |
 | 2015 | $660,000 | $0 | $0 | $660,000 | $660,000 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $0 | $570,000 |
-| 2015 | $0 | $660,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -67,23 +50,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
 | 2014 | $2,500,000 | $750,000 | $0 | $3,250,000 | $2,500,000 | $0 |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $750,000 | $2,500,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -110,23 +76,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
 | 2014 | $3,000,000 | $500,000 | $0 | $3,500,000 | $3,000,000 | $0 |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $500,000 | $3,000,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -155,23 +104,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | 2014 | $1,368,709 | $3,449,836 | $0 | $4,818,545 | $1,368,709 | $1,368,709 |
 | 2015 | $2,332,418 | $3,449,836 | $0 | $5,782,254 | $2,332,418 | $2,332,418 |
 | 2016 | $3,296,127 | $3,449,836 | $0 | $6,745,963 | $3,296,127 | $3,296,127 |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $17,346,762 | -$12,528,217 |
-| 2015 | $12,528,217 | -$6,745,963 |
-| 2016 | $6,745,963 | $0 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 The 2017 fifth-year option is unexercised and is excluded from committed years. Review the exercise decision in the 2016 option window.
 
@@ -202,23 +134,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | 2014 | $653,596 | $589,382 | $0 | $1,242,978 | $653,596 | $653,596 |
 | 2015 | $902,192 | $589,382 | $0 | $1,491,574 | $902,192 | $500,000 |
 | 2016 | $1,150,788 | $589,382 | $0 | $1,740,170 | $1,150,788 | $0 |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $2,921,742 | -$1,678,764 |
-| 2015 | $1,678,764 | -$187,190 |
-| 2016 | $589,382 | $1,150,788 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 Any future proven-performance escalator requires the branch’s actual qualifying participation; no later real-world escalator or extension is imported.
 
@@ -249,23 +164,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | 2014 | $544,000 | $167,794 | $0 | $711,794 | $544,000 | $0 |
 | 2015 | $658,000 | $167,794 | $0 | $825,794 | $658,000 | $0 |
 | 2016 | $822,500 | $167,794 | $0 | $990,294 | $822,500 | $0 |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $503,382 | $208,412 |
-| 2015 | $335,588 | $490,206 |
-| 2016 | $167,794 | $822,500 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 Any future proven-performance escalator requires the branch’s actual qualifying participation; no later real-world escalator or extension is imported.
 
@@ -296,23 +194,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | 2014 | $495,000 | $124,257 | $0 | $619,257 | $495,000 | $0 |
 | 2015 | $585,000 | $124,257 | $0 | $709,257 | $585,000 | $0 |
 | 2016 | $675,000 | $124,257 | $0 | $799,257 | $675,000 | $0 |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $372,771 | $246,486 |
-| 2015 | $248,514 | $460,743 |
-| 2016 | $124,257 | $675,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 Any future proven-performance escalator requires the branch’s actual qualifying participation; no later real-world escalator or extension is imported.
 
@@ -343,23 +224,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | 2014 | $495,000 | $53,403 | $0 | $548,403 | $495,000 | $0 |
 | 2015 | $585,000 | $53,403 | $0 | $638,403 | $585,000 | $0 |
 | 2016 | $675,000 | $53,403 | $0 | $728,403 | $675,000 | $0 |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $160,209 | $388,194 |
-| 2015 | $106,806 | $531,597 |
-| 2016 | $53,403 | $675,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 Any future proven-performance escalator requires the branch’s actual qualifying participation; no later real-world escalator or extension is imported.
 
@@ -390,23 +254,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | 2014 | $495,000 | $32,205 | $0 | $527,205 | $495,000 | $0 |
 | 2015 | $585,000 | $32,205 | $0 | $617,205 | $585,000 | $0 |
 | 2016 | $675,000 | $32,205 | $0 | $707,205 | $675,000 | $0 |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $96,615 | $430,590 |
-| 2015 | $64,410 | $552,795 |
-| 2016 | $32,205 | $675,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 Any future proven-performance escalator requires the branch’s actual qualifying participation; no later real-world escalator or extension is imported.
 
@@ -436,23 +283,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 |---|---|---|---|---|---|---|
 | 2014 | $495,000 | $0 | $0 | $495,000 | $495,000 | $0 |
 | 2015 | $585,000 | $0 | $0 | $585,000 | $585,000 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $0 | $495,000 |
-| 2015 | $0 | $585,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -480,23 +310,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 |---|---|---|---|---|---|---|
 | 2014 | $495,000 | $0 | $0 | $495,000 | $495,000 | $0 |
 | 2015 | $585,000 | $0 | $0 | $585,000 | $585,000 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $0 | $495,000 |
-| 2015 | $0 | $585,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -524,23 +337,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 |---|---|---|---|---|---|---|
 | 2014 | $495,000 | $0 | $0 | $495,000 | $495,000 | $0 |
 | 2015 | $585,000 | $0 | $0 | $585,000 | $585,000 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $0 | $495,000 |
-| 2015 | $0 | $585,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -568,23 +364,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 |---|---|---|---|---|---|---|
 | 2014 | $495,000 | $0 | $0 | $495,000 | $495,000 | $0 |
 | 2015 | $585,000 | $0 | $0 | $585,000 | $585,000 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $0 | $495,000 |
-| 2015 | $0 | $585,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -612,23 +391,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 |---|---|---|---|---|---|---|
 | 2014 | $2,072,910 | $2,975,818 | $0 | $5,048,728 | $3,772,910 | $0 |
 | 2015 | $2,914,365 | $2,975,818 | $0 | $5,890,183 | $4,304,365 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $5,951,636 | -$902,908 |
-| 2015 | $2,975,818 | $2,914,365 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 The 2016 fifth-year option is unexercised and is excluded from committed years. Review the exercise decision in the 2015 option window. The deferred bonus cash is already incorporated in the original bonus allocation and is not charged twice.
 
@@ -659,23 +421,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
 | 2014 | $1,431,000 | $110,845 | $0 | $1,541,845 | $1,431,000 | $0 |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $110,845 | $1,431,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -703,23 +448,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 |---|---|---|---|---|---|---|
 | 2014 | $6,700,000 | $1,400,000 | $150,000 | $8,250,000 | $6,850,000 | $0 |
 | 2015 | $6,650,000 | $1,400,000 | $150,000 | $8,200,000 | $6,800,000 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $2,800,000 | $5,450,000 |
-| 2015 | $1,400,000 | $6,800,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -747,23 +475,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 |---|---|---|---|---|---|---|
 | 2014 | $570,000 | $0 | $0 | $570,000 | $570,000 | $0 |
 | 2015 | $660,000 | $0 | $0 | $660,000 | $660,000 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $0 | $570,000 |
-| 2015 | $0 | $660,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -783,26 +494,11 @@ Former player; departure March 20, 2014. [ledger](../../career/2013/ledger.md).
 | Term | 5 / 2015 |
 | Contract value | $24,000,000 |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 |  |  |  |  |  |  |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 ### Contract notes
 
 2014 estimate: verified $3.775M base and $1M roster bonus plus carried $25,000 workout and $1,094,500 allocation. Original 2015 cash schedule remains missing; budget the same $4.8M cash and $5,894,500 charge as 2014 until replaced. That flat 2015 allowance is an estimate, not a recovered salary.
-
-Traded to Arizona (Entry 99).
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../library/2014_jaguars_contract_completion.md).
 
@@ -825,23 +521,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
 | 2014 | $1,431,000 | $154,868 | $0 | $1,585,868 | $1,431,000 | $0 |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $154,868 | $1,431,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -868,23 +547,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
 | 2014 | $570,000 | $3,334 | $0 | $573,334 | $570,000 | $0 |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $3,334 | $570,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -912,23 +574,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 |---|---|---|---|---|---|---|
 | 2014 | $6,000,000 | $0 | $175,000 | $6,175,000 | $6,175,000 | $0 |
 | 2015 | $6,000,000 | $0 | $175,000 | $6,175,000 | $6,175,000 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $0 | $6,175,000 |
-| 2015 | $0 | $6,175,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -956,23 +601,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 |---|---|---|---|---|---|---|
 | 2014 | $827,722 | $535,442 | $25,000 | $1,388,164 | $852,722 | $0 |
 | 2015 | $1,059,083 | $535,442 | $25,000 | $1,619,525 | $1,084,083 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $1,070,884 | $317,280 |
-| 2015 | $535,442 | $1,084,083 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -999,23 +627,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
 | 2014 | $495,000 | $0 | $0 | $495,000 | $495,000 | $0 |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $0 | $495,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -1043,23 +654,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 |---|---|---|---|---|---|---|
 | 2014 | $4,475,000 | $2,000,000 | $25,000 | $6,500,000 | $4,500,000 | $0 |
 | 2015 | $4,900,000 | $2,000,000 | $25,000 | $6,925,000 | $4,925,000 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $4,000,000 | $2,500,000 |
-| 2015 | $2,000,000 | $4,925,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -1086,23 +680,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
 | 2014 | $2,571,500 | $1,542,500 | $150,000 | $4,264,000 | $2,721,500 | $0 |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $1,542,500 | $2,721,500 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -1129,23 +706,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
 | 2014 | $2,725,000 | $333,334 | $25,000 | $3,083,334 | $2,750,000 | $0 |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $333,334 | $2,750,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -1173,23 +733,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 |---|---|---|---|---|---|---|
 | 2014 | $570,000 | $12,848 | $0 | $582,848 | $570,000 | $0 |
 | 2015 | $660,000 | $12,848 | $0 | $672,848 | $660,000 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $25,696 | $557,152 |
-| 2015 | $12,848 | $660,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -1216,23 +759,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
 | 2014 | $1,975,000 | $416,668 | $25,000 | $2,416,668 | $2,000,000 | $0 |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $416,668 | $2,000,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -1261,23 +787,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | 2014 | $7,450,000 | $2,000,000 | $50,000 | $9,500,000 | $7,500,000 | $0 |
 | 2015 | $7,450,000 | $2,000,000 | $50,000 | $9,500,000 | $7,500,000 | $0 |
 | 2016 | $7,450,000 | $0 | $50,000 | $7,500,000 | $7,500,000 | $0 |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $4,000,000 | $5,500,000 |
-| 2015 | $2,000,000 | $7,500,000 |
-| 2016 | $0 | $7,500,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -1304,23 +813,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
 | 2014 | $570,000 | $1,668 | $0 | $571,668 | $570,000 | $0 |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $1,668 | $570,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -1348,23 +840,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 |---|---|---|---|---|---|---|
 | 2014 | $570,000 | $28,947 | $0 | $598,947 | $570,000 | $0 |
 | 2015 | $660,000 | $28,947 | $0 | $688,947 | $660,000 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $57,894 | $541,053 |
-| 2015 | $28,947 | $660,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -1392,23 +867,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 |---|---|---|---|---|---|---|
 | 2014 | $3,100,000 | $750,000 | $25,000 | $3,875,000 | $3,125,000 | $0 |
 | 2015 | $3,300,000 | $750,000 | $25,000 | $4,075,000 | $3,325,000 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $1,500,000 | $2,375,000 |
-| 2015 | $750,000 | $3,325,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -1435,23 +893,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
 | 2014 | $735,018 | $105,027 | $0 | $840,045 | $735,018 | $0 |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $105,027 | $735,018 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -1479,23 +920,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 |---|---|---|---|---|---|---|
 | 2014 | $3,225,000 | $937,500 | $25,000 | $4,187,500 | $3,250,000 | $0 |
 | 2015 | $3,425,000 | $937,500 | $25,000 | $4,387,500 | $3,450,000 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $1,875,000 | $2,312,500 |
-| 2015 | $937,500 | $3,450,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -1523,23 +947,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 |---|---|---|---|---|---|---|
 | 2014 | $584,898 | $165,625 | $20,000 | $770,523 | $604,898 | $0 |
 | 2015 | $689,855 | $165,625 | $20,000 | $875,480 | $709,855 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $331,250 | $439,273 |
-| 2015 | $165,625 | $709,855 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -1567,23 +974,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 |---|---|---|---|---|---|---|
 | 2014 | $2,591,667 | $300,000 | $0 | $2,891,667 | $2,591,667 | $0 |
 | 2015 | $2,591,667 | $300,000 | $0 | $2,891,667 | $2,591,667 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $600,000 | $2,291,667 |
-| 2015 | $300,000 | $2,591,667 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -1603,28 +993,13 @@ Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
 | Term | 1 / 2013 |
 | Contract value | $1.50M |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 |  |  |  |  |  |  |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 No new playing contract is recorded for 2014 or later.
 
 ### Contract notes
 
 Branch record (signings section 2).
-
-Retired; contract expired at 4 p.m. March 11, 2014 (Entries 79 and 94).
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
 
@@ -1648,23 +1023,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 |---|---|---|---|---|---|---|
 | 2014 | $420,000 | $0 | $0 | $420,000 | $420,000 | $0 |
 | 2015 | $510,000 | $0 | $0 | $510,000 | $510,000 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $0 | $420,000 |
-| 2015 | $0 | $510,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -1694,23 +1052,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 |---|---|---|---|---|---|---|
 | 2014 | $495,000 | $0 | $0 | $495,000 | $495,000 | $0 |
 | 2015 | $585,000 | $0 | $0 | $585,000 | $585,000 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $0 | $495,000 |
-| 2015 | $0 | $585,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -1740,23 +1081,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 |---|---|---|---|---|---|---|
 | 2014 | $420,000 | $0 | $0 | $420,000 | $420,000 | $0 |
 | 2015 | $510,000 | $0 | $0 | $510,000 | $510,000 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $0 | $420,000 |
-| 2015 | $0 | $510,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -1786,23 +1110,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 |---|---|---|---|---|---|---|
 | 2014 | $420,000 | $0 | $0 | $420,000 | $420,000 | $0 |
 | 2015 | $510,000 | $0 | $0 | $510,000 | $510,000 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $0 | $420,000 |
-| 2015 | $0 | $510,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -1832,23 +1139,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 |---|---|---|---|---|---|---|
 | 2014 | $495,000 | $0 | $0 | $495,000 | $495,000 | $0 |
 | 2015 | $585,000 | $0 | $0 | $585,000 | $585,000 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $0 | $495,000 |
-| 2015 | $0 | $585,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -1878,23 +1168,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 |---|---|---|---|---|---|---|
 | 2014 | $495,000 | $0 | $0 | $495,000 | $495,000 | $0 |
 | 2015 | $585,000 | $0 | $0 | $585,000 | $585,000 | $0 |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $0 | $495,000 |
-| 2015 | $0 | $585,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -1916,28 +1189,13 @@ Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
 | Term | 2013 |
 | Contract value | $6,750,000 (2 years) |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 |  |  |  |  |  |  |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 No new playing contract is recorded for 2014 or later.
 
 ### Contract notes
 
 Confirmed (register); 2013 OTC row.
-
-Unrestricted free agent from 4 p.m. March 11, 2014; the first-pass March 7 draw is superseded and his chronology is reopened (Entry 95).
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
 
@@ -1953,28 +1211,13 @@ Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
 | Term | 2013 |
 | Contract value | $30,515,000 (term length Corrected in the register) |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 |  |  |  |  |  |  |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 No new playing contract is recorded for 2014 or later.
 
 ### Contract notes
 
 Final year Confirmed; 2013 archive row.
-
-Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's offer stands, draw held to his real date (Entry 94).
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
 
@@ -2001,23 +1244,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | 2016 | $6,500,000 | $1,600,000 | $1,000,000 | $9,100,000 | $7,500,000 | $0 |
 | 2017 | $6,500,000 | $1,600,000 | $1,000,000 | $9,100,000 | $7,500,000 | $0 |
 | 2018 | $6,500,000 | $1,600,000 | $1,000,000 | $9,100,000 | $7,500,000 | $0 |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $20,000,000 | -$14,400,000 |
-| 2015 | $14,400,000 | -$4,800,000 |
-| 2016 | $4,800,000 | $4,300,000 |
-| 2017 | $3,200,000 | $5,900,000 |
-| 2018 | $1,600,000 | $7,500,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -2047,23 +1273,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [signi
 | 2015 | $5,500,000 | $750,000 | $0 | $6,250,000 | $5,500,000 | $5,500,000 |
 | 2016 | $6,000,000 | $750,000 | $750,000 | $7,500,000 | $6,750,000 | $0 |
 | 2017 | $5,500,000 | $750,000 | $1,250,000 | $7,500,000 | $6,750,000 | $0 |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $12,500,000 | -$7,750,000 |
-| 2015 | $7,750,000 | -$1,500,000 |
-| 2016 | $1,500,000 | $6,000,000 |
-| 2017 | $750,000 | $6,750,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -2083,28 +1292,13 @@ Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
 | Term | 2013 |
 | Contract value |  |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 |  |  |  |  |  |  |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 No new playing contract is recorded for 2014 or later.
 
 ### Contract notes
 
 Branch record (trade); final year Corrected (register).
-
-Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's minimum offer stands, draw held to his real date (Entry 94).
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
 
@@ -2120,28 +1314,13 @@ Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
 | Term | 2013 |
 | Contract value | $1.00M (1 year) |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 |  |  |  |  |  |  |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 No new playing contract is recorded for 2014 or later.
 
 ### Contract notes
 
 Branch record.
-
-Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's one-year offer stands, resolution rule open (Entry 94).
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
 
@@ -2157,28 +1336,13 @@ Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
 | Term | 2013 |
 | Contract value | $5.50M (1 year) |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 |  |  |  |  |  |  |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 No new playing contract is recorded for 2014 or later.
 
 ### Contract notes
 
 Branch record.
-
-Unrestricted free agent at 4 p.m. March 11, 2014; the corner contingency makes him Jacksonville's fallback, resolution rule open (Entry 94).
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
 
@@ -2201,23 +1365,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
 | 2014 | $855,000 | $0 | $0 | $855,000 | $855,000 | $0 |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $0 | $855,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -2235,7 +1382,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [signi
 | Term | 1 / 2014 (unsigned tender) |
 | Contract value | $1,431,000 tender |
 | Bonus terms | Not established for a new contract |
-| Remaining unpaid salary guarantee |  |
+| Remaining unpaid salary guarantee | Conditional on signing |
 | Guarantee basis | Unsigned tender; $0 guaranteed before signing |
 | Schedule basis | Unsigned tender (Entry 94) |
 
@@ -2244,23 +1391,12 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [signi
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
 | 2014 | $1,431,000 | $0 | $0 | $1,431,000 | $1,431,000 | $0 |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
 
 The tender is unsigned. Its annual cash is conditional; the full salary guarantee begins if signed.
 
 ### Contract notes
 
 2014 RFA tender amounts Confirmed (published by March 6).
-
-2014 tender: $1,431,000. Lowest (right of first refusal) RFA tender, made by 4 p.m. March 11, 2014 (Entry 94); unsigned. No draft-pick compensation; Jacksonville may match any offer sheet.
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md).
 
@@ -2276,28 +1412,13 @@ Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
 | Term | 2013 |
 | Contract value |  |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 |  |  |  |  |  |  |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 No new playing contract is recorded for 2014 or later.
 
 ### Contract notes
 
 Final year Supported (register).
-
-Not tendered; unrestricted free agent at 4 p.m. March 11, 2014 (Entry 94).
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
 
@@ -2313,28 +1434,13 @@ Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
 | Term | 2013 |
 | Contract value |  |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 |  |  |  |  |  |  |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 No new playing contract is recorded for 2014 or later.
 
 ### Contract notes
 
 Supported (register).
-
-Not tendered; unrestricted free agent at 4 p.m. March 11, 2014 (Entry 94).
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
 
@@ -2348,7 +1454,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Term | 1 / 2014 (unsigned tender) |
 | Contract value | $570,000 tender |
 | Bonus terms | Not established for a new contract |
-| Remaining unpaid salary guarantee |  |
+| Remaining unpaid salary guarantee | Conditional on signing |
 | Guarantee basis | Unsigned tender; $0 guaranteed before signing |
 | Schedule basis | Unsigned tender (Entry 94) |
 
@@ -2357,23 +1463,12 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
 | 2014 | $570,000 | $0 | $0 | $570,000 | $570,000 | $0 |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
 
 The tender is unsigned. Its annual cash is conditional; the full salary guarantee begins if signed.
 
 ### Contract notes
 
 Two credited seasons (2012: four games on the 53; 2013) is a branch inference from the register.
-
-2014 tender: $570,000. Exclusive-rights tender at the 2014 minimum for two credited seasons, made by 4 p.m. March 11, 2014 (Entry 94); unsigned.
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md).
 
@@ -2387,7 +1482,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Term | 1 / 2014 (unsigned tender) |
 | Contract value | $495,000 tender |
 | Bonus terms | Not established for a new contract |
-| Remaining unpaid salary guarantee |  |
+| Remaining unpaid salary guarantee | Conditional on signing |
 | Guarantee basis | Unsigned tender; $0 guaranteed before signing |
 | Schedule basis | Unsigned tender (Entry 94) |
 
@@ -2396,23 +1491,12 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
 | 2014 | $495,000 | $0 | $0 | $495,000 | $495,000 | $0 |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
 
 The tender is unsigned. Its annual cash is conditional; the full salary guarantee begins if signed.
 
 ### Contract notes
 
 One credited season (two 2012 weeks on the 53 do not make a credited season; 2013) is a branch inference from the register.
-
-2014 tender: $495,000. Exclusive-rights tender at the 2014 minimum for one credited season, made by 4 p.m. March 11, 2014 (Entry 94); unsigned.
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md).
 
@@ -2426,7 +1510,7 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Term | 1 / 2014 (unsigned tender) |
 | Contract value | $570,000 tender |
 | Bonus terms | Not established for a new contract |
-| Remaining unpaid salary guarantee |  |
+| Remaining unpaid salary guarantee | Conditional on signing |
 | Guarantee basis | Unsigned tender; $0 guaranteed before signing |
 | Schedule basis | Unsigned tender (Entry 94) |
 
@@ -2435,23 +1519,12 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
 | 2014 | $570,000 | $0 | $0 | $570,000 | $570,000 | $0 |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
 
 The tender is unsigned. Its annual cash is conditional; the full salary guarantee begins if signed.
 
 ### Contract notes
 
 Two credited seasons (2012: three games on the 53 from December 14; 2013) is a branch inference from the register.
-
-2014 tender: $570,000. Exclusive-rights tender at the 2014 minimum for two credited seasons, made by 4 p.m. March 11, 2014 (Entry 94); unsigned.
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [signings](../../career/2014/offseason/free_agency/signings.md).
 
@@ -2474,29 +1547,10 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
 | 2014 | $730,000 | $0 | $0 | $730,000 | $730,000 | $0 |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $0 | $730,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
 Official Jaguars transactions confirm the December 30, 2012 futures signing. The two-year length and no-bonus structure are adopted simulation terms, using the recovered $630,000 2013 minimum and $730,000 2014 four-season minimum.
-
-Under contract for 2014; the earlier release-if-expired recommendation requires a separate release decision.
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../library/2014_jaguars_contract_completion.md).
 
@@ -2519,29 +1573,10 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
 | 2014 | $570,000 | $0 | $0 | $570,000 | $570,000 | $0 |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $0 | $570,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
 The 2012 Jets active-roster agreement, carried through Houston to Jacksonville, is modeled as a three-year minimum deal ending in 2014. Its final $570,000 salary uses two credited seasons in this branch. The original waived Houston UDFA bonus is not transferred. The later real Houston contract is a different deal and is excluded.
-
-Under contract for 2014; no ERFA tender required.
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../library/2014_jaguars_contract_completion.md).
 
@@ -2567,23 +1602,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 | 2015 | $6,000,000 | $1,000,000 | $0 | $7,000,000 | $6,000,000 | $6,000,000 |
 | 2016 | $5,500,000 | $1,000,000 | $1,500,000 | $8,000,000 | $7,000,000 | $0 |
 | 2017 | $5,500,000 | $1,000,000 | $1,500,000 | $8,000,000 | $7,000,000 | $0 |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $15,000,000 | -$9,000,000 |
-| 2015 | $9,000,000 | -$2,000,000 |
-| 2016 | $2,000,000 | $6,000,000 |
-| 2017 | $1,000,000 | $7,000,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -2614,23 +1632,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [signi
 | 2016 | $6,000,000 | $1,300,000 | $2,000,000 | $9,300,000 | $8,000,000 | $0 |
 | 2017 | $6,500,000 | $1,300,000 | $2,000,000 | $9,800,000 | $8,500,000 | $0 |
 | 2018 | $6,500,000 | $1,300,000 | $2,000,000 | $9,800,000 | $8,500,000 | $0 |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $21,500,000 | -$13,700,000 |
-| 2015 | $13,700,000 | -$3,900,000 |
-| 2016 | $3,900,000 | $5,400,000 |
-| 2017 | $2,600,000 | $7,200,000 |
-| 2018 | $1,300,000 | $8,500,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -2657,23 +1658,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [signi
 | Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
 |---|---|---|---|---|---|---|
 | 2014 | $2,500,000 | $2,000,000 | $500,000 | $5,000,000 | $5,000,000 | $2,500,000 |
-| 2015 |  |  |  |  |  |  |
-| 2016 |  |  |  |  |  |  |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $4,500,000 | $500,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -2703,23 +1687,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [signi
 | 2015 | $5,000,000 | $1,000,000 | $0 | $6,000,000 | $5,000,000 | $2,200,000 |
 | 2016 | $2,400,000 | $1,000,000 | $0 | $3,400,000 | $2,400,000 | $0 |
 | 2017 | $2,400,000 | $1,000,000 | $0 | $3,400,000 | $2,400,000 | $0 |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $8,000,000 | -$5,200,000 |
-| 2015 | $5,200,000 | $800,000 |
-| 2016 | $2,000,000 | $1,400,000 |
-| 2017 | $1,000,000 | $2,400,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 
@@ -2748,23 +1715,6 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [signi
 | 2014 | $1,500,000 | $1,000,000 | $500,000 | $3,000,000 | $5,000,000 | $1,500,000 |
 | 2015 | $1,500,000 | $1,000,000 | $500,000 | $3,000,000 | $2,000,000 | $1,500,000 |
 | 2016 | $5,000,000 | $1,000,000 | $1,500,000 | $7,500,000 | $6,500,000 | $0 |
-| 2017 |  |  |  |  |  |  |
-| 2018 |  |  |  |  |  |  |
-| 2019 |  |  |  |  |  |  |
-| 2020 |  |  |  |  |  |  |
-| 2021 |  |  |  |  |  |  |
-| 2022 |  |  |  |  |  |  |
-| 2023 |  |  |  |  |  |  |
-
-### Release comparison
-
-| Year | Gross pre-June-1 dead money | Gross cap reduction |
-|---|---|---|
-| 2014 | $6,000,000 | -$3,000,000 |
-| 2015 | $3,500,000 | -$500,000 |
-| 2016 | $1,000,000 | $6,500,000 |
-
-Assumes release before that year’s salary and bonuses are earned. Remaining guarantees plus unamortized bonus are included; replacement costs and later credits are excluded.
 
 ### Contract notes
 

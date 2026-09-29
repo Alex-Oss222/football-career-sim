@@ -2,23 +2,23 @@
 
 **As of:** March 20, 2014 (ledger Entry 99: Jeremy Cain re-signed; Uche Nwaneri traded to Arizona in package I for No. 38; Entry 98: Daniel Te'o-Nesheim signed). Monroe, Marks, Verner, Talib, Nicks, Hawkins and Te'o-Nesheim signed in the replay (Entries 95 to 98); 2013 season complete (Jacksonville eliminated in the AFC Divisional round).
 **Canonical controlled-player count:** **55** (offseason roster; the 90-player limit applies from the league year).
-**Changes at the league year (Entries 94 to 99):** Monroe and Sen'Derrick Marks re-signed and Alterraun Verner, Aqib Talib, Hakeem Nicks, Andrew Hawkins and Daniel Te'o-Nesheim signed in the replay; Cameron Bradfield (RFA) and Toney Clemons, Mike Brown and Austin Pasztor (ERFA) tendered; the six reserve/future contracts took effect. Left control at 4 p.m.: Chad Henne, Jeremy Cain (re-signed March 19), Maurice Jones-Drew, C.J. Wilson, Alan Ball and Brent Grimes (unrestricted; Henne's and Cain's negotiations reopened in the replay), Allen Reisner and Kevin Rutland (not tendered) and Brad Meester (retired). See section 5.
-**Practice squad:** **0** (no 2014 practice squad exists before the regular season). **Reserve/future contracts:** the six signed February 3 and 5, 2014 (ledger Entry 85) are now effective and listed in section 3.
-**Record:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-1 (AFC Wild Card: Jacksonville 38, Kansas City 14; AFC Divisional: Tennessee 20, Jacksonville 13).
+**Changes at the league year (Entries 94 to 99):** Monroe and Sen'Derrick Marks re-signed and Alterraun Verner, Aqib Talib, Hakeem Nicks, Andrew Hawkins and Daniel Te'o-Nesheim signed in the replay; Cameron Bradfield (RFA) and Toney Clemons, Mike Brown and Austin Pasztor (ERFA) tendered; the six reserve/future contracts took effect. Left control at 4 p.m.: Chad Henne, Jeremy Cain (re-signed March 19), Maurice Jones-Drew, C.J. Wilson, Alan Ball and Brent Grimes (unrestricted; Henne's and Cain's negotiations reopened in the replay), Allen Reisner and Kevin Rutland (not tendered) and Brad Meester (retired). See departed-player history.
+**Practice squad:** **0** (no 2014 practice squad exists before the regular season). **Reserve/future contracts:** the six signed February 3 and 5, 2014 (ledger Entry 85) are now effective and listed in current controlled players.
+**Archived 2013 record:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-1 (AFC Wild Card: Jacksonville 38, Kansas City 14; AFC Divisional: Tennessee 20, Jacksonville 13).
 
 <!-- player-ages-as-of: 2014-03-24 -->
 
 Birth dates are sourced in the [identity registry](../../library/data/player_birth_dates.json). **Age** is completed years at the master date in Document 5; [league ages](player_ages.md) update through the same renderer.
 
-## 1. How to read this page
+## How to read this page
 
-Players are grouped by position. **Pos** is the roster position in Document 4. **Status** is the offseason roster (90-player limit from the league year) or a reserve list; tendered and franchise players are shown with their unsigned tender. **Availability** is the club's current medical communication; "No communicated restriction" means none has been communicated, and game-week status still requires fresh communication before each game. **Role** lists only assignments already decided in canon (ledger, Document 5 §4 and the weekly outputs; depth order in `depth_chart.json`); a dash means no assignment has been set, not a demotion. The depth chart below those roles is set by staff decisions and is not implied by the order of this page.
+Players are grouped by position. **Pos** is the roster position in Document 4. **Status** is the offseason roster (90-player limit from the league year) or a reserve list; tendered and franchise players are shown with their unsigned tender. **Availability** is the club's current medical communication; "No communicated restriction" means none has been communicated, and game-week status still requires fresh communication before each game. **Role** lists only assignments already decided in canon (ledger, Document 5 §4 and the weekly outputs; depth order in `offseason/depth_chart_working.json`); a dash means no assignment has been set, not a demotion. The depth chart below those roles is set by staff decisions and is not implied by the order of this page.
 
-## 2. How the roster was formed
+## How the roster was formed
 
-Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers and formed an eight-player practice squad on September 1, and completed regular-season cap compliance on September 4. At the 2014 league year (March 11, 4 p.m. ET) the 53 became an offseason roster of 51: the changes are listed in section 5.
+Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers and formed an eight-player practice squad on September 1, and completed regular-season cap compliance on September 4. At the 2014 league year (March 11, 4 p.m. ET) the 53 became an offseason roster of 51: the changes are listed in departed-player history.
 
-## 3. Current controlled players
+## Current controlled players
 
 ### Quarterbacks (3)
 
@@ -145,22 +145,22 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | Bryan Anger | P | 1988-10-06 | 25 | Offseason roster | No communicated restriction | P |
 | Jeremy Cain | LS | 1980-03-24 | 34 | Offseason roster (re-signed March 19, 2014) | No communicated restriction | LS (2013 incumbent; camp competition planned) |
 
-## 4. Reserve/future contracts (2014) and the 2013 practice squad
+## Reserve/future contracts (2014) and the 2013 practice squad
 
-Jacksonville's 2013 practice squad (formed September 1, 2013, ledger Entry 27) had eight players: Tyler Bray, Richard Murphy, Will Ta'ufo'ou, Jerrell Jackson, Jerome Long, D'Anthony Smith, Brandon King and Antwon Blake. Their practice-squad contracts ended with the season. Under Stone's February 2 memo, Caldwell offered six of them reserve/future contracts on February 3, 2014; all six signed (ledger Entry 85; `career/2014/offseason/futures_results.json`). Terms for each: the 2014 minimum for his credited seasons, no guarantee, no signing bonus. The contracts took effect at the 2014 league year (March 11, 2014, 4:00 p.m. ET) and count toward the 90-player limit; the six players are listed with their position groups in section 3.
+Jacksonville's 2013 practice squad (formed September 1, 2013, ledger Entry 27) had eight players: Tyler Bray, Richard Murphy, Will Ta'ufo'ou, Jerrell Jackson, Jerome Long, D'Anthony Smith, Brandon King and Antwon Blake. Their practice-squad contracts ended with the season. Under Stone's February 2 memo, Caldwell offered six of them reserve/future contracts on February 3, 2014; all six signed (ledger Entry 85; `career/2014/offseason/futures_results.json`). Terms for each: the 2014 minimum for his credited seasons, no guarantee, no signing bonus. The contracts took effect at the 2014 league year (March 11, 2014, 4:00 p.m. ET) and count toward the 90-player limit; the six players are listed with their position groups in current controlled players.
 
 | Player | Pos | DOB | Age | Status | Signed |
 | --- | --- | --- | ---: | --- | --- |
-| Tyler Bray | QB | 1991-12-27 | 22 | Effective March 11, 2014 (section 3) | February 3, 2014 |
-| Richard Murphy | RB | 1986-09-18 | 27 | Effective March 11, 2014 (section 3) | February 3, 2014 |
-| Jerrell Jackson | WR | 1990-02-06 | 24 | Effective March 11, 2014 (section 3) | February 3, 2014 |
-| Jerome Long | DT | 1990-04-09 | 23 | Effective March 11, 2014 (section 3) | February 3, 2014 |
-| D'Anthony Smith | DT | 1988-06-09 | 25 | Effective March 11, 2014 (section 3) | February 5, 2014 (market draw against a real Seattle reserve/future contract of the same date) |
-| Antwon Blake | S | 1990-08-09 | 23 | Effective March 11, 2014 (section 3) | February 3, 2014 |
+| Tyler Bray | QB | 1991-12-27 | 22 | Effective March 11, 2014 (current controlled players) | February 3, 2014 |
+| Richard Murphy | RB | 1986-09-18 | 27 | Effective March 11, 2014 (current controlled players) | February 3, 2014 |
+| Jerrell Jackson | WR | 1990-02-06 | 24 | Effective March 11, 2014 (current controlled players) | February 3, 2014 |
+| Jerome Long | DT | 1990-04-09 | 23 | Effective March 11, 2014 (current controlled players) | February 3, 2014 |
+| D'Anthony Smith | DT | 1988-06-09 | 25 | Effective March 11, 2014 (current controlled players) | February 5, 2014 (market draw against a real Seattle reserve/future contract of the same date) |
+| Antwon Blake | S | 1990-08-09 | 23 | Effective March 11, 2014 (current controlled players) | February 3, 2014 |
 
 **Not offered:** Brandon King (DB) and Will Ta'ufo'ou (FB) were not offered contracts under Stone's memo. They left as free agents when their practice-squad contracts ended and are no longer under Jacksonville control. No later destination is recorded for either.
 
-## 5. Departures
+## Departures
 
 ### March 11, 2014, 4 p.m. ET (Entries 94 and 95)
 
@@ -184,6 +184,6 @@ Uche Nwaneri (G) was traded to Arizona with Jacksonville's 2015 first, 2015 four
 
 Claimed by other clubs on waivers: Austen Lane, Brandon Marshall, Isaiah Stanback.
 
-## 6. Finances
+## Finances
 
-The last closed 2013 accounting remains in `offseason/current_cap_worksheet.md`. For 2014, use the [2014 contract table](../2014/offseason/contract_table.md) and [ten-year tracker](../finances/jaguars_cap.md), through Entry 95. Wilson and Jonathan Grimes are signed through 2014 and the six futures through 2015 under the adopted contract completion.
+The [current 2014 worksheet](offseason/current_cap_worksheet.md), [contract table](offseason/contract_table.md) and [player cap](../finances/jaguars_cap.md) own current financial presentation. Through Entry 100, the scheduled player obligations are $126,394,321 including tenders, plus $2,240,675 dead money. Club carryover and certified cap room remain unresolved. Entry 101 changes record ownership only. The [2013 worksheet](../2013/offseason/current_cap_worksheet.md) preserves prior accounting.

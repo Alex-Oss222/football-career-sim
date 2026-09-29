@@ -33,7 +33,7 @@ class SeasonPaths:
     root: Path = ROOT
 
     def __post_init__(self):
-        if type(self.year) is not int or self.year not in (2013, 2014):
+        if type(self.year) is not int or not 2013 <= self.year <= 2100:
             raise ValueError('Unsupported season: %r' % self.year)
         object.__setattr__(self, 'root', Path(self.root).resolve())
 
@@ -63,7 +63,7 @@ class SeasonPaths:
     def generations(self): return self.career / 'migrations/event_generations.json'
 
     def cache(self, week, kind):
-        if type(week) is not int or not 1 <= week <= 21 or kind not in ('inputs', 'results'):
+        if type(week) is not int or not 1 <= week <= (21 if self.year < 2021 else 22) or kind not in ('inputs', 'results'):
             raise ValueError('Invalid weekly cache identity')
         return self.root / '.sim_cache' / str(self.year) / ('week_%02d_%s.json' % (week, kind))
 
@@ -72,7 +72,8 @@ class SeasonPaths:
         if self.year != 2013 and (data.get('season') != self.year or data.get('status') != 'RELEASED'):
             raise ValueError('Season fixtures must have the requested season and RELEASED status')
         games = data['games']
-        if any(int(g['date'][:4]) != self.year for g in games):
+        if any(not (g['date'].startswith(str(self.year) + '-') or
+                    g['date'].startswith(str(self.year + 1) + '-01-')) for g in games):
             raise ValueError('Fixture dates do not belong to requested regular season')
         return games
 
@@ -96,7 +97,9 @@ def game_release_errors(season, root=ROOT):
         return []
     from . import KERNEL_VERSION
     data = json.loads((Path(root) / 'runtime/season_readiness.json').read_text())
-    release = data['seasons'][str(season)]
+    release = data['seasons'].get(str(season))
+    if release is None:
+        return ['No season release registered for %d; preparation does not authorize games' % season]
     if {g['id'] for g in release['gates']} != RELEASE_GATES or len(release['gates']) != len(RELEASE_GATES):
         raise ValueError('Season release must contain each required gate exactly once')
     errors = []
@@ -118,8 +121,9 @@ def game_release_errors(season, root=ROOT):
             errors.append('Missing %d input: %s' % (season, getattr(paths, name).relative_to(paths.root)))
     if paths.schedule.is_file():
         try:
-            if len(paths.regular_games()) != 256:
-                errors.append('2014 regular-season fixture count must be 256')
+            expected = 256 if season < 2021 else 272
+            if len(paths.regular_games()) != expected:
+                errors.append('%d regular-season fixture count must be %d' % (season, expected))
         except (ValueError, KeyError, TypeError) as exc:
             errors.append('Invalid season fixtures: ' + str(exc))
     return errors

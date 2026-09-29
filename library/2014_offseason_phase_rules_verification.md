@@ -1,5 +1,9 @@
 # 2014 offseason phase planning: historical verification
 
+## Historical schedule correction
+
+The user selected historical dates on September 29, 2026. This supersedes the branch-date alternatives below. [Jaguars, April 3](https://www.jaguars.com/news/ota-minicamp-dates-set-12840120): April 21 start; OTAs May 27–29, June 2–3, 5, 9–10, 12–13; mandatory minicamp June 17–19. [Jaguars, April 30](https://www.jaguars.com/news/jaguars-open-three-minicamp-practices-12936883): two rookie days May 16–17, 1:10–3:15 p.m. each day. The permitted three-day window is not evidence of a third Jacksonville practice. Article 21 filing remains due by the agreed date, no later than March 31 for April 21. No receipt is recorded. Phase One April 21–May 2 and Phase Two May 5–23 are derived from the two-/three-week phase lengths.
+
 **Prepared:** September 29, 2026. **Career checkpoint:** February 17, 2014, Entry 86. Research only; no schedule filing, practice, contact, adoption or time advance is recorded.
 
 This supplements the [existing calendar research](2014_league_calendar_and_financial_rules.md) and [full-calendar verification](2014_full_calendar_verification.md). The [branch calendar](../career/2014/calendar.md) owns Jacksonville's proposed dates. The [decision package](../career/2014/offseason/phase_plan_decisions.md) owns the recommendations built from those dates.
