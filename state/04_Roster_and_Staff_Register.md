@@ -33,7 +33,7 @@
 | Next scheduled football event | None scheduled; next league dates are the Combine (February 19-25) and the March 11 league year: see Document 5 section 7 |
 | Unresolved matter before participation | Recheck control, current medical instructions, calendar permissions and each reserve/future player's credited seasons before any 2014 participation |
 
-The cap worksheet above is the last reconciled **2013** accounting owner. The [2014 preparation worksheet](../career/2014/offseason/current_cap_worksheet.md) supplies open work, not certified cap room. The eight 2013 practice-squad contracts have ended; six players signed reserve/future contracts for 2014 and two left (Entry 85); no 2014 contract or participation is presumed.
+The cap worksheet above is the last reconciled **2013** accounting owner. The [2014 preparation worksheet](../career/2014/offseason/current_cap_worksheet.md) supplies open work, not certified cap room. The [2014 contract table](../career/2014/offseason/contract_table.md) is a derived per-player view of terms and sourced 2014 figures. The eight 2013 practice-squad contracts have ended; six players signed reserve/future contracts for 2014 and two left (Entry 85); no 2014 contract or participation is presumed.
 
 ## Canon and evidence conventions
 
@@ -436,7 +436,7 @@ Record only material, person-specific issues. Do not create a locker-room morale
 
 ### Base depth chart
 
-Current depth order is `career/2013/depth_chart.json` (effective January 6, AFC Divisional preparation; read by `runtime/week_inputs.py`), with decided roles in the Role column of `career/2013/roster.md`. The camp-era hierarchy in `career/2013/offseason/training_camp/position_battles.md` and `roster_decisions.md` is history.
+Current depth order is `career/2013/depth_chart.json` (effective January 6, AFC Divisional preparation; read by `runtime/week_inputs.py`), with decided roles in the Role column of `career/2013/roster.md`. The camp-era hierarchy in `career/2013/offseason/training_camp/position_battles.md` and `roster_decisions.md` is history. The [2014 working depth chart](../career/2014/depth_chart.md) carries this order into 2014 with contract flags; it records no 2014 decision and is not a game input.
 
 ### Personnel and situational packages
 
