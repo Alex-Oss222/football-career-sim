@@ -1,6 +1,47 @@
-# Jacksonville 2014 Offseason program, Phases One and Two: execution record
+# Jacksonville 2014 | Phases One and Two training report
 
 <!-- sim-meta: {"event_entry": 111, "kind": "phase_output", "status": "COMPLETE", "through": "2014-05-23"} -->
+
+**April 21 to May 23, 2014.** Jacksonville finished this part of the spring able to rehearse the assigned offense and defense without another unit across from it. The most useful progress came in the shared jobs: the quarterback and receivers agreeing on the Boot Flood answer, the line and backs using the same protection call, and the defense sorting out who takes a receiver from a bunch. Those answers still need to hold against an opponent in OTAs.
+
+## Phase One: learning the calls in the room
+
+The first two weeks combined classroom football with individual strength, conditioning and rehabilitation work. The performance staff ran the physical work; position coaches did not coach or observe it. The record contains individual physical plans, but no measured strength or conditioning gains to report. Rackley continued his classroom work while his existing restriction governed his physical work.
+
+The returning offense reviewed Power, Counter, Inside Zone, Stick, Drive and the Mesh work it already knew. Boot Flood needed a clearer explanation. In the first discussion, the quarterbacks and the intermediate and flat receivers gave different answers when a defender was free outside the quarterback's rollout path. Bates and Tice had not taught that situation with one consistent cue. They settled the wording, and on April 29 the players gave the same answer from a fresh diagram: the quarterback has a taught outlet or throwaway answer and is not expected to outrun that edge defender.
+
+Protection teaching had a similar problem. Bates and Yarno were giving different instructions about resetting the point when two defenders threatened the A-gaps beside the center. They reconciled their cues on April 24. Cousins, Brewster and the backs subsequently identified the point and the calls each needed to repeat correctly on the board. This established that they understood one another in the meeting room. It did not yet establish that they could do it before a snap.
+
+Crennel's defensive meetings connected each call to what it was meant to take away, what it conceded and how the defense would answer. That addressed the question Marks and Miller had raised about the interior rush's responsibilities. Daryl Smith, Posluszny and Stanford worked through the communication job. Stanford needed the motion answer walked through again during the first week, then gave the right answer to a different motion diagram on April 29. Posluszny could explain his front and fit calls without prompting.
+
+The newcomers also needed Jacksonville's words translated into familiar football. The position coaches prepared room-specific word lists after the veteran newcomers asked how the protection and coverage language compared with their previous clubs. Westhoff introduced the four punt situations in meetings: field position, plus territory, backed up and end game. There was no coached kicking or snapping in this phase.
+
+## Phase Two: putting the teaching on the field
+
+From May 5, the coaches could work through the assignments with players in motion. The offense rehearsed formations, route landmarks, run steps and protection calls on air. Coaches supplied fronts and edge positions on cards. The defense worked separately on alignment, fits, coverage drops, pursuit and rush lanes. There was no offense against defense or contact.
+
+Boot Flood's classroom correction carried into movement on May 6 and 8. The quarterbacks and the intermediate and flat receivers stayed with the taught answer when the card showed a free edge. They did it again the following week after the formation changed. Cousins, Brewster and the backs also carried their protection identification into the unopposed work, including the double A-gap picture. The next question is whether a moving defense can make them late or pull them into different answers.
+
+The defensive emphasis moved toward Nickel Even and Cover 1, with the post safety, underneath help and individual matchups identified. The same starting looks also carried Cover 3 and Quarters. On May 14, the bunch walkthrough produced two answers about who owned the point receiver. Oden clarified the rule before the next day's work; the group agreed on the repeat and again on May 20 with rookies involved. Stanford delivered the call, check and motion response while the group moved, but the motion was still supplied by a card.
+
+The 26 rookies joined the veteran groups on May 19 after their separate minicamp. Hurns moved from X to Z without losing his assignment, Shaw kept his launch point when the protection point changed, and Lucas repeated his corrected set landmark. Bitonio and Turner worked beside Brewster at the guard starting points Stone had set. Norwell rotated at both guards; Linsley practiced setting the point with the quarterbacks. These were useful checks of language and footwork, with the guard blocking questions still ahead.
+
+## Special teams and individual work
+
+Westhoff moved the punt instruction onto the field in Phase Two and recorded Cain's operation with Anger and Scobee without a fault. Kreiter joined that work after rookie minicamp and established his own clean baseline. Coverage players rehearsed releases, lanes and substitutions separately from an opposing unit. Neither snapper has been assessed against a live rush.
+
+Individual work continued alongside the team teaching. Lane Johnson took limited left-side sets after his right-tackle work. Asper worked at both guards, Thielen at outside, slot and H alignments, and Kelce attached and detached. The defensive cross-training continued for Poyer, Moore, Prosinski and Trawick. Those opportunities added practice at another job without assigning a new role.
+
+## What goes into OTAs
+
+The first opposed work starts May 27: Boot Flood against an actual edge, protection calls against a changing front, the bunch rule against receivers releasing, and the defensive relay while the offense moves. The receivers' request to have split adjustments explained during install has been taken into the teaching. Each signed participant received his Phase Two written note at the May 23 handoff; individual film packets still have not been issued.
+
+The five starting points remain Nicks at WR1, Adams at WR3, Bitonio at left guard, Turner at right guard and Mincey at Edge 1, with their existing competitions open. Bradfield, Pasztor, Clemons and Brown remain outside the program under Stone's unsigned-tender instruction. No new medical restriction was communicated; Lucas's foot remains a performance-staff review item. There is no new football decision for Stone before the planned OTA work.
+
+[Staff plan](staff_plan.md) · [Player assessments](player_assessments.md) · [Report templates](../../../../foundation/templates/offseason_training/README.md)
+
+<details>
+<summary>Detailed session record: dates, individual evidence and continuity</summary>
 
 **COMPLETE through May 23, 2014.** Phase One ran April 21 to 24 and April 28 to May 1, with the staff handoff May 2. Phase Two ran May 5 to 8, May 12 to 15 and May 19 to 22, with staff reviews May 9 and May 16 and the Phase Two handoff May 23. The draft (May 8 to 10), the rookie contracts and the Rackley trade are in the ledger, not here; the May 16 and 17 rookie minicamp has its [own record](../rookie_minicamp/training_report.md). [Plan](staff_plan.md) owns intended work; [evidence summary](player_assessments.md) summarizes only what is below. Event record: [2014 ledger](../../ledger.md), Entries 107, 109 and 111.
 
@@ -255,3 +296,5 @@ The staff handoff was held as the plan requires, with no player workout.
 - **Limited by medicine:** none. Lucas's foot stays a review item with no communicated limit.
 - **Open staff decisions:** none new. The five role starting points are set and remain open competitions; Hawkins and Norwell are the named competition without a place; every other rookie's place is Stone's to set from the work. Film packet approval is still open; the January 31 receipts remain unverified. No user decision is required before OTAs.
 - **Next legal opportunities:** OTA block 1, May 27 to 29, the first lawful non-contact opposition; the four unsigned tenders' catch-up plans if they sign.
+
+</details>

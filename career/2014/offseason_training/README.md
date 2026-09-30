@@ -39,6 +39,8 @@ Start with the player at the current date, including his full season of experien
 
 ## Phase route
 
+[Report templates](../../../foundation/templates/offseason_training/README.md) define the distinct Phase One, Phase Two, rookie minicamp, OTA and mandatory minicamp reports, including how they read in chat. [Research and examples](../../../docs/offseason_training_reports.md) explain the change. The completed spring reports open with the football account; expand the detailed session record when you need the full individual evidence.
+
 | Phase | Plan | Required handoff |
 |---|---|---|
 | Offseason program, Phases One and Two | [Plan](phases_one_and_two/staff_plan.md), [output](phases_one_and_two/training_report.md), [evidence](phases_one_and_two/player_assessments.md) | Permitted physical work and unopposed individual/group teaching; no offense against defense; carry open checks into OTAs |

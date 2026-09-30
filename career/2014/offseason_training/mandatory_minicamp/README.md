@@ -10,6 +10,8 @@ Complete. Physicals June 16 (no restriction communicated); practices June 17 to 
 | [Training report](training_report.md) | What actually occurred: sessions, participants, observations, decisions and the handoff. |
 | [Player assessments](player_assessments.md) | The supported player and unit assessment drawn from the report, with unresolved questions. |
 
+Report format: [Mandatory minicamp](../../../../foundation/templates/offseason_training/mandatory_minicamp_report.md). The report explains what held through spring and the remaining camp work; the detailed record remains expandable below it.
+
 <!-- folder-files -->
 ## Files in this folder
 

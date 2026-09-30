@@ -1,6 +1,6 @@
 # Jacksonville 2014 Mandatory veteran minicamp: evidence summary
 
-<!-- sim-meta: {"event_entry": 113, "kind": "evidence_summary", "source": "career/2014/offseason_training/mandatory_minicamp/training_report.md", "source_sha256": "22aacae63081420b7e04fe0c5f17096bedd3866e6905fe8ed0874539c33e7299", "status": "COMPLETE", "through": "2014-06-20"} -->
+<!-- sim-meta: {"event_entry": 113, "kind": "evidence_summary", "source": "career/2014/offseason_training/mandatory_minicamp/training_report.md", "source_sha256": "77f9137f03eec6fe9f62a78217a244fb30e1bbd2805b38aa383abfa5519181a2", "status": "COMPLETE", "through": "2014-06-20"} -->
 
 **COMPLETE through June 20, 2014 (physicals June 16; practices June 17 to 19; staff spring handoff June 20).** The [execution record](training_report.md) owns the evidence; the [plan](staff_plan.md) holds intended work. The 74 signed players were present under the mandatory rule; the four unsigned tenders are not under contract, so the rule does not reach them and their absence carries no consequence. All work was without contact: it can support recognition, communication, timing and spacing against an opposing look and cannot establish blocking, a won rush, a finished tackle or a physical matchup.
 

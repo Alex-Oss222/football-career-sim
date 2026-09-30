@@ -1,6 +1,49 @@
-# Jacksonville 2014 Mandatory veteran minicamp: execution record
+# Jacksonville 2014 | Mandatory minicamp training report
 
 <!-- sim-meta: {"event_entry": 113, "kind": "phase_output", "status": "COMPLETE", "through": "2014-06-20"} -->
+
+**Practices June 17 to 19; staff review June 20, 2014.** Jacksonville finished spring with the starting offense handling the late protection changes that had caused trouble in OTAs. The defense could run its man and zone answers from the same looks and pass the call through the backup communicators. The clearest remaining coverage question was a linebacker carrying a back up the field. The relief center-quarterback pairing also left a timing correction to revisit.
+
+All 74 signed players took part after June 16 physicals. No participation restriction was communicated. The practices remained non-contact; mandatory minicamp did not supply the blocking, tackling or contact-release evidence still needed to decide several jobs.
+
+## Offense: what held without reminders
+
+The staff began with the carried formations, cadence, substitutions and protection calls, then ran the established menu without the usual coaching prompts. Wilson once set the wrong launch depth on Sprint Flood from Trey. His read was intact; the correction was where he delivered it from. He repeated the depth correctly and kept it on June 19.
+
+The bigger question was the interior protection. Bates showed Cousins the June 9 overload from the end-zone practice angle, as Cousins had requested. Cousins identified the wrong-way slide and the correct HALF answer before Bates supplied the coaching point. Yarno showed the line the sideline drawing its council representatives had requested. On the field June 17, Cousins, Brewster and the guards completed the point, echo and confirmation before the snap, including Turner's call, and sent the slide toward the overload.
+
+They repeated that work June 19 without the drawing or a prompt. The late front change and overload were handled correctly. The improvement belongs to that group in this setting. In the relief work, Linsley's point with Henne came after the cadence had started on one late front change. It was on time on the repeat, with a later check still needed. Shatley and Larsen handled their assignments.
+
+The formation and personnel changes also held. Boot Flood kept its free-edge answer from Wing and Ace, and Lewis kept his corrected release path from Wing. Y-Cross moved from the earlier 12-personnel work to 11 personnel, with Thielen on the cross and Hawkins on the dig. The routes kept the taught stagger on June 18 and again the next day. The staff did not add a new menu at the end of this camp.
+
+## Defense: assignments and matchups
+
+Crennel used Nickel Even to check Cover 1 and the Robber-Rat family, with Cover 3 and Quarters coming from the same starting shells. Lowery and Rambo communicated the post responsibility and held their depth against the slot vertical. Rambo's ROLL call was late once after fast motion. Oden walked through the trigger again; the call was on time on June 19.
+
+Talib, Verner, Harris and Poyer knew their leverage and help. Harris nevertheless got caught in a tight-formation rub, leaving the crosser open. Oden corrected his path through it, and Harris kept that path on the following day's work. Poyer had a separate problem as the rat: he drove an intermediate crosser too early and left the low hole open to the check-down. He corrected it, then read the second threat before driving on June 19. The earlier bunch rule and Poyer-Moore stack exchange held.
+
+Stanford lost leverage at the top of a back's wheel route on June 18. Crennel also ran Cover 3 from the same shell on that picture, and the zone answer held. Stanford handled his one recorded wheel repeat the next day. That gives the staff something to revisit in camp and a coverage alternative already practiced; it does not settle the matchup. Telvin Smith's comparable work was assignment-correct.
+
+The backup communication was sound. Posluszny delivered the full call with Daryl Smith out, and Stanford did so with both ahead of him out of the huddle. His TRAVEL signal was on time against fast motion. The five-man pressure also kept its rush and replacement assignments when the offense changed its slide. The quick flat completion was the call's acknowledged concession, rather than evidence that a defender had lost his man.
+
+## Situations and special teams
+
+Cousins handled the two-minute and four-minute clock procedures and the boundary-or-middle decision. When coverage removed the first answer on June 19, he reached the second progression on time in the recorded reps. The held ball from June 10 did not recur that day. Henne needed no restated situation. Backed-up exchanges and ball security were clean in the recorded work.
+
+Westhoff finished the four punt families with end-game and plus-territory instructions. Anger put the punts to the assigned side; Cain and Kreiter matched operation timing in the record without a fault. The coverage units worked substitutions, releases and lanes, with finish against a live rush still ahead.
+
+## What the players take into summer and camp
+
+Each signed player received his summer sheet June 19: his primary job, technique priorities, assignments to review, conditioning emphasis and the work the coaches will check when camp begins. Those sheets were delivered; the prepared individual film packets were not. The June 20 handoff was a staff review, not another player practice.
+
+The interior line needs to carry the late-change calls into contact, and Linsley and Henne need more work together. Nicks, Adams and Hawkins need contact-release evidence for the receiver competitions. Kelce's attached blocking and the reserve tight ends' work remain open. Mincey and Branch need to rush against a live set. Crennel needs tackling, fit and man-coverage evidence with contact, including the back's vertical route and the rat's decisions under a rush. Westhoff still needs the snapper competition and a returner assessed in camp conditions.
+
+Stone changed none of the five rep starting points. No injury or new restriction was communicated, and Lucas's foot remains a review item. The four unsigned tenders remain outside the program. Summer work is player-directed under the existing instructions; this report ends at the June 20 handoff.
+
+[Staff plan](staff_plan.md) · [Player assessments](player_assessments.md) · [Report template](../../../../foundation/templates/offseason_training/mandatory_minicamp_report.md)
+
+<details>
+<summary>Detailed session record: all three days, summer instructions and continuity</summary>
 
 **COMPLETE through June 20, 2014.** Physicals were held June 16, the three practice days ran June 17, 18 and 19, and the staff spring handoff was written June 20. [Plan](staff_plan.md) owns intended work and is unchanged; [evidence summary](player_assessments.md) summarizes only what is below. Event record: [2014 ledger](../../ledger.md), Entry 113. Bradfield's June 16 tender question is an administrative event recorded in the ledger, not here.
 
@@ -171,3 +214,5 @@ Already on the calendar as proposed staff work: film availability and the queue 
 - **Limited by medicine:** none. No injury or restriction was communicated in the phase.
 - **Open staff decisions:** none new. The five starting points stand as open competitions. Film packet approval remains open; the January 31 receipts remain unverified.
 - **Player perspective actually offered:** the June 19 council confirmation and Cousins's June 17 identification of the slide on the tape. No other player statement is on record.
+
+</details>
