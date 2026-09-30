@@ -71,10 +71,12 @@ passer-rating leader at 119.2; Geno Smith was the low qualified reference at
 66.5. Those are passing-production benchmarks, not automatic grades for arm
 strength, ball placement or processing.
 
-Kirk Cousins' verified 2012 combine 40 was 4.93. NFL.com described his testing
-as ordinary rather than plus athleticism for a quarterback. Tom Brady's
-verified combine 40 was 5.28. A speed comparison can therefore favor Cousins
-over Brady while Brady can grade much higher in other quarterback traits.
+Kirk Cousins' verified 2012 combine 40 was 4.93, and contemporaneous NFL.com
+coverage described him as not a plus athlete with average testing. Geno Smith
+ran an official 4.59 at the 2013 combine, while NFL.com's combine archive lists
+Tom Brady at 5.28. That means a straight-line-speed comparison can place Cousins
+behind a mobile reference and ahead of a slower pocket passer without saying
+anything about which quarterback is better overall.
 
 ## Research sources
 
@@ -82,6 +84,9 @@ over Brady while Brady can grade much higher in other quarterback traits.
 - https://www.pro-football-reference.com/years/NFL/passing.htm
 - https://www.pro-football-reference.com/years/2013/leaders.htm
 - https://www.pro-football-reference.com/draft/2013-combine.htm
+- https://www.nfl.com/news/qb-stock-report-cousins-jefferson-improve-draft-grades-09000d5d82751875
+- https://www.nfl.com/news/geno-smith-shows-off-speed-at-nfl-scouting-combine-0ap1000000144548
+- https://www.nfl.com/news/2015-nfl-scouting-combine-six-quarterbacks-under-scrutiny-0ap3000000469368
 - https://www.nfl.com/news/gabbert-newton-present-challenges-in-translating-skills-to-nfl-09000d5d81f29676
 - https://www.nfl.com/news/few-have-necessary-traits-to-draft-coach-quarterbacks-09000d5d81f773b8
 - https://www.nfl.com/news/teams-struggling-to-find-franchise-back-in-this-year-s-draft-09000d5d81f337c4
