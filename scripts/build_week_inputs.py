@@ -33,8 +33,9 @@ AVERAGE_ANCHORS = {"offense_anchor": 2.0, "defense_anchor": 2.0, "special_teams_
 
 
 def call_sheet_path(week, season=2013):
-    matches = sorted(SeasonPaths(season, ROOT).regular_season.glob("week_%02d_*/call_sheet.json" % week))
-    matches += sorted(SeasonPaths(season, ROOT).postseason.glob("week_%02d_*/call_sheet.json" % week))
+    paths = SeasonPaths(season, ROOT)
+    matches = [p for p in (paths.week_folder(week) / "call_sheet.json",
+                           paths.week_folder(week, postseason=True) / "call_sheet.json") if p.exists()]
     return matches[0] if matches else None
 
 
@@ -60,8 +61,7 @@ def main():
     elif sheet_path is None:
         print("WEEK_INPUTS: BLOCKED")
         print("- No Jacksonville call sheet for Week %d: Stone's weekly plan must be frozen as "
-              "career/%d/regular_season/week_%02d_<away>_at_<home>/call_sheet.json before the draw."
-              % (args.week, args.season, args.week))
+              "%s before the draw." % SeasonPaths(args.season, ROOT).week_folder(args.week).relative_to(ROOT) / "call_sheet.json")
         return 1
     else:
         call_sheet = json.loads(sheet_path.read_text(encoding="utf-8"))["offensive_call_sheet"]

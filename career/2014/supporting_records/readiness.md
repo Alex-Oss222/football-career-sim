@@ -13,7 +13,7 @@ Checkpoint: July 29, 2014. Training camp is open (Block 1 complete through July 
 | Schedule | April 23 release frozen: [256 dated fixtures](../regular_season/schedule/fixtures.json), verified and tested; dated_fixtures gate VERIFIED | Apply dated amendments on their historical dates; two non-Jacksonville kickoff questions open in [sources](../regular_season/schedule/sources.md) |
 | League inputs | Offline 2,208-player research inventory | Dated movements, branch-control exclusions, draft swaps and legal 2014 Week 1 inputs |
 | Tooling | Explicit season paths, separate caches and event IDs, foreign-receipt checks and season-specific preflight | Accept a complete synthetic 2014 closure after legal inputs and the new engine exist |
-| Engine | E1/E2 policy and defect acceptance requirements recorded | All five Tier 1 fixes, relevant rules, calibration and an accepted release remain open |
+| Engine | E1/E2 policy and defect acceptance requirements recorded | Kernel 2014.4 released and verified live (Entry 115); the remaining season gates are the rules, the closure acceptance, legal rosters and financial control |
 | Private service | Existing authenticated contract | Verify the released kernel and merged public snapshot; no branch snapshot advancement |
 
 ## Current owners and activation

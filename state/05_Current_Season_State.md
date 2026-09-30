@@ -1,11 +1,11 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2014-JUL29-STATE-88`
-**Supersedes:** `JAX-2014-JUN28-STATE-87`
-**Snapshot effective:** Tuesday, July 29, 2014, after the first five training-camp practices (July 25 to 29, without full pads), the veteran report of July 24 and the rookie and first-year report of July 21 with their physicals, the July 14 league publication of camp report dates, the July 1 to 13 staff work, the mandatory veteran minicamp (June 16 physicals; practices June 17 to 19; staff spring handoff June 20), Caldwell's June 16 decision to leave Bradfield's qualifying offer in place, the start of the summer break (June 21) and the Rookie Symposium (June 22 to 28), the ten OTA days (May 27 to June 13) and their June 13 handoff, the June 2 tender deadline, the Phase Two handoff (May 23), the May 16 and 17 rookie minicamp, Stone's May 12 starting roles, the Rackley trade with Seattle (May 12), the 2014 draft (May 8 to 10), the 17 undrafted signings of May 10 and the nine rookie contracts signed May 11. The 2013 season is complete and archived.
-**Last reconciled:** September 30, 2026; Entry 114 (training camp opened; clock to July 29).
-**Global package checkpoint:** `Canonical update - July 29, 2014 - Training camp opened`
+**Version:** `JAX-2014-JUL29-STATE-89`
+**Supersedes:** `JAX-2014-JUL29-STATE-88`
+**Snapshot effective:** Tuesday, July 29, 2014, after the kernel 2014.4 release (Entry 115, no clock change), the first five training-camp practices (July 25 to 29, without full pads), the veteran report of July 24 and the rookie and first-year report of July 21 with their physicals, the July 14 league publication of camp report dates, the July 1 to 13 staff work, the mandatory veteran minicamp (June 16 physicals; practices June 17 to 19; staff spring handoff June 20), Caldwell's June 16 decision to leave Bradfield's qualifying offer in place, the start of the summer break (June 21) and the Rookie Symposium (June 22 to 28), the ten OTA days (May 27 to June 13) and their June 13 handoff, the June 2 tender deadline, the Phase Two handoff (May 23), the May 16 and 17 rookie minicamp, Stone's May 12 starting roles, the Rackley trade with Seattle (May 12), the 2014 draft (May 8 to 10), the 17 undrafted signings of May 10 and the nine rookie contracts signed May 11. The 2013 season is complete and archived.
+**Last reconciled:** September 30, 2026; Entry 115 (kernel 2014.4 released; clock unchanged at July 29).
+**Global package checkpoint:** `Canonical update - July 29, 2014 - Kernel 2014.4 released`
 
 This document states what is true now and what comes next. Event history lives in the [2014 ledger](../career/2014/ledger.md) (Entries 101 onward) and the [2013 ledger](../career/2013/ledger.md) (through Entry 100).
 
@@ -16,8 +16,8 @@ This document states what is true now and what comes next. Event history lives i
 | Document 1 | `a85650c6ba2557fbec8102dc7533aaf085bf188f` | Active foundation source |
 | Document 2 | `d745051bbd258f5134e43d0ea686f86a700bd5b7` | Active foundation source |
 | Document 3 | `30ff2bd2eb39f64e31565d5eaf76bdd2de7e54b5` | Active foundation source |
-| Document 4 | `JAX-2014-JUL29-REGISTER-67`; reconciled by Entry 114 | Roster, staff, medical and role register |
-| Document 6 | `career/2014/ledger.md` Entries 101 to 114; `career/2013/ledger.md` through Entry 100 | Latest closed event: Entry 114 |
+| Document 4 | `JAX-2014-JUL29-REGISTER-67`; reconciled by Entry 114, unchanged by Entry 115 | Roster, staff, medical and role register |
+| Document 6 | `career/2014/ledger.md` Entries 101 to 115; `career/2013/ledger.md` through Entry 100 | Latest closed event: Entry 115 |
 
 ## 1. Master clock and competition position
 
@@ -154,13 +154,13 @@ From [the 2014 calendar](../career/2014/calendar.md):
 | August 31, noon | Waiver claiming period expires; practice-squad signings | Eligibility and waiver status confirmed first; squad size follows the August 19 rule |
 | September 7 | Week 1 at Philadelphia | The 31 background clubs' Week 1 depth-chart library is prepared research ([record](../library/2014_week1_depth_charts.md); September 30, 2026) and becomes usable background input only when the clock reaches this date; rebuild it for any branch transaction after July 29 before Week 1 inputs are frozen. Captains named before Week 1 |
 
-User decisions owed: the engine release, in progress in a separate branch, before any 2014 game (`runtime/defect_register.md` lists the items; none is resolved here). The camp opening surfaced no new user-controlled football choice: no competition, place, role or transaction was decided, and none is required before July 30.
+User decisions owed: none on the engine; kernel 2014.4 is released and verified (Entry 115). The camp opening surfaced no new user-controlled football choice: no competition, place, role or transaction was decided, and none is required before July 30.
 
 ## 10. Engine and 2014 readiness
 
-- Installed kernel: 2014.3. Kernel 2014.1 tracks timeouts, conditions late draws on them, keeps kneel drives in their start zone and publishes goal-to-go distances; the two-minute warning and play clock remain embedded in real drive durations. Kernel 2014.2 conditions late-game category weights on the start zone and lets late cells borrow feasible drives from the same need. Kernel 2014.3 adds credit-only rules (sacks allowed, coverage tackles, long snaps, line starts, one club returner) and the Pro Bowl game type, with every result identical to 2014.2.
+- Installed and accepted kernel: 2014.4 (Entry 115; released September 30, 2026 and verified live). Every club carries its own offensive and defensive strength from dated honours and 2010 to 2012 production, with matchup terms for passing, run defense and protection, a punter term and a field-goal distance model; injuries arise in play and a consequential Jacksonville removal pauses the game for Stone's substitution. The 2013 results are unchanged. Release record: `runtime/README.md`; stated limits: `runtime/defect_register.md`.
 - The 2014 background Week 1 depth-chart library (`library/data/2014_week1_depth_charts.json`, 31 clubs reconciled to the July 29 roster, the draft pairing, the branch trades and the retirements) is prepared and gated until September 7, 2014; `legal_rosters` stays BLOCKED for Jacksonville's game depth chart and cutdown control.
-- `runtime/defect_register.md` ranks the open engine defects for the user's decision before any 2014 game; the first is that every club carries the same Average strength.
+- `runtime/defect_register.md` records the Tier 1 items as released in 2014.4 and the limits that remain on the record; no engine decision is owed before the first 2014 game.
 - Explicit season routing and `runtime/season_readiness.json` enforce the open release requirements even if the private service is reachable. The dated fixtures are frozen from the April 23 release. The Tier 1 engine fixes, rules, legal inputs and accepted end-to-end closure remain outstanding. See the [readiness and handoff checklist](../career/2014/supporting_records/readiness.md).
 
 ## 11. 2013 season archive
