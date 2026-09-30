@@ -14,6 +14,8 @@ Adopted at the user's September 30, 2026 request. These are the training-phase v
 
 Phases One and Two may share a season file. Give each its own account. Rookie minicamp is a separate event on the verified post-draft calendar; it is not automatically a third week between those phases. These templates do not apply to padded training camp or authorize a new-head-coach minicamp.
 
+Continue with the [training camp and preseason templates](../training_camp_and_preseason/README.md) when those phases are reached. Use the shared [player-assessment method](../training_camp_and_preseason/player_assessment.md) in every phase: connect the active playbook's taught job to the actual work, the coach's correction, needed support and the next useful test. Keep each phase's own evidence limits. The format carries forward each season; roster names, dates, active books and findings do not.
+
 ## Write the football
 
 Start with the staff's supported read of the work. Use ordinary football language: who lined up where, what was called, what the player saw or did, the effect on the play, the coaching correction and the later response. Explain an unfamiliar call where it matters. A named formation is useful only when its spacing, eligible receivers, motion or matchups explain the observation. Do not list the playbook as a substitute for reporting practice.

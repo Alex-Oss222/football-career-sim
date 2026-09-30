@@ -1,5 +1,7 @@
 # Offseason output template
 
+For training camp and integrated preseason work, continue with the [camp and preseason formats](training_camp_and_preseason/README.md). Their football reports and player assessments extend the stage-specific spring templates through the summer.
+
 **Status:** User-authored draft (`off seaosnr Output.txt`), refined 2026-09-17. This is the confirmed format for every offseason turn per Document 7 §5.2 — Document 7 does not invent this shape, it only points here.
 
 **When this template is used:** from the moment the coach's season ends (elimination, or the offseason clock starting after a Super Bowl loss/win) through the day before the next league year's preseason bulk report. In-season turns use `season_output_template.md` instead.

@@ -4,6 +4,10 @@
 
 Training camp is open: rookies and first-year players reported July 21 and veterans July 24, and the first five practices ran July 25–29 without full pads. The calendar controls the later rules and the preseason games remain blocked by the 2014 release gates.
 
+[Stone's camp approach](../../coaching_profiles/alex_stone.md#how-he-wants-training-camp-run) · [Reusable camp and preseason reports](../../../foundation/templates/training_camp_and_preseason/README.md) · [Research and worked examples](../../../docs/camp_and_preseason_reports.md)
+
+The reports explain the football practiced, how the players performed their jobs, what the coaches corrected and which combinations need another look. Use the current [camp report](training_camp/training_report.md) for the readable account through July 29. The preseason slots remain unplayed.
+
 | Open | What you will find |
 |---|---|
 | [Training camp](training_camp/README.md) | Staff plan, actual practice reports and player assessments. |
