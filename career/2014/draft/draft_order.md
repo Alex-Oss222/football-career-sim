@@ -18,20 +18,18 @@
 | 1 | Jacksonville Jaguars | 26 | 26 | **Jacksonville Jaguars** |
 | 2 | Arizona Cardinals | 6 | 38 | **Jacksonville Jaguars** |
 | 2 | Jacksonville Jaguars | 26 | 58 | **Washington Redskins** |
-| 3 | Indianapolis Colts | 18 | 82 | **Jacksonville Jaguars** |
 | 3 | Jacksonville Jaguars | 26 | 90 | **Jacksonville Jaguars** |
 | 4 | Jacksonville Jaguars | 26 | 129 | **Jacksonville Jaguars** |
 | 5 | Detroit Lions | 11 | 153 | **Jacksonville Jaguars** |
 | 5 | Jacksonville Jaguars | 26 | 168 | **Jacksonville Jaguars** |
-| 6 | Indianapolis Colts | 15 | 194 | **Jacksonville Jaguars** |
 | 6 | Jacksonville Jaguars | 26 | 205 | **Jacksonville Jaguars** |
 | 7 | Jacksonville Jaguars | 26 | 241 | **Jacksonville Jaguars** |
 
-Jacksonville currently owns **11 ordinary 2014 picks**: **13**; **26**; **38**; **82**; **90**; **129**; **153**; **168**; **194**; **205**; **241**. Jacksonville received **0 compensatory picks**; see [Compensatory selections](#compensatory-selections). No prospect is selected by this inventory.
+Jacksonville currently owns **9 ordinary 2014 picks**: **13**; **26**; **38**; **90**; **129**; **153**; **168**; **205**; **241**. Jacksonville received **0 compensatory picks**; see [Compensatory selections](#compensatory-selections). No prospect is selected by this inventory.
 
 | Future pick transferred | Current owner | Overall pick | Authority |
 |---|---|---|---|
-| 2015 Round 2, Jacksonville Jaguars original | Washington Redskins | Unknown; future branch season | User-corrected Cousins trade; ledger Entry 80; unconditional, slot unknown |
+| 2015 Round 2, Jacksonville Jaguars original | Jacksonville Jaguars | Unknown; future branch season | Returned by Washington for Nos. 82 and 194, March 31, 2014; 2014 ledger Entry 105; unconditional, slot set by the 2014 season |
 | 2015 Round 1, Jacksonville Jaguars original | Arizona Cardinals | Unknown; future branch season | Package I trade with Arizona, March 20, 2014; ledger Entry 99 |
 | 2015 Round 4, Jacksonville Jaguars original | Arizona Cardinals | Unknown; future branch season | Package I trade with Arizona, March 20, 2014; ledger Entry 99 |
 | 2016 Round 5, Jacksonville Jaguars original | Arizona Cardinals | Unknown; future branch season | Package I trade with Arizona, March 20, 2014; ledger Entry 99 |
@@ -141,7 +139,7 @@ Jacksonville currently owns **11 ordinary 2014 picks**: **13**; **26**; **38**; 
 | 15 | 79 | New England Patriots | New England Patriots | 8-8-0 | Retained original pick |
 | 16 | 80 | Atlanta Falcons | Atlanta Falcons | 8-8-0 | Retained original pick |
 | 17 | 81 | Carolina Panthers | Carolina Panthers | 8-8-0 | Retained original pick |
-| 18 | 82 | Indianapolis Colts | Jacksonville Jaguars | 8-8-0 | Shorts and Blackmon trade with Indianapolis, March 31, 2014; 2014 ledger Entry 104 |
+| 18 | 82 | Indianapolis Colts | Washington Redskins | 8-8-0 | Colts picks traded to Washington, March 31, 2014; 2014 ledger Entry 105 |
 | 19 | 83 | Green Bay Packers | Green Bay Packers | 8-8-0 | Retained original pick |
 | 20 | 84 | San Diego Chargers | San Diego Chargers | 8-6-2 | Retained original pick |
 | 21 | 85 | Tampa Bay Buccaneers | Tampa Bay Buccaneers **conditional hold** | 9-7-0 | revis: One pick to NYJ: R3 if Revis remains on TB roster March 13, otherwise R4. Both alternatives reserved. |
@@ -283,7 +281,7 @@ Jacksonville currently owns **11 ordinary 2014 picks**: **13**; **26**; **38**; 
 | 12 | 191 | Oakland Raiders | Oakland Raiders | 7-9-0 | Retained original pick |
 | 13 | 192 | Washington Redskins | Washington Redskins | 7-8-1 | Retained original pick |
 | 14 | 193 | Carolina Panthers | Carolina Panthers | 8-8-0 | Retained original pick |
-| 15 | 194 | Indianapolis Colts | Jacksonville Jaguars | 8-8-0 | Shorts and Blackmon trade with Indianapolis, March 31, 2014; 2014 ledger Entry 104 |
+| 15 | 194 | Indianapolis Colts | Washington Redskins | 8-8-0 | Colts picks traded to Washington, March 31, 2014; 2014 ledger Entry 105 |
 | 16 | 195 | Green Bay Packers | Green Bay Packers | 8-8-0 | Retained original pick |
 | 17 | 196 | New York Giants | New York Giants | 8-8-0 | Retained original pick |
 | 18 | 197 | New England Patriots | New England Patriots | 8-8-0 | Retained original pick |

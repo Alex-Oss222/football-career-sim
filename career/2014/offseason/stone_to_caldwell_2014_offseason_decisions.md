@@ -441,3 +441,40 @@ The user subsequently selected the historical calendar: rookie camp May 16–17;
 ## September 30, 2026 amendment: trade Shorts and Blackmon
 
 **User instruction, at the March 31, 2014 branch checkpoint.** Trade Cecil Shorts and Justin Blackmon for draft picks, ideally one in rounds 2 to 4. Jacksonville takes the dead money. The receiver room after the trade is Nicks, Hawkins, Thielen, Clemons, Brown and Jerrell Jackson, with Davante Adams the plan at No. 38. This replaces the earlier rule that kept Shorts once the Seattle trade was not triggered. The result is recorded in the [trade record](../trades/shorts_blackmon_to_indianapolis_2014-03-31.md).
+
+## September 30, 2026 amendment: trade the Colts picks for a 2015 pick
+
+**User instruction, at the March 31, 2014 branch checkpoint.** Trade the two picks received from Indianapolis, No. 82 and No. 194, for a 2015 pick. The result is in the [trade record](../trades/colts_picks_to_washington_2014-03-31.md).
+
+## September 30, 2026 amendment: complete undrafted board
+
+**User instruction, at the March 31, 2014 branch checkpoint.** This is the complete undrafted board. It keeps the original ten and the four alternates and adds ten names. Caldwell calls in this order immediately after the seventh round ends. It replaces the earlier watch-list order and the linemen-first call order. The earlier target of at least five offensive linemen among the undrafted signings still stands when enough eligible, scouted linemen go undrafted; this board carries six.
+
+| Order | Player | Position, school | Note |
+|---:|---|---|---|
+| 1 | Shaquil Barrett | EDGE/OLB, Colorado State | |
+| 2 | Denico Autry | DL/DE, Mississippi State | |
+| 3 | Andrew Norwell | G, Ohio State | |
+| 4 | Christian Jones | LB, Florida State | |
+| 5 | Allen Hurns | WR, Miami | |
+| 6 | Cornelius Lucas | OT, Kansas State | |
+| 7 | Adrian Phillips | S, Texas | |
+| 8 | Matt Feiler | G/T, Bloomsburg | |
+| 9 | Cameron Brate | TE, Harvard | |
+| 10 | Todd Davis | LB, Sacramento State | |
+| 11 | James Hurst | OT, North Carolina | Medical hold: signs only after his leg injury is cleared |
+| 12 | Tyler Shatley | G/C, Clemson | |
+| 13 | Albert Wilson | WR/KR, Georgia State | |
+| 14 | Trey Burton | TE/H-back, Florida | |
+| 15 | Tyler Larsen | C/G, Utah State | |
+| 16 | Connor Shaw | QB, South Carolina | |
+| 17 | Kasim Edebali | EDGE, Boston College | |
+| 18 | Stephen Morris | QB, Miami | |
+| 19 | Marcel Jensen | TE, Fresno State | |
+| 20 | Harold "Gator" Hoskins | TE/H-back, Marshall | |
+| 21 | Jackson Jeffcoat | EDGE, Texas | |
+| 22 | Taylor Gabriel | WR/KR, Abilene Christian | |
+| 23 | Willie Snead | WR, Ball State | |
+| 24 | Casey Kreiter | LS, Iowa | Specialist signing, to compete with Jeremy Cain |
+
+**Unchanged conditions.** A player is called only if he actually goes undrafted in the branch draft, has a pre-draft scouting report and, if an underclassman, is on the January 19 special-eligibility list. Each is a separate negotiation that he may decline or lose to another club. Signings stop when the 90-player offseason limit is reached.

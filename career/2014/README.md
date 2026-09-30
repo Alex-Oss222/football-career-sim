@@ -1,6 +1,6 @@
 # Jacksonville 2014
 
-**Current checkpoint:** March 31, 2014; Entry 104 (Shorts and Blackmon traded to Indianapolis for Nos. 82 and 194). There are 53 controlled players: 49 signed and four unsigned tenders. Eleven draft picks: 13, 26, 38, 82, 90, 129, 153, 168, 194, 205 and 241; no compensatory award. Future picks acquired: Miami's 2015 third and Houston's 2015 fourth; Jacksonville's 2017 seventh went to Miami. Package G (Allen to Arizona for its 2015 fourth) is agreed in principle, pending Posluszny's clearance. No offseason football phase or 2014 game has run.
+**Current checkpoint:** March 31, 2014; Entry 105 (the two Colts picks, Nos. 82 and 194, traded to Washington for Jacksonville's 2015 second, after Shorts and Blackmon went to Indianapolis for them the same day). There are 53 controlled players: 49 signed and four unsigned tenders. Nine draft picks: 13, 26, 38, 90, 129, 153, 168, 205 and 241; no compensatory award. 2015 picks held: Jacksonville's own second, Miami's third and Houston's fourth; Jacksonville's 2017 seventh went to Miami. Package G (Allen to Arizona for its 2015 fourth) is agreed in principle, pending Posluszny's clearance. No offseason football phase or 2014 game has run.
 
 ## Start and resume here
 

@@ -1,6 +1,6 @@
 # Jacksonville 2014 trades
 
-The trade window opened March 11, 2014 at 4 p.m. ET. Each trade's current status is in [trade targets](trade_targets.md); the March 24 outcomes come from the user's [trade resolution log](march_24_2014_trade_resolution.md). The March 31 Shorts and Blackmon trade with Indianapolis has its own [trade record](shorts_blackmon_to_indianapolis_2014-03-31.md).
+The trade window opened March 11, 2014 at 4 p.m. ET. Each trade's current status is in [trade targets](trade_targets.md); the March 24 outcomes come from the user's [trade resolution log](march_24_2014_trade_resolution.md). The March 31 Shorts and Blackmon trade with Indianapolis has its own [trade record](shorts_blackmon_to_indianapolis_2014-03-31.md), and so does the same day's trade of the two Colts picks to Washington for Jacksonville's 2015 second ([trade record](colts_picks_to_washington_2014-03-31.md)).
 
 ## Where each record lives
 
@@ -12,7 +12,7 @@ The trade window opened March 11, 2014 at 4 p.m. ET. Each trade's current status
 | [Draft ownership](../draft/pick_ownership.json) and [order](../draft/draft_order.md) | Canonical pick ownership, holds and numbering |
 | [Contract register](../offseason/contract_status_register.md) | Sourced terms and accounting uncertainties |
 
-The [original memo and explicit amendments](../offseason/stone_to_caldwell_2014_offseason_decisions.md) own Stone's intent. Caldwell owns negotiation and personnel decisions. The board is outbound players for picks; no incoming player or outgoing Jacksonville pick is authorized. Counterparties make independent decisions. Branch 2013 volume statistics may explain Stone's original call list but cannot supply a talent grade, fair-market price or guaranteed willingness to trade.
+The [original memo and explicit amendments](../offseason/stone_to_caldwell_2014_offseason_decisions.md) own Stone's intent. Caldwell owns negotiation and personnel decisions. The board is outbound players for picks; no incoming player is authorized, and no outgoing Jacksonville pick is authorized beyond the March 31 instruction to trade the two Colts picks for a 2015 pick. Counterparties make independent decisions. Branch 2013 volume statistics may explain Stone's original call list but cannot supply a talent grade, fair-market price or guaranteed willingness to trade.
 
 ## How a trade is run
 

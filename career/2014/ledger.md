@@ -158,3 +158,45 @@ The annual handoff manifest tracks team closeout, interviews, finances, roles/me
 **Atomic closure.** The trade record, completed trades, offer log, trade targets, pick ownership register and generated draft order, draft board, draft pairing, Indianapolis rails page, contract status register, contract table, cap worksheet, financial inputs and generated cap views, roster, working depth chart and its JSON copy, calendar, the 2014 README, readiness, operating baseline and Documents 4 and 5 agree. The private snapshot is advanced only after merge.
 
 **Commit closed - Canonical update - March 31, 2014 - Shorts and Blackmon traded to Indianapolis - canonical through March 31, 2014**
+
+## Entry 105 — March 31, 2014 — Colts picks traded to Washington for Jacksonville's 2015 second
+
+**Recorded:** September 30, 2026. **Simulation clock:** stays at March 31, 2014.
+**Checkpoint:** `Canonical update - March 31, 2014 - Colts picks traded to Washington for Jacksonville's 2015 second`
+**Preceding global package checkpoint:** `Canonical update - March 31, 2014 - Shorts and Blackmon traded to Indianapolis`
+
+**Authority and method.** Stone's instruction is in the [memo amendment of September 30, 2026](offseason/stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-trade-the-colts-picks-for-a-2015-pick): trade the two picks received from Indianapolis, No. 82 and No. 194, for a 2015 pick. Caldwell set the ask and Washington answered on its own need and pick value, with no private draw. Event owner: [the trade record](trades/colts_picks_to_washington_2014-03-31.md).
+
+**Calls, March 31.**
+- Caldwell offered No. 82 alone for Jacksonville's original 2015 second, which Washington held from the Cousins trade.
+- Washington answered that No. 82 alone does not cover a second that could land early, and asked for No. 194 as well.
+- Caldwell accepted within Stone's authorization.
+
+**Terms.**
+
+| Jacksonville sends | Washington sends |
+|---|---|
+| 2014 third-round pick, No. 82 (Indianapolis original, round 3, slot 18) | Jacksonville's original 2015 second-round pick, unconditional, slot set by the 2014 season |
+| 2014 sixth-round pick, No. 194 (Indianapolis original, round 6, slot 15) | |
+
+**Processing.** No players move. Both 2014 picks were clean ordinary picks with no condition. Processed March 31.
+
+**Cap effects.** None. No contract moves, and the picks carried no rookie contract. The working totals, working difference and 2015 commitments from the Shorts and Blackmon trade are unchanged.
+
+**Effects.**
+- **Draft picks:** 9 in 2014: 13, 26, 38, 90, 129, 153, 168, 205 and 241.
+- **2015 picks held:** Jacksonville's own second (back from Washington), Miami's third and Houston's fourth. Jacksonville's own 2015 first and fourth are Arizona's.
+- **Roster:** unchanged at 53 controlled players.
+- **Rails:** Washington holds Nos. 82 and 194 as a branch trade.
+
+**Open.**
+- Henne (unrestricted; Stone's March 31 plan pursues him as QB2).
+- Ball (revisited after the draft) and Brent Grimes (not pursued).
+- The Allen trade's conditions (Posluszny's actual clearance by April 21).
+- The April 18 phase-plan decisions.
+- The left guard, Edge 1, WR1 and WR3 roles.
+- The rails from March 11 evening to March 31 remain unswept beyond the targets' own moves and the branch trades.
+
+**Atomic closure.** The trade record, completed trades, offer log, trade targets, pick ownership register and generated draft order, draft board, draft pairing, Washington rails page, financial inputs and generated cap views, calendar, the 2014 README, readiness, operating baseline and Documents 4 and 5 agree. The private snapshot is advanced only after merge.
+
+**Commit closed - Canonical update - March 31, 2014 - Colts picks traded to Washington for Jacksonville's 2015 second - canonical through March 31, 2014**

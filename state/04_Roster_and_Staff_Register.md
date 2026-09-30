@@ -3,9 +3,9 @@
 ## Document status
 
 - Function: Canonical register for current Jacksonville player control, staff operating authority, roster legality, contract/cap and draft-capital reconciliation, availability boundaries and football-role state.
-- Current status: **RECONCILED THROUGH ENTRY 104 (SHORTS AND BLACKMON TRADED TO INDIANAPOLIS)**.
-- Effective through: **March 31, 2014 (53 controlled players; Shorts and Blackmon traded to Indianapolis March 31)**.
-- Current authority: `career/2014/ledger.md`, Entry 104 (Shorts and Blackmon traded to Indianapolis March 31 for Nos. 82 and 194; controlled roster 53), Entry 103 (Jones-Drew and C.J. Wilson re-signed March 28; schedule filed; controlled roster 55), Entry 102 (Babin to Miami and Alualu to Houston, March 24; controlled roster 53) and Entry 101 (administrative).
+- Current status: **RECONCILED THROUGH ENTRY 105 (COLTS PICKS TRADED TO WASHINGTON)**.
+- Effective through: **March 31, 2014 (53 controlled players; Shorts and Blackmon traded to Indianapolis March 31; the two Colts picks traded to Washington the same day)**.
+- Current authority: `career/2014/ledger.md`, Entry 105 (Nos. 82 and 194 traded to Washington March 31 for Jacksonville's original 2015 second; no players move), Entry 104 (Shorts and Blackmon traded to Indianapolis March 31 for Nos. 82 and 194; controlled roster 53), Entry 103 (Jones-Drew and C.J. Wilson re-signed March 28; schedule filed; controlled roster 55), Entry 102 (Babin to Miami and Alualu to Houston, March 24; controlled roster 53) and Entry 101 (administrative).
 - Prior progression authority: `career/2013/ledger.md`, Entries 1 to 100 (hire through the March 24, 2014 compensatory announcement).
 - Detailed readable roster: `career/2014/roster.md`.
 - Current cap worksheet: `career/2014/offseason/current_cap_worksheet.md`.
@@ -26,10 +26,10 @@ This register states each current fact once, in the section that owns it. How th
 | Divergence point | January 15, 2013: Alex Stone accepts Jacksonville head-coach offer |
 | Season phase | 2014 offseason; league year open from March 11, 2014 (2013 season complete, eliminated in the AFC Divisional round) |
 | Owned content effective | March 31, 2014 |
-| Document 4 register version | `JAX-2014-MAR31-REGISTER-58` |
-| Supersedes | `JAX-2014-MAR31-REGISTER-57` |
-| Last content-changing checkpoint | `Canonical update - March 31, 2014 - Shorts and Blackmon traded to Indianapolis` |
-| Latest Document 6 event | 2014 ledger Entry 104: Shorts and Blackmon traded to Indianapolis for Nos. 82 and 194; controlled roster 53; clock March 31, 2014 |
+| Document 4 register version | `JAX-2014-MAR31-REGISTER-59` |
+| Supersedes | `JAX-2014-MAR31-REGISTER-58` |
+| Last content-changing checkpoint | `Canonical update - March 31, 2014 - Colts picks traded to Washington for Jacksonville's 2015 second` |
+| Latest Document 6 event | 2014 ledger Entry 105: Nos. 82 and 194 traded to Washington for Jacksonville's original 2015 second; controlled roster 53; clock March 31, 2014 |
 | Current controlled players | **53** |
 | Current practice squad | **0** (no 2014 practice squad before the regular season) |
 | Next scheduled football event | None scheduled; league dates are in Document 5 section 7 |
@@ -182,8 +182,8 @@ No current contract guarantees a depth-chart position, rep share, target share, 
 
 Current source: `career/2014/draft/pick_ownership.json`; generated seven-round order: `career/2014/draft/draft_order.md`.
 
-- 2014: eleven ordinary picks, overall 13 (Washington's first), 26 (own first), 38 (Arizona's second, from the Arizona trade for No. 38), 82 (Indianapolis's third, from the Shorts and Blackmon trade), 90, 129, 153 (Detroit's fifth), 168, 194 (Indianapolis's sixth, from the same trade), 205 and 241. No compensatory pick. Jacksonville's own 2014 second (No. 58) belongs to Washington.
-- 2015: Miami's third and Houston's fourth acquired. Jacksonville's 2015 second belongs to Washington (slot unknown); its 2015 first and fourth belong to Arizona.
+- 2014: nine ordinary picks, overall 13 (Washington's first), 26 (own first), 38 (Arizona's second, from the Arizona trade for No. 38), 90, 129, 153 (Detroit's fifth), 168, 205 and 241. No compensatory pick. Jacksonville's own 2014 second (No. 58) belongs to Washington, as do Indianapolis's third and sixth (Nos. 82 and 194), received in the Shorts and Blackmon trade and sent to Washington the same day.
+- 2015: Jacksonville's own second (returned by Washington on March 31; slot unknown), Miami's third and Houston's fourth. Jacksonville's 2015 first and fourth belong to Arizona.
 - 2016 and 2017: Jacksonville's 2016 fifth belongs to Arizona and its 2017 seventh to Miami.
 - League order: Indianapolis 14 / Green Bay 15 by coin flip; league ownership audited with three specific conditional claims.
 
@@ -651,5 +651,6 @@ Use the project's canon authority order. Document 6 is the sole authoritative co
 | Babin and Alualu trades | 2014 ledger, Entry 102 | March 24, 2014 | Babin to Miami (with the 2017 seventh, for Miami's 2015 third); Alualu to Houston (Houston's 2015 fourth); controlled roster 53 | September 30, 2026; Canonical update - March 24, 2014 - Babin and Alualu traded |
 | Jones-Drew and C.J. Wilson | 2014 ledger, Entry 103 | March 28, 2014 | Jones-Drew re-signed (two years, $7.0M, $3.25M guaranteed); Wilson re-signed (one year, $795,000); schedule filed; controlled roster 55 | September 30, 2026; Canonical update - March 31, 2014 - Jones-Drew and C.J. Wilson re-signed |
 | Shorts and Blackmon trade | 2014 ledger, Entry 104 | March 31, 2014 | Shorts and Blackmon to Indianapolis for the Colts' 2014 third (No. 82) and sixth (No. 194); $6,062,481 dead money; 11 picks in 2014; controlled roster 53 | September 30, 2026; Canonical update - March 31, 2014 - Shorts and Blackmon traded to Indianapolis |
+| Colts picks to Washington | 2014 ledger, Entry 105 | March 31, 2014 | Nos. 82 and 194 to Washington for Jacksonville's original 2015 second; no players or cap change; 9 picks in 2014; controlled roster 53 | September 30, 2026; Canonical update - March 31, 2014 - Colts picks traded to Washington for Jacksonville's 2015 second |
 
 This table is generated from Document 6 and is only a navigation aid. Active unresolved matters remain in the open player-control matters above and Document 5; resolved history, controlling authority, notification, and superseded values remain only in Document 6.

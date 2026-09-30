@@ -45,6 +45,14 @@ Caldwell, on Stone's March 31 instruction to trade both receivers for draft pick
 - Carolina, offer not taken: Carolina offered No. 119, its fourth, for Shorts alone and passed on Blackmon.
 - Indianapolis, completed: Caldwell asked for No. 51 for both. The Colts refused a second and offered No. 82, their third, for Shorts. Caldwell asked for a pick for Blackmon on top; the Colts added No. 194, their sixth, and took Blackmon. Caldwell accepted because the Colts' third beats Carolina's fourth and only the Colts would take Blackmon. Both players passed the Colts' physicals on March 31 with no communicated restriction; processed March 31. See [completed trades](trades.md).
 
+## March 31, 2014: the Colts picks to Washington (completed)
+
+Caldwell, on Stone's March 31 instruction to trade the two picks received from Indianapolis, No. 82 and No. 194, for a 2015 pick. The calls are in the [trade record](colts_picks_to_washington_2014-03-31.md).
+
+- Caldwell's opening: No. 82 alone for Jacksonville's original 2015 second, which Washington held from the Cousins trade.
+- Washington's answer: No. 82 alone does not cover a second that could land early if Jacksonville's season goes badly. It asked for No. 194 as well.
+- Completed: Caldwell accepted within Stone's authorization. No players move; processed March 31. See [completed trades](trades.md).
+
 ## Adding an entry
 
 Record each new communication once, dated, with:
