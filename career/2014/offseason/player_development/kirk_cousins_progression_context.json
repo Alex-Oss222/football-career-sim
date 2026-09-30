@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "context_id": "kirk-cousins-2014-entry",
+  "player": "Kirk Cousins",
+  "position": "QB",
+  "roster_checkpoint": "March 24, 2014",
+  "evidence_cutoff": "Jacksonville 2013 season, postseason, January 13 exit interview, and current 2014 roster/control facts; no 2014 on-field development evidence yet",
+  "purpose": "Concrete audit example of the whole-player progression contract. This file records supported context and candidate development cases only. It does not reveal or invent a hidden offseason outcome.",
+  "factors": [
+    {
+      "category": "physical_profile",
+      "assessment": "No 2013 receipt injury or current communicated restriction establishes a physical decline. No evidence yet establishes offseason gains in arm strength, mobility, strength, or other physical capacity, so physical change remains unresolved.",
+      "evidence_ids": [
+        "career/2014/roster.md",
+        "career/2013/exit_interviews/main_core/kirk_cousins.md",
+        "career/2014/offseason/player_development/kirk_cousins.md"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "category": "technical_state",
+      "assessment": "The staff record does not support a wholesale throwing-mechanics rebuild. A June placement miss lacks a linked later retest, while functioning operation and immediate correction examples support preserving the working motion until a specific technical cause repeats.",
+      "evidence_ids": [
+        "career/2014/offseason/player_development/kirk_cousins.md#evidence-map",
+        "career/2013/offseason/otas/output.md"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "category": "mental_processing",
+      "assessment": "Immediate corrections were documented on changed-picture, tight-window, protection, and red-zone problems. Broad post-snap processing improvement is not yet established because the season interception and sack causes remain incompletely assigned.",
+      "evidence_ids": [
+        "career/2014/offseason/player_development/kirk_cousins.md#evidence-map",
+        "career/2014/offseason/film/kirk_cousins_2013_review.md"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "category": "scheme_playbook_familiarity",
+      "assessment": "A full Jacksonville season and two playoff games, plus repeated huddle, cadence, protection-point, timing, and two-minute work, establish meaningful continuity with this offense and its communication. That knowledge does not certify execution against every changed presentation.",
+      "evidence_ids": [
+        "career/2014/offseason/player_development/kirk_cousins.md#current-synthesis-build-from-the-player-he-has-become",
+        "career/2014/offseason/player_development/kirk_cousins.md#evidence-map"
+      ],
+      "confidence": "high"
+    },
+    {
+      "category": "position_specific_skill",
+      "assessment": "The strongest supported quarterback-specific foundation is taught operation and situational command. Coverage confirmation, protection identification, progression timing, ball placement, and decisions after the first picture changes remain distinct evaluation targets.",
+      "evidence_ids": [
+        "career/2014/offseason/player_development/kirk_cousins.md#evidence-map",
+        "career/2013/exit_interviews/main_core/kirk_cousins.md"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "category": "previous_season_experience",
+      "assessment": "Cousins handled a full regular-season starting workload and two playoff games in Jacksonville's offense, adding preparation, opponent-adjustment, two-minute, postseason, and teammate-timing experience that he did not have at the start of 2013.",
+      "evidence_ids": [
+        "career/2014/offseason/player_development/kirk_cousins.md#current-synthesis-build-from-the-player-he-has-become"
+      ],
+      "confidence": "high"
+    },
+    {
+      "category": "consistency",
+      "assessment": "Several corrections held on an immediate repeat, but the record does not establish that the same answer stayed reliable across later changed pictures. Consistency, rather than a higher peak, is therefore an explicit offseason question.",
+      "evidence_ids": [
+        "career/2014/offseason/player_development/kirk_cousins.md#evidence-map",
+        "career/2013/exit_interviews/main_core/kirk_cousins.md"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "category": "role",
+      "assessment": "He enters the checkpoint as QB1 on the current depth chart because of 2013 football evidence. The record explicitly does not promise the September 2014 role, and role status is not itself treated as ability growth.",
+      "evidence_ids": [
+        "career/2014/roster.md",
+        "career/2013/exit_interviews/main_core/kirk_cousins.md"
+      ],
+      "confidence": "high"
+    },
+    {
+      "category": "conditioning_body_composition",
+      "assessment": "No 2013 availability record establishes a conditioning problem, and no current evidence establishes an offseason body-composition or work-capacity change. This factor remains stable-or-unknown until lawful 2014 performance/medical observations exist.",
+      "evidence_ids": [
+        "career/2013/exit_interviews/main_core/kirk_cousins.md",
+        "career/2014/offseason/player_development/kirk_cousins.md#new-evidence"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "category": "age_context",
+      "assessment": "Cousins is 25 at the March 2014 checkpoint. Age permits developmental upside in the prior but does not create a trait change by itself.",
+      "evidence_ids": [
+        "career/2014/roster.md",
+        "library/data/player_birth_dates.json"
+      ],
+      "confidence": "high"
+    },
+    {
+      "category": "coaching_influence",
+      "assessment": "Jeremy Bates, Charlie Skalaski, Mike Tice, Stone, and the receiver coaches have defined separate teaching responsibilities. Cousins specifically reported that concise cues work better when paired with two or three relevant right/wrong film examples, so coaching influence is modeled through teaching and rep structure rather than a global bonus.",
+      "evidence_ids": [
+        "career/2013/exit_interviews/main_core/kirk_cousins.md",
+        "career/2014/offseason/player_development/kirk_cousins.md#teaching-packets"
+      ],
+      "confidence": "high"
+    },
+    {
+      "category": "previous_season_performance",
+      "assessment": "The 18 interceptions, 38 sacks, fumbles, successful two-minute work, and late-season/postseason stretches are review locators, not direct trait grades. The existing plan requires shared assignment, pressure, receiver, protection, and caller contributions to be classified before using those outcomes as causal evidence.",
+      "evidence_ids": [
+        "career/2013/exit_interviews/main_core/kirk_cousins.md",
+        "career/2014/offseason/film/kirk_cousins_2013_review.md"
+      ],
+      "confidence": "high"
+    },
+    {
+      "category": "playing_time_opportunity",
+      "assessment": "The full-season starting role supplied substantial live exposure to NFL coverages, protections, situational football, changing support, and postseason preparation. More opportunity strengthens the evidence base but does not guarantee improvement.",
+      "evidence_ids": [
+        "career/2014/offseason/player_development/kirk_cousins.md#current-synthesis-build-from-the-player-he-has-become"
+      ],
+      "confidence": "high"
+    },
+    {
+      "category": "injuries_physical_limitations",
+      "assessment": "The 2013 receipt record shows no injury absence and the current roster shows no communicated restriction. Any new exit-physical finding, restriction, clearance, or recovery state belongs to the medical record and must supersede this football-only context.",
+      "evidence_ids": [
+        "career/2013/exit_interviews/main_core/kirk_cousins.md",
+        "career/2014/roster.md"
+      ],
+      "confidence": "high"
+    },
+    {
+      "category": "existing_strengths_weaknesses",
+      "assessment": "Supported strengths are taught operation, huddle/cadence, protection-point communication, shared timing, and two-minute work. Open weaknesses or uncertainty targets include changed-picture reliability, protection diagnosis versus shared protection failure, placement, ball carriage, and end-game risk decisions. The evidence does not support assigning every turnover or sack to Cousins.",
+      "evidence_ids": [
+        "career/2014/offseason/player_development/kirk_cousins.md#evidence-map",
+        "career/2013/exit_interviews/main_core/kirk_cousins.md"
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "candidate_development_cases": [
+    {
+      "context_id": "kirk-cousins-2014-entry",
+      "trait": "coverage_rotation_confirmation",
+      "mechanisms": [
+        "film_study",
+        "game_experience",
+        "scheme_continuity",
+        "coaching_correction"
+      ],
+      "evidence_ids": [
+        "career/2014/offseason/player_development/kirk_cousins.md#changed-picture-and-receivers",
+        "career/2014/offseason/film/kirk_cousins_2013_review.md"
+      ],
+      "confidence": "medium",
+      "rationale": "A full season of the same offensive language plus paired-picture review can plausibly reduce the time needed to confirm that the post-snap picture differs from the pre-snap indication. Whether the correction survives live pressure remains unobserved."
+    },
+    {
+      "context_id": "kirk-cousins-2014-entry",
+      "trait": "protection_identification",
+      "mechanisms": [
+        "film_study",
+        "game_experience",
+        "scheme_continuity",
+        "coaching_correction"
+      ],
+      "evidence_ids": [
+        "career/2014/offseason/player_development/kirk_cousins.md#evidence-map",
+        "career/2013/exit_interviews/main_core/kirk_cousins.md"
+      ],
+      "confidence": "medium",
+      "rationale": "The blocked/hot/kill work and prior immediate protection correction create a plausible learning path for quicker identification and communication. The 38 sacks cannot be used as a quarterback-only grade."
+    },
+    {
+      "context_id": "kirk-cousins-2014-entry",
+      "trait": "progression_timing",
+      "mechanisms": [
+        "film_study",
+        "game_experience",
+        "coaching_correction",
+        "player_adaptation"
+      ],
+      "evidence_ids": [
+        "career/2014/offseason/player_development/kirk_cousins.md#evidence-map",
+        "career/2013/exit_interviews/main_core/kirk_cousins.md"
+      ],
+      "confidence": "medium",
+      "rationale": "The documented outlet/tight-window corrections and Cousins's preference for paired right/wrong examples support a specific path to earlier abandonment of a dead first answer, without assuming that every interception was a progression error."
+    },
+    {
+      "context_id": "kirk-cousins-2014-entry",
+      "trait": "ball_placement_intermediate",
+      "mechanisms": [
+        "deliberate_practice",
+        "coaching_correction",
+        "technique_transfer"
+      ],
+      "evidence_ids": [
+        "career/2014/offseason/player_development/kirk_cousins.md#evidence-map"
+      ],
+      "confidence": "low",
+      "rationale": "A documented placement miss makes placement a legitimate observation target, but the lack of a linked later retest is too weak to assume either a chronic flaw or an offseason improvement."
+    },
+    {
+      "context_id": "kirk-cousins-2014-entry",
+      "trait": "receiver_timing_and_landmarks",
+      "mechanisms": [
+        "scheme_continuity",
+        "game_experience",
+        "deliberate_practice",
+        "player_adaptation"
+      ],
+      "evidence_ids": [
+        "career/2014/offseason/player_development/kirk_cousins.md#evidence-map",
+        "career/2013/exit_interviews/main_core/kirk_cousins.md"
+      ],
+      "confidence": "medium",
+      "rationale": "A year of shared landmarks and specific Mesh/Shorts timing questions can improve shared answers while leaving coverage diagnosis and individual receiver execution separate."
+    }
+  ],
+  "no_change_assumptions": [
+    "No automatic arm-strength increase.",
+    "No automatic mobility increase.",
+    "No generic awareness increase.",
+    "No age-based physical bonus.",
+    "No conclusion that interception or sack totals alone prove a processing change.",
+    "No claim that non-contact offseason work has already transferred to live pressure."
+  ]
+}
