@@ -243,7 +243,11 @@ class ViewTests(unittest.TestCase):
 
 
 class ResultIdentityTests(unittest.TestCase):
-    """Credit rules must not move a result: 2014.2's digests reproduce."""
+    """A credit-only or display-only change must not move a result: the
+    digests recorded in tests/data/result_identity.json reproduce. The file
+    was re-recorded for the kernel 2014.4 candidate (synthetic legacy-path
+    fixtures; items 2, 4 and 5 and the E1 home term change results by
+    design), as its note says. Closed 2013 receipts are never rerun."""
 
     def test_results_match_the_recorded_digests(self):
         fixture = json.loads((Path(__file__).parent / "data/result_identity.json").read_text())

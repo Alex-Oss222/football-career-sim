@@ -153,7 +153,7 @@ class BuilderHookTests(unittest.TestCase):
     def build(self, season):
         from unittest import mock
         from runtime import week_inputs
-        league = strength._league()["players"]
+        league = strength._league(2014)["players"]
         den = [{"player_id": p["name"], "gsis_id": p["player_id"], "position": p["position"]}
                for p in league if p.get("inventory_club") == "DEN"]
         jax = [{"player_id": p["name"], "position": p["position"]}
@@ -235,6 +235,27 @@ class EdgeTests(unittest.TestCase):
         self.assertAlmostEqual(_edge(legacy, other, other, "neutral"), 0.025)
         result = resolve_game(legacy, other, seed=SEED + b"-legacy", event_id="legacy")
         self.assertTrue(all("strength" not in p for p in result["possessions"]))
+
+    def test_legacy_packets_carry_no_strength_field(self):
+        # A TeamInput without a record is frozen exactly as before 2014.4 in
+        # the production game packet and the kernel's outcome packet, so a
+        # legacy packet's identity is unchanged; a club with a record carries it.
+        from runtime.game_runner import build_game_packet
+        from runtime.kernel import _outcome_team
+        # 46 actives: the synthetic rosters dress 47, one over the 2013 limit.
+        roster = tuple(p for p in game_day_roster("A") if p.player_id != "A-WR5")
+        b_roster = tuple(p for p in game_day_roster("B") if p.player_id != "B-WR5")
+        legacy = TeamInput("A", tuple(p.player_id for p in roster), roster=roster)
+        other = TeamInput("B", tuple(p.player_id for p in b_roster), roster=b_roster)
+        packet = build_game_packet("legacy-packet", "0123456789abcdef", legacy, other)
+        self.assertNotIn("strength", packet["home"])
+        self.assertNotIn("strength", packet["away"])
+        self.assertNotIn("strength", _outcome_team(legacy))
+        scored = TeamInput("A", tuple(p.player_id for p in roster), roster=roster,
+                           strength=record({"A-QB1": honour("offense", "QB")}))
+        packet = build_game_packet("scored-packet", "0123456789abcdef", scored, other)
+        self.assertIn("A-QB1", packet["home"]["strength"]["players"])
+        self.assertIn("strength", _outcome_team(scored))
 
 
 class CompositeTests(unittest.TestCase):

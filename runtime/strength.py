@@ -67,12 +67,22 @@ from functools import lru_cache
 from pathlib import Path
 
 from . import usage
+from .seasons import SeasonPaths
 
 ROOT = Path(__file__).resolve().parents[1]
 EVIDENCE = ROOT / "library/data/2010_2012_honours_evidence.json"
 CALIBRATION = ROOT / "library/data/2014_strength_calibration.json"
-LEAGUE_PLAYERS = ROOT / "career/2014/offseason/league_rails/league_players.json"
-CLUB_CODES = ROOT / "career/2014/schedule/rotation_2014.json"
+
+
+def league_players_path(season):
+    """The season's league player inventory (identity joins), resolved
+    through the season layout (`career/2014/league/personnel/...`)."""
+    return SeasonPaths(int(season), ROOT).record("league/personnel/league_players.json")
+
+
+def club_codes_path(season):
+    """The season's rotation file, which carries the club code map."""
+    return SeasonPaths(int(season), ROOT).record("schedule/rotation_%d.json" % int(season))
 
 MODEL = "honours-role-v1"
 # Study 2012 shrunk TD-share slopes per composite unit and the study's
@@ -205,21 +215,22 @@ def player_evidence(player_id, season, as_of, entries=None):
 
 # ---- identity -------------------------------------------------------------------
 
-@lru_cache(maxsize=1)
-def _league():
-    if not LEAGUE_PLAYERS.is_file():
+@lru_cache(maxsize=4)
+def _league(season):
+    path = league_players_path(season)
+    if not path.is_file():
         return {"players": []}
-    return json.loads(LEAGUE_PLAYERS.read_text(encoding="utf-8"))
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
-@lru_cache(maxsize=1)
-def club_codes():
-    """{club name: code} from the 2014 rotation file."""
-    data = json.loads(CLUB_CODES.read_text(encoding="utf-8"))
+@lru_cache(maxsize=4)
+def club_codes(season):
+    """{club name: code} from the season's rotation file."""
+    data = json.loads(club_codes_path(season).read_text(encoding="utf-8"))
     return {name: code for code, name in data["club_codes"].items()}
 
 
-def resolve_id(row, club_code):
+def resolve_id(row, club_code, season):
     """(gsis id or None, join note) for one TeamInput roster row."""
     gsis = row.get("gsis_id")
     if gsis:
@@ -227,7 +238,7 @@ def resolve_id(row, club_code):
     pid = str(row.get("player_id", ""))
     if GSIS.match(pid):
         return pid, "player_id"
-    matches = [p for p in _league()["players"] if p.get("name") == pid]
+    matches = [p for p in _league(season)["players"] if p.get("name") == pid]
     here = [p for p in matches if p.get("inventory_club") == club_code]
     if len(here) == 1:
         return here[0]["player_id"], "name_and_club"
@@ -244,12 +255,12 @@ def team_strength(team_name, roster, season, as_of):
     The record carries only players with admissible evidence; every other
     roster player is an Average low-confidence fallback, listed with the
     reason in the coverage receipt. Identical for every club."""
-    code = club_codes().get(team_name, team_name)
+    code = club_codes(season).get(team_name, team_name)
     players, fallbacks, receipts = {}, [], []
     for row in roster:
         pid = row["player_id"] if isinstance(row, dict) else row.player_id
         data = row if isinstance(row, dict) else {"player_id": pid, "gsis_id": getattr(row, "gsis_id", None)}
-        gsis, join = resolve_id(data, code)
+        gsis, join = resolve_id(data, code, season)
         if gsis is None:
             fallbacks.append({"player_id": pid, "reason": "identity_" + join})
             continue
@@ -273,9 +284,9 @@ def coverage_report(season, as_of, rosters=None):
     roster rows; by default the 2014 league inventory (inventory_club),
     which is identity, not a depth chart."""
     if rosters is None:
-        names = {code: name for name, code in club_codes().items()}
+        names = {code: name for name, code in club_codes(season).items()}
         rosters = {name: [] for name in names.values()}
-        for p in _league()["players"]:
+        for p in _league(season)["players"]:
             if p.get("inventory_club") in names:
                 rosters[names[p["inventory_club"]]].append({"player_id": p["player_id"]})
     clubs = {}

@@ -31,7 +31,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 EVIDENCE = ROOT / "library/data/2010_2012_honours_evidence.json"
-LEAGUE = ROOT / "career/2014/offseason/league_rails/league_players.json"
+# The inventory moved to career/2014/league/personnel/ in the readable season layout;
+# the JSON keeps the path string it was built from.
+LEAGUE = ROOT / "career/2014/league/personnel/league_players.json"
 OUT = ROOT / "library/data/2014_strength_calibration.json"
 SOURCES = {
     "depth_charts_2012.csv": "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2012.csv",
