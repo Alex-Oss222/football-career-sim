@@ -623,3 +623,26 @@ June 17 recalled the retained menu without prompts (one item, Wilson's Sprint Fl
 **Atomic closure.** The camp output and evidence summary, the player-development and coaching-profile handoff notes, the contract status register (as-of date only), the roster (as-of date and report status), the calendar, the position-battle page and the camp READMEs, readiness and operating baseline, player ages, the progression roster, the team tracker and Documents 4 and 5 agree. The depth chart and every finance figure are unchanged. The private snapshot is advanced only after merge.
 
 **Commit closed - Canonical update - July 29, 2014 - Training camp opened - canonical through July 29, 2014**
+
+## Entry 115 — July 29, 2014 — Kernel 2014.4 released
+
+**Recorded:** September 30, 2026. **Simulation clock:** unchanged, Tuesday, July 29, 2014.
+**Checkpoint:** `Canonical update - July 29, 2014 - Kernel 2014.4 released`
+**Preceding global package checkpoint:** `Canonical update - July 29, 2014 - Training camp opened`
+
+**What changed.** The football engine, not the football. Kernel 2014.4 replaces the equal-strength 2014.3 for every game from here ([release record](../../runtime/README.md), [defect register](../../runtime/defect_register.md), [decisions](../../runtime/2014_engine_decisions.md)). Every club now carries an offensive and a defensive strength built from its players' dated honours and 2010 to 2012 production, tier-weighted by role, with matchup terms for passing, run defense and protection, a punter term and a field-goal distance model ([calibration](../../library/2014_strength_calibration.md)). Injuries arise in play from recorded exposure; the injured player leaves every later role, the depth chart promotes on both sides, and a consequential Jacksonville removal pauses the game for Stone's substitution and resumes through the same private event. No real 2013 data, no Madden, no market totals. The 2013 results are unchanged: the 306-game preservation replay reproduced every packet.
+
+**Verification.** Merged to `main` as PR #190 (22bc631). The live Engine State service rebuilt on the same store, journaled the change from 2014.3 to 2014.4 and reports kernel and procedure 2014.4 with the snapshot unchanged; 2013 readiness READY; 2014 readiness lists only the remaining season gates. `runtime/season_readiness.json` accepts kernel 2014.4 and `tier1_engine` is VERIFIED.
+
+**Effects.**
+- **Roster, availability, roles, contracts, cap and draft capital:** unchanged. No football fact changed.
+- **Engine:** installed and accepted kernel 2014.4. Stated limits stand on the record: three matchup terms carry signal, the protection term rests on the unproven-lineman rule, the net edge is about two thirds of the target spread.
+- **Weekly closure:** Jacksonville's game runs user controlled; on a consequential in-game removal `scripts/close_week.py` writes the completed events, exits and waits for Stone's answer file before any other game closes.
+
+**Open.** The other 2014 release gates before any game: season rules, season closure, legal rosters (Jacksonville's game depth chart at the August 30 cutdown; the Week 1 library on September 7) and financial control. Everything in Entry 114's open list.
+
+**Next.** July 30: first full pads. August 8: preseason game 1, Tampa Bay at Jacksonville, once the remaining gates close.
+
+**Atomic closure.** The readiness record, Documents 4 and 5 and this entry agree. No other current-state file owns a changed fact.
+
+**Commit closed - Canonical update - July 29, 2014 - Kernel 2014.4 released - canonical through July 29, 2014**
