@@ -2,10 +2,10 @@
 
 **Status:** 2013 METHODS RETAINED; individual training/film workflow authorized; the remaining choices were settled by [Stone's April 18 decisions](../../offseason_training/stone_april_18_2014_decisions.md).
 **Planning checkpoint:** March 24, 2014, Entry 101. Prepared from 2013 evidence; no phase executed.
-**Selected dates (execution not started):** Rookies report July 21; veterans July 24; first practice July 25; first full pads July 30; scrimmage August 2. Historical publication gates still apply.
+**Selected dates:** Rookies report July 21; veterans July 24; first practice July 25; first full pads July 30; scrimmage August 2. These are planning dates; the execution record owns what has occurred. Historical publication gates still apply.
 **Authority:** [Stone's memo, section 6](../../early_offseason/stone_to_caldwell_2014_offseason_decisions.md); [2014 calendar](../../calendar.md).
 **Inherited method:** [2013 training_camp plan](../../../2013/offseason/training_camp/plan.md). The 2013 file remains unchanged; this plan's 2014 conditions override inherited dates, QB competition and new-head-coach clauses.
-**Execution records:** [Output](training_report.md) and [evidence summary](player_assessments.md) are prepared as NOT_STARTED. They receive actual observations only when the phase runs. Results and standouts never belong in this plan.
+**Execution records:** [Training report](training_report.md) and [player assessments](player_assessments.md) own actual observations and status. Results and standouts never belong in this plan.
 
 ## Decision package and historical clarification
 
@@ -67,6 +67,35 @@ The question changes from "Can we teach this?" to:
 
 Camp is not designed to make players miserable. It is designed to make the roster and system dependable.
 
+## Stone's camp standard
+
+**Adopted from the user's September 30, 2026 clarification.** This is a change to intended approach, with a matching section in [Stone's profile](../../../coaching_profiles/alex_stone.md#how-he-wants-training-camp-run). It applies to work still to be run and carries into later season plans. It does not claim that coaches have already taken or passed a test, or add contact to the closed July 25 to 29 practices.
+
+Every contracted, eligible player reports on his applicable camp date, including established veterans. Every coach reports for his assigned camp duties. There is no blanket veteran exemption from camp or conditioning. Contract status, excused absence and medical restrictions remain separate from a refusal to participate; the existing instruction on unsigned tenders still applies.
+
+Players and coaches, including Stone, must meet physical readiness standards. Players use the existing position-adjusted entry test. The performance staff also writes a coach standard before testing, with medically appropriate adjustments for the coach's age, condition and duties. It should establish the capacity to move between periods, remain effective through the field session and perform assigned demonstrations safely. A coordinator need not meet a defensive back's running standard; he does have to meet his own. Medical clearance remains separate from passing conditioning. A failure receives an individualized improvement and retest plan. Record actual testing before reporting a pass; this policy supplies neither fabricated measurements nor a completed staff fitness assessment.
+
+Maximum participation means each eligible player completes his assigned work within that day's medical and workload instructions: preparation, individual technique, group and team periods, situations, special teams where assigned, film and correction. Coaches give a limited player a useful permitted role rather than leaving him outside the teaching. Individual recovery adjustments require a reason, with the missed evaluation opportunity carried forward. Seniority alone is not that reason.
+
+Once contact is permitted, Stone wants substantial football work against resistance: inside run, combination blocks, pass protection and rush, releases, edge and gap control, ball security and tackling technique. The daily script states whether each period is a walkthrough, non-contact, controlled contact or live to the ground. Specify who may be contacted and the finish; protect quarterbacks and stop at the whistle. Full pads do not make every period a tackling scrimmage. The 2011 CBA and the club's dated schedule control practice hours, acclimation and recovery, not an invented modern camp limit. See [the period research](../../../../docs/camp_and_preseason_reports.md#the-2014-practice-boundary).
+
+Everyone gets meaningful opportunities in suitable, taught jobs. Keep primary development work, then vary the partner, opponent or group to answer a specific question. Give reserves work beside regulars and against established opposition, and make starters operate with replacements. Compare the actual conditions rather than treating every rep as equal. Preserve enough work for the likely starting units to develop together. A first-team trial is an evaluation opportunity; existing role decisions stand until Stone changes them.
+
+## What the active playbooks ask of the players
+
+Use the current staff's [room responsibilities](../../offseason_training/coaching_methods/unit_plans.md), the [offensive Iteration I](../../../playbook/alex_stone_2013_offensive_playbook_iteration_i.md) and [defensive Iteration I](../../../playbook/alex_stone_2013_defensive_playbook_iteration_i.md). These are assessment questions for assigned and taught work. A concept's presence in the book is not an instruction to install it now.
+
+| Work and coaches | What the scheme requires | What camp needs to show |
+|---|---|---|
+| Quarterback and protection: Bates, Yarno, Spencer and Tice | HALF joins the center's point, the line's slide/man jobs, the back's scan and the QB's extra-rusher answer. NAKED deliberately leaves an edge unblocked. | Whether the QB and blockers recognize the same problem before the snap, execute their jobs under the permitted rush and get to the taught answer. Do not call the designed free edge a protection bust. Compare the reserve pairing with usable surrounding support. |
+| Line and backs: Yarno, Spencer and Tice | Power needs secured inside gaps and a puller; Counter coordinates kick/log and wrap; Inside Zone needs connected covered/uncovered work and the back's taught track. | Whether adjacent linemen can move or control the assigned defenders, the puller arrives on the right path, and the back presses the intended landmark. Separate a missed identification, a poor step, lost leverage and a physical defeat. Test combinations, not just individual drill wins. |
+| Receivers and tight ends: Drake, Zernhelt and Bates | X, Z, H and Y describe jobs. Changing from 11 to 12 or moving between Ace and Wing must preserve eligibility, spacing and the concept's progression. An attached TE also has a real blocking/protection job. | Whether release and route timing survive the changed alignment and lawful contact, whether the TE can sustain the assigned block, and whether the group still gives the QB the intended answer. A player may fit one job better than another. |
+| Front and linebackers: Pleasant, Bush and Crennel | The Under fit assigns space across the front and second level. BOX keeps the ball inside; SPILL sends it to the next support defender. Pressure still owns contain and replacement. | Whether a defender handles the block without abandoning his gap, whether the next fitter arrives correctly, and whether rush success preserves the call. Use the actual tag: forcing the ball outside can be correct on SPILL and wrong on BOX. |
+| Secondary and coverage linebackers: Oden, Bush and Crennel | Cover 1 and Robber/Rat depend on the named matchup and help; TRAVEL, BUMP, ROLL and HOLD preserve responsibilities through motion. Paired Cover 3/Quarters offer different answers from similar pictures. | Whether press/off technique, leverage, route exchanges, deep help and support fit work together. Test the back/TE matchup honestly. Identify whether help, another player or another call solves it, and the concession that solution creates. |
+| Specialists and coverage: Westhoff | The kick instruction, snap/hold/protection, release, lane and return decision form a shared operation. | Whether the operation works against the permitted opposition and under the stated field-position/clock objective. Evaluate coverage and blocking as well as the specialist; a clean uncontested snap cannot decide the whole unit. |
+
+Stone's review connects those jobs to the team he can field. He asks which combinations execute the intended football, what happens after a substitution, whether technique lasts through repeated work and what support has to be removed elsewhere to make a package function. The position coach supplies the technical observation; the coordinator checks the shared rule and call; Stone controls the consequential football-role decision. All three must distinguish what the player was taught from what they hoped he would know.
+
 ## Camp entry standard
 
 Before field competition begins:
@@ -76,8 +105,8 @@ Before field competition begins:
 3. Complete onboarding for every late acquisition.
 4. Confirm every player has the active 2013 Iteration I playbook and current position material.
 5. Deliver the individualized camp-entry expectations created after minicamp or after acquisition.
-6. Conduct the medically cleared, position-adjusted camp conditioning test described in the Prowl readiness standard.
-7. Record the test standard before players take it and apply it consistently to comparable football jobs.
+6. Conduct the medically cleared, position-adjusted player conditioning test described in the Prowl readiness standard, and the separate coach fitness assessment defined above.
+7. Record each test and passing standard beforehand and apply it consistently to comparable jobs, with medical adjustments documented by the appropriate staff.
 8. If a player does not meet the entry standard, assign an individualized conditioning/retest plan. Do not use random punishment running.
 9. Do not treat a failed conditioning test as an automatic depth-chart verdict.
 10. Freeze the opening camp install/practice goals before evaluating players.
@@ -549,6 +578,8 @@ Rotate situations across camp rather than cramming all of them into one practice
 
 The staff should know which calls the team actually trusts in each situation by the end of camp.
 
+For each selected scenario, give the group the relevant score, time, timeouts, field position and objective before the rep. Do not supply an exact clock or yard line later if the session did not record one. Let the players align, substitute and solve the taught problem; then change a meaningful condition or the personnel and see whether the answer carries. Rotate starters and reserves through useful situations rather than leaving all the clock work to QB1. Practice a missing usual communicator or an unexpected substitution without fabricating an injury. The staff must also rehearse its own call delivery and sideline decisions. A period that never reached its intended situation stays untested.
+
 ## Physical readiness, workload, and recovery
 
 The Prowl requires readiness, not reckless volume.
@@ -613,6 +644,8 @@ Youth does not create an entitlement to replace a veteran.
 A move should have a football reason.
 
 ## Daily staff evaluation process
+
+Use the [camp report](../../../../foundation/templates/training_camp_and_preseason/training_camp_report.md) and [player-assessment method](../../../../foundation/templates/training_camp_and_preseason/player_assessment.md) to explain the findings in chat and in the saved report. The paragraphs below describe who observes the work; they are not a checklist to print in place of football. Explain the assignment, execution, correction and later response where those exist.
 
 After each meaningful practice:
 
@@ -780,7 +813,7 @@ This file is the durable plan.
 
 When training camp actually begins:
 
-- create/use `training_camp/output.md` for actual events;
+- use [training_report.md](training_report.md) for actual events and the [camp template](../../../../foundation/templates/training_camp_and_preseason/training_camp_report.md) for its readable account;
 - record individual and team results there, not here;
 - use the season ledger for material phase checkpoints;
 - update roster, role, availability, financial, Document 4, and Document 5 state atomically whenever an actual decision/event changes them;

@@ -4,6 +4,8 @@
 **Authority:** This is the required coach-facing format for every in-season turn per Document 7 §5.2. Document 7 governs simulation; this template governs presentation.
 **When used:** From the preseason bulk report through the last postseason game. The offseason uses `offseason_output_template.md`.
 
+**Preseason version, user instruction September 30, 2026:** use the [camp and preseason formats](training_camp_and_preseason/README.md) for individual preseason game reports and the consolidated review. They retain this template's generated-result, full-box-score, narrative and media rules while centering the camp questions, player combinations, scheme execution and subsequent coaching work. The regular-season and postseason format below is unchanged. A practice report uses the camp template and has no invented game result or box score.
+
 ## Storage rule
 
 For a regular-season or postseason week, the complete protagonist-team turn is stored in that week's existing:

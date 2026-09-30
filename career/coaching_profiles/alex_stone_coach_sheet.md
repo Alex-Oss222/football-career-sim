@@ -14,6 +14,8 @@ His best teaching gives a player a clear job, a useful correction and another op
 
 **Reading the sheet:** biography and completed events come from branch records; statements about comfort or temperament are evidence-based interpretations; historical research supplies real context only. Unknown means the record does not establish the answer. Inactive game-week fields are marked accordingly because the club is in its offseason. Named links and the source section at the end identify the supporting records.
 
+**Current camp philosophy:** the user's later clarification of [how Stone wants training camp run](alex_stone.md#how-he-wants-training-camp-run) is maintained in the living profile and current season plan. This dated sheet retains its original assessment cutoff; it does not establish subsequent coach fitness results or camp performance.
+
 | Current record | Details |
 | --- | --- |
 | Season | Entering 2014; 2013 season closed |

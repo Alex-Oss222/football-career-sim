@@ -1,6 +1,31 @@
-# Jacksonville 2014 Training camp and integrated preseason development: evidence summary
+# Jacksonville | Camp player assessments | Through July 29, 2014
 
-<!-- sim-meta: {"event_entry": 114, "kind": "evidence_summary", "source": "career/2014/training_camp_and_preseason/training_camp/training_report.md", "source_sha256": "37ccd19a839b09585953192bca1e1995f98918316aee9ecdc620796874966360", "status": "IN_PROGRESS", "through": "2014-07-29"} -->
+<!-- sim-meta: {"event_entry": 114, "kind": "evidence_summary", "source": "career/2014/training_camp_and_preseason/training_camp/training_report.md", "source_sha256": "0fc5cf54ce38d0e09f84a38d7d72cd7719493b031a302ed0ace1c25e99a04b21", "status": "IN_PROGRESS", "through": "2014-07-29"} -->
+
+The [first five practices](training_report.md) showed that the taught spring work survived the break and a change of formations and personnel. These are non-contact findings. They support specific judgments about how the players ran their assignments; the physical questions remain for pads and preseason.
+
+## Offense
+
+Cousins operated the situation and progressed beyond the first answer when it was removed. Henne also handled the two-minute and four-minute menus without another explanation of the situation. Linsley's point with Henne was timely on both recorded July 26 and 27 days. That is useful evidence for the relief pairing's communication, with protection against a live rush still untested. Wilson retained his Sprint Flood depth; the record gives Bray and Shaw reduced-menu work, not a comparative game verdict.
+
+Bitonio, Turner and Norwell communicated the late protection changes correctly, including Norwell from either guard spot. They are performing the shared identification the scheme requires. Yarno and Tice still need to see the combinations beside Brewster secure their blocks and handle the pressure physically before the guard competition can be assessed on that basis.
+
+Nicks held the taught landmarks, Adams kept his assignment while having mixed release-path results against Talib and Verner, and Thielen carried the H assignment against Poyer. Hawkins corrected the short Y-Cross dig and retained the depth on the delayed retest. Drake has evidence about spacing and assignment reliability; the different contact-release questions remain open. Kelce's ability to sustain the attached block has no new physical evidence in this block. The same limitation applies to judging the backs' protection and the reserve tight ends' blocking.
+
+## Defense
+
+Rambo's motion trigger, Harris's rub path, Poyer's rat vision and Stanford's wheel leverage held on their camp retests. Those are particular jobs in the called coverage, rather than a claim that any player can cover every matchup. Crennel's paired zone answered the marked linebacker-on-back vertical in the work actually run. Contact, recovery and the physical matchup still need observation.
+
+The relay worked through Smith, Posluszny and Stanford with the preceding communicator removed from the drill. Mincey and Branch kept contain and PEEL assignments intact, but no live rush separates them here. The young front and linebacker groups received fit and communication work; the record cannot yet establish block defeat, anchor or tackling.
+
+## Special teams and reserve places
+
+Cain and Kreiter both kept the operation clean, and Anger put the recorded situational punts to the instructed side. Westhoff still needs the contested operation and coverage evidence. No returner or snapper winner is established.
+
+The reserve groups received meaningful work against veterans, with assignment-correct observations for rookies who had no separate correction recorded. There is no basis to turn silence about an individual into failure or exceptional performance. All five named competitions remain open, and no reserve place was awarded. The [position review](../assessments/position_battles.md) connects each question to the next useful test. These are assessments through July 29; the newly clarified coach fitness policy has no completed test result in this record.
+
+<details>
+<summary>Detailed assessment evidence and source mapping</summary>
 
 **IN_PROGRESS through July 29, 2014 (rookies and first-year players reported July 21; veterans July 24; practices July 25 to 29, without full pads).** The [execution record](training_report.md) owns the evidence; the [plan](staff_plan.md) holds intended work. Every signed player reported on his date and was examined with no communicated restriction; the four unsigned tenders are not under contract and may not practice until they sign. All five practices were without full pads (July 25 to 27 the acclimation days; the first full-pad practice is July 30), so every observation is of the spring's class: recognition, communication, timing and spacing against an opposing look, none of it blocking, a won rush, a finished tackle or a physical matchup.
 
@@ -26,3 +51,5 @@
 No other individual finding. A player not named in the output was not observed failing anything; the reserve jobs were given comparable reps July 26 and 27. The four players on unsigned tenders recorded no work; that is a contract question, not evidence. No injury or restriction was communicated July 21 to 29, and the program has no engine injury draw for practices. The July 24 camp opening family dinner and the July 26 and 29 players and staff meals were held with no attendance recorded and no football content.
 
 This page must agree with the output's status, through-date and ledger event. The digest is refreshed only after review.
+
+</details>

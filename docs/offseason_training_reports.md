@@ -1,5 +1,7 @@
 # Offseason training reports: what changed and why
 
+The same work now extends through [training camp and preseason](camp_and_preseason_reports.md), including Stone's camp philosophy, the active playbooks' assessment questions and reusable camp, game and consolidated-review formats.
+
 Prepared September 30, 2026 for the user's request to rewrite the 2014 spring reports and establish reusable examples. This is report-design research, not a simulated event. The career remains at its existing July 29, 2014 checkpoint.
 
 ## What the old reports got right and what needed changing
