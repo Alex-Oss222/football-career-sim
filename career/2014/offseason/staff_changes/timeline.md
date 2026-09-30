@@ -52,7 +52,7 @@ The January entries below come from the [closed request and outcome record](requ
 
 | Item | Current position | Next step |
 |---|---|---|
-| Emergency succession if a caller is unavailable | Unassigned (Document 3 section 4) | A user decision; not implied by the Westhoff appointment |
+| Emergency succession if a caller is unavailable | Unassigned for game-day calling (Document 3 section 4). The practice lead is settled: Tice, then Crennel ([April 18 decisions](../stone_april_18_2014_decisions.md#practice-if-stone-is-out)) | A user decision; not implied by the Westhoff appointment |
 | Coaching requests after February 17 | The deferred procedure's window closed on February 17 with nothing pending | Any later request is recorded as its own dated event |
 
 An open item has no completed-event row until something happens. The Super Bowl clubs were resolved by the deferred procedure (Entry 83): Buffalo kept Doug Marrone; Minnesota changed head coach, with an external hire on February 17.

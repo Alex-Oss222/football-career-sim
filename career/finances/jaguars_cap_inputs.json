@@ -1,7 +1,7 @@
 {
   "team": "Jacksonville Jaguars",
-  "as_of": "2014-03-31",
-  "checkpoint": "Entry 105",
+  "as_of": "2014-04-17",
+  "checkpoint": "Entry 106",
   "prepared": "2026-09-29",
   "start_year": 2014,
   "end_year": 2025,
@@ -3268,8 +3268,8 @@
       "roster_position": "LB",
       "date_of_birth": "1986-05-05",
       "age_at_checkpoint": 27,
-      "control": "signed",
-      "status": "Under contract; real retirement dated April 22, 2014 applies when the clock reaches it (Entry 79)",
+      "control": "traded",
+      "status": "Traded to Arizona, April 7, 2014 (Entry 106); his real retirement dated April 22, 2014 now applies at Arizona",
       "contract_type": "Veteran, 2012",
       "signed": "2012",
       "term": "3 / 2014",
@@ -3278,9 +3278,9 @@
       "bonus_terms": "$1,250,000 signing bonus; final 2014 allocation $416,668",
       "guarantees": "Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap.",
       "dead_money_2014": "$416,668 gross exposure under adopted terms, before any later earned payment or recorded credit",
-      "remaining_guarantees": 0,
+      "remaining_guarantees": null,
       "availability": "No communicated restriction",
-      "plan": "No new transaction decision in this tracker",
+      "plan": "Traded to Arizona (Entry 106)",
       "source_note": "Planning base $1.975M matches the earlier memo and recovered contract notes. Add $25,000 workout and final $416,668 bonus allocation. Any incentive charge is separate: the prior $1M other-bonus entry cannot be copied without the branch earning test. No later retirement or real release is executed here.",
       "sources": [
         "career/2014/offseason/contract_table.md",
@@ -3292,15 +3292,11 @@
       "accrued_seasons": "Through 2012: 4 (2009-2012). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "approximate",
+          "status": "not_committed",
           "cap": null,
-          "base": 1975000,
-          "proration": 416668,
-          "other_cap": 25000,
-          "cash": 2000000,
-          "approximate_cap": 2416668,
-          "estimate_note": "Planning base $1.975M matches the earlier memo and recovered contract notes. Add $25,000 workout and final $416,668 bonus allocation. Any incentive charge is separate: the prior $1M other-bonus entry cannot be copied without the branch earning test. No later retirement or real release is executed here. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.",
-          "guaranteed_base": 0
+          "base": null,
+          "proration": null,
+          "cash": null
         },
         "2015": {
           "status": "not_committed",
@@ -3381,7 +3377,10 @@
         }
       },
       "guarantee_basis": "simulation reconstruction",
-      "schedule_basis": "Includes adopted simulation amounts; see contract notes"
+      "schedule_basis": "Includes adopted simulation amounts; see contract notes",
+      "former_player": true,
+      "departure_date": "2014-04-07",
+      "departure_source": "career/2014/ledger.md"
     },
     {
       "name": "Paul Posluszny",
@@ -5207,20 +5206,20 @@
       "roster_position": "QB",
       "date_of_birth": "1985-07-02",
       "age_at_checkpoint": 28,
-      "control": "pending",
-      "status": "Unrestricted free agent from 4 p.m. March 11, 2014; the first-pass March 7 draw is superseded and his chronology is reopened (Entry 95)",
-      "contract_type": "Veteran, signed March 14, 2012",
-      "signed": "See expiring-contract description",
-      "term": "2013",
-      "contract_ends": 2013,
-      "value": "$6,750,000 (2 years)",
-      "bonus_terms": "Not established for a new contract",
-      "guarantees": "No new signed 2014 guarantee established",
-      "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
-      "remaining_guarantees": null,
+      "control": "signed",
+      "status": "Under contract",
+      "contract_type": "Veteran (branch re-signing)",
+      "signed": "April 4, 2014",
+      "term": "2 / 2015",
+      "contract_ends": 2015,
+      "value": "$4,000,000",
+      "bonus_terms": "$1,200,000 signing bonus; $600,000; 2",
+      "guarantees": "$2,000,000 (signing bonus and 2014 base)",
+      "dead_money_2014": "$600,000 remaining bonus if released before 2015",
+      "remaining_guarantees": 800000,
       "availability": "No communicated restriction",
-      "plan": "Unrestricted free agent from 4 p.m. March 11, 2014; the first-pass March 7 draw is superseded and his chronology is reopened (Entry 95)",
-      "source_note": "Confirmed (register); 2013 OTC row",
+      "plan": "No new transaction decision in this tracker",
+      "source_note": "Branch record (Entry 106; negotiation record career/2014/offseason/free_agency/henne_negotiation_2014-04-04.md). Two years, $4.0M, $2.0M guaranteed, inside Stone's $2.5M-a-year ceiling. QB2 behind Cousins; no starting promise.",
       "sources": [
         "career/2014/offseason/contract_table.md",
         "career/2014/offseason/contract_status_register.md"
@@ -5229,18 +5228,24 @@
       "accrued_seasons": "Through 2012: 5 (2008-2011 Miami, 2012 Jacksonville; 4+ is Supported). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "not_signed",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 1400000,
+          "base": 800000,
+          "proration": 600000,
+          "other_cap": 0,
+          "cash": 2000000,
+          "guaranteed_base": 800000,
+          "basis": "Branch contract, Entry 106: $600,000 bonus allocation, $800,000 guaranteed base"
         },
         "2015": {
-          "status": "not_committed",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 2600000,
+          "base": 2000000,
+          "proration": 600000,
+          "other_cap": 0,
+          "cash": 2000000,
+          "guaranteed_base": 0,
+          "basis": "Branch contract, Entry 106: $600,000 bonus allocation, $2,000,000 base"
         },
         "2016": {
           "status": "not_committed",
@@ -5313,9 +5318,7 @@
           "cash": null
         }
       },
-      "former_player": true,
-      "departure_date": "2014-03-11",
-      "departure_source": "career/2013/ledger.md"
+      "schedule_basis": "Branch re-signing, Entry 106 (negotiation record career/2014/offseason/free_agency/henne_negotiation_2014-04-04.md)"
     },
     {
       "name": "Maurice Jones-Drew",
@@ -7857,6 +7860,13 @@
       "amount": 5951636,
       "status": "reconstructed",
       "basis": "Pre-June 1 trade to Indianapolis, March 31, 2014 (Entry 104): the remaining bonus allocations of $2,975,818 for 2014 and $2,975,818 for 2015 accelerate into 2014. Indianapolis takes his 2014 and 2015 base salaries and deferred roster cash; his 2015 charge leaves Jacksonville."
+    },
+    {
+      "player": "Russell Allen",
+      "year": 2014,
+      "amount": 416668,
+      "status": "reconstructed",
+      "basis": "Pre-June 1 trade to Arizona, April 7, 2014 (Entry 106): his final $416,668 original bonus allocation stays with Jacksonville in 2014. Arizona takes his $1,975,000 base and $25,000 workout bonus."
     }
   ],
   "amendments": [
@@ -7904,6 +7914,16 @@
       "date": "2014-03-31",
       "source": "career/2014/ledger.md",
       "description": "Entry 105: the Colts' 2014 third (No. 82) and sixth (No. 194) traded to Washington for Jacksonville's original 2015 second. No players move and no cap figure changes."
+    },
+    {
+      "date": "2014-04-04",
+      "source": "career/2014/ledger.md",
+      "description": "Entry 106: Henne re-signed (two years, $4.0M, $2.0M guaranteed; 2014 charge $1,400,000, 2015 charge $2,600,000)."
+    },
+    {
+      "date": "2014-04-07",
+      "source": "career/2014/ledger.md",
+      "description": "Entry 106: Allen trade with Arizona closed after Posluszny's April 5 clearance and Allen's April 7 physical; Arizona's 2015 fourth to Jacksonville. Pre-June 1 trade: Allen's $416,668 bonus allocation stays as 2014 dead money."
     }
   ],
   "scenarios": [],

@@ -1,6 +1,6 @@
 # Jacksonville 2014 financial preparation worksheet
 
-**As of:** March 31, 2014.
+**As of:** April 17, 2014.
 **Status:** player-contract schedules are complete; club-level reconciliation remains open. No certified 2014 cap room exists.
 **Role:** this worksheet is the current 2014 accounting owner. It records the working cap position and every open reconciliation item. The [contract table](contract_table.md) is the per-player view, the [twelve-year tracker](../../finances/jaguars_cap.md) carries recorded obligations through 2025, and the [2013 worksheet](../../2013/offseason/current_cap_worksheet.md) is prior-year history. Transaction history is in the [2014 ledger](../ledger.md).
 
@@ -8,15 +8,15 @@
 
 | Component | 2014 amount |
 |---|---:|
-| Scheduled player cap, including unsigned tenders | $112,759,748 |
+| Scheduled player cap, including unsigned tenders | $111,743,080 |
 | of which unsigned tenders (Bradfield, Clemons, Pasztor, Brown) | $3,066,000 |
-| Dead money (Bray $51,675; Nwaneri $2,189,000 after his March 20 trade; Alualu $1,542,500 after his March 24 trade to Houston; Babin's March 24 trade to Miami leaves none; Shorts $110,845 and Blackmon $5,951,636 after their March 31 trade to Indianapolis) | $9,845,656 |
-| Offseason Top-51 count with dead money (two $420,000 minimums displaced) | $121,765,404 |
+| Dead money (Bray $51,675; Nwaneri $2,189,000 after his March 20 trade; Alualu $1,542,500 after his March 24 trade to Houston; Babin's March 24 trade to Miami leaves none; Shorts $110,845 and Blackmon $5,951,636 after their March 31 trade to Indianapolis; Allen $416,668 after his April 7 trade to Arizona) | $10,262,324 |
+| Offseason Top-51 count with dead money (two $420,000 minimums displaced) | $121,165,404 |
 | Opening offseason-workout charge (CBA Article 13 section 5(g)) | $504,000 |
-| Working total | $122,269,404 |
-| Working difference against the $133,000,000 league cap | $10,730,596 |
+| Working total | $121,669,404 |
+| Working difference against the $133,000,000 league cap | $11,330,596 |
 
-The player figure includes the March 2014 contracts of Monroe ($5,600,000, replacing his tender), Marks ($4,750,000), Verner ($6,000,000), Talib ($7,800,000), Nicks ($5,000,000 budget), Hawkins ($2,800,000), Te'o-Nesheim ($3,000,000), Cain ($855,000), Jones-Drew ($2,600,000) and C.J. Wilson ($795,000). The working difference is not certified room: rookies, further signings and reserves are unreconciled, and the carryover below is an estimate. Adding the estimated 2013 rollover of about $5.33M to $6.00M gives a working difference of about $16.06M to $16.73M. The [contract table](contract_table.md#5b-working-2014-cap-charges) shows the calculation.
+The player figure includes the 2014 branch contracts of Monroe ($5,600,000, replacing his tender), Marks ($4,750,000), Verner ($6,000,000), Talib ($7,800,000), Nicks ($5,000,000 budget), Hawkins ($2,800,000), Te'o-Nesheim ($3,000,000), Cain ($855,000), Jones-Drew ($2,600,000), C.J. Wilson ($795,000) and Henne ($1,400,000). The working difference is not certified room: rookies, further signings and reserves are unreconciled, and the carryover below is an estimate. Adding the estimated 2013 rollover of about $5.33M to $6.00M gives a working difference of about $16.66M to $17.33M. The [contract table](contract_table.md#5b-working-2014-cap-charges) shows the calculation.
 
 ## 2013 rollover
 
@@ -57,7 +57,7 @@ Player schedules rest on two research files. The [original-contract research](..
 | Continuing contracts | Carry each executed branch agreement and verified inherited contract into its 2014 year: base pay, bonus proration, guarantees, options, incentives, cap and cash separately | Sourced schedules and estimates shown separately; no estimate treated as certified room |
 | League cap and adjustments | 2014 league cap: $133,000,000 per club, published February 28 (Confirmed in the 2014 financial rules library); compliance by 4 p.m. ET March 11. Jacksonville carried unused 2013 room into 2014 (Confirmed). The branch amount is not certified; the [2013 rollover](#2013-rollover) section estimates about $5.33M to $6.00M, and the real Jaguars' reported figure is not used. No per-club 2014 adjusted-cap table was found for February 28, so Jacksonville's adjusted cap and certified cap space stay open. Context only: the February 28 release relayed a $6.1M average carryover among clubs that elected one (single source) | No certified 2014 balance until the carryover and the unresolved charges in the [contract table](contract_table.md) are reconciled; the rollover estimate is planning room only |
 | Meester | Retired; contract expired March 11 with no 2014 charge | Not an active free-agent target; no guessed savings |
-| Own free agents | Monroe and Marks re-signed March 11; Cain re-signed March 19; Jones-Drew and C.J. Wilson re-signed March 28. Henne, Ball and Brent Grimes are unrestricted and unsigned (Stone's March 31 plan pursues Henne as QB2, revisits Ball after the draft and does not pursue Grimes). Bradfield tendered at $1,431,000 (lowest; amounts Confirmed); Clemons and Pasztor at $570,000 and Brown at $495,000 (credited seasons are branch inferences). Reisner and Rutland not tendered | Any later re-signing replaces nothing already booked; no guessed charge for an unsigned player |
+| Own free agents | Monroe and Marks re-signed March 11; Cain re-signed March 19; Jones-Drew and C.J. Wilson re-signed March 28; Henne re-signed April 4 ($1,400,000 in 2014, $2,600,000 in 2015). Ball and Brent Grimes are unrestricted and unsigned (Stone's March 31 plan revisits Ball after the draft and does not pursue Grimes). Bradfield tendered at $1,431,000 (lowest; amounts Confirmed); Clemons and Pasztor at $570,000 and Brown at $495,000 (credited seasons are branch inferences). Reisner and Rutland not tendered | Any later re-signing replaces nothing already booked; no guessed charge for an unsigned player |
 | Franchise tag | Monroe was tagged February 18; his five-year agreement replaced the unsigned tender on March 11. His 2014 cap charge is $5,600,000 | No tender charge and no second designation |
 | Completed inherited terms | John Parker Wilson $730,000 and Jonathan Grimes $570,000, both signed through 2014 under the adopted completion terms | No Grimes tender; any Wilson release is a separate transaction |
 | Other uncertain terms | Nwaneri's March 25 bonus passed to Arizona with his trade. Mosley, Mincey and Owens have disclosed allocation estimates; Lowery's original salaries are recovered. Blackmon's four-game 2013 forfeiture is still unreconciled: a base-salary credit would belong to the 2013 rollover, and any recovered signing bonus would be a separate, unverified 2014 credit. Verify branch escalators, incentives, and Brown, Pasztor and Reisner expiry evidence | Block only the affected transaction until verified |

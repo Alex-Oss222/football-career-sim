@@ -58,7 +58,7 @@ class CapTrackerTests(unittest.TestCase):
         validate(self.data)
         self.assertEqual(totals(self.data['players'], ['2014'])[0],
                          before + former['years']['2014']['cap'])
-        former['departure_date'] = '2014-04-01'
+        former['departure_date'] = '2014-04-18'
         with self.assertRaisesRegex(ValueError, 'future departure'):
             validate(self.data)
 
@@ -85,7 +85,7 @@ class CapTrackerTests(unittest.TestCase):
         outputs = render(self.data)
         main = next(value for path, value in outputs.items() if path.name == 'jaguars_cap.md')
         self.assertIn('Unused prior-year room carried in | $5,330,000 to $6,000,000', main)
-        self.assertIn('Difference including the rollover estimate | $16,060,596 to $16,730,596', main)
+        self.assertIn('Difference including the rollover estimate | $16,660,596 to $17,330,596', main)
         self.assertIn('Adjusted team cap | Unresolved', main)
         estimate = self.data['team_years']['2014']['carryover_working_estimate']
         estimate['low'], estimate['high'] = estimate['high'], estimate['low']
@@ -101,8 +101,8 @@ class CapTrackerTests(unittest.TestCase):
         organization=next(value for path,value in outputs.items() if path.name=='organization_finances.md')
         self.assertIn('**Nine-year view**',main)
         self.assertIn('**Additional three years**',main)
-        self.assertIn('$122,269,404',main)
-        self.assertIn('$10,730,596',main)
+        self.assertIn('$121,669,404',main)
+        self.assertIn('$11,330,596',main)
         self.assertIn('Certified cap space | Unresolved',main)
         self.assertNotRegex(main,r'^##+ \d+\.',)
         self.assertNotIn('Release comparisons',main)
@@ -176,10 +176,10 @@ class CapTrackerTests(unittest.TestCase):
         self.assertNotIn('Not committed',main)
         self.assertIn('$570,000 | $660,000 |  |  |',main)
         self.assertEqual(cap_cell(self.player('Lane Johnson')['years']['2017']), '')
-        self.assertEqual(cap_cell(self.player('Chad Henne')['years']['2014']), '')
+        self.assertEqual(cap_cell(self.player('Alan Ball')['years']['2014']), '')
         self.assertEqual([working_total(self.data['players'],str(y)) for y in [2014,2015,2016,2017]],
-                         [112759748,102895454,64011292,37800000])
-        self.assertIn('$122,605,404',main)  # Old Bray bonus is included once.
+                         [111743080,105495454,64011292,37800000])
+        self.assertIn('$122,005,404',main)  # Old Bray bonus is included once.
 
     def test_slot_guarantees_and_release_exposure_reconcile(self):
         lane=self.player('Lane Johnson');kelce=self.player('Travis Kelce')

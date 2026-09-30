@@ -31,10 +31,12 @@
         },
         {
           "id": "dated_fixtures",
-          "status": "BLOCKED",
-          "remaining": "Freeze validated dated fixtures after the April 23 release; the opponent matrix is not a fixture schedule.",
+          "status": "VERIFIED",
+          "remaining": "Frozen April 23 release (2014 ledger Entry 107): 256 games verified in sources.md and tests. Apply the listed dated amendments on their historical dates; two non-Jacksonville release-slot kickoff questions stay open in sources.md.",
           "evidence": [
-            "career/2014/schedule/release_plan.md"
+            "career/2014/schedule/fixtures.json",
+            "career/2014/schedule/sources.md",
+            "tests/test_2014_fixtures.py"
           ]
         },
         {

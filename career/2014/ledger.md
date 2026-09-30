@@ -200,3 +200,122 @@ The annual handoff manifest tracks team closeout, interviews, finances, roles/me
 **Atomic closure.** The trade record, completed trades, offer log, trade targets, pick ownership register and generated draft order, draft board, draft pairing, Washington rails page, financial inputs and generated cap views, calendar, the 2014 README, readiness, operating baseline and Documents 4 and 5 agree. The private snapshot is advanced only after merge.
 
 **Commit closed - Canonical update - March 31, 2014 - Colts picks traded to Washington for Jacksonville's 2015 second - canonical through March 31, 2014**
+
+## Entry 106 — April 1–17, 2014 — Henne re-signed, Posluszny cleared, Allen traded to Arizona
+
+**Recorded:** September 30, 2026. **Simulation clock:** advances from March 31 to April 17, 2014.
+**Checkpoint:** `Canonical update - April 17, 2014 - Henne re-signed, Posluszny cleared, Allen traded to Arizona`
+**Preceding global package checkpoint:** `Canonical update - March 31, 2014 - Colts picks traded to Washington for Jacksonville's 2015 second`
+
+**April 3: offseason schedules released.** The league released every club's offseason workout schedule. Jacksonville's filed schedule stands, with Phase One opening April 21. Other clubs' real dates are not imported.
+
+**Chad Henne (QB), re-signed April 4.** Stone's instruction is in the [memo amendment of September 30, 2026](offseason/stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-henne-ball-and-brent-grimes): re-sign him as QB2 within $2.5M a year. Caldwell negotiated from April 1 and Henne accepted on April 4, with no private draw. Event owner: [the negotiation record](offseason/free_agency/henne_negotiation_2014-04-04.md).
+- **Terms:** two years, $4,000,000: a $1,200,000 signing bonus ($600,000 allocated each year), a 2014 base of $800,000 and a 2015 base of $2,000,000.
+- **Guaranteed:** $2,000,000, the bonus and the 2014 base.
+- **Cap:** 2014 charge $1,400,000; 2015 charge $2,600,000.
+- **Role:** QB2 behind Kirk Cousins, his carried place. No starting promise.
+
+**Paul Posluszny cleared April 5.** His head/neck hold from 2013 Week 13 cleared on its projected date. In 2013 every club's injuries, Jacksonville's offseason players included, cleared on the projected date without a separately modelled staged clearance, and applying the same rule to Jacksonville is the protagonist-blind rule. No new restriction has been communicated.
+
+**The Allen trade with Arizona closed April 7.** The agreement of March 24 closed automatically under its own conditions, with no further negotiation ([resolution log](trades/march_24_2014_trade_resolution.md)).
+- **Conditions met:** Posluszny's actual clearance on April 5, before the April 21 limit; Russell Allen passed Arizona's physical on April 7; the trade was processed the same day.
+- **Return:** Arizona's unconditional 2015 fourth-round pick.
+- **Cap (pre-June 1 trade):** Allen's $2,416,668 2014 charge leaves. His final $416,668 bonus allocation stays as 2014 dead money; Arizona takes his $1,975,000 base and $25,000 workout bonus. His contract had no 2015 year.
+- **Rails:** Allen's real retirement, dated April 22, 2014, now applies at Arizona after this entry's window. It has no Jacksonville cap effect.
+
+**April 9: preseason matchups public.** Tampa Bay and Atlanta at home, and games at Chicago and Detroit. Exact dates stay gated to the April 23 schedule release. The 2015 Pro Bowl site, University of Phoenix Stadium in Glendale, Arizona, was also announced.
+
+**April 11: staff review held.** The staff allocated work under Stone's adopted second-year direction (review established work, integrate rookies, continue individual work and teach new material, including Boot Flood). No new Stone decision was made. The staff preparation checkpoint carried from March 31 is done.
+
+**Effects.**
+- **Roster:** controlled roster 53 (Henne in, Allen out): 49 signed and four unsigned tenders.
+- **Medical:** Posluszny has no communicated restriction. Will Rackley stays limited with no projected absence.
+- **2014 cap:** player contracts $111,743,080 including tenders, plus $10,262,324 dead money. Two $420,000 minimums fall outside the offseason Top 51, giving $121,165,404. With the $504,000 workout charge the working total is $121,669,404, an $11,330,596 working difference before carryover, rookies and reserves. With the 2013 rollover estimate the difference is about $16,660,596 to $17,330,596. This is not certified room.
+- **2015 commitments:** $105,495,454.
+- **Draft picks:** 2014 unchanged at nine. 2015 picks held: Jacksonville's own second, Miami's third, Houston's fourth and Arizona's fourth.
+- **Depth chart:** Henne restored at QB 2, with John Parker Wilson and Tyler Bray behind him. Allen is removed from the linebackers. Posluszny and Daryl Smith keep their carried base roles, Smith the communication lead, with Julian Stanford next and Sio Moore in Crennel's packages. No Stone role decision was made.
+- **Rails:** Arizona's page records the branch trade.
+
+**Open.**
+- Ball (revisited after the draft) and Brent Grimes (not pursued).
+- The Rackley-or-Brewster trade (blocked until two offensive linemen are drafted).
+- The left guard, Edge 1, WR1 and WR3 roles.
+- The April 18 phase-plan choices: emergency staff operation, the defensive relay backup method, injured-player learning, the cross-training method, the punt instruction format, the defensive intent format, the consultation cadence and family event dates before April 21.
+- The rails from March 11 evening to April 17 remain unswept beyond the targets' own moves and the branch trades.
+
+**Next.** The April 18 staff review; Phase One opens April 21.
+
+**Atomic closure.** The negotiation record, signings record, free-agency board status, contract status register, contract table, cap worksheet, financial inputs and generated cap views, roster, working depth chart and its JSON copy, completed trades, offer log, trade targets and README, pick ownership register and generated draft order, retirements and Arizona rails pages, preseason gate, phase-plan decision status, calendar, the 2014 README, readiness, operating baseline, player ages and Documents 4 and 5 agree. The private snapshot is advanced only after merge.
+
+**Commit closed - Canonical update - April 17, 2014 - Henne re-signed, Posluszny cleared, Allen traded to Arizona - canonical through April 17, 2014**
+
+## Entry 107 — April 18 to May 1, 2014 — Phase One under way; April 18 decisions; schedule released
+
+**Recorded:** September 30, 2026. **Simulation clock:** advances from April 17 to Thursday, May 1, 2014.
+**Checkpoint:** `Canonical update - May 1, 2014 - Phase One under way; April 18 decisions; schedule released`
+**Preceding global package checkpoint:** `Canonical update - April 17, 2014 - Henne re-signed, Posluszny cleared, Allen traded to Arizona`
+
+**April 18: staff review; Stone's decisions adopted.** The user's instruction is [Stone's April 18 decisions](offseason/stone_april_18_2014_decisions.md). The [decision package](offseason/phase_plan_decisions.md) marks all eight as adopted.
+- **Emergency practice lead:** Mike Tice, then Romeo Crennel, with narrow authority: run the approved schedule and make no role, install or personnel change. Game-day caller succession is not covered and stays unassigned.
+- **Defensive relay succession:** Daryl Smith, then Paul Posluszny if cleared and in the package, then Julian Stanford. Sio Moore relays his own packages.
+- **Injured-player learning:** four levels, with clinicians deciding cognitive load and field access.
+- **Cross-training:** observation lanes for Bradfield, Pasztor, Thielen, Kelce, Poyer, Moore, Prosinski and Trawick. Newcomers learn their primary job first.
+- **Punt instruction:** four punt families and three-part grading.
+- **Defensive intent:** TAKE, GIVE and ANSWER on every defensive package.
+- **Consultation cadence** and the **spring social calendar** from April 21 to June 18, with no attendance sheet.
+- **Where the rules differ:** Stone's statements of the kicking and radio-helmet rules go beyond the verified phase rules. The verified rule controls, so Phase One punt work stayed in the classroom.
+- None of these decisions appoints a player to a role or changes the depth chart.
+
+**April 21 to May 1: Phase One.** Eight program days were held: April 21 to 24 and April 28 to May 1. Event owner: [the phase output](offseason/offseason_program/output.md), with its [evidence summary](offseason/offseason_program/standouts.md).
+- **Participation:** voluntary. The 49 players under signed contracts took part within their medical instructions, and attendance was not used as evidence. The four players on unsigned tenders (Bradfield, Clemons, Brown and Pasztor) have no established participation basis, so no program work is recorded for them. Caldwell's office owns that question.
+- **Onboarding:** the eleven newcomers received the welcome package and the complete Iteration I books on April 21, with Stone's and the position coaches' follow-up conversations April 23 to 25. They are Verner, Talib, Nicks, Hawkins, Te'o-Nesheim and the six reserve/future players.
+- **Teaching:** classroom teaching covered the established offense and Boot Flood's return, shared protection identification, and TAKE, GIVE and ANSWER on the carried defensive packages. Stanford took full-call, echo and check reps. Westhoff taught the punt families. Cross-training lanes opened in the classroom. The performance staff ran individual physical plans. No coach-led field work took place.
+- **Observations:** classroom only. Two staff wording gaps, on the Boot Flood read and on a protection cue, were found and fixed. Stanford's relay answers held when shown a changed diagram. No unit badge was assessed.
+- **Rackley:** kept his existing physical-only limit and did the full classroom work. No new restriction was communicated.
+- **Staff and film:** the consultation meetings were held and the first player council met May 1. No film packet was issued, so the delivery log has no new receipt.
+- **Social events, held as scheduled:** April 21 opening team dinner (Stone spoke), April 24 family barbecue, April 29 players and staff cookout and May 1 family dinner. No attendance or football content was recorded.
+
+**April 22: Russell Allen retired at Arizona.** His real retirement applies to Arizona, which acquired him April 7. Jacksonville is not affected: his $416,668 dead money comes from the trade itself.
+
+**April 23, 8 p.m. ET: 2014 regular-season schedule released.** The frozen [fixture release](schedule/fixtures.json) has 256 games, as checked in [sources](schedule/sources.md) and tested in `tests/test_2014_fixtures.py`.
+- **Jacksonville:** Week 1 at Philadelphia, September 7. The bye is Week 11. The Week 10 game is Dallas at Wembley Stadium on November 9, with Jacksonville the designated home team. The Week 16 game is Thursday, December 18, at home against Tennessee.
+- **Readable views:** [Jacksonville's 17 weeks](regular_season/README.md) and [the league view](schedule/fixtures.md).
+- **Preseason dates** were published with the release: August 8 Tampa Bay at home, August 14 at Chicago, August 22 at Detroit and August 28 Atlanta at home.
+- **Later changes:** dated amendments, including the Buffalo snow relocation and the Week 17 flexes, apply on their historical dates, not now.
+- **Game gates:** the dated-fixtures gate is closed. The other 2014 game gates remain open.
+
+**Effects.**
+- **Roster:** unchanged at 53: 49 signed and four unsigned tenders. No transaction.
+- **Medical:** unchanged. Rackley is limited with no projected absence; every other player has no communicated restriction.
+- **Cap and draft capital:** unchanged.
+- **Staff:** Tice is the emergency practice lead, with Crennel second.
+- **Roles:** the defensive relay succession is recorded. The depth chart is unchanged.
+- **Rails:** Allen's retirement row and Arizona's page are updated. Other clubs' rails from March 11 evening to May 1 remain unswept beyond the targets' own moves, the branch trades and Allen's retirement.
+
+**Open.**
+- Ball (revisited after the draft) and Brent Grimes (not pursued).
+- The Rackley-or-Brewster trade, blocked until two offensive linemen are drafted.
+- The WR1, WR3, left guard and Edge 1 roles, which are Stone's decisions.
+- The participation basis for the four unsigned tenders.
+- Film packet approval and delivery; the January 31 receipts remain unverified.
+
+**Next.**
+- May 2: the Phase One staff handoff, and the RFA offer-sheet deadline for Bradfield's tender.
+- May 5: Phase Two opens.
+- May 6: team barbecue.
+- May 7: RFA matching deadline.
+- May 8: family cookout.
+- May 8 to 10: the draft (nine picks, then the undrafted board in order).
+- May 16 and 17: rookie minicamp.
+
+**Atomic closure.** These records agree:
+- the phase output and evidence summary, and the decision-package status;
+- the calendar, the regular-season and preseason indexes and the schedule records;
+- the season readiness gate and the repository map;
+- the retirements and Arizona rails pages;
+- the staff-change records, readiness and operating baseline, the 2014 and offseason READMEs, player ages and the progression roster;
+- Documents 4 and 5.
+
+No player development or coaching profile handoff falls in this window: Phase One closes at the May 2 handoff. The private snapshot is advanced only after merge.
+
+**Commit closed - Canonical update - May 1, 2014 - Phase One under way; April 18 decisions; schedule released - canonical through May 1, 2014**

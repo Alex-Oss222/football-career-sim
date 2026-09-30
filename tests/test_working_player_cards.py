@@ -61,7 +61,7 @@ class WorkingPlayerCardTests(unittest.TestCase):
     def test_current_roster_cards_and_stats_are_consistent(self):
         self.assertEqual(profile_errors(2014), [])
         cards = list((ROOT/'career/2014/player_profiles').glob('*.md'))
-        self.assertEqual(len(cards), 57)  # 55 players, index and template
+        self.assertEqual(len(cards), 58)  # 53 current players, 3 former players, index and template
 
     def test_player_facing_year_labels_preserve_proper_name(self):
         self.assertEqual(clean_labels('Andre Branch; Branch evidence; Branch regular season'),

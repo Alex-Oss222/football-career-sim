@@ -53,6 +53,10 @@ Caldwell, on Stone's March 31 instruction to trade the two picks received from I
 - Washington's answer: No. 82 alone does not cover a second that could land early if Jacksonville's season goes badly. It asked for No. 194 as well.
 - Completed: Caldwell accepted within Stone's authorization. No players move; processed March 31. See [completed trades](trades.md).
 
+## April 7, 2014: Allen trade with Arizona (completed)
+
+The agreement of March 24 closed under its own conditions, with no further negotiation. Paul Posluszny was cleared on April 5. Allen passed Arizona's physical on April 7 and the trade was processed that day. Arizona's unconditional 2015 fourth is Jacksonville's. See [completed trades](trades.md).
+
 ## Adding an entry
 
 Record each new communication once, dated, with:

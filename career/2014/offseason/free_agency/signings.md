@@ -1,6 +1,6 @@
 # Jacksonville 2014 free-agency and contract outcomes
 
-**As of:** March 28, 2014. This page records every 2014 Jacksonville offer, tender and signing: the March 2014 signings and re-signings, the six reserve/future contracts and the tags and tenders. Stone's priorities are on the [free-agency board](player_board.md); prior contracts are in the [2013 signing history](../../../2013/offseason/free_agency/signings.md) and each player's current status is in the [contract status register](../contract_status_register.md).
+**As of:** April 4, 2014. This page records every 2014 Jacksonville offer, tender and signing: the March and April 2014 signings and re-signings, the six reserve/future contracts and the tags and tenders. Stone's priorities are on the [free-agency board](player_board.md); prior contracts are in the [2013 signing history](../../../2013/offseason/free_agency/signings.md) and each player's current status is in the [contract status register](../contract_status_register.md).
 
 ## Process and evidence
 
@@ -8,7 +8,7 @@ Read [Stone's board](player_board.md), the [calendar](../../calendar.md) and the
 
 Caldwell resolves the memo's terms and contingencies. Jacksonville's own re-signings, tenders and tags are branch transactions, not real Jaguars imports. New targets require a sourced status and contract review. The March 8 to 11 period was replayed as a judgment-based negotiation (see below); outside targets not covered by that replay use the [one market draw per player](../league_rails/fa_draws.md) at the player's real signing date under the rails method. Do not reroll a loss or read later terms early.
 
-## Signed and re-signed contracts, March 2014
+## Signed and re-signed contracts, March and April 2014
 
 At Stone's instruction the March 8 to 11 negotiations were replayed as a judgment-based simulation: Caldwell set the offers from Stone's baselines, and each player could accept, counter or decline. No private draw was used and none of the first-pass random values is reused. The [replay log](march_2014_replay_log.md) owns the full negotiation record, annual schedules and cap bridge; the individual negotiation records are linked in the table.
 
@@ -21,6 +21,7 @@ At Stone's instruction the March 8 to 11 negotiations were replayed as a judgmen
 | Jeremy Cain, LS | Re-signed March 19 ([negotiation record](cain_negotiation_2014-03-19.md)) | 1 year, 2014 | $855,000 | $0 | $855,000 |
 | Maurice Jones-Drew, RB | Re-signed March 28 over Oakland's three-year offer ([negotiation record](jones_drew_and_wilson_negotiation_2014-03-28.md)) | 2 years, 2014-2015 | $7,000,000 | $3,250,000 | $2,600,000 |
 | C.J. Wilson, DE | Re-signed March 28 after a current physical (same record) | 1 year, 2014 | $795,000 | $65,000 | $795,000 |
+| Chad Henne, QB | Re-signed April 4 as QB2 ([negotiation record](henne_negotiation_2014-04-04.md)) | 2 years, 2014-2015 | $4,000,000 | $2,000,000 | $1,400,000 |
 | Daniel Te'o-Nesheim, DE | Signed March 18 ([negotiation record](teo_nesheim_negotiation_2014-03-18.md)) | 3 years, 2014-2016 | $13,500,000 | $6,000,000 | $3,000,000 |
 | Hakeem Nicks, WR | Signed March 14 | 1 year, 2014 | $5,000,000 | $4,500,000 | $5,000,000 (active-game bonuses reserved) |
 | Andrew Hawkins, WR | Offer sheet signed March 13; Cincinnati declined to match March 18 (no pick owed) | 4 years, 2014-2017 | $15,600,000 | $8,000,000 | $2,800,000 |
@@ -33,11 +34,10 @@ Caldwell has ended paid veteran receiver bidding.
 
 Under [Stone's March 31 plan](../stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-henne-ball-and-brent-grimes):
 
-- Chad Henne (QB): pursued as QB2, opening with the existing offer of two years, $3.75M with $1.65M guaranteed, within the recorded $2.5M-a-year ceiling.
 - Alan Ball (CB): left unsigned for now; revisited after the draft if corner depth remains thin, subject to a current physical.
 - Brent Grimes (CB): the fallback offer is withdrawn and he is not pursued. With both primary corners signed, Tarell Brown is not pursued automatically either.
 
-All three are unplaced free agents under the rails: Henne's and Grimes's real 2014 moves (re-signings with the real Jaguars and Miami) do not apply in the branch, and Ball has no real 2014 move.
+Both are unplaced free agents under the rails: Grimes's real 2014 move (a re-signing with Miami) does not apply in the branch, and Ball has no real 2014 move. Chad Henne re-signed April 4 (above).
 
 ## Reserve/future contracts
 

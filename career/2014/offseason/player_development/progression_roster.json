@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "season": 2014,
-  "as_of": "March 31, 2014",
+  "as_of": "May 1, 2014",
   "roster_source": "career/2014/roster.md",
   "continuity_source": "career/2014/offseason/player_development/2013_exit_player_index.json",
   "policy": "Roster controls eligibility. The exit index identifies Jacksonville 2013 continuity only. Regenerate after any transaction or draft addition before progression is resolved.",
@@ -15,6 +15,11 @@
   "players": [
     {
       "player": "Kirk Cousins",
+      "pos": "QB",
+      "continuity": "returning_2013_jaguar"
+    },
+    {
+      "player": "Chad Henne",
       "pos": "QB",
       "continuity": "returning_2013_jaguar"
     },
@@ -187,11 +192,6 @@
       "player": "Jerome Long",
       "pos": "DT",
       "continuity": "practice_squad_to_reserve_future"
-    },
-    {
-      "player": "Russell Allen",
-      "pos": "LB",
-      "continuity": "returning_2013_jaguar"
     },
     {
       "player": "Sio Moore",

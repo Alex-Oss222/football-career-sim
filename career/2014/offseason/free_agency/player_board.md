@@ -11,14 +11,14 @@ Amendments in force:
 - Sanders is removed. The third receiver is Adams, the target at 26, else Hawkins or Edelman. The edge target is signed even if Lawrence arrives ([receivers and edge amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-29-2026-amendment-receivers-pick-13-and-26-fallbacks-edge-pairing-undrafted-line)).
 - Henne is pursued as QB2, Ball is left unsigned until after the draft, and Brent Grimes is not pursued ([Henne, Ball and Grimes amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-henne-ball-and-brent-grimes)).
 
-## Where the board stands (March 31, 2014)
+## Where the board stands (April 17, 2014)
 
 Every board priority is resolved:
 
 - Priorities 1 and 2: Verner and Talib signed.
 - Priority 3: Tate chose Detroit and Edelman returned to New England; Nicks and Hawkins were signed instead.
 - Priority 4: Te'o-Nesheim signed.
-- Jacksonville's own free agents: Monroe, Marks, Cain, Jones-Drew and C.J. Wilson re-signed. Henne, Ball and Brent Grimes follow the amendment above.
+- Jacksonville's own free agents: Monroe, Marks, Cain, Jones-Drew, C.J. Wilson and Henne re-signed. Ball and Brent Grimes follow the amendment above.
 
 ## Related records
 

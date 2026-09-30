@@ -1,6 +1,6 @@
 # Jacksonville Jaguars: 2014 Rookie minicamp plan
 
-**Status:** 2013 METHODS RETAINED; individual training/film workflow authorized; other marked choices remain pending. No phase has run.
+**Status:** 2013 METHODS RETAINED; individual training/film workflow authorized; the remaining choices were settled by [Stone's April 18 decisions](../stone_april_18_2014_decisions.md).
 **Planning checkpoint:** March 24, 2014, Entry 101. Prepared from 2013 evidence; no phase executed.
 **Selected dates (execution not started):** May 16 to 17, historical two-day camp after the May 8 to 10 draft.
 **Authority:** [Stone's memo, section 6](../stone_to_caldwell_2014_offseason_decisions.md); [2014 calendar](../../calendar.md).
@@ -48,7 +48,7 @@ Use Explain → Show → Walk → Rep → Correct → Rep again → Retain → A
 
 Read the [training index](../README.md), [room work plans](../training/unit_plans.md), [player queue](../film/player_queue.md) and the relevant [individual plan](../player_development/README.md) before preparing the phase. Use the [session template](../training/session_template.md), [film packet](../film/packet_template.md) and [delivery log](../film/delivery_log.md) to close the loop from assigned job to a later independent retest.
 
-Stone adopted the [second-year install direction](../phase_plan_decisions.md#install-scope-continue-into-year-two): review established work, integrate rookies, protect unfinished individual work and teach new active-book material, including Boot Flood. Individual feedback, Cousins progression and shared QB-center teaching continue. Other marked proposals remain pending. Start Cousins from his [2013 evidence assessment](../player_development/kirk_cousins.md), preserving demonstrated operation and targeting the unresolved job. Do not reset him to a beginner plan or infer broad mastery from results alone.
+Stone adopted the [second-year install direction](../phase_plan_decisions.md#install-scope-continue-into-year-two): review established work, integrate rookies, protect unfinished individual work and teach new active-book material, including Boot Flood. Individual feedback, Cousins progression and shared QB-center teaching continue. The remaining choices are settled by [Stone's April 18 decisions](../stone_april_18_2014_decisions.md). Start Cousins from his [2013 evidence assessment](../player_development/kirk_cousins.md), preserving demonstrated operation and targeting the unresolved job. Do not reset him to a beginner plan or infer broad mastery from results alone.
 
 All work remains within this phase’s calendar, contact, medical and voluntary-participation limits. The actual phase output owns new practice evidence; the delivery log owns actual distribution. A prepared packet is not a delivered tape. No historic January delivery is backdated. Boot Flood's return to teaching and practice is approved, within this phase's legal work. Actual role appointments and game-menu choices follow the work.
 

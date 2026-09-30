@@ -36,6 +36,7 @@ Jacksonville currently owns **9 ordinary 2014 picks**: **13**; **26**; **38**; *
 | 2015 Round 3, Miami Dolphins original | Jacksonville Jaguars | Unknown; future branch season | Package D trade, March 24, 2014; 2014 ledger Entry 102 |
 | 2017 Round 7, Jacksonville Jaguars original | Miami Dolphins | Unknown; future branch season | Package D trade, March 24, 2014; 2014 ledger Entry 102 |
 | 2015 Round 4, Houston Texans original | Jacksonville Jaguars | Unknown; future branch season | Package E trade, March 24, 2014; 2014 ledger Entry 102 |
+| 2015 Round 4, Arizona Cardinals original | Jacksonville Jaguars | Unknown; future branch season | Allen trade with Arizona, closed April 7, 2014 after Posluszny's clearance and Allen's physical; 2014 ledger Entry 106; unconditional |
 
 ## How to read the order
 

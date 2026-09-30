@@ -2,7 +2,7 @@
  "team": "Jacksonville Jaguars",
  "season": 2014,
  "status": "WORKING VIEW, NOT A GAME INPUT. Carried from the closed 2013 chart minus players no longer controlled; no 2014 depth decision has been made.",
- "as_of": "March 31, 2014 (ledger Entry 104)",
+ "as_of": "April 17, 2014 (ledger Entry 106)",
  "effective": "Carried from the closed 2013 chart (January 6, 2014, AFC Divisional preparation)",
  "sources": "career/2013/depth_chart.json (Git 781213a, carried order); current career/2013/roster.md; current career/2014/offseason/contract_status_register.md; career/2014/offseason/free_agency/signings.md; ledger Entries 79 and 85 through 89; Entry 94 (league year opened); Entry 95 (March 2014 free-agency replay)",
  "rule": "Order within each kernel position group is the closed 2013 order exactly as carried, minus players no longer controlled. It is not a 2014 decision. Stone owns the 2014 order and changes it only by decision; each change is logged in career/2014/depth_chart.md.",
@@ -10,6 +10,7 @@
  "depth": {
   "QB": [
    "Kirk Cousins",
+   "Chad Henne",
    "John Parker Wilson"
   ],
   "RB": [
@@ -51,7 +52,6 @@
   ],
   "LB": [
    "Daryl Smith",
-   "Russell Allen",
    "Julian Stanford",
    "Sio Moore",
    "Paul Posluszny"
@@ -102,7 +102,6 @@
   "Ryan Davis": "DE",
   "Paul Posluszny": "LB",
   "Daryl Smith": "LB",
-  "Russell Allen": "LB",
   "Julian Stanford": "LB",
   "Sio Moore": "LB",
   "Dwight Lowery": "S",
@@ -117,7 +116,8 @@
   "Jeremy Cain": "LS",
   "Sen'Derrick Marks": "DT",
   "Maurice Jones-Drew": "RB",
-  "C.J. Wilson": "DE"
+  "C.J. Wilson": "DE",
+  "Chad Henne": "QB"
  },
  "roles": {
   "Kirk Cousins": [
@@ -146,25 +146,24 @@
   "Daniel Te'o-Nesheim": "Under contract through 2016 (signed March 18, Entry 98)",
   "Jeremy Cain": "Under contract through 2014 (re-signed March 19, Entry 99)",
   "Maurice Jones-Drew": "Under contract through 2015 (re-signed March 28, Entry 103)",
-  "C.J. Wilson": "Under contract through 2014 (re-signed March 28, Entry 103)"
+  "C.J. Wilson": "Under contract through 2014 (re-signed March 28, Entry 103)",
+  "Chad Henne": "Under contract through 2015 (re-signed April 4, Entry 106)"
  },
  "availability_notes": {
-  "Paul Posluszny": "Out, head/neck, independent medical hold (Week 13); projected return April 5, 2014 (career/2013/roster.md)",
-  "Will Rackley": "Limited, no projected absence (upper extremity, Week 5) (career/2013/roster.md)",
-  "Russell Allen": "Real retirement dated April 22, 2014 applies when the clock reaches it (league rails, Entry 79)"
+  "Will Rackley": "Limited, no projected absence (upper extremity, Week 5) (career/2013/roster.md)"
  },
  "removed_from_2013_chart": {
   "Brad Meester": "Retired; contract expired March 11, 2014 (Entries 79 and 94)",
   "Alan Ball": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
   "Allen Reisner": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
   "Brent Grimes": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
-  "Chad Henne": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
   "Kevin Rutland": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
   "Uche Nwaneri": "Traded to Arizona, March 20, 2014 (Entry 99)",
   "Jason Babin": "Traded to Miami, March 24, 2014 (package D, Entry 102)",
   "Tyson Alualu": "Traded to Houston, March 24, 2014 (package E, Entry 102)",
   "Cecil Shorts": "Traded to Indianapolis, March 31, 2014 (Entry 104)",
-  "Justin Blackmon": "Traded to Indianapolis, March 31, 2014 (Entry 104)"
+  "Justin Blackmon": "Traded to Indianapolis, March 31, 2014 (Entry 104)",
+  "Russell Allen": "Traded to Arizona, April 7, 2014 (Entry 106)"
  },
  "game_day_inactives": null,
  "update_log": [
@@ -245,6 +244,12 @@
    "event": "Shorts and Blackmon traded to Indianapolis",
    "ledger_entry": "Entry 104",
    "change": "Shorts (WR 1) and Blackmon (WR 3) removed; Thielen, Clemons and Brown move up without a reorder. The carried WR1 and WR3 roles are open for Stone"
+  },
+  {
+   "date": "April 4 to 7, 2014",
+   "event": "Henne re-signed; Posluszny cleared; Allen traded to Arizona",
+   "ledger_entry": "Entry 106",
+   "change": "Henne restored at QB 2, his carried 2013 place; John Parker Wilson moves down one. Posluszny's head/neck hold cleared April 5 (availability note removed). Allen (LB 2) removed; Stanford, Moore and Posluszny move up without a reorder. No Stone role decision"
   }
  ],
  "added_not_placed": {

@@ -1,11 +1,11 @@
 # Jacksonville Jaguars roster
 
-**As of:** March 31, 2014
+**As of:** May 1, 2014
 **Canonical controlled-player count:** **53** (offseason roster; the 90-player limit applies from the league year).
 **Practice squad:** 0. No 2014 practice squad exists before the regular season.
 **2013 season:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-1 (AFC Wild Card: Jacksonville 38, Kansas City 14; AFC Divisional: Tennessee 20, Jacksonville 13).
 
-<!-- player-ages-as-of: 2014-03-31 -->
+<!-- player-ages-as-of: 2014-05-01 -->
 
 Birth dates are sourced in the [identity registry](../../library/data/player_birth_dates.json). Age is completed years at the master date in Document 5; [league ages](player_ages.md) update through the same renderer. Transaction history is in the [2014 ledger](ledger.md).
 
@@ -15,11 +15,12 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 
 ## Current controlled players
 
-### Quarterbacks (3)
+### Quarterbacks (4)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
 | Kirk Cousins | QB | 1988-08-19 | 25 | Offseason roster | No communicated restriction | QB1 |
+| Chad Henne | QB | 1985-07-02 | 28 | Offseason roster (re-signed April 4, 2014) | No communicated restriction | QB2 |
 | John Parker Wilson | QB | 1985-10-17 | 28 | Offseason roster | No communicated restriction | QB3 |
 | Tyler Bray | QB | 1991-12-27 | 22 | Offseason roster (reserve/future contract effective March 11) | No communicated restriction | Role not set |
 
@@ -62,7 +63,7 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | --- | --- | --- | ---: | --- | --- | --- |
 | Cameron Bradfield | OT | 1987-09-14 | 26 | Offseason roster (RFA tender, unsigned) | No communicated restriction | Swing tackle; sixth OL in 6OL |
 | Lane Johnson | OT | 1990-05-08 | 23 | Offseason roster | No communicated restriction | Starting right tackle |
-| Eugene Monroe | OT | 1987-04-18 | 26 | Offseason roster (re-signed March 11, 2014) | No communicated restriction | Starting LT |
+| Eugene Monroe | OT | 1987-04-18 | 27 | Offseason roster (re-signed March 11, 2014) | No communicated restriction | Starting LT |
 
 ### Offensive guards (3)
 
@@ -84,7 +85,7 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | --- | --- | --- | ---: | --- | --- | --- |
 | Andre Branch | DE | 1989-07-14 | 24 | Offseason roster | No communicated restriction | Edge 3 |
 | Ryan Davis | DE | 1989-02-24 | 25 | Offseason roster | No communicated restriction | Edge 4 |
-| Lavar Edwards | DE | 1990-04-29 | 23 | Offseason roster | No communicated restriction | Edge/front depth and teams (dressed Weeks 12 and 14-17; inactive Week 13) |
+| Lavar Edwards | DE | 1990-04-29 | 24 | Offseason roster | No communicated restriction | Edge/front depth and teams (dressed Weeks 12 and 14-17; inactive Week 13) |
 | C.J. Wilson | DE | 1987-03-30 | 27 | Offseason roster (re-signed March 28, 2014) | No communicated restriction (current physical March 26) | Front depth; roster competition |
 | Jeremy Mincey | DE | 1983-12-14 | 30 | Offseason roster | No communicated restriction | Edge 2 |
 | Daniel Te'o-Nesheim | DE | 1987-06-12 | 26 | Offseason roster (signed March 18, 2014) | No communicated restriction | Role not set |
@@ -98,17 +99,16 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | C.J. Mosley | DT | 1983-08-06 | 30 | Offseason roster | No communicated restriction | Interior DL rotation (dressed from Week 11) |
 | Jeris Pendleton | DT | 1983-11-07 | 30 | Offseason roster | No communicated restriction | Role not set |
 | D'Anthony Smith | DT | 1988-06-09 | 25 | Offseason roster (reserve/future contract effective March 11) | No communicated restriction | Role not set |
-| Jerome Long | DT | 1990-04-09 | 23 | Offseason roster (reserve/future contract effective March 11) | No communicated restriction | Role not set |
+| Jerome Long | DT | 1990-04-09 | 24 | Offseason roster (reserve/future contract effective March 11) | No communicated restriction | Role not set |
 
-### Linebackers (5)
+### Linebackers (4)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
-| Russell Allen | LB | 1986-05-05 | 27 | Offseason roster | No communicated restriction | Base LB (from Week 14, for Posluszny); coverage units; real retirement dated April 22, 2014 applies when the clock reaches it (league rails) |
 | Sio Moore | LB | 1990-05-02 | 23 | Offseason roster | No communicated restriction | Package LB (Crennel's packages) |
-| Paul Posluszny | LB | 1984-10-10 | 29 | Offseason roster | Out, head/neck, independent medical hold (Week 13); projected return April 5, 2014 | Base LB; out (Allen starts from Week 14) |
+| Paul Posluszny | LB | 1984-10-10 | 29 | Offseason roster | No communicated restriction (head/neck hold from Week 13 cleared April 5, 2014) | Base LB |
 | Daryl Smith | LB | 1982-03-14 | 32 | Offseason roster | No communicated restriction | Base LB; defensive communication lead |
-| Julian Stanford | LB | 1990-09-02 | 23 | Offseason roster | No communicated restriction | LB depth after Allen |
+| Julian Stanford | LB | 1990-09-02 | 23 | Offseason roster | No communicated restriction | LB depth |
 
 ### Cornerbacks (5)
 
@@ -118,14 +118,14 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | Mike Harris | CB | 1989-01-05 | 25 | Offseason roster | No communicated restriction | Starting CB (from Week 11) |
 | Alterraun Verner | CB | 1988-12-13 | 25 | Offseason roster (signed March 11, 2014) | No communicated restriction | Role not set |
 | Aqib Talib | CB | 1986-02-13 | 28 | Offseason roster (signed March 11, 2014) | No communicated restriction | Role not set |
-| Jordan Poyer | CB | 1991-04-25 | 22 | Offseason roster | No communicated restriction | Nickel; coverage units |
+| Jordan Poyer | CB | 1991-04-25 | 23 | Offseason roster | No communicated restriction | Nickel; coverage units |
 
 ### Safeties (5)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
 | Dwight Lowery | S | 1986-01-23 | 28 | Offseason roster | No communicated restriction | Starting S |
-| Chris Prosinski | S | 1987-04-28 | 26 | Offseason roster | No communicated restriction | Coverage units |
+| Chris Prosinski | S | 1987-04-28 | 27 | Offseason roster | No communicated restriction | Coverage units |
 | Bacarri Rambo | S | 1990-06-27 | 23 | Offseason roster | No communicated restriction | Starting S; coverage units |
 | Brynden Trawick | S | 1989-10-23 | 24 | Offseason roster | No communicated restriction | Coverage units |
 | Antwon Blake | S | 1990-08-09 | 23 | Offseason roster (reserve/future contract effective March 11) | No communicated restriction | Role not set |
@@ -147,7 +147,7 @@ Jacksonville's 2013 practice squad, formed September 1, 2013, had eight players.
 | Tyler Bray | QB | 1991-12-27 | 22 | Effective March 11, 2014 (current controlled players) | February 3, 2014 |
 | Richard Murphy | RB | 1986-09-18 | 27 | Effective March 11, 2014 (current controlled players) | February 3, 2014 |
 | Jerrell Jackson | WR | 1990-02-06 | 24 | Effective March 11, 2014 (current controlled players) | February 3, 2014 |
-| Jerome Long | DT | 1990-04-09 | 23 | Effective March 11, 2014 (current controlled players) | February 3, 2014 |
+| Jerome Long | DT | 1990-04-09 | 24 | Effective March 11, 2014 (current controlled players) | February 3, 2014 |
 | D'Anthony Smith | DT | 1988-06-09 | 25 | Effective March 11, 2014 (current controlled players) | February 5, 2014 (market draw against a real Seattle reserve/future contract of the same date) |
 | Antwon Blake | S | 1990-08-09 | 23 | Effective March 11, 2014 (current controlled players) | February 3, 2014 |
 
@@ -156,6 +156,10 @@ Brandon King (DB) and Will Ta'ufo'ou (FB) were not offered contracts. They left 
 ## Departures
 
 At the 2014 league year (March 11, 4 p.m. ET) the 53-man roster became an offseason roster of 51. Players who have left Jacksonville's control, newest first:
+
+### April 7, 2014
+
+Russell Allen (LB) was traded to Arizona for Arizona's 2015 fourth-round pick after Paul Posluszny's April 5 clearance and Allen's April 7 physical.
 
 ### March 31, 2014
 
@@ -174,7 +178,7 @@ Uche Nwaneri (G) was traded to Arizona with Jacksonville's 2015 first, 2015 four
 
 | Player | Pos | How control ended | Outstanding Jacksonville position |
 | --- | --- | --- | --- |
-| Chad Henne | QB | Contract expired; unrestricted free agent | Negotiation open; Stone's March 31 plan pursues him as QB2 |
+| Chad Henne | QB | Contract expired; unrestricted free agent | Re-signed April 4, 2014: two years, $4.0M, $2.0M guaranteed |
 | Jeremy Cain | LS | Contract expired; unrestricted free agent | Re-signed March 19, 2014: one year, $855,000 |
 | Maurice Jones-Drew | RB | Contract expired; unrestricted free agent | Re-signed March 28, 2014: two years, $7.0M, $3.25M guaranteed |
 | C.J. Wilson | DE | Contract expired; unrestricted free agent | Re-signed March 28, 2014: one year, $795,000 |

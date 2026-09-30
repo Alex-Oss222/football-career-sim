@@ -4,12 +4,12 @@ This page is the trade plan: what each trade Stone recommended to Caldwell is, w
 
 ## Trades and status
 
-| Trade | What it is | Status at March 31, 2014 |
+| Trade | What it is | Status at April 17, 2014 |
 |---|---|---|
 | Arizona trade for No. 38 | Jacksonville's original 2015 first, 2015 fourth and 2016 fifth, plus Uche Nwaneri, for Arizona's original 2014 second, No. 38, to select Davante Adams ([revision](../offseason/stone_to_caldwell_2014_offseason_decisions.md#september-29-2026-amendment-league-year-draws-and-package-i-revised)) | Completed March 20 |
 | Babin trade with Miami | DE Jason Babin, first to Miami, then Houston, then San Diego; the plan asked a 2015 fifth | Completed March 24 with Miami: Babin and Jacksonville's 2017 seventh for Miami's unconditional 2015 third |
 | Alualu trade with Houston | DT Tyson Alualu, to the same three clubs once Sen'Derrick Marks re-signed; the plan asked a 2015 sixth | Completed March 24: Alualu for Houston's unconditional 2015 fourth; $1,542,500 of 2014 dead money stays with Jacksonville |
-| Allen trade with Arizona | LB Russell Allen to a club with a documented linebacker need, before his scheduled April 22 retirement; the plan asked an unconditional 2015 or 2016 seventh | Agreed in principle March 24 for Arizona's unconditional 2015 fourth; closes only on the conditions below, otherwise expires |
+| Allen trade with Arizona | LB Russell Allen to a club with a documented linebacker need, before his scheduled April 22 retirement; the plan asked an unconditional 2015 or 2016 seventh | Agreed in principle March 24 for Arizona's unconditional 2015 fourth; completed April 7 after Paul Posluszny's April 5 clearance and Allen's physical ([completed trades](trades.md)) |
 | Rackley-or-Brewster trade | One of Will Rackley or Mike Brewster, once Jacksonville has drafted two offensive linemen | Blocked until two offensive linemen are actually drafted; then seeks a 2015 seventh |
 | Original Nwaneri offer | Nwaneri alone for a 2015 sixth, before his March 25 roster bonus | Withdrawn March 18, when Nwaneri moved into the Arizona trade |
 | Shorts-and-Blackmon trade with Indianapolis | Cecil Shorts and Justin Blackmon for draft picks, ideally one in rounds 2 to 4, with Jacksonville taking the dead money ([March 31 instruction](../offseason/stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-trade-shorts-and-blackmon)) | Completed March 31 with Indianapolis: both players for the Colts' 2014 third, No. 82, and sixth, No. 194 ([trade record](shorts_blackmon_to_indianapolis_2014-03-31.md)) |
@@ -18,12 +18,6 @@ This page is the trade plan: what each trade Stone recommended to Caldwell is, w
 | Minnesota trade-up to No. 31 | No. 36 and Nwaneri for Minnesota's own 2014 first, No. 31, to select DeMarcus Lawrence ([amendment](../offseason/stone_to_caldwell_2014_offseason_decisions.md#september-29-2026-amendment-pick-36-lawrence-at-31-monroe-and-the-linsley-and-gaines-fallbacks)) | Void: it needed Seattle's No. 36 |
 
 ## Open trades
-
-### Allen trade with Arizona
-
-- Closes only if Paul Posluszny receives actual medical clearance no later than April 21, 2014, Allen passes Arizona's physical, and league processing completes. No further compensation talks are needed.
-- Posluszny's April 5 return projection is not clearance. If clearance prevents an April 21 close, Caldwell brings that specific linebacker-coverage decision to Stone before expiry; it is not waived silently ([timing amendment](../offseason/stone_to_caldwell_2014_offseason_decisions.md#september-28-2026-amendment-package-g-timing)).
-- Until it closes, Allen stays on the roster and depth chart with his cap charge, and Arizona's fourth is neither owned nor counted. If it expires, Allen's April 22 retirement applies while Jacksonville controls him.
 
 ### Rackley-or-Brewster trade
 
