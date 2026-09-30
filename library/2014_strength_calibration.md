@@ -284,7 +284,7 @@ Only the punter's own net persists across seasons in this sample, and weakly (LO
 
 ### 10.5 Field-goal distance
 
-2,991 attempts 2010-2012, 2,484 made. Pooled logistic slope -0.0956 per yard. Band intercepts anchored to 2012: under 30 yards 5.706 (2012 rate 0.967, 239 attempts), 30-39 5.419 (0.891, 303), 40-49 5.630 (0.802, 323), 50 and over 5.527 (0.609, 151). Within the 50-and-over band the fitted probability now falls from about 0.66 at 50 yards to about 0.40 at 55 and 0.24 at 60 (2010-2012 pooled: 50-54 yards 201 of 312, 55 and over 40 of 87), where the drive model drew a flat 0.609. The band rows keep their 2012 centres by construction; every attempt's probability is published on its drive (`fg_prob`).
+2,991 attempts 2010-2012, 2,484 made. Pooled logistic slope -0.0956 per yard. Band intercepts anchored to 2012: under 30 yards 5.706 (2012 rate 0.967, 239 attempts), 30-39 5.419 (0.891, 303), 40-49 5.630 (0.802, 323), 50 and over 5.527 (0.609, 151). Within the 50-and-over band the fitted probability now falls from 0.678 at 50 yards to 0.567 at 55 and 0.448 at 60 (2010-2012 pooled: 50-54 yards 201 of 312, 55 and over 40 of 87), where the drive model drew a flat 0.609; the other bands read 0.965 at 25, 0.888 at 35 and 0.790 at 45. The band rows keep their 2012 centres by construction; every attempt's probability is published on its drive (`fg_prob`).
 
 ### 10.6 Return band rows
 
