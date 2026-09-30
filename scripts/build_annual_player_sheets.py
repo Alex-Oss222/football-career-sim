@@ -133,23 +133,48 @@ def load_season_players(season: int):
         return "January 13, 2014 season-close / exit-review baseline", players
     roster_path = ROOT / f"career/{season}/roster.md"
     checkpoint, _, rows = parse_current_roster(roster_path)
-    exit_players = {row["player"] for row in json.loads(EXIT_INDEX.read_text(encoding="utf-8"))["players"]}
     players = []
     for name, pos, age in rows:
-        continuity = season == 2014 and name in exit_players
+        prior_path = target_path(season - 1, name)
+        continuity = prior_path.exists()
         if continuity:
-            inherited = syntheses.get(name, "2013 established identity exists but has not yet been summarized here.")
-            source = "Inherited Jacksonville 2013 profile plus current 2014 roster facts."
+            prior_text = prior_path.read_text(encoding="utf-8")
+            established_match = re.search(
+                r"## Established player state\n\n- (.+?)(?:\n\n|$)",
+                prior_text,
+                flags=re.DOTALL,
+            )
+            identity_match = re.search(r"^\*\*Player identity:\*\* (.+)$", prior_text, flags=re.MULTILINE)
+            inherited = (
+                established_match.group(1).strip()
+                if established_match
+                else identity_match.group(1).strip()
+                if identity_match
+                else syntheses.get(
+                    name,
+                    f"{season - 1} established identity exists but has not yet been summarized here.",
+                )
+            )
+            source = (
+                f"Inherited Jacksonville {season - 1} annual profile plus current "
+                f"{season} roster facts."
+            )
         else:
-            inherited = ("No prior Jacksonville annual sheet. Preserve permitted pre-Jacksonville "
-                         "NFL capabilities; only Jacksonville system familiarity begins new.")
+            inherited = (
+                "No prior Jacksonville annual sheet. Preserve permitted pre-Jacksonville "
+                "NFL capabilities; only Jacksonville system familiarity begins new."
+            )
             source = "Current roster plus permitted pre-divergence player evidence."
         players.append(SheetPlayer(name, pos, age, continuity, inherited, source))
     return f"{checkpoint} working profile", players
 
 def previous_profile_link(player: SheetPlayer, season: int) -> str:
-    if season == 2014 and player.continuity:
-        return f"[2013 Jacksonville profile](../../2013/player_profiles/{slugify(player.player)}.md)"
+    if season > 2013 and player.continuity:
+        prior = season - 1
+        return (
+            f"[{prior} Jacksonville profile]"
+            f"(../../{prior}/player_profiles/{slugify(player.player)}.md)"
+        )
     return "None in the Jacksonville annual-sheet archive"
 
 def render_player_sheet(player: SheetPlayer, season: int, checkpoint: str) -> str:
@@ -160,10 +185,12 @@ def render_player_sheet(player: SheetPlayer, season: int, checkpoint: str) -> st
         identity = established = player.inherited_identity
         change_row = "| Established identity | No prior annual sheet | 2013 season-close baseline | Baseline created | 2013 exit-review evidence |"
     elif player.continuity:
-        identity = ("Carries forward the supported 2013 player at this checkpoint. "
-                    "No 2014 on-field development evidence has displaced that baseline.")
+        identity = (
+            "Carries forward the supported prior-season player at this checkpoint. "
+            "Any current-season change must be supported by new evidence."
+        )
         established = player.inherited_identity
-        change_row = ("| Established identity | See 2013 profile | Carried forward | Retained pending new evidence | "
+        change_row = ("| Established identity | See prior annual profile | Carried forward | Retained pending new evidence | "
                       "A season rollover alone is not a football cause of change |")
     else:
         identity = ("New Jacksonville acquisition. Preserve established NFL ability from permitted evidence; "
