@@ -269,7 +269,7 @@ $133,000,000 per club, published February 28, 2014 (Confirmed in the [2014 finan
 | Item | Player | Deadline | Status |
 |---|---|---|---|
 | Non-exclusive franchise tag | Eugene Monroe | Designated February 18, 2014 | Replaced by his five-year contract on March 11; the tender charge is removed once and no second designation opens |
-| Lowest RFA tender | Cameron Bradfield | March 11, 4 p.m. ET | Made: $1,431,000; not signed |
+| Lowest RFA tender | Cameron Bradfield | March 11, 4 p.m. ET; June 16 adjusted June 15 tender date | Made: $1,431,000; not signed. June 16: Caldwell left the qualifying offer in place, no June 15 tender substituted, no figure changed |
 | ERFA tenders | Toney Clemons, Austin Pasztor ($570,000 each); Mike Brown ($495,000) | March 11, 4 p.m. ET | Made; not signed |
 | No tender | Allen Reisner, Kevin Rutland | March 11, 4 p.m. ET | Not tendered; unrestricted free agents |
 | Existing contract | Jonathan Grimes | Through 2014 | $570,000 salary; no tender required |

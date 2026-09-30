@@ -2,7 +2,7 @@
 
 [Offseason training](../README.md) · [Calendar](../../calendar.md)
 
-Not started. Physicals are June 16; the spring handoff follows June 20.
+Complete. Physicals June 16 (no restriction communicated); practices June 17 to 19, non-contact, the 74 signed players present; the staff spring handoff of June 20 is in the training report.
 
 | Open | What you will find |
 |---|---|
