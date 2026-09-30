@@ -1,4 +1,5 @@
 import csv
+import copy
 import json
 import statistics
 import tempfile
@@ -34,18 +35,23 @@ class PlayerSheetResearchTests(unittest.TestCase):
             self.assertEqual(finding['source'], p.evidence)
             self.assertTrue(set(finding['trait_findings']) <= set(POSITION_SHEET_TRAITS[p.pos]))
             self.assertEqual(finding['established'], p.identity)
-            self.assertTrue(finding['strengths'] and finding['limitations'] and finding['unassessed_reason'])
+            self.assertTrue(finding['strengths'] and finding['limitations'] and finding['staff_view'])
+            self.assertEqual(finding['evaluation_basis'], 'User-authorized theoretical staff judgment')
 
-    def test_reviewed_cards_reproduce_without_filling_grades_from_production(self):
+    def test_reviewed_cards_preserve_explicit_staff_grades_and_reproduce(self):
         for p in self.players:
             if p.player == 'Kirk Cousins':
                 continue
             text = target_path(2013, p.player).read_text(encoding='utf-8')
             self.assertEqual(text, render(p, self.findings[p.player], self.data, self.regular, self.playoffs))
             self.assertNotIn('Pending historical benchmark', text)
-            self.assertIn('Evidence and historical-context review completed', text)
+            self.assertIn('Completed, including exact user-authorized theoretical staff grades', text)
             grades = text.split('## Position grades')[1].split('## Historical NFL benchmark')[0]
-            self.assertEqual(grades.count('— /10'), 1 + len(POSITION_SHEET_TRAITS[p.pos]))
+            self.assertNotIn('— /10', grades)
+            self.assertEqual(grades.count('Theoretical staff judgment'), 1 + len(POSITION_SHEET_TRAITS[p.pos]))
+            self.assertIn('personnel yardsticks, not measured league means', text)
+            self.assertNotIn('around', grades.lower())
+            self.assertNotIn('approx', grades.lower())
 
     def test_qualified_means_and_tied_extremes_recompute(self):
         for pos, refs in self.data['references'].items():
@@ -61,6 +67,19 @@ class PlayerSheetResearchTests(unittest.TestCase):
                                  {r['player'] for r in ref['top']})
                 self.assertEqual({r['player'] for r in qualified if r[metric] == min(x[metric] for x in qualified)},
                                  {r['player'] for r in ref['low']})
+
+    def test_historical_totals_and_peer_means_cannot_replace_staff_grades(self):
+        p = self.player('C.J. Anderson')
+        original = target_path(2013, p.player).read_text(encoding='utf-8')
+        changed = copy.deepcopy(self.data)
+        real = counterpart(p, changed)
+        real['rushing_yards'] = 9999
+        changed['references']['RB']['rushing_ypc']['average'] = 99
+        result = render(p, self.findings[p.player], changed, self.regular, self.playoffs)
+        def grade_section(text):
+            return text.split('## Position grades')[1].split('## Historical NFL benchmark')[0]
+        self.assertEqual(grade_section(result), grade_section(original))
+        self.assertNotEqual(result, original)
 
     def test_qb_references_match_2013_qualified_leaders(self):
         ref = self.data['references']['QB']['passer_rating']

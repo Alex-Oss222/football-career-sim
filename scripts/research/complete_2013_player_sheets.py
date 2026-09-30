@@ -189,7 +189,7 @@ def real_comparison(player, row, historical):
             entries.append((key, row.get(key, 'Unrecorded'), f"{real[field]:g}"))
     if player.pos in ('OT', 'G', 'C'):
         entries.append(('Offensive snaps', 'Unrecorded', f"{real['offense_snaps']:g}" if real['offense_snaps'] is not None else 'Unrecorded'))
-    lines = ['The branch findings and unassessed-grade decisions above were fixed first. '
+    lines = ['The branch findings and theoretical staff grades above were fixed first. '
              'This is a separate real-world 2013 regular-season comparison; it cannot set or revise a branch grade.', '',
              '| Category | Branch 2013 | Real-world 2013 |', '| --- | --- | --- |']
     lines += [f'| {k} | {branch} | {actual} |' for k, branch, actual in entries]
@@ -207,35 +207,56 @@ def render(player, finding, historical, tables, postseason):
     path = target_path(2013, player.player)
     text = path.read_text(encoding='utf-8')
     row = tables.get(POSITION_TABLE[player.pos], {}).get(player.player, {})
-    if '**Review status:**' not in text:
-        text = text.replace('> Final 2013 season evaluation.', '**Review status:** Evidence and historical-context review completed; unsupported traits remain Unassessed.  \n\n> Final 2013 season evaluation.', 1)
+    text = re.sub(r'^\*\*Review status:\*\*.*$',
+                  '**Review status:** Completed, including exact user-authorized theoretical staff grades.  ', text, flags=re.M)
+    if '**Grade basis:**' not in text:
+        text = text.replace('> Final 2013 season evaluation.',
+                            '**Grade basis:** My personnel judgment of the 2013 player. These exact grades include inference where the record is thin; they are not measured talent values.  \n\n> Final 2013 season evaluation.', 1)
     traits = POSITION_SHEET_TRAITS[player.pos]
+    grade_section = text.split('## Position grades\n', 1)[1].split('\n## ', 1)[0]
+    grades = {cells(line)[0]: cells(line) for line in grade_section.splitlines()
+              if line.startswith('|') and re.fullmatch(r'[\d.]+ /10', cells(line)[1])}
+    if set(grades) != {'Overall at position', *traits}:
+        raise ValueError(f'{player.player}: every theoretical staff grade must be explicitly entered in the final sheet')
     table = ['| Trait | Sim player | vs. 2013 NFL average | vs. 2013 top reference | vs. 2013 low-end reference | Basis |',
              '| --- | --- | --- | --- | --- | --- |']
     notes = finding['trait_findings']
     for trait in traits:
-        sim = notes.get(trait, 'Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait')
-        table.append(f'| {trait} | {sim} | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |')
+        score = float(grades[trait][1].split()[0])
+        sim = f"{score:.1f} /10. " + notes.get(trait, 'My view: ' + grades[trait][2].lower() + '.')
+        average = 'Above my NFL starter standard' if score > 6 else 'At my NFL starter standard' if score == 6 else 'Below my NFL starter standard'
+        top = 'At the elite trait standard' if score >= 9 else 'Below the elite trait standard'
+        low = 'Above my low-end NFL trait standard' if score > 3 else 'At the low-end trait standard' if score == 3 else 'Below the low-end trait standard'
+        table.append(f'| {trait} | {sim} | {average} | {top} | {low} | Theoretical staff judgment; recorded branch findings where available |')
     table += pool_rows(player, row, historical)
     table += ['', f'**Historical method and sources:** [2013 position research]({RESEARCH_LINK}). '
               'Production comparisons use qualified individual-player means; they are not ability grades. '
               'A below-threshold branch sample has no peer standing. Defensive branch qualification is '
               'unknown because snaps were not recorded. Archived workout times are an incomplete tested '
               'subset from different years, not measured 2013 game speed.', '',
-              'The technical comparisons remain unassessed after review because this record has no '
-              'comparable, position- and trait-specific historical film scale. That is a completed '
-              'assessment of the evidence gap, not a pending or guessed benchmark.']
+              'The technical grades and comparisons are my user-authorized theoretical judgments. '
+              'My comparison standards are 6.0 for a viable NFL starter trait, 9.0 for an elite trait '
+              'and 3.0 for a low-end trait. These are personnel yardsticks, not measured league means '
+              'or verified grades for historical peers. Production references below the trait rows '
+              'remain independently sourced statistics.']
     text = section_replace(text, 'Historical NFL benchmark', '\n'.join(table))
     text = section_replace(text, 'Season production in context', production(player, row, tables, postseason))
     text = section_replace(text, 'Same-player real-world comparison', real_comparison(player, row, historical))
-    text = section_replace(text, 'Play style', finding['play_style'])
-    text = section_replace(text, 'Best traits', '\n'.join('- ' + item for item in finding['strengths']))
-    text = section_replace(text, 'Main weaknesses', '\n'.join('- ' + item for item in finding['limitations']))
+    text = section_replace(text, 'Play style', finding['staff_view'])
+    ranked = sorted(traits, key=lambda trait: float(grades[trait][1].split()[0]), reverse=True)
+    best = [f"- **My judgment: {trait} — {grades[trait][1]}.** {grades[trait][2]}." for trait in ranked[:3]]
+    best += ['', '**Recorded support:**', *('- ' + item for item in finding['strengths'])]
+    text = section_replace(text, 'Best traits', '\n'.join(best))
+    weakest = sorted(traits, key=lambda trait: float(grades[trait][1].split()[0]))[:3]
+    limits = [f"- **My judgment: {trait} — {grades[trait][1]}.** {grades[trait][2]}." for trait in weakest]
+    limits += ['', '**Recorded limitations and open questions:**', *('- ' + item for item in finding['limitations'])]
+    text = section_replace(text, 'Main weaknesses', '\n'.join(limits))
     uncertainty = [f"- **Branch evidence used:** [2013 exit review](../../../{player.evidence}) and its linked practice/game records.",
                    f'- **Historical benchmark sources:** [2013 position pools and archived workouts]({RESEARCH_LINK}); source URLs, raw file hashes and qualified peer rows are preserved.',
                    '- **What is established:** ' + finding['established'],
-                   '- **Why numeric traits remain unassessed:** ' + finding['unassessed_reason'],
-                   '- **What would support a grade:** Individually classified branch reps or current physical measurements and a sourced same-season trait reference with comparable role and exposure.',
+                   '- **My evaluation:** ' + finding['staff_view'],
+                   '- **Judgment basis:** The user explicitly requested exact theoretical grades even when the source cannot support a measured rating. These are staff hypotheses about the frozen 2013 player. Thin evidence lowers confidence rather than leaving the number blank.',
+                   '- **What would change my judgment:** Individually classified branch reps, current physical measurements and comparable same-season film. Neither later real-world success nor failure can revise this baseline.',
                    '', '**One-line description:**  ', player.identity]
     return section_replace(text, 'Evidence and uncertainty', '\n'.join(uncertainty))
 
@@ -258,7 +279,7 @@ def main():
             if path.read_text(encoding='utf-8') != result:
                 stale.append(player.player)
         else:
-            path.write_text(result, encoding='utf-8')
+            path.write_text(result, encoding='utf-8', newline='\n')
     if stale:
         print('STALE:', ', '.join(stale))
         return 1

@@ -5,10 +5,12 @@
 **Season-close checkpoint:** 2013 season complete; January 14, 2014 exit-review close  
 **Age at exit-review close:** 33  
 **Position:** LS  
-**NFL standing:** Unassessed  
+**NFL standing:** Staff view: Viable starter  
 **Player identity:** Recorded spring/camp and Weeks 1–8 operation was clean. Later snaps lack their own assessment because the engine recorded no snapper credit; missing statistics are not missing contribution.  
 
-**Review status:** Evidence and historical-context review completed; unsupported traits remain Unassessed.  
+**Review status:** Completed, including exact user-authorized theoretical staff grades.  
+
+**Grade basis:** My personnel judgment of the 2013 player. These exact grades include inference where the record is thin; they are not measured talent values.  
 
 > Final 2013 season evaluation. This is not a 2014 entry projection or offseason development plan.
 
@@ -16,30 +18,30 @@
 
 | Position trait | Grade | NFL standing | Evidence quality |
 | --- | ---: | --- | --- |
-| Overall at position | — /10 | Unassessed | Unassessed |
-| Snap accuracy | — /10 | Unassessed | Unassessed |
-| Snap velocity | — /10 | Unassessed | Unassessed |
-| Target consistency | — /10 | Unassessed | Unassessed |
-| Field-goal snap trajectory | — /10 | Unassessed | Unassessed |
-| Punt snap trajectory | — /10 | Unassessed | Unassessed |
-| Protection transition | — /10 | Unassessed | Unassessed |
-| Coverage / tackling | — /10 | Unassessed | Unassessed |
+| Overall at position | 6.0 /10 | Staff view: Viable starter | Theoretical staff judgment |
+| Snap accuracy | 6.5 /10 | Starter-level trait | Theoretical staff judgment |
+| Snap velocity | 6.0 /10 | Starter-level trait | Theoretical staff judgment |
+| Target consistency | 6.0 /10 | Starter-level trait | Theoretical staff judgment |
+| Field-goal snap trajectory | 6.0 /10 | Starter-level trait | Theoretical staff judgment |
+| Punt snap trajectory | 6.0 /10 | Starter-level trait | Theoretical staff judgment |
+| Protection transition | 5.5 /10 | Functional NFL trait | Theoretical staff judgment |
+| Coverage / tackling | 4.5 /10 | Reserve-level trait | Theoretical staff judgment |
 
 ## Historical NFL benchmark
 
 | Trait | Sim player | vs. 2013 NFL average | vs. 2013 top reference | vs. 2013 low-end reference | Basis |
 | --- | --- | --- | --- | --- | --- |
-| Snap accuracy | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Snap velocity | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Target consistency | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Field-goal snap trajectory | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Punt snap trajectory | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Protection transition | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Coverage / tackling | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
+| Snap accuracy | 6.5 /10. My view: starter-level trait. | Above my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Snap velocity | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Target consistency | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Field-goal snap trajectory | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Punt snap trajectory | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Protection transition | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Coverage / tackling | 4.5 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
 
 **Historical method and sources:** [2013 position research](../../../library/2013_player_sheet_research.md). Production comparisons use qualified individual-player means; they are not ability grades. A below-threshold branch sample has no peer standing. Defensive branch qualification is unknown because snaps were not recorded. Archived workout times are an incomplete tested subset from different years, not measured 2013 game speed.
 
-The technical comparisons remain unassessed after review because this record has no comparable, position- and trait-specific historical film scale. That is a completed assessment of the evidence gap, not a pending or guessed benchmark.
+The technical grades and comparisons are my user-authorized theoretical judgments. My comparison standards are 6.0 for a viable NFL starter trait, 9.0 for an elite trait and 3.0 for a low-end trait. These are personnel yardsticks, not measured league means or verified grades for historical peers. Production references below the trait rows remain independently sourced statistics.
 
 ## Season production in context
 
@@ -52,7 +54,7 @@ Playoffs are aggregated independently from the [two Jacksonville postseason rece
 
 ## Same-player real-world comparison
 
-The branch findings and unassessed-grade decisions above were fixed first. This is a separate real-world 2013 regular-season comparison; it cannot set or revise a branch grade.
+The branch findings and theoretical staff grades above were fixed first. This is a separate real-world 2013 regular-season comparison; it cannot set or revise a branch grade.
 
 | Category | Branch 2013 | Real-world 2013 |
 | --- | --- | --- |
@@ -67,14 +69,24 @@ Game-count definitions can differ: branch G counts game-day active listings; the
 
 ## Play style
 
-Recorded spring/camp and Weeks 1–8 operation was clean. Later snaps lack their own assessment because the engine recorded no snapper credit; missing statistics are not missing contribution. This is an evidence-bounded identity, not a projection or an inferred archetype.
+A specialist long snapper whose primary value is repeatable delivery and routine operation. I see snap utility as stronger than protection transition or coverage athleticism.
 
 ## Best traits
 
+- **My judgment: Snap accuracy — 6.5 /10.** Starter-level trait.
+- **My judgment: Snap velocity — 6.0 /10.** Starter-level trait.
+- **My judgment: Target consistency — 6.0 /10.** Starter-level trait.
+
+**Recorded support:**
 - Unit operation was reported clean through the first half with full-season long-snapper availability.
 
 ## Main weaknesses
 
+- **My judgment: Coverage / tackling — 4.5 /10.** Reserve-level trait.
+- **My judgment: Protection transition — 5.5 /10.** Functional NFL trait.
+- **My judgment: Snap velocity — 6.0 /10.** Starter-level trait.
+
+**Recorded limitations and open questions:**
 - No snap-specific accuracy, velocity, trajectory or timing measurements are recorded. Later operation is unassessed; kicking misses cannot be assigned to him.
 
 ## Evidence and uncertainty
@@ -82,8 +94,9 @@ Recorded spring/camp and Weeks 1–8 operation was clean. Later snaps lack their
 - **Branch evidence used:** [2013 exit review](../../../career/2013/exit_interviews/summaries_defense.md) and its linked practice/game records.
 - **Historical benchmark sources:** [2013 position pools and archived workouts](../../../library/2013_player_sheet_research.md); source URLs, raw file hashes and qualified peer rows are preserved.
 - **What is established:** Recorded spring/camp and Weeks 1–8 operation was clean. Later snaps lack their own assessment because the engine recorded no snapper credit; missing statistics are not missing contribution.
-- **Why numeric traits remain unassessed:** The exit review supplies bounded qualitative findings, but no comparable 2013 position-specific trait-film distribution or current branch measurements support a numeric league grade. No snap-specific accuracy, velocity, trajectory or timing measurements are recorded. Later operation is unassessed; kicking misses cannot be assigned to him.
-- **What would support a grade:** Individually classified branch reps or current physical measurements and a sourced same-season trait reference with comparable role and exposure.
+- **My evaluation:** A specialist long snapper whose primary value is repeatable delivery and routine operation. I see snap utility as stronger than protection transition or coverage athleticism.
+- **Judgment basis:** The user explicitly requested exact theoretical grades even when the source cannot support a measured rating. These are staff hypotheses about the frozen 2013 player. Thin evidence lowers confidence rather than leaving the number blank.
+- **What would change my judgment:** Individually classified branch reps, current physical measurements and comparable same-season film. Neither later real-world success nor failure can revise this baseline.
 
 **One-line description:**  
 Recorded spring/camp and Weeks 1–8 operation was clean. Later snaps lack their own assessment because the engine recorded no snapper credit; missing statistics are not missing contribution.

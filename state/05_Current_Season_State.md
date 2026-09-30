@@ -11,7 +11,7 @@
 
 | Canonical document | Effective version | Current pointer |
 |---|---|---|
-| Document 1 | `a93fd1ec6b8375b96e0b1adf50c619a6dc742294` | Active foundation source |
+| Document 1 | `674ba644980fc704a66cd53910dfcb0ebb6fd624` | Active foundation source |
 | Document 2 | `86dfbef40a5ae9b2b6f283dd513df6083bb22645` | Active foundation source |
 | Document 3 | `30ff2bd2eb39f64e31565d5eaf76bdd2de7e54b5` | Active foundation source |
 | Document 4 | `JAX-2014-MAR31-REGISTER-57`; reconciled by Entry 103 | Controlled 55 on the offseason roster (the six reserve/future contracts in force; eight replay signings: Monroe, Marks, Verner, Talib, Nicks, Hawkins, Te'o-Nesheim, Cain); Nwaneri traded to Arizona; Babin to Miami and Alualu to Houston (Entry 102); practice squad 0; Bradfield (RFA) and Clemons, Brown and Pasztor (ERFA) tendered; draft capital: 13, 26, 38, 90, 129, 153 (Detroit fifth), 168, 205, 241, no compensatory pick; 2015 picks acquired: Miami third and Houston fourth; Jacksonville's 2017 seventh to Miami; package G agreed in principle (Allen to Arizona for its 2015 fourth, not yet acquired); Mike Westhoff special teams coordinator from February 11, 2014 |

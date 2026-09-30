@@ -44,5 +44,7 @@ A quarterback is judged on quarterback work, a tackle on tackle work, a corner
 on corner work, and so on.
 
 The visible /10 grade is a personnel summary only. It is not potential, not a
-hidden engine number and not a game probability. Leave a trait Unassessed when
-the evidence cannot support a defensible number.
+hidden engine number and not a game probability. The user's latest instruction
+requests exact theoretical staff judgments when evidence is thin. State the
+number directly and identify the judgment basis; preserve evidence limits
+separately without inventing measurements, football findings or statistics.

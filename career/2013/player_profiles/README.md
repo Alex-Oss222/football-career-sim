@@ -11,8 +11,10 @@ Every sheet uses position-specific traits and the same historical benchmark
 method. Kirk Cousins remains the previously benchmarked worked example. The
 remaining 60 now have completed source reviews, individual findings, separate
 regular-season/playoff production and qualified historical production context.
-Unsupported numeric trait grades remain Unassessed; production is not a talent
-grade. See the [research record and limitations](../../../library/2013_player_sheet_research.md).
+Every remaining overall and position-trait row now has an exact user-authorized
+theoretical staff grade. These are judgments of the 2013 player, with individual
+play-style, strengths and limitations, rather than measured talent values.
+Production stays separate. See the [research record and judgment basis](../../../library/2013_player_sheet_research.md).
 
 The common evidence cutoff is January 14, 2014, after both days of the
 [exit interviews](../exit_interviews/README.md). Ages use that date. Identities

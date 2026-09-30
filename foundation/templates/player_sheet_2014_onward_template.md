@@ -32,6 +32,10 @@
 ### Grade meaning
 
 Use the number as a human-facing NFL personnel summary at this exact checkpoint.
+At the user's explicit request, give exact theoretical staff judgments for
+thin-evidence traits. Identify that basis and preserve evidence limits
+separately; do not hedge the number or invent measurements and statistics.
+Replace blank template grade rows when completing the final player evaluation.
 It may use half-points. Grade the current player, not his draft status, contract,
 future career or theoretical potential. An overall grade is a synthesis, not an
 average of the rows and not an engine input.

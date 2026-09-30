@@ -5,10 +5,12 @@
 **Season-close checkpoint:** 2013 season complete; January 14, 2014 exit-review close  
 **Age at exit-review close:** 23  
 **Position:** S  
-**NFL standing:** Unassessed  
+**NFL standing:** Staff view: Rotation / complementary player  
 **Player identity:** Basic alignment/coverage and spring correction retention are supported; controlled pursuit-angle work improved. His rookie starting experience broadens the questions, not proof of complete live tackling or help mastery.  
 
-**Review status:** Evidence and historical-context review completed; unsupported traits remain Unassessed.  
+**Review status:** Completed, including exact user-authorized theoretical staff grades.  
+
+**Grade basis:** My personnel judgment of the 2013 player. These exact grades include inference where the record is thin; they are not measured talent values.  
 
 > Final 2013 season evaluation. This is not a 2014 entry projection or offseason development plan.
 
@@ -16,32 +18,32 @@
 
 | Position trait | Grade | NFL standing | Evidence quality |
 | --- | ---: | --- | --- |
-| Overall at position | — /10 | Unassessed | Unassessed |
-| Range | — /10 | Unassessed | Unassessed |
-| Speed / change of direction | — /10 | Unassessed | Unassessed |
-| Route-combination recognition | — /10 | Unassessed | Unassessed |
-| Deep positioning | — /10 | Unassessed | Unassessed |
-| Man / slot coverage | — /10 | Unassessed | Unassessed |
-| Ball skills | — /10 | Unassessed | Unassessed |
-| Tackling | — /10 | Unassessed | Unassessed |
-| Run support / angles | — /10 | Unassessed | Unassessed |
-| Communication | — /10 | Unassessed | Unassessed |
-| Play-action discipline | — /10 | Unassessed | Unassessed |
+| Overall at position | 5.5 /10 | Staff view: Rotation / complementary player | Theoretical staff judgment |
+| Range | 5.5 /10 | Functional NFL trait | Theoretical staff judgment |
+| Speed / change of direction | 5.5 /10 | Functional NFL trait | Theoretical staff judgment |
+| Route-combination recognition | 5.0 /10 | Functional NFL trait | Theoretical staff judgment |
+| Deep positioning | 5.0 /10 | Functional NFL trait | Theoretical staff judgment |
+| Man / slot coverage | 4.5 /10 | Reserve-level trait | Theoretical staff judgment |
+| Ball skills | 6.0 /10 | Starter-level trait | Theoretical staff judgment |
+| Tackling | 4.5 /10 | Reserve-level trait | Theoretical staff judgment |
+| Run support / angles | 5.0 /10 | Functional NFL trait | Theoretical staff judgment |
+| Communication | 6.0 /10 | Starter-level trait | Theoretical staff judgment |
+| Play-action discipline | 4.5 /10 | Reserve-level trait | Theoretical staff judgment |
 
 ## Historical NFL benchmark
 
 | Trait | Sim player | vs. 2013 NFL average | vs. 2013 top reference | vs. 2013 low-end reference | Basis |
 | --- | --- | --- | --- | --- | --- |
-| Range | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Speed / change of direction | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Route-combination recognition | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Deep positioning | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Man / slot coverage | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Ball skills | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Tackling | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Run support / angles | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Communication | Taught angles and coverage/substitution exchanges held on spring retests; communication with Trawick transferred through camp. Spring angle work was not live tackling. A full live tackling/coverage profile and individual game responsibilities remain unrecorded. | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Play-action discipline | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
+| Range | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Speed / change of direction | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Route-combination recognition | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Deep positioning | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Man / slot coverage | 4.5 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Ball skills | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Tackling | 4.5 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Run support / angles | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Communication | 6.0 /10. Taught angles and coverage/substitution exchanges held on spring retests; communication with Trawick transferred through camp. Spring angle work was not live tackling. A full live tackling/coverage profile and individual game responsibilities remain unrecorded. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Play-action discipline | 4.5 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
 | Sacks (count, not pass-rush skill) | 0.0; branch defensive snaps unrecorded; qualification unknown | 0.7 | Mike Mitchell, Eric Berry, Da'Norris Searcy: 3.5 | Ryan Clark, Ed Reed, Mike Adams and 46 other tied players: 0.0 | 2013 S; defense_snaps ≥ 300; n=86; production only |
 | Interceptions (count, not coverage skill) | 0.0; branch defensive snaps unrecorded; qualification unknown | 1.6 | Antrel Rolle: 6.0 | Quintin Mikell, Steve Gregory, Danieal Manning and 16 other tied players: 0.0 | 2013 S; defense_snaps ≥ 300; n=86; production only |
 | Passes defended (count, not coverage skill) | 3.0; branch defensive snaps unrecorded; qualification unknown | 5.4 | Antrel Rolle, Donte Whitner, Tashaun Gipson: 12.0 | Robert Blanton, Bacarri Rambo: 0.0 | 2013 S; defense_snaps ≥ 300; n=86; production only |
@@ -49,7 +51,7 @@
 
 **Historical method and sources:** [2013 position research](../../../library/2013_player_sheet_research.md). Production comparisons use qualified individual-player means; they are not ability grades. A below-threshold branch sample has no peer standing. Defensive branch qualification is unknown because snaps were not recorded. Archived workout times are an incomplete tested subset from different years, not measured 2013 game speed.
 
-The technical comparisons remain unassessed after review because this record has no comparable, position- and trait-specific historical film scale. That is a completed assessment of the evidence gap, not a pending or guessed benchmark.
+The technical grades and comparisons are my user-authorized theoretical judgments. My comparison standards are 6.0 for a viable NFL starter trait, 9.0 for an elite trait and 3.0 for a low-end trait. These are personnel yardsticks, not measured league means or verified grades for historical peers. Production references below the trait rows remain independently sourced statistics.
 
 ## Season production in context
 
@@ -80,7 +82,7 @@ Defensive credits followed role/depth shares without individual strength or cove
 
 ## Same-player real-world comparison
 
-The branch findings and unassessed-grade decisions above were fixed first. This is a separate real-world 2013 regular-season comparison; it cannot set or revise a branch grade.
+The branch findings and theoretical staff grades above were fixed first. This is a separate real-world 2013 regular-season comparison; it cannot set or revise a branch grade.
 
 | Category | Branch 2013 | Real-world 2013 |
 | --- | --- | --- |
@@ -98,10 +100,15 @@ Game-count definitions can differ: branch G counts game-day active listings; the
 
 ## Play style
 
-Basic alignment/coverage and spring correction retention are supported; controlled pursuit-angle work improved. His rookie starting experience broadens the questions, not proof of complete live tackling or help mastery. This is an evidence-bounded identity, not a projection or an inferred archetype.
+A developing safety with useful ball instincts and improving exchange communication. I see the reads and communication becoming usable, while live tackling and play-action discipline need a firmer foundation.
 
 ## Best traits
 
+- **My judgment: Ball skills — 6.0 /10.** Starter-level trait.
+- **My judgment: Communication — 6.0 /10.** Starter-level trait.
+- **My judgment: Range — 5.5 /10.** Functional NFL trait.
+
+**Recorded support:**
 - Taught angles and coverage/substitution exchanges held on spring retests; communication with Trawick transferred through camp.
 - Retention. Each correction the spring record gives him (the tackling angle, the substitution call, the exchange call) is recorded as held at the next test. That is what the program asks of a rookie.
 - He earned a job nobody gave him: "no depth position set" in May, "without an established starting award" in camp, then the starting job beside Lowery, held all season.
@@ -110,6 +117,11 @@ Basic alignment/coverage and spring correction retention are supported; controll
 
 ## Main weaknesses
 
+- **My judgment: Man / slot coverage — 4.5 /10.** Reserve-level trait.
+- **My judgment: Tackling — 4.5 /10.** Reserve-level trait.
+- **My judgment: Play-action discipline — 4.5 /10.** Reserve-level trait.
+
+**Recorded limitations and open questions:**
 - Spring angle work was not live tackling. A full live tackling/coverage profile and individual game responsibilities remain unrecorded.
 - Tackling angle. The one individual technique item on record, corrected in non-live work in May; the record holds no individual live tackling evaluation of him since. "Tackling is part of the scheme," so Oden's cutup sorts his 2013 tackle attempts by angle and leverage.
 - The weekly help rule and the unit items above, classified before any of it is assigned to him. Teaching state: Good at rookie minicamp is his only recorded state. The later records describe corrections retained and communication against changed pictures, which is how the framework describes Better, but no record assigns that state and Stone did not assign it after the fact.
@@ -119,8 +131,9 @@ Basic alignment/coverage and spring correction retention are supported; controll
 - **Branch evidence used:** [2013 exit review](../../../career/2013/exit_interviews/core/bacarri_rambo.md) and its linked practice/game records.
 - **Historical benchmark sources:** [2013 position pools and archived workouts](../../../library/2013_player_sheet_research.md); source URLs, raw file hashes and qualified peer rows are preserved.
 - **What is established:** Basic alignment/coverage and spring correction retention are supported; controlled pursuit-angle work improved. His rookie starting experience broadens the questions, not proof of complete live tackling or help mastery.
-- **Why numeric traits remain unassessed:** The exit review supplies bounded qualitative findings, but no comparable 2013 position-specific trait-film distribution or current branch measurements support a numeric league grade. Spring angle work was not live tackling. A full live tackling/coverage profile and individual game responsibilities remain unrecorded.
-- **What would support a grade:** Individually classified branch reps or current physical measurements and a sourced same-season trait reference with comparable role and exposure.
+- **My evaluation:** A developing safety with useful ball instincts and improving exchange communication. I see the reads and communication becoming usable, while live tackling and play-action discipline need a firmer foundation.
+- **Judgment basis:** The user explicitly requested exact theoretical grades even when the source cannot support a measured rating. These are staff hypotheses about the frozen 2013 player. Thin evidence lowers confidence rather than leaving the number blank.
+- **What would change my judgment:** Individually classified branch reps, current physical measurements and comparable same-season film. Neither later real-world success nor failure can revise this baseline.
 
 **One-line description:**  
 Basic alignment/coverage and spring correction retention are supported; controlled pursuit-angle work improved. His rookie starting experience broadens the questions, not proof of complete live tackling or help mastery.

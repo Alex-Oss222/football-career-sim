@@ -5,10 +5,12 @@
 **Season-close checkpoint:** 2013 season complete; January 14, 2014 exit-review close  
 **Age at exit-review close:** 26  
 **Position:** DT  
-**NFL standing:** Unassessed  
+**NFL standing:** Staff view: Rotation / complementary player  
 **Player identity:** Experience across front jobs is recorded, but the individual physical/technical evaluation is thin. A stronger camp pairing elsewhere does not identify his defect or settle his best job.  
 
-**Review status:** Evidence and historical-context review completed; unsupported traits remain Unassessed.  
+**Review status:** Completed, including exact user-authorized theoretical staff grades.  
+
+**Grade basis:** My personnel judgment of the 2013 player. These exact grades include inference where the record is thin; they are not measured talent values.  
 
 > Final 2013 season evaluation. This is not a 2014 entry projection or offseason development plan.
 
@@ -16,30 +18,30 @@
 
 | Position trait | Grade | NFL standing | Evidence quality |
 | --- | ---: | --- | --- |
-| Overall at position | — /10 | Unassessed | Unassessed |
-| Get-off | — /10 | Unassessed | Unassessed |
-| Anchor | — /10 | Unassessed | Unassessed |
-| Power | — /10 | Unassessed | Unassessed |
-| Hand use | — /10 | Unassessed | Unassessed |
-| Block shedding | — /10 | Unassessed | Unassessed |
-| Penetration | — /10 | Unassessed | Unassessed |
-| Pass-rush counters | — /10 | Unassessed | Unassessed |
-| Double-team play | — /10 | Unassessed | Unassessed |
-| Gap discipline / lateral pursuit | — /10 | Unassessed | Unassessed |
+| Overall at position | 5.5 /10 | Staff view: Rotation / complementary player | Theoretical staff judgment |
+| Get-off | 5.5 /10 | Functional NFL trait | Theoretical staff judgment |
+| Anchor | 5.5 /10 | Functional NFL trait | Theoretical staff judgment |
+| Power | 6.0 /10 | Starter-level trait | Theoretical staff judgment |
+| Hand use | 5.0 /10 | Functional NFL trait | Theoretical staff judgment |
+| Block shedding | 5.0 /10 | Functional NFL trait | Theoretical staff judgment |
+| Penetration | 5.5 /10 | Functional NFL trait | Theoretical staff judgment |
+| Pass-rush counters | 4.5 /10 | Reserve-level trait | Theoretical staff judgment |
+| Double-team play | 5.5 /10 | Functional NFL trait | Theoretical staff judgment |
+| Gap discipline / lateral pursuit | 5.5 /10 | Functional NFL trait | Theoretical staff judgment |
 
 ## Historical NFL benchmark
 
 | Trait | Sim player | vs. 2013 NFL average | vs. 2013 top reference | vs. 2013 low-end reference | Basis |
 | --- | --- | --- | --- | --- | --- |
-| Get-off | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Anchor | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Power | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Hand use | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Block shedding | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Penetration | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Pass-rush counters | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Double-team play | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
-| Gap discipline / lateral pursuit | Unassessed: reviewed record has no individually classified finding or current measurement sufficient to benchmark this trait | Unassessed: no comparable 2013 trait-film distribution | Unassessed: no sourced trait-specific top film reference | Unassessed: no sourced qualified low film reference | Exit review; production cannot substitute for this trait |
+| Get-off | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Anchor | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Power | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Hand use | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Block shedding | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Penetration | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Pass-rush counters | 4.5 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Double-team play | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Gap discipline / lateral pursuit | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
 | Sacks (count, not pass-rush skill) | 3.0; branch defensive snaps unrecorded; qualification unknown | 2.4 | Kyle Williams: 10.5 | Ryan Pickett, Aubrayo Franklin, Mike Patterson and 12 other tied players: 0.0 | 2013 DT; defense_snaps ≥ 300; n=58; production only |
 | Interceptions (count, not coverage skill) | 0.0; branch defensive snaps unrecorded; qualification unknown | 0.1 | Kevin Williams, Clinton McDonald, Terrance Knighton and 1 other tied players: 1.0 | Ryan Pickett, Colin Cole, Cullen Jenkins and 51 other tied players: 0.0 | 2013 DT; defense_snaps ≥ 300; n=58; production only |
 | Passes defended (count, not coverage skill) | 2.0; branch defensive snaps unrecorded; qualification unknown | 1.3 | Sen'Derrick Marks: 8.0 | Colin Cole, Cullen Jenkins, Dwan Edwards and 23 other tied players: 0.0 | 2013 DT; defense_snaps ≥ 300; n=58; production only |
@@ -47,7 +49,7 @@
 
 **Historical method and sources:** [2013 position research](../../../library/2013_player_sheet_research.md). Production comparisons use qualified individual-player means; they are not ability grades. A below-threshold branch sample has no peer standing. Defensive branch qualification is unknown because snaps were not recorded. Archived workout times are an incomplete tested subset from different years, not measured 2013 game speed.
 
-The technical comparisons remain unassessed after review because this record has no comparable, position- and trait-specific historical film scale. That is a completed assessment of the evidence gap, not a pending or guessed benchmark.
+The technical grades and comparisons are my user-authorized theoretical judgments. My comparison standards are 6.0 for a viable NFL starter trait, 9.0 for an elite trait and 3.0 for a low-end trait. These are personnel yardsticks, not measured league means or verified grades for historical peers. Production references below the trait rows remain independently sourced statistics.
 
 ## Season production in context
 
@@ -71,7 +73,7 @@ Defensive credits followed role/depth shares without individual strength or cove
 
 ## Same-player real-world comparison
 
-The branch findings and unassessed-grade decisions above were fixed first. This is a separate real-world 2013 regular-season comparison; it cannot set or revise a branch grade.
+The branch findings and theoretical staff grades above were fixed first. This is a separate real-world 2013 regular-season comparison; it cannot set or revise a branch grade.
 
 | Category | Branch 2013 | Real-world 2013 |
 | --- | --- | --- |
@@ -89,16 +91,26 @@ Game-count definitions can differ: branch G counts game-day active listings; the
 
 ## Play style
 
-Experience across front jobs is recorded, but the individual physical/technical evaluation is thin. A stronger camp pairing elsewhere does not identify his defect or settle his best job. This is an evidence-bounded identity, not a projection or an inferred archetype.
+A versatile rotational front player who can handle several alignments and supply useful power. I see positional flexibility before I see a defining rush counter or disruptive specialty.
 
 ## Best traits
 
+- **My judgment: Power — 6.0 /10.** Starter-level trait.
+- **My judgment: Get-off — 5.5 /10.** Functional NFL trait.
+- **My judgment: Anchor — 5.5 /10.** Functional NFL trait.
+
+**Recorded support:**
 - Camp established rotation versatility across the front; the season records three sacks.
 - Finishing when the play came to him: the Week 7 sack, the two-sack Arizona game, and three tackles for loss, two of them in the Week 14 win over Houston, where he was one of the three players who stopped three straight Houston runs for losses.
 - Carrying a job across the front. Camp recorded him "rotating across the front," and he held that job, available, every week.
 
 ## Main weaknesses
 
+- **My judgment: Pass-rush counters — 4.5 /10.** Reserve-level trait.
+- **My judgment: Hand use — 5.0 /10.** Functional NFL trait.
+- **My judgment: Block shedding — 5.0 /10.** Functional NFL trait.
+
+**Recorded limitations and open questions:**
 - The record does not classify individual get-off, fit or counters. The starting-pair decision and sack counts do not identify a technical weakness.
 - The starting order was a comparison, not a finding against him. Camp named Miller and Marks the most stable run combination; no record names a lost fit, a missed assignment or a technique fault of his. Stone told him that plainly and did not invent one.
 - His individual evidence is missing: none of his reps is classified in any record. A blank line in a rotation game is not read as a flaw, and his reps inside the corrections of Weeks 10, 12, 13 and 15 and the Divisional are classified by the state/05 categories before anything is assigned to him. Teaching state: the record gives no individual phase state, and Stone did not build one from box-score lines.
@@ -108,8 +120,9 @@ Experience across front jobs is recorded, but the individual physical/technical 
 - **Branch evidence used:** [2013 exit review](../../../career/2013/exit_interviews/core/tyson_alualu.md) and its linked practice/game records.
 - **Historical benchmark sources:** [2013 position pools and archived workouts](../../../library/2013_player_sheet_research.md); source URLs, raw file hashes and qualified peer rows are preserved.
 - **What is established:** Experience across front jobs is recorded, but the individual physical/technical evaluation is thin. A stronger camp pairing elsewhere does not identify his defect or settle his best job.
-- **Why numeric traits remain unassessed:** The exit review supplies bounded qualitative findings, but no comparable 2013 position-specific trait-film distribution or current branch measurements support a numeric league grade. The record does not classify individual get-off, fit or counters. The starting-pair decision and sack counts do not identify a technical weakness.
-- **What would support a grade:** Individually classified branch reps or current physical measurements and a sourced same-season trait reference with comparable role and exposure.
+- **My evaluation:** A versatile rotational front player who can handle several alignments and supply useful power. I see positional flexibility before I see a defining rush counter or disruptive specialty.
+- **Judgment basis:** The user explicitly requested exact theoretical grades even when the source cannot support a measured rating. These are staff hypotheses about the frozen 2013 player. Thin evidence lowers confidence rather than leaving the number blank.
+- **What would change my judgment:** Individually classified branch reps, current physical measurements and comparable same-season film. Neither later real-world success nor failure can revise this baseline.
 
 **One-line description:**  
 Experience across front jobs is recorded, but the individual physical/technical evaluation is thin. A stronger camp pairing elsewhere does not identify his defect or settle his best job.

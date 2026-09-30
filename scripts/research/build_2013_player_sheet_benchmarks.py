@@ -179,7 +179,7 @@ def main():
         else:
             encoded = json.dumps(value, ensure_ascii=False, indent=2)
         parts.append('  ' + json.dumps(key) + ': ' + encoded)
-    OUTPUT.write_text('{\n' + ',\n'.join(parts) + '\n}\n', encoding='utf-8')
+    OUTPUT.write_text('{\n' + ',\n'.join(parts) + '\n}\n', encoding='utf-8', newline='\n')
     print('Historical 2013 research written:', OUTPUT.relative_to(ROOT))
 
 if __name__ == '__main__':

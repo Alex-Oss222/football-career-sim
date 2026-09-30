@@ -5,8 +5,10 @@ position-specific baseline format. Kirk Cousins remains the previously reviewed
 worked example. The remaining 60 now have completed branch-source reviews,
 recorded regular-season and separate playoff production, qualified historical
 production context, and a separate same-player comparison where identity can
-be established. Completion of this source review does not mean every trait has
-a defensible numeric grade. Unsupported traits remain Unassessed.
+be established. At the user's subsequent explicit request, each remaining
+overall and position-trait row now has an exact theoretical staff grade. The
+number states the evaluator's view of the 2013 player; it does not claim a
+verified physical measurement, a historical film score or a future ceiling.
 
 ## Evidence and reproducibility
 
@@ -15,7 +17,10 @@ owns membership, position and source paths. The [branch findings](../career/2013
 preserve conclusions from those exit interviews, independently of historical
 counterparts. Individual strengths and unresolved corrections keep the scope
 of the recorded work: a retained spring correction is not a full-season grade,
-and a practice-squad or inactive decision is not an invented talent finding.
+and a practice-squad or inactive decision is not an observed talent finding.
+The staff-view descriptions are separately identified hypotheses. Exact grades
+live in the final sheets. The renderer reads those entered grades and preserves
+them; it does not calculate them from box scores, workouts or real counterparts.
 
 The [historical research artifact](data/2013_player_sheet_benchmarks.json)
 preserves player identifiers, 2013 regular-season totals, derived rates,
@@ -98,7 +103,11 @@ Cause-unclassified fumbles, intercepted targets and kick misses stay cause
 questions; they cannot automatically be assigned to carriage, receiver or
 snap/hold flaws. Current physical measurements and comparable position-specific
 trait-film scales were not recovered in this research pass. Consequently the
-60 newly reviewed cards do not manufacture numeric talent grades.
+60 newly reviewed cards label their exact numerical entries as theoretical
+staff judgments. Their technical comparison yardsticks are personnel standards:
+6.0 viable starter, 9.0 elite and 3.0 low-end trait. Those standards are not
+measured historical peer means or scores. The number is definite; the judgment's
+confidence and the recorded facts remain distinct.
 
 Regular-season production comes from the existing club statbook. Playoff
 production is independently aggregated from Jacksonville's Wild Card and
