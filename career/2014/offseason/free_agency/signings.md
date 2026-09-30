@@ -1,6 +1,6 @@
 # Jacksonville 2014 free-agency and contract outcomes
 
-**As of:** May 11, 2014. This page records every 2014 Jacksonville veteran offer, tender and signing: the March and April 2014 signings and re-signings, the six reserve/future contracts and the tags and tenders. The nine rookie contracts of May 11 and the 17 undrafted contracts of May 10 are in [the draftees record](../draft/draftees.md) and [the undrafted signings record](../draft/udfa_signings.md). Stone's priorities are on the [free-agency board](player_board.md); prior contracts are in the [2013 signing history](../../../2013/offseason/free_agency/signings.md) and each player's current status is in the [contract status register](../contract_status_register.md).
+**As of:** June 2, 2014. This page records every 2014 Jacksonville veteran offer, tender and signing: the March and April 2014 signings and re-signings, the six reserve/future contracts and the tags and tenders. The nine rookie contracts of May 11 and the 17 undrafted contracts of May 10 are in [the draftees record](../draft/draftees.md) and [the undrafted signings record](../draft/udfa_signings.md). Stone's priorities are on the [free-agency board](player_board.md); prior contracts are in the [2013 signing history](../../../2013/offseason/free_agency/signings.md) and each player's current status is in the [contract status register](../contract_status_register.md).
 
 ## Process and evidence
 
@@ -64,6 +64,7 @@ Not offered: Brandon King and Will Ta'ufo'ou, who left as free agents.
 | March 11, 2014 (before 4 p.m. ET) | Mike Brown, WR | Exclusive-rights tender | Memo section 2; Caldwell (ledger Entry 94) | $495,000, the minimum for one credited season (branch inference: two 2012 weeks on the 53 do not make a credited season) | Tendered; unsigned | Credited-season count |
 | March 11, 2014 (before 4 p.m. ET) | Austin Pasztor, G | Exclusive-rights tender | Memo section 2; Caldwell (ledger Entry 94) | $570,000, the minimum for two credited seasons (branch inference: three 2012 games from December 14, plus 2013) | Tendered; unsigned | Credited-season count |
 | March 11, 2014 | Allen Reisner, TE; Kevin Rutland, CB | No tender | Memo section 2 | None | Unrestricted free agents from 4 p.m. | None |
+| June 2, 2014 (adjusted June 1 deadline) | Alan Ball, CB; Brent Grimes, CB; Allen Reisner, TE; Kevin Rutland, CB | No June 1 tender | Caldwell's administrative action, consistent with the decisions on file (Ball not re-signed May 12; Grimes not pursued; Reisner and Rutland not tendered in March); ledger Entry 112 | None | No tender filed; Jacksonville retains no rights to any of the four. No cap effect | None |
 
 A non-exclusive franchise player may negotiate with other clubs from the league year, and another club may sign him to an offer sheet; if Jacksonville declines to match, it receives two first-round picks from that club. Monroe's March 11 re-signing ended the tag before any offer sheet. His real Baltimore re-signing does not apply (rails method section 3).
 

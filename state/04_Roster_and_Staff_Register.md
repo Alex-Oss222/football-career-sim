@@ -3,9 +3,9 @@
 ## Document status
 
 - Function: Canonical register for current Jacksonville player control, staff operating authority, roster legality, contract/cap and draft-capital reconciliation, availability boundaries and football-role state.
-- Current status: **RECONCILED THROUGH ENTRY 111 (ROOKIE MINICAMP AND PHASE TWO CLOSED)**.
-- Effective through: **May 23, 2014 (78 controlled players; Stone's May 12 rep starting points for WR1, WR3, left guard, right guard and Edge 1; the 26 rookies onboarded, cleared at their May 13 to 15 physicals and through the May 16 and 17 rookie minicamp; Phase Two closed with its May 23 handoff; the four unsigned tenders outside the program)**.
-- Current authority: `career/2014/ledger.md`, Entry 111 (Stone's May 12 starting roles: WR1 Nicks, WR3 Adams, left guard Bitonio, right guard Turner, Edge 1 Mincey, each with named competition; rookie onboarding May 10 to 15; rookie minicamp May 16 and 17; Phase Two closed May 23; no transaction; controlled roster 78; clock May 23), Entry 110 (Rackley traded to Seattle May 12 for Seattle's own unconditional 2015 seventh after the May 11 calls; $154,868 dead money; Ball not re-signed May 12; controlled roster 78; clock May 12), Entry 109 (May 1 instruction on the four unsigned tenders and the revised cross-training list; Phase One handoff May 2; Phase Two May 5 to 9; clock May 11), Entry 108 (nine draft selections May 8 to 10: Donald, Bitonio, Adams, Turner, Telvin Smith, Linsley, Leno, Thomas, Butler; 17 undrafted rookies signed May 10; rookie contracts signed May 11; controlled roster 79; Rackley-or-Brewster trade active), Entry 107 (April 18 decisions: Tice emergency practice lead, Crennel second; defensive relay succession Smith, Posluszny, Stanford; Phase One April 21 to May 1; Allen retired at Arizona April 22; schedule released April 23; controlled roster 53; clock May 1), Entry 106 (Henne re-signed April 4; Posluszny cleared April 5; Allen traded to Arizona April 7 for Arizona's 2015 fourth; controlled roster 53; clock April 17), Entry 105 (Nos. 82 and 194 traded to Washington March 31 for Jacksonville's original 2015 second; no players move), Entry 104 (Shorts and Blackmon traded to Indianapolis March 31 for Nos. 82 and 194; controlled roster 53), Entry 103 (Jones-Drew and C.J. Wilson re-signed March 28; schedule filed; controlled roster 55), Entry 102 (Babin to Miami and Alualu to Houston, March 24; controlled roster 53) and Entry 101 (administrative).
+- Current status: **RECONCILED THROUGH ENTRY 112 (OTAS CLOSED)**.
+- Effective through: **June 13, 2014 (78 controlled players; the ten OTA days closed with the June 13 handoff, the five open competitions standing as Stone set them May 12; no June 1 tender filed June 2 for Ball, Brent Grimes, Reisner or Rutland; the four unsigned tenders outside the program)**.
+- Current authority: `career/2014/ledger.md`, Entry 112 (the ten OTA days May 27 to June 13 in the Phase Three non-contact inventory; June 13 handoff; the five rep starting points stand as open competitions; Communication assessed Average for each unit's spring lineup, Plan execution not assessed; no injury; no June 1 tender filed June 2 for Ball, Brent Grimes, Reisner or Rutland, no rights retained; no transaction; controlled roster 78; clock June 13), Entry 111 (Stone's May 12 starting roles: WR1 Nicks, WR3 Adams, left guard Bitonio, right guard Turner, Edge 1 Mincey, each with named competition; rookie onboarding May 10 to 15; rookie minicamp May 16 and 17; Phase Two closed May 23; no transaction; controlled roster 78; clock May 23), Entry 110 (Rackley traded to Seattle May 12 for Seattle's own unconditional 2015 seventh after the May 11 calls; $154,868 dead money; Ball not re-signed May 12; controlled roster 78; clock May 12), Entry 109 (May 1 instruction on the four unsigned tenders and the revised cross-training list; Phase One handoff May 2; Phase Two May 5 to 9; clock May 11), Entry 108 (nine draft selections May 8 to 10: Donald, Bitonio, Adams, Turner, Telvin Smith, Linsley, Leno, Thomas, Butler; 17 undrafted rookies signed May 10; rookie contracts signed May 11; controlled roster 79; Rackley-or-Brewster trade active), Entry 107 (April 18 decisions: Tice emergency practice lead, Crennel second; defensive relay succession Smith, Posluszny, Stanford; Phase One April 21 to May 1; Allen retired at Arizona April 22; schedule released April 23; controlled roster 53; clock May 1), Entry 106 (Henne re-signed April 4; Posluszny cleared April 5; Allen traded to Arizona April 7 for Arizona's 2015 fourth; controlled roster 53; clock April 17), Entry 105 (Nos. 82 and 194 traded to Washington March 31 for Jacksonville's original 2015 second; no players move), Entry 104 (Shorts and Blackmon traded to Indianapolis March 31 for Nos. 82 and 194; controlled roster 53), Entry 103 (Jones-Drew and C.J. Wilson re-signed March 28; schedule filed; controlled roster 55), Entry 102 (Babin to Miami and Alualu to Houston, March 24; controlled roster 53) and Entry 101 (administrative).
 - Prior progression authority: `career/2013/ledger.md`, Entries 1 to 100 (hire through the March 24, 2014 compensatory announcement).
 - Detailed readable roster: `career/2014/roster.md`.
 - Current cap worksheet: `career/2014/offseason/current_cap_worksheet.md`.
@@ -25,15 +25,15 @@ This register states each current fact once, in the section that owns it. How th
 | Season | 2014 |
 | Divergence point | January 15, 2013: Alex Stone accepts Jacksonville head-coach offer |
 | Season phase | 2014 offseason; league year open from March 11, 2014 (2013 season complete, eliminated in the AFC Divisional round) |
-| Owned content effective | May 23, 2014 |
-| Document 4 register version | `JAX-2014-MAY23-REGISTER-64` |
-| Supersedes | `JAX-2014-MAY12-REGISTER-63` |
-| Last content-changing checkpoint | `Canonical update - May 23, 2014 - Rookie minicamp and Phase Two closed; starting roles set` |
-| Latest Document 6 event | 2014 ledger Entry 111: Stone's May 12 rep starting points for the five open roles; rookie onboarding, physicals and the May 16 and 17 rookie minicamp; Phase Two closed May 23; controlled roster 78; clock May 23, 2014 |
+| Owned content effective | June 13, 2014 |
+| Document 4 register version | `JAX-2014-JUN13-REGISTER-65` |
+| Supersedes | `JAX-2014-MAY23-REGISTER-64` |
+| Last content-changing checkpoint | `Canonical update - June 13, 2014 - OTAs closed` |
+| Latest Document 6 event | 2014 ledger Entry 112: the ten OTA days closed June 13 with the five open competitions standing; no June 1 tender filed June 2; no transaction; controlled roster 78; clock June 13, 2014 |
 | Current controlled players | **78** |
 | Current practice squad | **0** (no 2014 practice squad before the regular season) |
-| Next scheduled football event | OTA block 1 (Phase Three), May 27 to 29; dated events are in Document 5 section 9 |
-| Unresolved matter before participation | Bradfield, Clemons, Brown and Pasztor (unsigned tenders) are outside the program and the social calendar until they sign (user instruction, May 1). The 26 rookies are onboarded and cleared at their May 13 to 15 physicals with no communicated restriction; Cornelius Lucas's foot is a performance-staff review item. Recheck control, medical instructions and calendar permissions before each phase |
+| Next scheduled football event | Physicals June 16, then mandatory veteran minicamp June 17 to 19; dated events are in Document 5 section 9 |
+| Unresolved matter before participation | Bradfield, Clemons, Brown and Pasztor (unsigned tenders) are outside the program and the social calendar until they sign (user instruction, May 1); they are not under contract, so the mandatory minicamp does not apply to them. Bradfield's June 15 tender substitution question is Caldwell's on June 16. The June 16 physicals precede the minicamp; Cornelius Lucas's foot is a performance-staff review item. Recheck control, medical instructions and calendar permissions before each phase |
 
 ## Roster control and legality
 
@@ -41,7 +41,7 @@ This register states each current fact once, in the section that owns it. How th
 
 | Exact primary status | Current count | Governing limit | Reconciled |
 |---|---:|---:|---|
-| Offseason roster | **78** | 90-player offseason limit from the league year | May 23, 2014 (Entry 111: no transaction since Entry 110) |
+| Offseason roster | **78** | 90-player offseason limit from the league year | June 13, 2014 (Entry 112: no transaction since Entry 110) |
 
 | Primary-status total | Current value | Derivation |
 |---|---:|---|
@@ -54,7 +54,7 @@ The offseason roster is 78 of 90. Only recorded contracts and the adopted contra
 
 ### Current player index
 
-<!-- player-ages-as-of: 2014-05-23 -->
+<!-- player-ages-as-of: 2014-06-13 -->
 
 DOB is a verified pre-divergence identity fact, supported by the [birth-date evidence registry](../library/data/player_birth_dates.json) and [verification notes](../library/2013_player_birth_dates.md). Age is derived at Document 5's master date, refreshed with `python scripts/render_player_ages.py`. An age does not determine a rating, medical clearance or retirement.
 
@@ -106,14 +106,14 @@ The availability column records the club's latest medical communication. Every p
 | Lavar Edwards | JAX-LAVAREDWARDS | DE | 1990-04-29 | 24 | Offseason roster | No. 135; rookie contract | No communicated restriction | Entry 41 |
 | C.J. Wilson | JAX-CJWILSON | DE | 1987-03-30 | 27 | Offseason roster | Re-signed March 28, 2014: one year, $795,000 | No communicated restriction (current physical March 26) | Entry 103 |
 | Jeremy Mincey | JAX-JEREMYMINCEY | DE | 1983-12-14 | 30 | Offseason roster | Existing 2013 contract | No communicated restriction | Entry 41 |
-| Daniel Te'o-Nesheim | JAX-DANIELTEONESHEIM | DE | 1987-06-12 | 26 | Offseason roster | Signed March 18, 2014: three years, up to $13.5M, $6.0M guaranteed | No communicated restriction; no new medical finding at signing | Entry 98 |
+| Daniel Te'o-Nesheim | JAX-DANIELTEONESHEIM | DE | 1987-06-12 | 27 | Offseason roster | Signed March 18, 2014: three years, up to $13.5M, $6.0M guaranteed | No communicated restriction; no new medical finding at signing | Entry 98 |
 | Kasim Edebali | JAX-KASIMEDEBALI | DE | 1989-08-17 | 24 | Offseason roster (rookie, undrafted) | Undrafted rookie contract signed May 10, 2014: three years through 2016, $1,530,000, no signing bonus | No communicated restriction | Entry 108 |
 | Jackson Jeffcoat | JAX-JACKSONJEFFCOAT | DE | 1990-12-26 | 23 | Offseason roster (rookie, undrafted) | Undrafted rookie contract signed May 10, 2014: three years through 2016, $1,530,000, no signing bonus | No communicated restriction | Entry 108 |
 | Sen'Derrick Marks | JAX-SENDERRICKMARKS | DT | 1987-02-23 | 27 | Offseason roster | Re-signed March 11, 2014: four years through 2017, $26M, $12.5M guaranteed | No communicated restriction | Entry 95 |
 | Roy Miller | JAX-ROYMILLER | DT | 1987-07-09 | 26 | Offseason roster | Branch signing; two years, $5.00M | No communicated restriction | Entry 41 |
 | C.J. Mosley | JAX-CJMOSLEY | DT | 1983-08-06 | 30 | Offseason roster | Existing contract/control | No communicated restriction | Entry 46 |
 | Jeris Pendleton | JAX-JERISPENDLETON | DT | 1983-11-07 | 30 | Offseason roster | Existing rookie contract | No communicated restriction | Entry 41 |
-| D'Anthony Smith | JAX-DANTHONYSMITH | DT | 1988-06-09 | 25 | Offseason roster (reserve/future, effective March 11) | Reserve/future contract, February 5, 2014 (market draw); two years through 2015 | No communicated restriction | Entry 94 |
+| D'Anthony Smith | JAX-DANTHONYSMITH | DT | 1988-06-09 | 26 | Offseason roster (reserve/future, effective March 11) | Reserve/future contract, February 5, 2014 (market draw); two years through 2015 | No communicated restriction | Entry 94 |
 | Jerome Long | JAX-JEROMELONG | DT | 1990-04-09 | 24 | Offseason roster (reserve/future, effective March 11) | Reserve/future contract, February 3, 2014; two years through 2015 | No communicated restriction | Entry 94 |
 | Aaron Donald | JAX-AARONDONALD | DT | 1991-05-23 | 23 | Offseason roster (rookie, drafted) | No. 13; rookie contract signed May 11, 2014: four years through 2017, $10,136,500, $7,916,500 signing bonus; first-round option mechanism | No communicated restriction | Entry 108 |
 | Sio Moore | JAX-SIOMOORE | LB | 1990-05-02 | 24 | Offseason roster | No. 98; rookie contract | No communicated restriction | Entry 41 |
@@ -161,10 +161,10 @@ No later real destination is imported for any departed player unless the league 
 | Uche Nwaneri | March 20, 2014 | Traded to Arizona with Jacksonville's 2015 first, 2015 fourth and 2016 fifth for No. 38 (the Arizona trade for No. 38) | Entry 99 |
 | Jason Babin | March 24, 2014 | Traded to Miami with Jacksonville's 2017 seventh for Miami's 2015 third (the Babin trade with Miami); no dead money | Entry 102 |
 | Tyson Alualu | March 24, 2014 | Traded to Houston for Houston's 2015 fourth (the Alualu trade with Houston); $1,542,500 dead money | Entry 102 |
-| Alan Ball | March 11, 2014 | Unrestricted free agent; not re-signed May 12 after Stone's conversation; unplaced under the rails and first on the veteran-corner call list | Entries 94, 103 and 110 |
-| Brent Grimes | March 11, 2014 | Unrestricted free agent; not pursued while both signed corners are under contract | Entries 94 and 103 |
-| Allen Reisner | March 11, 2014 | Not tendered; unrestricted free agent | Entry 94 |
-| Kevin Rutland | March 11, 2014 | Not tendered; unrestricted free agent | Entry 94 |
+| Alan Ball | March 11, 2014 | Unrestricted free agent; not re-signed May 12 after Stone's conversation; unplaced under the rails and first on the veteran-corner call list; no June 1 tender filed, no rights retained | Entries 94, 103, 110 and 112 |
+| Brent Grimes | March 11, 2014 | Unrestricted free agent; not pursued while both signed corners are under contract; no June 1 tender filed, no rights retained | Entries 94, 103 and 112 |
+| Allen Reisner | March 11, 2014 | Not tendered; unrestricted free agent; no June 1 tender filed, no rights retained | Entries 94 and 112 |
+| Kevin Rutland | March 11, 2014 | Not tendered; unrestricted free agent; no June 1 tender filed, no rights retained | Entries 94 and 112 |
 | Brad Meester | March 11, 2014 | Retired; Reserve/Retired contract expired at the league year | Entries 79 and 94 |
 | Kyle Bosworth | March 12, 2013 | Contract/rights expired; no branch tender or new Jacksonville contract | Entry 9 |
 | Eben Britton | March 12, 2013 | Contract/rights expired; no branch tender or new Jacksonville contract | Entry 9 |
@@ -232,14 +232,14 @@ Current source: `career/2014/draft/pick_ownership.json`; generated seven-round o
 The player index owns each player's availability boundary. In summary:
 
 - Every controlled player has no communicated restriction; Will Rackley, the one limited player, was traded to Seattle May 12. Paul Posluszny's head/neck hold from Week 13 cleared on April 5, 2014, his projected date. Earlier injuries to Bouye, Kelce, Owens, Thielen and Ryan Davis cleared at their projections; Pasztor and Mosley are available.
-- The 26 rookies completed club physicals May 13 to 15 with no communicated restriction and worked through the May 16 and 17 rookie minicamp and Phase Two (May 19 to 22) without injury. Cornelius Lucas, measured at the combine on crutches after a pre-combine foot stress fracture (public February 2014), passed that specific check with no communicated restriction; the foot is a performance-staff review item, and no diagnosis beyond the public fact is recorded.
+- The 26 rookies completed club physicals May 13 to 15 with no communicated restriction and worked through the May 16 and 17 rookie minicamp, Phase Two (May 19 to 22) and the ten OTA days (May 27 to June 13) without injury. The OTAs produced no injury or restriction for any participant; the program has no engine injury draw for practices, and only communicated instructions are recorded. Cornelius Lucas, measured at the combine on crutches after a pre-combine foot stress fracture (public February 2014), passed that specific check with no communicated restriction; the foot is a performance-staff review item, and no diagnosis beyond the public fact is recorded.
 - No player is on a reserve list.
 
 ## Football roles, depth and packages
 
 2013 roles carry until Stone changes them. The Role column of `career/2014/roster.md` records each decided role. Current depth order is `career/2013/depth_chart.json` (effective January 6, AFC Divisional preparation; read by `runtime/week_inputs.py`). The [2014 working depth chart](../career/2014/depth_chart.md) carries that order into 2014 with contract flags and Stone's May 12 rep starting points (Entry 111); it is not a game input.
 
-- Stone's May 12, 2014 starting roles entering OTAs, each a rep starting point with named competition and not an award: WR1 Nicks (Adams the competition); WR3 Adams (Hawkins); left guard Bitonio, guard first (Norwell); right guard Turner (Bitonio or Norwell if Turner struggles); Edge 1 Mincey (Branch). No other rookie has a place.
+- Stone's May 12, 2014 starting roles entering OTAs, each a rep starting point with named competition and not an award: WR1 Nicks (Adams the competition); WR3 Adams (Hawkins); left guard Bitonio, guard first (Norwell); right guard Turner (Bitonio or Norwell if Turner struggles); Edge 1 Mincey (Branch). All five stand unchanged after the ten OTA days (Entry 112): the named competition took real reps, the non-contact evidence decides none of the jobs, and Turner's conditional swap was not triggered. No other rookie has a place.
 
 - Open places: TE3 (Reisner), the corner places of Brent Grimes and Ball and the reserve corner place of Rutland. Verner, Talib, Hawkins and Te'o-Nesheim have no place set, nor do the six reserve/future players or the 23 rookies other than Bitonio, Turner and Adams; rookies are added to the chart, not placed, and Stone places them only by decision.
 - Returned to carried places: Marks; Jones-Drew at lead back (RB 1, no starting promise); C.J. Wilson on the front, after Pendleton (no role promise); Cain at long snapper; Henne at QB2 (no starting promise).
@@ -688,5 +688,6 @@ Use the project's canon authority order. Document 6 is the sole authoritative co
 | Phase One handoff, unsigned tenders, Phase Two | 2014 ledger, Entry 109 | May 2 to 11, 2014 | The four unsigned tenders outside the program (user instruction, May 1); cross-training list revised; Phase One handoff May 2; Phase Two May 5 to 9; no offer sheet for Bradfield; clock May 11 | September 30, 2026; Canonical update - May 11, 2014 - 2014 draft and undrafted signings; Phase Two under way |
 | Rackley traded to Seattle; Ball not re-signed | 2014 ledger, Entry 110 | May 11 to 12, 2014 | Rackley to Seattle for Seattle's unconditional 2015 seventh ($154,868 dead money); Brewster kept; Ball not re-signed, first veteran corner to call; controlled roster 78; clock May 12 | September 30, 2026; Canonical update - May 12, 2014 - Rackley traded to Seattle; Ball not re-signed |
 | Starting roles; rookie minicamp; Phase Two closed | 2014 ledger, Entry 111 | May 12 to 23, 2014 | Rep starting points WR1 Nicks, WR3 Adams, LG Bitonio, RG Turner, Edge 1 Mincey, with named competition; 26 rookies onboarded and cleared; rookie minicamp May 16 and 17; Phase Two handoff May 23; no transaction; controlled roster 78; clock May 23 | September 30, 2026; Canonical update - May 23, 2014 - Rookie minicamp and Phase Two closed; starting roles set |
+| OTAs closed; June 1 tender deadline | 2014 ledger, Entry 112 | May 24 to June 13, 2014 | Ten OTA days May 27 to June 13, non-contact; June 13 handoff; the five open competitions stand; Communication assessed Average for each unit's spring lineup, Plan execution not assessed; no injury; no June 1 tender filed June 2 (Ball, Brent Grimes, Reisner, Rutland; no rights retained); no transaction; controlled roster 78; clock June 13 | September 30, 2026; Canonical update - June 13, 2014 - OTAs closed |
 
 This table is generated from Document 6 and is only a navigation aid. Active unresolved matters remain in the open player-control matters above and Document 5; resolved history, controlling authority, notification, and superseded values remain only in Document 6.

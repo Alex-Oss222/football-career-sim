@@ -35,7 +35,7 @@ Start with the player at the current date, including his full season of experien
 | Mandatory veteran minicamp | [Plan](mandatory_minicamp/plan.md), [output](mandatory_minicamp/output.md), [evidence](mandatory_minicamp/standouts.md) | Retained assignments and individual summer/camp-entry instructions |
 | Training camp and preseason | [Plan](training_camp/plan.md), [output](training_camp/output.md), [evidence](training_camp/standouts.md) | Lawful contact and game-speed transfer, individual development continued through season |
 
-Each phase has a linked `output.md` and `standouts.md` with matching evidence metadata. The offseason program (Phases One and Two, handoff May 23) and the rookie minicamp (May 16 and 17) are complete; OTAs, mandatory minicamp and training camp have not run. The 2014 draft and undrafted signings are closed ([draft records](draft/README.md)).
+Each phase has a linked `output.md` and `standouts.md` with matching evidence metadata. The offseason program (Phases One and Two, handoff May 23), the rookie minicamp (May 16 and 17) and the OTAs (ten days, May 27 to June 13, handoff June 13) are complete; mandatory minicamp and training camp have not run. The 2014 draft and undrafted signings are closed ([draft records](draft/README.md)).
 
 Dates stay in the calendar and phase plans. The [decision package](phase_plan_decisions.md) recommends the detailed sequence. The schedule-filing deadline is the agreed league date, no later than March 31 for an April 21 start; April 3 public publication is separate. A proposed date does not authorize work. No extra new-head-coach minicamp applies to Jacksonville in 2014.
 
