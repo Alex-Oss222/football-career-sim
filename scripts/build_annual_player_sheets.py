@@ -28,6 +28,7 @@ POSITION_SHEET_TRAITS = {
     "DT": ("Get-off","Anchor","Power","Hand use","Block shedding","Penetration","Pass-rush counters","Double-team play","Gap discipline / lateral pursuit"),
     "LB": ("Run diagnosis","Fit discipline","Block destruction","Range","Tackling","Zone coverage","Man coverage","Blitz / pressure","Communication","Pursuit angles"),
     "CB": ("Long / recovery speed","Short-area quickness / hips","Press coverage","Off-man coverage","Zone / pattern match","Route recognition / eyes","Ball skills","Catch-point play","Tackling / run support","Block defeat / penalty discipline"),
+    "DB": ("Long / recovery speed","Short-area quickness / hips","Press coverage","Off-man coverage","Zone / pattern match","Route recognition / eyes","Ball skills","Catch-point play","Tackling / run support","Block defeat / penalty discipline"),
     "S": ("Range","Speed / change of direction","Route-combination recognition","Deep positioning","Man / slot coverage","Ball skills","Tackling","Run support / angles","Communication","Play-action discipline"),
     "K": ("Field-goal accuracy by distance","Leg strength / range","Kickoff distance / hang","Directional kickoff control","Snap-hold operation","Pressure consistency"),
     "P": ("Gross distance","Hang time","Net / location control","Directional punting","Plus-territory control","Catch-to-kick operation","Pressure consistency"),
