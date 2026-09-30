@@ -42,7 +42,7 @@ Exact theoretical personnel judgments. Retained position grades carry the 2013 e
 ## League comparison
 
 | Trait | vs. Average | vs. Best | vs. Worst |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | Athleticism | Above NFL starter standard | Below elite standard | Above low-end standard |
 | Speed | Above NFL starter standard | Below elite standard | Above low-end standard |
 | Strength / Power | Above NFL starter standard | Below elite standard | Above low-end standard |
