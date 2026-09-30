@@ -69,6 +69,12 @@ def validate(data, root=ROOT):
                 raise ValueError('Invalid team accounting amount')
         if any(book[k] is not None for k in ['carryover','net_adjustments','counted_team_salary','actual_cash_paid','operating_reserve','rookie_incremental_reserve','cash_budget']) and not book['sources']:
             raise ValueError('Team accounting requires sources')
+        if 'carryover_working_estimate' in book:
+            est = book['carryover_working_estimate']
+            if (type(est.get('low')) is not int or type(est.get('high')) is not int
+                    or not 0 <= est['low'] <= est['high']
+                    or not (root/est.get('source', '').split('#')[0]).is_file()):
+                raise ValueError('Carryover working estimate requires a low-high range and a source')
         if book['accounting_reconciled']:
             if any(book[k] is None for k in ['carryover','net_adjustments','counted_team_salary']) or y not in data['league_caps']:
                 raise ValueError('Reconciled accounting requires complete inputs')
@@ -225,6 +231,14 @@ def render_main(d,years):
             ['Working counted total', dollars(top51+workout)],
             ['Difference below league cap, before club adjustments and reserves', dollars(d['league_caps'][current]-top51-workout)],
         ])
+        est = d['team_years'][current].get('carryover_working_estimate')
+        if est:
+            difference = d['league_caps'][current]-top51-workout
+            dashboard += table(['Rollover from the prior year (working estimate, not certified)', current], [
+                ['Unused prior-year room carried in', f"{dollars(est['low'])} to {dollars(est['high'])}"],
+                ['Difference including the rollover estimate', f"{dollars(difference+est['low'])} to {dollars(difference+est['high'])}"],
+            ])
+            dashboard += f"The rollover is calculated step by step in the [cap worksheet](../2014/offseason/current_cap_worksheet.md#2013-rollover). It becomes certified room only when club accounting is reconciled.\n\n"
     dashboard += '## Current player cap breakdown\n\n' + table(
         ['Player','Pos','Age','Status','Cap hit','% of league cap','Base','Bonus proration','Other cap','Unpaid guaranteed salary'],
         [[f"[{p['name']}](jaguars_contract_details.md#{slug(p['name'])})", p['position'],p['age_at_checkpoint'],

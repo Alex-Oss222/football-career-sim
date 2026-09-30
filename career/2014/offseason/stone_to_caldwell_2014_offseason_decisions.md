@@ -437,3 +437,7 @@ The user subsequently selected the historical calendar: rookie camp May 16–17;
 | Brent Grimes, CB | Let him test the market. The proposed two years, $9.25M with $4.0M guaranteed was insurance against missing the primary corners, and both signed. Preserve that money for remaining needs rather than activate the fallback | Offer withdrawn | Not pursued |
 
 **Market note.** Henne's real 2014 re-signing was with the real Jaguars, a move the branch never made. Under the rails he therefore stays an unplaced free agent whom Jacksonville may sign. Ball and Brent Grimes are also unplaced; Grimes's real Miami re-signing does not apply in the branch.
+
+## September 30, 2026 amendment: trade Shorts and Blackmon
+
+**User instruction, at the March 31, 2014 branch checkpoint.** Trade Cecil Shorts and Justin Blackmon for draft picks, ideally one in rounds 2 to 4. Jacksonville takes the dead money. The receiver room after the trade is Nicks, Hawkins, Thielen, Clemons, Brown and Jerrell Jackson, with Davante Adams the plan at No. 38. This replaces the earlier rule that kept Shorts once the Seattle trade was not triggered. The result is recorded in the [trade record](../trades/shorts_blackmon_to_indianapolis_2014-03-31.md).

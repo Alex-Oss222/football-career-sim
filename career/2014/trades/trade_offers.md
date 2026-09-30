@@ -1,6 +1,6 @@
 # Jacksonville 2014 trade offer log
 
-Dated record of every actual trade communication, in order. The plan and each trade's current status are in [trade targets](trade_targets.md); finished deals are in [completed trades](trades.md). The trade window opened March 11, 2014 at 4 p.m. ET. The Shorts-and-Blackmon trade with Seattle and the Minnesota trade-up to No. 31 were never offered.
+Dated record of every actual trade communication, in order. The plan and each trade's current status are in [trade targets](trade_targets.md); finished deals are in [completed trades](trades.md). The trade window opened March 11, 2014 at 4 p.m. ET. The earlier conditional Shorts-and-Blackmon trade with Seattle (triggered only if Edelman signed) and the Minnesota trade-up to No. 31 were never offered; Stone's March 31 instruction started a new Shorts-and-Blackmon trade, logged below.
 
 ## March 11, 2014, 4:00 p.m. ET: Arizona trade for No. 38, first pass (declined, later superseded)
 
@@ -36,6 +36,14 @@ Resolved in the user's trade-dynamics run, which simulates real club behavior ou
 - Alualu trade, completed with Houston: Alualu for Houston's unconditional 2015 fourth. Physical passed; processed.
 - Allen trade, agreed in principle with Arizona: Allen for Arizona's unconditional 2015 fourth. No further compensation talks are needed. It closes only if Paul Posluszny receives actual medical clearance no later than April 21, 2014, Allen passes Arizona's physical and league processing completes; the April 5 projection is not clearance. Otherwise it expires unexecuted. Until then Allen stays on the roster and depth chart with his cap charge, and the pick stays Arizona's and may not be spent or counted. Next action: Caldwell's office, at Posluszny's medical review.
 - Rackley-or-Brewster trade: blocked until Jacksonville actually drafts two offensive linemen. Caldwell may then shop one of the two for a 2015 seventh; nothing is booked until a buyer accepts.
+
+## March 31, 2014: Shorts and Blackmon trade (completed with Indianapolis)
+
+Caldwell, on Stone's March 31 instruction to trade both receivers for draft picks, ideally one in rounds 2 to 4, with Jacksonville taking the dead money. The calls are in the [trade record](shorts_blackmon_to_indianapolis_2014-03-31.md).
+
+- Seattle, declined: Caldwell asked for Seattle's No. 36 for both players. Seattle's third belongs to Minnesota, and it would not spend its second on one season of Shorts. No counter.
+- Carolina, offer not taken: Carolina offered No. 119, its fourth, for Shorts alone and passed on Blackmon.
+- Indianapolis, completed: Caldwell asked for No. 51 for both. The Colts refused a second and offered No. 82, their third, for Shorts. Caldwell asked for a pick for Blackmon on top; the Colts added No. 194, their sixth, and took Blackmon. Caldwell accepted because the Colts' third beats Carolina's fourth and only the Colts would take Blackmon. Both players passed the Colts' physicals on March 31 with no communicated restriction; processed March 31. See [completed trades](trades.md).
 
 ## Adding an entry
 

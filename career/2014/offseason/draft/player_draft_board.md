@@ -1,6 +1,6 @@
 # Jacksonville Jaguars: 2014 draft board
 
-Stone's current recommendations to Caldwell for each of Jacksonville's nine 2014 picks, read from the [February 2 memo and its appended amendments](../stone_to_caldwell_2014_offseason_decisions.md). The original memo remains intact; where this board and an amendment differ, the amendment controls. [Draftees](draftees.md) owns actual selections and contracts. The draft runs May 8 to 10, 2014.
+Stone's current recommendations to Caldwell for each of Jacksonville's eleven 2014 picks, read from the [February 2 memo and its appended amendments](../stone_to_caldwell_2014_offseason_decisions.md). The original memo remains intact; where this board and an amendment differ, the amendment controls. [Draftees](draftees.md) owns actual selections and contracts. The draft runs May 8 to 10, 2014.
 
 ## Board by pick
 
@@ -11,14 +11,16 @@ Overall numbers include the 32 compensatory picks announced March 24, 2014; Jack
 | 13 | 1, Washington (slot 13) | Aaron Donald, DT, Pittsburgh ([amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-28-2026-amendment-aaron-donald-at-no-13)) | Kyle Fuller, CB, Virginia Tech ([fallbacks amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-29-2026-amendment-receivers-pick-13-and-26-fallbacks-edge-pairing-undrafted-line)) |
 | 26 | 1, Jacksonville (slot 26) | Joel Bitonio, T/G, Nevada | Kyle Van Noy, LB, BYU ([amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-29-2026-amendment-package-i-arizonas-second-for-adams)) |
 | 38 | 2, Arizona (slot 6) | Davante Adams, WR, Fresno State | None named; availability is decided at the draft by the rails rule |
+| 82 | 3, Indianapolis (slot 18) | Not yet set: Stone to choose | Not yet set |
 | 90 | 3, Jacksonville (slot 26) | Trai Turner, G, LSU | Memo comparison: Brandon Thomas |
 | 129 | 4, Jacksonville (slot 26) | Telvin Smith, LB, Florida State | Memo comparisons: Christian Jones, Kyle Van Noy |
 | 153 | 5, Detroit (slot 11) | Corey Linsley, C, Ohio State | Matt Paradis, then Bryan Stork, then Travis Swanson ([amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-29-2026-amendment-pick-36-lawrence-at-31-monroe-and-the-linsley-and-gaines-fallbacks)) |
 | 168 | 5, Jacksonville (slot 26) | Charles Leno Jr., T, Boise State | Memo comparison: James Hurst; medical evidence must be current |
+| 194 | 6, Indianapolis (slot 15) | Not yet set: Stone to choose | Not yet set |
 | 205 | 6, Jacksonville (slot 26) | E. J. Gaines, CB, Missouri (replaces Matt Paradis) | Ross Cockrell (same amendment) |
 | 241 | 7, Jacksonville (slot 26) | Malcolm Butler, CB, West Alabama | Ross Cockrell, if not already taken at 205 ([Butler rule](#amendment-malcolm-butler-user-directed-september-28-2026)) |
 
-No. 38 came from Arizona on March 20 in exchange for Uche Nwaneri, Jacksonville's 2015 first and fourth and its 2016 fifth ([completed trades](../../trades/trades.md)); it is Jacksonville's only second-round pick. A named comparison is a reference, not an automatic choice among several players or a guarantee of availability. If a primary target is gone and no precise fallback is authorized, that selection stops for Stone's choice while permissible preparation continues. The 13, 26 and 38 plan, Linsley at 153, Gaines at 205 and the Butler rule supersede the corresponding original memo rows; the memo's obsolete first-round inventory and rotation language do not control numbering.
+No. 38 came from Arizona on March 20 in exchange for Uche Nwaneri, Jacksonville's 2015 first and fourth and its 2016 fifth ([completed trades](../../trades/trades.md)); it is Jacksonville's only second-round pick. Nos. 82 and 194 came from Indianapolis on March 31 for Cecil Shorts and Justin Blackmon; Stone has not yet named targets for them. A named comparison is a reference, not an automatic choice among several players or a guarantee of availability. If a primary target is gone and no precise fallback is authorized, that selection stops for Stone's choice while permissible preparation continues. The 13, 26 and 38 plan, Linsley at 153, Gaines at 205 and the Butler rule supersede the corresponding original memo rows; the memo's obsolete first-round inventory and rotation language do not control numbering.
 
 No trade up or down, and no further pick disposal, is authorized.
 

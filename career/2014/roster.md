@@ -1,7 +1,7 @@
 # Jacksonville Jaguars roster
 
-**As of:** March 28, 2014
-**Canonical controlled-player count:** **55** (offseason roster; the 90-player limit applies from the league year).
+**As of:** March 31, 2014
+**Canonical controlled-player count:** **53** (offseason roster; the 90-player limit applies from the league year).
 **Practice squad:** 0. No 2014 practice squad exists before the regular season.
 **2013 season:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-1 (AFC Wild Card: Jacksonville 38, Kansas City 14; AFC Divisional: Tennessee 20, Jacksonville 13).
 
@@ -38,14 +38,12 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | --- | --- | --- | ---: | --- | --- | --- |
 | Montell Owens | FB | 1984-05-04 | 29 | Offseason roster | No communicated restriction | FB |
 
-### Wide receivers (8)
+### Wide receivers (6)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
-| Justin Blackmon | WR | 1990-01-09 | 24 | Offseason roster | No communicated restriction | WR3 / outside Z (from Week 8) |
 | Mike Brown | WR | 1989-02-09 | 25 | Offseason roster (ERFA tender, unsigned) | No communicated restriction | WR5 |
 | Toney Clemons | WR | 1988-10-11 | 25 | Offseason roster (ERFA tender, unsigned) | No communicated restriction | WR4 |
-| Cecil Shorts | WR | 1987-12-22 | 26 | Offseason roster | No communicated restriction | WR1 |
 | Adam Thielen | WR | 1990-08-22 | 23 | Offseason roster | No communicated restriction | WR2 / H (movable receiver); coverage units |
 | Jerrell Jackson | WR | 1990-02-06 | 24 | Offseason roster (reserve/future contract effective March 11) | No communicated restriction | Role not set |
 | Hakeem Nicks | WR | 1988-01-14 | 26 | Offseason roster (signed March 14, 2014) | No communicated restriction | Role not set |
@@ -158,6 +156,10 @@ Brandon King (DB) and Will Ta'ufo'ou (FB) were not offered contracts. They left 
 ## Departures
 
 At the 2014 league year (March 11, 4 p.m. ET) the 53-man roster became an offseason roster of 51. Players who have left Jacksonville's control, newest first:
+
+### March 31, 2014
+
+Cecil Shorts (WR) and Justin Blackmon (WR) were traded to Indianapolis for the Colts' 2014 third-round pick, No. 82, and sixth-round pick, No. 194.
 
 ### March 24, 2014
 

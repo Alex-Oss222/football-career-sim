@@ -1,6 +1,6 @@
 # Jacksonville Jaguars: 2014 contract and free-agency status register
 
-**As of:** March 28, 2014.
+**As of:** March 31, 2014.
 **Scope:** every player in the March 11, 2014 league-year baseline: the 52 active players and Brad Meester (Reserve/Retired) on the [2013 closing roster](../../2013/roster.md), plus the eight-player 2013 practice squad, six of whom signed reserve/future contracts effective March 11. Players signed from outside after the baseline are summarized in section 2; their contracts are in the [contract table](contract_table.md) and [signings record](free_agency/signings.md).
 **Role:** this register owns each player's contract status, final league year, accrued seasons and free-agency class, with the evidence for each. It executes no signing, tender, release, extension, option or trade; Caldwell retains contract authority under Document 3. Figures follow the adopted contract reconstruction in the [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md) and the [completion research](../../../library/2014_jaguars_contract_completion.md), which fix every covered contract year with explicit simulation assumptions where the public original instrument is incomplete. Transaction history is in the [2014 ledger](../ledger.md).
 
@@ -16,18 +16,18 @@
 
 ## 2. Current status summary
 
-| Status at March 28, 2014 | Count |
+| Status at March 31, 2014 | Count |
 |---|---:|
-| Under contract, continuing from before 2014 | 35 |
+| Under contract, continuing from before 2014 | 33 |
 | Under contract, reserve/future (effective March 11) | 6 |
 | Under contract, signed or re-signed in March 2014 | 10 |
 | Restricted free agent, lowest tender (unsigned) | 1 |
 | Exclusive-rights free agent, tendered (unsigned) | 3 |
-| Controlled players | 55 |
-| Control ended since the baseline (expired, not tendered, retired or traded) | 9 |
+| Controlled players | 53 |
+| Control ended since the baseline (expired, not tendered, retired or traded) | 11 |
 | 2013 practice-squad players not offered a contract | 2 |
 
-The 55 controlled players match the [roster](../roster.md) and the [contract table](contract_table.md).
+The 53 controlled players match the [roster](../roster.md) and the [contract table](contract_table.md).
 
 ### Changes since the March 11 baseline
 
@@ -49,6 +49,7 @@ The 55 controlled players match the [roster](../roster.md) and the [contract tab
 | Uche Nwaneri | Under contract | Traded to Arizona March 20 with Jacksonville's 2015 first, 2015 fourth and 2016 fifth for No. 38 |
 | Jason Babin | Under contract | Traded to Miami March 24 with Jacksonville's 2017 seventh for Miami's 2015 third |
 | Tyson Alualu | Under contract | Traded to Houston March 24 for Houston's 2015 fourth |
+| Cecil Shorts, Justin Blackmon | Under contract | Traded to Indianapolis March 31 for the Colts' 2014 third (No. 82) and sixth (No. 194) |
 | Six reserve/future players | Futures | Contracts in force from March 11 |
 | Alterraun Verner, Aqib Talib, Hakeem Nicks, Andrew Hawkins, Daniel Te'o-Nesheim | Not Jacksonville players | Signed March 11 to 18 (terms in the [signings record](free_agency/signings.md)) |
 
@@ -96,8 +97,8 @@ The 55 controlled players match the [roster](../roster.md) and the [contract tab
 
 | Player | Pos. | Contract and final league year | Current status | Accrued seasons through 2012 | 2013 branch accrual | Source and label |
 |---|---|---|---|---|---|---|
-| Justin Blackmon | WR | 2012 first-round (#5) four-year rookie contract; final year 2015 | Under contract | 1 | Accrues in branch (on 53 for 12 games: Week 1 and Weeks 6-17; Weeks 2-5 on Reserve/Suspended) | [OverTheCap](https://overthecap.com/player/justin-blackmon/943/); `initial_cap_sheet.md`. The four-game forfeiture amount is unresolved in `current_cap_worksheet.md`; no contract tolling is recorded or assumed. Confirmed |
-| Cecil Shorts | WR | 2011 fourth-round four-year rookie contract; final year 2014 | Under contract | 2 | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/cecil-shorts/919/); `initial_cap_sheet.md`. Confirmed |
+| Justin Blackmon | WR | 2012 first-round (#5) four-year rookie contract; final year 2015 | Traded to Indianapolis March 31, 2014 | 1 | Accrues in branch (on 53 for 12 games: Week 1 and Weeks 6-17; Weeks 2-5 on Reserve/Suspended) | [OverTheCap](https://overthecap.com/player/justin-blackmon/943/); `initial_cap_sheet.md`. The four-game forfeiture amount is unresolved in `current_cap_worksheet.md`; no contract tolling is recorded or assumed. Confirmed |
+| Cecil Shorts | WR | 2011 fourth-round four-year rookie contract; final year 2014 | Traded to Indianapolis March 31, 2014 | 2 | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/cecil-shorts/919/); `initial_cap_sheet.md`. Confirmed |
 | Marcedes Lewis | TE | 2011 five-year veteran contract; final year 2015 | Under contract | 4+ (entered 2006) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/marcedes-lewis/946/); `initial_cap_sheet.md`. Confirmed |
 | Mark Asper | G | 2012 Buffalo sixth-round four-year rookie contract, carried by waiver claims; final year 2015 | Under contract | Unresolved (not status-determining) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/mark-asper/947/) (2012, four years, listed as MIN/BUF/JAX). Supported |
 | Uche Nwaneri | G | 2010 five-year extension; final year 2015 | Traded to Arizona March 20, 2014 | 4+ (entered 2007) | Accrues in branch (on 53 for 16 games) | [NFL.com, 2010](https://www.nfl.com/news/guard-nwaneri-signs-five-year-contract-extension-with-jaguars-09000d5d81a5a14d); [OverTheCap](https://overthecap.com/player/uche-nwaneri/961/). Final year 2015 Confirmed by [the verifications](caldwell_pre_tag_verifications.md) section 1 and Entry 86 (the earlier "disputed" label in section 5 is superseded); 2014 status unaffected |

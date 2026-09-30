@@ -3,9 +3,9 @@
 ## Document status
 
 - Function: Canonical register for current Jacksonville player control, staff operating authority, roster legality, contract/cap and draft-capital reconciliation, availability boundaries and football-role state.
-- Current status: **RECONCILED THROUGH ENTRY 103 (JONES-DREW AND C.J. WILSON RE-SIGNED)**.
-- Effective through: **March 31, 2014 (55 controlled players; Jones-Drew and C.J. Wilson re-signed March 28)**.
-- Current authority: `career/2014/ledger.md`, Entry 103 (Jones-Drew and C.J. Wilson re-signed March 28; schedule filed; controlled roster 55), Entry 102 (Babin to Miami and Alualu to Houston, March 24; controlled roster 53) and Entry 101 (administrative).
+- Current status: **RECONCILED THROUGH ENTRY 104 (SHORTS AND BLACKMON TRADED TO INDIANAPOLIS)**.
+- Effective through: **March 31, 2014 (53 controlled players; Shorts and Blackmon traded to Indianapolis March 31)**.
+- Current authority: `career/2014/ledger.md`, Entry 104 (Shorts and Blackmon traded to Indianapolis March 31 for Nos. 82 and 194; controlled roster 53), Entry 103 (Jones-Drew and C.J. Wilson re-signed March 28; schedule filed; controlled roster 55), Entry 102 (Babin to Miami and Alualu to Houston, March 24; controlled roster 53) and Entry 101 (administrative).
 - Prior progression authority: `career/2013/ledger.md`, Entries 1 to 100 (hire through the March 24, 2014 compensatory announcement).
 - Detailed readable roster: `career/2014/roster.md`.
 - Current cap worksheet: `career/2014/offseason/current_cap_worksheet.md`.
@@ -26,11 +26,11 @@ This register states each current fact once, in the section that owns it. How th
 | Divergence point | January 15, 2013: Alex Stone accepts Jacksonville head-coach offer |
 | Season phase | 2014 offseason; league year open from March 11, 2014 (2013 season complete, eliminated in the AFC Divisional round) |
 | Owned content effective | March 31, 2014 |
-| Document 4 register version | `JAX-2014-MAR31-REGISTER-57` |
-| Supersedes | `JAX-2014-MAR24-REGISTER-56` |
-| Last content-changing checkpoint | `Canonical update - March 31, 2014 - Jones-Drew and C.J. Wilson re-signed` |
-| Latest Document 6 event | 2014 ledger Entry 103: Jones-Drew and C.J. Wilson re-signed; schedule filed; controlled roster 55; clock March 31, 2014 |
-| Current controlled players | **55** |
+| Document 4 register version | `JAX-2014-MAR31-REGISTER-58` |
+| Supersedes | `JAX-2014-MAR31-REGISTER-57` |
+| Last content-changing checkpoint | `Canonical update - March 31, 2014 - Shorts and Blackmon traded to Indianapolis` |
+| Latest Document 6 event | 2014 ledger Entry 104: Shorts and Blackmon traded to Indianapolis for Nos. 82 and 194; controlled roster 53; clock March 31, 2014 |
+| Current controlled players | **53** |
 | Current practice squad | **0** (no 2014 practice squad before the regular season) |
 | Next scheduled football event | None scheduled; league dates are in Document 5 section 7 |
 | Unresolved matter before participation | Recheck control, current medical instructions and calendar permissions before any 2014 participation |
@@ -41,16 +41,16 @@ This register states each current fact once, in the section that owns it. How th
 
 | Exact primary status | Current count | Governing limit | Reconciled |
 |---|---:|---:|---|
-| Offseason roster | **55** | 90-player offseason limit from the league year | March 31, 2014 (Entry 103) |
+| Offseason roster | **53** | 90-player offseason limit from the league year | March 31, 2014 (Entry 104) |
 
 | Primary-status total | Current value | Derivation |
 |---|---:|---|
-| Players under signed contracts | **51** | 38 continuing contracts; six reserve/future contracts effective March 11; Monroe, Marks, Verner and Talib (signed March 11), Nicks (March 14), Hawkins and Te'o-Nesheim (March 18) in the free-agency replay; Cain re-signed March 19; Jones-Drew and C.J. Wilson re-signed March 28; less Nwaneri, Babin and Alualu (traded) |
+| Players under signed contracts | **49** | 38 continuing contracts; six reserve/future contracts effective March 11; Monroe, Marks, Verner and Talib (signed March 11), Nicks (March 14), Hawkins and Te'o-Nesheim (March 18) in the free-agency replay; Cain re-signed March 19; Jones-Drew and C.J. Wilson re-signed March 28; less Nwaneri, Babin, Alualu, Shorts and Blackmon (traded) |
 | Players on unsigned tenders | **4** | Bradfield (RFA); Clemons, Brown and Pasztor (ERFA) |
 | Reserve lists | **0** | Meester's Reserve/Retired contract expired March 11 |
 | Practice-squad players | **0** | No 2014 practice squad before the regular season |
 
-The offseason roster is 55 of 90. Only recorded contracts and the adopted contract schedules establish 2014 control; participation still follows the calendar and medical state.
+The offseason roster is 53 of 90. Only recorded contracts and the adopted contract schedules establish 2014 control; participation still follows the calendar and medical state.
 
 ### Current player index
 
@@ -70,10 +70,8 @@ The availability column records the club's latest medical communication. Every p
 | Maurice Jones-Drew | JAX-MAURICEJONESDREW | RB | 1985-03-23 | 29 | Offseason roster | Re-signed March 28, 2014: two years, $7.0M, $3.25M guaranteed | No communicated restriction | Entry 103 |
 | Richard Murphy | JAX-RICHARDMURPHY | RB | 1986-09-18 | 27 | Offseason roster (reserve/future, effective March 11) | Reserve/future contract, February 3, 2014; two years through 2015 | No communicated restriction | Entry 94 |
 | Montell Owens | JAX-MONTELLOWENS | FB | 1984-05-04 | 29 | Offseason roster | Extension through 2015 (Supported); 2014 schedule priced as an estimate | Cleared of his Wild Card minor injury at its January 5 projection | Entry 64 |
-| Justin Blackmon | JAX-JUSTINBLACKMON | WR | 1990-01-09 | 24 | Offseason roster | Existing rookie contract; 4/17 of 2013 base forfeited for Weeks 2-5, amount unresolved | No communicated restriction | Entry 45 |
 | Mike Brown | JAX-MIKEBROWN | WR | 1989-02-09 | 25 | Offseason roster (ERFA tender, unsigned) | ERFA tender, $495,000, made March 11, 2014; unsigned | No communicated restriction | Entry 41 |
 | Toney Clemons | JAX-TONEYCLEMONS | WR | 1988-10-11 | 25 | Offseason roster (ERFA tender, unsigned) | ERFA tender, $570,000, made March 11, 2014; unsigned | No communicated restriction | Entry 41 |
-| Cecil Shorts | JAX-CECILSHORTS | WR | 1987-12-22 | 26 | Offseason roster | Existing rookie contract | No communicated restriction | Entry 41 |
 | Adam Thielen | JAX-ADAMTHIELEN | WR | 1990-08-22 | 23 | Offseason roster | Three-year UDFA minimum contract | Cleared of his Wild Card minor injury at its January 6 projection | Entry 64 |
 | Jerrell Jackson | JAX-JERRELLJACKSON | WR | 1990-02-06 | 24 | Offseason roster (reserve/future, effective March 11) | Reserve/future contract, February 3, 2014; two years through 2015 | No communicated restriction | Entry 94 |
 | Hakeem Nicks | JAX-HAKEEMNICKS | WR | 1988-01-14 | 26 | Offseason roster | Signed March 14, 2014: one year, up to $5.0M, $4.5M guaranteed | No communicated restriction; no new medical finding at signing | Entry 97 |
@@ -130,6 +128,8 @@ No later real destination is imported for any departed player unless the league 
 
 | Player | Left control | Current branch status | Source |
 |---|---|---|---|
+| Cecil Shorts | March 31, 2014 | Traded to Indianapolis with Blackmon for the Colts' 2014 third (No. 82) and sixth (No. 194); $110,845 dead money | Entry 104 |
+| Justin Blackmon | March 31, 2014 | Traded to Indianapolis with Shorts; $5,951,636 dead money (2014 and 2015 bonus allocations accelerated) | Entry 104 |
 | Uche Nwaneri | March 20, 2014 | Traded to Arizona with Jacksonville's 2015 first, 2015 fourth and 2016 fifth for No. 38 (the Arizona trade for No. 38) | Entry 99 |
 | Jason Babin | March 24, 2014 | Traded to Miami with Jacksonville's 2017 seventh for Miami's 2015 third (the Babin trade with Miami); no dead money | Entry 102 |
 | Tyson Alualu | March 24, 2014 | Traded to Houston for Houston's 2015 fourth (the Alualu trade with Houston); $1,542,500 dead money | Entry 102 |
@@ -166,9 +166,9 @@ The [2014 cap worksheet](../career/2014/offseason/current_cap_worksheet.md) hold
 
 | Control | Current position | Source / limit |
 |---|---|---|
-| 2014 unadjusted league cap | **$133,000,000**, published February 28, 2014; Jacksonville's adjusted cap, carryover and cap space unresolved | `library/2014_league_calendar_and_financial_rules.md`; Entry 89 |
-| 2014 scheduled player cap | **$119,350,321** including $3,066,000 of unsigned tenders; plus $3,783,175 dead money (Bray $51,675; Nwaneri $2,189,000; Alualu $1,542,500). Offseason Top-51 count $121,378,496 (three $420,000 and one $495,000 minimums outside) plus the $504,000 workout charge: $121,882,496, a $11,117,504 working difference before carryover, rookies and reserves. Not certified room | `career/finances/jaguars_cap.md`; [worksheet](../career/2014/offseason/current_cap_worksheet.md) (Entry 103) |
-| 2015 commitments | $108,785,637 | Entry 103 |
+| 2014 unadjusted league cap | **$133,000,000**, published February 28, 2014. 2013 rollover estimated at about $5.33M to $6.00M (working estimate); adjusted cap and certified cap space unresolved | `library/2014_league_calendar_and_financial_rules.md`; Entry 89; `career/2014/offseason/current_cap_worksheet.md` (2013 rollover), Entry 104 |
+| 2014 scheduled player cap | **$112,759,748** including $3,066,000 of unsigned tenders; plus $9,845,656 dead money (Bray $51,675; Nwaneri $2,189,000; Alualu $1,542,500; Shorts $110,845; Blackmon $5,951,636). Offseason Top-51 count $121,765,404 (two $420,000 minimums outside) plus the $504,000 workout charge: $122,269,404, a $10,730,596 working difference before carryover, rookies and reserves. Not certified room | `career/finances/jaguars_cap.md`; [worksheet](../career/2014/offseason/current_cap_worksheet.md) (Entry 104) |
+| 2015 commitments | $102,895,454 | Entry 104 |
 | Monroe | Five-year contract signed March 11 replaced the $11,654,000 franchise tender (charged once; no second designation) | Entry 95 |
 | RFA/ERFA tenders | Bradfield $1,431,000; Clemons and Pasztor $570,000 each; Brown $495,000; all unsigned, made March 11 | Entry 94 |
 | Adopted contract schedules | Every covered player-year of an existing contract has an adopted dollar amount; years outside a deal stay blank; simulated terms remain distinguishable from recovered historical terms | Entry 91 |
@@ -182,7 +182,7 @@ No current contract guarantees a depth-chart position, rep share, target share, 
 
 Current source: `career/2014/draft/pick_ownership.json`; generated seven-round order: `career/2014/draft/draft_order.md`.
 
-- 2014: nine ordinary picks, overall 13 (Washington's first), 26 (own first), 38 (Arizona's second, from the Arizona trade for No. 38), 90, 129, 153 (Detroit's fifth), 168, 205 and 241. No compensatory pick. Jacksonville's own 2014 second (No. 58) belongs to Washington.
+- 2014: eleven ordinary picks, overall 13 (Washington's first), 26 (own first), 38 (Arizona's second, from the Arizona trade for No. 38), 82 (Indianapolis's third, from the Shorts and Blackmon trade), 90, 129, 153 (Detroit's fifth), 168, 194 (Indianapolis's sixth, from the same trade), 205 and 241. No compensatory pick. Jacksonville's own 2014 second (No. 58) belongs to Washington.
 - 2015: Miami's third and Houston's fourth acquired. Jacksonville's 2015 second belongs to Washington (slot unknown); its 2015 first and fourth belong to Arizona.
 - 2016 and 2017: Jacksonville's 2016 fifth belongs to Arizona and its 2017 seventh to Miami.
 - League order: Indianapolis 14 / Green Bay 15 by coin flip; league ownership audited with three specific conditional claims.
@@ -212,11 +212,11 @@ The player index owns each player's availability boundary. In summary:
 
 2013 roles carry until Stone changes them. The Role column of `career/2014/roster.md` records each decided role. Current depth order is `career/2013/depth_chart.json` (effective January 6, AFC Divisional preparation; read by `runtime/week_inputs.py`). The [2014 working depth chart](../career/2014/depth_chart.md) carries that order into 2014 with contract flags; it records no 2014 decision and is not a game input.
 
-- Open places: QB2 (Henne), TE3 (Reisner), the corner places of Brent Grimes and Ball and the reserve corner place of Rutland, left guard (Nwaneri) and the carried Edge 1 place (Babin). Verner, Talib, Nicks, Hawkins and Te'o-Nesheim have no place set, nor do the six reserve/future players.
+- Open places: QB2 (Henne), TE3 (Reisner), the corner places of Brent Grimes and Ball and the reserve corner place of Rutland, left guard (Nwaneri), the carried Edge 1 place (Babin) and the carried WR1 and WR3 places (Shorts and Blackmon). Verner, Talib, Nicks, Hawkins and Te'o-Nesheim have no place set, nor do the six reserve/future players.
 - Returned to carried places: Marks; Jones-Drew at lead back (RB 1, no starting promise); C.J. Wilson on the front, after Pendleton (no role promise); Cain at long snapper.
 - Quarterback: Cousins QB1.
 - Offensive line: Monroe, left guard open, Brewster (the starting center, confirmed Week 6), Rackley, Johnson; Bradfield swing tackle and sixth offensive lineman; Asper interior depth.
-- Receivers: Shorts WR1, Thielen WR2/H, Blackmon WR3/outside Z (dressed from Week 8), Clemons WR4, Brown WR5.
+- Receivers: carried order Thielen (WR2/H), Clemons (WR4), Brown (WR5); WR1 and WR3 open after the March 31 trade.
 - Front: edge order Mincey, Branch, Davis; Marks and Miller inside, Mosley next.
 - Linebackers: Posluszny and Smith are the base linebackers, Smith the communication lead. With Posluszny out, Allen has started beside Smith since Week 14 and is first off the bench, then Stanford; Moore plays in Crennel's packages.
 - Secondary: Mike Harris outside, Poyer nickel, Bouye first outside reserve, Lowery and Rambo at safety.
@@ -650,5 +650,6 @@ Use the project's canon authority order. Document 6 is the sole authoritative co
 | Compensatory picks | 2013 season ledger, Entry 100 | March 24, 2014 | 32 branch awards; none to Jacksonville; later picks renumbered 129, 153, 168, 205, 241; controlled roster 55 | September 29, 2026; Canonical update - March 24, 2014 - Historical schedule and annual handoff |
 | Babin and Alualu trades | 2014 ledger, Entry 102 | March 24, 2014 | Babin to Miami (with the 2017 seventh, for Miami's 2015 third); Alualu to Houston (Houston's 2015 fourth); controlled roster 53 | September 30, 2026; Canonical update - March 24, 2014 - Babin and Alualu traded |
 | Jones-Drew and C.J. Wilson | 2014 ledger, Entry 103 | March 28, 2014 | Jones-Drew re-signed (two years, $7.0M, $3.25M guaranteed); Wilson re-signed (one year, $795,000); schedule filed; controlled roster 55 | September 30, 2026; Canonical update - March 31, 2014 - Jones-Drew and C.J. Wilson re-signed |
+| Shorts and Blackmon trade | 2014 ledger, Entry 104 | March 31, 2014 | Shorts and Blackmon to Indianapolis for the Colts' 2014 third (No. 82) and sixth (No. 194); $6,062,481 dead money; 11 picks in 2014; controlled roster 53 | September 30, 2026; Canonical update - March 31, 2014 - Shorts and Blackmon traded to Indianapolis |
 
 This table is generated from Document 6 and is only a navigation aid. Active unresolved matters remain in the open player-control matters above and Document 5; resolved history, controlling authority, notification, and superseded values remain only in Document 6.

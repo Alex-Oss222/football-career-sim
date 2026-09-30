@@ -1,6 +1,6 @@
 # Jacksonville Jaguars 2014 depth chart (working view)
 
-**As of:** March 28, 2014
+**As of:** March 31, 2014
 **Status:** the closed 2013 chart, carried forward with players no longer under Jacksonville control removed. No 2014 depth decision has been made. Removing a player moves those below him up without a reorder; Stone owns the order and changes it only by decision.
 **Machine-readable copy:** [offseason/depth_chart_working.json](offseason/depth_chart_working.json), same schema as [the 2013 chart](../2013/depth_chart.json) plus contract flags, the players added since March 11 and the update log.
 **Sources:** [2013 depth chart](../2013/depth_chart.json) (Git `781213a`, effective January 6, 2014, AFC Divisional preparation) for the carried order; the [current roster](roster.md) and [contract status register](offseason/contract_status_register.md) for control and availability; [Caldwell's pre-tag-window verifications](offseason/caldwell_pre_tag_verifications.md).
@@ -42,11 +42,9 @@
 
 | Order | Player | Contract flag | 2013 recorded role | Availability |
 |---:|---|---|---|---|
-| 1 | Cecil Shorts | Under contract | WR1 | No communicated restriction |
-| 2 | Adam Thielen | Under contract | WR2 / H (movable receiver); coverage units | No communicated restriction |
-| 3 | Justin Blackmon | Under contract | WR3 / outside Z (from Week 8) | No communicated restriction |
-| 4 | Toney Clemons | Tendered ERFA (unsigned) | WR4 | No communicated restriction |
-| 5 | Mike Brown | Tendered ERFA (unsigned) | WR5 | No communicated restriction |
+| 1 | Adam Thielen | Under contract | WR2 / H (movable receiver); coverage units | No communicated restriction |
+| 2 | Toney Clemons | Tendered ERFA (unsigned) | WR4 | No communicated restriction |
+| 3 | Mike Brown | Tendered ERFA (unsigned) | WR5 | No communicated restriction |
 | Added, not placed | Hakeem Nicks | Signed March 14, 2014 (one year) | None assigned | No communicated restriction |
 | Added, not placed | Andrew Hawkins | Signed March 18, 2014 (four years) | None assigned | No communicated restriction |
 | Added, not placed | Jerrell Jackson | Reserve/future (effective March 11) | None assigned | No communicated restriction |
@@ -128,17 +126,17 @@ The kernel group is one OL list. Brad Meester (C) is removed: he retired, and hi
 
 Mike Westhoff has coordinated special teams since February 11, 2014. No 2014 returner, coverage-unit or specialist decision has been made.
 
-## Counts at March 28, 2014
+## Counts at March 31, 2014
 
 | Group | Count |
 |---|---:|
-| Players on the carried chart | 44 |
+| Players on the carried chart | 42 |
 | of whom tendered RFA or ERFA (unsigned) | 4 |
 | Added, not placed (six futures, Verner, Talib, Nicks, Hawkins and Te'o-Nesheim) | 11 |
-| Controlled players | 55 |
-| Removed since the 2013 chart (Meester, the five other March 11 departures not re-signed, Nwaneri, Babin and Alualu) | 9 |
+| Controlled players | 53 |
+| Removed since the 2013 chart (Meester, the five other March 11 departures not re-signed, Nwaneri, Babin, Alualu, Shorts and Blackmon) | 11 |
 
-Roles open: QB2 (Henne), TE3 (Reisner), the corner places of Brent Grimes and Ball, starting left guard (Nwaneri, traded March 20) and the carried Edge 1 role (Babin, traded March 24). The chart does not fill open roles: those are Stone's decisions.
+Roles open: QB2 (Henne), TE3 (Reisner), the corner places of Brent Grimes and Ball, starting left guard (Nwaneri, traded March 20), the carried Edge 1 role (Babin, traded March 24) and the carried WR1 and WR3 roles (Shorts and Blackmon, traded March 31). The chart does not fill open roles: those are Stone's decisions.
 
 Brandon King and Will Ta'ufo'ou were never on the 2013 chart and are not Jacksonville players. The 2013 game-day inactive list is weekly and is not carried.
 
@@ -160,6 +158,7 @@ Add a row for every signing, tag, tender, trade, release, retirement, draft pick
 | March 20, 2014 | Cain re-signed; Nwaneri traded | Entry 99 | Cain back in the LS slot; Nwaneri (OL 2, starting LG) removed and the linemen below him move up one without a reorder; the left guard job is open |
 | March 24, 2014 | Babin and Alualu traded | Entry 102 | Babin (DL 2) and Alualu (DL 4) removed; the linemen below each move up without a reorder; the carried Edge 1 role is open |
 | March 28, 2014 | Jones-Drew and C.J. Wilson re-signed | Entry 103 | Jones-Drew restored at RB 1 (lead back) and Wilson after Pendleton, their carried 2013 places; the players below each move down one |
+| March 31, 2014 | Shorts and Blackmon traded to Indianapolis | Entry 104 | Shorts (WR 1) and Blackmon (WR 3) removed; Thielen, Clemons and Brown move up without a reorder; the carried WR1 and WR3 roles are open |
 
 ## Maintaining the game-input copy
 

@@ -1,6 +1,6 @@
 # Jacksonville Jaguars cap tracker, 2014 to 2025
 
-As of March 28, 2014, Entry 103. Whole US dollars.
+As of March 31, 2014, Entry 104. Whole US dollars.
 
 [Player cap table](#cap-by-player) | [Individual contract details](jaguars_contract_details.md) | [Expirations](#expiring-contracts-and-free-agent-classes) | [Updating this tracker](README.md)
 
@@ -10,8 +10,8 @@ As of March 28, 2014, Entry 103. Whole US dollars.
 |---|---|---|
 | League cap | $133,000,000 | Published league limit |
 | Adjusted team cap | Unresolved | League cap plus verified carryover and adjustments |
-| Recorded player obligations | $119,350,321 | All scheduled contracts, including unsigned tenders once |
-| Dead money | $3,783,175 | Separate departed-contract charges |
+| Recorded player obligations | $112,759,748 | All scheduled contracts, including unsigned tenders once |
+| Dead money | $9,845,656 | Separate departed-contract charges |
 | Certified cap space | Unresolved | Withheld until club accounting is reconciled |
 | Space after rookie reserve | Unresolved | Requires verified net rookie cost and certified space |
 
@@ -19,13 +19,20 @@ The [current worksheet](../2014/offseason/current_cap_worksheet.md) records the 
 
 | Working offseason reconciliation | 2014 |
 |---|---|
-| Recorded player obligations | $119,350,321 |
-| P5 salary displaced below Top 51 | -$1,755,000 |
-| Separate dead money | $3,783,175 |
-| Top-51 obligations before workout charge | $121,378,496 |
+| Recorded player obligations | $112,759,748 |
+| P5 salary displaced below Top 51 | -$840,000 |
+| Separate dead money | $9,845,656 |
+| Top-51 obligations before workout charge | $121,765,404 |
 | Opening workout charge (recorded worksheet) | $504,000 |
-| Working counted total | $121,882,496 |
-| Difference below league cap, before club adjustments and reserves | $11,117,504 |
+| Working counted total | $122,269,404 |
+| Difference below league cap, before club adjustments and reserves | $10,730,596 |
+
+| Rollover from the prior year (working estimate, not certified) | 2014 |
+|---|---|
+| Unused prior-year room carried in | $5,330,000 to $6,000,000 |
+| Difference including the rollover estimate | $16,060,596 to $16,730,596 |
+
+The rollover is calculated step by step in the [cap worksheet](../2014/offseason/current_cap_worksheet.md#2013-rollover). It becomes certified room only when club accounting is reconciled.
 
 ## Current player cap breakdown
 
@@ -37,7 +44,6 @@ The [current worksheet](../2014/offseason/current_cap_worksheet.md) records the 
 | [Jeremy Mincey](jaguars_contract_details.md#jeremy-mincey) | EDGE | 30 | Signed | $6,500,000 | 4.89% | $4,475,000 | $2,000,000 | $25,000 | $0 |
 | [Alterraun Verner](jaguars_contract_details.md#alterraun-verner) | CB | 25 | Signed | $6,000,000 | 4.51% | $5,000,000 | $1,000,000 | $0 | $11,000,000 |
 | [Eugene Monroe](jaguars_contract_details.md#eugene-monroe) | OT | 26 | Signed | $5,600,000 | 4.21% | $4,000,000 | $1,600,000 | $0 | $12,000,000 |
-| [Justin Blackmon](jaguars_contract_details.md#justin-blackmon) | WR | 24 | Signed | $5,048,728 | 3.80% | $2,072,910 | $2,975,818 | $0 | $0 |
 | [Hakeem Nicks](jaguars_contract_details.md#hakeem-nicks) | WR | 26 | Signed | $5,000,000 | 3.76% | $2,500,000 | $2,000,000 | $500,000 | $2,500,000 |
 | [Lane Johnson](jaguars_contract_details.md#lane-johnson) | OT | 23 | Signed | $4,818,545 | 3.62% | $1,368,709 | $3,449,836 | $0 | $6,997,254 |
 | [Sen'Derrick Marks](jaguars_contract_details.md#senderrick-marks) | IDL | 27 | Signed | $4,750,000 | 3.57% | $4,000,000 | $750,000 | $0 | $9,500,000 |
@@ -52,7 +58,6 @@ The [current worksheet](../2014/offseason/current_cap_worksheet.md) records the 
 | [Maurice Jones-Drew](jaguars_contract_details.md#maurice-jones-drew) | RB | 28 | Signed | $2,600,000 | 1.95% | $1,750,000 | $750,000 | $100,000 | $1,750,000 |
 | [Russell Allen](jaguars_contract_details.md#russell-allen) | LB | 27 | Signed | $2,416,668 | 1.82% | $1,975,000 | $416,668 | $25,000 | $0 |
 | [Will Rackley](jaguars_contract_details.md#will-rackley) | OG | 24 | Signed | $1,585,868 | 1.19% | $1,431,000 | $154,868 | $0 | $0 |
-| [Cecil Shorts](jaguars_contract_details.md#cecil-shorts) | WR | 26 | Signed | $1,541,845 | 1.16% | $1,431,000 | $110,845 | $0 | $0 |
 | [Cameron Bradfield](jaguars_contract_details.md#cameron-bradfield) | OT | 26 | Unsigned tender | $1,431,000 | 1.08% | $1,431,000 | $0 | $0 | Conditional on signing |
 | [Andre Branch](jaguars_contract_details.md#andre-branch) | EDGE | 24 | Signed | $1,388,164 | 1.04% | $827,722 | $535,442 | $25,000 | $0 |
 | [Travis Kelce](jaguars_contract_details.md#travis-kelce) | TE | 24 | Signed | $1,242,978 | 0.93% | $653,596 | $589,382 | $0 | $1,153,596 |
@@ -89,7 +94,7 @@ The [current worksheet](../2014/offseason/current_cap_worksheet.md) records the 
 
 Percentages use the published league cap because adjusted club cap is unresolved. Other cap preserves the recorded aggregate; unverified roster, option, workout and incentive components are not invented. Unpaid guarantees exclude bonuses already paid.
 
-The inventory covers 55 current players: 51 under signed contracts (the six reserve/future contracts included from March 11) and 4 on unsigned tenders (RFA or ERFA). 9 former players are retained for financial history only.
+The inventory covers 53 current players: 49 under signed contracts (the six reserve/future contracts included from March 11) and 4 on unsigned tenders (RFA or ERFA). 11 former players are retained for financial history only.
 
 ## Reading the table
 
@@ -116,14 +121,14 @@ The [2011 agreement](https://nflps.org/wp-content/uploads/2012/05/collective-bar
 
 | Item | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 |
 |---|---|---|---|---|---|---|---|---|---|
-| Signed contracts and futures | $116,284,321 | $108,785,637 | $64,011,292 | $37,800,000 | $18,900,000 |  |  |  |  |
+| Signed contracts and futures | $109,693,748 | $102,895,454 | $64,011,292 | $37,800,000 | $18,900,000 |  |  |  |  |
 | Unsigned tenders | $3,066,000 |  |  |  |  |  |  |  |  |
-| Player contracts including tender | $119,350,321 | $108,785,637 | $64,011,292 | $37,800,000 | $18,900,000 |  |  |  |  |
-| Separate carry-forward dead money | $3,783,175 | $0 | $0 | $0 | $0 |  |  |  |  |
-| Recorded cap obligations | $123,133,496 | $108,785,637 | $64,011,292 | $37,800,000 | $18,900,000 |  |  |  |  |
-| Scheduled player cash including tender | $125,751,520 | $87,252,580 | $52,944,415 | $32,150,000 | $16,000,000 |  |  |  |  |
+| Player contracts including tender | $112,759,748 | $102,895,454 | $64,011,292 | $37,800,000 | $18,900,000 |  |  |  |  |
+| Separate carry-forward dead money | $9,845,656 | $0 | $0 | $0 | $0 |  |  |  |  |
+| Recorded cap obligations | $122,605,404 | $102,895,454 | $64,011,292 | $37,800,000 | $18,900,000 |  |  |  |  |
+| Scheduled player cash including tender | $120,547,610 | $82,948,215 | $52,944,415 | $32,150,000 | $16,000,000 |  |  |  |  |
 | Salary guaranteed in that year | $29,072,305 | $34,532,418 | $3,296,127 | $0 | $0 |  |  |  |  |
-| Players with scheduled charges | 55 | 36 | 13 | 5 | 2 |  |  |  |  |
+| Players with scheduled charges | 53 | 35 | 13 | 5 | 2 |  |  |  |  |
 
 **Additional three years**
 
@@ -149,7 +154,7 @@ These are the working obligations for the recorded deals, before club adjustment
 | QB | $1,720,000 | $1,170,000 |  |  |  |  |  |  |  |
 | RB | $4,160,000 | $5,570,000 |  |  |  |  |  |  |  |
 | FB | $2,891,667 | $2,891,667 |  |  |  |  |  |  |  |
-| WR | $16,370,573 | $12,985,183 | $3,400,000 | $3,400,000 |  |  |  |  |  |
+| WR | $9,780,000 | $7,095,000 | $3,400,000 | $3,400,000 |  |  |  |  |  |
 | TE | $9,492,978 | $9,691,574 | $1,740,170 |  |  |  |  |  |  |
 | OT | $11,849,545 | $15,382,254 | $15,845,963 | $9,100,000 | $9,100,000 |  |  |  |  |
 | OG | $2,725,868 | $660,000 |  |  |  |  |  |  |  |
@@ -162,10 +167,10 @@ These are the working obligations for the recorded deals, before club adjustment
 | K | $4,187,500 | $4,387,500 |  |  |  |  |  |  |  |
 | P | $770,523 | $875,480 |  |  |  |  |  |  |  |
 | LS | $855,000 |  |  |  |  |  |  |  |  |
-| Offense | $49,783,965 | $48,350,678 | $20,986,133 | $12,500,000 | $9,100,000 |  |  |  |  |
+| Offense | $43,193,392 | $42,460,495 | $20,986,133 | $12,500,000 | $9,100,000 |  |  |  |  |
 | Defense | $63,753,333 | $55,171,979 | $43,025,159 | $25,300,000 | $9,800,000 |  |  |  |  |
 | Special teams | $5,813,023 | $5,262,980 |  |  |  |  |  |  |  |
-| All player contracts | $119,350,321 | $108,785,637 | $64,011,292 | $37,800,000 | $18,900,000 |  |  |  |  |
+| All player contracts | $112,759,748 | $102,895,454 | $64,011,292 | $37,800,000 | $18,900,000 |  |  |  |  |
 
 **Additional three years**
 
@@ -262,29 +267,29 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 
 | Player | Through | Status | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | Remaining cap total |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| [Justin Blackmon](jaguars_contract_details.md#justin-blackmon) | 2015 | Signed | $5,048,728 | $5,890,183 |  |  |  |  |  |  |  | $10,938,911 |
 | [Hakeem Nicks](jaguars_contract_details.md#hakeem-nicks) | 2014 | Signed | $5,000,000 |  |  |  |  |  |  |  |  | $5,000,000 |
 | [Andrew Hawkins](jaguars_contract_details.md#andrew-hawkins) | 2017 | Signed | $2,800,000 | $6,000,000 | $3,400,000 | $3,400,000 |  |  |  |  |  | $15,600,000 |
-| [Cecil Shorts](jaguars_contract_details.md#cecil-shorts) | 2014 | Signed | $1,541,845 |  |  |  |  |  |  |  |  | $1,541,845 |
 | [Toney Clemons](jaguars_contract_details.md#toney-clemons) | 2014 | Unsigned tender | $570,000 |  |  |  |  |  |  |  |  | $570,000 |
 | [Adam Thielen](jaguars_contract_details.md#adam-thielen) | 2015 | Signed | $495,000 | $585,000 |  |  |  |  |  |  |  | $1,080,000 |
 | [Mike Brown](jaguars_contract_details.md#mike-brown) | 2014 | Unsigned tender | $495,000 |  |  |  |  |  |  |  |  | $495,000 |
 | [Jerrell Jackson](jaguars_contract_details.md#jerrell-jackson) | 2015 | Signed | $420,000 | $510,000 |  |  |  |  |  |  |  | $930,000 |
-| WR total |  |  | $16,370,573 | $12,985,183 | $3,400,000 | $3,400,000 |  |  |  |  |  | $36,155,756 |
+| [Cecil Shorts](jaguars_contract_details.md#cecil-shorts) | 2014 | traded |  |  |  |  |  |  |  |  |  |  |
+| [Justin Blackmon](jaguars_contract_details.md#justin-blackmon) | 2015 | traded |  |  |  |  |  |  |  |  |  |  |
+| WR total |  |  | $9,780,000 | $7,095,000 | $3,400,000 | $3,400,000 |  |  |  |  |  | $23,675,000 |
 
 **Additional three years**
 
 | Player | Through | Status | 2023 | 2024 | 2025 | Remaining cap total |
 |---|---|---|---|---|---|---|
-| [Justin Blackmon](jaguars_contract_details.md#justin-blackmon) | 2015 | Signed |  |  |  | $10,938,911 |
 | [Hakeem Nicks](jaguars_contract_details.md#hakeem-nicks) | 2014 | Signed |  |  |  | $5,000,000 |
 | [Andrew Hawkins](jaguars_contract_details.md#andrew-hawkins) | 2017 | Signed |  |  |  | $15,600,000 |
-| [Cecil Shorts](jaguars_contract_details.md#cecil-shorts) | 2014 | Signed |  |  |  | $1,541,845 |
 | [Toney Clemons](jaguars_contract_details.md#toney-clemons) | 2014 | Unsigned tender |  |  |  | $570,000 |
 | [Adam Thielen](jaguars_contract_details.md#adam-thielen) | 2015 | Signed |  |  |  | $1,080,000 |
 | [Mike Brown](jaguars_contract_details.md#mike-brown) | 2014 | Unsigned tender |  |  |  | $495,000 |
 | [Jerrell Jackson](jaguars_contract_details.md#jerrell-jackson) | 2015 | Signed |  |  |  | $930,000 |
-| WR total |  |  |  |  |  | $36,155,756 |
+| [Cecil Shorts](jaguars_contract_details.md#cecil-shorts) | 2014 | traded |  |  |  |  |
+| [Justin Blackmon](jaguars_contract_details.md#justin-blackmon) | 2015 | traded |  |  |  |  |
+| WR total |  |  |  |  |  | $23,675,000 |
 
 ### TE
 
@@ -577,6 +582,8 @@ All six run through 2015 under the adopted two-year terms. They have no signing 
 | Uche Nwaneri | 2014 | $2,189,000 | Pre-June 1 trade to Arizona, March 20, 2014 (Entry 99): the 2014 and 2015 bonus allocations of $1,094,500 each accelerate into 2014. His $1,000,000 March 25 roster bonus passes to Arizona. |
 | Tyson Alualu | 2014 | $1,542,500 | Pre-June 1 trade to Houston, March 24, 2014 (Entry 102): the final $1,542,500 original bonus allocation stays with Jacksonville in 2014. Houston takes his $2,571,500 base and $150,000 other components. |
 | Jason Babin | 2014 | $0 | Trade to Miami, March 24, 2014 (Entry 102): no Jacksonville bonus proration on the claimed Philadelphia contract, so no dead money. Miami takes the 2014 and 2015 schedules. |
+| Cecil Shorts | 2014 | $110,845 | Pre-June 1 trade to Indianapolis, March 31, 2014 (Entry 104): his final $110,845 original bonus allocation stays with Jacksonville in 2014. Indianapolis takes his $1,431,000 base. |
+| Justin Blackmon | 2014 | $5,951,636 | Pre-June 1 trade to Indianapolis, March 31, 2014 (Entry 104): the remaining bonus allocations of $2,975,818 for 2014 and $2,975,818 for 2015 accelerate into 2014. Indianapolis takes his 2014 and 2015 base salaries and deferred roster cash; his 2015 charge leaves Jacksonville. |
 
 The $51,675 old Bray bonus is counted separately from his new $420,000 salary. No recorded deal has void years. The completion research explains the inherited bonus reconciliation.
 
@@ -587,10 +594,12 @@ The $51,675 old Bray bonus is counted separately from his new $420,000 salary. N
 | 2014 | 1 | Washington Redskins | 13 | 13 |
 | 2014 | 1 | Jacksonville Jaguars | 26 | 26 |
 | 2014 | 2 | Arizona Cardinals | 6 | 38 |
+| 2014 | 3 | Indianapolis Colts | 18 | 82 |
 | 2014 | 3 | Jacksonville Jaguars | 26 | 90 |
 | 2014 | 4 | Jacksonville Jaguars | 26 | 129 |
 | 2014 | 5 | Detroit Lions | 11 | 153 |
 | 2014 | 5 | Jacksonville Jaguars | 26 | 168 |
+| 2014 | 6 | Indianapolis Colts | 15 | 194 |
 | 2014 | 6 | Jacksonville Jaguars | 26 | 205 |
 | 2014 | 7 | Jacksonville Jaguars | 26 | 241 |
 
@@ -613,8 +622,8 @@ These are selection rights. Add each rookie’s full contract schedule after the
 | Last contract year | Players |
 |---|---|
 | 2013 | Brad Meester, Chad Henne, Alan Ball, Brent Grimes, Allen Reisner, Kevin Rutland |
-| 2014 | Roy Miller, Daryl Smith, Cecil Shorts, Will Rackley, Mike Brewster, Ryan Davis, C.J. Mosley, Russell Allen, Julian Stanford, Chris Prosinski, C.J. Wilson, Jeremy Cain, Cameron Bradfield, Toney Clemons, Mike Brown, Austin Pasztor, John Parker Wilson, Jonathan Grimes, Hakeem Nicks |
-| 2015 | Kirk Cousins, Brynden Trawick, A.J. Bouye, Adam Thielen, C.J. Anderson, Justin Blackmon, Marcedes Lewis, Mark Asper, Andre Branch, Jeremy Mincey, Jeris Pendleton, Mike Harris, Dwight Lowery, Josh Scobee, Bryan Anger, Montell Owens, Tyler Bray, Richard Murphy, Jerrell Jackson, Jerome Long, D'Anthony Smith, Antwon Blake, Maurice Jones-Drew |
+| 2014 | Roy Miller, Daryl Smith, Will Rackley, Mike Brewster, Ryan Davis, C.J. Mosley, Russell Allen, Julian Stanford, Chris Prosinski, C.J. Wilson, Jeremy Cain, Cameron Bradfield, Toney Clemons, Mike Brown, Austin Pasztor, John Parker Wilson, Jonathan Grimes, Hakeem Nicks |
+| 2015 | Kirk Cousins, Brynden Trawick, A.J. Bouye, Adam Thielen, C.J. Anderson, Marcedes Lewis, Mark Asper, Andre Branch, Jeremy Mincey, Jeris Pendleton, Mike Harris, Dwight Lowery, Josh Scobee, Bryan Anger, Montell Owens, Tyler Bray, Richard Murphy, Jerrell Jackson, Jerome Long, D'Anthony Smith, Antwon Blake, Maurice Jones-Drew |
 | 2016 | Lane Johnson, Travis Kelce, Jordan Poyer, Sio Moore, Lavar Edwards, Bacarri Rambo, Paul Posluszny, Daniel Te'o-Nesheim |
 | 2017 | Sen'Derrick Marks, Alterraun Verner, Andrew Hawkins |
 | 2018 | Eugene Monroe, Aqib Talib |
@@ -627,9 +636,9 @@ These are selection rights. Add each rookie’s full contract schedule after the
 
 | Item | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 |
 |---|---|---|---|---|---|---|---|---|---|
-| Signed contracts and futures | $122,685,520 | $87,252,580 | $52,944,415 | $32,150,000 | $16,000,000 |  |  |  |  |
+| Signed contracts and futures | $117,481,610 | $82,948,215 | $52,944,415 | $32,150,000 | $16,000,000 |  |  |  |  |
 | Unsigned tender, conditional on signing | $3,066,000 |  |  |  |  |  |  |  |  |
-| Total scheduled player cash | $125,751,520 | $87,252,580 | $52,944,415 | $32,150,000 | $16,000,000 |  |  |  |  |
+| Total scheduled player cash | $120,547,610 | $82,948,215 | $52,944,415 | $32,150,000 | $16,000,000 |  |  |  |  |
 
 **Additional three years**
 

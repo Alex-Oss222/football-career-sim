@@ -1,11 +1,11 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2014-MAR31-STATE-78`
-**Supersedes:** `JAX-2014-MAR24-STATE-77`
-**Snapshot effective:** March 31, 2014, after the March 28 re-signings of Maurice Jones-Drew and C.J. Wilson and the March 28 filing of the offseason-program schedule. The 2013 season is complete and archived.
-**Last reconciled:** September 30, 2026; Entry 103 (Jones-Drew and Wilson re-signed; clock to March 31).
-**Global package checkpoint:** `Canonical update - March 31, 2014 - Jones-Drew and C.J. Wilson re-signed`
+**Version:** `JAX-2014-MAR31-STATE-79`
+**Supersedes:** `JAX-2014-MAR31-STATE-78`
+**Snapshot effective:** March 31, 2014, after the March 31 trade of Cecil Shorts and Justin Blackmon to Indianapolis, the March 28 re-signings of Maurice Jones-Drew and C.J. Wilson and the March 28 filing of the offseason-program schedule. The 2013 season is complete and archived.
+**Last reconciled:** September 30, 2026; Entry 104 (Shorts and Blackmon traded to Indianapolis; clock stays March 31).
+**Global package checkpoint:** `Canonical update - March 31, 2014 - Shorts and Blackmon traded to Indianapolis`
 
 This document states what is true now and what comes next. Event history lives in the [2014 ledger](../career/2014/ledger.md) (Entries 101 onward) and the [2013 ledger](../career/2013/ledger.md) (through Entry 100).
 
@@ -16,8 +16,8 @@ This document states what is true now and what comes next. Event history lives i
 | Document 1 | `ba784f0c8a8c5c9a4fa96bbcb873a132108a6db2` | Active foundation source |
 | Document 2 | `86dfbef40a5ae9b2b6f283dd513df6083bb22645` | Active foundation source |
 | Document 3 | `30ff2bd2eb39f64e31565d5eaf76bdd2de7e54b5` | Active foundation source |
-| Document 4 | `JAX-2014-MAR31-REGISTER-57`; reconciled by Entry 103 | Roster, staff, medical and role register |
-| Document 6 | `career/2014/ledger.md` Entries 101 to 103; `career/2013/ledger.md` through Entry 100 | Latest closed event: Entry 103 |
+| Document 4 | `JAX-2014-MAR31-REGISTER-58`; reconciled by Entry 104 | Roster, staff, medical and role register |
+| Document 6 | `career/2014/ledger.md` Entries 101 to 104; `career/2013/ledger.md` through Entry 100 | Latest closed event: Entry 104 |
 
 ## 1. Master clock and competition position
 
@@ -46,8 +46,8 @@ This document states what is true now and what comes next. Event history lives i
 
 | Field | Current value |
 |---|---|
-| **Current Jacksonville controlled roster** | **55** |
-| Offseason roster | 55 of the 90-player limit: 51 under signed contracts and 4 on unsigned tenders |
+| **Current Jacksonville controlled roster** | **53** |
+| Offseason roster | 53 of the 90-player limit: 49 under signed contracts and 4 on unsigned tenders |
 | Practice squad | 0 (no 2014 practice squad before the regular season) |
 | Unsigned tenders | Bradfield (lowest restricted tender); Clemons, Brown and Pasztor (exclusive rights) |
 | Reserve/future contracts | Six, at the minimum for each player's credited seasons: Bray, Jerrell Jackson and Long $420,000 each; Murphy, D'Anthony Smith and Blake $495,000 each. They are camp places, not practice-squad places; 2014 practice-squad eligibility is checked only after the August cutdown |
@@ -68,7 +68,7 @@ March 2014 signings, all under the judgment-based free-agency replay that supers
 | Maurice Jones-Drew, RB | March 28 | Two years, $7.0M, $3.25M guaranteed |
 | C.J. Wilson, DE | March 28 | One year, $795,000 (the minimum plus a $65,000 bonus); no role promise; March 26 physical showed no restriction |
 
-Completed trades: Uche Nwaneri, Jacksonville's 2015 first, 2015 fourth and 2016 fifth to Arizona for No. 38 (March 20); Jason Babin and Jacksonville's 2017 seventh to Miami for Miami's 2015 third (March 24); Tyson Alualu to Houston for Houston's 2015 fourth (March 24).
+Completed trades: Uche Nwaneri, Jacksonville's 2015 first, 2015 fourth and 2016 fifth to Arizona for No. 38 (March 20); Jason Babin and Jacksonville's 2017 seventh to Miami for Miami's 2015 third (March 24); Tyson Alualu to Houston for Houston's 2015 fourth (March 24); Cecil Shorts and Justin Blackmon to Indianapolis for the Colts' 2014 third, No. 82, and sixth, No. 194 (March 31).
 
 Caldwell has ended paid veteran receiver bidding. Adam Thielen cannot be extended until the day after Jacksonville's last 2014 regular-season game, because the 2011 CBA bars renegotiating an undrafted rookie contract before the end of its second contract year.
 
@@ -76,19 +76,19 @@ Player birth dates and ages are in Document 4, the [roster](../career/2014/roste
 
 ## 4. Finance
 
-- 2014 league cap: $133,000,000. Jacksonville's adjusted cap, 2013 carryover amount and certified cap space are unresolved. Carryover into 2014 is confirmed, but its branch amount is not.
-- Scheduled 2014 player-contract total: $119,350,321, including $3,066,000 of unsigned tenders, plus $3,783,175 dead money (Bray $51,675; Nwaneri $2,189,000; Alualu $1,542,500). See the [cap tracker](../career/finances/jaguars_cap.md).
-- Offseason Top-51 count: $121,378,496, plus the $504,000 workout charge, for $121,882,496. That leaves an $11,117,504 working difference below the league cap before carryover, rookies and reserves ([contract table](../career/2014/offseason/contract_table.md) section 5b). This is not certified room.
-- Future commitments: 2015 $108,785,637; 2016 $64,011,292; 2017 $37,800,000; 2018 $18,900,000. These include the adopted simulation schedules for existing contracts and the March replay contracts. The [ten-year tracker](../career/finances/jaguars_cap.md) carries them forward.
-- The [cap worksheet](../career/2014/offseason/current_cap_worksheet.md) does not certify cap room. The contract table prices all 51 signed contracts and the four tenders, with researched and adopted simulation amounts included in working totals and explained in its notes.
+- 2014 league cap: $133,000,000. Carryover of unused 2013 room is confirmed; the branch amount is estimated at about $5.33M to $6.00M from the 2013 cap worksheet ([calculation](../career/2014/offseason/current_cap_worksheet.md#2013-rollover)). Jacksonville's adjusted cap and certified cap space stay open until club accounting is reconciled.
+- Scheduled 2014 player-contract total: $112,759,748, including $3,066,000 of unsigned tenders, plus $9,845,656 dead money (Bray $51,675; Nwaneri $2,189,000; Alualu $1,542,500; Shorts $110,845; Blackmon $5,951,636). See the [cap tracker](../career/finances/jaguars_cap.md).
+- Offseason Top-51 count: $121,765,404, plus the $504,000 workout charge, for $122,269,404. That leaves a $10,730,596 working difference below the league cap before carryover, rookies and reserves ([contract table](../career/2014/offseason/contract_table.md) section 5b), or about $16.06M to $16.73M with the rollover estimate. This is not certified room.
+- Future commitments: 2015 $102,895,454; 2016 $64,011,292; 2017 $37,800,000; 2018 $18,900,000. These include the adopted simulation schedules for existing contracts and the March replay contracts. The [ten-year tracker](../career/finances/jaguars_cap.md) carries them forward.
+- The [cap worksheet](../career/2014/offseason/current_cap_worksheet.md) does not certify cap room. The contract table prices all 49 signed contracts and the four tenders, with researched and adopted simulation amounts included in working totals and explained in its notes.
 
 ## 5. Draft capital
 
-- 2014 picks: Nos. 13 (Washington's), 26 (own), 38 (Arizona's second), 90, 129, 153 (Detroit's fifth), 168, 205 and 241. Jacksonville received no compensatory pick.
+- 2014 picks, 11 in all: Nos. 13 (Washington's), 26 (own), 38 (Arizona's second), 82 (Indianapolis's third), 90, 129, 153 (Detroit's fifth), 168, 194 (Indianapolis's sixth), 205 and 241. Jacksonville received no compensatory pick.
 - 2015 picks acquired: Miami's third and Houston's fourth. Picks owed away: 2014 second (No. 58) and 2015 second to Washington in the Cousins trade; 2015 first, 2015 fourth and 2016 fifth to Arizona; 2017 seventh to Miami.
 - The user overrides the historical Rams claim to Washington's 2014 first for this asset. Indianapolis won the coin flip for No. 14 ahead of Green Bay; every round rotates from that result.
 - Compensatory picks came from the branch's own value-points [method](../career/2014/draft/compensatory/method.json) (version 2), because the league's weights are unpublished and the real list may not be imported. Revis (Tampa Bay third or fourth), Benn (undisclosed Philadelphia round) and Rosario (Chicago seventh) remain specific conditional holds in the league-wide ownership audit.
-- On the frozen board, No. 38 is Adams's slot and No. 26 now points to Bitonio, then Van Noy. The extra first-round pick does not select a prospect or rewrite the board.
+- On the frozen board, No. 38 is Adams's slot and No. 26 now points to Bitonio, then Van Noy. Stone has not named targets for Nos. 82 and 194. The extra first-round pick does not select a prospect or rewrite the board.
 - Authority: `career/2014/draft/pick_ownership.json`; [all seven rounds](../career/2014/draft/draft_order.md).
 
 ## 6. Availability
@@ -97,11 +97,11 @@ Paul Posluszny (2013 Week 13, head/neck) is under an independent medical hold, l
 
 ## 7. Current football roles
 
-Roles carry from the 2013 season until Stone changes them. The March departures vacate QB2 (Henne), TE3 (Reisner), the corner places of Brent Grimes and Ball, the reserve corner (Rutland), left guard (Nwaneri) and Edge 1 (Babin). Those places are open, not filled by the chart. New signings and the six futures are under contract with no place set ([working depth chart](../career/2014/depth_chart.md)).
+Roles carry from the 2013 season until Stone changes them. The March departures vacate QB2 (Henne), TE3 (Reisner), the corner places of Brent Grimes and Ball, the reserve corner (Rutland), left guard (Nwaneri) and Edge 1 (Babin); the March 31 trade vacates WR1 (Shorts) and WR3 (Blackmon). Those places are open, not filled by the chart. New signings and the six futures are under contract with no place set ([working depth chart](../career/2014/depth_chart.md)).
 
 - QB: Cousins QB1, John Parker Wilson QB3; Bray, no role set.
 - OL: Monroe (signed through 2018), left guard open, Brewster at center, Rackley, Johnson. Bradfield (tendered) is the swing tackle and sixth lineman in six-lineman sets; Asper interior depth; Pasztor (tendered) available.
-- Skill: Jones-Drew lead back, Jonathan Grimes RB2, Anderson RB3. Shorts WR1, Thielen WR2 and the movable receiver, Blackmon WR3 at outside Z, Clemons WR4, Brown WR5 (both tendered). Nicks and Hawkins, places not set. Lewis leads the tight ends and Kelce is TE2. Murphy and Jerrell Jackson, no role set.
+- Skill: Jones-Drew lead back, Jonathan Grimes RB2, Anderson RB3. Receivers: Nicks, Hawkins, Thielen, Clemons, Brown and Jerrell Jackson. Thielen (WR2 and the movable receiver), Clemons (WR4) and Brown (WR5, both tendered) keep their carried places; WR1 and WR3 are open; Nicks and Hawkins, places not set. Lewis leads the tight ends and Kelce is TE2. Murphy and Jerrell Jackson, no role set. Davante Adams is the plan at No. 38.
 - Defense: edge order Mincey, Branch, Davis, with Edge 1 open for Stone; Te'o-Nesheim, place not set. Marks and Miller inside, Mosley next, C.J. Wilson front depth. Posluszny and Smith base linebackers, with Smith the communication lead, Allen first off the bench, then Stanford, and Moore in Crennel's packages. Mike Harris outside; Verner and Talib, places not set; Poyer nickel; Bouye first outside reserve; Lowery and Rambo at safety. Long, D'Anthony Smith and Blake, no role set.
 - Special teams: Scobee, Anger and Cain. Trawick, Rambo, Thielen, Anderson, Poyer, Prosinski, Allen and Bouye hold defined primary and backup coverage jobs.
 
@@ -116,14 +116,14 @@ Execution and observable effort remain separate: protection losses were techniqu
 | Brent Grimes, CB | Offer withdrawn; not pursued |
 | Allen trade with Arizona | Agreed in principle: Russell Allen for Arizona's unconditional 2015 fourth. Closes only on Posluszny's actual clearance by April 21, Allen passing Arizona's physical and league processing; otherwise it expires. Until then Allen stays a Jaguar with his cap charge and the pick stays Arizona's. Allen's real retirement is scheduled for April 22 |
 | Rackley-or-Brewster trade | Blocked until Jacksonville actually drafts two offensive linemen; then Caldwell may shop one of them for a 2015 seventh |
-| Cecil Shorts | Stays; his extension process is open |
-| Left guard and Edge 1 | Stone's decisions |
+| Left guard, Edge 1, WR1 and WR3 | Stone's decisions |
+| Nos. 82 and 194 | Targets not yet set; Stone to choose |
 | Phase-plan decisions | All five 2014 phase plans are prepared with NOT_STARTED outputs. Individual feedback, living player development and QB-center identification teaching are adopted; other marked choices remain pending for the April 18 review |
 | Staff preparation checkpoint | Listed for March 31, not recorded as done; carried to the April 11 review |
 
 Research gaps still open:
 
-- The rails from March 11 evening to March 31 are unswept beyond the targets' own moves. The March 4 to 11 AFC rails had no independent second pass; San Francisco, St. Louis, Tampa Bay and Washington were not swept for that window, and twelve clubs were not individually swept for March 1 to 3 (each club page's coverage note).
+- The rails from March 11 evening to March 31 are unswept beyond the targets' own moves and the branch trades. The March 4 to 11 AFC rails had no independent second pass; San Francisco, St. Louis, Tampa Bay and Washington were not swept for that window, and twelve clubs were not individually swept for March 1 to 3 (each club page's coverage note).
 - The credited seasons behind the exclusive-rights tenders and Cain's minimum are unverified.
 - Retirement checks: Rackley, Owens and Rutland have no dated public retirement found (`career/2014/offseason/league_rails/retirements.md`). Any real retirement by a Jacksonville player on or before the master date must still be checked.
 

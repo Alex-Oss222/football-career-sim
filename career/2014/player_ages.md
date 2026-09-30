@@ -816,10 +816,8 @@ Jacksonville includes every controlled player, including the practice squad. Oth
 | Maurice Jones-Drew | RB | 1985-03-23 | 29 | Offseason roster (re-signed March 28, 2014) |
 | Richard Murphy | RB | 1986-09-18 | 27 | Offseason roster (reserve/future contract effective March 11) |
 | Montell Owens | FB | 1984-05-04 | 29 | Offseason roster |
-| Justin Blackmon | WR | 1990-01-09 | 24 | Offseason roster |
 | Mike Brown | WR | 1989-02-09 | 25 | Offseason roster (ERFA tender, unsigned) |
 | Toney Clemons | WR | 1988-10-11 | 25 | Offseason roster (ERFA tender, unsigned) |
-| Cecil Shorts | WR | 1987-12-22 | 26 | Offseason roster |
 | Adam Thielen | WR | 1990-08-22 | 23 | Offseason roster |
 | Jerrell Jackson | WR | 1990-02-06 | 24 | Offseason roster (reserve/future contract effective March 11) |
 | Hakeem Nicks | WR | 1988-01-14 | 26 | Offseason roster (signed March 14, 2014) |

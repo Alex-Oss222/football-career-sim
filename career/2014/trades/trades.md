@@ -1,6 +1,6 @@
 # Jacksonville 2014 completed trades
 
-Completed and processed 2014 trades only: the Arizona trade for No. 38 (March 20) and the Babin and Alualu trades (March 24). The Allen trade with Arizona is agreed in principle, not completed, and is tracked in [trade targets](trade_targets.md). The dated negotiations are in the [offer log](trade_offers.md).
+Completed and processed 2014 trades only: the Arizona trade for No. 38 (March 20), the Babin and Alualu trades (March 24) and the Shorts and Blackmon trade with Indianapolis (March 31). The Allen trade with Arizona is agreed in principle, not completed, and is tracked in [trade targets](trade_targets.md). The dated negotiations are in the [offer log](trade_offers.md).
 
 Earlier deals and corrections stay in [the 2013 trade history](../../2013/trades/trades.md). Current pick ownership is in [the draft ownership register](../draft/pick_ownership.json); assets already held are not re-acquired here. Detroit's original fifth is Jacksonville's from the Mike Thomas trade, and Kansas City's second is San Francisco's from the Alex Smith trade.
 
@@ -42,6 +42,18 @@ Earlier deals and corrections stay in [the 2013 trade history](../../2013/trades
 - Accounting (Jacksonville): his $4,264,000 2014 charge is removed. The final $1,542,500 original bonus allocation stays with Jacksonville as 2014 dead money. His contract ended after 2014, so no later year changes.
 
 The Babin and Alualu trades are recorded together in the [2014 ledger](../ledger.md).
+
+## Jacksonville / Indianapolis: Shorts and Blackmon (March 31, 2014)
+
+| Club | Receives |
+|---|---|
+| Jacksonville | Indianapolis's own 2014 third-round pick, No. 82 (round 3, slot 18), and sixth-round pick, No. 194 (round 6, slot 15) |
+| Indianapolis | WR Cecil Shorts; WR Justin Blackmon |
+
+- Negotiation: Stone asked for draft picks, ideally one in rounds 2 to 4, with Jacksonville taking the dead money. Seattle declined No. 36 for both; Carolina offered No. 119 for Shorts alone; the Colts refused No. 51, offered No. 82 for Shorts and added No. 194 to take Blackmon. Caldwell accepted ([trade record](shorts_blackmon_to_indianapolis_2014-03-31.md)).
+- Closing: both players passed the Colts' physicals on March 31 with no communicated restriction. Processed March 31. Both picks are clean ordinary picks with no condition.
+- Accounting (Jacksonville): Shorts's $1,541,845 2014 charge is removed and his final $110,845 bonus allocation stays as 2014 dead money. Blackmon's $5,048,728 2014 charge is removed; his remaining bonus allocation ($2,975,818 for 2014 and $2,975,818 for 2015, $5,951,636 in all) accelerates into 2014 dead money (pre-June 1 trade), and his 2015 charge leaves. Indianapolis takes both contracts from March 31.
+- Picks: Nos. 82 and 194 are Jacksonville's ([ownership register](../draft/pick_ownership.json), [draft order](../draft/draft_order.md)). Jacksonville now holds 11 picks in 2014.
 
 ## Recording a completed trade
 

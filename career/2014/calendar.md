@@ -10,8 +10,8 @@ Scope: the full operating calendar through the 2014 season and its February 2015
 
 ## Current checkpoint
 
-- Master date: March 31, 2014. The latest closed events are the March 28 re-signings of Jones-Drew and C.J. Wilson and the March 28 filing of the offseason-program schedule.
-- Jacksonville: 55 controlled players, 51 signed and four unsigned tenders; practice squad 0. The [2014 roster](roster.md) owns current control. The 2013 record remains archived: 10-6 regular season, 1-1 postseason.
+- Master date: March 31, 2014. The latest closed event is the March 31 trade of Shorts and Blackmon to Indianapolis for Nos. 82 and 194, after the March 28 re-signings of Jones-Drew and C.J. Wilson and the March 28 filing of the offseason-program schedule.
+- Jacksonville: 53 controlled players, 49 signed and four unsigned tenders; practice squad 0. The [2014 roster](roster.md) owns current control. The 2013 record remains archived: 10-6 regular season, 1-1 postseason.
 - Planning: the five phase plans retain the 2013 methods. The [training and individual-film workflow](offseason/README.md), including the living assessment of Cousins and every player, is authorized; other marked choices remain pending. No phase has run.
 - Next dated items: the April 3 league release of offseason dates, Posluszny's April 5 medical review checkpoint, the proposed April 11 staff review, and April 21, when Phase One starts and the Allen trade must close or expire.
 
@@ -59,6 +59,7 @@ Scope: the full operating calendar through the 2014 season and its February 2015
 | Mar. 24 (internal) | Stone's offseason-program schedule choice, recommended in the [phase-plan decisions](offseason/phase_plan_decisions.md) | Selected: the historical dates |
 | Mar. 28 | Jones-Drew and C.J. Wilson real signing dates (Oakland) | Complete: both re-signed with Jacksonville; Oakland's real deals do not apply ([negotiation record](offseason/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md)) |
 | By the agreed league date, no later than Mar. 31 for an Apr. 21 start | Submit the selected offseason-program schedule to the NFL/NFLPA; preserve the receipt and give advance notice of later changes | Complete: Caldwell's office submitted the selected schedule on March 28, before the limit. The branch filing record is the receipt; no league confirmation text is invented. Filing limit from 2011 CBA Article 21 section 2(c) ([verification](../../library/2014_offseason_phase_rules_verification.md)) |
+| Mar. 31 | Shorts and Blackmon trade | Complete: both to Indianapolis for the Colts' 2014 third, No. 82, and sixth, No. 194; Jacksonville now holds 11 picks ([completed trades](trades/trades.md)) |
 | By Mar. 31, staff preparation checkpoint | Reconcile retained/signed players, departed-player archival obligations, newcomer onboarding, shared-job questions and film assets | Not recorded as completed; carried to the Apr. 11 staff review. [Workflow](offseason/training/weekly_workflow.md); no compulsory player contact |
 
 Individual contract options and guarantees follow their documented terms, not a blanket date in this table. Continue research of any newly targeted free agent before a transaction. The nine verified targets do not certify the entire free-agent pool.
