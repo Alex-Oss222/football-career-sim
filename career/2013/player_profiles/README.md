@@ -13,6 +13,13 @@ players retain Unassessed grades where a trait has not yet received the required
 branch-evidence plus historical-peer review; the system deliberately does not
 invent numbers to fill the card.
 
+The common evidence cutoff is January 14, 2014, after both days of the
+[exit interviews](../exit_interviews/README.md). Ages use that date. Identities
+and branch source paths are preserved in the [frozen exit index](../../2014/offseason/player_development/2013_exit_player_index.json),
+so later living-profile edits cannot enter a regenerated 2013 sheet.
+Repository validation checks every position's grade and benchmark rows,
+player membership and the prohibition on final sheets before season close.
+
 - [Chad Henne (QB)](chad_henne.md)
 - [Kirk Cousins (QB)](kirk_cousins.md)
 - [John Parker Wilson (QB)](john_parker_wilson.md)

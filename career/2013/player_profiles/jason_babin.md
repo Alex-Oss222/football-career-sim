@@ -2,8 +2,8 @@
 
 **Team:** Jacksonville Jaguars  
 **Season:** 2013  
-**Season-close checkpoint:** 2013 season complete; January 13, 2014 exit-review close  
-**Age during season:** 33  
+**Season-close checkpoint:** 2013 season complete; January 14, 2014 exit-review close  
+**Age at exit-review close:** 33  
 **Position:** DE  
 **NFL standing:** Unassessed  
 **Player identity:** Camp identified leading edge pressure. The season requires separating called containment from chances to finish; raw sack totals cannot provide that split.  
@@ -65,8 +65,8 @@ Unassessed beyond the supported identity above.
 
 ## Evidence and uncertainty
 
-- **Branch evidence used:** 2013 exit-review record and its linked season evidence.
-- **Historical benchmark method:** library/annual_player_sheet_benchmark_method.md.
+- **Branch evidence used:** [2013 exit-review record](../../../career/2013/exit_interviews/core/jason_babin.md) and its linked season evidence.
+- **Historical benchmark method:** [position benchmarks](../../../library/annual_player_sheet_benchmark_method.md).
 - **What is established:** See player identity and any filled grades.
 - **What remains uncertain:** Any position trait still marked Unassessed.
 

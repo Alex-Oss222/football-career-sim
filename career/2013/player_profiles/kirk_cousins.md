@@ -2,8 +2,8 @@
 
 **Team:** Jacksonville Jaguars  
 **Season:** 2013  
-**Season-close checkpoint:** 2013 season complete; January 13, 2014 exit-review close  
-**Age during season:** 25  
+**Season-close checkpoint:** 2013 season complete; January 14, 2014 exit-review close  
+**Age at exit-review close:** 25  
 **Position:** QB  
 **NFL standing:** Viable NFL starter; around the 2013 league-average starter band  
 **Player identity:** An organized rhythm passer with NFL-sufficient arm talent, useful pocket movement and strong command of the taught operation. His 2013 limitations were more about changed-picture processing, pressure decisions and uneven placement than an inability to make ordinary NFL throws.  
@@ -32,7 +32,7 @@
 | --- | --- | --- | --- | --- | --- |
 | Passing production | 63.3% completions, 7.1 Y/A, 84.5 rating | Completion above 61.2%; Y/A equal to 7.1; rating just below 86.0 | Well below the top qualified efficiency band; Nick Foles led at 119.2 rating | Clearly above the low qualified 66.5 rating reference | Branch regular-season statbook vs. 2013 NFL passing environment |
 | Arm strength / velocity | Adequate NFL velocity; not a defining power trait | Around to slightly below starter average | Clearly below the strongest-arm NFL QBs | Above quarterbacks whose arm materially restricts ordinary NFL throws | Pre-branch NFL scouting plus branch throw evidence |
-| Short-intermediate placement | Best when rhythm and first picture stay intact | Slightly above average supported | Below the best precision passers | Clearly above low-end placement | Branch practice/game evidence; 63.3% completion only as context |
+| Short-intermediate ball placement | Best when rhythm and first picture stay intact | Slightly above average supported | Below the best precision passers | Clearly above low-end placement | Branch practice/game evidence; 63.3% completion only as context |
 | Deep-outside placement | Uneven | Below average | Clear gap to top deep/outside throwers | Better than a non-functional deep passer | Pre-branch scouting and limited branch retest evidence |
 | Timing / anticipation | Rhythm passing is a strength | Above average | Below elite anticipation QBs | Clear advantage over late/reactive low-end play | Branch huddle/timing, two-minute and paired correction evidence |
 | Coverage / protection processing | Strong taught operation; changed-picture reliability uneven | Around average starter band | Clear gap to top processors | Above a player unable to run NFL protection/coverage rules | Branch spring, camp and full-season review |
@@ -100,8 +100,8 @@ rather than with rare arm strength or explosive running ability.
 
 ## Evidence and uncertainty
 
-- **Branch evidence used:** 2013 exit interview, linked offseason/camp records, 16 regular-season game receipts, two playoff games and the generated statbook.
-- **Historical benchmark sources:** 2013 NFL passing environment and qualified leaders; verified pre-branch NFL scouting and combine testing.
+- **Branch evidence used:** [2013 exit interview](../exit_interviews/main_core/kirk_cousins.md), its linked offseason/camp records, 16 regular-season game receipts, two playoff games and the [generated statbook](../stats/team_player_stats.md).
+- **Historical benchmark sources:** [2013 NFL environment, qualified leaders and physical testing](../../../library/annual_player_sheet_benchmark_method.md#research-sources); testing dates differ and do not measure 2013 game speed.
 - **What is established:** NFL-sufficient arm, functional pocket movement, strong taught operation and a credible starter-level 2013 season.
 - **What remains uncertain:** Exact causes of several interceptions and sacks, and how much of the pressure inconsistency belongs to QB decision, protection, receiver or caller.
 

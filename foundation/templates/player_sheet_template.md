@@ -3,7 +3,7 @@
 **Team:**  
 **Season:**  
 **Season-close checkpoint:**  
-**Age during season:**  
+**Age at exit-review close:**  
 **Position:**  
 **NFL standing:**  
 **Player identity:**  

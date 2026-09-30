@@ -2,8 +2,8 @@
 
 **Team:** Jacksonville Jaguars  
 **Season:** 2013  
-**Season-close checkpoint:** 2013 season complete; January 13, 2014 exit-review close  
-**Age during season:** 23  
+**Season-close checkpoint:** 2013 season complete; January 14, 2014 exit-review close  
+**Age at exit-review close:** 23  
 **Position:** G  
 **NFL standing:** Unassessed  
 **Player identity:** Identification and interior communication have supporting camp evidence; isolated recovery after losing leverage was less settled. Missing weeks caused by the injury-record problem are not an effort or learning finding.  
@@ -65,8 +65,8 @@ Unassessed beyond the supported identity above.
 
 ## Evidence and uncertainty
 
-- **Branch evidence used:** 2013 exit-review record and its linked season evidence.
-- **Historical benchmark method:** library/annual_player_sheet_benchmark_method.md.
+- **Branch evidence used:** [2013 exit-review record](../../../career/2013/exit_interviews/core/austin_pasztor.md) and its linked season evidence.
+- **Historical benchmark method:** [position benchmarks](../../../library/annual_player_sheet_benchmark_method.md).
 - **What is established:** See player identity and any filled grades.
 - **What remains uncertain:** Any position trait still marked Unassessed.
 

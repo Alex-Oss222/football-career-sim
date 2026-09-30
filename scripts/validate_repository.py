@@ -134,6 +134,12 @@ def validate(root=ROOT):
         require((root/path).is_file(), f'Missing required file: {path}')
 
     try:
+        from scripts.build_annual_player_sheets import repository_profile_errors
+        errors.extend(repository_profile_errors(root))
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append('Invalid annual Player Sheets: ' + str(exc))
+
+    try:
         from scripts.season_handoff import check as check_handoff
         handoff = root / 'career' / str(mapping['active_season']) / 'closeouts/season_handoff.json'
         if handoff.exists():

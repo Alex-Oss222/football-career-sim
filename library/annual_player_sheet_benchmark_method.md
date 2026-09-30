@@ -24,6 +24,19 @@ current-season football evidence and state the limitation.
 passer. The strongest guard need not be the best space blocker. The fastest
 corner need not have the best route recognition.
 
+For each researched benchmark, record the season, source, peer population,
+opportunity threshold and aggregation method. Distinguish an all-league,
+opportunity-weighted production baseline from the mean of qualified starters.
+If a film trait has no defensible historical peer reference, leave the
+comparison Unassessed rather than treating a generic description as a measured
+league rank. DB is an unresolved defensive-back label; the current sheet uses
+the CB trait set provisionally and establishes no corner or safety assignment.
+
+The frozen 2013 exit index preserves the completed-season identity synthesis
+and its branch evidence path. Later edits to living offseason profiles must
+not change that synthesis. The common evidence cutoff is January 14, 2014,
+after both days of exit interviews; ages are measured on that date.
+
 ## Grade scale
 
 | Grade | End-of-season personnel meaning |
@@ -68,7 +81,9 @@ Unassessed.
 The real 2013 NFL passing environment averaged 61.2 percent completions,
 7.1 yards per attempt and an 86.0 passer rating. Nick Foles was the qualified
 passer-rating leader at 119.2; Geno Smith was the low qualified reference at
-66.5. Those are passing-production benchmarks, not automatic grades for arm
+66.5. The league averages are aggregate passing-production context, not a
+qualified-starter mean. Qualified rating leaders require 14 attempts per
+scheduled team game (224 in a 16-game season). Those are passing-production benchmarks, not automatic grades for arm
 strength, ball placement or processing.
 
 Kirk Cousins' verified 2012 combine 40 was 4.93, and contemporaneous NFL.com
@@ -77,9 +92,14 @@ ran an official 4.59 at the 2013 combine, while NFL.com's combine archive lists
 Tom Brady at 5.28. That means a straight-line-speed comparison can place Cousins
 behind a mobile reference and ahead of a slower pocket passer without saying
 anything about which quarterback is better overall.
+These are illustrative physical references, not a measured 2013 position-wide
+speed distribution or proof that Smith/Brady are its absolute fastest/slowest.
+Testing from different years cannot establish current-season game speed.
 
 ## Research sources
 
+- https://www.nfl.com/stats/player-stats/category/passing/2013/reg/all/passingpasserrating/desc
+- https://www.nfl.com/players/kirk-cousins/stats/career (2013 row only)
 - https://www.pro-football-reference.com/years/2013/passing.htm
 - https://www.pro-football-reference.com/years/NFL/passing.htm
 - https://www.pro-football-reference.com/years/2013/leaders.htm

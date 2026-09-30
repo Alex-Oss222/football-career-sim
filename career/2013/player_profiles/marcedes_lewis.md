@@ -2,8 +2,8 @@
 
 **Team:** Jacksonville Jaguars  
 **Season:** 2013  
-**Season-close checkpoint:** 2013 season complete; January 13, 2014 exit-review close  
-**Age during season:** 29  
+**Season-close checkpoint:** 2013 season complete; January 14, 2014 exit-review close  
+**Age at exit-review close:** 29  
 **Position:** TE  
 **NFL standing:** Unassessed  
 **Player identity:** Formation communication, dependable all-around camp operation and assignment-correct preseason routes are supported. Extensive protection assignments make low receiving totals an incomplete picture; in-line execution still needs his own review.  
@@ -65,8 +65,8 @@ Unassessed beyond the supported identity above.
 
 ## Evidence and uncertainty
 
-- **Branch evidence used:** 2013 exit-review record and its linked season evidence.
-- **Historical benchmark method:** library/annual_player_sheet_benchmark_method.md.
+- **Branch evidence used:** [2013 exit-review record](../../../career/2013/exit_interviews/main_core/marcedes_lewis.md) and its linked season evidence.
+- **Historical benchmark method:** [position benchmarks](../../../library/annual_player_sheet_benchmark_method.md).
 - **What is established:** See player identity and any filled grades.
 - **What remains uncertain:** Any position trait still marked Unassessed.
 

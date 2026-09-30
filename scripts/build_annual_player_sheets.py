@@ -12,7 +12,6 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 EXIT_INDEX = ROOT / "career/2014/offseason/player_development/2013_exit_player_index.json"
-ROSTER_PROFILES = ROOT / "career/2014/offseason/player_development/roster_profiles.md"
 BIRTH_DATES = ROOT / "library/data/player_birth_dates.json"
 
 POSITION_SHEET_TRAITS = {
@@ -41,6 +40,7 @@ class SheetPlayer:
     pos: str
     age: int | None
     identity: str
+    evidence: str
 
 def slugify(name: str) -> str:
     ascii_name=unicodedata.normalize("NFKD",name).encode("ascii","ignore").decode()
@@ -52,45 +52,37 @@ def slugify(name: str) -> str:
 def _cells(line: str) -> list[str]:
     return [cell.strip() for cell in line.strip().strip("|").split("|")]
 
-def parse_profile_syntheses() -> dict[str,str]:
-    syntheses={}
-    for line in ROSTER_PROFILES.read_text(encoding="utf-8").splitlines():
-        if not line.startswith("| **"):
-            continue
-        cells=_cells(line)
-        if len(cells)<3:
-            continue
-        match=re.search(r"\*\*(.+?) \(([^()]+)\)\*\*",cells[0])
-        if match:
-            syntheses[match.group(1)]=cells[1]
-    return syntheses
-
 def completed_years(birth_date: str,on_date: date) -> int:
     born=date.fromisoformat(birth_date)
     return on_date.year-born.year-((on_date.month,on_date.day)<(born.month,born.day))
 
-def season_is_complete(season: int) -> bool:
+def season_is_complete(season: int, root: Path = ROOT) -> bool:
     if season==2013:
         return True
-    return (ROOT/f"career/{season}/closeouts/season_closeout.md").exists()
+    return (root/f"career/{season}/closeouts/season_closeout.md").exists()
 
-def load_season_players(season: int):
-    if not season_is_complete(season):
+def load_season_players(season: int, root: Path = ROOT):
+    if not season_is_complete(season, root):
         raise ValueError(f"{season} annual Player Sheets are final-season records; the season is not closed")
     if season!=2013:
         raise ValueError(f"{season} closeout-backed annual-sheet population is not implemented yet")
-    data=json.loads(EXIT_INDEX.read_text(encoding="utf-8"))
-    births=json.loads(BIRTH_DATES.read_text(encoding="utf-8"))["players"]
-    syntheses=parse_profile_syntheses()
-    checkpoint=date(2014,1,13)
+    data=json.loads((root/EXIT_INDEX.relative_to(ROOT)).read_text(encoding="utf-8"))
+    births=json.loads((root/BIRTH_DATES.relative_to(ROOT)).read_text(encoding="utf-8"))["players"]
+    checkpoint=date.fromisoformat(data["evidence_through"])
+    if data["season"] != season or data["count"] != len(data["players"]):
+        raise ValueError("annual-sheet exit index season/count mismatch")
+    slugs=[slugify(row["player"]) for row in data["players"]]
+    if len(set(slugs)) != len(slugs):
+        raise ValueError("annual-sheet exit index has duplicate player paths")
     players=[]
     for row in data["players"]:
         name=row["player"]
         birth=births.get(name,{}).get("birth_date")
         age=completed_years(birth,checkpoint) if birth else None
-        identity=syntheses.get(name,"2013 evidence is too thin for a complete final identity; preserve uncertainty.")
-        players.append(SheetPlayer(name,row["pos"],age,identity))
-    return "2013 season complete; January 13, 2014 exit-review close",players
+        if row["pos"] not in POSITION_SHEET_TRAITS:
+            raise ValueError(f"unsupported annual-sheet position: {row['pos']}")
+        players.append(SheetPlayer(name,row["pos"],age,row["identity"],row["evidence"]))
+    return f"2013 season complete; {checkpoint.strftime('%B')} {checkpoint.day}, {checkpoint.year} exit-review close",players
 
 def render_player_sheet(player: SheetPlayer,season: int,checkpoint: str) -> str:
     traits=POSITION_SHEET_TRAITS[player.pos]
@@ -103,7 +95,7 @@ def render_player_sheet(player: SheetPlayer,season: int,checkpoint: str) -> str:
 **Team:** Jacksonville Jaguars  
 **Season:** {season}  
 **Season-close checkpoint:** {checkpoint}  
-**Age during season:** {age}  
+**Age at exit-review close:** {age}  
 **Position:** {player.pos}  
 **NFL standing:** Unassessed  
 **Player identity:** {player.identity}  
@@ -148,8 +140,8 @@ Unassessed beyond the supported identity above.
 
 ## Evidence and uncertainty
 
-- **Branch evidence used:** 2013 exit-review record and its linked season evidence.
-- **Historical benchmark method:** library/annual_player_sheet_benchmark_method.md.
+- **Branch evidence used:** [2013 exit-review record](../../../{player.evidence}) and its linked season evidence.
+- **Historical benchmark method:** [position benchmarks](../../../library/annual_player_sheet_benchmark_method.md).
 - **What is established:** See player identity and any filled grades.
 - **What remains uncertain:** Any position trait still marked Unassessed.
 
@@ -157,20 +149,55 @@ Unassessed beyond the supported identity above.
 {player.identity}
 """
 
-def target_path(season: int,player_name: str) -> Path:
-    return ROOT/f"career/{season}/player_profiles/{slugify(player_name)}.md"
+def target_path(season: int,player_name: str, root: Path = ROOT) -> Path:
+    return root/f"career/{season}/player_profiles/{slugify(player_name)}.md"
 
-def check_profiles(season: int,players: list[SheetPlayer]) -> list[str]:
+def _table_rows(text: str, section: str) -> list[list[str]]:
+    body=text.split(f"## {section}\n",1)[-1].split("\n## ",1)[0]
+    rows=[_cells(line) for line in body.splitlines() if line.startswith("|")]
+    return rows[2:]
+
+def check_profiles(season: int,players: list[SheetPlayer], root: Path = ROOT) -> list[str]:
     errors=[]
+    checkpoint,_=load_season_players(season,root)
     for player in players:
-        path=target_path(season,player.player)
+        path=target_path(season,player.player,root)
         if not path.exists():
-            errors.append(f"missing annual profile: {path.relative_to(ROOT)}")
+            errors.append(f"missing annual profile: {path.relative_to(root)}")
             continue
         text=path.read_text(encoding="utf-8")
-        for required in (f"# {player.player} — {season} NFL Player Sheet",f"**Position:** {player.pos}","## Position grades","## Historical NFL benchmark","## Same-player real-world comparison"):
+        age=str(player.age) if player.age is not None else "Unverified"
+        for required in (f"# {player.player} — {season} NFL Player Sheet",f"**Season:** {season}",f"**Position:** {player.pos}",f"**Season-close checkpoint:** {checkpoint}",f"**Age at exit-review close:** {age}","## Position grades","## Historical NFL benchmark","## Same-player real-world comparison"):
             if required not in text:
-                errors.append(f"{path.relative_to(ROOT)} missing required content: {required}")
+                errors.append(f"{path.relative_to(root)} missing required content: {required}")
+        traits=POSITION_SHEET_TRAITS[player.pos]
+        grades=_table_rows(text,"Position grades")
+        if [row[0] for row in grades] != ["Overall at position",*traits]:
+            errors.append(f"{path.relative_to(root)}: position grade traits differ from {player.pos}")
+        for row in grades:
+            if len(row) != 4 or not re.fullmatch(r"(?:—|(?:[1-9](?:\.0|\.5)?|10(?:\.0)?)) /10",row[1]):
+                errors.append(f"{path.relative_to(root)}: invalid position grade row")
+            elif row[1] == "— /10" and row[2:] != ["Unassessed","Unassessed"]:
+                errors.append(f"{path.relative_to(root)}: unassessed grade has assessed standing/evidence")
+        benchmarks=_table_rows(text,"Historical NFL benchmark")
+        names=[row[0] for row in benchmarks]
+        if any(names.count(trait) != 1 for trait in traits) or any(len(row) != 6 for row in benchmarks):
+            errors.append(f"{path.relative_to(root)}: missing/duplicate position benchmarks or malformed rows")
+        if not (root/player.evidence).is_file():
+            errors.append(f"{path.relative_to(root)}: missing frozen branch evidence")
+    expected={target_path(season,p.player,root) for p in players}
+    for path in (root/f"career/{season}/player_profiles").glob("*.md"):
+        if path.name != "README.md" and path not in expected:
+            errors.append(f"unexpected annual profile: {path.relative_to(root)}")
+    return errors
+
+def repository_profile_errors(root: Path = ROOT) -> list[str]:
+    _,players=load_season_players(2013,root)
+    errors=check_profiles(2013,players,root)
+    for directory in (root/"career").glob("[0-9][0-9][0-9][0-9]/player_profiles"):
+        season=int(directory.parent.name)
+        if not season_is_complete(season,root) and any(p.name != "README.md" for p in directory.glob("*.md")):
+            errors.append(f"{season} annual Player Sheets exist before season close")
     return errors
 
 def main() -> int:
