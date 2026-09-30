@@ -57,9 +57,9 @@ def _scripted(script):
     kernel's own."""
     queue = list(script)
 
-    def draw(rng, spot, half, window, diff, edge, diagnostics, timeouts=None):
+    def draw(rng, spot, half, window, diff, edge, diagnostics, timeouts=None, extra=None):
         if half != "OT" or not queue:
-            return REAL_DRAW(rng, spot, half, window, diff, edge, diagnostics, timeouts)
+            return REAL_DRAW(rng, spot, half, window, diff, edge, diagnostics, timeouts, extra)
         category = queue.pop(0)
         if category == "clock":
             # Kernel 2014.4: a clock drive runs out the period only when it is

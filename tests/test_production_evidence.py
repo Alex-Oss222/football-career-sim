@@ -53,9 +53,12 @@ class TierRuleTests(unittest.TestCase):
 
     def test_two_point_tries_and_tfl_source_are_declared_amendments(self):
         amendments = build.PREREGISTERED["amendments"]
-        self.assertEqual(len(amendments), 2)
+        self.assertEqual(len(amendments), 3)
         self.assertIn("two-point", amendments[1]["what"])
         self.assertIn("tackle_for_loss", amendments[0]["what"])
+        # Phase 2: the returners block, declared after the second-pass
+        # calibration was accepted and before any phase-2 fit.
+        self.assertIn("returners", amendments[2]["what"])
 
 
 class CommittedFileTests(unittest.TestCase):

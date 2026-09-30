@@ -184,10 +184,14 @@ class CoverageTests(unittest.TestCase):
             self.assertEqual(len(c["with_evidence"]) + len(c["fallbacks"]), c["roster_players"], team)
             self.assertTrue(all(f["reason"] for f in c["fallbacks"]))
         # Roster level (identity, not a depth chart), 2011-2012 honours and
-        # 2011-2012 production with the discounted 2010 fallback.
+        # 2011-2012 production with the discounted 2010 fallback; phase 2
+        # adds the offensive-line job rows and the returner rows.
         self.assertEqual(report["summary"]["with_honours"], 135)
-        self.assertEqual(report["summary"]["with_evidence"], 948)
-        self.assertEqual(report["summary"]["fallbacks"], 1056)
+        self.assertEqual(report["summary"]["with_production"], 918)
+        self.assertEqual(report["summary"]["with_job_evidence"], 221)
+        self.assertEqual(report["summary"]["with_return_evidence"], 80)
+        self.assertEqual(report["summary"]["with_evidence"], 1171)
+        self.assertEqual(report["summary"]["fallbacks"], 833)
         self.assertEqual(report["summary"]["with_evidence"] + report["summary"]["fallbacks"], 2004)
 
     def test_jacksonville_by_the_same_rule(self):
