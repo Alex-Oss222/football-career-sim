@@ -1,11 +1,24 @@
-# 2013 annual player profiles
+# 2013 final NFL player profiles
 
-**Checkpoint:** January 13, 2014 season-close / exit-review baseline  
+**Season:** 2013  
+**Status:** completed-season archive  
 **Players:** 61
 
-These sheets freeze the supported 2013 player identity that carries into later
-seasons. Numeric grades and NFL standing remain unassessed unless the evidence
-has been deliberately translated into the annual-sheet scale.
+These are frozen evaluations of who each player was in the 2013 branch. They
+are not 2014 entry projections or offseason development plans.
+
+Every sheet uses position-specific traits and the same historical benchmark
+method. Kirk Cousins is the first fully researched and benchmarked sheet. Other
+players retain Unassessed grades where a trait has not yet received the required
+branch-evidence plus historical-peer review; the system deliberately does not
+invent numbers to fill the card.
+
+The common evidence cutoff is January 14, 2014, after both days of the
+[exit interviews](../exit_interviews/README.md). Ages use that date. Identities
+and branch source paths are preserved in the [frozen exit index](../../2014/offseason/player_development/2013_exit_player_index.json),
+so later living-profile edits cannot enter a regenerated 2013 sheet.
+Repository validation checks every position's grade and benchmark rows,
+player membership and the prohibition on final sheets before season close.
 
 - [Chad Henne (QB)](chad_henne.md)
 - [Kirk Cousins (QB)](kirk_cousins.md)

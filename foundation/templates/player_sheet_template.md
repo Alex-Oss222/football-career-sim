@@ -2,106 +2,61 @@
 
 **Team:**  
 **Season:**  
-**Checkpoint:**  
-**Age:**  
+**Season-close checkpoint:**  
+**Age at exit-review close:**  
 **Position:**  
 **NFL standing:**  
 **Player identity:**  
-**Previous annual profile:**  
 
-> This is a dated personnel snapshot, not a game-engine rating card. Established
-> abilities carry forward from the prior profile unless new causal evidence
-> supports a change. A grade summarizes the staff view at this checkpoint; it
-> does not directly set play probabilities, potential, or future development.
+> This is the final evaluation of the player in this NFL season. It is not an
+> offseason plan, a next-season projection, potential, or a game-engine rating.
 
-## Player grades
+## Position grades
 
-| Category | Grade | NFL standing |
-| --- | ---: | --- |
-| Overall | — /10 | Unassessed |
-| Athleticism | — /10 | Unassessed |
-| Speed | — /10 | Unassessed |
-| Strength / Power | — /10 | Unassessed |
-| Agility / Change of direction | — /10 | Unassessed |
-| Technique | — /10 | Unassessed |
-| Football IQ | — /10 | Unassessed |
-| [Position-specific trait] | — /10 | Unassessed |
-| [Position-specific trait] | — /10 | Unassessed |
-| [Position-specific trait] | — /10 | Unassessed |
+Use only the position rows defined in
+[library/annual_player_sheet_benchmark_method.md](../../library/annual_player_sheet_benchmark_method.md).
+Do not copy one generic athleticism card across positions.
 
-### Grade meaning
+| Position trait | Grade | NFL standing | Evidence quality |
+| --- | ---: | --- | --- |
+| Overall at position | — /10 | Unassessed | Unassessed |
+| [Position-specific trait] | — /10 | Unassessed | Unassessed |
 
-Use the number as a human-facing NFL personnel summary at this exact checkpoint.
-It may use half-points. Grade the current player, not his draft status, contract,
-future career or theoretical potential. An overall grade is a synthesis, not an
-average of the rows and not an engine input.
+## Historical NFL benchmark
 
-| Grade | Personnel meaning |
-| ---: | --- |
-| 10 | Best-in-league / historically exceptional current level |
-| 9 | Elite current NFL level |
-| 8 | High-end starter / top tier at the position |
-| 7 | Solid NFL starter |
-| 6 | Viable starter or strong role player |
-| 5 | NFL-average rostered level |
-| 4 | Backup level |
-| 3 | Fringe roster level |
-| 2 | Below normal NFL roster standard |
-| 1 | Not currently at NFL roster standard |
+Compare the simulation player to the historical NFL peer pool for this same
+season. The best and low-end references are trait-specific.
 
-**NFL standing** stays a plain-language field such as Top 5, Top 10, high-end
-starter, starter, rotational/role player, backup, fringe roster, or unassessed.
-It is not mechanically derived from the overall grade.
+| Trait | Sim player | vs. NFL average | vs. top reference | vs. low-end reference | Basis |
+| --- | --- | --- | --- | --- | --- |
+| [Position-specific trait] |  |  |  |  |  |
 
-## League comparison
+Use qualified samples. Do not call a one-snap emergency player the league's
+worst player at his position.
 
-| Trait | vs. Average | vs. Best | vs. Worst |
+## Season production in context
+
+Production helps locate the player's season but does not by itself prove the
+underlying trait. Separate supporting cast, assignment, opportunity and known
+simulation-engine limits.
+
+## Same-player real-world comparison
+
+Optional, and only after the simulation evaluation is fixed.
+
+| Category | Simulation [Season] | Real-world [Season] counterpart | What it means |
 | --- | --- | --- | --- |
-| Speed | Unassessed | Unassessed | Unassessed |
-| Size / Length | Unassessed | Unassessed | Unassessed |
-| Strength | Unassessed | Unassessed | Unassessed |
-| Explosiveness | Unassessed | Unassessed | Unassessed |
-| [Position-specific trait] | Unassessed | Unassessed | Unassessed |
-| [Position-specific trait] | Unassessed | Unassessed | Unassessed |
+|  |  |  |  |
 
-## Established player state
+The real-world counterpart is a disclosed historical comparison only. It may
+not set the simulation grade, rewrite branch events, or determine future
+development.
 
-Record the abilities already demonstrated by this player. These are inherited
-state. Do not make him prove the same arm, speed, catch radius, strength,
-movement skill, technique or processing ability from zero every January.
-
-- 
-
-## Year-over-year change
-
-| Area | Prior profile | Current checkpoint | Change | Evidence / football reason |
-| --- | --- | --- | --- | --- |
-| Established identity |  |  |  |  |
-| Physical |  |  |  |  |
-| Technical |  |  |  |  |
-| Processing / Football IQ |  |  |  |  |
-| Consistency |  |  |  |  |
-| Role / system access |  |  |  |  |
-
-A bad outcome may expose access, decision-making or consistency without erasing
-the underlying tool. Example: a quarterback can retain the arm to make a tight
-window throw while being late to identify the window.
-
-## What makes him [NFL standing]
+## What made him this player in [Season]
 
 - 
 - 
 - 
-
-## Historical comparison
-
-**Level historically:**  
-**Closest player comparison:**  
-**What is similar:**  
-**What is different:**  
-
-Use only information permitted at the checkpoint. Do not import a later real
-career as an answer key.
 
 ## Play style
 
@@ -116,10 +71,10 @@ career as an answer key.
 
 ## Evidence and uncertainty
 
-- **Primary evidence:**  
+- **Branch evidence used:**  
+- **Historical benchmark sources:**  
 - **What is established:**  
 - **What remains uncertain:**  
-- **What would change the assessment:**  
 
 **One-line description:**  
-[Simple sentence describing what kind of player he is at this checkpoint.]
+[Simple sentence describing the player he was in this completed season.]

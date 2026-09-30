@@ -7,247 +7,371 @@
   "players": [
     {
       "player": "Chad Henne",
-      "pos": "QB"
+      "pos": "QB",
+      "identity": "Changed-picture protection resets and on-schedule Stick/Drive timing were retained in spring. Tempo/substitution issues recurred; a full backup season gives role experience without enough game evidence for a broader ceiling.",
+      "evidence": "career/2013/exit_interviews/main_core/chad_henne.md"
     },
     {
       "player": "Kirk Cousins",
-      "pos": "QB"
+      "pos": "QB",
+      "identity": "A full season as QB1 now sits alongside repeated huddle/cadence/protection-point and two-minute evidence. Working hypothesis: an organized rhythm passer developing wider situational command; independent answers under disruption remain uneven or unobserved.",
+      "evidence": "career/2013/exit_interviews/main_core/kirk_cousins.md"
     },
     {
       "player": "John Parker Wilson",
-      "pos": "QB"
+      "pos": "QB",
+      "identity": "Assignment-sound spring work and cleaner final preseason operation supported QB3. No regular-season play is recorded. A narrower camp menu is a limit on observation, not proof that he can only run a small offense.",
+      "evidence": "career/2013/exit_interviews/summaries_offense.md"
     },
     {
       "player": "Tyler Bray",
-      "pos": "QB"
+      "pos": "QB",
+      "identity": "Cadence and feet improved; protection was correctly communicated on a retest. Timing became late when the presentation changed. His practice-squad season has no recorded individual evidence.",
+      "evidence": "career/2013/exit_interviews/summaries_practice_squad.md"
     },
     {
       "player": "Maurice Jones-Drew",
-      "pos": "RB"
+      "pos": "RB",
+      "identity": "Track and protection communication survived changed pictures in spring/camp. His season includes varied receiving work and substantial lead-back experience; recorded fumbles locate distinct review questions, not an automatic decline diagnosis.",
+      "evidence": "career/2013/exit_interviews/main_core/maurice_jones_drew.md"
     },
     {
       "player": "C.J. Anderson",
-      "pos": "RB"
+      "pos": "RB",
+      "identity": "Track/check assignments held across spring looks; camp pickup-base correction held after teaching. The Week 15 fumble remains a cause question. Neither reserve status nor a productive run settles his full range.",
+      "evidence": "career/2013/exit_interviews/core/c_j_anderson.md"
     },
     {
       "player": "Jonathan Grimes",
-      "pos": "RB"
+      "pos": "RB",
+      "identity": "Spring/preseason route assignments and backfield work provide useful positive evidence; the season gives RB2 experience. Protection and particular run/fumble causes still need individual review.",
+      "evidence": "career/2013/exit_interviews/core/jonathan_grimes.md"
     },
     {
       "player": "Montell Owens",
-      "pos": "FB"
+      "pos": "FB",
+      "identity": "Fullback responsibilities and receiving appearances show the jobs he encountered; individual lead-block/protection execution is poorly documented. A lack of fumbles or a successful catch does not certify the whole role.",
+      "evidence": "career/2013/exit_interviews/core/montell_owens.md"
     },
     {
       "player": "Richard Murphy",
-      "pos": "RB"
+      "pos": "RB",
+      "identity": "Preseason Miami and Atlanta records describe assignment-correct route work. There is no documented practice-squad-season assessment, so an all-around back judgment would outrun the evidence.",
+      "evidence": "career/2013/exit_interviews/summaries_practice_squad.md"
     },
     {
       "player": "Will Ta'ufo'ou",
-      "pos": "FB"
+      "pos": "FB",
+      "identity": "No individual spring, preseason or practice-squad rep is recorded. The staff owes an honest evaluation; absence of a record establishes neither a physical shortfall nor a low ceiling.",
+      "evidence": "career/2013/exit_interviews/summaries_practice_squad.md"
     },
     {
       "player": "Adam Thielen",
-      "pos": "WR"
+      "pos": "WR",
+      "identity": "Alignment, assignment and cross-unit communication were supported in spring; recorded corrections were taken. His season brought movable receiver jobs, then an unexplained parked evaluation. One postseason fumble is a rep to understand.",
+      "evidence": "career/2013/exit_interviews/main_core/adam_thielen.md"
     },
     {
       "player": "Cecil Shorts",
-      "pos": "WR"
+      "pos": "WR",
+      "identity": "Landmarks, alignment and formation communication held across spring/camp. A full season as the primary receiver gives a broad shared-QB sample; target outcomes do not by themselves establish route fault.",
+      "evidence": "career/2013/exit_interviews/main_core/cecil_shorts.md"
     },
     {
       "player": "Justin Blackmon",
-      "pos": "WR"
+      "pos": "WR",
+      "identity": "Cumulative camp operation placed him in the leading pair; alignment/motion correction closure remains unrecorded. The later-season Z workload adds experience but cannot establish every route or blocking capability.",
+      "evidence": "career/2013/exit_interviews/main_core/justin_blackmon.md"
     },
     {
       "player": "Toney Clemons",
-      "pos": "WR"
+      "pos": "WR",
+      "identity": "He transferred into the WR3 job with the concept structure intact. Individual practice detail is thin; the Week 4 fumble and target outcomes need context. Old randomly allocated return credits do not assess him.",
+      "evidence": "career/2013/exit_interviews/core/toney_clemons.md"
     },
     {
       "player": "Mike Brown",
-      "pos": "WR"
+      "pos": "WR",
+      "identity": "San Diego supplies representative receiving opportunities, including Split Leak; practice assessment is thin. Week 11 inactivity followed roster composition changes and is not recorded as a finding against his play.",
+      "evidence": "career/2013/exit_interviews/summaries_offense.md"
     },
     {
       "player": "Jerrell Jackson",
-      "pos": "WR"
+      "pos": "WR",
+      "identity": "No individual 2013 rep or practice-squad evaluation is recorded. He asked for written feedback; the missing communication belongs to the staff before any conclusion about his football ability.",
+      "evidence": "career/2013/exit_interviews/summaries_practice_squad.md"
     },
     {
       "player": "Marcedes Lewis",
-      "pos": "TE"
+      "pos": "TE",
+      "identity": "Formation communication, dependable all-around camp operation and assignment-correct preseason routes are supported. Extensive protection assignments make low receiving totals an incomplete picture; in-line execution still needs his own review.",
+      "evidence": "career/2013/exit_interviews/main_core/marcedes_lewis.md"
     },
     {
       "player": "Allen Reisner",
-      "pos": "TE"
+      "pos": "TE",
+      "identity": "Camp/preseason assignment reliability and route work provide a baseline. TE3 usage leaves individual blocking and broader receiving capability underobserved, not disproven.",
+      "evidence": "career/2013/exit_interviews/core/allen_reisner.md"
     },
     {
       "player": "Travis Kelce",
-      "pos": "TE"
+      "pos": "TE",
+      "identity": "Attached/flex alignment and route movement transferred across spring, preseason and the assigned season role. Base/hand work in attached blocking required repeated teaching; assignment understanding and physical execution must stay separate.",
+      "evidence": "career/2013/exit_interviews/core/travis_kelce.md"
     },
     {
       "player": "Eugene Monroe",
-      "pos": "OT"
+      "pos": "OT",
+      "identity": "A full season of tackle responsibility supplies experience and review material. The individual record supports some correctly identified work with physical-leverage questions, not a complete grade from sacks charged by the old engine.",
+      "evidence": "career/2013/exit_interviews/main_core/eugene_monroe.md"
     },
     {
       "player": "Lane Johnson",
-      "pos": "OT"
+      "pos": "OT",
+      "identity": "Point echoes, changed-front communication and twist exchanges were retained through spring/camp. The rookie then started a full season. Physical answers to power/inside counters remain a question, distinct from understanding.",
+      "evidence": "career/2013/exit_interviews/main_core/lane_johnson.md"
     },
     {
       "player": "Austin Pasztor",
-      "pos": "G"
+      "pos": "G",
+      "identity": "Identification and interior communication have supporting camp evidence; isolated recovery after losing leverage was less settled. Missing weeks caused by the injury-record problem are not an effort or learning finding.",
+      "evidence": "career/2013/exit_interviews/core/austin_pasztor.md"
     },
     {
       "player": "Brad Meester",
-      "pos": "C"
+      "pos": "C",
+      "identity": "Communication and point/echo/confirm work provide a recorded veteran contribution. His two starts and reserve period deserve the promised review. Entry 79 retirement ends training eligibility.",
+      "evidence": "career/2013/exit_interviews/core/brad_meester.md"
     },
     {
       "player": "Cameron Bradfield",
-      "pos": "OT"
+      "pos": "OT",
+      "identity": "Correct identification with physical-leverage loss and recovery appears in preseason. Swing/six-lineman usage provides experience; it does not certify every tackle job or explain every team run result.",
+      "evidence": "career/2013/exit_interviews/core/cameron_bradfield.md"
     },
     {
       "player": "Mike Brewster",
-      "pos": "C"
+      "pos": "C",
+      "identity": "He took over the center role during the season and the recorded operation held. Individual season grades were not returned; the protection unit's outcomes cannot establish all of his physical execution.",
+      "evidence": "career/2013/exit_interviews/core/mike_brewster.md"
     },
     {
       "player": "Uche Nwaneri",
-      "pos": "G"
+      "pos": "G",
+      "identity": "Correct identification and recovery appear in preseason; shared interior exchange work improved in spring. Individual leverage and the Week 2 sack cause remain underclassified. A VERIFY retirement row does not retire him.",
+      "evidence": "career/2013/exit_interviews/core/uche_nwaneri.md"
     },
     {
       "player": "Will Rackley",
-      "pos": "G"
+      "pos": "G",
+      "identity": "Combination calls were consistent late in camp and supported the starting decision. Physical recovery/leverage was less settled. Injury-limited opportunity cannot be interpreted as toughness, effort or stalled learning.",
+      "evidence": "career/2013/exit_interviews/core/will_rackley.md"
     },
     {
       "player": "Mark Asper",
-      "pos": "G"
+      "pos": "G",
+      "identity": "The individual record is too thin to establish technique strengths or faults; charged sacks do not prove he even participated. The reserve-order change cited Pasztor's work, not an Asper failure.",
+      "evidence": "career/2013/exit_interviews/summaries_offense.md"
     },
     {
       "player": "Sen'Derrick Marks",
-      "pos": "DT"
+      "pos": "DT",
+      "identity": "Camp identified a stable interior run combination with Miller. His season contains different rush/contain purposes; sack and pressure counts cannot tell whether he followed those purposes.",
+      "evidence": "career/2013/exit_interviews/main_core/sen_derrick_marks.md"
     },
     {
       "player": "Andre Branch",
-      "pos": "DE"
+      "pos": "DE",
+      "identity": "Camp established edge/strong-side rotation experience; the player reported that paired teaching helped. Individual season rush/run execution is not yet fully classified.",
+      "evidence": "career/2013/exit_interviews/core/andre_branch.md"
     },
     {
       "player": "C.J. Wilson",
-      "pos": "DE"
+      "pos": "DE",
+      "identity": "Recorded camp edge/strong-side work provides limited baseline evidence. A prolonged absence left individual evaluation thin; historical medical gaps are not ability conclusions.",
+      "evidence": "career/2013/exit_interviews/core/c_j_wilson.md"
     },
     {
       "player": "Jason Babin",
-      "pos": "DE"
+      "pos": "DE",
+      "identity": "Camp identified leading edge pressure. The season requires separating called containment from chances to finish; raw sack totals cannot provide that split.",
+      "evidence": "career/2013/exit_interviews/core/jason_babin.md"
     },
     {
       "player": "Jeremy Mincey",
-      "pos": "DE"
+      "pos": "DE",
+      "identity": "The role history includes an edge rotation, but no sufficient individual spring/camp evaluation identifies why he ranked there. It is not a complete description of his capacity.",
+      "evidence": "career/2013/exit_interviews/core/jeremy_mincey.md"
     },
     {
       "player": "Roy Miller",
-      "pos": "DT"
+      "pos": "DT",
+      "identity": "Base-front fit was supported in camp, including the interior pairing with Marks. A run-first assignment can suppress rush opportunities; individual game evidence still needs classification.",
+      "evidence": "career/2013/exit_interviews/core/roy_miller.md"
     },
     {
       "player": "Tyson Alualu",
-      "pos": "DT"
+      "pos": "DT",
+      "identity": "Experience across front jobs is recorded, but the individual physical/technical evaluation is thin. A stronger camp pairing elsewhere does not identify his defect or settle his best job.",
+      "evidence": "career/2013/exit_interviews/core/tyson_alualu.md"
     },
     {
       "player": "Ryan Davis",
-      "pos": "DE"
+      "pos": "DE",
+      "identity": "Camp/preseason rush finishes earned rotational work. The season does not record his rush opportunity denominator, so low production cannot distinguish limited opportunity from execution.",
+      "evidence": "career/2013/exit_interviews/summaries_defense.md"
     },
     {
       "player": "Lavar Edwards",
-      "pos": "DE"
+      "pos": "DE",
+      "identity": "Rookie minicamp recorded known edge/contain assignments and an immediate rush-lane correction. Later individual evidence is thin despite dressing late in the year.",
+      "evidence": "career/2013/exit_interviews/summaries_defense.md"
     },
     {
       "player": "C.J. Mosley",
-      "pos": "DT"
+      "pos": "DT",
+      "identity": "His long early absence was prolonged by the club's record failure. Later interior rotation supplies review material, but there is no sound individual ability conclusion from counts alone.",
+      "evidence": "career/2013/exit_interviews/summaries_defense.md"
     },
     {
       "player": "Jeris Pendleton",
-      "pos": "DT"
+      "pos": "DT",
+      "identity": "Seven dressed games have no individual written evaluation; later inactivity was a game-day-list choice. Neither physical shortfall nor effort failure is established.",
+      "evidence": "career/2013/exit_interviews/summaries_defense.md"
     },
     {
       "player": "Jerome Long",
-      "pos": "DT"
+      "pos": "DT",
+      "identity": "No individual 2013 rep or practice-squad evaluation is recorded. His question about weight does not establish that weight is the problem.",
+      "evidence": "career/2013/exit_interviews/summaries_practice_squad.md"
     },
     {
       "player": "D'Anthony Smith",
-      "pos": "DT"
+      "pos": "DT",
+      "identity": "Prior NFL experience is recorded, but this staff's 2013 individual evidence is missing. A vacant roster place does not establish why he was not promoted.",
+      "evidence": "career/2013/exit_interviews/summaries_practice_squad.md"
     },
     {
       "player": "Daryl Smith",
-      "pos": "LB"
+      "pos": "LB",
+      "identity": "Dated branch records support communication when Posluszny was absent, including the reshaped late-season base. Tight-end targets and run outcomes require assignment/help review before individual judgment.",
+      "evidence": "career/2013/exit_interviews/main_core/daryl_smith.md"
     },
     {
       "player": "Paul Posluszny",
-      "pos": "LB"
+      "pos": "LB",
+      "identity": "A season of fits/calls and an explicit request to clarify shared command belong in his profile. Much in-season evidence is unit-level; the independent medical hold limits current work, not his standing as a learner.",
+      "evidence": "career/2013/exit_interviews/main_core/paul_posluszny.md"
     },
     {
       "player": "Russell Allen",
-      "pos": "LB"
+      "pos": "LB",
+      "identity": "Branch records describe ready operation beside Smith during teammate absences and retained narrow coverage/communication work. His full individual fit/coverage review remains owed.",
+      "evidence": "career/2013/exit_interviews/core/russell_allen.md"
     },
     {
       "player": "Sio Moore",
-      "pos": "LB"
+      "pos": "LB",
+      "identity": "Spring coverage correction held under changed looks, with useful movement/pursuit evidence. Camp fit overruns recurred after an earlier correction, narrowing the assigned job at that time.",
+      "evidence": "career/2013/exit_interviews/core/sio_moore.md"
     },
     {
       "player": "Julian Stanford",
-      "pos": "LB"
+      "pos": "LB",
+      "identity": "Late-season base-reserve responsibility provides meaningful exposure but no completed fit-by-fit assessment. Tackles locate involvement rather than prove the fit was right.",
+      "evidence": "career/2013/exit_interviews/summaries_defense.md"
     },
     {
       "player": "Brent Grimes",
-      "pos": "CB"
+      "pos": "CB",
+      "identity": "Camp supports sound leverage and clear exchanges. The full season raises meaningful help/target questions, but totals cannot reconstruct individual responsibility.",
+      "evidence": "career/2013/exit_interviews/main_core/brent_grimes.md"
     },
     {
       "player": "Alan Ball",
-      "pos": "CB"
+      "pos": "CB",
+      "identity": "He won and held the outside job on camp evidence; pair-level coverage reads and teams portability add context. No specific individual technique fault is recorded, and injury is not effort evidence.",
+      "evidence": "career/2013/exit_interviews/core/alan_ball.md"
     },
     {
       "player": "Bacarri Rambo",
-      "pos": "S"
+      "pos": "S",
+      "identity": "Basic alignment/coverage and spring correction retention are supported; controlled pursuit-angle work improved. His rookie starting experience broadens the questions, not proof of complete live tackling or help mastery.",
+      "evidence": "career/2013/exit_interviews/core/bacarri_rambo.md"
     },
     {
       "player": "Dwight Lowery",
-      "pos": "S"
+      "pos": "S",
+      "identity": "Camp identified stabilizing safety communication. His request for clear help priorities exposes a shared-rule question, not proof of a coverage defect or an elite grade from interceptions.",
+      "evidence": "career/2013/exit_interviews/core/dwight_lowery.md"
     },
     {
       "player": "Jordan Poyer",
-      "pos": "CB"
+      "pos": "CB",
+      "identity": "Communication, leverage and self-correction were retained across rookie camp, OTAs and camp, including inside/outside presentations. Nickel experience is real; recovery after lost leverage and the parked outside evaluation remain unresolved.",
+      "evidence": "career/2013/exit_interviews/core/jordan_poyer.md"
     },
     {
       "player": "Mike Harris",
-      "pos": "CB"
+      "pos": "CB",
+      "identity": "He stepped into outside work after Ball's injury. Help directives changed around him, while the record lacks an individual technique finding. That experience is useful without turning protected usage into a fixed ceiling.",
+      "evidence": "career/2013/exit_interviews/core/mike_harris.md"
     },
     {
       "player": "A.J. Bouye",
-      "pos": "CB"
+      "pos": "CB",
+      "identity": "Basic corner alignment was learned; one rookie-minicamp loss kept the assignment intact but lost physically at release. Coverage-lane work earned a teams role and he later served as outside reserve.",
+      "evidence": "career/2013/exit_interviews/summaries_defense.md"
     },
     {
       "player": "Kevin Rutland",
-      "pos": "CB"
+      "pos": "CB",
+      "identity": "The recorded outside-reserve workload began after injuries elsewhere; individual technique evidence remains thin. Return credits are unreliable, and no dated retirement has been established.",
+      "evidence": "career/2013/exit_interviews/summaries_defense.md"
     },
     {
       "player": "Chris Prosinski",
-      "pos": "S"
+      "pos": "S",
+      "identity": "Camp prepared him for safety rotation; coverage lanes held in preseason. Lowery/Rambo separated in communication, but regular-season defensive opportunity is unrecorded.",
+      "evidence": "career/2013/exit_interviews/summaries_defense.md"
     },
     {
       "player": "Brynden Trawick",
-      "pos": "S"
+      "pos": "S",
+      "identity": "Previously taught special-teams jobs operated with less rescue through spring and strong multi-unit communication in camp. Defensive transition technique remains a baseline question, not a diagnosed flaw.",
+      "evidence": "career/2013/exit_interviews/summaries_defense.md"
     },
     {
       "player": "Brandon King",
-      "pos": "DB"
+      "pos": "DB",
+      "identity": "There is no recorded individual defensive or teams evaluation from the practice-squad year. His request for a teams assessment is a real follow-up, not evidence that he lacks value there.",
+      "evidence": "career/2013/exit_interviews/summaries_practice_squad.md"
     },
     {
       "player": "Antwon Blake",
-      "pos": "S"
+      "pos": "S",
+      "identity": "Earlier NFL participation is part of his background; this staff's 2013 individual record is absent. Moving to the practice squad is not a measured regression.",
+      "evidence": "career/2013/exit_interviews/summaries_practice_squad.md"
     },
     {
       "player": "Bryan Anger",
-      "pos": "P"
+      "pos": "P",
+      "identity": "Spring/camp and early-season specialist operation were recorded as clean. Later punt outcomes lack a complete split between instruction, kick and coverage; gross average is insufficient.",
+      "evidence": "career/2013/exit_interviews/core/bryan_anger.md"
     },
     {
       "player": "Josh Scobee",
-      "pos": "K"
+      "pos": "K",
+      "identity": "Clean early specialist operation provides a baseline; the late-season miss cluster and subsequent makes are review locators, not a diagnosis of technique or mentality.",
+      "evidence": "career/2013/exit_interviews/core/josh_scobee.md"
     },
     {
       "player": "Jeremy Cain",
-      "pos": "LS"
+      "pos": "LS",
+      "identity": "Recorded spring/camp and Weeks 1–8 operation was clean. Later snaps lack their own assessment because the engine recorded no snapper credit; missing statistics are not missing contribution.",
+      "evidence": "career/2013/exit_interviews/summaries_defense.md"
     }
-  ]
+  ],
+  "evidence_through": "2014-01-14",
+  "identity_basis": "Frozen completed-2013-season syntheses copied from the exit-review baseline; never refreshed from later living profiles."
 }
