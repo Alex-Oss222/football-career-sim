@@ -143,7 +143,11 @@ As the calendar permits individual/group football teaching and walkthrough-speed
 - coverage landmarks;
 - communication;
 - rush-lane responsibility;
-- tackling approach/positioning taught without creating prohibited live-contact work.
+- tackling approach/positioning taught without creating prohibited live-contact work;
+- Nickel Even alignment and communication as the main sub-package teaching body;
+- Cover 1 leverage, help location and man ownership for corners, nickel, safeties and linebackers;
+- the existing 1 Robber / Robber-Rat family, with post-safety, underneath robber/rat and flat/force responsibilities stated before the rep;
+- Cover 3 and Quarters from related presentations so the same alignment does not announce man coverage.
 
 ### Special-teams emphasis
 
@@ -156,6 +160,8 @@ As the calendar permits individual/group football teaching and walkthrough-speed
 - substitution responsibilities.
 
 Phase Two is where the staff should find vocabulary problems before eleven-man work exposes them.
+
+For the remaining May Phase Two work, teach the man-capable emphasis without creating prohibited offense-versus-defense drills. DBs work press/off leverage, releases and help rules separately; linebackers and safeties work back/tight-end ownership, post help, robber/rat landmarks and flat/force exchanges in permitted individual/group work. Bunch, stack and motion rules are taught on the board and at permitted walkthrough speed. The objective is common language before OTAs provide lawful non-contact opposition.
 
 ## Phase close and handoff
 
