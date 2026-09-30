@@ -28,7 +28,7 @@ That means he does not personally lead every correction. He checks whether the p
 
 ## The decision register
 
-These are the complete pending policy choices carried by the five phase plans, plus the scheduling, install and staff-operation decisions needed to make them usable. Recommended deadlines below are staff planning choices unless identified as a sourced filing limit. The schedule is selected at the March 24 checkpoint; the remaining named choices are future work. The legacy policy labels appear once below so older references can still be followed; elsewhere, use the decision names.
+This register tracks the choices carried by the five phase plans, plus the scheduling, install and staff-operation decisions needed to make them usable. Recommended deadlines below are staff planning choices unless identified as a sourced filing limit. The schedule is selected at the March 24 checkpoint. Stone has also chosen to name six captains before the regular season; the remaining details are below. Other named choices retain their recorded status. The legacy policy labels appear once below so older references can still be followed; elsewhere, use the decision names.
 
 | Item | Present status | Recommended Stone decision | Timing and accountable owner |
 |---|---|---|---|
@@ -44,6 +44,7 @@ These are the complete pending policy choices carried by the five phase plans, p
 | Punt instruction (legacy P7) | Proposed | Adopt a written situational instruction and separate operation/kick/coverage assessment; retain Stone's actual punt/go/field-goal decision | Format by April 18; legal spring rehearsal and camp transfer; Westhoff/Stone |
 | Continuation and defensive intent (legacy P8) | Individual development adopted; defensive directive pending | Keep individual work through the season and adopt a short intended-stop/accepted-concession/response statement for defensive plans | Format by April 18; opponent content only when actually prepared; Crennel/Stone |
 | Consultation and return (legacy P9) | Consultation cadence proposed; legal/medical limits already binding | Adopt a council discussion at camp-block reviews and regular-season planning, plus veteran film input before division rematches | Cadence April 18; actual participants and meetings determined later; Stone/coordinators |
+| Season captains | Three offensive and three defensive places selected; player names deferred until the start of the regular season | Offense: quarterback, offensive line, skill group. Defense: defensive line, secondary, third group still open; recommend linebacker. Names and selection method deferred | Resolve after the final cutdown, before Week 1; Sept. 1–3 is the proposed calendar window; Stone |
 | Retained family events | Events retained, exact dates open | Recommend May 17 rookie dinner, June 5 team dinner and June 18 minicamp dinner, all voluntary; camp dates deferred | Include support logistics before April 21; no additional football obligation |
 
 The recommended package authorizes teaching opportunities and procedures. It does not approve a Boot Flood return, award reserve or starting jobs, clear a player, commit a transaction or simulate an event.
@@ -255,6 +256,14 @@ Choose participants from the actual eligible roster according to the issue: quar
 
 Use the existing legal meeting budget. If the conversation identifies an actionable football issue, assign a coach and a follow-up. Do not invent agreement, candor, gratitude or chemistry simply because a meeting was scheduled. The contact and return restrictions are obligations, not rules Stone can vote to waive.
 
+### Choose season captains before Week 1
+
+Stone wants six captains named as the regular season begins, with three representing each side of the ball. The offensive places are quarterback, offensive line and the skill group, including running backs, receivers and tight ends. On defense, the requested groups are the defensive line and the secondary. Recommend a linebacker for the third defensive place; Stone has not settled that group yet.
+
+The six-player plan fits the NFL captain program described in its [September 6, 2012 account](https://www.nfl.com/news/nfl-captains-c-patch-comes-with-varied-roles-responsibilities-0ap1000000058893), which permitted six players to wear the captain's patch.
+
+Bring the names to Stone after camp and the final cutdown, during the proposed September 1–3 opening-week preparation. The selection method, including whether players vote, remains open. Use what the players actually demonstrate through the offseason and camp; neither a depth-chart place nor a communication assignment automatically awards captaincy. Record the appointments when Stone makes them. The separate council-meeting proposal above remains pending.
+
 ## Room-by-room priorities and evidence
 
 The [2013 exit profiles](player_development/roster_profiles.md) and [film queue](film/player_queue.md) preserve the 61-player historical obligation inventory. Reconcile current participants against the 55-player live roster and add newcomers to those same records when actual teaching occurs. This section connects those questions to spring work. Names describe the current evidence and possible participants, subject to actual control, contracts and medicine when the phase opens.
@@ -319,11 +328,11 @@ Evidence should be specific enough to support a football decision without preten
 
 **Resolve during lawful spring work:** package-specific backup relay evidence; each player's secondary-position transfer; shared protection retention; any Boot Flood trial; the actual rookie baseline; whether a proposed added responsibility remains useful. Do not decide these outcomes before the observations exist.
 
-**Resolve before the relevant camp or game event:** exact reporting/practice dates after their gates, contact-dependent role evidence, final reserve competitions, carried game menu, opponent-specific concessions, actual punt/go choices and roster decisions. The engine's unresolved 2014 release remains a separate game blocker.
+**Resolve before the relevant camp or game event:** exact reporting/practice dates after their gates, contact-dependent role evidence, final reserve competitions, carried game menu, opponent-specific concessions, actual punt/go choices and roster decisions. Settle the remaining captain-selection details and name the six captains before Week 1. The engine's unresolved 2014 release remains a separate game blocker.
 
 ## Adoption and execution record
 
-The dates are selected. The remaining package Stone may decide comprises install scope and family-event dates, along with defensive relay succession, injured-player learning, cross-training, situational punt instruction, defensive intent statements and the player-consultation cadence. Continue the already adopted feedback, shared-identification and individual-development work. Keep Boot Flood out of competitive work pending review and Stone's specific release. Decide the proposed emergency staff appointments explicitly; the special-teams deputy still needs a named staff proposal.
+The dates are selected. Stone's captain plan reserves three offensive and three defensive places for selection before the regular season; the third defensive group, selection method and player names remain open. The remaining package Stone may decide comprises install scope and family-event dates, along with defensive relay succession, injured-player learning, cross-training, situational punt instruction, defensive intent statements and the player-consultation cadence. Continue the already adopted feedback, shared-identification and individual-development work. Keep Boot Flood out of competitive work pending review and Stone's specific release. Decide the proposed emergency staff appointments explicitly; the special-teams deputy still needs a named staff proposal.
 
 This is the recommended bundle, not a claim that Stone said it. A partial approval can identify changed items without reopening the ones already authorized. When an actual choice is made, record its date, exact scope and any deferred item in the appropriate event/decision owner, then reconcile dependent current views only for facts actually changed. Never update a phase output as completed because its plan was approved.
 

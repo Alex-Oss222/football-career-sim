@@ -802,6 +802,8 @@ Preserve the established bulk preseason workflow and mandatory material-decision
 
 The final report provides each contested role's evidence and Stone's actual decision, Caldwell's actual transactions, specialist and emergency-unit readiness, medical limits, and open teaching work. Do not manufacture a full verdict where evidence is absent. The roster and practice squad are resolved through their event records, never awarded here.
 
+Carry Stone's [season-captain choice](../phase_plan_decisions.md#choose-season-captains-before-week-1) into opening-week preparation after the final cutdown: three offensive and three defensive captains, with names chosen before Week 1. The third defensive group and selection method still need his decision. Bring forward actual camp observations to support that conversation.
+
 ## Historical camp sequence and simulation stops
 
 | Date or interval | Football purpose | Required handoff |
@@ -816,7 +818,7 @@ The final report provides each contested role's evidence and Stone's actual deci
 | August 23–26 | Consolidate three games plus camp; reduce to 75 on August 26 | Caldwell transactions, Stone roles, cap/control and medical dependencies updated together |
 | August 27–28 | Prepare and play Atlanta August 28 under the verified kickoff notice | Final useful observations and emergency operation; no last-minute install dump |
 | August 29–30 | Exit feedback and 53-player cutdown August 30 | Decisions recorded once in roster decisions and transaction owner; preserve waivers, dead money and open injuries |
-| August 31 onward | Waiver and practice-squad process under dated 2014 rules; transition to game-week routine | Legal 53/squad/reserve rosters, cap compliance, week-one depth and unresolved development carried forward |
+| August 31 onward | Waiver and practice-squad process under dated 2014 rules; transition to game-week routine | Legal 53/squad/reserve rosters, cap compliance, week-one depth and unresolved development carried forward; settle captain selection with Stone before Week 1 |
 
 A table interval does not authorize daily practices. The dated calendar and CBA determine off days, hours, contact and acclimation. Public practice announcements are planned events, not attendance or execution evidence. Run actual teaching in short dated blocks, stopping at a medical change, acquisition, important user decision or game-readiness gate. The four preseason games retain their own receipts and never contribute regular-season statistics.
 
