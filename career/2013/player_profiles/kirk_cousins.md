@@ -5,7 +5,7 @@
 **Season-close checkpoint:** 2013 season complete; January 14, 2014 exit-review close  
 **Age at exit-review close:** 25  
 **Position:** QB  
-**NFL standing:** Viable NFL starter; around the 2013 league-average starter band  
+**NFL standing:** Viable NFL starter; 2013 league-average starter level  
 **Player identity:** An organized rhythm passer with NFL-sufficient arm talent, useful pocket movement and strong command of the taught operation. His 2013 limitations were more about changed-picture processing, pressure decisions and uneven placement than an inability to make ordinary NFL throws.  
 
 > Final 2013 season evaluation. This is Kirk Cousins as he existed in the 2013 branch, not a forecast of 2014.
@@ -14,10 +14,10 @@
 
 | Position trait | Grade | NFL standing | Evidence quality |
 | --- | ---: | --- | --- |
-| Overall at position | 6.0 /10 | Viable / roughly average NFL starter | Medium |
+| Overall at position | 6.0 /10 | Viable NFL starter | Medium |
 | Arm strength / velocity | 5.5 /10 | NFL-sufficient, below top-arm tier | High |
 | Short-intermediate ball placement | 6.5 /10 | Slightly above average when on schedule | Medium |
-| Deep-outside placement | 5.0 /10 | Around roster average; inconsistent | Medium-low |
+| Deep-outside placement | 5.0 /10 | Roster-average trait; inconsistent | Medium-low |
 | Timing / anticipation | 6.5 /10 | Above-average rhythm-game trait | Medium |
 | Coverage / protection processing | 5.5 /10 | Starter-capable but uneven after the picture changes | Medium |
 | Pocket movement | 6.0 /10 | Functional starter-level pocket mobility | Medium |
@@ -31,7 +31,7 @@
 | Trait | Sim player | vs. 2013 NFL average | vs. 2013 top reference | vs. 2013 low-end reference | Basis |
 | --- | --- | --- | --- | --- | --- |
 | Passing production | 63.3% completions, 7.1 Y/A, 84.5 rating | Completion above 61.2%; Y/A equal to 7.1; rating just below 86.0 | Well below the top qualified efficiency band; Nick Foles led at 119.2 rating | Clearly above the low qualified 66.5 rating reference | Branch regular-season statbook vs. 2013 NFL passing environment |
-| Arm strength / velocity | Adequate NFL velocity; not a defining power trait | Around to slightly below starter average | Clearly below the strongest-arm NFL QBs | Above quarterbacks whose arm materially restricts ordinary NFL throws | Pre-branch NFL scouting plus branch throw evidence |
+| Arm strength / velocity | Adequate NFL velocity; not a defining power trait | Below starter average | Clearly below the strongest-arm NFL QBs | Above quarterbacks whose arm materially restricts ordinary NFL throws | Pre-branch NFL scouting plus branch throw evidence |
 | Short-intermediate ball placement | Best when rhythm and first picture stay intact | Slightly above average supported | Below the best precision passers | Clearly above low-end placement | Branch practice/game evidence; 63.3% completion only as context |
 | Deep-outside placement | Uneven | Below average | Clear gap to top deep/outside throwers | Better than a non-functional deep passer | Pre-branch scouting and limited branch retest evidence |
 | Timing / anticipation | Rhythm passing is a strength | Above average | Below elite anticipation QBs | Clear advantage over late/reactive low-end play | Branch huddle/timing, two-minute and paired correction evidence |

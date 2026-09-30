@@ -27,9 +27,11 @@ corner need not have the best route recognition.
 For each researched benchmark, record the season, source, peer population,
 opportunity threshold and aggregation method. Distinguish an all-league,
 opportunity-weighted production baseline from the mean of qualified starters.
-If a film trait has no defensible historical peer reference, leave the
-comparison Unassessed rather than treating a generic description as a measured
-league rank. DB is an unresolved defensive-back label; the current sheet uses
+If a film trait has no measured historical peer reference, the user's latest
+instruction permits an exact theoretical staff grade and a plainly identified
+judgment against NFL personnel standards. Do not present that judgment as a
+measured league rank. Statistical benchmarks still require verified sources.
+DB is an unresolved defensive-back label; the current sheet uses
 the CB trait set provisionally and establishes no corner or safety assignment.
 
 The frozen 2013 exit index preserves the completed-season identity synthesis
@@ -42,18 +44,20 @@ after both days of exit interviews; ages are measured on that date.
 | Grade | End-of-season personnel meaning |
 | ---: | --- |
 | 10 | Best-in-league / historically exceptional current trait |
-| 9 | Elite, roughly top-five level |
+| 9 | Elite NFL level |
 | 8 | High-end starter / top tier |
 | 7 | Above-average NFL starter |
-| 6 | Viable or roughly average NFL starter |
+| 6 | Viable NFL starter |
 | 5 | Average NFL rostered contributor |
 | 4 | Backup / rotational level |
 | 3 | Fringe roster level |
 | 2 | Below normal NFL roster standard |
 | 1 | Not currently NFL-caliber at that trait |
 
-Half grades are allowed. When evidence cannot support a number, write
-Unassessed.
+Half grades are allowed. At the user's explicit request, use exact theoretical
+staff judgments for thin-evidence traits. Give the number directly and label
+its judgment basis. Keep the recorded findings and unresolved questions
+separate; confidence in a judgment is not a measurement or a future forecast.
 
 ## Position-specific traits
 
@@ -97,6 +101,14 @@ speed distribution or proof that Smith/Brady are its absolute fastest/slowest.
 Testing from different years cannot establish current-season game speed.
 
 ## Research sources
+
+The remaining 2013 player reviews and their reproducible qualified production
+pools are documented in [2013 player-sheet research](2013_player_sheet_research.md).
+The 2013 cards retain the position-baseline format. From 2014 onward the user
+has restored the [overall card template](../foundation/templates/player_sheet_2014_onward_template.md),
+including Average / Best / Worst comparisons and separate cumulative
+regular-season and playoff statistics by year. That presentation change does
+not turn production comparisons into technical grades or permit future totals.
 
 - https://www.nfl.com/stats/player-stats/category/passing/2013/reg/all/passingpasserrating/desc
 - https://www.nfl.com/players/kirk-cousins/stats/career (2013 row only)
