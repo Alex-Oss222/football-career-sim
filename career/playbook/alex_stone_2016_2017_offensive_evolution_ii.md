@@ -8,14 +8,14 @@ document_type: "evolution_manual"
 effective_seasons: [2016, 2017]
 baseline: "Alex Stone Offensive Playbook, 2013 Iteration I"
 inheritance_rule: "Unless explicitly changed here, the Iteration I rule remains in force."
-primary_play_caller: "Alex Stone"
+author: "Alex Stone"
 ---
 
 # Alex Stone Offensive Playbook
 
 ## 2016-2017 Evolution II: Structure and Conflict
 
-> **Team-neutral evolution manual** | Version 2.0 | Primary play-caller: Alex Stone  
+> **Team-neutral evolution manual** | Version 2.0 | Author: Alex Stone
 > **System sentence:** Same people can change the picture. The same picture can change the answer.
 
 This document is the second canonical evolution of Stone's offense. It is an evolution manual, not a replacement for the 2013 Iteration I book. Unless this document explicitly changes a rule, term, concept, protection, personnel relationship, or operating procedure, the Iteration I rule remains in force.

@@ -220,7 +220,7 @@ Stone said the first priorities were keeping the lines together where possible, 
 
 “And separate continuity from keeping people. If the player can't do the job, we improve it. If the player can do it and we're replacing him, I want a reason that survives the cost.”
 
-Khan had no contract proposal for Stone. Stone requested no raise, extension, additional authority or staff money. They continued under the agreement already in place: Caldwell controlled acquisitions, contracts, cap and scouting; Stone controlled his staff, football roles and offensive play-calling. The quarterback consultation requirement remained a consultation requirement. The attempted concurrence right from the hiring negotiations had never become part of the contract.
+Khan had no contract proposal for Stone. Stone requested no raise, extension, additional authority or staff money. They continued under the agreement already in place: Caldwell controlled acquisitions, contracts, cap and scouting; Stone controlled his staff, football roles and game-day decisions. The quarterback consultation requirement remained a consultation requirement. The attempted concurrence right from the hiring negotiations had never become part of the contract.
 
 Caldwell said he would put the personnel and development questions into the written follow-up. Stone asked him to include Kelce's blocking evaluation with the receiving questions, then returned to the page on which Caldwell had divided the season into two halves. Khan asked whether the February submission would include the players whose contracts still needed to be reconciled. Caldwell said it would, and began identifying which files he needed from football administration.
 
@@ -382,7 +382,7 @@ The communications staff connected the podium microphone, checked its level thro
 
 **Reporter:** Does holding the play sheet make it harder to run the whole game?
 
-**Stone:** It adds work. That's why the responsibilities around me have to be clear. Tice runs the weekday offensive process, Romeo calls the defense, and until we hire a special teams coordinator, the kicking game is mine too. I chose to keep offensive play-calling. I don't get to use having two jobs as an excuse for doing one badly.
+**Stone:** It adds work. That's why the responsibilities around me have to be clear. Tice runs the weekday offensive process, Romeo calls the defense, and until we hire a special teams coordinator, the kicking game is mine too. I'm responsible for how the whole team plays. I need to know when to get involved and when to let a coach finish his work.
 
 **Reporter:** Did ownership ask you to give it up?
 
@@ -474,7 +474,7 @@ All repository sources were read from the branch supplied by the user, `claude/p
 - The Prowl program identity and readiness standard, onboarding and development framework, [quarterback development plan](https://github.com/Alex-Oss222/football-career-sim/blob/claude/practical-feynman-sxf5fq/career/2013/offseason/quarterback_development_plan.md), staff hiring and contract records, initial roster evaluation and spring/camp outputs. The personal character dossier was not used as an answer key.
 - The active 2013 offensive and defensive playbook sections governing identity, decision hierarchy, protection and delegation. Later playbook iterations were excluded.
 - The [regular-season index](https://github.com/Alex-Oss222/football-career-sim/blob/claude/practical-feynman-sxf5fq/career/2013/regular_season/README.md), relevant weekly preparation and game reports, both Jacksonville playoff reports, roster, signing and draft records, season ledger, current state and [team](https://github.com/Alex-Oss222/football-career-sim/blob/claude/practical-feynman-sxf5fq/career/2013/stats/team_stats.md) and [player statistics](https://github.com/Alex-Oss222/football-career-sim/blob/claude/practical-feynman-sxf5fq/career/2013/stats/team_player_stats.md).
-- The complete [February 2 offseason submission](https://github.com/Alex-Oss222/football-career-sim/blob/claude/practical-feynman-sxf5fq/career/2014/offseason/stone_to_caldwell_2014_offseason_decisions.md), assessed at its own date. Its future player prices, draft availability and proposed moves were not treated as completed facts.
+- The complete [February 2 offseason submission](https://github.com/Alex-Oss222/football-career-sim/blob/claude/practical-feynman-sxf5fq/career/2014/early_offseason/stone_to_caldwell_2014_offseason_decisions.md), assessed at its own date. Its future player prices, draft availability and proposed moves were not treated as completed facts.
 
 Derived arithmetic was checked directly: first eight games 191-126 and 6-2; last eight 165-220 and 4-4; five wins and three losses within eight points; three heavy defeats totaling a minus-91 margin. The defensive rankings cited are rankings within this branch's complete regular-season tables, not historical NFL rankings. Team passing-yard fields are identified as gross in the source and were not relabeled as net passing yards.
 

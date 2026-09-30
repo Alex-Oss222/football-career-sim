@@ -88,7 +88,7 @@ All voluntary. Jacksonville's 2014 offseason program may begin no earlier than A
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/josh_scobee.json`
-- `career/2014/offseason/contract_status_register.md` lines 102, 145; `career/2013/roster.md` line 142; `state/04_Roster_and_Staff_Register.md` line 238; `career/2013/depth_chart.json` lines 16, 75; `state/05_Current_Season_State.md` section 4
+- `career/2014/finances/player_contracts/contract_status.md` lines 102, 145; `career/2013/roster.md` line 142; `state/04_Roster_and_Staff_Register.md` line 238; `career/2013/depth_chart.json` lines 16, 75; `state/05_Current_Season_State.md` section 4
 - `career/2013/offseason/initial_roster.md` line 94; `career/2013/coaching_staff.md` section 1 (phase control)
 - `career/2013/regular_season/week_09_bye/output.md` lines 29, 45
 - `career/2013/regular_season/week_01_kansas_city_at_jacksonville/output.md` lines 326, 328; `week_02_jacksonville_at_oakland/output.md` line 330; `week_03_jacksonville_at_seattle/output.md` lines 69, 71
@@ -103,4 +103,4 @@ All voluntary. Jacksonville's 2014 offseason program may begin no earlier than A
 - `runtime/defect_register.md` lines 21, 48, 49 (items 1, 18, 19)
 - `career/2013/offseason/the_prowl_program_identity.md` ("Good. Better. Best.", "The Standard Goes Upward", "Discipline Approach", "Media Voice"); `career/2013/offseason/player_onboarding_and_development_framework.md` section 2
 - `career/2013/offseason/the_prowl_player_readiness_standard.md` sections 7 and 10; `career/2014/calendar.md` line 31
-- `career/2013/ledger.md` Entry 75; `career/2014/offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)
+- `career/2013/ledger.md` Entry 75; `career/2014/early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)

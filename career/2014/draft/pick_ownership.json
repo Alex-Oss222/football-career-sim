@@ -1,13 +1,23 @@
 {
   "schema_version": 2,
-  "as_of": "2014-02-02",
+  "as_of": "2014-05-12",
   "authority": "career/2013/ledger.md#entry-81-draft-coin-flip-and-league-pick-ownership-reconciled",
   "default_ownership": "Retained original allocation after the 224-asset audit in ownership_audit.md; explicit transfers and conditional claims override it. No generic outside-club provisional holdings remain for 2014.",
   "compensatory": {
-    "status": "pending",
+    "status": "announced",
     "announcement_date": "2014-03-24",
     "qualifying_free_agency_year": 2013,
-    "round_counts": null
+    "round_counts": {
+      "3": 7,
+      "4": 7,
+      "5": 5,
+      "6": 4,
+      "7": 9
+    },
+    "awards": "compensatory/awards.json",
+    "method": "compensatory/method.json",
+    "tradeable": false,
+    "basis": "Branch method version 2 adopted in ledger Entry 100; no real award list imported"
   },
   "transfers": [
     {
@@ -36,11 +46,10 @@
       "draft_year": 2015,
       "round": 2,
       "original_club": "Jacksonville Jaguars",
-      "owner": "Washington Redskins",
-      "basis": "User-corrected Cousins trade; ledger Entry 80; unconditional, slot unknown",
-      "source": "career/2013/trades/trades.md",
-      "effective_date": "2014-02-02",
-      "date_note": "Administrative correction date; original execution timestamp was not recorded."
+      "owner": "Jacksonville Jaguars",
+      "basis": "Returned by Washington for Nos. 82 and 194, March 31, 2014; 2014 ledger Entry 105; unconditional, slot set by the 2014 season",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-03-31"
     },
     {
       "draft_year": 2014,
@@ -232,6 +241,105 @@
         "https://www.49ers.com/news/49ers-trade-parys-haralson-10975056",
         "https://www.nfl.com/news/parys-haralson-dealt-to-new-orleans-saints-from-49ers-0ap1000000234665"
       ]
+    },
+    {
+      "draft_year": 2014,
+      "round": 2,
+      "original_club": "Arizona Cardinals",
+      "owner": "Jacksonville Jaguars",
+      "basis": "Package I trade with Arizona, March 20, 2014; ledger Entry 99",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-03-20"
+    },
+    {
+      "draft_year": 2015,
+      "round": 1,
+      "original_club": "Jacksonville Jaguars",
+      "owner": "Arizona Cardinals",
+      "basis": "Package I trade with Arizona, March 20, 2014; ledger Entry 99",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-03-20"
+    },
+    {
+      "draft_year": 2015,
+      "round": 4,
+      "original_club": "Jacksonville Jaguars",
+      "owner": "Arizona Cardinals",
+      "basis": "Package I trade with Arizona, March 20, 2014; ledger Entry 99",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-03-20"
+    },
+    {
+      "draft_year": 2016,
+      "round": 5,
+      "original_club": "Jacksonville Jaguars",
+      "owner": "Arizona Cardinals",
+      "basis": "Package I trade with Arizona, March 20, 2014; ledger Entry 99",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-03-20"
+    },
+    {
+      "draft_year": 2015,
+      "round": 3,
+      "original_club": "Miami Dolphins",
+      "owner": "Jacksonville Jaguars",
+      "basis": "Package D trade, March 24, 2014; 2014 ledger Entry 102",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-03-24"
+    },
+    {
+      "draft_year": 2017,
+      "round": 7,
+      "original_club": "Jacksonville Jaguars",
+      "owner": "Miami Dolphins",
+      "basis": "Package D trade, March 24, 2014; 2014 ledger Entry 102",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-03-24"
+    },
+    {
+      "draft_year": 2015,
+      "round": 4,
+      "original_club": "Houston Texans",
+      "owner": "Jacksonville Jaguars",
+      "basis": "Package E trade, March 24, 2014; 2014 ledger Entry 102",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-03-24"
+    },
+    {
+      "draft_year": 2014,
+      "round": 3,
+      "original_club": "Indianapolis Colts",
+      "owner": "Washington Redskins",
+      "basis": "Colts picks traded to Washington, March 31, 2014; 2014 ledger Entry 105",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-03-31"
+    },
+    {
+      "draft_year": 2014,
+      "round": 6,
+      "original_club": "Indianapolis Colts",
+      "owner": "Washington Redskins",
+      "basis": "Colts picks traded to Washington, March 31, 2014; 2014 ledger Entry 105",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-03-31"
+    },
+    {
+      "draft_year": 2015,
+      "round": 4,
+      "original_club": "Arizona Cardinals",
+      "owner": "Jacksonville Jaguars",
+      "basis": "Allen trade with Arizona, closed April 7, 2014 after Posluszny's clearance and Allen's physical; 2014 ledger Entry 106; unconditional",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-04-07"
+    },
+    {
+      "draft_year": 2015,
+      "round": 7,
+      "original_club": "Seattle Seahawks",
+      "owner": "Jacksonville Jaguars",
+      "basis": "Rackley trade with Seattle, May 12, 2014; 2014 ledger Entry 110; unconditional",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-05-12"
     }
   ],
   "audited_year": 2014,
@@ -335,5 +443,103 @@
       "max_picks": 1
     }
   ],
-  "audit_scope": "2014 ordinary selections at February 2. The existing JAX 2015 second remains recorded, but other 2015 assets are not audited or certified by this register."
+  "audit_scope": "2014 ordinary selections at February 2. The existing JAX 2015 second remains recorded, but other 2015 assets are not audited or certified by this register.",
+  "selections_2014": {
+    "status": "complete",
+    "basis": "career/2014/ledger.md#entry-108-may-8-to-11-2014-the-2014-draft-and-undrafted-signings",
+    "source": "career/2014/offseason/draft/draftees.md",
+    "note": "Jacksonville selections only; other clubs selected their real players under the rails method. Overall numbers are the branch order.",
+    "picks": [
+      {
+        "overall": 13,
+        "round": 1,
+        "original_club": "Washington Redskins",
+        "date": "2014-05-08",
+        "player": "Aaron Donald",
+        "position": "DT",
+        "school": "Pittsburgh",
+        "status": "exercised"
+      },
+      {
+        "overall": 26,
+        "round": 1,
+        "original_club": "Jacksonville Jaguars",
+        "date": "2014-05-08",
+        "player": "Joel Bitonio",
+        "position": "OT",
+        "school": "Nevada",
+        "status": "exercised"
+      },
+      {
+        "overall": 38,
+        "round": 2,
+        "original_club": "Arizona Cardinals",
+        "date": "2014-05-09",
+        "player": "Davante Adams",
+        "position": "WR",
+        "school": "Fresno State",
+        "status": "exercised"
+      },
+      {
+        "overall": 90,
+        "round": 3,
+        "original_club": "Jacksonville Jaguars",
+        "date": "2014-05-09",
+        "player": "Trai Turner",
+        "position": "G",
+        "school": "LSU",
+        "status": "exercised"
+      },
+      {
+        "overall": 129,
+        "round": 4,
+        "original_club": "Jacksonville Jaguars",
+        "date": "2014-05-10",
+        "player": "Telvin Smith",
+        "position": "LB",
+        "school": "Florida State",
+        "status": "exercised"
+      },
+      {
+        "overall": 153,
+        "round": 5,
+        "original_club": "Detroit Lions",
+        "date": "2014-05-10",
+        "player": "Corey Linsley",
+        "position": "C",
+        "school": "Ohio State",
+        "status": "exercised"
+      },
+      {
+        "overall": 168,
+        "round": 5,
+        "original_club": "Jacksonville Jaguars",
+        "date": "2014-05-10",
+        "player": "Charles Leno Jr.",
+        "position": "OT",
+        "school": "Boise State",
+        "status": "exercised"
+      },
+      {
+        "overall": 205,
+        "round": 6,
+        "original_club": "Jacksonville Jaguars",
+        "date": "2014-05-10",
+        "player": "Jemea Thomas",
+        "position": "DB",
+        "school": "Georgia Tech",
+        "status": "exercised"
+      },
+      {
+        "overall": 241,
+        "round": 7,
+        "original_club": "Jacksonville Jaguars",
+        "date": "2014-05-10",
+        "player": "Malcolm Butler",
+        "position": "CB",
+        "school": "West Alabama",
+        "status": "exercised"
+      }
+    ]
+  }
 }

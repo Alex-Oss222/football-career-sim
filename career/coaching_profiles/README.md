@@ -1,49 +1,131 @@
-# Living coaching profiles
+# Coaching profiles — 2013 reference
 
-[Alex Stone](alex_stone.md) | [Assistant staff](staff_profiles.md) | [Editable profile template](profile_template.md) | [2014 training](../2014/offseason/README.md)
+[Alex Stone](alex_stone.md) | [2013 assessment record](alex_stone_2013_assessment_record.md) | [Complete coach sheet](alex_stone_coach_sheet.md) | [Assistant staff](staff_profiles.md) | [Profile template](profile_template.md)
 
-These records assess the coach working in the branch now. They carry experience, demonstrated teaching, actual choices, recurring questions and changes in understanding across seasons. They do not freeze a coach at his hiring résumé or prescribe the type of coach he must become.
+This directory is a reference layer for coaching information established by the 2013 career record.
 
-**Initial evidence cutoff: February 2, 2014.** The profiles synthesize existing records. Preparing them is not a new review meeting, practice, hire, delegation or career-clock advance. A staff member's contract and authority remain in the authoritative staff/canon records. Stone's frozen [prehire dossier](../../library/alex_stone_character_dossier_pre_hire.md) preserves what was known at hiring; his living profile records what later experience changes.
+It is not a forecast file. It does not describe what Stone, his staff, or Jacksonville will become in 2014 or later. Do not use this directory to manufacture future development, future tendencies, future staff behavior, future scheme changes, or future coaching results.
 
-## How to edit and show evolution
+## Time boundary
 
-1. Read the coach's current assessment and the primary evidence for the question at hand. Preserve working strengths as well as open corrections. The coach's role, available personnel, permitted preparation and actual responsibility matter.
-2. State the intended experiment or changed method in the phase/weekly plan. The user can edit Stone's priorities, working philosophy and questions directly. Label these as intent until something occurs. An intended change does not rewrite his biography or certify improved ability.
-3. At actual work, record the assignment, what the coach taught/decided, information available, support, player response and uncertainty in the phase/game output. Record the coach's own explanation only if it was actually supplied or resolved in that event. Do not invent retrospective motives, dialogue or headset exchanges.
-4. Revise the profile's current synthesis and append a dated change entry linking that output. Say what changed from the prior view and why, including contradictory evidence. An unchanged assessment, narrower claim or revised teaching approach is a useful update. Preserve earlier dated assessments.
-5. Update linked player/shared-job evidence when it supports a change. Close any real role, staff, medical or clock change through the normal [dependency workflow](../../docs/update_workflow.md). A profile cannot hire, fire, promote, clear a player or transfer calling authority.
+Use 2013-season evidence only.
 
-## What counts as coaching evidence
+For this directory, "2013 season" includes material filed under `career/2013/`, including that season's postseason and season-closing review records. It does not include `career/2014/` offseason work, 2014 training plans, 2014 engine decisions, later season outputs, or later playbook evolutions.
 
-| Evidence | What it can establish | What it cannot establish |
-|---|---|---|
-| Prehire public/branch record | Experience and prior responsibilities within the permitted cutoff | Permanent quality from reputation, degrees, rings or proximity to another coach |
-| Dated teaching and later independent retest | Whether a specific instruction transferred in its observed context | Whole-player mastery or sole causal credit to the most senior coach |
-| Documented plan and actual call | What was chosen, alternatives available and opportunity cost | A good or bad decision solely from the resulting score |
-| Player feedback | The player's recorded experience and a question worth checking | Automatic proof that the coach was right/wrong or an invented personality trait |
-| Changed staff process | An actual new cue, responsibility, follow-up or feedback route | Improved execution before the change has been observed |
-| Results from the equal-strength 2013 engine | Experience, stakes and locations for review | Talent, coaching tiers or a causal explanation for wins, sacks and interceptions |
+Do not write "entering 2014," "in 2014 Stone will," "next season," or equivalent forward-looking language into these profiles unless the repository has actually advanced and this README is deliberately revised.
 
-One good correction is not a universal teaching gift; a recurring failure can involve the instruction, workload, assignment, teammates or an unsupported expectation. A game situation may require a different decision from an otherwise similar practice rep. Preserve that context rather than manufacturing a career-wide score.
+Future playbook iterations are off limits. Use only the playbook iteration active for the 2013 season.
 
-## Review opportunities
+## File roles
 
-| Opportunity | Questions for the coach and linked players |
+| File | Mechanical role |
 |---|---|
-| Before offseason teaching | What did the prior season establish? Which player/assistant feedback changes the next explanation or assignment? What remains unresolved? |
-| Rookie minicamp | Does the welcome and narrow teaching assignment let a newcomer show what he can already do? Who actually supplied the useful correction? |
-| Phases One and Two | Does the explanation fit this player's current understanding? Are staff cues compatible? Keep football work inside the phase's restrictions. |
-| OTAs | Does the instruction survive a changed presentation without sideline rescue? Can the player offer a valid different answer? |
-| Mandatory minicamp | What was retained, what still needs support, and what summer instruction was actually given? |
-| Camp and preseason | Does the method transfer at lawful contact/game speed? Are reserves evaluated fairly? Does a substitution change the package correctly? |
-| Weekly work, bye and postseason | Which calls, adaptations and follow-ups were actually used? Did individual work continue when game preparation became urgent? |
-| Exit review | What kind of coach is emerging across the evidence? What changed, what contradicted the earlier view, and what remains unknown? |
+| `alex_stone.md` | Readable 2013 coaching profile. Summarizes established coaching identity, strengths, weaknesses, methods and observed tendencies from the 2013 record. |
+| `alex_stone_2013_assessment_record.md` | Dated evidence map for the 2013 season. Use it to trace claims back to specific coaching work. |
+| `alex_stone_coach_sheet.md` | Expanded reference sheet. It may contain more fields than the readable profile, but it remains bounded by the same 2013 evidence rule. |
+| `staff_profiles.md` | 2013 assistant-coach reference. Staff authority and responsibilities must match the 2013 staff records. |
+| `profile_template.md` | Structure for a coaching profile. The template does not create facts. |
 
-There is no compulsory personality arc, calendar upgrade, XP, numeric coach rating or automatic reward for a win. The same method applies to every coach, including background clubs when evidence is available. Do not import their real post-divergence career outcomes to fill gaps.
+## Source precedence
 
-## Connection to unequal team strength
+When files disagree, use the repository source that owns the fact.
 
-Under [E1](../../runtime/2014_engine_decisions.md), a coaching profile informs supported choices: what was installed, who can execute the shared rule, what help costs, what alternatives are available and how the staff responds. The profile is not a multiplier or an engine input merely because it exists. Its claims need dated, scoped evidence before a future implementation can use them. Count an observed communication improvement once in the shared assignment, not again as a coach bonus and a team chemistry bonus.
+1. `career/2013/` event outputs, ledgers, staff records, roster records and dated football records.
+2. Active 2013 playbook files for scheme content.
+3. 2013 program and development documents for established coaching methods.
+4. Historical/prehire records for background that predates the 2013 season.
+5. Coaching profiles in this directory as summaries of those sources.
 
-At this commit E1 remains unimplemented in the production input builder and resolver. These records make future coaching evidence traceable; they do not silently change a probability.
+A coaching profile never overrides the source file that owns a roster move, staff assignment, medical status, game event, playbook rule, contract fact or authority split.
+
+## Allowed profile claims
+
+A profile may state a coaching trait when the 2013 record supports it.
+
+Examples:
+
+- Stone is a strong offensive designer.
+- Stone is a very good teacher.
+- Stone uses multiple personnel groups and movable tight ends/H-backs.
+- Stone likes Power, Counter, Inside Zone, Outside Zone and two-back structures.
+- Stone sequences calls and uses formation/personnel to create defensive conflict.
+- Stone delegates defensive play-calling to the defensive coordinator.
+- Stone can be too attracted to a passing answer and can let individual-development work get crowded out.
+
+These are coaching-profile conclusions. They should be grounded in the 2013 record, but the profile does not need to reproduce an evidence audit after every sentence.
+
+## Prohibited inference
+
+Do not use:
+
+- 2014 or later events;
+- future playbook iterations;
+- real-world post-divergence outcomes;
+- hindsight from a player's later NFL career;
+- a future coaching hire or firing;
+- an unplayed game;
+- an unrun practice;
+- an unheld meeting;
+- an invented private conversation;
+- a future improvement merely because a weakness was identified;
+- a future decline merely because a weakness existed;
+- a team win or loss as automatic proof of an individual coaching trait.
+
+Do not convert an intended correction into a completed correction.
+
+Do not convert an authored playbook page into proof that the concept was installed or used.
+
+Do not convert formal head-coach authority into proof that Stone personally performed every coordinator or position-coach task.
+
+## Scheme boundary
+
+The 2013 offensive and defensive playbook iterations are the only scheme books available to this directory.
+
+The offense may be described from the active 2013 book, including its concept structure, personnel groupings, run families, pass concepts, protections, motion, formation use and situational football.
+
+The defense may be described from the active 2013 book and 2013 staff record. The defensive coordinator remains the ordinary defensive caller where the staff record says so.
+
+Do not borrow terminology, structures, tags, pressures, personnel rules or coaching ideas from later playbook iterations.
+
+## Evidence rule
+
+Use evidence for what happened.
+
+Use the profile for what the 2013 evidence says about the coach.
+
+Keep those two jobs separate.
+
+A dated event can establish that Stone called, taught, changed, delegated, corrected, retained or removed something in that event.
+
+Several events can support a broader coaching trait.
+
+One event does not automatically establish a permanent universal trait, but the profile is allowed to synthesize repeated 2013 evidence into a normal football judgment.
+
+The point of this directory is to produce a usable coach profile, not an HR competency matrix and not a probability engine.
+
+## Ratings and comparisons
+
+If a rating, tier or league comparison is used, it is a profile judgment based on the established 2013 coach, not a simulation input.
+
+Ratings do not modify game probabilities.
+
+Ratings do not award XP.
+
+Ratings do not force future development.
+
+Ratings do not guarantee future wins.
+
+A statement such as "top-10 NFL head coach" is a descriptive profile judgment for the established coach at this checkpoint. It is not a prediction of where he will rank in a later season.
+
+## Update rule
+
+Do not advance this directory into 2014 automatically.
+
+Only revise these files for one of two reasons:
+
+1. a 2013 source is corrected, added or clarified; or
+2. the repository intentionally changes the time boundary and updates this README at the same time.
+
+Until then, stop at the 2013 season record.
+
+**Dated 2014 handoffs (added September 30, 2026).** Under AGENTS.md's living-coaching-assessment rule, a material evidence handoff in 2014 appends a dated change or retained assessment to `alex_stone.md` and a row to the dated-changes table in `staff_profiles.md`, each linked to the phase output that owns the evidence. The 2013 portrait above those entries is preserved unchanged; a dated entry is the only way 2014 evidence enters this directory. The first is the May 23, 2014 Phase Two handoff (Entry 111).

@@ -32,18 +32,18 @@ class OpponentMatrixTests(unittest.TestCase):
                     if home != away:
                         self.assertIn((home, away), pairs)
 
-    def test_jacksonville_uses_branch_place_not_historical_place(self):
+    def test_jacksonville_uses_historical_calendar_despite_branch_results(self):
         jax = 'Jacksonville Jaguars'
         home = {g['away'] for g in self.games if g['home'] == jax}
         away = {g['home'] for g in self.games if g['away'] == jax}
         self.assertEqual(home, {'Tennessee Titans', 'Indianapolis Colts', 'Houston Texans',
                                'Cleveland Browns', 'Pittsburgh Steelers', 'New York Giants',
-                               'Dallas Cowboys', 'Buffalo Bills'})
+                               'Dallas Cowboys', 'Miami Dolphins'})
         self.assertEqual(away, {'Tennessee Titans', 'Indianapolis Colts', 'Houston Texans',
                                'Baltimore Ravens', 'Cincinnati Bengals', 'Philadelphia Eagles',
                                'Washington Redskins', 'San Diego Chargers'})
         self.assertEqual(self.data['division_order_2013']['AFC West'][:2],
-                         ['Kansas City Chiefs', 'San Diego Chargers'])
+                         ['Denver Broncos', 'Kansas City Chiefs'])
 
     def test_independent_rotation_spot_checks(self):
         # Primary Raiders and Panthers releases dated December 30/31, 2013.
@@ -68,8 +68,8 @@ class OpponentMatrixTests(unittest.TestCase):
         jax_same = [g for g in changed if g['component'] == 'same_place'
                     and 'Jacksonville Jaguars' in (g['home'], g['away'])]
         self.assertEqual({(g['home'], g['away']) for g in jax_same}, {
-            ('Jacksonville Jaguars', 'New York Jets'),
-            ('Kansas City Chiefs', 'Jacksonville Jaguars')})
+            ('Jacksonville Jaguars', 'Miami Dolphins'),
+            ('San Diego Chargers', 'Jacksonville Jaguars')})
 
     def test_dates_are_only_preannounced_london_anchors(self):
         self.assertEqual(self.data['status'], 'OPPONENTS_ONLY')

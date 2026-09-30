@@ -200,7 +200,7 @@ Evidence caveats: the 2013 engine charged each sack allowed to a randomly drawn 
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/lane_johnson.json` (register, contract, season and postseason game lines, no receipt injuries, no shortlists)
-- `career/2014/offseason/contract_status_register.md` line 53; `state/04_Roster_and_Staff_Register.md` line 204
+- `career/2014/finances/player_contracts/contract_status.md` line 53; `state/04_Roster_and_Staff_Register.md` line 204
 - `career/2013/offseason/draft/draftees.md` lines 12, 24; `career/2013/offseason/draft/player_draft_board.md` lines 17, 68-78
 - `library/2013_draft_class.md` lines 42, 166
 - `career/2013/offseason/rookie_minicamp/output.md` lines 40, 54; `rookie_minicamp/standouts.md` line 10

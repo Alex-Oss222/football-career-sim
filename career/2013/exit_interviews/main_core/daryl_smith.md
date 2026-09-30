@@ -212,7 +212,7 @@ Evidence caveats. The engine defect register records that 2013 individual produc
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/daryl_smith.json`
-- `career/2014/offseason/contract_status_register.md` (line 49)
+- `career/2014/finances/player_contracts/contract_status.md` (line 49)
 - `career/2014/calendar.md` (lines 18, 19, 26, 31)
 - `career/2013/roster.md` (line 115); `state/04_Roster_and_Staff_Register.md` (line 226); `state/05_Current_Season_State.md` (section 4)
 - `career/2013/offseason/initial_roster.md` (line 81); `career/2013/offseason/free_agency/player_board.md` (lines 23, 269-289); `career/2013/offseason/free_agency/signings.md` (lines 23, 147-149); `career/2013/offseason/roster_evaluation.md` (line 60)

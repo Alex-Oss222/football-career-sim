@@ -76,7 +76,7 @@ The existing 2013 career calendar explicitly authorizes historical dates, oppone
 
 ### 4.5 Historical league rails (2014 onward)
 
-The rosters of the clubs other than Jacksonville follow real history: signings, trades, releases, retirements, draft selections, undrafted signings and each season's real Week 1 depth charts. Each rail becomes usable on its real public date. Jacksonville's roster, contracts and transactions come only from branch decisions, except that real retirements apply league-wide. Free agents Jacksonville pursues are decided by a private market draw against the contract the player really signed. The draft pairs Jacksonville's selections with the real Jaguars' selections as AGENTS.md sets out. Game results, statistics, injuries, suspensions, awards, standings, the draft order and coaching changes are never rails. Controlling text: AGENTS.md, "Historical league rails"; method: `career/2014/offseason/league_rails/method.md`.
+The rosters of the clubs other than Jacksonville follow real history: signings, trades, releases, retirements, draft selections, undrafted signings and each season's real Week 1 depth charts. Each rail becomes usable on its real public date. Jacksonville's roster, contracts and transactions come only from branch decisions, except that real retirements apply league-wide. Free agents Jacksonville pursues are decided by a private market draw against the contract the player really signed. The draft pairs Jacksonville's selections with the real Jaguars' selections as AGENTS.md sets out. Game results, statistics, injuries, suspensions, awards, standings, the draft order and coaching changes are never rails. Controlling text: AGENTS.md, "Historical league rails"; method: `career/2014/league/personnel/method.md`.
 
 ## 5. Competition identity and season structure
 
@@ -86,7 +86,7 @@ Use the NFL clubs and division/conference membership in [2013 standings](../care
 
 ### 5.2 Schedule construction
 
-The sourced Jacksonville calendar controls this season's opponent/date rails, including London. For subsequent seasons, recompute any opponent inputs that depend on simulated standings. Do not import real future standings or schedule-dependent results. Conditional postseason dates are windows, not an award of qualification.
+The user-confirmed historical calendar controls every season: actual opponents, home/away, dates, byes, reporting dates and dated league changes. Fit the branch program into those dates. Historical standings may identify the published schedule pairings only; they never replace branch standings, draft order, playoff qualification, statistics or awards. Postseason dates and format are historical; participants and results come from the branch. Source dated amendments and apply them at their historical effective dates. This September 29, 2026 user clarification supersedes the former same-place opponent recomputation rule.
 
 ### 5.3 Postseason qualification and tiebreakers
 

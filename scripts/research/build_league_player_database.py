@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 from scripts.research.build_2013_week1_depth_charts import CLUBS, ROSTER_CODE, UNPLACED_CLAIMS, draft_moves
 
-REL = Path('career/2014/offseason/league_rails')
+REL = Path('career/2014/league/personnel')
 AS_OF = '2014-02-02'
 BEGIN = '<!-- BEGIN GENERATED LEAGUE DATABASE -->'
 END = '<!-- END GENERATED LEAGUE DATABASE -->'
@@ -112,7 +112,7 @@ def controlled(root):
         status_col=next((i for i,x in enumerate(header) if x.lower()=='status'),None)
         if status_col is not None:
             status=cells[status_col]
-            if status=='Active 53' or status=='Practice squad' or status.startswith('Reserve/'):
+            if status=='Active 53' or status.startswith('Offseason roster') or status=='Practice squad' or status.startswith('Reserve/'):
                 result[cells[header.index('Player')]]={'position':cells[header.index('Pos')], 'status':status}
     if not result:
         raise ValueError('No Jacksonville controlled players found')

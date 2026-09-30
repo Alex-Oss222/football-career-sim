@@ -69,7 +69,7 @@ All voluntary. Jacksonville's 2014 offseason program may begin no earlier than A
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/mike_harris.json`
-- `career/2014/offseason/contract_status_register.md` lines 15, 99; `career/2013/roster.md` line 125; `state/04_Roster_and_Staff_Register.md` line 231
+- `career/2014/finances/player_contracts/contract_status.md` lines 15, 99; `career/2013/roster.md` line 125; `state/04_Roster_and_Staff_Register.md` line 231
 - `career/2013/offseason/initial_roster.md` line 88; `career/2013/offseason/roster_evaluation.md` line 11; `career/2013/coaching_staff.md` line 400
 - `career/2013/offseason/training_camp/output.md` lines 33, 49, 77; `career/2013/preseason/game_1_miami_at_jacksonville/output.md` line 11
 - `career/2013/regular_season/week_11_arizona_at_jacksonville/output.md` lines 36, 40, 51, 74, 296, 316

@@ -9,7 +9,7 @@ document_revision: "6.0"
 status: "standalone master"
 canonical: true
 standalone: true
-primary_play_caller: "Alex Stone"
+author: "Alex Stone"
 historical_status:
   "2025": "complete season"
   "2026": "current-to-date operating system"
@@ -29,7 +29,7 @@ protection_modifiers: [CHIP]
 
 ## 2025-2026 Mature System: Multiple Stress Offense
 
-> **Team-neutral standalone master book** | Document revision 6.0 | Primary play-caller: Alex Stone
+> **Team-neutral standalone master book** | Document revision 6.0 | Author: Alex Stone
 > **System sentence:** Change the problem. Keep the answer familiar.
 
 This is the first fully consolidated mature system for Stone's offense. It stands on its own. A coach, player, or simulator should not need the 2013 book or Evolutions II through V to operate this system. The earlier books explain how Stone arrived here; this book defines what survives by 2025-26.

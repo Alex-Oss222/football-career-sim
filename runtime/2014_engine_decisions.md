@@ -1,6 +1,6 @@
 # 2014 strength, development and in-game availability
 
-[Defect register](defect_register.md) · [Player development](../career/2014/offseason/player_development/README.md)
+[Defect register](defect_register.md) · [Player development](../career/2014/team/player_development/README.md)
 
 **Decision record:** Stone approved E1 and E2 in the September 28–29, 2026 follow-up to PR #132, with the branch still at February 2, 2014. This adopts their policy, including team construction and coaching, without releasing a kernel. Kernel 2014.3 remains installed; Tier 1 remains open. No 2013 receipt, rating input or outcome is rewritten.
 
@@ -9,6 +9,7 @@
 | Piece | Present behavior | Required before claiming completion |
 |---|---|---|
 | Unequal team strength | 2014.4 candidate (not released): `runtime/strength.py` builds each club's dated honours record (`TeamInput.strength`, same rule for Jacksonville) and the kernel scores each drive's actual available lineup (runtime/README.md, kernel 2014.4 candidate). 2013 inputs keep the Average anchors | Dated individual evidence, coverage audit, lineup/shared-assignment composition, matchup integration, calibration and release |
+| Offseason player progression | Live roster-derived cohort, position-specific trait registry, causal case validation, hidden-versus-observed state contract and externally calibrated transition interface are present | Calibrated priors, private persisted latent states, player evidence coverage, matchup consumption and release validation; the new foundation does not change a game draw by itself |
 | Coaching contribution | Living [Stone](../career/coaching_profiles/alex_stone.md) and [staff](../career/coaching_profiles/staff_profiles.md) assessments now trace supported choices and open questions | Consume only scoped evidence and actual installed/selected work; model benefits and costs without an overall coach bonus |
 | Live injury substitution | `runtime/kernel.py` still draws injuries after game resolution; its pause is not a partial game and its validation still rejects multiple passers | Actual removal, eligible substitutions, immutable partial continuation, backup passing and reconciled participation/stat credits |
 
@@ -31,7 +32,7 @@ Teams need different capabilities, vulnerabilities and ways to play. A single cl
 
 Each evidence receipt needs stable player ID, source locator, source/public date, observation date, allowed branch cutoff, dimension/job, direct observation versus inference, applicable conditions, confidence and known contamination. Reject future-dated evidence before composing an input. Keep disputed and contradictory observations visible. A low-confidence Average fallback means insufficient knowledge, not verified league-average ability.
 
-Use the existing qualitative tier vocabulary and common internal conversion. Do not add a human-facing overall number, potential grade, permanent archetype or personality score. Separate what a player can physically do, what he understands, what he has executed reliably and what has not been observed. Skill can transfer only with a stated football reason.
+Use position-specific evidence and keep the private matchup conversion separate from user-facing summaries. The annual player sheet may show the user a dated /10 personnel grade and plain-language NFL standing. Those fields are descriptive snapshots only: they are not potential grades, permanent archetypes, personality scores, probability inputs or a substitute for the underlying traits. Separate what a player can physically do, what he understands, what he has executed reliably and what has not been observed. Established capabilities carry forward by default; skill changes only with a stated football reason.
 
 ### Team construction and matchup
 
@@ -46,6 +47,28 @@ Use the existing qualitative tier vocabulary and common internal conversion. Do 
 | Continuity and fit | Evidence of shared calls/exchanges and familiarity with the assigned work | Automatic chemistry for years together, popularity or a successful record |
 
 The unit is not a simple average of stars. A weak protection link matters when exposed, and help can address it while taking a receiver out of the route. A coverage shell can protect a corner while conceding something elsewhere. A powerful run front can be less suitable for a passing situation. These tradeoffs must be represented by the same available-player and assignment model on both sides.
+
+### Unit communication, execution and individual playmaking
+
+Stone's September 29, 2026 clarification applies the same two assessments, **Communication** and **Plan execution**, separately to offense and defense, while retaining the capabilities of each actual player. The install and development standard applies equally to both units. This refines E1's required behavior; it does not implement or release it.
+
+On offense, communication covers organizing the eleven, recognizing the defensive picture, sharing protection/blocking and route adjustments, using verbal and visual signals, and staying connected when the picture changes. Execution covers the assigned blocking, exchanges, timing, spacing, reads, throws, catches and ball security. Assess the actual offense rather than making quarterback command stand in for the whole group.
+
+Communication covers the defense operating together: receiving the call, recognizing the offensive presentation, identifying man or zone/match responsibilities, passing verbal and visual adjustments, and responding together as motion and routes change the picture. The helmet receiver is one participant, not the whole assessment. Plan execution covers carrying out the intended fits, leverage, coverage exchanges, pressure, pursuit and finish. A scheme mismatch, physical loss or deliberate concession is distinguishable from players misunderstanding one another.
+
+Show each badge with the existing qualitative tiers, the applicable lineup/package, supporting observations and uncertainty. It summarizes the evidence for that group, not a sum of completed communication steps or a permanent club trait. Missing evidence stays unassessed. A substitution can change the group's operation without erasing every returning player's experience. No badge is awarded in this planning update.
+
+The resolver must use each unit's relevant shared-assignment evidence alongside the offensive and defensive calls and actual matchups. Do not stack badge bonuses on top of the same player/continuity evidence or make the labels independent success rolls. Either unit can communicate correctly and still be outplayed; an individual can rescue a breakdown without making that breakdown disappear. Do not reduce the contest to comparing two overall unit badges.
+
+Preserve offensive playmaking on the same terms as defensive disruption. A blocker can win despite unfavorable numbers, a receiver can beat sound coverage, a runner can create yards beyond the blocking, and a quarterback can anticipate an opening or extend a play. Use the actual ability, available information, taught freedom and effect on teammates. Evaluate the action and its assignment consequences separately from the result: a rescued completion does not erase a protection misunderstanding, and an incompletion does not itself prove poor communication. The active offensive book's protection, adjustment and scramble rules supply the assigned work, without awarding unsupported freedom or guaranteed success.
+
+Preserve individual disruption and anticipation. A lineman can defeat his blocker early enough to spoil a sound offensive concept. A coverage player can recognize a tendency, win his matchup or make an informed departure from the expected movement. Represent his actual ability, available cues, coaching freedom, timing and the help or space he leaves behind. A correct anticipation, physical win, failed gamble and missed assignment are different events. Neither automatic punishment for improvisation nor unrestricted star immunity is acceptable. Historical reputation and future careers cannot supply a 2014 rookie's abilities or guarantee an outcome.
+
+When implementing E1, verify on both sides that a supported communication difference changes the relevant exchanges without changing individual physical technique. An offensive protection/route misunderstanding must remain distinguishable from a lost block or coverage win. A supported individual receiving, running or quarterback advantage can create a play against sound defense, just as a rush advantage can disrupt a sound offense, with communication held constant. A failed anticipation or improvisation exposes its actual assignment cost on either side. These are required checks for the future implementation, not tests claimed to pass today.
+
+Football basis: [Belichick's September 24, 2013 explanation](https://www.patriots.com/news/bill-belichick-conference-call-transcript-191316) describes rapid shared decisions against motion, splits and bunches; [LeBeau's September 20, 2012 comments](https://www.steelers.com/news/coordinator-s-corner-haley-lebeau-8328896) describe safety freedom changing with the tandem. [McCourty's January 27, 2017 explanation](https://www.patriots.com/news/devin-mccourty-press-conference-transcript-1-27-289476) supplies a later instructional account of distributed verbal and hand-signal communication. The latter is background explanation, not 2014 player evidence or a branch event. These sources support the football relationships; the badge presentation is Stone's requested simulation design.
+
+Offensive assignment basis: the active [Iteration I book](../career/playbook/alex_stone_2013_offensive_playbook_iteration_i.md), especially its Pre-Snap Five, Freedom Package, protection and Movement and Scramble Rules. These define taught responsibilities and available choices; they do not establish that a particular player has mastered them.
 
 ### Coaching without a magic multiplier
 

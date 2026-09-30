@@ -7,7 +7,7 @@ seasons:
   - 2019
   - 2020
 document_revision: "3.0"
-primary_play_caller: "Alex Stone"
+author: "Alex Stone"
 canonical: true
 inherits:
   - "2013 Iteration I"
@@ -22,7 +22,7 @@ season_stages:
 
 ## 2018-2020 Evolution III: Constraint and Sequencing
 
-> **Team-neutral evolution manual** | Document revision 3.0 | Primary play-caller: Alex Stone
+> **Team-neutral evolution manual** | Document revision 3.0 | Author: Alex Stone
 > **System sentence:** Move the defense before the snap. Attack the rule it uses to move.
 
 This document is the third canonical evolution of Stone's offense. It is an evolution manual layered onto the 2013 Iteration I playbook and the 2016-2017 Evolution II manual. Unless this document explicitly changes a rule, term, concept, protection, personnel relationship, or operating procedure, the earlier rule remains in force.

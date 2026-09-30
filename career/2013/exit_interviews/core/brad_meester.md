@@ -61,7 +61,7 @@ Voluntary. Jacksonville's 2014 offseason program (no earlier than April 21) appl
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/brad_meester.json`
-- `career/2014/offseason/contract_status_register.md` lines 34, 46; `state/04_Roster_and_Staff_Register.md` line 211; `career/2013/roster.md` line 85; `career/2013/depth_chart.json` (OL order)
+- `career/2014/finances/player_contracts/contract_status.md` lines 34, 46; `state/04_Roster_and_Staff_Register.md` line 211; `career/2013/roster.md` line 85; `career/2013/depth_chart.json` (OL order)
 - `career/2013/offseason/initial_roster.md` line 63; `offseason/free_agency/player_board.md` lines 22, 251-265; `offseason/free_agency/signings.md` lines 22, 143-145
 - `career/2013/offseason/otas/output.md` lines 36, 96, 135, 147, 164, 194; `otas/standouts.md` line 12
 - `career/2013/offseason/mandatory_minicamp/output.md` line 21; `mandatory_minicamp/standouts.md` line 12; `offseason/training_camp/output.md` line 29

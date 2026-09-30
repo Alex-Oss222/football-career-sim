@@ -1,0 +1,2540 @@
+{
+ "schema_version": 1,
+ "qualifying_free_agency_year": 2013,
+ "sources": {
+  "roster_2012": "https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_2012.csv",
+  "contracts": "https://github.com/nflverse/nflverse-data/releases/download/contracts/historical_contracts.csv.gz",
+  "branch_2013_clubs": "library/data/2013_week1_depth_charts.json",
+  "jacksonville_gains": "career/2013/offseason/free_agency/signings.md"
+ },
+ "salary_market": {
+  "basis": "APY of each player's latest source contract in force in the 2013 league year",
+  "contracts": 1477,
+  "median_apy": 805000
+ },
+ "candidates": [
+  {
+   "player": "Mike Wallace",
+   "position": "WR",
+   "old_club": "PIT",
+   "new_club": "MIA",
+   "accrued_seasons_after_2012": 4,
+   "apy": 12000000,
+   "years": 3,
+   "value": 60000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Steelers 2012, 1 years",
+   "salary_percentile": 98.04
+  },
+  {
+   "player": "Greg Jennings",
+   "position": "WR",
+   "old_club": "GB",
+   "new_club": "MIN",
+   "accrued_seasons_after_2012": 7,
+   "apy": 9000000,
+   "years": 5,
+   "value": 45000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Packers 2009, 3 years",
+   "salary_percentile": 95.73
+  },
+  {
+   "player": "Jake Long",
+   "position": "T",
+   "old_club": "MIA",
+   "new_club": "STL",
+   "accrued_seasons_after_2012": 5,
+   "apy": 8500000,
+   "years": 4,
+   "value": 34000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Dolphins 2008, 5 years",
+   "salary_percentile": 94.79
+  },
+  {
+   "player": "Dashon Goldson",
+   "position": "FS",
+   "old_club": "SF",
+   "new_club": "TB",
+   "accrued_seasons_after_2012": 6,
+   "apy": 8250000,
+   "years": 3,
+   "value": 41000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "49ers 2012, 1 years",
+   "salary_percentile": 94.04
+  },
+  {
+   "player": "Paul Kruger",
+   "position": "OLB",
+   "old_club": "BAL",
+   "new_club": "CLE",
+   "accrued_seasons_after_2012": 4,
+   "apy": 8100000,
+   "years": 5,
+   "value": 40500000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Ravens 2009, 4 years",
+   "salary_percentile": 93.7
+  },
+  {
+   "player": "Andy Levitre",
+   "position": "G",
+   "old_club": "BUF",
+   "new_club": "TEN",
+   "accrued_seasons_after_2012": 4,
+   "apy": 7800000,
+   "years": 6,
+   "value": 46800000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Bills 2009, 4 years",
+   "salary_percentile": 92.89
+  },
+  {
+   "player": "Jermon Bushrod",
+   "position": "G",
+   "old_club": "NO",
+   "new_club": "CHI",
+   "accrued_seasons_after_2012": 6,
+   "apy": 7193000,
+   "years": 5,
+   "value": 35965000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Saints 2011, 2 years",
+   "salary_percentile": 91.3
+  },
+  {
+   "player": "Jared Cook",
+   "position": "TE",
+   "old_club": "TEN",
+   "new_club": "STL",
+   "accrued_seasons_after_2012": 4,
+   "apy": 7020000,
+   "years": 5,
+   "value": 35100000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Titans 2009, 4 years",
+   "salary_percentile": 91.1
+  },
+  {
+   "player": "Dannell Ellerbe",
+   "position": "LB",
+   "old_club": "BAL",
+   "new_club": "MIA",
+   "accrued_seasons_after_2012": 4,
+   "apy": 7000000,
+   "years": 2,
+   "value": 35000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Ravens 2012, 1 years",
+   "salary_percentile": 90.52
+  },
+  {
+   "player": "Gosder Cherilus",
+   "position": "T",
+   "old_club": "DET",
+   "new_club": "IND",
+   "accrued_seasons_after_2012": 5,
+   "apy": 7000000,
+   "years": 5,
+   "value": 35000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Lions 2008, 5 years",
+   "salary_percentile": 90.52
+  },
+  {
+   "player": "Desmond Bryant",
+   "position": "DE",
+   "old_club": "OAK",
+   "new_club": "CLE",
+   "accrued_seasons_after_2012": 4,
+   "apy": 6800000,
+   "years": 5,
+   "value": 34000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Raiders 2012, 1 years",
+   "salary_percentile": 89.74
+  },
+  {
+   "player": "Cliff Avril",
+   "position": "DE",
+   "old_club": "DET",
+   "new_club": "SEA",
+   "accrued_seasons_after_2012": 5,
+   "apy": 6500000,
+   "years": 2,
+   "value": 13000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Lions 2012, 1 years",
+   "salary_percentile": 89.23
+  },
+  {
+   "player": "Connor Barwin",
+   "position": "OLB",
+   "old_club": "HOU",
+   "new_club": "PHI",
+   "accrued_seasons_after_2012": 4,
+   "apy": 6000000,
+   "years": 6,
+   "value": 36000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Texans 2009, 4 years",
+   "salary_percentile": 87.81
+  },
+  {
+   "player": "LaRon Landry",
+   "position": "FS",
+   "old_club": "NYJ",
+   "new_club": "IND",
+   "accrued_seasons_after_2012": 6,
+   "apy": 6000000,
+   "years": 4,
+   "value": 24000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Jets 2012, 1 years",
+   "salary_percentile": 87.81
+  },
+  {
+   "player": "Wes Welker",
+   "position": "WR",
+   "old_club": "NE",
+   "new_club": "DEN",
+   "accrued_seasons_after_2012": 9,
+   "apy": 6000000,
+   "years": 2,
+   "value": 12000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Patriots 2012, 1 years",
+   "salary_percentile": 87.81
+  },
+  {
+   "player": "Louis Vasquez",
+   "position": "G",
+   "old_club": "SD",
+   "new_club": "DEN",
+   "accrued_seasons_after_2012": 4,
+   "apy": 5875000,
+   "years": 4,
+   "value": 23500000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Chargers 2009, 4 years",
+   "salary_percentile": 87.37
+  },
+  {
+   "player": "Danny Amendola",
+   "position": "WR",
+   "old_club": "STL",
+   "new_club": "NE",
+   "accrued_seasons_after_2012": 5,
+   "apy": 5700000,
+   "years": 5,
+   "value": 28500000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Rams 2012, 1 years",
+   "salary_percentile": 86.93
+  },
+  {
+   "player": "Cary Williams",
+   "position": "CB",
+   "old_club": "BAL",
+   "new_club": "PHI",
+   "accrued_seasons_after_2012": 5,
+   "apy": 5666667,
+   "years": 3,
+   "value": 17000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Ravens 2012, 1 years",
+   "salary_percentile": 86.76
+  },
+  {
+   "player": "Brent Grimes",
+   "position": "CB",
+   "old_club": "ATL",
+   "new_club": "JAX",
+   "accrued_seasons_after_2012": null,
+   "apy": 5500000,
+   "years": 1,
+   "value": 5500000,
+   "basis": "Branch contract, career/2013/offseason/free_agency/signings.md",
+   "prior_contract": "Expired 2012 contract (unrestricted free agent)",
+   "salary_percentile": 85.95
+  },
+  {
+   "player": "Ricky Jean Francois",
+   "position": "DT",
+   "old_club": "SF",
+   "new_club": "IND",
+   "accrued_seasons_after_2012": 4,
+   "apy": 5500000,
+   "years": 4,
+   "value": 22000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "49ers 2009, 4 years",
+   "salary_percentile": 85.95
+  },
+  {
+   "player": "Sean Smith",
+   "position": "CB",
+   "old_club": "MIA",
+   "new_club": "KC",
+   "accrued_seasons_after_2012": 4,
+   "apy": 5500000,
+   "years": 3,
+   "value": 16500000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Dolphins 2009, 4 years",
+   "salary_percentile": 85.95
+  },
+  {
+   "player": "Keenan Lewis",
+   "position": "CB",
+   "old_club": "PIT",
+   "new_club": "NO",
+   "accrued_seasons_after_2012": 4,
+   "apy": 5100000,
+   "years": 5,
+   "value": 25500000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Steelers 2012, 1 years",
+   "salary_percentile": 84.63
+  },
+  {
+   "player": "Martellus Bennett",
+   "position": "TE",
+   "old_club": "NYG",
+   "new_club": "CHI",
+   "accrued_seasons_after_2012": 5,
+   "apy": 5100000,
+   "years": 4,
+   "value": 20400000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Giants 2012, 1 years",
+   "salary_percentile": 84.63
+  },
+  {
+   "player": "Derek Cox",
+   "position": "CB",
+   "old_club": "JAX",
+   "new_club": "SD",
+   "accrued_seasons_after_2012": 4,
+   "apy": 5000000,
+   "years": 4,
+   "value": 20000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Jaguars 2009, 4 years",
+   "salary_percentile": 84.12
+  },
+  {
+   "player": "Dominique Rodgers-Cromartie",
+   "position": "CB",
+   "old_club": "PHI",
+   "new_club": "DEN",
+   "accrued_seasons_after_2012": 5,
+   "apy": 5000000,
+   "years": 1,
+   "value": 5000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "ARI/PHI 2008, 5 years",
+   "salary_percentile": 84.12
+  },
+  {
+   "player": "Michael Bennett",
+   "position": "DE",
+   "old_club": "TB",
+   "new_club": "SEA",
+   "accrued_seasons_after_2012": 4,
+   "apy": 4800000,
+   "years": 1,
+   "value": 4800000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Buccaneers 2012, 1 years",
+   "salary_percentile": 83.34
+  },
+  {
+   "player": "Glover Quin",
+   "position": "SS",
+   "old_club": "HOU",
+   "new_club": "DET",
+   "accrued_seasons_after_2012": 4,
+   "apy": 4700000,
+   "years": 5,
+   "value": 23500000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Texans 2009, 4 years",
+   "salary_percentile": 83.01
+  },
+  {
+   "player": "Philip Wheeler",
+   "position": "LB",
+   "old_club": "OAK",
+   "new_club": "MIA",
+   "accrued_seasons_after_2012": 5,
+   "apy": 4400000,
+   "years": 5,
+   "value": 13200000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Raiders 2012, 1 years",
+   "salary_percentile": 82.02
+  },
+  {
+   "player": "Dwight Freeney",
+   "position": "OLB",
+   "old_club": "IND",
+   "new_club": "SD",
+   "accrued_seasons_after_2012": 11,
+   "apy": 4375000,
+   "years": 2,
+   "value": 8750000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Colts 2007, 6 years",
+   "salary_percentile": 81.92
+  },
+  {
+   "player": "Osi Umenyiora",
+   "position": "DE",
+   "old_club": "NYG",
+   "new_club": "ATL",
+   "accrued_seasons_after_2012": 10,
+   "apy": 4250000,
+   "years": 2,
+   "value": 8500000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Giants 2012, 1 years",
+   "salary_percentile": 81.45
+  },
+  {
+   "player": "Mike Devito",
+   "position": "DE",
+   "old_club": "NYJ",
+   "new_club": "KC",
+   "accrued_seasons_after_2012": 6,
+   "apy": 4200000,
+   "years": 3,
+   "value": 12600000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Jets 2012, 1 years",
+   "salary_percentile": 81.28
+  },
+  {
+   "player": "Anthony Fasano",
+   "position": "TE",
+   "old_club": "MIA",
+   "new_club": "KC",
+   "accrued_seasons_after_2012": 7,
+   "apy": 4000000,
+   "years": 2,
+   "value": 16000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Dolphins 2010, 2 years",
+   "salary_percentile": 80.5
+  },
+  {
+   "player": "Erik Walden",
+   "position": "OLB",
+   "old_club": "GB",
+   "new_club": "IND",
+   "accrued_seasons_after_2012": 5,
+   "apy": 4000000,
+   "years": 4,
+   "value": 16000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Packers 2012, 1 years",
+   "salary_percentile": 80.5
+  },
+  {
+   "player": "James Casey",
+   "position": "TE",
+   "old_club": "HOU",
+   "new_club": "PHI",
+   "accrued_seasons_after_2012": 4,
+   "apy": 4000000,
+   "years": 3,
+   "value": 12000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Texans 2009, 4 years",
+   "salary_percentile": 80.5
+  },
+  {
+   "player": "Reggie Bush",
+   "position": "RB",
+   "old_club": "MIA",
+   "new_club": "DET",
+   "accrued_seasons_after_2012": 7,
+   "apy": 4000000,
+   "years": 4,
+   "value": 16000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Dolphins 2011, 2 years",
+   "salary_percentile": 80.5
+  },
+  {
+   "player": "Steven Jackson",
+   "position": "RB",
+   "old_club": "STL",
+   "new_club": "ATL",
+   "accrued_seasons_after_2012": 9,
+   "apy": 4000000,
+   "years": 3,
+   "value": 12000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Rams 2008, 5 years",
+   "salary_percentile": 80.5
+  },
+  {
+   "player": "Sammie Lee Hill",
+   "position": "DT",
+   "old_club": "DET",
+   "new_club": "TEN",
+   "accrued_seasons_after_2012": 4,
+   "apy": 3800000,
+   "years": 3,
+   "value": 11400000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Lions 2012, 1 years",
+   "salary_percentile": 79.69
+  },
+  {
+   "player": "Isaac Sopoaga",
+   "position": "NT",
+   "old_club": "SF",
+   "new_club": "PHI",
+   "accrued_seasons_after_2012": 9,
+   "apy": 3666667,
+   "years": 3,
+   "value": 11000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "49ers 2008, 5 years",
+   "salary_percentile": 79.18
+  },
+  {
+   "player": "Donald Thomas",
+   "position": "G",
+   "old_club": "NE",
+   "new_club": "IND",
+   "accrued_seasons_after_2012": 5,
+   "apy": 3500000,
+   "years": 4,
+   "value": 14000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Patriots 2011, 2 years",
+   "salary_percentile": 77.76
+  },
+  {
+   "player": "Jerraud Powers",
+   "position": "CB",
+   "old_club": "IND",
+   "new_club": "ARI",
+   "accrued_seasons_after_2012": 4,
+   "apy": 3500000,
+   "years": 3,
+   "value": 10500000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Colts 2009, 4 years",
+   "salary_percentile": 77.76
+  },
+  {
+   "player": "Chase Daniel",
+   "position": "QB",
+   "old_club": "NO",
+   "new_club": "KC",
+   "accrued_seasons_after_2012": 4,
+   "apy": 3333333,
+   "years": 3,
+   "value": 10000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Saints 2012, 1 years",
+   "salary_percentile": 76.17
+  },
+  {
+   "player": "Patrick Chung",
+   "position": "FS",
+   "old_club": "NE",
+   "new_club": "PHI",
+   "accrued_seasons_after_2012": 4,
+   "apy": 3333333,
+   "years": 1,
+   "value": 10000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Patriots 2009, 4 years",
+   "salary_percentile": 76.17
+  },
+  {
+   "player": "Shonn Greene",
+   "position": "RB",
+   "old_club": "NYJ",
+   "new_club": "TEN",
+   "accrued_seasons_after_2012": 4,
+   "apy": 3333333,
+   "years": 3,
+   "value": 10000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Jets 2009, 4 years",
+   "salary_percentile": 76.17
+  },
+  {
+   "player": "Brandon Gibson",
+   "position": "WR",
+   "old_club": "STL",
+   "new_club": "MIA",
+   "accrued_seasons_after_2012": 4,
+   "apy": 3260000,
+   "years": 3,
+   "value": 9780000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "PHI/LAR 2009, 4 years",
+   "salary_percentile": 75.73
+  },
+  {
+   "player": "Nick Roach",
+   "position": "MLB",
+   "old_club": "CHI",
+   "new_club": "OAK",
+   "accrued_seasons_after_2012": 6,
+   "apy": 3250000,
+   "years": 4,
+   "value": 13000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Bears 2011, 2 years",
+   "salary_percentile": 75.46
+  },
+  {
+   "player": "Jason Jones",
+   "position": "DE",
+   "old_club": "SEA",
+   "new_club": "DET",
+   "accrued_seasons_after_2012": 5,
+   "apy": 3166667,
+   "years": 3,
+   "value": 9500000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Seahawks 2012, 1 years",
+   "salary_percentile": 74.44
+  },
+  {
+   "player": "Alan Branch",
+   "position": "DT",
+   "old_club": "SEA",
+   "new_club": "BUF",
+   "accrued_seasons_after_2012": 6,
+   "apy": 3100000,
+   "years": 3,
+   "value": 9300000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Seahawks 2011, 2 years",
+   "salary_percentile": 73.87
+  },
+  {
+   "player": "Glenn Dorsey",
+   "position": "NT",
+   "old_club": "KC",
+   "new_club": "SF",
+   "accrued_seasons_after_2012": 5,
+   "apy": 3000000,
+   "years": 2,
+   "value": 6000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Chiefs 2008, 5 years",
+   "salary_percentile": 72.68
+  },
+  {
+   "player": "Manny Lawson",
+   "position": "OLB",
+   "old_club": "CIN",
+   "new_club": "BUF",
+   "accrued_seasons_after_2012": 7,
+   "apy": 3000000,
+   "years": 4,
+   "value": 12000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Bengals 2011, 1 years",
+   "salary_percentile": 72.68
+  },
+  {
+   "player": "Davone Bess",
+   "position": "WR",
+   "old_club": "MIA",
+   "new_club": "CLE",
+   "accrued_seasons_after_2012": 5,
+   "apy": 2939000,
+   "years": 3,
+   "value": 8817000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Dolphins 2010, 3 years",
+   "salary_percentile": 71.94
+  },
+  {
+   "player": "Donnie Avery",
+   "position": "WR",
+   "old_club": "IND",
+   "new_club": "KC",
+   "accrued_seasons_after_2012": 5,
+   "apy": 2850000,
+   "years": 3,
+   "value": 8550000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Colts 2012, 1 years",
+   "salary_percentile": 71.46
+  },
+  {
+   "player": "Bradley Fletcher",
+   "position": "CB",
+   "old_club": "STL",
+   "new_club": "PHI",
+   "accrued_seasons_after_2012": 4,
+   "apy": 2625000,
+   "years": 2,
+   "value": 5250000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Rams 2009, 4 years",
+   "salary_percentile": 69.97
+  },
+  {
+   "player": "Rashard Mendenhall",
+   "position": "RB",
+   "old_club": "PIT",
+   "new_club": "ARI",
+   "accrued_seasons_after_2012": 5,
+   "apy": 2500000,
+   "years": 1,
+   "value": 2500000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Steelers 2008, 5 years",
+   "salary_percentile": 69.03
+  },
+  {
+   "player": "Roy Miller",
+   "position": "DT",
+   "old_club": "TB",
+   "new_club": "JAX",
+   "accrued_seasons_after_2012": null,
+   "apy": 2500000,
+   "years": 2,
+   "value": 5000000,
+   "basis": "Branch contract, career/2013/offseason/free_agency/signings.md",
+   "prior_contract": "Expired 2012 contract (unrestricted free agent)",
+   "salary_percentile": 69.03
+  },
+  {
+   "player": "Phil Dawson",
+   "position": "K",
+   "old_club": "CLE",
+   "new_club": "SF",
+   "accrued_seasons_after_2012": 15,
+   "apy": 2350000,
+   "years": 1,
+   "value": 2350000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Browns 2012, 1 years",
+   "salary_percentile": 67.91
+  },
+  {
+   "player": "Brandon Myers",
+   "position": "TE",
+   "old_club": "OAK",
+   "new_club": "NYG",
+   "accrued_seasons_after_2012": 4,
+   "apy": 2250000,
+   "years": 1,
+   "value": 2250000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Raiders 2009, 4 years",
+   "salary_percentile": 67.54
+  },
+  {
+   "player": "Terrance Knighton",
+   "position": "NT",
+   "old_club": "JAX",
+   "new_club": "DEN",
+   "accrued_seasons_after_2012": 4,
+   "apy": 2250000,
+   "years": 2,
+   "value": 4500000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Jaguars 2009, 4 years",
+   "salary_percentile": 67.54
+  },
+  {
+   "player": "Kaluka Maiava",
+   "position": "MLB",
+   "old_club": "CLE",
+   "new_club": "OAK",
+   "accrued_seasons_after_2012": 4,
+   "apy": 2000000,
+   "years": 3,
+   "value": 6000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Browns 2009, 4 years",
+   "salary_percentile": 65.1
+  },
+  {
+   "player": "Vance Walker",
+   "position": "DT",
+   "old_club": "ATL",
+   "new_club": "OAK",
+   "accrued_seasons_after_2012": 4,
+   "apy": 2000000,
+   "years": 1,
+   "value": 2000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Falcons 2012, 1 years",
+   "salary_percentile": 65.1
+  },
+  {
+   "player": "Jason Campbell",
+   "position": "QB",
+   "old_club": "CHI",
+   "new_club": "CLE",
+   "accrued_seasons_after_2012": 8,
+   "apy": 1875000,
+   "years": 2,
+   "value": 3750000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Bears 2012, 1 years",
+   "salary_percentile": 63.61
+  },
+  {
+   "player": "King Dunlap",
+   "position": "T",
+   "old_club": "PHI",
+   "new_club": "SD",
+   "accrued_seasons_after_2012": 5,
+   "apy": 1850000,
+   "years": 2,
+   "value": 3700000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Eagles 2012, 1 years",
+   "salary_percentile": 63.3
+  },
+  {
+   "player": "Shane Lechler",
+   "position": "P",
+   "old_club": "OAK",
+   "new_club": "HOU",
+   "accrued_seasons_after_2012": 13,
+   "apy": 1833333,
+   "years": 3,
+   "value": 5500000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Raiders 2009, 4 years",
+   "salary_percentile": 63.1
+  },
+  {
+   "player": "Danny Woodhead",
+   "position": "RB",
+   "old_club": "NE",
+   "new_club": "SD",
+   "accrued_seasons_after_2012": 5,
+   "apy": 1750000,
+   "years": 2,
+   "value": 3500000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Patriots 2010, 2 years",
+   "salary_percentile": 62.19
+  },
+  {
+   "player": "Pat Sims",
+   "position": "NT",
+   "old_club": "CIN",
+   "new_club": "OAK",
+   "accrued_seasons_after_2012": 5,
+   "apy": 1750000,
+   "years": 1,
+   "value": 1750000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Bengals 2012, 1 years",
+   "salary_percentile": 62.19
+  },
+  {
+   "player": "Lorenzo Alexander",
+   "position": "OLB",
+   "old_club": "WAS",
+   "new_club": "ARI",
+   "accrued_seasons_after_2012": 8,
+   "apy": 1540000,
+   "years": 3,
+   "value": 4620000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Commanders 2010, 3 years",
+   "salary_percentile": 61.31
+  },
+  {
+   "player": "Dan Skuta",
+   "position": "OLB",
+   "old_club": "CIN",
+   "new_club": "SF",
+   "accrued_seasons_after_2012": 4,
+   "apy": 1500000,
+   "years": 2,
+   "value": 3000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Bengals 2012, 1 years",
+   "salary_percentile": 60.97
+  },
+  {
+   "player": "Sen'Derrick Marks",
+   "position": "DT",
+   "old_club": "TEN",
+   "new_club": "JAX",
+   "accrued_seasons_after_2012": null,
+   "apy": 1500000,
+   "years": 1,
+   "value": 1500000,
+   "basis": "Branch contract, career/2013/offseason/free_agency/signings.md",
+   "prior_contract": "Expired 2012 contract (unrestricted free agent)",
+   "salary_percentile": 60.97
+  },
+  {
+   "player": "Tracy Porter",
+   "position": "CB",
+   "old_club": "DEN",
+   "new_club": "OAK",
+   "accrued_seasons_after_2012": 5,
+   "apy": 1500000,
+   "years": 1,
+   "value": 1500000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Broncos 2012, 1 years",
+   "salary_percentile": 60.97
+  },
+  {
+   "player": "Jonathan Casillas",
+   "position": "OLB",
+   "old_club": "NO",
+   "new_club": "TB",
+   "accrued_seasons_after_2012": 4,
+   "apy": 1400000,
+   "years": 1,
+   "value": 1400000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Saints 2012, 1 years",
+   "salary_percentile": 60.56
+  },
+  {
+   "player": "Chad Rinehart",
+   "position": "G",
+   "old_club": "BUF",
+   "new_club": "SD",
+   "accrued_seasons_after_2012": 5,
+   "apy": 1250000,
+   "years": 1,
+   "value": 1250000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Bills 2012, 1 years",
+   "salary_percentile": 58.19
+  },
+  {
+   "player": "Gary Barnidge",
+   "position": "TE",
+   "old_club": "CAR",
+   "new_club": "CLE",
+   "accrued_seasons_after_2012": 5,
+   "apy": 1250000,
+   "years": 3,
+   "value": 3750000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Panthers 2011, 1 years",
+   "salary_percentile": 58.19
+  },
+  {
+   "player": "Justin Durant",
+   "position": "OLB",
+   "old_club": "DET",
+   "new_club": "DAL",
+   "accrued_seasons_after_2012": 6,
+   "apy": 1200000,
+   "years": 2,
+   "value": 2400000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Lions 2011, 2 years",
+   "salary_percentile": 57.55
+  },
+  {
+   "player": "Ted Ginn",
+   "position": "WR",
+   "old_club": "SF",
+   "new_club": "CAR",
+   "accrued_seasons_after_2012": 6,
+   "apy": 1100000,
+   "years": 1,
+   "value": 1100000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "49ers 2012, 1 years",
+   "salary_percentile": 56.26
+  },
+  {
+   "player": "Alan Ball",
+   "position": "CB",
+   "old_club": "HOU",
+   "new_club": "JAX",
+   "accrued_seasons_after_2012": null,
+   "apy": 1000000,
+   "years": 1,
+   "value": 1000000,
+   "basis": "Branch contract, career/2013/offseason/free_agency/signings.md",
+   "prior_contract": "Expired 2012 contract (unrestricted free agent)",
+   "salary_percentile": 54.67
+  },
+  {
+   "player": "Matt Shaughnessy",
+   "position": "DE",
+   "old_club": "OAK",
+   "new_club": "ARI",
+   "accrued_seasons_after_2012": 4,
+   "apy": 1000000,
+   "years": 1,
+   "value": 1000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Raiders 2009, 4 years",
+   "salary_percentile": 54.67
+  },
+  {
+   "player": "Ropati Pitoitua",
+   "position": "DE",
+   "old_club": "KC",
+   "new_club": "TEN",
+   "accrued_seasons_after_2012": 5,
+   "apy": 1000000,
+   "years": 1,
+   "value": 1000000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Chiefs 2012, 1 years",
+   "salary_percentile": 54.67
+  },
+  {
+   "player": "Donnie Jones",
+   "position": "P",
+   "old_club": "HOU",
+   "new_club": "PHI",
+   "accrued_seasons_after_2012": 9,
+   "apy": 905000,
+   "years": 1,
+   "value": 905000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Texans 2012, 1 years",
+   "salary_percentile": 53.11
+  },
+  {
+   "player": "Tony McDaniel",
+   "position": "DT",
+   "old_club": "MIA",
+   "new_club": "SEA",
+   "accrued_seasons_after_2012": 7,
+   "apy": 890000,
+   "years": 1,
+   "value": 890000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Dolphins 2011, 2 years",
+   "salary_percentile": 52.71
+  },
+  {
+   "player": "Antonio Johnson",
+   "position": "DT",
+   "old_club": "IND",
+   "new_club": "TEN",
+   "accrued_seasons_after_2012": 6,
+   "apy": 850000,
+   "years": 1,
+   "value": 850000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Colts 2011, 2 years",
+   "salary_percentile": 51.56
+  },
+  {
+   "player": "Kellen Winslow",
+   "position": "TE",
+   "old_club": "NE",
+   "new_club": "NYJ",
+   "accrued_seasons_after_2012": 9,
+   "apy": 840000,
+   "years": 1,
+   "value": 840000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Patriots 2012, 1 years",
+   "salary_percentile": 51.15
+  },
+  {
+   "player": "Matt Slauson",
+   "position": "G",
+   "old_club": "NYJ",
+   "new_club": "CHI",
+   "accrued_seasons_after_2012": 4,
+   "apy": 815000,
+   "years": 1,
+   "value": 815000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Jets 2012, 1 years",
+   "salary_percentile": 50.27
+  },
+  {
+   "player": "Quintin Demps",
+   "position": "SS",
+   "old_club": "HOU",
+   "new_club": "KC",
+   "accrued_seasons_after_2012": 5,
+   "apy": 715000,
+   "years": 1,
+   "value": 715000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Texans 2012, 1 years",
+   "salary_percentile": 47.46
+  },
+  {
+   "player": "Geoff Schwartz",
+   "position": "G",
+   "old_club": "MIN",
+   "new_club": "KC",
+   "accrued_seasons_after_2012": 5,
+   "apy": 700000,
+   "years": 1,
+   "value": 700000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Vikings 2012, 1 years",
+   "salary_percentile": 46.68
+  },
+  {
+   "player": "Rashad Jennings",
+   "position": "RB",
+   "old_club": "JAX",
+   "new_club": "OAK",
+   "accrued_seasons_after_2012": 4,
+   "apy": 630000,
+   "years": 1,
+   "value": 630000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Jaguars 2009, 4 years",
+   "salary_percentile": 37.91
+  },
+  {
+   "player": "D.J. Moore",
+   "position": "CB",
+   "old_club": "CHI",
+   "new_club": "CAR",
+   "accrued_seasons_after_2012": 4,
+   "apy": 620000,
+   "years": 1,
+   "value": 620000,
+   "basis": "Over The Cap via nflverse",
+   "prior_contract": "Bears 2009, 4 years",
+   "salary_percentile": 36.46
+  }
+ ],
+ "excluded_movers": [
+  {
+   "player": "A.J. Jenkins",
+   "position": "WR",
+   "old_club": "SF",
+   "new_club": "KC",
+   "accrued_seasons_after_2012": 1,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Adrian Robinson",
+   "position": "OLB",
+   "old_club": "PIT",
+   "new_club": "DEN",
+   "accrued_seasons_after_2012": 1,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Alameda Ta'amu",
+   "position": "NT",
+   "old_club": "PIT",
+   "new_club": "ARI",
+   "accrued_seasons_after_2012": 1,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Alex Green",
+   "position": "RB",
+   "old_club": "GB",
+   "new_club": "NYJ",
+   "accrued_seasons_after_2012": 2,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Anthony Sherman",
+   "position": "FB",
+   "old_club": "ARI",
+   "new_club": "KC",
+   "accrued_seasons_after_2012": 2,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Bobby Rainey",
+   "position": "RB",
+   "old_club": "BAL",
+   "new_club": "CLE",
+   "accrued_seasons_after_2012": 1,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Bradley Sowell",
+   "position": "TE",
+   "old_club": "IND",
+   "new_club": "ARI",
+   "accrued_seasons_after_2012": 1,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Brandian Ross",
+   "position": "SS",
+   "old_club": "GB",
+   "new_club": "OAK",
+   "accrued_seasons_after_2012": 2,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Brandon Burton",
+   "position": "CB",
+   "old_club": "MIN",
+   "new_club": "BUF",
+   "accrued_seasons_after_2012": 2,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Brian Sanford",
+   "position": "DE",
+   "old_club": "CLE",
+   "new_club": "OAK",
+   "accrued_seasons_after_2012": 3,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Cam Johnson",
+   "position": "DE",
+   "old_club": "SF",
+   "new_club": "IND",
+   "accrued_seasons_after_2012": 1,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Chad Hall",
+   "position": "WR",
+   "old_club": "SF",
+   "new_club": "KC",
+   "accrued_seasons_after_2012": 3,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Chris Ivory",
+   "position": "RB",
+   "old_club": "NO",
+   "new_club": "NYJ",
+   "accrued_seasons_after_2012": 3,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Chris White",
+   "position": "LB",
+   "old_club": "BUF",
+   "new_club": "NE",
+   "accrued_seasons_after_2012": 2,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Clifton Geathers",
+   "position": "DE",
+   "old_club": "IND",
+   "new_club": "PHI",
+   "accrued_seasons_after_2012": 3,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Colt McCoy",
+   "position": "QB",
+   "old_club": "CLE",
+   "new_club": "SF",
+   "accrued_seasons_after_2012": 3,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Dane Sanzenbacher",
+   "position": "WR",
+   "old_club": "CHI",
+   "new_club": "CIN",
+   "accrued_seasons_after_2012": 2,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "David Reed",
+   "position": "WR",
+   "old_club": "BAL",
+   "new_club": "IND",
+   "accrued_seasons_after_2012": 3,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "DeJon Gomes",
+   "position": "SS",
+   "old_club": "WAS",
+   "new_club": "DET",
+   "accrued_seasons_after_2012": 2,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Delano Howell",
+   "position": "FS",
+   "old_club": "BUF",
+   "new_club": "IND",
+   "accrued_seasons_after_2012": 1,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Dezman Moses",
+   "position": "OLB",
+   "old_club": "GB",
+   "new_club": "KC",
+   "accrued_seasons_after_2012": 1,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Drake Nevis",
+   "position": "DT",
+   "old_club": "IND",
+   "new_club": "SD",
+   "accrued_seasons_after_2012": 2,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Frank Zombo",
+   "position": "OLB",
+   "old_club": "GB",
+   "new_club": "KC",
+   "accrued_seasons_after_2012": 3,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Gabe Carimi",
+   "position": "T",
+   "old_club": "CHI",
+   "new_club": "TB",
+   "accrued_seasons_after_2012": 2,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "George Johnson",
+   "position": "DE",
+   "old_club": "TB",
+   "new_club": "MIN",
+   "accrued_seasons_after_2012": 3,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "George Selvie",
+   "position": "DE",
+   "old_club": "JAX",
+   "new_club": "DAL",
+   "accrued_seasons_after_2012": 3,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "J'Marcus Webb",
+   "position": "T",
+   "old_club": "CHI",
+   "new_club": "MIN",
+   "accrued_seasons_after_2012": 3,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Jaiquawn Jarrett",
+   "position": "S",
+   "old_club": "PHI",
+   "new_club": "NYJ",
+   "accrued_seasons_after_2012": 2,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "James-Michael Johnson",
+   "position": "OLB",
+   "old_club": "CLE",
+   "new_club": "KC",
+   "accrued_seasons_after_2012": 1,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Javier Arenas",
+   "position": "CB",
+   "old_club": "KC",
+   "new_club": "ARI",
+   "accrued_seasons_after_2012": 3,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Jaye Howard",
+   "position": "NT",
+   "old_club": "SEA",
+   "new_club": "KC",
+   "accrued_seasons_after_2012": 1,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Jerome Murphy",
+   "position": "CB",
+   "old_club": "DET",
+   "new_club": "WAS",
+   "accrued_seasons_after_2012": 3,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Jeron Mastrud",
+   "position": "TE",
+   "old_club": "MIA",
+   "new_club": "OAK",
+   "accrued_seasons_after_2012": 3,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Jerry Hughes",
+   "position": "DE",
+   "old_club": "IND",
+   "new_club": "BUF",
+   "accrued_seasons_after_2012": 3,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Joe Barksdale",
+   "position": "T",
+   "old_club": "OAK",
+   "new_club": "STL",
+   "accrued_seasons_after_2012": 2,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "John Moffitt",
+   "position": "G",
+   "old_club": "SEA",
+   "new_club": "DEN",
+   "accrued_seasons_after_2012": 2,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Johnny Patrick",
+   "position": "CB",
+   "old_club": "NO",
+   "new_club": "SD",
+   "accrued_seasons_after_2012": 2,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Jon Baldwin",
+   "position": "WR",
+   "old_club": "KC",
+   "new_club": "SF",
+   "accrued_seasons_after_2012": 2,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Kelvin Sheppard",
+   "position": "MLB",
+   "old_club": "BUF",
+   "new_club": "IND",
+   "accrued_seasons_after_2012": 2,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Kyle Bosworth",
+   "position": "MLB",
+   "old_club": "JAX",
+   "new_club": "DAL",
+   "accrued_seasons_after_2012": 3,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "LeGarrette Blount",
+   "position": "RB",
+   "old_club": "TB",
+   "new_club": "NE",
+   "accrued_seasons_after_2012": 3,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Marcus Dowtin",
+   "position": "OLB",
+   "old_club": "NYJ",
+   "new_club": "BUF",
+   "accrued_seasons_after_2012": 1,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Marlon Moore",
+   "position": "WR",
+   "old_club": "MIA",
+   "new_club": "SF",
+   "accrued_seasons_after_2012": 3,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Michael Palmer",
+   "position": "TE",
+   "old_club": "ATL",
+   "new_club": "PIT",
+   "accrued_seasons_after_2012": 3,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Najee Goode",
+   "position": "ILB",
+   "old_club": "TB",
+   "new_club": "PHI",
+   "accrued_seasons_after_2012": 1,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "O'Brien Schofield",
+   "position": "LB",
+   "old_club": "ARI",
+   "new_club": "SEA",
+   "accrued_seasons_after_2012": 3,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Ron Parker",
+   "position": "FS",
+   "old_club": "CAR",
+   "new_club": "KC",
+   "accrued_seasons_after_2012": 2,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Sean Lissemore",
+   "position": "NT",
+   "old_club": "DAL",
+   "new_club": "SD",
+   "accrued_seasons_after_2012": 3,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Sean McGrath",
+   "position": "TE",
+   "old_club": "SEA",
+   "new_club": "KC",
+   "accrued_seasons_after_2012": 1,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Stanley Havili",
+   "position": "FB",
+   "old_club": "PHI",
+   "new_club": "IND",
+   "accrued_seasons_after_2012": 2,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Steve Maneri",
+   "position": "TE",
+   "old_club": "KC",
+   "new_club": "CHI",
+   "accrued_seasons_after_2012": 3,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Terrell Manning",
+   "position": "ILB",
+   "old_club": "GB",
+   "new_club": "SD",
+   "accrued_seasons_after_2012": 1,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "Zoltan Mesko",
+   "position": "P",
+   "old_club": "NE",
+   "new_club": "PIT",
+   "accrued_seasons_after_2012": 3,
+   "reason": "fewer than four accrued seasons: not an unrestricted free agent"
+  },
+  {
+   "player": "A.Q. Shipley",
+   "position": "C",
+   "old_club": "IND",
+   "new_club": "BAL",
+   "accrued_seasons_after_2012": 4,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Aaron Ross",
+   "position": "CB",
+   "old_club": "JAX",
+   "new_club": "NYG",
+   "accrued_seasons_after_2012": 6,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Adam Snyder",
+   "position": "G",
+   "old_club": "ARI",
+   "new_club": "SF",
+   "accrued_seasons_after_2012": 8,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Akeem Jordan",
+   "position": "ILB",
+   "old_club": "PHI",
+   "new_club": "KC",
+   "accrued_seasons_after_2012": 6,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Andre Gurode",
+   "position": "C",
+   "old_club": "CHI",
+   "new_club": "OAK",
+   "accrued_seasons_after_2012": 11,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Antoine Cason",
+   "position": "CB",
+   "old_club": "SD",
+   "new_club": "ARI",
+   "accrued_seasons_after_2012": 5,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Antwan Barnes",
+   "position": "OLB",
+   "old_club": "SD",
+   "new_club": "NYJ",
+   "accrued_seasons_after_2012": 6,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Aubrayo Franklin",
+   "position": "NT",
+   "old_club": "SD",
+   "new_club": "IND",
+   "accrued_seasons_after_2012": 10,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Benjamin Watson",
+   "position": "TE",
+   "old_club": "CLE",
+   "new_club": "NO",
+   "accrued_seasons_after_2012": 9,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Billy Cundiff",
+   "position": "K",
+   "old_club": "WAS",
+   "new_club": "CLE",
+   "accrued_seasons_after_2012": 11,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Brandon Stokley",
+   "position": "WR",
+   "old_club": "DEN",
+   "new_club": "BAL",
+   "accrued_seasons_after_2012": 14,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Brian Leonard",
+   "position": "RB",
+   "old_club": "CIN",
+   "new_club": "TB",
+   "accrued_seasons_after_2012": 6,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Bruce Gradkowski",
+   "position": "QB",
+   "old_club": "CIN",
+   "new_club": "PIT",
+   "accrued_seasons_after_2012": 7,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Chase Blackburn",
+   "position": "MLB",
+   "old_club": "NYG",
+   "new_club": "CAR",
+   "accrued_seasons_after_2012": 8,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Chris Spencer",
+   "position": "G",
+   "old_club": "CHI",
+   "new_club": "TEN",
+   "accrued_seasons_after_2012": 8,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Christopher Owens",
+   "position": "CB",
+   "old_club": "ATL",
+   "new_club": "CLE",
+   "accrued_seasons_after_2012": 4,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Cody Wallace",
+   "position": "C",
+   "old_club": "TB",
+   "new_club": "PIT",
+   "accrued_seasons_after_2012": 5,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Craig Dahl",
+   "position": "SS",
+   "old_club": "STL",
+   "new_club": "SF",
+   "accrued_seasons_after_2012": 6,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Dallas Clark",
+   "position": "TE",
+   "old_club": "TB",
+   "new_club": "BAL",
+   "accrued_seasons_after_2012": 10,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Dan Carpenter",
+   "position": "K",
+   "old_club": "MIA",
+   "new_club": "BUF",
+   "accrued_seasons_after_2012": 5,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Dan Connor",
+   "position": "MLB",
+   "old_club": "DAL",
+   "new_club": "NYG",
+   "accrued_seasons_after_2012": 5,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Dante Rosario",
+   "position": "TE",
+   "old_club": "SD",
+   "new_club": "CHI",
+   "accrued_seasons_after_2012": 6,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Darryl Tapp",
+   "position": "DE",
+   "old_club": "PHI",
+   "new_club": "WAS",
+   "accrued_seasons_after_2012": 7,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "David Akers",
+   "position": "K",
+   "old_club": "SF",
+   "new_club": "DET",
+   "accrued_seasons_after_2012": 16,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Dawan Landry",
+   "position": "S",
+   "old_club": "JAX",
+   "new_club": "NYJ",
+   "accrued_seasons_after_2012": 7,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Derek Landri",
+   "position": "DT",
+   "old_club": "PHI",
+   "new_club": "TB",
+   "accrued_seasons_after_2012": 6,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Domenik Hixon",
+   "position": "WR",
+   "old_club": "NYG",
+   "new_club": "CAR",
+   "accrued_seasons_after_2012": 7,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Doug Legursky",
+   "position": "C",
+   "old_club": "PIT",
+   "new_club": "BUF",
+   "accrued_seasons_after_2012": 5,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "E.J. Biggers",
+   "position": "CB",
+   "old_club": "TB",
+   "new_club": "WAS",
+   "accrued_seasons_after_2012": 4,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Eben Britton",
+   "position": "T",
+   "old_club": "JAX",
+   "new_club": "CHI",
+   "accrued_seasons_after_2012": 4,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Edgar Jones",
+   "position": "DE",
+   "old_club": "KC",
+   "new_club": "DAL",
+   "accrued_seasons_after_2012": 6,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Eric Winston",
+   "position": "G",
+   "old_club": "KC",
+   "new_club": "ARI",
+   "accrued_seasons_after_2012": 7,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Felix Jones",
+   "position": "RB",
+   "old_club": "DAL",
+   "new_club": "PIT",
+   "accrued_seasons_after_2012": 5,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Gregory Toler",
+   "position": "CB",
+   "old_club": "ARI",
+   "new_club": "IND",
+   "accrued_seasons_after_2012": 4,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Guy Whimper",
+   "position": "T",
+   "old_club": "JAX",
+   "new_club": "PIT",
+   "accrued_seasons_after_2012": 7,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Israel Idonije",
+   "position": "DE",
+   "old_club": "CHI",
+   "new_club": "DET",
+   "accrued_seasons_after_2012": 10,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Jackie Battle",
+   "position": "RB",
+   "old_club": "SD",
+   "new_club": "TEN",
+   "accrued_seasons_after_2012": 6,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Jamaal Westerman",
+   "position": "OLB",
+   "old_club": "IND",
+   "new_club": "BUF",
+   "accrued_seasons_after_2012": 4,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "James Anderson",
+   "position": "OLB",
+   "old_club": "CAR",
+   "new_club": "CHI",
+   "accrued_seasons_after_2012": 7,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Jarius Wynn",
+   "position": "DE",
+   "old_club": "TEN",
+   "new_club": "SD",
+   "accrued_seasons_after_2012": 4,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Jasper Brinkley",
+   "position": "ILB",
+   "old_club": "MIN",
+   "new_club": "ARI",
+   "accrued_seasons_after_2012": 4,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Jeremy Trueblood",
+   "position": "T",
+   "old_club": "TB",
+   "new_club": "ATL",
+   "accrued_seasons_after_2012": 7,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Jim Leonhard",
+   "position": "SS",
+   "old_club": "DEN",
+   "new_club": "BUF",
+   "accrued_seasons_after_2012": 8,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "John Phillips",
+   "position": "TE",
+   "old_club": "DAL",
+   "new_club": "SD",
+   "accrued_seasons_after_2012": 4,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Josh Brown",
+   "position": "K",
+   "old_club": "CIN",
+   "new_club": "NYG",
+   "accrued_seasons_after_2012": 10,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Justin Bannan",
+   "position": "DT",
+   "old_club": "DEN",
+   "new_club": "DET",
+   "accrued_seasons_after_2012": 11,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Kevin Ogletree",
+   "position": "WR",
+   "old_club": "DAL",
+   "new_club": "TB",
+   "accrued_seasons_after_2012": 4,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "LaRod Stephens-Howling",
+   "position": "RB",
+   "old_club": "ARI",
+   "new_club": "PIT",
+   "accrued_seasons_after_2012": 4,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Leon Washington",
+   "position": "RB",
+   "old_club": "SEA",
+   "new_club": "NE",
+   "accrued_seasons_after_2012": 7,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Leroy Harris",
+   "position": "G",
+   "old_club": "TEN",
+   "new_club": "DET",
+   "accrued_seasons_after_2012": 6,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Louis Murphy",
+   "position": "WR",
+   "old_club": "CAR",
+   "new_club": "NYG",
+   "accrued_seasons_after_2012": 4,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Marcus Spears",
+   "position": "DE",
+   "old_club": "DAL",
+   "new_club": "BAL",
+   "accrued_seasons_after_2012": 8,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Matt Giordano",
+   "position": "SS",
+   "old_club": "OAK",
+   "new_club": "STL",
+   "accrued_seasons_after_2012": 8,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Michael Adams",
+   "position": "CB",
+   "old_club": "ARI",
+   "new_club": "TB",
+   "accrued_seasons_after_2012": 6,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Michael Huff",
+   "position": "FS",
+   "old_club": "OAK",
+   "new_club": "BAL",
+   "accrued_seasons_after_2012": 7,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Michael Mitchell",
+   "position": "SS",
+   "old_club": "OAK",
+   "new_club": "CAR",
+   "accrued_seasons_after_2012": 4,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Micheal Spurlock",
+   "position": "WR",
+   "old_club": "JAX",
+   "new_club": "DET",
+   "accrued_seasons_after_2012": 7,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Mike Jenkins",
+   "position": "CB",
+   "old_club": "DAL",
+   "new_club": "OAK",
+   "accrued_seasons_after_2012": 5,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Mike Pollak",
+   "position": "G",
+   "old_club": "CAR",
+   "new_club": "CIN",
+   "accrued_seasons_after_2012": 5,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Moise Fokou",
+   "position": "MLB",
+   "old_club": "IND",
+   "new_club": "TEN",
+   "accrued_seasons_after_2012": 4,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Nick Barnett",
+   "position": "MLB",
+   "old_club": "BUF",
+   "new_club": "WAS",
+   "accrued_seasons_after_2012": 10,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Paris Lenon",
+   "position": "MLB",
+   "old_club": "ARI",
+   "new_club": "DEN",
+   "accrued_seasons_after_2012": 13,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Peyton Hillis",
+   "position": "RB",
+   "old_club": "KC",
+   "new_club": "TB",
+   "accrued_seasons_after_2012": 5,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Phillip Merling",
+   "position": "DE",
+   "old_club": "GB",
+   "new_club": "WAS",
+   "accrued_seasons_after_2012": 5,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Quentin Groves",
+   "position": "OLB",
+   "old_club": "ARI",
+   "new_club": "CLE",
+   "accrued_seasons_after_2012": 5,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Quentin Jammer",
+   "position": "CB",
+   "old_club": "SD",
+   "new_club": "DEN",
+   "accrued_seasons_after_2012": 11,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Rashean Mathis",
+   "position": "CB",
+   "old_club": "JAX",
+   "new_club": "DET",
+   "accrued_seasons_after_2012": 10,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Raymond Ventrone",
+   "position": "SS",
+   "old_club": "CLE",
+   "new_club": "SF",
+   "accrued_seasons_after_2012": 8,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Reggie Walker",
+   "position": "ILB",
+   "old_club": "ARI",
+   "new_club": "SD",
+   "accrued_seasons_after_2012": 4,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Rian Lindell",
+   "position": "K",
+   "old_club": "BUF",
+   "new_club": "TB",
+   "accrued_seasons_after_2012": 13,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Rich Ohrnberger",
+   "position": "C",
+   "old_club": "ARI",
+   "new_club": "SD",
+   "accrued_seasons_after_2012": 4,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Richard Marshall",
+   "position": "CB",
+   "old_club": "MIA",
+   "new_club": "SD",
+   "accrued_seasons_after_2012": 7,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Robert James",
+   "position": "ILB",
+   "old_club": "ATL",
+   "new_club": "BAL",
+   "accrued_seasons_after_2012": 5,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Robert Turner",
+   "position": "C",
+   "old_club": "STL",
+   "new_club": "TEN",
+   "accrued_seasons_after_2012": 6,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Rocky McIntosh",
+   "position": "OLB",
+   "old_club": "STL",
+   "new_club": "DET",
+   "accrued_seasons_after_2012": 7,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Ryan Mundy",
+   "position": "FS",
+   "old_club": "PIT",
+   "new_club": "NYG",
+   "accrued_seasons_after_2012": 5,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Shaun Phillips",
+   "position": "OLB",
+   "old_club": "SD",
+   "new_club": "DEN",
+   "accrued_seasons_after_2012": 9,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Steve Vallos",
+   "position": "C",
+   "old_club": "JAX",
+   "new_club": "DEN",
+   "accrued_seasons_after_2012": 6,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Tarvaris Jackson",
+   "position": "QB",
+   "old_club": "BUF",
+   "new_club": "SEA",
+   "accrued_seasons_after_2012": 7,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Tom Crabtree",
+   "position": "TE",
+   "old_club": "GB",
+   "new_club": "TB",
+   "accrued_seasons_after_2012": 4,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Trevor Scott",
+   "position": "DE",
+   "old_club": "NE",
+   "new_club": "TB",
+   "accrued_seasons_after_2012": 5,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Usama Young",
+   "position": "FS",
+   "old_club": "CLE",
+   "new_club": "OAK",
+   "accrued_seasons_after_2012": 6,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Vaughn Martin",
+   "position": "DT",
+   "old_club": "SD",
+   "new_club": "MIA",
+   "accrued_seasons_after_2012": 4,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Will Allen",
+   "position": "SS",
+   "old_club": "PIT",
+   "new_club": "DAL",
+   "accrued_seasons_after_2012": 9,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Will Witherspoon",
+   "position": "OLB",
+   "old_club": "TEN",
+   "new_club": "STL",
+   "accrued_seasons_after_2012": 11,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Yeremiah Bell",
+   "position": "SS",
+   "old_club": "NYJ",
+   "new_club": "ARI",
+   "accrued_seasons_after_2012": 10,
+   "reason": "no prior contract in the source; expiry cannot be shown"
+  },
+  {
+   "player": "Darrelle Revis",
+   "position": "CB",
+   "old_club": "NYJ",
+   "new_club": "TB",
+   "accrued_seasons_after_2012": 6,
+   "reason": "prior contract ran through 2013: released or traded, not expired"
+  },
+  {
+   "player": "Darrius Heyward-Bey",
+   "position": "WR",
+   "old_club": "OAK",
+   "new_club": "IND",
+   "accrued_seasons_after_2012": 4,
+   "reason": "prior contract ran through 2013: released or traded, not expired"
+  },
+  {
+   "player": "George Wilson",
+   "position": "FS",
+   "old_club": "BUF",
+   "new_club": "TEN",
+   "accrued_seasons_after_2012": 9,
+   "reason": "prior contract ran through 2013: released or traded, not expired"
+  },
+  {
+   "player": "Greg Jones",
+   "position": "FB",
+   "old_club": "JAX",
+   "new_club": "HOU",
+   "accrued_seasons_after_2012": 9,
+   "reason": "prior contract ran through 2013: released or traded, not expired"
+  },
+  {
+   "player": "James Harrison",
+   "position": "OLB",
+   "old_club": "PIT",
+   "new_club": "CIN",
+   "accrued_seasons_after_2012": 11,
+   "reason": "prior contract ran through 2013: released or traded, not expired"
+  },
+  {
+   "player": "Josh Johnson",
+   "position": "QB",
+   "old_club": "CLE",
+   "new_club": "CIN",
+   "accrued_seasons_after_2012": 5,
+   "reason": "prior contract ran through 2013: released or traded, not expired"
+  },
+  {
+   "player": "Matt Hasselbeck",
+   "position": "QB",
+   "old_club": "TEN",
+   "new_club": "IND",
+   "accrued_seasons_after_2012": 15,
+   "reason": "prior contract ran through 2013: released or traded, not expired"
+  },
+  {
+   "player": "William Gay",
+   "position": "CB",
+   "old_club": "ARI",
+   "new_club": "PIT",
+   "accrued_seasons_after_2012": 6,
+   "reason": "prior contract ran through 2013: released or traded, not expired"
+  },
+  {
+   "player": "Ahmad Bradshaw",
+   "position": "RB",
+   "old_club": "NYG",
+   "new_club": "IND",
+   "accrued_seasons_after_2012": 6,
+   "reason": "prior contract ran through 2014: released or traded, not expired"
+  },
+  {
+   "player": "Alex Smith (CIN)",
+   "position": "TE",
+   "old_club": "CLE",
+   "new_club": "CIN",
+   "accrued_seasons_after_2012": 8,
+   "reason": "prior contract ran through 2014: released or traded, not expired"
+  },
+  {
+   "player": "Alex Smith (KC)",
+   "position": "QB",
+   "old_club": "SF",
+   "new_club": "KC",
+   "accrued_seasons_after_2012": 8,
+   "reason": "prior contract ran through 2014: released or traded, not expired"
+  },
+  {
+   "player": "Bernard Pollard",
+   "position": "SS",
+   "old_club": "BAL",
+   "new_club": "TEN",
+   "accrued_seasons_after_2012": 7,
+   "reason": "prior contract ran through 2014: released or traded, not expired"
+  },
+  {
+   "player": "Carson Palmer",
+   "position": "QB",
+   "old_club": "OAK",
+   "new_club": "ARI",
+   "accrued_seasons_after_2012": 10,
+   "reason": "prior contract ran through 2014: released or traded, not expired"
+  },
+  {
+   "player": "Charles Woodson",
+   "position": "FS",
+   "old_club": "GB",
+   "new_club": "OAK",
+   "accrued_seasons_after_2012": 15,
+   "reason": "prior contract ran through 2014: released or traded, not expired"
+  },
+  {
+   "player": "Chris Canty",
+   "position": "DE",
+   "old_club": "NYG",
+   "new_club": "BAL",
+   "accrued_seasons_after_2012": 8,
+   "reason": "prior contract ran through 2014: released or traded, not expired"
+  },
+  {
+   "player": "D.J. Williams",
+   "position": "MLB",
+   "old_club": "DEN",
+   "new_club": "CHI",
+   "accrued_seasons_after_2012": 9,
+   "reason": "prior contract ran through 2014: released or traded, not expired"
+  },
+  {
+   "player": "Elvis Dumervil",
+   "position": "DE",
+   "old_club": "DEN",
+   "new_club": "BAL",
+   "accrued_seasons_after_2012": 7,
+   "reason": "prior contract ran through 2014: released or traded, not expired"
+  },
+  {
+   "player": "Joe Mays",
+   "position": "MLB",
+   "old_club": "DEN",
+   "new_club": "HOU",
+   "accrued_seasons_after_2012": 5,
+   "reason": "prior contract ran through 2014: released or traded, not expired"
+  },
+  {
+   "player": "John Abraham",
+   "position": "OLB",
+   "old_club": "ATL",
+   "new_club": "ARI",
+   "accrued_seasons_after_2012": 13,
+   "reason": "prior contract ran through 2014: released or traded, not expired"
+  },
+  {
+   "player": "Karlos Dansby",
+   "position": "ILB",
+   "old_club": "MIA",
+   "new_club": "ARI",
+   "accrued_seasons_after_2012": 9,
+   "reason": "prior contract ran through 2014: released or traded, not expired"
+  },
+  {
+   "player": "Kevin Burnett",
+   "position": "OLB",
+   "old_club": "MIA",
+   "new_club": "OAK",
+   "accrued_seasons_after_2012": 8,
+   "reason": "prior contract ran through 2014: released or traded, not expired"
+  },
+  {
+   "player": "Matt Cassel",
+   "position": "QB",
+   "old_club": "KC",
+   "new_club": "MIN",
+   "accrued_seasons_after_2012": 8,
+   "reason": "prior contract ran through 2014: released or traded, not expired"
+  },
+  {
+   "player": "Matt Flynn",
+   "position": "QB",
+   "old_club": "SEA",
+   "new_club": "OAK",
+   "accrued_seasons_after_2012": 5,
+   "reason": "prior contract ran through 2014: released or traded, not expired"
+  },
+  {
+   "player": "Tommy Kelly",
+   "position": "DT",
+   "old_club": "OAK",
+   "new_club": "NE",
+   "accrued_seasons_after_2012": 9,
+   "reason": "prior contract ran through 2014: released or traded, not expired"
+  },
+  {
+   "player": "Cullen Jenkins",
+   "position": "DT",
+   "old_club": "PHI",
+   "new_club": "NYG",
+   "accrued_seasons_after_2012": 10,
+   "reason": "prior contract ran through 2015: released or traded, not expired"
+  },
+  {
+   "player": "Dunta Robinson",
+   "position": "CB",
+   "old_club": "ATL",
+   "new_club": "KC",
+   "accrued_seasons_after_2012": 9,
+   "reason": "prior contract ran through 2015: released or traded, not expired"
+  },
+  {
+   "player": "Nnamdi Asomugha",
+   "position": "CB",
+   "old_club": "PHI",
+   "new_club": "SF",
+   "accrued_seasons_after_2012": 10,
+   "reason": "prior contract ran through 2015: released or traded, not expired"
+  },
+  {
+   "player": "Tyson Clabo",
+   "position": "T",
+   "old_club": "ATL",
+   "new_club": "MIA",
+   "accrued_seasons_after_2012": 9,
+   "reason": "prior contract ran through 2015: released or traded, not expired"
+  },
+  {
+   "player": "Willie Colon",
+   "position": "G",
+   "old_club": "PIT",
+   "new_club": "NYJ",
+   "accrued_seasons_after_2012": 7,
+   "reason": "prior contract ran through 2015: released or traded, not expired"
+  },
+  {
+   "player": "Frostee Rucker",
+   "position": "DT",
+   "old_club": "CLE",
+   "new_club": "ARI",
+   "accrued_seasons_after_2012": 7,
+   "reason": "prior contract ran through 2016: released or traded, not expired"
+  },
+  {
+   "player": "Ryan Fitzpatrick",
+   "position": "QB",
+   "old_club": "BUF",
+   "new_club": "TEN",
+   "accrued_seasons_after_2012": 8,
+   "reason": "prior contract ran through 2016: released or traded, not expired"
+  },
+  {
+   "player": "Brian Hoyer",
+   "position": "QB",
+   "old_club": "PIT",
+   "new_club": "CLE",
+   "accrued_seasons_after_2012": 4,
+   "reason": "prior contract was not with his final 2012 club"
+  },
+  {
+   "player": "Anquan Boldin",
+   "position": "WR",
+   "old_club": "BAL",
+   "new_club": "SF",
+   "accrued_seasons_after_2012": 10,
+   "reason": "re-signed with the club holding his expiring contract"
+  },
+  {
+   "player": "Aqib Talib",
+   "position": "CB",
+   "old_club": "TB",
+   "new_club": "NE",
+   "accrued_seasons_after_2012": 5,
+   "reason": "re-signed with the club holding his expiring contract"
+  },
+  {
+   "player": "Chris Williams",
+   "position": "G",
+   "old_club": "CHI",
+   "new_club": "STL",
+   "accrued_seasons_after_2012": 5,
+   "reason": "re-signed with the club holding his expiring contract"
+  },
+  {
+   "player": "Luke McCown",
+   "position": "QB",
+   "old_club": "ATL",
+   "new_club": "NO",
+   "accrued_seasons_after_2012": 9,
+   "reason": "re-signed with the club holding his expiring contract"
+  },
+  {
+   "player": "Wallace Gilberry",
+   "position": "DE",
+   "old_club": "TB",
+   "new_club": "CIN",
+   "accrued_seasons_after_2012": 5,
+   "reason": "re-signed with the club holding his expiring contract"
+  },
+  {
+   "player": "Drew Stanton",
+   "position": "QB",
+   "old_club": "IND",
+   "new_club": "ARI",
+   "accrued_seasons_after_2012": 6,
+   "reason": "unvalued: no 2013 contract with the new club in the source"
+  }
+ ]
+}

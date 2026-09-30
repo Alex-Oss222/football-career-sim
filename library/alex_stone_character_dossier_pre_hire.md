@@ -78,7 +78,7 @@ Miami went 9-7, won a Wild Card game, then lost 62-7 at Jacksonville.
 
 Offensive coordinator / quarterbacks under head coach Kevin McGarry.
 
-Stone was the primary offensive play-caller.
+Stone called the offense.
 
 San Diego went 4-6 overall and 1-3 in Pioneer Football League play.
 
@@ -86,7 +86,7 @@ San Diego went 4-6 overall and 1-3 in Pioneer Football League play.
 
 Assistant head coach / offensive coordinator / quarterbacks.
 
-Stone remained the primary offensive play-caller and held broader responsibility for offensive practice organization and game management.
+Stone continued calling the offense and took broader responsibility for offensive practice organization and game management.
 
 San Diego went 6-3 overall and 2-2 in league play.
 

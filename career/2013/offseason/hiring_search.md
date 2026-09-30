@@ -151,7 +151,7 @@ Stone will not pursue San Diego. The brief attributes that decision to a claimed
 
 ### Universal proposed terms
 
-- Stone retains offensive play-calling, coaching-staff selection, depth-chart control, and game-day decision authority.
+- Stone retains coaching-staff selection, depth-chart control, and game-day decision authority.
 - Stone is willing to reduce his own compensation in exchange for a stronger assistant-coach budget.
 - No incumbent quarterback may be guaranteed the starting job, and no quarterback selection at a specified draft slot may be mandated before Stone evaluates the position.
 - The general manager retains contract, salary-cap, scouting, and draft-administration authority. Quarterback and other leading personnel decisions are collaborative, with Stone holding a substantive rather than symbolic voice.
@@ -197,7 +197,7 @@ Stone will not pursue San Diego. The brief attributes that decision to a claimed
 
 ### Matters the brief does not authorize
 
-- It supplies no complete interview answers concerning proposed schemes, coordinator or assistant targets, permanent delegation beyond Stone's own offensive play-calling, practice and development, analytics, discipline, media handling, or game management.
+- It supplies no complete interview answers concerning proposed schemes, coordinator or assistant targets, staff responsibilities, practice and development, analytics, discipline, media handling, or game management.
 - It supplies no user statement addressing Stone's knowledge and conduct concerning the Saints bounty matter.
 - It supplies no new promises, no permission to modify a non-negotiable, no authority to accept a counter outside the requested terms, and no automatic offer disposition.
 
@@ -233,7 +233,7 @@ Routine outreach has reached the interview stage, but the brief expressly says t
 - defensive and special-teams structure, including what Stone would preserve and what authority coordinators would hold;
 - credible coordinator and core-assistant targets, plus alternatives if preferred candidates are unavailable;
 - practice, player-development, analytics, discipline, media, and game-management methods;
-- how Stone will combine offensive play-calling with permanent whole-team oversight;
+- how Stone will organize the staff and oversee the whole team;
 - how the proposed collaborative personnel process and requested head-coach veto work when Stone and the GM disagree; and
 - what Stone knew about the Saints bounty program, when he knew it, and what he did.
 
@@ -260,7 +260,7 @@ Team-specific emphasis follows the frozen criteria: Jacksonville will press on b
 
 The supplied positions are interview-only statements, not permanent post-hire coaching canon. The clubs evaluate only their concrete substance; the length, confidence, phrasing, and Stone's preference order have no effect on their reactions.
 
-Across the four interviews, Stone proposes to retain offensive play-calling while assigning substantial weekday offensive administration to an offensive coordinator, leaving the defensive coordinator in actual charge of the defense, and leaving technical special-teams work to that coordinator. He would set whole-team priorities, the practice schedule, situational preparation, the depth chart, and game-management decisions. His offense would keep a common language and concept core but change its distribution after evaluating the available quarterback, protection, and skill personnel. He does not preselect a defensive front or offensive system before the roster is evaluated.
+Across the four interviews, Stone proposes to assign substantial weekday offensive administration to an offensive coordinator, leaving the defensive coordinator in actual charge of the defense, and leaving technical special-teams work to that coordinator. He would set whole-team priorities, the practice schedule, situational preparation, the depth chart, and game-management decisions. His offense would keep a common language and concept core but change its distribution after evaluating the available quarterback, protection, and skill personnel. He does not preselect a defensive front or offensive system before the roster is evaluated.
 
 His common operating proposal is situational practice without contact for appearance's sake; specific, tape-based development work led by position coaches; use of research for fourth downs, clock, tendencies, self-scout, personnel, and protection without delegating the decision itself; understandable rules applied without depth-chart favoritism; direct media handling without public blame or disclosure of internal personnel disputes; and advance preparation of game-management responsibilities and communication contingencies.
 

@@ -92,7 +92,7 @@ All voluntary. Jacksonville's 2014 offseason program may begin no earlier than A
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/dwight_lowery.json`
-- `career/2014/offseason/contract_status_register.md` lines 15, 100; `career/2013/roster.md` line 133; `state/04_Roster_and_Staff_Register.md` line 234; `career/2013/depth_chart.json` line 15 (and its weekly versions)
+- `career/2014/finances/player_contracts/contract_status.md` lines 15, 100; `career/2013/roster.md` line 133; `state/04_Roster_and_Staff_Register.md` line 234; `career/2013/depth_chart.json` line 15 (and its weekly versions)
 - `career/2013/offseason/roster_evaluation.md` line 11; `career/2013/offseason/initial_roster.md` line 93
 - `career/2013/offseason/training_camp/output.md` lines 33, 49, 63, 77, 106; `training_camp/position_battles.md` line 14; `career/2013/regular_season/week_09_bye/output.md` line 45
 - `career/2013/regular_season/week_05_jacksonville_at_st_louis/output.md` lines 312, 343; `week_06_jacksonville_at_denver/output.md` lines 301, 332; `week_07_san_diego_at_jacksonville/output.md` lines 95, 352

@@ -204,7 +204,7 @@ Evidence caveats. The engine defect register records that 2013 individual produc
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/sen_derrick_marks.json`
-- `career/2014/offseason/contract_status_register.md` (lines 34, 47)
+- `career/2014/finances/player_contracts/contract_status.md` (lines 34, 47)
 - `career/2014/calendar.md` (lines 12, 22, 25-26)
 - `career/2013/roster.md` (line 103); `state/04_Roster_and_Staff_Register.md` (line 219); `state/05_Current_Season_State.md` (section 4, lines 58 and 61)
 - `career/2013/offseason/free_agency/player_board.md` (lines 118-132, 156); `career/2013/offseason/free_agency/signings.md` (lines 18, 127-129)

@@ -12,15 +12,15 @@ RANDOM.ORG returned **tails**, so **Indianapolis 14, Green Bay 15**. Heads/Green
 
 First pass enumerated pre-checkpoint transfers in the [2014 pick transaction index](https://prosportstransactions.com/football/DraftTrades/Years/2014.htm), its [2013 companion](https://www.prosportstransactions.com/football/DraftTrades/Years/2013.htm), and the [2014 draft trade index](https://en.wikipedia.org/wiki/2014_NFL_draft). These are discovery indexes, not authority for branch owners. Second pass separately searched each trade, checked source pairs below and compared accepted opening lineups with closed receipts. Team transaction feeds sometimes display a day earlier than announcements; announcement dates are used, with discrepancies noted. Later retrospectives supply only original transaction terms, never later football outcomes.
 
-The accepted baseline is [2013 depth charts](../../../library/2013_week1_depth_charts.md) and its [data](../../../library/data/2013_week1_depth_charts.json). Branch game evidence is in [closed receipts](../../2013/stats/game_receipts/). The 2013 season results are used only for contract conditions and draft ordering, never as talent ratings.
+The accepted baseline is [2013 depth charts](../../../library/2013_week1_depth_charts.md) and its [data](../../../library/data/2013_week1_depth_charts.json). Branch game evidence is in [closed receipts](../../2013/stats/game_receipts). The 2013 season results are used only for contract conditions and draft ordering, never as talent ratings.
 
 ## Reconciled transferred assets
 
 | Original asset | Owner | Consideration | Branch treatment |
 |---|---|---|---|
-| 2014 R1 Washington Redskins | Jacksonville Jaguars | User-corrected Cousins trade; ledger Entry 80 | [Authority](../../../career/2013/trades/trades.md) |
-| 2014 R2 Jacksonville Jaguars | Washington Redskins | User-corrected Cousins trade; ledger Entry 80 | [Authority](../../../career/2013/trades/trades.md) |
-| 2015 R2 Jacksonville Jaguars | Washington Redskins | User-corrected Cousins trade; ledger Entry 80; unconditional, slot unknown | [Authority](../../../career/2013/trades/trades.md) |
+| 2014 R1 Washington Redskins | Jacksonville Jaguars | User-corrected Cousins trade; ledger Entry 80 | [Authority](../../2013/trades/trades.md) |
+| 2014 R2 Jacksonville Jaguars | Washington Redskins | User-corrected Cousins trade; ledger Entry 80 | [Authority](../../2013/trades/trades.md) |
+| 2015 R2 Jacksonville Jaguars | Washington Redskins | User-corrected Cousins trade; ledger Entry 80; unconditional, slot unknown | [Authority](../../2013/trades/trades.md) |
 | 2014 R7 Carolina Panthers | San Francisco 49ers | Pre-divergence Colin Jones trade, reported August 31, 2012 | [Authority](../../../library/2014_draft_order_verification.md) |
 | 2014 R5 Detroit Lions | Jacksonville Jaguars | Mike Thomas: Inherited pre-divergence consideration; Entry 81 | [Authority](#thomas) |
 | 2014 R7 Indianapolis Colts | St. Louis Rams | Josh Gordy: Inherited pre-divergence consideration; Entry 81 | [Authority](#gordy) |

@@ -212,7 +212,7 @@ Evidence caveats. The engine defect register records that 2013 individual produc
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/brent_grimes.json`
-- `career/2014/offseason/contract_status_register.md` (lines 34, 51)
+- `career/2014/finances/player_contracts/contract_status.md` (lines 34, 51)
 - `career/2014/calendar.md` (lines 22, 25, 26, 31)
 - `career/2013/roster.md` (line 124); `state/04_Roster_and_Staff_Register.md` (lines 230, 292); `state/05_Current_Season_State.md` (section 4, lines 58 and 61)
 - `career/2013/offseason/free_agency/player_board.md` (lines 162-178, 200, 328); `career/2013/offseason/free_agency/signings.md` (lines 24, 125, 151-153)

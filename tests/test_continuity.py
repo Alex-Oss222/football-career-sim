@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT/'scripts'))
 from validate_repository import receipt_coverage_errors, validate
 from check_game_readiness import assess, check
+from runtime.seasons import current_record
 
 
 class ContinuityTests(unittest.TestCase):
@@ -63,7 +64,8 @@ class ContinuityTests(unittest.TestCase):
         self.assertTrue(any('stale source-version hash' in error for error in validate(self.root)))
 
     def test_membership_mismatch_is_rejected_even_when_count_matches(self):
-        self.change('career/2013/roster.md', '| Kirk Cousins |', '| Synthetic replacement |')
+        self.change(current_record('roster', self.root).relative_to(self.root),
+                    '| Kirk Cousins |', '| Synthetic replacement |')
         self.assertTrue(any('membership differs' in error for error in validate(self.root)))
 
     def test_broken_markdown_anchor_is_rejected(self):

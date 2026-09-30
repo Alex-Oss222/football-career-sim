@@ -1,30 +1,43 @@
-# 2014 season (branch)
+# Jacksonville — 2014 season
 
-The 2014 league year folder. The 2013 season is complete and archived (ledger Entry 67); this folder was set up in ledger Entry 68. Plans and future calendar entries are not completed events. Dated staff outcomes already closed in the ledger are linked below.
+[Team](team/README.md) · [Calendar](calendar.md) · [Finances](finances/README.md) · [Trades](trades/README.md)
 
-**Start here:** [2014 operating baseline](operating_baseline.md) links the transaction records, training outputs, full schedule inventory and season handoffs. The clock remains February 2; next is the February 3 waiver/staff checkpoint, followed by the February 17 tag window.
+**Where we are:** the spring program closed with the mandatory minicamp (June 17–19) and its June 20 staff handoff; the clock is June 28, 2014, in the summer break. Next are the July 1–13 staff work and the July 14 camp report-date publication (historical: rookies report July 21, veterans July 24). [Current state](../../state/05_Current_Season_State.md) holds the live checkpoint and outstanding decisions. No 2014 game has been played.
 
-**Coaching staff:** [Open the 2014 staff timeline](offseason/staff_changes/timeline.md) to see who has been approached, who has left, which jobs are vacant and who Jacksonville hires. [Replacement targets](offseason/staff_changes/staff_plan.md) and [hiring outcomes](offseason/staff_changes/hires.md) are kept in the same folder.
+## Follow the season
 
-| Record | Path | Status |
+The folders follow the opening dates of each phase. Free agency begins before the draft; the draft and rookie camp overlap the spring training program. Use the [calendar](calendar.md) for the exact next event.
+
+| Season folder | Dates | What belongs here |
 |---|---|---|
-| Calendar and gates | [calendar.md](calendar.md) | Current |
-| Draft order (generated from receipts) | [draft/draft_order.md](draft/draft_order.md) | All seven rounds: 224 ordinary assets audited; IND 14 / GB 15; JAX firsts 13/26 and eight picks; three conditional claims and compensatory awards remain pending |
-| Schedule and opponents | [schedule/README.md](schedule/README.md) | All 32 clubs and 256 matchups generated; dated fixtures/bye wait for April 23; three London dates already known |
-| Contract and free-agency status at the league-year turn | [offseason/contract_status_register.md](offseason/contract_status_register.md) | Research register (sourced; see its labels) |
-| Stone's 2014 offseason decisions to Caldwell (futures, pending free agents and the tag, free-agency, draft and trade boards, phase direction) | [offseason/stone_to_caldwell_2014_offseason_decisions.md](offseason/stone_to_caldwell_2014_offseason_decisions.md) | User-authored recommendations; Caldwell decides when the calendar reaches each call |
-| Current boards (memo plus explicit amendments) | [free agency](offseason/free_agency/player_board.md), [draft](offseason/draft/player_draft_board.md), [trades](trades/trade_targets.md), [futures](offseason/practice_squad_futures.md) | Eight draft targets, including Linsley on Detroit R5 and Gaines on JAX R6; six trade packages with triggers and deadlines |
-| Team training and player film | [Training index](offseason/README.md), [player queue](offseason/film/player_queue.md), [Cousins progression](offseason/player_development/kirk_cousins.md) | Prepared from 2013 evidence; no training or delivery invented |
-| Phase plans | [offseason program (Phases One and Two)](offseason/offseason_program/plan.md), [rookie minicamp](offseason/rookie_minicamp/plan.md), [OTAs (Phase Three)](offseason/otas/plan.md), [mandatory minicamp](offseason/mandatory_minicamp/plan.md), [training camp and preseason](offseason/training_camp/plan.md) | 2013 methods retained; individual training/film workflow authorized; other marked choices pending |
-| Coaching staff timeline and hiring | [Staff folder](offseason/staff_changes/README.md), [timeline](offseason/staff_changes/timeline.md), [targets](offseason/staff_changes/staff_plan.md), [hires](offseason/staff_changes/hires.md) | Through February 2: Lowry departed; Bush stays; special teams coordinator vacant; no replacement hired |
-| League rails (other clubs follow real rosters from 2014) | [offseason/league_rails/](offseason/league_rails/README.md) | 2,208-player research inventory built; nine FA targets verified; automated dated roster build and relevant exception checks remain Codex work |
-| Season ledger | not yet created; the 2013 ledger (`career/2013/ledger.md`) remains Document 6 until the first 2014 event closes | Pending |
-| Roster | `career/2013/roster.md` remains the controlled-roster record until a 2014 roster owner is created with the first roster-changing event | Pending |
+| [01 · Early offseason](early_offseason/README.md) | January–March 10 | Prior-season review carried into 2014, staff changes, scouting, roster and contract preparation |
+| [02 · Free agency](free_agency/README.md) | March 11 onward | Targets, offers, negotiations, signings, tags and tenders |
+| [03 · Offseason training](offseason_training/README.md) | April 21–June 22 program window | Phases One and Two, rookie minicamp, OTAs, mandatory minicamp; each has its staff plan, training report and player assessments |
+| [04 · Draft](draft/README.md) | May 8–10 | Draft board, pick ownership, selections, undrafted signings and rookie contracts |
+| [05 · Training camp and preseason](training_camp_and_preseason/README.md) | July 21–August 31 | Camp, four preseason games, assessments, cut to 75, final 53 and practice squad |
+| [06 · Regular season](regular_season/README.md) | September 4–December 28 | Games by week, team and player statistics, standings, weekly and monthly awards |
+| [07 · Postseason and Pro Bowl](postseason/README.md) | December 29–February 1, 2015 | Playoff qualification, rounds, postseason statistics, honours and Pro Bowl |
+| [08 · Season review and 2015](season_review/README.md) | After Jacksonville’s actual final game | Exit interviews, contract and staff decisions, final assessments and the handoff to next season |
 
-**Setup status:** [Readiness checklist](readiness.md), [financial preparation](offseason/current_cap_worksheet.md), [scouting](scouting/README.md) and [statbook](statbook.md). Entry 82 reconciles the operating handoff without advancing time.
+## Keep the team together
 
-**Prepared:** the five phase plans and individual training/film workflow. Bobby April is selected for the staff search, not hired. Other explicitly marked decisions remain pending. The exit interviews (January 13-14, 2014; Entry 76) list the program decisions and staff findings the plans should answer (`career/2013/exit_interviews/README.md`).
+| Always available | What it contains |
+|---|---|
+| [Team](team/README.md) | Roster, depth chart, player cards, coaching staff, development and film |
+| [Finances](finances/README.md) | Salary cap, player contracts, upcoming decisions, coaching costs, future commitments and history |
+| [Trades](trades/README.md) | Targets and offers first; completed trades below, each showing what Jacksonville sends and receives |
+| [Calendar](calendar.md) | Historical dates, deadlines, overlapping phases and conditional events |
+| [Season ledger](ledger.md) | What actually happened, recorded in order |
+| [League personnel](league/personnel/README.md) | Other clubs’ dated personnel records and Jacksonville exceptions |
 
-**Engine:** [E1/E2 policy is adopted](../../runtime/2014_engine_decisions.md); implementation and the other Tier 1 fixes remain open. [The game release gate](operating_baseline.md#before-any-2014-game) also requires season-aware inputs and closure. This baseline is ready for offseason recordkeeping, not game execution.
+Contracts, remaining guarantees, dead money, controlled players, working depth and unresolved decisions continue into 2015. Prior statistics stay in 2014 and on the career rows of each player’s card; the new season begins without game results. Contract renewals, roster changes and medical clearance happen through their own decisions.
 
-**Prepared execution records:** [trades](trades/README.md), [signings](offseason/free_agency/signings.md), [draft](offseason/draft/README.md), all five phase outputs and evidence summaries, [preseason](preseason/README.md), and [regular-season windows](regular_season/README.md). They begin empty or NOT_STARTED, without fictitious outcomes.
+[2013 season](../2013/README.md) · [2015 calendar](../2015/calendar.md) · [Repository home](../../README.md) · [Simulation preparation](supporting_records/README.md)
+
+<!-- folder-files -->
+## Files in this folder
+
+| File | What it contains |
+|---|---|
+| [calendar.md](calendar.md) | Jacksonville 2014 calendar. |
+| [ledger.md](ledger.md) | Jacksonville 2014 event ledger. |

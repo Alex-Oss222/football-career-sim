@@ -1,8 +1,8 @@
 # 2014 NFL Draft: all seven rounds (branch)
 
-**As of:** February 2, 2014; ledger Entry 81. **Draft:** May 8–10, 2014.
+**As of:** May 11, 2014; ledger Entry 108 (Jacksonville's nine selections recorded). **Draft:** May 8–10, 2014.
 **Generated** by `python scripts/render_draft_order.py` from closed branch receipts and [pick_ownership.json](pick_ownership.json). Edit the underlying dated records, then regenerate; do not edit these tables by hand.
-**Coverage:** all **224 ordinary selections**, with original club and recorded owner shown separately. Compensatory selections are still pending; this is not a final 256-pick execution list.
+**Coverage:** all **256 selections**: 224 ordinary picks, with original club and recorded owner shown separately, and the 32 branch compensatory picks announced March 24. Overall numbers are exact.
 **Rules and sources:** [verification](../../../library/2014_draft_order_verification.md), [league rules §4](../../../library/2014_league_calendar_and_financial_rules.md#4-2014-draft-order-rules-applied-to-the-branchs-2013-season). Clubs tied on winning percentage rotate within their elimination group: first goes to last, the others move up. No real 2014 order or selection is imported.
 
 ## Jacksonville's current draft capital
@@ -16,27 +16,49 @@
 |---:|---|---|---|---|
 | 1 | Washington Redskins | 13 | 13 | **Jacksonville Jaguars** |
 | 1 | Jacksonville Jaguars | 26 | 26 | **Jacksonville Jaguars** |
+| 2 | Arizona Cardinals | 6 | 38 | **Jacksonville Jaguars** |
 | 2 | Jacksonville Jaguars | 26 | 58 | **Washington Redskins** |
 | 3 | Jacksonville Jaguars | 26 | 90 | **Jacksonville Jaguars** |
-| 4 | Jacksonville Jaguars | 26 | 122 + C3 | **Jacksonville Jaguars** |
-| 5 | Detroit Lions | 11 | 139 + C3 + C4 | **Jacksonville Jaguars** |
-| 5 | Jacksonville Jaguars | 26 | 154 + C3 + C4 | **Jacksonville Jaguars** |
-| 6 | Jacksonville Jaguars | 26 | 186 + C3 + C4 + C5 | **Jacksonville Jaguars** |
-| 7 | Jacksonville Jaguars | 26 | 218 + C3 + C4 + C5 + C6 | **Jacksonville Jaguars** |
+| 4 | Jacksonville Jaguars | 26 | 129 | **Jacksonville Jaguars** |
+| 5 | Detroit Lions | 11 | 153 | **Jacksonville Jaguars** |
+| 5 | Jacksonville Jaguars | 26 | 168 | **Jacksonville Jaguars** |
+| 6 | Jacksonville Jaguars | 26 | 205 | **Jacksonville Jaguars** |
+| 7 | Jacksonville Jaguars | 26 | 241 | **Jacksonville Jaguars** |
 
-Jacksonville currently owns **8 ordinary 2014 picks**: **13**; **26**; **90**; **122 + C3**; **139 + C3 + C4**; **154 + C3 + C4**; **186 + C3 + C4 + C5**; **218 + C3 + C4 + C5 + C6**. No prospect is selected by this inventory.
+Jacksonville owned **9 ordinary 2014 picks**: **13**; **26**; **38**; **90**; **129**; **153**; **168**; **205**; **241**. Jacksonville received **0 compensatory picks**; see [Compensatory selections](#compensatory-selections).
 
-| Future asset already conveyed | Current owner | Overall pick | Authority |
+**Selections (complete):** recorded in [draftees.md](draftees.md); this table repeats the register only.
+
+| Overall | Round | Original club | Date | Selection | Status |
+|---:|---:|---|---|---|---|
+| 13 | 1 | Washington Redskins | 2014-05-08 | Aaron Donald, DT, Pittsburgh | exercised |
+| 26 | 1 | Jacksonville Jaguars | 2014-05-08 | Joel Bitonio, OT, Nevada | exercised |
+| 38 | 2 | Arizona Cardinals | 2014-05-09 | Davante Adams, WR, Fresno State | exercised |
+| 90 | 3 | Jacksonville Jaguars | 2014-05-09 | Trai Turner, G, LSU | exercised |
+| 129 | 4 | Jacksonville Jaguars | 2014-05-10 | Telvin Smith, LB, Florida State | exercised |
+| 153 | 5 | Detroit Lions | 2014-05-10 | Corey Linsley, C, Ohio State | exercised |
+| 168 | 5 | Jacksonville Jaguars | 2014-05-10 | Charles Leno Jr., OT, Boise State | exercised |
+| 205 | 6 | Jacksonville Jaguars | 2014-05-10 | Jemea Thomas, DB, Georgia Tech | exercised |
+| 241 | 7 | Jacksonville Jaguars | 2014-05-10 | Malcolm Butler, CB, West Alabama | exercised |
+
+| Future pick transferred | Current owner | Overall pick | Authority |
 |---|---|---|---|
-| 2015 Round 2, Jacksonville Jaguars original | Washington Redskins | Unknown; future branch season | User-corrected Cousins trade; ledger Entry 80; unconditional, slot unknown |
+| 2015 Round 2, Jacksonville Jaguars original | Jacksonville Jaguars | Unknown; future branch season | Returned by Washington for Nos. 82 and 194, March 31, 2014; 2014 ledger Entry 105; unconditional, slot set by the 2014 season |
+| 2015 Round 1, Jacksonville Jaguars original | Arizona Cardinals | Unknown; future branch season | Package I trade with Arizona, March 20, 2014; ledger Entry 99 |
+| 2015 Round 4, Jacksonville Jaguars original | Arizona Cardinals | Unknown; future branch season | Package I trade with Arizona, March 20, 2014; ledger Entry 99 |
+| 2016 Round 5, Jacksonville Jaguars original | Arizona Cardinals | Unknown; future branch season | Package I trade with Arizona, March 20, 2014; ledger Entry 99 |
+| 2015 Round 3, Miami Dolphins original | Jacksonville Jaguars | Unknown; future branch season | Package D trade, March 24, 2014; 2014 ledger Entry 102 |
+| 2017 Round 7, Jacksonville Jaguars original | Miami Dolphins | Unknown; future branch season | Package D trade, March 24, 2014; 2014 ledger Entry 102 |
+| 2015 Round 4, Houston Texans original | Jacksonville Jaguars | Unknown; future branch season | Package E trade, March 24, 2014; 2014 ledger Entry 102 |
+| 2015 Round 4, Arizona Cardinals original | Jacksonville Jaguars | Unknown; future branch season | Allen trade with Arizona, closed April 7, 2014 after Posluszny's clearance and Allen's physical; 2014 ledger Entry 106; unconditional |
+| 2015 Round 7, Seattle Seahawks original | Jacksonville Jaguars | Unknown; future branch season | Rackley trade with Seattle, May 12, 2014; 2014 ledger Entry 110; unconditional |
 
-## How to read pending fields
+## How to read the order
 
 - **Coin flip resolved:** one RANDOM.ORG draw returned tails at 2026-09-29 01:42:47 UTC. The preassigned mapping gives **Indianapolis 14, Green Bay 15** in Round 1. That result is applied to every later rotation. [Receipt](coin_flip.json); [saved website result](coin_flip_2026-09-29.jpg).
-- **Overall offsets:** C3, C4, C5 and C6 are the unknown numbers of compensatory picks appended to those rounds. An expression is not an exact overall number. Round 3 ordinary picks precede that round's compensatory additions.
+- **Overall numbers:** each round's compensatory picks follow its ordinary picks, so every later overall number includes the earlier rounds' compensatory counts (Round 3: 7, Round 4: 7, Round 5: 5, Round 6: 4, Round 7: 9).
 - **Ownership audited:** all 224 ordinary assets have a current allocation. A **conditional hold** identifies a specific outstanding claim, not a second owner. Revis affects one of Tampa Bay's third/fourth; Benn is one claim against an undisclosed Philadelphia round; Rosario affects Chicago's seventh. [Terms, sources and branch exclusions](ownership_audit.md).
-- **Execution gate:** resolve any conditional hold before spending that asset. `require_clear_ownership` rejects held or unaudited assets. Resolve compensatory numbering before executing affected selections, and reconcile any newly recorded forfeiture. The branch currently records no forfeited selection.
-- **Existing package A:** the verified rotation puts Seattle's original second at No. 36; Stone's frozen memo also calls it No. 37. Reconcile that intended asset before executing the offer. No Seattle trade or amended offer is recorded here.
+- **Execution gate:** resolve any conditional hold before spending that asset. `require_clear_ownership` rejects held or unaudited assets. Compensatory picks cannot be traded in 2014. Reconcile any newly recorded forfeiture. The branch currently records no forfeited selection.
 
 ## Round 1
 
@@ -84,7 +106,7 @@ Jacksonville currently owns **8 ordinary 2014 picks**: **13**; **26**; **90**; *
 | 3 | 35 | Cincinnati Bengals | Cincinnati Bengals | 5-10-1 | Retained original pick |
 | 4 | 36 | Seattle Seahawks | Seattle Seahawks | 6-10-0 | Retained original pick |
 | 5 | 37 | Houston Texans | Houston Texans | 6-10-0 | Retained original pick |
-| 6 | 38 | Arizona Cardinals | Arizona Cardinals | 6-9-1 | Retained original pick |
+| 6 | 38 | Arizona Cardinals | Jacksonville Jaguars | 6-9-1 | Package I trade with Arizona, March 20, 2014; ledger Entry 99 |
 | 7 | 39 | Cleveland Browns | Cleveland Browns | 7-9-0 | Retained original pick |
 | 8 | 40 | Detroit Lions | Detroit Lions | 7-9-0 | Retained original pick |
 | 9 | 41 | Chicago Bears | Chicago Bears | 7-9-0 | Retained original pick |
@@ -133,7 +155,7 @@ Jacksonville currently owns **8 ordinary 2014 picks**: **13**; **26**; **90**; *
 | 15 | 79 | New England Patriots | New England Patriots | 8-8-0 | Retained original pick |
 | 16 | 80 | Atlanta Falcons | Atlanta Falcons | 8-8-0 | Retained original pick |
 | 17 | 81 | Carolina Panthers | Carolina Panthers | 8-8-0 | Retained original pick |
-| 18 | 82 | Indianapolis Colts | Indianapolis Colts | 8-8-0 | Retained original pick |
+| 18 | 82 | Indianapolis Colts | Washington Redskins | 8-8-0 | Colts picks traded to Washington, March 31, 2014; 2014 ledger Entry 105 |
 | 19 | 83 | Green Bay Packers | Green Bay Packers | 8-8-0 | Retained original pick |
 | 20 | 84 | San Diego Chargers | San Diego Chargers | 8-6-2 | Retained original pick |
 | 21 | 85 | Tampa Bay Buccaneers | Tampa Bay Buccaneers **conditional hold** | 9-7-0 | revis: One pick to NYJ: R3 if Revis remains on TB roster March 13, otherwise R4. Both alternatives reserved. |
@@ -149,174 +171,221 @@ Jacksonville currently owns **8 ordinary 2014 picks**: **13**; **26**; **90**; *
 | 31 | 95 | Minnesota Vikings | Minnesota Vikings | 13-3-0 | Retained original pick |
 | 32 | 96 | Buffalo Bills | Buffalo Bills | 9-7-0 | Retained original pick |
 
-**After Round 3:** compensatory selections pending the March 24 announcement and branch awards reconciliation; no recipients or count for this round assigned.
+**Compensatory picks after Round 3:**
+
+| Overall pick | Club | Basis | Note |
+|---|---|---|---|
+| 97 | Pittsburgh Steelers | Net loss of Mike Wallace | Not tradeable |
+| 98 | Green Bay Packers | Net loss of Greg Jennings | Not tradeable |
+| 99 | San Francisco 49ers | Net loss of Dashon Goldson | Not tradeable |
+| 100 | Baltimore Ravens | Net loss of Paul Kruger | Not tradeable |
+| 101 | New Orleans Saints | Net loss of Jermon Bushrod | Not tradeable |
+| 102 | Baltimore Ravens | Net loss of Dannell Ellerbe | Not tradeable |
+| 103 | Detroit Lions | Net loss of Gosder Cherilus | Not tradeable |
 
 ## Round 4
 
 | Slot in round | Overall pick | Original club | Recorded owner | 2013 record | Note |
 |---|---|---|---|---|---|
-| 1 | 97 + C3 | San Francisco 49ers | San Francisco 49ers | 2-13-1 | Retained original pick |
-| 2 | 98 + C3 | Baltimore Ravens | Baltimore Ravens | 5-11-0 | Retained original pick |
-| 3 | 99 + C3 | Cincinnati Bengals | Cincinnati Bengals | 5-10-1 | Retained original pick |
-| 4 | 100 + C3 | Seattle Seahawks | Seattle Seahawks | 6-10-0 | Retained original pick |
-| 5 | 101 + C3 | Houston Texans | Houston Texans | 6-10-0 | Retained original pick |
-| 6 | 102 + C3 | Arizona Cardinals | Arizona Cardinals | 6-9-1 | Retained original pick |
-| 7 | 103 + C3 | Chicago Bears | Chicago Bears | 7-9-0 | Retained original pick |
-| 8 | 104 + C3 | Oakland Raiders | Oakland Raiders | 7-9-0 | Retained original pick |
-| 9 | 105 + C3 | Miami Dolphins | Miami Dolphins | 7-9-0 | Retained original pick |
-| 10 | 106 + C3 | Denver Broncos | Denver Broncos | 7-9-0 | Retained original pick |
-| 11 | 107 + C3 | Cleveland Browns | Cleveland Browns | 7-9-0 | Retained original pick |
-| 12 | 108 + C3 | Detroit Lions | Detroit Lions | 7-9-0 | Retained original pick |
-| 13 | 109 + C3 | Washington Redskins | Washington Redskins | 7-8-1 | Retained original pick |
-| 14 | 110 + C3 | New England Patriots | New England Patriots | 8-8-0 | Retained original pick |
-| 15 | 111 + C3 | Atlanta Falcons | Atlanta Falcons | 8-8-0 | Retained original pick |
-| 16 | 112 + C3 | Carolina Panthers | Carolina Panthers | 8-8-0 | Retained original pick |
-| 17 | 113 + C3 | Indianapolis Colts | Cleveland Browns | 8-8-0 | Montori Hughes draft trade: Consideration for accepted 2013 draft acquisition; Entry 81 |
-| 18 | 114 + C3 | Green Bay Packers | Green Bay Packers | 8-8-0 | Retained original pick |
-| 19 | 115 + C3 | New York Giants | New York Giants | 8-8-0 | Retained original pick |
-| 20 | 116 + C3 | San Diego Chargers | San Diego Chargers | 8-6-2 | Retained original pick |
-| 21 | 117 + C3 | Pittsburgh Steelers | Pittsburgh Steelers | 9-7-0 | Retained original pick |
-| 22 | 118 + C3 | Kansas City Chiefs | Kansas City Chiefs | 9-7-0 | Retained original pick |
-| 23 | 119 + C3 | Tampa Bay Buccaneers | Tampa Bay Buccaneers **conditional hold** | 9-7-0 | revis: One pick to NYJ: R3 if Revis remains on TB roster March 13, otherwise R4. Both alternatives reserved. |
-| 24 | 120 + C3 | New Orleans Saints | New Orleans Saints | 10-6-0 | Retained original pick |
-| 25 | 121 + C3 | Dallas Cowboys | Dallas Cowboys | 8-8-0 | Retained original pick |
-| 26 | 122 + C3 | Jacksonville Jaguars | Jacksonville Jaguars | 10-6-0 | Retained original pick |
-| 27 | 123 + C3 | St. Louis Rams | St. Louis Rams | 11-5-0 | Retained original pick |
-| 28 | 124 + C3 | New York Jets | New York Jets | 12-4-0 | Retained original pick |
-| 29 | 125 + C3 | Philadelphia Eagles | Philadelphia Eagles **conditional hold** | 8-8-0 | benn: One conditional compensation claim to TB; round and trigger undisclosed. Scope hold until terms verified; not seven debts. |
-| 30 | 126 + C3 | Tennessee Titans | Tennessee Titans | 10-6-0 | Retained original pick |
-| 31 | 127 + C3 | Minnesota Vikings | Minnesota Vikings | 13-3-0 | Retained original pick |
-| 32 | 128 + C3 | Buffalo Bills | Buffalo Bills | 9-7-0 | Retained original pick |
+| 1 | 104 | San Francisco 49ers | San Francisco 49ers | 2-13-1 | Retained original pick |
+| 2 | 105 | Baltimore Ravens | Baltimore Ravens | 5-11-0 | Retained original pick |
+| 3 | 106 | Cincinnati Bengals | Cincinnati Bengals | 5-10-1 | Retained original pick |
+| 4 | 107 | Seattle Seahawks | Seattle Seahawks | 6-10-0 | Retained original pick |
+| 5 | 108 | Houston Texans | Houston Texans | 6-10-0 | Retained original pick |
+| 6 | 109 | Arizona Cardinals | Arizona Cardinals | 6-9-1 | Retained original pick |
+| 7 | 110 | Chicago Bears | Chicago Bears | 7-9-0 | Retained original pick |
+| 8 | 111 | Oakland Raiders | Oakland Raiders | 7-9-0 | Retained original pick |
+| 9 | 112 | Miami Dolphins | Miami Dolphins | 7-9-0 | Retained original pick |
+| 10 | 113 | Denver Broncos | Denver Broncos | 7-9-0 | Retained original pick |
+| 11 | 114 | Cleveland Browns | Cleveland Browns | 7-9-0 | Retained original pick |
+| 12 | 115 | Detroit Lions | Detroit Lions | 7-9-0 | Retained original pick |
+| 13 | 116 | Washington Redskins | Washington Redskins | 7-8-1 | Retained original pick |
+| 14 | 117 | New England Patriots | New England Patriots | 8-8-0 | Retained original pick |
+| 15 | 118 | Atlanta Falcons | Atlanta Falcons | 8-8-0 | Retained original pick |
+| 16 | 119 | Carolina Panthers | Carolina Panthers | 8-8-0 | Retained original pick |
+| 17 | 120 | Indianapolis Colts | Cleveland Browns | 8-8-0 | Montori Hughes draft trade: Consideration for accepted 2013 draft acquisition; Entry 81 |
+| 18 | 121 | Green Bay Packers | Green Bay Packers | 8-8-0 | Retained original pick |
+| 19 | 122 | New York Giants | New York Giants | 8-8-0 | Retained original pick |
+| 20 | 123 | San Diego Chargers | San Diego Chargers | 8-6-2 | Retained original pick |
+| 21 | 124 | Pittsburgh Steelers | Pittsburgh Steelers | 9-7-0 | Retained original pick |
+| 22 | 125 | Kansas City Chiefs | Kansas City Chiefs | 9-7-0 | Retained original pick |
+| 23 | 126 | Tampa Bay Buccaneers | Tampa Bay Buccaneers **conditional hold** | 9-7-0 | revis: One pick to NYJ: R3 if Revis remains on TB roster March 13, otherwise R4. Both alternatives reserved. |
+| 24 | 127 | New Orleans Saints | New Orleans Saints | 10-6-0 | Retained original pick |
+| 25 | 128 | Dallas Cowboys | Dallas Cowboys | 8-8-0 | Retained original pick |
+| 26 | 129 | Jacksonville Jaguars | Jacksonville Jaguars | 10-6-0 | Retained original pick |
+| 27 | 130 | St. Louis Rams | St. Louis Rams | 11-5-0 | Retained original pick |
+| 28 | 131 | New York Jets | New York Jets | 12-4-0 | Retained original pick |
+| 29 | 132 | Philadelphia Eagles | Philadelphia Eagles **conditional hold** | 8-8-0 | benn: One conditional compensation claim to TB; round and trigger undisclosed. Scope hold until terms verified; not seven debts. |
+| 30 | 133 | Tennessee Titans | Tennessee Titans | 10-6-0 | Retained original pick |
+| 31 | 134 | Minnesota Vikings | Minnesota Vikings | 13-3-0 | Retained original pick |
+| 32 | 135 | Buffalo Bills | Buffalo Bills | 9-7-0 | Retained original pick |
 
-**After Round 4:** compensatory selections pending the March 24 announcement and branch awards reconciliation; no recipients or count for this round assigned.
+**Compensatory picks after Round 4:**
+
+| Overall pick | Club | Basis | Note |
+|---|---|---|---|
+| 136 | Houston Texans | Net loss of Connor Barwin | Not tradeable |
+| 137 | New York Jets | Net loss of LaRon Landry | Not tradeable |
+| 138 | Baltimore Ravens | Net loss of Cary Williams | Not tradeable |
+| 139 | New York Giants | Net loss of Martellus Bennett | Not tradeable |
+| 140 | Pittsburgh Steelers | Net loss of Keenan Lewis | Not tradeable |
+| 141 | New York Jets | Net loss of Mike Devito | Not tradeable |
+| 142 | Houston Texans | Net loss of Glover Quin | Not tradeable |
 
 ## Round 5
 
 | Slot in round | Overall pick | Original club | Recorded owner | 2013 record | Note |
 |---|---|---|---|---|---|
-| 1 | 129 + C3 + C4 | San Francisco 49ers | San Francisco 49ers | 2-13-1 | Retained original pick |
-| 2 | 130 + C3 + C4 | Baltimore Ravens | Baltimore Ravens | 5-11-0 | Retained original pick |
-| 3 | 131 + C3 + C4 | Cincinnati Bengals | Cincinnati Bengals | 5-10-1 | Retained original pick |
-| 4 | 132 + C3 + C4 | Houston Texans | Houston Texans | 6-10-0 | Retained original pick |
-| 5 | 133 + C3 + C4 | Seattle Seahawks | Seattle Seahawks | 6-10-0 | Retained original pick |
-| 6 | 134 + C3 + C4 | Arizona Cardinals | Arizona Cardinals | 6-9-1 | Retained original pick |
-| 7 | 135 + C3 + C4 | Oakland Raiders | Seattle Seahawks | 7-9-0 | Matt Flynn: Unconditional 2014 portion; 2015 condition not settled here; Entry 81 |
-| 8 | 136 + C3 + C4 | Miami Dolphins | Miami Dolphins | 7-9-0 | Retained original pick |
-| 9 | 137 + C3 + C4 | Denver Broncos | Denver Broncos | 7-9-0 | Retained original pick |
-| 10 | 138 + C3 + C4 | Cleveland Browns | Cleveland Browns | 7-9-0 | Retained original pick |
-| 11 | 139 + C3 + C4 | Detroit Lions | Jacksonville Jaguars | 7-9-0 | Mike Thomas: Inherited pre-divergence consideration; Entry 81 |
-| 12 | 140 + C3 + C4 | Chicago Bears | Chicago Bears | 7-9-0 | Retained original pick |
-| 13 | 141 + C3 + C4 | Washington Redskins | Washington Redskins | 7-8-1 | Retained original pick |
-| 14 | 142 + C3 + C4 | Atlanta Falcons | Atlanta Falcons | 8-8-0 | Retained original pick |
-| 15 | 143 + C3 + C4 | Carolina Panthers | Carolina Panthers | 8-8-0 | Retained original pick |
-| 16 | 144 + C3 + C4 | Indianapolis Colts | Indianapolis Colts | 8-8-0 | Retained original pick |
-| 17 | 145 + C3 + C4 | Green Bay Packers | Green Bay Packers | 8-8-0 | Retained original pick |
-| 18 | 146 + C3 + C4 | New York Giants | New York Giants | 8-8-0 | Retained original pick |
-| 19 | 147 + C3 + C4 | New England Patriots | New England Patriots | 8-8-0 | Retained original pick |
-| 20 | 148 + C3 + C4 | San Diego Chargers | San Diego Chargers | 8-6-2 | Retained original pick |
-| 21 | 149 + C3 + C4 | Kansas City Chiefs | Kansas City Chiefs | 9-7-0 | Retained original pick |
-| 22 | 150 + C3 + C4 | Tampa Bay Buccaneers | Tampa Bay Buccaneers | 9-7-0 | Retained original pick |
-| 23 | 151 + C3 + C4 | Pittsburgh Steelers | Pittsburgh Steelers | 9-7-0 | Retained original pick |
-| 24 | 152 + C3 + C4 | New Orleans Saints | New Orleans Saints | 10-6-0 | Retained original pick |
-| 25 | 153 + C3 + C4 | Dallas Cowboys | Dallas Cowboys | 8-8-0 | Retained original pick |
-| 26 | 154 + C3 + C4 | Jacksonville Jaguars | Jacksonville Jaguars | 10-6-0 | Retained original pick |
-| 27 | 155 + C3 + C4 | St. Louis Rams | St. Louis Rams | 11-5-0 | Retained original pick |
-| 28 | 156 + C3 + C4 | New York Jets | New York Jets | 12-4-0 | Retained original pick |
-| 29 | 157 + C3 + C4 | Philadelphia Eagles | Philadelphia Eagles **conditional hold** | 8-8-0 | benn: One conditional compensation claim to TB; round and trigger undisclosed. Scope hold until terms verified; not seven debts. |
-| 30 | 158 + C3 + C4 | Tennessee Titans | Tennessee Titans | 10-6-0 | Retained original pick |
-| 31 | 159 + C3 + C4 | Minnesota Vikings | Minnesota Vikings | 13-3-0 | Retained original pick |
-| 32 | 160 + C3 + C4 | Buffalo Bills | Buffalo Bills | 9-7-0 | Retained original pick |
+| 1 | 143 | San Francisco 49ers | San Francisco 49ers | 2-13-1 | Retained original pick |
+| 2 | 144 | Baltimore Ravens | Baltimore Ravens | 5-11-0 | Retained original pick |
+| 3 | 145 | Cincinnati Bengals | Cincinnati Bengals | 5-10-1 | Retained original pick |
+| 4 | 146 | Houston Texans | Houston Texans | 6-10-0 | Retained original pick |
+| 5 | 147 | Seattle Seahawks | Seattle Seahawks | 6-10-0 | Retained original pick |
+| 6 | 148 | Arizona Cardinals | Arizona Cardinals | 6-9-1 | Retained original pick |
+| 7 | 149 | Oakland Raiders | Seattle Seahawks | 7-9-0 | Matt Flynn: Unconditional 2014 portion; 2015 condition not settled here; Entry 81 |
+| 8 | 150 | Miami Dolphins | Miami Dolphins | 7-9-0 | Retained original pick |
+| 9 | 151 | Denver Broncos | Denver Broncos | 7-9-0 | Retained original pick |
+| 10 | 152 | Cleveland Browns | Cleveland Browns | 7-9-0 | Retained original pick |
+| 11 | 153 | Detroit Lions | Jacksonville Jaguars | 7-9-0 | Mike Thomas: Inherited pre-divergence consideration; Entry 81 |
+| 12 | 154 | Chicago Bears | Chicago Bears | 7-9-0 | Retained original pick |
+| 13 | 155 | Washington Redskins | Washington Redskins | 7-8-1 | Retained original pick |
+| 14 | 156 | Atlanta Falcons | Atlanta Falcons | 8-8-0 | Retained original pick |
+| 15 | 157 | Carolina Panthers | Carolina Panthers | 8-8-0 | Retained original pick |
+| 16 | 158 | Indianapolis Colts | Indianapolis Colts | 8-8-0 | Retained original pick |
+| 17 | 159 | Green Bay Packers | Green Bay Packers | 8-8-0 | Retained original pick |
+| 18 | 160 | New York Giants | New York Giants | 8-8-0 | Retained original pick |
+| 19 | 161 | New England Patriots | New England Patriots | 8-8-0 | Retained original pick |
+| 20 | 162 | San Diego Chargers | San Diego Chargers | 8-6-2 | Retained original pick |
+| 21 | 163 | Kansas City Chiefs | Kansas City Chiefs | 9-7-0 | Retained original pick |
+| 22 | 164 | Tampa Bay Buccaneers | Tampa Bay Buccaneers | 9-7-0 | Retained original pick |
+| 23 | 165 | Pittsburgh Steelers | Pittsburgh Steelers | 9-7-0 | Retained original pick |
+| 24 | 166 | New Orleans Saints | New Orleans Saints | 10-6-0 | Retained original pick |
+| 25 | 167 | Dallas Cowboys | Dallas Cowboys | 8-8-0 | Retained original pick |
+| 26 | 168 | Jacksonville Jaguars | Jacksonville Jaguars | 10-6-0 | Retained original pick |
+| 27 | 169 | St. Louis Rams | St. Louis Rams | 11-5-0 | Retained original pick |
+| 28 | 170 | New York Jets | New York Jets | 12-4-0 | Retained original pick |
+| 29 | 171 | Philadelphia Eagles | Philadelphia Eagles **conditional hold** | 8-8-0 | benn: One conditional compensation claim to TB; round and trigger undisclosed. Scope hold until terms verified; not seven debts. |
+| 30 | 172 | Tennessee Titans | Tennessee Titans | 10-6-0 | Retained original pick |
+| 31 | 173 | Minnesota Vikings | Minnesota Vikings | 13-3-0 | Retained original pick |
+| 32 | 174 | Buffalo Bills | Buffalo Bills | 9-7-0 | Retained original pick |
 
-**After Round 5:** compensatory selections pending the March 24 announcement and branch awards reconciliation; no recipients or count for this round assigned.
+**Compensatory picks after Round 5:**
+
+| Overall pick | Club | Basis | Note |
+|---|---|---|---|
+| 175 | Green Bay Packers | Net loss of Erik Walden | Not tradeable |
+| 176 | New England Patriots | Net loss of Donald Thomas | Not tradeable |
+| 177 | New York Jets | Net loss of Shonn Greene | Not tradeable |
+| 178 | St. Louis Rams | Net loss of Brandon Gibson | Not tradeable |
+| 179 | Miami Dolphins | Net loss of Davone Bess | Not tradeable |
 
 ## Round 6
 
 | Slot in round | Overall pick | Original club | Recorded owner | 2013 record | Note |
 |---|---|---|---|---|---|
-| 1 | 161 + C3 + C4 + C5 | San Francisco 49ers | San Francisco 49ers | 2-13-1 | Retained original pick |
-| 2 | 162 + C3 + C4 + C5 | Baltimore Ravens | Baltimore Ravens | 5-11-0 | Retained original pick |
-| 3 | 163 + C3 + C4 + C5 | Cincinnati Bengals | Cincinnati Bengals | 5-10-1 | Retained original pick |
-| 4 | 164 + C3 + C4 + C5 | Seattle Seahawks | Seattle Seahawks | 6-10-0 | Retained original pick |
-| 5 | 165 + C3 + C4 + C5 | Houston Texans | Houston Texans | 6-10-0 | Retained original pick |
-| 6 | 166 + C3 + C4 + C5 | Arizona Cardinals | Arizona Cardinals | 6-9-1 | Retained original pick |
-| 7 | 167 + C3 + C4 + C5 | Miami Dolphins | Miami Dolphins | 7-9-0 | Retained original pick |
-| 8 | 168 + C3 + C4 + C5 | Denver Broncos | Denver Broncos | 7-9-0 | Retained original pick |
-| 9 | 169 + C3 + C4 + C5 | Cleveland Browns | Cleveland Browns | 7-9-0 | Retained original pick |
-| 10 | 170 + C3 + C4 + C5 | Detroit Lions | Detroit Lions | 7-9-0 | Retained original pick |
-| 11 | 171 + C3 + C4 + C5 | Chicago Bears | Chicago Bears | 7-9-0 | Retained original pick |
-| 12 | 172 + C3 + C4 + C5 | Oakland Raiders | Oakland Raiders | 7-9-0 | Retained original pick |
-| 13 | 173 + C3 + C4 + C5 | Washington Redskins | Washington Redskins | 7-8-1 | Retained original pick |
-| 14 | 174 + C3 + C4 + C5 | Carolina Panthers | Carolina Panthers | 8-8-0 | Retained original pick |
-| 15 | 175 + C3 + C4 + C5 | Indianapolis Colts | Indianapolis Colts | 8-8-0 | Retained original pick |
-| 16 | 176 + C3 + C4 + C5 | Green Bay Packers | Green Bay Packers | 8-8-0 | Retained original pick |
-| 17 | 177 + C3 + C4 + C5 | New York Giants | New York Giants | 8-8-0 | Retained original pick |
-| 18 | 178 + C3 + C4 + C5 | New England Patriots | New England Patriots | 8-8-0 | Retained original pick |
-| 19 | 179 + C3 + C4 + C5 | Atlanta Falcons | Atlanta Falcons | 8-8-0 | Retained original pick |
-| 20 | 180 + C3 + C4 + C5 | San Diego Chargers | San Diego Chargers | 8-6-2 | Retained original pick |
-| 21 | 181 + C3 + C4 + C5 | Tampa Bay Buccaneers | Chicago Bears | 9-7-0 | Gabe Carimi: Consideration for accepted 2013 background acquisition; Entry 81 |
-| 22 | 182 + C3 + C4 + C5 | Pittsburgh Steelers | Pittsburgh Steelers | 9-7-0 | Retained original pick |
-| 23 | 183 + C3 + C4 + C5 | Kansas City Chiefs | Kansas City Chiefs | 9-7-0 | Retained original pick |
-| 24 | 184 + C3 + C4 + C5 | New Orleans Saints | New Orleans Saints | 10-6-0 | Retained original pick |
-| 25 | 185 + C3 + C4 + C5 | Dallas Cowboys | Kansas City Chiefs | 8-8-0 | Edgar Jones: 2014 sixth for Jones and KC seventh; Entry 81 |
-| 26 | 186 + C3 + C4 + C5 | Jacksonville Jaguars | Jacksonville Jaguars | 10-6-0 | Retained original pick |
-| 27 | 187 + C3 + C4 + C5 | St. Louis Rams | St. Louis Rams | 11-5-0 | Retained original pick |
-| 28 | 188 + C3 + C4 + C5 | New York Jets | New York Jets | 12-4-0 | Retained original pick |
-| 29 | 189 + C3 + C4 + C5 | Philadelphia Eagles | Philadelphia Eagles **conditional hold** | 8-8-0 | benn: One conditional compensation claim to TB; round and trigger undisclosed. Scope hold until terms verified; not seven debts. |
-| 30 | 190 + C3 + C4 + C5 | Tennessee Titans | Tennessee Titans | 10-6-0 | Retained original pick |
-| 31 | 191 + C3 + C4 + C5 | Minnesota Vikings | Minnesota Vikings | 13-3-0 | Retained original pick |
-| 32 | 192 + C3 + C4 + C5 | Buffalo Bills | Buffalo Bills | 9-7-0 | Retained original pick |
+| 1 | 180 | San Francisco 49ers | San Francisco 49ers | 2-13-1 | Retained original pick |
+| 2 | 181 | Baltimore Ravens | Baltimore Ravens | 5-11-0 | Retained original pick |
+| 3 | 182 | Cincinnati Bengals | Cincinnati Bengals | 5-10-1 | Retained original pick |
+| 4 | 183 | Seattle Seahawks | Seattle Seahawks | 6-10-0 | Retained original pick |
+| 5 | 184 | Houston Texans | Houston Texans | 6-10-0 | Retained original pick |
+| 6 | 185 | Arizona Cardinals | Arizona Cardinals | 6-9-1 | Retained original pick |
+| 7 | 186 | Miami Dolphins | Miami Dolphins | 7-9-0 | Retained original pick |
+| 8 | 187 | Denver Broncos | Denver Broncos | 7-9-0 | Retained original pick |
+| 9 | 188 | Cleveland Browns | Cleveland Browns | 7-9-0 | Retained original pick |
+| 10 | 189 | Detroit Lions | Detroit Lions | 7-9-0 | Retained original pick |
+| 11 | 190 | Chicago Bears | Chicago Bears | 7-9-0 | Retained original pick |
+| 12 | 191 | Oakland Raiders | Oakland Raiders | 7-9-0 | Retained original pick |
+| 13 | 192 | Washington Redskins | Washington Redskins | 7-8-1 | Retained original pick |
+| 14 | 193 | Carolina Panthers | Carolina Panthers | 8-8-0 | Retained original pick |
+| 15 | 194 | Indianapolis Colts | Washington Redskins | 8-8-0 | Colts picks traded to Washington, March 31, 2014; 2014 ledger Entry 105 |
+| 16 | 195 | Green Bay Packers | Green Bay Packers | 8-8-0 | Retained original pick |
+| 17 | 196 | New York Giants | New York Giants | 8-8-0 | Retained original pick |
+| 18 | 197 | New England Patriots | New England Patriots | 8-8-0 | Retained original pick |
+| 19 | 198 | Atlanta Falcons | Atlanta Falcons | 8-8-0 | Retained original pick |
+| 20 | 199 | San Diego Chargers | San Diego Chargers | 8-6-2 | Retained original pick |
+| 21 | 200 | Tampa Bay Buccaneers | Chicago Bears | 9-7-0 | Gabe Carimi: Consideration for accepted 2013 background acquisition; Entry 81 |
+| 22 | 201 | Pittsburgh Steelers | Pittsburgh Steelers | 9-7-0 | Retained original pick |
+| 23 | 202 | Kansas City Chiefs | Kansas City Chiefs | 9-7-0 | Retained original pick |
+| 24 | 203 | New Orleans Saints | New Orleans Saints | 10-6-0 | Retained original pick |
+| 25 | 204 | Dallas Cowboys | Kansas City Chiefs | 8-8-0 | Edgar Jones: 2014 sixth for Jones and KC seventh; Entry 81 |
+| 26 | 205 | Jacksonville Jaguars | Jacksonville Jaguars | 10-6-0 | Retained original pick |
+| 27 | 206 | St. Louis Rams | St. Louis Rams | 11-5-0 | Retained original pick |
+| 28 | 207 | New York Jets | New York Jets | 12-4-0 | Retained original pick |
+| 29 | 208 | Philadelphia Eagles | Philadelphia Eagles **conditional hold** | 8-8-0 | benn: One conditional compensation claim to TB; round and trigger undisclosed. Scope hold until terms verified; not seven debts. |
+| 30 | 209 | Tennessee Titans | Tennessee Titans | 10-6-0 | Retained original pick |
+| 31 | 210 | Minnesota Vikings | Minnesota Vikings | 13-3-0 | Retained original pick |
+| 32 | 211 | Buffalo Bills | Buffalo Bills | 9-7-0 | Retained original pick |
 
-**After Round 6:** compensatory selections pending the March 24 announcement and branch awards reconciliation; no recipients or count for this round assigned.
+**Compensatory picks after Round 6:**
+
+| Overall pick | Club | Basis | Note |
+|---|---|---|---|
+| 212 | Cincinnati Bengals | Net loss of Manny Lawson | Not tradeable |
+| 213 | St. Louis Rams | Net loss of Bradley Fletcher | Not tradeable |
+| 214 | Pittsburgh Steelers | Net loss of Rashard Mendenhall | Not tradeable |
+| 215 | New England Patriots | Net loss of Patrick Chung | Not tradeable |
 
 ## Round 7
 
 | Slot in round | Overall pick | Original club | Recorded owner | 2013 record | Note |
 |---|---|---|---|---|---|
-| 1 | 193 + C3 + C4 + C5 + C6 | San Francisco 49ers | San Francisco 49ers | 2-13-1 | Retained original pick |
-| 2 | 194 + C3 + C4 + C5 + C6 | Baltimore Ravens | Indianapolis Colts | 5-11-0 | A.Q. Shipley: Roster condition met in accepted branch Week 1 lineup; Entry 81 |
-| 3 | 195 + C3 + C4 + C5 + C6 | Cincinnati Bengals | Cincinnati Bengals | 5-10-1 | Retained original pick |
-| 4 | 196 + C3 + C4 + C5 + C6 | Houston Texans | Houston Texans | 6-10-0 | Retained original pick |
-| 5 | 197 + C3 + C4 + C5 + C6 | Seattle Seahawks | Seattle Seahawks | 6-10-0 | Retained original pick |
-| 6 | 198 + C3 + C4 + C5 + C6 | Arizona Cardinals | Oakland Raiders | 6-9-1 | Carson Palmer: Thirteen-start condition met; branch QB1 and sole passer in all sixteen games; Entry 81 |
-| 7 | 199 + C3 + C4 + C5 + C6 | Denver Broncos | Denver Broncos | 7-9-0 | Retained original pick |
-| 8 | 200 + C3 + C4 + C5 + C6 | Cleveland Browns | Cleveland Browns | 7-9-0 | Retained original pick |
-| 9 | 201 + C3 + C4 + C5 + C6 | Detroit Lions | Detroit Lions | 7-9-0 | Retained original pick |
-| 10 | 202 + C3 + C4 + C5 + C6 | Chicago Bears | Chicago Bears **conditional hold** | 7-9-0 | rosario: Conditional seventh to DAL; playing-time threshold unverified. Branch appearances alone do not prove the clause. |
-| 11 | 203 + C3 + C4 + C5 + C6 | Oakland Raiders | Oakland Raiders | 7-9-0 | Retained original pick |
-| 12 | 204 + C3 + C4 + C5 + C6 | Miami Dolphins | Miami Dolphins | 7-9-0 | Retained original pick |
-| 13 | 205 + C3 + C4 + C5 + C6 | Washington Redskins | Washington Redskins | 7-8-1 | Retained original pick |
-| 14 | 206 + C3 + C4 + C5 + C6 | Indianapolis Colts | St. Louis Rams | 8-8-0 | Josh Gordy: Inherited pre-divergence consideration; Entry 81 |
-| 15 | 207 + C3 + C4 + C5 + C6 | Green Bay Packers | Green Bay Packers | 8-8-0 | Retained original pick |
-| 16 | 208 + C3 + C4 + C5 + C6 | New York Giants | New York Giants | 8-8-0 | Retained original pick |
-| 17 | 209 + C3 + C4 + C5 + C6 | New England Patriots | New England Patriots | 8-8-0 | Retained original pick |
-| 18 | 210 + C3 + C4 + C5 + C6 | Atlanta Falcons | Atlanta Falcons | 8-8-0 | Retained original pick |
-| 19 | 211 + C3 + C4 + C5 + C6 | Carolina Panthers | San Francisco 49ers | 8-8-0 | Pre-divergence Colin Jones trade, reported August 31, 2012 |
-| 20 | 212 + C3 + C4 + C5 + C6 | San Diego Chargers | San Diego Chargers | 8-6-2 | Retained original pick |
-| 21 | 213 + C3 + C4 + C5 + C6 | Pittsburgh Steelers | Pittsburgh Steelers | 9-7-0 | Retained original pick |
-| 22 | 214 + C3 + C4 + C5 + C6 | Kansas City Chiefs | Dallas Cowboys | 9-7-0 | Edgar Jones: Counterpart of Dallas sixth in same Jones trade; Entry 81 |
-| 23 | 215 + C3 + C4 + C5 + C6 | Tampa Bay Buccaneers | Tampa Bay Buccaneers | 9-7-0 | Retained original pick |
-| 24 | 216 + C3 + C4 + C5 + C6 | New Orleans Saints | San Francisco 49ers | 10-6-0 | Parys Haralson: Roster condition met in accepted branch Week 1 lineup; Entry 81 |
-| 25 | 217 + C3 + C4 + C5 + C6 | Dallas Cowboys | Dallas Cowboys | 8-8-0 | Retained original pick |
-| 26 | 218 + C3 + C4 + C5 + C6 | Jacksonville Jaguars | Jacksonville Jaguars | 10-6-0 | Retained original pick |
-| 27 | 219 + C3 + C4 + C5 + C6 | St. Louis Rams | St. Louis Rams | 11-5-0 | Retained original pick |
-| 28 | 220 + C3 + C4 + C5 + C6 | New York Jets | New York Jets | 12-4-0 | Retained original pick |
-| 29 | 221 + C3 + C4 + C5 + C6 | Philadelphia Eagles | Philadelphia Eagles **conditional hold** | 8-8-0 | benn: One conditional compensation claim to TB; round and trigger undisclosed. Scope hold until terms verified; not seven debts. |
-| 30 | 222 + C3 + C4 + C5 + C6 | Tennessee Titans | Tennessee Titans | 10-6-0 | Retained original pick |
-| 31 | 223 + C3 + C4 + C5 + C6 | Minnesota Vikings | Minnesota Vikings | 13-3-0 | Retained original pick |
-| 32 | 224 + C3 + C4 + C5 + C6 | Buffalo Bills | Buffalo Bills | 9-7-0 | Retained original pick |
+| 1 | 216 | San Francisco 49ers | San Francisco 49ers | 2-13-1 | Retained original pick |
+| 2 | 217 | Baltimore Ravens | Indianapolis Colts | 5-11-0 | A.Q. Shipley: Roster condition met in accepted branch Week 1 lineup; Entry 81 |
+| 3 | 218 | Cincinnati Bengals | Cincinnati Bengals | 5-10-1 | Retained original pick |
+| 4 | 219 | Houston Texans | Houston Texans | 6-10-0 | Retained original pick |
+| 5 | 220 | Seattle Seahawks | Seattle Seahawks | 6-10-0 | Retained original pick |
+| 6 | 221 | Arizona Cardinals | Oakland Raiders | 6-9-1 | Carson Palmer: Thirteen-start condition met; branch QB1 and sole passer in all sixteen games; Entry 81 |
+| 7 | 222 | Denver Broncos | Denver Broncos | 7-9-0 | Retained original pick |
+| 8 | 223 | Cleveland Browns | Cleveland Browns | 7-9-0 | Retained original pick |
+| 9 | 224 | Detroit Lions | Detroit Lions | 7-9-0 | Retained original pick |
+| 10 | 225 | Chicago Bears | Chicago Bears **conditional hold** | 7-9-0 | rosario: Conditional seventh to DAL; playing-time threshold unverified. Branch appearances alone do not prove the clause. |
+| 11 | 226 | Oakland Raiders | Oakland Raiders | 7-9-0 | Retained original pick |
+| 12 | 227 | Miami Dolphins | Miami Dolphins | 7-9-0 | Retained original pick |
+| 13 | 228 | Washington Redskins | Washington Redskins | 7-8-1 | Retained original pick |
+| 14 | 229 | Indianapolis Colts | St. Louis Rams | 8-8-0 | Josh Gordy: Inherited pre-divergence consideration; Entry 81 |
+| 15 | 230 | Green Bay Packers | Green Bay Packers | 8-8-0 | Retained original pick |
+| 16 | 231 | New York Giants | New York Giants | 8-8-0 | Retained original pick |
+| 17 | 232 | New England Patriots | New England Patriots | 8-8-0 | Retained original pick |
+| 18 | 233 | Atlanta Falcons | Atlanta Falcons | 8-8-0 | Retained original pick |
+| 19 | 234 | Carolina Panthers | San Francisco 49ers | 8-8-0 | Pre-divergence Colin Jones trade, reported August 31, 2012 |
+| 20 | 235 | San Diego Chargers | San Diego Chargers | 8-6-2 | Retained original pick |
+| 21 | 236 | Pittsburgh Steelers | Pittsburgh Steelers | 9-7-0 | Retained original pick |
+| 22 | 237 | Kansas City Chiefs | Dallas Cowboys | 9-7-0 | Edgar Jones: Counterpart of Dallas sixth in same Jones trade; Entry 81 |
+| 23 | 238 | Tampa Bay Buccaneers | Tampa Bay Buccaneers | 9-7-0 | Retained original pick |
+| 24 | 239 | New Orleans Saints | San Francisco 49ers | 10-6-0 | Parys Haralson: Roster condition met in accepted branch Week 1 lineup; Entry 81 |
+| 25 | 240 | Dallas Cowboys | Dallas Cowboys | 8-8-0 | Retained original pick |
+| 26 | 241 | Jacksonville Jaguars | Jacksonville Jaguars | 10-6-0 | Retained original pick |
+| 27 | 242 | St. Louis Rams | St. Louis Rams | 11-5-0 | Retained original pick |
+| 28 | 243 | New York Jets | New York Jets | 12-4-0 | Retained original pick |
+| 29 | 244 | Philadelphia Eagles | Philadelphia Eagles **conditional hold** | 8-8-0 | benn: One conditional compensation claim to TB; round and trigger undisclosed. Scope hold until terms verified; not seven debts. |
+| 30 | 245 | Tennessee Titans | Tennessee Titans | 10-6-0 | Retained original pick |
+| 31 | 246 | Minnesota Vikings | Minnesota Vikings | 13-3-0 | Retained original pick |
+| 32 | 247 | Buffalo Bills | Buffalo Bills | 9-7-0 | Retained original pick |
 
-**After Round 7:** compensatory selections pending the March 24 announcement and branch awards reconciliation; no recipients or count for this round assigned.
+**Compensatory picks after Round 7:**
 
-## Pending compensatory selections
+| Overall pick | Club | Basis | Note |
+|---|---|---|---|
+| 248 | Cincinnati Bengals | Net loss of Pat Sims | Not tradeable |
+| 249 | New England Patriots | Net loss of Danny Woodhead | Not tradeable |
+| 250 | Washington Redskins | Net loss of Lorenzo Alexander | Not tradeable |
+| 251 | Cincinnati Bengals | Net loss of Dan Skuta | Not tradeable |
+| 252 | New Orleans Saints | Net loss of Jonathan Casillas | Not tradeable |
+| 253 | San Francisco 49ers | Fill pick to reach 32 | Not tradeable |
+| 254 | Baltimore Ravens | Fill pick to reach 32 | Not tradeable |
+| 255 | Cincinnati Bengals | Fill pick to reach 32 | Not tradeable |
+| 256 | Houston Texans | Fill pick to reach 32 | Not tradeable |
 
-The 2014 awards depend on qualifying **2013 free-agent losses and signings**, not the upcoming 2014 market. The announcement gate is **March 24, 2014**. Resolve branch eligibility and awards without importing the real recipients; the private formula's exact weights are not supplied by this generator. In 2014 these picks cannot be traded.
+## Compensatory selections
 
-| Appended after | Count | Owner / overall numbering |
-|---|---|---|
-| Round 3 | C3: pending | Pending; no real award list imported |
-| Round 4 | C4: pending | Pending; no real award list imported |
-| Round 5 | C5: pending | Pending; no real award list imported |
-| Round 6 | C6: pending | Pending; no real award list imported |
-| Round 7 | C7: pending | Pending; no real award list imported |
+Announced **March 24, 2014**. The 32 picks rest on each club's qualifying **2013** free-agent losses and signings in the branch. The NFL formula's weights are unpublished, so the branch applies its own [adopted method](compensatory/method.json) to [recorded inputs](compensatory/inputs.json); no real award list is imported. [Announcement and club-by-club detail](compensatory/announcement.md); [awards receipt](compensatory/awards.json).
 
-The league's 32 supplemental choices are additional to the 224 ordinary allocations. Until their round distribution is reconciled, later overall pick expressions must retain their offsets. The ownership audit records the three specific open claims; there is no blanket outside-club ownership gap.
+| Round | Picks | Overall numbers |
+|---|---:|---|
+| 3 | 7 | 97-103 |
+| 4 | 7 | 136-142 |
+| 5 | 5 | 175-179 |
+| 6 | 4 | 212-215 |
+| 7 | 9 | 248-256 |
+
+Compensatory picks cannot be traded in the 2014 draft. The ownership audit records the three specific open claims on ordinary picks; there is no blanket outside-club ownership gap.

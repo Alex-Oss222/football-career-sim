@@ -85,7 +85,7 @@ Voluntary throughout. Nothing is required before April 21 or in any voluntary ph
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/jeremy_mincey.json`
-- `career/2014/offseason/contract_status_register.md` (lines 15, 92); `career/2014/calendar.md` (lines 18, 26, 31)
+- `career/2014/finances/player_contracts/contract_status.md` (lines 15, 92); `career/2014/calendar.md` (lines 18, 26, 31)
 - `career/2013/roster.md` (line 95); `state/04_Roster_and_Staff_Register.md` (line 216); `career/2013/depth_chart.json` (line 13)
 - `career/2013/offseason/initial_roster.md` (line 70); `career/2013/offseason/roster_evaluation.md` (lines 3, 23-24)
 - `career/2013/offseason/training_camp/output.md` (lines 33, 77, 106); `training_camp/standouts.md` (line 14)

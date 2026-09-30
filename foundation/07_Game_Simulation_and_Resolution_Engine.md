@@ -6,11 +6,11 @@
 
 **Runtime status:** `READY — LIVE PREFLIGHT STILL REQUIRED`
 
-**Document version:** `1.0-runtime`
+**Document version:** `1.1-runtime`
 
-**Last verified:** `2026-09-19`
+**Last verified:** `2026-09-30`
 
-**Last Document 7 content-changing update:** `2026-09-19 - retained the verified 2013 runtime while defining the private pre-draw freeze as an immutable event-ID + canonical packet SHA-256 commitment, with reconstruction required to match that commitment for replay/correction.`
+**Last Document 7 content-changing update:** `2026-09-30 - added user-requested annual player sheets with visible /10 personnel summaries while keeping engine probabilities, transition priors and private matchup conversion separate; established player capabilities now carry forward across seasons by default.`
 
 **Supersedes:** Nothing. This is an addition to the existing package, not a replacement of any of Documents 1-6.
 
@@ -20,7 +20,7 @@ Documents 1 through 6 were modeled on a separate legal-simulation project's docu
 
 - Document 1 §3 already separates user-controlled decisions from routine implementation the simulator may carry out on its own.
 - Document 1 §7 already defines a layered fog-of-war so the coach only ever learns what a plausible in-world channel would tell him.
-- Document 1 §9 already states the *philosophy* of bounded randomness and decision-quality-independent-of-outcome, and Document 1 §11 already defines pregame/live-game/postgame structure, four game-detail modes (Executive, Play-Calling, Critical-Decision, Full Tactical), and a list of pause triggers.
+- Document 1 §9 already states the *philosophy* of bounded randomness and decision-quality-independent-of-outcome, and Document 1 §11 already defines pregame/live-game/postgame structure, four game-detail modes (Executive, Selected-Play, Critical-Decision, Full Tactical), and a list of pause triggers.
 - Document 2 §12 already defines full autonomy for transactions between two non-protagonist clubs, and a real-draft-class-then-procedural-generation rule.
 - Document 3 §10 already defines a compressed-turn procedure (batch the whole decision, don't narrate every step) for hiring searches — directly reusable for game weeks.
 - Document 6 §6 already defines the bookkeeping format for a game ledger (drive summaries, scoring ledger, per-snap deltas) down to the last reconciliation check.
@@ -33,7 +33,7 @@ Documents 1-6 are unchanged by this document except for the small cross-referenc
 
 Document 2 §1 already says: *"This document never contains hidden simulator facts... If the platform supports private state, essential hidden state remains there. Otherwise, leave the matter undetermined until a plausible event resolves it."* This document is that private state.
 
-To compare a pass offense to a pass defense, weight a fourth-and-two, or decide whether a hit produces a fumble, the engine needs *some* internal, quantitative handle on player and unit quality. Documents 1 and 3 forbid ever showing the user a number, grade, tier score, or hidden rating — and that rule is unchanged. The resolution is the same one Document 2 already anticipated: the numbers live in a separate store the coach-facing documents (1-6) never reference and the user never sees. The user only ever sees the same five-tier qualitative language (elite / plus / average / below-average / replacement-level) already used elsewhere in this package for evaluation, plus narrated football outcomes. No probability, percentage, delta, or roll may ever appear in coach-facing text. This is a hard rule, not a style preference — a leak of a bare number here is the one failure mode every design reviewer flagged as the real risk of this whole document, and it is the one thing to check for in any output this engine produces.
+To compare a pass offense to a pass defense, weight a fourth-and-two, or decide whether a hit produces a fumble, the engine needs *some* internal, quantitative handle on player and unit quality. The engine's probabilities, transition priors, matchup conversion, deltas and rolls remain private and must never appear in coach-facing text. The user-requested annual NFL player sheet is a narrow exception for visible personnel summaries: it may show a dated /10 grade and plain-language NFL standing so season-to-season progression is readable. That visible grade is not the engine number, is not potential, is not a probability, and may not be fed directly into a draw. The resolver still consumes the underlying evidence-backed player capabilities, assignments and matchups.
 
 **Governance.** The Engine State store keeps its own append-only correction ledger, mirroring Document 6's discipline but stored separately: every calibration change, anchor correction, or formula revision is appended with what changed and why, nothing is silently overwritten, and a staged change becomes canon only on an explicit "commit closed" line — the same atomic-commit habit Document 1 §13.2 already uses for coach-facing canon. Unlike Documents 1-6, the Engine Ledger is never coach-facing and is never quoted to the user, even in summarized form.
 
@@ -118,7 +118,7 @@ Bounded, matchup-weighted, seeded, and fully logged in the Engine Ledger (condit
 
 ### 3.5 Granularity dial and manual escalation
 
-Document 1 §11.2 already defines four game-detail modes (Executive, Play-Calling, Critical-Decision, Full Tactical). That existing dial sets the user's default narration depth for their own games. Independently of the dial, any sequence automatically escalates to denser, near-play-by-play narration at flagged spotlight moments (money downs, the two-minute drill, goal-to-go, trick plays, a live 4th-down call) or whenever the user names a sequence and asks to "go under the hood" on it — this escalation is prose density only, never an extra user turn. The possession kernel still owns score/outcome resolution; kernel 2013.4 then allocates each resolved drive into a deterministic public snap ledger without consuming additional outcome RNG draws.
+Document 1 §11.2 already defines four game-detail modes (Executive, Selected-Play, Critical-Decision, Full Tactical). That existing dial sets the user's default narration depth for their own games. Independently of the dial, any sequence automatically escalates to denser, near-play-by-play narration at flagged spotlight moments (money downs, the two-minute drill, goal-to-go, trick plays, a live 4th-down call) or whenever the user names a sequence and asks to "go under the hood" on it — this escalation is prose density only, never an extra user turn. The possession kernel still owns score/outcome resolution; kernel 2013.4 then allocates each resolved drive into a deterministic public snap ledger without consuming additional outcome RNG draws.
 
 ### 3.6 Long-run consistency check
 

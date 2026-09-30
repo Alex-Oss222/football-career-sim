@@ -126,12 +126,27 @@ def validate(root=ROOT):
         from runtime.seasons import current_record
         state = (root/'state/05_Current_Season_State.md').read_text()
         register = (root/'state/04_Roster_and_Staff_Register.md').read_text()
-        ledger = current_record('ledger', root).read_text()
+        ledger = '\n'.join((root/p).read_text() for p in mapping.get('ledger_history', [])) + '\n' + current_record('ledger', root).read_text()
         roster = current_record('roster', root).read_text()
     except (OSError, ValueError) as exc:
         return [f'Cannot read required continuity input: {exc}']
     for path in mapping['required_files']:
         require((root/path).is_file(), f'Missing required file: {path}')
+
+    try:
+        from scripts.build_annual_player_sheets import repository_profile_errors
+        errors.extend(repository_profile_errors(root))
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append('Invalid annual Player Sheets: ' + str(exc))
+
+    try:
+        from scripts.season_handoff import check as check_handoff
+        from runtime.seasons import SeasonPaths
+        handoff = SeasonPaths(mapping['active_season'], root).record('closeouts/season_handoff.json')
+        if handoff.exists():
+            errors.extend(check_handoff(root, json.loads(handoff.read_text())))
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append('Invalid annual handoff: ' + str(exc))
 
     entries = {int(n) for n in re.findall(r'^## Entry (\d+)\b', ledger, re.M)}
     master = re.search(r'\| Master date/time \| (.*?) \|', state)
@@ -166,7 +181,7 @@ def validate(root=ROOT):
                 require(through <= current_date, f'{name}: evidence exceeds master clock')
                 require(output.get('event_entry') in entries, f'{name}: unknown ledger entry')
             plan = (root/paths['plan']).read_text()
-            require('](output.md)' in plan and '](standouts.md)' in plan,
+            require(f']({Path(paths["output"]).name})' in plan and f']({Path(paths["standouts"]).name})' in plan,
                     f'{name}: plan must point to execution records')
         except (OSError, ValueError, KeyError, TypeError) as exc:
             errors.append(f'{name}: invalid/missing phase evidence: {exc}')
@@ -184,7 +199,8 @@ def validate(root=ROOT):
                     f'Document {n}: stale source-version hash in Document 5')
         index = register.split('### Current player index', 1)[1].split('### Players no longer', 1)[0]
         register_names = re.findall(r'^\| ([^|]+?) \| JAX-', index, re.M)
-        body = roster.split('## 3. Current controlled players', 1)[1].split('\n## 4.', 1)[0]
+        body = re.split(r'^## (?:3\. )?Current controlled players\s*$', roster, maxsplit=1, flags=re.M)[1]
+        body = re.split(r'^## ', body, maxsplit=1, flags=re.M)[0]
         roster_names = [m.strip() for m in re.findall(r'^\| ([^|]+?) \|', body, re.M)
                         if m.strip() != 'Player' and not m.strip().startswith('-')]
         require(len(register_names) == len(set(register_names)), 'Duplicate player in register')
@@ -208,6 +224,18 @@ def validate(root=ROOT):
         errors.extend(check_player_ages(root))
     except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
         errors.append(f'Invalid player birth-date/age evidence: {exc}')
+
+    # The user's team stat tracker is a generated reader view. Any stale page
+    # (a game closed without re-rendering) fails validation.
+    try:
+        import sys
+        if str(ROOT) not in sys.path:
+            sys.path.insert(0, str(ROOT))
+        from scripts.render_team_tracker import check as check_team_tracker
+        for tracker_year in sorted(p.name for p in (root/'career').iterdir() if p.name.isdigit()):
+            errors.extend(check_team_tracker(root, int(tracker_year)))
+    except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
+        errors.append(f'Invalid team tracker: {exc}')
 
     # Season statistics are generated artifacts. Rebuild them from the durable
     # closed-game receipts so stale caches or hand-edited views fail closed.
@@ -307,8 +335,8 @@ def validate(root=ROOT):
         except (OSError, ValueError, KeyError, TypeError) as exc:
             errors.append(f'Draft order cannot be rebuilt from receipts: {exc}')
     # The opponent inventory is deliberately undated; validate it without
-    # substituting the historical standings or opening the schedule gate.
-    if (root/'career/2014/schedule/rotation_2014.json').exists():
+    # importing results or opening the schedule gate.
+    if (root/'career/2014/regular_season/schedule/rotation_2014.json').exists():
         try:
             from runtime.schedule_2014 import check as check_2014_opponents
             errors.extend(check_2014_opponents(root))
@@ -367,12 +395,32 @@ def validate(root=ROOT):
                 require((paths.stats / name).is_file() and (paths.stats / name).read_text() == expected,
                         '2014 generated statistics missing or stale: ' + name)
             from scripts.render_standings import render as standings_view
-            standings_path = paths.career / 'standings.md'
+            standings_path = paths.record('standings.md')
             require(standings_path.is_file() and standings_path.read_text() == standings_view(2014, regular),
                     '2014 standings missing or stale')
-            errors.extend(award_coverage_errors(regular, paths.career / 'awards'))
+            errors.extend(award_coverage_errors(regular, paths.awards))
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append('2014 season records invalid: ' + str(exc))
+
+    try:
+        from scripts.render_trade_pages import check as check_trade_pages
+        from scripts.render_award_pages import render_pages as award_pages
+        from runtime.seasons import SeasonPaths
+        year = mapping['active_season']
+        if year >= 2014:
+            # Only compare prepared presentation pages; never run a draw.
+            trade_source = SeasonPaths(year, root).record('trades/trades.md')
+            if trade_source.exists():
+                errors.extend(check_trade_pages(root, year))
+            folder = SeasonPaths(year, root).awards
+            if (folder/'week_01/README.md').exists():
+                results = json.loads((folder/'results.json').read_text()) if (folder/'results.json').exists() else {}
+                method = json.loads((folder/'methodology.json').read_text()) if results else None
+                for relative, text in award_pages(year, results, method).items():
+                    path = folder/relative
+                    require(path.is_file() and path.read_text() == text, 'Award page missing or stale: '+relative)
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append('Season reading pages invalid: '+str(exc))
 
     allowed_books = set(mapping['active_playbooks']) | {'career/playbook/README.md'}
     def readable(path):
@@ -382,7 +430,7 @@ def validate(root=ROOT):
         if '.git' in path.parts or not readable(path):
             continue
         content = without_code(path.read_text())
-        for dest in re.findall(r'(?<!!)\[[^\]\n]+\]\(([^\s)]+)\)', content):
+        for dest in re.findall(r'\[[^\]\n]+\]\(([^\s)]+)\)', content):
             parts = urlsplit(dest)
             if parts.scheme or parts.netloc:
                 continue

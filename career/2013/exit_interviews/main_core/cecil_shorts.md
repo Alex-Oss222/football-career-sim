@@ -214,7 +214,7 @@ Evidence caveat: the Week 7 and Week 8 records state that kernel 2013.6 (Weeks 4
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/cecil_shorts.json` (register, contract, season and postseason totals and game lines, no receipt injuries, no shortlists)
 - `career/2013/roster.md` line 52; `career/2013/depth_chart.json` line 10; `career/2013/ledger.md` line 759 (Entry 36, WR1 from Week 2)
-- `career/2014/offseason/contract_status_register.md` line 83
+- `career/2014/finances/player_contracts/contract_status.md` line 83
 - `career/2013/stats/team_player_stats.md` lines 30, 136, 154 (average, longest reception, fumbles, returns, rushing long)
 - `career/2013/ledger.md` line 988 (Entry 44, 2013.6 labels and targets) and line 1850 (season summary)
 - `career/2013/offseason/otas/output.md` lines 38, 55, 98, 164, 194, 204; `otas/standouts.md` line 14

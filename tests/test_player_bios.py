@@ -8,6 +8,7 @@ from unittest import mock
 
 from runtime import player_bios, week_inputs
 from scripts import render_player_ages
+from runtime.seasons import current_record
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -45,11 +46,13 @@ class PlayerBiographyTests(unittest.TestCase):
 
     def test_current_views_and_practice_squad_are_complete(self):
         self.assertEqual(render_player_ages.check(), [])
-        roster = (ROOT / "career/2013/roster.md").read_text()
+        roster = current_record('roster').read_text()
         names = [n for n, _, _ in render_player_ages.controlled_rows(roster)]
-        self.assertEqual(len(names), 61)
-        self.assertEqual(len(set(names)), 61)
-        self.assertIn("| Tyler Bray | QB | 1991-12-27 | 22 | Practice squad |", roster)
+        # 78 controlled at May 12, 2014 (Entry 108: 53 plus nine draftees and
+        # 17 undrafted rookies; Entry 110: Rackley traded); the six
+        # reserve/future players also appear in the section 4 history table.
+        self.assertEqual(len(set(names)), 78)
+        self.assertIn("| Tyler Bray | QB | 1991-12-27 | 22 | Offseason roster (reserve/future contract effective March 11) |", roster)
 
     def test_regeneration_replaces_stale_age_and_is_idempotent(self):
         text = "<!-- player-ages-as-of: 2013-12-29 -->\n\n| Player | Pos | DOB | Age | Status |\n|---|---|---|---:|---|\n| Mike Harris | CB | 1900-01-01 | 99 | Active 53 |\n"
@@ -61,9 +64,9 @@ class PlayerBiographyTests(unittest.TestCase):
     def test_stale_views_are_rejected_even_without_a_birthday(self):
         with tempfile.TemporaryDirectory(dir=ROOT.parent) as d:
             root = Path(d)
+            current = [current_record(name).relative_to(ROOT) for name in ('roster','player_ages','background_depth')]
             for path in (player_bios.REGISTRY, "docs/repository_map.json", "state/05_Current_Season_State.md",
-                         "state/04_Roster_and_Staff_Register.md", "career/2013/roster.md",
-                         "career/2013/player_ages.md", "library/data/2013_week1_depth_charts.json"):
+                         "state/04_Roster_and_Staff_Register.md", *current):
                 dest = root / path
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 dest.write_bytes((ROOT / path).read_bytes())

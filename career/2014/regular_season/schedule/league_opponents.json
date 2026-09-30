@@ -1,0 +1,1379 @@
+{
+  "schema_version": 1,
+  "season": 2014,
+  "as_of": "2014-02-02",
+  "status": "OPPONENTS_ONLY",
+  "fixture_release": "2014-04-23T20:00:00-04:00",
+  "rotation_sha256": "613a72c420080b93e03d5fa3771f19b327a623998c5409abb174cb48069eb9e3",
+  "calendar_policy": "historical",
+  "division_order_2013": {
+    "AFC East": [
+      "New England Patriots",
+      "New York Jets",
+      "Miami Dolphins",
+      "Buffalo Bills"
+    ],
+    "AFC North": [
+      "Cincinnati Bengals",
+      "Pittsburgh Steelers",
+      "Baltimore Ravens",
+      "Cleveland Browns"
+    ],
+    "AFC South": [
+      "Indianapolis Colts",
+      "Tennessee Titans",
+      "Jacksonville Jaguars",
+      "Houston Texans"
+    ],
+    "AFC West": [
+      "Denver Broncos",
+      "Kansas City Chiefs",
+      "San Diego Chargers",
+      "Oakland Raiders"
+    ],
+    "NFC East": [
+      "Philadelphia Eagles",
+      "Dallas Cowboys",
+      "New York Giants",
+      "Washington Redskins"
+    ],
+    "NFC North": [
+      "Green Bay Packers",
+      "Chicago Bears",
+      "Detroit Lions",
+      "Minnesota Vikings"
+    ],
+    "NFC South": [
+      "Carolina Panthers",
+      "New Orleans Saints",
+      "Atlanta Falcons",
+      "Tampa Bay Buccaneers"
+    ],
+    "NFC West": [
+      "Seattle Seahawks",
+      "San Francisco 49ers",
+      "Arizona Cardinals",
+      "St. Louis Rams"
+    ]
+  },
+  "fixed_games": [
+    {
+      "home": "Oakland Raiders",
+      "away": "Miami Dolphins",
+      "date": "2014-09-28",
+      "week": 4,
+      "venue": "Wembley Stadium, London",
+      "neutral_site": true,
+      "source_ids": [
+        "london",
+        "london_verify"
+      ]
+    },
+    {
+      "home": "Atlanta Falcons",
+      "away": "Detroit Lions",
+      "date": "2014-10-26",
+      "week": 8,
+      "venue": "Wembley Stadium, London",
+      "neutral_site": true,
+      "source_ids": [
+        "london",
+        "london_verify"
+      ]
+    },
+    {
+      "home": "Jacksonville Jaguars",
+      "away": "Dallas Cowboys",
+      "date": "2014-11-09",
+      "week": 10,
+      "venue": "Wembley Stadium, London",
+      "neutral_site": true,
+      "source_ids": [
+        "london",
+        "london_verify"
+      ]
+    }
+  ],
+  "games": [
+    {
+      "home": "Arizona Cardinals",
+      "away": "Detroit Lions",
+      "component": "same_place"
+    },
+    {
+      "home": "Arizona Cardinals",
+      "away": "Kansas City Chiefs",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Arizona Cardinals",
+      "away": "Philadelphia Eagles",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Arizona Cardinals",
+      "away": "San Diego Chargers",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Arizona Cardinals",
+      "away": "San Francisco 49ers",
+      "component": "division"
+    },
+    {
+      "home": "Arizona Cardinals",
+      "away": "Seattle Seahawks",
+      "component": "division"
+    },
+    {
+      "home": "Arizona Cardinals",
+      "away": "St. Louis Rams",
+      "component": "division"
+    },
+    {
+      "home": "Arizona Cardinals",
+      "away": "Washington Redskins",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Atlanta Falcons",
+      "away": "Arizona Cardinals",
+      "component": "same_place"
+    },
+    {
+      "home": "Atlanta Falcons",
+      "away": "Carolina Panthers",
+      "component": "division"
+    },
+    {
+      "home": "Atlanta Falcons",
+      "away": "Chicago Bears",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Atlanta Falcons",
+      "away": "Cleveland Browns",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Atlanta Falcons",
+      "away": "Detroit Lions",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Atlanta Falcons",
+      "away": "New Orleans Saints",
+      "component": "division"
+    },
+    {
+      "home": "Atlanta Falcons",
+      "away": "Pittsburgh Steelers",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Atlanta Falcons",
+      "away": "Tampa Bay Buccaneers",
+      "component": "division"
+    },
+    {
+      "home": "Baltimore Ravens",
+      "away": "Atlanta Falcons",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Baltimore Ravens",
+      "away": "Carolina Panthers",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Baltimore Ravens",
+      "away": "Cincinnati Bengals",
+      "component": "division"
+    },
+    {
+      "home": "Baltimore Ravens",
+      "away": "Cleveland Browns",
+      "component": "division"
+    },
+    {
+      "home": "Baltimore Ravens",
+      "away": "Jacksonville Jaguars",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Baltimore Ravens",
+      "away": "Pittsburgh Steelers",
+      "component": "division"
+    },
+    {
+      "home": "Baltimore Ravens",
+      "away": "San Diego Chargers",
+      "component": "same_place"
+    },
+    {
+      "home": "Baltimore Ravens",
+      "away": "Tennessee Titans",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Buffalo Bills",
+      "away": "Cleveland Browns",
+      "component": "same_place"
+    },
+    {
+      "home": "Buffalo Bills",
+      "away": "Green Bay Packers",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Buffalo Bills",
+      "away": "Kansas City Chiefs",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Buffalo Bills",
+      "away": "Miami Dolphins",
+      "component": "division"
+    },
+    {
+      "home": "Buffalo Bills",
+      "away": "Minnesota Vikings",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Buffalo Bills",
+      "away": "New England Patriots",
+      "component": "division"
+    },
+    {
+      "home": "Buffalo Bills",
+      "away": "New York Jets",
+      "component": "division"
+    },
+    {
+      "home": "Buffalo Bills",
+      "away": "San Diego Chargers",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Carolina Panthers",
+      "away": "Atlanta Falcons",
+      "component": "division"
+    },
+    {
+      "home": "Carolina Panthers",
+      "away": "Chicago Bears",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Carolina Panthers",
+      "away": "Cleveland Browns",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Carolina Panthers",
+      "away": "Detroit Lions",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Carolina Panthers",
+      "away": "New Orleans Saints",
+      "component": "division"
+    },
+    {
+      "home": "Carolina Panthers",
+      "away": "Pittsburgh Steelers",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Carolina Panthers",
+      "away": "Seattle Seahawks",
+      "component": "same_place"
+    },
+    {
+      "home": "Carolina Panthers",
+      "away": "Tampa Bay Buccaneers",
+      "component": "division"
+    },
+    {
+      "home": "Chicago Bears",
+      "away": "Buffalo Bills",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Chicago Bears",
+      "away": "Dallas Cowboys",
+      "component": "same_place"
+    },
+    {
+      "home": "Chicago Bears",
+      "away": "Detroit Lions",
+      "component": "division"
+    },
+    {
+      "home": "Chicago Bears",
+      "away": "Green Bay Packers",
+      "component": "division"
+    },
+    {
+      "home": "Chicago Bears",
+      "away": "Miami Dolphins",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Chicago Bears",
+      "away": "Minnesota Vikings",
+      "component": "division"
+    },
+    {
+      "home": "Chicago Bears",
+      "away": "New Orleans Saints",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Chicago Bears",
+      "away": "Tampa Bay Buccaneers",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Cincinnati Bengals",
+      "away": "Atlanta Falcons",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Cincinnati Bengals",
+      "away": "Baltimore Ravens",
+      "component": "division"
+    },
+    {
+      "home": "Cincinnati Bengals",
+      "away": "Carolina Panthers",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Cincinnati Bengals",
+      "away": "Cleveland Browns",
+      "component": "division"
+    },
+    {
+      "home": "Cincinnati Bengals",
+      "away": "Denver Broncos",
+      "component": "same_place"
+    },
+    {
+      "home": "Cincinnati Bengals",
+      "away": "Jacksonville Jaguars",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Cincinnati Bengals",
+      "away": "Pittsburgh Steelers",
+      "component": "division"
+    },
+    {
+      "home": "Cincinnati Bengals",
+      "away": "Tennessee Titans",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Cleveland Browns",
+      "away": "Baltimore Ravens",
+      "component": "division"
+    },
+    {
+      "home": "Cleveland Browns",
+      "away": "Cincinnati Bengals",
+      "component": "division"
+    },
+    {
+      "home": "Cleveland Browns",
+      "away": "Houston Texans",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Cleveland Browns",
+      "away": "Indianapolis Colts",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Cleveland Browns",
+      "away": "New Orleans Saints",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Cleveland Browns",
+      "away": "Oakland Raiders",
+      "component": "same_place"
+    },
+    {
+      "home": "Cleveland Browns",
+      "away": "Pittsburgh Steelers",
+      "component": "division"
+    },
+    {
+      "home": "Cleveland Browns",
+      "away": "Tampa Bay Buccaneers",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Dallas Cowboys",
+      "away": "Arizona Cardinals",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Dallas Cowboys",
+      "away": "Houston Texans",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Dallas Cowboys",
+      "away": "Indianapolis Colts",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Dallas Cowboys",
+      "away": "New Orleans Saints",
+      "component": "same_place"
+    },
+    {
+      "home": "Dallas Cowboys",
+      "away": "New York Giants",
+      "component": "division"
+    },
+    {
+      "home": "Dallas Cowboys",
+      "away": "Philadelphia Eagles",
+      "component": "division"
+    },
+    {
+      "home": "Dallas Cowboys",
+      "away": "San Francisco 49ers",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Dallas Cowboys",
+      "away": "Washington Redskins",
+      "component": "division"
+    },
+    {
+      "home": "Denver Broncos",
+      "away": "Arizona Cardinals",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Denver Broncos",
+      "away": "Buffalo Bills",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Denver Broncos",
+      "away": "Indianapolis Colts",
+      "component": "same_place"
+    },
+    {
+      "home": "Denver Broncos",
+      "away": "Kansas City Chiefs",
+      "component": "division"
+    },
+    {
+      "home": "Denver Broncos",
+      "away": "Miami Dolphins",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Denver Broncos",
+      "away": "Oakland Raiders",
+      "component": "division"
+    },
+    {
+      "home": "Denver Broncos",
+      "away": "San Diego Chargers",
+      "component": "division"
+    },
+    {
+      "home": "Denver Broncos",
+      "away": "San Francisco 49ers",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Detroit Lions",
+      "away": "Buffalo Bills",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Detroit Lions",
+      "away": "Chicago Bears",
+      "component": "division"
+    },
+    {
+      "home": "Detroit Lions",
+      "away": "Green Bay Packers",
+      "component": "division"
+    },
+    {
+      "home": "Detroit Lions",
+      "away": "Miami Dolphins",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Detroit Lions",
+      "away": "Minnesota Vikings",
+      "component": "division"
+    },
+    {
+      "home": "Detroit Lions",
+      "away": "New Orleans Saints",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Detroit Lions",
+      "away": "New York Giants",
+      "component": "same_place"
+    },
+    {
+      "home": "Detroit Lions",
+      "away": "Tampa Bay Buccaneers",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Green Bay Packers",
+      "away": "Atlanta Falcons",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Green Bay Packers",
+      "away": "Carolina Panthers",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Green Bay Packers",
+      "away": "Chicago Bears",
+      "component": "division"
+    },
+    {
+      "home": "Green Bay Packers",
+      "away": "Detroit Lions",
+      "component": "division"
+    },
+    {
+      "home": "Green Bay Packers",
+      "away": "Minnesota Vikings",
+      "component": "division"
+    },
+    {
+      "home": "Green Bay Packers",
+      "away": "New England Patriots",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Green Bay Packers",
+      "away": "New York Jets",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Green Bay Packers",
+      "away": "Philadelphia Eagles",
+      "component": "same_place"
+    },
+    {
+      "home": "Houston Texans",
+      "away": "Baltimore Ravens",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Houston Texans",
+      "away": "Buffalo Bills",
+      "component": "same_place"
+    },
+    {
+      "home": "Houston Texans",
+      "away": "Cincinnati Bengals",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Houston Texans",
+      "away": "Indianapolis Colts",
+      "component": "division"
+    },
+    {
+      "home": "Houston Texans",
+      "away": "Jacksonville Jaguars",
+      "component": "division"
+    },
+    {
+      "home": "Houston Texans",
+      "away": "Philadelphia Eagles",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Houston Texans",
+      "away": "Tennessee Titans",
+      "component": "division"
+    },
+    {
+      "home": "Houston Texans",
+      "away": "Washington Redskins",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Indianapolis Colts",
+      "away": "Baltimore Ravens",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Indianapolis Colts",
+      "away": "Cincinnati Bengals",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Indianapolis Colts",
+      "away": "Houston Texans",
+      "component": "division"
+    },
+    {
+      "home": "Indianapolis Colts",
+      "away": "Jacksonville Jaguars",
+      "component": "division"
+    },
+    {
+      "home": "Indianapolis Colts",
+      "away": "New England Patriots",
+      "component": "same_place"
+    },
+    {
+      "home": "Indianapolis Colts",
+      "away": "Philadelphia Eagles",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Indianapolis Colts",
+      "away": "Tennessee Titans",
+      "component": "division"
+    },
+    {
+      "home": "Indianapolis Colts",
+      "away": "Washington Redskins",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Jacksonville Jaguars",
+      "away": "Cleveland Browns",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Jacksonville Jaguars",
+      "away": "Dallas Cowboys",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Jacksonville Jaguars",
+      "away": "Houston Texans",
+      "component": "division"
+    },
+    {
+      "home": "Jacksonville Jaguars",
+      "away": "Indianapolis Colts",
+      "component": "division"
+    },
+    {
+      "home": "Jacksonville Jaguars",
+      "away": "Miami Dolphins",
+      "component": "same_place"
+    },
+    {
+      "home": "Jacksonville Jaguars",
+      "away": "New York Giants",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Jacksonville Jaguars",
+      "away": "Pittsburgh Steelers",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Jacksonville Jaguars",
+      "away": "Tennessee Titans",
+      "component": "division"
+    },
+    {
+      "home": "Kansas City Chiefs",
+      "away": "Denver Broncos",
+      "component": "division"
+    },
+    {
+      "home": "Kansas City Chiefs",
+      "away": "New England Patriots",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Kansas City Chiefs",
+      "away": "New York Jets",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Kansas City Chiefs",
+      "away": "Oakland Raiders",
+      "component": "division"
+    },
+    {
+      "home": "Kansas City Chiefs",
+      "away": "San Diego Chargers",
+      "component": "division"
+    },
+    {
+      "home": "Kansas City Chiefs",
+      "away": "Seattle Seahawks",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Kansas City Chiefs",
+      "away": "St. Louis Rams",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Kansas City Chiefs",
+      "away": "Tennessee Titans",
+      "component": "same_place"
+    },
+    {
+      "home": "Miami Dolphins",
+      "away": "Baltimore Ravens",
+      "component": "same_place"
+    },
+    {
+      "home": "Miami Dolphins",
+      "away": "Buffalo Bills",
+      "component": "division"
+    },
+    {
+      "home": "Miami Dolphins",
+      "away": "Green Bay Packers",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Miami Dolphins",
+      "away": "Kansas City Chiefs",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Miami Dolphins",
+      "away": "Minnesota Vikings",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Miami Dolphins",
+      "away": "New England Patriots",
+      "component": "division"
+    },
+    {
+      "home": "Miami Dolphins",
+      "away": "New York Jets",
+      "component": "division"
+    },
+    {
+      "home": "Miami Dolphins",
+      "away": "San Diego Chargers",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Minnesota Vikings",
+      "away": "Atlanta Falcons",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Minnesota Vikings",
+      "away": "Carolina Panthers",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Minnesota Vikings",
+      "away": "Chicago Bears",
+      "component": "division"
+    },
+    {
+      "home": "Minnesota Vikings",
+      "away": "Detroit Lions",
+      "component": "division"
+    },
+    {
+      "home": "Minnesota Vikings",
+      "away": "Green Bay Packers",
+      "component": "division"
+    },
+    {
+      "home": "Minnesota Vikings",
+      "away": "New England Patriots",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Minnesota Vikings",
+      "away": "New York Jets",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Minnesota Vikings",
+      "away": "Washington Redskins",
+      "component": "same_place"
+    },
+    {
+      "home": "New England Patriots",
+      "away": "Buffalo Bills",
+      "component": "division"
+    },
+    {
+      "home": "New England Patriots",
+      "away": "Chicago Bears",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "New England Patriots",
+      "away": "Cincinnati Bengals",
+      "component": "same_place"
+    },
+    {
+      "home": "New England Patriots",
+      "away": "Denver Broncos",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "New England Patriots",
+      "away": "Detroit Lions",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "New England Patriots",
+      "away": "Miami Dolphins",
+      "component": "division"
+    },
+    {
+      "home": "New England Patriots",
+      "away": "New York Jets",
+      "component": "division"
+    },
+    {
+      "home": "New England Patriots",
+      "away": "Oakland Raiders",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "New Orleans Saints",
+      "away": "Atlanta Falcons",
+      "component": "division"
+    },
+    {
+      "home": "New Orleans Saints",
+      "away": "Baltimore Ravens",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "New Orleans Saints",
+      "away": "Carolina Panthers",
+      "component": "division"
+    },
+    {
+      "home": "New Orleans Saints",
+      "away": "Cincinnati Bengals",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "New Orleans Saints",
+      "away": "Green Bay Packers",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "New Orleans Saints",
+      "away": "Minnesota Vikings",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "New Orleans Saints",
+      "away": "San Francisco 49ers",
+      "component": "same_place"
+    },
+    {
+      "home": "New Orleans Saints",
+      "away": "Tampa Bay Buccaneers",
+      "component": "division"
+    },
+    {
+      "home": "New York Giants",
+      "away": "Arizona Cardinals",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "New York Giants",
+      "away": "Atlanta Falcons",
+      "component": "same_place"
+    },
+    {
+      "home": "New York Giants",
+      "away": "Dallas Cowboys",
+      "component": "division"
+    },
+    {
+      "home": "New York Giants",
+      "away": "Houston Texans",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "New York Giants",
+      "away": "Indianapolis Colts",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "New York Giants",
+      "away": "Philadelphia Eagles",
+      "component": "division"
+    },
+    {
+      "home": "New York Giants",
+      "away": "San Francisco 49ers",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "New York Giants",
+      "away": "Washington Redskins",
+      "component": "division"
+    },
+    {
+      "home": "New York Jets",
+      "away": "Buffalo Bills",
+      "component": "division"
+    },
+    {
+      "home": "New York Jets",
+      "away": "Chicago Bears",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "New York Jets",
+      "away": "Denver Broncos",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "New York Jets",
+      "away": "Detroit Lions",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "New York Jets",
+      "away": "Miami Dolphins",
+      "component": "division"
+    },
+    {
+      "home": "New York Jets",
+      "away": "New England Patriots",
+      "component": "division"
+    },
+    {
+      "home": "New York Jets",
+      "away": "Oakland Raiders",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "New York Jets",
+      "away": "Pittsburgh Steelers",
+      "component": "same_place"
+    },
+    {
+      "home": "Oakland Raiders",
+      "away": "Arizona Cardinals",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Oakland Raiders",
+      "away": "Buffalo Bills",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Oakland Raiders",
+      "away": "Denver Broncos",
+      "component": "division"
+    },
+    {
+      "home": "Oakland Raiders",
+      "away": "Houston Texans",
+      "component": "same_place"
+    },
+    {
+      "home": "Oakland Raiders",
+      "away": "Kansas City Chiefs",
+      "component": "division"
+    },
+    {
+      "home": "Oakland Raiders",
+      "away": "Miami Dolphins",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Oakland Raiders",
+      "away": "San Diego Chargers",
+      "component": "division"
+    },
+    {
+      "home": "Oakland Raiders",
+      "away": "San Francisco 49ers",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Philadelphia Eagles",
+      "away": "Carolina Panthers",
+      "component": "same_place"
+    },
+    {
+      "home": "Philadelphia Eagles",
+      "away": "Dallas Cowboys",
+      "component": "division"
+    },
+    {
+      "home": "Philadelphia Eagles",
+      "away": "Jacksonville Jaguars",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Philadelphia Eagles",
+      "away": "New York Giants",
+      "component": "division"
+    },
+    {
+      "home": "Philadelphia Eagles",
+      "away": "Seattle Seahawks",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Philadelphia Eagles",
+      "away": "St. Louis Rams",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Philadelphia Eagles",
+      "away": "Tennessee Titans",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Philadelphia Eagles",
+      "away": "Washington Redskins",
+      "component": "division"
+    },
+    {
+      "home": "Pittsburgh Steelers",
+      "away": "Baltimore Ravens",
+      "component": "division"
+    },
+    {
+      "home": "Pittsburgh Steelers",
+      "away": "Cincinnati Bengals",
+      "component": "division"
+    },
+    {
+      "home": "Pittsburgh Steelers",
+      "away": "Cleveland Browns",
+      "component": "division"
+    },
+    {
+      "home": "Pittsburgh Steelers",
+      "away": "Houston Texans",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Pittsburgh Steelers",
+      "away": "Indianapolis Colts",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Pittsburgh Steelers",
+      "away": "Kansas City Chiefs",
+      "component": "same_place"
+    },
+    {
+      "home": "Pittsburgh Steelers",
+      "away": "New Orleans Saints",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Pittsburgh Steelers",
+      "away": "Tampa Bay Buccaneers",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "San Diego Chargers",
+      "away": "Denver Broncos",
+      "component": "division"
+    },
+    {
+      "home": "San Diego Chargers",
+      "away": "Jacksonville Jaguars",
+      "component": "same_place"
+    },
+    {
+      "home": "San Diego Chargers",
+      "away": "Kansas City Chiefs",
+      "component": "division"
+    },
+    {
+      "home": "San Diego Chargers",
+      "away": "New England Patriots",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "San Diego Chargers",
+      "away": "New York Jets",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "San Diego Chargers",
+      "away": "Oakland Raiders",
+      "component": "division"
+    },
+    {
+      "home": "San Diego Chargers",
+      "away": "Seattle Seahawks",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "San Diego Chargers",
+      "away": "St. Louis Rams",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "San Francisco 49ers",
+      "away": "Arizona Cardinals",
+      "component": "division"
+    },
+    {
+      "home": "San Francisco 49ers",
+      "away": "Chicago Bears",
+      "component": "same_place"
+    },
+    {
+      "home": "San Francisco 49ers",
+      "away": "Kansas City Chiefs",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "San Francisco 49ers",
+      "away": "Philadelphia Eagles",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "San Francisco 49ers",
+      "away": "San Diego Chargers",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "San Francisco 49ers",
+      "away": "Seattle Seahawks",
+      "component": "division"
+    },
+    {
+      "home": "San Francisco 49ers",
+      "away": "St. Louis Rams",
+      "component": "division"
+    },
+    {
+      "home": "San Francisco 49ers",
+      "away": "Washington Redskins",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Seattle Seahawks",
+      "away": "Arizona Cardinals",
+      "component": "division"
+    },
+    {
+      "home": "Seattle Seahawks",
+      "away": "Dallas Cowboys",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Seattle Seahawks",
+      "away": "Denver Broncos",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Seattle Seahawks",
+      "away": "Green Bay Packers",
+      "component": "same_place"
+    },
+    {
+      "home": "Seattle Seahawks",
+      "away": "New York Giants",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Seattle Seahawks",
+      "away": "Oakland Raiders",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Seattle Seahawks",
+      "away": "San Francisco 49ers",
+      "component": "division"
+    },
+    {
+      "home": "Seattle Seahawks",
+      "away": "St. Louis Rams",
+      "component": "division"
+    },
+    {
+      "home": "St. Louis Rams",
+      "away": "Arizona Cardinals",
+      "component": "division"
+    },
+    {
+      "home": "St. Louis Rams",
+      "away": "Dallas Cowboys",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "St. Louis Rams",
+      "away": "Denver Broncos",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "St. Louis Rams",
+      "away": "Minnesota Vikings",
+      "component": "same_place"
+    },
+    {
+      "home": "St. Louis Rams",
+      "away": "New York Giants",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "St. Louis Rams",
+      "away": "Oakland Raiders",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "St. Louis Rams",
+      "away": "San Francisco 49ers",
+      "component": "division"
+    },
+    {
+      "home": "St. Louis Rams",
+      "away": "Seattle Seahawks",
+      "component": "division"
+    },
+    {
+      "home": "Tampa Bay Buccaneers",
+      "away": "Atlanta Falcons",
+      "component": "division"
+    },
+    {
+      "home": "Tampa Bay Buccaneers",
+      "away": "Baltimore Ravens",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Tampa Bay Buccaneers",
+      "away": "Carolina Panthers",
+      "component": "division"
+    },
+    {
+      "home": "Tampa Bay Buccaneers",
+      "away": "Cincinnati Bengals",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Tampa Bay Buccaneers",
+      "away": "Green Bay Packers",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Tampa Bay Buccaneers",
+      "away": "Minnesota Vikings",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Tampa Bay Buccaneers",
+      "away": "New Orleans Saints",
+      "component": "division"
+    },
+    {
+      "home": "Tampa Bay Buccaneers",
+      "away": "St. Louis Rams",
+      "component": "same_place"
+    },
+    {
+      "home": "Tennessee Titans",
+      "away": "Cleveland Browns",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Tennessee Titans",
+      "away": "Dallas Cowboys",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Tennessee Titans",
+      "away": "Houston Texans",
+      "component": "division"
+    },
+    {
+      "home": "Tennessee Titans",
+      "away": "Indianapolis Colts",
+      "component": "division"
+    },
+    {
+      "home": "Tennessee Titans",
+      "away": "Jacksonville Jaguars",
+      "component": "division"
+    },
+    {
+      "home": "Tennessee Titans",
+      "away": "New York Giants",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Tennessee Titans",
+      "away": "New York Jets",
+      "component": "same_place"
+    },
+    {
+      "home": "Tennessee Titans",
+      "away": "Pittsburgh Steelers",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Washington Redskins",
+      "away": "Dallas Cowboys",
+      "component": "division"
+    },
+    {
+      "home": "Washington Redskins",
+      "away": "Jacksonville Jaguars",
+      "component": "interconference_rotation"
+    },
+    {
+      "home": "Washington Redskins",
+      "away": "New York Giants",
+      "component": "division"
+    },
+    {
+      "home": "Washington Redskins",
+      "away": "Philadelphia Eagles",
+      "component": "division"
+    },
+    {
+      "home": "Washington Redskins",
+      "away": "Seattle Seahawks",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Washington Redskins",
+      "away": "St. Louis Rams",
+      "component": "conference_rotation"
+    },
+    {
+      "home": "Washington Redskins",
+      "away": "Tampa Bay Buccaneers",
+      "component": "same_place"
+    },
+    {
+      "home": "Washington Redskins",
+      "away": "Tennessee Titans",
+      "component": "interconference_rotation"
+    }
+  ]
+}

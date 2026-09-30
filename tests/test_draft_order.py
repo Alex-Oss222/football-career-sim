@@ -131,9 +131,9 @@ class SevenRoundTests(unittest.TestCase):
         second = self.asset(2, "Jacksonville Jaguars")
         self.assertEqual((second["owner"], second["base_overall_options"]), ("Washington Redskins", [58]))
         owned = [r for r in self.rows if r["owner"] == "Jacksonville Jaguars"]
-        self.assertEqual(len(owned), 8)
-        self.assertEqual([r["round"] for r in owned], [1, 1, 3, 4, 5, 5, 6, 7])
-        self.assertEqual(draft_order.ownership_for(2015, 2, "Jacksonville Jaguars", self.register)[0], "Washington Redskins")
+        self.assertEqual(len(owned), 9)  # No. 38 (Entry 99); Nos. 82 and 194 in (Entry 104) and out to Washington (Entry 105)
+        self.assertEqual([r["round"] for r in owned], [1, 1, 2, 3, 4, 5, 5, 6, 7])
+        self.assertEqual(draft_order.ownership_for(2015, 2, "Jacksonville Jaguars", self.register)[0], "Jacksonville Jaguars")  # returned by Washington (Entry 105)
         self.assertEqual(self.asset(1, "St. Louis Rams")["owner"], "St. Louis Rams")
 
     def test_traded_pick_follows_original_club_rotation_not_current_owner(self):
@@ -142,16 +142,38 @@ class SevenRoundTests(unittest.TestCase):
         self.assertEqual(carolina["slot_options"], [19])
         self.assertEqual(self.asset(7, "San Francisco 49ers")["slot_options"], [1])
 
-    def test_compensatory_unknowns_are_retained_and_start_after_round_three(self):
-        self.assertIsNone(self.register["compensatory"]["round_counts"])
-        self.assertEqual(self.register["compensatory"]["qualifying_free_agency_year"], 2013)
+    def test_compensatory_awards_fix_overall_numbers_after_round_three(self):
+        comp = self.register["compensatory"]
+        self.assertEqual(comp["status"], "announced")  # March 24, 2014, Entry 100
+        self.assertEqual(comp["qualifying_free_agency_year"], 2013)
+        self.assertEqual(sum(comp["round_counts"].values()), 32)
         for rnd in range(1, 8):
             row = self.asset(rnd, "Jacksonville Jaguars")
             self.assertEqual(row["compensatory_after_rounds"], list(range(3, rnd)))
         self.assertEqual(self.asset(3, "Jacksonville Jaguars")["base_overall_options"], [90])
         from scripts.render_draft_order import overall
+        counts = comp["round_counts"]
         self.assertEqual(overall(self.asset(4, "Jacksonville Jaguars")), "122 + C3")
-        self.assertEqual(overall(self.asset(7, "Jacksonville Jaguars")), "218 + C3 + C4 + C5 + C6")
+        self.assertEqual(overall(self.asset(4, "Jacksonville Jaguars"), counts), "129")
+        self.assertEqual(overall(self.asset(7, "Jacksonville Jaguars"), counts), "241")
+
+    def test_compensatory_awards_follow_the_adopted_method(self):
+        import json
+        from scripts import resolve_compensatory_picks as comp
+        awards = json.loads(comp.OUT.read_text())
+        self.assertEqual(awards, comp.resolve())
+        self.assertEqual(len(awards["picks"]), 32)
+        self.assertEqual({p["round"] for p in awards["picks"]} <= set(range(3, 8)), True)
+        per_club = {}
+        for p in awards["picks"]:
+            if p["kind"] == "formula":
+                per_club[p["club"]] = per_club.get(p["club"], 0) + 1
+        self.assertLessEqual(max(per_club.values()), 4)
+        self.assertEqual([p for p in awards["picks"] if p["club"] == "Jacksonville Jaguars"], [])
+        self.assertEqual(awards["method_sha256"], comp.sha(comp.METHOD))
+        overall = [p["overall"] for p in awards["picks"]]
+        self.assertEqual(len(set(overall)), 32)
+        self.assertEqual(max(overall), 256)
 
     def test_ownership_register_rejects_double_ownership_and_invalid_assets(self):
         bad = []
@@ -215,7 +237,7 @@ class RecordedDrawAndOwnershipTests(unittest.TestCase):
     def test_all_assets_have_one_current_owner_and_specific_hold_status(self):
         self.assertEqual(len(self.rows),224)
         self.assertEqual(len({(r['draft_year'],r['round'],r['club']) for r in self.rows}),224)
-        self.assertEqual(sum(r['ownership_status']=='recorded' for r in self.rows),17)
+        self.assertEqual(sum(r['ownership_status']=='recorded' for r in self.rows),20)  # No. 38 (Entry 99); Nos. 82 and 194 (Entries 104 and 105)
         self.assertEqual(sum(r['ownership_status']=='encumbered' for r in self.rows),10)
         self.assertFalse(any(r['ownership_status']=='provisional' for r in self.rows))
         self.assertEqual(sum(sum(r['owner']==c for r in self.rows) for c in draft_order.TEAMS),224)
@@ -225,7 +247,7 @@ class RecordedDrawAndOwnershipTests(unittest.TestCase):
         self.assertEqual(row['owner'],'Jacksonville Jaguars')
         self.assertEqual(row['base_overall_options'],[139])
         self.assertEqual(row['compensatory_after_rounds'],[3,4])
-        self.assertEqual(sum(r['owner']=='Jacksonville Jaguars' for r in self.rows),8)
+        self.assertEqual(sum(r['owner']=='Jacksonville Jaguars' for r in self.rows),9)  # No. 38 (Entry 99); Nos. 82 and 194 to Washington (Entry 105)
 
     def test_specific_claims_cannot_be_spent_or_booked_twice(self):
         self.assertEqual({c['id'] for c in self.register['conditional_claims']},{'revis','benn','rosario'})
@@ -244,7 +266,7 @@ class RecordedDrawAndOwnershipTests(unittest.TestCase):
 
     def test_register_rejects_future_transfer_missing_club_and_overlapping_claim(self):
         variants=[]
-        bad=copy.deepcopy(self.register); bad['transfers'][0]['effective_date']='2014-03-12'; variants.append(bad)
+        bad=copy.deepcopy(self.register); bad['transfers'][0]['effective_date']='2014-06-01'; variants.append(bad)
         bad=copy.deepcopy(self.register); bad['audited_clubs'].pop(); variants.append(bad)
         bad=copy.deepcopy(self.register); bad['conditional_claims'].append(copy.deepcopy(bad['conditional_claims'][0])); variants.append(bad)
         bad=copy.deepcopy(self.register); bad['conditional_claims'][0]['original_club']='Jacksonville Jaguars'; bad['conditional_claims'][0]['round_options']=[2]; variants.append(bad)

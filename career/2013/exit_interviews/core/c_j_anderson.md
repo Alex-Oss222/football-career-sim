@@ -93,7 +93,7 @@ Voluntary. The program may begin no earlier than April 21; until then nothing is
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/c_j_anderson.json`
-- `career/2014/offseason/contract_status_register.md` line 62
+- `career/2014/finances/player_contracts/contract_status.md` line 62
 - `career/2013/offseason/draft/udfa_signings.md` line 15
 - `career/2013/roster.md` line 35; `state/04_Roster_and_Staff_Register.md` line 191; `state/05_Current_Season_State.md` lines 57, 59
 - `career/2013/stats/team_player_stats.md` lines 23, 123, 150
@@ -110,7 +110,7 @@ Voluntary. The program may begin no earlier than April 21; until then nothing is
 - `career/2013/postseason/week_18_jacksonville_at_kansas_city/output.md` lines 67, 118
 - `career/2013/postseason/week_19_jacksonville_at_tennessee/output.md` lines 69, 71, 122, 185
 - `career/2013/coaching_staff.md` lines 219-234 (Spencer), 420-443 (Lowry: returner evaluation, coverage-lane discipline)
-- `career/2013/ledger.md` Entry 75; `career/2014/offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)
+- `career/2013/ledger.md` Entry 75; `career/2014/early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)
 - `career/2013/offseason/player_onboarding_and_development_framework.md` section 2 (Good, Better, Best) and section 3
 - `career/2013/offseason/the_prowl_program_identity.md` ("Good. Better. Best.", "Earn Responsibility", "Discipline Approach")
 - `career/2013/offseason/the_prowl_player_readiness_standard.md` sections 7 and 10

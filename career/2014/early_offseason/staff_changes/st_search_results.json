@@ -1,0 +1,83 @@
+{
+ "procedure": "st-coordinator-search-2014-v1",
+ "event_id": "2014-st-coordinator-search-v1",
+ "snapshot": "892acee1c74ccbc2f9e6c487ee7a9a351411624e20918153e34ccffc4a18996c",
+ "method_sha256": "579325ac687d24027d01ac5bb1df1fff74b6cf8ce142a63abf9c431dbf6b5023",
+ "code_sha256": "d8d91e1d8a319dfc57511709eb2153b35ef1bb564932584111b6024bb161c33f",
+ "ledger_entry": "Entry 84",
+ "result_ref": "3ab395498d8e7914f0389d6333a5d6bc4f718c334cc1ac5b585dedd8ae81999c",
+ "packet_sha256": "599bb86f4952dc931fcaec0e112bdf2b3736751b36ac9c412b7f97443bb5aa3f",
+ "hired": {
+  "coach": "Mike Westhoff",
+  "date": "2014-02-11",
+  "salary": 750000,
+  "term": "2014-2015",
+  "counter": true
+ },
+ "events": [
+  {
+   "date": "2014-02-03",
+   "coach": "Bobby April",
+   "event": "status",
+   "detail": "re-signed by Oakland for 2014 before the approach"
+  },
+  {
+   "date": "2014-02-03",
+   "coach": "Bobby April",
+   "event": "request",
+   "detail": "permission to interview for special teams coordinator"
+  },
+  {
+   "date": "2014-02-04",
+   "coach": "Bobby April",
+   "event": "permission refused",
+   "detail": "lateral (rule T3); the symmetric default policy refuses it"
+  },
+  {
+   "date": "2014-02-05",
+   "coach": "Mike Westhoff",
+   "event": "contact",
+   "detail": "unattached; no permission needed"
+  },
+  {
+   "date": "2014-02-07",
+   "coach": "Mike Westhoff",
+   "event": "willing",
+   "detail": "agrees to interview"
+  },
+  {
+   "date": "2014-02-10",
+   "coach": "Mike Westhoff",
+   "event": "interview",
+   "detail": ""
+  },
+  {
+   "date": "2014-02-11",
+   "coach": "Mike Westhoff",
+   "event": "funding confirmed",
+   "detail": "Caldwell confirms the allocation within the plan's ceiling"
+  },
+  {
+   "date": "2014-02-11",
+   "coach": "Mike Westhoff",
+   "event": "offer",
+   "detail": "$625,000 a season, 2014-2015, common terms"
+  },
+  {
+   "date": "2014-02-11",
+   "coach": "Mike Westhoff",
+   "event": "counter",
+   "detail": "asks for the ceiling; met at $750,000 under Stone's instruction"
+  },
+  {
+   "date": "2014-02-11",
+   "coach": "Mike Westhoff",
+   "event": "accepted",
+   "detail": "$750,000 a season"
+  }
+ ],
+ "draws": {
+  "april_resigned": 0.3116,
+  "westhoff_willing": 0.1455
+ }
+}

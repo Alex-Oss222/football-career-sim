@@ -121,15 +121,15 @@ The 2014 postseason format (12 clubs, seeding, byes, reseeding) is the same rule
 
 | Credited seasons | 2014 minimum | Label |
 |---|---:|---|
-| 0 | $420,000 | Confirmed (Steelers Depot 2011-2014 table; Pro Football Rumors; both search texts state $420K for 2014) |
-| 1 | not recorded | **Unverified**: no search text independently stated the value; left unresolved |
-| 2 | not recorded | **Unverified**: no search text independently stated the value; left unresolved |
-| 3 | $645,000 | **Unverified**: one search text stated it, and that text may echo the query wording |
-| 4 to 6 | $730,000 | **Unverified**: same caveat as 3 |
-| 7 to 9 | $855,000 | **Unverified**: same caveat as 3 |
-| 10 or more | $955,000 | Confirmed (Steelers Depot; Pro Football Rumors) |
+| 0 | $420,000 | Confirmed |
+| 1 | $495,000 | Confirmed |
+| 2 | $570,000 | Confirmed |
+| 3 | $645,000 | Confirmed |
+| 4 to 6 | $730,000 | Confirmed |
+| 7 to 9 | $855,000 | Confirmed |
+| 10 or more | $955,000 | Confirmed |
 
-Sources: https://steelersdepot.com/2011/07/2011-2014-nfl-minimum-base-salaries/ ; https://www.profootballrumors.com/2014/02/minimum-maximum-salaries ; https://overthecap.com/collective-bargaining-agreement/article/26/section/1 ; https://overthecap.com/minimum-salaries . A future session with page access should read the Article 26 table directly before any minimum-salary accounting at the unverified tiers.
+**Direct verification, September 29, 2026:** the [original August 4, 2011 CBA](https://nflps.org/wp-content/uploads/2012/05/collective-bargaining-agreement-2011-2020.pdf), Article 26 section 1, printed page 146 (PDF page 161), supplies the entire 2014 column. A separate check of [Over the Cap's minimum-salary table](https://overthecap.com/minimum-salaries) matches all seven tiers. This supersedes the earlier search-text-only uncertainty. The schedule was established by the 2011 agreement; verifying it does not advance the branch clock. Individual credited seasons, including those of five futures signings, remain separate unresolved inputs.
 
 ### 2b. 2014 franchise tag values by position (non-exclusive; cap = $133M)
 
@@ -199,7 +199,7 @@ Sources: https://www.bigcatcountry.com/2014/3/6/5478230/2014-jaguars-restricted-
 
 **Jacksonville's 2014 home/away split for the rotation games (standings-independent, set by the formula):** home against **Cleveland, Pittsburgh, New York Giants and Dallas** (the Dallas game designated as Jacksonville's London home game, C35); away at **Baltimore, Cincinnati, Philadelphia and Washington**. For S4, Jacksonville **hosts the same-place AFC East club** and **visits the same-place AFC West club**. Label: **Confirmed** (Big Cat Country December 29, 2013, and the Jaguars.com home-schedule release; the Titans' reported road games at Baltimore, Cincinnati and Philadelphia fit the same grid).
 
-**Branch derivation rule.** The S4 opponents come from the **branch's** final 2013 AFC East and AFC West standings, matched to the branch's final 2013 AFC South place for Jacksonville (and likewise for every other club). Do not import the real "third-place" opponents: Jacksonville's real 2013 place and the real 2013 standings differ from the branch. Game dates, times and the bye come only from the April 23, 2014 release gate (C17), and the branch schedule owner decides how real date rails map onto branch pairings.
+**Superseded branch derivation rule (Entry 101 now requires the actual historical schedule).** The S4 opponents come from the **branch's** final 2013 AFC East and AFC West standings, matched to the branch's final 2013 AFC South place for Jacksonville (and likewise for every other club). Do not import the real "third-place" opponents: Jacksonville's real 2013 place and the real 2013 standings differ from the branch. Game dates, times and the bye come only from the April 23, 2014 release gate (C17), and the branch schedule owner decides how real date rails map onto branch pairings.
 
 Sources for §3: https://www.bigcatcountry.com/2013/12/29/5254478/jaguars-nfl-schedule-2014-opponents (dated URL) ; https://www.jaguars.com/news/jaguars-announce-2014-home-schedule-11617599 ; https://www.espn.com/blog/nflnation/post/_/id/110538/opponents-for-the-2014-nfl-season ; https://bleacherreport.com/articles/2023214-2014-tennessee-titans-schedule-full-listing-of-dates-times-and-tv-info ; https://operations.nfl.com/calendar-events/nfl-schedule/making-the-schedule
 
@@ -237,7 +237,7 @@ Sources for §3: https://www.bigcatcountry.com/2013/12/29/5254478/jaguars-nfl-sc
 - OTA-day six-hour and two-hour limits; the 90-minute on-field limit outside OTAs; the placement rule for the new-head-coach voluntary minicamp; report-date exceptions for quarterbacks and injured players.
 - Whether the September 4 kickoff and the August 26/30 cutdown dates were in the December 2013 calendar (they are gated to their confirmed publication dates meanwhile).
 - The 75-cut time of day.
-- 2014 minimum salaries for 1 to 9 credited seasons; transition tag values other than QB, RB and WR; the 2014 Rookie Compensation Pool total.
+- Transition tag values other than QB, RB and WR; the 2014 Rookie Compensation Pool total. The minimum-salary table is now directly verified in section 2a; individual credited service still requires evidence.
 - The cap-carryover notice deadline.
 - Multi-club division/conference tie detail, the compensatory fill-to-32 mechanism and the forfeited-pick mechanism. Tied-block rotation is now verified; see D5 and the supplemental verification.
 - Whether the 2014 postseason format was unchanged from 2013 (assumed but not re-verified here).

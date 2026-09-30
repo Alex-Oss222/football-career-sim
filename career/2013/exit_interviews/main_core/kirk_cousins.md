@@ -203,7 +203,7 @@ Recorded moments:
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/kirk_cousins.json` (register, contract, season and postseason totals and game lines, no receipt injuries, no shortlists)
-- `career/2014/offseason/contract_status_register.md` line 45
+- `career/2014/finances/player_contracts/contract_status.md` line 45
 - `career/2013/trades/trade_targets.md` lines 46, 50, 180-182; `career/2013/ledger.md` lines 140-144, 556
 - `career/2013/offseason/otas/output.md` lines 34, 92, 149, 192, 202; `otas/standouts.md` line 10
 - `career/2013/offseason/mandatory_minicamp/output.md` lines 27, 37, 51; `mandatory_minicamp/standouts.md` line 10

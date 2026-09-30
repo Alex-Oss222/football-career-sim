@@ -7,7 +7,7 @@ seasons:
   - 2019
   - 2020
 document_revision: "III.0"
-primary_play_caller: "Alex Stone"
+author: "Alex Stone"
 canonical: true
 inherits:
   - 2013 Iteration I
@@ -19,7 +19,7 @@ system_sentence: "Show the protection a picture. Attack the rule it uses to solv
 
 ## 2018-2020 Evolution III: Constraint and Sequencing
 
-> **Team-neutral defensive evolution manual** | Primary play-caller: Alex Stone
+> **Team-neutral defensive evolution manual** | Author: Alex Stone
 > **System sentence:** Show the protection a picture. Attack the rule it uses to solve it.
 
 This document evolves the latest prior Stone defense. Silence means the prior rule survives. The purpose is not to replace the system every few seasons, but to record when enough changes affect how the defense is taught, called, matched and simulated.

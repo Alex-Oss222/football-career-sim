@@ -13,7 +13,7 @@ from unittest.mock import Mock, patch
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from runtime import game_runner, week_inputs
-from runtime.seasons import SeasonPaths, current_record, require_receipt_season
+from runtime.seasons import SeasonPaths, current_record, require_receipt_season, game_release_errors
 from scripts import close_week, build_week_inputs, render_box_score
 import check_game_readiness
 
@@ -46,8 +46,13 @@ class SeasonIsolationTests(unittest.TestCase):
         self.assertEqual(week_inputs.event_id(game, 1, 2013), '2013-week01-a-at-b')
         self.assertEqual(week_inputs.event_id(game, 1, 2014), '2014-week01-a-at-b')
         self.assertNotEqual(SeasonPaths(2013).cache(1, 'inputs'), SeasonPaths(2014).cache(1, 'inputs'))
-        with self.assertRaises(ValueError):
-            SeasonPaths(2015)
+        for year in (2015, 2016):
+            self.assertEqual(SeasonPaths(year).career.name, str(year))
+            self.assertNotEqual(SeasonPaths(year).cache(1, 'inputs'), SeasonPaths(2014).cache(1, 'inputs'))
+            self.assertIn('No season release registered', game_release_errors(year)[0])
+        for invalid in (True, '2015', 2012, 2101):
+            with self.assertRaises(ValueError):
+                SeasonPaths(invalid)
 
     def test_foreign_or_unqualified_receipts_are_rejected(self):
         for row in ({'event_id': '2013-week01-a-at-b'}, {'event_id': 'untagged'},
@@ -61,13 +66,13 @@ class SeasonIsolationTests(unittest.TestCase):
             root = Path(tmp)
             (root / 'docs').mkdir()
             for year in (2013, 2014):
-                file = root / 'career' / str(year) / 'roster.md'
+                file = SeasonPaths(year, root).roster
                 file.parent.mkdir(parents=True)
                 file.write_text(str(year))
             mapping = {'active_season': 2014, 'current_records': {'roster': 'career/2013/roster.md'}}
             (root / 'docs/repository_map.json').write_text(json.dumps(mapping))
             self.assertEqual(current_record('roster', root).read_text(), '2013')
-            mapping['current_records']['roster'] = 'career/2014/roster.md'
+            mapping['current_records']['roster'] = 'career/2014/team/roster/roster.md'
             (root / 'docs/repository_map.json').write_text(json.dumps(mapping))
             self.assertEqual(current_record('roster', root).read_text(), '2014')
 

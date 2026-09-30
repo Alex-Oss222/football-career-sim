@@ -65,7 +65,7 @@ Voluntary throughout; nothing is required before April 21 or in any voluntary ph
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/will_rackley.json`
-- `career/2014/offseason/contract_status_register.md` line 87; `career/2014/calendar.md` line 31
+- `career/2014/finances/player_contracts/contract_status.md` line 87; `career/2014/calendar.md` line 31
 - `state/04_Roster_and_Staff_Register.md` line 209; `career/2013/roster.md` line 78; `career/2013/depth_chart.json` line 12; `state/05_Current_Season_State.md` line 61
 - `career/2013/offseason/initial_roster.md` line 62
 - `career/2013/offseason/otas/output.md` line 194; `mandatory_minicamp/output.md` lines 29, 52
