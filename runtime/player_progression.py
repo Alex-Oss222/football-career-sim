@@ -1,8 +1,9 @@
 """Position-specific offseason player-development primitives.
 
-This module deliberately does not create an overall rating, an age curve, or a
-magic coaching multiplier. It defines the football dimensions a progression
-resolver may change, validates causal development cases, and keeps a private
+This module deliberately does not create an engine-wide overall rating, an age
+curve, or a magic coaching multiplier. It defines the football dimensions a
+progression resolver may change, validates causal development cases, preserves
+demonstrated player capabilities across season boundaries, and keeps a private
 latent change separate from public/staff observations.
 
 Probability calibration is intentionally external. A caller must supply a
@@ -558,6 +559,30 @@ class PlayerDevelopmentContext:
 
 
 @dataclass(frozen=True)
+class EstablishedCapability:
+    """A demonstrated part of the player that survives a season rollover."""
+
+    player_id: str
+    position: str
+    trait: str
+    description: str
+    evidence_ids: tuple[str, ...]
+    confidence: str
+    established_season: int
+    conditions: tuple[str, ...] = ()
+
+
+@dataclass(frozen=True)
+class PlayerIdentityState:
+    """Established player state entering one season."""
+
+    player_id: str
+    position: str
+    season: int
+    capabilities: tuple[EstablishedCapability, ...]
+
+
+@dataclass(frozen=True)
 class DevelopmentCase:
     """A causal case for one trait entering an offseason transition draw."""
 
@@ -582,7 +607,7 @@ class TransitionPrior:
 
 @dataclass(frozen=True)
 class PrivateTraitChange:
-    """Hidden latent resolution. Do not write this directly to coach-facing files."""
+    """Hidden delta from inherited player state. Do not expose it as a game probability."""
 
     case: DevelopmentCase
     direction: str
@@ -623,6 +648,63 @@ def trait_domain(position: str, trait: str) -> str:
 
 def influenced_traits(position: str, trait: str) -> tuple[str, ...]:
     return INTERDEPENDENCIES.get((position_group(position), trait), ())
+
+
+def validate_established_capability(capability: EstablishedCapability) -> None:
+    """Validate one inherited capability without re-proving it for a new year."""
+
+    if not capability.player_id.strip():
+        raise ValueError("capability player_id is required")
+    trait_domain(capability.position, capability.trait)
+    if not capability.description.strip():
+        raise ValueError("capability description is required")
+    if capability.confidence not in CONFIDENCE_LEVELS:
+        raise ValueError("unknown capability confidence level")
+    if not capability.evidence_ids:
+        raise ValueError("established capability requires evidence")
+    if capability.established_season < 1920:
+        raise ValueError("established_season is invalid")
+
+
+def validate_identity_state(state: PlayerIdentityState) -> None:
+    if not state.player_id.strip():
+        raise ValueError("identity player_id is required")
+    position_group(state.position)
+    if state.season < 1920:
+        raise ValueError("identity season is invalid")
+    seen: set[str] = set()
+    for capability in state.capabilities:
+        validate_established_capability(capability)
+        if capability.player_id != state.player_id:
+            raise ValueError("capability player differs from identity state")
+        if position_group(capability.position) != position_group(state.position):
+            raise ValueError("capability position differs from identity state")
+        if capability.trait in seen:
+            raise ValueError("duplicate established capability: " + capability.trait)
+        seen.add(capability.trait)
+
+
+def carry_forward_identity(
+    previous: PlayerIdentityState,
+    entering_season: int,
+) -> PlayerIdentityState:
+    """Carry the demonstrated player forward before applying new changes.
+
+    The default transition between seasons is continuity. A new calendar year
+    does not erase arm talent, speed, catch radius, leverage skill, recognition,
+    or any other capability already established by evidence. Development cases
+    describe deltas from this inherited player.
+    """
+
+    validate_identity_state(previous)
+    if entering_season <= previous.season:
+        raise ValueError("entering season must be later than previous identity season")
+    return PlayerIdentityState(
+        player_id=previous.player_id,
+        position=previous.position,
+        season=entering_season,
+        capabilities=previous.capabilities,
+    )
 
 
 def validate_context(context: PlayerDevelopmentContext) -> None:
@@ -729,8 +811,10 @@ def resolve_private_change(
     """Sample one hidden change from an approved/calibrated prior.
 
     The complete 15-factor player context is required before resolution. The
-    function intentionally has no default prior. Age, draft position,
-    potential, or role may not silently manufacture a probability table.
+    sampled result is a change from the player's inherited established state,
+    not a replacement assessment. The function intentionally has no default
+    prior. Age, draft position, potential, or role may not silently manufacture
+    a probability table.
     """
 
     validate_development_case(case, context)

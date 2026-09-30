@@ -8,13 +8,18 @@ from runtime.player_progression import (
     DIRECTIONS,
     ContextFactor,
     DevelopmentCase,
+    EstablishedCapability,
     ObservedTraitUpdate,
     PlayerDevelopmentContext,
+    PlayerIdentityState,
     TransitionPrior,
+    carry_forward_identity,
     influenced_traits,
     resolve_private_change,
     validate_context,
     validate_development_case,
+    validate_established_capability,
+    validate_identity_state,
     validate_observed_update,
 )
 
@@ -204,6 +209,61 @@ class PlayerProgressionTests(unittest.TestCase):
             ),
         )
         validate_observed_update(update)
+
+
+    def test_established_capability_carries_into_next_season(self):
+        capability = EstablishedCapability(
+            player_id="Kirk Cousins",
+            position="QB",
+            trait="arm_strength",
+            description="Demonstrated NFL arm capacity.",
+            evidence_ids=("2013-quarterback-evidence",),
+            confidence="high",
+            established_season=2013,
+        )
+        previous = PlayerIdentityState(
+            player_id="Kirk Cousins",
+            position="QB",
+            season=2013,
+            capabilities=(capability,),
+        )
+        validate_established_capability(capability)
+        validate_identity_state(previous)
+        current = carry_forward_identity(previous, 2014)
+        self.assertEqual(current.season, 2014)
+        self.assertEqual(current.capabilities, previous.capabilities)
+
+    def test_unrelated_execution_issue_does_not_erase_physical_identity(self):
+        speed = EstablishedCapability(
+            player_id="Receiver",
+            position="WR",
+            trait="long_speed",
+            description="Demonstrated vertical speed.",
+            evidence_ids=("2013-speed-evidence",),
+            confidence="high",
+            established_season=2013,
+        )
+        previous = PlayerIdentityState(
+            player_id="Receiver",
+            position="WR",
+            season=2013,
+            capabilities=(speed,),
+        )
+        current = carry_forward_identity(previous, 2014)
+        context = whole_context("Receiver", "WR")
+        case = DevelopmentCase(
+            context_id=context.context_id,
+            player_id="Receiver",
+            position="WR",
+            trait="route_pacing",
+            mechanisms=("deliberate_practice", "coaching_correction"),
+            evidence_ids=("2014-route-work",),
+            confidence="medium",
+            rationale="Route pacing is coached separately from speed.",
+        )
+        validate_development_case(case, context)
+        self.assertEqual(current.capabilities[0].trait, "long_speed")
+
 
 
 if __name__ == "__main__":

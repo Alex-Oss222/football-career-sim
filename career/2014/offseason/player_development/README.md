@@ -1,10 +1,12 @@
 # Individual player development
 
-[Offseason index](../README.md) · [Progression model](progression_model.md) · [Live progression cohort](progression_roster.json) · [All 61 exit-review profiles](roster_profiles.md) · [Cousins in detail](kirk_cousins.md) · [Cousins progression context](kirk_cousins_progression_context.json) · [Film queue](../film/player_queue.md) · [Player template](player_plan_template.md)
+[Offseason index](../README.md) · [Progression model](progression_model.md) · [Annual player sheets](../../../player_profiles/README.md) · [Live progression cohort](progression_roster.json) · [All 61 exit-review profiles](roster_profiles.md) · [Cousins in detail](kirk_cousins.md) · [Cousins progression context](kirk_cousins_progression_context.json) · [Film queue](../film/player_queue.md) · [Player template](player_plan_template.md)
 
 
-The live progression cohort is derived from the current roster with `python scripts/build_player_progression_roster.py`. The frozen 61-player exit index identifies 2013 Jacksonville continuity only; it never overrides current control. At the March 24 checkpoint, 53 players are controlled, 48 have Jacksonville 2013 continuity, and Kirk Cousins is one of those returners. Regenerate the cohort after every roster/control change before resolving progression.
+The live progression cohort is derived from the current roster with `python scripts/build_player_progression_roster.py`. The frozen 61-player exit index identifies 2013 Jacksonville continuity only; it never overrides current control. At the March 28 checkpoint, 55 players are controlled, 50 have Jacksonville 2013 continuity, and Kirk Cousins is one of those returners. Regenerate the cohort after every roster/control change before resolving progression.
 \nStart from the player at the current date: what he brought in, what he has actually experienced, what he has shown, what he understands and what remains uncertain. The full 2013 season belongs in the assessment. Washington's old assessment cannot freeze Cousins's identity; a draft label, former depth role or thin box score cannot freeze anyone else's.
+
+The annual player sheet is the readable year-over-year identity record. A demonstrated ability carries into the next season unless new evidence establishes a change. The `/10` grade and NFL standing summarize the staff view for the user; they do not directly drive the game engine.
 
 The [roster profiles](roster_profiles.md) give every player a sourced current synthesis and a next opportunity, including veterans, reserves and practice-squad players. The [Cousins plan](kirk_cousins.md) goes deeper because his full-season starting experience and 2013 teaching plan provide more material. Missing evidence is stated directly; it is not a negative grade or permission to invent a biography.
 
