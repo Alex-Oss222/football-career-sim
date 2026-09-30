@@ -326,17 +326,17 @@ def validate(root=ROOT):
         errors.append(f'Standings cannot be rebuilt from receipts: {exc}')
     # The 2014 draft order is generated from the same receipts once the
     # Super Bowl has closed.
-    draft_order = root/'career/2014/04_draft/draft_order.md'
+    draft_order = root/'career/2014/draft/draft_order.md'
     if draft_order.exists():
         try:
             from scripts.render_draft_order import render as render_draft_order
             require(draft_order.read_text() == render_draft_order(),
-                    'career/2014/04_draft/draft_order.md is stale; run render_draft_order.py')
+                    'career/2014/draft/draft_order.md is stale; run render_draft_order.py')
         except (OSError, ValueError, KeyError, TypeError) as exc:
             errors.append(f'Draft order cannot be rebuilt from receipts: {exc}')
     # The opponent inventory is deliberately undated; validate it without
     # importing results or opening the schedule gate.
-    if (root/'career/2014/06_regular_season/schedule/rotation_2014.json').exists():
+    if (root/'career/2014/regular_season/schedule/rotation_2014.json').exists():
         try:
             from runtime.schedule_2014 import check as check_2014_opponents
             errors.extend(check_2014_opponents(root))

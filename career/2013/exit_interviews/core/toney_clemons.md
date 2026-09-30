@@ -81,7 +81,7 @@ Voluntary; nothing is required before April 21 or in any voluntary phase, and de
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/toney_clemons.json`
-- `career/2014/09_finances/02_player_contracts/contract_status.md` lines 36, 74; `career/2014/calendar.md` lines 26, 31
+- `career/2014/finances/player_contracts/contract_status.md` lines 36, 74; `career/2014/calendar.md` lines 26, 31
 - `state/04_Roster_and_Staff_Register.md` line 199; `career/2013/roster.md` line 51; `career/2013/depth_chart.json`
 - `career/2013/offseason/initial_roster.md` line 50
 - `career/2013/stats/team_player_stats.md` lines 32, 122

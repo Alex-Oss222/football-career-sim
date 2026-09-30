@@ -1,6 +1,6 @@
 # 2014 draft pairing
 
-Filled at the draft, May 8 to 10, 2014, under [method section 6](method.md#6-draft). The [seven-round order](../../04_draft/draft_order.md) and [ownership register](../../04_draft/pick_ownership.json) controlled Jacksonville's nine ordinary picks (13, 26, 38, 90, 129, 153, 168, 205 and 241); Jacksonville's selections are k=1 to k=9 in that order. Other clubs' selections are their real selections. Jacksonville's k-th selection pairs with the real Jaguars' k-th selection: the real Jaguars' player goes to the club that really drafted Jacksonville's player and takes the depth slot he really held on his Week 1 chart; if Jacksonville's player went undrafted in reality, the real Jaguars' player goes to the club where Jacksonville's player really signed. A real Jaguars' selection with no partner is unplaced. Real selections are from the cached nflverse draft file (2014 draft_picks); real undrafted clubs are from the nflverse copy of the Over The Cap contracts file.
+Filled at the draft, May 8 to 10, 2014, under [method section 6](method.md#6-draft). The [seven-round order](../../draft/draft_order.md) and [ownership register](../../draft/pick_ownership.json) controlled Jacksonville's nine ordinary picks (13, 26, 38, 90, 129, 153, 168, 205 and 241); Jacksonville's selections are k=1 to k=9 in that order. Other clubs' selections are their real selections. Jacksonville's k-th selection pairs with the real Jaguars' k-th selection: the real Jaguars' player goes to the club that really drafted Jacksonville's player and takes the depth slot he really held on his Week 1 chart; if Jacksonville's player went undrafted in reality, the real Jaguars' player goes to the club where Jacksonville's player really signed. A real Jaguars' selection with no partner is unplaced. Real selections are from the cached nflverse draft file (2014 draft_picks); real undrafted clubs are from the nflverse copy of the Over The Cap contracts file.
 
 | Jacksonville selection (k) | Branch overall pick | Player | His real overall pick (must be at or after the branch pick, or undrafted) | His real club | Real Jaguars' k-th selection | Goes to | Depth slot |
 |---|---|---|---|---|---|---|---|
@@ -20,7 +20,7 @@ The method's k=6 result (Telvin Smith to Green Bay) cannot apply because Smith i
 
 ## Undrafted signings and the rails
 
-Every undrafted player Jacksonville signed leaves his real club, and the next man up takes his slot when that club's Week 1 chart is built; every player Jacksonville lost went to his real club on his real terms. Details and reasons are in [undrafted signings](../../04_draft/udfa_signings.md).
+Every undrafted player Jacksonville signed leaves his real club, and the next man up takes his slot when that club's Week 1 chart is built; every player Jacksonville lost went to his real club on his real terms. Details and reasons are in [undrafted signings](../../draft/udfa_signings.md).
 
 | Player | Real 2014 club | Branch result |
 |---|---|---|

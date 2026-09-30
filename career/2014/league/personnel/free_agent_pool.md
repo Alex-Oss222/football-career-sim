@@ -1,6 +1,6 @@
 # 2014 free-agent pool
 
-**Branch date:** February 2, 2014; status changes through March 11, 2014 (4 p.m. ET) are recorded in the sections below the verified targets (Entries 89, 92, 93 and 94). **Research checked:** September 28, 2026. The nine players on the February 2 target board have verified pending free-agent classifications below. The rest of this file remains an unverified contract-candidate inventory, not a complete or executable free-agent pool. Jacksonville's own pending free agents belong in `career/2014/09_finances/02_player_contracts/contract_status.md`.
+**Branch date:** February 2, 2014; status changes through March 11, 2014 (4 p.m. ET) are recorded in the sections below the verified targets (Entries 89, 92, 93 and 94). **Research checked:** September 28, 2026. The nine players on the February 2 target board have verified pending free-agent classifications below. The rest of this file remains an unverified contract-candidate inventory, not a complete or executable free-agent pool. Jacksonville's own pending free agents belong in `career/2014/finances/player_contracts/contract_status.md`.
 
 ## Verified February 2 targets
 

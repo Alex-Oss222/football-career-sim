@@ -5,7 +5,7 @@
   python scripts/coaching_carousel_deferred.py --close    # one private draw; write results and page
   python scripts/coaching_carousel_deferred.py render     # rewrite the page section
 
-Method: career/2014/01_early_offseason/staff_changes/carousel_deferred_method.json, committed
+Method: career/2014/early_offseason/staff_changes/carousel_deferred_method.json, committed
 before the draw. It reuses Entry 75's inputs and request models
 (scripts/coaching_carousel.py). Every probability reads only the job, the coach's
 role and record, the clubs' records and the calendar.

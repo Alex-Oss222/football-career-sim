@@ -78,7 +78,7 @@ Voluntary. The offseason program may begin no earlier than April 21; nothing is 
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/travis_kelce.json`
-- `career/2014/09_finances/02_player_contracts/contract_status.md` line 54; `state/04_Roster_and_Staff_Register.md` line 202; `career/2013/roster.md` line 61; `career/2013/depth_chart.json`
+- `career/2014/finances/player_contracts/contract_status.md` line 54; `state/04_Roster_and_Staff_Register.md` line 202; `career/2013/roster.md` line 61; `career/2013/depth_chart.json`
 - `career/2013/stats/team_player_stats.md` line 41
 - `career/2013/offseason/draft/draftees.md` line 13; `career/2013/offseason/draft/player_draft_board.md` lines 19, 103
 - `career/2013/offseason/rookie_minicamp/output.md` line 41

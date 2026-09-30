@@ -18,7 +18,7 @@ Production stays separate. See the [research record and judgment basis](../../..
 
 The common evidence cutoff is January 14, 2014, after both days of the
 [exit interviews](../exit_interviews/README.md). Ages use that date. Identities
-and source paths are preserved in the [frozen exit index](../../2014/00_team/player_development/2013_exit_player_index.json),
+and source paths are preserved in the [frozen exit index](../../2014/team/player_development/2013_exit_player_index.json),
 so later living-profile edits cannot enter a regenerated 2013 sheet.
 Repository validation checks every position's grade and benchmark rows,
 player membership and the prohibition on final sheets before season close.

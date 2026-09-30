@@ -53,7 +53,7 @@ def render_pages(season, results, method=None):
         index.append(f'| [{month}]({rel}) | {"Recorded" if entry else "Awaiting the season’s dated coverage and closed awards"} |')
         out.update(period_page(month, rel, entry, method, back='../../README.md'))
     index += ['', '## Season honours', '',
-              'Season awards and the Pro Bowl use their own dates and selection processes. Follow [postseason and Pro Bowl](../../07_postseason/README.md).', '',
+              'Season awards and the Pro Bowl use their own dates and selection processes. Follow [postseason and Pro Bowl](../../postseason/README.md).', '',
               'Before the first draw, freeze this season’s methodology and monthly coverage from the actual schedule. Prior-year winners and monthly windows do not carry forward.', '']
     out['README.md'] = '\n'.join(index)
     out['monthly/README.md'] = '# Monthly awards\n\n'+ '\n'.join(f'- [{m}]({m.lower()}/README.md)' for m in months)+'\n'

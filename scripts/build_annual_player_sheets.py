@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 from runtime.seasons import SeasonPaths
-EXIT_INDEX = ROOT / "career/2014/00_team/player_development/2013_exit_player_index.json"
+EXIT_INDEX = ROOT / "career/2014/team/player_development/2013_exit_player_index.json"
 BIRTH_DATES = ROOT / "library/data/player_birth_dates.json"
 
 POSITION_SHEET_TRAITS = {

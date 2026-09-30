@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render career/2014/04_draft/draft_order.md from closed receipts (runtime.draft_order).
+"""Render career/2014/draft/draft_order.md from closed receipts (runtime.draft_order).
 
   python scripts/render_draft_order.py [--check]
 """
@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-OUT = ROOT / "career" / "2014" / "04_draft" / "draft_order.md"
+OUT = ROOT / "career" / "2014" / "draft" / "draft_order.md"
 GROUP_LABEL = {"non-playoff": "Non-playoff", "wild_card": "Lost Wild Card", "divisional": "Lost Divisional",
                "conference": "Lost conference championship", "super_bowl_loser": "Lost Super Bowl",
                "champion": "Won Super Bowl"}

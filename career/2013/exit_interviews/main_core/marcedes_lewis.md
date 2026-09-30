@@ -197,7 +197,7 @@ Evidence caveats: Weeks 1 to 8 closed under kernels 2013.4 to 2013.6, whose call
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/marcedes_lewis.json` (register, contract, season and postseason game lines, no receipt injuries, no shortlists)
 - `career/2013/roster.md` line 60; `career/2013/depth_chart.json` line 11
-- `career/2014/09_finances/02_player_contracts/contract_status.md` line 84
+- `career/2014/finances/player_contracts/contract_status.md` line 84
 - `career/2013/stats/team_player_stats.md` line 40 (average, longest reception, fumbles); `career/2013/stats/league_leaders.md` lines 167-172 (tight-end receiving yards, through Week 17)
 - `career/2013/ledger.md` line 988 (Entry 44, 2013.6 labels and targets) and lines 1106-1116 (Entry 48, 2013.7 carrier-true labels)
 - `career/2013/offseason/draft/player_draft_board.md` lines 19, 97, 103; `career/2013/offseason/draft/draftees.md` line 13

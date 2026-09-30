@@ -195,7 +195,7 @@ Unit context, from the weekly line rows, the bye review and the team statistics 
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/eugene_monroe.json`
-- `career/2014/09_finances/02_player_contracts/contract_status.md` (lines 34, 70)
+- `career/2014/finances/player_contracts/contract_status.md` (lines 34, 70)
 - `career/2013/roster.md` (line 69); `state/04_Roster_and_Staff_Register.md` (line 205); `state/05_Current_Season_State.md` (section 4, line 56 and the execution-evidence note)
 - `career/2013/offseason/roster_evaluation.md` (lines 9, 26, 51)
 - `career/2013/offseason/draft/player_draft_board.md` (lines 17, 46, 72, 78, 169); `career/2013/offseason/draft/draftees.md` (line 12)

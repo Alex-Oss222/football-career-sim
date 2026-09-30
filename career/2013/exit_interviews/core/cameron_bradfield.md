@@ -65,7 +65,7 @@ Voluntary throughout; nothing is required before April 21 or in any voluntary ph
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/cameron_bradfield.json`
-- `career/2014/09_finances/02_player_contracts/contract_status.md` lines 34-35, 71; `career/2014/calendar.md` lines 26, 31, 33
+- `career/2014/finances/player_contracts/contract_status.md` lines 34-35, 71; `career/2014/calendar.md` lines 26, 31, 33
 - `state/04_Roster_and_Staff_Register.md` line 203; `career/2013/roster.md` line 67; `career/2013/depth_chart.json` line 12
 - `career/2013/offseason/initial_roster.md` line 55
 - `career/2013/offseason/mandatory_minicamp/output.md` lines 29, 52

@@ -1,6 +1,6 @@
 # 2014 strength, development and in-game availability
 
-[Defect register](defect_register.md) · [Player development](../career/2014/00_team/player_development/README.md)
+[Defect register](defect_register.md) · [Player development](../career/2014/team/player_development/README.md)
 
 **Decision record:** Stone approved E1 and E2 in the September 28–29, 2026 follow-up to PR #132, with the branch still at February 2, 2014. This adopts their policy, including team construction and coaching, without releasing a kernel. Kernel 2014.3 remains installed; Tier 1 remains open. No 2013 receipt, rating input or outcome is rewritten.
 

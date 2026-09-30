@@ -43,9 +43,9 @@ def render(root, year):
     if year < 2014:
         raise ValueError('The individual trade layout begins in 2014')
     base = base.parent
-    completed = base/'02_completed_trades/trades.md'
-    offers = base/'01_targets_and_offers/trade_offers.md'
-    targets = base/'01_targets_and_offers/trade_targets.md'
+    completed = base/'completed_trades/trades.md'
+    offers = base/'targets_and_offers/trade_offers.md'
+    targets = base/'targets_and_offers/trade_targets.md'
     out = {}
     completed_index = [f'# {year} completed trades', '', '[Trades](../README.md)', '',
                        'Each exchange below is already processed. Open a trade for both sides, the original terms, closing conditions and accounting. Figures and pick counts inside a dated trade describe that event; use the current roster and pick register for today’s holdings.', '',
@@ -66,7 +66,7 @@ def render(root, year):
         out[target] = page
         out[target.parent/'exchange.svg'] = exchange_card(sends, receives)
         completed_index.append(f'| {title.removeprefix("Jacksonville / ")} | [Full exchange](deals/{name}/README.md) |')
-    completed_index += ['', '[Full dated trade ledger](trades.md) · [Current draft assets](../../04_draft/pick_ownership.json) · [Finances](../../09_finances/README.md)', '',
+    completed_index += ['', '[Full dated trade ledger](trades.md) · [Current draft assets](../../draft/pick_ownership.json) · [Finances](../../finances/README.md)', '',
                         'Maintain the dated source record first, then run `python scripts/render_trade_pages.py '+str(year)+'`. The individual pages are generated reading views.', '']
     out[completed.parent/'README.md'] = '\n'.join(completed_index)
     target_index = [f'# {year} trade targets and offers', '', '[Trades](../README.md)', '',
@@ -92,7 +92,7 @@ def render(root, year):
         target = offers.parent/'offers'/f'{name}.md'
         out[target] = f'# {title}\n\n[All targets and offers](../README.md) · [Source offer log](../trade_offers.md)\n\n'+rebase_markdown(body.strip(), offers.relative_to(root), target.relative_to(root))+'\n'
         target_index.append(f'- [{title}](offers/{name}.md)')
-    target_index += ['', '[Target board](trade_targets.md) · [Complete offer log](trade_offers.md) · [Completed trades](../02_completed_trades/README.md)', '']
+    target_index += ['', '[Target board](trade_targets.md) · [Complete offer log](trade_offers.md) · [Completed trades](../completed_trades/README.md)', '']
     out[targets.parent/'README.md'] = '\n'.join(target_index)
     return out
 

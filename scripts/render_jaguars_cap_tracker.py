@@ -12,9 +12,9 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 INPUT = Path('career/finances/supporting_records/financial_inputs.json')
-OUTPUT = Path('career/finances/01_salary_cap/cap_tracker.md')
-DETAILS = Path('career/finances/02_player_contracts/contract_details.md')
-ORGANIZATION = Path('career/finances/04_coaching_and_organization/coaching_payroll.md')
+OUTPUT = Path('career/finances/salary_cap/cap_tracker.md')
+DETAILS = Path('career/finances/player_contracts/contract_details.md')
+ORGANIZATION = Path('career/finances/coaching_and_organization/coaching_payroll.md')
 POSITIONS = ['QB','RB','FB','WR','TE','OT','OG','C','EDGE','IDL','LB','CB','S','K','P','LS']
 STATUSES = {'known','unknown_amount','approximate','term_unknown','not_committed','not_signed','tender','option_unexercised'}
 CBA = 'https://nflps.org/wp-content/uploads/2012/05/collective-bargaining-agreement-2011-2020.pdf'
@@ -344,7 +344,7 @@ def render_details(d,years):
 
 
 def render_organization(data, years, root):
-    staff = root / 'career/2014/00_team/coaching_staff/coaching_staff.md'
+    staff = root / 'career/2014/team/coaching_staff/coaching_staff.md'
     rows = []
     totals_by_year = {y: 0 for y in years}
     for cells in md_rows(staff.read_text()):
@@ -383,15 +383,15 @@ def render(data,root=ROOT):
     # second set of editable balances or contract schedules.
     sections = dict(re.findall(r'^## ([^\n]+)\n(.*?)(?=^## |\Z)', outputs[OUTPUT], re.M | re.S))
     pages = {
-        '03_upcoming_decisions/player_decisions.md': ('Player contract decisions',
+        'upcoming_decisions/player_decisions.md': ('Player contract decisions',
             ['Decision calendar', 'Expiring contracts and free-agent classes']),
-        '05_future_commitments/commitments.md': ('Future commitments and scheduled cash',
+        'future_commitments/commitments.md': ('Future commitments and scheduled cash',
             ['Team cap summary, twelve years', 'Cap by position, twelve years', 'Scheduled cash']),
-        '06_history/dead_money.md': ('Departed contracts and dead money', ['Dead money and void years']),
+        'history/dead_money.md': ('Departed contracts and dead money', ['Dead money and void years']),
     }
     for relative, (title, headings) in pages.items():
         target = Path('career/finances') / relative
-        content = f'# {title}\n\n[Finances](../README.md) · [Full cap table](../01_salary_cap/cap_tracker.md)\n\n'
+        content = f'# {title}\n\n[Finances](../README.md) · [Full cap table](../salary_cap/cap_tracker.md)\n\n'
         content += f"As of {display_date(data['as_of'])}. Generated from the same financial inputs as the full cap table.\n\n"
         for heading in headings:
             content += rebase_markdown('## '+heading+'\n'+sections[heading], OUTPUT, target)

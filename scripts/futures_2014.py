@@ -4,7 +4,7 @@
   python scripts/futures_2014.py            # dry run
   python scripts/futures_2014.py --close    # one private draw; write results
 
-Method: career/2014/01_early_offseason/futures_method.json, committed before the draw.
+Method: career/2014/early_offseason/futures_method.json, committed before the draw.
 """
 from __future__ import annotations
 
@@ -21,8 +21,8 @@ if str(ROOT) not in sys.path:
 
 from runtime.packets import canonical
 
-METHOD = ROOT / "career/2014/01_early_offseason/futures_method.json"
-RESULTS = ROOT / "career/2014/01_early_offseason/futures_results.json"
+METHOD = ROOT / "career/2014/early_offseason/futures_method.json"
+RESULTS = ROOT / "career/2014/early_offseason/futures_results.json"
 UNCONTESTED = ("Tyler Bray", "Richard Murphy", "Antwon Blake", "Jerome Long", "Jerrell Jackson")
 LET_GO = ("Brandon King", "Will Ta'ufo'ou")
 

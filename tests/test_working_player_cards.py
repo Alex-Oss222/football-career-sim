@@ -33,7 +33,7 @@ class WorkingPlayerCardTests(unittest.TestCase):
         receipt = json.loads(source.read_text(encoding='utf-8'))
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)
-            path = root/'career/2014/06_regular_season/statistics/records/game_receipts/game.json'
+            path = root/'career/2014/regular_season/statistics/records/game_receipts/game.json'
             path.parent.mkdir(parents=True)
             path.write_text(json.dumps(receipt), encoding='utf-8')
             with self.assertRaises(ValueError):
@@ -61,7 +61,7 @@ class WorkingPlayerCardTests(unittest.TestCase):
 
     def test_current_roster_cards_and_stats_are_consistent(self):
         self.assertEqual(profile_errors(2014), [])
-        cards = list((ROOT/'career/2014/00_team/player_cards').glob('*.md'))
+        cards = list((ROOT/'career/2014/team/player_cards').glob('*.md'))
         self.assertEqual(len(cards), 84)  # 78 current players (Entry 110), 4 former players, index and template
 
     def test_player_facing_year_labels_preserve_proper_name(self):

@@ -55,7 +55,7 @@ Medical first; everything else voluntary.
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/c_j_wilson.json`
-- `career/2014/09_finances/02_player_contracts/contract_status.md` lines 15, 34, 52, 143; `career/2013/roster.md` line 96; `career/2013/depth_chart.json` line 13
+- `career/2014/finances/player_contracts/contract_status.md` lines 15, 34, 52, 143; `career/2013/roster.md` line 96; `career/2013/depth_chart.json` line 13
 - `career/2013/trades/trade_targets.md` lines 186, 190; `career/2013/trades/trades.md` lines 18-30; `career/2013/ledger.md` lines 146-150
 - `career/2013/offseason/otas/output.md` line 16; `career/2013/offseason/mandatory_minicamp/output.md` line 13; `career/2013/offseason/training_camp/output.md` lines 33, 106
 - `career/2013/regular_season/week_01_kansas_city_at_jacksonville/output.md` line 314

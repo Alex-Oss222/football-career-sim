@@ -100,7 +100,7 @@ Stone's own standard asked for a functioning program and a candid quarterback ev
 
 ## Follow-ups
 
-- **Caldwell's deadline:** Stone's written recommendations before the February 17 tag window. They were delivered as `career/2014/01_early_offseason/stone_to_caldwell_2014_offseason_decisions.md`, dated February 2, 2014.
+- **Caldwell's deadline:** Stone's written recommendations before the February 17 tag window. They were delivered as `career/2014/early_offseason/stone_to_caldwell_2014_offseason_decisions.md`, dated February 2, 2014.
 - **Caldwell's first 2014 measures:** the scoring margin, and the quarterback's ball security and protection.
 - **Khan's request:** prepare the London week for Dallas (November 9, 2014, Wembley) on the 2013 Wembley plan.
 - **Closed gap:** the league's post-2013 head-coaching changes were resolved retroactively by ledger Entry 75 (see Entry 4 below).
