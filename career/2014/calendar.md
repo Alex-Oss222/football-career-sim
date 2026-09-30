@@ -118,7 +118,7 @@ The nine program weeks run April 21-June 22. Phase Three occupies the last four 
 | July 30 | First full-pad practice (selected date) | Future: the first contact evidence, in the order set at the July 27 review |
 | Aug. 2 | Scrimmage (selected date) | Future: substitution, changed pictures and sideline operation within the installed menu; larger family night closes the block |
 | Aug. 5-7 | Game-week preparation for Tampa Bay | Future: reduce to an executable menu, freeze the ex-ante plan |
-| Before first preseason game | Adopt validated new kernel; rebuild legal 2014 inputs and other-club rosters; finish readiness checks | Required release gate; all Tier 1 defects still open |
+| Before first preseason game | Rebuild legal 2014 inputs and other-club rosters; finish readiness checks | Required release gate; kernel 2014.4 released and verified (Entry 115), the other gates open |
 | Aug. 3 | Hall of Fame preseason opener, league calendar | Future league event; no participants or result imported |
 | Aug. 8, 7:30 p.m. | Preseason 1: Tampa Bay at Jacksonville | Date released Apr. 23; game requires engine/readiness |
 | Aug. 14, 8 p.m. | Preseason 2: Jacksonville at Chicago | Date released Apr. 23 |
