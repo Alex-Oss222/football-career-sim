@@ -28,8 +28,8 @@ from . import postseason
 ROOT = Path(__file__).resolve().parents[1]
 GROUPS = (("non-playoff", 1), ("wild_card", 21), ("divisional", 25),
           ("conference", 29), ("super_bowl_loser", 31), ("champion", 32))
-OWNERSHIP = ROOT / "career/2014/draft/pick_ownership.json"
-COIN_FLIP = ROOT / "career/2014/draft/coin_flip.json"
+OWNERSHIP = ROOT / "career/2014/04_draft/pick_ownership.json"
+COIN_FLIP = ROOT / "career/2014/04_draft/coin_flip.json"
 _RECORDED_DRAW = object()
 
 
@@ -101,7 +101,8 @@ def apply_coin_flip(rows, result):
             or {result.get("winner"), result.get("loser")} != set(mapping.values())
             or not result.get("observed_at") or not result.get("protocol_commit")):
         raise ValueError("invalid recorded draft coin flip")
-    screenshot = (ROOT / result["screenshot"]).resolve()
+    from runtime.season_layout import repository_relative
+    screenshot = (ROOT / repository_relative(result["screenshot"])).resolve()
     if (not screenshot.is_relative_to(ROOT)
             or hashlib.sha256(screenshot.read_bytes()).hexdigest() != result["screenshot_sha256"]):
         raise ValueError("draft coin flip evidence checksum mismatch")

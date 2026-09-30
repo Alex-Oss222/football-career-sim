@@ -6,7 +6,7 @@ The user selected historical dates on September 29, 2026. This supersedes the br
 
 **Prepared:** September 29, 2026. **Career checkpoint:** February 17, 2014, Entry 86. Research only; no schedule filing, practice, contact, adoption or time advance is recorded.
 
-This supplements the [existing calendar research](2014_league_calendar_and_financial_rules.md) and [full-calendar verification](2014_full_calendar_verification.md). The [branch calendar](../career/2014/calendar.md) owns Jacksonville's proposed dates. The [decision package](../career/2014/offseason/phase_plan_decisions.md) owns the recommendations built from those dates.
+This supplements the [existing calendar research](2014_league_calendar_and_financial_rules.md) and [full-calendar verification](2014_full_calendar_verification.md). The [branch calendar](../career/2014/calendar.md) owns Jacksonville's proposed dates. The [decision package](../career/2014/03_offseason_training/staff_decisions.md) owns the recommendations built from those dates.
 
 ## Findings that change the planning instructions
 

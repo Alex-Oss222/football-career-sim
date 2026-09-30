@@ -10,10 +10,11 @@ import re
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-INPUT = Path('career/finances/jaguars_cap_inputs.json')
-OUTPUT = Path('career/finances/jaguars_cap.md')
-DETAILS = Path('career/finances/jaguars_contract_details.md')
-ORGANIZATION = Path('career/finances/organization_finances.md')
+sys.path.insert(0, str(ROOT))
+INPUT = Path('career/finances/supporting_records/financial_inputs.json')
+OUTPUT = Path('career/finances/01_salary_cap/cap_tracker.md')
+DETAILS = Path('career/finances/02_player_contracts/contract_details.md')
+ORGANIZATION = Path('career/finances/04_coaching_and_organization/coaching_payroll.md')
 POSITIONS = ['QB','RB','FB','WR','TE','OT','OG','C','EDGE','IDL','LB','CB','S','K','P','LS']
 STATUSES = {'known','unknown_amount','approximate','term_unknown','not_committed','not_signed','tender','option_unexercised'}
 CBA = 'https://nflps.org/wp-content/uploads/2012/05/collective-bargaining-agreement-2011-2020.pdf'
@@ -343,7 +344,7 @@ def render_details(d,years):
 
 
 def render_organization(data, years, root):
-    staff = root / 'career/2014/coaching_staff.md'
+    staff = root / 'career/2014/00_team/coaching_staff/coaching_staff.md'
     rows = []
     totals_by_year = {y: 0 for y in years}
     for cells in md_rows(staff.read_text()):
@@ -371,9 +372,31 @@ def render_organization(data, years, root):
             'Review the nine position/assistant contracts ending after 2014, the coordinator contracts ending after 2015 and Stone’s term ending after 2016 at the relevant exit reviews. No renewal, raise, departure or replacement is assumed. Preserve earned pay, remaining guarantees and verified offsets when an actual change occurs; record it in the existing staff changes owner and regenerate this page.\n')
 
 def render(data,root=ROOT):
+    from runtime.season_layout import rebase_markdown
     years=validate(data,root)
-    return {OUTPUT:render_main(data,years),DETAILS:render_details(data,years),
-            ORGANIZATION:render_organization(data,years,root)}
+    outputs = {
+        OUTPUT: rebase_markdown(render_main(data,years), 'career/finances/jaguars_cap.md', OUTPUT),
+        DETAILS: rebase_markdown(render_details(data,years), 'career/finances/jaguars_contract_details.md', DETAILS),
+        ORGANIZATION: rebase_markdown(render_organization(data,years,root), 'career/finances/organization_finances.md', ORGANIZATION),
+    }
+    # Focused reading pages come from the same calculated view, never from a
+    # second set of editable balances or contract schedules.
+    sections = dict(re.findall(r'^## ([^\n]+)\n(.*?)(?=^## |\Z)', outputs[OUTPUT], re.M | re.S))
+    pages = {
+        '03_upcoming_decisions/player_decisions.md': ('Player contract decisions',
+            ['Decision calendar', 'Expiring contracts and free-agent classes']),
+        '05_future_commitments/commitments.md': ('Future commitments and scheduled cash',
+            ['Team cap summary, twelve years', 'Cap by position, twelve years', 'Scheduled cash']),
+        '06_history/dead_money.md': ('Departed contracts and dead money', ['Dead money and void years']),
+    }
+    for relative, (title, headings) in pages.items():
+        target = Path('career/finances') / relative
+        content = f'# {title}\n\n[Finances](../README.md) · [Full cap table](../01_salary_cap/cap_tracker.md)\n\n'
+        content += f"As of {display_date(data['as_of'])}. Generated from the same financial inputs as the full cap table.\n\n"
+        for heading in headings:
+            content += rebase_markdown('## '+heading+'\n'+sections[heading], OUTPUT, target)
+        outputs[target] = content.rstrip()+'\n'
+    return outputs
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--check',action='store_true');args=parser.parse_args()
@@ -384,7 +407,9 @@ def main():
     for path,content in outputs.items():
         if args.check:
             if not (ROOT/path).exists() or (ROOT/path).read_text()!=content:stale.append(str(path))
-        else:(ROOT/path).write_text(content)
+        else:
+            (ROOT/path).parent.mkdir(parents=True, exist_ok=True)
+            (ROOT/path).write_text(content)
     if stale:print('STALE: '+', '.join(stale));return 1
     print(('PASS: ' if args.check else 'WROTE: ')+str(len(data['players']))+'-player source reconciliation and twelve-year cap/detail views')
     return 0

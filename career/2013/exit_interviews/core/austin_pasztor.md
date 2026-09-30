@@ -69,7 +69,7 @@ Voluntary. The offseason program may begin no earlier than April 21; nothing bef
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/austin_pasztor.json`
-- `career/2014/offseason/contract_status_register.md` lines 36, 76, 147; `state/04_Roster_and_Staff_Register.md` line 208; `career/2013/roster.md` line 77; `career/2013/depth_chart.json` (OL order)
+- `career/2014/09_finances/02_player_contracts/contract_status.md` lines 36, 76, 147; `state/04_Roster_and_Staff_Register.md` line 208; `career/2013/roster.md` line 77; `career/2013/depth_chart.json` (OL order)
 - `career/2013/offseason/initial_roster.md` line 58
 - `career/2013/offseason/mandatory_minicamp/output.md` lines 29, 52; `offseason/training_camp/output.md` lines 29, 47, 57, 75, 104; `training_camp/position_battles.md` line 9; `training_camp/standouts.md` line 18
 - `career/2013/preseason/game_1_miami_at_jacksonville/output.md` lines 4-5, 15; `game_2_jacksonville_at_ny_jets/output.md` lines 4, 15; `game_3_philadelphia_at_jacksonville/output.md` line 15; `preseason/final_roster_cuts.md` line 13

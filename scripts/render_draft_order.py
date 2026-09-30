@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render career/2014/draft/draft_order.md from closed receipts (runtime.draft_order).
+"""Render career/2014/04_draft/draft_order.md from closed receipts (runtime.draft_order).
 
   python scripts/render_draft_order.py [--check]
 """
@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-OUT = ROOT / "career" / "2014" / "draft" / "draft_order.md"
+OUT = ROOT / "career" / "2014" / "04_draft" / "draft_order.md"
 GROUP_LABEL = {"non-playoff": "Non-playoff", "wild_card": "Lost Wild Card", "divisional": "Lost Divisional",
                "conference": "Lost conference championship", "super_bowl_loser": "Lost Super Bowl",
                "champion": "Won Super Bowl"}
@@ -29,7 +29,7 @@ def overall(row, counts=None):
     return (f"({base})" if offset and len(row["base_overall_options"]) > 1 else base) + (" + " + offset if offset else "")
 
 
-def render():
+def render_source():
     from runtime.draft_order import load_ownership, seven_rounds
     register = load_ownership()
     # A final order is published only from the recorded branch awards, never
@@ -137,6 +137,10 @@ def render():
     lines += ["", "The league's 32 supplemental choices are additional to the 224 ordinary allocations. Until their round distribution is reconciled, later overall pick expressions must retain their offsets. The ownership audit records the three specific open claims; there is no blanket outside-club ownership gap.", ""]
     return "\n".join(lines)
 
+
+def render():
+    from runtime.season_layout import rebase_markdown
+    return rebase_markdown(render_source(), 'career/2014/draft/draft_order.md', OUT.relative_to(ROOT))
 
 def main():
     parser = argparse.ArgumentParser()

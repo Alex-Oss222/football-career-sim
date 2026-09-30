@@ -4,6 +4,7 @@ from pathlib import Path
 import tempfile
 import unittest
 
+from runtime.seasons import SeasonPaths
 from scripts.season_handoff import TEAM_GATES, HISTORY_GATES, check, digest, stage
 
 
@@ -40,10 +41,10 @@ class HandoffTests(unittest.TestCase):
                 self.assertEqual(first,stage(root,data))
                 for p,blob in before.items():self.assertEqual(p.read_bytes(),blob)
                 nxt=root/'career'/str(year+1)
-                self.assertEqual(list((nxt/'stats/game_receipts').glob('*.json')),[])
-                self.assertIn(f'../{year}/closed.md',(nxt/'roster.md').read_text())
-                self.assertIn('Unresolved medical hold',(nxt/'roster.md').read_text())
-                self.assertFalse((nxt/'depth_chart.json').exists())
+                self.assertEqual(list(SeasonPaths(year+1, root).receipts.glob('*.json')),[])
+                self.assertIn(f'/{year}/closed.md',SeasonPaths(year+1, root).roster.read_text())
+                self.assertIn('Unresolved medical hold',SeasonPaths(year+1, root).roster.read_text())
+                self.assertFalse(SeasonPaths(year+1, root).depth_chart.exists())
                 self.assertEqual(json.loads((nxt/'opening_handoff.json').read_text())['status'],'STAGED')
 
     def test_open_interviews_or_changed_contracts_block_all_writes(self):
@@ -54,12 +55,12 @@ class HandoffTests(unittest.TestCase):
             data['gates']['exit_interviews']['status']='COMPLETE'
             (root/data['carry_forward']['player_contracts']).write_text('Changed contract')
             with self.assertRaisesRegex(ValueError,'not frozen/reviewed'):stage(root,data)
-            self.assertFalse((root/'career/2015/roster.md').exists())
+            self.assertFalse(SeasonPaths(2015, root).roster.exists())
 
     def test_existing_successor_file_is_never_overwritten(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);data=self.baseline(root,2014)
-            target=root/'career/2015/roster.md';target.write_text('User work')
+            target=SeasonPaths(2015, root).roster;target.parent.mkdir(parents=True);target.write_text('User work')
             with self.assertRaisesRegex(ValueError,'Existing successor file differs'):stage(root,data)
             self.assertEqual(target.read_text(),'User work')
             self.assertFalse((target.parent/'coaching_staff.md').exists())
@@ -73,6 +74,35 @@ class HandoffTests(unittest.TestCase):
             self.assertIn('Completed gate lacks evidence: exit_interviews',check(root,data))
             data['carry_forward']['roster']='../../outside.md'
             with self.assertRaisesRegex(ValueError,'leaves repository'):check(root,data)
+
+    def test_player_career_rows_survive_and_changed_cards_block_rollover(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);data=self.baseline(root,2014)
+            cards=SeasonPaths(2014,root).record('player_profiles')
+            cards.mkdir(parents=True)
+            (cards/'README.md').write_text('# Player cards\n')
+            card=cards/'sample.md'
+            from scripts.update_player_cards import stats_block, refresh_cards
+            empty={'players':{},'fields':{},'games':0,'through':0,'complete':True}
+            block=stats_block(2013,'Sample','QB',{False:empty,True:empty},root=root)
+            block=stats_block(2014,'Sample','QB',{False:empty,True:empty},old=block,root=root)
+            rows=[line for line in block.splitlines() if line.startswith(('| 2013 |','| 2014 |'))]
+            card.write_text('# Sample — 2014 Player Profile\n\n**Season:** 2014\n**Position:** QB\n\n'+block)
+            data['carry_forward']['player_cards']=cards.relative_to(root).as_posix()
+            data['source_sha256']['player_cards']=digest(cards)
+            before=card.read_bytes()
+            stage(root,data)
+            carried=SeasonPaths(2015,root).record('player_profiles/sample.md').read_text()
+            for row in rows:self.assertIn(row,carried)
+            self.assertIn('**Season:** 2015',carried)
+            self.assertEqual(carried.count('| 2015 |'),2)
+            self.assertEqual(refresh_cards(2015,root,check=True),[])
+            self.assertEqual(card.read_bytes(),before)
+            self.assertFalse(list(SeasonPaths(2015,root).receipts.glob('*.json')))
+            self.assertTrue((root/'career/2015/09_finances/README.md').exists())
+            card.write_text(card.read_text()+'Changed assessment\n')
+            with self.assertRaisesRegex(ValueError,'not frozen/reviewed: player_cards'):
+                stage(root,data)
 
 
 if __name__=='__main__':unittest.main()

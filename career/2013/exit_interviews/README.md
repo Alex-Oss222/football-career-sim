@@ -115,7 +115,7 @@ The interviews promised nothing. The players raised the questions below, and eac
 | End-of-half and end-of-game punt rules (a Stone situational decision) | Bryan Anger | Training camp |
 | Whether practice-squad and bottom-of-roster players get a written individual evaluation as a standing practice (a change to the teaching method in the onboarding framework) | Tyler Bray and the practice squad | All phases |
 
-**Contract questions.** Where a player asked about his contract, tag, tender or place on the roster, Stone said the decision is Caldwell's and disclosed nothing. The user's February 2 memo to Caldwell (`career/2014/offseason/stone_to_caldwell_2014_offseason_decisions.md`) already gives Stone's recommendations for the pending free agents, the tenders, the reserve/future contracts and the trade candidates. For players under contract with no 2014 contract event, no recommendation is due. Whether a second kicker or punter comes to camp (Josh Scobee, Bryan Anger) is a signing decision for Caldwell.
+**Contract questions.** Where a player asked about his contract, tag, tender or place on the roster, Stone said the decision is Caldwell's and disclosed nothing. The user's February 2 memo to Caldwell (`career/2014/01_early_offseason/stone_to_caldwell_2014_offseason_decisions.md`) already gives Stone's recommendations for the pending free agents, the tenders, the reserve/future contracts and the trade candidates. For players under contract with no 2014 contract event, no recommendation is due. Whether a second kicker or punter comes to camp (Josh Scobee, Bryan Anger) is a signing decision for Caldwell.
 
 ## Follow-ups
 

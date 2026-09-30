@@ -83,7 +83,7 @@ class CapTrackerTests(unittest.TestCase):
 
     def test_rollover_estimate_is_shown_separately_and_needs_a_range_and_source(self):
         outputs = render(self.data)
-        main = next(value for path, value in outputs.items() if path.name == 'jaguars_cap.md')
+        main = next(value for path, value in outputs.items() if path.name == 'cap_tracker.md')
         self.assertIn('Unused prior-year room carried in | $5,330,000 to $6,000,000', main)
         self.assertIn('Difference including the rollover estimate | $13,376,314 to $14,046,314', main)
         self.assertIn('Adjusted team cap | Unresolved', main)
@@ -97,8 +97,8 @@ class CapTrackerTests(unittest.TestCase):
 
     def test_readable_horizon_and_separate_organization_payroll(self):
         outputs=render(self.data)
-        main=next(value for path,value in outputs.items() if path.name=='jaguars_cap.md')
-        organization=next(value for path,value in outputs.items() if path.name=='organization_finances.md')
+        main=next(value for path,value in outputs.items() if path.name=='cap_tracker.md')
+        organization=next(value for path,value in outputs.items() if path.name=='coaching_payroll.md')
         self.assertIn('**Nine-year view**',main)
         self.assertIn('**Additional three years**',main)
         self.assertIn('$124,953,686',main)
@@ -113,8 +113,8 @@ class CapTrackerTests(unittest.TestCase):
 
     def test_signed_draft_class_and_traded_players_are_not_shown_as_pending(self):
         outputs=render(self.data)
-        main=next(value for path,value in outputs.items() if path.name=='jaguars_cap.md')
-        details=next(value for path,value in outputs.items() if path.name=='jaguars_contract_details.md')
+        main=next(value for path,value in outputs.items() if path.name=='cap_tracker.md')
+        details=next(value for path,value in outputs.items() if path.name=='contract_details.md')
         self.assertIn('| Aaron Donald, DT, Pittsburgh | May 8, 2014 | Signed May 11, 2014 |',main)
         self.assertNotIn('These are selection rights',main)
         self.assertNotIn('Review the exercise decision in the 2015 option window',details)
@@ -181,7 +181,7 @@ class CapTrackerTests(unittest.TestCase):
 
     def test_blank_future_cells_currency_and_totals(self):
         outputs=render(self.data)
-        main=outputs[next(path for path in outputs if path.name=='jaguars_cap.md')]
+        main=outputs[next(path for path in outputs if path.name=='cap_tracker.md')]
         self.assertNotIn('Unknown',main)
         self.assertNotIn('Term unknown',main)
         self.assertNotIn('Not committed',main)

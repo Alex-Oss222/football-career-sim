@@ -34,8 +34,8 @@
           "status": "VERIFIED",
           "remaining": "Frozen April 23 release (2014 ledger Entry 107): 256 games verified in sources.md and tests. Apply the listed dated amendments on their historical dates; two non-Jacksonville release-slot kickoff questions stay open in sources.md.",
           "evidence": [
-            "career/2014/schedule/fixtures.json",
-            "career/2014/schedule/sources.md",
+            "career/2014/06_regular_season/schedule/fixtures.json",
+            "career/2014/06_regular_season/schedule/sources.md",
             "tests/test_2014_fixtures.py"
           ]
         },
@@ -44,7 +44,7 @@
           "status": "BLOCKED",
           "remaining": "Establish current 2014 control, medical clearance, depth charts and dated background inputs.",
           "evidence": [
-            "career/2014/operating_baseline.md"
+            "career/2014/supporting_records/operating_baseline.md"
           ]
         },
         {
@@ -52,7 +52,7 @@
           "status": "BLOCKED",
           "remaining": "Reconcile 2014 obligations and practice-squad/futures control before transactions or participation.",
           "evidence": [
-            "career/2014/offseason/current_cap_worksheet.md"
+            "career/2014/09_finances/01_salary_cap/cap_worksheet.md"
           ]
         }
       ]

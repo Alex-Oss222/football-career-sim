@@ -1906,9 +1906,9 @@ This archive was appended late. It was written at this February 2, 2014 checkpoi
 **Created.**
 - **`career/2014/README.md`:** the season index.
 - **`career/2014/calendar.md`:** Jacksonville's 2014 calendar with each league date's public gate, from the new sourced library file `library/2014_league_calendar_and_financial_rules.md` (two-pass; WebFetch blocked, search-result text only; no real 2014 transaction or outcome; two outcome-bearing URL slugs withheld).
-- **`career/2014/draft/draft_order.md`:** the 2014 draft order, generated from the closed receipts by `runtime/draft_order.py` and `scripts/render_draft_order.py`. `validate_repository.py` checks it is current; tests are in `tests/test_draft_order.py`.
-- **`career/2014/schedule/opponents.md`:** Jacksonville's 2014 opponents, derived from the 2014 formula and the branch standings.
-- **`career/2014/offseason/contract_status_register.md`:** each controlled player's status when the league year opens (two-pass research; branch contracts override real history; no real 2014 decision recorded).
+- **`career/2014/04_draft/draft_order.md`:** the 2014 draft order, generated from the closed receipts by `runtime/draft_order.py` and `scripts/render_draft_order.py`. `validate_repository.py` checks it is current; tests are in `tests/test_draft_order.py`.
+- **`career/2014/06_regular_season/schedule/opponents.md`:** Jacksonville's 2014 opponents, derived from the 2014 formula and the branch standings.
+- **`career/2014/09_finances/02_player_contracts/contract_status.md`:** each controlled player's status when the league year opens (two-pass research; branch contracts override real history; no real 2014 decision recorded).
 
 **2014 draft order (branch).**
 - **Jacksonville:** 26th in each round, as a Divisional loser (10-6, strength of schedule .477). Its second-round selection belongs to Washington (the Cousins trade).
@@ -2162,7 +2162,7 @@ This archive was appended late. It was written at this February 2, 2014 checkpoi
 - no hire before the employer's elimination.
 Whether a playoff club could refuse an in-window head-coach interview is Unverified (W11); the method sets a default policy there instead of a rule.
 
-**Method.** `career/2014/offseason/staff_changes/carousel_method.json` and `scripts/coaching_carousel.py`, committed and pushed (35f1276) before the draw, with `tests/test_coaching_carousel.py`.
+**Method.** `career/2014/01_early_offseason/staff_changes/carousel_method.json` and `scripts/coaching_carousel.py`, committed and pushed (35f1276) before the draw, with `tests/test_coaching_carousel.py`.
 - **Head-coach changes:** each club's chance comes from real 2002-2012 club-seasons by wins, tenure and recent playoffs (`library/data/2012_hc_change_base_rates.json`), applied to the branch 2013 record. Hire days follow the January 2013 cycle.
 - **Requests:** weighted by role, play-calling, club and unit rank for head-coach jobs, and by prior coordinator experience and room for coordinator jobs. Factors are normalized so they move interest without raising the league total.
 - **Permission:** Jacksonville's default policy, set for the user and applied alike to any club, grants head-coach interviews and position-to-coordinator moves and refuses lateral moves.
@@ -2222,7 +2222,7 @@ The adversarial review of the method before the draw confirmed and fixed thirtee
 - every exit physical is the medical staff's, and none recorded a finding;
 - Stone promised no job, role, contract or roster spot;
 - contract, tag, tender and roster questions were referred to Caldwell.
-The user's February 2 memo to Caldwell (`career/2014/offseason/stone_to_caldwell_2014_offseason_decisions.md`) already answers the contract recommendations for the pending free agents, the futures and the trade candidates. The interviews disclosed none of them.
+The user's February 2 memo to Caldwell (`career/2014/01_early_offseason/stone_to_caldwell_2014_offseason_decisions.md`) already answers the contract recommendations for the pending free agents, the futures and the trade candidates. The interviews disclosed none of them.
 
 **Open for the user.**
 - **Program decisions** for the 2014 phase plans, listed in the README: examples are the backup defensive caller, the long-term-injury plan, individual classified cutups, how rotation and depth-order evidence is communicated, and the end-of-half punt rules.
@@ -2274,7 +2274,7 @@ The user's choices:
 - Document 5 carries the new Document 2 hash.
 - The 2013 background library already followed this pattern: real Week 1 charts, draft swaps, Jacksonville control first. The rule now states it in writing for 2014 onward.
 
-**Method.** `career/2014/offseason/league_rails/method.md`:
+**Method.** `career/2014/league/personnel/method.md`:
 - rails become usable only on their real public dates;
 - Jacksonville control overrides every rail except retirement;
 - market draw: the chance Jacksonville signs a free agent is 0 below a money index of 0.80, 0.50 at parity and at most 0.90, drawn through the private service at his real signing date;
@@ -2322,7 +2322,7 @@ The draw weights are a modelling choice and can be changed until the first draw.
   - Stone's trade package G (Allen for a 2015 seventh) cannot close after April 22.
 
 **To verify (not applied).**
-- Nwaneri, Rackley, Owens and Rutland are listed with "VERIFY" before their names in `career/2014/offseason/league_rails/retirements.md`.
+- Nwaneri, Rackley, Owens and Rutland are listed with "VERIFY" before their names in `career/2014/league/personnel/retirements.md`.
 - None has a dated public source.
 
 **State.** Updated in the same commit: `career/2013/roster.md`, Document 4, Document 5, and `retirements.md`.
@@ -2368,9 +2368,9 @@ The draw weights are a modelling choice and can be changed until the first draw.
 **Checkpoint:** `Canonical correction - February 2, 2014 - Draft coin flip and league pick ownership reconciled`
 **Preceding global package checkpoint:** `Canonical correction - February 2, 2014 - Cousins trade and draft capital reconciled`
 
-**User authority and draw.** The user directed a website coin flip and a league-wide pick-ownership correction. Before drawing, heads was assigned to Green Bay and tails to Indianapolis. The one-coin RANDOM.ORG result was **0 obverse, 1 reverse (tails)** at **2026-09-29 01:42:47 UTC**. Indianapolis receives Round 1 slot **14**, Green Bay **15**. The locally committed protocol, structured result and screenshot are in `career/2014/draft/coin_flip.json` and `coin_flip_2026-09-29.jpg`. There was one draw, no reroll. This user-authorized administrative resolution is not a claim about an actual 2014 NFL ceremony. The recorded result now drives all seven rounds, preserving equal-record rotation and original-club asset identity.
+**User authority and draw.** The user directed a website coin flip and a league-wide pick-ownership correction. Before drawing, heads was assigned to Green Bay and tails to Indianapolis. The one-coin RANDOM.ORG result was **0 obverse, 1 reverse (tails)** at **2026-09-29 01:42:47 UTC**. Indianapolis receives Round 1 slot **14**, Green Bay **15**. The locally committed protocol, structured result and screenshot are in `career/2014/04_draft/coin_flip.json` and `coin_flip_2026-09-29.jpg`. There was one draw, no reroll. This user-authorized administrative resolution is not a claim about an actual 2014 NFL ceremony. The recorded result now drives all seven rounds, preserving equal-record rotation and original-club asset identity.
 
-**Ownership reconciliation.** The complete 224-asset audit is in `career/2014/draft/ownership_audit.md`, with dated source pairs and branch evidence. Pre-divergence consideration and consideration for trades already represented in the accepted 2013 background baseline are restored; this is bookkeeping for established acquisitions, not new negotiations. Closed branch receipts override conflicting historical midseason trades. The existing user exception for Washington's first remains controlling.
+**Ownership reconciliation.** The complete 224-asset audit is in `career/2014/04_draft/ownership_audit.md`, with dated source pairs and branch evidence. Pre-divergence consideration and consideration for trades already represented in the accepted 2013 background baseline are restored; this is bookkeeping for established acquisitions, not new negotiations. Closed branch receipts override conflicting historical midseason trades. The existing user exception for Washington's first remains controlling.
 
 **Jacksonville correction.** The October 2012 Mike Thomas trade conveyed Detroit's original 2014 fifth to Jacksonville. That inherited asset was missing from Entry 80's inventory. Jacksonville now owns **eight ordinary 2014 picks**: Washington's first, its own first, its own third and fourth, Detroit's fifth, its own fifth, sixth and seventh. Washington still owns Jacksonville's 2014/2015 seconds. This adds no new trade or player movement. Donald remains Stone's recorded instruction for No. 13; the draft has not taken place.
 
@@ -2410,7 +2410,7 @@ The draw weights are a modelling choice and can be changed until the first draw.
 
 **Authority.** Entry 75 declared a deferred procedure for Buffalo's and Minnesota's post-Super Bowl head-coach decisions. On September 29, 2026 the user asked, before any advance to February 17, for every resolvable poaching risk to Jacksonville's staff to be assessed, including coordinator openings at clubs that kept their head coach, which Entry 75 left unmodelled. The rules are `library/2014_coaching_hiring_and_anti_tampering_rules.md` section 8, as in Entry 75.
 
-**Method, fixed before the draw.** `career/2014/offseason/staff_changes/carousel_deferred_method.json` was committed in b8812d2 before the draw, with `scripts/coaching_carousel_deferred.py`. Stage D1 used each Super Bowl club's recorded Entry 75 base-rate cell. Stage D2 used the sourced January 2013 cycle (`2013_retained_club_coordinator_turnover.md`, research and verification passes): 24 clubs that kept their head coach opened 5 offensive and 4 defensive coordinator jobs, and only 2 of 17 coordinator openings went to another club's sitting position coach. Every probability reads the job, the coach's role and record, the clubs' records and the calendar only; the same method for any employer gives the same probabilities. One private packet (event `2014-coaching-carousel-deferred-v1`, packet `27f11087`, result reference `20275e99`) drew every value in fixed structural order.
+**Method, fixed before the draw.** `career/2014/01_early_offseason/staff_changes/carousel_deferred_method.json` was committed in b8812d2 before the draw, with `scripts/coaching_carousel_deferred.py`. Stage D1 used each Super Bowl club's recorded Entry 75 base-rate cell. Stage D2 used the sourced January 2013 cycle (`2013_retained_club_coordinator_turnover.md`, research and verification passes): 24 clubs that kept their head coach opened 5 offensive and 4 defensive coordinator jobs, and only 2 of 17 coordinator openings went to another club's sitting position coach. Every probability reads the job, the coach's role and record, the clubs' records and the calendar only; the same method for any employer gives the same probabilities. One private packet (event `2014-coaching-carousel-deferred-v1`, packet `27f11087`, result reference `20275e99`) drew every value in fixed structural order.
 
 **Head coaches.** Buffalo kept Doug Marrone (change probability 4.2 percent, not drawn). Minnesota changed head coach (probability 2.5 percent, drawn); the vacancy opened February 3 and an external candidate was hired February 17. No real 2014 hire is imported and the new coach is not named.
 
@@ -2435,7 +2435,7 @@ No other club asked for a Jacksonville assistant, and none left. Nothing was pen
 **Checkpoint:** `Canonical update - February 2, 2014 - Special teams coordinator search resolved (Westhoff hired February 11)`
 **Preceding global package checkpoint:** `Canonical update - February 2, 2014 - February 2014 coaching exposure resolved (no departures)`
 
-**Authority.** Stone selected Bobby April on September 28, 2026 at a $700,000 opening and $800,000 ceiling (`career/2014/offseason/staff_changes/staff_plan.md`). On September 29, 2026 the user added the fallback order: Mike Westhoff, then Bruce DeHaven, each at a $625,000 opening and $750,000 ceiling on the common terms. Stone hires his own assistants within the funded staff budget (Document 3, authority row 2).
+**Authority.** Stone selected Bobby April on September 28, 2026 at a $700,000 opening and $800,000 ceiling (`career/2014/01_early_offseason/staff_changes/staff_plan.md`). On September 29, 2026 the user added the fallback order: Mike Westhoff, then Bruce DeHaven, each at a $625,000 opening and $750,000 ceiling on the common terms. Stone hires his own assistants within the funded staff budget (Document 3, authority row 2).
 
 **Method, fixed before the draw.** `st_search_method.json` was committed in 10ba5f7 before the draw, with `scripts/st_coordinator_search.py`. One private packet (event `2014-st-coordinator-search-v1`, packet `599bb86f`, result reference `3ab39549`) drew in fixed order whatever the path. Each probability reads only the coach's employment status, the job and the calendar.
 
@@ -2459,9 +2459,9 @@ No other club asked for a Jacksonville assistant, and none left. Nothing was pen
 **Checkpoint:** `Canonical update - February 2, 2014 - 2014 reserve/future contracts signed (six of eight)`
 **Preceding global package checkpoint:** `Canonical update - February 2, 2014 - Special teams coordinator search resolved (Westhoff hired February 11)`
 
-**Authority.** Stone's February 2 memo, section 1 (`career/2014/offseason/stone_to_caldwell_2014_offseason_decisions.md`), recommends reserve/future contracts for Tyler Bray, Richard Murphy, Antwon Blake, Jerome Long, D'Anthony Smith and Jerrell Jackson at the 2014 minimum for each player's credited seasons, no guarantee and no signing bonus, and letting Brandon King and Will Ta'ufo'ou go. On September 29, 2026 the user asked for the reserve/future contracts to be run before the clock advances to February 17. Caldwell executes: six minimum camp contracts are within the memo and cost nothing that counts before the league year. His agreement is a stated reading, not a draw.
+**Authority.** Stone's February 2 memo, section 1 (`career/2014/01_early_offseason/stone_to_caldwell_2014_offseason_decisions.md`), recommends reserve/future contracts for Tyler Bray, Richard Murphy, Antwon Blake, Jerome Long, D'Anthony Smith and Jerrell Jackson at the 2014 minimum for each player's credited seasons, no guarantee and no signing bonus, and letting Brandon King and Will Ta'ufo'ou go. On September 29, 2026 the user asked for the reserve/future contracts to be run before the clock advances to February 17. Caldwell executes: six minimum camp contracts are within the memo and cost nothing that counts before the league year. His agreement is a stated reading, not a draw.
 
-**Method, fixed before the draw.** `career/2014/offseason/futures_method.json` and `scripts/futures_2014.py` were committed in 8f85462 before the draw. All six offers went out on February 3, 2014. Under league rails method section 3, a player Jacksonville offers follows his real next move only if it is a dated move of the same kind in the same window. One private packet (event `2014-futures-contracts-v1`, packet `9bc36abe`, result reference `c9e39398`) made the one draw the method needed.
+**Method, fixed before the draw.** `career/2014/01_early_offseason/futures_method.json` and `scripts/futures_2014.py` were committed in 8f85462 before the draw. All six offers went out on February 3, 2014. Under league rails method section 3, a player Jacksonville offers follows his real next move only if it is a dated move of the same kind in the same window. One private packet (event `2014-futures-contracts-v1`, packet `9bc36abe`, result reference `c9e39398`) made the one draw the method needed.
 
 **Uncontested signings, February 3.** Bray, Murphy, Blake, Long and Jerrell Jackson had no dated competing move and signed on February 3. Jackson's real 2014 Kansas City contract is undated, so it cannot enter the branch (rails method section 2).
 
@@ -2485,7 +2485,7 @@ No other club asked for a Jacksonville assistant, and none left. Nothing was pen
 
 **Authority.** On September 29, 2026 the user asked for everything resolvable between February 3 and February 17 to be closed, and then for the clock to advance to February 17. Entries 83 to 85 closed the staff and reserve/future events. This entry closes the rest of the window and moves the master clock.
 
-**Caldwell's pre-tag-window verifications.** `career/2014/offseason/caldwell_pre_tag_verifications.md` answers memo section 7 as of February 17. The research had two passes, and every figure rests on search-result text.
+**Caldwell's pre-tag-window verifications.** `career/2014/01_early_offseason/caldwell_pre_tag_verifications.md` answers memo section 7 as of February 17. The research had two passes, and every figure rests on search-result text.
 - **Jeremy Cain.** His three-year February 2011 contract expired after 2013. He is a pending unrestricted free agent with at least 5 accrued seasons. Stone's one-year minimum offer is Caldwell's to make. Its outcome is resolved under the rails at Cain's decision date.
 - **Montell Owens.** He is under contract through 2015 (Supported). His 2014 base is unknown, and he is kept.
 - **John Parker Wilson and Jonathan Grimes.** Both stay Unresolved. The verification pass did not support the reserve/future label on Wilson's contract.
@@ -2534,7 +2534,7 @@ As a result, the contract status register now shows 36 under contract, 8 pending
 
 **Administrative corrections (derived-view contradictions, no event).** The contract register's Nwaneri row now shows the 2015 final year confirmed by the pre-tag-window verifications and Entry 86. The 2013 regular-season worksheet no longer says the initial cap sheet lacks Blackmon's base/proration split (it shows one, as an unre-verified archive transcription; the forfeiture stays unresolved). The 2013 draftees page carries a supersession note for Bray's rookie contract, replaced by his Entry 85 reserve/future deal. AGENTS.md now lists the depth chart and the contract table among the dependent views every progression task updates.
 
-**Atomic closure.** The following now agree: the memo amendment, the [tags and tenders record](../2014/offseason/free_agency/signings.md#tags-and-tenders), the contract status register (7 pending UFAs, 1 franchise player), the contract table and the working depth chart (both with update-log rows), the 2014 preparation worksheet, the calendar, the roster header, the 2014 README, readiness, operating baseline and trade status lines, and Documents 4 (register 43) and 5 (state 63). No player-control, roster-count, pick or staff change. The private snapshot is not advanced from this branch.
+**Atomic closure.** The following now agree: the memo amendment, the [tags and tenders record](../2014/02_free_agency/signings.md#tags-and-tenders), the contract status register (7 pending UFAs, 1 franchise player), the contract table and the working depth chart (both with update-log rows), the 2014 preparation worksheet, the calendar, the roster header, the 2014 README, readiness, operating baseline and trade status lines, and Documents 4 (register 43) and 5 (state 63). No player-control, roster-count, pick or staff change. The private snapshot is not advanced from this branch.
 
 **Commit closed - Canonical update - February 18, 2014 - Eugene Monroe designated franchise player - canonical through February 18, 2014**
 
@@ -2716,7 +2716,7 @@ Atomic closure: contract register/table, futures outcomes, working depth-chart c
 **Checkpoint:** `Canonical update - March 11, 2014 - League year opened (tenders, futures, market draws and trade offers)`
 **Preceding global package checkpoint:** `Canonical correction - March 3, 2014 - March 1 to 3 rails verification closed`
 
-**Authority.** On September 29, 2026 the user asked for the clock to advance to 4 p.m. ET March 11: tenders, the futures and Monroe's tender taking effect, the trade window, Monroe's long-term draw, Cain's re-signing and the market draws for Verner, Talib, Tate, Te'o-Nesheim or Allen, and Hawkins or Edelman. Before any draw the user decided four open method questions, recorded as the memo amendment "league-year draws and package I revised" and committed with the method (`career/2014/offseason/league_year_method.json`, commit 34c5986):
+**Authority.** On September 29, 2026 the user asked for the clock to advance to 4 p.m. ET March 11: tenders, the futures and Monroe's tender taking effect, the trade window, Monroe's long-term draw, Cain's re-signing and the market draws for Verner, Talib, Tate, Te'o-Nesheim or Allen, and Hawkins or Edelman. Before any draw the user decided four open method questions, recorded as the memo amendment "league-year draws and package I revised" and committed with the method (`career/2014/01_early_offseason/league_year_method.json`, commit 34c5986):
 - **Package I revised:** Jacksonville's 2015 first, 2015 fourth and 2016 fifth, plus Alualu only if Marks is re-signed, for Arizona's No. 38. Arizona answers by one draw on the free-agent curve, with Jimmy Johnson chart values and each future pick counted one round later per year out (chart values confirmed from the nflverse draft-values data).
 - **Own free agents re-signed by the real Jaguars** (Marks, Henne): drawn against that real contract; if lost, unplaced unrestricted free agents at 4 p.m.
 - **No rival contract** (Te'o-Nesheim, Cain): decided at 4 p.m. at the 0.90 ceiling.
@@ -2757,7 +2757,7 @@ Atomic closure: contract register/table, futures outcomes, working depth-chart c
 **Checkpoint:** `Canonical correction - March 11, 2014 - March 2014 free-agency replay (Monroe, Marks and Verner signed)`
 **Preceding global package checkpoint:** `Canonical update - March 11, 2014 - League year opened (tenders, futures, market draws and trade offers)`
 
-**Authority and method.** After Entry 94 closed, the user (as Stone's author) objected that the first pass treated Stone's memo figures as fixed offers, when they were baselines for Caldwell, the general manager, to negotiate from with the cap room available. The user directed a replay of the March 8 to 11 negotiations and conducted it in a separate chat session; its record is filed verbatim as [the March 2014 replay log](../2014/offseason/free_agency/march_2014_replay_log.md), which is the event owner for this entry. Under that instruction the replay is a judgment-based simulation: Caldwell sets offers, and each player and his representatives may accept, counter or decline. It uses no private draw and claims no acceptance probability. This supersedes Entry 94's first-pass market draws for the players it resolves. The first-pass results (`league_year_results.json`) are preserved as history, marked superseded, and are not rerolled or reused. The label-swap rule still applies to every replay outcome.
+**Authority and method.** After Entry 94 closed, the user (as Stone's author) objected that the first pass treated Stone's memo figures as fixed offers, when they were baselines for Caldwell, the general manager, to negotiate from with the cap room available. The user directed a replay of the March 8 to 11 negotiations and conducted it in a separate chat session; its record is filed verbatim as [the March 2014 replay log](../2014/02_free_agency/march_2014_replay_log.md), which is the event owner for this entry. Under that instruction the replay is a judgment-based simulation: Caldwell sets offers, and each player and his representatives may accept, counter or decline. It uses no private draw and claims no acceptance probability. This supersedes Entry 94's first-pass market draws for the players it resolves. The first-pass results (`league_year_results.json`) are preserved as history, marked superseded, and are not rerolled or reused. The label-swap rule still applies to every replay outcome.
 
 **Resolved in the replay (March 11, 2014).**
 - **Eugene Monroe, OT:** re-signed, five years (2014 to 2018), up to $42,500,000, $20,000,000 fully guaranteed ($8,000,000 signing bonus plus the $4,000,000 2014 and $8,000,000 2015 base). 2014 cap $5,600,000. The contract replaces his $11,654,000 franchise tender once; no second designation opens. The real Baltimore re-signing does not apply.
@@ -2780,7 +2780,7 @@ Atomic closure: contract register/table, futures outcomes, working depth-chart c
 **Checkpoint:** `Canonical update - March 12, 2014 - Free-agency replay (Talib signed; Tate to Detroit)`
 **Preceding global package checkpoint:** `Canonical correction - March 11, 2014 - March 2014 free-agency replay (Monroe, Marks and Verner signed)`
 
-**Authority.** The user supplied the updated replay log, now filed as [the March 2014 replay log](../2014/offseason/free_agency/march_2014_replay_log.md), which remains the event owner. The method is unchanged from Entry 95: judgment-based negotiation, no private draw, competing clubs judged by the same criteria. Tate's decision is dated March 12, so the master clock advances to March 12.
+**Authority.** The user supplied the updated replay log, now filed as [the March 2014 replay log](../2014/02_free_agency/march_2014_replay_log.md), which remains the event owner. The method is unchanged from Entry 95: judgment-based negotiation, no private draw, competing clubs judged by the same criteria. Tate's decision is dated March 12, so the master clock advances to March 12.
 
 **Aqib Talib, CB (March 11, after 4 p.m.).** Signed: five years (2014 to 2018), up to $46,500,000, $21,500,000 fully guaranteed ($6,500,000 signing bonus plus the $6,500,000 2014 and $8,500,000 2015 base). 2014 cap $7,800,000. Later years carry $1,000,000 roster bonuses and up to $1,000,000 of active-game bonuses. The historical Denver signing does not occur. With both primary corners signed, neither corner-loss contingency applies; Brent Grimes and Tarell Brown are not pursued automatically.
 
@@ -2804,7 +2804,7 @@ Atomic closure: contract register/table, futures outcomes, working depth-chart c
 **Checkpoint:** `Canonical update - March 18, 2014 - Free-agency replay (Nicks and Hawkins signed; Edelman to New England)`
 **Preceding global package checkpoint:** `Canonical update - March 12, 2014 - Free-agency replay (Talib signed; Tate to Detroit)`
 
-**Authority.** The user supplied the updated replay log, filed as [the March 2014 replay log](../2014/offseason/free_agency/march_2014_replay_log.md), the event owner. Stone supplied new baselines for Edelman, Nicks and Hawkins; the method is unchanged (judgment-based negotiation, no private draw). The latest dated decision is Cincinnati's March 18 non-match, so the master clock advances to March 18.
+**Authority.** The user supplied the updated replay log, filed as [the March 2014 replay log](../2014/02_free_agency/march_2014_replay_log.md), the event owner. Stone supplied new baselines for Edelman, Nicks and Hawkins; the method is unchanged (judgment-based negotiation, no private draw). The latest dated decision is Cincinnati's March 18 non-match, so the master clock advances to March 18.
 
 **Julian Edelman, WR (March 15).** Declined Jacksonville's final offer (four years, up to $19,000,000, $8,500,000 fully guaranteed) and agreed to return to New England (four years, $17,000,000 plus up to $2,000,000 incentives). Nothing is booked. Stone's amendment tied package A to Edelman signing, so package A stays inactive; memo contingency 3 keeps Shorts and opens his extension process.
 
@@ -2828,7 +2828,7 @@ Atomic closure: contract register/table, futures outcomes, working depth-chart c
 **Checkpoint:** `Canonical update - March 18, 2014 - Free-agency replay (Te'o-Nesheim signed)`
 **Preceding global package checkpoint:** `Canonical update - March 18, 2014 - Free-agency replay (Nicks and Hawkins signed; Edelman to New England)`
 
-**Authority.** The user asked for a Te'o-Nesheim contract built on an honest check of the cap against the memo's projection, and for the negotiation to be run. The event owner is [the negotiation record](../2014/offseason/free_agency/teo_nesheim_negotiation_2014-03-18.md); the method is the replay's (judgment-based, no private draw).
+**Authority.** The user asked for a Te'o-Nesheim contract built on an honest check of the cap against the memo's projection, and for the negotiation to be run. The event owner is [the negotiation record](../2014/02_free_agency/teo_nesheim_negotiation_2014-03-18.md); the method is the replay's (judgment-based, no private draw).
 
 **Budget check.** The six earlier replay deals cost $31,950,000 of 2014 cap against the memo's $25,750,000 estimates for the same slots: $6,200,000 over. With the memo's unfinished items priced at its own figures, the full plan ends about $3.5M short, against the memo's projected $6.2M to $13.0M of room. Jacksonville is tighter than projected, so the edge offer was kept cap-light.
 
@@ -2850,7 +2850,7 @@ Atomic closure: contract register/table, futures outcomes, working depth-chart c
 **Checkpoint:** `Canonical update - March 20, 2014 - Cain re-signed; Nwaneri traded to Arizona for No. 38`
 **Preceding global package checkpoint:** `Canonical update - March 18, 2014 - Free-agency replay (Te'o-Nesheim signed)`
 
-**Authority.** The user confirmed Te'o-Nesheim's acceptance (Entry 98), asked for the long-snapper negotiation, and directed that Nwaneri be traded with the picks in package I. Method: the replay's judgment-based negotiation; no private draw. Event owners: [Cain's negotiation record](../2014/offseason/free_agency/cain_negotiation_2014-03-19.md) and [the package I negotiation record](../2014/trades/package_i_negotiation_2014-03-20.md).
+**Authority.** The user confirmed Te'o-Nesheim's acceptance (Entry 98), asked for the long-snapper negotiation, and directed that Nwaneri be traded with the picks in package I. Method: the replay's judgment-based negotiation; no private draw. Event owners: [Cain's negotiation record](../2014/02_free_agency/cain_negotiation_2014-03-19.md) and [the package I negotiation record](../2014/10_trades/01_targets_and_offers/package_i_negotiation_2014-03-20.md).
 
 **Jeremy Cain, LS (March 19).** Re-signed: one year, $855,000 (the minimum for seven to nine credited seasons, inferred), no bonus or guarantee. His request for a second year or a bonus was declined; he enters camp as the 2013 incumbent in the planned competition with Casey Kreiter. The minimum-salary benefit is not applied while his credited seasons are unverified.
 
@@ -2871,7 +2871,7 @@ Atomic closure: contract register/table, futures outcomes, working depth-chart c
 **Checkpoint:** `Canonical update - March 24, 2014 - Compensatory picks announced`
 **Preceding global package checkpoint:** `Canonical update - March 20, 2014 - Cain re-signed; Nwaneri traded to Arizona for No. 38`
 
-**Authority.** The user asked for the clock to run to March 24, for the compensatory picks to be announced, and then for a realistic method. The league formula's weights are unpublished and the real award list may not be imported (library/2014_draft_order_verification.md). The branch therefore uses its own [method](../2014/draft/compensatory/method.json), version 2. It keeps the public rules: qualifying 2013 unrestricted free agents lost and signed, net loss only, at most four picks per club, rounds 3 to 7, 32 in total, not tradeable in 2014. It follows the formula's described structure. Salary is the primary factor, scored as the new contract's percentile in the 2013 league market. Branch playing time (share of the new club's games) costs up to 12 points. The highest branch 2013 honour adds up to 6. Value points set the round: 90 for Round 3, 82, 74, 65 and 55 for Round 7, and below 55 a free agent does not count. The weights and thresholds are branch parameters. Inputs: [recorded 2013 moves](../2014/draft/compensatory/inputs.json), with Over The Cap contract values via nflverse for other clubs and Jacksonville's own branch contracts. The resolution is deterministic: no draw. Event owner: [announcement](../2014/draft/compensatory/announcement.md) and [awards receipt](../2014/draft/compensatory/awards.json).
+**Authority.** The user asked for the clock to run to March 24, for the compensatory picks to be announced, and then for a realistic method. The league formula's weights are unpublished and the real award list may not be imported (library/2014_draft_order_verification.md). The branch therefore uses its own [method](../2014/04_draft/compensatory/method.json), version 2. It keeps the public rules: qualifying 2013 unrestricted free agents lost and signed, net loss only, at most four picks per club, rounds 3 to 7, 32 in total, not tradeable in 2014. It follows the formula's described structure. Salary is the primary factor, scored as the new contract's percentile in the 2013 league market. Branch playing time (share of the new club's games) costs up to 12 points. The highest branch 2013 honour adds up to 6. Value points set the round: 90 for Round 3, 82, 74, 65 and 55 for Round 7, and below 55 a free agent does not count. The weights and thresholds are branch parameters. Inputs: [recorded 2013 moves](../2014/04_draft/compensatory/inputs.json), with Over The Cap contract values via nflverse for other clubs and Jacksonville's own branch contracts. The resolution is deterministic: no draw. Event owner: [announcement](../2014/04_draft/compensatory/announcement.md) and [awards receipt](../2014/04_draft/compensatory/awards.json).
 
 **Method version.** Version 1 (fixed APY bands) was computed first on this branch and replaced before merge at the user's request for a more realistic method. It was never canon. The replacement is a modelling choice made for realism, and Jacksonville receives no pick under either version.
 
@@ -2879,7 +2879,7 @@ Atomic closure: contract register/table, futures outcomes, working depth-chart c
 
 **Jacksonville.** No compensatory pick. Its qualifying 2013 losses were Derek Cox (San Diego) and Terrance Knighton (Denver). Brent Grimes and Roy Miller cancel them, and Sen'Derrick Marks leaves a net gain of one; Alan Ball's $1.0M deal falls below the value floor. Its own picks keep their slots; their overall numbers become **129** (Round 4), **153** (Detroit's fifth) and **168** (Round 5), **205** (Round 6) and **241** (Round 7). Nos. 13, 26, 38 and 90 are unchanged. No contract, cap figure or roster fact changes.
 
-**Other March 21 to 24 items.** The League Meeting opens March 23; rules it adopts apply from their effective dates. Stone's offseason-program schedule choice, recommended internally for March 24 in the [phase-plan decisions](../2014/offseason/phase_plan_decisions.md), is **due and not made**: it is Stone's choice, and the filing limit is March 31 for an April 21 start. Miami has not answered package D. Nwaneri's March 25 roster bonus is Arizona's.
+**Other March 21 to 24 items.** The League Meeting opens March 23; rules it adopts apply from their effective dates. Stone's offseason-program schedule choice, recommended internally for March 24 in the [phase-plan decisions](../2014/03_offseason_training/staff_decisions.md), is **due and not made**: it is Stone's choice, and the filing limit is March 31 for an April 21 start. Miami has not answered package D. Nwaneri's March 25 roster bonus is Arizona's.
 
 **Correction carried.** The draft board now reflects package I as the memo directed when it closed (Entry 99): No. 38 Davante Adams, No. 26 Joel Bitonio, then Kyle Van Noy.
 

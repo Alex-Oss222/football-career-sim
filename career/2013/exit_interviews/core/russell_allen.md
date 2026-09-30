@@ -87,7 +87,7 @@ All voluntary. Jacksonville's 2014 offseason program may begin no earlier than A
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/russell_allen.json`
-- `career/2014/offseason/contract_status_register.md` line 96; `career/2013/roster.md` line 112; `state/04_Roster_and_Staff_Register.md` lines 152, 223; `career/2013/depth_chart.json` line 14; `state/05_Current_Season_State.md` section 4
+- `career/2014/09_finances/02_player_contracts/contract_status.md` line 96; `career/2013/roster.md` line 112; `state/04_Roster_and_Staff_Register.md` lines 152, 223; `career/2013/depth_chart.json` line 14; `state/05_Current_Season_State.md` section 4
 - `career/2013/offseason/initial_roster.md` line 83
 - `career/2013/offseason/training_camp/output.md` line 106; `career/2013/offseason/training_camp/standouts.md` line 15; `career/2013/offseason/training_camp/position_battles.md` line 15; `career/2013/preseason/game_4_jacksonville_at_atlanta/output.md` line 11
 - `career/2013/regular_season/week_01_kansas_city_at_jacksonville/output.md` lines 315, 331; `week_03_jacksonville_at_seattle/output.md` line 305
@@ -98,6 +98,6 @@ All voluntary. Jacksonville's 2014 offseason program may begin no earlier than A
 - `career/2013/postseason/week_18_jacksonville_at_kansas_city/output.md` lines 35, 65, 322; `career/2013/postseason/week_19_jacksonville_at_tennessee/output.md` lines 85, 333; `career/2013/ledger.md` line 1641
 - `career/2013/exit_interviews/main_core/daryl_smith.md` lines 136, 206; `career/2013/exit_interviews/main_core/paul_posluszny.md` lines 145, 186, 197-198, 211
 - `runtime/defect_register.md` line 49 (item 19)
-- `career/2013/ledger.md` Entry 75; `career/2014/offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta; Bush's January 14 Indianapolis interview)
+- `career/2013/ledger.md` Entry 75; `career/2014/01_early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta; Bush's January 14 Indianapolis interview)
 - `career/2013/offseason/the_prowl_program_identity.md` ("Good. Better. Best.", "Earn Responsibility", "Stars and Veterans"); `career/2013/offseason/player_onboarding_and_development_framework.md` section 2
 - `career/2013/offseason/the_prowl_player_readiness_standard.md` sections 7 and 10; `career/2014/calendar.md` line 31

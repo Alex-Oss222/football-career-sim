@@ -92,7 +92,7 @@ All voluntary. Jacksonville's 2014 offseason program may begin no earlier than A
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/bryan_anger.json`
-- `career/2014/offseason/contract_status_register.md` lines 15, 103; `career/2013/roster.md` line 143; `state/04_Roster_and_Staff_Register.md` line 239; `state/05_Current_Season_State.md` line 59; `career/2013/depth_chart.json` lines 17, 75
+- `career/2014/09_finances/02_player_contracts/contract_status.md` lines 15, 103; `career/2013/roster.md` line 143; `state/04_Roster_and_Staff_Register.md` line 239; `state/05_Current_Season_State.md` line 59; `career/2013/depth_chart.json` lines 17, 75
 - `career/2013/offseason/initial_roster.md` line 95; `career/2013/offseason/otas/output.md` line 198; `career/2013/offseason/training_camp/output.md` lines 35, 79
 - `career/2013/regular_season/week_01_kansas_city_at_jacksonville/output.md` lines 327, 328; LS / operation rows, Weeks 2 to 8 (`week_02` line 332 through `week_08` line 369); `week_02_jacksonville_at_oakland/output.md` lines 293, 331; `week_05_jacksonville_at_st_louis/output.md` lines 275, 313, 352, 356; `week_06_jacksonville_at_denver/output.md` lines 341, 345; `week_08_san_francisco_at_jacksonville/output.md` line 368
 - `career/2013/regular_season/week_10_jacksonville_at_tennessee/output.md` line 370; `week_12_jacksonville_at_houston/output.md` lines 63, 65, 302, 321; `week_12_jacksonville_at_houston/houston_rematch_notes.md` lines 20-25; `career/2013/ledger.md` line 1297
@@ -104,4 +104,4 @@ All voluntary. Jacksonville's 2014 offseason program may begin no earlier than A
 - `career/2013/exit_interviews/core/josh_scobee.md` lines 54, 78, 84
 - `career/2013/offseason/the_prowl_program_identity.md` ("Good. Better. Best.", "Tell the Truth Quickly", "Confidential Support Is Not Personnel Scouting"); `career/2013/offseason/player_onboarding_and_development_framework.md` section 2; `career/2013/offseason/the_prowl_player_readiness_standard.md` sections 7 and 10
 - `career/2014/calendar.md` line 31
-- `career/2013/ledger.md` Entry 75; `career/2014/offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)
+- `career/2013/ledger.md` Entry 75; `career/2014/01_early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)

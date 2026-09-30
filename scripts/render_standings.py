@@ -146,13 +146,14 @@ def main():
     parser.add_argument("year", type=int)
     parser.add_argument("--through-week", type=int)
     args = parser.parse_args()
-    career = ROOT / "career" / str(args.year)
-    receipts = load_receipts(career / "stats" / "game_receipts")
+    from runtime.seasons import SeasonPaths
+    paths = SeasonPaths(args.year, ROOT)
+    receipts = load_receipts(paths.receipts)
     text = render(args.year, receipts, args.through_week)
     if args.through_week is not None:
         print(text)
         return
-    (career / "standings.md").write_text(text, encoding="utf-8")
+    paths.record('standings.md').write_text(text, encoding="utf-8")
     print("rendered standings from %d receipts" % len(receipts))
 
 

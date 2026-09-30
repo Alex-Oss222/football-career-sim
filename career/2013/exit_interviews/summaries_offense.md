@@ -14,7 +14,7 @@ Plan: voluntary. Bates offers a cutup of his camp and Game 4 reps; team work wai
 
 Follow-ups: Caldwell's office to confirm his contract status to him; Bates to build the cutup on request.
 
-Evidence: career/2013/roster.md:29; career/2014/offseason/contract_status_register.md:37, 109; career/2013/offseason/otas/output.md:34, 92; career/2013/offseason/mandatory_minicamp/output.md:37; career/2013/offseason/training_camp/output.md:27, 55, 102; career/2013/preseason/game_4_jacksonville_at_atlanta/output.md:11; career/2013/regular_season/week_05_jacksonville_at_st_louis/output.md:368; career/2013/stats/team_player_stats.md:15; state/04_Roster_and_Staff_Register.md:115; career/2013/offseason/quarterback_development_plan.md (section 8).
+Evidence: career/2013/roster.md:29; career/2014/09_finances/02_player_contracts/contract_status.md:37, 109; career/2013/offseason/otas/output.md:34, 92; career/2013/offseason/mandatory_minicamp/output.md:37; career/2013/offseason/training_camp/output.md:27, 55, 102; career/2013/preseason/game_4_jacksonville_at_atlanta/output.md:11; career/2013/regular_season/week_05_jacksonville_at_st_louis/output.md:368; career/2013/stats/team_player_stats.md:15; state/04_Roster_and_Staff_Register.md:115; career/2013/offseason/quarterback_development_plan.md (section 8).
 
 ### Mike Brown, WR
 
@@ -28,7 +28,7 @@ Plan: voluntary. Drake offers a route cutup.
 
 Follow-ups: Stone and Drake to walk him through the Week 11 change; special teams (Stone until the coordinator job is filled) to review his return film on request.
 
-Evidence: career/2013/roster.md:50; career/2014/offseason/contract_status_register.md:36, 75; career/2013/stats/team_player_stats.md:34, 124; career/2013/offseason/training_camp/position_battles.md:11; career/2013/regular_season/week_03_jacksonville_at_seattle/output.md:65; career/2013/regular_season/week_07_san_diego_at_jacksonville/output.md:82, 155; career/2013/regular_season/week_10_jacksonville_at_tennessee/output.md:203; career/2013/regular_season/week_11_arizona_at_jacksonville/output.md:38, 319; state/04_Roster_and_Staff_Register.md:115; career/2013/ledger.md:2148 (Entry 75, special teams coordinator vacant from January 12, 2014).
+Evidence: career/2013/roster.md:50; career/2014/09_finances/02_player_contracts/contract_status.md:36, 75; career/2013/stats/team_player_stats.md:34, 124; career/2013/offseason/training_camp/position_battles.md:11; career/2013/regular_season/week_03_jacksonville_at_seattle/output.md:65; career/2013/regular_season/week_07_san_diego_at_jacksonville/output.md:82, 155; career/2013/regular_season/week_10_jacksonville_at_tennessee/output.md:203; career/2013/regular_season/week_11_arizona_at_jacksonville/output.md:38, 319; state/04_Roster_and_Staff_Register.md:115; career/2013/ledger.md:2148 (Entry 75, special teams coordinator vacant from January 12, 2014).
 
 ### Mark Asper, G
 
@@ -42,4 +42,4 @@ Plan: voluntary. Strength work with the performance staff is suggested, not requ
 
 Follow-ups: Yarno to give him a written evaluation and an answer on center work; Tice with Yarno to classify his charged sacks by cause (the all-linemen follow-up).
 
-Evidence: career/2013/roster.md:75; career/2014/offseason/contract_status_register.md:85; career/2013/stats/team_player_stats.md:56; career/2013/regular_season/week_03_jacksonville_at_seattle/output.md:31; career/2013/regular_season/week_09_bye/output.md:44, 51; career/2013/regular_season/week_10_jacksonville_at_tennessee/output.md:40, 372; runtime/defect_register.md:11; state/04_Roster_and_Staff_Register.md:115; career/2013/exit_interviews/main_core/eugene_monroe.md:185.
+Evidence: career/2013/roster.md:75; career/2014/09_finances/02_player_contracts/contract_status.md:85; career/2013/stats/team_player_stats.md:56; career/2013/regular_season/week_03_jacksonville_at_seattle/output.md:31; career/2013/regular_season/week_09_bye/output.md:44, 51; career/2013/regular_season/week_10_jacksonville_at_tennessee/output.md:40, 372; runtime/defect_register.md:11; state/04_Roster_and_Staff_Register.md:115; career/2013/exit_interviews/main_core/eugene_monroe.md:185.

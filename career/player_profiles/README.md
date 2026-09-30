@@ -15,7 +15,7 @@ Future rows stay Not played; missing fields stay Unrecorded. Both formats use th
 
 ## Timing
 
-The [2014 working cards](../2014/player_profiles/README.md) are available now.
+The [2014 working cards](../2014/00_team/player_cards/README.md) are available now.
 Retain their starting personnel judgments during the season, updating the bottom
 statistics after each closed game. Review the full assessment at season close.
 Progression records still own development evidence; prior final evaluations remain frozen.

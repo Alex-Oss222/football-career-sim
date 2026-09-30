@@ -9,9 +9,13 @@ import unicodedata
 from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-EXIT_INDEX = ROOT / "career/2014/offseason/player_development/2013_exit_player_index.json"
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from runtime.seasons import SeasonPaths
+EXIT_INDEX = ROOT / "career/2014/00_team/player_development/2013_exit_player_index.json"
 BIRTH_DATES = ROOT / "library/data/player_birth_dates.json"
 
 POSITION_SHEET_TRAITS = {
@@ -59,7 +63,7 @@ def completed_years(birth_date: str,on_date: date) -> int:
 def season_is_complete(season: int, root: Path = ROOT) -> bool:
     if season==2013:
         return True
-    return (root/f"career/{season}/closeouts/season_closeout.md").exists()
+    return SeasonPaths(season, root).record('closeouts/season_closeout.md').exists()
 
 def load_season_players(season: int, root: Path = ROOT):
     if not season_is_complete(season, root):
@@ -150,7 +154,7 @@ Unassessed beyond the supported identity above.
 """
 
 def target_path(season: int,player_name: str, root: Path = ROOT) -> Path:
-    return root/f"career/{season}/player_profiles/{slugify(player_name)}.md"
+    return SeasonPaths(season, root).record('player_profiles') / (slugify(player_name)+'.md')
 
 def _table_rows(text: str, section: str) -> list[list[str]]:
     body=text.split(f"## {section}\n",1)[-1].split("\n## ",1)[0]
@@ -186,7 +190,7 @@ def check_profiles(season: int,players: list[SheetPlayer], root: Path = ROOT) ->
         if not (root/player.evidence).is_file():
             errors.append(f"{path.relative_to(root)}: missing frozen branch evidence")
     expected={target_path(season,p.player,root) for p in players}
-    for path in (root/f"career/{season}/player_profiles").glob("*.md"):
+    for path in SeasonPaths(season, root).record('player_profiles').glob("*.md"):
         if path.name != "README.md" and path not in expected:
             errors.append(f"unexpected annual profile: {path.relative_to(root)}")
     return errors
@@ -194,8 +198,9 @@ def check_profiles(season: int,players: list[SheetPlayer], root: Path = ROOT) ->
 def repository_profile_errors(root: Path = ROOT) -> list[str]:
     _,players=load_season_players(2013,root)
     errors=check_profiles(2013,players,root)
-    for directory in (root/"career").glob("[0-9][0-9][0-9][0-9]/player_profiles"):
-        season=int(directory.parent.name)
+    for season_dir in (root/"career").glob("[0-9][0-9][0-9][0-9]"):
+        season=int(season_dir.name)
+        directory=SeasonPaths(season, root).record('player_profiles')
         if not season_is_complete(season,root) and any(
             p.name not in {"README.md","TEMPLATE.md"} and not all(marker in p.read_text(encoding="utf-8") for marker in ("**Profile status:** Working player card", "<!-- yearly-statistics:start -->", "<!-- yearly-statistics:end -->"))
             for p in directory.glob("*.md")

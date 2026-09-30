@@ -96,7 +96,7 @@ All of it is voluntary. Jacksonville's program may begin no earlier than April 2
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/jonathan_grimes.json`
-- `career/2014/offseason/contract_status_register.md` lines 37, 110, 146
+- `career/2014/09_finances/02_player_contracts/contract_status.md` lines 37, 110, 146
 - `career/2013/roster.md` line 36; `state/04_Roster_and_Staff_Register.md` line 192; `state/05_Current_Season_State.md` line 57
 - `career/2013/offseason/initial_roster.md` line 38
 - `career/2013/stats/team_player_stats.md` lines 22, 133, 151

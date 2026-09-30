@@ -64,7 +64,7 @@ Voluntary throughout; nothing is required before April 21 or in any voluntary ph
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/uche_nwaneri.json`
-- `career/2014/offseason/contract_status_register.md` lines 86, 144; `career/2014/calendar.md` line 31
+- `career/2014/09_finances/02_player_contracts/contract_status.md` lines 86, 144; `career/2014/calendar.md` line 31
 - `state/04_Roster_and_Staff_Register.md` line 207; `career/2013/roster.md` line 76; `career/2013/depth_chart.json` line 12
 - `career/2013/offseason/initial_roster.md` line 61; `career/2013/offseason/roster_evaluation.md` line 9
 - `career/2013/offseason/otas/output.md` line 194

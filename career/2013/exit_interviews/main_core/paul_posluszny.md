@@ -217,7 +217,7 @@ Evidence caveats: after camp, the weekly records evaluate the linebackers as a u
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/paul_posluszny.json` (register, contract, season game lines, no postseason games, receipt injuries, no shortlists, record mentions)
 - `career/2013/roster.md` lines 112, 114, 115; `career/2013/depth_chart.json` lines 14, 76
 - `state/04_Roster_and_Staff_Register.md` line 225
-- `career/2014/offseason/contract_status_register.md` lines 15, 97
+- `career/2014/09_finances/02_player_contracts/contract_status.md` lines 15, 97
 - `career/2013/offseason/initial_roster.md` line 79
 - `career/2013/stats/team_player_stats.md` lines 75-83 (linebacker table)
 - `career/2013/offseason/otas/output.md` lines 40, 55, 86, 100, 153, 196; `otas/standouts.md` line 16
