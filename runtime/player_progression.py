@@ -67,12 +67,13 @@ POSITION_GROUP = {
 TRAITS_BY_GROUP: dict[str, dict[str, tuple[str, ...]]] = {
     "QB": {
         "physical": (
-            "arm_strength", "release_quickness", "functional_mobility",
+            "arm_strength", "throwing_velocity_capacity", "functional_mobility",
             "short_area_quickness", "play_strength",
         ),
         "technical": (
             "drop_footwork", "base_and_reset", "lower_upper_sequencing",
-            "throwing_mechanics", "pocket_movement", "pressure_escape_mechanics",
+            "throwing_mechanics", "release_efficiency", "pocket_movement",
+            "pressure_escape_mechanics",
             "ball_placement_short", "ball_placement_intermediate",
             "ball_placement_deep", "ball_placement_outside_numbers",
         ),
