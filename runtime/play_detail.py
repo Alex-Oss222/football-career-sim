@@ -1863,14 +1863,17 @@ def _check_layout_resamples(possessions, err):
             original, final = rec["original"], rec["final"]
             if not isinstance(count, int) or count < 1:
                 raise ValueError("resample count")
-            members = fp._members(pool_id, category)
+            if not fp._counts(pool_id):
+                raise ValueError("unknown pool")
+            tuples = {}
             for label, item in (("original", original), ("final", final)):
-                t = members[item["index"]]
-                if list(t[:5]) != list(item["tuple"]):
-                    raise ValueError("%s tuple does not match the pool" % label)
-            if original["index"] == final["index"]:
+                t = fp.locate_tuple(category, item["locator"])
+                if t is None or list(t[:5]) != list(item["tuple"]):
+                    raise ValueError("%s tuple does not match the artifact" % label)
+                tuples[label] = t
+            if original["locator"] == final["locator"]:
                 raise ValueError("final tuple is the original")
-            final_tuple = members[final["index"]]
+            final_tuple = tuples["final"]
             if p.get("start_spot") is not None and not fp.static_feasible(category, final_tuple, p["start_spot"]):
                 raise ValueError("final tuple infeasible at the start spot")
             if int(final_tuple[fp.T["plays"]]) != int(p.get("scrimmage_plays", final_tuple[fp.T["plays"]])):

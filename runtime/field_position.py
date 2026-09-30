@@ -892,14 +892,40 @@ def draw_drive(rng, spot, half, window, diff, edge, diagnostics, timeouts=None, 
                  pool_id=pool_id, clock_regime=regime)
 
 
-def tuple_index(pool_id, category, t):
-    """The tuple's index in its pool's category list (a stable identifier
-    inside the committed artifact), or None."""
-    members = _members(pool_id, category)
-    for i, m in enumerate(members):
-        if m is t or m == t:
-            return i
+def tuple_locator(category, t):
+    """A stable identifier of a real drive inside the committed artifact:
+    [pool kind, pool key, index in that pool's category list], searched over
+    every pool (a neutral rung draws from neighbouring bins, so the drawn
+    pool id alone does not place a tuple); None when not found."""
+    data = load()
+    c = CATEGORIES.index(category)
+    for j, bin_pools in enumerate(data["pools"]["neutral"]):
+        for i, m in enumerate(bin_pools[c]):
+            if m is t:
+                return ["neutral", j, i]
+    for kind in ("late", "h1_final"):
+        for key, cells in data["pools"][kind].items():
+            for i, m in enumerate(cells[category]):
+                if m is t:
+                    return [kind, key, i]
+    for i, m in enumerate(data["pools"]["ot"][category]):
+        if m is t:
+            return ["ot", None, i]
     return None
+
+
+def locate_tuple(category, locator):
+    """The tuple a locator names, or None."""
+    data = load()
+    try:
+        kind, key, i = locator
+        if kind == "neutral":
+            return data["pools"]["neutral"][key][CATEGORIES.index(category)][i]
+        if kind == "ot":
+            return data["pools"]["ot"][category][i]
+        return data["pools"][kind][key][category][i]
+    except (KeyError, IndexError, TypeError, ValueError):
+        return None
 
 
 def resample_drive(rng, drawn, spot, window, exclude=()):

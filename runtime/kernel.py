@@ -827,9 +827,9 @@ def _resolve_game(
                     layout_resample = {
                         "resamples": attempt,
                         "pool": list(original.pool_id) if original.pool_id else None,
-                        "original": {"index": field_position.tuple_index(original.pool_id, original.category, original.tuple),
+                        "original": {"locator": field_position.tuple_locator(original.category, original.tuple),
                                      "tuple": list(original.tuple[:5])},
-                        "final": {"index": field_position.tuple_index(alt.pool_id, alt.category, alt.tuple),
+                        "final": {"locator": field_position.tuple_locator(alt.category, alt.tuple),
                                   "tuple": list(alt.tuple[:5])},
                     }
                     diagnostics["chain_layout_resampled"] += 1

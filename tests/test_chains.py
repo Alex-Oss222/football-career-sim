@@ -357,5 +357,106 @@ class SampleChainTests(unittest.TestCase):
             self.assertEqual(first["possessions"], second["possessions"])
 
 
+class LayoutResampleTests(unittest.TestCase):
+    """Kernel 2014.4 phase 2: when no plan legalises a drawn drive's snaps,
+    another real drive of the same category and rung stands in, on the
+    drive's own resample stream, recorded in the receipt; the game closes."""
+
+    def failing_layout(self, drive_no):
+        real = chains.drive_layout
+        calls = {"n": 0}
+
+        def wrapper(**kw):
+            if kw["drive_no"] == drive_no:
+                calls["n"] += 1
+                if calls["n"] == 1:
+                    out = real(**kw)
+                    out["ok"] = False
+                    kw["diagnostics"]["chain_layout_failed"] = kw["diagnostics"].get("chain_layout_failed", 0) + 1
+                    return out
+            return real(**kw)
+        return wrapper, calls
+
+    def test_resample_stands_in_and_the_game_closes(self):
+        from runtime import kernel
+        a, b = sample_teams()
+        seed = SEED + b"-resample-01"
+        base = resolve_game(a, b, seed=seed, event_id="resample-1")
+        wrapper, calls = self.failing_layout(4)
+        with mock.patch.object(kernel.chain_walk, "drive_layout", wrapper):
+            first = resolve_game(a, b, seed=seed, event_id="resample-1")
+        with mock.patch.object(kernel.chain_walk, "drive_layout", self.failing_layout(4)[0]):
+            second = resolve_game(a, b, seed=seed, event_id="resample-1")
+        self.assertEqual(validate_result(first), [])
+        self.assertEqual(check_ledger(first), [])
+        self.assertEqual(first["diagnostics"]["chain_layout_resampled"], 1)
+        self.assertEqual(first["diagnostics"]["chain_layout_resample_exhausted"], 0)
+        self.assertEqual(first["diagnostics"].get("chain_layout_failed", 0), 0)
+        drive = first["possessions"][3]
+        rec = drive["layout_resample"]
+        self.assertEqual(rec["resamples"], 1)
+        self.assertNotEqual(rec["original"]["locator"], rec["final"]["locator"])
+        self.assertIsNotNone(rec["original"]["locator"])
+        self.assertIsNotNone(rec["final"]["locator"])
+        original = base["possessions"][3]
+        # The original tuple is the base game's drive (its plays and own seconds).
+        self.assertEqual(rec["original"]["tuple"][0], original["scrimmage_plays"])
+        self.assertEqual(fp.scaled_seconds(rec["original"]["tuple"]), original["own_seconds"])
+        self.assertEqual(drive["category"], original["category"])
+        self.assertEqual(drive["start_spot"], original["start_spot"])
+        self.assertEqual(drive["chain_model"], chains.CHAIN_MODEL)
+        self.assertNotIn("layout_resample", first["possessions"][2])
+        # The three drives before it are the base game's; the possession
+        # stream is not consumed by the resample.
+        self.assertEqual([p["category"] for p in first["possessions"][:3]], [p["category"] for p in base["possessions"][:3]])
+        # Determinism: same seed, same resample, same game.
+        self.assertEqual(first["possessions"], second["possessions"])
+        self.assertEqual(first["final_score"], second["final_score"])
+        self.assertEqual(first["play_ledger"], second["play_ledger"])
+        # The class is measurable on the result and on a compact receipt, and
+        # detects a doctored record.
+        from runtime.play_detail import RESAMPLE_CLASSES
+        self.assertTrue(set(RESAMPLE_CLASSES) <= measurable_classes(first))
+        compact = {k: v for k, v in first.items() if k != "play_ledger"}
+        self.assertTrue(set(RESAMPLE_CLASSES) <= measurable_classes(compact))
+        doctored = copy.deepcopy(first)
+        doctored["possessions"][3]["layout_resample"]["final"] = copy.deepcopy(rec["original"])
+        self.assertTrue(any(e.startswith("layout_resample_incoherent") for e in check_ledger(doctored)))
+        doctored = copy.deepcopy(first)
+        doctored["possessions"][3]["layout_resample"]["original"]["tuple"][0] += 1
+        self.assertTrue(any(e.startswith("layout_resample_incoherent") for e in check_ledger(doctored)))
+        legacy = copy.deepcopy(first)
+        for p in legacy["possessions"]:
+            del p["chain_model"]
+        self.assertFalse(set(RESAMPLE_CLASSES) & measurable_classes(legacy))
+
+    def test_resample_draws_from_the_same_rung(self):
+        pool_id = ("neutral", fp.start_bin(75))
+        options = fp.eligible(pool_id, "punt", 75, "h2_neutral", 900)
+        drawn = fp.Drive("punt", options[0], fp.scaled_seconds(options[0]), False, "neutral", "h2_neutral",
+                         pool_id=pool_id, clock_regime="h2_neutral")
+        import random
+        alt = fp.resample_drive(random.Random(3), drawn, 75, 900)
+        self.assertIsNotNone(alt)
+        self.assertEqual(alt.category, "punt")
+        self.assertIsNot(alt.tuple, options[0])
+        self.assertIn(alt.tuple, options)
+        self.assertFalse(alt.consumes_window)
+        self.assertEqual(fp.resample_drive(random.Random(3), drawn, 75, 900).tuple, alt.tuple)
+        # A drive drawn without a pool (the zero-play expiry) cannot be resampled.
+        zero = fp.Drive("clock", fp.ZERO_TUPLE, 0, True, "neutral", "h1_final")
+        self.assertIsNone(fp.resample_drive(random.Random(3), zero, 75, 30))
+        # Window-ending resamples keep their status and stay time feasible.
+        h1 = ("h1_final", fp.h1_key(90))
+        finals = fp.eligible(h1, "field_goal_attempt", 40, "h1_final", 90)
+        if finals:
+            ending = fp.ending_drive("field_goal_attempt", finals[0], 90, "neutral", "h1_final", pool_id=h1,
+                                     clock_regime="h1_final")
+            alt = fp.resample_drive(random.Random(5), ending, 40, 90)
+            if alt is not None:
+                self.assertTrue(alt.consumes_window)
+                self.assertTrue(fp.time_feasible(alt.tuple, 90))
+
+
 if __name__ == "__main__":
     unittest.main()
