@@ -1,19 +1,6 @@
 # Jacksonville 2014 trades
 
-The trade window opened March 11, 2014 at 4 p.m. ET. Where things stand at March 31:
-
-| Trade | Status |
-|---|---|
-| Arizona trade for No. 38 | Completed March 20: Nwaneri, the 2015 first, 2015 fourth and 2016 fifth to Arizona for No. 38 ([negotiation](package_i_negotiation_2014-03-20.md)) |
-| Babin trade with Miami | Completed March 24: Babin and the 2017 seventh for Miami's 2015 third |
-| Alualu trade with Houston | Completed March 24: Alualu for Houston's 2015 fourth; $1,542,500 of 2014 dead money stays with Jacksonville |
-| Allen trade with Arizona | Agreed in principle for Arizona's 2015 fourth. Closes only if Posluszny is actually cleared by April 21 and Allen passes Arizona's physical; otherwise it expires |
-| Rackley-or-Brewster trade | Blocked until Jacksonville actually drafts two offensive linemen; then one of them may be shopped for a 2015 seventh |
-| Original Nwaneri offer | Withdrawn when Nwaneri moved into the Arizona trade |
-| Shorts-and-Blackmon trade with Seattle | Never offered: Tate went to Detroit and Edelman to New England |
-| Minnesota trade-up to No. 31 | Void: it needed Seattle's No. 36 |
-
-The March 24 outcomes come from the user's [trade resolution log](march_24_2014_trade_resolution.md); the [trade sheets](trade_sheets_2014-03-24.md) are the superseded proposals.
+The trade window opened March 11, 2014 at 4 p.m. ET. Each trade's current status is in [trade targets](trade_targets.md); the March 24 outcomes come from the user's [trade resolution log](march_24_2014_trade_resolution.md).
 
 ## Where each record lives
 

@@ -1,62 +1,50 @@
 # Jacksonville 2014 trade offer log
 
-**Status at March 24, 2014 (Entry 102):** package I **completed** March 20 (picks and Nwaneri to Arizona for No. 38; Entry 99). Packages D (Babin and the 2017 seventh to Miami for its 2015 third) and E (Alualu to Houston for its 2015 fourth) **completed** March 24. Package G is **agreed in principle** with Arizona (Allen for its 2015 fourth), awaiting its conditions. F2 is blocked until the draft. F1 was withdrawn when Nwaneri moved into package I (Entry 98). Package A was never offered: Tate went to Detroit and Edelman to New England (Entries 96 and 97), so H, which needed A's No. 36, is void. The dated entries below are the offer history.
+Dated record of every actual trade communication, in order. The plan and each trade's current status are in [trade targets](trade_targets.md); finished deals are in [completed trades](trades.md). The trade window opened March 11, 2014 at 4 p.m. ET. The Shorts-and-Blackmon trade with Seattle and the Minnesota trade-up to No. 31 were never offered.
 
-## Actual communications
+## March 11, 2014, 4:00 p.m. ET: Arizona trade for No. 38, first pass (declined, later superseded)
 
-### March 11, 2014, 4:00 p.m. ET: package I to Arizona (first pass, superseded by Entry 95; reopened)
+- Clubs and authority: Jacksonville, by Caldwell on Stone's memo and the user's September 29, 2026 revision, to the Arizona Cardinals.
+- Offered: Jacksonville's original 2015 first, 2015 fourth and 2016 fifth for Arizona's original 2014 second, No. 38. Tyson Alualu was left out because Sen'Derrick Marks had not been re-signed. No encumbrance on the three picks was recorded; the 2015 and 2016 registers are not audited beyond Washington's ownership of the 2015 second.
+- Answer: declined by one private draw under the user-adopted rule ([method](../offseason/league_year_method.json); [result](../offseason/league_year_results.json)). On the Jimmy Johnson chart (nflverse `draft_values.csv`) the offer counted 462 points (the 2015 first as No. 48, 420; the 2015 fourth as a mid-fifth, 34; the 2016 fifth as a mid-seventh, 8) against No. 38's 520: a ratio of 0.89 and a chance of 0.22.
+- Superseded: the March 2014 free-agency replay superseded this first pass and reopened the trade; with Marks re-signed it could include Alualu. It was offered again on March 18 (below).
 
-- **Initiating club and authority:** Jacksonville; Caldwell, on Stone's memo and the user's September 29, 2026 revision. **Counterparty:** Arizona Cardinals.
-- **Offered:** Jacksonville's original 2015 first-round, 2015 fourth-round and 2016 fifth-round picks for Arizona's original 2014 second-round pick, No. 38. Tyson Alualu was not included because Sen'Derrick Marks had not been re-signed. Control check: no encumbrance on any of the three Jacksonville picks is recorded; the 2015 and 2016 registers are not audited beyond the 2015 second owned by Washington.
-- **Answer:** declined, by one private draw under the user-adopted rule ([method](../offseason/league_year_method.json); [result](../offseason/league_year_results.json)). On the Jimmy Johnson chart the offer counted 462 points (the 2015 first as No. 48, 420; the 2015 fourth as a mid-fifth, 34; the 2016 fifth as a mid-seventh, 8) against No. 38's 520, a ratio of 0.89 and a chance of 0.22. Chart values: nflverse `draft_values.csv`, Johnson column.
-- **Entry 95:** this first-pass answer is superseded by the March 2014 replay; package I is reopened, and with Marks re-signed it may now include Alualu.
-- **First-pass status:** declined. **First-pass consequence:** pick 26 stays Adams, then Bitonio, then Van Noy. Alualu's return to package E needs Marks re-signed, which did not happen, so Alualu stays through camp.
+## March 11, 2014, 4:00 p.m. ET: original Nwaneri offer to San Francisco (withdrawn March 18)
 
-### March 11, 2014, 4:00 p.m. ET: package F1, Uche Nwaneri to San Francisco (open)
+- Clubs and authority: Jacksonville, by Caldwell, to the San Francisco 49ers, first in the memo's call order (San Francisco, Carolina, New England, Seattle, Chicago, Houston).
+- Offered: G Uche Nwaneri (contract through 2015; $1,000,000 roster bonus reported due March 25) for San Francisco's 2015 sixth. Branch medical disclosure: no communicated restriction. Physical and league processing required.
+- Outcome: no answer recorded. Withdrawn March 18 when Stone directed that Nwaneri join the Arizona trade.
 
-- **Initiating club and authority:** Jacksonville; Caldwell. **Counterparty:** San Francisco 49ers, first in the memo's call order (San Francisco, Carolina, New England, Seattle, Chicago, Houston).
-- **Offered:** G Uche Nwaneri (contract through 2015; $1,000,000 roster bonus reported due March 25) for San Francisco's 2015 sixth-round pick. Branch medical disclosure: no communicated restriction. Physical and league processing required.
-- **Status:** offered; answer open. **Expiry and next action:** an answer is needed before March 25. Without a deal by then, the memo recommends release before the bonus date, subject to Caldwell's verified accounting. Package H (Nwaneri with No. 36) cannot be offered because package A has not closed.
+## March 11, 2014, 4:00 p.m. ET: Babin trade to Miami (withdrawn, then offered again March 18)
 
-### March 11, 2014, 4:00 p.m. ET: package D, Jason Babin to Miami (withdrawn, Entry 95)
+- Clubs and trigger: Jacksonville to the Miami Dolphins, first in the memo's order (Miami, Houston, San Diego), after the first-pass signing of a veteran edge rusher (Te'o-Nesheim, 4 p.m.).
+- Offered: DE Jason Babin (contract through 2015) for Miami's 2015 fifth. Authorized alternatives: a 2016 fifth, or a 2015 sixth that becomes a fifth on the games condition.
+- Withdrawn: the March 2014 free-agency replay superseded the Te'o-Nesheim signing that triggered the offer.
+- Offered again March 18: Te'o-Nesheim signed in the replay, meeting the trigger, and the offer went back to Miami. Resolved March 24 (below).
 
-- **Trigger met:** a veteran edge rusher was actually signed (Te'o-Nesheim, 4 p.m.). **Counterparty:** Miami Dolphins, first in the memo's order (Miami, Houston, San Diego).
-- **Offered:** DE Jason Babin (contract through 2015) for Miami's 2015 fifth-round pick. Authorized alternatives: a 2016 fifth, or a 2015 sixth that becomes a fifth on the games condition.
-- **Status:** offered; answer open. Add a dated entry only when the simulation records communication. Each entry must identify:
+## March 18 to 20, 2014: Arizona trade for No. 38 (completed)
 
-- simulation date/time, package, initiating club, actual counterparty and authority;
-- exact players and pick assets by year/round/original club, plus verification of control and encumbrances;
-- offered terms, counter if any, acceptance conditions, physical/medical disclosure, cash/guarantee obligations and expiry;
+- Offered March 18: the 2015 first, 2015 fourth, 2016 fifth, Alualu and Nwaneri for No. 38.
+- Countered March 19: Arizona dropped Alualu; Caldwell accepted the same day.
+- Processed March 20 after Nwaneri's physical. See [completed trades](trades.md) and the [negotiation record](package_i_negotiation_2014-03-20.md).
+
+## March 24, 2014: Babin, Alualu, Allen and Rackley-or-Brewster trades resolved
+
+Resolved in the user's trade-dynamics run, which simulates real club behavior outside the sim ([resolution log](march_24_2014_trade_resolution.md)). The [trade sheets](trade_sheets_2014-03-24.md) proposed the same day are superseded by these outcomes.
+
+- Babin trade, completed with Miami: Babin and Jacksonville's 2017 seventh for Miami's unconditional 2015 third. The earlier appearance condition is removed. Physical passed; processed.
+- Alualu trade, completed with Houston: Alualu for Houston's unconditional 2015 fourth. Physical passed; processed.
+- Allen trade, agreed in principle with Arizona: Allen for Arizona's unconditional 2015 fourth. No further compensation talks are needed. It closes only if Paul Posluszny receives actual medical clearance no later than April 21, 2014, Allen passes Arizona's physical and league processing completes; the April 5 projection is not clearance. Otherwise it expires unexecuted. Until then Allen stays on the roster and depth chart with his cap charge, and the pick stays Arizona's and may not be spent or counted. Next action: Caldwell's office, at Posluszny's medical review.
+- Rackley-or-Brewster trade: blocked until Jacksonville actually drafts two offensive linemen. Caldwell may then shop one of the two for a 2015 seventh; nothing is booked until a buyer accepts.
+
+## Adding an entry
+
+Record each new communication once, dated, with:
+
+- simulation date and time, the trade, initiating club, actual counterparty and authority;
+- exact players and picks by year, round and original club, with verified control and encumbrances;
+- offered terms, any counter, acceptance conditions, physical and medical disclosure, cash or guarantee obligations and expiry;
 - status: inquiry, offered, countered, agreed in principle, awaiting conditions, declined, withdrawn, expired or processed;
-- next action and responsible party; the later completed-trade and ledger links, if processed.
+- next action and responsible party, then the completed-trade and ledger links once processed.
 
-Preserve prior terms and dates when a counter arrives. An agreed-in-principle entry does not change control. Treat a genuine return outside the [authorized alternatives](trade_targets.md) as a new decision for Stone/Caldwell; do not fabricate an answer. Close all still-open entries when their window expires.
-
-**Priority reminders:** A needs the 36/37 asset conflict resolved before offering. G must finish by April 21 and still requires actual Posluszny clearance. F1 needs the actual bonus due date. These reminders are not outstanding communications.
-- **Entry 95:** withdrawn. The trigger was Te'o-Nesheim's first-pass signing, which the replay superseded; D can be re-offered once a veteran edge rusher actually signs.
-- **Entry 98:** reopened and offered again to Miami on March 18 after Te'o-Nesheim signed (a veteran edge signing meets the trigger); answer open.
-
-### March 18, 2014: package F1 withdrawn (Entry 98)
-
-Stone directed that Nwaneri be added to package I instead. The San Francisco offer is withdrawn with no answer recorded.
-
-### March 18 to 20, 2014: package I to Arizona (completed, Entry 99)
-
-- **Offered March 18:** 2015 first, 2015 fourth, 2016 fifth, Alualu and Nwaneri for No. 38.
-- **Countered March 19:** Arizona drops Alualu. **Accepted** by Caldwell the same day.
-- **Processed March 20** after Nwaneri's physical. See [completed trades](trades.md) and the [negotiation record](package_i_negotiation_2014-03-20.md).
-
-### March 24, 2014: packages D, E and G resolved (Entry 102)
-
-Resolved in the user's trade-dynamics run, which simulates real club behavior outside the sim ([resolution log](march_24_2014_trade_resolution.md)). The March 24 [trade sheets](trade_sheets_2014-03-24.md) are superseded by these outcomes.
-
-- **Package D, completed with Miami:** Babin and Jacksonville's 2017 seventh for Miami's unconditional 2015 third. The earlier appearance condition is removed. Physical passed; processed. See [completed trades](trades.md).
-- **Package E, completed with Houston:** Alualu for Houston's unconditional 2015 fourth. Physical passed; processed. See [completed trades](trades.md).
-- **Package G, agreed in principle with Arizona:** Allen for Arizona's unconditional 2015 fourth.
-  - **Status:** agreed in principle, not completed. No further compensation talks are needed.
-  - **Closing conditions:** it closes only if (1) Posluszny receives actual medical clearance, (2) no later than April 21, 2014, (3) Allen passes Arizona's physical and (4) league processing completes. The April 5 projection is not clearance.
-  - **If the conditions are not met by April 21:** the agreement expires unexecuted.
-  - **Until it closes:** Allen stays a Jaguar on the roster and depth chart with his cap charge. The pick stays Arizona's and may not be spent or counted.
-  - **Next action:** Caldwell's office, at Posluszny's medical review.
-- **Package F2:** blocked until Jacksonville actually drafts two offensive linemen. Then Caldwell may shop one of Rackley or Brewster for a 2015 seventh, and nothing is booked until a buyer accepts.
-
+A counter adds to the entry without erasing earlier terms. Agreed in principle does not change control. A return outside the [authorized terms](trade_targets.md) is a new decision for Stone and Caldwell, not an invented answer. Close still-open entries when their window expires.
