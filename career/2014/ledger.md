@@ -200,3 +200,51 @@ The annual handoff manifest tracks team closeout, interviews, finances, roles/me
 **Atomic closure.** The trade record, completed trades, offer log, trade targets, pick ownership register and generated draft order, draft board, draft pairing, Washington rails page, financial inputs and generated cap views, calendar, the 2014 README, readiness, operating baseline and Documents 4 and 5 agree. The private snapshot is advanced only after merge.
 
 **Commit closed - Canonical update - March 31, 2014 - Colts picks traded to Washington for Jacksonville's 2015 second - canonical through March 31, 2014**
+
+## Entry 106 — April 1–17, 2014 — Henne re-signed, Posluszny cleared, Allen traded to Arizona
+
+**Recorded:** September 30, 2026. **Simulation clock:** advances from March 31 to April 17, 2014.
+**Checkpoint:** `Canonical update - April 17, 2014 - Henne re-signed, Posluszny cleared, Allen traded to Arizona`
+**Preceding global package checkpoint:** `Canonical update - March 31, 2014 - Colts picks traded to Washington for Jacksonville's 2015 second`
+
+**April 3: offseason schedules released.** The league released every club's offseason workout schedule. Jacksonville's filed schedule stands, with Phase One opening April 21. Other clubs' real dates are not imported.
+
+**Chad Henne (QB), re-signed April 4.** Stone's instruction is in the [memo amendment of September 30, 2026](offseason/stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-henne-ball-and-brent-grimes): re-sign him as QB2 within $2.5M a year. Caldwell negotiated from April 1 and Henne accepted on April 4, with no private draw. Event owner: [the negotiation record](offseason/free_agency/henne_negotiation_2014-04-04.md).
+- **Terms:** two years, $4,000,000: a $1,200,000 signing bonus ($600,000 allocated each year), a 2014 base of $800,000 and a 2015 base of $2,000,000.
+- **Guaranteed:** $2,000,000, the bonus and the 2014 base.
+- **Cap:** 2014 charge $1,400,000; 2015 charge $2,600,000.
+- **Role:** QB2 behind Kirk Cousins, his carried place. No starting promise.
+
+**Paul Posluszny cleared April 5.** His head/neck hold from 2013 Week 13 cleared on its projected date. In 2013 every club's injuries, Jacksonville's offseason players included, cleared on the projected date without a separately modelled staged clearance, and applying the same rule to Jacksonville is the protagonist-blind rule. No new restriction has been communicated.
+
+**The Allen trade with Arizona closed April 7.** The agreement of March 24 closed automatically under its own conditions, with no further negotiation ([resolution log](trades/march_24_2014_trade_resolution.md)).
+- **Conditions met:** Posluszny's actual clearance on April 5, before the April 21 limit; Russell Allen passed Arizona's physical on April 7; the trade was processed the same day.
+- **Return:** Arizona's unconditional 2015 fourth-round pick.
+- **Cap (pre-June 1 trade):** Allen's $2,416,668 2014 charge leaves. His final $416,668 bonus allocation stays as 2014 dead money; Arizona takes his $1,975,000 base and $25,000 workout bonus. His contract had no 2015 year.
+- **Rails:** Allen's real retirement, dated April 22, 2014, now applies at Arizona after this entry's window. It has no Jacksonville cap effect.
+
+**April 9: preseason matchups public.** Tampa Bay and Atlanta at home, and games at Chicago and Detroit. Exact dates stay gated to the April 23 schedule release. The 2015 Pro Bowl site, University of Phoenix Stadium in Glendale, Arizona, was also announced.
+
+**April 11: staff review held.** The staff allocated work under Stone's adopted second-year direction (review established work, integrate rookies, continue individual work and teach new material, including Boot Flood). No new Stone decision was made. The staff preparation checkpoint carried from March 31 is done.
+
+**Effects.**
+- **Roster:** controlled roster 53 (Henne in, Allen out): 49 signed and four unsigned tenders.
+- **Medical:** Posluszny has no communicated restriction. Will Rackley stays limited with no projected absence.
+- **2014 cap:** player contracts $111,743,080 including tenders, plus $10,262,324 dead money. Two $420,000 minimums fall outside the offseason Top 51, giving $121,165,404. With the $504,000 workout charge the working total is $121,669,404, an $11,330,596 working difference before carryover, rookies and reserves. With the 2013 rollover estimate the difference is about $16,660,596 to $17,330,596. This is not certified room.
+- **2015 commitments:** $105,495,454.
+- **Draft picks:** 2014 unchanged at nine. 2015 picks held: Jacksonville's own second, Miami's third, Houston's fourth and Arizona's fourth.
+- **Depth chart:** Henne restored at QB 2, with John Parker Wilson and Tyler Bray behind him. Allen is removed from the linebackers. Posluszny and Daryl Smith keep their carried base roles, Smith the communication lead, with Julian Stanford next and Sio Moore in Crennel's packages. No Stone role decision was made.
+- **Rails:** Arizona's page records the branch trade.
+
+**Open.**
+- Ball (revisited after the draft) and Brent Grimes (not pursued).
+- The Rackley-or-Brewster trade (blocked until two offensive linemen are drafted).
+- The left guard, Edge 1, WR1 and WR3 roles.
+- The April 18 phase-plan choices: emergency staff operation, the defensive relay backup method, injured-player learning, the cross-training method, the punt instruction format, the defensive intent format, the consultation cadence and family event dates before April 21.
+- The rails from March 11 evening to April 17 remain unswept beyond the targets' own moves and the branch trades.
+
+**Next.** The April 18 staff review; Phase One opens April 21.
+
+**Atomic closure.** The negotiation record, signings record, free-agency board status, contract status register, contract table, cap worksheet, financial inputs and generated cap views, roster, working depth chart and its JSON copy, completed trades, offer log, trade targets and README, pick ownership register and generated draft order, retirements and Arizona rails pages, preseason gate, phase-plan decision status, calendar, the 2014 README, readiness, operating baseline, player ages and Documents 4 and 5 agree. The private snapshot is advanced only after merge.
+
+**Commit closed - Canonical update - April 17, 2014 - Henne re-signed, Posluszny cleared, Allen traded to Arizona - canonical through April 17, 2014**

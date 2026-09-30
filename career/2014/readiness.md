@@ -1,10 +1,10 @@
 # 2014 setup and execution checklist
 
-Checkpoint: March 31, 2014. Setup is prepared; games remain blocked. The [operating baseline](operating_baseline.md) owns the workflow, the [calendar](calendar.md) the dates, and [Document 5](../../state/05_Current_Season_State.md) the current snapshot. Current record owners are mapped in [repository_map.json](../../docs/repository_map.json).
+Checkpoint: April 17, 2014. Setup is prepared; games remain blocked. The [operating baseline](operating_baseline.md) owns the workflow, the [calendar](calendar.md) the dates, and [Document 5](../../state/05_Current_Season_State.md) the current snapshot. Current record owners are mapped in [repository_map.json](../../docs/repository_map.json).
 
 | Area | Prepared now | Remaining work and gate |
 |---|---|---|
-| Current records | Year-local 2014 owners for roster, working depth, staff, cap worksheet, ages and ledger; the map and Documents 4 and 5 agree. Events through the March 31 trade of Shorts and Blackmon to Indianapolis are closed; 53 controlled players | Prior events stay in the [2013 ledger](../2013/ledger.md) |
+| Current records | Year-local 2014 owners for roster, working depth, staff, cap worksheet, ages and ledger; the map and Documents 4 and 5 agree. Events through the April 11 staff review, including Henne's re-signing and the Allen trade with Arizona, are closed; 53 controlled players | Prior events stay in the [2013 ledger](../2013/ledger.md) |
 | Contracts and cap | [2014 worksheet](offseason/current_cap_worksheet.md); complete dollar schedules for signed continuing and futures contracts in the [ten-year tracker](../finances/jaguars_cap.md) | Verify unresolved clauses, reserve/future players' credited seasons and actual 2014 obligations before affected execution |
 | Staff | Mike Westhoff special teams coordinator from February 11; February coaching exposure resolved with no departure; living coaching profiles linked to phase evidence | Emergency succession remains unassigned; [specific recommendations](offseason/phase_plan_decisions.md#staff-responsibilities-and-emergency-succession) await Stone's call. Profiles are evidence records, not engine implementation |
 | Training | Five linked NOT_STARTED outputs, player profiles, film queue, coach profiles and the [detailed decision package](offseason/phase_plan_decisions.md) | Dates and second-year install adopted, including Boot Flood practice; actual football work, remaining policy choices and new role decisions still open |

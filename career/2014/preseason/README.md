@@ -1,6 +1,6 @@
 # Jacksonville 2014 preseason
 
-**NOT_STARTED.** Four future game slots are prepared below. The [career calendar](../calendar.md) already archives these historical date rails with their information gates. Matchups become usable April 9; exact dates/times remain gated to the April 23 release. They are not February opponent-preparation instructions or branch results.
+**NOT_STARTED.** Four future game slots are prepared below. The [career calendar](../calendar.md) already archives these historical date rails with their information gates. The matchups became public on April 9, 2014: Tampa Bay and Atlanta at home, and games at Chicago and Detroit. Exact dates and times remain gated to the April 23 release. They are not February opponent-preparation instructions or branch results.
 
 | Game | Research rail, gated until release | Venue direction | Status |
 |---:|---|---|---|

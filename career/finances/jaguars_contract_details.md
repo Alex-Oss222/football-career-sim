@@ -1,6 +1,6 @@
 # Jacksonville Jaguars individual contract details
 
-[Return to the twelve-year table](jaguars_cap.md). As of March 31, 2014, Entry 105. Whole US dollars.
+[Return to the twelve-year table](jaguars_cap.md). As of April 17, 2014, Entry 106. Whole US dollars.
 
 Annual cells contain the working original or reconstructed contract schedule. Blank years lie outside that deal. The [completion research](../../library/2014_jaguars_contract_completion.md) identifies adopted simulation terms and guarantee assumptions. Cap, scheduled cash and remaining unpaid guarantees are separate amounts.
 
@@ -714,23 +714,17 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ## Russell Allen
 
+Former player; departure April 7, 2014. [ledger](../../career/2014/ledger.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | LB / Under contract; real retirement dated April 22, 2014 applies when the clock reaches it (Entry 79) |
+| Position / status | LB / Traded to Arizona, April 7, 2014 (Entry 106); his real retirement dated April 22, 2014 now applies at Arizona |
 | Original contract | Veteran, 2012 |
 | Signed | 2012 |
 | Term | 3 / 2014 |
 | Contract value | $6,000,000 |
-| Bonus terms | $1,250,000 signing bonus; final 2014 allocation $416,668 |
-| Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap. |
-| Schedule basis | Includes adopted simulation amounts; see contract notes |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 | $1,975,000 | $416,668 | $25,000 | $2,416,668 | $2,000,000 | $0 |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 ### Contract notes
 
@@ -1151,23 +1145,28 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ## Chad Henne
 
-Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
-
 | Field | Detail |
 |---|---|
-| Position / status | QB / Unrestricted free agent from 4 p.m. March 11, 2014; the first-pass March 7 draw is superseded and his chronology is reopened (Entry 95) |
-| Original contract | Veteran, signed March 14, 2012 |
-| Signed | See expiring-contract description |
-| Term | 2013 |
-| Contract value | $6,750,000 (2 years) |
+| Position / status | QB / Under contract |
+| Original contract | Veteran (branch re-signing) |
+| Signed | April 4, 2014 |
+| Term | 2 / 2015 |
+| Contract value | $4,000,000 |
+| Bonus terms | $1,200,000 signing bonus; $600,000; 2 |
+| Remaining unpaid salary guarantee | $800,000 |
+| Guarantee basis | $2,000,000 (signing bonus and 2014 base) |
+| Schedule basis | Branch re-signing, Entry 106 (negotiation record career/2014/offseason/free_agency/henne_negotiation_2014-04-04.md) |
 
-No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
+### Annual schedule
 
-No new playing contract is recorded for 2014 or later.
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $800,000 | $600,000 | $0 | $1,400,000 | $2,000,000 | $800,000 |
+| 2015 | $2,000,000 | $600,000 | $0 | $2,600,000 | $2,000,000 | $0 |
 
 ### Contract notes
 
-Confirmed (register); 2013 OTC row.
+Branch record (Entry 106; negotiation record career/2014/offseason/free_agency/henne_negotiation_2014-04-04.md). Two years, $4.0M, $2.0M guaranteed, inside Stone's $2.5M-a-year ceiling. QB2 behind Cousins; no starting promise.
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
 

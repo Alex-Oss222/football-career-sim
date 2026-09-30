@@ -1,6 +1,6 @@
 # Player film and written-feedback queue
 
-**Current-use note, Entry 101:** this is the 61-player exit-review baseline, not the live roster. The [current roster](../../roster.md) owns the live count (53 controlled players at March 31, 2014). Preserve departed-player feedback obligations as history; add actual newcomer work here without treating missing observations as failed performance.
+**Current-use note, Entry 101:** this is the 61-player exit-review baseline, not the live roster. The [current roster](../../roster.md) owns the live count (53 controlled players at April 17, 2014). Preserve departed-player feedback obligations as history; add actual newcomer work here without treating missing observations as failed performance.
 
 [Film workflow](README.md) | [Delivery log](delivery_log.md) | [Room work plans](../training/unit_plans.md)
 
@@ -138,6 +138,6 @@ Each queue item is an obligation, not the player's entire identity. Read the [61
 
 ## Queue maintenance
 
-After an actual event, link the packet revision and delivery ID; retain the original promise and previous receipts. Link learning evidence to the phase output rather than marking a packet “mastered.” Add new players only after control/invitation is established. Move a departed player to an archival obligation rather than deleting a promised review or leaving him in a training session. Allen’s planned trade has not closed; do not schedule him after April 22 or assume the trade succeeds. Meester remains archival and receives no practice assignment.
+After an actual event, link the packet revision and delivery ID; retain the original promise and previous receipts. Link learning evidence to the phase output rather than marking a packet “mastered.” Add new players only after control/invitation is established. Move a departed player to an archival obligation rather than deleting a promised review or leaving him in a training session. Allen was traded to Arizona on April 7; his review is an archival obligation, not a training assignment. Meester remains archival and receives no practice assignment.
 
 Use the [packet template](packet_template.md) for assembled material and the [player template](../player_development/player_plan_template.md) for individual progressions. Coaches prepare the next question before the player’s next permitted teaching opportunity. Missing evidence stays explicit.

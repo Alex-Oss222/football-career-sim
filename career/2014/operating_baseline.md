@@ -1,6 +1,6 @@
 # 2014 operating baseline and handoffs
 
-Current through March 31, 2014. Jacksonville controls 53 players: 49 under signed contracts, including the eight free-agency replay signings, the six reserve/future contracts and the March 28 re-signings of Maurice Jones-Drew and C.J. Wilson, plus four unsigned tenders. Shorts and Blackmon were traded to Indianapolis March 31, Babin and Alualu March 24, and Nwaneri March 20. The two Colts picks from that trade, Nos. 82 and 194, went to Washington the same day for Jacksonville's own 2015 second. Jacksonville holds nine 2014 picks: 13, 26, 38, 90, 129, 153, 168, 205 and 241. The offseason-program schedule was filed March 28. No phase or game has been played. Completed events are in the [2014 ledger](ledger.md); earlier ones stay in the [2013 ledger](../2013/ledger.md).
+Current through April 17, 2014. Jacksonville controls 53 players: 49 under signed contracts, including the eight free-agency replay signings, the six reserve/future contracts, the March 28 re-signings of Maurice Jones-Drew and C.J. Wilson and Chad Henne's April 4 re-signing, plus four unsigned tenders. Russell Allen was traded to Arizona April 7 for Arizona's 2015 fourth, after Paul Posluszny's April 5 clearance. Shorts and Blackmon were traded to Indianapolis March 31, Babin and Alualu March 24, and Nwaneri March 20. The two Colts picks from that trade, Nos. 82 and 194, went to Washington the same day for Jacksonville's own 2015 second. Jacksonville holds nine 2014 picks: 13, 26, 38, 90, 129, 153, 168, 205 and 241. The offseason-program schedule was filed March 28. No phase or game has been played. Completed events are in the [2014 ledger](ledger.md); earlier ones stay in the [2013 ledger](../2013/ledger.md).
 
 ## Start here
 
@@ -27,7 +27,6 @@ The generated 2,208-player league inventory is research data with unknown contra
 
 ## Decisions and facts still pending
 
-- Allen trade with Arizona: agreed in principle for Arizona's unconditional 2015 fourth. It closes only on Paul Posluszny's actual clearance by April 21, Allen's physical and league processing, and expires otherwise. No cap saving or pick is booked before it closes ([trade plan](trades/trade_targets.md)).
 - Rackley-or-Brewster trade: blocked until Jacksonville actually drafts two offensive linemen.
 - The [phase decision package](offseason/phase_plan_decisions.md) holds the remaining install and policy choices. Pre-program coach-led football study is prohibited; passive film distribution remains unresolved. Adopted individual-development methods stay adopted. The five prepared NOT_STARTED outputs do not resolve pending choices or create delivery receipts.
 - Draft: Linsley and Gaines are current targets, with Paradis, then Stork, then Swanson behind Linsley, and Cockrell behind Gaines, then Butler at 241. Eligibility, pre-selection reports and availability remain normal draft-day prerequisites.

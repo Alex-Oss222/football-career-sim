@@ -1,6 +1,6 @@
 # Jacksonville Jaguars: 2014 contract and free-agency status register
 
-**As of:** March 31, 2014.
+**As of:** April 17, 2014.
 **Scope:** every player in the March 11, 2014 league-year baseline: the 52 active players and Brad Meester (Reserve/Retired) on the [2013 closing roster](../../2013/roster.md), plus the eight-player 2013 practice squad, six of whom signed reserve/future contracts effective March 11. Players signed from outside after the baseline are summarized in section 2; their contracts are in the [contract table](contract_table.md) and [signings record](free_agency/signings.md).
 **Role:** this register owns each player's contract status, final league year, accrued seasons and free-agency class, with the evidence for each. It executes no signing, tender, release, extension, option or trade; Caldwell retains contract authority under Document 3. Figures follow the adopted contract reconstruction in the [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md) and the [completion research](../../../library/2014_jaguars_contract_completion.md), which fix every covered contract year with explicit simulation assumptions where the public original instrument is incomplete. Transaction history is in the [2014 ledger](../ledger.md).
 
@@ -18,9 +18,9 @@
 
 | Status at March 31, 2014 | Count |
 |---|---:|
-| Under contract, continuing from before 2014 | 33 |
+| Under contract, continuing from before 2014 | 32 |
 | Under contract, reserve/future (effective March 11) | 6 |
-| Under contract, signed or re-signed in March 2014 | 10 |
+| Under contract, signed or re-signed in March and April 2014 | 11 |
 | Restricted free agent, lowest tender (unsigned) | 1 |
 | Exclusive-rights free agent, tendered (unsigned) | 3 |
 | Controlled players | 53 |
@@ -38,7 +38,7 @@ The 53 controlled players match the [roster](../roster.md) and the [contract tab
 | Jeremy Cain | UFA | Re-signed March 19: one year, $855,000 |
 | Maurice Jones-Drew | UFA | Re-signed March 28: two years, $7.0M, $3.25M guaranteed |
 | C.J. Wilson | UFA | Re-signed March 28: one year, $795,000 |
-| Chad Henne | UFA | Unsigned; Stone's March 31 plan pursues him as QB2 |
+| Chad Henne | UFA | Re-signed April 4: two years, $4.0M, $2.0M guaranteed |
 | Alan Ball | UFA | Unsigned; Stone's March 31 plan revisits him after the draft |
 | Brent Grimes | UFA | Unsigned; not pursued under Stone's March 31 plan |
 | Cameron Bradfield | RFA | Lowest tender, $1,431,000; unsigned |
@@ -50,6 +50,7 @@ The 53 controlled players match the [roster](../roster.md) and the [contract tab
 | Jason Babin | Under contract | Traded to Miami March 24 with Jacksonville's 2017 seventh for Miami's 2015 third |
 | Tyson Alualu | Under contract | Traded to Houston March 24 for Houston's 2015 fourth |
 | Cecil Shorts, Justin Blackmon | Under contract | Traded to Indianapolis March 31 for the Colts' 2014 third (No. 82) and sixth (No. 194) |
+| Russell Allen | Under contract | Traded to Arizona April 7 for Arizona's 2015 fourth |
 | Six reserve/future players | Futures | Contracts in force from March 11 |
 | Alterraun Verner, Aqib Talib, Hakeem Nicks, Andrew Hawkins, Daniel Te'o-Nesheim | Not Jacksonville players | Signed March 11 to 18 (terms in the [signings record](free_agency/signings.md)) |
 
@@ -82,7 +83,7 @@ The 53 controlled players match the [roster](../roster.md) and the [contract tab
 
 | Player | Pos. | Contract type and final league year | Current status | Accrued seasons through 2012 | 2013 branch accrual | Source and label |
 |---|---|---|---|---|---|---|
-| Chad Henne | QB | Veteran contract signed March 2012; two years ($6.75M); final year 2013 | UFA; unsigned, pursued as QB2 | 5 (2008-2011 Miami, 2012 Jacksonville; 4+ is Supported) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/chad-henne/920/) (2012, two years, $6,750,000); `initial_cap_sheet.md`; March 14, 2012 signing date per [Wikipedia](https://en.wikipedia.org/wiki/Chad_Henne). Confirmed |
+| Chad Henne | QB | Veteran contract signed March 2012; two years ($6.75M); final year 2013 | UFA at the league year; re-signed April 4, 2014 (two years through 2015) | 5 (2008-2011 Miami, 2012 Jacksonville; 4+ is Supported) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/chad-henne/920/) (2012, two years, $6,750,000); `initial_cap_sheet.md`; March 14, 2012 signing date per [Wikipedia](https://en.wikipedia.org/wiki/Chad_Henne). Confirmed |
 | Maurice Jones-Drew | RB | 2009 veteran extension; final year 2013 | UFA at the league year; re-signed March 28, 2014 (two years through 2015) | 7 (2006-2012; 2012 on Reserve/Injured, which is full pay) | Accrues in branch (on 53 for 16 games) | [SI, June 12, 2012](https://www.si.com/nfl/2012/06/12/huddle-up-why-the-maurice-jones-drew-holdout-is-a-unique-situation) (two years left in 2012: 2012 and 2013 bases); [OverTheCap](https://overthecap.com/player/maurice-jones-drew/949/); `initial_cap_sheet.md` ("final year of existing veteran deal"). Final year Confirmed; term length Corrected (section 5) |
 | Eugene Monroe | OT | 2009 first-round (#8) five-year rookie contract; final year 2013 | Franchise player (non-exclusive tag designated February 18, 2014; $11,654,000 tender never signed); re-signed March 11, 2014 (five years through 2018) | 4 (2009-2012) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/eugene-monroe/927/) (2009, five years, $25,000,000); `initial_cap_sheet.md` ("final contract year"). Confirmed |
 | Cameron Bradfield | OT | 2011 undrafted rookie contract, three years; final year 2013 | RFA; lowest tender $1,431,000, unsigned | 2 (2011: one of three undrafted rookies on Jacksonville's opening 53; 2012: 14 games) | Accrues in branch (on 53 for 16 games) | 2011 roster: [Jaguars.com, September 2011](https://www.jaguars.com/news/a-call-to-remember-5932309); 2012 games: `initial_roster.md`. Three-year undrafted term and 2013 expiry: Supported (standard 2011 undrafted term; not on Jacksonville's March 2013 own-free-agent list). 2011 accrual: Supported, not Confirmed (games count for 2011 not recovered) |
@@ -111,7 +112,7 @@ The 53 controlled players match the [roster](../roster.md) and the [contract tab
 | Tyson Alualu | DT | 2010 first-round five-year rookie contract; final year 2014 | Traded to Houston March 24, 2014 | 3 | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/tyson-alualu/960/); `initial_cap_sheet.md`. Confirmed |
 | C.J. Mosley | DT | 2012 three-year veteran contract; final year 2014 | Under contract | 4+ (entered 2005) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/c-j-mosley/819/) (Jaguars 2012, three years, $7,500,000); `initial_cap_sheet.md`. Supported |
 | Jeris Pendleton | DT | 2012 Jacksonville seventh-round four-year rookie contract; final year 2015 | Under contract | Unresolved (not status-determining; 4 games in 2012) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/jeris-pendleton/2662/); `initial_cap_sheet.md`. Confirmed |
-| Russell Allen | LB | 2012 three-year contract; final year 2014 | Under contract | 4 (2009-2012) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/russell-allen/956/); `initial_cap_sheet.md`. Supported |
+| Russell Allen | LB | 2012 three-year contract; final year 2014 | Traded to Arizona April 7, 2014 | 4 (2009-2012) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/russell-allen/956/); `initial_cap_sheet.md`. Supported |
 | Paul Posluszny | LB | 2011 six-year veteran contract; final year 2016 | Under contract | 4+ (entered 2007) | Accrues in branch (on 53 for 16 games; out from Week 13 on independent medical hold, never moved to a reserve list) | [OverTheCap](https://overthecap.com/player/paul-posluszny/954/); `initial_cap_sheet.md`. Confirmed |
 | Julian Stanford | LB | 2012 Jacksonville undrafted contract, three years; final year 2014 | Under contract | 1 (2012: 16 games) | Accrues in branch (on 53 for 16 games) | [Spotrac](https://www.spotrac.com/nfl/detroit-lions/julian-stanford-11178/) (three years, $1,445,000, per search-result text); `initial_roster.md`. Supported |
 | Mike Harris | CB | 2012 Jacksonville sixth-round four-year rookie contract; final year 2015 | Under contract | 1 | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/mike-harris/952/); `initial_cap_sheet.md`. Confirmed |

@@ -14,7 +14,7 @@
 | [source_snapshot.json.gz](source_snapshot.json.gz) | Compressed, field-limited source and branch evidence for offline regeneration; no future outcomes or 2014 draft results |
 | [clubs/](clubs/) | 31 generated research inventories, with manually maintained dated move tables preserved below each generated block |
 | [free_agent_pool.md](free_agent_pool.md) | Nine independently verified targets plus generated, explicitly estimated UFA/RFA/ERFA candidates |
-| [retirements.md](retirements.md) | Meester applied; Allen scheduled for April 22; four VERIFY rows with no exact public retirement date found |
+| [retirements.md](retirements.md) | Meester applied; Allen (now Arizona's) scheduled for April 22; four VERIFY rows with no exact public retirement date found |
 | [draft_pairing.md](draft_pairing.md) | Jacksonville's selections and swap partners, filled at the May 8-10 draft |
 | [fa_draws.md](fa_draws.md) | Market draws at each pursued player's real signing date |
 | [FILLING_GUIDE.md](FILLING_GUIDE.md) | The small amount of human input needed and where to put it |

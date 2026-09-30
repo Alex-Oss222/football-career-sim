@@ -1,12 +1,12 @@
 # Jacksonville 2014
 
-**Current checkpoint:** March 31, 2014; Entry 105 (the two Colts picks, Nos. 82 and 194, traded to Washington for Jacksonville's 2015 second, after Shorts and Blackmon went to Indianapolis for them the same day). There are 53 controlled players: 49 signed and four unsigned tenders. Nine draft picks: 13, 26, 38, 90, 129, 153, 168, 205 and 241; no compensatory award. 2015 picks held: Jacksonville's own second, Miami's third and Houston's fourth; Jacksonville's 2017 seventh went to Miami. Package G (Allen to Arizona for its 2015 fourth) is agreed in principle, pending Posluszny's clearance. No offseason football phase or 2014 game has run.
+**Current checkpoint:** April 17, 2014; Entry 106 (Henne re-signed April 4, Posluszny cleared April 5, and the Allen trade with Arizona closed April 7). There are 53 controlled players: 49 signed and four unsigned tenders. Nine draft picks: 13, 26, 38, 90, 129, 153, 168, 205 and 241; no compensatory award. 2015 picks held: Jacksonville's own second, Miami's third, Houston's fourth and Arizona's fourth; Jacksonville's 2017 seventh went to Miami. No offseason football phase or 2014 game has run.
 
 ## Start and resume here
 
 [2014 player cards](player_profiles/README.md) · [2014 player template](player_profiles/TEMPLATE.md) · [2013 final player sheets](../2013/player_profiles/README.md)
 
-Read [current state](../../state/05_Current_Season_State.md), [calendar](calendar.md), then the relevant row below. The next schedule action is filing the selected April 21 program by the agreed date, no later than March 31. Selection is complete; filing is unrecorded. Held negotiations and other open choices keep their existing owners.
+Read [current state](../../state/05_Current_Season_State.md), [calendar](calendar.md), then the relevant row below. The selected program was filed March 28 and starts April 21; the remaining phase-plan choices are open for the April 18 staff review. Held negotiations and other open choices keep their existing owners.
 
 | Order of work | Existing home | What carries to the next step |
 |---|---|---|

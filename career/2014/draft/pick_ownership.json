@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "as_of": "2014-03-31",
+  "as_of": "2014-04-07",
   "authority": "career/2013/ledger.md#entry-81-draft-coin-flip-and-league-pick-ownership-reconciled",
   "default_ownership": "Retained original allocation after the 224-asset audit in ownership_audit.md; explicit transfers and conditional claims override it. No generic outside-club provisional holdings remain for 2014.",
   "compensatory": {
@@ -322,6 +322,15 @@
       "basis": "Colts picks traded to Washington, March 31, 2014; 2014 ledger Entry 105",
       "source": "career/2014/trades/trades.md",
       "effective_date": "2014-03-31"
+    },
+    {
+      "draft_year": 2015,
+      "round": 4,
+      "original_club": "Arizona Cardinals",
+      "owner": "Jacksonville Jaguars",
+      "basis": "Allen trade with Arizona, closed April 7, 2014 after Posluszny's clearance and Allen's physical; 2014 ledger Entry 106; unconditional",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-04-07"
     }
   ],
   "audited_year": 2014,

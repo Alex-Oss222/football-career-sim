@@ -1,6 +1,6 @@
 # Jacksonville 2014 completed trades
 
-Completed and processed 2014 trades only: the Arizona trade for No. 38 (March 20), the Babin and Alualu trades (March 24), the Shorts and Blackmon trade with Indianapolis (March 31) and the trade of the two Colts picks to Washington for Jacksonville's 2015 second (March 31). The Allen trade with Arizona is agreed in principle, not completed, and is tracked in [trade targets](trade_targets.md). The dated negotiations are in the [offer log](trade_offers.md).
+Completed and processed 2014 trades only: the Arizona trade for No. 38 (March 20), the Babin and Alualu trades (March 24), the Shorts and Blackmon trade with Indianapolis (March 31), the trade of the two Colts picks to Washington for Jacksonville's 2015 second (March 31) and the Allen trade with Arizona (April 7). The dated negotiations are in the [offer log](trade_offers.md).
 
 Earlier deals and corrections stay in [the 2013 trade history](../../2013/trades/trades.md). Current pick ownership is in [the draft ownership register](../draft/pick_ownership.json); assets already held are not re-acquired here. Detroit's original fifth is Jacksonville's from the Mike Thomas trade, and Kansas City's second is San Francisco's from the Alex Smith trade.
 
@@ -66,6 +66,19 @@ The Babin and Alualu trades are recorded together in the [2014 ledger](../ledger
 - Closing: no players move. Both 2014 picks were clean ordinary picks with no condition. Processed March 31.
 - Accounting (Jacksonville): none. No contract moves and the picks carried no rookie contract.
 - Picks: Nos. 82 and 194 are Washington's, and Jacksonville's original 2015 second is Jacksonville's again ([ownership register](../draft/pick_ownership.json), [draft order](../draft/draft_order.md)). Jacksonville now holds 9 picks in 2014.
+
+## Jacksonville / Arizona: Allen (April 7, 2014)
+
+| Club | Receives |
+|---|---|
+| Jacksonville | Arizona's original 2015 fourth-round pick, unconditional |
+| Arizona | LB Russell Allen |
+
+- Resolution: agreed in principle March 24 in the user's trade-dynamics run ([resolution log](march_24_2014_trade_resolution.md)), to close automatically once its conditions were met, with no further negotiation.
+- Closing: Paul Posluszny was cleared on April 5, his projected return date, well before the April 21 limit. Allen passed Arizona's physical on April 7 and the trade was processed that day.
+- Accounting (Jacksonville): Allen's $2,416,668 2014 charge is removed. His final $416,668 original bonus allocation stays with Jacksonville as 2014 dead money (pre-June 1 trade); Arizona takes his $1,975,000 base and $25,000 workout bonus. His contract ended after 2014, so no later year changes.
+- Picks: Arizona's 2015 fourth is Jacksonville's ([ownership register](../draft/pick_ownership.json)). Jacksonville's 2015 picks are now its own second, Miami's third, Houston's fourth and Arizona's fourth.
+- Rails: Allen's real retirement, dated April 22, 2014, now applies at Arizona. It has no Jacksonville cap effect.
 
 ## Recording a completed trade
 

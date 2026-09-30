@@ -1,12 +1,13 @@
 # 2014 player profiles
 
-Working player cards for the current 55-player roster. Starting personnel judgments remain in place during the season; the full assessment is reviewed at season close. The bottom regular-season and playoff tables refresh after every closed game.
+Working player cards for the current 53-player roster. Starting personnel judgments remain in place during the season; the full assessment is reviewed at season close. The bottom regular-season and playoff tables refresh after every closed game.
 
 [2014 player template](TEMPLATE.md) · [2013 final profiles](../../2013/player_profiles/README.md) · [Current roster](../roster.md)
 
 | Player | Position |
 | --- | --- |
 | [Kirk Cousins](kirk_cousins.md) | QB |
+| [Chad Henne](chad_henne.md) | QB |
 | [John Parker Wilson](john_parker_wilson.md) | QB |
 | [Tyler Bray](tyler_bray.md) | QB |
 | [C.J. Anderson](c_j_anderson.md) | RB |
@@ -14,10 +15,8 @@ Working player cards for the current 55-player roster. Starting personnel judgme
 | [Maurice Jones-Drew](maurice_jones_drew.md) | RB |
 | [Richard Murphy](richard_murphy.md) | RB |
 | [Montell Owens](montell_owens.md) | FB |
-| [Justin Blackmon](justin_blackmon.md) | WR |
 | [Mike Brown](mike_brown.md) | WR |
 | [Toney Clemons](toney_clemons.md) | WR |
-| [Cecil Shorts](cecil_shorts.md) | WR |
 | [Adam Thielen](adam_thielen.md) | WR |
 | [Jerrell Jackson](jerrell_jackson.md) | WR |
 | [Hakeem Nicks](hakeem_nicks.md) | WR |
@@ -43,7 +42,6 @@ Working player cards for the current 55-player roster. Starting personnel judgme
 | [Jeris Pendleton](jeris_pendleton.md) | DT |
 | [D'Anthony Smith](d_anthony_smith.md) | DT |
 | [Jerome Long](jerome_long.md) | DT |
-| [Russell Allen](russell_allen.md) | LB |
 | [Sio Moore](sio_moore.md) | LB |
 | [Paul Posluszny](paul_posluszny.md) | LB |
 | [Daryl Smith](daryl_smith.md) | LB |
@@ -63,3 +61,13 @@ Working player cards for the current 55-player roster. Starting personnel judgme
 | [Jeremy Cain](jeremy_cain.md) | LS |
 
 Refresh the stats with `python scripts/update_player_cards.py 2014`; use `--check` to verify. The regular season and playoffs are separate. Unplayed periods say Not played; missing recorded fields say Unrecorded. New arrivals need a starting assessment and card; preserve departing players’ cards as history. Add a row per year from 2014 onward.
+
+## Former players
+
+Kept as history of the players who left; they are not reassessed.
+
+| Player | Position | Left |
+| --- | --- | --- |
+| [Cecil Shorts](cecil_shorts.md) | WR | Traded to Indianapolis, March 31, 2014 |
+| [Justin Blackmon](justin_blackmon.md) | WR | Traded to Indianapolis, March 31, 2014 |
+| [Russell Allen](russell_allen.md) | LB | Traded to Arizona, April 7, 2014 |
