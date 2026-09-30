@@ -33,6 +33,24 @@ VISIBILITY_LEVELS = (
     "game_observed",
 )
 
+CONTEXT_CATEGORIES = (
+    "physical_profile",
+    "technical_state",
+    "mental_processing",
+    "scheme_playbook_familiarity",
+    "position_specific_skill",
+    "previous_season_experience",
+    "consistency",
+    "role",
+    "conditioning_body_composition",
+    "age_context",
+    "coaching_influence",
+    "previous_season_performance",
+    "playing_time_opportunity",
+    "injuries_physical_limitations",
+    "existing_strengths_weaknesses",
+)
+
 POSITION_GROUP = {
     "QB": "QB",
     "RB": "RB",
@@ -520,9 +538,30 @@ INTERDEPENDENCIES: dict[tuple[str, str], tuple[str, ...]] = {
 
 
 @dataclass(frozen=True)
+class ContextFactor:
+    """One explicitly considered piece of the whole-player offseason context."""
+
+    category: str
+    assessment: str
+    evidence_ids: tuple[str, ...]
+    confidence: str
+
+
+@dataclass(frozen=True)
+class PlayerDevelopmentContext:
+    """Complete whole-player context required before any trait is resolved."""
+
+    context_id: str
+    player_id: str
+    position: str
+    factors: tuple[ContextFactor, ...]
+
+
+@dataclass(frozen=True)
 class DevelopmentCase:
     """A causal case for one trait entering an offseason transition draw."""
 
+    context_id: str
     player_id: str
     position: str
     trait: str
@@ -586,9 +625,52 @@ def influenced_traits(position: str, trait: str) -> tuple[str, ...]:
     return INTERDEPENDENCIES.get((position_group(position), trait), ())
 
 
-def validate_development_case(case: DevelopmentCase) -> None:
+def validate_context(context: PlayerDevelopmentContext) -> None:
+    if not context.context_id.strip():
+        raise ValueError("context_id is required")
+    if not context.player_id.strip():
+        raise ValueError("context player_id is required")
+    position_group(context.position)
+    seen: set[str] = set()
+    for factor in context.factors:
+        if factor.category not in CONTEXT_CATEGORIES:
+            raise ValueError("unknown context category: " + factor.category)
+        if factor.category in seen:
+            raise ValueError("duplicate context category: " + factor.category)
+        seen.add(factor.category)
+        if factor.confidence not in CONFIDENCE_LEVELS:
+            raise ValueError(
+                f"{factor.category}: unknown context confidence level"
+            )
+        if not factor.assessment.strip():
+            raise ValueError(f"{factor.category}: assessment is required")
+        if factor.assessment.strip().lower() != "unknown" and not factor.evidence_ids:
+            raise ValueError(
+                f"{factor.category}: supported assessment requires evidence"
+            )
+    missing = set(CONTEXT_CATEGORIES) - seen
+    if missing:
+        raise ValueError(
+            "player context is incomplete; missing: " + ", ".join(sorted(missing))
+        )
+
+
+def validate_development_case(
+    case: DevelopmentCase,
+    context: PlayerDevelopmentContext | None = None,
+) -> None:
+    if not case.context_id.strip():
+        raise ValueError("case context_id is required")
     if not case.player_id.strip():
         raise ValueError("player_id is required")
+    if context is not None:
+        validate_context(context)
+        if case.context_id != context.context_id:
+            raise ValueError("development case references the wrong player context")
+        if case.player_id != context.player_id:
+            raise ValueError("development case player differs from player context")
+        if position_group(case.position) != position_group(context.position):
+            raise ValueError("development case position differs from player context")
     domain = trait_domain(case.position, case.trait)
     if case.confidence not in CONFIDENCE_LEVELS:
         raise ValueError("unknown confidence level")
@@ -639,15 +721,19 @@ def validate_prior(prior: TransitionPrior) -> None:
 
 
 def resolve_private_change(
-    case: DevelopmentCase, prior: TransitionPrior, rng: Random
+    case: DevelopmentCase,
+    context: PlayerDevelopmentContext,
+    prior: TransitionPrior,
+    rng: Random,
 ) -> PrivateTraitChange:
     """Sample one hidden change from an approved/calibrated prior.
 
-    The function intentionally has no default prior. Age, draft position,
+    The complete 15-factor player context is required before resolution. The
+    function intentionally has no default prior. Age, draft position,
     potential, or role may not silently manufacture a probability table.
     """
 
-    validate_development_case(case)
+    validate_development_case(case, context)
     validate_prior(prior)
     draw = rng.random()
     running = 0.0
@@ -675,11 +761,14 @@ def validate_observed_update(update: ObservedTraitUpdate) -> None:
 __all__ = [
     "CAUSE_DOMAINS",
     "CONFIDENCE_LEVELS",
+    "CONTEXT_CATEGORIES",
+    "ContextFactor",
     "DIRECTIONS",
     "DevelopmentCase",
     "INTERDEPENDENCIES",
     "ObservedTraitUpdate",
     "POSITION_GROUP",
+    "PlayerDevelopmentContext",
     "PrivateTraitChange",
     "TRAITS_BY_GROUP",
     "TransitionPrior",
@@ -689,6 +778,7 @@ __all__ = [
     "resolve_private_change",
     "trait_catalog",
     "trait_domain",
+    "validate_context",
     "validate_development_case",
     "validate_observed_update",
     "validate_prior",
