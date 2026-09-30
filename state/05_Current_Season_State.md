@@ -1,11 +1,11 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2014-MAR31-STATE-79`
-**Supersedes:** `JAX-2014-MAR31-STATE-78`
-**Snapshot effective:** March 31, 2014, after the March 31 trade of Cecil Shorts and Justin Blackmon to Indianapolis, the March 28 re-signings of Maurice Jones-Drew and C.J. Wilson and the March 28 filing of the offseason-program schedule. The 2013 season is complete and archived.
-**Last reconciled:** September 30, 2026; Entry 104 (Shorts and Blackmon traded to Indianapolis; clock stays March 31).
-**Global package checkpoint:** `Canonical update - March 31, 2014 - Shorts and Blackmon traded to Indianapolis`
+**Version:** `JAX-2014-MAR31-STATE-80`
+**Supersedes:** `JAX-2014-MAR31-STATE-79`
+**Snapshot effective:** March 31, 2014, after the March 31 trade of the two Colts picks to Washington for Jacksonville's 2015 second, the March 31 trade of Cecil Shorts and Justin Blackmon to Indianapolis, the March 28 re-signings of Maurice Jones-Drew and C.J. Wilson and the March 28 filing of the offseason-program schedule. The 2013 season is complete and archived.
+**Last reconciled:** September 30, 2026; Entry 105 (Colts picks traded to Washington for Jacksonville's 2015 second; clock stays March 31).
+**Global package checkpoint:** `Canonical update - March 31, 2014 - Colts picks traded to Washington for Jacksonville's 2015 second`
 
 This document states what is true now and what comes next. Event history lives in the [2014 ledger](../career/2014/ledger.md) (Entries 101 onward) and the [2013 ledger](../career/2013/ledger.md) (through Entry 100).
 
@@ -16,8 +16,8 @@ This document states what is true now and what comes next. Event history lives i
 | Document 1 | `a85650c6ba2557fbec8102dc7533aaf085bf188f` | Active foundation source |
 | Document 2 | `86dfbef40a5ae9b2b6f283dd513df6083bb22645` | Active foundation source |
 | Document 3 | `30ff2bd2eb39f64e31565d5eaf76bdd2de7e54b5` | Active foundation source |
-| Document 4 | `JAX-2014-MAR31-REGISTER-58`; reconciled by Entry 104 | Roster, staff, medical and role register |
-| Document 6 | `career/2014/ledger.md` Entries 101 to 104; `career/2013/ledger.md` through Entry 100 | Latest closed event: Entry 104 |
+| Document 4 | `JAX-2014-MAR31-REGISTER-59`; reconciled by Entry 105 | Roster, staff, medical and role register |
+| Document 6 | `career/2014/ledger.md` Entries 101 to 105; `career/2013/ledger.md` through Entry 100 | Latest closed event: Entry 105 |
 
 ## 1. Master clock and competition position
 
@@ -68,7 +68,7 @@ March 2014 signings, all under the judgment-based free-agency replay that supers
 | Maurice Jones-Drew, RB | March 28 | Two years, $7.0M, $3.25M guaranteed |
 | C.J. Wilson, DE | March 28 | One year, $795,000 (the minimum plus a $65,000 bonus); no role promise; March 26 physical showed no restriction |
 
-Completed trades: Uche Nwaneri, Jacksonville's 2015 first, 2015 fourth and 2016 fifth to Arizona for No. 38 (March 20); Jason Babin and Jacksonville's 2017 seventh to Miami for Miami's 2015 third (March 24); Tyson Alualu to Houston for Houston's 2015 fourth (March 24); Cecil Shorts and Justin Blackmon to Indianapolis for the Colts' 2014 third, No. 82, and sixth, No. 194 (March 31).
+Completed trades: Uche Nwaneri, Jacksonville's 2015 first, 2015 fourth and 2016 fifth to Arizona for No. 38 (March 20); Jason Babin and Jacksonville's 2017 seventh to Miami for Miami's 2015 third (March 24); Tyson Alualu to Houston for Houston's 2015 fourth (March 24); Cecil Shorts and Justin Blackmon to Indianapolis for the Colts' 2014 third, No. 82, and sixth, No. 194 (March 31); Nos. 82 and 194 to Washington for Jacksonville's original 2015 second (March 31).
 
 Caldwell has ended paid veteran receiver bidding. Adam Thielen cannot be extended until the day after Jacksonville's last 2014 regular-season game, because the 2011 CBA bars renegotiating an undrafted rookie contract before the end of its second contract year.
 
@@ -84,11 +84,11 @@ Player birth dates and ages are in Document 4, the [roster](../career/2014/roste
 
 ## 5. Draft capital
 
-- 2014 picks, 11 in all: Nos. 13 (Washington's), 26 (own), 38 (Arizona's second), 82 (Indianapolis's third), 90, 129, 153 (Detroit's fifth), 168, 194 (Indianapolis's sixth), 205 and 241. Jacksonville received no compensatory pick.
-- 2015 picks acquired: Miami's third and Houston's fourth. Picks owed away: 2014 second (No. 58) and 2015 second to Washington in the Cousins trade; 2015 first, 2015 fourth and 2016 fifth to Arizona; 2017 seventh to Miami.
+- 2014 picks, 9 in all: Nos. 13 (Washington's), 26 (own), 38 (Arizona's second), 90, 129, 153 (Detroit's fifth), 168, 205 and 241. The Colts' third and sixth, Nos. 82 and 194, went to Washington on March 31. Jacksonville received no compensatory pick.
+- 2015 picks held: Jacksonville's own second (back from Washington on March 31), Miami's third and Houston's fourth. Picks owed away: 2014 second (No. 58) to Washington in the Cousins trade; 2015 first, 2015 fourth and 2016 fifth to Arizona; 2017 seventh to Miami.
 - The user overrides the historical Rams claim to Washington's 2014 first for this asset. Indianapolis won the coin flip for No. 14 ahead of Green Bay; every round rotates from that result.
 - Compensatory picks came from the branch's own value-points [method](../career/2014/draft/compensatory/method.json) (version 2), because the league's weights are unpublished and the real list may not be imported. Revis (Tampa Bay third or fourth), Benn (undisclosed Philadelphia round) and Rosario (Chicago seventh) remain specific conditional holds in the league-wide ownership audit.
-- On the frozen board, No. 38 is Adams's slot and No. 26 now points to Bitonio, then Van Noy. Stone has not named targets for Nos. 82 and 194. The extra first-round pick does not select a prospect or rewrite the board.
+- On the frozen board, No. 38 is Adams's slot and No. 26 now points to Bitonio, then Van Noy. The extra first-round pick does not select a prospect or rewrite the board.
 - Authority: `career/2014/draft/pick_ownership.json`; [all seven rounds](../career/2014/draft/draft_order.md).
 
 ## 6. Availability
@@ -117,7 +117,6 @@ Execution and observable effort remain separate: protection losses were techniqu
 | Allen trade with Arizona | Agreed in principle: Russell Allen for Arizona's unconditional 2015 fourth. Closes only on Posluszny's actual clearance by April 21, Allen passing Arizona's physical and league processing; otherwise it expires. Until then Allen stays a Jaguar with his cap charge and the pick stays Arizona's. Allen's real retirement is scheduled for April 22 |
 | Rackley-or-Brewster trade | Blocked until Jacksonville actually drafts two offensive linemen; then Caldwell may shop one of them for a 2015 seventh |
 | Left guard, Edge 1, WR1 and WR3 | Stone's decisions |
-| Nos. 82 and 194 | Targets not yet set; Stone to choose |
 | Phase-plan decisions | All five 2014 phase plans are prepared with NOT_STARTED outputs. Individual feedback, living player development and QB-center identification teaching are adopted; other marked choices remain pending for the April 18 review |
 | Staff preparation checkpoint | Listed for March 31, not recorded as done; carried to the April 11 review |
 

@@ -1,6 +1,6 @@
 # Jacksonville 2014 completed trades
 
-Completed and processed 2014 trades only: the Arizona trade for No. 38 (March 20), the Babin and Alualu trades (March 24) and the Shorts and Blackmon trade with Indianapolis (March 31). The Allen trade with Arizona is agreed in principle, not completed, and is tracked in [trade targets](trade_targets.md). The dated negotiations are in the [offer log](trade_offers.md).
+Completed and processed 2014 trades only: the Arizona trade for No. 38 (March 20), the Babin and Alualu trades (March 24), the Shorts and Blackmon trade with Indianapolis (March 31) and the trade of the two Colts picks to Washington for Jacksonville's 2015 second (March 31). The Allen trade with Arizona is agreed in principle, not completed, and is tracked in [trade targets](trade_targets.md). The dated negotiations are in the [offer log](trade_offers.md).
 
 Earlier deals and corrections stay in [the 2013 trade history](../../2013/trades/trades.md). Current pick ownership is in [the draft ownership register](../draft/pick_ownership.json); assets already held are not re-acquired here. Detroit's original fifth is Jacksonville's from the Mike Thomas trade, and Kansas City's second is San Francisco's from the Alex Smith trade.
 
@@ -53,7 +53,19 @@ The Babin and Alualu trades are recorded together in the [2014 ledger](../ledger
 - Negotiation: Stone asked for draft picks, ideally one in rounds 2 to 4, with Jacksonville taking the dead money. Seattle declined No. 36 for both; Carolina offered No. 119 for Shorts alone; the Colts refused No. 51, offered No. 82 for Shorts and added No. 194 to take Blackmon. Caldwell accepted ([trade record](shorts_blackmon_to_indianapolis_2014-03-31.md)).
 - Closing: both players passed the Colts' physicals on March 31 with no communicated restriction. Processed March 31. Both picks are clean ordinary picks with no condition.
 - Accounting (Jacksonville): Shorts's $1,541,845 2014 charge is removed and his final $110,845 bonus allocation stays as 2014 dead money. Blackmon's $5,048,728 2014 charge is removed; his remaining bonus allocation ($2,975,818 for 2014 and $2,975,818 for 2015, $5,951,636 in all) accelerates into 2014 dead money (pre-June 1 trade), and his 2015 charge leaves. Indianapolis takes both contracts from March 31.
-- Picks: Nos. 82 and 194 are Jacksonville's ([ownership register](../draft/pick_ownership.json), [draft order](../draft/draft_order.md)). Jacksonville now holds 11 picks in 2014.
+- Picks: Nos. 82 and 194 became Jacksonville's, giving it 11 picks in 2014. Both went to Washington later the same day (below).
+
+## Jacksonville / Washington: the Colts picks for Jacksonville's 2015 second (March 31, 2014)
+
+| Club | Receives |
+|---|---|
+| Jacksonville | Jacksonville's original 2015 second-round pick, unconditional, slot set by the 2014 season |
+| Washington | 2014 third-round pick, No. 82 (Indianapolis original, round 3, slot 18); 2014 sixth-round pick, No. 194 (Indianapolis original, round 6, slot 15) |
+
+- Negotiation: Stone asked Caldwell to trade the two Colts picks for a 2015 pick. Caldwell offered No. 82 alone for Jacksonville's own 2015 second, which Washington held from the Cousins trade. Washington asked for No. 194 as well, and Caldwell accepted within Stone's authorization ([trade record](colts_picks_to_washington_2014-03-31.md)).
+- Closing: no players move. Both 2014 picks were clean ordinary picks with no condition. Processed March 31.
+- Accounting (Jacksonville): none. No contract moves and the picks carried no rookie contract.
+- Picks: Nos. 82 and 194 are Washington's, and Jacksonville's original 2015 second is Jacksonville's again ([ownership register](../draft/pick_ownership.json), [draft order](../draft/draft_order.md)). Jacksonville now holds 9 picks in 2014.
 
 ## Recording a completed trade
 

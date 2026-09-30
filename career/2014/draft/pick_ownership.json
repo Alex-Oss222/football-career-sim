@@ -46,11 +46,10 @@
       "draft_year": 2015,
       "round": 2,
       "original_club": "Jacksonville Jaguars",
-      "owner": "Washington Redskins",
-      "basis": "User-corrected Cousins trade; ledger Entry 80; unconditional, slot unknown",
-      "source": "career/2013/trades/trades.md",
-      "effective_date": "2014-02-02",
-      "date_note": "Administrative correction date; original execution timestamp was not recorded."
+      "owner": "Jacksonville Jaguars",
+      "basis": "Returned by Washington for Nos. 82 and 194, March 31, 2014; 2014 ledger Entry 105; unconditional, slot set by the 2014 season",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-03-31"
     },
     {
       "draft_year": 2014,
@@ -310,8 +309,8 @@
       "draft_year": 2014,
       "round": 3,
       "original_club": "Indianapolis Colts",
-      "owner": "Jacksonville Jaguars",
-      "basis": "Shorts and Blackmon trade with Indianapolis, March 31, 2014; 2014 ledger Entry 104",
+      "owner": "Washington Redskins",
+      "basis": "Colts picks traded to Washington, March 31, 2014; 2014 ledger Entry 105",
       "source": "career/2014/trades/trades.md",
       "effective_date": "2014-03-31"
     },
@@ -319,8 +318,8 @@
       "draft_year": 2014,
       "round": 6,
       "original_club": "Indianapolis Colts",
-      "owner": "Jacksonville Jaguars",
-      "basis": "Shorts and Blackmon trade with Indianapolis, March 31, 2014; 2014 ledger Entry 104",
+      "owner": "Washington Redskins",
+      "basis": "Colts picks traded to Washington, March 31, 2014; 2014 ledger Entry 105",
       "source": "career/2014/trades/trades.md",
       "effective_date": "2014-03-31"
     }

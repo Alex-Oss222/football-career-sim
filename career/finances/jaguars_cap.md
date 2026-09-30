@@ -1,6 +1,6 @@
 # Jacksonville Jaguars cap tracker, 2014 to 2025
 
-As of March 31, 2014, Entry 104. Whole US dollars.
+As of March 31, 2014, Entry 105. Whole US dollars.
 
 [Player cap table](#cap-by-player) | [Individual contract details](jaguars_contract_details.md) | [Expirations](#expiring-contracts-and-free-agent-classes) | [Updating this tracker](README.md)
 
@@ -594,12 +594,10 @@ The $51,675 old Bray bonus is counted separately from his new $420,000 salary. N
 | 2014 | 1 | Washington Redskins | 13 | 13 |
 | 2014 | 1 | Jacksonville Jaguars | 26 | 26 |
 | 2014 | 2 | Arizona Cardinals | 6 | 38 |
-| 2014 | 3 | Indianapolis Colts | 18 | 82 |
 | 2014 | 3 | Jacksonville Jaguars | 26 | 90 |
 | 2014 | 4 | Jacksonville Jaguars | 26 | 129 |
 | 2014 | 5 | Detroit Lions | 11 | 153 |
 | 2014 | 5 | Jacksonville Jaguars | 26 | 168 |
-| 2014 | 6 | Indianapolis Colts | 15 | 194 |
 | 2014 | 6 | Jacksonville Jaguars | 26 | 205 |
 | 2014 | 7 | Jacksonville Jaguars | 26 | 241 |
 

@@ -1,6 +1,6 @@
 # Jacksonville Jaguars individual contract details
 
-[Return to the twelve-year table](jaguars_cap.md). As of March 31, 2014, Entry 104. Whole US dollars.
+[Return to the twelve-year table](jaguars_cap.md). As of March 31, 2014, Entry 105. Whole US dollars.
 
 Annual cells contain the working original or reconstructed contract schedule. Blank years lie outside that deal. The [completion research](../../library/2014_jaguars_contract_completion.md) identifies adopted simulation terms and guarantee assumptions. Cap, scheduled cash and remaining unpaid guarantees are separate amounts.
 

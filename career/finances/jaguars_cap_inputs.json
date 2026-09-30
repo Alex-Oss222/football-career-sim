@@ -1,7 +1,7 @@
 {
   "team": "Jacksonville Jaguars",
   "as_of": "2014-03-31",
-  "checkpoint": "Entry 104",
+  "checkpoint": "Entry 105",
   "prepared": "2026-09-29",
   "start_year": 2014,
   "end_year": 2025,
@@ -7754,13 +7754,6 @@
     {
       "year": 2014,
       "round": 3,
-      "original_club": "Indianapolis Colts",
-      "slot_in_round": "18",
-      "overall": "82"
-    },
-    {
-      "year": 2014,
-      "round": 3,
       "original_club": "Jacksonville Jaguars",
       "slot_in_round": "26",
       "overall": "90"
@@ -7785,13 +7778,6 @@
       "original_club": "Jacksonville Jaguars",
       "slot_in_round": "26",
       "overall": "168"
-    },
-    {
-      "year": 2014,
-      "round": 6,
-      "original_club": "Indianapolis Colts",
-      "slot_in_round": "15",
-      "overall": "194"
     },
     {
       "year": 2014,
@@ -7913,6 +7899,11 @@
       "date": "2014-03-31",
       "source": "career/2014/ledger.md",
       "description": "Entry 104: Shorts and Blackmon traded to Indianapolis for the Colts' 2014 third (No. 82) and sixth (No. 194). Pre-June 1 trade: Shorts's $110,845 and Blackmon's $5,951,636 of bonus allocation stay as 2014 dead money; Blackmon's 2015 charge leaves."
+    },
+    {
+      "date": "2014-03-31",
+      "source": "career/2014/ledger.md",
+      "description": "Entry 105: the Colts' 2014 third (No. 82) and sixth (No. 194) traded to Washington for Jacksonville's original 2015 second. No players move and no cap figure changes."
     }
   ],
   "scenarios": [],
