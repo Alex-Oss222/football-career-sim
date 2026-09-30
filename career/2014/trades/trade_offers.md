@@ -1,6 +1,6 @@
 # Jacksonville 2014 trade offer log
 
-**Status at March 20, 2014 (Entry 99):** package I **completed** (picks and Nwaneri for No. 38; Arizona declined Alualu); package E (Alualu) is live; package D (Babin to Miami) answer open. **Earlier (Entry 98):** package I now includes Nwaneri and Alualu (Stone's instruction) and must be agreed before his March 25 bonus or he is released; F1 is withdrawn; package D (Babin to Miami) is reopened with its answer open because Te'o-Nesheim signed. **Earlier (Entry 97):** Tate went to Detroit and Edelman to New England, so package A is not offered (Stone's September 29 amendment and contingency 3); H stays unavailable without No. 36. **Earlier status, March 11 (Entry 95):** the trade window is open. Entry 95's free-agency replay supersedes the first-pass package I answer and reopens the trade packages for their own replay entries; package I may now include Alualu because Marks re-signed. F1 stays offered with its answer open. Package D is withdrawn because its trigger, a veteran-edge signing, no longer holds. No trade has closed. Packages not listed below were not offered: their triggers are unmet or, for G, no buyer with a documented need is named.
+**Status at March 24, 2014 (Entry 102):** packages D (Babin and the 2017 seventh to Miami for its 2015 third) and E (Alualu to Houston for its 2015 fourth) **completed**; package G **agreed in principle** with Arizona (Allen for its 2015 fourth), awaiting its conditions; F2 blocked until the draft. **Earlier (Entry 99):** package I **completed** (picks and Nwaneri for No. 38; Arizona declined Alualu); package E (Alualu) is live; package D (Babin to Miami) answer open. **Earlier (Entry 98):** package I now includes Nwaneri and Alualu (Stone's instruction) and must be agreed before his March 25 bonus or he is released; F1 is withdrawn; package D (Babin to Miami) is reopened with its answer open because Te'o-Nesheim signed. **Earlier (Entry 97):** Tate went to Detroit and Edelman to New England, so package A is not offered (Stone's September 29 amendment and contingency 3); H stays unavailable without No. 36. **Earlier status, March 11 (Entry 95):** the trade window is open. Entry 95's free-agency replay supersedes the first-pass package I answer and reopens the trade packages for their own replay entries; package I may now include Alualu because Marks re-signed. F1 stays offered with its answer open. Package D is withdrawn because its trigger, a veteran-edge signing, no longer holds. No trade has closed. Packages not listed below were not offered: their triggers are unmet or, for G, no buyer with a documented need is named.
 
 ## Actual communications
 
@@ -45,3 +45,18 @@ Stone directed that Nwaneri be added to package I instead. The San Francisco off
 - **Offered March 18:** 2015 first, 2015 fourth, 2016 fifth, Alualu and Nwaneri for No. 38.
 - **Countered March 19:** Arizona drops Alualu. **Accepted** by Caldwell the same day.
 - **Processed March 20** after Nwaneri's physical. See [completed trades](trades.md) and the [negotiation record](package_i_negotiation_2014-03-20.md).
+
+### March 24, 2014: packages D, E and G resolved (Entry 102)
+
+Resolved in the user's trade-dynamics run, which simulates real club behavior outside the sim ([resolution log](march_24_2014_trade_resolution.md)). The March 24 [trade sheets](trade_sheets_2014-03-24.md) are superseded by these outcomes.
+
+- **Package D, completed with Miami:** Babin and Jacksonville's 2017 seventh for Miami's unconditional 2015 third. The earlier appearance condition is removed. Physical passed; processed. See [completed trades](trades.md).
+- **Package E, completed with Houston:** Alualu for Houston's unconditional 2015 fourth. Physical passed; processed. See [completed trades](trades.md).
+- **Package G, agreed in principle with Arizona:** Allen for Arizona's unconditional 2015 fourth.
+  - **Status:** agreed in principle, not completed. No further compensation talks are needed.
+  - **Closing conditions:** it closes only if (1) Posluszny receives actual medical clearance, (2) no later than April 21, 2014, (3) Allen passes Arizona's physical and (4) league processing completes. The April 5 projection is not clearance.
+  - **If the conditions are not met by April 21:** the agreement expires unexecuted.
+  - **Until it closes:** Allen stays a Jaguar on the roster and depth chart with his cap charge. The pick stays Arizona's and may not be spent or counted.
+  - **Next action:** Caldwell's office, at Posluszny's medical review.
+- **Package F2:** blocked until Jacksonville actually drafts two offensive linemen. Then Caldwell may shop one of Rackley or Brewster for a 2015 seventh, and nothing is booked until a buyer accepts.
+

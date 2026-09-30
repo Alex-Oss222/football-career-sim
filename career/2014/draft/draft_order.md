@@ -27,12 +27,15 @@
 
 Jacksonville currently owns **9 ordinary 2014 picks**: **13**; **26**; **38**; **90**; **129**; **153**; **168**; **205**; **241**. Jacksonville received **0 compensatory picks**; see [Compensatory selections](#compensatory-selections). No prospect is selected by this inventory.
 
-| Future asset already conveyed | Current owner | Overall pick | Authority |
+| Future pick transferred | Current owner | Overall pick | Authority |
 |---|---|---|---|
 | 2015 Round 2, Jacksonville Jaguars original | Washington Redskins | Unknown; future branch season | User-corrected Cousins trade; ledger Entry 80; unconditional, slot unknown |
 | 2015 Round 1, Jacksonville Jaguars original | Arizona Cardinals | Unknown; future branch season | Package I trade with Arizona, March 20, 2014; ledger Entry 99 |
 | 2015 Round 4, Jacksonville Jaguars original | Arizona Cardinals | Unknown; future branch season | Package I trade with Arizona, March 20, 2014; ledger Entry 99 |
 | 2016 Round 5, Jacksonville Jaguars original | Arizona Cardinals | Unknown; future branch season | Package I trade with Arizona, March 20, 2014; ledger Entry 99 |
+| 2015 Round 3, Miami Dolphins original | Jacksonville Jaguars | Unknown; future branch season | Package D trade, March 24, 2014; 2014 ledger Entry 102 |
+| 2017 Round 7, Jacksonville Jaguars original | Miami Dolphins | Unknown; future branch season | Package D trade, March 24, 2014; 2014 ledger Entry 102 |
+| 2015 Round 4, Houston Texans original | Jacksonville Jaguars | Unknown; future branch season | Package E trade, March 24, 2014; 2014 ledger Entry 102 |
 
 ## How to read the order
 

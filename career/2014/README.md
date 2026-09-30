@@ -1,6 +1,6 @@
 # Jacksonville 2014
 
-**Current checkpoint:** March 24, 2014; administrative Entry 101. There are 55 controlled players: 51 signed and four unsigned tenders. Nine draft picks: 13, 26, 38, 90, 129, 153, 168, 205 and 241; no compensatory award. No offseason football phase or 2014 game has run.
+**Current checkpoint:** March 24, 2014; Entry 102 (Babin to Miami, Alualu to Houston). There are 53 controlled players: 49 signed and four unsigned tenders. Nine draft picks: 13, 26, 38, 90, 129, 153, 168, 205 and 241; no compensatory award. Future picks acquired: Miami's 2015 third and Houston's 2015 fourth; Jacksonville's 2017 seventh went to Miami. Package G (Allen to Arizona for its 2015 fourth) is agreed in principle, pending Posluszny's clearance. No offseason football phase or 2014 game has run.
 
 ## Start and resume here
 

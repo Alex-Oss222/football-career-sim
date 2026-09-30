@@ -1,7 +1,7 @@
 {
   "team": "Jacksonville Jaguars",
   "as_of": "2014-03-24",
-  "checkpoint": "Entry 100",
+  "checkpoint": "Entry 102",
   "prepared": "2026-09-29",
   "start_year": 2014,
   "end_year": 2025,
@@ -2435,8 +2435,8 @@
       "roster_position": "DE",
       "date_of_birth": "1980-05-24",
       "age_at_checkpoint": 33,
-      "control": "signed",
-      "status": "Under contract",
+      "control": "traded",
+      "status": "Traded to Miami, March 24, 2014 (package D, Entry 102)",
       "contract_type": "Veteran (Philadelphia, 2011), carried by December 2012 waiver claim",
       "signed": "2011",
       "term": "5 / 2015",
@@ -2445,9 +2445,9 @@
       "bonus_terms": "No Jacksonville proration on the claimed Philadelphia contract",
       "guarantees": "Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap.",
       "dead_money_2014": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
-      "remaining_guarantees": 0,
+      "remaining_guarantees": null,
       "availability": "No communicated restriction",
-      "plan": "No new transaction decision in this tracker",
+      "plan": "Traded to Miami (Entry 102)",
       "source_note": "Planning estimate follows the reported $6.175M annual compensation on the original deal. $6M salary is corroborated; the remaining $175,000 component mix needs confirmation. Philadelphia retains old bonus allocation. An original opt-out clause is reported, but no branch exercise has occurred.",
       "sources": [
         "career/2014/offseason/contract_table.md",
@@ -2459,26 +2459,18 @@
       "accrued_seasons": "Through 2012: 4+ (entered 2004). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "approximate",
+          "status": "not_committed",
           "cap": null,
-          "base": 6000000,
-          "proration": 0,
-          "other_cap": 175000,
-          "cash": 6175000,
-          "approximate_cap": 6175000,
-          "estimate_note": "Planning estimate follows the reported $6.175M annual compensation on the original deal. $6M salary is corroborated; the remaining $175,000 component mix needs confirmation. Philadelphia retains old bonus allocation. An original opt-out clause is reported, but no branch exercise has occurred. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.",
-          "guaranteed_base": 0
+          "base": null,
+          "proration": null,
+          "cash": null
         },
         "2015": {
-          "status": "approximate",
+          "status": "not_committed",
           "cap": null,
-          "base": 6000000,
-          "proration": 0,
-          "other_cap": 175000,
-          "cash": 6175000,
-          "approximate_cap": 6175000,
-          "estimate_note": "Planning estimate follows the reported $6.175M annual compensation on the original deal. $6M salary is corroborated; the remaining $175,000 component mix needs confirmation. Philadelphia retains old bonus allocation. An original opt-out clause is reported, but no branch exercise has occurred. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.",
-          "guaranteed_base": 0
+          "base": null,
+          "proration": null,
+          "cash": null
         },
         "2016": {
           "status": "not_committed",
@@ -2552,7 +2544,10 @@
         }
       },
       "guarantee_basis": "simulation reconstruction",
-      "schedule_basis": "Includes adopted simulation amounts; see contract notes"
+      "schedule_basis": "Includes adopted simulation amounts; see contract notes",
+      "former_player": true,
+      "departure_date": "2014-03-24",
+      "departure_source": "career/2014/ledger.md"
     },
     {
       "name": "Andre Branch",
@@ -2921,8 +2916,8 @@
       "roster_position": "DT",
       "date_of_birth": "1987-05-12",
       "age_at_checkpoint": 26,
-      "control": "signed",
-      "status": "Under contract",
+      "control": "traded",
+      "status": "Traded to Houston, March 24, 2014 (package E, Entry 102)",
       "contract_type": "Rookie, 2010 first round",
       "signed": "2010",
       "term": "5 / 2014",
@@ -2931,9 +2926,9 @@
       "bonus_terms": "$1,542,500 original bonus allocation in the final 2014 year",
       "guarantees": "Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap.",
       "dead_money_2014": "$1,542,500 gross exposure under adopted terms, before any later earned payment or recorded credit",
-      "remaining_guarantees": 0,
+      "remaining_guarantees": null,
       "availability": "No communicated restriction",
-      "plan": "No new transaction decision in this tracker",
+      "plan": "Traded to Houston (Entry 102)",
       "source_note": "Recovered 2014 salary and bonus allocations plus the $150,000 workout bonus. The original deal ends after 2014; no real 2015 replacement deal is imported.",
       "sources": [
         "career/2014/offseason/contract_table.md",
@@ -2945,13 +2940,11 @@
       "accrued_seasons": "Through 2012: 3. 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "known",
-          "cap": 4264000,
-          "base": 2571500,
-          "proration": 1542500,
-          "other_cap": 150000,
-          "cash": 2721500,
-          "guaranteed_base": 0
+          "status": "not_committed",
+          "cap": null,
+          "base": null,
+          "proration": null,
+          "cash": null
         },
         "2015": {
           "status": "not_committed",
@@ -3032,7 +3025,10 @@
         }
       },
       "guarantee_basis": "simulation reconstruction",
-      "schedule_basis": "Executed branch terms / researched original schedule"
+      "schedule_basis": "Executed branch terms / researched original schedule",
+      "former_player": true,
+      "departure_date": "2014-03-24",
+      "departure_source": "career/2014/ledger.md"
     },
     {
       "name": "C.J. Mosley",
@@ -7836,6 +7832,20 @@
       "amount": 2189000,
       "status": "reconstructed",
       "basis": "Pre-June 1 trade to Arizona, March 20, 2014 (Entry 99): the 2014 and 2015 bonus allocations of $1,094,500 each accelerate into 2014. His $1,000,000 March 25 roster bonus passes to Arizona."
+    },
+    {
+      "player": "Tyson Alualu",
+      "year": 2014,
+      "amount": 1542500,
+      "status": "reconstructed",
+      "basis": "Pre-June 1 trade to Houston, March 24, 2014 (Entry 102): the final $1,542,500 original bonus allocation stays with Jacksonville in 2014. Houston takes his $2,571,500 base and $150,000 other components."
+    },
+    {
+      "player": "Jason Babin",
+      "year": 2014,
+      "amount": 0,
+      "status": "reconstructed",
+      "basis": "Trade to Miami, March 24, 2014 (Entry 102): no Jacksonville bonus proration on the claimed Philadelphia contract, so no dead money. Miami takes the 2014 and 2015 schedules."
     }
   ],
   "amendments": [

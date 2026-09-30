@@ -1,6 +1,6 @@
 # Jacksonville Jaguars 2014 depth chart (working view)
 
-**As of:** March 20, 2014 (ledger Entry 99: Cain re-signed; Nwaneri traded to Arizona).
+**As of:** March 24, 2014 (ledger Entry 102: Babin traded to Miami, Alualu to Houston; Entry 99: Cain re-signed; Nwaneri traded to Arizona).
 **Status:** carried from the closed 2013 chart minus players whose control ended on March 11; no 2014 depth decision has been made. Removing a player moves those below him up without a reorder. Stone owns the order and changes it only by decision.
 **Machine-readable copy:** [offseason/depth_chart_working.json](offseason/depth_chart_working.json), same schema as [the 2013 chart](../2013/depth_chart.json) plus contract flags, the March 11 additions and this update log.
 **Sources:** [2013 depth chart](../2013/depth_chart.json) (Git `781213a`, effective January 6, 2014, AFC Divisional preparation); [current roster](../2013/roster.md); [current contract status register](offseason/contract_status_register.md); [Caldwell's pre-tag-window verifications](offseason/caldwell_pre_tag_verifications.md); ledger Entries 79 and 85 through 89. The January chart supplies the carried order; the current roster and register supply control and availability.
@@ -78,15 +78,13 @@ The kernel group is one OL list. Brad Meester (C) is removed: retired (Entry 79)
 | Order | Player | Pos | Contract flag | 2013 recorded role | Availability |
 |---:|---|---|---|---|---|
 | 1 | Sen'Derrick Marks | DT | Under contract through 2017 (re-signed March 11, Entry 95) | Starting DT | No communicated restriction |
-| 2 | Jason Babin | DE | Under contract | Edge 1 | No communicated restriction |
-| 3 | Roy Miller | DT | Under contract | Starting DT | No communicated restriction |
-| 4 | Tyson Alualu | DT | Under contract | DT rotation | No communicated restriction |
-| 5 | C.J. Mosley | DT | Under contract | Interior DL rotation (dressed from Week 11) | No communicated restriction |
-| 6 | Jeremy Mincey | DE | Under contract | Edge 2 | No communicated restriction |
-| 7 | Andre Branch | DE | Under contract | Edge 3 | No communicated restriction |
-| 8 | Ryan Davis | DE | Under contract | Edge 4 | No communicated restriction |
-| 9 | Jeris Pendleton | DT | Under contract | None recorded | No communicated restriction |
-| 10 | Lavar Edwards | DE | Under contract | Edge/front depth and teams (dressed Weeks 12 and 14-17; inactive Week 13) | No communicated restriction |
+| 2 | Roy Miller | DT | Under contract | Starting DT | No communicated restriction |
+| 3 | C.J. Mosley | DT | Under contract | Interior DL rotation (dressed from Week 11) | No communicated restriction |
+| 4 | Jeremy Mincey | DE | Under contract | Edge 2 | No communicated restriction |
+| 5 | Andre Branch | DE | Under contract | Edge 3 | No communicated restriction |
+| 6 | Ryan Davis | DE | Under contract | Edge 4 | No communicated restriction |
+| 7 | Jeris Pendleton | DT | Under contract | None recorded | No communicated restriction |
+| 8 | Lavar Edwards | DE | Under contract | Edge/front depth and teams (dressed Weeks 12 and 14-17; inactive Week 13) | No communicated restriction |
 | Added, not placed | Daniel Te'o-Nesheim | DE | Signed March 18, 2014 (three years, Entry 98) | None assigned (signed as the veteran edge rusher) | No communicated restriction |
 | Added, not placed | Jerome Long | DT | Reserve/future (effective March 11) | None assigned | No communicated restriction |
 | Added, not placed | D'Anthony Smith | DT | Reserve/future (effective March 11) | None assigned | No communicated restriction |
@@ -128,17 +126,17 @@ The kernel group is one OL list. Brad Meester (C) is removed: retired (Entry 79)
 
 Mike Westhoff has coordinated special teams since February 11, 2014 (Entry 84). No 2014 returner, coverage-unit or specialist decision has been made.
 
-## Counts at March 20, 2014 (Entry 99)
+## Counts at March 24, 2014 (Entry 102)
 
 | Group | Count |
 |---|---:|
-| Players on the carried chart | 44 |
+| Players on the carried chart | 42 |
 | of whom tendered RFA or ERFA (unsigned) | 4 |
 | Added, not placed (six futures, Verner, Talib, Nicks, Hawkins and Te'o-Nesheim) | 11 |
-| **Controlled players** | **55** |
-| Removed since the 2013 chart (Meester, the seven other March 11 departures and Nwaneri) | 9 |
+| **Controlled players** | **53** |
+| Removed since the 2013 chart (Meester, the seven other March 11 departures, Nwaneri, Babin and Alualu) | 11 |
 
-Roles open: QB2 (Henne), the lead back (Jones-Drew), TE3 (Reisner), the corner places of Brent Grimes and Ball, and starting left guard (Nwaneri, traded March 20). Cain is back at long snapper. Marks is back at his carried place. The chart does not fill open roles: those are Stone's decisions.
+Roles open: QB2 (Henne), the lead back (Jones-Drew), TE3 (Reisner), the corner places of Brent Grimes and Ball, starting left guard (Nwaneri, traded March 20) and the carried Edge 1 role (Babin, traded March 24). Cain is back at long snapper. Marks is back at his carried place. The chart does not fill open roles: those are Stone's decisions.
 
 Brandon King and Will Ta'ufo'ou were never on the 2013 chart and are not Jacksonville players (Entry 85). The 2013 game-day inactive list is weekly and is not carried.
 
@@ -158,6 +156,7 @@ Add a row for every signing, tag, tender, trade, release, retirement, draft pick
 | March 18, 2014 | Replay: Nicks and Hawkins signed | Entry 97 | Both added, not placed; no order change |
 | March 18, 2014 | Replay: Te'o-Nesheim signed | Entry 98 | Added, not placed; no order change |
 | March 20, 2014 | Cain re-signed; Nwaneri traded | Entry 99 | Cain back in the LS slot; Nwaneri (OL 2, starting LG) removed and the linemen below him move up one without a reorder; the left guard job is open |
+| March 24, 2014 | Babin and Alualu traded | Entry 102 | Babin (DL 2) and Alualu (DL 4) removed; the linemen below each move up without a reorder; the carried Edge 1 role is open |
 
 ## Maintaining the game-input copy
 

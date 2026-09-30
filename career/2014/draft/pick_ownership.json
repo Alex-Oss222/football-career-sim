@@ -278,6 +278,33 @@
       "basis": "Package I trade with Arizona, March 20, 2014; ledger Entry 99",
       "source": "career/2014/trades/trades.md",
       "effective_date": "2014-03-20"
+    },
+    {
+      "draft_year": 2015,
+      "round": 3,
+      "original_club": "Miami Dolphins",
+      "owner": "Jacksonville Jaguars",
+      "basis": "Package D trade, March 24, 2014; 2014 ledger Entry 102",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-03-24"
+    },
+    {
+      "draft_year": 2017,
+      "round": 7,
+      "original_club": "Jacksonville Jaguars",
+      "owner": "Miami Dolphins",
+      "basis": "Package D trade, March 24, 2014; 2014 ledger Entry 102",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-03-24"
+    },
+    {
+      "draft_year": 2015,
+      "round": 4,
+      "original_club": "Houston Texans",
+      "owner": "Jacksonville Jaguars",
+      "basis": "Package E trade, March 24, 2014; 2014 ledger Entry 102",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-03-24"
     }
   ],
   "audited_year": 2014,

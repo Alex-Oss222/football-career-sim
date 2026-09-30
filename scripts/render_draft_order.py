@@ -70,7 +70,7 @@ def render():
         mine = [p for p in awards["picks"] if p["club"] == "Jacksonville Jaguars"]
         comp_note = (f" Jacksonville received **{len(mine)} compensatory picks**" + (": " + ", ".join(str(p["overall"]) for p in mine) if mine else "") + "; see [Compensatory selections](#compensatory-selections).")
     lines += ["", f"Jacksonville currently owns **{len(owned)} ordinary 2014 picks**: {owned_labels}.{comp_note} No prospect is selected by this inventory.", "",
-              "| Future asset already conveyed | Current owner | Overall pick | Authority |",
+              "| Future pick transferred | Current owner | Overall pick | Authority |",
               "|---|---|---|---|"]
     for asset in register["transfers"]:
         if asset["draft_year"] > 2014:

@@ -1,6 +1,6 @@
 # Jacksonville 2014 trades
 
-**Prepared at February 2, 2014, after Entry 81; window opened March 11, 2014 at 4 p.m. ET (Entry 94).** Package I completed March 20 (Entry 99): Nwaneri and three future picks to Arizona for No. 38. D (Babin to Miami) is offered with its answer open; E (Alualu) is live. No trade has closed, and no player, pick or cap saving has moved.
+**Prepared at February 2, 2014, after Entry 81; window opened March 11, 2014 at 4 p.m. ET (Entry 94).** Package I completed March 20 (Entry 99): Nwaneri and three future picks to Arizona for No. 38. On March 24 (Entry 102; [resolution log](march_24_2014_trade_resolution.md)) package D sent Babin and the 2017 seventh to Miami for its 2015 third, and package E sent Alualu to Houston for its 2015 fourth. Package G (Allen to Arizona for its 2015 fourth) is agreed in principle, pending Posluszny's actual clearance by April 21 and Allen's physical. F2 waits for the draft; A and H are not triggered. The [March 24 trade sheets](trade_sheets_2014-03-24.md) are superseded proposals.
 
 | Record | Owns |
 |---|---|

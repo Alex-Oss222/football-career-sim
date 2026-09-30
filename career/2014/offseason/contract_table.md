@@ -1,6 +1,6 @@
 # Jacksonville Jaguars 2014 contract table
 
-**As of:** March 24, 2014 (ledger Entry 100, compensatory picks announced with no contract change; ledger Entry 99; the March 2014 free-agency replay corrects Entry 94's first-pass draws). Replay signings: Monroe, Marks, Verner (Entry 95), Talib (Entry 96), Nicks and Hawkins (Entry 97), Te'o-Nesheim (Entry 98) and Cain (Entry 99). Nwaneri was traded to Arizona for No. 38 (Entry 99). Tate chose Detroit and Edelman New England; the four RFA/ERFA tenders stand.
+**As of:** March 24, 2014 (ledger Entry 102: Babin traded to Miami and Alualu to Houston; ledger Entry 100, compensatory picks announced with no contract change; ledger Entry 99; the March 2014 free-agency replay corrects Entry 94's first-pass draws). Replay signings: Monroe, Marks, Verner (Entry 95), Talib (Entry 96), Nicks and Hawkins (Entry 97), Te'o-Nesheim (Entry 98) and Cain (Entry 99). Nwaneri was traded to Arizona for No. 38 (Entry 99). Tate chose Detroit and Edelman New England; the four RFA/ERFA tenders stand.
 **Nature:** derived view. It executes no signing, tag, tender, release, trade or extension, certifies no cap room and reflects the adopted reconstruction in Entry 91. The [contract status register](contract_status_register.md) owns each player's status; the [2014 preparation worksheet](current_cap_worksheet.md) owns reconciliation; Caldwell owns contract decisions (Document 3).
 **Baseline:** [2013 initial cap sheet](../../2013/offseason/initial_cap_sheet.md) (per-player 2013 rows, Git `e04dd82`); [2013 regular-season worksheet](../../2013/offseason/current_cap_worksheet.md) and its May 5 version (Git `d25c8cf`); [2013 free-agency signings](../../2013/offseason/free_agency/signings.md); [2013 draftees](../../2013/offseason/draft/draftees.md); [2013 undrafted signings](../../2013/offseason/draft/udfa_signings.md); [2013 trades](../../2013/trades/trades.md); [current contract status register](contract_status_register.md); [Caldwell's pre-tag-window verifications](caldwell_pre_tag_verifications.md) (Git `9ca804c`); [2014 free-agency outcomes](free_agency/signings.md); ledger Entries 3, 4, 7, 9, 79, 80 and 85 through 89. Historical Git references identify the original financial baselines; current status follows the latest register and executed outcomes.
 
@@ -25,6 +25,7 @@ Add a row, and change the affected player rows and summaries, for every signing,
 | March 18, 2014 | Replay: Nicks and Hawkins signed; Edelman declined | Entry 97 | Nicks (1 year, up to $5.0M, $4.5M guaranteed; 2014 cap budget $5,000,000) and Hawkins (4 years, $15.6M, $8.0M guaranteed; $2,800,000) added. Rows: 54 |
 | March 18, 2014 | Replay: Te'o-Nesheim signed | Entry 98 | Te'o-Nesheim (3 years, up to $13.5M, $6.0M guaranteed; 2014 cap $3,000,000) added. Rows: 55 |
 | March 20, 2014 | Cain re-signed; Nwaneri traded | Entry 99 | Cain (1 year, $855,000) added; Nwaneri removed (traded to Arizona in package I); $2,189,000 of his bonus proration accelerates to 2014 dead money. Rows: 55 |
+| March 24, 2014 | Babin and Alualu traded | Entry 102 | Babin removed (traded to Miami, package D; no Jacksonville dead money); Alualu removed (traded to Houston, package E; his final $1,542,500 bonus allocation stays as 2014 dead money). Rows: 53 |
 | March 24, 2014 | 2014 compensatory picks announced | Entry 100 | No contract row changes; Jacksonville received no compensatory pick. Its later draft rights renumber to 129, 153, 168, 205 and 241 in the financial inputs; no rookie contract is booked before a selection |
 
 <a id="1-how-to-read-this-table"></a>
@@ -41,7 +42,7 @@ Add a row, and change the affected player rows and summaries, for every signing,
 
 <a id="2-controlled-players-under-contract-for-2014-51"></a>
 
-## Controlled players under contract for 2014 (51)
+## Controlled players under contract for 2014 (49)
 
 <a id="2a-branch-contracts-21"></a>
 
@@ -75,7 +76,7 @@ The UDFA total value is the sum of the three recorded bases ($405,000, $495,000 
 
 <a id="2b-inherited-contracts-running-through-2014-or-later-22"></a>
 
-### Inherited contracts running through 2014 or later (22)
+### Inherited contracts running through 2014 or later (20)
 
 | Player | Pos | Contract type | Signed | Years / final league year | Total value | Signing bonus; annual proration; years left | 2014 base | 2014 roster / workout / other bonuses | 2014 guarantees | 2014 cap charge | Dead money if released before June 1 | 2014 status | 2013 cap charge (baseline) | Source and status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -85,11 +86,9 @@ The UDFA total value is the sum of the three recorded bases ($405,000, $495,000 
 | Mark Asper | G | Rookie (Buffalo, 2012 sixth round), carried by waiver claims | 2012 | 4 / 2015 | $2,213,452 original four-year deal | $113,452 original Buffalo bonus; Jacksonville proration $0 | $570,000 | None in recovered schedule | No remaining guaranteed base salary established in the recovered schedule | $570,000 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | Unresolved (no 2013 row) | Sourced schedule / stated reconstruction; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#mark-asper) |
 | Will Rackley | G | Rookie, 2011 third round | 2011 | 4 / 2014 | $2,914,274 | $619,472 signing bonus; final 2014 allocation $154,868 | About $1,431,000 | None in recovered schedule | Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap. | $1,585,868 | $154,868 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | $794,802 | Planning estimate; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#will-rackley); adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
 | Mike Brewster | C | UDFA, 2012 (Jacksonville) | 2012 | 3 / 2014 | $1,450,000 | $10,000 signing bonus; final 2014 allocation $3,334 | $570,000 | None in recovered schedule | No remaining guaranteed base salary established in the recovered schedule | $573,334 | $3,334 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | Unresolved (no 2013 row) | Sourced schedule / stated reconstruction; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#mike-brewster) |
-| Jason Babin | DE | Veteran (Philadelphia, 2011), carried by December 2012 waiver claim | 2011 | 5 / 2015 | $28,325,000 | No Jacksonville proration on the claimed Philadelphia contract | About $6,000,000 | $175,000 scheduled other cap components | Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap. | $6,175,000 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | $4,325,000 | Planning estimate; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#jason-babin); adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
 | Andre Branch | DE | Rookie, 2012 second round | 2012 | 4 / 2015 | $5,089,934 | $2,141,768 signing bonus; $535,442 annually through 2015 | $827,722 | $25,000 scheduled other cap components | No remaining guaranteed base salary established in the recovered schedule | $1,388,164 | $1,070,884 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | $1,156,803 | Sourced schedule / stated reconstruction; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#andre-branch) |
 | Ryan Davis | DE | Reserve/future, December 30, 2012 | December 30, 2012 | 2 / 2014 | $900,000 | $0 signing bonus or proration | $495,000 | None in recovered schedule | No remaining guaranteed base salary established in the recovered schedule | $495,000 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | Unresolved (no 2013 row) | Sourced schedule / stated reconstruction; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#ryan-davis) |
 | Jeremy Mincey | DE | Veteran, 2012 | 2012 | 4 / 2015 | $20,000,000 ($9,000,000 guaranteed at signing) | $8,000,000 signing bonus; $2,000,000 annually through 2015 | About $4,475,000 | $25,000 scheduled other cap components | Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap. | $6,500,000 | $4,000,000 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | $3,550,000 | Planning estimate; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#jeremy-mincey); adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
-| Tyson Alualu | DT | Rookie, 2010 first round | 2010 | 5 / 2014 | $21,399,000 | $1,542,500 original bonus allocation in the final 2014 year | $2,571,500 | $150,000 scheduled other cap components | Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap. | $4,264,000 | $1,542,500 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | $3,615,000 | Sourced schedule / stated reconstruction; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#tyson-alualu); adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
 | C.J. Mosley | DT | Veteran, 2012 | 2012 | 3 / 2014 | $7,500,000 base deal; up to $10,000,000 with incentives | $1,000,000 signing bonus; final-year allocation estimated at $333,334 | About $2,725,000 | $25,000 scheduled other cap components | Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap. | $3,083,334 | $333,334 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | Unresolved (no 2013 row) | Planning estimate; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#cj-mosley); adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
 | Jeris Pendleton | DT | Rookie, 2012 seventh round | 2012 | 4 / 2015 | $2,151,392 ($51,392 guaranteed at signing) | $51,392 signing bonus; $12,848 annually through 2015 | $570,000 | None in recovered schedule | No remaining guaranteed base salary established in the recovered schedule | $582,848 | $25,696 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | Unresolved (no 2013 row) | Sourced schedule / stated reconstruction; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#jeris-pendleton) |
 | Russell Allen | LB | Veteran, 2012 | 2012 | 3 / 2014 | $6,000,000 | $1,250,000 signing bonus; final 2014 allocation $416,668 | About $1,975,000 | $25,000 scheduled other cap components | Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap. | $2,416,668 | $416,668 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract; real retirement dated April 22, 2014 applies when the clock reaches it (Entry 79) | $2,816,666 | Planning estimate; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#russell-allen); adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
@@ -123,7 +122,7 @@ All six futures minimums are now priced using Article 26 credited service, recon
 
 <a id="3-contracts-and-rights-that-ended-9"></a>
 
-## Contracts and rights that ended (9)
+## Contracts and rights that ended (11)
 
 These players are no longer under Jacksonville control. Their 2013 rows remain in the [2013 records](../../2013/offseason/current_cap_worksheet.md); no 2014 charge is booked. Offers still outstanding are Caldwell's recorded offers, not contracts.
 
@@ -138,6 +137,8 @@ These players are no longer under Jacksonville control. Their 2013 rows remain i
 | Kevin Rutland | CB | Not tendered; unrestricted |
 | Brad Meester | C | Retired (Entry 79); contract expired |
 | Uche Nwaneri | G | Traded to Arizona March 20, 2014 (package I, Entry 99); $2,189,000 of bonus proration accelerated to 2014 |
+| Jason Babin | DE | Traded to Miami March 24, 2014 (package D, Entry 102) with Jacksonville's 2017 seventh for Miami's 2015 third; no Jacksonville dead money |
+| Tyson Alualu | DT | Traded to Houston March 24, 2014 (package E, Entry 102) for Houston's 2015 fourth; $1,542,500 bonus allocation stays as 2014 dead money |
 
 <a id="4-tendered-players-4"></a>
 
@@ -158,19 +159,19 @@ Each tender was made before 4 p.m. ET March 11 and is unsigned; an unsigned tend
 
 <a id="5a-counts-by-2014-status-march-20-2014-entry-99"></a>
 
-### Counts by 2014 status (March 20, 2014, Entry 99)
+### Counts by 2014 status (March 24, 2014, Entry 102)
 
 | Status | Count |
 |---|---:|
-| Under contract, continuing | 37 |
+| Under contract, continuing | 35 |
 | Under contract, reserve/future (effective March 11) | 6 |
 | Under contract, signed in the replay (Monroe, Marks, Verner, Talib, Nicks, Hawkins, Te'o-Nesheim, Cain) | 8 |
 | Tendered RFA (lowest, not signed) | 1 |
 | Tendered ERFA (not signed) | 3 |
-| **Controlled rows** | **55** |
-| Contracts and rights ended (section 3) | 9 |
+| **Controlled rows** | **53** |
+| Contracts and rights ended (section 3) | 11 |
 
-The 55 controlled rows match the register and the roster.
+The 53 controlled rows match the register and the roster.
 
 <a id="5b-working-2014-cap-charges"></a>
 
@@ -178,17 +179,17 @@ The 55 controlled rows match the register and the roster.
 
 | Component | Players | 2014 amount |
 |---|---:|---:|
-| Signed contracts and futures | 51 | $123,328,321 |
+| Signed contracts and futures | 49 | $112,889,321 |
 | Unsigned tenders (Bradfield $1,431,000; Clemons and Pasztor $570,000 each; Brown $495,000) | 4 | $3,066,000 |
-| Player contracts including tenders | 55 | $126,394,321 |
-| Dead money (Bray $51,675; Nwaneri $2,189,000) | | $2,240,675 |
-| Recorded obligations, all 55 players | | $128,634,996 |
-| Less three $420,000 minimums (Long, Jerrell Jackson, Bray) and one $495,000 minimum outside the offseason Top 51 | | -$1,755,000 |
-| Offseason Top-51 obligations plus dead money | | $126,879,996 |
+| Player contracts including tenders | 53 | $115,955,321 |
+| Dead money (Bray $51,675; Nwaneri $2,189,000; Alualu $1,542,500) | | $3,783,175 |
+| Recorded obligations, all 53 players | | $119,738,496 |
+| Less two of the three $420,000 minimums (Long, Jerrell Jackson, Bray) outside the offseason Top 51 | | -$840,000 |
+| Offseason Top-51 obligations plus dead money | | $118,898,496 |
 | League-year opening offseason-workout charge (2,880 x $175, CBA Article 13 section 5(g)) | | $504,000 |
-| Working total | | $127,383,996 |
+| Working total | | $119,402,496 |
 
-Against the $133,000,000 league cap the working difference is **$5,616,004**, before the unresolved carryover, rookies, further signings and reserves. The Nwaneri trade removed about $5,894,500 and left $2,189,000 of dead money; Cain added $855,000. The eight replay contracts total $35,805,000 of 2014 cap. Not certified room.
+Against the $133,000,000 league cap the working difference is **$13,597,504**, before the unresolved carryover, rookies, further signings and reserves. The Babin trade removed about $6,175,000 with no dead money; the Alualu trade removed $4,264,000 and left $1,542,500 of dead money; with two fewer players, one $420,000 and the $495,000 minimum return inside the Top 51. Earlier, the Nwaneri trade removed about $5,894,500 and left $2,189,000 of dead money; Cain added $855,000. The eight replay contracts total $35,805,000 of 2014 cap. Not certified room.
 
 <a id="5c-dead-money-carried-into-2014"></a>
 
@@ -198,6 +199,8 @@ Against the $133,000,000 league cap the working difference is **$5,616,004**, be
 |---|---:|---|
 | Tyler Bray | $51,675 | Three remaining $17,225 allocations after the August 2013 waiver; separate from the new futures deal |
 | Uche Nwaneri | $2,189,000 | Pre-June 1 trade to Arizona, March 20, 2014 (Entry 99): the 2014 and 2015 bonus allocations of $1,094,500 accelerate |
+| Tyson Alualu | $1,542,500 | Pre-June 1 trade to Houston, March 24, 2014 (Entry 102): the final original bonus allocation stays with Jacksonville |
+| Jason Babin | $0 | Trade to Miami, March 24, 2014 (Entry 102): no Jacksonville proration on the claimed Philadelphia contract |
 | Brandon Marshall | $0 | Original rookie bonus accelerated following a 2012 waiver; replacement deal modeled without a new bonus |
 | Austen Lane | $0 | Original four-year 2010 deal ended in 2013 |
 | Isaiah Stanback | $0 | Replacement minimum contract modeled without a signing bonus |

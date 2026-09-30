@@ -17,3 +17,46 @@ Player finances use the existing contract input with a nine-year main display an
 The annual handoff manifest tracks team closeout, interviews, finances, roles/medical, staff, assets and development separately from league statistics and awards closure. Preparation cannot renew contracts, clear injuries, copy prior statistics into new totals or authorize a game. Stone and Caldwell retain their established decision authority. The runtime routes 2015/2016 explicitly and blocks unregistered game releases.
 
 **Commit closed - Canonical update - March 24, 2014 - Historical schedule and annual handoff - canonical through March 24, 2014**
+
+## Entry 102 — March 24, 2014 — Babin to Miami and Alualu to Houston; Allen agreed in principle
+
+**Recorded:** September 30, 2026. **Simulation clock:** unchanged, March 24, 2014.
+**Checkpoint:** `Canonical update - March 24, 2014 - Babin and Alualu traded`
+**Preceding global package checkpoint:** `Canonical update - March 24, 2014 - Historical schedule and annual handoff`
+
+**Authority and method.** The user resolved packages D, E and G in their own trade-dynamics framework. It simulates real club behavior outside the repository, as the March 2014 free-agency replay did. Event owner: [the resolution log](trades/march_24_2014_trade_resolution.md), with the [completed trades](trades/trades.md) and [offer log](trades/trade_offers.md). An earlier unapproved run of D and E (the former pull request 161) was discarded before merge at the user's direction and never became canon. The [March 24 trade sheets](trades/trade_sheets_2014-03-24.md) are superseded proposals.
+
+**Package D, completed.**
+- **Terms:** Jason Babin (DE) and Jacksonville's 2017 seventh go to Miami for Miami's unconditional 2015 third. It is a straight trade; the earlier appearance condition is removed.
+- **Closing:** Babin passed Miami's physical.
+- **Cap:** his $6,175,000 working charges come off in 2014 and 2015. There is no dead money.
+- **Pick control:** the 2017 seventh is Miami's and unavailable for any later transaction.
+
+**Package E, completed.**
+- **Terms:** Tyson Alualu (DT) goes to Houston for Houston's unconditional 2015 fourth.
+- **Closing:** Alualu passed Houston's physical.
+- **Cap:** his $4,264,000 2014 charge comes off. His final $1,542,500 bonus allocation stays with Jacksonville as 2014 dead money.
+
+**Package G, agreed in principle.**
+- **Terms:** Russell Allen (LB) to Arizona for its unconditional 2015 fourth.
+- **Closing conditions:** it closes only on Paul Posluszny's actual medical clearance by April 21, Allen passing Arizona's physical and league processing. The April 5 projection is not clearance. Otherwise it expires unexecuted.
+- **Until it closes:** Allen stays a Jaguar on the roster and depth chart with his cap charge, and the pick stays Arizona's.
+
+**Package F2, blocked** until Jacksonville actually drafts two offensive linemen.
+
+**Effects.**
+- **Roster:** controlled roster 53: 49 signed and four unsigned tenders.
+- **2014 cap:** scheduled player cap $115,955,321 including tenders, plus $3,783,175 dead money (Bray $51,675, Nwaneri $2,189,000, Alualu $1,542,500). Two $420,000 minimums fall outside the offseason Top 51, giving $118,898,496. With the $504,000 workout charge the working total is $119,402,496, a $13,597,504 working difference before carryover, rookies and reserves. This is not certified room.
+- **2015 commitments:** $104,385,637.
+- **Draft:** the 2014 picks are unchanged: 13, 26, 38, 90, 129, 153, 168, 205 and 241. Future picks gained: Miami's 2015 third and Houston's 2015 fourth; lost: Jacksonville's 2017 seventh.
+- **Depth chart:** Babin (DL 2) and Alualu (DL 4) are removed without a reorder. The carried Edge 1 role is open for Stone.
+
+**Open.**
+- Schedule filing (selected in Entry 101) due by March 31.
+- Package G's conditions (by April 21).
+- Henne; Jones-Drew and C.J. Wilson resolve March 28.
+- Shorts's extension and the left-guard and Edge 1 roles are Stone's decisions.
+
+**Atomic closure.** The resolution log, completed trades, offer log, targets and README, pick register and draft order, contract table, cap worksheet, financial inputs and generated cap views, roster, working depth chart and its JSON copy, the Miami, Houston and Oakland rails pages, calendar, the 2014 README, readiness, operating baseline and Documents 4 and 5 agree. The private snapshot is advanced only after merge.
+
+**Commit closed - Canonical update - March 24, 2014 - Babin and Alualu traded - canonical through March 24, 2014**
