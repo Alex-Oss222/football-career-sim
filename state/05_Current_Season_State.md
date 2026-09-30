@@ -146,19 +146,20 @@ From [the 2014 calendar](../career/2014/calendar.md):
 | July 30 | First full-pad practice (selected historical date) | First lawful contact evidence for every open question, in the coordinators' order set at the July 27 review ([camp record](../career/2014/training_camp_and_preseason/training_camp/training_report.md#july-27-first-staff-review)) |
 | August 2 | Scrimmage (selected historical date) | Substitution, changed pictures and sideline operation within the installed menu; the larger family night closes the block |
 | August 5 to 7 | Game-week preparation for Tampa Bay | Reduce to an executable menu, define the players and units under evaluation, freeze the ex-ante plan; no outcome pre-written |
-| August 8, 7:30 p.m. | Preseason game 1, Tampa Bay at Jacksonville | Cannot be played until the 2014 release gates close: `runtime/season_readiness.json` shows tier1_engine, season_rules, season_closure, legal_rosters and financial_control BLOCKED, and the 2014 game depth chart and Week 1 depth-chart library are not built ([game readiness](game_readiness.md)) |
+| August 8, 7:30 p.m. | Preseason game 1, Tampa Bay at Jacksonville | Cannot be played until the 2014 release gates close: `runtime/season_readiness.json` shows tier1_engine, season_rules, season_closure, legal_rosters and financial_control BLOCKED, the 2014 game depth chart is not built, and the background Week 1 depth-chart library is prepared but gated until September 7 ([game readiness](game_readiness.md)) |
 | August 14, 8 p.m. / August 22, 7:30 p.m. | Preseason games 2 and 3, at Chicago and at Detroit | Same release gates |
 | August 19 | Practice-squad expansion to 10 becomes public | Gated; the eight-player rule governs until then |
 | August 26, 4 p.m. / August 30, 4 p.m. | Cut to 75 / cut to 53 | Caldwell; no automatic cuts |
 | August 28 | Preseason game 4, Atlanta at Jacksonville | Same release gates; kickoff pending dated notice |
 | August 31, noon | Waiver claiming period expires; practice-squad signings | Eligibility and waiver status confirmed first; squad size follows the August 19 rule |
-| September 7 | Week 1 at Philadelphia | Other clubs' real Week 1 depth charts built at their September gate; captains named before Week 1 |
+| September 7 | Week 1 at Philadelphia | The 31 background clubs' Week 1 depth-chart library is prepared research ([record](../library/2014_week1_depth_charts.md); September 30, 2026) and becomes usable background input only when the clock reaches this date; rebuild it for any branch transaction after July 29 before Week 1 inputs are frozen. Captains named before Week 1 |
 
 User decisions owed: the engine release, in progress in a separate branch, before any 2014 game (`runtime/defect_register.md` lists the items; none is resolved here). The camp opening surfaced no new user-controlled football choice: no competition, place, role or transaction was decided, and none is required before July 30.
 
 ## 10. Engine and 2014 readiness
 
 - Installed kernel: 2014.3. Kernel 2014.1 tracks timeouts, conditions late draws on them, keeps kneel drives in their start zone and publishes goal-to-go distances; the two-minute warning and play clock remain embedded in real drive durations. Kernel 2014.2 conditions late-game category weights on the start zone and lets late cells borrow feasible drives from the same need. Kernel 2014.3 adds credit-only rules (sacks allowed, coverage tackles, long snaps, line starts, one club returner) and the Pro Bowl game type, with every result identical to 2014.2.
+- The 2014 background Week 1 depth-chart library (`library/data/2014_week1_depth_charts.json`, 31 clubs reconciled to the July 29 roster, the draft pairing, the branch trades and the retirements) is prepared and gated until September 7, 2014; `legal_rosters` stays BLOCKED for Jacksonville's game depth chart and cutdown control.
 - `runtime/defect_register.md` ranks the open engine defects for the user's decision before any 2014 game; the first is that every club carries the same Average strength.
 - Explicit season routing and `runtime/season_readiness.json` enforce the open release requirements even if the private service is reachable. The dated fixtures are frozen from the April 23 release. The Tier 1 engine fixes, rules, legal inputs and accepted end-to-end closure remain outstanding. See the [readiness and handoff checklist](../career/2014/supporting_records/readiness.md).
 
