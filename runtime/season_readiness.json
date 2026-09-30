@@ -7,7 +7,7 @@
         {
           "id": "tier1_engine",
           "status": "BLOCKED",
-          "remaining": "Kernel 2014.4 candidate implements E1 (first pass), E2, the half-final clock, the ledger-walked chains and the sourced injury model, and passed its synthetic acceptance (runtime/README.md, kernel 2014.4 candidate acceptance). Awaiting the user's result-changing release decision: flip KERNEL_VERSION and the service KERNEL to 2014.4, deploy and verify the live private runtime, wire the weekly closure to the E2 pause, then accept this gate with that evidence.",
+          "remaining": "Kernel 2014.4 candidate implements E1 (honours plus two-pass verified pre-divergence production tiers, lineup composites, tier-weighted attribution), E2, the half-final clock, the ledger-walked chains and the sourced injury model, and passed its synthetic acceptance and a synthetic slate over the real 2014 inventory (runtime/README.md, kernel 2014.4 candidate second-pass acceptance). The composite explains about 67% of the target edge spread; offensive-line production, matchup sub-composites and special teams remain open. Awaiting the user's result-changing release decision: flip KERNEL_VERSION and the service KERNEL to 2014.4, deploy and verify the live private runtime, wire the weekly closure to the E2 pause, then accept this gate with that evidence. No 2014 game runs before that.",
           "evidence": [
             "runtime/defect_register.md",
             "runtime/2014_engine_decisions.md",
