@@ -117,9 +117,10 @@ class CloseWeekPauseTests(unittest.TestCase):
         pause = record["pause"]
         self.assertEqual(pause["team"], JAX)
         self.assertEqual(pause["drive"], self.drive)
-        self.assertEqual([i["player"] for i in pause["injuries"]], ["A-QB1"])
-        self.assertEqual([d["slot"] for d in pause["decisions"]], ["A-QB1"])
-        self.assertIn("A-QB2", pause["decisions"][0]["eligible"])
+        # The store's seed is random per test, so a natural onset may share the drive.
+        self.assertIn("A-QB1", [i["player"] for i in pause["injuries"]])
+        quarterback = next(d for d in pause["decisions"] if d["slot"] == "A-QB1")
+        self.assertIn("A-QB2", quarterback["eligible"])
         text = close_week.describe_pause(record, record_path, 1, 2014)
         self.assertIn("removed: A-QB1", text)
         self.assertIn("--continue ANSWER.json", text)
@@ -132,9 +133,13 @@ class CloseWeekPauseTests(unittest.TestCase):
     def test_continue_resumes_the_same_event_and_closes_the_slate(self):
         _, paused = self.close()
         pause = paused["pause"]
-        choice = next(p for p in reversed(pause["decisions"][0]["eligible"]) if p != pause["decisions"][0]["default"])
+        quarterback = next(d for d in pause["decisions"] if d["slot"] == "A-QB1")
+        choice = next(p for p in reversed(quarterback["eligible"]) if p != quarterback["default"])
+        # Stone's answer names every pending slot: the depth default elsewhere, his choice at quarterback.
+        choices = {d["slot"]: d["default"] for d in pause["decisions"]}
+        choices["A-QB1"] = choice
         answer_path = Path(self.tmp.name) / "answer.json"
-        answer_path.write_text(json.dumps({"choices": {"A-QB1": choice}}))
+        answer_path.write_text(json.dumps({"choices": choices}))
         results, still_paused = self.close(close_week.load_answer(answer_path))
         while still_paused is not None:  # a later consequential removal: take the depth default
             defaults = {d["slot"]: d["default"] for d in still_paused["pause"]["decisions"]}
@@ -144,12 +149,12 @@ class CloseWeekPauseTests(unittest.TestCase):
         self.assertTrue(final["terminated"])
         self.assertEqual(validate_result(final), [])
         self.assertEqual(final["pauses"][0]["continuation_token"], pause["continuation_token"])
-        self.assertEqual(final["pauses"][0]["choices"], {"A-QB1": choice})
+        self.assertEqual(final["pauses"][0]["choices"], choices)
         sub = next(s for s in final["substitutions"] if s["removed"] == "A-QB1")
         self.assertEqual((sub["basis"], sub["replacement"]), ("coach_choice", choice))
         record = json.loads(self.paths.paused_game(1).read_text())
         self.assertEqual(record["status"], "closed")
-        self.assertEqual(record["decisions"][0]["choices"], {"A-QB1": choice})
+        self.assertEqual(record["decisions"][0]["choices"], choices)
         self.assertNotIn("partial", record)
         # The background game was drawn autonomously and once.
         self.assertTrue(results[BACKGROUND]["terminated"])
