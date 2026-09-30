@@ -13,6 +13,12 @@
 
 ## Position grades
 
+The user's latest instruction requests exact theoretical staff judgments for
+traits whose evidence is thin. State the grade directly and label the judgment
+basis; keep recorded facts and unresolved questions separate. Do not infer a
+measurement, future outcome or engine input from the visible number.
+Replace the blank template rows with exact grades when completing a player sheet.
+
 Use only the position rows defined in
 [library/annual_player_sheet_benchmark_method.md](../../library/annual_player_sheet_benchmark_method.md).
 Do not copy one generic athleticism card across positions.

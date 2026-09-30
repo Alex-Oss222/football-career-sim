@@ -12,7 +12,7 @@ from unittest.mock import patch
 from runtime.game_runner import (architecture_errors, build_game_packet,
                                  resolve_background_game,
                                  resolve_protagonist_game, run_game)
-from runtime.kernel import TeamInput
+from runtime.kernel import TeamInput, _append_evidence
 from runtime.player_evidence import PlayerInput
 from runtime.private_client import Client, PrivateRuntimeUnavailable
 from runtime.private_service import Store, handler
@@ -117,10 +117,41 @@ class ProductionGameRunnerTests(unittest.TestCase):
         packet=build_game_packet("labels-2","snapshot",self.home,self.away)
         self.assertNotIn("protagonist",str(packet).lower())
         self.assertNotIn("out",first["team_stats"]["A"]["players"])
-        self.assertTrue(any(x["unit"]=="special teams" for x in first["player_evidence"]))
+        # A private random game need not include a returned punt. Evidence must
+        # follow the observed coverage tackles, rather than inventing one to
+        # satisfy a fixture expectation.
+        covers=[x["cover_player"] for x in first["play_ledger"]
+                if x.get("play_type")=="punt" and x.get("cover_player")]
+        observed=[x["player"] for x in first["player_evidence"] if x["unit"]=="special teams"]
+        self.assertEqual(sorted(observed),sorted(covers))
         effort=[x for x in first["player_evidence"] if "observable_effort" in x]
-        self.assertTrue(effort)
         self.assertTrue(all("assignment_execution" in x or x["unit"]=="special teams" for x in effort))
+
+
+class SparsePlayerEvidenceTests(unittest.TestCase):
+    def test_returned_punt_records_only_the_named_coverage_tackle(self):
+        cover=PlayerInput("cover","LB",unit="defense",roles=("punt_coverage",))
+        evidence=[]
+        _append_evidence(evidence,[{"play_type":"punt","cover_player":"cover"}],(cover,),(),"punt")
+        self.assertEqual(len(evidence),1)
+        self.assertEqual(evidence[0]["unit"],"special teams")
+        self.assertEqual(evidence[0]["player"],"cover")
+        self.assertEqual(evidence[0]["special_teams_responsibility"],"tackle made on the return")
+        self.assertNotIn("observable_effort",evidence[0])
+        missing=[]
+        _append_evidence(missing,[{"play_type":"punt"}],(cover,),(),"punt")
+        self.assertEqual(missing,[])
+
+    def test_route_effort_requires_an_observed_nonturnover_route(self):
+        receiver=PlayerInput("receiver","WR")
+        evidence=[]
+        _append_evidence(evidence,[{"target":"receiver"}],(receiver,),(),"touchdown")
+        self.assertEqual(evidence[0]["assignment_execution"],"assignment held")
+        self.assertIn("observable_effort",evidence[0])
+        missing=[]
+        _append_evidence(missing,[],(receiver,),(),"punt")
+        _append_evidence(missing,[{"target":"receiver"}],(receiver,),(),"turnover")
+        self.assertEqual(missing,[])
 
 
 if __name__=="__main__": unittest.main()
