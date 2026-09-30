@@ -605,10 +605,6 @@ def validate_development_case(case: DevelopmentCase) -> None:
         raise ValueError(
             "development case requires dated/source evidence identifiers"
         )
-    if not any(domain in CAUSE_DOMAINS[cause] for cause in case.mechanisms):
-        raise ValueError(
-            f"mechanisms {case.mechanisms!r} do not support a {domain} change"
-        )
     if domain == "physical" and set(case.mechanisms) <= {
         "film_study",
         "scheme_continuity",
@@ -618,6 +614,10 @@ def validate_development_case(case: DevelopmentCase) -> None:
     }:
         raise ValueError(
             "knowledge, experience or role alone cannot change a physical trait"
+        )
+    if not any(domain in CAUSE_DOMAINS[cause] for cause in case.mechanisms):
+        raise ValueError(
+            f"mechanisms {case.mechanisms!r} do not support a {domain} change"
         )
 
 
