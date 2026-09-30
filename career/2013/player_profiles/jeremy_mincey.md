@@ -31,29 +31,29 @@
 
 ## Historical NFL benchmark
 
-| Trait | Sim player | vs. 2013 NFL average | vs. 2013 top reference | vs. 2013 low-end reference | Basis |
+| Trait | Player | vs. 2013 NFL average | vs. 2013 top reference | vs. 2013 low-end reference | Basis |
 | --- | --- | --- | --- | --- | --- |
-| Get-off | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Edge speed / bend | 4.5 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Power | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Hand use / counters | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Edge setting / run defense | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Block shedding | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Pursuit | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Rush plan / recognition | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Contain discipline | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Sacks (count, not pass-rush skill) | 1.0; branch defensive snaps unrecorded; qualification unknown | 5.7 | Robert Quinn: 19.0 | Stephen Bowen, Kedric Golston, Mike DeVito and 2 other tied players: 0.0 | 2013 DE; defense_snaps ≥ 300; n=61; production only |
-| Interceptions (count, not coverage skill) | 0.0; branch defensive snaps unrecorded; qualification unknown | 0.1 | Julius Peppers, Osi Umenyiora, Justin Tuck and 4 other tied players: 1.0 | Brett Keisel, Chris Clemons, Israel Idonije and 51 other tied players: 0.0 | 2013 DE; defense_snaps ≥ 300; n=61; production only |
-| Passes defended (count, not coverage skill) | 0.0; branch defensive snaps unrecorded; qualification unknown | 2.0 | Michael Johnson: 9.0 | Israel Idonije, Jason Babin, Antonio Smith and 14 other tied players: 0.0 | 2013 DE; defense_snaps ≥ 300; n=61; production only |
-| Archived 40-yard dash (physical proxy only) | No timed 2013 branch measurement recovered | Tested 2013 roster subset: 4.81 seconds | Fastest in tested subset: Dwight Freeney: 4.48 seconds | Slowest in tested subset: Damion Square: 5.23 seconds | n=120; testing positions/years vary; incomplete roster coverage; no game-speed grade |
+| Get-off | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Edge speed / bend | 4.5 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Power | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Hand use / counters | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Edge setting / run defense | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Block shedding | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Pursuit | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Rush plan / recognition | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Contain discipline | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Sacks (count, not pass-rush skill) | 1.0; defensive snaps unrecorded; qualification unknown | 5.7 | Robert Quinn: 19.0 | Stephen Bowen, Kedric Golston, Mike DeVito and 2 other tied players: 0.0 | 2013 DE; defense_snaps ≥ 300; n=61; production only |
+| Interceptions (count, not coverage skill) | 0.0; defensive snaps unrecorded; qualification unknown | 0.1 | Julius Peppers, Osi Umenyiora, Justin Tuck and 4 other tied players: 1.0 | Brett Keisel, Chris Clemons, Israel Idonije and 51 other tied players: 0.0 | 2013 DE; defense_snaps ≥ 300; n=61; production only |
+| Passes defended (count, not coverage skill) | 0.0; defensive snaps unrecorded; qualification unknown | 2.0 | Michael Johnson: 9.0 | Israel Idonije, Jason Babin, Antonio Smith and 14 other tied players: 0.0 | 2013 DE; defense_snaps ≥ 300; n=61; production only |
+| Archived 40-yard dash (physical proxy only) | No timed 2013 measurement recovered | Tested 2013 roster subset: 4.81 seconds | Fastest in tested subset: Dwight Freeney: 4.48 seconds | Slowest in tested subset: Damion Square: 5.23 seconds | n=120; testing positions/years vary; incomplete roster coverage; no game-speed grade |
 
-**Historical method and sources:** [2013 position research](../../../library/2013_player_sheet_research.md). Production comparisons use qualified individual-player means; they are not ability grades. A below-threshold branch sample has no peer standing. Defensive branch qualification is unknown because snaps were not recorded. Archived workout times are an incomplete tested subset from different years, not measured 2013 game speed.
+**Historical method and sources:** [2013 position research](../../../library/2013_player_sheet_research.md). Production comparisons use qualified individual-player means; they are not ability grades. A below-threshold sample has no peer standing. Defensive qualification is unknown because snaps were not recorded. Archived workout times are an incomplete tested subset from different years, not measured 2013 game speed.
 
 The technical grades and comparisons are my user-authorized theoretical judgments. My comparison standards are 6.0 for a viable NFL starter trait, 9.0 for an elite trait and 3.0 for a low-end trait. These are personnel yardsticks, not measured league means or verified grades for historical peers. Production references below the trait rows remain independently sourced statistics.
 
 ## Season production in context
 
-| Statistic | Branch regular season | Branch playoffs (two games) |
+| Statistic | 2013 regular season | 2013 playoffs |
 | --- | ---: | ---: |
 | G | 16 | 2 |
 | TOT | 15 | 0 |
@@ -67,15 +67,15 @@ The technical grades and comparisons are my user-authorized theoretical judgment
 | FF | 0 | 0 |
 | FR | 0 | 0 |
 
-**Source:** [generated branch statbook](../stats/team_player_stats.md). G means game-day active, not starts or measured snaps. Regular season and postseason are separate.
+**Source:** [generated statbook](../stats/team_player_stats.md). G means game-day active, not starts or measured snaps. Regular season and postseason are separate.
 Playoffs are aggregated independently from the [two Jacksonville postseason receipts](../stats/postseason_receipts/). The [exit review](../../../career/2013/exit_interviews/core/jeremy_mincey.md) supplies the individual interpretation and limitations.
 Defensive credits followed role/depth shares without individual strength or coverage responsibility. Counts do not establish technique, fit, rush or coverage ability.
 
 ## Same-player real-world comparison
 
-The branch findings and theoretical staff grades above were fixed first. This is a separate real-world 2013 regular-season comparison; it cannot set or revise a branch grade.
+The recorded findings and theoretical staff grades above were fixed first. This is a separate real-world 2013 regular-season comparison; it cannot set or revise a grade.
 
-| Category | Branch 2013 | Real-world 2013 |
+| Category | 2013 | Real-world 2013 |
 | --- | --- | --- |
 | Source position | DE | DE |
 | SCK | 1 | 2 |
@@ -83,7 +83,7 @@ The branch findings and theoretical staff grades above were fixed first. This is
 | PD | 0 | 1 |
 
 **Historical identity:** Jeremy Mincey (00-0024405); [2013 dataset and method](../../../library/2013_player_sheet_research.md).
-Game-count definitions can differ: branch G counts game-day active listings; the historical statistics dataset records its own participation. Roles, support and exposure differ, so these are descriptive totals rather than matched talent tests.
+Game-count definitions can differ: G counts game-day active listings; the historical statistics dataset records its own participation. Roles, support and exposure differ, so these are descriptive totals rather than matched talent tests.
 
 ## What made him this player in 2013
 
@@ -118,12 +118,12 @@ A sturdy edge defender who offers power, run setting and rotational rush work. I
 
 ## Evidence and uncertainty
 
-- **Branch evidence used:** [2013 exit review](../../../career/2013/exit_interviews/core/jeremy_mincey.md) and its linked practice/game records.
+- **recorded evidence used:** [2013 exit review](../../../career/2013/exit_interviews/core/jeremy_mincey.md) and its linked practice/game records.
 - **Historical benchmark sources:** [2013 position pools and archived workouts](../../../library/2013_player_sheet_research.md); source URLs, raw file hashes and qualified peer rows are preserved.
 - **What is established:** The role history includes an edge rotation, but no sufficient individual spring/camp evaluation identifies why he ranked there. It is not a complete description of his capacity.
 - **My evaluation:** A sturdy edge defender who offers power, run setting and rotational rush work. I see a balanced role player whose speed/bend are less threatening than his physical edge play.
 - **Judgment basis:** The user explicitly requested exact theoretical grades even when the source cannot support a measured rating. These are staff hypotheses about the frozen 2013 player. Thin evidence lowers confidence rather than leaving the number blank.
-- **What would change my judgment:** Individually classified branch reps, current physical measurements and comparable same-season film. Neither later real-world success nor failure can revise this baseline.
+- **What would change my judgment:** Individually classified reps, current physical measurements and comparable same-season film. Neither later real-world success nor failure can revise this baseline.
 
 **One-line description:**  
 The role history includes an edge rotation, but no sufficient individual spring/camp evaluation identifies why he ranked there. It is not a complete description of his capacity.

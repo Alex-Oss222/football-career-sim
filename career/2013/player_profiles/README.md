@@ -4,7 +4,7 @@
 **Status:** completed-season archive  
 **Players:** 61
 
-These are frozen evaluations of who each player was in the 2013 branch. They
+These are frozen evaluations of who each player was in the 2013 . They
 are not 2014 entry projections or offseason development plans.
 
 Every sheet uses position-specific traits and the same historical benchmark
@@ -18,7 +18,7 @@ Production stays separate. See the [research record and judgment basis](../../..
 
 The common evidence cutoff is January 14, 2014, after both days of the
 [exit interviews](../exit_interviews/README.md). Ages use that date. Identities
-and branch source paths are preserved in the [frozen exit index](../../2014/offseason/player_development/2013_exit_player_index.json),
+and source paths are preserved in the [frozen exit index](../../2014/offseason/player_development/2013_exit_player_index.json),
 so later living-profile edits cannot enter a regenerated 2013 sheet.
 Repository validation checks every position's grade and benchmark rows,
 player membership and the prohibition on final sheets before season close.

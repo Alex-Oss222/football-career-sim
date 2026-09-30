@@ -29,26 +29,26 @@
 
 ## Historical NFL benchmark
 
-| Trait | Sim player | vs. 2013 NFL average | vs. 2013 top reference | vs. 2013 low-end reference | Basis |
+| Trait | Player | vs. 2013 NFL average | vs. 2013 top reference | vs. 2013 low-end reference | Basis |
 | --- | --- | --- | --- | --- | --- |
-| Lead blocking | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Pass protection | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Short-yardage power | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Receiving / hands | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Route / flat utility | 4.5 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Ball security | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Special-teams utility | 6.5 /10. My view: starter-level trait. | Above my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Receiving catch rate | 53.3 | 69.8; branch below this production mean | Stanley Havili: 85.7 | Greg Jones: 45.5 | 2013 FB; targets ≥ 10; n=14; production only |
-| Receiving yards per catch | 16.5 | 6.5; branch above this production mean | Marcel Reece: 10.3 | Jed Collins: 3.9 | 2013 FB; targets ≥ 10; n=14; production only |
-| Archived 40-yard dash (physical proxy only) | No timed 2013 branch measurement recovered | Tested 2013 roster subset: 4.73 seconds | Fastest in tested subset: Evan Rodriguez: 4.53 seconds | Slowest in tested subset: Henry Hynoski: 5.06 seconds | n=23; testing positions/years vary; incomplete roster coverage; no game-speed grade |
+| Lead blocking | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Pass protection | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Short-yardage power | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Receiving / hands | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Route / flat utility | 4.5 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Ball security | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Special-teams utility | 6.5 /10. My view: starter-level trait. | Above my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Receiving catch rate | 53.3 | 69.8; below this production mean | Stanley Havili: 85.7 | Greg Jones: 45.5 | 2013 FB; targets ≥ 10; n=14; production only |
+| Receiving yards per catch | 16.5 | 6.5; above this production mean | Marcel Reece: 10.3 | Jed Collins: 3.9 | 2013 FB; targets ≥ 10; n=14; production only |
+| Archived 40-yard dash (physical proxy only) | No timed 2013 measurement recovered | Tested 2013 roster subset: 4.73 seconds | Fastest in tested subset: Evan Rodriguez: 4.53 seconds | Slowest in tested subset: Henry Hynoski: 5.06 seconds | n=23; testing positions/years vary; incomplete roster coverage; no game-speed grade |
 
-**Historical method and sources:** [2013 position research](../../../library/2013_player_sheet_research.md). Production comparisons use qualified individual-player means; they are not ability grades. A below-threshold branch sample has no peer standing. Defensive branch qualification is unknown because snaps were not recorded. Archived workout times are an incomplete tested subset from different years, not measured 2013 game speed.
+**Historical method and sources:** [2013 position research](../../../library/2013_player_sheet_research.md). Production comparisons use qualified individual-player means; they are not ability grades. A below-threshold sample has no peer standing. Defensive qualification is unknown because snaps were not recorded. Archived workout times are an incomplete tested subset from different years, not measured 2013 game speed.
 
 The technical grades and comparisons are my user-authorized theoretical judgments. My comparison standards are 6.0 for a viable NFL starter trait, 9.0 for an elite trait and 3.0 for a low-end trait. These are personnel yardsticks, not measured league means or verified grades for historical peers. Production references below the trait rows remain independently sourced statistics.
 
 ## Season production in context
 
-| Statistic | Branch regular season | Branch playoffs (two games) |
+| Statistic | 2013 regular season | 2013 playoffs |
 | --- | ---: | ---: |
 | G | 16 | 2 |
 | CAR | 15 | 0 |
@@ -64,12 +64,12 @@ The technical grades and comparisons are my user-authorized theoretical judgment
 | LOST | 0 | 0 |
 | Other recorded counts | REC LNG 34 | REC LNG 29 |
 
-**Source:** [generated branch statbook](../stats/team_player_stats.md). G means game-day active, not starts or measured snaps. Regular season and postseason are separate.
+**Source:** [generated statbook](../stats/team_player_stats.md). G means game-day active, not starts or measured snaps. Regular season and postseason are separate.
 Playoffs are aggregated independently from the [two Jacksonville postseason receipts](../stats/postseason_receipts/). The [exit review](../../../career/2013/exit_interviews/core/montell_owens.md) supplies the individual interpretation and limitations.
 
 ## Same-player real-world comparison
 
-The real-world 2013 statistical dataset has no uniquely identified entry for this player. No real-world total or participation claim is invented. The branch assessment above stands independently.
+The real-world 2013 statistical dataset has no uniquely identified entry for this player. No real-world total or participation claim is invented. The assessment above stands independently.
 
 ## What made him this player in 2013
 
@@ -102,12 +102,12 @@ A blocking and special-teams fullback who can handle a small carry or flat-recei
 
 ## Evidence and uncertainty
 
-- **Branch evidence used:** [2013 exit review](../../../career/2013/exit_interviews/core/montell_owens.md) and its linked practice/game records.
+- **recorded evidence used:** [2013 exit review](../../../career/2013/exit_interviews/core/montell_owens.md) and its linked practice/game records.
 - **Historical benchmark sources:** [2013 position pools and archived workouts](../../../library/2013_player_sheet_research.md); source URLs, raw file hashes and qualified peer rows are preserved.
 - **What is established:** Fullback responsibilities and receiving appearances show the jobs he encountered; individual lead-block/protection execution is poorly documented. A lack of fumbles or a successful catch does not certify the whole role.
 - **My evaluation:** A blocking and special-teams fullback who can handle a small carry or flat-receiving package. I see utility and dependable physical work before I see a featured offensive weapon.
 - **Judgment basis:** The user explicitly requested exact theoretical grades even when the source cannot support a measured rating. These are staff hypotheses about the frozen 2013 player. Thin evidence lowers confidence rather than leaving the number blank.
-- **What would change my judgment:** Individually classified branch reps, current physical measurements and comparable same-season film. Neither later real-world success nor failure can revise this baseline.
+- **What would change my judgment:** Individually classified reps, current physical measurements and comparable same-season film. Neither later real-world success nor failure can revise this baseline.
 
 **One-line description:**  
 Fullback responsibilities and receiving appearances show the jobs he encountered; individual lead-block/protection execution is poorly documented. A lack of fumbles or a successful catch does not certify the whole role.

@@ -32,30 +32,30 @@
 
 ## Historical NFL benchmark
 
-| Trait | Sim player | vs. 2013 NFL average | vs. 2013 top reference | vs. 2013 low-end reference | Basis |
+| Trait | Player | vs. 2013 NFL average | vs. 2013 top reference | vs. 2013 low-end reference | Basis |
 | --- | --- | --- | --- | --- | --- |
-| Run diagnosis | 4.0 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Fit discipline | 4.0 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Block destruction | 4.0 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Range | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Tackling | 4.5 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Zone coverage | 4.0 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Man coverage | 3.5 /10. My view: developmental trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Blitz / pressure | 4.0 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Communication | 4.5 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Pursuit angles | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Sacks (count, not pass-rush skill) | 0.0; branch defensive snaps unrecorded; qualification unknown | 3.3 | Robert Mathis: 19.5 | Ernie Sims, Jon Beason, Marvin Mitchell and 14 other tied players: 0.0 | 2013 LB; defense_snaps ≥ 300; n=115; production only |
-| Interceptions (count, not coverage skill) | 0.0; branch defensive snaps unrecorded; qualification unknown | 0.9 | Deandre Levy: 6.0 | London Fletcher, John Abraham, Robert Mathis and 56 other tied players: 0.0 | 2013 LB; defense_snaps ≥ 300; n=115; production only |
-| Passes defended (count, not coverage skill) | 3.0; branch defensive snaps unrecorded; qualification unknown | 3.7 | Karlos Dansby: 19.0 | Terrell Suggs, Ernie Sims, Akeem Jordan and 10 other tied players: 0.0 | 2013 LB; defense_snaps ≥ 300; n=115; production only |
-| Archived 40-yard dash (physical proxy only) | No timed 2013 branch measurement recovered | Tested 2013 roster subset: 4.67 seconds | Fastest in tested subset: Dontay Moch: 4.40 seconds | Slowest in tested subset: Brandon Spikes: 5.05 seconds | n=175; testing positions/years vary; incomplete roster coverage; no game-speed grade |
+| Run diagnosis | 4.0 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Fit discipline | 4.0 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Block destruction | 4.0 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Range | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Tackling | 4.5 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Zone coverage | 4.0 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Man coverage | 3.5 /10. My view: developmental trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Blitz / pressure | 4.0 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Communication | 4.5 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Pursuit angles | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Sacks (count, not pass-rush skill) | 0.0; defensive snaps unrecorded; qualification unknown | 3.3 | Robert Mathis: 19.5 | Ernie Sims, Jon Beason, Marvin Mitchell and 14 other tied players: 0.0 | 2013 LB; defense_snaps ≥ 300; n=115; production only |
+| Interceptions (count, not coverage skill) | 0.0; defensive snaps unrecorded; qualification unknown | 0.9 | Deandre Levy: 6.0 | London Fletcher, John Abraham, Robert Mathis and 56 other tied players: 0.0 | 2013 LB; defense_snaps ≥ 300; n=115; production only |
+| Passes defended (count, not coverage skill) | 3.0; defensive snaps unrecorded; qualification unknown | 3.7 | Karlos Dansby: 19.0 | Terrell Suggs, Ernie Sims, Akeem Jordan and 10 other tied players: 0.0 | 2013 LB; defense_snaps ≥ 300; n=115; production only |
+| Archived 40-yard dash (physical proxy only) | No timed 2013 measurement recovered | Tested 2013 roster subset: 4.67 seconds | Fastest in tested subset: Dontay Moch: 4.40 seconds | Slowest in tested subset: Brandon Spikes: 5.05 seconds | n=175; testing positions/years vary; incomplete roster coverage; no game-speed grade |
 
-**Historical method and sources:** [2013 position research](../../../library/2013_player_sheet_research.md). Production comparisons use qualified individual-player means; they are not ability grades. A below-threshold branch sample has no peer standing. Defensive branch qualification is unknown because snaps were not recorded. Archived workout times are an incomplete tested subset from different years, not measured 2013 game speed.
+**Historical method and sources:** [2013 position research](../../../library/2013_player_sheet_research.md). Production comparisons use qualified individual-player means; they are not ability grades. A below-threshold sample has no peer standing. Defensive qualification is unknown because snaps were not recorded. Archived workout times are an incomplete tested subset from different years, not measured 2013 game speed.
 
 The technical grades and comparisons are my user-authorized theoretical judgments. My comparison standards are 6.0 for a viable NFL starter trait, 9.0 for an elite trait and 3.0 for a low-end trait. These are personnel yardsticks, not measured league means or verified grades for historical peers. Production references below the trait rows remain independently sourced statistics.
 
 ## Season production in context
 
-| Statistic | Branch regular season | Branch playoffs (two games) |
+| Statistic | 2013 regular season | 2013 playoffs |
 | --- | ---: | ---: |
 | G | 16 | 2 |
 | TOT | 24 | 9 |
@@ -69,15 +69,15 @@ The technical grades and comparisons are my user-authorized theoretical judgment
 | FF | 0 | 0 |
 | FR | 0 | 0 |
 
-**Source:** [generated branch statbook](../stats/team_player_stats.md). G means game-day active, not starts or measured snaps. Regular season and postseason are separate.
+**Source:** [generated statbook](../stats/team_player_stats.md). G means game-day active, not starts or measured snaps. Regular season and postseason are separate.
 Playoffs are aggregated independently from the [two Jacksonville postseason receipts](../stats/postseason_receipts/). The [exit review](../../../career/2013/exit_interviews/summaries_defense.md) supplies the individual interpretation and limitations.
 Defensive credits followed role/depth shares without individual strength or coverage responsibility. Counts do not establish technique, fit, rush or coverage ability.
 
 ## Same-player real-world comparison
 
-The branch findings and theoretical staff grades above were fixed first. This is a separate real-world 2013 regular-season comparison; it cannot set or revise a branch grade.
+The recorded findings and theoretical staff grades above were fixed first. This is a separate real-world 2013 regular-season comparison; it cannot set or revise a grade.
 
-| Category | Branch 2013 | Real-world 2013 |
+| Category | 2013 | Real-world 2013 |
 | --- | --- | --- |
 | Source position | LB | LB |
 | SCK | 0 | 0 |
@@ -85,7 +85,7 @@ The branch findings and theoretical staff grades above were fixed first. This is
 | PD | 3 | 0 |
 
 **Historical identity:** Julian Stanford (00-0029061); [2013 dataset and method](../../../library/2013_player_sheet_research.md).
-Game-count definitions can differ: branch G counts game-day active listings; the historical statistics dataset records its own participation. Roles, support and exposure differ, so these are descriptive totals rather than matched talent tests.
+Game-count definitions can differ: G counts game-day active listings; the historical statistics dataset records its own participation. Roles, support and exposure differ, so these are descriptive totals rather than matched talent tests.
 
 ## What made him this player in 2013
 
@@ -115,12 +115,12 @@ A mobile reserve linebacker who can cover space and take a defined replacement a
 
 ## Evidence and uncertainty
 
-- **Branch evidence used:** [2013 exit review](../../../career/2013/exit_interviews/summaries_defense.md) and its linked practice/game records.
+- **recorded evidence used:** [2013 exit review](../../../career/2013/exit_interviews/summaries_defense.md) and its linked practice/game records.
 - **Historical benchmark sources:** [2013 position pools and archived workouts](../../../library/2013_player_sheet_research.md); source URLs, raw file hashes and qualified peer rows are preserved.
 - **What is established:** Late-season base-reserve responsibility provides meaningful exposure but no completed fit-by-fit assessment. Tackles locate involvement rather than prove the fit was right.
 - **My evaluation:** A mobile reserve linebacker who can cover space and take a defined replacement assignment. I see limited block destruction and coverage detail as the barriers to a larger base role.
 - **Judgment basis:** The user explicitly requested exact theoretical grades even when the source cannot support a measured rating. These are staff hypotheses about the frozen 2013 player. Thin evidence lowers confidence rather than leaving the number blank.
-- **What would change my judgment:** Individually classified branch reps, current physical measurements and comparable same-season film. Neither later real-world success nor failure can revise this baseline.
+- **What would change my judgment:** Individually classified reps, current physical measurements and comparable same-season film. Neither later real-world success nor failure can revise this baseline.
 
 **One-line description:**  
 Late-season base-reserve responsibility provides meaningful exposure but no completed fit-by-fit assessment. Tackles locate involvement rather than prove the fit was right.

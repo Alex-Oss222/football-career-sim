@@ -586,6 +586,11 @@ def main():
     for name, text in views.items():
         (stats_dir / name).write_text(text, encoding="utf-8")
     print("rendered %d stat views from %d receipts" % (len(views), len(receipts)))
+    if args.year >= 2014:
+        from scripts.update_player_cards import refresh_cards
+        errors = refresh_cards(args.year)
+        if errors:
+            raise ValueError('; '.join(errors))
 
 
 if __name__ == "__main__":

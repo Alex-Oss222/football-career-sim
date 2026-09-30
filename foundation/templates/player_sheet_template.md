@@ -33,7 +33,7 @@ Do not copy one generic athleticism card across positions.
 Compare the simulation player to the historical NFL peer pool for this same
 season. The best and low-end references are trait-specific.
 
-| Trait | Sim player | vs. NFL average | vs. top reference | vs. low-end reference | Basis |
+| Trait | Player | vs. NFL average | vs. top reference | vs. low-end reference | Basis |
 | --- | --- | --- | --- | --- | --- |
 | [Position-specific trait] |  |  |  |  |  |
 
@@ -55,7 +55,7 @@ Optional, and only after the simulation evaluation is fixed.
 |  |  |  |  |
 
 The real-world counterpart is a disclosed historical comparison only. It may
-not set the simulation grade, rewrite branch events, or determine future
+not set the simulation grade, rewrite events, or determine future
 development.
 
 ## What made him this player in [Season]
@@ -77,7 +77,7 @@ development.
 
 ## Evidence and uncertainty
 
-- **Branch evidence used:**  
+- **recorded evidence used:**  
 - **Historical benchmark sources:**  
 - **What is established:**  
 - **What remains uncertain:**  

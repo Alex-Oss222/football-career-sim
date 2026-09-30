@@ -32,30 +32,30 @@
 
 ## Historical NFL benchmark
 
-| Trait | Sim player | vs. 2013 NFL average | vs. 2013 top reference | vs. 2013 low-end reference | Basis |
+| Trait | Player | vs. 2013 NFL average | vs. 2013 top reference | vs. 2013 low-end reference | Basis |
 | --- | --- | --- | --- | --- | --- |
-| Vision / decision | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Burst / acceleration | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Long speed | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Cut efficiency / change of direction | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Contact balance / power | 6.5 /10. My view: starter-level trait. | Above my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Ball security | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Receiving | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Route detail | 4.5 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Pass protection | 5.5 /10. Track/check responsibility held across spring looks; the correct camp scan and corrected pickup base held after teaching. The Buffalo fumble is unclassified. Contact balance was not fully tested; 17 carries and two targets cannot settle running or receiving ability. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Short-yardage finishing | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
+| Vision / decision | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Burst / acceleration | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Long speed | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Cut efficiency / change of direction | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Contact balance / power | 6.5 /10. My view: starter-level trait. | Above my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Ball security | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Receiving | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Route detail | 4.5 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Pass protection | 5.5 /10. Track/check responsibility held across spring looks; the correct camp scan and corrected pickup base held after teaching. The Buffalo fumble is unclassified. Contact balance was not fully tested; 17 carries and two targets cannot settle running or receiving ability. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Short-yardage finishing | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
 | Rushing yards per carry | 3.9; below 100-opportunity threshold | 4.1 | Andre Ellington: 5.5 | Willis McGahee: 2.7 | 2013 RB; carries ≥ 100; n=46; production only |
 | Receiving catch rate | 50.0; below 20-opportunity threshold | 72.9 | Pierre Thomas: 91.7 | Doug Martin: 50.0 | 2013 RB; targets ≥ 20; n=49; production only |
 | Receiving yards per catch | 17.0; below 20-opportunity threshold | 7.7 | DeAngelo Williams: 12.8 | Ben Tate: 4.1 | 2013 RB; targets ≥ 20; n=49; production only |
-| Archived 40-yard dash (physical proxy only) | No timed 2013 branch measurement recovered | Tested 2013 roster subset: 4.51 seconds | Fastest in tested subset: Chris Johnson: 4.24 seconds | Slowest in tested subset: Ray Graham: 4.80 seconds | n=114; testing positions/years vary; incomplete roster coverage; no game-speed grade |
+| Archived 40-yard dash (physical proxy only) | No timed 2013 measurement recovered | Tested 2013 roster subset: 4.51 seconds | Fastest in tested subset: Chris Johnson: 4.24 seconds | Slowest in tested subset: Ray Graham: 4.80 seconds | n=114; testing positions/years vary; incomplete roster coverage; no game-speed grade |
 
-**Historical method and sources:** [2013 position research](../../../library/2013_player_sheet_research.md). Production comparisons use qualified individual-player means; they are not ability grades. A below-threshold branch sample has no peer standing. Defensive branch qualification is unknown because snaps were not recorded. Archived workout times are an incomplete tested subset from different years, not measured 2013 game speed.
+**Historical method and sources:** [2013 position research](../../../library/2013_player_sheet_research.md). Production comparisons use qualified individual-player means; they are not ability grades. A below-threshold sample has no peer standing. Defensive qualification is unknown because snaps were not recorded. Archived workout times are an incomplete tested subset from different years, not measured 2013 game speed.
 
 The technical grades and comparisons are my user-authorized theoretical judgments. My comparison standards are 6.0 for a viable NFL starter trait, 9.0 for an elite trait and 3.0 for a low-end trait. These are personnel yardsticks, not measured league means or verified grades for historical peers. Production references below the trait rows remain independently sourced statistics.
 
 ## Season production in context
 
-| Statistic | Branch regular season | Branch playoffs (two games) |
+| Statistic | 2013 regular season | 2013 playoffs |
 | --- | ---: | ---: |
 | G | 16 | 2 |
 | CAR | 17 | 5 |
@@ -77,14 +77,14 @@ The technical grades and comparisons are my user-authorized theoretical judgment
 | Returns: PR YDS | 32 | 27 |
 | Returns: PR AVG | 16.0 | 27.0 |
 
-**Source:** [generated branch statbook](../stats/team_player_stats.md). G means game-day active, not starts or measured snaps. Regular season and postseason are separate.
+**Source:** [generated statbook](../stats/team_player_stats.md). G means game-day active, not starts or measured snaps. Regular season and postseason are separate.
 Playoffs are aggregated independently from the [two Jacksonville postseason receipts](../stats/postseason_receipts/). The [exit review](../../../career/2013/exit_interviews/core/c_j_anderson.md) supplies the individual interpretation and limitations.
 
 ## Same-player real-world comparison
 
-The branch findings and theoretical staff grades above were fixed first. This is a separate real-world 2013 regular-season comparison; it cannot set or revise a branch grade.
+The recorded findings and theoretical staff grades above were fixed first. This is a separate real-world 2013 regular-season comparison; it cannot set or revise a grade.
 
-| Category | Branch 2013 | Real-world 2013 |
+| Category | 2013 | Real-world 2013 |
 | --- | --- | --- |
 | Source position | RB | RB |
 | G | 16 | 2 |
@@ -95,7 +95,7 @@ The branch findings and theoretical staff grades above were fixed first. This is
 | REC YDS | 17 | 0 |
 
 **Historical identity:** C.J. Anderson (00-0029854); [2013 dataset and method](../../../library/2013_player_sheet_research.md).
-Game-count definitions can differ: branch G counts game-day active listings; the historical statistics dataset records its own participation. Roles, support and exposure differ, so these are descriptive totals rather than matched talent tests.
+Game-count definitions can differ: G counts game-day active listings; the historical statistics dataset records its own participation. Roles, support and exposure differ, so these are descriptive totals rather than matched talent tests.
 
 ## What made him this player in 2013
 
@@ -133,12 +133,12 @@ A sturdy complementary runner with useful balance and inside finishing. I see a 
 
 ## Evidence and uncertainty
 
-- **Branch evidence used:** [2013 exit review](../../../career/2013/exit_interviews/core/c_j_anderson.md) and its linked practice/game records.
+- **recorded evidence used:** [2013 exit review](../../../career/2013/exit_interviews/core/c_j_anderson.md) and its linked practice/game records.
 - **Historical benchmark sources:** [2013 position pools and archived workouts](../../../library/2013_player_sheet_research.md); source URLs, raw file hashes and qualified peer rows are preserved.
 - **What is established:** Track/check assignments held across spring looks; camp pickup-base correction held after teaching. The Week 15 fumble remains a cause question. Neither reserve status nor a productive run settles his full range.
 - **My evaluation:** A sturdy complementary runner with useful balance and inside finishing. I see a developing protection back, with receiving detail and open-field speed behind his inside-running tools.
 - **Judgment basis:** The user explicitly requested exact theoretical grades even when the source cannot support a measured rating. These are staff hypotheses about the frozen 2013 player. Thin evidence lowers confidence rather than leaving the number blank.
-- **What would change my judgment:** Individually classified branch reps, current physical measurements and comparable same-season film. Neither later real-world success nor failure can revise this baseline.
+- **What would change my judgment:** Individually classified reps, current physical measurements and comparable same-season film. Neither later real-world success nor failure can revise this baseline.
 
 **One-line description:**  
 Track/check assignments held across spring looks; camp pickup-base correction held after teaching. The Week 15 fumble remains a cause question. Neither reserve status nor a productive run settles his full range.

@@ -196,8 +196,14 @@ def repository_profile_errors(root: Path = ROOT) -> list[str]:
     errors=check_profiles(2013,players,root)
     for directory in (root/"career").glob("[0-9][0-9][0-9][0-9]/player_profiles"):
         season=int(directory.parent.name)
-        if not season_is_complete(season,root) and any(p.name != "README.md" for p in directory.glob("*.md")):
+        if not season_is_complete(season,root) and any(
+            p.name not in {"README.md","TEMPLATE.md"} and not all(marker in p.read_text(encoding="utf-8") for marker in ("**Profile status:** Working player card", "<!-- yearly-statistics:start -->", "<!-- yearly-statistics:end -->"))
+            for p in directory.glob("*.md")
+        ):
             errors.append(f"{season} annual Player Sheets exist before season close")
+        if season >= 2014:
+            from scripts.update_player_cards import profile_errors
+            errors += profile_errors(season,root)
     return errors
 
 def main() -> int:

@@ -16,6 +16,7 @@ from scripts.build_annual_player_sheets import POSITION_SHEET_TRAITS, load_seaso
 from scripts.research.build_2013_player_sheet_benchmarks import name_key, rating
 from runtime.statbook import aggregate_receipts
 from runtime.stat_tables import position_sections
+from scripts.update_player_cards import clean_labels
 
 DATA = ROOT / 'library/data/2013_player_sheet_benchmarks.json'
 REVIEW_SOURCE = ROOT / 'career/2013/player_profiles/review_findings.json'
@@ -258,7 +259,7 @@ def render(player, finding, historical, tables, postseason):
                    '- **Judgment basis:** The user explicitly requested exact theoretical grades even when the source cannot support a measured rating. These are staff hypotheses about the frozen 2013 player. Thin evidence lowers confidence rather than leaving the number blank.',
                    '- **What would change my judgment:** Individually classified branch reps, current physical measurements and comparable same-season film. Neither later real-world success nor failure can revise this baseline.',
                    '', '**One-line description:**  ', player.identity]
-    return section_replace(text, 'Evidence and uncertainty', '\n'.join(uncertainty))
+    return clean_labels(section_replace(text, 'Evidence and uncertainty', '\n'.join(uncertainty)))
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)

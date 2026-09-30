@@ -4,6 +4,8 @@
 
 ## Start and resume here
 
+[2014 player cards](player_profiles/README.md) · [2014 player template](player_profiles/TEMPLATE.md) · [2013 final player sheets](../2013/player_profiles/README.md)
+
 Read [current state](../../state/05_Current_Season_State.md), [calendar](calendar.md), then the relevant row below. The next schedule action is filing the selected April 21 program by the agreed date, no later than March 31. Selection is complete; filing is unrecorded. Held negotiations and other open choices keep their existing owners.
 
 | Order of work | Existing home | What carries to the next step |

@@ -32,29 +32,29 @@
 
 ## Historical NFL benchmark
 
-| Trait | Sim player | vs. 2013 NFL average | vs. 2013 top reference | vs. 2013 low-end reference | Basis |
+| Trait | Player | vs. 2013 NFL average | vs. 2013 top reference | vs. 2013 low-end reference | Basis |
 | --- | --- | --- | --- | --- | --- |
-| Release vs press | 6.5 /10. My view: starter-level trait. | Above my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Route running | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Separation / quickness | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Long speed | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Hands | 7.0 /10. My view: strong nfl trait. | Above my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Catch radius / contested catches | 7.5 /10. My view: strong nfl trait. | Above my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Ball tracking / deep receiving | 6.5 /10. My view: starter-level trait. | Above my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| YAC / contact balance | 7.0 /10. My view: strong nfl trait. | Above my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Coverage recognition / adjustments | 5.0 /10. Motion/split corrections held on retest; he stressed coverage when correctly aligned, and assigned routes/blocking held in the recorded Week 8 work. Alignment needed correction. Later individual blocking and receiving technique are unrecorded; suspension and game-day decisions cannot substitute for trait findings. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Blocking | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Receiving catch rate | 60.4 | 57.9; branch above this production mean | Earl Bennett: 74.4 | Santonio Holmes: 39.0 | 2013 WR; targets ≥ 40; n=104; production only |
-| Receiving yards per catch | 8.5 | 13.4; branch below this production mean | Aldrick Robinson: 20.3 | Earl Bennett: 7.6 | 2013 WR; targets ≥ 40; n=104; production only |
-| Archived 40-yard dash (physical proxy only) | No timed 2013 branch measurement recovered | Tested 2013 roster subset: 4.48 seconds | Fastest in tested subset: Marquise Goodwin: 4.27 seconds | Slowest in tested subset: Anquan Boldin: 4.72 seconds | n=170; testing positions/years vary; incomplete roster coverage; no game-speed grade |
+| Release vs press | 6.5 /10. My view: starter-level trait. | Above my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Route running | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Separation / quickness | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Long speed | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Hands | 7.0 /10. My view: strong nfl trait. | Above my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Catch radius / contested catches | 7.5 /10. My view: strong nfl trait. | Above my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Ball tracking / deep receiving | 6.5 /10. My view: starter-level trait. | Above my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| YAC / contact balance | 7.0 /10. My view: strong nfl trait. | Above my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Coverage recognition / adjustments | 5.0 /10. Motion/split corrections held on retest; he stressed coverage when correctly aligned, and assigned routes/blocking held in the recorded Week 8 work. Alignment needed correction. Later individual blocking and receiving technique are unrecorded; suspension and game-day decisions cannot substitute for trait findings. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Blocking | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Receiving catch rate | 60.4 | 57.9; above this production mean | Earl Bennett: 74.4 | Santonio Holmes: 39.0 | 2013 WR; targets ≥ 40; n=104; production only |
+| Receiving yards per catch | 8.5 | 13.4; below this production mean | Aldrick Robinson: 20.3 | Earl Bennett: 7.6 | 2013 WR; targets ≥ 40; n=104; production only |
+| Archived 40-yard dash (physical proxy only) | No timed 2013 measurement recovered | Tested 2013 roster subset: 4.48 seconds | Fastest in tested subset: Marquise Goodwin: 4.27 seconds | Slowest in tested subset: Anquan Boldin: 4.72 seconds | n=170; testing positions/years vary; incomplete roster coverage; no game-speed grade |
 
-**Historical method and sources:** [2013 position research](../../../library/2013_player_sheet_research.md). Production comparisons use qualified individual-player means; they are not ability grades. A below-threshold branch sample has no peer standing. Defensive branch qualification is unknown because snaps were not recorded. Archived workout times are an incomplete tested subset from different years, not measured 2013 game speed.
+**Historical method and sources:** [2013 position research](../../../library/2013_player_sheet_research.md). Production comparisons use qualified individual-player means; they are not ability grades. A below-threshold sample has no peer standing. Defensive qualification is unknown because snaps were not recorded. Archived workout times are an incomplete tested subset from different years, not measured 2013 game speed.
 
 The technical grades and comparisons are my user-authorized theoretical judgments. My comparison standards are 6.0 for a viable NFL starter trait, 9.0 for an elite trait and 3.0 for a low-end trait. These are personnel yardsticks, not measured league means or verified grades for historical peers. Production references below the trait rows remain independently sourced statistics.
 
 ## Season production in context
 
-| Statistic | Branch regular season | Branch playoffs (two games) |
+| Statistic | 2013 regular season | 2013 playoffs |
 | --- | ---: | ---: |
 | G | 10 | 2 |
 | TGT | 53 | 5 |
@@ -76,14 +76,14 @@ The technical grades and comparisons are my user-authorized theoretical judgment
 | Returns: PR YDS | 4 | 20 |
 | Returns: PR AVG | 4.0 | 20.0 |
 
-**Source:** [generated branch statbook](../stats/team_player_stats.md). G means game-day active, not starts or measured snaps. Regular season and postseason are separate.
+**Source:** [generated statbook](../stats/team_player_stats.md). G means game-day active, not starts or measured snaps. Regular season and postseason are separate.
 Playoffs are aggregated independently from the [two Jacksonville postseason receipts](../stats/postseason_receipts/). The [exit review](../../../career/2013/exit_interviews/main_core/justin_blackmon.md) supplies the individual interpretation and limitations.
 
 ## Same-player real-world comparison
 
-The branch findings and theoretical staff grades above were fixed first. This is a separate real-world 2013 regular-season comparison; it cannot set or revise a branch grade.
+The recorded findings and theoretical staff grades above were fixed first. This is a separate real-world 2013 regular-season comparison; it cannot set or revise a grade.
 
-| Category | Branch 2013 | Real-world 2013 |
+| Category | 2013 | Real-world 2013 |
 | --- | --- | --- |
 | Source position | WR | WR |
 | G | 10 | 4 |
@@ -93,7 +93,7 @@ The branch findings and theoretical staff grades above were fixed first. This is
 | TD | 0 | 1 |
 
 **Historical identity:** Justin Blackmon (00-0029707); [2013 dataset and method](../../../library/2013_player_sheet_research.md).
-Game-count definitions can differ: branch G counts game-day active listings; the historical statistics dataset records its own participation. Roles, support and exposure differ, so these are descriptive totals rather than matched talent tests.
+Game-count definitions can differ: G counts game-day active listings; the historical statistics dataset records its own participation. Roles, support and exposure differ, so these are descriptive totals rather than matched talent tests.
 
 ## What made him this player in 2013
 
@@ -123,12 +123,12 @@ A physical outside receiver with strong hands, catch-point power and useful run-
 
 ## Evidence and uncertainty
 
-- **Branch evidence used:** [2013 exit review](../../../career/2013/exit_interviews/main_core/justin_blackmon.md) and its linked practice/game records.
+- **recorded evidence used:** [2013 exit review](../../../career/2013/exit_interviews/main_core/justin_blackmon.md) and its linked practice/game records.
 - **Historical benchmark sources:** [2013 position pools and archived workouts](../../../library/2013_player_sheet_research.md); source URLs, raw file hashes and qualified peer rows are preserved.
 - **What is established:** Cumulative camp operation placed him in the leading pair; alignment/motion correction closure remains unrecorded. The later-season Z workload adds experience but cannot establish every route or blocking capability.
 - **My evaluation:** A physical outside receiver with strong hands, catch-point power and useful run-after-catch ability. I see the receiving tools ahead of the alignment and adjustment consistency needed to use them every snap.
 - **Judgment basis:** The user explicitly requested exact theoretical grades even when the source cannot support a measured rating. These are staff hypotheses about the frozen 2013 player. Thin evidence lowers confidence rather than leaving the number blank.
-- **What would change my judgment:** Individually classified branch reps, current physical measurements and comparable same-season film. Neither later real-world success nor failure can revise this baseline.
+- **What would change my judgment:** Individually classified reps, current physical measurements and comparable same-season film. Neither later real-world success nor failure can revise this baseline.
 
 **One-line description:**  
 Cumulative camp operation placed him in the leading pair; alignment/motion correction closure remains unrecorded. The later-season Z workload adds experience but cannot establish every route or blocking capability.

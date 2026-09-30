@@ -6,6 +6,8 @@ Write current views in ordinary football language. Use descriptive links and a n
 
 ## Which files change together
 
+From 2014 onward, closed-game statbook rendering also refreshes the [working player cards](../career/2014/player_profiles/README.md). Only the bottom yearly statistics change; starting grades and earlier-year rows remain intact. Keep regular-season and playoff totals separate. Add a dated card from the [template](../career/2014/player_profiles/TEMPLATE.md) when a player joins the controlled roster; retain departing players' cards as history. Review personnel assessments at season close.
+
 | Event | First record | Dependent views to inspect and update when affected |
 |---|---|---|
 | Practice or camp work | Phase `output.md`, then ledger | Phase `standouts.md`; roster/register availability and role evidence; working depth chart and its JSON copy when availability or a role changes; current state; calendar status; camp battles/decisions if a decision occurred |

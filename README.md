@@ -4,6 +4,9 @@ An evidence-based NFL head-coaching career simulation centered on Alex-Lamar Sto
 
 ## Start here
 
+- [2014 player cards](career/2014/player_profiles/README.md) and [player template](career/2014/player_profiles/TEMPLATE.md): current roster, Overall comparisons and live yearly statistics.
+- [2013 final player sheets](career/2013/player_profiles/README.md): completed-season position evaluations and production.
+
 - [2014 work in order](career/2014/README.md): current team, finances, offseason, games and annual handoff.
 - [Player cap and organization finances](career/finances/README.md): separate accounting areas and contract history.
 - [2014 setup and readiness](career/2014/readiness.md): current handoff, prepared folders and requirements before execution.

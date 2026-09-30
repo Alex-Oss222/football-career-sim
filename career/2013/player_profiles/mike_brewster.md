@@ -31,45 +31,45 @@
 
 ## Historical NFL benchmark
 
-| Trait | Sim player | vs. 2013 NFL average | vs. 2013 top reference | vs. 2013 low-end reference | Basis |
+| Trait | Player | vs. 2013 NFL average | vs. 2013 top reference | vs. 2013 low-end reference | Basis |
 | --- | --- | --- | --- | --- | --- |
-| Snap / operation | 6.0 /10. He held the center operation while Meester was injured and retained the full starter job after the first three games of that exposure. Starter selection is not proof of every call or snap. Preseason leverage/recovery notes require film attribution; individual game center grades are absent. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Protection identification / calls | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Pass anchor | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Hand usage | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Run-fit / combination blocking | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Reach / movement blocking | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Second-level work | 4.5 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Leverage | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Communication | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded branch findings where available |
-| Archived 40-yard dash (physical proxy only) | No timed 2013 branch measurement recovered | Tested 2013 roster subset: 5.18 seconds | Fastest in tested subset: Chris Chester: 4.83 seconds | Slowest in tested subset: Travis Frederick: 5.58 seconds | n=38; testing positions/years vary; incomplete roster coverage; no game-speed grade |
+| Snap / operation | 6.0 /10. He held the center operation while Meester was injured and retained the full starter job after the first three games of that exposure. Starter selection is not proof of every call or snap. Preseason leverage/recovery notes require film attribution; individual game center grades are absent. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Protection identification / calls | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Pass anchor | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Hand usage | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Run-fit / combination blocking | 5.5 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Reach / movement blocking | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Second-level work | 4.5 /10. My view: reserve-level trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Leverage | 5.0 /10. My view: functional nfl trait. | Below my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Communication | 6.0 /10. My view: starter-level trait. | At my NFL starter standard | Below the elite trait standard | Above my low-end NFL trait standard | Theoretical staff judgment; recorded recorded findings where available |
+| Archived 40-yard dash (physical proxy only) | No timed 2013 measurement recovered | Tested 2013 roster subset: 5.18 seconds | Fastest in tested subset: Chris Chester: 4.83 seconds | Slowest in tested subset: Travis Frederick: 5.58 seconds | n=38; testing positions/years vary; incomplete roster coverage; no game-speed grade |
 
-**Historical method and sources:** [2013 position research](../../../library/2013_player_sheet_research.md). Production comparisons use qualified individual-player means; they are not ability grades. A below-threshold branch sample has no peer standing. Defensive branch qualification is unknown because snaps were not recorded. Archived workout times are an incomplete tested subset from different years, not measured 2013 game speed.
+**Historical method and sources:** [2013 position research](../../../library/2013_player_sheet_research.md). Production comparisons use qualified individual-player means; they are not ability grades. A below-threshold sample has no peer standing. Defensive qualification is unknown because snaps were not recorded. Archived workout times are an incomplete tested subset from different years, not measured 2013 game speed.
 
 The technical grades and comparisons are my user-authorized theoretical judgments. My comparison standards are 6.0 for a viable NFL starter trait, 9.0 for an elite trait and 3.0 for a low-end trait. These are personnel yardsticks, not measured league means or verified grades for historical peers. Production references below the trait rows remain independently sourced statistics.
 
 ## Season production in context
 
-| Statistic | Branch regular season | Branch playoffs (two games) |
+| Statistic | 2013 regular season | 2013 playoffs |
 | --- | ---: | ---: |
 | G | 14 | 2 |
 | SCK ALLOWED | 4 | 1 |
 
-**Source:** [generated branch statbook](../stats/team_player_stats.md). G means game-day active, not starts or measured snaps. Regular season and postseason are separate.
+**Source:** [generated statbook](../stats/team_player_stats.md). G means game-day active, not starts or measured snaps. Regular season and postseason are separate.
 Playoffs are aggregated independently from the [two Jacksonville postseason receipts](../stats/postseason_receipts/). The [exit review](../../../career/2013/exit_interviews/core/mike_brewster.md) supplies the individual interpretation and limitations.
 Sacks allowed were assigned randomly among dressed linemen in the 2013 engine. They are preserved as recorded charges and excluded from individual blocking grades.
 
 ## Same-player real-world comparison
 
-The branch findings and theoretical staff grades above were fixed first. This is a separate real-world 2013 regular-season comparison; it cannot set or revise a branch grade.
+The recorded findings and theoretical staff grades above were fixed first. This is a separate real-world 2013 regular-season comparison; it cannot set or revise a grade.
 
-| Category | Branch 2013 | Real-world 2013 |
+| Category | 2013 | Real-world 2013 |
 | --- | --- | --- |
 | Source position | C | C |
 | Offensive snaps | Unrecorded | 225 |
 
 **Historical identity:** Michael Brewster (00-0029052); [2013 dataset and method](../../../library/2013_player_sheet_research.md).
-Game-count definitions can differ: branch G counts game-day active listings; the historical statistics dataset records its own participation. Roles, support and exposure differ, so these are descriptive totals rather than matched talent tests.
+Game-count definitions can differ: G counts game-day active listings; the historical statistics dataset records its own participation. Roles, support and exposure differ, so these are descriptive totals rather than matched talent tests.
 
 ## What made him this player in 2013
 
@@ -103,12 +103,12 @@ A young center who can hold the operation and communicate the core protection wo
 
 ## Evidence and uncertainty
 
-- **Branch evidence used:** [2013 exit review](../../../career/2013/exit_interviews/core/mike_brewster.md) and its linked practice/game records.
+- **recorded evidence used:** [2013 exit review](../../../career/2013/exit_interviews/core/mike_brewster.md) and its linked practice/game records.
 - **Historical benchmark sources:** [2013 position pools and archived workouts](../../../library/2013_player_sheet_research.md); source URLs, raw file hashes and qualified peer rows are preserved.
 - **What is established:** He took over the center role during the season and the recorded operation held. Individual season grades were not returned; the protection unit's outcomes cannot establish all of his physical execution.
 - **My evaluation:** A young center who can hold the operation and communicate the core protection work. I see a viable starting option whose anchor, leverage and second-level work remain less developed than his operation.
 - **Judgment basis:** The user explicitly requested exact theoretical grades even when the source cannot support a measured rating. These are staff hypotheses about the frozen 2013 player. Thin evidence lowers confidence rather than leaving the number blank.
-- **What would change my judgment:** Individually classified branch reps, current physical measurements and comparable same-season film. Neither later real-world success nor failure can revise this baseline.
+- **What would change my judgment:** Individually classified reps, current physical measurements and comparable same-season film. Neither later real-world success nor failure can revise this baseline.
 
 **One-line description:**  
 He took over the center role during the season and the recorded operation held. Individual season grades were not returned; the protection unit's outcomes cannot establish all of his physical execution.
