@@ -225,6 +225,35 @@ class LayoutTests(unittest.TestCase):
         self.assertEqual(out["walk"]["state"]["down"], 4)
         self.assertNotIn("chain_layout_failed", diagnostics)
 
+    def test_last_rung_enumerates_the_plan(self):
+        # The three drives that kept an unconstrained order at the candidate
+        # acceptance (806 games): a five-snap touchdown from the 12 whose
+        # passes must reach the line to gain exactly (pass 9 / rush 3 admits
+        # no first down before the scoring run), and a four-snap clock drive
+        # netting 0 whose only legal order needs the sack to give back exactly
+        # the ten yards the passes gained. With the random redraws disabled
+        # the enumeration finds both.
+        from runtime import chains
+        with mock.patch.object(chains, "DRAWS", 1), mock.patch.object(chains, "ALT_DRAWS", 0), \
+                mock.patch.object(chains, "REPAIR_STEPS", 0):
+            diagnostics = {}
+            out = self.layout(category="touchdown", td_type="rush", runs=1, attempts=4, sacks=0, pass_yards=9,
+                              rush_free=3, net=12, spot=12, targets=[2, 0, 1, 1, 0, 0], diagnostics=diagnostics)
+            self.assertTrue(out["ok"])
+            self.assertIn("chain_plan_enumerated", diagnostics)
+            self.assertNotIn("chain_layout_failed", diagnostics)
+            self.assertEqual(out["pass_yards"] + out["rush_free"], 12)
+            self.assertIsNone(out["walk"]["failed"])
+            self.assertEqual(out["walk"]["breaks"], [])
+            diagnostics = {}
+            out = self.layout(category="clock", runs=0, attempts=3, sacks=1, pass_yards=8, rush_free=0,
+                              losses=[8], net=0, spot=80, targets=[1, 0, 1, 1, 0, 0], diagnostics=diagnostics)
+            self.assertTrue(out["ok"])
+            self.assertIn("chain_plan_enumerated", diagnostics)
+            self.assertEqual(out["losses"], [10])
+            self.assertEqual(out["walk"]["chains"][0], 1)
+            self.assertIsNone(out["walk"]["failed"])
+
     def test_layout_is_deterministic_and_on_its_own_stream(self):
         kw = dict(category="field_goal_attempt", runs=4, attempts=5, sacks=1, pass_yards=30, rush_free=15,
                   losses=[6], net=39, spot=62, targets=[2, 0, 1, 1, 0, 0], term_down=4)

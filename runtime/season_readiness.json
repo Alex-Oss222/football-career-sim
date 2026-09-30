@@ -7,10 +7,11 @@
         {
           "id": "tier1_engine",
           "status": "BLOCKED",
-          "remaining": "E1/E2, clock, chains and injury-exposure fixes need implementation and accepted synthetic calibration.",
+          "remaining": "Kernel 2014.4 candidate implements E1 (first pass), E2, the half-final clock, the ledger-walked chains and the sourced injury model, and passed its synthetic acceptance (runtime/README.md, kernel 2014.4 candidate acceptance). Awaiting the user's result-changing release decision: flip KERNEL_VERSION and the service KERNEL to 2014.4, deploy and verify the live private runtime, wire the weekly closure to the E2 pause, then accept this gate with that evidence.",
           "evidence": [
             "runtime/defect_register.md",
-            "runtime/2014_engine_decisions.md"
+            "runtime/2014_engine_decisions.md",
+            "runtime/README.md"
           ]
         },
         {

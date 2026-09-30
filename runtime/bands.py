@@ -245,10 +245,15 @@ KNOWN_DETECTIONS["2014.2"]["punt share of possessions ending in Q4's last 5:00 o
 # Kernel 2014.3 changes credit only (runtime/README.md, kernel 2014.3): every
 # result is identical to 2014.2, so the registry carries over unchanged.
 KNOWN_DETECTIONS["2014.3"] = dict(KNOWN_DETECTIONS["2014.2"])
+# Kernel 2014.4 (candidate; the version flips only at the user's release
+# decision) carries the registry over: every known-detection row read WITHIN
+# on its 250-game acceptance sample (runtime/README.md, kernel 2014.4
+# candidate acceptance) and none was added or removed.
+KNOWN_DETECTIONS["2014.4"] = dict(KNOWN_DETECTIONS["2014.3"])
 
 
 def known_detections(cohort):
-    """{metric: note} for a kernel cohort ("2013.6", "2013.7", "2013.8", "2013.9", "2013.10", "2013.11", "2014.1", "2014.2" or "2014.3"); empty otherwise."""
+    """{metric: note} for a kernel cohort ("2013.6", "2013.7", "2013.8", "2013.9", "2013.10", "2013.11", "2014.1", "2014.2", "2014.3" or "2014.4"); empty otherwise."""
     return dict(KNOWN_DETECTIONS.get(cohort, {}))
 
 

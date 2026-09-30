@@ -69,6 +69,14 @@ RESTARTS = 4
 NODE_BUDGET = 3000
 EXACT_BUDGET = 600
 REPAIR_STEPS = 120
+# Last rung (added at the candidate acceptance, September 30, 2026, after
+# three drives in 806 games kept an unconstrained order): when every plan
+# above fails, the plan is enumerated in a fixed order instead of drawn: each
+# sack-loss combination in the kernel's own 3-10 range (at most
+# LOSS_RUNG_LIMIT; sampled from the drive's stream beyond it) crossed with a
+# passing-against-rushing shift of 0, 1 or 2 yards either way. The drive's
+# net, snap counts and terminal never move. The first legal order wins.
+LOSS_RUNG_LIMIT = 64
 
 
 def penalty_first_downs(scrimmage_real, penalty_real, walked):
@@ -484,9 +492,11 @@ def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, 
     * each draw keeps the order closest to the real drive's chain counts over
       RESTARTS randomized searches.
     Then the kernel split's values are equalized within kind one yard at a
-    time (Repair 2 of runtime.play_detail._layout). If nothing is legal the
-    drive keeps an unconstrained order and chain_layout_failed is counted; the
-    coherence classes report the resulting break."""
+    time (Repair 2 of runtime.play_detail._layout), and last the plan is
+    enumerated: sack losses over their range crossed with one- and two-yard
+    passing shifts (LOSS_RUNG_LIMIT, chain_plan_enumerated). If nothing is legal the drive keeps an
+    unconstrained order and chain_layout_failed is counted; the coherence
+    classes report the resulting break."""
     from . import play_detail as pd
 
     diagnostics = diagnostics if diagnostics is not None else {}
@@ -638,6 +648,40 @@ def drive_layout(*, seed, event_id, drive_no, offense, category, td_type, runs, 
                 if best is not None:
                     return finish(kinds, completed, values, best, kernel_plan,
                                   ["chain_layout_inexact", "chain_layout_relaxed", "chain_layout_repaired"])
+    # Last rung: the plan enumerated rather than drawn. Every sack-loss
+    # combination in the kernel's range when the losses were drawn (the
+    # kernel's own losses otherwise), crossed with a one- or two-yard shift
+    # of passing against free rushing yards. A drive whose net is reachable
+    # only with a particular loss (a real drive whose first down a long sack
+    # gave back) or a particular split (a goal-line drive whose passes must
+    # reach the line to gain exactly) is otherwise missed by the random
+    # redraws and the coarse SPLIT_SHIFTS above.
+    import itertools
+    if losses_random and losses:
+        combos = list(itertools.product(range(3, 11), repeat=len(losses)))
+        if len(combos) > LOSS_RUNG_LIMIT:
+            combos = [tuple(rng.randint(3, 10) for _ in losses) for _ in range(LOSS_RUNG_LIMIT)]
+    else:
+        combos = [tuple(losses)]
+    shifts = (0, 1, -1, 2, -2) if usable and free_runs else (0,)
+    for shift, new_losses in itertools.product(shifts, combos):
+        delta = sum(new_losses) - sum(losses)
+        if not delta and not shift:
+            continue
+        if usable:
+            p, r = pass_yards + delta + shift, rush_free - shift
+        else:
+            p, r = pass_yards, rush_free + delta
+        if (td_type == "pass" and p < 1) or (td_type == "rush" and r < 1):
+            continue
+        plan = (p, r, list(new_losses))
+        drawn = _draw(rng, pd, category, options[0], runs, attempts, sacks, kneel_yards, spikes,
+                      plan[0], plan[1], plan[2], safety_terminal, completion_rate)
+        best = attempt(*drawn, tiers[3])
+        if best is not None:
+            terminal = options[0]
+            return finish(*drawn[:3], best, plan, ["chain_layout_inexact", "chain_layout_relaxed",
+                                                   "chain_split_repaired", "chain_plan_enumerated"])
     bump("chain_layout_failed")
     bump("prefix_order_failed")
     kinds, completed, values, n_mov = last_draw
