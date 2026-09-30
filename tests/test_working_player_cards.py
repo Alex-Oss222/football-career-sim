@@ -43,6 +43,21 @@ class WorkingPlayerCardTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'Wrong game type'):
                 period_data(2013, True, root)
 
+    def test_longest_field_goal_uses_maximum_instead_of_sum(self):
+        receipts = [json.loads(p.read_text(encoding='utf-8')) for p in (ROOT/'career/2013/stats/game_receipts').glob('*.json')]
+        receipts = [r for r in receipts if 'Josh Scobee' in r['team_stats'].get('Jacksonville Jaguars', {}).get('players', {})][:2]
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            directory = root/'career/2013/stats/game_receipts'
+            directory.mkdir(parents=True)
+            for index, receipt in enumerate(receipts):
+                receipt['team_stats']['Jacksonville Jaguars']['players']['Josh Scobee']['long_field_goal'] = (47, 52)[index]
+                (directory/f'{index}.json').write_text(json.dumps(receipt), encoding='utf-8')
+            data = period_data(2013, root=root)
+            self.assertEqual(data['players']['Josh Scobee']['long_field_goal'], 52)
+            _, values = stat_values('Josh Scobee', 'K', data)
+            self.assertEqual(values[[c[0] for c in columns('K')].index('LONG')], '52')
+
     def test_current_roster_cards_and_stats_are_consistent(self):
         self.assertEqual(profile_errors(2014), [])
         cards = list((ROOT/'career/2014/player_profiles').glob('*.md'))

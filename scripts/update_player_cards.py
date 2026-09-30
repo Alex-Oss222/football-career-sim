@@ -80,6 +80,13 @@ def period_data(year, postseason=False, root=ROOT):
         for name,line in receipt['team_stats']['Jacksonville Jaguars'].get('players', {}).items():
             recorded = {'games'} | {k for k,v in line.items() if isinstance(v,(int,float)) and not isinstance(v,bool)}
             fields[name] = fields.get(name,recorded) & recorded
+    # The shared statbook predates this optional kicker field and sums it.
+    # A season's longest field goal must instead be the maximum recorded kick.
+    for name, line in team.get('players', {}).items():
+        kicks = [r['team_stats']['Jacksonville Jaguars'].get('players', {}).get(name, {}).get('long_field_goal') for r in receipts]
+        kicks = [v for v in kicks if isinstance(v, (int, float)) and not isinstance(v, bool)]
+        if kicks:
+            line['long_field_goal'] = max(kicks)
     return {'players':team.get('players',{}), 'fields':fields, 'games':team.get('games',0),
             'through':max((r['week'] for r in receipts),default=0),
             'complete':book['coverage_complete'] and book.get('team_player_attribution_complete',{}).get('Jacksonville Jaguars',True)}
