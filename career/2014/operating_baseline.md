@@ -1,6 +1,6 @@
 # 2014 operating baseline and handoffs
 
-Current through April 17, 2014. Jacksonville controls 53 players: 49 under signed contracts, including the eight free-agency replay signings, the six reserve/future contracts, the March 28 re-signings of Maurice Jones-Drew and C.J. Wilson and Chad Henne's April 4 re-signing, plus four unsigned tenders. Russell Allen was traded to Arizona April 7 for Arizona's 2015 fourth, after Paul Posluszny's April 5 clearance. Shorts and Blackmon were traded to Indianapolis March 31, Babin and Alualu March 24, and Nwaneri March 20. The two Colts picks from that trade, Nos. 82 and 194, went to Washington the same day for Jacksonville's own 2015 second. Jacksonville holds nine 2014 picks: 13, 26, 38, 90, 129, 153, 168, 205 and 241. The offseason-program schedule was filed March 28. No phase or game has been played. Completed events are in the [2014 ledger](ledger.md); earlier ones stay in the [2013 ledger](../2013/ledger.md).
+Current through May 1, 2014. Jacksonville controls 53 players: 49 under signed contracts, including the eight free-agency replay signings, the six reserve/future contracts, the March 28 re-signings of Maurice Jones-Drew and C.J. Wilson and Chad Henne's April 4 re-signing, plus four unsigned tenders. Russell Allen was traded to Arizona April 7 for Arizona's 2015 fourth, after Paul Posluszny's April 5 clearance. Shorts and Blackmon were traded to Indianapolis March 31, Babin and Alualu March 24, and Nwaneri March 20. The two Colts picks from that trade, Nos. 82 and 194, went to Washington the same day for Jacksonville's own 2015 second. Jacksonville holds nine 2014 picks: 13, 26, 38, 90, 129, 153, 168, 205 and 241. The offseason-program schedule was filed March 28; Stone adopted his April 18 decisions, Phase One has run April 21 to May 1 and the regular-season schedule was released April 23. No game has been played. Completed events are in the [2014 ledger](ledger.md); earlier ones stay in the [2013 ledger](../2013/ledger.md).
 
 ## Start here
 
@@ -12,8 +12,8 @@ Current through April 17, 2014. Jacksonville controls 53 players: 49 under signe
 | Draft | [Nine-pick board](offseason/draft/player_draft_board.md), [all seven rounds](draft/draft_order.md) | [Draftees and contracts](offseason/draft/draftees.md), [rails pairing](offseason/league_rails/draft_pairing.md), [undrafted contracts](offseason/draft/udfa_signings.md) |
 | Staff | [Staff changes and hires](offseason/staff_changes/README.md) | Mike Westhoff hired special teams coordinator February 11 after Oakland kept Bobby April; no February departure |
 | Training and film | [Phase route](offseason/README.md), existing player and coach methods | Five phase output and standout pairs, living profiles linked to actual evidence, [delivery receipts](offseason/film/delivery_log.md) |
-| Phase decisions | [Detailed recommendations](offseason/phase_plan_decisions.md), [period rules](../../library/2014_offseason_phase_rules_verification.md) | Schedule selected and filed March 28; other marked choices remain pending |
-| Schedule | [Full opponent matrix](schedule/README.md), [calendar](calendar.md) | Dated 256-game fixtures from the historical release on April 23 |
+| Phase decisions | [Detailed recommendations](offseason/phase_plan_decisions.md), [period rules](../../library/2014_offseason_phase_rules_verification.md) | Schedule filed March 28; [April 18 decisions](offseason/stone_april_18_2014_decisions.md) adopted |
+| Schedule | [Schedule records](schedule/README.md), [calendar](calendar.md) | [Frozen 256-game fixtures](schedule/fixtures.json) from the April 23 release |
 | Camp and preseason | [Camp plan](offseason/training_camp/plan.md), [position questions](offseason/training_camp/position_battles.md) | Camp output, role decisions, game records, [75/53/squad closure](preseason/final_roster_cuts.md) |
 | Regular season and postseason | [17-week index](regular_season/README.md), conditional dates in the calendar | Actual weekly outputs and receipts, generated stats and standings, and the event ledger |
 
@@ -28,7 +28,7 @@ The generated 2,208-player league inventory is research data with unknown contra
 ## Decisions and facts still pending
 
 - Rackley-or-Brewster trade: blocked until Jacksonville actually drafts two offensive linemen.
-- The [phase decision package](offseason/phase_plan_decisions.md) holds the remaining install and policy choices. Pre-program coach-led football study is prohibited; passive film distribution remains unresolved. Adopted individual-development methods stay adopted. The five prepared NOT_STARTED outputs do not resolve pending choices or create delivery receipts.
+- The [phase decision package](offseason/phase_plan_decisions.md) records the adopted choices, including the April 18 decisions. No film packet has been issued; the January 31 receipts remain unverified. The four players on unsigned tenders have no established basis to take part in the program.
 - Draft: Linsley and Gaines are current targets, with Paradis, then Stork, then Swanson behind Linsley, and Cockrell behind Gaines, then Butler at 241. Eligibility, pre-selection reports and availability remain normal draft-day prerequisites.
 
 ## Before any 2014 game
@@ -37,7 +37,7 @@ This baseline supports offseason operations. It is not game authorization. [The 
 
 E1 requires dated player and job evidence, available lineups and coaching and matchup tradeoffs through the common resolver. Branch 2013 records are not talent evidence and Jacksonville gets no bonus. E2 requires actual mid-game removal, important user-side substitution pauses and functioning backup quarterbacks. Clock, fourth-down and injury-rate Tier 1 defects also remain open. Adding folders fixes nothing.
 
-The game release also needs season-aware fixture, roster, closure and stat consumers, dated 2014 league inputs, control exclusivity, calibration and a validated kernel version. The existing 2013 runner must not silently execute a 2014 request with old data. These are engineering work to close before the preseason, not a hand-maintenance assignment for Stone. The ordinary repository check validates continuity and prepared records; a green result does not supersede the game gate.
+The game release also needs season-aware roster, closure and stat consumers (the dated fixtures are frozen), dated 2014 league inputs, control exclusivity, calibration and a validated kernel version. The existing 2013 runner must not silently execute a 2014 request with old data. These are engineering work to close before the preseason, not a hand-maintenance assignment for Stone. The ordinary repository check validates continuity and prepared records; a green result does not supersede the game gate.
 
 ## Setup acceptance and remaining work
 

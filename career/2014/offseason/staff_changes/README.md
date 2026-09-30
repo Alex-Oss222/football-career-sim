@@ -16,7 +16,7 @@ Resolved through February 17, 2014. Twelve assistants are under contract and the
 - The other assistants received no request and remain under contract.
 - Five clubs changed head coaches by February 2: Atlanta, Cincinnati, Denver, Indianapolis and San Francisco. After the Super Bowl, Buffalo kept Doug Marrone and Minnesota made an external head-coach hire on February 17.
 
-**Open staff choice:** emergency operational succession is unassigned. [The phase decision package](../phase_plan_decisions.md#staff-responsibilities-and-emergency-succession) sets out recommendations for Stone's decision; publishing the package does not appoint those deputies.
+**Emergency practice lead (April 18):** Mike Tice runs practice if Stone is out, with Romeo Crennel second. Their authority is narrow: the approved schedule, no role, install or personnel change ([April 18 decisions](../stone_april_18_2014_decisions.md#practice-if-stone-is-out)). Succession for a game-day caller is not covered and remains unassigned.
 
 ## Records
 

@@ -10,7 +10,7 @@ Start with the player at the current date, including his full season of experien
 
 | Need | Open | What it owns |
 |---|---|---|
-| Settle the phase-plan choices | [Stone's decision package](phase_plan_decisions.md) | Detailed 2013 carry-forward, recommended schedule and install, pending policy choices, emergency staff choices and deferred decisions; recommendations remain pending |
+| Settle the phase-plan choices | [Stone's decision package](phase_plan_decisions.md) | Detailed 2013 carry-forward, schedule and install, and the status of each policy choice, including the adopted April 18 decisions |
 | Run the coaching process | [Training workflow](training/weekly_workflow.md) | Preparation, session rhythm, correction, retention and phase handoff |
 | Prepare a position room | [Unit work plans](training/unit_plans.md) | Coach, football objective, paired-film question and next test |
 | Script a permitted session | [Session template](training/session_template.md) | Specific jobs and evidence to gather; no results entered in the script |
@@ -20,7 +20,7 @@ Start with the player at the current date, including his full season of experien
 | Assemble or issue a tape | [Film workflow](film/README.md) | Packet contents, cause review, approval, receipt and later retest |
 | Find outstanding player work | [Player film queue](film/player_queue.md) | One accountable queue entry for each of the 61 players at the baseline, including the retired-player archive |
 | Verify a delivery | [Delivery log](film/delivery_log.md) | Dated packet revisions and actual issue/acknowledgment/review receipts |
-| Resolve a staffing dependency | [Staff changes](staff_changes/README.md) | Closed special-teams search, actual appointments and remaining emergency-succession decision |
+| Resolve a staffing dependency | [Staff changes](staff_changes/README.md) | Closed special-teams search, actual appointments, the emergency practice lead and the open game-day caller succession |
 | Check a player's contract terms or 2014 figures | [Contract table](contract_table.md) | Terms, sourced 2014 figures, 2013 baseline and the update log; status stays with the [register](contract_status_register.md) |
 | See the current depth order | [Depth chart](../depth_chart.md) and its [working JSON](depth_chart_working.json) | 2013 order carried with contract flags; no 2014 depth decision yet |
 | Read the narrative for an offseason turn | [Turn outputs](turns/README.md) | One template output per closed offseason turn |
@@ -35,17 +35,17 @@ Start with the player at the current date, including his full season of experien
 | Mandatory veteran minicamp | [Plan](mandatory_minicamp/plan.md), [output](mandatory_minicamp/output.md), [evidence](mandatory_minicamp/standouts.md) | Retained assignments and individual summer/camp-entry instructions |
 | Training camp and preseason | [Plan](training_camp/plan.md), [output](training_camp/output.md), [evidence](training_camp/standouts.md) | Lawful contact and game-speed transfer, individual development continued through season |
 
-Each phase now has a linked `output.md` and `standouts.md`, initialized NOT_STARTED with matching evidence metadata. These records are ready to receive actual work; none of the phases has run.
+Each phase has a linked `output.md` and `standouts.md` with matching evidence metadata. The offseason program is in progress (Phase One, April 21 to May 1); the other phases have not run.
 
 Dates stay in the calendar and phase plans. The [decision package](phase_plan_decisions.md) recommends the detailed sequence. The schedule-filing deadline is the agreed league date, no later than March 31 for an April 21 start; April 3 public publication is separate. A proposed date does not authorize work. No extra new-head-coach minicamp applies to Jacksonville in 2014.
 
 ## Authority and record boundaries
 
-The individual-feedback process, the living assessments and open-ended development of all players (including Cousins), shared QB-center identification teaching, and continuing individual development are authorized by this request. The [second-year install direction](phase_plan_decisions.md#install-scope-continue-into-year-two), including Boot Flood's return to teaching and practice, is also adopted. New role assignments and other marked proposals, including the punt policy, remain separate decisions. A player learning a job does not win it merely by appearing in a plan.
+The individual-feedback process, the living assessments and open-ended development of all players (including Cousins), shared QB-center identification teaching, and continuing individual development are authorized by this request. The [second-year install direction](phase_plan_decisions.md#install-scope-continue-into-year-two), including Boot Flood's return to teaching and practice, is also adopted. Stone's [April 18 decisions](stone_april_18_2014_decisions.md), including the punt instruction, are adopted. New role assignments remain separate decisions. A player learning a job does not win it merely by appearing in a plan.
 
 Plans describe intended work. The relevant phase's `output.md` records actual instruction, evidence and decisions when it runs. The film delivery log records actual distribution. Player evidence records link to those primary sources rather than inventing practice results. Any change to canon closes with the ledger and dependent state under [the update workflow](../../../docs/update_workflow.md).
 
-The queue is an explicitly dated work inventory, not a second roster. Recheck [club control](../../2013/roster.md), [contract status](contract_status_register.md), current medical instructions and [staff responsibility](../../2013/coaching_staff.md) before player contact or phase entry. Meester has no training assignment. Allen's prospective trade is not completed and his April 22 retirement remains a boundary. Mike Westhoff has run special teams since his February 11 appointment (Entry 84).
+The queue is an explicitly dated work inventory, not a second roster. Recheck [club control](../../2013/roster.md), [contract status](contract_status_register.md), current medical instructions and [staff responsibility](../../2013/coaching_staff.md) before player contact or phase entry. Meester has no training assignment. Allen was traded to Arizona April 7 and retired there April 22. Mike Westhoff has run special teams since his February 11 appointment (Entry 84).
 
 The [historical verification](../../../library/2014_offseason_phase_rules_verification.md) confirms that coach-led football meetings, film and playbook study cannot occur before the program. Passive film distribution remains unresolved; absent a verified earlier lawful route, the decision package recommends pending delivery/discussion from April 21. Phase One classroom teaching is permitted within its limits. Internal preparation can proceed, and no historic January delivery is backdated or assumed.
 

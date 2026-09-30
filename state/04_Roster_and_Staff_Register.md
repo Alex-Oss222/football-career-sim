@@ -3,9 +3,9 @@
 ## Document status
 
 - Function: Canonical register for current Jacksonville player control, staff operating authority, roster legality, contract/cap and draft-capital reconciliation, availability boundaries and football-role state.
-- Current status: **RECONCILED THROUGH ENTRY 106 (HENNE RE-SIGNED, POSLUSZNY CLEARED, ALLEN TRADED TO ARIZONA)**.
-- Effective through: **April 17, 2014 (53 controlled players; Henne re-signed April 4; Posluszny cleared April 5; Allen traded to Arizona April 7)**.
-- Current authority: `career/2014/ledger.md`, Entry 106 (Henne re-signed April 4; Posluszny cleared April 5; Allen traded to Arizona April 7 for Arizona's 2015 fourth; controlled roster 53; clock April 17), Entry 105 (Nos. 82 and 194 traded to Washington March 31 for Jacksonville's original 2015 second; no players move), Entry 104 (Shorts and Blackmon traded to Indianapolis March 31 for Nos. 82 and 194; controlled roster 53), Entry 103 (Jones-Drew and C.J. Wilson re-signed March 28; schedule filed; controlled roster 55), Entry 102 (Babin to Miami and Alualu to Houston, March 24; controlled roster 53) and Entry 101 (administrative).
+- Current status: **RECONCILED THROUGH ENTRY 107 (PHASE ONE UNDER WAY; APRIL 18 DECISIONS; SCHEDULE RELEASED)**.
+- Effective through: **May 1, 2014 (53 controlled players; Stone's April 18 decisions; Phase One April 21 to May 1; Allen retired at Arizona April 22; schedule released April 23)**.
+- Current authority: `career/2014/ledger.md`, Entry 107 (April 18 decisions: Tice emergency practice lead, Crennel second; defensive relay succession Smith, Posluszny, Stanford; Phase One April 21 to May 1; Allen retired at Arizona April 22; schedule released April 23; controlled roster 53; clock May 1), Entry 106 (Henne re-signed April 4; Posluszny cleared April 5; Allen traded to Arizona April 7 for Arizona's 2015 fourth; controlled roster 53; clock April 17), Entry 105 (Nos. 82 and 194 traded to Washington March 31 for Jacksonville's original 2015 second; no players move), Entry 104 (Shorts and Blackmon traded to Indianapolis March 31 for Nos. 82 and 194; controlled roster 53), Entry 103 (Jones-Drew and C.J. Wilson re-signed March 28; schedule filed; controlled roster 55), Entry 102 (Babin to Miami and Alualu to Houston, March 24; controlled roster 53) and Entry 101 (administrative).
 - Prior progression authority: `career/2013/ledger.md`, Entries 1 to 100 (hire through the March 24, 2014 compensatory announcement).
 - Detailed readable roster: `career/2014/roster.md`.
 - Current cap worksheet: `career/2014/offseason/current_cap_worksheet.md`.
@@ -25,15 +25,15 @@ This register states each current fact once, in the section that owns it. How th
 | Season | 2014 |
 | Divergence point | January 15, 2013: Alex Stone accepts Jacksonville head-coach offer |
 | Season phase | 2014 offseason; league year open from March 11, 2014 (2013 season complete, eliminated in the AFC Divisional round) |
-| Owned content effective | April 17, 2014 |
-| Document 4 register version | `JAX-2014-APR17-REGISTER-60` |
-| Supersedes | `JAX-2014-MAR31-REGISTER-59` |
-| Last content-changing checkpoint | `Canonical update - April 17, 2014 - Henne re-signed, Posluszny cleared, Allen traded to Arizona` |
-| Latest Document 6 event | 2014 ledger Entry 106: Henne re-signed, Posluszny cleared and Allen traded to Arizona for Arizona's 2015 fourth; controlled roster 53; clock April 17, 2014 |
+| Owned content effective | May 1, 2014 |
+| Document 4 register version | `JAX-2014-MAY01-REGISTER-61` |
+| Supersedes | `JAX-2014-APR17-REGISTER-60` |
+| Last content-changing checkpoint | `Canonical update - May 1, 2014 - Phase One under way; April 18 decisions; schedule released` |
+| Latest Document 6 event | 2014 ledger Entry 107: Stone's April 18 decisions adopted; Phase One April 21 to May 1; Allen retired at Arizona April 22; schedule released April 23; controlled roster 53; clock May 1, 2014 |
 | Current controlled players | **53** |
 | Current practice squad | **0** (no 2014 practice squad before the regular season) |
-| Next scheduled football event | Phase One opens April 21, 2014; dated events are in Document 5 section 9 |
-| Unresolved matter before participation | Recheck control, current medical instructions and calendar permissions before any 2014 participation |
+| Next scheduled football event | Phase One staff handoff May 2 and Phase Two from May 5, 2014; dated events are in Document 5 section 9 |
+| Unresolved matter before participation | Bradfield, Clemons, Brown and Pasztor (unsigned tenders) have no established basis to take part in the program; recheck control, medical instructions and calendar permissions before each phase |
 
 ## Roster control and legality
 
@@ -41,7 +41,7 @@ This register states each current fact once, in the section that owns it. How th
 
 | Exact primary status | Current count | Governing limit | Reconciled |
 |---|---:|---:|---|
-| Offseason roster | **53** | 90-player offseason limit from the league year | April 17, 2014 (Entry 106) |
+| Offseason roster | **53** | 90-player offseason limit from the league year | May 1, 2014 (Entry 107; no change since Entry 106) |
 
 | Primary-status total | Current value | Derivation |
 |---|---:|---|
@@ -54,7 +54,7 @@ The offseason roster is 53 of 90. Only recorded contracts and the adopted contra
 
 ### Current player index
 
-<!-- player-ages-as-of: 2014-04-17 -->
+<!-- player-ages-as-of: 2014-05-01 -->
 
 DOB is a verified pre-divergence identity fact, supported by the [birth-date evidence registry](../library/data/player_birth_dates.json) and [verification notes](../library/2013_player_birth_dates.md). Age is derived at Document 5's master date, refreshed with `python scripts/render_player_ages.py`. An age does not determine a rating, medical clearance or retirement.
 
@@ -81,14 +81,14 @@ The availability column records the club's latest medical communication. Every p
 | Travis Kelce | JAX-TRAVISKELCE | TE | 1989-10-05 | 24 | Offseason roster | No. 33; rookie contract | Cleared of his Week 13 minor injury at its December 3 projection | Entry 57 |
 | Cameron Bradfield | JAX-CAMERONBRADFIELD | OT | 1987-09-14 | 26 | Offseason roster (RFA tender, unsigned) | Lowest RFA tender, $1,431,000, made March 11, 2014; unsigned | No communicated restriction | Entry 41 |
 | Lane Johnson | JAX-LANEJOHNSON | OT | 1990-05-08 | 23 | Offseason roster | No. 2; rookie contract; first-round option mechanism | No communicated restriction | Entry 41 |
-| Eugene Monroe | JAX-EUGENEMONROE | OT | 1987-04-18 | 26 | Offseason roster | Re-signed March 11, 2014: five years through 2018, $42.5M, $20M guaranteed; replaced the franchise tender | No communicated restriction | Entry 41 |
+| Eugene Monroe | JAX-EUGENEMONROE | OT | 1987-04-18 | 27 | Offseason roster | Re-signed March 11, 2014: five years through 2018, $42.5M, $20M guaranteed; replaced the franchise tender | No communicated restriction | Entry 41 |
 | Mark Asper | JAX-MARKASPER | G | 1985-11-08 | 28 | Offseason roster | Existing contract/control | No communicated restriction | Entry 41 |
 | Austin Pasztor | JAX-AUSTINPASZTOR | G | 1990-11-26 | 23 | Offseason roster (ERFA tender, unsigned) | ERFA tender, $570,000, made March 11, 2014; unsigned | No communicated restriction | Entry 46 |
 | Will Rackley | JAX-WILLRACKLEY | G | 1989-10-11 | 24 | Offseason roster | Existing rookie contract | Limited, no projected absence (upper extremity, Week 5) | Entry 41 |
 | Mike Brewster | JAX-MIKEBREWSTER | C | 1989-07-27 | 24 | Offseason roster | Existing contract/control | No communicated restriction | Entry 41 |
 | Andre Branch | JAX-ANDREBRANCH | DE | 1989-07-14 | 24 | Offseason roster | Existing rookie contract | No communicated restriction | Entry 41 |
 | Ryan Davis | JAX-RYANDAVIS | DE | 1989-02-24 | 25 | Offseason roster | December 30, 2012 reserve/future contract | Cleared of his Divisional minor injury at its January 14 projection | Entry 65 |
-| Lavar Edwards | JAX-LAVAREDWARDS | DE | 1990-04-29 | 23 | Offseason roster | No. 135; rookie contract | No communicated restriction | Entry 41 |
+| Lavar Edwards | JAX-LAVAREDWARDS | DE | 1990-04-29 | 24 | Offseason roster | No. 135; rookie contract | No communicated restriction | Entry 41 |
 | C.J. Wilson | JAX-CJWILSON | DE | 1987-03-30 | 27 | Offseason roster | Re-signed March 28, 2014: one year, $795,000 | No communicated restriction (current physical March 26) | Entry 103 |
 | Jeremy Mincey | JAX-JEREMYMINCEY | DE | 1983-12-14 | 30 | Offseason roster | Existing 2013 contract | No communicated restriction | Entry 41 |
 | Daniel Te'o-Nesheim | JAX-DANIELTEONESHEIM | DE | 1987-06-12 | 26 | Offseason roster | Signed March 18, 2014: three years, up to $13.5M, $6.0M guaranteed | No communicated restriction; no new medical finding at signing | Entry 98 |
@@ -106,9 +106,9 @@ The availability column records the club's latest medical communication. Every p
 | Mike Harris | JAX-MIKEHARRIS | CB | 1989-01-05 | 25 | Offseason roster | Existing rookie contract | No communicated restriction | Entry 41 |
 | Alterraun Verner | JAX-ALTERRAUNVERNER | CB | 1988-12-13 | 25 | Offseason roster | Signed March 11, 2014: four years through 2017, $29M, $15M guaranteed | No communicated restriction | Entry 95 |
 | Aqib Talib | JAX-AQIBTALIB | CB | 1986-02-13 | 28 | Offseason roster | Signed March 11, 2014: five years through 2018, $46.5M, $21.5M guaranteed | No communicated restriction; no new medical finding at signing | Entry 96 |
-| Jordan Poyer | JAX-JORDANPOYER | CB | 1991-04-25 | 22 | Offseason roster | No. 64; rookie contract | No communicated restriction | Entry 41 |
+| Jordan Poyer | JAX-JORDANPOYER | CB | 1991-04-25 | 23 | Offseason roster | No. 64; rookie contract | No communicated restriction | Entry 41 |
 | Dwight Lowery | JAX-DWIGHTLOWERY | S | 1986-01-23 | 28 | Offseason roster | Existing 2013 contract | No communicated restriction | Entry 41 |
-| Chris Prosinski | JAX-CHRISPROSINSKI | S | 1987-04-28 | 26 | Offseason roster | Existing rookie contract | No communicated restriction | Entry 41 |
+| Chris Prosinski | JAX-CHRISPROSINSKI | S | 1987-04-28 | 27 | Offseason roster | Existing rookie contract | No communicated restriction | Entry 41 |
 | Bacarri Rambo | JAX-BACARRIRAMBO | S | 1990-06-27 | 23 | Offseason roster | No. 169; rookie contract | No communicated restriction | Entry 41 |
 | Brynden Trawick | JAX-BRYNDENTRAWICK | S | 1989-10-23 | 24 | Offseason roster | Three-year UDFA minimum contract | No communicated restriction | Entry 41 |
 | Antwon Blake | JAX-ANTWONBLAKE | S | 1990-08-09 | 23 | Offseason roster (reserve/future, effective March 11) | Reserve/future contract, February 3, 2014; two years through 2015 | No communicated restriction | Entry 94 |
@@ -127,7 +127,7 @@ No later real destination is imported for any departed player unless the league 
 
 | Player | Left control | Current branch status | Source |
 |---|---|---|---|
-| Russell Allen | April 7, 2014 | Traded to Arizona for Arizona's unconditional 2015 fourth, after Posluszny's April 5 clearance and Allen's physical; $416,668 dead money. His real April 22 retirement applies at Arizona | Entry 106 |
+| Russell Allen | April 7, 2014 | Traded to Arizona for Arizona's unconditional 2015 fourth, after Posluszny's April 5 clearance and Allen's physical; $416,668 dead money. He retired at Arizona April 22 under the rails | Entries 106 and 107 |
 | Cecil Shorts | March 31, 2014 | Traded to Indianapolis with Blackmon for the Colts' 2014 third (No. 82) and sixth (No. 194); $110,845 dead money | Entry 104 |
 | Justin Blackmon | March 31, 2014 | Traded to Indianapolis with Shorts; $5,951,636 dead money (2014 and 2015 bonus allocations accelerated) | Entry 104 |
 | Uche Nwaneri | March 20, 2014 | Traded to Arizona with Jacksonville's 2015 first, 2015 fourth and 2016 fifth for No. 38 (the Arizona trade for No. 38) | Entry 99 |
@@ -195,7 +195,7 @@ Current source: `career/2014/draft/pick_ownership.json`; generated seven-round o
 - Defensive coordinator / defensive caller: Romeo Crennel.
 - Special-teams coordinator: Mike Westhoff from February 11, 2014, reporting to Stone; two seasons (2014-2015) at $750,000 each, 2014 guaranteed with offset, 2015 non-guaranteed, no added title or authority. He runs the kicking game; Stone keeps team priorities and consequential game management. He replaced Alan Lowry, who left on January 12, 2014 to become Atlanta's head coach.
 - Twelve assistants are under contract. Scheduled 2014 assistant salary: $7,700,000 ($6,950,000 for the eleven who remained after Lowry plus Westhoff's $750,000). This is a salary commitment, not a budget ceiling or available hiring money; no numeric staff-budget ceiling is established in Document 3 section 3.1.
-- Emergency succession if a caller is unavailable remains unassigned.
+- Emergency practice lead (April 18): Mike Tice runs practice if Stone is out, with Romeo Crennel second; narrow authority (approved schedule only; no role, install, discipline or personnel change); Crennel keeps the defense and Westhoff special teams; medical staff keep participation authority. Emergency succession for a game-day caller remains unassigned.
 - Caldwell retains personnel/contract/cap authority under Document 3.
 
 ## Availability
@@ -217,6 +217,7 @@ The player index owns each player's availability boundary. In summary:
 - Receivers: carried order Thielen (WR2/H), Clemons (WR4), Brown (WR5); WR1 and WR3 open after the March 31 trade.
 - Front: edge order Mincey, Branch, Davis; Marks and Miller inside, Mosley next.
 - Linebackers: Posluszny and Smith are the base linebackers, Smith the communication lead; Stanford is next, and Moore plays in Crennel's packages. Allen was traded to Arizona April 7.
+- Defensive relay succession (April 18): Smith, then Posluszny if cleared and in the package, then Stanford; Moore relays his own packages. Game radio helmets are designated from the active lineup. This is a communication order, not a depth-chart change.
 - Secondary: Mike Harris outside, Poyer nickel, Bouye first outside reserve, Lowery and Rambo at safety.
 - Special teams: Scobee, Anger and Cain are the specialists. Trawick, Rambo, Thielen, Anderson, Poyer, Prosinski and Bouye hold defined primary/backup coverage jobs (Document 5 section 7); Allen's coverage job left with his April 7 trade and is not reassigned. Lowry's primary, backup and emergency communication assignments for all carried units stand until Westhoff or Stone changes them.
 - Packages: the offensive menu is the latest weekly structured call sheet (AFC Divisional, the season's last: `career/2013/postseason/week_19_jacksonville_at_tennessee/call_sheet.json`). Offensive roles are evidence-driven and have no preset shares. Stone calls offense and Crennel calls defense.
@@ -651,5 +652,6 @@ Use the project's canon authority order. Document 6 is the sole authoritative co
 | Shorts and Blackmon trade | 2014 ledger, Entry 104 | March 31, 2014 | Shorts and Blackmon to Indianapolis for the Colts' 2014 third (No. 82) and sixth (No. 194); $6,062,481 dead money; 11 picks in 2014; controlled roster 53 | September 30, 2026; Canonical update - March 31, 2014 - Shorts and Blackmon traded to Indianapolis |
 | Colts picks to Washington | 2014 ledger, Entry 105 | March 31, 2014 | Nos. 82 and 194 to Washington for Jacksonville's original 2015 second; no players or cap change; 9 picks in 2014; controlled roster 53 | September 30, 2026; Canonical update - March 31, 2014 - Colts picks traded to Washington for Jacksonville's 2015 second |
 | Henne, Posluszny and Allen | 2014 ledger, Entry 106 | April 1 to 17, 2014 | Henne re-signed (two years, $4.0M, $2.0M guaranteed); Posluszny cleared April 5; Allen to Arizona for Arizona's 2015 fourth ($416,668 dead money); April 11 staff review held; controlled roster 53 | September 30, 2026; Canonical update - April 17, 2014 - Henne re-signed, Posluszny cleared, Allen traded to Arizona |
+| April 18 decisions, Phase One, schedule | 2014 ledger, Entry 107 | April 18 to May 1, 2014 | Stone's eight April 18 decisions adopted (Tice emergency practice lead, relay succession); Phase One April 21 to May 1; Allen retired at Arizona April 22; schedule released April 23; controlled roster 53 | September 30, 2026; Canonical update - May 1, 2014 - Phase One under way; April 18 decisions; schedule released |
 
 This table is generated from Document 6 and is only a navigation aid. Active unresolved matters remain in the open player-control matters above and Document 5; resolved history, controlling authority, notification, and superseded values remain only in Document 6.

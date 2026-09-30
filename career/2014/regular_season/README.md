@@ -1,6 +1,6 @@
 # Jacksonville 2014 regular season
 
-**NOT_STARTED.** The historical calendar is selected. The April 23 release is preserved here as future schedule research at the March 24 clock; no game result or participant is imported. Kickoffs below use Eastern Time. Preserve separately dated historical amendments.
+**NOT_STARTED.** The schedule was released April 23, 2014, 8 p.m. ET ([ledger](../ledger.md)). The full 256-game release is frozen in [fixtures.json](../schedule/fixtures.json) ([readable view](../schedule/fixtures.md), [sources](../schedule/sources.md)); no game result or participant is imported. Kickoffs below use Eastern Time as released. Dated historical amendments apply on their own dates.
 
 | Week | Date | Jacksonville game | Kickoff | Status |
 |---|---|---|---|---|
@@ -22,7 +22,7 @@
 | 16 | December 18 | Tennessee (Thursday) | 8:25 p.m. | Not started |
 | 17 | December 28 | at Houston | 1 p.m. | Not started |
 
-Source: [Jaguars April 23 release](https://www.jaguars.com/news/2014-jaguars-schedule-released-12908209). Full-league dated fixtures and game release remain required; this reference does not bypass them.
+Source: [Jaguars April 23 release](https://www.jaguars.com/news/2014-jaguars-schedule-released-12908209), matching the frozen league fixtures. The other game release gates remain required; this index does not bypass them.
 
 ## Running a week after release
 

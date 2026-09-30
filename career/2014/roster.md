@@ -1,11 +1,11 @@
 # Jacksonville Jaguars roster
 
-**As of:** April 17, 2014
+**As of:** May 1, 2014
 **Canonical controlled-player count:** **53** (offseason roster; the 90-player limit applies from the league year).
 **Practice squad:** 0. No 2014 practice squad exists before the regular season.
 **2013 season:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-1 (AFC Wild Card: Jacksonville 38, Kansas City 14; AFC Divisional: Tennessee 20, Jacksonville 13).
 
-<!-- player-ages-as-of: 2014-04-17 -->
+<!-- player-ages-as-of: 2014-05-01 -->
 
 Birth dates are sourced in the [identity registry](../../library/data/player_birth_dates.json). Age is completed years at the master date in Document 5; [league ages](player_ages.md) update through the same renderer. Transaction history is in the [2014 ledger](ledger.md).
 
@@ -63,7 +63,7 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | --- | --- | --- | ---: | --- | --- | --- |
 | Cameron Bradfield | OT | 1987-09-14 | 26 | Offseason roster (RFA tender, unsigned) | No communicated restriction | Swing tackle; sixth OL in 6OL |
 | Lane Johnson | OT | 1990-05-08 | 23 | Offseason roster | No communicated restriction | Starting right tackle |
-| Eugene Monroe | OT | 1987-04-18 | 26 | Offseason roster (re-signed March 11, 2014) | No communicated restriction | Starting LT |
+| Eugene Monroe | OT | 1987-04-18 | 27 | Offseason roster (re-signed March 11, 2014) | No communicated restriction | Starting LT |
 
 ### Offensive guards (3)
 
@@ -85,7 +85,7 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | --- | --- | --- | ---: | --- | --- | --- |
 | Andre Branch | DE | 1989-07-14 | 24 | Offseason roster | No communicated restriction | Edge 3 |
 | Ryan Davis | DE | 1989-02-24 | 25 | Offseason roster | No communicated restriction | Edge 4 |
-| Lavar Edwards | DE | 1990-04-29 | 23 | Offseason roster | No communicated restriction | Edge/front depth and teams (dressed Weeks 12 and 14-17; inactive Week 13) |
+| Lavar Edwards | DE | 1990-04-29 | 24 | Offseason roster | No communicated restriction | Edge/front depth and teams (dressed Weeks 12 and 14-17; inactive Week 13) |
 | C.J. Wilson | DE | 1987-03-30 | 27 | Offseason roster (re-signed March 28, 2014) | No communicated restriction (current physical March 26) | Front depth; roster competition |
 | Jeremy Mincey | DE | 1983-12-14 | 30 | Offseason roster | No communicated restriction | Edge 2 |
 | Daniel Te'o-Nesheim | DE | 1987-06-12 | 26 | Offseason roster (signed March 18, 2014) | No communicated restriction | Role not set |
@@ -118,14 +118,14 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | Mike Harris | CB | 1989-01-05 | 25 | Offseason roster | No communicated restriction | Starting CB (from Week 11) |
 | Alterraun Verner | CB | 1988-12-13 | 25 | Offseason roster (signed March 11, 2014) | No communicated restriction | Role not set |
 | Aqib Talib | CB | 1986-02-13 | 28 | Offseason roster (signed March 11, 2014) | No communicated restriction | Role not set |
-| Jordan Poyer | CB | 1991-04-25 | 22 | Offseason roster | No communicated restriction | Nickel; coverage units |
+| Jordan Poyer | CB | 1991-04-25 | 23 | Offseason roster | No communicated restriction | Nickel; coverage units |
 
 ### Safeties (5)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
 | Dwight Lowery | S | 1986-01-23 | 28 | Offseason roster | No communicated restriction | Starting S |
-| Chris Prosinski | S | 1987-04-28 | 26 | Offseason roster | No communicated restriction | Coverage units |
+| Chris Prosinski | S | 1987-04-28 | 27 | Offseason roster | No communicated restriction | Coverage units |
 | Bacarri Rambo | S | 1990-06-27 | 23 | Offseason roster | No communicated restriction | Starting S; coverage units |
 | Brynden Trawick | S | 1989-10-23 | 24 | Offseason roster | No communicated restriction | Coverage units |
 | Antwon Blake | S | 1990-08-09 | 23 | Offseason roster (reserve/future contract effective March 11) | No communicated restriction | Role not set |

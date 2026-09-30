@@ -1,11 +1,11 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2014-APR17-STATE-81`
-**Supersedes:** `JAX-2014-MAR31-STATE-80`
-**Snapshot effective:** April 17, 2014, after the April 11 staff allocation review, the April 7 trade of Russell Allen to Arizona, Paul Posluszny's April 5 clearance and Chad Henne's April 4 re-signing. The 2013 season is complete and archived.
-**Last reconciled:** September 30, 2026; Entry 106 (Henne re-signed, Posluszny cleared, Allen traded to Arizona; clock to April 17).
-**Global package checkpoint:** `Canonical update - April 17, 2014 - Henne re-signed, Posluszny cleared, Allen traded to Arizona`
+**Version:** `JAX-2014-MAY01-STATE-82`
+**Supersedes:** `JAX-2014-APR17-STATE-81`
+**Snapshot effective:** Thursday, May 1, 2014, after the first two weeks of Phase One (April 21 to May 1), the April 23 schedule release, Russell Allen's April 22 retirement at Arizona and the April 18 staff review, where Stone adopted his decisions on the eight open phase-plan choices. The 2013 season is complete and archived.
+**Last reconciled:** September 30, 2026; Entry 107 (Phase One under way; April 18 decisions; schedule released; clock to May 1).
+**Global package checkpoint:** `Canonical update - May 1, 2014 - Phase One under way; April 18 decisions; schedule released`
 
 This document states what is true now and what comes next. Event history lives in the [2014 ledger](../career/2014/ledger.md) (Entries 101 onward) and the [2013 ledger](../career/2013/ledger.md) (through Entry 100).
 
@@ -16,30 +16,31 @@ This document states what is true now and what comes next. Event history lives i
 | Document 1 | `a85650c6ba2557fbec8102dc7533aaf085bf188f` | Active foundation source |
 | Document 2 | `86dfbef40a5ae9b2b6f283dd513df6083bb22645` | Active foundation source |
 | Document 3 | `30ff2bd2eb39f64e31565d5eaf76bdd2de7e54b5` | Active foundation source |
-| Document 4 | `JAX-2014-APR17-REGISTER-60`; reconciled by Entry 106 | Roster, staff, medical and role register |
-| Document 6 | `career/2014/ledger.md` Entries 101 to 106; `career/2013/ledger.md` through Entry 100 | Latest closed event: Entry 106 |
+| Document 4 | `JAX-2014-MAY01-REGISTER-61`; reconciled by Entry 107 | Roster, staff, medical and role register |
+| Document 6 | `career/2014/ledger.md` Entries 101 to 107; `career/2013/ledger.md` through Entry 100 | Latest closed event: Entry 107 |
 
 ## 1. Master clock and competition position
 
 | Field | Current canonical value |
 |---|---|
-| Master date/time | April 17, 2014 |
+| Master date/time | May 1, 2014 |
 | League/season | NFL, 2014; prior 2013 results archived |
 | Team / head coach | Jacksonville Jaguars / Alex Stone, retained for 2014 on his existing contract at the January 15, 2014 season review |
 | Game-day staff | Stone leads the team and chooses which calls to make or delegate. Romeo Crennel normally directs defense; Mike Westhoff runs special teams |
-| Season phase | 2014 offseason; the league year opened at 4 p.m. March 11 (free agency and trades open) |
+| Season phase | 2014 offseason program, Phase One (April 21 to May 2); league year open since 4 p.m. March 11 |
 | Preseason record | 2014 not started; 2013 archive: 2-2 |
 | Regular-season record | 2014 not started; 2013 archive: 10-6 |
 | Postseason record | 2014 not started; 2013 archive: 1-1 |
 | Last event | AFC Divisional: Tennessee 20, Jacksonville 13 |
-| Next competitive event | 2014 preseason: Tampa Bay at home, at Chicago, at Detroit, Atlanta at home (matchups public April 9; exact dates gated to the April 23 schedule release) |
+| Next competitive event | 2014 preseason: August 8 Tampa Bay at home, August 14 at Chicago, August 22 at Detroit, August 28 Atlanta at home. Regular season Week 1: September 7 at Philadelphia |
 
 ## 2. Organization and staff
 
 - Owner Shad Khan and general manager David Caldwell retained Stone after the season review. Caldwell's first 2014 measures are the scoring margin and the quarterback's ball security.
 - Caldwell holds personnel, contract and cap authority. Stone sets football roles within eligibility and medical limits.
 - Twelve assistants are under contract. Mike Westhoff became special teams coordinator on February 11, 2014, replacing Alan Lowry, who left on January 12 to become Atlanta's head coach. Westhoff is paid $750,000 a season for 2014 and 2015 (2014 guaranteed with offset, 2015 non-guaranteed), runs the kicking game and reports to Stone, who keeps team priorities and consequential game management.
-- Scheduled 2014 assistant salary is $7,700,000 for the twelve coaches. That is a commitment, not a budget ceiling. No emergency successor for a play caller is assigned.
+- Scheduled 2014 assistant salary is $7,700,000 for the twelve coaches. That is a commitment, not a budget ceiling.
+- Emergency practice lead (April 18): Mike Tice runs practice if Stone is out, with Crennel second, under narrow authority (the approved schedule; no role, install or personnel change). No emergency successor for a game-day play caller is assigned.
 - No Jacksonville assistant left in the 2014 coaching carousel or the February coaching exposure.
 
 ## 3. Roster and control
@@ -69,7 +70,7 @@ March and April 2014 signings, all under the judgment-based free-agency replay t
 | C.J. Wilson, DE | March 28 | One year, $795,000 (the minimum plus a $65,000 bonus); no role promise; March 26 physical showed no restriction |
 | Chad Henne, QB | April 4 | Two years, $4.0M, $2.0M guaranteed; QB2 behind Cousins, no starting promise |
 
-Completed trades: Uche Nwaneri, Jacksonville's 2015 first, 2015 fourth and 2016 fifth to Arizona for No. 38 (March 20); Jason Babin and Jacksonville's 2017 seventh to Miami for Miami's 2015 third (March 24); Tyson Alualu to Houston for Houston's 2015 fourth (March 24); Cecil Shorts and Justin Blackmon to Indianapolis for the Colts' 2014 third, No. 82, and sixth, No. 194 (March 31); Nos. 82 and 194 to Washington for Jacksonville's original 2015 second (March 31); Russell Allen to Arizona for Arizona's 2015 fourth (April 7), after Paul Posluszny's April 5 clearance. Allen's real April 22 retirement now applies at Arizona.
+Completed trades: Uche Nwaneri, Jacksonville's 2015 first, 2015 fourth and 2016 fifth to Arizona for No. 38 (March 20); Jason Babin and Jacksonville's 2017 seventh to Miami for Miami's 2015 third (March 24); Tyson Alualu to Houston for Houston's 2015 fourth (March 24); Cecil Shorts and Justin Blackmon to Indianapolis for the Colts' 2014 third, No. 82, and sixth, No. 194 (March 31); Nos. 82 and 194 to Washington for Jacksonville's original 2015 second (March 31); Russell Allen to Arizona for Arizona's 2015 fourth (April 7), after Paul Posluszny's April 5 clearance. Allen retired at Arizona on April 22 under the rails, with no Jacksonville effect.
 
 Caldwell has ended paid veteran receiver bidding. Adam Thielen cannot be extended until the day after Jacksonville's last 2014 regular-season game, because the 2011 CBA bars renegotiating an undrafted rookie contract before the end of its second contract year.
 
@@ -94,7 +95,9 @@ Player birth dates and ages are in Document 4, the [roster](../career/2014/roste
 
 ## 6. Availability
 
-Paul Posluszny's head/neck hold from 2013 Week 13 cleared on April 5, 2014, his projected return date, under the same rule applied to every club's injuries in 2013; no new restriction has been communicated. Will Rackley is limited (minor, no projected absence). Every other 2013 Jacksonville injury has cleared, and Pasztor and Mosley are available.
+Paul Posluszny's head/neck hold from 2013 Week 13 cleared on April 5, 2014, his projected return date, under the same rule applied to every club's injuries in 2013; no new restriction has been communicated. Will Rackley is limited (minor, no projected absence); under the injured-player learning rule that is a physical restriction only, so he does full classroom work. Every other 2013 Jacksonville injury has cleared, Pasztor and Mosley are available, and Phase One produced no new restriction.
+
+The four players on unsigned tenders (Bradfield, Clemons, Brown and Pasztor) have no established basis to take part in the offseason program; no program work is recorded for them. Caldwell's office owns the question.
 
 ## 7. Current football roles
 
@@ -103,7 +106,7 @@ Roles carry from the 2013 season until Stone changes them. The March departures 
 - QB: Cousins QB1, Henne QB2 (re-signed April 4), John Parker Wilson QB3; Bray, no role set.
 - OL: Monroe (signed through 2018), left guard open, Brewster at center, Rackley, Johnson. Bradfield (tendered) is the swing tackle and sixth lineman in six-lineman sets; Asper interior depth; Pasztor (tendered) available.
 - Skill: Jones-Drew lead back, Jonathan Grimes RB2, Anderson RB3. Receivers: Nicks, Hawkins, Thielen, Clemons, Brown and Jerrell Jackson. Thielen (WR2 and the movable receiver), Clemons (WR4) and Brown (WR5, both tendered) keep their carried places; WR1 and WR3 are open; Nicks and Hawkins, places not set. Lewis leads the tight ends and Kelce is TE2. Murphy and Jerrell Jackson, no role set. Davante Adams is the plan at No. 38.
-- Defense: edge order Mincey, Branch, Davis, with Edge 1 open for Stone; Te'o-Nesheim, place not set. Marks and Miller inside, Mosley next, C.J. Wilson front depth. Posluszny and Smith base linebackers, with Smith the communication lead, Stanford next and Moore in Crennel's packages. Mike Harris outside; Verner and Talib, places not set; Poyer nickel; Bouye first outside reserve; Lowery and Rambo at safety. Long, D'Anthony Smith and Blake, no role set.
+- Defense: edge order Mincey, Branch, Davis, with Edge 1 open for Stone; Te'o-Nesheim, place not set. Marks and Miller inside, Mosley next, C.J. Wilson front depth. Posluszny and Smith base linebackers, with Smith the communication lead, Stanford next and Moore in Crennel's packages. Relay succession (April 18): Smith, then Posluszny if cleared and in the package, then Stanford; Moore relays his own packages. Mike Harris outside; Verner and Talib, places not set; Poyer nickel; Bouye first outside reserve; Lowery and Rambo at safety. Long, D'Anthony Smith and Blake, no role set.
 - Special teams: Scobee, Anger and Cain. Trawick, Rambo, Thielen, Anderson, Poyer, Prosinski and Bouye hold defined primary and backup coverage jobs; Allen's job left with his trade and is not reassigned.
 
 Execution and observable effort remain separate: protection losses were technique or physical evidence where assignments were identified, and medical limitations are not effort findings. The kernel turns this depth order into game usage, so each weekly TeamInput must carry it as explicit `depth` values.
@@ -116,11 +119,13 @@ Execution and observable effort remain separate: protection losses were techniqu
 | Brent Grimes, CB | Offer withdrawn; not pursued |
 | Rackley-or-Brewster trade | Blocked until Jacksonville actually drafts two offensive linemen; then Caldwell may shop one of them for a 2015 seventh |
 | Left guard, Edge 1, WR1 and WR3 | Stone's decisions |
-| Phase-plan decisions | All five 2014 phase plans are prepared with NOT_STARTED outputs. Individual feedback, living player development, QB-center identification teaching and the second-year install direction are adopted; the April 11 staff review allocated work under that direction. Open for the April 18 review: emergency staff operation, the defensive relay backup method, injured-player learning, the cross-training method, the punt instruction format, the defensive intent format, the consultation cadence and family event dates before April 21 |
+| Phase-plan decisions | All adopted. On April 18 Stone settled the eight open choices ([record](../career/2014/offseason/stone_april_18_2014_decisions.md)): emergency practice lead, relay succession, injured-player learning, targeted cross-training, punt instruction, TAKE / GIVE / ANSWER, consultation cadence and the spring social calendar. The offseason-program output is IN_PROGRESS through May 1; the other four phase outputs are NOT_STARTED |
+| Unsigned tenders and the program | Bradfield, Clemons, Brown and Pasztor have no established participation basis; Bradfield's and Pasztor's cross-training lanes wait on it. Caldwell's office |
+| Film | No individual packet issued in Phase One; packets await coach approval; January 31 receipts unverified |
 
 Research gaps still open:
 
-- The rails from March 11 evening to April 17 are unswept beyond the targets' own moves and the branch trades. The March 4 to 11 AFC rails had no independent second pass; San Francisco, St. Louis, Tampa Bay and Washington were not swept for that window, and twelve clubs were not individually swept for March 1 to 3 (each club page's coverage note).
+- The rails from March 11 evening to May 1 are unswept beyond the targets' own moves, the branch trades and Allen's April 22 retirement. The March 4 to 11 AFC rails had no independent second pass; San Francisco, St. Louis, Tampa Bay and Washington were not swept for that window, and twelve clubs were not individually swept for March 1 to 3 (each club page's coverage note).
 - The credited seasons behind the exclusive-rights tenders and Cain's minimum are unverified.
 - Retirement checks: Rackley, Owens and Rutland have no dated public retirement found (`career/2014/offseason/league_rails/retirements.md`). Any real retirement by a Jacksonville player on or before the master date must still be checked.
 
@@ -130,18 +135,20 @@ From [the 2014 calendar](../career/2014/calendar.md):
 
 | Date, 2014 | Event | Jacksonville position |
 |---|---|---|
-| April 18 | Proposed staff review | Settle the remaining phase-plan choices and absence coverage; install scope and Boot Flood are not reopened |
-| April 21 | Phase One begins (through May 2) | Permitted performance, medical and classroom work; restricted field coaching prohibited |
-| April 22 | Allen's real retirement | Applies at Arizona; no Jacksonville effect |
-| April 23, 8 p.m. | Regular-season schedule release | Verify and publish the historical fixtures and byes |
-| May 2 and May 7 | Restricted free-agent offer-sheet and matching deadlines | Bradfield's tender |
-| May 8 to 10 | Draft | Branch order, board, trades and pairing run on their dates |
+| May 2 | End of Phase One; RFA offer-sheet deadline | Staff handoff and individual written notes; Bradfield's tender |
+| May 5 | Phase Two begins (through May 23) | Legal individual and group teaching, no offense against defense |
+| May 6 and May 8 | Team barbecue; family cookout | Voluntary social calendar, no attendance sheet |
+| May 7 | RFA matching deadline | Bradfield's tender |
+| May 8 to 10 | Draft | Nine picks (13, 26, 38, 90, 129, 153, 168, 205, 241), then the 24-name undrafted board in order; branch order, trades and pairing run on their dates |
+| May 16 and 17 | Rookie minicamp | Actual eligible participants only |
+
+User decisions still owed: the WR1, WR3, left guard and Edge 1 roles (Stone's decisions); Alan Ball after the draft.
 
 ## 10. Engine and 2014 readiness
 
 - Installed kernel: 2014.3. Kernel 2014.1 tracks timeouts, conditions late draws on them, keeps kneel drives in their start zone and publishes goal-to-go distances; the two-minute warning and play clock remain embedded in real drive durations. Kernel 2014.2 conditions late-game category weights on the start zone and lets late cells borrow feasible drives from the same need. Kernel 2014.3 adds credit-only rules (sacks allowed, coverage tackles, long snaps, line starts, one club returner) and the Pro Bowl game type, with every result identical to 2014.2.
 - `runtime/defect_register.md` ranks the open engine defects for the user's decision before any 2014 game; the first is that every club carries the same Average strength.
-- Explicit season routing and `runtime/season_readiness.json` enforce the open release requirements even if the private service is reachable. The Tier 1 engine fixes, rules, dated fixtures, legal inputs and accepted end-to-end closure remain outstanding. See the [readiness and handoff checklist](../career/2014/readiness.md).
+- Explicit season routing and `runtime/season_readiness.json` enforce the open release requirements even if the private service is reachable. The dated fixtures are frozen from the April 23 release. The Tier 1 engine fixes, rules, legal inputs and accepted end-to-end closure remain outstanding. See the [readiness and handoff checklist](../career/2014/readiness.md).
 
 ## 11. 2013 season archive
 
