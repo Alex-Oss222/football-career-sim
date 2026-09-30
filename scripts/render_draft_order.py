@@ -47,7 +47,8 @@ def render():
     ov = lambda row: overall(row, counts)
     lines = [
         "# 2014 NFL Draft: all seven rounds (branch)", "",
-        ("**As of:** March 24, 2014; ledger Entry 100 (compensatory awards announced). **Draft:** May 8–10, 2014." if awards else
+        ("**As of:** May 11, 2014; ledger Entry 108 (Jacksonville's nine selections recorded). **Draft:** May 8–10, 2014." if register.get("selections_2014") else
+         "**As of:** March 24, 2014; ledger Entry 100 (compensatory awards announced). **Draft:** May 8–10, 2014." if awards else
          "**As of:** February 2, 2014; ledger Entry 81. **Draft:** May 8–10, 2014."),
         "**Generated** by `python scripts/render_draft_order.py` from closed branch receipts and [pick_ownership.json](pick_ownership.json). Edit the underlying dated records, then regenerate; do not edit these tables by hand.",
         ("**Coverage:** all **256 selections**: 224 ordinary picks, with original club and recorded owner shown separately, and the 32 branch compensatory picks announced March 24. Overall numbers are exact." if awards else
@@ -69,7 +70,17 @@ def render():
     if awards:
         mine = [p for p in awards["picks"] if p["club"] == "Jacksonville Jaguars"]
         comp_note = (f" Jacksonville received **{len(mine)} compensatory picks**" + (": " + ", ".join(str(p["overall"]) for p in mine) if mine else "") + "; see [Compensatory selections](#compensatory-selections).")
-    lines += ["", f"Jacksonville currently owns **{len(owned)} ordinary 2014 picks**: {owned_labels}.{comp_note} No prospect is selected by this inventory.", "",
+    selections = register.get("selections_2014")
+    if selections:
+        lines += ["", f"Jacksonville owned **{len(owned)} ordinary 2014 picks**: {owned_labels}.{comp_note}", "",
+                  f"**Selections ({selections['status']}):** recorded in [{selections['source'].split('/')[-1]}](../../../{selections['source']}); this table repeats the register only.", "",
+                  "| Overall | Round | Original club | Date | Selection | Status |", "|---:|---:|---|---|---|---|"]
+        for pick in selections["picks"]:
+            lines.append(f'| {pick["overall"]} | {pick["round"]} | {pick["original_club"]} | {pick["date"]} | {pick["player"]}, {pick["position"]}, {pick["school"]} | {pick["status"]} |')
+        lines += [""]
+    else:
+        lines += ["", f"Jacksonville currently owns **{len(owned)} ordinary 2014 picks**: {owned_labels}.{comp_note} No prospect is selected by this inventory.", ""]
+    lines += [
               "| Future pick transferred | Current owner | Overall pick | Authority |",
               "|---|---|---|---|"]
     for asset in register["transfers"]:

@@ -478,3 +478,25 @@ The user subsequently selected the historical calendar: rookie camp May 16–17;
 | 24 | Casey Kreiter | LS, Iowa | Specialist signing, to compete with Jeremy Cain |
 
 **Unchanged conditions.** A player is called only if he actually goes undrafted in the branch draft, has a pre-draft scouting report and, if an underclassman, is on the January 19 special-eligibility list. Each is a separate negotiation that he may decline or lose to another club. Signings stop when the 90-player offseason limit is reached.
+
+## September 30, 2026 amendment: unsigned tenders and the cross-training list
+
+**User instruction, at the May 1, 2014 branch checkpoint.** Bradfield, Pasztor, Clemons and Brown have not signed their tenders, so they are not under contract and do not take part in the offseason program.
+
+- **Bradfield:** no tackle or sixth-lineman work, meetings, install credit or evaluation reps until he signs. Monroe and Lane Johnson take the tackle work. A conditional plan stays ready for the day he signs, and he is not marked down later for work he was not eligible to attend.
+- **Pasztor:** no guard cross-training or emergency-center work until he signs. Brewster, Rackley, Asper, Monroe and Lane Johnson are the signed linemen Stone coaches. If Pasztor signs, he starts at his 2013 interior role before anything is added.
+- **Clemons and Brown:** no receiver install, route work, meetings, competition reps or special-teams teaching, and no "fell behind" language. Receiver teaching goes through Thielen, Nicks, Hawkins, Jerrell Jackson and later eligible additions. When they sign, Drake gives them a catch-up path from what they already knew in 2013.
+- **Social events:** the four are not treated as program participants for dinners or barbecues, appear on no list, and carry no implied obligation while their contracts are unresolved. Once they sign, they and their families join the voluntary social calendar at once.
+
+**Cross-training list, revised now.** Bradfield and Pasztor come off; the signed players who use flexibility go on:
+
+| Player | Secondary work |
+|---|---|
+| Lane Johnson | Limited opposite-tackle familiarity behind his right-tackle development |
+| Mark Asper | Both guard spots and emergency interior communication exposure |
+| Adam Thielen | Outside, slot and H work |
+| Travis Kelce | Attached and detached alignments |
+| Jordan Poyer | Nickel and outside corner |
+| Sio Moore | Linebacker plus defined pressure-package work |
+| Chris Prosinski | Secondary and special-teams versatility |
+| Brynden Trawick | Secondary and special-teams versatility |

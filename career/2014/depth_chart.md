@@ -1,8 +1,8 @@
 # Jacksonville Jaguars 2014 depth chart (working view)
 
-**As of:** April 17, 2014
+**As of:** May 11, 2014
 **Status:** the closed 2013 chart, carried forward with players no longer under Jacksonville control removed. No 2014 depth decision has been made. Removing a player moves those below him up without a reorder; Stone owns the order and changes it only by decision.
-**Machine-readable copy:** [offseason/depth_chart_working.json](offseason/depth_chart_working.json), same schema as [the 2013 chart](../2013/depth_chart.json) plus contract flags, the players added since March 11 and the update log.
+**Machine-readable copy:** [offseason/depth_chart_working.json](offseason/depth_chart_working.json), same schema as [the 2013 chart](../2013/depth_chart.json) plus contract flags, the players added since March 11 (the March signings and the 26 rookies of May 8 to 11) and the update log.
 **Sources:** [2013 depth chart](../2013/depth_chart.json) (Git `781213a`, effective January 6, 2014, AFC Divisional preparation) for the carried order; the [current roster](roster.md) and [contract status register](offseason/contract_status_register.md) for control and availability; [Caldwell's pre-tag-window verifications](offseason/caldwell_pre_tag_verifications.md).
 
 ## How to read this chart
@@ -10,7 +10,7 @@
 - Order is the closed 2013 order within each carried position group, first listed first. Players no longer controlled are removed; nobody else moved.
 - Contract flag comes from the [contract status register](offseason/contract_status_register.md) and the [contract table](offseason/contract_table.md).
 - 2013 recorded role is the role in the [2013 roster](../2013/roster.md) at the end of the 2013 season. Roles are carried for reference until Stone changes them; they do not promise a job after contracts, availability or personnel change. The combined line and secondary lists preserve the source order across different jobs, not a claim that every player competes for the same position.
-- Added, not placed marks players under contract from March 11 whom Stone has not placed: the six reserve/future contracts and the March signings Verner, Talib, Nicks, Hawkins and Te'o-Nesheim. They are listed below their groups with no depth position or role.
+- Added, not placed marks players under contract whom Stone has not placed: the six reserve/future contracts, the March signings Verner, Talib, Nicks, Hawkins and Te'o-Nesheim, the nine 2014 draft selections and the 17 undrafted rookies signed May 10. They are listed below their groups with no depth position or role; rookies are added, not placed, as in 2013.
 - Availability is shown only where the club has recorded a note.
 
 ## Offense
@@ -23,6 +23,7 @@
 | 2 | Chad Henne | Under contract through 2015 (re-signed April 4) | QB2 | No communicated restriction |
 | 3 | John Parker Wilson | Under contract through 2014 | QB3 | No communicated restriction |
 | Added, not placed | Tyler Bray | Reserve/future (effective March 11) | None assigned | No communicated restriction |
+| Added, not placed | Connor Shaw | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
 
 ### Running backs (RB)
 
@@ -49,6 +50,9 @@
 | Added, not placed | Hakeem Nicks | Signed March 14, 2014 (one year) | None assigned | No communicated restriction |
 | Added, not placed | Andrew Hawkins | Signed March 18, 2014 (four years) | None assigned | No communicated restriction |
 | Added, not placed | Jerrell Jackson | Reserve/future (effective March 11) | None assigned | No communicated restriction |
+| Added, not placed | Davante Adams | Rookie contract through 2017 (No. 38, signed May 11) | None assigned (2014 rookie) | No communicated restriction |
+| Added, not placed | Allen Hurns | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
+| Added, not placed | Taylor Gabriel | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
 
 ### Tight ends (TE)
 
@@ -56,6 +60,9 @@
 |---:|---|---|---|---|
 | 1 | Marcedes Lewis | Under contract | Lead TE | No communicated restriction |
 | 2 | Travis Kelce | Under contract | TE2 | No communicated restriction |
+| Added, not placed | Cameron Brate | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
+| Added, not placed | Marcel Jensen | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
+| Added, not placed | Gator Hoskins | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
 
 ### Offensive line (OL)
 
@@ -70,6 +77,15 @@ The kernel group is one OL list. Brad Meester (C) is removed: he retired, and hi
 | 5 | Cameron Bradfield | OT | Tendered RFA (unsigned) | Swing tackle; sixth OL in 6OL | No communicated restriction |
 | 6 | Austin Pasztor | G | Tendered ERFA (unsigned) | Game-day interior OL reserve (from Week 10) | No communicated restriction |
 | 7 | Mark Asper | G | Under contract | Interior OL depth (game-day inactive Weeks 10-17) | No communicated restriction |
+| Added, not placed | Joel Bitonio | OT | Rookie contract through 2017 (No. 26, signed May 11) | None assigned (2014 rookie) | No communicated restriction |
+| Added, not placed | Trai Turner | G | Rookie contract through 2017 (No. 90, signed May 11) | None assigned (2014 rookie) | No communicated restriction |
+| Added, not placed | Corey Linsley | C | Rookie contract through 2017 (No. 153, signed May 11) | None assigned (2014 rookie) | No communicated restriction |
+| Added, not placed | Charles Leno Jr. | OT | Rookie contract through 2017 (No. 168, signed May 11) | None assigned (2014 rookie) | No communicated restriction |
+| Added, not placed | Andrew Norwell | G | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
+| Added, not placed | Cornelius Lucas | OT | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
+| Added, not placed | Matt Feiler | G | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
+| Added, not placed | Tyler Shatley | C | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
+| Added, not placed | Tyler Larsen | C | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
 
 ## Defense
 
@@ -89,6 +105,9 @@ The kernel group is one OL list. Brad Meester (C) is removed: he retired, and hi
 | Added, not placed | Daniel Te'o-Nesheim | DE | Signed March 18, 2014 (three years) | None assigned (signed as the veteran edge rusher) | No communicated restriction |
 | Added, not placed | Jerome Long | DT | Reserve/future (effective March 11) | None assigned | No communicated restriction |
 | Added, not placed | D'Anthony Smith | DT | Reserve/future (effective March 11) | None assigned | No communicated restriction |
+| Added, not placed | Aaron Donald | DT | Rookie contract through 2017 (No. 13, signed May 11) | None assigned (2014 rookie) | No communicated restriction |
+| Added, not placed | Kasim Edebali | DE | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
+| Added, not placed | Jackson Jeffcoat | DE | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
 
 ### Linebackers (LB)
 
@@ -98,6 +117,9 @@ The kernel group is one OL list. Brad Meester (C) is removed: he retired, and hi
 | 2 | Julian Stanford | Under contract | LB depth after Allen | No communicated restriction |
 | 3 | Sio Moore | Under contract | Package LB (Crennel's packages) | No communicated restriction |
 | 4 | Paul Posluszny | Under contract | Base LB; out (Allen starts from Week 14) | No communicated restriction (head/neck hold cleared April 5, 2014) |
+| Added, not placed | Telvin Smith | Rookie contract through 2017 (No. 129, signed May 11) | None assigned (2014 rookie) | No communicated restriction |
+| Added, not placed | Christian Jones | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
+| Added, not placed | Todd Davis | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
 
 ### Defensive backs (DB)
 
@@ -113,6 +135,9 @@ The kernel group is one OL list. Brad Meester (C) is removed: he retired, and hi
 | Added, not placed | Alterraun Verner | CB | Signed March 11, 2014 (four years) | None assigned | No communicated restriction |
 | Added, not placed | Aqib Talib | CB | Signed March 11, 2014 (five years) | None assigned | No communicated restriction |
 | Added, not placed | Antwon Blake | S | Reserve/future (effective March 11) | None assigned | No communicated restriction |
+| Added, not placed | Jemea Thomas | DB | Rookie contract through 2017 (No. 205, signed May 11) | None assigned (2014 rookie) | No communicated restriction |
+| Added, not placed | Malcolm Butler | CB | Rookie contract through 2017 (No. 241, signed May 11) | None assigned (2014 rookie) | No communicated restriction |
+| Added, not placed | Adrian Phillips | S | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
 
 ## Special teams
 
@@ -121,19 +146,22 @@ The kernel group is one OL list. Brad Meester (C) is removed: he retired, and hi
 | K (placekicker) | Josh Scobee | Under contract | K | No communicated restriction |
 | P (punt) | Bryan Anger | Under contract | P | No communicated restriction |
 | LS | Jeremy Cain | Under contract through 2014 (re-signed March 19) | LS | No communicated restriction |
+| LS (added, not placed) | Casey Kreiter | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie; camp competition with Cain) | No communicated restriction |
 | Kick returner | No designation | Not applicable | The closed 2013 chart designates no returner (its `roles` are passer, placekicker and punt only) | Not applicable |
 | Punt returner | No designation | Not applicable | Same as above | Not applicable |
 
 Mike Westhoff has coordinated special teams since February 11, 2014. No 2014 returner, coverage-unit or specialist decision has been made.
 
-## Counts at April 17, 2014
+## Counts at May 11, 2014
 
 | Group | Count |
 |---|---:|
 | Players on the carried chart | 42 |
 | of whom tendered RFA or ERFA (unsigned) | 4 |
 | Added, not placed (six futures, Verner, Talib, Nicks, Hawkins and Te'o-Nesheim) | 11 |
-| Controlled players | 53 |
+| Added, not placed: 2014 draft selections (Entry 108) | 9 |
+| Added, not placed: 2014 undrafted rookies (Entry 108) | 17 |
+| Controlled players | 79 |
 | Removed since the 2013 chart (Meester, the four other March 11 departures not re-signed, Nwaneri, Babin, Alualu, Shorts, Blackmon and Allen) | 11 |
 
 Roles open: TE3 (Reisner), the corner places of Brent Grimes and Ball, starting left guard (Nwaneri, traded March 20), the carried Edge 1 role (Babin, traded March 24) and the carried WR1 and WR3 roles (Shorts and Blackmon, traded March 31). The chart does not fill open roles: those are Stone's decisions.
@@ -160,6 +188,8 @@ Add a row for every signing, tag, tender, trade, release, retirement, draft pick
 | March 28, 2014 | Jones-Drew and C.J. Wilson re-signed | Entry 103 | Jones-Drew restored at RB 1 (lead back) and Wilson after Pendleton, their carried 2013 places; the players below each move down one |
 | March 31, 2014 | Shorts and Blackmon traded to Indianapolis | Entry 104 | Shorts (WR 1) and Blackmon (WR 3) removed; Thielen, Clemons and Brown move up without a reorder; the carried WR1 and WR3 roles are open |
 | April 4 to 7, 2014 | Henne re-signed; Posluszny cleared; Allen traded to Arizona | Entry 106 | Henne restored at QB 2, his carried place; John Parker Wilson moves down one. Posluszny's hold cleared April 5. Allen (LB 2) removed; Stanford, Moore and Posluszny move up without a reorder. Smith and Posluszny keep their carried base roles and Smith the communication lead; no Stone role decision |
+| May 2, 2014 | Unsigned tenders: user instruction on program participation | Entry 109 | No chart change. Bradfield, Clemons, Brown and Pasztor keep their carried places and tender flags; they take no part in the program until they sign |
+| May 8 to 11, 2014 | 2014 draft, undrafted signings and rookie contracts | Entry 108 | Added, not placed: the nine draft selections and 17 undrafted rookies in their groups (Kreiter under special teams). No order change; no Stone role decision |
 
 ## Maintaining the game-input copy
 

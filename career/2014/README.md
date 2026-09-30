@@ -1,12 +1,12 @@
 # Jacksonville 2014
 
-**Current checkpoint:** May 1, 2014; Entry 107 (Stone's April 18 decisions adopted, Phase One under way from April 21, Allen retired at Arizona April 22, regular-season schedule released April 23). There are 53 controlled players: 49 signed and four unsigned tenders. Nine draft picks: 13, 26, 38, 90, 129, 153, 168, 205 and 241; no compensatory award. 2015 picks held: Jacksonville's own second, Miami's third, Houston's fourth and Arizona's fourth; Jacksonville's 2017 seventh went to Miami. Phase One has run April 21 to May 1; no 2014 game has run.
+**Current checkpoint:** May 11, 2014; Entries 108 and 109 (the 2014 draft May 8 to 10, 17 undrafted signings May 10, rookie contracts May 11; Phase One handoff May 2; the four unsigned tenders outside the program; Phase Two under way from May 5). There are 79 controlled players: 75 signed, including nine draft selections (Donald, Bitonio, Adams, Turner, Telvin Smith, Linsley, Leno, Thomas, Butler) and 17 undrafted rookies, and four unsigned tenders. All nine 2014 picks are exercised; no compensatory award. 2015 picks held: Jacksonville's own second, Miami's third, Houston's fourth and Arizona's fourth; Jacksonville's 2017 seventh went to Miami. No 2014 game has run.
 
 ## Start and resume here
 
 [2014 player cards](player_profiles/README.md) · [2014 player template](player_profiles/TEMPLATE.md) · [2013 final player sheets](../2013/player_profiles/README.md)
 
-Read [current state](../../state/05_Current_Season_State.md), [calendar](calendar.md), then the relevant row below. The selected program was filed March 28 and began April 21; Stone's [April 18 decisions](offseason/stone_april_18_2014_decisions.md) settle the remaining phase-plan choices. Held negotiations and other open choices keep their existing owners.
+Read [current state](../../state/05_Current_Season_State.md), [calendar](calendar.md), then the relevant row below. The selected program was filed March 28 and began April 21; Stone's [April 18 decisions](offseason/stone_april_18_2014_decisions.md) settle the remaining phase-plan choices, revised May 1 for the unsigned tenders. The draft and undrafted class are closed ([draftees](offseason/draft/draftees.md), [undrafted signings](offseason/draft/udfa_signings.md)); rookie onboarding and minicamp come next. Held negotiations and other open choices keep their existing owners.
 
 | Order of work | Existing home | What carries to the next step |
 |---|---|---|

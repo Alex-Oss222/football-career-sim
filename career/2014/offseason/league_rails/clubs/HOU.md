@@ -86,6 +86,7 @@
 | March 11, 2014 | Release | Owen Daniels, TE | Released one day after saying he would restructure. Time of day not established | [ProFootballTalk, March 11, 2014](https://profootballtalk.nbcsports.com/2014/03/11/texans-release-tight-end-owen-daniels/); [NFL.com](https://www.nfl.com/news/owen-daniels-released-by-houston-texans-0ap2000000332845); [Battle Red Blog, March 11, 2014](https://www.battleredblog.com/2014/3/11/5496344/texans-release-owen-daniels); [ESPN](https://www.espn.com/nfl/story/_/id/10588902/owen-daniels-released-houston-texans). Confirmed | Yes: applied March 11, 2014 by Entry 94 |
 | March 18, 2014 | Signing (free agent) | Jerrell Powe, NT | Signed from Kansas City's free agents | [ProFootballTalk, March 18, 2014](https://profootballtalk.nbcsports.com/2014/03/18/texans-sign-nose-tackle-jerrell-powe/); [Houston Chronicle blog](https://blog.chron.com/ultimatetexans/2014/03/texans-sign-free-agent-dt-jerrell-powe/) | Yes: applied by Entry 102 |
 | March 24, 2014 | Trade (branch) | Tyson Alualu, DT | Acquired from Jacksonville for Houston's unconditional 2015 fourth-round pick (package E) | Branch record, 2014 ledger Entry 102 | Yes: applied March 24, 2014 by Entry 102 |
+| May 10, 2014 | Undrafted signing (real; not applied) | Matt Feiler, G | Signed with Jacksonville instead (real terms not recovered; club from the contracts file) | Cached nflverse 2014 draft file (draft_picks.csv) and the nflverse copy of the Over The Cap historical contracts file; [pairing record](../draft_pairing.md); [undrafted signings](../../draft/udfa_signings.md). Real selection and club Confirmed from the draft file; undrafted clubs from the contracts file | Yes: applied May 10, 2014 by Entry 108 |
 
 **Coverage note (Entry 89, February 28, 2014):** the February 26 to 28 moves in this table come from a bounded two-pass search. The web-search budget ran out during pass 2, which could therefore only re-read the evidence stored from pass 1. Eighteen of the 31 other clubs had no move found in the window; that is not a verified negative, and other moves by this club in the window may exist.
 
@@ -93,3 +94,5 @@
 
 
 **Coverage note (Entry 102, March 24, 2014):** the branch trade is recorded, and moves verified in a bounded search are added with their sources. The rails from March 11 evening to March 24 are otherwise not swept.
+
+**Coverage note (Entry 108, May 11, 2014):** only the draft pairing and undrafted moves involving Jacksonville's selections and signings are recorded here; this club's other real 2014 draft selections and undrafted signings are applied when its Week 1 rails are built. The rails from March 11 evening to May 11 are otherwise not swept for this club.

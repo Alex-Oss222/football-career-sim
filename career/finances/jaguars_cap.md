@@ -1,6 +1,6 @@
 # Jacksonville Jaguars cap tracker, 2014 to 2025
 
-As of April 17, 2014, Entry 106. Whole US dollars.
+As of May 11, 2014, Entry 109. Whole US dollars.
 
 [Player cap table](#cap-by-player) | [Individual contract details](jaguars_contract_details.md) | [Expirations](#expiring-contracts-and-free-agent-classes) | [Updating this tracker](README.md)
 
@@ -10,7 +10,7 @@ As of April 17, 2014, Entry 106. Whole US dollars.
 |---|---|---|
 | League cap | $133,000,000 | Published league limit |
 | Adjusted team cap | Unresolved | League cap plus verified carryover and adjustments |
-| Recorded player obligations | $111,743,080 | All scheduled contracts, including unsigned tenders once |
+| Recorded player obligations | $127,183,362 | All scheduled contracts, including unsigned tenders once |
 | Dead money | $10,262,324 | Separate departed-contract charges |
 | Certified cap space | Unresolved | Withheld until club accounting is reconciled |
 | Space after rookie reserve | Unresolved | Requires verified net rookie cost and certified space |
@@ -19,18 +19,18 @@ The [current worksheet](../2014/offseason/current_cap_worksheet.md) records the 
 
 | Working offseason reconciliation | 2014 |
 |---|---|
-| Recorded player obligations | $111,743,080 |
-| P5 salary displaced below Top 51 | -$840,000 |
+| Recorded player obligations | $127,183,362 |
+| P5 salary displaced below Top 51 | -$12,060,000 |
 | Separate dead money | $10,262,324 |
-| Top-51 obligations before workout charge | $121,165,404 |
+| Top-51 obligations before workout charge | $125,385,686 |
 | Opening workout charge (recorded worksheet) | $504,000 |
-| Working counted total | $121,669,404 |
-| Difference below league cap, before club adjustments and reserves | $11,330,596 |
+| Working counted total | $125,889,686 |
+| Difference below league cap, before club adjustments and reserves | $7,110,314 |
 
 | Rollover from the prior year (working estimate, not certified) | 2014 |
 |---|---|
 | Unused prior-year room carried in | $5,330,000 to $6,000,000 |
-| Difference including the rollover estimate | $16,660,596 to $17,330,596 |
+| Difference including the rollover estimate | $12,440,314 to $13,110,314 |
 
 The rollover is calculated step by step in the [cap worksheet](../2014/offseason/current_cap_worksheet.md#2013-rollover). It becomes certified room only when club accounting is reconciled.
 
@@ -56,11 +56,14 @@ The rollover is calculated step by step in the [cap worksheet](../2014/offseason
 | [Montell Owens](jaguars_contract_details.md#montell-owens) | FB | 29 | Signed | $2,891,667 | 2.17% | $2,591,667 | $300,000 | $0 | $0 |
 | [Andrew Hawkins](jaguars_contract_details.md#andrew-hawkins) | WR | 28 | Signed | $2,800,000 | 2.11% | $1,800,000 | $1,000,000 | $0 | $4,000,000 |
 | [Maurice Jones-Drew](jaguars_contract_details.md#maurice-jones-drew) | RB | 28 | Signed | $2,600,000 | 1.95% | $1,750,000 | $750,000 | $100,000 | $1,750,000 |
+| [Aaron Donald](jaguars_contract_details.md#aaron-donald) | IDL | 22 | Signed | $2,399,125 | 1.80% | $420,000 | $1,979,125 | $0 | $2,220,000 |
+| [Joel Bitonio](jaguars_contract_details.md#joel-bitonio) | OT | 22 | Signed | $1,814,775 | 1.36% | $420,000 | $1,394,775 | $0 | $736,485 |
 | [Will Rackley](jaguars_contract_details.md#will-rackley) | OG | 24 | Signed | $1,585,868 | 1.19% | $1,431,000 | $154,868 | $0 | $0 |
 | [Cameron Bradfield](jaguars_contract_details.md#cameron-bradfield) | OT | 26 | Unsigned tender | $1,431,000 | 1.08% | $1,431,000 | $0 | $0 | Conditional on signing |
 | [Chad Henne](jaguars_contract_details.md#chad-henne) | QB | 28 | Signed | $1,400,000 | 1.05% | $800,000 | $600,000 | $0 | $800,000 |
 | [Andre Branch](jaguars_contract_details.md#andre-branch) | EDGE | 24 | Signed | $1,388,164 | 1.04% | $827,722 | $535,442 | $25,000 | $0 |
 | [Travis Kelce](jaguars_contract_details.md#travis-kelce) | TE | 24 | Signed | $1,242,978 | 0.93% | $653,596 | $589,382 | $0 | $1,153,596 |
+| [Davante Adams](jaguars_contract_details.md#davante-adams) | WR | 21 | Signed | $1,178,733 | 0.89% | $420,000 | $758,733 | $0 | $185,697 |
 | [Jeremy Cain](jaguars_contract_details.md#jeremy-cain) | LS | 33 | Signed | $855,000 | 0.64% | $855,000 | $0 | $0 | $0 |
 | [Chris Prosinski](jaguars_contract_details.md#chris-prosinski) | S | 26 | Signed | $840,045 | 0.63% | $735,018 | $105,027 | $0 | $0 |
 | [C.J. Wilson](jaguars_contract_details.md#cj-wilson) | EDGE | 26 | Signed | $795,000 | 0.60% | $730,000 | $65,000 | $0 | $0 |
@@ -77,8 +80,10 @@ The rollover is calculated step by step in the [cap worksheet](../2014/offseason
 | [Toney Clemons](jaguars_contract_details.md#toney-clemons) | WR | 25 | Unsigned tender | $570,000 | 0.43% | $570,000 | $0 | $0 | Conditional on signing |
 | [Austin Pasztor](jaguars_contract_details.md#austin-pasztor) | OG | 23 | Unsigned tender | $570,000 | 0.43% | $570,000 | $0 | $0 | Conditional on signing |
 | [Jonathan Grimes](jaguars_contract_details.md#jonathan-grimes) | RB | 24 | Signed | $570,000 | 0.43% | $570,000 | $0 | $0 | $0 |
+| [Trai Turner](jaguars_contract_details.md#trai-turner) | OG | 20 | Signed | $555,880 | 0.42% | $420,000 | $135,880 | $0 | $0 |
 | [Lavar Edwards](jaguars_contract_details.md#lavar-edwards) | EDGE | 23 | Signed | $548,403 | 0.41% | $495,000 | $53,403 | $0 | $0 |
 | [Bacarri Rambo](jaguars_contract_details.md#bacarri-rambo) | S | 23 | Signed | $527,205 | 0.40% | $495,000 | $32,205 | $0 | $0 |
+| [Telvin Smith](jaguars_contract_details.md#telvin-smith) | LB | 23 | Signed | $520,136 | 0.39% | $420,000 | $100,136 | $0 | $0 |
 | [Brynden Trawick](jaguars_contract_details.md#brynden-trawick) | S | 24 | Signed | $495,000 | 0.37% | $495,000 | $0 | $0 | $0 |
 | [A.J. Bouye](jaguars_contract_details.md#aj-bouye) | CB | 22 | Signed | $495,000 | 0.37% | $495,000 | $0 | $0 | $0 |
 | [Adam Thielen](jaguars_contract_details.md#adam-thielen) | WR | 23 | Signed | $495,000 | 0.37% | $495,000 | $0 | $0 | $0 |
@@ -88,13 +93,34 @@ The rollover is calculated step by step in the [cap worksheet](../2014/offseason
 | [D'Anthony Smith](jaguars_contract_details.md#danthony-smith) | IDL | 25 | Signed | $495,000 | 0.37% | $495,000 | $0 | $0 | $0 |
 | [Antwon Blake](jaguars_contract_details.md#antwon-blake) | S | 23 | Signed | $495,000 | 0.37% | $495,000 | $0 | $0 | $0 |
 | [Mike Brown](jaguars_contract_details.md#mike-brown) | WR | 25 | Unsigned tender | $495,000 | 0.37% | $495,000 | $0 | $0 | Conditional on signing |
+| [Corey Linsley](jaguars_contract_details.md#corey-linsley) | C | 22 | Signed | $468,000 | 0.35% | $420,000 | $48,000 | $0 | $0 |
+| [Charles Leno Jr.](jaguars_contract_details.md#charles-leno-jr) | OT | 22 | Signed | $462,870 | 0.35% | $420,000 | $42,870 | $0 | $0 |
+| [Jemea Thomas](jaguars_contract_details.md#jemea-thomas) | S | 24 | Signed | $443,513 | 0.33% | $420,000 | $23,513 | $0 | $0 |
+| [Malcolm Butler](jaguars_contract_details.md#malcolm-butler) | CB | 24 | Signed | $432,250 | 0.33% | $420,000 | $12,250 | $0 | $0 |
+| [Andrew Norwell](jaguars_contract_details.md#andrew-norwell) | OG | 22 | Signed | $425,000 | 0.32% | $420,000 | $5,000 | $0 | $0 |
+| [Cornelius Lucas](jaguars_contract_details.md#cornelius-lucas) | OT | 22 | Signed | $425,000 | 0.32% | $420,000 | $5,000 | $0 | $0 |
+| [Matt Feiler](jaguars_contract_details.md#matt-feiler) | OG | 21 | Signed | $425,000 | 0.32% | $420,000 | $5,000 | $0 | $0 |
+| [Tyler Shatley](jaguars_contract_details.md#tyler-shatley) | C | 23 | Signed | $425,000 | 0.32% | $420,000 | $5,000 | $0 | $0 |
+| [Tyler Larsen](jaguars_contract_details.md#tyler-larsen) | C | 22 | Signed | $425,000 | 0.32% | $420,000 | $5,000 | $0 | $0 |
 | [Tyler Bray](jaguars_contract_details.md#tyler-bray) | QB | 22 | Signed | $420,000 | 0.32% | $420,000 | $0 | $0 | $0 |
 | [Jerrell Jackson](jaguars_contract_details.md#jerrell-jackson) | WR | 24 | Signed | $420,000 | 0.32% | $420,000 | $0 | $0 | $0 |
 | [Jerome Long](jaguars_contract_details.md#jerome-long) | IDL | 23 | Signed | $420,000 | 0.32% | $420,000 | $0 | $0 | $0 |
+| [Christian Jones](jaguars_contract_details.md#christian-jones) | LB | 23 | Signed | $420,000 | 0.32% | $420,000 | $0 | $0 | $0 |
+| [Allen Hurns](jaguars_contract_details.md#allen-hurns) | WR | 22 | Signed | $420,000 | 0.32% | $420,000 | $0 | $0 | $0 |
+| [Adrian Phillips](jaguars_contract_details.md#adrian-phillips) | S | 22 | Signed | $420,000 | 0.32% | $420,000 | $0 | $0 | $0 |
+| [Cameron Brate](jaguars_contract_details.md#cameron-brate) | TE | 22 | Signed | $420,000 | 0.32% | $420,000 | $0 | $0 | $0 |
+| [Todd Davis](jaguars_contract_details.md#todd-davis) | LB | 21 | Signed | $420,000 | 0.32% | $420,000 | $0 | $0 | $0 |
+| [Connor Shaw](jaguars_contract_details.md#connor-shaw) | QB | 22 | Signed | $420,000 | 0.32% | $420,000 | $0 | $0 | $0 |
+| [Kasim Edebali](jaguars_contract_details.md#kasim-edebali) | EDGE | 24 | Signed | $420,000 | 0.32% | $420,000 | $0 | $0 | $0 |
+| [Marcel Jensen](jaguars_contract_details.md#marcel-jensen) | TE | 24 | Signed | $420,000 | 0.32% | $420,000 | $0 | $0 | $0 |
+| [Gator Hoskins](jaguars_contract_details.md#gator-hoskins) | TE | 22 | Signed | $420,000 | 0.32% | $420,000 | $0 | $0 | $0 |
+| [Jackson Jeffcoat](jaguars_contract_details.md#jackson-jeffcoat) | EDGE | 23 | Signed | $420,000 | 0.32% | $420,000 | $0 | $0 | $0 |
+| [Taylor Gabriel](jaguars_contract_details.md#taylor-gabriel) | WR | 23 | Signed | $420,000 | 0.32% | $420,000 | $0 | $0 | $0 |
+| [Casey Kreiter](jaguars_contract_details.md#casey-kreiter) | LS | 23 | Signed | $420,000 | 0.32% | $420,000 | $0 | $0 | $0 |
 
 Percentages use the published league cap because adjusted club cap is unresolved. Other cap preserves the recorded aggregate; unverified roster, option, workout and incentive components are not invented. Unpaid guarantees exclude bonuses already paid.
 
-The inventory covers 53 current players: 49 under signed contracts (the six reserve/future contracts included from March 11) and 4 on unsigned tenders (RFA or ERFA). 11 former players are retained for financial history only.
+The inventory covers 79 current players: 75 under signed contracts (the six reserve/future contracts included from March 11) and 4 on unsigned tenders (RFA or ERFA). 11 former players are retained for financial history only.
 
 ## Reading the table
 
@@ -121,14 +147,14 @@ The [2011 agreement](https://nflps.org/wp-content/uploads/2012/05/collective-bar
 
 | Item | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 |
 |---|---|---|---|---|---|---|---|---|---|
-| Signed contracts and futures | $108,677,080 | $105,495,454 | $64,011,292 | $37,800,000 | $18,900,000 |  |  |  |  |
+| Signed contracts and futures | $124,117,362 | $123,275,736 | $84,131,574 | $48,550,284 | $18,900,000 |  |  |  |  |
 | Unsigned tenders | $3,066,000 |  |  |  |  |  |  |  |  |
-| Player contracts including tender | $111,743,080 | $105,495,454 | $64,011,292 | $37,800,000 | $18,900,000 |  |  |  |  |
+| Player contracts including tender | $127,183,362 | $123,275,736 | $84,131,574 | $48,550,284 | $18,900,000 |  |  |  |  |
 | Separate carry-forward dead money | $10,262,324 | $0 | $0 | $0 | $0 |  |  |  |  |
-| Recorded cap obligations | $122,005,404 | $105,495,454 | $64,011,292 | $37,800,000 | $18,900,000 |  |  |  |  |
-| Scheduled player cash including tender | $120,547,610 | $84,948,215 | $52,944,415 | $32,150,000 | $16,000,000 |  |  |  |  |
-| Salary guaranteed in that year | $29,872,305 | $34,532,418 | $3,296,127 | $0 | $0 |  |  |  |  |
-| Players with scheduled charges | 53 | 36 | 13 | 5 | 2 |  |  |  |  |
+| Recorded cap obligations | $137,445,686 | $123,275,736 | $84,131,574 | $48,550,284 | $18,900,000 |  |  |  |  |
+| Scheduled player cash including tender | $149,523,740 | $98,208,215 | $68,544,415 | $38,405,000 | $16,000,000 |  |  |  |  |
+| Salary guaranteed in that year | $30,898,002 | $35,358,903 | $3,896,127 | $690,000 | $0 |  |  |  |  |
+| Players with scheduled charges | 79 | 62 | 39 | 14 | 2 |  |  |  |  |
 
 **Additional three years**
 
@@ -151,26 +177,26 @@ These are the working obligations for the recorded deals, before club adjustment
 
 | Position | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 |
 |---|---|---|---|---|---|---|---|---|---|
-| QB | $3,120,000 | $3,770,000 |  |  |  |  |  |  |  |
+| QB | $3,540,000 | $4,280,000 | $600,000 |  |  |  |  |  |  |
 | RB | $4,160,000 | $5,570,000 |  |  |  |  |  |  |  |
 | FB | $2,891,667 | $2,891,667 |  |  |  |  |  |  |  |
-| WR | $9,780,000 | $7,095,000 | $3,400,000 | $3,400,000 |  |  |  |  |  |
-| TE | $9,492,978 | $9,691,574 | $1,740,170 |  |  |  |  |  |  |
-| OT | $11,849,545 | $15,382,254 | $15,845,963 | $9,100,000 | $9,100,000 |  |  |  |  |
-| OG | $2,725,868 | $660,000 |  |  |  |  |  |  |  |
-| C | $573,334 |  |  |  |  |  |  |  |  |
-| EDGE | $12,726,567 | $12,182,928 | $8,228,403 |  |  |  |  |  |  |
-| IDL | $12,581,182 | $8,017,848 | $7,500,000 | $7,500,000 |  |  |  |  |  |
-| LB | $14,190,925 | $10,209,257 | $8,299,257 |  |  |  |  |  |  |
-| CB | $15,605,741 | $18,899,741 | $18,290,294 | $17,800,000 | $9,800,000 |  |  |  |  |
-| S | $6,232,250 | $5,862,205 | $707,205 |  |  |  |  |  |  |
+| WR | $11,798,733 | $9,383,733 | $5,958,733 | $4,848,733 |  |  |  |  |  |
+| TE | $10,752,978 | $11,221,574 | $3,540,170 |  |  |  |  |  |  |
+| OT | $14,552,190 | $18,354,899 | $19,088,608 | $11,917,647 | $9,100,000 |  |  |  |  |
+| OG | $4,131,748 | $2,335,880 | $1,945,880 | $870,880 |  |  |  |  |  |
+| C | $1,891,334 | $1,588,000 | $1,858,000 | $738,000 |  |  |  |  |  |
+| EDGE | $13,566,567 | $13,202,928 | $9,428,403 |  |  |  |  |  |  |
+| IDL | $14,980,307 | $10,506,973 | $10,079,125 | $10,169,125 |  |  |  |  |  |
+| LB | $15,551,061 | $11,839,393 | $10,199,393 | $790,136 |  |  |  |  |  |
+| CB | $16,037,991 | $19,421,991 | $18,902,544 | $18,502,250 | $9,800,000 |  |  |  |  |
+| S | $7,095,763 | $6,905,718 | $1,930,718 | $713,513 |  |  |  |  |  |
 | K | $4,187,500 | $4,387,500 |  |  |  |  |  |  |  |
 | P | $770,523 | $875,480 |  |  |  |  |  |  |  |
-| LS | $855,000 |  |  |  |  |  |  |  |  |
-| Offense | $44,593,392 | $45,060,495 | $20,986,133 | $12,500,000 | $9,100,000 |  |  |  |  |
-| Defense | $61,336,665 | $55,171,979 | $43,025,159 | $25,300,000 | $9,800,000 |  |  |  |  |
-| Special teams | $5,813,023 | $5,262,980 |  |  |  |  |  |  |  |
-| All player contracts | $111,743,080 | $105,495,454 | $64,011,292 | $37,800,000 | $18,900,000 |  |  |  |  |
+| LS | $1,275,000 | $510,000 | $600,000 |  |  |  |  |  |  |
+| Offense | $53,718,650 | $55,625,753 | $32,991,391 | $18,375,260 | $9,100,000 |  |  |  |  |
+| Defense | $67,231,689 | $61,877,003 | $50,540,183 | $30,175,024 | $9,800,000 |  |  |  |  |
+| Special teams | $6,233,023 | $5,772,980 | $600,000 |  |  |  |  |  |  |
+| All player contracts | $127,183,362 | $123,275,736 | $84,131,574 | $48,550,284 | $18,900,000 |  |  |  |  |
 
 **Additional three years**
 
@@ -210,8 +236,9 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 | [Chad Henne](jaguars_contract_details.md#chad-henne) | 2015 | Signed | $1,400,000 | $2,600,000 |  |  |  |  |  |  |  | $4,000,000 |
 | [John Parker Wilson](jaguars_contract_details.md#john-parker-wilson) | 2014 | Signed | $730,000 |  |  |  |  |  |  |  |  | $730,000 |
 | [Kirk Cousins](jaguars_contract_details.md#kirk-cousins) | 2015 | Signed | $570,000 | $660,000 |  |  |  |  |  |  |  | $1,230,000 |
+| [Connor Shaw](jaguars_contract_details.md#connor-shaw) | 2016 | Signed | $420,000 | $510,000 | $600,000 |  |  |  |  |  |  | $1,530,000 |
 | [Tyler Bray](jaguars_contract_details.md#tyler-bray) | 2015 | Signed | $420,000 | $510,000 |  |  |  |  |  |  |  | $930,000 |
-| QB total |  |  | $3,120,000 | $3,770,000 |  |  |  |  |  |  |  | $6,890,000 |
+| QB total |  |  | $3,540,000 | $4,280,000 | $600,000 |  |  |  |  |  |  | $8,420,000 |
 
 **Additional three years**
 
@@ -220,8 +247,9 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 | [Chad Henne](jaguars_contract_details.md#chad-henne) | 2015 | Signed |  |  |  | $4,000,000 |
 | [John Parker Wilson](jaguars_contract_details.md#john-parker-wilson) | 2014 | Signed |  |  |  | $730,000 |
 | [Kirk Cousins](jaguars_contract_details.md#kirk-cousins) | 2015 | Signed |  |  |  | $1,230,000 |
+| [Connor Shaw](jaguars_contract_details.md#connor-shaw) | 2016 | Signed |  |  |  | $1,530,000 |
 | [Tyler Bray](jaguars_contract_details.md#tyler-bray) | 2015 | Signed |  |  |  | $930,000 |
-| QB total |  |  |  |  |  | $6,890,000 |
+| QB total |  |  |  |  |  | $8,420,000 |
 
 ### RB
 
@@ -269,13 +297,16 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | [Hakeem Nicks](jaguars_contract_details.md#hakeem-nicks) | 2014 | Signed | $5,000,000 |  |  |  |  |  |  |  |  | $5,000,000 |
 | [Andrew Hawkins](jaguars_contract_details.md#andrew-hawkins) | 2017 | Signed | $2,800,000 | $6,000,000 | $3,400,000 | $3,400,000 |  |  |  |  |  | $15,600,000 |
+| [Davante Adams](jaguars_contract_details.md#davante-adams) | 2017 | Signed | $1,178,733 | $1,268,733 | $1,358,733 | $1,448,733 |  |  |  |  |  | $5,254,932 |
 | [Toney Clemons](jaguars_contract_details.md#toney-clemons) | 2014 | Unsigned tender | $570,000 |  |  |  |  |  |  |  |  | $570,000 |
 | [Adam Thielen](jaguars_contract_details.md#adam-thielen) | 2015 | Signed | $495,000 | $585,000 |  |  |  |  |  |  |  | $1,080,000 |
 | [Mike Brown](jaguars_contract_details.md#mike-brown) | 2014 | Unsigned tender | $495,000 |  |  |  |  |  |  |  |  | $495,000 |
+| [Allen Hurns](jaguars_contract_details.md#allen-hurns) | 2016 | Signed | $420,000 | $510,000 | $600,000 |  |  |  |  |  |  | $1,530,000 |
 | [Jerrell Jackson](jaguars_contract_details.md#jerrell-jackson) | 2015 | Signed | $420,000 | $510,000 |  |  |  |  |  |  |  | $930,000 |
+| [Taylor Gabriel](jaguars_contract_details.md#taylor-gabriel) | 2016 | Signed | $420,000 | $510,000 | $600,000 |  |  |  |  |  |  | $1,530,000 |
 | [Cecil Shorts](jaguars_contract_details.md#cecil-shorts) | 2014 | traded |  |  |  |  |  |  |  |  |  |  |
 | [Justin Blackmon](jaguars_contract_details.md#justin-blackmon) | 2015 | traded |  |  |  |  |  |  |  |  |  |  |
-| WR total |  |  | $9,780,000 | $7,095,000 | $3,400,000 | $3,400,000 |  |  |  |  |  | $23,675,000 |
+| WR total |  |  | $11,798,733 | $9,383,733 | $5,958,733 | $4,848,733 |  |  |  |  |  | $31,989,932 |
 
 **Additional three years**
 
@@ -283,13 +314,16 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 |---|---|---|---|---|---|---|
 | [Hakeem Nicks](jaguars_contract_details.md#hakeem-nicks) | 2014 | Signed |  |  |  | $5,000,000 |
 | [Andrew Hawkins](jaguars_contract_details.md#andrew-hawkins) | 2017 | Signed |  |  |  | $15,600,000 |
+| [Davante Adams](jaguars_contract_details.md#davante-adams) | 2017 | Signed |  |  |  | $5,254,932 |
 | [Toney Clemons](jaguars_contract_details.md#toney-clemons) | 2014 | Unsigned tender |  |  |  | $570,000 |
 | [Adam Thielen](jaguars_contract_details.md#adam-thielen) | 2015 | Signed |  |  |  | $1,080,000 |
 | [Mike Brown](jaguars_contract_details.md#mike-brown) | 2014 | Unsigned tender |  |  |  | $495,000 |
+| [Allen Hurns](jaguars_contract_details.md#allen-hurns) | 2016 | Signed |  |  |  | $1,530,000 |
 | [Jerrell Jackson](jaguars_contract_details.md#jerrell-jackson) | 2015 | Signed |  |  |  | $930,000 |
+| [Taylor Gabriel](jaguars_contract_details.md#taylor-gabriel) | 2016 | Signed |  |  |  | $1,530,000 |
 | [Cecil Shorts](jaguars_contract_details.md#cecil-shorts) | 2014 | traded |  |  |  |  |
 | [Justin Blackmon](jaguars_contract_details.md#justin-blackmon) | 2015 | traded |  |  |  |  |
-| WR total |  |  |  |  |  | $23,675,000 |
+| WR total |  |  |  |  |  | $31,989,932 |
 
 ### TE
 
@@ -299,8 +333,11 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | [Marcedes Lewis](jaguars_contract_details.md#marcedes-lewis) | 2015 | Signed | $8,250,000 | $8,200,000 |  |  |  |  |  |  |  | $16,450,000 |
 | [Travis Kelce](jaguars_contract_details.md#travis-kelce) | 2016 | Signed | $1,242,978 | $1,491,574 | $1,740,170 |  |  |  |  |  |  | $4,474,722 |
+| [Cameron Brate](jaguars_contract_details.md#cameron-brate) | 2016 | Signed | $420,000 | $510,000 | $600,000 |  |  |  |  |  |  | $1,530,000 |
+| [Gator Hoskins](jaguars_contract_details.md#gator-hoskins) | 2016 | Signed | $420,000 | $510,000 | $600,000 |  |  |  |  |  |  | $1,530,000 |
+| [Marcel Jensen](jaguars_contract_details.md#marcel-jensen) | 2016 | Signed | $420,000 | $510,000 | $600,000 |  |  |  |  |  |  | $1,530,000 |
 | [Allen Reisner](jaguars_contract_details.md#allen-reisner) | 2013 | Pending free agent |  |  |  |  |  |  |  |  |  |  |
-| TE total |  |  | $9,492,978 | $9,691,574 | $1,740,170 |  |  |  |  |  |  | $20,924,722 |
+| TE total |  |  | $10,752,978 | $11,221,574 | $3,540,170 |  |  |  |  |  |  | $25,514,722 |
 
 **Additional three years**
 
@@ -308,8 +345,11 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 |---|---|---|---|---|---|---|
 | [Marcedes Lewis](jaguars_contract_details.md#marcedes-lewis) | 2015 | Signed |  |  |  | $16,450,000 |
 | [Travis Kelce](jaguars_contract_details.md#travis-kelce) | 2016 | Signed |  |  |  | $4,474,722 |
+| [Cameron Brate](jaguars_contract_details.md#cameron-brate) | 2016 | Signed |  |  |  | $1,530,000 |
+| [Gator Hoskins](jaguars_contract_details.md#gator-hoskins) | 2016 | Signed |  |  |  | $1,530,000 |
+| [Marcel Jensen](jaguars_contract_details.md#marcel-jensen) | 2016 | Signed |  |  |  | $1,530,000 |
 | [Allen Reisner](jaguars_contract_details.md#allen-reisner) | 2013 | Pending free agent |  |  |  |  |
-| TE total |  |  |  |  |  | $20,924,722 |
+| TE total |  |  |  |  |  | $25,514,722 |
 
 ### OT
 
@@ -319,8 +359,11 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | [Eugene Monroe](jaguars_contract_details.md#eugene-monroe) | 2018 | Signed | $5,600,000 | $9,600,000 | $9,100,000 | $9,100,000 | $9,100,000 |  |  |  |  | $42,500,000 |
 | [Lane Johnson](jaguars_contract_details.md#lane-johnson) | 2016 | Signed | $4,818,545 | $5,782,254 | $6,745,963 |  |  |  |  |  |  | $17,346,762 |
+| [Joel Bitonio](jaguars_contract_details.md#joel-bitonio) | 2017 | Signed | $1,814,775 | $1,904,775 | $1,994,775 | $2,084,777 |  |  |  |  |  | $7,799,102 |
 | [Cameron Bradfield](jaguars_contract_details.md#cameron-bradfield) | 2014 | Unsigned tender | $1,431,000 |  |  |  |  |  |  |  |  | $1,431,000 |
-| OT total |  |  | $11,849,545 | $15,382,254 | $15,845,963 | $9,100,000 | $9,100,000 |  |  |  |  | $61,277,762 |
+| [Charles Leno Jr.](jaguars_contract_details.md#charles-leno-jr) | 2017 | Signed | $462,870 | $552,870 | $642,870 | $732,870 |  |  |  |  |  | $2,391,480 |
+| [Cornelius Lucas](jaguars_contract_details.md#cornelius-lucas) | 2016 | Signed | $425,000 | $515,000 | $605,000 |  |  |  |  |  |  | $1,545,000 |
+| OT total |  |  | $14,552,190 | $18,354,899 | $19,088,608 | $11,917,647 | $9,100,000 |  |  |  |  | $73,013,344 |
 
 **Additional three years**
 
@@ -328,8 +371,11 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 |---|---|---|---|---|---|---|
 | [Eugene Monroe](jaguars_contract_details.md#eugene-monroe) | 2018 | Signed |  |  |  | $42,500,000 |
 | [Lane Johnson](jaguars_contract_details.md#lane-johnson) | 2016 | Signed |  |  |  | $17,346,762 |
+| [Joel Bitonio](jaguars_contract_details.md#joel-bitonio) | 2017 | Signed |  |  |  | $7,799,102 |
 | [Cameron Bradfield](jaguars_contract_details.md#cameron-bradfield) | 2014 | Unsigned tender |  |  |  | $1,431,000 |
-| OT total |  |  |  |  |  | $61,277,762 |
+| [Charles Leno Jr.](jaguars_contract_details.md#charles-leno-jr) | 2017 | Signed |  |  |  | $2,391,480 |
+| [Cornelius Lucas](jaguars_contract_details.md#cornelius-lucas) | 2016 | Signed |  |  |  | $1,545,000 |
+| OT total |  |  |  |  |  | $73,013,344 |
 
 ### OG
 
@@ -340,8 +386,11 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 | [Will Rackley](jaguars_contract_details.md#will-rackley) | 2014 | Signed | $1,585,868 |  |  |  |  |  |  |  |  | $1,585,868 |
 | [Austin Pasztor](jaguars_contract_details.md#austin-pasztor) | 2014 | Unsigned tender | $570,000 |  |  |  |  |  |  |  |  | $570,000 |
 | [Mark Asper](jaguars_contract_details.md#mark-asper) | 2015 | Signed | $570,000 | $660,000 |  |  |  |  |  |  |  | $1,230,000 |
+| [Trai Turner](jaguars_contract_details.md#trai-turner) | 2017 | Signed | $555,880 | $645,880 | $735,880 | $870,880 |  |  |  |  |  | $2,808,520 |
+| [Andrew Norwell](jaguars_contract_details.md#andrew-norwell) | 2016 | Signed | $425,000 | $515,000 | $605,000 |  |  |  |  |  |  | $1,545,000 |
+| [Matt Feiler](jaguars_contract_details.md#matt-feiler) | 2016 | Signed | $425,000 | $515,000 | $605,000 |  |  |  |  |  |  | $1,545,000 |
 | [Uche Nwaneri](jaguars_contract_details.md#uche-nwaneri) | 2015 | traded |  |  |  |  |  |  |  |  |  |  |
-| OG total |  |  | $2,725,868 | $660,000 |  |  |  |  |  |  |  | $3,385,868 |
+| OG total |  |  | $4,131,748 | $2,335,880 | $1,945,880 | $870,880 |  |  |  |  |  | $9,284,388 |
 
 **Additional three years**
 
@@ -350,8 +399,11 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 | [Will Rackley](jaguars_contract_details.md#will-rackley) | 2014 | Signed |  |  |  | $1,585,868 |
 | [Austin Pasztor](jaguars_contract_details.md#austin-pasztor) | 2014 | Unsigned tender |  |  |  | $570,000 |
 | [Mark Asper](jaguars_contract_details.md#mark-asper) | 2015 | Signed |  |  |  | $1,230,000 |
+| [Trai Turner](jaguars_contract_details.md#trai-turner) | 2017 | Signed |  |  |  | $2,808,520 |
+| [Andrew Norwell](jaguars_contract_details.md#andrew-norwell) | 2016 | Signed |  |  |  | $1,545,000 |
+| [Matt Feiler](jaguars_contract_details.md#matt-feiler) | 2016 | Signed |  |  |  | $1,545,000 |
 | [Uche Nwaneri](jaguars_contract_details.md#uche-nwaneri) | 2015 | traded |  |  |  |  |
-| OG total |  |  |  |  |  | $3,385,868 |
+| OG total |  |  |  |  |  | $9,284,388 |
 
 ### C
 
@@ -360,16 +412,22 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 | Player | Through | Status | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | Remaining cap total |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | [Mike Brewster](jaguars_contract_details.md#mike-brewster) | 2014 | Signed | $573,334 |  |  |  |  |  |  |  |  | $573,334 |
+| [Corey Linsley](jaguars_contract_details.md#corey-linsley) | 2017 | Signed | $468,000 | $558,000 | $648,000 | $738,000 |  |  |  |  |  | $2,412,000 |
+| [Tyler Larsen](jaguars_contract_details.md#tyler-larsen) | 2016 | Signed | $425,000 | $515,000 | $605,000 |  |  |  |  |  |  | $1,545,000 |
+| [Tyler Shatley](jaguars_contract_details.md#tyler-shatley) | 2016 | Signed | $425,000 | $515,000 | $605,000 |  |  |  |  |  |  | $1,545,000 |
 | [Brad Meester](jaguars_contract_details.md#brad-meester) | 2013 | Retired |  |  |  |  |  |  |  |  |  |  |
-| C total |  |  | $573,334 |  |  |  |  |  |  |  |  | $573,334 |
+| C total |  |  | $1,891,334 | $1,588,000 | $1,858,000 | $738,000 |  |  |  |  |  | $6,075,334 |
 
 **Additional three years**
 
 | Player | Through | Status | 2023 | 2024 | 2025 | Remaining cap total |
 |---|---|---|---|---|---|---|
 | [Mike Brewster](jaguars_contract_details.md#mike-brewster) | 2014 | Signed |  |  |  | $573,334 |
+| [Corey Linsley](jaguars_contract_details.md#corey-linsley) | 2017 | Signed |  |  |  | $2,412,000 |
+| [Tyler Larsen](jaguars_contract_details.md#tyler-larsen) | 2016 | Signed |  |  |  | $1,545,000 |
+| [Tyler Shatley](jaguars_contract_details.md#tyler-shatley) | 2016 | Signed |  |  |  | $1,545,000 |
 | [Brad Meester](jaguars_contract_details.md#brad-meester) | 2013 | Retired |  |  |  |  |
-| C total |  |  |  |  |  | $573,334 |
+| C total |  |  |  |  |  | $6,075,334 |
 
 ### EDGE
 
@@ -383,8 +441,10 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 | [C.J. Wilson](jaguars_contract_details.md#cj-wilson) | 2014 | Signed | $795,000 |  |  |  |  |  |  |  |  | $795,000 |
 | [Lavar Edwards](jaguars_contract_details.md#lavar-edwards) | 2016 | Signed | $548,403 | $638,403 | $728,403 |  |  |  |  |  |  | $1,915,209 |
 | [Ryan Davis](jaguars_contract_details.md#ryan-davis) | 2014 | Signed | $495,000 |  |  |  |  |  |  |  |  | $495,000 |
+| [Jackson Jeffcoat](jaguars_contract_details.md#jackson-jeffcoat) | 2016 | Signed | $420,000 | $510,000 | $600,000 |  |  |  |  |  |  | $1,530,000 |
+| [Kasim Edebali](jaguars_contract_details.md#kasim-edebali) | 2016 | Signed | $420,000 | $510,000 | $600,000 |  |  |  |  |  |  | $1,530,000 |
 | [Jason Babin](jaguars_contract_details.md#jason-babin) | 2015 | traded |  |  |  |  |  |  |  |  |  |  |
-| EDGE total |  |  | $12,726,567 | $12,182,928 | $8,228,403 |  |  |  |  |  |  | $33,137,898 |
+| EDGE total |  |  | $13,566,567 | $13,202,928 | $9,428,403 |  |  |  |  |  |  | $36,197,898 |
 
 **Additional three years**
 
@@ -396,8 +456,10 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 | [C.J. Wilson](jaguars_contract_details.md#cj-wilson) | 2014 | Signed |  |  |  | $795,000 |
 | [Lavar Edwards](jaguars_contract_details.md#lavar-edwards) | 2016 | Signed |  |  |  | $1,915,209 |
 | [Ryan Davis](jaguars_contract_details.md#ryan-davis) | 2014 | Signed |  |  |  | $495,000 |
+| [Jackson Jeffcoat](jaguars_contract_details.md#jackson-jeffcoat) | 2016 | Signed |  |  |  | $1,530,000 |
+| [Kasim Edebali](jaguars_contract_details.md#kasim-edebali) | 2016 | Signed |  |  |  | $1,530,000 |
 | [Jason Babin](jaguars_contract_details.md#jason-babin) | 2015 | traded |  |  |  |  |
-| EDGE total |  |  |  |  |  | $33,137,898 |
+| EDGE total |  |  |  |  |  | $36,197,898 |
 
 ### IDL
 
@@ -408,11 +470,12 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 | [Sen'Derrick Marks](jaguars_contract_details.md#senderrick-marks) | 2017 | Signed | $4,750,000 | $6,250,000 | $7,500,000 | $7,500,000 |  |  |  |  |  | $26,000,000 |
 | [Roy Miller](jaguars_contract_details.md#roy-miller) | 2014 | Signed | $3,250,000 |  |  |  |  |  |  |  |  | $3,250,000 |
 | [C.J. Mosley](jaguars_contract_details.md#cj-mosley) | 2014 | Signed | $3,083,334 |  |  |  |  |  |  |  |  | $3,083,334 |
+| [Aaron Donald](jaguars_contract_details.md#aaron-donald) | 2017 | Signed | $2,399,125 | $2,489,125 | $2,579,125 | $2,669,125 |  |  |  |  |  | $10,136,500 |
 | [Jeris Pendleton](jaguars_contract_details.md#jeris-pendleton) | 2015 | Signed | $582,848 | $672,848 |  |  |  |  |  |  |  | $1,255,696 |
 | [D'Anthony Smith](jaguars_contract_details.md#danthony-smith) | 2015 | Signed | $495,000 | $585,000 |  |  |  |  |  |  |  | $1,080,000 |
 | [Jerome Long](jaguars_contract_details.md#jerome-long) | 2015 | Signed | $420,000 | $510,000 |  |  |  |  |  |  |  | $930,000 |
 | [Tyson Alualu](jaguars_contract_details.md#tyson-alualu) | 2014 | traded |  |  |  |  |  |  |  |  |  |  |
-| IDL total |  |  | $12,581,182 | $8,017,848 | $7,500,000 | $7,500,000 |  |  |  |  |  | $35,599,030 |
+| IDL total |  |  | $14,980,307 | $10,506,973 | $10,079,125 | $10,169,125 |  |  |  |  |  | $45,735,530 |
 
 **Additional three years**
 
@@ -421,11 +484,12 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 | [Sen'Derrick Marks](jaguars_contract_details.md#senderrick-marks) | 2017 | Signed |  |  |  | $26,000,000 |
 | [Roy Miller](jaguars_contract_details.md#roy-miller) | 2014 | Signed |  |  |  | $3,250,000 |
 | [C.J. Mosley](jaguars_contract_details.md#cj-mosley) | 2014 | Signed |  |  |  | $3,083,334 |
+| [Aaron Donald](jaguars_contract_details.md#aaron-donald) | 2017 | Signed |  |  |  | $10,136,500 |
 | [Jeris Pendleton](jaguars_contract_details.md#jeris-pendleton) | 2015 | Signed |  |  |  | $1,255,696 |
 | [D'Anthony Smith](jaguars_contract_details.md#danthony-smith) | 2015 | Signed |  |  |  | $1,080,000 |
 | [Jerome Long](jaguars_contract_details.md#jerome-long) | 2015 | Signed |  |  |  | $930,000 |
 | [Tyson Alualu](jaguars_contract_details.md#tyson-alualu) | 2014 | traded |  |  |  |  |
-| IDL total |  |  |  |  |  | $35,599,030 |
+| IDL total |  |  |  |  |  | $45,735,530 |
 
 ### LB
 
@@ -437,8 +501,11 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 | [Daryl Smith](jaguars_contract_details.md#daryl-smith) | 2014 | Signed | $3,500,000 |  |  |  |  |  |  |  |  | $3,500,000 |
 | [Sio Moore](jaguars_contract_details.md#sio-moore) | 2016 | Signed | $619,257 | $709,257 | $799,257 |  |  |  |  |  |  | $2,127,771 |
 | [Julian Stanford](jaguars_contract_details.md#julian-stanford) | 2014 | Signed | $571,668 |  |  |  |  |  |  |  |  | $571,668 |
+| [Telvin Smith](jaguars_contract_details.md#telvin-smith) | 2017 | Signed | $520,136 | $610,136 | $700,136 | $790,136 |  |  |  |  |  | $2,620,544 |
+| [Christian Jones](jaguars_contract_details.md#christian-jones) | 2016 | Signed | $420,000 | $510,000 | $600,000 |  |  |  |  |  |  | $1,530,000 |
+| [Todd Davis](jaguars_contract_details.md#todd-davis) | 2016 | Signed | $420,000 | $510,000 | $600,000 |  |  |  |  |  |  | $1,530,000 |
 | [Russell Allen](jaguars_contract_details.md#russell-allen) | 2014 | traded |  |  |  |  |  |  |  |  |  |  |
-| LB total |  |  | $14,190,925 | $10,209,257 | $8,299,257 |  |  |  |  |  |  | $32,699,439 |
+| LB total |  |  | $15,551,061 | $11,839,393 | $10,199,393 | $790,136 |  |  |  |  |  | $38,379,983 |
 
 **Additional three years**
 
@@ -448,8 +515,11 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 | [Daryl Smith](jaguars_contract_details.md#daryl-smith) | 2014 | Signed |  |  |  | $3,500,000 |
 | [Sio Moore](jaguars_contract_details.md#sio-moore) | 2016 | Signed |  |  |  | $2,127,771 |
 | [Julian Stanford](jaguars_contract_details.md#julian-stanford) | 2014 | Signed |  |  |  | $571,668 |
+| [Telvin Smith](jaguars_contract_details.md#telvin-smith) | 2017 | Signed |  |  |  | $2,620,544 |
+| [Christian Jones](jaguars_contract_details.md#christian-jones) | 2016 | Signed |  |  |  | $1,530,000 |
+| [Todd Davis](jaguars_contract_details.md#todd-davis) | 2016 | Signed |  |  |  | $1,530,000 |
 | [Russell Allen](jaguars_contract_details.md#russell-allen) | 2014 | traded |  |  |  |  |
-| LB total |  |  |  |  |  | $32,699,439 |
+| LB total |  |  |  |  |  | $38,379,983 |
 
 ### CB
 
@@ -462,10 +532,11 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 | [Jordan Poyer](jaguars_contract_details.md#jordan-poyer) | 2016 | Signed | $711,794 | $825,794 | $990,294 |  |  |  |  |  |  | $2,527,882 |
 | [Mike Harris](jaguars_contract_details.md#mike-harris) | 2015 | Signed | $598,947 | $688,947 |  |  |  |  |  |  |  | $1,287,894 |
 | [A.J. Bouye](jaguars_contract_details.md#aj-bouye) | 2015 | Signed | $495,000 | $585,000 |  |  |  |  |  |  |  | $1,080,000 |
+| [Malcolm Butler](jaguars_contract_details.md#malcolm-butler) | 2017 | Signed | $432,250 | $522,250 | $612,250 | $702,250 |  |  |  |  |  | $2,269,000 |
 | [Alan Ball](jaguars_contract_details.md#alan-ball) | 2013 | Pending free agent |  |  |  |  |  |  |  |  |  |  |
 | [Brent Grimes](jaguars_contract_details.md#brent-grimes) | 2013 | Pending free agent |  |  |  |  |  |  |  |  |  |  |
 | [Kevin Rutland](jaguars_contract_details.md#kevin-rutland) | 2013 | Pending free agent |  |  |  |  |  |  |  |  |  |  |
-| CB total |  |  | $15,605,741 | $18,899,741 | $18,290,294 | $17,800,000 | $9,800,000 |  |  |  |  | $80,395,776 |
+| CB total |  |  | $16,037,991 | $19,421,991 | $18,902,544 | $18,502,250 | $9,800,000 |  |  |  |  | $82,664,776 |
 
 **Additional three years**
 
@@ -476,10 +547,11 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 | [Jordan Poyer](jaguars_contract_details.md#jordan-poyer) | 2016 | Signed |  |  |  | $2,527,882 |
 | [Mike Harris](jaguars_contract_details.md#mike-harris) | 2015 | Signed |  |  |  | $1,287,894 |
 | [A.J. Bouye](jaguars_contract_details.md#aj-bouye) | 2015 | Signed |  |  |  | $1,080,000 |
+| [Malcolm Butler](jaguars_contract_details.md#malcolm-butler) | 2017 | Signed |  |  |  | $2,269,000 |
 | [Alan Ball](jaguars_contract_details.md#alan-ball) | 2013 | Pending free agent |  |  |  |  |
 | [Brent Grimes](jaguars_contract_details.md#brent-grimes) | 2013 | Pending free agent |  |  |  |  |
 | [Kevin Rutland](jaguars_contract_details.md#kevin-rutland) | 2013 | Pending free agent |  |  |  |  |
-| CB total |  |  |  |  |  | $80,395,776 |
+| CB total |  |  |  |  |  | $82,664,776 |
 
 ### S
 
@@ -492,7 +564,9 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 | [Bacarri Rambo](jaguars_contract_details.md#bacarri-rambo) | 2016 | Signed | $527,205 | $617,205 | $707,205 |  |  |  |  |  |  | $1,851,615 |
 | [Antwon Blake](jaguars_contract_details.md#antwon-blake) | 2015 | Signed | $495,000 | $585,000 |  |  |  |  |  |  |  | $1,080,000 |
 | [Brynden Trawick](jaguars_contract_details.md#brynden-trawick) | 2015 | Signed | $495,000 | $585,000 |  |  |  |  |  |  |  | $1,080,000 |
-| S total |  |  | $6,232,250 | $5,862,205 | $707,205 |  |  |  |  |  |  | $12,801,660 |
+| [Jemea Thomas](jaguars_contract_details.md#jemea-thomas) | 2017 | Signed | $443,513 | $533,513 | $623,513 | $713,513 |  |  |  |  |  | $2,314,052 |
+| [Adrian Phillips](jaguars_contract_details.md#adrian-phillips) | 2016 | Signed | $420,000 | $510,000 | $600,000 |  |  |  |  |  |  | $1,530,000 |
+| S total |  |  | $7,095,763 | $6,905,718 | $1,930,718 | $713,513 |  |  |  |  |  | $16,645,712 |
 
 **Additional three years**
 
@@ -503,7 +577,9 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 | [Bacarri Rambo](jaguars_contract_details.md#bacarri-rambo) | 2016 | Signed |  |  |  | $1,851,615 |
 | [Antwon Blake](jaguars_contract_details.md#antwon-blake) | 2015 | Signed |  |  |  | $1,080,000 |
 | [Brynden Trawick](jaguars_contract_details.md#brynden-trawick) | 2015 | Signed |  |  |  | $1,080,000 |
-| S total |  |  |  |  |  | $12,801,660 |
+| [Jemea Thomas](jaguars_contract_details.md#jemea-thomas) | 2017 | Signed |  |  |  | $2,314,052 |
+| [Adrian Phillips](jaguars_contract_details.md#adrian-phillips) | 2016 | Signed |  |  |  | $1,530,000 |
+| S total |  |  |  |  |  | $16,645,712 |
 
 ### K
 
@@ -544,14 +620,16 @@ Unsigned tenders are included in their positions. Each player is counted once. F
 | Player | Through | Status | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | Remaining cap total |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | [Jeremy Cain](jaguars_contract_details.md#jeremy-cain) | 2014 | Signed | $855,000 |  |  |  |  |  |  |  |  | $855,000 |
-| LS total |  |  | $855,000 |  |  |  |  |  |  |  |  | $855,000 |
+| [Casey Kreiter](jaguars_contract_details.md#casey-kreiter) | 2016 | Signed | $420,000 | $510,000 | $600,000 |  |  |  |  |  |  | $1,530,000 |
+| LS total |  |  | $1,275,000 | $510,000 | $600,000 |  |  |  |  |  |  | $2,385,000 |
 
 **Additional three years**
 
 | Player | Through | Status | 2023 | 2024 | 2025 | Remaining cap total |
 |---|---|---|---|---|---|---|
 | [Jeremy Cain](jaguars_contract_details.md#jeremy-cain) | 2014 | Signed |  |  |  | $855,000 |
-| LS total |  |  |  |  |  | $855,000 |
+| [Casey Kreiter](jaguars_contract_details.md#casey-kreiter) | 2016 | Signed |  |  |  | $1,530,000 |
+| LS total |  |  |  |  |  | $2,385,000 |
 
 ### Futures contracts
 
@@ -569,7 +647,7 @@ All six run through 2015 under the adopted two-year terms. They have no signing 
 
 ## Individual contract detail sheets
 
-[Open all 64 player sheets](jaguars_contract_details.md) for annual salary, bonus, cap, cash, guarantees and sources.
+[Open all 90 player sheets](jaguars_contract_details.md) for annual salary, bonus, cap, cash, guarantees and sources.
 
 ## Dead money and void years
 
@@ -623,8 +701,8 @@ These are selection rights. Add each rookie’s full contract schedule after the
 | 2013 | Brad Meester, Alan Ball, Brent Grimes, Allen Reisner, Kevin Rutland |
 | 2014 | Roy Miller, Daryl Smith, Will Rackley, Mike Brewster, Ryan Davis, C.J. Mosley, Julian Stanford, Chris Prosinski, C.J. Wilson, Jeremy Cain, Cameron Bradfield, Toney Clemons, Mike Brown, Austin Pasztor, John Parker Wilson, Jonathan Grimes, Hakeem Nicks |
 | 2015 | Kirk Cousins, Brynden Trawick, A.J. Bouye, Adam Thielen, C.J. Anderson, Marcedes Lewis, Mark Asper, Andre Branch, Jeremy Mincey, Jeris Pendleton, Mike Harris, Dwight Lowery, Josh Scobee, Bryan Anger, Montell Owens, Tyler Bray, Richard Murphy, Jerrell Jackson, Jerome Long, D'Anthony Smith, Antwon Blake, Chad Henne, Maurice Jones-Drew |
-| 2016 | Lane Johnson, Travis Kelce, Jordan Poyer, Sio Moore, Lavar Edwards, Bacarri Rambo, Paul Posluszny, Daniel Te'o-Nesheim |
-| 2017 | Sen'Derrick Marks, Alterraun Verner, Andrew Hawkins |
+| 2016 | Lane Johnson, Travis Kelce, Jordan Poyer, Sio Moore, Lavar Edwards, Bacarri Rambo, Paul Posluszny, Daniel Te'o-Nesheim, Andrew Norwell, Christian Jones, Allen Hurns, Cornelius Lucas, Adrian Phillips, Matt Feiler, Cameron Brate, Todd Davis, Tyler Shatley, Tyler Larsen, Connor Shaw, Kasim Edebali, Marcel Jensen, Gator Hoskins, Jackson Jeffcoat, Taylor Gabriel, Casey Kreiter |
+| 2017 | Sen'Derrick Marks, Alterraun Verner, Andrew Hawkins, Aaron Donald, Joel Bitonio, Davante Adams, Trai Turner, Telvin Smith, Corey Linsley, Charles Leno Jr., Jemea Thomas, Malcolm Butler |
 | 2018 | Eugene Monroe, Aqib Talib |
 
 “Through” describes the final league year of the recorded contract or tender. The 2013 contracts not retained expired at the March 11, 2014 league-year opening; those players are retained only as former-player history. Traded players leave these classes. A player’s class at a later expiry follows his actual accrued service; it does not extend the deal.
@@ -635,9 +713,9 @@ These are selection rights. Add each rookie’s full contract schedule after the
 
 | Item | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 |
 |---|---|---|---|---|---|---|---|---|---|
-| Signed contracts and futures | $117,481,610 | $84,948,215 | $52,944,415 | $32,150,000 | $16,000,000 |  |  |  |  |
+| Signed contracts and futures | $146,457,740 | $98,208,215 | $68,544,415 | $38,405,000 | $16,000,000 |  |  |  |  |
 | Unsigned tender, conditional on signing | $3,066,000 |  |  |  |  |  |  |  |  |
-| Total scheduled player cash | $120,547,610 | $84,948,215 | $52,944,415 | $32,150,000 | $16,000,000 |  |  |  |  |
+| Total scheduled player cash | $149,523,740 | $98,208,215 | $68,544,415 | $38,405,000 | $16,000,000 |  |  |  |  |
 
 **Additional three years**
 

@@ -1,8 +1,8 @@
 # Jacksonville Jaguars 2014 contract table
 
-**As of:** April 17, 2014
+**As of:** May 11, 2014
 **Nature:** derived view. It executes no signing, tag, tender, release, trade or extension, certifies no cap room and reflects the adopted contract reconstruction. The [contract status register](contract_status_register.md) owns each player's status; the [2014 preparation worksheet](current_cap_worksheet.md) owns reconciliation; Caldwell owns contract decisions (Document 3).
-**Baseline:** [2013 initial cap sheet](../../2013/offseason/initial_cap_sheet.md) (per-player 2013 rows, Git `e04dd82`); [2013 regular-season worksheet](../../2013/offseason/current_cap_worksheet.md) and its May 5 version (Git `d25c8cf`); [2013 free-agency signings](../../2013/offseason/free_agency/signings.md); [2013 draftees](../../2013/offseason/draft/draftees.md); [2013 undrafted signings](../../2013/offseason/draft/udfa_signings.md); [2013 trades](../../2013/trades/trades.md); [current contract status register](contract_status_register.md); [Caldwell's pre-tag-window verifications](caldwell_pre_tag_verifications.md) (Git `9ca804c`); [2014 free-agency outcomes](free_agency/signings.md); the [2014 ledger](../ledger.md). Historical Git references identify the original financial baselines; current status follows the latest register and executed outcomes.
+**Baseline:** [2013 initial cap sheet](../../2013/offseason/initial_cap_sheet.md) (per-player 2013 rows, Git `e04dd82`); [2013 regular-season worksheet](../../2013/offseason/current_cap_worksheet.md) and its May 5 version (Git `d25c8cf`); [2013 free-agency signings](../../2013/offseason/free_agency/signings.md); [2013 draftees](../../2013/offseason/draft/draftees.md); [2013 undrafted signings](../../2013/offseason/draft/udfa_signings.md); [2014 draftees](draft/draftees.md); [2014 undrafted signings](draft/udfa_signings.md); [2013 trades](../../2013/trades/trades.md); [current contract status register](contract_status_register.md); [Caldwell's pre-tag-window verifications](caldwell_pre_tag_verifications.md) (Git `9ca804c`); [2014 free-agency outcomes](free_agency/signings.md); the [2014 ledger](../ledger.md). Historical Git references identify the original financial baselines; current status follows the latest register and executed outcomes.
 
 **Long-term view:** [2014 to 2025 Jaguars cap tracker](../../finances/jaguars_cap.md), with [individual contract details](../../finances/jaguars_contract_details.md). This table remains the current-year source.
 
@@ -31,6 +31,7 @@ Add a row, and change the affected player rows and summaries, for every signing,
 | March 31, 2014 | Shorts and Blackmon traded to Indianapolis | Entry 104 | Shorts removed (his final $110,845 bonus allocation stays as 2014 dead money); Blackmon removed ($5,951,636 of remaining bonus allocation, the 2014 and 2015 amounts, accelerates to 2014 dead money; his 2015 charge leaves). Jacksonville receives Nos. 82 and 194. Rows: 53 |
 | April 4, 2014 | Henne re-signed | Entry 106 | Henne (2 years, $4.0M, $2.0M guaranteed; $1,200,000 bonus; 2014 cap $1,400,000, 2015 cap $2,600,000) added. Rows: 54 |
 | April 7, 2014 | Allen traded to Arizona | Entry 106 | Allen removed after Posluszny's April 5 clearance and Allen's physical; his final $416,668 bonus allocation stays as 2014 dead money. Jacksonville receives Arizona's 2015 fourth. Posluszny's hold cleared. Rows: 53 |
+| May 8 to 11, 2014 | 2014 draft: nine selections signed May 11; 17 undrafted rookies signed May 10 | Entry 108 | Nine four-year rookie contracts priced by slot reconstruction from the same-slot 2014 contracts (total $38,006,130; 2014 cap $8,275,282) and 17 three-year undrafted minimum contracts (five linemen with $15,000 bonuses; 2014 cap $7,165,000) added. Rows: 79 |
 
 <a id="1-how-to-read-this-table"></a>
 
@@ -46,11 +47,11 @@ Add a row, and change the affected player rows and summaries, for every signing,
 
 <a id="2-controlled-players-under-contract-for-2014-51"></a>
 
-## Controlled players under contract for 2014 (49)
+## Controlled players under contract for 2014 (75)
 
 <a id="2a-branch-contracts-21"></a>
 
-### Branch contracts (24)
+### Branch contracts (50)
 
 | Player | Pos | Contract type | Signed | Years / final league year | Total value | Signing bonus; annual proration; years left | 2014 base | 2014 roster / workout / other bonuses | 2014 guarantees | 2014 cap charge | Dead money if released before June 1 | 2014 status | 2013 cap charge (baseline) | Source and status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -79,7 +80,34 @@ Add a row, and change the affected player rows and summaries, for every signing,
 | C.J. Wilson | DE | Veteran minimum (branch re-signing) | March 28, 2014 | 1 / 2014 | $795,000 | $65,000; $65,000; 1 | $730,000 | None | $65,000 signing bonus only | $795,000 | $65,000 gross exposure under adopted terms | Under contract | Unresolved (prior deal expired) | Branch record (Entry 103; [negotiation record](free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md)). Minimum for four to six credited seasons (inferred) plus a $65,000 bonus; minimum-salary benefit not applied |
 | Chad Henne | QB | Veteran (branch re-signing) | April 4, 2014 | 2 / 2015 | $4,000,000 | $1,200,000; $600,000; 2 | $800,000 | None | $800,000 base plus the $1,200,000 bonus | $1,400,000 | $600,000 gross exposure under adopted terms | Under contract | Prior deal expired (2013 records) | Branch record (Entry 106; [negotiation record](free_agency/henne_negotiation_2014-04-04.md)). Inside Stone's $2.5M-a-year ceiling; QB2, no starting promise; 2015: $2,000,000 base, $2,600,000 cap |
 
-The UDFA total value is the sum of the three recorded bases ($405,000, $495,000 and $585,000). The 2013 charges for the four UDFAs are their recorded bases; no bonus is recorded.
+| Aaron Donald | DT | Rookie scale, pick #13 | May 11, 2014 | 4 / 2017 + first-round club option | $10,136,500 | $7,916,500; $1,979,125; 4 | $420,000 | None | Fully guaranteed: bonus and all four bases | $2,399,125 | $10,136,500 gross exposure under the slot reconstruction | Under contract | None (2014 rookie) | Branch record (draftees); slot reconstruction from the same-slot 2014 contract (pick 13, Aaron Donald, St. Louis: $10,136,500 total, $10,136,500 guaranteed) |
+| Joel Bitonio | OT | Rookie scale, pick #26 | May 11, 2014 | 4 / 2017 + first-round club option | $7,799,102 | $5,579,102; $1,394,775; 4 | $420,000 | None | Signing bonus plus $736,485 of base salary | $1,814,775 | $6,315,587 gross exposure under the slot reconstruction | Under contract | None (2014 rookie) | Branch record (draftees); slot reconstruction from the same-slot 2014 contract (pick 26, Marcus Smith, Philadelphia: $7,799,102 total, $6,315,587 guaranteed) |
+| Davante Adams | WR | Rookie scale, pick #38 | May 11, 2014 | 4 / 2017 | $5,254,932 | $3,034,932; $758,733; 4 | $420,000 | None | Signing bonus plus $185,697 of base salary | $1,178,733 | $3,220,629 gross exposure under the slot reconstruction | Under contract | None (2014 rookie) | Branch record (draftees); slot reconstruction from the same-slot 2014 contract (pick 38, Austin Seferian-Jenkins, Tampa Bay: $5,254,932 total, $3,220,629 guaranteed) |
+| Trai Turner | G | Rookie scale, pick #90 | May 11, 2014 | 4 / 2017 | $2,808,520 | $543,520; $135,880; 4 | $420,000 | None | Signing bonus only | $555,880 | $543,520 gross exposure under the slot reconstruction | Under contract | None (2014 rookie) | Branch record (draftees); slot reconstruction from the same-slot 2014 contract (pick 90, Donte Moncrief, Indianapolis: $2,808,520 total, $543,520 guaranteed) |
+| Telvin Smith | LB | Rookie scale, pick #129 | May 11, 2014 | 4 / 2017 | $2,620,544 | $400,544; $100,136; 4 | $420,000 | None | Signing bonus only | $520,136 | $400,544 gross exposure under the slot reconstruction | Under contract | None (2014 rookie) | Branch record (draftees); slot reconstruction from the same-slot 2014 contract (pick 129, Dontae Johnson, San Francisco: $2,620,544 total, $400,544 guaranteed) |
+| Corey Linsley | C | Rookie scale, pick #153 | May 11, 2014 | 4 / 2017 | $2,412,000 | $192,000; $48,000; 4 | $420,000 | None | Signing bonus only | $468,000 | $192,000 gross exposure under the slot reconstruction | Under contract | None (2014 rookie) | Branch record (draftees); slot reconstruction from the same-slot 2014 contract (pick 153, Cyril Richardson, Buffalo: $2,412,000 total, $192,000 guaranteed) |
+| Charles Leno Jr. | OT | Rookie scale, pick #168 | May 11, 2014 | 4 / 2017 | $2,391,480 | $171,480; $42,870; 4 | $420,000 | None | Signing bonus only | $462,870 | $171,480 gross exposure under the slot reconstruction | Under contract | None (2014 rookie) | Branch record (draftees); slot reconstruction from the same-slot 2014 contract (pick 168, Marquis Spruill, Atlanta: $2,391,480 total, $171,480 guaranteed) |
+| Jemea Thomas | DB | Rookie scale, pick #205 | May 11, 2014 | 4 / 2017 | $2,314,052 | $94,052; $23,513; 4 | $420,000 | None | Signing bonus only | $443,513 | $94,052 gross exposure under the slot reconstruction | Under contract | None (2014 rookie) | Branch record (draftees); slot reconstruction from the same-slot 2014 contract (pick 205, Luke Bowanko, Jacksonville (real): $2,314,052 total, $94,052 guaranteed) |
+| Malcolm Butler | CB | Rookie scale, pick #241 | May 11, 2014 | 4 / 2017 | $2,269,000 | $49,000; $12,250; 4 | $420,000 | None | Signing bonus only | $432,250 | $49,000 gross exposure under the slot reconstruction | Under contract | None (2014 rookie) | Branch record (draftees); slot reconstruction from the same-slot 2014 contract (pick 241, Christian Bryant, St. Louis: $2,269,000 total, $49,000 guaranteed) |
+| Andrew Norwell | G | UDFA minimum | May 10, 2014 | 3 / 2016 | $1,545,000 | $15,000; $5,000; 3 | $420,000 | None | Signing bonus only | $425,000 | $15,000 gross exposure (remaining bonus allocation) | Under contract | None (2014 rookie) | Branch record (UDFA signings); $15,000 lineman bonus under the memo rule |
+| Christian Jones | LB | UDFA minimum | May 10, 2014 | 3 / 2016 | $1,530,000 | $0; $0; 0 | $420,000 | None | $0 | $420,000 | $0 gross exposure (remaining bonus allocation) | Under contract | None (2014 rookie) | Branch record (UDFA signings); no bonus, as in the 2013 precedent |
+| Allen Hurns | WR | UDFA minimum | May 10, 2014 | 3 / 2016 | $1,530,000 | $0; $0; 0 | $420,000 | None | $0 | $420,000 | $0 gross exposure (remaining bonus allocation) | Under contract | None (2014 rookie) | Branch record (UDFA signings); no bonus, as in the 2013 precedent |
+| Cornelius Lucas | OT | UDFA minimum | May 10, 2014 | 3 / 2016 | $1,545,000 | $15,000; $5,000; 3 | $420,000 | None | Signing bonus only | $425,000 | $15,000 gross exposure (remaining bonus allocation) | Under contract | None (2014 rookie) | Branch record (UDFA signings); $15,000 lineman bonus under the memo rule |
+| Adrian Phillips | S | UDFA minimum | May 10, 2014 | 3 / 2016 | $1,530,000 | $0; $0; 0 | $420,000 | None | $0 | $420,000 | $0 gross exposure (remaining bonus allocation) | Under contract | None (2014 rookie) | Branch record (UDFA signings); no bonus, as in the 2013 precedent |
+| Matt Feiler | G | UDFA minimum | May 10, 2014 | 3 / 2016 | $1,545,000 | $15,000; $5,000; 3 | $420,000 | None | Signing bonus only | $425,000 | $15,000 gross exposure (remaining bonus allocation) | Under contract | None (2014 rookie) | Branch record (UDFA signings); $15,000 lineman bonus under the memo rule |
+| Cameron Brate | TE | UDFA minimum | May 10, 2014 | 3 / 2016 | $1,530,000 | $0; $0; 0 | $420,000 | None | $0 | $420,000 | $0 gross exposure (remaining bonus allocation) | Under contract | None (2014 rookie) | Branch record (UDFA signings); no bonus, as in the 2013 precedent |
+| Todd Davis | LB | UDFA minimum | May 10, 2014 | 3 / 2016 | $1,530,000 | $0; $0; 0 | $420,000 | None | $0 | $420,000 | $0 gross exposure (remaining bonus allocation) | Under contract | None (2014 rookie) | Branch record (UDFA signings); no bonus, as in the 2013 precedent |
+| Tyler Shatley | C | UDFA minimum | May 10, 2014 | 3 / 2016 | $1,545,000 | $15,000; $5,000; 3 | $420,000 | None | Signing bonus only | $425,000 | $15,000 gross exposure (remaining bonus allocation) | Under contract | None (2014 rookie) | Branch record (UDFA signings); $15,000 lineman bonus under the memo rule |
+| Tyler Larsen | C | UDFA minimum | May 10, 2014 | 3 / 2016 | $1,545,000 | $15,000; $5,000; 3 | $420,000 | None | Signing bonus only | $425,000 | $15,000 gross exposure (remaining bonus allocation) | Under contract | None (2014 rookie) | Branch record (UDFA signings); $15,000 lineman bonus under the memo rule |
+| Connor Shaw | QB | UDFA minimum | May 10, 2014 | 3 / 2016 | $1,530,000 | $0; $0; 0 | $420,000 | None | $0 | $420,000 | $0 gross exposure (remaining bonus allocation) | Under contract | None (2014 rookie) | Branch record (UDFA signings); no bonus, as in the 2013 precedent |
+| Kasim Edebali | DE | UDFA minimum | May 10, 2014 | 3 / 2016 | $1,530,000 | $0; $0; 0 | $420,000 | None | $0 | $420,000 | $0 gross exposure (remaining bonus allocation) | Under contract | None (2014 rookie) | Branch record (UDFA signings); no bonus, as in the 2013 precedent |
+| Marcel Jensen | TE | UDFA minimum | May 10, 2014 | 3 / 2016 | $1,530,000 | $0; $0; 0 | $420,000 | None | $0 | $420,000 | $0 gross exposure (remaining bonus allocation) | Under contract | None (2014 rookie) | Branch record (UDFA signings); no bonus, as in the 2013 precedent |
+| Gator Hoskins | TE | UDFA minimum | May 10, 2014 | 3 / 2016 | $1,530,000 | $0; $0; 0 | $420,000 | None | $0 | $420,000 | $0 gross exposure (remaining bonus allocation) | Under contract | None (2014 rookie) | Branch record (UDFA signings); no bonus, as in the 2013 precedent |
+| Jackson Jeffcoat | DE | UDFA minimum | May 10, 2014 | 3 / 2016 | $1,530,000 | $0; $0; 0 | $420,000 | None | $0 | $420,000 | $0 gross exposure (remaining bonus allocation) | Under contract | None (2014 rookie) | Branch record (UDFA signings); no bonus, as in the 2013 precedent |
+| Taylor Gabriel | WR | UDFA minimum | May 10, 2014 | 3 / 2016 | $1,530,000 | $0; $0; 0 | $420,000 | None | $0 | $420,000 | $0 gross exposure (remaining bonus allocation) | Under contract | None (2014 rookie) | Branch record (UDFA signings); no bonus, as in the 2013 precedent |
+| Casey Kreiter | LS | UDFA minimum | May 10, 2014 | 3 / 2016 | $1,530,000 | $0; $0; 0 | $420,000 | None | $0 | $420,000 | $0 gross exposure (remaining bonus allocation) | Under contract | None (2014 rookie) | Branch record (UDFA signings); no bonus, as in the 2013 precedent |
+
+The 2013 UDFA total value is the sum of the three recorded bases ($405,000, $495,000 and $585,000); the 2013 charges for those four are their recorded bases, with no bonus. The 2014 rookie rows follow [the draftees record](draft/draftees.md) (slot reconstruction from the same-slot 2014 contract, minimum-scale bases, signing bonus prorated over four years) and [the undrafted signings record](draft/udfa_signings.md) (three-year minimum, $15,000 bonus for the five linemen only).
 
 <a id="2b-inherited-contracts-running-through-2014-or-later-22"></a>
 
@@ -163,19 +191,21 @@ Each tender was made before 4 p.m. ET March 11 and is unsigned; an unsigned tend
 
 <a id="5a-counts-by-2014-status-march-20-2014-entry-99"></a>
 
-### Counts by 2014 status (April 17, 2014)
+### Counts by 2014 status (May 11, 2014)
 
 | Status | Count |
 |---|---:|
 | Under contract, continuing | 32 |
 | Under contract, reserve/future (effective March 11) | 6 |
 | Under contract, signed in the replay (Monroe, Marks, Verner, Talib, Nicks, Hawkins, Te'o-Nesheim, Cain, Jones-Drew, Wilson, Henne) | 11 |
+| Under contract, 2014 draft selections (rookie contracts signed May 11) | 9 |
+| Under contract, 2014 undrafted rookies (signed May 10) | 17 |
 | Tendered RFA (lowest, not signed) | 1 |
 | Tendered ERFA (not signed) | 3 |
-| Controlled rows | 53 |
+| Controlled rows | 79 |
 | Contracts and rights ended (section 3) | 11 |
 
-The 53 controlled rows match the register and the roster.
+The 79 controlled rows match the register and the roster.
 
 <a id="5b-working-2014-cap-charges"></a>
 
@@ -183,17 +213,20 @@ The 53 controlled rows match the register and the roster.
 
 | Component | Players | 2014 amount |
 |---|---:|---:|
-| Signed contracts and futures | 49 | $108,677,080 |
+| Signed contracts and futures before the draft | 49 | $108,677,080 |
+| Nine 2014 draft selections (gross rookie charges) | 9 | $8,275,282 |
+| Seventeen 2014 undrafted rookies (gross) | 17 | $7,165,000 |
+| Signed contracts, futures and rookies | 75 | $124,117,362 |
 | Unsigned tenders (Bradfield $1,431,000; Clemons and Pasztor $570,000 each; Brown $495,000) | 4 | $3,066,000 |
-| Player contracts including tenders | 53 | $111,743,080 |
+| Player contracts including tenders | 79 | $127,183,362 |
 | Dead money (Bray $51,675; Nwaneri $2,189,000; Alualu $1,542,500; Shorts $110,845; Blackmon $5,951,636; Allen $416,668) | | $10,262,324 |
-| Recorded obligations, all 53 players | | $122,005,404 |
-| Less two of the three $420,000 minimums (Long, Jerrell Jackson, Bray) outside the offseason Top 51 | | -$840,000 |
-| Offseason Top-51 obligations plus dead money | | $121,165,404 |
+| Recorded obligations, all 79 players | | $137,445,686 |
+| Less the base salaries of the 28 lowest-paid players outside the offseason Top 51 (bonus proration stays) | | -$12,060,000 |
+| Offseason Top-51 obligations plus dead money | | $125,385,686 |
 | League-year opening offseason-workout charge (2,880 x $175, CBA Article 13 section 5(g)) | | $504,000 |
-| Working total | | $121,669,404 |
+| Working total | | $125,889,686 |
 
-Against the $133,000,000 league cap the working difference is $11,330,596, before the unresolved carryover, rookies, further signings and reserves. It is not certified room.
+Against the $133,000,000 league cap the working difference is $7,110,314, before the unresolved carryover, further signings and reserves; with the estimated 2013 rollover it is about $12,440,314 to $13,110,314. It is not certified room. The net Top-51 effect of the 26 rookie contracts is $4,220,282 (the $15,440,282 gross less the 28 displaced base salaries of $12,060,000, plus the $840,000 that two futures minimums had already displaced): the nine drafted rookies' proration and the bases of the draftees whose charges rank inside the Top 51 count, and the 17 undrafted bases and most late-round bases do not. The [cap tracker](../../finances/jaguars_cap.md) shows the ranking.
 
 <a id="5c-dead-money-carried-into-2014"></a>
 

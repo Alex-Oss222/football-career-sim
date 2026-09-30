@@ -1,8 +1,8 @@
 # Jacksonville 2014 Offseason program, Phases One and Two: execution record
 
-<!-- sim-meta: {"event_entry": 107, "kind": "phase_output", "status": "IN_PROGRESS", "through": "2014-05-01"} -->
+<!-- sim-meta: {"event_entry": 109, "kind": "phase_output", "status": "IN_PROGRESS", "through": "2014-05-09"} -->
 
-**IN_PROGRESS through May 1, 2014.** Phase One ran April 21 to 24 and April 28 to May 1. The May 2 staff handoff and all of Phase Two (May 5 to 23) have not run. [Plan](plan.md) owns intended work; [evidence summary](standouts.md) summarizes only what is below. Event record: [2014 ledger](../../ledger.md).
+**IN_PROGRESS through May 9, 2014.** Phase One ran April 21 to 24 and April 28 to May 1, with the staff handoff May 2. Phase Two opened May 5; its first week (May 5 to 8, staff review May 9) has run. The draft (May 8 to 10) and the rookie contracts are in the ledger, not here. Phase Two resumes May 12. [Plan](plan.md) owns intended work; [evidence summary](standouts.md) summarizes only what is below. Event record: [2014 ledger](../../ledger.md).
 
 ## Before the program: April 18 staff review
 
@@ -78,8 +78,74 @@ All were held as scheduled. Attendance was not recorded, no football was discuss
 - April 29: players and staff cookout.
 - May 1: family dinner.
 
+## May 1 instruction: the four unsigned tenders
+
+The user settled the participation question on May 1 ([memo amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-unsigned-tenders-and-the-cross-training-list)). Bradfield, Pasztor, Clemons and Brown are not program participants and not social-event participants until they sign. Bradfield's tackle and sixth-lineman lane and Pasztor's guard and emergency-center lane are closed; Monroe and Lane Johnson take the tackle work, and Brewster, Rackley, Asper, Monroe and Johnson are the signed linemen Stone coaches. Clemons and Brown receive no receiver install; receiver teaching goes through Thielen, Nicks, Hawkins, Jerrell Jackson and later eligible additions. No "fell behind" language attaches to any of the four, and a conditional catch-up plan is ready for each on the day he signs. The cross-training list is now Lane Johnson (limited opposite-tackle familiarity), Asper (both guard spots and emergency interior communication exposure), Thielen, Kelce, Poyer, Moore, Prosinski and Trawick.
+
+## May 2: Phase One handoff
+
+The staff handoff was held as the plan requires, with no player workout. Each room reported what was taught, retained, postponed and limited.
+
+- **Current profile:** the established offense and Boot Flood's return, shared protection identification, TAKE, GIVE and ANSWER, the four punt families and the relay rotation were taught in the classroom to the 49 signed players. Nothing was certified as unit execution; there was no field work. The two staff wording gaps found in Phase One were closed.
+- **Individual written notes:** each position coach issued the Phase One note to each signed player in his room: what was taught, what the player explained back correctly, what was postponed to the field. The notes are teaching records, not grades, and are held by the coaches; no note went to a player on an unsigned tender.
+- **Postponed:** every Rep, Correct and Retain step waits for Phase Two field work. Brewster's protection-call feedback item stays with Yarno.
+- **Limited by medicine:** Rackley's physical limit continues; his classroom work was complete.
+- **Open staff decisions carried to Phase Two:** none new. The Boot Flood read and the protection cue go to unopposed movement first; the backup relay needs field evidence; the film packets still lack coach approval.
+- **RFA deadline:** the offer-sheet deadline for Bradfield passed May 2 with no offer sheet on record; there was nothing to match on May 7.
+
+## Phase Two, week one: May 5 to 8, staff review May 9
+
+### Control, medical and participation
+
+- **Controlled roster during the week:** 53 through May 8; the nine draft selections (May 8 to 10) and 17 undrafted rookies (May 10) were not under contract during these sessions and did no program work. Their onboarding begins May 12.
+- **Participation:** voluntary; the 49 signed veterans took part within their medical instructions; the four unsigned tenders were absent under the May 1 instruction. Attendance was not recorded or used as evidence.
+- **Medical:** Rackley's limit is unchanged (physical restriction; full teaching work at the permitted speed where medicine allowed). No new injury or restriction was communicated.
+- **Draft week:** Tice coordinated the veteran program on May 8 and 9 while Stone and Caldwell were in the draft room; the draft rounds ran in the evening on May 8 and 9 and at midday on Saturday, May 10, so no player session lost its assigned coach, and no temporary authority beyond the approved schedule was exercised.
+
+### What was taught
+
+Phase Two permits on-field individual and group instruction at the allowed speed, with no offense against defense and no live contact ([verified rules](../../../../library/2014_offseason_phase_rules_verification.md)). Every session used Explain, Show, Walk, then Rep at the permitted speed, Correct and Rep again; retention is checked next week.
+
+**Offense (Tice; Bates, Yarno, Spencer, Drake, Zernhelt).** Stance and alignment, formation recognition, personnel and role labels, run footwork for Power, Counter and Inside Zone, route landmarks for Stick, Drive, the taught Mesh work and Boot Flood, ball security, protection technique on air, and the center, quarterback and back communication in movement. "Perfect play" reps: the offense walked and then ran each carried concept against no defense, with the coaches supplying the picture by card.
+
+**Defense (Crennel; Pleasant, Bush, Oden).** Stance and alignment, front and leverage rules, pursuit landmarks, run-fit responsibility, coverage landmarks, rush-lane responsibility and communication, with TAKE, GIVE and ANSWER stated before each rep. Tackling approach and positioning were taught on bags and without contact.
+
+**Special teams (Westhoff).** Stance and start mechanics, protection and release technique, lane and leverage rules, return-path landmarks, ball handling and substitution responsibilities. The four punt families moved from the classroom to the field with Anger, Cain, Scobee and the core coverage players; Westhoff began the individual operation record (operation, kick, coverage).
+
+**Cross-training lanes.** The eight revised lanes opened in movement, each player's primary job first: Lane Johnson took a limited number of left-side sets after his right-tackle work; Asper took reps at both guard spots and echoed the interior communication; Thielen worked outside, slot and H; Kelce attached and detached; Poyer nickel and outside; Moore his packages plus the defined pressure work; Prosinski and Trawick secondary and coverage-unit jobs.
+
+**Physical work.** Individual plans continued under the performance staff.
+
+### Observations
+
+Unopposed work only. These observations do not establish blocking, coverage, timing against an opponent or unit execution.
+
+| Area | What was observed | Cause and next step |
+|---|---|---|
+| Boot Flood read, May 6 and 8 | With the free defender shown by card outside the launch path, the quarterbacks and the intermediate and flat receivers gave the single taught answer in movement, on both reps. | Teaching closed for the unopposed stage. The test against opposition is OTAs |
+| Protection identification, May 5 to 8 | Cousins, Brewster and the backs identified the point and the echo in movement against carded fronts, including the double A-gap mug. Physical execution against a rusher was not observed. | Correct in the taught state. Brewster's feedback item stays open until opposed reps |
+| Defensive relay, May 7 | Stanford delivered complete calls and checks in movement against carded motion, unopposed; Posluszny's front and fit calls came without prompting. | Classroom finding now holds unopposed. Opposed relay evidence waits for OTAs; the succession order is Stone's policy, not an award |
+| Punt operation, May 6 to 8 | The snap, hold and kick rhythm of Cain, Anger and Scobee was recorded by Westhoff for each family; no fault was recorded. | An operation record now exists; grading against a rush waits for camp |
+| Cross-training, May 5 to 8 | Each lane produced assigned reps; Asper's interior echoes were correct on the carded pictures. | Observation lanes only; no role decision |
+
+No other individual finding is recorded. A player not named above was not observed failing anything. Communication and Plan execution badges are not assessed for either unit.
+
+### Staff operation
+
+- **Consultation:** Stone, Tice, Crennel and Westhoff met for 25 minutes on May 5; the coordinators and position coaches held the 45-minute review on May 9. The 15-minute post-field meetings ran after each field session.
+- **Player council:** next meeting in the week of May 12.
+- **Emergency practice lead:** not used.
+- **Film:** no individual packet was issued; approval is still open. The May 9 review assigned each cause review an owner for the week of May 12.
+- **Rookies:** the May 9 review set the May 12 to 15 onboarding schedule for the 26 signed rookies (welcome package, complete Iteration I books, Stone and position-coach calls), with the May 16 and 17 rookie minicamp to follow under its own plan.
+
+### Social events
+
+Held as scheduled; no attendance recorded, no football discussed, nothing became personnel evidence.
+
+- May 6: team barbecue.
+- May 8: family cookout.
+
 ## Still to run
 
-- **May 2:** Phase One staff handoff and individual notes.
-- **May 5 to 23:** Phase Two, pausing for the May 8 to 10 draft and the May 16 and 17 rookie minicamp.
-- **Carried questions:** the Boot Flood read and protection identification, now in unopposed movement; field relay evidence for Stanford and Posluszny; cross-training lanes in movement; the participation basis for the four unsigned tenders; film packet approval and delivery; Rackley's physical progression under medical direction.
+- **May 12 to 15 and May 19 to 22:** Phase Two program days, with the May 16 staff review, the May 16 and 17 rookie minicamp under its own plan, and the May 23 Phase Two handoff.
+- **Carried questions:** opposed evidence for the Boot Flood read, protection identification and the backup relay (OTAs); the cross-training lanes under opposition; the four unsigned tenders' catch-up plans if they sign; film packet approval and delivery; Rackley's physical progression under medical direction; rookie onboarding and the rookies' first assigned jobs.

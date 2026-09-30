@@ -1,21 +1,21 @@
 # Jacksonville Jaguars roster
 
-**As of:** May 1, 2014
-**Canonical controlled-player count:** **53** (offseason roster; the 90-player limit applies from the league year).
+**As of:** May 11, 2014
+**Canonical controlled-player count:** **79** (offseason roster of 90: 75 under signed contracts, including the nine 2014 draft selections and 17 undrafted rookies signed May 8 to 11, and four unsigned tenders).
 **Practice squad:** 0. No 2014 practice squad exists before the regular season.
 **2013 season:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-1 (AFC Wild Card: Jacksonville 38, Kansas City 14; AFC Divisional: Tennessee 20, Jacksonville 13).
 
-<!-- player-ages-as-of: 2014-05-01 -->
+<!-- player-ages-as-of: 2014-05-11 -->
 
 Birth dates are sourced in the [identity registry](../../library/data/player_birth_dates.json). Age is completed years at the master date in Document 5; [league ages](player_ages.md) update through the same renderer. Transaction history is in the [2014 ledger](ledger.md).
 
 ## How to read this page
 
-Players are grouped by position. Pos is the roster position in Document 4. Status is the offseason roster (90-player limit from the league year) or a reserve list; tendered players are shown with their unsigned tender, and a date shows when a player signed or re-signed in 2014. Availability is the club's current medical communication; "No communicated restriction" means none has been communicated, and game-week status still requires fresh communication before each game. Role lists only assignments already decided in canon (ledger, Document 5 and the weekly outputs); "Role not set" means no assignment has been made, not a demotion. Depth order is kept in the [depth chart](depth_chart.md), not implied by the order of this page.
+Players are grouped by position. Pos is the roster position in Document 4. Status is the offseason roster (90-player limit from the league year) or a reserve list; tendered players are shown with their unsigned tender, a date shows when a player signed or re-signed in 2014, and rookies are marked drafted (with their overall selection) or undrafted. Availability is the club's current medical communication; "No communicated restriction" means none has been communicated, and game-week status still requires fresh communication before each game. Role lists only assignments already decided in canon (ledger, Document 5 and the weekly outputs); "Role not set" means no assignment has been made, not a demotion. Depth order is kept in the [depth chart](depth_chart.md), not implied by the order of this page.
 
 ## Current controlled players
 
-### Quarterbacks (4)
+### Quarterbacks (5)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
@@ -23,6 +23,7 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | Chad Henne | QB | 1985-07-02 | 28 | Offseason roster (re-signed April 4, 2014) | No communicated restriction | QB2 |
 | John Parker Wilson | QB | 1985-10-17 | 28 | Offseason roster | No communicated restriction | QB3 |
 | Tyler Bray | QB | 1991-12-27 | 22 | Offseason roster (reserve/future contract effective March 11) | No communicated restriction | Role not set |
+| Connor Shaw | QB | 1991-09-19 | 22 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
 
 ### Running backs (4)
 
@@ -37,9 +38,9 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
-| Montell Owens | FB | 1984-05-04 | 29 | Offseason roster | No communicated restriction | FB |
+| Montell Owens | FB | 1984-05-04 | 30 | Offseason roster | No communicated restriction | FB |
 
-### Wide receivers (6)
+### Wide receivers (9)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
@@ -49,37 +50,52 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | Jerrell Jackson | WR | 1990-02-06 | 24 | Offseason roster (reserve/future contract effective March 11) | No communicated restriction | Role not set |
 | Hakeem Nicks | WR | 1988-01-14 | 26 | Offseason roster (signed March 14, 2014) | No communicated restriction | Role not set |
 | Andrew Hawkins | WR | 1986-03-10 | 28 | Offseason roster (signed March 18, 2014, offer sheet not matched) | No communicated restriction | Role not set |
+| Davante Adams | WR | 1992-12-24 | 21 | Offseason roster (Rookie, drafted No. 38, May 9, 2014; rookie contract signed May 11, 2014) | No communicated restriction | Role not set (the planned third receiver by draft; WR1 and WR3 are Stone's decisions) |
+| Allen Hurns | WR | 1991-11-12 | 22 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
+| Taylor Gabriel | WR | 1991-02-17 | 23 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
 
-### Tight ends (2)
+### Tight ends (5)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
 | Marcedes Lewis | TE | 1984-05-19 | 29 | Offseason roster | No communicated restriction | Lead TE |
 | Travis Kelce | TE | 1989-10-05 | 24 | Offseason roster | No communicated restriction | TE2 |
+| Cameron Brate | TE | 1991-07-03 | 22 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
+| Marcel Jensen | TE | 1990-02-12 | 24 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
+| Gator Hoskins | TE | 1991-12-19 | 22 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
 
-### Offensive tackles (3)
+### Offensive tackles (6)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
 | Cameron Bradfield | OT | 1987-09-14 | 26 | Offseason roster (RFA tender, unsigned) | No communicated restriction | Swing tackle; sixth OL in 6OL |
-| Lane Johnson | OT | 1990-05-08 | 23 | Offseason roster | No communicated restriction | Starting right tackle |
+| Lane Johnson | OT | 1990-05-08 | 24 | Offseason roster | No communicated restriction | Starting right tackle |
 | Eugene Monroe | OT | 1987-04-18 | 27 | Offseason roster (re-signed March 11, 2014) | No communicated restriction | Starting LT |
+| Joel Bitonio | OT | 1991-10-11 | 22 | Offseason roster (Rookie, drafted No. 26, May 8, 2014; rookie contract signed May 11, 2014) | No communicated restriction | Role not set (tackle or guard is Stone's decision) |
+| Charles Leno Jr. | OT | 1991-10-09 | 22 | Offseason roster (Rookie, drafted No. 168, May 10, 2014; rookie contract signed May 11, 2014) | No communicated restriction | Role not set (reserve tackle) |
+| Cornelius Lucas | OT | 1991-07-18 | 22 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
 
-### Offensive guards (3)
+### Offensive guards (6)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
 | Mark Asper | G | 1985-11-08 | 28 | Offseason roster | No communicated restriction | Interior OL depth (game-day inactive Weeks 10-17) |
 | Austin Pasztor | G | 1990-11-26 | 23 | Offseason roster (ERFA tender, unsigned) | No communicated restriction | Game-day interior OL reserve (from Week 10) |
 | Will Rackley | G | 1989-10-11 | 24 | Offseason roster | Limited, no projected absence (upper extremity, Week 5) | Starting right guard |
+| Trai Turner | G | 1993-06-14 | 20 | Offseason roster (Rookie, drafted No. 90, May 9, 2014; rookie contract signed May 11, 2014) | No communicated restriction | Role not set (interior line) |
+| Andrew Norwell | G | 1991-10-25 | 22 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
+| Matt Feiler | G | 1992-07-07 | 21 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
 
-### Centers (1)
+### Centers (4)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
 | Mike Brewster | C | 1989-07-27 | 24 | Offseason roster | No communicated restriction | Starting center (confirmed Week 6) |
+| Corey Linsley | C | 1991-07-27 | 22 | Offseason roster (Rookie, drafted No. 153, May 10, 2014; rookie contract signed May 11, 2014) | No communicated restriction | Role not set (center) |
+| Tyler Shatley | C | 1991-05-05 | 23 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
+| Tyler Larsen | C | 1991-07-08 | 22 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
 
-### Defensive ends (6)
+### Defensive ends (8)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
@@ -89,8 +105,10 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | C.J. Wilson | DE | 1987-03-30 | 27 | Offseason roster (re-signed March 28, 2014) | No communicated restriction (current physical March 26) | Front depth; roster competition |
 | Jeremy Mincey | DE | 1983-12-14 | 30 | Offseason roster | No communicated restriction | Edge 2 |
 | Daniel Te'o-Nesheim | DE | 1987-06-12 | 26 | Offseason roster (signed March 18, 2014) | No communicated restriction | Role not set |
+| Kasim Edebali | DE | 1989-08-17 | 24 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
+| Jackson Jeffcoat | DE | 1990-12-26 | 23 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
 
-### Defensive tackles (6)
+### Defensive tackles (7)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
@@ -100,17 +118,21 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | Jeris Pendleton | DT | 1983-11-07 | 30 | Offseason roster | No communicated restriction | Role not set |
 | D'Anthony Smith | DT | 1988-06-09 | 25 | Offseason roster (reserve/future contract effective March 11) | No communicated restriction | Role not set |
 | Jerome Long | DT | 1990-04-09 | 24 | Offseason roster (reserve/future contract effective March 11) | No communicated restriction | Role not set |
+| Aaron Donald | DT | 1991-05-23 | 22 | Offseason roster (Rookie, drafted No. 13, May 8, 2014; rookie contract signed May 11, 2014) | No communicated restriction | Role not set (interior defensive line) |
 
-### Linebackers (4)
+### Linebackers (7)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
-| Sio Moore | LB | 1990-05-02 | 23 | Offseason roster | No communicated restriction | Package LB (Crennel's packages) |
+| Sio Moore | LB | 1990-05-02 | 24 | Offseason roster | No communicated restriction | Package LB (Crennel's packages) |
 | Paul Posluszny | LB | 1984-10-10 | 29 | Offseason roster | No communicated restriction (head/neck hold from Week 13 cleared April 5, 2014) | Base LB |
 | Daryl Smith | LB | 1982-03-14 | 32 | Offseason roster | No communicated restriction | Base LB; defensive communication lead |
 | Julian Stanford | LB | 1990-09-02 | 23 | Offseason roster | No communicated restriction | LB depth |
+| Telvin Smith | LB | 1991-04-11 | 23 | Offseason roster (Rookie, drafted No. 129, May 10, 2014; rookie contract signed May 11, 2014) | No communicated restriction | Role not set (linebacker) |
+| Christian Jones | LB | 1991-02-18 | 23 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
+| Todd Davis | LB | 1992-05-17 | 21 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
 
-### Cornerbacks (5)
+### Cornerbacks (6)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
@@ -119,8 +141,9 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | Alterraun Verner | CB | 1988-12-13 | 25 | Offseason roster (signed March 11, 2014) | No communicated restriction | Role not set |
 | Aqib Talib | CB | 1986-02-13 | 28 | Offseason roster (signed March 11, 2014) | No communicated restriction | Role not set |
 | Jordan Poyer | CB | 1991-04-25 | 23 | Offseason roster | No communicated restriction | Nickel; coverage units |
+| Malcolm Butler | CB | 1990-03-02 | 24 | Offseason roster (Rookie, drafted No. 241, May 10, 2014; rookie contract signed May 11, 2014) | No communicated restriction | Role not set (outside corner with a special-teams path) |
 
-### Safeties (5)
+### Safeties and defensive backs (7)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
@@ -129,14 +152,21 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | Bacarri Rambo | S | 1990-06-27 | 23 | Offseason roster | No communicated restriction | Starting S; coverage units |
 | Brynden Trawick | S | 1989-10-23 | 24 | Offseason roster | No communicated restriction | Coverage units |
 | Antwon Blake | S | 1990-08-09 | 23 | Offseason roster (reserve/future contract effective March 11) | No communicated restriction | Role not set |
+| Jemea Thomas | DB | 1990-04-07 | 24 | Offseason roster (Rookie, drafted No. 205, May 10, 2014; rookie contract signed May 11, 2014) | No communicated restriction | Role not set (safety and slot corner) |
+| Adrian Phillips | S | 1992-03-28 | 22 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
 
-### Specialists (3)
+### Specialists (4)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
 | Josh Scobee | K | 1982-06-23 | 31 | Offseason roster | No communicated restriction | K |
 | Bryan Anger | P | 1988-10-06 | 25 | Offseason roster | No communicated restriction | P |
 | Jeremy Cain | LS | 1980-03-24 | 34 | Offseason roster (re-signed March 19, 2014) | No communicated restriction | LS (2013 incumbent; camp competition planned) |
+| Casey Kreiter | LS | 1990-08-13 | 23 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
+
+## 2014 rookies
+
+The nine draft selections of May 8 to 10 (Donald, Bitonio, Adams, Turner, Telvin Smith, Linsley, Leno, Thomas and Butler) signed four-year rookie contracts on May 11, 2014, and 17 undrafted rookies signed three-year minimum contracts on May 10 ([draftees](offseason/draft/draftees.md); [undrafted signings](offseason/draft/udfa_signings.md)). They are listed in their position groups above with no role set; Stone places rookies only by decision. James Hurst (OT, North Carolina) is held on the undrafted board until a medical clearance is recorded. Alan Ball's revisit after the draft remains a user decision.
 
 ## Reserve/future contracts (2014) and the 2013 practice squad
 
