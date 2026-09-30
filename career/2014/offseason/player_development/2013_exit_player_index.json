@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "season": 2013,
+  "description": "Frozen Jacksonville 2013 exit-review player universe. This identifies continuity only; it does not control the 2014 roster.",
+  "source": "career/2014/offseason/player_development/roster_profiles.md",
+  "count": 61,
+  "players": [
+    {
+      "player": "Chad Henne",
+      "pos": "QB"
+    },
+    {
+      "player": "Kirk Cousins",
+      "pos": "QB"
+    },
+    {
+      "player": "John Parker Wilson",
+      "pos": "QB"
+    },
+    {
+      "player": "Tyler Bray",
+      "pos": "QB"
+    },
+    {
+      "player": "Maurice Jones-Drew",
+      "pos": "RB"
+    },
+    {
+      "player": "C.J. Anderson",
+      "pos": "RB"
+    },
+    {
+      "player": "Jonathan Grimes",
+      "pos": "RB"
+    },
+    {
+      "player": "Montell Owens",
+      "pos": "FB"
+    },
+    {
+      "player": "Richard Murphy",
+      "pos": "RB"
+    },
+    {
+      "player": "Will Ta'ufo'ou",
+      "pos": "FB"
+    },
+    {
+      "player": "Adam Thielen",
+      "pos": "WR"
+    },
+    {
+      "player": "Cecil Shorts",
+      "pos": "WR"
+    },
+    {
+      "player": "Justin Blackmon",
+      "pos": "WR"
+    },
+    {
+      "player": "Toney Clemons",
+      "pos": "WR"
+    },
+    {
+      "player": "Mike Brown",
+      "pos": "WR"
+    },
+    {
+      "player": "Jerrell Jackson",
+      "pos": "WR"
+    },
+    {
+      "player": "Marcedes Lewis",
+      "pos": "TE"
+    },
+    {
+      "player": "Allen Reisner",
+      "pos": "TE"
+    },
+    {
+      "player": "Travis Kelce",
+      "pos": "TE"
+    },
+    {
+      "player": "Eugene Monroe",
+      "pos": "OT"
+    },
+    {
+      "player": "Lane Johnson",
+      "pos": "OT"
+    },
+    {
+      "player": "Austin Pasztor",
+      "pos": "G"
+    },
+    {
+      "player": "Brad Meester",
+      "pos": "C"
+    },
+    {
+      "player": "Cameron Bradfield",
+      "pos": "OT"
+    },
+    {
+      "player": "Mike Brewster",
+      "pos": "C"
+    },
+    {
+      "player": "Uche Nwaneri",
+      "pos": "G"
+    },
+    {
+      "player": "Will Rackley",
+      "pos": "G"
+    },
+    {
+      "player": "Mark Asper",
+      "pos": "G"
+    },
+    {
+      "player": "Sen'Derrick Marks",
+      "pos": "DT"
+    },
+    {
+      "player": "Andre Branch",
+      "pos": "DE"
+    },
+    {
+      "player": "C.J. Wilson",
+      "pos": "DE"
+    },
+    {
+      "player": "Jason Babin",
+      "pos": "DE"
+    },
+    {
+      "player": "Jeremy Mincey",
+      "pos": "DE"
+    },
+    {
+      "player": "Roy Miller",
+      "pos": "DT"
+    },
+    {
+      "player": "Tyson Alualu",
+      "pos": "DT"
+    },
+    {
+      "player": "Ryan Davis",
+      "pos": "DE"
+    },
+    {
+      "player": "Lavar Edwards",
+      "pos": "DE"
+    },
+    {
+      "player": "C.J. Mosley",
+      "pos": "DT"
+    },
+    {
+      "player": "Jeris Pendleton",
+      "pos": "DT"
+    },
+    {
+      "player": "Jerome Long",
+      "pos": "DT"
+    },
+    {
+      "player": "D'Anthony Smith",
+      "pos": "DT"
+    },
+    {
+      "player": "Daryl Smith",
+      "pos": "LB"
+    },
+    {
+      "player": "Paul Posluszny",
+      "pos": "LB"
+    },
+    {
+      "player": "Russell Allen",
+      "pos": "LB"
+    },
+    {
+      "player": "Sio Moore",
+      "pos": "LB"
+    },
+    {
+      "player": "Julian Stanford",
+      "pos": "LB"
+    },
+    {
+      "player": "Brent Grimes",
+      "pos": "CB"
+    },
+    {
+      "player": "Alan Ball",
+      "pos": "CB"
+    },
+    {
+      "player": "Bacarri Rambo",
+      "pos": "S"
+    },
+    {
+      "player": "Dwight Lowery",
+      "pos": "S"
+    },
+    {
+      "player": "Jordan Poyer",
+      "pos": "CB"
+    },
+    {
+      "player": "Mike Harris",
+      "pos": "CB"
+    },
+    {
+      "player": "A.J. Bouye",
+      "pos": "CB"
+    },
+    {
+      "player": "Kevin Rutland",
+      "pos": "CB"
+    },
+    {
+      "player": "Chris Prosinski",
+      "pos": "S"
+    },
+    {
+      "player": "Brynden Trawick",
+      "pos": "S"
+    },
+    {
+      "player": "Brandon King",
+      "pos": "DB"
+    },
+    {
+      "player": "Antwon Blake",
+      "pos": "S"
+    },
+    {
+      "player": "Bryan Anger",
+      "pos": "P"
+    },
+    {
+      "player": "Josh Scobee",
+      "pos": "K"
+    },
+    {
+      "player": "Jeremy Cain",
+      "pos": "LS"
+    }
+  ]
+}
