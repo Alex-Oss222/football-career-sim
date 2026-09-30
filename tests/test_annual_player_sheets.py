@@ -33,6 +33,12 @@ class AnnualPlayerSheetTests(unittest.TestCase):
         self.assertNotIn("## Year-over-year change",sheet)
         self.assertNotIn("Previous annual profile",sheet)
 
+    def test_every_2013_position_can_render(self):
+        checkpoint,players=load_season_players(2013)
+        for player in players:
+            sheet=render_player_sheet(player,2013,checkpoint)
+            self.assertIn(f"**Position:** {player.pos}",sheet)
+
     def test_generator_does_not_invent_grade(self):
         checkpoint,players=load_season_players(2013)
         sheet=render_player_sheet(players[0],2013,checkpoint)
