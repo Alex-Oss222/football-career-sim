@@ -500,3 +500,17 @@ The user subsequently selected the historical calendar: rookie camp May 16–17;
 | Sio Moore | Linebacker plus defined pressure-package work |
 | Chris Prosinski | Secondary and special-teams versatility |
 | Brynden Trawick | Secondary and special-teams versatility |
+
+## September 30, 2026 amendment: shop Will Rackley, keep Mike Brewster
+
+**User instruction, at the May 11, 2014 branch checkpoint.** Caldwell shops Will Rackley for an unconditional 2015 seventh-round pick. Use the already-authorized fallbacks only if necessary: a 2016 seventh, or a conditional 2015 seventh. Brewster is not shopped unless the market rejects Rackley and Stone later decides Linsley has earned enough trust to make Brewster expendable.
+
+**Reasons.** The draft added Turner at guard, Bitonio as a tackle or guard, Linsley at center and Leno at tackle, so Rackley has more direct competition than Brewster. Rackley's 2013 strength was communication; his leverage and recovery technique was still the open issue. Brewster took over center in 2013, handled the protection communication with Cousins, and the QB-center identification work was built around that relationship; Linsley competes with him but is not handed the job before an NFL practice rep. Rackley's 2014 charge is about $1.586M against Brewster's about $573K, so moving Rackley gives more room. Pasztor is not part of the reasoning: he has not signed his tender.
+
+## September 30, 2026 amendment: Alan Ball
+
+**User instruction, at the May 12, 2014 branch checkpoint.** Do not re-sign Alan Ball now. Keep him as the first veteran corner Jacksonville calls if the room is hit by injury.
+
+Ball did nothing to lose the club's respect: he won the outside job in 2013 and started until he was injured, and no individual failure forced him out. The room changed. With Talib, Verner, Harris, Poyer, Bouye, Butler and Jemea Thomas, signing him now would take developmental reps from Harris, Bouye, Butler and Thomas without filling a clear need.
+
+**What Stone tells him.** Two things together. First, help him find the right opportunity: he deserves a chance to play; he and his agent name three clubs that give him a real opportunity, and any club that calls Jacksonville gets an honest evaluation of what he did here. Second, leave the door open both ways: he should take the best situation he finds and not wait for Jacksonville; if nothing develops and Jacksonville's situation changes, they talk again. If he signs elsewhere, that is the outcome Stone wanted for him. If he stays available and Jacksonville later needs a veteran outside corner, Caldwell calls him back.

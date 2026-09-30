@@ -1,6 +1,6 @@
 # 2014 player profiles
 
-Working player cards for the current 79-player roster (53 carried players plus the nine 2014 draft selections and 17 undrafted signings of May 8 to 11). Starting personnel judgments remain in place during the season; the full assessment is reviewed at season close. The bottom regular-season and playoff tables refresh after every closed game.
+Working player cards for the current 78-player roster (52 carried players plus the nine 2014 draft selections and 17 undrafted signings of May 8 to 11). Starting personnel judgments remain in place during the season; the full assessment is reviewed at season close. The bottom regular-season and playoff tables refresh after every closed game.
 
 [2014 player template](TEMPLATE.md) · [2013 final profiles](../../2013/player_profiles/README.md) · [Current roster](../roster.md)
 
@@ -38,7 +38,6 @@ Working player cards for the current 79-player roster (53 carried players plus t
 | [Cornelius Lucas](cornelius_lucas.md) | OT |
 | [Mark Asper](mark_asper.md) | G |
 | [Austin Pasztor](austin_pasztor.md) | G |
-| [Will Rackley](will_rackley.md) | G |
 | [Trai Turner](trai_turner.md) | G |
 | [Andrew Norwell](andrew_norwell.md) | G |
 | [Matt Feiler](matt_feiler.md) | G |
@@ -97,3 +96,4 @@ Kept as history of the players who left; they are not reassessed.
 | [Cecil Shorts](cecil_shorts.md) | WR | Traded to Indianapolis, March 31, 2014 |
 | [Justin Blackmon](justin_blackmon.md) | WR | Traded to Indianapolis, March 31, 2014 |
 | [Russell Allen](russell_allen.md) | LB | Traded to Arizona, April 7, 2014 |
+| [Will Rackley](will_rackley.md) | G | Traded to Seattle, May 12, 2014 |

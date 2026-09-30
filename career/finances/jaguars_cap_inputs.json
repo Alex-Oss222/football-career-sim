@@ -1,7 +1,7 @@
 {
  "team": "Jacksonville Jaguars",
- "as_of": "2014-05-11",
- "checkpoint": "Entry 109",
+ "as_of": "2014-05-12",
+ "checkpoint": "Entry 110",
  "prepared": "2026-09-30",
  "start_year": 2014,
  "end_year": 2025,
@@ -2189,8 +2189,8 @@
    "roster_position": "G",
    "date_of_birth": "1989-10-11",
    "age_at_checkpoint": 24,
-   "control": "signed",
-   "status": "Under contract",
+   "control": "traded",
+   "status": "Traded to Seattle, May 12, 2014 (Entry 110)",
    "contract_type": "Rookie, 2011 third round",
    "signed": "2011",
    "term": "4 / 2014",
@@ -2199,9 +2199,9 @@
    "bonus_terms": "$619,472 signing bonus; final 2014 allocation $154,868",
    "guarantees": "Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap.",
    "dead_money_2014": "$154,868 gross exposure under adopted terms, before any later earned payment or recorded credit",
-   "remaining_guarantees": 0,
+   "remaining_guarantees": null,
    "availability": "Limited, no projected absence (upper extremity, Week 5)",
-   "plan": "No new transaction decision in this tracker",
+   "plan": "Traded to Seattle (Entry 110)",
    "source_note": "Planning estimate reserves the projected $1.431M proven-performance base. Original base is $772,401 (contract-total reconstruction), cap $927,269. His 2011 participation qualifies for one season; verify 2013 branch snaps and publication before booking the escalator.",
    "sources": [
     "career/2014/offseason/contract_table.md",
@@ -2213,15 +2213,11 @@
    "accrued_seasons": "Through 2012: 2 (2012 on Reserve/Injured, full pay). 2013: Accrues in branch (on 53 for 16 games)",
    "years": {
     "2014": {
-     "status": "approximate",
+     "status": "not_committed",
      "cap": null,
-     "base": 1431000,
-     "proration": 154868,
-     "other_cap": 0,
-     "cash": 1431000,
-     "approximate_cap": 1585868,
-     "estimate_note": "Planning estimate reserves the projected $1.431M proven-performance base. Original base is $772,401 (contract-total reconstruction), cap $927,269. His 2011 participation qualifies for one season; verify 2013 branch snaps and publication before booking the escalator. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.",
-     "guaranteed_base": 0
+     "base": null,
+     "proration": null,
+     "cash": null
     },
     "2015": {
      "status": "not_committed",
@@ -2302,7 +2298,10 @@
     }
    },
    "guarantee_basis": "simulation reconstruction",
-   "schedule_basis": "Includes adopted simulation amounts; see contract notes"
+   "schedule_basis": "Includes adopted simulation amounts; see contract notes",
+   "former_player": true,
+   "departure_date": "2014-05-12",
+   "departure_source": "career/2014/ledger.md"
   },
   {
    "name": "Mike Brewster",
@@ -11180,6 +11179,13 @@
    "amount": 416668,
    "status": "reconstructed",
    "basis": "Pre-June 1 trade to Arizona, April 7, 2014 (Entry 106): his final $416,668 original bonus allocation stays with Jacksonville in 2014. Arizona takes his $1,975,000 base and $25,000 workout bonus."
+  },
+  {
+   "player": "Will Rackley",
+   "year": 2014,
+   "amount": 154868,
+   "status": "reconstructed",
+   "basis": "Pre-June 1 trade to Seattle, May 12, 2014 (Entry 110): his final $154,868 original bonus allocation stays with Jacksonville in 2014. Seattle takes his $1,431,000 base. No 2015 year."
   }
  ],
  "amendments": [
@@ -11242,6 +11248,11 @@
    "date": "2014-05-11",
    "source": "career/2014/ledger.md",
    "description": "Entry 108: nine draft selections (May 8 to 10) signed May 11 on slot reconstructions from the same-slot 2014 contracts; 17 undrafted rookies signed May 10 on three-year minimum contracts (five linemen with $15,000 bonuses). Entry 109: clock May 11."
+  },
+  {
+   "date": "2014-05-12",
+   "source": "career/2014/ledger.md",
+   "description": "Entry 110: Rackley traded to Seattle for Seattle's own unconditional 2015 seventh-round pick after the May 11 calls; physical passed and processed May 12. Pre-June 1 trade: his $154,868 bonus allocation stays as 2014 dead money and his $1,431,000 base leaves. Clock May 12."
   }
  ],
  "scenarios": [],

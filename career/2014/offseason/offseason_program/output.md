@@ -98,7 +98,7 @@ The staff handoff was held as the plan requires, with no player workout. Each ro
 ### Control, medical and participation
 
 - **Controlled roster during the week:** 53 through May 8; the nine draft selections (May 8 to 10) and 17 undrafted rookies (May 10) were not under contract during these sessions and did no program work. Their onboarding begins May 12.
-- **Participation:** voluntary; the 49 signed veterans took part within their medical instructions; the four unsigned tenders were absent under the May 1 instruction. Attendance was not recorded or used as evidence.
+- **Participation:** voluntary; the 49 signed veterans took part within their medical instructions; the four unsigned tenders were absent under the May 1 instruction. Attendance was not recorded or used as evidence. Will Rackley, a participant through May 8, was traded to Seattle on May 12 and leaves the program with his individual work recorded as it stood.
 - **Medical:** Rackley's limit is unchanged (physical restriction; full teaching work at the permitted speed where medicine allowed). No new injury or restriction was communicated.
 - **Draft week:** Tice coordinated the veteran program on May 8 and 9 while Stone and Caldwell were in the draft room; the draft rounds ran in the evening on May 8 and 9 and at midday on Saturday, May 10, so no player session lost its assigned coach, and no temporary authority beyond the approved schedule was exercised.
 
@@ -148,4 +148,4 @@ Held as scheduled; no attendance recorded, no football discussed, nothing became
 ## Still to run
 
 - **May 12 to 15 and May 19 to 22:** Phase Two program days, with the May 16 staff review, the May 16 and 17 rookie minicamp under its own plan, and the May 23 Phase Two handoff.
-- **Carried questions:** opposed evidence for the Boot Flood read, protection identification and the backup relay (OTAs); the cross-training lanes under opposition; the four unsigned tenders' catch-up plans if they sign; film packet approval and delivery; Rackley's physical progression under medical direction; rookie onboarding and the rookies' first assigned jobs.
+- **Carried questions:** opposed evidence for the Boot Flood read, protection identification and the backup relay (OTAs); the cross-training lanes under opposition; the four unsigned tenders' catch-up plans if they sign; film packet approval and delivery; Rackley's physical progression under medical direction; rookie onboarding and the rookies' first assigned jobs. Rackley's physical progression left with his May 12 trade to Seattle; the starting right guard place is open for Stone.

@@ -295,7 +295,7 @@ def render_main(d,years):
         out.append('These are selection rights. Add each rookie’s full contract schedule after the actual selection and signing. No future contract dollars are booked against an unselected player. [The draft ownership record](../2014/draft/draft_order.md) controls the picks.\n\n## Decision calendar\n\n')
     out.append(table(['Date / review','Player or group','Financial treatment'],[
         ['Open (June 16, 2014 is the adjusted June 15 RFA tender date in the career calendar)','Cameron Bradfield (RFA); Toney Clemons, Austin Pasztor and Mike Brown (ERFA)','The four unsigned tenders count once, $3,066,000 in all, until signed or withdrawn; no offer sheet was received by the May 2 deadline'],
-        ['Open since May 10, 2014','Will Rackley or Mike Brewster','Rackley-or-Brewster trade authorized, no buyer named, nothing booked; a trade would leave the final bonus allocation ($154,868 or $3,334) as 2014 dead money'],
+        ['Closed May 12, 2014','Will Rackley','Traded to Seattle for its unconditional 2015 seventh; his $154,868 final bonus allocation stays as 2014 dead money and his $1,431,000 base leaves. Brewster is kept'],
         ['After the offseason program','Offseason workout charge','The $504,000 opening charge is reconciled to actual workout payments, not charged again'],
         ['2014 season','Hakeem Nicks and Daniel Te’o-Nesheim','Active-game bonuses of $31,250 a game, up to $500,000 each, are counted in the 2014 charges'],
         ['2016 option window','Lane Johnson','2017 fifth-year option remains unexercised; exercise decision follows the 2015 season'],

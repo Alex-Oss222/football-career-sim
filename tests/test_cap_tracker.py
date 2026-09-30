@@ -58,7 +58,7 @@ class CapTrackerTests(unittest.TestCase):
         validate(self.data)
         self.assertEqual(totals(self.data['players'], ['2014'])[0],
                          before + former['years']['2014']['cap'])
-        former['departure_date'] = '2014-05-12'
+        former['departure_date'] = '2014-05-13'
         with self.assertRaisesRegex(ValueError, 'future departure'):
             validate(self.data)
 
@@ -85,7 +85,7 @@ class CapTrackerTests(unittest.TestCase):
         outputs = render(self.data)
         main = next(value for path, value in outputs.items() if path.name == 'jaguars_cap.md')
         self.assertIn('Unused prior-year room carried in | $5,330,000 to $6,000,000', main)
-        self.assertIn('Difference including the rollover estimate | $12,440,314 to $13,110,314', main)
+        self.assertIn('Difference including the rollover estimate | $13,376,314 to $14,046,314', main)
         self.assertIn('Adjusted team cap | Unresolved', main)
         estimate = self.data['team_years']['2014']['carryover_working_estimate']
         estimate['low'], estimate['high'] = estimate['high'], estimate['low']
@@ -101,8 +101,8 @@ class CapTrackerTests(unittest.TestCase):
         organization=next(value for path,value in outputs.items() if path.name=='organization_finances.md')
         self.assertIn('**Nine-year view**',main)
         self.assertIn('**Additional three years**',main)
-        self.assertIn('$125,889,686',main)
-        self.assertIn('$7,110,314',main)
+        self.assertIn('$124,953,686',main)
+        self.assertIn('$8,046,314',main)
         self.assertIn('Certified cap space | Unresolved',main)
         self.assertNotRegex(main,r'^##+ \d+\.',)
         self.assertNotIn('Release comparisons',main)
@@ -141,7 +141,7 @@ class CapTrackerTests(unittest.TestCase):
 
     def test_every_signed_2014_deal_is_priced_and_estimates_stay_separate(self):
         current=[p for p in self.data['players'] if p['control'] in {'signed','future'}]
-        self.assertEqual(len(current),75)  # 49 after the trades (Entry 104) plus 26 rookie contracts (Entry 108)
+        self.assertEqual(len(current),74)  # 49 after the trades (Entry 104) plus 26 rookie contracts (Entry 108), less Rackley (Entry 110)
         self.assertTrue(all(p['years']['2014']['status'] in {'known','approximate'} for p in current))
         before=totals(current,['2014'])
         row=self.player('Montell Owens')['years']['2014']
@@ -189,8 +189,8 @@ class CapTrackerTests(unittest.TestCase):
         self.assertEqual(cap_cell(self.player('Lane Johnson')['years']['2017']), '')
         self.assertEqual(cap_cell(self.player('Alan Ball')['years']['2014']), '')
         self.assertEqual([working_total(self.data['players'],str(y)) for y in [2014,2015,2016,2017]],
-                         [127183362,123275736,84131574,48550284])  # Entry 108 adds the 26 rookie contracts
-        self.assertIn('$137,445,686',main)  # Old Bray bonus is included once.
+                         [125597494,123275736,84131574,48550284])  # Entry 108 adds the 26 rookie contracts; Entry 110 removes Rackley
+        self.assertIn('$136,014,686',main)  # Old Bray bonus is included once.
 
     def test_slot_guarantees_and_release_exposure_reconcile(self):
         lane=self.player('Lane Johnson');kelce=self.player('Travis Kelce')

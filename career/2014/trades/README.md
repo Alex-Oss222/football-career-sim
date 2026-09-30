@@ -1,6 +1,6 @@
 # Jacksonville 2014 trades
 
-The trade window opened March 11, 2014 at 4 p.m. ET. Each trade's current status is in [trade targets](trade_targets.md); the March 24 outcomes come from the user's [trade resolution log](march_24_2014_trade_resolution.md). The March 31 Shorts and Blackmon trade with Indianapolis has its own [trade record](shorts_blackmon_to_indianapolis_2014-03-31.md), and so does the same day's trade of the two Colts picks to Washington for Jacksonville's 2015 second ([trade record](colts_picks_to_washington_2014-03-31.md)). The Allen trade with Arizona, agreed March 24, closed April 7 under its conditions.
+The trade window opened March 11, 2014 at 4 p.m. ET. Each trade's current status is in [trade targets](trade_targets.md); the March 24 outcomes come from the user's [trade resolution log](march_24_2014_trade_resolution.md). The March 31 Shorts and Blackmon trade with Indianapolis has its own [trade record](shorts_blackmon_to_indianapolis_2014-03-31.md), and so does the same day's trade of the two Colts picks to Washington for Jacksonville's 2015 second ([trade record](colts_picks_to_washington_2014-03-31.md)). The Allen trade with Arizona, agreed March 24, closed April 7 under its conditions. The Rackley trade with Seattle closed May 12 ([trade record](rackley_to_seattle_2014-05-12.md)).
 
 ## Where each record lives
 
