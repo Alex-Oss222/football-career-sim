@@ -117,7 +117,7 @@ The nine program weeks run April 21–June 22. Phase Three occupies the last fou
 | **Aug. 28, kickoff pending dated notice** | Preseason 4: Atlanta at Jacksonville | Research rail; date gated Apr. 23; no invented kickoff |
 | **Aug. 30, before 4 p.m.** | Cut to 53; reconcile current list, eligibility and medical designations | Future deadline; Caldwell |
 | Aug. 31, noon | Final-cut waiver claiming period expires; process squad signings only after eligibility/waiver status is confirmed; preseason camp ends | Gated Aug. 4, sources G/H; practice-squad size follows the Aug. 19 rule change |
-| Sept. 1–3 | Complete Week 1 lineup/depth, specialist contingencies, cap/list audit and individual written role feedback | Proposed; no opening roles awarded by the calendar |
+| Sept. 1–3 | Complete Week 1 lineup/depth, specialist contingencies, cap/list audit and individual written role feedback; choose the six [season captains](offseason/phase_plan_decisions.md#choose-season-captains-before-week-1) | Proposed window for Stone's requested captain selection before Week 1; third defensive group, selection method and names still open; no opening roles awarded by the calendar |
 | Sept. 2, after 4 p.m. | Earliest Reserve/Injured designated-for-return placement under the applicable 2014 rule | Gated Aug. 4, G/H; individual eligibility and actual designation required |
 | Sept. 3, 4 p.m. / Sept. 4, midnight | Full cap compliance deadline / Top 51 expiration | Gated Aug. 4, G/H; Caldwell checks all applicable amounts |
 
