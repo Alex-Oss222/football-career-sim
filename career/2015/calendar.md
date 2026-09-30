@@ -133,7 +133,7 @@ Contemporary release D, date/opponent check E, later time amendment O. Times bel
 | 16 | Sunday, December 27 | Jacksonville at New Orleans | **4:05 p.m.**, amended December 14; originally 1 p.m. |
 | 17 | Sunday, January 3, 2016 | Jacksonville at Houston | 1 p.m. |
 
-*Baltimore away and San Diego home are the historical occupants of the two standings-based slots. The standing branch rule determines their playable opponents from **branch 2014 standings**. Keep the actual historical reference above, reconcile all reciprocal league fixtures, and publish the branch slate before execution. This does not substitute real 2014 standings or silently overwrite another club's game. The dated schedule and Week 8 bye remain the historical anchors.
+Baltimore away and San Diego home remain the historical opponents. The user-confirmed historical-calendar rule supersedes the earlier branch same-place substitution. Publish the actual reciprocal league fixtures before execution; branch standings continue to determine playoff qualification and draft order.
 
 The November 15 to 19 turnaround is a short week. The London week, bye and short week require appropriate travel/recovery and a smaller lawful preparation schedule. Those operational details are staff decisions, not invented historical flight or meeting times. Continue individual film and coach review after the bye.
 

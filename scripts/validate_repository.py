@@ -126,12 +126,20 @@ def validate(root=ROOT):
         from runtime.seasons import current_record
         state = (root/'state/05_Current_Season_State.md').read_text()
         register = (root/'state/04_Roster_and_Staff_Register.md').read_text()
-        ledger = current_record('ledger', root).read_text()
+        ledger = '\n'.join((root/p).read_text() for p in mapping.get('ledger_history', [])) + '\n' + current_record('ledger', root).read_text()
         roster = current_record('roster', root).read_text()
     except (OSError, ValueError) as exc:
         return [f'Cannot read required continuity input: {exc}']
     for path in mapping['required_files']:
         require((root/path).is_file(), f'Missing required file: {path}')
+
+    try:
+        from scripts.season_handoff import check as check_handoff
+        handoff = root / 'career' / str(mapping['active_season']) / 'closeouts/season_handoff.json'
+        if handoff.exists():
+            errors.extend(check_handoff(root, json.loads(handoff.read_text())))
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append('Invalid annual handoff: ' + str(exc))
 
     entries = {int(n) for n in re.findall(r'^## Entry (\d+)\b', ledger, re.M)}
     master = re.search(r'\| Master date/time \| (.*?) \|', state)
@@ -184,7 +192,8 @@ def validate(root=ROOT):
                     f'Document {n}: stale source-version hash in Document 5')
         index = register.split('### Current player index', 1)[1].split('### Players no longer', 1)[0]
         register_names = re.findall(r'^\| ([^|]+?) \| JAX-', index, re.M)
-        body = roster.split('## 3. Current controlled players', 1)[1].split('\n## 4.', 1)[0]
+        body = re.split(r'^## (?:3\. )?Current controlled players\s*$', roster, maxsplit=1, flags=re.M)[1]
+        body = re.split(r'^## ', body, maxsplit=1, flags=re.M)[0]
         roster_names = [m.strip() for m in re.findall(r'^\| ([^|]+?) \|', body, re.M)
                         if m.strip() != 'Player' and not m.strip().startswith('-')]
         require(len(register_names) == len(set(register_names)), 'Duplicate player in register')
@@ -307,7 +316,7 @@ def validate(root=ROOT):
         except (OSError, ValueError, KeyError, TypeError) as exc:
             errors.append(f'Draft order cannot be rebuilt from receipts: {exc}')
     # The opponent inventory is deliberately undated; validate it without
-    # substituting the historical standings or opening the schedule gate.
+    # importing results or opening the schedule gate.
     if (root/'career/2014/schedule/rotation_2014.json').exists():
         try:
             from runtime.schedule_2014 import check as check_2014_opponents

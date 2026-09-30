@@ -4,31 +4,31 @@
   "as_of": "2014-02-02",
   "status": "OPPONENTS_ONLY",
   "fixture_release": "2014-04-23T20:00:00-04:00",
-  "rotation_sha256": "6bfc2dab093d21c5cd4947a3dd30e1aa3dd3137d19111aee7bfa055f98647af9",
-  "regular_season_receipts_sha256": "6bf1e244fbd4843d8b365e61386ec88fd2a3d2273cef63ab71217e1a296c7317",
+  "rotation_sha256": "613a72c420080b93e03d5fa3771f19b327a623998c5409abb174cb48069eb9e3",
+  "calendar_policy": "historical",
   "division_order_2013": {
     "AFC East": [
-      "New York Jets",
-      "Buffalo Bills",
       "New England Patriots",
-      "Miami Dolphins"
+      "New York Jets",
+      "Miami Dolphins",
+      "Buffalo Bills"
     ],
     "AFC North": [
-      "Pittsburgh Steelers",
-      "Cleveland Browns",
       "Cincinnati Bengals",
-      "Baltimore Ravens"
+      "Pittsburgh Steelers",
+      "Baltimore Ravens",
+      "Cleveland Browns"
     ],
     "AFC South": [
+      "Indianapolis Colts",
       "Tennessee Titans",
       "Jacksonville Jaguars",
-      "Indianapolis Colts",
       "Houston Texans"
     ],
     "AFC West": [
+      "Denver Broncos",
       "Kansas City Chiefs",
       "San Diego Chargers",
-      "Denver Broncos",
       "Oakland Raiders"
     ],
     "NFC East": [
@@ -38,22 +38,22 @@
       "Washington Redskins"
     ],
     "NFC North": [
-      "Minnesota Vikings",
       "Green Bay Packers",
       "Chicago Bears",
-      "Detroit Lions"
+      "Detroit Lions",
+      "Minnesota Vikings"
     ],
     "NFC South": [
-      "New Orleans Saints",
-      "Tampa Bay Buccaneers",
       "Carolina Panthers",
-      "Atlanta Falcons"
+      "New Orleans Saints",
+      "Atlanta Falcons",
+      "Tampa Bay Buccaneers"
     ],
     "NFC West": [
-      "St. Louis Rams",
-      "Arizona Cardinals",
       "Seattle Seahawks",
-      "San Francisco 49ers"
+      "San Francisco 49ers",
+      "Arizona Cardinals",
+      "St. Louis Rams"
     ]
   },
   "fixed_games": [
@@ -97,7 +97,7 @@
   "games": [
     {
       "home": "Arizona Cardinals",
-      "away": "Green Bay Packers",
+      "away": "Detroit Lions",
       "component": "same_place"
     },
     {
@@ -137,6 +137,11 @@
     },
     {
       "home": "Atlanta Falcons",
+      "away": "Arizona Cardinals",
+      "component": "same_place"
+    },
+    {
+      "home": "Atlanta Falcons",
       "away": "Carolina Panthers",
       "component": "division"
     },
@@ -164,11 +169,6 @@
       "home": "Atlanta Falcons",
       "away": "Pittsburgh Steelers",
       "component": "interconference_rotation"
-    },
-    {
-      "home": "Atlanta Falcons",
-      "away": "San Francisco 49ers",
-      "component": "same_place"
     },
     {
       "home": "Atlanta Falcons",
@@ -202,13 +202,13 @@
     },
     {
       "home": "Baltimore Ravens",
-      "away": "Oakland Raiders",
-      "component": "same_place"
+      "away": "Pittsburgh Steelers",
+      "component": "division"
     },
     {
       "home": "Baltimore Ravens",
-      "away": "Pittsburgh Steelers",
-      "component": "division"
+      "away": "San Diego Chargers",
+      "component": "same_place"
     },
     {
       "home": "Baltimore Ravens",
@@ -302,6 +302,11 @@
     },
     {
       "home": "Chicago Bears",
+      "away": "Dallas Cowboys",
+      "component": "same_place"
+    },
+    {
+      "home": "Chicago Bears",
       "away": "Detroit Lions",
       "component": "division"
     },
@@ -324,11 +329,6 @@
       "home": "Chicago Bears",
       "away": "New Orleans Saints",
       "component": "conference_rotation"
-    },
-    {
-      "home": "Chicago Bears",
-      "away": "New York Giants",
-      "component": "same_place"
     },
     {
       "home": "Chicago Bears",
@@ -402,16 +402,16 @@
     },
     {
       "home": "Cleveland Browns",
+      "away": "Oakland Raiders",
+      "component": "same_place"
+    },
+    {
+      "home": "Cleveland Browns",
       "away": "Pittsburgh Steelers",
       "component": "division"
     },
     {
       "home": "Cleveland Browns",
-      "away": "San Diego Chargers",
-      "component": "same_place"
-    },
-    {
-      "home": "Cleveland Browns",
       "away": "Tampa Bay Buccaneers",
       "component": "interconference_rotation"
     },
@@ -432,6 +432,11 @@
     },
     {
       "home": "Dallas Cowboys",
+      "away": "New Orleans Saints",
+      "component": "same_place"
+    },
+    {
+      "home": "Dallas Cowboys",
       "away": "New York Giants",
       "component": "division"
     },
@@ -444,11 +449,6 @@
       "home": "Dallas Cowboys",
       "away": "San Francisco 49ers",
       "component": "conference_rotation"
-    },
-    {
-      "home": "Dallas Cowboys",
-      "away": "Tampa Bay Buccaneers",
-      "component": "same_place"
     },
     {
       "home": "Dallas Cowboys",
@@ -527,13 +527,13 @@
     },
     {
       "home": "Detroit Lions",
-      "away": "Tampa Bay Buccaneers",
-      "component": "conference_rotation"
+      "away": "New York Giants",
+      "component": "same_place"
     },
     {
       "home": "Detroit Lions",
-      "away": "Washington Redskins",
-      "component": "same_place"
+      "away": "Tampa Bay Buccaneers",
+      "component": "conference_rotation"
     },
     {
       "home": "Green Bay Packers",
@@ -549,11 +549,6 @@
       "home": "Green Bay Packers",
       "away": "Chicago Bears",
       "component": "division"
-    },
-    {
-      "home": "Green Bay Packers",
-      "away": "Dallas Cowboys",
-      "component": "same_place"
     },
     {
       "home": "Green Bay Packers",
@@ -576,9 +571,19 @@
       "component": "interconference_rotation"
     },
     {
+      "home": "Green Bay Packers",
+      "away": "Philadelphia Eagles",
+      "component": "same_place"
+    },
+    {
       "home": "Houston Texans",
       "away": "Baltimore Ravens",
       "component": "conference_rotation"
+    },
+    {
+      "home": "Houston Texans",
+      "away": "Buffalo Bills",
+      "component": "same_place"
     },
     {
       "home": "Houston Texans",
@@ -594,11 +599,6 @@
       "home": "Houston Texans",
       "away": "Jacksonville Jaguars",
       "component": "division"
-    },
-    {
-      "home": "Houston Texans",
-      "away": "Miami Dolphins",
-      "component": "same_place"
     },
     {
       "home": "Houston Texans",
@@ -657,11 +657,6 @@
     },
     {
       "home": "Jacksonville Jaguars",
-      "away": "Buffalo Bills",
-      "component": "same_place"
-    },
-    {
-      "home": "Jacksonville Jaguars",
       "away": "Cleveland Browns",
       "component": "conference_rotation"
     },
@@ -679,6 +674,11 @@
       "home": "Jacksonville Jaguars",
       "away": "Indianapolis Colts",
       "component": "division"
+    },
+    {
+      "home": "Jacksonville Jaguars",
+      "away": "Miami Dolphins",
+      "component": "same_place"
     },
     {
       "home": "Jacksonville Jaguars",
@@ -812,7 +812,7 @@
     },
     {
       "home": "Minnesota Vikings",
-      "away": "Philadelphia Eagles",
+      "away": "Washington Redskins",
       "component": "same_place"
     },
     {
@@ -887,7 +887,7 @@
     },
     {
       "home": "New Orleans Saints",
-      "away": "St. Louis Rams",
+      "away": "San Francisco 49ers",
       "component": "same_place"
     },
     {
@@ -902,7 +902,7 @@
     },
     {
       "home": "New York Giants",
-      "away": "Carolina Panthers",
+      "away": "Atlanta Falcons",
       "component": "same_place"
     },
     {
@@ -1017,6 +1017,11 @@
     },
     {
       "home": "Philadelphia Eagles",
+      "away": "Carolina Panthers",
+      "component": "same_place"
+    },
+    {
+      "home": "Philadelphia Eagles",
       "away": "Dallas Cowboys",
       "component": "division"
     },
@@ -1024,11 +1029,6 @@
       "home": "Philadelphia Eagles",
       "away": "Jacksonville Jaguars",
       "component": "interconference_rotation"
-    },
-    {
-      "home": "Philadelphia Eagles",
-      "away": "New Orleans Saints",
-      "component": "same_place"
     },
     {
       "home": "Philadelphia Eagles",
@@ -1142,7 +1142,7 @@
     },
     {
       "home": "San Francisco 49ers",
-      "away": "Detroit Lions",
+      "away": "Chicago Bears",
       "component": "same_place"
     },
     {
@@ -1182,11 +1182,6 @@
     },
     {
       "home": "Seattle Seahawks",
-      "away": "Chicago Bears",
-      "component": "same_place"
-    },
-    {
-      "home": "Seattle Seahawks",
       "away": "Dallas Cowboys",
       "component": "conference_rotation"
     },
@@ -1194,6 +1189,11 @@
       "home": "Seattle Seahawks",
       "away": "Denver Broncos",
       "component": "interconference_rotation"
+    },
+    {
+      "home": "Seattle Seahawks",
+      "away": "Green Bay Packers",
+      "component": "same_place"
     },
     {
       "home": "Seattle Seahawks",
@@ -1257,11 +1257,6 @@
     },
     {
       "home": "Tampa Bay Buccaneers",
-      "away": "Arizona Cardinals",
-      "component": "same_place"
-    },
-    {
-      "home": "Tampa Bay Buccaneers",
       "away": "Atlanta Falcons",
       "component": "division"
     },
@@ -1294,6 +1289,11 @@
       "home": "Tampa Bay Buccaneers",
       "away": "New Orleans Saints",
       "component": "division"
+    },
+    {
+      "home": "Tampa Bay Buccaneers",
+      "away": "St. Louis Rams",
+      "component": "same_place"
     },
     {
       "home": "Tennessee Titans",
@@ -1337,11 +1337,6 @@
     },
     {
       "home": "Washington Redskins",
-      "away": "Atlanta Falcons",
-      "component": "same_place"
-    },
-    {
-      "home": "Washington Redskins",
       "away": "Dallas Cowboys",
       "component": "division"
     },
@@ -1369,6 +1364,11 @@
       "home": "Washington Redskins",
       "away": "St. Louis Rams",
       "component": "conference_rotation"
+    },
+    {
+      "home": "Washington Redskins",
+      "away": "Tampa Bay Buccaneers",
+      "component": "same_place"
     },
     {
       "home": "Washington Redskins",

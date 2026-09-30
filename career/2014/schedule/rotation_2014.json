@@ -43,6 +43,13 @@
       "title": "2014 International Series Dates Confirmed",
       "published": "2013-11-28",
       "url": "https://www.wembleystadium.com/news/2013/nov/28/2014-international-series-dates-confirmed"
+    },
+    {
+      "id": "historical_schedule_order",
+      "outlet": "NFL",
+      "title": "2013 division order, used only to reproduce published 2014 opponents",
+      "published": "2013-12-30",
+      "url": "https://www.nfl.com/standings/division/2013/REG"
     }
   ],
   "club_codes": {
@@ -336,5 +343,56 @@
         "london_verify"
       ]
     }
-  ]
+  ],
+  "calendar_policy": "historical",
+  "historical_schedule_order_2013": {
+    "AFC East": [
+      "New England Patriots",
+      "New York Jets",
+      "Miami Dolphins",
+      "Buffalo Bills"
+    ],
+    "AFC North": [
+      "Cincinnati Bengals",
+      "Pittsburgh Steelers",
+      "Baltimore Ravens",
+      "Cleveland Browns"
+    ],
+    "AFC South": [
+      "Indianapolis Colts",
+      "Tennessee Titans",
+      "Jacksonville Jaguars",
+      "Houston Texans"
+    ],
+    "AFC West": [
+      "Denver Broncos",
+      "Kansas City Chiefs",
+      "San Diego Chargers",
+      "Oakland Raiders"
+    ],
+    "NFC East": [
+      "Philadelphia Eagles",
+      "Dallas Cowboys",
+      "New York Giants",
+      "Washington Redskins"
+    ],
+    "NFC North": [
+      "Green Bay Packers",
+      "Chicago Bears",
+      "Detroit Lions",
+      "Minnesota Vikings"
+    ],
+    "NFC South": [
+      "Carolina Panthers",
+      "New Orleans Saints",
+      "Atlanta Falcons",
+      "Tampa Bay Buccaneers"
+    ],
+    "NFC West": [
+      "Seattle Seahawks",
+      "San Francisco 49ers",
+      "Arizona Cardinals",
+      "St. Louis Rams"
+    ]
+  }
 }

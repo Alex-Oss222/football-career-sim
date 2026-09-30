@@ -1,5 +1,7 @@
 # Player film and written-feedback queue
 
+**Current-use note, Entry 101:** this is the 61-player exit-review baseline, not the live roster. The [current roster](../../roster.md) has 55 controlled players. Preserve departed-player feedback obligations as history; add actual newcomer work here without treating missing observations as failed performance.
+
 [Film workflow](README.md) | [Delivery log](delivery_log.md) | [Room work plans](../training/unit_plans.md)
 
 **Baseline:** February 2, 2014, Entry 79. This obligation inventory covers all 61 players in the exit-interview index and controlled inventory: 52 active, the 8 from the 2013 practice squad (six now on 2014 reserve/future contracts; King and Ta'ufo'ou left, Entry 85) and Meester on Reserve/Retired. It is not a current roster or a claim that these players are signed for the spring. Recheck club control, contract status and medical instructions before contact or participation. The [live roster](../../../2013/roster.md) now separates 52 active players, Meester on Reserve/Retired and the six March 11-effective futures contracts. This queue preserves the baseline obligations and does not replace that current record.

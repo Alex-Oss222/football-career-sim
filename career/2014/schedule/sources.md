@@ -1,5 +1,7 @@
 # 2014 opponent rotation: evidence and verification
 
+**Policy update, Entry 101:** historical fixtures and dates now control all seasons, including same-place pairings. Prior branch-recomputation discussion below is superseded. Source facts remain useful; no historical results become branch results.
+
 **Research checkpoint:** February 2, 2014 branch; checked September 29, 2026. Scope: opponent construction, designated home/away assignment and already announced London dates. No real 2013 record, playoff seed, strength-of-schedule number, 2014 result, player movement or coaching change enters the build.
 
 ## Two separate passes

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "scope": "2013 Jacksonville active records; select a successor map when a later season is opened",
+  "scope": "2014 active records; prior season evidence remains archived",
   "required_files": [
     "README.md",
     "AGENTS.md",
@@ -309,9 +309,16 @@
     "tests/test_season_isolation.py",
     "career/finances/README.md",
     "career/finances/jaguars_cap_inputs.json",
-    "career/finances/jaguars_cap_2014_2023.md",
+    "career/finances/jaguars_cap.md",
     "career/finances/jaguars_contract_details.md",
-    "scripts/render_jaguars_cap_tracker.py"
+    "scripts/render_jaguars_cap_tracker.py",
+    "career/2014/ledger.md",
+    "career/2014/roster.md",
+    "career/2014/coaching_staff.md",
+    "career/2014/player_ages.md",
+    "career/finances/organization_finances.md",
+    "career/2014/closeouts/season_handoff.json",
+    "scripts/season_handoff.py"
   ],
   "foundation_sources": {
     "1": "foundation/01_Project_Instructions.md",
@@ -371,13 +378,17 @@
   },
   "active_season": 2014,
   "current_records": {
-    "ledger": "career/2013/ledger.md",
-    "roster": "career/2013/roster.md",
-    "staff": "career/2013/coaching_staff.md",
-    "depth_chart": "career/2013/depth_chart.json",
-    "cap": "career/2013/offseason/current_cap_worksheet.md",
+    "ledger": "career/2014/ledger.md",
+    "roster": "career/2014/roster.md",
+    "staff": "career/2014/coaching_staff.md",
+    "depth_chart": "career/2014/offseason/depth_chart_working.json",
+    "cap": "career/2014/offseason/current_cap_worksheet.md",
     "calendar": "career/2014/calendar.md",
-    "player_ages": "career/2013/player_ages.md",
+    "player_ages": "career/2014/player_ages.md",
     "background_depth": "library/data/2013_week1_depth_charts.json"
-  }
+  },
+  "ledger_history": [
+    "career/2013/ledger.md"
+  ],
+  "background_depth_status": "Legacy biography source only; not legal 2014 game input"
 }

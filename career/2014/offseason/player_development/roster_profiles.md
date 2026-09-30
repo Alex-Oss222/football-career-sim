@@ -1,5 +1,7 @@
 # Living player profiles: 2014 entry
 
+**Current-use note, Entry 101:** this is the 61-player exit-review baseline, not the live roster. The [current roster](../../roster.md) has 55 controlled players. Preserve departed-player feedback obligations as history; add actual newcomer work here without treating missing observations as failed performance.
+
 [Development method](README.md) · [Cousins in detail](kirk_cousins.md) · [Film obligations](../film/player_queue.md) · [Annual calendar](../../calendar.md)
 
 **Evidence cutoff:** completed branch 2013 season and exit interviews; current control/medical status must be checked against February 2, 2014 Entry 79 and later actual events. These are staff syntheses and proposed opportunities, not new player statements or 2014 practice results. The linked interviews identify their underlying practice/game sources and distinguish documented facts from open questions.

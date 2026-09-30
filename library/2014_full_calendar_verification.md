@@ -1,5 +1,7 @@
 # 2014 annual calendar: direct-source follow-up
 
+**Policy update, Entry 101:** historical fixtures and dates now control all seasons, including same-place pairings. Prior branch-recomputation discussion below is superseded. Source facts remain useful; no historical results become branch results.
+
 **Research date:** September 29, 2026. Companion to [the original calendar research](2014_league_calendar_and_financial_rules.md). This file upgrades only the claims below. It does not globally upgrade that file's search-only evidence or import historical football outcomes.
 
 ## Sources opened and scope
@@ -34,7 +36,7 @@ Two further opened cross-checks:
 | Annual late-season / postseason dates | E directly confirms the date block; G separately agrees on October 7–8, October 28, November 11 and December 29. Use September 29 as a conservative public-by gate for the newly added October meeting and November signing date; this is an evidence cutoff, not a claim that September 29 was their first announcement. The original calendar's earlier established gates for the postseason dates remain valid |
 | November 11 scope and hour | Opened E confirms franchise signing date only. Other tender classes and the exact hour are not newly verified here; request the applicable dated league notice before processing an affected case |
 | December 29 future-contract period | E confirms the league opening. Jacksonville eligibility remains conditional on its own season ending and the player's eligibility; no playoff participant is assumed |
-| Regular-season fixtures | D's historical same-place Miami pairing cannot enter this branch. F exposes an actual date conflict if Buffalo is simply substituted. Validate the entire league slate at April 23 |
+| Regular-season fixtures | Entry 101 retains the historical Miami pairing and all actual fixture dates. Validate the historical league slate at April 23; no Buffalo substitution applies |
 
 **Separate verification pass:** different query wording located C, the Saints preseason preview, F and the Chiefs calendar block after A/B discovery. A/B's shared underlying bulletin is disclosed. Two search systems were attempted; irrelevant results from one system were discarded. G/H further confirm the late-August/September dates listed above, gated conservatively to August 4. Late-season tender scope, individual return windows and contract options still need their applicable notice. Carryover is specifically unresolved: G says December 27, while a search extract of the NFL 2014 Fact Book says December 26. The large book could not be opened, so neither date is certified; the calendar requires resolution before December 26 rather than risking a late notice.
 

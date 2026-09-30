@@ -1,15 +1,15 @@
 # Jacksonville Jaguars: 2014 Offseason program, Phases One and Two plan
 
 **Status:** 2013 METHODS RETAINED; individual training/film workflow authorized; other marked choices remain pending. No phase has run.
-**Planning checkpoint:** February 2, 2014. Prepared September 28, 2026 without advancing time.
-**Proposed dates:** Phase One April 21 to May 2; Phase Two May 5 to May 23.
+**Planning checkpoint:** March 24, 2014, Entry 101. Prepared from 2013 evidence; no phase executed.
+**Selected dates (execution not started):** Phase One April 21 to May 2; Phase Two May 5 to May 23.
 **Authority:** [Stone's memo, section 6](../stone_to_caldwell_2014_offseason_decisions.md); [2014 calendar](../../calendar.md).
 **Inherited method:** [2013 otas plan](../../../2013/offseason/otas/plan.md). The 2013 file remains unchanged; this plan's 2014 conditions override inherited dates, QB competition and new-head-coach clauses.
 **Execution records:** [Output](output.md) and [evidence summary](standouts.md) are prepared as NOT_STARTED. They receive actual observations only when the phase runs. Results and standouts never belong in this plan.
 
 ## Decision package and historical clarification
 
-The [complete phase decision package](../phase_plan_decisions.md) supplies the proposed dates, install sequence, room priorities, pending policy recommendations and emergency-staff choices, reviewed through the February 28 checkpoint, Entry 89. Its new recommendations remain unadopted. Individual feedback, shared protection-identification teaching and continuing individual development are already authorized. The [rules verification](../../../../library/2014_offseason_phase_rules_verification.md) distinguishes the schedule-filing deadline, Phase One classroom permission and unresolved passive pre-program film distribution.
+The [complete phase decision package](../phase_plan_decisions.md) supplies the selected historical dates, install sequence, room priorities, pending policy recommendations and emergency-staff choices, reconciled through the March 24 checkpoint, Entry 101. The historical schedule is selected under Entry 101; other named recommendations remain unadopted. Individual feedback, shared protection-identification teaching and continuing individual development are already authorized. The [rules verification](../../../../library/2014_offseason_phase_rules_verification.md) distinguishes the schedule-filing deadline, Phase One classroom permission and unresolved passive pre-program film distribution.
 
 ## Living player assessment: adopted follow-up
 
@@ -23,17 +23,17 @@ Invite player-selected film and interpretation during permitted contact without 
 
 Read [Stone’s current profile](../../../coaching_profiles/alex_stone.md) and the relevant [assistant assessment](../../../coaching_profiles/staff_profiles.md) with the player evidence. Use the phase to examine actual teaching, adaptation and follow-through as well as player execution. In the real phase output, separate the coach’s instruction/decision from the player response and result. At a material handoff, append a dated change or retained interpretation to the coach profile and refresh its current synthesis. Preserve the previous evidence; no automatic improvement, fixed coaching type or new dialogue is implied.
 
-## 2014 authority and execution conditions
+## authority and execution conditions
 
 This is the carry-forward authorized in Stone's February 2 memo section 6 and the user's September 28, 2026 request to address the outstanding work. The inherited teaching method is retained below. The individual training/film items identified below are adopted; other recommendations at the end remain explicitly proposed. No practice, attendance, delivery, hiring, clearance or role change is recorded by this plan.
 
 - Returning players begin with retention of assigned 2013 material. New arrivals receive the complete active books and the existing onboarding process after control/invitation is verified; late onboarding is recorded honestly, never backdated. No coach-led football meeting, film review or playbook study occurs before the program. Passive film distribution remains a separate unresolved question; use the [historical verification](../../../../library/2014_offseason_phase_rules_verification.md) and the default delivery recommendation in the decision package.
 - Cousins remains the established QB1. The quarterback competition is for QB2/QB3 among players actually controlled when the phase opens. Henne's future participation depends on his actual contract or other lawful participation basis; Bray signed a reserve/future contract effective March 11, which does not award a reserve role. Cousins's priorities are ball security, protection communication and separating decision errors from technique or protection failures.
 - Jacksonville has a returning head coach. No additional new-head-coach voluntary veteran minicamp is authorized. Older references to that privilege in the inherited readiness document do not apply in 2014.
-- Use the actual roster, medical instructions and teaching evidence at execution. Proposed signings, draft selections and departures are not completed transactions. Verner, Talib or drafted linemen enter a plan only if acquired; Allen cannot be relied on for work after his scheduled April 22 retirement.
+- Use the actual roster, medical instructions and teaching evidence at execution. Proposed signings, draft selections and departures are not completed transactions. Verner and Talib are signed; drafted linemen enter the plan only after an actual selection and eligibility check; Allen cannot be relied on for work after his scheduled April 22 retirement.
 - Crennel calls the defense; Stone calls the offense. The player who relays defensive calls is a separate job. Mike Westhoff runs special teams following his February 11 appointment (Entry 84). Current roles stand pending a separately authorized change.
 - Medical projections are review dates, not clearance. Voluntary attendance, rehabilitation, private support needs and lawful absence never become hidden role grades. No fixed rep percentages or touch quotas determine roles.
-- The 2014 calendar controls dates and legal work. The program schedule must be filed by the agreed league date, no later than March 31 for an April 21 start, with advance notice of changes. April 3 public publication does not adopt the real Jaguars' dates. Verify the selected branch dates and applicable phase rules before executing. Training camp also waits for its schedule/reporting gates.
+- The 2014 calendar controls dates and legal work. The program schedule must be filed by the agreed league date, no later than March 31 for an April 21 start, with advance notice of changes. The user has selected the historical Jacksonville dates. Preserve the filing receipt separately; public publication is not proof of submission. Verify applicable phase rules before executing. Training camp also waits for its schedule/reporting gates.
 
 The existing framework, readiness standard and identity remain at their 2013 paths and are incorporated as durable methods, subject to the 2014 calendar correction above:
 
@@ -60,7 +60,7 @@ No preset personnel percentage, snap share, rep quota, touch quota, or depth-cha
 
 
 
-## 1. Purpose of the offseason program
+## Purpose of the offseason program
 
 The offseason is not a miniature training camp.
 
@@ -72,7 +72,7 @@ The sequence is:
 
 The target moves from **Good toward Better**. The staff should expect players to retain corrections across days and weeks, not merely perform one clean scripted rep.
 
-## 2. Participation and voluntariness
+## Participation and voluntariness
 
 The Prowl standard does not create attendance authority that the CBA does not give the club.
 
@@ -86,7 +86,7 @@ During voluntary periods:
 
 The plan describes what Jacksonville teaches **when lawful participation occurs**. It does not convert the plan into a mandatory summons.
 
-## 3. Phase One: build the physical platform
+## Phase One: build the physical platform
 
 Follow the exact CBA restrictions established by the governing source. Do not add football work that the phase does not permit.
 
@@ -117,7 +117,7 @@ Football coaches may prepare teaching material and coordinate with the appropria
 
 If the rule says the football answer must wait, it waits.
 
-## 4. Phase Two: technique and job connection
+## Phase Two: technique and job connection
 
 As the calendar permits individual/group football teaching and walkthrough-speed work, connect physical training to football responsibilities.
 
@@ -165,7 +165,7 @@ Before Phase Two, position coaches prepare the retained-material check and an in
 
 At the handoff to OTAs, each room reports what was taught, retained, postponed and limited by medicine or legal work restrictions. The shared full-team family dinner remains one event in the offseason/OTA window, planned and recorded through OTAs, not a duplicate obligation here. Events belong in this folder's future `output.md`; current state changes only when an event actually occurs.
 
-## 2014 decisions: individual feedback adopted; other proposals pending
+## decisions: individual feedback adopted; other proposals pending
 
 These items answer the exit-interview questions without inventing Crennel's promised report or a player evaluation. Individual feedback is adopted by the user’s training/film request; defensive relay succession, injured-player learning and cross-training remain proposals. Any later personnel appointment still needs its own evidence and record.
 
@@ -204,3 +204,11 @@ Coaches may prepare and audit material internally without claiming player partic
 Recommend keeping each player's primary-job development first, then targeted cross-training when lawful workload allows: Johnson at left tackle, Bradfield at both tackles, the actual controlled interior linemen at guard/center, Moore and Stanford in base-linebacker teaching, Prosinski in safety rotation, and Harris/Poyer/Bouye in defined outside-corner looks. These are evaluation opportunities, not promised starts, fixed rep shares or automatic position changes. Tice/Crennel and their position coaches identify the specific assignment evidence needed before a role change reaches Stone.
 
 At phase close, carry an open/parked/closed decision and next review point for each live competition into the next phase's output. An unsigned target or undrafted watch-list name gets no Jacksonville work or promised role.
+
+## Selected schedule and filing control
+
+Selected start: **April 21**. Phase One: April 21–May 2; Phase Two: May 5–23. Use the existing Monday–Thursday allocations in the decision package, with staff review on Friday. No extra new-head-coach minicamp applies in Stone's second season.
+
+Caldwell's office verifies the agreed filing date and submits no later than **March 31** for this start. The existing calendar row owns submission status: selected, filing unrecorded. Record actual submission date, recipient, confirmation reference and any required change notice there and in the event ledger when it occurs. Do not confuse April 3 publication with filing or advance the clock to make a receipt appear.
+
+During Phase Two, stop at the May 8–10 draft, individual May 12 eligibility checks and May 16–17 rookie camp, then resume the veteran block. Separate unit teaching, draft/onboarding work and rookie activity by actual date and participants. Do not simulate the entire veteran folder through May 23 and then backdate the draft or rookie camp.

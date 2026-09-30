@@ -1,15 +1,15 @@
 # Jacksonville Jaguars: 2014 Training camp and preseason plan
 
 **Status:** 2013 METHODS RETAINED; individual training/film workflow authorized; other marked choices remain pending. No phase has run.
-**Planning checkpoint:** February 2, 2014. Prepared September 28, 2026 without advancing time.
-**Proposed dates:** Reporting and practice dates unresolved until the July 14 reporting-date gate and the applicable preseason schedule.
+**Planning checkpoint:** March 24, 2014, Entry 101. Prepared from 2013 evidence; no phase executed.
+**Selected dates (execution not started):** Rookies report July 21; veterans July 24; first practice July 25; first full pads July 30; scrimmage August 2. Historical publication gates still apply.
 **Authority:** [Stone's memo, section 6](../stone_to_caldwell_2014_offseason_decisions.md); [2014 calendar](../../calendar.md).
 **Inherited method:** [2013 training_camp plan](../../../2013/offseason/training_camp/plan.md). The 2013 file remains unchanged; this plan's 2014 conditions override inherited dates, QB competition and new-head-coach clauses.
 **Execution records:** [Output](output.md) and [evidence summary](standouts.md) are prepared as NOT_STARTED. They receive actual observations only when the phase runs. Results and standouts never belong in this plan.
 
 ## Decision package and historical clarification
 
-The [complete phase decision package](../phase_plan_decisions.md) supplies the proposed dates, install sequence, room priorities, pending policy recommendations and emergency-staff choices, reviewed through the February 28 checkpoint, Entry 89. Its new recommendations remain unadopted. Individual feedback, shared protection-identification teaching and continuing individual development are already authorized. The [rules verification](../../../../library/2014_offseason_phase_rules_verification.md) distinguishes the schedule-filing deadline, Phase One classroom permission and unresolved passive pre-program film distribution.
+The [complete phase decision package](../phase_plan_decisions.md) supplies the selected historical dates, install sequence, room priorities, pending policy recommendations and emergency-staff choices, reconciled through the March 24 checkpoint, Entry 101. The historical schedule is selected under Entry 101; other named recommendations remain unadopted. Individual feedback, shared protection-identification teaching and continuing individual development are already authorized. The [rules verification](../../../../library/2014_offseason_phase_rules_verification.md) distinguishes the schedule-filing deadline, Phase One classroom permission and unresolved passive pre-program film distribution.
 
 ## Living player assessment: adopted follow-up
 
@@ -23,17 +23,17 @@ Invite player-selected film and interpretation during permitted contact without 
 
 Read [Stone’s current profile](../../../coaching_profiles/alex_stone.md) and the relevant [assistant assessment](../../../coaching_profiles/staff_profiles.md) with the player evidence. Use the phase to examine actual teaching, adaptation and follow-through as well as player execution. In the real phase output, separate the coach’s instruction/decision from the player response and result. At a material handoff, append a dated change or retained interpretation to the coach profile and refresh its current synthesis. Preserve the previous evidence; no automatic improvement, fixed coaching type or new dialogue is implied.
 
-## 2014 authority and execution conditions
+## authority and execution conditions
 
 This is the carry-forward authorized in Stone's February 2 memo section 6 and the user's September 28, 2026 request to address the outstanding work. The inherited teaching method is retained below. The individual training/film items identified below are adopted; other recommendations at the end remain explicitly proposed. No practice, attendance, delivery, hiring, clearance or role change is recorded by this plan.
 
 - Returning players begin with retention of assigned 2013 material. New arrivals receive the complete active books and the existing onboarding process after control/invitation is verified; late onboarding is recorded honestly, never backdated. No coach-led football meeting, film review or playbook study occurs before the program. Passive film distribution remains a separate unresolved question; use the [historical verification](../../../../library/2014_offseason_phase_rules_verification.md) and the default delivery recommendation in the decision package.
 - Cousins remains the established QB1. The quarterback competition is for QB2/QB3 among players actually controlled when the phase opens. Henne's future participation depends on his actual contract or other lawful participation basis; Bray signed a reserve/future contract effective March 11, which does not award a reserve role. Cousins's priorities are ball security, protection communication and separating decision errors from technique or protection failures.
 - Jacksonville has a returning head coach. No additional new-head-coach voluntary veteran minicamp is authorized. Older references to that privilege in the inherited readiness document do not apply in 2014.
-- Use the actual roster, medical instructions and teaching evidence at execution. Proposed signings, draft selections and departures are not completed transactions. Verner, Talib or drafted linemen enter a plan only if acquired; Allen cannot be relied on for work after his scheduled April 22 retirement.
+- Use the actual roster, medical instructions and teaching evidence at execution. Proposed signings, draft selections and departures are not completed transactions. Verner and Talib are signed; drafted linemen enter the plan only after an actual selection and eligibility check; Allen cannot be relied on for work after his scheduled April 22 retirement.
 - Crennel calls the defense; Stone calls the offense. The player who relays defensive calls is a separate job. Mike Westhoff runs special teams following his February 11 appointment (Entry 84). Current roles stand pending a separately authorized change.
 - Medical projections are review dates, not clearance. Voluntary attendance, rehabilitation, private support needs and lawful absence never become hidden role grades. No fixed rep percentages or touch quotas determine roles.
-- The 2014 calendar controls dates and legal work. The program schedule must be filed by the agreed league date, no later than March 31 for an April 21 start, with advance notice of changes. April 3 public publication does not adopt the real Jaguars' dates. Verify the selected branch dates and applicable phase rules before executing. Training camp also waits for its schedule/reporting gates.
+- The 2014 calendar controls dates and legal work. The program schedule must be filed by the agreed league date, no later than March 31 for an April 21 start, with advance notice of changes. The user has selected the historical Jacksonville dates. Preserve the filing receipt separately; public publication is not proof of submission. Verify applicable phase rules before executing. Training camp also waits for its schedule/reporting gates.
 
 The existing framework, readiness standard and identity remain at their 2013 paths and are incorporated as durable methods, subject to the 2014 calendar correction above:
 
@@ -67,7 +67,7 @@ The question changes from "Can we teach this?" to:
 
 Camp is not designed to make players miserable. It is designed to make the roster and system dependable.
 
-## 1. Camp entry standard
+## Camp entry standard
 
 Before field competition begins:
 
@@ -82,7 +82,7 @@ Before field competition begins:
 9. Do not treat a failed conditioning test as an automatic depth-chart verdict.
 10. Freeze the opening camp install/practice goals before evaluating players.
 
-## 2. Camp learning architecture
+## Camp learning architecture
 
 Camp operates through four progressive blocks. The exact dates and number of practices in each block are set only after the real calendar is verified.
 
@@ -168,7 +168,7 @@ Test:
 
 Preseason outcomes belong in game/event records, not in this plan.
 
-## 3. Daily camp operating rhythm
+## Daily camp operating rhythm
 
 The exact hourly schedule is not fixed here. Use the verified league/team calendar and practice rules.
 
@@ -193,7 +193,7 @@ Not every day needs every category at maximum volume.
 
 Hard work is not measured by how little recovery the staff permits.
 
-## 4. Installation rule: mastery before menu size
+## Installation rule: mastery before menu size
 
 Training camp opens more of Iteration I, but not indiscriminately.
 
@@ -231,7 +231,7 @@ A clever call is not valuable if the team needs excessive practice time to run i
 
 Nothing from Stone's 2016-or-later offensive evolution can be imported because it would solve a 2014 problem elegantly. The 2014 team develops only the system Stone has actually reached.
 
-## 5. Offensive camp plan
+## Offensive camp plan
 
 ### Run game
 
@@ -310,7 +310,7 @@ PRESS is used with mastered calls and only when the current eleven can operate i
 
 FREEZE/MILK or other tempo tools are taught as real game operations, not practice theater.
 
-## 6. Quarterback development and reserve competition
+## Quarterback development and reserve competition
 
 Quarterback evaluation is comprehensive.
 
@@ -334,7 +334,7 @@ Do not create a numeric quarterback rating for internal narrative use unless a s
 
 Cousins remains QB1. This competition establishes QB2 and QB3 from the actual controlled room; it does not reopen QB1 by default. No reserve job is pre-awarded. Any material QB1 change returns to Stone as a separate decision.
 
-## 7. Offensive-line camp competition
+## Offensive-line camp competition
 
 Camp is where non-contact assumptions meet physical football.
 
@@ -354,7 +354,7 @@ Evaluate:
 
 Cross-train only when it increases usable depth without destroying primary-position development.
 
-## 8. Skill-position camp competition
+## Skill-position camp competition
 
 ### Running backs
 
@@ -401,7 +401,7 @@ Evaluate:
 
 A receiver does not earn a job from one explosive catch if assignment/communication remain unreliable. The reverse also holds: one drop does not erase consistently correct work.
 
-## 9. Defensive camp plan
+## Defensive camp plan
 
 The defense should become difficult to play against because it is sound first, multiple second.
 
@@ -449,7 +449,7 @@ Camp can expand:
 
 If the defense busts because it cannot communicate the presentation, simplify it.
 
-## 10. Defensive position competition
+## Defensive position competition
 
 **Defensive line**
 - run integrity;
@@ -481,7 +481,7 @@ If the defense busts because it cannot communicate the presentation, simplify it
 
 The staff should identify primary roles and secondary/emergency roles as evidence accumulates.
 
-## 11. Special-teams camp plan
+## Special-teams camp plan
 
 Training camp makes special-teams competition real.
 
@@ -508,7 +508,7 @@ Evaluate:
 
 Special teams can break a roster tie when the football evidence supports it. It is not a token category.
 
-## 12. Situational football menu
+## Situational football menu
 
 Stone's "Practice the Problem" standard receives real camp time.
 
@@ -537,7 +537,7 @@ Rotate situations across camp rather than cramming all of them into one practice
 
 The staff should know which calls the team actually trusts in each situation by the end of camp.
 
-## 13. Physical readiness, workload, and recovery
+## Physical readiness, workload, and recovery
 
 The Prowl requires readiness, not reckless volume.
 
@@ -575,7 +575,7 @@ An injured player is medically limited, not morally deficient.
 
 Evaluate what he can lawfully and medically do. Do not create a negative football character judgment from the diagnosis.
 
-## 14. Competition and depth-chart process
+## Competition and depth-chart process
 
 Roles move through football evidence.
 
@@ -600,7 +600,7 @@ Youth does not create an entitlement to replace a veteran.
 
 A move should have a football reason.
 
-## 15. Daily staff evaluation process
+## Daily staff evaluation process
 
 After each meaningful practice:
 
@@ -640,7 +640,7 @@ Communicate only their proper football-relevant status/recommendations.
 
 Private medical detail stays private.
 
-## 16. Good, Better, Best in camp
+## Good, Better, Best in camp
 
 **Good**
 - player knows the job;
@@ -663,7 +663,7 @@ Private medical detail stays private.
 
 These are phase descriptions, not permanent numeric ratings.
 
-## 17. Family program during training camp
+## Family program during training camp
 
 Because training camp is longer and more demanding than the earlier phases, schedule family inclusion more than once when the verified calendar/logistics permit.
 
@@ -704,7 +704,7 @@ Rules for both events:
 
 Actual dinners are logged in training-camp output when they occur.
 
-## 18. Preseason integration
+## Preseason integration
 
 Preseason games are not separate from camp evaluation.
 
@@ -724,7 +724,7 @@ After each game:
 - update medical status only from medical authority;
 - keep future-real-life knowledge out.
 
-## 19. Roster-decision preparation
+## Roster-decision preparation
 
 As roster deadlines approach, staff recommendations should be built from accumulated evidence, not the most recent practice alone.
 
@@ -745,7 +745,7 @@ Caldwell makes personnel/contract decisions under the established authority map.
 
 Do not backfill a later career outcome as justification.
 
-## 20. Camp closeout
+## Camp closeout
 
 By the end of camp/preseason preparation, Jacksonville should have:
 
@@ -762,7 +762,7 @@ The goal is not to have installed the most football.
 
 The goal is to enter the season able to execute the football Jacksonville chose to carry.
 
-## 21. Execution and record rule
+## Execution and record rule
 
 This file is the durable plan.
 
@@ -774,7 +774,7 @@ When training camp actually begins:
 - update roster, role, availability, financial, Document 4, and Document 5 state atomically whenever an actual decision/event changes them;
 - preserve this plan unless the user changes the plan itself.
 
-## 2014 application and decisions for Stone
+## application and decisions for Stone
 
 Use the inherited four camp blocks with the verified 2014 reporting, acclimation, contact and preseason calendar. August 26 and August 30 cutdowns come from the 2014 calendar, not the 2013 baseline. Practice-squad size and eligibility use the rule effective on the actual date, including the August 19 information gate; no futures signing is promised a practice-squad place.
 
@@ -801,3 +801,23 @@ Recommend one leadership-council discussion at the camp-block reviews and during
 Preserve the established bulk preseason workflow and mandatory material-decision pauses. Freeze legal game inputs, injuries/limitations and actual role order before each game. A medical removal cannot be overruled; a material tactical substitution still returns to Stone. Use the same repaired kernel for every club.
 
 The final report provides each contested role's evidence and Stone's actual decision, Caldwell's actual transactions, specialist and emergency-unit readiness, medical limits, and open teaching work. Do not manufacture a full verdict where evidence is absent. The roster and practice squad are resolved through their event records, never awarded here.
+
+## Historical camp sequence and simulation stops
+
+| Date or interval | Football purpose | Required handoff |
+|---|---|---|
+| July 21 / July 24 | Rookie / veteran reports; verify contracts, eligibility, medical instructions, current depth and spring evidence | Participant/control check and individualized workloads; report is not proof of clearance |
+| July 25–29 | Practice begins July 25; restore retained assignments, communication, operation and acclimation within each day's limits | Record the current supported role and what still needs contact evidence; no full-pad proof before July 30 |
+| July 30–August 1 | First full pads July 30; lawful physical technique, protection, attached TE blocking, front fits and tackling instruction | Link actual reps to the spring question; distinguish physical loss, wrong instruction and assignment error |
+| August 2 | Historical scrimmage: test substitution, changed pictures and sideline operation within the installed menu | Evidence-based position review; no automatic depth promotion or made-up game score |
+| August 4–8 | Prepare the August 8 Tampa Bay game, carry targeted individual work and freeze the ex-ante game plan | Preseason readiness, actual legal roster, workload plan and user-controlled decisions before resolution |
+| August 9–14 | Recover and review; prepare the short week and August 14 trip to Chicago | Medical update, comparable reserve opportunities and corrected jobs, without inventing available practice days |
+| August 15–22 | Retest open questions and prepare August 22 at Detroit | Supported game roles, teaching still owed and evidence sufficient for a pending roster decision |
+| August 23–26 | Consolidate three games plus camp; reduce to 75 on August 26 | Caldwell transactions, Stone roles, cap/control and medical dependencies updated together |
+| August 27–28 | Prepare and play Atlanta August 28 under the verified kickoff notice | Final useful observations and emergency operation; no last-minute install dump |
+| August 29–30 | Exit feedback and 53-player cutdown August 30 | Decisions recorded once in roster decisions and transaction owner; preserve waivers, dead money and open injuries |
+| August 31 onward | Waiver and practice-squad process under dated 2014 rules; transition to game-week routine | Legal 53/squad/reserve rosters, cap compliance, week-one depth and unresolved development carried forward |
+
+A table interval does not authorize daily practices. The dated calendar and CBA determine off days, hours, contact and acclimation. Public practice announcements are planned events, not attendance or execution evidence. Run actual teaching in short dated blocks, stopping at a medical change, acquisition, important user decision or game-readiness gate. The four preseason games retain their own receipts and never contribute regular-season statistics.
+
+Historical sources: [Jaguars July 16 report dates](https://www.jaguars.com/news/2014-offseason-lee-agrees-to-terms-on-rookie-contract-13249689), [July 24 practice announcement](https://www.jaguars.com/news/monday-jaguars-practice-at-full-capacity-13285421), [April 23 schedule](https://www.jaguars.com/news/2014-jaguars-schedule-released-12908209). Only dates and logistics are carried from these sources.

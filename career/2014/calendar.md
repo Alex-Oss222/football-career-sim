@@ -2,7 +2,7 @@
 
 [Next year: actual historical 2015 calendar](../2015/calendar.md) | [Coach development](../coaching_profiles/README.md)
 
-**Authority:** branch-facing schedule for the 2014 league year (AGENTS.md career-calendar rule). Its sources are `library/2014_league_calendar_and_financial_rules.md` (league dates, rules and gates) and the branch's own records. Historical dates are rails only: no real 2014 transaction, result or club-specific decision is imported.
+**Authority:** branch-facing schedule for the 2014 league year (AGENTS.md career-calendar rule). Its sources are `library/2014_league_calendar_and_financial_rules.md` (league dates, rules and gates) and the branch's own records. Historical dates, opponents, home/away, byes and dated league changes control under Entry 101. No historical player transaction or result is imported except the separately adopted league roster rails.
 **Gates:** an item marked **Gate** is not usable in the branch before its public date. Before the gate, only the labelled projections recorded in the library may be used.
 **Status keys:** *Complete*, *Open*, *Future* (known date, event not run), *Gated* (not yet public at the master date), *Proposed* (branch planning choice, not a completed event), *Conditional* (only if the stated circumstance occurs). All clock deadlines use Eastern Time, with daylight saving time as applicable.
 
@@ -11,9 +11,9 @@
 ## Current checkpoint
 
 - **Master date:** March 24, 2014 (latest closed Entry 100: compensatory picks announced, none to Jacksonville; Entry 99: Cain re-signed; package I completed, Nwaneri and three future picks to Arizona for No. 38; Entry 98: Te'o-Nesheim signed; Entry 97: the replay signed Nicks and Hawkins and Edelman returned to New England; Entry 96: Talib signed and Tate chose Detroit; Entry 95, the March 2014 free-agency replay: Monroe, Marks and Verner signed; Entry 94: tenders made, futures in force; Entry 93, March 1-3 rails verification closed; Entry 92, clock advanced to March 3 with the league's final tag list; Entries 90-91, contract reconstruction and complete schedules at February 28; Entry 89, clock advanced to February 28 with the league figures and the February 26-28 rails moves; Entry 88, clock advanced with combine evidence entered; Entry 87, Monroe's franchise tag February 18; Entry 86, clock advanced with Caldwell's [pre-tag-window verifications](offseason/caldwell_pre_tag_verifications.md); Entry 85, six reserve/future contracts; Entry 84, Mike Westhoff hired as special teams coordinator effective February 11; Entry 83, February coaching exposure resolved with no departures; Entry 82, operating handoff; Entry 81, draft coin flip and league ownership reconciled; Entry 80, Cousins compensation corrected; Entry 79, Meester retired and Allen retirement scheduled; league rails Entry 78; staff reconciliation Entry 77; exit interviews Entry 76).
-- **Jacksonville:** 2013 finished 10-6, 1-1 postseason. 52 active and Brad Meester on Reserve/Retired; practice squad 0, with six reserve/future contracts for 2014 effective March 11 (Entry 85). `career/2013/roster.md` remains the controlled-roster owner.
+- **Jacksonville:** 55 controlled players, 51 signed and four unsigned tenders; practice squad 0. The [2014 roster](roster.md) owns current control. The 2013 record remains archived: 10–6 regular season, 1–1 postseason.
 - **Planning prepared:** the five phase plans retain the 2013 methods. The [training and individual-film workflow](offseason/README.md), including the living assessment of Cousins and every player, is authorized; other marked choices remain pending. The special-teams search closed with Mike Westhoff's February 11 appointment (Entry 84). No phase has run.
-- **Next league events:** negotiating window from March 8 at noon; the 2014 league year opens March 11, 4:00 p.m. ET (RFA/ERFA tenders due: Bradfield lowest, ERFAs Clemons, Brown and Pasztor; reserve/future contracts and Monroe's tag tender take effect; trades open for packages A, H, I, D, F1, F2 and G; Monroe's long-term draw, Cain's re-signing draw and the free-agent market draws at the players' real signing dates). Nwaneri's original $1M roster bonus is reported due March 25, the fifteenth day of the league year (contract research, Entry 90); that sets the current review deadline for his proposed trade/release.
+- **Next schedule action:** file the selected April 21 program by the agreed date, no later than March 31. The March 11 league-year opening and March 24 compensatory awards are closed. Held market negotiations retain their existing owners; no outcome is implied by this calendar.
 
 ## Coaching staff timeline
 
@@ -54,7 +54,7 @@
 | Mar. 11–Apr. 21 | Allen package G execution window: unconditional 2015 seventh preferred, recorded fallback and conditions govern | Future plan; [trade targets](trades/trade_targets.md); no buyer or return guaranteed |
 | Mar. 23–26 | Annual League Meeting, Orlando; review newly adopted rules on their effective dates | In progress from March 23; adopted rules apply from their effective dates; source A/B |
 | Mar. 24 | Compensatory selection announcement; resolve branch awards from branch inputs | **Complete (Entry 100):** 32 branch awards, none to Jacksonville; later JAX picks 129, 153, 168, 205, 241 ([announcement](draft/compensatory/announcement.md); [draft order](draft/draft_order.md)) |
-| Mar. 24 (internal) | Stone's offseason-program schedule choice, recommended in the [phase-plan decisions](offseason/phase_plan_decisions.md) | **Due; not made.** Stone's choice; the filing limit below still controls |
+| Mar. 24 (internal) | Stone's offseason-program schedule choice, recommended in the [phase-plan decisions](offseason/phase_plan_decisions.md) | **Selected, Entry 101.** Historical dates; filing unrecorded |
 | By the agreed league date, no later than Mar. 31 for an Apr. 21 start | Submit the selected offseason-program schedule to the NFL/NFLPA; preserve the receipt and give advance notice of later changes | Required filing limit from 2011 CBA Article 21 section 2(c); [verification](../../library/2014_offseason_phase_rules_verification.md). Actual agreed 2014 date and filing not yet established; [decision package](offseason/phase_plan_decisions.md) recommends an internal Mar. 24 choice |
 | By Mar. 31, staff preparation checkpoint | Reconcile retained/signed players, departed-player archival obligations, newcomer onboarding, shared-job questions and film assets | Proposed staff work; [workflow](offseason/training/weekly_workflow.md); no compulsory player contact |
 
@@ -62,7 +62,7 @@ Individual contract options and guarantees follow their documented terms, not a 
 
 ## April through June: program, draft and spring football
 
-**Dates below are Stone's proposed club schedule**, within the existing five plans. Confirm actual club dates at the appropriate event and verify legal work before each session. They are not imported from real Jacksonville's coaching staff. No player has attended or passed these phases yet.
+**Dates below are the selected historical schedule**, within the existing five plans. Teaching themes are branch allocations of legal time. Filing is unrecorded and no attendance or completion is inferred.
 
 | Date | Event / required work | Status / owner |
 |---|---|---|
@@ -74,32 +74,34 @@ Individual contract options and guarantees follow their documented terms, not a 
 | **Apr. 21–May 2** | **Phase One**, two weeks: permitted performance/medical work and classroom football teaching; restricted field coaching remains prohibited | Proposed; [offseason program](offseason/offseason_program/plan.md); [rules clarification](../../library/2014_offseason_phase_rules_verification.md) |
 | Apr. 21 | Allen trade processing deadline set by Stone | Proposed; actual clearance, physical, contract, buyer and league processing conditions still apply |
 | Apr. 22 | Scheduled Allen retirement, wherever he is controlled | Future dated rail; no Jacksonville training assignment after eligibility ends |
-| Apr. 23, 8 p.m. | Regular schedule release; reconcile all branch same-place pairings across the league, then publish exact fixtures and bye | Gated; [opponents](schedule/opponents.md) |
+| Apr. 23, 8 p.m. | Regular schedule release; verify and publish the actual historical league fixtures and byes | Gated; [opponents](schedule/opponents.md) |
 | May 2 / May 7 | RFA offer-sheet / matching deadlines | Future; source A/B/C; matching date now directly verified |
 | **May 5–23** | **Phase Two**, three weeks: legal individual/group teaching; preserve strengths, explore a new question and observe technique without prohibited opposition | Proposed; offseason-program plan |
 | **May 8–10** | **Draft**; branch order, board, trades and pairing run on their dates | Future; draft records; no historical Jacksonville selections imported |
 | May 12–15 | Prepare new-player onboarding and permitted rookie work from actual selections/signings | Proposed staff checkpoint; no assumed rookies |
-| **May 16–18** | Selected proposed rookie minicamp weekend; May 23–25 is the alternative only if the club elects it instead | Proposed, one minicamp; [rookie plan](offseason/rookie_minicamp/plan.md) |
+| **May 16–17** | Historical two-day rookie minicamp; no May 18 practice | Selected; one two-day minicamp; [rookie plan](offseason/rookie_minicamp/plan.md) |
 | May 19–21 | Spring League Meeting, Atlanta | Future; source A/B |
 | May 23 | Phase Two handoff: current profile, player questions if actually discussed, open staff decisions and next legal opportunities | Proposed staff review, no automatic promotion |
 | **May 27–29** | OTA block 1, days 1–3: changed presentations; observe which existing strengths transfer and which new answers emerge | Proposed; [OTA plan](offseason/otas/plan.md) |
 | June 2 | Adjusted June 1 tender deadline | Future; applicable UFA/RFA cases checked individually, source A/B |
-| **June 3–5** | OTA block 2, days 4–6: shared-unit responses, delayed observations and comparable reserve opportunities | Proposed; OTA plan |
-| **June 10–13** | OTA block 3, days 7–10: independent situational work and a revised current assessment | Proposed; ten OTA days total, not ten extra sessions |
+| **June 2, 3, 5** | OTA block 2, days 4–6: shared-unit responses, delayed observations and comparable reserve opportunities | Proposed; OTA plan |
+| **June 9, 10, 12, 13** | OTA block 3, days 7–10: independent situational work and a revised current assessment | Proposed; ten OTA days total, not ten extra sessions |
 | June 16 | Physical-examination day in the proposed minicamp week; adjusted June 15 RFA tender date | Proposed physicals / future league deadline; separate authorities |
 | **June 17–19** | **Mandatory veteran minicamp**: independent spring transfer, player-specific camp questions and staff assessment | Proposed; [minicamp plan](offseason/mandatory_minicamp/plan.md) |
 | June 20 | Staff spring handoff and voluntary summer material preparation; verify permitted delivery/contact | Proposed; no club-directed extra workout or meeting |
 | June 22–28 | Rookie Symposium, Aurora, Ohio | Future league event; source A/B, actual eligible participants determined later |
 | After program through camp | Player-directed break and rehabilitation within applicable rules; staff prepare camp evidence and contingency plans | Future interval; no attendance or communication penalty |
 
-The nine program weeks run April 21–June 22. Phase Three occupies the last four weeks; the proposed ten OTAs and mandatory minicamp sit within that span. The [decision package](offseason/phase_plan_decisions.md) recommends Monday through Thursday program days in Phases One and Two, no added fourth non-OTA workout in the first two OTA weeks, and voluntary family events on May 17, June 5 and June 18. These remain recommendations. Rookie work has its own eligibility and limits and is not an excuse for additional veteran sessions. Phase rules, holidays, medical instructions and actual permitted hours control over a table entry.
+Historical camp: rookies report July 21; veterans July 24; first practice July 25; first full pads July 30; scrimmage August 2. Sources are linked in the [camp plan](offseason/training_camp/plan.md).
+
+The nine program weeks run April 21–June 22. Phase Three occupies the last four weeks; the selected ten OTAs and mandatory minicamp sit within that span. The [decision package](offseason/phase_plan_decisions.md) recommends Monday through Thursday program days in Phases One and Two, no added fourth non-OTA workout in the first two OTA weeks, and voluntary family events on May 17, June 5 and June 18. These remain recommendations. Rookie work has its own eligibility and limits and is not an excuse for additional veteran sessions. Phase rules, holidays, medical instructions and actual permitted hours control over a table entry.
 
 ## July and August: camp, preseason and roster decisions
 
 | Date / window | Event / required work | Status / owner |
 |---|---|---|
 | July 1–13 | Staff review film availability, retained profiles, new-player baselines, roster contingencies and E1/E2 release progress | Proposed staff work; [engine decision](../../runtime/2014_engine_decisions.md) |
-| July 14 | League camp report-date publication | Gated; confirm Jacksonville's chosen dates under the rules, not real club decisions |
+| July 14 | League camp report-date publication | Gated; verify historical reports: rookies July 21, veterans July 24, first practice July 25 |
 | July 15, 4 p.m. | Franchise multi-year agreement deadline | Future; source A/B, only if applicable |
 | July 22, or first scheduled NFL camp day if later | End of applicable June 1-tender UFA negotiation period; transition deadline separately checked | Future rule; source A/B; verify actual first camp date before processing |
 | At actual report | Roster/control and physicals; current restrictions, assignments, lawful acclimation and player camp questions | Proposed club checkpoint; [camp plan](offseason/training_camp/plan.md) |
@@ -124,9 +126,9 @@ After each preseason appearance, compare the actual support, opponent, assignmen
 
 ## September through December: all 17 league weeks
 
-The following Sunday dates identify **league-week planning windows**, not 17 Jacksonville games or fixed Jacksonville game days. Jacksonville has 16 games and one bye. Thursday/Monday games, travel, short weeks and the bye are assigned only after the April 23 league-wide reconciliation. The historical Week 11 bye and Thursday Week 16 slot are candidates, not branch facts. The November 9 London date is already an established league rail.
+The following Sunday dates identify **league-week planning windows**, not 17 Jacksonville games or fixed Jacksonville game days. Jacksonville has 16 games and one bye. Thursday/Monday games, travel, short weeks and the bye follow the historical release. The historical Week 11 bye and December 18 Thursday game are selected. The November 9 London date is already an established league rail.
 
-The full [branch opponent matrix](schedule/opponents.md) is already known: home Tennessee, Indianapolis, Houston, Cleveland, Pittsburgh, New York Giants, Dallas (London) and Buffalo; away Tennessee, Indianapolis, Houston, Baltimore, Cincinnati, Philadelphia, Washington and San Diego. Do not place Buffalo in the historical October 26 Miami slot without moving and validating the affected league fixtures.
+The [historical opponent inventory](schedule/opponents.md) controls all pairings, including Miami at home and San Diego away. [All 16 dated Jacksonville games](regular_season/README.md) are recorded as future schedule research with their release gate.
 
 | Week | Sunday anchor | Club work / calendar overlay |
 |---|---|---|
@@ -182,6 +184,6 @@ Postseason format/effective rule confirmation is a release check in the original
 
 ## Schedule-release and execution checklist
 
-At April 23, derive every same-place matchup from branch standings. Validate 32 clubs × 16 games, 256 unique games, eight home/eight away per club (designated London home included), one game at most per club per week, one bye, six divisional games and the fixed rotation/pairing requirements. Reconcile venue, rest and fixed London constraints before freezing fixtures. Preserve any historical date rail that is compatible; document necessary moves. This calendar's weekly anchors cannot replace that check.
+At April 23, verify the historical 256-game league release against the historical opponent inventory, dates, byes, home/away and venues. Publish season-qualified fixtures, preserving dated revisions. Never recompute opponents from branch standings. The weekly anchors below are operating windows, not replacement fixtures.
 
 At each clock advance, process chronological deadlines and information gates before the intended event. Resolve required choices with their proper authority; carry a deferred item visibly with a next checkpoint. Do not turn a scheduled date into a completed event, successful trade, delivered tape, diagnosis, signing or ability change. The five existing phase plans remain the activity-rule owners; the annual calendar supplies their dates and handoffs.

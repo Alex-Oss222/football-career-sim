@@ -1,34 +1,34 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2014-MAR24-STATE-75`
-**Supersedes:** `JAX-2014-MAR20-STATE-74`
-**Snapshot effective:** March 24, 2014. The 2014 compensatory picks were announced (Entry 100): 32 branch awards after rounds 3 to 7, none to Jacksonville, whose later picks become 129, 153, 168, 205 and 241. The March 2014 free-agency replay (Entries 95 to 99) supersedes Entry 94's first-pass draws: Eugene Monroe re-signed for five years (replacing his franchise tender), Sen'Derrick Marks and Jeremy Cain re-signed, and Alterraun Verner, Aqib Talib, Hakeem Nicks, Andrew Hawkins and Daniel Te'o-Nesheim signed. Golden Tate chose Detroit and Julian Edelman New England. Package I closed March 20: Uche Nwaneri and Jacksonville's 2015 first, 2015 fourth and 2016 fifth to Arizona for No. 38. The 2013 season is complete and archived (Super Bowl XLVIII: Buffalo 31, Minnesota 20).
-**Last reconciled:** September 29, 2026; season-ledger Entry 100.
-**Global package checkpoint:** `Canonical update - March 24, 2014 - Compensatory picks announced`
+**Version:** `JAX-2014-MAR24-STATE-76`
+**Supersedes:** `JAX-2014-MAR24-STATE-75`
+**Snapshot effective:** March 24, 2014. Entry 101 changes administrative ownership and selects historical calendars without advancing time. Schedule filing remains unrecorded, due no later than March 31 for April 21.  The 2014 compensatory picks were announced (Entry 100): 32 branch awards after rounds 3 to 7, none to Jacksonville, whose later picks become 129, 153, 168, 205 and 241. The March 2014 free-agency replay (Entries 95 to 99) supersedes Entry 94's first-pass draws: Eugene Monroe re-signed for five years (replacing his franchise tender), Sen'Derrick Marks and Jeremy Cain re-signed, and Alterraun Verner, Aqib Talib, Hakeem Nicks, Andrew Hawkins and Daniel Te'o-Nesheim signed. Golden Tate chose Detroit and Julian Edelman New England. Package I closed March 20: Uche Nwaneri and Jacksonville's 2015 first, 2015 fourth and 2016 fifth to Arizona for No. 38. The 2013 season is complete and archived (Super Bowl XLVIII: Buffalo 31, Minnesota 20).
+**Last reconciled:** September 29, 2026; administrative Entry 101 (historical schedule and annual handoff; no time advance).
+**Global package checkpoint:** `Canonical update - March 24, 2014 - Historical schedule and annual handoff`
 
 ## Effective source-version manifest
 
 | Canonical document | Effective version | Current pointer |
 |---|---|---|
 | Document 1 | `cba09b0857584ea0fb1ccba6ea17da593b48330c` | Active foundation source |
-| Document 2 | `f25e462b4e0478e6b641957e39560d7dcb3502e0` | Active foundation source |
+| Document 2 | `86dfbef40a5ae9b2b6f283dd513df6083bb22645` | Active foundation source |
 | Document 3 | `30ff2bd2eb39f64e31565d5eaf76bdd2de7e54b5` | Active foundation source |
-| Document 4 | `JAX-2014-MAR24-REGISTER-54`; closed by Entry 100 | Controlled 55 on the offseason roster (the six reserve/future contracts in force; eight replay signings: Monroe, Marks, Verner, Talib, Nicks, Hawkins, Te'o-Nesheim, Cain); Nwaneri traded to Arizona; practice squad 0; Bradfield (RFA) and Clemons, Brown and Pasztor (ERFA) tendered; draft capital: 13, 26, 38, 90, 129, 153 (Detroit fifth), 168, 205, 241, no compensatory pick; Mike Westhoff special teams coordinator from February 11, 2014 |
-| Document 6 | 2013 ledger through Entry 100 | 2013 season complete; phase archives in Entry 67; 2014 setup in Entry 68; kernels 2014.1 and 2014.2 in Entries 69-70; season honours in Entry 71; kernel 2014.3 and the engine assessment in Entry 72; Super Bowl MVP and Pro Bowl in Entry 73; season review with Khan and Caldwell in Entry 74; January 2014 coaching carousel in Entry 75; exit interviews in Entry 76; staff authority and planning reconciliation in Entry 77; historical league rails adopted in Entry 78; Meester retired and Allen retirement scheduled in Entry 79; Cousins trade and draft capital reconciled in Entry 80; coin flip and league pick ownership reconciled in Entry 81; operating handoff and readiness reconciliation in Entry 82; February 2014 coaching exposure (no departures) in Entry 83; special teams coordinator hired in Entry 84; 2014 reserve/future contracts in Entry 85; clock advanced to February 17 in Entry 86; Monroe franchise tag in Entry 87; clock advanced to February 25 (Combine closed) in Entry 88; clock advanced to February 28 (2014 cap and tag figures published) in Entry 89; head-coach role and original contracts reconciled in Entry 90; complete existing-contract schedules adopted in Entry 91; clock advanced to March 3 (designation deadline passed) in Entry 92; March 1 to 3 rails verification closed in Entry 93; league year opened March 11 in Entry 94; March 2014 free-agency replay in Entries 95 (Monroe, Marks, Verner) 96 (Talib; Tate to Detroit; clock to March 12) 97 (Nicks and Hawkins; Edelman to New England; clock to March 18) 98 (Te'o-Nesheim) and 99 (Cain re-signed; package I closed; clock to March 20) |
+| Document 4 | `JAX-2014-MAR24-REGISTER-55`; reconciled by Entry 101 | Controlled 55 on the offseason roster (the six reserve/future contracts in force; eight replay signings: Monroe, Marks, Verner, Talib, Nicks, Hawkins, Te'o-Nesheim, Cain); Nwaneri traded to Arizona; practice squad 0; Bradfield (RFA) and Clemons, Brown and Pasztor (ERFA) tendered; draft capital: 13, 26, 38, 90, 129, 153 (Detroit fifth), 168, 205, 241, no compensatory pick; Mike Westhoff special teams coordinator from February 11, 2014 |
+| Document 6 | 2014 ledger Entry 101; prior history through Entry 100 retained | 2013 season complete; phase archives in Entry 67; 2014 setup in Entry 68; kernels 2014.1 and 2014.2 in Entries 69-70; season honours in Entry 71; kernel 2014.3 and the engine assessment in Entry 72; Super Bowl MVP and Pro Bowl in Entry 73; season review with Khan and Caldwell in Entry 74; January 2014 coaching carousel in Entry 75; exit interviews in Entry 76; staff authority and planning reconciliation in Entry 77; historical league rails adopted in Entry 78; Meester retired and Allen retirement scheduled in Entry 79; Cousins trade and draft capital reconciled in Entry 80; coin flip and league pick ownership reconciled in Entry 81; operating handoff and readiness reconciliation in Entry 82; February 2014 coaching exposure (no departures) in Entry 83; special teams coordinator hired in Entry 84; 2014 reserve/future contracts in Entry 85; clock advanced to February 17 in Entry 86; Monroe franchise tag in Entry 87; clock advanced to February 25 (Combine closed) in Entry 88; clock advanced to February 28 (2014 cap and tag figures published) in Entry 89; head-coach role and original contracts reconciled in Entry 90; complete existing-contract schedules adopted in Entry 91; clock advanced to March 3 (designation deadline passed) in Entry 92; March 1 to 3 rails verification closed in Entry 93; league year opened March 11 in Entry 94; March 2014 free-agency replay in Entries 95 (Monroe, Marks, Verner) 96 (Talib; Tate to Detroit; clock to March 12) 97 (Nicks and Hawkins; Edelman to New England; clock to March 18) 98 (Te'o-Nesheim) and 99 (Cain re-signed; package I closed; clock to March 20) |
 
 ## 1. Master clock and competition position
 
 | Field | Current canonical value |
 |---|---|
 | Master date/time | March 24, 2014 |
-| League/season | NFL, 2013 |
+| League/season | NFL, 2014; prior 2013 results archived |
 | Team / head coach | Jacksonville Jaguars / Alex Stone (retained for 2014 at the January 15, 2014 season review, Entry 74) |
 | Game-day staff | Stone leads the team and chooses which calls to make or delegate. Crennel normally directs defense; Westhoff special teams from February 11, 2014 (Entry 84). Stone's interim direction after Alan Lowry's January 12 departure (Entry 75) ended that day |
 | Season phase | 2014 offseason; the league year opened at 4 p.m. March 11 (free agency and trades open). 2013 season complete |
-| Preseason record | **2-2** |
-| Regular-season record | **10-6 (final)** |
-| Postseason record | **1-1 (eliminated)** |
+| Preseason record | **2014 not started**; 2013 archive: 2-2 |
+| Regular-season record | **2014 not started**; 2013 archive: 10-6 |
+| Postseason record | **2014 not started**; 2013 archive: 1-1 |
 | Last event | AFC Divisional: Tennessee 20, Jacksonville 13 (Entry 64) |
 | Next competitive event | **2014 preseason (dates set by the 2014 schedule release, gated April 23, 2014)** |
 
@@ -40,11 +40,11 @@
 | Offseason roster | **55** of the 90-player limit: 51 under signed contracts (the six reserve/future contracts and the eight replay signings included) and 4 on unsigned tenders (Bradfield, Clemons, Brown, Pasztor) |
 | Practice squad | **0** (no 2014 practice squad before the regular season) |
 | Left control at 4 p.m. March 11 | Henne and Cain (unrestricted; negotiations reopened in the replay), Jones-Drew, C.J. Wilson, Ball and Brent Grimes (unrestricted, offers outstanding), Reisner and Rutland (not tendered), Meester (retired; contract expired) |
-| Current cap treatment | Scheduled 2014 player cap **$126,394,321**, including **$3,066,000** of unsigned tenders, plus $2,240,675 dead money (Bray $51,675; Nwaneri $2,189,000) ([tracker](../career/finances/jaguars_cap_2014_2023.md), Entry 99). Offseason Top-51 count $126,879,996 plus the $504,000 workout charge: **$127,383,996**, a **$5,616,004** working difference below the league cap before carryover, rookies and reserves ([contract table](../career/2014/offseason/contract_table.md) section 5b). 2014 league cap **$133,000,000**; Jacksonville's adjusted cap, carryover and cap space unresolved |
+| Current cap treatment | Scheduled 2014 player cap **$126,394,321**, including **$3,066,000** of unsigned tenders, plus $2,240,675 dead money (Bray $51,675; Nwaneri $2,189,000) ([tracker](../career/finances/jaguars_cap.md), Entry 99). Offseason Top-51 count $126,879,996 plus the $504,000 workout charge: **$127,383,996**, a **$5,616,004** working difference below the league cap before carryover, rookies and reserves ([contract table](../career/2014/offseason/contract_table.md) section 5b). 2014 league cap **$133,000,000**; Jacksonville's adjusted cap, carryover and cap space unresolved |
 | Personnel/contracts/cap authority | David Caldwell |
 | Football roles | Alex Stone within eligibility and medical limits |
 
-Player birth dates and ages are in Document 4, the [roster](../career/2013/roster.md) and [league age view](../career/2013/player_ages.md). Ages are derived at the master date and checked on every repository validation; run `python scripts/render_player_ages.py` after a date or roster change. Entry 63 added identity metadata without advancing time or retiring anyone.
+Player birth dates and ages are in Document 4, the [roster](../career/2014/roster.md) and [league age view](../career/2014/player_ages.md). Ages are derived at the master date and checked on every repository validation; run `python scripts/render_player_ages.py` after a date or roster change. Entry 63 added identity metadata without advancing time or retiring anyone.
 
 **2014 financial/control gate:** [the prepared worksheet](../career/2014/offseason/current_cap_worksheet.md) does not certify cap room. The [contract table](../career/2014/offseason/contract_table.md) prices all 51 signed contracts and the four unsigned tenders (Entry 99), with researched and adopted simulation amounts included in working totals and explained in the notes. Six reserve/future contracts are signed at the minimum for each player's credited seasons (Bray, Jerrell Jackson and Long $420,000 each; Murphy, D'Anthony Smith and Blake $495,000 each, service reconstructed in Entry 90); 2014 practice-squad eligibility is checked only after the August cutdown. No contract is created or terminated by this administrative review.
 
@@ -95,7 +95,7 @@ The 2013 season is complete and archived (Entry 67): Jacksonville 10-6, 1-1 in t
 | Next | Henne (backup QB), package D answer (Babin to Miami), package E (Alualu), Shorts's extension | Te'o-Nesheim (Entry 98), Cain and package I (Entry 99) done |
 | March 13 to 14 | Tarell Brown's real Oakland signing (March 14) | Not pursued: both primary corners signed |
 | March 24 | Compensatory picks announced | **Done (Entry 100):** 32 branch awards; none to Jacksonville ([announcement](../career/2014/draft/compensatory/announcement.md)) |
-| March 24 (internal) and March 31 (filing limit) | Offseason-program schedule choice for an April 21 start | **Due: Stone's choice not made.** Recommended dates in the [phase-plan decisions](../career/2014/offseason/phase_plan_decisions.md); Caldwell's office files |
+| March 24 (internal) and March 31 (filing limit) | Offseason-program schedule choice for an April 21 start | **Historical dates selected, Entry 101; filing unrecorded.** Selected dates in the [phase-plan decisions](../career/2014/offseason/phase_plan_decisions.md); Caldwell's office files |
 | March 25, 2014 | Nwaneri's original $1M roster bonus | Arizona's, after the March 20 trade (Entry 99) |
 | March 28 | Jones-Drew and C.J. Wilson real signings (both Oakland) | Their draws against Jacksonville's outstanding offers |
 
@@ -133,4 +133,4 @@ The 2013 season is complete and archived (Entry 67): Jacksonville 10-6, 1-1 in t
 **2014 execution gate:** explicit season routing and `runtime/season_readiness.json` now enforce the open release requirements even if the private service is reachable. The Tier 1 engine fixes, rules, dated fixtures, legal inputs and accepted end-to-end closure remain outstanding. See [readiness and handoff checklist](../career/2014/readiness.md).
 
 
-**Financial position after Entry 99:** 51 signed contracts and four unsigned tenders. The 2014 player-contract total is $126,394,321 including tenders, plus $2,240,675 dead money; 2015 $110,560,637, 2016 $64,011,292, 2017 $37,800,000 and 2018 $18,900,000. These include the Entry 91 adopted simulation schedules and the replay contracts. The [ten-year tracker](../career/finances/jaguars_cap_2014_2023.md) carries the schedules forward.
+**Financial position after Entry 99:** 51 signed contracts and four unsigned tenders. The 2014 player-contract total is $126,394,321 including tenders, plus $2,240,675 dead money; 2015 $110,560,637, 2016 $64,011,292, 2017 $37,800,000 and 2018 $18,900,000. These include the Entry 91 adopted simulation schedules and the replay contracts. The [ten-year tracker](../career/finances/jaguars_cap.md) carries the schedules forward.

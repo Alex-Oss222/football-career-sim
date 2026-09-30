@@ -86,7 +86,7 @@ Use the NFL clubs and division/conference membership in [2013 standings](../care
 
 ### 5.2 Schedule construction
 
-The sourced Jacksonville calendar controls this season's opponent/date rails, including London. For subsequent seasons, recompute any opponent inputs that depend on simulated standings. Do not import real future standings or schedule-dependent results. Conditional postseason dates are windows, not an award of qualification.
+The user-confirmed historical calendar controls every season: actual opponents, home/away, dates, byes, reporting dates and dated league changes. Fit the branch program into those dates. Historical standings may identify the published schedule pairings only; they never replace branch standings, draft order, playoff qualification, statistics or awards. Postseason dates and format are historical; participants and results come from the branch. Source dated amendments and apply them at their historical effective dates. This September 29, 2026 user clarification supersedes the former same-place opponent recomputation rule.
 
 ### 5.3 Postseason qualification and tiebreakers
 
