@@ -1,11 +1,12 @@
 # March 24, 2014 trade resolution (user's negotiation log)
 
-**Recorded:** September 30, 2026 (2014 ledger Entry 102). **Source:** the user's own trade-dynamics framework, run outside the repository. It is the same kind of input as the March 2014 free-agency replay logs. The user runs it to simulate real club behavior without overloading the sim. The text below is kept as supplied. Its outcomes are canon; the dependent records apply it.
+Recorded September 30, 2026 in the [2014 ledger](../ledger.md). The source is the user's own trade-dynamics framework, run outside the repository to simulate real club behavior without overloading the sim, the same kind of input as the March 2014 free-agency replay logs. The text below the line is kept exactly as supplied. Its outcomes are canon, and the dependent records apply them.
 
-**Repository notes.**
-- The sheets proposed on March 24 ([trade sheets](trade_sheets_2014-03-24.md)) are superseded by these outcomes.
+Repository notes:
+- Package letters in the log: D is the Babin trade with Miami, E the Alualu trade with Houston, G the Allen trade with Arizona, F2 the Rackley-or-Brewster trade, and I the Arizona trade for No. 38. Current status of each is in [trade targets](trade_targets.md).
+- The [trade sheets](trade_sheets_2014-03-24.md) proposed on March 24 are superseded by these outcomes.
 - The cap figures below match the tracker's recomputation.
-- Package G's pick is not booked, and no player moves under it, until its conditions are met.
+- The Allen trade's pick is not booked, and Allen does not move, until its conditions are met.
 
 ---
 

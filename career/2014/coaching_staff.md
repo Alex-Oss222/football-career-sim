@@ -1,13 +1,13 @@
-# 2014 Coaching Staff — Jacksonville Jaguars
+# Jacksonville Jaguars 2014 coaching staff
 
 **Head coach:** Alex Stone
-**Staff status:** COMPLETE FOR INITIALIZATION; **no vacancy.** Alan Lowry left for Atlanta's head-coach job on January 12, 2014 (Entry 75); **Mike Westhoff became special teams coordinator on February 11, 2014** (Entry 84; see §2, Changes after execution, and §6)
-**Effective period:** Late January 2013 onward; exact acceptance day for each simulated assistant remains the date recorded in `career/2013/offseason/staff_building/hires.md` unless later canon fixes a more precise day.
-**Contract completion:** Assistant compensation and contract mechanics completed 2026-09-18 at the user's instruction for a realistic 2013 build.
-**Authority source:** `foundation/03_Head_Coach_Organization_and_Authority_Canon.md`, Stone's executed head-coach agreement, The Prowl program files, and the closed staff-hiring record.
-**Historical boundary:** The coaches are real people with only their pre-hire public résumés used as evidence. Their later real jobs, performance and career outcomes are not inputs to this branch.
+**Staff status:** complete; no vacancy. Twelve assistants are under contract. Alan Lowry left for Atlanta's head-coach job on January 12, 2014, and Mike Westhoff became special teams coordinator on February 11, 2014 (see changes after execution and the special teams section).
+**Effective period:** late January 2013 onward. Each original assistant's acceptance day is the date recorded in the [2013 hiring record](../2013/offseason/staff_building/hires.md) unless later canon fixes a more precise day.
+**Contract terms:** assistant compensation and contract mechanics were completed on September 18, 2026 at the user's instruction for a realistic 2013 build.
+**Authority source:** `foundation/03_Head_Coach_Organization_and_Authority_Canon.md`, Stone's executed head-coach agreement, The Prowl program files and the closed staff-hiring record.
+**Historical boundary:** the coaches are real people, and only their pre-hire public records are used as evidence. Their later real jobs, performance and career outcomes are not inputs to this branch.
 
-This file is the **current operating staff register**. Carried from the March 24 checkpoint; the prior year copy is preserved as history. The hiring sequence, declined calls and market alternatives remain in `career/2013/offseason/staff_building/hires.md`.
+This file is the current operating staff register. The [2013 staff register](../2013/coaching_staff.md) is preserved as history, the 2013 hiring sequence, declined calls and market alternatives are in the [2013 hiring record](../2013/offseason/staff_building/hires.md), and 2014 departures and hiring are in the [staff changes folder](offseason/staff_changes/README.md).
 
 ## Operating chain of command
 
@@ -21,66 +21,61 @@ This file is the **current operating staff register**. Carried from the March 24
 
 | Phase | Day-to-day lead | Game-day caller / operational controller | Stone's retained role |
 |---|---|---|---|
-| Offense | Mike Tice coordinates the unit and weekly offensive process | **Alex Stone calls offensive plays** | Final offensive menu, game-plan approval, situational direction, game management |
-| Defense | Romeo Crennel | **Romeo Crennel calls the defense** | Final team principles, coordinator supervision, major situational/game-management decisions |
-| Special teams | Alan Lowry (2013 season); vacant January 12 to February 11, 2014; **Mike Westhoff from February 11, 2014** | **Westhoff directs the kicking game** (Entry 84). Lowry directed it in 2013; Stone directed it on an interim basis from January 12 to February 11, 2014 (Entry 75) | Final team-level priorities, roster/use decisions within Stone's authority, consequential game management |
+| Offense | Mike Tice coordinates the unit and weekly offensive process | Alex Stone calls offensive plays | Final offensive menu, game-plan approval, situational direction, game management |
+| Defense | Romeo Crennel | Romeo Crennel calls the defense | Final team principles, coordinator supervision, major situational/game-management decisions |
+| Special teams | Mike Westhoff (from February 11, 2014) | Westhoff directs the kicking game | Final team-level priorities, roster/use decisions within Stone's authority, consequential game management |
 
-The table records the current working arrangement. Stone can call, delegate or take back any phase at any time; no title, contract change or separate permission is needed. Continue the arrangement until he changes it, without making it a recurring planning question. Lowry's and Stone's earlier special-teams periods remain historical appointments.
+The table records the current working arrangement. Stone can call, delegate or take back any phase at any time; no title, contract change or separate permission is needed. Continue the arrangement until he changes it, without making it a recurring planning question. Lowry directed the kicking game in 2013, and Stone directed it on an interim basis from January 12 to February 11, 2014.
 
 ## Executed assistant contract register
 
-The figures below are **simulation-canon compensation**, calibrated to the 2013 NFL coaching market. They are not claims about what these coaches historically earned from Jacksonville in reality.
+The figures below are simulation-canon compensation, calibrated to the 2013 NFL coaching market. They are branch-created contract terms, not claims about what these coaches historically earned from Jacksonville.
 
-NFL assistant salaries were normally private. Period reporting nevertheless establishes useful anchors: the Cowboys' 2013 overhaul was described as unusually expensive, with Monte Kiffin, Rod Marinelli, Rich Bisaccia and Derek Dooley together plausibly around a **$5 million** annual group cost; Kiffin had previously earned more than $1.5 million at USC, Bisaccia had accepted a $500,000 Auburn deal, and clubs still owed guaranteed commitments to assistants they fired. Those anchors support a meaningful spread between elite coordinators, veteran senior assistants and ordinary position coaches.
+NFL assistant salaries were normally private. Period reporting still gives useful anchors: the Cowboys' 2013 overhaul was described as unusually expensive, with Monte Kiffin, Rod Marinelli, Rich Bisaccia and Derek Dooley together plausibly around a $5 million annual group cost; Kiffin had previously earned more than $1.5 million at USC, Bisaccia had accepted a $500,000 Auburn deal, and clubs still owed guaranteed commitments to assistants they fired. Those anchors support a meaningful spread between elite coordinators, veteran senior assistants and ordinary position coaches (source under research and evidence notes).
 
 ### Contract schedule
 
+Alan Lowry's row is the executed 2013 contract; it ended with his January 12, 2014 move and is not part of the current schedule. The other twelve rows are the current staff.
+
 | Coach | Role | Term | 2013 salary | 2014 salary | 2015 salary | Total scheduled value | Guarantee |
 |---|---|---:|---:|---:|---:|---:|---|
-| **Romeo Crennel** | Defensive coordinator | 3 seasons, 2013–15 | **$1,600,000** | $1,650,000 | $1,700,000 | **$4,950,000** | Guaranteed, subject to offset |
-| **Mike Tice** | Offensive coordinator | 3 seasons, 2013–15 | **$1,100,000** | $1,150,000 | $1,200,000 | **$3,450,000** | Guaranteed, subject to offset |
-| **Alan Lowry** | Special teams coordinator | 2 seasons, 2013–14 | **$600,000** | $625,000 | — | **$1,225,000** | Guaranteed, subject to offset |
-| **Frank Bush** | Linebackers coach | 2 seasons, 2013–14 | **$550,000** | $575,000 | — | **$1,125,000** | Guaranteed, subject to offset |
-| **George Yarno** | Offensive line / run-game coach | 2 seasons, 2013–14 | **$550,000** | $575,000 | — | **$1,125,000** | Guaranteed, subject to offset |
-| **Jeremy Bates** | Quarterbacks coach | 2 seasons, 2013–14 | **$500,000** | $525,000 | — | **$1,025,000** | Guaranteed, subject to offset |
-| **Darryl Drake** | Wide receivers coach | 2 seasons, 2013–14 | **$450,000** | $475,000 | — | **$925,000** | Guaranteed, subject to offset |
-| **Tim Spencer** | Running backs coach | 2 seasons, 2013–14 | **$425,000** | $450,000 | — | **$875,000** | Guaranteed, subject to offset |
-| **Tony Oden** | Defensive backs coach | 2 seasons, 2013–14 | **$425,000** | $450,000 | — | **$875,000** | Guaranteed, subject to offset |
-| **Anthony Pleasant** | Defensive line coach | 2 seasons, 2013–14 | **$400,000** | $425,000 | — | **$825,000** | Guaranteed, subject to offset |
-| **John Zernhelt** | Tight ends coach | 2 seasons, 2013–14 | **$375,000** | $400,000 | — | **$775,000** | Guaranteed, subject to offset |
-| **Charlie Skalaski** | Offensive assistant / assistant quarterbacks | 2 seasons, 2013–14 | **$250,000** | $275,000 | — | **$525,000** | Guaranteed, subject to offset |
-| **Mike Westhoff** (added February 11, 2014, Entry 84) | Special teams coordinator | 2 seasons, 2014-15 | none | $750,000 | $750,000 | **$1,500,000** | 2014 guaranteed, subject to offset; 2015 non-guaranteed; no signing bonus |
+| **Romeo Crennel** | Defensive coordinator | 3 seasons, 2013-15 | $1,600,000 | $1,650,000 | $1,700,000 | $4,950,000 | Guaranteed, subject to offset |
+| **Mike Tice** | Offensive coordinator | 3 seasons, 2013-15 | $1,100,000 | $1,150,000 | $1,200,000 | $3,450,000 | Guaranteed, subject to offset |
+| **Alan Lowry** | Special teams coordinator | 2 seasons, 2013-14 | $600,000 | $625,000 | None | $1,225,000 | Guaranteed, subject to offset |
+| **Frank Bush** | Linebackers coach | 2 seasons, 2013-14 | $550,000 | $575,000 | None | $1,125,000 | Guaranteed, subject to offset |
+| **George Yarno** | Offensive line / run-game coach | 2 seasons, 2013-14 | $550,000 | $575,000 | None | $1,125,000 | Guaranteed, subject to offset |
+| **Jeremy Bates** | Quarterbacks coach | 2 seasons, 2013-14 | $500,000 | $525,000 | None | $1,025,000 | Guaranteed, subject to offset |
+| **Darryl Drake** | Wide receivers coach | 2 seasons, 2013-14 | $450,000 | $475,000 | None | $925,000 | Guaranteed, subject to offset |
+| **Tim Spencer** | Running backs coach | 2 seasons, 2013-14 | $425,000 | $450,000 | None | $875,000 | Guaranteed, subject to offset |
+| **Tony Oden** | Defensive backs coach | 2 seasons, 2013-14 | $425,000 | $450,000 | None | $875,000 | Guaranteed, subject to offset |
+| **Anthony Pleasant** | Defensive line coach | 2 seasons, 2013-14 | $400,000 | $425,000 | None | $825,000 | Guaranteed, subject to offset |
+| **John Zernhelt** | Tight ends coach | 2 seasons, 2013-14 | $375,000 | $400,000 | None | $775,000 | Guaranteed, subject to offset |
+| **Charlie Skalaski** | Offensive assistant / assistant quarterbacks | 2 seasons, 2013-14 | $250,000 | $275,000 | None | $525,000 | Guaranteed, subject to offset |
+| **Mike Westhoff** | Special teams coordinator | 2 seasons, 2014-15 | None | $750,000 | $750,000 | $1,500,000 | 2014 guaranteed, subject to offset; 2015 non-guaranteed; no signing bonus |
 
-### Payroll totals represented in this file
+### Payroll totals
 
-| Season | Scheduled assistant salary |
-|---:|---:|
-| **2013** | **$7,225,000** |
-| **2014** | **$7,575,000** |
-| **2015** | **$2,900,000** |
-| **Total guaranteed scheduled salary** | **$17,700,000** |
+| Season | Original register (twelve coaches, including Lowry) | Current schedule (after Lowry's departure and Westhoff's hire) |
+|---:|---:|---:|
+| 2013 | $7,225,000 | $7,225,000 |
+| 2014 | $7,575,000 | $7,700,000 |
+| 2015 | $2,900,000 | $3,650,000 |
+| Total, 2013-2015 | $17,700,000 (all guaranteed) | $18,575,000 (Westhoff's 2015 $750,000 non-guaranteed) |
 
-These totals are the executed register of the original twelve coaches and exclude Westhoff's later contract. For changes after execution, see below.
+The current 2014 figure is $7,575,000 less Lowry's $625,000 ($6,950,000 for the eleven remaining coaches) plus Westhoff's $750,000. The current 2015 figure and total add Westhoff's $750,000 a season to the original schedule; the total also removes Lowry's $625,000 ($17,075,000 plus $1,500,000).
+
+The totals cover the assistant football coaches in this register. They do not include Stone, strength and conditioning, athletic training, medical personnel, scouting, front-office staff, support staff or assistants added later through an authorized transaction.
+
+Assistant compensation is a club operating expense and does not count against the NFL player salary cap. The $7,700,000 is scheduled salary, not a staff-budget ceiling or uncommitted hiring money. Document 3 section 3.1 records a funded staff-budget commitment with no numeric ceiling. Caldwell confirmed Westhoff's allocation within the replacement plan's ceiling; that confirmation is not a general budget limit.
 
 ### Changes after execution
 
 | Date | Coach | Change | Effect on the schedule | Record |
 |---|---|---|---|---|
-| January 12, 2014 | Alan Lowry | Left to become Atlanta's head coach. The interview was requested on January 6 inside the Wild Card winners' window and granted under Jacksonville's default policy; a head-coach move is a promotion under the 2013 rules | His 2014 salary ($625,000) is no longer scheduled: his contract ends with the move to another club. Branch treatment: no release terms or payments between the clubs are recorded, and the 2013 rules allow none for an assistant | `career/2014/offseason/staff_changes/requests_and_outcomes.md`; ledger Entry 75 |
-| February 11, 2014 | Mike Westhoff | Hired as special teams coordinator. Oakland had re-signed Bobby April and refused Jacksonville's lateral request on February 4 under the symmetric default policy. Westhoff, unattached since his December 30, 2012 retirement, agreed to interview, was offered $625,000 and countered to the authorized ceiling. Caldwell confirmed the funding before the offer. Two seasons, 2014 and 2015, equal salaries, no signing bonus, 2014 guaranteed subject to offset, 2015 non-guaranteed, no added title or authority | Adds $750,000 in 2014 and $750,000 in 2015 | `career/2014/offseason/staff_changes/hires.md`; ledger Entry 84 |
+| January 12, 2014 | Alan Lowry | Left to become Atlanta's head coach. The interview was requested on January 6 inside the Wild Card winners' window and granted under Jacksonville's default policy; a head-coach move is a promotion under the 2013 rules | His 2014 salary ($625,000) is no longer scheduled: his contract ends with the move to another club. No release terms or payments between the clubs are recorded, and the 2013 rules allow none for an assistant | [Requests and outcomes](offseason/staff_changes/requests_and_outcomes.md); ledger Entry 75 |
+| February 11, 2014 | Mike Westhoff | Hired as special teams coordinator. Oakland had re-signed Bobby April and refused Jacksonville's lateral request on February 4 under the symmetric default policy. Westhoff, unattached since his December 30, 2012 retirement, agreed to interview, was offered $625,000 and countered to the authorized ceiling. Caldwell confirmed the funding before the offer. Two seasons, 2014 and 2015, equal salaries, no signing bonus, 2014 guaranteed subject to offset, 2015 non-guaranteed, no added title or authority | Adds $750,000 in 2014 and $750,000 in 2015 | [Hiring record](offseason/staff_changes/hires.md); ledger Entry 84 |
 
-After Lowry's departure, the scheduled 2014 assistant salary for the eleven remaining coaches was **$6,950,000** ($7,575,000 less $625,000). With Westhoff, the scheduled 2014 salary for twelve coaches is **$7,700,000** ($6,950,000 plus $750,000) and the 2015 schedule is **$3,650,000** ($2,900,000 plus $750,000). The total scheduled salary for 2013-2015 is **$18,575,000** ($17,075,000 plus $1,500,000), of which Westhoff's 2015 $750,000 is non-guaranteed. Frank Bush interviewed with Indianapolis for its defensive coordinator job on January 14 and with Chicago for its defensive coordinator job on February 6, both with Jacksonville's permission, and was not offered either job (Entries 75 and 83); his contract is unchanged.
-
-The original totals cover the twelve football coaches listed in the executed register; the revised 2014 total covers the eleven who remained plus Westhoff. They do **not** include Stone, strength and conditioning, athletic training, medical personnel, scouting, front-office staff, support staff or later assistants added through an authorized transaction.
-
-Assistant compensation is a club operating expense and does **not** count against the NFL player salary cap. The $7,700,000 is scheduled salary, not the staff-budget ceiling or uncommitted hiring money. Document 3 current controlled players.1 records a funded staff-budget commitment but no numeric ceiling. Caldwell confirmed Westhoff's allocation within the replacement plan's ceiling; that confirmation is not a general numeric budget limit.
-
-### Market-calibration source
-
-- Dallas Morning News, Feb. 16, 2013, on the Cowboys' high-cost veteran assistant staff and period salary anchors:
-  https://www.dallasnews.com/sports/2013/02/17/george-adding-big-name-assistants-shows-jerry-jones-is-all-in-to-win/
-
-The individual Jacksonville figures above remain branch-created contract terms, not historical salary assertions.
+Frank Bush interviewed for defensive coordinator jobs with Indianapolis on January 14 and Chicago on February 6, both with Jacksonville's permission, and was offered neither; his contract is unchanged.
 
 ## Common assistant-contract framework
 
@@ -132,7 +127,7 @@ A material demotion that strips the core job the club hired the coach to perform
 
 ## Offensive staff
 
-### Mike Tice — Offensive Coordinator
+### Mike Tice, Offensive Coordinator
 
 **Contract:** 3 seasons, $3.45M total; $1.10M in 2013.
 **Reports to:** Stone.
@@ -166,7 +161,7 @@ Tice owns the **offensive operating process** beneath Stone:
 
 Tice supplies game-day recommendations and carries any responsibilities Stone delegates to him.
 
-### Jeremy Bates — Quarterbacks Coach
+### Jeremy Bates, Quarterbacks Coach
 
 **Contract:** 2 seasons, $1.025M total; $500K in 2013.
 **Reports to:** Tice for offensive coordination and directly to Stone on quarterback evaluation when requested.
@@ -193,7 +188,7 @@ His hiring does **not** mean Jacksonville has already decided which quarterback 
 
 Bates coaches the quarterbacks. Caldwell retains final acquisition authority.
 
-### George Yarno — Offensive Line / Run-Game Coach
+### George Yarno, Offensive Line / Run-Game Coach
 
 **Contract:** 2 seasons, $1.125M total; $550K in 2013.
 **Reports to:** Tice, with direct technical access to Stone.
@@ -217,7 +212,7 @@ Yarno had NFL offensive-line coaching experience with Tampa Bay and then Detroit
 
 Tice carries broader run-game coordination. Yarno owns daily offensive-line teaching.
 
-### Tim Spencer — Running Backs Coach
+### Tim Spencer, Running Backs Coach
 
 **Contract:** 2 seasons, $875K total; $425K in 2013.
 **Reports to:** Tice.
@@ -237,7 +232,7 @@ Tice carries broader run-game coordination. Yarno owns daily offensive-line teac
 
 No contract promise is made concerning Maurice Jones-Drew or any other player.
 
-### Darryl Drake — Wide Receivers Coach
+### Darryl Drake, Wide Receivers Coach
 
 **Contract:** 2 seasons, $925K total; $450K in 2013.
 **Reports to:** Tice.
@@ -260,7 +255,7 @@ Drake came from a long Chicago tenure and brought extensive NFL/college receiver
 - development of young receivers;
 - rotation and package recommendations.
 
-### John Zernhelt — Tight Ends Coach
+### John Zernhelt, Tight Ends Coach
 
 **Contract:** 2 seasons, $775K total; $375K in 2013.
 **Reports to:** Tice.
@@ -278,7 +273,7 @@ Drake came from a long Chicago tenure and brought extensive NFL/college receiver
 
 Stone's own playing background at tight end does not make Zernhelt a ceremonial hire. Zernhelt owns the room's daily teaching.
 
-### Charlie Skalaski — Offensive Assistant / Assistant Quarterbacks
+### Charlie Skalaski, Offensive Assistant / Assistant Quarterbacks
 
 **Contract:** 2 seasons, $525K total; $250K in 2013.
 **Reports to:** Bates and Tice.
@@ -297,7 +292,7 @@ Stone's own playing background at tight end does not make Zernhelt a ceremonial 
 
 ## Defensive staff
 
-### Romeo Crennel — Defensive Coordinator
+### Romeo Crennel, Defensive Coordinator
 
 **Contract:** 3 seasons, $4.95M total; $1.60M in 2013.
 **Reports to:** Stone.
@@ -340,7 +335,7 @@ The contract does not force a particular base front before roster evaluation.
 
 Crennel may draw heavily on his multiple-front / 3-4 background, but the 2013 Jacksonville defense is installed from the roster Stone and Crennel actually inherit and build.
 
-### Anthony Pleasant — Defensive Line Coach
+### Anthony Pleasant, Defensive Line Coach
 
 **Contract:** 2 seasons, $825K total; $400K in 2013.
 **Reports to:** Crennel.
@@ -360,7 +355,7 @@ Pleasant's prior work with Crennel gives the coordinator an assistant already fa
 - front communication with Bush;
 - weekly line rotation recommendations.
 
-### Frank Bush — Linebackers Coach
+### Frank Bush, Linebackers Coach
 
 **Contract:** 2 seasons, $1.125M total; $550K in 2013.
 **Reports to:** Crennel.
@@ -390,7 +385,7 @@ His salary reflects senior-assistant and former-coordinator leverage.
 - sub-package linebacker roles;
 - development of reserve/special-teams linebackers.
 
-### Tony Oden — Defensive Backs Coach
+### Tony Oden, Defensive Backs Coach
 
 **Contract:** 2 seasons, $875K total; $425K in 2013.
 **Reports to:** Crennel.
@@ -419,7 +414,7 @@ Oden recommends roles. He does not independently guarantee starting jobs.
 
 ### Mike Westhoff, Special Teams Coordinator
 
-**Status:** Hired February 11, 2014 (Entry 84); replaces Alan Lowry and ends Stone's interim direction of the kicking game (January 12 to February 11, 2014).
+**Status:** hired February 11, 2014; replaced Alan Lowry and ended Stone's interim direction of the kicking game (January 12 to February 11, 2014).
 **Contract:** 2 seasons, 2014 and 2015; $750,000 each season ($1.5M face value); no signing bonus; 2014 guaranteed subject to offset for earnings from another coaching job; 2015 non-guaranteed; no assistant-head-coach title, roster power or additional hires.
 **Reports to:** Stone.
 
@@ -431,11 +426,11 @@ Oden recommends roles. He does not independently guarantee starting jobs.
 - New York Jets special teams coordinator, 2001-12;
 - retired after the 2012 season (reported December 30, 2012) and worked as a media analyst in 2013, under no NFL contract when Jacksonville contacted him on February 5, 2014.
 
-The retirement is sourced in the replacement plan (`career/2014/offseason/staff_changes/staff_plan.md`, S5/S6). The earlier appointments are the pre-2014 record supplied with the user's instruction of September 29, 2026 and are not separately cited in this repository. Nothing after February 2014 in his real career is an input.
+The retirement is sourced in the [replacement plan](offseason/staff_changes/staff_plan.md). The earlier appointments are the pre-2014 record supplied with the user's instruction of September 29, 2026 and are not separately cited in this repository. Nothing after February 2014 in his real career is an input.
 
 #### Hiring
 
-Westhoff was the user's first fallback after Bobby April. He agreed to interview on February 7, interviewed on February 10 and accepted on February 11 after countering the $625,000 opening; the counter was met at the authorized $750,000 ceiling. The dated stages are in `career/2014/offseason/staff_changes/hires.md`.
+Westhoff was the user's first fallback after Bobby April. He agreed to interview on February 7, interviewed on February 10 and accepted on February 11 after countering the $625,000 opening; the counter was met at the authorized $750,000 ceiling. The dated stages are in the [hiring record](offseason/staff_changes/hires.md).
 
 #### Responsibilities
 
@@ -454,9 +449,9 @@ Westhoff was the user's first fallback after Bobby April. He agreed to interview
 
 Westhoff runs the kicking game within Stone's approved plan. Stone keeps team priorities and consequential game management (fourth-down, onside, unusual strategy and other Document 7 pause decisions). The special-teams lead supplies bottom-of-roster evaluations; final player decisions remain with the authorities established elsewhere. Existing player unit assignments stand until Westhoff or Stone changes them through the ordinary process.
 
-### Alan Lowry — Special Teams Coordinator (2013)
+### Alan Lowry, Special Teams Coordinator (2013)
 
-**Status:** Left January 12, 2014 to become Atlanta's head coach (Entry 75).
+**Status:** left January 12, 2014 to become Atlanta's head coach.
 **Contract:** 2 seasons, $1.225M total; $600K in 2013; ended with his move.
 **Reported to:** Stone.
 
@@ -531,7 +526,7 @@ The purpose of the research is to make the branch plausible in January 2013, not
 
 Useful period anchors include:
 
-- Dallas Morning News, Feb. 2013 assistant-coach salary-market discussion:
+- Dallas Morning News, February 16, 2013, on the Cowboys' high-cost veteran assistant staff and period salary anchors (the market-calibration source for the contract register):
   https://www.dallasnews.com/sports/2013/02/17/george-adding-big-name-assistants-shows-jerry-jones-is-all-in-to-win/
 - 2013 NFL Record & Fact Book for period coaching-history cross-checks:
   https://pdfcoffee.com/nfl-record-and-fact-book-2013-pdf-free.html
@@ -543,7 +538,3 @@ Useful period anchors include:
   https://www.giants.com/team/coaches-roster/frank-bush
 
 Later career information visible on a biography page is not evaluation evidence for this 2013 branch.
-
----
-
-Full hiring process, candidate order, declined calls and contract-close record: `career/2013/offseason/staff_building/hires.md`.

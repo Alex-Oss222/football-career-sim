@@ -1,19 +1,28 @@
 # Jacksonville Jaguars: 2014 free-agency board
 
-**Status:** Stone's recommendations to Caldwell, user-authored (February 2, 2014 branch date). The single source is [stone_to_caldwell_2014_offseason_decisions.md](../stone_to_caldwell_2014_offseason_decisions.md), sections 2 (pending free agents, tenders and the tag) and 3 (the free-agency board and its contingencies); this page only points there so the board has one owner. Current amendments: Sanders is removed; the third receiver is Adams, the target at 26, else Hawkins or Edelman; the edge target is signed even if Lawrence arrives ([amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-29-2026-amendment-receivers-pick-13-and-26-fallbacks-edge-pairing-undrafted-line)). Caldwell makes every call when the calendar reaches it; results go in the transaction records, never here.
+**Status:** Stone's recommendations to Caldwell, user-authored (February 2, 2014 branch date). Caldwell makes every call when the calendar reaches it; results go in the transaction records, never here.
 
-**Current reading at February 28, 2014 (Entry 89; a rails consequence, not a memo change):** Carolina franchise-tagged Greg Hardy on February 28 ([Carolina rails page](../league_rails/clubs/CAR.md), recorded as non-exclusive). Under that tag another club's offer sheet would cost two first-round picks, and the current plan commits Jacksonville's 2014 firsts to Donald (13) and Adams (26), so Hardy is not pursued. The priority 4 edge target is therefore Daniel Te'o-Nesheim. His pending UFA classification is verified as of February 2 in [the free-agent pool](../league_rails/free_agent_pool.md), but only a bounded search for later moves was run, so his open-market availability on March 11 is supported, not established. Fallback: Jared Allen, then keep Babin (memo contingency 4). The user's instruction still requires an edge rusher opposite Lawrence.
+## Where the board lives
 
-**Current reading at March 3, 2014 (Entry 92; after the 4 p.m. ET designation deadline):** Tennessee did not tag Verner and New England did not tag Talib or Edelman; Tate was not tagged either. Priorities 1 to 3 (Verner, Talib, Tate) are intact for the March 8 negotiating window and the March 11 market draws. The edge order is Te'o-Nesheim, then Jared Allen (both untagged as far as the record shows), then keep Babin; Hardy stays tagged by Carolina. Hawkins remains a pending Cincinnati RFA with no tender decision recorded; Edelman is untagged. These are other clubs' decisions not to act, recorded here as context, not rails moves.
+The board has one owner: [Stone's offseason decisions memo](../stone_to_caldwell_2014_offseason_decisions.md), section 2 (pending free agents, tenders and the tag) and section 3 (the free-agency board and its contingencies). This page only points there.
 
-[Signing and contract outcomes](signings.md) is the prepared event record. [The verified target pool](../league_rails/free_agent_pool.md) supplies sourced UFA/RFA status; the wider estimated pool is not blanket verification.
+Amendments in force:
 
-**Current reading at March 11, 2014, 4 p.m. ET (Entry 94):** Te'o-Nesheim signed (priority 4). Verner and Talib (priorities 1 and 2) were lost to Tampa Bay and Denver, which triggers contingencies 1 and 2 (re-sign Brent Grimes; pursue Tarell Brown). Tate's draw is held to March 12, Hawkins's to March 12 and 18, Edelman's to March 15. Jared Allen's fallback lapsed. Of Jacksonville's own free agents, Monroe stays on the tag, Cain re-signed, Henne and Marks were lost, and Jones-Drew, C.J. Wilson, Ball and Brent Grimes are unrestricted with offers outstanding. Results are in [signings](signings.md); this page stays the plan.
+- Sanders is removed. The third receiver is Adams, the target at 26, else Hawkins or Edelman. The edge target is signed even if Lawrence arrives ([receivers and edge amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-29-2026-amendment-receivers-pick-13-and-26-fallbacks-edge-pairing-undrafted-line)).
+- Henne is pursued as QB2, Ball is left unsigned until after the draft, and Brent Grimes is not pursued ([Henne, Ball and Grimes amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-henne-ball-and-brent-grimes)).
 
-**Current reading after the March 2014 replay (Entry 95):** Verner (priority 1) signed; Talib (priority 2) is the next negotiation; Te'o-Nesheim (priority 4) is reopened. Monroe and Marks re-signed. Entry 94's reading above is superseded. Results are in [signings](signings.md) and the [replay log](march_2014_replay_log.md).
+## Where the board stands (March 31, 2014)
 
-**Current reading at March 12 (Entry 96):** Talib (priority 2) signed; Tate (priority 3) chose Detroit. Stone directs Edelman as the receiver, with package A only if Edelman signs. Te'o-Nesheim (priority 4) is the next negotiation.
+Every board priority is resolved:
 
-**Current reading at March 18 (Entry 97):** Nicks and Hawkins signed; Edelman returned to New England. Caldwell ends paid veteran receiver bidding. Te'o-Nesheim is next.
+- Priorities 1 and 2: Verner and Talib signed.
+- Priority 3: Tate chose Detroit and Edelman returned to New England; Nicks and Hawkins were signed instead.
+- Priority 4: Te'o-Nesheim signed.
+- Jacksonville's own free agents: Monroe, Marks, Cain, Jones-Drew and C.J. Wilson re-signed. Henne, Ball and Brent Grimes follow the amendment above.
 
-**Current reading at March 18 (Entry 98):** Te'o-Nesheim (priority 4) signed on a cap-light three-year deal.
+## Related records
+
+- [Signing and contract outcomes](signings.md): the event record for every offer, tender and signing.
+- [March 2014 replay log](march_2014_replay_log.md): the full negotiation record for the replayed free-agency period.
+- [Verified target pool](../league_rails/free_agent_pool.md): sourced UFA and RFA status. The wider estimated pool is not blanket verification.
+- The [2014 ledger](../../ledger.md) holds the dated history.

@@ -1,6 +1,6 @@
 # Player film and written-feedback queue
 
-**Current-use note, Entry 101:** this is the 61-player exit-review baseline, not the live roster. The [current roster](../../roster.md) has 55 controlled players. Preserve departed-player feedback obligations as history; add actual newcomer work here without treating missing observations as failed performance.
+**Current-use note, Entry 101:** this is the 61-player exit-review baseline, not the live roster. The [current roster](../../roster.md) owns the live count (53 controlled players at March 31, 2014). Preserve departed-player feedback obligations as history; add actual newcomer work here without treating missing observations as failed performance.
 
 [Film workflow](README.md) | [Delivery log](delivery_log.md) | [Room work plans](../training/unit_plans.md)
 

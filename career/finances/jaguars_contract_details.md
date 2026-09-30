@@ -1,6 +1,6 @@
 # Jacksonville Jaguars individual contract details
 
-[Return to the twelve-year table](jaguars_cap.md). As of March 28, 2014, Entry 103. Whole US dollars.
+[Return to the twelve-year table](jaguars_cap.md). As of March 31, 2014, Entry 104. Whole US dollars.
 
 Annual cells contain the working original or reconstructed contract schedule. Blank years lie outside that deal. The [completion research](../../library/2014_jaguars_contract_completion.md) identifies adopted simulation terms and guarantee assumptions. Cap, scheduled cash and remaining unpaid guarantees are separate amounts.
 
@@ -373,24 +373,17 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ## Justin Blackmon
 
+Former player; departure March 31, 2014. [ledger](../../career/2014/ledger.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | WR / Under contract |
+| Position / status | WR / Traded to Indianapolis, March 31, 2014 (Entry 104) |
 | Original contract | Rookie scale, 2012 pick #5 |
 | Signed | 2012 |
 | Term | 4 / 2015 |
 | Contract value | $18,512,010 (guaranteed at signing: $18,512,010) |
-| Bonus terms | $7,110,000 paid signing bonus plus deferred roster installments treated as signing bonus; original scheduled allocation $2,975,818 annually, before forfeiture reconciliation |
-| Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | Future guarantees void after the existing four-game branch suspension, applying the reported original contract clause. Gross scheduled salary and deferred bonus cash remain payable if retained. |
-| Schedule basis | Includes adopted simulation amounts; see contract notes |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 | $2,072,910 | $2,975,818 | $0 | $5,048,728 | $3,772,910 | $0 |
-| 2015 | $2,914,365 | $2,975,818 | $0 | $5,890,183 | $4,304,365 | $0 |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 The 2016 fifth-year option is unexercised and is excluded from committed years. Review the exercise decision in the 2015 option window. The deferred bonus cash is already incorporated in the original bonus allocation and is not charged twice.
 
@@ -398,29 +391,21 @@ The 2016 fifth-year option is unexercised and is excluded from committed years. 
 
 Original gross schedule: 2014 base $2,072,910 and $1.7M deferred roster cash; 2015 base $2,914,365 and about $1.39M deferred cash. These guaranteed-at-signing bonuses were already treated as signing bonus for cap purposes; do not add them to cap twice. Later actual suspension/tolling does not apply. Entry 91 applies the original suspension clause to remove future guarantees and adopts the gross schedule without an additional bonus-recovery credit.
 
-Original schedule before unresolved branch forfeiture credits: 2014 base $2,072,910 and $1.7M deferred roster cash; 2015 base $2,914,365 and about $1.39M deferred cash. These guaranteed-at-signing bonuses were already treated as signing bonus for cap purposes; do not add them to cap twice. Later actual suspension/tolling does not apply. Current guarantees and four-game branch forfeiture accounting remain unresolved. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.
-
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [2014 jaguars original contract reconstruction](../../library/2014_jaguars_original_contract_reconstruction.md), [2014 jaguars contract completion](../../library/2014_jaguars_contract_completion.md).
 
 ## Cecil Shorts
 
+Former player; departure March 31, 2014. [ledger](../../career/2014/ledger.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | WR / Under contract |
+| Position / status | WR / Traded to Indianapolis, March 31, 2014 (Entry 104) |
 | Original contract | Rookie, 2011 fourth round |
 | Signed | 2011 |
 | Term | 4 / 2014 |
 | Contract value | $2,672,146 |
-| Bonus terms | $443,380 signing bonus; final 2014 allocation $110,845 |
-| Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap. |
-| Schedule basis | Includes adopted simulation amounts; see contract notes |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 | $1,431,000 | $110,845 | $0 | $1,541,845 | $1,431,000 | $0 |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 ### Contract notes
 

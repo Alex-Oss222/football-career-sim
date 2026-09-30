@@ -1,7 +1,7 @@
 {
   "team": "Jacksonville Jaguars",
-  "as_of": "2014-03-28",
-  "checkpoint": "Entry 103",
+  "as_of": "2014-03-31",
+  "checkpoint": "Entry 104",
   "prepared": "2026-09-29",
   "start_year": 2014,
   "end_year": 2025,
@@ -1589,8 +1589,8 @@
       "roster_position": "WR",
       "date_of_birth": "1990-01-09",
       "age_at_checkpoint": 24,
-      "control": "signed",
-      "status": "Under contract",
+      "control": "traded",
+      "status": "Traded to Indianapolis, March 31, 2014 (Entry 104)",
       "contract_type": "Rookie scale, 2012 pick #5",
       "signed": "2012",
       "term": "4 / 2015",
@@ -1599,9 +1599,9 @@
       "bonus_terms": "$7,110,000 paid signing bonus plus deferred roster installments treated as signing bonus; original scheduled allocation $2,975,818 annually, before forfeiture reconciliation",
       "guarantees": "Future guarantees void after the existing four-game branch suspension, applying the reported original contract clause. Gross scheduled salary and deferred bonus cash remain payable if retained.",
       "dead_money_2014": "$5,951,636 gross exposure under adopted terms, before any later earned payment or recorded credit",
-      "remaining_guarantees": 0,
+      "remaining_guarantees": null,
       "availability": "No communicated restriction",
-      "plan": "No new transaction decision in this tracker",
+      "plan": "Traded to Indianapolis (Entry 104)",
       "source_note": "Original gross schedule: 2014 base $2,072,910 and $1.7M deferred roster cash; 2015 base $2,914,365 and about $1.39M deferred cash. These guaranteed-at-signing bonuses were already treated as signing bonus for cap purposes; do not add them to cap twice. Later actual suspension/tolling does not apply. Entry 91 applies the original suspension clause to remove future guarantees and adopts the gross schedule without an additional bonus-recovery credit.",
       "sources": [
         "career/2014/offseason/contract_table.md",
@@ -1613,28 +1613,18 @@
       "accrued_seasons": "Through 2012: 1. 2013: Accrues in branch (on 53 for 12 games: Week 1 and Weeks 6-17; Weeks 2-5 on Reserve/Suspended)",
       "years": {
         "2014": {
-          "status": "approximate",
+          "status": "not_committed",
           "cap": null,
-          "base": 2072910,
-          "proration": 2975818,
-          "other_cap": 0,
-          "cash": 3772910,
-          "approximate_cap": 5048728,
-          "estimate_note": "Original schedule before unresolved branch forfeiture credits: 2014 base $2,072,910 and $1.7M deferred roster cash; 2015 base $2,914,365 and about $1.39M deferred cash. These guaranteed-at-signing bonuses were already treated as signing bonus for cap purposes; do not add them to cap twice. Later actual suspension/tolling does not apply. Current guarantees and four-game branch forfeiture accounting remain unresolved. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.",
-          "deferred_bonus_cash": 1700000,
-          "guaranteed_base": 0
+          "base": null,
+          "proration": null,
+          "cash": null
         },
         "2015": {
-          "status": "approximate",
+          "status": "not_committed",
           "cap": null,
-          "base": 2914365,
-          "proration": 2975818,
-          "other_cap": 0,
-          "cash": 4304365,
-          "approximate_cap": 5890183,
-          "estimate_note": "Original schedule before unresolved branch forfeiture credits: 2014 base $2,072,910 and $1.7M deferred roster cash; 2015 base $2,914,365 and about $1.39M deferred cash. These guaranteed-at-signing bonuses were already treated as signing bonus for cap purposes; do not add them to cap twice. Later actual suspension/tolling does not apply. Current guarantees and four-game branch forfeiture accounting remain unresolved. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.",
-          "deferred_bonus_cash": 1390000,
-          "guaranteed_base": 0
+          "base": null,
+          "proration": null,
+          "cash": null
         },
         "2016": {
           "status": "option_unexercised",
@@ -1708,7 +1698,10 @@
         }
       },
       "guarantee_basis": "simulation reconstruction",
-      "schedule_basis": "Includes adopted simulation amounts; see contract notes"
+      "schedule_basis": "Includes adopted simulation amounts; see contract notes",
+      "former_player": true,
+      "departure_date": "2014-03-31",
+      "departure_source": "career/2014/ledger.md"
     },
     {
       "name": "Cecil Shorts",
@@ -1716,8 +1709,8 @@
       "roster_position": "WR",
       "date_of_birth": "1987-12-22",
       "age_at_checkpoint": 26,
-      "control": "signed",
-      "status": "Under contract",
+      "control": "traded",
+      "status": "Traded to Indianapolis, March 31, 2014 (Entry 104)",
       "contract_type": "Rookie, 2011 fourth round",
       "signed": "2011",
       "term": "4 / 2014",
@@ -1726,9 +1719,9 @@
       "bonus_terms": "$443,380 signing bonus; final 2014 allocation $110,845",
       "guarantees": "Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap.",
       "dead_money_2014": "$110,845 gross exposure under adopted terms, before any later earned payment or recorded credit",
-      "remaining_guarantees": 0,
+      "remaining_guarantees": null,
       "availability": "No communicated restriction",
-      "plan": "No new transaction decision in this tracker",
+      "plan": "Traded to Indianapolis (Entry 104)",
       "source_note": "Planning estimate includes the projected $1.431M proven-performance base. Original un-escalated base is $739,383 (contract-total reconstruction), cap $850,228. Confirm branch offensive snap eligibility and the published 2014 tender before booking the increase; 104 receptions do not certify snap percentage.",
       "sources": [
         "career/2014/offseason/contract_table.md",
@@ -1740,15 +1733,11 @@
       "accrued_seasons": "Through 2012: 2. 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "approximate",
+          "status": "not_committed",
           "cap": null,
-          "base": 1431000,
-          "proration": 110845,
-          "other_cap": 0,
-          "cash": 1431000,
-          "approximate_cap": 1541845,
-          "estimate_note": "Planning estimate includes the projected $1.431M proven-performance base. Original un-escalated base is $739,383 (contract-total reconstruction), cap $850,228. Confirm branch offensive snap eligibility and the published 2014 tender before booking the increase; 104 receptions do not certify snap percentage. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.",
-          "guaranteed_base": 0
+          "base": null,
+          "proration": null,
+          "cash": null
         },
         "2015": {
           "status": "not_committed",
@@ -1829,7 +1818,10 @@
         }
       },
       "guarantee_basis": "simulation reconstruction",
-      "schedule_basis": "Includes adopted simulation amounts; see contract notes"
+      "schedule_basis": "Includes adopted simulation amounts; see contract notes",
+      "former_player": true,
+      "departure_date": "2014-03-31",
+      "departure_source": "career/2014/ledger.md"
     },
     {
       "name": "Marcedes Lewis",
@@ -7762,6 +7754,13 @@
     {
       "year": 2014,
       "round": 3,
+      "original_club": "Indianapolis Colts",
+      "slot_in_round": "18",
+      "overall": "82"
+    },
+    {
+      "year": 2014,
+      "round": 3,
       "original_club": "Jacksonville Jaguars",
       "slot_in_round": "26",
       "overall": "90"
@@ -7786,6 +7785,13 @@
       "original_club": "Jacksonville Jaguars",
       "slot_in_round": "26",
       "overall": "168"
+    },
+    {
+      "year": 2014,
+      "round": 6,
+      "original_club": "Indianapolis Colts",
+      "slot_in_round": "15",
+      "overall": "194"
     },
     {
       "year": 2014,
@@ -7851,6 +7857,20 @@
       "amount": 0,
       "status": "reconstructed",
       "basis": "Trade to Miami, March 24, 2014 (Entry 102): no Jacksonville bonus proration on the claimed Philadelphia contract, so no dead money. Miami takes the 2014 and 2015 schedules."
+    },
+    {
+      "player": "Cecil Shorts",
+      "year": 2014,
+      "amount": 110845,
+      "status": "reconstructed",
+      "basis": "Pre-June 1 trade to Indianapolis, March 31, 2014 (Entry 104): his final $110,845 original bonus allocation stays with Jacksonville in 2014. Indianapolis takes his $1,431,000 base."
+    },
+    {
+      "player": "Justin Blackmon",
+      "year": 2014,
+      "amount": 5951636,
+      "status": "reconstructed",
+      "basis": "Pre-June 1 trade to Indianapolis, March 31, 2014 (Entry 104): the remaining bonus allocations of $2,975,818 for 2014 and $2,975,818 for 2015 accelerate into 2014. Indianapolis takes his 2014 and 2015 base salaries and deferred roster cash; his 2015 charge leaves Jacksonville."
     }
   ],
   "amendments": [
@@ -7888,6 +7908,11 @@
       "date": "2014-03-20",
       "source": "career/2013/ledger.md",
       "description": "Entry 99: Cain re-signed (1 year, $855,000 minimum); Nwaneri traded to Arizona in package I with the 2015 first, 2015 fourth and 2016 fifth for No. 38 (pre-June 1 trade: $2,189,000 of bonus proration accelerates into 2014)."
+    },
+    {
+      "date": "2014-03-31",
+      "source": "career/2014/ledger.md",
+      "description": "Entry 104: Shorts and Blackmon traded to Indianapolis for the Colts' 2014 third (No. 82) and sixth (No. 194). Pre-June 1 trade: Shorts's $110,845 and Blackmon's $5,951,636 of bonus allocation stay as 2014 dead money; Blackmon's 2015 charge leaves."
     }
   ],
   "scenarios": [],
@@ -7903,7 +7928,13 @@
       "accounting_reconciled": false,
       "sources": [],
       "opening_workout_charge": 504000,
-      "opening_workout_source": "career/2014/offseason/current_cap_worksheet.md"
+      "opening_workout_source": "career/2014/offseason/current_cap_worksheet.md",
+      "carryover_working_estimate": {
+        "low": 5330000,
+        "high": 6000000,
+        "source": "career/2014/offseason/current_cap_worksheet.md#2013-rollover",
+        "basis": "Unused 2013 room rebuilt from the 2013 cap worksheet: May 5, 2013 room of $6.96M to $7.34M, less about $810,000 for the two minimum contracts added at the 53 and $816,000 of practice-squad pay, plus up to about $290,000 if Blackmon's four suspended game checks were credited. Working estimate, not league-certified."
+      }
     },
     "2015": {
       "carryover": null,

@@ -109,3 +109,52 @@ The annual handoff manifest tracks team closeout, interviews, finances, roles/me
 **Atomic closure.** The negotiation record, signings record, contract status register, contract table, cap worksheet, financial inputs and generated cap views, roster, working depth chart and its JSON copy, Oakland rails page, calendar, phase-plan filing status, the 2014 README, readiness, operating baseline and Documents 4 and 5 agree. The private snapshot is advanced only after merge.
 
 **Commit closed - Canonical update - March 31, 2014 - Jones-Drew and C.J. Wilson re-signed - canonical through March 31, 2014**
+
+## Entry 104 — March 31, 2014 — Shorts and Blackmon traded to Indianapolis
+
+**Recorded:** September 30, 2026. **Simulation clock:** stays at March 31, 2014.
+**Checkpoint:** `Canonical update - March 31, 2014 - Shorts and Blackmon traded to Indianapolis`
+**Preceding global package checkpoint:** `Canonical update - March 31, 2014 - Jones-Drew and C.J. Wilson re-signed`
+
+**Authority and method.** Stone's instruction is in the [memo amendment of September 30, 2026](offseason/stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-trade-shorts-and-blackmon): trade Cecil Shorts and Justin Blackmon for draft picks, ideally one in rounds 2 to 4, with Jacksonville taking the dead money. Caldwell set the asks within that instruction and each club answered on its own need, pick capital and cap, with no private draw. Event owner: [the trade record](trades/shorts_blackmon_to_indianapolis_2014-03-31.md).
+
+**Calls, March 31.**
+- Seattle declined No. 36 for both players and made no counter.
+- Carolina offered No. 119, its fourth, for Shorts alone and passed on Blackmon.
+- Indianapolis refused No. 51, offered No. 82 for Shorts, then added No. 194 to take Blackmon. Caldwell accepted: the Colts' third beats Carolina's fourth, and only the Colts would take Blackmon.
+
+**Terms.**
+
+| Jacksonville sends | Indianapolis sends |
+|---|---|
+| WR Cecil Shorts | 2014 third-round pick, No. 82 (Colts' own, round 3, slot 18) |
+| WR Justin Blackmon | 2014 sixth-round pick, No. 194 (Colts' own, round 6, slot 15) |
+
+**Physicals and processing.** Both players passed the Colts' physicals on March 31 with no communicated restriction. Both picks are clean ordinary picks with no condition. Processed March 31; Indianapolis takes both contracts from that date.
+
+**Cap effects (pre-June 1 trade).**
+- **Shorts:** his $1,541,845 2014 charge leaves; his final $110,845 bonus allocation stays as 2014 dead money. No 2015 year.
+- **Blackmon:** his $5,048,728 2014 charge leaves; the remaining bonus allocation, $2,975,818 for 2014 and $2,975,818 for 2015, accelerates into 2014 dead money of $5,951,636. His $5,890,183 2015 charge leaves.
+- **Tracker totals:** player contracts $112,759,748 including tenders, plus $9,845,656 dead money. Two $420,000 minimums fall outside the offseason Top 51, giving $121,765,404. With the $504,000 workout charge the working total is $122,269,404, a $10,730,596 working difference before carryover, rookies and reserves. This is not certified room.
+- **Net 2014 effect:** the two contracts alone improve 2014 by $528,092, but two minimum contracts move back inside the Top 51, so the working difference falls by $386,908 from $11,117,504.
+- **2015 commitments:** $102,895,454.
+
+**Accounting at the same checkpoint: 2013 rollover.** At the user's request, the unused 2013 room carried into 2014 is estimated from the 2013 cap worksheet at about $5.33M to $6.00M ([calculation](offseason/current_cap_worksheet.md#2013-rollover)). With it, the working difference is about $16.06M to $16.73M. It is a working estimate, not certified room, and it replaces the earlier $5.4M to $6.6M note. The roughly $23M sometimes cited was Jacksonville's room at the start of 2013, which already included the 2012 carryover and was mostly spent in 2013 free agency and the draft.
+
+**Effects.**
+- **Roster:** controlled roster 53: 49 signed and four unsigned tenders. The receivers are Nicks, Hawkins, Thielen, Clemons, Brown and Jerrell Jackson.
+- **Draft picks:** 11 in 2014: 13, 26, 38, 82, 90, 129, 153, 168, 194, 205 and 241. Stone has not named targets for 82 and 194.
+- **Depth chart:** Shorts (WR 1) and Blackmon (WR 3) are removed; Thielen, Clemons and Brown move up without a reorder. The carried WR1 and WR3 roles are open for Stone. Davante Adams remains the plan at No. 38.
+- **Rails:** both players join Indianapolis on March 31 as a branch trade.
+
+**Open.**
+- Henne (unrestricted; Stone's March 31 plan pursues him as QB2).
+- Ball (revisited after the draft) and Brent Grimes (not pursued).
+- The Allen trade's conditions (Posluszny's actual clearance by April 21).
+- The April 18 phase-plan decisions.
+- Targets for Nos. 82 and 194; the left guard, Edge 1, WR1 and WR3 roles.
+- The rails from March 11 evening to March 31 remain unswept beyond the targets' own moves and the branch trades.
+
+**Atomic closure.** The trade record, completed trades, offer log, trade targets, pick ownership register and generated draft order, draft board, draft pairing, Indianapolis rails page, contract status register, contract table, cap worksheet, financial inputs and generated cap views, roster, working depth chart and its JSON copy, calendar, the 2014 README, readiness, operating baseline and Documents 4 and 5 agree. The private snapshot is advanced only after merge.
+
+**Commit closed - Canonical update - March 31, 2014 - Shorts and Blackmon traded to Indianapolis - canonical through March 31, 2014**

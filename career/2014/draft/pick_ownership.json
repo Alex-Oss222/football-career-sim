@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "as_of": "2014-03-24",
+  "as_of": "2014-03-31",
   "authority": "career/2013/ledger.md#entry-81-draft-coin-flip-and-league-pick-ownership-reconciled",
   "default_ownership": "Retained original allocation after the 224-asset audit in ownership_audit.md; explicit transfers and conditional claims override it. No generic outside-club provisional holdings remain for 2014.",
   "compensatory": {
@@ -305,6 +305,24 @@
       "basis": "Package E trade, March 24, 2014; 2014 ledger Entry 102",
       "source": "career/2014/trades/trades.md",
       "effective_date": "2014-03-24"
+    },
+    {
+      "draft_year": 2014,
+      "round": 3,
+      "original_club": "Indianapolis Colts",
+      "owner": "Jacksonville Jaguars",
+      "basis": "Shorts and Blackmon trade with Indianapolis, March 31, 2014; 2014 ledger Entry 104",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-03-31"
+    },
+    {
+      "draft_year": 2014,
+      "round": 6,
+      "original_club": "Indianapolis Colts",
+      "owner": "Jacksonville Jaguars",
+      "basis": "Shorts and Blackmon trade with Indianapolis, March 31, 2014; 2014 ledger Entry 104",
+      "source": "career/2014/trades/trades.md",
+      "effective_date": "2014-03-31"
     }
   ],
   "audited_year": 2014,

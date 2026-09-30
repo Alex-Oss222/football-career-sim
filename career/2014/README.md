@@ -1,6 +1,6 @@
 # Jacksonville 2014
 
-**Current checkpoint:** March 31, 2014; Entry 103 (Jones-Drew and C.J. Wilson re-signed; schedule filed March 28). There are 55 controlled players: 51 signed and four unsigned tenders. Nine draft picks: 13, 26, 38, 90, 129, 153, 168, 205 and 241; no compensatory award. Future picks acquired: Miami's 2015 third and Houston's 2015 fourth; Jacksonville's 2017 seventh went to Miami. Package G (Allen to Arizona for its 2015 fourth) is agreed in principle, pending Posluszny's clearance. No offseason football phase or 2014 game has run.
+**Current checkpoint:** March 31, 2014; Entry 104 (Shorts and Blackmon traded to Indianapolis for Nos. 82 and 194). There are 53 controlled players: 49 signed and four unsigned tenders. Eleven draft picks: 13, 26, 38, 82, 90, 129, 153, 168, 194, 205 and 241; no compensatory award. Future picks acquired: Miami's 2015 third and Houston's 2015 fourth; Jacksonville's 2017 seventh went to Miami. Package G (Allen to Arizona for its 2015 fourth) is agreed in principle, pending Posluszny's clearance. No offseason football phase or 2014 game has run.
 
 ## Start and resume here
 

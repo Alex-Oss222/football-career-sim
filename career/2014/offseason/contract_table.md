@@ -1,8 +1,8 @@
 # Jacksonville Jaguars 2014 contract table
 
-**As of:** March 28, 2014 (ledger Entry 103: Jones-Drew and C.J. Wilson re-signed; ledger Entry 102: Babin traded to Miami and Alualu to Houston; ledger Entry 100, compensatory picks announced with no contract change; ledger Entry 99; the March 2014 free-agency replay corrects Entry 94's first-pass draws). Replay signings: Monroe, Marks, Verner (Entry 95), Talib (Entry 96), Nicks and Hawkins (Entry 97), Te'o-Nesheim (Entry 98) and Cain (Entry 99). Nwaneri was traded to Arizona for No. 38 (Entry 99). Tate chose Detroit and Edelman New England; the four RFA/ERFA tenders stand.
-**Nature:** derived view. It executes no signing, tag, tender, release, trade or extension, certifies no cap room and reflects the adopted reconstruction in Entry 91. The [contract status register](contract_status_register.md) owns each player's status; the [2014 preparation worksheet](current_cap_worksheet.md) owns reconciliation; Caldwell owns contract decisions (Document 3).
-**Baseline:** [2013 initial cap sheet](../../2013/offseason/initial_cap_sheet.md) (per-player 2013 rows, Git `e04dd82`); [2013 regular-season worksheet](../../2013/offseason/current_cap_worksheet.md) and its May 5 version (Git `d25c8cf`); [2013 free-agency signings](../../2013/offseason/free_agency/signings.md); [2013 draftees](../../2013/offseason/draft/draftees.md); [2013 undrafted signings](../../2013/offseason/draft/udfa_signings.md); [2013 trades](../../2013/trades/trades.md); [current contract status register](contract_status_register.md); [Caldwell's pre-tag-window verifications](caldwell_pre_tag_verifications.md) (Git `9ca804c`); [2014 free-agency outcomes](free_agency/signings.md); ledger Entries 3, 4, 7, 9, 79, 80 and 85 through 89. Historical Git references identify the original financial baselines; current status follows the latest register and executed outcomes.
+**As of:** March 31, 2014
+**Nature:** derived view. It executes no signing, tag, tender, release, trade or extension, certifies no cap room and reflects the adopted contract reconstruction. The [contract status register](contract_status_register.md) owns each player's status; the [2014 preparation worksheet](current_cap_worksheet.md) owns reconciliation; Caldwell owns contract decisions (Document 3).
+**Baseline:** [2013 initial cap sheet](../../2013/offseason/initial_cap_sheet.md) (per-player 2013 rows, Git `e04dd82`); [2013 regular-season worksheet](../../2013/offseason/current_cap_worksheet.md) and its May 5 version (Git `d25c8cf`); [2013 free-agency signings](../../2013/offseason/free_agency/signings.md); [2013 draftees](../../2013/offseason/draft/draftees.md); [2013 undrafted signings](../../2013/offseason/draft/udfa_signings.md); [2013 trades](../../2013/trades/trades.md); [current contract status register](contract_status_register.md); [Caldwell's pre-tag-window verifications](caldwell_pre_tag_verifications.md) (Git `9ca804c`); [2014 free-agency outcomes](free_agency/signings.md); the [2014 ledger](../ledger.md). Historical Git references identify the original financial baselines; current status follows the latest register and executed outcomes.
 
 **Long-term view:** [2014 to 2025 Jaguars cap tracker](../../finances/jaguars_cap.md), with [individual contract details](../../finances/jaguars_contract_details.md). This table remains the current-year source.
 
@@ -24,10 +24,11 @@ Add a row, and change the affected player rows and summaries, for every signing,
 | March 12, 2014 | Replay: Talib signed; Tate declined | Entry 96 | Talib signed (5 years, $46.5M, $21.5M guaranteed; 2014 cap $7,800,000). Tate signed with Detroit; no Jacksonville row. Rows: 52 |
 | March 18, 2014 | Replay: Nicks and Hawkins signed; Edelman declined | Entry 97 | Nicks (1 year, up to $5.0M, $4.5M guaranteed; 2014 cap budget $5,000,000) and Hawkins (4 years, $15.6M, $8.0M guaranteed; $2,800,000) added. Rows: 54 |
 | March 18, 2014 | Replay: Te'o-Nesheim signed | Entry 98 | Te'o-Nesheim (3 years, up to $13.5M, $6.0M guaranteed; 2014 cap $3,000,000) added. Rows: 55 |
-| March 20, 2014 | Cain re-signed; Nwaneri traded | Entry 99 | Cain (1 year, $855,000) added; Nwaneri removed (traded to Arizona in package I); $2,189,000 of his bonus proration accelerates to 2014 dead money. Rows: 55 |
-| March 24, 2014 | Babin and Alualu traded | Entry 102 | Babin removed (traded to Miami, package D; no Jacksonville dead money); Alualu removed (traded to Houston, package E; his final $1,542,500 bonus allocation stays as 2014 dead money). Rows: 53 |
-| March 28, 2014 | Jones-Drew and C.J. Wilson re-signed | Entry 103 | Jones-Drew (2 years, $7.0M, $3.25M guaranteed; 2014 cap $2,600,000) and Wilson (1 year, $795,000; $65,000 bonus) added. Rows: 55 |
+| March 20, 2014 | Cain re-signed; Nwaneri traded | Entry 99 | Cain (1 year, $855,000) added; Nwaneri removed (traded to Arizona for No. 38); $2,189,000 of his bonus proration accelerates to 2014 dead money. Rows: 55 |
 | March 24, 2014 | 2014 compensatory picks announced | Entry 100 | No contract row changes; Jacksonville received no compensatory pick. Its later draft rights renumber to 129, 153, 168, 205 and 241 in the financial inputs; no rookie contract is booked before a selection |
+| March 24, 2014 | Babin and Alualu traded | Entry 102 | Babin removed (traded to Miami; no Jacksonville dead money); Alualu removed (traded to Houston; his final $1,542,500 bonus allocation stays as 2014 dead money). Rows: 53 |
+| March 28, 2014 | Jones-Drew and C.J. Wilson re-signed | Entry 103 | Jones-Drew (2 years, $7.0M, $3.25M guaranteed; 2014 cap $2,600,000) and Wilson (1 year, $795,000; $65,000 bonus) added. Rows: 55 |
+| March 31, 2014 | Shorts and Blackmon traded to Indianapolis | Entry 104 | Shorts removed (his final $110,845 bonus allocation stays as 2014 dead money); Blackmon removed ($5,951,636 of remaining bonus allocation, the 2014 and 2015 amounts, accelerates to 2014 dead money; his 2015 charge leaves). Jacksonville receives Nos. 82 and 194. Rows: 53 |
 
 <a id="1-how-to-read-this-table"></a>
 
@@ -43,7 +44,7 @@ Add a row, and change the affected player rows and summaries, for every signing,
 
 <a id="2-controlled-players-under-contract-for-2014-51"></a>
 
-## Controlled players under contract for 2014 (51)
+## Controlled players under contract for 2014 (49)
 
 <a id="2a-branch-contracts-21"></a>
 
@@ -83,8 +84,6 @@ The UDFA total value is the sum of the three recorded bases ($405,000, $495,000 
 
 | Player | Pos | Contract type | Signed | Years / final league year | Total value | Signing bonus; annual proration; years left | 2014 base | 2014 roster / workout / other bonuses | 2014 guarantees | 2014 cap charge | Dead money if released before June 1 | 2014 status | 2013 cap charge (baseline) | Source and status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Justin Blackmon | WR | Rookie scale, 2012 pick #5 | 2012 | 4 / 2015 | $18,512,010 (guaranteed at signing: $18,512,010) | $7,110,000 paid signing bonus plus deferred roster installments treated as signing bonus; original scheduled allocation $2,975,818 annually, before forfeiture reconciliation | About $2,072,910 | $1,700,000 deferred cash; already included in bonus cap allocation | Future guarantees void after the existing four-game branch suspension, applying the reported original contract clause. Gross scheduled salary and deferred bonus cash remain payable if retained. | $5,048,728 | $5,951,636 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | $4,207,273; four-game forfeiture unresolved | Planning estimate; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#justin-blackmon); adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
-| Cecil Shorts | WR | Rookie, 2011 fourth round | 2011 | 4 / 2014 | $2,672,146 | $443,380 signing bonus; final 2014 allocation $110,845 | About $1,431,000 | None in recovered schedule | Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap. | $1,541,845 | $110,845 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | $728,767 | Planning estimate; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#cecil-shorts); adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
 | Marcedes Lewis | TE | Veteran, 2011 | 2011 | 5 / 2015 | $34,000,000 | $7,000,000 signing bonus; $1,400,000 annually through 2015 | $6,700,000 | $150,000 scheduled other cap components | Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap. | $8,250,000 | $2,800,000 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | $5,750,000 | Sourced schedule / stated reconstruction; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#marcedes-lewis); adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
 | Mark Asper | G | Rookie (Buffalo, 2012 sixth round), carried by waiver claims | 2012 | 4 / 2015 | $2,213,452 original four-year deal | $113,452 original Buffalo bonus; Jacksonville proration $0 | $570,000 | None in recovered schedule | No remaining guaranteed base salary established in the recovered schedule | $570,000 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | Unresolved (no 2013 row) | Sourced schedule / stated reconstruction; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#mark-asper) |
 | Will Rackley | G | Rookie, 2011 third round | 2011 | 4 / 2014 | $2,914,274 | $619,472 signing bonus; final 2014 allocation $154,868 | About $1,431,000 | None in recovered schedule | Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap. | $1,585,868 | $154,868 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract | $794,802 | Planning estimate; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#will-rackley); adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
@@ -110,7 +109,7 @@ The UDFA total value is the sum of the three recorded bases ($405,000, $495,000 
 
 ### Reserve/future contracts, effective March 11, 2014 (6)
 
-Terms for each (Entry 85): the 2014 minimum for the player's credited seasons, no guarantee, no signing bonus. Entry 91 completes the term as two years through 2015. The 2013 figure for each is the practice-squad rate of $6,000 a week while on the squad (2013 worksheet); no season total is reconciled.
+Terms for each: the 2014 minimum for the player's credited seasons, no guarantee, no signing bonus. The adopted completion makes each a two-year contract through 2015. The 2013 figure for each is the practice-squad rate of $6,000 a week while on the squad (2013 worksheet); no season total is reconciled.
 
 | Player | Pos | Contract type | Signed | Years / final league year | Total value | Signing bonus; annual proration; years left | 2014 base | 2014 bonuses | 2014 guarantees | 2014 cap charge | Dead money if released before June 1 | 2014 status | 2013 cap charge (baseline) | Source and status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -121,31 +120,33 @@ Terms for each (Entry 85): the 2014 minimum for the player's credited seasons, n
 | D'Anthony Smith | DT | Reserve/future (market draw won) | February 5, 2014 | 2 / 2015 (simulation reconstruction) | $1,080,000 | $0; $0; 0 | $495,000 (1 credited season) | None in recovered schedule | No remaining guaranteed base salary established in the recovered schedule | $495,000 from March 11 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract (effective March 11) | Practice squad | Sourced schedule / stated reconstruction; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#danthony-smith); adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
 | Antwon Blake | S | Reserve/future | February 3, 2014 | 2 / 2015 (simulation reconstruction) | $1,080,000 | $0; $0; 0 | $495,000 (1 credited season) | None in recovered schedule | No remaining guaranteed base salary established in the recovered schedule | $495,000 from March 11 | $0 gross exposure under adopted terms, before any later earned payment or recorded credit | Under contract (effective March 11) | Practice squad | Sourced schedule / stated reconstruction; [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#antwon-blake); adopted remaining terms: [completion research](../../../library/2014_jaguars_contract_completion.md) |
 
-All six futures minimums are now priced using Article 26 credited service, reconstructed in the [contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#futures-service-and-minimum-salaries). Entry 91 completes the already-signed Entry 85 terms as two-year 2014-2015 agreements, with 2015 salaries of $510,000 or $585,000. No extension or new offer is executed.
+All six futures minimums are priced using Article 26 credited service, reconstructed in the [contract research](../../../library/2014_jaguars_original_contract_reconstruction.md#futures-service-and-minimum-salaries). The 2015 salaries are $510,000 or $585,000. No extension or new offer is executed.
 
 <a id="3-contracts-and-rights-that-ended-9"></a>
 
-## Contracts and rights that ended (9)
+## Contracts and rights that ended (11)
 
 These players are no longer under Jacksonville control. Their 2013 rows remain in the [2013 records](../../2013/offseason/current_cap_worksheet.md); no 2014 charge is booked. Offers still outstanding are Caldwell's recorded offers, not contracts.
 
 | Player | Pos | Status at 4 p.m. March 11 |
 |---|---|---|
-| Chad Henne | QB | Unrestricted; the first-pass March 7 draw is superseded and his negotiation reopened (Entry 95) |
-| Alan Ball | CB | Unrestricted; Jacksonville's one-year offer stands; he has no real 2014 move, and the resolution rule is open |
-| Brent Grimes | CB | Unrestricted; the corner contingency makes him Jacksonville's fallback offer (2 years, $9.25M, $4.0M guaranteed); unplaced under rails method section 3; resolution rule open |
+| Chad Henne | QB | Unrestricted; negotiation open, and Stone's March 31 plan pursues him as QB2 |
+| Alan Ball | CB | Unrestricted; left unsigned under Stone's March 31 plan and revisited after the draft; he has no real 2014 move |
+| Brent Grimes | CB | Unrestricted; not pursued under Stone's March 31 plan (the 2 years, $9.25M, $4.0M guaranteed fallback offer is withdrawn); unplaced under rails method section 3 |
 | Allen Reisner | TE | Not tendered; unrestricted |
 | Kevin Rutland | CB | Not tendered; unrestricted |
-| Brad Meester | C | Retired (Entry 79); contract expired |
-| Uche Nwaneri | G | Traded to Arizona March 20, 2014 (package I, Entry 99); $2,189,000 of bonus proration accelerated to 2014 |
-| Jason Babin | DE | Traded to Miami March 24, 2014 (package D, Entry 102) with Jacksonville's 2017 seventh for Miami's 2015 third; no Jacksonville dead money |
-| Tyson Alualu | DT | Traded to Houston March 24, 2014 (package E, Entry 102) for Houston's 2015 fourth; $1,542,500 bonus allocation stays as 2014 dead money |
+| Brad Meester | C | Retired; contract expired |
+| Uche Nwaneri | G | Traded to Arizona March 20, 2014 with Jacksonville's 2015 first, 2015 fourth and 2016 fifth for No. 38; $2,189,000 of bonus proration accelerated to 2014 |
+| Jason Babin | DE | Traded to Miami March 24, 2014 with Jacksonville's 2017 seventh for Miami's 2015 third; no Jacksonville dead money |
+| Tyson Alualu | DT | Traded to Houston March 24, 2014 for Houston's 2015 fourth; $1,542,500 bonus allocation stays as 2014 dead money |
+| Cecil Shorts | WR | Traded to Indianapolis March 31, 2014 with Blackmon for the Colts' 2014 third (No. 82) and sixth (No. 194); his final $110,845 bonus allocation stays as 2014 dead money |
+| Justin Blackmon | WR | Traded to Indianapolis March 31, 2014 with Shorts; $5,951,636 of remaining bonus allocation (2014 and 2015) accelerates to 2014 dead money |
 
 <a id="4-tendered-players-4"></a>
 
 ## Tendered players (4)
 
-Each tender was made before 4 p.m. ET March 11 and is unsigned; an unsigned tender counts against the 2014 cap from the league year. Monroe's franchise tender was replaced by his five-year contract (Entry 95) and is not counted.
+Each tender was made before 4 p.m. ET March 11 and is unsigned; an unsigned tender counts against the 2014 cap from the league year. Monroe's franchise tender was replaced by his five-year contract and is not counted.
 
 | Player | Pos | Expiring contract | Final league year | Total value | 2013 cap charge (baseline) | 2014 status | Planned action and deadline | Source and status |
 |---|---|---|---|---|---|---|---|---|
@@ -160,19 +161,19 @@ Each tender was made before 4 p.m. ET March 11 and is unsigned; an unsigned tend
 
 <a id="5a-counts-by-2014-status-march-20-2014-entry-99"></a>
 
-### Counts by 2014 status (March 28, 2014, Entry 103)
+### Counts by 2014 status (March 31, 2014)
 
 | Status | Count |
 |---|---:|
-| Under contract, continuing | 35 |
+| Under contract, continuing | 33 |
 | Under contract, reserve/future (effective March 11) | 6 |
 | Under contract, signed in the replay (Monroe, Marks, Verner, Talib, Nicks, Hawkins, Te'o-Nesheim, Cain, Jones-Drew, Wilson) | 10 |
 | Tendered RFA (lowest, not signed) | 1 |
 | Tendered ERFA (not signed) | 3 |
-| **Controlled rows** | **55** |
-| Contracts and rights ended (section 3) | 9 |
+| Controlled rows | 53 |
+| Contracts and rights ended (section 3) | 11 |
 
-The 55 controlled rows match the register and the roster.
+The 53 controlled rows match the register and the roster.
 
 <a id="5b-working-2014-cap-charges"></a>
 
@@ -180,17 +181,17 @@ The 55 controlled rows match the register and the roster.
 
 | Component | Players | 2014 amount |
 |---|---:|---:|
-| Signed contracts and futures | 51 | $116,284,321 |
+| Signed contracts and futures | 49 | $109,693,748 |
 | Unsigned tenders (Bradfield $1,431,000; Clemons and Pasztor $570,000 each; Brown $495,000) | 4 | $3,066,000 |
-| Player contracts including tenders | 55 | $119,350,321 |
-| Dead money (Bray $51,675; Nwaneri $2,189,000; Alualu $1,542,500) | | $3,783,175 |
-| Recorded obligations, all 55 players | | $123,133,496 |
-| Less three $420,000 minimums (Long, Jerrell Jackson, Bray) and one $495,000 minimum outside the offseason Top 51 | | -$1,755,000 |
-| Offseason Top-51 obligations plus dead money | | $121,378,496 |
+| Player contracts including tenders | 53 | $112,759,748 |
+| Dead money (Bray $51,675; Nwaneri $2,189,000; Alualu $1,542,500; Shorts $110,845; Blackmon $5,951,636) | | $9,845,656 |
+| Recorded obligations, all 53 players | | $122,605,404 |
+| Less two of the three $420,000 minimums (Long, Jerrell Jackson, Bray) outside the offseason Top 51 | | -$840,000 |
+| Offseason Top-51 obligations plus dead money | | $121,765,404 |
 | League-year opening offseason-workout charge (2,880 x $175, CBA Article 13 section 5(g)) | | $504,000 |
-| Working total | | $121,882,496 |
+| Working total | | $122,269,404 |
 
-Against the $133,000,000 league cap the working difference is **$11,117,504**, before the unresolved carryover, rookies, further signings and reserves. Jones-Drew adds $2,600,000 and C.J. Wilson $795,000; with two more players, one more $420,000 and the $495,000 minimum fall outside the Top 51. Earlier: the Babin trade removed about $6,175,000 with no dead money; the Alualu trade removed $4,264,000 and left $1,542,500 of dead money; the Nwaneri trade removed about $5,894,500 and left $2,189,000 of dead money; Cain added $855,000. Not certified room.
+Against the $133,000,000 league cap the working difference is $10,730,596, before the unresolved carryover, rookies, further signings and reserves. It is not certified room.
 
 <a id="5c-dead-money-carried-into-2014"></a>
 
@@ -199,26 +200,28 @@ Against the $133,000,000 league cap the working difference is **$11,117,504**, b
 | Player | 2014 charge | Treatment |
 |---|---:|---|
 | Tyler Bray | $51,675 | Three remaining $17,225 allocations after the August 2013 waiver; separate from the new futures deal |
-| Uche Nwaneri | $2,189,000 | Pre-June 1 trade to Arizona, March 20, 2014 (Entry 99): the 2014 and 2015 bonus allocations of $1,094,500 accelerate |
-| Tyson Alualu | $1,542,500 | Pre-June 1 trade to Houston, March 24, 2014 (Entry 102): the final original bonus allocation stays with Jacksonville |
-| Jason Babin | $0 | Trade to Miami, March 24, 2014 (Entry 102): no Jacksonville proration on the claimed Philadelphia contract |
+| Uche Nwaneri | $2,189,000 | Pre-June 1 trade to Arizona, March 20, 2014: the 2014 and 2015 bonus allocations of $1,094,500 accelerate |
+| Tyson Alualu | $1,542,500 | Pre-June 1 trade to Houston, March 24, 2014: the final original bonus allocation stays with Jacksonville |
+| Cecil Shorts | $110,845 | Pre-June 1 trade to Indianapolis, March 31, 2014: his final original bonus allocation stays with Jacksonville |
+| Justin Blackmon | $5,951,636 | Pre-June 1 trade to Indianapolis, March 31, 2014: the remaining $2,975,818 allocations for 2014 and 2015 accelerate; his 2015 charge leaves |
+| Jason Babin | $0 | Trade to Miami, March 24, 2014: no Jacksonville proration on the claimed Philadelphia contract |
 | Brandon Marshall | $0 | Original rookie bonus accelerated following a 2012 waiver; replacement deal modeled without a new bonus |
 | Austen Lane | $0 | Original four-year 2010 deal ended in 2013 |
 | Isaiah Stanback | $0 | Replacement minimum contract modeled without a signing bonus |
 
-Entry 91 closes these former carry-forward questions. March 2013 releases and the Gabbert trade remain in their original pre-June-1 2013 accounting. No 2014 transaction is inferred.
+The adopted completion terms close these former carry-forward questions. March 2013 releases and the Gabbert trade remain in their original pre-June-1 2013 accounting. No 2014 transaction is inferred.
 
 <a id="5d-2013-carryover"></a>
 
 ### 2013 carryover
 
-**Unresolved.** Jacksonville carried unused 2013 room into 2014 (Confirmed, verifications section 1), but the amount is not certified. The earlier memo checklist used **$5.4M to $6.6M**, with a conditional zero if no election had been filed. That was a planning alternative, not a current finding of zero carryover. The range spans the 2013 worksheet's September 4 ranges (about $6.2M to $6.6M before weekly practice-squad charges, about $5.4M to $5.8M if the opening eight stayed all 17 weeks). The real Jaguars' reported figure describes the real club; it is a comparator only and is not used. February 28 published the league cap (5e), not a certified Jacksonville carryover.
+Jacksonville carried unused 2013 room into 2014 (Confirmed, verifications section 1). The branch amount is estimated at about $5.33M to $6.00M: the practice squad of eight stayed all 17 weeks, so the September 2013 range drops to $5.33M to $5.71M, plus up to about $0.29M if Blackmon's four suspended game checks were credited. The full calculation is in the [cap worksheet](current_cap_worksheet.md#2013-rollover). It is a working estimate, not certified room, and the real Jaguars' reported figure is not used.
 
 <a id="5e-2014-league-cap"></a>
 
 ### 2014 league cap
 
-**$133,000,000 per club**, published February 28, 2014 (`library/2014_league_calendar_and_financial_rules.md` F1, Confirmed); clubs must be compliant by 4 p.m. ET March 11. Jacksonville's **adjusted 2014 cap and cap space remain Unresolved**: the carryover (5d) is not certified, no per-club 2014 adjusted-cap table was found for February 28, and club carryover, incentive accounting and other club adjustments still need final reconciliation (5b). As context only, the February 28 release relayed an average carryover of $6.1M among clubs that elected one (Buffalo Bills release citing NFLPA communications; single source); it is not Jacksonville's figure. The [preparation worksheet](current_cap_worksheet.md) stays UNRECONCILED.
+$133,000,000 per club, published February 28, 2014 (Confirmed in the [2014 financial rules library](../../../library/2014_league_calendar_and_financial_rules.md)); clubs must be compliant by 4 p.m. ET March 11. Jacksonville's adjusted 2014 cap and cap space remain Unresolved: the 2013 carryover is not certified, no per-club 2014 adjusted-cap table was found for February 28, and club carryover, incentive accounting and other club adjustments still need final reconciliation. As context only, the February 28 release relayed an average carryover of $6.1M among clubs that elected one (Buffalo Bills release citing NFLPA communications; single source); it is not Jacksonville's figure. The [preparation worksheet](current_cap_worksheet.md) stays UNRECONCILED.
 
 <a id="5f-tags-and-tenders"></a>
 
@@ -226,9 +229,9 @@ Entry 91 closes these former carry-forward questions. March 2013 releases and th
 
 | Item | Player | Deadline | Status |
 |---|---|---|---|
-| Non-exclusive franchise tag | Eugene Monroe | Designated February 18, 2014 | Replaced by his five-year contract on March 11 (Entry 95); the tender charge is removed once and no second designation opens |
-| Lowest RFA tender | Cameron Bradfield | March 11, 4 p.m. ET | **Made** (Entry 94): **$1,431,000**; not signed |
-| ERFA tenders | Toney Clemons, Austin Pasztor ($570,000 each); Mike Brown ($495,000) | March 11, 4 p.m. ET | **Made** (Entry 94); not signed |
+| Non-exclusive franchise tag | Eugene Monroe | Designated February 18, 2014 | Replaced by his five-year contract on March 11; the tender charge is removed once and no second designation opens |
+| Lowest RFA tender | Cameron Bradfield | March 11, 4 p.m. ET | Made: $1,431,000; not signed |
+| ERFA tenders | Toney Clemons, Austin Pasztor ($570,000 each); Mike Brown ($495,000) | March 11, 4 p.m. ET | Made; not signed |
 | No tender | Allen Reisner, Kevin Rutland | March 11, 4 p.m. ET | Not tendered; unrestricted free agents |
 | Existing contract | Jonathan Grimes | Through 2014 | $570,000 salary; no tender required |
 
@@ -238,17 +241,17 @@ Entry 91 closes these former carry-forward questions. March 2013 releases and th
 
 This review distinguishes corrected display errors from financial questions that still lack a verified answer. Historical source transcriptions remain available; a corrected current view does not rewrite an executed contract.
 
-1. **Nwaneri's final year: corrected.** The current register and this table use 2015, following the verifications and Entry 86. Entry 87 removed the register's older disputed-year wording. The initial 2013 sheet remains the historical transcription.
-2. **Blackmon's 2013 split: corrected.** Entry 87 corrected the regular-season worksheet to acknowledge the initial sheet's $1,231,455 base and $2,975,818 proration. Entry 90 recovers the original base and deferred bonus structure and carries the original schedule forward as a planning charge; the branch forfeiture credit remains unresolved.
-3. **Jones-Drew's term.** The 2013 sheet lists his 2009 deal as 4 years; the register corrected the length (2012 reporting of five years with 2013 remaining). The final year 2013 is not in dispute.
-4. **Mosley's value.** The $7.5M base value and incentive-inclusive ceiling up to $10M describe different measures. The exact annual salary and incentive schedule remain open; section 5b includes a disclosed allocation estimate.
-5. **Wilson and Jonathan Grimes: completed.** Entry 91 confirms Wilson’s original futures signing and adopts final-year 2014 schedules of $730,000 and $570,000. Both remain under contract; the earlier unresolved-term and conditional-tender language is superseded.
-6. **C.J. Wilson's 2013 cap arithmetic: corrected.** The register separates the reported $642,590 from the calculated $642,588.50 ($630,000 plus one quarter of $50,354). The $1.50 discrepancy remains a source/rounding difference, not an exact equality. Jacksonville carried the $630,000 base; Green Bay retained the bonus proration.
-7. **Bray's rookie contract: corrected.** The draftees file retains the original $512,225 scheduled 2014 rookie charge as history and explicitly marks it superseded by the August 31 waiver and later futures contract. The current table uses the $420,000 reserve/future deal, effective March 11.
-8. **Memo savings against the 2013 proration.** Stone's memo projects package G (Allen) as saving his full $1.98M and package F2 (Rackley) as saving $0.77M, but the 2013 sheet shows annual proration through 2014 for both ($416,666 and $154,868), which would remain as dead money on a release or trade. The verifications already treat the memo savings as planning claims pending clause-level terms.
+1. Nwaneri's final year (corrected). The register and this table used 2015, following the pre-tag-window verifications; the register's older disputed-year wording was removed. The initial 2013 sheet remains the historical transcription. Nwaneri has since been traded.
+2. Blackmon's 2013 split (corrected). The regular-season worksheet now acknowledges the initial sheet's $1,231,455 base and $2,975,818 proration. The original-contract research recovers the original base and deferred bonus structure and carries the original schedule forward as a planning charge; the branch forfeiture credit remains unresolved. Blackmon has since been traded, and his remaining bonus allocation is 2014 dead money.
+3. Jones-Drew's earlier term. The 2013 sheet lists his 2009 deal as 4 years; the register corrected the length (2012 reporting of five years with 2013 remaining). The final year 2013 was not in dispute. His March 28, 2014 re-signing replaces that deal.
+4. Mosley's value. The $7.5M base value and incentive-inclusive ceiling up to $10M describe different measures. The exact annual salary and incentive schedule remain open; the working charges include a disclosed allocation estimate.
+5. John Parker Wilson and Jonathan Grimes (completed). The adopted completion confirms Wilson's original futures signing and fixes final-year 2014 schedules of $730,000 and $570,000. Both remain under contract.
+6. C.J. Wilson's 2013 cap arithmetic (corrected). The register separates the reported $642,590 from the calculated $642,588.50 ($630,000 plus one quarter of $50,354). The $1.50 discrepancy remains a source or rounding difference, not an exact equality. Jacksonville carried the $630,000 base; Green Bay retained the bonus proration.
+7. Bray's rookie contract (corrected). The draftees file retains the original $512,225 scheduled 2014 rookie charge as history and marks it superseded by the August 31 waiver and later futures contract. The current table uses the $420,000 reserve/future deal, effective March 11.
+8. Memo savings against the 2013 proration. Stone's memo projects the Allen trade with Arizona as saving his full $1.98M and the Rackley-or-Brewster trade as saving $0.77M, but the 2013 sheet shows annual proration through 2014 for both ($416,666 and $154,868), which would remain as dead money on a release or trade. The verifications treat the memo savings as planning claims pending clause-level terms.
 
 <a id="7-earlier-planning-leads-and-current-estimates"></a>
 
 ## Earlier planning leads and current estimates
 
-The earlier memo supplied useful contract leads. Entry 90 researches and carries them into the rows above where supported, with explicit estimates where annual details or branch-dependent adjustments remain incomplete. Use the original-contract research and current table for financial planning; the memo remains the record of Stone's earlier recommendations. No recommended release, trade, tender or extension is executed by this correction.
+The earlier memo supplied useful contract leads. The original-contract research carries them into the rows above where supported, with explicit estimates where annual details or branch-dependent adjustments remain incomplete. Use that research and this table for financial planning; the memo remains the record of Stone's earlier recommendations and executes nothing.
