@@ -68,6 +68,35 @@ domains.
 
 There is no human-facing overall value and no generic awareness attribute.
 
+## Whole-player context gate
+
+Before any hidden trait change can be resolved, the runtime requires a complete
+`PlayerDevelopmentContext`. It must explicitly consider all 15 categories
+below for that player:
+
+1. physical profile/development or decline;
+2. technical state/development;
+3. mental processing;
+4. scheme and playbook familiarity;
+5. position-specific skill;
+6. previous-season experience gained;
+7. consistency;
+8. role;
+9. conditioning and body composition;
+10. age context;
+11. coaching influence;
+12. previous-season performance;
+13. playing time and opportunity;
+14. injuries and physical limitations;
+15. existing strengths and weaknesses.
+
+A category may be `unknown`, but it may not be omitted. Any supported
+(non-unknown) assessment needs evidence identifiers. This makes missing
+information explicit instead of silently replacing it with a generic average.
+A trait-specific `DevelopmentCase` then references that whole-player context,
+so the random transition cannot be resolved from age, draft status or one
+highlight statistic in isolation.
+
 ## Evidence before change
 
 Every player begins with an evidence packet. The packet is position-specific,
