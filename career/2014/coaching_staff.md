@@ -25,7 +25,7 @@ This file is the **current operating staff register**. Carried from the March 24
 | Defense | Romeo Crennel | **Romeo Crennel calls the defense** | Final team principles, coordinator supervision, major situational/game-management decisions |
 | Special teams | Alan Lowry (2013 season); vacant January 12 to February 11, 2014; **Mike Westhoff from February 11, 2014** | **Westhoff directs the kicking game** (Entry 84). Lowry directed it in 2013; Stone directed it on an interim basis from January 12 to February 11, 2014 (Entry 75) | Final team-level priorities, roster/use decisions within Stone's authority, consequential game management |
 
-The delegation above is real delegation. Crennel remains the defensive caller. Lowry directed special teams during his Jacksonville appointment; Stone's interim assignment ran from the recorded January 12 vacancy to Westhoff's February 11 appointment and was not a retroactive takeover of Lowry's work.
+The table records the current working arrangement. Stone can call, delegate or take back any phase at any time; no title, contract change or separate permission is needed. Continue the arrangement until he changes it, without making it a recurring planning question. Lowry's and Stone's earlier special-teams periods remain historical appointments.
 
 ## Executed assistant contract register
 
@@ -147,7 +147,7 @@ By January 2013, Tice had:
 - worked on Jacksonville's offensive staff earlier in his coaching career;
 - coached Chicago's offensive line before becoming the Bears' offensive coordinator for 2012.
 
-The appointment therefore buys unusually senior offensive and head-coaching experience without pretending Tice is the game-day play-caller in Stone's offense.
+The appointment brings senior offensive and head-coaching experience to the preparation and teaching work.
 
 #### Primary responsibilities
 
@@ -164,7 +164,7 @@ Tice owns the **offensive operating process** beneath Stone:
 - practice-script recommendations;
 - game-plan quality control before Stone finalizes the call sheet.
 
-Tice may recommend calls and sequences during games. Stone makes the final offensive call unless Stone explicitly delegates a period or emergency succession later.
+Tice supplies game-day recommendations and carries any responsibilities Stone delegates to him.
 
 ### Jeremy Bates — Quarterbacks Coach
 
@@ -191,7 +191,7 @@ His hiring does **not** mean Jacksonville has already decided which quarterback 
 - film cutups and weekly opponent QB plan;
 - written football evaluations of the QB room for Stone.
 
-Bates coaches the quarterbacks. Stone retains play-calling and Caldwell retains final acquisition authority.
+Bates coaches the quarterbacks. Caldwell retains final acquisition authority.
 
 ### George Yarno — Offensive Line / Run-Game Coach
 
@@ -514,13 +514,14 @@ Any later:
 - raise;
 - title change;
 - coordinator promotion/demotion;
-- play-calling transfer;
 - resignation;
 - firing;
 - outside interview permission;
 - contract buyout or settlement,
 
 must be recorded as a dated staff transaction.
+
+An ordinary change in who calls a phase belongs in the relevant practice or game record when it occurs; it is not a staff transaction or contract change.
 
 The values in this file remain the active assistant contract register until superseded by such a transaction.
 

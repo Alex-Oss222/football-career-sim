@@ -31,7 +31,7 @@ This is the carry-forward authorized in Stone's February 2 memo section 6 and th
 - Cousins remains the established QB1. The quarterback competition is for QB2/QB3 among players actually controlled when the phase opens. Henne's future participation depends on his actual contract or other lawful participation basis; Bray signed a reserve/future contract effective March 11, which does not award a reserve role. Cousins's priorities are ball security, protection communication and separating decision errors from technique or protection failures.
 - Jacksonville has a returning head coach. No additional new-head-coach voluntary veteran minicamp is authorized. Older references to that privilege in the inherited readiness document do not apply in 2014.
 - Use the actual roster, medical instructions and teaching evidence at execution. Proposed signings, draft selections and departures are not completed transactions. Verner and Talib are signed; drafted linemen enter the plan only after an actual selection and eligibility check; Allen cannot be relied on for work after his scheduled April 22 retirement.
-- Crennel calls the defense; Stone calls the offense. The player who relays defensive calls is a separate job. Mike Westhoff runs special teams following his February 11 appointment (Entry 84). Current roles stand pending a separately authorized change.
+- Tice coordinates offensive preparation, Crennel defense and Westhoff special teams. Follow Stone's latest direction on calling or delegating any phase; this is not a recurring approval question. Player-relay assignments remain distinct from unit communication.
 - Medical projections are review dates, not clearance. Voluntary attendance, rehabilitation, private support needs and lawful absence never become hidden role grades. No fixed rep percentages or touch quotas determine roles.
 - The 2014 calendar controls dates and legal work. The program schedule must be filed by the agreed league date, no later than March 31 for an April 21 start, with advance notice of changes. The user has selected the historical Jacksonville dates. Preserve the filing receipt separately; public publication is not proof of submission. Verify applicable phase rules before executing. Training camp also waits for its schedule/reporting gates.
 
@@ -48,9 +48,9 @@ Use Explain → Show → Walk → Rep → Correct → Rep again → Retain → A
 
 Read the [training index](../README.md), [room work plans](../training/unit_plans.md), [player queue](../film/player_queue.md) and the relevant [individual plan](../player_development/README.md) before preparing the phase. Use the [session template](../training/session_template.md), [film packet](../film/packet_template.md) and [delivery log](../film/delivery_log.md) to close the loop from assigned job to a later independent retest.
 
-Stone authorized individual feedback and Cousins progression, shared QB-center identification teaching, and continuing individual development. Other marked proposals remain pending. Start Cousins from his [2013 evidence assessment](../player_development/kirk_cousins.md), preserving demonstrated operation and targeting the unresolved job. Do not reset him to a beginner plan or infer broad mastery from results alone.
+Stone adopted the [second-year install direction](../phase_plan_decisions.md#install-scope-continue-into-year-two): review established work, integrate rookies, protect unfinished individual work and teach new active-book material, including Boot Flood. Individual feedback, Cousins progression and shared QB-center teaching continue. Other marked proposals remain pending. Start Cousins from his [2013 evidence assessment](../player_development/kirk_cousins.md), preserving demonstrated operation and targeting the unresolved job. Do not reset him to a beginner plan or infer broad mastery from results alone.
 
-All work remains within this phase’s calendar, contact, medical and voluntary-participation limits. The actual phase output owns new practice evidence; the delivery log owns actual distribution. A prepared packet is not a delivered tape. No historic January delivery is backdated. New role assignments and Boot Flood’s return require their separate decisions.
+All work remains within this phase’s calendar, contact, medical and voluntary-participation limits. The actual phase output owns new practice evidence; the delivery log owns actual distribution. A prepared packet is not a delivered tape. No historic January delivery is backdated. Boot Flood's return to teaching and practice is approved, within this phase's legal work. Actual role appointments and game-menu choices follow the work.
 
 ## Player playbook access and evidence rule
 
@@ -173,7 +173,7 @@ These items answer the exit-interview questions without inventing Crennel's prom
 
 Keep Daryl Smith as the on-field communication lead. Recommend Posluszny as the first backup only after medical clearance and a lawful retention check. If he is unavailable, have Crennel and Bush evaluate Stanford, then Moore, for the reserve relay job during permitted work. That order is a proposed teaching sequence, not a depth-chart award. Allen is not a durable successor because the trade instruction and April 22 retirement remove him from the post-April plan.
 
-Crennel's proposal should name the primary and backup communicator for each actual package, the front/coverage echo, the handoff when the lead leaves, and the sideline fallback if neither designated player is on the field. First explain and walk the handoff within Phase Two limits; stress a changed look and missing lead in OTAs. Record whether the call arrived, was repeated accurately and produced the correct alignment. Separate a late staff call from a player's relay error. Do not make two players competing authorities on the same snap.
+Practice with the actual relay and replacement in each package, within Phase Two's unopposed limits. The wider question is whether the defense identifies the look, communicates adjustments and executes together, including when the usual lead is absent. Use the [unit assessment](../training/unit_plans.md#defense-as-a-unit), rather than treating a correctly repeated call as proof of good team communication. The backup appointment remains a separate role decision.
 
 ### injured-player learning and return
 
@@ -193,7 +193,7 @@ The January 31 deliveries remain **unverified/open**, not delivered and not prov
 | Pleasant, overseen by Crennel | Defensive-line individual and long-run cause review | Individual classified reps, including the staff call where relevant |
 | Oden, overseen by Crennel | Secondary individual corrections and communication | Same receipt, without importing unreliable 2013 return/coverage credit |
 | Yarno and Tice | Offensive-line cutups and Brewster's unclosed protection-call feedback | Assignment-based film review, not the defective 2013 sacks-allowed allocation |
-| Bates with Skalaski, under Tice | Cousins's ball-security/protection review and Boot Flood analysis | Cause-separated film; the Boot Flood decision belongs in the OTA proposal |
+| Bates with Skalaski, under Tice | Cousins's ball-security/protection review and Boot Flood analysis | Review alongside the approved Boot Flood teaching and practice; carry actual observations into OTAs |
 | Zernhelt under Tice | Kelce's unreturned blocking/release feedback | Specific taught assignment and observed rep |
 | Mike Westhoff (special teams coordinator from February 11, Entry 84) | Specialist operation and coverage/call separation | Separate snap, hold, punt/kick, coverage and situational instruction |
 
