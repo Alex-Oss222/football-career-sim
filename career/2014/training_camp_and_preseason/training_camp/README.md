@@ -2,7 +2,7 @@
 
 [Camp and preseason](../README.md)
 
-Not started. Use the calendar and staff plan for reporting, acclimation and permitted contact.
+In progress through July 29, 2014: reports July 21 and 24, practices July 25–29 without full pads; first full pads July 30. Use the calendar and staff plan for reporting, acclimation and permitted contact.
 
 | Open | What you will find |
 |---|---|

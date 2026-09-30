@@ -1,6 +1,6 @@
 # Jacksonville 2014 position and shared-job review
 
-**Prepared; camp not started.** Current roles remain in the controlled-roster/depth records referenced by [the operating baseline](../../supporting_records/operating_baseline.md). This page awards no position and assumes no free-agent signing or draft selection. [Camp output](../training_camp/training_report.md) owns observations; [roster decisions](../roster_cuts/roster_decisions.md) owns actual decisions.
+**Camp open; no job decided.** Observations from the first five practices (July 25–29, without full pads) are in the [camp record](../training_camp/training_report.md#camp-questions-position-at-july-29); none answers a question below before pads. Current roles remain in the controlled-roster/depth records referenced by [the operating baseline](../../supporting_records/operating_baseline.md). This page awards no position and assumes no free-agent signing or draft selection. [Camp output](../training_camp/training_report.md) owns observations; [roster decisions](../roster_cuts/roster_decisions.md) owns actual decisions.
 
 | Question carried from the adopted plans | Evidence needed when eligible work occurs | Decision boundary |
 |---|---|---|
