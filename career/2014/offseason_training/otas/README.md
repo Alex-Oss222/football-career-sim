@@ -10,6 +10,8 @@ Complete: May 27–29; June 2, 3, 5; June 9, 10, 12, 13. The June 13 report carr
 | [Training report](training_report.md) | What actually occurred: sessions, participants, observations, decisions and the handoff. |
 | [Player assessments](player_assessments.md) | The supported player and unit assessment drawn from the report, with unresolved questions. |
 
+Report format: [OTAs](../../../../foundation/templates/offseason_training/otas_report.md). The report follows the offense, defense, special teams and coaching corrections; the detailed record remains expandable below it.
+
 <!-- folder-files -->
 ## Files in this folder
 

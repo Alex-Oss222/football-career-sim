@@ -1,6 +1,6 @@
 # Jacksonville 2014 Rookie minicamp: evidence summary
 
-<!-- sim-meta: {"event_entry": 111, "kind": "evidence_summary", "source": "career/2014/offseason_training/rookie_minicamp/training_report.md", "source_sha256": "e2ebd5a1165838b9cb625f90f071973e7e63e21d8df45de441cdf024a680739c", "status": "COMPLETE", "through": "2014-05-17"} -->
+<!-- sim-meta: {"event_entry": 111, "kind": "evidence_summary", "source": "career/2014/offseason_training/rookie_minicamp/training_report.md", "source_sha256": "59da1014e8fd870f09e13571e4475fa0ba6fce46fa9408f9ea375aa54856e1b5", "status": "COMPLETE", "through": "2014-05-17"} -->
 
 **COMPLETE; observations from May 16 and 17, 2014 only.** The [execution record](training_report.md) owns the evidence; the [plan](staff_plan.md) is intended work. Two non-contact days with 26 signed rookies and no tryout or first-year invitee cannot establish blocking, coverage, timing against an opponent or a roster place.
 

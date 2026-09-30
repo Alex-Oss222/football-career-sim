@@ -10,6 +10,8 @@ Complete. The two-day camp is recorded below; no May 18 practice is implied.
 | [Training report](training_report.md) | What actually occurred: sessions, participants, observations, decisions and the handoff. |
 | [Player assessments](player_assessments.md) | The supported player and unit assessment drawn from the report, with unresolved questions. |
 
+Report format: [Rookie minicamp](../../../../foundation/templates/offseason_training/rookie_minicamp_report.md). The report opens with the football work; its expandable session record retains the individual notes for all participants.
+
 <!-- folder-files -->
 ## Files in this folder
 

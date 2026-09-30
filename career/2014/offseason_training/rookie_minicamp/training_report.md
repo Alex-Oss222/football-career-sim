@@ -1,6 +1,39 @@
-# Jacksonville 2014 Rookie minicamp: execution record
+# Jacksonville 2014 | Rookie minicamp training report
 
 <!-- sim-meta: {"event_entry": 111, "kind": "phase_output", "status": "COMPLETE", "through": "2014-05-17"} -->
+
+**May 16 and 17, 2014.** The two days gave the staff an initial look at how the 26 signed rookies learned their assignments. Linsley's protection calls, Telvin Smith's fit communication and Phillips's work between the secondary and coverage units were the strongest complete pieces of teaching evidence. Several of the useful corrections were less conspicuous: getting the right split, keeping the launch point and making sure two adjacent defenders understood the same fit.
+
+This camp was unopposed and non-contact. The nine draft selections and 17 undrafted signings worked without veterans or tryout players added to the drills. Medical staff communicated no participation restriction; Lucas's foot remained a review item.
+
+## First offensive install
+
+Friday began with the huddle, cadence, personnel and formation language, then the jobs within Inside Zone, Power and Stick. Receivers and tight ends learned the X, Z, H, Y, R and F labels and the Normal, Reduced, Tight, Wide and Stack splits. Saturday kept the concept and changed a formation detail to check whether the player could still find his assignment.
+
+The first split work exposed a problem with the explanation. Receivers and tight ends were taking different alignments for Reduced and Tight. Several had already asked to see the splits drawn against a defender. Drake and Zernhelt used that presentation and walked the alignments again before judging the next work. Hurns then had an individual error when a formation change moved him from X to Z. He corrected the assignment and kept it on Saturday when the modifier changed again. Adams kept his Stick landmark after the shared split teaching.
+
+Shaw could run the huddle and state the first Stick progression and pressure answer. His launch point drifted when the carded protection point changed. Bates walked the footwork again, and Shaw kept the correction against Saturday's changed card. Linsley identified the point and used the combination calls with him; his first snap-to-set transition was late, but Saturday's changed front did not bring the timing problem back.
+
+Yarno's line work remained specific. Bitonio corrected rising pad level during Power footwork. Turner needed a second walkthrough of the ME/YOU twist communication and got it right Saturday. Norwell carried his hand-placement correction to the other guard spot. Lucas corrected his set landmark, but there was not time for his Saturday retest. Brate learned the attached and wing alignments, Jensen repeated the combination communication correctly after another walk, and Hoskins handled the H and F move alignments. Contact blocking remains untested for all of them.
+
+## First defensive install
+
+Crennel's group started with the Under front, a primary run fit and coverage job, Cover 1 and Cover 3 leverage, contain and pursuit. Pleasant and Bush found that the ends and linebackers disagreed about the C-gap when SPILL changed to BOX. They restated the shared rule before Saturday's motion work. The rookies needed one answer from the coaches before they could be expected to give one another the right answer.
+
+Donald explained his gap and the call's purpose, then corrected a rush lane that had widened during group work. Telvin Smith communicated his fit with the adjacent end and carried a pursuit-angle correction into the changed motion picture. Christian Jones was late reaching a coverage landmark Friday and reached it correctly on Saturday's repeat. Phillips took his corrected approach angle from a tackling-position drill into coverage-unit lane work without a reminder. Thomas had only a small sample at safety and nickel; there was no basis for deciding where he should play from these two days.
+
+## Special teams and the next practice
+
+Westhoff taught alignment, lane responsibility, release and protection assignments, ball security and substitution procedure. Gabriel handled the assigned return-path and communication work; no returner was designated. Kreiter snapped consistently into a net and to a coach. There was no eligible punter or holder in this group, so he could not establish operation timing with the veteran specialists here.
+
+The rookies join Phase Two on May 19 with a written teaching note for each player. Lucas needs the delayed set-landmark check. Shaw and the centers need more work identifying the point together. Hurns needs the same assignment from a different label, and the defensive group needs to keep its fit and coverage calls when the presentation changes. Kreiter can begin working with Anger and Scobee.
+
+Bitonio, Turner and Adams carry the rep starting points Stone already assigned on May 12. This camp added evidence about how to coach them; it did not decide those competitions or any other roster place. The complete individual notes for all 26 players remain in the [teaching record](#player-teaching-record).
+
+[Staff plan](staff_plan.md) · [Player assessments](player_assessments.md) · [Report template](../../../../foundation/templates/offseason_training/rookie_minicamp_report.md)
+
+<details>
+<summary>Detailed session record: all 26 players, onboarding and continuity</summary>
 
 **COMPLETE.** The historical two-day camp ran Friday, May 16 and Saturday, May 17, 2014, with the published field window of 1:10 to 3:15 p.m. each day and no May 18 practice. [Plan](staff_plan.md) owns intended work and is unchanged; [evidence summary](player_assessments.md) summarizes only what is below. Event record: [2014 ledger](../../ledger.md), Entry 111. The offensive and defensive Iteration I books were the only books in the building.
 
@@ -92,3 +125,5 @@ Held after Saturday's work as the April 18 calendar sets it. Invitations went to
 ## Phase close and handoff
 
 Rookie minicamp closed May 17. The 26 rookies join Phase Two on May 19 under the newcomer rule, primary job first, with the retests named above carried to that week. No depth chart, roster place, package share or permanent role was decided here; Bitonio, Turner and Adams work at rep starting points set by Stone's May 12 instruction. Hurst's medical hold is unchanged. The four unsigned tenders were not part of this event.
+
+</details>

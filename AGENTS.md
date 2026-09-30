@@ -96,6 +96,8 @@ For any task that advances a season clock, opens/closes a camp or practice phase
 
 ### Offseason onboarding and phase-plan execution rule
 
+**Training report format, user instruction September 30, 2026.** For Phase One, Phase Two, rookie minicamp, OTAs and mandatory minicamp, read [the training-report index](foundation/templates/offseason_training/README.md) and its matching template before writing the report in chat or the phase output. Lead with actual football teaching and performance: formations, assignments, running the offense/defense, coaching corrections and what held later. These phase-specific versions of the offseason format replace the generic finance/draft/job-status layout for training reports. The four completed 2014 spring reports now have a readable football account followed by an expandable original session record; use that detail for evidence and follow-up questions, not as the default chat response. A request to review or rewrite a closed report does not authorize new practices, results, roles or time advance. Research and rationale: [offseason training reports](docs/offseason_training_reports.md).
+
 For any task that **starts, advances, runs, simulates, or closes** Jacksonville's rookie minicamp, offseason program/OTAs, a separately scheduled new-head-coach voluntary veteran minicamp, mandatory veteran minicamp, training camp, or the preseason work embedded in training camp, the durable development plans are mandatory inputs. Do not improvise a generic camp because the user said "advance to camp."
 
 **Read these common files before resolving the phase:**

@@ -1,6 +1,6 @@
 # Jacksonville 2014 OTAs, Phase Three: evidence summary
 
-<!-- sim-meta: {"event_entry": 112, "kind": "evidence_summary", "source": "career/2014/offseason_training/otas/training_report.md", "source_sha256": "b643d1f92811b4324a024b159e13dc94cad9707f7e4a913ccbe84b8c16ef2cb8", "status": "COMPLETE", "through": "2014-06-13"} -->
+<!-- sim-meta: {"event_entry": 112, "kind": "evidence_summary", "source": "career/2014/offseason_training/otas/training_report.md", "source_sha256": "affa792bd359890defe825d2e61b5db5ef6e40158f2f6a3019e0dc5877d45550", "status": "COMPLETE", "through": "2014-06-13"} -->
 
 **COMPLETE through June 13, 2014 (ten OTA days, May 27 to June 13; handoff June 13).** The [execution record](training_report.md) owns the evidence; the [plan](staff_plan.md) holds intended work. This was the first opposed work of 2014, all of it without contact: it can support recognition, communication, timing and spacing against an opposing look and cannot establish blocking, a won rush, a finished tackle or a physical matchup.
 

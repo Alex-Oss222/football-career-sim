@@ -10,6 +10,8 @@ Complete. Phase One ran April 21–May 2; Phase Two ran May 5–23.
 | [Training report](training_report.md) | What actually occurred: sessions, participants, observations, decisions and the handoff. |
 | [Player assessments](player_assessments.md) | The supported player and unit assessment drawn from the report, with unresolved questions. |
 
+Report formats: [Phase One](../../../../foundation/templates/offseason_training/phase_one_report.md) and [Phase Two](../../../../foundation/templates/offseason_training/phase_two_report.md). The shared report gives each stage its own account, with the detailed session record expandable below it.
+
 <!-- folder-files -->
 ## Files in this folder
 

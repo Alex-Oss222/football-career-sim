@@ -1,6 +1,51 @@
-# Jacksonville 2014 OTAs, Phase Three: execution record
+# Jacksonville 2014 | OTA training report
 
 <!-- sim-meta: {"event_entry": 112, "kind": "phase_output", "status": "COMPLETE", "through": "2014-06-13"} -->
+
+**May 27 to June 13, 2014, ten practices.** Jacksonville could carry its spring teaching into team periods, but the defense changing late still gave the protection trouble. The receivers generally kept their assignments as the formations changed. On defense, the useful progress was in passing receivers between defenders and getting the call through the huddle when Daryl Smith was not delivering it.
+
+These were non-contact practices, with 7-on-7, 9-on-7 and 11-on-11 work. The staff could see spacing, reads and communication against the other unit. The guard and edge competitions still lacked the blocking and pass-rush evidence they need.
+
+## Offense against a defense
+
+The first block put Power, Counter, Inside Zone, Stick, Drive, the taught Mesh work and Boot Flood across from Crennel's fronts and coverages. Boot Flood's free-edge teaching held for Cousins, Henne and John Parker Wilson: each used the taught flat or throwaway answer when the defender was outside the launch path. The problem on May 28 was elsewhere. From Wing, a walked-up defender changed Lewis's release path, and the deep and intermediate routes lost their timing. Zernhelt walked the release again. It held the next day and after the break on June 2.
+
+The protection calls mostly carried over from Phase Two. Cousins, Brewster and the backs identified the point against the double A-gap look, and the guards repeated the calls they needed. When the front changed late on May 28, Turner did not echo the adjustment until the cadence had started. Yarno's group rehearsed point, echo and confirmation together. Turner handled the change without a prompt the next day and again June 2.
+
+The issue was not finished. During two-minute work on June 9, the HALF slide went the wrong way against a late overload. An unblocked rusher reached the launch point and the rep was whistled dead as a sack, without contact. Cousins handled the next clock procedure correctly. The line handled the later protection check on June 12, but minicamp still needs to test that answer without help from the sideline drawing the linemen requested.
+
+The offense added Counter Boot, Sprint Flood and Y-Cross in the second block. On the first June 5 team rep of Y-Cross from 12 personnel, the cross and dig arrived at the same depth. Bates and Drake retaught the stagger between the routes. It held in the later work on June 9 and 12. That is a useful improvement in running the play, rather than simply remembering its name.
+
+Cousins also worked with the first answer taken away. On June 10 he reached the second progression on time in three of four recorded reps and held the ball on the other; the record does not establish why. Brate took the Y assignment on Boot Flood with Lewis and Kelce out of the drill and kept the release and spacing. Henne needed the situation restated once in the June 9 work.
+
+## Defense against an offense
+
+The main sub-package work used Nickel Even with Cover 1 and the Robber-Rat family, alongside Cover 3 and Quarters from the same starting looks. Players named the deep help, underneath help and matchups before the snap, then dealt with motion and releases.
+
+The bunch rule taught in Phase Two held on May 27. A different release exposed a different problem the next day: Poyer and Moore both went with the same crosser from a stack, leaving the flat open. Oden and Bush retaught the exchange. The pair handled it correctly May 29, then again June 2 and 12. The later repetitions matter because the correction survived time away from the drill.
+
+The communication also worked beyond the first caller. Posluszny delivered the call with Smith out of the huddle. Stanford did the same, although his TRAVEL hand signal came late against fast motion on May 29. On June 10, with both Smith and Posluszny out of his group, Stanford got the call, check and motion signal out on time.
+
+Crennel introduced a five-man pressure from Nickel Even in the second block. On June 5 the offense's quick SCAT answer reached the flat. That was the space the call conceded, and the defense identified it correctly. It was not another blown exchange. Mincey and Branch both handled contain and the PEEL responsibility when the back released; this setting did not establish which was the better rusher.
+
+## Special teams and players to follow
+
+Westhoff recorded clean punt operations with Cain and Kreiter snapping to Anger against a non-contact opposing look from May 28. The work progressed through substitutions, backed-up and end-game instructions. On June 12 Anger put his directional punts to the assigned side. The snapper competition and coverage finish still need camp work.
+
+Nicks kept the Stick and Drive landmarks against changed leverage. Adams adjusted his release plan after losing the path to Talib's leverage; by the last block he was finding it more often against Harris and Bouye, though Talib disrupted it again June 12. Hawkins handled his slot assignments and dropped one Stick throw on June 9. Thielen repeatedly separated at the Drive landmark. Those are specific receiver observations, with contact releases still ahead.
+
+Donald timed his first step into the gap well in 9-on-7, but the guards were not allowed to finish a block against him. Butler corrected a late off-leverage transition and kept the correction on June 12. Lucas kept his set landmark against the opposing look. The other reserve opportunities are recorded below; the staff did not invent a standout or a failure for every participant.
+
+## What minicamp needs to answer
+
+The June 17 to 19 agenda carries the late-change protection, Y-Cross from another personnel group, the five-man pressure against a changed protection, the backup defensive callers and situational punt instructions. Cousins asked to review the June 9 overload from the end-zone angle; Bates has that for the first meeting. Each signed player received his written OTA note at the June 13 handoff.
+
+Stone's five starting points and their competitions remain in place. No injury or new participation restriction was communicated; Lucas's foot remains under review. The four unsigned tenders did no program work. There is no new role decision required before minicamp.
+
+[Staff plan](staff_plan.md) · [Player assessments](player_assessments.md) · [Report template](../../../../foundation/templates/offseason_training/otas_report.md)
+
+<details>
+<summary>Detailed session record: each OTA block, individual evidence and continuity</summary>
 
 **COMPLETE through June 13, 2014.** The ten OTA days ran May 27, 28 and 29 (block 1), June 2, 3 and 5 (block 2) and June 9, 10, 12 and 13 (block 3), with the phase handoff written June 13. [Plan](staff_plan.md) owns intended work and is unchanged; [evidence summary](player_assessments.md) summarizes only what is below. Event record: [2014 ledger](../../ledger.md), Entry 112. The June 2 tender deadline is an administrative event recorded in the ledger, not here.
 
@@ -153,3 +198,5 @@ The badges describe the spring evidence for those groups; they are not a permane
 ### Carry-forward to mandatory minicamp, June 17 to 19
 
 A narrow agenda, not a new install: the retained menu recalled without prompts; the late-change protection answer under a full-speed non-contact rush; the Y-Cross stagger from a second personnel group; the Nickel Even five-man pressure against a changed protection; the relay with the usual lead absent; the punt operation under end-game instruction; and the reserve jobs listed under June 12 given comparable work. Nothing from the uninstalled menu is added. Participation is mandatory for players under contract; the four unsigned tenders are not under contract and remain outside the program until they sign. Physicals precede the camp on June 16.
+
+</details>
