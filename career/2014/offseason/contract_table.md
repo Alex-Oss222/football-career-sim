@@ -1,6 +1,6 @@
 # Jacksonville Jaguars 2014 contract table
 
-**As of:** March 24, 2014 (ledger Entry 102: Babin traded to Miami and Alualu to Houston; ledger Entry 100, compensatory picks announced with no contract change; ledger Entry 99; the March 2014 free-agency replay corrects Entry 94's first-pass draws). Replay signings: Monroe, Marks, Verner (Entry 95), Talib (Entry 96), Nicks and Hawkins (Entry 97), Te'o-Nesheim (Entry 98) and Cain (Entry 99). Nwaneri was traded to Arizona for No. 38 (Entry 99). Tate chose Detroit and Edelman New England; the four RFA/ERFA tenders stand.
+**As of:** March 28, 2014 (ledger Entry 103: Jones-Drew and C.J. Wilson re-signed; ledger Entry 102: Babin traded to Miami and Alualu to Houston; ledger Entry 100, compensatory picks announced with no contract change; ledger Entry 99; the March 2014 free-agency replay corrects Entry 94's first-pass draws). Replay signings: Monroe, Marks, Verner (Entry 95), Talib (Entry 96), Nicks and Hawkins (Entry 97), Te'o-Nesheim (Entry 98) and Cain (Entry 99). Nwaneri was traded to Arizona for No. 38 (Entry 99). Tate chose Detroit and Edelman New England; the four RFA/ERFA tenders stand.
 **Nature:** derived view. It executes no signing, tag, tender, release, trade or extension, certifies no cap room and reflects the adopted reconstruction in Entry 91. The [contract status register](contract_status_register.md) owns each player's status; the [2014 preparation worksheet](current_cap_worksheet.md) owns reconciliation; Caldwell owns contract decisions (Document 3).
 **Baseline:** [2013 initial cap sheet](../../2013/offseason/initial_cap_sheet.md) (per-player 2013 rows, Git `e04dd82`); [2013 regular-season worksheet](../../2013/offseason/current_cap_worksheet.md) and its May 5 version (Git `d25c8cf`); [2013 free-agency signings](../../2013/offseason/free_agency/signings.md); [2013 draftees](../../2013/offseason/draft/draftees.md); [2013 undrafted signings](../../2013/offseason/draft/udfa_signings.md); [2013 trades](../../2013/trades/trades.md); [current contract status register](contract_status_register.md); [Caldwell's pre-tag-window verifications](caldwell_pre_tag_verifications.md) (Git `9ca804c`); [2014 free-agency outcomes](free_agency/signings.md); ledger Entries 3, 4, 7, 9, 79, 80 and 85 through 89. Historical Git references identify the original financial baselines; current status follows the latest register and executed outcomes.
 
@@ -26,6 +26,7 @@ Add a row, and change the affected player rows and summaries, for every signing,
 | March 18, 2014 | Replay: Te'o-Nesheim signed | Entry 98 | Te'o-Nesheim (3 years, up to $13.5M, $6.0M guaranteed; 2014 cap $3,000,000) added. Rows: 55 |
 | March 20, 2014 | Cain re-signed; Nwaneri traded | Entry 99 | Cain (1 year, $855,000) added; Nwaneri removed (traded to Arizona in package I); $2,189,000 of his bonus proration accelerates to 2014 dead money. Rows: 55 |
 | March 24, 2014 | Babin and Alualu traded | Entry 102 | Babin removed (traded to Miami, package D; no Jacksonville dead money); Alualu removed (traded to Houston, package E; his final $1,542,500 bonus allocation stays as 2014 dead money). Rows: 53 |
+| March 28, 2014 | Jones-Drew and C.J. Wilson re-signed | Entry 103 | Jones-Drew (2 years, $7.0M, $3.25M guaranteed; 2014 cap $2,600,000) and Wilson (1 year, $795,000; $65,000 bonus) added. Rows: 55 |
 | March 24, 2014 | 2014 compensatory picks announced | Entry 100 | No contract row changes; Jacksonville received no compensatory pick. Its later draft rights renumber to 129, 153, 168, 205 and 241 in the financial inputs; no rookie contract is booked before a selection |
 
 <a id="1-how-to-read-this-table"></a>
@@ -42,11 +43,11 @@ Add a row, and change the affected player rows and summaries, for every signing,
 
 <a id="2-controlled-players-under-contract-for-2014-51"></a>
 
-## Controlled players under contract for 2014 (49)
+## Controlled players under contract for 2014 (51)
 
 <a id="2a-branch-contracts-21"></a>
 
-### Branch contracts (21)
+### Branch contracts (23)
 
 | Player | Pos | Contract type | Signed | Years / final league year | Total value | Signing bonus; annual proration; years left | 2014 base | 2014 roster / workout / other bonuses | 2014 guarantees | 2014 cap charge | Dead money if released before June 1 | 2014 status | 2013 cap charge (baseline) | Source and status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -71,6 +72,8 @@ Add a row, and change the affected player rows and summaries, for every signing,
 | Andrew Hawkins | WR | Veteran (restricted free agent; offer sheet not matched) | Offer sheet March 13, 2014; binding March 18 | 4 / 2017 | $15,600,000 | $4,000,000; $1,000,000; 4 | $1,800,000 | None | $1,800,000 base guaranteed ($8,000,000 total: bonus, 2014 base and $2,200,000 of the 2015 base) | $2,800,000 | $8,000,000 gross exposure before 2014 salary is earned | Under contract | Not a Jacksonville player (Cincinnati) | Branch record (Entry 97; [March 2014 replay log](free_agency/march_2014_replay_log.md)); 2015 base $5,000,000; 2016-2017 base $2,400,000; no pick compensation |
 | Daniel Te'o-Nesheim | DE | Veteran (branch free agent) | March 18, 2014 | 3 / 2016 | $13,500,000 | $3,000,000; $1,000,000; 3 | $1,500,000 | Up to $500,000 active-game bonuses ($31,250 a game) | $1,500,000 base guaranteed ($6,000,000 total: bonus plus the 2014 and 2015 base) | $3,000,000 | $6,000,000 gross exposure before 2014 salary is earned | Under contract | Not a Jacksonville player (Tampa Bay) | Branch record (Entry 98; [negotiation record](free_agency/teo_nesheim_negotiation_2014-03-18.md)); 2015 base $1,500,000 guaranteed plus up to $500,000 active-game bonuses; 2016 $5,000,000 base, $1,000,000 roster bonus, up to $500,000 active-game bonuses |
 | Jeremy Cain | LS | Veteran minimum (branch re-signing) | March 19, 2014 | 1 / 2014 | $855,000 | $0; $0; 0 | $855,000 | None | $0 | $855,000 | $0 gross exposure under adopted terms | Under contract | Unresolved (no 2013 row) | Branch record (Entry 99; [negotiation record](free_agency/cain_negotiation_2014-03-19.md)). Minimum for seven to nine credited seasons (inferred, single source); minimum-salary benefit not applied |
+| Maurice Jones-Drew | RB | Veteran (branch re-signing) | March 28, 2014 | 2 / 2015 | $7,000,000 | $1,500,000; $750,000; 2 | $1,750,000 | $100,000 workout bonus | $1,750,000 base plus the $1,500,000 bonus | $2,600,000 | $750,000 gross exposure under adopted terms | Under contract | Unresolved (prior deal expired) | Branch record (Entry 103; [negotiation record](free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md)). Inside Stone's two-year, $8.5M, $3.5M-guaranteed ceiling; 2015: $3,550,000 base, $100,000 workout, $4,400,000 cap |
+| C.J. Wilson | DE | Veteran minimum (branch re-signing) | March 28, 2014 | 1 / 2014 | $795,000 | $65,000; $65,000; 1 | $730,000 | None | $65,000 signing bonus only | $795,000 | $65,000 gross exposure under adopted terms | Under contract | Unresolved (prior deal expired) | Branch record (Entry 103; [negotiation record](free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md)). Minimum for four to six credited seasons (inferred) plus a $65,000 bonus; minimum-salary benefit not applied |
 
 The UDFA total value is the sum of the three recorded bases ($405,000, $495,000 and $585,000). The 2013 charges for the four UDFAs are their recorded bases; no bonus is recorded.
 
@@ -122,15 +125,13 @@ All six futures minimums are now priced using Article 26 credited service, recon
 
 <a id="3-contracts-and-rights-that-ended-9"></a>
 
-## Contracts and rights that ended (11)
+## Contracts and rights that ended (9)
 
 These players are no longer under Jacksonville control. Their 2013 rows remain in the [2013 records](../../2013/offseason/current_cap_worksheet.md); no 2014 charge is booked. Offers still outstanding are Caldwell's recorded offers, not contracts.
 
 | Player | Pos | Status at 4 p.m. March 11 |
 |---|---|---|
 | Chad Henne | QB | Unrestricted; the first-pass March 7 draw is superseded and his negotiation reopened (Entry 95) |
-| Maurice Jones-Drew | RB | Unrestricted; Jacksonville's offer (2 years, $8.5M, $3.5M guaranteed) stands; draw held to his real date |
-| C.J. Wilson | DE | Unrestricted; Jacksonville's minimum offer stands; draw held to his real date |
 | Alan Ball | CB | Unrestricted; Jacksonville's one-year offer stands; he has no real 2014 move, and the resolution rule is open |
 | Brent Grimes | CB | Unrestricted; the corner contingency makes him Jacksonville's fallback offer (2 years, $9.25M, $4.0M guaranteed); unplaced under rails method section 3; resolution rule open |
 | Allen Reisner | TE | Not tendered; unrestricted |
@@ -159,19 +160,19 @@ Each tender was made before 4 p.m. ET March 11 and is unsigned; an unsigned tend
 
 <a id="5a-counts-by-2014-status-march-20-2014-entry-99"></a>
 
-### Counts by 2014 status (March 24, 2014, Entry 102)
+### Counts by 2014 status (March 28, 2014, Entry 103)
 
 | Status | Count |
 |---|---:|
 | Under contract, continuing | 35 |
 | Under contract, reserve/future (effective March 11) | 6 |
-| Under contract, signed in the replay (Monroe, Marks, Verner, Talib, Nicks, Hawkins, Te'o-Nesheim, Cain) | 8 |
+| Under contract, signed in the replay (Monroe, Marks, Verner, Talib, Nicks, Hawkins, Te'o-Nesheim, Cain, Jones-Drew, Wilson) | 10 |
 | Tendered RFA (lowest, not signed) | 1 |
 | Tendered ERFA (not signed) | 3 |
-| **Controlled rows** | **53** |
-| Contracts and rights ended (section 3) | 11 |
+| **Controlled rows** | **55** |
+| Contracts and rights ended (section 3) | 9 |
 
-The 53 controlled rows match the register and the roster.
+The 55 controlled rows match the register and the roster.
 
 <a id="5b-working-2014-cap-charges"></a>
 
@@ -179,17 +180,17 @@ The 53 controlled rows match the register and the roster.
 
 | Component | Players | 2014 amount |
 |---|---:|---:|
-| Signed contracts and futures | 49 | $112,889,321 |
+| Signed contracts and futures | 51 | $116,284,321 |
 | Unsigned tenders (Bradfield $1,431,000; Clemons and Pasztor $570,000 each; Brown $495,000) | 4 | $3,066,000 |
-| Player contracts including tenders | 53 | $115,955,321 |
+| Player contracts including tenders | 55 | $119,350,321 |
 | Dead money (Bray $51,675; Nwaneri $2,189,000; Alualu $1,542,500) | | $3,783,175 |
-| Recorded obligations, all 53 players | | $119,738,496 |
-| Less two of the three $420,000 minimums (Long, Jerrell Jackson, Bray) outside the offseason Top 51 | | -$840,000 |
-| Offseason Top-51 obligations plus dead money | | $118,898,496 |
+| Recorded obligations, all 55 players | | $123,133,496 |
+| Less three $420,000 minimums (Long, Jerrell Jackson, Bray) and one $495,000 minimum outside the offseason Top 51 | | -$1,755,000 |
+| Offseason Top-51 obligations plus dead money | | $121,378,496 |
 | League-year opening offseason-workout charge (2,880 x $175, CBA Article 13 section 5(g)) | | $504,000 |
-| Working total | | $119,402,496 |
+| Working total | | $121,882,496 |
 
-Against the $133,000,000 league cap the working difference is **$13,597,504**, before the unresolved carryover, rookies, further signings and reserves. The Babin trade removed about $6,175,000 with no dead money; the Alualu trade removed $4,264,000 and left $1,542,500 of dead money; with two fewer players, one $420,000 and the $495,000 minimum return inside the Top 51. Earlier, the Nwaneri trade removed about $5,894,500 and left $2,189,000 of dead money; Cain added $855,000. The eight replay contracts total $35,805,000 of 2014 cap. Not certified room.
+Against the $133,000,000 league cap the working difference is **$11,117,504**, before the unresolved carryover, rookies, further signings and reserves. Jones-Drew adds $2,600,000 and C.J. Wilson $795,000; with two more players, one more $420,000 and the $495,000 minimum fall outside the Top 51. Earlier: the Babin trade removed about $6,175,000 with no dead money; the Alualu trade removed $4,264,000 and left $1,542,500 of dead money; the Nwaneri trade removed about $5,894,500 and left $2,189,000 of dead money; Cain added $855,000. Not certified room.
 
 <a id="5c-dead-money-carried-into-2014"></a>
 

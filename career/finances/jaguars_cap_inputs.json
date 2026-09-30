@@ -1,7 +1,7 @@
 {
   "team": "Jacksonville Jaguars",
-  "as_of": "2014-03-24",
-  "checkpoint": "Entry 102",
+  "as_of": "2014-03-28",
+  "checkpoint": "Entry 103",
   "prepared": "2026-09-29",
   "start_year": 2014,
   "end_year": 2025,
@@ -5331,20 +5331,20 @@
       "roster_position": "RB",
       "date_of_birth": "1985-03-23",
       "age_at_checkpoint": 28,
-      "control": "pending",
-      "status": "Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's offer stands, draw held to his real date (Entry 94)",
-      "contract_type": "Veteran extension, 2009",
-      "signed": "See expiring-contract description",
-      "term": "2013",
-      "contract_ends": 2013,
-      "value": "$30,515,000 (term length Corrected in the register)",
-      "bonus_terms": "Not established for a new contract",
-      "guarantees": "No new signed 2014 guarantee established",
-      "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
-      "remaining_guarantees": null,
+      "control": "signed",
+      "status": "Under contract",
+      "contract_type": "Veteran (branch re-signing)",
+      "signed": "March 28, 2014",
+      "term": "2 / 2015",
+      "contract_ends": 2015,
+      "value": "$7,000,000",
+      "bonus_terms": "$1,500,000 signing bonus; $750,000; 2",
+      "guarantees": "$3,250,000 (signing bonus and 2014 base)",
+      "dead_money_2014": "$750,000 remaining bonus if released before 2015",
+      "remaining_guarantees": 1750000,
       "availability": "No communicated restriction",
-      "plan": "Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's offer stands, draw held to his real date (Entry 94)",
-      "source_note": "Final year Confirmed; 2013 archive row",
+      "plan": "No new transaction decision in this tracker",
+      "source_note": "Branch record (Entry 103; negotiation record career/2014/offseason/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md). Two years, $7.0M, $3.25M guaranteed, inside Stone's two-year, $8.5M, $3.5M ceiling.",
       "sources": [
         "career/2014/offseason/contract_table.md",
         "career/2014/offseason/contract_status_register.md"
@@ -5353,18 +5353,24 @@
       "accrued_seasons": "Through 2012: 7 (2006-2012; 2012 on Reserve/Injured, which is full pay). 2013: Accrues in branch (on 53 for 16 games)",
       "years": {
         "2014": {
-          "status": "not_signed",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 2600000,
+          "base": 1750000,
+          "proration": 750000,
+          "other_cap": 100000,
+          "cash": 3350000,
+          "guaranteed_base": 1750000,
+          "basis": "Branch contract, Entry 103: $750,000 bonus allocation, $1,750,000 guaranteed base, $100,000 workout bonus"
         },
         "2015": {
-          "status": "not_committed",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 4400000,
+          "base": 3550000,
+          "proration": 750000,
+          "other_cap": 100000,
+          "cash": 3650000,
+          "guaranteed_base": 0,
+          "basis": "Branch contract, Entry 103: $750,000 bonus allocation, $3,550,000 base, $100,000 workout bonus"
         },
         "2016": {
           "status": "not_committed",
@@ -5437,9 +5443,7 @@
           "cash": null
         }
       },
-      "former_player": true,
-      "departure_date": "2014-03-11",
-      "departure_source": "career/2013/ledger.md"
+      "schedule_basis": "Branch re-signing, Entry 103 (negotiation record career/2014/offseason/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md)"
     },
     {
       "name": "Eugene Monroe",
@@ -5705,33 +5709,36 @@
       "roster_position": "DE",
       "date_of_birth": "1987-03-30",
       "age_at_checkpoint": 26,
-      "control": "pending",
-      "status": "Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's minimum offer stands, draw held to his real date (Entry 94)",
-      "contract_type": "Rookie (Green Bay, 2010 seventh round), acquired by trade",
-      "signed": "See expiring-contract description",
-      "term": "2013",
-      "contract_ends": 2013,
-      "value": "Unresolved",
-      "bonus_terms": "Not established for a new contract",
-      "guarantees": "No new signed 2014 guarantee established",
-      "dead_money_2014": "Unresolved; do not treat pending contract status as a release",
-      "remaining_guarantees": null,
+      "control": "signed",
+      "status": "Under contract",
+      "contract_type": "Veteran minimum (branch re-signing)",
+      "signed": "March 28, 2014",
+      "term": "1 / 2014",
+      "contract_ends": 2014,
+      "value": "$795,000",
+      "bonus_terms": "$65,000 signing bonus; $65,000; 1",
+      "guarantees": "$65,000 (signing bonus)",
+      "dead_money_2014": "$65,000 if released",
+      "remaining_guarantees": 0,
       "availability": "No communicated restriction",
-      "plan": "Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's minimum offer stands, draw held to his real date (Entry 94)",
-      "source_note": "Branch record (trade); final year Corrected (register)",
+      "plan": "No new transaction decision in this tracker",
+      "source_note": "Branch record (Entry 103; negotiation record career/2014/offseason/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md). $730,000 minimum for four credited seasons plus a $65,000 signing bonus. Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified.",
       "sources": [
         "career/2014/offseason/contract_table.md",
         "career/2014/offseason/contract_status_register.md"
       ],
-      "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+      "credited_seasons": "Four to six (inferred from his real 2014 $730,000 minimum base, Over The Cap data; unverified)",
       "accrued_seasons": "Through 2012: 3 (2010-2012 with Green Bay). 2013: Accrues in branch (on 53 for 16 games; injured Week 2, never moved to a reserve list)",
       "years": {
         "2014": {
-          "status": "not_signed",
-          "cap": null,
-          "base": null,
-          "proration": null,
-          "cash": null
+          "status": "known",
+          "cap": 795000,
+          "base": 730000,
+          "proration": 65000,
+          "other_cap": 0,
+          "cash": 795000,
+          "guaranteed_base": 0,
+          "basis": "Branch one-year minimum plus $65,000 signing bonus, Entry 103"
         },
         "2015": {
           "status": "not_committed",
@@ -5811,9 +5818,7 @@
           "cash": null
         }
       },
-      "former_player": true,
-      "departure_date": "2014-03-11",
-      "departure_source": "career/2013/ledger.md"
+      "schedule_basis": "Branch minimum re-signing, Entry 103 (negotiation record career/2014/offseason/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md)"
     },
     {
       "name": "Alan Ball",

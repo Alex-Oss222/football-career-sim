@@ -2,7 +2,7 @@
  "team": "Jacksonville Jaguars",
  "season": 2014,
  "status": "WORKING VIEW, NOT A GAME INPUT. Carried from the closed 2013 chart minus players no longer controlled; no 2014 depth decision has been made.",
- "as_of": "March 24, 2014 (ledger Entry 102)",
+ "as_of": "March 28, 2014 (ledger Entry 103)",
  "effective": "Carried from the closed 2013 chart (January 6, 2014, AFC Divisional preparation)",
  "sources": "career/2013/depth_chart.json (Git 781213a, carried order); current career/2013/roster.md; current career/2014/offseason/contract_status_register.md; career/2014/offseason/free_agency/signings.md; ledger Entries 79 and 85 through 89; Entry 94 (league year opened); Entry 95 (March 2014 free-agency replay)",
  "rule": "Order within each kernel position group is the closed 2013 order exactly as carried, minus players no longer controlled. It is not a 2014 decision. Stone owns the 2014 order and changes it only by decision; each change is logged in career/2014/depth_chart.md.",
@@ -13,6 +13,7 @@
    "John Parker Wilson"
   ],
   "RB": [
+   "Maurice Jones-Drew",
    "Jonathan Grimes",
    "C.J. Anderson"
   ],
@@ -47,6 +48,7 @@
    "Andre Branch",
    "Ryan Davis",
    "Jeris Pendleton",
+   "C.J. Wilson",
    "Lavar Edwards"
   ],
   "LB": [
@@ -117,7 +119,9 @@
   "Josh Scobee": "K",
   "Bryan Anger": "P",
   "Jeremy Cain": "LS",
-  "Sen'Derrick Marks": "DT"
+  "Sen'Derrick Marks": "DT",
+  "Maurice Jones-Drew": "RB",
+  "C.J. Wilson": "DE"
  },
  "roles": {
   "Kirk Cousins": [
@@ -144,7 +148,9 @@
   "Hakeem Nicks": "Under contract through 2014 (signed March 14, Entry 97)",
   "Andrew Hawkins": "Under contract through 2017 (signed March 18, Entry 97)",
   "Daniel Te'o-Nesheim": "Under contract through 2016 (signed March 18, Entry 98)",
-  "Jeremy Cain": "Under contract through 2014 (re-signed March 19, Entry 99)"
+  "Jeremy Cain": "Under contract through 2014 (re-signed March 19, Entry 99)",
+  "Maurice Jones-Drew": "Under contract through 2015 (re-signed March 28, Entry 103)",
+  "C.J. Wilson": "Under contract through 2014 (re-signed March 28, Entry 103)"
  },
  "availability_notes": {
   "Paul Posluszny": "Out, head/neck, independent medical hold (Week 13); projected return April 5, 2014 (career/2013/roster.md)",
@@ -156,10 +162,8 @@
   "Alan Ball": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
   "Allen Reisner": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
   "Brent Grimes": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
-  "C.J. Wilson": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
   "Chad Henne": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
   "Kevin Rutland": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
-  "Maurice Jones-Drew": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
   "Uche Nwaneri": "Traded to Arizona, March 20, 2014 (Entry 99)",
   "Jason Babin": "Traded to Miami, March 24, 2014 (package D, Entry 102)",
   "Tyson Alualu": "Traded to Houston, March 24, 2014 (package E, Entry 102)"
@@ -231,6 +235,12 @@
    "event": "Babin and Alualu traded",
    "ledger_entry": "Entry 102",
    "change": "Babin (DL 2) and Alualu (DL 4) removed; the linemen below each move up without a reorder. Edge 1 in the carried roles is open for Stone"
+  },
+  {
+   "date": "March 28, 2014",
+   "event": "Jones-Drew and C.J. Wilson re-signed",
+   "ledger_entry": "Entry 103",
+   "change": "Jones-Drew restored at RB 1 (lead back) and Wilson after Pendleton, their carried 2013 places; the players below them move down one; no other order change"
   }
  ],
  "added_not_placed": {

@@ -2,7 +2,7 @@
 
 [Player cap](jaguars_cap.md) | [Finance index](README.md)
 
-As of March 24, 2014. Whole US dollars. Generated from the executed staff register; no second editable salary ledger.
+As of March 28, 2014. Whole US dollars. Generated from the executed staff register; no second editable salary ledger.
 
 ## Coaching contracts
 

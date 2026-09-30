@@ -60,3 +60,52 @@ The annual handoff manifest tracks team closeout, interviews, finances, roles/me
 **Atomic closure.** The resolution log, completed trades, offer log, targets and README, pick register and draft order, contract table, cap worksheet, financial inputs and generated cap views, roster, working depth chart and its JSON copy, the Miami, Houston and Oakland rails pages, calendar, the 2014 README, readiness, operating baseline and Documents 4 and 5 agree. The private snapshot is advanced only after merge.
 
 **Commit closed - Canonical update - March 24, 2014 - Babin and Alualu traded - canonical through March 24, 2014**
+
+## Entry 103 — March 25–31, 2014 — Jones-Drew and C.J. Wilson re-signed; schedule filed
+
+**Recorded:** September 30, 2026. **Simulation clock:** advances to March 31, 2014.
+**Checkpoint:** `Canonical update - March 31, 2014 - Jones-Drew and C.J. Wilson re-signed`
+**Preceding global package checkpoint:** `Canonical update - March 24, 2014 - Babin and Alualu traded`
+
+**Authority and method.** Stone's instructions are in the [memo amendment of September 30, 2026](../2014/offseason/stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-jones-drew-and-cj-wilson). The negotiations follow the replay's judgment method: Caldwell offers within those instructions and each player weighs them against his real market, with no private draw. Event owner: [the negotiation record](../2014/offseason/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md). Both real March 28 Oakland deals were sourced and independently checked against Over The Cap data:
+
+| Player | Real Oakland deal | Guaranteed |
+|---|---|---:|
+| Jones-Drew | 3 years, $7.5M | $1.2M |
+| C.J. Wilson | 1 year, $795,000 | $65,000 |
+
+**Maurice Jones-Drew (RB), re-signed March 28.**
+- **Terms:** two years, $7.0M, $3.25M guaranteed (a $1.5M signing bonus plus his $1.75M 2014 base). That is inside Stone's two-year, $8.5M, $3.5M-guaranteed ceiling.
+- **Cap:** 2014 charge $2,600,000; 2015 charge $4,400,000.
+- **Why he chose Jacksonville:** more guaranteed money and a higher average than Oakland's three-year deal outweighed the pull of home.
+- **Role:** no starting promise. He returns to his carried lead-back place.
+
+**C.J. Wilson (DE), re-signed March 28.**
+- **Terms:** one year, $795,000: the $730,000 minimum for four credited seasons (inferred) plus a $65,000 signing bonus to match Oakland.
+- **Role:** Caldwell declined any role promise, under Stone's instruction.
+- **Physical:** his current physical on March 26 shows no communicated restriction.
+- **Cap:** counted in full; the minimum-salary benefit is not applied.
+- **Place:** he returns to his carried place on the front.
+
+**Schedule filed.** Caldwell's office submitted the selected offseason-program schedule (Entry 101 dates) on March 28, before the March 31 limit. The branch filing record is the receipt; no league text is invented.
+
+**Other dates.** The League Meeting closed March 26; adopted rules apply from their effective dates and none is researched here. Nwaneri's March 25 roster bonus was Arizona's. The staff preparation checkpoint listed for March 31 is not recorded as done and carries to the April 11 review.
+
+**Effects.**
+- **Roster:** controlled roster 55: 51 signed and four unsigned tenders.
+- **2014 cap:** player contracts $119,350,321 including tenders, plus $3,783,175 dead money. Three $420,000 minimums and one $495,000 minimum fall outside the offseason Top 51, giving $121,378,496. With the $504,000 workout charge the working total is $121,882,496, an $11,117,504 working difference before carryover, rookies and reserves. This is not certified room.
+- **2015 commitments:** $108,785,637.
+- **Draft picks:** unchanged.
+- **Depth chart:** Jones-Drew is restored at RB 1 and Wilson after Pendleton.
+
+**Open.**
+- Henne (unrestricted).
+- Ball and Brent Grimes (unrestricted; not pursued while both corners are signed).
+- Package G's conditions (Posluszny's actual clearance by April 21).
+- The April 18 phase-plan decisions.
+- Shorts's extension; the left guard and Edge 1 roles.
+- The rails from March 11 evening to March 31 remain unswept beyond the targets' own moves.
+
+**Atomic closure.** The negotiation record, signings record, contract status register, contract table, cap worksheet, financial inputs and generated cap views, roster, working depth chart and its JSON copy, Oakland rails page, calendar, phase-plan filing status, the 2014 README, readiness, operating baseline and Documents 4 and 5 agree. The private snapshot is advanced only after merge.
+
+**Commit closed - Canonical update - March 31, 2014 - Jones-Drew and C.J. Wilson re-signed - canonical through March 31, 2014**
