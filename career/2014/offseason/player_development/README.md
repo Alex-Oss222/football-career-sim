@@ -1,8 +1,10 @@
 # Individual player development
 
-[Offseason index](../README.md) · [All 61 living profiles](roster_profiles.md) · [Cousins in detail](kirk_cousins.md) · [Film queue](../film/player_queue.md) · [Player template](player_plan_template.md)
+[Offseason index](../README.md) · [Progression model](progression_model.md) · [Live progression cohort](progression_roster.json) · [All 61 exit-review profiles](roster_profiles.md) · [Cousins in detail](kirk_cousins.md) · [Film queue](../film/player_queue.md) · [Player template](player_plan_template.md)
 
-Start from the player at the current date: what he brought in, what he has actually experienced, what he has shown, what he understands and what remains uncertain. The full 2013 season belongs in the assessment. Washington's old assessment cannot freeze Cousins's identity; a draft label, former depth role or thin box score cannot freeze anyone else's.
+
+The live progression cohort is derived from the current roster with `python scripts/build_player_progression_roster.py`. The frozen 61-player exit index identifies 2013 Jacksonville continuity only; it never overrides current control. At the March 24 checkpoint, 53 players are controlled, 48 have Jacksonville 2013 continuity, and Kirk Cousins is one of those returners. Regenerate the cohort after every roster/control change before resolving progression.
+\nStart from the player at the current date: what he brought in, what he has actually experienced, what he has shown, what he understands and what remains uncertain. The full 2013 season belongs in the assessment. Washington's old assessment cannot freeze Cousins's identity; a draft label, former depth role or thin box score cannot freeze anyone else's.
 
 The [roster profiles](roster_profiles.md) give every player a sourced current synthesis and a next opportunity, including veterans, reserves and practice-squad players. The [Cousins plan](kirk_cousins.md) goes deeper because his full-season starting experience and 2013 teaching plan provide more material. Missing evidence is stated directly; it is not a negative grade or permission to invent a biography.
 
