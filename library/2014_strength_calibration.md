@@ -224,3 +224,72 @@ By club (starters with either, of 22): HOU 18; CAR, CLE 17; BAL, CHI, NO, PIT, S
 ### 9.5 What this pass still cannot do
 
 Offensive linemen remain honours-only; contamination is unmodelled; no protection, coverage or run split, depth, help or coaching tradeoff is modelled (open E1 work); the special-teams strength is carried but not read; the composite explains about 67% of the target edge spread and the defense fit is still weak. The cheap complements listed in the user's decision that are not in this pass: matchup sub-composites and special teams.
+
+## 10. Phase 2 (September 30, 2026): matchup sub-composites, offensive-line job evidence, special teams and field-goal distance
+
+Script: `scripts/research/build_2014_strength_calibration_v3.py`; output `library/data/2014_strength_calibration_v3.json` (source sha256 values inside). Policy: `runtime/2014_engine_decisions.md` E1 (team construction and matchup) and defect register items 1 and 18. Method unchanged from the first two studies: 2012 Week 1 depth-chart starters for role, drive-weighted least squares per club over the 32 clubs, shrinkage prior N(0, 0.025^2) per composite unit on a rate outcome (N(0, 0.25^2) yards for yards per carry), leave-one-club-out skill = 1 - (rmse / null rmse)^2, drive-level joint check with a 500-draw game-cluster bootstrap. Target: the real 2012 regular season, 6,053 drives.
+
+**Disclosure, recorded in the script before its first fit.** An earlier attempt at this phase was lost to a container restart and only its printed summary survived; the author read that summary before writing the preregistered block. The rules were therefore declared with rough knowledge of what a first fit would show. The keep rule is mechanical and the block is recorded as declared, so the record is checkable, but this study is not blind in the way the first two were.
+
+### 10.1 Rule fixed before the fit
+
+- **Sub-units (a slot convention, the same for every club; the runtime reads the drive's live lineup by depth order).** Offense: protection = the five linemen of the protection front and RB1; passing = the passer (weight 3), WR1-3 and TE1; run = the five linemen, TE1, FB1 when dressed, and RB1. Defense: rush = DL1-4 and LB1; coverage = DB1-4 and LB2-3; run defense = DL1-4, LB1-3 and the box safety (the first of DB1-4 labelled SS, else S or FS, else DB4). Which linebacker rushes and which safety plays the box is not observed pre-2013 in the pinned sources; the split is a convention.
+- **Player value** as section 9.1 (honour lifts, production can lower; passer and side rules unchanged).
+- **Offensive-line job evidence, two rules declared with an adoption test.** A: a lineman contributes honours only (the section 9 rule). B: a lineman with no admissible honour and no window season with 8 or more starts (the production file's OL job rows, under the same public-date gate; 2012 target: 2010-2011, 2014 branch: 2011-2012) counts -1 in the protection and run composites; a proven lineman without an honour counts 0. B is adopted only if the protection composite's leave-one-club-out skill on sack rate is higher under B than under A. Contamination noted in advance: a club that starts unproven linemen may be weak for other reasons, so the term can carry club quality; reported, not corrected.
+- **Outcomes.** Touchdown share per drive (as before); sacks per dropback (attempts plus sacks, two-point tries excluded); interceptions per drive; yards per carry (reported only: the kernel's drive tuples fix each drive's net and expose no yards-per-carry channel, so no ypc term can enter the kernel).
+- **Terms.** Protection against rush on sack rate; passing against coverage on touchdown share and interception share; run against run defense on touchdown share and yards per carry. A term is kept only if its leave-one-club-out skill is positive and its sign is right. When both of a side's touchdown-share terms are kept the joint two-term fit's slopes are adopted; when one is kept, its single-term shrunk slope.
+- **Centring.** The 2012 study means of each sub-composite, for every fit (the identity-ordered 2014 inventory lineups are not depth charts, so their mean shift is not evidence of a league shift; revisited when the real 2014 Week 1 depth charts are built).
+- **Kernel channels.** Touchdown share: the sum of the kept terms is the drive edge (with the 0.023 home term and the +/-0.12 clamp unchanged). Interception share: shifts the interception category and the punt category by its negative. Sack rate: shifts the per-dropback sack probability from the 2012 base p0 = 1,169 / 18,957 = 0.06167, and the drawn category's real drive is then drawn with each tuple weighted by its binomial likelihood ratio (p1/p0)^sacks x ((1-p1)/(1-p0))^(dropbacks - sacks); a zero shift keeps the uniform draw exactly.
+- **Special teams.** Season pairs 2010 to 2011 and 2011 to 2012: a specialist with a tier in season t and a qualifying line in t+1; outcome the t+1 raw metric (kicker: field goals made over expected per attempt; punter: net yards per punt; returner: yards per return), weight the t+1 denominator. Two predictors, the season-t tier value and, as a declared sensitivity, the season-t shrunk metric minus that season's league mean. A predictor is kept only with positive leave-one-pair-out skill and a positive slope; with both kept the higher skill is adopted; a specialist with no kept predictor is wired with slope 0 (carried, inactive). Channels: kicker shift added to the make probability, clipped to [0.02, 0.99]; punter shift, rounded, added to a returned or downed punt's gross yards; returner shift, rounded, added to return yards. Coverage-unit strength is out of scope.
+- **Field-goal distance (item 18).** One logistic slope per yard over every 2010-2012 regular-season attempt (blocked counted as missed), with a separate intercept per drive-model band solved so that the mean fitted probability over the band's own 2012 attempts equals the band's 2012 make rate; the band rows keep their 2012 centres by construction.
+- **Return band rows.** Mean and SD of return yards over the 2012 kickoff and punt pools' returned records.
+
+### 10.2 Offensive-line rule decision
+
+Rule B adopted: protection composite leave-one-club-out skill on sack rate 0.192 under B against 0.012 under A. Under A the protection slope was 0.0032 (SE 0.0021, R^2 0.069); under B it is 0.0057 (SE 0.0018, R^2 0.240). The unproven-lineman term is what gives the protection composite its skill, and the contamination declared above applies: a club starting unproven linemen may be weak for other reasons.
+
+### 10.3 Results (2012 target, rule B)
+
+Slopes per composite unit, as strength (offense positive raises the good outcome, defense positive lowers the opponent's); implied club SD = shrunk slope x composite SD.
+
+| Term | Raw slope | SE | Shrunk | Composite mean (centre) | Composite SD | Range | R^2 | LOO skill | Implied club SD | Kept |
+|---|---:|---:|---:|---:|---:|---|---:|---:|---:|---|
+| passing on touchdown share | 0.00646 | 0.00174 | **0.00643** | **2.83** | 4.67 | -4.5 (JAX) to 12 (NE) | 0.314 | **0.243** | 0.0301 | yes |
+| run on touchdown share | 0.00928 | 0.00506 | 0.00891 | 1.02 | 1.85 | -2 to 5.5 | 0.101 | -0.009 | 0.0165 | no |
+| run defense on touchdown share | 0.00540 | 0.00253 | **0.00535** | **5.00** | 2.45 | 0 (SD) to 11 (SF) | 0.132 | **0.087** | 0.0131 | yes |
+| coverage on touchdown share | 0.00286 | 0.00258 | 0.00283 | 4.61 | 2.52 | -1 to 9 | 0.040 | -0.008 | 0.0071 | no |
+| protection on sack rate | 0.00568 | 0.00185 | **0.00565** | **0.44** | 1.45 | -2 (ARI) to 4.5 (NO) | 0.240 | **0.192** | 0.0082 | yes |
+| rush on sack rate | 0.00068 | 0.00091 | 0.00068 | 3.13 | 2.25 | -1 to 8 | 0.018 | -0.032 | 0.0015 | no |
+| passing on interception share | 0.00062 | 0.00070 | 0.00062 | 2.83 | 4.67 | | 0.025 | -0.057 | 0.0029 | no |
+| coverage on interception share | 0.00157 | 0.00166 | 0.00156 | 4.61 | 2.52 | | 0.029 | -0.015 | 0.0039 | no |
+| run on yards per carry | -0.0757 | 0.0502 | -0.0728 | 1.02 | 1.85 | | 0.071 | -0.037 | | no (wrong sign; reported only) |
+| run defense on yards per carry | 0.0074 | 0.0311 | 0.0073 | 5.00 | 2.45 | | 0.002 | -0.068 | | no (reported only) |
+
+Three terms survive: passing on touchdown share, run defense on touchdown share, protection on sack rate. Each side kept one touchdown-share term, so the single-term shrunk slopes are adopted (the joint two-term fits are in the JSON: offense passing 0.00611 with run 0.00186, LOO skill 0.190, below the single passing term's 0.243; defense coverage 0.00153 with run defense 0.00496, LOO 0.043). Drive-level joint check with the home indicator: touchdown share, passing 0.00628 (SE 0.00106), run defense 0.00461 as strength (SE 0.00184), home 0.0229 (SE 0.0103), 6,053 drives; sack rate, protection -0.00569 (SE 0.00125), home 0.0026 (SE 0.0041), 5,410 drives. Both consistent with the club-level fits.
+
+**Implied spread.** Touchdown-share edge SD from the kept terms 0.0328 (passing 0.0301, run defense 0.0131), 68% of the 0.048 target and 2.71 points per team-game (the section 9 composite read 0.0320 and 67%). The sack-rate term adds a separate channel with implied club SD 0.0082 sacks per dropback against a 2012 club SD of 0.0169 taken (0.0113 allowed). No interception channel survived, so a passer's or coverage unit's interception tendency is not modelled; the channel is wired with slope 0.
+
+**Read plainly.** The gain over section 9 on touchdown share is small (0.0320 to 0.0328). What phase 2 adds is structure: the passing matchup carries the offensive edge, the run-defense front the defensive one, and protection now moves sacks through its own channel with a fit that rests on the unproven-lineman rule. Every defensive term is weak: run defense on touchdown share is the only kept defensive term, with LOO skill 0.087 and a slope just over two standard errors from zero; coverage and rush carry no fitted signal at the club level with 32 clubs, which is a sample limit as much as a finding. The 2012 Jacksonville passing composite is the league's lowest (-4.5).
+
+### 10.4 Special teams
+
+| Specialist | Pairs | Tier slope (SE) | Tier LOO skill | Continuous slope (SE) | Continuous LOO skill | Adopted |
+|---|---:|---|---:|---|---:|---|
+| kicker (made over expected per attempt) | 52 | 0.0070 (0.0086) | -0.016 | 0.089 (0.226) | -0.026 | none (slope 0) |
+| punter (net yards per punt) | 52 | 0.219 (0.280) | -0.023 | **0.351 (0.177), shrunk 0.340** | **0.039** | continuous, 0.3399 |
+| kick returner (yards per return) | 42 | 0.113 (0.400) | -0.034 | 0.081 (0.200) | -0.049 | none (slope 0) |
+| punt returner (yards per return) | 42 | -0.203 (0.345) | -0.027 | -0.069 (0.185) | -0.065 | none (slope 0) |
+
+Only the punter's own net persists across seasons in this sample, and weakly (LOO skill 0.039; next-season net by prior tier: Below-Average 38.9, Average 40.0, Plus 40.1, Elite 39.6 over 8 pairs). A kicker's prior tier does not predict his next made-over-expected (Elite 0.047 over 8 pairs, Below-Average 0.025, Average 0.009: not monotone). Returner tiers predict nothing at 42 pairs. So the runtime carries kicker, kick-returner and punt-returner terms with slope 0: a kicker's tier moves no make rate, a returner's tier moves no return, and only the punter's continuous term is live. The returners block in `library/data/2010_2012_production_evidence.json` (140 players, 268 player-season rows: 150 kick return, 118 punt return; minimum 10 returns, shrinkage k 10, two-pass verified against the play-by-play returner ids) was added after the second-pass acceptance and before any phase-2 fit, as its amendment record says.
+
+### 10.5 Field-goal distance
+
+2,991 attempts 2010-2012, 2,484 made. Pooled logistic slope -0.0956 per yard. Band intercepts anchored to 2012: under 30 yards 5.706 (2012 rate 0.967, 239 attempts), 30-39 5.419 (0.891, 303), 40-49 5.630 (0.802, 323), 50 and over 5.527 (0.609, 151). Within the 50-and-over band the fitted probability now falls from about 0.66 at 50 yards to about 0.40 at 55 and 0.24 at 60 (2010-2012 pooled: 50-54 yards 201 of 312, 55 and over 40 of 87), where the drive model drew a flat 0.609. The band rows keep their 2012 centres by construction; every attempt's probability is published on its drive (`fg_prob`).
+
+### 10.6 Return band rows
+
+Two rows in `runtime/bands.py`: mean kickoff return yards over non-touchback kickoffs and mean punt return yards over returned punts. The runtime computes its centres from the 2012 field-position pools at load: kickoff 23.0 (SD 10.35, 1,316 non-touchback records) and punt 9.19 (SD 9.62, 1,038 returned records). The JSON's `return_centres_2012` block reads kickoff 23.48 over 1,285 records because it counted only records with a return; the 31 non-touchback kickoffs without a return (out of bounds, onside, muffed) are in the runtime's denominator and not the JSON's. The runtime's row is the graded one and its centre matches the receipts' own counting rule (every non-touchback kickoff counts a kick return); the JSON figure is recorded as computed and is not used.
+
+### 10.7 What this phase still cannot do
+
+No coverage, rush or interception term carries fitted signal; run offense carries none. The protection term rests on an unproven-lineman rule whose contamination by club quality is declared and unmodelled. The sub-unit slot split is a convention, not observed usage. Special teams reduce to one punter term. Depth, help, shared assignments, scheme fit, communication and coaching tradeoffs remain open E1 work. The fit is not blind (the disclosure above).
