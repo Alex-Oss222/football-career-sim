@@ -385,7 +385,7 @@ Former player; departure March 31, 2014. [ledger](../../career/2014/ledger.md).
 
 No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
-The 2016 fifth-year option is unexercised and is excluded from committed years. Review the exercise decision in the 2015 option window. The deferred bonus cash is already incorporated in the original bonus allocation and is not charged twice.
+The contract, its deferred bonus cash and the 2016 fifth-year option left with the March 31, 2014 trade to Indianapolis. Only the accelerated bonus allocation stays with Jacksonville, once, in the dead-money ledger.
 
 ### Contract notes
 

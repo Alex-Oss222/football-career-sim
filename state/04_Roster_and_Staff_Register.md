@@ -189,7 +189,7 @@ No later real destination is imported for any departed player unless the league 
 
 ## Contracts, cap and draft capital
 
-The [2014 cap worksheet](../career/2014/offseason/current_cap_worksheet.md) holds the working accounting, not certified cap room. The [2014 contract table](../career/2014/offseason/contract_table.md) is the per-player view of terms, and the [ten-year tracker](../career/finances/jaguars_cap.md) carries every schedule forward.
+The [2014 cap worksheet](../career/2014/offseason/current_cap_worksheet.md) holds the working accounting, not certified cap room. The [2014 contract table](../career/2014/offseason/contract_table.md) is the per-player view of terms, and the [twelve-year tracker](../career/finances/jaguars_cap.md) carries every schedule forward.
 
 | Control | Current position | Source / limit |
 |---|---|---|

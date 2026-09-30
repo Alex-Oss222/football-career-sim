@@ -668,31 +668,30 @@ The $51,675 old Bray bonus is counted separately from his new $420,000 salary. N
 
 ## Draft class and rookie pool
 
-| Draft | Round | Original club | Slot in round | Overall |
-|---|---|---|---|---|
-| 2014 | 1 | Washington Redskins | 13 | 13 |
-| 2014 | 1 | Jacksonville Jaguars | 26 | 26 |
-| 2014 | 2 | Arizona Cardinals | 6 | 38 |
-| 2014 | 3 | Jacksonville Jaguars | 26 | 90 |
-| 2014 | 4 | Jacksonville Jaguars | 26 | 129 |
-| 2014 | 5 | Detroit Lions | 11 | 153 |
-| 2014 | 5 | Jacksonville Jaguars | 26 | 168 |
-| 2014 | 6 | Jacksonville Jaguars | 26 | 205 |
-| 2014 | 7 | Jacksonville Jaguars | 26 | 241 |
+| Draft | Round | Original club | Overall | Selection | Selected | Contract |
+|---|---|---|---|---|---|---|
+| 2014 | 1 | Washington Redskins | 13 | Aaron Donald, DT, Pittsburgh | May 8, 2014 | Signed May 11, 2014 |
+| 2014 | 1 | Jacksonville Jaguars | 26 | Joel Bitonio, OT, Nevada | May 8, 2014 | Signed May 11, 2014 |
+| 2014 | 2 | Arizona Cardinals | 38 | Davante Adams, WR, Fresno State | May 9, 2014 | Signed May 11, 2014 |
+| 2014 | 3 | Jacksonville Jaguars | 90 | Trai Turner, G, LSU | May 9, 2014 | Signed May 11, 2014 |
+| 2014 | 4 | Jacksonville Jaguars | 129 | Telvin Smith, LB, Florida State | May 10, 2014 | Signed May 11, 2014 |
+| 2014 | 5 | Detroit Lions | 153 | Corey Linsley, C, Ohio State | May 10, 2014 | Signed May 11, 2014 |
+| 2014 | 5 | Jacksonville Jaguars | 168 | Charles Leno Jr., OT, Boise State | May 10, 2014 | Signed May 11, 2014 |
+| 2014 | 6 | Jacksonville Jaguars | 205 | Jemea Thomas, DB, Georgia Tech | May 10, 2014 | Signed May 11, 2014 |
+| 2014 | 7 | Jacksonville Jaguars | 241 | Malcolm Butler, CB, West Alabama | May 10, 2014 | Signed May 11, 2014 |
 
-These are selection rights. Add each rookie’s full contract schedule after the actual selection and signing. No future contract dollars are booked against an unselected player. [The draft ownership record](../2014/draft/draft_order.md) controls the picks. Overall numbers include the 32 compensatory picks announced March 24, 2014 (ledger Entry 100); Jacksonville received none.
+All nine selections were exercised May 8 to 10 and signed May 11, 2014; no 2014 selection right remains. Each rookie contract is in the position tables above and in its individual sheet, and the gross and net Top-51 effect of the class is in the [cap worksheet](../2014/offseason/current_cap_worksheet.md). [The draft record](../2014/offseason/draft/draftees.md) owns the selections and [the draft ownership record](../2014/draft/draft_order.md) the picks. Overall numbers include the 32 compensatory picks announced March 24, 2014; Jacksonville received none.
 
 ## Decision calendar
 
 | Date / review | Player or group | Financial treatment |
 |---|---|---|
-| March 11, 2014 (done, Entry 94) | Futures, tenders and Monroe | Futures effective; RFA/ERFA tenders and the $11,654,000 franchise tender count while unsigned |
-| March 16, 2014 | Justin Blackmon | $1,700,000 deferred bonus cash; already allocated within the original cap schedule |
-| March 25, 2014 (traded March 20) | Uche Nwaneri | Roster bonus passes to Arizona; $2,189,000 of bonus proration is 2014 dead money |
-| Original opt-out window | Jason Babin | Keep the original 2014-2015 schedule until an actual exercise is recorded |
-| March 11, 2014 (closed) | Eugene Monroe | Five-year signed agreement replaced the franchise tender; no pending July 15 negotiation |
-| 2015 option window | Justin Blackmon | 2016 fifth-year option remains unexercised; exercise decision follows the 2014 season |
+| Open (June 16, 2014 is the adjusted June 15 RFA tender date in the career calendar) | Cameron Bradfield (RFA); Toney Clemons, Austin Pasztor and Mike Brown (ERFA) | The four unsigned tenders count once, $3,066,000 in all, until signed or withdrawn; no offer sheet was received by the May 2 deadline |
+| Open since May 10, 2014 | Will Rackley or Mike Brewster | Rackley-or-Brewster trade authorized, no buyer named, nothing booked; a trade would leave the final bonus allocation ($154,868 or $3,334) as 2014 dead money |
+| After the offseason program | Offseason workout charge | The $504,000 opening charge is reconciled to actual workout payments, not charged again |
+| 2014 season | Hakeem Nicks and Daniel Te’o-Nesheim | Active-game bonuses of $31,250 a game, up to $500,000 each, are counted in the 2014 charges |
 | 2016 option window | Lane Johnson | 2017 fifth-year option remains unexercised; exercise decision follows the 2015 season |
+| 2017 option window | Aaron Donald and Joel Bitonio | 2018 fifth-year options remain unexercised and unbooked; exercise decisions follow the 2016 season |
 
 ## Expiring contracts and free-agent classes
 

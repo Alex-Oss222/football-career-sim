@@ -111,6 +111,17 @@ class CapTrackerTests(unittest.TestCase):
         self.assertIn('Alex Stone | Head coach | Unspecified',organization)
         self.assertNotIn('Alex Stone',main)
 
+    def test_signed_draft_class_and_traded_players_are_not_shown_as_pending(self):
+        outputs=render(self.data)
+        main=next(value for path,value in outputs.items() if path.name=='jaguars_cap.md')
+        details=next(value for path,value in outputs.items() if path.name=='jaguars_contract_details.md')
+        self.assertIn('| Aaron Donald, DT, Pittsburgh | May 8, 2014 | Signed May 11, 2014 |',main)
+        self.assertNotIn('These are selection rights',main)
+        self.assertNotIn('Review the exercise decision in the 2015 option window',details)
+        self.assertIn('Aaron Donald and Joel Bitonio | 2018 fifth-year options remain unexercised',main)
+        for name in ['Uche Nwaneri','Jason Babin','Justin Blackmon']:
+            self.assertNotIn(name, main.split('## Decision calendar')[1].split('## Expiring')[0])
+
     def test_original_contracts_survive_without_later_real_restructures(self):
         self.assertEqual(self.player('Kirk Cousins')['years']['2014']['cap'], 570000)
         self.assertEqual(self.player('Kirk Cousins')['years']['2015']['proration'], 0)
