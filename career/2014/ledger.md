@@ -403,3 +403,53 @@ No player development or coaching profile handoff falls in this window: Phase On
 **Atomic closure.** The phase output and evidence summary, the decision package, the memo amendment, the calendar, the 2014 and offseason READMEs, readiness, the operating baseline, the working depth chart, player ages and the progression roster, and Documents 4 and 5 agree with Entry 108's records. The private snapshot is advanced only after merge.
 
 **Commit closed - Canonical update - May 11, 2014 - 2014 draft and undrafted signings; Phase Two under way - canonical through May 11, 2014**
+
+## Entry 110 — May 11–12, 2014 — Rackley traded to Seattle; Ball not re-signed
+
+**Recorded:** September 30, 2026. **Simulation clock:** advances from Sunday, May 11 to Monday, May 12, 2014.
+**Checkpoint:** `Canonical update - May 12, 2014 - Rackley traded to Seattle; Ball not re-signed`
+**Preceding global package checkpoint:** `Canonical update - May 11, 2014 - 2014 draft and undrafted signings; Phase Two under way`
+
+**Authority and method.** Stone's instruction is in the [memo amendment of September 30, 2026](offseason/stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-shop-will-rackley-keep-mike-brewster): shop Will Rackley for an unconditional 2015 seventh-round pick, with a 2016 seventh or a conditional 2015 seventh as fallbacks only if necessary, and keep Mike Brewster. The trade became available on May 10, when Jacksonville drafted four offensive linemen. Caldwell made the ask and each club answered on its own need and the price, with no private draw. Event owner: [the trade record](trades/rackley_to_seattle_2014-05-12.md).
+
+**Calls, May 11.** Caldwell called the six clubs on Stone's line-needy list.
+- San Francisco, Carolina, New England and Houston passed: each had added an interior lineman in the draft that had just ended.
+- Chicago passed: it re-signed its starting left guard, Matt Slauson, in March.
+- Seattle accepted. Its 2013 starting left guard, Paul McQuistan, signed with Cleveland on March 24, and it drafted no interior lineman. Seattle took the unconditional 2015 seventh without a counter, subject to its physical. No fallback was needed.
+
+**Terms.**
+
+| Jacksonville sends | Seattle sends |
+|---|---|
+| G Will Rackley | Seattle's own 2015 seventh-round pick, unconditional |
+
+**Physical and processing.** Rackley passed Seattle's physical on May 12 with his Week 5 upper-extremity limitation disclosed; it carries no projected absence. Processed May 12; Seattle takes his contract from that date. A trade is not his real 2014 move, so he follows no rail and is a branch player on Seattle's roster.
+
+**Cap effects (pre-June 1 trade).**
+- Rackley's $1,585,868 2014 charge leaves ($1,431,000 base and $154,868 final bonus allocation). The $154,868 stays as 2014 dead money; Seattle takes the base. His contract had no 2015 year.
+- **Tracker totals:** player contracts $125,597,494 including tenders, plus $10,417,192 dead money. The 27 lowest base salaries ($11,565,000) fall outside the offseason Top 51, giving $124,449,686. With the $504,000 workout charge the working total is $124,953,686, an $8,046,314 working difference before carryover and reserves, or about $13,376,314 to $14,046,314 with the 2013 rollover estimate. This is not certified room.
+- **Net 2014 effect:** the contract alone improves 2014 by $1,431,000, but one $495,000 base moves back inside the Top 51, so the working difference rises by $936,000 from $7,110,314.
+- **2015 commitments:** $123,275,736, unchanged.
+
+**Alan Ball, May 12.** Stone's instruction is in the [memo amendment of September 30, 2026](offseason/stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-alan-ball): do not re-sign Ball now; keep him as the first veteran corner to call if the room is hit. Stone talked to Ball on May 12, told him Jacksonville had no clean role to offer after what it added at corner and that this was not a failure on his part, and asked him and his agent to name three clubs with a real opportunity; Caldwell called those three the same day with an honest evaluation. Under the rails no club's real history includes a Ball signing, so he stays an unplaced free agent and Jacksonville keeps him first on its veteran-corner call list. Event owner: [the conversation record](offseason/free_agency/alan_ball_2014-05-12.md). No decision on Ball is pending.
+
+**Effects.**
+- **Roster:** controlled roster 78: 74 signed and four unsigned tenders. The guards are Asper, Pasztor (tendered, unsigned), Turner, Norwell and Feiler.
+- **Draft picks:** 2015 picks held: Jacksonville's own second, Miami's third, Houston's fourth, Arizona's fourth and Seattle's seventh. Owed away: 2015 first and fourth and 2016 fifth to Arizona, 2017 seventh to Miami.
+- **Depth chart:** Rackley (OL 3, starting right guard) is removed; Johnson, Bradfield, Pasztor and Asper move up without a reorder. The starting right guard role is open for Stone. Brewster keeps his carried place at center.
+- **Availability:** every controlled player has no communicated restriction; Rackley was the one limited player.
+- **Program:** Rackley was a Phase One and Phase Two participant through May 8; his departure is noted in the [phase output](offseason/offseason_program/output.md). His queued film packet is withdrawn; none had been issued.
+- **Player cards:** Rackley's working card is kept as history under former players.
+- **Rails:** Seattle's page records the branch trade.
+
+**Open.**
+- The WR1, WR3, left guard, right guard and Edge 1 roles, and every rookie's place (Stone's decisions).
+- The four unsigned tenders (Caldwell's office); Hurst's medical hold.
+- Film packet approval and delivery; the January 31 receipts remain unverified.
+- The rails from March 11 evening to May 12 remain unswept beyond the targets' own moves, the branch trades, Allen's retirement and the Entry 108 draft and undrafted moves.
+
+**Next.** May 13 to 15: rookie onboarding preparation and Phase Two program days; May 13 team dinner; May 15 family barbecue; May 16 and 17 rookie minicamp.
+
+**Atomic closure.** The trade record, completed trades, offer log, trade targets and README, pick ownership register and generated draft order, Seattle rails page, Ball conversation record, signings record and free-agency board, contract status register, contract table, cap worksheet, financial inputs and generated cap views, roster, working depth chart and its JSON copy, player cards index, film queue, phase output, player ages and the progression roster, calendar, the 2014 README, readiness, operating baseline and Documents 4 and 5 agree. The private snapshot is advanced only after merge.
+
+**Commit closed - Canonical update - May 12, 2014 - Rackley traded to Seattle; Ball not re-signed - canonical through May 12, 2014**

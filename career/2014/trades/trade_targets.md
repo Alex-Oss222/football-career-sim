@@ -1,16 +1,16 @@
 # Jacksonville Jaguars: 2014 trade targets
 
-This page is the trade plan: what each trade Stone recommended to Caldwell is, what it may accept, and where it stands at May 11, 2014. Stone's intent comes from [section 5 of his February 2 memo and its amendments](../offseason/stone_to_caldwell_2014_offseason_decisions.md#5-2014-trade-targets), which control where this summary is silent. No player or pick changes control through this page. Actual contacts are in the [offer log](trade_offers.md), finished deals in [completed trades](trades.md), and the March 24 outcomes in the user's [trade resolution log](march_24_2014_trade_resolution.md).
+This page is the trade plan: what each trade Stone recommended to Caldwell is, what it may accept, and where it stands at May 12, 2014. Stone's intent comes from [section 5 of his February 2 memo and its amendments](../offseason/stone_to_caldwell_2014_offseason_decisions.md#5-2014-trade-targets), which control where this summary is silent. No player or pick changes control through this page. Actual contacts are in the [offer log](trade_offers.md), finished deals in [completed trades](trades.md), and the March 24 outcomes in the user's [trade resolution log](march_24_2014_trade_resolution.md).
 
 ## Trades and status
 
-| Trade | What it is | Status at May 11, 2014 |
+| Trade | What it is | Status at May 12, 2014 |
 |---|---|---|
 | Arizona trade for No. 38 | Jacksonville's original 2015 first, 2015 fourth and 2016 fifth, plus Uche Nwaneri, for Arizona's original 2014 second, No. 38, to select Davante Adams ([revision](../offseason/stone_to_caldwell_2014_offseason_decisions.md#september-29-2026-amendment-league-year-draws-and-package-i-revised)) | Completed March 20 |
 | Babin trade with Miami | DE Jason Babin, first to Miami, then Houston, then San Diego; the plan asked a 2015 fifth | Completed March 24 with Miami: Babin and Jacksonville's 2017 seventh for Miami's unconditional 2015 third |
 | Alualu trade with Houston | DT Tyson Alualu, to the same three clubs once Sen'Derrick Marks re-signed; the plan asked a 2015 sixth | Completed March 24: Alualu for Houston's unconditional 2015 fourth; $1,542,500 of 2014 dead money stays with Jacksonville |
 | Allen trade with Arizona | LB Russell Allen to a club with a documented linebacker need, before his scheduled April 22 retirement; the plan asked an unconditional 2015 or 2016 seventh | Agreed in principle March 24 for Arizona's unconditional 2015 fourth; completed April 7 after Paul Posluszny's April 5 clearance and Allen's physical ([completed trades](trades.md)) |
-| Rackley-or-Brewster trade | One of Will Rackley or Mike Brewster, once Jacksonville has drafted two offensive linemen | Active from May 10: Jacksonville drafted four offensive linemen (Bitonio, Turner, Linsley and Leno). Caldwell may now shop one of Rackley or Brewster for a 2015 seventh; which player is his choice with Stone, no buyer is named and nothing is booked |
+| Rackley-or-Brewster trade | One of Will Rackley or Mike Brewster, once Jacksonville has drafted two offensive linemen | Completed May 12 with Seattle: Rackley for Seattle's own unconditional 2015 seventh, after Stone's instruction to shop Rackley and keep Brewster ([trade record](rackley_to_seattle_2014-05-12.md)). Brewster is kept and is not shopped |
 | Original Nwaneri offer | Nwaneri alone for a 2015 sixth, before his March 25 roster bonus | Withdrawn March 18, when Nwaneri moved into the Arizona trade |
 | Shorts-and-Blackmon trade with Indianapolis | Cecil Shorts and Justin Blackmon for draft picks, ideally one in rounds 2 to 4, with Jacksonville taking the dead money ([March 31 instruction](../offseason/stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-trade-shorts-and-blackmon)) | Completed March 31 with Indianapolis: both players for the Colts' 2014 third, No. 82, and sixth, No. 194 ([trade record](shorts_blackmon_to_indianapolis_2014-03-31.md)) |
 | Shorts-and-Blackmon trade with Seattle (earlier version) | Cecil Shorts and Justin Blackmon for Seattle's original 2014 second, No. 36, once Golden Tate and a replacement receiver had signed | Never offered: Tate went to Detroit and Julian Edelman to New England ([amendment](../offseason/stone_to_caldwell_2014_offseason_decisions.md#september-29-2026-amendment-edelman-after-tate-and-package-a)). Superseded by the March 31 instruction; the Shorts extension it left open no longer applies |
@@ -19,12 +19,7 @@ This page is the trade plan: what each trade Stone recommended to Caldwell is, w
 
 ## Open trades
 
-### Rackley-or-Brewster trade
-
-- Open since May 10, 2014: the condition was met when Jacksonville drafted Bitonio, Turner, Linsley and Leno (ledger Entry 108). Which of Rackley or Brewster to shop is an open item for Stone and Caldwell; no call has been made and no buyer is named.
-- Caldwell then chooses which one player to shop, to the clubs in the original Nwaneri call order (San Francisco, Carolina, New England, Seattle, Chicago, Houston). The ask is a 2015 seventh; the authorized alternatives are a 2016 seventh, or a 2015 seventh conveyed only on the games condition. Trading both needs a separate Stone authorization.
-- Games condition: the traded player appears in at least half of the acquiring club's 2014 regular-season games, counted from that club's branch receipts, never snaps, starts or real 2014 participation. The accepted instrument records the exact trigger.
-- The player stays a Jaguar and nothing is booked until a buyer accepts. Reassess interior-line coverage from actual acquisitions before offering; no player loses his role through this plan.
+None. The Rackley-or-Brewster trade closed May 12: the condition was met when Jacksonville drafted Bitonio, Turner, Linsley and Leno; Stone chose Rackley and kept Brewster ([amendment](../offseason/stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-shop-will-rackley-keep-mike-brewster)); Caldwell called the six clubs in the original Nwaneri order on May 11 and Seattle accepted the unconditional 2015 seventh, so neither fallback (a 2016 seventh or a 2015 seventh on the games condition) was used. Brewster is shopped only if Stone later decides Linsley has earned enough trust to make him expendable, which would be a new instruction.
 
 ## Money, control and priority
 

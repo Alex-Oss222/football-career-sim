@@ -1,6 +1,6 @@
 # Jacksonville Jaguars individual contract details
 
-[Return to the twelve-year table](jaguars_cap.md). As of May 11, 2014, Entry 109. Whole US dollars.
+[Return to the twelve-year table](jaguars_cap.md). As of May 12, 2014, Entry 110. Whole US dollars.
 
 Annual cells contain the working original or reconstructed contract schedule. Blank years lie outside that deal. The [completion research](../../library/2014_jaguars_contract_completion.md) identifies adopted simulation terms and guarantee assumptions. Cap, scheduled cash and remaining unpaid guarantees are separate amounts.
 
@@ -385,7 +385,7 @@ Former player; departure March 31, 2014. [ledger](../../career/2014/ledger.md).
 
 No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
-The 2016 fifth-year option is unexercised and is excluded from committed years. Review the exercise decision in the 2015 option window. The deferred bonus cash is already incorporated in the original bonus allocation and is not charged twice.
+The contract, its deferred bonus cash and the 2016 fifth-year option left with the March 31, 2014 trade to Indianapolis. Only the accelerated bonus allocation stays with Jacksonville, once, in the dead-money ledger.
 
 ### Contract notes
 
@@ -489,23 +489,17 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ## Will Rackley
 
+Former player; departure May 12, 2014. [ledger](../../career/2014/ledger.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | OG / Under contract |
+| Position / status | OG / Traded to Seattle, May 12, 2014 (Entry 110) |
 | Original contract | Rookie, 2011 third round |
 | Signed | 2011 |
 | Term | 4 / 2014 |
 | Contract value | $2,914,274 |
-| Bonus terms | $619,472 signing bonus; final 2014 allocation $154,868 |
-| Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap. |
-| Schedule basis | Includes adopted simulation amounts; see contract notes |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 | $1,431,000 | $154,868 | $0 | $1,585,868 | $1,431,000 | $0 |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 ### Contract notes
 

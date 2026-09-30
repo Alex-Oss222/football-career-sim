@@ -3,9 +3,9 @@
 ## Document status
 
 - Function: Canonical register for current Jacksonville player control, staff operating authority, roster legality, contract/cap and draft-capital reconciliation, availability boundaries and football-role state.
-- Current status: **RECONCILED THROUGH ENTRY 109 (2014 DRAFT AND UNDRAFTED SIGNINGS; PHASE TWO UNDER WAY)**.
-- Effective through: **May 11, 2014 (79 controlled players; nine draft selections May 8 to 10 and 17 undrafted signings May 10; rookie contracts signed May 11; Phase One handoff May 2; Phase Two from May 5; the four unsigned tenders outside the program)**.
-- Current authority: `career/2014/ledger.md`, Entry 109 (May 1 instruction on the four unsigned tenders and the revised cross-training list; Phase One handoff May 2; Phase Two May 5 to 9; clock May 11), Entry 108 (nine draft selections May 8 to 10: Donald, Bitonio, Adams, Turner, Telvin Smith, Linsley, Leno, Thomas, Butler; 17 undrafted rookies signed May 10; rookie contracts signed May 11; controlled roster 79; Rackley-or-Brewster trade active), Entry 107 (April 18 decisions: Tice emergency practice lead, Crennel second; defensive relay succession Smith, Posluszny, Stanford; Phase One April 21 to May 1; Allen retired at Arizona April 22; schedule released April 23; controlled roster 53; clock May 1), Entry 106 (Henne re-signed April 4; Posluszny cleared April 5; Allen traded to Arizona April 7 for Arizona's 2015 fourth; controlled roster 53; clock April 17), Entry 105 (Nos. 82 and 194 traded to Washington March 31 for Jacksonville's original 2015 second; no players move), Entry 104 (Shorts and Blackmon traded to Indianapolis March 31 for Nos. 82 and 194; controlled roster 53), Entry 103 (Jones-Drew and C.J. Wilson re-signed March 28; schedule filed; controlled roster 55), Entry 102 (Babin to Miami and Alualu to Houston, March 24; controlled roster 53) and Entry 101 (administrative).
+- Current status: **RECONCILED THROUGH ENTRY 110 (RACKLEY TRADED TO SEATTLE)**.
+- Effective through: **May 12, 2014 (78 controlled players; Rackley traded to Seattle May 12 for Seattle's unconditional 2015 seventh; Ball not re-signed; nine draft selections May 8 to 10 and 17 undrafted signings May 10; rookie contracts signed May 11; Phase Two from May 5; the four unsigned tenders outside the program)**.
+- Current authority: `career/2014/ledger.md`, Entry 110 (Rackley traded to Seattle May 12 for Seattle's own unconditional 2015 seventh after the May 11 calls; $154,868 dead money; Ball not re-signed May 12; controlled roster 78; clock May 12), Entry 109 (May 1 instruction on the four unsigned tenders and the revised cross-training list; Phase One handoff May 2; Phase Two May 5 to 9; clock May 11), Entry 108 (nine draft selections May 8 to 10: Donald, Bitonio, Adams, Turner, Telvin Smith, Linsley, Leno, Thomas, Butler; 17 undrafted rookies signed May 10; rookie contracts signed May 11; controlled roster 79; Rackley-or-Brewster trade active), Entry 107 (April 18 decisions: Tice emergency practice lead, Crennel second; defensive relay succession Smith, Posluszny, Stanford; Phase One April 21 to May 1; Allen retired at Arizona April 22; schedule released April 23; controlled roster 53; clock May 1), Entry 106 (Henne re-signed April 4; Posluszny cleared April 5; Allen traded to Arizona April 7 for Arizona's 2015 fourth; controlled roster 53; clock April 17), Entry 105 (Nos. 82 and 194 traded to Washington March 31 for Jacksonville's original 2015 second; no players move), Entry 104 (Shorts and Blackmon traded to Indianapolis March 31 for Nos. 82 and 194; controlled roster 53), Entry 103 (Jones-Drew and C.J. Wilson re-signed March 28; schedule filed; controlled roster 55), Entry 102 (Babin to Miami and Alualu to Houston, March 24; controlled roster 53) and Entry 101 (administrative).
 - Prior progression authority: `career/2013/ledger.md`, Entries 1 to 100 (hire through the March 24, 2014 compensatory announcement).
 - Detailed readable roster: `career/2014/roster.md`.
 - Current cap worksheet: `career/2014/offseason/current_cap_worksheet.md`.
@@ -25,14 +25,14 @@ This register states each current fact once, in the section that owns it. How th
 | Season | 2014 |
 | Divergence point | January 15, 2013: Alex Stone accepts Jacksonville head-coach offer |
 | Season phase | 2014 offseason; league year open from March 11, 2014 (2013 season complete, eliminated in the AFC Divisional round) |
-| Owned content effective | May 11, 2014 |
-| Document 4 register version | `JAX-2014-MAY11-REGISTER-62` |
-| Supersedes | `JAX-2014-MAY01-REGISTER-61` |
-| Last content-changing checkpoint | `Canonical update - May 11, 2014 - 2014 draft and undrafted signings; Phase Two under way` |
-| Latest Document 6 event | 2014 ledger Entry 109: Phase One handoff May 2; the four unsigned tenders outside the program; Phase Two May 5 to 9; clock May 11, 2014. Entry 108: nine 2014 draft selections, 17 undrafted signings and nine rookie contracts; controlled roster 79 |
-| Current controlled players | **79** |
+| Owned content effective | May 12, 2014 |
+| Document 4 register version | `JAX-2014-MAY12-REGISTER-63` |
+| Supersedes | `JAX-2014-MAY11-REGISTER-62` |
+| Last content-changing checkpoint | `Canonical update - May 12, 2014 - Rackley traded to Seattle; Ball not re-signed` |
+| Latest Document 6 event | 2014 ledger Entry 110: Rackley traded to Seattle for Seattle's unconditional 2015 seventh (calls May 11, processed May 12); Alan Ball not re-signed; controlled roster 78; clock May 12, 2014 |
+| Current controlled players | **78** |
 | Current practice squad | **0** (no 2014 practice squad before the regular season) |
-| Next scheduled football event | Rookie onboarding May 12 to 15, Phase Two program days from May 12, rookie minicamp May 16 and 17; dated events are in Document 5 section 9 |
+| Next scheduled football event | Rookie onboarding May 13 to 15, Phase Two program days, rookie minicamp May 16 and 17; dated events are in Document 5 section 9 |
 | Unresolved matter before participation | Bradfield, Clemons, Brown and Pasztor (unsigned tenders) are outside the program and the social calendar until they sign (user instruction, May 1). The 26 rookies need their physicals and onboarding before field work; Cornelius Lucas's pre-combine foot stress fracture needs a current club physical. Recheck control, medical instructions and calendar permissions before each phase |
 
 ## Roster control and legality
@@ -41,20 +41,20 @@ This register states each current fact once, in the section that owns it. How th
 
 | Exact primary status | Current count | Governing limit | Reconciled |
 |---|---:|---:|---|
-| Offseason roster | **79** | 90-player offseason limit from the league year | May 11, 2014 (Entry 108: nine draftees and 17 undrafted rookies added) |
+| Offseason roster | **78** | 90-player offseason limit from the league year | May 12, 2014 (Entry 110: Rackley traded) |
 
 | Primary-status total | Current value | Derivation |
 |---|---:|---|
-| Players under signed contracts | **75** | 37 continuing contracts; six reserve/future contracts effective March 11; Monroe, Marks, Verner and Talib (signed March 11), Nicks (March 14), Hawkins and Te'o-Nesheim (March 18) in the free-agency replay; Cain re-signed March 19; Jones-Drew and C.J. Wilson re-signed March 28; Henne re-signed April 4; less Nwaneri, Babin, Alualu, Shorts, Blackmon and Allen (traded); plus the nine 2014 draft selections (rookie contracts signed May 11) and 17 undrafted rookies (signed May 10) |
+| Players under signed contracts | **74** | 36 continuing contracts; six reserve/future contracts effective March 11; Monroe, Marks, Verner and Talib (signed March 11), Nicks (March 14), Hawkins and Te'o-Nesheim (March 18) in the free-agency replay; Cain re-signed March 19; Jones-Drew and C.J. Wilson re-signed March 28; Henne re-signed April 4; less Nwaneri, Babin, Alualu, Shorts, Blackmon, Allen and Rackley (traded); plus the nine 2014 draft selections (rookie contracts signed May 11) and 17 undrafted rookies (signed May 10) |
 | Players on unsigned tenders | **4** | Bradfield (RFA); Clemons, Brown and Pasztor (ERFA) |
 | Reserve lists | **0** | Meester's Reserve/Retired contract expired March 11 |
 | Practice-squad players | **0** | No 2014 practice squad before the regular season |
 
-The offseason roster is 79 of 90. Only recorded contracts and the adopted contract schedules establish 2014 control; participation still follows the calendar and medical state.
+The offseason roster is 78 of 90. Only recorded contracts and the adopted contract schedules establish 2014 control; participation still follows the calendar and medical state.
 
 ### Current player index
 
-<!-- player-ages-as-of: 2014-05-11 -->
+<!-- player-ages-as-of: 2014-05-12 -->
 
 DOB is a verified pre-divergence identity fact, supported by the [birth-date evidence registry](../library/data/player_birth_dates.json) and [verification notes](../library/2013_player_birth_dates.md). Age is derived at Document 5's master date, refreshed with `python scripts/render_player_ages.py`. An age does not determine a rating, medical clearance or retirement.
 
@@ -94,7 +94,6 @@ The availability column records the club's latest medical communication. Every p
 | Cornelius Lucas | JAX-CORNELIUSLUCAS | OT | 1991-07-18 | 22 | Offseason roster (rookie, undrafted) | Undrafted rookie contract signed May 10, 2014: three years through 2016, $1,545,000, $15,000 signing bonus | No communicated restriction | Entry 108 |
 | Mark Asper | JAX-MARKASPER | G | 1985-11-08 | 28 | Offseason roster | Existing contract/control | No communicated restriction | Entry 41 |
 | Austin Pasztor | JAX-AUSTINPASZTOR | G | 1990-11-26 | 23 | Offseason roster (ERFA tender, unsigned) | ERFA tender, $570,000, made March 11, 2014; unsigned | No communicated restriction | Entry 46 |
-| Will Rackley | JAX-WILLRACKLEY | G | 1989-10-11 | 24 | Offseason roster | Existing rookie contract | Limited, no projected absence (upper extremity, Week 5) | Entry 41 |
 | Trai Turner | JAX-TRAITURNER | G | 1993-06-14 | 20 | Offseason roster (rookie, drafted) | No. 90; rookie contract signed May 11, 2014: four years through 2017, $2,808,520, $543,520 signing bonus | No communicated restriction | Entry 108 |
 | Andrew Norwell | JAX-ANDREWNORWELL | G | 1991-10-25 | 22 | Offseason roster (rookie, undrafted) | Undrafted rookie contract signed May 10, 2014: three years through 2016, $1,545,000, $15,000 signing bonus | No communicated restriction | Entry 108 |
 | Matt Feiler | JAX-MATTFEILER | G | 1992-07-07 | 21 | Offseason roster (rookie, undrafted) | Undrafted rookie contract signed May 10, 2014: three years through 2016, $1,545,000, $15,000 signing bonus | No communicated restriction | Entry 108 |
@@ -144,9 +143,9 @@ The availability column records the club's latest medical communication. Every p
 
 ### Open player-control matters
 
-- The Rackley-or-Brewster trade is active: Jacksonville drafted four offensive linemen on May 8 to 10, so Caldwell may shop one of Rackley or Brewster for a 2015 seventh. Which player is an open item for Stone and Caldwell; no buyer is named and nothing is booked.
+- The Rackley-or-Brewster trade closed May 12: Rackley to Seattle for Seattle's unconditional 2015 seventh; Brewster is kept and is not shopped. The starting right guard place is open for Stone.
 - James Hurst (OT, North Carolina) is held on the undrafted board until a medical clearance is recorded.
-- Alan Ball's revisit after the draft is a user decision.
+- Alan Ball was not re-signed on May 12 after Stone's conversation with him; he is an unplaced free agent and the first veteran corner Jacksonville calls if the room is hit ([record](../career/2014/offseason/free_agency/alan_ball_2014-05-12.md)).
 - Ball and Brent Grimes are unrestricted free agents (see below).
 
 ### Players no longer under Jacksonville control
@@ -155,13 +154,14 @@ No later real destination is imported for any departed player unless the league 
 
 | Player | Left control | Current branch status | Source |
 |---|---|---|---|
+| Will Rackley | May 12, 2014 | Traded to Seattle for Seattle's own unconditional 2015 seventh, after the May 11 calls and his May 12 physical; $154,868 dead money; a branch player on Seattle's roster | Entry 110 |
 | Russell Allen | April 7, 2014 | Traded to Arizona for Arizona's unconditional 2015 fourth, after Posluszny's April 5 clearance and Allen's physical; $416,668 dead money. He retired at Arizona April 22 under the rails | Entries 106 and 107 |
 | Cecil Shorts | March 31, 2014 | Traded to Indianapolis with Blackmon for the Colts' 2014 third (No. 82) and sixth (No. 194); $110,845 dead money | Entry 104 |
 | Justin Blackmon | March 31, 2014 | Traded to Indianapolis with Shorts; $5,951,636 dead money (2014 and 2015 bonus allocations accelerated) | Entry 104 |
 | Uche Nwaneri | March 20, 2014 | Traded to Arizona with Jacksonville's 2015 first, 2015 fourth and 2016 fifth for No. 38 (the Arizona trade for No. 38) | Entry 99 |
 | Jason Babin | March 24, 2014 | Traded to Miami with Jacksonville's 2017 seventh for Miami's 2015 third (the Babin trade with Miami); no dead money | Entry 102 |
 | Tyson Alualu | March 24, 2014 | Traded to Houston for Houston's 2015 fourth (the Alualu trade with Houston); $1,542,500 dead money | Entry 102 |
-| Alan Ball | March 11, 2014 | Unrestricted free agent; not pursued while both signed corners are under contract | Entries 94 and 103 |
+| Alan Ball | March 11, 2014 | Unrestricted free agent; not re-signed May 12 after Stone's conversation; unplaced under the rails and first on the veteran-corner call list | Entries 94, 103 and 110 |
 | Brent Grimes | March 11, 2014 | Unrestricted free agent; not pursued while both signed corners are under contract | Entries 94 and 103 |
 | Allen Reisner | March 11, 2014 | Not tendered; unrestricted free agent | Entry 94 |
 | Kevin Rutland | March 11, 2014 | Not tendered; unrestricted free agent | Entry 94 |
@@ -189,13 +189,13 @@ No later real destination is imported for any departed player unless the league 
 
 ## Contracts, cap and draft capital
 
-The [2014 cap worksheet](../career/2014/offseason/current_cap_worksheet.md) holds the working accounting, not certified cap room. The [2014 contract table](../career/2014/offseason/contract_table.md) is the per-player view of terms, and the [ten-year tracker](../career/finances/jaguars_cap.md) carries every schedule forward.
+The [2014 cap worksheet](../career/2014/offseason/current_cap_worksheet.md) holds the working accounting, not certified cap room. The [2014 contract table](../career/2014/offseason/contract_table.md) is the per-player view of terms, and the [twelve-year tracker](../career/finances/jaguars_cap.md) carries every schedule forward.
 
 | Control | Current position | Source / limit |
 |---|---|---|
 | 2014 unadjusted league cap | **$133,000,000**, published February 28, 2014. 2013 rollover estimated at about $5.33M to $6.00M (working estimate); adjusted cap and certified cap space unresolved | `library/2014_league_calendar_and_financial_rules.md`; Entry 89; `career/2014/offseason/current_cap_worksheet.md` (2013 rollover), Entry 104 |
-| 2014 scheduled player cap | **$127,183,362** including $3,066,000 of unsigned tenders, the nine rookie contracts ($8,275,282 gross) and the 17 undrafted contracts ($7,165,000 gross); plus $10,262,324 dead money (Bray $51,675; Nwaneri $2,189,000; Alualu $1,542,500; Shorts $110,845; Blackmon $5,951,636; Allen $416,668). Offseason Top-51 count $125,385,686 (the 28 lowest base salaries, $12,060,000, outside) plus the $504,000 workout charge: $125,889,686, a $7,110,314 working difference before carryover and reserves. Not certified room | `career/finances/jaguars_cap.md`; [worksheet](../career/2014/offseason/current_cap_worksheet.md) (Entry 108) |
-| 2015 commitments | $123,275,736; 2016 $84,131,574; 2017 $48,550,284; 2018 $18,900,000 | Entry 108 |
+| 2014 scheduled player cap | **$125,597,494** including $3,066,000 of unsigned tenders, the nine rookie contracts ($8,275,282 gross) and the 17 undrafted contracts ($7,165,000 gross); plus $10,417,192 dead money (Bray $51,675; Nwaneri $2,189,000; Alualu $1,542,500; Shorts $110,845; Blackmon $5,951,636; Allen $416,668; Rackley $154,868). Offseason Top-51 count $124,449,686 (the 27 lowest base salaries, $11,565,000, outside) plus the $504,000 workout charge: $124,953,686, an $8,046,314 working difference before carryover and reserves, or about $13.38M to $14.05M with the rollover estimate. Not certified room | `career/finances/jaguars_cap.md`; [worksheet](../career/2014/offseason/current_cap_worksheet.md) (Entry 110) |
+| 2015 commitments | $123,275,736; 2016 $84,131,574; 2017 $48,550,284; 2018 $18,900,000 (unchanged by the Rackley trade; his contract had no 2015 year) | Entries 108 and 110 |
 | Monroe | Five-year contract signed March 11 replaced the $11,654,000 franchise tender (charged once; no second designation) | Entry 95 |
 | RFA/ERFA tenders | Bradfield $1,431,000; Clemons and Pasztor $570,000 each; Brown $495,000; all unsigned, made March 11 | Entry 94 |
 | Adopted contract schedules | Every covered player-year of an existing contract has an adopted dollar amount; years outside a deal stay blank; simulated terms remain distinguishable from recovered historical terms | Entry 91 |
@@ -211,7 +211,7 @@ No current contract guarantees a depth-chart position, rep share, target share, 
 Current source: `career/2014/draft/pick_ownership.json`; generated seven-round order: `career/2014/draft/draft_order.md`.
 
 - 2014: all nine ordinary picks exercised May 8 to 10 (13 Donald, 26 Bitonio, 38 Adams, 90 Turner, 129 Telvin Smith, 153 Linsley, 168 Leno, 205 Thomas, 241 Butler); none remain. No compensatory pick. Jacksonville's own 2014 second (No. 58) belonged to Washington, as did Indianapolis's third and sixth (Nos. 82 and 194), received in the Shorts and Blackmon trade and sent to Washington the same day.
-- 2015: Jacksonville's own second (returned by Washington on March 31; slot unknown), Miami's third, Houston's fourth and Arizona's fourth (from the Allen trade, April 7). Jacksonville's own 2015 first and fourth belong to Arizona.
+- 2015: Jacksonville's own second (returned by Washington on March 31; slot unknown), Miami's third, Houston's fourth, Arizona's fourth (from the Allen trade, April 7) and Seattle's seventh (from the Rackley trade, May 12). Jacksonville's own 2015 first and fourth belong to Arizona.
 - 2016 and 2017: Jacksonville's 2016 fifth belongs to Arizona and its 2017 seventh to Miami.
 - League order: Indianapolis 14 / Green Bay 15 by coin flip; league ownership audited with three specific conditional claims.
 
@@ -231,8 +231,7 @@ Current source: `career/2014/draft/pick_ownership.json`; generated seven-round o
 
 The player index owns each player's availability boundary. In summary:
 
-- Will Rackley is limited (upper extremity, Week 5), with no projected absence.
-- Every other controlled player has no communicated restriction. Paul Posluszny's head/neck hold from Week 13 cleared on April 5, 2014, his projected date. Earlier injuries to Bouye, Kelce, Owens, Thielen and Ryan Davis cleared at their projections; Pasztor and Mosley are available.
+- Every controlled player has no communicated restriction; Will Rackley, the one limited player, was traded to Seattle May 12. Paul Posluszny's head/neck hold from Week 13 cleared on April 5, 2014, his projected date. Earlier injuries to Bouye, Kelce, Owens, Thielen and Ryan Davis cleared at their projections; Pasztor and Mosley are available.
 - The 26 rookies have no communicated restriction; their club physicals precede field work. Cornelius Lucas was measured at the combine on crutches after a pre-combine foot stress fracture (public February 2014), so his physical is a specific check before any field work.
 - No player is on a reserve list.
 
@@ -240,10 +239,10 @@ The player index owns each player's availability boundary. In summary:
 
 2013 roles carry until Stone changes them. The Role column of `career/2014/roster.md` records each decided role. Current depth order is `career/2013/depth_chart.json` (effective January 6, AFC Divisional preparation; read by `runtime/week_inputs.py`). The [2014 working depth chart](../career/2014/depth_chart.md) carries that order into 2014 with contract flags; it records no 2014 decision and is not a game input.
 
-- Open places: TE3 (Reisner), the corner places of Brent Grimes and Ball and the reserve corner place of Rutland, left guard (Nwaneri), the carried Edge 1 place (Babin) and the carried WR1 and WR3 places (Shorts and Blackmon). Verner, Talib, Nicks, Hawkins and Te'o-Nesheim have no place set, nor do the six reserve/future players, the nine 2014 draft selections or the 17 undrafted rookies; rookies are added to the chart, not placed, and Stone places them only by decision.
+- Open places: TE3 (Reisner), the corner places of Brent Grimes and Ball and the reserve corner place of Rutland, left guard (Nwaneri), right guard (Rackley, traded May 12), the carried Edge 1 place (Babin) and the carried WR1 and WR3 places (Shorts and Blackmon). Verner, Talib, Nicks, Hawkins and Te'o-Nesheim have no place set, nor do the six reserve/future players, the nine 2014 draft selections or the 17 undrafted rookies; rookies are added to the chart, not placed, and Stone places them only by decision.
 - Returned to carried places: Marks; Jones-Drew at lead back (RB 1, no starting promise); C.J. Wilson on the front, after Pendleton (no role promise); Cain at long snapper; Henne at QB2 (no starting promise).
 - Quarterback: Cousins QB1, Henne QB2, John Parker Wilson QB3; Bray, no role set.
-- Offensive line: Monroe, left guard open, Brewster (the starting center, confirmed Week 6), Rackley, Johnson; Bradfield swing tackle and sixth offensive lineman (carried; outside the program until he signs); Asper interior depth. Bitonio (tackle or guard first is Stone's decision), Turner, Linsley, Leno and the five undrafted linemen have no place set.
+- Offensive line: Monroe, left guard open, Brewster (the starting center, confirmed Week 6), right guard open after Rackley's trade, Johnson; Bradfield swing tackle and sixth offensive lineman (carried; outside the program until he signs); Asper interior depth. Bitonio (tackle or guard first is Stone's decision), Turner, Linsley, Leno and the five undrafted linemen have no place set.
 - Receivers: carried order Thielen (WR2/H), Clemons (WR4), Brown (WR5); WR1 and WR3 open after the March 31 trade.
 - Front: edge order Mincey, Branch, Davis; Marks and Miller inside, Mosley next.
 - Linebackers: Posluszny and Smith are the base linebackers, Smith the communication lead; Stanford is next, and Moore plays in Crennel's packages. Allen was traded to Arizona April 7.
@@ -685,5 +684,6 @@ Use the project's canon authority order. Document 6 is the sole authoritative co
 | April 18 decisions, Phase One, schedule | 2014 ledger, Entry 107 | April 18 to May 1, 2014 | Stone's eight April 18 decisions adopted (Tice emergency practice lead, relay succession); Phase One April 21 to May 1; Allen retired at Arizona April 22; schedule released April 23; controlled roster 53 | September 30, 2026; Canonical update - May 1, 2014 - Phase One under way; April 18 decisions; schedule released |
 | 2014 draft, undrafted signings and rookie contracts | 2014 ledger, Entry 108 | May 8 to 11, 2014 | Nine selections (Donald, Bitonio, Adams, Turner, Telvin Smith, Linsley, Leno, Thomas, Butler) signed May 11; 17 undrafted rookies signed May 10; pairing filled, Colvin unplaced; Rackley-or-Brewster trade active; controlled roster 79 | September 30, 2026; Canonical update - May 11, 2014 - 2014 draft, undrafted signings and rookie contracts |
 | Phase One handoff, unsigned tenders, Phase Two | 2014 ledger, Entry 109 | May 2 to 11, 2014 | The four unsigned tenders outside the program (user instruction, May 1); cross-training list revised; Phase One handoff May 2; Phase Two May 5 to 9; no offer sheet for Bradfield; clock May 11 | September 30, 2026; Canonical update - May 11, 2014 - 2014 draft and undrafted signings; Phase Two under way |
+| Rackley traded to Seattle; Ball not re-signed | 2014 ledger, Entry 110 | May 11 to 12, 2014 | Rackley to Seattle for Seattle's unconditional 2015 seventh ($154,868 dead money); Brewster kept; Ball not re-signed, first veteran corner to call; controlled roster 78; clock May 12 | September 30, 2026; Canonical update - May 12, 2014 - Rackley traded to Seattle; Ball not re-signed |
 
 This table is generated from Document 6 and is only a navigation aid. Active unresolved matters remain in the open player-control matters above and Document 5; resolved history, controlling authority, notification, and superseded values remain only in Document 6.

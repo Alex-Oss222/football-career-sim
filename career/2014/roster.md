@@ -1,11 +1,11 @@
 # Jacksonville Jaguars roster
 
-**As of:** May 11, 2014
-**Canonical controlled-player count:** **79** (offseason roster of 90: 75 under signed contracts, including the nine 2014 draft selections and 17 undrafted rookies signed May 8 to 11, and four unsigned tenders).
+**As of:** May 12, 2014
+**Canonical controlled-player count:** **78** (offseason roster of 90: 74 under signed contracts, including the nine 2014 draft selections and 17 undrafted rookies signed May 8 to 11, and four unsigned tenders).
 **Practice squad:** 0. No 2014 practice squad exists before the regular season.
 **2013 season:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-1 (AFC Wild Card: Jacksonville 38, Kansas City 14; AFC Divisional: Tennessee 20, Jacksonville 13).
 
-<!-- player-ages-as-of: 2014-05-11 -->
+<!-- player-ages-as-of: 2014-05-12 -->
 
 Birth dates are sourced in the [identity registry](../../library/data/player_birth_dates.json). Age is completed years at the master date in Document 5; [league ages](player_ages.md) update through the same renderer. Transaction history is in the [2014 ledger](ledger.md).
 
@@ -75,13 +75,12 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | Charles Leno Jr. | OT | 1991-10-09 | 22 | Offseason roster (Rookie, drafted No. 168, May 10, 2014; rookie contract signed May 11, 2014) | No communicated restriction | Role not set (reserve tackle) |
 | Cornelius Lucas | OT | 1991-07-18 | 22 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
 
-### Offensive guards (6)
+### Offensive guards (5)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
 | Mark Asper | G | 1985-11-08 | 28 | Offseason roster | No communicated restriction | Interior OL depth (game-day inactive Weeks 10-17) |
 | Austin Pasztor | G | 1990-11-26 | 23 | Offseason roster (ERFA tender, unsigned) | No communicated restriction | Game-day interior OL reserve (from Week 10) |
-| Will Rackley | G | 1989-10-11 | 24 | Offseason roster | Limited, no projected absence (upper extremity, Week 5) | Starting right guard |
 | Trai Turner | G | 1993-06-14 | 20 | Offseason roster (Rookie, drafted No. 90, May 9, 2014; rookie contract signed May 11, 2014) | No communicated restriction | Role not set (interior line) |
 | Andrew Norwell | G | 1991-10-25 | 22 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
 | Matt Feiler | G | 1992-07-07 | 21 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
@@ -166,7 +165,7 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 
 ## 2014 rookies
 
-The nine draft selections of May 8 to 10 (Donald, Bitonio, Adams, Turner, Telvin Smith, Linsley, Leno, Thomas and Butler) signed four-year rookie contracts on May 11, 2014, and 17 undrafted rookies signed three-year minimum contracts on May 10 ([draftees](offseason/draft/draftees.md); [undrafted signings](offseason/draft/udfa_signings.md)). They are listed in their position groups above with no role set; Stone places rookies only by decision. James Hurst (OT, North Carolina) is held on the undrafted board until a medical clearance is recorded. Alan Ball's revisit after the draft remains a user decision.
+The nine draft selections of May 8 to 10 (Donald, Bitonio, Adams, Turner, Telvin Smith, Linsley, Leno, Thomas and Butler) signed four-year rookie contracts on May 11, 2014, and 17 undrafted rookies signed three-year minimum contracts on May 10 ([draftees](offseason/draft/draftees.md); [undrafted signings](offseason/draft/udfa_signings.md)). They are listed in their position groups above with no role set; Stone places rookies only by decision. James Hurst (OT, North Carolina) is held on the undrafted board until a medical clearance is recorded. Alan Ball was not re-signed on May 12; he stays an unplaced free agent and is the first veteran corner Jacksonville calls if the room is hit.
 
 ## Reserve/future contracts (2014) and the 2013 practice squad
 
@@ -186,6 +185,10 @@ Brandon King (DB) and Will Ta'ufo'ou (FB) were not offered contracts. They left 
 ## Departures
 
 At the 2014 league year (March 11, 4 p.m. ET) the 53-man roster became an offseason roster of 51. Players who have left Jacksonville's control, newest first:
+
+### May 12, 2014
+
+Will Rackley (G) was traded to Seattle for Seattle's own unconditional 2015 seventh-round pick after the May 11 calls and his May 12 physical. The starting right guard role is open for Stone.
 
 ### April 7, 2014
 
@@ -212,7 +215,7 @@ Uche Nwaneri (G) was traded to Arizona with Jacksonville's 2015 first, 2015 four
 | Jeremy Cain | LS | Contract expired; unrestricted free agent | Re-signed March 19, 2014: one year, $855,000 |
 | Maurice Jones-Drew | RB | Contract expired; unrestricted free agent | Re-signed March 28, 2014: two years, $7.0M, $3.25M guaranteed |
 | C.J. Wilson | DE | Contract expired; unrestricted free agent | Re-signed March 28, 2014: one year, $795,000 |
-| Alan Ball | CB | Contract expired; unrestricted free agent | Left unsigned under Stone's March 31 plan; revisited after the draft |
+| Alan Ball | CB | Contract expired; unrestricted free agent | Not re-signed May 12, 2014 after Stone's conversation; first veteran corner to call if the room is hit |
 | Brent Grimes | CB | Contract expired; unrestricted free agent | Not pursued under Stone's March 31 plan |
 | Allen Reisner | TE | Not tendered; unrestricted free agent | None |
 | Kevin Rutland | CB | Not tendered; unrestricted free agent | None |

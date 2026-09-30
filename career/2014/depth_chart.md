@@ -1,6 +1,6 @@
 # Jacksonville Jaguars 2014 depth chart (working view)
 
-**As of:** May 11, 2014
+**As of:** May 12, 2014
 **Status:** the closed 2013 chart, carried forward with players no longer under Jacksonville control removed. No 2014 depth decision has been made. Removing a player moves those below him up without a reorder; Stone owns the order and changes it only by decision.
 **Machine-readable copy:** [offseason/depth_chart_working.json](offseason/depth_chart_working.json), same schema as [the 2013 chart](../2013/depth_chart.json) plus contract flags, the players added since March 11 (the March signings and the 26 rookies of May 8 to 11) and the update log.
 **Sources:** [2013 depth chart](../2013/depth_chart.json) (Git `781213a`, effective January 6, 2014, AFC Divisional preparation) for the carried order; the [current roster](roster.md) and [contract status register](offseason/contract_status_register.md) for control and availability; [Caldwell's pre-tag-window verifications](offseason/caldwell_pre_tag_verifications.md).
@@ -66,17 +66,16 @@
 
 ### Offensive line (OL)
 
-The kernel group is one OL list. Brad Meester (C) is removed: he retired, and his contract expired March 11, 2014.
+The kernel group is one OL list. Brad Meester (C) is removed: he retired, and his contract expired March 11, 2014. Will Rackley (G, starting right guard) is removed: traded to Seattle May 12, 2014. The starting right guard role is open for Stone.
 
 | Order | Player | Pos | Contract flag | 2013 recorded role | Availability |
 |---:|---|---|---|---|---|
 | 1 | Eugene Monroe | OT | Under contract through 2018 (re-signed March 11) | Starting LT | No communicated restriction |
 | 2 | Mike Brewster | C | Under contract | Starting center (confirmed Week 6) | No communicated restriction |
-| 3 | Will Rackley | G | Under contract | Starting right guard | Limited, no projected absence (upper extremity, Week 5) |
-| 4 | Lane Johnson | OT | Under contract | Starting right tackle | No communicated restriction |
-| 5 | Cameron Bradfield | OT | Tendered RFA (unsigned) | Swing tackle; sixth OL in 6OL | No communicated restriction |
-| 6 | Austin Pasztor | G | Tendered ERFA (unsigned) | Game-day interior OL reserve (from Week 10) | No communicated restriction |
-| 7 | Mark Asper | G | Under contract | Interior OL depth (game-day inactive Weeks 10-17) | No communicated restriction |
+| 3 | Lane Johnson | OT | Under contract | Starting right tackle | No communicated restriction |
+| 4 | Cameron Bradfield | OT | Tendered RFA (unsigned) | Swing tackle; sixth OL in 6OL | No communicated restriction |
+| 5 | Austin Pasztor | G | Tendered ERFA (unsigned) | Game-day interior OL reserve (from Week 10) | No communicated restriction |
+| 6 | Mark Asper | G | Under contract | Interior OL depth (game-day inactive Weeks 10-17) | No communicated restriction |
 | Added, not placed | Joel Bitonio | OT | Rookie contract through 2017 (No. 26, signed May 11) | None assigned (2014 rookie) | No communicated restriction |
 | Added, not placed | Trai Turner | G | Rookie contract through 2017 (No. 90, signed May 11) | None assigned (2014 rookie) | No communicated restriction |
 | Added, not placed | Corey Linsley | C | Rookie contract through 2017 (No. 153, signed May 11) | None assigned (2014 rookie) | No communicated restriction |
@@ -152,19 +151,19 @@ The kernel group is one OL list. Brad Meester (C) is removed: he retired, and hi
 
 Mike Westhoff has coordinated special teams since February 11, 2014. No 2014 returner, coverage-unit or specialist decision has been made.
 
-## Counts at May 11, 2014
+## Counts at May 12, 2014
 
 | Group | Count |
 |---|---:|
-| Players on the carried chart | 42 |
+| Players on the carried chart | 41 |
 | of whom tendered RFA or ERFA (unsigned) | 4 |
 | Added, not placed (six futures, Verner, Talib, Nicks, Hawkins and Te'o-Nesheim) | 11 |
 | Added, not placed: 2014 draft selections (Entry 108) | 9 |
 | Added, not placed: 2014 undrafted rookies (Entry 108) | 17 |
-| Controlled players | 79 |
-| Removed since the 2013 chart (Meester, the four other March 11 departures not re-signed, Nwaneri, Babin, Alualu, Shorts, Blackmon and Allen) | 11 |
+| Controlled players | 78 |
+| Removed since the 2013 chart (Meester, the four other March 11 departures not re-signed, Nwaneri, Babin, Alualu, Shorts, Blackmon, Allen and Rackley) | 12 |
 
-Roles open: TE3 (Reisner), the corner places of Brent Grimes and Ball, starting left guard (Nwaneri, traded March 20), the carried Edge 1 role (Babin, traded March 24) and the carried WR1 and WR3 roles (Shorts and Blackmon, traded March 31). The chart does not fill open roles: those are Stone's decisions.
+Roles open: TE3 (Reisner), the corner places of Brent Grimes and Ball, starting left guard (Nwaneri, traded March 20), starting right guard (Rackley, traded May 12), the carried Edge 1 role (Babin, traded March 24) and the carried WR1 and WR3 roles (Shorts and Blackmon, traded March 31). The chart does not fill open roles: those are Stone's decisions.
 
 Brandon King and Will Ta'ufo'ou were never on the 2013 chart and are not Jacksonville players. The 2013 game-day inactive list is weekly and is not carried.
 
@@ -190,6 +189,7 @@ Add a row for every signing, tag, tender, trade, release, retirement, draft pick
 | April 4 to 7, 2014 | Henne re-signed; Posluszny cleared; Allen traded to Arizona | Entry 106 | Henne restored at QB 2, his carried place; John Parker Wilson moves down one. Posluszny's hold cleared April 5. Allen (LB 2) removed; Stanford, Moore and Posluszny move up without a reorder. Smith and Posluszny keep their carried base roles and Smith the communication lead; no Stone role decision |
 | May 2, 2014 | Unsigned tenders: user instruction on program participation | Entry 109 | No chart change. Bradfield, Clemons, Brown and Pasztor keep their carried places and tender flags; they take no part in the program until they sign |
 | May 8 to 11, 2014 | 2014 draft, undrafted signings and rookie contracts | Entry 108 | Added, not placed: the nine draft selections and 17 undrafted rookies in their groups (Kreiter under special teams). No order change; no Stone role decision |
+| May 12, 2014 | Rackley traded to Seattle | Entry 110 | Rackley (OL 3, starting right guard) removed; Johnson, Bradfield, Pasztor and Asper move up without a reorder. The starting right guard role is open for Stone; no Stone role decision |
 
 ## Maintaining the game-input copy
 

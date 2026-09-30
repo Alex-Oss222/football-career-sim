@@ -1,6 +1,6 @@
 # Jacksonville 2014 Offseason program, Phases One and Two: evidence summary
 
-<!-- sim-meta: {"event_entry": 109, "kind": "evidence_summary", "source": "career/2014/offseason/offseason_program/output.md", "source_sha256": "38b655771bbbac828dbbaf8404bdf80fd49ca79398e240784ccfae69f9fee88b", "status": "IN_PROGRESS", "through": "2014-05-09"} -->
+<!-- sim-meta: {"event_entry": 109, "kind": "evidence_summary", "source": "career/2014/offseason/offseason_program/output.md", "source_sha256": "4fbc97d3746128cec5a835466ecfed43c1154ee07e6b10a9357907b587319ea1", "status": "IN_PROGRESS", "through": "2014-05-09"} -->
 
 **IN_PROGRESS through May 9, 2014 (Phase One classroom and physical work; Phase Two week one, unopposed field work).** The [execution record](output.md) owns the evidence; the [plan](plan.md) holds intended work. Neither phase can establish blocking, coverage, timing against an opponent or unit execution, so nothing here is a standout or setback in field terms.
 

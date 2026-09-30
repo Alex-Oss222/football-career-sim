@@ -2,7 +2,7 @@
  "team": "Jacksonville Jaguars",
  "season": 2014,
  "status": "WORKING VIEW, NOT A GAME INPUT. Carried from the closed 2013 chart minus players no longer controlled; no 2014 depth decision has been made.",
- "as_of": "May 11, 2014 (ledger Entries 108 and 109)",
+ "as_of": "May 12, 2014 (ledger Entry 110)",
  "effective": "Carried from the closed 2013 chart (January 6, 2014, AFC Divisional preparation)",
  "sources": "career/2013/depth_chart.json (Git 781213a, carried order); current career/2013/roster.md; current career/2014/offseason/contract_status_register.md; career/2014/offseason/free_agency/signings.md; ledger Entries 79 and 85 through 89; Entry 94 (league year opened); Entry 95 (March 2014 free-agency replay); Entry 108 (2014 draft and undrafted signings)",
  "rule": "Order within each kernel position group is the closed 2013 order exactly as carried, minus players no longer controlled. It is not a 2014 decision. Stone owns the 2014 order and changes it only by decision; each change is logged in career/2014/depth_chart.md.",
@@ -33,7 +33,6 @@
   "OL": [
    "Eugene Monroe",
    "Mike Brewster",
-   "Will Rackley",
    "Lane Johnson",
    "Cameron Bradfield",
    "Austin Pasztor",
@@ -87,7 +86,6 @@
   "Marcedes Lewis": "TE",
   "Travis Kelce": "TE",
   "Eugene Monroe": "OT",
-  "Will Rackley": "OG",
   "Lane Johnson": "OT",
   "Cameron Bradfield": "OT",
   "Austin Pasztor": "OG",
@@ -175,9 +173,7 @@
   "Taylor Gabriel": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)",
   "Casey Kreiter": "Undrafted rookie contract through 2016 (signed May 10, Entry 108)"
  },
- "availability_notes": {
-  "Will Rackley": "Limited, no projected absence (upper extremity, Week 5) (career/2013/roster.md)"
- },
+ "availability_notes": {},
  "removed_from_2013_chart": {
   "Brad Meester": "Retired; contract expired March 11, 2014 (Entries 79 and 94)",
   "Alan Ball": "No longer under Jacksonville control from 4 p.m. March 11, 2014 (Entry 94)",
@@ -189,7 +185,8 @@
   "Tyson Alualu": "Traded to Houston, March 24, 2014 (package E, Entry 102)",
   "Cecil Shorts": "Traded to Indianapolis, March 31, 2014 (Entry 104)",
   "Justin Blackmon": "Traded to Indianapolis, March 31, 2014 (Entry 104)",
-  "Russell Allen": "Traded to Arizona, April 7, 2014 (Entry 106)"
+  "Russell Allen": "Traded to Arizona, April 7, 2014 (Entry 106)",
+  "Will Rackley": "Traded to Seattle, May 12, 2014 (Entry 110)"
  },
  "game_day_inactives": null,
  "update_log": [
@@ -288,6 +285,12 @@
    "event": "Unsigned tenders: user instruction on program participation",
    "ledger_entry": "Entry 109",
    "change": "No chart change. Bradfield, Clemons, Brown and Pasztor keep their carried places and tender flags; they do not take part in the program until they sign"
+  },
+  {
+   "date": "May 12, 2014",
+   "event": "Rackley traded to Seattle",
+   "ledger_entry": "Entry 110",
+   "change": "Rackley (OL 3, starting right guard) removed; Johnson, Bradfield, Pasztor and Asper move up without a reorder. The starting right guard role is open for Stone; no Stone role decision"
   }
  ],
  "added_not_placed": {

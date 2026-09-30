@@ -1,6 +1,6 @@
 # Jacksonville 2014 completed trades
 
-Completed and processed 2014 trades only: the Arizona trade for No. 38 (March 20), the Babin and Alualu trades (March 24), the Shorts and Blackmon trade with Indianapolis (March 31), the trade of the two Colts picks to Washington for Jacksonville's 2015 second (March 31) and the Allen trade with Arizona (April 7). The dated negotiations are in the [offer log](trade_offers.md).
+Completed and processed 2014 trades only: the Arizona trade for No. 38 (March 20), the Babin and Alualu trades (March 24), the Shorts and Blackmon trade with Indianapolis (March 31), the trade of the two Colts picks to Washington for Jacksonville's 2015 second (March 31), the Allen trade with Arizona (April 7) and the Rackley trade with Seattle (May 12). The dated negotiations are in the [offer log](trade_offers.md).
 
 Earlier deals and corrections stay in [the 2013 trade history](../../2013/trades/trades.md). Current pick ownership is in [the draft ownership register](../draft/pick_ownership.json); assets already held are not re-acquired here. Detroit's original fifth is Jacksonville's from the Mike Thomas trade, and Kansas City's second is San Francisco's from the Alex Smith trade.
 
@@ -79,6 +79,19 @@ The Babin and Alualu trades are recorded together in the [2014 ledger](../ledger
 - Accounting (Jacksonville): Allen's $2,416,668 2014 charge is removed. His final $416,668 original bonus allocation stays with Jacksonville as 2014 dead money (pre-June 1 trade); Arizona takes his $1,975,000 base and $25,000 workout bonus. His contract ended after 2014, so no later year changes.
 - Picks: Arizona's 2015 fourth is Jacksonville's ([ownership register](../draft/pick_ownership.json)). Jacksonville's 2015 picks are now its own second, Miami's third, Houston's fourth and Arizona's fourth.
 - Rails: Allen's real retirement, dated April 22, 2014, now applies at Arizona. It has no Jacksonville cap effect.
+
+## Jacksonville / Seattle: Rackley (May 12, 2014)
+
+| Club | Receives |
+|---|---|
+| Jacksonville | Seattle's original 2015 seventh-round pick, unconditional |
+| Seattle | G Will Rackley |
+
+- Negotiation: Stone asked Caldwell to shop Rackley for an unconditional 2015 seventh, with a 2016 seventh or a conditional 2015 seventh as fallbacks, and to keep Brewster. Caldwell called the six clubs on the line-needy list on May 11; San Francisco, Carolina, New England and Houston had drafted interior linemen, Chicago had re-signed Matt Slauson, and Seattle, which lost Paul McQuistan to Cleveland in March and drafted no interior lineman, accepted the ask without a counter ([trade record](rackley_to_seattle_2014-05-12.md)).
+- Closing: Rackley passed Seattle's physical on May 12; his Week 5 upper-extremity limitation was disclosed and carries no projected absence. Processed May 12. The pick is a clean ordinary pick with no condition.
+- Accounting (Jacksonville): his $1,585,868 2014 charge is removed. His final $154,868 original bonus allocation stays with Jacksonville as 2014 dead money (pre-June 1 trade); Seattle takes his $1,431,000 base. His contract ended after 2014, so no later year changes. One $495,000 base moves back inside the offseason Top 51, so the working difference improves by $936,000.
+- Picks: Seattle's 2015 seventh is Jacksonville's ([ownership register](../draft/pick_ownership.json)). Jacksonville's 2015 picks are now its own second, Miami's third, Houston's fourth, Arizona's fourth and Seattle's seventh.
+- Rails: a trade is not Rackley's real 2014 move, so he does not follow one; he is a branch player on Seattle's roster.
 
 ## Recording a completed trade
 

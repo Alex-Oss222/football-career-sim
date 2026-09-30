@@ -9,7 +9,7 @@ The board has one owner: [Stone's offseason decisions memo](../stone_to_caldwell
 Amendments in force:
 
 - Sanders is removed. The third receiver is Adams, the target at 26, else Hawkins or Edelman. The edge target is signed even if Lawrence arrives ([receivers and edge amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-29-2026-amendment-receivers-pick-13-and-26-fallbacks-edge-pairing-undrafted-line)).
-- Henne is pursued as QB2, Ball is left unsigned until after the draft, and Brent Grimes is not pursued ([Henne, Ball and Grimes amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-henne-ball-and-brent-grimes)).
+- Henne is pursued as QB2, Ball is not re-signed (May 12; first veteran corner to call if the room is hit) and Brent Grimes is not pursued ([Henne, Ball and Grimes amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-henne-ball-and-brent-grimes)).
 
 ## Where the board stands (April 17, 2014)
 

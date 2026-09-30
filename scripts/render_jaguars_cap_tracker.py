@@ -286,16 +286,20 @@ def render_main(d,years):
     out.append(f'## Individual contract detail sheets\n\n[Open all {len(ps)} player sheets](jaguars_contract_details.md) for annual salary, bonus, cap, cash, guarantees and sources.\n\n## Dead money and void years\n\n')
     out.append(table(['Player','Year','Charge','Basis'],[[x['player'],x['year'],dollars(x['amount']),x['basis']] for x in d['dead_money']]))
     out.append('The $51,675 old Bray bonus is counted separately from his new $420,000 salary. No recorded deal has void years. The completion research explains the inherited bonus reconciliation.\n\n## Draft class and rookie pool\n\n')
-    out.append(table(['Draft','Round','Original club','Slot in round','Overall'],[[x['year'],x['round'],x['original_club'],x['slot_in_round'],draft_slot(x['overall'])] for x in d['draft_picks']]))
-    out.append('These are selection rights. Add each rookie’s full contract schedule after the actual selection and signing. No future contract dollars are booked against an unselected player. [The draft ownership record](../2014/draft/draft_order.md) controls the picks. Overall numbers include the 32 compensatory picks announced March 24, 2014 (ledger Entry 100); Jacksonville received none.\n\n## Decision calendar\n\n')
+    picks=d['draft_picks']
+    if all(x.get('selection') for x in picks):
+        out.append(table(['Draft','Round','Original club','Overall','Selection','Selected','Contract'],[[x['year'],x['round'],x['original_club'],draft_slot(x['overall']),x['selection'],display_date(x['selected']),x['contract']] for x in picks]))
+        out.append('All nine selections were exercised May 8 to 10 and signed May 11, 2014; no 2014 selection right remains. Each rookie contract is in the position tables above and in its individual sheet, and the gross and net Top-51 effect of the class is in the [cap worksheet](../2014/offseason/current_cap_worksheet.md). [The draft record](../2014/offseason/draft/draftees.md) owns the selections and [the draft ownership record](../2014/draft/draft_order.md) the picks. Overall numbers include the 32 compensatory picks announced March 24, 2014; Jacksonville received none.\n\n## Decision calendar\n\n')
+    else:
+        out.append(table(['Draft','Round','Original club','Slot in round','Overall'],[[x['year'],x['round'],x['original_club'],x['slot_in_round'],draft_slot(x['overall'])] for x in picks]))
+        out.append('These are selection rights. Add each rookie’s full contract schedule after the actual selection and signing. No future contract dollars are booked against an unselected player. [The draft ownership record](../2014/draft/draft_order.md) controls the picks.\n\n## Decision calendar\n\n')
     out.append(table(['Date / review','Player or group','Financial treatment'],[
-        ['March 11, 2014 (done, Entry 94)','Futures, tenders and Monroe','Futures effective; RFA/ERFA tenders and the $11,654,000 franchise tender count while unsigned'],
-        ['March 16, 2014','Justin Blackmon','$1,700,000 deferred bonus cash; already allocated within the original cap schedule'],
-        ['March 25, 2014 (traded March 20)','Uche Nwaneri','Roster bonus passes to Arizona; $2,189,000 of bonus proration is 2014 dead money'],
-        ['Original opt-out window','Jason Babin','Keep the original 2014-2015 schedule until an actual exercise is recorded'],
-        ['March 11, 2014 (closed)','Eugene Monroe','Five-year signed agreement replaced the franchise tender; no pending July 15 negotiation'],
-        ['2015 option window','Justin Blackmon','2016 fifth-year option remains unexercised; exercise decision follows the 2014 season'],
-        ['2016 option window','Lane Johnson','2017 fifth-year option remains unexercised; exercise decision follows the 2015 season']]))
+        ['Open (June 16, 2014 is the adjusted June 15 RFA tender date in the career calendar)','Cameron Bradfield (RFA); Toney Clemons, Austin Pasztor and Mike Brown (ERFA)','The four unsigned tenders count once, $3,066,000 in all, until signed or withdrawn; no offer sheet was received by the May 2 deadline'],
+        ['Closed May 12, 2014','Will Rackley','Traded to Seattle for its unconditional 2015 seventh; his $154,868 final bonus allocation stays as 2014 dead money and his $1,431,000 base leaves. Brewster is kept'],
+        ['After the offseason program','Offseason workout charge','The $504,000 opening charge is reconciled to actual workout payments, not charged again'],
+        ['2014 season','Hakeem Nicks and Daniel Te’o-Nesheim','Active-game bonuses of $31,250 a game, up to $500,000 each, are counted in the 2014 charges'],
+        ['2016 option window','Lane Johnson','2017 fifth-year option remains unexercised; exercise decision follows the 2015 season'],
+        ['2017 option window','Aaron Donald and Joel Bitonio','2018 fifth-year options remain unexercised and unbooked; exercise decisions follow the 2016 season']]))
     out.append('## Expiring contracts and free-agent classes\n\n')
     out.append(table(['Last contract year','Players'],[[year,', '.join(p['name'] for p in ps if p['contract_ends']==year and p.get('control')!='traded')] for year in sorted({p['contract_ends'] for p in ps if p['contract_ends'] is not None and p.get('control')!='traded'})]))
     out.append('“Through” describes the final league year of the recorded contract or tender. The 2013 contracts not retained expired at the March 11, 2014 league-year opening; those players are retained only as former-player history. Traded players leave these classes. A player’s class at a later expiry follows his actual accrued service; it does not extend the deal.\n\n## Scheduled cash\n\n')
@@ -327,7 +331,7 @@ def render_details(d,years):
         if p['control']=='tender':out.append('The tender is unsigned. Its annual cash is conditional; the full salary guarantee begins if signed.\n\n')
         elif p['control'] in {'pending','retired'}:out.append('No new playing contract is recorded for 2014 or later.\n\n')
         if p['name']=='Lane Johnson':out.append('The 2017 fifth-year option is unexercised and is excluded from committed years. Review the exercise decision in the 2016 option window.\n\n')
-        elif p['name']=='Justin Blackmon':out.append('The 2016 fifth-year option is unexercised and is excluded from committed years. Review the exercise decision in the 2015 option window. The deferred bonus cash is already incorporated in the original bonus allocation and is not charged twice.\n\n')
+        elif p['name']=='Justin Blackmon':out.append('The contract, its deferred bonus cash and the 2016 fifth-year option left with the March 31, 2014 trade to Indianapolis. Only the accelerated bonus allocation stays with Jacksonville, once, in the dead-money ledger.\n\n')
         elif p.get('draft_pick'):out.append('Any future proven-performance escalator requires the branch’s actual qualifying participation; no later real-world escalator or extension is imported.\n\n')
         out.append('### Contract notes\n\n'+p['source_note'].rstrip('.')+'.\n\n')
 

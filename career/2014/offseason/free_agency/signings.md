@@ -1,6 +1,6 @@
 # Jacksonville 2014 free-agency and contract outcomes
 
-**As of:** April 4, 2014. This page records every 2014 Jacksonville offer, tender and signing: the March and April 2014 signings and re-signings, the six reserve/future contracts and the tags and tenders. Stone's priorities are on the [free-agency board](player_board.md); prior contracts are in the [2013 signing history](../../../2013/offseason/free_agency/signings.md) and each player's current status is in the [contract status register](../contract_status_register.md).
+**As of:** May 11, 2014. This page records every 2014 Jacksonville veteran offer, tender and signing: the March and April 2014 signings and re-signings, the six reserve/future contracts and the tags and tenders. The nine rookie contracts of May 11 and the 17 undrafted contracts of May 10 are in [the draftees record](../draft/draftees.md) and [the undrafted signings record](../draft/udfa_signings.md). Stone's priorities are on the [free-agency board](player_board.md); prior contracts are in the [2013 signing history](../../../2013/offseason/free_agency/signings.md) and each player's current status is in the [contract status register](../contract_status_register.md).
 
 ## Process and evidence
 
@@ -34,10 +34,10 @@ Caldwell has ended paid veteran receiver bidding.
 
 Under [Stone's March 31 plan](../stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-henne-ball-and-brent-grimes):
 
-- Alan Ball (CB): left unsigned for now; revisited after the draft if corner depth remains thin, subject to a current physical.
+- Alan Ball (CB): not re-signed May 12; first veteran corner to call if the room is hit, subject to a current physical ([Stone's conversation](alan_ball_2014-05-12.md)).
 - Brent Grimes (CB): the fallback offer is withdrawn and he is not pursued. With both primary corners signed, Tarell Brown is not pursued automatically either.
 
-Both are unplaced free agents under the rails: Grimes's real 2014 move (a re-signing with Miami) does not apply in the branch, and Ball has no real 2014 move. Chad Henne re-signed April 4 (above).
+Both are unplaced free agents under the rails: Grimes's real 2014 move (a re-signing with Miami) does not apply in the branch, and Ball has no real 2014 move. The draft closed May 10; on May 12 Stone told Ball Jacksonville had no clean role to offer, and Caldwell called the three clubs his agent named with an honest evaluation. No club's real history signs him, so he stays available. Chad Henne re-signed April 4 (above).
 
 ## Reserve/future contracts
 

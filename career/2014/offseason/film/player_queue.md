@@ -72,7 +72,7 @@ Each queue item is an obligation, not the player's entire identity. Read the [61
 | Cameron Bradfield (OT) | Own set/run/protection evidence and shared sack causes; both-tackle work remains a separate opportunity decision. | [Source timing](../../../2013/exit_interviews/core/cameron_bradfield.md) | Queued; receipt unverified |
 | Mike Brewster (C) | Return Seattle call findings; individual season protection review; QB-center blocked/hot/kill teaching. | [Source timing](../../../2013/exit_interviews/core/mike_brewster.md) | Queued; receipt unverified |
 | Uche Nwaneri (G) | Week 2 Oakland sack cause or unresolved status, then individual full-season line review. | [Source timing](../../../2013/exit_interviews/core/uche_nwaneri.md) | Queued; receipt unverified |
-| Will Rackley (G) | Individual line/protection review; physical teaching only within current medical instructions. | [Source timing](../../../2013/exit_interviews/core/will_rackley.md) | Queued; receipt unverified |
+| Will Rackley (G) | Individual line/protection review; physical teaching only within current medical instructions. | [Source timing](../../../2013/exit_interviews/core/will_rackley.md) | Withdrawn: traded to Seattle May 12, 2014; no packet was issued |
 | Mark Asper (G) | Written reserve evaluation, charged-sack cause review and an answer on center-work opportunities. | [Source timing](../../../2013/exit_interviews/summaries_offense.md) | Queued; receipt unverified |
 
 ## Defensive line

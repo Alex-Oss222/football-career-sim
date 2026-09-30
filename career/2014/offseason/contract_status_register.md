@@ -1,6 +1,6 @@
 # Jacksonville Jaguars: 2014 contract and free-agency status register
 
-**As of:** May 11, 2014.
+**As of:** May 12, 2014.
 **Scope:** every player in the March 11, 2014 league-year baseline: the 52 active players and Brad Meester (Reserve/Retired) on the [2013 closing roster](../../2013/roster.md), plus the eight-player 2013 practice squad, six of whom signed reserve/future contracts effective March 11. Players signed from outside after the baseline are summarized in section 2; their contracts are in the [contract table](contract_table.md), the [signings record](free_agency/signings.md), [the draftees record](draft/draftees.md) and [the undrafted signings record](draft/udfa_signings.md).
 **Role:** this register owns each player's contract status, final league year, accrued seasons and free-agency class, with the evidence for each. It executes no signing, tender, release, extension, option or trade; Caldwell retains contract authority under Document 3. Figures follow the adopted contract reconstruction in the [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md) and the [completion research](../../../library/2014_jaguars_contract_completion.md), which fix every covered contract year with explicit simulation assumptions where the public original instrument is incomplete. Transaction history is in the [2014 ledger](../ledger.md).
 
@@ -16,20 +16,20 @@
 
 ## 2. Current status summary
 
-| Status at May 11, 2014 | Count |
+| Status at May 12, 2014 | Count |
 |---|---:|
-| Under contract, continuing from before 2014 | 32 |
+| Under contract, continuing from before 2014 | 31 |
 | Under contract, reserve/future (effective March 11) | 6 |
 | Under contract, signed or re-signed in March and April 2014 | 11 |
 | Under contract, 2014 draft selections (four-year rookie contracts signed May 11) | 9 |
 | Under contract, 2014 undrafted rookies (three-year minimum contracts signed May 10) | 17 |
 | Restricted free agent, lowest tender (unsigned) | 1 |
 | Exclusive-rights free agent, tendered (unsigned) | 3 |
-| Controlled players | 79 |
-| Control ended since the baseline (expired, not tendered, retired or traded) | 11 |
+| Controlled players | 78 |
+| Control ended since the baseline (expired, not tendered, retired or traded) | 12 |
 | 2013 practice-squad players not offered a contract | 2 |
 
-The 79 controlled players match the [roster](../roster.md) and the [contract table](contract_table.md).
+The 78 controlled players match the [roster](../roster.md) and the [contract table](contract_table.md).
 
 ### Changes since the March 11 baseline
 
@@ -41,7 +41,7 @@ The 79 controlled players match the [roster](../roster.md) and the [contract tab
 | Maurice Jones-Drew | UFA | Re-signed March 28: two years, $7.0M, $3.25M guaranteed |
 | C.J. Wilson | UFA | Re-signed March 28: one year, $795,000 |
 | Chad Henne | UFA | Re-signed April 4: two years, $4.0M, $2.0M guaranteed |
-| Alan Ball | UFA | Unsigned; Stone's March 31 plan revisits him after the draft |
+| Alan Ball | UFA | Not re-signed May 12; unplaced free agent, first veteran corner to call if the room is hit |
 | Brent Grimes | UFA | Unsigned; not pursued under Stone's March 31 plan |
 | Cameron Bradfield | RFA | Lowest tender, $1,431,000; unsigned |
 | Allen Reisner, Kevin Rutland | RFA | Not tendered; unrestricted free agents from March 11 |
@@ -53,6 +53,7 @@ The 79 controlled players match the [roster](../roster.md) and the [contract tab
 | Tyson Alualu | Under contract | Traded to Houston March 24 for Houston's 2015 fourth |
 | Cecil Shorts, Justin Blackmon | Under contract | Traded to Indianapolis March 31 for the Colts' 2014 third (No. 82) and sixth (No. 194) |
 | Russell Allen | Under contract | Traded to Arizona April 7 for Arizona's 2015 fourth |
+| Will Rackley | Under contract | Traded to Seattle May 12 for Seattle's own unconditional 2015 seventh |
 | Six reserve/future players | Futures | Contracts in force from March 11 |
 | Alterraun Verner, Aqib Talib, Hakeem Nicks, Andrew Hawkins, Daniel Te'o-Nesheim | Not Jacksonville players | Signed March 11 to 18 (terms in the [signings record](free_agency/signings.md)) |
 | Aaron Donald, Joel Bitonio, Davante Adams, Trai Turner, Telvin Smith, Corey Linsley, Charles Leno Jr., Jemea Thomas, Malcolm Butler | 2014 draft selections (May 8 to 10) | Four-year rookie contracts signed May 11, 2014, priced by slot reconstruction from the same-slot 2014 contracts; the two first-rounders carry an unexercised 2018 option ([draftees](draft/draftees.md)). Accrued seasons 0; free-agency class set by the 2011 CBA rookie rules at expiry |
@@ -107,7 +108,7 @@ The 79 controlled players match the [roster](../roster.md) and the [contract tab
 | Marcedes Lewis | TE | 2011 five-year veteran contract; final year 2015 | Under contract | 4+ (entered 2006) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/marcedes-lewis/946/); `initial_cap_sheet.md`. Confirmed |
 | Mark Asper | G | 2012 Buffalo sixth-round four-year rookie contract, carried by waiver claims; final year 2015 | Under contract | Unresolved (not status-determining) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/mark-asper/947/) (2012, four years, listed as MIN/BUF/JAX). Supported |
 | Uche Nwaneri | G | 2010 five-year extension; final year 2015 | Traded to Arizona March 20, 2014 | 4+ (entered 2007) | Accrues in branch (on 53 for 16 games) | [NFL.com, 2010](https://www.nfl.com/news/guard-nwaneri-signs-five-year-contract-extension-with-jaguars-09000d5d81a5a14d); [OverTheCap](https://overthecap.com/player/uche-nwaneri/961/). Final year 2015 Confirmed by [the verifications](caldwell_pre_tag_verifications.md) section 1 and Entry 86 (the earlier "disputed" label in section 5 is superseded); 2014 status unaffected |
-| Will Rackley | G | 2011 third-round four-year rookie contract; final year 2014 | Under contract | 2 (2012 on Reserve/Injured, full pay) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/will-rackley/962/); `initial_cap_sheet.md`. Confirmed |
+| Will Rackley | G | 2011 third-round four-year rookie contract; final year 2014 | Traded to Seattle May 12, 2014 | 2 (2012 on Reserve/Injured, full pay) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/will-rackley/962/); `initial_cap_sheet.md`. Confirmed |
 | Mike Brewster | C | 2012 Jacksonville undrafted contract, three years; final year 2014 | Under contract | 1 (2012: 12 games, 7 starts, then Reserve/Injured) | Accrues in branch (on 53 for 16 games) | [Spotrac](https://www.spotrac.com/nfl/new-orleans-saints/mike-brewster-10383/) (three years, $1,450,000, per search-result text); `initial_roster.md`. Supported |
 | Jason Babin | DE | 2011 Philadelphia five-year contract, carried by Jacksonville's December 2012 waiver claim; final year 2015 | Traded to Miami March 24, 2014 | 4+ (entered 2004) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/jason-babin/931/) (JAX/PHI 2011, five years); `initial_cap_sheet.md`. Confirmed |
 | Andre Branch | DE | 2012 second-round four-year rookie contract; final year 2015 | Under contract | 1 (2012 on Reserve/Injured at season close, full pay) | Accrues in branch (on 53 for 16 games) | [OverTheCap](https://overthecap.com/player/andre-branch/909/); `initial_cap_sheet.md`. Confirmed |
