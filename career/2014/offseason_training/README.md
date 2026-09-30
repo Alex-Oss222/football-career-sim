@@ -7,10 +7,10 @@
 | [Phases One and Two](phases_one_and_two/README.md) | April 21–May 2; May 5–23 | Staff plan, training report, player assessments |
 | [Rookie minicamp](rookie_minicamp/README.md) | May 16–17 | Onboarding, staff plan, rookie report and assessments |
 | [OTAs](otas/README.md) | May 27–June 13, ten days | Staff plan, three blocks of work, handoff and assessments |
-| [Mandatory minicamp](mandatory_minicamp/README.md) | June 17–19; physicals June 16 | Staff plan and space for the actual report and assessments |
+| [Mandatory minicamp](mandatory_minicamp/README.md) | June 17–19; physicals June 16; handoff June 20 | Staff plan, the three-day report with the spring handoff, and assessments |
 | [Coaching methods](coaching_methods/README.md) | Used throughout the year | Unit preparation, session format and individual feedback |
 
-The wider program window ends June 22; the spring handoff is June 20. The June 22–28 Rookie Symposium and summer dates remain in the [calendar](../calendar.md). **OTAs are complete; mandatory minicamp has not run.**
+The wider program window ends June 22; the spring handoff is June 20. The June 22–28 Rookie Symposium and summer dates remain in the [calendar](../calendar.md). **The spring program is complete, including the mandatory minicamp; the summer break began June 21.**
 
 **Planning baseline:** February 2, 2014. The user authorized the training-folder, individual-film and Cousins-progression improvements on September 28, 2026. Preparing these records does not advance the career clock or record participation, film delivery, a hire, medical clearance or a role change.
 
@@ -47,7 +47,7 @@ Start with the player at the current date, including his full season of experien
 | Mandatory veteran minicamp | [Plan](mandatory_minicamp/staff_plan.md), [output](mandatory_minicamp/training_report.md), [evidence](mandatory_minicamp/player_assessments.md) | Retained assignments and individual summer/camp-entry instructions |
 | Training camp and preseason | [Plan](../training_camp_and_preseason/training_camp/staff_plan.md), [output](../training_camp_and_preseason/training_camp/training_report.md), [evidence](../training_camp_and_preseason/training_camp/player_assessments.md) | Lawful contact and game-speed transfer, individual development continued through season |
 
-Each phase has a linked `training_report.md` and `player_assessments.md` with matching evidence metadata. The offseason program (Phases One and Two, handoff May 23), the rookie minicamp (May 16 and 17) and the OTAs (ten days, May 27 to June 13, handoff June 13) are complete; mandatory minicamp and training camp have not run. The 2014 draft and undrafted signings are closed ([draft records](../draft/README.md)).
+Each phase has a linked `training_report.md` and `player_assessments.md` with matching evidence metadata. The offseason program (Phases One and Two, handoff May 23), the rookie minicamp (May 16 and 17), the OTAs (ten days, May 27 to June 13, handoff June 13) and the mandatory minicamp (June 17 to 19, spring handoff June 20) are complete; training camp has not run. The 2014 draft and undrafted signings are closed ([draft records](../draft/README.md)).
 
 Dates stay in the calendar and phase plans. The [decision package](staff_decisions.md) recommends the detailed sequence. The schedule-filing deadline is the agreed league date, no later than March 31 for an April 21 start; April 3 public publication is separate. A proposed date does not authorize work. No extra new-head-coach minicamp applies to Jacksonville in 2014.
 

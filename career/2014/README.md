@@ -2,7 +2,7 @@
 
 [Team](team/README.md) · [Calendar](calendar.md) · [Finances](finances/README.md) · [Trades](trades/README.md)
 
-**Where we are:** OTAs finished on June 13, 2014. Next are June 16 physicals and Caldwell’s Bradfield tender decision, then mandatory minicamp on June 17–19. [Current state](../../state/05_Current_Season_State.md) holds the live checkpoint and outstanding decisions. No 2014 game has been played.
+**Where we are:** the spring program closed with the mandatory minicamp (June 17–19) and its June 20 staff handoff; the clock is June 28, 2014, in the summer break. Next are the July 1–13 staff work and the July 14 camp report-date publication (historical: rookies report July 21, veterans July 24). [Current state](../../state/05_Current_Season_State.md) holds the live checkpoint and outstanding decisions. No 2014 game has been played.
 
 ## Follow the season
 
