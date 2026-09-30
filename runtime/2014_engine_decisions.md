@@ -9,6 +9,7 @@
 | Piece | Present behavior | Required before claiming completion |
 |---|---|---|
 | Unequal team strength | `scripts/build_week_inputs.py` still gives every club the same Average anchors. Profiles and this policy do not change those inputs | Dated individual evidence, coverage audit, lineup/shared-assignment composition, matchup integration, calibration and release |
+| Offseason player progression | Live roster-derived cohort, position-specific trait registry, causal case validation, hidden-versus-observed state contract and externally calibrated transition interface are present | Calibrated priors, private persisted latent states, player evidence coverage, matchup consumption and release validation; the new foundation does not change a game draw by itself |
 | Coaching contribution | Living [Stone](../career/coaching_profiles/alex_stone.md) and [staff](../career/coaching_profiles/staff_profiles.md) assessments now trace supported choices and open questions | Consume only scoped evidence and actual installed/selected work; model benefits and costs without an overall coach bonus |
 | Live injury substitution | `runtime/kernel.py` still draws injuries after game resolution; its pause is not a partial game and its validation still rejects multiple passers | Actual removal, eligible substitutions, immutable partial continuation, backup passing and reconciled participation/stat credits |
 
