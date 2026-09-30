@@ -1,5 +1,11 @@
 # Cornelius Lucas — 2014 Player Profile
 
+<!-- photo -->
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cornelius_Lucas_WFT_2021_training_camp_%28cropped%29.jpg?width=500" alt="Cornelius Lucas" width="160">
+
+*Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Cornelius_Lucas_WFT_2021_training_camp_(cropped).jpg)).*
+<!-- /photo -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

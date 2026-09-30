@@ -1,5 +1,11 @@
 # Sen'Derrick Marks — 2014 Player Profile
 
+<!-- photo -->
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sen%27Derrick_Marks_2014_Jaguars_training_camp_Cropped.jpg?width=500" alt="Sen&#x27;Derrick Marks" width="160">
+
+*Photo: Flickr user Melissa Hillier, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Sen%27Derrick_Marks_2014_Jaguars_training_camp_Cropped.jpg)).*
+<!-- /photo -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

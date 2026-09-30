@@ -4,6 +4,8 @@ from pathlib import Path
 import re
 import textwrap
 
+from scripts.player_photos import Photos, credit_short
+
 
 def award_cards(award, shortlist, winner_index):
     if not 0 <= winner_index < len(shortlist) <= 3:
@@ -39,11 +41,12 @@ def render_pages(season, results, method=None):
              f'Awards appear after games and the applicable award process close. No {season} award has been drawn.' if not results else 'These pages display recorded results without repeating the draw.', '',
              '## Weekly awards', '', '| Week | Awards |', '|---|---|']
     entries = {(v['kind'], str(v['key'])): v for v in results.values()}
+    photos = Photos()
     for week in range(1, 19 if season >= 2021 else 18):
         rel = f'week_{week:02d}/README.md'
         entry = entries.get(('week', str(week)))
         index.append(f'| [Week {week}]({rel}) | {"Recorded" if entry else "Awaiting closed games and awards"} |')
-        out.update(period_page(f'Week {week}', rel, entry, method))
+        out.update(period_page(f'Week {week}', rel, entry, method, photos=photos))
     index += ['', '## Monthly awards', '', '| Month | Awards |', '|---|---|']
     months = (list(method['months']) if method and method.get('months') else
               ['September', 'October', 'November', 'December'])
@@ -51,7 +54,7 @@ def render_pages(season, results, method=None):
         rel = f'monthly/{month.lower()}/README.md'
         entry = next((v for (kind, key), v in entries.items() if kind == 'month' and key.lower() == month.lower()), None)
         index.append(f'| [{month}]({rel}) | {"Recorded" if entry else "Awaiting the season’s dated coverage and closed awards"} |')
-        out.update(period_page(month, rel, entry, method, back='../../README.md'))
+        out.update(period_page(month, rel, entry, method, back='../../README.md', photos=photos))
     index += ['', '## Season honours', '',
               'Season awards and the Pro Bowl use their own dates and selection processes. Follow [postseason and Pro Bowl](../../postseason/README.md).', '',
               'Before the first draw, freeze this season’s methodology and monthly coverage from the actual schedule. Prior-year winners and monthly windows do not carry forward.', '']
@@ -60,9 +63,10 @@ def render_pages(season, results, method=None):
     return out
 
 
-def period_page(label, relative, entry, method, back='../README.md'):
+def period_page(label, relative, entry, method, back='../README.md', photos=None):
     lines = [f'# {label} awards', '', f'[All regular-season awards]({back})', '']
     out = {}
+    photos = photos or Photos()
     if not entry:
         lines += ['Not awarded yet. Finalists and the winner will appear here after the applicable games and award process close.', '']
     else:
@@ -71,11 +75,20 @@ def period_page(label, relative, entry, method, back='../README.md'):
             asset = re.sub(r'[^a-z0-9]+', '_', key.lower())+'.svg'
             out[(Path(relative).parent / asset).as_posix()] = award_cards(title, award['shortlist'], award['winner_index'])
             winner = award['shortlist'][award['winner_index']]['player']
-            lines += [f'## {title}', '', f'![{title}: {winner} wins; winner centered with a gold border]({asset})', '',
-                      '| Player | Team | Shortlist score | Result |', '|---|---|---:|---|']
+            found = {row['player']: photos.lookup(row['player'], team=row['team']) for row in award['shortlist']}
+            lines += [f'## {title}', '']
+            if found[winner]:
+                lines += [f'<img src="{escape(found[winner]["url"], quote=True)}" alt="{escape(winner, quote=True)}" width="160">', '']
+            lines += [f'![{title}: {winner} wins; winner centered with a gold border]({asset})', '',
+                      '| Photo | Player | Team | Shortlist score | Result |', '|---|---|---|---:|---|']
             for i, row in enumerate(award['shortlist']):
-                lines.append(f"| {row['player']} | {row['team']} | {row['score']:.1f} | {'Winner' if i == award['winner_index'] else 'Finalist'} |")
+                thumb = found[row['player']]
+                cell = f'<img src="{escape(thumb["url"], quote=True)}" alt="{escape(row["player"], quote=True)}" width="60">' if thumb else ''
+                lines.append(f"| {cell} | {row['player']} | {row['team']} | {row['score']:.1f} | {'Winner' if i == award['winner_index'] else 'Finalist'} |")
             lines += ['', 'Scores preserve the recorded shortlist. No vote totals or second/third places are inferred.', '']
+            credits = [f"{name} ({credit_short(row)})" for name, row in found.items() if row]
+            if credits:
+                lines += ['Photos, identity imagery only: ' + '; '.join(credits) + '.', '']
         if entry.get('note'):
             lines += [entry['note'], '']
     out[relative] = '\n'.join(lines)

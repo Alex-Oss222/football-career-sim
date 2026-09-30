@@ -1,5 +1,11 @@
 # Jeremy Cain — 2014 Player Profile
 
+<!-- photo -->
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jeremy_Cain.jpg?width=500" alt="Jeremy Cain" width="160">
+
+*Photo: Sgt. Randall A. Clinton, US Marine Corps, Public domain ([source](https://commons.wikimedia.org/wiki/File:Jeremy_Cain.jpg)).*
+<!-- /photo -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

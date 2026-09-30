@@ -1,5 +1,11 @@
 # Andre Branch — 2014 Player Profile
 
+<!-- photo -->
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Andre_Branch_%28cropped%29.jpg?width=500" alt="Andre Branch" width="160">
+
+*Photo: Hector Alejandro, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Andre_Branch_(cropped).jpg)).*
+<!-- /photo -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

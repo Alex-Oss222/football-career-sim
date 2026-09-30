@@ -1,6 +1,6 @@
 # 2014 player profiles
 
-Working player cards for the current 78-player roster (52 carried players plus the nine 2014 draft selections and 17 undrafted signings of May 8 to 11). Starting personnel judgments remain in place during the season; the full assessment is reviewed at season close. The bottom regular-season and playoff tables refresh after every closed game.
+Working player cards for the current 78-player roster (52 carried players plus the nine 2014 draft selections and 17 undrafted signings of May 8 to 11). Starting personnel judgments remain in place during the season; the full assessment is reviewed at season close. The bottom regular-season and playoff tables refresh after every closed game. A card opens with the player's open-licensed photograph and its credit when the [photo registry](../../../../library/data/player_photos.json) has one; the photograph is identity imagery only.
 
 [2014 player template](TEMPLATE.md) · [2013 final profiles](../../../2013/player_profiles/README.md) · [Current roster](../roster/roster.md)
 

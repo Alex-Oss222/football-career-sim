@@ -1,5 +1,11 @@
 # Trai Turner — 2014 Player Profile
 
+<!-- photo -->
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Trai_Turner.jpg?width=500" alt="Trai Turner" width="160">
+
+*Photo: Arnie Papp, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Trai_Turner.jpg)).*
+<!-- /photo -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

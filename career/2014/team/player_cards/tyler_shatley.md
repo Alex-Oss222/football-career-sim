@@ -1,5 +1,11 @@
 # Tyler Shatley — 2014 Player Profile
 
+<!-- photo -->
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tyler_Shatley_%28cropped%29.jpg?width=500" alt="Tyler Shatley" width="160">
+
+*Photo: TigerNet.com, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Tyler_Shatley_(cropped).jpg)).*
+<!-- /photo -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

@@ -1,5 +1,11 @@
 # C.J. Wilson — 2014 Player Profile
 
+<!-- photo -->
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/C.J._Wilson_August_1_2011_at_Packers_Training_Camp.jpg?width=500" alt="C.J. Wilson" width="160">
+
+*Photo: Gabriel Cervantes, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:C.J._Wilson_August_1_2011_at_Packers_Training_Camp.jpg)).*
+<!-- /photo -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  
