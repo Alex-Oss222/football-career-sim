@@ -28,7 +28,7 @@ class AnnualPlayerSheetTests(unittest.TestCase):
         cousins=next(p for p in players if p.player=="Kirk Cousins")
         sheet=render_player_sheet(cousins,2014,checkpoint)
         self.assertIn("[2013 Jacksonville profile](../../2013/player_profiles/kirk_cousins.md)",sheet)
-        self.assertIn("Carries forward the supported 2013 player",sheet)
+        self.assertIn("Carries forward the supported prior-season player",sheet)
         self.assertIn("## Established player state",sheet)
         self.assertIn("## Year-over-year change",sheet)
 
