@@ -1,6 +1,6 @@
 # Living player profiles: 2014 entry
 
-**Current-use note, Entry 101:** this is the 61-player exit-review baseline, not the live roster. The [current roster](../../roster.md) has 55 controlled players. Preserve departed-player feedback obligations as history; add actual newcomer work here without treating missing observations as failed performance.
+**Current-use note:** this is the frozen 61-player 2013 exit-review baseline, not the live roster or a progression eligibility list. The [current roster](../../roster.md) has 53 controlled players as of March 24, 2014; [progression_roster.json](progression_roster.json) derives the current development cohort from that roster and uses [2013_exit_player_index.json](2013_exit_player_index.json) only to identify Jacksonville continuity. Preserve departed-player feedback obligations as history; add actual newcomer work here without treating missing observations as failed performance.
 
 [Development method](README.md) · [Cousins in detail](kirk_cousins.md) · [Film obligations](../film/player_queue.md) · [Annual calendar](../../calendar.md)
 
