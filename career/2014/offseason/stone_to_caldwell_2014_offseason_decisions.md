@@ -414,3 +414,14 @@ Package E is folded into package I while package I is live. Nothing executes bef
 ## Historical calendar amendment, Entry 101
 
 The user subsequently selected the historical calendar: rookie camp May 16–17; OTAs May 27–29, June 2, 3, 5, 9, 10, 12, 13; mandatory minicamp June 17–19. The original proposed date table above remains proposal history. The current [phase package](phase_plan_decisions.md) and [calendar](../calendar.md) control execution. No other pending policy is adopted by this date amendment.
+
+## September 30, 2026 amendment: Jones-Drew and C.J. Wilson
+
+**User instruction, at the March 24, 2014 branch checkpoint.** This records Stone's plan; no signing is made here. Both players reach their real signing dates on March 28, 2014.
+
+| Player | Instruction | Ceiling | Walk-away |
+|---|---|---|---|
+| Maurice Jones-Drew, RB | Pursue the re-signing. His recorded practice strengths in run tracks and protection give continuity while Jonathan Grimes and C.J. Anderson develop | Keep the existing offer, two years, $8.5M with $3.5M guaranteed, as the ceiling; do not extend the commitment | Anything above that ceiling |
+| C.J. Wilson, DE | Keep the minimum offer for a roster competition, subject to a current physical. With Babin and Alualu traded, another experienced defensive-front option is useful | One year at the minimum for his credited seasons | A demand for substantial guarantees or a starting promise |
+
+**Evidence note.** Jones-Drew's 2013 branch production supports reviewing his work, but the equal-strength engine's statistics alone do not establish his ability. Wilson's 2013 injury left too little individual evidence to promise a role or justify a larger commitment. No role is promised to either player.
