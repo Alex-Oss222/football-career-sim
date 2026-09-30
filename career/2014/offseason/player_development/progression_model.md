@@ -25,13 +25,13 @@ but he is not part of the live 2014 progression resolution.
 
 ## Current roster checkpoint
 
-As of the current March 24, 2014 roster:
+As of the current March 28, 2014 roster:
 
 | Cohort | Count | Meaning |
 |---|---:|---|
-| Controlled players | 53 | Every live progression candidate at this checkpoint |
-| Jacksonville 2013 continuity | 48 | Player appears in the frozen 2013 exit-review universe and remains controlled |
-| Ordinary returning Jaguars | 42 | Returned from the 2013 roster/club-control group |
+| Controlled players | 55 | Every live progression candidate at this checkpoint |
+| Jacksonville 2013 continuity | 50 | Player appears in the frozen 2013 exit-review universe and remains controlled |
+| Ordinary returning Jaguars | 44 | Returned from the 2013 roster/club-control group |
 | Practice squad to reserve/future | 6 | Tyler Bray, Richard Murphy, Jerrell Jackson, D'Anthony Smith, Jerome Long and Antwon Blake |
 | 2014 newcomers | 5 | Hakeem Nicks, Andrew Hawkins, Daniel Te'o-Nesheim, Alterraun Verner and Aqib Talib |
 
@@ -66,7 +66,38 @@ domains.
 | Conditioning | Work capacity, recovery and body-composition state | Generic toughness or motivation |
 | Role | Responsibilities the staff is willing/able to assign | Better underlying ability |
 
-There is no human-facing overall value and no generic awareness attribute.
+The resolver itself still has no engine-wide overall value and no generic
+awareness attribute. The separate annual personnel sheet may show a user-facing
+`/10` summary grade, but that grade is not consumed by the resolver.
+
+## Inherited player identity: start with the player he already is
+
+A returning player does not become an unknown player because the season number
+changed. The previous season's demonstrated capabilities are the default
+starting state for the next season.
+
+The runtime represents those with `EstablishedCapability` and
+`PlayerIdentityState`. `carry_forward_identity()` preserves them before any
+offseason transition is considered. A later development case is a delta from
+that player, not a re-scout from zero.
+
+Keep four ideas separate: capability, access/execution, consistency, and staff
+certainty. A quarterback can retain the arm to drive a tight-window throw while
+being late to recognize the window. A receiver can retain long speed while
+running a poor route. A corner can retain recovery speed while recognizing the
+route late. Those execution problems may change processing, technique or
+consistency without rewriting the physical tool.
+
+Established state changes only for a football reason with evidence. Missing new
+evidence means **no demonstrated change**, not that the old capability vanished.
+New acquisitions bring their established NFL football capabilities with them
+when permitted evidence supports those capabilities; Jacksonville terminology,
+teammate timing and role access may be new.
+
+The annual history is stored in
+[`career/YEAR/player_profiles/`](../../../player_profiles/README.md). Those
+sheets make the 2013-to-2014-to-2015 progression readable without turning the
+visible overall grade into an engine input.
 
 ## Whole-player context gate
 

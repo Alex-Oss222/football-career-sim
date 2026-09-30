@@ -1,9 +1,9 @@
 # Project Instructions
 
 **Document status:** Stable governing instructions  
-**Version:** Rebuild draft 1.7
-**Supersedes:** Rebuild draft 1.6
-**Last Document 1 content-changing revision:** 2026-09-29, Entry 90: user clarifies that calling or delegating plays is part of the head-coach role; full in-game control needs no separate appointment. Previous history: 2026-09-19 - Entry 13 reconciles readiness pointers to the established career without advancing time. Previous revision: 2026-09-18 - defined the explicit PRE-HIRE SEARCH lifecycle, authorized `career/<year>/offseason/hiring_search.md` as the ex-ante decision ledger before full career initialization, reconciled that exception with Document 6, and updated response-format language for the three active templates.
+**Version:** Rebuild draft 1.8
+**Supersedes:** Rebuild draft 1.7
+**Last Document 1 content-changing revision:** 2026-09-30: user explicitly authorizes annual NFL Player Sheets with dated /10 personnel-summary grades and NFL standing, while keeping engine probabilities and hidden matchup conversion private. Previous revision: 2026-09-29, Entry 90: user clarifies that calling or delegating plays is part of the head-coach role; full in-game control needs no separate appointment. Previous history: 2026-09-19 - Entry 13 reconciles readiness pointers to the established career without advancing time. Previous revision: 2026-09-18 - defined the explicit PRE-HIRE SEARCH lifecycle, authorized `career/<year>/offseason/hiring_search.md` as the ex-ante decision ledger before full career initialization, reconciled that exception with Document 6, and updated response-format language for the three active templates.
 **Change rule:** Amend only by an explicit user instruction or a documented canon correction. Do not use this file for changing season state.
 
 ## 1. Purpose and honest limits
@@ -102,6 +102,8 @@ Preparation consumes finite time, physical load, meeting capacity, and repetitio
 Do not use universal 0-to-100 abilities, hidden exact ratings, experience points, level gates, deterministic age curves, or a single true talent value. Distinguish demonstrated game performance, practice evidence, physical tools, technique, processing, fit, reliability, projection, evaluator confidence, and uncertainty.
 
 Clarified 2026-09-18: this bars a secret bespoke "true talent" number invented for a specific person. It does not bar Document 7 §2's mechanical tier anchors — a fixed, identical-for-every-player-at-that-position lookup value derived deterministically from the same qualitative tier this section already requires (§2.2's conversion table), used only as internal resolution machinery and never shown to the user in any form. The distinction is mechanism, not secrecy: a hidden exact rating is a discretionary judgment about one person: a tier anchor is a non-discretionary function of a tier every evaluator would assign the same way.
+
+Clarified 2026-09-30 at the user's explicit instruction: the annual NFL Player Sheet under `career/<year>/player_profiles/` may show a dated 1-to-10 personnel-summary grade and plain-language NFL standing so the user can compare who the player was from one season to the next. This is a presentation/evaluation summary, not a hidden true-talent number, potential grade, universal ability schema, probability, or direct game-resolution input. Its supporting physical, technical, processing, consistency, role and evidence record remains authoritative. A field stays unassessed when the evidence does not support a defensible grade.
 
 Development is gradual, uneven, context-dependent, and uncertain. Staff and scouts may be wrong. One game does not conclusively establish a breakout, decline, scheme, culture, or coach.
 
