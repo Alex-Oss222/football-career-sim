@@ -1,7 +1,7 @@
 # Jacksonville Jaguars roster
 
-**As of:** March 20, 2014 (ledger Entry 99: Jeremy Cain re-signed; Uche Nwaneri traded to Arizona in package I for No. 38; Entry 98: Daniel Te'o-Nesheim signed). Monroe, Marks, Verner, Talib, Nicks, Hawkins and Te'o-Nesheim signed in the replay (Entries 95 to 98); 2013 season complete (Jacksonville eliminated in the AFC Divisional round).
-**Canonical controlled-player count:** **55** (offseason roster; the 90-player limit applies from the league year).
+**As of:** March 24, 2014 (ledger Entry 102: Jason Babin traded to Miami and Tyson Alualu to Houston; Entry 99: Jeremy Cain re-signed; Uche Nwaneri traded to Arizona in package I for No. 38; Entry 98: Daniel Te'o-Nesheim signed). Monroe, Marks, Verner, Talib, Nicks, Hawkins and Te'o-Nesheim signed in the replay (Entries 95 to 98); 2013 season complete (Jacksonville eliminated in the AFC Divisional round).
+**Canonical controlled-player count:** **53** (offseason roster; the 90-player limit applies from the league year).
 **Changes at the league year (Entries 94 to 99):** Monroe and Sen'Derrick Marks re-signed and Alterraun Verner, Aqib Talib, Hakeem Nicks, Andrew Hawkins and Daniel Te'o-Nesheim signed in the replay; Cameron Bradfield (RFA) and Toney Clemons, Mike Brown and Austin Pasztor (ERFA) tendered; the six reserve/future contracts took effect. Left control at 4 p.m.: Chad Henne, Jeremy Cain (re-signed March 19), Maurice Jones-Drew, C.J. Wilson, Alan Ball and Brent Grimes (unrestricted; Henne's and Cain's negotiations reopened in the replay), Allen Reisner and Kevin Rutland (not tendered) and Brad Meester (retired). See departed-player history.
 **Practice squad:** **0** (no 2014 practice squad exists before the regular season). **Reserve/future contracts:** the six signed February 3 and 5, 2014 (ledger Entry 85) are now effective and listed in current controlled players.
 **Archived 2013 record:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-1 (AFC Wild Card: Jacksonville 38, Kansas City 14; AFC Divisional: Tennessee 20, Jacksonville 13).
@@ -84,22 +84,20 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 | --- | --- | --- | ---: | --- | --- | --- |
 | Mike Brewster | C | 1989-07-27 | 24 | Offseason roster | No communicated restriction | Starting center (confirmed Week 6) |
 
-### Defensive ends (6)
+### Defensive ends (5)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
-| Jason Babin | DE | 1980-05-24 | 33 | Offseason roster | No communicated restriction | Edge 1 |
 | Andre Branch | DE | 1989-07-14 | 24 | Offseason roster | No communicated restriction | Edge 3 |
 | Ryan Davis | DE | 1989-02-24 | 25 | Offseason roster | No communicated restriction | Edge 4 |
 | Lavar Edwards | DE | 1990-04-29 | 23 | Offseason roster | No communicated restriction | Edge/front depth and teams (dressed Weeks 12 and 14-17; inactive Week 13) |
 | Jeremy Mincey | DE | 1983-12-14 | 30 | Offseason roster | No communicated restriction | Edge 2 |
 | Daniel Te'o-Nesheim | DE | 1987-06-12 | 26 | Offseason roster (signed March 18, 2014) | No communicated restriction | Role not set |
 
-### Defensive tackles (7)
+### Defensive tackles (6)
 
 | Player | Pos | DOB | Age | Status | Availability | Role |
 | --- | --- | --- | ---: | --- | --- | --- |
-| Tyson Alualu | DT | 1987-05-12 | 26 | Offseason roster | No communicated restriction | DT rotation |
 | Sen'Derrick Marks | DT | 1987-02-23 | 27 | Offseason roster (re-signed March 11, 2014) | No communicated restriction | Starting DT (2013) |
 | Roy Miller | DT | 1987-07-09 | 26 | Offseason roster | No communicated restriction | Starting DT |
 | C.J. Mosley | DT | 1983-08-06 | 30 | Offseason roster | No communicated restriction | Interior DL rotation (dressed from Week 11) |
@@ -175,6 +173,10 @@ Jacksonville's 2013 practice squad (formed September 1, 2013, ledger Entry 27) h
 | Allen Reisner | TE | Not tendered; unrestricted free agent | None |
 | Kevin Rutland | CB | Not tendered; unrestricted free agent | None |
 | Brad Meester | C | Retired; contract expired | None |
+
+### March 24, 2014 (Entry 102)
+
+Jason Babin (DE) and Jacksonville's 2017 seventh-round pick were traded to Miami for Miami's 2015 third-round pick (package D). Tyson Alualu (DT) was traded to Houston for Houston's unconditional 2015 fourth-round pick (package E).
 
 ### March 20, 2014 (Entry 99)
 

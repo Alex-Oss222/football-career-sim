@@ -1,6 +1,6 @@
 # Jacksonville Jaguars individual contract details
 
-[Return to the twelve-year table](jaguars_cap.md). As of March 24, 2014, Entry 100. Whole US dollars.
+[Return to the twelve-year table](jaguars_cap.md). As of March 24, 2014, Entry 102. Whole US dollars.
 
 Annual cells contain the working original or reconstructed contract schedule. Blank years lie outside that deal. The [completion research](../../library/2014_jaguars_contract_completion.md) identifies adopted simulation terms and guarantee assumptions. Cap, scheduled cash and remaining unpaid guarantees are separate amounts.
 
@@ -556,24 +556,17 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ## Jason Babin
 
+Former player; departure March 24, 2014. [ledger](../../career/2014/ledger.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | EDGE / Under contract |
+| Position / status | EDGE / Traded to Miami, March 24, 2014 (package D, Entry 102) |
 | Original contract | Veteran (Philadelphia, 2011), carried by December 2012 waiver claim |
 | Signed | 2011 |
 | Term | 5 / 2015 |
 | Contract value | $28,325,000 |
-| Bonus terms | No Jacksonville proration on the claimed Philadelphia contract |
-| Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap. |
-| Schedule basis | Includes adopted simulation amounts; see contract notes |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 | $6,000,000 | $0 | $175,000 | $6,175,000 | $6,175,000 | $0 |
-| 2015 | $6,000,000 | $0 | $175,000 | $6,175,000 | $6,175,000 | $0 |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 ### Contract notes
 
@@ -663,23 +656,17 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ## Tyson Alualu
 
+Former player; departure March 24, 2014. [ledger](../../career/2014/ledger.md).
+
 | Field | Detail |
 |---|---|
-| Position / status | IDL / Under contract |
+| Position / status | IDL / Traded to Houston, March 24, 2014 (package E, Entry 102) |
 | Original contract | Rookie, 2010 first round |
 | Signed | 2010 |
 | Term | 5 / 2014 |
 | Contract value | $21,399,000 |
-| Bonus terms | $1,542,500 original bonus allocation in the final 2014 year |
-| Remaining unpaid salary guarantee | $0 |
-| Guarantee basis | Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap. |
-| Schedule basis | Executed branch terms / researched original schedule |
 
-### Annual schedule
-
-| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
-|---|---|---|---|---|---|---|
-| 2014 | $2,571,500 | $1,542,500 | $150,000 | $4,264,000 | $2,721,500 | $0 |
+No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
 
 ### Contract notes
 

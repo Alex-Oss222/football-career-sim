@@ -832,13 +832,11 @@ Jacksonville includes every controlled player, including the practice squad. Oth
 | Austin Pasztor | G | 1990-11-26 | 23 | Offseason roster (ERFA tender, unsigned) |
 | Will Rackley | G | 1989-10-11 | 24 | Offseason roster |
 | Mike Brewster | C | 1989-07-27 | 24 | Offseason roster |
-| Jason Babin | DE | 1980-05-24 | 33 | Offseason roster |
 | Andre Branch | DE | 1989-07-14 | 24 | Offseason roster |
 | Ryan Davis | DE | 1989-02-24 | 25 | Offseason roster |
 | Lavar Edwards | DE | 1990-04-29 | 23 | Offseason roster |
 | Jeremy Mincey | DE | 1983-12-14 | 30 | Offseason roster |
 | Daniel Te'o-Nesheim | DE | 1987-06-12 | 26 | Offseason roster (signed March 18, 2014) |
-| Tyson Alualu | DT | 1987-05-12 | 26 | Offseason roster |
 | Sen'Derrick Marks | DT | 1987-02-23 | 27 | Offseason roster (re-signed March 11, 2014) |
 | Roy Miller | DT | 1987-07-09 | 26 | Offseason roster |
 | C.J. Mosley | DT | 1983-08-06 | 30 | Offseason roster |

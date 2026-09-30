@@ -1,5 +1,7 @@
 # Jacksonville trade sheets: March 24, 2014
 
+**Superseded (Entry 102):** packages D, E and G were resolved on March 24 in the user's trade-dynamics run; see the [resolution log](march_24_2014_trade_resolution.md). The sheets below are kept as the proposal record.
+
 **Status: PROPOSED. Nothing on these sheets has been offered to any club.** Prepared September 30, 2026 at the March 24, 2014 checkpoint (ledger Entry 101) for Stone's approval. Every club contact waits for an approved sheet. This file is a planning record: it changes no roster, contract, pick or cap figure. When an approved sheet is executed, the result goes to the [offer log](trade_offers.md), [completed trades](trades.md) and the ledger.
 
 **Where the club stands today:**
