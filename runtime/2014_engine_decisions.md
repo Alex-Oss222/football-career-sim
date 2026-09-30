@@ -32,7 +32,7 @@ Teams need different capabilities, vulnerabilities and ways to play. A single cl
 
 Each evidence receipt needs stable player ID, source locator, source/public date, observation date, allowed branch cutoff, dimension/job, direct observation versus inference, applicable conditions, confidence and known contamination. Reject future-dated evidence before composing an input. Keep disputed and contradictory observations visible. A low-confidence Average fallback means insufficient knowledge, not verified league-average ability.
 
-Use the existing qualitative tier vocabulary and common internal conversion. Do not add a human-facing overall number, potential grade, permanent archetype or personality score. Separate what a player can physically do, what he understands, what he has executed reliably and what has not been observed. Skill can transfer only with a stated football reason.
+Use position-specific evidence and keep the private matchup conversion separate from user-facing summaries. The annual player sheet may show the user a dated /10 personnel grade and plain-language NFL standing. Those fields are descriptive snapshots only: they are not potential grades, permanent archetypes, personality scores, probability inputs or a substitute for the underlying traits. Separate what a player can physically do, what he understands, what he has executed reliably and what has not been observed. Established capabilities carry forward by default; skill changes only with a stated football reason.
 
 ### Team construction and matchup
 

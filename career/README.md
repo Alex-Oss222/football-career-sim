@@ -2,7 +2,7 @@
 
 This directory holds dated simulation history and explicitly identified current views. Start with the [active 2014 career index](2014/README.md) and [current state](../state/05_Current_Season_State.md). The lifecycle below describes transitions; it does not declare the present phase.
 
-Cross-season working assessments live in [coaching profiles](coaching_profiles/README.md), with [Stone's current synthesis and evolution](coaching_profiles/alex_stone.md). Future scheduling references include the [historical 2015 calendar](2015/calendar.md); their presence does not open a season or advance the clock.
+Cross-season working assessments live in [coaching profiles](coaching_profiles/README.md), with [Stone's current synthesis and evolution](coaching_profiles/alex_stone.md). Annual player identity and year-over-year progression live in [player profiles](player_profiles/README.md). Future scheduling references include the [historical 2015 calendar](2015/calendar.md); their presence does not open a season or advance the clock.
 
 ## Lifecycle
 
@@ -38,6 +38,7 @@ career/
     calendar.md                 <- historical full-season calendar: camps, preseason, games, roster/cap deadlines and conditional postseason gates
     coaching_staff.md          <- clean current staff list, no process narrative; the hiring process itself lives in offseason/staff_building/hires.md
     roster.md                   <- current roster view: controlled players, status, availability and decided roles
+    player_profiles/            <- one annual NFL player sheet per season player; visible personnel summary, inherited year to year
     depth_chart.json            <- Stone's depth order, roles and game-day inactives, read by the week-input builder
     migrations/                 <- audited canonical migrations and their manifests
     league_results/

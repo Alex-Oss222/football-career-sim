@@ -6,11 +6,11 @@
 
 **Runtime status:** `READY — LIVE PREFLIGHT STILL REQUIRED`
 
-**Document version:** `1.0-runtime`
+**Document version:** `1.1-runtime`
 
-**Last verified:** `2026-09-19`
+**Last verified:** `2026-09-30`
 
-**Last Document 7 content-changing update:** `2026-09-19 - retained the verified 2013 runtime while defining the private pre-draw freeze as an immutable event-ID + canonical packet SHA-256 commitment, with reconstruction required to match that commitment for replay/correction.`
+**Last Document 7 content-changing update:** `2026-09-30 - added user-requested annual player sheets with visible /10 personnel summaries while keeping engine probabilities, transition priors and private matchup conversion separate; established player capabilities now carry forward across seasons by default.`
 
 **Supersedes:** Nothing. This is an addition to the existing package, not a replacement of any of Documents 1-6.
 
@@ -33,7 +33,7 @@ Documents 1-6 are unchanged by this document except for the small cross-referenc
 
 Document 2 §1 already says: *"This document never contains hidden simulator facts... If the platform supports private state, essential hidden state remains there. Otherwise, leave the matter undetermined until a plausible event resolves it."* This document is that private state.
 
-To compare a pass offense to a pass defense, weight a fourth-and-two, or decide whether a hit produces a fumble, the engine needs *some* internal, quantitative handle on player and unit quality. Documents 1 and 3 forbid ever showing the user a number, grade, tier score, or hidden rating — and that rule is unchanged. The resolution is the same one Document 2 already anticipated: the numbers live in a separate store the coach-facing documents (1-6) never reference and the user never sees. The user only ever sees the same five-tier qualitative language (elite / plus / average / below-average / replacement-level) already used elsewhere in this package for evaluation, plus narrated football outcomes. No probability, percentage, delta, or roll may ever appear in coach-facing text. This is a hard rule, not a style preference — a leak of a bare number here is the one failure mode every design reviewer flagged as the real risk of this whole document, and it is the one thing to check for in any output this engine produces.
+To compare a pass offense to a pass defense, weight a fourth-and-two, or decide whether a hit produces a fumble, the engine needs *some* internal, quantitative handle on player and unit quality. The engine's probabilities, transition priors, matchup conversion, deltas and rolls remain private and must never appear in coach-facing text. The user-requested annual NFL player sheet is a narrow exception for visible personnel summaries: it may show a dated /10 grade and plain-language NFL standing so season-to-season progression is readable. That visible grade is not the engine number, is not potential, is not a probability, and may not be fed directly into a draw. The resolver still consumes the underlying evidence-backed player capabilities, assignments and matchups.
 
 **Governance.** The Engine State store keeps its own append-only correction ledger, mirroring Document 6's discipline but stored separately: every calibration change, anchor correction, or formula revision is appended with what changed and why, nothing is silently overwritten, and a staged change becomes canon only on an explicit "commit closed" line — the same atomic-commit habit Document 1 §13.2 already uses for coach-facing canon. Unlike Documents 1-6, the Engine Ledger is never coach-facing and is never quoted to the user, even in summarized form.
 
