@@ -1,11 +1,11 @@
 {
  "team": "Jacksonville Jaguars",
  "season": 2014,
- "status": "WORKING VIEW, NOT A GAME INPUT. Carried from the closed 2013 chart minus players no longer controlled; no 2014 depth decision has been made.",
- "as_of": "May 12, 2014 (ledger Entry 110)",
+ "status": "WORKING VIEW, NOT A GAME INPUT. Carried from the closed 2013 chart minus players no longer controlled, with Stone's May 12, 2014 rep starting points for WR1, WR3, left guard, right guard and Edge 1 applied (Entry 111). Those are starting points with named competition, not awards; no other 2014 depth decision has been made.",
+ "as_of": "May 23, 2014 (ledger Entry 111)",
  "effective": "Carried from the closed 2013 chart (January 6, 2014, AFC Divisional preparation)",
- "sources": "career/2013/depth_chart.json (Git 781213a, carried order); current career/2013/roster.md; current career/2014/offseason/contract_status_register.md; career/2014/offseason/free_agency/signings.md; ledger Entries 79 and 85 through 89; Entry 94 (league year opened); Entry 95 (March 2014 free-agency replay); Entry 108 (2014 draft and undrafted signings)",
- "rule": "Order within each kernel position group is the closed 2013 order exactly as carried, minus players no longer controlled. It is not a 2014 decision. Stone owns the 2014 order and changes it only by decision; each change is logged in career/2014/depth_chart.md.",
+ "sources": "career/2013/depth_chart.json (Git 781213a, carried order); current career/2013/roster.md; current career/2014/offseason/contract_status_register.md; career/2014/offseason/free_agency/signings.md; ledger Entries 79 and 85 through 89; Entry 94 (league year opened); Entry 95 (March 2014 free-agency replay); Entry 108 (2014 draft and undrafted signings); Entry 110 (Rackley traded); Entry 111 (Stone's May 12 starting roles; rookie minicamp and Phase Two closed)",
+ "rule": "Order within each kernel position group is the closed 2013 order exactly as carried, minus players no longer controlled, plus the placements Stone has decided (Entry 111). Stone owns the 2014 order and changes it only by decision; each change is logged in career/2014/depth_chart.md.",
  "note": "Kept under career/2014/offseason/ on purpose. runtime/seasons.py treats career/2014/depth_chart.json as the 2014 game input, and runtime/week_inputs.py reads that file as Stone's order. A chart that still carries pending free agents and players whose contracts start March 11 must not satisfy that input. Promote a reviewed chart to career/2014/depth_chart.json only when 2014 control, medical clearance and Stone's depth decisions are established.",
  "depth": {
   "QB": [
@@ -22,7 +22,9 @@
    "Montell Owens"
   ],
   "WR": [
+   "Hakeem Nicks",
    "Adam Thielen",
+   "Davante Adams",
    "Toney Clemons",
    "Mike Brown"
   ],
@@ -32,7 +34,9 @@
   ],
   "OL": [
    "Eugene Monroe",
+   "Joel Bitonio",
    "Mike Brewster",
+   "Trai Turner",
    "Lane Johnson",
    "Cameron Bradfield",
    "Austin Pasztor",
@@ -115,7 +119,11 @@
   "Sen'Derrick Marks": "DT",
   "Maurice Jones-Drew": "RB",
   "C.J. Wilson": "DE",
-  "Chad Henne": "QB"
+  "Chad Henne": "QB",
+  "Hakeem Nicks": "WR",
+  "Davante Adams": "WR",
+  "Joel Bitonio": "OT",
+  "Trai Turner": "OG"
  },
  "roles": {
   "Kirk Cousins": [
@@ -291,10 +299,16 @@
    "event": "Rackley traded to Seattle",
    "ledger_entry": "Entry 110",
    "change": "Rackley (OL 3, starting right guard) removed; Johnson, Bradfield, Pasztor and Asper move up without a reorder. The starting right guard role is open for Stone; no Stone role decision"
+  },
+  {
+   "date": "May 12, 2014 (recorded May 23)",
+   "event": "Stone's starting roles entering OTAs; rookie minicamp and Phase Two closed",
+   "ledger_entry": "Entry 111",
+   "change": "Rep starting points, not awards: Nicks placed WR 1 (Adams the competition) and Adams WR 3 (Hawkins the competition), so Thielen is WR 2 and Clemons and Brown move to WR 4 and 5 without a reorder; Bitonio placed OL 2 at left guard (Norwell the competition) and Turner OL 4 at right guard (Bitonio or Norwell if Turner struggles), the line reading Monroe, Bitonio, Brewster, Turner, Johnson, then Bradfield, Pasztor, Asper; Mincey holds Edge 1 (Branch the competition) with no DL reorder. Hawkins, Norwell and every other added player stay unplaced. The May 16 and 17 rookie minicamp and Phase Two through May 23 changed no order and no availability"
   }
  ],
  "added_not_placed": {
-  "note": "Players under contract from March 11, 2014 whom Stone has not placed in the order: the six reserve/future contracts (Entry 85) and the replay signings Alterraun Verner, Aqib Talib, Hakeem Nicks, Andrew Hawkins and Daniel Te'o-Nesheim (Entries 95 to 98). Listed below their groups with no depth position or role. Entry 108 adds the nine 2014 draft selections and the 17 undrafted signings, listed below their groups with no depth position or role; rookies are added, not placed, as in 2013.",
+  "note": "Players under contract from March 11, 2014 whom Stone has not placed in the order: the six reserve/future contracts (Entry 85) and the replay signings Alterraun Verner, Aqib Talib, Hakeem Nicks, Andrew Hawkins and Daniel Te'o-Nesheim (Entries 95 to 98). Listed below their groups with no depth position or role. Entry 108 adds the nine 2014 draft selections and the 17 undrafted signings, listed below their groups with no depth position or role; rookies are added, not placed, as in 2013. Entry 111 (Stone's May 12 instruction) places Nicks (WR 1), Adams (WR 3), Bitonio (OL 2, left guard) and Turner (OL 4, right guard) as rep starting points, with named competition; the other added players stay unplaced.",
   "QB": [
    "Tyler Bray",
    "Connor Shaw"
@@ -303,10 +317,8 @@
    "Richard Murphy"
   ],
   "WR": [
-   "Hakeem Nicks",
    "Andrew Hawkins",
    "Jerrell Jackson",
-   "Davante Adams",
    "Allen Hurns",
    "Taylor Gabriel"
   ],
@@ -327,8 +339,6 @@
    "Adrian Phillips"
   ],
   "OL": [
-   "Joel Bitonio",
-   "Trai Turner",
    "Corey Linsley",
    "Charles Leno Jr.",
    "Andrew Norwell",
@@ -360,13 +370,9 @@
   "Antwon Blake": "S",
   "Alterraun Verner": "CB",
   "Aqib Talib": "CB",
-  "Hakeem Nicks": "WR",
   "Andrew Hawkins": "WR",
   "Daniel Te'o-Nesheim": "DE",
   "Aaron Donald": "DT",
-  "Joel Bitonio": "OT",
-  "Davante Adams": "WR",
-  "Trai Turner": "OG",
   "Telvin Smith": "LB",
   "Corey Linsley": "C",
   "Charles Leno Jr.": "OT",
@@ -389,5 +395,49 @@
   "Jackson Jeffcoat": "DE",
   "Taylor Gabriel": "WR",
   "Casey Kreiter": "LS"
+ },
+ "stone_role_decisions": {
+  "date": "May 12, 2014",
+  "ledger_entry": "Entry 111",
+  "rule": "Rep starting points entering OTAs, not awards; each is an open competition on the field. Source: Stone's memo amendment, starting roles entering OTAs.",
+  "decisions": [
+   {
+    "role": "WR1",
+    "starting_player": "Hakeem Nicks",
+    "competition": [
+     "Davante Adams"
+    ]
+   },
+   {
+    "role": "WR3",
+    "starting_player": "Davante Adams",
+    "competition": [
+     "Andrew Hawkins"
+    ]
+   },
+   {
+    "role": "Left guard",
+    "starting_player": "Joel Bitonio",
+    "competition": [
+     "Andrew Norwell"
+    ]
+   },
+   {
+    "role": "Right guard",
+    "starting_player": "Trai Turner",
+    "competition": [
+     "Joel Bitonio",
+     "Andrew Norwell"
+    ],
+    "condition": "Bitonio or Norwell if Turner struggles"
+   },
+   {
+    "role": "Edge 1",
+    "starting_player": "Jeremy Mincey",
+    "competition": [
+     "Andre Branch"
+    ]
+   }
+  ]
  }
 }

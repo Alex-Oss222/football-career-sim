@@ -514,3 +514,15 @@ The user subsequently selected the historical calendar: rookie camp May 16–17;
 Ball did nothing to lose the club's respect: he won the outside job in 2013 and started until he was injured, and no individual failure forced him out. The room changed. With Talib, Verner, Harris, Poyer, Bouye, Butler and Jemea Thomas, signing him now would take developmental reps from Harris, Bouye, Butler and Thomas without filling a clear need.
 
 **What Stone tells him.** Two things together. First, help him find the right opportunity: he deserves a chance to play; he and his agent name three clubs that give him a real opportunity, and any club that calls Jacksonville gets an honest evaluation of what he did here. Second, leave the door open both ways: he should take the best situation he finds and not wait for Jacksonville; if nothing develops and Jacksonville's situation changes, they talk again. If he signs elsewhere, that is the outcome Stone wanted for him. If he stays available and Jacksonville later needs a veteran outside corner, Caldwell calls him back.
+
+## September 30, 2026 amendment: starting roles entering OTAs
+
+**User instruction, at the May 12, 2014 branch checkpoint.** These are the initial roles for reps entering OTAs and camp. They are starting points, not permanent awards; each is an open competition on the field.
+
+| Open role | Starting player | Main competition |
+|---|---|---|
+| WR1 | Hakeem Nicks | Davante Adams |
+| WR3 | Davante Adams | Andrew Hawkins |
+| Left guard | Joel Bitonio | Andrew Norwell |
+| Right guard | Trai Turner | Bitonio or Norwell if Turner struggles |
+| Edge 1 | Jeremy Mincey | Andre Branch |

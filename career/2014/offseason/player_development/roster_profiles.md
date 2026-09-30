@@ -150,3 +150,11 @@ Each phase output records what actually happened. At handoff, revise only the re
 | Season / actual bye / season close | Which strengths endure, what the player has learned to adapt, where the staff changed its view and what still has not been tested | No automatic growth, failure narrative or talent grade from team record |
 
 New players get this same method after the branch actually acquires or invites them. They do not inherit the departed player's profile. Update the film queue, owner and lawful next opportunity together; keep medical details and transactions in their authoritative records.
+
+## Dated handoffs
+
+### May 17 and 23, 2014: rookie minicamp and Phase Two (Entry 111)
+
+The 26 rookies signed May 10 and 11 enter this method from their first Jacksonville evidence. Their onboarding, physicals, taught jobs, observed baselines, corrections and next teaching steps are in the [rookie minicamp record](../rookie_minicamp/output.md#player-teaching-record), with the May 19 to 22 retests in the [Phase Two record](../offseason_program/output.md#phase-two-week-three-may-19-to-22-handoff-may-23). Those records are each rookie's working profile for now; nothing is duplicated here, and no rookie inherits a departed player's profile. Lucas's foot is a performance-staff review item with no communicated limit.
+
+For the returning players, Phase Two produced unopposed retention only. No veteran synthesis above changes: the Boot Flood answer, the protection point and echo, Stanford's relay and the Cover 1 help rules were retained under changed pictures without opposition, which is the evidence the Phase Two row in the table above says that phase can supply. The first opposed evidence comes with OTAs on May 27. Rackley left with the May 12 trade; his obligations are archived in the [film queue](../film/player_queue.md).
