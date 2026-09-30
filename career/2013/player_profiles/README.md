@@ -8,10 +8,11 @@ These are frozen evaluations of who each player was in the 2013 branch. They
 are not 2014 entry projections or offseason development plans.
 
 Every sheet uses position-specific traits and the same historical benchmark
-method. Kirk Cousins is the first fully researched and benchmarked sheet. Other
-players retain Unassessed grades where a trait has not yet received the required
-branch-evidence plus historical-peer review; the system deliberately does not
-invent numbers to fill the card.
+method. Kirk Cousins remains the previously benchmarked worked example. The
+remaining 60 now have completed source reviews, individual findings, separate
+regular-season/playoff production and qualified historical production context.
+Unsupported numeric trait grades remain Unassessed; production is not a talent
+grade. See the [research record and limitations](../../../library/2013_player_sheet_research.md).
 
 The common evidence cutoff is January 14, 2014, after both days of the
 [exit interviews](../exit_interviews/README.md). Ages use that date. Identities

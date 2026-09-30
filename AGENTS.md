@@ -14,6 +14,8 @@ You are Codex, running a bounded batch task against this repository. You have no
 
 ### Reader-facing writing
 
+Annual sheet formats: 2013 uses `foundation/templates/player_sheet_template.md` (the completed-season position baseline). From 2014 onward use the restored `foundation/templates/player_sheet_2014_onward_template.md` with Overall and vs. Average / vs. Best / vs. Worst, inherited state and yearly changes. At the bottom retain separate full position-specific regular-season and playoff stat tables, beginning in 2014 and appending each later year. Preserve old rows and do not populate unplayed seasons or replace missing fields with zero. The final-season timing and source requirements above still apply.
+
 Use the player, coach, decision or source name in prose. Add a descriptive link where the reader needs supporting evidence, and collect broader sourcing in a named source section. Do not attach citation-code clusters to every paragraph, invent IDs for ordinary recommendations, or repeat a label already supplied by the heading. Preserve identifiers that actually connect ledger events, machine-readable records, receipts or existing cross-references; explain them once and keep them out of the football narrative when the name suffices. Keep a single legacy-label mapping only where older references need it. This is a presentation rule, not permission to delete evidence or change a decision's status.
 
 ### Atomic progression and dependency rule

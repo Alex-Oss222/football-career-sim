@@ -4,9 +4,13 @@ An annual Player Sheet is a **frozen end-of-season evaluation**, not a live
 offseason profile. The 2013 sheet answers: **who was this player in the 2013
 season?** It does not answer who he will be when he reports in 2014.
 
-Season files live at career/YEAR/player_profiles/<player>.md and use the
-[player-sheet template](../../foundation/templates/player_sheet_template.md)
-plus the
+Season files live at career/YEAR/player_profiles/<player>.md. The 2013 baseline
+uses the [2013 position template](../../foundation/templates/player_sheet_template.md).
+From 2014 onward use the restored [overall template](../../foundation/templates/player_sheet_2014_onward_template.md),
+with vs. Average / vs. Best / vs. Worst and cumulative, separate regular-season
+and playoff stat tables. Start those tables in 2014 and append a full
+position-specific row each year (2015, 2016 and onward), preserving prior rows.
+Future rows stay Not played; missing fields stay Unrecorded. Both formats use the
 [historical benchmark method](../../library/annual_player_sheet_benchmark_method.md).
 
 ## Timing

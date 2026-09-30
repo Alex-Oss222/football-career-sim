@@ -98,6 +98,14 @@ Testing from different years cannot establish current-season game speed.
 
 ## Research sources
 
+The remaining 2013 player reviews and their reproducible qualified production
+pools are documented in [2013 player-sheet research](2013_player_sheet_research.md).
+The 2013 cards retain the position-baseline format. From 2014 onward the user
+has restored the [overall card template](../foundation/templates/player_sheet_2014_onward_template.md),
+including Average / Best / Worst comparisons and separate cumulative
+regular-season and playoff statistics by year. That presentation change does
+not turn production comparisons into technical grades or permit future totals.
+
 - https://www.nfl.com/stats/player-stats/category/passing/2013/reg/all/passingpasserrating/desc
 - https://www.nfl.com/players/kirk-cousins/stats/career (2013 row only)
 - https://www.pro-football-reference.com/years/2013/passing.htm
