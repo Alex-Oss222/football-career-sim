@@ -127,3 +127,5 @@ Only revise these files for one of two reasons:
 2. the repository intentionally changes the time boundary and updates this README at the same time.
 
 Until then, stop at the 2013 season record.
+
+**Dated 2014 handoffs (added September 30, 2026).** Under AGENTS.md's living-coaching-assessment rule, a material evidence handoff in 2014 appends a dated change or retained assessment to `alex_stone.md` and a row to the dated-changes table in `staff_profiles.md`, each linked to the phase output that owns the evidence. The 2013 portrait above those entries is preserved unchanged; a dated entry is the only way 2014 evidence enters this directory. The first is the May 23, 2014 Phase Two handoff (Entry 111).

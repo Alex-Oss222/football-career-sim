@@ -23,9 +23,9 @@ From [offseason/depth_chart_working.json](../../offseason/depth_chart_working.js
 | QB | Kirk Cousins / Chad Henne / John Parker Wilson |
 | RB | Maurice Jones-Drew / Jonathan Grimes / C.J. Anderson |
 | FB | Montell Owens |
-| WR | Adam Thielen / Toney Clemons / Mike Brown |
+| WR | Hakeem Nicks / Adam Thielen / Davante Adams / Toney Clemons / Mike Brown |
 | TE | Marcedes Lewis / Travis Kelce |
-| OL | Eugene Monroe / Mike Brewster / Lane Johnson / Cameron Bradfield / Austin Pasztor / Mark Asper |
+| OL | Eugene Monroe / Joel Bitonio / Mike Brewster / Trai Turner / Lane Johnson / Cameron Bradfield / Austin Pasztor / Mark Asper |
 | DL | Sen'Derrick Marks / Roy Miller / C.J. Mosley / Jeremy Mincey / Andre Branch / Ryan Davis / Jeris Pendleton / C.J. Wilson / Lavar Edwards |
 | LB | Daryl Smith / Julian Stanford / Sio Moore / Paul Posluszny |
 | DB | Dwight Lowery / Mike Harris / Bacarri Rambo / Jordan Poyer / A.J. Bouye / Chris Prosinski / Brynden Trawick |

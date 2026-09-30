@@ -1,16 +1,16 @@
 # Jacksonville Jaguars 2014 depth chart (working view)
 
-**As of:** May 12, 2014
-**Status:** the closed 2013 chart, carried forward with players no longer under Jacksonville control removed. No 2014 depth decision has been made. Removing a player moves those below him up without a reorder; Stone owns the order and changes it only by decision.
-**Machine-readable copy:** [offseason/depth_chart_working.json](offseason/depth_chart_working.json), same schema as [the 2013 chart](../2013/depth_chart.json) plus contract flags, the players added since March 11 (the March signings and the 26 rookies of May 8 to 11) and the update log.
+**As of:** May 23, 2014
+**Status:** the closed 2013 chart, carried forward with players no longer under Jacksonville control removed, plus Stone's May 12, 2014 rep starting points for the five open roles (WR1 Nicks, WR3 Adams, left guard Bitonio, right guard Turner, Edge 1 Mincey), each with named competition. Those are starting points for reps entering OTAs, not awards; no other 2014 depth decision has been made. Removing a player moves those below him up without a reorder; Stone owns the order and changes it only by decision.
+**Machine-readable copy:** [offseason/depth_chart_working.json](offseason/depth_chart_working.json), same schema as [the 2013 chart](../2013/depth_chart.json) plus contract flags, the players added since March 11 (the March signings and the 26 rookies of May 8 to 11), Stone's role decisions and the update log.
 **Sources:** [2013 depth chart](../2013/depth_chart.json) (Git `781213a`, effective January 6, 2014, AFC Divisional preparation) for the carried order; the [current roster](roster.md) and [contract status register](offseason/contract_status_register.md) for control and availability; [Caldwell's pre-tag-window verifications](offseason/caldwell_pre_tag_verifications.md).
 
 ## How to read this chart
 
-- Order is the closed 2013 order within each carried position group, first listed first. Players no longer controlled are removed; nobody else moved.
+- Order is the closed 2013 order within each carried position group, first listed first, with Stone's May 12 placements inserted. Players no longer controlled are removed; nobody else moved.
 - Contract flag comes from the [contract status register](offseason/contract_status_register.md) and the [contract table](offseason/contract_table.md).
 - 2013 recorded role is the role in the [2013 roster](../2013/roster.md) at the end of the 2013 season. Roles are carried for reference until Stone changes them; they do not promise a job after contracts, availability or personnel change. The combined line and secondary lists preserve the source order across different jobs, not a claim that every player competes for the same position.
-- Added, not placed marks players under contract whom Stone has not placed: the six reserve/future contracts, the March signings Verner, Talib, Nicks, Hawkins and Te'o-Nesheim, the nine 2014 draft selections and the 17 undrafted rookies signed May 10. They are listed below their groups with no depth position or role; rookies are added, not placed, as in 2013.
+- Added, not placed marks players under contract whom Stone has not placed: the six reserve/future contracts, the March signings Verner, Talib, Hawkins and Te'o-Nesheim, seven of the nine 2014 draft selections and the 17 undrafted rookies signed May 10. They are listed below their groups with no depth position or role. Nicks, Adams, Bitonio and Turner were placed by Stone's May 12 instruction as rep starting points; every other rookie is added, not placed, as in 2013.
 - Availability is shown only where the club has recorded a note.
 
 ## Offense
@@ -44,13 +44,13 @@
 
 | Order | Player | Contract flag | 2013 recorded role | Availability |
 |---:|---|---|---|---|
-| 1 | Adam Thielen | Under contract | WR2 / H (movable receiver); coverage units | No communicated restriction |
-| 2 | Toney Clemons | Tendered ERFA (unsigned) | WR4 | No communicated restriction |
-| 3 | Mike Brown | Tendered ERFA (unsigned) | WR5 | No communicated restriction |
-| Added, not placed | Hakeem Nicks | Signed March 14, 2014 (one year) | None assigned | No communicated restriction |
-| Added, not placed | Andrew Hawkins | Signed March 18, 2014 (four years) | None assigned | No communicated restriction |
+| 1 | Hakeem Nicks | Signed March 14, 2014 (one year) | None in 2013; WR1 rep starting point from May 12, 2014 (Adams the competition) | No communicated restriction |
+| 2 | Adam Thielen | Under contract | WR2 / H (movable receiver); coverage units | No communicated restriction |
+| 3 | Davante Adams | Rookie contract through 2017 (No. 38, signed May 11) | None (2014 rookie); WR3 rep starting point from May 12, 2014 (Hawkins the competition) | No communicated restriction |
+| 4 | Toney Clemons | Tendered ERFA (unsigned) | WR4 | No communicated restriction |
+| 5 | Mike Brown | Tendered ERFA (unsigned) | WR5 | No communicated restriction |
+| Added, not placed | Andrew Hawkins | Signed March 18, 2014 (four years) | None assigned; the named competition for WR3 | No communicated restriction |
 | Added, not placed | Jerrell Jackson | Reserve/future (effective March 11) | None assigned | No communicated restriction |
-| Added, not placed | Davante Adams | Rookie contract through 2017 (No. 38, signed May 11) | None assigned (2014 rookie) | No communicated restriction |
 | Added, not placed | Allen Hurns | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
 | Added, not placed | Taylor Gabriel | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
 
@@ -66,22 +66,22 @@
 
 ### Offensive line (OL)
 
-The kernel group is one OL list. Brad Meester (C) is removed: he retired, and his contract expired March 11, 2014. Will Rackley (G, starting right guard) is removed: traded to Seattle May 12, 2014. The starting right guard role is open for Stone.
+The kernel group is one OL list. Brad Meester (C) is removed: he retired, and his contract expired March 11, 2014. Will Rackley (G, starting right guard) is removed: traded to Seattle May 12, 2014. Stone's May 12 instruction places Bitonio at left guard and Turner at right guard as rep starting points, so the five for reps read Monroe, Bitonio, Brewster, Turner, Johnson; Norwell is the named competition at left guard, and Bitonio or Norwell at right guard if Turner struggles.
 
 | Order | Player | Pos | Contract flag | 2013 recorded role | Availability |
 |---:|---|---|---|---|---|
 | 1 | Eugene Monroe | OT | Under contract through 2018 (re-signed March 11) | Starting LT | No communicated restriction |
-| 2 | Mike Brewster | C | Under contract | Starting center (confirmed Week 6) | No communicated restriction |
-| 3 | Lane Johnson | OT | Under contract | Starting right tackle | No communicated restriction |
-| 4 | Cameron Bradfield | OT | Tendered RFA (unsigned) | Swing tackle; sixth OL in 6OL | No communicated restriction |
-| 5 | Austin Pasztor | G | Tendered ERFA (unsigned) | Game-day interior OL reserve (from Week 10) | No communicated restriction |
-| 6 | Mark Asper | G | Under contract | Interior OL depth (game-day inactive Weeks 10-17) | No communicated restriction |
-| Added, not placed | Joel Bitonio | OT | Rookie contract through 2017 (No. 26, signed May 11) | None assigned (2014 rookie) | No communicated restriction |
-| Added, not placed | Trai Turner | G | Rookie contract through 2017 (No. 90, signed May 11) | None assigned (2014 rookie) | No communicated restriction |
+| 2 | Joel Bitonio | OT | Rookie contract through 2017 (No. 26, signed May 11) | None (2014 rookie); left guard rep starting point from May 12, 2014 (guard first; Norwell the competition) | No communicated restriction |
+| 3 | Mike Brewster | C | Under contract | Starting center (confirmed Week 6) | No communicated restriction |
+| 4 | Trai Turner | G | Rookie contract through 2017 (No. 90, signed May 11) | None (2014 rookie); right guard rep starting point from May 12, 2014 (Bitonio or Norwell if he struggles) | No communicated restriction |
+| 5 | Lane Johnson | OT | Under contract | Starting right tackle | No communicated restriction |
+| 6 | Cameron Bradfield | OT | Tendered RFA (unsigned) | Swing tackle; sixth OL in 6OL | No communicated restriction |
+| 7 | Austin Pasztor | G | Tendered ERFA (unsigned) | Game-day interior OL reserve (from Week 10) | No communicated restriction |
+| 8 | Mark Asper | G | Under contract | Interior OL depth (game-day inactive Weeks 10-17) | No communicated restriction |
 | Added, not placed | Corey Linsley | C | Rookie contract through 2017 (No. 153, signed May 11) | None assigned (2014 rookie) | No communicated restriction |
 | Added, not placed | Charles Leno Jr. | OT | Rookie contract through 2017 (No. 168, signed May 11) | None assigned (2014 rookie) | No communicated restriction |
-| Added, not placed | Andrew Norwell | G | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
-| Added, not placed | Cornelius Lucas | OT | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
+| Added, not placed | Andrew Norwell | G | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie); the named competition at left guard | No communicated restriction |
+| Added, not placed | Cornelius Lucas | OT | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction (club physical May 13, 2014; the foot is a performance-staff review item) |
 | Added, not placed | Matt Feiler | G | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
 | Added, not placed | Tyler Shatley | C | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
 | Added, not placed | Tyler Larsen | C | Undrafted rookie contract through 2016 (signed May 10) | None assigned (2014 rookie) | No communicated restriction |
@@ -95,8 +95,8 @@ The kernel group is one OL list. Brad Meester (C) is removed: he retired, and hi
 | 1 | Sen'Derrick Marks | DT | Under contract through 2017 (re-signed March 11) | Starting DT | No communicated restriction |
 | 2 | Roy Miller | DT | Under contract | Starting DT | No communicated restriction |
 | 3 | C.J. Mosley | DT | Under contract | Interior DL rotation (dressed from Week 11) | No communicated restriction |
-| 4 | Jeremy Mincey | DE | Under contract | Edge 2 | No communicated restriction |
-| 5 | Andre Branch | DE | Under contract | Edge 3 | No communicated restriction |
+| 4 | Jeremy Mincey | DE | Under contract | Edge 2 in 2013; Edge 1 rep starting point from May 12, 2014 (Branch the competition) | No communicated restriction |
+| 5 | Andre Branch | DE | Under contract | Edge 3 in 2013; next edge in the carried order and the named competition for Edge 1 | No communicated restriction |
 | 6 | Ryan Davis | DE | Under contract | Edge 4 | No communicated restriction |
 | 7 | Jeris Pendleton | DT | Under contract | None recorded | No communicated restriction |
 | 8 | C.J. Wilson | DE | Under contract through 2014 (re-signed March 28) | Front depth; roster competition | No communicated restriction |
@@ -151,19 +151,19 @@ The kernel group is one OL list. Brad Meester (C) is removed: he retired, and hi
 
 Mike Westhoff has coordinated special teams since February 11, 2014. No 2014 returner, coverage-unit or specialist decision has been made.
 
-## Counts at May 12, 2014
+## Counts at May 23, 2014
 
 | Group | Count |
 |---|---:|
-| Players on the carried chart | 41 |
+| Players on the carried chart, including Stone's four May 12 placements | 45 |
 | of whom tendered RFA or ERFA (unsigned) | 4 |
-| Added, not placed (six futures, Verner, Talib, Nicks, Hawkins and Te'o-Nesheim) | 11 |
-| Added, not placed: 2014 draft selections (Entry 108) | 9 |
+| Added, not placed (six futures, Verner, Talib, Hawkins and Te'o-Nesheim) | 10 |
+| Added, not placed: 2014 draft selections (Entry 108, less Adams, Bitonio and Turner) | 6 |
 | Added, not placed: 2014 undrafted rookies (Entry 108) | 17 |
 | Controlled players | 78 |
 | Removed since the 2013 chart (Meester, the four other March 11 departures not re-signed, Nwaneri, Babin, Alualu, Shorts, Blackmon, Allen and Rackley) | 12 |
 
-Roles open: TE3 (Reisner), the corner places of Brent Grimes and Ball, starting left guard (Nwaneri, traded March 20), starting right guard (Rackley, traded May 12), the carried Edge 1 role (Babin, traded March 24) and the carried WR1 and WR3 roles (Shorts and Blackmon, traded March 31). The chart does not fill open roles: those are Stone's decisions.
+Roles open: TE3 (Reisner) and the corner places of Brent Grimes and Ball. Stone's May 12 instruction gave WR1, WR3, left guard, right guard and Edge 1 rep starting points with named competition (Entry 111); those are open competitions, not awards. The chart does not fill open roles: those are Stone's decisions.
 
 Brandon King and Will Ta'ufo'ou were never on the 2013 chart and are not Jacksonville players. The 2013 game-day inactive list is weekly and is not carried.
 
@@ -190,6 +190,7 @@ Add a row for every signing, tag, tender, trade, release, retirement, draft pick
 | May 2, 2014 | Unsigned tenders: user instruction on program participation | Entry 109 | No chart change. Bradfield, Clemons, Brown and Pasztor keep their carried places and tender flags; they take no part in the program until they sign |
 | May 8 to 11, 2014 | 2014 draft, undrafted signings and rookie contracts | Entry 108 | Added, not placed: the nine draft selections and 17 undrafted rookies in their groups (Kreiter under special teams). No order change; no Stone role decision |
 | May 12, 2014 | Rackley traded to Seattle | Entry 110 | Rackley (OL 3, starting right guard) removed; Johnson, Bradfield, Pasztor and Asper move up without a reorder. The starting right guard role is open for Stone; no Stone role decision |
+| May 12, 2014 (recorded May 23) | Stone's starting roles entering OTAs; rookie minicamp and Phase Two closed | Entry 111 | Rep starting points, not awards: Nicks placed WR 1 (Adams the competition) and Adams WR 3 (Hawkins the competition), so Thielen is WR 2 and Clemons and Brown move to WR 4 and 5 without a reorder; Bitonio placed OL 2 at left guard (Norwell the competition) and Turner OL 4 at right guard (Bitonio or Norwell if Turner struggles), the line reading Monroe, Bitonio, Brewster, Turner, Johnson, then Bradfield, Pasztor, Asper; Mincey holds Edge 1 (Branch the competition) with no DL reorder. Hawkins, Norwell and every other added player stay unplaced. The May 16 and 17 rookie minicamp and Phase Two through May 23 changed no order and no availability |
 
 ## Maintaining the game-input copy
 

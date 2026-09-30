@@ -22,7 +22,7 @@ Start with the player at the current date, including his full season of experien
 | Verify a delivery | [Delivery log](film/delivery_log.md) | Dated packet revisions and actual issue/acknowledgment/review receipts |
 | Resolve a staffing dependency | [Staff changes](staff_changes/README.md) | Closed special-teams search, actual appointments, the emergency practice lead and the open game-day caller succession |
 | Check a player's contract terms or 2014 figures | [Contract table](contract_table.md) | Terms, sourced 2014 figures, 2013 baseline and the update log; status stays with the [register](contract_status_register.md) |
-| See the current depth order | [Depth chart](../depth_chart.md) and its [working JSON](depth_chart_working.json) | 2013 order carried with contract flags; no 2014 depth decision yet |
+| See the current depth order | [Depth chart](../depth_chart.md) and its [working JSON](depth_chart_working.json) | 2013 order carried with contract flags, plus Stone's May 12 rep starting points for the five open roles |
 | Read the narrative for an offseason turn | [Turn outputs](turns/README.md) | One template output per closed offseason turn |
 
 ## Phase route
@@ -35,7 +35,7 @@ Start with the player at the current date, including his full season of experien
 | Mandatory veteran minicamp | [Plan](mandatory_minicamp/plan.md), [output](mandatory_minicamp/output.md), [evidence](mandatory_minicamp/standouts.md) | Retained assignments and individual summer/camp-entry instructions |
 | Training camp and preseason | [Plan](training_camp/plan.md), [output](training_camp/output.md), [evidence](training_camp/standouts.md) | Lawful contact and game-speed transfer, individual development continued through season |
 
-Each phase has a linked `output.md` and `standouts.md` with matching evidence metadata. The offseason program is in progress (Phase One complete, handoff May 2; Phase Two from May 5, first week held); the other phases have not run. The 2014 draft and undrafted signings are closed ([draft records](draft/README.md)).
+Each phase has a linked `output.md` and `standouts.md` with matching evidence metadata. The offseason program (Phases One and Two, handoff May 23) and the rookie minicamp (May 16 and 17) are complete; OTAs, mandatory minicamp and training camp have not run. The 2014 draft and undrafted signings are closed ([draft records](draft/README.md)).
 
 Dates stay in the calendar and phase plans. The [decision package](phase_plan_decisions.md) recommends the detailed sequence. The schedule-filing deadline is the agreed league date, no later than March 31 for an April 21 start; April 3 public publication is separate. A proposed date does not authorize work. No extra new-head-coach minicamp applies to Jacksonville in 2014.
 
