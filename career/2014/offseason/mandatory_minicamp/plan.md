@@ -348,7 +348,16 @@ Evaluate:
 - handoff/communication;
 - pressure/rush-lane coordination;
 - scramble response;
-- explosive-play prevention.
+- explosive-play prevention;
+- Cover 1 press/off leverage and help discipline;
+- Nickel Even communication against spread personnel;
+- 1 Robber / Robber-Rat post, underneath robber/rat and flat/force ownership;
+- bunch, stack, motion and crossing-release answers without illegal contact;
+- the transition from the same or similar shell into Cover 3/Quarters.
+
+### Man-capable checkpoint
+
+By the end of minicamp, Jacksonville should have evidence—not a prewritten verdict—on whether the current defensive group can carry a Cover 1-heavy Nickel package without making man coverage obvious. Test the post safety's range and communication, outside and slot leverage, linebacker/back and tight-end matchups, the robber/rat's vision and spacing, and the defense's response to picks/rubs, stacks and motion. Pair those reps with Cover 3/Quarters from related pictures. If a matchup needs help, the correct answer may be a bracket, different personnel or zone; do not force man coverage merely to preserve the emphasis.
 
 ## Defensive position-room emphasis
 

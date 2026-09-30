@@ -310,6 +310,16 @@ Key team principles:
 - tackle as a scheme requirement even when live tackling is not the period's work;
 - create speed through recognition.
 
+### 2014 man-capable Nickel emphasis
+
+Use **Nickel Even** as the central sub-package teaching body against appropriate spread personnel. Give **Cover 1** deliberate, repeated work as a first-choice man family rather than an occasional change-up. Practice both press and off leverage according to the defender's actual assignment and demonstrated technique.
+
+Pair it with the existing **1 Robber / Robber-Rat** family. Before the snap, every rep must identify the post safety, the underneath robber/rat, the flat/force responsibility, the nickel's leverage and the linebacker/back or tight-end matchup. The robber is help with a defined job, not permission for the other ten defenders to lose leverage.
+
+Stress the family against motion, bunches, stacks, crossing releases, condensed splits, backs releasing from the backfield and tight ends detached from the formation. If a linebacker or safety matchup cannot survive the assignment, record that football problem and use the book's available help, bracket, personnel or zone answer rather than pretending every defender is interchangeable.
+
+From similar presentations, continue **Cover 3 and Quarters** work. The goal is a man-capable defense whose shell still makes the quarterback confirm. **Cover 0 remains selective and situational.** This emphasis creates practice opportunities; it does not set a game-call percentage.
+
 ### Defensive-line work
 
 - front alignment;
@@ -446,7 +456,7 @@ When the offseason/OTA phase actually runs:
 
 ## execution focus and proposed decisions
 
-Use the inherited teaching checks within the approved second-year sequence of review, rookie integration, individual work and new material. The interior-line combinations use only actual acquisitions and retained players; compare protection communication, exchanges and corrections beside the established center. Johnson's pass-set work and Cousins's ball-security/protection work remain memo priorities. Integrate Verner or Talib into coverage terminology only if acquired; otherwise teach the controlled secondary. No future transaction is assumed.
+Use the inherited teaching checks within the approved second-year sequence of review, rookie integration, individual work and new material. The interior-line combinations use only actual acquisitions and retained players; compare protection communication, exchanges and corrections beside the established center. Johnson's pass-set work and Cousins's ball-security/protection work remain memo priorities. Integrate Verner and Talib, the returning secondary and the eligible rookie defensive backs into the same coverage terminology from their actual onboarding level; no role or matchup assignment is awarded by this plan. No future transaction is assumed.
 
 The relay succession, injured-player learning and cross-training are set by [Stone's April 18 decisions](../stone_april_18_2014_decisions.md). The unit-level communication and execution approach is adopted in the [room plans](../training/unit_plans.md#defense-as-a-unit). The individual-feedback policy is adopted and uses the linked workflow. At each OTA block review, distinguish an untested job from a lost competition and state what evidence will be gathered next.
 

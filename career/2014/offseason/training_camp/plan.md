@@ -428,11 +428,23 @@ Evaluate:
 - pressure timing;
 - leverage;
 - coverage spacing;
-- man technique where called;
-- match/zone communication where called;
+- Cover 1 press/off man technique and help discipline;
+- Nickel Even communication and fit integrity;
+- 1 Robber / Robber-Rat post, underneath robber/rat and flat/force ownership;
+- match/zone communication in the paired Cover 3/Quarters answers;
 - route distribution;
+- bunch, stack, motion, pick/rub and crossing-release responses;
+- linebacker/back and tight-end man matchups;
 - explosive-play prevention;
 - scramble response.
+
+### Man-capable Nickel competition
+
+Camp is where the spring emphasis becomes a physical football test. Use Nickel Even as the central sub-package body when personnel and down/distance support it. Give Cover 1 and 1 Robber/Rat repeated competitive work with the actual corners, nickel, safeties and linebackers who have earned those assignments. Evaluate press disruption, off-man transitions, post-safety range, robber/rat timing, flat/force leverage, recovery after separation and the ability to tackle after man coverage.
+
+Do not make one favorable corner matchup a reason to isolate every linebacker or safety. When a back, tight end, bunch or stack creates a bad man assignment, test the active book's help, bracket, personnel and Cover 3/Quarters answers. Carry the same pre-snap pictures across categories so offenses cannot identify man merely from alignment. Cover 0 remains a low-volume situational tool, not the identity.
+
+The camp result decides what Crennel can trust in preseason and later weekly plans. The plan itself sets no snap-share or call-share quota.
 
 ### Pressure and disguise
 
