@@ -197,6 +197,37 @@ class PrivateRuntimeTests(unittest.TestCase):
         self.assertEqual(history,[('snapshot','next','checkpoint-1')])
         self.assertTrue(client.readiness()['ready'])
 
+    def test_kernel_change_is_journaled_and_keeps_seed_events_and_snapshots(self):
+        from unittest.mock import patch
+        from runtime import private_service
+        db=Path(self.tmp.name)/'kernel.sqlite3'
+        with patch.object(private_service,'KERNEL','2013.99'):
+            old=Store(db); old.initialize('snapshot')
+            before=old.close('prior-event',b'x')
+            old.advance_snapshot('snapshot','next','checkpoint-1')
+            self.assertEqual(old.kernel_history(),[])
+            with old.connect() as connection:
+                seed=connection.execute("select value from meta where key='seed'").fetchone()[0]
+        # The rebuilt image starts against the same volume: no file edit, one audit row.
+        new=Store(db); self.assertFalse(new.initialize('next'))
+        self.assertEqual(new.kernel_history(),[('2013.99',KERNEL_VERSION,'next')])
+        with new.connect() as connection:
+            self.assertEqual(connection.execute("select value from meta where key='kernel'").fetchone()[0].decode(),KERNEL_VERSION)
+            self.assertEqual(connection.execute("select value from meta where key='seed'").fetchone()[0],seed)
+            history=connection.execute('select previous_snapshot,next_snapshot,checkpoint from snapshot_transitions_v2').fetchall()
+        self.assertEqual(history,[('snapshot','next','checkpoint-1')])
+        self.assertEqual(new.close('prior-event',b'x'),before)
+        self.assertEqual(new.current_snapshot(),'next')
+        # A restart on the same kernel appends nothing; readiness reads the new kernel.
+        again=Store(db); again.initialize('next')
+        self.assertEqual(len(again.kernel_history()),1)
+        self.assertTrue(again.ready())
+        server=ThreadingHTTPServer(('127.0.0.1',0),handler(again,self.token,'next'))
+        threading.Thread(target=server.serve_forever,daemon=True).start()
+        self.addCleanup(server.server_close); self.addCleanup(server.shutdown)
+        client=Client(f'http://127.0.0.1:{server.server_port}',token=self.token,snapshot='next')
+        self.assertEqual(client.readiness()['kernel'],KERNEL_VERSION)
+
     def test_newer_image_starts_locked_until_ordinary_advance(self):
         db=Path(self.tmp.name)/'locked.sqlite3'
         store=Store(db); store.initialize('old-canon'); store.close('prior-event',b'x')

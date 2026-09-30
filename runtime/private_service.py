@@ -43,6 +43,12 @@ class Store:
                 previous_snapshot TEXT NOT NULL,
                 next_snapshot TEXT NOT NULL,
                 checkpoint TEXT NOT NULL,
+                created INTEGER NOT NULL);
+            CREATE TABLE IF NOT EXISTS kernel_transitions(
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                previous_kernel TEXT NOT NULL,
+                next_kernel TEXT NOT NULL,
+                snapshot TEXT NOT NULL,
                 created INTEGER NOT NULL);""")
     def initialize(self,snapshot,allow_pending=False):
         """Bind the store to the image's Document 5 digest.
@@ -60,9 +66,22 @@ class Store:
             pending=bool(old and old[0].decode()!=snapshot)
             if pending and not allow_pending: raise ValueError("branch snapshot mismatch")
             c.execute("INSERT OR IGNORE INTO meta VALUES('snapshot',?)",(snapshot.encode(),))
+            # A kernel release reaches a live store only through a rebuilt image
+            # starting against the same volume. The seed, the events and every
+            # snapshot ledger are untouched; the change itself is journaled
+            # append-only so the store's kernel lineage is auditable.
+            stored_kernel=c.execute("SELECT value FROM meta WHERE key='kernel'").fetchone()
+            if stored_kernel and stored_kernel[0].decode()!=KERNEL:
+                bound=(old[0].decode() if old else snapshot)
+                c.execute("INSERT INTO kernel_transitions(previous_kernel,next_kernel,snapshot,created) "
+                          "VALUES(?,?,?,?)",(stored_kernel[0].decode(),KERNEL,bound,int(time.time())))
             c.execute("INSERT OR REPLACE INTO meta VALUES('kernel',?)",(KERNEL.encode(),))
             c.execute("INSERT OR REPLACE INTO meta VALUES('schema',?)",(SCHEMA.encode(),))
             return pending
+    def kernel_history(self):
+        """Append-only kernel lineage of this store, oldest first."""
+        with closing(self.connect()) as c:
+            return c.execute("SELECT previous_kernel,next_kernel,snapshot FROM kernel_transitions ORDER BY id").fetchall()
     def current_snapshot(self):
         with closing(self.connect()) as c:
             row=c.execute("SELECT value FROM meta WHERE key='snapshot'").fetchone()
