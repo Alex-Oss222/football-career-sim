@@ -95,6 +95,16 @@ PREREGISTERED = {
         "P": {"name": "net_yards_per_punt", "numerator": "pt_net_yards", "denominator": "pt_att",
               "minimum": 30, "shrink_k": 10},
     },
+    # Returner block (added September 30, 2026 for the kernel 2014.4 candidate's
+    # special-teams work; amendment 3 below). A player is tiered as a kick
+    # returner and as a punt returner separately from his position group, so
+    # the block lives beside `players`, never inside a position row.
+    "returner_metrics": {
+        "KR": {"name": "kickoff_return_yards_per_return", "numerator": "kickoff_return_yards",
+               "denominator": "kickoff_returns", "minimum": 10, "shrink_k": 10},
+        "PR": {"name": "punt_return_yards_per_return", "numerator": "punt_return_yards",
+               "denominator": "punt_returns (fair catches excluded)", "minimum": 10, "shrink_k": 10},
+    },
     "shrinkage": "shrunk = (n x raw + k x league_mean) / (n + k), league_mean = the denominator-weighted mean over "
                  "that season's qualifiers in the group; tiers are cut on the shrunk value",
     "tiers": {
@@ -126,6 +136,13 @@ PREREGISTERED = {
          "what": "the play-by-play recomputation excludes two-point tries from attempts, carries and targets",
          "why": "the official totals in the stats file exclude them; the first build's off-by-one to off-by-three "
                 "count differences were all two-point tries"},
+        {"date": "2026-09-30", "when": "after the second-pass calibration was accepted, before any phase-2 "
+                 "(sub-composite and special-teams) fit was run",
+         "what": "a `returners` block (kick and punt return yards per return, minimum 10 returns, shrinkage k 10, the "
+                 "same percentile tiers, the same two-pass verification against the play-by-play returner ids) is added "
+                 "beside `players`; the `players` block and every existing tier are unchanged",
+         "why": "the special-teams strength needs a returner tier and the file carried none; the block is separate "
+                "because a returner also holds a position-group row in the same season"},
     ],
     "contamination": [
         "production mixes the player with his teammates, his quarterback or receivers, his blocking and his scheme",
@@ -201,6 +218,29 @@ def research_rows(stats_rows, starts):
     return out
 
 
+RETURNER_GROUPS = ("KR", "PR")
+
+
+def returner_rows(stats_rows):
+    """{gsis: {KR: row, PR: row}} research-pass return lines for one season."""
+    out = {}
+    for r in stats_rows:
+        if r["season_type"] != "REG":
+            continue
+        pid = r["player_id"]
+        base = {"player_id": pid, "name": r["player_display_name"], "position": r["position"].strip().upper(),
+                "club": r["recent_team"], "games": int(num(r["games"]))}
+        kr = int(num(r["kickoff_returns"]))
+        pr = int(num(r["punt_returns"]))
+        if kr:
+            out.setdefault(pid, {})["KR"] = dict(base, group="KR", returns=kr,
+                                                 return_yards=int(num(r["kickoff_return_yards"])))
+        if pr:
+            out.setdefault(pid, {})["PR"] = dict(base, group="PR", returns=pr,
+                                                 return_yards=int(num(r["punt_return_yards"])))
+    return out
+
+
 def ol_starts(depth_rows):
     weeks = defaultdict(set)
     for r in depth_rows:
@@ -263,7 +303,74 @@ def pbp_recompute(pbp_rows):
             fg_band_totals[band][1] += 1
         if ptype == "punt" and r["punter_player_id"] and r["punt_blocked"] != "1":
             acc[r["punter_player_id"]]["punts"] += 1
+        # Returns (amendment 3): a kickoff or punt with a named returner and
+        # no fair catch; the yards are the row's return_yards.
+        if ptype == "kickoff" and r["kickoff_returner_player_id"] and r["kickoff_fair_catch"] != "1":
+            acc[r["kickoff_returner_player_id"]]["kr_returns"] += 1
+            acc[r["kickoff_returner_player_id"]]["kr_yards"] += num(r["return_yards"])
+        if ptype == "punt" and r["punt_returner_player_id"] and r["punt_fair_catch"] != "1":
+            acc[r["punt_returner_player_id"]]["pr_returns"] += 1
+            acc[r["punt_returner_player_id"]]["pr_yards"] += num(r["return_yards"])
     return acc, max(dates), fg_band_totals
+
+
+def compare_return(row, check):
+    """(label, detail) for one returner line: returns and yards exact."""
+    if check is None:
+        return "Unverified", {"reason": "player absent from the play-by-play recomputation"}
+    key = "kr" if row["group"] == "KR" else "pr"
+    detail = {"returns": [row["returns"], check.get(key + "_returns", 0.0)],
+              "return_yards": [row["return_yards"], check.get(key + "_yards", 0.0)]}
+    ok = all(abs(a - b) < 1e-9 for a, b in detail.values())
+    return ("Confirmed two-pass" if ok else "Corrected"), detail
+
+
+def adopt_return(row, check, label):
+    if label != "Corrected":
+        return row
+    key = "kr" if row["group"] == "KR" else "pr"
+    return dict(row, returns=int(check.get(key + "_returns", 0)), return_yards=int(check.get(key + "_yards", 0)))
+
+
+def build_returners(season, stats, check):
+    """The season's returner block: qualifiers, shrinkage and tiers per returner group."""
+    rows = returner_rows(stats)
+    labelled = defaultdict(dict)
+    counts = defaultdict(lambda: defaultdict(int))
+    by_group = defaultdict(list)
+    for pid, groups in rows.items():
+        for grp, row in groups.items():
+            label, detail = compare_return(row, check.get(pid))
+            used = adopt_return(row, check.get(pid), label)
+            used["verification"], used["verification_detail"] = label, detail
+            spec = PREREGISTERED["returner_metrics"][grp]
+            used["raw"] = used["return_yards"] / used["returns"] if used["returns"] else None
+            used["n"] = used["returns"]
+            used["qualifies"] = used["raw"] is not None and used["n"] >= spec["minimum"]
+            labelled[pid][grp] = used
+            if used["qualifies"]:
+                by_group[grp].append(used)
+    league_means = {}
+    for grp, members in by_group.items():
+        k = PREREGISTERED["returner_metrics"][grp]["shrink_k"]
+        total_n = sum(m["n"] for m in members)
+        mean = sum(m["raw"] * m["n"] for m in members) / total_n
+        league_means[grp] = {"mean": mean, "qualifiers": len(members), "total_n": total_n, "shrink_k": k}
+        for m in members:
+            m["shrunk"] = (m["n"] * m["raw"] + k * mean) / (m["n"] + k)
+        values = sorted((m["shrunk"] for m in members), reverse=True)
+        for m in members:
+            above = sum(1 for v in values if v > m["shrunk"])
+            m["share_above"] = above / len(members)
+            m["tier"] = tier_of(m["share_above"])
+            counts[grp][m["tier"]] += 1
+            counts[grp][m["verification"]] += 1
+    out = {}
+    for pid, groups in labelled.items():
+        kept = {grp: {k: v for k, v in row.items() if k != "qualifies"} for grp, row in groups.items() if row["qualifies"]}
+        if kept:
+            out[pid] = kept
+    return {"league_means": league_means, "counts": {g: dict(c) for g, c in counts.items()}, "rows": out}
 
 
 def compare(row, check):
@@ -433,7 +540,8 @@ def build_season(season, source):
         out[pid] = entry
     return {"season": season, "public_date": last_game, "admissible_pre_divergence": last_game < DIVERGENCE,
             "league_fg_make_rate_by_band": league_fg_rates, "league_means": league_means,
-            "counts": {g: dict(c) for g, c in counts.items()}, "rows": out}
+            "counts": {g: dict(c) for g, c in counts.items()}, "rows": out,
+            "returners": build_returners(season, stats, check)}
 
 
 def main():
@@ -442,6 +550,13 @@ def main():
     for season in SEASONS:
         seasons[season] = build_season(season, source)
         print(season, "public", seasons[season]["public_date"], json.dumps(seasons[season]["counts"], sort_keys=True))
+        print(season, "returners", json.dumps(seasons[season]["returners"]["counts"], sort_keys=True))
+    returners = {}
+    for season, block in seasons.items():
+        for pid, groups in block["returners"]["rows"].items():
+            slot = returners.setdefault(pid, {"name": next(iter(groups.values()))["name"], "seasons": {}})
+            slot["seasons"][str(season)] = {grp: {k: v for k, v in row.items() if k not in ("player_id", "name")}
+                                            for grp, row in groups.items()}
     players = {}
     for season, block in seasons.items():
         for pid, row in block["rows"].items():
@@ -454,6 +569,13 @@ def main():
     for label in ("Confirmed two-pass", "Corrected", "Unverified", "Job evidence"):
         summary["verification"][label] = sum(1 for p in players.values() for s in p["seasons"].values()
                                              if s["verification"] == label)
+    summary["returners"] = {"players": len(returners),
+                            "player_seasons": sum(len(p["seasons"]) for p in returners.values()),
+                            "verification": {}}
+    for label in ("Confirmed two-pass", "Corrected", "Unverified"):
+        summary["returners"]["verification"][label] = sum(
+            1 for p in returners.values() for season in p["seasons"].values() for row in season.values()
+            if row["verification"] == label)
     output = {
         "schema_version": 1,
         "built_by": "scripts/research/build_2010_2012_production_evidence.py",
@@ -462,9 +584,11 @@ def main():
         "divergence": DIVERGENCE,
         "preregistered": PREREGISTERED,
         "sources": {name: {"url": url, "sha256": sha(source / name)} for name, url in SOURCES.items()},
-        "seasons": {str(s): {k: v for k, v in block.items() if k != "rows"} for s, block in seasons.items()},
+        "seasons": {str(s): {k: (v if k != "returners" else {kk: vv for kk, vv in v.items() if kk != "rows"})
+                             for k, v in block.items() if k != "rows"} for s, block in seasons.items()},
         "summary": summary,
         "players": players,
+        "returners": returners,
     }
     OUT.write_text(json.dumps(output, indent=0, sort_keys=True, default=float) + "\n", encoding="utf-8")
     print(json.dumps(summary, indent=1))

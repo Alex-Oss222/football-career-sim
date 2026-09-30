@@ -123695,6 +123695,12 @@
 "what": "the play-by-play recomputation excludes two-point tries from attempts, carries and targets",
 "when": "same first build",
 "why": "the official totals in the stats file exclude them; the first build's off-by-one to off-by-three count differences were all two-point tries"
+},
+{
+"date": "2026-09-30",
+"what": "a `returners` block (kick and punt return yards per return, minimum 10 returns, shrinkage k 10, the same percentile tiers, the same two-pass verification against the play-by-play returner ids) is added beside `players`; the `players` block and every existing tier are unchanged",
+"when": "after the second-pass calibration was accepted, before any phase-2 (sub-composite and special-teams) fit was run",
+"why": "the special-teams strength needs a returner tier and the file carried none; the block is separate because a returner also holds a position-group row in the same season"
 }
 ],
 "contamination": [
@@ -123840,6 +123846,22 @@
 }
 },
 "public_date_rule": "a season's final regular-season statistics are public on the date of its last regular-season game (recorded per season from the play-by-play game dates); every such date precedes the divergence 2013-01-15, so the whole file is admissible pre-divergence evidence. nflverse's EPA is a later-computed function of those same contemporaneous plays (a derivative, not new information), recorded as a contamination note.",
+"returner_metrics": {
+"KR": {
+"denominator": "kickoff_returns",
+"minimum": 10,
+"name": "kickoff_return_yards_per_return",
+"numerator": "kickoff_return_yards",
+"shrink_k": 10
+},
+"PR": {
+"denominator": "punt_returns (fair catches excluded)",
+"minimum": 10,
+"name": "punt_return_yards_per_return",
+"numerator": "punt_return_yards",
+"shrink_k": 10
+}
+},
 "scope": "NFL regular seasons 2010, 2011 and 2012 only; every player with a qualifying season; keyed by nflverse gsis id",
 "shrinkage": "shrunk = (n x raw + k x league_mean) / (n + k), league_mean = the denominator-weighted mean over that season's qualifiers in the group; tiers are cut on the shrunk value",
 "tiers": {
@@ -123867,6 +123889,7564 @@
 },
 "window": "a player's production tier is the best tier over the two most recent completed pre-divergence seasons before the season being played (2014 branch: 2011 and 2012; 2012 study target: 2010 and 2011); for the 2014 branch, 2010 counts only when neither window season qualifies and is discounted one tier (Elite -> Plus, ..., Replacement-Level stays); the study target has no earlier season built, so no fallback",
 "written_before_first_run": "2026-09-30"
+},
+"returners": {
+"00-0019863": {
+"name": "Dominic Rhodes",
+"seasons": {
+"2010": {
+"KR": {
+"club": "IND",
+"games": 3,
+"group": "KR",
+"n": 12,
+"position": "RB",
+"raw": 21.0,
+"return_yards": 252,
+"returns": 12,
+"share_above": 0.6785714285714286,
+"shrunk": 22.191082457471015,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+252,
+252.0
+],
+"returns": [
+12,
+12.0
+]
+}
+}
+}
+}
+},
+"00-0021190": {
+"name": "Antwaan Randle El",
+"seasons": {
+"2010": {
+"PR": {
+"club": "PIT",
+"games": 16,
+"group": "PR",
+"n": 14,
+"position": "WR",
+"raw": 4.0,
+"return_yards": 56,
+"returns": 14,
+"share_above": 0.9767441860465116,
+"shrunk": 6.508785140562249,
+"tier": "Replacement-Level",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+56,
+56.0
+],
+"returns": [
+14,
+14.0
+]
+}
+}
+}
+}
+},
+"00-0022427": {
+"name": "Wes Welker",
+"seasons": {
+"2012": {
+"PR": {
+"club": "NE",
+"games": 16,
+"group": "PR",
+"n": 25,
+"position": "WR",
+"raw": 9.72,
+"return_yards": 243,
+"returns": 25,
+"share_above": 0.41025641025641024,
+"shrunk": 9.758110645673842,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+243,
+243.0
+],
+"returns": [
+25,
+25.0
+]
+}
+}
+}
+}
+},
+"00-0022766": {
+"name": "Patrick Crayton",
+"seasons": {
+"2011": {
+"PR": {
+"club": "LAC",
+"games": 13,
+"group": "PR",
+"n": 22,
+"position": "WR",
+"raw": 9.181818181818182,
+"return_yards": 202,
+"returns": 22,
+"share_above": 0.6111111111111112,
+"shrunk": 9.506074649298597,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+202,
+202.0
+],
+"returns": [
+22,
+22.0
+]
+}
+}
+}
+}
+},
+"00-0023176": {
+"name": "Josh Cribbs",
+"seasons": {
+"2010": {
+"KR": {
+"club": "CLE",
+"games": 15,
+"group": "KR",
+"n": 40,
+"position": "WR",
+"raw": 20.35,
+"return_yards": 814,
+"returns": 40,
+"share_above": 0.8571428571428571,
+"shrunk": 21.004076281287247,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+814,
+814.0
+],
+"returns": [
+40,
+40.0
+]
+}
+},
+"PR": {
+"club": "CLE",
+"games": 15,
+"group": "PR",
+"n": 20,
+"position": "WR",
+"raw": 11.15,
+"return_yards": 223,
+"returns": 20,
+"share_above": 0.3953488372093023,
+"shrunk": 10.773694779116465,
+"tier": "Average",
+"verification": "Corrected",
+"verification_detail": {
+"return_yards": [
+168,
+223.0
+],
+"returns": [
+20,
+20.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "CLE",
+"games": 16,
+"group": "KR",
+"n": 39,
+"position": "WR",
+"raw": 24.974358974358974,
+"return_yards": 974,
+"returns": 39,
+"share_above": 0.4782608695652174,
+"shrunk": 24.96418944936465,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+974,
+974.0
+],
+"returns": [
+39,
+39.0
+]
+}
+},
+"PR": {
+"club": "CLE",
+"games": 16,
+"group": "PR",
+"n": 34,
+"position": "WR",
+"raw": 11.411764705882353,
+"return_yards": 388,
+"returns": 34,
+"share_above": 0.19444444444444445,
+"shrunk": 11.140781563126252,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+388,
+388.0
+],
+"returns": [
+34,
+34.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "CLE",
+"games": 16,
+"group": "KR",
+"n": 43,
+"position": "WR",
+"raw": 27.3953488372093,
+"return_yards": 1178,
+"returns": 43,
+"share_above": 0.125,
+"shrunk": 26.987084870848708,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1178,
+1178.0
+],
+"returns": [
+43,
+43.0
+]
+}
+},
+"PR": {
+"club": "CLE",
+"games": 16,
+"group": "PR",
+"n": 38,
+"position": "WR",
+"raw": 12.026315789473685,
+"return_yards": 457,
+"returns": 38,
+"share_above": 0.1282051282051282,
+"shrunk": 11.573622345803841,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+457,
+457.0
+],
+"returns": [
+38,
+38.0
+]
+}
+}
+}
+}
+},
+"00-0023287": {
+"name": "Jim Leonhard",
+"seasons": {
+"2010": {
+"PR": {
+"club": "NYJ",
+"games": 11,
+"group": "PR",
+"n": 21,
+"position": "FS",
+"raw": 11.333333333333334,
+"return_yards": 238,
+"returns": 21,
+"share_above": 0.37209302325581395,
+"shrunk": 10.91002720559658,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+238,
+238.0
+],
+"returns": [
+21,
+21.0
+]
+}
+}
+},
+"2012": {
+"PR": {
+"club": "DEN",
+"games": 16,
+"group": "PR",
+"n": 15,
+"position": "FS",
+"raw": 5.933333333333334,
+"return_yards": 89,
+"returns": 15,
+"share_above": 0.8717948717948718,
+"shrunk": 7.501354903943377,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+89,
+89.0
+],
+"returns": [
+15,
+15.0
+]
+}
+}
+}
+}
+},
+"00-0023310": {
+"name": "Lance Moore",
+"seasons": {
+"2010": {
+"PR": {
+"club": "NO",
+"games": 15,
+"group": "PR",
+"n": 11,
+"position": "WR",
+"raw": 10.181818181818182,
+"return_yards": 112,
+"returns": 11,
+"share_above": 0.5348837209302325,
+"shrunk": 10.105278255880666,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+112,
+112.0
+],
+"returns": [
+11,
+11.0
+]
+}
+}
+}
+}
+},
+"00-0023408": {
+"name": "Greg Camarillo",
+"seasons": {
+"2010": {
+"PR": {
+"club": "MIN",
+"games": 16,
+"group": "PR",
+"n": 39,
+"position": "WR",
+"raw": 9.205128205128204,
+"return_yards": 359,
+"returns": 39,
+"share_above": 0.5813953488372093,
+"shrunk": 9.371649864765184,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+359,
+359.0
+],
+"returns": [
+39,
+39.0
+]
+}
+}
+}
+}
+},
+"00-0023441": {
+"name": "Adam Jones",
+"seasons": {
+"2012": {
+"PR": {
+"club": "CIN",
+"games": 15,
+"group": "PR",
+"n": 26,
+"position": "DB",
+"raw": 11.576923076923077,
+"return_yards": 301,
+"returns": 26,
+"share_above": 0.20512820512820512,
+"shrunk": 11.098163127738456,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+301,
+301.0
+],
+"returns": [
+26,
+26.0
+]
+}
+}
+}
+}
+},
+"00-0023490": {
+"name": "Roscoe Parrish",
+"seasons": {
+"2010": {
+"PR": {
+"club": "BUF",
+"games": 8,
+"group": "PR",
+"n": 12,
+"position": "WR",
+"raw": 10.916666666666666,
+"return_yards": 131,
+"returns": 12,
+"share_above": 0.4418604651162791,
+"shrunk": 10.509583789704273,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+131,
+131.0
+],
+"returns": [
+12,
+12.0
+]
+}
+}
+},
+"2012": {
+"PR": {
+"club": "TB",
+"games": 13,
+"group": "PR",
+"n": 30,
+"position": "WR",
+"raw": 9.933333333333334,
+"return_yards": 298,
+"returns": 30,
+"share_above": 0.38461538461538464,
+"shrunk": 9.91334681496461,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+298,
+298.0
+],
+"returns": [
+30,
+30.0
+]
+}
+}
+}
+}
+},
+"00-0023503": {
+"name": "Courtney Roby",
+"seasons": {
+"2010": {
+"KR": {
+"club": "NO",
+"games": 13,
+"group": "KR",
+"n": 33,
+"position": "WR",
+"raw": 23.78787878787879,
+"return_yards": 785,
+"returns": 33,
+"share_above": 0.39285714285714285,
+"shrunk": 23.748925908473545,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+785,
+785.0
+],
+"returns": [
+33,
+33.0
+]
+}
+}
+}
+}
+},
+"00-0023519": {
+"name": "Ellis Hobbs",
+"seasons": {
+"2010": {
+"KR": {
+"club": "PHI",
+"games": 8,
+"group": "KR",
+"n": 16,
+"position": "CB",
+"raw": 21.5625,
+"return_yards": 345,
+"returns": 16,
+"share_above": 0.6071428571428571,
+"shrunk": 22.353992848629325,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+345,
+345.0
+],
+"returns": [
+16,
+16.0
+]
+}
+}
+}
+}
+},
+"00-0023564": {
+"name": "Darren Sproles",
+"seasons": {
+"2010": {
+"KR": {
+"club": "LAC",
+"games": 16,
+"group": "KR",
+"n": 51,
+"position": "RB",
+"raw": 24.647058823529413,
+"return_yards": 1257,
+"returns": 51,
+"share_above": 0.26785714285714285,
+"shrunk": 24.47875105023545,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1257,
+1257.0
+],
+"returns": [
+51,
+51.0
+]
+}
+},
+"PR": {
+"club": "LAC",
+"games": 16,
+"group": "PR",
+"n": 24,
+"position": "RB",
+"raw": 6.916666666666667,
+"return_yards": 166,
+"returns": 24,
+"share_above": 0.8372093023255814,
+"shrunk": 7.829730687455704,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+166,
+166.0
+],
+"returns": [
+24,
+24.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "NO",
+"games": 16,
+"group": "KR",
+"n": 40,
+"position": "RB",
+"raw": 27.225,
+"return_yards": 1089,
+"returns": 40,
+"share_above": 0.1956521739130435,
+"shrunk": 26.76490566037736,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1089,
+1089.0
+],
+"returns": [
+40,
+40.0
+]
+}
+},
+"PR": {
+"club": "NO",
+"games": 16,
+"group": "PR",
+"n": 30,
+"position": "RB",
+"raw": 10.2,
+"return_yards": 306,
+"returns": 30,
+"share_above": 0.4444444444444444,
+"shrunk": 10.204859719438877,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+306,
+306.0
+],
+"returns": [
+30,
+30.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "NO",
+"games": 13,
+"group": "KR",
+"n": 18,
+"position": "RB",
+"raw": 26.833333333333332,
+"return_yards": 483,
+"returns": 18,
+"share_above": 0.2708333333333333,
+"shrunk": 26.26126779124934,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+483,
+483.0
+],
+"returns": [
+18,
+18.0
+]
+}
+},
+"PR": {
+"club": "NO",
+"games": 13,
+"group": "PR",
+"n": 23,
+"position": "RB",
+"raw": 7.956521739130435,
+"return_yards": 183,
+"returns": 23,
+"share_above": 0.6666666666666666,
+"shrunk": 8.531329472684376,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+183,
+183.0
+],
+"returns": [
+23,
+23.0
+]
+}
+}
+}
+}
+},
+"00-0023968": {
+"name": "Micheal Spurlock",
+"seasons": {
+"2010": {
+"KR": {
+"club": "TB",
+"games": 16,
+"group": "KR",
+"n": 44,
+"position": "WR",
+"raw": 25.65909090909091,
+"return_yards": 1129,
+"returns": 44,
+"share_above": 0.16071428571428573,
+"shrunk": 25.281552112303007,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1129,
+1129.0
+],
+"returns": [
+44,
+44.0
+]
+}
+},
+"PR": {
+"club": "TB",
+"games": 16,
+"group": "PR",
+"n": 28,
+"position": "WR",
+"raw": 6.892857142857143,
+"return_yards": 193,
+"returns": 28,
+"share_above": 0.8837209302325582,
+"shrunk": 7.716074825618262,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+193,
+193.0
+],
+"returns": [
+28,
+28.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "LAC",
+"games": 13,
+"group": "KR",
+"n": 16,
+"position": "WR",
+"raw": 23.4375,
+"return_yards": 375,
+"returns": 16,
+"share_above": 0.625,
+"shrunk": 24.127519159806983,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+375,
+375.0
+],
+"returns": [
+16,
+16.0
+]
+}
+},
+"PR": {
+"club": "LAC",
+"games": 13,
+"group": "PR",
+"n": 17,
+"position": "WR",
+"raw": 14.058823529411764,
+"return_yards": 239,
+"returns": 17,
+"share_above": 0.10256410256410256,
+"shrunk": 12.501254540688311,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+239,
+239.0
+],
+"returns": [
+17,
+17.0
+]
+}
+}
+}
+}
+},
+"00-0024061": {
+"name": "Tramon Williams",
+"seasons": {
+"2010": {
+"PR": {
+"club": "GB",
+"games": 16,
+"group": "PR",
+"n": 41,
+"position": "CB",
+"raw": 7.951219512195122,
+"return_yards": 326,
+"returns": 41,
+"share_above": 0.6744186046511628,
+"shrunk": 8.357075360264588,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+326,
+326.0
+],
+"returns": [
+41,
+41.0
+]
+}
+}
+}
+}
+},
+"00-0024172": {
+"name": "Patrick Cobbs",
+"seasons": {
+"2010": {
+"KR": {
+"club": "MIA",
+"games": 13,
+"group": "KR",
+"n": 22,
+"position": "RB",
+"raw": 19.59090909090909,
+"return_yards": 431,
+"returns": 22,
+"share_above": 0.8928571428571429,
+"shrunk": 20.850119189511325,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+431,
+431.0
+],
+"returns": [
+22,
+22.0
+]
+}
+}
+}
+}
+},
+"00-0024217": {
+"name": "Reggie Bush",
+"seasons": {
+"2010": {
+"PR": {
+"club": "NO",
+"games": 8,
+"group": "PR",
+"n": 14,
+"position": "RB",
+"raw": 6.571428571428571,
+"return_yards": 92,
+"returns": 14,
+"share_above": 0.7906976744186046,
+"shrunk": 8.00878514056225,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+92,
+92.0
+],
+"returns": [
+14,
+14.0
+]
+}
+}
+}
+}
+},
+"00-0024234": {
+"name": "Antonio Cromartie",
+"seasons": {
+"2011": {
+"KR": {
+"club": "NYJ",
+"games": 16,
+"group": "KR",
+"n": 17,
+"position": "CB",
+"raw": 24.529411764705884,
+"return_yards": 417,
+"returns": 17,
+"share_above": 0.5217391304347826,
+"shrunk": 24.675751222921033,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+417,
+417.0
+],
+"returns": [
+17,
+17.0
+]
+}
+}
+}
+}
+},
+"00-0024257": {
+"name": "Danieal Manning",
+"seasons": {
+"2010": {
+"KR": {
+"club": "CHI",
+"games": 16,
+"group": "KR",
+"n": 34,
+"position": "S",
+"raw": 24.38235294117647,
+"return_yards": 829,
+"returns": 34,
+"share_above": 0.30357142857142855,
+"shrunk": 24.209177592371873,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+829,
+829.0
+],
+"returns": [
+34,
+34.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "HOU",
+"games": 13,
+"group": "KR",
+"n": 13,
+"position": "S",
+"raw": 27.384615384615383,
+"return_yards": 356,
+"returns": 13,
+"share_above": 0.2608695652173913,
+"shrunk": 26.31501230516817,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+356,
+356.0
+],
+"returns": [
+13,
+13.0
+]
+}
+}
+}
+}
+},
+"00-0024272": {
+"name": "Devin Hester",
+"seasons": {
+"2010": {
+"KR": {
+"club": "CHI",
+"games": 16,
+"group": "KR",
+"n": 12,
+"position": "WR",
+"raw": 35.583333333333336,
+"return_yards": 427,
+"returns": 12,
+"share_above": 0.0,
+"shrunk": 30.145627912016472,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+427,
+427.0
+],
+"returns": [
+12,
+12.0
+]
+}
+},
+"PR": {
+"club": "CHI",
+"games": 16,
+"group": "PR",
+"n": 33,
+"position": "WR",
+"raw": 17.09090909090909,
+"return_yards": 564,
+"returns": 33,
+"share_above": 0.0,
+"shrunk": 15.44676379938358,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+564,
+564.0
+],
+"returns": [
+33,
+33.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "CHI",
+"games": 16,
+"group": "KR",
+"n": 33,
+"position": "WR",
+"raw": 21.90909090909091,
+"return_yards": 723,
+"returns": 33,
+"share_above": 0.9130434782608695,
+"shrunk": 22.61035541904344,
+"tier": "Replacement-Level",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+723,
+723.0
+],
+"returns": [
+33,
+33.0
+]
+}
+},
+"PR": {
+"club": "CHI",
+"games": 16,
+"group": "PR",
+"n": 28,
+"position": "WR",
+"raw": 16.214285714285715,
+"return_yards": 454,
+"returns": 28,
+"share_above": 0.027777777777777776,
+"shrunk": 14.636694441514608,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+454,
+454.0
+],
+"returns": [
+28,
+28.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "CHI",
+"games": 15,
+"group": "KR",
+"n": 24,
+"position": "WR",
+"raw": 25.875,
+"return_yards": 621,
+"returns": 24,
+"share_above": 0.3541666666666667,
+"shrunk": 25.685749945734752,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+621,
+621.0
+],
+"returns": [
+24,
+24.0
+]
+}
+},
+"PR": {
+"club": "CHI",
+"games": 15,
+"group": "PR",
+"n": 40,
+"position": "WR",
+"raw": 8.275,
+"return_yards": 331,
+"returns": 40,
+"share_above": 0.6410256410256411,
+"shrunk": 8.590677451971688,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+331,
+331.0
+],
+"returns": [
+40,
+40.0
+]
+}
+}
+}
+}
+},
+"00-0024294": {
+"name": "Jerious Norwood",
+"seasons": {
+"2011": {
+"KR": {
+"club": "LA",
+"games": 9,
+"group": "KR",
+"n": 24,
+"position": "RB",
+"raw": 25.458333333333332,
+"return_yards": 611,
+"returns": 24,
+"share_above": 0.391304347826087,
+"shrunk": 25.301331853496116,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+611,
+611.0
+],
+"returns": [
+24,
+24.0
+]
+}
+}
+}
+}
+},
+"00-0024318": {
+"name": "Brad Smith",
+"seasons": {
+"2010": {
+"KR": {
+"club": "NYJ",
+"games": 16,
+"group": "KR",
+"n": 50,
+"position": "WR",
+"raw": 28.64,
+"return_yards": 1432,
+"returns": 50,
+"share_above": 0.017857142857142856,
+"shrunk": 27.803396901072706,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1432,
+1432.0
+],
+"returns": [
+50,
+50.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "BUF",
+"games": 15,
+"group": "KR",
+"n": 15,
+"position": "WR",
+"raw": 18.8,
+"return_yards": 282,
+"returns": 15,
+"share_above": 0.9565217391304348,
+"shrunk": 21.249811320754716,
+"tier": "Replacement-Level",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+282,
+282.0
+],
+"returns": [
+15,
+15.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "BUF",
+"games": 15,
+"group": "KR",
+"n": 18,
+"position": "WR",
+"raw": 27.555555555555557,
+"return_yards": 496,
+"returns": 18,
+"share_above": 0.1875,
+"shrunk": 26.725553505535057,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+496,
+496.0
+],
+"returns": [
+18,
+18.0
+]
+}
+}
+}
+}
+},
+"00-0024330": {
+"name": "Will Blackmon",
+"seasons": {
+"2010": {
+"KR": {
+"club": "NYG",
+"games": 5,
+"group": "KR",
+"n": 13,
+"position": "FS",
+"raw": 18.307692307692307,
+"return_yards": 238,
+"returns": 13,
+"share_above": 0.9285714285714286,
+"shrunk": 20.617557133233145,
+"tier": "Replacement-Level",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+238,
+238.0
+],
+"returns": [
+13,
+13.0
+]
+}
+},
+"PR": {
+"club": "NYG",
+"games": 5,
+"group": "PR",
+"n": 14,
+"position": "FS",
+"raw": 6.714285714285714,
+"return_yards": 94,
+"returns": 14,
+"share_above": 0.7441860465116279,
+"shrunk": 8.092118473895583,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+94,
+94.0
+],
+"returns": [
+14,
+14.0
+]
+}
+}
+}
+}
+},
+"00-0024332": {
+"name": "Leon Washington",
+"seasons": {
+"2010": {
+"KR": {
+"club": "SEA",
+"games": 16,
+"group": "KR",
+"n": 57,
+"position": "RB",
+"raw": 25.63157894736842,
+"return_yards": 1461,
+"returns": 57,
+"share_above": 0.14285714285714285,
+"shrunk": 25.331400209915856,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1461,
+1461.0
+],
+"returns": [
+57,
+57.0
+]
+}
+},
+"PR": {
+"club": "SEA",
+"games": 16,
+"group": "PR",
+"n": 23,
+"position": "RB",
+"raw": 11.652173913043478,
+"return_yards": 268,
+"returns": 23,
+"share_above": 0.27906976744186046,
+"shrunk": 11.157904344651332,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+268,
+268.0
+],
+"returns": [
+23,
+23.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "SEA",
+"games": 16,
+"group": "KR",
+"n": 43,
+"position": "RB",
+"raw": 25.13953488372093,
+"return_yards": 1081,
+"returns": 43,
+"share_above": 0.45652173913043476,
+"shrunk": 25.098967604129584,
+"tier": "Average",
+"verification": "Corrected",
+"verification_detail": {
+"return_yards": [
+1084,
+1081.0
+],
+"returns": [
+43,
+43.0
+]
+}
+},
+"PR": {
+"club": "SEA",
+"games": 16,
+"group": "PR",
+"n": 41,
+"position": "RB",
+"raw": 11.317073170731707,
+"return_yards": 464,
+"returns": 41,
+"share_above": 0.2222222222222222,
+"shrunk": 11.101850760344218,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+464,
+464.0
+],
+"returns": [
+41,
+41.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "SEA",
+"games": 16,
+"group": "KR",
+"n": 27,
+"position": "RB",
+"raw": 29.037037037037038,
+"return_yards": 784,
+"returns": 27,
+"share_above": 0.041666666666666664,
+"shrunk": 28.00852697716166,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+784,
+784.0
+],
+"returns": [
+27,
+27.0
+]
+}
+},
+"PR": {
+"club": "SEA",
+"games": 16,
+"group": "PR",
+"n": 41,
+"position": "RB",
+"raw": 8.682926829268293,
+"return_yards": 356,
+"returns": 41,
+"share_above": 0.5897435897435898,
+"shrunk": 8.912428874482048,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+356,
+356.0
+],
+"returns": [
+41,
+41.0
+]
+}
+}
+}
+}
+},
+"00-0024535": {
+"name": "Eric Weems",
+"seasons": {
+"2010": {
+"KR": {
+"club": "ATL",
+"games": 16,
+"group": "KR",
+"n": 40,
+"position": "WR",
+"raw": 27.5,
+"return_yards": 1100,
+"returns": 40,
+"share_above": 0.05357142857142857,
+"shrunk": 26.72407628128725,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1100,
+1100.0
+],
+"returns": [
+40,
+40.0
+]
+}
+},
+"PR": {
+"club": "ATL",
+"games": 16,
+"group": "PR",
+"n": 18,
+"position": "WR",
+"raw": 12.777777777777779,
+"return_yards": 230,
+"returns": 18,
+"share_above": 0.16279069767441862,
+"shrunk": 11.793244406196212,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+230,
+230.0
+],
+"returns": [
+18,
+18.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "ATL",
+"games": 16,
+"group": "KR",
+"n": 24,
+"position": "WR",
+"raw": 23.458333333333332,
+"return_yards": 563,
+"returns": 24,
+"share_above": 0.6739130434782609,
+"shrunk": 23.88956714761376,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+563,
+563.0
+],
+"returns": [
+24,
+24.0
+]
+}
+},
+"PR": {
+"club": "ATL",
+"games": 16,
+"group": "PR",
+"n": 32,
+"position": "WR",
+"raw": 9.84375,
+"return_yards": 315,
+"returns": 32,
+"share_above": 0.5555555555555556,
+"shrunk": 9.933199732798931,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+315,
+315.0
+],
+"returns": [
+32,
+32.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "CHI",
+"games": 11,
+"group": "KR",
+"n": 13,
+"position": "WR",
+"raw": 17.76923076923077,
+"return_yards": 231,
+"returns": 13,
+"share_above": 0.9791666666666666,
+"shrunk": 21.013717311086157,
+"tier": "Replacement-Level",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+231,
+231.0
+],
+"returns": [
+13,
+13.0
+]
+}
+}
+}
+}
+},
+"00-0024559": {
+"name": "D.J. Ware",
+"seasons": {
+"2010": {
+"KR": {
+"club": "NYG",
+"games": 9,
+"group": "KR",
+"n": 21,
+"position": "RB",
+"raw": 20.571428571428573,
+"return_yards": 432,
+"returns": 21,
+"share_above": 0.8035714285714286,
+"shrunk": 21.554961744011692,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+432,
+432.0
+],
+"returns": [
+21,
+21.0
+]
+}
+}
+}
+}
+},
+"00-0025396": {
+"name": "Ted Ginn",
+"seasons": {
+"2010": {
+"KR": {
+"club": "SF",
+"games": 13,
+"group": "KR",
+"n": 47,
+"position": "WR",
+"raw": 21.106382978723403,
+"return_yards": 992,
+"returns": 47,
+"share_above": 0.8214285714285714,
+"shrunk": 21.547435334462495,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+992,
+992.0
+],
+"returns": [
+47,
+47.0
+]
+}
+},
+"PR": {
+"club": "SF",
+"games": 13,
+"group": "PR",
+"n": 24,
+"position": "WR",
+"raw": 13.375,
+"return_yards": 321,
+"returns": 24,
+"share_above": 0.13953488372093023,
+"shrunk": 12.388554216867469,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+321,
+321.0
+],
+"returns": [
+24,
+24.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "SF",
+"games": 14,
+"group": "KR",
+"n": 29,
+"position": "WR",
+"raw": 27.586206896551722,
+"return_yards": 800,
+"returns": 29,
+"share_above": 0.17391304347826086,
+"shrunk": 26.903725205611998,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+800,
+800.0
+],
+"returns": [
+29,
+29.0
+]
+}
+},
+"PR": {
+"club": "SF",
+"games": 14,
+"group": "PR",
+"n": 38,
+"position": "WR",
+"raw": 12.263157894736842,
+"return_yards": 466,
+"returns": 38,
+"share_above": 0.1388888888888889,
+"shrunk": 11.837383099532397,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+466,
+466.0
+],
+"returns": [
+38,
+38.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "SF",
+"games": 13,
+"group": "KR",
+"n": 11,
+"position": "WR",
+"raw": 23.0,
+"return_yards": 253,
+"returns": 11,
+"share_above": 0.6458333333333334,
+"shrunk": 24.06264276928484,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+253,
+253.0
+],
+"returns": [
+11,
+11.0
+]
+}
+},
+"PR": {
+"club": "SF",
+"games": 13,
+"group": "PR",
+"n": 32,
+"position": "WR",
+"raw": 10.1875,
+"return_yards": 326,
+"returns": 32,
+"share_above": 0.358974358974359,
+"shrunk": 10.107949347585343,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+326,
+326.0
+],
+"returns": [
+32,
+32.0
+]
+}
+}
+}
+}
+},
+"00-0025407": {
+"name": "Aaron Ross",
+"seasons": {
+"2011": {
+"PR": {
+"club": "NYG",
+"games": 16,
+"group": "PR",
+"n": 14,
+"position": "DB",
+"raw": 7.071428571428571,
+"return_yards": 99,
+"returns": 14,
+"share_above": 0.7777777777777778,
+"shrunk": 8.383099532398129,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+99,
+99.0
+],
+"returns": [
+14,
+14.0
+]
+}
+}
+}
+}
+},
+"00-0025458": {
+"name": "Lorenzo Booker",
+"seasons": {
+"2010": {
+"KR": {
+"club": "MIN",
+"games": 4,
+"group": "KR",
+"n": 18,
+"position": "RB",
+"raw": 23.833333333333332,
+"return_yards": 429,
+"returns": 18,
+"share_above": 0.375,
+"shrunk": 23.75727907372723,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+429,
+429.0
+],
+"returns": [
+18,
+18.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "MIN",
+"games": 14,
+"group": "KR",
+"n": 19,
+"position": "RB",
+"raw": 23.68421052631579,
+"return_yards": 450,
+"returns": 19,
+"share_above": 0.6304347826086957,
+"shrunk": 24.111906310995447,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+450,
+450.0
+],
+"returns": [
+19,
+19.0
+]
+}
+}
+}
+}
+},
+"00-0025460": {
+"name": "Jacoby Jones",
+"seasons": {
+"2010": {
+"KR": {
+"club": "HOU",
+"games": 15,
+"group": "KR",
+"n": 23,
+"position": "WR",
+"raw": 21.47826086956522,
+"return_yards": 494,
+"returns": 23,
+"share_above": 0.7321428571428571,
+"shrunk": 22.12738830498068,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+494,
+494.0
+],
+"returns": [
+23,
+23.0
+]
+}
+},
+"PR": {
+"club": "HOU",
+"games": 15,
+"group": "PR",
+"n": 30,
+"position": "WR",
+"raw": 6.833333333333333,
+"return_yards": 205,
+"returns": 30,
+"share_above": 0.9069767441860465,
+"shrunk": 7.630271084337349,
+"tier": "Replacement-Level",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+205,
+205.0
+],
+"returns": [
+30,
+30.0
+]
+}
+}
+},
+"2011": {
+"PR": {
+"club": "HOU",
+"games": 16,
+"group": "PR",
+"n": 49,
+"position": "WR",
+"raw": 10.571428571428571,
+"return_yards": 518,
+"returns": 49,
+"share_above": 0.3888888888888889,
+"shrunk": 10.511769301314493,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+518,
+518.0
+],
+"returns": [
+49,
+49.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "BAL",
+"games": 16,
+"group": "KR",
+"n": 38,
+"position": "WR",
+"raw": 30.710526315789473,
+"return_yards": 1167,
+"returns": 38,
+"share_above": 0.020833333333333332,
+"shrunk": 29.56907287822878,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1167,
+1167.0
+],
+"returns": [
+38,
+38.0
+]
+}
+},
+"PR": {
+"club": "BAL",
+"games": 16,
+"group": "PR",
+"n": 37,
+"position": "WR",
+"raw": 9.216216216216216,
+"return_yards": 341,
+"returns": 37,
+"share_above": 0.46153846153846156,
+"shrunk": 9.351784523374137,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+341,
+341.0
+],
+"returns": [
+37,
+37.0
+]
+}
+}
+}
+}
+},
+"00-0025486": {
+"name": "Johnnie Lee Higgins",
+"seasons": {
+"2010": {
+"PR": {
+"club": "LV",
+"games": 13,
+"group": "PR",
+"n": 17,
+"position": "WR",
+"raw": 7.235294117647059,
+"return_yards": 123,
+"returns": 17,
+"share_above": 0.6976744186046512,
+"shrunk": 8.26706827309237,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+123,
+123.0
+],
+"returns": [
+17,
+17.0
+]
+}
+}
+}
+}
+},
+"00-0025951": {
+"name": "Darius Reynaud",
+"seasons": {
+"2010": {
+"KR": {
+"club": "NYG",
+"games": 9,
+"group": "KR",
+"n": 21,
+"position": "RB",
+"raw": 18.38095238095238,
+"return_yards": 386,
+"returns": 21,
+"share_above": 0.9642857142857143,
+"shrunk": 20.071090776269756,
+"tier": "Replacement-Level",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+386,
+386.0
+],
+"returns": [
+21,
+21.0
+]
+}
+},
+"PR": {
+"club": "NYG",
+"games": 9,
+"group": "PR",
+"n": 23,
+"position": "RB",
+"raw": 5.739130434782608,
+"return_yards": 132,
+"returns": 23,
+"share_above": 0.9534883720930233,
+"shrunk": 7.0366922234392115,
+"tier": "Replacement-Level",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+132,
+132.0
+],
+"returns": [
+23,
+23.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "TEN",
+"games": 16,
+"group": "KR",
+"n": 53,
+"position": "RB",
+"raw": 23.39622641509434,
+"return_yards": 1240,
+"returns": 53,
+"share_above": 0.7083333333333334,
+"shrunk": 23.68754758976161,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1240,
+1240.0
+],
+"returns": [
+53,
+53.0
+]
+}
+},
+"PR": {
+"club": "TEN",
+"games": 16,
+"group": "PR",
+"n": 31,
+"position": "RB",
+"raw": 15.387096774193548,
+"return_yards": 477,
+"returns": 31,
+"share_above": 0.05128205128205128,
+"shrunk": 14.03741152679474,
+"tier": "Elite",
+"verification": "Corrected",
+"verification_detail": {
+"return_yards": [
+410,
+477.0
+],
+"returns": [
+31,
+31.0
+]
+}
+}
+}
+}
+},
+"00-0026000": {
+"name": "Davone Bess",
+"seasons": {
+"2010": {
+"PR": {
+"club": "MIA",
+"games": 16,
+"group": "PR",
+"n": 25,
+"position": "WR",
+"raw": 11.36,
+"return_yards": 284,
+"returns": 25,
+"share_above": 0.3488372093023256,
+"shrunk": 10.977452667814113,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+284,
+284.0
+],
+"returns": [
+25,
+25.0
+]
+}
+}
+},
+"2011": {
+"PR": {
+"club": "MIA",
+"games": 16,
+"group": "PR",
+"n": 37,
+"position": "WR",
+"raw": 11.945945945945946,
+"return_yards": 442,
+"returns": 37,
+"share_above": 0.16666666666666666,
+"shrunk": 11.578604016543725,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+442,
+442.0
+],
+"returns": [
+37,
+37.0
+]
+}
+}
+}
+}
+},
+"00-0026019": {
+"name": "Danny Woodhead",
+"seasons": {
+"2011": {
+"KR": {
+"club": "NE",
+"games": 15,
+"group": "KR",
+"n": 20,
+"position": "RB",
+"raw": 21.85,
+"return_yards": 437,
+"returns": 20,
+"share_above": 0.8478260869565217,
+"shrunk": 22.874842767295597,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+437,
+437.0
+],
+"returns": [
+20,
+20.0
+]
+}
+}
+}
+}
+},
+"00-0026035": {
+"name": "Danny Amendola",
+"seasons": {
+"2010": {
+"KR": {
+"club": "LA",
+"games": 16,
+"group": "KR",
+"n": 50,
+"position": "WR",
+"raw": 22.84,
+"return_yards": 1142,
+"returns": 50,
+"share_above": 0.5178571428571429,
+"shrunk": 22.970063567739373,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1142,
+1142.0
+],
+"returns": [
+50,
+50.0
+]
+}
+},
+"PR": {
+"club": "LA",
+"games": 16,
+"group": "PR",
+"n": 40,
+"position": "WR",
+"raw": 11.3,
+"return_yards": 452,
+"returns": 40,
+"share_above": 0.3023255813953488,
+"shrunk": 11.04421686746988,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+452,
+452.0
+],
+"returns": [
+40,
+40.0
+]
+}
+}
+},
+"2012": {
+"PR": {
+"club": "LA",
+"games": 11,
+"group": "PR",
+"n": 17,
+"position": "WR",
+"raw": 7.705882352941177,
+"return_yards": 131,
+"returns": 17,
+"share_above": 0.6923076923076923,
+"shrunk": 8.501254540688311,
+"tier": "Average",
+"verification": "Corrected",
+"verification_detail": {
+"return_yards": [
+122,
+131.0
+],
+"returns": [
+17,
+17.0
+]
+}
+}
+}
+}
+},
+"00-0026151": {
+"name": "Leodis McKelvin",
+"seasons": {
+"2010": {
+"KR": {
+"club": "BUF",
+"games": 15,
+"group": "KR",
+"n": 14,
+"position": "CB",
+"raw": 18.928571428571427,
+"return_yards": 265,
+"returns": 14,
+"share_above": 0.875,
+"shrunk": 20.883492252681766,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+265,
+265.0
+],
+"returns": [
+14,
+14.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "BUF",
+"games": 13,
+"group": "KR",
+"n": 18,
+"position": "CB",
+"raw": 28.333333333333332,
+"return_yards": 510,
+"returns": 18,
+"share_above": 0.08333333333333333,
+"shrunk": 27.225553505535057,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+510,
+510.0
+],
+"returns": [
+18,
+18.0
+]
+}
+},
+"PR": {
+"club": "BUF",
+"games": 13,
+"group": "PR",
+"n": 23,
+"position": "CB",
+"raw": 18.73913043478261,
+"return_yards": 431,
+"returns": 23,
+"share_above": 0.0,
+"shrunk": 16.04648098783589,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+431,
+431.0
+],
+"returns": [
+23,
+23.0
+]
+}
+}
+}
+}
+},
+"00-0026162": {
+"name": "Felix Jones",
+"seasons": {
+"2012": {
+"KR": {
+"club": "DAL",
+"games": 16,
+"group": "KR",
+"n": 11,
+"position": "RB",
+"raw": 21.454545454545453,
+"return_yards": 236,
+"returns": 11,
+"share_above": 0.8333333333333334,
+"shrunk": 23.25311895976103,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+236,
+236.0
+],
+"returns": [
+11,
+11.0
+]
+}
+}
+}
+}
+},
+"00-0026167": {
+"name": "Antoine Cason",
+"seasons": {
+"2010": {
+"PR": {
+"club": "LAC",
+"games": 16,
+"group": "PR",
+"n": 14,
+"position": "CB",
+"raw": 16.5,
+"return_yards": 231,
+"returns": 14,
+"share_above": 0.023255813953488372,
+"shrunk": 13.800451807228916,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+231,
+231.0
+],
+"returns": [
+14,
+14.0
+]
+}
+}
+}
+}
+},
+"00-0026174": {
+"name": "Devin Thomas",
+"seasons": {
+"2010": {
+"KR": {
+"club": "NYG",
+"games": 7,
+"group": "KR",
+"n": 15,
+"position": "WR",
+"raw": 26.6,
+"return_yards": 399,
+"returns": 15,
+"share_above": 0.10714285714285714,
+"shrunk": 25.408152562574497,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+399,
+399.0
+],
+"returns": [
+15,
+15.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "NYG",
+"games": 13,
+"group": "KR",
+"n": 25,
+"position": "WR",
+"raw": 24.28,
+"return_yards": 607,
+"returns": 25,
+"share_above": 0.5652173913043478,
+"shrunk": 24.464150943396227,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+607,
+607.0
+],
+"returns": [
+25,
+25.0
+]
+}
+}
+}
+}
+},
+"00-0026176": {
+"name": "Jordy Nelson",
+"seasons": {
+"2010": {
+"KR": {
+"club": "GB",
+"games": 16,
+"group": "KR",
+"n": 23,
+"position": "WR",
+"raw": 21.565217391304348,
+"return_yards": 496,
+"returns": 23,
+"share_above": 0.6964285714285714,
+"shrunk": 22.18799436558674,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+496,
+496.0
+],
+"returns": [
+23,
+23.0
+]
+}
+}
+}
+}
+},
+"00-0026182": {
+"name": "Eddie Royal",
+"seasons": {
+"2010": {
+"PR": {
+"club": "DEN",
+"games": 16,
+"group": "PR",
+"n": 25,
+"position": "WR",
+"raw": 11.92,
+"return_yards": 298,
+"returns": 25,
+"share_above": 0.2558139534883721,
+"shrunk": 11.377452667814113,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+298,
+298.0
+],
+"returns": [
+25,
+25.0
+]
+}
+}
+},
+"2011": {
+"PR": {
+"club": "DEN",
+"games": 12,
+"group": "PR",
+"n": 12,
+"position": "WR",
+"raw": 16.166666666666668,
+"return_yards": 194,
+"returns": 12,
+"share_above": 0.05555555555555555,
+"shrunk": 13.463381308070687,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+194,
+194.0
+],
+"returns": [
+12,
+12.0
+]
+}
+}
+},
+"2012": {
+"PR": {
+"club": "LAC",
+"games": 10,
+"group": "PR",
+"n": 12,
+"position": "WR",
+"raw": 5.333333333333333,
+"return_yards": 64,
+"returns": 12,
+"share_above": 0.9230769230769231,
+"shrunk": 7.3879032999356555,
+"tier": "Replacement-Level",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+64,
+64.0
+],
+"returns": [
+12,
+12.0
+]
+}
+}
+}
+}
+},
+"00-0026189": {
+"name": "DeSean Jackson",
+"seasons": {
+"2010": {
+"PR": {
+"club": "PHI",
+"games": 14,
+"group": "PR",
+"n": 20,
+"position": "WR",
+"raw": 11.55,
+"return_yards": 231,
+"returns": 20,
+"share_above": 0.32558139534883723,
+"shrunk": 11.040361445783132,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+231,
+231.0
+],
+"returns": [
+20,
+20.0
+]
+}
+}
+},
+"2011": {
+"PR": {
+"club": "PHI",
+"games": 15,
+"group": "PR",
+"n": 17,
+"position": "WR",
+"raw": 6.294117647058823,
+"return_yards": 107,
+"returns": 17,
+"share_above": 0.8333333333333334,
+"shrunk": 7.747940325094634,
+"tier": "Below-Average",
+"verification": "Corrected",
+"verification_detail": {
+"return_yards": [
+114,
+107.0
+],
+"returns": [
+17,
+17.0
+]
+}
+}
+}
+}
+},
+"00-0026200": {
+"name": "Pat Lee",
+"seasons": {
+"2010": {
+"KR": {
+"club": "GB",
+"games": 7,
+"group": "KR",
+"n": 13,
+"position": "CB",
+"raw": 20.384615384615383,
+"return_yards": 265,
+"returns": 13,
+"share_above": 0.7857142857142857,
+"shrunk": 21.791470176711407,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+265,
+265.0
+],
+"returns": [
+13,
+13.0
+]
+}
+}
+}
+}
+},
+"00-0026226": {
+"name": "Tom Zbikowski",
+"seasons": {
+"2010": {
+"PR": {
+"club": "BAL",
+"games": 6,
+"group": "PR",
+"n": 16,
+"position": "S",
+"raw": 6.3125,
+"return_yards": 101,
+"returns": 16,
+"share_above": 0.8604651162790697,
+"shrunk": 7.7388785912882305,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+101,
+101.0
+],
+"returns": [
+16,
+16.0
+]
+}
+}
+}
+}
+},
+"00-0026229": {
+"name": "Steve Slaton",
+"seasons": {
+"2010": {
+"KR": {
+"club": "HOU",
+"games": 12,
+"group": "KR",
+"n": 39,
+"position": "RB",
+"raw": 19.666666666666668,
+"return_yards": 767,
+"returns": 39,
+"share_above": 0.9464285714285714,
+"shrunk": 20.473547225803316,
+"tier": "Replacement-Level",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+767,
+767.0
+],
+"returns": [
+39,
+39.0
+]
+}
+}
+}
+}
+},
+"00-0026264": {
+"name": "Justin Tryon",
+"seasons": {
+"2010": {
+"KR": {
+"club": "IND",
+"games": 11,
+"group": "KR",
+"n": 14,
+"position": "DB",
+"raw": 21.357142857142858,
+"return_yards": 299,
+"returns": 14,
+"share_above": 0.625,
+"shrunk": 22.300158919348434,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+299,
+299.0
+],
+"returns": [
+14,
+14.0
+]
+}
+}
+}
+}
+},
+"00-0026316": {
+"name": "Jalen Parmele",
+"seasons": {
+"2010": {
+"KR": {
+"club": "BAL",
+"games": 12,
+"group": "KR",
+"n": 24,
+"position": "RB",
+"raw": 23.416666666666668,
+"return_yards": 562,
+"returns": 24,
+"share_above": 0.4107142857142857,
+"shrunk": 23.476582766598895,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+562,
+562.0
+],
+"returns": [
+24,
+24.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "JAX",
+"games": 11,
+"group": "KR",
+"n": 10,
+"position": "RB",
+"raw": 23.3,
+"return_yards": 233,
+"returns": 10,
+"share_above": 0.5625,
+"shrunk": 24.26577490774908,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+233,
+233.0
+],
+"returns": [
+10,
+10.0
+]
+}
+}
+}
+}
+},
+"00-0026345": {
+"name": "Pierre Garcon",
+"seasons": {
+"2011": {
+"PR": {
+"club": "IND",
+"games": 16,
+"group": "PR",
+"n": 16,
+"position": "WR",
+"raw": 2.75,
+"return_yards": 44,
+"returns": 16,
+"share_above": 0.9722222222222222,
+"shrunk": 5.622861106829043,
+"tier": "Replacement-Level",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+44,
+44.0
+],
+"returns": [
+16,
+16.0
+]
+}
+}
+}
+}
+},
+"00-0026491": {
+"name": "Stefan Logan",
+"seasons": {
+"2010": {
+"KR": {
+"club": "DET",
+"games": 16,
+"group": "KR",
+"n": 55,
+"position": "WR",
+"raw": 26.327272727272728,
+"return_yards": 1448,
+"returns": 55,
+"share_above": 0.08928571428571429,
+"shrunk": 25.9108279086825,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1448,
+1448.0
+],
+"returns": [
+55,
+55.0
+]
+}
+},
+"PR": {
+"club": "DET",
+"games": 16,
+"group": "PR",
+"n": 30,
+"position": "WR",
+"raw": 12.066666666666666,
+"return_yards": 362,
+"returns": 30,
+"share_above": 0.23255813953488372,
+"shrunk": 11.555271084337349,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+362,
+362.0
+],
+"returns": [
+30,
+30.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "DET",
+"games": 16,
+"group": "KR",
+"n": 33,
+"position": "WR",
+"raw": 25.21212121212121,
+"return_yards": 832,
+"returns": 33,
+"share_above": 0.43478260869565216,
+"shrunk": 25.145239139973672,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+832,
+832.0
+],
+"returns": [
+33,
+33.0
+]
+}
+},
+"PR": {
+"club": "DET",
+"games": 16,
+"group": "PR",
+"n": 37,
+"position": "WR",
+"raw": 8.135135135135135,
+"return_yards": 301,
+"returns": 37,
+"share_above": 0.75,
+"shrunk": 8.578604016543725,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+301,
+301.0
+],
+"returns": [
+37,
+37.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "DET",
+"games": 15,
+"group": "KR",
+"n": 28,
+"position": "WR",
+"raw": 21.321428571428573,
+"return_yards": 597,
+"returns": 28,
+"share_above": 0.9166666666666666,
+"shrunk": 22.350407846183725,
+"tier": "Replacement-Level",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+597,
+597.0
+],
+"returns": [
+28,
+28.0
+]
+}
+},
+"PR": {
+"club": "DET",
+"games": 15,
+"group": "PR",
+"n": 33,
+"position": "WR",
+"raw": 9.090909090909092,
+"return_yards": 300,
+"returns": 33,
+"share_above": 0.48717948717948717,
+"shrunk": 9.268229595315917,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+300,
+300.0
+],
+"returns": [
+33,
+33.0
+]
+}
+}
+}
+}
+},
+"00-0026536": {
+"name": "Nick Miller",
+"seasons": {
+"2010": {
+"PR": {
+"club": "LV",
+"games": 9,
+"group": "PR",
+"n": 35,
+"position": "WR",
+"raw": 7.3428571428571425,
+"return_yards": 257,
+"returns": 35,
+"share_above": 0.813953488372093,
+"shrunk": 7.938018741633199,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+257,
+257.0
+],
+"returns": [
+35,
+35.0
+]
+}
+}
+},
+"2011": {
+"PR": {
+"club": "LA",
+"games": 7,
+"group": "PR",
+"n": 10,
+"position": "WR",
+"raw": 14.7,
+"return_yards": 147,
+"returns": 10,
+"share_above": 0.08333333333333333,
+"shrunk": 12.459719438877755,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+147,
+147.0
+],
+"returns": [
+10,
+10.0
+]
+}
+}
+}
+}
+},
+"00-0026577": {
+"name": "Marcus Thigpen",
+"seasons": {
+"2012": {
+"KR": {
+"club": "MIA",
+"games": 15,
+"group": "KR",
+"n": 38,
+"position": "WR",
+"raw": 27.36842105263158,
+"return_yards": 1040,
+"returns": 38,
+"share_above": 0.14583333333333334,
+"shrunk": 26.92323954489545,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1040,
+1040.0
+],
+"returns": [
+38,
+38.0
+]
+}
+},
+"PR": {
+"club": "MIA",
+"games": 15,
+"group": "PR",
+"n": 26,
+"position": "WR",
+"raw": 12.153846153846153,
+"return_yards": 316,
+"returns": 26,
+"share_above": 0.15384615384615385,
+"shrunk": 11.514829794405124,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+316,
+316.0
+],
+"returns": [
+26,
+26.0
+]
+}
+}
+}
+}
+},
+"00-0026620": {
+"name": "Devin Moore",
+"seasons": {
+"2010": {
+"KR": {
+"club": "IND",
+"games": 4,
+"group": "KR",
+"n": 12,
+"position": "RB",
+"raw": 21.416666666666668,
+"return_yards": 257,
+"returns": 12,
+"share_above": 0.5892857142857143,
+"shrunk": 22.418355184743742,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+257,
+257.0
+],
+"returns": [
+12,
+12.0
+]
+}
+}
+}
+}
+},
+"00-0026716": {
+"name": "Quan Cosby",
+"seasons": {
+"2010": {
+"PR": {
+"club": "CIN",
+"games": 16,
+"group": "PR",
+"n": 30,
+"position": "WR",
+"raw": 7.5,
+"return_yards": 225,
+"returns": 30,
+"share_above": 0.7209302325581395,
+"shrunk": 8.130271084337348,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+225,
+225.0
+],
+"returns": [
+30,
+30.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "DEN",
+"games": 10,
+"group": "KR",
+"n": 17,
+"position": "WR",
+"raw": 26.88235294117647,
+"return_yards": 457,
+"returns": 17,
+"share_above": 0.30434782608695654,
+"shrunk": 26.157232704402514,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+457,
+457.0
+],
+"returns": [
+17,
+17.0
+]
+}
+},
+"PR": {
+"club": "DEN",
+"games": 10,
+"group": "PR",
+"n": 27,
+"position": "WR",
+"raw": 9.962962962962964,
+"return_yards": 269,
+"returns": 27,
+"share_above": 0.5,
+"shrunk": 10.03228077777176,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+269,
+269.0
+],
+"returns": [
+27,
+27.0
+]
+}
+}
+}
+}
+},
+"00-0026913": {
+"name": "Johnny Knox",
+"seasons": {
+"2011": {
+"KR": {
+"club": "CHI",
+"games": 14,
+"group": "KR",
+"n": 15,
+"position": "WR",
+"raw": 26.466666666666665,
+"return_yards": 397,
+"returns": 15,
+"share_above": 0.32608695652173914,
+"shrunk": 25.849811320754714,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+397,
+397.0
+],
+"returns": [
+15,
+15.0
+]
+}
+}
+}
+}
+},
+"00-0026941": {
+"name": "Bernard Scott",
+"seasons": {
+"2010": {
+"KR": {
+"club": "CIN",
+"games": 16,
+"group": "KR",
+"n": 57,
+"position": "RB",
+"raw": 22.36842105263158,
+"return_yards": 1275,
+"returns": 57,
+"share_above": 0.5535714285714286,
+"shrunk": 22.55528080693078,
+"tier": "Average",
+"verification": "Corrected",
+"verification_detail": {
+"return_yards": [
+1274,
+1275.0
+],
+"returns": [
+57,
+57.0
+]
+}
+}
+}
+}
+},
+"00-0026944": {
+"name": "Captain Munnerlyn",
+"seasons": {
+"2010": {
+"PR": {
+"club": "CAR",
+"games": 16,
+"group": "PR",
+"n": 30,
+"position": "DB",
+"raw": 10.9,
+"return_yards": 327,
+"returns": 30,
+"share_above": 0.4186046511627907,
+"shrunk": 10.680271084337349,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+327,
+327.0
+],
+"returns": [
+30,
+30.0
+]
+}
+}
+},
+"2012": {
+"PR": {
+"club": "CAR",
+"games": 16,
+"group": "PR",
+"n": 14,
+"position": "DB",
+"raw": 5.142857142857143,
+"return_yards": 72,
+"returns": 14,
+"share_above": 0.9487179487179487,
+"shrunk": 7.105578024941018,
+"tier": "Replacement-Level",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+72,
+72.0
+],
+"returns": [
+14,
+14.0
+]
+}
+}
+}
+}
+},
+"00-0026953": {
+"name": "Sammie Stroughter",
+"seasons": {
+"2011": {
+"KR": {
+"club": "TB",
+"games": 6,
+"group": "KR",
+"n": 20,
+"position": "WR",
+"raw": 27.0,
+"return_yards": 540,
+"returns": 20,
+"share_above": 0.2826086956521739,
+"shrunk": 26.30817610062893,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+540,
+540.0
+],
+"returns": [
+20,
+20.0
+]
+}
+}
+}
+}
+},
+"00-0026956": {
+"name": "LaRod Stephens-Howling",
+"seasons": {
+"2010": {
+"KR": {
+"club": "ARI",
+"games": 13,
+"group": "KR",
+"n": 57,
+"position": "RB",
+"raw": 27.157894736842106,
+"return_yards": 1548,
+"returns": 57,
+"share_above": 0.07142857142857142,
+"shrunk": 26.629907672602425,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1548,
+1548.0
+],
+"returns": [
+57,
+57.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "ARI",
+"games": 14,
+"group": "KR",
+"n": 36,
+"position": "RB",
+"raw": 23.805555555555557,
+"return_yards": 857,
+"returns": 36,
+"share_above": 0.6521739130434783,
+"shrunk": 24.048810500410173,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+857,
+857.0
+],
+"returns": [
+36,
+36.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "ARI",
+"games": 14,
+"group": "KR",
+"n": 18,
+"position": "RB",
+"raw": 22.5,
+"return_yards": 405,
+"returns": 18,
+"share_above": 0.75,
+"shrunk": 23.475553505535057,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+405,
+405.0
+],
+"returns": [
+18,
+18.0
+]
+}
+}
+}
+}
+},
+"00-0026998": {
+"name": "Percy Harvin",
+"seasons": {
+"2010": {
+"KR": {
+"club": "MIN",
+"games": 14,
+"group": "KR",
+"n": 40,
+"position": "WR",
+"raw": 23.325,
+"return_yards": 933,
+"returns": 40,
+"share_above": 0.48214285714285715,
+"shrunk": 23.38407628128725,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+933,
+933.0
+],
+"returns": [
+40,
+40.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "MIN",
+"games": 16,
+"group": "KR",
+"n": 16,
+"position": "WR",
+"raw": 32.5,
+"return_yards": 520,
+"returns": 16,
+"share_above": 0.021739130434782608,
+"shrunk": 29.586357039187227,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+520,
+520.0
+],
+"returns": [
+16,
+16.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "MIN",
+"games": 9,
+"group": "KR",
+"n": 16,
+"position": "WR",
+"raw": 35.875,
+"return_yards": 574,
+"returns": 16,
+"share_above": 0.0,
+"shrunk": 31.781365313653136,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+574,
+574.0
+],
+"returns": [
+16,
+16.0
+]
+}
+}
+}
+}
+},
+"00-0027057": {
+"name": "Brandon Tate",
+"seasons": {
+"2010": {
+"KR": {
+"club": "NE",
+"games": 16,
+"group": "KR",
+"n": 41,
+"position": "WR",
+"raw": 25.78048780487805,
+"return_yards": 1057,
+"returns": 41,
+"share_above": 0.125,
+"shrunk": 25.356937530673772,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1057,
+1057.0
+],
+"returns": [
+41,
+41.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "CIN",
+"games": 16,
+"group": "KR",
+"n": 42,
+"position": "WR",
+"raw": 23.142857142857142,
+"return_yards": 972,
+"returns": 42,
+"share_above": 0.717391304347826,
+"shrunk": 23.485486211901307,
+"tier": "Below-Average",
+"verification": "Corrected",
+"verification_detail": {
+"return_yards": [
+998,
+972.0
+],
+"returns": [
+42,
+42.0
+]
+}
+},
+"PR": {
+"club": "CIN",
+"games": 16,
+"group": "PR",
+"n": 51,
+"position": "WR",
+"raw": 10.647058823529411,
+"return_yards": 543,
+"returns": 51,
+"share_above": 0.3333333333333333,
+"shrunk": 10.576957193074675,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+543,
+543.0
+],
+"returns": [
+51,
+51.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "CIN",
+"games": 16,
+"group": "KR",
+"n": 32,
+"position": "WR",
+"raw": 24.84375,
+"return_yards": 795,
+"returns": 32,
+"share_above": 0.4375,
+"shrunk": 24.93608328940432,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+795,
+795.0
+],
+"returns": [
+32,
+32.0
+]
+}
+},
+"PR": {
+"club": "CIN",
+"games": 16,
+"group": "PR",
+"n": 21,
+"position": "WR",
+"raw": 8.904761904761905,
+"return_yards": 187,
+"returns": 21,
+"share_above": 0.5128205128205128,
+"shrunk": 9.210770083825304,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+187,
+187.0
+],
+"returns": [
+21,
+21.0
+]
+}
+}
+}
+}
+},
+"00-0027060": {
+"name": "Lardarius Webb",
+"seasons": {
+"2010": {
+"PR": {
+"club": "BAL",
+"games": 14,
+"group": "PR",
+"n": 21,
+"position": "FS",
+"raw": 9.476190476190476,
+"return_yards": 199,
+"returns": 21,
+"share_above": 0.5581395348837209,
+"shrunk": 9.651962689467547,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+199,
+199.0
+],
+"returns": [
+21,
+21.0
+]
+}
+}
+},
+"2011": {
+"PR": {
+"club": "BAL",
+"games": 15,
+"group": "PR",
+"n": 30,
+"position": "FS",
+"raw": 10.033333333333333,
+"return_yards": 301,
+"returns": 30,
+"share_above": 0.4722222222222222,
+"shrunk": 10.079859719438877,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+301,
+301.0
+],
+"returns": [
+30,
+30.0
+]
+}
+}
+}
+}
+},
+"00-0027076": {
+"name": "Mike Thomas",
+"seasons": {
+"2010": {
+"PR": {
+"club": "JAX",
+"games": 16,
+"group": "PR",
+"n": 34,
+"position": "WR",
+"raw": 10.529411764705882,
+"return_yards": 358,
+"returns": 34,
+"share_above": 0.46511627906976744,
+"shrunk": 10.413882803943045,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+358,
+358.0
+],
+"returns": [
+34,
+34.0
+]
+}
+}
+},
+"2011": {
+"PR": {
+"club": "JAX",
+"games": 15,
+"group": "PR",
+"n": 19,
+"position": "WR",
+"raw": 4.631578947368421,
+"return_yards": 88,
+"returns": 19,
+"share_above": 0.9444444444444444,
+"shrunk": 6.558427199226038,
+"tier": "Replacement-Level",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+88,
+88.0
+],
+"returns": [
+19,
+19.0
+]
+}
+}
+}
+}
+},
+"00-0027080": {
+"name": "Mike Goodson",
+"seasons": {
+"2010": {
+"KR": {
+"club": "CAR",
+"games": 16,
+"group": "KR",
+"n": 48,
+"position": "RB",
+"raw": 21.833333333333332,
+"return_yards": 1048,
+"returns": 48,
+"share_above": 0.7142857142857143,
+"shrunk": 22.141445070075214,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1048,
+1048.0
+],
+"returns": [
+48,
+48.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "CAR",
+"games": 4,
+"group": "KR",
+"n": 11,
+"position": "RB",
+"raw": 22.727272727272727,
+"return_yards": 250,
+"returns": 11,
+"share_above": 0.6956521739130435,
+"shrunk": 23.773584905660375,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+250,
+250.0
+],
+"returns": [
+11,
+11.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "LV",
+"games": 12,
+"group": "KR",
+"n": 16,
+"position": "RB",
+"raw": 22.4375,
+"return_yards": 359,
+"returns": 16,
+"share_above": 0.7291666666666666,
+"shrunk": 23.51213454442237,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+359,
+359.0
+],
+"returns": [
+16,
+16.0
+]
+}
+}
+}
+}
+},
+"00-0027128": {
+"name": "Coye Francies",
+"seasons": {
+"2012": {
+"KR": {
+"club": "LV",
+"games": 10,
+"group": "KR",
+"n": 20,
+"position": "DB",
+"raw": 23.75,
+"return_yards": 475,
+"returns": 20,
+"share_above": 0.5833333333333334,
+"shrunk": 24.243849938499388,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+475,
+475.0
+],
+"returns": [
+20,
+20.0
+]
+}
+}
+}
+}
+},
+"00-0027150": {
+"name": "Julian Edelman",
+"seasons": {
+"2010": {
+"PR": {
+"club": "NE",
+"games": 15,
+"group": "PR",
+"n": 21,
+"position": "WR",
+"raw": 15.285714285714286,
+"return_yards": 321,
+"returns": 21,
+"share_above": 0.046511627906976744,
+"shrunk": 13.58744656043529,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+321,
+321.0
+],
+"returns": [
+21,
+21.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "NE",
+"games": 13,
+"group": "KR",
+"n": 12,
+"position": "WR",
+"raw": 23.666666666666668,
+"return_yards": 284,
+"returns": 12,
+"share_above": 0.6086956521739131,
+"shrunk": 24.238421955403087,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+284,
+284.0
+],
+"returns": [
+12,
+12.0
+]
+}
+},
+"PR": {
+"club": "NE",
+"games": 13,
+"group": "PR",
+"n": 28,
+"position": "WR",
+"raw": 10.571428571428571,
+"return_yards": 296,
+"returns": 28,
+"share_above": 0.4166666666666667,
+"shrunk": 10.478799704672502,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+296,
+296.0
+],
+"returns": [
+28,
+28.0
+]
+}
+}
+},
+"2012": {
+"PR": {
+"club": "NE",
+"games": 9,
+"group": "PR",
+"n": 17,
+"position": "WR",
+"raw": 15.470588235294118,
+"return_yards": 263,
+"returns": 17,
+"share_above": 0.07692307692307693,
+"shrunk": 13.3901434295772,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+263,
+263.0
+],
+"returns": [
+17,
+17.0
+]
+}
+}
+}
+}
+},
+"00-0027155": {
+"name": "Rashad Jennings",
+"seasons": {
+"2012": {
+"KR": {
+"club": "JAX",
+"games": 10,
+"group": "KR",
+"n": 10,
+"position": "RB",
+"raw": 24.1,
+"return_yards": 241,
+"returns": 10,
+"share_above": 0.4583333333333333,
+"shrunk": 24.66577490774908,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+241,
+241.0
+],
+"returns": [
+10,
+10.0
+]
+}
+}
+}
+}
+},
+"00-0027156": {
+"name": "Tiquan Underwood",
+"seasons": {
+"2010": {
+"KR": {
+"club": "JAX",
+"games": 10,
+"group": "KR",
+"n": 24,
+"position": "WR",
+"raw": 23.375,
+"return_yards": 561,
+"returns": 24,
+"share_above": 0.44642857142857145,
+"shrunk": 23.44717100189301,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+561,
+561.0
+],
+"returns": [
+24,
+24.0
+]
+}
+}
+}
+}
+},
+"00-0027290": {
+"name": "Cassius Vaughn",
+"seasons": {
+"2012": {
+"KR": {
+"club": "IND",
+"games": 15,
+"group": "KR",
+"n": 10,
+"position": "DB",
+"raw": 20.9,
+"return_yards": 209,
+"returns": 10,
+"share_above": 0.8958333333333334,
+"shrunk": 23.06577490774908,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+209,
+209.0
+],
+"returns": [
+10,
+10.0
+]
+}
+}
+}
+}
+},
+"00-0027350": {
+"name": "A.J. Jefferson",
+"seasons": {
+"2011": {
+"KR": {
+"club": "ARI",
+"games": 16,
+"group": "KR",
+"n": 14,
+"position": "CB",
+"raw": 25.428571428571427,
+"return_yards": 356,
+"returns": 14,
+"share_above": 0.41304347826086957,
+"shrunk": 25.218553459119494,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+356,
+356.0
+],
+"returns": [
+14,
+14.0
+]
+}
+}
+}
+}
+},
+"00-0027421": {
+"name": "Bryan McCann",
+"seasons": {
+"2010": {
+"KR": {
+"club": "DAL",
+"games": 9,
+"group": "KR",
+"n": 23,
+"position": "DB",
+"raw": 22.043478260869566,
+"return_yards": 507,
+"returns": 23,
+"share_above": 0.5714285714285714,
+"shrunk": 22.52132769892007,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+507,
+507.0
+],
+"returns": [
+23,
+23.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "LV",
+"games": 11,
+"group": "KR",
+"n": 15,
+"position": "DB",
+"raw": 28.333333333333332,
+"return_yards": 425,
+"returns": 15,
+"share_above": 0.13043478260869565,
+"shrunk": 26.969811320754715,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+425,
+425.0
+],
+"returns": [
+15,
+15.0
+]
+}
+}
+}
+}
+},
+"00-0027437": {
+"name": "Quinn Porter",
+"seasons": {
+"2011": {
+"KR": {
+"club": "LA",
+"games": 12,
+"group": "KR",
+"n": 25,
+"position": "RB",
+"raw": 22.16,
+"return_yards": 554,
+"returns": 25,
+"share_above": 0.8043478260869565,
+"shrunk": 22.94986522911051,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+554,
+554.0
+],
+"returns": [
+25,
+25.0
+]
+}
+}
+}
+}
+},
+"00-0027440": {
+"name": "Sam Shields",
+"seasons": {
+"2010": {
+"KR": {
+"club": "GB",
+"games": 13,
+"group": "KR",
+"n": 21,
+"position": "CB",
+"raw": 21.523809523809526,
+"return_yards": 452,
+"returns": 21,
+"share_above": 0.6607142857142857,
+"shrunk": 22.200123034334272,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+452,
+452.0
+],
+"returns": [
+21,
+21.0
+]
+}
+}
+}
+}
+},
+"00-0027450": {
+"name": "Preston Parker",
+"seasons": {
+"2010": {
+"KR": {
+"club": "TB",
+"games": 8,
+"group": "KR",
+"n": 10,
+"position": "WR",
+"raw": 17.8,
+"return_yards": 178,
+"returns": 10,
+"share_above": 0.9107142857142857,
+"shrunk": 20.710190703218117,
+"tier": "Replacement-Level",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+178,
+178.0
+],
+"returns": [
+10,
+10.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "TB",
+"games": 16,
+"group": "KR",
+"n": 20,
+"position": "WR",
+"raw": 21.95,
+"return_yards": 439,
+"returns": 20,
+"share_above": 0.8260869565217391,
+"shrunk": 22.941509433962263,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+439,
+439.0
+],
+"returns": [
+20,
+20.0
+]
+}
+},
+"PR": {
+"club": "TB",
+"games": 16,
+"group": "PR",
+"n": 23,
+"position": "WR",
+"raw": 9.130434782608695,
+"return_yards": 210,
+"returns": 23,
+"share_above": 0.6388888888888888,
+"shrunk": 9.460436023562275,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+210,
+210.0
+],
+"returns": [
+23,
+23.0
+]
+}
+}
+}
+}
+},
+"00-0027470": {
+"name": "Brandon James",
+"seasons": {
+"2010": {
+"KR": {
+"club": "IND",
+"games": 3,
+"group": "KR",
+"n": 14,
+"position": "WR",
+"raw": 16.357142857142858,
+"return_yards": 229,
+"returns": 14,
+"share_above": 0.9821428571428571,
+"shrunk": 19.383492252681766,
+"tier": "Replacement-Level",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+229,
+229.0
+],
+"returns": [
+14,
+14.0
+]
+}
+}
+}
+}
+},
+"00-0027477": {
+"name": "Blair White",
+"seasons": {
+"2010": {
+"PR": {
+"club": "IND",
+"games": 13,
+"group": "PR",
+"n": 10,
+"position": "WR",
+"raw": 8.0,
+"return_yards": 80,
+"returns": 10,
+"share_above": 0.6046511627906976,
+"shrunk": 9.0105421686747,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+80,
+80.0
+],
+"returns": [
+10,
+10.0
+]
+}
+}
+}
+}
+},
+"00-0027547": {
+"name": "Marcus Sherels",
+"seasons": {
+"2011": {
+"KR": {
+"club": "MIN",
+"games": 16,
+"group": "KR",
+"n": 16,
+"position": "DB",
+"raw": 27.8125,
+"return_yards": 445,
+"returns": 16,
+"share_above": 0.21739130434782608,
+"shrunk": 26.70174165457184,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+445,
+445.0
+],
+"returns": [
+16,
+16.0
+]
+}
+},
+"PR": {
+"club": "MIN",
+"games": 16,
+"group": "PR",
+"n": 33,
+"position": "DB",
+"raw": 8.393939393939394,
+"return_yards": 277,
+"returns": 33,
+"share_above": 0.7222222222222222,
+"shrunk": 8.81847415761756,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+277,
+277.0
+],
+"returns": [
+33,
+33.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "MIN",
+"games": 16,
+"group": "KR",
+"n": 16,
+"position": "DB",
+"raw": 26.375,
+"return_yards": 422,
+"returns": 16,
+"share_above": 0.3333333333333333,
+"shrunk": 25.935211467499293,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+422,
+422.0
+],
+"returns": [
+16,
+16.0
+]
+}
+},
+"PR": {
+"club": "MIN",
+"games": 16,
+"group": "PR",
+"n": 32,
+"position": "DB",
+"raw": 8.96875,
+"return_yards": 287,
+"returns": 32,
+"share_above": 0.5384615384615384,
+"shrunk": 9.179377919013914,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+287,
+287.0
+],
+"returns": [
+32,
+32.0
+]
+}
+}
+}
+}
+},
+"00-0027585": {
+"name": "Richard Goodman",
+"seasons": {
+"2011": {
+"KR": {
+"club": "LAC",
+"games": 13,
+"group": "KR",
+"n": 34,
+"position": "WR",
+"raw": 27.529411764705884,
+"return_yards": 936,
+"returns": 34,
+"share_above": 0.15217391304347827,
+"shrunk": 26.937392795883362,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+936,
+936.0
+],
+"returns": [
+34,
+34.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "LAC",
+"games": 7,
+"group": "KR",
+"n": 18,
+"position": "WR",
+"raw": 27.61111111111111,
+"return_yards": 497,
+"returns": 18,
+"share_above": 0.16666666666666666,
+"shrunk": 26.76126779124934,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+497,
+497.0
+],
+"returns": [
+18,
+18.0
+]
+}
+}
+}
+}
+},
+"00-0027606": {
+"name": "Trindon Holliday",
+"seasons": {
+"2012": {
+"KR": {
+"club": "DEN",
+"games": 15,
+"group": "KR",
+"n": 21,
+"position": "WR",
+"raw": 26.285714285714285,
+"return_yards": 552,
+"returns": 21,
+"share_above": 0.3125,
+"shrunk": 25.945661230805857,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+552,
+552.0
+],
+"returns": [
+21,
+21.0
+]
+}
+},
+"PR": {
+"club": "DEN",
+"games": 15,
+"group": "PR",
+"n": 47,
+"position": "WR",
+"raw": 10.23404255319149,
+"return_yards": 481,
+"returns": 47,
+"share_above": 0.3333333333333333,
+"shrunk": 10.167260922782182,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+481,
+481.0
+],
+"returns": [
+47,
+47.0
+]
+}
+}
+}
+}
+},
+"00-0027608": {
+"name": "Kyle Williams",
+"seasons": {
+"2012": {
+"KR": {
+"club": "SF",
+"games": 11,
+"group": "KR",
+"n": 13,
+"position": "WR",
+"raw": 27.153846153846153,
+"return_yards": 353,
+"returns": 13,
+"share_above": 0.22916666666666666,
+"shrunk": 26.31806513717311,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+353,
+353.0
+],
+"returns": [
+13,
+13.0
+]
+}
+}
+}
+}
+},
+"00-0027610": {
+"name": "Phillip Adams",
+"seasons": {
+"2012": {
+"PR": {
+"club": "LV",
+"games": 14,
+"group": "PR",
+"n": 25,
+"position": "DB",
+"raw": 5.76,
+"return_yards": 144,
+"returns": 25,
+"share_above": 0.9743589743589743,
+"shrunk": 6.929539217102412,
+"tier": "Replacement-Level",
+"verification": "Corrected",
+"verification_detail": {
+"return_yards": [
+139,
+144.0
+],
+"returns": [
+25,
+25.0
+]
+}
+}
+}
+}
+},
+"00-0027618": {
+"name": "Brandon Banks",
+"seasons": {
+"2010": {
+"KR": {
+"club": "WAS",
+"games": 13,
+"group": "KR",
+"n": 46,
+"position": "WR",
+"raw": 25.108695652173914,
+"return_yards": 1155,
+"returns": 46,
+"share_above": 0.19642857142857142,
+"shrunk": 24.842925251149328,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1155,
+1155.0
+],
+"returns": [
+46,
+46.0
+]
+}
+},
+"PR": {
+"club": "WAS",
+"games": 13,
+"group": "PR",
+"n": 37,
+"position": "WR",
+"raw": 10.216216216216216,
+"return_yards": 378,
+"returns": 37,
+"share_above": 0.5116279069767442,
+"shrunk": 10.174698795180722,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+378,
+378.0
+],
+"returns": [
+37,
+37.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "WAS",
+"games": 16,
+"group": "KR",
+"n": 51,
+"position": "WR",
+"raw": 22.862745098039216,
+"return_yards": 1166,
+"returns": 51,
+"share_above": 0.7608695652173914,
+"shrunk": 23.200742344571605,
+"tier": "Below-Average",
+"verification": "Corrected",
+"verification_detail": {
+"return_yards": [
+1174,
+1166.0
+],
+"returns": [
+51,
+51.0
+]
+}
+},
+"PR": {
+"club": "WAS",
+"games": 16,
+"group": "PR",
+"n": 36,
+"position": "WR",
+"raw": 9.11111111111111,
+"return_yards": 328,
+"returns": 36,
+"share_above": 0.6666666666666666,
+"shrunk": 9.35205192994685,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+328,
+328.0
+],
+"returns": [
+36,
+36.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "WAS",
+"games": 12,
+"group": "KR",
+"n": 22,
+"position": "WR",
+"raw": 23.954545454545453,
+"return_yards": 527,
+"returns": 22,
+"share_above": 0.5208333333333334,
+"shrunk": 24.353609317343174,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+527,
+527.0
+],
+"returns": [
+22,
+22.0
+]
+}
+},
+"PR": {
+"club": "WAS",
+"games": 12,
+"group": "PR",
+"n": 26,
+"position": "WR",
+"raw": 6.846153846153846,
+"return_yards": 178,
+"returns": 26,
+"share_above": 0.8205128205128205,
+"shrunk": 7.68149646107179,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+178,
+178.0
+],
+"returns": [
+26,
+26.0
+]
+}
+}
+}
+}
+},
+"00-0027647": {
+"name": "Devin McCourty",
+"seasons": {
+"2012": {
+"KR": {
+"club": "NE",
+"games": 16,
+"group": "KR",
+"n": 27,
+"position": "FS",
+"raw": 24.22222222222222,
+"return_yards": 654,
+"returns": 27,
+"share_above": 0.4791666666666667,
+"shrunk": 24.49501346364815,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+654,
+654.0
+],
+"returns": [
+27,
+27.0
+]
+}
+}
+}
+}
+},
+"00-0027651": {
+"name": "Dexter McCluster",
+"seasons": {
+"2010": {
+"KR": {
+"club": "KC",
+"games": 11,
+"group": "KR",
+"n": 26,
+"position": "WR",
+"raw": 20.26923076923077,
+"return_yards": 527,
+"returns": 26,
+"share_above": 0.8392857142857143,
+"shrunk": 21.200105946232288,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+527,
+527.0
+],
+"returns": [
+26,
+26.0
+]
+}
+},
+"PR": {
+"club": "KC",
+"games": 11,
+"group": "PR",
+"n": 13,
+"position": "WR",
+"raw": 15.538461538461538,
+"return_yards": 202,
+"returns": 13,
+"share_above": 0.06976744186046512,
+"shrunk": 13.139601885804085,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+202,
+202.0
+],
+"returns": [
+13,
+13.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "KC",
+"games": 16,
+"group": "KR",
+"n": 25,
+"position": "WR",
+"raw": 22.28,
+"return_yards": 557,
+"returns": 25,
+"share_above": 0.782608695652174,
+"shrunk": 23.035579514824796,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+557,
+557.0
+],
+"returns": [
+25,
+25.0
+]
+}
+}
+}
+}
+},
+"00-0027654": {
+"name": "Arrelious Benn",
+"seasons": {
+"2012": {
+"KR": {
+"club": "TB",
+"games": 8,
+"group": "KR",
+"n": 13,
+"position": "WR",
+"raw": 23.53846153846154,
+"return_yards": 306,
+"returns": 13,
+"share_above": 0.5416666666666666,
+"shrunk": 24.274586876303548,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+306,
+306.0
+],
+"returns": [
+13,
+13.0
+]
+}
+}
+}
+}
+},
+"00-0027660": {
+"name": "Javier Arenas",
+"seasons": {
+"2010": {
+"KR": {
+"club": "KC",
+"games": 16,
+"group": "KR",
+"n": 24,
+"position": "CB",
+"raw": 21.208333333333332,
+"return_yards": 509,
+"returns": 24,
+"share_above": 0.75,
+"shrunk": 21.91775923718713,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+509,
+509.0
+],
+"returns": [
+24,
+24.0
+]
+}
+},
+"PR": {
+"club": "KC",
+"games": 16,
+"group": "PR",
+"n": 39,
+"position": "CB",
+"raw": 8.256410256410257,
+"return_yards": 322,
+"returns": 39,
+"share_above": 0.627906976744186,
+"shrunk": 8.616547823948858,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+322,
+322.0
+],
+"returns": [
+39,
+39.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "KC",
+"games": 15,
+"group": "KR",
+"n": 17,
+"position": "CB",
+"raw": 21.294117647058822,
+"return_yards": 362,
+"returns": 17,
+"share_above": 0.8913043478260869,
+"shrunk": 22.638714185883995,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+362,
+362.0
+],
+"returns": [
+17,
+17.0
+]
+}
+},
+"PR": {
+"club": "KC",
+"games": 15,
+"group": "PR",
+"n": 32,
+"position": "CB",
+"raw": 12.8125,
+"return_yards": 410,
+"returns": 32,
+"share_above": 0.1111111111111111,
+"shrunk": 12.195104494703694,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+410,
+410.0
+],
+"returns": [
+32,
+32.0
+]
+}
+}
+},
+"2012": {
+"PR": {
+"club": "KC",
+"games": 16,
+"group": "PR",
+"n": 34,
+"position": "CB",
+"raw": 8.911764705882353,
+"return_yards": 303,
+"returns": 34,
+"share_above": 0.5641025641025641,
+"shrunk": 9.125769831786009,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+303,
+303.0
+],
+"returns": [
+34,
+34.0
+]
+}
+}
+}
+}
+},
+"00-0027685": {
+"name": "Emmanuel Sanders",
+"seasons": {
+"2010": {
+"KR": {
+"club": "PIT",
+"games": 13,
+"group": "KR",
+"n": 25,
+"position": "WR",
+"raw": 25.12,
+"return_yards": 628,
+"returns": 25,
+"share_above": 0.25,
+"shrunk": 24.691537544696068,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+628,
+628.0
+],
+"returns": [
+25,
+25.0
+]
+}
+}
+}
+}
+},
+"00-0027687": {
+"name": "Jordan Shipley",
+"seasons": {
+"2012": {
+"PR": {
+"club": "JAX",
+"games": 7,
+"group": "PR",
+"n": 13,
+"position": "WR",
+"raw": 6.538461538461538,
+"return_yards": 85,
+"returns": 13,
+"share_above": 0.7948717948717948,
+"shrunk": 7.979733591242801,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+85,
+85.0
+],
+"returns": [
+13,
+13.0
+]
+}
+}
+}
+}
+},
+"00-0027690": {
+"name": "Eric Decker",
+"seasons": {
+"2010": {
+"KR": {
+"club": "DEN",
+"games": 10,
+"group": "KR",
+"n": 22,
+"position": "WR",
+"raw": 25.272727272727273,
+"return_yards": 556,
+"returns": 22,
+"share_above": 0.21428571428571427,
+"shrunk": 24.756369189511325,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+556,
+556.0
+],
+"returns": [
+22,
+22.0
+]
+}
+}
+}
+}
+},
+"00-0027691": {
+"name": "Andre Roberts",
+"seasons": {
+"2010": {
+"KR": {
+"club": "ARI",
+"games": 14,
+"group": "KR",
+"n": 14,
+"position": "WR",
+"raw": 23.285714285714285,
+"return_yards": 326,
+"returns": 14,
+"share_above": 0.4642857142857143,
+"shrunk": 23.425158919348434,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+326,
+326.0
+],
+"returns": [
+14,
+14.0
+]
+}
+},
+"PR": {
+"club": "ARI",
+"games": 14,
+"group": "PR",
+"n": 35,
+"position": "WR",
+"raw": 7.514285714285714,
+"return_yards": 263,
+"returns": 35,
+"share_above": 0.7674418604651163,
+"shrunk": 8.071352074966532,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+263,
+263.0
+],
+"returns": [
+35,
+35.0
+]
+}
+}
+}
+}
+},
+"00-0027692": {
+"name": "Armanti Edwards",
+"seasons": {
+"2011": {
+"PR": {
+"club": "CAR",
+"games": 15,
+"group": "PR",
+"n": 32,
+"position": "WR",
+"raw": 5.5,
+"return_yards": 176,
+"returns": 32,
+"share_above": 0.9166666666666666,
+"shrunk": 6.623675923275122,
+"tier": "Replacement-Level",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+176,
+176.0
+],
+"returns": [
+32,
+32.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "CAR",
+"games": 10,
+"group": "KR",
+"n": 12,
+"position": "WR",
+"raw": 21.666666666666668,
+"return_yards": 260,
+"returns": 12,
+"share_above": 0.7916666666666666,
+"shrunk": 23.287068097953707,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+260,
+260.0
+],
+"returns": [
+12,
+12.0
+]
+}
+}
+}
+}
+},
+"00-0027700": {
+"name": "Mardy Gilyard",
+"seasons": {
+"2010": {
+"KR": {
+"club": "LA",
+"games": 7,
+"group": "KR",
+"n": 16,
+"position": "WR",
+"raw": 22.25,
+"return_yards": 356,
+"returns": 16,
+"share_above": 0.5357142857142857,
+"shrunk": 22.777069771706245,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+356,
+356.0
+],
+"returns": [
+16,
+16.0
+]
+}
+}
+}
+}
+},
+"00-0027709": {
+"name": "Jacoby Ford",
+"seasons": {
+"2010": {
+"KR": {
+"club": "LV",
+"games": 15,
+"group": "KR",
+"n": 53,
+"position": "WR",
+"raw": 24.150943396226417,
+"return_yards": 1280,
+"returns": 53,
+"share_above": 0.3392857142857143,
+"shrunk": 24.066727207370832,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1280,
+1280.0
+],
+"returns": [
+53,
+53.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "LV",
+"games": 8,
+"group": "KR",
+"n": 11,
+"position": "WR",
+"raw": 31.0,
+"return_yards": 341,
+"returns": 11,
+"share_above": 0.043478260869565216,
+"shrunk": 28.10691823899371,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+341,
+341.0
+],
+"returns": [
+11,
+11.0
+]
+}
+}
+}
+}
+},
+"00-0027712": {
+"name": "Joe McKnight",
+"seasons": {
+"2011": {
+"KR": {
+"club": "NYJ",
+"games": 15,
+"group": "KR",
+"n": 34,
+"position": "RB",
+"raw": 31.558823529411764,
+"return_yards": 1073,
+"returns": 34,
+"share_above": 0.0,
+"shrunk": 30.051029159519725,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1073,
+1073.0
+],
+"returns": [
+34,
+34.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "NYJ",
+"games": 14,
+"group": "KR",
+"n": 39,
+"position": "RB",
+"raw": 27.487179487179485,
+"return_yards": 1072,
+"returns": 39,
+"share_above": 0.10416666666666667,
+"shrunk": 27.02684690112207,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1072,
+1072.0
+],
+"returns": [
+39,
+39.0
+]
+}
+}
+}
+}
+},
+"00-0027726": {
+"name": "Akwasi Owusu-Ansah",
+"seasons": {
+"2010": {
+"KR": {
+"club": "DAL",
+"games": 7,
+"group": "KR",
+"n": 25,
+"position": "WR",
+"raw": 21.72,
+"return_yards": 543,
+"returns": 25,
+"share_above": 0.6428571428571429,
+"shrunk": 22.26296611612464,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+543,
+543.0
+],
+"returns": [
+25,
+25.0
+]
+}
+}
+}
+}
+},
+"00-0027735": {
+"name": "Dominique Franks",
+"seasons": {
+"2012": {
+"PR": {
+"club": "ATL",
+"games": 16,
+"group": "PR",
+"n": 21,
+"position": "CB",
+"raw": 7.761904761904762,
+"return_yards": 163,
+"returns": 21,
+"share_above": 0.717948717948718,
+"shrunk": 8.436576535438208,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+163,
+163.0
+],
+"returns": [
+21,
+21.0
+]
+}
+}
+}
+}
+},
+"00-0027743": {
+"name": "Sherrick McManis",
+"seasons": {
+"2011": {
+"KR": {
+"club": "HOU",
+"games": 5,
+"group": "KR",
+"n": 10,
+"position": "DB",
+"raw": 20.5,
+"return_yards": 205,
+"returns": 10,
+"share_above": 0.8695652173913043,
+"shrunk": 22.712264150943394,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+205,
+205.0
+],
+"returns": [
+10,
+10.0
+]
+}
+}
+}
+}
+},
+"00-0027744": {
+"name": "Nolan Carroll",
+"seasons": {
+"2010": {
+"KR": {
+"club": "MIA",
+"games": 11,
+"group": "KR",
+"n": 27,
+"position": "CB",
+"raw": 24.25925925925926,
+"return_yards": 655,
+"returns": 27,
+"share_above": 0.32142857142857145,
+"shrunk": 24.08658956930709,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+655,
+655.0
+],
+"returns": [
+27,
+27.0
+]
+}
+}
+}
+}
+},
+"00-0027755": {
+"name": "David Reed",
+"seasons": {
+"2010": {
+"KR": {
+"club": "BAL",
+"games": 10,
+"group": "KR",
+"n": 21,
+"position": "WR",
+"raw": 29.333333333333332,
+"return_yards": 616,
+"returns": 21,
+"share_above": 0.03571428571428571,
+"shrunk": 27.490445614979432,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+616,
+616.0
+],
+"returns": [
+21,
+21.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "BAL",
+"games": 9,
+"group": "KR",
+"n": 18,
+"position": "WR",
+"raw": 29.666666666666668,
+"return_yards": 534,
+"returns": 18,
+"share_above": 0.06521739130434782,
+"shrunk": 27.973045822102424,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+534,
+534.0
+],
+"returns": [
+18,
+18.0
+]
+}
+}
+}
+}
+},
+"00-0027779": {
+"name": "Deji Karim",
+"seasons": {
+"2010": {
+"KR": {
+"club": "JAX",
+"games": 11,
+"group": "KR",
+"n": 50,
+"position": "RB",
+"raw": 24.96,
+"return_yards": 1248,
+"returns": 50,
+"share_above": 0.23214285714285715,
+"shrunk": 24.73673023440604,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1248,
+1248.0
+],
+"returns": [
+50,
+50.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "JAX",
+"games": 12,
+"group": "KR",
+"n": 27,
+"position": "RB",
+"raw": 24.14814814814815,
+"return_yards": 652,
+"returns": 27,
+"share_above": 0.5869565217391305,
+"shrunk": 24.357980622131564,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+652,
+652.0
+],
+"returns": [
+27,
+27.0
+]
+}
+}
+}
+}
+},
+"00-0027793": {
+"name": "Antonio Brown",
+"seasons": {
+"2010": {
+"KR": {
+"club": "PIT",
+"games": 9,
+"group": "KR",
+"n": 17,
+"position": "WR",
+"raw": 23.352941176470587,
+"return_yards": 397,
+"returns": 17,
+"share_above": 0.42857142857142855,
+"shrunk": 23.451993113494904,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+397,
+397.0
+],
+"returns": [
+17,
+17.0
+]
+}
+},
+"PR": {
+"club": "PIT",
+"games": 9,
+"group": "PR",
+"n": 19,
+"position": "WR",
+"raw": 5.7894736842105265,
+"return_yards": 110,
+"returns": 19,
+"share_above": 0.9302325581395349,
+"shrunk": 7.248649771499792,
+"tier": "Replacement-Level",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+110,
+110.0
+],
+"returns": [
+19,
+19.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "PIT",
+"games": 16,
+"group": "KR",
+"n": 27,
+"position": "WR",
+"raw": 27.333333333333332,
+"return_yards": 738,
+"returns": 27,
+"share_above": 0.2391304347826087,
+"shrunk": 26.68230494645589,
+"tier": "Plus",
+"verification": "Corrected",
+"verification_detail": {
+"return_yards": [
+737,
+738.0
+],
+"returns": [
+27,
+27.0
+]
+}
+},
+"PR": {
+"club": "PIT",
+"games": 16,
+"group": "PR",
+"n": 30,
+"position": "WR",
+"raw": 11.266666666666667,
+"return_yards": 338,
+"returns": 30,
+"share_above": 0.2777777777777778,
+"shrunk": 11.004859719438878,
+"tier": "Plus",
+"verification": "Corrected",
+"verification_detail": {
+"return_yards": [
+325,
+338.0
+],
+"returns": [
+30,
+30.0
+]
+}
+}
+},
+"2012": {
+"PR": {
+"club": "PIT",
+"games": 13,
+"group": "PR",
+"n": 27,
+"position": "WR",
+"raw": 6.777777777777778,
+"return_yards": 183,
+"returns": 27,
+"share_above": 0.8461538461538461,
+"shrunk": 7.609023583745525,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+183,
+183.0
+],
+"returns": [
+27,
+27.0
+]
+}
+}
+}
+}
+},
+"00-0027798": {
+"name": "Jorrick Calvin",
+"seasons": {
+"2010": {
+"KR": {
+"club": "PHI",
+"games": 11,
+"group": "KR",
+"n": 32,
+"position": "DB",
+"raw": 21.34375,
+"return_yards": 683,
+"returns": 32,
+"share_above": 0.7678571428571429,
+"shrunk": 21.885805096770532,
+"tier": "Below-Average",
+"verification": "Corrected",
+"verification_detail": {
+"return_yards": [
+692,
+683.0
+],
+"returns": [
+32,
+32.0
+]
+}
+},
+"PR": {
+"club": "PHI",
+"games": 11,
+"group": "PR",
+"n": 12,
+"position": "DB",
+"raw": 10.416666666666666,
+"return_yards": 125,
+"returns": 12,
+"share_above": 0.4883720930232558,
+"shrunk": 10.236856516977,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+125,
+125.0
+],
+"returns": [
+12,
+12.0
+]
+}
+}
+}
+}
+},
+"00-0027816": {
+"name": "Marc Mariani",
+"seasons": {
+"2010": {
+"KR": {
+"club": "TEN",
+"games": 16,
+"group": "KR",
+"n": 60,
+"position": "WR",
+"raw": 25.5,
+"return_yards": 1530,
+"returns": 60,
+"share_above": 0.17857142857142858,
+"shrunk": 25.23148305806232,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1530,
+1530.0
+],
+"returns": [
+60,
+60.0
+]
+}
+},
+"PR": {
+"club": "TEN",
+"games": 16,
+"group": "PR",
+"n": 27,
+"position": "WR",
+"raw": 12.185185185185185,
+"return_yards": 329,
+"returns": 27,
+"share_above": 0.20930232558139536,
+"shrunk": 11.600293064148484,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+329,
+329.0
+],
+"returns": [
+27,
+27.0
+]
+}
+}
+},
+"2011": {
+"KR": {
+"club": "TEN",
+"games": 16,
+"group": "KR",
+"n": 32,
+"position": "WR",
+"raw": 25.5,
+"return_yards": 816,
+"returns": 32,
+"share_above": 0.3695652173913043,
+"shrunk": 25.362982929020664,
+"tier": "Average",
+"verification": "Corrected",
+"verification_detail": {
+"return_yards": [
+748,
+816.0
+],
+"returns": [
+32,
+32.0
+]
+}
+},
+"PR": {
+"club": "TEN",
+"games": 16,
+"group": "PR",
+"n": 46,
+"position": "WR",
+"raw": 10.652173913043478,
+"return_yards": 490,
+"returns": 46,
+"share_above": 0.3611111111111111,
+"shrunk": 10.574899799599198,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+490,
+490.0
+],
+"returns": [
+46,
+46.0
+]
+}
+}
+}
+}
+},
+"00-0027861": {
+"name": "C.J. Spiller",
+"seasons": {
+"2010": {
+"KR": {
+"club": "BUF",
+"games": 14,
+"group": "KR",
+"n": 44,
+"position": "RB",
+"raw": 23.045454545454547,
+"return_yards": 1014,
+"returns": 44,
+"share_above": 0.5,
+"shrunk": 23.151922482673378,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1014,
+1014.0
+],
+"returns": [
+44,
+44.0
+]
+}
+},
+"PR": {
+"club": "BUF",
+"games": 14,
+"group": "PR",
+"n": 12,
+"position": "RB",
+"raw": 14.583333333333334,
+"return_yards": 175,
+"returns": 12,
+"share_above": 0.11627906976744186,
+"shrunk": 12.509583789704271,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+175,
+175.0
+],
+"returns": [
+12,
+12.0
+]
+}
+}
+},
+"2011": {
+"PR": {
+"club": "BUF",
+"games": 16,
+"group": "PR",
+"n": 13,
+"position": "RB",
+"raw": 9.76923076923077,
+"return_yards": 127,
+"returns": 13,
+"share_above": 0.5277777777777778,
+"shrunk": 9.964973425111092,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+127,
+127.0
+],
+"returns": [
+13,
+13.0
+]
+}
+}
+}
+}
+},
+"00-0027874": {
+"name": "Demaryius Thomas",
+"seasons": {
+"2010": {
+"KR": {
+"club": "DEN",
+"games": 10,
+"group": "KR",
+"n": 16,
+"position": "WR",
+"raw": 24.875,
+"return_yards": 398,
+"returns": 16,
+"share_above": 0.2857142857142857,
+"shrunk": 24.39245438709086,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+398,
+398.0
+],
+"returns": [
+16,
+16.0
+]
+}
+}
+}
+}
+},
+"00-0027879": {
+"name": "Kyle Wilson",
+"seasons": {
+"2010": {
+"PR": {
+"club": "NYJ",
+"games": 12,
+"group": "PR",
+"n": 15,
+"position": "DB",
+"raw": 7.4,
+"return_yards": 111,
+"returns": 15,
+"share_above": 0.6511627906976745,
+"shrunk": 8.44843373493976,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+111,
+111.0
+],
+"returns": [
+15,
+15.0
+]
+}
+}
+}
+}
+},
+"00-0027891": {
+"name": "Golden Tate",
+"seasons": {
+"2010": {
+"PR": {
+"club": "SEA",
+"games": 11,
+"group": "PR",
+"n": 15,
+"position": "WR",
+"raw": 12.8,
+"return_yards": 192,
+"returns": 15,
+"share_above": 0.18604651162790697,
+"shrunk": 11.688433734939759,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+192,
+192.0
+],
+"returns": [
+15,
+15.0
+]
+}
+}
+}
+}
+},
+"00-0027902": {
+"name": "Dez Bryant",
+"seasons": {
+"2010": {
+"KR": {
+"club": "DAL",
+"games": 12,
+"group": "KR",
+"n": 12,
+"position": "WR",
+"raw": 24.416666666666668,
+"return_yards": 293,
+"returns": 12,
+"share_above": 0.35714285714285715,
+"shrunk": 24.054718821107382,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+293,
+293.0
+],
+"returns": [
+12,
+12.0
+]
+}
+},
+"PR": {
+"club": "DAL",
+"games": 12,
+"group": "PR",
+"n": 15,
+"position": "WR",
+"raw": 14.333333333333334,
+"return_yards": 215,
+"returns": 15,
+"share_above": 0.09302325581395349,
+"shrunk": 12.608433734939759,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+215,
+215.0
+],
+"returns": [
+15,
+15.0
+]
+}
+}
+},
+"2011": {
+"PR": {
+"club": "DAL",
+"games": 15,
+"group": "PR",
+"n": 15,
+"position": "WR",
+"raw": 6.866666666666666,
+"return_yards": 103,
+"returns": 15,
+"share_above": 0.8055555555555556,
+"shrunk": 8.207775551102204,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+103,
+103.0
+],
+"returns": [
+15,
+15.0
+]
+}
+}
+},
+"2012": {
+"PR": {
+"club": "DAL",
+"games": 16,
+"group": "PR",
+"n": 12,
+"position": "WR",
+"raw": 5.5,
+"return_yards": 66,
+"returns": 12,
+"share_above": 0.8974358974358975,
+"shrunk": 7.478812390844746,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+66,
+66.0
+],
+"returns": [
+12,
+12.0
+]
+}
+}
+}
+}
+},
+"00-0027943": {
+"name": "Patrick Peterson",
+"seasons": {
+"2011": {
+"PR": {
+"club": "ARI",
+"games": 16,
+"group": "PR",
+"n": 44,
+"position": "CB",
+"raw": 15.886363636363637,
+"return_yards": 699,
+"returns": 44,
+"share_above": 0.0,
+"shrunk": 14.83693312551028,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+699,
+699.0
+],
+"returns": [
+44,
+44.0
+]
+}
+}
+},
+"2012": {
+"PR": {
+"club": "ARI",
+"games": 16,
+"group": "PR",
+"n": 51,
+"position": "CB",
+"raw": 8.352941176470589,
+"return_yards": 426,
+"returns": 51,
+"share_above": 0.6153846153846154,
+"shrunk": 8.598915944239089,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+426,
+426.0
+],
+"returns": [
+51,
+51.0
+]
+}
+}
+}
+}
+},
+"00-0028002": {
+"name": "Randall Cobb",
+"seasons": {
+"2011": {
+"KR": {
+"club": "GB",
+"games": 15,
+"group": "KR",
+"n": 34,
+"position": "WR",
+"raw": 27.676470588235293,
+"return_yards": 941,
+"returns": 34,
+"share_above": 0.10869565217391304,
+"shrunk": 27.051029159519725,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+941,
+941.0
+],
+"returns": [
+34,
+34.0
+]
+}
+},
+"PR": {
+"club": "GB",
+"games": 15,
+"group": "PR",
+"n": 26,
+"position": "WR",
+"raw": 11.346153846153847,
+"return_yards": 295,
+"returns": 26,
+"share_above": 0.25,
+"shrunk": 11.033177466043197,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+295,
+295.0
+],
+"returns": [
+26,
+26.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "GB",
+"games": 15,
+"group": "KR",
+"n": 38,
+"position": "WR",
+"raw": 25.36842105263158,
+"return_yards": 964,
+"returns": 38,
+"share_above": 0.4166666666666667,
+"shrunk": 25.339906211562113,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+964,
+964.0
+],
+"returns": [
+38,
+38.0
+]
+}
+},
+"PR": {
+"club": "GB",
+"games": 15,
+"group": "PR",
+"n": 31,
+"position": "WR",
+"raw": 9.419354838709678,
+"return_yards": 292,
+"returns": 31,
+"share_above": 0.4358974358974359,
+"shrunk": 9.525216404843523,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+292,
+292.0
+],
+"returns": [
+31,
+31.0
+]
+}
+}
+}
+}
+},
+"00-0028016": {
+"name": "Austin Pettis",
+"seasons": {
+"2011": {
+"PR": {
+"club": "LA",
+"games": 12,
+"group": "PR",
+"n": 15,
+"position": "WR",
+"raw": 9.266666666666667,
+"return_yards": 139,
+"returns": 15,
+"share_above": 0.5833333333333334,
+"shrunk": 9.647775551102205,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+139,
+139.0
+],
+"returns": [
+15,
+15.0
+]
+}
+}
+},
+"2012": {
+"PR": {
+"club": "LA",
+"games": 13,
+"group": "PR",
+"n": 11,
+"position": "WR",
+"raw": 7.0,
+"return_yards": 77,
+"returns": 11,
+"share_above": 0.7435897435897436,
+"shrunk": 8.358755838027829,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+77,
+77.0
+],
+"returns": [
+11,
+11.0
+]
+}
+}
+}
+}
+},
+"00-0028049": {
+"name": "Clyde Gates",
+"seasons": {
+"2011": {
+"KR": {
+"club": "MIA",
+"games": 13,
+"group": "KR",
+"n": 34,
+"position": "WR",
+"raw": 24.794117647058822,
+"return_yards": 843,
+"returns": 34,
+"share_above": 0.5,
+"shrunk": 24.823756432247,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+843,
+843.0
+],
+"returns": [
+34,
+34.0
+]
+}
+}
+}
+}
+},
+"00-0028052": {
+"name": "Cecil Shorts",
+"seasons": {
+"2011": {
+"PR": {
+"club": "JAX",
+"games": 10,
+"group": "PR",
+"n": 12,
+"position": "WR",
+"raw": 4.166666666666667,
+"return_yards": 50,
+"returns": 12,
+"share_above": 0.8888888888888888,
+"shrunk": 6.917926762616141,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+50,
+50.0
+],
+"returns": [
+12,
+12.0
+]
+}
+}
+}
+}
+},
+"00-0028070": {
+"name": "Kealoha Pilares",
+"seasons": {
+"2011": {
+"KR": {
+"club": "CAR",
+"games": 11,
+"group": "KR",
+"n": 23,
+"position": "WR",
+"raw": 25.652173913043477,
+"return_yards": 590,
+"returns": 23,
+"share_above": 0.34782608695652173,
+"shrunk": 25.431675242995997,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+590,
+590.0
+],
+"returns": [
+23,
+23.0
+]
+}
+}
+}
+}
+},
+"00-0028083": {
+"name": "Jacquizz Rodgers",
+"seasons": {
+"2012": {
+"KR": {
+"club": "ATL",
+"games": 16,
+"group": "KR",
+"n": 23,
+"position": "RB",
+"raw": 25.73913043478261,
+"return_yards": 592,
+"returns": 23,
+"share_above": 0.3958333333333333,
+"shrunk": 25.585318125908532,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+592,
+592.0
+],
+"returns": [
+23,
+23.0
+]
+}
+}
+}
+}
+},
+"00-0028086": {
+"name": "Denarius Moore",
+"seasons": {
+"2011": {
+"PR": {
+"club": "LV",
+"games": 13,
+"group": "PR",
+"n": 25,
+"position": "WR",
+"raw": 8.64,
+"return_yards": 216,
+"returns": 25,
+"share_above": 0.6944444444444444,
+"shrunk": 9.091268250787289,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+216,
+216.0
+],
+"returns": [
+25,
+25.0
+]
+}
+}
+}
+}
+},
+"00-0028087": {
+"name": "Dion Lewis",
+"seasons": {
+"2011": {
+"KR": {
+"club": "PHI",
+"games": 13,
+"group": "KR",
+"n": 31,
+"position": "RB",
+"raw": 21.580645161290324,
+"return_yards": 669,
+"returns": 31,
+"share_above": 0.9347826086956522,
+"shrunk": 22.39622641509434,
+"tier": "Replacement-Level",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+669,
+669.0
+],
+"returns": [
+31,
+31.0
+]
+}
+}
+}
+}
+},
+"00-0028091": {
+"name": "Jeremy Kerley",
+"seasons": {
+"2011": {
+"PR": {
+"club": "NYJ",
+"games": 14,
+"group": "PR",
+"n": 29,
+"position": "WR",
+"raw": 10.931034482758621,
+"return_yards": 317,
+"returns": 29,
+"share_above": 0.3055555555555556,
+"shrunk": 10.748574071219362,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+317,
+317.0
+],
+"returns": [
+29,
+29.0
+]
+}
+}
+},
+"2012": {
+"PR": {
+"club": "NYJ",
+"games": 16,
+"group": "PR",
+"n": 19,
+"position": "WR",
+"raw": 10.947368421052632,
+"return_yards": 208,
+"returns": 19,
+"share_above": 0.3076923076923077,
+"shrunk": 10.57013353788222,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+208,
+208.0
+],
+"returns": [
+19,
+19.0
+]
+}
+}
+}
+}
+},
+"00-0028093": {
+"name": "Niles Paul",
+"seasons": {
+"2012": {
+"KR": {
+"club": "WAS",
+"games": 13,
+"group": "KR",
+"n": 13,
+"position": "TE",
+"raw": 21.76923076923077,
+"return_yards": 283,
+"returns": 13,
+"share_above": 0.8125,
+"shrunk": 23.274586876303548,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+283,
+283.0
+],
+"returns": [
+13,
+13.0
+]
+}
+}
+}
+}
+},
+"00-0028114": {
+"name": "Dwayne Harris",
+"seasons": {
+"2011": {
+"PR": {
+"club": "DAL",
+"games": 7,
+"group": "PR",
+"n": 15,
+"position": "WR",
+"raw": 5.333333333333333,
+"return_yards": 80,
+"returns": 15,
+"share_above": 0.8611111111111112,
+"shrunk": 7.287775551102204,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+80,
+80.0
+],
+"returns": [
+15,
+15.0
+]
+}
+}
+},
+"2012": {
+"KR": {
+"club": "DAL",
+"games": 15,
+"group": "KR",
+"n": 11,
+"position": "WR",
+"raw": 19.09090909090909,
+"return_yards": 210,
+"returns": 11,
+"share_above": 0.9375,
+"shrunk": 22.01502372166579,
+"tier": "Replacement-Level",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+210,
+210.0
+],
+"returns": [
+11,
+11.0
+]
+}
+},
+"PR": {
+"club": "DAL",
+"games": 15,
+"group": "PR",
+"n": 22,
+"position": "WR",
+"raw": 16.09090909090909,
+"return_yards": 354,
+"returns": 22,
+"share_above": 0.02564102564102564,
+"shrunk": 14.141683518705763,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+354,
+354.0
+],
+"returns": [
+22,
+22.0
+]
+}
+}
+}
+}
+},
+"00-0028144": {
+"name": "Justin Rogers",
+"seasons": {
+"2011": {
+"KR": {
+"club": "BUF",
+"games": 9,
+"group": "KR",
+"n": 13,
+"position": "DB",
+"raw": 28.692307692307693,
+"return_yards": 373,
+"returns": 13,
+"share_above": 0.08695652173913043,
+"shrunk": 27.054142739950777,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+373,
+373.0
+],
+"returns": [
+13,
+13.0
+]
+}
+}
+}
+}
+},
+"00-0028159": {
+"name": "Da'Rel Scott",
+"seasons": {
+"2011": {
+"KR": {
+"club": "NYG",
+"games": 7,
+"group": "KR",
+"n": 14,
+"position": "RB",
+"raw": 24.357142857142858,
+"return_yards": 341,
+"returns": 14,
+"share_above": 0.5434782608695652,
+"shrunk": 24.593553459119494,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+341,
+341.0
+],
+"returns": [
+14,
+14.0
+]
+}
+}
+}
+}
+},
+"00-0028202": {
+"name": "Shaun Draughn",
+"seasons": {
+"2012": {
+"KR": {
+"club": "KC",
+"games": 16,
+"group": "KR",
+"n": 23,
+"position": "RB",
+"raw": 23.347826086956523,
+"return_yards": 537,
+"returns": 23,
+"share_above": 0.6875,
+"shrunk": 23.918651459241865,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+537,
+537.0
+],
+"returns": [
+23,
+23.0
+]
+}
+}
+}
+}
+},
+"00-0028409": {
+"name": "DuJuan Harris",
+"seasons": {
+"2011": {
+"KR": {
+"club": "JAX",
+"games": 5,
+"group": "KR",
+"n": 14,
+"position": "RB",
+"raw": 22.0,
+"return_yards": 308,
+"returns": 14,
+"share_above": 0.7391304347826086,
+"shrunk": 23.218553459119494,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+308,
+308.0
+],
+"returns": [
+14,
+14.0
+]
+}
+}
+}
+}
+},
+"00-0028650": {
+"name": "Joe Young",
+"seasons": {
+"2011": {
+"KR": {
+"club": "IND",
+"games": 16,
+"group": "KR",
+"n": 31,
+"position": "S",
+"raw": 18.64516129032258,
+"return_yards": 578,
+"returns": 31,
+"share_above": 0.9782608695652174,
+"shrunk": 20.17671421997239,
+"tier": "Replacement-Level",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+578,
+578.0
+],
+"returns": [
+31,
+31.0
+]
+}
+}
+}
+}
+},
+"00-0028736": {
+"name": "William Powell",
+"seasons": {
+"2012": {
+"KR": {
+"club": "ARI",
+"games": 12,
+"group": "KR",
+"n": 21,
+"position": "RB",
+"raw": 24.142857142857142,
+"return_yards": 507,
+"returns": 21,
+"share_above": 0.5,
+"shrunk": 24.49404832758005,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+507,
+507.0
+],
+"returns": [
+21,
+21.0
+]
+}
+}
+}
+}
+},
+"00-0029004": {
+"name": "Lance Dunbar",
+"seasons": {
+"2012": {
+"KR": {
+"club": "DAL",
+"games": 9,
+"group": "KR",
+"n": 12,
+"position": "RB",
+"raw": 21.75,
+"return_yards": 261,
+"returns": 12,
+"share_above": 0.7708333333333334,
+"shrunk": 23.332522643408254,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+261,
+261.0
+],
+"returns": [
+12,
+12.0
+]
+}
+}
+}
+}
+},
+"00-0029140": {
+"name": "Chris Rainey",
+"seasons": {
+"2012": {
+"KR": {
+"club": "PIT",
+"games": 16,
+"group": "KR",
+"n": 39,
+"position": "RB",
+"raw": 26.53846153846154,
+"return_yards": 1035,
+"returns": 39,
+"share_above": 0.25,
+"shrunk": 26.271744860305745,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1035,
+1035.0
+],
+"returns": [
+39,
+39.0
+]
+}
+}
+}
+}
+},
+"00-0029205": {
+"name": "Travaris Cadet",
+"seasons": {
+"2012": {
+"KR": {
+"club": "NO",
+"games": 12,
+"group": "KR",
+"n": 26,
+"position": "RB",
+"raw": 26.53846153846154,
+"return_yards": 690,
+"returns": 26,
+"share_above": 0.2916666666666667,
+"shrunk": 26.175430504305044,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+690,
+690.0
+],
+"returns": [
+26,
+26.0
+]
+}
+}
+}
+}
+},
+"00-0029251": {
+"name": "David Wilson",
+"seasons": {
+"2012": {
+"KR": {
+"club": "NYG",
+"games": 16,
+"group": "KR",
+"n": 57,
+"position": "RB",
+"raw": 26.894736842105264,
+"return_yards": 1533,
+"returns": 57,
+"share_above": 0.20833333333333334,
+"shrunk": 26.64649997246241,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+1533,
+1533.0
+],
+"returns": [
+57,
+57.0
+]
+}
+}
+}
+}
+},
+"00-0029260": {
+"name": "LaMichael James",
+"seasons": {
+"2012": {
+"KR": {
+"club": "SF",
+"games": 4,
+"group": "KR",
+"n": 14,
+"position": "RB",
+"raw": 29.785714285714285,
+"return_yards": 417,
+"returns": 14,
+"share_above": 0.0625,
+"shrunk": 27.888145756457565,
+"tier": "Elite",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+417,
+417.0
+],
+"returns": [
+14,
+14.0
+]
+}
+}
+}
+}
+},
+"00-0029262": {
+"name": "Rueben Randle",
+"seasons": {
+"2012": {
+"PR": {
+"club": "NYG",
+"games": 13,
+"group": "PR",
+"n": 15,
+"position": "WR",
+"raw": 7.2,
+"return_yards": 108,
+"returns": 15,
+"share_above": 0.7692307692307693,
+"shrunk": 8.261354903943378,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+108,
+108.0
+],
+"returns": [
+15,
+15.0
+]
+}
+}
+}
+}
+},
+"00-0029271": {
+"name": "Joe Adams",
+"seasons": {
+"2012": {
+"PR": {
+"club": "CAR",
+"games": 9,
+"group": "PR",
+"n": 11,
+"position": "WR",
+"raw": 11.545454545454545,
+"return_yards": 127,
+"returns": 11,
+"share_above": 0.28205128205128205,
+"shrunk": 10.73970821898021,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+127,
+127.0
+],
+"returns": [
+11,
+11.0
+]
+}
+}
+}
+}
+},
+"00-0029388": {
+"name": "Deonte Thompson",
+"seasons": {
+"2012": {
+"KR": {
+"club": "BAL",
+"games": 6,
+"group": "KR",
+"n": 15,
+"position": "WR",
+"raw": 25.933333333333334,
+"return_yards": 389,
+"returns": 15,
+"share_above": 0.375,
+"shrunk": 25.652619926199264,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+389,
+389.0
+],
+"returns": [
+15,
+15.0
+]
+}
+}
+}
+}
+},
+"00-0029415": {
+"name": "Keshawn Martin",
+"seasons": {
+"2012": {
+"KR": {
+"club": "HOU",
+"games": 16,
+"group": "KR",
+"n": 31,
+"position": "WR",
+"raw": 23.903225806451612,
+"return_yards": 741,
+"returns": 31,
+"share_above": 0.6041666666666666,
+"shrunk": 24.22720727207272,
+"tier": "Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+741,
+741.0
+],
+"returns": [
+31,
+31.0
+]
+}
+},
+"PR": {
+"club": "HOU",
+"games": 16,
+"group": "PR",
+"n": 22,
+"position": "WR",
+"raw": 12.136363636363637,
+"return_yards": 267,
+"returns": 22,
+"share_above": 0.1794871794871795,
+"shrunk": 11.422933518705763,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+267,
+267.0
+],
+"returns": [
+22,
+22.0
+]
+}
+}
+}
+}
+},
+"00-0029416": {
+"name": "Brandon Boykin",
+"seasons": {
+"2012": {
+"KR": {
+"club": "PHI",
+"games": 15,
+"group": "KR",
+"n": 45,
+"position": "DB",
+"raw": 22.755555555555556,
+"return_yards": 1024,
+"returns": 45,
+"share_above": 0.875,
+"shrunk": 23.205736330090573,
+"tier": "Below-Average",
+"verification": "Corrected",
+"verification_detail": {
+"return_yards": [
+1037,
+1024.0
+],
+"returns": [
+45,
+45.0
+]
+}
+}
+}
+}
+},
+"00-0029435": {
+"name": "Damaris Johnson",
+"seasons": {
+"2012": {
+"PR": {
+"club": "PHI",
+"games": 14,
+"group": "PR",
+"n": 26,
+"position": "WR",
+"raw": 11.192307692307692,
+"return_yards": 291,
+"returns": 26,
+"share_above": 0.2564102564102564,
+"shrunk": 10.820385349960679,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+291,
+291.0
+],
+"returns": [
+26,
+26.0
+]
+}
+}
+}
+}
+},
+"00-0029563": {
+"name": "Omar Bolden",
+"seasons": {
+"2012": {
+"KR": {
+"club": "DEN",
+"games": 12,
+"group": "KR",
+"n": 14,
+"position": "S",
+"raw": 19.285714285714285,
+"return_yards": 270,
+"returns": 14,
+"share_above": 0.9583333333333334,
+"shrunk": 21.763145756457565,
+"tier": "Replacement-Level",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+270,
+270.0
+],
+"returns": [
+14,
+14.0
+]
+}
+}
+}
+}
+},
+"00-0029608": {
+"name": "T.Y. Hilton",
+"seasons": {
+"2012": {
+"PR": {
+"club": "IND",
+"games": 15,
+"group": "PR",
+"n": 26,
+"position": "WR",
+"raw": 11.538461538461538,
+"return_yards": 300,
+"returns": 26,
+"share_above": 0.23076923076923078,
+"shrunk": 11.070385349960679,
+"tier": "Plus",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+300,
+300.0
+],
+"returns": [
+26,
+26.0
+]
+}
+}
+}
+}
+},
+"00-0029614": {
+"name": "Chris Givens",
+"seasons": {
+"2012": {
+"KR": {
+"club": "LA",
+"games": 15,
+"group": "KR",
+"n": 23,
+"position": "WR",
+"raw": 23.52173913043478,
+"return_yards": 541,
+"returns": 23,
+"share_above": 0.6666666666666666,
+"shrunk": 24.039863580453986,
+"tier": "Average",
+"verification": "Corrected",
+"verification_detail": {
+"return_yards": [
+539,
+541.0
+],
+"returns": [
+23,
+23.0
+]
+}
+}
+}
+}
+},
+"00-0029626": {
+"name": "Isaiah Pead",
+"seasons": {
+"2012": {
+"KR": {
+"club": "LA",
+"games": 10,
+"group": "KR",
+"n": 10,
+"position": "RB",
+"raw": 21.2,
+"return_yards": 212,
+"returns": 10,
+"share_above": 0.8541666666666666,
+"shrunk": 23.21577490774908,
+"tier": "Below-Average",
+"verification": "Confirmed two-pass",
+"verification_detail": {
+"return_yards": [
+212,
+212.0
+],
+"returns": [
+10,
+10.0
+]
+}
+}
+}
+}
+}
 },
 "schema_version": 1,
 "seasons": {
@@ -124015,6 +131595,42 @@
 }
 },
 "public_date": "2011-01-02",
+"returners": {
+"counts": {
+"KR": {
+"Average": 23,
+"Below-Average": 11,
+"Confirmed two-pass": 54,
+"Corrected": 2,
+"Elite": 6,
+"Plus": 11,
+"Replacement-Level": 5
+},
+"PR": {
+"Average": 18,
+"Below-Average": 8,
+"Confirmed two-pass": 42,
+"Corrected": 1,
+"Elite": 5,
+"Plus": 8,
+"Replacement-Level": 4
+}
+},
+"league_means": {
+"KR": {
+"mean": 23.620381406436234,
+"qualifiers": 56,
+"shrink_k": 10,
+"total_n": 1678
+},
+"PR": {
+"mean": 10.021084337349398,
+"qualifiers": 43,
+"shrink_k": 10,
+"total_n": 996
+}
+}
+},
 "season": 2010
 },
 "2011": {
@@ -124162,6 +131778,42 @@
 }
 },
 "public_date": "2012-01-01",
+"returners": {
+"counts": {
+"KR": {
+"Average": 19,
+"Below-Average": 9,
+"Confirmed two-pass": 41,
+"Corrected": 5,
+"Elite": 5,
+"Plus": 9,
+"Replacement-Level": 4
+},
+"PR": {
+"Average": 15,
+"Below-Average": 7,
+"Confirmed two-pass": 34,
+"Corrected": 2,
+"Elite": 4,
+"Plus": 7,
+"Replacement-Level": 3
+}
+},
+"league_means": {
+"KR": {
+"mean": 24.92452830188679,
+"qualifiers": 46,
+"shrink_k": 10,
+"total_n": 1113
+},
+"PR": {
+"mean": 10.219438877755511,
+"qualifiers": 36,
+"shrink_k": 10,
+"total_n": 998
+}
+}
+},
 "season": 2011
 },
 "2012": {
@@ -124309,6 +131961,42 @@
 }
 },
 "public_date": "2012-12-30",
+"returners": {
+"counts": {
+"KR": {
+"Average": 19,
+"Below-Average": 10,
+"Confirmed two-pass": 46,
+"Corrected": 2,
+"Elite": 5,
+"Plus": 10,
+"Replacement-Level": 4
+},
+"PR": {
+"Average": 16,
+"Below-Average": 8,
+"Confirmed two-pass": 36,
+"Corrected": 3,
+"Elite": 4,
+"Plus": 8,
+"Replacement-Level": 3
+}
+},
+"league_means": {
+"KR": {
+"mean": 25.231549815498155,
+"qualifiers": 48,
+"shrink_k": 10,
+"total_n": 1084
+},
+"PR": {
+"mean": 9.853387259858442,
+"qualifiers": 39,
+"shrink_k": 10,
+"total_n": 989
+}
+}
+},
 "season": 2012
 }
 },
@@ -124353,6 +132041,15 @@
 "summary": {
 "player_seasons": 3399,
 "players": 1709,
+"returners": {
+"player_seasons": 212,
+"players": 140,
+"verification": {
+"Confirmed two-pass": 253,
+"Corrected": 15,
+"Unverified": 0
+}
+},
 "verification": {
 "Confirmed two-pass": 2616,
 "Corrected": 68,

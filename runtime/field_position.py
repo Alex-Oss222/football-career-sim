@@ -510,15 +510,26 @@ def _any_start(pool_id, category, spot):
     return tuple(t for t in _members(pool_id, category) if static_feasible(category, t, spot))
 
 
-def category_mix(counts, edge, eligible_by_category):
+def category_mix(counts, edge, eligible_by_category, int_edge=0.0):
     """The raw 2012 cell mix after the unchanged apply_edge, then masked: a
     category with no 2012 drive in the cell, or no feasible tuple, is removed
     and the rest renormalised (apply_edge would otherwise put +/-edge mass on
-    zero-count touchdown or punt categories)."""
+    zero-count touchdown or punt categories).
+
+    Kernel 2014.4 phase 2: `int_edge` (the interception-share shift from the
+    coverage-against-passing terms) moves that mass from the punt category
+    to the interception category before masking; zero leaves the mix exactly
+    as apply_edge returned it."""
     total = sum(counts.values())
     if not total:
         return {}
     probs = drive_model.apply_edge({c: counts.get(c, 0) / total for c in CATEGORIES}, edge)
+    if int_edge:
+        probs = dict(probs)
+        probs["interception"] = max(0.0, probs.get("interception", 0.0) + int_edge)
+        probs["punt"] = max(0.0, probs.get("punt", 0.0) - int_edge)
+        mass = sum(probs.values())
+        probs = {c: v / mass for c, v in probs.items()}
     masked = {c: (p if counts.get(c, 0) > 0 and eligible_by_category.get(c) else 0.0) for c, p in probs.items()}
     mass = sum(masked.values())
     return {c: v / mass for c, v in masked.items()} if mass > 0 else {}
@@ -543,6 +554,11 @@ class Drive:
     redirected: bool = False
     timeout_level: int | None = None
     own_seconds: int | None = None
+    # Kernel 2014.4 phase 2: the pool and clock regime the tuple was drawn
+    # from, so a drive whose snaps admit no legal chain layout can be
+    # resampled from the same category and start-spot rung (resample_drive).
+    pool_id: tuple | None = None
+    clock_regime: str | None = None
 
     def __post_init__(self):
         if self.own_seconds is None:
@@ -663,8 +679,45 @@ def zone_likelihood(reference, spot_zone):
     return out
 
 
+def sack_rate_base():
+    """The 2012 sacks per dropback the phase-2 sack shift is measured from."""
+    made, n = load()["band_centres"]["sacks_per_dropback"]
+    return made / n
+
+
+SACK_PROB_FLOOR, SACK_PROB_CEILING = 0.005, 0.5
+
+
+def tuple_weights(pool, sack_shift):
+    """Kernel 2014.4 phase 2: each real drive's binomial likelihood ratio
+    when the per-dropback sack probability moves from the 2012 base p0 to
+    p1 = p0 + shift: (p1/p0)^sacks x ((1-p1)/(1-p0))^attempts (attempts =
+    dropbacks - sacks). Identical for every club; a zero shift is never
+    routed here."""
+    p0 = sack_rate_base()
+    p1 = min(SACK_PROB_CEILING, max(SACK_PROB_FLOOR, p0 + sack_shift))
+    ratio_sack, ratio_none = p1 / p0, (1 - p1) / (1 - p0)
+    return [ratio_sack ** int(t[T["sacks"]] or 0) * ratio_none ** int(t[T["attempts"]] or 0) for t in pool]
+
+
+def draw_tuple(rng, pool, sack_shift=0.0):
+    """One tuple from the pool: uniform (one randrange, as every earlier
+    kernel) with no sack shift; otherwise weighted by tuple_weights (one
+    random)."""
+    if not sack_shift:
+        return pool[rng.randrange(len(pool))]
+    weights = tuple_weights(pool, sack_shift)
+    target = rng.random() * sum(weights)
+    cumulative = 0.0
+    for t, w in zip(pool, weights):
+        cumulative += w
+        if target < cumulative:
+            return t
+    return pool[-1]
+
+
 def _draw_from(rng, pool_id, regime, spot, window, edge, timeouts=None, key="def", diagnostics=None,
-               exclude=(), clock_regime=None):
+               exclude=(), clock_regime=None, extra=None):
     counts, options = draw_options(pool_id, clock_regime or regime, spot, window)
     # Kernel 2014.4: `exclude` masks categories (the fit draws mask clock,
     # which cannot run out a window it does not reach); `clock_regime`
@@ -677,12 +730,13 @@ def _draw_from(rng, pool_id, regime, spot, window, edge, timeouts=None, key="def
     level = None
     if timeouts is not None and regime in TIMEOUT_REGIMES:
         counts, options, level = _timeout_options(pool_id, counts, options, timeouts, key, diagnostics)
-    probs = category_mix(counts, edge, options)
+    extra = extra or {}
+    probs = category_mix(counts, edge, options, extra.get("int", 0.0))
     if not probs:
         return None
     category = drive_model.draw_category(rng, probs)
     pool = options[category]
-    return category, pool[rng.randrange(len(pool))], level
+    return category, draw_tuple(rng, pool, extra.get("sack", 0.0)), level
 
 
 def _clock_fallback(rng, tuples, spot, window):
@@ -719,7 +773,7 @@ def ending_drive(category, t, window, cell, regime, **kw):
     return Drive(category, t, window, True, cell, regime, own_seconds=min(own_seconds(t), window), **kw)
 
 
-def _fit_or_expire(rng, spot, window, edge, cell, regime, diagnostics, fit_regime, fit_counter):
+def _fit_or_expire(rng, spot, window, edge, cell, regime, diagnostics, fit_regime, fit_counter, extra=None):
     """Kernel 2014.4: nothing time feasible can end the window. Draw a real
     drive from the start bin that fits inside it (not a clock drive; the
     window then continues with the next possession) under the regime's own
@@ -731,12 +785,14 @@ def _fit_or_expire(rng, spot, window, edge, cell, regime, diagnostics, fit_regim
     a longer window, would stretch the clock: it is counted
     (fallback_zero_tuple) and publishes an expiry leg beyond the allowance,
     which the coherence audit flags."""
+    clock_regime = "h2_neutral" if regime == "h1_final" else regime
     drawn = _draw_from(rng, ("neutral", start_bin(spot)), "h2_neutral", spot, window, edge, exclude=("clock",),
-                       clock_regime="h2_neutral" if regime == "h1_final" else regime)
+                       clock_regime=clock_regime, extra=extra)
     if drawn is not None:
         _bump(diagnostics, fit_counter)
         return Drive(drawn[0], drawn[1], scaled_seconds(drawn[1]), False, cell, fit_regime,
-                     fallback="h1_fit" if fit_counter == "h1_fit_fallback" else "fit")
+                     fallback="h1_fit" if fit_counter == "h1_fit_fallback" else "fit",
+                     pool_id=("neutral", start_bin(spot)), clock_regime=clock_regime)
     if window <= CLOCK_EXPIRY_ALLOWANCE:
         _bump(diagnostics, "clock_expiry_zero")
         return ending_drive("clock", ZERO_TUPLE, window, cell, regime, fallback="expiry")
@@ -744,7 +800,7 @@ def _fit_or_expire(rng, spot, window, edge, cell, regime, diagnostics, fit_regim
     return ending_drive("clock", ZERO_TUPLE, window, cell, regime, fallback="zero")
 
 
-def draw_drive(rng, spot, half, window, diff, edge, diagnostics, timeouts=None):
+def draw_drive(rng, spot, half, window, diff, edge, diagnostics, timeouts=None, extra=None):
     """One possession: a category from the state's 2012 mix, then a real drive
     of that category feasible from the start spot. Draws: one random for the
     category and one randrange for the tuple (again for an H1 redirect).
@@ -755,62 +811,70 @@ def draw_drive(rng, spot, half, window, diff, edge, diagnostics, timeouts=None):
 
     Kernel 2014.4: a window-ending drive is always time feasible
     (time_feasible); when none is, a drive that fits inside the window is
-    drawn instead (_fit_or_expire) and the window continues."""
+    drawn instead (_fit_or_expire) and the window continues.
+
+    Kernel 2014.4 phase 2: `extra` carries the interception-share shift
+    ("int") and the sack-probability shift ("sack") of the matchup; None or
+    zeros reproduce the earlier draw exactly."""
     cell = cell_for(half, window, diff)
     key = "off" if diff < 0 else "def"
     if half == "OT" and diff > 0:
         diagnostics["ot_leading_offense"] = diagnostics.get("ot_leading_offense", 0) + 1
     if half == 1:
-        drawn = _draw_from(rng, ("neutral", start_bin(spot)), "h1_neutral", spot, window, edge)
+        drawn = _draw_from(rng, ("neutral", start_bin(spot)), "h1_neutral", spot, window, edge, extra=extra)
         if drawn is not None:
             category, t, _ = drawn
             seconds = scaled_seconds(t)
             if category != "clock" and seconds < window:
-                return Drive(category, t, seconds, False, cell, "h1_neutral")
+                return Drive(category, t, seconds, False, cell, "h1_neutral",
+                             pool_id=("neutral", start_bin(spot)), clock_regime="h1_neutral")
         diagnostics["interior_clock_redirected"] = diagnostics.get("interior_clock_redirected", 0) + 1
         # Kernel 2014.4: the redirect reaches only time-feasible finals
         # (_dynamic); the draw returns None, consuming nothing, when the
         # window's pool has none (every window over about 160 s).
         drawn = _draw_from(rng, ("h1_final", h1_key(window)), "h1_final", spot, window, edge,
-                           timeouts, key, diagnostics)
+                           timeouts, key, diagnostics, extra=extra)
         if drawn is not None:
             return ending_drive(drawn[0], drawn[1], window, cell, "h1_final", redirected=True,
-                                timeout_level=drawn[2])
+                                timeout_level=drawn[2], pool_id=("h1_final", h1_key(window)),
+                                clock_regime="h1_final")
         _bump(diagnostics, "h1_final_infeasible")
         # Kernel 2014.1 (every call from 2014.4): before any clock fallback, a
         # real drive from the start bin that fits the time left (the half
         # then continues), then a time-feasible clock final, then expiry.
         drawn = _draw_from(rng, ("neutral", start_bin(spot)), "h2_neutral", spot, window, edge,
-                           exclude=("clock",))
+                           exclude=("clock",), extra=extra)
         if drawn is not None:
             _bump(diagnostics, "h1_fit_fallback")
             return Drive(drawn[0], drawn[1], scaled_seconds(drawn[1]), False, cell, "h1_neutral",
-                         fallback="h1_fit")
+                         fallback="h1_fit", pool_id=("neutral", start_bin(spot)), clock_regime="h2_neutral")
         t = _clock_fallback(rng, _h1_clock_tuples(), spot, window)
         if t is not None:
             _bump(diagnostics, "fallback_clock_tuple")
             return ending_drive("clock", t, window, cell, "h1_final", fallback="clock_tuple", redirected=True)
         return _fit_or_expire(rng, spot, window, edge, cell, "h1_final", diagnostics, "h1_neutral",
-                              "h1_fit_fallback")
+                              "h1_fit_fallback", extra=extra)
     if cell == "neutral":
-        drawn = _draw_from(rng, ("neutral", start_bin(spot)), "h2_neutral", spot, window, edge)
+        drawn = _draw_from(rng, ("neutral", start_bin(spot)), "h2_neutral", spot, window, edge, extra=extra)
         if drawn is not None:
             seconds = scaled_seconds(drawn[1])
             if window - seconds <= load()["preregistration"]["neutral_h2_seconds"]:
                 diagnostics["h2_neutral_into_late"] = diagnostics.get("h2_neutral_into_late", 0) + 1
-            return Drive(drawn[0], drawn[1], seconds, False, cell, "h2_neutral")
+            return Drive(drawn[0], drawn[1], seconds, False, cell, "h2_neutral",
+                         pool_id=("neutral", start_bin(spot)), clock_regime="h2_neutral")
         need_label = need(diff)
         regime, pool_id = "late", ("late_union", need_label)
     elif cell == "OT":
         regime, pool_id, need_label = "ot", ("ot", None), "tied"
     else:
         regime, pool_id, need_label = ("late" if half == 2 else "ot"), ("late", cell), cell_need(cell)
-    drawn = _draw_from(rng, pool_id, regime, spot, window, edge, timeouts, key, diagnostics)
+    drawn = _draw_from(rng, pool_id, regime, spot, window, edge, timeouts, key, diagnostics, extra=extra)
     fallback = None
     if drawn is None and pool_id[0] != "late_union":
         fallback = "need_union"
         diagnostics["fallback_need_union"] = diagnostics.get("fallback_need_union", 0) + 1
-        drawn = _draw_from(rng, ("late_union", need_label), regime, spot, window, edge, timeouts, key, diagnostics)
+        pool_id = ("late_union", need_label)
+        drawn = _draw_from(rng, pool_id, regime, spot, window, edge, timeouts, key, diagnostics, extra=extra)
     if drawn is None:
         # Kernel 2014.4: a time-feasible clock final, else a drive that fits
         # inside the window, else (window <= E) a zero-play clock expiry.
@@ -818,11 +882,52 @@ def draw_drive(rng, spot, half, window, diff, edge, diagnostics, timeouts=None):
         if t is not None:
             _bump(diagnostics, "fallback_clock_tuple")
             return ending_drive("clock", t, window, cell, regime, fallback="clock_tuple")
-        return _fit_or_expire(rng, spot, window, edge, cell, regime, diagnostics, regime, "fallback_fit_drive")
+        return _fit_or_expire(rng, spot, window, edge, cell, regime, diagnostics, regime, "fallback_fit_drive",
+                              extra=extra)
     category, t, level = drawn
     if ends_window(regime, category, t):
-        return ending_drive(category, t, window, cell, regime, fallback=fallback, timeout_level=level)
-    return Drive(category, t, scaled_seconds(t), False, cell, regime, fallback=fallback, timeout_level=level)
+        return ending_drive(category, t, window, cell, regime, fallback=fallback, timeout_level=level,
+                            pool_id=pool_id, clock_regime=regime)
+    return Drive(category, t, scaled_seconds(t), False, cell, regime, fallback=fallback, timeout_level=level,
+                 pool_id=pool_id, clock_regime=regime)
+
+
+def tuple_index(pool_id, category, t):
+    """The tuple's index in its pool's category list (a stable identifier
+    inside the committed artifact), or None."""
+    members = _members(pool_id, category)
+    for i, m in enumerate(members):
+        if m is t or m == t:
+            return i
+    return None
+
+
+def resample_drive(rng, drawn, spot, window, exclude=()):
+    """Kernel 2014.4 phase 2 (register item 3, last fallback): another real
+    2012 drive of the same category from the same pool rung (category and
+    start-spot bucket) and the same clock regime, feasible at the spot and
+    the clock, with the same window-ending status as the drive it replaces;
+    None when the rung has no other such tuple. One randrange on `rng`, the
+    caller's layout-resample stream, never the possession stream."""
+    if drawn.pool_id is None or drawn.tuple is ZERO_TUPLE:
+        return None
+    regime = drawn.clock_regime or drawn.regime
+    skip = [drawn.tuple] + list(exclude)
+    candidates = [t for t in eligible(drawn.pool_id, drawn.category, spot, regime, window)
+                  if not any(t is x or t == x for x in skip)]
+    if drawn.consumes_window:
+        candidates = [t for t in candidates if regime == "h1_final" or ends_window(regime, drawn.category, t)]
+    else:
+        candidates = [t for t in candidates if scaled_seconds(t) < window
+                      and not (regime not in ("h1_neutral", "h2_neutral") and ends_window(regime, drawn.category, t))]
+    if not candidates:
+        return None
+    t = candidates[rng.randrange(len(candidates))]
+    fields = dict(fallback=drawn.fallback, redirected=drawn.redirected, timeout_level=drawn.timeout_level,
+                  pool_id=drawn.pool_id, clock_regime=drawn.clock_regime)
+    if drawn.consumes_window:
+        return ending_drive(drawn.category, t, window, drawn.cell, drawn.regime, **fields)
+    return Drive(drawn.category, t, scaled_seconds(t), False, drawn.cell, drawn.regime, **fields)
 
 
 # ---- transitions -------------------------------------------------------------------------
@@ -894,6 +999,38 @@ def punt(rng, los):
     return {"los": los, "outcome": record[PUNT["outcome"]], "gross": gross, "return_yards": ret,
             "enforcement": enforcement, "next_start": start, "touchback": touchback,
             "record_los": record[PUNT["los"]]}
+
+
+def adjust_punt(record, shift):
+    """Kernel 2014.4 phase 2: the punter's term as a change of `shift` yards
+    of gross on a non-touchback punt, the start recomputed by the same
+    identity; a punt that would now reach the goal line becomes a touchback
+    (gross = LOS, start 80 + enforcement). No draw. Zero returns the record
+    with adjust 0."""
+    out = dict(record, adjust=int(shift))
+    if not shift or record["touchback"]:
+        return out
+    los, ret, enforcement = record["los"], record["return_yards"], record["enforcement"]
+    gross = max(0, record["gross"] + int(shift))
+    if los - gross <= 0:
+        out.update(outcome="touchback", touchback=True, gross=los, return_yards=0, next_start=80 + enforcement)
+        return out
+    out.update(gross=gross, next_start=min(99, max(1, 100 - los + gross - ret + enforcement)))
+    return out
+
+
+def adjust_return(record, shift):
+    """Kernel 2014.4 phase 2: the returner's term as a change of `shift`
+    return yards on a returned kick or punt record, the start moved the
+    same way and kept inside the field. No draw. Zero returns the record
+    with return_adjust 0."""
+    out = dict(record, return_adjust=int(shift))
+    if not shift or record.get("touchback") or record.get("outcome") != "returned":
+        return out
+    ret = max(0, record["return_yards"] + int(shift))
+    applied = ret - record["return_yards"]
+    out.update(return_yards=ret, next_start=min(99, max(1, record["next_start"] - applied)))
+    return out
 
 
 def turnover(rng, kind, end):

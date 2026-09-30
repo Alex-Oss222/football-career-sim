@@ -8,6 +8,7 @@ inspect inputs and code, not a reason to reroll canon.
 from __future__ import annotations
 
 import math
+from functools import lru_cache
 
 from .calibration import load as load_calibration
 from .usage import group, load as load_usage
@@ -526,6 +527,21 @@ def audit_field_position(receipts):
         add("mean realized punt net, LOS %s" % label, sum(nets) / len(nets) if nets else None, c["mean"],
             3 * c["sd"] / math.sqrt(len(nets)) if nets else None, events=len(nets))
 
+    # Kernel 2014.4 phase 2: return averages from the player lines (kick
+    # returns are every non-touchback kickoff, punt returns the returned
+    # punts), against the 2012 pools' own records.
+    kr = pr = kr_yards = pr_yards = 0
+    for receipt in receipts:
+        for game in receipt.get("team_stats", {}).values():
+            for line in game.get("players", {}).values():
+                kr += line.get("kick_returns", 0) or 0
+                kr_yards += line.get("kick_return_yards", 0) or 0
+                pr += line.get("punt_returns", 0) or 0
+                pr_yards += line.get("punt_return_yards", 0) or 0
+    for label, c, made, n in (("mean kickoff return yards (non-touchback kickoffs)", return_centres()["kickoff"], kr_yards, kr),
+                              ("mean punt return yards (returned punts)", return_centres()["punt"], pr_yards, pr)):
+        add(label, made / n if n else None, c["mean"], 3 * c["sd"] / math.sqrt(n) if n else None, events=n)
+
     # Late trailing punts (possessions ending in Q4's last 5:00 / 2:00 or OT).
     for key, seconds, text in (("late_punt_share_last5_trail1_8", 300, "last 5:00"),
                                ("late_punt_share_le120_trail1_8", 120, "last 2:00")):
@@ -612,6 +628,22 @@ def audit_field_position(receipts):
     add("overtime punt share", sum(d["category"] == "punt" for d in ot) / len(ot) if ot else None, made / n,
         None, graded=False)
     return team_games, rows
+
+
+@lru_cache(maxsize=1)
+def return_centres():
+    """Kernel 2014.4 phase 2: the 2012 kickoff pool's non-touchback records
+    and the punt pool's returned records (return yards mean and SD)."""
+    from . import field_position as fp
+    from .field_position import KICK, PUNT
+    data = fp.load()
+    kicks = [r[KICK["return_yards"]] for r in data["kickoff_pool"] if not r[KICK["touchback"]]]
+    punts = [r[PUNT["return_yards"]] for r in data["punt_pool"] if r[PUNT["outcome"]] == "returned"]
+
+    def moments(xs):
+        m = sum(xs) / len(xs)
+        return {"n": len(xs), "mean": m, "sd": math.sqrt(sum((x - m) ** 2 for x in xs) / (len(xs) - 1))}
+    return {"kickoff": moments(kicks), "punt": moments(punts)}
 
 
 def coherence(receipts):

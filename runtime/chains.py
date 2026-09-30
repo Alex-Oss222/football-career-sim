@@ -261,6 +261,13 @@ def _stream(seed, *parts):
     return random.Random(int.from_bytes(hashlib.sha256(seed + payload).digest(), "big"))
 
 
+def resample_stream(seed, event_id, drive_no, offense):
+    """Kernel 2014.4 phase 2: the stream a drive's layout resample draws
+    on (its replacement tuple, sack losses and yard split), keyed like the
+    layout stream with its own tag so neither consumes the other."""
+    return _stream(seed, event_id, drive_no, offense, "layout-resample")
+
+
 def _runs_clock(kind, completed):
     """A run, a sack or a completed pass leaves the clock running."""
     return kind in ("run", "sack") or (kind in ("att", "catch") and completed)

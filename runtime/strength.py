@@ -50,28 +50,58 @@ offensive tier counts only on offense and a defensive tier only on defense.
 The age shrink on stale honours was fitted and not adopted (it lowered the
 offense leave-one-club-out skill), so no age enters a value.
 
-Composite (per drive, per side, from the drive's ACTUAL lineup: the live
-roster after injuries and removals, through participation.emergency_view):
+Sub-composites (phase 2, per drive, from the drive's ACTUAL lineup: the live
+roster after injuries and removals, through participation.emergency_view).
+Declared before the phase-2 fit (library/2014_strength_calibration.md
+section 10; library/data/2014_strength_calibration_v3.json), a slot
+convention applied identically to every club:
 
-* offense starters: the drive's passer (weight 3), the five linemen of
-  usage.protection_front, RB1, WR1, WR2, TE1, and FB1 when the club dressed
-  a fullback, else WR3;
-* defense starters: DL1-4, LB1-3, DB1-4 by club depth order;
-* unit composite = sum of position weight x player value (a Below-Average or
-  Replacement-Level starter lowers it).
+* offense: protection = the five linemen of usage.protection_front and RB1;
+  passing = the passer (weight 3), WR1-3 and TE1; run = the five linemen,
+  TE1, FB1 when the club dressed a fullback, and RB1;
+* defense: rush = DL1-4 and LB1; coverage = DB1-4 and LB2-3; run defense =
+  DL1-4, LB1-3 and the box safety (the first of DB1-4 labelled SS, else the
+  first labelled S or FS, else DB4);
+* unit composite = sum of position weight x player value.
 
-Edge for an offense against a defense (TD-share shift per drive, fed to
-drive_model.apply_edge through field_position.category_mix):
+Offensive-line job evidence (phase 2, rule B adopted by the preregistered
+leave-one-club-out test): a lineman with no admissible honour and no window
+season with 8 or more starts (the production file's OL job rows, under the
+same public-date gate) counts -1 in the protection and run composites; a
+proven lineman without an honour counts 0. A lineman absent from the
+evidence altogether is unproven under this rule.
 
-    edge = OFFENSE_SLOPE * (off_comp - OFFENSE_CENTRE)
-         - DEFENSE_SLOPE * (def_comp - DEFENSE_CENTRE)
-         + HOME_EDGE (home offense at a home venue only)
+Terms (phase 2). Each kept term is one sub-matchup difference with its own
+shrunk slope on the outcome it moves; the kept set, slopes and 2012 centres
+are the study's (TERMS below, checked against the file by the tests):
 
-clamped to +/-EDGE_CLAMP. The slopes are the second study's shrunk per-side
-TD-share slopes for the combined composite and the centres its 2012
-composite means. A club whose TeamInput carries no strength record (old
-synthetic inputs, closed 2013 inputs) keeps the legacy anchor path, one side
-at a time: (anchor - 2) x 0.025.
+* touchdown share: passing slope x (passing - centre) - run-defense slope x
+  (run_defense - centre) + HOME_EDGE, clamped to +/-EDGE_CLAMP, fed to
+  drive_model.apply_edge through field_position.category_mix (unchanged);
+* sack rate: - protection slope x (protection - centre) shifts the
+  per-dropback sack probability from the 2012 base; the drawn category's
+  real drive is then resampled by each tuple's binomial likelihood ratio
+  (field_position); clamped to +/-SACK_SHIFT_CLAMP;
+* interception share: no term survived the fit; the channel is wired
+  (category_mix takes an interception shift) with slope 0.
+
+Terms that were fitted and dropped for lack of leave-one-club-out skill
+(rush on sack rate, passing and coverage on interception share, run and
+coverage on touchdown share, yards per carry) are carried with slope 0 so a
+receipt shows every sub-composite. The centres are the 2012 study means
+(coordinator decision, September 30, 2026: the identity-ordered 2014
+inventory lineups are not depth charts, so their mean shift is not evidence
+of a league shift; revisited with the real 2014 Week 1 depth charts).
+
+Special teams (phase 2). The punter's net-punt persistence survived its
+season-pair test (continuous predictor, slope PUNTER_SLOPE yards of gross per
+yard of the punter's shrunk net above his season's league mean); the kicker,
+kick-returner and punt-returner tiers did not, so their channels are wired
+with slope 0 (carried, inactive). Coverage-unit strength is out of scope.
+
+A club whose TeamInput carries no strength record (old synthetic inputs,
+closed 2013 inputs) keeps the legacy anchor path, one side at a time:
+(anchor - 2) x 0.025, with no sack, interception or special-teams shift.
 
 Attribution (defect register item 19): each player's record also carries
 his `attribution_tier` (the tier his own value maps to on his own side);
@@ -96,6 +126,7 @@ ROOT = Path(__file__).resolve().parents[1]
 EVIDENCE = ROOT / "library/data/2010_2012_honours_evidence.json"
 PRODUCTION = ROOT / "library/data/2010_2012_production_evidence.json"
 CALIBRATION = ROOT / "library/data/2014_strength_calibration_v2.json"
+PHASE2_CALIBRATION = ROOT / "library/data/2014_strength_calibration_v3.json"
 FIRST_PASS_CALIBRATION = ROOT / "library/data/2014_strength_calibration.json"
 
 
@@ -109,7 +140,7 @@ def club_codes_path(season):
     """The season's rotation file, which carries the club code map."""
     return SeasonPaths(int(season), ROOT).record("schedule/rotation_%d.json" % int(season))
 
-MODEL = "honours-production-v2"
+MODEL = "honours-production-v3"
 # Second study (combined_max variant) shrunk TD-share slopes per composite
 # unit and its 2012 composite means (library/data/2014_strength_calibration_v2.json,
 # study_2012.variants.combined_max.fits.*; tests/test_strength.py checks
@@ -118,6 +149,42 @@ OFFENSE_SLOPE = 0.005785739981127017
 DEFENSE_SLOPE = 0.004587405854420489
 OFFENSE_CENTRE = 4.296875
 DEFENSE_CENTRE = 8.109375
+# Phase 2 (library/data/2014_strength_calibration_v3.json, study_2012.adopted_terms
+# and special_teams; tests/test_strength.py checks every number against the
+# file). A term with slope 0 was fitted and dropped for lack of
+# leave-one-club-out skill: its composite is still published.
+TERMS = (
+    {"name": "td_share_offense_passing", "outcome": "td_share", "side": "offense", "unit": "passing",
+     "slope": 0.006431863122501438, "centre": 2.828125, "active": True},
+    {"name": "td_share_defense_run_defense", "outcome": "td_share", "side": "defense", "unit": "run_defense",
+     "slope": 0.00534883340577881, "centre": 5.0, "active": True},
+    {"name": "sack_rate_offense_protection", "outcome": "sack_rate", "side": "offense", "unit": "protection",
+     "slope": 0.005653299631387429, "centre": 0.4375, "active": True},
+    {"name": "sack_rate_defense_rush", "outcome": "sack_rate", "side": "defense", "unit": "rush",
+     "slope": 0.0, "centre": 3.125, "active": False},
+    {"name": "int_share_offense_passing", "outcome": "int_share", "side": "offense", "unit": "passing",
+     "slope": 0.0, "centre": 2.828125, "active": False},
+    {"name": "int_share_defense_coverage", "outcome": "int_share", "side": "defense", "unit": "coverage",
+     "slope": 0.0, "centre": 4.609375, "active": False},
+    {"name": "td_share_offense_run", "outcome": "td_share", "side": "offense", "unit": "run",
+     "slope": 0.0, "centre": 1.015625, "active": False},
+    {"name": "td_share_defense_coverage", "outcome": "td_share", "side": "defense", "unit": "coverage",
+     "slope": 0.0, "centre": 4.609375, "active": False},
+)
+UNITS = {"offense": ("protection", "passing", "run"), "defense": ("rush", "coverage", "run_defense")}
+OL_UNPROVEN_VALUE = -1.0
+OL_PROVEN_STARTS = 8
+SACK_SHIFT_CLAMP = 0.06
+INT_EDGE_CLAMP = 0.06
+# Special teams (phase 2): the punter term is the continuous persistence
+# slope (yards of gross per yard of shrunk net above the league mean); the
+# kicker (make rate per tier unit), kick-returner and punt-returner (yards
+# per tier unit) terms had no season-pair skill and are inactive.
+PUNTER_SLOPE = 0.33992720349671446
+KICKER_SLOPE = 0.0
+KICK_RETURNER_SLOPE = 0.0
+PUNT_RETURNER_SLOPE = 0.0
+FG_PROB_FLOOR, FG_PROB_CEILING = 0.02, 0.99
 # Home term per drive for the home offense at a home venue, none at a neutral
 # site (user decision, September 29, 2026; library/2014_strength_calibration.md
 # section 4: drive-level fit 0.0227, SE 0.0102). Replaces kernel 2013.11's 0.008.
@@ -143,7 +210,8 @@ OFFENSE_POSITIONS = frozenset({"QB", "RB", "HB", "FB", "WR", "TE", "T", "G", "C"
 DEFENSE_POSITIONS = frozenset({"DE", "DT", "NT", "DL", "OLB", "ILB", "MLB", "LB", "CB", "S", "SS",
                                "FS", "DB"})
 GROUP_SIDE = {"QB": "offense", "RB": "offense", "WR": "offense", "TE": "offense", "OL": "offense",
-              "DL": "defense", "LB": "defense", "DB": "defense", "K": "special", "P": "special"}
+              "DL": "defense", "LB": "defense", "DB": "defense", "K": "special", "P": "special",
+              "KR": "special", "PR": "special"}
 DEFENSE_STARTERS = (("DL", 4), ("LB", 3), ("DB", 4))
 GSIS = re.compile(r"^\d{2}-\d{7}$")
 
@@ -179,6 +247,11 @@ def production_file():
 @lru_cache(maxsize=1)
 def calibration_file():
     return json.loads(CALIBRATION.read_text(encoding="utf-8"))
+
+
+@lru_cache(maxsize=1)
+def phase2_calibration_file():
+    return json.loads(PHASE2_CALIBRATION.read_text(encoding="utf-8"))
 
 
 @lru_cache(maxsize=1)
@@ -303,6 +376,86 @@ def production_evidence(player_id, season, as_of, rows=None, season_meta=None):
     best["evidence_weight"] = weight
     best["value"] = PRODUCTION_TIER_VALUE[best["tier"]] * weight
     best["unit"] = GROUP_SIDE.get(best["group"], "unknown")
+    if best["group"] in ("K", "P") and not best["discounted"]:
+        # Phase 2: the specialist's shrunk metric above his season's league
+        # mean (the continuous predictor of the season-pair study).
+        row = admissible[best["season"]][0]
+        league = season_meta.get(str(best["season"]), {}).get("league_means", {}).get(best["group"], {})
+        if row.get("shrunk") is not None and league.get("mean") is not None:
+            best["deviation"] = row["shrunk"] - league["mean"]
+    return best, rejected
+
+
+def job_evidence(player_id, season, as_of, rows=None, season_meta=None):
+    """(offensive-line job part or None, rejected receipts): the window's
+    depth-chart starts per season under the same public-date gate, and
+    whether any window season reaches OL_PROVEN_STARTS."""
+    as_of = _iso(as_of)
+    window = honour_seasons(season)
+    cutoff = min(as_of, DIVERGENCE)
+    if rows is None:
+        rows = (production_file()["players"].get(player_id) or {}).get("seasons", {})
+    if season_meta is None:
+        season_meta = production_file()["seasons"]
+    rejected, starts, ids = [], {}, []
+    for year, row in rows.items():
+        year = int(year)
+        if year not in window or row.get("group") != "OL":
+            continue
+        meta = season_meta.get(str(year), {})
+        public = meta.get("public_date")
+        evidence_id = "job-%d-%s" % (year, player_id)
+        if not public:
+            rejected.append({"evidence_id": evidence_id, "reason": "public_date_unpinned", "public_date": None})
+        elif public >= as_of:
+            rejected.append({"evidence_id": evidence_id, "reason": "future_dated", "public_date": public})
+        elif public >= cutoff or not meta.get("admissible_pre_divergence", False):
+            rejected.append({"evidence_id": evidence_id, "reason": "post_divergence", "public_date": public})
+        else:
+            starts[str(year)] = int(row.get("starts", 0))
+            ids.append(evidence_id)
+    if not starts:
+        return None, rejected
+    return {"group": "OL", "unit": "offense", "starts": starts, "evidence_ids": ids,
+            "proven": any(n >= OL_PROVEN_STARTS for n in starts.values())}, rejected
+
+
+def returner_evidence(player_id, season, as_of, kind, rows=None, season_meta=None):
+    """(returner part or None, rejected receipts) for kind "KR" or "PR": the
+    window's best tier from the production file's returner block, with its
+    deviation from the season's league mean; the same date gate."""
+    as_of = _iso(as_of)
+    window = honour_seasons(season)
+    cutoff = min(as_of, DIVERGENCE)
+    if rows is None:
+        rows = (production_file().get("returners", {}).get(player_id) or {}).get("seasons", {})
+    if season_meta is None:
+        season_meta = production_file()["seasons"]
+    rejected, best = [], None
+    for year, groups in rows.items():
+        year = int(year)
+        row = groups.get(kind)
+        if year not in window or not row or row.get("tier") is None:
+            continue
+        meta = season_meta.get(str(year), {})
+        public = meta.get("public_date")
+        evidence_id = "return-%s-%d-%s" % (kind, year, player_id)
+        if not public:
+            rejected.append({"evidence_id": evidence_id, "reason": "public_date_unpinned", "public_date": None})
+            continue
+        if public >= as_of:
+            rejected.append({"evidence_id": evidence_id, "reason": "future_dated", "public_date": public})
+            continue
+        if public >= cutoff or not meta.get("admissible_pre_divergence", False):
+            rejected.append({"evidence_id": evidence_id, "reason": "post_divergence", "public_date": public})
+            continue
+        if best is None or TIER_STEP.index(row["tier"]) < TIER_STEP.index(best["tier"]):
+            league = meta.get("returners", {}).get("league_means", {}).get(kind, {})
+            weight = PRODUCTION_WEIGHT.get(row.get("verification"), 0.5)
+            best = {"tier": row["tier"], "season": year, "group": kind, "unit": "special",
+                    "evidence_weight": weight, "value": PRODUCTION_TIER_VALUE[row["tier"]] * weight,
+                    "deviation": (row["shrunk"] - league["mean"]) if league.get("mean") is not None else None,
+                    "evidence_ids": [evidence_id]}
     return best, rejected
 
 
@@ -324,11 +477,22 @@ def player_record(player_id, season, as_of):
     part and the player's attribution tier (his own value on his own side)."""
     honours, rejected = player_evidence(player_id, season, as_of)
     production, rejected_p = production_evidence(player_id, season, as_of)
-    rejected = rejected + rejected_p
-    if honours is None and production is None:
+    job, rejected_j = job_evidence(player_id, season, as_of)
+    returns = {}
+    rejected = rejected + rejected_p + rejected_j
+    for kind in ("KR", "PR"):
+        part, rejected_r = returner_evidence(player_id, season, as_of, kind)
+        rejected += rejected_r
+        if part:
+            returns[kind] = part
+    if honours is None and production is None and job is None and not returns:
         return None, rejected
     record = dict(honours or {"offdef": None, "special": None})
     record["production"] = production
+    if job:
+        record["job"] = job
+    if returns:
+        record["returns"] = returns
     h = record.get("offdef")
     prod_value = production["value"] if production and production["unit"] != "special" else 0.0
     value = max(h["value"], prod_value) if h else prod_value
@@ -401,6 +565,8 @@ def team_strength(team_name, roster, season, as_of):
                 "with_evidence": sorted(players),
                 "with_honours": sorted(p for p, r in players.items() if r.get("offdef") or r.get("special")),
                 "with_production": sorted(p for p, r in players.items() if r.get("production")),
+                "with_job_evidence": sorted(p for p, r in players.items() if r.get("job")),
+                "with_return_evidence": sorted(p for p, r in players.items() if r.get("returns")),
                 "fallbacks": fallbacks, "rejected": receipts}
     return strength, coverage
 
@@ -427,31 +593,57 @@ def coverage_report(season, as_of, rosters=None):
                         "with_evidence": sum(len(c["with_evidence"]) for c in clubs.values()),
                         "with_honours": sum(len(c["with_honours"]) for c in clubs.values()),
                         "with_production": sum(len(c["with_production"]) for c in clubs.values()),
+                        "with_job_evidence": sum(len(c["with_job_evidence"]) for c in clubs.values()),
+                        "with_return_evidence": sum(len(c["with_return_evidence"]) for c in clubs.values()),
                         "fallbacks": sum(len(c["fallbacks"]) for c in clubs.values())}}
 
 
-# ---- per-drive composites and the edge --------------------------------------------
+# ---- per-drive sub-composites and the edges -------------------------------------
 
 def offense_starters(view, passer):
-    """[(slot, player)] for the drive's offensive eleven (module docstring)."""
-    out = [("QB", passer)] if passer is not None else []
-    out += [("OL", p) for p in usage.protection_front(view).values()]
-    rb = usage.depth_order(view, "RB")
-    wr = usage.depth_order(view, "WR")
-    te = usage.depth_order(view, "TE")
-    fb = usage.depth_order(view, "FB")
-    out += [("RB", p) for p in rb[:1]] + [("WR", p) for p in wr[:2]] + [("TE", p) for p in te[:1]]
-    out += [("FB", fb[0])] if fb else [("WR", p) for p in wr[2:3]]
+    """[(slot, player)] for the drive's offensive eleven (the union of the
+    three offensive sub-units; kept for the coverage tooling)."""
     seen, unique = set(), []
-    for slot, p in out:
-        if p.player_id not in seen:
-            seen.add(p.player_id)
-            unique.append((slot, p))
+    for members in offense_units(view, passer).values():
+        for slot, p in members:
+            if p.player_id not in seen:
+                seen.add(p.player_id)
+                unique.append((slot, p))
     return unique
 
 
 def defense_starters(view):
     return [(grp, p) for grp, count in DEFENSE_STARTERS for p in usage.depth_order(view, grp)[:count]]
+
+
+def offense_units(view, passer):
+    """{unit: [(slot, player)]} for the drive's offensive sub-units (module docstring)."""
+    front = [("OL", p) for p in usage.protection_front(view).values()]
+    rb = [("RB", p) for p in usage.depth_order(view, "RB")[:1]]
+    wr = [("WR", p) for p in usage.depth_order(view, "WR")[:3]]
+    te = [("TE", p) for p in usage.depth_order(view, "TE")[:1]]
+    fb = [("FB", p) for p in usage.depth_order(view, "FB")[:1]]
+    qb = [("QB", passer)] if passer is not None else []
+    return {"protection": front + rb, "passing": qb + wr + te, "run": front + te + fb + rb}
+
+
+def box_safety(dbs):
+    """The box safety among DB1-4: the first labelled SS, else the first
+    labelled S or FS, else DB4 (a convention, applied to every club)."""
+    for labels in (("SS",), ("S", "FS", "SAF")):
+        for p in dbs:
+            if str(p.position).upper() in labels:
+                return p
+    return dbs[3] if len(dbs) >= 4 else None
+
+
+def defense_units(view):
+    dl = [("DL", p) for p in usage.depth_order(view, "DL")[:4]]
+    lb = [("LB", p) for p in usage.depth_order(view, "LB")[:3]]
+    db = [("DB", p) for p in usage.depth_order(view, "DB")[:4]]
+    box = box_safety([p for _, p in db])
+    return {"rush": dl + lb[:1], "coverage": db + lb[1:3],
+            "run_defense": dl + lb + ([("DB", box)] if box is not None else [])}
 
 
 def slot_value(record, slot, side):
@@ -471,15 +663,25 @@ def slot_value(record, slot, side):
     return (max(honours, production) if honours > 0 else production), honours, production
 
 
-def composite(strength, starters, side):
-    """(unit composite, contributor receipts) for one side's starters."""
+def composite(strength, starters, side, unit=None):
+    """(unit composite, contributor receipts) for one side's starters.
+
+    With `unit` "protection" or "run", the offensive-line job rule applies:
+    an OL slot with no honour and no proven window job counts
+    OL_UNPROVEN_VALUE."""
     players = (strength or {}).get("players", {})
     total, rows = 0.0, []
+    seen = set()
     for slot, player in starters:
-        record = players.get(player.player_id)
-        if not record:
+        if player is None or player.player_id in seen:
             continue
+        seen.add(player.player_id)
+        record = players.get(player.player_id)
         value, honours, production = slot_value(record, slot, side)
+        unproven = False
+        if slot == "OL" and unit in ("protection", "run") and honours <= 0:
+            if not ((record or {}).get("job") or {}).get("proven"):
+                value, unproven = OL_UNPROVEN_VALUE, True
         if not value and not honours and not production:
             continue
         weight = QB_WEIGHT if slot == "QB" else 1
@@ -492,27 +694,110 @@ def composite(strength, starters, side):
             row["evidence_weight"] = record["offdef"]["evidence_weight"]
         if production:
             row["production_tier"] = record["production"]["tier"]
+        if unproven:
+            row["ol_unproven"] = True
         rows.append(row)
     return total, rows
 
 
+def unit_composites(strength, view, side, passer=None):
+    """{unit: {"composite", "contributors"}} for one side's three sub-units."""
+    units = offense_units(view, passer) if side == "offense" else defense_units(view)
+    out = {}
+    for unit, members in units.items():
+        comp, rows = composite(strength, members, side, unit)
+        out[unit] = {"composite": comp, "contributors": rows}
+    return out
+
+
+def term_parts(units_by_side):
+    """{term name: part} for every phase-2 term from the two sides' unit
+    composites (a side without a record contributes no term)."""
+    parts = {}
+    for term in TERMS:
+        units = units_by_side.get(term["side"])
+        if units is None:
+            continue
+        parts[term["name"]] = term["slope"] * (units[term["unit"]]["composite"] - term["centre"])
+    return parts
+
+
 def drive_edge(offense_team, defense_team, off_view, def_view, passer, home_offense):
-    """(edge, receipt) for one drive. `home_offense` is True only for the
-    designated home club's offense at a home venue."""
-    receipt = {}
+    """(touchdown-share edge, receipt) for one drive. `home_offense` is True
+    only for the designated home club's offense at a home venue. The receipt
+    also carries `int_edge` (interception-share shift) and `sack_shift`
+    (per-dropback sack-probability shift) for the drive draw."""
+    receipt = {"units": {}, "terms": {}}
+    units_by_side = {}
     if getattr(offense_team, "strength", None):
-        comp, rows = composite(offense_team.strength, offense_starters(off_view, passer), "offense")
-        off_part = OFFENSE_SLOPE * (comp - OFFENSE_CENTRE)
-        receipt["offense_composite"], receipt["offense_contributors"] = comp, rows
+        units_by_side["offense"] = unit_composites(offense_team.strength, off_view, "offense", passer)
+        receipt["units"]["offense"] = units_by_side["offense"]
+        off_part = None
     else:
         off_part = (offense_team.offense_anchor - LEGACY_ANCHOR_CENTRE) * LEGACY_ANCHOR_SCALE
     if getattr(defense_team, "strength", None):
-        comp, rows = composite(defense_team.strength, defense_starters(def_view), "defense")
-        def_part = DEFENSE_SLOPE * (comp - DEFENSE_CENTRE)
-        receipt["defense_composite"], receipt["defense_contributors"] = comp, rows
+        units_by_side["defense"] = unit_composites(defense_team.strength, def_view, "defense")
+        receipt["units"]["defense"] = units_by_side["defense"]
+        def_part = None
     else:
         def_part = (defense_team.defense_anchor - LEGACY_ANCHOR_CENTRE) * LEGACY_ANCHOR_SCALE
+    parts = term_parts(units_by_side)
+    receipt["terms"] = parts
+
+    def total(outcome, side):
+        return sum(v for t, v in ((t, parts.get(t["name"])) for t in TERMS)
+                   if v is not None and t["outcome"] == outcome and t["side"] == side)
+
+    if off_part is None:
+        off_part = total("td_share", "offense")
+    if def_part is None:
+        def_part = total("td_share", "defense")
     home = HOME_EDGE if home_offense else 0.0
     edge = max(-EDGE_CLAMP, min(EDGE_CLAMP, off_part - def_part + home))
-    receipt.update({"offense_part": off_part, "defense_part": def_part, "home": home, "edge": edge})
+    int_edge = max(-INT_EDGE_CLAMP, min(INT_EDGE_CLAMP, total("int_share", "defense") - total("int_share", "offense")))
+    sack_shift = max(-SACK_SHIFT_CLAMP, min(SACK_SHIFT_CLAMP,
+                                            total("sack_rate", "defense") - total("sack_rate", "offense")))
+    receipt.update({"offense_part": off_part, "defense_part": def_part, "home": home, "edge": edge,
+                    "int_edge": int_edge, "sack_shift": sack_shift})
     return edge, receipt
+
+
+# ---- special teams --------------------------------------------------------------
+
+def _special_value(strength, player, kind):
+    """(tier value, continuous deviation) of a specialist from the club's record."""
+    if player is None:
+        return 0.0, None
+    record = ((strength or {}).get("players") or {}).get(player.player_id) or {}
+    if kind in ("KR", "PR"):
+        part = (record.get("returns") or {}).get(kind)
+    else:
+        part = record.get("production")
+        if part and part.get("group") != kind:
+            part = None
+    if not part:
+        return 0.0, None
+    return part.get("value", 0.0), part.get("deviation")
+
+
+def kicker_adjustment(strength, kicker):
+    """(make-probability shift, receipt): KICKER_SLOPE x the kicker's tier value."""
+    value, _ = _special_value(strength, kicker, "K")
+    shift = KICKER_SLOPE * value
+    return shift, {"player_id": getattr(kicker, "player_id", None), "value": value, "shift": shift}
+
+
+def punter_adjustment(strength, punter):
+    """(gross-yards shift, receipt): PUNTER_SLOPE x the punter's shrunk net
+    above his season's league mean (the continuous predictor), rounded."""
+    _, deviation = _special_value(strength, punter, "P")
+    shift = int(round(PUNTER_SLOPE * deviation)) if deviation is not None else 0
+    return shift, {"player_id": getattr(punter, "player_id", None), "deviation": deviation, "shift": shift}
+
+
+def returner_adjustment(strength, returner, kind):
+    """(return-yards shift, receipt): the returner slope x his tier value, rounded."""
+    value, _ = _special_value(strength, returner, kind)
+    slope = KICK_RETURNER_SLOPE if kind == "KR" else PUNT_RETURNER_SLOPE
+    shift = int(round(slope * value))
+    return shift, {"player_id": getattr(returner, "player_id", None), "value": value, "shift": shift}

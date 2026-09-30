@@ -1098,7 +1098,13 @@ COHERENCE_CLASSES = (
     # snap ledger carries the walked down and distance (has_chain_ledger).
     "down_distance_chain_break", "fourth_down_distance_mismatch", "first_downs_ne_ledger",
     "goal_to_go_mismatch",
+    # Kernel 2014.4 phase 2: evaluated when every possession carries the
+    # walked chain model (has_chain_model); a drive that published a layout
+    # resample must name a real pool, a real original tuple and a final
+    # tuple of the same category feasible at its start spot.
+    "layout_resample_incoherent",
 )
+RESAMPLE_CLASSES = ("layout_resample_incoherent",)
 TIMEOUT_CLASSES = ("timeout_state_invalid", "fourth_down_beyond_goal")
 CLOCK_LEG_CLASSES = ("seconds_per_snap_outside", "snap_after_expiry", "expiry_leg_exceeds_allowance")
 CLOCK_LEG_LEDGER_CLASSES = ("snap_after_expiry",)
@@ -1106,7 +1112,7 @@ CHAIN_CLASSES = ("down_distance_chain_break", "fourth_down_distance_mismatch", "
                  "goal_to_go_mismatch")
 LEGACY_CLASSES = COHERENCE_CLASSES[:15]
 SPOT_CLASSES = tuple(c for c in COHERENCE_CLASSES[15:]
-                     if c not in TIMEOUT_CLASSES + CLOCK_LEG_CLASSES + CHAIN_CLASSES)
+                     if c not in TIMEOUT_CLASSES + CLOCK_LEG_CLASSES + CHAIN_CLASSES + RESAMPLE_CLASSES)
 SPOT_LEDGER_CLASSES = (
     "kick_spot_mismatch", "label_type_mismatch", "label_carrier_mismatch",
     "label_target_mismatch", "scramble_with_designed_label", "kneel_spike_mislabelled",
@@ -1131,6 +1137,9 @@ DRIVE_SUMMARY_FIELDS = (
     "timeouts", "timeout_level",
     # Kernel 2014.4 onward (append-only): own seconds, clock-expiry leg, the drive's passer, chain model.
     "own_seconds", "expiry_seconds", "passer", "chain_model",
+    # Kernel 2014.4 phase 2 (append-only): the punt transition as adjusted,
+    # the layout resample record, the field-goal probability drawn against.
+    "punt", "layout_resample", "fg_prob",
 )
 LABEL_TYPES = {KNEEL_LABEL: "run", GENERIC_RUN: "run", SPIKE_LABEL: "pass",
                GENERIC_PASS: "pass", SCRAMBLE_LABEL: "pass"}
@@ -1170,6 +1179,8 @@ def measurable_classes(result):
             classes.update(CLOCK_LEG_LEDGER_CLASSES)
     if has_chain_ledger(result):
         classes.update(CHAIN_CLASSES)
+    if has_chain_model(result):
+        classes.update(RESAMPLE_CLASSES)
     return classes
 
 
@@ -1827,9 +1838,45 @@ def check_ledger(result):
         _check_spot_ledger(result, possessions, rows_by_drive, kicks, err)
     if has_chain_ledger(result):
         _check_chain_ledger(possessions, rows_by_drive, err)
+    if has_chain_model(result):
+        _check_layout_resamples(possessions, err)
     if clock_legs:
         _check_clock_legs(result, possessions, rows_by_drive, err)
     return errors
+
+
+def _check_layout_resamples(possessions, err):
+    """Kernel 2014.4 phase 2: a published layout resample names its pool, the
+    original tuple's index and leading fields, and a final tuple of the same
+    category at that index in the same pool, feasible at the drive's start
+    spot; the resample count is a positive integer."""
+    from . import field_position as fp
+    for p in possessions:
+        rec = p.get("layout_resample")
+        if not rec:
+            continue
+        where = "drive %s" % p["number"]
+        category = "clock" if str(p["category"]).startswith("end_of_") else p["category"]
+        try:
+            pool_id = tuple(rec["pool"])
+            count = rec["resamples"]
+            original, final = rec["original"], rec["final"]
+            if not isinstance(count, int) or count < 1:
+                raise ValueError("resample count")
+            members = fp._members(pool_id, category)
+            for label, item in (("original", original), ("final", final)):
+                t = members[item["index"]]
+                if list(t[:5]) != list(item["tuple"]):
+                    raise ValueError("%s tuple does not match the pool" % label)
+            if original["index"] == final["index"]:
+                raise ValueError("final tuple is the original")
+            final_tuple = members[final["index"]]
+            if p.get("start_spot") is not None and not fp.static_feasible(category, final_tuple, p["start_spot"]):
+                raise ValueError("final tuple infeasible at the start spot")
+            if int(final_tuple[fp.T["plays"]]) != int(p.get("scrimmage_plays", final_tuple[fp.T["plays"]])):
+                raise ValueError("published plays differ from the final tuple")
+        except (KeyError, TypeError, ValueError, IndexError) as exc:
+            err("layout_resample_incoherent", "%s: %s" % (where, exc))
 
 
 def coherence_counts(errors):
