@@ -29,32 +29,38 @@
   "2010-AP": {
    "date": "2011-01-24",
    "locator": "boston.com 'Tom Brady unanimous selection to AP NFL All-Pro team' (/2011/01/24/) and Deseret News 2011-01-24; earliest dated article found, single search",
-   "confidence": "medium"
+   "confidence": "confirmed two-pass (search summaries, 2026-09-30)",
+   "second_pass_locator": "ESPN 'Brady unanimous choice for AP All-Pro Team' (story 6054502), CBS Boston and patriots.com 'Brady unanimous All-Pro' search summaries: released January 24, 2011"
   },
   "2011-AP": {
    "date": "2012-01-06",
    "locator": "Victoria Advocate '2011 All-Pro Team' dated 2012-01-06 ('announced Friday'); single search",
-   "confidence": "medium"
+   "confidence": "confirmed two-pass (search summaries, 2026-09-30)",
+   "second_pass_locator": "Bleacher Report 'NFL All-Pro Roster 2011: AP Releases League's Top Squad' (article 1013786) and patriots.com 'Gronkowski, Welker earn All-Pro honors' search summaries: January 6, 2012"
   },
   "2012-AP": {
    "date": "2013-01-12",
    "locator": "NFL.com 'All-Pro Team headlined by Adrian Peterson, J.J. Watt' / Wikipedia '2012 All-Pro Team' search summary; single search",
-   "confidence": "medium"
+   "confidence": "confirmed two-pass (search summaries, 2026-09-30)",
+   "second_pass_locator": "Behind the Steel Curtain (2013/1/12) '2012 AP All Pro Team' and ESPN '2012 All-Pro Team List' (story 8837916) search summaries: January 12, 2013"
   },
   "2010-PB": {
    "date": "2010-12-28",
    "locator": "PFT/NBC 'Tom Brady, Michael Vick lead 2011 Pro Bowl rosters' search summary",
-   "confidence": "medium"
+   "confidence": "confirmed two-pass (search summaries, 2026-09-30)",
+   "second_pass_locator": "ESPN 'Tom Brady, Michael Vick to start in 2011 Pro Bowl' (story 5964204) and PFT (2010/12/28) search summaries: December 28, 2010"
   },
   "2011-PB": {
    "date": "2011-12-27",
    "locator": "honours verification notes 2011 V10 ('announced 2011-12-27')",
-   "confidence": "medium"
+   "confidence": "confirmed two-pass (search summaries, 2026-09-30)",
+   "second_pass_locator": "Bleacher Report '2012 Pro Bowl Roster: AFC & NFC Analysis' (article 999360) and WTHR 'Freeney makes 2012 Pro Bowl roster' search summaries: released Tuesday night, December 27, 2011"
   },
   "2012-PB": {
    "date": "2012-12-26",
    "locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
-   "confidence": "medium"
+   "confidence": "confirmed two-pass (search summaries, 2026-09-30)",
+   "second_pass_locator": "CBS Sports '2013 Pro Bowl rosters announced', Arrowhead Addict (2012/12/26) and NFL.com roster analysis search summaries: Wednesday night, December 26, 2012"
   }
  },
  "source_keys": {
@@ -115,8 +121,17 @@
   "matched": 480,
   "unmatched": [],
   "by_verification": {
-   "Confirmed two-pass": 232,
-   "Single-pass": 248
+   "Confirmed two-pass": 314,
+   "Single-pass": 166
+  },
+  "second_pass_2012_pro_bowl": {
+   "date": "2026-09-30",
+   "moved_to_two_pass": 82,
+   "flagged_contradicted": [
+    "Sebastian Janikowski",
+    "Shane Lechler"
+   ],
+   "note": "search-summary confirmation only (page fetches of nfl.com, cbssports.com, bleacherreport.com, espn.com and wikipedia are blocked by the session proxy); Andrew Luck, Demaryius Thomas, Jermaine Gresham, Owen Daniels, Drew Brees, Eli Manning and Russell Wilson appear in the second-pass sources only as replacements, consistent with the file"
   }
  },
  "entries": [
@@ -15155,8 +15170,8 @@
     "P2",
     "P3"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -15195,8 +15210,8 @@
     "P1",
     "P3"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -15235,8 +15250,8 @@
     "P1",
     "P3"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -15275,8 +15290,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -15315,8 +15330,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -15358,8 +15373,8 @@
     "P2",
     "P9"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -15398,8 +15413,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -15438,8 +15453,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -15478,8 +15493,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -15518,8 +15533,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -15558,8 +15573,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -15598,8 +15613,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -15638,8 +15653,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -15678,8 +15693,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -15718,8 +15733,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -15758,8 +15773,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -15798,8 +15813,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -15841,8 +15856,8 @@
     "P2",
     "P9"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -15881,8 +15896,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -15921,8 +15936,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -15961,8 +15976,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16001,8 +16016,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16041,8 +16056,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16081,8 +16096,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16121,8 +16136,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16161,8 +16176,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16204,8 +16219,8 @@
     "P2",
     "P9"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16244,8 +16259,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16284,8 +16299,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16324,8 +16339,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16364,8 +16379,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16404,8 +16419,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16447,8 +16462,8 @@
     "P2",
     "P3"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16490,8 +16505,8 @@
     "P2",
     "P3"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16533,8 +16548,8 @@
     "P2",
     "P3"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16576,8 +16591,8 @@
     "P2",
     "P3"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16616,8 +16631,8 @@
     "P1",
     "P3"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16656,10 +16671,10 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [
-    "UNCONFIRMED"
+    "UNCONFIRMED cleared by second pass (listed as AFC reserve strong safety)"
    ],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16699,8 +16714,10 @@
     "P2"
    ],
    "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
-   "entry_flags": [],
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: second-pass sources name Phil Dawson (CLE) as the AFC kicker for the 2013 Pro Bowl; left Single-pass and flagged, not removed",
+   "entry_flags": [
+    "CONTRADICTED second pass"
+   ],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
    "public_date_confidence": "medium",
@@ -16740,8 +16757,10 @@
     "P2"
    ],
    "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
-   "entry_flags": [],
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: second-pass sources name Dustin Colquitt (KC) as the AFC punter for the 2013 Pro Bowl; left Single-pass and flagged, not removed",
+   "entry_flags": [
+    "CONTRADICTED second pass"
+   ],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
    "public_date_confidence": "medium",
@@ -16782,8 +16801,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16823,8 +16842,8 @@
     "P1",
     "P2"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16864,8 +16883,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16904,8 +16923,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16944,8 +16963,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -16984,8 +17003,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17024,8 +17043,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17067,8 +17086,8 @@
     "P4",
     "P5"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17107,8 +17126,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17147,8 +17166,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17190,8 +17209,8 @@
     "P4",
     "P6"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17230,8 +17249,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17273,8 +17292,8 @@
     "P4",
     "P7"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17313,8 +17332,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17353,8 +17372,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17396,8 +17415,8 @@
     "P4",
     "P5"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17436,8 +17455,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17476,8 +17495,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17519,8 +17538,8 @@
     "P4",
     "P5"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17559,8 +17578,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17602,8 +17621,8 @@
     "P4",
     "P7"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17642,8 +17661,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17682,8 +17701,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17725,8 +17744,8 @@
     "P4",
     "P7"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17768,8 +17787,8 @@
     "P4",
     "P6"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17808,8 +17827,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17851,8 +17870,8 @@
     "P4",
     "P5"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17894,8 +17913,8 @@
     "P4",
     "P6"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17934,8 +17953,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -17977,8 +17996,8 @@
     "P4",
     "P5"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -18017,8 +18036,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -18057,8 +18076,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -18100,8 +18119,8 @@
     "P4",
     "P5"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -18143,8 +18162,8 @@
     "P4",
     "P5"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -18186,8 +18205,8 @@
     "P4",
     "P6"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -18229,8 +18248,8 @@
     "P4",
     "P6"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -18269,8 +18288,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -18312,8 +18331,8 @@
     "P4",
     "P5"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -18355,8 +18374,8 @@
     "P4",
     "P5"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -18395,8 +18414,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -18435,8 +18454,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
@@ -18476,8 +18495,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [
     "thinly sourced"
    ],
@@ -18519,8 +18538,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [
     "thinly sourced"
    ],
@@ -18562,8 +18581,8 @@
     "P1",
     "P4"
    ],
-   "verification": "Single-pass",
-   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked",
+   "verification": "Confirmed two-pass",
+   "verification_basis": "2012 verification notes: Pro Bowl originals and replacements not re-checked | second pass September 30, 2026: named in the same conference and position by search summaries of Bleacher Report 'AFC/NFC Pro Bowl Roster 2013: Complete Selections' (articles 1458193 / 1458482), NFL.com '2013 Pro Bowl roster analysis: AFC/NFC' and CBS Sports '2013 Pro Bowl rosters announced' (2012-12-26)",
    "entry_flags": [],
    "public_date": "2012-12-26",
    "public_date_locator": "House of Sparky 'AFC Pro Bowl roster 2013' (/2012/12/26/) search result",
