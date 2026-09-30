@@ -38,7 +38,7 @@ career/
     calendar.md                 <- historical full-season calendar: camps, preseason, games, roster/cap deadlines and conditional postseason gates
     coaching_staff.md          <- clean current staff list, no process narrative; the hiring process itself lives in offseason/staff_building/hires.md
     roster.md                   <- current roster view: controlled players, status, availability and decided roles
-    player_profiles/            <- one annual NFL player sheet per season player; visible personnel summary, inherited year to year
+    player_profiles/            <- frozen end-of-season NFL player sheets; create only after that season is complete
     depth_chart.json            <- Stone's depth order, roles and game-day inactives, read by the week-input builder
     migrations/                 <- audited canonical migrations and their manifests
     league_results/
