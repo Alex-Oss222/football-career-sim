@@ -425,3 +425,15 @@ The user subsequently selected the historical calendar: rookie camp May 16–17;
 | C.J. Wilson, DE | Keep the minimum offer for a roster competition, subject to a current physical. With Babin and Alualu traded, another experienced defensive-front option is useful | One year at the minimum for his credited seasons | A demand for substantial guarantees or a starting promise |
 
 **Evidence note.** Jones-Drew's 2013 branch production supports reviewing his work, but the equal-strength engine's statistics alone do not establish his ability. Wilson's 2013 injury left too little individual evidence to promise a role or justify a larger commitment. No role is promised to either player.
+
+## September 30, 2026 amendment: Henne, Ball and Brent Grimes
+
+**User instruction, at the March 31, 2014 branch checkpoint.** This records Stone's plan; no signing is made here.
+
+| Player | Instruction | Terms | Walk-away or revisit |
+|---|---|---|---|
+| Chad Henne, QB | Pursue a re-signing as QB2. His 2013 practice and preseason record supports the job. He was accurate in the taught offense, and his protection corrections improved. Hurry-up and substitution communication remained unfinished work. John Parker Wilson and Tyler Bray have not established a stronger immediate-backup case | Open with the existing offer, two years, $3.75M with $1.65M guaranteed | Stay within the recorded $2.5M-a-year ceiling |
+| Alan Ball, CB | Leave him unsigned for now. Talib, Verner, Harris, Poyer and Bouye are under contract, and the draft board carries corner targets. Ball's outside-corner and special-teams experience is useful, but another veteran corner is less urgent than QB2 | None now | Revisit after the draft if corner depth remains thin, subject to a current physical |
+| Brent Grimes, CB | Let him test the market. The proposed two years, $9.25M with $4.0M guaranteed was insurance against missing the primary corners, and both signed. Preserve that money for remaining needs rather than activate the fallback | Offer withdrawn | Not pursued |
+
+**Market note.** Henne's real 2014 re-signing was with the real Jaguars, a move the branch never made. Under the rails he therefore stays an unplaced free agent whom Jacksonville may sign. Ball and Brent Grimes are also unplaced; Grimes's real Miami re-signing does not apply in the branch.
