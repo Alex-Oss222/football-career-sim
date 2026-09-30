@@ -2,86 +2,75 @@
 
 **Team:** Jacksonville Jaguars  
 **Season:** 2013  
-**Checkpoint:** January 13, 2014 season-close / exit-review baseline  
-**Age:** 25  
+**Season-close checkpoint:** 2013 season complete; January 13, 2014 exit-review close  
+**Age during season:** 25  
 **Position:** CB  
 **NFL standing:** Unassessed  
 **Player identity:** He stepped into outside work after Ball's injury. Help directives changed around him, while the record lacks an individual technique finding. That experience is useful without turning protected usage into a fixed ceiling.  
-**Previous annual profile:** None in the Jacksonville annual-sheet archive  
 
-> Personnel snapshot only. The /10 grades are human-facing summaries and do not feed the game resolver directly.
-> Established capabilities carry forward unless causal evidence supports a change.
+> Final 2013 season evaluation. This is not a 2014 entry projection or offseason development plan.
 
-## Player grades
+## Position grades
 
-| Category | Grade | NFL standing |
-| --- | ---: | --- |
-| Overall | — /10 | Unassessed |
-| Athleticism | — /10 | Unassessed |
-| Speed | — /10 | Unassessed |
-| Strength / Power | — /10 | Unassessed |
-| Agility / Change of direction | — /10 | Unassessed |
-| Technique | — /10 | Unassessed |
-| Football IQ | — /10 | Unassessed |
-| Coverage | — /10 | Unassessed |
-| Ball skills | — /10 | Unassessed |
-| Tackling / run support | — /10 | Unassessed |
+| Position trait | Grade | NFL standing | Evidence quality |
+| --- | ---: | --- | --- |
+| Overall at position | — /10 | Unassessed | Unassessed |
+| Long / recovery speed | — /10 | Unassessed | Unassessed |
+| Short-area quickness / hips | — /10 | Unassessed | Unassessed |
+| Press coverage | — /10 | Unassessed | Unassessed |
+| Off-man coverage | — /10 | Unassessed | Unassessed |
+| Zone / pattern match | — /10 | Unassessed | Unassessed |
+| Route recognition / eyes | — /10 | Unassessed | Unassessed |
+| Ball skills | — /10 | Unassessed | Unassessed |
+| Catch-point play | — /10 | Unassessed | Unassessed |
+| Tackling / run support | — /10 | Unassessed | Unassessed |
+| Block defeat / penalty discipline | — /10 | Unassessed | Unassessed |
 
-## League comparison
+## Historical NFL benchmark
 
-| Trait | vs. Average | vs. Best | vs. Worst |
-| --- | --- | --- | --- |
-| Speed | Unassessed | Unassessed | Unassessed |
-| Size / Length | Unassessed | Unassessed | Unassessed |
-| Strength | Unassessed | Unassessed | Unassessed |
-| Explosiveness | Unassessed | Unassessed | Unassessed |
-| Coverage | Unassessed | Unassessed | Unassessed |
-| Ball skills | Unassessed | Unassessed | Unassessed |
+| Trait | Sim player | vs. 2013 NFL average | vs. 2013 top reference | vs. 2013 low-end reference | Basis |
+| --- | --- | --- | --- | --- | --- |
+| Long / recovery speed | Unassessed | Unassessed | Unassessed | Unassessed | Pending historical benchmark |
+| Short-area quickness / hips | Unassessed | Unassessed | Unassessed | Unassessed | Pending historical benchmark |
+| Press coverage | Unassessed | Unassessed | Unassessed | Unassessed | Pending historical benchmark |
+| Off-man coverage | Unassessed | Unassessed | Unassessed | Unassessed | Pending historical benchmark |
+| Zone / pattern match | Unassessed | Unassessed | Unassessed | Unassessed | Pending historical benchmark |
+| Route recognition / eyes | Unassessed | Unassessed | Unassessed | Unassessed | Pending historical benchmark |
+| Ball skills | Unassessed | Unassessed | Unassessed | Unassessed | Pending historical benchmark |
+| Catch-point play | Unassessed | Unassessed | Unassessed | Unassessed | Pending historical benchmark |
+| Tackling / run support | Unassessed | Unassessed | Unassessed | Unassessed | Pending historical benchmark |
+| Block defeat / penalty discipline | Unassessed | Unassessed | Unassessed | Unassessed | Pending historical benchmark |
 
-## Established player state
+## Season production in context
+
+Use branch production only as context. Do not turn a box-score total into a position trait without football evidence.
+
+## Same-player real-world comparison
+
+Not yet researched for this player. This optional comparison must be added only after the simulation evaluation is fixed.
+
+## What made him this player in 2013
 
 - He stepped into outside work after Ball's injury. Help directives changed around him, while the record lacks an individual technique finding. That experience is useful without turning protected usage into a fixed ceiling.
 
-## Year-over-year change
-
-| Area | Prior profile | Current checkpoint | Change | Evidence / football reason |
-| --- | --- | --- | --- | --- |
-| Established identity | No prior annual sheet | 2013 season-close baseline | Baseline created | 2013 exit-review evidence |
-| Physical | Unassessed | Unassessed | Unassessed | Do not infer change from age or calendar rollover |
-| Technical | Unassessed | Unassessed | Unassessed | Requires position-specific evidence |
-| Processing / Football IQ | Unassessed | Unassessed | Unassessed | Separate recognition from playbook knowledge |
-| Consistency | Unassessed | Unassessed | Unassessed | Repeat rate is separate from peak capability |
-| Role / system access | Unassessed | Unassessed | Unassessed | Role is not the same thing as talent |
-
-## What makes him [NFL standing]
-
-- Unassessed until the standing is supported by checkpoint evidence.
-
-## Historical comparison
-
-**Level historically:** Unassessed  
-**Closest player comparison:** Unassessed  
-**What is similar:** Unassessed  
-**What is different:** Unassessed  
-
 ## Play style
 
-Unassessed on the annual sheet.
+Unassessed beyond the supported identity above.
 
 ## Best traits
 
-- Not yet converted into an annual-sheet rank. Start with the established player state above.
+- Preserve only traits supported by the 2013 evidence.
 
 ## Main weaknesses
 
-- Not yet converted into an annual-sheet rank. Do not manufacture a weakness to fill the field.
+- Preserve only weaknesses supported by the 2013 evidence.
 
 ## Evidence and uncertainty
 
-- **Primary evidence:** 2013 exit-review baseline and the frozen 2014-entry roster synthesis.
-- **What is established:** See established player state.
-- **What remains uncertain:** Numeric grades, league standing and unsupported year-over-year changes.
-- **What would change the assessment:** New permitted practice, film, medical or game evidence tied to the relevant trait.
+- **Branch evidence used:** 2013 exit-review record and its linked season evidence.
+- **Historical benchmark method:** library/annual_player_sheet_benchmark_method.md.
+- **What is established:** See player identity and any filled grades.
+- **What remains uncertain:** Any position trait still marked Unassessed.
 
 **One-line description:**  
 He stepped into outside work after Ball's injury. Help directives changed around him, while the record lacks an individual technique finding. That experience is useful without turning protected usage into a fixed ceiling.

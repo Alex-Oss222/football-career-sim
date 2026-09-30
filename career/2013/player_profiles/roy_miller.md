@@ -2,86 +2,73 @@
 
 **Team:** Jacksonville Jaguars  
 **Season:** 2013  
-**Checkpoint:** January 13, 2014 season-close / exit-review baseline  
-**Age:** 26  
+**Season-close checkpoint:** 2013 season complete; January 13, 2014 exit-review close  
+**Age during season:** 26  
 **Position:** DT  
 **NFL standing:** Unassessed  
 **Player identity:** Base-front fit was supported in camp, including the interior pairing with Marks. A run-first assignment can suppress rush opportunities; individual game evidence still needs classification.  
-**Previous annual profile:** None in the Jacksonville annual-sheet archive  
 
-> Personnel snapshot only. The /10 grades are human-facing summaries and do not feed the game resolver directly.
-> Established capabilities carry forward unless causal evidence supports a change.
+> Final 2013 season evaluation. This is not a 2014 entry projection or offseason development plan.
 
-## Player grades
+## Position grades
 
-| Category | Grade | NFL standing |
-| --- | ---: | --- |
-| Overall | — /10 | Unassessed |
-| Athleticism | — /10 | Unassessed |
-| Speed | — /10 | Unassessed |
-| Strength / Power | — /10 | Unassessed |
-| Agility / Change of direction | — /10 | Unassessed |
-| Technique | — /10 | Unassessed |
-| Football IQ | — /10 | Unassessed |
-| Run defense | — /10 | Unassessed |
-| Pass rush | — /10 | Unassessed |
-| Block recognition | — /10 | Unassessed |
+| Position trait | Grade | NFL standing | Evidence quality |
+| --- | ---: | --- | --- |
+| Overall at position | — /10 | Unassessed | Unassessed |
+| Get-off | — /10 | Unassessed | Unassessed |
+| Anchor | — /10 | Unassessed | Unassessed |
+| Power | — /10 | Unassessed | Unassessed |
+| Hand use | — /10 | Unassessed | Unassessed |
+| Block shedding | — /10 | Unassessed | Unassessed |
+| Penetration | — /10 | Unassessed | Unassessed |
+| Pass-rush counters | — /10 | Unassessed | Unassessed |
+| Double-team play | — /10 | Unassessed | Unassessed |
+| Gap discipline / lateral pursuit | — /10 | Unassessed | Unassessed |
 
-## League comparison
+## Historical NFL benchmark
 
-| Trait | vs. Average | vs. Best | vs. Worst |
-| --- | --- | --- | --- |
-| Speed | Unassessed | Unassessed | Unassessed |
-| Size / Length | Unassessed | Unassessed | Unassessed |
-| Strength | Unassessed | Unassessed | Unassessed |
-| Explosiveness | Unassessed | Unassessed | Unassessed |
-| Run defense | Unassessed | Unassessed | Unassessed |
-| Pass rush | Unassessed | Unassessed | Unassessed |
+| Trait | Sim player | vs. 2013 NFL average | vs. 2013 top reference | vs. 2013 low-end reference | Basis |
+| --- | --- | --- | --- | --- | --- |
+| Get-off | Unassessed | Unassessed | Unassessed | Unassessed | Pending historical benchmark |
+| Anchor | Unassessed | Unassessed | Unassessed | Unassessed | Pending historical benchmark |
+| Power | Unassessed | Unassessed | Unassessed | Unassessed | Pending historical benchmark |
+| Hand use | Unassessed | Unassessed | Unassessed | Unassessed | Pending historical benchmark |
+| Block shedding | Unassessed | Unassessed | Unassessed | Unassessed | Pending historical benchmark |
+| Penetration | Unassessed | Unassessed | Unassessed | Unassessed | Pending historical benchmark |
+| Pass-rush counters | Unassessed | Unassessed | Unassessed | Unassessed | Pending historical benchmark |
+| Double-team play | Unassessed | Unassessed | Unassessed | Unassessed | Pending historical benchmark |
+| Gap discipline / lateral pursuit | Unassessed | Unassessed | Unassessed | Unassessed | Pending historical benchmark |
 
-## Established player state
+## Season production in context
+
+Use branch production only as context. Do not turn a box-score total into a position trait without football evidence.
+
+## Same-player real-world comparison
+
+Not yet researched for this player. This optional comparison must be added only after the simulation evaluation is fixed.
+
+## What made him this player in 2013
 
 - Base-front fit was supported in camp, including the interior pairing with Marks. A run-first assignment can suppress rush opportunities; individual game evidence still needs classification.
 
-## Year-over-year change
-
-| Area | Prior profile | Current checkpoint | Change | Evidence / football reason |
-| --- | --- | --- | --- | --- |
-| Established identity | No prior annual sheet | 2013 season-close baseline | Baseline created | 2013 exit-review evidence |
-| Physical | Unassessed | Unassessed | Unassessed | Do not infer change from age or calendar rollover |
-| Technical | Unassessed | Unassessed | Unassessed | Requires position-specific evidence |
-| Processing / Football IQ | Unassessed | Unassessed | Unassessed | Separate recognition from playbook knowledge |
-| Consistency | Unassessed | Unassessed | Unassessed | Repeat rate is separate from peak capability |
-| Role / system access | Unassessed | Unassessed | Unassessed | Role is not the same thing as talent |
-
-## What makes him [NFL standing]
-
-- Unassessed until the standing is supported by checkpoint evidence.
-
-## Historical comparison
-
-**Level historically:** Unassessed  
-**Closest player comparison:** Unassessed  
-**What is similar:** Unassessed  
-**What is different:** Unassessed  
-
 ## Play style
 
-Unassessed on the annual sheet.
+Unassessed beyond the supported identity above.
 
 ## Best traits
 
-- Not yet converted into an annual-sheet rank. Start with the established player state above.
+- Preserve only traits supported by the 2013 evidence.
 
 ## Main weaknesses
 
-- Not yet converted into an annual-sheet rank. Do not manufacture a weakness to fill the field.
+- Preserve only weaknesses supported by the 2013 evidence.
 
 ## Evidence and uncertainty
 
-- **Primary evidence:** 2013 exit-review baseline and the frozen 2014-entry roster synthesis.
-- **What is established:** See established player state.
-- **What remains uncertain:** Numeric grades, league standing and unsupported year-over-year changes.
-- **What would change the assessment:** New permitted practice, film, medical or game evidence tied to the relevant trait.
+- **Branch evidence used:** 2013 exit-review record and its linked season evidence.
+- **Historical benchmark method:** library/annual_player_sheet_benchmark_method.md.
+- **What is established:** See player identity and any filled grades.
+- **What remains uncertain:** Any position trait still marked Unassessed.
 
 **One-line description:**  
 Base-front fit was supported in camp, including the interior pairing with Marks. A run-first assignment can suppress rush opportunities; individual game evidence still needs classification.
