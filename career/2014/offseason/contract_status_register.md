@@ -1,6 +1,6 @@
 # Jacksonville Jaguars: 2014 contract and free-agency status register
 
-**As of:** May 12, 2014.
+**As of:** June 13, 2014.
 **Scope:** every player in the March 11, 2014 league-year baseline: the 52 active players and Brad Meester (Reserve/Retired) on the [2013 closing roster](../../2013/roster.md), plus the eight-player 2013 practice squad, six of whom signed reserve/future contracts effective March 11. Players signed from outside after the baseline are summarized in section 2; their contracts are in the [contract table](contract_table.md), the [signings record](free_agency/signings.md), [the draftees record](draft/draftees.md) and [the undrafted signings record](draft/udfa_signings.md).
 **Role:** this register owns each player's contract status, final league year, accrued seasons and free-agency class, with the evidence for each. It executes no signing, tender, release, extension, option or trade; Caldwell retains contract authority under Document 3. Figures follow the adopted contract reconstruction in the [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md) and the [completion research](../../../library/2014_jaguars_contract_completion.md), which fix every covered contract year with explicit simulation assumptions where the public original instrument is incomplete. Transaction history is in the [2014 ledger](../ledger.md).
 
@@ -16,7 +16,7 @@
 
 ## 2. Current status summary
 
-| Status at May 12, 2014 | Count |
+| Status at June 13, 2014 | Count |
 |---|---:|
 | Under contract, continuing from before 2014 | 31 |
 | Under contract, reserve/future (effective March 11) | 6 |
@@ -41,10 +41,10 @@ The 78 controlled players match the [roster](../roster.md) and the [contract tab
 | Maurice Jones-Drew | UFA | Re-signed March 28: two years, $7.0M, $3.25M guaranteed |
 | C.J. Wilson | UFA | Re-signed March 28: one year, $795,000 |
 | Chad Henne | UFA | Re-signed April 4: two years, $4.0M, $2.0M guaranteed |
-| Alan Ball | UFA | Not re-signed May 12; unplaced free agent, first veteran corner to call if the room is hit |
-| Brent Grimes | UFA | Unsigned; not pursued under Stone's March 31 plan |
-| Cameron Bradfield | RFA | Lowest tender, $1,431,000; unsigned |
-| Allen Reisner, Kevin Rutland | RFA | Not tendered; unrestricted free agents from March 11 |
+| Alan Ball | UFA | Not re-signed May 12; unplaced free agent, first veteran corner to call if the room is hit. No June 1 tender filed (June 2); no rights retained |
+| Brent Grimes | UFA | Unsigned; not pursued under Stone's March 31 plan. No June 1 tender filed (June 2); no rights retained |
+| Cameron Bradfield | RFA | Lowest tender, $1,431,000; unsigned. The June 15 tender substitution question is Caldwell's on June 16 |
+| Allen Reisner, Kevin Rutland | RFA | Not tendered; unrestricted free agents from March 11. No June 1 tender filed (June 2); no rights retained |
 | Toney Clemons, Austin Pasztor | ERFA | Tendered at $570,000; unsigned |
 | Mike Brown | ERFA | Tendered at $495,000; unsigned |
 | Brad Meester | Retired | Contract expired March 11 |

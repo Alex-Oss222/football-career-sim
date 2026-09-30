@@ -1,11 +1,11 @@
 # Current Season State
 
 **Document status:** Mutable canonical snapshot; replace rather than append
-**Version:** `JAX-2014-MAY23-STATE-85`
-**Supersedes:** `JAX-2014-MAY12-STATE-84`
-**Snapshot effective:** Friday, May 23, 2014, after the Phase Two handoff, the May 16 and 17 rookie minicamp, the rookie onboarding and physicals of May 10 to 15, Stone's May 12 starting roles entering OTAs, the Rackley trade with Seattle (May 12), the 2014 draft (May 8 to 10), the 17 undrafted signings of May 10 and the nine rookie contracts signed May 11. The 2013 season is complete and archived.
-**Last reconciled:** September 30, 2026; Entry 111 (rookie minicamp and Phase Two closed; starting roles set; clock to May 23).
-**Global package checkpoint:** `Canonical update - May 23, 2014 - Rookie minicamp and Phase Two closed; starting roles set`
+**Version:** `JAX-2014-JUN13-STATE-86`
+**Supersedes:** `JAX-2014-MAY23-STATE-85`
+**Snapshot effective:** Friday, June 13, 2014, after the ten OTA days (May 27 to June 13) and their June 13 handoff, the June 2 tender deadline, the Phase Two handoff (May 23), the May 16 and 17 rookie minicamp, Stone's May 12 starting roles, the Rackley trade with Seattle (May 12), the 2014 draft (May 8 to 10), the 17 undrafted signings of May 10 and the nine rookie contracts signed May 11. The 2013 season is complete and archived.
+**Last reconciled:** September 30, 2026; Entry 112 (OTAs closed; June 1 tender deadline passed; clock to June 13).
+**Global package checkpoint:** `Canonical update - June 13, 2014 - OTAs closed`
 
 This document states what is true now and what comes next. Event history lives in the [2014 ledger](../career/2014/ledger.md) (Entries 101 onward) and the [2013 ledger](../career/2013/ledger.md) (through Entry 100).
 
@@ -16,18 +16,18 @@ This document states what is true now and what comes next. Event history lives i
 | Document 1 | `a85650c6ba2557fbec8102dc7533aaf085bf188f` | Active foundation source |
 | Document 2 | `86dfbef40a5ae9b2b6f283dd513df6083bb22645` | Active foundation source |
 | Document 3 | `30ff2bd2eb39f64e31565d5eaf76bdd2de7e54b5` | Active foundation source |
-| Document 4 | `JAX-2014-MAY23-REGISTER-64`; reconciled by Entry 111 | Roster, staff, medical and role register |
-| Document 6 | `career/2014/ledger.md` Entries 101 to 111; `career/2013/ledger.md` through Entry 100 | Latest closed event: Entry 111 |
+| Document 4 | `JAX-2014-JUN13-REGISTER-65`; reconciled by Entry 112 | Roster, staff, medical and role register |
+| Document 6 | `career/2014/ledger.md` Entries 101 to 112; `career/2013/ledger.md` through Entry 100 | Latest closed event: Entry 112 |
 
 ## 1. Master clock and competition position
 
 | Field | Current canonical value |
 |---|---|
-| Master date/time | May 23, 2014 |
+| Master date/time | June 13, 2014 |
 | League/season | NFL, 2014; prior 2013 results archived |
 | Team / head coach | Jacksonville Jaguars / Alex Stone, retained for 2014 on his existing contract at the January 15, 2014 season review |
 | Game-day staff | Stone leads the team and chooses which calls to make or delegate. Romeo Crennel normally directs defense; Mike Westhoff runs special teams |
-| Season phase | 2014 offseason program: Phases One and Two complete (handoff May 23); rookie minicamp complete (May 16 and 17); Phase Three opens with OTA block 1 on May 27; league year open since 4 p.m. March 11 |
+| Season phase | 2014 offseason program, Phase Three: the ten OTA days complete (May 27 to June 13, handoff June 13); Phases One and Two (handoff May 23) and the rookie minicamp (May 16 and 17) complete; mandatory veteran minicamp June 17 to 19 after the June 16 physicals; league year open since 4 p.m. March 11 |
 | Preseason record | 2014 not started; 2013 archive: 2-2 |
 | Regular-season record | 2014 not started; 2013 archive: 10-6 |
 | Postseason record | 2014 not started; 2013 archive: 1-1 |
@@ -50,10 +50,10 @@ This document states what is true now and what comes next. Event history lives i
 | **Current Jacksonville controlled roster** | **78** |
 | Offseason roster | 78 of the 90-player limit: 74 under signed contracts and 4 on unsigned tenders |
 | Practice squad | 0 (no 2014 practice squad before the regular season) |
-| 2014 rookies | Nine draft selections signed May 11 (Donald, Bitonio, Adams, Turner, Telvin Smith, Linsley, Leno, Thomas, Butler) and 17 undrafted rookies signed May 10 (Norwell, Christian Jones, Hurns, Lucas, Phillips, Feiler, Brate, Todd Davis, Shatley, Larsen, Shaw, Edebali, Jensen, Hoskins, Jeffcoat, Gabriel, Kreiter). All 26 onboarded May 10 to 14, cleared at their May 13 to 15 physicals, through the May 16 and 17 rookie minicamp and in Phase Two from May 19 ([rookie record](../career/2014/offseason/rookie_minicamp/output.md)). Bitonio, Turner and Adams hold rep starting points from Stone's May 12 instruction; the other 23 are added to the working depth chart, not placed |
+| 2014 rookies | Nine draft selections signed May 11 (Donald, Bitonio, Adams, Turner, Telvin Smith, Linsley, Leno, Thomas, Butler) and 17 undrafted rookies signed May 10 (Norwell, Christian Jones, Hurns, Lucas, Phillips, Feiler, Brate, Todd Davis, Shatley, Larsen, Shaw, Edebali, Jensen, Hoskins, Jeffcoat, Gabriel, Kreiter). All 26 onboarded May 10 to 14, cleared at their May 13 to 15 physicals, through the May 16 and 17 rookie minicamp, Phase Two from May 19 ([rookie record](../career/2014/offseason/rookie_minicamp/output.md)) and the ten OTA days on their primary jobs ([OTA record](../career/2014/offseason/otas/output.md)). Bitonio, Turner and Adams hold rep starting points from Stone's May 12 instruction; the other 23 are added to the working depth chart, not placed |
 | Unsigned tenders | Bradfield (lowest restricted tender; no offer sheet by May 2, nothing to match May 7); Clemons, Brown and Pasztor (exclusive rights). All four are outside the program and the social calendar until they sign (user instruction, May 1) |
 | Reserve/future contracts | Six, at the minimum for each player's credited seasons: Bray, Jerrell Jackson and Long $420,000 each; Murphy, D'Anthony Smith and Blake $495,000 each. They are camp places, not practice-squad places; 2014 practice-squad eligibility is checked only after the August cutdown |
-| Former players not under control | Alan Ball (not re-signed May 12; unplaced under the rails and first on the veteran-corner call list if the room is hit) and Brent Grimes (unrestricted and unplaced under the rails); Reisner and Rutland (not tendered); Meester (retired, contract expired March 11); Rackley (traded to Seattle May 12) |
+| Former players not under control | Alan Ball (not re-signed May 12; unplaced under the rails and first on the veteran-corner call list if the room is hit) and Brent Grimes (unrestricted and unplaced under the rails); Reisner and Rutland (not tendered). No June 1 tender was filed for any of the four on June 2, so Jacksonville retains no rights to them. Meester (retired, contract expired March 11); Rackley (traded to Seattle May 12) |
 
 March and April 2014 signings, all under the judgment-based free-agency replay that superseded the first-pass draws:
 
@@ -97,7 +97,7 @@ Player birth dates and ages are in Document 4, the [roster](../career/2014/roste
 
 ## 6. Availability
 
-Paul Posluszny's head/neck hold from 2013 Week 13 cleared on April 5, 2014, his projected return date, under the same rule applied to every club's injuries in 2013; no new restriction has been communicated. Will Rackley, the one limited player, was traded to Seattle on May 12 with his limitation disclosed. Every other 2013 Jacksonville injury has cleared, Pasztor and Mosley are available, and Phases One and Two and the rookie minicamp produced no injury and no new restriction.
+Paul Posluszny's head/neck hold from 2013 Week 13 cleared on April 5, 2014, his projected return date, under the same rule applied to every club's injuries in 2013; no new restriction has been communicated. Will Rackley, the one limited player, was traded to Seattle on May 12 with his limitation disclosed. Every other 2013 Jacksonville injury has cleared, Pasztor and Mosley are available, and Phases One and Two, the rookie minicamp and the ten OTA days produced no injury and no new restriction. The medical staff refreshed instructions before each OTA block; the program has no engine injury draw for practices, and only communicated instructions are recorded.
 
 The 26 rookies completed club physicals May 13 to 15 with no communicated restriction. Cornelius Lucas, measured at the combine on crutches after a pre-combine foot stress fracture, passed that specific check with no communicated restriction; the foot is a performance-staff review item, and no diagnosis beyond the public fact is recorded. James Hurst (undrafted board) is held until a medical clearance of his December 28, 2013 leg injury is recorded.
 
@@ -105,7 +105,7 @@ The four players on unsigned tenders (Bradfield, Clemons, Brown and Pasztor) are
 
 ## 7. Current football roles
 
-Roles carry from the 2013 season until Stone changes them. On May 12 Stone set the rep starting points for the five open roles entering OTAs ([memo amendment](../career/2014/offseason/stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-starting-roles-entering-otas)): WR1 Nicks, with Adams the competition; WR3 Adams, with Hawkins; left guard Bitonio, guard first, with Norwell; right guard Turner, with Bitonio or Norwell if Turner struggles; Edge 1 Mincey, with Branch. They are starting points for reps, not awards, and each is an open competition on the field. Still open and not filled by the chart: TE3 (Reisner), the corner places of Brent Grimes and Ball and the reserve corner (Rutland). The March signings other than Nicks, the six futures and the 23 other rookies are under contract with no place set ([working depth chart](../career/2014/depth_chart.md)); rookies are added, not placed, until Stone decides.
+Roles carry from the 2013 season until Stone changes them. On May 12 Stone set the rep starting points for the five open roles entering OTAs ([memo amendment](../career/2014/offseason/stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-starting-roles-entering-otas)): WR1 Nicks, with Adams the competition; WR3 Adams, with Hawkins; left guard Bitonio, guard first, with Norwell; right guard Turner, with Bitonio or Norwell if Turner struggles; Edge 1 Mincey, with Branch. They are starting points for reps, not awards, and each is an open competition on the field. All five stand unchanged after the ten OTA days: the named competition took real reps, the non-contact evidence decides none of the jobs, and Turner's conditional swap was not triggered ([OTA handoff](../career/2014/offseason/otas/output.md#open-competitions)). Under the E1 standard the Communication badge is assessed Average for each unit's named spring lineup, and Plan execution is not assessed for either unit; neither is a game input. Still open and not filled by the chart: TE3 (Reisner), the corner places of Brent Grimes and Ball and the reserve corner (Rutland). The March signings other than Nicks, the six futures and the 23 other rookies are under contract with no place set ([working depth chart](../career/2014/depth_chart.md)); rookies are added, not placed, until Stone decides.
 
 - QB: Cousins QB1, Henne QB2 (re-signed April 4), John Parker Wilson QB3; Bray and Shaw, no role set.
 - OL, for reps: Monroe (signed through 2018), Bitonio at left guard (starting point; Norwell the competition), Brewster at center, Turner at right guard (starting point; Bitonio or Norwell if he struggles), Johnson. Bradfield (tendered, outside the program) is the carried swing tackle and sixth lineman; Asper interior depth; Pasztor (tendered, outside the program) carried. Linsley, Leno, Lucas, Feiler, Shatley and Larsen, no place set. Brewster is kept; the Rackley-or-Brewster trade closed with Rackley.
@@ -122,15 +122,16 @@ Execution and observable effort remain separate: protection losses were techniqu
 |---|---|
 | Alan Ball, CB | Not re-signed (Stone's May 12 conversation; [record](../career/2014/offseason/free_agency/alan_ball_2014-05-12.md)); available as an unplaced free agent and first on the veteran-corner call list if the room is hit, subject to a current physical. No decision pending |
 | Brent Grimes, CB | Offer withdrawn; not pursued |
-| Left guard, right guard, Edge 1, WR1 and WR3 | Resolved May 12 as rep starting points with named competition (section 7); each is an open competition on the field, reviewed from OTA and camp evidence. Every other rookie's place is Stone's, from the work |
+| Left guard, right guard, Edge 1, WR1 and WR3 | Rep starting points with named competition (section 7), unchanged after the OTAs; each is an open competition reviewed from minicamp and camp evidence. Every other rookie's place is Stone's, from the work |
 | James Hurst, OT | Held on the undrafted board until a medical clearance is recorded |
-| Phase-plan decisions | All adopted. Stone's April 18 decisions stand, with the cross-training list revised on May 1 ([record](../career/2014/offseason/stone_april_18_2014_decisions.md); [amendment](../career/2014/offseason/stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-unsigned-tenders-and-the-cross-training-list)). On May 11 Stone added a man-capable, Cover 1-heavy defensive practice emphasis from the active Iteration I book: Nickel Even, Cover 1 and 1 Robber/Rat receive deliberate work, paired with Cover 3/Quarters from related pictures; Cover 0 remains selective and no usage quota is created; it was taught as written in Phase Two's last two weeks. The offseason-program output (Phases One and Two) and the rookie-minicamp output are COMPLETE through May 23 and May 17; the OTA, mandatory-minicamp and training-camp outputs are NOT_STARTED |
-| Unsigned tenders | Bradfield, Clemons, Brown and Pasztor: outside the program until they sign; catch-up plans ready. Caldwell's office |
-| Film | No individual packet issued; packets await coach approval; January 31 receipts unverified. Individual written teaching notes for Phase One, rookie minicamp and Phase Two are held by the position coaches |
+| Phase-plan decisions | All adopted. Stone's April 18 decisions stand, with the cross-training list revised on May 1 ([record](../career/2014/offseason/stone_april_18_2014_decisions.md); [amendment](../career/2014/offseason/stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-unsigned-tenders-and-the-cross-training-list)). On May 11 Stone added a man-capable, Cover 1-heavy defensive practice emphasis from the active Iteration I book: Nickel Even, Cover 1 and 1 Robber/Rat receive deliberate work, paired with Cover 3/Quarters from related pictures; Cover 0 remains selective and no usage quota is created; it was taught as written in Phase Two's last two weeks. The offseason-program output (Phases One and Two), the rookie-minicamp output and the OTA output are COMPLETE through May 23, May 17 and June 13; the mandatory-minicamp and training-camp outputs are NOT_STARTED |
+| Unsigned tenders | Bradfield, Clemons, Brown and Pasztor: outside the program until they sign (Stone's instruction on file); catch-up plans ready; not under contract, so the mandatory minicamp does not apply to them. Caldwell's office |
+| Bradfield's June 15 tender (June 16) | Open administrative item for Caldwell. The [library](../library/2014_league_calendar_and_financial_rules.md) records Monday, June 16 as the adjusted deadline to withdraw an RFA qualifying offer and substitute a June 15 tender (the adjusted date confirmed by the direct-source verification; the substitution rule rests on one source), and does not record whether the 110 percent of prior salary alternative applies to a given player. Bradfield's 2013 salary is unresolved in the contract table, so no reduced figure is computed; his $1,431,000 qualifying offer stands until Caldwell acts |
+| Film | No individual packet issued; packets await coach approval; January 31 receipts unverified. Individual written teaching notes for Phase One, rookie minicamp, Phase Two and the OTAs are held by the position coaches. Cousins asked to see the June 9 overload from the end-zone angle before minicamp; Bates shows it June 17 |
 
 Research gaps still open:
 
-- The rails from March 11 evening to May 23 are unswept beyond the targets' own moves, the branch trades, Allen's April 22 retirement and the Entry 108 draft pairing and undrafted moves. The other clubs' full real 2014 draft and undrafted classes are applied when their Week 1 rails are built. The March 4 to 11 AFC rails had no independent second pass; San Francisco, St. Louis, Tampa Bay and Washington were not swept for that window, and twelve clubs were not individually swept for March 1 to 3 (each club page's coverage note).
+- The rails from March 11 evening to June 13 are unswept beyond the targets' own moves, the branch trades, Allen's April 22 retirement and the Entry 108 draft pairing and undrafted moves. The other clubs' full real 2014 draft and undrafted classes are applied when their Week 1 rails are built. The March 4 to 11 AFC rails had no independent second pass; San Francisco, St. Louis, Tampa Bay and Washington were not swept for that window, and twelve clubs were not individually swept for March 1 to 3 (each club page's coverage note).
 - Real 2014 undrafted terms were not recovered for eight of the signed rookies and for Morris; their real clubs come from the contracts file's club field.
 - The credited seasons behind the exclusive-rights tenders and Cain's minimum are unverified.
 - Retirement checks: Rackley, Owens and Rutland have no dated public retirement found (`career/2014/offseason/league_rails/retirements.md`). Any real retirement by a Jacksonville player on or before the master date must still be checked.
@@ -141,20 +142,15 @@ From [the 2014 calendar](../career/2014/calendar.md):
 
 | Date, 2014 | Event | Jacksonville position |
 |---|---|---|
-| May 27 to 29 | OTA block 1 (Phase Three), days 1 to 3 | [OTA plan](../career/2014/offseason/otas/plan.md); the first lawful non-contact opposition for the Boot Flood read, protection identification, the Cover 1 help rules, the backup relay, the cross-training lanes and every rookie |
-| May 29 | First-OTA-block team dinner | Voluntary social calendar, no attendance sheet |
-| June 2 | Adjusted June 1 tender deadline | Applicable UFA/RFA cases checked individually; Caldwell's office |
-| June 2 to 5 | OTA block 2, days 4 to 6 (June 2, 3 and 5) | OTA plan |
-| June 3 | Family barbecue | Voluntary |
-| June 5 | Full-team cookout | Voluntary |
-| June 9 to 13 | OTA block 3, days 7 to 10 (June 9, 10, 12 and 13) | OTA plan; ten OTA days in all |
-| June 10 | Family dinner | Voluntary |
-| June 12 | End-of-OTA team barbecue | Voluntary |
-| June 16 | Physical-examination day; adjusted June 15 RFA tender date | Separate authorities: medical staff; Caldwell's office |
-| June 17 to 19 | Mandatory veteran minicamp | [Minicamp plan](../career/2014/offseason/mandatory_minicamp/plan.md) |
-| June 18 | Full family minicamp dinner | Voluntary |
+| June 16 | Physical-examination day; adjusted June 15 RFA tender date | Separate authorities: medical staff for the physicals; Caldwell for Bradfield's tender substitution question (section 8) |
+| June 17 to 19 | Mandatory veteran minicamp | [Minicamp plan](../career/2014/offseason/mandatory_minicamp/plan.md) with the narrow agenda from the [OTA handoff](../career/2014/offseason/otas/output.md#carry-forward-to-mandatory-minicamp-june-17-to-19); attendance is mandatory for players under contract, and the four unsigned tenders are not under contract |
+| June 18 | Full family minicamp dinner | Voluntary social calendar, no attendance sheet |
+| June 20 | Staff spring handoff; voluntary summer material preparation | No club-directed extra workout or meeting; verify permitted delivery and contact |
+| June 22 to 28 | Rookie Symposium, Aurora, Ohio | League event; actual eligible participants determined at the date |
+| After June 20 | Summer break | Player-directed within the rules; no attendance or communication penalty |
+| July 14 | League camp report-date publication | Gated; historical camp: rookies report July 21, veterans July 24, first practice July 25, first full pads July 30, scrimmage August 2 ([camp plan](../career/2014/offseason/training_camp/plan.md)) |
 
-User decisions owed: none required before OTAs. The Phase Two handoff and the rookie minicamp surfaced no new user-controlled choice.
+User decisions owed: none required before mandatory minicamp. The OTA handoff surfaced no new user-controlled choice.
 
 ## 10. Engine and 2014 readiness
 

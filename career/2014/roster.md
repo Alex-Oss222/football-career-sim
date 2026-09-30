@@ -1,11 +1,11 @@
 # Jacksonville Jaguars roster
 
-**As of:** May 23, 2014
+**As of:** June 13, 2014
 **Canonical controlled-player count:** **78** (offseason roster of 90: 74 under signed contracts, including the nine 2014 draft selections and 17 undrafted rookies signed May 8 to 11, and four unsigned tenders).
 **Practice squad:** 0. No 2014 practice squad exists before the regular season.
 **2013 season:** preseason 2-2; regular season 10-6 (Week 1: Jacksonville 31, Kansas City 13; Week 2: Oakland 17, Jacksonville 13; Week 3: Jacksonville 16, Seattle 13; Week 4: Jacksonville 31, Indianapolis 10; Week 5: St. Louis 26, Jacksonville 24; Week 6: Jacksonville 26, Denver 10; Week 7: Jacksonville 30, San Diego 24; Week 8: Jacksonville 20, San Francisco 13 at Wembley Stadium, London; Week 10: Tennessee 41, Jacksonville 11; Week 11: Jacksonville 29, Arizona 7; Week 12: Houston 38, Jacksonville 6; Week 13: Jacksonville 22, Cleveland 19, overtime; Week 14: Jacksonville 21, Houston 20; Week 15: Buffalo 45, Jacksonville 16; Week 16: Jacksonville 38, Tennessee 27; Week 17: Indianapolis 23, Jacksonville 22); postseason 1-1 (AFC Wild Card: Jacksonville 38, Kansas City 14; AFC Divisional: Tennessee 20, Jacksonville 13).
 
-<!-- player-ages-as-of: 2014-05-23 -->
+<!-- player-ages-as-of: 2014-06-13 -->
 
 Birth dates are sourced in the [identity registry](../../library/data/player_birth_dates.json). Age is completed years at the master date in Document 5; [league ages](player_ages.md) update through the same renderer. Transaction history is in the [2014 ledger](ledger.md).
 
@@ -103,7 +103,7 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | Lavar Edwards | DE | 1990-04-29 | 24 | Offseason roster | No communicated restriction | Edge/front depth and teams (dressed Weeks 12 and 14-17; inactive Week 13) |
 | C.J. Wilson | DE | 1987-03-30 | 27 | Offseason roster (re-signed March 28, 2014) | No communicated restriction (current physical March 26) | Front depth; roster competition |
 | Jeremy Mincey | DE | 1983-12-14 | 30 | Offseason roster | No communicated restriction | Edge 1 rep starting point (Stone, May 12, 2014; Branch the competition; not an award); Edge 2 in 2013 |
-| Daniel Te'o-Nesheim | DE | 1987-06-12 | 26 | Offseason roster (signed March 18, 2014) | No communicated restriction | Role not set |
+| Daniel Te'o-Nesheim | DE | 1987-06-12 | 27 | Offseason roster (signed March 18, 2014) | No communicated restriction | Role not set |
 | Kasim Edebali | DE | 1989-08-17 | 24 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
 | Jackson Jeffcoat | DE | 1990-12-26 | 23 | Offseason roster (Rookie, undrafted; signed May 10, 2014) | No communicated restriction | Role not set |
 
@@ -115,7 +115,7 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 | Roy Miller | DT | 1987-07-09 | 26 | Offseason roster | No communicated restriction | Starting DT |
 | C.J. Mosley | DT | 1983-08-06 | 30 | Offseason roster | No communicated restriction | Interior DL rotation (dressed from Week 11) |
 | Jeris Pendleton | DT | 1983-11-07 | 30 | Offseason roster | No communicated restriction | Role not set |
-| D'Anthony Smith | DT | 1988-06-09 | 25 | Offseason roster (reserve/future contract effective March 11) | No communicated restriction | Role not set |
+| D'Anthony Smith | DT | 1988-06-09 | 26 | Offseason roster (reserve/future contract effective March 11) | No communicated restriction | Role not set |
 | Jerome Long | DT | 1990-04-09 | 24 | Offseason roster (reserve/future contract effective March 11) | No communicated restriction | Role not set |
 | Aaron Donald | DT | 1991-05-23 | 23 | Offseason roster (Rookie, drafted No. 13, May 8, 2014; rookie contract signed May 11, 2014) | No communicated restriction | Role not set (interior defensive line) |
 
@@ -165,7 +165,7 @@ Players are grouped by position. Pos is the roster position in Document 4. Statu
 
 ## 2014 rookies
 
-The nine draft selections of May 8 to 10 (Donald, Bitonio, Adams, Turner, Telvin Smith, Linsley, Leno, Thomas and Butler) signed four-year rookie contracts on May 11, 2014, and 17 undrafted rookies signed three-year minimum contracts on May 10 ([draftees](offseason/draft/draftees.md); [undrafted signings](offseason/draft/udfa_signings.md)). They are listed in their position groups above; Stone places rookies only by decision. His May 12 instruction gave Bitonio (left guard), Turner (right guard) and Adams (WR3) rep starting points with named competition, and named Norwell and Hawkins as competition; the other 21 rookies have no role set. All 26 completed club physicals May 13 to 15 with no communicated restriction and attended the May 16 and 17 rookie minicamp ([record](offseason/rookie_minicamp/output.md)). James Hurst (OT, North Carolina) is held on the undrafted board until a medical clearance is recorded. Alan Ball was not re-signed on May 12; he stays an unplaced free agent and is the first veteran corner Jacksonville calls if the room is hit.
+The nine draft selections of May 8 to 10 (Donald, Bitonio, Adams, Turner, Telvin Smith, Linsley, Leno, Thomas and Butler) signed four-year rookie contracts on May 11, 2014, and 17 undrafted rookies signed three-year minimum contracts on May 10 ([draftees](offseason/draft/draftees.md); [undrafted signings](offseason/draft/udfa_signings.md)). They are listed in their position groups above; Stone places rookies only by decision. His May 12 instruction gave Bitonio (left guard), Turner (right guard) and Adams (WR3) rep starting points with named competition, and named Norwell and Hawkins as competition; the other 21 rookies have no role set. All 26 completed club physicals May 13 to 15 with no communicated restriction, attended the May 16 and 17 rookie minicamp ([record](offseason/rookie_minicamp/output.md)) and worked their primary jobs through the ten OTA days, May 27 to June 13 ([OTA record](offseason/otas/output.md)), with no injury or restriction communicated. James Hurst (OT, North Carolina) is held on the undrafted board until a medical clearance is recorded. Alan Ball was not re-signed on May 12; he stays an unplaced free agent and is the first veteran corner Jacksonville calls if the room is hit.
 
 ## Reserve/future contracts (2014) and the 2013 practice squad
 
@@ -177,7 +177,7 @@ Jacksonville's 2013 practice squad, formed September 1, 2013, had eight players.
 | Richard Murphy | RB | 1986-09-18 | 27 | Effective March 11, 2014 (current controlled players) | February 3, 2014 |
 | Jerrell Jackson | WR | 1990-02-06 | 24 | Effective March 11, 2014 (current controlled players) | February 3, 2014 |
 | Jerome Long | DT | 1990-04-09 | 24 | Effective March 11, 2014 (current controlled players) | February 3, 2014 |
-| D'Anthony Smith | DT | 1988-06-09 | 25 | Effective March 11, 2014 (current controlled players) | February 5, 2014 (market draw against a real Seattle reserve/future contract of the same date) |
+| D'Anthony Smith | DT | 1988-06-09 | 26 | Effective March 11, 2014 (current controlled players) | February 5, 2014 (market draw against a real Seattle reserve/future contract of the same date) |
 | Antwon Blake | S | 1990-08-09 | 23 | Effective March 11, 2014 (current controlled players) | February 3, 2014 |
 
 Brandon King (DB) and Will Ta'ufo'ou (FB) were not offered contracts. They left as free agents when their practice-squad contracts ended; no later destination is recorded for either.
@@ -215,10 +215,10 @@ Uche Nwaneri (G) was traded to Arizona with Jacksonville's 2015 first, 2015 four
 | Jeremy Cain | LS | Contract expired; unrestricted free agent | Re-signed March 19, 2014: one year, $855,000 |
 | Maurice Jones-Drew | RB | Contract expired; unrestricted free agent | Re-signed March 28, 2014: two years, $7.0M, $3.25M guaranteed |
 | C.J. Wilson | DE | Contract expired; unrestricted free agent | Re-signed March 28, 2014: one year, $795,000 |
-| Alan Ball | CB | Contract expired; unrestricted free agent | Not re-signed May 12, 2014 after Stone's conversation; first veteran corner to call if the room is hit |
-| Brent Grimes | CB | Contract expired; unrestricted free agent | Not pursued under Stone's March 31 plan |
-| Allen Reisner | TE | Not tendered; unrestricted free agent | None |
-| Kevin Rutland | CB | Not tendered; unrestricted free agent | None |
+| Alan Ball | CB | Contract expired; unrestricted free agent | Not re-signed May 12, 2014 after Stone's conversation; first veteran corner to call if the room is hit. No June 1 tender filed; no rights retained |
+| Brent Grimes | CB | Contract expired; unrestricted free agent | Not pursued under Stone's March 31 plan. No June 1 tender filed; no rights retained |
+| Allen Reisner | TE | Not tendered; unrestricted free agent | None; no June 1 tender filed |
+| Kevin Rutland | CB | Not tendered; unrestricted free agent | None; no June 1 tender filed |
 | Brad Meester | C | Retired; contract expired | None |
 
 ### August 31, 2013
