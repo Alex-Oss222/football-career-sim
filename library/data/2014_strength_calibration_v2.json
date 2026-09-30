@@ -1,0 +1,8523 @@
+{
+ "schema_version": 1,
+ "built_by": "scripts/research/build_2014_strength_calibration_v2.py",
+ "policy": "runtime/2014_engine_decisions.md E1 second pass (honours + production); runtime/defect_register.md items 1 and 19",
+ "preregistered": {
+  "written_before_first_fit": "2026-09-30",
+  "player_value": {
+   "rule": "value = max(honours_value, production_value)",
+   "honours_value": "as the first study: max over admissible honours of (tier value - 2) x evidence weight; 0 when the player holds no admissible honour; never below 0",
+   "production_value": "the player's window production tier mapped Elite 2, Plus 1, Average 0, Below-Average -1, Replacement-Level -2, times its evidence weight (1.0 Confirmed two-pass or Corrected, 0.5 Unverified); 0 when the player has no qualifying window season",
+   "window": "the two most recent completed pre-divergence seasons before the season being predicted (2012 target: 2010-2011; 2014 branch: 2011-2012); 2014 only: 2010 is a fallback discounted one tier when neither window season qualifies (library/data/2010_2012_production_evidence.json)",
+   "side_rule": "a production tier counts only on its own side: a QB tier only in the passer slot (weight 3), RB/WR/TE tiers in the other offensive slots, DL/LB/DB tiers in the defensive slots; offensive linemen carry no production tier (job evidence only) and so contribute only their honours value; a non-QB tier never counts in the passer slot",
+   "correction_2026_09_30": "the first fit of this script read the rule as max(honours value, production value) with honours value 0 for an unhonoured player, which floored every unhonoured starter at 0 and let no Below-Average (-1) or Replacement-Level (-2) tier enter a composite, contradicting the declared tier values; a unit test on the runtime exposed it before any game or acceptance run. The rule as declared and now implemented: with an admissible honour, the larger of the honour and the production value; without one, the production value, negative tiers included. The first (floored) fit is kept in the JSON as variants_floored_first_fit for the record",
+   "why_max": "a production tier is a measured, pre-divergence, two-pass verified season outcome that covers every qualifier, so it can place a player above or below Average on its own; an honour is an expert judgement that can only lift a player. Taking the maximum keeps the honour's lift for an honoured player whose production is contaminated by his old offense or defense, and lets production speak for the unhonoured majority. The alternative, a fitted two-term model, is run as a sensitivity and reported; the kernel adopts the max rule whatever the two-term fit says, because that choice was made here, before the fit"
+  },
+  "position_weights": {
+   "QB": 3,
+   "other offensive starter": 1,
+   "defensive starter": 1
+  },
+  "age_shrink": {
+   "rule": "halve the honours value of a player whose only admissible honours come from the earlier season of the window (none in the later season) and whose age on September 1 of the target season is at or above the group threshold; applied to the honours value before the max, never to production",
+   "thresholds": {
+    "QB": 35,
+    "RB": 29,
+    "WR": 31,
+    "TE": 31,
+    "OL": 32,
+    "DL": 31,
+    "LB": 31,
+    "DB": 31
+   },
+   "birth_dates": "2012 target: the nflverse 2012 weekly roster birth dates; 2014 branch: library/data/player_birth_dates.json by gsis id",
+   "adoption": "kept in the kernel only if the leave-one-club-out skill improves on both sides against the same composite without it; otherwise reported and left out"
+  },
+  "fit": "one slope per side by drive-weighted least squares on the 32 clubs (with intercept); shrinkage prior N(0, 0.025^2) per composite unit (the installed kernel's per-tier edge); leave-one-club-out prediction; joint drive-level check with home indicator and game-cluster bootstrap (500 draws, seed 20140401)",
+  "targets": "per-drive touchdown share (fixed_drive_result == 'Touchdown') and points per drive, offense and defense, 2012 regular season, all drives with a possession team",
+  "edge_target": "implied true SD of per-drive offense-minus-defense TD-share difference about 0.048 (offense:defense variance about 4:1), derived from 2012 nflverse drives; reported, never used to inflate the fitted scale",
+  "points_conversion": "7.0 points per drive per unit of touchdown share and 11.8 drives per team-game (the first study's conversion), so a per-drive edge SD s is s x 7.0 x 11.8 points per team-game",
+  "variants": [
+   "honours_only (the first study, recomputed)",
+   "production_only",
+   "combined_max (primary)",
+   "combined_max_age_shrink",
+   "two_term_sensitivity (honours and production composites as two predictors)",
+   "continuous_production_sensitivity (added after the first fit was read, labelled as such: the production value is the within-group, within-season z-score of the shrunk metric clipped to +/-2 instead of the tier value; reported only, never adopted by this study)"
+  ],
+  "attribution_tilt": {
+   "source": "2012 regular season (nflverse stats_player_reg_2012): each club's top-target player's share of club targets, top-carry player's share of club carries, and top sack-getter's share of club sacks, grouped by that player's combined tier from the 2010-2011 window",
+   "factor": "tier mean share / all-club mean share, clipped to [0.6, 1.6], the Average tier included (so the 2012 mix of tiers reproduces the all-club mean the rank shapes were built on); a tier with fewer than 3 clubs takes the nearest populated tier's factor toward Average",
+   "use": "runtime/usage.py multiplies the sourced rank weight of a player by his tier factor when a carry, target or sack credit is attributed; it never touches a possession draw or a score"
+  }
+ },
+ "sources": {
+  "honours_evidence": {
+   "file": "library/data/2010_2012_honours_evidence.json",
+   "sha256": "65dc3d8ec53c9418f7aab83e5bbff3441e735355f74d819f03ea92d1c404baca"
+  },
+  "production_evidence": {
+   "file": "library/data/2010_2012_production_evidence.json",
+   "sha256": "19ec6bbb0c3ea581b535fa4a4f0ae217735f6c4470b36a476abd6000b16c2998"
+  },
+  "depth_charts_2012.csv": {
+   "sha256": "e091a7fa0343fe3ae0bcee9202e1d8ca1ff859db398d20ab751017df29e85719"
+  },
+  "roster_weekly_2012.csv": {
+   "sha256": "262fd2f9a862c3b97275d91c60951f940a4e82989503b8359ac11b12a76c0e2f"
+  },
+  "stats_player_reg_2012.csv": {
+   "sha256": "6cdfbf3b291cf1349b33fe8e90542d8ae54cca3726769866f94feaf866b329b5"
+  },
+  "play_by_play_2012.csv.gz": {
+   "sha256": "ff1cda2e26610ef8720324e442d1e5ebc24918e08fd1d2933590b7b91a7068cd"
+  },
+  "league_players": {
+   "file": "career/2014/league/personnel/league_players.json",
+   "sha256": "2c90dbc1883332a5a756fe9cf60bf8c51d69fd4533770c828c3362558c8b2cc9"
+  },
+  "player_birth_dates": {
+   "file": "library/data/player_birth_dates.json",
+   "sha256": "c8733555c6ca412baff6a86ec265eff56a48280e95451bbd9c847f4d53daef5a"
+  }
+ },
+ "before_first_study": {
+  "offense": {
+   "r2": 0.23934335101384085,
+   "loo_skill": 0.18229958066452934,
+   "shrunk_slope": 0.00895127316177478,
+   "implied_club_sd": 0.026044165426003154,
+   "fraction_of_target": 0.5723992401319374,
+   "points_per_team_game_sd": 2.1512480641878606
+  },
+  "defense": {
+   "r2": 0.09818458671537467,
+   "loo_skill": 0.05655830973696008,
+   "shrunk_slope": 0.006409703179081172,
+   "implied_club_sd": 0.011216519025730062,
+   "fraction_of_target": 0.5029829159520207,
+   "points_per_team_game_sd": 0.9264844715253031
+  },
+  "net": {
+   "implied_edge_sd": 0.028356813145901685,
+   "fraction_of_target": 0.5907669405396184,
+   "points_per_team_game_sd": 2.342272765851479
+  }
+ },
+ "study_2012": {
+  "season": 2012,
+  "honour_seasons": [
+   2010,
+   2011
+  ],
+  "production_seasons": [
+   2010,
+   2011
+  ],
+  "league": {
+   "drives": 6053,
+   "td_share": 0.19461424087229473,
+   "clubs": {
+    "ARI": {
+     "off_drives": 212,
+     "off_td": 0.0991,
+     "off_ppd": 1.0472,
+     "def_drives": 211,
+     "def_td": 0.1564,
+     "def_ppd": 1.4502
+    },
+    "ATL": {
+     "off_drives": 178,
+     "off_td": 0.2472,
+     "off_ppd": 2.2753,
+     "def_drives": 181,
+     "def_td": 0.1657,
+     "def_ppd": 1.6022
+    },
+    "BAL": {
+     "off_drives": 200,
+     "off_td": 0.205,
+     "off_ppd": 1.885,
+     "def_drives": 193,
+     "def_td": 0.1554,
+     "def_ppd": 1.6632
+    },
+    "BUF": {
+     "off_drives": 193,
+     "off_td": 0.1917,
+     "off_ppd": 1.6632,
+     "def_drives": 188,
+     "def_td": 0.2606,
+     "def_ppd": 2.1649
+    },
+    "CAR": {
+     "off_drives": 176,
+     "off_td": 0.233,
+     "off_ppd": 1.8977,
+     "def_drives": 178,
+     "def_td": 0.1854,
+     "def_ppd": 1.8596
+    },
+    "CHI": {
+     "off_drives": 196,
+     "off_td": 0.1633,
+     "off_ppd": 1.5306,
+     "def_drives": 196,
+     "def_td": 0.1327,
+     "def_ppd": 1.2857
+    },
+    "CIN": {
+     "off_drives": 196,
+     "off_td": 0.1939,
+     "off_ppd": 1.8163,
+     "def_drives": 193,
+     "def_td": 0.1606,
+     "def_ppd": 1.513
+    },
+    "CLE": {
+     "off_drives": 195,
+     "off_td": 0.1487,
+     "off_ppd": 1.441,
+     "def_drives": 198,
+     "def_td": 0.202,
+     "def_ppd": 1.7172
+    },
+    "DAL": {
+     "off_drives": 181,
+     "off_td": 0.2044,
+     "off_ppd": 1.9227,
+     "def_drives": 179,
+     "def_td": 0.2235,
+     "def_ppd": 2.0279
+    },
+    "DEN": {
+     "off_drives": 191,
+     "off_td": 0.2618,
+     "off_ppd": 2.2094,
+     "def_drives": 194,
+     "def_td": 0.1546,
+     "def_ppd": 1.3711
+    },
+    "DET": {
+     "off_drives": 200,
+     "off_td": 0.19,
+     "off_ppd": 1.8,
+     "def_drives": 197,
+     "def_td": 0.2132,
+     "def_ppd": 1.9188
+    },
+    "GB": {
+     "off_drives": 185,
+     "off_td": 0.2649,
+     "off_ppd": 2.1676,
+     "def_drives": 189,
+     "def_td": 0.1905,
+     "def_ppd": 1.7407
+    },
+    "HOU": {
+     "off_drives": 203,
+     "off_td": 0.202,
+     "off_ppd": 1.867,
+     "def_drives": 205,
+     "def_td": 0.1805,
+     "def_ppd": 1.5707
+    },
+    "IND": {
+     "off_drives": 183,
+     "off_td": 0.1913,
+     "off_ppd": 1.7596,
+     "def_drives": 180,
+     "def_td": 0.2056,
+     "def_ppd": 1.9389
+    },
+    "JAX": {
+     "off_drives": 190,
+     "off_td": 0.1263,
+     "off_ppd": 1.2737,
+     "def_drives": 199,
+     "def_td": 0.206,
+     "def_ppd": 1.9497
+    },
+    "KC": {
+     "off_drives": 185,
+     "off_td": 0.0919,
+     "off_ppd": 1.0919,
+     "def_drives": 182,
+     "def_td": 0.2198,
+     "def_ppd": 2.0659
+    },
+    "MIA": {
+     "off_drives": 187,
+     "off_td": 0.1551,
+     "off_ppd": 1.4492,
+     "def_drives": 187,
+     "def_td": 0.1551,
+     "def_ppd": 1.5829
+    },
+    "MIN": {
+     "off_drives": 184,
+     "off_td": 0.1902,
+     "off_ppd": 1.9076,
+     "def_drives": 187,
+     "def_td": 0.2032,
+     "def_ppd": 1.8235
+    },
+    "NE": {
+     "off_drives": 192,
+     "off_td": 0.3229,
+     "off_ppd": 2.6719,
+     "def_drives": 196,
+     "def_td": 0.1939,
+     "def_ppd": 1.6276
+    },
+    "NO": {
+     "off_drives": 192,
+     "off_td": 0.276,
+     "off_ppd": 2.2188,
+     "def_drives": 193,
+     "def_td": 0.2591,
+     "def_ppd": 2.2176
+    },
+    "NYG": {
+     "off_drives": 176,
+     "off_td": 0.25,
+     "off_ppd": 2.3011,
+     "def_drives": 179,
+     "def_td": 0.2067,
+     "def_ppd": 1.8436
+    },
+    "NYJ": {
+     "off_drives": 196,
+     "off_td": 0.1429,
+     "off_ppd": 1.2653,
+     "def_drives": 199,
+     "def_td": 0.191,
+     "def_ppd": 1.6633
+    },
+    "OAK": {
+     "off_drives": 194,
+     "off_td": 0.1495,
+     "off_ppd": 1.4948,
+     "def_drives": 187,
+     "def_td": 0.2513,
+     "def_ppd": 2.2567
+    },
+    "PHI": {
+     "off_drives": 190,
+     "off_td": 0.1526,
+     "off_ppd": 1.4263,
+     "def_drives": 183,
+     "def_td": 0.235,
+     "def_ppd": 2.082
+    },
+    "PIT": {
+     "off_drives": 188,
+     "off_td": 0.1862,
+     "off_ppd": 1.75,
+     "def_drives": 186,
+     "def_td": 0.1505,
+     "def_ppd": 1.5054
+    },
+    "SD": {
+     "off_drives": 181,
+     "off_td": 0.1657,
+     "off_ppd": 1.5746,
+     "def_drives": 185,
+     "def_td": 0.2108,
+     "def_ppd": 1.7405
+    },
+    "SEA": {
+     "off_drives": 172,
+     "off_td": 0.2616,
+     "off_ppd": 2.2151,
+     "def_drives": 173,
+     "def_td": 0.1329,
+     "def_ppd": 1.3237
+    },
+    "SF": {
+     "off_drives": 178,
+     "off_td": 0.2247,
+     "off_ppd": 2.0618,
+     "def_drives": 181,
+     "def_td": 0.1492,
+     "def_ppd": 1.3536
+    },
+    "STL": {
+     "off_drives": 186,
+     "off_td": 0.1505,
+     "off_ppd": 1.4032,
+     "def_drives": 185,
+     "def_td": 0.1784,
+     "def_ppd": 1.6973
+    },
+    "TB": {
+     "off_drives": 195,
+     "off_td": 0.2051,
+     "off_ppd": 1.8513,
+     "def_drives": 194,
+     "def_td": 0.2268,
+     "def_ppd": 1.8866
+    },
+    "TEN": {
+     "off_drives": 193,
+     "off_td": 0.1503,
+     "off_ppd": 1.4093,
+     "def_drives": 191,
+     "def_td": 0.2461,
+     "def_ppd": 2.178
+    },
+    "WAS": {
+     "off_drives": 185,
+     "off_td": 0.2595,
+     "off_ppd": 2.2054,
+     "def_drives": 184,
+     "def_td": 0.2283,
+     "def_ppd": 2.0707
+    }
+   }
+  },
+  "variants": {
+   "honours_only": {
+    "fits": {
+     "offense": {
+      "intercept": 0.1701519729675522,
+      "slope": 0.009076260121822128,
+      "se": 0.0029541324010893674,
+      "r2": 0.23934335101384085,
+      "loo": {
+       "rmse": 0.049554914994161633,
+       "null_rmse": 0.05480114407237279,
+       "skill": 0.18229958066452934
+      },
+      "shrunk_slope": 0.00895127316177478,
+      "shrunk_sd": 0.0029337215716852376,
+      "composite_mean": 2.703125,
+      "composite_sd": 2.9095487262327433,
+      "composite_min": 0.0,
+      "composite_max": 14.0,
+      "implied_club_sd": 0.026044165426003154,
+      "fraction_of_target": 0.5723992401319374,
+      "points_per_team_game_sd": 2.1512480641878606
+     },
+     "defense": {
+      "intercept": 0.2089459010220054,
+      "slope": 0.006544171611813427,
+      "se": 0.0036210224789884854,
+      "r2": 0.09818458671537467,
+      "loo": {
+       "rmse": 0.03594926411584792,
+       "null_rmse": 0.03701114091397899,
+       "skill": 0.05655830973696008
+      },
+      "shrunk_slope": 0.006409703179081172,
+      "shrunk_sd": 0.0035836273333608192,
+      "composite_mean": 2.203125,
+      "composite_sd": 1.7499279939103116,
+      "composite_min": 0.0,
+      "composite_max": 7.5,
+      "implied_club_sd": 0.011216519025730062,
+      "fraction_of_target": 0.5029829159520207,
+      "points_per_team_game_sd": 0.9264844715253031
+     }
+    },
+    "net": {
+     "implied_edge_sd": 0.028356813145901685,
+     "fraction_of_target": 0.5907669405396184,
+     "points_per_team_game_sd": 2.342272765851479,
+     "direct_net_fit": {
+      "slope_on_predicted_edge": 0.6812042205516677,
+      "se": 0.48457555908270505,
+      "r2": 0.06180231608698572,
+      "loo": {
+       "rmse": 0.0707351116772331,
+       "null_rmse": 0.068495930370387,
+       "skill": -0.06645012395714955
+      }
+     }
+    },
+    "drive_joint": {
+     "td": {
+      "intercept": 0.172679096276144,
+      "b_off": 0.008939355136816159,
+      "se_off": 0.0018284432625591369,
+      "b_def_raw": -0.006208538607682518,
+      "se_def": 0.0028144713650949363,
+      "b_def": 0.006208538607682518,
+      "home": 0.022723064759409536,
+      "se_home": 0.010225286669812822
+     }
+    },
+    "clubs_composite": {
+     "ARI": [
+      1.0,
+      1.0
+     ],
+     "ATL": [
+      7.0,
+      2.0
+     ],
+     "BAL": [
+      3.5,
+      5.0
+     ],
+     "BUF": [
+      0.0,
+      1.0
+     ],
+     "CAR": [
+      2.5,
+      0.0
+     ],
+     "CHI": [
+      1.5,
+      4.5
+     ],
+     "CIN": [
+      0.5,
+      1.0
+     ],
+     "CLE": [
+      2.0,
+      0.0
+     ],
+     "DAL": [
+      2.0,
+      3.0
+     ],
+     "DEN": [
+      1.5,
+      2.5
+     ],
+     "DET": [
+      2.0,
+      2.0
+     ],
+     "GB": [
+      7.0,
+      4.5
+     ],
+     "HOU": [
+      3.5,
+      2.0
+     ],
+     "IND": [
+      2.0,
+      1.0
+     ],
+     "JAX": [
+      0.5,
+      0.0
+     ],
+     "KC": [
+      3.0,
+      2.0
+     ],
+     "MIA": [
+      2.0,
+      1.0
+     ],
+     "MIN": [
+      0.0,
+      2.0
+     ],
+     "NE": [
+      14.0,
+      4.0
+     ],
+     "NO": [
+      6.0,
+      1.0
+     ],
+     "NYG": [
+      3.5,
+      5.0
+     ],
+     "NYJ": [
+      2.5,
+      2.0
+     ],
+     "OAK": [
+      0.0,
+      2.0
+     ],
+     "PHI": [
+      5.5,
+      3.0
+     ],
+     "PIT": [
+      5.5,
+      4.0
+     ],
+     "SD": [
+      4.0,
+      2.0
+     ],
+     "SEA": [
+      0.0,
+      1.0
+     ],
+     "SF": [
+      1.5,
+      7.5
+     ],
+     "STL": [
+      1.5,
+      1.0
+     ],
+     "TB": [
+      1.0,
+      0.0
+     ],
+     "TEN": [
+      0.0,
+      1.0
+     ],
+     "WAS": [
+      0.0,
+      2.5
+     ]
+    }
+   },
+   "production_only": {
+    "fits": {
+     "offense": {
+      "intercept": 0.1766097505476258,
+      "slope": 0.00558877845821645,
+      "se": 0.0016360874486799444,
+      "r2": 0.2800343396961753,
+      "loo": {
+       "rmse": 0.04904061227148688,
+       "null_rmse": 0.05480114407237279,
+       "skill": 0.19918441433283707
+      },
+      "shrunk_slope": 0.005564944627197796,
+      "shrunk_sd": 0.0016325951028541698,
+      "composite_mean": 3.25,
+      "composite_sd": 5.092689257255713,
+      "composite_min": -5.0,
+      "composite_max": 14.0,
+      "implied_club_sd": 0.028340533720153112,
+      "fraction_of_target": 0.6228688729703981,
+      "points_per_team_game_sd": 2.3409280852846472
+     },
+     "defense": {
+      "intercept": 0.23223819684275082,
+      "slope": 0.004832017260172092,
+      "se": 0.002656426647647044,
+      "r2": 0.0993352128081193,
+      "loo": {
+       "rmse": 0.03586007653940436,
+       "null_rmse": 0.03701114091397899,
+       "skill": 0.06123372678277783
+      },
+      "shrunk_slope": 0.004778070153050145,
+      "shrunk_sd": 0.0026415561742467466,
+      "composite_mean": 7.78125,
+      "composite_sd": 2.365537175576038,
+      "composite_min": 3.0,
+      "composite_max": 13.0,
+      "implied_club_sd": 0.011302702574550409,
+      "fraction_of_target": 0.506847649082978,
+      "points_per_team_game_sd": 0.9336032326578638
+     }
+    },
+    "net": {
+     "implied_edge_sd": 0.030511259184633526,
+     "fraction_of_target": 0.6356512330131985,
+     "points_per_team_game_sd": 2.5202300086507297,
+     "direct_net_fit": {
+      "slope_on_predicted_edge": 0.42011276354773536,
+      "se": 0.3545884932674989,
+      "r2": 0.044699358507012565,
+      "loo": {
+       "rmse": 0.0698397354449512,
+       "null_rmse": 0.068495930370387,
+       "skill": -0.03962241144642431
+      }
+     }
+    },
+    "drive_joint": {
+     "td": {
+      "intercept": 0.19539251709009817,
+      "b_off": 0.005412801222369966,
+      "se_off": 0.0009905054238023262,
+      "b_def_raw": -0.0038290081366478407,
+      "se_def": 0.0021223958424028875,
+      "b_def": 0.0038290081366478407,
+      "home": 0.023040516148923808,
+      "se_home": 0.010410480307743625
+     }
+    },
+    "clubs_composite": {
+     "ARI": [
+      -5.0,
+      10.0
+     ],
+     "ATL": [
+      6.0,
+      8.0
+     ],
+     "BAL": [
+      3.0,
+      6.0
+     ],
+     "BUF": [
+      4.0,
+      9.0
+     ],
+     "CAR": [
+      1.0,
+      7.0
+     ],
+     "CHI": [
+      -1.0,
+      12.0
+     ],
+     "CIN": [
+      3.0,
+      10.0
+     ],
+     "CLE": [
+      -3.0,
+      3.0
+     ],
+     "DAL": [
+      8.0,
+      7.0
+     ],
+     "DEN": [
+      6.0,
+      5.0
+     ],
+     "DET": [
+      6.0,
+      9.0
+     ],
+     "GB": [
+      11.0,
+      6.0
+     ],
+     "HOU": [
+      9.0,
+      9.0
+     ],
+     "IND": [
+      0.0,
+      7.0
+     ],
+     "JAX": [
+      -3.0,
+      7.0
+     ],
+     "KC": [
+      7.0,
+      6.0
+     ],
+     "MIA": [
+      0.0,
+      10.0
+     ],
+     "MIN": [
+      -2.0,
+      4.0
+     ],
+     "NE": [
+      14.0,
+      6.0
+     ],
+     "NO": [
+      11.0,
+      8.0
+     ],
+     "NYG": [
+      5.0,
+      10.0
+     ],
+     "NYJ": [
+      -4.0,
+      11.0
+     ],
+     "OAK": [
+      1.0,
+      8.0
+     ],
+     "PHI": [
+      8.0,
+      7.0
+     ],
+     "PIT": [
+      6.0,
+      7.0
+     ],
+     "SD": [
+      12.0,
+      3.0
+     ],
+     "SEA": [
+      0.0,
+      9.0
+     ],
+     "SF": [
+      1.0,
+      13.0
+     ],
+     "STL": [
+      -4.0,
+      10.0
+     ],
+     "TB": [
+      4.0,
+      8.0
+     ],
+     "TEN": [
+      0.0,
+      6.0
+     ],
+     "WAS": [
+      0.0,
+      8.0
+     ]
+    }
+   },
+   "combined_max": {
+    "fits": {
+     "offense": {
+      "intercept": 0.16979605820152427,
+      "slope": 0.005808694598490965,
+      "se": 0.0015746918566450585,
+      "r2": 0.31203880745087575,
+      "loo": {
+       "rmse": 0.04782232641632319,
+       "null_rmse": 0.05480114407237279,
+       "skill": 0.2384785366017631
+      },
+      "shrunk_slope": 0.005785739981127017,
+      "shrunk_sd": 0.001571577367687346,
+      "composite_mean": 4.296875,
+      "composite_sd": 5.171041223845511,
+      "composite_min": -4.0,
+      "composite_max": 17.0,
+      "implied_club_sd": 0.029918299952858954,
+      "fraction_of_target": 0.657545053908988,
+      "points_per_team_game_sd": 2.47125157610615
+     },
+     "defense": {
+      "intercept": 0.23221141845087048,
+      "slope": 0.004635887469609273,
+      "se": 0.002570070084564496,
+      "r2": 0.09784441180762482,
+      "loo": {
+       "rmse": 0.03582266408819538,
+       "null_rmse": 0.03701114091397899,
+       "skill": 0.06319151548850743
+      },
+      "shrunk_slope": 0.004587405854420489,
+      "shrunk_sd": 0.0025565960053650968,
+      "composite_mean": 8.109375,
+      "composite_sd": 2.4551932287138993,
+      "composite_min": 3.0,
+      "composite_max": 15.0,
+      "implied_club_sd": 0.011262967791135685,
+      "fraction_of_target": 0.5050658202302998,
+      "points_per_team_game_sd": 0.9303211395478077
+     }
+    },
+    "net": {
+     "implied_edge_sd": 0.03196809527534288,
+     "fraction_of_target": 0.6660019849029767,
+     "points_per_team_game_sd": 2.640564669743322,
+     "direct_net_fit": {
+      "slope_on_predicted_edge": 0.5143795894460407,
+      "se": 0.34948495287501935,
+      "r2": 0.06734570896416614,
+      "loo": {
+       "rmse": 0.06903672714734527,
+       "null_rmse": 0.068495930370387,
+       "skill": -0.015852961009673816
+      }
+     }
+    },
+    "drive_joint": {
+     "td": {
+      "intercept": 0.18911423625591628,
+      "b_off": 0.005650222712579207,
+      "se_off": 0.0009539087374767887,
+      "b_def_raw": -0.00372432283660227,
+      "se_def": 0.0019206476500723108,
+      "b_def": 0.00372432283660227,
+      "home": 0.022970947226458968,
+      "se_home": 0.010364243446205726
+     }
+    },
+    "clubs_composite": {
+     "ARI": [
+      -4.0,
+      10.0
+     ],
+     "ATL": [
+      8.0,
+      8.0
+     ],
+     "BAL": [
+      5.5,
+      8.0
+     ],
+     "BUF": [
+      4.0,
+      9.0
+     ],
+     "CAR": [
+      3.0,
+      7.0
+     ],
+     "CHI": [
+      0.5,
+      12.0
+     ],
+     "CIN": [
+      3.0,
+      10.0
+     ],
+     "CLE": [
+      -1.0,
+      3.0
+     ],
+     "DAL": [
+      9.0,
+      8.0
+     ],
+     "DEN": [
+      6.0,
+      5.0
+     ],
+     "DET": [
+      7.0,
+      9.0
+     ],
+     "GB": [
+      11.0,
+      6.0
+     ],
+     "HOU": [
+      10.0,
+      9.0
+     ],
+     "IND": [
+      2.0,
+      7.0
+     ],
+     "JAX": [
+      -2.5,
+      7.0
+     ],
+     "KC": [
+      7.0,
+      7.0
+     ],
+     "MIA": [
+      2.0,
+      10.0
+     ],
+     "MIN": [
+      -2.0,
+      4.0
+     ],
+     "NE": [
+      17.0,
+      8.0
+     ],
+     "NO": [
+      13.5,
+      8.0
+     ],
+     "NYG": [
+      6.0,
+      10.0
+     ],
+     "NYJ": [
+      -1.5,
+      11.0
+     ],
+     "OAK": [
+      1.0,
+      8.0
+     ],
+     "PHI": [
+      8.0,
+      9.0
+     ],
+     "PIT": [
+      8.0,
+      7.0
+     ],
+     "SD": [
+      12.0,
+      3.0
+     ],
+     "SEA": [
+      0.0,
+      9.0
+     ],
+     "SF": [
+      2.5,
+      15.0
+     ],
+     "STL": [
+      -2.5,
+      10.0
+     ],
+     "TB": [
+      5.0,
+      8.0
+     ],
+     "TEN": [
+      0.0,
+      6.0
+     ],
+     "WAS": [
+      0.0,
+      8.5
+     ]
+    }
+   },
+   "two_term_sensitivity": {
+    "offense": {
+     "b_honours": 0.0043288722395871644,
+     "b_production": 0.0038662275126466476,
+     "r2": 0.3078767675174394,
+     "loo": {
+      "rmse": 0.050038743531013244,
+      "null_rmse": 0.05480114407237279,
+      "skill": 0.16625442570301552
+     }
+    },
+    "defense": {
+     "b_honours": 0.0052824974250086035,
+     "b_production": 0.003914545098713398,
+     "r2": 0.15972931559863035,
+     "loo": {
+      "rmse": 0.035508079759366575,
+      "null_rmse": 0.03701114091397898,
+      "skill": 0.07957283538046334
+     }
+    }
+   },
+   "combined_max_age_shrink": {
+    "fits": {
+     "offense": {
+      "intercept": 0.170523670519569,
+      "slope": 0.005728436775747821,
+      "se": 0.001575330497594651,
+      "r2": 0.30592454290373605,
+      "loo": {
+       "rmse": 0.04803078559236688,
+       "null_rmse": 0.05480114407237279,
+       "skill": 0.23182506996080765
+      },
+      "shrunk_slope": 0.005705781025695261,
+      "shrunk_sd": 0.001572212225211014,
+      "composite_mean": 4.2265625,
+      "composite_sd": 5.1927987415421075,
+      "composite_min": -4.0,
+      "composite_max": 17.0,
+      "implied_club_sd": 0.02962897252974519,
+      "fraction_of_target": 0.6511862094449492,
+      "points_per_team_game_sd": 2.4473531309569525
+     },
+     "defense": {
+      "intercept": 0.23392724588480734,
+      "slope": 0.004865594277725869,
+      "se": 0.0025619125447084107,
+      "r2": 0.10732817757021218,
+      "loo": {
+       "rmse": 0.03562122768956637,
+       "null_rmse": 0.03701114091397899,
+       "skill": 0.07369753266079515
+      },
+      "shrunk_slope": 0.004815029565336059,
+      "shrunk_sd": 0.002548565696963279,
+      "composite_mean": 8.078125,
+      "composite_sd": 2.4498498143566323,
+      "composite_min": 3.0,
+      "composite_max": 15.0,
+      "implied_club_sd": 0.011796099286760241,
+      "fraction_of_target": 0.5289730621865579,
+      "points_per_team_game_sd": 0.9743578010863959
+     }
+    },
+    "net": {
+     "implied_edge_sd": 0.03189081327830164,
+     "fraction_of_target": 0.6643919432979509,
+     "points_per_team_game_sd": 2.634181176787716,
+     "direct_net_fit": {
+      "slope_on_predicted_edge": 0.48183490402492846,
+      "se": 0.3505727610795164,
+      "r2": 0.05923778190705653,
+      "loo": {
+       "rmse": 0.06933731592370106,
+       "null_rmse": 0.068495930370387,
+       "skill": -0.024718351162018593
+      }
+     }
+    },
+    "drive_joint": {
+     "td": {
+      "intercept": 0.19166612850732673,
+      "b_off": 0.00556124468384087,
+      "se_off": 0.0009519336501548647,
+      "b_def_raw": -0.003962227379518985,
+      "se_def": 0.0019471068601547518,
+      "b_def": 0.003962227379518985,
+      "home": 0.02299353939802263,
+      "se_home": 0.010363057472132918
+     }
+    },
+    "clubs_composite": {
+     "ARI": [
+      -4.0,
+      10.0
+     ],
+     "ATL": [
+      7.5,
+      8.0
+     ],
+     "BAL": [
+      5.5,
+      8.0
+     ],
+     "BUF": [
+      4.0,
+      9.0
+     ],
+     "CAR": [
+      2.5,
+      7.0
+     ],
+     "CHI": [
+      0.5,
+      12.0
+     ],
+     "CIN": [
+      3.0,
+      10.0
+     ],
+     "CLE": [
+      -1.0,
+      3.0
+     ],
+     "DAL": [
+      9.0,
+      8.0
+     ],
+     "DEN": [
+      6.0,
+      5.0
+     ],
+     "DET": [
+      7.0,
+      9.0
+     ],
+     "GB": [
+      11.0,
+      6.0
+     ],
+     "HOU": [
+      10.0,
+      9.0
+     ],
+     "IND": [
+      1.0,
+      7.0
+     ],
+     "JAX": [
+      -2.5,
+      7.0
+     ],
+     "KC": [
+      7.0,
+      7.0
+     ],
+     "MIA": [
+      2.0,
+      10.0
+     ],
+     "MIN": [
+      -2.0,
+      4.0
+     ],
+     "NE": [
+      17.0,
+      8.0
+     ],
+     "NO": [
+      13.5,
+      8.0
+     ],
+     "NYG": [
+      6.0,
+      10.0
+     ],
+     "NYJ": [
+      -1.5,
+      11.0
+     ],
+     "OAK": [
+      1.0,
+      8.0
+     ],
+     "PHI": [
+      8.0,
+      8.0
+     ],
+     "PIT": [
+      8.0,
+      7.0
+     ],
+     "SD": [
+      12.0,
+      3.0
+     ],
+     "SEA": [
+      0.0,
+      9.0
+     ],
+     "SF": [
+      2.5,
+      15.0
+     ],
+     "STL": [
+      -2.75,
+      10.0
+     ],
+     "TB": [
+      5.0,
+      8.0
+     ],
+     "TEN": [
+      0.0,
+      6.0
+     ],
+     "WAS": [
+      0.0,
+      8.5
+     ]
+    }
+   },
+   "continuous_production_sensitivity": {
+    "fits": {
+     "offense": {
+      "intercept": 0.17298791629055615,
+      "slope": 0.005922675881039749,
+      "se": 0.0016837407621676176,
+      "r2": 0.29200696553100824,
+      "loo": {
+       "rmse": 0.04849257391133342,
+       "null_rmse": 0.05480114407237279,
+       "skill": 0.21698294369953575
+      },
+      "shrunk_slope": 0.005895932093863534,
+      "shrunk_sd": 0.0016799350033104823,
+      "composite_mean": 3.685615807300254,
+      "composite_sd": 4.911525966688969,
+      "composite_min": -4.3934736658013005,
+      "composite_max": 16.25696748358119,
+      "implied_club_sd": 0.02895802357684561,
+      "fraction_of_target": 0.6364400786119914,
+      "points_per_team_game_sd": 2.3919327474474477
+     },
+     "defense": {
+      "intercept": 0.22664746033154198,
+      "slope": 0.004749930287940646,
+      "se": 0.002780193913726594,
+      "r2": 0.0886703719197871,
+      "loo": {
+       "rmse": 0.036060456098474455,
+       "null_rmse": 0.03701114091397899,
+       "skill": 0.050713106021814336
+      },
+      "shrunk_slope": 0.0046919047274643815,
+      "shrunk_sd": 0.002763160187482443,
+      "composite_mean": 6.7486379020005325,
+      "composite_sd": 2.2808672248568365,
+      "composite_min": 2.8461585906658504,
+      "composite_max": 13.485566196156531,
+      "implied_club_sd": 0.010701611715024355,
+      "fraction_of_target": 0.4798929020190294,
+      "points_per_team_game_sd": 0.8839531276610118
+     }
+    },
+    "net": {
+     "implied_edge_sd": 0.030872182021624138,
+     "fraction_of_target": 0.6431704587838362,
+     "points_per_team_game_sd": 2.550042234986154,
+     "direct_net_fit": {
+      "slope_on_predicted_edge": 0.555762176767422,
+      "se": 0.3732618831723323,
+      "r2": 0.06881238706676307,
+      "loo": {
+       "rmse": 0.06885830016314658,
+       "null_rmse": 0.068495930370387,
+       "skill": -0.01060875671068695
+      }
+     }
+    },
+    "drive_joint": {
+     "td": {
+      "intercept": 0.1886238070657642,
+      "b_off": 0.0057847990015948,
+      "se_off": 0.0010109969558892871,
+      "b_def_raw": -0.003960701838179716,
+      "se_def": 0.002136772850227478,
+      "b_def": 0.003960701838179716,
+      "home": 0.02300075123632833,
+      "se_home": 0.010371378987289246
+     }
+    },
+    "clubs_composite": {
+     "ARI": [
+      -4.3934736658013005,
+      9.815539979871064
+     ],
+     "ATL": [
+      7.785275676867519,
+      7.645101453669324
+     ],
+     "BAL": [
+      4.8921574602208295,
+      6.790670121259959
+     ],
+     "BUF": [
+      1.3555946622741741,
+      6.290157836717441
+     ],
+     "CAR": [
+      3.9246876923907497,
+      4.811829827162427
+     ],
+     "CHI": [
+      0.3062699230687136,
+      9.635105301038234
+     ],
+     "CIN": [
+      1.0822118787286976,
+      7.4133610989584735
+     ],
+     "CLE": [
+      -0.6665019811735524,
+      3.087395523157017
+     ],
+     "DAL": [
+      7.27280018356371,
+      6.731582095948248
+     ],
+     "DEN": [
+      2.7023095341755328,
+      3.9463834744208723
+     ],
+     "DET": [
+      5.368688014314568,
+      7.400835764060198
+     ],
+     "GB": [
+      10.849296382728081,
+      5.813533833165909
+     ],
+     "HOU": [
+      7.271902282132102,
+      7.11894522022409
+     ],
+     "IND": [
+      2.510583708462755,
+      4.8114333361882915
+     ],
+     "JAX": [
+      -2.083879984184474,
+      2.8461585906658504
+     ],
+     "KC": [
+      5.947558430958375,
+      5.6060901875498885
+     ],
+     "MIA": [
+      2.401106149651574,
+      8.400906106755393
+     ],
+     "MIN": [
+      -3.3826462777240396,
+      3.028762837233958
+     ],
+     "NE": [
+      16.25696748358119,
+      6.56459003829008
+     ],
+     "NO": [
+      13.052836040056171,
+      6.583113153658648
+     ],
+     "NYG": [
+      4.12280418102093,
+      8.230141411489878
+     ],
+     "NYJ": [
+      -0.11277962597814617,
+      8.016695110927976
+     ],
+     "OAK": [
+      2.0734118625415654,
+      8.440584341652272
+     ],
+     "PHI": [
+      6.652337346217211,
+      9.051728095489764
+     ],
+     "PIT": [
+      8.400832880961357,
+      6.0331973501518155
+     ],
+     "SD": [
+      11.61843064040886,
+      3.283610834149818
+     ],
+     "SEA": [
+      0.07509837277967404,
+      7.631627423269145
+     ],
+     "SF": [
+      2.7333384382617645,
+      13.485566196156531
+     ],
+     "STL": [
+      -3.1472199068743825,
+      8.52451984941931
+     ],
+     "TB": [
+      3.6727508701462677,
+      6.734779671868346
+     ],
+     "TEN": [
+      -0.40978513914639747,
+      4.669303093686355
+     ],
+     "WAS": [
+      -0.19325768102196675,
+      7.5131637057604275
+     ]
+    }
+   },
+   "age_shrink_decision": {
+    "adopted": false,
+    "loo_skill_without": {
+     "offense": 0.2384785366017631,
+     "defense": 0.06319151548850743
+    },
+    "loo_skill_with": {
+     "offense": 0.23182506996080765,
+     "defense": 0.07369753266079515
+    },
+    "players_shrunk": [
+     {
+      "name": "Michael Turner",
+      "club": "ATL",
+      "age": 30,
+      "group": "RB"
+     },
+     {
+      "name": "John Abraham",
+      "club": "ATL",
+      "age": 34,
+      "group": "DL"
+     },
+     {
+      "name": "Jordan Gross",
+      "club": "CAR",
+      "age": 32,
+      "group": "OL"
+     },
+     {
+      "name": "Julius Peppers",
+      "club": "CHI",
+      "age": 32,
+      "group": "DL"
+     },
+     {
+      "name": "Peyton Manning",
+      "club": "DEN",
+      "age": 36,
+      "group": "QB"
+     },
+     {
+      "name": "Andre Johnson",
+      "club": "HOU",
+      "age": 31,
+      "group": "WR"
+     },
+     {
+      "name": "Reggie Wayne",
+      "club": "IND",
+      "age": 33,
+      "group": "WR"
+     },
+     {
+      "name": "Robert Mathis",
+      "club": "IND",
+      "age": 31,
+      "group": "DL"
+     },
+     {
+      "name": "Brandon Lloyd",
+      "club": "NE",
+      "age": 31,
+      "group": "WR"
+     },
+     {
+      "name": "Nnamdi Asomugha",
+      "club": "PHI",
+      "age": 31,
+      "group": "DB"
+     },
+     {
+      "name": "James Harrison",
+      "club": "PIT",
+      "age": 34,
+      "group": "LB"
+     },
+     {
+      "name": "Steven Jackson",
+      "club": "STL",
+      "age": 29,
+      "group": "RB"
+     },
+     {
+      "name": "Quintin Mikell",
+      "club": "STL",
+      "age": 31,
+      "group": "DB"
+     }
+    ]
+   },
+   "primary_variant": "combined_max"
+  },
+  "clubs": {
+   "ARI": {
+    "offense": {
+     "composite": -4.0,
+     "contributors": [
+      {
+       "player_id": "00-0027691",
+       "name": "Andre Roberts",
+       "position": "WR",
+       "position_weight": 1,
+       "value": -2.0,
+       "honours_value": 0.0,
+       "production_value": -2.0,
+       "contribution": -2.0
+      },
+      {
+       "player_id": "00-0022921",
+       "name": "Larry Fitzgerald",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 0.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027754",
+       "name": "John Skelton",
+       "position": "QB",
+       "position_weight": 3,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -3.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 10.0,
+     "contributors": [
+      {
+       "player_id": "00-0027877",
+       "name": "Dan Williams",
+       "position": "DT",
+       "position_weight": 1,
+       "value": -2.0,
+       "honours_value": 0.0,
+       "production_value": -2.0,
+       "contribution": -2.0
+      },
+      {
+       "player_id": "00-0022930",
+       "name": "Darnell Dockett",
+       "position": "DT",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0028041",
+       "name": "Sam Acho",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027886",
+       "name": "Daryl Washington",
+       "position": "ILB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0020505",
+       "name": "Adrian Wilson",
+       "position": "SS",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 1.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0023557",
+       "name": "Kerry Rhodes",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026190",
+       "name": "Calais Campbell",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0019104",
+       "name": "Paris Lenon",
+       "position": "MLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027943",
+       "name": "Patrick Peterson",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0025557",
+       "name": "William Gay",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      }
+     ]
+    }
+   },
+   "ATL": {
+    "offense": {
+     "composite": 8.0,
+     "contributors": [
+      {
+       "player_id": "00-0006101",
+       "name": "Tony Gonzalez",
+       "position": "TE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0023462",
+       "name": "Roddy White",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 1.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0022821",
+       "name": "Michael Turner",
+       "position": "RB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 0.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027944",
+       "name": "Julio Jones",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026143",
+       "name": "Matt Ryan",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 1.0,
+       "contribution": 3.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 8.0,
+     "contributors": [
+      {
+       "player_id": "00-0019546",
+       "name": "John Abraham",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0024183",
+       "name": "Brent Grimes",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027031",
+       "name": "William Moore",
+       "position": "SS",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0026238",
+       "name": "Thomas DeCoud",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0024342",
+       "name": "Ray Edwards",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027871",
+       "name": "Sean Weatherspoon",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0028029",
+       "name": "Akeem Dent",
+       "position": "ILB",
+       "position_weight": 1,
+       "value": -2.0,
+       "honours_value": 0.0,
+       "production_value": -2.0,
+       "contribution": -2.0
+      }
+     ]
+    }
+   },
+   "BAL": {
+    "offense": {
+     "composite": 5.5,
+     "contributors": [
+      {
+       "player_id": "00-0025473",
+       "name": "Marshal Yanda",
+       "position": "G",
+       "position_weight": 1,
+       "value": 0.5,
+       "honours_value": 0.5,
+       "production_value": 0.0,
+       "contribution": 0.5
+      },
+      {
+       "player_id": "00-0022397",
+       "name": "Vonta Leach",
+       "position": "FB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 0.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0026195",
+       "name": "Ray Rice",
+       "position": "RB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027996",
+       "name": "Torrey Smith",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0022084",
+       "name": "Anquan Boldin",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026158",
+       "name": "Joe Flacco",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 0.0,
+       "honours_value": 0.0,
+       "production_value": 0.0,
+       "contribution": 0.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 8.0,
+     "contributors": [
+      {
+       "player_id": "00-0027665",
+       "name": "Terrence Cody",
+       "position": "DT",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0009889",
+       "name": "Ray Lewis",
+       "position": "ILB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 0.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027033",
+       "name": "Paul Kruger",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027060",
+       "name": "Lardarius Webb",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0024269",
+       "name": "Bernard Pollard",
+       "position": "SS",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0024227",
+       "name": "Haloti Ngata",
+       "position": "DT",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 1.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0028103",
+       "name": "Pernell McPhee",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027560",
+       "name": "Albert McClellan",
+       "position": "ILB",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0021377",
+       "name": "Ed Reed",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      }
+     ]
+    }
+   },
+   "BUF": {
+    "offense": {
+     "composite": 4.0,
+     "contributors": [
+      {
+       "player_id": "00-0025516",
+       "name": "Scott Chandler",
+       "position": "TE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0024204",
+       "name": "Fred Jackson",
+       "position": "RB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0023682",
+       "name": "Ryan Fitzpatrick",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 0.0,
+       "honours_value": 0.0,
+       "production_value": 0.0,
+       "contribution": 0.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 9.0,
+     "contributors": [
+      {
+       "player_id": "00-0023750",
+       "name": "Mario Williams",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0028006",
+       "name": "Kelvin Sheppard",
+       "position": "MLB",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0021990",
+       "name": "Nick Barnett",
+       "position": "ILB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027941",
+       "name": "Marcell Dareus",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0024348",
+       "name": "Kyle Williams",
+       "position": "DT",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 1.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0024373",
+       "name": "Mark Anderson",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0022341",
+       "name": "George Wilson",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027018",
+       "name": "Jairus Byrd",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      }
+     ]
+    }
+   },
+   "CAR": {
+    "offense": {
+     "composite": 3.0,
+     "contributors": [
+      {
+       "player_id": "00-0022117",
+       "name": "Jordan Gross",
+       "position": "T",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 0.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0020337",
+       "name": "Steve Smith",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.5,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0025446",
+       "name": "Ryan Kalil",
+       "position": "C",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 0.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027681",
+       "name": "Brandon LaFell",
+       "position": "WR",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0024242",
+       "name": "DeAngelo Williams",
+       "position": "RB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027939",
+       "name": "Cam Newton",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 0.0,
+       "honours_value": 0.0,
+       "production_value": 0.0,
+       "contribution": 0.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 7.0,
+     "contributors": [
+      {
+       "player_id": "00-0025470",
+       "name": "Charles Johnson",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0024303",
+       "name": "James Anderson",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0022914",
+       "name": "Chris Gamble",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027774",
+       "name": "Greg Hardy",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0025412",
+       "name": "Jon Beason",
+       "position": "MLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026207",
+       "name": "Charles Godfrey",
+       "position": "S",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026346",
+       "name": "Haruki Nakamura",
+       "position": "FS",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      }
+     ]
+    }
+   },
+   "CHI": {
+    "offense": {
+     "composite": 0.5,
+     "contributors": [
+      {
+       "player_id": "00-0026184",
+       "name": "Matt Forte",
+       "position": "RB",
+       "position_weight": 1,
+       "value": 0.5,
+       "honours_value": 0.5,
+       "production_value": 0.0,
+       "contribution": 0.5
+      },
+      {
+       "player_id": "00-0024334",
+       "name": "Brandon Marshall",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 0.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0024272",
+       "name": "Devin Hester",
+       "position": "WR",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0024226",
+       "name": "Jay Cutler",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 0.0,
+       "honours_value": 0.0,
+       "production_value": 0.0,
+       "contribution": 0.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 12.0,
+     "contributors": [
+      {
+       "player_id": "00-0021604",
+       "name": "Israel Idonije",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0026905",
+       "name": "Henry Melton",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0019456",
+       "name": "Brian Urlacher",
+       "position": "MLB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 1.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0021140",
+       "name": "Julius Peppers",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0022128",
+       "name": "Lance Briggs",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0024277",
+       "name": "Tim Jennings",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0022123",
+       "name": "Charles Tillman",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.5,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027680",
+       "name": "Major Wright",
+       "position": "SS",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0028031",
+       "name": "Chris Conte",
+       "position": "FS",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      }
+     ]
+    }
+   },
+   "CIN": {
+    "offense": {
+     "composite": 3.0,
+     "contributors": [
+      {
+       "player_id": "00-0025860",
+       "name": "BenJarvus Green-Ellis",
+       "position": "RB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027942",
+       "name": "A.J. Green",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.5,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027973",
+       "name": "Andy Dalton",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 0.0,
+       "honours_value": 0.0,
+       "production_value": 0.0,
+       "contribution": 0.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 10.0,
+     "contributors": [
+      {
+       "player_id": "00-0020495",
+       "name": "Nate Clements",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0025405",
+       "name": "Leon Hall",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027887",
+       "name": "Taylor Mays",
+       "position": "FS",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0027662",
+       "name": "Carlos Dunlap",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027044",
+       "name": "Michael Johnson",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0024237",
+       "name": "Manny Lawson",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027720",
+       "name": "Geno Atkins",
+       "position": "DT",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 1.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0025408",
+       "name": "Reggie Nelson",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      }
+     ]
+    }
+   },
+   "CLE": {
+    "offense": {
+     "composite": -1.0,
+     "contributors": [
+      {
+       "player_id": "00-0027997",
+       "name": "Greg Little",
+       "position": "WR",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0027026",
+       "name": "Mohamed Massaquoi",
+       "position": "WR",
+       "position_weight": 1,
+       "value": -2.0,
+       "honours_value": 0.0,
+       "production_value": -2.0,
+       "contribution": -2.0
+      },
+      {
+       "player_id": "00-0025390",
+       "name": "Joe Thomas",
+       "position": "T",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 0.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0029677",
+       "name": "Brandon Weeden",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 0.0,
+       "honours_value": 0.0,
+       "production_value": 0.0,
+       "contribution": 0.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 3.0,
+     "contributors": [
+      {
+       "player_id": "00-0027975",
+       "name": "Jabaal Sheard",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0024306",
+       "name": "Frostee Rucker",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0024249",
+       "name": "D'Qwell Jackson",
+       "position": "ILB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027074",
+       "name": "Kaluka Maiava",
+       "position": "MLB",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0027860",
+       "name": "Joe Haden",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      }
+     ]
+    }
+   },
+   "DAL": {
+    "offense": {
+     "composite": 9.0,
+     "contributors": [
+      {
+       "player_id": "00-0027902",
+       "name": "Dez Bryant",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0022127",
+       "name": "Jason Witten",
+       "position": "TE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 1.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0023921",
+       "name": "Miles Austin",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0028009",
+       "name": "DeMarco Murray",
+       "position": "RB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0021678",
+       "name": "Tony Romo",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 3.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 8.0,
+     "contributors": [
+      {
+       "player_id": "00-0024307",
+       "name": "Jason Hatcher",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027663",
+       "name": "Sean Lee",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0023445",
+       "name": "DeMarcus Ware",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0026280",
+       "name": "Brandon Carr",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0023590",
+       "name": "Gerald Sensabaugh",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0023656",
+       "name": "Jay Ratliff",
+       "position": "NT",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 0.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0025413",
+       "name": "Anthony Spencer",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027416",
+       "name": "Barry Church",
+       "position": "SS",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      }
+     ]
+    }
+   },
+   "DEN": {
+    "offense": {
+     "composite": 6.0,
+     "contributors": [
+      {
+       "player_id": "00-0023630",
+       "name": "Joel Dreessen",
+       "position": "TE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027874",
+       "name": "Demaryius Thomas",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027690",
+       "name": "Eric Decker",
+       "position": "WR",
+       "position_weight": 1,
+       "value": -2.0,
+       "honours_value": 0.0,
+       "production_value": -2.0,
+       "contribution": -2.0
+      },
+      {
+       "player_id": "00-0010346",
+       "name": "Peyton Manning",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 2.0,
+       "honours_value": 0.5,
+       "production_value": 2.0,
+       "contribution": 6.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 5.0,
+     "contributors": [
+      {
+       "player_id": "00-0024341",
+       "name": "Elvis Dumervil",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.5,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0000585",
+       "name": "Champ Bailey",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026180",
+       "name": "Tracy Porter",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0025828",
+       "name": "Wesley Woodyard",
+       "position": "ILB",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0027940",
+       "name": "Von Miller",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 1.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      }
+     ]
+    }
+   },
+   "DET": {
+    "offense": {
+     "composite": 7.0,
+     "contributors": [
+      {
+       "player_id": "00-0024276",
+       "name": "Tony Scheffler",
+       "position": "TE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0025389",
+       "name": "Calvin Johnson",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 1.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0026204",
+       "name": "Kevin Smith",
+       "position": "RB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026498",
+       "name": "Matthew Stafford",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 3.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 9.0,
+     "contributors": [
+      {
+       "player_id": "00-0027855",
+       "name": "Ndamukong Suh",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0024331",
+       "name": "Stephen Tulloch",
+       "position": "MLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026232",
+       "name": "Cliff Avril",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0020382",
+       "name": "Kyle Vanden Bosch",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0025428",
+       "name": "Chris Houston",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      }
+     ]
+    }
+   },
+   "GB": {
+    "offense": {
+     "composite": 11.0,
+     "contributors": [
+      {
+       "player_id": "00-0026231",
+       "name": "Jermichael Finley",
+       "position": "TE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026176",
+       "name": "Jordy Nelson",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0023439",
+       "name": "Cedric Benson",
+       "position": "RB",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0024267",
+       "name": "Greg Jennings",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.5,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0022999",
+       "name": "John Kuhn",
+       "position": "FB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.5,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0023459",
+       "name": "Aaron Rodgers",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 2.0,
+       "contribution": 6.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 6.0,
+     "contributors": [
+      {
+       "player_id": "00-0020515",
+       "name": "Ryan Pickett",
+       "position": "DT",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0026985",
+       "name": "B.J. Raji",
+       "position": "NT",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.5,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027822",
+       "name": "C.J. Wilson",
+       "position": "DE",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0027002",
+       "name": "Clay Matthews",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0024061",
+       "name": "Tramon Williams",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0023918",
+       "name": "Jarrett Bush",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0018227",
+       "name": "Charles Woodson",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027676",
+       "name": "Morgan Burnett",
+       "position": "SS",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0028124",
+       "name": "D.J. Smith",
+       "position": "LB",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      }
+     ]
+    }
+   },
+   "HOU": {
+    "offense": {
+     "composite": 10.0,
+     "contributors": [
+      {
+       "player_id": "00-0026166",
+       "name": "Duane Brown",
+       "position": "T",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 0.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026796",
+       "name": "Arian Foster",
+       "position": "RB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0022044",
+       "name": "Andre Johnson",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.5,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0022787",
+       "name": "Matt Schaub",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 6.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 9.0,
+     "contributors": [
+      {
+       "player_id": "00-0027949",
+       "name": "J.J. Watt",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0023472",
+       "name": "Shaun Cody",
+       "position": "NT",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0022793",
+       "name": "Antonio Smith",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027980",
+       "name": "Brooks Reed",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026991",
+       "name": "Brian Cushing",
+       "position": "ILB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027022",
+       "name": "Connor Barwin",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0024239",
+       "name": "Johnathan Joseph",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027081",
+       "name": "Glover Quin",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      }
+     ]
+    }
+   },
+   "IND": {
+    "offense": {
+     "composite": 2.0,
+     "contributors": [
+      {
+       "player_id": "00-0027092",
+       "name": "Austin Collie",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0028057",
+       "name": "Delone Carter",
+       "position": "RB",
+       "position_weight": 1,
+       "value": -2.0,
+       "honours_value": 0.0,
+       "production_value": -2.0,
+       "contribution": -2.0
+      },
+      {
+       "player_id": "00-0020498",
+       "name": "Reggie Wayne",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 0.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0029668",
+       "name": "Andrew Luck",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 0.0,
+       "honours_value": 0.0,
+       "production_value": 0.0,
+       "contribution": 0.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 7.0,
+     "contributors": [
+      {
+       "player_id": "00-0021998",
+       "name": "Cory Redding",
+       "position": "DT",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0025539",
+       "name": "Antonio Johnson",
+       "position": "DT",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0022059",
+       "name": "Robert Mathis",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.5,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0021146",
+       "name": "Dwight Freeney",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.5,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027001",
+       "name": "Vontae Davis",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0026226",
+       "name": "Tom Zbikowski",
+       "position": "SS",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0027064",
+       "name": "Jerraud Powers",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      }
+     ]
+    }
+   },
+   "JAX": {
+    "offense": {
+     "composite": -2.5,
+     "contributors": [
+      {
+       "player_id": "00-0024243",
+       "name": "Marcedes Lewis",
+       "position": "TE",
+       "position_weight": 1,
+       "value": 0.5,
+       "honours_value": 0.5,
+       "production_value": 0.0,
+       "contribution": 0.5
+      },
+      {
+       "player_id": "00-0027155",
+       "name": "Rashad Jennings",
+       "position": "RB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0025462",
+       "name": "Laurent Robinson",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027948",
+       "name": "Blaine Gabbert",
+       "position": "QB",
+       "position_weight": 3,
+       "value": -2.0,
+       "honours_value": 0.0,
+       "production_value": -2.0,
+       "contribution": -6.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 7.0,
+     "contributors": [
+      {
+       "player_id": "00-0027862",
+       "name": "Tyson Alualu",
+       "position": "NT",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027047",
+       "name": "Derek Cox",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026253",
+       "name": "Dwight Lowery",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0024405",
+       "name": "Jeremy Mincey",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0022839",
+       "name": "Daryl Smith",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0025421",
+       "name": "Paul Posluszny",
+       "position": "MLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      }
+     ]
+    }
+   },
+   "KC": {
+    "offense": {
+     "composite": 7.0,
+     "contributors": [
+      {
+       "player_id": "00-0026213",
+       "name": "Jamaal Charles",
+       "position": "RB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0025410",
+       "name": "Dwayne Bowe",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 1.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0023662",
+       "name": "Matt Cassel",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 3.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 7.0,
+     "contributors": [
+      {
+       "player_id": "00-0026980",
+       "name": "Tyson Jackson",
+       "position": "DE",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0028008",
+       "name": "Justin Houston",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0023449",
+       "name": "Derrick Johnson",
+       "position": "ILB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 1.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0026175",
+       "name": "Brandon Flowers",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0023473",
+       "name": "Stanford Routt",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027858",
+       "name": "Eric Berry",
+       "position": "SS",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      }
+     ]
+    }
+   },
+   "MIA": {
+    "offense": {
+     "composite": 2.0,
+     "contributors": [
+      {
+       "player_id": "00-0026000",
+       "name": "Davone Bess",
+       "position": "WR",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0024217",
+       "name": "Reggie Bush",
+       "position": "RB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0025559",
+       "name": "Legedu Naanee",
+       "position": "WR",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0025820",
+       "name": "Jake Long",
+       "position": "T",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 0.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0024268",
+       "name": "Anthony Fasano",
+       "position": "TE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0029701",
+       "name": "Ryan Tannehill",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 0.0,
+       "honours_value": 0.0,
+       "production_value": 0.0,
+       "contribution": 0.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 10.0,
+     "contributors": [
+      {
+       "player_id": "00-0027878",
+       "name": "Jared Odrick",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0022805",
+       "name": "Randy Starks",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0023368",
+       "name": "Cameron Wake",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 1.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0022927",
+       "name": "Karlos Dansby",
+       "position": "ILB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027883",
+       "name": "Koa Misi",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0023477",
+       "name": "Kevin Burnett",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0024273",
+       "name": "Richard Marshall",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      }
+     ]
+    }
+   },
+   "MIN": {
+    "offense": {
+     "composite": -2.0,
+     "contributors": [
+      {
+       "player_id": "00-0022781",
+       "name": "Michael Jenkins",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027950",
+       "name": "Christian Ponder",
+       "position": "QB",
+       "position_weight": 3,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -3.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 4.0,
+     "contributors": [
+      {
+       "player_id": "00-0025489",
+       "name": "Brian Robison",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0022073",
+       "name": "Kevin Williams",
+       "position": "DT",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0022740",
+       "name": "Jared Allen",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0024232",
+       "name": "Chad Greenway",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027108",
+       "name": "Jasper Brinkley",
+       "position": "MLB",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      }
+     ]
+    }
+   },
+   "NE": {
+    "offense": {
+     "composite": 17.0,
+     "contributors": [
+      {
+       "player_id": "00-0022427",
+       "name": "Wes Welker",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0023467",
+       "name": "Logan Mankins",
+       "position": "G",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 0.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027034",
+       "name": "Sebastian Vollmer",
+       "position": "T",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 0.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027656",
+       "name": "Rob Gronkowski",
+       "position": "TE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0026019",
+       "name": "Danny Woodhead",
+       "position": "RB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0022097",
+       "name": "Brandon Lloyd",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 1.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0019596",
+       "name": "Tom Brady",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 2.0,
+       "contribution": 6.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 8.0,
+     "contributors": [
+      {
+       "player_id": "00-0022712",
+       "name": "Vince Wilfork",
+       "position": "NT",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026150",
+       "name": "Jerod Mayo",
+       "position": "MLB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 0.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0026071",
+       "name": "Kyle Arrington",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0023998",
+       "name": "Steve Gregory",
+       "position": "SS",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0027010",
+       "name": "Patrick Chung",
+       "position": "SS",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0024349",
+       "name": "Rob Ninkovich",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027647",
+       "name": "Devin McCourty",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 1.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      }
+     ]
+    }
+   },
+   "NO": {
+    "offense": {
+     "composite": 13.5,
+     "contributors": [
+      {
+       "player_id": "00-0024466",
+       "name": "Marques Colston",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0025512",
+       "name": "Jermon Bushrod",
+       "position": "G",
+       "position_weight": 1,
+       "value": 0.5,
+       "honours_value": 0.5,
+       "production_value": 0.0,
+       "contribution": 0.5
+      },
+      {
+       "player_id": "00-0024323",
+       "name": "Jahri Evans",
+       "position": "G",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 0.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027696",
+       "name": "Jimmy Graham",
+       "position": "TE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.5,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0024813",
+       "name": "Pierre Thomas",
+       "position": "RB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0020531",
+       "name": "Drew Brees",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 2.0,
+       "honours_value": 1.0,
+       "production_value": 2.0,
+       "contribution": 6.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 8.0,
+     "contributors": [
+      {
+       "player_id": "00-0024229",
+       "name": "Brodrick Bunkley",
+       "position": "NT",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0026147",
+       "name": "Sedrick Ellis",
+       "position": "DT",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027882",
+       "name": "Patrick Robinson",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0026177",
+       "name": "Curtis Lofton",
+       "position": "MLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0025999",
+       "name": "David Hawthorne",
+       "position": "MLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0022527",
+       "name": "Jabari Greer",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0024258",
+       "name": "Roman Harper",
+       "position": "SS",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0026990",
+       "name": "Malcolm Jenkins",
+       "position": "SS",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      }
+     ]
+    }
+   },
+   "NYG": {
+    "offense": {
+     "composite": 6.0,
+     "contributors": [
+      {
+       "player_id": "00-0027005",
+       "name": "Hakeem Nicks",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027265",
+       "name": "Victor Cruz",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 1.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0022838",
+       "name": "Chris Snee",
+       "position": "G",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 0.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026201",
+       "name": "Martellus Bennett",
+       "position": "TE",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0022803",
+       "name": "Eli Manning",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 1.0,
+       "honours_value": 0.5,
+       "production_value": 1.0,
+       "contribution": 3.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 10.0,
+     "contributors": [
+      {
+       "player_id": "00-0024247",
+       "name": "Mathias Kiwanuka",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0023693",
+       "name": "Chase Blackburn",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0023478",
+       "name": "Corey Webster",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0026171",
+       "name": "Kenny Phillips",
+       "position": "SS",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0023443",
+       "name": "Antrel Rolle",
+       "position": "S",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0021977",
+       "name": "Osi Umenyiora",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 1.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0023509",
+       "name": "Justin Tuck",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 1.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027867",
+       "name": "Jason Pierre-Paul",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      }
+     ]
+    }
+   },
+   "NYJ": {
+    "offense": {
+     "composite": -1.5,
+     "contributors": [
+      {
+       "player_id": "00-0024219",
+       "name": "D'Brickashaw Ferguson",
+       "position": "T",
+       "position_weight": 1,
+       "value": 0.5,
+       "honours_value": 0.5,
+       "production_value": 0.0,
+       "contribution": 0.5
+      },
+      {
+       "player_id": "00-0024244",
+       "name": "Nick Mangold",
+       "position": "C",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 0.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0024240",
+       "name": "Santonio Holmes",
+       "position": "WR",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0026898",
+       "name": "Mark Sanchez",
+       "position": "QB",
+       "position_weight": 3,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -3.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 11.0,
+     "contributors": [
+      {
+       "player_id": "00-0020873",
+       "name": "Bart Scott",
+       "position": "ILB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0025434",
+       "name": "David Harris",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0022120",
+       "name": "Calvin Pace",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0024234",
+       "name": "Antonio Cromartie",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0025393",
+       "name": "LaRon Landry",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0022067",
+       "name": "Yeremiah Bell",
+       "position": "SS",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027968",
+       "name": "Muhammad Wilkerson",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0025689",
+       "name": "Mike Devito",
+       "position": "DE",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0021081",
+       "name": "Bryan Thomas",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0025401",
+       "name": "Darrelle Revis",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      }
+     ]
+    }
+   },
+   "OAK": {
+    "offense": {
+     "composite": 1.0,
+     "contributors": [
+      {
+       "player_id": "00-0026144",
+       "name": "Darren McFadden",
+       "position": "RB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0021429",
+       "name": "Carson Palmer",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 0.0,
+       "honours_value": 0.0,
+       "production_value": 0.0,
+       "contribution": 0.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 8.0,
+     "contributors": [
+      {
+       "player_id": "00-0020442",
+       "name": "Richard Seymour",
+       "position": "DT",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026233",
+       "name": "Philip Wheeler",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0024222",
+       "name": "Michael Huff",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 1.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0026240",
+       "name": "Tyvon Branch",
+       "position": "SS",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027045",
+       "name": "Matt Shaughnessy",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0022539",
+       "name": "Tommy Kelly",
+       "position": "DT",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027657",
+       "name": "Lamarr Houston",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027904",
+       "name": "Rolando McClain",
+       "position": "ILB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      }
+     ]
+    }
+   },
+   "PHI": {
+    "offense": {
+     "composite": 8.0,
+     "contributors": [
+      {
+       "player_id": "00-0027029",
+       "name": "LeSean McCoy",
+       "position": "RB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0026995",
+       "name": "Jeremy Maclin",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026189",
+       "name": "DeSean Jackson",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.5,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0020245",
+       "name": "Michael Vick",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 1.0,
+       "contribution": 3.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 9.0,
+     "contributors": [
+      {
+       "player_id": "00-0022695",
+       "name": "Jason Babin",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 1.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0023579",
+       "name": "Trent Cole",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0026156",
+       "name": "Dominique Rodgers-Cromartie",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0021706",
+       "name": "Cullen Jenkins",
+       "position": "DT",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0022077",
+       "name": "Nnamdi Asomugha",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 0.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027652",
+       "name": "Nate Allen",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      }
+     ]
+    }
+   },
+   "PIT": {
+    "offense": {
+     "composite": 8.0,
+     "contributors": [
+      {
+       "player_id": "00-0027870",
+       "name": "Maurkice Pouncey",
+       "position": "C",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 0.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027793",
+       "name": "Antonio Brown",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026901",
+       "name": "Mike Wallace",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.5,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0022924",
+       "name": "Ben Roethlisberger",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 1.0,
+       "contribution": 3.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 7.0,
+     "contributors": [
+      {
+       "player_id": "00-0020426",
+       "name": "Casey Hampton",
+       "position": "NT",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0025402",
+       "name": "Lawrence Timmons",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0020712",
+       "name": "James Harrison",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0022119",
+       "name": "Troy Polamalu",
+       "position": "SS",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0021891",
+       "name": "Ivan Taylor",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0025433",
+       "name": "LaMarr Woodley",
+       "position": "LB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0026903",
+       "name": "Keenan Lewis",
+       "position": "CB",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      }
+     ]
+    }
+   },
+   "SD": {
+    "offense": {
+     "composite": 12.0,
+     "contributors": [
+      {
+       "player_id": "00-0021547",
+       "name": "Antonio Gates",
+       "position": "TE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 1.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0025414",
+       "name": "Robert Meachem",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0022414",
+       "name": "Malcom Floyd",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027864",
+       "name": "Ryan Mathews",
+       "position": "RB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0022942",
+       "name": "Philip Rivers",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 2.0,
+       "honours_value": 1.0,
+       "production_value": 2.0,
+       "contribution": 6.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 3.0,
+     "contributors": [
+      {
+       "player_id": "00-0027082",
+       "name": "Vaughn Martin",
+       "position": "DT",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0022723",
+       "name": "Shaun Phillips",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027956",
+       "name": "Corey Liuget",
+       "position": "DT",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0022169",
+       "name": "Antonio Garay",
+       "position": "DT",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026167",
+       "name": "Antoine Cason",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0023404",
+       "name": "Atari Bigby",
+       "position": "SS",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0025424",
+       "name": "Eric Weddle",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      }
+     ]
+    }
+   },
+   "SEA": {
+    "offense": {
+     "composite": 0.0,
+     "contributors": [
+      {
+       "player_id": "00-0029263",
+       "name": "Russell Wilson",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 0.0,
+       "honours_value": 0.0,
+       "production_value": 0.0,
+       "contribution": 0.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 9.0,
+     "contributors": [
+      {
+       "player_id": "00-0021577",
+       "name": "Chris Clemons",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0028092",
+       "name": "Richard Sherman",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0023013",
+       "name": "Brandon Browner",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027733",
+       "name": "Kam Chancellor",
+       "position": "SS",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027866",
+       "name": "Earl Thomas",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0028037",
+       "name": "K.J. Wright",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      }
+     ]
+    }
+   },
+   "SF": {
+    "offense": {
+     "composite": 2.5,
+     "contributors": [
+      {
+       "player_id": "00-0025415",
+       "name": "Joe Staley",
+       "position": "T",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 0.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0024221",
+       "name": "Vernon Davis",
+       "position": "TE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0023500",
+       "name": "Frank Gore",
+       "position": "RB",
+       "position_weight": 1,
+       "value": 0.5,
+       "honours_value": 0.5,
+       "production_value": 0.0,
+       "contribution": 0.5
+      },
+      {
+       "player_id": "00-0023436",
+       "name": "Alex Smith",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 0.0,
+       "honours_value": 0.0,
+       "production_value": 0.0,
+       "contribution": 0.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 15.0,
+     "contributors": [
+      {
+       "player_id": "00-0022863",
+       "name": "Isaac Sopoaga",
+       "position": "DT",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0024495",
+       "name": "Ahmad Brooks",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0023444",
+       "name": "Carlos Rogers",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 1.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0025534",
+       "name": "Tarell Brown",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0025484",
+       "name": "Ray McDonald",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0020535",
+       "name": "Justin Smith",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027894",
+       "name": "Navorro Bowman",
+       "position": "MLB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 1.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0025398",
+       "name": "Patrick Willis",
+       "position": "ILB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 2.0,
+       "production_value": 1.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027945",
+       "name": "Aldon Smith",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0024223",
+       "name": "Donte Whitner",
+       "position": "SS",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0025513",
+       "name": "Dashon Goldson",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.5,
+       "production_value": 1.0,
+       "contribution": 1.0
+      }
+     ]
+    }
+   },
+   "STL": {
+    "offense": {
+     "composite": -2.5,
+     "contributors": [
+      {
+       "player_id": "00-0022736",
+       "name": "Steven Jackson",
+       "position": "RB",
+       "position_weight": 1,
+       "value": 0.5,
+       "honours_value": 0.5,
+       "production_value": 0.0,
+       "contribution": 0.5
+      },
+      {
+       "player_id": "00-0022832",
+       "name": "Scott Wells",
+       "position": "C",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 0.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026035",
+       "name": "Danny Amendola",
+       "position": "WR",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0027854",
+       "name": "Sam Bradford",
+       "position": "QB",
+       "position_weight": 3,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -3.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 10.0,
+     "contributors": [
+      {
+       "player_id": "00-0026142",
+       "name": "Chris Long",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027952",
+       "name": "Robert Quinn",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0024429",
+       "name": "Cortland Finnegan",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027256",
+       "name": "Darian Stewart",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0021512",
+       "name": "Quintin Mikell",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 1.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027011",
+       "name": "James Laurinaitis",
+       "position": "MLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      }
+     ]
+    }
+   },
+   "TB": {
+    "offense": {
+     "composite": 5.0,
+     "contributors": [
+      {
+       "player_id": "00-0026304",
+       "name": "Carl Nicks",
+       "position": "G",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 0.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0022165",
+       "name": "Dallas Clark",
+       "position": "TE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026993",
+       "name": "Josh Freeman",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 3.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 8.0,
+     "contributors": [
+      {
+       "player_id": "00-0025440",
+       "name": "Eric Wright",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0000741",
+       "name": "Ronde Barber",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027055",
+       "name": "Roy Miller",
+       "position": "NT",
+       "position_weight": 1,
+       "value": -2.0,
+       "honours_value": 0.0,
+       "production_value": -2.0,
+       "contribution": -2.0
+      },
+      {
+       "player_id": "00-0027958",
+       "name": "Adrian Clayborn",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0025455",
+       "name": "Quincy Black",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026160",
+       "name": "Aqib Talib",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0027856",
+       "name": "Gerald McCoy",
+       "position": "DT",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026618",
+       "name": "Michael Bennett",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      }
+     ]
+    }
+   },
+   "TEN": {
+    "offense": {
+     "composite": 0.0,
+     "contributors": [
+      {
+       "player_id": "00-0023367",
+       "name": "Nate Washington",
+       "position": "WR",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026164",
+       "name": "Chris Johnson",
+       "position": "RB",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      },
+      {
+       "player_id": "00-0027946",
+       "name": "Jake Locker",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 0.0,
+       "honours_value": 0.0,
+       "production_value": 0.0,
+       "contribution": 0.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 6.0,
+     "contributors": [
+      {
+       "player_id": "00-0027136",
+       "name": "Jason McCourty",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0022409",
+       "name": "Jordan Babineaux",
+       "position": "SS",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0025406",
+       "name": "Michael Griffin",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0024228",
+       "name": "Kamerion Wimbley",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0021085",
+       "name": "Will Witherspoon",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      }
+     ]
+    }
+   },
+   "WAS": {
+    "offense": {
+     "composite": 0.0,
+     "contributors": [
+      {
+       "player_id": "00-0029665",
+       "name": "Robert Griffin",
+       "position": "QB",
+       "position_weight": 3,
+       "value": 0.0,
+       "honours_value": 0.0,
+       "production_value": 0.0,
+       "contribution": 0.0
+      }
+     ]
+    },
+    "defense": {
+     "composite": 8.5,
+     "contributors": [
+      {
+       "player_id": "00-0005322",
+       "name": "London Fletcher",
+       "position": "ILB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 1.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027704",
+       "name": "Perry Riley",
+       "position": "ILB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0026989",
+       "name": "Brian Orakpo",
+       "position": "OLB",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 0.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0022923",
+       "name": "DeAngelo Hall",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 2.0,
+       "honours_value": 1.0,
+       "production_value": 2.0,
+       "contribution": 2.0
+      },
+      {
+       "player_id": "00-0024339",
+       "name": "Barry Cofield",
+       "position": "NT",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0027954",
+       "name": "Ryan Kerrigan",
+       "position": "DE",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0025442",
+       "name": "Josh Wilson",
+       "position": "CB",
+       "position_weight": 1,
+       "value": 1.0,
+       "honours_value": 0.0,
+       "production_value": 1.0,
+       "contribution": 1.0
+      },
+      {
+       "player_id": "00-0025411",
+       "name": "Brandon Meriweather",
+       "position": "FS",
+       "position_weight": 1,
+       "value": 0.5,
+       "honours_value": 0.5,
+       "production_value": 0.0,
+       "contribution": 0.5
+      },
+      {
+       "player_id": "00-0022842",
+       "name": "Madieu Williams",
+       "position": "FS",
+       "position_weight": 1,
+       "value": -1.0,
+       "honours_value": 0.0,
+       "production_value": -1.0,
+       "contribution": -1.0
+      }
+     ]
+    }
+   }
+  },
+  "primary_variant": "combined_max",
+  "variants_floored_first_fit": {
+   "honours_only": {
+    "fits": {
+     "offense": {
+      "intercept": 0.1701519729675522,
+      "slope": 0.009076260121822128,
+      "se": 0.0029541324010893674,
+      "r2": 0.23934335101384085,
+      "loo": {
+       "rmse": 0.049554914994161633,
+       "null_rmse": 0.05480114407237279,
+       "skill": 0.18229958066452934
+      },
+      "shrunk_slope": 0.00895127316177478,
+      "shrunk_sd": 0.0029337215716852376,
+      "composite_mean": 2.703125,
+      "composite_sd": 2.9095487262327433,
+      "composite_min": 0.0,
+      "composite_max": 14.0,
+      "implied_club_sd": 0.026044165426003154,
+      "fraction_of_target": 0.5723992401319374,
+      "points_per_team_game_sd": 2.1512480641878606
+     },
+     "defense": {
+      "intercept": 0.2089459010220054,
+      "slope": 0.006544171611813427,
+      "se": 0.0036210224789884854,
+      "r2": 0.09818458671537467,
+      "loo": {
+       "rmse": 0.03594926411584792,
+       "null_rmse": 0.03701114091397899,
+       "skill": 0.05655830973696008
+      },
+      "shrunk_slope": 0.006409703179081172,
+      "shrunk_sd": 0.0035836273333608192,
+      "composite_mean": 2.203125,
+      "composite_sd": 1.7499279939103116,
+      "composite_min": 0.0,
+      "composite_max": 7.5,
+      "implied_club_sd": 0.011216519025730062,
+      "fraction_of_target": 0.5029829159520207,
+      "points_per_team_game_sd": 0.9264844715253031
+     }
+    },
+    "net": {
+     "implied_edge_sd": 0.028356813145901685,
+     "fraction_of_target": 0.5907669405396184,
+     "points_per_team_game_sd": 2.342272765851479,
+     "direct_net_fit": {
+      "slope_on_predicted_edge": 0.6812042205516677,
+      "se": 0.48457555908270505,
+      "r2": 0.06180231608698572,
+      "loo": {
+       "rmse": 0.0707351116772331,
+       "null_rmse": 0.068495930370387,
+       "skill": -0.06645012395714955
+      }
+     }
+    }
+   },
+   "production_only": {
+    "fits": {
+     "offense": {
+      "intercept": 0.16864153666627515,
+      "slope": 0.0059520985332615056,
+      "se": 0.002115498630832646,
+      "r2": 0.20878069818802558,
+      "loo": {
+       "rmse": 0.05164101817556633,
+       "null_rmse": 0.05480114407237279,
+       "skill": 0.11200536419607299
+      },
+      "shrunk_slope": 0.005909781336384099,
+      "shrunk_sd": 0.0021079650141884775,
+      "composite_mean": 4.375,
+      "composite_sd": 4.148454823106411,
+      "composite_min": 0.0,
+      "composite_max": 14.0,
+      "implied_club_sd": 0.024516460888426864,
+      "fraction_of_target": 0.5388233162291619,
+      "points_per_team_game_sd": 2.025059669384059
+     },
+     "defense": {
+      "intercept": 0.2463101772293571,
+      "slope": 0.005820384337809207,
+      "se": 0.0027068888247800504,
+      "r2": 0.13353424006063608,
+      "loo": {
+       "rmse": 0.03524702343781237,
+       "null_rmse": 0.03701114091397899,
+       "skill": 0.09305709287036401
+      },
+      "shrunk_slope": 0.005752939206334007,
+      "shrunk_sd": 0.002691159756719002,
+      "composite_mean": 8.875,
+      "composite_sd": 2.2682947979313846,
+      "composite_min": 4.0,
+      "composite_max": 14.0,
+      "implied_club_sd": 0.013049362074542936,
+      "fraction_of_target": 0.5851731871992348,
+      "points_per_team_game_sd": 1.0778773073572465
+     }
+    },
+    "net": {
+     "implied_edge_sd": 0.027773057178608975,
+     "fraction_of_target": 0.578605357887687,
+     "points_per_team_game_sd": 2.2940545229531013,
+     "direct_net_fit": {
+      "slope_on_predicted_edge": 0.25048483682262845,
+      "se": 0.39528982960817133,
+      "r2": 0.013207967156195655,
+      "loo": {
+       "rmse": 0.07144359898863266,
+       "null_rmse": 0.068495930370387,
+       "skill": -0.0879203743934649
+      }
+     }
+    }
+   },
+   "combined_max": {
+    "fits": {
+     "offense": {
+      "intercept": 0.16126762629298202,
+      "slope": 0.0061585677512915205,
+      "se": 0.0020103991870246466,
+      "r2": 0.23827220984012842,
+      "loo": {
+       "rmse": 0.05069935903552764,
+       "null_rmse": 0.05480114407237279,
+       "skill": 0.14409475623024792
+      },
+      "shrunk_slope": 0.0061189978575792725,
+      "shrunk_sd": 0.0020039301929075854,
+      "composite_mean": 5.421875,
+      "composite_sd": 4.280694424747522,
+      "composite_min": 0.0,
+      "composite_max": 17.0,
+      "implied_club_sd": 0.026193560013981623,
+      "fraction_of_target": 0.5756826376699258,
+      "points_per_team_game_sd": 2.163588057154882
+     },
+     "defense": {
+      "intercept": 0.24613906357361887,
+      "slope": 0.00559716716877147,
+      "se": 0.002626427770768374,
+      "r2": 0.131481184817148,
+      "loo": {
+       "rmse": 0.03525210510797617,
+       "null_rmse": 0.03701114091397899,
+       "skill": 0.09279556060504857
+      },
+      "shrunk_slope": 0.005536065631572179,
+      "shrunk_sd": 0.002612052717876957,
+      "composite_mean": 9.203125,
+      "composite_sd": 2.3481611714481554,
+      "composite_min": 4.0,
+      "composite_max": 16.0,
+      "implied_club_sd": 0.012999574358646399,
+      "fraction_of_target": 0.5829405541993901,
+      "points_per_team_game_sd": 1.0737648420241925
+     }
+    },
+    "net": {
+     "implied_edge_sd": 0.029241947946606322,
+     "fraction_of_target": 0.6092072488876317,
+     "points_per_team_game_sd": 2.4153849003896823,
+     "direct_net_fit": {
+      "slope_on_predicted_edge": 0.3633573891882122,
+      "se": 0.39358547868367394,
+      "r2": 0.027625006325560975,
+      "loo": {
+       "rmse": 0.07104843233548848,
+       "null_rmse": 0.068495930370387,
+       "skill": -0.07591871414176543
+      }
+     }
+    }
+   },
+   "combined_max_age_shrink": {
+    "fits": {
+     "offense": {
+      "intercept": 0.16222802322500923,
+      "slope": 0.006056313249579645,
+      "se": 0.0020094860390803436,
+      "r2": 0.23240996560315008,
+      "loo": {
+       "rmse": 0.05086739263323647,
+       "null_rmse": 0.05480114407237279,
+       "skill": 0.13841187684638023
+      },
+      "shrunk_slope": 0.006017435473762247,
+      "shrunk_sd": 0.002003025827560289,
+      "composite_mean": 5.3515625,
+      "composite_sd": 4.2996902434380235,
+      "composite_min": 0.0,
+      "composite_max": 17.0,
+      "implied_club_sd": 0.025873108597053395,
+      "fraction_of_target": 0.5686397493857889,
+      "points_per_team_game_sd": 2.1371187701166106
+     },
+     "defense": {
+      "intercept": 0.24764087292861375,
+      "slope": 0.005779289924680383,
+      "se": 0.0026015087325398692,
+      "r2": 0.1412654813454579,
+      "loo": {
+       "rmse": 0.03505290661905273,
+       "null_rmse": 0.03701114091397899,
+       "skill": 0.10301924369047188
+      },
+      "shrunk_slope": 0.005717378964691255,
+      "shrunk_sd": 0.002587536810619775,
+      "composite_mean": 9.171875,
+      "composite_sd": 2.357586843746472,
+      "composite_min": 4.0,
+      "composite_max": 16.0,
+      "implied_club_sd": 0.01347921742786893,
+      "fraction_of_target": 0.6044492120120596,
+      "points_per_team_game_sd": 1.1133833595419738
+     }
+    },
+    "net": {
+     "implied_edge_sd": 0.029173739063457115,
+     "fraction_of_target": 0.6077862304886898,
+     "points_per_team_game_sd": 2.409750846641558,
+     "direct_net_fit": {
+      "slope_on_predicted_edge": 0.3216044720820798,
+      "se": 0.394288813781048,
+      "r2": 0.02169542079725839,
+      "loo": {
+       "rmse": 0.07123419866027625,
+       "null_rmse": 0.068495930370387,
+       "skill": -0.08155235734601907
+      }
+     }
+    }
+   },
+   "continuous_production_sensitivity": {
+    "fits": {
+     "offense": {
+      "intercept": 0.1625737351581124,
+      "slope": 0.006507222501362458,
+      "se": 0.0021735989735127796,
+      "r2": 0.23003022150112729,
+      "loo": {
+       "rmse": 0.05088630201687225,
+       "null_rmse": 0.05480114407237279,
+       "skill": 0.1377711863090385
+      },
+      "shrunk_slope": 0.006458401814553216,
+      "shrunk_sd": 0.002165429867505825,
+      "composite_mean": 4.938623781161046,
+      "composite_sd": 3.9832502834247583,
+      "composite_min": 0.029468396554703336,
+      "composite_max": 16.25696748358119,
+      "implied_club_sd": 0.025725430858290068,
+      "fraction_of_target": 0.5653940847975839,
+      "points_per_team_game_sd": 2.1249205888947595
+     },
+     "defense": {
+      "intercept": 0.24164209080178506,
+      "slope": 0.0057773201608072615,
+      "se": 0.0029906093296863494,
+      "r2": 0.110634941673594,
+      "loo": {
+       "rmse": 0.035632707566136713,
+       "null_rmse": 0.03701114091397899,
+       "skill": 0.07310038583579537
+      },
+      "shrunk_slope": 0.005695813128139679,
+      "shrunk_sd": 0.0029694384808513084,
+      "composite_mean": 8.146587824620433,
+      "composite_sd": 2.088692926021372,
+      "composite_min": 3.895255203072579,
+      "composite_max": 14.25519669062325,
+      "implied_club_sd": 0.011896804588685009,
+      "fraction_of_target": 0.5334889950082964,
+      "points_per_team_game_sd": 0.9826760590253818
+     }
+    },
+    "net": {
+     "implied_edge_sd": 0.02834310766775619,
+     "fraction_of_target": 0.5904814097449206,
+     "points_per_team_game_sd": 2.3411406933566616,
+     "direct_net_fit": {
+      "slope_on_predicted_edge": 0.4271303975012347,
+      "se": 0.42407255606091027,
+      "r2": 0.03270967383886836,
+      "loo": {
+       "rmse": 0.07083431073781608,
+       "null_rmse": 0.068495930370387,
+       "skill": -0.06944340490614187
+      }
+     }
+    }
+   }
+  }
+ },
+ "coverage_2014": {
+  "as_of": "2014-02-02",
+  "role_source": "inventory identity ordered by branch_week1_slot number (a job/identity ordering, not a 2014 depth chart); starters per the kernel's slot rule",
+  "clubs": {
+   "ARI": {
+    "starters": 22,
+    "with_honours": 2,
+    "with_production": 15,
+    "with_either": 15,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 3,
+      "honours": 1,
+      "production": 3,
+      "either": 3
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 1,
+      "production": 4,
+      "either": 4
+     }
+    }
+   },
+   "ATL": {
+    "starters": 22,
+    "with_honours": 3,
+    "with_production": 15,
+    "with_either": 15,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 1,
+      "production": 2,
+      "either": 2
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 0,
+      "production": 4,
+      "either": 4
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     }
+    }
+   },
+   "BAL": {
+    "starters": 22,
+    "with_honours": 5,
+    "with_production": 14,
+    "with_either": 16,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 1,
+      "production": 0,
+      "either": 1
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 1,
+      "production": 0,
+      "either": 1
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 1,
+      "production": 3,
+      "either": 3
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 1,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 0,
+      "production": 4,
+      "either": 4
+     }
+    }
+   },
+   "BUF": {
+    "starters": 22,
+    "with_honours": 0,
+    "with_production": 12,
+    "with_either": 12,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 0,
+      "production": 4,
+      "either": 4
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 0,
+      "production": 2,
+      "either": 2
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     }
+    }
+   },
+   "CAR": {
+    "starters": 22,
+    "with_honours": 2,
+    "with_production": 16,
+    "with_either": 17,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 1,
+      "production": 0,
+      "either": 1
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 1,
+      "production": 2,
+      "either": 2
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 0,
+      "production": 4,
+      "either": 4
+     }
+    }
+   },
+   "CHI": {
+    "starters": 22,
+    "with_honours": 8,
+    "with_production": 15,
+    "with_either": 16,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 1,
+      "production": 0,
+      "either": 1
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 2,
+      "production": 4,
+      "either": 4
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 1,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 2,
+      "production": 4,
+      "either": 4
+     }
+    }
+   },
+   "CIN": {
+    "starters": 22,
+    "with_honours": 2,
+    "with_production": 14,
+    "with_either": 14,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 3,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 1,
+      "production": 4,
+      "either": 4
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     }
+    }
+   },
+   "CLE": {
+    "starters": 22,
+    "with_honours": 1,
+    "with_production": 16,
+    "with_either": 17,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 1,
+      "production": 0,
+      "either": 1
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 0,
+      "production": 2,
+      "either": 2
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 0,
+      "production": 4,
+      "either": 4
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 0,
+      "production": 4,
+      "either": 4
+     }
+    }
+   },
+   "DAL": {
+    "starters": 22,
+    "with_honours": 1,
+    "with_production": 14,
+    "with_either": 14,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 1,
+      "production": 4,
+      "either": 4
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 0,
+      "production": 4,
+      "either": 4
+     }
+    }
+   },
+   "DEN": {
+    "starters": 22,
+    "with_honours": 3,
+    "with_production": 13,
+    "with_either": 14,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 1,
+      "production": 0,
+      "either": 1
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "WR": {
+      "starters": 3,
+      "honours": 0,
+      "production": 2,
+      "either": 2
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 0,
+      "production": 4,
+      "either": 4
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 1,
+      "production": 3,
+      "either": 3
+     }
+    }
+   },
+   "DET": {
+    "starters": 22,
+    "with_honours": 2,
+    "with_production": 13,
+    "with_either": 13,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 3,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 1,
+      "production": 3,
+      "either": 3
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     }
+    }
+   },
+   "GB": {
+    "starters": 22,
+    "with_honours": 4,
+    "with_production": 14,
+    "with_either": 14,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 0,
+      "production": 2,
+      "either": 2
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 1,
+      "production": 2,
+      "either": 2
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 1,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 0,
+      "production": 4,
+      "either": 4
+     }
+    }
+   },
+   "HOU": {
+    "starters": 22,
+    "with_honours": 9,
+    "with_production": 15,
+    "with_either": 18,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 3,
+      "production": 0,
+      "either": 3
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 1,
+      "production": 4,
+      "either": 4
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 1,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 1,
+      "production": 4,
+      "either": 4
+     }
+    }
+   },
+   "IND": {
+    "starters": 22,
+    "with_honours": 2,
+    "with_production": 16,
+    "with_either": 16,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 1,
+      "production": 2,
+      "either": 2
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 0,
+      "production": 4,
+      "either": 4
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 1,
+      "production": 4,
+      "either": 4
+     }
+    }
+   },
+   "JAX": {
+    "starters": 22,
+    "with_honours": 0,
+    "with_production": 10,
+    "with_either": 10,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 0,
+      "production": 2,
+      "either": 2
+     }
+    }
+   },
+   "KC": {
+    "starters": 22,
+    "with_honours": 3,
+    "with_production": 15,
+    "with_either": 15,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 0,
+      "production": 2,
+      "either": 2
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 0,
+      "production": 4,
+      "either": 4
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 1,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 1,
+      "production": 3,
+      "either": 3
+     }
+    }
+   },
+   "MIA": {
+    "starters": 22,
+    "with_honours": 2,
+    "with_production": 14,
+    "with_either": 14,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "WR": {
+      "starters": 3,
+      "honours": 1,
+      "production": 3,
+      "either": 3
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 1,
+      "production": 4,
+      "either": 4
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     }
+    }
+   },
+   "MIN": {
+    "starters": 22,
+    "with_honours": 4,
+    "with_production": 15,
+    "with_either": 15,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 1,
+      "production": 4,
+      "either": 4
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 1,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 0,
+      "production": 4,
+      "either": 4
+     }
+    }
+   },
+   "NE": {
+    "starters": 22,
+    "with_honours": 4,
+    "with_production": 14,
+    "with_either": 15,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 1,
+      "production": 0,
+      "either": 1
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "WR": {
+      "starters": 3,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 0,
+      "production": 4,
+      "either": 4
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 1,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 0,
+      "production": 4,
+      "either": 4
+     }
+    }
+   },
+   "NO": {
+    "starters": 22,
+    "with_honours": 3,
+    "with_production": 15,
+    "with_either": 16,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 1,
+      "production": 0,
+      "either": 1
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 0,
+      "production": 2,
+      "either": 2
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 0,
+      "production": 4,
+      "either": 4
+     }
+    }
+   },
+   "NYG": {
+    "starters": 22,
+    "with_honours": 2,
+    "with_production": 14,
+    "with_either": 15,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 1,
+      "production": 0,
+      "either": 1
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 0,
+      "production": 4,
+      "either": 4
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 0,
+      "production": 4,
+      "either": 4
+     }
+    }
+   },
+   "NYJ": {
+    "starters": 22,
+    "with_honours": 3,
+    "with_production": 10,
+    "with_either": 12,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 2,
+      "production": 0,
+      "either": 2
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 0,
+      "production": 2,
+      "either": 2
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 1,
+      "production": 2,
+      "either": 2
+     }
+    }
+   },
+   "OAK": {
+    "starters": 22,
+    "with_honours": 1,
+    "with_production": 14,
+    "with_either": 14,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 0,
+      "production": 2,
+      "either": 2
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 0,
+      "production": 4,
+      "either": 4
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 0,
+      "production": 2,
+      "either": 2
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 1,
+      "production": 4,
+      "either": 4
+     }
+    }
+   },
+   "PHI": {
+    "starters": 22,
+    "with_honours": 2,
+    "with_production": 12,
+    "with_either": 13,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 1,
+      "production": 0,
+      "either": 1
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 3,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 0,
+      "production": 2,
+      "either": 2
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     }
+    }
+   },
+   "PIT": {
+    "starters": 22,
+    "with_honours": 4,
+    "with_production": 15,
+    "with_either": 16,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 1,
+      "production": 0,
+      "either": 1
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 0,
+      "production": 2,
+      "either": 2
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 1,
+      "production": 4,
+      "either": 4
+     }
+    }
+   },
+   "SD": {
+    "starters": 22,
+    "with_honours": 4,
+    "with_production": 15,
+    "with_either": 15,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 0,
+      "production": 2,
+      "either": 2
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 1,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 1,
+      "production": 4,
+      "either": 4
+     }
+    }
+   },
+   "SEA": {
+    "starters": 22,
+    "with_honours": 5,
+    "with_production": 14,
+    "with_either": 16,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 2,
+      "production": 0,
+      "either": 2
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 2,
+      "production": 4,
+      "either": 4
+     }
+    }
+   },
+   "SF": {
+    "starters": 22,
+    "with_honours": 9,
+    "with_production": 13,
+    "with_either": 15,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 2,
+      "production": 0,
+      "either": 2
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 1,
+      "production": 3,
+      "either": 3
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 3,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 2,
+      "production": 3,
+      "either": 3
+     }
+    }
+   },
+   "STL": {
+    "starters": 22,
+    "with_honours": 2,
+    "with_production": 12,
+    "with_either": 14,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 2,
+      "production": 0,
+      "either": 2
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "WR": {
+      "starters": 3,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 0,
+      "production": 4,
+      "either": 4
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 0,
+      "production": 2,
+      "either": 2
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     }
+    }
+   },
+   "TB": {
+    "starters": 22,
+    "with_honours": 4,
+    "with_production": 13,
+    "with_either": 14,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 1,
+      "production": 0,
+      "either": 1
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 0,
+      "production": 2,
+      "either": 2
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 1,
+      "production": 3,
+      "either": 3
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 2,
+      "production": 4,
+      "either": 4
+     }
+    }
+   },
+   "TEN": {
+    "starters": 22,
+    "with_honours": 0,
+    "with_production": 15,
+    "with_either": 15,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 0,
+      "production": 2,
+      "either": 2
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 0,
+      "production": 4,
+      "either": 4
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 0,
+      "production": 4,
+      "either": 4
+     }
+    }
+   },
+   "WAS": {
+    "starters": 22,
+    "with_honours": 4,
+    "with_production": 15,
+    "with_either": 16,
+    "by_group": {
+     "QB": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "OL": {
+      "starters": 5,
+      "honours": 1,
+      "production": 0,
+      "either": 1
+     },
+     "RB": {
+      "starters": 1,
+      "honours": 1,
+      "production": 1,
+      "either": 1
+     },
+     "WR": {
+      "starters": 2,
+      "honours": 0,
+      "production": 2,
+      "either": 2
+     },
+     "TE": {
+      "starters": 1,
+      "honours": 0,
+      "production": 1,
+      "either": 1
+     },
+     "FB": {
+      "starters": 1,
+      "honours": 0,
+      "production": 0,
+      "either": 0
+     },
+     "DL": {
+      "starters": 4,
+      "honours": 0,
+      "production": 4,
+      "either": 4
+     },
+     "LB": {
+      "starters": 3,
+      "honours": 1,
+      "production": 3,
+      "either": 3
+     },
+     "DB": {
+      "starters": 4,
+      "honours": 0,
+      "production": 3,
+      "either": 3
+     }
+    }
+   }
+  },
+  "league": {
+   "starters": 704,
+   "honours_share": 0.14204545454545456,
+   "production_share": 0.6349431818181818,
+   "either_share": 0.6690340909090909,
+   "by_group": {
+    "DB": {
+     "starters": 128,
+     "honours": 17,
+     "production": 113,
+     "either": 113,
+     "either_share": 0.8828125,
+     "honours_share": 0.1328125
+    },
+    "DL": {
+     "starters": 128,
+     "honours": 12,
+     "production": 111,
+     "either": 111,
+     "either_share": 0.8671875,
+     "honours_share": 0.09375
+    },
+    "FB": {
+     "starters": 24,
+     "honours": 2,
+     "production": 4,
+     "either": 5,
+     "either_share": 0.20833333333333334,
+     "honours_share": 0.08333333333333333
+    },
+    "LB": {
+     "starters": 96,
+     "honours": 12,
+     "production": 93,
+     "either": 93,
+     "either_share": 0.96875,
+     "honours_share": 0.125
+    },
+    "OL": {
+     "starters": 160,
+     "honours": 23,
+     "production": 0,
+     "either": 23,
+     "either_share": 0.14375,
+     "honours_share": 0.14375
+    },
+    "QB": {
+     "starters": 32,
+     "honours": 10,
+     "production": 28,
+     "either": 28,
+     "either_share": 0.875,
+     "honours_share": 0.3125
+    },
+    "RB": {
+     "starters": 32,
+     "honours": 9,
+     "production": 24,
+     "either": 24,
+     "either_share": 0.75,
+     "honours_share": 0.28125
+    },
+    "TE": {
+     "starters": 32,
+     "honours": 5,
+     "production": 24,
+     "either": 24,
+     "either_share": 0.75,
+     "honours_share": 0.15625
+    },
+    "WR": {
+     "starters": 72,
+     "honours": 10,
+     "production": 50,
+     "either": 50,
+     "either_share": 0.6944444444444444,
+     "honours_share": 0.1388888888888889
+    }
+   }
+  }
+ },
+ "attribution_tilt_2012": {
+  "top_receiver_target_share": {
+   "clubs": 32,
+   "mean": 0.23937267816521032,
+   "sd": 0.05413934633062526,
+   "by_tier": {
+    "Average": {
+     "clubs": 14,
+     "mean_share": 0.21670611226975364
+    },
+    "Plus": {
+     "clubs": 9,
+     "mean_share": 0.2686602102652013
+    },
+    "Elite": {
+     "clubs": 9,
+     "mean_share": 0.24534424856926318
+    }
+   },
+   "factors": {
+    "Elite": 1.024946750188137,
+    "Plus": 1.1223511903049241,
+    "Average": 0.9053084668258895,
+    "Below-Average": 0.9053084668258895,
+    "Replacement-Level": 0.9053084668258895
+   },
+   "rows": [
+    {
+     "team": "CHI",
+     "player": "Brandon Marshall",
+     "share": 0.4,
+     "tier": "Plus"
+    },
+    {
+     "team": "CIN",
+     "player": "A.J. Green",
+     "share": 0.3273453093812375,
+     "tier": "Plus"
+    },
+    {
+     "team": "IND",
+     "player": "Reggie Wayne",
+     "share": 0.3155339805825243,
+     "tier": "Elite"
+    },
+    {
+     "team": "HOU",
+     "player": "Andre Johnson",
+     "share": 0.29690346083788705,
+     "tier": "Plus"
+    },
+    {
+     "team": "SF",
+     "player": "Michael Crabtree",
+     "share": 0.2923433874709977,
+     "tier": "Average"
+    },
+    {
+     "team": "BUF",
+     "player": "Steve Johnson",
+     "share": 0.2907662082514735,
+     "tier": "Average"
+    },
+    {
+     "team": "CAR",
+     "player": "Steve Smith",
+     "share": 0.2845360824742268,
+     "tier": "Plus"
+    },
+    {
+     "team": "NE",
+     "player": "Wes Welker",
+     "share": 0.27602523659305994,
+     "tier": "Elite"
+    },
+    {
+     "team": "DET",
+     "player": "Calvin Johnson",
+     "share": 0.27019867549668874,
+     "tier": "Elite"
+    },
+    {
+     "team": "NYG",
+     "player": "Victor Cruz",
+     "share": 0.2672897196261682,
+     "tier": "Elite"
+    },
+    {
+     "team": "TB",
+     "player": "Vincent Jackson",
+     "share": 0.2629695885509839,
+     "tier": "Average"
+    },
+    {
+     "team": "ARI",
+     "player": "Larry Fitzgerald",
+     "share": 0.2578512396694215,
+     "tier": "Plus"
+    },
+    {
+     "team": "MIA",
+     "player": "Brian Hartline",
+     "share": 0.24763705103969755,
+     "tier": "Average"
+    },
+    {
+     "team": "JAX",
+     "player": "Justin Blackmon",
+     "share": 0.24719101123595505,
+     "tier": "Average"
+    },
+    {
+     "team": "KC",
+     "player": "Dwayne Bowe",
+     "share": 0.2446351931330472,
+     "tier": "Elite"
+    },
+    {
+     "team": "DEN",
+     "player": "Demaryius Thomas",
+     "share": 0.24143835616438356,
+     "tier": "Plus"
+    },
+    {
+     "team": "ATL",
+     "player": "Roddy White",
+     "share": 0.23404255319148937,
+     "tier": "Elite"
+    },
+    {
+     "team": "DAL",
+     "player": "Jason Witten",
+     "share": 0.22923076923076924,
+     "tier": "Elite"
+    },
+    {
+     "team": "SEA",
+     "player": "Sidney Rice",
+     "share": 0.21693121693121692,
+     "tier": "Average"
+    },
+    {
+     "team": "PIT",
+     "player": "Mike Wallace",
+     "share": 0.2113676731793961,
+     "tier": "Elite"
+    },
+    {
+     "team": "NO",
+     "player": "Jimmy Graham",
+     "share": 0.20610687022900764,
+     "tier": "Plus"
+    },
+    {
+     "team": "PHI",
+     "player": "Jeremy Maclin",
+     "share": 0.2023217247097844,
+     "tier": "Plus"
+    },
+    {
+     "team": "BAL",
+     "player": "Anquan Boldin",
+     "share": 0.2014388489208633,
+     "tier": "Plus"
+    },
+    {
+     "team": "MIN",
+     "player": "Kyle Rudolph",
+     "share": 0.19624217118997914,
+     "tier": "Average"
+    },
+    {
+     "team": "TEN",
+     "player": "Kendall Wright",
+     "share": 0.19366852886405958,
+     "tier": "Average"
+    },
+    {
+     "team": "GB",
+     "player": "Randall Cobb",
+     "share": 0.19117647058823528,
+     "tier": "Average"
+    },
+    {
+     "team": "NYJ",
+     "player": "Jeremy Kerley",
+     "share": 0.19047619047619047,
+     "tier": "Average"
+    },
+    {
+     "team": "LA",
+     "player": "Danny Amendola",
+     "share": 0.1853211009174312,
+     "tier": "Average"
+    },
+    {
+     "team": "LV",
+     "player": "Denarius Moore",
+     "share": 0.18269230769230768,
+     "tier": "Average"
+    },
+    {
+     "team": "CLE",
+     "player": "Josh Gordon",
+     "share": 0.16903914590747332,
+     "tier": "Average"
+    },
+    {
+     "team": "WAS",
+     "player": "Josh Morgan",
+     "share": 0.16743119266055045,
+     "tier": "Average"
+    },
+    {
+     "team": "LAC",
+     "player": "Malcom Floyd",
+     "share": 0.15977443609022557,
+     "tier": "Elite"
+    }
+   ]
+  },
+  "top_rusher_carry_share": {
+   "clubs": 32,
+   "mean": 0.5290925876315272,
+   "sd": 0.12678818395933178,
+   "by_tier": {
+    "Average": {
+     "clubs": 18,
+     "mean_share": 0.5299877941956612
+    },
+    "Plus": {
+     "clubs": 7,
+     "mean_share": 0.5067115461338363
+    },
+    "Elite": {
+     "clubs": 7,
+     "mean_share": 0.5491716693928733
+    }
+   },
+   "factors": {
+    "Elite": 1.0379500341352914,
+    "Plus": 0.9576991966606843,
+    "Average": 1.0016919658015648,
+    "Below-Average": 1.0016919658015648,
+    "Replacement-Level": 1.0016919658015648
+   },
+   "rows": [
+    {
+     "team": "TB",
+     "player": "Doug Martin",
+     "share": 0.7668269230769231,
+     "tier": "Average"
+    },
+    {
+     "team": "TEN",
+     "player": "Chris Johnson",
+     "share": 0.7301587301587301,
+     "tier": "Average"
+    },
+    {
+     "team": "MIN",
+     "player": "Adrian Peterson",
+     "share": 0.7160493827160493,
+     "tier": "Elite"
+    },
+    {
+     "team": "HOU",
+     "player": "Arian Foster",
+     "share": 0.6909448818897638,
+     "tier": "Elite"
+    },
+    {
+     "team": "CLE",
+     "player": "Trent Richardson",
+     "share": 0.6742424242424242,
+     "tier": "Average"
+    },
+    {
+     "team": "CIN",
+     "player": "BenJarvus Green-Ellis",
+     "share": 0.6465116279069767,
+     "tier": "Elite"
+    },
+    {
+     "team": "WAS",
+     "player": "Alfred Morris",
+     "share": 0.6442307692307693,
+     "tier": "Average"
+    },
+    {
+     "team": "LA",
+     "player": "Steven Jackson",
+     "share": 0.6292682926829268,
+     "tier": "Average"
+    },
+    {
+     "team": "SEA",
+     "player": "Marshawn Lynch",
+     "share": 0.5876865671641791,
+     "tier": "Average"
+    },
+    {
+     "team": "ATL",
+     "player": "Michael Turner",
+     "share": 0.5873015873015873,
+     "tier": "Plus"
+    },
+    {
+     "team": "BAL",
+     "player": "Ray Rice",
+     "share": 0.5788288288288288,
+     "tier": "Plus"
+    },
+    {
+     "team": "LV",
+     "player": "Darren McFadden",
+     "share": 0.574468085106383,
+     "tier": "Plus"
+    },
+    {
+     "team": "KC",
+     "player": "Jamaal Charles",
+     "share": 0.57,
+     "tier": "Elite"
+    },
+    {
+     "team": "NYJ",
+     "player": "Shonn Greene",
+     "share": 0.5575757575757576,
+     "tier": "Average"
+    },
+    {
+     "team": "NE",
+     "player": "Stevan Ridley",
+     "share": 0.5555555555555556,
+     "tier": "Average"
+    },
+    {
+     "team": "DET",
+     "player": "Mikel Leshoure",
+     "share": 0.5512820512820513,
+     "tier": "Average"
+    },
+    {
+     "team": "NYG",
+     "player": "Ahmad Bradshaw",
+     "share": 0.5403422982885085,
+     "tier": "Average"
+    },
+    {
+     "team": "CHI",
+     "player": "Matt Forte",
+     "share": 0.5276595744680851,
+     "tier": "Average"
+    },
+    {
+     "team": "SF",
+     "player": "Frank Gore",
+     "share": 0.524390243902439,
+     "tier": "Average"
+    },
+    {
+     "team": "MIA",
+     "player": "Reggie Bush",
+     "share": 0.5159090909090909,
+     "tier": "Plus"
+    },
+    {
+     "team": "PHI",
+     "player": "LeSean McCoy",
+     "share": 0.48426150121065376,
+     "tier": "Elite"
+    },
+    {
+     "team": "IND",
+     "player": "Vick Ballard",
+     "share": 0.47954545454545455,
+     "tier": "Average"
+    },
+    {
+     "team": "BUF",
+     "player": "C.J. Spiller",
+     "share": 0.4683257918552036,
+     "tier": "Plus"
+    },
+    {
+     "team": "DAL",
+     "player": "DeMarco Murray",
+     "share": 0.4535211267605634,
+     "tier": "Elite"
+    },
+    {
+     "team": "LAC",
+     "player": "Ryan Mathews",
+     "share": 0.44768856447688565,
+     "tier": "Plus"
+    },
+    {
+     "team": "NO",
+     "player": "Mark Ingram",
+     "share": 0.42162162162162165,
+     "tier": "Average"
+    },
+    {
+     "team": "PIT",
+     "player": "Jonathan Dwyer",
+     "share": 0.3786407766990291,
+     "tier": "Average"
+    },
+    {
+     "team": "CAR",
+     "player": "DeAngelo Williams",
+     "share": 0.37445887445887444,
+     "tier": "Plus"
+    },
+    {
+     "team": "DEN",
+     "player": "Willis McGahee",
+     "share": 0.3471933471933472,
+     "tier": "Average"
+    },
+    {
+     "team": "ARI",
+     "player": "LaRod Stephens-Howling",
+     "share": 0.3125,
+     "tier": "Average"
+    },
+    {
+     "team": "GB",
+     "player": "Alex Green",
+     "share": 0.31105990783410137,
+     "tier": "Average"
+    },
+    {
+     "team": "JAX",
+     "player": "Rashad Jennings",
+     "share": 0.28291316526610644,
+     "tier": "Elite"
+    }
+   ]
+  },
+  "top_sacker_sack_share": {
+   "clubs": 32,
+   "mean": 0.27821298302263414,
+   "sd": 0.08115877114394364,
+   "by_tier": {
+    "Elite": {
+     "clubs": 21,
+     "mean_share": 0.2988149092095148
+    },
+    "Plus": {
+     "clubs": 6,
+     "mean_share": 0.27109098345657484
+    },
+    "Average": {
+     "clubs": 5,
+     "mean_share": 0.2002312925170068
+    }
+   },
+   "factors": {
+    "Elite": 1.07405091582374,
+    "Plus": 0.974400908653929,
+    "Average": 0.7197050631555786,
+    "Below-Average": 0.7197050631555786,
+    "Replacement-Level": 0.7197050631555786
+   },
+   "rows": [
+    {
+     "team": "SF",
+     "player": "Aldon Smith",
+     "share": 0.5131578947368421,
+     "tier": "Elite"
+    },
+    {
+     "team": "HOU",
+     "player": "J.J. Watt",
+     "share": 0.4659090909090909,
+     "tier": "Elite"
+    },
+    {
+     "team": "KC",
+     "player": "Justin Houston",
+     "share": 0.37037037037037035,
+     "tier": "Plus"
+    },
+    {
+     "team": "MIA",
+     "player": "Cameron Wake",
+     "share": 0.35714285714285715,
+     "tier": "Elite"
+    },
+    {
+     "team": "DEN",
+     "player": "Von Miller",
+     "share": 0.3557692307692308,
+     "tier": "Elite"
+    },
+    {
+     "team": "ATL",
+     "player": "John Abraham",
+     "share": 0.3448275862068966,
+     "tier": "Elite"
+    },
+    {
+     "team": "TB",
+     "player": "Michael Bennett",
+     "share": 0.3333333333333333,
+     "tier": "Plus"
+    },
+    {
+     "team": "CAR",
+     "player": "Charles Johnson",
+     "share": 0.32894736842105265,
+     "tier": "Elite"
+    },
+    {
+     "team": "DAL",
+     "player": "DeMarcus Ware",
+     "share": 0.32857142857142857,
+     "tier": "Elite"
+    },
+    {
+     "team": "SEA",
+     "player": "Chris Clemons",
+     "share": 0.3194444444444444,
+     "tier": "Elite"
+    },
+    {
+     "team": "BUF",
+     "player": "Mario Williams",
+     "share": 0.2916666666666667,
+     "tier": "Elite"
+    },
+    {
+     "team": "DET",
+     "player": "Cliff Avril",
+     "share": 0.2878787878787879,
+     "tier": "Elite"
+    },
+    {
+     "team": "GB",
+     "player": "Clay Matthews",
+     "share": 0.2826086956521739,
+     "tier": "Elite"
+    },
+    {
+     "team": "CHI",
+     "player": "Julius Peppers",
+     "share": 0.2804878048780488,
+     "tier": "Elite"
+    },
+    {
+     "team": "JAX",
+     "player": "Jason Babin",
+     "share": 0.27450980392156865,
+     "tier": "Elite"
+    },
+    {
+     "team": "WAS",
+     "player": "Ryan Kerrigan",
+     "share": 0.27419354838709675,
+     "tier": "Plus"
+    },
+    {
+     "team": "MIN",
+     "player": "Jared Allen",
+     "share": 0.2727272727272727,
+     "tier": "Elite"
+    },
+    {
+     "team": "NO",
+     "player": "Cameron Jordan",
+     "share": 0.26666666666666666,
+     "tier": "Average"
+    },
+    {
+     "team": "LAC",
+     "player": "Shaun Phillips",
+     "share": 0.25,
+     "tier": "Elite"
+    },
+    {
+     "team": "IND",
+     "player": "Robert Mathis",
+     "share": 0.25,
+     "tier": "Elite"
+    },
+    {
+     "team": "CIN",
+     "player": "Geno Atkins",
+     "share": 0.25,
+     "tier": "Elite"
+    },
+    {
+     "team": "BAL",
+     "player": "Paul Kruger",
+     "share": 0.24324324324324326,
+     "tier": "Plus"
+    },
+    {
+     "team": "ARI",
+     "player": "Daryl Washington",
+     "share": 0.23684210526315788,
+     "tier": "Elite"
+    },
+    {
+     "team": "LA",
+     "player": "Chris Long",
+     "share": 0.22549019607843138,
+     "tier": "Elite"
+    },
+    {
+     "team": "PHI",
+     "player": "Brandon Graham",
+     "share": 0.22448979591836735,
+     "tier": "Average"
+    },
+    {
+     "team": "NE",
+     "player": "Rob Ninkovich",
+     "share": 0.21621621621621623,
+     "tier": "Plus"
+    },
+    {
+     "team": "NYG",
+     "player": "Jason Pierre-Paul",
+     "share": 0.19696969696969696,
+     "tier": "Elite"
+    },
+    {
+     "team": "CLE",
+     "player": "Jabaal Sheard",
+     "share": 0.1891891891891892,
+     "tier": "Plus"
+    },
+    {
+     "team": "NYJ",
+     "player": "Quinton Coples",
+     "share": 0.18333333333333332,
+     "tier": "Average"
+    },
+    {
+     "team": "TEN",
+     "player": "Derrick Morgan",
+     "share": 0.16666666666666666,
+     "tier": "Average"
+    },
+    {
+     "team": "PIT",
+     "player": "James Harrison",
+     "share": 0.16216216216216217,
+     "tier": "Elite"
+    },
+    {
+     "team": "LV",
+     "player": "Desmond Bryant",
+     "share": 0.16,
+     "tier": "Average"
+    }
+   ]
+  }
+ },
+ "team_game_top_shares_2012": {
+  "top_receiver_target_share": {
+   "team_games": 512,
+   "mean": 0.2937452744106759,
+   "sd": 0.0689086574580211,
+   "definition": "per team-game, the top player's share of the club's targets (or non-QB carries), 2012 regular season, two-point tries excluded"
+  },
+  "top_rusher_carry_share": {
+   "team_games": 512,
+   "mean": 0.7068270962525983,
+   "sd": 0.15794129833452228,
+   "definition": "per team-game, the top player's share of the club's targets (or non-QB carries), 2012 regular season, two-point tries excluded"
+  }
+ }
+}

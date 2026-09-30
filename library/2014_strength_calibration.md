@@ -143,3 +143,84 @@ Recorded from the user's decisions on Section 6; implemented in `runtime/strengt
 8. **Home term:** 0.023 per drive for the home offense at a home venue, none at a neutral site (replaces 0.008).
 
 Item 6 (research-pass source keys and announcement dates) remains open research work.
+
+## 9. Second pass (September 30, 2026): honours + production, calibrated by the same method
+
+**Why.** The first pass reached 59% of the target edge spread with 135 evidenced players and 19 of 32 offenses at composite 2 or less. The user's decision: no 2014 game is played until strength is built properly, with no real 2013 data, no Madden and no market totals; extend E1 with a second, dated, pre-divergence production stream, preregistered and calibrated by the study's own method. Evidence: [2010-2012 production evidence](2010_2012_production_evidence.md) (`data/2010_2012_production_evidence.json`, two-pass verified). Machine record of this section: [`data/2014_strength_calibration_v2.json`](data/2014_strength_calibration_v2.json), built by `scripts/research/build_2014_strength_calibration_v2.py`, which imports the first study's functions unchanged (2012 Week 1 depth-chart starters for role, drive-weighted least squares of club TD share on the composite, shrinkage prior N(0, 0.025^2), leave-one-club-out prediction, drive-level joint check with the 500-draw game-cluster bootstrap, seed 20140401).
+
+### 9.1 Rule fixed before the second fit
+
+Written into the script's `PREREGISTERED` block before the first fit ran.
+
+- **Player value.** With an admissible honour, the larger of the honours value (as the first pass; never below 0) and the production value; without one, the production value, negative tiers included. Production value: the window tier mapped Elite 2, Plus 1, Average 0, Below-Average -1, Replacement-Level -2, times its evidence weight (1.0 for a season the play-by-play recomputation confirmed or corrected, 0.5 unverified); 0 with no qualifying window season.
+- **Why the honour lifts and production can lower.** A production tier is a measured, two-pass verified, pre-divergence season outcome covering every qualifier, so it can place a player above or below Average on its own; an honour is an expert judgement that can only lift a player. Keeping the honour's lift protects an honoured player whose production is contaminated by his old unit, and lets production speak for the unhonoured majority. The fitted two-term alternative was declared a sensitivity in advance; the kernel adopts this rule whatever it says.
+- **Correction recorded (September 30, 2026).** The first fit of the script implemented the rule as max(honours value, production value) with honours value 0 for an unhonoured player, which floored every unhonoured starter at 0 and let no Below-Average or Replacement-Level tier enter a composite, contradicting the declared tier values. A unit test on the runtime exposed it before any game or acceptance run; the rule was corrected as declared above and refitted. The floored first fit is kept in the JSON (`variants_floored_first_fit`) for the record: its combined offense LOO skill was 0.144 (worse than honours alone) and its net implied SD 0.0292.
+- **Side rule.** A QB honour or QB production tier counts only in the passer slot (weight 3, unchanged); a non-QB honour or tier never counts there; an offensive tier counts only on offense and a defensive tier only on defense; offensive linemen carry no production tier (job evidence only) and contribute honours alone.
+- **Window.** As the honours window (2012 target: 2010-2011; 2014 branch: 2011-2012), with the 2014 branch's discounted 2010 fallback from the production file.
+- **Age shrink on stale honours.** Halve the honours value of a player whose only admissible honours come from the earlier window season and whose age on September 1 of the target season is at or above the group threshold (QB 35, RB 29, WR 31, TE 31, OL 32, DL 31, LB 31, DB 31), before the comparison with production, never on production. Kept only if the leave-one-club-out skill improves on both sides; otherwise reported and left out.
+- **Attribution tilt source (register item 19).** From the 2012 regular season: each club's top-target player's share of club targets, top-carry player's share of club carries and top sack-getter's share of club sacks, grouped by that player's combined tier from the 2010-2011 window; factor = tier mean share / all-club mean share, clipped to [0.6, 1.6], the Average tier included so the 2012 tier mix reproduces the all-club mean the rank shapes were built on; a tier with fewer than 3 clubs takes the nearest populated tier's factor toward Average.
+
+### 9.2 Results (2012 target)
+
+Slopes per composite unit; defense as strength (a positive number lowers the rate allowed); implied club SD = shrunk slope x composite SD; target 0.0455 offense, 0.0223 defense, 0.048 net; points per team-game = SD x 7.0 x 11.8.
+
+| Variant | Side | Slope | SE | Shrunk | Composite mean | Composite SD | Range | R^2 | LOO skill | Implied club SD | Of target | Points per game SD |
+|---|---|---:|---:|---:|---:|---:|---|---:|---:|---:|---:|---:|
+| honours only (first pass, recomputed) | offense | 0.0091 | 0.0030 | 0.0090 | 2.70 | 2.91 | 0 to 14 | 0.239 | 0.182 | 0.0260 | 57% | 2.15 |
+| | defense | 0.0065 | 0.0036 | 0.0064 | 2.20 | 1.75 | 0 to 7.5 | 0.098 | 0.057 | 0.0112 | 50% | 0.93 |
+| | net | | | | | | | | | 0.0284 | 59% | 2.34 |
+| production only | offense | 0.0056 | 0.0016 | 0.0056 | 3.25 | 5.09 | -5 to 14 | 0.280 | 0.199 | 0.0283 | 62% | 2.34 |
+| | defense | 0.0048 | 0.0027 | 0.0048 | 7.78 | 2.37 | 3 to 13 | 0.099 | 0.061 | 0.0113 | 51% | 0.93 |
+| | net | | | | | | | | | 0.0305 | 64% | 2.52 |
+| **combined (primary, adopted)** | offense | 0.0058 | 0.0016 | **0.0058** | **4.30** | 5.17 | -4 to 17 | 0.312 | 0.238 | 0.0299 | 66% | 2.47 |
+| | defense | 0.0046 | 0.0026 | **0.0046** | **8.11** | 2.46 | 3 to 15 | 0.098 | 0.063 | 0.0113 | 51% | 0.93 |
+| | net | | | | | | | | | **0.0320** | **67%** | **2.64** |
+| combined + age shrink | offense | 0.0057 | 0.0016 | 0.0057 | 4.23 | 5.19 | -4 to 17 | 0.306 | 0.232 | 0.0296 | 65% | 2.45 |
+| | defense | 0.0049 | 0.0026 | 0.0048 | 8.08 | 2.45 | 3 to 15 | 0.107 | 0.074 | 0.0118 | 53% | 0.97 |
+| | net | | | | | | | | | 0.0319 | 66% | 2.63 |
+| continuous production (sensitivity, added after the first fit was read, labelled) | offense | 0.0059 | 0.0017 | 0.0059 | 3.69 | 4.91 | -4.4 to 16.3 | 0.292 | 0.217 | 0.0290 | 64% | 2.39 |
+| | defense | 0.0047 | 0.0028 | 0.0047 | 6.75 | 2.28 | 2.8 to 13.5 | 0.089 | 0.051 | 0.0107 | 48% | 0.88 |
+| | net | | | | | | | | | 0.0309 | 64% | 2.55 |
+
+Drive-level joint check (opponent-adjusted, game-cluster bootstrap), combined: offense 0.00565 (SE 0.00095), defense 0.00372 (SE 0.00192), home 0.0230; consistent with the club-level fit. Two-term sensitivity (honours composite and production composite as separate predictors): offense 0.0043 honours + 0.0039 production, R^2 0.308, LOO skill 0.166; defense 0.0053 + 0.0039, R^2 0.160, LOO skill 0.080. Both terms keep their sign, so neither stream is redundant; the preregistered combined rule beats the two-term fit out of sample on offense.
+
+**Reading, stated plainly.** On offense the second stream is a real gain: leave-one-club-out skill 0.182 to 0.238, R^2 0.239 to 0.312, implied club SD 0.0260 to 0.0299 (57% to 66% of target), and the slope is now more than three standard errors from zero. On defense it is not: LOO skill 0.057 to 0.063 and the implied SD unchanged at 0.0113 (51%); the disruption index adds coverage but little fitted signal, and the defense slope stays under two standard errors from zero at the club level. Net implied edge SD 0.0284 to 0.0320 (59% to 67% of the 0.048 target; 2.34 to 2.64 points per team-game). Nothing was inflated to close the gap.
+
+**Age shrink: not adopted.** With it, offense LOO skill 0.232 against 0.238 without; defense 0.074 against 0.063. The preregistered rule required both sides to improve, so the kernel reads no birth date. 13 2012 starters would have been shrunk (Peyton Manning, Andre Johnson, Reggie Wayne, Julius Peppers, James Harrison, John Abraham, Michael Turner, Steven Jackson, Jordan Gross, Robert Mathis, Brandon Lloyd, Nnamdi Asomugha, Quintin Mikell).
+
+**Composite range (combined, 2012 starters).** Offense -4 (ARI) to 17 (NE); JAX -2.5, STL -2.5; defense 3 (CLE, SD) to 15 (SF). 2012 means 4.30 and 8.11 are the centres, so a unit with no evidence at all sits below both.
+
+### 9.3 Attribution tilt (register item 19)
+
+2012 club-season top shares by the top player's combined tier (2010-2011 window):
+
+| Credit | All-club mean (SD) | Elite | Plus | Average | Below-Average / Replacement-Level |
+|---|---|---|---|---|---|
+| top receiver's share of club targets | 0.239 (0.054) | 0.245, 9 clubs, factor 1.025 | 0.269, 9 clubs, 1.122 | 0.217, 14 clubs, 0.905 | no club: 0.905 (filled from Average) |
+| top rusher's share of club carries | 0.529 (0.127) | 0.549, 7 clubs, 1.038 | 0.507, 7 clubs, 0.958 | 0.530, 18 clubs, 1.002 | no club: 1.002 |
+| top sack-getter's share of club sacks | 0.278 (0.081) | 0.299, 21 clubs, 1.074 | 0.271, 6 clubs, 0.974 | 0.200, 5 clubs, 0.720 | no club: 0.720 |
+
+The tier dependence is weak and noisy at this sample (Plus above Elite for receivers; the rusher row is flat). The factors are used as sourced: `runtime/usage.tilt_map` multiplies a player's rank weight by his tier's factor when a target, carry or sack/pressure credit is attributed; the number of random draws is unchanged and the possession stream never reads it (`tests/test_strength.py`, `AttributionTiltTests`). Two band rows in `runtime/bands.py` watch the per team-game top shares. A team-game top share runs above a club-season one (the same player is not the top target every game), so the rows have their own sourced centres from the 2012 play-by-play, per team-game over 512 team-games: top receiver's share of club targets 0.294 (SD 0.069), top non-QB rusher's share of club carries 0.707 (SD 0.158); tolerance three SDs over the root of the sample's team-game count (`team_game_top_shares_2012` in the JSON, added when the first club-season centres read OUTSIDE on the closed 2013 cohorts, before any acceptance row was graded on them). The closed 2013 cohorts read WITHIN on both rows (`career/2013/stats/calibration_audit.md`, regenerated to render the rows; no receipt changed).
+
+### 9.4 Coverage of 2014 starters
+
+Starters are the kernel's slot rule applied to the inventory in `branch_week1_slot` order (an identity ordering, not a 2014 depth chart): 704 slots across 32 clubs, Jacksonville by the identical rule.
+
+| Group | Starters | With honours (before) | With production | With either (after) |
+|---|---:|---:|---:|---:|
+| QB | 32 | 10 (31%) | 28 | 28 (88%) |
+| RB | 32 | 9 (28%) | 24 | 24 (75%) |
+| FB | 24 | 2 (8%) | 4 | 5 (21%) |
+| WR | 72 | 10 (14%) | 50 | 50 (69%) |
+| TE | 32 | 5 (16%) | 24 | 24 (75%) |
+| OL | 160 | 23 (14%) | 0 (job evidence only) | 23 (14%) |
+| DL | 128 | 12 (9%) | 111 | 111 (87%) |
+| LB | 96 | 12 (13%) | 93 | 93 (97%) |
+| DB | 128 | 17 (13%) | 113 | 113 (88%) |
+| **All** | **704** | **100 (14.2%)** | 447 (63.5%) | **471 (66.9%)** |
+
+By club (starters with either, of 22): HOU 18; CAR, CLE 17; BAL, CHI, NO, PIT, SEA, WAS 16; ARI, ATL, IND, KC, MIN, NE, NYG, SF, TEN 15; CIN, DAL, DEN, GB, MIA, OAK, SD, STL, TB 14; DET, PHI 13; BUF, NYJ 12; **JAX 10** (no honour in the inventory's Jacksonville starter slots; at roster level Maurice Jones-Drew and Jason Babin still carry honours). Roster level: 948 of 2,004 inventory players carry any evidence (135 with honours, 906 with production); 1,056 Average fallbacks, every one listed with its reason.
+
+### 9.5 What this pass still cannot do
+
+Offensive linemen remain honours-only; contamination is unmodelled; no protection, coverage or run split, depth, help or coaching tradeoff is modelled (open E1 work); the special-teams strength is carried but not read; the composite explains about 67% of the target edge spread and the defense fit is still weak. The cheap complements listed in the user's decision that are not in this pass: matchup sub-composites and special teams.
