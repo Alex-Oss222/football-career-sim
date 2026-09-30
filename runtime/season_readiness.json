@@ -43,9 +43,10 @@
         {
           "id": "legal_rosters",
           "status": "BLOCKED",
-          "remaining": "Establish current 2014 control, medical clearance, depth charts and dated background inputs.",
+          "remaining": "Establish current 2014 control, medical clearance and Jacksonville's game depth chart at the August 30 cutdown. The 31 background clubs' Week 1 depth-chart library (library/data/2014_week1_depth_charts.json) is prepared research, gated until the master clock reaches Week 1 (September 7, 2014); it is not yet legal game input and the gate stays BLOCKED.",
           "evidence": [
-            "career/2014/supporting_records/operating_baseline.md"
+            "career/2014/supporting_records/operating_baseline.md",
+            "library/2014_week1_depth_charts.md"
           ]
         },
         {

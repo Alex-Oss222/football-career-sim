@@ -83,6 +83,10 @@
     "library/data/2013_week1_depth_charts.json",
     "scripts/research/build_2013_week1_depth_charts.py",
     "tests/test_depth_library.py",
+    "library/2014_week1_depth_charts.md",
+    "library/data/2014_week1_depth_charts.json",
+    "scripts/research/build_2014_week1_depth_charts.py",
+    "tests/test_2014_week1_depth_library.py",
     "library/2013_nfl_playing_rules_for_simulation.md",
     "runtime/rules.py",
     "tests/test_overtime.py",
@@ -203,6 +207,7 @@
     "career/2013/league_results/week_18.md",
     "career/2013/postseason/week_19_jacksonville_at_tennessee/output.md",
     "library/data/player_birth_dates.json",
+    "library/data/player_photos.json",
     "library/2013_player_birth_dates.md",
     "career/2013/player_ages.md",
     "runtime/player_bios.py",
@@ -393,5 +398,5 @@
   "ledger_history": [
     "career/2013/ledger.md"
   ],
-  "background_depth_status": "Legacy biography source only; not legal 2014 game input"
+  "background_depth_status": "Legacy biography source only; not legal 2014 game input. The 2014 background library (library/data/2014_week1_depth_charts.json) is prepared research, gated until the master clock reaches Week 1, September 7, 2014"
 }

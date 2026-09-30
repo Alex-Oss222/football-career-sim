@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "season": 2014,
-  "as_of": "June 28, 2014",
+  "as_of": "July 29, 2014",
   "roster_source": "career/2014/team/roster/roster.md",
   "continuity_source": "career/2014/team/player_development/2013_exit_player_index.json",
   "policy": "Roster controls eligibility. The exit index identifies Jacksonville 2013 continuity only. Regenerate after any transaction or draft addition before progression is resolved.",

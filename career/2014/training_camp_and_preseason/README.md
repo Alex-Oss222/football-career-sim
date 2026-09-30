@@ -2,7 +2,7 @@
 
 [2014 season](../README.md) · [Calendar](../calendar.md)
 
-Not started. Historical report dates are rookies July 21 and veterans July 24, with first practice July 25; the calendar controls when report orders and later rules become available.
+Training camp is open: rookies and first-year players reported July 21 and veterans July 24, and the first five practices ran July 25–29 without full pads. The calendar controls the later rules and the preseason games remain blocked by the 2014 release gates.
 
 | Open | What you will find |
 |---|---|
