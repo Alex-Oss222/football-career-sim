@@ -31,7 +31,7 @@ This is the carry-forward authorized in Stone's February 2 memo section 6 and th
 - Cousins remains the established QB1. The quarterback competition is for QB2/QB3 among players actually controlled when the phase opens. Henne's future participation depends on his actual contract or other lawful participation basis; Bray signed a reserve/future contract effective March 11, which does not award a reserve role. Cousins's priorities are ball security, protection communication and separating decision errors from technique or protection failures.
 - Jacksonville has a returning head coach. No additional new-head-coach voluntary veteran minicamp is authorized. Older references to that privilege in the inherited readiness document do not apply in 2014.
 - Use the actual roster, medical instructions and teaching evidence at execution. Proposed signings, draft selections and departures are not completed transactions. Verner and Talib are signed; drafted linemen enter the plan only after an actual selection and eligibility check; Allen cannot be relied on for work after his scheduled April 22 retirement.
-- Crennel calls the defense; Stone calls the offense. The player who relays defensive calls is a separate job. Mike Westhoff runs special teams following his February 11 appointment (Entry 84). Current roles stand pending a separately authorized change.
+- Tice coordinates offensive preparation, Crennel defense and Westhoff special teams. Follow Stone's latest direction on calling or delegating any phase; this is not a recurring approval question. Player-relay assignments remain distinct from unit communication.
 - Medical projections are review dates, not clearance. Voluntary attendance, rehabilitation, private support needs and lawful absence never become hidden role grades. No fixed rep percentages or touch quotas determine roles.
 - The 2014 calendar controls dates and legal work. The program schedule must be filed by the agreed league date, no later than March 31 for an April 21 start, with advance notice of changes. The user has selected the historical Jacksonville dates. Preserve the filing receipt separately; public publication is not proof of submission. Verify applicable phase rules before executing. Training camp also waits for its schedule/reporting gates.
 
@@ -48,9 +48,9 @@ Use Explain → Show → Walk → Rep → Correct → Rep again → Retain → A
 
 Read the [training index](../README.md), [room work plans](../training/unit_plans.md), [player queue](../film/player_queue.md) and the relevant [individual plan](../player_development/README.md) before preparing the phase. Use the [session template](../training/session_template.md), [film packet](../film/packet_template.md) and [delivery log](../film/delivery_log.md) to close the loop from assigned job to a later independent retest.
 
-Stone authorized individual feedback and Cousins progression, shared QB-center identification teaching, and continuing individual development. Other marked proposals remain pending. Start Cousins from his [2013 evidence assessment](../player_development/kirk_cousins.md), preserving demonstrated operation and targeting the unresolved job. Do not reset him to a beginner plan or infer broad mastery from results alone.
+Stone adopted the [second-year install direction](../phase_plan_decisions.md#install-scope-continue-into-year-two): review established work, integrate rookies, protect unfinished individual work and teach new active-book material, including Boot Flood. Individual feedback, Cousins progression and shared QB-center teaching continue. Other marked proposals remain pending. Start Cousins from his [2013 evidence assessment](../player_development/kirk_cousins.md), preserving demonstrated operation and targeting the unresolved job. Do not reset him to a beginner plan or infer broad mastery from results alone.
 
-All work remains within this phase’s calendar, contact, medical and voluntary-participation limits. The actual phase output owns new practice evidence; the delivery log owns actual distribution. A prepared packet is not a delivered tape. No historic January delivery is backdated. New role assignments and Boot Flood’s return require their separate decisions.
+All work remains within this phase’s calendar, contact, medical and voluntary-participation limits. The actual phase output owns new practice evidence; the delivery log owns actual distribution. A prepared packet is not a delivered tape. No historic January delivery is backdated. Boot Flood's return to teaching and practice is approved, within this phase's legal work. Actual role appointments and game-menu choices follow the work.
 
 ## Player playbook access and evidence rule
 
@@ -90,11 +90,11 @@ Phases One and Two are owned by [the offseason-program plan](../offseason_progra
 
 ## OTA / Phase Three teaching gates
 
-The team does not install by calendar volume. It advances through gates.
+These teaching checks apply to the job being taught. Returning players start from their demonstrated work, rookies receive onboarding and new second-year material runs alongside corrections. An unresolved job does not hold the entire unit at Gate 1.
 
 ### Gate 1 — common language
 
-Before expanding, the unit can:
+Review the established language with returning players and teach newcomers to:
 
 - get personnel on and off;
 - break the huddle;
@@ -446,19 +446,19 @@ When the offseason/OTA phase actually runs:
 
 ## execution focus and proposed decisions
 
-Run the inherited five gates with retention first. The interior-line combinations use only actual acquisitions and retained players; compare protection communication, exchanges and corrections beside the established center. Johnson's pass-set work and Cousins's ball-security/protection work remain memo priorities. Integrate Verner or Talib into coverage terminology only if acquired; otherwise teach the controlled secondary. No future transaction is assumed.
+Use the inherited teaching checks within the approved second-year sequence of review, rookie integration, individual work and new material. The interior-line combinations use only actual acquisitions and retained players; compare protection communication, exchanges and corrections beside the established center. Johnson's pass-set work and Cousins's ball-security/protection work remain memo priorities. Integrate Verner or Talib into coverage terminology only if acquired; otherwise teach the controlled secondary. No future transaction is assumed.
 
-The communication, medical and cross-training proposals remain pending in [the offseason-program plan](../offseason_program/plan.md). The individual-feedback policy is adopted and uses the linked workflow. At each OTA block review, distinguish an untested job from a lost competition and state what evidence will be gathered next.
+The backup-relay appointment, medical-learning and cross-training proposals remain pending in [the offseason-program plan](../offseason_program/plan.md). The unit-level communication and execution approach is adopted in the [room plans](../training/unit_plans.md#defense-as-a-unit). The individual-feedback policy is adopted and uses the linked workflow. At each OTA block review, distinguish an untested job from a lost competition and state what evidence will be gathered next.
 
 ### blocked, hot and kill identification, adopted teaching process
 
 Use a standing quarterback-center identification period within the permitted OTA inventory. Bates, Yarno and Tice use the active protection language to identify who is blocked, who is the hot answer and when the taught kill/check applies. Change one presentation at a time, require the quarterback and center to communicate the same answer, and classify recognition, communication and execution separately. No fixed extra minutes or reps override the CBA or displace an existing priority without review.
 
-### Boot Flood review and limited reintroduction
+### Boot Flood in the second-year install
 
-Recommend retaining Boot Flood in the active book while holding it out of competitive team work until Bates and Tice complete the promised cause review and Stone approves its return. Review the assigned quarterback progression, edge/protection answer, route spacing and defensive response from branch film. The evidence must separate a flawed call/design from a correct read with failed execution.
+Stone approved its return to teaching and practice. Bates and Tice use the good camp evidence and adverse game examples to review progression, protection, spacing and defensive response. Unknown historical causes remain questions; they do not prevent teaching the active-book jobs or collecting new observations.
 
-If approved after review, begin with explanation and an unopposed walkthrough, then a narrow, non-contact OTA test against the intended and adverse pictures. Use only the active Iteration I rules. A failed teaching check simplifies or parks the install; it does not erase the concept from the book or blame Cousins by default. No game-use approval follows from merely scheduling this test.
+After the permitted unopposed teaching, practice Boot Flood against non-contact OTA opposition and return to it across the block. Change the look, hear the players' answers and correct what the evidence shows. Continue the other reviewed and new material alongside it. Its eventual use follows the ordinary game-menu decision, without another special release request.
 
 ### OTA closeout
 

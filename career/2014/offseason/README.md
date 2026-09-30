@@ -41,7 +41,7 @@ Dates stay in the calendar and phase plans. The [decision package](phase_plan_de
 
 ## Authority and record boundaries
 
-The individual-feedback process, the living assessments and open-ended development of all players (including Cousins), shared QB-center identification teaching, and continuing individual development are authorized by this request. Other marked proposals, including new role assignments, Boot Flood's return to team work and Stone's punt policy, remain separate decisions. A player learning a job does not win it merely by appearing in a plan.
+The individual-feedback process, the living assessments and open-ended development of all players (including Cousins), shared QB-center identification teaching, and continuing individual development are authorized by this request. The [second-year install direction](phase_plan_decisions.md#install-scope-continue-into-year-two), including Boot Flood's return to teaching and practice, is also adopted. New role assignments and other marked proposals, including the punt policy, remain separate decisions. A player learning a job does not win it merely by appearing in a plan.
 
 Plans describe intended work. The relevant phase's `output.md` records actual instruction, evidence and decisions when it runs. The film delivery log records actual distribution. Player evidence records link to those primary sources rather than inventing practice results. Any change to canon closes with the ledger and dependent state under [the update workflow](../../../docs/update_workflow.md).
 
