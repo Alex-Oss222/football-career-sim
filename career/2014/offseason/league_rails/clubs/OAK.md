@@ -75,6 +75,8 @@
 |---|---|---|---|---|---|
 | February 28, 2014 | Re-signing | Khalif Barnes, T | Re-signed on the afternoon of Friday, February 28, on a one-year contract announced by general manager Reggie McKenzie; the first of Oakland's pending free agents to re-sign. Terms not recorded | [Raiders.com](https://www.raiders.com/news/raiders-re-sign-khalif-barnes-12688241); [ProFootballTalk, February 28, 2014](https://profootballtalk.nbcsports.com/2014/02/28/raiders-re-sign-khalif-barnes-2/); [SFGate](https://www.sfgate.com/raiders/article/Lineman-Khalif-Barnes-re-signs-with-Raiders-5279176.php); [AP via Fox News](https://www.foxnews.com/sports/raiders-bring-back-first-of-17-free-agents-re-signing-ol-khalif-barnes). Confirmed | Yes: verified and applied at the March 3, 2014 checkpoint by Entry 93 |
 | March 14, 2014 | Signing (free agent) | Antonio Smith, DE | From Houston; reported two years, $9 million (terms are reports) | [Houston Chronicle](https://www.houstonchronicle.com/sports/texans/article/Former-Texan-Smith-signs-with-Raiders-5319208.php); [NFL.com](https://www.nfl.com/news/antonio-smith-tarell-brown-joining-oakland-raiders-0ap2000000334228) | Yes: applied by Entry 102 |
+| March 28, 2014 | Signing (real; not applied) | Maurice Jones-Drew, RB | Real three-year, $7.5M Oakland deal ($1.2M guaranteed) does not apply: Jacksonville re-signed him March 28 (Entry 103). Oakland's next man up takes the depth slot | [Yahoo Sports](https://sports.yahoo.com/breaking-down-maurice-jones-drews-180049478--nfl.html); Over The Cap data (nflverse). Real move; not applied | No: Jacksonville control |
+| March 28, 2014 | Signing (real; not applied) | C.J. Wilson, DE | Real one-year, $795,000 Oakland deal does not apply: Jacksonville re-signed him March 28 (Entry 103) | [Silver And Black Pride, March 28, 2014](https://www.silverandblackpride.com/2014/3/28/5559184/oakland-raiders-add-defensive-lineman-cj-wilson); Over The Cap data (nflverse). Real move; not applied | No: Jacksonville control |
 
 **Coverage note (Entry 89, February 28, 2014):** the February 26 to 28 moves in this table come from a bounded two-pass search. The web-search budget ran out during pass 2, which could therefore only re-read the evidence stored from pass 1. Eighteen of the 31 other clubs had no move found in the window; that is not a verified negative, and other moves by this club in the window may exist.
 
@@ -82,3 +84,5 @@
 
 
 **Coverage note (Entry 102, March 24, 2014):** moves verified in a bounded search are added with their sources. The rails from March 11 evening to March 24 are otherwise not swept.
+
+**Coverage note (Entry 103, March 31, 2014):** only the two Jacksonville-related March 28 moves are added. The rails from March 11 evening to March 31 are otherwise not swept.

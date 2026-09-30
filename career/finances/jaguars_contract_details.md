@@ -1,6 +1,6 @@
 # Jacksonville Jaguars individual contract details
 
-[Return to the twelve-year table](jaguars_cap.md). As of March 24, 2014, Entry 102. Whole US dollars.
+[Return to the twelve-year table](jaguars_cap.md). As of March 28, 2014, Entry 103. Whole US dollars.
 
 Annual cells contain the working original or reconstructed contract schedule. Blank years lie outside that deal. The [completion research](../../library/2014_jaguars_contract_completion.md) identifies adopted simulation terms and guarantee assumptions. Cap, scheduled cash and remaining unpaid guarantees are separate amounts.
 
@@ -1188,23 +1188,28 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [contr
 
 ## Maurice Jones-Drew
 
-Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
-
 | Field | Detail |
 |---|---|
-| Position / status | RB / Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's offer stands, draw held to his real date (Entry 94) |
-| Original contract | Veteran extension, 2009 |
-| Signed | See expiring-contract description |
-| Term | 2013 |
-| Contract value | $30,515,000 (term length Corrected in the register) |
+| Position / status | RB / Under contract |
+| Original contract | Veteran (branch re-signing) |
+| Signed | March 28, 2014 |
+| Term | 2 / 2015 |
+| Contract value | $7,000,000 |
+| Bonus terms | $1,500,000 signing bonus; $750,000; 2 |
+| Remaining unpaid salary guarantee | $1,750,000 |
+| Guarantee basis | $3,250,000 (signing bonus and 2014 base) |
+| Schedule basis | Branch re-signing, Entry 103 (negotiation record career/2014/offseason/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md) |
 
-No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
+### Annual schedule
 
-No new playing contract is recorded for 2014 or later.
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $1,750,000 | $750,000 | $100,000 | $2,600,000 | $3,350,000 | $1,750,000 |
+| 2015 | $3,550,000 | $750,000 | $100,000 | $4,400,000 | $3,650,000 | $0 |
 
 ### Contract notes
 
-Final year Confirmed; 2013 archive row.
+Branch record (Entry 103; negotiation record career/2014/offseason/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md). Two years, $7.0M, $3.25M guaranteed, inside Stone's two-year, $8.5M, $3.5M ceiling.
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
 
@@ -1269,23 +1274,27 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [signi
 
 ## C.J. Wilson
 
-Former player; departure March 11, 2014. [ledger](../../career/2013/ledger.md).
-
 | Field | Detail |
 |---|---|
-| Position / status | EDGE / Unrestricted free agent at 4 p.m. March 11, 2014; Jacksonville's minimum offer stands, draw held to his real date (Entry 94) |
-| Original contract | Rookie (Green Bay, 2010 seventh round), acquired by trade |
-| Signed | See expiring-contract description |
-| Term | 2013 |
-| Contract value |  |
+| Position / status | EDGE / Under contract |
+| Original contract | Veteran minimum (branch re-signing) |
+| Signed | March 28, 2014 |
+| Term | 1 / 2014 |
+| Contract value | $795,000 |
+| Bonus terms | $65,000 signing bonus; $65,000; 1 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | $65,000 (signing bonus) |
+| Schedule basis | Branch minimum re-signing, Entry 103 (negotiation record career/2014/offseason/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md) |
 
-No scheduled player-contract charge in this horizon. Any surviving liability appears separately in the dead-money ledger.
+### Annual schedule
 
-No new playing contract is recorded for 2014 or later.
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $730,000 | $65,000 | $0 | $795,000 | $795,000 | $0 |
 
 ### Contract notes
 
-Branch record (trade); final year Corrected (register).
+Branch record (Entry 103; negotiation record career/2014/offseason/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md). $730,000 minimum for four credited seasons plus a $65,000 signing bonus. Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified.
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md).
 

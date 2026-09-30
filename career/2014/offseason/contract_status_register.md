@@ -53,7 +53,7 @@ WebFetch was blocked by the session's network egress proxy for every outlet trie
 | Jeremy Cain | Pending UFA | Unrestricted; first-pass re-signing superseded, negotiation reopened (Entry 95) |
 | Chad Henne | Pending UFA | Unrestricted; first-pass March 7 draw superseded, negotiation reopened (Entry 95) |
 | Sen'Derrick Marks | Pending UFA | Re-signed (replay, Entry 95): four years, $26M, $12.5M guaranteed |
-| Maurice Jones-Drew, C.J. Wilson | Pending UFA | Unrestricted; Jacksonville offers outstanding; draws at their real March 28 dates |
+| Maurice Jones-Drew, C.J. Wilson | Pending UFA | Unrestricted at 4 p.m. March 11; both re-signed March 28 (Entry 103): Jones-Drew two years, $7.0M, $3.25M guaranteed; Wilson one year, $795,000 |
 | Alan Ball, Brent Grimes | Pending UFA | Unrestricted; offers outstanding; resolution rule open |
 | Cameron Bradfield | Pending RFA | Lowest tender, $1,431,000; unsigned |
 | Allen Reisner, Kevin Rutland | Pending RFA | Not tendered; unrestricted |

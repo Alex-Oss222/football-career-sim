@@ -1,6 +1,6 @@
 # 2014 operating baseline and handoffs
 
-**Current through March 24, 2014, Entry 102.** Babin and Alualu were traded March 24, leaving 53 controlled players. Administrative ownership and the historical calendar are reconciled (Entry 101). Other contracts, the eight replay signings, four unsigned tenders, current medical restrictions and the nine 2014 draft assets are unchanged. No phase, filing or game has been executed. Schedule selection is complete; filing is due by the agreed date, no later than March 31 for April 21. Held negotiations and unresolved football choices retain their own records.
+**Current through March 31, 2014, Entry 103.** Jones-Drew and C.J. Wilson re-signed March 28, making 55 controlled players; Babin and Alualu were traded March 24 (Entry 102). Administrative ownership and the historical calendar are reconciled (Entry 101). Other contracts, the eight replay signings, four unsigned tenders, current medical restrictions and the nine 2014 draft assets are unchanged. No phase or game has been executed. The selected schedule was filed March 28 (Entry 103). Held negotiations and unresolved football choices retain their own records.
 
 ## Start here
 

@@ -32,7 +32,7 @@ This register tracks the choices carried by the five phase plans, plus the sched
 
 | Item | Present status | Recommended Stone decision | Timing and accountable owner |
 |---|---|---|---|
-| Dates and filing | Historical dates selected by user | April 21 start; May 16–17 rookie camp; historical ten OTA dates and June 17–19 minicamp; file and retain proof | Choose in time for the actual league filing deadline, no later than March 31 for April 21; Caldwell's office administers |
+| Dates and filing | Historical dates selected by user (Entry 101); filed March 28 (Entry 103) | April 21 start; May 16–17 rookie camp; historical ten OTA dates and June 17–19 minicamp; file and retain proof | Choose in time for the actual league filing deadline, no later than March 31 for April 21; Caldwell's office administers |
 | Install scope | Stone's second-year direction adopted | Review established work, integrate rookies, continue unfinished individual work and teach new material from the active books, including Boot Flood | Staff allocation April 11, workload review April 18; Tice, Crennel, Westhoff; scope needs no repeat approval |
 | Emergency staff operation | Acting head-coach/practice lead unassigned | Tice is the proposed temporary lead if Stone is unavailable; arrange practical staff coverage without making play-calling delegation another install gate | Review actual absence coverage by April 18; no appointment inferred |
 | Defensive relay (legacy P1) | Daryl Smith leads; backup proposal pending | Keep Smith; evaluate a medically cleared Posluszny as first backup; otherwise teach Stanford, then Moore, without awarding the job | Approve method by April 18; package-specific field evidence before OTAs; Crennel/Bush |
