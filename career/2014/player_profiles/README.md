@@ -1,0 +1,65 @@
+# 2014 player profiles
+
+Working player cards for the current 55-player roster. Starting personnel judgments remain in place during the season; the full assessment is reviewed at season close. The bottom regular-season and playoff tables refresh after every closed game.
+
+[2014 player template](TEMPLATE.md) · [2013 final profiles](../../2013/player_profiles/README.md) · [Current roster](../roster.md)
+
+| Player | Position |
+| --- | --- |
+| [Kirk Cousins](kirk_cousins.md) | QB |
+| [John Parker Wilson](john_parker_wilson.md) | QB |
+| [Tyler Bray](tyler_bray.md) | QB |
+| [C.J. Anderson](c_j_anderson.md) | RB |
+| [Jonathan Grimes](jonathan_grimes.md) | RB |
+| [Maurice Jones-Drew](maurice_jones_drew.md) | RB |
+| [Richard Murphy](richard_murphy.md) | RB |
+| [Montell Owens](montell_owens.md) | FB |
+| [Justin Blackmon](justin_blackmon.md) | WR |
+| [Mike Brown](mike_brown.md) | WR |
+| [Toney Clemons](toney_clemons.md) | WR |
+| [Cecil Shorts](cecil_shorts.md) | WR |
+| [Adam Thielen](adam_thielen.md) | WR |
+| [Jerrell Jackson](jerrell_jackson.md) | WR |
+| [Hakeem Nicks](hakeem_nicks.md) | WR |
+| [Andrew Hawkins](andrew_hawkins.md) | WR |
+| [Marcedes Lewis](marcedes_lewis.md) | TE |
+| [Travis Kelce](travis_kelce.md) | TE |
+| [Cameron Bradfield](cameron_bradfield.md) | OT |
+| [Lane Johnson](lane_johnson.md) | OT |
+| [Eugene Monroe](eugene_monroe.md) | OT |
+| [Mark Asper](mark_asper.md) | G |
+| [Austin Pasztor](austin_pasztor.md) | G |
+| [Will Rackley](will_rackley.md) | G |
+| [Mike Brewster](mike_brewster.md) | C |
+| [Andre Branch](andre_branch.md) | DE |
+| [Ryan Davis](ryan_davis.md) | DE |
+| [Lavar Edwards](lavar_edwards.md) | DE |
+| [C.J. Wilson](c_j_wilson.md) | DE |
+| [Jeremy Mincey](jeremy_mincey.md) | DE |
+| [Daniel Te'o-Nesheim](daniel_te_o_nesheim.md) | DE |
+| [Sen'Derrick Marks](sen_derrick_marks.md) | DT |
+| [Roy Miller](roy_miller.md) | DT |
+| [C.J. Mosley](c_j_mosley.md) | DT |
+| [Jeris Pendleton](jeris_pendleton.md) | DT |
+| [D'Anthony Smith](d_anthony_smith.md) | DT |
+| [Jerome Long](jerome_long.md) | DT |
+| [Russell Allen](russell_allen.md) | LB |
+| [Sio Moore](sio_moore.md) | LB |
+| [Paul Posluszny](paul_posluszny.md) | LB |
+| [Daryl Smith](daryl_smith.md) | LB |
+| [Julian Stanford](julian_stanford.md) | LB |
+| [A.J. Bouye](a_j_bouye.md) | CB |
+| [Mike Harris](mike_harris.md) | CB |
+| [Alterraun Verner](alterraun_verner.md) | CB |
+| [Aqib Talib](aqib_talib.md) | CB |
+| [Jordan Poyer](jordan_poyer.md) | CB |
+| [Dwight Lowery](dwight_lowery.md) | S |
+| [Chris Prosinski](chris_prosinski.md) | S |
+| [Bacarri Rambo](bacarri_rambo.md) | S |
+| [Brynden Trawick](brynden_trawick.md) | S |
+| [Antwon Blake](antwon_blake.md) | S |
+| [Josh Scobee](josh_scobee.md) | K |
+| [Bryan Anger](bryan_anger.md) | P |
+| [Jeremy Cain](jeremy_cain.md) | LS |
+
+Refresh the stats with `python scripts/update_player_cards.py 2014`; use `--check` to verify. The regular season and playoffs are separate. Unplayed periods say Not played; missing recorded fields say Unrecorded. New arrivals need a starting assessment and card; preserve departing players’ cards as history. Add a row per year from 2014 onward.

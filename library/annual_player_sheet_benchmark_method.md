@@ -3,9 +3,9 @@
 ## Core rule
 
 The annual Player Sheet is a frozen end-of-season evaluation. Historical NFL
-data supplies the ruler. Branch evidence supplies the simulation player.
+data supplies the ruler. recorded evidence supplies the simulation player.
 
-1. Grade the simulation player from branch evidence through the completed season.
+1. Grade the simulation player from recorded evidence through the completed season.
 2. Freeze that judgment.
 3. Compare it to the historical NFL peer distribution for the same position and season.
 4. Only then may the sheet show the same player's real-world same-season result.
@@ -35,7 +35,7 @@ DB is an unresolved defensive-back label; the current sheet uses
 the CB trait set provisionally and establishes no corner or safety assignment.
 
 The frozen 2013 exit index preserves the completed-season identity synthesis
-and its branch evidence path. Later edits to living offseason profiles must
+and its recorded evidence path. Later edits to living offseason profiles must
 not change that synthesis. The common evidence cutoff is January 14, 2014,
 after both days of exit interviews; ages are measured on that date.
 
@@ -128,3 +128,7 @@ not turn production comparisons into technical grades or permit future totals.
 - https://www.nfl.com/news/which-top-linebacker-prospects-are-best-finishers-0ap3000000516536
 - https://www.nfl.com/news/the-high-wire-life-of-an-nfl-cornerback
 - https://www.nfl.com/news/darrelle-revis-future-can-aging-cornerback-transition-to-safety-0ap3000000800209
+
+## Working cards from 2014 onward
+
+Latest user clarification (September 30, 2026): create working player cards from 2014 onward immediately for the current controlled roster. Retain the starting personnel assessment during the season; review it at season close. Update separate regular-season and playoff statistics after each closed game, preserve previous years and append each new year. Use exact theoretical staff judgments for grades, identifying judgment and evidence limits separately. Display year-based labels such as 2013 regular season and 2013 playoffs; omit the redundant simulation-context label from player-facing prose. Preserve proper names and technical identifiers. A working card never imports the real player's later season as an answer key. Its prior-season production context is separate from current-year statistics.
