@@ -1041,7 +1041,15 @@ def adjust_punt(record, shift):
     if los - gross <= 0:
         out.update(outcome="touchback", touchback=True, gross=los, return_yards=0, next_start=80 + enforcement)
         return out
-    out.update(gross=gross, next_start=min(99, max(1, 100 - los + gross - ret + enforcement)))
+    start = 100 - los + gross - ret + enforcement
+    # The start must stay inside the field by the same identity the audit
+    # checks (kick_spot_mismatch): when the return and enforcement would carry
+    # it past a goal line, the applied shift is reduced, never the identity.
+    if start > 99:
+        gross, start = gross - (start - 99), 99
+    elif start < 1:
+        gross, start = gross + (1 - start), 1
+    out.update(gross=gross, next_start=start, adjust=gross - record["gross"])
     return out
 
 
@@ -1055,7 +1063,14 @@ def adjust_return(record, shift):
         return out
     ret = max(0, record["return_yards"] + int(shift))
     applied = ret - record["return_yards"]
-    out.update(return_yards=ret, next_start=min(99, max(1, record["next_start"] - applied)))
+    start = record["next_start"] - applied
+    # Inside the field by the kick identity: the applied shift is reduced
+    # when the start would leave the field, never the identity.
+    if start > 99:
+        applied, start = applied + (start - 99), 99
+    elif start < 1:
+        applied, start = applied - (1 - start), 1
+    out.update(return_yards=record["return_yards"] + applied, next_start=start, return_adjust=applied)
     return out
 
 

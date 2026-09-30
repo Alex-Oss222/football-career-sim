@@ -690,6 +690,20 @@ class SpecialTeamsTests(unittest.TestCase):
                          ("touchback", True, 46, 0, 80))
         tb = dict(base, outcome="touchback", touchback=True, gross=60, return_yards=0, next_start=80)
         self.assertEqual(fp.adjust_punt(tb, 3), dict(tb, adjust=3))
+        # Found at the phase 2 label-swap acceptance (swap-117): a punt of 58
+        # from the 60 with a one-yard enforcement sits at the 1; a +1 shift
+        # would carry it past the goal line without a touchback, and the old
+        # clamp to 99 broke the punt identity the audit checks. The applied
+        # shift is reduced instead and the identity holds.
+        edge = {"los": 60, "outcome": "returned", "gross": 58, "return_yards": 0, "enforcement": 1,
+                "next_start": 99, "touchback": False}
+        out = fp.adjust_punt(edge, 1)
+        self.assertEqual((out["gross"], out["next_start"], out["adjust"], out["touchback"]), (58, 99, 0, False))
+        self.assertEqual(out["gross"] - out["return_yards"] + out["enforcement"], out["los"] - (100 - out["next_start"]))
+        low = {"los": 60, "outcome": "returned", "gross": 5, "return_yards": 44, "enforcement": 0,
+               "next_start": 1, "touchback": False}
+        out = fp.adjust_punt(low, -3)
+        self.assertEqual((out["gross"], out["next_start"], out["adjust"]), (5, 1, 0))
 
     def test_returner_term_and_the_return_adjustment(self):
         roster = game_day_roster("B")
@@ -707,7 +721,12 @@ class SpecialTeamsTests(unittest.TestCase):
         out = fp.adjust_return(kick, 3)
         self.assertEqual((out["return_yards"], out["next_start"], out["return_adjust"]), (25, 74, 3))
         out = fp.adjust_return(kick, -30)
-        self.assertEqual((out["return_yards"], out["next_start"]), (0, 99))
+        self.assertEqual((out["return_yards"], out["next_start"], out["return_adjust"]), (0, 99, -22))
+        # The start stays inside the field by the kick identity: the applied
+        # shift is reduced, never the identity.
+        far = dict(kick, next_start=3, return_yards=96)
+        out = fp.adjust_return(far, 5)
+        self.assertEqual((out["return_yards"], out["next_start"], out["return_adjust"]), (98, 1, 2))
         self.assertEqual(fp.adjust_return(dict(kick, touchback=True, outcome="touchback"), 3)["next_start"], 77)
 
     def test_special_teams_direction_in_sampled_punts(self):
@@ -723,7 +742,10 @@ class SpecialTeamsTests(unittest.TestCase):
         gross = lambda rs: [p["punt"]["gross"] for r in rs for p in drives(r, "A")
                             if p["category"] == "punt" and not p["punt"]["touchback"]]
         self.assertGreater(mean(gross(rs)), mean(gross(rp)))
-        self.assertEqual({p["punt"]["adjust"] for r in rs for p in drives(r, "A") if p["category"] == "punt"}, {1})
+        adjusts = [p["punt"]["adjust"] for r in rs for p in drives(r, "A") if p["category"] == "punt"]
+        # +1 on every punt except the rare one the field-edge rule reduces to 0.
+        self.assertEqual(set(adjusts) - {0}, {1})
+        self.assertLess(adjusts.count(0), 0.05 * len(adjusts))
         edges = lambda rs: {round(p["strength"]["edge"], 12) for r in rs for p in drives(r, "A")}
         self.assertEqual(edges(rs), edges(rp))
 
