@@ -191,7 +191,7 @@ Evidence caveats: the Week 7 record and ledger Entry 44 state that 2013.6 (Weeks
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/adam_thielen.json` (register, contract, season and postseason totals and game lines, receipt injuries, no shortlists)
 - `career/2013/roster.md` line 53; `career/2013/depth_chart.json` line 10; `state/04_Roster_and_Staff_Register.md` line 199
-- `career/2014/offseason/contract_status_register.md` lines 43 and 61
+- `career/2014/09_finances/02_player_contracts/contract_status.md` lines 43 and 61
 - `career/2013/stats/team_player_stats.md` lines 31, 138, 153
 - `career/2013/offseason/draft/player_draft_board.md` line 197; `career/2013/offseason/draft/udfa_signings.md` line 14
 - `career/2013/offseason/rookie_minicamp/output.md` line 49
@@ -215,7 +215,7 @@ Evidence caveats: the Week 7 record and ledger Entry 44 state that 2013.6 (Weeks
 - `career/2013/ledger.md` line 988 (Entry 44), Entry 48 (line 1097) and Entry 56 (line 1378)
 - `runtime/defect_register.md` lines 12, 14, 37
 - `career/2013/coaching_staff.md` lines 239-258 (Drake, including ball security after the catch) and 420-443 (Lowry, including returner evaluation)
-- `career/2013/ledger.md` Entry 75; `career/2014/offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)
+- `career/2013/ledger.md` Entry 75; `career/2014/01_early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)
 - `career/2014/calendar.md` line 31
 - `career/2013/offseason/the_prowl_program_identity.md` "Good. Better. Best.", "Know Your Job", "Earn Responsibility", "The Standard Goes Upward", "Discipline Approach"
 - `career/2013/offseason/the_prowl_player_readiness_standard.md` sections 7 and 10

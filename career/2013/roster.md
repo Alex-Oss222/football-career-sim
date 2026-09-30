@@ -147,7 +147,7 @@ Jacksonville reduced from 64 to a legal active 53 on August 31, resolved waivers
 
 ## 4. Reserve/future contracts (2014) and the 2013 practice squad
 
-Jacksonville's 2013 practice squad (formed September 1, 2013, ledger Entry 27) had eight players: Tyler Bray, Richard Murphy, Will Ta'ufo'ou, Jerrell Jackson, Jerome Long, D'Anthony Smith, Brandon King and Antwon Blake. Their practice-squad contracts ended with the season. Under Stone's February 2 memo, Caldwell offered six of them reserve/future contracts on February 3, 2014; all six signed (ledger Entry 85; `career/2014/offseason/futures_results.json`). Terms for each: the 2014 minimum for his credited seasons, no guarantee, no signing bonus. The contracts took effect at the 2014 league year (March 11, 2014, 4:00 p.m. ET) and count toward the 90-player limit; the six players are listed with their position groups in section 3.
+Jacksonville's 2013 practice squad (formed September 1, 2013, ledger Entry 27) had eight players: Tyler Bray, Richard Murphy, Will Ta'ufo'ou, Jerrell Jackson, Jerome Long, D'Anthony Smith, Brandon King and Antwon Blake. Their practice-squad contracts ended with the season. Under Stone's February 2 memo, Caldwell offered six of them reserve/future contracts on February 3, 2014; all six signed (ledger Entry 85; `career/2014/01_early_offseason/futures_results.json`). Terms for each: the 2014 minimum for his credited seasons, no guarantee, no signing bonus. The contracts took effect at the 2014 league year (March 11, 2014, 4:00 p.m. ET) and count toward the 90-player limit; the six players are listed with their position groups in section 3.
 
 | Player | Pos | DOB | Age | Status | Signed |
 | --- | --- | --- | ---: | --- | --- |
@@ -186,4 +186,4 @@ Claimed by other clubs on waivers: Austen Lane, Brandon Marshall, Isaiah Stanbac
 
 ## 6. Finances
 
-The last closed 2013 accounting remains in `offseason/current_cap_worksheet.md`. For 2014, use the [2014 contract table](../2014/offseason/contract_table.md) and [ten-year tracker](../finances/jaguars_cap.md), through Entry 95. Wilson and Jonathan Grimes are signed through 2014 and the six futures through 2015 under the adopted contract completion.
+The last closed 2013 accounting remains in `offseason/current_cap_worksheet.md`. For 2014, use the [2014 contract table](../2014/09_finances/02_player_contracts/contracts.md) and [ten-year tracker](../finances/01_salary_cap/cap_tracker.md), through Entry 95. Wilson and Jonathan Grimes are signed through 2014 and the six futures through 2015 under the adopted contract completion.

@@ -54,7 +54,7 @@ class AnnualPlayerSheetTests(unittest.TestCase):
         temp=tempfile.TemporaryDirectory()
         self.addCleanup(temp.cleanup)
         root=Path(temp.name)
-        for name in ('career/2014/offseason/player_development/2013_exit_player_index.json',
+        for name in ('career/2014/00_team/player_development/2013_exit_player_index.json',
                      'library/data/player_birth_dates.json'):
             destination=root/name
             destination.parent.mkdir(parents=True,exist_ok=True)
@@ -103,7 +103,7 @@ class AnnualPlayerSheetTests(unittest.TestCase):
 
     def test_frozen_syntheses_do_not_read_living_offseason_profiles(self):
         root,players=self.fixture()
-        living=root/'career/2014/offseason/player_development/roster_profiles.md'
+        living=root/'career/2014/00_team/player_development/roster_profiles.md'
         living.write_text('| **Kirk Cousins (QB)** | Later-season observation |',encoding='utf-8')
         checkpoint,reloaded=load_season_players(2013,root)
         self.assertEqual(players,reloaded)
@@ -111,7 +111,7 @@ class AnnualPlayerSheetTests(unittest.TestCase):
 
     def test_duplicate_exit_index_paths_are_rejected(self):
         root,_=self.fixture()
-        path=root/'career/2014/offseason/player_development/2013_exit_player_index.json'
+        path=root/'career/2014/00_team/player_development/2013_exit_player_index.json'
         data=json.loads(path.read_text(encoding='utf-8'))
         data['players'][1]=data['players'][0]
         path.write_text(json.dumps(data),encoding='utf-8')

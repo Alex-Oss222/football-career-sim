@@ -303,7 +303,7 @@ class RecordedDrawAndOwnershipTests(unittest.TestCase):
         from scripts.render_draft_order import render, OUT
         text=render()
         self.assertEqual(text,OUT.read_text())
-        self.assertIn('eight', (draft_order.ROOT/'career/2014/draft/ownership_audit.md').read_text())
+        self.assertIn('eight', (draft_order.ROOT/'career/2014/04_draft/ownership_audit.md').read_text())
         self.assertNotIn(' †',text)
         self.assertIn('conditional hold',text)
 

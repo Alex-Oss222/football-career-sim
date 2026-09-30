@@ -14,7 +14,7 @@ Plan: in the room, Bates and Skalaski walked his changed-picture reps with him. 
 
 Follow-ups: Caldwell's office, the reserve/future decision; Bates, written expansion criteria if he is signed.
 
-Evidence: career/2013/roster.md:150; career/2014/offseason/contract_status_register.md:116, 118, 122; career/2013/offseason/draft/draftees.md:18; career/2013/offseason/rookie_minicamp/output.md:46; career/2013/offseason/otas/output.md:34, 92, 149, 163, 192; career/2013/offseason/otas/standouts.md:19; career/2013/offseason/mandatory_minicamp/output.md:37; career/2013/offseason/training_camp/output.md:27, 55, 73, 102; career/2013/preseason/game_4_jacksonville_at_atlanta/output.md:11; career/2013/preseason/final_roster_cuts.md:11, 17; career/2013/offseason/player_onboarding_and_development_framework.md:56, 78-79.
+Evidence: career/2013/roster.md:150; career/2014/09_finances/02_player_contracts/contract_status.md:116, 118, 122; career/2013/offseason/draft/draftees.md:18; career/2013/offseason/rookie_minicamp/output.md:46; career/2013/offseason/otas/output.md:34, 92, 149, 163, 192; career/2013/offseason/otas/standouts.md:19; career/2013/offseason/mandatory_minicamp/output.md:37; career/2013/offseason/training_camp/output.md:27, 55, 73, 102; career/2013/preseason/game_4_jacksonville_at_atlanta/output.md:11; career/2013/preseason/final_roster_cuts.md:11, 17; career/2013/offseason/player_onboarding_and_development_framework.md:56, 78-79.
 
 ### Richard Murphy, RB
 
@@ -28,7 +28,7 @@ Plan: Stone suggested keeping up the route detail that showed in preseason. Ever
 
 Follow-ups: Spencer, written evaluation; Caldwell's office, the reserve/future decision.
 
-Evidence: career/2013/roster.md:151; career/2014/offseason/contract_status_register.md:116, 118, 123; career/2013/offseason/initial_roster.md:41; career/2013/preseason/game_1_miami_at_jacksonville/output.md:11; career/2013/preseason/game_4_jacksonville_at_atlanta/output.md:11; career/2013/preseason/final_roster_cuts.md:11, 17.
+Evidence: career/2013/roster.md:151; career/2014/09_finances/02_player_contracts/contract_status.md:116, 118, 123; career/2013/offseason/initial_roster.md:41; career/2013/preseason/game_1_miami_at_jacksonville/output.md:11; career/2013/preseason/game_4_jacksonville_at_atlanta/output.md:11; career/2013/preseason/final_roster_cuts.md:11, 17.
 
 ### Will Ta'ufo'ou, FB
 
@@ -42,7 +42,7 @@ Plan: Spencer's film review sets the focus. Any club work needs a contract and w
 
 Follow-ups: Caldwell's office, his contract position and the reserve/future decision; Spencer, the film review on request.
 
-Evidence: career/2013/roster.md:152; career/2014/offseason/contract_status_register.md:116, 118, 124; career/2013/offseason/initial_roster.md:26, 107; career/2013/preseason/final_roster_cuts.md:11, 17.
+Evidence: career/2013/roster.md:152; career/2014/09_finances/02_player_contracts/contract_status.md:116, 118, 124; career/2013/offseason/initial_roster.md:26, 107; career/2013/preseason/final_roster_cuts.md:11, 17.
 
 ### Jerrell Jackson, WR
 
@@ -56,7 +56,7 @@ Plan: Drake's written evaluation sets the focus. Any club work needs a contract 
 
 Follow-ups: Drake, written evaluation; Caldwell's office, the reserve/future decision.
 
-Evidence: career/2013/roster.md:153; career/2014/offseason/contract_status_register.md:116, 118, 125; career/2013/offseason/initial_roster.md:45; career/2013/preseason/final_roster_cuts.md:11, 17; career/2013/offseason/player_onboarding_and_development_framework.md:56.
+Evidence: career/2013/roster.md:153; career/2014/09_finances/02_player_contracts/contract_status.md:116, 118, 125; career/2013/offseason/initial_roster.md:45; career/2013/preseason/final_roster_cuts.md:11, 17; career/2013/offseason/player_onboarding_and_development_framework.md:56.
 
 ### Jerome Long, DT
 
@@ -70,7 +70,7 @@ Plan: Pleasant's written evaluation sets the football focus. Strength and condit
 
 Follow-ups: Pleasant, written evaluation; Caldwell's office, the reserve/future decision.
 
-Evidence: career/2013/roster.md:154; career/2014/offseason/contract_status_register.md:116, 118, 126; career/2013/offseason/initial_roster.md:75; career/2013/preseason/final_roster_cuts.md:11, 17; career/2013/offseason/the_prowl_player_readiness_standard.md:41-43 (section 1), section 7; career/2014/calendar.md:52.
+Evidence: career/2013/roster.md:154; career/2014/09_finances/02_player_contracts/contract_status.md:116, 118, 126; career/2013/offseason/initial_roster.md:75; career/2013/preseason/final_roster_cuts.md:11, 17; career/2013/offseason/the_prowl_player_readiness_standard.md:41-43 (section 1), section 7; career/2014/calendar.md:52.
 
 ### D'Anthony Smith, DT
 
@@ -84,7 +84,7 @@ Plan: Pleasant's written evaluation sets the focus. Any club work needs a contra
 
 Follow-ups: Pleasant, written evaluation; Caldwell's office, the reserve/future decision and Smith's open-spot question.
 
-Evidence: career/2013/roster.md:155; career/2014/offseason/contract_status_register.md:15, 116, 118, 127; career/2013/offseason/initial_roster.md:73; career/2013/ledger.md:748, 757 (Entry 36), 923 (Entry 42); career/2013/preseason/final_roster_cuts.md:11, 17.
+Evidence: career/2013/roster.md:155; career/2014/09_finances/02_player_contracts/contract_status.md:15, 116, 118, 127; career/2013/offseason/initial_roster.md:73; career/2013/ledger.md:748, 757 (Entry 36), 923 (Entry 42); career/2013/preseason/final_roster_cuts.md:11, 17.
 
 ### Brandon King, DB
 
@@ -98,7 +98,7 @@ Plan: written evaluations from Oden and from special teams set the focus. Any cl
 
 Follow-ups: Oden, written evaluation; special teams (Stone until the coordinator job is filled), special-teams evaluation; Caldwell's office, the reserve/future decision.
 
-Evidence: career/2013/roster.md:156; career/2014/offseason/contract_status_register.md:116, 118, 128; career/2013/offseason/initial_roster.md:26, 106; career/2013/coaching_staff.md:443; career/2013/ledger.md:2148 (Entry 75, Lowry left for Atlanta on January 12, 2014; coordinator job vacant); career/2013/preseason/final_roster_cuts.md:11, 17.
+Evidence: career/2013/roster.md:156; career/2014/09_finances/02_player_contracts/contract_status.md:116, 118, 128; career/2013/offseason/initial_roster.md:26, 106; career/2013/coaching_staff.md:443; career/2013/ledger.md:2148 (Entry 75, Lowry left for Atlanta on January 12, 2014; coordinator job vacant); career/2013/preseason/final_roster_cuts.md:11, 17.
 
 ### Antwon Blake, S
 
@@ -112,4 +112,4 @@ Plan: Oden's written evaluation sets the focus. Any club work needs a contract a
 
 Follow-ups: Oden, written evaluation; Caldwell's office, the reserve/future decision.
 
-Evidence: career/2013/roster.md:157; career/2014/offseason/contract_status_register.md:116, 118, 129; career/2013/offseason/initial_roster.md:91; career/2013/preseason/final_roster_cuts.md:11, 17.
+Evidence: career/2013/roster.md:157; career/2014/09_finances/02_player_contracts/contract_status.md:116, 118, 129; career/2013/offseason/initial_roster.md:91; career/2013/preseason/final_roster_cuts.md:11, 17.

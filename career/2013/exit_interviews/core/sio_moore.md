@@ -69,7 +69,7 @@ All voluntary. Jacksonville's 2014 offseason program may begin no earlier than A
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/sio_moore.json`
-- `career/2014/offseason/contract_status_register.md` line 56; `career/2013/roster.md` line 113; `state/04_Roster_and_Staff_Register.md` lines 152, 224; `career/2013/depth_chart.json` line 14; `state/05_Current_Season_State.md` section 4
+- `career/2014/09_finances/02_player_contracts/contract_status.md` line 56; `career/2013/roster.md` line 113; `state/04_Roster_and_Staff_Register.md` lines 152, 224; `career/2013/depth_chart.json` line 14; `state/05_Current_Season_State.md` section 4
 - `career/2013/offseason/draft/draftees.md` line 15; `career/2013/ledger.md` line 223
 - `career/2013/offseason/rookie_minicamp/output.md` lines 43, 54; `career/2013/offseason/rookie_minicamp/standouts.md` line 12
 - `career/2013/offseason/otas/output.md` lines 40, 100, 110, 153, 165; `career/2013/offseason/otas/standouts.md` line 17
@@ -79,6 +79,6 @@ All voluntary. Jacksonville's 2014 offseason program may begin no earlier than A
 - `career/2013/regular_season/week_14_houston_at_jacksonville/output.md` line 29; `week_15_buffalo_at_jacksonville/output.md` line 35; `week_01_kansas_city_at_jacksonville/output.md` line 331
 - `career/2013/exit_interviews/core/tyson_alualu.md` line 64 (rotation-order teaching note); `career/2013/exit_interviews/main_core/daryl_smith.md` line 208
 - `runtime/defect_register.md` line 49 (item 19)
-- `career/2013/ledger.md` Entry 75; `career/2014/offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta; Bush's January 14 Indianapolis interview)
+- `career/2013/ledger.md` Entry 75; `career/2014/01_early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta; Bush's January 14 Indianapolis interview)
 - `career/2013/offseason/the_prowl_program_identity.md` ("Good. Better. Best.", "Earn Responsibility", "Discipline Approach"); `career/2013/offseason/player_onboarding_and_development_framework.md` section 2
 - `career/2013/offseason/the_prowl_player_readiness_standard.md` sections 7 and 10; `career/2014/calendar.md` line 31

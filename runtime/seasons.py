@@ -8,6 +8,7 @@ from dataclasses import dataclass
 import json
 from pathlib import Path
 import re
+from .season_layout import season_relative
 
 ROOT = Path(__file__).resolve().parents[1]
 RELEASE_GATES = {'tier1_engine', 'season_rules', 'season_closure', 'dated_fixtures',
@@ -39,20 +40,30 @@ class SeasonPaths:
 
     @property
     def career(self): return self.root / 'career' / str(self.year)
+
+    def record(self, relative):
+        return self.career / season_relative(self.year, relative)
+
     @property
-    def stats(self): return self.career / 'stats'
+    def stats(self): return self.record('stats')
     @property
     def receipts(self): return self.stats / 'game_receipts'
     @property
     def postseason_receipts(self): return self.stats / 'postseason_receipts'
     @property
-    def roster(self): return self.career / 'roster.md'
+    def roster(self): return self.record('roster.md')
     @property
-    def depth_chart(self): return self.career / 'depth_chart.json'
+    def depth_chart(self): return self.record('depth_chart.json')
+    @property
+    def awards(self): return self.record('awards')
+    @property
+    def regular_season(self): return self.record('regular_season')
+    @property
+    def postseason(self): return self.record('postseason')
     @property
     def schedule(self):
         return (self.root / 'library/data/2013_schedule.json' if self.year == 2013
-                else self.career / 'schedule/fixtures.json')
+                else self.record('schedule/fixtures.json'))
     @property
     def postseason_slots(self):
         return self.root / ('library/data/%d_postseason_slots.json' % self.year)

@@ -15,12 +15,12 @@ from dataclasses import dataclass
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_ROSTER = ROOT / "career/2014/roster.md"
+DEFAULT_ROSTER = ROOT / "career/2014/00_team/roster/roster.md"
 DEFAULT_EXIT_INDEX = (
-    ROOT / "career/2014/offseason/player_development/2013_exit_player_index.json"
+    ROOT / "career/2014/00_team/player_development/2013_exit_player_index.json"
 )
 DEFAULT_OUTPUT = (
-    ROOT / "career/2014/offseason/player_development/progression_roster.json"
+    ROOT / "career/2014/00_team/player_development/progression_roster.json"
 )
 
 

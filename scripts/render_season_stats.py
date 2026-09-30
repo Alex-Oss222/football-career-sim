@@ -559,7 +559,7 @@ def render_views(year, team, receipts):
     require_receipt_season(receipts, year)
     """Every generated stat file, keyed by file name, from one receipt set."""
     book = aggregate_receipts(receipts)
-    return {
+    views = {
         "season_totals.json": json.dumps(compact_book_for_storage(book), sort_keys=True, separators=(",", ":")) + "\n",
         "team_player_stats.md": team_markdown(year, team, book),
         "league_player_stats.md": league_markdown(year, book),
@@ -569,6 +569,11 @@ def render_views(year, team, receipts):
         "team_stats.md": team_stats_markdown(year, book, receipts),
         "calibration_audit.md": calibration_audit_markdown(year, receipts, book),
     }
+    from runtime.seasons import SeasonPaths
+    from runtime.season_layout import rebase_markdown
+    return {name: rebase_markdown(text, f'career/{year}/stats/{name}',
+                                  (SeasonPaths(year, ROOT).stats / name).relative_to(ROOT))
+            if name.endswith('.md') else text for name, text in views.items()}
 
 
 def main():
@@ -577,7 +582,6 @@ def main():
     parser.add_argument("--team", required=True, help="Exact team_id used by game receipts")
     args = parser.parse_args()
 
-    stats_dir = ROOT / "career" / str(args.year) / "stats"
     from runtime.seasons import SeasonPaths
     stats_dir = SeasonPaths(args.year, ROOT).stats
     receipts = load_receipts(stats_dir / "game_receipts")

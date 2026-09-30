@@ -141,7 +141,8 @@ def validate(root=ROOT):
 
     try:
         from scripts.season_handoff import check as check_handoff
-        handoff = root / 'career' / str(mapping['active_season']) / 'closeouts/season_handoff.json'
+        from runtime.seasons import SeasonPaths
+        handoff = SeasonPaths(mapping['active_season'], root).record('closeouts/season_handoff.json')
         if handoff.exists():
             errors.extend(check_handoff(root, json.loads(handoff.read_text())))
     except (OSError, ValueError, KeyError, TypeError) as exc:
@@ -180,7 +181,7 @@ def validate(root=ROOT):
                 require(through <= current_date, f'{name}: evidence exceeds master clock')
                 require(output.get('event_entry') in entries, f'{name}: unknown ledger entry')
             plan = (root/paths['plan']).read_text()
-            require('](output.md)' in plan and '](standouts.md)' in plan,
+            require(f']({Path(paths["output"]).name})' in plan and f']({Path(paths["standouts"]).name})' in plan,
                     f'{name}: plan must point to execution records')
         except (OSError, ValueError, KeyError, TypeError) as exc:
             errors.append(f'{name}: invalid/missing phase evidence: {exc}')
@@ -325,17 +326,17 @@ def validate(root=ROOT):
         errors.append(f'Standings cannot be rebuilt from receipts: {exc}')
     # The 2014 draft order is generated from the same receipts once the
     # Super Bowl has closed.
-    draft_order = root/'career/2014/draft/draft_order.md'
+    draft_order = root/'career/2014/04_draft/draft_order.md'
     if draft_order.exists():
         try:
             from scripts.render_draft_order import render as render_draft_order
             require(draft_order.read_text() == render_draft_order(),
-                    'career/2014/draft/draft_order.md is stale; run render_draft_order.py')
+                    'career/2014/04_draft/draft_order.md is stale; run render_draft_order.py')
         except (OSError, ValueError, KeyError, TypeError) as exc:
             errors.append(f'Draft order cannot be rebuilt from receipts: {exc}')
     # The opponent inventory is deliberately undated; validate it without
     # importing results or opening the schedule gate.
-    if (root/'career/2014/schedule/rotation_2014.json').exists():
+    if (root/'career/2014/06_regular_season/schedule/rotation_2014.json').exists():
         try:
             from runtime.schedule_2014 import check as check_2014_opponents
             errors.extend(check_2014_opponents(root))
@@ -394,12 +395,32 @@ def validate(root=ROOT):
                 require((paths.stats / name).is_file() and (paths.stats / name).read_text() == expected,
                         '2014 generated statistics missing or stale: ' + name)
             from scripts.render_standings import render as standings_view
-            standings_path = paths.career / 'standings.md'
+            standings_path = paths.record('standings.md')
             require(standings_path.is_file() and standings_path.read_text() == standings_view(2014, regular),
                     '2014 standings missing or stale')
-            errors.extend(award_coverage_errors(regular, paths.career / 'awards'))
+            errors.extend(award_coverage_errors(regular, paths.awards))
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append('2014 season records invalid: ' + str(exc))
+
+    try:
+        from scripts.render_trade_pages import check as check_trade_pages
+        from scripts.render_award_pages import render_pages as award_pages
+        from runtime.seasons import SeasonPaths
+        year = mapping['active_season']
+        if year >= 2014:
+            # Only compare prepared presentation pages; never run a draw.
+            trade_source = SeasonPaths(year, root).record('trades/trades.md')
+            if trade_source.exists():
+                errors.extend(check_trade_pages(root, year))
+            folder = SeasonPaths(year, root).awards
+            if (folder/'week_01/README.md').exists():
+                results = json.loads((folder/'results.json').read_text()) if (folder/'results.json').exists() else {}
+                method = json.loads((folder/'methodology.json').read_text()) if results else None
+                for relative, text in award_pages(year, results, method).items():
+                    path = folder/relative
+                    require(path.is_file() and path.read_text() == text, 'Award page missing or stale: '+relative)
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append('Season reading pages invalid: '+str(exc))
 
     allowed_books = set(mapping['active_playbooks']) | {'career/playbook/README.md'}
     def readable(path):
@@ -409,7 +430,7 @@ def validate(root=ROOT):
         if '.git' in path.parts or not readable(path):
             continue
         content = without_code(path.read_text())
-        for dest in re.findall(r'(?<!!)\[[^\]\n]+\]\(([^\s)]+)\)', content):
+        for dest in re.findall(r'\[[^\]\n]+\]\(([^\s)]+)\)', content):
             parts = urlsplit(dest)
             if parts.scheme or parts.netloc:
                 continue

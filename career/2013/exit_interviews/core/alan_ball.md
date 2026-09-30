@@ -65,7 +65,7 @@ Medical first; everything else voluntary.
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/alan_ball.json`
-- `career/2014/offseason/contract_status_register.md` lines 15, 34, 50; `career/2013/roster.md` line 122; `state/04_Roster_and_Staff_Register.md` line 228
+- `career/2014/09_finances/02_player_contracts/contract_status.md` lines 15, 34, 50; `career/2013/roster.md` line 122; `state/04_Roster_and_Staff_Register.md` line 228
 - `career/2013/offseason/free_agency/player_board.md` lines 182-191, 205; `career/2013/offseason/free_agency/signings.md` lines 7, 20, 135-137
 - `career/2013/offseason/training_camp/output.md` lines 33, 49, 77, 106; `career/2013/offseason/training_camp/position_battles.md` line 14
 - `career/2013/preseason/game_4_jacksonville_at_atlanta/output.md` line 11

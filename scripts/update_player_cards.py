@@ -11,7 +11,7 @@ from scripts.build_player_progression_roster import parse_current_roster
 from scripts.build_annual_player_sheets import slugify, season_is_complete
 from runtime.statbook import aggregate_receipts
 from runtime.stat_tables import POSITION_GROUPS, GAMES, RETURNS, col, derived, avg, pct
-from runtime.seasons import require_receipt_season
+from runtime.seasons import SeasonPaths, require_receipt_season
 START = '<!-- yearly-statistics:start -->'
 END = '<!-- yearly-statistics:end -->'
 WORKING = '**Profile status:** Working player card'
@@ -67,7 +67,8 @@ def columns(pos):
     return result + [col('ST TKL','special_teams_tackles')]
 
 def period_data(year, postseason=False, root=ROOT):
-    folder = root/f'career/{year}/stats'/('postseason_receipts' if postseason else 'game_receipts')
+    paths = SeasonPaths(year, root)
+    folder = paths.postseason_receipts if postseason else paths.receipts
     receipts = [json.loads(p.read_text(encoding='utf-8')) for p in sorted(folder.glob('*.json'))]
     require_receipt_season(receipts, year)
     if any(r.get('game_type', 'regular') != ('postseason' if postseason else 'regular') for r in receipts):
@@ -143,7 +144,7 @@ def refresh_text(text,year,player,pos,periods,root=ROOT):
 def refresh_cards(year,root=ROOT,check=False):
     periods = {p:period_data(year,p,root) for p in (False,True)}
     errors = []
-    for path in sorted((root/f'career/{year}/player_profiles').glob('*.md')):
+    for path in sorted(SeasonPaths(year, root).record('player_profiles').glob('*.md')):
         if path.name in ('README.md','TEMPLATE.md'):
             continue
         text = path.read_text(encoding='utf-8')
@@ -163,10 +164,10 @@ def refresh_cards(year,root=ROOT,check=False):
     return errors
 
 def profile_errors(year,root=ROOT):
-    directory = root/f'career/{year}/player_profiles'
+    directory = SeasonPaths(year, root).record('player_profiles')
     if not any(START in p.read_text(encoding='utf-8') for p in directory.glob('*.md')):
         return []
-    _,_,roster = parse_current_roster(root/f'career/{year}/roster.md')
+    _,_,roster = parse_current_roster(SeasonPaths(year, root).roster)
     errors = []
     for player in roster:
         path = directory/(slugify(player.player)+'.md')

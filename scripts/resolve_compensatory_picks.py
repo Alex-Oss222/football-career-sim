@@ -3,7 +3,7 @@
 
   python scripts/resolve_compensatory_picks.py [--check]
 
-Inputs: career/2014/draft/compensatory/method.json (adopted before this run),
+Inputs: career/2014/04_draft/compensatory/method.json (adopted before this run),
 inputs.json (built by scripts/research/build_2014_compensatory_inputs.py),
 the branch 2013 regular-season and postseason receipts, the branch 2013
 season honours and the branch 2014 first-round order. No real award list is
@@ -18,7 +18,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-DIR = ROOT / "career" / "2014" / "draft" / "compensatory"
+DIR = ROOT / "career" / "2014" / "04_draft" / "compensatory"
 METHOD, INPUTS, OUT = DIR / "method.json", DIR / "inputs.json", DIR / "awards.json"
 PAGE = DIR / "announcement.md"
 RECEIPTS = [ROOT / "career/2013/stats/game_receipts", ROOT / "career/2013/stats/postseason_receipts"]

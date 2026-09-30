@@ -5,7 +5,7 @@
   python scripts/coaching_carousel.py --close    # one private draw; write results and the page
   python scripts/coaching_carousel.py render     # rewrite requests_and_outcomes.md
 
-Method: career/2014/offseason/staff_changes/carousel_method.json, fixed and
+Method: career/2014/01_early_offseason/staff_changes/carousel_method.json, fixed and
 committed before the draw. Rules: library/2014_coaching_hiring_and_anti_tampering_rules.md.
 Every probability reads only the job, the coach's role and record, the clubs'
 branch records and the calendar, never which club is the protagonist's.
@@ -29,7 +29,7 @@ from runtime.week_inputs import schedule
 from scripts.render_season_stats import load_receipts
 from scripts.research.build_2013_week1_depth_charts import CLUBS
 
-DIR = ROOT / "career/2014/offseason/staff_changes"
+DIR = ROOT / "career/2014/01_early_offseason/staff_changes"
 METHOD = DIR / "carousel_method.json"
 RESULTS = DIR / "carousel_results.json"
 PAGE = DIR / "requests_and_outcomes.md"

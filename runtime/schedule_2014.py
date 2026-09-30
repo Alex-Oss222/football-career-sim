@@ -12,7 +12,7 @@ from .league import DIVISIONS, DIVISION_OF, TEAMS
 from .standings import Season, games_from_receipts
 
 ROOT = Path(__file__).resolve().parents[1]
-FOLDER = Path('career/2014/schedule')
+FOLDER = Path('career/2014/06_regular_season/schedule')
 COMPONENT_COUNTS = {'division': 6, 'conference_rotation': 4,
                     'interconference_rotation': 4, 'same_place': 2}
 

@@ -6,7 +6,7 @@ Administrative correction at February 28, 2014, Entry 90. Researched September 2
 
 The starting evidence is the [2013 initial cap sheet](../career/2013/offseason/initial_cap_sheet.md), the executed branch signings, draftees, trades and futures agreements. Public sources below recover original instruments. Later publication may document an old term; later real releases, suspensions, restructures and extensions are not branch events. Original scheduled charge, actual historical charge after a real transaction, and cash are different figures.
 
-The [current contract table](../career/2014/offseason/contract_table.md) and [ten-year tracker](../career/finances/jaguars_cap.md) carry these results. Exact-looking arithmetic within an **estimate** does not make the underlying assumption confirmed. Values are whole dollars; final-year rounding balances the original bonus where supported. Unrecovered guarantees remain distinct from paid signing bonus.
+The [current contract table](../career/2014/09_finances/02_player_contracts/contracts.md) and [ten-year tracker](../career/finances/01_salary_cap/cap_tracker.md) carry these results. Exact-looking arithmetic within an **estimate** does not make the underlying assumption confirmed. Values are whole dollars; final-year rounding balances the original bonus where supported. Unrecovered guarantees remain distinct from paid signing bonus.
 
 ## Verification and accounting decisions
 

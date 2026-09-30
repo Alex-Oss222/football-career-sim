@@ -1,5 +1,5 @@
 """February 2014: the deferred carousel and retained-club coordinator openings
-(career/2014/offseason/staff_changes/carousel_deferred_method.json)."""
+(career/2014/01_early_offseason/staff_changes/carousel_deferred_method.json)."""
 from datetime import date
 import random
 import unittest

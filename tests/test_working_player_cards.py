@@ -1,3 +1,4 @@
+from runtime.seasons import SeasonPaths
 import re
 import json
 import tempfile
@@ -32,7 +33,7 @@ class WorkingPlayerCardTests(unittest.TestCase):
         receipt = json.loads(source.read_text(encoding='utf-8'))
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)
-            path = root/'career/2014/stats/game_receipts/game.json'
+            path = root/'career/2014/06_regular_season/statistics/records/game_receipts/game.json'
             path.parent.mkdir(parents=True)
             path.write_text(json.dumps(receipt), encoding='utf-8')
             with self.assertRaises(ValueError):
@@ -60,14 +61,14 @@ class WorkingPlayerCardTests(unittest.TestCase):
 
     def test_current_roster_cards_and_stats_are_consistent(self):
         self.assertEqual(profile_errors(2014), [])
-        cards = list((ROOT/'career/2014/player_profiles').glob('*.md'))
+        cards = list((ROOT/'career/2014/00_team/player_cards').glob('*.md'))
         self.assertEqual(len(cards), 84)  # 78 current players (Entry 110), 4 former players, index and template
 
     def test_player_facing_year_labels_preserve_proper_name(self):
         self.assertEqual(clean_labels('Andre Branch; Branch evidence; Branch regular season'),
                          'Andre Branch; recorded evidence; 2013 regular season')
         for year in (2013, 2014):
-            for path in (ROOT/f'career/{year}/player_profiles').glob('*.md'):
+            for path in SeasonPaths(year, ROOT).record('player_profiles').glob('*.md'):
                 text = path.read_text(encoding='utf-8').replace('Andre Branch', '')
                 self.assertIsNone(re.search(r'\bbranch\b', text, re.I), str(path))
 
@@ -101,7 +102,7 @@ class WorkingPlayerCardTests(unittest.TestCase):
 
     def test_both_years_show_the_completed_2013_production(self):
         for year in (2013, 2014):
-            text = (ROOT/f'career/{year}/player_profiles/kirk_cousins.md').read_text(encoding='utf-8')
+            text = SeasonPaths(year, ROOT).record('player_profiles/kirk_cousins.md').read_text(encoding='utf-8')
             self.assertIn('| Statistic | 2013 regular season | 2013 playoffs |', text)
             self.assertIn('| YDS | 3981 | 480 |', text)
 

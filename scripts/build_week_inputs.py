@@ -33,8 +33,8 @@ AVERAGE_ANCHORS = {"offense_anchor": 2.0, "defense_anchor": 2.0, "special_teams_
 
 
 def call_sheet_path(week, season=2013):
-    matches = sorted((SeasonPaths(season, ROOT).career / "regular_season").glob("week_%02d_*/call_sheet.json" % week))
-    matches += sorted((SeasonPaths(season, ROOT).career / "postseason").glob("week_%02d_*/call_sheet.json" % week))
+    matches = sorted(SeasonPaths(season, ROOT).regular_season.glob("week_%02d_*/call_sheet.json" % week))
+    matches += sorted(SeasonPaths(season, ROOT).postseason.glob("week_%02d_*/call_sheet.json" % week))
     return matches[0] if matches else None
 
 

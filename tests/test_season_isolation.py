@@ -66,13 +66,13 @@ class SeasonIsolationTests(unittest.TestCase):
             root = Path(tmp)
             (root / 'docs').mkdir()
             for year in (2013, 2014):
-                file = root / 'career' / str(year) / 'roster.md'
+                file = SeasonPaths(year, root).roster
                 file.parent.mkdir(parents=True)
                 file.write_text(str(year))
             mapping = {'active_season': 2014, 'current_records': {'roster': 'career/2013/roster.md'}}
             (root / 'docs/repository_map.json').write_text(json.dumps(mapping))
             self.assertEqual(current_record('roster', root).read_text(), '2013')
-            mapping['current_records']['roster'] = 'career/2014/roster.md'
+            mapping['current_records']['roster'] = 'career/2014/00_team/roster/roster.md'
             (root / 'docs/repository_map.json').write_text(json.dumps(mapping))
             self.assertEqual(current_record('roster', root).read_text(), '2014')
 

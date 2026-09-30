@@ -22,6 +22,8 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from runtime.stat_tables import avg, g, passer_rating, pct, thrown, time_text  # noqa: E402
+from runtime.seasons import SeasonPaths
+from runtime.season_layout import rebase_markdown
 
 ROUNDS = {18: "Wild Card", 19: "Divisional", 20: "Conference Championship", 21: "Super Bowl"}
 COACH = {"Jacksonville Jaguars": "Alex Stone"}
@@ -30,13 +32,13 @@ NOT_RECORDED = ("The receipts do not record the longest completion, the longest 
 
 
 def tracker_dir(root, year):
-    return root / "career" / str(year) / "stats" / "team_tracker"
+    return SeasonPaths(year, root).stats / 'team_tracker'
 
 
 def load_games(root, year, team):
     games = []
     for folder, kind in (("game_receipts", "regular"), ("postseason_receipts", "postseason")):
-        for path in sorted((root / "career" / str(year) / "stats" / folder).glob("*.json")):
+        for path in sorted((SeasonPaths(year, root).stats / folder).glob("*.json")):
             receipt = json.loads(path.read_text(encoding="utf-8"))
             if team not in receipt.get("team_stats", {}):
                 continue
@@ -200,8 +202,9 @@ def record(games):
 
 
 def depth_lines(root, year):
-    final = root / "career" / str(year) / "depth_chart.json"
-    working = root / "career" / str(year) / "offseason" / "depth_chart_working.json"
+    paths = SeasonPaths(year, root)
+    final = paths.depth_chart
+    working = paths.record('offseason/depth_chart_working.json')
     path = final if final.exists() else working if working.exists() else None
     if not path:
         return ["No depth chart is recorded for this season yet.", ""]
@@ -213,7 +216,7 @@ def depth_lines(root, year):
 
 
 def award_rows(root, year, team):
-    base = root / "career" / str(year) / "awards"
+    base = SeasonPaths(year, root).awards
     rows = []
     results = base / "results.json"
     if results.exists():
@@ -274,7 +277,9 @@ def render(root, year, team):
         out["games/" + slug(game)] = game_page(team, year, game, list(regular))
         if game["kind"] == "regular":
             regular.append(game)
-    return out
+    return {name: rebase_markdown(text, f'career/{year}/stats/team_tracker/{name}',
+                                  (tracker_dir(root, year) / name).relative_to(root))
+            for name, text in out.items()}
 
 
 def check(root, year, team="Jacksonville Jaguars"):

@@ -69,7 +69,7 @@ All voluntary; the 2014 offseason program may begin no earlier than April 21, an
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/roy_miller.json`
-- `career/2014/offseason/contract_status_register.md` lines 15, 48; `career/2013/roster.md` line 104; `state/04_Roster_and_Staff_Register.md` line 220; `state/05_Current_Season_State.md` section 4 (line 58)
+- `career/2014/09_finances/02_player_contracts/contract_status.md` lines 15, 48; `career/2013/roster.md` line 104; `state/04_Roster_and_Staff_Register.md` line 220; `state/05_Current_Season_State.md` section 4 (line 58)
 - `career/2013/offseason/free_agency/player_board.md` lines 134-138; `career/2013/offseason/free_agency/signings.md` lines 19, 131-133
 - `career/2013/offseason/training_camp/output.md` lines 33, 59, 106; `career/2013/offseason/training_camp/position_battles.md` line 13
 - `career/2013/regular_season/week_01_kansas_city_at_jacksonville/output.md` line 313; `week_02_jacksonville_at_oakland/output.md` line 317; `week_04_indianapolis_at_jacksonville/output.md` line 318; `week_07_san_diego_at_jacksonville/output.md` line 314; `week_08_san_francisco_at_jacksonville/output.md` line 318

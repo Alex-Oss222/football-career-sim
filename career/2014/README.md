@@ -1,30 +1,43 @@
-# Jacksonville 2014
+# Jacksonville — 2014 season
 
-**Current checkpoint:** June 13, 2014; Entry 112 (the ten OTA days, May 27 to June 13, closed with the June 13 handoff: the five open competitions stand as Stone set them May 12, Communication assessed Average for each unit's spring lineup, Plan execution not assessed; no June 1 tender filed June 2 for Ball, Brent Grimes, Reisner or Rutland). Entry 111 set Stone's May 12 rep starting points for WR1 Nicks, WR3 Adams, left guard Bitonio, right guard Turner and Edge 1 Mincey, each with named competition, onboarded and cleared the 26 rookies, ran the May 16 and 17 rookie minicamp and closed Phase Two with its May 23 handoff. Entry 110 traded Rackley to Seattle for its unconditional 2015 seventh (May 12; Brewster kept) and left Alan Ball unsigned; Entries 108 and 109 closed the 2014 draft May 8 to 10, 17 undrafted signings May 10, rookie contracts May 11, the Phase One handoff May 2 and the four unsigned tenders outside the program. There are 78 controlled players: 74 signed, including nine draft selections (Donald, Bitonio, Adams, Turner, Telvin Smith, Linsley, Leno, Thomas, Butler) and 17 undrafted rookies, and four unsigned tenders. All nine 2014 picks are exercised; no compensatory award. 2015 picks held: Jacksonville's own second, Miami's third, Houston's fourth, Arizona's fourth and Seattle's seventh; Jacksonville's 2017 seventh went to Miami. No 2014 game has run.
+[Team](00_team/README.md) · [Calendar](calendar.md) · [Finances](09_finances/README.md) · [Trades](10_trades/README.md)
 
-## Start and resume here
+**Where we are:** OTAs finished on June 13, 2014. Next are June 16 physicals and Caldwell’s Bradfield tender decision, then mandatory minicamp on June 17–19. [Current state](../../state/05_Current_Season_State.md) holds the live checkpoint and outstanding decisions. No 2014 game has been played.
 
-[2014 player cards](player_profiles/README.md) · [2014 player template](player_profiles/TEMPLATE.md) · [2013 final player sheets](../2013/player_profiles/README.md)
+## Follow the season
 
-Read [current state](../../state/05_Current_Season_State.md), [calendar](calendar.md), then the relevant row below. The selected program was filed March 28 and began April 21; Stone's [April 18 decisions](offseason/stone_april_18_2014_decisions.md) settle the remaining phase-plan choices, revised May 1 for the unsigned tenders. The draft and undrafted class are closed ([draftees](offseason/draft/draftees.md), [undrafted signings](offseason/draft/udfa_signings.md)); rookie onboarding and minicamp come next. Held negotiations and other open choices keep their existing owners.
+The folders follow the opening dates of each phase. Free agency begins before the draft; the draft and rookie camp overlap the spring training program. Use the [calendar](calendar.md) for the exact next event.
 
-| Order of work | Existing home | What carries to the next step |
+| Season folder | Dates | What belongs here |
 |---|---|---|
-| Current team | [Roster](roster.md), [staff](coaching_staff.md), [working depth](depth_chart.md), [ledger](ledger.md) | Current control, roles, medical limits, coaches and completed events |
-| Finances | [Player cap and organization finances](../finances/README.md) | Existing contracts, guarantees, dead money and open club accounting |
-| March–April preparation | [Offseason index](offseason/README.md), [phase decisions](offseason/phase_plan_decisions.md) | Selected historical dates; April 18 policy decisions adopted |
-| Veteran program | [Phases One and Two](offseason/offseason_program/plan.md) | 2013 strengths, shared identification and individual corrections |
-| Draft and arrivals | [Pick ownership/order](draft/draft_order.md), [draft execution](offseason/draft/README.md), [rookie camp](offseason/rookie_minicamp/plan.md) | Actual acquisitions, ordinal swaps, eligibility, onboarding and rookie baseline |
-| Spring team work | [OTAs](offseason/otas/plan.md), [mandatory minicamp](offseason/mandatory_minicamp/plan.md) | Observed retention, incomplete teaching and individual camp-entry questions |
-| Camp and preseason | [Camp](offseason/training_camp/plan.md), [preseason](preseason/README.md), [cuts](preseason/final_roster_cuts.md) | Legal roster, medical status, supported depth and game preparation |
-| Season | [Historical schedule](schedule/README.md), [weekly work](regular_season/README.md), [postseason](postseason/README.md) | Branch game receipts and dated decisions |
-| Results and history | [Stats](stats/README.md), [awards](awards/README.md), [statbook](statbook.md) | Season-specific evidence; never imported historical player results |
-| Finish and transfer | [Closeout and handoff](closeouts/README.md) | Interviews, contract/cap reconciliation, roles, staff, development and open obligations for 2015 |
+| [01 · Early offseason](01_early_offseason/README.md) | January–March 10 | Prior-season review carried into 2014, staff changes, scouting, roster and contract preparation |
+| [02 · Free agency](02_free_agency/README.md) | March 11 onward | Targets, offers, negotiations, signings, tags and tenders |
+| [03 · Offseason training](03_offseason_training/README.md) | April 21–June 22 program window | Phases One and Two, rookie minicamp, OTAs, mandatory minicamp; each has its staff plan, training report and player assessments |
+| [04 · Draft](04_draft/README.md) | May 8–10 | Draft board, pick ownership, selections, undrafted signings and rookie contracts |
+| [05 · Training camp and preseason](05_training_camp_and_preseason/README.md) | July 21–August 31 | Camp, four preseason games, assessments, cut to 75, final 53 and practice squad |
+| [06 · Regular season](06_regular_season/README.md) | September 4–December 28 | Games by week, team and player statistics, standings, weekly and monthly awards |
+| [07 · Postseason and Pro Bowl](07_postseason/README.md) | December 29–February 1, 2015 | Playoff qualification, rounds, postseason statistics, honours and Pro Bowl |
+| [08 · Season review and 2015](08_season_review/README.md) | After Jacksonville’s actual final game | Exit interviews, contract and staff decisions, final assessments and the handoff to next season |
 
-## Working conventions
+## Keep the team together
 
-Keep this route and the existing phase folders. Each phase has one plan, one actual output and one evidence summary. Append dated participant/session rows to the existing output; update existing player profiles. Avoid a new document for every meeting, drill, scenario or status update. Trade proposals remain in [trades](trades/README.md); they do not enter the cap until executed.
+| Always available | What it contains |
+|---|---|
+| [Team](00_team/README.md) | Roster, depth chart, player cards, coaching staff, development and film |
+| [Finances](09_finances/README.md) | Salary cap, player contracts, upcoming decisions, coaching costs, future commitments and history |
+| [Trades](10_trades/README.md) | Targets and offers first; completed trades below, each showing what Jacksonville sends and receives |
+| [Calendar](calendar.md) | Historical dates, deadlines, overlapping phases and conditional events |
+| [Season ledger](ledger.md) | What actually happened, recorded in order |
+| [League personnel](league/personnel/README.md) | Other clubs’ dated personnel records and Jacksonville exceptions |
 
-Run the calendar in date order: Phase Two overlaps the draft and rookie camp. Pause at those events and return to the veteran program without backdating. A completed folder is not permission to skip a deadline or an important Stone decision. [Operating baseline](operating_baseline.md) and [readiness](readiness.md) distinguish prepared records from permission to simulate.
+Contracts, remaining guarantees, dead money, controlled players, working depth and unresolved decisions continue into 2015. Prior statistics stay in 2014 and on the career rows of each player’s card; the new season begins without game results. Contract renewals, roster changes and medical clearance happen through their own decisions.
 
-The 2013 ledger through Entry 100 and its completed football evidence remain archived. New events belong to the 2014 ledger. Current roles and medical restrictions carry forward; game-day eligibility still requires fresh verification. The historical calendar always controls dates and fixtures. The existing draft-pairing rule changes player destinations while preserving branch draft assets and decisions.
+[2013 season](../2013/README.md) · [2015 calendar](../2015/calendar.md) · [Repository home](../../README.md) · [Simulation preparation](supporting_records/README.md)
+
+<!-- folder-files -->
+## Files in this folder
+
+| File | What it contains |
+|---|---|
+| [calendar.md](calendar.md) | Jacksonville 2014 calendar. |
+| [ledger.md](ledger.md) | Jacksonville 2014 event ledger. |

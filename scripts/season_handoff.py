@@ -10,6 +10,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from runtime.seasons import SeasonPaths
+from runtime.season_layout import opening_guides
 
 TEAM_GATES = ('team_season_closed', 'exit_interviews', 'roster_and_medical',
               'player_contracts_and_cap', 'staff_contracts', 'draft_assets',
@@ -25,11 +26,17 @@ def safe(root, relative):
 
 
 def digest(path):
+    if path.is_dir():
+        # A player's earlier career rows are evidence too. Freeze names as well
+        # as content so an added, removed or renamed card invalidates the review.
+        entries = [(p.relative_to(path).as_posix(), digest(p))
+                   for p in sorted(path.rglob('*')) if p.is_file()]
+        return hashlib.sha256(json.dumps(entries).encode()).hexdigest()
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def manifest_path(root, year):
-    return SeasonPaths(year, root).career / 'closeouts/season_handoff.json'
+    return SeasonPaths(year, root).record('closeouts/season_handoff.json')
 
 
 def prepare(root, year):
@@ -43,23 +50,27 @@ def prepare(root, year):
         raise ValueError('Prepare the active season; do not copy another season as its baseline')
     sources = dict(mapping['current_records'])
     sources.pop('background_depth', None)  # Legacy roster research never becomes legal successor input.
-    sources.update(player_contracts=f'career/{year}/offseason/contract_table.md',
-                   contract_status=f'career/{year}/offseason/contract_status_register.md',
-                   player_finances='career/finances/jaguars_cap_inputs.json',
-                   organization_finances='career/finances/organization_finances.md',
-                   draft_assets=f'career/{year}/draft/pick_ownership.json',
+    paths = SeasonPaths(year, root)
+    relative = lambda name: paths.record(name).relative_to(root).as_posix()
+    sources.update(player_contracts=relative('offseason/contract_table.md'),
+                   contract_status=relative('offseason/contract_status_register.md'),
+                   player_finances='career/finances/supporting_records/financial_inputs.json',
+                   organization_finances='career/finances/04_coaching_and_organization/coaching_payroll.md',
+                   draft_assets=relative('draft/pick_ownership.json'),
                    medical_and_roles='state/04_Roster_and_Staff_Register.md',
                    checkpoint='state/05_Current_Season_State.md',
-                   development=f'career/{year}/offseason/player_development/roster_profiles.md',
-                   decisions=f'career/{year}/offseason/phase_plan_decisions.md')
-    for value in sources.values():
-        if not safe(root, value).is_file():
+                   development=relative('offseason/player_development/roster_profiles.md'),
+                   decisions=relative('offseason/phase_plan_decisions.md'),
+                   player_cards=relative('player_profiles'))
+    for name, value in sources.items():
+        source = safe(root, value)
+        if not (source.is_dir() if name == 'player_cards' else source.is_file()):
             raise ValueError('Missing carry-forward source: ' + value)
     data = {'schema_version': 1, 'season': year, 'next_season': year+1,
             'status': 'NOT_STARTED', 'calendar_policy': 'historical',
             'gates': {k: {'status': 'OPEN', 'evidence': []} for k in TEAM_GATES+HISTORY_GATES},
             'carry_forward': sources,
-            'history': {k: f'career/{year}/{k}' for k in ('stats','awards','league_results','postseason')},
+            'history': {k: relative(k) for k in ('stats','awards','league_results','postseason')},
             'source_sha256': {}, 'pending_decisions': []}
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=2)+'\n')
@@ -90,7 +101,7 @@ def check(root, data, *, staging=False):
                     errors.append('Missing or changed closeout evidence: '+name)
     for name, relative in data['carry_forward'].items():
         path = safe(root, relative)
-        if not path.is_file():
+        if not (path.is_dir() if name == 'player_cards' else path.is_file()):
             errors.append('Missing carry-forward source: '+name)
         elif staging and digest(path) != data.get('source_sha256', {}).get(name):
             errors.append('Carry-forward source not frozen/reviewed: '+name)
@@ -117,7 +128,8 @@ def stage(root, data):
     if errors:
         raise ValueError('; '.join(errors))
     year, nxt = data['season'], data['next_season']
-    folder = SeasonPaths(nxt, root).career
+    paths = SeasonPaths(nxt, root)
+    folder = paths.career
     if not (folder/'calendar.md').is_file():
         raise ValueError('Source the historical successor calendar before staging')
     copies = {'roster':'roster.md', 'staff':'coaching_staff.md',
@@ -129,15 +141,41 @@ def stage(root, data):
               'decisions':'offseason/phase_plan_decisions.md'}
     writes = {}
     for key, relative in copies.items():
-        source = safe(root, data['carry_forward'][key]); target = folder/relative
+        source = safe(root, data['carry_forward'][key]); target = paths.record(relative)
         text = source.read_text()
         if target.suffix == '.md':
             text = (f'> Opening carry-forward from {year}; dates and financial figures retain their source checkpoint until reconciled for {nxt}. No renewal, clearance or role award is implied.\n\n' + rebase_links(text, source, target))
         writes[target] = text
+    if 'player_cards' in data['carry_forward']:
+        cards = safe(root, data['carry_forward']['player_cards'])
+        for source in sorted(cards.glob('*.md')):
+            target = paths.record('player_profiles') / source.name
+            text = rebase_links(source.read_text(), source, target)
+            if source.name not in ('README.md', 'TEMPLATE.md'):
+                text = re.sub(r'(^# .+? — )'+str(year)+r'( Player Profile)',
+                              lambda m: m[1]+str(nxt)+m[2], text, flags=re.M)
+                text = re.sub(r'^\*\*Season:\*\* '+str(year)+r'\b', '**Season:** '+str(nxt), text, flags=re.M)
+                note = f'> Opening {nxt} card: assessment and ages retain their {year} checkpoint pending review. Earlier annual statistics are preserved.'
+                text = text.replace('\n', '\n\n'+note+'\n', 1)
+                import os
+                previous = os.path.relpath(source, target.parent)
+                text = re.sub(r'^\*\*Previous annual profile:\*\*[^\n]*',
+                              f'**Previous annual profile:** [{year} profile]({previous})', text, flags=re.M)
+                if '<!-- yearly-statistics:start -->' in text:
+                    from scripts.update_player_cards import refresh_text, period_data
+                    name = re.search(r'^# (.+?) — ', text)[1]
+                    pos = re.search(r'^\*\*Position:\*\* (\S+)', text, re.M)[1]
+                    periods = {post: period_data(nxt, post, root) for post in (False, True)}
+                    text = refresh_text(text, nxt, name, pos, periods, root)
+            writes[target] = text
+    for relative, text in opening_guides(nxt).items():
+        path = folder/relative
+        if not path.exists() or path.read_text() == text:
+            writes[path] = text
     handoff = {**data, 'status':'STAGED', 'source_season':year,
                'activation':'Pending administrative event and current-state reconciliation; live map unchanged',
                'reset_for_new_season':['stats','awards','game receipts','standings','phase outputs'],
-               'shared_finances':'career/finances/jaguars_cap_inputs.json'}
+               'shared_finances':'career/finances/supporting_records/financial_inputs.json'}
     writes[folder/'opening_handoff.json'] = json.dumps(handoff,indent=2)+'\n'
     for path, content in writes.items():
         if path.exists() and path.read_text() != content:
@@ -147,7 +185,7 @@ def stage(root, data):
         path.write_text(content)
     # No old totals, awards, game inputs or receipts are copied into new storage.
     for relative in ('stats/game_receipts','stats/postseason_receipts','awards','closeouts'):
-        (folder/relative).mkdir(parents=True,exist_ok=True)
+        paths.record(relative).mkdir(parents=True,exist_ok=True)
     return list(writes)
 
 
