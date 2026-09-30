@@ -1,5 +1,7 @@
+import json
 import random
 import unittest
+from pathlib import Path
 
 from runtime.player_progression import (
     CONTEXT_CATEGORIES,
@@ -35,6 +37,44 @@ def whole_context(player_id="Kirk Cousins", position="QB"):
 
 
 class PlayerProgressionTests(unittest.TestCase):
+    def test_cousins_repository_context_satisfies_runtime_contract(self):
+        root = Path(__file__).resolve().parents[1]
+        data = json.loads(
+            (
+                root
+                / "career/2014/offseason/player_development"
+                / "kirk_cousins_progression_context.json"
+            ).read_text(encoding="utf-8")
+        )
+        context = PlayerDevelopmentContext(
+            context_id=data["context_id"],
+            player_id=data["player"],
+            position=data["position"],
+            factors=tuple(
+                ContextFactor(
+                    category=row["category"],
+                    assessment=row["assessment"],
+                    evidence_ids=tuple(row["evidence_ids"]),
+                    confidence=row["confidence"],
+                )
+                for row in data["factors"]
+            ),
+        )
+        validate_context(context)
+        self.assertEqual(len(context.factors), 15)
+        for row in data["candidate_development_cases"]:
+            case = DevelopmentCase(
+                context_id=row["context_id"],
+                player_id=data["player"],
+                position=data["position"],
+                trait=row["trait"],
+                mechanisms=tuple(row["mechanisms"]),
+                evidence_ids=tuple(row["evidence_ids"]),
+                confidence=row["confidence"],
+                rationale=row["rationale"],
+            )
+            validate_development_case(case, context)
+
     def test_complete_context_requires_all_fifteen_categories(self):
         context = whole_context()
         validate_context(context)
