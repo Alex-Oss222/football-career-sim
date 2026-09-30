@@ -1,6 +1,6 @@
 # Individual player development
 
-[Offseason index](../README.md) · [Progression model](progression_model.md) · [Live progression cohort](progression_roster.json) · [All 61 exit-review profiles](roster_profiles.md) · [Cousins in detail](kirk_cousins.md) · [Film queue](../film/player_queue.md) · [Player template](player_plan_template.md)
+[Offseason index](../README.md) · [Progression model](progression_model.md) · [Live progression cohort](progression_roster.json) · [All 61 exit-review profiles](roster_profiles.md) · [Cousins in detail](kirk_cousins.md) · [Cousins progression context](kirk_cousins_progression_context.json) · [Film queue](../film/player_queue.md) · [Player template](player_plan_template.md)
 
 
 The live progression cohort is derived from the current roster with `python scripts/build_player_progression_roster.py`. The frozen 61-player exit index identifies 2013 Jacksonville continuity only; it never overrides current control. At the March 24 checkpoint, 53 players are controlled, 48 have Jacksonville 2013 continuity, and Kirk Cousins is one of those returners. Regenerate the cohort after every roster/control change before resolving progression.
