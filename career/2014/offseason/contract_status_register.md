@@ -1,7 +1,7 @@
 # Jacksonville Jaguars: 2014 contract and free-agency status register
 
-**As of:** April 17, 2014.
-**Scope:** every player in the March 11, 2014 league-year baseline: the 52 active players and Brad Meester (Reserve/Retired) on the [2013 closing roster](../../2013/roster.md), plus the eight-player 2013 practice squad, six of whom signed reserve/future contracts effective March 11. Players signed from outside after the baseline are summarized in section 2; their contracts are in the [contract table](contract_table.md) and [signings record](free_agency/signings.md).
+**As of:** May 11, 2014.
+**Scope:** every player in the March 11, 2014 league-year baseline: the 52 active players and Brad Meester (Reserve/Retired) on the [2013 closing roster](../../2013/roster.md), plus the eight-player 2013 practice squad, six of whom signed reserve/future contracts effective March 11. Players signed from outside after the baseline are summarized in section 2; their contracts are in the [contract table](contract_table.md), the [signings record](free_agency/signings.md), [the draftees record](draft/draftees.md) and [the undrafted signings record](draft/udfa_signings.md).
 **Role:** this register owns each player's contract status, final league year, accrued seasons and free-agency class, with the evidence for each. It executes no signing, tender, release, extension, option or trade; Caldwell retains contract authority under Document 3. Figures follow the adopted contract reconstruction in the [original-contract research](../../../library/2014_jaguars_original_contract_reconstruction.md) and the [completion research](../../../library/2014_jaguars_contract_completion.md), which fix every covered contract year with explicit simulation assumptions where the public original instrument is incomplete. Transaction history is in the [2014 ledger](../ledger.md).
 
 ## 1. How to read this register
@@ -16,18 +16,20 @@
 
 ## 2. Current status summary
 
-| Status at March 31, 2014 | Count |
+| Status at May 11, 2014 | Count |
 |---|---:|
 | Under contract, continuing from before 2014 | 32 |
 | Under contract, reserve/future (effective March 11) | 6 |
 | Under contract, signed or re-signed in March and April 2014 | 11 |
+| Under contract, 2014 draft selections (four-year rookie contracts signed May 11) | 9 |
+| Under contract, 2014 undrafted rookies (three-year minimum contracts signed May 10) | 17 |
 | Restricted free agent, lowest tender (unsigned) | 1 |
 | Exclusive-rights free agent, tendered (unsigned) | 3 |
-| Controlled players | 53 |
+| Controlled players | 79 |
 | Control ended since the baseline (expired, not tendered, retired or traded) | 11 |
 | 2013 practice-squad players not offered a contract | 2 |
 
-The 53 controlled players match the [roster](../roster.md) and the [contract table](contract_table.md).
+The 79 controlled players match the [roster](../roster.md) and the [contract table](contract_table.md).
 
 ### Changes since the March 11 baseline
 
@@ -53,6 +55,8 @@ The 53 controlled players match the [roster](../roster.md) and the [contract tab
 | Russell Allen | Under contract | Traded to Arizona April 7 for Arizona's 2015 fourth |
 | Six reserve/future players | Futures | Contracts in force from March 11 |
 | Alterraun Verner, Aqib Talib, Hakeem Nicks, Andrew Hawkins, Daniel Te'o-Nesheim | Not Jacksonville players | Signed March 11 to 18 (terms in the [signings record](free_agency/signings.md)) |
+| Aaron Donald, Joel Bitonio, Davante Adams, Trai Turner, Telvin Smith, Corey Linsley, Charles Leno Jr., Jemea Thomas, Malcolm Butler | 2014 draft selections (May 8 to 10) | Four-year rookie contracts signed May 11, 2014, priced by slot reconstruction from the same-slot 2014 contracts; the two first-rounders carry an unexercised 2018 option ([draftees](draft/draftees.md)). Accrued seasons 0; free-agency class set by the 2011 CBA rookie rules at expiry |
+| Norwell, Christian Jones, Hurns, Lucas, Phillips, Feiler, Brate, Todd Davis, Shatley, Larsen, Shaw, Edebali, Jensen, Hoskins, Jeffcoat, Gabriel, Kreiter | 2014 undrafted rookies | Three-year minimum contracts signed May 10, 2014 ($15,000 bonuses for the five linemen; no guarantee otherwise) ([undrafted signings](draft/udfa_signings.md)). Accrued seasons 0; exclusive-rights or restricted status at expiry follows actual accrual |
 
 ## 3. Baseline players: contracts and accrual
 

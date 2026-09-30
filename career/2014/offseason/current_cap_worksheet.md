@@ -1,22 +1,24 @@
 # Jacksonville 2014 financial preparation worksheet
 
-**As of:** April 17, 2014.
-**Status:** player-contract schedules are complete; club-level reconciliation remains open. No certified 2014 cap room exists.
+**As of:** May 11, 2014.
+**Status:** player-contract schedules are complete, the nine 2014 rookie contracts and 17 undrafted contracts included; club-level reconciliation remains open. No certified 2014 cap room exists.
 **Role:** this worksheet is the current 2014 accounting owner. It records the working cap position and every open reconciliation item. The [contract table](contract_table.md) is the per-player view, the [twelve-year tracker](../../finances/jaguars_cap.md) carries recorded obligations through 2025, and the [2013 worksheet](../../2013/offseason/current_cap_worksheet.md) is prior-year history. Transaction history is in the [2014 ledger](../ledger.md).
 
 ## Working 2014 position
 
 | Component | 2014 amount |
 |---|---:|
-| Scheduled player cap, including unsigned tenders | $111,743,080 |
+| Scheduled player cap, including unsigned tenders and the 26 rookie contracts | $127,183,362 |
+| of which the nine 2014 draft selections (gross) | $8,275,282 |
+| of which the 17 undrafted rookies (gross) | $7,165,000 |
 | of which unsigned tenders (Bradfield, Clemons, Pasztor, Brown) | $3,066,000 |
 | Dead money (Bray $51,675; Nwaneri $2,189,000 after his March 20 trade; Alualu $1,542,500 after his March 24 trade to Houston; Babin's March 24 trade to Miami leaves none; Shorts $110,845 and Blackmon $5,951,636 after their March 31 trade to Indianapolis; Allen $416,668 after his April 7 trade to Arizona) | $10,262,324 |
-| Offseason Top-51 count with dead money (two $420,000 minimums displaced) | $121,165,404 |
+| Offseason Top-51 count with dead money (the 28 lowest base salaries, $12,060,000, displaced; bonus proration stays) | $125,385,686 |
 | Opening offseason-workout charge (CBA Article 13 section 5(g)) | $504,000 |
-| Working total | $121,669,404 |
-| Working difference against the $133,000,000 league cap | $11,330,596 |
+| Working total | $125,889,686 |
+| Working difference against the $133,000,000 league cap | $7,110,314 |
 
-The player figure includes the 2014 branch contracts of Monroe ($5,600,000, replacing his tender), Marks ($4,750,000), Verner ($6,000,000), Talib ($7,800,000), Nicks ($5,000,000 budget), Hawkins ($2,800,000), Te'o-Nesheim ($3,000,000), Cain ($855,000), Jones-Drew ($2,600,000), C.J. Wilson ($795,000) and Henne ($1,400,000). The working difference is not certified room: rookies, further signings and reserves are unreconciled, and the carryover below is an estimate. Adding the estimated 2013 rollover of about $5.33M to $6.00M gives a working difference of about $16.66M to $17.33M. The [contract table](contract_table.md#5b-working-2014-cap-charges) shows the calculation.
+The player figure includes the 2014 branch contracts of Monroe ($5,600,000, replacing his tender), Marks ($4,750,000), Verner ($6,000,000), Talib ($7,800,000), Nicks ($5,000,000 budget), Hawkins ($2,800,000), Te'o-Nesheim ($3,000,000), Cain ($855,000), Jones-Drew ($2,600,000), C.J. Wilson ($795,000) and Henne ($1,400,000), plus the nine rookie contracts signed May 11 (slot reconstructions from the same-slot 2014 contracts, $8,275,282 gross in 2014) and the 17 undrafted minimum contracts signed May 10 ($7,165,000 gross). The net Top-51 effect of the 26 rookie contracts is $4,220,282. The working difference is not certified room: further signings and reserves are unreconciled, and the carryover below is an estimate. Adding the estimated 2013 rollover of about $5.33M to $6.00M gives a working difference of about $12.44M to $13.11M. The [contract table](contract_table.md#5b-working-2014-cap-charges) shows the calculation.
 
 ## 2013 rollover
 
@@ -64,7 +66,7 @@ Player schedules rest on two research files. The [original-contract research](..
 | Reserve/future contracts | Six signed at the 2014 minimum for credited seasons, no guarantee, no bonus, effective March 11: Bray, Jerrell Jackson and Long $420,000 each; Murphy, D'Anthony Smith and Blake $495,000 each (credited service reconstructed from Article 26). King and Ta'ufo'ou left | Count from March 11 under the offseason Top-51 rule; 2015 salaries $510,000 or $585,000 under the adopted two-year terms |
 | Trades and releases | Apply the actual instrument, effective date, retained proration, guarantees and verified bonus clauses | No memo savings booked before a completed move |
 | Top-51 | Compute the applicable ranking and displacement, including other counting obligations, at the league-year transition | Do not sum all offseason salaries as full charges |
-| Rookies | Use actual final assets and selections and sourced contract terms when known | No assumed trade proceeds, compensatory counts or signed rookies |
+| Rookies | Nine selections signed May 11 on slot reconstructions from the same-slot 2014 contracts ([draftees](draft/draftees.md)); 17 undrafted rookies signed May 10 on three-year minimums ([undrafted signings](draft/udfa_signings.md)). Real slot totals and guarantees; branch structure (minimum bases, bonus prorated). The rookie pool allocation itself is not certified (2014 pool total Unverified in the financial rules) | Hurst is held until a medical clearance; no further rookie signing is booked |
 | Staff spending | Scheduled 2014 assistant salary $7,700,000 after Westhoff's hire; a commitment, not a budget ceiling | Staff cash remains separate from the player cap |
 
 For each item, record source, effective or public date, evidence strength, missing component and the event that closes it. Reconcile known obligations even while an unrelated field remains unknown. An unknown amount never becomes zero. This worksheet executes no signing, release, trade, tender, futures contract or cap adjustment. Close future reconciliation events in the ledger and update all dependent finance and state views together.

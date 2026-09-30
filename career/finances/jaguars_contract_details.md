@@ -1,6 +1,6 @@
 # Jacksonville Jaguars individual contract details
 
-[Return to the twelve-year table](jaguars_cap.md). As of April 17, 2014, Entry 106. Whole US dollars.
+[Return to the twelve-year table](jaguars_cap.md). As of May 11, 2014, Entry 109. Whole US dollars.
 
 Annual cells contain the working original or reconstructed contract schedule. Blank years lie outside that deal. The [completion research](../../library/2014_jaguars_contract_completion.md) identifies adopted simulation terms and guarantee assumptions. Cap, scheduled cash and remaining unpaid guarantees are separate amounts.
 
@@ -1701,3 +1701,758 @@ Sources: [contract table](../../career/2014/offseason/contract_table.md), [signi
 Branch record (Entry 98; negotiation record career/2014/offseason/free_agency/teo_nesheim_negotiation_2014-03-18.md). Active-game bonuses reserved in full.
 
 Sources: [contract table](../../career/2014/offseason/contract_table.md), [signings](../../career/2014/offseason/free_agency/signings.md), [teo nesheim negotiation 2014-03-18](../../career/2014/offseason/free_agency/teo_nesheim_negotiation_2014-03-18.md).
+
+## Aaron Donald
+
+| Field | Detail |
+|---|---|
+| Position / status | IDL / Under contract |
+| Original contract | Rookie scale, pick #13 |
+| Signed | May 11, 2014 |
+| Term | 4 / 2017 + first-round club option |
+| Contract value | $10,136,500 |
+| Bonus terms | $7,916,500; $1,979,125; 4 |
+| Remaining unpaid salary guarantee | $2,220,000 |
+| Guarantee basis | Fully guaranteed: the signing bonus and all four base salaries |
+| Schedule basis | Slot reconstruction from the same-slot 2014 contract |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $1,979,125 | $0 | $2,399,125 | $8,336,500 | $420,000 |
+| 2015 | $510,000 | $1,979,125 | $0 | $2,489,125 | $510,000 | $510,000 |
+| 2016 | $600,000 | $1,979,125 | $0 | $2,579,125 | $600,000 | $600,000 |
+| 2017 | $690,000 | $1,979,125 | $0 | $2,669,125 | $690,000 | $690,000 |
+
+Any future proven-performance escalator requires the branch’s actual qualifying participation; no later real-world escalator or extension is imported.
+
+### Contract notes
+
+Branch record (Entry 108): selected May 8, 2014 at No. 13; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 13 (Aaron Donald, St. Louis) in the nflverse/OTC historical contracts file, $10,136,500 total and $10,136,500 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. The first-round fifth-year option for 2018 is unexercised and not booked. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [draftees](../../career/2014/offseason/draft/draftees.md).
+
+## Joel Bitonio
+
+| Field | Detail |
+|---|---|
+| Position / status | OT / Under contract |
+| Original contract | Rookie scale, pick #26 |
+| Signed | May 11, 2014 |
+| Term | 4 / 2017 + first-round club option |
+| Contract value | $7,799,102 |
+| Bonus terms | $5,579,102; $1,394,775; 4 |
+| Remaining unpaid salary guarantee | $736,485 |
+| Guarantee basis | Signing bonus plus $736,485 of base salary guaranteed ($420,000 in 2014, $316,485 in 2015) |
+| Schedule basis | Slot reconstruction from the same-slot 2014 contract |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $1,394,775 | $0 | $1,814,775 | $5,999,102 | $420,000 |
+| 2015 | $510,000 | $1,394,775 | $0 | $1,904,775 | $510,000 | $316,485 |
+| 2016 | $600,000 | $1,394,775 | $0 | $1,994,775 | $600,000 | $0 |
+| 2017 | $690,000 | $1,394,777 | $0 | $2,084,777 | $690,000 | $0 |
+
+Any future proven-performance escalator requires the branch’s actual qualifying participation; no later real-world escalator or extension is imported.
+
+### Contract notes
+
+Branch record (Entry 108): selected May 8, 2014 at No. 26; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 26 (Marcus Smith, Philadelphia) in the nflverse/OTC historical contracts file, $7,799,102 total and $6,315,587 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years, odd dollars in 2017. The first-round fifth-year option for 2018 is unexercised and not booked. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [draftees](../../career/2014/offseason/draft/draftees.md).
+
+## Davante Adams
+
+| Field | Detail |
+|---|---|
+| Position / status | WR / Under contract |
+| Original contract | Rookie scale, pick #38 |
+| Signed | May 11, 2014 |
+| Term | 4 / 2017 |
+| Contract value | $5,254,932 |
+| Bonus terms | $3,034,932; $758,733; 4 |
+| Remaining unpaid salary guarantee | $185,697 |
+| Guarantee basis | Signing bonus plus $185,697 of base salary guaranteed ($185,697 in 2014) |
+| Schedule basis | Slot reconstruction from the same-slot 2014 contract |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $758,733 | $0 | $1,178,733 | $3,454,932 | $185,697 |
+| 2015 | $510,000 | $758,733 | $0 | $1,268,733 | $510,000 | $0 |
+| 2016 | $600,000 | $758,733 | $0 | $1,358,733 | $600,000 | $0 |
+| 2017 | $690,000 | $758,733 | $0 | $1,448,733 | $690,000 | $0 |
+
+Any future proven-performance escalator requires the branch’s actual qualifying participation; no later real-world escalator or extension is imported.
+
+### Contract notes
+
+Branch record (Entry 108): selected May 9, 2014 at No. 38; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 38 (Austin Seferian-Jenkins, Tampa Bay) in the nflverse/OTC historical contracts file, $5,254,932 total and $3,220,629 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [draftees](../../career/2014/offseason/draft/draftees.md).
+
+## Trai Turner
+
+| Field | Detail |
+|---|---|
+| Position / status | OG / Under contract |
+| Original contract | Rookie scale, pick #90 |
+| Signed | May 11, 2014 |
+| Term | 4 / 2017 |
+| Contract value | $2,808,520 |
+| Bonus terms | $543,520; $135,880; 4 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | Signing bonus only; no base salary guaranteed |
+| Schedule basis | Slot reconstruction from the same-slot 2014 contract |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $135,880 | $0 | $555,880 | $963,520 | $0 |
+| 2015 | $510,000 | $135,880 | $0 | $645,880 | $510,000 | $0 |
+| 2016 | $600,000 | $135,880 | $0 | $735,880 | $600,000 | $0 |
+| 2017 | $735,000 | $135,880 | $0 | $870,880 | $735,000 | $0 |
+
+Any future proven-performance escalator requires the branch’s actual qualifying participation; no later real-world escalator or extension is imported.
+
+### Contract notes
+
+Branch record (Entry 108): selected May 9, 2014 at No. 90; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 90 (Donte Moncrief, Indianapolis) in the nflverse/OTC historical contracts file, $2,808,520 total and $543,520 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000, the 2017 base carrying the slot contract's $45,000 above the minimum); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [draftees](../../career/2014/offseason/draft/draftees.md).
+
+## Telvin Smith
+
+| Field | Detail |
+|---|---|
+| Position / status | LB / Under contract |
+| Original contract | Rookie scale, pick #129 |
+| Signed | May 11, 2014 |
+| Term | 4 / 2017 |
+| Contract value | $2,620,544 |
+| Bonus terms | $400,544; $100,136; 4 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | Signing bonus only; no base salary guaranteed |
+| Schedule basis | Slot reconstruction from the same-slot 2014 contract |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $100,136 | $0 | $520,136 | $820,544 | $0 |
+| 2015 | $510,000 | $100,136 | $0 | $610,136 | $510,000 | $0 |
+| 2016 | $600,000 | $100,136 | $0 | $700,136 | $600,000 | $0 |
+| 2017 | $690,000 | $100,136 | $0 | $790,136 | $690,000 | $0 |
+
+Any future proven-performance escalator requires the branch’s actual qualifying participation; no later real-world escalator or extension is imported.
+
+### Contract notes
+
+Branch record (Entry 108): selected May 10, 2014 at No. 129; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 129 (Dontae Johnson, San Francisco) in the nflverse/OTC historical contracts file, $2,620,544 total and $400,544 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [draftees](../../career/2014/offseason/draft/draftees.md).
+
+## Corey Linsley
+
+| Field | Detail |
+|---|---|
+| Position / status | C / Under contract |
+| Original contract | Rookie scale, pick #153 |
+| Signed | May 11, 2014 |
+| Term | 4 / 2017 |
+| Contract value | $2,412,000 |
+| Bonus terms | $192,000; $48,000; 4 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | Signing bonus only; no base salary guaranteed |
+| Schedule basis | Slot reconstruction from the same-slot 2014 contract |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $48,000 | $0 | $468,000 | $612,000 | $0 |
+| 2015 | $510,000 | $48,000 | $0 | $558,000 | $510,000 | $0 |
+| 2016 | $600,000 | $48,000 | $0 | $648,000 | $600,000 | $0 |
+| 2017 | $690,000 | $48,000 | $0 | $738,000 | $690,000 | $0 |
+
+Any future proven-performance escalator requires the branch’s actual qualifying participation; no later real-world escalator or extension is imported.
+
+### Contract notes
+
+Branch record (Entry 108): selected May 10, 2014 at No. 153; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 153 (Cyril Richardson, Buffalo) in the nflverse/OTC historical contracts file, $2,412,000 total and $192,000 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [draftees](../../career/2014/offseason/draft/draftees.md).
+
+## Charles Leno Jr.
+
+| Field | Detail |
+|---|---|
+| Position / status | OT / Under contract |
+| Original contract | Rookie scale, pick #168 |
+| Signed | May 11, 2014 |
+| Term | 4 / 2017 |
+| Contract value | $2,391,480 |
+| Bonus terms | $171,480; $42,870; 4 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | Signing bonus only; no base salary guaranteed |
+| Schedule basis | Slot reconstruction from the same-slot 2014 contract |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $42,870 | $0 | $462,870 | $591,480 | $0 |
+| 2015 | $510,000 | $42,870 | $0 | $552,870 | $510,000 | $0 |
+| 2016 | $600,000 | $42,870 | $0 | $642,870 | $600,000 | $0 |
+| 2017 | $690,000 | $42,870 | $0 | $732,870 | $690,000 | $0 |
+
+Any future proven-performance escalator requires the branch’s actual qualifying participation; no later real-world escalator or extension is imported.
+
+### Contract notes
+
+Branch record (Entry 108): selected May 10, 2014 at No. 168; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 168 (Marquis Spruill, Atlanta) in the nflverse/OTC historical contracts file, $2,391,480 total and $171,480 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [draftees](../../career/2014/offseason/draft/draftees.md).
+
+## Jemea Thomas
+
+| Field | Detail |
+|---|---|
+| Position / status | S / Under contract |
+| Original contract | Rookie scale, pick #205 |
+| Signed | May 11, 2014 |
+| Term | 4 / 2017 |
+| Contract value | $2,314,052 |
+| Bonus terms | $94,052; $23,513; 4 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | Signing bonus only; no base salary guaranteed |
+| Schedule basis | Slot reconstruction from the same-slot 2014 contract |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $23,513 | $0 | $443,513 | $514,052 | $0 |
+| 2015 | $510,000 | $23,513 | $0 | $533,513 | $510,000 | $0 |
+| 2016 | $600,000 | $23,513 | $0 | $623,513 | $600,000 | $0 |
+| 2017 | $690,000 | $23,513 | $0 | $713,513 | $690,000 | $0 |
+
+Any future proven-performance escalator requires the branch’s actual qualifying participation; no later real-world escalator or extension is imported.
+
+### Contract notes
+
+Branch record (Entry 108): selected May 10, 2014 at No. 205; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 205 (Luke Bowanko, Jacksonville (real)) in the nflverse/OTC historical contracts file, $2,314,052 total and $94,052 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [draftees](../../career/2014/offseason/draft/draftees.md).
+
+## Malcolm Butler
+
+| Field | Detail |
+|---|---|
+| Position / status | CB / Under contract |
+| Original contract | Rookie scale, pick #241 |
+| Signed | May 11, 2014 |
+| Term | 4 / 2017 |
+| Contract value | $2,269,000 |
+| Bonus terms | $49,000; $12,250; 4 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | Signing bonus only; no base salary guaranteed |
+| Schedule basis | Slot reconstruction from the same-slot 2014 contract |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $12,250 | $0 | $432,250 | $469,000 | $0 |
+| 2015 | $510,000 | $12,250 | $0 | $522,250 | $510,000 | $0 |
+| 2016 | $600,000 | $12,250 | $0 | $612,250 | $600,000 | $0 |
+| 2017 | $690,000 | $12,250 | $0 | $702,250 | $690,000 | $0 |
+
+Any future proven-performance escalator requires the branch’s actual qualifying participation; no later real-world escalator or extension is imported.
+
+### Contract notes
+
+Branch record (Entry 108): selected May 10, 2014 at No. 241; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 241 (Christian Bryant, St. Louis) in the nflverse/OTC historical contracts file, $2,269,000 total and $49,000 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [draftees](../../career/2014/offseason/draft/draftees.md).
+
+## Andrew Norwell
+
+| Field | Detail |
+|---|---|
+| Position / status | OG / Under contract |
+| Original contract | UDFA minimum |
+| Signed | May 10, 2014 |
+| Term | 3 / 2016 |
+| Contract value | $1,545,000 |
+| Bonus terms | $15,000; $5,000; 3 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | Signing bonus only ($15,000); no base salary guaranteed |
+| Schedule basis | Executed branch terms |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $5,000 | $0 | $425,000 | $435,000 | $0 |
+| 2015 | $510,000 | $5,000 | $0 | $515,000 | $510,000 | $0 |
+| 2016 | $600,000 | $5,000 | $0 | $605,000 | $600,000 | $0 |
+
+### Contract notes
+
+Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [udfa signings](../../career/2014/offseason/draft/udfa_signings.md).
+
+## Christian Jones
+
+| Field | Detail |
+|---|---|
+| Position / status | LB / Under contract |
+| Original contract | UDFA minimum |
+| Signed | May 10, 2014 |
+| Term | 3 / 2016 |
+| Contract value | $1,530,000 |
+| Bonus terms | $0; $0; 0 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | $0 |
+| Schedule basis | Executed branch terms |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $0 | $0 | $420,000 | $420,000 | $0 |
+| 2015 | $510,000 | $0 | $0 | $510,000 | $510,000 | $0 |
+| 2016 | $600,000 | $0 | $0 | $600,000 | $600,000 | $0 |
+
+### Contract notes
+
+Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [udfa signings](../../career/2014/offseason/draft/udfa_signings.md).
+
+## Allen Hurns
+
+| Field | Detail |
+|---|---|
+| Position / status | WR / Under contract |
+| Original contract | UDFA minimum |
+| Signed | May 10, 2014 |
+| Term | 3 / 2016 |
+| Contract value | $1,530,000 |
+| Bonus terms | $0; $0; 0 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | $0 |
+| Schedule basis | Executed branch terms |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $0 | $0 | $420,000 | $420,000 | $0 |
+| 2015 | $510,000 | $0 | $0 | $510,000 | $510,000 | $0 |
+| 2016 | $600,000 | $0 | $0 | $600,000 | $600,000 | $0 |
+
+### Contract notes
+
+Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [udfa signings](../../career/2014/offseason/draft/udfa_signings.md).
+
+## Cornelius Lucas
+
+| Field | Detail |
+|---|---|
+| Position / status | OT / Under contract |
+| Original contract | UDFA minimum |
+| Signed | May 10, 2014 |
+| Term | 3 / 2016 |
+| Contract value | $1,545,000 |
+| Bonus terms | $15,000; $5,000; 3 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | Signing bonus only ($15,000); no base salary guaranteed |
+| Schedule basis | Executed branch terms |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $5,000 | $0 | $425,000 | $435,000 | $0 |
+| 2015 | $510,000 | $5,000 | $0 | $515,000 | $510,000 | $0 |
+| 2016 | $600,000 | $5,000 | $0 | $605,000 | $600,000 | $0 |
+
+### Contract notes
+
+Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [udfa signings](../../career/2014/offseason/draft/udfa_signings.md).
+
+## Adrian Phillips
+
+| Field | Detail |
+|---|---|
+| Position / status | S / Under contract |
+| Original contract | UDFA minimum |
+| Signed | May 10, 2014 |
+| Term | 3 / 2016 |
+| Contract value | $1,530,000 |
+| Bonus terms | $0; $0; 0 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | $0 |
+| Schedule basis | Executed branch terms |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $0 | $0 | $420,000 | $420,000 | $0 |
+| 2015 | $510,000 | $0 | $0 | $510,000 | $510,000 | $0 |
+| 2016 | $600,000 | $0 | $0 | $600,000 | $600,000 | $0 |
+
+### Contract notes
+
+Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [udfa signings](../../career/2014/offseason/draft/udfa_signings.md).
+
+## Matt Feiler
+
+| Field | Detail |
+|---|---|
+| Position / status | OG / Under contract |
+| Original contract | UDFA minimum |
+| Signed | May 10, 2014 |
+| Term | 3 / 2016 |
+| Contract value | $1,545,000 |
+| Bonus terms | $15,000; $5,000; 3 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | Signing bonus only ($15,000); no base salary guaranteed |
+| Schedule basis | Executed branch terms |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $5,000 | $0 | $425,000 | $435,000 | $0 |
+| 2015 | $510,000 | $5,000 | $0 | $515,000 | $510,000 | $0 |
+| 2016 | $600,000 | $5,000 | $0 | $605,000 | $600,000 | $0 |
+
+### Contract notes
+
+Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [udfa signings](../../career/2014/offseason/draft/udfa_signings.md).
+
+## Cameron Brate
+
+| Field | Detail |
+|---|---|
+| Position / status | TE / Under contract |
+| Original contract | UDFA minimum |
+| Signed | May 10, 2014 |
+| Term | 3 / 2016 |
+| Contract value | $1,530,000 |
+| Bonus terms | $0; $0; 0 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | $0 |
+| Schedule basis | Executed branch terms |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $0 | $0 | $420,000 | $420,000 | $0 |
+| 2015 | $510,000 | $0 | $0 | $510,000 | $510,000 | $0 |
+| 2016 | $600,000 | $0 | $0 | $600,000 | $600,000 | $0 |
+
+### Contract notes
+
+Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [udfa signings](../../career/2014/offseason/draft/udfa_signings.md).
+
+## Todd Davis
+
+| Field | Detail |
+|---|---|
+| Position / status | LB / Under contract |
+| Original contract | UDFA minimum |
+| Signed | May 10, 2014 |
+| Term | 3 / 2016 |
+| Contract value | $1,530,000 |
+| Bonus terms | $0; $0; 0 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | $0 |
+| Schedule basis | Executed branch terms |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $0 | $0 | $420,000 | $420,000 | $0 |
+| 2015 | $510,000 | $0 | $0 | $510,000 | $510,000 | $0 |
+| 2016 | $600,000 | $0 | $0 | $600,000 | $600,000 | $0 |
+
+### Contract notes
+
+Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [udfa signings](../../career/2014/offseason/draft/udfa_signings.md).
+
+## Tyler Shatley
+
+| Field | Detail |
+|---|---|
+| Position / status | C / Under contract |
+| Original contract | UDFA minimum |
+| Signed | May 10, 2014 |
+| Term | 3 / 2016 |
+| Contract value | $1,545,000 |
+| Bonus terms | $15,000; $5,000; 3 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | Signing bonus only ($15,000); no base salary guaranteed |
+| Schedule basis | Executed branch terms |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $5,000 | $0 | $425,000 | $435,000 | $0 |
+| 2015 | $510,000 | $5,000 | $0 | $515,000 | $510,000 | $0 |
+| 2016 | $600,000 | $5,000 | $0 | $605,000 | $600,000 | $0 |
+
+### Contract notes
+
+Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [udfa signings](../../career/2014/offseason/draft/udfa_signings.md).
+
+## Tyler Larsen
+
+| Field | Detail |
+|---|---|
+| Position / status | C / Under contract |
+| Original contract | UDFA minimum |
+| Signed | May 10, 2014 |
+| Term | 3 / 2016 |
+| Contract value | $1,545,000 |
+| Bonus terms | $15,000; $5,000; 3 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | Signing bonus only ($15,000); no base salary guaranteed |
+| Schedule basis | Executed branch terms |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $5,000 | $0 | $425,000 | $435,000 | $0 |
+| 2015 | $510,000 | $5,000 | $0 | $515,000 | $510,000 | $0 |
+| 2016 | $600,000 | $5,000 | $0 | $605,000 | $600,000 | $0 |
+
+### Contract notes
+
+Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000) with a $15,000 signing bonus under the memo's lineman rule, prorated $5,000 a year. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [udfa signings](../../career/2014/offseason/draft/udfa_signings.md).
+
+## Connor Shaw
+
+| Field | Detail |
+|---|---|
+| Position / status | QB / Under contract |
+| Original contract | UDFA minimum |
+| Signed | May 10, 2014 |
+| Term | 3 / 2016 |
+| Contract value | $1,530,000 |
+| Bonus terms | $0; $0; 0 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | $0 |
+| Schedule basis | Executed branch terms |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $0 | $0 | $420,000 | $420,000 | $0 |
+| 2015 | $510,000 | $0 | $0 | $510,000 | $510,000 | $0 |
+| 2016 | $600,000 | $0 | $0 | $600,000 | $600,000 | $0 |
+
+### Contract notes
+
+Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [udfa signings](../../career/2014/offseason/draft/udfa_signings.md).
+
+## Kasim Edebali
+
+| Field | Detail |
+|---|---|
+| Position / status | EDGE / Under contract |
+| Original contract | UDFA minimum |
+| Signed | May 10, 2014 |
+| Term | 3 / 2016 |
+| Contract value | $1,530,000 |
+| Bonus terms | $0; $0; 0 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | $0 |
+| Schedule basis | Executed branch terms |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $0 | $0 | $420,000 | $420,000 | $0 |
+| 2015 | $510,000 | $0 | $0 | $510,000 | $510,000 | $0 |
+| 2016 | $600,000 | $0 | $0 | $600,000 | $600,000 | $0 |
+
+### Contract notes
+
+Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [udfa signings](../../career/2014/offseason/draft/udfa_signings.md).
+
+## Marcel Jensen
+
+| Field | Detail |
+|---|---|
+| Position / status | TE / Under contract |
+| Original contract | UDFA minimum |
+| Signed | May 10, 2014 |
+| Term | 3 / 2016 |
+| Contract value | $1,530,000 |
+| Bonus terms | $0; $0; 0 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | $0 |
+| Schedule basis | Executed branch terms |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $0 | $0 | $420,000 | $420,000 | $0 |
+| 2015 | $510,000 | $0 | $0 | $510,000 | $510,000 | $0 |
+| 2016 | $600,000 | $0 | $0 | $600,000 | $600,000 | $0 |
+
+### Contract notes
+
+Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [udfa signings](../../career/2014/offseason/draft/udfa_signings.md).
+
+## Gator Hoskins
+
+| Field | Detail |
+|---|---|
+| Position / status | TE / Under contract |
+| Original contract | UDFA minimum |
+| Signed | May 10, 2014 |
+| Term | 3 / 2016 |
+| Contract value | $1,530,000 |
+| Bonus terms | $0; $0; 0 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | $0 |
+| Schedule basis | Executed branch terms |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $0 | $0 | $420,000 | $420,000 | $0 |
+| 2015 | $510,000 | $0 | $0 | $510,000 | $510,000 | $0 |
+| 2016 | $600,000 | $0 | $0 | $600,000 | $600,000 | $0 |
+
+### Contract notes
+
+Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [udfa signings](../../career/2014/offseason/draft/udfa_signings.md).
+
+## Jackson Jeffcoat
+
+| Field | Detail |
+|---|---|
+| Position / status | EDGE / Under contract |
+| Original contract | UDFA minimum |
+| Signed | May 10, 2014 |
+| Term | 3 / 2016 |
+| Contract value | $1,530,000 |
+| Bonus terms | $0; $0; 0 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | $0 |
+| Schedule basis | Executed branch terms |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $0 | $0 | $420,000 | $420,000 | $0 |
+| 2015 | $510,000 | $0 | $0 | $510,000 | $510,000 | $0 |
+| 2016 | $600,000 | $0 | $0 | $600,000 | $600,000 | $0 |
+
+### Contract notes
+
+Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [udfa signings](../../career/2014/offseason/draft/udfa_signings.md).
+
+## Taylor Gabriel
+
+| Field | Detail |
+|---|---|
+| Position / status | WR / Under contract |
+| Original contract | UDFA minimum |
+| Signed | May 10, 2014 |
+| Term | 3 / 2016 |
+| Contract value | $1,530,000 |
+| Bonus terms | $0; $0; 0 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | $0 |
+| Schedule basis | Executed branch terms |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $0 | $0 | $420,000 | $420,000 | $0 |
+| 2015 | $510,000 | $0 | $0 | $510,000 | $510,000 | $0 |
+| 2016 | $600,000 | $0 | $0 | $600,000 | $600,000 | $0 |
+
+### Contract notes
+
+Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [udfa signings](../../career/2014/offseason/draft/udfa_signings.md).
+
+## Casey Kreiter
+
+| Field | Detail |
+|---|---|
+| Position / status | LS / Under contract |
+| Original contract | UDFA minimum |
+| Signed | May 10, 2014 |
+| Term | 3 / 2016 |
+| Contract value | $1,530,000 |
+| Bonus terms | $0; $0; 0 |
+| Remaining unpaid salary guarantee | $0 |
+| Guarantee basis | $0 |
+| Schedule basis | Executed branch terms |
+
+### Annual schedule
+
+| Year | Base salary | Bonus proration | Other cap | Cap charge | Scheduled cash | Guaranteed base |
+|---|---|---|---|---|---|---|
+| 2014 | $420,000 | $0 | $0 | $420,000 | $420,000 | $0 |
+| 2015 | $510,000 | $0 | $0 | $510,000 | $510,000 | $0 |
+| 2016 | $600,000 | $0 | $0 | $600,000 | $600,000 | $0 |
+
+### Contract notes
+
+Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract.
+
+Sources: [contract table](../../career/2014/offseason/contract_table.md), [contract status register](../../career/2014/offseason/contract_status_register.md), [udfa signings](../../career/2014/offseason/draft/udfa_signings.md).

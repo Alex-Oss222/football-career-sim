@@ -1,6 +1,6 @@
 # Jacksonville Jaguars: 2014 draft board
 
-Stone's current recommendations to Caldwell for each of Jacksonville's nine 2014 picks, read from the [February 2 memo and its appended amendments](../stone_to_caldwell_2014_offseason_decisions.md). The original memo remains intact; where this board and an amendment differ, the amendment controls. [Draftees](draftees.md) owns actual selections and contracts. The draft runs May 8 to 10, 2014.
+**Status: EXECUTED, May 8 to 10, 2014.** Stone's recommendations to Caldwell for each of Jacksonville's nine 2014 picks, read from the [February 2 memo and its appended amendments](../stone_to_caldwell_2014_offseason_decisions.md). The original memo remains intact; where this board and an amendment differ, the amendment controls. [Draftees](draftees.md) owns the actual selections and contracts: the first choice was taken at every pick except No. 205, where Gaines (real pick 188) and Cockrell (real pick 109) were both gone, the board named no third choice, and Stone named Jemea Thomas, DB, Georgia Tech. The plan below is preserved as the ex-ante record and is not rewritten.
 
 ## Board by pick
 

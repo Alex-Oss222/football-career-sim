@@ -1,6 +1,6 @@
 # Jacksonville 2014 draft operating record
 
-**Not started.** The [calendar](../../calendar.md) supplies May 8 (Round 1), May 9 (Rounds 2–3) and May 10 (Rounds 4–7). [The current board](player_draft_board.md) has eight targets on eight owned assets. Exact later overall numbers wait for compensatory additions; no target has been selected.
+**Complete (ledger Entry 108).** The draft ran May 8 (Round 1), May 9 (Rounds 2 and 3) and May 10 (Rounds 4 to 7). Jacksonville exercised all nine picks ([draftees](draftees.md)), signed the nine rookie contracts May 11, and signed 17 undrafted rookies on May 10 ([undrafted signings](udfa_signings.md)); the rails pairing is filled ([draft pairing](../league_rails/draft_pairing.md)). The runbook below is retained for the record and for later drafts.
 
 | Need | Owner |
 |---|---|

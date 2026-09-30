@@ -319,3 +319,87 @@ The annual handoff manifest tracks team closeout, interviews, finances, roles/me
 No player development or coaching profile handoff falls in this window: Phase One closes at the May 2 handoff. The private snapshot is advanced only after merge.
 
 **Commit closed - Canonical update - May 1, 2014 - Phase One under way; April 18 decisions; schedule released - canonical through May 1, 2014**
+
+## Entry 108 — May 8 to 11, 2014 — The 2014 draft and undrafted signings
+
+**Recorded:** September 30, 2026. **Simulation clock:** the draft ran May 8 to 10; rookie contracts were signed May 11. The clock advance to May 11 is closed in Entry 109.
+**Checkpoint:** `Canonical update - May 11, 2014 - 2014 draft, undrafted signings and rookie contracts`
+**Preceding global package checkpoint:** `Canonical update - May 1, 2014 - Phase One under way; April 18 decisions; schedule released`
+
+**Method.** Jacksonville's nine picks (13, 26, 38, 90, 129, 153, 168, 205 and 241) were exercised in the branch order under [the rails method](offseason/league_rails/method.md#6-draft): other clubs' selections are their real selections, and a target was available at branch pick N only if his real selection was N or later or he went undrafted (checked against the cached real 2014 draft). Each selection passed the board's dated eligibility and scouting checks before it was made ([draftees](offseason/draft/draftees.md)). No trade was made or authorized. Event owners: [draftees](offseason/draft/draftees.md), [undrafted signings](offseason/draft/udfa_signings.md) and [draft pairing](offseason/league_rails/draft_pairing.md).
+
+**The nine selections.**
+- **May 8, No. 13 (Washington's first): Aaron Donald, DT, Pittsburgh.** Real pick 13; available. Stone's first choice; Kyle Fuller was not needed.
+- **May 8, No. 26 (own first): Joel Bitonio, OT/G, Nevada.** Real pick 35; available. First choice; Van Noy not needed. Tackle or guard first is Stone's decision.
+- **May 9, No. 38 (Arizona's second): Davante Adams, WR, Fresno State.** Real pick 53; available. First choice; the planned third receiver by draft.
+- **May 9, No. 90 (own third): Trai Turner, G, LSU.** Real pick 92; available. First choice.
+- **May 10, No. 129 (own fourth): Telvin Smith, LB, Florida State.** Real pick 144, by the real Jaguars; available. First choice.
+- **May 10, No. 153 (Detroit's fifth): Corey Linsley, C, Ohio State.** Real pick 161; available. First choice; Paradis, Stork and Swanson not needed.
+- **May 10, No. 168 (own fifth): Charles Leno Jr., OT, Boise State.** Real pick 246; available. First choice.
+- **May 10, No. 205 (own sixth): Jemea Thomas, DB, Georgia Tech.** E. J. Gaines (real pick 188) and Ross Cockrell (real pick 109) were both gone before 205, and the board named no third choice, so the selection stopped for Stone. Stone named Thomas (real pick 206, New England; available), and Caldwell selected him on May 10 with the same eligibility and scouting check as the others. His evidence is the thinnest of the nine and is labeled as such.
+- **May 10, No. 241 (own seventh): Malcolm Butler, CB, West Alabama.** Undrafted in reality; available. First choice under the Butler rule.
+
+**Rails pairing** ([draft pairing](offseason/league_rails/draft_pairing.md)). Jacksonville's k-th selection pairs with the real Jaguars' k-th: Blake Bortles goes to St. Louis (Donald's real club), Marqise Lee to Cleveland (Bitonio), Allen Robinson to Green Bay (Adams), Brandon Linder to Carolina (Turner), Chris Smith to Chicago (Leno), Luke Bowanko to New England (Thomas) and Storm Johnson to New England (Butler's real undrafted club). Two pairings resolve literally under Jacksonville control: Aaron Colvin (the real Jaguars' fifth) is unplaced, because the club that really drafted Telvin Smith is Jacksonville itself; and the real Jaguars' sixth selection is Telvin Smith, already Jacksonville's, so Green Bay receives no player for Linsley. No compensating transaction is invented.
+
+**Rookie contracts, signed May 11.** All nine signed before rookie minicamp, as the seven 2013 draftees did. Each is a four-year contract priced by slot reconstruction from the same-slot 2014 contract in the nflverse copy of the Over The Cap contracts file, under the 2012 to 2014 rookie freeze: the slot contract's total and guarantee, minimum-scale bases ($420,000, $510,000, $600,000, $690,000) and a signing bonus for the remainder, prorated over four years. The two first-round contracts carry an unexercised 2018 option. Totals: $38,006,130 over four years, $17,981,130 in signing bonuses, $8,275,282 gross 2014 cap. Individual figures: Donald $10,136,500 (fully guaranteed; 2014 cap $2,399,125); Bitonio $7,799,102 ($6,315,587 guaranteed; $1,814,775); Adams $5,254,932 ($3,220,629; $1,178,733); Turner $2,808,520 ($543,520; $555,880); Telvin Smith $2,620,544 ($400,544; $520,136); Linsley $2,412,000 ($192,000; $468,000); Leno $2,391,480 ($171,480; $462,870); Thomas $2,314,052 ($94,052; $443,513); Butler $2,269,000 ($49,000; $432,250). These are branch contracts, not the players' real deals.
+
+**Undrafted signings, May 10** ([record](offseason/draft/udfa_signings.md)). Caldwell called the 24 names on the complete undrafted board in order once Round 7 closed; every one of them went undrafted in reality. Each call was a separate judgment negotiation against the player's real undrafted club and, where the contracts file recovers them, his real terms; Jacksonville's offer was a three-year minimum contract ($1,530,000) with no bonus, plus a $15,000 signing bonus for offensive linemen under the memo's lineman rule.
+- **Signed (17):** Andrew Norwell (G, $15,000 bonus), Christian Jones (LB), Allen Hurns (WR), Cornelius Lucas (OT, $15,000), Adrian Phillips (S), Matt Feiler (G, $15,000), Cameron Brate (TE), Todd Davis (LB), Tyler Shatley (C, $15,000), Tyler Larsen (C, $15,000), Connor Shaw (QB), Kasim Edebali (DE), Marcel Jensen (TE), Gator Hoskins (TE), Jackson Jeffcoat (DE), Taylor Gabriel (WR) and Casey Kreiter (LS). Five of the board's six linemen signed, meeting the memo's minimum. Hurns, Shatley and Jensen had no competing club offer because their real 2014 club was the real Jaguars. For eight players the real terms were not recovered, and the comparison was on role and depth-chart fit only.
+- **Declined (6):** Shaquil Barrett (Denver, $10,000 bonus), Denico Autry (Oakland, $7,000), Albert Wilson (Kansas City, $10,000), Trey Burton (Philadelphia, $20,000) and Willie Snead (Cleveland, $5,000) went to their real clubs on their real terms; Stephen Morris declined a fifth-quarterback place and is an unplaced free agent because his real club was the real Jaguars.
+- **Held (1):** James Hurst was not called; the board requires a medical clearance of his December 28, 2013 leg injury first, and none is on record.
+- **Terms:** $7,165,000 gross 2014 cap for the 17 ($7,140,000 of minimum bases and $25,000 of bonus proration); no base salary guaranteed.
+
+**Effects.**
+- **Roster:** 79 controlled players of the 90 limit: 75 under signed contracts (the 49 carried signed players, nine draftees and 17 undrafted rookies) and the four unsigned tenders. Rookies are added to the working depth chart, not placed; no role is set.
+- **2014 cap (working):** player contracts including tenders $127,183,362, plus $10,262,324 dead money. The 28 lowest base salaries ($12,060,000) fall outside the offseason Top 51, so the counted total is $125,385,686, or $125,889,686 with the $504,000 workout charge: a $7,110,314 working difference below the $133,000,000 cap before carryover and reserves, or about $12,440,314 to $13,110,314 with the 2013 rollover estimate. The net Top-51 effect of the 26 rookie contracts is $4,220,282. Not certified room.
+- **Future commitments:** 2015 $123,275,736; 2016 $84,131,574; 2017 $48,550,284; 2018 $18,900,000.
+- **Draft capital:** all nine 2014 picks exercised; none remain. 2015 picks held: Jacksonville's own second, Miami's third, Houston's fourth and Arizona's fourth. Owed away: 2015 first and fourth and 2016 fifth to Arizona, 2017 seventh to Miami.
+- **Rackley-or-Brewster trade:** active. Jacksonville drafted four offensive linemen, so Caldwell may shop one of Rackley or Brewster for a 2015 seventh; which player is an open item for Stone and Caldwell, no buyer is named and nothing is booked ([trade targets](trades/trade_targets.md)).
+- **Medical:** no rookie has a communicated restriction. Cornelius Lucas was measured at the combine on crutches after a pre-combine foot stress fracture; a current club physical precedes any field work. Every rookie's physical is checked before minicamp.
+- **Rails:** the pairing moves and the undrafted departures are recorded on the affected club pages; the other 247 real selections are applied when each club's Week 1 rails are built.
+
+**Open.** Alan Ball's revisit after the draft (user decision). The Rackley-or-Brewster choice. The WR1, WR3, left guard and Edge 1 roles, and every rookie's place, which Stone decides from the work. Hurst's medical hold.
+
+**Atomic closure.** The draftees, undrafted signings and pairing records, the draft board and runbook status, the pick ownership register and generated draft order, the roster, working depth chart and its JSON copy, the contract table, contract status register, cap worksheet, financial inputs and generated cap views, player cards and index, the birth-date registry and player ages, the progression roster, the trade targets, the affected rails club pages and Documents 4 and 5 agree. The private snapshot is advanced only after merge.
+
+**Commit closed - Canonical update - May 11, 2014 - 2014 draft, undrafted signings and rookie contracts - canonical through May 11, 2014**
+
+## Entry 109 — May 2 to 11, 2014 — Phase One handoff; unsigned tenders; Phase Two under way; clock to May 11
+
+**Recorded:** September 30, 2026. **Simulation clock:** advances from May 1 to Sunday, May 11, 2014.
+**Checkpoint:** `Canonical update - May 11, 2014 - 2014 draft and undrafted signings; Phase Two under way`
+**Preceding global package checkpoint:** `Canonical update - May 11, 2014 - 2014 draft, undrafted signings and rookie contracts`
+
+**May 1 to 2: the unsigned tenders.** The user's instruction of May 1 ([memo amendment](offseason/stone_to_caldwell_2014_offseason_decisions.md#september-30-2026-amendment-unsigned-tenders-and-the-cross-training-list)) settles the participation question: Bradfield, Pasztor, Clemons and Brown are not program participants and not social-event participants until they sign. Bradfield gets no tackle or sixth-lineman work and Pasztor no guard or emergency-center work; Monroe and Lane Johnson take the tackle work, and Brewster, Rackley, Asper, Monroe and Johnson are the signed linemen Stone coaches. Clemons and Brown get no receiver install, and no "fell behind" language attaches to any of the four. The cross-training list is revised to eight signed players: Lane Johnson, Asper, Thielen, Kelce, Poyer, Moore, Prosinski and Trawick; Bradfield's and Pasztor's lanes are closed. No tender was signed in this window; all four remain tendered and unsigned.
+
+**May 2: Phase One handoff; RFA offer-sheet deadline.** The staff handoff was written per the plan ([output](offseason/offseason_program/output.md)): the current profile, the individual written notes and the open staff decisions. The RFA offer-sheet deadline passed with no offer sheet for Bradfield; none is on record. The May 7 matching deadline therefore had nothing to match.
+
+**May 5 to 9: Phase Two, first week.** Program days May 5 to 8, with the Friday staff review May 9 ([plan](offseason/offseason_program/plan.md#phase-two-technique-and-job-connection)). Individual and group instruction and "perfect play" work at the permitted speed, with no offense against defense and no live contact, under the [verified phase rules](../../library/2014_offseason_phase_rules_verification.md). Participation was voluntary and the same as Phase One: the 49 signed veterans within their medical instructions, the four unsigned tenders absent by the May 1 instruction, no attendance evidence. The 26 rookies were not yet under contract during the week and had no program work. Tice coordinated the veteran program on May 8 and 9 while Stone and Caldwell were in the draft room; the draft rounds ran in the evening on May 8 and 9 and at midday on May 10, so no player session lost its coach. Observations are recorded only where the unopposed work supports them: the Boot Flood answer held in movement; the protection point and echo were delivered in movement by Cousins, Brewster and the backs; Stanford's relay was complete unopposed; the punt families moved to the field with the specialists; the eight cross-training lanes opened in movement. No unit badge was assessed and no role changed.
+
+**Social events.** The May 6 team barbecue and May 8 family cookout were held as scheduled, with no attendance recorded, no football content and nothing becoming personnel evidence.
+
+**Effects.**
+- **Roster:** 79 controlled players, per Entry 108. No transaction in this entry.
+- **Availability:** unchanged. Rackley is limited with no projected absence; every other player has no communicated restriction.
+- **Roles:** unchanged. The cross-training list is a method, not a role decision.
+- **Phase status:** the offseason-program output is IN_PROGRESS through May 9 (Phase One complete; Phase Two under way, resuming May 12); the other four phase outputs are NOT_STARTED.
+- **Decision package:** the cross-training row records the May 1 revision; the unsigned-tender item is settled.
+
+**Open.**
+- Alan Ball after the draft (user decision).
+- The Rackley-or-Brewster choice (which player Caldwell shops), with Stone.
+- The WR1, WR3, left guard and Edge 1 roles (Stone's decisions).
+- The four unsigned tenders (Caldwell's office); Hurst's medical hold.
+- Film packet approval and delivery; the January 31 receipts remain unverified.
+- The rails from March 11 evening to May 11 remain unswept beyond the targets' own moves, the branch trades, Allen's retirement and the Entry 108 draft and undrafted moves.
+
+**Next.**
+- May 12 to 15: rookie onboarding preparation (welcome packages, complete Iteration I books, Stone and position-coach calls) and Phase Two program days.
+- May 13: team dinner. May 15: family barbecue.
+- May 16 and 17: rookie minicamp. May 17: rookie and family welcome barbecue.
+- May 19 to 23: Phase Two continues; May 20 team cookout; May 22 family dinner; May 23 Phase Two handoff.
+- May 27: OTAs open.
+
+**Atomic closure.** The phase output and evidence summary, the decision package, the memo amendment, the calendar, the 2014 and offseason READMEs, readiness, the operating baseline, the working depth chart, player ages and the progression roster, and Documents 4 and 5 agree with Entry 108's records. The private snapshot is advanced only after merge.
+
+**Commit closed - Canonical update - May 11, 2014 - 2014 draft and undrafted signings; Phase Two under way - canonical through May 11, 2014**

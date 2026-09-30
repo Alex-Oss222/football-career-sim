@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "as_of": "2014-04-07",
+  "as_of": "2014-05-11",
   "authority": "career/2013/ledger.md#entry-81-draft-coin-flip-and-league-pick-ownership-reconciled",
   "default_ownership": "Retained original allocation after the 224-asset audit in ownership_audit.md; explicit transfers and conditional claims override it. No generic outside-club provisional holdings remain for 2014.",
   "compensatory": {
@@ -434,5 +434,103 @@
       "max_picks": 1
     }
   ],
-  "audit_scope": "2014 ordinary selections at February 2. The existing JAX 2015 second remains recorded, but other 2015 assets are not audited or certified by this register."
+  "audit_scope": "2014 ordinary selections at February 2. The existing JAX 2015 second remains recorded, but other 2015 assets are not audited or certified by this register.",
+  "selections_2014": {
+    "status": "complete",
+    "basis": "career/2014/ledger.md#entry-108-may-8-to-11-2014-the-2014-draft-and-undrafted-signings",
+    "source": "career/2014/offseason/draft/draftees.md",
+    "note": "Jacksonville selections only; other clubs selected their real players under the rails method. Overall numbers are the branch order.",
+    "picks": [
+      {
+        "overall": 13,
+        "round": 1,
+        "original_club": "Washington Redskins",
+        "date": "2014-05-08",
+        "player": "Aaron Donald",
+        "position": "DT",
+        "school": "Pittsburgh",
+        "status": "exercised"
+      },
+      {
+        "overall": 26,
+        "round": 1,
+        "original_club": "Jacksonville Jaguars",
+        "date": "2014-05-08",
+        "player": "Joel Bitonio",
+        "position": "OT",
+        "school": "Nevada",
+        "status": "exercised"
+      },
+      {
+        "overall": 38,
+        "round": 2,
+        "original_club": "Arizona Cardinals",
+        "date": "2014-05-09",
+        "player": "Davante Adams",
+        "position": "WR",
+        "school": "Fresno State",
+        "status": "exercised"
+      },
+      {
+        "overall": 90,
+        "round": 3,
+        "original_club": "Jacksonville Jaguars",
+        "date": "2014-05-09",
+        "player": "Trai Turner",
+        "position": "G",
+        "school": "LSU",
+        "status": "exercised"
+      },
+      {
+        "overall": 129,
+        "round": 4,
+        "original_club": "Jacksonville Jaguars",
+        "date": "2014-05-10",
+        "player": "Telvin Smith",
+        "position": "LB",
+        "school": "Florida State",
+        "status": "exercised"
+      },
+      {
+        "overall": 153,
+        "round": 5,
+        "original_club": "Detroit Lions",
+        "date": "2014-05-10",
+        "player": "Corey Linsley",
+        "position": "C",
+        "school": "Ohio State",
+        "status": "exercised"
+      },
+      {
+        "overall": 168,
+        "round": 5,
+        "original_club": "Jacksonville Jaguars",
+        "date": "2014-05-10",
+        "player": "Charles Leno Jr.",
+        "position": "OT",
+        "school": "Boise State",
+        "status": "exercised"
+      },
+      {
+        "overall": 205,
+        "round": 6,
+        "original_club": "Jacksonville Jaguars",
+        "date": "2014-05-10",
+        "player": "Jemea Thomas",
+        "position": "DB",
+        "school": "Georgia Tech",
+        "status": "exercised"
+      },
+      {
+        "overall": 241,
+        "round": 7,
+        "original_club": "Jacksonville Jaguars",
+        "date": "2014-05-10",
+        "player": "Malcolm Butler",
+        "position": "CB",
+        "school": "West Alabama",
+        "status": "exercised"
+      }
+    ]
+  }
 }

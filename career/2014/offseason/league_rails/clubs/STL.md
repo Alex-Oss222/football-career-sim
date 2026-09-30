@@ -73,6 +73,9 @@
 ## Changes on the rails (fill by real date)
 
 | Real date | Move | Player | Detail | Source | Gate passed in branch? |
+| May 8, 2014 | Draft (real; not applied) | Aaron Donald, DT | Real pick 13; selected by Jacksonville at branch pick 13 instead. Under the pairing, Blake Bortles, QB (the real Jaguars' first selection, real pick 3) joins St. Louis and takes Bortles's real Week 1 slot when the chart is built | Cached nflverse 2014 draft file (draft_picks.csv) and the nflverse copy of the Over The Cap historical contracts file; [pairing record](../draft_pairing.md); [undrafted signings](../../draft/udfa_signings.md). Real selection and club Confirmed from the draft file; undrafted clubs from the contracts file | Yes: applied May 8, 2014 by Entry 108 |
 |---|---|---|---|---|---|
 
 **Coverage note (Entry 94, March 11, 2014):** Entry 93 closed the March 1 to 3 re-signing gap; this club was individually swept in that search (the clubs not individually swept were BAL, CAR, CLE, GB, HOU, MIA, NE, NO, NYG, PHI, TB and WAS). The March 4 to 11 NFC sweep never searched this club before the search budget ran out; its second pass was separate searches that could read only result summaries. Page fetches were blocked, so evidence comes from search summaries and dated URLs; no result is a verified negative, RFA tenders were not systematically swept, and the time of day of March 11 moves is not established unless a row says so.
+
+**Coverage note (Entry 108, May 11, 2014):** only the draft pairing and undrafted moves involving Jacksonville's selections and signings are recorded here; this club's other real 2014 draft selections and undrafted signings are applied when its Week 1 rails are built. The rails from March 11 evening to May 11 are otherwise not swept for this club.

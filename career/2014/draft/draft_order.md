@@ -1,6 +1,6 @@
 # 2014 NFL Draft: all seven rounds (branch)
 
-**As of:** March 24, 2014; ledger Entry 100 (compensatory awards announced). **Draft:** May 8–10, 2014.
+**As of:** May 11, 2014; ledger Entry 108 (Jacksonville's nine selections recorded). **Draft:** May 8–10, 2014.
 **Generated** by `python scripts/render_draft_order.py` from closed branch receipts and [pick_ownership.json](pick_ownership.json). Edit the underlying dated records, then regenerate; do not edit these tables by hand.
 **Coverage:** all **256 selections**: 224 ordinary picks, with original club and recorded owner shown separately, and the 32 branch compensatory picks announced March 24. Overall numbers are exact.
 **Rules and sources:** [verification](../../../library/2014_draft_order_verification.md), [league rules §4](../../../library/2014_league_calendar_and_financial_rules.md#4-2014-draft-order-rules-applied-to-the-branchs-2013-season). Clubs tied on winning percentage rotate within their elimination group: first goes to last, the others move up. No real 2014 order or selection is imported.
@@ -25,7 +25,21 @@
 | 6 | Jacksonville Jaguars | 26 | 205 | **Jacksonville Jaguars** |
 | 7 | Jacksonville Jaguars | 26 | 241 | **Jacksonville Jaguars** |
 
-Jacksonville currently owns **9 ordinary 2014 picks**: **13**; **26**; **38**; **90**; **129**; **153**; **168**; **205**; **241**. Jacksonville received **0 compensatory picks**; see [Compensatory selections](#compensatory-selections). No prospect is selected by this inventory.
+Jacksonville owned **9 ordinary 2014 picks**: **13**; **26**; **38**; **90**; **129**; **153**; **168**; **205**; **241**. Jacksonville received **0 compensatory picks**; see [Compensatory selections](#compensatory-selections).
+
+**Selections (complete):** recorded in [draftees.md](../../../career/2014/offseason/draft/draftees.md); this table repeats the register only.
+
+| Overall | Round | Original club | Date | Selection | Status |
+|---:|---:|---|---|---|---|
+| 13 | 1 | Washington Redskins | 2014-05-08 | Aaron Donald, DT, Pittsburgh | exercised |
+| 26 | 1 | Jacksonville Jaguars | 2014-05-08 | Joel Bitonio, OT, Nevada | exercised |
+| 38 | 2 | Arizona Cardinals | 2014-05-09 | Davante Adams, WR, Fresno State | exercised |
+| 90 | 3 | Jacksonville Jaguars | 2014-05-09 | Trai Turner, G, LSU | exercised |
+| 129 | 4 | Jacksonville Jaguars | 2014-05-10 | Telvin Smith, LB, Florida State | exercised |
+| 153 | 5 | Detroit Lions | 2014-05-10 | Corey Linsley, C, Ohio State | exercised |
+| 168 | 5 | Jacksonville Jaguars | 2014-05-10 | Charles Leno Jr., OT, Boise State | exercised |
+| 205 | 6 | Jacksonville Jaguars | 2014-05-10 | Jemea Thomas, DB, Georgia Tech | exercised |
+| 241 | 7 | Jacksonville Jaguars | 2014-05-10 | Malcolm Butler, CB, West Alabama | exercised |
 
 | Future pick transferred | Current owner | Overall pick | Authority |
 |---|---|---|---|
