@@ -58,15 +58,24 @@ def play(home, away, n, tag, venue="home", **kw):
 
 class ConstantsTests(unittest.TestCase):
     def test_constants_match_the_committed_calibration(self):
-        fits = strength.calibration_file()["study_2012"]["primary_week1_depth_starters"]["fits"]
-        self.assertEqual(strength.OFFENSE_SLOPE, fits["offense_td"]["shrunk_slope"])
-        self.assertEqual(strength.DEFENSE_SLOPE, fits["defense_td"]["shrunk_slope"])
-        self.assertEqual(strength.OFFENSE_CENTRE, fits["offense_td"]["composite_mean"])
-        self.assertEqual(strength.DEFENSE_CENTRE, fits["defense_td"]["composite_mean"])
-        pre = strength.calibration_file()["preregistered"]
+        # Second study: the combined (honours + production) composite is the
+        # preregistered primary; the age shrink was fitted and not adopted.
+        study = strength.calibration_file()["study_2012"]
+        self.assertEqual(study["primary_variant"], "combined_max")
+        self.assertFalse(study["variants"]["age_shrink_decision"]["adopted"])
+        fits = study["variants"]["combined_max"]["fits"]
+        self.assertEqual(strength.OFFENSE_SLOPE, fits["offense"]["shrunk_slope"])
+        self.assertEqual(strength.DEFENSE_SLOPE, fits["defense"]["shrunk_slope"])
+        self.assertEqual(strength.OFFENSE_CENTRE, fits["offense"]["composite_mean"])
+        self.assertEqual(strength.DEFENSE_CENTRE, fits["defense"]["composite_mean"])
+        pre = strength.first_pass_calibration_file()["preregistered"]
         self.assertEqual(strength.EVIDENCE_WEIGHT, pre["evidence_weight"])
         self.assertEqual(strength.QB_WEIGHT, pre["position_weights"]["QB"])
+        self.assertEqual(strength.calibration_file()["preregistered"]["position_weights"]["QB"], 3)
         self.assertEqual((strength.HOME_EDGE, strength.EDGE_CLAMP), (0.023, 0.12))
+        # The production tier values are the preregistered ones.
+        self.assertEqual(strength.PRODUCTION_TIER_VALUE,
+                         {"Elite": 2, "Plus": 1, "Average": 0, "Below-Average": -1, "Replacement-Level": -2})
 
     def test_window(self):
         self.assertEqual(strength.honour_seasons(2014), (2011, 2012))
@@ -131,9 +140,12 @@ class CoverageTests(unittest.TestCase):
         for team, c in report["clubs"].items():
             self.assertEqual(len(c["with_evidence"]) + len(c["fallbacks"]), c["roster_players"], team)
             self.assertTrue(all(f["reason"] for f in c["fallbacks"]))
-        # The calibration preview (roster level, 2011-2012 honours).
-        self.assertEqual(report["summary"]["with_evidence"], 135)
-        self.assertEqual(report["summary"]["fallbacks"], 1869)
+        # Roster level (identity, not a depth chart), 2011-2012 honours and
+        # 2011-2012 production with the discounted 2010 fallback.
+        self.assertEqual(report["summary"]["with_honours"], 135)
+        self.assertEqual(report["summary"]["with_evidence"], 948)
+        self.assertEqual(report["summary"]["fallbacks"], 1056)
+        self.assertEqual(report["summary"]["with_evidence"] + report["summary"]["fallbacks"], 2004)
 
     def test_jacksonville_by_the_same_rule(self):
         # Jacksonville's roster ids are names; they join by name and club.
@@ -144,6 +156,12 @@ class CoverageTests(unittest.TestCase):
         self.assertEqual(rec["players"]["Jason Babin"]["offdef"]["tier"], "Plus")
         self.assertEqual(cov["fallbacks"], [{"player_id": "Nobody In The Database",
                                              "reason": "identity_unresolved"}])
+        # Production rides beside the honour by the same file and rule:
+        # Jones-Drew's 2011 (Average) and 2012 (Below-Average) seasons give
+        # the window's best tier, Average, so the honour carries his value.
+        prod = rec["players"]["Maurice Jones-Drew"]["production"]
+        self.assertEqual((prod["tier"], prod["season"], prod["discounted"]), ("Average", 2011, False))
+        self.assertEqual(strength.slot_value(rec["players"]["Maurice Jones-Drew"], "RB", "offense"), (2.0, 2.0, 0.0))
 
 
 class BuilderHookTests(unittest.TestCase):
@@ -184,6 +202,160 @@ class BuilderHookTests(unittest.TestCase):
         package = self.build(2013)
         self.assertNotIn("strength", package["games"][0]["home_input"])
         self.assertNotIn("strength_coverage", package)
+
+
+class ProductionRuleTests(unittest.TestCase):
+    """The production stream's window, fallback, date gate and side rule."""
+    META = {"2010": {"public_date": "2011-01-02", "admissible_pre_divergence": True},
+            "2011": {"public_date": "2012-01-01", "admissible_pre_divergence": True},
+            "2012": {"public_date": "2012-12-30", "admissible_pre_divergence": True}}
+
+    def season(self, tier, group="WR", verification="Confirmed two-pass"):
+        return {"tier": tier, "group": group, "verification": verification}
+
+    def test_window_best_tier_and_fallback_discount(self):
+        rows = {"2011": self.season("Below-Average"), "2012": self.season("Plus")}
+        part, rejected = strength.production_evidence("x", 2014, "2014-09-07", rows, self.META)
+        self.assertEqual((part["tier"], part["value"], part["season"], part["discounted"]), ("Plus", 1.0, 2012, False))
+        self.assertEqual(rejected, [])
+        # 2010 alone: one tier down.
+        part, _ = strength.production_evidence("x", 2014, "2014-09-07", {"2010": self.season("Elite")}, self.META)
+        self.assertEqual((part["tier"], part["undiscounted_tier"], part["discounted"], part["value"]),
+                         ("Plus", "Elite", True, 1.0))
+        part, _ = strength.production_evidence("x", 2014, "2014-09-07",
+                                               {"2010": self.season("Replacement-Level")}, self.META)
+        self.assertEqual(part["tier"], "Replacement-Level")
+        # 2010 is ignored when a window season qualifies, even a worse one.
+        part, _ = strength.production_evidence("x", 2014, "2014-09-07",
+                                               {"2010": self.season("Elite"), "2011": self.season("Below-Average")}, self.META)
+        self.assertEqual((part["tier"], part["value"]), ("Below-Average", -1.0))
+        # An unverified season carries half weight; a job-evidence row no tier.
+        part, _ = strength.production_evidence("x", 2014, "2014-09-07",
+                                               {"2012": self.season("Elite", verification="Unverified")}, self.META)
+        self.assertEqual(part["value"], 1.0)
+        part, _ = strength.production_evidence("x", 2014, "2014-09-07", {"2012": {"tier": None, "group": "OL"}}, self.META)
+        self.assertIsNone(part)
+
+    def test_date_gate(self):
+        rows = {"2012": self.season("Elite")}
+        part, rejected = strength.production_evidence("x", 2014, "2012-12-30", rows, self.META)
+        self.assertIsNone(part)
+        self.assertEqual(rejected[0]["reason"], "future_dated")
+        meta = {"2012": {"public_date": "2013-02-01", "admissible_pre_divergence": False}}
+        part, rejected = strength.production_evidence("x", 2014, "2014-09-07", rows, meta)
+        self.assertIsNone(part)
+        self.assertEqual(rejected[0]["reason"], "post_divergence")
+        # The committed file: every season's public date precedes the divergence.
+        for year, meta in strength.production_file()["seasons"].items():
+            self.assertLess(meta["public_date"], strength.DIVERGENCE, year)
+            self.assertTrue(meta["admissible_pre_divergence"])
+
+    def test_side_rule_and_max(self):
+        qb = {"offdef": None, "production": {"tier": "Elite", "value": 2.0, "group": "QB", "unit": "offense"}}
+        self.assertEqual(strength.slot_value(qb, "QB", "offense"), (2.0, 0.0, 2.0))
+        self.assertEqual(strength.slot_value(qb, "WR", "offense"), (0.0, 0.0, 0.0))
+        self.assertEqual(strength.slot_value(qb, "DL", "defense"), (0.0, 0.0, 0.0))
+        wr = {"offdef": {"unit": "offense", "honour_group": "WR", "value": 1.0, "tier": "Plus", "evidence_weight": 1.0},
+              "production": {"tier": "Replacement-Level", "value": -2.0, "group": "WR", "unit": "offense"}}
+        # An honour never goes below 0 and the max keeps it above bad production.
+        self.assertEqual(strength.slot_value(wr, "WR", "offense"), (1.0, 1.0, -2.0))
+        self.assertEqual(strength.slot_value(wr, "QB", "offense"), (0.0, 0.0, 0.0))
+        bad = {"offdef": None, "production": {"tier": "Below-Average", "value": -1.0, "group": "DL", "unit": "defense"}}
+        self.assertEqual(strength.slot_value(bad, "DL", "defense"), (-1.0, 0.0, -1.0))
+        for value, tier in ((2, "Elite"), (1.0, "Plus"), (0.5, "Average"), (0, "Average"), (-0.5, "Average"),
+                            (-1, "Below-Average"), (-2, "Replacement-Level")):
+            self.assertEqual(strength.tier_for_value(value), tier)
+
+    def test_committed_file_tier_cut_points(self):
+        # Fixed percentile cut-points: about 10/20/40/20/10 per group and season.
+        data = strength.production_file()
+        pre = data["preregistered"]["tiers"]
+        self.assertEqual(pre["Elite"], "share_above < 0.10")
+        for season, block in data["seasons"].items():
+            for grp, counts in block["counts"].items():
+                n = sum(counts.get(t, 0) for t in strength.TIER_STEP)
+                self.assertGreater(n, 0, (season, grp))
+                for tier, share in (("Elite", 0.10), ("Plus", 0.20), ("Average", 0.40),
+                                    ("Below-Average", 0.20), ("Replacement-Level", 0.10)):
+                    self.assertAlmostEqual(counts.get(tier, 0) / n, share, delta=0.05 + 1.0 / n, msg=(season, grp, tier))  # ties at the bottom pool upward
+
+    def test_composite_with_negative_production(self):
+        roster = game_day_roster("A")
+        players = {"A-QB1": {"offdef": None, "production": {"tier": "Below-Average", "value": -1.0, "group": "QB",
+                                                             "unit": "offense"}, "attribution_tier": "Below-Average"},
+                   "A-WR1": honour("offense", "WR", "Plus"),
+                   "A-DE1": {"offdef": None, "production": {"tier": "Replacement-Level", "value": -2.0, "group": "DL",
+                                                             "unit": "defense"}, "attribution_tier": "Replacement-Level"}}
+        team = club("A", players)
+        passer = next(p for p in roster if p.player_id == "A-QB1")
+        comp, rows = strength.composite(team.strength, strength.offense_starters(roster, passer), "offense")
+        self.assertEqual(comp, -3.0 + 1.0)
+        self.assertEqual({r["player_id"]: r["contribution"] for r in rows}, {"A-QB1": -3.0, "A-WR1": 1.0})
+        comp, _ = strength.composite(team.strength, strength.defense_starters(roster), "defense")
+        self.assertEqual(comp, -2.0)
+
+
+class AgeShrinkTests(unittest.TestCase):
+    """The age shrink on stale honours was preregistered, fitted and not
+    adopted; the kernel therefore reads no birth date."""
+
+    def test_not_adopted_and_not_read(self):
+        decision = strength.calibration_file()["study_2012"]["variants"]["age_shrink_decision"]
+        self.assertFalse(decision["adopted"])
+        self.assertLess(decision["loo_skill_with"]["offense"], decision["loo_skill_without"]["offense"])
+        self.assertTrue(decision["players_shrunk"])
+        source = Path(strength.__file__).read_text(encoding="utf-8")
+        self.assertNotIn("birth_date", source)
+        self.assertNotIn("player_bios", source)
+
+
+class AttributionTiltTests(unittest.TestCase):
+    """Register item 19: the tilt moves credit only. With the same seeds and
+    inputs, scores, possessions, kickoffs and injuries are identical with the
+    tilt on and off; only who received a target, carry or sack credit moves."""
+    N = 40
+
+    def test_tilt_leaves_scores_possessions_and_injuries_unchanged(self):
+        from unittest import mock
+        from runtime import usage
+        roster = game_day_roster("A")
+        players = {"A-WR1": {**honour("offense", "WR"), "attribution_tier": "Elite"},
+                   "A-WR3": {"offdef": None, "production": {"tier": "Replacement-Level", "value": -2.0, "group": "WR",
+                                                             "unit": "offense"}, "attribution_tier": "Replacement-Level"},
+                   "A-RB1": {**honour("offense", "RB"), "attribution_tier": "Elite"},
+                   "B-DE1": {**honour("defense", "DE"), "attribution_tier": "Elite"}}
+        a = club("A", {k: v for k, v in players.items() if k.startswith("A")})
+        b = club("B", {k: v for k, v in players.items() if k.startswith("B")})
+        self.assertTrue(usage.tilt_map(a.strength, roster, "target"))
+        with_tilt = play(a, b, self.N, "tilt-on")
+        with mock.patch.object(usage, "tilt_map", return_value={}):
+            without = play(a, b, self.N, "tilt-on")
+        keys = ("final_score", "possessions", "kickoffs", "injuries", "opening_receiver", "substitutions")
+        for on, off in zip(with_tilt, without):
+            for key in keys:
+                self.assertEqual(on[key], off[key], key)
+            for tid in ("A", "B"):
+                team_on = {k: v for k, v in on["team_stats"][tid].items() if k != "players"}
+                team_off = {k: v for k, v in off["team_stats"][tid].items() if k != "players"}
+                self.assertEqual(team_on, team_off)
+        # The tilt did move credit: WR1's target share rises, WR3's falls.
+        def share(results, pid, field="targets"):
+            lines = [r["team_stats"]["A"]["players"] for r in results]
+            return sum(l[pid][field] for l in lines) / max(1, sum(x[field] for l in lines for x in l.values()))
+        self.assertGreater(share(with_tilt, "A-WR1"), share(without, "A-WR1"))
+        self.assertLess(share(with_tilt, "A-WR3"), share(without, "A-WR3"))
+        self.assertNotEqual([r["team_stats"]["A"]["players"]["A-WR1"]["targets"] for r in with_tilt],
+                            [r["team_stats"]["A"]["players"]["A-WR1"]["targets"] for r in without])
+
+    def test_factors_come_from_the_calibration_file(self):
+        from runtime import usage
+        factors = usage.tilt_factors()
+        source = strength.calibration_file()["attribution_tilt_2012"]
+        self.assertEqual(factors["target"], source["top_receiver_target_share"]["factors"])
+        self.assertEqual(factors["rush"], source["top_rusher_carry_share"]["factors"])
+        self.assertEqual(factors["sack"], source["top_sacker_sack_share"]["factors"])
+        self.assertEqual(usage.tilt_map(None, game_day_roster("A"), "target"), {})
+        self.assertEqual(usage.tilt_map(record(), game_day_roster("A"), "rush"), {})
 
 
 class EdgeTests(unittest.TestCase):

@@ -1,6 +1,6 @@
 {
  "kernel": "2014.4 candidate",
- "note": "Result digests (final score, possessions, kickoffs, injuries, opening receiver, team counters) of synthetic sample_teams() games under the kernel 2014.4 candidate. These synthetic fixtures carry no strength record (legacy anchor path). The candidate replaced the 2014.2/2014.3 digests in its own commit because Tier 1 items 2 (half-final clock), 4 (in-game injuries on the possession stream) and 5 (injury denominators) and the E1 home term (0.023) change results by design for every newly resolved game, including legacy packets; closed 2013 receipts are never rerun. A credit-only or display-only kernel must reproduce these digests; a kernel that deliberately changes results replaces this file in its own commit.",
+ "note": "Result digests (final score, possessions, kickoffs, injuries, opening receiver, team counters) of synthetic sample_teams() games under the kernel 2014.4 candidate. These synthetic fixtures carry no strength record (legacy anchor path). The candidate replaced the 2014.2/2014.3 digests in its own commit because Tier 1 items 2 (half-final clock), 4 (in-game injuries on the possession stream) and 5 (injury denominators) and the E1 home term (0.023) change results by design for every newly resolved game, including legacy packets; closed 2013 receipts are never rerun. A credit-only or display-only kernel must reproduce these digests; a kernel that deliberately changes results replaces this file in its own commit. Re-recorded again for the E1 second pass (September 30, 2026): the injury exposure is now the participation slot model alone (the recorded snap line keeps the named-player uplift), so an onset draw can no longer depend on attribution; 2 of the 40 legacy-path digests moved.",
  "seed_rule": "sha256('identity-<game_type>-<i>'); event_id 'identity-<game_type>-<i>'; venue neutral when i % 5 == 0, else home",
  "games": [
   {
@@ -91,12 +91,12 @@
   {
    "game_type": "regular",
    "index": 17,
-   "digest": "67c47a6e00a146cdfb7adb3f0bf4f53ecccacb6a61abce585b0abc3e28f46a24"
+   "digest": "ecd9eff6d245f360bf922e8e605f7166dc343afdbeeb416e3ef44a8c35dbce06"
   },
   {
    "game_type": "regular",
    "index": 18,
-   "digest": "9abadfed5840d41322e569164e3e7fe7d92a6117128eeb438c6d10ea9ddcd549"
+   "digest": "1fd38b86709947c4189fbdb79f02a4b6cfd0657b7207b2de9eea93b8452f523b"
   },
   {
    "game_type": "regular",

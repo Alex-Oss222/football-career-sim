@@ -151,12 +151,21 @@ def _slot_snaps(accumulator, prefix, ordered, shares, snaps, out):
             out[pid] = out.get(pid, 0) + credited
 
 
-def scrimmage(accumulator, offense_id, defense_id, offense_view, defense_view, passer, front, rows):
-    """{team_id: {player_id: snaps}} for one drive's pass and run rows."""
+def scrimmage(accumulator, offense_id, defense_id, offense_view, defense_view, passer, front, rows,
+              hazard_out=None):
+    """{team_id: {player_id: snaps}} for one drive's pass and run rows.
+
+    `hazard_out`, when given a dict, receives {team_id: {player_id: snaps}}
+    from the slot model alone (before the named-player uplift below): the
+    injury exposure. It depends only on the lineups and the drive's snap
+    count, so no attribution draw can move an injury hazard (kernel 2014.4,
+    defect register item 19: the attribution tilt changes credit only)."""
     snaps_rows = [r for r in rows if r.get("play_type") in SCRIMMAGE_TYPES]
     n = len(snaps_rows)
     offense, defense = {}, {}
     if not n:
+        if hazard_out is not None:
+            hazard_out.update({offense_id: {}, defense_id: {}})
         return {offense_id: offense, defense_id: defense}
     if passer is not None:
         offense[passer.player_id] = n
@@ -170,6 +179,8 @@ def scrimmage(accumulator, offense_id, defense_id, offense_view, defense_view, p
         _slot_snaps(accumulator, (offense_id, "O", grp), usage.depth_order(offense_view, grp), shares, n, offense)
     for grp, shares in DEFENSE_SLOTS:
         _slot_snaps(accumulator, (defense_id, "D", grp), usage.depth_order(defense_view, grp), shares, n, defense)
+    if hazard_out is not None:
+        hazard_out.update({offense_id: dict(offense), defense_id: dict(defense)})
     for side, fields in ((offense, OFFENSE_FIELDS), (defense, DEFENSE_FIELDS)):
         named = {}
         for row in snaps_rows:

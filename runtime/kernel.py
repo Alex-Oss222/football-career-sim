@@ -991,10 +991,15 @@ def _resolve_game(
         # Kernel 2014.4: record this drive's participants, then draw injury
         # onsets for both clubs at the end of the drive (E2 step 1).
         front = usage.protection_front(off_view)
+        # The recorded snap line keeps the named-player uplift; the injury
+        # exposure is the slot model alone (participation.scrimmage), so the
+        # attribution tilt (item 19) cannot move an onset draw.
+        hazard = {}
         scrimmage = participation.scrimmage(accumulator, offense, defense.team_id, off_view, def_view,
-                                            passer, front, drive_ledger)
+                                            passer, front, drive_ledger, hazard_out=hazard)
         for team_id, side in ((offense, "offense"), (defense.team_id, "defense")):
-            add_exposure(team_id, participation.credit(stats, team_id, scrimmage[team_id], side))
+            participation.credit(stats, team_id, scrimmage[team_id], side)
+            add_exposure(team_id, hazard[team_id])
         for row in drive_ledger:
             if row.get("play_type") in participation.KICK_TYPES:
                 units = participation.kick(row, offense, defense.team_id, off_view, def_view)

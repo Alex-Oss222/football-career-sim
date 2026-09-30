@@ -13,6 +13,8 @@ League-wide receipts compared with the sourced 2012 shapes in `library/data/2012
 | Metric | Observed | 2012 band centre | Tolerance | Status |
 |---|---:|---:|---:|---|
 | QB1 share of team pass attempts | 1.000 | 0.978 | ±0.050 | WITHIN |
+| top receiver share of team targets (team-game) | 0.303 | 0.294 | ±0.021 | WITHIN |
+| top rusher share of non-QB carries (team-game) | 0.701 | 0.707 | ±0.048 | WITHIN |
 | FB share of carries | 0.021 | 0.021 | ±0.050 | WITHIN |
 | QB share of carries | 0.077 | 0.090 | ±0.050 | WITHIN |
 | RB share of carries | 0.879 | 0.867 | ±0.050 | WITHIN |
@@ -43,6 +45,8 @@ Drive-model rows and ledger coherence: not measurable for this cohort (legacy re
 | Metric | Observed | 2012 band centre | Tolerance | Status |
 |---|---:|---:|---:|---|
 | QB1 share of team pass attempts | 1.000 | 0.978 | ±0.050 | WITHIN |
+| top receiver share of team targets (team-game) | 0.304 | 0.294 | ±0.017 | WITHIN |
+| top rusher share of non-QB carries (team-game) | 0.711 | 0.707 | ±0.039 | WITHIN |
 | FB share of carries | 0.016 | 0.021 | ±0.050 | WITHIN |
 | QB share of carries | 0.086 | 0.090 | ±0.050 | WITHIN |
 | RB share of carries | 0.878 | 0.867 | ±0.050 | WITHIN |
@@ -153,6 +157,8 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` over every receipt
 | Metric | Observed | 2012 band centre | Tolerance | Status |
 |---|---:|---:|---:|---|
 | QB1 share of team pass attempts | 1.000 | 0.978 | ±0.050 | WITHIN |
+| top receiver share of team targets (team-game) | 0.309 | 0.294 | ±0.028 | WITHIN |
+| top rusher share of non-QB carries (team-game) | 0.698 | 0.707 | ±0.064 | WITHIN |
 | FB share of carries | 0.011 | 0.021 | ±0.050 | WITHIN |
 | QB share of carries | 0.087 | 0.090 | ±0.050 | WITHIN |
 | RB share of carries | 0.885 | 0.867 | ±0.050 | WITHIN |
@@ -321,6 +327,8 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and 1
 | Metric | Observed | 2012 band centre | Tolerance | Status |
 |---|---:|---:|---:|---|
 | QB1 share of team pass attempts | 1.000 | 0.978 | ±0.050 | WITHIN |
+| top receiver share of team targets (team-game) | 0.316 | 0.294 | ±0.027 | WITHIN |
+| top rusher share of non-QB carries (team-game) | 0.728 | 0.707 | ±0.062 | WITHIN |
 | FB share of carries | 0.009 | 0.021 | ±0.050 | WITHIN |
 | QB share of carries | 0.094 | 0.090 | ±0.050 | WITHIN |
 | RB share of carries | 0.882 | 0.867 | ±0.050 | WITHIN |
@@ -489,6 +497,8 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and 1
 | Metric | Observed | 2012 band centre | Tolerance | Status |
 |---|---:|---:|---:|---|
 | QB1 share of team pass attempts | 1.000 | 0.978 | ±0.050 | WITHIN |
+| top receiver share of team targets (team-game) | 0.302 | 0.294 | ±0.037 | WITHIN |
+| top rusher share of non-QB carries (team-game) | 0.698 | 0.707 | ±0.084 | WITHIN |
 | FB share of carries | 0.016 | 0.021 | ±0.050 | WITHIN |
 | QB share of carries | 0.086 | 0.090 | ±0.050 | WITHIN |
 | RB share of carries | 0.878 | 0.867 | ±0.050 | WITHIN |
@@ -657,6 +667,8 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and 1
 | Metric | Observed | 2012 band centre | Tolerance | Status |
 |---|---:|---:|---:|---|
 | QB1 share of team pass attempts | 1.000 | 0.978 | ±0.050 | WITHIN |
+| top receiver share of team targets (team-game) | 0.306 | 0.294 | ±0.018 | WITHIN |
+| top rusher share of non-QB carries (team-game) | 0.689 | 0.707 | ±0.042 | WITHIN |
 | FB share of carries | 0.012 | 0.021 | ±0.050 | WITHIN |
 | QB share of carries | 0.093 | 0.090 | ±0.050 | WITHIN |
 | RB share of carries | 0.875 | 0.867 | ±0.050 | WITHIN |

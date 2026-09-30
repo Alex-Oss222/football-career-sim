@@ -7,6 +7,8 @@ inspect inputs and code, not a reason to reroll canon.
 """
 from __future__ import annotations
 
+import math
+
 from .calibration import load as load_calibration
 from .usage import group, load as load_usage
 
@@ -37,6 +39,7 @@ def _shares(counter, groups):
 def expected():
     usage = load_usage()["values"]
     cal = load_calibration()
+    tilt = _tilt_source()
     rate = usage["assisted_tackle_play_rate"]
     return {
         "qb1_attempt_share": usage["passing"]["qb1_attempt_share"],
@@ -54,7 +57,20 @@ def expected():
         ),
         "third_down_attempts_per_team_game": usage["third_down_attempts_per_team_game"],
         "third_down_rate": cal["model"]["third_down_rate"],
+        # Kernel 2014.4 (defect register item 19): the club's top-target and
+        # top-carry (non-QB) player's share of the club's targets and carries
+        # per team-game, centred on the 2012 per team-game means with their
+        # SDs (library/data/2014_strength_calibration_v2.json,
+        # team_game_top_shares_2012; 512 team-games).
+        **{key: (tilt[key]["mean"], tilt[key]["sd"])
+           for key in ("top_receiver_target_share", "top_rusher_carry_share")},
     }
+
+
+def _tilt_source():
+    from .usage import TILT_SOURCE
+    import json
+    return json.loads(TILT_SOURCE.read_text(encoding="utf-8"))["team_game_top_shares_2012"]
 
 
 def _kneels_by_team(receipt):
@@ -73,6 +89,7 @@ def observe(receipts):
     assisted = tackles = 0
     totals = dict(plays=0, yards=0, points=0, first_downs=0, third_att=0, third_conv=0)
     kneels = {}
+    top_target, top_carry = [], []
     for index, receipt in enumerate(receipts):
         for team_id, count in _kneels_by_team(receipt).items():
             kneels[(index, team_id)] = count
@@ -87,6 +104,13 @@ def observe(receipts):
         attempts = [line.get("pass_attempts", 0) for line in players.values()]
         if sum(attempts):
             qb1.append(max(attempts) / sum(attempts))
+        targets = [line.get("targets", 0) for line in players.values()]
+        if sum(targets):
+            top_target.append(max(targets) / sum(targets))
+        carries = [line.get("rushing_attempts", 0) for line in players.values()
+                   if group(line.get("position")) != "QB"]
+        if sum(carries):
+            top_carry.append(max(carries) / sum(carries))
         for line in players.values():
             grp = group(line.get("position"))
             if not grp:
@@ -110,6 +134,9 @@ def observe(receipts):
     return {
         "team_games": team_games,
         "qb1_attempt_share": sum(qb1) / len(qb1) if qb1 else None,
+        "top_receiver_target_share": sum(top_target) / len(top_target) if top_target else None,
+        "top_rusher_carry_share": sum(top_carry) / len(top_carry) if top_carry else None,
+        "top_share_team_games": {"target": len(top_target), "carry": len(top_carry)},
         "rush_share": _shares(rush, ("RB", "QB", "FB", "WR", "TE")),
         "target_share": _shares(target, ("WR", "TE", "RB", "FB")),
         "tackle_share": _shares(tackle, ("DB", "LB", "DL")),
@@ -140,6 +167,14 @@ def audit(receipts):
         rows.append((metric, observed, band, tolerance, status))
 
     add("QB1 share of team pass attempts", obs["qb1_attempt_share"], exp["qb1_attempt_share"], SHARE_TOLERANCE)
+    # Item 19 rows: per team-game top shares against the 2012 per team-game
+    # centres; tolerance three 2012 SDs over the root of the team-game count.
+    for key, label, n in (("top_receiver_target_share", "top receiver share of team targets (team-game)",
+                           obs["top_share_team_games"]["target"]),
+                          ("top_rusher_carry_share", "top rusher share of non-QB carries (team-game)",
+                           obs["top_share_team_games"]["carry"])):
+        centre, sd_2012 = exp[key]
+        add(label, obs[key], centre, 3 * sd_2012 / math.sqrt(n) if n else None)
     for name, label in (("rush_share", "carries"), ("target_share", "targets"), ("tackle_share", "tackle credits")):
         for grp, band in exp[name].items():
             add(f"{grp} share of {label}", obs[name].get(grp), band, SHARE_TOLERANCE)

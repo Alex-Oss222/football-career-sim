@@ -416,7 +416,13 @@ class ProductionRunnerPauseTests(unittest.TestCase):
             self.fail("no consequential removal in 60 synthetic games")
         self.assertNotIn("final_score", partial)
         pause = partial["pauses"][-1]
-        choices = {d["slot"]: d["eligible"][-1] for d in pause["decisions"]}
+        # The last eligible player for each slot, distinct across the pause's
+        # decisions (two removals in one drive may share an eligible list).
+        choices, taken = {}, set()
+        for d in pause["decisions"]:
+            pick = next(p for p in reversed(d["eligible"]) if p not in taken)
+            choices[d["slot"]] = pick
+            taken.add(pick)
         decisions = [{"token": pause["continuation_token"], "choices": choices}]
         resumed = None
         while True:

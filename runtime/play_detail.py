@@ -723,6 +723,11 @@ def apply_drive_detail(
     qb_line = offense_stats["players"][qb.player_id]
     # Kernel 2014.3: the five linemen on the field (same for every drive).
     front = usage.protection_front(available)
+    # Kernel 2014.4 (defect register item 19): tier-weighted credit from each
+    # club's strength record; empty without one (runtime/usage.tilt_map).
+    target_tilt = usage.tilt_map(getattr(team, "strength", None), available, "target")
+    rush_tilt = usage.tilt_map(getattr(team, "strength", None), available, "rush")
+    sack_tilt = usage.tilt_map(getattr(defense, "strength", None), defenders, "sack")
 
     drive_seconds = max(0, int(start_clock) - int(end_clock))
     # Kernel 2014.4: scrimmage snaps are stamped inside the drive's own
@@ -799,7 +804,8 @@ def apply_drive_detail(
             # Kernel 2014.3: the rusher first, then the on-field lineman
             # facing him (edge rushers beat a tackle, interior rushers a
             # guard or the center).
-            rusher = usage.pick(rng, defenders, shares["sack_share"], "defense", role="pass_rush")
+            rusher = usage.pick(rng, defenders, shares["sack_share"], "defense", role="pass_rush",
+                                tilt=sack_tilt)
             if front:
                 slots = usage.beaten_slots(rusher, front)
                 slot = slots[0] if len(slots) == 1 else rng.choice(slots)
@@ -828,7 +834,8 @@ def apply_drive_detail(
         elif is_pass:
             record["passer"] = qb.player_id
             _bump(qb_line, "dropbacks")
-            receiver = usage.pick(rng, available, shares["target_share"], "target", role="receiver")
+            receiver = usage.pick(rng, available, shares["target_share"], "target", role="receiver",
+                                  tilt=target_tilt)
             rec_line = offense_stats["players"][receiver.player_id]
             record["target"] = receiver.player_id
             groups_for[index] = (None, usage.group(receiver.position), None, _group_rank(available, receiver))
@@ -872,7 +879,8 @@ def apply_drive_detail(
                     _bump(defense_stats["players"][cover.player_id], "passes_defended")
                     record["tackler"] = cover.player_id
                 if rng.random() < 0.20:
-                    pressure = usage.pick(rng, defenders, shares["sack_share"], "defense", role="pass_rush")
+                    pressure = usage.pick(rng, defenders, shares["sack_share"], "defense", role="pass_rush",
+                                          tilt=sack_tilt)
                     _bump(defense_stats["players"][pressure.player_id], "pressures")
         elif kind == "kneel":
             run_line = qb_line
@@ -886,6 +894,7 @@ def apply_drive_detail(
             runner = usage.pick(
                 rng, available, shares["rush_share"], "rush", role="rusher",
                 only=lambda p: usage.group(p.position) != "QB" or p.player_id == qb.player_id,
+                tilt=rush_tilt,
             )
             run_line = offense_stats["players"][runner.player_id]
             record["runner"] = runner.player_id
