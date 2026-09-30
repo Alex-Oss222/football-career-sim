@@ -39,6 +39,7 @@ python scripts/refresh_summary_receipt.py otas --reviewed
 # python scripts/render_box_score.py --season YEAR --write career/YEAR/regular_season/week_NN_<away>_at_<home>/output.md
 # python scripts/render_standings.py YEAR
 # python scripts/render_season_stats.py YEAR --team TEAM_ID
+# python scripts/render_team_tracker.py YEAR   # user's Jacksonville tracker; also after a depth-chart change
 python scripts/render_player_ages.py
 python scripts/validate_repository.py
 python -m unittest discover -s tests -v

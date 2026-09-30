@@ -218,6 +218,18 @@ def validate(root=ROOT):
     except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
         errors.append(f'Invalid player birth-date/age evidence: {exc}')
 
+    # The user's team stat tracker is a generated reader view. Any stale page
+    # (a game closed without re-rendering) fails validation.
+    try:
+        import sys
+        if str(ROOT) not in sys.path:
+            sys.path.insert(0, str(ROOT))
+        from scripts.render_team_tracker import check as check_team_tracker
+        for tracker_year in sorted(p.name for p in (root/'career').iterdir() if p.name.isdigit()):
+            errors.extend(check_team_tracker(root, int(tracker_year)))
+    except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
+        errors.append(f'Invalid team tracker: {exc}')
+
     # Season statistics are generated artifacts. Rebuild them from the durable
     # closed-game receipts so stale caches or hand-edited views fail closed.
     try:
