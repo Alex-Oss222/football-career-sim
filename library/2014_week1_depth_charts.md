@@ -13,7 +13,7 @@ Jacksonville is not in this library. Its TeamInput always comes from the branch 
 | Depth chart (primary) | nflverse [depth_charts_2014.csv](https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2014.csv) | Week 1, regular season, 32 clubs (1,659 players, 1,957 slot rows) |
 | Availability | nflverse [injuries_2014.csv](https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2014.csv) | Week 1 report (219 rows dated September 3 to 6, 2014) |
 | Membership cross-check | nflverse [roster_weekly_2014.csv](https://github.com/nflverse/nflverse-data/releases/download/weekly_rosters/roster_weekly_2014.csv) | Week 1 club membership and jersey only; status ignored |
-| Player bio fields | the user's `user_nfl_2014_week1.json` (transient workspace) | Same 32 clubs and 1,659 gsis ids as the nflverse chart (verified); supplies `birth_date`, `headshot_url` and `page_url`, carried per player as data only; its jersey number equals the weekly-roster jersey for every player |
+| Player bio fields | the user's `user_nfl_2014_week1.json` (transient workspace) | Same 32 clubs and 1,659 gsis ids as the nflverse chart (verified); supplies `birth_date`, `page_url` and an open-licensed Wikimedia Commons headshot per player (`headshot_url`, `headshot_license`, `headshot_license_url`, `headshot_credit`, `headshot_page`), carried as data only; 1,541 of 1,659 players have a photo; its jersey number equals the weekly-roster jersey for every player |
 | Branch control | `career/2014/team/roster/roster.md`, July 29, 2014 | The 78 controlled players (74 signed, four unsigned tenders), matched by gsis id through `library/data/player_birth_dates.json` and `career/2014/league/personnel/league_players.json`; all 78 matched, none by name fallback |
 | Draft pairing | [draft_pairing.md](../career/2014/league/personnel/draft_pairing.md) | The seven placements and the one unplaced selection |
 | Branch trades | [trades.md](../career/2014/trades/completed_trades/trades.md) | Nwaneri, Babin, Alualu, Shorts, Blackmon, Rackley (Allen retired) |
@@ -41,7 +41,7 @@ Jacksonville is not in this library. Its TeamInput always comes from the branch 
 5. **Availability:** a player listed Out or Doubtful on the Week 1 report is unavailable (55 players: 46 Out, 9 Doubtful). Questionable (38) and Probable (98) players are available. Same convention as 2013.
 6. **Return of a pre-existing injury (`return_week`):** a player out before Week 1 did not play in the real Week 1, so his later pre-game reports still describe that same injury. He returns the first week he is reported Questionable or Probable, or is off the report while listed on his club's depth chart. Nothing about him is read after that week. 52 of the 55 have a projected return; three (Jonathan Meeks, Darrion Weems, Rashaan Melvin) never return under this rule.
 7. **Ids:** a player id is the player's name. When two players share a name, or a player shares a name with a Jacksonville-controlled player, he gets his club code, for example `Brandon Marshall (DEN)` beside Chicago's Brandon Marshall and `Mike Harris (MIN)` and `C.J. Mosley (BAL)` beside Jacksonville's Mike Harris and C.J. Mosley (twelve ids carry a code). A namesake is never removed: control is matched by gsis id, and the name fallback applies only to a controlled player with no registry id (none in this build).
-8. **Bio fields:** `birth_date`, `headshot_url` and `page_url` from the user's file, by gsis id. They are identity data only; nothing in the build reads them.
+8. **Bio fields:** `birth_date`, `page_url` and the headshot fields from the user's file, by gsis id. They are identity data only; nothing in the build reads them. A photo is reused only with its credit and license line, as the license fields require.
 
 ## Branch reconciliation
 
@@ -168,3 +168,7 @@ python -m unittest tests.test_2014_week1_depth_library
 ```
 
 `SOURCE_DIR` is a transient workspace holding the four downloaded inputs; it is never committed.
+
+## Player photographs
+
+`library/data/player_photos.json` holds the open-licensed Wikimedia Commons photograph for every player in the user's file who has one, Jacksonville's included, keyed by gsis id with the license, license url, credit and source page. It is identity imagery for player cards and award pages, reused only with its credit and license line. It is not gated, because a photograph carries no football information, and nothing in the engine reads it.

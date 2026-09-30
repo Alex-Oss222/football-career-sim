@@ -44,7 +44,9 @@ class Week1DepthLibrary2014Tests(unittest.TestCase):
             for player in club["players"]:
                 self.assertEqual(set(player) - {"name", "listed_position", "available", "injury_report",
                                                 "return_week", "roles", "slots", "jersey", "gsis_id",
-                                                "birth_date", "headshot_url", "page_url"},
+                                                "birth_date", "headshot_url", "headshot_license",
+                                                "headshot_license_url", "headshot_credit",
+                                                "headshot_page", "page_url"},
                                  {"player_id", "position", "depth"})
 
     def test_covers_every_background_club_and_not_jacksonville(self):

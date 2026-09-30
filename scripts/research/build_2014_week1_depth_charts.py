@@ -11,7 +11,7 @@ into SOURCE_DIR first (a transient workspace, never committed):
   nflverse 2014 injury reports (the Week 1 pre-game report):
     https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2014.csv
   the user's Week 1 file (optional; same club membership as the nflverse
-  chart, adds birth_date, headshot_url and page_url per player):
+  chart, adds birth_date, page_url and the open-licensed headshot fields per player):
     user_nfl_2014_week1.json
 
 Usage:
@@ -135,7 +135,9 @@ UNAVAILABLE_REPORT = {"Out", "Doubtful"}
 OL_SLOT_ORDER = ("LT", "LG", "C", "RG", "RT")
 SIDE = {"QB": "O", "RB": "O", "FB": "O", "WR": "O", "TE": "O", "OL": "O",
         "DL": "F", "LB": "F", "DB": "B", "K": "S", "P": "S", "LS": "S"}
-BIO_FIELDS = ("birth_date", "headshot_url", "page_url")
+BIO_FIELDS = ("birth_date", "headshot_url", "headshot_license",
+              "headshot_license_url", "headshot_credit", "headshot_page",
+              "page_url")
 
 
 def norm(name):
@@ -513,7 +515,7 @@ def build(source):
             "pre_existing_returns": "for Week 1 Out/Doubtful players only: first later week reported Questionable/Probable, or off the report and on the club depth chart",
             "co_listed_order": "depth string, then line slot LT-LG-C-RG-RT, then jersey number, then name; no prior-season usage is read because the branch's 2013 is not the real 2013",
             "membership_cross_check": "nflverse roster_weekly_2014.csv, week 1 club membership only; status ignored",
-            "bio_fields": "user_nfl_2014_week1.json (same club membership as the nflverse chart): birth_date, headshot_url and page_url per gsis id, carried as data only",
+            "bio_fields": "user_nfl_2014_week1.json (same club membership as the nflverse chart): birth_date, page_url and the open-licensed headshot fields (url, license, license url, credit, source page) per gsis id, carried as data only",
             "branch_control": "career/2014/team/roster/roster.md matched by gsis id through library/data/player_birth_dates.json and career/2014/league/personnel/league_players.json",
             "draft_pairing": "career/2014/league/personnel/draft_pairing.md",
             "trades": "career/2014/trades/completed_trades/trades.md",
