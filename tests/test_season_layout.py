@@ -15,13 +15,18 @@ ROOT=Path(__file__).resolve().parents[1]
 class SeasonLayoutTests(unittest.TestCase):
     def test_new_years_route_records_without_changing_2013(self):
         for year in (2014,2015,2016):
-            self.assertEqual(season_relative(year,'roster.md'),'00_team/roster/roster.md')
+            self.assertEqual(season_relative(year,'roster.md'),'team/roster/roster.md')
             self.assertEqual(season_relative(year,'offseason/otas/plan.md'),
-                             '03_offseason_training/03_otas/staff_plan.md')
+                             'offseason_training/otas/staff_plan.md')
             self.assertEqual(season_relative(year,'postseason/divisional/output.md'),
-                             '07_postseason/games/divisional/output.md')
+                             'postseason/games/divisional/output.md')
             actual=SeasonPaths(year,ROOT).receipts
-            self.assertIn(f'career/{year}/06_regular_season/statistics/records/game_receipts',str(actual))
+            self.assertIn(f'career/{year}/regular_season/statistics/records/game_receipts',str(actual))
+        for readable in ('team/roster/roster.md','trades/completed_trades/trades.md',
+                         'regular_season/games/week_01/output.md','offseason_training/otas/staff_plan.md',
+                         'regular_season/statistics/records/game_receipts'):
+            self.assertEqual(season_relative(2014,readable),readable)
+        self.assertEqual(season_relative(2014,'trades/trades.md'),'trades/completed_trades/trades.md')
         self.assertEqual(season_relative(2013,'roster.md'),'roster.md')
         self.assertEqual(season_relative(2013,'postseason/divisional/output.md'),'postseason/divisional/output.md')
         for name in ('../../state.md','/tmp/roster.md'):
@@ -29,12 +34,12 @@ class SeasonLayoutTests(unittest.TestCase):
 
     def test_moving_a_page_preserves_links_and_frozen_references(self):
         source='career/2014/offseason/otas/plan.md'
-        target='career/2014/03_offseason_training/03_otas/staff_plan.md'
+        target='career/2014/offseason_training/otas/staff_plan.md'
         text='[Report](output.md#handoff) [Cap](../../../finances/jaguars_cap.md)'
         self.assertEqual(rebase_markdown(text,source,target),
-                         '[Report](training_report.md#handoff) [Cap](../../../finances/01_salary_cap/cap_tracker.md)')
+                         '[Report](training_report.md#handoff) [Cap](../../../finances/salary_cap/cap_tracker.md)')
         self.assertEqual(repository_relative('career/2014/draft/coin_flip_2026-09-29.jpg'),
-                         'career/2014/04_draft/coin_flip_2026-09-29.jpg')
+                         'career/2014/draft/coin_flip_2026-09-29.jpg')
         legacy='[Receipts](../stats/game_receipts/)'
         self.assertEqual(rebase_markdown(legacy,'career/2013/player_profiles/card.md',
                                         'career/2013/player_profiles/card.md'),legacy)

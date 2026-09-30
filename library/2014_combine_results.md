@@ -1,6 +1,6 @@
 # Library: 2014 NFL Scouting Combine results (Jacksonville board prospects)
 
-**Status:** Pre-selection evidence file. Research pass (pass 1 of 2) and verification pass (pass 2 of 2) complete for the 23 prospects on Jacksonville's current [draft board](../career/2014/04_draft/player_draft_board.md), its named comparisons and its undrafted line list. Full-class coverage is **not built**.
+**Status:** Pre-selection evidence file. Research pass (pass 1 of 2) and verification pass (pass 2 of 2) complete for the 23 prospects on Jacksonville's current [draft board](../career/2014/draft/player_draft_board.md), its named comparisons and its undrafted line list. Full-class coverage is **not built**.
 **Purpose:** Record combine measurables, drill results, non-participation and eligibility status as they became public, without using any draft result as an answer key.
 **Research date:** September 29, 2026. Branch date at entry: February 25, 2014 (ledger Entry 88).
 

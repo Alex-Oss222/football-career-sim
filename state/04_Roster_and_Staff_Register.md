@@ -7,8 +7,8 @@
 - Effective through: **June 13, 2014 (78 controlled players; the ten OTA days closed with the June 13 handoff, the five open competitions standing as Stone set them May 12; no June 1 tender filed June 2 for Ball, Brent Grimes, Reisner or Rutland; the four unsigned tenders outside the program)**.
 - Current authority: `career/2014/ledger.md`, Entry 112 (the ten OTA days May 27 to June 13 in the Phase Three non-contact inventory; June 13 handoff; the five rep starting points stand as open competitions; Communication assessed Average for each unit's spring lineup, Plan execution not assessed; no injury; no June 1 tender filed June 2 for Ball, Brent Grimes, Reisner or Rutland, no rights retained; no transaction; controlled roster 78; clock June 13), Entry 111 (Stone's May 12 starting roles: WR1 Nicks, WR3 Adams, left guard Bitonio, right guard Turner, Edge 1 Mincey, each with named competition; rookie onboarding May 10 to 15; rookie minicamp May 16 and 17; Phase Two closed May 23; no transaction; controlled roster 78; clock May 23), Entry 110 (Rackley traded to Seattle May 12 for Seattle's own unconditional 2015 seventh after the May 11 calls; $154,868 dead money; Ball not re-signed May 12; controlled roster 78; clock May 12), Entry 109 (May 1 instruction on the four unsigned tenders and the revised cross-training list; Phase One handoff May 2; Phase Two May 5 to 9; clock May 11), Entry 108 (nine draft selections May 8 to 10: Donald, Bitonio, Adams, Turner, Telvin Smith, Linsley, Leno, Thomas, Butler; 17 undrafted rookies signed May 10; rookie contracts signed May 11; controlled roster 79; Rackley-or-Brewster trade active), Entry 107 (April 18 decisions: Tice emergency practice lead, Crennel second; defensive relay succession Smith, Posluszny, Stanford; Phase One April 21 to May 1; Allen retired at Arizona April 22; schedule released April 23; controlled roster 53; clock May 1), Entry 106 (Henne re-signed April 4; Posluszny cleared April 5; Allen traded to Arizona April 7 for Arizona's 2015 fourth; controlled roster 53; clock April 17), Entry 105 (Nos. 82 and 194 traded to Washington March 31 for Jacksonville's original 2015 second; no players move), Entry 104 (Shorts and Blackmon traded to Indianapolis March 31 for Nos. 82 and 194; controlled roster 53), Entry 103 (Jones-Drew and C.J. Wilson re-signed March 28; schedule filed; controlled roster 55), Entry 102 (Babin to Miami and Alualu to Houston, March 24; controlled roster 53) and Entry 101 (administrative).
 - Prior progression authority: `career/2013/ledger.md`, Entries 1 to 100 (hire through the March 24, 2014 compensatory announcement).
-- Detailed readable roster: `career/2014/00_team/roster/roster.md`.
-- Current cap worksheet: `career/2014/09_finances/01_salary_cap/cap_worksheet.md`.
+- Detailed readable roster: `career/2014/team/roster/roster.md`.
+- Current cap worksheet: `career/2014/finances/salary_cap/cap_worksheet.md`.
 - Current calendar: `career/2014/calendar.md`.
 - Statistical authority: Document 6 / season ledger and later game ledgers.
 - Authority source: Document 3 remains the sole source of final organizational authority.
@@ -145,7 +145,7 @@ The availability column records the club's latest medical communication. Every p
 
 - The Rackley-or-Brewster trade closed May 12: Rackley to Seattle for Seattle's unconditional 2015 seventh; Brewster is kept and is not shopped. Turner holds the right guard rep starting point from May 12 (Bitonio or Norwell if he struggles); it is an open competition, not an award.
 - James Hurst (OT, North Carolina) is held on the undrafted board until a medical clearance is recorded.
-- Alan Ball was not re-signed on May 12 after Stone's conversation with him; he is an unplaced free agent and the first veteran corner Jacksonville calls if the room is hit ([record](../career/2014/02_free_agency/alan_ball_2014-05-12.md)).
+- Alan Ball was not re-signed on May 12 after Stone's conversation with him; he is an unplaced free agent and the first veteran corner Jacksonville calls if the room is hit ([record](../career/2014/free_agency/alan_ball_2014-05-12.md)).
 - Ball and Brent Grimes are unrestricted free agents (see below).
 
 ### Players no longer under Jacksonville control
@@ -189,26 +189,26 @@ No later real destination is imported for any departed player unless the league 
 
 ## Contracts, cap and draft capital
 
-The [2014 cap worksheet](../career/2014/09_finances/01_salary_cap/cap_worksheet.md) holds the working accounting, not certified cap room. The [2014 contract table](../career/2014/09_finances/02_player_contracts/contracts.md) is the per-player view of terms, and the [twelve-year tracker](../career/finances/01_salary_cap/cap_tracker.md) carries every schedule forward.
+The [2014 cap worksheet](../career/2014/finances/salary_cap/cap_worksheet.md) holds the working accounting, not certified cap room. The [2014 contract table](../career/2014/finances/player_contracts/contracts.md) is the per-player view of terms, and the [twelve-year tracker](../career/finances/salary_cap/cap_tracker.md) carries every schedule forward.
 
 | Control | Current position | Source / limit |
 |---|---|---|
-| 2014 unadjusted league cap | **$133,000,000**, published February 28, 2014. 2013 rollover estimated at about $5.33M to $6.00M (working estimate); adjusted cap and certified cap space unresolved | `library/2014_league_calendar_and_financial_rules.md`; Entry 89; `career/2014/09_finances/01_salary_cap/cap_worksheet.md` (2013 rollover), Entry 104 |
-| 2014 scheduled player cap | **$125,597,494** including $3,066,000 of unsigned tenders, the nine rookie contracts ($8,275,282 gross) and the 17 undrafted contracts ($7,165,000 gross); plus $10,417,192 dead money (Bray $51,675; Nwaneri $2,189,000; Alualu $1,542,500; Shorts $110,845; Blackmon $5,951,636; Allen $416,668; Rackley $154,868). Offseason Top-51 count $124,449,686 (the 27 lowest base salaries, $11,565,000, outside) plus the $504,000 workout charge: $124,953,686, an $8,046,314 working difference before carryover and reserves, or about $13.38M to $14.05M with the rollover estimate. Not certified room | `career/finances/01_salary_cap/cap_tracker.md`; [worksheet](../career/2014/09_finances/01_salary_cap/cap_worksheet.md) (Entry 110) |
+| 2014 unadjusted league cap | **$133,000,000**, published February 28, 2014. 2013 rollover estimated at about $5.33M to $6.00M (working estimate); adjusted cap and certified cap space unresolved | `library/2014_league_calendar_and_financial_rules.md`; Entry 89; `career/2014/finances/salary_cap/cap_worksheet.md` (2013 rollover), Entry 104 |
+| 2014 scheduled player cap | **$125,597,494** including $3,066,000 of unsigned tenders, the nine rookie contracts ($8,275,282 gross) and the 17 undrafted contracts ($7,165,000 gross); plus $10,417,192 dead money (Bray $51,675; Nwaneri $2,189,000; Alualu $1,542,500; Shorts $110,845; Blackmon $5,951,636; Allen $416,668; Rackley $154,868). Offseason Top-51 count $124,449,686 (the 27 lowest base salaries, $11,565,000, outside) plus the $504,000 workout charge: $124,953,686, an $8,046,314 working difference before carryover and reserves, or about $13.38M to $14.05M with the rollover estimate. Not certified room | `career/finances/salary_cap/cap_tracker.md`; [worksheet](../career/2014/finances/salary_cap/cap_worksheet.md) (Entry 110) |
 | 2015 commitments | $123,275,736; 2016 $84,131,574; 2017 $48,550,284; 2018 $18,900,000 (unchanged by the Rackley trade; his contract had no 2015 year) | Entries 108 and 110 |
 | Monroe | Five-year contract signed March 11 replaced the $11,654,000 franchise tender (charged once; no second designation) | Entry 95 |
 | RFA/ERFA tenders | Bradfield $1,431,000; Clemons and Pasztor $570,000 each; Brown $495,000; all unsigned, made March 11 | Entry 94 |
 | Adopted contract schedules | Every covered player-year of an existing contract has an adopted dollar amount; years outside a deal stay blank; simulated terms remain distinguishable from recovered historical terms | Entry 91 |
 | 2013 branch veteran agreements | The six March 2013 agreements stand exactly as recorded in `career/2013/offseason/free_agency/signings.md` |
 | 2013 draftees and UDFAs | Seven draftees on rookie contracts signed May 2, 2013; four UDFAs on three-year minimum contracts with no signing bonus or additional guarantee | `career/2013/offseason/draft/draftees.md`; `career/2013/offseason/draft/udfa_signings.md` |
-| 2014 draftees and UDFAs | Nine draftees on four-year rookie contracts signed May 11, 2014, priced by slot reconstruction from the same-slot 2014 contracts ($38,006,130 total; the two first-rounders carry an unexercised 2018 option); 17 UDFAs on three-year minimum contracts signed May 10, 2014, five linemen with $15,000 signing bonuses, no base salary guaranteed | `career/2014/04_draft/draftees.md`; `career/2014/04_draft/udfa_signings.md` |
+| 2014 draftees and UDFAs | Nine draftees on four-year rookie contracts signed May 11, 2014, priced by slot reconstruction from the same-slot 2014 contracts ($38,006,130 total; the two first-rounders carry an unexercised 2018 option); 17 UDFAs on three-year minimum contracts signed May 10, 2014, five linemen with $15,000 signing bonuses, no base salary guaranteed | `career/2014/draft/draftees.md`; `career/2014/draft/udfa_signings.md` |
 | Next accounting triggers | New transaction, reserve move, settlement or practice-squad change | Current calendar |
 
 No current contract guarantees a depth-chart position, rep share, target share, package share or final roster place.
 
 ### Draft capital
 
-Current source: `career/2014/04_draft/pick_ownership.json`; generated seven-round order: `career/2014/04_draft/draft_order.md`.
+Current source: `career/2014/draft/pick_ownership.json`; generated seven-round order: `career/2014/draft/draft_order.md`.
 
 - 2014: all nine ordinary picks exercised May 8 to 10 (13 Donald, 26 Bitonio, 38 Adams, 90 Turner, 129 Telvin Smith, 153 Linsley, 168 Leno, 205 Thomas, 241 Butler); none remain. No compensatory pick. Jacksonville's own 2014 second (No. 58) belonged to Washington, as did Indianapolis's third and sixth (Nos. 82 and 194), received in the Shorts and Blackmon trade and sent to Washington the same day.
 - 2015: Jacksonville's own second (returned by Washington on March 31; slot unknown), Miami's third, Houston's fourth, Arizona's fourth (from the Allen trade, April 7) and Seattle's seventh (from the Rackley trade, May 12). Jacksonville's own 2015 first and fourth belong to Arizona.
@@ -217,7 +217,7 @@ Current source: `career/2014/04_draft/pick_ownership.json`; generated seven-roun
 
 ## Staff
 
-`career/2014/00_team/coaching_staff/coaching_staff.md` is the detailed operating register; `career/2014/01_early_offseason/staff_changes` holds the carousel and hiring records.
+`career/2014/team/coaching_staff/coaching_staff.md` is the detailed operating register; `career/2014/early_offseason/staff_changes` holds the carousel and hiring records.
 
 - Head coach: Alex Stone.
 - Offensive coordinator: Mike Tice.
@@ -237,7 +237,7 @@ The player index owns each player's availability boundary. In summary:
 
 ## Football roles, depth and packages
 
-2013 roles carry until Stone changes them. The Role column of `career/2014/00_team/roster/roster.md` records each decided role. Current depth order is `career/2013/depth_chart.json` (effective January 6, AFC Divisional preparation; read by `runtime/week_inputs.py`). The [2014 working depth chart](../career/2014/00_team/depth_chart/depth_chart.md) carries that order into 2014 with contract flags and Stone's May 12 rep starting points (Entry 111); it is not a game input.
+2013 roles carry until Stone changes them. The Role column of `career/2014/team/roster/roster.md` records each decided role. Current depth order is `career/2013/depth_chart.json` (effective January 6, AFC Divisional preparation; read by `runtime/week_inputs.py`). The [2014 working depth chart](../career/2014/team/depth_chart/depth_chart.md) carries that order into 2014 with contract flags and Stone's May 12 rep starting points (Entry 111); it is not a game input.
 
 - Stone's May 12, 2014 starting roles entering OTAs, each a rep starting point with named competition and not an award: WR1 Nicks (Adams the competition); WR3 Adams (Hawkins); left guard Bitonio, guard first (Norwell); right guard Turner (Bitonio or Norwell if Turner struggles); Edge 1 Mincey (Branch). All five stand unchanged after the ten OTA days (Entry 112): the named competition took real reps, the non-contact evidence decides none of the jobs, and Turner's conditional swap was not triggered. No other rookie has a place.
 

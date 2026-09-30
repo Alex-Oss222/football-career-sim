@@ -1,21 +1,21 @@
 # Season folders and continuity
 
-The [2014 season](../career/2014/README.md) is the model from 2014 onward. Its numbered folders follow phase opening dates. Overlapping work follows the calendar; a folder’s position does not move an event. 2013 retains its historical structure.
+The [2014 season](../career/2014/README.md) is the model from 2014 onward. Folder names carry no numeric prefix, so a directory listing is alphabetical; the table below gives the chronological order in which each area opens during the year. Overlapping work follows the calendar; a folder’s position does not move an event. 2013 retains its historical structure.
 
-| Home | Owns |
-|---|---|
-| `00_team` | Current roster, working depth, coaching staff, player cards, development and film |
-| `01_early_offseason` | Review, scouting, staffing and pre-league-year preparation |
-| `02_free_agency` | Targets, offers, negotiations and completed signings/tenders |
-| `03_offseason_training` | Spring phases, staff plans, actual reports and player assessments |
-| `04_draft` | Board, order, owned picks, selections and undrafted class |
-| `05_training_camp_and_preseason` | Camp, preseason games, assessments, cuts and the preseason trade route |
-| `06_regular_season` | Games, schedule, standings, statistics, league results and weekly/monthly awards |
-| `07_postseason` | Playoff work, separate playoff statistics, honours and Pro Bowl |
-| `08_season_review` | Exit reviews and the annual handoff |
-| `09_finances` | Current-year cap/contracts and links to shared multi-year finances |
-| `10_trades` | Targets/offers before completed trades, with dated exchanges and accounting |
-| `calendar.md` / `ledger.md` | What is scheduled / what actually happened |
+| Order | Home | Owns |
+|---|---|---|
+| 1 | `team` | Current roster, working depth, coaching staff, player cards, development and film |
+| 2 | `early_offseason` | Review, scouting, staffing and pre-league-year preparation |
+| 3 | `free_agency` | Targets, offers, negotiations and completed signings/tenders |
+| 4 | `offseason_training` | Spring phases, staff plans, actual reports and player assessments |
+| 5 | `draft` | Board, order, owned picks, selections and undrafted class |
+| 6 | `training_camp_and_preseason` | Camp, preseason games, assessments, cuts and the preseason trade route |
+| 7 | `regular_season` | Games, schedule, standings, statistics, league results and weekly/monthly awards |
+| 8 | `postseason` | Playoff work, separate playoff statistics, honours and Pro Bowl |
+| 9 | `season_review` | Exit reviews and the annual handoff |
+| 10 | `finances` | Current-year cap/contracts and links to shared multi-year finances |
+| 11 | `trades` | Targets/offers before completed trades, with dated exchanges and accounting |
+| — | `calendar.md` / `ledger.md` | What is scheduled / what actually happened |
 
 Each training phase uses `staff_plan.md` for intended work, `training_report.md` for actual events and `player_assessments.md` for conclusions supported by those events. Dates appear in the folder guides and navigation. A file guide explains the supporting records in each folder.
 

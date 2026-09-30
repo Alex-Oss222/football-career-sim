@@ -222,7 +222,7 @@ All of it is voluntary. Blackmon is under contract through 2015; Jacksonville's 
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/justin_blackmon.json`
-- `career/2014/09_finances/02_player_contracts/contract_status.md` lines 15, 82
+- `career/2014/finances/player_contracts/contract_status.md` lines 15, 82
 - `career/2013/offseason/current_cap_worksheet.md` lines 26, 30 (base-salary game checks forfeited for Weeks 2-5; amount unresolved)
 - `career/2013/roster.md` line 49; `state/04_Roster_and_Staff_Register.md` line 195; `state/05_Current_Season_State.md` section 4 (line 57)
 - `career/2013/offseason/initial_roster.md` line 47; `career/2013/offseason/roster_evaluation.md` line 9
@@ -246,7 +246,7 @@ All of it is voluntary. Blackmon is under contract through 2015; Jacksonville's 
 - `career/2013/postseason/week_18_jacksonville_at_kansas_city/output.md` lines 69, 131
 - `career/2013/postseason/week_19_jacksonville_at_tennessee/output.md` lines 136, 187, 343
 - `career/2013/coaching_staff.md` lines 239-255 (Drake's responsibilities; reports to Tice)
-- `career/2013/ledger.md` Entry 75; `career/2014/01_early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)
+- `career/2013/ledger.md` Entry 75; `career/2014/early_offseason/staff_changes/requests_and_outcomes.md` (Lowry's January 12 departure to Atlanta and the vacant coordinator job)
 - `career/2013/offseason/the_prowl_program_identity.md` ("Good. Better. Best.", "What The Prowl Expects" including "Earn Responsibility" lines 198-214, "Discipline Approach" including "Stars and Veterans" and "Public Discipline", "Confidential Support Is Not Personnel Scouting")
 - `career/2013/offseason/the_prowl_player_readiness_standard.md` sections 7 and 10
 - `career/2013/offseason/player_onboarding_and_development_framework.md` sections 1-2 (Day 2 call; Good/Better/Best scale; evidence-driven usage)

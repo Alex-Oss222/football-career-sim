@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "season": 2014,
+  "next_season": 2015,
+  "status": "NOT_STARTED",
+  "calendar_policy": "historical",
+  "gates": {
+    "team_season_closed": {
+      "status": "OPEN",
+      "evidence": []
+    },
+    "exit_interviews": {
+      "status": "OPEN",
+      "evidence": []
+    },
+    "roster_and_medical": {
+      "status": "OPEN",
+      "evidence": []
+    },
+    "player_contracts_and_cap": {
+      "status": "OPEN",
+      "evidence": []
+    },
+    "staff_contracts": {
+      "status": "OPEN",
+      "evidence": []
+    },
+    "draft_assets": {
+      "status": "OPEN",
+      "evidence": []
+    },
+    "development_and_open_decisions": {
+      "status": "OPEN",
+      "evidence": []
+    },
+    "league_statistics": {
+      "status": "OPEN",
+      "evidence": []
+    },
+    "awards_and_history": {
+      "status": "OPEN",
+      "evidence": []
+    }
+  },
+  "carry_forward": {
+    "ledger": "career/2014/ledger.md",
+    "roster": "career/2014/team/roster/roster.md",
+    "staff": "career/2014/team/coaching_staff/coaching_staff.md",
+    "depth_chart": "career/2014/team/depth_chart/working_depth_chart.json",
+    "cap": "career/2014/finances/salary_cap/cap_worksheet.md",
+    "calendar": "career/2014/calendar.md",
+    "player_ages": "career/2014/team/roster/player_ages.md",
+    "player_contracts": "career/2014/finances/player_contracts/contracts.md",
+    "contract_status": "career/2014/finances/player_contracts/contract_status.md",
+    "player_finances": "career/finances/supporting_records/financial_inputs.json",
+    "organization_finances": "career/finances/coaching_and_organization/coaching_payroll.md",
+    "draft_assets": "career/2014/draft/pick_ownership.json",
+    "medical_and_roles": "state/04_Roster_and_Staff_Register.md",
+    "checkpoint": "state/05_Current_Season_State.md",
+    "development": "career/2014/team/player_development/roster_profiles.md",
+    "decisions": "career/2014/offseason_training/staff_decisions.md",
+    "player_cards": "career/2014/team/player_cards"
+  },
+  "history": {
+    "stats": "career/2014/regular_season/statistics/records",
+    "awards": "career/2014/regular_season/awards",
+    "league_results": "career/2014/regular_season/league_results",
+    "postseason": "career/2014/postseason/games"
+  },
+  "source_sha256": {},
+  "pending_decisions": []
+}

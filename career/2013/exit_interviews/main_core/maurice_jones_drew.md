@@ -199,7 +199,7 @@ All of it is voluntary. Jones-Drew's register status is pending unrestricted fre
 ## Evidence used
 
 - `/tmp/claude-0/-home-user-football-career-sim/df30f343-f6fd-5cd2-bbee-14b18fc1e661/scratchpad/exit_packets/maurice_jones_drew.json`
-- `career/2014/09_finances/02_player_contracts/contract_status.md` lines 34, 69, 142
+- `career/2014/finances/player_contracts/contract_status.md` lines 34, 69, 142
 - `career/2013/roster.md` line 37; `state/04_Roster_and_Staff_Register.md` line 193; `state/05_Current_Season_State.md` section 4 (line 57)
 - `career/2013/offseason/initial_roster.md` line 40; `library/2013_coaching_market_pre_hire.md` line 74 (2012 holdout, injury-shortened season)
 - `career/2013/stats/team_player_stats.md` lines 21, 135, 152; `career/2013/stats/game_receipts/` (Weeks 1-17) and `career/2013/stats/postseason_receipts/` (Weeks 18-19)

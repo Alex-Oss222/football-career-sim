@@ -28,8 +28,8 @@ from . import postseason
 ROOT = Path(__file__).resolve().parents[1]
 GROUPS = (("non-playoff", 1), ("wild_card", 21), ("divisional", 25),
           ("conference", 29), ("super_bowl_loser", 31), ("champion", 32))
-OWNERSHIP = ROOT / "career/2014/04_draft/pick_ownership.json"
-COIN_FLIP = ROOT / "career/2014/04_draft/coin_flip.json"
+OWNERSHIP = ROOT / "career/2014/draft/pick_ownership.json"
+COIN_FLIP = ROOT / "career/2014/draft/coin_flip.json"
 _RECORDED_DRAW = object()
 
 

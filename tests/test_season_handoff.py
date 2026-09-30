@@ -99,7 +99,7 @@ class HandoffTests(unittest.TestCase):
             self.assertEqual(refresh_cards(2015,root,check=True),[])
             self.assertEqual(card.read_bytes(),before)
             self.assertFalse(list(SeasonPaths(2015,root).receipts.glob('*.json')))
-            self.assertTrue((root/'career/2015/09_finances/README.md').exists())
+            self.assertTrue((root/'career/2015/finances/README.md').exists())
             card.write_text(card.read_text()+'Changed assessment\n')
             with self.assertRaisesRegex(ValueError,'not frozen/reviewed: player_cards'):
                 stage(root,data)

@@ -55,7 +55,7 @@ def prepare(root, year):
     sources.update(player_contracts=relative('offseason/contract_table.md'),
                    contract_status=relative('offseason/contract_status_register.md'),
                    player_finances='career/finances/supporting_records/financial_inputs.json',
-                   organization_finances='career/finances/04_coaching_and_organization/coaching_payroll.md',
+                   organization_finances='career/finances/coaching_and_organization/coaching_payroll.md',
                    draft_assets=relative('draft/pick_ownership.json'),
                    medical_and_roles='state/04_Roster_and_Staff_Register.md',
                    checkpoint='state/05_Current_Season_State.md',

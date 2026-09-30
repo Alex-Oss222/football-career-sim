@@ -12,7 +12,7 @@ verified physical measurement, a historical film score or a future ceiling.
 
 ## Evidence and reproducibility
 
-The [frozen exit index](../career/2014/00_team/player_development/2013_exit_player_index.json)
+The [frozen exit index](../career/2014/team/player_development/2013_exit_player_index.json)
 owns membership, position and source paths. The [branch findings](../career/2013/player_profiles/review_findings.json)
 preserve conclusions from those exit interviews, independently of historical
 counterparts. Individual strengths and unresolved corrections keep the scope

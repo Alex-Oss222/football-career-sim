@@ -1,6 +1,6 @@
 # Jacksonville — 2014 season
 
-[Team](00_team/README.md) · [Calendar](calendar.md) · [Finances](09_finances/README.md) · [Trades](10_trades/README.md)
+[Team](team/README.md) · [Calendar](calendar.md) · [Finances](finances/README.md) · [Trades](trades/README.md)
 
 **Where we are:** OTAs finished on June 13, 2014. Next are June 16 physicals and Caldwell’s Bradfield tender decision, then mandatory minicamp on June 17–19. [Current state](../../state/05_Current_Season_State.md) holds the live checkpoint and outstanding decisions. No 2014 game has been played.
 
@@ -10,22 +10,22 @@ The folders follow the opening dates of each phase. Free agency begins before th
 
 | Season folder | Dates | What belongs here |
 |---|---|---|
-| [01 · Early offseason](01_early_offseason/README.md) | January–March 10 | Prior-season review carried into 2014, staff changes, scouting, roster and contract preparation |
-| [02 · Free agency](02_free_agency/README.md) | March 11 onward | Targets, offers, negotiations, signings, tags and tenders |
-| [03 · Offseason training](03_offseason_training/README.md) | April 21–June 22 program window | Phases One and Two, rookie minicamp, OTAs, mandatory minicamp; each has its staff plan, training report and player assessments |
-| [04 · Draft](04_draft/README.md) | May 8–10 | Draft board, pick ownership, selections, undrafted signings and rookie contracts |
-| [05 · Training camp and preseason](05_training_camp_and_preseason/README.md) | July 21–August 31 | Camp, four preseason games, assessments, cut to 75, final 53 and practice squad |
-| [06 · Regular season](06_regular_season/README.md) | September 4–December 28 | Games by week, team and player statistics, standings, weekly and monthly awards |
-| [07 · Postseason and Pro Bowl](07_postseason/README.md) | December 29–February 1, 2015 | Playoff qualification, rounds, postseason statistics, honours and Pro Bowl |
-| [08 · Season review and 2015](08_season_review/README.md) | After Jacksonville’s actual final game | Exit interviews, contract and staff decisions, final assessments and the handoff to next season |
+| [01 · Early offseason](early_offseason/README.md) | January–March 10 | Prior-season review carried into 2014, staff changes, scouting, roster and contract preparation |
+| [02 · Free agency](free_agency/README.md) | March 11 onward | Targets, offers, negotiations, signings, tags and tenders |
+| [03 · Offseason training](offseason_training/README.md) | April 21–June 22 program window | Phases One and Two, rookie minicamp, OTAs, mandatory minicamp; each has its staff plan, training report and player assessments |
+| [04 · Draft](draft/README.md) | May 8–10 | Draft board, pick ownership, selections, undrafted signings and rookie contracts |
+| [05 · Training camp and preseason](training_camp_and_preseason/README.md) | July 21–August 31 | Camp, four preseason games, assessments, cut to 75, final 53 and practice squad |
+| [06 · Regular season](regular_season/README.md) | September 4–December 28 | Games by week, team and player statistics, standings, weekly and monthly awards |
+| [07 · Postseason and Pro Bowl](postseason/README.md) | December 29–February 1, 2015 | Playoff qualification, rounds, postseason statistics, honours and Pro Bowl |
+| [08 · Season review and 2015](season_review/README.md) | After Jacksonville’s actual final game | Exit interviews, contract and staff decisions, final assessments and the handoff to next season |
 
 ## Keep the team together
 
 | Always available | What it contains |
 |---|---|
-| [Team](00_team/README.md) | Roster, depth chart, player cards, coaching staff, development and film |
-| [Finances](09_finances/README.md) | Salary cap, player contracts, upcoming decisions, coaching costs, future commitments and history |
-| [Trades](10_trades/README.md) | Targets and offers first; completed trades below, each showing what Jacksonville sends and receives |
+| [Team](team/README.md) | Roster, depth chart, player cards, coaching staff, development and film |
+| [Finances](finances/README.md) | Salary cap, player contracts, upcoming decisions, coaching costs, future commitments and history |
+| [Trades](trades/README.md) | Targets and offers first; completed trades below, each showing what Jacksonville sends and receives |
 | [Calendar](calendar.md) | Historical dates, deadlines, overlapping phases and conditional events |
 | [Season ledger](ledger.md) | What actually happened, recorded in order |
 | [League personnel](league/personnel/README.md) | Other clubs’ dated personnel records and Jacksonville exceptions |
