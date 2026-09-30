@@ -27,7 +27,9 @@ class KernelCoherenceTests(unittest.TestCase):
         cls.games = sample()
 
     def test_check_ledger_zero_violations(self):
-        self.assertEqual(len(COHERENCE_CLASSES), 34)  # kernel 2014.1 adds two timeout-state classes
+        # Kernel 2014.1 adds two timeout-state classes, kernel 2014.4 three
+        # clock-leg classes and four chain classes.
+        self.assertEqual(len(COHERENCE_CLASSES), 42)
         errors = [e for r in self.games for e in check_ledger(r)]
         self.assertEqual(errors, [])
         self.assertTrue(all(validate_result(r) == [] for r in self.games))
@@ -122,6 +124,11 @@ class KernelCoherenceTests(unittest.TestCase):
         for r in self.games:
             for p in r["possessions"]:
                 key = "clock" if p["category"].startswith("end_of_") else p["category"]
+                if play_detail._zero_play_expiry(p):
+                    # Kernel 2014.4: a zero-play clock expiry replays no 2012 drive.
+                    self.assertEqual((p["net_yards"], p["scrimmage_plays"]), (0, 0))
+                    self.assertLessEqual(p["expiry_seconds"], field_position.CLOCK_EXPIRY_ALLOWANCE)
+                    continue
                 envelope = field_position.load()["envelopes"][key][field_position.start_bin(p["start_spot"])]
                 self.assertIsNotNone(envelope)
                 if key != "touchdown":
@@ -285,6 +292,168 @@ class KernelCoherenceTests(unittest.TestCase):
         mean = lambda v: sum(v) / len(v)
         spread = math.sqrt(sum((v - mean(home_first)) ** 2 for v in home_first) / 99)
         self.assertLess(abs(mean(home_first) - mean(home_second)), 4 * spread * math.sqrt(2 / 100))
+
+
+class HalfFinalClockTests(unittest.TestCase):
+    """Kernel 2014.4 (defect register Tier 1 item 2): a drive may end its
+    window only when time feasible (own seconds s <= window <= s + E); it is
+    never stretched, and no scrimmage snap is stamped after its own end."""
+    E = field_position.CLOCK_EXPIRY_ALLOWANCE
+
+    @classmethod
+    def setUpClass(cls):
+        cls.games = sample()
+
+    def assert_feasible(self, drawn, window):
+        fp = field_position
+        if drawn.consumes_window:
+            self.assertEqual(drawn.seconds, window)
+            self.assertEqual(drawn.own_seconds + drawn.expiry_seconds, window)
+            self.assertTrue(0 <= drawn.expiry_seconds <= self.E, (drawn.category, drawn.own_seconds, window))
+            self.assertEqual(drawn.own_seconds, fp.own_seconds(drawn.tuple))
+        else:
+            self.assertEqual(drawn.expiry_seconds, 0)
+            self.assertLess(drawn.seconds, window)
+
+    def draws(self, half, windows, diffs, timeouts=None, n=300, spot=75):
+        import random
+        rng, diagnostics, out = random.Random(20144), {}, []
+        for i in range(n):
+            window, diff = windows[i % len(windows)], diffs[i % len(diffs)]
+            drawn = field_position.draw_drive(rng, spot, half, window, diff, 0.0, diagnostics, timeouts)
+            self.assert_feasible(drawn, window)
+            out.append((window, drawn))
+        return out, diagnostics
+
+    def test_expiry_allowance_is_the_play_clock(self):
+        from runtime.rules import RULES
+        self.assertEqual(self.E, RULES.play_clock_seconds)
+        self.assertEqual(self.E, 40)
+
+    def test_short_final_possession(self):
+        for half, diffs in ((1, (0, -3, 7)), (2, (-4, 0, 3, 10))):
+            out, _ = self.draws(half, (5, 12, 25, 38), diffs, (2, 1))
+            finals = [d for _, d in out if d.consumes_window]
+            self.assertTrue(finals)
+            self.assertTrue(all(d.own_seconds <= w for w, d in out if d.consumes_window))
+
+    def test_long_first_half_window_is_never_stretched(self):
+        fp = field_position
+        # The register's case: a 9:20 first-half window. Its final pool
+        # ('61-120' by the keymap) holds nothing time feasible, so the
+        # redirect cannot end the half; a fitting drive is drawn instead.
+        pool = ("h1_final", fp.h1_key(560))
+        self.assertEqual([t for c in fp.CATEGORIES for t in fp._dynamic(tuple(fp._members(pool, c)), c,
+                                                                         "h1_final", 560)], [])
+        out, diagnostics = self.draws(1, (560, 589, 300, 1000), (0, -7, 7), (3, 3))
+        self.assertFalse([d for w, d in out if d.consumes_window and w > 300])
+
+    def test_zero_and_three_timeouts(self):
+        for timeouts in ((0, 0), (3, 3)):
+            for half, windows, diffs in ((1, (35, 70, 110), (0, -3)), (2, (45, 90, 150, 280), (-4, -8, 3))):
+                out, diagnostics = self.draws(half, windows, diffs, timeouts)
+                self.assertTrue(any(d.consumes_window for _, d in out), (timeouts, half))
+                self.assertTrue(any(k.startswith("timeout_level_") for k in diagnostics))
+                self.assertEqual(diagnostics.get("fallback_zero_tuple", 0), 0)
+
+    def test_overtime_clock_expiry(self):
+        out, _ = self.draws("OT", (20, 60, 120, 400, 900), (0, -3), (2, 2))
+        for window, drawn in out:
+            if drawn.consumes_window:
+                self.assertEqual(drawn.category, "clock")
+        # A postseason overtime countdown is never run out by one drive.
+        out, _ = self.draws("OT", (9000, 8100), (0,), (3, 3), n=100)
+        self.assertFalse([d for _, d in out if d.consumes_window])
+
+    def test_fallbacks_fit_or_expire(self):
+        import random
+        fp = field_position
+        with mock.patch.object(fp, "_draw_from", return_value=None), \
+                mock.patch.object(fp, "_clock_fallback", return_value=None):
+            diagnostics = {}
+            short = fp.draw_drive(random.Random(1), 75, 2, 30, -4, 0.0, diagnostics, (1, 1))
+            self.assertEqual((short.category, short.fallback, short.own_seconds, short.expiry_seconds),
+                             ("clock", "expiry", 0, 30))
+            self.assertEqual(diagnostics.get("clock_expiry_zero"), 1)
+            first = fp.draw_drive(random.Random(1), 75, 1, 25, 0, 0.0, diagnostics, (1, 1))
+            self.assertEqual(first.fallback, "expiry")
+            # Beyond the allowance a stretched zero-play possession is the
+            # counted last rung and publishes an expiry leg the audit flags.
+            long = fp.draw_drive(random.Random(1), 75, 2, 300, -4, 0.0, diagnostics, (1, 1))
+            self.assertEqual((long.fallback, long.expiry_seconds), ("zero", 300))
+            self.assertEqual(diagnostics.get("fallback_zero_tuple"), 1)
+        # Unpatched, a window beyond the allowance with no feasible final gets
+        # a real drive that fits inside it and the window continues.
+        diagnostics = {}
+        with mock.patch.object(fp, "_clock_fallback", return_value=None):
+            real = fp._draw_from
+            def no_finals(rng, pool_id, regime, *args, **kw):
+                return None if regime in ("h1_final", "late", "ot") else real(rng, pool_id, regime, *args, **kw)
+            with mock.patch.object(fp, "_draw_from", side_effect=no_finals):
+                fit = fp.draw_drive(random.Random(3), 75, 2, 200, -4, 0.0, diagnostics, (1, 1))
+        self.assertFalse(fit.consumes_window)
+        self.assertLess(fit.seconds, 200)
+        self.assertNotEqual(fit.category, "clock")
+        self.assertEqual(diagnostics.get("fallback_fit_drive"), 1)
+
+    def test_sample_half_finals_and_snap_clock(self):
+        fp = field_position
+        finals = expiries = 0
+        for r in self.games:
+            self.assertEqual(r["diagnostics"].get("fallback_zero_tuple", 0), 0)
+            for p in r["possessions"]:
+                own, expiry = p["own_seconds"], p["expiry_seconds"]
+                self.assertEqual(own + expiry, p["seconds"])
+                if not p["half_final"]:
+                    self.assertEqual(expiry, 0)
+                    continue
+                finals += 1
+                expiries += expiry > 0
+                self.assertTrue(0 <= expiry <= self.E, (r["event_id"], p["number"], own, expiry))
+                low, high = fp.snap_seconds_range()[p["scrimmage_plays"]]
+                self.assertTrue(low <= own <= high)
+                own_end = p["end_clock"] + expiry
+                for row in drive_rows(r, p["number"]):
+                    if row["play_type"] in SCRIMMAGE:
+                        self.assertGreaterEqual(play_detail._row_remaining(row, r["game_type"]), own_end)
+                        if row["game_clock"] == "0:00" and row.get("completion"):
+                            self.assertEqual(expiry, 0)
+        self.assertGreater(finals, len(self.games))
+        self.assertGreater(expiries, 0)
+
+    def test_clock_leg_classes_detect_and_gate(self):
+        r = next(g for g in self.games if any(p["half_final"] and p["expiry_seconds"] and p["scrimmage_plays"]
+                                              for p in g["possessions"]))
+        p_index = next(i for i, p in enumerate(r["possessions"])
+                       if p["half_final"] and p["expiry_seconds"] and p["scrimmage_plays"])
+
+        def classes(result):
+            return {e.split(":", 1)[0] for e in check_ledger(result)}
+
+        leg = copy.deepcopy(r)
+        leg["possessions"][p_index]["own_seconds"] -= self.E + 1
+        leg["possessions"][p_index]["expiry_seconds"] += self.E + 1
+        self.assertIn("expiry_leg_exceeds_allowance", classes(leg))
+        stretched = copy.deepcopy(r)
+        p = stretched["possessions"][p_index]
+        p["own_seconds"], p["expiry_seconds"] = 5000, p["seconds"] - 5000
+        self.assertIn("seconds_per_snap_outside", classes(stretched))
+        late = copy.deepcopy(r)
+        number = late["possessions"][p_index]["number"]
+        row = next(x for x in reversed(late["play_ledger"]) if x["drive"] == number and x["play_type"] in SCRIMMAGE)
+        row["game_clock"] = "0:00"
+        self.assertIn("snap_after_expiry", classes(late))
+        # Closed receipts without the clock-leg fields are not measured.
+        legacy = copy.deepcopy(late)
+        for q in legacy["possessions"]:
+            del q["own_seconds"], q["expiry_seconds"]
+        self.assertFalse(set(play_detail.CLOCK_LEG_CLASSES) & play_detail.measurable_classes(legacy))
+        self.assertNotIn("snap_after_expiry", classes(legacy))
+        from runtime.statbook import make_receipt
+        receipt = make_receipt(r, week=4, matchup="B at A", detail="compact_stats")
+        self.assertEqual(set(play_detail.CLOCK_LEG_CLASSES) & play_detail.measurable_classes(receipt),
+                         {"seconds_per_snap_outside", "expiry_leg_exceeds_allowance"})
+        self.assertEqual(check_ledger(receipt), [])
 
 
 if __name__ == "__main__":

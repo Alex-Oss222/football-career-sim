@@ -106,7 +106,14 @@ class ProductionGameRunnerTests(unittest.TestCase):
     def test_one_passer_and_depth_ordered_usage(self):
         result=run_game(self.home,self.away,event_id="depth",snapshot="snapshot",client=self.client)
         players=result["team_stats"]["A"]["players"]
-        self.assertEqual([p for p,v in players.items() if v["pass_attempts"]],["qb"])
+        # Kernel 2014.4: the depth-chart QB passes until he is removed; any
+        # later passer is a drive passer that followed his removal.
+        throwers=[p for p,v in players.items() if v["pass_attempts"]]
+        self.assertEqual(throwers[0] if "qb" in throwers else "qb","qb")
+        passers=[p["passer"] for p in result["possessions"] if p["team"]=="A"]
+        self.assertEqual(passers[0],"qb")
+        if set(throwers)!={"qb"}:
+            self.assertTrue(any(i["player"]=="qb" and i["removed"] for i in result["injuries"]))
         self.assertTrue(all(v["tackles"]==v["solo_tackles"]+v["assisted_tackles"] for v in players.values()))
 
     def test_labels_paths_participation_and_evidence(self):

@@ -214,6 +214,39 @@ def fg_make_prob(distance):
     return made / attempts
 
 
+# Kernel 2014.4 phase 2 (defect register item 18): one logistic slope per
+# yard of distance fitted on every 2010-2012 regular-season attempt, with a
+# separate intercept per drive-model band anchored so that the mean fitted
+# probability over the band's own 2012 attempts equals the band's 2012 make
+# rate (library/data/2014_strength_calibration_v3.json, field_goal_distance;
+# built by scripts/research/build_2014_strength_calibration_v3.py). The
+# band rows of runtime/bands.py keep their centres by construction.
+FG_DISTANCE = ROOT / "library/data/2014_strength_calibration_v3.json"
+
+
+@lru_cache(maxsize=1)
+def fg_distance_model():
+    data = json.loads(FG_DISTANCE.read_text(encoding="utf-8"))["field_goal_distance"]
+    bands = []
+    for label, low, high in load()["rates"]["fg_bin_edges"]:
+        band = data["bands"][label]
+        bands.append((label, low, high, band["intercept"]))
+    return {"slope": data["slope_per_yard"], "bands": bands}
+
+
+def fg_make_prob_at(distance):
+    """The make probability at one distance under the distance model: the
+    band's anchored intercept plus the pooled slope times the distance."""
+    model = fg_distance_model()
+    intercept = model["bands"][-1][3]
+    for label, low, high, a in model["bands"]:
+        if distance <= high:
+            intercept = a
+            break
+    import math
+    return 1.0 / (1.0 + math.exp(-(intercept + model["slope"] * distance)))
+
+
 def rate(name):
     made, attempts = load()["rates"][name]
     return made / attempts

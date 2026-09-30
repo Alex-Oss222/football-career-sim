@@ -121,7 +121,10 @@ class SampleCreditTests(unittest.TestCase):
                     continue
                 offense, defense = row["offense"], row["defense"]
                 blocker = by_team[offense]["players"][row["blocker"]]
-                self.assertEqual(blocker["line_starts"], 1)
+                # Kernel 2014.4: a game starter, or a lineman who entered after
+                # a removal; either way he was on the field for that drive.
+                self.assertTrue(blocker["line_starts"] == 1 or blocker["offensive_snaps"] > 0)
+                self.assertGreater(blocker["offensive_snaps"], 0)
                 rusher = by_team[defense]["players"][row["tackler"]]["position"]
                 edge = rusher in usage.EDGE_RUSHERS
                 self.assertIn(row["blocker_slot"], usage.EDGE_SLOTS if edge else usage.INTERIOR_SLOTS)
@@ -142,12 +145,22 @@ class SampleCreditTests(unittest.TestCase):
         self.assertGreater(checked, 500)
 
     def test_one_returner_per_club_per_game(self):
+        # Kernel 2014.4: one club returner at a time. He changes only after a
+        # removal from his club since the previous return: the returner
+        # himself, or a starter whose place the returner then took (the
+        # returner rule skips base starters).
         for game in self.games:
-            for team, stats in game["team_stats"].items():
-                kick = [p for p, line in stats["players"].items() if line["kick_returns"]]
-                punt = [p for p, line in stats["players"].items() if line["punt_returns"]]
-                self.assertLessEqual(len(kick), 1)
-                self.assertLessEqual(len(punt), 1)
+            removals = [(i["team"], i["drive"]) for i in game["injuries"] if i["removed"]]
+            for kind in ("kickoff", "punt"):
+                last = {}
+                for row in game["play_ledger"]:
+                    if not row.get("returner") or (row["play_type"] == "punt") != (kind == "punt"):
+                        continue
+                    team = row["defense"]
+                    previous = last.get(team)
+                    if previous is not None and previous[0] != row["returner"]:
+                        self.assertTrue(any(t == team and previous[1] <= d < row["drive"] for t, d in removals))
+                    last[team] = (row["returner"], row["drive"])
 
     def test_line_starts_and_long_snaps(self):
         for game in self.games:
@@ -230,7 +243,11 @@ class ViewTests(unittest.TestCase):
 
 
 class ResultIdentityTests(unittest.TestCase):
-    """Credit rules must not move a result: 2014.2's digests reproduce."""
+    """A credit-only or display-only change must not move a result: the
+    digests recorded in tests/data/result_identity.json reproduce. The file
+    was re-recorded for the kernel 2014.4 candidate (synthetic legacy-path
+    fixtures; items 2, 4 and 5 and the E1 home term change results by
+    design), as its note says. Closed 2013 receipts are never rerun."""
 
     def test_results_match_the_recorded_digests(self):
         fixture = json.loads((Path(__file__).parent / "data/result_identity.json").read_text())

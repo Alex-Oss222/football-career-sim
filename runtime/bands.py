@@ -7,6 +7,9 @@ inspect inputs and code, not a reason to reroll canon.
 """
 from __future__ import annotations
 
+import math
+from functools import lru_cache
+
 from .calibration import load as load_calibration
 from .usage import group, load as load_usage
 
@@ -37,6 +40,7 @@ def _shares(counter, groups):
 def expected():
     usage = load_usage()["values"]
     cal = load_calibration()
+    tilt = _tilt_source()
     rate = usage["assisted_tackle_play_rate"]
     return {
         "qb1_attempt_share": usage["passing"]["qb1_attempt_share"],
@@ -54,7 +58,20 @@ def expected():
         ),
         "third_down_attempts_per_team_game": usage["third_down_attempts_per_team_game"],
         "third_down_rate": cal["model"]["third_down_rate"],
+        # Kernel 2014.4 (defect register item 19): the club's top-target and
+        # top-carry (non-QB) player's share of the club's targets and carries
+        # per team-game, centred on the 2012 per team-game means with their
+        # SDs (library/data/2014_strength_calibration_v2.json,
+        # team_game_top_shares_2012; 512 team-games).
+        **{key: (tilt[key]["mean"], tilt[key]["sd"])
+           for key in ("top_receiver_target_share", "top_rusher_carry_share")},
     }
+
+
+def _tilt_source():
+    from .usage import TILT_SOURCE
+    import json
+    return json.loads(TILT_SOURCE.read_text(encoding="utf-8"))["team_game_top_shares_2012"]
 
 
 def _kneels_by_team(receipt):
@@ -73,6 +90,7 @@ def observe(receipts):
     assisted = tackles = 0
     totals = dict(plays=0, yards=0, points=0, first_downs=0, third_att=0, third_conv=0)
     kneels = {}
+    top_target, top_carry = [], []
     for index, receipt in enumerate(receipts):
         for team_id, count in _kneels_by_team(receipt).items():
             kneels[(index, team_id)] = count
@@ -87,6 +105,13 @@ def observe(receipts):
         attempts = [line.get("pass_attempts", 0) for line in players.values()]
         if sum(attempts):
             qb1.append(max(attempts) / sum(attempts))
+        targets = [line.get("targets", 0) for line in players.values()]
+        if sum(targets):
+            top_target.append(max(targets) / sum(targets))
+        carries = [line.get("rushing_attempts", 0) for line in players.values()
+                   if group(line.get("position")) != "QB"]
+        if sum(carries):
+            top_carry.append(max(carries) / sum(carries))
         for line in players.values():
             grp = group(line.get("position"))
             if not grp:
@@ -110,6 +135,9 @@ def observe(receipts):
     return {
         "team_games": team_games,
         "qb1_attempt_share": sum(qb1) / len(qb1) if qb1 else None,
+        "top_receiver_target_share": sum(top_target) / len(top_target) if top_target else None,
+        "top_rusher_carry_share": sum(top_carry) / len(top_carry) if top_carry else None,
+        "top_share_team_games": {"target": len(top_target), "carry": len(top_carry)},
         "rush_share": _shares(rush, ("RB", "QB", "FB", "WR", "TE")),
         "target_share": _shares(target, ("WR", "TE", "RB", "FB")),
         "tackle_share": _shares(tackle, ("DB", "LB", "DL")),
@@ -140,6 +168,14 @@ def audit(receipts):
         rows.append((metric, observed, band, tolerance, status))
 
     add("QB1 share of team pass attempts", obs["qb1_attempt_share"], exp["qb1_attempt_share"], SHARE_TOLERANCE)
+    # Item 19 rows: per team-game top shares against the 2012 per team-game
+    # centres; tolerance three 2012 SDs over the root of the team-game count.
+    for key, label, n in (("top_receiver_target_share", "top receiver share of team targets (team-game)",
+                           obs["top_share_team_games"]["target"]),
+                          ("top_rusher_carry_share", "top rusher share of non-QB carries (team-game)",
+                           obs["top_share_team_games"]["carry"])):
+        centre, sd_2012 = exp[key]
+        add(label, obs[key], centre, 3 * sd_2012 / math.sqrt(n) if n else None)
     for name, label in (("rush_share", "carries"), ("target_share", "targets"), ("tackle_share", "tackle credits")):
         for grp, band in exp[name].items():
             add(f"{grp} share of {label}", obs[name].get(grp), band, SHARE_TOLERANCE)
@@ -245,10 +281,15 @@ KNOWN_DETECTIONS["2014.2"]["punt share of possessions ending in Q4's last 5:00 o
 # Kernel 2014.3 changes credit only (runtime/README.md, kernel 2014.3): every
 # result is identical to 2014.2, so the registry carries over unchanged.
 KNOWN_DETECTIONS["2014.3"] = dict(KNOWN_DETECTIONS["2014.2"])
+# Kernel 2014.4 (candidate; the version flips only at the user's release
+# decision) carries the registry over: every known-detection row read WITHIN
+# on its 250-game acceptance sample (runtime/README.md, kernel 2014.4
+# candidate acceptance) and none was added or removed.
+KNOWN_DETECTIONS["2014.4"] = dict(KNOWN_DETECTIONS["2014.3"])
 
 
 def known_detections(cohort):
-    """{metric: note} for a kernel cohort ("2013.6", "2013.7", "2013.8", "2013.9", "2013.10", "2013.11", "2014.1", "2014.2" or "2014.3"); empty otherwise."""
+    """{metric: note} for a kernel cohort ("2013.6", "2013.7", "2013.8", "2013.9", "2013.10", "2013.11", "2014.1", "2014.2", "2014.3" or "2014.4"); empty otherwise."""
     return dict(KNOWN_DETECTIONS.get(cohort, {}))
 
 
@@ -486,6 +527,21 @@ def audit_field_position(receipts):
         add("mean realized punt net, LOS %s" % label, sum(nets) / len(nets) if nets else None, c["mean"],
             3 * c["sd"] / math.sqrt(len(nets)) if nets else None, events=len(nets))
 
+    # Kernel 2014.4 phase 2: return averages from the player lines (kick
+    # returns are every non-touchback kickoff, punt returns the returned
+    # punts), against the 2012 pools' own records.
+    kr = pr = kr_yards = pr_yards = 0
+    for receipt in receipts:
+        for game in receipt.get("team_stats", {}).values():
+            for line in game.get("players", {}).values():
+                kr += line.get("kick_returns", 0) or 0
+                kr_yards += line.get("kick_return_yards", 0) or 0
+                pr += line.get("punt_returns", 0) or 0
+                pr_yards += line.get("punt_return_yards", 0) or 0
+    for label, c, made, n in (("mean kickoff return yards (non-touchback kickoffs)", return_centres()["kickoff"], kr_yards, kr),
+                              ("mean punt return yards (returned punts)", return_centres()["punt"], pr_yards, pr)):
+        add(label, made / n if n else None, c["mean"], 3 * c["sd"] / math.sqrt(n) if n else None, events=n)
+
     # Late trailing punts (possessions ending in Q4's last 5:00 / 2:00 or OT).
     for key, seconds, text in (("late_punt_share_last5_trail1_8", 300, "last 5:00"),
                                ("late_punt_share_le120_trail1_8", 120, "last 2:00")):
@@ -572,6 +628,22 @@ def audit_field_position(receipts):
     add("overtime punt share", sum(d["category"] == "punt" for d in ot) / len(ot) if ot else None, made / n,
         None, graded=False)
     return team_games, rows
+
+
+@lru_cache(maxsize=1)
+def return_centres():
+    """Kernel 2014.4 phase 2: the 2012 kickoff pool's non-touchback records
+    and the punt pool's returned records (return yards mean and SD)."""
+    from . import field_position as fp
+    from .field_position import KICK, PUNT
+    data = fp.load()
+    kicks = [r[KICK["return_yards"]] for r in data["kickoff_pool"] if not r[KICK["touchback"]]]
+    punts = [r[PUNT["return_yards"]] for r in data["punt_pool"] if r[PUNT["outcome"]] == "returned"]
+
+    def moments(xs):
+        m = sum(xs) / len(xs)
+        return {"n": len(xs), "mean": m, "sd": math.sqrt(sum((x - m) ** 2 for x in xs) / (len(xs) - 1))}
+    return {"kickoff": moments(kicks), "punt": moments(punts)}
 
 
 def coherence(receipts):

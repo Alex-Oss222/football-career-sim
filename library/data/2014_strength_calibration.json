@@ -1,0 +1,3861 @@
+{
+ "schema_version": 1,
+ "built_by": "scripts/research/build_2014_strength_calibration.py",
+ "policy": "runtime/2014_engine_decisions.md E1; user choice 'Honours + role'; runtime/defect_register.md item 1",
+ "preregistered": {
+  "tier_rule": {
+   "window": "the two most recent completed pre-divergence seasons before the season being predicted (2012 target: 2010-2011 honours; 2014 branch: 2011-2012 honours)",
+   "Elite": "any AP All-Pro 1st team in the window",
+   "Plus": "AP All-Pro 2nd team or an original Pro Bowl selection in the window",
+   "Average": "everyone else (low-confidence fallback: insufficient knowledge, not verified average)",
+   "alternates_replacements": "no effect: a replacement is chosen after withdrawals from a truncated pool, its announcement date is not pinned, and 2012-season replacements may post-date the divergence",
+   "specialists": "K/P/KR/PR/LS/ST honours feed special teams only, never the offense/defense composites"
+  },
+  "tier_values": {
+   "Elite": 4,
+   "Plus": 3,
+   "Average": 2
+  },
+  "evidence_weight": {
+   "Confirmed two-pass": 1.0,
+   "Single-pass": 0.5
+  },
+  "player_value": "max over admissible honours of (tier_value - 2) * evidence_weight",
+  "position_weights": {
+   "QB": 3,
+   "other offensive starter": 1,
+   "defensive starter": 1
+  },
+  "unit_composite": "sum over the unit's starters of position_weight * player_value",
+  "role_source_primary": "the club's Week 1 regular-season depth chart, depth_team 1, formation Offense/Defense (role only, not ability)",
+  "role_source_sensitivity": "all players on the club's Week 1 weekly roster (status ACT) grouped by position; at most one QB (highest value)",
+  "targets": "per-drive touchdown share (fixed_drive_result == 'Touchdown') and points per drive, offense and defense, 2012 regular season, all drives with a possession team",
+  "fit": "one slope per side by drive-weighted least squares on the 32 clubs (with intercept); shrinkage prior N(0, 0.025^2) per composite unit (the installed kernel's per-tier edge); leave-one-club-out prediction; joint drive-level check with home indicator and game-cluster bootstrap (500 draws, seed 20140401)",
+  "edge_target": "implied true SD of per-drive offense-minus-defense TD-share difference about 0.048 (offense:defense variance about 4:1), derived from 2012 nflverse drives; reported, never used to inflate the fitted scale",
+  "clamp": "installed kernel: edge = clip((off_anchor - def_anchor) * 0.025 + 0.008 home, -0.06, 0.06)"
+ },
+ "sources": {
+  "depth_charts_2012.csv": {
+   "url": "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2012.csv",
+   "sha256": "e091a7fa0343fe3ae0bcee9202e1d8ca1ff859db398d20ab751017df29e85719"
+  },
+  "depth_charts_2011.csv": {
+   "url": "https://github.com/nflverse/nflverse-data/releases/download/depth_charts/depth_charts_2011.csv",
+   "sha256": "4c32f8cd3c1105d891fe64d98cdc902f2f2ad32e0f56b5088fe12aaaa316224a"
+  },
+  "roster_weekly_2012.csv": {
+   "url": "https://github.com/nflverse/nflverse-data/releases/download/weekly_rosters/roster_weekly_2012.csv",
+   "sha256": "262fd2f9a862c3b97275d91c60951f940a4e82989503b8359ac11b12a76c0e2f"
+  },
+  "play_by_play_2012.csv.gz": {
+   "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2012.csv.gz",
+   "sha256": "ff1cda2e26610ef8720324e442d1e5ebc24918e08fd1d2933590b7b91a7068cd"
+  },
+  "play_by_play_2011.csv.gz": {
+   "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2011.csv.gz",
+   "sha256": "ffa0bfb803f0c30a4b765af5e621b0f601d695efdba7d6d396fb067d6a0c89b2"
+  },
+  "honours_evidence": {
+   "file": "library/data/2010_2012_honours_evidence.json",
+   "sha256": "3c5f6037e19232c9a9fdcf4903d34ca19897816d91b56528820f83386fee805b"
+  },
+  "league_players": {
+   "file": "career/2014/offseason/league_rails/league_players.json",
+   "sha256": "2c90dbc1883332a5a756fe9cf60bf8c51d69fd4533770c828c3362558c8b2cc9"
+  }
+ },
+ "study_2012": {
+  "season": 2012,
+  "honour_seasons": [
+   2010,
+   2011
+  ],
+  "clubs": {
+   "ARI": {
+    "offense_composite": 1.0,
+    "defense_composite": 1.0,
+    "offense_players": [
+     {
+      "player_id": "00-0022921",
+      "name": "Larry Fitzgerald",
+      "position": "WR",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0020505",
+      "name": "Adrian Wilson",
+      "position": "SS",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "off_drives": 212,
+    "off_td": 0.0991,
+    "off_ppd": 1.0472,
+    "def_drives": 211,
+    "def_td": 0.1564,
+    "def_ppd": 1.4502
+   },
+   "ATL": {
+    "offense_composite": 7.0,
+    "defense_composite": 2.0,
+    "offense_players": [
+     {
+      "player_id": "00-0006101",
+      "name": "Tony Gonzalez",
+      "position": "TE",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0023462",
+      "name": "Roddy White",
+      "position": "WR",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0022821",
+      "name": "Michael Turner",
+      "position": "RB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0026143",
+      "name": "Matt Ryan",
+      "position": "QB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 3,
+      "contribution": 3.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0019546",
+      "name": "John Abraham",
+      "position": "OLB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "off_drives": 178,
+    "off_td": 0.2472,
+    "off_ppd": 2.2753,
+    "def_drives": 181,
+    "def_td": 0.1657,
+    "def_ppd": 1.6022
+   },
+   "BAL": {
+    "offense_composite": 3.5,
+    "defense_composite": 5.0,
+    "offense_players": [
+     {
+      "player_id": "00-0025473",
+      "name": "Marshal Yanda",
+      "position": "G",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0022397",
+      "name": "Vonta Leach",
+      "position": "FB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0026195",
+      "name": "Ray Rice",
+      "position": "RB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0009889",
+      "name": "Ray Lewis",
+      "position": "ILB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0024227",
+      "name": "Haloti Ngata",
+      "position": "DT",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0021377",
+      "name": "Ed Reed",
+      "position": "FS",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "off_drives": 200,
+    "off_td": 0.205,
+    "off_ppd": 1.885,
+    "def_drives": 193,
+    "def_td": 0.1554,
+    "def_ppd": 1.6632
+   },
+   "BUF": {
+    "offense_composite": 0,
+    "defense_composite": 1.0,
+    "offense_players": [],
+    "defense_players": [
+     {
+      "player_id": "00-0024348",
+      "name": "Kyle Williams",
+      "position": "DT",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "off_drives": 193,
+    "off_td": 0.1917,
+    "off_ppd": 1.6632,
+    "def_drives": 188,
+    "def_td": 0.2606,
+    "def_ppd": 2.1649
+   },
+   "CAR": {
+    "offense_composite": 2.5,
+    "defense_composite": 0,
+    "offense_players": [
+     {
+      "player_id": "00-0022117",
+      "name": "Jordan Gross",
+      "position": "T",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0020337",
+      "name": "Steve Smith",
+      "position": "WR",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0025446",
+      "name": "Ryan Kalil",
+      "position": "C",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "defense_players": [],
+    "off_drives": 176,
+    "off_td": 0.233,
+    "off_ppd": 1.8977,
+    "def_drives": 178,
+    "def_td": 0.1854,
+    "def_ppd": 1.8596
+   },
+   "CHI": {
+    "offense_composite": 1.5,
+    "defense_composite": 4.5,
+    "offense_players": [
+     {
+      "player_id": "00-0026184",
+      "name": "Matt Forte",
+      "position": "RB",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0024334",
+      "name": "Brandon Marshall",
+      "position": "WR",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0019456",
+      "name": "Brian Urlacher",
+      "position": "MLB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0021140",
+      "name": "Julius Peppers",
+      "position": "DE",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0022128",
+      "name": "Lance Briggs",
+      "position": "OLB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0022123",
+      "name": "Charles Tillman",
+      "position": "CB",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     }
+    ],
+    "off_drives": 196,
+    "off_td": 0.1633,
+    "off_ppd": 1.5306,
+    "def_drives": 196,
+    "def_td": 0.1327,
+    "def_ppd": 1.2857
+   },
+   "CIN": {
+    "offense_composite": 0.5,
+    "defense_composite": 1.0,
+    "offense_players": [
+     {
+      "player_id": "00-0027942",
+      "name": "A.J. Green",
+      "position": "WR",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0027720",
+      "name": "Geno Atkins",
+      "position": "DT",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "off_drives": 196,
+    "off_td": 0.1939,
+    "off_ppd": 1.8163,
+    "def_drives": 193,
+    "def_td": 0.1606,
+    "def_ppd": 1.513
+   },
+   "CLE": {
+    "offense_composite": 2.0,
+    "defense_composite": 0,
+    "offense_players": [
+     {
+      "player_id": "00-0025390",
+      "name": "Joe Thomas",
+      "position": "T",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "defense_players": [],
+    "off_drives": 195,
+    "off_td": 0.1487,
+    "off_ppd": 1.441,
+    "def_drives": 198,
+    "def_td": 0.202,
+    "def_ppd": 1.7172
+   },
+   "DAL": {
+    "offense_composite": 2.0,
+    "defense_composite": 3.0,
+    "offense_players": [
+     {
+      "player_id": "00-0022127",
+      "name": "Jason Witten",
+      "position": "TE",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0023445",
+      "name": "DeMarcus Ware",
+      "position": "DE",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0023656",
+      "name": "Jay Ratliff",
+      "position": "NT",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "off_drives": 181,
+    "off_td": 0.2044,
+    "off_ppd": 1.9227,
+    "def_drives": 179,
+    "def_td": 0.2235,
+    "def_ppd": 2.0279
+   },
+   "DEN": {
+    "offense_composite": 1.5,
+    "defense_composite": 2.5,
+    "offense_players": [
+     {
+      "player_id": "00-0010346",
+      "name": "Peyton Manning",
+      "position": "QB",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 3,
+      "contribution": 1.5
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0024341",
+      "name": "Elvis Dumervil",
+      "position": "DE",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0000585",
+      "name": "Champ Bailey",
+      "position": "CB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0027940",
+      "name": "Von Miller",
+      "position": "OLB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "off_drives": 191,
+    "off_td": 0.2618,
+    "off_ppd": 2.2094,
+    "def_drives": 194,
+    "def_td": 0.1546,
+    "def_ppd": 1.3711
+   },
+   "DET": {
+    "offense_composite": 2.0,
+    "defense_composite": 2.0,
+    "offense_players": [
+     {
+      "player_id": "00-0025389",
+      "name": "Calvin Johnson",
+      "position": "WR",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0027855",
+      "name": "Ndamukong Suh",
+      "position": "DE",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "off_drives": 200,
+    "off_td": 0.19,
+    "off_ppd": 1.8,
+    "def_drives": 197,
+    "def_td": 0.2132,
+    "def_ppd": 1.9188
+   },
+   "GB": {
+    "offense_composite": 7.0,
+    "defense_composite": 4.5,
+    "offense_players": [
+     {
+      "player_id": "00-0024267",
+      "name": "Greg Jennings",
+      "position": "WR",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0022999",
+      "name": "John Kuhn",
+      "position": "FB",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0023459",
+      "name": "Aaron Rodgers",
+      "position": "QB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 3,
+      "contribution": 6.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0026985",
+      "name": "B.J. Raji",
+      "position": "NT",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0027002",
+      "name": "Clay Matthews",
+      "position": "OLB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0018227",
+      "name": "Charles Woodson",
+      "position": "FS",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "off_drives": 185,
+    "off_td": 0.2649,
+    "off_ppd": 2.1676,
+    "def_drives": 189,
+    "def_td": 0.1905,
+    "def_ppd": 1.7407
+   },
+   "HOU": {
+    "offense_composite": 3.5,
+    "defense_composite": 2.0,
+    "offense_players": [
+     {
+      "player_id": "00-0026166",
+      "name": "Duane Brown",
+      "position": "T",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0026796",
+      "name": "Arian Foster",
+      "position": "RB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0022044",
+      "name": "Andre Johnson",
+      "position": "WR",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0026991",
+      "name": "Brian Cushing",
+      "position": "ILB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0024239",
+      "name": "Johnathan Joseph",
+      "position": "CB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "off_drives": 203,
+    "off_td": 0.202,
+    "off_ppd": 1.867,
+    "def_drives": 205,
+    "def_td": 0.1805,
+    "def_ppd": 1.5707
+   },
+   "IND": {
+    "offense_composite": 2.0,
+    "defense_composite": 1.0,
+    "offense_players": [
+     {
+      "player_id": "00-0020498",
+      "name": "Reggie Wayne",
+      "position": "WR",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0022059",
+      "name": "Robert Mathis",
+      "position": "OLB",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0021146",
+      "name": "Dwight Freeney",
+      "position": "DE",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     }
+    ],
+    "off_drives": 183,
+    "off_td": 0.1913,
+    "off_ppd": 1.7596,
+    "def_drives": 180,
+    "def_td": 0.2056,
+    "def_ppd": 1.9389
+   },
+   "JAX": {
+    "offense_composite": 0.5,
+    "defense_composite": 0,
+    "offense_players": [
+     {
+      "player_id": "00-0024243",
+      "name": "Marcedes Lewis",
+      "position": "TE",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     }
+    ],
+    "defense_players": [],
+    "off_drives": 190,
+    "off_td": 0.1263,
+    "off_ppd": 1.2737,
+    "def_drives": 199,
+    "def_td": 0.206,
+    "def_ppd": 1.9497
+   },
+   "KC": {
+    "offense_composite": 3.0,
+    "defense_composite": 2.0,
+    "offense_players": [
+     {
+      "player_id": "00-0026213",
+      "name": "Jamaal Charles",
+      "position": "RB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0025410",
+      "name": "Dwayne Bowe",
+      "position": "WR",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0023449",
+      "name": "Derrick Johnson",
+      "position": "ILB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "off_drives": 185,
+    "off_td": 0.0919,
+    "off_ppd": 1.0919,
+    "def_drives": 182,
+    "def_td": 0.2198,
+    "def_ppd": 2.0659
+   },
+   "MIA": {
+    "offense_composite": 2.0,
+    "defense_composite": 1.0,
+    "offense_players": [
+     {
+      "player_id": "00-0025820",
+      "name": "Jake Long",
+      "position": "T",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0023368",
+      "name": "Cameron Wake",
+      "position": "DE",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "off_drives": 187,
+    "off_td": 0.1551,
+    "off_ppd": 1.4492,
+    "def_drives": 187,
+    "def_td": 0.1551,
+    "def_ppd": 1.5829
+   },
+   "MIN": {
+    "offense_composite": 0,
+    "defense_composite": 2.0,
+    "offense_players": [],
+    "defense_players": [
+     {
+      "player_id": "00-0022740",
+      "name": "Jared Allen",
+      "position": "DE",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "off_drives": 184,
+    "off_td": 0.1902,
+    "off_ppd": 1.9076,
+    "def_drives": 187,
+    "def_td": 0.2032,
+    "def_ppd": 1.8235
+   },
+   "NE": {
+    "offense_composite": 14.0,
+    "defense_composite": 4.0,
+    "offense_players": [
+     {
+      "player_id": "00-0022427",
+      "name": "Wes Welker",
+      "position": "WR",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0023467",
+      "name": "Logan Mankins",
+      "position": "G",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0027034",
+      "name": "Sebastian Vollmer",
+      "position": "T",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0027656",
+      "name": "Rob Gronkowski",
+      "position": "TE",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0022097",
+      "name": "Brandon Lloyd",
+      "position": "WR",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0019596",
+      "name": "Tom Brady",
+      "position": "QB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 3,
+      "contribution": 6.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0022712",
+      "name": "Vince Wilfork",
+      "position": "NT",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0026150",
+      "name": "Jerod Mayo",
+      "position": "MLB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0027647",
+      "name": "Devin McCourty",
+      "position": "FS",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "off_drives": 192,
+    "off_td": 0.3229,
+    "off_ppd": 2.6719,
+    "def_drives": 196,
+    "def_td": 0.1939,
+    "def_ppd": 1.6276
+   },
+   "NO": {
+    "offense_composite": 6.0,
+    "defense_composite": 1.0,
+    "offense_players": [
+     {
+      "player_id": "00-0025512",
+      "name": "Jermon Bushrod",
+      "position": "G",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0024323",
+      "name": "Jahri Evans",
+      "position": "G",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0027696",
+      "name": "Jimmy Graham",
+      "position": "TE",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0020531",
+      "name": "Drew Brees",
+      "position": "QB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 3,
+      "contribution": 3.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0026990",
+      "name": "Malcolm Jenkins",
+      "position": "SS",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "off_drives": 192,
+    "off_td": 0.276,
+    "off_ppd": 2.2188,
+    "def_drives": 193,
+    "def_td": 0.2591,
+    "def_ppd": 2.2176
+   },
+   "NYG": {
+    "offense_composite": 3.5,
+    "defense_composite": 5.0,
+    "offense_players": [
+     {
+      "player_id": "00-0027265",
+      "name": "Victor Cruz",
+      "position": "WR",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0022838",
+      "name": "Chris Snee",
+      "position": "G",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0022803",
+      "name": "Eli Manning",
+      "position": "QB",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 3,
+      "contribution": 1.5
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0023443",
+      "name": "Antrel Rolle",
+      "position": "S",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0021977",
+      "name": "Osi Umenyiora",
+      "position": "DE",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0023509",
+      "name": "Justin Tuck",
+      "position": "DE",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0027867",
+      "name": "Jason Pierre-Paul",
+      "position": "DE",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "off_drives": 176,
+    "off_td": 0.25,
+    "off_ppd": 2.3011,
+    "def_drives": 179,
+    "def_td": 0.2067,
+    "def_ppd": 1.8436
+   },
+   "NYJ": {
+    "offense_composite": 2.5,
+    "defense_composite": 2.0,
+    "offense_players": [
+     {
+      "player_id": "00-0024219",
+      "name": "D'Brickashaw Ferguson",
+      "position": "T",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0024244",
+      "name": "Nick Mangold",
+      "position": "C",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0025401",
+      "name": "Darrelle Revis",
+      "position": "CB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "off_drives": 196,
+    "off_td": 0.1429,
+    "off_ppd": 1.2653,
+    "def_drives": 199,
+    "def_td": 0.191,
+    "def_ppd": 1.6633
+   },
+   "OAK": {
+    "offense_composite": 0,
+    "defense_composite": 2.0,
+    "offense_players": [],
+    "defense_players": [
+     {
+      "player_id": "00-0020442",
+      "name": "Richard Seymour",
+      "position": "DT",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0024222",
+      "name": "Michael Huff",
+      "position": "FS",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "off_drives": 194,
+    "off_td": 0.1495,
+    "off_ppd": 1.4948,
+    "def_drives": 187,
+    "def_td": 0.2513,
+    "def_ppd": 2.2567
+   },
+   "PHI": {
+    "offense_composite": 5.5,
+    "defense_composite": 3.0,
+    "offense_players": [
+     {
+      "player_id": "00-0027029",
+      "name": "LeSean McCoy",
+      "position": "RB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0026189",
+      "name": "DeSean Jackson",
+      "position": "WR",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0020245",
+      "name": "Michael Vick",
+      "position": "QB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 3,
+      "contribution": 3.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0022695",
+      "name": "Jason Babin",
+      "position": "OLB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0022077",
+      "name": "Nnamdi Asomugha",
+      "position": "CB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "off_drives": 190,
+    "off_td": 0.1526,
+    "off_ppd": 1.4263,
+    "def_drives": 183,
+    "def_td": 0.235,
+    "def_ppd": 2.082
+   },
+   "PIT": {
+    "offense_composite": 5.5,
+    "defense_composite": 4.0,
+    "offense_players": [
+     {
+      "player_id": "00-0027870",
+      "name": "Maurkice Pouncey",
+      "position": "C",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0026901",
+      "name": "Mike Wallace",
+      "position": "WR",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0022924",
+      "name": "Ben Roethlisberger",
+      "position": "QB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 3,
+      "contribution": 3.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0020712",
+      "name": "James Harrison",
+      "position": "OLB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0022119",
+      "name": "Troy Polamalu",
+      "position": "SS",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "off_drives": 188,
+    "off_td": 0.1862,
+    "off_ppd": 1.75,
+    "def_drives": 186,
+    "def_td": 0.1505,
+    "def_ppd": 1.5054
+   },
+   "SD": {
+    "offense_composite": 4.0,
+    "defense_composite": 2.0,
+    "offense_players": [
+     {
+      "player_id": "00-0021547",
+      "name": "Antonio Gates",
+      "position": "TE",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0022942",
+      "name": "Philip Rivers",
+      "position": "QB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 3,
+      "contribution": 3.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0025424",
+      "name": "Eric Weddle",
+      "position": "FS",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "off_drives": 181,
+    "off_td": 0.1657,
+    "off_ppd": 1.5746,
+    "def_drives": 185,
+    "def_td": 0.2108,
+    "def_ppd": 1.7405
+   },
+   "SEA": {
+    "offense_composite": 0,
+    "defense_composite": 1.0,
+    "offense_players": [],
+    "defense_players": [
+     {
+      "player_id": "00-0027866",
+      "name": "Earl Thomas",
+      "position": "FS",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "off_drives": 172,
+    "off_td": 0.2616,
+    "off_ppd": 2.2151,
+    "def_drives": 173,
+    "def_td": 0.1329,
+    "def_ppd": 1.3237
+   },
+   "SF": {
+    "offense_composite": 1.5,
+    "defense_composite": 7.5,
+    "offense_players": [
+     {
+      "player_id": "00-0025415",
+      "name": "Joe Staley",
+      "position": "T",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0023500",
+      "name": "Frank Gore",
+      "position": "RB",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0023444",
+      "name": "Carlos Rogers",
+      "position": "CB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0020535",
+      "name": "Justin Smith",
+      "position": "DE",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0027894",
+      "name": "Navorro Bowman",
+      "position": "MLB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0025398",
+      "name": "Patrick Willis",
+      "position": "ILB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0025513",
+      "name": "Dashon Goldson",
+      "position": "FS",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     }
+    ],
+    "off_drives": 178,
+    "off_td": 0.2247,
+    "off_ppd": 2.0618,
+    "def_drives": 181,
+    "def_td": 0.1492,
+    "def_ppd": 1.3536
+   },
+   "STL": {
+    "offense_composite": 1.5,
+    "defense_composite": 1.0,
+    "offense_players": [
+     {
+      "player_id": "00-0022736",
+      "name": "Steven Jackson",
+      "position": "RB",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0022832",
+      "name": "Scott Wells",
+      "position": "C",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0021512",
+      "name": "Quintin Mikell",
+      "position": "FS",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "off_drives": 186,
+    "off_td": 0.1505,
+    "off_ppd": 1.4032,
+    "def_drives": 185,
+    "def_td": 0.1784,
+    "def_ppd": 1.6973
+   },
+   "TB": {
+    "offense_composite": 1.0,
+    "defense_composite": 0,
+    "offense_players": [
+     {
+      "player_id": "00-0026304",
+      "name": "Carl Nicks",
+      "position": "G",
+      "tier": "Elite",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "defense_players": [],
+    "off_drives": 195,
+    "off_td": 0.2051,
+    "off_ppd": 1.8513,
+    "def_drives": 194,
+    "def_td": 0.2268,
+    "def_ppd": 1.8866
+   },
+   "TEN": {
+    "offense_composite": 0,
+    "defense_composite": 1.0,
+    "offense_players": [],
+    "defense_players": [
+     {
+      "player_id": "00-0025406",
+      "name": "Michael Griffin",
+      "position": "FS",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "off_drives": 193,
+    "off_td": 0.1503,
+    "off_ppd": 1.4093,
+    "def_drives": 191,
+    "def_td": 0.2461,
+    "def_ppd": 2.178
+   },
+   "WAS": {
+    "offense_composite": 0,
+    "defense_composite": 2.5,
+    "offense_players": [],
+    "defense_players": [
+     {
+      "player_id": "00-0005322",
+      "name": "London Fletcher",
+      "position": "ILB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0022923",
+      "name": "DeAngelo Hall",
+      "position": "FS",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0025411",
+      "name": "Brandon Meriweather",
+      "position": "FS",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     }
+    ],
+    "off_drives": 185,
+    "off_td": 0.2595,
+    "off_ppd": 2.2054,
+    "def_drives": 184,
+    "def_td": 0.2283,
+    "def_ppd": 2.0707
+   }
+  },
+  "primary_week1_depth_starters": {
+   "fits": {
+    "offense_td": {
+     "intercept": 0.1701519729675522,
+     "slope": 0.009076260121822128,
+     "se": 0.0029541324010893674,
+     "r2": 0.23934335101384085,
+     "loo": {
+      "rmse": 0.049554914994161633,
+      "null_rmse": 0.05480114407237279,
+      "skill": 0.18229958066452934
+     },
+     "composite_mean": 2.703125,
+     "composite_sd": 2.9095487262327433,
+     "composite_max": 14.0,
+     "shrunk_slope": 0.00895127316177478,
+     "shrunk_sd": 0.0029337215716852376
+    },
+    "offense_ppd": {
+     "intercept": 1.5990393144861879,
+     "slope": 0.0632594721965859,
+     "se": 0.021638959745687147,
+     "r2": 0.22171527799996726,
+     "loo": {
+      "rmse": 0.3622544557117253,
+      "null_rmse": 0.39681882904070315,
+      "skill": 0.16662027684368208
+     },
+     "composite_mean": 2.703125,
+     "composite_sd": 2.9095487262327433,
+     "composite_max": 14.0
+    },
+    "defense_td": {
+     "intercept": 0.2089459010220054,
+     "slope": 0.006544171611813427,
+     "se": 0.0036210224789884854,
+     "r2": 0.09818458671537467,
+     "loo": {
+      "rmse": 0.03594926411584792,
+      "null_rmse": 0.03701114091397899,
+      "skill": 0.05655830973696008
+     },
+     "composite_mean": 2.203125,
+     "composite_sd": 1.7499279939103116,
+     "composite_max": 7.5,
+     "shrunk_slope": 0.006409703179081172,
+     "shrunk_sd": 0.0035836273333608192
+    },
+    "defense_ppd": {
+     "intercept": 1.8808638811282221,
+     "slope": 0.05083502357190162,
+     "se": 0.02745985425229816,
+     "r2": 0.10252519703312568,
+     "loo": {
+      "rmse": 0.2721532525705937,
+      "null_rmse": 0.281176561847938,
+      "skill": 0.06315266500870809
+     },
+     "composite_mean": 2.203125,
+     "composite_sd": 1.7499279939103116,
+     "composite_max": 7.5
+    }
+   },
+   "drive_joint": {
+    "td": {
+     "intercept": 0.172679096276144,
+     "b_off": 0.008939355136816159,
+     "se_off": 0.0018284432625591369,
+     "b_def_raw": -0.006208538607682518,
+     "se_def": 0.0028144713650949363,
+     "b_def": 0.006208538607682518,
+     "home": 0.022723064759409536,
+     "se_home": 0.010225286669812822
+    },
+    "pts": {
+     "intercept": 1.6311219514665114,
+     "b_off": 0.062236951671454314,
+     "se_off": 0.011748444683555103,
+     "b_def_raw": -0.04848772256731414,
+     "se_def": 0.020001203258307333,
+     "b_def": 0.04848772256731414,
+     "home": 0.15268738055707767,
+     "se_home": 0.07326330258603089
+    }
+   }
+  },
+  "honoured_not_week1_starter": [
+   "Adrian Peterson",
+   "Andre Carter",
+   "Andre Gurode",
+   "Asante Samuel",
+   "Brian Waters",
+   "Chad Clifton",
+   "Chris Harris",
+   "Darren Sharper",
+   "Davin Joseph",
+   "Jason Peters",
+   "Kris Dielman",
+   "Maurice Jones-Drew",
+   "Nick Collins",
+   "Ovie Mughelli",
+   "Shaun O'Hara",
+   "Tamba Hali",
+   "Terrell Suggs"
+  ],
+  "sensitivity_week1_active_roster": {
+   "fits": {
+    "offense_td": {
+     "intercept": 0.16930870888690547,
+     "slope": 0.010215030684065415,
+     "se": 0.0031689111912238097,
+     "r2": 0.25726110336975927,
+     "loo": {
+      "rmse": 0.04895792984608895,
+      "null_rmse": 0.05480114407237279,
+      "skill": 0.2018824865636557
+     },
+     "composite_mean": 2.484375,
+     "composite_sd": 2.6835351473563325,
+     "composite_max": 12.0,
+     "shrunk_slope": 0.010053499132753224,
+     "shrunk_sd": 0.003143756156532448
+    },
+    "offense_ppd": {
+     "intercept": 1.5895514460939992,
+     "slope": 0.07265389108322907,
+     "se": 0.023087838314687255,
+     "r2": 0.2481701409548258,
+     "loo": {
+      "rmse": 0.3550999383816168,
+      "null_rmse": 0.39681882904070315,
+      "skill": 0.1992136688808449
+     },
+     "composite_mean": 2.484375,
+     "composite_sd": 2.6835351473563325,
+     "composite_max": 12.0
+    },
+    "defense_td": {
+     "intercept": 0.2093361723398811,
+     "slope": 0.007208530268023011,
+     "se": 0.0033562634141853257,
+     "r2": 0.13327307241549435,
+     "loo": {
+      "rmse": 0.035239502985059686,
+      "null_rmse": 0.03701114091397899,
+      "skill": 0.09344406986751674
+     },
+     "composite_mean": 2.0625,
+     "composite_sd": 1.8480591388386793,
+     "composite_max": 7.5,
+     "shrunk_slope": 0.007080909572111006,
+     "shrunk_sd": 0.003326420892754068
+    },
+    "defense_ppd": {
+     "intercept": 1.8780080080738006,
+     "slope": 0.05311296496284701,
+     "se": 0.025632018932706963,
+     "r2": 0.1252047040457599,
+     "loo": {
+      "rmse": 0.2686731314663362,
+      "null_rmse": 0.281176561847938,
+      "skill": 0.08695907973889627
+     },
+     "composite_mean": 2.0625,
+     "composite_sd": 1.8480591388386793,
+     "composite_max": 7.5
+    }
+   },
+   "drive_joint": {
+    "td": {
+     "intercept": 0.17253321291634882,
+     "b_off": 0.010073145191971545,
+     "se_off": 0.001969990138768949,
+     "b_def_raw": -0.0069616102461008775,
+     "se_def": 0.00267148918930817,
+     "b_def": 0.0069616102461008775,
+     "home": 0.022536618288817332,
+     "se_home": 0.010160895094205523
+    },
+    "pts": {
+     "intercept": 1.6208087980892674,
+     "b_off": 0.07164390981685013,
+     "se_off": 0.012719051775464707,
+     "b_def_raw": -0.051348492199197245,
+     "se_def": 0.018925318844954804,
+     "b_def": 0.051348492199197245,
+     "home": 0.1512024870457735,
+     "se_home": 0.07272094585944328
+    }
+   }
+  },
+  "league": {
+   "drives": 6053,
+   "td_share": 0.19461424087229473,
+   "ppd": 1.769535767388072,
+   "offense_td_sd": {
+    "observed": 0.05392271942595575,
+    "binomial_noise": 0.02886731589354985,
+    "implied_true": 0.045544898104972746
+   },
+   "defense_td_sd": {
+    "observed": 0.03643275910867347,
+    "binomial_noise": 0.02881892047678098,
+    "implied_true": 0.022289364253464103
+   }
+  },
+  "home_observation": {
+   "games": 256,
+   "home_margin_mean": 2.43359375,
+   "home_margin_sd": 15.673991332433985,
+   "home_win_rate": 0.5703125,
+   "home_td_share": 0.2061043649491303,
+   "away_td_share": 0.18296739853626082,
+   "home_ppd": 1.8467344929438791,
+   "away_ppd": 1.6912840984697273
+  },
+  "edge_report": {
+   "shrunk_centred": {
+    "b_off": 0.00895127316177478,
+    "b_def": 0.006409703179081172,
+    "centred": true,
+    "centre": {
+     "offense": 2.703125,
+     "defense": 2.203125
+    },
+    "team_offense_sd": 0.026044165426003157,
+    "team_defense_sd": 0.011216519025730062,
+    "implied_edge_sd": 0.028356813145901685,
+    "matchup_edge_sd_2012_schedule": 0.02829244806185579,
+    "mean_edge": 3.3881317890172014e-20,
+    "max_abs_edge_with_home": 0.1168330881367565,
+    "share_beyond_clamp": 0.037109375,
+    "clubs_beyond_clamp_alone": [
+     "NE"
+    ],
+    "anchor_units_per_composite_unit": {
+     "offense": 0.3580509264709912,
+     "defense": 0.2563881271632469
+    },
+    "anchor_range": {
+     "offense": [
+      1.032143589383102,
+      6.044856559976979
+     ],
+     "defense": [
+      1.4351449073434717,
+      3.3580558610678235
+     ]
+    }
+   },
+   "shrunk_uncentred": {
+    "b_off": 0.00895127316177478,
+    "b_def": 0.006409703179081172,
+    "centred": false,
+    "centre": {
+     "offense": 0.0,
+     "defense": 0.0
+    },
+    "team_offense_sd": 0.026044165426003157,
+    "team_defense_sd": 0.011216519025730062,
+    "implied_edge_sd": 0.028356813145901685,
+    "matchup_edge_sd_2012_schedule": 0.02829244806185579,
+    "mean_edge": 0.010075032949009244,
+    "max_abs_edge_with_home": 0.12690812108576574,
+    "share_beyond_clamp": 0.0546875,
+    "clubs_beyond_clamp_alone": [
+     "ATL",
+     "GB",
+     "NE"
+    ],
+    "anchor_units_per_composite_unit": {
+     "offense": 0.3580509264709912,
+     "defense": 0.2563881271632469
+    },
+    "anchor_range": {
+     "offense": [
+      2.0,
+      7.012712970593876
+     ],
+     "defense": [
+      2.0,
+      3.922910953724352
+     ]
+    }
+   },
+   "ols_centred": {
+    "b_off": 0.009076260121822128,
+    "b_def": 0.006544171611813427,
+    "centred": true,
+    "centre": {
+     "offense": 2.703125,
+     "defense": 2.203125
+    },
+    "team_offense_sd": 0.026407821076404617,
+    "team_defense_sd": 0.011451829100465482,
+    "implied_edge_sd": 0.028783978247449882,
+    "matchup_edge_sd_2012_schedule": 0.028720339199584808,
+    "mean_edge": -3.7269449679189215e-20,
+    "max_abs_edge_with_home": 0.11840683253417239,
+    "share_beyond_clamp": 0.037109375,
+    "clubs_beyond_clamp_alone": [
+     "NE"
+    ],
+    "anchor_units_per_composite_unit": {
+     "offense": 0.3630504048728851,
+     "defense": 0.26176686447253705
+    },
+    "anchor_range": {
+     "offense": [
+      1.0186293743279826,
+      6.101335042548373
+     ],
+     "defense": [
+      1.4232948767089417,
+      3.3865463602529697
+     ]
+    }
+   },
+   "target_edge_sd": 0.048,
+   "target_components": {
+    "offense": 0.045544898104972746,
+    "defense": 0.022289364253464103
+   }
+  },
+  "influence": {
+   "offense": {
+    "min_slope": 0.006715525328774587,
+    "min_when_dropping": "NE",
+    "max_slope": 0.010024832712184413,
+    "max_when_dropping": "WAS"
+   },
+   "defense": {
+    "min_slope": 0.005229122594119635,
+    "min_when_dropping": "CHI",
+    "max_slope": 0.007509012192578467,
+    "max_when_dropping": "NYG"
+   }
+  }
+ },
+ "temporal_check_2011": {
+  "season": 2011,
+  "honour_seasons": [
+   2010
+  ],
+  "primary_week1_depth_starters": {
+   "fits": {
+    "offense_td": {
+     "intercept": 0.1641542864418078,
+     "slope": 0.014916310709872828,
+     "se": 0.00463926565353838,
+     "r2": 0.25627905618252045,
+     "loo": {
+      "rmse": 0.05931277937370373,
+      "null_rmse": 0.06696322978960442,
+      "skill": 0.2154443293819165
+     },
+     "composite_mean": 1.75,
+     "composite_sd": 2.2324585030279813,
+     "composite_max": 9.0,
+     "shrunk_slope": 0.014419745751227602,
+     "shrunk_sd": 0.004561391329154771
+    },
+    "offense_ppd": {
+     "intercept": 1.5322466123408895,
+     "slope": 0.111504200245849,
+     "se": 0.03373418523038013,
+     "r2": 0.2669610043340941,
+     "loo": {
+      "rmse": 0.4317195624489014,
+      "null_rmse": 0.4903342975595508,
+      "skill": 0.2247908103363735
+     },
+     "composite_mean": 1.75,
+     "composite_sd": 2.2324585030279813,
+     "composite_max": 9.0
+    },
+    "defense_td": {
+     "intercept": 0.20230122154612296,
+     "slope": 0.008345187198515944,
+     "se": 0.004848438203260981,
+     "r2": 0.0898767559850967,
+     "loo": {
+      "rmse": 0.0446461578510347,
+      "null_rmse": 0.04540523686512599,
+      "skill": 0.03315626004964223
+     },
+     "composite_mean": 1.515625,
+     "composite_sd": 1.5988119328971102,
+     "composite_max": 5.5,
+     "shrunk_slope": 0.00804268752676005,
+     "shrunk_sd": 0.004759753051310257
+    },
+    "defense_ppd": {
+     "intercept": 1.8308657886666644,
+     "slope": 0.07130420524746904,
+     "se": 0.032334926652518386,
+     "r2": 0.13948395269257896,
+     "loo": {
+      "rmse": 0.29731533586922915,
+      "null_rmse": 0.31179673668289204,
+      "skill": 0.09073287040616573
+     },
+     "composite_mean": 1.515625,
+     "composite_sd": 1.5988119328971102,
+     "composite_max": 5.5
+    }
+   },
+   "drive_joint": {
+    "td": {
+     "intercept": 0.16570541374270736,
+     "b_off": 0.01473370172284447,
+     "se_off": 0.002329966465631969,
+     "b_def_raw": -0.007533992422930787,
+     "se_def": 0.003168392551198751,
+     "b_def": 0.007533992422930787,
+     "home": 0.0202683620566241,
+     "se_home": 0.009229648976084413
+    },
+    "pts": {
+     "intercept": 1.5212147538993357,
+     "b_off": 0.10999640929543664,
+     "se_off": 0.01591858806970497,
+     "b_def_raw": -0.06519617056012277,
+     "se_def": 0.022664028453313983,
+     "b_def": 0.06519617056012277,
+     "home": 0.22408742038853185,
+     "se_home": 0.06983694065286389
+    }
+   }
+  },
+  "honoured_not_week1_starter": [
+   "Andre Gurode",
+   "Brandon Meriweather",
+   "Brian Waters",
+   "Darren Sharper",
+   "Jamaal Charles",
+   "Justin Tuck",
+   "Osi Umenyiora",
+   "Shaun O'Hara"
+  ],
+  "league": {
+   "drives": 6104,
+   "td_share": 0.1897116644823067,
+   "ppd": 1.7232961992136304,
+   "offense_td_sd": {
+    "observed": 0.06596054435409594,
+    "binomial_noise": 0.028485940360283832,
+    "implied_true": 0.05949239122172692
+   },
+   "defense_td_sd": {
+    "observed": 0.04470558370776196,
+    "binomial_noise": 0.02846443147395531,
+    "implied_true": 0.03447267549112215
+   }
+  },
+  "home_observation": {
+   "games": 256,
+   "home_margin_mean": 3.265625,
+   "home_margin_sd": 15.203448718668291,
+   "home_win_rate": 0.56640625,
+   "home_td_share": 0.19967213114754098,
+   "away_td_share": 0.17976424361493124,
+   "home_ppd": 1.8340983606557377,
+   "away_ppd": 1.6126391617550753
+  },
+  "transfer_offense": {
+   "corr_composite_vs_td": 0.5093064243622957,
+   "rmse_with_2012_slope": 0.05745437583128546,
+   "null_rmse": 0.06492180144400166
+  },
+  "transfer_defense": {
+   "corr_composite_vs_td": -0.30713456029873515,
+   "rmse_with_2012_slope": 0.04201880540253934,
+   "null_rmse": 0.044005609993925776
+  },
+  "club_composites": {
+   "ARI": [
+    0,
+    1.0
+   ],
+   "ATL": [
+    7.5,
+    2.0
+   ],
+   "BAL": [
+    2.0,
+    5.5
+   ],
+   "BUF": [
+    0,
+    1.0
+   ],
+   "CAR": [
+    1.0,
+    0
+   ],
+   "CHI": [
+    0,
+    5.0
+   ],
+   "CIN": [
+    0,
+    0
+   ],
+   "CLE": [
+    2.0,
+    0
+   ],
+   "DAL": [
+    2.0,
+    2.0
+   ],
+   "DEN": [
+    1.0,
+    0
+   ],
+   "DET": [
+    1.0,
+    2.0
+   ],
+   "GB": [
+    1.0,
+    4.0
+   ],
+   "HOU": [
+    2.5,
+    0
+   ],
+   "IND": [
+    3.5,
+    1.0
+   ],
+   "JAX": [
+    1.0,
+    0
+   ],
+   "KC": [
+    1.0,
+    0
+   ],
+   "MIA": [
+    2.0,
+    1.0
+   ],
+   "MIN": [
+    1.0,
+    0
+   ],
+   "NE": [
+    9.0,
+    4.0
+   ],
+   "NO": [
+    6.0,
+    1.0
+   ],
+   "NYG": [
+    1.0,
+    1.0
+   ],
+   "NYJ": [
+    2.5,
+    2.0
+   ],
+   "OAK": [
+    0,
+    1.5
+   ],
+   "PHI": [
+    4.5,
+    3.5
+   ],
+   "PIT": [
+    1.0,
+    4.0
+   ],
+   "SD": [
+    3.0,
+    1.0
+   ],
+   "SEA": [
+    0,
+    0
+   ],
+   "SF": [
+    0,
+    3.0
+   ],
+   "STL": [
+    0.5,
+    1.0
+   ],
+   "TB": [
+    0,
+    0
+   ],
+   "TEN": [
+    0,
+    1.0
+   ],
+   "WAS": [
+    0,
+    1.0
+   ]
+  }
+ },
+ "preview_2014": {
+  "as_of": "2014-02-02",
+  "honour_seasons": [
+   2011,
+   2012
+  ],
+  "centre": {
+   "offense": 2.828125,
+   "defense": 2.1875
+  },
+  "slopes_used": {
+   "offense": 0.00895127316177478,
+   "defense": 0.006409703179081172
+  },
+  "edge_sd": {
+   "offense": 0.020323510240790297,
+   "defense": 0.013951824721913886
+  },
+  "clubs": {
+   "ARI": {
+    "roster_players": 61,
+    "offense_composite": 1.0,
+    "defense_composite": 1.5,
+    "offense_players": [
+     {
+      "player_id": "00-0022921",
+      "name": "Larry Fitzgerald",
+      "position": "WR",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0027886",
+      "name": "Daryl Washington",
+      "position": "ILB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0027943",
+      "name": "Patrick Peterson",
+      "position": "CB",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     }
+    ],
+    "special_teams_players": [
+     {
+      "player_id": "00-0023259",
+      "name": "Lorenzo Alexander",
+      "tier": "Plus",
+      "evidence_weight": 0.5
+     },
+     {
+      "player_id": "00-0027943",
+      "name": "Patrick Peterson",
+      "tier": "Elite",
+      "evidence_weight": 1.0
+     }
+    ],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 4,
+    "players_average_fallback": 57,
+    "offense_edge_part": -0.01636404624886952,
+    "defense_edge_part": -0.004406670935618306
+   },
+   "ATL": {
+    "roster_players": 62,
+    "offense_composite": 4.0,
+    "defense_composite": 0,
+    "offense_players": [
+     {
+      "player_id": "00-0006101",
+      "name": "Tony Gonzalez",
+      "position": "TE",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0027944",
+      "name": "Julio Jones",
+      "position": "WR",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0026143",
+      "name": "Matt Ryan",
+      "position": "QB",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 3,
+      "contribution": 1.5
+     }
+    ],
+    "defense_players": [],
+    "special_teams_players": [],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 3,
+    "players_average_fallback": 59,
+    "offense_edge_part": 0.01048977323645482,
+    "defense_edge_part": -0.014021225704240064
+   },
+   "BAL": {
+    "roster_players": 56,
+    "offense_composite": 4.0,
+    "defense_composite": 4.5,
+    "offense_players": [
+     {
+      "player_id": "00-0022397",
+      "name": "Vonta Leach",
+      "position": "FB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0025473",
+      "name": "Marshal Yanda",
+      "position": "G",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0026195",
+      "name": "Ray Rice",
+      "position": "RB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0022161",
+      "name": "Terrell Suggs",
+      "position": "OLB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0024227",
+      "name": "Haloti Ngata",
+      "position": "NT",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0024341",
+      "name": "Elvis Dumervil",
+      "position": "OLB",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     }
+    ],
+    "special_teams_players": [
+     {
+      "player_id": "00-0025460",
+      "name": "Jacoby Jones",
+      "tier": "Elite",
+      "evidence_weight": 1.0
+     },
+     {
+      "player_id": "00-0025555",
+      "name": "Corey Graham",
+      "tier": "Plus",
+      "evidence_weight": 0.5
+     }
+    ],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 8,
+    "players_average_fallback": 48,
+    "offense_edge_part": 0.01048977323645482,
+    "defense_edge_part": 0.01482243860162521
+   },
+   "BUF": {
+    "roster_players": 59,
+    "offense_composite": 0,
+    "defense_composite": 1.0,
+    "offense_players": [],
+    "defense_players": [
+     {
+      "player_id": "00-0027018",
+      "name": "Jairus Byrd",
+      "position": "FS",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "special_teams_players": [],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 1,
+    "players_average_fallback": 58,
+    "offense_edge_part": -0.0253153194106443,
+    "defense_edge_part": -0.007611522525158892
+   },
+   "CAR": {
+    "roster_players": 61,
+    "offense_composite": 1.5,
+    "defense_composite": 0,
+    "offense_players": [
+     {
+      "player_id": "00-0020337",
+      "name": "Steve Smith",
+      "position": "WR",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0025446",
+      "name": "Ryan Kalil",
+      "position": "C",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "defense_players": [],
+    "special_teams_players": [],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 2,
+    "players_average_fallback": 59,
+    "offense_edge_part": -0.01188840966798213,
+    "defense_edge_part": -0.014021225704240064
+   },
+   "CHI": {
+    "roster_players": 65,
+    "offense_composite": 3.0,
+    "defense_composite": 6.0,
+    "offense_players": [
+     {
+      "player_id": "00-0024334",
+      "name": "Brandon Marshall",
+      "position": "WR",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0025512",
+      "name": "Jermon Bushrod",
+      "position": "T",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0026184",
+      "name": "Matt Forte",
+      "position": "RB",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0021140",
+      "name": "Julius Peppers",
+      "position": "DE",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0022123",
+      "name": "Charles Tillman",
+      "position": "CB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0022128",
+      "name": "Lance Briggs",
+      "position": "OLB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0023656",
+      "name": "Jay Ratliff",
+      "position": "DT",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0024277",
+      "name": "Tim Jennings",
+      "position": "CB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0026905",
+      "name": "Henry Melton",
+      "position": "DT",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     }
+    ],
+    "special_teams_players": [
+     {
+      "player_id": "00-0024272",
+      "name": "Devin Hester",
+      "tier": "Plus",
+      "evidence_weight": 1.0
+     }
+    ],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 10,
+    "players_average_fallback": 55,
+    "offense_edge_part": 0.0015385000746800403,
+    "defense_edge_part": 0.02443699337024697
+   },
+   "CIN": {
+    "roster_players": 64,
+    "offense_composite": 1.0,
+    "defense_composite": 2.0,
+    "offense_players": [
+     {
+      "player_id": "00-0027942",
+      "name": "A.J. Green",
+      "position": "WR",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0027720",
+      "name": "Geno Atkins",
+      "position": "DT",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "special_teams_players": [],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 2,
+    "players_average_fallback": 62,
+    "offense_edge_part": -0.01636404624886952,
+    "defense_edge_part": -0.0012018193460777197
+   },
+   "CLE": {
+    "roster_players": 64,
+    "offense_composite": 1.0,
+    "defense_composite": 0,
+    "offense_players": [
+     {
+      "player_id": "00-0025390",
+      "name": "Joe Thomas",
+      "position": "T",
+      "tier": "Elite",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "defense_players": [],
+    "special_teams_players": [],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 1,
+    "players_average_fallback": 63,
+    "offense_edge_part": -0.01636404624886952,
+    "defense_edge_part": -0.014021225704240064
+   },
+   "DAL": {
+    "roster_players": 63,
+    "offense_composite": 1.5,
+    "defense_composite": 2.0,
+    "offense_players": [
+     {
+      "player_id": "00-0018584",
+      "name": "Brian Waters",
+      "position": "G",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0022127",
+      "name": "Jason Witten",
+      "position": "TE",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0023445",
+      "name": "DeMarcus Ware",
+      "position": "DE",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "special_teams_players": [],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 3,
+    "players_average_fallback": 60,
+    "offense_edge_part": -0.01188840966798213,
+    "defense_edge_part": -0.0012018193460777197
+   },
+   "DEN": {
+    "roster_players": 57,
+    "offense_composite": 10.0,
+    "defense_composite": 3.0,
+    "offense_players": [
+     {
+      "player_id": "00-0022427",
+      "name": "Wes Welker",
+      "position": "WR",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0026152",
+      "name": "Ryan Clady",
+      "position": "T",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0010346",
+      "name": "Peyton Manning",
+      "position": "QB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 3,
+      "contribution": 6.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0000585",
+      "name": "Champ Bailey",
+      "position": "CB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0027940",
+      "name": "Von Miller",
+      "position": "OLB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "special_teams_players": [],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 5,
+    "players_average_fallback": 52,
+    "offense_edge_part": 0.0641974122071035,
+    "defense_edge_part": 0.005207883833003452
+   },
+   "DET": {
+    "roster_players": 61,
+    "offense_composite": 2.0,
+    "defense_composite": 1.0,
+    "offense_players": [
+     {
+      "player_id": "00-0025389",
+      "name": "Calvin Johnson",
+      "position": "WR",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0027855",
+      "name": "Ndamukong Suh",
+      "position": "DT",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "special_teams_players": [
+     {
+      "player_id": "00-0000108",
+      "name": "David Akers",
+      "tier": "Elite",
+      "evidence_weight": 1.0
+     }
+    ],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 3,
+    "players_average_fallback": 58,
+    "offense_edge_part": -0.0074127730870947395,
+    "defense_edge_part": -0.007611522525158892
+   },
+   "GB": {
+    "roster_players": 65,
+    "offense_composite": 6.5,
+    "defense_composite": 1.5,
+    "offense_players": [
+     {
+      "player_id": "00-0022999",
+      "name": "John Kuhn",
+      "position": "FB",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0023459",
+      "name": "Aaron Rodgers",
+      "position": "QB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 3,
+      "contribution": 6.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0026985",
+      "name": "B.J. Raji",
+      "position": "DT",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0027002",
+      "name": "Clay Matthews",
+      "position": "OLB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "special_teams_players": [],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 4,
+    "players_average_fallback": 61,
+    "offense_edge_part": 0.032867956140891774,
+    "defense_edge_part": -0.004406670935618306
+   },
+   "HOU": {
+    "roster_players": 68,
+    "offense_composite": 6.5,
+    "defense_composite": 4.0,
+    "offense_players": [
+     {
+      "player_id": "00-0022044",
+      "name": "Andre Johnson",
+      "position": "WR",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0022131",
+      "name": "Wade Smith",
+      "position": "G",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0023633",
+      "name": "Chris Myers",
+      "position": "C",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0026166",
+      "name": "Duane Brown",
+      "position": "T",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0026796",
+      "name": "Arian Foster",
+      "position": "RB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0022787",
+      "name": "Matt Schaub",
+      "position": "QB",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 3,
+      "contribution": 1.5
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0024239",
+      "name": "Johnathan Joseph",
+      "position": "CB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0026991",
+      "name": "Brian Cushing",
+      "position": "ILB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0027949",
+      "name": "J.J. Watt",
+      "position": "DE",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "special_teams_players": [
+     {
+      "player_id": "00-0019714",
+      "name": "Shane Lechler",
+      "tier": "Plus",
+      "evidence_weight": 0.5
+     }
+    ],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 10,
+    "players_average_fallback": 58,
+    "offense_edge_part": 0.032867956140891774,
+    "defense_edge_part": 0.011617587012084624
+   },
+   "IND": {
+    "roster_players": 72,
+    "offense_composite": 0.5,
+    "defense_composite": 1.0,
+    "offense_players": [
+     {
+      "player_id": "00-0020498",
+      "name": "Reggie Wayne",
+      "position": "WR",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0022059",
+      "name": "Robert Mathis",
+      "position": "OLB",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0025393",
+      "name": "LaRon Landry",
+      "position": "FS",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     }
+    ],
+    "special_teams_players": [],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 3,
+    "players_average_fallback": 69,
+    "offense_edge_part": -0.02083968282975691,
+    "defense_edge_part": -0.007611522525158892
+   },
+   "JAX": {
+    "roster_players": 61,
+    "offense_composite": 2.0,
+    "defense_composite": 1.0,
+    "offense_players": [
+     {
+      "player_id": "00-0024275",
+      "name": "Maurice Jones-Drew",
+      "position": "RB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0022695",
+      "name": "Jason Babin",
+      "position": "DE",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "special_teams_players": [],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 2,
+    "players_average_fallback": 59,
+    "offense_edge_part": -0.0074127730870947395,
+    "defense_edge_part": -0.007611522525158892
+   },
+   "KC": {
+    "roster_players": 60,
+    "offense_composite": 1.0,
+    "defense_composite": 3.5,
+    "offense_players": [
+     {
+      "player_id": "00-0026213",
+      "name": "Jamaal Charles",
+      "position": "RB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0023449",
+      "name": "Derrick Johnson",
+      "position": "ILB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0024235",
+      "name": "Tamba Hali",
+      "position": "OLB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0027858",
+      "name": "Eric Berry",
+      "position": "SS",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     }
+    ],
+    "special_teams_players": [],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 4,
+    "players_average_fallback": 56,
+    "offense_edge_part": -0.01636404624886952,
+    "defense_edge_part": 0.008412735422544037
+   },
+   "MIA": {
+    "roster_players": 64,
+    "offense_composite": 0.5,
+    "defense_composite": 2.0,
+    "offense_players": [
+     {
+      "player_id": "00-0026901",
+      "name": "Mike Wallace",
+      "position": "WR",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0023368",
+      "name": "Cameron Wake",
+      "position": "DE",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "special_teams_players": [],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 2,
+    "players_average_fallback": 62,
+    "offense_edge_part": -0.02083968282975691,
+    "defense_edge_part": -0.0012018193460777197
+   },
+   "MIN": {
+    "roster_players": 63,
+    "offense_composite": 3.5,
+    "defense_composite": 3.0,
+    "offense_players": [
+     {
+      "player_id": "00-0024267",
+      "name": "Greg Jennings",
+      "position": "WR",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0025394",
+      "name": "Adrian Peterson",
+      "position": "RB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0026286",
+      "name": "Jerome Felton",
+      "position": "FB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0022740",
+      "name": "Jared Allen",
+      "position": "DE",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0024232",
+      "name": "Chad Greenway",
+      "position": "OLB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "special_teams_players": [
+     {
+      "player_id": "00-0029576",
+      "name": "Blair Walsh",
+      "tier": "Elite",
+      "evidence_weight": 1.0
+     }
+    ],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 6,
+    "players_average_fallback": 57,
+    "offense_edge_part": 0.006014136655567431,
+    "defense_edge_part": 0.005207883833003452
+   },
+   "NE": {
+    "roster_players": 63,
+    "offense_composite": 4.5,
+    "defense_composite": 3.0,
+    "offense_players": [
+     {
+      "player_id": "00-0023467",
+      "name": "Logan Mankins",
+      "position": "G",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0027656",
+      "name": "Rob Gronkowski",
+      "position": "TE",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0019596",
+      "name": "Tom Brady",
+      "position": "QB",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 3,
+      "contribution": 1.5
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0020489",
+      "name": "Andre Carter",
+      "position": "DE",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0022712",
+      "name": "Vince Wilfork",
+      "position": "DT",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0026150",
+      "name": "Jerod Mayo",
+      "position": "ILB",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     }
+    ],
+    "special_teams_players": [
+     {
+      "player_id": "00-0026293",
+      "name": "Matt Slater",
+      "tier": "Plus",
+      "evidence_weight": 0.5
+     }
+    ],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 7,
+    "players_average_fallback": 56,
+    "offense_edge_part": 0.01496540981734221,
+    "defense_edge_part": 0.005207883833003452
+   },
+   "NO": {
+    "roster_players": 64,
+    "offense_composite": 5.5,
+    "defense_composite": 0,
+    "offense_players": [
+     {
+      "player_id": "00-0024323",
+      "name": "Jahri Evans",
+      "position": "G",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0027696",
+      "name": "Jimmy Graham",
+      "position": "TE",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0020531",
+      "name": "Drew Brees",
+      "position": "QB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 3,
+      "contribution": 3.0
+     }
+    ],
+    "defense_players": [],
+    "special_teams_players": [
+     {
+      "player_id": "00-0027114",
+      "name": "Thomas Morstead",
+      "tier": "Plus",
+      "evidence_weight": 1.0
+     }
+    ],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 4,
+    "players_average_fallback": 60,
+    "offense_edge_part": 0.02391668297911699,
+    "defense_edge_part": -0.014021225704240064
+   },
+   "NYG": {
+    "roster_players": 65,
+    "offense_composite": 3.0,
+    "defense_composite": 2.0,
+    "offense_players": [
+     {
+      "player_id": "00-0022838",
+      "name": "Chris Snee",
+      "position": "G",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0027265",
+      "name": "Victor Cruz",
+      "position": "WR",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0022803",
+      "name": "Eli Manning",
+      "position": "QB",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 3,
+      "contribution": 1.5
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0027867",
+      "name": "Jason Pierre-Paul",
+      "position": "DE",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "special_teams_players": [
+     {
+      "player_id": "00-0029251",
+      "name": "David Wilson",
+      "tier": "Plus",
+      "evidence_weight": 1.0
+     }
+    ],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 5,
+    "players_average_fallback": 60,
+    "offense_edge_part": 0.0015385000746800403,
+    "defense_edge_part": -0.0012018193460777197
+   },
+   "NYJ": {
+    "roster_players": 65,
+    "offense_composite": 1.5,
+    "defense_composite": 1.5,
+    "offense_players": [
+     {
+      "player_id": "00-0024219",
+      "name": "D'Brickashaw Ferguson",
+      "position": "T",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0024244",
+      "name": "Nick Mangold",
+      "position": "C",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0021377",
+      "name": "Ed Reed",
+      "position": "FS",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0024234",
+      "name": "Antonio Cromartie",
+      "position": "CB",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     }
+    ],
+    "special_teams_players": [],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 4,
+    "players_average_fallback": 61,
+    "offense_edge_part": -0.01188840966798213,
+    "defense_edge_part": -0.004406670935618306
+   },
+   "OAK": {
+    "roster_players": 60,
+    "offense_composite": 0,
+    "defense_composite": 2.0,
+    "offense_players": [],
+    "defense_players": [
+     {
+      "player_id": "00-0018227",
+      "name": "Charles Woodson",
+      "position": "FS",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "special_teams_players": [
+     {
+      "player_id": "00-0019646",
+      "name": "Sebastian Janikowski",
+      "tier": "Plus",
+      "evidence_weight": 1.0
+     }
+    ],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 2,
+    "players_average_fallback": 58,
+    "offense_edge_part": -0.0253153194106443,
+    "defense_edge_part": -0.0012018193460777197
+   },
+   "PHI": {
+    "roster_players": 59,
+    "offense_composite": 3.0,
+    "defense_composite": 0,
+    "offense_players": [
+     {
+      "player_id": "00-0022531",
+      "name": "Jason Peters",
+      "position": "T",
+      "tier": "Elite",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0027029",
+      "name": "LeSean McCoy",
+      "position": "RB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "defense_players": [],
+    "special_teams_players": [],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 2,
+    "players_average_fallback": 57,
+    "offense_edge_part": 0.0015385000746800403,
+    "defense_edge_part": -0.014021225704240064
+   },
+   "PIT": {
+    "roster_players": 64,
+    "offense_composite": 5.5,
+    "defense_composite": 2.0,
+    "offense_players": [
+     {
+      "player_id": "00-0023465",
+      "name": "Heath Miller",
+      "position": "TE",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0027870",
+      "name": "Maurkice Pouncey",
+      "position": "C",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0022924",
+      "name": "Ben Roethlisberger",
+      "position": "QB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 3,
+      "contribution": 3.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0022119",
+      "name": "Troy Polamalu",
+      "position": "SS",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "special_teams_players": [
+     {
+      "player_id": "00-0027793",
+      "name": "Antonio Brown",
+      "tier": "Plus",
+      "evidence_weight": 0.5
+     }
+    ],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 5,
+    "players_average_fallback": 59,
+    "offense_edge_part": 0.02391668297911699,
+    "defense_edge_part": -0.0012018193460777197
+   },
+   "SD": {
+    "roster_players": 61,
+    "offense_composite": 3.5,
+    "defense_composite": 2.5,
+    "offense_players": [
+     {
+      "player_id": "00-0021547",
+      "name": "Antonio Gates",
+      "position": "TE",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0022942",
+      "name": "Philip Rivers",
+      "position": "QB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 3,
+      "contribution": 3.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0021146",
+      "name": "Dwight Freeney",
+      "position": "OLB",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0025424",
+      "name": "Eric Weddle",
+      "position": "FS",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "special_teams_players": [],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 4,
+    "players_average_fallback": 57,
+    "offense_edge_part": 0.006014136655567431,
+    "defense_edge_part": 0.0020030322434628663
+   },
+   "SEA": {
+    "roster_players": 60,
+    "offense_composite": 4.5,
+    "defense_composite": 4.0,
+    "offense_players": [
+     {
+      "player_id": "00-0025399",
+      "name": "Marshawn Lynch",
+      "position": "RB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0027025",
+      "name": "Max Unger",
+      "position": "C",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0027859",
+      "name": "Russell Okung",
+      "position": "T",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0027866",
+      "name": "Earl Thomas",
+      "position": "FS",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0028092",
+      "name": "Richard Sherman",
+      "position": "CB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "special_teams_players": [],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 5,
+    "players_average_fallback": 55,
+    "offense_edge_part": 0.01496540981734221,
+    "defense_edge_part": 0.011617587012084624
+   },
+   "SF": {
+    "roster_players": 60,
+    "offense_composite": 3.5,
+    "defense_composite": 10.5,
+    "offense_players": [
+     {
+      "player_id": "00-0023500",
+      "name": "Frank Gore",
+      "position": "RB",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0025415",
+      "name": "Joe Staley",
+      "position": "T",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0027869",
+      "name": "Mike Iupati",
+      "position": "G",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0020535",
+      "name": "Justin Smith",
+      "position": "DT",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0023444",
+      "name": "Carlos Rogers",
+      "position": "CB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0024223",
+      "name": "Donte Whitner",
+      "position": "SS",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0024495",
+      "name": "Ahmad Brooks",
+      "position": "OLB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0025398",
+      "name": "Patrick Willis",
+      "position": "ILB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0027894",
+      "name": "Navorro Bowman",
+      "position": "ILB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0027945",
+      "name": "Aldon Smith",
+      "position": "OLB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     }
+    ],
+    "special_teams_players": [
+     {
+      "player_id": "00-0004091",
+      "name": "Phil Dawson",
+      "tier": "Plus",
+      "evidence_weight": 1.0
+     },
+     {
+      "player_id": "00-0022824",
+      "name": "Andy Lee",
+      "tier": "Elite",
+      "evidence_weight": 1.0
+     }
+    ],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 12,
+    "players_average_fallback": 48,
+    "offense_edge_part": 0.006014136655567431,
+    "defense_edge_part": 0.05328065767611224
+   },
+   "STL": {
+    "roster_players": 61,
+    "offense_composite": 1.5,
+    "defense_composite": 0,
+    "offense_players": [
+     {
+      "player_id": "00-0022832",
+      "name": "Scott Wells",
+      "position": "C",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0025820",
+      "name": "Jake Long",
+      "position": "T",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     }
+    ],
+    "defense_players": [],
+    "special_teams_players": [],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 2,
+    "players_average_fallback": 59,
+    "offense_edge_part": -0.01188840966798213,
+    "defense_edge_part": -0.014021225704240064
+   },
+   "TB": {
+    "roster_players": 67,
+    "offense_composite": 2.0,
+    "defense_composite": 4.5,
+    "offense_players": [
+     {
+      "player_id": "00-0024238",
+      "name": "Davin Joseph",
+      "position": "G",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0026304",
+      "name": "Carl Nicks",
+      "position": "G",
+      "tier": "Elite",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0025401",
+      "name": "Darrelle Revis",
+      "position": "CB",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0025513",
+      "name": "Dashon Goldson",
+      "position": "FS",
+      "tier": "Elite",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 2.0
+     },
+     {
+      "player_id": "00-0027856",
+      "name": "Gerald McCoy",
+      "position": "DT",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     }
+    ],
+    "special_teams_players": [],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 5,
+    "players_average_fallback": 62,
+    "offense_edge_part": -0.0074127730870947395,
+    "defense_edge_part": 0.01482243860162521
+   },
+   "TEN": {
+    "roster_players": 64,
+    "offense_composite": 0,
+    "defense_composite": 0,
+    "offense_players": [],
+    "defense_players": [],
+    "special_teams_players": [
+     {
+      "player_id": "00-0024332",
+      "name": "Leon Washington",
+      "tier": "Plus",
+      "evidence_weight": 0.5
+     }
+    ],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 1,
+    "players_average_fallback": 63,
+    "offense_edge_part": -0.0253153194106443,
+    "defense_edge_part": -0.014021225704240064
+   },
+   "UNPLACED": {
+    "roster_players": 204,
+    "offense_composite": 0,
+    "defense_composite": 1.0,
+    "offense_players": [],
+    "defense_players": [
+     {
+      "player_id": "00-0009889",
+      "name": "Ray Lewis",
+      "position": "ILB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "special_teams_players": [],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 1,
+    "players_average_fallback": 203,
+    "offense_edge_part": -0.0253153194106443,
+    "defense_edge_part": -0.007611522525158892
+   },
+   "WAS": {
+    "roster_players": 65,
+    "offense_composite": 3.0,
+    "defense_composite": 1.0,
+    "offense_players": [
+     {
+      "player_id": "00-0027857",
+      "name": "Trent Williams",
+      "position": "T",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 1,
+      "contribution": 0.5
+     },
+     {
+      "player_id": "00-0029141",
+      "name": "Alfred Morris",
+      "position": "RB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     },
+     {
+      "player_id": "00-0029665",
+      "name": "Robert Griffin",
+      "position": "QB",
+      "tier": "Plus",
+      "evidence_weight": 0.5,
+      "position_weight": 3,
+      "contribution": 1.5
+     }
+    ],
+    "defense_players": [
+     {
+      "player_id": "00-0005322",
+      "name": "London Fletcher",
+      "position": "ILB",
+      "tier": "Plus",
+      "evidence_weight": 1.0,
+      "position_weight": 1,
+      "contribution": 1.0
+     }
+    ],
+    "special_teams_players": [],
+    "unit_mismatch_not_counted": [],
+    "honoured_qb_not_counted": [],
+    "players_with_evidence": 4,
+    "players_average_fallback": 61,
+    "offense_edge_part": 0.0015385000746800403,
+    "defense_edge_part": -0.007611522525158892
+   }
+  },
+  "honoured_players": 140,
+  "honoured_not_in_league_database": [
+   "Adrian Wilson",
+   "Brian Urlacher",
+   "Jeff Saturday",
+   "Richard Seymour"
+  ]
+ }
+}

@@ -220,8 +220,11 @@ class StatbookTests(unittest.TestCase):
             self.assertEqual(len(receipt["drives"]), len(result["possessions"]))
             self.assertEqual(receipt["schema_version"], 3)
             # Kernel 2013.7: 14 kernel 2013.6 fields plus 11 field-position
-            # fields; kernel 2014.1 appends the timeout state and ladder level.
-            self.assertTrue(all(len(row) == 27 for row in receipt["drives"]))
+            # fields; kernel 2014.1 appends the timeout state and ladder level,
+            # kernel 2014.4 the drive's own seconds, clock-expiry leg, passer and
+            # the chain model; its phase 2 the adjusted punt transition, the
+            # layout resample record and the field-goal probability.
+            self.assertTrue(all(len(row) == 34 for row in receipt["drives"]))
         with self.assertRaises(ValueError):
             aggregate_receipts([{**make_receipt(result, week=4, matchup="B at A"), "schema_version": 4}])
         book = aggregate_receipts([make_receipt(result, week=4, matchup="B at A", detail="compact_stats")])

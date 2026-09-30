@@ -13,6 +13,8 @@ League-wide receipts compared with the sourced 2012 shapes in `library/data/2012
 | Metric | Observed | 2012 band centre | Tolerance | Status |
 |---|---:|---:|---:|---|
 | QB1 share of team pass attempts | 1.000 | 0.978 | ±0.050 | WITHIN |
+| top receiver share of team targets (team-game) | 0.303 | 0.294 | ±0.021 | WITHIN |
+| top rusher share of non-QB carries (team-game) | 0.701 | 0.707 | ±0.048 | WITHIN |
 | FB share of carries | 0.021 | 0.021 | ±0.050 | WITHIN |
 | QB share of carries | 0.077 | 0.090 | ±0.050 | WITHIN |
 | RB share of carries | 0.879 | 0.867 | ±0.050 | WITHIN |
@@ -43,6 +45,8 @@ Drive-model rows and ledger coherence: not measurable for this cohort (legacy re
 | Metric | Observed | 2012 band centre | Tolerance | Status |
 |---|---:|---:|---:|---|
 | QB1 share of team pass attempts | 1.000 | 0.978 | ±0.050 | WITHIN |
+| top receiver share of team targets (team-game) | 0.304 | 0.294 | ±0.017 | WITHIN |
+| top rusher share of non-QB carries (team-game) | 0.711 | 0.707 | ±0.039 | WITHIN |
 | FB share of carries | 0.016 | 0.021 | ±0.050 | WITHIN |
 | QB share of carries | 0.086 | 0.090 | ±0.050 | WITHIN |
 | RB share of carries | 0.878 | 0.867 | ±0.050 | WITHIN |
@@ -138,6 +142,14 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` over every receipt
 | kneel spike mislabelled | — | not measurable |
 | timeout state invalid | — | not measurable |
 | fourth down beyond goal | — | not measurable |
+| seconds per snap outside | — | not measurable |
+| snap after expiry | — | not measurable |
+| expiry leg exceeds allowance | — | not measurable |
+| down distance chain break | — | not measurable |
+| fourth down distance mismatch | — | not measurable |
+| first downs ne ledger | — | not measurable |
+| goal to go mismatch | — | not measurable |
+| layout resample incoherent | — | not measurable |
 
 ## Kernel 2013.7 cohort (Weeks 9-10)
 
@@ -146,6 +158,8 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` over every receipt
 | Metric | Observed | 2012 band centre | Tolerance | Status |
 |---|---:|---:|---:|---|
 | QB1 share of team pass attempts | 1.000 | 0.978 | ±0.050 | WITHIN |
+| top receiver share of team targets (team-game) | 0.309 | 0.294 | ±0.028 | WITHIN |
+| top rusher share of non-QB carries (team-game) | 0.698 | 0.707 | ±0.064 | WITHIN |
 | FB share of carries | 0.011 | 0.021 | ±0.050 | WITHIN |
 | QB share of carries | 0.087 | 0.090 | ±0.050 | WITHIN |
 | RB share of carries | 0.885 | 0.867 | ±0.050 | WITHIN |
@@ -219,6 +233,8 @@ Centres from the 2012 field-position model's band_centres. Rates use 3*sqrt(p(1-
 | mean realized punt net, LOS own 21-30 | 45.0 | 43.7 | ±4.5 | WITHIN |
 | mean realized punt net, LOS own 31-40 | 42.9 | 42.3 | ±5.5 | WITHIN |
 | mean realized punt net, LOS own 41-50 | 38.7 | 38.8 | ±3.9 | WITHIN |
+| mean kickoff return yards (non-touchback kickoffs) | 22.2 | 23.0 | ±2.5 | WITHIN |
+| mean punt return yards (returned punts) | 9.5 | 9.2 | ±2.8 | WITHIN |
 | punt share of possessions ending in Q4's last 5:00 or OT, offense trailing 1-8 | 0.091 | 0.119 | ±0.292 | INSUFFICIENT SAMPLE |
 | punt share of possessions ending in Q4's last 2:00 or OT, offense trailing 1-8 | 0.000 | 0.008 | ±0.089 | INSUFFICIENT SAMPLE |
 | third-down attempts per punt drive | 1.181 | 1.185 | ±0.082 | WITHIN |
@@ -299,6 +315,14 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and 1
 | kneel spike mislabelled | 0 | WITHIN |
 | timeout state invalid | — | not measurable |
 | fourth down beyond goal | — | not measurable |
+| seconds per snap outside | — | not measurable |
+| snap after expiry | — | not measurable |
+| expiry leg exceeds allowance | — | not measurable |
+| down distance chain break | — | not measurable |
+| fourth down distance mismatch | — | not measurable |
+| first downs ne ledger | — | not measurable |
+| goal to go mismatch | — | not measurable |
+| layout resample incoherent | — | not measurable |
 
 ## Kernel 2013.8 cohort (Weeks 11-12)
 
@@ -307,6 +331,8 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and 1
 | Metric | Observed | 2012 band centre | Tolerance | Status |
 |---|---:|---:|---:|---|
 | QB1 share of team pass attempts | 1.000 | 0.978 | ±0.050 | WITHIN |
+| top receiver share of team targets (team-game) | 0.316 | 0.294 | ±0.027 | WITHIN |
+| top rusher share of non-QB carries (team-game) | 0.728 | 0.707 | ±0.062 | WITHIN |
 | FB share of carries | 0.009 | 0.021 | ±0.050 | WITHIN |
 | QB share of carries | 0.094 | 0.090 | ±0.050 | WITHIN |
 | RB share of carries | 0.882 | 0.867 | ±0.050 | WITHIN |
@@ -380,6 +406,8 @@ Centres from the 2012 field-position model's band_centres. Rates use 3*sqrt(p(1-
 | mean realized punt net, LOS own 21-30 | 44.3 | 43.7 | ±4.2 | WITHIN |
 | mean realized punt net, LOS own 31-40 | 41.5 | 42.3 | ±5.1 | WITHIN |
 | mean realized punt net, LOS own 41-50 | 39.5 | 38.8 | ±3.5 | WITHIN |
+| mean kickoff return yards (non-touchback kickoffs) | 24.0 | 23.0 | ±2.5 | WITHIN |
+| mean punt return yards (returned punts) | 8.8 | 9.2 | ±2.7 | WITHIN |
 | punt share of possessions ending in Q4's last 5:00 or OT, offense trailing 1-8 | 0.125 | 0.119 | ±0.242 | INSUFFICIENT SAMPLE |
 | punt share of possessions ending in Q4's last 2:00 or OT, offense trailing 1-8 | 0.000 | 0.008 | ±0.077 | INSUFFICIENT SAMPLE |
 | third-down attempts per punt drive | 1.206 | 1.185 | ±0.082 | WITHIN |
@@ -460,6 +488,14 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and 1
 | kneel spike mislabelled | 0 | WITHIN |
 | timeout state invalid | — | not measurable |
 | fourth down beyond goal | — | not measurable |
+| seconds per snap outside | — | not measurable |
+| snap after expiry | — | not measurable |
+| expiry leg exceeds allowance | — | not measurable |
+| down distance chain break | — | not measurable |
+| fourth down distance mismatch | — | not measurable |
+| first downs ne ledger | — | not measurable |
+| goal to go mismatch | — | not measurable |
+| layout resample incoherent | — | not measurable |
 
 ## Kernel 2013.9 cohort (Week 13)
 
@@ -468,6 +504,8 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and 1
 | Metric | Observed | 2012 band centre | Tolerance | Status |
 |---|---:|---:|---:|---|
 | QB1 share of team pass attempts | 1.000 | 0.978 | ±0.050 | WITHIN |
+| top receiver share of team targets (team-game) | 0.302 | 0.294 | ±0.037 | WITHIN |
+| top rusher share of non-QB carries (team-game) | 0.698 | 0.707 | ±0.084 | WITHIN |
 | FB share of carries | 0.016 | 0.021 | ±0.050 | WITHIN |
 | QB share of carries | 0.086 | 0.090 | ±0.050 | WITHIN |
 | RB share of carries | 0.878 | 0.867 | ±0.050 | WITHIN |
@@ -541,6 +579,8 @@ Centres from the 2012 field-position model's band_centres. Rates use 3*sqrt(p(1-
 | mean realized punt net, LOS own 21-30 | 40.9 | 43.7 | ±5.1 | WITHIN |
 | mean realized punt net, LOS own 31-40 | 41.3 | 42.3 | ±5.7 | WITHIN |
 | mean realized punt net, LOS own 41-50 | 37.3 | 38.8 | ±4.7 | INSUFFICIENT SAMPLE |
+| mean kickoff return yards (non-touchback kickoffs) | 21.7 | 23.0 | ±3.3 | WITHIN |
+| mean punt return yards (returned punts) | 10.2 | 9.2 | ±3.1 | WITHIN |
 | punt share of possessions ending in Q4's last 5:00 or OT, offense trailing 1-8 | 0.167 | 0.119 | ±0.198 | INSUFFICIENT SAMPLE |
 | punt share of possessions ending in Q4's last 2:00 or OT, offense trailing 1-8 | 0.000 | 0.008 | ±0.071 | INSUFFICIENT SAMPLE |
 | third-down attempts per punt drive | 1.188 | 1.185 | ±0.097 | WITHIN |
@@ -621,6 +661,14 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and 1
 | kneel spike mislabelled | 0 | WITHIN |
 | timeout state invalid | — | not measurable |
 | fourth down beyond goal | — | not measurable |
+| seconds per snap outside | — | not measurable |
+| snap after expiry | — | not measurable |
+| expiry leg exceeds allowance | — | not measurable |
+| down distance chain break | — | not measurable |
+| fourth down distance mismatch | — | not measurable |
+| first downs ne ledger | — | not measurable |
+| goal to go mismatch | — | not measurable |
+| layout resample incoherent | — | not measurable |
 
 ## Kernel 2013.10 cohort (Weeks 14-17)
 
@@ -629,6 +677,8 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and 1
 | Metric | Observed | 2012 band centre | Tolerance | Status |
 |---|---:|---:|---:|---|
 | QB1 share of team pass attempts | 1.000 | 0.978 | ±0.050 | WITHIN |
+| top receiver share of team targets (team-game) | 0.306 | 0.294 | ±0.018 | WITHIN |
+| top rusher share of non-QB carries (team-game) | 0.689 | 0.707 | ±0.042 | WITHIN |
 | FB share of carries | 0.012 | 0.021 | ±0.050 | WITHIN |
 | QB share of carries | 0.093 | 0.090 | ±0.050 | WITHIN |
 | RB share of carries | 0.875 | 0.867 | ±0.050 | WITHIN |
@@ -702,6 +752,8 @@ Centres from the 2012 field-position model's band_centres. Rates use 3*sqrt(p(1-
 | mean realized punt net, LOS own 21-30 | 42.9 | 43.7 | ±2.9 | WITHIN |
 | mean realized punt net, LOS own 31-40 | 41.9 | 42.3 | ±3.5 | WITHIN |
 | mean realized punt net, LOS own 41-50 | 37.4 | 38.8 | ±2.5 | WITHIN |
+| mean kickoff return yards (non-touchback kickoffs) | 23.1 | 23.0 | ±1.639 | WITHIN |
+| mean punt return yards (returned punts) | 10.9 | 9.2 | ±1.811 | WITHIN |
 | punt share of possessions ending in Q4's last 5:00 or OT, offense trailing 1-8 | 0.065 | 0.119 | ±0.143 | WITHIN |
 | punt share of possessions ending in Q4's last 2:00 or OT, offense trailing 1-8 | 0.000 | 0.008 | ±0.046 | WITHIN |
 | third-down attempts per punt drive | 1.185 | 1.185 | ±0.055 | WITHIN |
@@ -782,3 +834,11 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and 1
 | kneel spike mislabelled | 0 | WITHIN |
 | timeout state invalid | — | not measurable |
 | fourth down beyond goal | — | not measurable |
+| seconds per snap outside | — | not measurable |
+| snap after expiry | — | not measurable |
+| expiry leg exceeds allowance | — | not measurable |
+| down distance chain break | — | not measurable |
+| fourth down distance mismatch | — | not measurable |
+| first downs ne ledger | — | not measurable |
+| goal to go mismatch | — | not measurable |
+| layout resample incoherent | — | not measurable |

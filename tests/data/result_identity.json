@@ -1,207 +1,407 @@
 {
- "kernel": "2014.2",
- "note": "Result digests (final score, possessions, kickoffs, injuries, opening receiver, team counters) of synthetic sample_teams() games under kernel 2014.2. A credit-only kernel must reproduce them; a kernel that deliberately changes results replaces this file in its own commit.",
+ "kernel": "2014.4 candidate",
+ "note": "Result digests (final score, possessions, kickoffs, injuries, opening receiver, team counters) of synthetic sample_teams() games under the kernel 2014.4 candidate. These synthetic fixtures carry no strength record (legacy anchor path). The candidate replaced the 2014.2/2014.3 digests in its own commit because Tier 1 items 2 (half-final clock), 4 (in-game injuries on the possession stream) and 5 (injury denominators) and the E1 home term (0.023) change results by design for every newly resolved game, including legacy packets; closed 2013 receipts are never rerun. A credit-only or display-only kernel must reproduce these digests; a kernel that deliberately changes results replaces this file in its own commit. Re-recorded again for the E1 second pass (September 30, 2026): the injury exposure is now the participation slot model alone (the recorded snap line keeps the named-player uplift), so an onset draw can no longer depend on attribution; 2 of the 40 legacy-path digests moved. Re-recorded again for the candidate's phase 2 (September 30, 2026): all 40 legacy-path digests moved because every possession now carries three append-only fields (fg_prob, punt, layout_resample); with those fields set aside, 37 of 40 games are identical to the phase 1 candidate and 3 (regular 10, regular 19, postseason 4) moved because one field-goal make flipped under the distance logistic of register item 18 (51, 43 and 38 yards); no legacy-path game drew a layout resample.",
  "seed_rule": "sha256('identity-<game_type>-<i>'); event_id 'identity-<game_type>-<i>'; venue neutral when i % 5 == 0, else home",
  "games": [
   {
    "game_type": "regular",
    "index": 0,
-   "digest": "14d52f9275f7cbf3fcb067db7b2ac7a63fde69abf5863e3f2122410785d94146"
+   "digest": "49da3eeca1856db1e8d288fbe2493529f07c88024a13f1c72fca4d3bce9fdc6d",
+   "final_score": {
+    "A": 27,
+    "B": 13
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 1,
-   "digest": "7ad67a1a73d69318a804eb940a72bc5474ea4a06f3052aa10d700c8004e2baa6"
+   "digest": "6c5cf44cbda9530f560df0b47507fde3c8d82a584c0d11ec37cfd88b61e1c643",
+   "final_score": {
+    "A": 26,
+    "B": 13
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 2,
-   "digest": "36c42313c5b187cdd929a10bf2944f86544e6dfe53e600b2ba6bc2772e0fe671"
+   "digest": "45c9ea40684a4eb83b63ac34ddf618484c7f2789ae3902e196101eb8c778296d",
+   "final_score": {
+    "A": 17,
+    "B": 40
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 3,
-   "digest": "0ecb06f8a67977a2ac975a198434bd1f7815d2c6cf193f100a1e739311a126f3"
+   "digest": "fdd909681b667276e07a9c8b712825d867411db933eec96843a6a13de6feca1f",
+   "final_score": {
+    "A": 28,
+    "B": 20
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 4,
-   "digest": "8b6689353bf4365ffd884e69fa2245239ac14cda8dd5c8548cdd43d2af11af3a"
+   "digest": "2741841888f38b84210241d42adca12f0c7e69e8881818a1e1637558aa36e1ac",
+   "final_score": {
+    "A": 20,
+    "B": 22
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 5,
-   "digest": "05eab6ab84881c2be0ecf0eafb413fc31843a23e48579f43113fd19ffae26b0b"
+   "digest": "30c0db69a178141ef2c47a2e2f353c7b8a2f99ff45551bfddca101e2a380c862",
+   "final_score": {
+    "A": 16,
+    "B": 20
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 6,
-   "digest": "1e0faaf926c84f16f82f9bfcd54abaa130a236266eff4b4df0db6efbd3a90b72"
+   "digest": "3a15fac35f61dbe91e6e9bbe8952ee3f9fae3acb6bdd1c9b1fe3563cfb3fc052",
+   "final_score": {
+    "A": 27,
+    "B": 7
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 7,
-   "digest": "364e40d432524161e59838d380861b06c13b43e29f91bb2eab4e35f077100fd6"
+   "digest": "a443f092c8f657672f37f7e44c9cc23214892e994f2686079f2adeda9f90ce73",
+   "final_score": {
+    "A": 28,
+    "B": 6
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 8,
-   "digest": "c4390ed90d1db3d68e98a29bed7d915773439fb8816488ce81a44fbc7dee0390"
+   "digest": "3e3da9b74e9eebc5ae5b304fede6d5e7a988095bead4b0912db3a5b9654a95f2",
+   "final_score": {
+    "A": 20,
+    "B": 17
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 9,
-   "digest": "d3b85709e8ac5c7a7b2a87f69b467183fa2b6e19433d29e92b1630e09006c928"
+   "digest": "96508e8acb1b2959a0dbffdf208cea6a2383973a72fb61d52d57de51d6ca25cc",
+   "final_score": {
+    "A": 23,
+    "B": 33
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 10,
-   "digest": "9f2396ae72187fa60d8538d177f518c70839d3592101c6c4787adaa61e972913"
+   "digest": "b0f0777eee1f8d7d8856cf55d743beb5c8daac9ec988c4b53137f3725aff20be",
+   "final_score": {
+    "A": 34,
+    "B": 12
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 11,
-   "digest": "23dbab57e6a1be7cbb77c69205787ef613ceb34f9cc095e88efb3ef95f0820dc"
+   "digest": "a85cc8c7bf14b9f6c8282ed4857415df3f07bc0ecf0d5381b581df75099247a9",
+   "final_score": {
+    "A": 23,
+    "B": 6
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 12,
-   "digest": "f018fcf6fd3cf0ed491b808af5d7a42f0de1d9e8f090390823d59cbf945de295"
+   "digest": "fd30e2e52914613ece5f1ff801ebb58965658c99b6022cbb2b5227ed9769ef8d",
+   "final_score": {
+    "A": 10,
+    "B": 34
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 13,
-   "digest": "a9c4b3aa01bdd10401f93f54e8ab0f0f644665cb2f1def67d953b6a93cae7a34"
+   "digest": "738314f92b22ed34997dcebfe7c53dcd8901ad012cef044f3b4cbee73f4de41b",
+   "final_score": {
+    "A": 28,
+    "B": 6
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 14,
-   "digest": "6be6e31766e602a984976273e1ff98525e171a1b5e7fd9ada546ded0b193a9e1"
+   "digest": "7eddd00f155f1dd861eacffc0f9feba02fa161c112f4ad955bafbfa86fcc166f",
+   "final_score": {
+    "A": 21,
+    "B": 31
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 15,
-   "digest": "1edb7023a0d815046756c7cd5fe6e6c351d75e195c7ce434bb5db805095abc80"
+   "digest": "e07ef33ca8ed87dbaa2536c293bef19c4af9a68fbaf482c357932c01c68a0972",
+   "final_score": {
+    "A": 13,
+    "B": 23
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 16,
-   "digest": "52f522fc25b8ba6f9db6b1d06bdf059bd55ef3890a688a8d563d6d1c330da034"
+   "digest": "a2bf61ab4a3452693c6a87bb83bc11342db678f3438e3bd811c107e5375d12be",
+   "final_score": {
+    "A": 24,
+    "B": 20
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 17,
-   "digest": "d759118c0d13bcec63b2f70df5cb1b2fa538b6167c7e7c5b6a52a1029ab0d04d"
+   "digest": "f747b33bda3b1847b33652211fe017c2a2566fedf9447ab0ad40664da6ab24fc",
+   "final_score": {
+    "A": 27,
+    "B": 13
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 18,
-   "digest": "d4b8077da17bff966c9fabc30811c1ab966be9d20d1bd7aa61d70571fc36a889"
+   "digest": "dbe6167f2de06849a7615dfc0d24b09750571b9c0b6f38ac0d352d3f2d878f62",
+   "final_score": {
+    "A": 23,
+    "B": 30
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 19,
-   "digest": "e920c44f1e3dbb8dcad6fdc853af322ec95f2cbb9ed83857fd0b9a253a854289"
+   "digest": "b33b5dee4625de1a88d67948387c6d1b953bb34e5256b77acf8ef58850a89cea",
+   "final_score": {
+    "A": 34,
+    "B": 31
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 20,
-   "digest": "3f99d887c0d88fdbbf549f67967fe1ab1019cbe9edd717f1950da2072448f804"
+   "digest": "6231e82be699eef8c9ef753287f70f9f74d27b3ccaa3eb8d4eb4bff69572ba4f",
+   "final_score": {
+    "A": 24,
+    "B": 20
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 21,
-   "digest": "e7fe67146377252ee7ba1fa34e957b5af6310231781239338892fe464076f990"
+   "digest": "d7077965edf07f44982a661818acc2e109387b9db3234221c9fa880ef56969f0",
+   "final_score": {
+    "A": 31,
+    "B": 16
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 22,
-   "digest": "c5b0dc67259f26213362268bbcb496bff0a50838edd576df0b6cdff96e60784a"
+   "digest": "a02dee58d6cfbedd7db591e71624ac44ce8897233725b7f3c93f45280c1e5cb7",
+   "final_score": {
+    "A": 20,
+    "B": 29
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 23,
-   "digest": "136b319265b06095b4ee52499488ec868b931ed3e81d8c30be365130411aa3a1"
+   "digest": "2b12bbd2dd3faafd70576d6951ad165caa4dbf69d7303db2804c81069f18736b",
+   "final_score": {
+    "A": 35,
+    "B": 24
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 24,
-   "digest": "351c907df0d6397561e84fd6e4285c5d0c3a9cd990f6e91c722f850c1731c138"
+   "digest": "6e643efdb17ab1272944f9f98ee5eeaa45ddf9e4ecefd70308f32f1be6e27b17",
+   "final_score": {
+    "A": 23,
+    "B": 14
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 25,
-   "digest": "e4bf0e3dc4c5371c753fd2a262f6c75b421e11160ca202ad356f39517e45fbfe"
+   "digest": "8731ad5223ce3bd6d9f14734a29a7d7c5e0e1909fb0513cff28a057519c4430e",
+   "final_score": {
+    "A": 37,
+    "B": 24
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 26,
-   "digest": "4845855f489bc6da0ab493a6e1b1e8e75045322249a9112d05a26845ee39651c"
+   "digest": "9da9e7c71afd274c45973e2f4ae7b5aaf24f378f7ca3fbdb0beed9e3eb77c0bc",
+   "final_score": {
+    "A": 34,
+    "B": 21
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 27,
-   "digest": "c71aa5f16ca75f64efcdacac10c897298c42e0280136d44c0ddf92c0ac06f3c1"
+   "digest": "8ca579625524e90bc95e263b66187820612583c6842dca6f3b64de895f7ed076",
+   "final_score": {
+    "A": 10,
+    "B": 27
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 28,
-   "digest": "02e09d8ad4d833435113f34aa806fcb94c98b5355c9f0d2d622596a7a278b225"
+   "digest": "8fc4727cbfd6118c66414acbd1c75157dc2498ff7d440cd8ed196af48bd8bf7d",
+   "final_score": {
+    "A": 17,
+    "B": 32
+   },
+   "resamples": 0
   },
   {
    "game_type": "regular",
    "index": 29,
-   "digest": "3b3ddb340bdf92ce877ff23a5b2e54dd4b64b08641b3173ab36660fca744624a"
+   "digest": "8da4e74771d12bf97e4ac6ef0d7f3e099fd56dd671fd7c3eea83504f3314dcab",
+   "final_score": {
+    "A": 45,
+    "B": 20
+   },
+   "resamples": 0
   },
   {
    "game_type": "postseason",
    "index": 0,
-   "digest": "98dd2aee2075ad8acb085d3594413805ceb4ce3681506ef5c0080fb6140d7a3a"
+   "digest": "fdb19e36061240c4bad2ca047a3e6ff367cb203f67244e63ebddee1813f01787",
+   "final_score": {
+    "A": 9,
+    "B": 10
+   },
+   "resamples": 0
   },
   {
    "game_type": "postseason",
    "index": 1,
-   "digest": "eeef1f9ca671ddb65e511433fb773c3cfbdc008768b71e3a51b615652aa63edc"
+   "digest": "82581c81624f67478a8795ad13bef5cedfc0409b47ed18528186518910210d08",
+   "final_score": {
+    "A": 33,
+    "B": 17
+   },
+   "resamples": 0
   },
   {
    "game_type": "postseason",
    "index": 2,
-   "digest": "9d29b64ae4de3899383cd4a8b666ff5b97e2b03fac92420747490a05ecb0fc49"
+   "digest": "97b756e622fc61f64c1679eed4e508c43749b1a008c34d8a6937454927520e26",
+   "final_score": {
+    "A": 23,
+    "B": 26
+   },
+   "resamples": 0
   },
   {
    "game_type": "postseason",
    "index": 3,
-   "digest": "4b1d70a115b8feed32f8d5c43e56d727c4ade89505af6ae51bcdb1304628597e"
+   "digest": "8ff6dc77aafa144e292e45f59770d2e8c9732b57ebd62cc8e7f4b485513110bb",
+   "final_score": {
+    "A": 28,
+    "B": 10
+   },
+   "resamples": 0
   },
   {
    "game_type": "postseason",
    "index": 4,
-   "digest": "f00b94cfb62d40207237ffcee8731cf2c555c550ef872cf6272b7e0db1469bb1"
+   "digest": "31e2bea4048062faf631e8c16c15926d44e357d65c5db4d54053e720d5d01fb5",
+   "final_score": {
+    "A": 28,
+    "B": 14
+   },
+   "resamples": 0
   },
   {
    "game_type": "postseason",
    "index": 5,
-   "digest": "2df7e51d857c031cd8f4af2da873886de60d5967f4386f367cf2a23931dfd828"
+   "digest": "6451f6d5c9d7f3586cdc222ec00c72c7ed5dda18f10477ce82f82cdfa00a81ad",
+   "final_score": {
+    "A": 28,
+    "B": 19
+   },
+   "resamples": 0
   },
   {
    "game_type": "postseason",
    "index": 6,
-   "digest": "0c1e76673ce2599f80dcef1395d07bf8200ac994813aeabd5192aea0b37c8f7d"
+   "digest": "5cf7c66f76844609b18b4829b2d9707aece247c832b434053dd1db2479dc9136",
+   "final_score": {
+    "A": 34,
+    "B": 21
+   },
+   "resamples": 0
   },
   {
    "game_type": "postseason",
    "index": 7,
-   "digest": "5a7014f1633b252ad7376e83c10d814daac8b3ec489e0c6cc84c236f90edf76b"
+   "digest": "fca6fd3851291bdb779fbf9154bd33c06389aba13be63e16304904c8e796b739",
+   "final_score": {
+    "A": 10,
+    "B": 20
+   },
+   "resamples": 0
   },
   {
    "game_type": "postseason",
    "index": 8,
-   "digest": "11f1f978a9219396b8773839d9faef9d55cc99395bfd6d76e3f018f7efad7931"
+   "digest": "437515e2e9d2c53602f7ebf420bb1651ec5555cc002b4e20bda14517214f9a13",
+   "final_score": {
+    "A": 22,
+    "B": 23
+   },
+   "resamples": 0
   },
   {
    "game_type": "postseason",
    "index": 9,
-   "digest": "4186b477d389ab0f9a5bdb38ef8ea66958d0203e95ef2ce85c200b7166526147"
+   "digest": "4cd530d78d23c2a300b1cd493e2e36296da75b973e735f44029704c63dabc216",
+   "final_score": {
+    "A": 13,
+    "B": 28
+   },
+   "resamples": 0
   }
  ]
 }

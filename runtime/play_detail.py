@@ -660,6 +660,8 @@ def apply_drive_detail(
     fourth_down=None,
     passer=None,
     diagnostics=None,
+    own_seconds=None,
+    layout=None,
 ):
     """Allocate one resolved drive into reconciled player/snap public detail.
 
@@ -672,6 +674,12 @@ def apply_drive_detail(
     before the terminal snap. The terminal snap (touchdown, turnover, safety)
     is always the drive's last scrimmage snap; kneels come immediately before
     any punt, field-goal or downs row.
+
+    Kernel 2014.4: the kernel passes `layout` (runtime.chains.drive_layout,
+    its own chain-layout stream), which fixes the snap kinds, completions,
+    yards and order because the chain walk over them feeds team counters.
+    This stream then only names the players. Without a layout (direct
+    callers and tests) the legacy layout below runs on this stream.
     """
     rng = _rng(seed, event_id=event_id, drive_no=drive_no, offense=team.team_id)
     shares = usage.load()["values"]
@@ -682,38 +690,52 @@ def apply_drive_detail(
     spot = int(start_spot)
     net = int(net_yards)
 
-    if category == "safety":
-        terminal = safety_terminal[0]
+    if layout is not None:
+        terminal = layout["terminal"]
     else:
-        terminal = _terminal_kind(rng, category, td_type, runs, attempts, sacks)
-    # A lost fumble's terminal kind is descriptive (which snap was fumbled):
-    # when the drawn kind cannot be ordered inside the field, the others are
-    # tried in a fixed order before any value repair.
-    options = [terminal]
-    if category == "fumble_lost":
-        options += [k for k, n in (("run", runs), ("catch", attempts), ("sack", sacks)) if n and k != terminal]
-    for attempt, terminal in enumerate(options):
-        layout = _layout(rng, category, terminal, runs, attempts, sacks, kneel_yards, spikes, pass_yards,
-                         rush_free, losses, safety_terminal, net, spot, completion_rate,
-                         repair=attempt == len(options) - 1)
-        if layout["ok"] or attempt == len(options) - 1:
-            break
-    if layout["repaired"] or attempt:
-        diagnostics["prefix_order_repaired"] = diagnostics.get("prefix_order_repaired", 0) + 1
-    if not layout["ok"]:
-        diagnostics["prefix_order_failed"] = diagnostics.get("prefix_order_failed", 0) + 1
+        if category == "safety":
+            terminal = safety_terminal[0]
+        else:
+            terminal = _terminal_kind(rng, category, td_type, runs, attempts, sacks)
+        # A lost fumble's terminal kind is descriptive (which snap was fumbled):
+        # when the drawn kind cannot be ordered inside the field, the others are
+        # tried in a fixed order before any value repair.
+        options = [terminal]
+        if category == "fumble_lost":
+            options += [k for k, n in (("run", runs), ("catch", attempts), ("sack", sacks)) if n and k != terminal]
+        for attempt, terminal in enumerate(options):
+            layout = _layout(rng, category, terminal, runs, attempts, sacks, kneel_yards, spikes, pass_yards,
+                             rush_free, losses, safety_terminal, net, spot, completion_rate,
+                             repair=attempt == len(options) - 1)
+            if layout["ok"] or attempt == len(options) - 1:
+                break
+        if layout["repaired"] or attempt:
+            diagnostics["prefix_order_repaired"] = diagnostics.get("prefix_order_repaired", 0) + 1
+        if not layout["ok"]:
+            diagnostics["prefix_order_failed"] = diagnostics.get("prefix_order_failed", 0) + 1
     kinds, completed, values = layout["kinds"], layout["completed"], layout["values"]
     plays = len(kinds)
     last = plays - 1
 
-    # One passer per club per game: the depth-chart QB1 unless the kernel
-    # supplies a different game passer.
+    # The kernel supplies this drive's passer (kernel 2014.4: chosen per
+    # drive from the players still available); else the depth-chart QB1.
     qb = passer or usage.game_passer(available) or choose(rng, available, {"QB"}, "passer")
     qb_line = offense_stats["players"][qb.player_id]
     # Kernel 2014.3: the five linemen on the field (same for every drive).
     front = usage.protection_front(available)
+    # Kernel 2014.4 (defect register item 19): tier-weighted credit from each
+    # club's strength record; empty without one (runtime/usage.tilt_map).
+    target_tilt = usage.tilt_map(getattr(team, "strength", None), available, "target")
+    rush_tilt = usage.tilt_map(getattr(team, "strength", None), available, "rush")
+    sack_tilt = usage.tilt_map(getattr(defense, "strength", None), defenders, "sack")
 
     drive_seconds = max(0, int(start_clock) - int(end_clock))
+    # Kernel 2014.4: scrimmage snaps are stamped inside the drive's own
+    # seconds. A window-ending drive's clock-expiry leg (drive_seconds -
+    # own) runs after its last snap and belongs to the terminal
+    # possession-end row at end_clock; no snap is stamped inside it.
+    own = drive_seconds if own_seconds is None else max(0, min(int(own_seconds), drive_seconds))
+    own_end = int(start_clock) - own
     ledger = []
     groups_for = {}
 
@@ -736,7 +758,7 @@ def apply_drive_detail(
     running = 0
     for index in range(plays):
         snap_no = index + 1
-        remaining = int(start_clock) - round(drive_seconds * snap_no / plays)
+        remaining = int(start_clock) - round(own * snap_no / plays)
         period, game_clock = clock_at(remaining)
         kind = kinds[index]
         is_terminal = terminal is not None and index == last
@@ -782,7 +804,8 @@ def apply_drive_detail(
             # Kernel 2014.3: the rusher first, then the on-field lineman
             # facing him (edge rushers beat a tackle, interior rushers a
             # guard or the center).
-            rusher = usage.pick(rng, defenders, shares["sack_share"], "defense", role="pass_rush")
+            rusher = usage.pick(rng, defenders, shares["sack_share"], "defense", role="pass_rush",
+                                tilt=sack_tilt)
             if front:
                 slots = usage.beaten_slots(rusher, front)
                 slot = slots[0] if len(slots) == 1 else rng.choice(slots)
@@ -811,7 +834,8 @@ def apply_drive_detail(
         elif is_pass:
             record["passer"] = qb.player_id
             _bump(qb_line, "dropbacks")
-            receiver = usage.pick(rng, available, shares["target_share"], "target", role="receiver")
+            receiver = usage.pick(rng, available, shares["target_share"], "target", role="receiver",
+                                  tilt=target_tilt)
             rec_line = offense_stats["players"][receiver.player_id]
             record["target"] = receiver.player_id
             groups_for[index] = (None, usage.group(receiver.position), None, _group_rank(available, receiver))
@@ -855,7 +879,8 @@ def apply_drive_detail(
                     _bump(defense_stats["players"][cover.player_id], "passes_defended")
                     record["tackler"] = cover.player_id
                 if rng.random() < 0.20:
-                    pressure = usage.pick(rng, defenders, shares["sack_share"], "defense", role="pass_rush")
+                    pressure = usage.pick(rng, defenders, shares["sack_share"], "defense", role="pass_rush",
+                                          tilt=sack_tilt)
                     _bump(defense_stats["players"][pressure.player_id], "pressures")
         elif kind == "kneel":
             run_line = qb_line
@@ -869,6 +894,7 @@ def apply_drive_detail(
             runner = usage.pick(
                 rng, available, shares["rush_share"], "rush", role="rusher",
                 only=lambda p: usage.group(p.position) != "QB" or p.player_id == qb.player_id,
+                tilt=rush_tilt,
             )
             run_line = offense_stats["players"][runner.player_id]
             record["runner"] = runner.player_id
@@ -953,10 +979,16 @@ def apply_drive_detail(
         _bump(line, "extra_points_attempted")
         if xp_made:
             _bump(line, "extra_points_made")
-        ledger.append({**base, "snap_in_drive": terminal_snap, "play_type": "extra_point",
+        # Kernel 2014.4: the untimed try (and a safety below) sits with its
+        # scoring snap at the drive's own end, not after the expiry leg.
+        period, game_clock = clock_at(own_end)
+        ledger.append({**base, "period": period, "game_clock": game_clock,
+                       "snap_in_drive": terminal_snap, "play_type": "extra_point",
                        "kicker": kicker.player_id, "made": bool(xp_made), "long_snapper": snap()})
     elif category == "safety":
-        ledger.append({**base, "snap_in_drive": terminal_snap, "play_type": "safety",
+        period, game_clock = clock_at(own_end)
+        ledger.append({**base, "period": period, "game_clock": game_clock,
+                       "snap_in_drive": terminal_snap, "play_type": "safety",
                        "scoring_team": defense.team_id})
     elif category in POSSESSION_END_REASONS:
         ledger.append({**base, "snap_in_drive": terminal_snap, "play_type": "possession_end",
@@ -1058,10 +1090,29 @@ COHERENCE_CLASSES = (
     # Kernel 2014.1 onward: evaluated only when every possession carries the
     # timeout state.
     "timeout_state_invalid", "fourth_down_beyond_goal",
+    # Kernel 2014.4 onward: evaluated only when every possession carries its
+    # own seconds and clock-expiry leg (has_clock_legs); snap_after_expiry
+    # needs the full snap ledger.
+    "seconds_per_snap_outside", "snap_after_expiry", "expiry_leg_exceeds_allowance",
+    # Kernel 2014.4 onward (defect register item 3): evaluated only when the
+    # snap ledger carries the walked down and distance (has_chain_ledger).
+    "down_distance_chain_break", "fourth_down_distance_mismatch", "first_downs_ne_ledger",
+    "goal_to_go_mismatch",
+    # Kernel 2014.4 phase 2: evaluated when every possession carries the
+    # walked chain model (has_chain_model); a drive that published a layout
+    # resample must name a real pool, a real original tuple and a final
+    # tuple of the same category feasible at its start spot.
+    "layout_resample_incoherent",
 )
+RESAMPLE_CLASSES = ("layout_resample_incoherent",)
 TIMEOUT_CLASSES = ("timeout_state_invalid", "fourth_down_beyond_goal")
+CLOCK_LEG_CLASSES = ("seconds_per_snap_outside", "snap_after_expiry", "expiry_leg_exceeds_allowance")
+CLOCK_LEG_LEDGER_CLASSES = ("snap_after_expiry",)
+CHAIN_CLASSES = ("down_distance_chain_break", "fourth_down_distance_mismatch", "first_downs_ne_ledger",
+                 "goal_to_go_mismatch")
 LEGACY_CLASSES = COHERENCE_CLASSES[:15]
-SPOT_CLASSES = tuple(c for c in COHERENCE_CLASSES[15:] if c not in TIMEOUT_CLASSES)
+SPOT_CLASSES = tuple(c for c in COHERENCE_CLASSES[15:]
+                     if c not in TIMEOUT_CLASSES + CLOCK_LEG_CLASSES + CHAIN_CLASSES + RESAMPLE_CLASSES)
 SPOT_LEDGER_CLASSES = (
     "kick_spot_mismatch", "label_type_mismatch", "label_carrier_mismatch",
     "label_target_mismatch", "scramble_with_designed_label", "kneel_spike_mislabelled",
@@ -1084,6 +1135,11 @@ DRIVE_SUMMARY_FIELDS = (
     "tuple_terminal_bucket", "chains", "fourth_down", "kneels", "spikes",
     # Kernel 2014.1 onward (append-only).
     "timeouts", "timeout_level",
+    # Kernel 2014.4 onward (append-only): own seconds, clock-expiry leg, the drive's passer, chain model.
+    "own_seconds", "expiry_seconds", "passer", "chain_model",
+    # Kernel 2014.4 phase 2 (append-only): the punt transition as adjusted,
+    # the layout resample record, the field-goal probability drawn against.
+    "punt", "layout_resample", "fg_prob",
 )
 LABEL_TYPES = {KNEEL_LABEL: "run", GENERIC_RUN: "run", SPIKE_LABEL: "pass",
                GENERIC_PASS: "pass", SCRAMBLE_LABEL: "pass"}
@@ -1117,7 +1173,133 @@ def measurable_classes(result):
             classes.update(SPOT_LEDGER_CLASSES)
         if has_timeouts(result):
             classes.update(TIMEOUT_CLASSES)
+    if has_clock_legs(result):
+        classes.update(c for c in CLOCK_LEG_CLASSES if c not in CLOCK_LEG_LEDGER_CLASSES)
+        if result.get("play_ledger"):
+            classes.update(CLOCK_LEG_LEDGER_CLASSES)
+    if has_chain_ledger(result):
+        classes.update(CHAIN_CLASSES)
+    if has_chain_model(result):
+        classes.update(RESAMPLE_CLASSES)
     return classes
+
+
+def has_chain_model(result):
+    """True for a kernel 2014.4-or-later result or receipt: every possession
+    carries its chains and fourth-down state walked from its own snaps."""
+    possessions = _possessions(result)
+    return bool(possessions) and all(p.get("chain_model") for p in possessions)
+
+
+def has_chain_ledger(result):
+    """Kernel 2014.4: the chain classes need the walked model and a snap
+    ledger whose every scrimmage row carries its down and distance (closed
+    2013 receipts and compact receipts are not measured)."""
+    ledger = result.get("play_ledger")
+    if not ledger or not has_spots(result) or not has_chain_model(result):
+        return False
+    return all("down" in r and "ydstogo" in r for r in ledger if r.get("play_type") in ("pass", "run"))
+
+
+def _check_chain_ledger(possessions, rows_by_drive, err):
+    """Kernel 2014.4 (defect register item 3): each drive's published down,
+    distance, first downs and fourth-down state are re-walked from its own
+    scrimmage rows (runtime.chains.walk) and must agree with them."""
+    from . import chains
+    from .field_position import FOURTH_DOWN_CATEGORIES
+    for p in possessions:
+        number, category = p["number"], p["category"]
+        rows = rows_by_drive.get(number, [])
+        scrim = [r for r in rows if r.get("play_type") in ("pass", "run")]
+        yards = [r.get("result_yards", 0) for r in scrim]
+        start = p["start_spot"]
+        w = chains.walk(start, yards, category in chains.TURNOVER_TERMINALS)
+        where = "drive %s" % number
+        for index, (row, state) in enumerate(zip(scrim, w["rows"])):
+            if (row.get("down"), row.get("ydstogo"), row.get("yardline"), bool(row.get("first_down"))) != (
+                    state["down"], state["ydstogo"], state["los"], state["first_down"]):
+                err("down_distance_chain_break", "%s snap %s: %s & %s at %s" % (
+                    where, index + 1, row.get("down"), row.get("ydstogo"), row.get("yardline")))
+                break
+        failed = w["failed"]
+        if w["breaks"] or (failed is not None and not (category == "downs" and failed == len(yards) - 1)):
+            err("down_distance_chain_break", "%s snap after a failed fourth down" % where)
+        elif category == "downs" and failed is None:
+            err("down_distance_chain_break", "%s turned over on downs without failing on fourth" % where)
+        elif category == "punt" and (w["state"] is None or w["state"]["down"] != 4) and yards:
+            err("down_distance_chain_break", "%s punts before fourth down" % where)
+        for index, (row, state) in enumerate(zip(scrim, w["rows"])):
+            if bool(row.get("goal_to_go")) != state["goal_to_go"] or (
+                    bool(row.get("goal_to_go")) != (row.get("ydstogo") == row.get("yardline"))):
+                err("goal_to_go_mismatch", "%s snap %s" % (where, index + 1))
+                break
+        if category in FOURTH_DOWN_CATEGORIES:
+            fd = p.get("fourth_down") or {}
+            expected = chains.fourth_down_state(category, start, yards)
+            if expected is None or any(fd.get(k) != expected[k] for k in chains.STATE_FIELDS):
+                err("fourth_down_distance_mismatch", "%s published %s" % (
+                    where, [fd.get(k) for k in chains.STATE_FIELDS]))
+            for row in rows:
+                if row.get("play_type") in ("punt", "field_goal") or (
+                        row.get("play_type") == "possession_end" and row.get("reason") == "downs"):
+                    if any(row.get(k) != fd.get(k) for k in chains.STATE_FIELDS):
+                        err("fourth_down_distance_mismatch", "%s %s row" % (where, row.get("play_type")))
+            if fd and bool(fd.get("goal_to_go")) != (fd.get("ydstogo") == fd.get("los")):
+                err("goal_to_go_mismatch", "%s fourth-down state" % where)
+        chain = list(p.get("chains") or [])
+        flags = sum(bool(r.get("first_down")) for r in scrim)
+        if len(chain) != 6 or [chain[0]] + chain[2:6] != w["chains"] or chain[0] != flags:
+            err("first_downs_ne_ledger", "%s chains %s walk %s" % (where, chain, w["chains"]))
+
+
+def has_clock_legs(result):
+    """True for a kernel 2014.4-or-later result or receipt (every possession
+    carries its own seconds and clock-expiry leg)."""
+    possessions = _possessions(result)
+    return bool(possessions) and all(p.get("own_seconds") is not None and p.get("expiry_seconds") is not None
+                                     for p in possessions)
+
+
+def _row_remaining(row, game_type):
+    """Kernel 2014.4: a ledger row's clock as seconds left on the possession
+    countdown (regulation 3600..0; regular overtime 900..0; postseason
+    overtime on the kernel's continuous period-bound countdown)."""
+    from .rules import RULES
+    minutes, seconds = (int(v) for v in row["game_clock"].split(":"))
+    left = minutes * 60 + seconds
+    period = row["period"]
+    if isinstance(period, str) and period.startswith("OT"):
+        if game_type != "postseason":
+            return left
+        number = int(period[2:] or 1)
+        return (RULES.postseason_ot_period_bound - number) * RULES.postseason_ot_seconds + left
+    return 3600 - ((int(period) - 1) * 900 + 900 - left)
+
+
+def _check_clock_legs(result, possessions, rows_by_drive, err):
+    """Kernel 2014.4: a drive's own seconds lie in the 2012 range for its snap
+    count; its clock-expiry leg is 0..CLOCK_EXPIRY_ALLOWANCE, only on a
+    window-ending drive, and own + expiry is the possession's clock; with the
+    full ledger, no scrimmage snap is stamped after the drive's own end."""
+    from . import field_position as fp
+    game_type = result.get("game_type", "regular")
+    ranges = fp.snap_seconds_range()
+    for p in possessions:
+        number, own, expiry = p["number"], p["own_seconds"], p["expiry_seconds"]
+        elapsed = p["start_clock"] - p["end_clock"]
+        if (expiry < 0 or expiry > fp.CLOCK_EXPIRY_ALLOWANCE or own + expiry != elapsed
+                or (expiry and not p.get("half_final"))):
+            err("expiry_leg_exceeds_allowance", "drive %s own %s expiry %s over %s" % (number, own, expiry, elapsed))
+        span = ranges.get(p.get("scrimmage_plays"))
+        if span is None or not span[0] <= own <= span[1]:
+            err("seconds_per_snap_outside", "drive %s: %s snaps in %s s" % (number, p.get("scrimmage_plays"), own))
+        if rows_by_drive is None:
+            continue
+        own_end = p["end_clock"] + expiry
+        for row in rows_by_drive.get(number, ()):
+            if row.get("play_type") in ("pass", "run") and _row_remaining(row, game_type) < own_end:
+                err("snap_after_expiry", "drive %s snap %s at %s %s" % (
+                    number, row.get("snap_in_drive"), row["period"], row["game_clock"]))
 
 
 def has_timeouts(result):
@@ -1201,6 +1383,15 @@ def _frame(p, game_type):
     return p["half"], _clock_base(p["half"])
 
 
+def _zero_play_expiry(p):
+    """Kernel 2014.4: a zero-play possession whose whole window (at most the
+    clock-expiry allowance) is its clock-expiry leg. It replays no 2012
+    drive: its net is 0 by definition, not a sample from the start bin's
+    2012 clock envelope."""
+    return (p.get("scrimmage_plays") == 0 and p["category"].startswith("end_of_") and p["net_yards"] == 0
+            and p.get("own_seconds") == 0 and p.get("expiry_seconds") == p["start_clock"] - p["end_clock"])
+
+
 def _check_spots(result, possessions, err):
     """Ledger-free kernel 2013.7 classes on the possession list or drives summary."""
     game_type = result.get("game_type", "regular")
@@ -1216,7 +1407,7 @@ def _check_spots(result, possessions, err):
             err("start_spot_out_of_field", "drive %s start %s" % (number, start))
             continue
         envelope = fp.load()["envelopes"][category][fp.start_bin(start)]
-        if envelope is None:
+        if envelope is None and not _zero_play_expiry(p):
             err("category_impossible_at_start", "drive %s %s from %s" % (number, category, start))
         if category == "touchdown" and (net != start or end != 0):
             err("td_net_ne_start", "drive %s net %s start %s end %s" % (number, net, start, end))
@@ -1248,8 +1439,16 @@ def _check_spots(result, possessions, err):
             clock_s = p["end_clock"] - base
             expected = None
             if isinstance(fd, dict) and isinstance(p.get("score_diff"), int):
+                # Kernel 2014.4: a downs drive publishes the line of scrimmage
+                # of its failed fourth-down snap, short of the line to gain by
+                # more than that snap gained (end = los - gain, gain < ydstogo).
+                walked_downs = category == "downs" and p.get("chain_model")
+                if walked_downs and not (isinstance(fd.get("los"), int) and isinstance(fd.get("ydstogo"), int)
+                                         and 1 <= fd["los"] <= 99 and fd["los"] - end < fd["ydstogo"]):
+                    err("fourth_down_state_missing", "drive %s downs state" % number)
                 expected = {
-                    "los": end, "clock_s": clock_s, "half": draw_half, "score_diff": p["score_diff"],
+                    "los": fd.get("los") if walked_downs else end,
+                    "clock_s": clock_s, "half": draw_half, "score_diff": p["score_diff"],
                     "need": fp.need(p["score_diff"]), "decision_zone": fp.decision_zone(end),
                     "cell": fp.cell_for(draw_half, window, p["score_diff"]),
                     "clock_bucket": fp.terminal_bucket(clock_s) if draw_half == 2 else None,
@@ -1322,6 +1521,9 @@ def _check_spot_ledger(result, possessions, rows_by_drive, kicks, err):
         for r in rows:
             if r.get("play_type") == "pass" and r.get("passer"):
                 passers.setdefault(r["offense"], r["passer"])
+    # Kernel 2014.4: the passer is chosen per drive (a backup can take over
+    # after a removal), so a kneel belongs to that drive's passer.
+    drive_passers = {p["number"]: p["passer"] for p in possessions if p.get("passer")}
     for number, rows in rows_by_drive.items():
         for r in rows:
             if r.get("play_type") not in ("pass", "run"):
@@ -1332,7 +1534,7 @@ def _check_spot_ledger(result, possessions, rows_by_drive, kicks, err):
             groups = r.get("label_groups")
             where = "drive %s snap %s" % (number, r.get("snap_in_drive"))
             if r.get("kneel"):
-                passer = passers.get(r["offense"])
+                passer = drive_passers.get(number, passers.get(r["offense"]))
                 if concept != KNEEL_LABEL or (passer is not None and r.get("runner") != passer):
                     err("kneel_spike_mislabelled", where)
                 continue
@@ -1429,7 +1631,9 @@ def check_ledger(result):
     for p in possessions:
         category = p["category"]
         range_key = "clock" if category.startswith("end_of_") else category
-        if spots:
+        if _zero_play_expiry(p):
+            pass  # kernel 2014.4: no 2012 drive is replayed, so no 2012 net range applies
+        elif spots:
             envelope = fp.load()["envelopes"][range_key][fp.start_bin(p["start_spot"])] if (
                 isinstance(p["start_spot"], int) and 1 <= p["start_spot"] <= 99) else None
             if envelope is None or (range_key != "touchdown" and not envelope[0] <= p["net_yards"] <= envelope[1]):
@@ -1502,7 +1706,10 @@ def check_ledger(result):
         _check_spots(result, possessions, err)
 
     ledger = result.get("play_ledger")
+    clock_legs = has_clock_legs(result)
     if not ledger:
+        if clock_legs:
+            _check_clock_legs(result, possessions, None, err)
         return errors
 
     previous = None
@@ -1629,7 +1836,50 @@ def check_ledger(result):
                 break
     if spots:
         _check_spot_ledger(result, possessions, rows_by_drive, kicks, err)
+    if has_chain_ledger(result):
+        _check_chain_ledger(possessions, rows_by_drive, err)
+    if has_chain_model(result):
+        _check_layout_resamples(possessions, err)
+    if clock_legs:
+        _check_clock_legs(result, possessions, rows_by_drive, err)
     return errors
+
+
+def _check_layout_resamples(possessions, err):
+    """Kernel 2014.4 phase 2: a published layout resample names its pool, the
+    original tuple's index and leading fields, and a final tuple of the same
+    category at that index in the same pool, feasible at the drive's start
+    spot; the resample count is a positive integer."""
+    from . import field_position as fp
+    for p in possessions:
+        rec = p.get("layout_resample")
+        if not rec:
+            continue
+        where = "drive %s" % p["number"]
+        category = "clock" if str(p["category"]).startswith("end_of_") else p["category"]
+        try:
+            pool_id = tuple(rec["pool"])
+            count = rec["resamples"]
+            original, final = rec["original"], rec["final"]
+            if not isinstance(count, int) or count < 1:
+                raise ValueError("resample count")
+            if not fp._counts(pool_id):
+                raise ValueError("unknown pool")
+            tuples = {}
+            for label, item in (("original", original), ("final", final)):
+                t = fp.locate_tuple(category, item["locator"])
+                if t is None or list(t[:5]) != list(item["tuple"]):
+                    raise ValueError("%s tuple does not match the artifact" % label)
+                tuples[label] = t
+            if original["locator"] == final["locator"]:
+                raise ValueError("final tuple is the original")
+            final_tuple = tuples["final"]
+            if p.get("start_spot") is not None and not fp.static_feasible(category, final_tuple, p["start_spot"]):
+                raise ValueError("final tuple infeasible at the start spot")
+            if int(final_tuple[fp.T["plays"]]) != int(p.get("scrimmage_plays", final_tuple[fp.T["plays"]])):
+                raise ValueError("published plays differ from the final tuple")
+        except (KeyError, TypeError, ValueError, IndexError) as exc:
+            err("layout_resample_incoherent", "%s: %s" % (where, exc))
 
 
 def coherence_counts(errors):

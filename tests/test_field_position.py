@@ -175,7 +175,12 @@ class FieldPositionTests(unittest.TestCase):
                 if p["category"] in FOURTH:
                     fd = p["fourth_down"]
                     base = 1800 if p["half"] == 1 else 0
-                    self.assertEqual(fd["los"], p["end_spot"])
+                    if p["category"] == "downs":
+                        # Kernel 2014.4: the line of scrimmage of the failed
+                        # fourth-down snap, short of the line to gain.
+                        self.assertLess(fd["los"] - p["end_spot"], fd["ydstogo"])
+                    else:
+                        self.assertEqual(fd["los"], p["end_spot"])
                     self.assertEqual(fd["need"], fp.need(p["score_diff"]))
                     self.assertEqual(fd["decision_zone"], fp.decision_zone(p["end_spot"]))
                     self.assertEqual(fd["cell"], fp.cell_for(p["half"], p["start_clock"] - base, p["score_diff"]))
@@ -322,7 +327,7 @@ class FieldPositionTests(unittest.TestCase):
         legacy, kernel_2013_6, current = cohorts(receipts)
         self.assertTrue(legacy and kernel_2013_6)
         # Closed 2013.7+ slates (Week 9 on) form the current cohort; older receipts never join it.
-        self.assertTrue(all(r.get("kernel_version") in {"2013.7", "2013.8", "2013.9", "2013.10", "2013.11", "2014.1", "2014.2", "2014.3"} for r in current))
+        self.assertTrue(all(r.get("kernel_version") in {"2013.7", "2013.8", "2013.9", "2013.10", "2013.11", "2014.1", "2014.2", "2014.3", "2014.4"} for r in current))
         errors = [e for r in receipts for e in check_ledger(r)]
         self.assertFalse([e for e in errors if e.split(":")[0] in play_detail.SPOT_CLASSES])
         # The committed Weeks 4-5 receipts closed with no coherence violation.

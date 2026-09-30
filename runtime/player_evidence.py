@@ -39,6 +39,9 @@ STAT_FIELDS = (
     "return_yards",
     # Kernel 2014.3 (append-only): line starts, long snaps, coverage tackles.
     "line_starts", "long_snaps", "special_teams_tackles",
+    # Kernel 2014.4 (append-only): snaps on the field by phase
+    # (runtime/participation.py), the injury exposure.
+    "offensive_snaps", "defensive_snaps", "special_teams_snaps",
 )
 
 

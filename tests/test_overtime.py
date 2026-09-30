@@ -57,13 +57,24 @@ def _scripted(script):
     kernel's own."""
     queue = list(script)
 
-    def draw(rng, spot, half, window, diff, edge, diagnostics, timeouts=None):
+    def draw(rng, spot, half, window, diff, edge, diagnostics, timeouts=None, extra=None):
         if half != "OT" or not queue:
-            return REAL_DRAW(rng, spot, half, window, diff, edge, diagnostics, timeouts)
+            return REAL_DRAW(rng, spot, half, window, diff, edge, diagnostics, timeouts, extra)
         category = queue.pop(0)
         if category == "clock":
-            t = fp._clock_fallback(rng, fp._late_clock_tuples("tied"), spot, window) or fp.ZERO_TUPLE
-            return fp.Drive("clock", t, window, True, fp.cell_for(half, window, diff), "ot")
+            # Kernel 2014.4: a clock drive runs out the period only when it is
+            # time feasible (or, inside the expiry allowance, a zero-play
+            # expiry). Until then the offences trade real non-scoring drives
+            # that fit the time left, and the clock entry stays queued.
+            t = fp._clock_fallback(rng, fp._late_clock_tuples("tied"), spot, window)
+            if t is None and window <= fp.CLOCK_EXPIRY_ALLOWANCE:
+                t = fp.ZERO_TUPLE
+            if t is not None:
+                return fp.ending_drive("clock", t, window, fp.cell_for(half, window, diff), "ot")
+            queue.insert(0, "clock")
+            category = next((c for c in ("punt", "downs", "interception", "fumble_lost")
+                             if fp.eligible(("ot", None), c, spot, "ot", window) or fp.eligible(
+                                 ("neutral", fp.start_bin(spot)), c, spot, "h2_neutral", window)), "punt")
         if category == "safety":
             # 2012 safeties start inside the offense's own 26: any real one
             # feasible from this spot.
@@ -102,7 +113,7 @@ class OvertimeRuleTests(unittest.TestCase):
 
     def test_kernel_version(self):
         # 2013.8 introduced these rules; later kernels keep them.
-        self.assertIn(KERNEL_VERSION, ("2013.8", "2013.9", "2013.10", "2013.11", "2014.1", "2014.2", "2014.3"))
+        self.assertIn(KERNEL_VERSION, ("2013.8", "2013.9", "2013.10", "2013.11", "2014.1", "2014.2", "2014.3", "2014.4"))
         self.assertEqual((RULES.regular_ot_seconds, RULES.postseason_ot_seconds), (900, 900))
 
     def test_opening_field_goal_gives_the_other_club_a_possession(self):

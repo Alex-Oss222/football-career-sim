@@ -1,4 +1,5 @@
-"""Kernel 2013.11: no home term for either team at a neutral venue."""
+"""Kernel 2013.11: no home term for either team at a neutral venue.
+Kernel 2014.4 (E1): the home term is 0.023 per drive (runtime/strength.py)."""
 import unittest
 from types import SimpleNamespace
 
@@ -12,7 +13,7 @@ def _team(offense=2.0, defense=2.0):
 class NeutralSiteTests(unittest.TestCase):
     def test_home_venue_keeps_the_home_term(self):
         home, away = _team(), _team()
-        self.assertAlmostEqual(_edge(home, away, home, "home") - _edge(away, home, home, "home"), 0.008)
+        self.assertAlmostEqual(_edge(home, away, home, "home") - _edge(away, home, home, "home"), 0.023)
 
     def test_neutral_venue_gives_neither_team_the_home_term(self):
         home, away = _team(), _team()

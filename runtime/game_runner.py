@@ -19,6 +19,8 @@ ENTROPY_DOMAIN = b"football-career-sim/event-entropy/v1\0"
 
 def _team_packet(team):
     data = asdict(team)
+    if data.get("strength") is None:
+        data.pop("strength", None)  # legacy packets unchanged (kernel 2014.4 E1)
     # Availability and rotation are football inputs; protagonist labels are not.
     data["roster"] = serialize_roster(normalize_players(team))
     data["offensive_call_sheet"] = canonical_call_sheet(team)
@@ -74,12 +76,21 @@ def _entropy_from_ref(result_ref):
 
 def run_game(home: TeamInput, away: TeamInput, *, event_id, snapshot,
              venue="home", weather="normal", game_type="regular",
-             management_mode="autonomous", resume=None, client=None):
+             management_mode="autonomous", controlled_team=None, continuation=None,
+             client=None):
     """Freeze canonical inputs privately, then and only then invoke the kernel.
 
     There is deliberately no seed parameter.  The authenticated service returns
     only an immutable opaque event reference, which is domain-separated into the
     kernel entropy bytes.
+
+    Kernel 2014.4 (E2): a user-controlled game may return a partial result
+    (``terminated`` False) at a consequential in-game substitution. Resume it
+    by calling run_game again with the same inputs and a ``continuation``
+    holding the decisions; the packet is unchanged, so the idempotent private
+    closure returns the same event reference and the prefix reproduces. The
+    continuation is validated by the kernel against the digest of the partial
+    state it answers, so it needs no place in the packet.
     """
     match = re.match(r'^(\d{4})-', event_id)
     if match:
@@ -95,7 +106,13 @@ def run_game(home: TeamInput, away: TeamInput, *, event_id, snapshot,
     entropy = _entropy_from_ref(result_ref)
     result = resolve_game(home, away, seed=entropy, event_id=event_id, venue=venue,
                           weather=weather, game_type=game_type,
-                          management_mode=management_mode, resume=resume)
+                          management_mode=management_mode, controlled_team=controlled_team,
+                          continuation=continuation)
+    if not result.get("terminated"):
+        # A genuine partial result: completed events only, no final score.
+        if "final_score" in result or "team_stats" in result:
+            raise RuntimeError("kernel invariant failure: a paused result exposes final totals")
+        return result
     errors = validate_result(result)
     if errors:
         raise RuntimeError("kernel invariant failure: " + "; ".join(errors))

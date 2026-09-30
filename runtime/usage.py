@@ -156,10 +156,16 @@ def specialist(players, grp, role):
     return ordered[0] if ordered else None
 
 
-def pick(rng, players, shares, kind, *, role="", exclude=(), only=None):
+def pick(rng, players, shares, kind, *, role="", exclude=(), only=None, tilt=None):
     """Pick one player: group by sourced share, then by usage rank on the
     club depth order. Falls back to every candidate only when no sourced
-    group is present (legacy synthetic inputs)."""
+    group is present (legacy synthetic inputs).
+
+    Kernel 2014.4 (defect register item 19): `tilt` maps player id to a
+    multiplier on his rank weight (tilt_map). It changes only which
+    available player receives an already-resolved credit; the number of
+    random draws is the same with or without it, and it is never read by
+    the possession stream."""
     rank_shapes = load()["values"]["rank_shares"]
     blocked = {getattr(p, "player_id", p) for p in exclude}
     pool = [p for p in players if p.player_id not in blocked]
@@ -176,7 +182,45 @@ def pick(rng, players, shares, kind, *, role="", exclude=(), only=None):
         return rng.choice(pool)
     grp, _, ordered = rng.choices(groups, weights=[g[1] for g in groups], k=1)[0]
     shape = rank_shapes.get(SHAPE_FOR.get((kind, grp), ""), [1.0])
-    return rng.choices(ordered, weights=rank_weights(shape, len(ordered)), k=1)[0]
+    weights = rank_weights(shape, len(ordered))
+    if tilt:
+        weights = [w * tilt.get(p.player_id, 1.0) for w, p in zip(weights, ordered)]
+    return rng.choices(ordered, weights=weights, k=1)[0]
+
+
+# ---- Kernel 2014.4 (defect register item 19): tier-weighted attribution.
+# The multipliers are the 2012 top-share ratios by combined tier
+# (library/data/2014_strength_calibration_v2.json, attribution_tilt_2012;
+# scripts/research/build_2014_strength_calibration_v2.py): target credit uses
+# the top-receiver factors, carry credit the top-rusher factors and sack or
+# pressure credit the top-sacker factors. A player without a strength record
+# keeps factor 1.0. Nothing here touches a possession draw or a score.
+TILT_SOURCE = ROOT / "library/data/2014_strength_calibration_v2.json"
+TILT_KEY = {"target": "top_receiver_target_share", "rush": "top_rusher_carry_share",
+            "sack": "top_sacker_sack_share"}
+
+
+@lru_cache(maxsize=1)
+def tilt_factors():
+    """{kind: {tier: factor}} from the committed calibration file."""
+    data = json.loads(TILT_SOURCE.read_text(encoding="utf-8"))["attribution_tilt_2012"]
+    return {kind: dict(data[key]["factors"]) for kind, key in TILT_KEY.items()}
+
+
+def tilt_map(strength, players, kind):
+    """{player id: factor} for one club's available players and one credit
+    kind ("target", "rush" or "sack"), from each player's attribution tier in
+    the club's strength record. Empty (no tilt) without a record."""
+    records = (strength or {}).get("players") or {}
+    if not records:
+        return {}
+    factors = tilt_factors()[kind]
+    out = {}
+    for p in players:
+        tier = (records.get(p.player_id) or {}).get("attribution_tier")
+        if tier in factors and factors[tier] != 1.0:
+            out[p.player_id] = factors[tier]
+    return out
 
 
 def draw_loss(rng):

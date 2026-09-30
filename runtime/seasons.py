@@ -78,6 +78,18 @@ class SeasonPaths:
             raise ValueError('Invalid weekly cache identity')
         return self.root / '.sim_cache' / str(self.year) / ('week_%02d_%s.json' % (week, kind))
 
+    def week_folder(self, week, postseason=False):
+        """The week's output folder (existing `week_NN` or `week_NN_<away>_at_<home>`)."""
+        if type(week) is not int or not 1 <= week <= (21 if self.year < 2021 else 22):
+            raise ValueError('Invalid week')
+        parent = self.postseason if postseason else self.regular_season
+        matches = sorted(p for p in parent.glob('week_%02d*' % week) if p.is_dir())
+        return matches[0] if matches else parent / ('week_%02d' % week)
+
+    def paused_game(self, week, postseason=False):
+        """Kernel 2014.4 E2: the protagonist game's paused partial record."""
+        return self.week_folder(week, postseason) / 'paused_game.json'
+
     def regular_games(self):
         data = json.loads(self.schedule.read_text())
         if self.year != 2013 and (data.get('season') != self.year or data.get('status') != 'RELEASED'):

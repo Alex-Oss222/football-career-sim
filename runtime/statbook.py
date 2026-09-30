@@ -8,6 +8,11 @@ from copy import deepcopy
 
 from .player_evidence import STAT_FIELDS
 
+# Kernel 2014.4 participation counters enter a season book only from receipts
+# that carry them, so books built from earlier receipts are unchanged.
+PARTICIPATION_FIELDS = ("offensive_snaps", "defensive_snaps", "special_teams_snaps")
+BOOK_FIELDS = tuple(f for f in STAT_FIELDS if f not in PARTICIPATION_FIELDS)
+
 STATBOOK_SCHEMA_VERSION = 3
 
 # Longest-play counters combine by maximum, never by sum.
@@ -77,9 +82,16 @@ INJURY_FIELDS = ("team", "player", "injury_class", "severity", "restriction",
                  "return_days", "reassessment_days")
 
 
+# Kernel 2014.4 onset fields, carried only when the result has them (closed
+# 2013 receipts are unchanged).
+INJURY_ONSET_FIELDS = ("onset", "drive", "period", "clock", "removed")
+
+
 def public_injury(injury):
     """The game's public injury report entry: who, what class, what restriction."""
-    return {field: injury.get(field) for field in INJURY_FIELDS}
+    entry = {field: injury.get(field) for field in INJURY_FIELDS}
+    entry.update({field: injury[field] for field in INJURY_ONSET_FIELDS if field in injury})
+    return entry
 
 
 def _home_and_away(matchup, team_stats):
@@ -160,7 +172,7 @@ def _blank_team():
 def _blank_player(position):
     return {
         "position": position,
-        **{field: 0 for field in STAT_FIELDS},
+        **{field: 0 for field in BOOK_FIELDS},
     }
 
 
@@ -196,7 +208,7 @@ def aggregate_receipts(receipts):
     complete = True
     player_attribution_complete = True
     team_player_attribution_complete = {}
-    player_stat_fields = set(STAT_FIELDS)
+    player_stat_fields = set(BOOK_FIELDS)
 
     for receipt in receipts:
         event_id = receipt.get("event_id")
