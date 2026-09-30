@@ -175,6 +175,8 @@ The spring handoff should give camp something specific to test: whether Kelce's 
 
 ## Install scope: continue into year two
 
+The same approach applies to offense and defense. Each unit reviews what it knows, integrates newcomers, practices unfinished work and learns the next material. Their menus and pace follow their own evidence. Neither unit is confined to maintenance while the other develops.
+
 **Review established football.** Use the whole 2013 season and the actual practice evidence. Power, Counter, Inside Zone, Stick, Drive and the taught Mesh work are part of the starting point, alongside the other assignments the players demonstrated later in the year. Practice successful plays again, see whether they still work with the present personnel and decide where to develop them. A successful result alone does not prove every job was mastered.
 
 **Bring newcomers into the team.** Teach rookies and new veterans the language, alignment and assignments they need to join the current work. Returning players keep their demonstrated level. A newcomer's catch-up work does not send the whole team back to the beginning.
@@ -184,6 +186,8 @@ The spring handoff should give camp something specific to test: whether Kelce's 
 **Teach new material.** Tice and Crennel build the next sequence from the active 2013–2015 books. Broader use of existing families, new presentations and concepts not yet taught to this group belong in the ordinary install. Identify what is familiar to each participant and what needs teaching, then practice it. Stone has approved this direction; each addition does not need another policy vote. The staff still fits the workload to the historical calendar and the players actually available. Later playbook iterations remain outside 2014.
 
 **Boot Flood is included.** Review its good camp work and adverse game examples, teach it, practice it and use the observations to improve it. Its practice return is approved. The detailed work below supplies the teaching questions, not another permission gate.
+
+**Offense.** Practice the whole unit recognizing fronts and coverage, communicating protection and route adjustments, and executing the call through movement and changed looks. Evaluate its Communication and Plan execution separately from a player's ability to win a block, beat coverage, create yards or extend the play. The [room plans](training/unit_plans.md#unit-communication-and-execution) apply the same assessment standard to both sides.
 
 **Defense.** Review the carried fronts, coverages and situations, then continue the defensive install. Practice the whole unit recognizing the offense, communicating responsibilities and executing the plan through motion, changed releases and broken plays. Revisit the pressure work that struggled, correct it and see whether it now works. Communication, execution and the individual ability to beat an opponent each need their own assessment.
 
@@ -325,7 +329,7 @@ Evidence should be specific enough to support a football decision without preten
 
 ## Adoption and execution record
 
-The dates and second-year install direction are selected, including Boot Flood's return to practice and unit-level defensive communication/execution assessment. Stone's captain plan reserves three offensive and three defensive places for selection before the regular season; the third defensive group, selection method and names remain open. Remaining choices include family-event dates, relay succession, injured-player learning, cross-training, situational punt instruction, the proposed defensive intent write-up and player-consultation cadence. Continue the adopted feedback and individual-development work. Actual emergency appointments remain open; play-calling authority is settled and does not need to be asked again.
+The dates and second-year install direction are selected for both offense and defense, including Boot Flood's return to practice and separate Communication and Plan execution assessments for each unit. Individual playmaking remains distinct on both sides. Stone's captain plan reserves three offensive and three defensive places for selection before the regular season; the third defensive group, selection method and names remain open. Remaining choices include family-event dates, relay succession, injured-player learning, cross-training, situational punt instruction, the proposed defensive intent write-up and player-consultation cadence. Continue the adopted feedback and individual-development work. Actual emergency appointments remain open; play-calling authority is settled and does not need to be asked again.
 
 The register distinguishes Stone's adopted directions from remaining recommendations. Do not reopen an approved item merely because another choice is pending. Actual practice, role appointments and game-menu decisions belong in their event records when they happen; approval of a plan does not complete a phase output.
 

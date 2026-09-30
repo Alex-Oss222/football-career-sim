@@ -23,17 +23,27 @@ These are teaching objectives and review questions drawn from the [2013 exit int
 - **Defensive exchange:** practice the eleven recognizing the offense, identifying their men or spaces, communicating adjustments and playing the called defense together. Use voices and hand signals, including against motion, changed releases, tempo and the usual relay being off the field. Correct the particular breakdown that appears. Replacement relay appointments remain separate from this unit work.
 - **Kicking operation:** the special-teams lead, Westhoff from February 11 (Entry 84), keeps specialist execution separate from Stone's situational instruction.
 
+## Unit communication and execution
+
+Offense and defense use the same assessment standard. At a block review, give each unit its own evidence-based **Communication** and **Plan execution** badges, using Elite, Plus, Average, Below-Average or Replacement-Level. State which lineup and work each assessment covers and explain it briefly from actual observations. Leave a badge unassessed if evidence is insufficient. A checklist, number of shouted calls, attendance or successful result alone cannot award it. The [E1 decision record](../../../../runtime/2014_engine_decisions.md#unit-communication-execution-and-individual-playmaking) owns how these assessments must enter the future resolver.
+
+## Offense as a unit
+
+Judge whether the eleven recognize the defense and operate together: personnel and alignment, cadence, protection and blocking adjustments, the quarterback's and receiver's shared answer, and the response when the picture changes. Include verbal and visual communication, motion, tempo, changed fronts and coverage, and the active book's scramble rules. Communication concerns the group's understanding and adjustments; execution concerns the actual blocking, exchanges, timing, spacing, decisions, ball placement, catching and ball security.
+
+Keep individual playmaking visible. A blocker can win a difficult assignment, a receiver can separate or make a contested catch, a runner can find space or break a tackle, and a quarterback can anticipate an opening or extend a play. Assess what the player saw and did, his actual capability, the taught freedom and the effect on teammates. A successful improvisation can rescue a breakdown without proving the offense communicated well. A well-understood, correctly executed assignment can still lose to a better opponent.
+
 ## Defense as a unit
 
 The question is whether this group communicates and executes together. Getting the call into the huddle starts the process. Players then recognize the formation and threats, agree on the front and coverage adjustments, identify their man or zone/match responsibility, and communicate changes through the snap and developing play. The active book supplies the actual checks. Practice the applicable work against motion, bunches, changed releases, noise and broken plays within the phase's restrictions.
-
-At a block review, give the defense two evidence-based badges: **Communication** and **Plan execution**, using Elite, Plus, Average, Below-Average or Replacement-Level. State which lineup and work the assessment covers and explain it briefly from actual observations. Leave a badge unassessed if evidence is insufficient. A relay checklist, number of shouted calls, attendance or a successful result alone cannot award it. The [E1 decision record](../../../../runtime/2014_engine_decisions.md#defensive-communication-execution-and-individual-disruption) owns how these assessments must enter the future resolver.
 
 Communication describes whether the players understand one another and adjust together. Execution describes whether they carry out the defensive plan, including leverage, fits, exchanges, pursuit and finishing. A correct call can lose a matchup. A wrong fit can be rescued by a teammate. Describe both where observed.
 
 Individual talent remains visible: a defender can beat a block, anticipate a route, close space or disrupt the quarterback before the offense's intended answer develops. Evaluate the read, technique, timing and effect on the other ten players. Supported instinct and freedom within an assignment can be valuable; departure from the expected movement is not automatically a mistake. An unsupported gamble can also leave a gap or receiver exposed.
 
 ## Participation and adaptation
+
+Both units review established work, practice calls that struggled, bring newcomers into the current work, preserve individual-development time and continue the new install. Use each unit's actual evidence to choose its next work. A protection correction does not freeze defensive installation, and a coverage correction does not freeze offensive installation; joint periods still need assignments both sides have been taught.
 
 First verify who is controlled and eligible. Pending free agents, future draft picks and proposed trades do not populate a session. The [film queue](../film/player_queue.md) is a February 2 obligation inventory; refresh participant eligibility from canonical sources at each event. Do not carry Meester into field work or Allen past his retirement boundary. Keep promised historical review visible even when training eligibility changes.
 
