@@ -27,7 +27,6 @@ The generated 2,208-player league inventory is research data with unknown contra
 
 ## Decisions and facts still pending
 
-- Package A asks for Seattle's original second, No. 36 (user amendment, September 29, 2026). Package H (No. 36 and Nwaneri to Minnesota for No. 31, for DeMarcus Lawrence) follows only if A closes.
 - Package G is agreed in principle (Entry 102): Allen to Arizona for its unconditional 2015 fourth, closing only on Posluszny's actual clearance by April 21, Allen's physical and league processing; it expires otherwise. No cap saving or pick is booked before it closes. Nwaneri's completed March 20 trade supersedes unexecuted packages involving him; its retained cap charges are recorded.
 - The special-teams search is closed: Oakland re-signed Bobby April and refused the lateral request; Mike Westhoff was hired as special teams coordinator on February 11 (Entry 84).
 - The [phase decision package](offseason/phase_plan_decisions.md) records the selected dates and remaining install/policy choices. The program schedule must be filed by the agreed date, no later than March 31 for an April 21 start. Pre-program coach-led football study is prohibited; passive film distribution remains unresolved. Existing adopted individual-development methods remain adopted. Five prepared NOT_STARTED outputs do not resolve pending choices or create delivery receipts.

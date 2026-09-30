@@ -43,7 +43,6 @@ Jacksonville currently owns **9 ordinary 2014 picks**: **13**; **26**; **38**; *
 - **Overall numbers:** each round's compensatory picks follow its ordinary picks, so every later overall number includes the earlier rounds' compensatory counts (Round 3: 7, Round 4: 7, Round 5: 5, Round 6: 4, Round 7: 9).
 - **Ownership audited:** all 224 ordinary assets have a current allocation. A **conditional hold** identifies a specific outstanding claim, not a second owner. Revis affects one of Tampa Bay's third/fourth; Benn is one claim against an undisclosed Philadelphia round; Rosario affects Chicago's seventh. [Terms, sources and branch exclusions](ownership_audit.md).
 - **Execution gate:** resolve any conditional hold before spending that asset. `require_clear_ownership` rejects held or unaudited assets. Compensatory picks cannot be traded in 2014. Reconcile any newly recorded forfeiture. The branch currently records no forfeited selection.
-- **Existing package A:** the verified rotation puts Seattle's original second at No. 36; Stone's frozen memo also calls it No. 37. Reconcile that intended asset before executing the offer. No Seattle trade or amended offer is recorded here.
 
 ## Round 1
 

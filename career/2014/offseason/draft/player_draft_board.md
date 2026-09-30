@@ -20,7 +20,7 @@
 
 Use [the generated order](../../draft/draft_order.md) and [ownership register](../../draft/pick_ownership.json) for the asset, its owner and any hold. Overall numbers include the 32 compensatory picks announced March 24, 2014 (Entry 100); Jacksonville received none, and compensatory picks cannot be traded in 2014. A named comparison is not a guarantee of availability or an invented automatic choice among several players. The 13/26/38 plan, Linsley on Detroit's fifth, Gaines on Jacksonville's sixth and the Butler instruction supersede the corresponding original memo rows. The memo's obsolete first-round inventory and unverified rotation language do not control numbering.
 
-Jacksonville's only second-round pick is **No. 38**, from Arizona in package I. Package A asks Seattle for its original second, **No. 36** (user amendment of September 29, 2026). If A closes, package H would offer 36 and Nwaneri to Minnesota for **No. 31** to select DeMarcus Lawrence (DE, Boise State); if Minnesota declines, Lawrence is the first choice at 36 if available. Lawrence still needs eligibility confirmation and dated pre-selection scouting. [Amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-29-2026-amendment-pick-36-lawrence-at-31-monroe-and-the-linsley-and-gaines-fallbacks).
+Jacksonville's only second-round pick is **No. 38**, from Arizona in package I. Package A (Seattle's original second, No. 36) never activated, so package H (No. 36 and Nwaneri to Minnesota for No. 31, for DeMarcus Lawrence) is void; Nwaneri was traded to Arizona on March 20. [Amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-29-2026-amendment-pick-36-lawrence-at-31-monroe-and-the-linsley-and-gaines-fallbacks).
 
 ## Research and execution
 
@@ -28,7 +28,7 @@ Before the combine, prepare source indexes and permitted college evidence, not l
 
 Davante Adams, the planned third receiver, was the target at 26 until package I closed. Package I (revised to the 2015 first, 2015 fourth and 2016 fifth for No. 38) **completed March 20** (Entry 99; [completed trades](../../trades/trades.md)): Jacksonville holds No. 38 for Adams, and 26 becomes Joel Bitonio, then Kyle Van Noy. Casey Kreiter (LS, Iowa) is the undrafted long-snapper signing, to compete with Jeremy Cain ([long-snapper amendment](../stone_to_caldwell_2014_offseason_decisions.md#september-29-2026-amendment-long-snapper)). Undrafted signings are weighted to the offensive line: at least five linemen when enough eligible, scouted linemen go undrafted, led by Norwell, Lucas and Feiler (same amendment).
 
-No trade up/down or additional pick disposal is authorized beyond package H (No. 36 to Minnesota for No. 31). The [memo's UDFA watch list](../stone_to_caldwell_2014_offseason_decisions.md#undrafted-watch-list) is separate from [actual UDFA signings](udfa_signings.md); a watch-list player is not assumed to go undrafted. The [draft runbook](README.md) sets the sequence and dependency closure.
+No trade up or down, and no further pick disposal, is authorized. The [memo's UDFA watch list](../stone_to_caldwell_2014_offseason_decisions.md#undrafted-watch-list) is separate from [actual UDFA signings](udfa_signings.md); a watch-list player is not assumed to go undrafted. The [draft runbook](README.md) sets the sequence and dependency closure.
 
 ## Amendment: Malcolm Butler (user-directed, September 28, 2026)
 
