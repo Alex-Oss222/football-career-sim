@@ -1,5 +1,11 @@
 # Aqib Talib — 2014 Player Profile
 
+<!-- photo -->
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Aqib_Talib_2014.JPG?width=500" alt="Aqib Talib" width="160">
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Aqib_Talib_2014.JPG)).*
+<!-- /photo -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

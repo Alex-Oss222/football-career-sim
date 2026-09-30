@@ -1,5 +1,11 @@
 # Alterraun Verner — 2014 Player Profile
 
+<!-- photo -->
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Alterraun_Verner.JPG?width=500" alt="Alterraun Verner" width="160">
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Alterraun_Verner.JPG)).*
+<!-- /photo -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

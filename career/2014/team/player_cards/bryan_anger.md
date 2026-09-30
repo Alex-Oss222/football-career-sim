@@ -1,5 +1,11 @@
 # Bryan Anger — 2014 Player Profile
 
+<!-- photo -->
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bryan_Anger_punts_at_2008_Emerald_Bowl.JPG?width=500" alt="Bryan Anger" width="160">
+
+*Photo: BrokenSphere, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Bryan_Anger_punts_at_2008_Emerald_Bowl.JPG)).*
+<!-- /photo -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

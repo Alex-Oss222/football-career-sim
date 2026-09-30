@@ -1,5 +1,11 @@
 # Dwight Lowery — 2014 Player Profile
 
+<!-- photo -->
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dwight_Lowery.jpg?width=500" alt="Dwight Lowery" width="160">
+
+*Photo: Ed Yourdon, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Dwight_Lowery.jpg)).*
+<!-- /photo -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

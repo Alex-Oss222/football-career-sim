@@ -1,5 +1,11 @@
 # Daryl Smith — 2014 Player Profile
 
+<!-- photo -->
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Daryl_Smith.JPG?width=500" alt="Daryl Smith" width="160">
+
+*Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Daryl_Smith.JPG)).*
+<!-- /photo -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

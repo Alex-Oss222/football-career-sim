@@ -1,5 +1,11 @@
 # [Player Name] — [Season] NFL Player Sheet (2014 onward)
 
+<!-- photo -->
+<img src="[open-licensed photo url]" alt="[Player Name]" width="160">
+
+*Photo: [credit], [license] ([source]([source page])).*
+<!-- /photo -->
+
 **Team:**  
 **Season:**  
 **Profile status:** Working player card  

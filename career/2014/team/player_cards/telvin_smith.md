@@ -1,5 +1,11 @@
 # Telvin Smith — 2014 Player Profile
 
+<!-- photo -->
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Telvin_Smith.png?width=500" alt="Telvin Smith" width="160">
+
+*Photo: Jacksonville Sheriff's Office, Public domain ([source](https://commons.wikimedia.org/wiki/File:Telvin_Smith.png)).*
+<!-- /photo -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

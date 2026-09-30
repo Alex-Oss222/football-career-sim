@@ -1,5 +1,11 @@
 # Paul Posluszny — 2014 Player Profile
 
+<!-- photo -->
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Paul_Posluszny_2014_Pro_Bowl.jpg?width=500" alt="Paul Posluszny" width="160">
+
+*Photo: Lance Cpl. Matthew Bragg, Public domain ([source](https://commons.wikimedia.org/wiki/File:Paul_Posluszny_2014_Pro_Bowl.jpg)).*
+<!-- /photo -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

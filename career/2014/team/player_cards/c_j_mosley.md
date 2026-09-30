@@ -1,5 +1,11 @@
 # C.J. Mosley — 2014 Player Profile
 
+<!-- photo -->
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/CJ_Mosley_%28defensive_lineman%29_2012.jpg?width=500" alt="C.J. Mosley" width="160">
+
+*Photo: Seaman Apprentice Marcus Stanley, Public domain ([source](https://commons.wikimedia.org/wiki/File:CJ_Mosley_(defensive_lineman)_2012.jpg)).*
+<!-- /photo -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

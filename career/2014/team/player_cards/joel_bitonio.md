@@ -1,5 +1,11 @@
 # Joel Bitonio — 2014 Player Profile
 
+<!-- photo -->
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Joel_Bitonio_%2851372881330%29_%28cropped%29.jpg?width=500" alt="Joel Bitonio" width="160">
+
+*Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Joel_Bitonio_(51372881330)_(cropped).jpg)).*
+<!-- /photo -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

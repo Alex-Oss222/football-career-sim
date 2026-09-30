@@ -1,5 +1,11 @@
 # Davante Adams — 2014 Player Profile
 
+<!-- photo -->
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Davante_Adams_Cropped.jpg?width=500" alt="Davante Adams" width="160">
+
+*Photo: Kyle Engman, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Davante_Adams_Cropped.jpg)).*
+<!-- /photo -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  

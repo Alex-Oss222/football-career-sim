@@ -12,6 +12,7 @@ from scripts.build_annual_player_sheets import slugify, season_is_complete
 from runtime.statbook import aggregate_receipts
 from runtime.stat_tables import POSITION_GROUPS, GAMES, RETURNS, col, derived, avg, pct
 from runtime.seasons import SeasonPaths, require_receipt_season
+from scripts.player_photos import Photos, place_block
 START = '<!-- yearly-statistics:start -->'
 END = '<!-- yearly-statistics:end -->'
 WORKING = '**Profile status:** Working player card'
@@ -143,6 +144,7 @@ def refresh_text(text,year,player,pos,periods,root=ROOT):
 
 def refresh_cards(year,root=ROOT,check=False):
     periods = {p:period_data(year,p,root) for p in (False,True)}
+    photos = Photos(root)
     errors = []
     for path in sorted(SeasonPaths(year, root).record('player_profiles').glob('*.md')):
         if path.name in ('README.md','TEMPLATE.md'):
@@ -156,6 +158,7 @@ def refresh_cards(year,root=ROOT,check=False):
         name = re.search(r'^# (.+?) — ',text)[1]
         pos = re.search(r'^\*\*Position:\*\* (\S+)',text,re.M)[1]
         updated = refresh_text(text,year,name,pos,periods,root)
+        updated = place_block(updated, photos.lookup(name), name)
         if updated!=text:
             if check:
                 errors.append(f'{path.relative_to(root)}: stale yearly statistics')

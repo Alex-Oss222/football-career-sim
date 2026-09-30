@@ -1,5 +1,11 @@
 # Eugene Monroe — 2014 Player Profile
 
+<!-- photo -->
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/EugeneJ11.jpg?width=500" alt="Eugene Monroe" width="160">
+
+*Photo: Excel23, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:EugeneJ11.jpg)).*
+<!-- /photo -->
+
 **Team:** Jacksonville Jaguars  
 **Season:** 2014  
 **Profile status:** Working player card  
