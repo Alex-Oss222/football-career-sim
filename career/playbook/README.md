@@ -26,9 +26,9 @@ This folder holds Alex Stone's authored, team-neutral offensive and defensive sy
 
 Effective-season ranges come from each file's own frontmatter (`effective_seasons` / `seasons`). Iteration I runs through 2015 because Iteration II's frontmatter states 2016-2017 and gives no earlier start.
 
-## Who calls the plays: the defensive coordinator, whoever he is
+## Staff use of the books
 
-Romeo Crennel currently prepares and directs the defense. Stone may call or delegate plays in any phase as head coach, including changing the arrangement during a game. The current staff assignment describes how they work; it does not restrict the user's in-game control.
+Stone may call, delegate or take back any phase at any time. Follow his latest direction and otherwise continue the existing staff arrangement; do not reopen this as a routine planning decision.
 
 Stone's name on a playbook identifies the author. It does not appoint a game-day caller. The defensive book is Stone's issued system and coaching-philosophy reference. How much of it a given DC installs, adapts, or sequences differently (Crennel has a multiple-front / 3-4 background) is a staff-resolved football question, never assumed, and each year's defense is built from the roster Jacksonville actually has.
 

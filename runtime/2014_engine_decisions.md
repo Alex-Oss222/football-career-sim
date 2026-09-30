@@ -47,6 +47,22 @@ Use the existing qualitative tier vocabulary and common internal conversion. Do 
 
 The unit is not a simple average of stars. A weak protection link matters when exposed, and help can address it while taking a receiver out of the route. A coverage shell can protect a corner while conceding something elsewhere. A powerful run front can be less suitable for a passing situation. These tradeoffs must be represented by the same available-player and assignment model on both sides.
 
+### Defensive communication, execution and individual disruption
+
+Stone's September 29, 2026 clarification adopts two unit assessments, **Communication** and **Plan execution**, while retaining the separate capabilities of the actual defenders. This refines E1's required behavior; it does not implement or release it.
+
+Communication covers the defense operating together: receiving the call, recognizing the offensive presentation, identifying man or zone/match responsibilities, passing verbal and visual adjustments, and responding together as motion and routes change the picture. The helmet receiver is one participant, not the whole assessment. Plan execution covers carrying out the intended fits, leverage, coverage exchanges, pressure, pursuit and finish. A scheme mismatch, physical loss or deliberate concession is distinguishable from players misunderstanding one another.
+
+Show each badge with the existing qualitative tiers, the applicable lineup/package, supporting observations and uncertainty. It summarizes the evidence for that group, not a sum of completed communication steps or a permanent club trait. Missing evidence stays unassessed. A substitution can change the group's operation without erasing every returning player's experience. No badge is awarded in this planning update.
+
+The resolver must use the relevant shared-assignment evidence alongside the called defense and actual matchups. Do not stack badge bonuses on top of the same player/continuity evidence or make the labels independent success rolls. A defense can communicate correctly and still be outplayed; an individual can rescue a breakdown without making that breakdown disappear.
+
+Preserve individual disruption and anticipation. A lineman can defeat his blocker early enough to spoil a sound offensive concept. A coverage player can recognize a tendency, win his matchup or make an informed departure from the expected movement. Represent his actual ability, available cues, coaching freedom, timing and the help or space he leaves behind. A correct anticipation, physical win, failed gamble and missed assignment are different events. Neither automatic punishment for improvisation nor unrestricted star immunity is acceptable. Historical reputation and future careers cannot supply a 2014 rookie's abilities or guarantee an outcome.
+
+When implementing E1, verify that a supported communication difference changes relevant exchanges without changing pass-rush technique; a supported individual rush advantage can disrupt a well-designed play even with unchanged communication; and a failed anticipation exposes its actual assignment cost. These are required checks for the future implementation, not tests claimed to pass today.
+
+Football basis: [Belichick's September 24, 2013 explanation](https://www.patriots.com/news/bill-belichick-conference-call-transcript-191316) describes rapid shared decisions against motion, splits and bunches; [LeBeau's September 20, 2012 comments](https://www.steelers.com/news/coordinator-s-corner-haley-lebeau-8328896) describe safety freedom changing with the tandem. [McCourty's January 27, 2017 explanation](https://www.patriots.com/news/devin-mccourty-press-conference-transcript-1-27-289476) supplies a later instructional account of distributed verbal and hand-signal communication. The latter is background explanation, not 2014 player evidence or a branch event. These sources support the football relationships; the badge presentation is Stone's requested simulation design.
+
 ### Coaching without a magic multiplier
 
 Coaches affect the taught menu, clarity of shared rules, practice allocation, scouting hypotheses, available adjustments, substitutions and actual calls. Those choices create opportunities and costs. Staff reputation alone adds nothing to a draw. A sound plan may meet an effective counter; an ambitious install can remain poorly communicated. An observed teaching failure belongs in that shared-job assessment before a player is downgraded.
