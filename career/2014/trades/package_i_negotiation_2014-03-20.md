@@ -1,4 +1,4 @@
-# Package I: Arizona negotiation, March 2014
+# Arizona trade for No. 38: negotiation, March 2014
 
 Recorded September 29, 2026 (ledger Entry 99). Branch dates: March 18 to 20, 2014. Method: judgment-based negotiation under the March 2014 replay instruction, which superseded Entry 94's first-pass chart draw. Arizona's answers are authored simulation decisions made on the same criteria any club would use; they are not recovered historical conversations.
 
