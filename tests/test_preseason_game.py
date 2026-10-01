@@ -87,12 +87,13 @@ class SeasonPathTests(unittest.TestCase):
             paths.preseason_folder(0)
         with self.assertRaises(ValueError):
             paths.paused_game(1, postseason=True, preseason=True)
-        # Preseason games 1 (August 8, 2014), 2 (August 14, 2014) and 3 (August 22, 2014) are closed: their
-        # receipts are the only ones in the directory, and it stays apart from the regular-season and postseason sets.
+        # All four 2014 preseason games (August 8, 14, 22 and 28, 2014) are closed: their receipts are the
+        # only ones in the directory, and it stays apart from the regular-season and postseason sets.
         receipts = sorted(p.name for p in paths.preseason_receipts.glob('*.json'))
         self.assertEqual(receipts, ['preseason_01_tampa_bay_buccaneers_at_jacksonville_jaguars.json',
                                     'preseason_02_jacksonville_jaguars_at_chicago_bears.json',
-                                    'preseason_03_jacksonville_jaguars_at_detroit_lions.json'])
+                                    'preseason_03_jacksonville_jaguars_at_detroit_lions.json',
+                                    'preseason_04_atlanta_falcons_at_jacksonville_jaguars.json'])
         self.assertNotEqual(paths.preseason_receipts, paths.receipts)
 
 

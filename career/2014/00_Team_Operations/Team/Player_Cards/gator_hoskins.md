@@ -115,6 +115,12 @@ Hoskins was assignment-correct in the attached work, with mixed finish and no co
 
 Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above.
 
+### August 28, 2014 | Preseason game 4, Atlanta at Jacksonville
+
+Thirty-six offensive snaps across Cousins's, Henne's, Wilson's and Shaw's groups, 5 catches on 7 targets for 13: the shift-to-Empty Spacing throw for 6 with Henne, the 7-yard Snag with Wilson for a first down, the minus 2 on the Boot Flood Left, and 1-yard catches on third-and-12 and fourth-and-14. A short lower-extremity injury was logged at the end of Cousins's touchdown drive (11:48 of the second quarter); he was not removed and played the second half as the record holds it, and the instruction afterward is out, projected return in 19 days (September 16), reassessment September 3 ([medical record](../../Medical/incidents/gator_hoskins_2014-08-28.md)). Eight catches for 84 at Detroit and five for 13 here are two different nights at the same job; the attached half of his question is the film's, and TE3 remains unfilled.
+
+Source: [preseason game 4 output](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_04/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

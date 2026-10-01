@@ -2,7 +2,7 @@
 
 [Preseason games](../README.md)
 
-Three preseason games are closed (game 1, August 8, 2014: Tampa Bay 30, Jacksonville 21; game 2, August 14, 2014: Chicago 23, Jacksonville 17, overtime; game 3, August 22, 2014: Jacksonville 41, Detroit 14). Completed preseason box scores and preseason totals belong here, drawn from the preseason records only. They never add to regular-season or playoff totals.
+All four preseason games are closed (game 1, August 8, 2014: Tampa Bay 30, Jacksonville 21; game 2, August 14, 2014: Chicago 23, Jacksonville 17, overtime; game 3, August 22, 2014: Jacksonville 41, Detroit 14; game 4, August 28, 2014: Atlanta 31, Jacksonville 13). Completed preseason box scores and preseason totals belong here, drawn from the preseason records only. They never add to regular-season or playoff totals.
 
 ## How the records are kept
 

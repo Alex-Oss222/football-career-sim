@@ -135,6 +135,12 @@ Nicks held his landmarks and won leverage against Talib with his hands while kee
 
 Source: [dated camp observations](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above.
 
+### August 28, 2014 | Preseason game 4, Atlanta at Jacksonville
+
+Twelve snaps at X with the starters in the first quarter, one target, the 14-yard catch on the MAX-protected Power Pass on third-and-18 that fell 4 short, before a multi-week lower-extremity injury was logged at the end of that possession (3:56 of the first quarter) and he was removed: out, projected return in 23 days (September 20), reassessment September 4 ([medical record](../../Medical/incidents/hakeem_nicks_2014-08-28.md)). Four games of WR1 evidence stand as recorded (one catch for 14 here, 2 of 3 for 34 at Detroit, 2 of 5 for 19 with two interceptions at Chicago, no first-group target at Tampa Bay); the comparison with Adams is not decided by the injury, the Week 1 arrangement is Stone's open decision and any roster disposition is Caldwell's with the user at the August 30 reduction.
+
+Source: [preseason game 4 output](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_04/output.md) and its public receipt. This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year

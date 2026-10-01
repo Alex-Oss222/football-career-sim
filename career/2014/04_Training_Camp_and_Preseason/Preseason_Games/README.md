@@ -1,13 +1,13 @@
 # Jacksonville 2014 preseason
 
-**IN_PROGRESS: 1-2 after game 3.** Games 1, 2 and 3 are closed below; game 4's preparation closed August 27 and its Jacksonville inputs are frozen from Stone's plan. The matchups became public on April 9, 2014, and the dates with the April 23 schedule release ([2014 dated record](../../Record.md)): Tampa Bay at home August 8, at Chicago August 14, at Detroit August 22 and Atlanta at home August 28. They are schedule facts, not branch results.
+**COMPLETE: 1-3.** All four games are closed below; the completed preseason review is section 6 of the [game 4 output](Game_04/output.md). The August 30 reduction to 53 is next. The matchups became public on April 9, 2014, and the dates with the April 23 schedule release ([2014 dated record](../../Record.md)): Tampa Bay at home August 8, at Chicago August 14, at Detroit August 22 and Atlanta at home August 28. They are schedule facts, not branch results.
 
 | Game | Date and kickoff (ET) | Venue direction | Status |
 |---:|---|---|---|
 | [Game 1](Game_01/README.md) | August 8, 7:30 p.m. ET: Tampa Bay at Jacksonville | Home | **Played: Tampa Bay 30, Jacksonville 21.** [Output](Game_01/output.md) and [receipt](statistics/records/game_receipts/preseason_01_tampa_bay_buccaneers_at_jacksonville_jaguars.json); inputs frozen August 7 and preserved |
 | [Game 2](Game_02/README.md) | August 14, 8 p.m. ET: Jacksonville at Chicago | Away | **Played: Chicago 23, Jacksonville 17 (OT).** [Output](Game_02/output.md) and [receipt](statistics/records/game_receipts/preseason_02_jacksonville_jaguars_at_chicago_bears.json); inputs frozen August 13 and preserved |
 | [Game 3](Game_03/README.md) | August 22, 7:30 p.m. ET: Jacksonville at Detroit | Away | **Played: Jacksonville 41, Detroit 14.** [Output](Game_03/output.md) and [receipt](statistics/records/game_receipts/preseason_03_jacksonville_jaguars_at_detroit_lions.json); inputs frozen August 21 and preserved |
-| [Game 4](Game_04/README.md) | August 28, 6 p.m. ET (the club's August 25 notice): Atlanta at Jacksonville | Home | Next; Jacksonville's inputs (call sheet, game depth chart, rotation) frozen August 27 from Stone's plan; the opponent roster from the gated Atlanta library still owed; no result |
+| [Game 4](Game_04/README.md) | August 28, 6 p.m. ET (the club's August 25 notice): Atlanta at Jacksonville | Home | **Played: Atlanta 31, Jacksonville 13.** [Output](Game_04/output.md) and [receipt](statistics/records/game_receipts/preseason_04_atlanta_falcons_at_jacksonville_jaguars.json); inputs frozen August 27 and preserved |
 
 [Calendar verification](../../../../library/2014_full_calendar_verification.md) owns the date sources. Do not substitute the 2013 preseason dates or home/away sequence. The game folders are reading placeholders. Executable inputs and receipts are created only when the verified game is prepared and played; no real score is imported.
 

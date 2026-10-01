@@ -119,6 +119,12 @@ Source: [preseason game 3 output](../../../04_Training_Camp_and_Preseason/Presea
 
 Reassessed August 24 with no change (independent medical hold, projected return August 28, game day); no session August 23 to 27. Stone's Atlanta plan freezes its names after the medical review and does not build around a player who was unavailable for the week's work, so he is inactive on the frozen game depth chart and outside the rotation; a release on August 28, if the independent process communicates it, is recorded on the day and restores no role. TE3 remains open and the comparison with Hoskins received nothing from his side this week. Source: [medical record](../../Medical/incidents/marcel_jensen_2014-08-22.md); [camp record](../../../04_Training_Camp_and_Preseason/Training_Camp/training_report.md#august-23-to-27-the-detroit-review-and-the-atlanta-preparation). This coaching update preserves the opening grades above.
 
+### August 28, 2014 | Released on his projected date; inactive for Atlanta
+
+The independent medical hold cleared on August 28, its projected date, under the record's method, nothing else having been communicated after the August 24 reassessment ([medical history](../../Medical/medical_history.md#august-28-preseason-game-4-injuries)). He was inactive for the Atlanta game under Stone's frozen plan, having missed the week's work, and the release restores no role: he is available for the August 29 review and the Week 1 preparation with no communicated restriction, TE3 remains unfilled, and his roster disposition at the August 30 reduction is Caldwell's with the user.
+
+Source: [preseason game 4 output](../../../04_Training_Camp_and_Preseason/Preseason_Games/Game_04/output.md) and the [medical history](../../Medical/medical_history.md#august-28-preseason-game-4-injuries). This coaching update preserves the opening grades above.
+
 <!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
