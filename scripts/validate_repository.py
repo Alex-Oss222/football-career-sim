@@ -409,6 +409,27 @@ def validate(root=ROOT):
             require(standings_path.is_file() and standings_path.read_text() == standings_view(2014, regular),
                     '2014 standings missing or stale')
             errors.extend(award_coverage_errors(regular, paths.awards))
+        # Preseason receipts live apart (SeasonPaths.preseason_receipts): never
+        # in standings or the regular-season statbook, but their own views and
+        # box scores must be current, and none may exist before release.
+        from scripts.render_preseason_stats import load_receipts as load_preseason, require_preseason, stale_views
+        from scripts.render_box_score import stale_blocks
+        preseason = load_preseason(paths.preseason_receipts)
+        require_preseason(preseason, 2014)
+        require(len({r['event_id'] for r in preseason}) == len(preseason), '2014 preseason receipts contain duplicate event identities')
+        if preseason:
+            require(not game_release_errors(2014, root), '2014 preseason receipts exist before season release acceptance')
+            fixtures = {g['game_id'] for g in paths.preseason_games()}
+            for receipt in preseason:
+                require(receipt['event_id'] in fixtures, '2014 preseason receipt is not a dated fixture: ' + receipt['event_id'])
+                for team, score in receipt['final_score'].items():
+                    require(receipt['team_stats'][team]['points'] == score, '2014 preseason receipt points differ from final score')
+            for name in stale_views(paths):
+                require(False, '2014 preseason statistics missing or stale: %s; run render_preseason_stats.py --season 2014' % name)
+            for output in sorted(paths.preseason_games_dir.glob('game_*/output.md')):
+                for event_id in stale_blocks(output, paths.preseason_receipts, season=2014):
+                    require(False, f'{output.relative_to(root)}: box score for {event_id} differs from its '
+                                   'receipt; run render_box_score.py --season 2014 --preseason --write')
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append('2014 season records invalid: ' + str(exc))
 
