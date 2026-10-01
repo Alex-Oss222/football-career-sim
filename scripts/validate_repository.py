@@ -478,7 +478,8 @@ def validate(root=ROOT):
             folder = SeasonPaths(year, root).awards
             if (folder/'week_01/README.md').exists():
                 results = json.loads((folder/'results.json').read_text()) if (folder/'results.json').exists() else {}
-                method = json.loads((folder/'methodology.json').read_text()) if results else None
+                method = (json.loads((folder/'methodology.json').read_text())
+                          if results or (folder/'methodology.json').is_file() else None)
                 for relative, text in award_pages(year, results, method).items():
                     path = folder/relative
                     previous = path.read_text() if path.is_file() else ''

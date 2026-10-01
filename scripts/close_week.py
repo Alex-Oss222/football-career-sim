@@ -193,6 +193,7 @@ def close_slate(package, paths, snapshot, client, results_path, answer=None, run
 
 def write_receipts(package, paths, results, season):
     from runtime.statbook import make_receipt
+    from runtime.player_bios import unverified_ages
     # Postseason receipts live apart so standings, the regular-season statbook,
     # awards and the band audit stay regular-season only (runtime.postseason).
     postseason_week = any(g.get("game_type") == "postseason" for g in package["games"])
@@ -204,6 +205,11 @@ def write_receipts(package, paths, results, season):
                                matchup="%s at %s" % (game["away"], game["home"]), detail=detail)
         if season != 2013:
             receipt["season"] = season
+        # Background players who entered with no verified birth date
+        # (runtime.player_bios): public metadata, never a resolution input.
+        unverified = unverified_ages(game.get("player_ages"))
+        if unverified:
+            receipt["age_unverified"] = unverified
         (receipts_dir / game["receipt"]).write_text(
             json.dumps(receipt, sort_keys=True, separators=(",", ":")) + "\n", encoding="utf-8")
     return receipts_dir
