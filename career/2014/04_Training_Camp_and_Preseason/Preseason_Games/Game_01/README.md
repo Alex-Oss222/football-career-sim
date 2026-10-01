@@ -2,7 +2,7 @@
 
 [All preseason games](../README.md) · [Preseason assessments](../../Position_Battles/README.md)
 
-Not played. Keep this game’s prepared plan, actual report, box score and player assessment here when it is reached. The [calendar](../../../Calendar.md) supplies kickoff notices and the permitted timeline. Game-readiness requirements still apply.
+Not played. Keep this game’s prepared plan, actual report, box score and player assessment here when it is reached. The executable inputs frozen here before closure are `call_sheet.json`, `depth_chart.json`, `opponent_roster.json` and, for the unit rotation in Stone's plan (first offense for two possessions under a snap ceiling, the second unit, then the reserves, with the named swaps), `rotation.json` in the schema of [runtime/README.md](../../../../../runtime/README.md#preseason-games-2014-onward-no-kernel-change-for-the-regular-season); without it the kernel's documented quarter-based default rotation applies. The [calendar](../../../Calendar.md) supplies kickoff notices and the permitted timeline. Game-readiness requirements still apply.
 
 The actual performance feeds the camp assessment and roster decisions. Preseason statistics stay separate from regular-season statistics; any recorded preseason honours stay with this phase.
 
