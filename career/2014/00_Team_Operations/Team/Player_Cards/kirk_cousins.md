@@ -15,7 +15,7 @@
 **Age:** 25  
 **Position:** QB  
 **NFL standing:** Starting staff view; exact theoretical personnel grades  
-**Player identity:** Rhythm-oriented pocket quarterback. He wants to operate on time, keep the offense organized and win with timing, leverage and ordinary NFL arm talent rather than with rare arm strength or explosive running ability.  
+**Player identity:** Structured pocket passer who wins with processing, pocket movement, cadence, anticipation and short-to-intermediate ball placement. He is at his best working through progressions on rhythm, creating clean throwing lanes with subtle movement and delivering from a repeatable base; his mobility is functional rather than a featured part of his game.  
 **Previous annual profile:** [2013 baseline](../../../../2013/player_profiles/kirk_cousins.md)  
 
 > This is a dated personnel snapshot, not a game-engine rating card. Established
@@ -28,22 +28,23 @@
 | Category | Grade | NFL standing |
 | --- | ---: | --- |
 | Overall | 6.0 /10 | Staff judgment |
-| Athleticism | 5.5 /10 | Staff judgment |
-| Speed | 5.0 /10 | Staff judgment |
-| Strength / Power | 5.5 /10 | Staff judgment |
-| Agility / Change of direction | 5.5 /10 | Staff judgment |
-| Technique | 6.5 /10 | Staff judgment |
-| Football IQ | 6.0 /10 | Staff judgment |
-| Arm strength / velocity | 5.5 /10 | Staff judgment |
-| Short-intermediate ball placement | 6.5 /10 | Staff judgment |
-| Deep-outside placement | 5.0 /10 | Staff judgment |
-| Timing / anticipation | 6.5 /10 | Staff judgment |
-| Coverage / protection processing | 5.5 /10 | Staff judgment |
-| Pocket movement | 6.0 /10 | Staff judgment |
-| Scramble speed / mobility | 5.0 /10 | Staff judgment |
-| Mechanics / release | 6.5 /10 | Staff judgment |
-| Pressure decision-making | 5.0 /10 | Staff judgment |
-| Ball security / command | 6.0 /10 | Staff judgment |
+| Athleticism | 6.5 /10 | Staff judgment |
+| Speed | 6.0 /10 | Staff judgment |
+| Strength / Power | 6.5 /10 | Staff judgment |
+| Agility / Change of direction | 6.5 /10 | Staff judgment |
+| Technique | 7.5 /10 | Staff judgment |
+| Football IQ | 8.5 /10 | Staff judgment |
+| Arm strength / velocity | 7.5 /10 | Staff judgment |
+| Short-intermediate ball placement | 8.5 /10 | Staff judgment |
+| Deep-outside placement | 7.5 /10 | Staff judgment |
+| Timing / anticipation | 7.5 /10 | Staff judgment |
+| Cadence | 8.5 /10 | Staff judgment |
+| Coverage / protection processing | 8.5 /10 | Staff judgment |
+| Pocket movement | 9.0 /10 | Staff judgment |
+| Scramble speed / mobility | 6.5 /10 | Staff judgment |
+| Mechanics / release | 8.0 /10 | Staff judgment |
+| Pressure decision-making | 8.0 /10 | Staff judgment |
+| Ball security / command | 7.5 /10 | Staff judgment |
 
 Exact theoretical personnel judgments. Retained position grades carry the 2013 evaluation; the six broad categories summarize that starting view. No new 2014 improvement or decline is asserted.
 
@@ -51,28 +52,29 @@ Exact theoretical personnel judgments. Retained position grades carry the 2013 e
 
 | Trait | vs. Average | vs. Best | vs. Worst |
 | --- | --- | --- | --- |
-| Athleticism | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Speed | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Strength / Power | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Agility / Change of direction | Below NFL starter standard | Below elite standard | Above low-end standard |
+| Athleticism | At NFL starter standard | Below elite standard | Above low-end standard |
+| Speed | At NFL starter standard | Below elite standard | Above low-end standard |
+| Strength / Power | At NFL starter standard | Below elite standard | Above low-end standard |
+| Agility / Change of direction | At NFL starter standard | Below elite standard | Above low-end standard |
 | Technique | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Football IQ | At NFL starter standard | Below elite standard | Above low-end standard |
-| Arm strength / velocity | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Short-intermediate ball placement | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Deep-outside placement | Below NFL starter standard | Below elite standard | Above low-end standard |
+| Football IQ | Above NFL starter standard | At NFL elite standard | Above low-end standard |
+| Arm strength / velocity | At NFL starter standard | Below elite standard | Above low-end standard |
+| Short-intermediate ball placement | Above NFL starter standard | At NFL elite standard | Above low-end standard |
+| Deep-outside placement | At NFL starter standard | Below elite standard | Above low-end standard |
 | Timing / anticipation | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Coverage / protection processing | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Pocket movement | At NFL starter standard | Below elite standard | Above low-end standard |
-| Scramble speed / mobility | Below NFL starter standard | Below elite standard | Above low-end standard |
-| Mechanics / release | Above NFL starter standard | Below elite standard | Above low-end standard |
-| Pressure decision-making | Below NFL starter standard | Below elite standard | Above low-end standard |
+| Cadence | Above NFL starter standard | At NFL elite standard | Above low-end standard |
+| Coverage / protection processing | Above NFL starter standard | At NFL elite standard | Above low-end standard |
+| Pocket movement | Above NFL starter standard | At NFL elite standard | Above low-end standard |
+| Scramble speed / mobility | At NFL starter standard | Below elite standard | Above low-end standard |
+| Mechanics / release | Above NFL starter standard | At NFL elite standard | Above low-end standard |
+| Pressure decision-making | Above NFL starter standard | At NFL elite standard | Above low-end standard |
 | Ball security / command | At NFL starter standard | Below elite standard | Above low-end standard |
 
 These are staff comparisons against personnel standards, not measured 2014 league ranks.
 
 ## Established player state
 
-Rhythm-oriented pocket quarterback. He wants to operate on time, keep the offense organized and win with timing, leverage and ordinary NFL arm talent rather than with rare arm strength or explosive running ability.
+Structured pocket passer with advanced command of the pre-snap and in-pocket phases of the position. Cousins uses cadence to control the operation, processes coverage and protection cleanly, and works through progressions on schedule. Pocket movement is a defining strength: he can climb, slide and reset without abandoning the structure of the play, keeping his eyes downfield and creating a usable throwing lane as pressure closes. His mechanics stay compact and repeatable, and his best accuracy comes in the short-to-intermediate game, where placement and timing allow him to throw receivers into space. He has enough arm strength and deep-outside placement to attack the full field, though neither is the foundation of his game. Under pressure he generally remains a passer first, relying on movement, processing and disciplined decisions rather than scrambling. His mobility is functional, but speed and open-field creation are secondary traits.
 
 Source: [2013 profile](../../../../2013/player_profiles/kirk_cousins.md) and its recorded practice/game sources.
 
@@ -84,7 +86,7 @@ Source: [2013 profile](../../../../2013/player_profiles/kirk_cousins.md) and its
 
 ## What supports this assessment
 
-Rhythm-oriented pocket quarterback. He wants to operate on time, keep the offense organized and win with timing, leverage and ordinary NFL arm talent rather than with rare arm strength or explosive running ability.
+The retained 2013 evaluation supports the same core picture: Cousins' strongest quarterback traits are processing, cadence, short-to-intermediate placement, mechanics and timing, while his athletic value comes more from movement inside the pocket than from scramble speed. The opening 2014 grades treat pocket movement as a top trait and pressure decision-making as another clear strength.
 
 [2013 profile](../../../../2013/player_profiles/kirk_cousins.md) and its recorded practice/game sources.
 
@@ -94,19 +96,21 @@ The 2013 record below supplies prior-season context. The 2014 evaluation uses on
 
 ## Play style
 
-Rhythm-oriented pocket quarterback. He wants to operate on time, keep the offense organized and win with timing, leverage and ordinary NFL arm talent rather than with rare arm strength or explosive running ability.
+Operates as a rhythm dropback passer. He wants the concept and his feet synchronized, gets the ball out off the proper hitch when the read is there, and can climb or slide to preserve a throwing lane when it is not. He is most comfortable attacking short and intermediate windows, has sufficient arm strength to work outside the numbers, and prefers to solve pressure from the pocket rather than by scrambling.
 
 ## Best traits
 
-- Short-intermediate ball placement: 6.5 /10.
-- Timing / anticipation: 6.5 /10.
-- Mechanics / release: 6.5 /10.
+- Pocket movement: 9.0 /10.
+- Football IQ: 8.5 /10.
+- Cadence: 8.5 /10.
+- Short-intermediate ball placement: 8.5 /10.
+- Coverage / protection processing: 8.5 /10.
 
 ## Main weaknesses
 
-- Deep-outside placement: 5.0 /10.
-- Scramble speed / mobility: 5.0 /10.
-- Pressure decision-making: 5.0 /10.
+- Speed: 6.0 /10.
+- Scramble speed / mobility: 6.5 /10.
+- Athleticism: 6.5 /10.
 
 ## Evidence and uncertainty
 
@@ -115,7 +119,7 @@ Rhythm-oriented pocket quarterback. He wants to operate on time, keep the offens
 - **During the year:** Preserve the opening personnel judgment; add dated material coaching findings without creating another full assessment. Update recorded statistics after games.
 - **At season close:** Write a separate final assessment from the completed season and exit reviews; retain this opening card and its dated updates. Keep prior-year statistics.
 
-**One-line description:** Rhythm-oriented pocket quarterback. He wants to operate on time, keep the offense organized and win with timing, leverage and ordinary NFL arm talent rather than with rare arm strength or explosive running ability.
+**One-line description:** Structured pocket passer with high-level pocket movement, processing and cadence, strong short-to-intermediate placement and mechanics, and functional rather than playmaking mobility.
 
 ## 2013 season production
 
