@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from runtime.seasons import SeasonPaths
 from runtime.usage import group, lineup_errors
 from runtime.week_inputs import GAME_DAY_ACTIVE_LIMIT
 
@@ -20,9 +21,11 @@ from runtime.week_inputs import GAME_DAY_ACTIVE_LIMIT
 DEPTH_REQUIRED = ("QB", "RB", "WR", "TE")
 
 
+# A Status cell is the status alone or the status followed by one dated
+# parenthetical, e.g. "Active 53 (signed August 31, 2014)".
 CONTROLLED_STATUS = re.compile(
-    r"^(?:Active 53|Offseason roster(?: \([^|]*\))?|Practice squad|Injured reserve|IR|Reserve(?:/[^|]+)?|"
-    r"PUP|NFI|Suspended|Commissioner(?:/[^|]+)?)$",
+    r"^(?:Active 53|Offseason roster|Practice squad|Injured reserve|IR|Reserve(?:/[^|(]+?)?|"
+    r"PUP|NFI|Suspended|Commissioner(?:/[^|(]+?)?)\s*(?:\([^|]*\))?$",
     re.IGNORECASE,
 )
 
@@ -153,10 +156,13 @@ def check_inputs(data, controlled_players, protagonist="Jacksonville Jaguars", e
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("inputs", type=Path)
+    parser.add_argument("--season", type=int, default=2013,
+                        help="Season whose branch roster defines Jacksonville control (default 2013).")
     parser.add_argument(
         "--roster",
         type=Path,
-        default=ROOT / "career/2013/roster.md",
+        default=None,
+        help="Roster file to read control from; defaults to the season's roster (SeasonPaths).",
     )
     parser.add_argument("--protagonist", default="Jacksonville Jaguars")
     parser.add_argument(
@@ -167,7 +173,7 @@ def main():
     args = parser.parse_args()
 
     data = json.loads(args.inputs.read_text(encoding="utf-8"))
-    controlled = controlled_players_from_roster(args.roster)
+    controlled = controlled_players_from_roster(args.roster or SeasonPaths(args.season, ROOT).roster)
     errors = check_inputs(
         data, controlled, args.protagonist, expected_games=args.expected_games
     )

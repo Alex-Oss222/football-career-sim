@@ -166,7 +166,8 @@ def controlled_active(season=2013, roster_path=None):
             continue
         if status_col is None or set(cells[0]) <= {"-", ":"}:
             continue
-        if cells[status_col] == "Active 53":
+        # "Active 53" alone or with a dated parenthetical ("Active 53 (signed August 31, 2014)").
+        if re.match(r"Active 53(?:\s*\(|$)", cells[status_col]):
             rows.append((cells[0], cells[avail_col] if avail_col is not None else AVAILABLE_TEXT))
     return rows
 

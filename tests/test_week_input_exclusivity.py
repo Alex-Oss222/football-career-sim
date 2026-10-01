@@ -1,6 +1,10 @@
+import contextlib
+import io
+import json
 import sys
 import tempfile
 import unittest
+from unittest import mock
 from dataclasses import asdict
 from pathlib import Path
 
@@ -38,6 +42,41 @@ class WeekInputExclusivityTests(unittest.TestCase):
                 controlled_players_from_roster(path),
                 {"Kirk Cousins","Brent Grimes","Tyler Bray","Brandon King"},
             )
+
+    def test_dated_status_parentheticals_still_mark_control(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/"roster.md"
+            path.write_text(
+                "| Player | Pos | Status | Availability | Role |\n"
+                "|---|---|---|---|---|\n"
+                "| Kirk Cousins | QB | Active 53 (signed August 31, 2014) | No communicated restriction | QB1 |\n"
+                "| Tyler Bray | QB | Practice squad (signed September 1, 2014) | No communicated restriction | — |\n"
+                "| Cameron Brate | TE | Injured reserve (September 2, 2014) | Out | — |\n"
+                "| Jerrell Jackson | WR | Reserve/Injured (September 2, 2014) | Out | — |\n"
+                "| Austen Lane | DE | Claimed on waivers (August 31, 2013) | — | — |\n",
+                encoding="utf-8",
+            )
+            self.assertEqual(controlled_players_from_roster(path),
+                             {"Kirk Cousins","Tyler Bray","Cameron Brate","Jerrell Jackson"})
+
+    def test_cli_roster_defaults_to_the_season_roster(self):
+        from scripts import check_week_input_exclusivity as cli
+        data={"games":[{
+            "away":"Jacksonville Jaguars","home":"Philadelphia Eagles",
+            "away_input":{"active_players":["QB:Somebody Else"],"roster":[]},
+            "home_input":{"active_players":["QB:Kirk Cousins"],"roster":[]},
+        }]}
+        with tempfile.TemporaryDirectory() as tmp:
+            package=Path(tmp)/"week_01_inputs.json"
+            package.write_text(json.dumps(data),encoding="utf-8")
+            out=io.StringIO()
+            with mock.patch.object(sys,"argv",["x",str(package),"--season","2014"]), \
+                    contextlib.redirect_stdout(out):
+                code=cli.main()
+        # Cousins is Jacksonville-controlled on the 2014 roster, so the 2014
+        # default roster (not career/2013/roster.md) must flag him.
+        self.assertEqual(code,1)
+        self.assertIn("Kirk Cousins: Jacksonville-controlled player appears on Philadelphia Eagles",out.getvalue())
 
     def test_current_branch_roster_parser_sees_active_and_practice_squad(self):
         root=Path(__file__).resolve().parents[1]
