@@ -273,9 +273,15 @@ def build_package(week, receipts, call_sheet, anchors, season=2013):
         })
         # Public preparation metadata, deliberately outside TeamInput and the
         # outcome packet. Birthdays cannot reroll already-frozen football.
+        # A background player with no verified birth date enters with
+        # age None and age_unverified (carried into the receipt, as for a
+        # preseason opponent); every Jacksonville player still fails closed.
         games[-1]["player_ages"] = player_bios.biographies(
             [p["player_id"] for side in ("away_input", "home_input")
-             for p in games[-1][side]["roster"]], game_day, birth_dates)
+             for p in games[-1][side]["roster"]], game_day, birth_dates,
+            allow_unverified=[p["player_id"] for side in ("away", "home")
+                              if game[side] != PROTAGONIST
+                              for p in games[-1][side + "_input"]["roster"]])
     package = {"season": season, "week": week, "games": games}
     if coverage:
         # Public preparation metadata outside TeamInput: E1 evidence coverage

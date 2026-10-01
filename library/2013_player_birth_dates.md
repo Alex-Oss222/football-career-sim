@@ -21,6 +21,10 @@ The 11 conflicts: Andrew Whitworth, Charles Godfrey, Dashon Goldson, Dimitri Pat
 
 Identity review also distinguishes C.J. Mosley (DT, 1983) from the later linebacker, C.J. Wilson (DE, 1987) from the defensive backs, Mike Brown (WR, 1989), Daryl Smith (LB, 1982), and Brandon King (Purdue DB, 1987). Mike Brewster maps to Michael Brewster's GSIS ID; Antwon Blake retains his 2013 name while mapping to the same stable identity later listed as Valentino Blake. Alex Smith (KC) and Alex Smith (CIN) retain distinct existing simulation IDs.
 
+### 2014 Week 1 library import (October 1, 2026)
+
+A fourth evidence class, `library_week1_source`, covers the 367 players of the [2014 Week 1 depth library](data/2014_week1_depth_charts.json) who had no registry row: 360 new identities and seven alias rows for a gsis id already registered under another spelling (for example `Jay Ratliff` for `Jeremiah Ratliff`), added only where both dates agree and marked `alias_of`. The birth date comes from the library's own `birth_date` field, which the user's nflverse-derived `user_nfl_2014_week1.json` supplied by gsis id (source key `library_week1_source_2014` in the registry). It is one provider: no second publisher was fetched, so these rows are not `corroborated` and must not be relabelled as such without that check. Phil Bates (Seattle) carries no library birth date and stays unregistered; he enters a weekly package only as a background player flagged `age_unverified`, the rule every non-Jacksonville player gets (runtime.week_inputs). The Carolina running back listed as `Jonathan Stewart` shares his name with the registered St. Louis linebacker (a different gsis id); the library row was not imported and the collision is open for identity review. Reproduce with `python scripts/research/import_2014_week1_birth_dates.py` (`--write` to apply; idempotent).
+
 ## Source provenance
 
 | Source | Applicability and use | Limitation |

@@ -49,6 +49,10 @@
   },
   "nflverse_chicago_camp_2026-10-01": {
    "note": "October 1, 2026: the Chicago August 14, 2014 camp roster (library/2014_preseason_opponent_rosters.md) added 34 players from the same nflverse players (sha256 5b6f22c2...), roster_2014 (sha256 f3c3e9cc...) and contract-history (sha256 00091602...) files, with the same evidence classes; the namesakes Chris Williams (CHI), Zach Miller (CHI) and Jeremiah Ratliff / Rob Turner (chart spellings of Jay Ratliff and Robert Turner) are keyed by the library player id. Team, status and later seasons ignored."
+  },
+  "library_week1_source_2014": {
+   "path": "library/data/2014_week1_depth_charts.json",
+   "note": "library/data/2014_week1_depth_charts.json bio fields (birth_date, gsis_id), carried from the user's nflverse-derived user_nfl_2014_week1.json (library/2014_week1_depth_charts.md, sources table, Player bio fields); imported October 1, 2026. One provider: no second publisher was fetched, so the row is library_week1_source, never corroborated."
   }
  },
  "players": {
@@ -19928,6 +19932,2949 @@
    "sources": [
     "nflverse_players_2026-09-30",
     "nflverse_contracts_2026-10-01"
+   ]
+  },
+  "Logan Thomas": {
+   "gsis_id": "00-0031260",
+   "birth_date": "1991-07-01",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jonathan Dwyer": {
+   "gsis_id": "00-0027786",
+   "birth_date": "1989-07-26",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Robert Hughes": {
+   "gsis_id": "00-0028345",
+   "birth_date": "1989-06-21",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "John Brown": {
+   "gsis_id": "00-0031051",
+   "birth_date": "1990-04-03",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Darren Fells": {
+   "gsis_id": "00-0029738",
+   "birth_date": "1986-04-22",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Troy Niklas": {
+   "gsis_id": "00-0031044",
+   "birth_date": "1992-09-18",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jared Veldheer": {
+   "gsis_id": "00-0027674",
+   "birth_date": "1987-06-14",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jonathan Cooper": {
+   "gsis_id": "00-0030590",
+   "birth_date": "1990-01-19",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Ed Stinson": {
+   "gsis_id": "00-0031265",
+   "birth_date": "1990-02-15",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Kareem Martin": {
+   "gsis_id": "00-0031050",
+   "birth_date": "1992-02-19",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Kenny Demens": {
+   "gsis_id": "00-0030309",
+   "birth_date": "1990-02-04",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Thomas Keiser": {
+   "gsis_id": "00-0028742",
+   "birth_date": "1989-03-28",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Glenn Carson": {
+   "gsis_id": "00-0030889",
+   "birth_date": "1990-12-05",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Deone Bucannon": {
+   "gsis_id": "00-0031366",
+   "birth_date": "1992-08-30",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Chandler Catanzaro": {
+   "gsis_id": "00-0030896",
+   "birth_date": "1991-02-26",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Justin Forsett": {
+   "gsis_id": "00-0026373",
+   "birth_date": "1985-10-14",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Lorenzo Taliaferro": {
+   "gsis_id": "00-0031066",
+   "birth_date": "1991-12-23",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Fitzgerald Toussaint": {
+   "gsis_id": "00-0031332",
+   "birth_date": "1990-05-04",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Kamar Aiken": {
+   "gsis_id": "00-0028497",
+   "birth_date": "1989-05-30",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Michael Campanaro": {
+   "gsis_id": "00-0031025",
+   "birth_date": "1991-01-25",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Dennis Pitta": {
+   "gsis_id": "00-0027714",
+   "birth_date": "1985-06-29",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Crockett Gillmore": {
+   "gsis_id": "00-0030992",
+   "birth_date": "1991-11-16",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "James Hurst": {
+   "gsis_id": "00-0030694",
+   "birth_date": "1991-12-17",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "John Urschel": {
+   "gsis_id": "00-0030996",
+   "birth_date": "1991-06-24",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Timmy Jernigan": {
+   "gsis_id": "00-0031170",
+   "birth_date": "1992-09-24",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "C.J. Mosley (BAL)": {
+   "gsis_id": "00-0031296",
+   "birth_date": "1992-06-19",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Zach Orr": {
+   "gsis_id": "00-0030700",
+   "birth_date": "1992-06-09",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Asa Jackson": {
+   "gsis_id": "00-0029294",
+   "birth_date": "1989-12-02",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Terrence Brooks": {
+   "gsis_id": "00-0031338",
+   "birth_date": "1992-03-02",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Sammy Watkins": {
+   "gsis_id": "00-0031325",
+   "birth_date": "1993-06-14",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Chris Hairston": {
+   "gsis_id": "00-0028060",
+   "birth_date": "1989-04-26",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Cyril Richardson": {
+   "gsis_id": "00-0031311",
+   "birth_date": "1990-12-27",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Kyle Williams": {
+   "gsis_id": "00-0024348",
+   "birth_date": "1983-06-10",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ],
+   "alias_of": "Kyle Williams (BUF)"
+  },
+  "Stefan Charles": {
+   "gsis_id": "00-0030132",
+   "birth_date": "1988-06-09",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jacquies Smith": {
+   "gsis_id": "00-0029112",
+   "birth_date": "1990-03-18",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Preston Brown": {
+   "gsis_id": "00-0031171",
+   "birth_date": "1992-10-27",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Ty Powell": {
+   "gsis_id": "00-0030118",
+   "birth_date": "1988-04-27",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Randell Johnson": {
+   "gsis_id": "00-0031026",
+   "birth_date": "1991-03-23",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Ross Cockrell": {
+   "gsis_id": "00-0031016",
+   "birth_date": "1991-08-06",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jordan Gay": {
+   "gsis_id": "00-0030410",
+   "birth_date": "1990-03-29",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Colton Schmidt": {
+   "gsis_id": "00-0030551",
+   "birth_date": "1990-10-27",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Kelvin Benjamin": {
+   "gsis_id": "00-0031359",
+   "birth_date": "1991-02-05",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Brenton Bersin": {
+   "gsis_id": "00-0029394",
+   "birth_date": "1990-05-09",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Corey Brown": {
+   "gsis_id": "00-0031118",
+   "birth_date": "1991-12-16",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Brandon Linder": {
+   "gsis_id": "00-0031369",
+   "birth_date": "1992-01-25",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Fernando Velasco": {
+   "gsis_id": "00-0025925",
+   "birth_date": "1985-02-22",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "David Foucault": {
+   "gsis_id": "00-0031197",
+   "birth_date": "1989-01-07",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Wes Horton": {
+   "gsis_id": "00-0030251",
+   "birth_date": "1989-12-17",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Kawann Short": {
+   "gsis_id": "00-0030448",
+   "birth_date": "1989-02-02",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Kony Ealy": {
+   "gsis_id": "00-0031336",
+   "birth_date": "1991-12-21",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Ben Jacobs": {
+   "gsis_id": "00-0028698",
+   "birth_date": "1988-04-17",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jason Williams": {
+   "gsis_id": "00-0027043",
+   "birth_date": "1986-04-23",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Bene' Benwikere": {
+   "gsis_id": "00-0031262",
+   "birth_date": "1991-09-03",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Tre Boston": {
+   "gsis_id": "00-0031261",
+   "birth_date": "1992-06-25",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Brandon Marshall (CHI)": {
+   "gsis_id": "00-0024334",
+   "birth_date": "1984-03-23",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ],
+   "alias_of": "Brandon Marshall"
+  },
+  "Jay Ratliff": {
+   "gsis_id": "00-0023656",
+   "birth_date": "1981-08-29",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ],
+   "alias_of": "Jeremiah Ratliff"
+  },
+  "Jeremy Hill": {
+   "gsis_id": "00-0031301",
+   "birth_date": "1992-10-20",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "James Wright": {
+   "gsis_id": "00-0031291",
+   "birth_date": "1991-12-31",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Ryan Hewitt": {
+   "gsis_id": "00-0030780",
+   "birth_date": "1991-01-24",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Russell Bodine": {
+   "gsis_id": "00-0031306",
+   "birth_date": "1992-06-30",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Andre Smith": {
+   "gsis_id": "00-0026982",
+   "birth_date": "1987-01-25",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ],
+   "alias_of": "Andre Smith (CIN)"
+  },
+  "T.J. Johnson": {
+   "gsis_id": "00-0030126",
+   "birth_date": "1990-07-17",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Will Clarke": {
+   "gsis_id": "00-0031304",
+   "birth_date": "1991-05-04",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Emmanuel Lamur": {
+   "gsis_id": "00-0029479",
+   "birth_date": "1989-06-08",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Sean Porter": {
+   "gsis_id": "00-0030281",
+   "birth_date": "1991-01-12",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Marquis Flowers": {
+   "gsis_id": "00-0031290",
+   "birth_date": "1992-02-16",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Darqueze Dennard": {
+   "gsis_id": "00-0031380",
+   "birth_date": "1991-10-10",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Johnny Manziel": {
+   "gsis_id": "00-0031409",
+   "birth_date": "1992-12-06",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Isaiah Crowell": {
+   "gsis_id": "00-0030656",
+   "birth_date": "1993-01-08",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Glenn Winston": {
+   "gsis_id": "00-0031459",
+   "birth_date": "1989-04-29",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Ray Agnew": {
+   "gsis_id": "00-0030653",
+   "birth_date": "1991-02-26",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Marqise Lee": {
+   "gsis_id": "00-0031431",
+   "birth_date": "1991-11-25",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Laron Byrd": {
+   "gsis_id": "00-0029343",
+   "birth_date": "1989-08-18",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Ryan Seymour": {
+   "gsis_id": "00-0030115",
+   "birth_date": "1990-02-07",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Vinston Painter": {
+   "gsis_id": "00-0030096",
+   "birth_date": "1989-10-11",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Christian Kirksey": {
+   "gsis_id": "00-0031361",
+   "birth_date": "1992-08-31",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Justin Gilbert": {
+   "gsis_id": "00-0031438",
+   "birth_date": "1991-11-07",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Pierre Desir": {
+   "gsis_id": "00-0031331",
+   "birth_date": "1990-09-08",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "K'Waun Williams": {
+   "gsis_id": "00-0031253",
+   "birth_date": "1991-07-12",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Aaron Berry": {
+   "gsis_id": "00-0027338",
+   "birth_date": "1988-06-25",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Robert Nelson": {
+   "gsis_id": "00-0031232",
+   "birth_date": "1990-02-16",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Dustin Vaughan": {
+   "gsis_id": "00-0030970",
+   "birth_date": "1991-01-27",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Tyler Clutts": {
+   "gsis_id": "00-0027917",
+   "birth_date": "1984-11-09",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Devin Street": {
+   "gsis_id": "00-0031310",
+   "birth_date": "1991-03-30",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Zack Martin": {
+   "gsis_id": "00-0031402",
+   "birth_date": "1990-11-20",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Donald Hawkins": {
+   "gsis_id": "00-0030714",
+   "birth_date": "1992-04-22",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Davon Coleman": {
+   "gsis_id": "00-0030954",
+   "birth_date": "1991-01-11",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Tyrone Crawford": {
+   "gsis_id": "00-0029641",
+   "birth_date": "1989-11-22",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Ken Bishop": {
+   "gsis_id": "00-0031245",
+   "birth_date": "1990-09-08",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Rolando McClain": {
+   "gsis_id": "00-0027904",
+   "birth_date": "1989-07-14",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Korey Toomer": {
+   "gsis_id": "00-0029289",
+   "birth_date": "1988-12-09",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Anthony Hitchens": {
+   "gsis_id": "00-0031348",
+   "birth_date": "1992-06-10",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Cameron Lawrence": {
+   "gsis_id": "00-0030198",
+   "birth_date": "1991-01-20",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Tyler Patmon": {
+   "gsis_id": "00-0031276",
+   "birth_date": "1991-01-26",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Sterling Moore": {
+   "gsis_id": "00-0028767",
+   "birth_date": "1990-02-03",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Chris Jones (DAL)": {
+   "gsis_id": "00-0028664",
+   "birth_date": "1989-07-21",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ],
+   "alias_of": "Chris Jones"
+  },
+  "Juwan Thompson": {
+   "gsis_id": "00-0030705",
+   "birth_date": "1992-05-13",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Cody Latimer": {
+   "gsis_id": "00-0031344",
+   "birth_date": "1992-10-10",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Nathan Palmer": {
+   "gsis_id": "00-0028906",
+   "birth_date": "1989-04-14",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Isaiah Burse": {
+   "gsis_id": "00-0030671",
+   "birth_date": "1991-12-08",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Paul Cornick": {
+   "gsis_id": "00-0029662",
+   "birth_date": "1989-03-15",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Ben Garland": {
+   "gsis_id": "00-0027282",
+   "birth_date": "1988-04-06",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Michael Schofield": {
+   "gsis_id": "00-0031353",
+   "birth_date": "1990-11-15",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Lerentee McCray": {
+   "gsis_id": "00-0029799",
+   "birth_date": "1990-08-26",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Marvin Austin": {
+   "gsis_id": "00-0027990",
+   "birth_date": "1989-01-10",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Quanterus Smith": {
+   "gsis_id": "00-0030086",
+   "birth_date": "1989-11-26",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Von Miller": {
+   "gsis_id": "00-0027940",
+   "birth_date": "1989-03-26",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Brandon Marshall (DEN)": {
+   "gsis_id": "00-0029620",
+   "birth_date": "1989-09-10",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Corey Nelson": {
+   "gsis_id": "00-0031350",
+   "birth_date": "1992-04-22",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Lamin Barrow": {
+   "gsis_id": "00-0031354",
+   "birth_date": "1990-11-29",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Bradley Roby": {
+   "gsis_id": "00-0031372",
+   "birth_date": "1992-05-01",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Quinton Carter": {
+   "gsis_id": "00-0028046",
+   "birth_date": "1988-07-20",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Brandon McManus": {
+   "gsis_id": "00-0029822",
+   "birth_date": "1991-07-25",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Scott Tolzien": {
+   "gsis_id": "00-0028595",
+   "birth_date": "1987-09-04",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "DuJuan Harris": {
+   "gsis_id": "00-0028409",
+   "birth_date": "1988-09-03",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Allen Robinson": {
+   "gsis_id": "00-0031428",
+   "birth_date": "1993-08-24",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jeff Janis": {
+   "gsis_id": "00-0031001",
+   "birth_date": "1991-06-24",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Richard Rodgers": {
+   "gsis_id": "00-0031384",
+   "birth_date": "1992-01-22",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Bryan Bulaga": {
+   "gsis_id": "00-0027875",
+   "birth_date": "1989-03-21",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Derek Sherrod": {
+   "gsis_id": "00-0027970",
+   "birth_date": "1989-04-23",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Garth Gerhart": {
+   "gsis_id": "00-0028933",
+   "birth_date": "1988-10-21",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Mike Pennel": {
+   "gsis_id": "00-0030757",
+   "birth_date": "1991-05-09",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Carl Bradford": {
+   "gsis_id": "00-0031058",
+   "birth_date": "1992-08-15",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jayrone Elliott": {
+   "gsis_id": "00-0030752",
+   "birth_date": "1991-11-11",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Ha Ha Clinton-Dix": {
+   "gsis_id": "00-0031333",
+   "birth_date": "1992-12-21",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Sean Richardson": {
+   "gsis_id": "00-0029201",
+   "birth_date": "1990-01-21",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Demetri Goodson": {
+   "gsis_id": "00-0031080",
+   "birth_date": "1989-06-11",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Tom Savage": {
+   "gsis_id": "00-0031064",
+   "birth_date": "1990-04-26",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Alfred Blue": {
+   "gsis_id": "00-0031075",
+   "birth_date": "1991-04-27",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jay Prosch": {
+   "gsis_id": "00-0031085",
+   "birth_date": "1992-08-21",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "C.J. Fiedorowicz": {
+   "gsis_id": "00-0031302",
+   "birth_date": "1991-10-22",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jeff Adams": {
+   "gsis_id": "00-0028998",
+   "birth_date": "1989-09-06",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Xavier Su'a-Filo": {
+   "gsis_id": "00-0031410",
+   "birth_date": "1991-01-01",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jerrell Powe": {
+   "gsis_id": "00-0028137",
+   "birth_date": "1987-03-15",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Louis Nix": {
+   "gsis_id": "00-0031049",
+   "birth_date": "1991-07-31",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jeoffrey Pagan": {
+   "gsis_id": "00-0031074",
+   "birth_date": "1993-06-10",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Mike Mohamed": {
+   "gsis_id": "00-0028127",
+   "birth_date": "1988-03-11",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jadeveon Clowney": {
+   "gsis_id": "00-0031364",
+   "birth_date": "1993-02-14",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jeff Tarpinian": {
+   "gsis_id": "00-0028251",
+   "birth_date": "1987-10-16",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jason Ankrah": {
+   "gsis_id": "00-0031135",
+   "birth_date": "1991-02-26",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Elbert Mack": {
+   "gsis_id": "00-0025902",
+   "birth_date": "1986-07-14",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Darryl Morris": {
+   "gsis_id": "00-0029888",
+   "birth_date": "1990-09-04",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Andre Hal": {
+   "gsis_id": "00-0031087",
+   "birth_date": "1992-05-30",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Dan Herron": {
+   "gsis_id": "00-0029588",
+   "birth_date": "1989-03-21",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Zurlon Tipton": {
+   "gsis_id": "00-0030855",
+   "birth_date": "1989-04-27",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Donte Moncrief": {
+   "gsis_id": "00-0031339",
+   "birth_date": "1993-08-06",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Da'Rick Rogers": {
+   "gsis_id": "00-0030043",
+   "birth_date": "1991-06-18",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jack Mewhort": {
+   "gsis_id": "00-0031046",
+   "birth_date": "1991-08-30",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jonotthan Harrison": {
+   "gsis_id": "00-0030649",
+   "birth_date": "1991-08-25",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Lance Louis": {
+   "gsis_id": "00-0026961",
+   "birth_date": "1985-04-24",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Zach Kerr": {
+   "gsis_id": "00-0031105",
+   "birth_date": "1990-08-29",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Henoc Muamba": {
+   "gsis_id": "00-0030634",
+   "birth_date": "1989-02-23",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Josh McNary": {
+   "gsis_id": "00-0029744",
+   "birth_date": "1988-04-10",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jonathan Newsome": {
+   "gsis_id": "00-0030995",
+   "birth_date": "1991-01-22",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Andy Studebaker": {
+   "gsis_id": "00-0026343",
+   "birth_date": "1985-09-16",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Mike Adams (IND)": {
+   "gsis_id": "00-0022247",
+   "birth_date": "1981-03-24",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ],
+   "alias_of": "Mike Adams (DEN)"
+  },
+  "Loucheiz Purifoy": {
+   "gsis_id": "00-0030853",
+   "birth_date": "1992-12-16",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Aaron Murray": {
+   "gsis_id": "00-0031287",
+   "birth_date": "1990-11-10",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Joe McKnight": {
+   "gsis_id": "00-0027712",
+   "birth_date": "1988-04-16",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Frankie Hammond": {
+   "gsis_id": "00-0030154",
+   "birth_date": "1990-02-17",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Albert Wilson": {
+   "gsis_id": "00-0030669",
+   "birth_date": "1992-07-12",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "De'Anthony Thomas": {
+   "gsis_id": "00-0031060",
+   "birth_date": "1993-01-05",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Demetrius Harris": {
+   "gsis_id": "00-0030155",
+   "birth_date": "1991-07-29",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Zach Fulton": {
+   "gsis_id": "00-0030997",
+   "birth_date": "1991-09-23",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Laurent Duvernay-Tardif": {
+   "gsis_id": "00-0031022",
+   "birth_date": "1991-02-11",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Dee Ford": {
+   "gsis_id": "00-0031297",
+   "birth_date": "1991-03-19",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Joshua Mauga": {
+   "gsis_id": "00-0027170",
+   "birth_date": "1987-06-20",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Daniel Sorensen": {
+   "gsis_id": "00-0030665",
+   "birth_date": "1990-03-05",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Phillip Gaines": {
+   "gsis_id": "00-0031015",
+   "birth_date": "1991-04-04",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jeremy Harris": {
+   "gsis_id": "00-0030435",
+   "birth_date": "1991-04-26",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Cairo Santos": {
+   "gsis_id": "00-0031203",
+   "birth_date": "1991-11-12",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Damien Williams": {
+   "gsis_id": "00-0030874",
+   "birth_date": "1992-04-03",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Orleans Darkwa": {
+   "gsis_id": "00-0030860",
+   "birth_date": "1992-02-28",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jarvis Landry": {
+   "gsis_id": "00-0031382",
+   "birth_date": "1992-11-28",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Ja'Wuan James": {
+   "gsis_id": "00-0031417",
+   "birth_date": "1992-06-03",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Billy Turner": {
+   "gsis_id": "00-0031433",
+   "birth_date": "1991-10-17",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Terrence Fede": {
+   "gsis_id": "00-0031317",
+   "birth_date": "1991-11-19",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Anthony Johnson": {
+   "gsis_id": "00-0030864",
+   "birth_date": "1993-01-24",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jordan Tripp": {
+   "gsis_id": "00-0031313",
+   "birth_date": "1991-04-03",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Chris McCain": {
+   "gsis_id": "00-0031208",
+   "birth_date": "1991-11-21",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Michael Thomas": {
+   "gsis_id": "00-0028908",
+   "birth_date": "1990-03-17",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Walt Aikens": {
+   "gsis_id": "00-0031307",
+   "birth_date": "1991-06-19",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Sammy Seamster": {
+   "gsis_id": "00-0030703",
+   "birth_date": "1991-02-05",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Teddy Bridgewater": {
+   "gsis_id": "00-0031237",
+   "birth_date": "1992-11-10",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jerick McKinnon": {
+   "gsis_id": "00-0031376",
+   "birth_date": "1992-05-03",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jerome Felton": {
+   "gsis_id": "00-0026286",
+   "birth_date": "1986-07-03",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Rodney Smith": {
+   "gsis_id": "00-0029934",
+   "birth_date": "1990-03-11",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "David Yankey": {
+   "gsis_id": "00-0031069",
+   "birth_date": "1992-01-18",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Mike Harris (MIN)": {
+   "gsis_id": "00-0029457",
+   "birth_date": "1988-12-05",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ],
+   "alias_of": "Mike Harris (SD)"
+  },
+  "Shamar Stephen": {
+   "gsis_id": "00-0031242",
+   "birth_date": "1991-02-25",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Scott Crichton": {
+   "gsis_id": "00-0031283",
+   "birth_date": "1991-10-30",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Anthony Barr": {
+   "gsis_id": "00-0031256",
+   "birth_date": "1992-03-18",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Brandon Watts": {
+   "gsis_id": "00-0031244",
+   "birth_date": "1991-01-21",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Antone Exum": {
+   "gsis_id": "00-0031267",
+   "birth_date": "1991-02-27",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jabari Price": {
+   "gsis_id": "00-0031090",
+   "birth_date": "1992-08-31",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jimmy Garoppolo": {
+   "gsis_id": "00-0031345",
+   "birth_date": "1991-11-02",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "James White": {
+   "gsis_id": "00-0031062",
+   "birth_date": "1992-02-03",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Storm Johnson": {
+   "gsis_id": "00-0031243",
+   "birth_date": "1992-07-10",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jordan Devey": {
+   "gsis_id": "00-0030011",
+   "birth_date": "1988-01-11",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Bryan Stork": {
+   "gsis_id": "00-0031174",
+   "birth_date": "1990-11-15",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Luke Bowanko": {
+   "gsis_id": "00-0031191",
+   "birth_date": "1991-06-12",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Cameron Fleming": {
+   "gsis_id": "00-0031067",
+   "birth_date": "1992-09-03",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Zach Moore": {
+   "gsis_id": "00-0031081",
+   "birth_date": "1990-09-05",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Chris Jones (NE)": {
+   "gsis_id": "00-0030106",
+   "birth_date": "1990-07-12",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Sealver Siliga": {
+   "gsis_id": "00-0028256",
+   "birth_date": "1990-04-26",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Darius Fleming": {
+   "gsis_id": "00-0029292",
+   "birth_date": "1989-07-19",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Dominique Easley": {
+   "gsis_id": "00-0031425",
+   "birth_date": "1992-04-28",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Austin Johnson": {
+   "gsis_id": "00-0029729",
+   "birth_date": "1989-06-16",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Joe Morgan": {
+   "gsis_id": "00-0028532",
+   "birth_date": "1988-03-23",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Brandin Cooks": {
+   "gsis_id": "00-0031236",
+   "birth_date": "1993-09-25",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Robert Meachem": {
+   "gsis_id": "00-0025414",
+   "birth_date": "1984-09-28",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Brandon Deaderick": {
+   "gsis_id": "00-0027838",
+   "birth_date": "1987-08-19",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Ronald Powell": {
+   "gsis_id": "00-0031073",
+   "birth_date": "1991-05-14",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Kyle Knox": {
+   "gsis_id": "00-0029649",
+   "birth_date": "1989-03-10",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Brian Dixon": {
+   "gsis_id": "00-0030802",
+   "birth_date": "1990-04-26",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Vinnie Sunseri": {
+   "gsis_id": "00-0031072",
+   "birth_date": "1993-09-27",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Shayne Graham": {
+   "gsis_id": "00-0019536",
+   "birth_date": "1977-12-09",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Andre Williams": {
+   "gsis_id": "00-0031055",
+   "birth_date": "1992-08-28",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Odell Beckham": {
+   "gsis_id": "00-0031235",
+   "birth_date": "1992-11-05",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Preston Parker": {
+   "gsis_id": "00-0027450",
+   "birth_date": "1987-02-13",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Corey Washington": {
+   "gsis_id": "00-0030897",
+   "birth_date": "1991-12-29",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Daniel Fells": {
+   "gsis_id": "00-0023752",
+   "birth_date": "1983-09-23",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Weston Richburg": {
+   "gsis_id": "00-0031238",
+   "birth_date": "1991-07-09",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "J.D. Walton": {
+   "gsis_id": "00-0027683",
+   "birth_date": "1987-03-24",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Dallas Reynolds": {
+   "gsis_id": "00-0026574",
+   "birth_date": "1984-04-23",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Mike Patterson": {
+   "gsis_id": "00-0023466",
+   "birth_date": "1983-09-01",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jay Bromley": {
+   "gsis_id": "00-0031403",
+   "birth_date": "1992-05-28",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Kerry Wynn": {
+   "gsis_id": "00-0030776",
+   "birth_date": "1991-02-12",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Markus Kuhn": {
+   "gsis_id": "00-0029312",
+   "birth_date": "1986-05-05",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jameel McClain": {
+   "gsis_id": "00-0026407",
+   "birth_date": "1985-07-25",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Devon Kennard": {
+   "gsis_id": "00-0031241",
+   "birth_date": "1991-06-24",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Stevie Brown": {
+   "gsis_id": "00-0027842",
+   "birth_date": "1987-07-17",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Nat Berhe": {
+   "gsis_id": "00-0031070",
+   "birth_date": "1991-07-06",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Greg Salas": {
+   "gsis_id": "00-0028050",
+   "birth_date": "1988-08-25",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "David Nelson": {
+   "gsis_id": "00-0027322",
+   "birth_date": "1986-11-07",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Saalim Hakim": {
+   "gsis_id": "00-0029006",
+   "birth_date": "1990-02-01",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jalen Saunders": {
+   "gsis_id": "00-0031053",
+   "birth_date": "1992-09-30",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jace Amaro": {
+   "gsis_id": "00-0031042",
+   "birth_date": "1992-06-26",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Dalton Freeman": {
+   "gsis_id": "00-0030166",
+   "birth_date": "1990-06-18",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Oday Aboushi": {
+   "gsis_id": "00-0030083",
+   "birth_date": "1991-06-05",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "T.J. Barnes": {
+   "gsis_id": "00-0029940",
+   "birth_date": "1990-06-14",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Kenrick Ellis": {
+   "gsis_id": "00-0028032",
+   "birth_date": "1987-12-10",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Quinton Coples": {
+   "gsis_id": "00-0029559",
+   "birth_date": "1990-06-22",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "A.J. Edds": {
+   "gsis_id": "00-0027719",
+   "birth_date": "1987-09-18",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Trevor Reilly": {
+   "gsis_id": "00-0031000",
+   "birth_date": "1988-01-17",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Calvin Pryor": {
+   "gsis_id": "00-0031343",
+   "birth_date": "1992-07-02",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Ryan Quigley": {
+   "gsis_id": "00-0029493",
+   "birth_date": "1990-01-26",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Derek Carr": {
+   "gsis_id": "00-0031280",
+   "birth_date": "1991-03-28",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Latavius Murray": {
+   "gsis_id": "00-0030513",
+   "birth_date": "1990-01-18",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Andre Holmes": {
+   "gsis_id": "00-0028263",
+   "birth_date": "1988-06-16",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Brian Leonhardt": {
+   "gsis_id": "00-0029755",
+   "birth_date": "1990-04-02",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Matt McCants": {
+   "gsis_id": "00-0029302",
+   "birth_date": "1989-08-18",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Gabe Jackson": {
+   "gsis_id": "00-0031367",
+   "birth_date": "1991-07-12",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Khalil Mack": {
+   "gsis_id": "00-0031040",
+   "birth_date": "1991-02-22",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Antonio Smith": {
+   "gsis_id": "00-0022793",
+   "birth_date": "1981-10-21",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Justin Ellis": {
+   "gsis_id": "00-0031346",
+   "birth_date": "1990-12-27",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Miles Burris": {
+   "gsis_id": "00-0029631",
+   "birth_date": "1988-06-27",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Neiko Thorpe": {
+   "gsis_id": "00-0029329",
+   "birth_date": "1990-02-11",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "T.J. Carrie": {
+   "gsis_id": "00-0031269",
+   "birth_date": "1990-07-28",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jonathan Dowling": {
+   "gsis_id": "00-0031272",
+   "birth_date": "1991-12-08",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Keith McGill": {
+   "gsis_id": "00-0031347",
+   "birth_date": "1989-03-09",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Mark Sanchez": {
+   "gsis_id": "00-0026898",
+   "birth_date": "1986-11-11",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Brad Smith": {
+   "gsis_id": "00-0024318",
+   "birth_date": "1983-12-12",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jeremy Maclin": {
+   "gsis_id": "00-0026995",
+   "birth_date": "1988-05-11",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Josh Huff": {
+   "gsis_id": "00-0030990",
+   "birth_date": "1991-10-14",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jordan Matthews": {
+   "gsis_id": "00-0031299",
+   "birth_date": "1992-07-16",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Trey Burton": {
+   "gsis_id": "00-0030710",
+   "birth_date": "1991-10-29",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "David Molk": {
+   "gsis_id": "00-0029203",
+   "birth_date": "1988-12-15",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Brandon Bair": {
+   "gsis_id": "00-0028311",
+   "birth_date": "1984-11-24",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Beau Allen": {
+   "gsis_id": "00-0031089",
+   "birth_date": "1991-11-14",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Taylor Hart": {
+   "gsis_id": "00-0031179",
+   "birth_date": "1991-02-22",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Marcus Smith": {
+   "gsis_id": "00-0031371",
+   "birth_date": "1992-03-31",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jaylen Watkins": {
+   "gsis_id": "00-0031173",
+   "birth_date": "1991-11-27",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Cody Parkey": {
+   "gsis_id": "00-0030850",
+   "birth_date": "1992-02-19",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Dri Archer": {
+   "gsis_id": "00-0031392",
+   "birth_date": "1991-08-09",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Justin Brown": {
+   "gsis_id": "00-0030466",
+   "birth_date": "1991-03-10",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Martavis Bryant": {
+   "gsis_id": "00-0031373",
+   "birth_date": "1991-12-20",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Matt Spaeth": {
+   "gsis_id": "00-0025464",
+   "birth_date": "1983-11-24",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Christopher Hubbard": {
+   "gsis_id": "00-0029963",
+   "birth_date": "1991-04-23",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Wesley Johnson": {
+   "gsis_id": "00-0031314",
+   "birth_date": "1991-01-09",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Stephon Tuitt": {
+   "gsis_id": "00-0031412",
+   "birth_date": "1993-05-23",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Daniel McCullers": {
+   "gsis_id": "00-0031193",
+   "birth_date": "1992-08-11",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Ryan Shazier": {
+   "gsis_id": "00-0031365",
+   "birth_date": "1992-09-06",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Sean Spence": {
+   "gsis_id": "00-0029594",
+   "birth_date": "1990-06-07",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "B.W. Webb": {
+   "gsis_id": "00-0030403",
+   "birth_date": "1990-05-03",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Brad Wing": {
+   "gsis_id": "00-0030142",
+   "birth_date": "1991-01-27",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Branden Oliver": {
+   "gsis_id": "00-0031277",
+   "birth_date": "1991-05-07",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Dontrelle Inman": {
+   "gsis_id": "00-0028411",
+   "birth_date": "1989-01-31",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Willie Smith": {
+   "gsis_id": "00-0028201",
+   "birth_date": "1986-11-13",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Chris Watt": {
+   "gsis_id": "00-0030991",
+   "birth_date": "1990-08-17",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Lawrence Guy": {
+   "gsis_id": "00-0028171",
+   "birth_date": "1990-03-17",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Tenny Palepoi": {
+   "gsis_id": "00-0030921",
+   "birth_date": "1990-12-19",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Ryan Carrethers": {
+   "gsis_id": "00-0030994",
+   "birth_date": "1991-02-26",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Manti Te'o": {
+   "gsis_id": "00-0030278",
+   "birth_date": "1991-01-26",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Melvin Ingram": {
+   "gsis_id": "00-0029249",
+   "birth_date": "1989-04-26",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jeremiah Attaochu": {
+   "gsis_id": "00-0031258",
+   "birth_date": "1993-01-17",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jason Verrett": {
+   "gsis_id": "00-0031334",
+   "birth_date": "1991-06-18",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Chris Davis": {
+   "gsis_id": "00-0030917",
+   "birth_date": "1990-11-04",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Steve Williams": {
+   "gsis_id": "00-0030283",
+   "birth_date": "1991-03-07",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Carlos Hyde": {
+   "gsis_id": "00-0031045",
+   "birth_date": "1990-09-20",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Michael Crabtree": {
+   "gsis_id": "00-0026986",
+   "birth_date": "1987-09-14",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Brandon Lloyd": {
+   "gsis_id": "00-0022097",
+   "birth_date": "1981-07-05",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Bruce Ellington": {
+   "gsis_id": "00-0031326",
+   "birth_date": "1991-08-22",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Derek Carrier": {
+   "gsis_id": "00-0029119",
+   "birth_date": "1990-07-25",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Marcus Martin": {
+   "gsis_id": "00-0031337",
+   "birth_date": "1993-11-29",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Dillon Farrell": {
+   "gsis_id": "00-0030764",
+   "birth_date": "1990-09-07",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Demarcus Dobbs": {
+   "gsis_id": "00-0028479",
+   "birth_date": "1987-11-30",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Quinton Dial": {
+   "gsis_id": "00-0030088",
+   "birth_date": "1990-07-21",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Cornellius Carradine": {
+   "gsis_id": "00-0030457",
+   "birth_date": "1990-02-18",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Chris Borland": {
+   "gsis_id": "00-0031303",
+   "birth_date": "1990-12-26",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Aaron Lynch": {
+   "gsis_id": "00-0030993",
+   "birth_date": "1993-02-08",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Chris Culliver": {
+   "gsis_id": "00-0028018",
+   "birth_date": "1988-08-17",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jimmie Ward": {
+   "gsis_id": "00-0031298",
+   "birth_date": "1991-07-18",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "L.J. McCray": {
+   "gsis_id": "00-0030767",
+   "birth_date": "1991-06-18",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Dontae Johnson": {
+   "gsis_id": "00-0031061",
+   "birth_date": "1991-12-01",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Kyle Nelson": {
+   "gsis_id": "00-0028374",
+   "birth_date": "1986-10-03",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Percy Harvin": {
+   "gsis_id": "00-0026998",
+   "birth_date": "1988-05-28",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Ricardo Lockette": {
+   "gsis_id": "00-0028442",
+   "birth_date": "1986-05-21",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Paul Richardson": {
+   "gsis_id": "00-0031257",
+   "birth_date": "1992-04-13",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Bryan Walters": {
+   "gsis_id": "00-0027595",
+   "birth_date": "1987-11-04",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Kevin Norwood": {
+   "gsis_id": "00-0031327",
+   "birth_date": "1989-09-23",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Greg Scruggs": {
+   "gsis_id": "00-0029308",
+   "birth_date": "1990-08-17",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Cooper Helfet": {
+   "gsis_id": "00-0029534",
+   "birth_date": "1989-06-02",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Justin Britt": {
+   "gsis_id": "00-0031282",
+   "birth_date": "1991-05-29",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Garry Gilliam": {
+   "gsis_id": "00-0030899",
+   "birth_date": "1990-11-26",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Stephen Schilling": {
+   "gsis_id": "00-0028139",
+   "birth_date": "1988-07-21",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Bruce Irvin": {
+   "gsis_id": "00-0029193",
+   "birth_date": "1987-11-01",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Brock Coyle": {
+   "gsis_id": "00-0030770",
+   "birth_date": "1990-10-12",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Kevin Pierre-Louis": {
+   "gsis_id": "00-0031308",
+   "birth_date": "1991-10-07",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Cassius Marsh": {
+   "gsis_id": "00-0031175",
+   "birth_date": "1992-07-07",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Tharold Simon": {
+   "gsis_id": "00-0030487",
+   "birth_date": "1991-03-06",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "DeShawn Shead": {
+   "gsis_id": "00-0029191",
+   "birth_date": "1989-06-28",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Marcus Burley": {
+   "gsis_id": "00-0029942",
+   "birth_date": "1990-07-16",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Blake Bortles": {
+   "gsis_id": "00-0031407",
+   "birth_date": "1992-04-28",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Austin Davis": {
+   "gsis_id": "00-0028957",
+   "birth_date": "1989-06-02",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Tre Mason": {
+   "gsis_id": "00-0031391",
+   "birth_date": "1993-08-06",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Trey Watts": {
+   "gsis_id": "00-0030985",
+   "birth_date": "1991-02-13",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Alex Bayer": {
+   "gsis_id": "00-0030975",
+   "birth_date": "1990-11-08",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Greg Robinson": {
+   "gsis_id": "00-0031386",
+   "birth_date": "1992-10-21",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Ethan Westbrooks": {
+   "gsis_id": "00-0030986",
+   "birth_date": "1990-11-15",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jo-Lonn Dunbar": {
+   "gsis_id": "00-0025838",
+   "birth_date": "1985-03-13",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Maurice Alexander": {
+   "gsis_id": "00-0031393",
+   "birth_date": "1991-02-16",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "E.J. Gaines": {
+   "gsis_id": "00-0031394",
+   "birth_date": "1992-02-23",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Cody Davis": {
+   "gsis_id": "00-0029764",
+   "birth_date": "1989-06-06",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Lamarcus Joyner": {
+   "gsis_id": "00-0031389",
+   "birth_date": "1990-11-27",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Marcus Roberson": {
+   "gsis_id": "00-0030982",
+   "birth_date": "1992-10-04",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Rishaw Johnson": {
+   "gsis_id": "00-0029354",
+   "birth_date": "1989-02-23",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Zach Mettenberger": {
+   "gsis_id": "00-0031266",
+   "birth_date": "1991-07-16",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Bishop Sankey": {
+   "gsis_id": "00-0031413",
+   "birth_date": "1992-09-15",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Derek Hagan": {
+   "gsis_id": "00-0024297",
+   "birth_date": "1984-09-21",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Delanie Walker": {
+   "gsis_id": "00-0024389",
+   "birth_date": "1984-08-12",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Taylor Lewan": {
+   "gsis_id": "00-0031442",
+   "birth_date": "1991-07-22",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "DaQuan Jones": {
+   "gsis_id": "00-0031054",
+   "birth_date": "1991-12-27",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Avery Williamson": {
+   "gsis_id": "00-0031263",
+   "birth_date": "1992-03-09",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Marqueston Huff": {
+   "gsis_id": "00-0031059",
+   "birth_date": "1992-04-06",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Silas Redd": {
+   "gsis_id": "00-0031008",
+   "birth_date": "1992-03-01",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Ryan Grant": {
+   "gsis_id": "00-0031068",
+   "birth_date": "1990-12-19",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Morgan Moses": {
+   "gsis_id": "00-0031330",
+   "birth_date": "1991-03-03",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Spencer Long": {
+   "gsis_id": "00-0031047",
+   "birth_date": "1990-11-08",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Trent Murphy": {
+   "gsis_id": "00-0031300",
+   "birth_date": "1990-12-22",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Jarvis Jenkins": {
+   "gsis_id": "00-0027979",
+   "birth_date": "1988-04-24",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Frank Kearse": {
+   "gsis_id": "00-0028169",
+   "birth_date": "1988-10-28",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Keenan Robinson": {
+   "gsis_id": "00-0029545",
+   "birth_date": "1989-07-07",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Gabe Miller": {
+   "gsis_id": "00-0028078",
+   "birth_date": "1987-12-05",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Will Compton": {
+   "gsis_id": "00-0029869",
+   "birth_date": "1989-09-19",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Bashaud Breeland": {
+   "gsis_id": "00-0031052",
+   "birth_date": "1992-01-30",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
+   ]
+  },
+  "Trenton Robinson": {
+   "gsis_id": "00-0029297",
+   "birth_date": "1990-02-16",
+   "evidence": "library_week1_source",
+   "sources": [
+    "library_week1_source_2014"
    ]
   }
  }

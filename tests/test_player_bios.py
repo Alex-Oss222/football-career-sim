@@ -109,6 +109,40 @@ class PlayerBiographyTests(unittest.TestCase):
         self.assertEqual(player_bios.unverified_ages(ages), ["Dated-less", "No Record"])
         self.assertEqual(player_bios.unverified_ages(None), [])
 
+    def test_weekly_package_flags_only_background_unverified_ages(self):
+        game = {"week": 1, "date": "2014-09-07", "away": "Jacksonville Jaguars", "home": "Philadelphia Eagles",
+                "site": "home"}
+        jax = {"team_id": "Jacksonville Jaguars", "roster": [{"player_id": "Brad Meester", "available": True}]}
+        phi = {"team_id": "Philadelphia Eagles",
+               "roster": [{"player_id": "Mike Harris", "available": True}, {"player_id": "Nobody Listed", "available": True}]}
+        patches = (mock.patch.object(week_inputs, "schedule", return_value=[game]),
+                   mock.patch.object(week_inputs, "jacksonville_input", return_value=jax),
+                   mock.patch.object(week_inputs, "background_input", return_value=phi),
+                   mock.patch.object(week_inputs.strength, "team_strength", return_value=(None, {})))
+        with patches[0], patches[1], patches[2], patches[3]:
+            row = week_inputs.build_package(1, [], [], {}, season=2014)["games"][0]
+        self.assertEqual(row["player_ages"]["Nobody Listed"],
+                         {"gsis_id": None, "birth_date": None, "age": None, "age_unverified": True})
+        self.assertEqual(row["player_ages"]["Brad Meester"]["age"], 37)
+        self.assertEqual(player_bios.unverified_ages(row["player_ages"]), ["Nobody Listed"])
+        # The same name on Jacksonville's side still fails closed.
+        jax["roster"].append(phi["roster"].pop())
+        with patches[0], patches[1], patches[2], patches[3], \
+                self.assertRaisesRegex(ValueError, "Verify birth date before preparing player: Nobody Listed"):
+            week_inputs.build_package(1, [], [], {}, season=2014)
+
+    def test_week1_library_birth_dates_are_registered_or_named_unverified(self):
+        library = json.loads((ROOT / "library/data/2014_week1_depth_charts.json").read_text())
+        registry = player_bios.load()
+        unverified = [p["player_id"] for club in library["clubs"].values() for p in club["players"]
+                      if p["player_id"] not in registry]
+        # Phil Bates carries no birth date in the library; he enters a weekly
+        # package only as a background player flagged age_unverified.
+        self.assertEqual(unverified, ["Phil Bates"])
+        self.assertEqual(registry["Logan Thomas"]["evidence"], "library_week1_source")
+        self.assertEqual(registry["Jay Ratliff"]["alias_of"], "Jeremiah Ratliff")
+        self.assertEqual(registry["Jay Ratliff"]["gsis_id"], registry["Jeremiah Ratliff"]["gsis_id"])
+
     def test_preseason_package_flags_only_opponent_unverified_ages(self):
         from runtime import preseason
         game = {"game": 1, "game_id": "2014-preseason-01-tampa-bay-buccaneers-at-jacksonville-jaguars",
