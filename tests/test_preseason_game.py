@@ -40,11 +40,32 @@ CALLS = ({"name": "12 Ace Right, Power R", "family": "Power", "type": "run", "pe
          {"name": "11 Doubles, Zip, Smoke", "family": "Smoke/Now", "type": "pass", "personnel": "11", "formation": "11 Doubles"})
 
 
-def club(team_id, prefix, third_quarterback=False):
+def club(team_id, prefix, third_quarterback=False, plan=()):
     roster = tuple(p for p in game_day_roster(prefix) if p.player_id != prefix + "-WR5")
     if third_quarterback:
         roster += (replace(roster[1], player_id=prefix + "-QB3", depth=3),)
-    return TeamInput(team_id, tuple(p.player_id for p in roster), roster=roster, offensive_call_sheet=CALLS)
+    return TeamInput(team_id, tuple(p.player_id for p in roster), roster=roster, offensive_call_sheet=CALLS,
+                     rotation_plan=tuple(plan))
+
+
+def rotation_plan(prefix):
+    """Stone's shape: two first-unit possessions under a snap ceiling with a
+    receiver and a guard swapped between them, the second unit, then reserves."""
+    return (
+        {"side": "offense", "unit": "first offense, series 1", "until": {"possessions": 1},
+         "players": {"QB": [prefix + "-QB1"], "WR": [prefix + "-WR1", prefix + "-WR2", prefix + "-WR3"],
+                     "LT": prefix + "-OT1", "LG": prefix + "-OG1", "C": prefix + "-C1", "RG": prefix + "-OG2",
+                     "RT": prefix + "-OT2"}},
+        {"side": "offense", "unit": "first offense, series 2", "until": {"possessions": 1, "snaps": 12},
+         "players": {"QB": [prefix + "-QB1"], "WR": [prefix + "-WR3", prefix + "-WR2", prefix + "-WR4"],
+                     "OL": [prefix + "-OT1", prefix + "-OG3", prefix + "-C1", prefix + "-OG2", prefix + "-OT2"]}},
+        {"side": "offense", "unit": "second offense", "until": {"quarter": 3},
+         "players": {"QB": [prefix + "-QB2"], "OL": [prefix + "-OT3", prefix + "-OG1", prefix + "-C2"]}},
+        {"side": "offense", "unit": "reserves", "players": {"QB": [prefix + "-QB3"]}},
+        {"side": "defense", "unit": "first defense", "until": {"quarter": 1, "possessions_after": 1},
+         "players": {"DL": [prefix + "-DE1", prefix + "-DT1", prefix + "-DE2", prefix + "-DT2"]}},
+        {"side": "defense", "unit": "second defense", "players": {"DL": [prefix + "-DE3", prefix + "-DT3"]}},
+    )
 
 
 class SeasonPathTests(unittest.TestCase):
@@ -224,6 +245,42 @@ class PreseasonClosureTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "already exists"):
             close_preseason_game.write_receipt(self.package, self.paths, result)
 
+    def test_rotation_plan_closes_through_the_service_and_the_receipt_records_it(self):
+        self.home = club(JAX, "A", third_quarterback=True, plan=rotation_plan("A"))
+        self.package["games"][0]["home_input"] = dataclasses.asdict(self.home)
+        with contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(close_preseason_game.gate_errors(self.package, self.paths, 1), [])
+        result, paused = self.close()
+        self.assertIsNone(paused)
+        self.assertTrue(result["terminated"])
+        rotation = result["rotation"]
+        self.assertEqual(rotation[JAX]["basis"], {"offense": "plan", "defense": "plan", "special_teams": "depth_order"})
+        self.assertEqual(rotation[TB]["basis"]["offense"], "default")
+        offense = rotation[JAX]["applied"]["offense"]
+        self.assertEqual([e["unit"] for e in offense[:2]], ["first offense, series 1", "first offense, series 2"])
+        self.assertEqual(offense[0]["lineup"]["OL"], ["A-OT1", "A-OG1", "A-C1", "A-OG2", "A-OT2"])
+        self.assertEqual(offense[1]["lineup"]["OL"], ["A-OT1", "A-OG3", "A-C1", "A-OG2", "A-OT2"])
+        self.assertEqual(offense[1]["lineup"]["WR"][:3], ["A-WR3", "A-WR2", "A-WR4"])
+        self.assertEqual(offense[-1]["lineup"]["QB"], ["A-QB3"])
+        lines = result["team_stats"][JAX]["players"]
+        unit = sum(1 for r in result["play_ledger"] if r.get("offense") == JAX and r.get("play_type") in ("pass", "run"))
+        self.assertGreater(lines["A-QB1"]["offensive_snaps"], 0)
+        self.assertLess(lines["A-QB1"]["offensive_snaps"], unit)
+        self.assertGreater(lines["A-QB2"]["offensive_snaps"], 0)
+        receipt_path, output, views = close_preseason_game.finish(self.package, self.paths, result)
+        receipt = json.loads(receipt_path.read_text())
+        self.assertEqual(receipt["rotation"], rotation)
+        self.assertEqual(receipt["rotation"][JAX]["blocks"]["offense"][1]["until"], {"possessions": 1, "snaps": 12})
+        # The gamebook's snap counts show the starters' partial shares.
+        body = output.read_text()
+        counts = body[body.index("#### Snap counts"):]
+        share = next(line for line in counts.splitlines() if line.startswith("| A-QB1 "))
+        self.assertRegex(share.split("|")[3], r"\d+ \((\d|[1-9]\d)%\)")   # a partial offensive share
+        self.assertIn("A-QB2", counts)
+        from runtime.statbook import make_receipt
+        regular_like = {k: v for k, v in result.items() if k != "rotation"}
+        self.assertNotIn("rotation", make_receipt(regular_like, week=1, matchup="%s at %s" % (TB, JAX)))
+
     def test_gate_rejects_a_shared_player_and_accepts_a_full_preseason_roster(self):
         base = game_day_roster("A")
         big = tuple(base) + tuple(replace(p, player_id=p.player_id + "x", depth=p.depth + 10) for p in base[:43])
@@ -303,6 +360,59 @@ class PreseasonBuilderTests(unittest.TestCase):
         self.assertNotIn("A-RB1", jacksonville["active_players"])
         self.assertIn("B-WR1", chicago["active_players"])  # back by August 14
         self.assertEqual(later["games"][0]["event_id"], "2014-preseason-02-jacksonville-jaguars-at-chicago-bears")
+
+    def test_rotation_files_enter_the_package_and_fail_closed(self):
+        folder = self.paths.preseason_folder(1)
+        # A-WR2 is held by his roster note and there is no A-QB3 on this roster: a dressed plan.
+        plan = {"rotation_plan": [
+            {"side": "offense", "unit": "first offense", "until": {"possessions": 2, "snaps": 12},
+             "players": {"QB": ["A-QB1"], "WR": ["A-WR1", "A-WR3", "A-WR4"]}},
+            {"side": "offense", "unit": "second offense", "players": {"QB": ["A-QB2"]}},
+            {"side": "defense", "unit": "first defense", "until": {"quarter": 1, "possessions_after": 1},
+             "players": {"DL": ["A-DE1", "A-DT1", "A-DE2", "A-DT2"]}},
+            {"side": "defense", "unit": "second defense", "players": {"DL": ["A-DE3", "A-DT3"]}}]}
+        (folder / "rotation.json").write_text(json.dumps(plan))
+        opponent = json.loads((folder / "opponent_roster.json").read_text())
+        opponent["rotation"] = [
+            {"side": "offense", "unit": "first", "until": {"possessions": 2}, "players": {"QB": ["B-QB2"]}},
+            {"side": "offense", "unit": "rest", "players": {"QB": ["B-QB2"]}}]
+        (folder / "opponent_roster.json").write_text(json.dumps(opponent))
+        with patch.object(preseason.strength, "team_strength", return_value=(None, {"players": {}})):
+            package = preseason.build_package(self.paths, 1, [], with_ages=False)
+        game = package["games"][0]
+        self.assertEqual(game["rotation_basis"], {JAX: "plan", TB: "plan"})
+        self.assertEqual(game["home_input"]["rotation_plan"], plan["rotation_plan"])
+        self.assertEqual(game["away_input"]["rotation_plan"], opponent["rotation"])
+        with contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(close_preseason_game.gate_errors(package, self.paths, 1), [])
+        home = close_week.team_input(game["home_input"])
+        self.assertEqual(len(home.rotation_plan), 4)
+        # A plan naming a player off the game-day unit (B-QB1 is out) or an unknown group fails closed.
+        opponent["rotation"][0]["players"]["QB"] = ["B-QB1"]
+        (folder / "opponent_roster.json").write_text(json.dumps(opponent))
+        with patch.object(preseason.strength, "team_strength", return_value=(None, {"players": {}})):
+            with self.assertRaisesRegex(ValueError, "B-QB1 is not on the game-day unit"):
+                preseason.build_package(self.paths, 1, [], with_ages=False)
+        opponent["rotation"][0]["players"] = {"QB": ["B-QB2"], "NB": ["B-CB3"]}
+        (folder / "opponent_roster.json").write_text(json.dumps(opponent))
+        with patch.object(preseason.strength, "team_strength", return_value=(None, {"players": {}})):
+            with self.assertRaisesRegex(ValueError, "unknown group 'NB'"):
+                preseason.build_package(self.paths, 1, [], with_ages=False)
+        (folder / "opponent_roster.json").write_text(json.dumps({k: v for k, v in opponent.items() if k != "rotation"}))
+        plan["rotation_plan"][0]["players"]["WR"] = ["A-WR1", "A-WR3", "A-S4"]  # Stone's inactive
+        (folder / "rotation.json").write_text(json.dumps(plan))
+        with patch.object(preseason.strength, "team_strength", return_value=(None, {"players": {}})):
+            with self.assertRaisesRegex(ValueError, "rotation.json.*A-S4 is not on the game-day unit"):
+                preseason.build_package(self.paths, 1, [], with_ages=False)
+        (folder / "rotation.json").write_text(json.dumps({"blocks": []}))
+        with patch.object(preseason.strength, "team_strength", return_value=(None, {"players": {}})):
+            with self.assertRaisesRegex(ValueError, "rotation_plan"):
+                preseason.build_package(self.paths, 1, [], with_ages=False)
+        (folder / "rotation.json").unlink()
+        with patch.object(preseason.strength, "team_strength", return_value=(None, {"players": {}})):
+            package = preseason.build_package(self.paths, 1, [], with_ages=False)
+        self.assertEqual(package["games"][0]["rotation_basis"], {JAX: "default", TB: "default"})
+        self.assertNotIn("rotation_plan", package["games"][0]["home_input"])
 
     def test_missing_inputs_fail_closed(self):
         folder = self.paths.preseason_folder(2)

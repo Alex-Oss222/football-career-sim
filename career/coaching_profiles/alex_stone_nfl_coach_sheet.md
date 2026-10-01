@@ -1,5 +1,11 @@
 # Alex Stone: NFL Coach Sheet
 
+<!-- photo -->
+<img src="photos/alex_stone.webp" alt="Alex Stone" width="220">
+
+*Photo: supplied by the user, October 1, 2026.*
+<!-- /photo -->
+
 **Jacksonville Jaguars head coach. Current through August 4, 2014.**
 
 [Coaching profile](alex_stone_coaching_profile.md) | [Performance and job security](alex_stone_performance_review.md)

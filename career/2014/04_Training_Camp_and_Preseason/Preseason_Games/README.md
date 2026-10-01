@@ -4,7 +4,7 @@
 
 | Game | Date and kickoff (ET) | Venue direction | Status |
 |---:|---|---|---|
-| [Game 1](Game_01/README.md) | August 8, 7:30 p.m. ET: Tampa Bay at Jacksonville | Home | Not scheduled into executable inputs; no result |
+| [Game 1](Game_01/README.md) | August 8, 7:30 p.m. ET: Tampa Bay at Jacksonville | Home | Inputs frozen August 7 from Stone's plan (call sheet, depth chart, rotation, opponent roster); blocked on the legal-rosters gate; no result |
 | [Game 2](Game_02/README.md) | August 14, 8 p.m. ET: Jacksonville at Chicago | Away | Not scheduled into executable inputs; no result |
 | [Game 3](Game_03/README.md) | August 22, 7:30 p.m. ET: Jacksonville at Detroit | Away | Not scheduled into executable inputs; no result |
 | [Game 4](Game_04/README.md) | August 28, kickoff pending dated notice: Atlanta at Jacksonville | Home | Not scheduled into executable inputs; no result |

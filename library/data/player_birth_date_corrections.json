@@ -89,6 +89,22 @@
       "birth_date": "1983-04-21",
       "source_url": "https://static.clubs.nfl.com/image/upload/v1578519993/patriots/xsi56dahzq8nbxdoy91y.pdf",
       "review": "Seahawks Super Bowl XLIX media notes give April 21, 1983; family foundation 7legacy.org independently agrees."
+    },
+    "Tommy Streeter": {
+      "gsis_id": "00-0029300",
+      "nflverse_birth_date": "1989-10-07",
+      "contracts_birth_date": "1988-10-07",
+      "birth_date": "1989-10-07",
+      "source_url": "https://en.wikipedia.org/wiki/Tommy_Streeter",
+      "review": "The nflverse players and 2014 roster exports give 1989-10-07; the Over The Cap contract history (nflverse contracts, otc_id 1404) gives 1988-10-07. A web search on October 1, 2026 returned the Wikipedia article summary with 1989-10-07; the page itself was not reachable from the research session, so this is a reported-summary review, not a page read. The nflverse date is retained; the contract-history date is kept here as the competing record."
+    },
+    "Keith Lewis": {
+      "gsis_id": "00-0030836",
+      "nflverse_birth_date": "1989-03-28",
+      "contracts_birth_date": "1989-04-28",
+      "birth_date": "1989-03-28",
+      "source_url": "https://en.wikipedia.org/wiki/Keith_Lewis_(cornerback)",
+      "review": "The nflverse players export gives 1989-03-28; the Over The Cap contract history (nflverse contracts, otc_id 3591) gives 1989-04-28. A web search on October 1, 2026 returned the Wikipedia article summary with 1989-03-28; the page itself was not reachable from the research session, so this is a reported-summary review, not a page read. The nflverse date is retained; the contract-history date is kept here as the competing record. Identity: the Virginia University of Lynchburg cornerback, undrafted 2014; not a namesake."
     }
   }
 }

@@ -94,6 +94,45 @@ class PlayerBiographyTests(unittest.TestCase):
         self.assertEqual(built["player_ages"]["Mike Harris"]["age"], 24)
         self.assertNotIn("retirement", json.dumps(built))
 
+    def test_unverified_age_is_allowed_only_for_named_background_players(self):
+        players = {"Known": {"gsis_id": "00-0000001", "birth_date": "1990-08-09", "sources": ["x"]},
+                   "Dated-less": {"gsis_id": "00-0000002", "birth_date": None, "sources": ["x"]}}
+        with self.assertRaisesRegex(ValueError, "Verify birth date before preparing player: No Record"):
+            player_bios.biographies(["Known", "No Record"], "2014-08-08", players)
+        with self.assertRaisesRegex(ValueError, "Dated-less"):
+            player_bios.biographies(["Dated-less"], "2014-08-08", players, allow_unverified=["No Record"])
+        ages = player_bios.biographies(["Known", "No Record", "Dated-less"], "2014-08-08", players,
+                                       allow_unverified=["No Record", "Dated-less"])
+        self.assertEqual(ages["Known"], {"gsis_id": "00-0000001", "birth_date": "1990-08-09", "age": 23})
+        self.assertEqual(ages["No Record"], {"gsis_id": None, "birth_date": None, "age": None, "age_unverified": True})
+        self.assertEqual(ages["Dated-less"]["gsis_id"], "00-0000002")
+        self.assertEqual(player_bios.unverified_ages(ages), ["Dated-less", "No Record"])
+        self.assertEqual(player_bios.unverified_ages(None), [])
+
+    def test_preseason_package_flags_only_opponent_unverified_ages(self):
+        from runtime import preseason
+        game = {"game": 1, "game_id": "2014-preseason-01-tampa-bay-buccaneers-at-jacksonville-jaguars",
+                "date": "2014-08-08", "away": "Tampa Bay Buccaneers", "home": "Jacksonville Jaguars"}
+        jax = {"team_id": "JAX", "roster": [{"player_id": "Brad Meester"}]}
+        tb = {"team_id": "TB", "roster": [{"player_id": "Mike Harris"}, {"player_id": "Nobody Listed"}]}
+        with tempfile.TemporaryDirectory() as tmp:
+            (Path(tmp) / "call_sheet.json").write_text(json.dumps({"offensive_call_sheet": []}))
+            paths = mock.Mock(year=2014)
+            paths.preseason_game.return_value = game
+            paths.preseason_folder.return_value = Path(tmp)
+            patches = (mock.patch.object(preseason, "opponent_input", return_value=tb),
+                       mock.patch.object(preseason.strength, "team_strength", return_value=(None, {})))
+            with patches[0], patches[1], mock.patch.object(preseason, "jacksonville_input", return_value=jax):
+                row = preseason.build_package(paths, 1, [])["games"][0]
+            self.assertEqual(row["player_ages"]["Nobody Listed"],
+                             {"gsis_id": None, "birth_date": None, "age": None, "age_unverified": True})
+            self.assertEqual(row["player_ages"]["Brad Meester"]["age"], 37)
+            self.assertEqual(player_bios.unverified_ages(row["player_ages"]), ["Nobody Listed"])
+            # The same name on Jacksonville's side still fails closed.
+            jax["roster"].append(tb["roster"].pop())
+            with patches[0], patches[1], mock.patch.object(preseason, "jacksonville_input", return_value=jax), \
+                    self.assertRaisesRegex(ValueError, "Verify birth date before preparing player: Nobody Listed"):
+                preseason.build_package(paths, 1, [])
 
 if __name__ == "__main__":
     unittest.main()

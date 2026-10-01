@@ -42,14 +42,30 @@ def load(root=ROOT):
     return data["players"]
 
 
-def biographies(names, as_of, players=None):
-    """Exact-name lookup into reviewed identities; unknowns fail preparation."""
+def biographies(names, as_of, players=None, allow_unverified=()):
+    """Exact-name lookup into reviewed identities; unknowns fail preparation.
+
+    ``allow_unverified`` names background players (never Jacksonville's) who
+    may enter a package with no verified birth date: their row carries
+    ``age: None`` and ``age_unverified: True`` so the receipt records the
+    gap. No date is ever guessed for them.
+    """
     players = load() if players is None else players
+    allow_unverified = set(allow_unverified)
     result = {}
     for name in names:
         row = players.get(name)
         if row is None or not row.get("birth_date"):
+            if name in allow_unverified:
+                result[name] = {"gsis_id": (row or {}).get("gsis_id"), "birth_date": None,
+                                "age": None, "age_unverified": True}
+                continue
             raise ValueError("Verify birth date before preparing player: " + name)
         result[name] = {"gsis_id": row["gsis_id"], "birth_date": row["birth_date"],
                         "age": age_on(row["birth_date"], as_of)}
     return result
+
+
+def unverified_ages(ages):
+    """Sorted names flagged age_unverified in a package's player_ages sidecar."""
+    return sorted(name for name, row in (ages or {}).items() if row.get("age_unverified"))

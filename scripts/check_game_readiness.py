@@ -13,11 +13,15 @@ from runtime.seasons import active_season, game_release_errors
 
 REQUIRED={'calibration','playing_rules','injury_model','football_kernel','private_runtime'}
 
-def assess(root=ROOT, season=None):
+def assess(root=ROOT, season=None, preseason=None):
+    """``preseason=N`` evaluates the gates for that preseason game (its frozen
+    depth chart is the required Jacksonville input); otherwise the season
+    input game_depth_chart.json is required, as for any regular-season or
+    postseason closure."""
     root=Path(root); blockers=[]
     season = active_season(root) if season is None else season
     blockers += [dict(id='season_release', label=f'{season} season release', detail=e)
-                 for e in game_release_errors(season, root)]
+                 for e in game_release_errors(season, root, preseason)]
     blockers += [dict(id='repository_continuity',label='Repository continuity',detail=e) for e in validate(root)]
     manifest=json.loads((root/'runtime/readiness.json').read_text()); reqs=manifest['requirements']
     if {x['id'] for x in reqs} != REQUIRED or len(reqs)!=len(REQUIRED): raise ValueError('Readiness manifest must contain each required gate exactly once')
@@ -55,19 +59,22 @@ def assess(root=ROOT, season=None):
         except PrivateRuntimeUnavailable as e: blockers.append(dict(id='private_probe',label='Private runtime probe',detail=str(e)))
     return {'ready':not blockers,'blockers':blockers}
 
-def check(root=ROOT, season=None): return [f"{x['label']}: {x['detail']}" for x in assess(root, season)['blockers']]
+def check(root=ROOT, season=None, preseason=None):
+    return [f"{x['label']}: {x['detail']}" for x in assess(root, season, preseason)['blockers']]
 
 def main():
     p=argparse.ArgumentParser(); p.add_argument('--json',action='store_true')
     p.add_argument('--season',type=int,help='Defaults to the explicit active season in repository_map.json')
+    p.add_argument('--preseason',type=int,metavar='N',help='Evaluate the gates for preseason game N (its frozen Game_0N/depth_chart.json is the required Jacksonville input)')
     a=p.parse_args()
-    try: result=assess(season=a.season)
+    try: result=assess(season=a.season, preseason=a.preseason)
     except (OSError,ValueError,KeyError,TypeError) as e:
         if a.json: print(json.dumps({'ready':False,'configuration_error':str(e)},sort_keys=True)); return 2
         print(f'INVALID READINESS CONFIGURATION: {e}'); return 2
     if a.json: print(json.dumps(result,indent=2,sort_keys=True))
     else:
-        print('GAME READINESS: READY' if result['ready'] else 'GAME READINESS: BLOCKED')
+        scope=f' (preseason game {a.preseason})' if a.preseason else ''
+        print(('GAME READINESS: READY' if result['ready'] else 'GAME READINESS: BLOCKED')+scope)
         for b in result['blockers']: print(f"- {b['label']}: {b['detail']}")
     return 0 if result['ready'] else 1
 if __name__=='__main__': raise SystemExit(main())

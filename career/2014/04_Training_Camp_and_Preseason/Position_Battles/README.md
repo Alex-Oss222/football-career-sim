@@ -1,6 +1,6 @@
 # Jacksonville 2014 position battles
 
-**Evidence through August 4, 2014.** Stone decided no competition at the August 2 block review; each card carries its scrimmage and August 4 evidence. Open the unit, then the position, then the contested spot. Only established competitions appear here.
+**Evidence through August 7, 2014.** Stone decided no competition at the August 2 block review or in the August 5 to 7 game-week preparation; each card carries its scrimmage, August 4 and game-week rehearsal evidence, and the rotation frozen for August 8. Open the unit, then the position, then the contested spot. Only established competitions appear here.
 
 - [Offense](Offense/README.md): WR1, WR3, left guard and the conditional right-guard alternative.
 - [Defense](Defense/README.md): Edge 1.
