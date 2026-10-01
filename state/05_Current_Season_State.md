@@ -14,7 +14,7 @@ This document states what is true now and what comes next. Event history lives i
 | Canonical document | Effective version | Current pointer |
 |---|---|---|
 | Document 1 | `f14b419af771c58249c6394629683ca470b7cbee` | Active foundation source |
-| Document 2 | `d745051bbd258f5134e43d0ea686f86a700bd5b7` | Active foundation source |
+| Document 2 | `b7de4a4167fbefb8e08176b72e862ed333d13d24` | Active foundation source |
 | Document 3 | `30ff2bd2eb39f64e31565d5eaf76bdd2de7e54b5` | Active foundation source |
 | Document 4 | `JAX-2014-JUL29-REGISTER-67`; reconciled by Entry 114, owned content unchanged by Entries 115 to 117 | Roster, staff, medical and role register |
 | Document 6 | `career/2014/ledger.md` Entries 101 to 117; `career/2013/ledger.md` through Entry 100 | Latest closed event: Entry 117 |
@@ -144,7 +144,7 @@ From [the 2014 calendar](../career/2014/calendar.md):
 | Date, 2014 | Event | Jacksonville position |
 |---|---|---|
 | August 5 to 7 | Game-week preparation for Tampa Bay | Reduce to an executable menu, define the players and units under evaluation, identify the special-teams opportunities, freeze the ex-ante plan; the two recurred items (Kelce's late attached block, Branch's lane) and the open competitions carried in as targeted work; no outcome pre-written |
-| August 8, 7:30 p.m. | Preseason game 1, Tampa Bay at Jacksonville | Cannot be played until the 2014 release gates close: `runtime/season_readiness.json` shows tier1_engine, season_rules, season_closure, legal_rosters and financial_control BLOCKED, the 2014 game depth chart is not built, and the background Week 1 depth-chart library is prepared but gated until September 7 ([game readiness](game_readiness.md)) |
+| August 8, 7:30 p.m. | Preseason game 1, Tampa Bay at Jacksonville | Playable through `scripts/close_preseason_game.py 1 --season 2014 --close` once the last gate closes: `runtime/season_readiness.json` has tier1_engine, season_rules, season_closure and financial_control VERIFIED; `legal_rosters` waits on Jacksonville's game depth chart (`career/2014/team/depth_chart/game_depth_chart.json` or `preseason_games/game_01/depth_chart.json`) and the frozen call sheet from the August 5 to 7 preparation. Tampa Bay's August 8 roster is prepared (`library/data/2014_preseason_opponent_rosters.json`); the try is a 33-yard kick for this game and August 14 ([game readiness](game_readiness.md)) |
 | August 14, 8 p.m. / August 22, 7:30 p.m. | Preseason games 2 and 3, at Chicago and at Detroit | Same release gates |
 | August 19 | Practice-squad expansion to 10 becomes public | Gated; the eight-player rule governs until then |
 | August 26, 4 p.m. / August 30, 4 p.m. | Cut to 75 / cut to 53 | Caldwell; no automatic cuts |
@@ -159,7 +159,7 @@ User decisions owed: none on the engine; kernel 2014.4 is released and verified 
 - Installed and accepted kernel: 2014.4 (Entry 115; released September 30, 2026 and verified live). Every club carries its own offensive and defensive strength from dated honours and 2010 to 2012 production, with matchup terms for passing, run defense and protection, a punter term and a field-goal distance model; injuries arise in play and a consequential Jacksonville removal pauses the game for Stone's substitution. The 2013 results are unchanged. Release record: `runtime/README.md`; stated limits: `runtime/defect_register.md`.
 - The 2014 background Week 1 depth-chart library (`library/data/2014_week1_depth_charts.json`, 31 clubs reconciled to the July 29 roster (unchanged through August 4), the draft pairing, the branch trades and the retirements) is prepared and gated until September 7, 2014; `legal_rosters` stays BLOCKED for Jacksonville's game depth chart and cutdown control.
 - `runtime/defect_register.md` records the Tier 1 items as released in 2014.4 and the limits that remain on the record; no engine decision is owed before the first 2014 game.
-- Explicit season routing and `runtime/season_readiness.json` enforce the open release requirements even if the private service is reachable. The dated fixtures are frozen from the April 23 release. The Tier 1 engine fixes, rules, legal inputs and accepted end-to-end closure remain outstanding. See the [readiness and handoff checklist](../career/2014/supporting_records/readiness.md).
+- Explicit season routing and `runtime/season_readiness.json` enforce the open release requirements even if the private service is reachable. The dated fixtures are frozen from the April 23 release. The engine, the 2014 rules, the financial reconciliation and the isolated end-to-end closure are accepted (Entry 115 and the October 1, 2026 gate closures); legal rosters, meaning Jacksonville's game depth chart and the frozen plan, remain outstanding for each game. See the [readiness and handoff checklist](../career/2014/supporting_records/readiness.md).
 
 ## 11. 2013 season archive
 
