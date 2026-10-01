@@ -100,11 +100,16 @@ def group_counts(players):
     return counts
 
 
-def emergency_view(players, baseline, side):
+def emergency_view(players, baseline, side, prefer=None):
     """(players as they line up on this side, [emergency notes]).
 
     ``baseline`` is the club's group counts at kickoff: a group the club
-    never dressed to the minimum is not filled (legacy synthetic inputs)."""
+    never dressed to the minimum is not filled (legacy synthetic inputs).
+    ``prefer`` maps a group to the player who filled it on the club's last
+    drive (October 1, 2026): he keeps the job while he is available, even
+    when a later removal reorders his own group, so an emergency passer
+    does not change without a removal (kernel validate_result)."""
+    prefer = prefer or {}
     players = tuple(players)
     if len(players) < MINIMUM_PER_SIDE:
         raise NoLegalPersonnel("%d available players: no legal eleven" % len(players))
@@ -115,7 +120,11 @@ def emergency_view(players, baseline, side):
         have = sum(usage.group(p.position) == grp for p in view)
         while have < need:
             candidate = None
-            for source in EMERGENCY_FROM[grp]:
+            kept = prefer.get(grp)
+            if kept is not None:
+                candidate = next((p for p in view if p.player_id == kept
+                                  and usage.group(p.position) in EMERGENCY_FROM[grp]), None)
+            for source in EMERGENCY_FROM[grp] if candidate is None else ():
                 ordered = usage.depth_order(view, source)
                 spare = ordered[usage.MINIMUM_GAME_DAY.get(source, 0):] or []
                 if spare:

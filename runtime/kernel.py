@@ -445,8 +445,15 @@ def _resolve_game(
     forced = dict(_test_onsets or {})
     pause_state = {"pending": None, "history": []}
 
+    # The last emergency filler of each group per club and side (October 1,
+    # 2026): he keeps the job while available (participation.emergency_view).
+    fills = {tid: {"offense": {}, "defense": {}} for tid in rosters}
+
     def lineup(team_id, side):
-        return participation.emergency_view(current[team_id], baseline[team_id], side)
+        view, notes = participation.emergency_view(current[team_id], baseline[team_id], side,
+                                                   prefer=fills[team_id][side])
+        fills[team_id][side] = {n["group"]: n["filled_by"] for n in notes if n.get("filled_by")}
+        return view, notes
 
     def live_rosters():
         return {tid: tuple(players) for tid, players in current.items()}

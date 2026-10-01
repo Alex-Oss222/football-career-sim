@@ -4,6 +4,7 @@ import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import copy
+import hashlib
 import unittest
 from unittest import mock
 
@@ -11,6 +12,8 @@ from runtime import chains, field_position as fp, play_detail
 from runtime.chains import chain_feasible, drive_layout, fourth_down_state, walk
 from runtime.kernel import resolve_game, validate_result
 from runtime.play_detail import CHAIN_CLASSES, check_ledger, measurable_classes
+from runtime.game_runner import ENTROPY_DOMAIN
+from support_rosters import game_day_roster, single_quarterback_teams
 from synthetic_games import SEED, sample, sample_teams
 
 SCRIMMAGE = ("pass", "run")
@@ -171,6 +174,21 @@ class FeasibilityTests(unittest.TestCase):
         self.assertTrue(chain_feasible("punt", plays=7, net=7, spot=50, kneel_yards=[-2, -1]))
         self.assertFalse(chain_feasible("punt", plays=7, net=6, spot=50, kneel_yards=[-2, -1]))
 
+    def test_fumbled_sack_is_counted_once(self):
+        # A real 2012 fumble (six snaps, five attempts and one sack, net 30
+        # from the 53 with three first downs) replayed from the 18 with its
+        # end kept nets -5. Six snaps need a first down, so ten yards gained,
+        # and the lone sack can give back ten at most: the passes gain five
+        # at most, so no order reaches the line to gain. The gate counted
+        # that sack twice (a fumbled-snap allowance and a last-series sack)
+        # until October 1, 2026 (kernel seeds pz-2103, samp-1482, sw2-2762).
+        self.assertFalse(chain_feasible("fumble_lost", plays=6, net=-5, spot=18, sacks=1, runs=0))
+        self.assertFalse(chain_feasible("fumble_lost", plays=6, net=-8, spot=15, sacks=1, runs=0))
+        self.assertTrue(chain_feasible("fumble_lost", plays=6, net=30, spot=53, sacks=1, runs=0))
+        # Two sacks, or a fumbled run beside the sack, can give back twenty.
+        self.assertTrue(chain_feasible("fumble_lost", plays=6, net=-5, spot=18, sacks=2, runs=0))
+        self.assertTrue(chain_feasible("fumble_lost", plays=6, net=-5, spot=18, sacks=1, runs=1))
+
     def test_downs_needs_four_snaps(self):
         self.assertFalse(chain_feasible("downs", plays=3, net=2, spot=50))
         self.assertTrue(chain_feasible("downs", plays=4, net=2, spot=50))
@@ -269,6 +287,43 @@ class LayoutTests(unittest.TestCase):
             self.assertEqual(out["walk"]["chains"][0], 1)
             self.assertIsNone(out["walk"]["failed"])
 
+    def test_concentrated_rung_puts_the_ground_on_one_snap(self):
+        # A real four-snap punt netting 19 behind a penalty first down,
+        # replayed from the 99 with its end kept: net 53. The three snaps
+        # after the last first down gain nine at most, so one snap carries
+        # 44 or more, which no spread allocation of 19 passing and 34 rushing
+        # and no bounded shift produces; the same-rung resample had no
+        # substitute and the game failed validation (kernel seeds pz-25,
+        # samp-835, pz-1345, sw2-749; October 1, 2026).
+        diagnostics = {}
+        out = self.layout(category="punt", runs=3, attempts=1, sacks=0, pass_yards=19, rush_free=34,
+                          net=53, spot=99, targets=[0, 1, 1, 0, 0, 0], term_down=4, diagnostics=diagnostics)
+        self.assertTrue(out["ok"])
+        self.assertIn("chain_plan_concentrated", diagnostics)
+        self.assertNotIn("chain_layout_failed", diagnostics)
+        self.assertEqual(sum(out["values"]), 53)
+        self.assertEqual(out["pass_yards"] + out["rush_free"], 53)
+        self.assertGreaterEqual(max(out["values"]), 44)
+        self.assertEqual(out["walk"]["state"]["down"], 4)
+        self.assertEqual(out["walk"]["chains"][0], 1)
+
+    def test_concentration_gathers_the_ground_before_a_fumbled_snap(self):
+        # A real five-run fumble netting 10 from the 80 (one first down): the
+        # fumbled snap credits no first down, so the ten yards must sit on a
+        # snap before it. Repair 3 fed the largest value, the terminal snap
+        # (store seed 44 of tests/test_game_runner.py, October 1, 2026); the
+        # concentrated rung gathers onto the largest movable snap first.
+        from runtime.chains import _concentrate
+        kinds, completed = ["run"] * 5, [False] * 5
+        steps = list(_concentrate(kinds, completed, [0, 2, 0, 3, 5], 4, "fumble_lost", "run", movable_only=True))
+        self.assertEqual(steps[-1], [0, 0, 0, 10, 0])
+        self.assertTrue(all(sum(v) == 10 for v in steps))
+        w = walk(80, steps[-1], turnover_last=True)
+        self.assertEqual((w["chains"][0], w["failed"], w["breaks"]), (1, None, []))
+        anywhere = list(_concentrate(kinds, completed, [0, 2, 0, 3, 5], 4, "fumble_lost", "run"))
+        self.assertEqual(anywhere[-1], [0, 0, 0, 0, 10])
+        self.assertIsNotNone(walk(80, anywhere[-1], turnover_last=True)["failed"])
+
     def test_layout_is_deterministic_and_on_its_own_stream(self):
         kw = dict(category="field_goal_attempt", runs=4, attempts=5, sacks=1, pass_yards=30, rush_free=15,
                   losses=[6], net=39, spot=62, targets=[2, 0, 1, 1, 0, 0], term_down=4)
@@ -276,6 +331,106 @@ class LayoutTests(unittest.TestCase):
         with mock.patch.object(play_detail, "SNAP_DETAIL_TAG", "public-snap-detail-test"):
             two = self.layout(**kw)
         self.assertEqual(one, two)
+
+
+def sweep_entropy(label):
+    """Kernel entropy as the production runner derives it from an opaque
+    event reference, here from the label (the October 2026 seed sweep)."""
+    return hashlib.sha256(ENTROPY_DOMAIN + hashlib.sha256(label.encode()).digest()).digest()
+
+
+def pause_teams():
+    a = tuple(p for p in game_day_roster("A") if p.player_id != "A-WR5")
+    b = tuple(p for p in game_day_roster("B") if p.player_id != "B-WR5")
+    from runtime.kernel import TeamInput
+    return TeamInput("A", tuple(p.player_id for p in a), roster=a), TeamInput("B", tuple(p.player_id for p in b), roster=b)
+
+
+class SeedSweepRegressionTests(unittest.TestCase):
+    """October 1, 2026: a 12,000-game autonomous seed sweep over three
+    synthetic fixtures found three causes of a refused game, each pinned
+    here to a reproducing kernel seed. Every digest of the 290 reference
+    games (tests/data/result_identity.json and the 250-game sample) was
+    byte-identical before and after the fixes."""
+
+    TEAMS = {"sweep": single_quarterback_teams, "sw2": single_quarterback_teams,
+             "pz": pause_teams, "samp": sample_teams}
+
+    def game(self, label):
+        a, b = self.TEAMS[label.split("-")[0]]()
+        return resolve_game(a, b, seed=sweep_entropy(label), event_id=label)
+
+    def test_relocated_punt_is_concentrated_onto_one_snap(self):
+        # Cause 1: a four-snap punt netting 53 from the 99 (chains.py,
+        # drive_layout's concentrated rung); the resample rung had no
+        # substitute, so the drive punted before fourth down.
+        for label, drive in (("pz-25", 24), ("samp-835", 30), ("sw2-749", 25)):
+            with self.subTest(seed=label):
+                r = self.game(label)
+                self.assertEqual(validate_result(r), [], label)
+                self.assertEqual(r["diagnostics"].get("chain_layout_failed", 0), 0)
+                self.assertGreaterEqual(r["diagnostics"].get("chain_plan_concentrated", 0), 1)
+                p = next(p for p in r["possessions"] if p["number"] == drive)
+                self.assertEqual((p["category"], p["net_yards"] >= 51, p["fourth_down"]["down"]), ("punt", True, 4))
+                self.assertGreaterEqual(max(x["result_yards"] for x in scrimmage(r, drive)), 42)
+
+    def test_five_run_fumble_concentrates_before_the_fumbled_snap(self):
+        # Cause 1b: the store seed 44 game of tests/test_game_runner.py
+        # (its kernel entropy pinned here): a real five-run fumble netting
+        # 10 at its own start whose ten yards every draw and Repair 3 left
+        # off the snaps before the fumble.
+        a, b = single_quarterback_teams()
+        seed = bytes.fromhex("8242e84d1da2346049c8d89c4ad660506cec490cdb0c263215789017b917225b")
+        r = resolve_game(a, b, seed=seed, event_id="labels-3")
+        self.assertEqual(validate_result(r), [])
+        self.assertEqual(r["diagnostics"].get("chain_layout_failed", 0), 0)
+        self.assertGreaterEqual(r["diagnostics"].get("chain_plan_concentrated", 0), 1)
+        p = next(p for p in r["possessions"] if p["number"] == 22)
+        self.assertEqual((p["category"], p["net_yards"], p["start_spot"], p["chains"][0]), ("fumble_lost", 10, 80, 1))
+        rows = scrimmage(r, 22)
+        self.assertEqual(len(rows), 5)
+        self.assertTrue(any(x["first_down"] for x in rows[:4]))
+        self.assertFalse(rows[4]["first_down"])
+
+    def test_fumbled_sack_gate_keeps_the_tuple_out(self):
+        # Cause 2: a six-snap fumble with one sack replayed from inside the
+        # 20 (chains.chain_feasible); the drive snapped after a failed
+        # fourth down.
+        for label in ("pz-2103", "samp-1482", "sw2-2762"):
+            with self.subTest(seed=label):
+                r = self.game(label)
+                self.assertEqual(validate_result(r), [], label)
+                self.assertEqual(r["diagnostics"].get("chain_layout_failed", 0), 0)
+                self.assertEqual(r["diagnostics"].get("chain_layout_resample_exhausted", 0), 0)
+
+    def test_emergency_passer_keeps_the_job(self):
+        # Cause 3: the lone quarterback removed, a running back passing in
+        # his place, then a later running-back removal reordering the group
+        # so the filler changed without a removal (participation.emergency_view).
+        for label in ("sweep-706", "sweep-1278", "sweep-1872"):
+            with self.subTest(seed=label):
+                r = self.game(label)
+                self.assertEqual(validate_result(r), [], label)
+                lost = [i for i in r["injuries"] if i["removed"] and i["player"] == "qb"]
+                self.assertEqual(len(lost), 1, label)
+                team, drive = lost[0]["team"], lost[0]["drive"]
+                passers = [p["passer"] for p in r["possessions"] if p["team"] == team and p["number"] > drive]
+                self.assertTrue(passers)
+                self.assertEqual(len(set(passers)), 1, passers)
+                self.assertNotEqual(passers[0], "qb")
+                # The filler is recorded on every later drive of that club.
+                for p in r["possessions"]:
+                    if p["team"] == team and p["number"] > drive:
+                        self.assertIn({"group": "QB", "available": 0, "required": 1, "filled_by": passers[0],
+                                       "from": "RB"}, p["emergency"])
+
+    def test_fixed_seed_sweep_has_no_invariant_failure(self):
+        labels = ["sweep-%d" % i for i in range(16)] + ["pz-%d" % i for i in range(8)] + ["samp-%d" % i for i in range(8)]
+        for label in labels:
+            with self.subTest(seed=label):
+                r = self.game(label)
+                self.assertEqual(validate_result(r), [], label)
+                self.assertEqual(r["diagnostics"].get("chain_layout_failed", 0), 0)
 
 
 class SampleChainTests(unittest.TestCase):
