@@ -1,6 +1,55 @@
-# Jacksonville 2014 Training camp and integrated preseason development: execution record
+# Jacksonville | Training camp | July 21 to 29, 2014
 
 <!-- sim-meta: {"event_entry": 114, "kind": "phase_output", "status": "IN_PROGRESS", "through": "2014-07-29"} -->
+
+Jacksonville came back able to run the spring assignments without starting the teaching over. The first five practices restored the core offense, the defensive calls and the kicking operation, then changed formations and personnel to see whether the answers still held. The next question is whether that understanding survives contact. All five practices were without full pads; the first full-pad session is scheduled for July 30.
+
+Every signed player reported on his assigned date, rookies and first-year players on July 21 and veterans on July 24. The medical staff communicated no new participation restriction, and the position-adjusted conditioning test produced no failure requiring a retest plan. Lucas's foot review remains on the performance staff's list. Bradfield, Clemons, Brown and Pasztor remain outside the program with unsigned tenders. There is no recorded coach fitness test to assess.
+
+## Offense: putting the playbook on the field
+
+Tice's group began with the huddle, substitutions, cadence and the protection point, then ran the retained menu against defensive looks. Power, Counter and Inside Zone shared the work with the quick and crossing concepts and the movement passes taught in spring. The useful finding was that the players could get to their jobs without a coach supplying the answer on the first rep back.
+
+The interior line carried its spring correction into the changed fronts. Against the double A-gap presentation and the five-man pressure, HALF went toward the overload, and the guards communicated the change in time. Turner and Bitonio gave the required echoes; Norwell handled the calls from either guard position. That is the shared part of protection: the quarterback, center and adjacent blockers agreeing on the problem. Whether the guards can hold those assignments against a live rush remains the first padded question.
+
+The relief pairings did the same work. Henne and Linsley made the point on time in their recorded July 26 and 27 reps, without the late identification seen in minicamp. Wilson worked with Shatley and Larsen. Linsley has given the staff a better camp opening to work from, but two clean days of identification do not answer how the pair will handle contact and a collapsing pocket.
+
+Changing the offensive picture did not require a different answer on every page. Boot Flood kept its taught response to the free edge from both Wing and Ace. Y-Cross kept its staggered spacing with one tight end and with two. Hawkins supplied the correction worth following: from a reduced split on July 26, he cut the dig a yard short. His read was intact, but the route was not at its taught depth. Drake corrected it; Hawkins reached the right depth on the repeat, the following day and again on July 29. Wilson also retained his Sprint Flood depth.
+
+## Defense: playing the call together
+
+Crennel brought back the base and Nickel Even work with the responsibilities stated before the snap. Cover 1 and Robber/Rat required the players to know the man assignment, the deep help, the underneath robber or rat, and the flat or force job. Cover 3 and Quarters were worked from similar starting pictures, so the appearance of the defense did not supply the whole answer to the offense.
+
+The spring corrections survived the break. Rambo used the taught ROLL trigger, Harris held his path through the rub, Poyer checked the second threat before driving from the rat position, and Stanford retained his wheel leverage. Motion, bunches and stacks then tested whether the group could exchange those responsibilities while moving. The voice and hand signals arrived on time in the recorded work.
+
+The defense also operated with its usual communicator taken out of the huddle. Daryl Smith relayed the calls first; Posluszny then handled the work without him, and Stanford handled a period with both absent. The fast-motion TRAVEL signal still reached the group. Moore relayed his own packages. That gives the staff evidence about the replacement communication it actually rehearsed.
+
+Crennel used the paired Cover 3 answer against the back's vertical route rather than forcing the marked linebacker matchup to remain in man coverage. The zone answer held in this setting. Another period showed why the call matters when judging a result: the offense's hot throw reached the flat against the five-man pressure, but that was the throw the defense had elected to concede. Rush and replacement ownership were correct. Calling it a coverage bust would have misread the assignment.
+
+## Situations and special teams
+
+Cousins and Henne ran two-minute and four-minute work on the clock without needing the situation restated. Cousins made the recorded boundary-or-middle decisions correctly and reached his second progression on time when the first answer was taken away. Wilson ran the core; Bray and Shaw worked their reduced menu in seven-on-seven. This established operation at the pace practiced, with live pocket pressure still to come.
+
+Westhoff changed personnel in the substitution work and gave Anger end-game and plus-territory punt instructions. The recorded punts went to the assigned side. Cain and Kreiter both kept the snap operation intact across the four punt families and in the field-goal work, and the emergency snapper and holder paths were rehearsed without a fault. The next comparison needs a rush and coverage work. No returner has been designated.
+
+## Players and combinations
+
+The open competitions received work in the same periods. Nicks and Adams took WR1 reps; Adams and Hawkins took WR3 reps. Nicks held the taught landmarks against changed leverage. Adams had both successful and unsuccessful release paths against Talib and Verner while keeping his assignment. Thielen performed the H job against Poyer in the slot. These observations help Drake assess how they run the concepts; contact releases and separation remain ahead.
+
+Bitonio and Norwell worked at left guard, with Turner at right guard and both alternatives rotating through. Mincey and Branch took the Edge 1 work and handled contain and PEEL, the rule that can turn a rush assignment into coverage on the releasing back. The report has no live blocking or rush result to separate those competitors yet.
+
+Reserves were not confined to watching the established players. On July 26 and 27 the rookie groups received comparable assignments against veteran groups: receivers outside and in the slot, tight ends attached and detached, linemen against changing fronts, linebackers in fit and communication work, and young corners against veteran receivers. The recorded finding for those without a specific correction is assignment correctness. It does not establish a hidden standout or a roster winner. Kelce's attached blocking, the reserve tight-end jobs and the other physical questions still need their scheduled work.
+
+## What the staff takes into the next practice
+
+Stone left all five May 12 competition starting points in place at the July 27 review. The next sequence begins with the interior protection and guard combinations, then the receivers' contact releases, Kelce's attached blocking, edge rush, man coverage and the back matchup, run fits and tackling, and the punt operation against a rush. Each is a question carried from the work already done.
+
+The position coaches gave every signed participant his camp-entry feedback in person on July 26 or 27. The film packets have still not been delivered. That follow-through remains unfinished even though the on-field recall was sound. Camp continues; no preseason game or later padded practice is part of this report.
+
+[Player assessments](player_assessments.md) · [Position review](../assessments/position_battles.md) · [Current staff plan](staff_plan.md) · [Reusable report format](../../../../foundation/templates/training_camp_and_preseason/training_camp_report.md)
+
+<details>
+<summary>Detailed session record: dates, observations, decisions and supporting evidence</summary>
 
 **IN_PROGRESS through July 29, 2014.** Rookies and first-year players reported July 21, veterans July 24, and the first five practices ran July 25 to 29, all without full pads. [Plan](staff_plan.md) owns intended work and is unchanged; [evidence summary](player_assessments.md) summarizes only what is below. Event record: [2014 ledger](../../ledger.md), Entry 114. The camp questions from the [spring handoff](../../offseason_training/mandatory_minicamp/training_report.md#camp-questions) are carried in below with their current position. Nothing after July 29 is recorded.
 
@@ -118,3 +167,5 @@ Under the April 18 camp cadence: the camp opening family dinner July 24 (the win
 - **Next:** July 30 first full pads and the first contact evidence for every open question; the mid-block players and staff meal on the cadence; August 2 scrimmage, with the larger family night at the end of the block; August 5 to 7 game-week preparation for August 8 Tampa Bay, which cannot be played until the 2014 release gates close.
 
 Only an actual event changes status/through/event_entry above. Close the applicable ledger and affected current-state views, review the linked evidence summary and refresh its source digest together. Do not write results into the plan or invent an event to fill this file.
+
+</details>

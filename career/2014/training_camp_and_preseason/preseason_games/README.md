@@ -13,6 +13,8 @@
 
 ## Camp integration and execution
 
+Use the [preseason game template](../../../../foundation/templates/training_camp_and_preseason/preseason_game_report.md) for each played game's report and the [consolidated review](../../../../foundation/templates/training_camp_and_preseason/preseason_review.md) for the bulk chat output. The reports connect camp questions to actual game execution, useful player comparisons and the next correction. Keep the score and full generated box score, with all technical claims supported by the game record. No game has been played merely because its report format exists.
+
 The [camp plan](../training_camp/staff_plan.md), [output](../training_camp/training_report.md), [position review](../assessments/position_battles.md) and [decisions](../roster_cuts/roster_decisions.md) supply the whole body of evidence. Follow Document 7's consolidated preseason process, preserving each game's own output. A bulk turn still pauses at an important user-side substitution or uncovered consequential choice; it does not silently choose for Stone.
 
 Before a game, close the [2014 game release gates](../../supporting_records/operating_baseline.md#before-any-2014-game), confirm actual legal rosters/medical state and freeze the installed plan and emergency replacements. Use the common production resolver. Afterward preserve the appropriate receipt, link actual player evidence and distribution, reconcile medical/role/transaction changes and update the calendar/current checkpoint. Preseason statistics never enter regular-season standings or the regular-season statbook.

@@ -2,6 +2,8 @@
 
 [Camp and preseason](../README.md)
 
+Use the [player-assessment method](../../../../foundation/templates/training_camp_and_preseason/player_assessment.md) for individual findings and the [preseason review template](../../../../foundation/templates/training_camp_and_preseason/preseason_review.md) to bring the practice and game work together. The [camp plan's scheme questions](../training_camp/staff_plan.md#what-the-active-playbooks-ask-of-the-players) identify what Stone and each room coach need to see in the active books.
+
 | Open | What you will find |
 |---|---|
 | [Position battles](position_battles.md) | Current competition questions; no job is awarded by a planned rep. |

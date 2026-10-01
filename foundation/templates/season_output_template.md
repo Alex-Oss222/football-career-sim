@@ -2,6 +2,8 @@
 
 **Status:** Confirmed by the user September 30, 2026. Applies to every regular-season and postseason game turn from the 2014 season onward; 2013 turns keep the earlier format, retained in git history. Document 7 governs simulation; this template governs presentation.
 
+**Preseason version, user instruction September 30, 2026:** use the [camp and preseason formats](training_camp_and_preseason/README.md) for individual preseason game reports and the consolidated review. They retain this template's generated-result, full-stats, narrative and media rules while centering the camp questions, player combinations, scheme execution and subsequent coaching work. A practice report uses the camp template and has no invented game result or stats.
+
 Every weekly game turn follows this layout. Bracketed text is a field to fill. Italic text is an instruction to whoever writes the turn: it is carried out, then left out of the output.
 
 ## Rules for every turn
