@@ -10,6 +10,7 @@ from .packets import canonical
 from .private_client import Client
 from .player_evidence import normalize_players, serialize_roster
 from .play_detail import canonical_call_sheet
+from .rotation import plan_errors
 from .usage import lineup_errors
 from .call_families import sheet_errors
 from .rules import GAME_TYPES, active_limit
@@ -64,6 +65,12 @@ def build_game_packet(event_id, snapshot, home, away, *, venue="home", weather="
         undeclared = sheet_errors(getattr(team, "offensive_call_sheet", ()) or ())
         if undeclared:
             raise ValueError(f"{team.team_id} call sheet cannot be labelled: " + "; ".join(undeclared))
+        # Preseason unit rotation (runtime/rotation.py): a plan naming a player
+        # off the game-day unit or an unknown group, or any rotation block in
+        # a non-preseason game, fails closed before the private event is journaled.
+        rotation_faults = plan_errors(team, normalize_players(team), game_type)
+        if rotation_faults:
+            raise ValueError(f"{team.team_id} rotation plan: " + "; ".join(rotation_faults))
     packet = {
         "procedure": KERNEL_VERSION, "event_id": event_id, "snapshot": snapshot,
         "home": _team_packet(home), "away": _team_packet(away), "venue": venue,

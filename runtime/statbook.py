@@ -156,6 +156,9 @@ def make_receipt(result, *, week, matchup, coverage="complete", detail="full",
         # Preseason only: the dated try rule the kernel applied (runtime.rules).
         receipt["game_date"] = result.get("game_date")
         receipt["extra_point_rule"] = deepcopy(result["extra_point_rule"])
+    if result.get("rotation") is not None:
+        # Preseason only: the unit rotation as applied (runtime/rotation.py).
+        receipt["rotation"] = deepcopy(result["rotation"])
     if detail == "full":
         receipt["play_ledger"] = deepcopy(result.get("play_ledger", []))
         receipt["play_call_stats"] = deepcopy(result.get("play_call_stats", {}))
